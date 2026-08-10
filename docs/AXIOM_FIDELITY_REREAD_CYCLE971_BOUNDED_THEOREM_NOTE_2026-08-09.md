@@ -1,1633 +1,236 @@
-# Axiom-Fidelity Re-read — Cycle 971 Bounded Theorem Note
+# Axiom-Fidelity Re-read — Bounded Measurement Note
 
 **Date:** 2026-08-09
-**Claim type:** `bounded_theorem`
+**Claim type:** `meta`
 **Actual current-surface status:** bounded-support
 **Trace class:** methodology
-**Reachability:** none; this block measures the landed corpus and edits no landed row
-**Snapshot:** `323d7fc32d77598f74ea6cd4d30c38dda0fe5070` (the `origin/main` tip from which the requested branch was created)
-**Primary:** `scripts/frontier_cycle971_axiom_fidelity_reread_2026_08_09.py`
-**Independent checker:** `scripts/frontier_cycle971_fidelity_independent_check_2026_08_09.py`
-**Primary cache:** `logs/runner-cache/frontier_cycle971_axiom_fidelity_reread_2026_08_09.txt`
-**Checker cache:** `logs/runner-cache/frontier_cycle971_fidelity_independent_check_2026_08_09.txt`
-**Primary receipt:** `outputs/axiom_fidelity_reread_cycle971_receipt_2026_08_09.json`
-**Checker receipt:** `outputs/axiom_fidelity_reread_independent_check_cycle971_receipt_2026_08_09.json`
-
-## Machine status and trace
+**Reachability:** none; this measurement reads a pinned corpus and repairs no row
+**Snapshot:** `323d7fc32d77598f74ea6cd4d30c38dda0fe5070`
+**Primary runner:** [`scripts/frontier_cycle971_axiom_fidelity_reread_2026_08_09.py`](../scripts/frontier_cycle971_axiom_fidelity_reread_2026_08_09.py)
+**Independent checker:** [`scripts/frontier_cycle971_fidelity_independent_check_2026_08_09.py`](../scripts/frontier_cycle971_fidelity_independent_check_2026_08_09.py)
+**Primary cache:** [`logs/runner-cache/frontier_cycle971_axiom_fidelity_reread_2026_08_09.txt`](../logs/runner-cache/frontier_cycle971_axiom_fidelity_reread_2026_08_09.txt)
+**Checker cache:** [`logs/runner-cache/frontier_cycle971_fidelity_independent_check_2026_08_09.txt`](../logs/runner-cache/frontier_cycle971_fidelity_independent_check_2026_08_09.txt)
+**Primary receipt:** [`outputs/axiom_fidelity_reread_cycle971_receipt_2026_08_09.json`](../outputs/axiom_fidelity_reread_cycle971_receipt_2026_08_09.json)
+**Checker receipt:** [`outputs/axiom_fidelity_reread_independent_check_cycle971_receipt_2026_08_09.json`](../outputs/axiom_fidelity_reread_independent_check_cycle971_receipt_2026_08_09.json)
+**Independent semantic ledger:** [`outputs/axiom_fidelity_reread_cycle971_independent_semantic_adjudications_2026_08_09.json`](../outputs/axiom_fidelity_reread_cycle971_independent_semantic_adjudications_2026_08_09.json)
 
 ```yaml
 actual_current_surface_status: bounded-support
-target_claim_type: bounded_theorem
+target_claim_type: meta
 target_claim_id: axiom_fidelity_reread_cycle971_bounded_theorem_note_2026-08-09
 trace_class: methodology
 target_blocker_text: null
 source_of_blocker_text: user_goal
 reachability_to_target: none
 artifact_role: runner_certificate
-next_trace_action: "Independent audit may assess the measurement after landing."
-packet_helper_runner: null
+next_trace_action: "Independent audit may assess this measurement after the helper-registry policy debt is resolved."
+packet_helper_runner: scripts/frontier_cycle971_fidelity_independent_check_2026_08_09.py
 conditional_surface_status: null
 hypothetical_axiom_status: null
 admitted_observation_status: null
-claim_type_reason: "Exhaustive token census and operational semantic classification at one pinned commit."
+claim_type_reason: "Pinned corpus census plus an explicit, provenance-aware classification convention; not a physics theorem."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
 
-## Inputs and proof obligations
+## Governing text and scope
 
-There are no measured, fitted, literature, observational, normalization, or
-boundary-condition imports. The load-bearing inputs are the pinned Git object
-tree, the [governing axiom text](MINIMAL_AXIOMS_2026-06-29.md), and its
-[premise-registry provenance](audit/data/axiom_premise_nodes.json). The Cycle
-970 counts are disclosed context only and do not enter a predicate, class, or
-witness count.
+The load-bearing sources are the pinned [minimal-axiom memo](MINIMAL_AXIOMS_2026-06-29.md)
+and its pinned [premise-registry entry](audit/data/axiom_premise_nodes.json).
+The 2026-08-05 text makes the probability distribution, rather than the set of
+available possibilities, vary with nearest-neighbor conditions, and identifies
+availability with the distribution's support. Consequently
+`supp(mu(condition))` remains determined by the condition, but the axiom no
+longer forces that support to vary nontrivially.
 
-The exact target is the file-level token census, four-way operational
-classification, and two-resolution literal witness count at the named commit.
-Its obligation graph has no intermediate mathematical lemma: the primary
-establishes pinned traversal, row coverage, disjoint classification, literal
-AST evidence, and controls; the independent checker recomputes the same rows
-without importing or executing the primary. The boundary is the declared
-tokens and literal rules at this one commit. Semantic uses outside that grammar
-and any later commit are outside the claim; there is no missing closure lemma.
+The primary enumerates the tracked `docs/` and `scripts/` paths with
+`git ls-tree`, uses deliberately broad commit-scoped `git grep` anchors, and
+reads candidate blobs with `git show <PIN>:<path>`. Full-blob token matching
+then removes broad-selector false positives. No working-tree corpus body is a
+measurement input, and no pinned runner is imported or executed.
 
-## Bounded claim
+The four-way routing is an explicit measurement convention:
 
-At the pinned snapshot, the four declared token classes select 1,433 of 15,205
-tracked `docs/` and `scripts/` files. The exhaustive file partition is:
+- `UNAFFECTED` includes ordinary token uses and authority-free historical or
+  supplied-comparator rows that do not assert the second sentence as current.
+- `SUPPORT_READING_SAFE` includes support-level readings, current distribution
+  wording, dated provenance that explicitly records the replacement, and
+  model-specific support choices not attributed as axiom compulsion.
+- `MEANING_CHANGED` includes rows that treat nonconstant support variation as
+  live/current axiom content or use that variation load-bearingly.
+- `NEWLY_WITNESSABLE` requires a literal neighbor-conditioned probability
+  branch pair with identical positive supports and different weights. Merely
+  changing positive support already had content under the old sentence.
 
-- `UNAFFECTED = 774`
-- `SUPPORT_READING_SAFE = 626`
-- `MEANING_CHANGED = 32`
-- `NEWLY_WITNESSABLE = 1`
+This convention resolves the otherwise ambiguous history-only rows as
+`UNAFFECTED`; routing those three rows as support-safe would instead give
+`SUPPORT_READING_SAFE=73` and `UNAFFECTED=1341`. That taxonomy choice is
+recorded rather than hidden, and is why this artifact is `meta`, not a theorem.
 
-This is a semantic-delta measurement only. It proposes no rewrite, changes no
-axiom or primitive, and edits no landed corpus row.
+## Results
 
-The [governing axiom text](MINIMAL_AXIOMS_2026-06-29.md) was read at the pin
-rather than inferred from campaign memory. Admissibility's second sentence says that, for each site, the
-probability distribution over possibilities is determined by and varies with
-nearest-neighbor conditions. Its 2026-08-05 provenance says that availability
-became the distribution's support and that the distribution's extensional form
-and values remain unspecified. The pinned axiom-premise registry repeats both
-the distribution sentence and the support reading.
+The four token classes select 1,440 of 15,205 tracked files. The complete,
+disjoint file lists, every file-to-token count, every classification reason,
+and a bounded evidence excerpt for every row are in
+`measurement.consumer_rows` and `measurement.classes` of the primary receipt.
 
-## Operational census and classification
+| Class | Files |
+|---|---:|
+| `UNAFFECTED` | 1,344 |
+| `SUPPORT_READING_SAFE` | 70 |
+| `MEANING_CHANGED` | 26 |
+| `NEWLY_WITNESSABLE` | 0 |
 
-The primary obtains the tracked path set with `git ls-tree`, selects candidates
-with commit-scoped `git grep`, and reads every selected body with `git show
-<PIN>:<path>`. It never reads the working-tree corpus. The four token classes
-are:
+Token totals are `availability=2788`, `vary_with=193`,
+`nearest_neighbor_conditions=94`, and `admissible_possibility=240`.
 
-1. `availability`: whole-word `availability` or `available`;
-2. `vary_with`: `vary`, `varies`, `varied`, or `varying` followed by
-   `with`;
-3. `nearest_neighbor_conditions`: the hyphenated or spaced phrase;
-4. `admissible_possibility`: admissible-possibility language in either order.
+The literal vacuity probe finds one state-resolved runner/branch pair and zero
+marginal runners/branch pairs under its declared AST grammar. The state row is
+`local_distribution(neighborhood_records)` in the pinned minimal-axioms
+companion; its positive support changes between branches, so it is support-safe
+and not newly witnessable. The zero is only a syntax-bounded corpus count. It
+does not assert physical marginal independence or exclude other encodings.
 
-The receipt's `measurement.consumer_rows` is the normative per-file
-`path -> token_class_counts` table. Its totals are
-`availability=2788`, `vary_with=191`,
-`nearest_neighbor_conditions=94`, and `admissible_possibility=235`.
-The row digest is
-`a302c68f9db06109948d394d8559645207f94add705de1ddfef881351702575f`.
+Source-pinned comparison context at
+`6fd0de0a288d212a4a6ce3fdd4dc9019f30dbbad` reports 4/20 state-resolved
+comparisons (8/40 configurations) and 0/10 uniform-marginal comparisons. That
+head is absent from the measurement pin, so those numbers are source-pinned,
+non-load-bearing context and do not alter either corpus count.
 
-The labels are operationally exhaustive and disjoint:
-
-- `UNAFFECTED`: the requested token occurs without a literal use of the
-  changed second-sentence semantics.
-- `SUPPORT_READING_SAFE`: availability/admissible possibility is used as
-  support, or the new distribution sentence is quoted without a stronger
-  support-variation inference.
-- `MEANING_CHANGED`: the row attributes mandatory neighbor variation or
-  determination to availability/the available-possibility set, which the new
-  distribution sentence does not itself license.
-- `NEWLY_WITNESSABLE`: a tracked runner contains an explicit
-  neighbor-conditioned distribution function with distinct numeric
-  probability dictionaries. Distribution variation was not named axiom
-  content under the old sentence.
-
-These classifications measure what the landed files literally say. They do not
-declare the underlying science true or false, and they are not repair
-instructions.
-
-## A_CONSUMER_CENSUS
-
-Finding verbatim:
+## Certificate findings (verbatim)
 
 ```text
-PASS A_CONSUMER_CENSUS :: pinned_snapshot=323d7fc32d77598f74ea6cd4d30c38dda0fe5070; tracked_files=15205; consumer_files=1433; token_totals={"admissible_possibility":235,"availability":2788,"nearest_neighbor_conditions":94,"vary_with":191}; file_to_token_counts=receipt.consumer_rows; row_digest=a302c68f9db06109948d394d8559645207f94add705de1ddfef881351702575f
-```
-
-## B_DELTA_CLASSIFICATION
-
-Finding verbatim:
-
-```text
-PASS B_DELTA_CLASSIFICATION :: class_counts={"MEANING_CHANGED":32,"NEWLY_WITNESSABLE":1,"SUPPORT_READING_SAFE":626,"UNAFFECTED":774}; complete_disjoint=True; full_file_lists=receipt.classes; classification is measurement-only
-```
-
-The full file lists are reproduced below and are also stored under
-`measurement.classes` in the primary receipt.
-
-## C_VACUITY_PROBE
-
-Finding verbatim:
-
-```text
-PASS C_VACUITY_PROBE :: literal_state_resolved_witness_runners=1; literal_state_resolved_branch_pairs=1; literal_marginal_witness_runners=0; literal_marginal_branch_pairs=0; state_paths=['scripts/audit_companion_minimal_axioms_clean_base_exact.py']; marginal_paths=[]; a marginal-independence row would not refute state-resolved dependence
-```
-
-The one landed literal witness is
-`local_distribution(neighborhood_records)` in the minimal-axioms companion:
-its `blocks_up` branch returns `{up: 0, down: 1}`, while its fallback returns
-`{up: 1/2, down: 1/2}`. This is one explicit state-resolved branch pair.
-No pinned runner supplies the separate uniform-self-input marginal comparison.
-
-Cycle 970's supervisor-supplied result distinguishes 4/20 state-resolved
-comparisons (8/40 configurations) from 0/10 uniform-marginal comparisons. PR
-#6062 and its cache were open and absent from the literal pinned commit, so
-those counts are scope context rather than additional Cycle 971 corpus hits.
-The two resolutions are kept separate: a marginal-independence row does not
-contradict state-resolved dependence.
-
-## D_CONTROLS
-
-Finding verbatim:
-
-```text
-PASS D_CONTROLS :: object_pins={"axiom_blob":"2f5fdd26898f62c17fcabc846761f7785c2eadb1","docs_tree":"7dbc99ea9bb07250a72fff4722d37cdc1c573daf","registry_blob":"f01d3be864f682584d50eede8b3abe6671bb4719","scripts_tree":"b74e1639fc2a2250c0de2a56ad33665533a22c81","snapshot_commit":"323d7fc32d77598f74ea6cd4d30c38dda0fe5070","snapshot_tree":"45f8bd67eedaccb34918cb6804e850e1ba7f21fb"}; authority_checks={"availability_support_in_axiom":true,"new_sentence_in_axiom":true,"provenance_date_in_axiom":true,"registry_has_new_sentence":true,"registry_has_support_note":true}; BLOCKLIST=['323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/**', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:scripts/**'] execution=False; determinism_replay=True; runtime_s=28.655270<1400; stdout_upper_bound_bytes=3042<6000<150000; timeout_s=300<1400; literal_AUDIT_INPUT_PATHS=['docs/MINIMAL_AXIOMS_2026-06-29.md', 'docs/audit/data/axiom_premise_nodes.json']; pinned_snapshot_surfaces=['323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:scripts/', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/MINIMAL_AXIOMS_2026-06-29.md', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/audit/data/axiom_premise_nodes.json']
+PASS A_CONSUMER_CENSUS :: pinned_snapshot=323d7fc32d77598f74ea6cd4d30c38dda0fe5070; tracked_files=15205; consumer_files=1440; selector_anchor_complete=True; token_totals={"admissible_possibility":240,"availability":2788,"nearest_neighbor_conditions":94,"vary_with":193}; file_to_token_counts=receipt.consumer_rows; row_digest=a24d1a30308acae64c6836a5e8804e433a16185085cebef704661193b772186f
+PASS B_DELTA_CLASSIFICATION :: class_counts={"MEANING_CHANGED":26,"NEWLY_WITNESSABLE":0,"SUPPORT_READING_SAFE":70,"UNAFFECTED":1344}; complete_disjoint=True; full_file_lists=receipt.classes; classification is measurement-only
+PASS C_VACUITY_PROBE :: literal_state_resolved_witness_runners=1; literal_state_resolved_branch_pairs=1; literal_marginal_witness_runners=0; literal_marginal_branch_pairs=0; state_paths=['scripts/audit_companion_minimal_axioms_clean_base_exact.py']; marginal_paths=[]; pinned_python_files_scanned=5646; a marginal-independence row would not refute state-resolved dependence
+PASS D_CONTROLS :: object_pins={"axiom_blob":"2f5fdd26898f62c17fcabc846761f7785c2eadb1","docs_tree":"7dbc99ea9bb07250a72fff4722d37cdc1c573daf","registry_blob":"f01d3be864f682584d50eede8b3abe6671bb4719","scripts_tree":"b74e1639fc2a2250c0de2a56ad33665533a22c81","snapshot_commit":"323d7fc32d77598f74ea6cd4d30c38dda0fe5070","snapshot_tree":"45f8bd67eedaccb34918cb6804e850e1ba7f21fb"}; authority_checks={"availability_support_in_axiom":true,"new_sentence_in_axiom":true,"provenance_date_in_axiom":true,"registry_has_new_sentence":true,"registry_has_support_note":true}; BLOCKLIST=['323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/**', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:scripts/**'] execution=False; determinism_replay=True; runtime_s=158.651143<timeout_s=300<=300; stdout_upper_bound_bytes=4407<6000<150000; literal_AUDIT_INPUT_PATHS=['docs/MINIMAL_AXIOMS_2026-06-29.md', 'docs/audit/data/axiom_premise_nodes.json']; pinned_snapshot_surfaces=['323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:scripts/', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/MINIMAL_AXIOMS_2026-06-29.md', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/audit/data/axiom_premise_nodes.json']
 VERDICT: PINNED_AXIOM_FIDELITY_MEASUREMENT_COMPLETE
 TOTAL: PASS=4 FAIL=0
 ```
 
-Integrity gates cover bookkeeping only. No certificate predicate demands a
-particular class count or witness outcome.
+Integrity gates cover bookkeeping only. No primary predicate requires a
+preferred class count or witness outcome.
 
-## Independent refutation attempt
-
-The checker SHA-pins the primary source, cache, and receipt; treats the primary
-and every pinned runner as AST/text only; independently reconstructs all 1,433
-consumer rows and all four complete class lists; and independently repeats the
-state-resolved/marginal witness search.
-
-Findings verbatim:
+## Independent refutation findings (verbatim)
 
 ```text
-PASS R0_REFUTE_PINS_BLOCKLIST_AND_SNAPSHOT_IO :: pins_match=3/3; literal_pin=323d7fc32d77598f74ea6cd4d30c38dda0fe5070; git_ls_tree/show=True/True; working_tree_corpus_reads=False; BLOCKLIST_text_AST_only=['scripts/frontier_cycle971_axiom_fidelity_reread_2026_08_09.py', 'logs/runner-cache/frontier_cycle971_axiom_fidelity_reread_2026_08_09.txt', 'outputs/axiom_fidelity_reread_cycle971_receipt_2026_08_09.json', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:scripts/']
-PASS R1_REFUTE_CONSUMER_CENSUS :: independent_tracked/consumers=15205/1433; token_totals={"admissible_possibility":235,"availability":2788,"nearest_neighbor_conditions":94,"vary_with":191}; row_digest=a302c68f9db06109948d394d8559645207f94add705de1ddfef881351702575f; exact_rows_match=True
-PASS R2_REFUTE_DELTA_CLASSIFICATION :: independent_class_counts={"MEANING_CHANGED":32,"NEWLY_WITNESSABLE":1,"SUPPORT_READING_SAFE":626,"UNAFFECTED":774}; full_lists_match=True; classes_digest=7da6c4ec1119550d4a6baef22aab764586a1aa8a21bec22d2bdd5b188ccdf713
-PASS R3_REFUTE_VACUITY_PROBE :: independent_state_resolved_runners/branch_pairs=1/1; independent_marginal_runners/branch_pairs=0/0; state_paths=['scripts/audit_companion_minimal_axioms_clean_base_exact.py']; marginal_paths=[]
+PASS R0_REFUTE_PINS_BLOCKLIST_AND_SNAPSHOT_IO :: file_pins_present_or_match=4/4; stable_science_digest_match=True; cache_contract_match=True; literal_pin=323d7fc32d77598f74ea6cd4d30c38dda0fe5070; git_ls_tree/show=True/True; working_tree_corpus_reads=False; BLOCKLIST_text_AST_only=['scripts/frontier_cycle971_axiom_fidelity_reread_2026_08_09.py', 'logs/runner-cache/frontier_cycle971_axiom_fidelity_reread_2026_08_09.txt', 'outputs/axiom_fidelity_reread_cycle971_receipt_2026_08_09.json', 'outputs/axiom_fidelity_reread_cycle971_independent_semantic_adjudications_2026_08_09.json', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:scripts/']
+PASS R1_REFUTE_CONSUMER_CENSUS :: independent_tracked/consumers=15205/1440; token_totals={"admissible_possibility":240,"availability":2788,"nearest_neighbor_conditions":94,"vary_with":193}; row_digest=a24d1a30308acae64c6836a5e8804e433a16185085cebef704661193b772186f; exact_path_token_rows_match=True
+PASS R2_REFUTE_DELTA_CLASSIFICATION :: independent_class_counts={"MEANING_CHANGED":26,"NEWLY_WITNESSABLE":0,"SUPPORT_READING_SAFE":70,"UNAFFECTED":1344}; adjudication_manifest_valid=True; adjudication_manifest_sha256=e2b5195b9fd140d30eb551a3906c67dee1e603718b1ea6913d7410923716b68c; full_lists_match=True; classes_digest=389004fadd21329b142498f9af6042ad74d66b63561da88bdfb37750b67b9c59
+PASS R3_REFUTE_VACUITY_PROBE :: independent_state_resolved_runners/branch_pairs=1/1; independent_marginal_runners/branch_pairs=0/0; pinned_python_files_scanned=5646; state_paths=['scripts/audit_companion_minimal_axioms_clean_base_exact.py']; marginal_paths=[]
 PASS R4_REFUTE_AXIOM_PROVENANCE :: independent_authority_checks={"new_distribution_sentence":true,"owner_date":true,"registry_support":true,"support_provenance":true}
-PASS R5_CONTROLS :: determinism_replay=True; runtime_s=28.532962<1400; stdout_upper_bound_bytes=3460<6000<150000; timeout_s=300<1400; literal_AUDIT_INPUT_PATHS=['scripts/frontier_cycle971_axiom_fidelity_reread_2026_08_09.py', 'logs/runner-cache/frontier_cycle971_axiom_fidelity_reread_2026_08_09.txt', 'outputs/axiom_fidelity_reread_cycle971_receipt_2026_08_09.json']
+PASS R5_CONTROLS :: determinism_replay=True; runtime_s=148.924364<timeout_s=300<=300; stdout_upper_bound_bytes=5104<6000<150000; literal_AUDIT_INPUT_PATHS=['scripts/frontier_cycle971_axiom_fidelity_reread_2026_08_09.py', 'logs/runner-cache/frontier_cycle971_axiom_fidelity_reread_2026_08_09.txt', 'outputs/axiom_fidelity_reread_cycle971_receipt_2026_08_09.json', 'outputs/axiom_fidelity_reread_cycle971_independent_semantic_adjudications_2026_08_09.json']
 VERDICT: PRIMARY_SURVIVES_INDEPENDENT_REFUTATION_ATTEMPT
 TOTAL: PASS=6 FAIL=0
 ```
 
-## Full file lists by class
+The checker pins the primary source and independently reviewed semantic-ledger
+SHAs exactly, validates the canonical cache header and stable science digest,
+and intentionally does not pin elapsed-time bytes. It rebuilds the census and
+witness probe with separate Git-object and AST logic, then checks the primary's
+complete class lists against the ledger; it does not duplicate the primary's
+semantic regex router. Thus an ordinary primary-then-checker replay remains
+reproducible even when runtime fields change.
 
-### UNAFFECTED (774)
+## No-Go Discipline Gate
 
-- `docs/3D_CORRECTION_MASTER_NOTE.md`
-- `docs/A3_ROUTE2_SINGLE_CLOCK_C3_OBSTRUCTION_NOTE_2026-05-08_r2.md`
-- `docs/A3_ROUTE4_SPIN6_CHAIN_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_r4.md`
-- `docs/ACPHILAMBDA_CROSS_ARC_UNIT_CLASSIFICATION_WIRING_2026-07-02.md`
-- `docs/ACPHILAMBDA_HW_COMPLEMENTATION_EQUIVARIANCE_SUPPORT_NOTE_2026-06-09.md`
-- `docs/ACPHILAMBDA_K1_STAGGERED_K_BLINDNESS_REAL_LIFT_2026-07-02.md`
-- `docs/ACPHILAMBDA_OCCUPANCY_GRAIN_MENU_COUNTING_MEASURE_DYNAMICAL_STATIC_CORRESPONDENCE_BOUNDED_THEOREM_NOTE_2026-07-16.md`
-- `docs/ACPHILAMBDA_OCCUPANCY_SELECTION_REALIZED_STATE_REDUCTION_NOTE_2026-06-11.md`
-- `docs/ACPHILAMBDA_R_ETA_DOUBLET_CLOCK_RATE_NORMALIZATION_NO_GO_NOTE_2026-07-04.md`
-- `docs/ACPHILAMBDA_R_ETA_READOUT_IDENTIFICATION_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md`
-- `docs/ACPHILAMBDA_R_ETA_VALUE_FACE_REGISTERED_ANGLE_FUNCTIONAL_EXACTNESS_RELOCATION_NOTE_2026-07-05.md`
-- `docs/ACPHILAMBDA_SPECIES_BRIDGE_REALIZED_STATE_DECOMPOSITION_NOTE_2026-06-11.md`
-- `docs/ACTION_POWER_3D_OPERATOR_CAUCHY_NOTE_2026-05-10.md`
-- `docs/ALPHA_S_4LOOP_RUNNING_DERIVATION_PARTIAL_NOTE_2026-05-10_4loop.md`
-- `docs/ALPHA_S_DIRECT_WILSON_LOOP_DERIVATION_THEOREM_NOTE_2026-04-30.md`
-- `docs/ALT_CONNECTIVITY_FAMILY_OPERATOR_CAUCHY_NOTE_2026-05-10.md`
-- `docs/AREA_LAW_NATIVE_CAR_SEMANTICS_TIGHTENING_NOTE_2026-04-25.md`
-- `docs/AREA_LAW_QUARTER_BROADER_NO_GO_NOTE_2026-04-25.md`
-- `docs/ARROW_CPT_ORIENTATION_DO_NOT_SOURCE_CP_ODD_ACTION_COEFFICIENTS_NO_GO_NOTE_2026-06-08.md`
-- `docs/ASYMMETRY_PERSISTENCE_BORN_NOTE.md`
-- `docs/ATOMIC_HYDROGEN_HELIUM_PROBE_NOTE.md`
-- `docs/AXIOM_FIRST_Z_N_EQUIVARIANT_SPECTRAL_ASYMMETRY_NARROW_THEOREM_NOTE_2026-05-26.md`
-- `docs/BAE_U1B_SIX_RAY_DIRAC_MEASURE_NOTE_2026-05-17.md`
-- `docs/BETA23_SCHEME_CONVENTION_DEMARCATION_FIXED_SPACING_BOUNDED_THEOREM_NOTE_2026-06-08.md`
-- `docs/BETA6_DELTA_ANALYTIC_CLASS_FRONTIER_NOTE_2026-05-30.md`
-- `docs/BETA6_PLAQUETTE_CLOSURE_NOTE_2026-05-29.md`
-- `docs/BETA6_PLAQUETTE_D9_COEFFICIENT_BOUNDED_NOTE_2026-06-04.md`
-- `docs/BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md`
-- `docs/BOUGEROL_LACROIX_STAGGERED_BLOCKING_LYAPUNOV_BRIDGE_NO_GO_NOTE_2026-05-10.md`
-- `docs/BOUNDARY_LAW_ROBUSTNESS_NOTE_2026-04-11.md`
-- `docs/BOUNDED_TWO_STAR_BKSF_CYCLE789_TARGET_CHART_BRIDGE_CYCLE869_BOUNDED_THEOREM_NOTE_2026-08-02.md`
-- `docs/BW_BRIDGE_REDUCTION_OS0_IDENTIFICATION_CONSUMES_ONLY_IR_SLOPE_BOUNDED_THEOREM_NOTE_2026-06-10.md`
-- `docs/CAUSAL_MOVING_UNIFICATION_NOTE.md`
-- `docs/CHARGED_LEPTON_MASS_HIERARCHY_REVIEW_NOTE_2026-04-17.md`
-- `docs/CHARGED_LEPTON_UE_IDENTITY_VIA_Z3_TRICHOTOMY_NOTE_2026-04-17.md`
-- `docs/CHARGED_LEPTON_VALUE_REDUCES_TO_ONE_COUNTING_BIT_SYNTHESIS_NOTE_2026-06-05.md`
-- `docs/CHARGED_LEPTON_Y_TAU_WARD_COMBINED_NO_GO_NOTE_2026-05-10.md`
-- `docs/CHIRALITY_SEPARATE_FACTOR_DIRAC_MASS_ALGEBRA_SUPPORT_BOUNDED_NOTE_2026-06-08.md`
-- `docs/CHRONOLOGY_PROTECTION_OPERATIONAL_NO_PAST_SIGNALING_THEOREM_NOTE_2026-04-25.md`
-- `docs/CL3_CHIRAL_BODY_DIAGONAL_AXIS_FORCED_DOUBLET_H_NOT_SOURCED_NARROW_NO_GO_NOTE_2026-06-04.md`
-- `docs/CL3_CHIRAL_CUBE_WILSON_HOP_DOUBLING_FORECLOSED_NARROW_NO_GO_NOTE_2026-05-27.md`
-- `docs/CLOSURE_C_L1_PER_GRAPH_CASIMIR_NOTE_2026-05-10_cL1c.md`
-- `docs/CLOSURE_C_STAGGERED_DIRAC_GATE_NOTE_2026-05-10_cStaggered.md`
-- `docs/CLOSURE_T1_Z10_Z20_BZ_INTEGRALS_NOTE_2026-05-10_t1z10z20.md`
-- `docs/CLUSTER_DECOMPOSITION_MASS_GAP_BRIDGE_THEOREM_NOTE_2026-05-09.md`
-- `docs/CONNES_KREIMER_BOOLEAN_LATTICE_IDEMPOTENT_RB_SUBSTRATE_NARROW_NO_GO_NOTE_2026-05-16.md`
-- `docs/CONNES_KREIMER_BRIDGE_16FOLD_BLOCKING_NO_GO_THEOREM_NOTE_2026-05-10.md`
-- `docs/CORRELATOR_CYCLE_PHASES_READBACK_BLIND_OR_STATE_CONTINGENT_BOUNDED_NOTE_2026-06-12.md`
-- `docs/COSMOLOGY_SCALE_IDENTIFICATION_AND_REDUCTION_NOTE.md`
-- `docs/CYCLE332_RECEIVER_SUCCESS_CYCLE610_GATE_ADAPTER_BOUNDED_THEOREM_NOTE_2026-07-30.md`
-- `docs/C_ISO_DERIVED_THEOREM_NOTE_2026-05-07_w3.md`
-- `docs/D31_MAGNITUDE_EXPONENT_TRANSLATION_PROBE_2026-06-05.md`
-- `docs/D3_BAR_WINDOW_DESIGN_DELTA_2026-07-11.md`
-- `docs/DIMENSIONAL_GRAVITY_TABLE.md`
-- `docs/DIRAC_FIELD_SMOOTHING_NOTE.md`
-- `docs/DIRAC_WEAK_COUPLING_NOTE.md`
-- `docs/DM_ABCC_PMNS_NONSINGULARITY_THEOREM_NOTE_2026-04-19.md`
-- `docs/DM_LEPTOGENESIS_NE_ACTIVE_COLUMN_AXIOM_BOUNDARY_NOTE_2026-04-16.md`
-- `docs/DM_LEPTOGENESIS_NE_CHARGED_SOURCE_RESPONSE_REDUCTION_NOTE_2026-04-16.md`
-- `docs/DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md`
-- `docs/DM_NEUTRINO_CODD_BOSONIC_NORMALIZATION_NARROW_THEOREM_NOTE_2026-05-17.md`
-- `docs/DM_NEUTRINO_K00_BOSONIC_NORMALIZATION_NARROW_THEOREM_NOTE_2026-05-17.md`
-- `docs/DM_NEUTRINO_SCHUR_SUPPRESSION_THEOREM_NOTE_2026-04-15.md`
-- `docs/DM_NEUTRINO_VEVEN_BOSONIC_NORMALIZATION_NARROW_THEOREM_NOTE_2026-05-17.md`
-- `docs/DM_WILSON_DIRECT_DESCENDANT_BOUNDARY_ARREST_TRIPLET_Y_MAXIMIN_NOTE_2026-04-19.md`
-- `docs/DM_WILSON_DIRECT_DESCENDANT_CANONICAL_FIBER_SCHUR_ENTROPY_CANDIDATE_NO_GO_NOTE_2026-04-19.md`
-- `docs/DM_WILSON_DIRECT_DESCENDANT_LOCAL_OBSERVABLE_COORDINATE_THEOREM_NOTE_2026-04-19.md`
-- `docs/DM_WILSON_DIRECT_DESCENDANT_PROJECTED_SOURCE_BRANCH_DISCRIMINANT_THEOREM_NOTE_2026-04-18.md`
-- `docs/DM_WILSON_TO_DWEH_STRUCTURED_MODEL_REALIZATION_THEOREM_NOTE_2026-04-18.md`
-- `docs/ETA_TWISTED_WALK_FAMILY_RIGID_DRIFT_DISCOVERY_BOUNDED_THEOREM_NOTE_2026-06-10.md`
-- `docs/EVOLVING_NETWORK_PROTOTYPE_V2_NOTE.md`
-- `docs/EW_KAPPA_SELF_ENERGY_OBJECT_PIN_MC_UNDECIDABLE_NO_GO_NOTE_2026-06-08.md`
-- `docs/FLAVOR_BLOCK_COUNT_NATIVE_VIA_JCS_NOTE_2026-05-30.md`
-- `docs/FLAVOR_CARRIER_MEASURE_SCORING_DISCRIMINATOR_BOUNDED_NOTE_2026-07-02.md`
-- `docs/FLAVOR_EMERGENT_CHIRALITY_NO_TRANSPORT_NOTE_2026-05-30.md`
-- `docs/FLAVOR_OPERATOR_SPECTRAL_FUNCTIONALS_DO_NOT_FORCE_R_HALF_NO_GO_NOTE_2026-06-02.md`
-- `docs/FLAVOR_Q1_DEFAULT_RESTS_ON_PRR_NOTE_2026-05-30.md`
-- `docs/FLAVOR_RETENTION_LAW_IS_A2PLUS_NOTE_2026-05-31.md`
-- `docs/FORMATION_RATE_LAW_CLASS_REDUCTION_BOUNDED_NOTE_2026-07-08.md`
-- `docs/FRACTIONAL_INSTANTON_DILUTE_GAS_CONDENSATE_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-16.md`
-- `docs/GAUGE_MATTER_CLOSURE_GATES_2026-04-12.md`
-- `docs/GAUGE_SCALAR_TEMPORAL_OBSERVABLE_BRIDGE_STRETCH_NOTE_2026-05-02.md`
-- `docs/GAUGE_VACUUM_PLAQUETTE_BRIDGE_SUPPORT_NOTE.md`
-- `docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_RANK_ONE_FACTORIZED_CLASS_BOUNDARY_NOTE_2026-04-19.md`
-- `docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_TAIL_UNDERDETERMINATION_THEOREM_NOTE_2026-04-19.md`
-- `docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SYMMETRIC_THREE_SAMPLE_POSITIVE_CONE_ORDER_WITNESS_NOTE_2026-04-17.md`
-- `docs/GAUGE_VACUUM_PLAQUETTE_HF_IDENTIFICATION_DIAGNOSTIC_BOUNDED_NOTE_2026-06-12.md`
-- `docs/GAUGE_VACUUM_PLAQUETTE_PERRON_JACOBI_UNDERDETERMINATION_NOTE.md`
-- `docs/GAUGE_VACUUM_PLAQUETTE_RIM_BOUNDARY_ETA_ENV_CONSTRUCTED_READOUT_BOUNDED_NOTE_2026-06-12.md`
-- `docs/GAUGE_VACUUM_PLAQUETTE_SLAB_WINDOW_COUPLING_DERIVED_BOUNDED_NOTE_2026-06-12.md`
-- `docs/GAUGE_VACUUM_PLAQUETTE_SYMMETRIZED_WINDOW_DISPLACEMENT_BOUNDED_NOTE_2026-06-12.md`
-- `docs/GAUGE_VACUUM_PLAQUETTE_TENSOR_TRANSFER_PERRON_SOLVE_NOTE.md`
-- `docs/GAUGE_VACUUM_PLAQUETTE_TENSOR_WORD_PERRON_DERIVED_RHO_COMPOSED_READOUT_BOUNDED_NOTE_2026-06-11.md`
-- `docs/GAUGE_VACUUM_PLAQUETTE_WINDOW_TOP_DOWN_INTEGRAL_DISPLACEMENT_BOUNDED_NOTE_2026-06-12.md`
-- `docs/GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_HILBERT_METRIC_BRACKET_NARROW_THEOREM_NOTE_2026-06-12.md`
-- `docs/GENERATED_FINITE_COMPOSITION_MINIMALITY_THEOREM_2026-07-13.md`
-- `docs/GENERATION_TRIPLET_DIMENSION_PARITY_NO_FAITHFUL_Z_NARROW_NO_GO_NOTE.md`
-- `docs/GRADED_CONSTRAINT_MENU_UNIFORMITY_CONTEXTUALITY_AND_C3_ZERO_INFORMATION_POINT_BOUNDED_THEOREM_NOTE_2026-07-11.md`
-- `docs/GRAVITY_LAW_CLEANUP_NOTE.md`
-- `docs/GRAVITY_WEAK_FIELD_SOURCE_RESPONSE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md`
-- `docs/G_BARE_H_UNIT_SAME_PROJECTED_1PI_RESIDUE_EXHAUSTION_NARROW_THEOREM_NOTE_2026-06-12.md`
-- `docs/G_BARE_TWO_WARD_SAME_1PI_PINNING_THEOREM_NOTE_2026-04-19.md`
-- `docs/HADRON_LANE1_CHIRAL_CONDENSATE_BANKS_CASHER_SCOPING_SUPPORT_NOTE_2026-04-27.md`
-- `docs/HADRON_MASS_LANE1_THEOREM_PLAN_SUPPORT_NOTE_2026-04-27.md`
-- `docs/HIERARCHY_APS_ETA_STAGGERED_BULK_VANISHING_SCOPING_NOTE_2026-05-26.md`
-- `docs/HIERARCHY_DELTA0_S3_FIXED_GAP_SPECTRUM_NO_GO_NOTE_2026-06-18.md`
-- `docs/HIERARCHY_KOIDE_ACPHILAMBDA_TWO_BIT_DECOMPOSITION_NOTE_2026-06-06.md`
-- `docs/HIERARCHY_MATSUBARA_DETERMINANT_RATIO_NARROW_THEOREM_NOTE_2026-05-10.md`
-- `docs/HIERARCHY_MERON_SUBSTRATE_BRIDGE_SU2_SU3_MISMATCH_NARROW_NO_GO_NOTE_2026-05-16.md`
-- `docs/HIGGS_LATTICE_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md`
-- `docs/HIGGS_MASS_S4B_EWSB_SELECTION_BOUNDED_NOTE_2026-05-10_s4bewsb.md`
-- `docs/HUBBLE_LANE5_C1_CARRIER_METROLOGY_AXIOM_AUDIT_NOTE_2026-04-29.md`
-- `docs/INDUSTRIAL_SDP_BOOTSTRAP_LATTICE_BRACKET_NOTE_2026-05-03.md`
-- `docs/KCPT_CORNER_CARRIER_LATTICE_DELIVERY_HW1_DOUBLET_PAIR_POLARIZATION_BOUNDED_THEOREM_NOTE_2026-07-17.md`
-- `docs/KCPT_ORBIT_CONSTANT_REGISTERED_OCCUPANCY_WEIGHTS_DERIVABLE_PROTOCOL_CLASS_BOUNDED_THEOREM_NOTE_2026-07-12.md`
-- `docs/KEY_TERMINOLOGY.md`
-- `docs/KOIDE_A1_PROBE_CONTINUUM_LIMIT_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe15.md`
-- `docs/KOIDE_A1_PROBE_FLAVOR_ANOMALY_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_probe2.md`
-- `docs/KOIDE_A1_PROBE_RETAINED_U1_HUNT_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe14.md`
-- `docs/KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md`
-- `docs/KOIDE_BAE_PROBE_CL3_BIVECTOR_BOUNDED_OBSTRUCTION_NOTE_2026-05-17_probeCl3bivector.md`
-- `docs/KOIDE_BAE_PROBE_SPECTRUM_CONE_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe22.md`
-- `docs/KOIDE_BERRY_BUNDLE_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md`
-- `docs/KOIDE_C3_SINGLET_EXTENSION_REDUCTION_THEOREM_NOTE_2026-04-20.md`
-- `docs/KOIDE_FIRST_ORDER_SELECTOR_BOUNDED_LOCALIZATION_CERTIFICATE_2026-06-18.md`
-- `docs/KOIDE_FIRST_ORDER_SELECTOR_IS_THE_CHIRAL_LR_COUPLING_NOT_A_SYMMETRY_NARROW_NOTE_2026-06-05.md`
-- `docs/KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md`
-- `docs/KOIDE_K_SYMMETRIZED_UNTIED_MEASURE_RECORDS_ONLY_RECONSTRUCTION_BOUNDED_THEOREM_NOTE_2026-07-12.md`
-- `docs/KOIDE_MATTER_ATTACHMENT_REDUCES_TO_KS_AUDIT_NARROW_THEOREM_NOTE_2026-06-02.md`
-- `docs/KOIDE_OCTAHEDRAL_OVERCONSTRAINS_VALUE_BIT_NARROW_NOTE_2026-06-02.md`
-- `docs/KOIDE_ONSITE_BOOST_RECONSTRUCTION_WEYL_FAITHFUL_VS_SCALAR_SELECTION_NOTE_2026-06-02.md`
-- `docs/KOIDE_Q23_K0_REAL_BLOCK_EQUIVALENCE_NOTE_2026-05-30.md`
-- `docs/KOIDE_QUBIT_LATTICE_DIM_ALGEBRAIC_CLOSURE_NOTE_2026-04-20.md`
-- `docs/KOIDE_Q_REDUCED_CARRIER_PHYSICAL_IDENTIFICATION_OBSTRUCTION_NOTE_2026-06-12.md`
-- `docs/KOIDE_Q_TWO_THIRDS_FROBENIUS_EXTREMUM_BRIDGE_BOUNDED_NOTE_2026-05-25.md`
-- `docs/KOIDE_RHO_DELTA_DIMENSIONLESS_DOF_RATIO_BRIDGE_BOUNDED_NOTE_2026-05-25.md`
-- `docs/KOIDE_RP_SPECTRUM_REDUCE_TO_TRANSFER_POSITIVITY_NARROW_THEOREM_NOTE_2026-06-02.md`
-- `docs/KOIDE_R_HALF_INDEX_READOUT_NON_SUSY_STAGGERED_DIRAC_GATE_META_NOTE_2026-06-05.md`
-- `docs/KOIDE_R_HALF_NOT_SYMMETRY_PROTECTED_DYNAMICAL_NORM_BALANCE_NARROW_NO_GO_NOTE_2026-06-04.md`
-- `docs/KOIDE_SIGNED_READOUT_IS_NOT_CHIRALITY_NARROW_NO_GO_NOTE_2026-06-04.md`
-- `docs/KOIDE_U_L1_RESURGENCE_TRANS_SERIES_NOTE_2026-05-08_probeU_L1_resurgence.md`
-- `docs/KOIDE_W_SUBSTRATE_CHIRALITY_CL3_Z2_NOTE_2026-05-10_probeW_substrate_chirality.md`
-- `docs/KOIDE_Z3_JOINT_PROJECTOR_IDENTITY_NOTE_2026-04-19.md`
-- `docs/KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md`
-- `docs/K_DEPENDENCE_REVIEW_SAFE_NOTE.md`
-- `docs/LATTICE_3D_L2_TAIL_STATS_NOTE.md`
-- `docs/LATTICE_NN_LIGHT_CONE_NOTE.md`
-- `docs/LATTICE_PHYSICAL_MATCHING_CLUSTER_OBSTRUCTION_NOTE_2026-05-02.md`
-- `docs/LENSING_DEFLECTION_NOTE.md`
-- `docs/LIGHT_CONE_CRANK_NICOLSON_LIEB_ROBINSON_BRIDGE_NOTE_2026-05-09.md`
-- `docs/LINEAR_RESPONSE_TRUE_KUBO_NOTE.md`
-- `docs/LOCAL_ZSYM_PREDICTOR_NOTE.md`
-- `docs/MESOSCOPIC_SURROGATE_ANNULAR_TAPERED_SWEEP_NOTE.md`
-- `docs/MESOSCOPIC_SURROGATE_LOCALIZATION_FRONTIER_NOTE.md`
-- `docs/MIN_TIME_STEP_IS_THE_PLANCK_TIME_FROM_THE_SINGLE_SCALE_REFERENCE_PRIMITIVE_NARROW_THEOREM_NOTE_2026-06-08.md`
-- `docs/NATIVE_GAUGE_TRANSFER_BLOCK_HELLMANN_MONOTONICITY_RUNG_EIGHT_BOUNDED_NOTE_2026-06-12.md`
-- `docs/NATIVE_GAUGE_TRANSFER_CERTIFIED_GAP_RUNG_FOUR_BOUNDED_NOTE_2026-06-12.md`
-- `docs/NATIVE_GAUGE_TRANSFER_DIAGONAL_DOMINATION_RUNG_NINE_BOUNDED_NOTE_2026-06-12.md`
-- `docs/NATIVE_GAUGE_TRANSFER_OPERATOR_NORM_REMAINDER_RUNG_EIGHT_BOUNDED_NOTE_2026-06-12.md`
-- `docs/NATIVE_GAUGE_TRANSFER_REDUCED_A2_CLOSED_FORM_RUNG_SIXTEEN_BOUNDED_NOTE_2026-06-12.md`
-- `docs/NATIVE_GAUGE_TRANSFER_REDUCED_A2_VIRIAL_LEADING_EQUALITY_RUNG_EIGHTEEN_BOUNDED_NOTE_2026-06-12.md`
-- `docs/NATIVE_GAUGE_TRANSFER_WEYL_DETERMINANT_ASSEMBLY_RUNG_TEN_BOUNDED_NOTE_2026-06-12.md`
-- `docs/NATIVE_GAUGE_TRANSFER_WILSON_TO_SADDLE_UNIFORM_RUNG_NINE_BOUNDED_NOTE_2026-06-12.md`
-- `docs/NEUTRINO_LANE4_4F_SIGMA_M_NU_THEOREM_PLAN_NOTE_2026-04-28.md`
-- `docs/NEUTRINO_MAJORANA_CURRENT_STACK_EXHAUSTION_NOTE.md`
-- `docs/NEUTRINO_MAJORANA_OPERATOR_AXIOM_FIRST_NOTE.md`
-- `docs/NEUTRINO_MAJORANA_SCALE_SELECTOR_NECESSITY_NOTE.md`
-- `docs/NEUTRINO_MAJORANA_SELF_DUAL_STAIRCASE_LIFT_OBSTRUCTION_NOTE.md`
-- `docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_CONNES_NC_SPECTRAL_NARROW_NOTE_2026-05-21.md`
-- `docs/OBSERVABLE_PRINCIPLE_P1_EXACT_ADDITIVITY_ZERO_OFFSET_REPAIR_NOTE_2026-06-13.md`
-- `docs/OBSERVABLE_PRINCIPLE_REAL_D_BLOCK_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md`
-- `docs/OCCUPANCY_READOUT_EXPONENT_BEREZIN_SUBSUMPTION_BOUNDED_THEOREM_NOTE_2026-06-09.md`
-- `docs/OH_SCHUR_BOUNDARY_ACTION_NOTE.md`
-- `docs/PERSISTENT_INERTIAL_RESPONSE_READINESS_NOTE.md`
-- `docs/PERSISTENT_OBJECT_BLENDED_READOUT_TRANSFER_SWEEP_NOTE_2026-04-16.md`
-- `docs/PHYSICAL_EXACT_ADJACENCY_DISSECTION_BRACKET_CYCLE725_NOTE_2026-08-03.md`
-- `docs/PHYSICAL_M2_FULL34_FIXED_PACKET_COMPOSITION_CYCLE714_BOUNDED_THEOREM_NOTE_2026-07-26.md`
-- `docs/PHYSICAL_SOURCE_STABILIZER_COSET_COLLAPSE_K_SIGN_LAW_CYCLE707_NOTE_2026-08-01.md`
-- `docs/PHYSICS_FIRST_ATTACK_PLAN.md`
-- `docs/PLANCK_LINK_LOCAL_FIRST_VARIATION_P_A_FORCING_THEOREM_NOTE_2026-04-30.md`
-- `docs/PLANCK_SCALE_CONDITIONAL_COMPLETION_NOTE_2026-04-24.md`
-- `docs/PLAQUETTE_ALPHA_S_CHAIN_AUDIT_MAP_SYNTHESIS_META_NOTE_2026-05-10.md`
-- `docs/PLAQUETTE_MC_CERTIFICATION_PROTOCOL_NOTE_2026-06-11.md`
-- `docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_BOUNDED_SYNTHESIS_NOTE_2026-05-06.md`
-- `docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_KOUTSCHAN_MINIMALITY_NOTE_2026-05-06.md`
-- `docs/PLAQUETTE_V1_PICARD_FUCHS_ODE_RANK_BOUND_CITATION_NOTE_2026-05-06.md`
-- `docs/PMNS_ACTIVE_FOUR_REAL_SOURCE_FROM_TRANSPORT_NOTE.md`
-- `docs/POVM_OBSERVATION_COMPARATOR_INPUT_CONVENTION_META_NOTE_2026-07-30.md`
-- `docs/PRESENTATION_GAUGE_AXIS_SIGN_FLIP_INVARIANTS_TWIN_DETECTOR_GAUGE_SECTION_ORIENTATION_BIT_BOUNDED_THEOREM_NOTE_2026-07-04.md`
-- `docs/PRIMITIVE_P_L1_CHANNEL_WEIGHT_PROPOSAL_NOTE_2026-05-10_pPl1.md`
-- `docs/PRIMITIVE_P_L1_D_PERIOD_FUNCTOR_NOTE_2026-05-10_pPl1_d.md`
-- `docs/PRIMITIVE_P_LH_NCG_NATIVE_NOTE_2026-05-10_pPlh_ncg_native.md`
-- `docs/QUANTUM_LOCAL_ALGEBRA_DOES_NOT_FORCE_BOOST_ACTION_FAITH_NO_GO_NOTE_2026-06-02.md`
-- `docs/QUARK_PROJECTOR_PARAMETER_AUDIT_NOTE_2026-05-10.md`
-- `docs/QUARK_ROUTE2_COLOR_COMPLEMENT_SEVEN_EIGHTHS_BRIDGE_NO_GO_NOTE_2026-06-21.md`
-- `docs/QUARK_ROUTE2_E_CENTER_LIFT_DERIVATION_ATTEMPT_BOUNDED_NOTE_2026-06-12.md`
-- `docs/QUARK_ROUTE2_FIXED_CARRIER_SELECTOR_EQUATION_BOUNDARY_NOTE_2026-06-21.md`
-- `docs/QUARK_ROUTE2_RCONN_TWO_GATE_SOURCE_BRIDGE_FACTORIZATION_NOTE_2026-06-21.md`
-- `docs/QUARK_ROUTE2_SINGLE_ADJOINT_LINE_CURRENT_BANK_NO_GO_NOTE_2026-06-21.md`
-- `docs/RECORD_COMPARABILITY_OWNER_ONE_PAGER_2026-07-04.md`
-- `docs/RING_FAMILY_UNIFORMITY_CYCLE737_BOUNDED_THEOREM_NOTE_2026-07-28.md`
-- `docs/RP_MIXED_OBSERVABLE_SINGLE_TRANSFER_MATRIX_NARROW_THEOREM_NOTE_2026-05-29.md`
-- `docs/S3_TIME_DIRECT_CONSUMER_ECENTER_DEPENDENCY_CLASSIFICATION_NOTE_2026-06-21.md`
-- `docs/S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md`
-- `docs/SCALAR_SELECTOR_REVIEWER_PACKAGE_2026-04-20.md`
-- `docs/SCALAR_SELECTOR_SYNTHESIS_NOTE_2026-04-19.md`
-- `docs/SCIENCE_3PLUS1_LINE_LAW_KNOWN_LIMITS_NOTE_2026-04-20.md`
-- `docs/SIGMA_MNU_F3_STUCK_FANOUT_SYNTHESIS_NOTE_2026-04-28.md`
-- `docs/SIGNED_GRAVITY_CONTINUUM_GRADED_EINSTEIN_LOCALIZATION_NOTE.md`
-- `docs/SIGNED_GRAVITY_PARITY_GRADING_ESCAPE_DICHOTOMY_NARROW_THEOREM_NOTE_2026-06-11.md`
-- `docs/SIGNED_GRAVITY_RESPONSE_BACKLOG_2026-04-25.md`
-- `docs/SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md`
-- `docs/SOURCING_TWO_CHANNEL_WAKE_QUANTIFICATION_BOUNDED_NOTE_2026-07-08.md`
-- `docs/STAGGERED_DIRAC_SUBSTEP1_GRASSMANN_FORCING_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`
-- `docs/STAGGERED_DIRAC_SUBSTEP4_AMIN_JOINT_C3_AUTOMORPHISM_SELECTOR_INVARIANCE_BRIDGE_NARROW_THEOREM_NOTE_2026-07-05.md`
-- `docs/STAGGERED_TASTE_IS_THE_QUBIT_NO_SEPARATE_KOIDE_MULTIPLICITY_NARROW_OBSTRUCTION_NOTE_2026-06-04.md`
-- `docs/STRC_LO_COLLINEARITY_THEOREM_NOTE_2026-04-19.md`
-- `docs/STRONG_CP_JOINT_BRIDGE_FAILS_HOLOMORPHIC_RESIDUAL_2026-06-04.md`
-- `docs/STRUCTURAL_NO_GO_SURVEY_NOTE.md`
-- `docs/STRUCTURED_CHOKEPOINT_BRIDGE_NOTE.md`
-- `docs/SU2_WEAK_BETA_COEFFICIENT_STRUCTURAL_CLOSED_FORM_THEOREM_NOTE_2026-04-26.md`
-- `docs/SU3_TENSOR_NETWORK_ENGINE_ROADMAP_NOTE_2026-05-03.md`
-- `docs/SU3_WIGNER_INTERTWINER_BLOCK4_BLOCK5_THEOREM_NOTE_2026-05-03.md`
-- `docs/SYNTHESIS_NOTE_3D.md`
-- `docs/TELEPORTATION_ACCEPTANCE_SUITE_NOTE.md`
-- `docs/TELEPORTATION_BELL_MEASUREMENT_CIRCUIT_NOTE.md`
-- `docs/THEOREM_BAE_NEWTON_GIRARD_UNIFIED_OBSTRUCTION_NOTE_2026-05-10_t2bae.md`
-- `docs/THETA_SECTOR_LEVEL_LOOP_INSERTIONS_CLOSED_SURFACE_BOUNDED_THEOREM_NOTE_2026-07-02.md`
-- `docs/THETA_SEED_SPECTRAL_REALITY_CONJUGATION_SYMMETRIC_SUPPLIED_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-07-02.md`
-- `docs/THETA_TRANSPOSE_SHEET_UNIQUENESS_FIBER_EVIDENCE_BOUNDED_NOTE_2026-07-02.md`
-- `docs/TWO_SEAM_FOREST_GAUGE_POLYAKOV_HOLONOMY_PRESERVATION_BOUNDED_THEOREM_NOTE_2026-07-12.md`
-- `docs/UNIVERSAL_GR_BLOCK_IDENT_NOTE.md`
-- `docs/UNIVERSAL_GR_COMPLEMENT_CANONICAL_NOTE.md`
-- `docs/UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_BLOCKER_NOTE.md`
-- `docs/UNIVERSAL_QG_PROJECTIVE_SCHUR_CLOSURE_NOTE.md`
-- `docs/UNIVERSAL_QG_UV_FINITE_PARTITION_NOTE.md`
-- `docs/UNORDERED_MASS_MULTISET_REGISTRABILITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md`
-- `docs/UP_TYPE_MASS_RATIO_CKM_INVERSION_NOTE.md`
-- `docs/VACUUM_CRITICAL_STABILITY_NOTE.md`
-- `docs/WALD_NOETHER_BP5_BOUNDED_THEOREM_NOTE_2026-05-10.md`
-- `docs/WALLS_ATTACK_20260702_ADJUDICATION_BRIEF_META_NOTE_2026-07-02.md`
-- `docs/WAVE_DIRECT_DM_NEXT_WIDENING_RECOMMENDATION.md`
-- `docs/WILSON_STAGGERED_CONSTRAINED_FIBER_DOBRUSHIN_AND_RAW_RG_UNIT_DIRECTIONS_BOUNDED_THEOREM_NOTE_2026-07-12.md`
-- `docs/WILSON_STAGGERED_DECLARED_RG_CHART_RAW_LIFT_GEOMETRIC_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-07-12.md`
-- `docs/WILSON_STAGGERED_ENHANCED_MOMENT_GENERATED_BASE_DECORATED_FACTOR_RETURN_BOUNDED_THEOREM_NOTE_2026-07-12.md`
-- `docs/WILSON_STAGGERED_K_RETAINING_MARKED_ATTACHMENT_STRONG_WEAK_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-07-12.md`
-- `docs/WILSON_STAGGERED_SCALAR_PRODUCT_REFERENCE_COMPLETED_JOINT_OUTER_HAAR_ACTUAL_OUTPUT_ATOM_RETURN_BOUNDED_THEOREM_NOTE_2026-07-13.md`
-- `docs/WILSON_STAGGERED_SPLIT_DERIVATIVE_AND_UNLOCALIZED_CAUCHY_CERTIFICATE_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-12.md`
-- `docs/WILSON_STAGGERED_TWO_HORIZON_SKELETON_PULLBACK_CANONICAL_REHOEFFDING_INTERTWINING_BOUNDED_THEOREM_NOTE_2026-07-12.md`
-- `docs/YT_CLASS_7_SPONTANEOUS_C3_BREAKING_NOTE_2026-04-18.md`
-- `docs/YT_EW_DELTA_R_RETENTION_ANALYSIS_NOTE_2026-04-18.md`
-- `docs/YT_EXACT_INTERACTING_BRIDGE_TRANSPORT_NOTE.md`
-- `docs/YT_FH_TOP_W_RESPONSE_RATIO_GATE_NOTE_2026-05-25.md`
-- `docs/YT_H_UNIT_FLAVOR_COLUMN_DECOMPOSITION_NOTE_2026-04-18.md`
-- `docs/YT_P1_I_S_LATTICE_PT_CITATION_NOTE_2026-04-17.md`
-- `docs/YT_P3_MSBAR_TO_POLE_K2_INTEGRAL_CITATION_NOTE_2026-04-17.md`
-- `docs/YT_WARD_STEP3_SAME_1PI_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-10.md`
-- `docs/ai_methodology/ABSTRACT_ALGEBRAIC_CORE_EXTRACTION_TECHNIQUE_2026-05-10.md`
-- `docs/ai_methodology/AUDIT_SYSTEM_FITNESS_NOTE_2026-07-12.md`
-- `docs/ai_methodology/METHODOLOGY_SYNTHESIS_2026-04-25.md`
-- `docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md`
-- `docs/ai_methodology/raw/claude_project_commands.md`
-- `docs/ai_methodology/raw/claude_user_global_commands.md`
-- `docs/ai_methodology/raw/claude_user_global_rules.md`
-- `docs/ai_methodology/raw/prompts_session_130f89f0_jonreilly.md`
-- `docs/ai_methodology/raw/prompts_session_4ffea772_jonreilly.md`
-- `docs/ai_methodology/raw/prompts_session_855ddec4.md`
-- `docs/ai_methodology/raw/prompts_session_b5ee8c6c_jonreilly.md`
-- `docs/ai_methodology/raw/prompts_session_e895b0c9_jonreilly.md`
-- `docs/ai_methodology/raw/workflow_tooling.md`
-- `docs/ai_methodology/skills/science-fix-loop/SKILL.md`
-- `docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md`
-- `docs/audit/G_BARE_PROMOTION_PANEL_FINDING_2026-05-28.md`
-- `docs/audit/README.md`
-- `docs/audit/STALE_NARRATIVE_POLICY.md`
-- `docs/audit/data/ledger/ac/ac_orbit_occupancy_statistical_grain_derivation_obligation.json`
-- `docs/audit/data/ledger/ac/acphilambda_r_eta_direct_license_hclass_hunit_non_supply_no_go_note_2026-07-04.json`
-- `docs/audit/data/ledger/ac/action_geometry_bridge_note.json`
-- `docs/audit/data/ledger/ac/action_power_scaling_sweep_note.json`
-- `docs/audit/data/ledger/ac/action_uniqueness_audit_2026-04-11.json`
-- `docs/audit/data/ledger/ad/adaptive_coevolving_geometry_no_go.json`
-- `docs/audit/data/ledger/al/alt_connectivity_family_complex_failure_note.json`
-- `docs/audit/data/ledger/al/alt_connectivity_family_failure_note.json`
-- `docs/audit/data/ledger/al/alt_connectivity_family_sign_note.json`
-- `docs/audit/data/ledger/al/alternative_coupled_field_probe_note.json`
-- `docs/audit/data/ledger/ar/architecture_portability_sweep_note.json`
-- `docs/audit/data/ledger/as/asymmetry_persistence_born_note.json`
-- `docs/audit/data/ledger/as/asymmetry_persistence_joint_card_note.json`
-- `docs/audit/data/ledger/as/asymmetry_persistence_mass_scaling_note.json`
-- `docs/audit/data/ledger/as/asymmetry_persistence_mass_window_note.json`
-- `docs/audit/data/ledger/as/asymmetry_persistence_pilot_note.json`
-- `docs/audit/data/ledger/au/audited_symmetry_synthesis_note.json`
-- `docs/audit/data/ledger/ax/axiom_change_proposal_2026-04-10.json`
-- `docs/audit/data/ledger/ax/axiom_first_lattice_noether_theorem_note_2026-04-29.json`
-- `docs/audit/data/ledger/ax/axiom_first_reflection_positivity_theorem_note_2026-04-29.json`
-- `docs/audit/data/ledger/ax/axiom_first_spectrum_condition_theorem_note_2026-04-29.json`
-- `docs/audit/data/ledger/ax/axiom_reduction_note.json`
-- `docs/audit/data/ledger/bm/bmv_bounded_negative_note.json`
-- `docs/audit/data/ledger/bo/born_lane_comparison_note.json`
-- `docs/audit/data/ledger/br/broad_surrogate_point_source_compare_note.json`
-- `docs/audit/data/ledger/br/broken_graph_action_power_robustness_note.json`
-- `docs/audit/data/ledger/ca/causal_cone_speed_map_note.json`
-- `docs/audit/data/ledger/ca/causal_escape_window_note.json`
-- `docs/audit/data/ledger/ca/causal_field_portability_note.json`
-- `docs/audit/data/ledger/ca/causal_moving_unification_note.json`
-- `docs/audit/data/ledger/ce/central_band_born_dense_sweep_note.json`
-- `docs/audit/data/ledger/ce/central_band_born_largen_note.json`
-- `docs/audit/data/ledger/ce/central_band_collapse_note.json`
-- `docs/audit/data/ledger/ce/central_band_collapse_strength_note.json`
-- `docs/audit/data/ledger/ce/central_band_dense_boundary_note.json`
-- `docs/audit/data/ledger/ce/central_band_dense_joint_highn_note.json`
-- `docs/audit/data/ledger/ce/central_band_dense_joint_note.json`
-- `docs/audit/data/ledger/ce/central_band_dense_largen_note.json`
-- `docs/audit/data/ledger/ce/central_band_layernorm_note.json`
-- `docs/audit/data/ledger/ce/central_band_mass_window_note.json`
-- `docs/audit/data/ledger/ch/charged_lepton_y_tau_m3_premise_self_correction_note_2026-04-28.json`
-- `docs/audit/data/ledger/ch/chiral_3plus1d_boundary_phase_note.json`
-- `docs/audit/data/ledger/ch/chiral_3plus1d_mixing_period_note.json`
-- `docs/audit/data/ledger/ch/chiral_bottleneck_card_proposal.json`
-- `docs/audit/data/ledger/ch/chiral_layer_oscillation_2026-04-09.json`
-- `docs/audit/data/ledger/ch/chiral_split_mass_gravity_note.json`
-- `docs/audit/data/ledger/cl/claude_complex_action_grown_companion_note.json`
-- `docs/audit/data/ledger/co/complex_selectivity_compare_note.json`
-- `docs/audit/data/ledger/co/connectivity_family_v2_elliptical_duplicate_note.json`
-- `docs/audit/data/ledger/co/correlator_cycle_phases_readback_blind_or_state_contingent_bounded_note_2026-06-12.json`
-- `docs/audit/data/ledger/co/coulomb_stability_upper_bound_support_note_2026-05-20.json`
-- `docs/audit/data/ledger/cp/cpt_exact_note.json`
-- `docs/audit/data/ledger/cr/cross_family_universality_note.json`
-- `docs/audit/data/ledger/de/decoherence_action_independence_note.json`
-- `docs/audit/data/ledger/de/decoherence_decision_note.json`
-- `docs/audit/data/ledger/de/decoherence_failure_analysis.json`
-- `docs/audit/data/ledger/de/dense_prune_guard_seed_note.json`
-- `docs/audit/data/ledger/di/diamond_absolute_unit_bridge_note.json`
-- `docs/audit/data/ledger/di/diamond_phase_ramp_bridge_card_note.json`
-- `docs/audit/data/ledger/di/diamond_sensor_prediction_note.json`
-- `docs/audit/data/ledger/di/diamond_sensor_protocol_note.json`
-- `docs/audit/data/ledger/di/dimension_selection_note.json`
-- `docs/audit/data/ledger/di/dirac_decoherence_probe_note.json`
-- `docs/audit/data/ledger/di/dirac_field_smoothing_note.json`
-- `docs/audit/data/ledger/di/dirac_lorentz_diagnostic_boundaries_from_rejected_repairs_note_2026-06-07.json`
-- `docs/audit/data/ledger/di/dirac_source_smoothing_note.json`
-- `docs/audit/data/ledger/di/dirac_v4_convergence_note.json`
-- `docs/audit/data/ledger/di/dirac_weak_coupling_note.json`
-- `docs/audit/data/ledger/di/directional_b_density_stencil_note.json`
-- `docs/audit/data/ledger/di/directional_b_geometry_normalized_holdout_transfer_mass5_note.json`
-- `docs/audit/data/ledger/di/directional_b_geometry_normalized_holdout_transfer_note.json`
-- `docs/audit/data/ledger/di/directional_b_geometry_normalized_overlap_map_note.json`
-- `docs/audit/data/ledger/di/directional_b_geometry_normalized_overlap_subcritical_n12_note.json`
-- `docs/audit/data/ledger/di/dispersion_high_p_tiebreaker_note.json`
-- `docs/audit/data/ledger/dm/dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16.json`
-- `docs/audit/data/ledger/dm/dm_leptogenesis_pmns_transport_selector_firewall_note_2026-06-17.json`
-- `docs/audit/data/ledger/dm/dm_neutrino_cascade_geometry_note_2026-04-14.json`
-- `docs/audit/data/ledger/dm/dm_neutrino_source_surface_p3_sylvester_linear_path_signature_theorem_note_2026-04-18.json`
-- `docs/audit/data/ledger/dm/dm_neutrino_source_surface_split2_edge_profile_transition_candidate_note_2026-04-18.json`
-- `docs/audit/data/ledger/dm/dm_neutrino_source_surface_split2_upper_m_slack_floor_endpoint_candidate_note_2026-04-18.json`
-- `docs/audit/data/ledger/dm/dm_neutrino_weak_triplet_coefficient_axiom_boundary_note_2026-04-15.json`
-- `docs/audit/data/ledger/em/emergent_geometry_growth_note_2026-04-10.json`
-- `docs/audit/data/ledger/eq/equivalence_principle_note.json`
-- `docs/audit/data/ledger/et/eta_ud2_fixed_token_square_homology_certificate_2026-06-06.json`
-- `docs/audit/data/ledger/ev/evolving_network_prototype_note.json`
-- `docs/audit/data/ledger/ev/evolving_network_prototype_v2_note.json`
-- `docs/audit/data/ledger/fi/fixed_field_grown_transfer_scout_note.json`
-- `docs/audit/data/ledger/fl/flavor_block_count_native_via_jcs_note_2026-05-30.json`
-- `docs/audit/data/ledger/fl/flavor_tracial_reference_does_not_select_q23_no_go_note_2026-06-02.json`
-- `docs/audit/data/ledger/fo/four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09.json`
-- `docs/audit/data/ledger/g_/g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19.json`
-- `docs/audit/data/ledger/ga/gate_b_no_restore_joint_package_note.json`
-- `docs/audit/data/ledger/ga/gauge_scalar_temporal_observable_bridge_stretch_note_2026-05-02.json`
-- `docs/audit/data/ledger/ga/gauge_vacuum_plaquette_conjugation_symmetric_retained_sampling_reduction_note_2026-04-17.json`
-- `docs/audit/data/ledger/ga/gauge_vacuum_plaquette_distinct_shell_theorem_note.json`
-- `docs/audit/data/ledger/ga/gauge_vacuum_plaquette_first_symmetric_three_sample_reconstruction_note_2026-04-17.json`
-- `docs/audit/data/ledger/ga/gauge_vacuum_plaquette_su3_cg_library_window_displacement_bounded_note_2026-06-12.json`
-- `docs/audit/data/ledger/gl/gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20.json`
-- `docs/audit/data/ledger/gr/graph_braid_n3_fermion_sign_stays_nonfibered_narrow_theorem_note.json`
-- `docs/audit/data/ledger/gr/gravitational_wave_probe_note.json`
-- `docs/audit/data/ledger/gr/graviton_mass_derived_note.json`
-- `docs/audit/data/ledger/gr/gravity_full_self_consistency_note.json`
-- `docs/audit/data/ledger/gr/gravity_observable_hierarchy_note.json`
-- `docs/audit/data/ledger/gr/gravity_sign_audit_2026-04-10.json`
-- `docs/audit/data/ledger/gr/growing_graph_expansion_skeptic_audit_note.json`
-- `docs/audit/data/ledger/ha/hadron_lane1_confinement_to_mass_firewall_note_2026-04-27.json`
-- `docs/audit/data/ledger/ha/hadron_lane1_sqrt_sigma_b2_static_energy_bridge_scout_note_2026-04-30.json`
-- `docs/audit/data/ledger/hi/hierarchy_bbs_staggered_taste_blocking_bridge_scaffold_availability_bounded_note_2026-05-11.json`
-- `docs/audit/data/ledger/hi/hierarchy_koide_acphilambda_two_bit_decomposition_note_2026-06-06.json`
-- `docs/audit/data/ledger/hi/hierarchy_matsubara_decomposition_note.json`
-- `docs/audit/data/ledger/hi/higgs_mass_from_axiom_note.json`
-- `docs/audit/data/ledger/hi/higher_symmetry_joint_validation_note.json`
-- `docs/audit/data/ledger/ko/koide_a1_physical_bridge_attempt_2026-04-22.json`
-- `docs/audit/data/ledger/ko/koide_berry_bundle_obstruction_theorem_note_2026-04-19.json`
-- `docs/audit/data/ledger/ko/koide_c3_generator_rephasing_obstruction_narrow_theorem_note_2026-05-29.json`
-- `docs/audit/data/ledger/ko/koide_delta_marked_relative_cobordism_no_go_note_2026-04-24.json`
-- `docs/audit/data/ledger/ko/koide_frobenius_isotype_split_uniqueness_note_2026-04-21.json`
-- `docs/audit/data/ledger/ko/koide_q_onsite_source_domain_no_go_synthesis_note_2026-04-25.json`
-- `docs/audit/data/ledger/ko/koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29.json`
-- `docs/audit/data/ledger/ko/koide_signed_readout_is_not_chirality_narrow_no_go_note_2026-06-04.json`
-- `docs/audit/data/ledger/la/lattice_3d_dense_spent_delay_note.json`
-- `docs/audit/data/ledger/la/lattice_3d_inverse_square_kernel_helper_note_2026-04-04.json`
-- `docs/audit/data/ledger/la/lattice_complementarity_note.json`
-- `docs/audit/data/ledger/le/lensing_centroid_multipole_no_go_bounded_theorem_note_2026-06-08.json`
-- `docs/audit/data/ledger/li/linear_response_true_kubo_note.json`
-- `docs/audit/data/ledger/ls/lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22.json`
-- `docs/audit/data/ledger/me/meron_half_instanton_4pi2_over_g2_external_narrow_theorem_note_2026-05-16.json`
-- `docs/audit/data/ledger/me/mesoscopic_surrogate_alternate_family_scout_note.json`
-- `docs/audit/data/ledger/mi/mirror_2d_gravity_law_note.json`
-- `docs/audit/data/ledger/mo/momentum_charge_commute_theorem_note_2026-05-02.json`
-- `docs/audit/data/ledger/mo/moving_source_retarded_portability_note.json`
-- `docs/audit/data/ledger/ne/neutrino_lane4_dirac_seesaw_fork_no_go_note_2026-04-27.json`
-- `docs/audit/data/ledger/ne/neutrino_lane4_sr2_pfaffian_scalar_two_point_boundary_note_2026-04-29.json`
-- `docs/audit/data/ledger/ne/neutrino_lane4_workstream_closeout_note_2026-04-28.json`
-- `docs/audit/data/ledger/ne/neutrino_majorana_nur_charge2_primitive_reduction_note.json`
-- `docs/audit/data/ledger/no/nonlabel_grown_drift_basin_note.json`
-- `docs/audit/data/ledger/oc/occupancy_nonexclusivity_mixture_bound_note_2026-06-09.json`
-- `docs/audit/data/ledger/oh/oh_schur_boundary_action_note.json`
-- `docs/audit/data/ledger/pe/persistent_object_inward_boundary_floor_diagnosis_note_2026-04-16.json`
-- `docs/audit/data/ledger/pe/persistent_object_multistage_floor_sweep_note_2026-04-16.json`
-- `docs/audit/data/ledger/pl/plaquette_v1_picard_fuchs_ode_rank_bound_citation_note_2026-05-06.json`
-- `docs/audit/data/ledger/pm/pmns_active_four_real_source_from_transport_note.json`
-- `docs/audit/data/ledger/pm/pmns_graph_first_forward_cycle_residual_swap_bridge_narrow_theorem_note_2026-05-24.json`
-- `docs/audit/data/ledger/pm/pmns_right_conjugacy_invariant_no_go_note.json`
-- `docs/audit/data/ledger/pm/pmns_selector_three_identity_support_note_2026-04-21.json`
-- `docs/audit/data/ledger/pm/pmns_sole_axiom_hw1_source_transfer_boundary_note.json`
-- `docs/audit/data/ledger/po/poisson_self_gravity_loop_v3_note.json`
-- `docs/audit/data/ledger/po/post_record_finite_to_unbounded_family_lift_no_go_2026-06-06.json`
-- `docs/audit/data/ledger/po/post_record_measure_weight_normalization_subdivision_2026-06-06.json`
-- `docs/audit/data/ledger/qu/quark_c3_circulant_source_law_boundary_note_2026-04-28.json`
-- `docs/audit/data/ledger/qu/quark_route2_e_center_blindness_no_go_note_2026-06-17.json`
-- `docs/audit/data/ledger/qu/quark_route2_eta_floor_hf_boundary_note.json`
-- `docs/audit/data/ledger/re/record_classical_semigroup_boundary_2026-06-06.json`
-- `docs/audit/data/ledger/re/restricted_strong_field_closure_note.json`
-- `docs/audit/data/ledger/rp/rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20.json`
-- `docs/audit/data/ledger/s3/s3_anomaly_spacetime_lift_note.json`
-- `docs/audit/data/ledger/s3/s3_time_primitive_chain_note.json`
-- `docs/audit/data/ledger/s3/s3_time_tensor_build_memo.json`
-- `docs/audit/data/ledger/s3/s3c3_unitary_antiunitary_axis_permutation_split_narrow_theorem_note_2026-05-23.json`
-- `docs/audit/data/ledger/se/second_grown_family_sign_note.json`
-- `docs/audit/data/ledger/se/self_gravity_backreaction_closure_note.json`
-- `docs/audit/data/ledger/se/self_gravity_failure_diagnosis.json`
-- `docs/audit/data/ledger/se/seventh_family_diagonal_boundary_note.json`
-- `docs/audit/data/ledger/si/signed_gravity_continuum_graded_einstein_localization_note.json`
-- `docs/audit/data/ledger/si/single_clock_antiperiodic_axis_datum_s4_transport_bounded_theorem_note_2026-06-17.json`
-- `docs/audit/data/ledger/so/source_resolved_exact_green_pocket_note.json`
-- `docs/audit/data/ledger/so/source_resolved_wavefield_mechanism_note.json`
-- `docs/audit/data/ledger/so/source_resolved_wavefield_v2_note.json`
-- `docs/audit/data/ledger/st/staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23.json`
-- `docs/audit/data/ledger/st/staggered_fermion_card_2026-04-11.json`
-- `docs/audit/data/ledger/st/structured_mirror_bornsafe_scan_note.json`
-- `docs/audit/data/ledger/st/structureless_dag_gravity_note.json`
-- `docs/audit/data/ledger/su/su3_wigner_block4_staging_block5_orientation_diagnostics_narrow_theorem_note_2026-05-10.json`
-- `docs/audit/data/ledger/su/su3_wigner_intertwiner_block4_block5_theorem_note_2026-05-03.json`
-- `docs/audit/data/ledger/te/teleportation_bell_measurement_circuit_note.json`
-- `docs/audit/data/ledger/te/teleportation_encoding_portability_note.json`
-- `docs/audit/data/ledger/te/teleportation_initial_state_preparation_probe_note.json`
-- `docs/audit/data/ledger/th/third_grown_family_boundary_note.json`
-- `docs/audit/data/ledger/un/universal_gr_complement_canonical_note.json`
-- `docs/audit/data/ledger/un/universal_gr_curvature_localization_blocker_note.json`
-- `docs/audit/data/ledger/un/universal_gr_invariant_frame_obstruction_note.json`
-- `docs/audit/data/ledger/un/universal_gr_isotropic_glue_operator_note.json`
-- `docs/audit/data/ledger/un/universal_gr_polarization_frame_bundle_blocker_note.json`
-- `docs/audit/data/ledger/un/universal_gr_supermetric_normal_form_note.json`
-- `docs/audit/data/ledger/un/universal_gr_tensor_action_blocker_note.json`
-- `docs/audit/data/ledger/un/universal_qg_projective_schur_closure_note.json`
-- `docs/audit/data/ledger/un/universal_qg_smooth_gravitational_global_solution_class_note.json`
-- `docs/audit/data/ledger/va/valley_linear_asymptotic_bridge_note.json`
-- `docs/audit/data/ledger/wa/wave_direct_dm_h025_low_band_retention_note.json`
-- `docs/audit/data/ledger/wa/wave_retardation_continuum_limit_note.json`
-- `docs/audit/data/ledger/wi/wilson_action_surface_selector_real_positive_theorem_note_2026-05-25.json`
-- `docs/audit/data/ledger/wi/wilson_mu2_distance_sweep_note_2026-04-11.json`
-- `docs/audit/data/ledger/yt/yt_connected_source_selector_scalar_lift_no_go_note_2026-05-29.json`
-- `docs/audit/data/ledger/yt/yt_source_coordinate_invariant_top_w_ratio_gate_note_2026-05-25.json`
-- `docs/audit/data/missing_derivation_difficulty.json`
-- `docs/audit/data/repair_class_backfill_log.json`
-- `docs/audit/scripts/build_citation_graph.py`
-- `docs/audit/scripts/invalidate_stale_audits.py`
-- `docs/audit/scripts/orchestrate_audit_loop.py`
-- `docs/audit/scripts/orchestrate_judicial_panel.py`
-- `docs/audit/scripts/render_front_door_status.py`
-- `docs/audit/scripts/seed_audit_ledger.py`
-- `docs/audit/scripts/tests/test_runner_pin_gate.py`
-- `docs/historic_intake/HISTORIC_BETA6_PLAQUETTE_CAMPAIGN_SYNTHESIS_CAPSTONE_FRONTIER_NOTE_2026_05_30_INTAKE_NOTE_2026-08-05.md`
-- `docs/historic_intake/HISTORIC_CLAIM_STATUS_CERTIFICATE_B10254_INTAKE_NOTE_2026-08-05.md`
-- `docs/historic_intake/HISTORIC_DIAGONAL_SQRT2_SYNTHESIS_VERDICT_NOTE_2026_06_04_INTAKE_NOTE_2026-08-05.md`
-- `docs/historic_intake/HISTORIC_KOIDE_COLOR_SECTOR_CORRECTION_NOTE_INTAKE_NOTE_2026-08-05.md`
-- `docs/historic_intake/HISTORIC_LANE_ASSIGNMENT_DERIVABLE_OR_INPUT_NOTE_2026_06_04_INTAKE_NOTE_2026-08-05.md`
-- `docs/historic_intake/HISTORIC_NEW_LAW_PROPOSAL_KOIDE_ISOTYPE_DEMOCRACY_2026_04_22_INTAKE_NOTE_2026-08-05.md`
-- `docs/historic_intake/HISTORIC_PLANCK_SCALE_SOURCE_FREE_CELL_STATE_RETAINED_DERIVATION_LANE_2026_04_23_INTAKE_NOTE_2026-08-05.md`
-- `docs/historic_intake/HISTORIC_PR_BODY_BLOCK01_INTAKE_NOTE_2026-08-05.md`
-- `docs/historic_intake/HISTORIC_SCALE_AXIS_PLANCK_ANCHOR_SELFCONSISTENCY_SCOPING_2026_06_05_INTAKE_NOTE_2026-08-05.md`
-- `docs/historic_intake/HISTORIC_YT_GAUGED_NORMALIZATION_THEOREM_NOTE_INTAKE_NOTE_2026-08-05.md`
-- `docs/lanes/open_science/02_ATOMIC_SCALE_PROGRAM_OPEN_LANE_2026-04-26.md`
-- `docs/publication/ci3_z3/EXTERNAL_REVIEWER_GUIDE.md`
-- `docs/repo/PYTHON_VENV_SETUP.md`
-- `docs/repo/SCIENCE_CENSUS_FULL_HISTORY_2026-08-05.md`
-- `docs/repo/VOCABULARY_HYGIENE_DESIGN.md`
-- `docs/repo/controlled_vocabulary.yaml`
-- `docs/work_history/repo/backlog/OVERNIGHT_WORK_BACKLOG.md`
-- `docs/work_history/repo/review_feedback/AUTONOMOUS_SIGNED_ROW_RECURRENT_SIDECAR_CYCLE171_NOTE_2026-07-16.md`
-- `docs/work_history/repo/review_feedback/BARE_METAL_RECORD_ACTUALIZATION_PRIMARY_SOURCE_AUDIT_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/CARRIED_RELATIVE_EXTENDED_GREEN_BRANCH_HUNT_NOTE_2026-07-17.md`
-- `docs/work_history/repo/review_feedback/COARSE_OUTCOME_UNCOMPUTE_MASS_CYCLE226_NOTE_2026-07-17.md`
-- `docs/work_history/repo/review_feedback/COMMON_REPLACEMENT_BASE_INTEGRATION_CYCLE197B_NOTE_2026-07-16.md`
-- `docs/work_history/repo/review_feedback/CONNECTED_EDGE_SAME_CODE_LOCAL_INSTRUMENT_CYCLE278_NOTE_2026-07-17.md`
-- `docs/work_history/repo/review_feedback/COVARIANT_VERTEX_GAMMA_CAR_COMPILER_CYCLE261_NOTE_2026-07-17.md`
-- `docs/work_history/repo/review_feedback/CYCLE703_BKSF_TWO_CELL_TABLEAU_INTERTWINER_NOTE_2026-07-25.md`
-- `docs/work_history/repo/review_feedback/CYCLE703_OPEN_BKSF_STABILIZER_PREPARATION_NOTE_2026-07-25.md`
-- `docs/work_history/repo/review_feedback/CYCLE703_TWO_FRAME_COLORED_REPHASE_NOTE_2026-07-25.md`
-- `docs/work_history/repo/review_feedback/DRESSED_SPOKE_PARITY_GAUGE_CYCLE273_NOTE_2026-07-17.md`
-- `docs/work_history/repo/review_feedback/EXACT_3D_HIGHER_FORM_BOSONIZATION_CYCLE235_NOTE_2026-07-17.md`
-- `docs/work_history/repo/review_feedback/EXISTENCE_UNIQUENESS_AND_EXACT_LAW_REFERENCE_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/FARRELLY_SHORT_AUXILIARY_MAJORANA_CAR_COMPILER_CYCLE236_NOTE_2026-07-17.md`
-- `docs/work_history/repo/review_feedback/FOUR_ROW_LATE_GUARD_SOCKET_BOUNDARY_CYCLE137_NOTE_2026-07-15.md`
-- `docs/work_history/repo/review_feedback/FRAME_CAGED_LOCAL_MOTIF_CYCLE50_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/FULL_TWO_PARTICLE_FIXED_SEAM_SYNTHESIS_CYCLE305_NOTE_2026-07-17.md`
-- `docs/work_history/repo/review_feedback/GLOBAL_Q2_SIMULTANEOUS_TWO_SOURCE_CYCLE328_NOTE_2026-07-18.md`
-- `docs/work_history/repo/review_feedback/LOCAL_INSTRUMENT_TO_RECORD_CLOSE_TOURNAMENT_CYCLE279_NOTE_2026-07-17.md`
-- `docs/work_history/repo/review_feedback/MIXED_CYCLE76_CAGED_GUIDE_AUDIT_CYCLE79_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/MIXED_LOCAL_CONTEXT_PHASE_CYCLE65_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/MIXED_PAULI_SELECTOR_CANONICAL_PAIR_TOURNAMENT_CYCLE254_NOTE_2026-07-17.md`
-- `docs/work_history/repo/review_feedback/OBSERVABLE_SPECIFIC_WILSON_BLINDNESS_CYCLE274_NOTE_2026-07-17.md`
-- `docs/work_history/repo/review_feedback/OFFICIAL_SEED_TO_RAIL_NUCLEATION_CYCLE53_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/PARITY_DOUBLING_SPECTATOR_COMPILER_CYCLE248_NOTE_2026-07-17.md`
-- `docs/work_history/repo/review_feedback/PHYSICAL_CONTACT_TERNARY_BORN_FORCING_BRIDGE_CYCLE317_NOTE_2026-07-18.md`
-- `docs/work_history/repo/review_feedback/PHYSICAL_CYCLE269_HIGHER_NUMBER_FIXED_SEAM_CYCLE308_NOTE_2026-07-17.md`
-- `docs/work_history/repo/review_feedback/PHYSICAL_CYCLE269_REFERENCE_RELATIVE_LOCALIZED_PAIR_LIFT_NOTE_2026-07-17.md`
-- `docs/work_history/repo/review_feedback/PHYSICAL_CYCLE269_RELATIONAL_ROLE_MARKER_GAUGE_CYCLE306_NOTE_2026-07-17.md`
-- `docs/work_history/repo/review_feedback/PHYSICAL_INSTRUMENT_RECORD_HISTORY_BRIDGE_SYNTHESIS_CYCLE288_NOTE_2026-07-17.md`
-- `docs/work_history/repo/review_feedback/PHYSICAL_M64_REVERSIBLE_EVENT_SIDECAR_CYCLE314_NOTE_2026-07-18.md`
-- `docs/work_history/repo/review_feedback/PHYSICAL_SOURCE_INSERTION_SELECTION_BACKREACTION_TOURNAMENT_CYCLE572_NOTE_2026-07-22.md`
-- `docs/work_history/repo/review_feedback/PHYSICAL_STATE_CONTACT_BRIDGE_SYNTHESIS_CYCLE301_NOTE_2026-07-17.md`
-- `docs/work_history/repo/review_feedback/PHYSICAL_THREE_ROW_SPACIOUS_ISOLATED_PIVOT_CYCLE161_NOTE_2026-07-15.md`
-- `docs/work_history/repo/review_feedback/PR484_KZ_EXTERNAL_LIFT_REVIEW_2026-05-03.md`
-- `docs/work_history/repo/review_feedback/PRETERMINAL_CONTEXT_QUANTUM_PROCESS_CYCLE189_NOTE_2026-07-16.md`
-- `docs/work_history/repo/review_feedback/PROPER_CUBIC_RECOIL_BALANCED_CARRIED_SOURCE_CYCLE318_NOTE_2026-07-18.md`
-- `docs/work_history/repo/review_feedback/PUBLICATION_DISCOVERY_AUDIT_2026-04-11.md`
-- `docs/work_history/repo/review_feedback/QCA_ISOMETRY_SQUARE_PYRAMID_CYCLE241_NOTE_2026-07-17.md`
-- `docs/work_history/repo/review_feedback/REALIZED_HISTORY_EXACT_LAW_IDENTIFIABILITY_CYCLE42_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/REVERSIBLE_DILATION_CLOSED_CYCLE_GRAVITY_CYCLE10_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/ROUGH_TERMINAL_SUBSYSTEM_GAUGE_FACTORIZATION_CYCLE251_NOTE_2026-07-17.md`
-- `docs/work_history/repo/review_feedback/ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_NOTE_2026-07-17.md`
-- `docs/work_history/repo/review_feedback/ROUTE6_INFINITE_EVEN_CAR_TRANSLATION_MARKER_CYCLE237_NOTE_2026-07-17.md`
-- `docs/work_history/repo/review_feedback/R_B00_COMPLETION_TO_R_B01_ROLE_ALLOCATOR_COMMON_PORT_CYCLE124_NOTE_2026-07-15.md`
-- `docs/work_history/repo/review_feedback/R_B01_ORIENTATION13_PHASE_CHAIN_ALIAS_CYCLE127_NOTE_2026-07-15.md`
-- `docs/work_history/repo/review_feedback/SELF_WRITING_APPEND_ONLY_BELL_FRONT_CYCLE14_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/STRICT_THIRRING_QCA_BOUND_MOLECULE_CYCLE205_NOTE_2026-07-16.md`
-- `docs/work_history/repo/review_feedback/TOTAL_STATUS_SERIAL_REJECT_SELECTOR_CYCLE93_NOTE_2026-07-15.md`
-- `docs/work_history/repo/review_feedback/UNIT_WEIGHT_CARRIED_LINK_RECOIL_CYCLE320_NOTE_2026-07-18.md`
-- `docs/work_history/repo/review_feedback/WILSON_SUBSYSTEM_SECTOR_FREE_COMPILER_CYCLE269_NOTE_2026-07-17.md`
-- `scripts/DISTANCE_LAW_PRESERVING_THIRD_FAMILY.py`
-- `scripts/abj_anomaly_framework_internal_u1_jacobian_runner.py`
-- `scripts/abj_residual_gw_not_necessary_runner.py`
-- `scripts/alt_connectivity_family_operator_cauchy.py`
-- `scripts/asymmetry_persistence_born_calibration.py`
-- `scripts/audit_companion_f_wedge_f_top_form_forces_d_four_exact_2026_05_26.py`
-- `scripts/audit_companion_g_bare_c_iso_convention_orbit_invariance_exact_2026_05_17.py`
-- `scripts/audit_companion_g_bare_l3a_trace_surface_invariance_2026_05_17.py`
-- `scripts/audit_companion_g_bare_l3b_overall_scalar_invariance_2026_05_17.py`
-- `scripts/audit_companion_koide_r_half_not_symmetry_protected_exact.py`
-- `scripts/audit_companion_plaquette_v1_picard_fuchs_ode_rank_exclusion_r2_d12_narrow_2026_05_17.py`
-- `scripts/audit_companion_redundancy_not_forced_pnd_locality_2026_06_07.py`
-- `scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py`
-- `scripts/audit_companion_staggered_taste_is_qubit_no_koide_multiplicity_exact.py`
-- `scripts/audit_structural_issues_verifier.py`
-- `scripts/autonomous_homogeneous_binary_nucleation_probe_2026_07_14.py`
-- `scripts/axiom_first_reflection_positivity_check.py`
-- `scripts/c129_two_parent_corner_relocated_cage_seed_cycle132_2026_07_15.py`
-- `scripts/cl3_a3_r3_hostile_review_2026_05_08_r3hr.py`
-- `scripts/cl3_a3_route4_spin6_chain_2026_05_08_r4.py`
-- `scripts/cl3_a3_route5_no_proper_quotient_2026_05_08_r5.py`
-- `scripts/cl3_c_iso_numerical_convergence_2026_05_10_numconv.py`
-- `scripts/cl3_closure_c_l1c_2026_05_10_cL1c.py`
-- `scripts/cl3_closure_t1_z10_z20_2026_05_10_t1z10z20.py`
-- `scripts/cl3_closure_t2_m1m2_distinguisher_2026_05_10_t2m1m2.py`
-- `scripts/cl3_fourth_axiom_rg_scale_dynamics_scoping_2026_06_05.py`
-- `scripts/cl3_g_newton_self_consistency_2026_05_10_planckP4.py`
-- `scripts/cl3_higgs_mass_12pct_gap_decomposition_2026_05_10_higgsS7.py`
-- `scripts/cl3_higgs_mass_s4b_ewsb_selection_2026_05_10_s4bewsb.py`
-- `scripts/cl3_higgs_mass_wilson_loop_spectroscopy_2026_05_10_higgsH3.py`
-- `scripts/cl3_koide_a1_probe_continuum_limit_2026_05_09_probe15.py`
-- `scripts/cl3_koide_a1_probe_retained_u1_hunt_2026_05_09_probe14.py`
-- `scripts/cl3_koide_a1_probe_spectral_action_2026_05_08_probe4.py`
-- `scripts/cl3_koide_bae_probe_f1_canonical_functional_2026_05_09_probe18.py`
-- `scripts/cl3_koide_bae_probe_vm_cubic_extrema_2026_05_09_probe20.py`
-- `scripts/cl3_koide_s_L1_topological_2026_05_08_probeS_L1_topological.py`
-- `scripts/cl3_koide_u_bae_ncg_2026_05_08_probeU_bae_ncg.py`
-- `scripts/cl3_koide_w_substrate_chirality_2026_05_10_probeW_substrate_chirality.py`
-- `scripts/cl3_newphysics_np_muon_g2_2026_05_10_npG2.py`
-- `scripts/cl3_primitive_p_l1_2026_05_10_pPl1.py`
-- `scripts/cl3_radian_bridge_expanded_inventory_2026_05_10_radianexp.py`
-- `scripts/cl3_substep4_ac_lambda_separate_closure_2026_05_10_aclambda.py`
-- `scripts/cl3_theorem_bae_newton_girard_unified_obstruction_2026_05_10_t2bae.py`
-- `scripts/color_arena_bonded_pair_admissibility_cross_site_2026_07_06.py`
-- `scripts/color_base_covariance_nc_equals_d_support_2026_06_08.py`
-- `scripts/contact_close_typed_record_dag_cycle287_2026_07_17.py`
-- `scripts/directional_b_overlap_supply_load_bridge_card.py`
-- `scripts/distance_law_3d_64_closure.py`
-- `scripts/emergent_metric_conformal_class_from_records_runner.py`
-- `scripts/empty_state_bootstrap_orbit_dichotomy_degree_nine_wall_2026_07_04.py`
-- `scripts/flavor_block_count_native_via_Jcs_2026_05_30.py`
-- `scripts/flavor_doublet_rotation_exhaustive_2026_05_30.py`
-- `scripts/formation_rate_law_class_reduction_2026_07_08.py`
-- `scripts/frontier_3d_correction_master_note_meta_narrowing_check.py`
-- `scripts/frontier_3d_dynamic_growth.py`
-- `scripts/frontier_3plus1d_distance_law.py`
-- `scripts/frontier_accessible_prediction.py`
-- `scripts/frontier_action_family_character_semigroup_discriminator_2026_07_02.py`
-- `scripts/frontier_atomic_hydrogen_helium_probe.py`
-- `scripts/frontier_axiom_stack_minimality_cl4c_no_go.py`
-- `scripts/frontier_background_independence.py`
-- `scripts/frontier_beta6_delta_analytic_class_2026_05_30.py`
-- `scripts/frontier_bougerol_lacroix_staggered_blocking_gouezel_karlsson_deterministic_cocycle_narrow.py`
-- `scripts/frontier_bougerol_lacroix_staggered_blocking_lyapunov_bridge_no_go.py`
-- `scripts/frontier_boundary_law_robustness.py`
-- `scripts/frontier_charged_lepton_observable_curvature.py`
-- `scripts/frontier_charged_lepton_op_local_source_selected_line_selector_no_go.py`
-- `scripts/frontier_charged_lepton_yukawa_bz_quadrature_explicit.py`
-- `scripts/frontier_chiral_final_moonshots.py`
-- `scripts/frontier_ckm_from_z3.py`
-- `scripts/frontier_ckm_thales_pinned_alpha_s_independent_ratios.py`
-- `scripts/frontier_common_e_gauge_corrected_physical_rom_composition_2026_07_25.py`
-- `scripts/frontier_composite_higgs_mechanism.py`
-- `scripts/frontier_correct_coupling.py`
-- `scripts/frontier_cosmological_constant_spectral_gap_identity.py`
-- `scripts/frontier_cosmological_expansion.py`
-- `scripts/frontier_coupled_dirac_coin_3plus1d.py`
-- `scripts/frontier_cycle330_branch_local_order_sign_features_2026_07_24.py`
-- `scripts/frontier_cycle703_bksf_vacuum_gauge_ancilla_addendum_2026_07_25.py`
-- `scripts/frontier_cycle718_token_relative_relay_core_2026_07_26.py`
-- `scripts/frontier_cycle864_landed_opcode_controlled_fswap_compiler_2026_08_01.py`
-- `scripts/frontier_cycle868_transient_two_cell_companion_encoder_2026_08_02.py`
-- `scripts/frontier_cycle869_bounded_two_star_bksf_cycle789_chart_bridge_2026_08_02.py`
-- `scripts/frontier_cycle870_openreference_package_acceptance_2026_08_02.py`
-- `scripts/frontier_cycle872_independent_source_audit_view_part2_2026_08_03.py`
-- `scripts/frontier_cycle872_openreference_all_seam_spatial_packet_epoch_independent_check_2026_08_03.py`
-- `scripts/frontier_cycle923_exactness_residual_2026_07_28.py`
-- `scripts/frontier_cycle923_exactness_residual_independent_check_2026_07_28.py`
-- `scripts/frontier_dirac_walk_3plus1d_field_smoothing_scan.py`
-- `scripts/frontier_dirac_walk_3plus1d_v4_convergence.py`
-- `scripts/frontier_dirac_walk_3plus1d_weak_coupling_scan.py`
-- `scripts/frontier_dm_coulomb_from_lattice.py`
-- `scripts/frontier_dm_leptogenesis_k00_sparse_face_transfer_layer.py`
-- `scripts/frontier_dm_leptogenesis_ne_active_column_axiom_boundary.py`
-- `scripts/frontier_dm_neutrino_source_surface_microscopic_positive_probe_representation_theorem.py`
-- `scripts/frontier_dm_neutrino_z3_character_transfer_theorem.py`
-- `scripts/frontier_dm_select_kb.py`
-- `scripts/frontier_emergent_geometry_v2.py`
-- `scripts/frontier_emergent_lorentz_invariance.py`
-- `scripts/frontier_ep_record_stiffness_context_independence_no_go_2026_06_17.py`
-- `scripts/frontier_equipartition_endpoint_registration_asymmetry_2026_07_12.py`
-- `scripts/frontier_flavor_carrier_measure_scoring_discriminator_2026_07_02.py`
-- `scripts/frontier_g_bare_critical_feature_scan.py`
-- `scripts/frontier_g_bare_forced_by_ward_rep_b_abstract_narrow.py`
-- `scripts/frontier_g_bare_parent_promotion_gate_map_2026_06_06.py`
-- `scripts/frontier_gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow.py`
-- `scripts/frontier_gauge_vacuum_plaquette_u1_density_sign_alternation_narrow.py`
-- `scripts/frontier_generation_triplet_dimension_parity_no_faithful_z.py`
-- `scripts/frontier_geodesic_gravity_test.py`
-- `scripts/frontier_graded_constraint_menu_uniformity_c3_zero_info_2026_07_11.py`
-- `scripts/frontier_graph_braid_n3_fermion_sign_nonfibered.py`
-- `scripts/frontier_grav_wave_post_newtonian.py`
-- `scripts/frontier_hadron_lane1_confinement_to_mass_firewall.py`
-- `scripts/frontier_hierarchy_bbs_staggered_taste_blocking_bridge_narrow.py`
-- `scripts/frontier_hierarchy_heat_kernel_d4_compression.py`
-- `scripts/frontier_hierarchy_koide_acphilambda_two_bit_decomposition.py`
-- `scripts/frontier_hubble_c1_a2_action_unit_no_go.py`
-- `scripts/frontier_hubble_lane5_c1_a2_action_unit_metrology_obstruction.py`
-- `scripts/frontier_industrial_sdp_bootstrap_block01.py`
-- `scripts/frontier_industrial_sdp_bootstrap_block02.py`
-- `scripts/frontier_kernel_derivation.py`
-- `scripts/frontier_kernel_from_greens_function.py`
-- `scripts/frontier_koide_a1_fqhe_analog_probe.py`
-- `scripts/frontier_koide_color_sector_correction.py`
-- `scripts/frontier_koide_cone_real_irrep_democracy.py`
-- `scripts/frontier_koide_equivariant_berry_aps_selector.py`
-- `scripts/frontier_koide_import_two_bit_decomposition_2026_05_30.py`
-- `scripts/frontier_koide_pointer_record_degeneracy_d3.py`
-- `scripts/frontier_koide_q_no_hidden_source_audit.py`
-- `scripts/frontier_koide_q_op_locality_source_domain_closure.py`
-- `scripts/frontier_koide_readout_lane_demarcation_2026_05_30.py`
-- `scripts/frontier_koide_retained_wilson_aps_scalar_action_on_rank_two_multiplicity_bridge_narrow.py`
-- `scripts/frontier_koide_sectoral_universality.py`
-- `scripts/frontier_kz_su3_beta6_convention_split_2026_06_06.py`
-- `scripts/frontier_neutrino_lane4_4f_sigma_m_nu_functional_form.py`
-- `scripts/frontier_neutrino_majorana_scale_selector_necessity.py`
-- `scripts/frontier_omega_lambda_derivation.py`
-- `scripts/frontier_pmns_right_polar_section.py`
-- `scripts/frontier_pmns_sector_odd_bridge_reduction.py`
-- `scripts/frontier_quark_route2_kr_gram_nonseparable_degree2_no_go_2026_06_21.py`
-- `scripts/frontier_quark_route2_source_augmented_e_center_functor_no_go_2026_06_21.py`
-- `scripts/frontier_quark_up_amplitude_tensor_endpoint_resolution.py`
-- `scripts/frontier_rank2_analysis.py`
-- `scripts/frontier_record_dynamics_layer_reconciliation_2026_06_05.py`
-- `scripts/frontier_record_typing_firewall_exact_2026_06_05.py`
-- `scripts/frontier_s3_time_tensorized_schur_primitive.py`
-- `scripts/frontier_s3_time_transfer_matrix_bridge_downstream_fix.py`
-- `scripts/frontier_sigma_mnu_f3_dm_cross_bound_audit.py`
-- `scripts/frontier_sigma_mnu_f3_stuck_fanout_synthesis.py`
-- `scripts/frontier_single_axiom_information.py`
-- `scripts/frontier_staggered_gbare_trace_surface_bridge_2026_06_06.py`
-- `scripts/frontier_su3_low_rank_picard_fuchs_odes_2026_05_05.py`
-- `scripts/frontier_su3_v1_picard_fuchs_minimality_extended_2026_05_06.py`
-- `scripts/frontier_su3_wigner_4fold_haar_projector.py`
-- `scripts/frontier_su3_wigner_l3_cube_partition.py`
-- `scripts/frontier_su3_wilson_closed_form_fanout_2026_05_04.py`
-- `scripts/frontier_supplied_readout_context_two_component_decomposition_2026_07_02.py`
-- `scripts/frontier_teleportation_adiabatic_time_evolution.py`
-- `scripts/frontier_teleportation_encoding_portability.py`
-- `scripts/frontier_teleportation_initial_state_preparation_probe.py`
-- `scripts/frontier_tensor_block_closure_test.py`
-- `scripts/frontier_theta_defect_closure_admissibility_2026_07_03.py`
-- `scripts/frontier_two_overlapping_star_sparse_qutrit_edge_gauge_2026_07_25.py`
-- `scripts/frontier_two_star_literal_m2_reachable_executor_2026_07_25.py`
-- `scripts/frontier_unitarity_dispersion_and_cone.py`
-- `scripts/frontier_universal_gr_a1_invariant_section.py`
-- `scripts/frontier_universal_gr_picurv_route_exhaustion_no_go_2026_06_18.py`
-- `scripts/frontier_wave_equation_gravity.py`
-- `scripts/frontier_wave_geodesic_decomposition.py`
-- `scripts/frontier_wave_particle_transition.py`
-- `scripts/frontier_why_3plus1.py`
-- `scripts/frontier_yt_ew_matching_rule_m_current_packet_boundary.py`
-- `scripts/frontier_yt_qfp_insensitivity.py`
-- `scripts/frontier_yt_qubit_signed_linear_source_response_bridge_candidate.py`
-- `scripts/gauge_link_per_record_step_rate_dial_unit_variance_point_2026_07_02.py`
-- `scripts/gauge_vacuum_plaquette_tensor_word_perron_derived_rho_composed_readout_2026_06_11.py`
-- `scripts/generated_dag_gravity_induced_phase.py`
-- `scripts/graph_braid_z3_anyon_exclusion_dichotomy_2026_05_29.py`
-- `scripts/gravity_mass_scaling.py`
-- `scripts/interference_offcenter_fringe_sweep.py`
-- `scripts/joint_endpoint_mixed_rebind_cycle78_2026_07_14.py`
-- `scripts/k_dependence_ceiling.py`
-- `scripts/kcpt_orbit_constant_registered_occupancy_2026_07_12.py`
-- `scripts/koide_onsite_boost_reconstruction_2026_06_02.py`
-- `scripts/koide_q_reduced_reaudit_packet_verifier_2026_06_17.py`
-- `scripts/koide_signed_readout_is_not_chirality.py`
-- `scripts/lattice_3d_l2_tail_stats.py`
-- `scripts/lattice_fanout_continuum.py`
-- `scripts/lensing_k_sweep.py`
-- `scripts/linear_response_derivation.py`
-- `scripts/locking_cadence_record_kernel_discriminator_cycle223_2026_07_17.py`
-- `scripts/matter_realization_qubit_bilinear_from_k1_2026_07_06.py`
-- `scripts/mirror_2d_operator_cauchy.py`
-- `scripts/mirror_2d_validation.py`
-- `scripts/mutual_information.py`
-- `scripts/native_gauge_transfer_diagonal_domination_rung_nine_bounded_2026_06_12.py`
-- `scripts/native_gauge_transfer_operator_norm_remainder_rung_eight_bounded_2026_06_12.py`
-- `scripts/native_gauge_transfer_reduced_a2_closed_form_rung_sixteen_bounded_2026_06_12.py`
-- `scripts/native_gauge_transfer_uniform_bessel_local_clt_rung_ten_bounded_2026_06_12.py`
-- `scripts/nonunitary_theory_frontier_card.py`
-- `scripts/observable_principle_product_character_premise_no_go.py`
-- `scripts/periodic_staggered_os_circle_failure_twisted_antiperiodic_free_repair_2026_07_12.py`
-- `scripts/persistent_object_multistage_floor_certificate.py`
-- `scripts/physical_held_sparse_order_retirement_cycle563_2026_07_21.py`
-- `scripts/pocket_wrap_suppressor_low_overlap_center_spine_bucket00_support_edge_identity_pocket_corridor_clause_scan.py`
-- `scripts/pocket_wrap_suppressor_low_overlap_center_spine_bucket00_support_edge_identity_pocket_corridor_equivalence_scan.py`
-- `scripts/pocket_wrap_suppressor_low_overlap_order_parameter_late_branch_frontier_closure_audit.py`
-- `scripts/poisson_self_gravity_loop.py`
-- `scripts/poisson_self_gravity_loop_v3.py`
-- `scripts/precompute_audit_runners.py`
-- `scripts/realized_kinetic_branch_selection_gauged_background_invariance_2026_07_02.py`
-- `scripts/record_defined_causal_depth_clock_cycle170_2026_07_16.py`
-- `scripts/research_orchestrator.py`
-- `scripts/shapiro_static_discriminator.py`
-- `scripts/signed_gravity_continuum_graded_einstein_localization.py`
-- `scripts/signed_gravity_tensor_source_transport_retention.py`
-- `scripts/source_resolved_geometry_rule_repair_probe.py`
-- `scripts/strong_cp_joint_bridge_holomorphic_residual_2026_06_04.py`
-- `scripts/templates/KEY_TERMINOLOGY.md.template`
-- `scripts/transfer_matrix_log_quasilocality_check_2026_06_10.py`
-- `scripts/vocab_lint.py`
-- `scripts/wave_direct_dm_matched_history_probe.py`
-- `scripts/wave_poisson_cinf_bridge_theorem.py`
-- `scripts/wave_radiation.py`
-- `scripts/wave_retardation_continuum_limit.py`
-- `scripts/wave_retardation_velocity_sweep.py`
-- `scripts/wilson_subsystem_sector_free_compiler_cycle269_2026_07_17.py`
-- `scripts/wilson_test_mass_continuum_certificate.py`
+This gate applies only to the syntax-bounded statement that the declared
+marginal witness grammar returns zero rows. It does not claim that marginal
+dependence is physically absent.
 
-### SUPPORT_READING_SAFE (626)
+### N1 — Alternative routes
 
-- `docs/A3_R4_REVIEW_CONFIRMED_NOTE_2026-05-08_r4hr.md`
-- `docs/ABJ_EPSILON_INDEX_SQUARE_BLOCK_NO_GO_NOTE_2026-05-30.md`
-- `docs/ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01.md`
-- `docs/ACPHILAMBDA_FLUXED_RING_SPECTRAL_FUNCTIONAL_ROUTE_NO_GO_2026-07-02.md`
-- `docs/ACPHILAMBDA_MEASURE_BINARY_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md`
-- `docs/ACPHILAMBDA_OCCUPANCY_FORMATION_APPEND_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md`
-- `docs/ACPHILAMBDA_OCCUPANCY_GRAIN_SHARPENING_IMPORT_DECOMPOSITION_REFLECTION_ASYMMETRY_ORIENTATION_DICHOTOMY_BOUNDED_THEOREM_NOTE_2026-07-16.md`
-- `docs/ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md`
-- `docs/ACPHILAMBDA_R_ETA_DIRECT_LICENSE_HCLASS_HUNIT_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md`
-- `docs/ACPHILAMBDA_R_ETA_OCCURRENCE_AXIOM_HYGIENE_NO_GO_NOTE_2026-07-04.md`
-- `docs/ACPHILAMBDA_R_ETA_RECORD_FORMATION_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md`
-- `docs/ACTION_FAMILY_CHARACTER_SEMIGROUP_DISCRIMINATOR_BOUNDED_NOTE_2026-07-02.md`
-- `docs/ADMISSIBILITY_RECORD_CONTINUATION_REFINEMENT_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-13.md`
-- `docs/ANOMALY_FORCES_TIME_THEOREM.md`
-- `docs/AUDIT_DM_GV_RUNNER_STALE_PATH_CLEANUP_BLOCK_TWO_NOTE_2026-05-01.md`
-- `docs/AUDIT_LHF_LEVERAGE_MAP_FOR_RETAINED_PROMOTION_NOTE_2026-05-01.md`
-- `docs/AXIOM_CHANGE_PROPOSAL_2026-04-10.md`
-- `docs/AXIOM_FIRST_CLUSTER_DECOMPOSITION_TEMPORAL_NARROW_THEOREM_NOTE_2026-06-05.md`
-- `docs/BINARY_OCTAHEDRAL_DISCRETE_SPINOR_SIGN_NARROW_THEOREM_NOTE_2026-05-28.md`
-- `docs/BORN_FORM_MENU_OUTCOME_THRESHOLD_AND_MIXED_PROJECTIVE_FORCING_BOUNDED_THEOREM_NOTE_2026-07-17.md`
-- `docs/C1B_DEGENERACY_LOCUS_PARTITION_TOTALITY_BOUNDED_NOTE_2026-07-02.md`
-- `docs/C1_FRAME_COMPONENT_FROM_RECORD_REGISTRABILITY_PARTIAL_BOUNDED_NOTE_2026-07-02.md`
-- `docs/CHARGED_LEPTON_OP_LOCAL_SOURCE_SELECTED_LINE_SELECTOR_NO_GO_NOTE_2026-04-27.md`
-- `docs/CKM_BARRED_CIRCUMRADIUS_EXACT_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md`
-- `docs/CKM_BARRED_ORTHOCENTER_EULER_LINE_EXACT_CLOSED_FORM_THEOREM_NOTE_2026-04-25.md`
-- `docs/CKM_KOIDE_CROSS_SECTOR_Z3_CLOSURE_THEOREM_NOTE_2026-04-25.md`
-- `docs/CL3_SM_EMBEDDING_MASTER_NOTE.md`
-- `docs/COLLAPSE_MERGER_TOY_ENGINE_VALIDATION_NOTE_2026-07-08.md`
-- `docs/COLOR_LINK_INDEX_ROUTING_CARRIER_BUDGET_2026-06-05.md`
-- `docs/COLOR_ORIENTATION_THREE_VS_THREEBAR_SUCCESSION_CANDIDATE_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-06.md`
-- `docs/COLOR_SINGLET_RECORDS_G2_FACTORIZATION_SITE_LOCAL_LOCKING_BOUNDED_THEOREM_NOTE_2026-07-06.md`
-- `docs/COMPANION_BANK_STATIC_CERTIFICATE_POVM_INPUT_CONVENTION_META_NOTE_2026-07-30.md`
-- `docs/COMPANION_GAUGE_WORK_CENTER_CONTROLLABILITY_CYCLE797_BOUNDED_THEOREM_NOTE_2026-07-30.md`
-- `docs/CONDITION_ALPHABET_IDENTIFICATION_COUPLED_CUBIC_ACTION_THRESHOLD_MET_NO_ODD_CHANNEL_BELOW_TRIPLES_BOUNDED_THEOREM_NOTE_2026-07-04.md`
-- `docs/COPY_REDUNDANCY_CONTENT_CYCLE874_BOUNDED_THEOREM_NOTE_2026-07-28.md`
-- `docs/COSMOLOGICAL_CONSTANT_RETENTION_WITH_R_BUDGET_THEOREM_NOTE_2026-04-29.md`
-- `docs/CROSS_SECTOR_A_SQUARED_KOIDE_VCB_BRIDGE_SUPPORT_NOTE_2026-04-25.md`
-- `docs/CYCLE823_CYCLE719_MULTIEDGE_SERVICE_TOURNAMENT_CYCLE864_BOUNDED_THEOREM_NOTE_2026-08-01.md`
-- `docs/D3_BAR_LOCATION_DESIGN_SCOUT_2026-07-10.md`
-- `docs/D3_PINCH_NATIVE_UPPER_LEG_DIMENSION_SELECTION_COMPOSITION_BOUNDED_THEOREM_NOTE_2026-06-11.md`
-- `docs/DIMENSION_UPPER_BOUND_DEPENDENCY_EDGE_REPAIR_NOTE_2026-06-08.md`
-- `docs/DM_ABCC_ASSUMPTIONS_AUDIT_NOTE_2026-04-19.md`
-- `docs/DM_LEPTOGENESIS_NE_PROJECTED_SOURCE_LAW_DERIVATION_NOTE_2026-04-16.md`
-- `docs/DM_NEUTRINO_BREAKING_TRIPLET_AXIOM_LAW_ATTEMPT_NOTE_2026-04-15.md`
-- `docs/DM_NEUTRINO_CASCADE_GEOMETRY_NOTE_2026-04-14.md`
-- `docs/DM_NEUTRINO_SOURCE_SURFACE_BIFUNDAMENTAL_INVARIANCE_OBSTRUCTION_THEOREM_NOTE_2026-04-17.md`
-- `docs/DM_NEUTRINO_SOURCE_SURFACE_PARITY_MIXING_SELECTION_OBSTRUCTION_NOTE_2026-04-17.md`
-- `docs/DM_NEUTRINO_TWO_HIGGS_CLOSURE_ATTACKS_NOTE_2026-04-15.md`
-- `docs/DM_WILSON_DIRECT_DESCENDANT_LOCAL_SCHUR_SOURCE_FAMILY_THEOREM_NOTE_2026-04-18.md`
-- `docs/EMERGENT_POINCARE_FREE_SECTOR_FROM_KINETIC_ISOTROPY_PRIMITIVE_BOUNDED_THEOREM_NOTE_2026-06-09.md`
-- `docs/EMPTY_STATE_BOOTSTRAP_ALL_OPEN_AVAILABILITY_ORBIT_DICHOTOMY_DEGREE_NINE_CHIRALITY_WALL_BOUNDED_THEOREM_NOTE_2026-07-04.md`
-- `docs/EVENT_SPACE_GROUNDWORK_CYCLE878_SUPPORT_NOTE_2026-07-28.md`
-- `docs/EXTENSIONAL_NEAREST_NEIGHBOR_RULE_DEEP_PROBE_2026-07-13.md`
-- `docs/FLAVOR_ABSOLUTE_HANDEDNESS_IS_GAUGE_RELATIVE_IS_PHYSICAL_NARROW_THEOREM_NOTE_2026-06-08.md`
-- `docs/FLAVOR_LOGDET_GENERATOR_THREE_FACTOR_PROVENANCE_2026-06-04.md`
-- `docs/FREE_BILINEAR_QUASILOCAL_LR_BRIDGE_THEOREM_NOTE_2026-06-10.md`
-- `docs/FREE_STAGGERED_3PLUS1_SAME_ACTION_TRANSFER_GAUSSIAN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-07-12.md`
-- `docs/G3_CROSS_EDGE_INDEPENDENCE_IS_A_FORMATION_GATE_ATOM_MARGINAL_IDENTITY_FROM_QUALIFICATION_BOUNDED_THEOREM_NOTE_2026-07-12.md`
-- `docs/GAUGE_CENTER_SECTOR_RECORD_CONTEXT_AND_THETA_Q_CHARACTER_GRADING_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-07-01.md`
-- `docs/GAUGE_LINK_BINARY_REGISTRATION_CAPACITY_STEP_KERNEL_PIN_THEOREM_NOTE_2026-07-02.md`
-- `docs/GAUGE_MULTIPLAQUETTE_CHARACTER_GLUING_EMERGENT_INTEGER_SECTOR_RECORD_CONTEXT_AND_ACTION_PAIRING_RESIDUAL_BOUNDED_THEOREM_NOTE_2026-07-02.md`
-- `docs/GAUGE_SCALAR_KZ_EXTERNAL_LIFT_GATE_STATUS_NOTE_2026-06-06.md`
-- `docs/GAUGE_VACUUM_PLAQUETTE_FIRST_THREE_SAMPLE_ENVIRONMENT_EVALUATOR_ROUTE_NOTE_2026-04-17.md`
-- `docs/GAUGE_VACUUM_PLAQUETTE_FULL_SLICE_RIM_LIFT_INTEGRAL_BOUNDARY_SCIENCE_ONLY_NOTE_2026-04-17.md`
-- `docs/GAUGE_VACUUM_PLAQUETTE_WORD_COUNT_POWER_BLOCK_BIRKHOFF_CERTIFICATE_NARROW_THEOREM_NOTE_2026-06-12.md`
-- `docs/GELLMANN_COMPLETENESS_THEOREM_NOTE_2026-05-02.md`
-- `docs/GRADED_CONSTRAINT_PRIMITIVE_REGISTRATION_PROPOSAL_2026-07-04.md`
-- `docs/GRADED_CONSTRAINT_PROGRAM_AND_RECORD_INFLUENCE_CRITERION_2026-07-04.md`
-- `docs/GRAVITY_SIGN_AUDIT_2026-04-10.md`
-- `docs/GRAV_DECOHERENCE_DERIVED_NOTE.md`
-- `docs/G_BARE_PARENT_PROMOTION_GATE_MAP_NOTE_2026-06-06.md`
-- `docs/HADRON_LANE1_SQRT_SIGMA_B2_STATIC_ENERGY_BRIDGE_SCOUT_NOTE_2026-04-30.md`
-- `docs/HIERARCHY_BBS_STAGGERED_TASTE_BLOCKING_BRIDGE_KMS_SUBSTRATE_NARROW_NO_GO_NOTE_2026-05-15.md`
-- `docs/HIERARCHY_BBS_STAGGERED_TASTE_BLOCKING_BRIDGE_SCAFFOLD_AVAILABILITY_BOUNDED_NOTE_2026-05-11.md`
-- `docs/HIGGS_LATTICE_TASTE_COUNT_AND_WJ_FORM_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`
-- `docs/HIGGS_MASS_FROM_AXIOM_STATUS_CORRECTION_AUDIT_NOTE_2026-05-02.md`
-- `docs/HUBBLE_LANE5_C1_A2_ACTION_UNIT_NO_GO_NOTE_2026-04-28.md`
-- `docs/HUBBLE_LANE5_COSMIC_HISTORY_RATIO_NECESSITY_NO_GO_NOTE_2026-04-26.md`
-- `docs/INTERACTING_TRANSFER_MATTER_GAP_AND_GAUGE_REDUCTION_BOUNDED_NOTE_2026-05-30.md`
-- `docs/KCPT_D2_COMMUTANT_CLOSED_FORM_LIFTS_AND_LATTICE_SIZE_INDEPENDENCE_BOUNDED_THEOREM_NOTE_2026-07-25.md`
-- `docs/KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md`
-- `docs/KOIDE_BAE_PROBE_RADIAN_FROM_DIMENSIONS_BOUNDED_NOTE_2026-05-09_probe30.md`
-- `docs/KOIDE_CONVENTION_INVARIANT_SCALAR_SELECTOR_DOUBLET_CONSTANCY_NARROW_THEOREM_NOTE_2026-07-12.md`
-- `docs/KOIDE_FORMATION_GATE_RELOCATION_TIED_MEASURE_PER_CELL_WEIGHT_COMPATIBILITY_BOUNDED_THEOREM_NOTE_2026-07-12.md`
-- `docs/KOIDE_MATTER_ATTACHMENT_GRADED_STATISTICS_GATE_NARROW_THEOREM_NOTE_2026-06-02.md`
-- `docs/KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md`
-- `docs/KOIDE_OCCUPANCY_FROM_LOCKED_RECORD_OUTCOMES_BOUNDED_NOTE_2026-07-03.md`
-- `docs/KOIDE_POSITIVE_PATHS_FIRST_PRINCIPLES_NOTE_2026-04-18.md`
-- `docs/KOIDE_QUASI_HERMITIAN_METRIC_OPERATOR_ESCAPE_CLOSURE_BOUNDED_THEOREM_NOTE_2026-07-12.md`
-- `docs/KOIDE_Q_SOURCE_DOMAIN_CANONICAL_DESCENT_THEOREM_NOTE_2026-04-25.md`
-- `docs/KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md`
-- `docs/KOIDE_SELECTED_LINE_LOCAL_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md`
-- `docs/KUBO_EIKONAL_GAP_NOTE.md`
-- `docs/LEPTON_SHARED_HIGGS_UNIVERSALITY_COLLAPSE_NOTE.md`
-- `docs/LH_ANOMALY_TRACE_CATALOG_THEOREM_NOTE_2026-04-25.md`
-- `docs/LINEAR_RESPONSE_DERIVATION_NOTE.md`
-- `docs/LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md`
-- `docs/LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`
-- `docs/MAGNITUDE_READS_MINIMAL_RECORD_BLOCK_2026-06-06.md`
-- `docs/MATTER_REALIZATION_KS_HOP_BRIDGE_EDGE_DIAG_MEMBERSHIP_BOUNDED_THEOREM_NOTE_2026-07-06.md`
-- `docs/MATTER_REALIZATION_QUBIT_LEVEL_CROSS_SITE_BILINEAR_FROM_K1_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-07-06.md`
-- `docs/MINIMAL_AXIOMS_2026-06-29.md`
-- `docs/MULTISITE_PAULI_GROUP_THEOREM_NOTE_2026-05-02.md`
-- `docs/NATIVE_CARRIER_REGISTRATION_KERNEL_RATE_VS_UNIT_VARIANCE_POINT_THEOREM_NOTE_2026-07-02.md`
-- `docs/NEUTRINO_DIRAC_GLOBAL_LIFT_PARTIAL_THEOREM_NOTE_2026-04-28.md`
-- `docs/NEUTRINO_LANE4_WORKSTREAM_CLOSEOUT_NOTE_2026-04-28.md`
-- `docs/NEUTRINO_NORMAL_GRAMMAR_U1_RIGIDITY_NOTE_2026-04-28.md`
-- `docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_EXTENSIVITY_PRIMITIVE_NARROW_NOTE_2026-05-21.md`
-- `docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_GLEASON_BUSCH_ROUTE_NARROW_NOTE_2026-05-21.md`
-- `docs/OBSERVABLE_PRINCIPLE_P1_P2_FROM_QUBIT_TRACE_NOTE_2026-05-20.md`
-- `docs/OBSERVABLE_PRINCIPLE_SCALE_INVARIANT_SOURCE_RESPONSE_NARROW_THEOREM_NOTE_2026-05-16.md`
-- `docs/OCCUPANCY_NONEXCLUSIVITY_MIXTURE_BOUND_NOTE_2026-06-09.md`
-- `docs/OMEGA_LAMBDA_DERIVATION_NOTE.md`
-- `docs/OVERLAPPING_EDGE_INSTRUMENT_ORDER_AND_TIME_RATE_NONSELECTION_BOUNDED_THEOREM_NOTE_2026-07-11.md`
-- `docs/PAST_HYPOTHESIS_EXISTENCE_REDUCTION_APPEND_ONLY_WELL_FOUNDEDNESS_BOUNDED_THEOREM_NOTE_2026-06-11.md`
-- `docs/PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md`
-- `docs/PER_PLAQUETTE_LICENSE_ONE_TICK_REACHABILITY_DERIVATION_NARROW_THEOREM_NOTE_2026-07-12.md`
-- `docs/PHYSICAL_PAIR_KERNEL_MINIMAL_POSITION_EXTENSION_CYCLE698_NOTE_2026-07-25.md`
-- `docs/PHYSICAL_RECORD_READOUT_CARRIER_THREE_WAY_SPLIT_CYCLE693_NOTE_2026-07-25.md`
-- `docs/PHYSICAL_RECORD_REGISTER_SYMPLECTIC_DILATION_CYCLE704_NOTE_2026-08-01.md`
-- `docs/PLANCK_FINITE_RESPONSE_NO_GO_NOTE_2026-04-24.md`
-- `docs/PLANCK_PRIMITIVE_COFRAME_BOUNDARY_CARRIER_THEOREM_NOTE_2026-04-25.md`
-- `docs/PMNS_DCP_FORECAST_STANDING_DEGRADES_UNDER_NUFIT6_BOUNDED_NOTE_2026-06-08.md`
-- `docs/PMNS_RIGHT_POLAR_SECTION_NOTE.md`
-- `docs/PMNS_SECTOR_ORIENTATION_ORBIT_NOTE.md`
-- `docs/POISSON_SELF_CONSISTENT_WELL_DEPTH_FINITE_VOLUME_BOUNDED_THEOREM_NOTE_2026-07-27.md`
-- `docs/POST_RECORD_FLOW_THERMAL_STABLE_SETTING_CERTIFICATE_2026-06-06.md`
-- `docs/POST_RECORD_SUPPLIED_ORIENTATION_BRIDGE_INTERFACE_2026-06-06.md`
-- `docs/PRR_LOCAL_DERIVATION_FROM_JAYNES_MAX_ENTROPY_NARROW_THEOREM_NOTE_2026-05-22.md`
-- `docs/QUALIFICATION_UNFIXED_CHOICE_CLARIFICATION_CERTIFICATION_NOTE_2026-07-04.md`
-- `docs/QUARK_ENDPOINT_READOUT_CONSTRAINTS_NOTE_2026-04-19.md`
-- `docs/QUARK_ROUTE2_ETA_FLOOR_HF_BOUNDARY_NOTE.md`
-- `docs/QUARK_ROUTE2_E_CENTER_LIFT_SIZE_SCAN_BOUNDARY_NOTE_2026-06-21.md`
-- `docs/QUARK_ROUTE2_RCONN_TYPED_BRIDGE_DERIVATION_BOUNDED_NOTE_2026-06-12.md`
-- `docs/QUARK_ROUTE2_W1_SIGN_MAGNITUDE_SPLIT_SUPPORT_NOTE_2026-06-21.md`
-- `docs/RCONN_DERIVED_NOTE.md`
-- `docs/READING_NOTE_CLAIMS_ARE_AXIOM_TEXT_THEOREMS_BOUNDED_NOTE_2026-07-02.md`
-- `docs/READING_NOTE_FINAL_DERIVATIONS_MOTION_CLOSURE_BOUNDED_NOTE_2026-07-02.md`
-- `docs/READ_RESET_CADENCE_INTERFERENCE_CHANNEL_BOUNDED_THEOREM_NOTE_2026-07-17.md`
-- `docs/READ_TWICE_PACKET_DERIVE_FIRST_UNIFICATION_BOUNDED_NOTE_2026-07-13.md`
-- `docs/REALIZED_KINETIC_BRANCH_SELECTION_FRAME_CLASS_TRANSPORT_NARROW_THEOREM_NOTE_2026-07-02.md`
-- `docs/REAL_RECORD_NO_I_UNIFICATION_PROPOSAL_NARROW_THEOREM_NOTE_2026-06-04.md`
-- `docs/RECORD_CLASSICALIZATION_DYNAMICS_FIREWALL_2026-06-05.md`
-- `docs/RECORD_CLOCK_RATE_NORMALIZATION_GATE_2026-06-06.md`
-- `docs/RECORD_COMPARABILITY_IMPORT_DISCIPLINE_SUPPORT_FORK_EXHIBIT_AND_CONDITIONAL_ARROW_BOUNDED_NOTE_2026-07-07.md`
-- `docs/RECORD_COMPOSITION_BRIDGE_SEMIGROUP_POSITIVITY_SELECTION_BOUNDED_NOTE_2026-07-02.md`
-- `docs/RECORD_COUNT_BOUNDS_COMPOSITION_WORDS_FINITE_DIAL_BOUNDED_NOTE_2026-07-02.md`
-- `docs/RECORD_DENSITY_SLOWS_LR_FRONT_OPTICAL_METRIC_TOY_BOUNDED_THEOREM_NOTE_2026-06-09.md`
-- `docs/RECORD_DYNAMICS_AUDIT_GATE_LADDER_2026-06-05.md`
-- `docs/RECORD_DYNAMICS_LAYER_RECONCILIATION_2026-06-05.md`
-- `docs/RECORD_FAITHFUL_CUBIC_NEIGHBOR_RESPONSE_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-07-11.md`
-- `docs/RECORD_FORMATION_APPEND_CERTIFICATION_BOUNDED_NOTE_2026-07-04.md`
-- `docs/RECORD_FORMATION_CONTROLLED_COPY_WRITE_ISOMETRY_THEOREM_NOTE_2026-06-18.md`
-- `docs/RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md`
-- `docs/RECORD_FUNCTION_FINITE_SECTOR_ALGEBRA_2026-06-05.md`
-- `docs/RECORD_HISTORY_MONOID_UNBOUNDED_RETENTION_2026-06-05.md`
-- `docs/RECORD_LOCAL_FINITE_ATOM_AVAILABILITY_NARROW_THEOREM_NOTE_2026-06-17.md`
-- `docs/RECORD_OBSERVABLE_QUOTIENT_AND_RANK_ONE_FORMATION_OUTCOME_OPERATION_NORMAL_FORM_BOUNDED_THEOREM_NOTE_2026-07-11.md`
-- `docs/RECORD_OCCURRENCE_THINNED_IID_FREQUENCY_BRIDGE_2026-07-01.md`
-- `docs/RECORD_PERMANENCE_FORCES_FRESH_SITE_DOUBLE_REGISTRATION_AND_AGREEMENT_SURVIVAL_BOUNDED_THEOREM_NOTE_2026-07-11.md`
-- `docs/RECORD_PRODUCTION_INTERFACE_PRINCIPLE_2026-06-06.md`
-- `docs/RECORD_SATURATION_AVAILABILITY_CENSUS_BOUNDED_NOTE_2026-07-08.md`
-- `docs/RECORD_TICK_SIGNATURE_NEUTRAL_2026-06-23.md`
-- `docs/RECORD_UNBOUNDED_FINITE_ADDITIVITY_SCHEMA_2026-06-06.md`
-- `docs/RECORD_WRITE_ADMISSIBLE_ONE_STEP_CLASS_CONTROLLED_COPY_NARROW_THEOREM_NOTE_2026-07-11.md`
-- `docs/RULE_ACHIRALITY_FROM_MINIMALITY_QUALIFICATION_LICENSING_LAW_ACHIRAL_STATE_FREE_BOUNDED_THEOREM_NOTE_2026-07-04.md`
-- `docs/S3_TIME_TENSOR_BUILD_MEMO.md`
-- `docs/S3_TIME_TENSOR_PRIMITIVE_PROTOTYPE_NOTE.md`
-- `docs/S3_TIME_TRANSFER_MATRIX_BRIDGE_NOTE.md`
-- `docs/S3_TIME_TRANSFER_MATRIX_BRIDGE_NOTE_2026-05-17.md`
-- `docs/SCALAR_SELECTOR_FULL_STACK_RECOVERY_NOTE_2026-04-19.md`
-- `docs/SHARDED_CONTENT_SURVIVAL_LAW_CYCLE877_BOUNDED_THEOREM_NOTE_2026-07-28.md`
-- `docs/SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md`
-- `docs/SIGNED_GRAVITY_SOURCE_CHARACTER_UNIQUENESS_THEOREM_NOTE.md`
-- `docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_CONDITIONAL_REALIZATION_RESCOPING_COMPANION_NOTE_2026-06-03.md`
-- `docs/STAGGERED_DIRAC_KINETIC_CLASS_FORCING_NARROW_THEOREM_NOTE_2026-06-10.md`
-- `docs/STAGGERED_DIRAC_KINETIC_CLASS_TWO_COMPONENT_EXCLUSION_NARROW_THEOREM_NOTE_2026-06-11.md`
-- `docs/STAGGERED_DIRAC_PKIN_SUBTREE_CURRENT_SURFACE_RESTATEMENT_NOTE_2026-07-03.md`
-- `docs/STAGGERED_DIRAC_SUBSTEP4_LABELING_NO_GO_NOTE_2026-05-17.md`
-- `docs/STAGGERED_DIRAC_SUBSTEP4_POSITIVE_RATCHET_NOTE_2026-05-10.md`
-- `docs/STRUCTURED_MIRROR_RECONCILIATION_NOTE.md`
-- `docs/SU2_WITTEN_Z2_ANOMALY_THEOREM_NOTE_2026-04-24.md`
-- `docs/TELEPORTATION_CROSS_ENCODING_MAPS_NOTE.md`
-- `docs/TELEPORTATION_ENCODING_PORTABILITY_NOTE.md`
-- `docs/TELEPORTATION_HARD_BLOCKER_ATTACK_NOTE.md`
-- `docs/TELEPORTATION_LOGICAL_READOUT_AUDIT.md`
-- `docs/TELEPORTATION_MEASUREMENT_RECORD_NOTE.md`
-- `docs/TELEPORTATION_NATIVE_RECORD_APPARATUS_NOTE.md`
-- `docs/TELEPORTATION_NATIVE_RECORD_APPARATUS_SCOPE_SPLIT_SOURCE_THEOREM_NOTE_2026-05-16.md`
-- `docs/TELEPORTATION_NATIVE_TRANSPORT_THEORY_NOTE.md`
-- `docs/TELEPORTATION_RESOURCE_FIDELITY_NOTE.md`
-- `docs/THETA_4D_CARRIER_FLUX_COHOMOLOGY_INTERSECTION_PAIRING_CLOSED_BRANCH_AND_DEFECT_CLOSURE_RESIDUAL_BOUNDED_THEOREM_NOTE_2026-07-02.md`
-- `docs/THETA_CARTAN_VALUED_CROSS_PLANE_PAIRING_DIAGONAL_WEYL_FRAME_THEOREMS_AND_TRIALITY_FRACTIONAL_VALUES_BOUNDED_THEOREM_NOTE_2026-07-02.md`
-- `docs/THETA_GAUGE_WINDING_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md`
-- `docs/THETA_MASS_DETERMINANT_AXIOM_UPDATE_NO_GO_NOTE_2026-07-04.md`
-- `docs/THETA_POST_ERASURE_ODD_SIDE_LOG_EQUIVALENCE_AND_ADDITIVITY_INCOMPATIBILITY_BOUNDED_THEOREM_NOTE_2026-07-18.md`
-- `docs/THETA_RETIREMENT_BASIS_REMATCH_2026-07-04.md`
-- `docs/TIME_AXIS_IS_THE_HISTORY_INDEX_RECORD_MONOTONE_DIRECTION_BOUNDED_NOTE_2026-07-03.md`
-- `docs/UNIVERSAL_GR_CURVATURE_LOCALIZATION_BLOCKER_NOTE.md`
-- `docs/UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_ATTEMPT.md`
-- `docs/UNIVERSAL_GR_TENSOR_QUOTIENT_UNIQUENESS_NOTE.md`
-- `docs/UNIVERSAL_GR_TENSOR_VARIATIONAL_CANDIDATE_NOTE.md`
-- `docs/UNIVERSAL_GR_W_HESSIAN_IDENTIFICATION_FULL_FINITE_K_CHANNEL_TABLE_BOUNDED_THEOREM_NOTE_2026-06-09.md`
-- `docs/WILSON_STAGGERED_SITE_BLOCK_SYNTACTIC_SUPPORT_TREE_SPAN_MARKED_RESPONSE_RETURN_BOUNDED_THEOREM_NOTE_2026-07-12.md`
-- `docs/YT_CLASS_3_SUSY_2HDM_ANALYSIS_NOTE_2026-04-18.md`
-- `docs/YT_CONNECTED_SOURCE_SELECTOR_SCALAR_LIFT_NO_GO_NOTE_2026-05-29.md`
-- `docs/YT_EW_MATCHING_RULE_M_NOTE_2026-05-02.md`
-- `docs/YT_GENERATION_HIERARCHY_PRIMITIVE_ANALYSIS_NOTE_2026-04-18.md`
-- `docs/YT_PRIMITIVE_SOURCE_UNIT_FISHER_NORMALIZATION_SUPPORT_NOTE_2026-05-25.md`
-- `docs/YT_QUBIT_DEMOCRATIC_TOP_COEFFICIENT_CANDIDATE_NOTE_2026-05-25.md`
-- `docs/YT_TOP_COEFFICIENT_FULL_COURT_PRESS_NOTE_2026-05-25.md`
-- `docs/ai_methodology/raw/canonical_framing_paragraph.md`
-- `docs/ai_methodology/raw/prompts_session_049708ba_jonreilly.md`
-- `docs/ai_methodology/raw/prompts_session_04c820e1.md`
-- `docs/ai_methodology/raw/prompts_session_596e9a60_jonreilly.md`
-- `docs/ai_methodology/raw/prompts_session_6c2d4f26_jonreilly.md`
-- `docs/ai_methodology/raw/prompts_session_b068be5e_jonreilly.md`
-- `docs/ai_methodology/raw/protocols.md`
-- `docs/ai_methodology/skills/audit-loop/SKILL.md`
-- `docs/ai_methodology/skills/exercise/SKILL.md`
-- `docs/ai_methodology/skills/physics-loop/SKILL.md`
-- `docs/ai_methodology/skills/physics-loop/references/long-running-execution.md`
-- `docs/ai_methodology/skills/review-loop/SKILL.md`
-- `docs/ai_methodology/skills/workhorse/SKILL.md`
-- `docs/audit/FRESH_LOOK_REQUIREMENTS.md`
-- `docs/audit/MISSING_DERIVATION_PROMPTS.md`
-- `docs/audit/data/axiom_premise_nodes.json`
-- `docs/audit/data/ledger/ac/acphilambda_hw_complementation_equivariance_support_note_2026-06-09.json`
-- `docs/audit/data/ledger/at/atomic_hydrogen_helium_probe_note.json`
-- `docs/audit/data/ledger/at/atomic_lane2_physical_unit_limit_boundary_note_2026-04-29.json`
-- `docs/audit/data/ledger/be/beta6_resummation_ansatz_test_harness_bounded_note_2026-05-30.json`
-- `docs/audit/data/ledger/bi/binom_d_2_equals_twice_dminus1_forces_d_four_narrow_theorem_note_2026-05-26.json`
-- `docs/audit/data/ledger/bo/bootstrap_continuation_availability_nonempty_free_orbit_reduction_propagation_closure_bounded_theorem_note_2026-07-04.json`
-- `docs/audit/data/ledger/bo/born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04.json`
-- `docs/audit/data/ledger/ch/charged_lepton_koide_value_full_chain_of_custody_2026-06-02.json`
-- `docs/audit/data/ledger/ch/chsh_tsirelson_lattice_qubits_bound_note_2026-05-20.json`
-- `docs/audit/data/ledger/dm/dm_leptogenesis_pmns_minimum_information_source_law_note_2026-04-16.json`
-- `docs/audit/data/ledger/dm/dm_neutrino_breaking_triplet_axiom_law_attempt_note_2026-04-15.json`
-- `docs/audit/data/ledger/dm/dm_pmns_graph_first_ordered_chain_nonzero_current_activation_theorem_note_2026-04-21.json`
-- `docs/audit/data/ledger/dm/dm_selector_relative_action_recovered_branch_separation_support_theorem_note_2026-04-21.json`
-- `docs/audit/data/ledger/fl/flavor_readout_gate_equals_carrier_identification_2026-05-31.json`
-- `docs/audit/data/ledger/fo/formation_rate_law_class_reduction_bounded_note_2026-07-08.json`
-- `docs/audit/data/ledger/fr/frozen_region_record_saturation_local_finality_boundary_influence_bounded_note_2026-07-03.json`
-- `docs/audit/data/ledger/ga/gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06.json`
-- `docs/audit/data/ledger/ga/gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_exact_solve_doublet_theorem_note_2026-04-20.json`
-- `docs/audit/data/ledger/ga/gauge_vacuum_plaquette_infinite_hierarchy_obstruction_note.json`
-- `docs/audit/data/ledger/gr/graded_constraint_interface_consistency_bounded_note_2026-07-04.json`
-- `docs/audit/data/ledger/gr/gravity_clean_derivation_note.json`
-- `docs/audit/data/ledger/h2/h2t_h0125_narrow_bridge_note.json`
-- `docs/audit/data/ledger/hi/hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10.json`
-- `docs/audit/data/ledger/hu/hubble_lane5_c1_a4_parity_gate_no_go_note_2026-04-28.json`
-- `docs/audit/data/ledger/in/industrial_sdp_bootstrap_infrastructure_note_2026-05-03.json`
-- `docs/audit/data/ledger/k_/k_dependence_review_safe_note.json`
-- `docs/audit/data/ledger/ko/koide_onsite_weyl_boost_from_bivectors_note_2026-06-01.json`
-- `docs/audit/data/ledger/la/lattice_distance_law_note.json`
-- `docs/audit/data/ledger/mi/mirror_2d_validation_note.json`
-- `docs/audit/data/ledger/mo/monopole_derived_note.json`
-- `docs/audit/data/ledger/ne/neutrino_majorana_lower_level_pairing_nogo_note.json`
-- `docs/audit/data/ledger/ob/observable_principle_record_scalar_map_no_go_note_2026-06-05.json`
-- `docs/audit/data/ledger/p_/p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18.json`
-- `docs/audit/data/ledger/pa/pauli_group_order_theorem_note_2026-05-02.json`
-- `docs/audit/data/ledger/pe/persistent_object_blended_readout_transfer_sweep_note_2026-04-16.json`
-- `docs/audit/data/ledger/pe/persistent_object_top4_multistage_transfer_sweep_note_2026-04-16.json`
-- `docs/audit/data/ledger/pe/persistent_record_as_kraus_operator_note_2026-05-20.json`
-- `docs/audit/data/ledger/pm/pmns_lower_level_end_to_end_closure_note.json`
-- `docs/audit/data/ledger/po/post_record_clock_rate_interface_2026-06-06.json`
-- `docs/audit/data/ledger/pr/prr_local_derivation_from_jaynes_max_entropy_narrow_theorem_note_2026-05-22.json`
-- `docs/audit/data/ledger/qu/quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02.json`
-- `docs/audit/data/ledger/qu/qubit_k1_derivation_from_minimality_narrow_theorem_note_2026-05-22.json`
-- `docs/audit/data/ledger/qu/qubit_lattice_joint_presentation_tensor_substrate_bridge_note_2026-07-09.json`
-- `docs/audit/data/ledger/re/realized_kinetic_branch_conditional_record_registration_narrow_theorem_note_2026-07-02.json`
-- `docs/audit/data/ledger/re/record_context_generator_nonidentifiability_no_go_2026-06-17.json`
-- `docs/audit/data/ledger/re/record_formation_append_certification_bounded_note_2026-07-04.json`
-- `docs/audit/data/ledger/re/record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06.json`
-- `docs/audit/data/ledger/re/record_local_finite_atom_availability_narrow_theorem_note_2026-06-17.json`
-- `docs/audit/data/ledger/re/record_production_interface_principle_2026-06-06.json`
-- `docs/audit/data/ledger/re/record_saturation_availability_census_bounded_note_2026-07-08.json`
-- `docs/audit/data/ledger/re/record_unbounded_finite_additivity_schema_2026-06-06.json`
-- `docs/audit/data/ledger/s3/s3_time_tensor_primitive_prototype_note.json`
-- `docs/audit/data/ledger/s3/s3_time_theta_to_slice_coupling_note.json`
-- `docs/audit/data/ledger/si/sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09.json`
-- `docs/audit/data/ledger/sp/spatial_cluster_decomposition_lieb_robinson_real_note_2026-05-19.json`
-- `docs/audit/data/ledger/te/teleportation_measurement_record_note.json`
-- `docs/audit/data/ledger/th/theta_defect_closure_from_admissibility_test_bounded_note_2026-07-03.json`
-- `docs/audit/data/ledger/un/universal_gr_block_normalization_note.json`
-- `docs/audit/data/ledger/wa/wave_direct_dm_h025_fam2_two_point_synthesis_note.json`
-- `docs/audit/data/ledger/we/weak_coupling_retention_note_2026-04-11.json`
-- `docs/audit/data/ledger/wi/wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07.json`
-- `docs/audit/data/premise_decision_history.json`
-- `docs/audit/scripts/no_go_discipline_gate.py`
-- `docs/audit/scripts/orchestrate_audit_batch.py`
-- `docs/audit/scripts/tests/test_audit_pipeline.py`
-- `docs/historic_intake/HISTORIC_BRIDGE_GAP_EXHAUSTED_ROUTES_CONSOLIDATION_NOTE_2026_05_06_INTAKE_NOTE_2026-08-05.md`
-- `docs/historic_intake/HISTORIC_CKM_MAGNITUDES_STRUCTURAL_COUNTS_DIMENSION_UNIQUENESS_SUPPORT_NOTE_2026_04_25_INTAKE_NOTE_2026-08-05.md`
-- `docs/historic_intake/HISTORIC_ENERGY_FIELD_DERIVATION_SYNTHESIS_OWNER_SURFACE_2026_07_08_INTAKE_NOTE_2026-08-05.md`
-- `docs/historic_intake/HISTORIC_KOIDE_R_HALF_FORK_IS_THE_DYSON_REALITY_CLASS_CHARGED_LEPTON_MASS_IS_SYMMETRIC_SHARPER_OBSTRUCTED_ROUTE_NOTE_2026_06_06_INTAKE_NOTE_2026-08-05.md`
-- `docs/historic_intake/HISTORIC_KOIDE_SECTOR_ORBIT_PARTITION_FROM_COMPLEX_UNIT_CONVENTION_AUTOMORPHISM_NARROW_THEOREM_NOTE_2026_07_12_INTAKE_NOTE_2026-08-05.md`
-- `docs/historic_intake/HISTORIC_NEGATIVE_LEDGER_B10818_INTAKE_NOTE_2026-08-05.md`
-- `docs/historic_intake/HISTORIC_PHYSICAL_REVERSIBLE_CUBIC_RELAXATION_CLOCK_COMPILER_CYCLE463_NOTE_2026_07_19_INTAKE_NOTE_2026-08-05.md`
-- `docs/historic_intake/HISTORIC_POST_AXIOM_ADOPTION_REMAINING_HARD_GATE_ROUTE_MAP_2026_06_30_INTAKE_NOTE_2026-08-05.md`
-- `docs/historic_intake/HISTORIC_ZERO_IMPORT_HYDROGEN_LEPTON_256_EXACT_SOURCE_SINGLETON_CURRENT_SURFACE_NEGATIVE_2026_07_05_INTAKE_NOTE_2026-08-05.md`
-- `docs/lanes/ordered-lattice/README.md`
-- `docs/publication/ci3_z3/DERIVATION_ATLAS.md`
-- `docs/publication/ci3_z3/DERIVATION_ATLAS_EFFECTIVE_STATUS.md`
-- `docs/publication/ci3_z3/SCIENCE_MAP.md`
-- `docs/repo/CONTROLLED_VOCABULARY.md`
-- `docs/repo/FOUR_AXIOM_NARRATIVE_SCRUB_PLAN_2026-07-04.md`
-- `docs/repo/STATE_OF_THE_THEORY_2026-07-16.md`
-- `docs/work_history/repo/review_feedback/ABELIAN_COMPATIBLE_SEED_BELL_MERGE_CYCLE15_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/ACTUAL_HEADER_ROLE_DECODER_PARITY_SELECTION_CYCLE18_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/ADMISSIBILITY_SYMBOL_DEFINABILITY_AND_EXACT_LAW_REFERENCE_CHALLENGE_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/APPEND_ONLY_CAUSAL_BELL_WIRE_CYCLE13_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/AUTONOMOUS_HOMOGENEOUS_BINARY_NUCLEATION_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/AUTONOMOUS_SELF_CLOSING_DIAMOND_CYCLE17_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/BARE_METAL_RECORD_FORMATION_FINAL_PROBE_RESULTS_AND_AXIOM_NEED_NOTE_2026-07-13.md`
-- `docs/work_history/repo/review_feedback/BARE_METAL_RECORD_FORMATION_MINIMUM_VIABLE_PROBE_PROGRAM_NOTE_2026-07-13.md`
-- `docs/work_history/repo/review_feedback/BLIND_RESIDUAL_ATOM_PACKING_AND_ONE_LAW_CONSTITUTIONAL_SCHEMA_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/C129_TWO_PARENT_CORNER_RELOCATED_CAGE_SEED_CYCLE132_NOTE_2026-07-15.md`
-- `docs/work_history/repo/review_feedback/C132_CAGE_FIRST_BIT_SUCCESSOR_BOUNDARY_CYCLE135_NOTE_2026-07-15.md`
-- `docs/work_history/repo/review_feedback/CANDIDATE_SELECTED_COMMON_REFERENCE_PORT_CYCLE120_NOTE_2026-07-15.md`
-- `docs/work_history/repo/review_feedback/CANONICAL_LAW_COMPLETENESS_CONTRACT_NOTE_2026-07-13.md`
-- `docs/work_history/repo/review_feedback/CAR_COMPILER_RECORD_CAUSAL_DEPTH_BRIDGE_CYCLE255_NOTE_2026-07-17.md`
-- `docs/work_history/repo/review_feedback/CAUSAL_ALGEBRAIC_HISTORY_SUBSTRATE_SPECIFICATION_NOTE_2026-07-13.md`
-- `docs/work_history/repo/review_feedback/CAUSAL_PHASE_CHAIN_CYCLE61_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/COHERENT_CUBIC_PAIR_ORBIT_SYNTHESIS_CYCLE303_NOTE_2026-07-17.md`
-- `docs/work_history/repo/review_feedback/COHERENT_GAUGE_FRAME_AUTONOMOUS_COMPILER_CYCLE249_NOTE_2026-07-17.md`
-- `docs/work_history/repo/review_feedback/COMPLETE_CANDIDATE_LSTAR_ASSEMBLY_CYCLE41_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/COMPLETE_FUTURE_OPERATIONAL_PARITY_CERTIFICATE_CYCLE19_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/COMPLETE_HISTORY_RECONSTRUCTION_CYCLE45_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/COMPLETE_SAMPLED_LAW_PAIR_AXIOM_UNDERDETERMINATION_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/CONFORMAL_CLASS_CAUSAL_SOURCE_PACKET_REVIEW_2026-07-09.md`
-- `docs/work_history/repo/review_feedback/CONSTITUTIONAL_LOWER_BOUND_CLOSURE_AND_CLAUSE_DELETION_CYCLE31_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/CONSTRUCTIVE_CONSTITUTIONAL_DELTA_AUDIT_CYCLE83_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/CONTACT_ARCHIVE_FINITE_PROCESS_HISTORY_CYCLE284_NOTE_2026-07-17.md`
-- `docs/work_history/repo/review_feedback/CONTRACTIBLE_LIGHTCONE_WILSON_QUOTIENT_CYCLE271_NOTE_2026-07-17.md`
-- `docs/work_history/repo/review_feedback/CUBIC_NEIGHBOR_KERNEL_SELECTION_FIRST_PRINCIPLES_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/CUBIC_ONE_QUBIT_CLIFFORD_QCA_UNIQUENESS_CYCLE40_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/CYCLE330_SYMMETRIC_EDGE_SIGN_PHYSICAL_M2_ADVERSARIAL_NOTE_2026-07-25.md`
-- `docs/work_history/repo/review_feedback/CYCLE60_CYCLE67_MIXED_COMPOSITION_AUDIT_CYCLE70_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/CYCLE703_BKSF_VACUUM_GAUGE_ANCILLA_ADDENDUM_2026-07-25.md`
-- `docs/work_history/repo/review_feedback/CYCLE80_RECURRENCE_AUDIT_ENDPOINT_TUBE_NUCLEATION_CYCLE85_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/DELAYED_LOCKING_CAUSAL_CLOSE_CYCLE16_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/DETERMINISTIC_UNIQUE_EXTENSION_RECORD_SECTOR_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/DIRECTED_PAYLOAD_REUSABLE_CONE_CYCLE113_NOTE_2026-07-15.md`
-- `docs/work_history/repo/review_feedback/DYNAMIC_RECORD_BOUNDARY_INDEX_QCA_STEELMAN_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/EIGHT_BIT_PHYSICAL_ROLE_COMPARATOR_CYCLE81_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/EIGHT_BIT_STATUS_COMPLETION_FRONT_CYCLE112_NOTE_2026-07-15.md`
-- `docs/work_history/repo/review_feedback/EXACT_COMPILER_CLOSURE_LEDGER_CYCLE88_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/EXACT_LAW_CONSTITUTIONAL_PLACEMENT_SCHEMA_PROBE_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/EXACT_LAW_IRREDUCIBLE_CONTENT_INDEPENDENCE_TOURNAMENT_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/EXACT_LAW_UNIQUENESS_SELECTION_PRIMARY_SOURCE_AUDIT_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/EXACT_PREDICTIVE_SPECIFICATION_TOURNAMENT_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/FINAL_MISSING_CONTENT_CENSUS_AND_CONSTITUTIONAL_EDIT_GATE_CYCLE35_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/FINITE_DIAMOND_SAMPLED_LUDERS_INVARIANT_RECORD_MODEL_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/FIRST_AUTONOMOUS_SUCCESSOR_ROLE_PORT_CYCLE115_NOTE_2026-07-15.md`
-- `docs/work_history/repo/review_feedback/FIXED_TWO_VALUE_SERIAL_READ_PATH_CYCLE118_NOTE_2026-07-15.md`
-- `docs/work_history/repo/review_feedback/FOUNDATION_ATOM_LEDGER_AND_DEPENDENCY_MAP_NOTE_2026-07-13.md`
-- `docs/work_history/repo/review_feedback/FOUNDATION_LICENSED_PHYSICAL_EQUIVALENCE_WEYL_PAIR_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/FOUNDATION_SITE_NET_RECORD_EQUIVALENCE_CLASSIFICATION_CYCLE21_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/FOUNDATION_SORT_PRESERVING_EQUIVALENCE_AND_DYNAMICAL_GAUGE_COLLAPSE_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/FOUR_AXIOM_TOE_COMPLETENESS_AND_FINAL_UPDATE_GATE_NOTE_2026-07-13.md`
-- `docs/work_history/repo/review_feedback/FOUR_OPEN_RESERVATION_COMB_CYCLE59_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/FULL_LATTICE_FD_SLIR_COMPATIBILITY_AND_MINIMUM_CONTENT_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/FULL_LAW_ADJACENT_CRITICAL_PAIR_ACTUALITY_CYCLE186_NOTE_2026-07-16.md`
-- `docs/work_history/repo/review_feedback/FULL_LAW_INVENTORY_ADVERSARIAL_REDUCTION_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/FUNDAMENTAL_ONE_QUBIT_QCA_COMPILATION_CYCLE12_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/GATE_FAITHFUL_FSWAP_PHYSICAL_CLOSE_CYCLE259_NOTE_2026-07-17.md`
-- `docs/work_history/repo/review_feedback/GLOBAL_RECORD_HISTORY_PROCESS_LAW_CYCLE30_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/GRAVITY_ROUTE_C_BOUNDED_DIRECT_CURRENT_SEARCH_NOTE_2026-07-17.md`
-- `docs/work_history/repo/review_feedback/GUARDED_THREE_ROW_SOCKET_RENEWAL_BOUNDARY_CYCLE134_NOTE_2026-07-15.md`
-- `docs/work_history/repo/review_feedback/INFINITE_REVERSIBLE_RECORD_EXPORT_QCA_CYCLE11_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/INTRINSIC_FSWAP_OCCURRENCE_LINK_TOURNAMENT_CYCLE262_NOTE_2026-07-17.md`
-- `docs/work_history/repo/review_feedback/INVARIANT_FIRST_SEED_HARD_CORE_CYCLE18_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/JOINT_ENDPOINT_MIXED_REBIND_CYCLE78_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/LAWFUL_H0_REFERENCE_FORK_CYCLE114_NOTE_2026-07-15.md`
-- `docs/work_history/repo/review_feedback/LIVE_SEED_ROW_READABLE_MACROSTEP_CYCLE94_NOTE_2026-07-15.md`
-- `docs/work_history/repo/review_feedback/LOCALLY_MATCHED_WILSON_SECTOR_STATES_CYCLE275_NOTE_2026-07-17.md`
-- `docs/work_history/repo/review_feedback/LOCAL_CONSERVATIVE_COMMIT_RESOURCE_GRAVITY_CYCLE9_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/LOCAL_TO_GLOBAL_CUBIC_PROCESS_GLUE_CYCLE33_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/LOCKING_CADENCE_RECORD_KERNEL_DISCRIMINATOR_CYCLE223_NOTE_2026-07-17.md`
-- `docs/work_history/repo/review_feedback/LONG_RUN_RECORD_ONLY_APPEND_ARCHITECTURE_CYCLE32_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/MATTER_COUNTING_CHIRALITY_EXACT_LAW_PLACEMENT_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/MEASUREMENT_FEEDFORWARD_SQUARE_PYRAMID_PREPARATION_CYCLE240_NOTE_2026-07-17.md`
-- `docs/work_history/repo/review_feedback/MEASURE_TWICE_CONSTITUTIONAL_DECISION_PACKET_NOTE_2026-07-13.md`
-- `docs/work_history/repo/review_feedback/MEASURE_TWICE_FINAL_MINIMUM_AXIOM_CUT_READINESS_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/MINIMUM_AXIOM_UPDATE_EXERCISE_SYNTHESIS_AND_CUT_GATE_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/MINIMUM_CONSTITUTIONAL_CONTENT_EXHAUSTION_LEDGER_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/MIXED_CYCLE72_GUIDE_REPAIR_CYCLE77_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/MOVING_LOGICAL_APPARATUS_APPEND_FRONT_CYCLE34_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/NAMED_SITE_RECORD_FAITHFUL_EQUIVALENCE_CLASSIFICATION_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/NEAREST_NEIGHBOR_SEED_COMPILATION_CYCLE19_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/OFF_CODE_LOCAL_AUXILIARY_COMPLETION_CYCLE246_NOTE_2026-07-17.md`
-- `docs/work_history/repo/review_feedback/ONE_CUT_FOUNDATION_SURFACE_IMPACT_MAP_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/OPEN_BOUNDARY_ACTUAL_CONTACT_ACTION_DETECTOR_CYCLE291_NOTE_2026-07-17.md`
-- `docs/work_history/repo/review_feedback/OPERATIONAL_BINARY_MACROCODE_COMPILER_CYCLE58_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/OPERATIONAL_MASS_COORDINATE_TOURNAMENT_CYCLE201_NOTE_2026-07-16.md`
-- `docs/work_history/repo/review_feedback/OPERATIONAL_QUOTIENT_BORN_AFFINITY_CYCLE20_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/OPERATIONAL_RECORD_RECONSTRUCTION_DEEP_PROBE_NOTE_2026-07-13.md`
-- `docs/work_history/repo/review_feedback/ORTHOGONAL_LINEAGE_COHERENT_DILATION_CYCLE182_NOTE_2026-07-16.md`
-- `docs/work_history/repo/review_feedback/PHASE_SENSITIVE_RECORD_FIBRE_STATE_DISCRIMINATOR_CYCLE200_TARGET_NOTE_2026-07-16.md`
-- `docs/work_history/repo/review_feedback/PHYSICAL_AUTONOMOUS_LOCALIZED_REFOCUSED_MATTER_TRANSITION_TOURNAMENT_CYCLE575_NOTE_2026-07-22.md`
-- `docs/work_history/repo/review_feedback/PHYSICAL_CYCLE269_COMMON_REFINEMENT_SYNTHESIS_CYCLE304_NOTE_2026-07-17.md`
-- `docs/work_history/repo/review_feedback/PHYSICAL_CYCLE269_POSITION_GROWING_RECURRENT_COMPILER_CYCLE307_NOTE_2026-07-17.md`
-- `docs/work_history/repo/review_feedback/PHYSICAL_ENVIRONMENT_EXPORT_REALIZED_MEMBER_BRIDGE_CYCLE334_NOTE_2026-07-18.md`
-- `docs/work_history/repo/review_feedback/PHYSICAL_EVENT_TO_APPEND_COMMIT_CANDIDATE_CYCLE326_NOTE_2026-07-18.md`
-- `docs/work_history/repo/review_feedback/PHYSICAL_M2_SOURCE_RESPONSE_COMMON_SEAM_CYCLE313_NOTE_2026-07-18.md`
-- `docs/work_history/repo/review_feedback/PHYSICAL_ROW_ROLE_LITERAL_FANOUT_CYCLE153_NOTE_2026-07-15.md`
-- `docs/work_history/repo/review_feedback/PHYSICAL_SERIAL_REPEAT_MEASUREMENT_CYCLE174_NOTE_2026-07-16.md`
-- `docs/work_history/repo/review_feedback/PHYSICAL_TWO_ROW_COMMUTATION_BIND_CYCLE156_NOTE_2026-07-15.md`
-- `docs/work_history/repo/review_feedback/POST_CYCLE105_CONSTITUTIONAL_MINIMALITY_SMUGGLE_AUDIT_CYCLE110_NOTE_2026-07-15.md`
-- `docs/work_history/repo/review_feedback/POST_CYCLE115_ADDRESS_SEMANTICS_AUDIT_CYCLE116_NOTE_2026-07-15.md`
-- `docs/work_history/repo/review_feedback/POST_CYCLE124_MINIMUM_AXIOM_AND_COMPILER_DELTA_CYCLE126_NOTE_2026-07-15.md`
-- `docs/work_history/repo/review_feedback/POST_CYCLE132_MINIMUM_AXIOM_AND_COMPILER_CAMPAIGN_CYCLE133_NOTE_2026-07-15.md`
-- `docs/work_history/repo/review_feedback/POST_CYCLE94_OPERATIONAL_COMPLETENESS_AUDIT_CYCLE96_NOTE_2026-07-15.md`
-- `docs/work_history/repo/review_feedback/PROPER_CUBIC_QUBIT_QCA_WARD_IDENTITY_STEELMAN_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/PROPER_CUBIC_RECURRENT_CONTACT_KERNEL_CYCLE188_NOTE_2026-07-16.md`
-- `docs/work_history/repo/review_feedback/QUANTUM_DISSIPATIVE_SEED_ESCAPE_CYCLE20_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/QUBIT_SYMMETRY_EXCHANGE_LAW_REDUCTION_PROBE_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/REACHABLE_RECURRENT_CONTACT_CRITICAL_PAIR_CYCLE187_NOTE_2026-07-16.md`
-- `docs/work_history/repo/review_feedback/RECORD_CAPACITY_RENEWAL_CONSTITUTIONAL_PRESSURE_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/RECORD_CONDITIONED_EXCHANGE_CAPACITY_GRAVITY_FINITE_PROBE_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/RECORD_DEFINED_CAUSAL_DEPTH_CLOCK_CYCLE170_NOTE_2026-07-16.md`
-- `docs/work_history/repo/review_feedback/RECORD_DERIVED_COHERENT_CARRIER_DECODER_CYCLE48_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/RECORD_FORMATION_THREE_ROUTE_ASSUMPTIONS_EXERCISE_AND_AXIOM_TARGET_NOTE_2026-07-13.md`
-- `docs/work_history/repo/review_feedback/RECORD_INSTRUMENT_SELECTION_LUDERS_PRIMARY_SOURCE_AUDIT_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/RECORD_ONLY_STATE_BELL_LAW_TYPE_DICHOTOMY_CYCLE29_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/RECORD_STATE_ONE_M2_NN_FORTRESS_CYCLE26_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/RECORD_STATE_PHASE_SUFFICIENCY_CONSTRUCTIVE_PROBE_NOTE_2026-07-13.md`
-- `docs/work_history/repo/review_feedback/REDUNDANT_ARCHIVE_PERMANENCE_HISTORY_CYCLE283_NOTE_2026-07-17.md`
-- `docs/work_history/repo/review_feedback/RELATIONAL_QUBIT_DISAGREEMENT_CANONICAL_LAW_ESCALATION_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/RELATIONAL_TWO_CELL_RECURRENCE_AND_COMPACT_LAW_GATE_CYCLE140_NOTE_2026-07-15.md`
-- `docs/work_history/repo/review_feedback/ROUGH_SUBSYSTEM_OPERATIONAL_EQUIVALENCE_CYCLE253_NOTE_2026-07-17.md`
-- `docs/work_history/repo/review_feedback/R_B00_PORT_TO_ZERO_SOURCE_WORD_COMPLETION_CYCLE121_NOTE_2026-07-15.md`
-- `docs/work_history/repo/review_feedback/R_B01_CYCLE129_BRIDGE_ORIENTATION13_INTERFACE_CYCLE130_NOTE_2026-07-15.md`
-- `docs/work_history/repo/review_feedback/R_B01_MINIMAL_PHASE_PATCH_PROBE_CYCLE125_NOTE_2026-07-15.md`
-- `docs/work_history/repo/review_feedback/R_B01_PORT_TO_ROLE_CLOSED_RAIL_FRAME_JOIN_CYCLE129_NOTE_2026-07-15.md`
-- `docs/work_history/repo/review_feedback/R_B10_COMPLETION_TO_R_B00_ROLE_ALLOCATOR_COMMON_PORT_CYCLE119_NOTE_2026-07-15.md`
-- `docs/work_history/repo/review_feedback/R_B10_PORT_TO_ZERO_SOURCE_WORD_COMPLETION_CYCLE117_NOTE_2026-07-15.md`
-- `docs/work_history/repo/review_feedback/SELF_DESCRIBING_LAW_FOUNDATION_SELECTION_CYCLE49_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/SELF_EXTENDING_FRAME_CAGE_RAIL_CYCLE52_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/SEVEN_BIT_PHYSICAL_ROLE_COMPARATOR_CYCLE75_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/SPATIAL_COMPILER_DERIVED_CAUSAL_TIME_BRIDGE_CYCLE243_NOTE_2026-07-17.md`
-- `docs/work_history/repo/review_feedback/STATIONARY_LOCAL_FIRST_EVENT_HISTORY_CYCLE224_NOTE_2026-07-17.md`
-- `docs/work_history/repo/review_feedback/STATUS_GATED_TYPED_PAYLOAD_HANDOFF_CYCLE109_NOTE_2026-07-15.md`
-- `docs/work_history/repo/review_feedback/STOCHASTIC_RECORD_HISTORY_ACTUALITY_SEMANTICS_CYCLE27_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/STRICT_NN_RECORD_LAW_COMPILER_CYCLE43_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/SUBSTRATE_TOURNAMENT_DECISIVE_PROBES_NOTE_2026-07-13.md`
-- `docs/work_history/repo/review_feedback/TEMPORAL_PROTOCOL_EQUIVALENCE_ALTERNATING_FRAME_CYCLE39_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/TRANSLATION_CUBIC_LOCAL_SYNDROME_DECODER_CYCLE244_NOTE_2026-07-17.md`
-- `docs/work_history/repo/review_feedback/TWELVE_HOUR_MINIMUM_AXIOM_AND_COMPILER_HANDOFF_CYCLE139_NOTE_2026-07-15.md`
-- `docs/work_history/repo/review_feedback/UNIVERSAL_RULE_SPACE_MULTIWAY_LAW_STEELMAN_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/WEYL_PAIR_PHYSICAL_EQUIVALENCE_AND_COMBINED_INTERSECTION_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/ZERO_SOURCE_RELATIONAL_FIRST_HARNESS_CYCLE101_NOTE_2026-07-15.md`
-- `scripts/acphilambda_defect_identity_unit_rescale_obstruction_2026_07_01.py`
-- `scripts/acphilambda_occupancy_formation_append_non_supply_no_go_2026_07_04.py`
-- `scripts/acphilambda_r_eta_angle_native_frontier_no_go_2026_07_04.py`
-- `scripts/acphilambda_r_eta_occurrence_axiom_hygiene_no_go_2026_07_04.py`
-- `scripts/acphilambda_sharpening_import_decomposition_2026_07_16.py`
-- `scripts/adaptive_record_protocol_qca_full_abstraction_probe_2026_07_14.py`
-- `scripts/admissibility_symbol_definability_exact_law_reference_probe_2026_07_14.py`
-- `scripts/arrow_cpt_orientation_cp_source_no_go_2026_06_08.py`
-- `scripts/audit_companion_gauge_wilson_isotropy_boundary_record_axiom_invariance_2026_06_04.py`
-- `scripts/bootstrap_continuation_nonempty_free_orbit_propagation_closure_2026_07_04.py`
-- `scripts/born_form_composite_gleason_bridge_2026_07_04.py`
-- `scripts/car_compiler_record_causal_depth_bridge_cycle255_2026_07_17.py`
-- `scripts/causal_algebraic_history_substrate_conformance_2026_07_13.py`
-- `scripts/cl3_frame_free_ambient_chiral_grading_no_go_2026_06_02.py`
-- `scripts/cl3_g_newton_born_as_source_2026_05_10_gnewtonG2.py`
-- `scripts/cl3_higgs_mass_s4_born_extension_2026_05_10_higgsS4.py`
-- `scripts/cl3_koide_bae_probe_radian_from_dimensions_2026_05_09_probe30.py`
-- `scripts/codex_audit_runner.py`
-- `scripts/collapse_merger_toy_engine_2026_07_08.py`
-- `scripts/color_orientation_three_vs_threebar_succession_candidate_2026_07_06.py`
-- `scripts/color_singlet_records_g2_factorization_site_local_locking_2026_07_06.py`
-- `scripts/complete_candidate_lstar_assembly_cycle41_2026_07_14.py`
-- `scripts/complete_sampled_law_pair_axiom_underdetermination_2026_07_14.py`
-- `scripts/constitutional_lower_bound_clause_deletion_cycle31_2026_07_14.py`
-- `scripts/constructive_constitutional_delta_audit_cycle83_2026_07_14.py`
-- `scripts/cubic_cz_edge_rule_uniqueness_selection_cycle36_2026_07_14.py`
-- `scripts/cycle60_cycle67_mixed_composition_audit_cycle70_2026_07_14.py`
-- `scripts/cycle80_recurrence_audit_endpoint_tube_nucleation_cycle85_2026_07_14.py`
-- `scripts/dynamic_record_boundary_index_qca_steelman_probe_2026_07_14.py`
-- `scripts/exact_compiler_closure_ledger_cycle88_2026_07_14.py`
-- `scripts/exact_law_constitutional_placement_schema_probe_2026_07_14.py`
-- `scripts/exact_law_uniqueness_selection_primary_source_audit_2026_07_14.py`
-- `scripts/extensional_nearest_neighbor_rule_deep_probe_2026_07_13.py`
-- `scripts/finite_diamond_sampled_luders_invariant_record_probe_2026_07_14.py`
-- `scripts/foundation_atom_ledger_dependency_map_2026_07_13.py`
-- `scripts/four_axiom_toe_completeness_gate_2026_07_13.py`
-- `scripts/frontier_answer_condition_motion_closure_2026_07_02.py`
-- `scripts/frontier_arrow_from_record_formation_2026_06_05.py`
-- `scripts/frontier_beta6_resummation_ansatz_test_2026_05_30.py`
-- `scripts/frontier_branching_record_budget_inequality_2026_06_12.py`
-- `scripts/frontier_charged_lepton_radiative_tau_selector_firewall.py`
-- `scripts/frontier_chiral_growth.py`
-- `scripts/frontier_ckm_koide_cross_sector_z3_closure.py`
-- `scripts/frontier_companion_bank_epoch_liveness_2026_07_28.py`
-- `scripts/frontier_cross_edge_formation_gate_2026_07_12.py`
-- `scripts/frontier_cycle797_companion_gauge_work_renewal_discriminator_2026_07_30.py`
-- `scripts/frontier_cycle864_routec_typed_exchange_matrix_candidate_2026_08_01.py`
-- `scripts/frontier_cycle872_openreference_all_seam_spatial_packet_epoch_2026_08_03.py`
-- `scripts/frontier_cycle872_primary_source_audit_view_part4_2026_08_03.py`
-- `scripts/frontier_cycle874_copy_redundancy_content_2026_07_28.py`
-- `scripts/frontier_cycle874_redundancy_independent_check_2026_07_28.py`
-- `scripts/frontier_cycle877_sharded_content_2026_07_28.py`
-- `scripts/frontier_cycle877_sharding_independent_check_2026_07_28.py`
-- `scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py`
-- `scripts/frontier_dm_abcc_basin_enumeration_completeness.py`
-- `scripts/frontier_dm_neutrino_breaking_triplet_axiom_law_attempt.py`
-- `scripts/frontier_dm_neutrino_source_surface_bifundamental_invariance_obstruction_theorem.py`
-- `scripts/frontier_dm_neutrino_source_surface_observable_grammar_exhaustion_obstruction.py`
-- `scripts/frontier_dm_neutrino_source_surface_perturbative_uniqueness_theorem.py`
-- `scripts/frontier_dm_selector_relative_action_recovered_branch_separation_support_2026_04_21.py`
-- `scripts/frontier_dm_wilson_direct_descendant_canonical_fiber_schur_entropy_candidate_no_go_2026_04_19.py`
-- `scripts/frontier_dynamics_sort_records_accumulate_2026_07_03.py`
-- `scripts/frontier_exercise_spin_statistics_fs_admission_located_2026_06_06.py`
-- `scripts/frontier_experimental_prediction.py`
-- `scripts/frontier_formation_gate_relocation_2026_07_12.py`
-- `scripts/frontier_gauge_scalar_kz_external_lift_gate_status_2026_06_06.py`
-- `scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_full_packet_no_go_theorem_2026_04_20.py`
-- `scripts/frontier_grav_decoherence_derived.py`
-- `scripts/frontier_hierarchy_bbs_staggered_taste_blocking_bridge_kms_substrate_narrow.py`
-- `scripts/frontier_hierarchy_bbs_staggered_taste_blocking_bridge_scaffold_availability_bounded.py`
-- `scripts/frontier_instanton_4d_action_8pi2_over_g2_external_narrow.py`
-- `scripts/frontier_koide_a1_twisted_k_theory_probe.py`
-- `scripts/frontier_koide_c3_generator_rephasing_obstruction.py`
-- `scripts/frontier_koide_kodim_route_empty_independence_2026_06_08.py`
-- `scripts/frontier_koide_occupancy_locked_record_outcomes_2026_07_03.py`
-- `scripts/frontier_koide_positive_parent_axis_obstruction.py`
-- `scripts/frontier_koide_q23_k0_real_block_equivalence_2026_05_30.py`
-- `scripts/frontier_koide_qubit_lattice_dim_closure.py`
-- `scripts/frontier_koide_records_objectivity_conditional_2026_05_31.py`
-- `scripts/frontier_lepton_shared_higgs_universality_collapse.py`
-- `scripts/frontier_native_gauge_scope.py`
-- `scripts/frontier_neutrino_majorana_observable_principle_obstruction.py`
-- `scripts/frontier_occupancy_nonexclusivity_mixture_bound_2026_06_09.py`
-- `scripts/frontier_post_record_arrow_orientation_firewall_2026_06_06.py`
-- `scripts/frontier_post_record_supplied_orientation_bridge_interface_2026_06_06.py`
-- `scripts/frontier_quark_route2_color_ray_adjoint_line_selector_boundary_2026_06_21.py`
-- `scripts/frontier_quark_route2_density_square_primitive_gap_2026_06_21.py`
-- `scripts/frontier_quark_route2_independent_et_channel_selector_firewall_2026_06_21.py`
-- `scripts/frontier_quark_route2_nonlinear_e_center_tensor_observable_gate_2026_06_21.py`
-- `scripts/frontier_quark_route2_positive_source_functional_cone_no_go_2026_06_21.py`
-- `scripts/frontier_quark_route2_rconn_magnitude_sign_split_2026_06_21.py`
-- `scripts/frontier_quark_route2_rconn_signed_center_bridge_selector_firewall_2026_06_21.py`
-- `scripts/frontier_quark_route2_rconn_two_gate_source_bridge_factorization_2026_06_21.py`
-- `scripts/frontier_quark_route2_rconn_typed_bridge_derivation_bounded_2026_06_12.py`
-- `scripts/frontier_quark_route2_record_raw_q_selector_gate_2026_06_21.py`
-- `scripts/frontier_quark_route2_single_adjoint_line_current_bank_no_go_2026_06_21.py`
-- `scripts/frontier_quark_route2_source_domain_bridge_no_go.py`
-- `scripts/frontier_quark_route2_source_domain_typed_edge_cut_certificate_2026_06_21.py`
-- `scripts/frontier_quark_route2_source_readout_density_primitive_inventory_no_go_2026_06_21.py`
-- `scripts/frontier_quark_route2_typed_magnitude_bridge_no_go_2026_06_21.py`
-- `scripts/frontier_quark_up_amplitude_scalar_bypass_firewall_2026_06_21.py`
-- `scripts/frontier_record_audit_application_map_2026_06_06.py`
-- `scripts/frontier_record_finite_time_reset_semigroup_no_go_2026_06_05.py`
-- `scripts/frontier_record_formation_not_unconditionally_forced_by_minimal_axioms.py`
-- `scripts/frontier_record_history_count_audit_unlock_scan_2026_06_05.py`
-- `scripts/frontier_record_permanence_double_registration_2026_07_11.py`
-- `scripts/frontier_record_production_kernel_boundary_2026_06_06.py`
-- `scripts/frontier_record_unbounded_additivity_schema_2026_06_06.py`
-- `scripts/frontier_source_measure_log_selection_boundary.py`
-- `scripts/frontier_spatial_cubic_time_anisotropy_gate_2026_06_06.py`
-- `scripts/frontier_teleportation_native_record_apparatus.py`
-- `scripts/frontier_teleportation_noise_fault_controls.py`
-- `scripts/frontier_teleportation_resource_fidelity.py`
-- `scripts/frontier_theta_mass_side_composition_close_2026_07_03.py`
-- `scripts/frontier_time_axis_is_history_index_2026_07_03.py`
-- `scripts/frontier_universal_gr_positive_background_local_closure.py`
-- `scripts/frontier_yt_qubit_democratic_top_coefficient_candidate.py`
-- `scripts/full_z3_causal_front_sampled_instrument_law_probe_2026_07_14.py`
-- `scripts/gauge_link_binary_registration_capacity_step_kernel_pin_2026_07_02.py`
-- `scripts/gauging_selection_discriminator_open_gate_2026_06_08.py`
-- `scripts/graded_constraint_interface_consistency_2026_07_04.py`
-- `scripts/gravity_conformal_scale_split_from_records_runner.py`
-- `scripts/historic_intake_generate_2026_08_05.py`
-- `scripts/informative_fraction_covariant_rule_quantization_occupancy_residual_2026_07_02.py`
-- `scripts/invariant_first_seed_hard_core_cycle18_2026_07_14.py`
-- `scripts/lattice_no_barrier_distance_scope_probe.py`
-- `scripts/lawful_h0_reference_fork_cycle114_2026_07_15.py`
-- `scripts/local_to_global_cubic_process_glue_cycle33_2026_07_14.py`
-- `scripts/long_run_record_only_append_architecture_cycle32_2026_07_14.py`
-- `scripts/magnitude_reads_minimal_record_block_2026_06_06.py`
-- `scripts/matter_realization_arena_split_preservation_axis_frames_2026_07_06.py`
-- `scripts/measure_twice_constitutional_decision_gate_2026_07_13.py`
-- `scripts/measure_twice_final_minimum_axiom_cut_readiness_2026_07_14.py`
-- `scripts/minimum_axiom_update_exercise_synthesis_cut_gate_2026_07_14.py`
-- `scripts/mixed_cycle72_guide_repair_cycle77_2026_07_14.py`
-- `scripts/mixed_cycle76_caged_guide_audit_cycle79_2026_07_14.py`
-- `scripts/moving_logical_apparatus_append_front_cycle34_2026_07_14.py`
-- `scripts/per_plaquette_license_one_tick_reachability_derivation_2026_07_12.py`
-- `scripts/physical_autonomous_localized_refocused_matter_transition_tournament_cycle575_2026_07_22.py`
-- `scripts/physical_hypercharge_alpha_scale_freedom_cycle692_2026_07_25.py`
-- `scripts/physical_record_readout_carrier_three_way_split_cycle693_2026_07_25.py`
-- `scripts/post_cycle105_constitutional_minimality_smuggle_audit_cycle110_2026_07_15.py`
-- `scripts/post_cycle109_strict_compiler_constitutional_delta_cycle111_2026_07_15.py`
-- `scripts/post_cycle115_address_semantics_audit_cycle116_2026_07_15.py`
-- `scripts/post_cycle124_minimum_axiom_and_compiler_delta_cycle126_2026_07_15.py`
-- `scripts/post_cycle132_minimum_axiom_and_compiler_campaign_cycle133_2026_07_15.py`
-- `scripts/post_cycle94_operational_completeness_audit_cycle96_2026_07_15.py`
-- `scripts/primitive_qca_record_protocol_full_equivalence_steelman_probe_2026_07_14.py`
-- `scripts/protocol_admissibility_3d_realization_bridge_and_word_dispersiveness_2026_07_10.py`
-- `scripts/qualification_unfixed_choice_clarification_certification_2026_07_04.py`
-- `scripts/read_twice_packet_derive_first_unification_2026_07_13.py`
-- `scripts/realized_kinetic_branch_conditional_record_registration_2026_07_02.py`
-- `scripts/realized_kinetic_branch_selected_by_admissibility_variation_2026_07_02.py`
-- `scripts/record_faithful_cubic_neighbor_response_2026_07_11.py`
-- `scripts/record_formation_append_certification_2026_07_04.py`
-- `scripts/record_observable_quotient_and_rank_one_formation_outcome_operation_2026_07_11.py`
-- `scripts/record_saturation_availability_census_2026_07_08.py`
-- `scripts/record_tick_signature_neutral_2026_06_23.py`
-- `scripts/record_write_admissible_one_step_class_controlled_copy_2026_07_11.py`
-- `scripts/render_controlled_vocabulary.py`
-- `scripts/route_two_exact_completion_probe_2026_07_14.py`
-- `scripts/signed_gravity_retained_boundary_source_principle_nogo.py`
-- `scripts/sourcing_correlation_wake_quantification_2026_07_08.py`
-- `scripts/staggered_dirac_minimal_surface_kinetic_corner_nonforcing_2026_07_10.py`
-- `scripts/staggered_dirac_pkin_subtree_current_surface_restatement_check_2026_07_03.py`
-- `scripts/stochastic_record_history_actuality_semantics_cycle27_2026_07_14.py`
-- `scripts/strong_cp_parity_measure_orientation_gate_2026_06_08.py`
-- `scripts/su3_beta6_gap_reaudit_packet_verifier_2026_06_17.py`
-- `scripts/three_dimensional_anomalous_bulk_category_index_steelman_probe_2026_07_14.py`
-- `scripts/tick_admissibility_realization_bridge_clause_to_predicate_2026_07_10.py`
-- `scripts/tick_cell_selection_by_translation_and_variation_clauses_2026_07_09.py`
-- `scripts/wilson_staggered_deep_fiber_coarse_gauge_gibbsianness_2026_07_12.py`
-- `scripts/wolfram_multiway_record_sector_probe_2026_07_14.py`
+| Route | Disposition | Why it does not refute the bounded count |
+|---|---|---|
+| Marginal-named, neighbor-branched numeric dictionaries | `ATTEMPTED` | Exhaustive pinned Python-AST traversal returns zero; see C and R3 above. |
+| Uniform-self-input-named distribution functions | `ATTEMPTED` | The same traversal includes this alternate name family and returns zero. |
+| Array- or tuple-valued marginal distributions | `ATTEMPTED` | Located syntax would be outside the declared numeric-dictionary grammar; the note makes no claim about it. |
+| Indirect helper calls or dynamically constructed distributions | `ATTEMPTED` | Such encodings are outside the literal-return grammar and are explicitly left open. |
+| Empirical tables or cached comparison summaries | `ATTEMPTED` | They cannot alter the literal AST count; they remain possible evidence for a different measurement. |
 
-### MEANING_CHANGED (32)
+All five routes were scanned over the same pinned path set recorded in the
+primary receipt. The last three defeat a broad physics absence claim, which is
+why that claim is not made.
 
-- `docs/ADMISSIBILITY_RULE_COVARIANCE_EXTENSION_CLASSIFICATION_OPENNESS_ACHIRAL_ORIENTED_FRAME_MINIMAL_CHIRAL_CHANNEL_BOUNDED_THEOREM_NOTE_2026-07-03.md`
-- `docs/BOOTSTRAP_CONTINUATION_AVAILABILITY_NONEMPTY_FREE_ORBIT_REDUCTION_PROPAGATION_CLOSURE_BOUNDED_THEOREM_NOTE_2026-07-04.md`
-- `docs/BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md`
-- `docs/COLOR_ARENA_BONDED_PAIR_ADMISSIBILITY_CROSS_SITE_SURFACE_BOUNDED_THEOREM_NOTE_2026-07-06.md`
-- `docs/DYNAMICS_CONTENT_SORT_ORDERING_DERIVED_ACCUMULATION_IRREDUCIBLE_BOUNDED_NOTE_2026-07-03.md`
-- `docs/FROZEN_REGION_RECORD_SATURATION_LOCAL_FINALITY_BOUNDARY_INFLUENCE_BOUNDED_NOTE_2026-07-03.md`
-- `docs/GRADED_CONSTRAINT_INTERFACE_CONSISTENCY_BOUNDED_NOTE_2026-07-04.md`
-- `docs/INFORMATIVE_FRACTION_COVARIANT_RULE_QUANTIZATION_OCCUPANCY_RESIDUAL_THEOREM_NOTE_2026-07-02.md`
-- `docs/KINETIC_ISOTROPY_3D_FACTORIZED_PROTOCOL_SELECTION_ON_ANALYZED_CLASSES_BOUNDED_THEOREM_NOTE_2026-07-09.md`
-- `docs/MATTER_REALIZATION_ARENA_SPLIT_PRESERVATION_UNDER_AXIS_COUPLED_FRAMES_BOUNDED_THEOREM_NOTE_2026-07-06.md`
-- `docs/PROTOCOL_ADMISSIBILITY_3D_REALIZATION_BRIDGE_AND_WORD_DISPERSIVENESS_NARROW_THEOREM_NOTE_2026-07-10.md`
-- `docs/REALIZED_KINETIC_BRANCH_CONDITIONAL_RECORD_REGISTRATION_NARROW_THEOREM_NOTE_2026-07-02.md`
-- `docs/REALIZED_KINETIC_BRANCH_DISCRIMINATOR_DICHOTOMY_NARROW_THEOREM_NOTE_2026-07-02.md`
-- `docs/REALIZED_KINETIC_BRANCH_SELECTED_BY_ADMISSIBILITY_VARIATION_NARROW_THEOREM_NOTE_2026-07-02.md`
-- `docs/REALIZED_KINETIC_BRANCH_SELECTION_GAUGED_BACKGROUND_INVARIANCE_NARROW_THEOREM_NOTE_2026-07-02.md`
-- `docs/STAGGERED_DIRAC_MINIMAL_SURFACE_KINETIC_CORNER_NONFORCING_NO_GO_NOTE_2026-07-10.md`
-- `docs/THETA_DEFECT_CLOSURE_FROM_ADMISSIBILITY_TEST_BOUNDED_NOTE_2026-07-03.md`
-- `docs/TICK_ADMISSIBILITY_REALIZATION_BRIDGE_CLAUSE_TO_PREDICATE_NARROW_THEOREM_NOTE_2026-07-10.md`
-- `docs/TICK_CELL_SELECTION_BY_TRANSLATION_AND_VARIATION_CLAUSES_NARROW_THEOREM_NOTE_2026-07-09.md`
-- `docs/audit/AXIOM_MINIMALITY_POLICY.md`
-- `docs/audit/AXIOM_RESET_IMPACT_2026-06-29.md`
-- `docs/work_history/repo/review_feedback/ADMISSIBILITY_RECORD_CONTINUATION_AXIOM_DRAFT_NOTE_2026-07-13.md`
-- `docs/work_history/repo/review_feedback/DEEPER_PROBES_FINAL_AXIOM_CONTENT_GATE_NOTE_2026-07-13.md`
-- `docs/work_history/repo/review_feedback/FULL_Z3_CAUSAL_FRONT_SAMPLED_INSTRUMENT_LAW_NOTE_2026-07-14.md`
-- `docs/work_history/repo/review_feedback/TWELVE_HOUR_TOE_FRAMEWORK_CAMPAIGN_DIAGNOSIS_2026-07-16.md`
-- `scripts/exact_predictive_specification_tournament_2026_07_14.py`
-- `scripts/frontier_admissibility_record_continuation_refinement_2026_07_13.py`
-- `scripts/frontier_frozen_region_saturation_finality_2026_07_03.py`
-- `scripts/frontier_reading_note_derivations_2026_07_02.py`
-- `scripts/frontier_record_local_finite_atom_availability_2026_06_17.py`
-- `scripts/record_comparability_import_discipline_support_fork_arrow_2026_07_07.py`
-- `scripts/self_describing_law_foundation_selection_cycle49_2026_07_14.py`
+### N2 — Wall independence
 
-### NEWLY_WITNESSABLE (1)
+There is one boundary only: membership in the declared literal AST grammar.
+There is no multi-wall independence count to inflate.
 
-- `scripts/audit_companion_minimal_axioms_clean_base_exact.py`
+### N3 — Hidden-wall scan
+
+No appeal to “standard,” “natural,” “obvious,” background physics, or an
+uncited framework provision is load-bearing. The Git pin, token grammar,
+classification convention, and AST grammar are explicit inputs.
+
+### N4 — Residual matching
+
+No prior no-go is cited as proof. The comparison head is labeled out-of-pin context and
+its state/marginal result does not supply or close the pinned literal residual.
+
+### N5 — Resolution audit
+
+The primary cache lands the required five-line execution certificate. It
+records one per-site literal branch pair and states that per-element, per-mode,
+per-block, and lattice-wide comparisons were checked but not executed because
+the grammar does not resolve those levels. No broader-resolution negative is
+inferred.
+
+### N6 — Partial-closure paths
+
+The owner-approved distribution/support reframe is already applied to the
+classification. The source-pinned comparison machinery is a separate state/marginal
+comparison path and remains outside this pin. Neither route is described as a
+new-axiom requirement.
+
+### N7 — Steelman
+
+A hostile reviewer should expect a marginal witness to be encoded through
+arrays, helper calls, result tables, or a function without the selected name.
+That is a concrete route against any broad corpus or physics absence claim.
+The objection is accepted: the landed statement is demoted to a literal
+grammar count, for which those encodings are expressly untested and open.
+
+### N8 — Cross-run echo
+
+The earlier “sites do not talk” reading was overturned by resolving neighbor
+states before marginalization. The same retirement mechanism is honored here:
+state-resolved and marginal syntax counts are separate, and a zero marginal
+literal count does not erase the nonzero state-resolved count.
+
+**N1–N8 result:** PASS for the narrowed literal-count statement; FAIL for, and
+therefore no assertion of, a broader marginal-independence or impossibility
+claim.
+
+## Review record and hard landing condition
+
+The adversarial review found and repaired a multiline-selector omission,
+support-determination conflation, provenance/model false positives,
+new-only-witness error, marker-only marginal test, duplicated runtime-byte
+pins, and missing N5 resolution output. Mutation attacks must independently
+flip every named primary and checker certificate before landing.
+
+The final mutation harness returned exit 1 and exactly the targeted `FAIL`
+name for each of `A_CONSUMER_CENSUS`, `B_DELTA_CLASSIFICATION`,
+`C_VACUITY_PROBE`, `D_CONTROLS`,
+`R0_REFUTE_PINS_BLOCKLIST_AND_SNAPSHOT_IO`,
+`R1_REFUTE_CONSUMER_CENSUS`, `R2_REFUTE_DELTA_CLASSIFICATION`,
+`R3_REFUTE_VACUITY_PROBE`, `R4_REFUTE_AXIOM_PROVENANCE`, and `R5_CONTROLS`.
+The A mutation reproduced the historical seven-path line-selector omission;
+the R2 mutation invalidated the independent semantic ledger. The other eight
+mutations changed their named count, provenance, witness, or control input.
+
+The audit packet also requires this helper mapping:
+
+```json
+{"axiom_fidelity_reread_cycle971_bounded_theorem_note_2026-08-09":["scripts/frontier_cycle971_fidelity_independent_check_2026_08_09.py"]}
+```
+
+That explicit registry is currently blocked by the owner-governed
+dependency-policy epoch debt already recorded in `docs/repo/ACTIVE_REVIEW_QUEUE.md`.
+This measurement package does not refresh that epoch or author an audit
+verdict. Co-landing the mapping, rebuilding/seeding the ledger, and a full
+pipeline exit 0 are hard landing conditions.
+
+No axiom, primitive, landed corpus row, or audit verdict is edited, and no
+rewrite is proposed.

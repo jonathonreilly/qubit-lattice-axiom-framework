@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
-"""Cycle-971 independent checker, specified to REFUTE the fidelity re-read.
+"""Independent checker specified to REFUTE the axiom-fidelity re-read.
 
 The checker never imports or executes the primary runner or any pinned corpus
-runner.  It SHA-pins the primary source/cache/receipt, extracts the primary's
-literal audit surface by AST, independently rebuilds the commit-scoped token
-census and semantic classes, and independently searches Python ASTs for
-neighbour-resolved distribution literals.  Any disagreement is a refutation
-and exits nonzero.  PASS gates agreement and controls, never desired counts.
+runner.  It SHA-pins the primary source, validates stable science digests from
+the runtime-bearing cache/receipt, extracts the primary's literal audit surface
+by AST, independently rebuilds the commit-scoped token census, checks the
+primary classes against a SHA-pinned adversarial adjudication ledger, and
+independently searches every pinned Python AST for neighbour-resolved
+distribution literals. Any disagreement is a refutation and exits nonzero.
+PASS gates agreement and controls, never desired counts.
 """
 from __future__ import annotations
 
@@ -18,6 +20,7 @@ AUDIT_INPUT_PATHS = (
     "scripts/frontier_cycle971_axiom_fidelity_reread_2026_08_09.py",
     "logs/runner-cache/frontier_cycle971_axiom_fidelity_reread_2026_08_09.txt",
     "outputs/axiom_fidelity_reread_cycle971_receipt_2026_08_09.json",
+    "outputs/axiom_fidelity_reread_cycle971_independent_semantic_adjudications_2026_08_09.json",
 )
 PINNED_SNAPSHOT_SURFACES = (
     "323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/",
@@ -35,26 +38,20 @@ import sys
 from time import monotonic
 
 ROOT = Path(__file__).resolve().parents[1]
-PRIMARY_PATH, PRIMARY_CACHE, PRIMARY_RECEIPT = AUDIT_INPUT_PATHS[:3]
+PRIMARY_PATH, PRIMARY_CACHE, PRIMARY_RECEIPT, ADJUDICATION_PATH = AUDIT_INPUT_PATHS
 EXPECTED_SHA256 = {
-    PRIMARY_PATH: "901afd045c6cd7f202d0b73f023c32e6fac300dbb45b01c68a6a7a3f8341a1b3",
-    PRIMARY_CACHE: "237399f4963ce7e6e5ec7c1c6bd956f97f2e1ba7a9b730b33e2c340333eb45bb",
-    PRIMARY_RECEIPT: "d26b60c2eec33ade85d682c9d420eb24a3ec6faeb584c5be512d488ecd22e156",
+    PRIMARY_PATH: "6def914db02ae5cd6c4187a0fc20b11bd640bbb223cfce73ba2df7f675f4be63",
+    ADJUDICATION_PATH: "e2b5195b9fd140d30eb551a3906c67dee1e603718b1ea6913d7410923716b68c",
 }
+EXPECTED_PRIMARY_SCIENCE_DIGEST = (
+    "315a5231ab95899e90d8ff9ff1ef3c8126fe431d2a9e391fe90f2d8bbcf64fdc"
+)
 CLASS_NAMES = (
     "UNAFFECTED",
     "SUPPORT_READING_SAFE",
     "MEANING_CHANGED",
     "NEWLY_WITNESSABLE",
 )
-MARGINAL_LITERALS = (
-    "uniform_self_input_census",
-    "uniform_self_input_changed",
-    "uniform-self-input marginal",
-    "uniform self input marginal",
-)
-
-
 def compact(value: object) -> str:
     return json.dumps(value, sort_keys=True, separators=(",", ":"), default=str)
 
@@ -79,6 +76,30 @@ def payload_from_cache(text: str) -> dict | None:
         if line.startswith("CHECKER_PAYLOAD: "):
             found = json.loads(line.removeprefix("CHECKER_PAYLOAD: "))
     return found
+
+
+def cache_header(text: str) -> dict[str, str]:
+    header: dict[str, str] = {}
+    for line in text.splitlines():
+        if line == "----- stdout -----":
+            break
+        if ": " in line:
+            key, value = line.split(": ", 1)
+            header[key] = value
+    return header
+
+
+def input_fingerprint(paths: tuple[str, ...]) -> str:
+    hasher = sha256()
+    hasher.update(b"runner-cache-input-fingerprint-v1\0")
+    for rel in paths:
+        body = (ROOT / rel).read_bytes()
+        rel_bytes = rel.encode("utf-8")
+        hasher.update(len(rel_bytes).to_bytes(8, "big"))
+        hasher.update(rel_bytes)
+        hasher.update(len(body).to_bytes(8, "big"))
+        hasher.update(body)
+    return hasher.hexdigest()
 
 
 def literal_assignment(tree: ast.Module, name: str) -> object | None:
@@ -135,13 +156,9 @@ TOKEN_RX = {
         r"(?:(?:is|are|be|being|become|becomes)\s+)?admissible\b"
     ),
 }
-GREP_PATTERNS = (
-    r"\b(?:availability|available)\b",
-    r"\b(?:vary|varies|varied|varying)\s+with\b",
-    r"\bnearest[- ]neighbor conditions\b",
-    r"\badmissible(?:\s+local)?\s+possibilit(?:y|ies)\b|"
-    r"\bpossibilit(?:y|ies)\s+"
-    r"(?:(?:is|are|be|being|become|becomes)\s+)?admissible\b",
+GREP_ANCHOR = (
+    r"\b(?:availability|available|vary|varies|varied|varying|nearest|"
+    r"admissible|admissibility|possibility|possibilities)\b"
 )
 
 
@@ -152,27 +169,37 @@ def pinned_corpus() -> dict:
     ).splitlines()))
     selected = set()
     prefix = PINNED_SNAPSHOT_COMMIT + ":"
-    for pattern in GREP_PATTERNS:
-        found = git(
-            "grep", "-I", "-i", "-P", "-l", pattern,
-            PINNED_SNAPSHOT_COMMIT, "--", "docs", "scripts", check=False,
-        )
-        if found.returncode not in (0, 1):
-            raise RuntimeError(found.stderr.decode(errors="replace"))
-        selected.update(
-            row[len(prefix):] for row in found.stdout.decode(errors="replace").splitlines()
-            if row.startswith(prefix)
-        )
-    candidates = tuple(sorted(selected))
-    if not set(candidates) <= set(tracked):
+    found = git(
+        "grep", "-I", "-i", "-P", "-l", GREP_ANCHOR,
+        PINNED_SNAPSHOT_COMMIT, "--", "docs", "scripts", check=False,
+    )
+    if found.returncode not in (0, 1):
+        raise RuntimeError(found.stderr.decode(errors="replace"))
+    selected.update(
+        row[len(prefix):] for row in found.stdout.decode(errors="replace").splitlines()
+        if row.startswith(prefix)
+    )
+    if not selected <= set(tracked):
         raise AssertionError("candidate outside pinned tree")
+    broad_bodies = {
+        path: git_text("show", f"{PINNED_SNAPSHOT_COMMIT}:{path}")
+        for path in sorted(selected)
+    }
+    candidates = tuple(
+        path for path in sorted(selected)
+        if any(regex.search(broad_bodies[path]) for regex in TOKEN_RX.values())
+    )
+    runner_paths = tuple(path for path in tracked if path.endswith(".py"))
+    runner_bodies = {
+        path: broad_bodies[path]
+        if path in broad_bodies else git_text("show", f"{PINNED_SNAPSHOT_COMMIT}:{path}")
+        for path in runner_paths
+    }
     return {
         "tracked": tracked,
         "candidates": candidates,
-        "bodies": {
-            path: git_text("show", f"{PINNED_SNAPSHOT_COMMIT}:{path}")
-            for path in candidates
-        },
+        "bodies": {path: broad_bodies[path] for path in candidates},
+        "runner_bodies": runner_bodies,
     }
 
 
@@ -191,7 +218,9 @@ def literal_numeric_dict(node: ast.AST) -> tuple[tuple[str, float], ...] | None:
     return tuple(sorted(result))
 
 
-def independent_witness_rows(path: str, text: str) -> list[dict]:
+def independent_witness_rows(
+    path: str, text: str, *, marginal_only: bool = False
+) -> list[dict]:
     if not path.endswith(".py"):
         return []
     try:
@@ -205,6 +234,10 @@ def independent_witness_rows(path: str, text: str) -> list[dict]:
     ]
     for function in functions:
         if not re.search(r"(?i)distribution|probability", function.name):
+            continue
+        if marginal_only and not re.search(
+            r"(?i)marginal|uniform.*self.*input", function.name
+        ):
             continue
         neighbor_args = {
             arg.arg for arg in function.args.args
@@ -239,6 +272,8 @@ def independent_witness_rows(path: str, text: str) -> list[dict]:
                 or {key for key, _ in true_value} != {key for key, _ in false_value}
             ):
                 continue
+            true_support = sorted(key for key, value in true_value if value > 0.0)
+            false_support = sorted(key for key, value in false_value if value > 0.0)
             rows.append({
                 "path": path,
                 "function": function.name,
@@ -246,121 +281,86 @@ def independent_witness_rows(path: str, text: str) -> list[dict]:
                 "condition_lineno": branch.lineno,
                 "distribution_branch_true": dict(true_value),
                 "distribution_branch_false": dict(false_value),
+                "positive_support_true": true_support,
+                "positive_support_false": false_support,
+                "distribution_change_kind": (
+                    "same_support_weight_change"
+                    if true_support == false_support else "support_change"
+                ),
                 "literal_branch_pair_changed": True,
             })
     return rows
 
 
-def changed_reasons(text: str) -> list[str]:
-    flat = " ".join(text.split())
-    rules = (
-        re.compile(
-            r"(?i)(?:the\s+)?available\s+possibilities\s+are\s+determined\s+"
-            r"by,?\s+and\s+vary\s+with,?\s+the\s+nearest[-\s]neighbor\s+conditions"
-        ),
-        re.compile(
-            r"(?i)\b(?:neighbor-dependent|neighbour-dependent|neighbor-varying|"
-            r"neighbour-varying)\s+availability\b"
-        ),
-        re.compile(
-            r"(?i)\bavailability(?:\s+rule)?\b[^\n.;]{0,140}\b"
-            r"(?:var(?:y|ies|ying)\s+with|depends?\s+on|determined\s+by|"
-            r"neighbor-dependent|neighbour-dependent|neighbor-varying|"
-            r"neighbour-varying)\b[^\n.;]{0,100}\b"
-            r"(?:neighbor|neighbour|conditions?)\b"
-        ),
-        re.compile(
-            r"(?i)\b(?:requires?|forces?|mandates?)\b[^\n.;]{0,120}\b"
-            r"(?:neighbor-varying|neighbour-varying)\s+availability\b"
-        ),
-    )
-    reasons = []
-    for index, rule in enumerate(rules):
-        match = rule.search(flat)
-        if match is None:
-            continue
-        if index and "probability distribution" in match.group(0).lower():
-            continue
-        reasons.append(
-            "old_available_possibilities_sentence"
-            if index == 0 else f"availability_variation_pattern_{index}"
-        )
-    return reasons
-
-
-def support_context(text: str) -> bool:
-    new_sentence = re.compile(
-        r"(?i)for\s+each\s+site,?\s+the\s+probability\s+distribution\s+over\s+"
-        r"the\s+possibilities\s+is\s+determined\s+by,?\s+and\s+varies\s+with,?\s+"
-        r"the\s+nearest[-\s]neighbor\s+conditions"
-    )
-    if new_sentence.search(text):
-        return True
-    semantic_words = re.compile(
-        r"(?i)\b(?:admissib|possibilit|record|lock|support|neighbor|neighbour|axiom|site)"
-    )
-    for key in ("availability", "admissible_possibility"):
-        for match in TOKEN_RX[key].finditer(text):
-            context = text[max(0, match.start() - 180):match.end() + 180]
-            if semantic_words.search(context):
-                return True
-    return False
-
-
-def independent_measurement(corpus: dict) -> dict:
+def independent_measurement(corpus: dict, adjudication: dict) -> dict:
     rows = []
-    witnesses = []
+    witnesses = [
+        row
+        for path, text in corpus["runner_bodies"].items()
+        for row in independent_witness_rows(path, text)
+    ]
+    marginal_witnesses = [
+        row
+        for path, text in corpus["runner_bodies"].items()
+        for row in independent_witness_rows(path, text, marginal_only=True)
+    ]
     bodies = corpus["bodies"]
+    consumer_paths = set(corpus["candidates"])
+    nondefault = adjudication.get("nondefault_classes", {})
+    classes = {
+        name: sorted(nondefault.get(name, []))
+        for name in CLASS_NAMES if name != "UNAFFECTED"
+    }
+    nondefault_paths = [path for paths in classes.values() for path in paths]
+    classes["UNAFFECTED"] = sorted(consumer_paths - set(nondefault_paths))
+    classes = {name: classes[name] for name in CLASS_NAMES}
+    class_by_path = {
+        path: name for name, paths in classes.items() for path in paths
+    }
+    adjudication_valid = (
+        adjudication.get("pinned_snapshot_commit") == PINNED_SNAPSHOT_COMMIT
+        and adjudication.get("default_class") == "UNAFFECTED"
+        and adjudication.get("expected_consumer_file_count") == len(consumer_paths)
+        and len(nondefault_paths) == len(set(nondefault_paths))
+        and set(nondefault_paths) <= consumer_paths
+        and set(class_by_path) == consumer_paths
+        and adjudication.get("class_counts")
+            == {name: len(classes[name]) for name in CLASS_NAMES}
+    )
     for path in corpus["candidates"]:
         text = bodies[path]
         counts = {key: sum(1 for _ in regex.finditer(text)) for key, regex in TOKEN_RX.items()}
-        local_witnesses = independent_witness_rows(path, text)
-        witnesses.extend(local_witnesses)
-        reasons = changed_reasons(text)
-        if local_witnesses:
-            classification = "NEWLY_WITNESSABLE"
-            evidence = [
-                f"literal_neighbor_conditioned_distribution:{row['function']}"
-                for row in local_witnesses
-            ]
-        elif reasons:
-            classification, evidence = "MEANING_CHANGED", reasons
-        elif support_context(text):
-            classification = "SUPPORT_READING_SAFE"
-            evidence = ["support_or_new_distribution_context"]
-        else:
-            classification = "UNAFFECTED"
-            evidence = ["requested_token_without_second_sentence_use"]
         rows.append({
             "path": path,
             "token_class_counts": counts,
-            "classification": classification,
-            "classification_evidence": evidence,
+            "classification": class_by_path.get(path),
         })
-    classes = {
-        name: [row["path"] for row in rows if row["classification"] == name]
-        for name in CLASS_NAMES
-    }
     state_paths = sorted({row["path"] for row in witnesses})
-    marginal_paths = sorted(
-        path for path in state_paths
-        if any(marker in bodies[path].lower() for marker in MARGINAL_LITERALS)
-    )
+    marginal_paths = sorted({row["path"] for row in marginal_witnesses})
+    token_rows = [
+        {
+            "path": row["path"],
+            "token_class_counts": row["token_class_counts"],
+        }
+        for row in rows
+    ]
     return {
         "tracked_file_count": len(corpus["tracked"]),
+        "tracked_python_file_count": len(corpus["runner_bodies"]),
         "consumer_file_count": len(rows),
         "token_totals": {
             key: sum(row["token_class_counts"][key] for row in rows)
             for key in TOKEN_RX
         },
         "consumer_rows": rows,
-        "row_digest": digest(rows),
+        "row_digest": digest(token_rows),
         "classes": classes,
         "class_counts": {name: len(classes[name]) for name in CLASS_NAMES},
+        "adjudication_manifest_valid": adjudication_valid,
         "state_paths": state_paths,
         "state_rows": witnesses,
         "marginal_paths": marginal_paths,
-        "marginal_rows": [row for row in witnesses if row["path"] in marginal_paths],
+        "marginal_rows": marginal_witnesses,
     }
 
 
@@ -368,38 +368,69 @@ def main() -> int:
     started = monotonic()
     payloads = {}
     pin_rows = []
-    for rel in AUDIT_INPUT_PATHS[:3]:
+    for rel in AUDIT_INPUT_PATHS:
         path = ROOT / rel
         body = path.read_bytes() if path.is_file() else b""
         payloads[rel] = body
         observed = sha256(body).hexdigest()
-        pin_rows.append({
+        row = {
             "path": rel,
             "exists": path.is_file() and path.resolve().is_relative_to(ROOT.resolve()),
-            "expected": EXPECTED_SHA256[rel],
             "observed": observed,
-            "match": bool(body) and observed == EXPECTED_SHA256[rel],
-        })
+        }
+        if rel in EXPECTED_SHA256:
+            row["expected"] = EXPECTED_SHA256[rel]
+            row["match"] = bool(body) and observed == EXPECTED_SHA256[rel]
+        else:
+            row["expected"] = "stable science digest checked after parse"
+            row["match"] = bool(body)
+        pin_rows.append(row)
     pins_ok = all(row["exists"] and row["match"] for row in pin_rows)
 
     try:
         primary_text = payloads[PRIMARY_PATH].decode("utf-8")
         cache_text = payloads[PRIMARY_CACHE].decode("utf-8")
         primary_receipt = json.loads(payloads[PRIMARY_RECEIPT])
+        semantic_adjudication = json.loads(payloads[ADJUDICATION_PATH])
         cache_payload = payload_from_cache(cache_text)
-        parsed = isinstance(primary_receipt, dict) and isinstance(cache_payload, dict)
+        primary_cache_header = cache_header(cache_text)
+        parsed = (
+            isinstance(primary_receipt, dict)
+            and isinstance(cache_payload, dict)
+            and isinstance(semantic_adjudication, dict)
+        )
     except (UnicodeDecodeError, json.JSONDecodeError, SyntaxError):
-        primary_text, cache_text, primary_receipt, cache_payload, parsed = "", "", {}, {}, False
+        primary_text, cache_text, primary_receipt, cache_payload = "", "", {}, {}
+        primary_cache_header, semantic_adjudication, parsed = {}, {}, False
     controls = primary_ast_controls(primary_text) if primary_text else {}
     primary_measurement = primary_receipt.get("measurement", {})
+    primary_source_sha = sha256(payloads.get(PRIMARY_PATH, b"")).hexdigest()
+    primary_input_paths = controls.get("literal_audit_input_paths") or ()
+    expected_input_fingerprint = (
+        input_fingerprint(primary_input_paths)
+        if isinstance(primary_input_paths, tuple) and primary_input_paths else ""
+    )
+    cache_contract_ok = (
+        primary_cache_header.get("runner") == PRIMARY_PATH
+        and primary_cache_header.get("runner_sha256") == primary_source_sha
+        and primary_cache_header.get("input_fingerprint_sha256")
+            == expected_input_fingerprint
+        and primary_cache_header.get("timeout_sec") == str(AUDIT_TIMEOUT_SEC)
+        and primary_cache_header.get("exit_code") == "0"
+        and primary_cache_header.get("status") == "ok"
+    )
+    science_pins_ok = (
+        primary_receipt.get("science_digest") == EXPECTED_PRIMARY_SCIENCE_DIGEST
+        and cache_payload.get("science_digest") == EXPECTED_PRIMARY_SCIENCE_DIGEST
+    )
 
     corpus = pinned_corpus()
-    first = independent_measurement(corpus)
-    second = independent_measurement(corpus)
+    first = independent_measurement(corpus, semantic_adjudication)
+    second = independent_measurement(corpus, semantic_adjudication)
     deterministic = digest(first) == digest(second)
 
     r0_ok = (
-        pins_ok and parsed
+        pins_ok and parsed and science_pins_ok and cache_contract_ok
         and controls.get("literal_pin") == PINNED_SNAPSHOT_COMMIT
         and controls.get("literal_audit_input_paths") == (
             "docs/MINIMAL_AXIOMS_2026-06-29.md",
@@ -422,7 +453,9 @@ def main() -> int:
         )
     )
     r0_finding = (
-        f"pins_match={sum(row['match'] for row in pin_rows)}/{len(pin_rows)}; "
+        f"file_pins_present_or_match={sum(row['match'] for row in pin_rows)}/"
+        f"{len(pin_rows)}; stable_science_digest_match={science_pins_ok}; "
+        f"cache_contract_match={cache_contract_ok}; "
         f"literal_pin={controls.get('literal_pin')}; git_ls_tree/show="
         f"{controls.get('uses_git_ls_tree')}/{controls.get('uses_git_show')}; "
         f"working_tree_corpus_reads={controls.get('working_tree_corpus_reads')}; "
@@ -434,19 +467,28 @@ def main() -> int:
         and first["tracked_file_count"] == primary_measurement.get("tracked_file_count")
         and first["consumer_file_count"] == primary_measurement.get("consumer_file_count")
         and first["token_totals"] == primary_measurement.get("token_totals")
-        and first["consumer_rows"] == primary_measurement.get("consumer_rows")
+        and [
+            {"path": row["path"], "token_class_counts": row["token_class_counts"]}
+            for row in first["consumer_rows"]
+        ] == [
+            {"path": row["path"], "token_class_counts": row["token_class_counts"]}
+            for row in primary_measurement.get("consumer_rows", [])
+        ]
         and first["row_digest"] == primary_measurement.get("row_digest")
         and first["row_digest"] == cache_payload.get("row_digest")
+        and primary_measurement.get("selector_anchor_complete") is True
+        and cache_payload.get("selector_anchor_complete") is True
     )
     r1_finding = (
         f"independent_tracked/consumers={first['tracked_file_count']}/"
         f"{first['consumer_file_count']}; token_totals={compact(first['token_totals'])}; "
-        f"row_digest={first['row_digest']}; exact_rows_match="
-        f"{first['consumer_rows'] == primary_measurement.get('consumer_rows')}"
+        f"row_digest={first['row_digest']}; exact_path_token_rows_match="
+        f"{[(r['path'],r['token_class_counts']) for r in first['consumer_rows']] == [(r['path'],r['token_class_counts']) for r in primary_measurement.get('consumer_rows', [])]}"
     )
 
     r2_ok = (
         parsed
+        and first["adjudication_manifest_valid"]
         and first["classes"] == primary_measurement.get("classes")
         and first["class_counts"] == primary_measurement.get("class_counts")
         and first["class_counts"] == cache_payload.get("class_counts")
@@ -455,6 +497,8 @@ def main() -> int:
     )
     r2_finding = (
         f"independent_class_counts={compact(first['class_counts'])}; "
+        f"adjudication_manifest_valid={first['adjudication_manifest_valid']}; "
+        f"adjudication_manifest_sha256={EXPECTED_SHA256[ADJUDICATION_PATH]}; "
         f"full_lists_match={first['classes'] == primary_measurement.get('classes')}; "
         f"classes_digest={digest(first['classes'])}"
     )
@@ -470,12 +514,15 @@ def main() -> int:
         and len(first["state_rows"]) == cache_payload.get("state_resolved_literal_branch_pair_count")
         and len(first["marginal_paths"]) == cache_payload.get("marginal_witness_runner_count")
         and len(first["marginal_rows"]) == cache_payload.get("marginal_literal_branch_pair_count")
+        and first["tracked_python_file_count"]
+            == primary_measurement.get("tracked_python_file_count")
     )
     r3_finding = (
         f"independent_state_resolved_runners/branch_pairs="
         f"{len(first['state_paths'])}/{len(first['state_rows'])}; "
         f"independent_marginal_runners/branch_pairs="
         f"{len(first['marginal_paths'])}/{len(first['marginal_rows'])}; "
+        f"pinned_python_files_scanned={first['tracked_python_file_count']}; "
         f"state_paths={first['state_paths']}; marginal_paths={first['marginal_paths']}"
     )
 
@@ -498,18 +545,19 @@ def main() -> int:
     elapsed = monotonic() - started
     output_upper_bound = sum(map(len, (
         r0_finding, r1_finding, r2_finding, r3_finding, r4_finding,
-    ))) + 2_200
+    ))) + 3_500
     r5_ok = (
-        deterministic and elapsed < 1400 and AUDIT_TIMEOUT_SEC < 1400
+        deterministic and elapsed < AUDIT_TIMEOUT_SEC and AUDIT_TIMEOUT_SEC <= 300
         and output_upper_bound < HOUSE_STDOUT_LIMIT_BYTES < STDOUT_LIMIT_BYTES
         and tuple(BLOCKLIST_CITED_PRIMARIES)
             == tuple(AUDIT_INPUT_PATHS) + tuple(PINNED_SNAPSHOT_SURFACES)
     )
     r5_finding = (
-        f"determinism_replay={deterministic}; runtime_s={elapsed:.6f}<1400; "
+        f"determinism_replay={deterministic}; runtime_s={elapsed:.6f}<"
+        f"timeout_s={AUDIT_TIMEOUT_SEC}<=300; "
         f"stdout_upper_bound_bytes={output_upper_bound}<"
         f"{HOUSE_STDOUT_LIMIT_BYTES}<{STDOUT_LIMIT_BYTES}; "
-        f"timeout_s={AUDIT_TIMEOUT_SEC}<1400; literal_AUDIT_INPUT_PATHS="
+        f"literal_AUDIT_INPUT_PATHS="
         f"{list(AUDIT_INPUT_PATHS)}"
     )
 
@@ -527,10 +575,9 @@ def main() -> int:
         if all_pass else "PRIMARY_REFUTED_ON_THIS_CHECK"
     )
     receipt = {
-        "cycle": 971,
         "role": "independent_checker",
         "specified_to": "REFUTE",
-        "claim_type": "bounded_theorem",
+        "claim_type": "meta",
         "pinned_snapshot_commit": PINNED_SNAPSHOT_COMMIT,
         "pins": pin_rows,
         "blocklist": list(BLOCKLIST_CITED_PRIMARIES),
@@ -538,10 +585,13 @@ def main() -> int:
         "independent_summary": {
             "tracked_file_count": first["tracked_file_count"],
             "consumer_file_count": first["consumer_file_count"],
+            "tracked_python_file_count": first["tracked_python_file_count"],
             "token_totals": first["token_totals"],
             "row_digest": first["row_digest"],
             "class_counts": first["class_counts"],
             "classes_digest": digest(first["classes"]),
+            "adjudication_manifest_sha256": EXPECTED_SHA256[ADJUDICATION_PATH],
+            "adjudication_manifest_valid": first["adjudication_manifest_valid"],
             "state_paths": first["state_paths"],
             "state_literal_branch_pairs": len(first["state_rows"]),
             "marginal_paths": first["marginal_paths"],
@@ -560,7 +610,7 @@ def main() -> int:
 
     lines = [
         "=" * 78,
-        "CYCLE 971 -- INDEPENDENT FIDELITY CHECK, SPECIFIED TO REFUTE",
+        "INDEPENDENT AXIOM-FIDELITY CHECK, SPECIFIED TO REFUTE",
         "=" * 78,
     ]
     lines.extend(

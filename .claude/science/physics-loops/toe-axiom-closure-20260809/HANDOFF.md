@@ -480,3 +480,53 @@ stacked PR #6079 on the exact #6078 head. Hard landing order is #6063, #6065,
 #6067, #6070, #6071, #6074, #6075, #6076, #6077, #6078, then #6079. The
 canonical memo and fixed TOE percentages remain unchanged, and no
 `review-loop` is invoked.
+
+## Block 12 science handoff
+
+Block 12 constructs the first spacetime weak-field bridge in this stack. The
+endpoint-shared cut is extended to a local four-coframe worldvolume. Static
+histories reduce exactly to the Block 11 action times tick length, and the
+flat face derivative adds an equal tick/lapse response.
+
+On the actual cubic-Coxeter Regge edge carrier, a six-tetrahedron Kuhn
+hyperface cancels every diagonal-edge volume derivative and reproduces the
+tangent metric source. A centered four-volume improvement preserves the full
+flat law and fixes `p/tau=4` uniquely by homogeneous spatial stationarity.
+The resulting one-cell tube has exact flat tick-only source. This is a derived
+affine balance within the supplied action family, not a fitted mass model.
+
+After the explicitly named metric-transverse projection, the actual Regge
+response has `|k|^2 h_tau_tau -> 2tau` in four sampled spatial directions and
+the open-boundary inverse transform has `1/r` shape. The unprojected localized
+source remains non-exact: its generic gauge remainder is `O(k^3)`, its
+extra-null overlap is `O(k^2)`, and its finite-periodic zero mode is outside
+the bare Hessian range. Wrapping planes are exactly null-compatible.
+
+The primary runner is `PASS=29 FAIL=0`; an independent exact/symbolic
+recomputation passes eight load-bearing families, and all 29 process-local
+mutations fail at named checks. The citation graph is 5,458 nodes / 15,548
+edges; the note has out-degree four and the harness supplies one further edge.
+Vocabulary, strict audit lint, graph/link/class-F invariants, Python,
+whitespace, fresh source-pinned cache, and staged claim typing pass. The live
+PR sweep finds no collision: the cell-cutting PRs concern finite incidence and
+rank structure, while #6072/#6066 are semantic maps and #6069 is a finite
+neighbor-word law. `origin/main` remains
+`323d7fc32d77598f74ea6cd4d30c38dda0fe5070`.
+
+The isolated full pipeline passes premise purity, model-family normalization,
+graph construction, manifest writing, load-bearing computation, ledger
+seeding/fixed point, sanitization, classifier capture, and effective-status
+computation. It then reproduces PR #6061's known dependency-policy epoch
+manifest mismatch at audit restoration. The disposable rehearsal contains
+1,066 tracked generated changes and 824 new shards and is removed rather than
+copied back. With the Block 12 rehearsal commit visible, changed-evidence
+readiness checks all 12 stacked claims, including Block 12's actual Regge
+helper runner, with zero failures and zero control failures.
+
+The no-go packet is source-complete but bounded only to the fixed
+source/carrier/periodic ensemble. Open boundaries, global-mode constraints,
+counterstress, alternative local improvements/triangulations, dynamic
+worldvolumes, and lifted extra branches remain live. The candidate
+history/action amendment is sufficient only by premise and is not adopted,
+necessary, minimal, or edited into the axioms. The fixed TOE percentages do
+not move, and no `review-loop` is invoked.

@@ -144,3 +144,29 @@ coupling, and regime. Finite normalization does not supply projective
 consistency or realized dynamics. The candidate amendment is sufficient only
 by premise; it is not adopted or proved necessary. The canonical memo and all
 fixed TOE percentages remain unchanged.
+
+Block 12 crosses from the spatial source family into an explicit supplied
+tick history. The four-coframe cut worldvolume reduces exactly to Block 11 on
+static histories and adds a derived tick/lapse face response. A complete Kuhn
+hyperface reproduces that response on the repository's actual Regge edge
+carrier.
+
+The centered four-volume improvement preserves every flat configuration
+weight. Homogeneous stationarity fixes `p/tau=4` and leaves a pure tick source.
+After a named metric-transverse projection, the actual Regge response has a
+four-direction `1/k^2` lapse pole and therefore open-boundary `1/r` shape.
+This advances the gravity/source trace from a formal coframe stress to one
+explicit near-monopole field response.
+
+The trace does not close. The localized unprojected source retains `O(k^3)`
+gauge and `O(k^2)` extra-null residuals, and its periodic zero mode is outside
+the bare Hessian range. Physical selection of the history/action family,
+pressure mechanism, mass, action orientation/unit, Regge carrier, geometry
+dynamics, coupling, infrared ensemble, nonlinear regime, and realized member
+is absent. Exact wrapping planes and multiple completion routes prevent a
+universal no-go.
+
+The candidate geometry-indexed history/action amendment now names those
+missing interfaces but supplies them only by premise. It is not adopted,
+necessary, minimal, or edited into the canonical memo. The fixed TOE
+percentages remain unchanged.

@@ -176,3 +176,22 @@ the exact #6078 head `05db5edbe17a8a2c78def29bcb96d1872b57c96c`.
 Hard landing order is #6063, #6065, #6067, #6070, #6071, #6074, #6075,
 #6076, #6077, #6078, then #6079. The canonical axiom memo is untouched, the
 fixed TOE percentages do not move, and no `review-loop` is used.
+
+Block 12 is prepared on branch
+`physics-loop/toe-axiom-closure-block12-20260810`, based on the exact Block 11
+delivery head `60ff548ab2ec9963d4e0e607e2e0428854f0e3cf`. The four-coframe
+worldvolume, Kuhn-hyperface Regge source, centered affine bag balance,
+metric-transverse lapse pole and `1/r` boundary, exact wrapping-plane control,
+named localized residuals, N1--N8 packet, and candidate history/action
+amendment are complete. The primary runner is `PASS=29 FAIL=0`; an independent
+eight-family recomputation agrees, and all 29 mutation probes fail closed.
+Graph registration is 5,458 nodes / 15,548 edges with note out-degree four.
+Direct vocabulary, strict lint, graph/link/class-F, Python, whitespace, cache,
+and staged typing gates pass. The isolated full pipeline passes every stage
+through effective-status computation and then reproduces PR #6061's known
+dependency-policy epoch mismatch; its 1,066 tracked generated changes and 824
+new shards remain disposable. Seeded changed evidence marks all 12 stacked
+claims forensic-ready with zero failures or control failures. The canonical
+axiom memo remains untouched, the fixed TOE percentages do not move, and no
+`review-loop` is used. Record the science commit, PR number, and final hard
+landing order after delivery.

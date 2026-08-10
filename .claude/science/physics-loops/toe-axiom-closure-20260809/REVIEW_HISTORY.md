@@ -659,3 +659,45 @@ failure already owned by PR #6061. No `review-loop` was invoked.
   `9c3367724d`, pushed the dedicated branch, and opened mergeable stacked PR
   #6079 on the exact #6078 head. Hard landing order is #6063, #6065, #6067,
   #6070, #6071, #6074, #6075, #6076, #6077, #6078, then #6079.
+
+## Block 12 direct-review record
+
+- The four-coframe action is a genuine temporal extrusion: its static
+  restriction is exactly `N_tau lambda_tau S_cut`, and its spatial-face
+  derivative contains a new tick response rather than a relabeled 3D tensor.
+- Fraction-exact Kuhn-cover differentiation cancels every diagonal-edge
+  derivative and reproduces one-half tangent metric source on the actual
+  Regge carrier. The calculation uses the repository's line-averaged carrier
+  map rather than a continuum target inserted by hand.
+- The centered volume improvement vanishes for every flat configuration.
+  Homogeneous spatial stationarity uniquely fixes `p/tau=4`, yielding exact
+  tick-only source; the `p/tau=3` control retains spatial stress.
+- Four-direction response tests give `|k|^2 h_tau_tau -> 2tau` only after the
+  named metric-transverse projection. The regulated inverse transform gives
+  `1/(4 pi r)` shape, while sign, coupling, and physical boundary ensemble
+  remain open.
+- The exact negative boundary is preserved: generic unprojected gauge and
+  extra-null residuals scale as `k^3` and `k^2`, and the finite-periodic zero
+  mode is incompatible. Wrapping planes are exactly compatible; N1--N8 keeps
+  six completion families live and rejects universal wording.
+- The primary runner is `PASS=29 FAIL=0`. Independent exact/symbolic checks
+  pass eight load-bearing families, and 29 process-local mutations each
+  produce their intended named failure.
+- A fresh direct PR sweep finds no collision in the cell-cutting, semantic-map,
+  or finite neighbor-word work. `origin/main` remains
+  `323d7fc32d77598f74ea6cd4d30c38dda0fe5070`; PR #6061 still owns the known
+  dependency-policy epoch repair.
+- The graph is 5,458 nodes / 15,548 edges, with note out-degree four and one
+  harness edge. Vocabulary, strict audit lint, graph/link/class-F invariants,
+  Python, whitespace, source-pinned cache, and staged claim typing pass.
+- The isolated full pipeline passes premise purity, model-family
+  normalization, graph/manifest generation, load-bearing computation, ledger
+  seeding/fixed point, sanitization, classifier capture, and effective-status
+  computation. Restoration then reproduces PR #6061's known dependency-policy
+  epoch manifest mismatch. Its 1,066 tracked generated changes and 824 new
+  shards are confined to the disposable worktree.
+- After committing the rehearsal delta, seeded changed-evidence readiness
+  checks Block 12 and all 12 stacked claims, including the actual Regge helper
+  runner, with zero failures and zero control failures.
+- The canonical memo is byte-identical, no percentage moves, and no
+  `review-loop` is invoked. Delivery commit/PR details are added after push.

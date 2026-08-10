@@ -257,3 +257,27 @@ corpus maps; any coframe phrases occur only inside quoted corpus excerpts.
 PR #6069 is a finite basis-state neighbor-word/XOR covariance law and leaves
 continuous Admissibility and geometry open. No open PR collides with Block 11.
 PR #6061 still owns the dependency-policy epoch repair.
+
+## Block 12 route comparison
+
+| Route | Exact object | Outcome | Decision |
+|---|---|---|---|
+| four-coframe worldvolume | `tau sum m_z,mu |cof(E_z)e_mu|` | exact static reduction and new tick/lapse face source | retain as positive spacetime existence bridge; physical history selection open |
+| actual Regge hyperface source | complete Kuhn tetrahedron cover plus line-averaged edge-to-metric map | diagonal derivatives cancel; tangent metric source matches the coframe result | retain as exact carrier realization, not a carrier selector |
+| centered affine bag | six timelike faces plus background-subtracted volume improvement | flat law preserved; stationarity fixes `p/tau=4`; source becomes tick-only | retain as strongest local source construction; pressure/mass mechanism open |
+| unprojected bare periodic equation | localized bag against the fixed Regge Hessian | `O(k^3)` gauge, `O(k^2)` extra-null, and `k=0` residuals survive | bounded named-fixture rejection; drive next improvement search |
+| wrapping plane | one planar interface at nonzero normal momentum | annihilates gauge and extra nulls and lies in the Hessian range | retain as exact control showing the carrier is not generically inconsistent |
+| metric-transverse weak-field solve | projected source in actual metric Hessian | `|k|^2 h_tau_tau -> 2tau` and open-boundary `1/r` shape | retain as conditional monopole bridge; do not claim physical gravity |
+| alternate improvement/triangulation | other local flat-law-preserving terms or edge covers | not exhausted | highest-value constructive residual-cancellation route |
+| combined geometry dynamics | selected geometry action/update plus source | may impose constraints, orient sign, and handle global modes | required physical completion; not supplied |
+| geometry-indexed history/action amendment | registered history law, local action representative/unit, carrier map, dynamics, coupling, and ensemble | sufficient typing by premise | governance fallback only; no edit, necessity, or minimality claim |
+
+## Block 12 live PR sweep
+
+At the Block 12 boundary, `origin/main` remains
+`323d7fc32d77598f74ea6cd4d30c38dda0fe5070`. PRs #6073/#6068 and the wider
+cell-cutting stack concern incidence, rank, symmetry, and finite carrier
+counts; they do not construct this four-coframe worldvolume, affine bag, or
+Regge monopole response. PRs #6072/#6066 are semantic corpus maps, and #6069
+is a finite neighbor-word/XOR law. No open PR collides with Block 12. PR #6061
+still owns the dependency-policy epoch repair.

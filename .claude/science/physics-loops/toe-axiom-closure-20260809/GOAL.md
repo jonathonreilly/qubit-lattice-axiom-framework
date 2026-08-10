@@ -402,3 +402,44 @@ obligation is actually retired. Mathematical threshold closure can increase
 repo-science completeness in the Born lane. Physical-bridge or autonomous
 closure percentages move only if the corresponding registration or selector
 premises are also derived; naming candidate axiom text earns no closure.
+
+## Block 12 Target And Disposition
+
+Block 12 attacks the dominant gravity/dynamics seam directly. It extends the
+Block 11 spatial cut to the supplied tick direction with
+
+`S_W[x;E]=tau sum_(z,mu)m_z,mu |cof(E_z)e_mu|`.
+
+For static histories and `E=diag(F,lambda_tau)`, this is exactly
+`N_tau lambda_tau S_cut[x;F]`. The flat derivative is
+`Pi=tau[(Tr Q)I_4-Q]`; every spatial cut face therefore carries the two known
+spatial tangential responses plus one equal tick response.
+
+The source is then pushed through the repository's actual Regge edge carrier.
+A complete Kuhn hyperface cancels all diagonal-edge volume derivatives and
+leaves unit total length derivative on each tangent axial class. For one
+static cell tube, the centered volume improvement
+`-p(x-1/2)[V(E)-1]` preserves the entire flat configuration law. Homogeneous
+spatial stationarity uniquely fixes `p_*=4tau`, leaving exact flat source
+`T_bag(0)=tau e_tau e_tau^T` rather than inserting a target dust tensor.
+
+After a declared metric-transverse projection, four spatial directions give
+`|k|^2 h_tau_tau -> 2tau` with `O(k^2)` lattice corrections. The regulated
+open-boundary inverse transform is `1/(4 pi r)`, establishing a bounded
+monopole-shape bridge.
+
+The decisive boundary is equally explicit. A generic localized unprojected
+bag has a nonzero `O(k^3)` gauge force and `O(k^2)` overlap with the extra
+Regge null branch; at `k=0` its nonzero source is incompatible with the bare
+finite periodic Hessian. Exact wrapping planes do solve the null constraints.
+Open/infinite boundaries, constrained zero modes, counterstress, alternative
+improvements/triangulations, dynamical histories, and lifted branches remain
+live, so no universal no-go ships.
+
+The axiom residual is now concrete: physical closure must register and select
+the joint history/action family, its local unnormalized representative and
+absolute zero/unit, a spacetime geometry carrier, a local geometry
+action/update with orientation and coupling, the combined conservation
+equation, and the zero-mode/boundary ensemble. This candidate wording is
+sufficient only by premise. No canonical axiom is edited, no necessity or
+minimality claim is made, and no TOE percentage moves.

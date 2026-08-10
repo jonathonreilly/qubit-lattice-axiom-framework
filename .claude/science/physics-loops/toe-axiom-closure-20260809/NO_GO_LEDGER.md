@@ -27,5 +27,11 @@ and two distinct Ward identities while preserving other coframes, geometry
 actions, improvements, dynamics, and continuum completions as live routes.
 No no-go claim ships from that block.
 
+| localized affine bag as an exact bare finite-periodic Regge dust solution | fixed centered `p/tau=4` unit-cell-tube source, fixed Kuhn carrier, unmodified cubic-Coxeter Regge Hessian, and periodic ensemble | generic unprojected gauge force scales as `k^3`, extra-null overlap scales as `k^2`, and the nonzero `k=0` source has nonzero null overlap/solve residual; wrapping planes are compatible | N1--N8 complete in Block 12; open/infinite boundary, fixed global lapse/strain, counterstress, other local improvements/triangulations, dynamic worldvolume, and lifted extra branch remain live | bounded named-fixture rejection only; no dust, gravity, Regge, action, axiom, or universal no-go | change the source improvement/carrier/triangulation, add combined geometry dynamics or constraint handling, or select a nonperiodic infrared ensemble |
+
+Block 12's negative statement is deliberately restricted to the bare finite
+periodic equation for the displayed localized source. Its exact wrapping-plane
+solution and six live completion families prohibit any broader no-go wording.
+
 Any negative result that may ship must receive the complete N1--N8 stress test
 required by `no-go-discipline` before its wording or scope is frozen.

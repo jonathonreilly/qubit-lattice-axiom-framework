@@ -153,3 +153,38 @@ bare_retained_allowed: false
 
 No proposed axiom wording is treated as retained-grade authority. The source
 note remains bounded support and requires independent audit.
+
+## Block 12 certificate
+
+- The Block 11 cut action has an explicit local `3+1` worldvolume extension.
+  Static histories reduce exactly to `N_tau lambda_tau S_cut`; a spatial cut
+  face adds one tick/tick response equal to either spatial tangential response.
+- Six exact Kuhn tetrahedra per unit hyperface reproduce that source on the
+  repository's actual Regge edge carrier: diagonal-edge volume derivatives
+  cancel, and each tangent axial class has total length derivative one.
+- A centered four-volume improvement vanishes identically at flat geometry,
+  preserves code-complement/pressure-reversal covariance, and homogeneous
+  stationarity uniquely fixes `p/tau=4`. The resulting flat bag source is
+  exactly tick-only; the `p/tau=3` control retains spatial stress.
+- After an explicitly named metric-transverse projection, the actual Regge
+  response satisfies `|k|^2 h_tau_tau -> 2tau` across four spatial directions.
+  The open-boundary inverse transform therefore has the `1/r` monopole shape.
+- This is not an exact localized finite-periodic dust solution. The
+  unprojected mixed-mode gauge remainder scales as `k^3`, the extra-null
+  overlap as `k^2`, and the nonzero `k=0` source lies outside the bare finite
+  periodic Hessian range. Wrapping planes remain exactly compatible.
+- The complete N1--N8 gate preserves open/infinite boundaries, fixed global
+  lapse/strain, counterstress, other local improvements/triangulations,
+  dynamic worldvolumes, and lifted extra branches as live routes. No universal
+  no-go is claimed.
+- The sufficient amendment candidate would register the joint history/action
+  family, absolute local action representative and unit, geometry carrier,
+  dynamics, coupling/orientation, conservation equation, and boundary
+  ensemble. It is not adopted, necessary, minimal, or inserted into the
+  canonical axioms.
+- Physical pressure, mass, Regge selection, coupling, sign, Lorentzian and
+  nonlinear completion, projective consistency, and realized history remain
+  open. The fixed TOE percentages therefore do not move.
+
+The Block 12 source remains bounded support and requires independent audit;
+this campaign authors no verdict.

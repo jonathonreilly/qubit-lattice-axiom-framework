@@ -231,3 +231,24 @@ The theorem imports no selected physical coframe, geometry-dependent action
 zero, action unit, geometry dynamics, curvature functional, Newton coupling,
 continuum completion, projective consistency, causal update, empirical value,
 or realized history.
+
+## Block 12 import ledger
+
+| Item | Role | Class | Load-bearing? | Disposition |
+|---|---|---|---:|---|
+| Block 11 endpoint-shared cut action | spatial/static boundary | stacked bounded theorem | yes | no history law, action license, or dynamics inherited |
+| equal-form tick graining | fourth-coordinate normalization | approved kinetic-isotropy primitive | yes for the displayed extension | carries no dynamics, source law, or coupling |
+| orientation-preserving four-coframes | spacetime source family | explicitly supplied mathematical field | yes | no physical geometry selection inferred |
+| Kuhn simplex covers of unit hyperfaces/cells | edge-source realization | explicit finite triangulation | yes | one carrier choice; triangulation independence is not claimed |
+| cubic-Coxeter Regge Hessian and line-averaged metric map | geometry-response probe | source-bound bounded theorem | yes | edge variables and Regge action are not selected by current axioms |
+| centered four-volume improvement | flat-law-preserving bag completion | constructed local action term | yes | pressure mechanism and physical action representative remain open |
+| metric-transverse projection | weak-field solvability convention | explicitly named mathematical projection | yes for the pole result | the unprojected localized source retains measured null residuals |
+| open/infinite-boundary inverse Fourier transform | radial shape extraction | explicit infrared ensemble | yes for `1/r` shape | finite periodic zero-mode obstruction is not erased |
+| physical mass, action sign/unit, Newton coupling, Lorentzian continuation, and nonlinear dynamics | TOE interpretation | open imports | no for theorem; yes for physical gravity | not assumed |
+| joint history law, projective consistency, boundary ensemble, and realized member | causal/global completion | open imports | no for theorem; yes for autonomous closure | not assumed |
+| canonical axiom edit | governance action | forbidden absent owner authority | no | not performed |
+
+No observed constant, fitted pressure, Einstein equation, continuum Regge
+theorem, physical mass definition, or universal infrared prescription is
+imported. The coefficient `p/tau=4` is fixed internally by homogeneous spatial
+stationarity, while the overall coupling and sign remain open.

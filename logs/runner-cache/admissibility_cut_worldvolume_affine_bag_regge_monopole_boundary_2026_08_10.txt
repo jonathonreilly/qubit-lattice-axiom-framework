@@ -1,0 +1,58 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_cut_worldvolume_affine_bag_regge_monopole_boundary_2026_08_10.py
+runner_sha256: da5f8218732bc934b5771c940d3fdfb5b6710bd6912ffb4add25c6232afe88f2
+input_fingerprint_sha256: f09ee87b068bf3018ae259e3413dd5ad4ab0fe70137f09443d5810d70c0db5b8
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 3.16
+status: ok
+----- stdout -----
+external_scientific_inputs: none; cube/simplex volume derivatives and the pressure coefficient are derived in-source
+package_local_integrity_reads: current axioms, Block-11 cut stress, approved tick graining, and the actual 3+1 Regge action are source-bound
+analytic_boundary: the 3+1 cofactor and affine-bag statements are exact; Regge null spaces and scaling exponents are executed numerically
+physical_boundary: history law, worldvolume family, pressure mechanism, action orientation, coupling, infrared ensemble, and nonlinear completion are not selected
+[PASS] source-current-axioms: the current axioms supply spatial locality but explicitly leave history, source/action, and dynamics outside
+[PASS] source-block11: Block 11 derives the spatial coframe stress and leaves temporal worldvolume history and geometry dynamics open
+[PASS] source-regge: the actual tick-extended Regge Hessian has gauge zeros, constant metric zeros, and one extra non-metric zero branch
+[PASS] source-tick-primitive: the approved primitive grants only equal-form tick graining and no dynamics, action, or selector
+[PASS] kuhn-volume-covers: six tetrahedra give each unit hyperface volume one and 24 four-simplices give unit four-volume
+[PASS] diagonal-edge-cancellation: complete Kuhn covers cancel every flat diagonal-edge volume derivative; only axial edge derivatives survive
+[PASS] hyperface-edge-sum: a unit hyperface has total length derivative one on each tangent axial class and zero on its normal class
+[PASS] four-volume-edge-sum: the unit four-cell volume has total length derivative one on every axial class
+[PASS] coframe-metric-source: each flat hyperface gives one-half on all tangent metric diagonals, including tick for a spatial cut
+[PASS] static-worldvolume-reduction: a static spatial face has the Block-11 two tangential responses plus one equal tick response
+[PASS] static-extrusion-count: a one-cell spatial cut extruded through five ticks has 30 timelike faces and integrated metric tick source 15 tau
+[PASS] affine-pressure-uniqueness: homogeneous spatial stationarity uniquely fixes p/tau=4 from 2-(p/tau)/2=0 in every spatial direction
+[PASS] dustlike-flat-source: surface tension plus the derived affine pressure has exact flat metric source (0,0,0,tau) with no shift or spatial stress
+[PASS] pressure-control: the active p/tau=3 control leaves spatial source one-half and therefore does not manufacture the dustlike result
+[PASS] flat-law-preserving-improvement: the centered volume improvement vanishes for every configuration at flat geometry
+[PASS] code-pressure-covariance: off background, code complement together with pressure reversal leaves the centered volume improvement exactly invariant
+[PASS] wrapping-plane-regge-ward: all sampled wrapping-plane sources annihilate the four Regge gauge modes exactly to machine precision
+       max gauge residual=0.000e+00
+[PASS] wrapping-plane-full-null-compatibility: the same plane sources also annihilate the extra non-metric zero branch and lie in the nonzero-momentum Hessian range
+       max null overlap=2.002e-13; max solve residual=6.398e-13
+[PASS] centered-monopole-expansion: the centered bag metric source approaches the pure tick source quadratically
+       measured exponent=1.999624
+[PASS] finite-lattice-gauge-remainder: at generic mixed momentum the unprojected bag gauge force is nonzero and scales as k cubed
+       measured exponent=2.999549; epsilon=.025 residual=1.192e-06
+[PASS] finite-lattice-extra-null-remainder: the generic bag overlap with the full Regge null space is nonzero and scales as k squared
+       measured exponent=2.000397; epsilon=.025 overlap=2.064e-05
+[PASS] regge-lapse-pole: after the explicitly named metric-transverse projection, four spatial directions give |k|^2 h_tick,tick -> 2 tau in the raw Regge orientation
+       coefficients=1.9999479,1.9998264,1.9998397,1.9998322
+[PASS] regge-lapse-pole-convergence: halving momentum reduces every lapse-pole coefficient error, consistent with the O(k^2) lattice correction
+[PASS] three-dimensional-green-tail: the regulated inverse transform of 1/|k|^2 converges to 1/(4 pi r), so the derived static lapse pole is a 1/r monopole shape
+[PASS] periodic-zero-mode-boundary: the nonzero bag source overlaps the 11-dimensional k=0 Regge null space, so the bare finite periodic linear equation has no solution
+       null overlap=1.802776; solve residual=1.802776
+[PASS] theorem-source-surface: the paired note states the worldvolume action, derived pressure, tick source, Regge pole, radial consequence, axiom amendment, and N1-N8 packet
+[PASS] boundary-source-surface: the note preserves governance, finite-lattice, physical-selection, infrared, live-route, no-go, and percentage boundaries
+[PASS] canonical-axiom-nonmutation: the canonical memo still contains none of the worldvolume, pressure, Regge, or candidate-amendment wording
+[PASS] proper-cubic-monopole-covariance: all 24 proper spatial cubic rotations leave the derived flat tick-only source invariant
+per_element: checked exact simplex-volume derivatives and cancellation of every diagonal-edge derivative in each complete Kuhn cover
+per_site: checked one static cell worldtube, its six boundary faces, centered volume improvement, and unique affine pressure coefficient
+per_mode: checked plane and generic mixed Fourier modes against Regge gauge, extra-null, metric-source, and response equations
+per_block: checked the positive worldvolume family through affine bag source, Regge metric projection, lapse pole, and radial Green tail
+lattice_wide: checked the finite periodic k=0 incompatibility and kept open-boundary, constrained-zero-mode, and dynamical completions explicit
+TOTAL: PASS=29 FAIL=0
+
+----- stderr -----
+

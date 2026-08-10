@@ -1,6 +1,6 @@
 {
- "edge_count": 15543,
- "node_count": 5457,
+ "edge_count": 15548,
+ "node_count": 5458,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -361,6 +361,10 @@
   "admissibility_cut_surface_coframe_stress_higher_form_ward_geometry_dynamics_boundary_bounded_theorem_note_2026-08-10": {
    "deps_hash": "088c2e2a5f1e",
    "out_degree": 5
+  },
+  "admissibility_cut_worldvolume_affine_bag_regge_monopole_boundary_bounded_theorem_note_2026-08-10": {
+   "deps_hash": "f29b14b08ffd",
+   "out_degree": 4
   },
   "admissibility_gaussian_content_only_uniformizer_weierstrass_decoder_boundary_bounded_theorem_note_2026-08-10": {
    "deps_hash": "bca0a967aa49",
@@ -1679,8 +1683,8 @@
    "out_degree": 11
   },
   "canonical_harness_index": {
-   "deps_hash": "af34d68d058b",
-   "out_degree": 352
+   "deps_hash": "3eaa2f5f2fa6",
+   "out_degree": 353
   },
   "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": {
    "deps_hash": "808c1ccb6109",

@@ -198,3 +198,27 @@ Block 11 packages a stacked bounded theorem only if it contains all of:
    canonical edit, necessity, minimality, gravity, or no-go claim; and
 7. an exact runner/cache, independent symbolic recomputation, mutation
    sensitivity, harness/graph registration, and direct conformance review.
+
+## Block 12
+
+Block 12 packages a stacked bounded theorem only if it contains all of:
+
+1. one explicit local four-coframe worldvolume action with exact static
+   reduction to the Block 11 spatial cut action and a derived tick/lapse face
+   source;
+2. an exact Kuhn-hyperface volume derivative on the repository's actual
+   cubic-Coxeter Regge edge carrier, including cancellation of diagonal-edge
+   derivatives and the metric-source map;
+3. one flat-law-preserving centered volume improvement whose homogeneous
+   stationarity uniquely fixes `p/tau=4`, with a non-tuned control and exact
+   tick-only flat source;
+4. the metric-transverse actual-Regge weak-field response across multiple
+   directions, its `1/r` open-boundary consequence, and the sign/coupling/
+   infrared limitations stated explicitly;
+5. exact wrapping-plane compatibility together with the generic `O(k^3)`
+   gauge, `O(k^2)` extra-null, and finite-periodic `k=0` residuals;
+6. a complete N1--N8 gate, a narrowly sufficient geometry-indexed
+   history/action amendment candidate, and no canonical edit, necessity,
+   minimality, universal no-go, or percentage claim; and
+7. an exact runner/cache, independent recomputation, full mutation
+   sensitivity, harness/graph registration, and direct conformance review.

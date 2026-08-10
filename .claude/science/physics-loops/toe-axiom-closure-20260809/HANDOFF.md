@@ -1185,7 +1185,9 @@ conformance passes. The exact stack reaches only the inherited stage-7
 policy-epoch stop after `4,810` rows / `3,688` runners; the controlled five-file
 current-main overlay passes all 18 stages at checkpoint `016787d4c504`.
 Changed evidence is clean for `1/1` Block-26 and `26/26` stacked claims.
-Science commit is `8274dab185`; conformance, push, and delivery remain. The exact residual is
+Science commit is `8274dab185`; campaign conformance is `634d1b4c78`. PR
+#6098 is open, mergeable, and `CLEAN`, stacked exactly on Block-25 delivery
+head `4268fc8339`. Independent audit remains required. The exact residual is
 not "gravity is impossible": current axioms do not register the joint family,
 equate Record readout with action, fix the action unit, or supply the separate
 pure-geometry action/causal update. Those are now the highest-priority axiom

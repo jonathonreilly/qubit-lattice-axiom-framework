@@ -1513,6 +1513,7 @@ instance or Fourier census.
   all 18 stages and finalizes checkpoint `016787d4c504`.
 - Changed-evidence readiness marks Block 26 alone (`1/1`) and all 26 stacked
   claims (`26/26`) ready with zero failures and zero control failures.
-- Science commit is `8274dab185`; conformance commit, push, and independent
-  audit remain pending. No canonical axiom, fixed percentage, audit verdict,
-  or `review-loop` is changed.
+- Science commit is `8274dab185`; campaign conformance is `634d1b4c78`. PR
+  #6098 is open, mergeable, and `CLEAN`, stacked exactly on Block-25 delivery
+  head `4268fc8339`. Independent audit remains required. No canonical axiom,
+  fixed percentage, audit verdict, or `review-loop` is changed.

@@ -724,5 +724,6 @@ independent_audit_required: true
   checkpoint `016787d4c504`. Changed evidence is clean for Block 26 alone
   (`1/1`) and the full stack (`26/26`), with zero failures and zero control
   failures.
-- Science commit: `8274dab185`; campaign-conformance commit, push, PR delivery,
-  and independent audit remain pending.
+- Science commit: `8274dab185`; campaign conformance: `634d1b4c78`.
+- Delivery: PR #6098 is open, mergeable, and `CLEAN`, stacked exactly on
+  Block-25 delivery head `4268fc8339`. Independent audit remains required.

@@ -599,3 +599,5 @@ independent_audit_required: true
   and zero control failures.
 - Governance: N1--N8 passes only for the inherited-map bounded diagnosis; no
   axiom/primitive, audit verdict, fixed percentage, or `review-loop` mutation.
+- Delivery: PR #6093 is open, mergeable, and `CLEAN`, stacked exactly on
+  Block-21 delivery head `c8c58fc23f` at conformance head `689c9e4c5f`.

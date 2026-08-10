@@ -1382,4 +1382,6 @@ instance or Fourier census.
   files passes all 18 stages and finalizes checkpoint `c29cbf6160bc`.
 - Changed-evidence readiness marks Block 22 alone (`1/1`) and all 22 stacked
   claims (`22/22`) forensic-ready with zero failures and zero control failures.
-  Delivery remains pending.
+- Science commit is `fcd70f371d`; campaign-conformance commit is `689c9e4c5f`.
+  PR #6093 is open, mergeable, and `CLEAN`, stacked exactly on Block-21
+  delivery head `c8c58fc23f`. Independent audit remains required.

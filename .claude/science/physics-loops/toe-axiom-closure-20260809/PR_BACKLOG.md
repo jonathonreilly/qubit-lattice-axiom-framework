@@ -44,6 +44,9 @@ CNOT/XOR contact family and explicitly leaves the continuous `M_2(C)` law
 open, so it does not collide. The canonical axiom memo remains untouched; no
 `review-loop` is used.
 
+Delivery opened as PR #6093, mergeable and `CLEAN`, on exact Block-21 delivery
+head `c8c58fc23f`. Hard landing order extends through #6092 then #6093.
+
 Block 5 is open on branch
 `physics-loop/toe-axiom-closure-block05-20260810`, stacked on the exact PR
 #6070 head `f208666e0fbf9829ef375269b43b7a1dd77e2a9c`. The theorem proves the
@@ -430,5 +433,4 @@ mutations fail exactly one intended named check (`PASS=15 FAIL=0`). Graph is
 `5,468/15,609` with out-degree seven. The exact stack reproduces only the
 inherited stage-7 policy-epoch mismatch; the five-file current-main overlay
 passes all 18 stages at checkpoint `c29cbf6160bc`. Changed evidence is clean
-for `1/1` Block-22 and `22/22` stacked claims. Delivery remains pending. No
-`review-loop` is used.
+for `1/1` Block-22 and `22/22` stacked claims. No `review-loop` is used.

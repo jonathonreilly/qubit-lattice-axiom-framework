@@ -1080,5 +1080,8 @@ out-degree seven. The exact stack reaches only its inherited stage-7 policy-
 epoch mismatch; the five-file current-main overlay passes all 18 stages at
 checkpoint `c29cbf6160bc`. Changed evidence is clean for `1/1` Block-22 and
 `22/22` stacked claims. N1--N8 licenses only this inherited-map bounded
-diagnosis. Delivery remains pending. No canonical edit, percentage move,
-audit verdict, or `review-loop` occurs.
+diagnosis. No canonical edit, percentage move, audit verdict, or `review-loop`
+occurs.
+
+PR #6093 is open, mergeable, and `CLEAN` at conformance head `689c9e4c5f`,
+stacked exactly on Block-21 delivery head `c8c58fc23f`.

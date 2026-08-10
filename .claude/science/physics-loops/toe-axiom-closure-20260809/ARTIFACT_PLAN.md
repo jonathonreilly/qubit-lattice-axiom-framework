@@ -453,3 +453,27 @@ complete conditional nonlinear compact solution:
   only the inherited stage-7 policy-epoch mismatch; the controlled five-file
   current-main overlay passes all 18 stages at checkpoint `c29cbf6160bc`;
   changed evidence is clean for `1/1` Block-22 and `22/22` stacked claims
+
+## Block 23 — Joint-Ward Schur Completion And Coupling Order
+
+- theorem note:
+  `docs/ADMISSIBILITY_SOURCED_REGGE_JOINT_WARD_SCHUR_COMPLETION_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md`
+- runner:
+  `scripts/admissibility_sourced_regge_joint_ward_schur_completion_boundary_2026_08_10.py`
+- source/input-pinned cache:
+  `logs/runner-cache/admissibility_sourced_regge_joint_ward_schur_completion_boundary_2026_08_10.txt`
+- packet scope: reconstructed three six-mode source coefficients, per-branch
+  rank/signature minima and explicit completions, common fixed-signature
+  eight-mode minimum and construction, source-matrix linear-independence test,
+  regular analytic decoupled Schur-order boundary, viable scaling taxonomy,
+  differentiated-Ward split, N1--N8, and sharpened unadopted joint-action
+  wording
+- exclusions: any physical auxiliary-mode or ghost interpretation, a selected
+  local action, source dynamics, regularity/rank-jump selection, nonuniform or
+  continuous-zone closure, Lorentzian stability, canonical axiom edits, fixed
+  TOE movement, audit verdicts, and `review-loop`
+- conformance: source/input-pinned cache `PASS=17 FAIL=0` in `13.86 s`; all
+  seventeen fresh-process mutations fail exactly one named check; graph
+  `5,469/15,613` with out-degree four and eleven resolved helper runners;
+  direct gates, exact-stack diagnosis, and controlled current-main overlay
+  remain pending

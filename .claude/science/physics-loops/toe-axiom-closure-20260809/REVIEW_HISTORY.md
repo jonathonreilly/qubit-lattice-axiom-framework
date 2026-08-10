@@ -1385,3 +1385,31 @@ instance or Fourier census.
 - Science commit is `fcd70f371d`; campaign-conformance commit is `689c9e4c5f`.
   PR #6093 is open, mergeable, and `CLEAN`, stacked exactly on Block-21
   delivery head `c8c58fc23f`. Independent audit remains required.
+
+## Block 23 Construction Record
+
+- Reconstructed the three Block-22 six-mode coefficients with inertias
+  `3-/3+`, `4-/2+`, and `2-/4+`; all are full rank and indefinite.
+- Proved rank/inertia lower bounds for invertible pure-Schur completion and
+  constructed exact minimal six-mode factors for every branch. Joint-kernel
+  residuals are below `2e-13`.
+- Proved and constructed the common fixed-signature minimum: one `4-/4+`
+  eight-mode source block serves all three through source-dependent mixing.
+- The three Hermitian coefficient matrices are linearly independent, so no
+  source-blind fixed correction cancels all three.
+- Derived the coupling-order boundary `2p-q=1`: with `B(0)=0` and invertible
+  `C(0)`, ordinary analytic mixing begins at `O(c^2)`; the explicit analytic
+  embedding instead uses a `p=q=1` zero-source rank jump.
+- Preserved square-root mixing, nonzero flat mixing, direct Ward/seagull
+  terms, singular multipliers, and massive phases under N1--N8.
+- Primary source/input-pinned cache is fresh at `PASS=17 FAIL=0` in `13.86 s`,
+  with all five N5 resolution lines.
+- Seventeen fresh-process runner-copy mutations cover premise/note/carrier
+  binding, every rank/signature/completion/kernel theorem, source dependence,
+  coupling order, scaling taxonomy, Ward split, and bounded scope. Every
+  mutation exits nonzero at exactly one intended named check; aggregate result
+  is `PASS=17 FAIL=0`.
+- Citation graph is `5,469` nodes / `15,613` edges; the new note has out-degree
+  four and eleven resolved helper runners.
+- Direct gates, exact-stack/overlay diagnosis, changed evidence, commits, and
+  delivery are pending. Independent audit remains required.

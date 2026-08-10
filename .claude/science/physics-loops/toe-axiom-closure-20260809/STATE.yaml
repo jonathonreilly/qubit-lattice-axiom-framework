@@ -7,17 +7,17 @@ stop_at: 2026-08-10T19:00:00-04:00
 checkpoint_interval: 30m
 deep_block: 90m
 cycle: 24
-science_block: 22
-branch: physics-loop/toe-axiom-closure-block22-sourced-ward-quotient-20260810
+science_block: 23
+branch: physics-loop/toe-axiom-closure-block23-joint-ward-schur-20260810
 base: origin/main@39c74017b870c27c804e3992f2a11e90336476b2
-worktree: /private/tmp/toe-block22-sourced-quotient.Ft7DHi
+worktree: /private/tmp/toe-block23-joint-ward.Uu1ixz
 lock_mode: cooperative
 lock_owner: physics-loop
 lock_holder_id: 019fcac5-093c-70a1-ae3e-7f2ef1b002ef
 goal: maximize honest TOE closure from the current axiom surface by stress-testing the nonlinear compact Regge background, constructing an action-native gravity repair where possible, and isolating the exact action-selection and Lorentzian-stability axiom interface without editing canonical axioms
-active_route: derive the complete off-flat curvature-square Hessian, continue the retained compact sources, test both affine constraint localizations, and isolate whether failure belongs to coefficient tuning or to the missing covariant sourced quotient
-hard_residual: derive or select the nonlinear source and constraint geometry, solve a full nonuniform sourced field background, prove continuous-Brillouin gauge-quotient closure and Lorentzian nonlinear stability, and only then enlarge the action basis if needed; constituent-causal rank-one matter and the Born functional/program selector remain separately open
-target_contract_status: bounded_sourced_continuation_and_constraint_localization_diagnosis_with_covariant_quotient_axiom_interface
+active_route: construct the minimal joint source-sector completion of the Block-22 six-mode Ward defect, determine its source-signature and coupling-order requirements, and isolate the viable local-action scaling branches
+hard_residual: derive a selected local joint geometry-source action realizing a source-responsive rank-jump, square-root, nonzero-flat-mixing, or direct Ward-connection branch; solve a full nonuniform stationary background; prove continuous-Brillouin and Lorentzian nonlinear closure; constituent-causal rank-one matter and the Born functional/program selector remain separately open
+target_contract_status: constructive_joint_ward_coefficient_completion_with_rank_signature_and_coupling_order_axiom_interface
 A_min:
   - Lattice
   - Qubit
@@ -91,6 +91,8 @@ block_local_allowed_premises:
   - Schlaefli-reduced real-space Regge Hessians, Bloch transforms, exact constant-metric tangent maps, and independent finite-periodic action differences
   - the explicitly supplied local deficit-squared Regge action with dyadic coefficient one over 1024 as a conditional response probe
   - exhaustive singular-space, inertia, source-solve, and gauge checks on all nonzero L=3 through L=10 Fourier inventories
+  - finite-dimensional Hermitian spectral factorization, Schur complements, Sylvester inertia bounds, rank inequalities, and Taylor-order arithmetic
+  - the three repository-local Block-22 six-mode source-tangent mass coefficients as reconstructed numerical inputs
 forbidden_imports:
   - the Born trace formula as a premise
   - continuity, measurability, differentiability, or ray additivity unless derived
@@ -132,6 +134,9 @@ forbidden_imports:
   - extrapolating the homogeneous cubic null-sector source-image boundary to higher order, finite amplitude, curved, inhomogeneous, open, reaction, or alternate-carrier equations
   - promoting either named Block-19 finite-momentum soft mode to a no-go for Regge gravity, alternate backgrounds, nonlinear constraints, higher-curvature actions, open boundaries, or Lorentzian evolution
   - physically selecting the deficit-squared action, its coefficient, flat background, constraint localization, or Euclidean stability criterion from the current axioms
+  - identifying an indefinite auxiliary coefficient block with physical ghosts, propagating matter, or a causal inner product
+  - promoting per-branch six-mode or common fixed-signature eight-mode pure-Schur minima to universal source-sector dimension claims
+  - treating a coefficient-level factorization or zero-source rank jump as a selected local analytic source law
 files_touched:
   - .claude/science/physics-loops/toe-axiom-closure-20260809/
   - docs/BORN_FORM_FROM_BINARY_TERNARY_SCALED_PROJECTOR_FRAME_LIFT_BOUNDED_THEOREM_NOTE_2026-08-09.md
@@ -192,6 +197,9 @@ files_touched:
   - docs/ADMISSIBILITY_FLAT_REGGE_CURVATURE_SQUARED_BRANCH_LIFT_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md
   - scripts/admissibility_flat_regge_curvature_squared_branch_lift_2026_08_10.py
   - logs/runner-cache/admissibility_flat_regge_curvature_squared_branch_lift_2026_08_10.txt
+  - docs/ADMISSIBILITY_SOURCED_REGGE_JOINT_WARD_SCHUR_COMPLETION_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md
+  - scripts/admissibility_sourced_regge_joint_ward_schur_completion_boundary_2026_08_10.py
+  - logs/runner-cache/admissibility_sourced_regge_joint_ward_schur_completion_boundary_2026_08_10.txt
 open_imports:
   - current axioms do not identify local possibilities with effects or supply a menu-independent effect grading
   - current axioms do not select the binary-plus-ternary scaled-projector family as physically eligible
@@ -252,6 +260,9 @@ open_imports:
   - a local deficit-squared action with supplied coefficient one over 1024 repairs the flat fifth branch on all declared inventories and preserves the leading infrared Einstein order, but current axioms derive neither the action nor its coefficient
   - continuous-zone gauge-quotient closure, a selected nonflat background, nonlinear constraint curvature, Lorentzian evolution, nonlinear sourced stability, coupling, and realized history remain open
   - open-boundary 1 over r shape does not by itself provide projective consistency, nonlinear gravity, or one realized history
+  - current axioms do not select the joint source variables, their transformations, mixed/source Hessian blocks, zero-source rank, or source-amplitude regularity needed for a differentiated Ward completion
+  - the explicit six-mode and common eight-mode Schur factors are coefficient-level constructions, not local source dynamics or physical auxiliary species
+  - a regular analytic decoupled sector with B zero at zero source and invertible C at zero source cannot generate the required first-order correction; rank-jump, square-root, flat-mixing, and direct-connection routes remain open
 no_go_routes:
   - raw_singleton_measure_identification
   - normalized_finite_restriction_as_universal_effect_grade
@@ -272,6 +283,8 @@ no_go_routes:
   - positive_network_topology_or_reweighting_as_solution_of_unmodified_flat_compact_regge_zero_mode
   - complete_leading_cubic_null_sector_polynomial_as_full_nonlinear_declared_source_solution
   - two_named_nonflat_affine_constraint_extensions_as_universal_regge_or_gravity_obstruction
+  - fewer_than_six_or_definite_source_block_as_exact_completion_of_supplied_rank_six_indefinite_mass_coefficients
+  - regular_analytic_source_decoupled_invertible_schur_mixing_as_first_order_ward_repair
 approach_family_coverage:
   triangle_functional_equation: reduced_to_special_frame_lemma
   spherical_harmonic_decomposition: provisional_under_measurability
@@ -383,20 +396,25 @@ approach_family_coverage:
   weak_source_square_root_crossovers: generalized_pencils_predict_two_one_and_three_positive_k_over_sqrt_c_roots_reproduced_by_direct_c_one_e_minus_5_branches
   inherited_flat_gauge_sourced_ir_boundary: four_numerical_generic_path_roots_and_five_inertia_chambers_across_11279_deterministic_momenta
   finite_torus_ir_aliasing: all_8749_nonzero_L3_through_L8_modes_pass_and_miss_the_narrow_continuum_path_defect
+  per_branch_joint_ward_schur_completion: exact_six_mode_rank_and_signature_minimum_with_constructed_six_dimensional_joint_kernel_for_each_retained_source_tangent
+  common_fixed_signature_joint_source_sector: exact_eight_mode_four_negative_four_positive_minimum_and_constructive_completion_for_all_three_source_directions
+  source_direction_dependent_ward_completion: three_reconstructed_mass_coefficients_are_linearly_independent_so_fixed_source_blind_correction_is_excluded
+  regular_analytic_schur_order_boundary: B_zero_at_zero_source_and_invertible_C_zero_force_quadratic_not_linear_source_order
+  viable_joint_ward_scaling_taxonomy: analytic_rank_jump_square_root_flat_mixing_direct_connection_and_massive_phase_routes_preserved
   action_native_body_source_repair: bare_residual_two_reduced_below_one_e_minus_13_with_gauge_residual_below_one_e_minus_14
   infrared_einstein_order_preservation: curvature_square_metric_correction_is_O_k4_against_the_Regge_O_k2_leading_operator
-strongest_unresolved_proof_obligation: derive or select one physical geometry/history action and dimensionless coefficient together with a law-admissible background or boundary sector and constraint localization, then prove continuous-zone gauge-quotient closure plus Lorentzian time-dependent nonlinear sourced stability and connect it to projective and realized history; independently close constituent-causal rank-one matter and the Born functional/program selector
+strongest_unresolved_proof_obligation: derive one selected local joint geometry-source action realizing a source-responsive rank-jump, square-root, nonzero-flat-mixing, or direct differentiated-Ward connection at first source order; solve a nonuniform coupled background; prove continuous-zone gauge-quotient closure plus Lorentzian time-dependent nonlinear stability; independently close constituent-causal rank-one matter and the Born functional/program selector
 trace_gate_classification: upstream_support
 reachability_to_target: supports
 landed_frontier_reachability: advances
 campaign_native_target_reachability: advances
 actual_current_surface_status: bounded-support
 target_claim_type: bounded_theorem
-conditional_surface_status: the flat full Regge plus deficit-square quotient has a six-mode O_k2 physical sector with target inertia, but all three retained external-source homogeneous branch tangents generate nonzero O_c mass matrices with wrong infrared signatures and direct k proportional sqrt_c crossovers; the inherited flat gauge quotient escapes both fixed-normal high-momentum witnesses yet has four finite-source path roots, while all L3 through L8 modes miss the narrow defect, so a law-selected covariant sourced Ward quotient and Lorentzian evolution remain open
-hypothetical_axiom_status: a candidate geometry-history law should select a local lattice-covariant joint geometry-source action and coefficients, a law-admissible sourced background or boundary sector, and the transformation and nonlinear geometry of every constraint; on a selected massless phase its covariant sourced second variation should obey the differentiated Ward identity and contain no unselected O_k0 source term before the required O_k2 infrared pole, with no unintended modes or inertia crossings on realized momentum support and stable Lorentzian nonlinear evolution; a selected massive or curved phase must derive its scale and stability from the same law; this is sufficient or target-equivalent, unadopted, and not proven minimal or necessary
-review_disposition: block22_primary_runner_pass_15_of_15_mutation_pass_15_of_15_cache_fresh_graph_5468_nodes_15609_edges_outdegree_7_n1_n8_direct_gates_pass_exact_stack_inherited_policy_epoch_only_controlled_five_file_overlay_all_18_stages_pass_changed_evidence_1_and_22_ready_independent_audit_required
-pr_status: block22_pr_6093_open_mergeable_clean_on_exact_block21_delivery_head_c8c58fc23f_at_conformance_head_689c9e4c5f
-pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/6093
+conditional_surface_status: all three six-mode O_c source defects admit exact minimal per-branch Schur completions and one common fixed-signature eight-mode completion, but the coefficients are source-direction dependent and regular analytic decoupled invertible mixing begins only at O_c2; a selected local rank-jump, square-root, flat-mixing, or direct connection law remains open together with nonuniform continuous-zone and Lorentzian nonlinear closure
+hypothetical_axiom_status: a candidate joint local source-history covariance law should select one local action, action unit and additive normalization, jointly varied source variables and transformations, and the zero-source rank and amplitude regularity of every mixed/source block; it should derive the stationary or nonstationary differentiated Ward identity and cancel unselected O_k0 terms before the O_k2 pole in a massless phase, while a massive or curved phase derives its scale causal constraints and stability from the same law; this is sufficient or target-equivalent, unadopted, and not proven minimal or necessary
+review_disposition: block23_primary_runner_cache_pass_17_of_17_in_13_point_86_seconds_mutation_pass_17_of_17_graph_5469_nodes_15613_edges_outdegree_4_helpers_11_n1_n8_direct_pipeline_and_changed_evidence_pending_independent_audit_required
+pr_status: block23_packaging_on_exact_block22_delivery_head_dc23e2f32f
+pr_url: pending
 checkpoint_zero_toe_map:
   operational_quantum_records:
     repo_science_percent: 95
@@ -423,5 +441,5 @@ checkpoint_zero_toe_map:
     physical_m2_bridge_percent: 63
     autonomous_closure_percent: 34
     evidence_ceiling_percent: 99
-next_exact_action: derive the covariant source and constraint localization, solve one full nonuniform sourced background, and prove or refute its continuous-Brillouin gauge-quotient and Lorentzian nonlinear stability; if it fails, enlarge the local curvature action basis with law-derived coefficients
+next_exact_action: derive which viable first-order joint-Ward branch the retained local action realizes—analytic source-block rank jump, square-root mixing, nonzero flat mixing, or direct connection—then solve a full nonuniform background and certify continuous-Brillouin and Lorentzian nonlinear stability
 stop_condition: runtime budget reached, an honest audit-ready block is packaged and the queue exhausted, or a blocker requiring external governance or user authority prevents every ranked target

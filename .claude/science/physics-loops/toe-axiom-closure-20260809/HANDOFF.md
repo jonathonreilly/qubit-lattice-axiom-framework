@@ -1085,3 +1085,29 @@ occurs.
 
 PR #6093 is open, mergeable, and `CLEAN` at conformance head `689c9e4c5f`,
 stacked exactly on Block-21 delivery head `c8c58fc23f`.
+
+## Block 23 Joint-Ward Completion Handoff
+
+Block 23 turns Block 22's missing source connection into a constructive
+coefficient target. Each retained six-mode `O(c)` mass matrix has an explicit
+minimal pure-Schur completion: six auxiliary directions with matching inertia
+restore a six-dimensional joint kernel. If one fixed nonsingular source block
+must serve all three tangents, eight `4-/4+` directions are necessary and
+sufficient. The three source matrices are linearly independent, so the mixing
+or connection must depend on source direction.
+
+The main new boundary is coupling order. A regular analytic source-decoupled
+sector with `B(0)=0` and invertible `C(0)` contributes only at `O(c^2)`. The
+explicit coefficient completion embeds analytically through `B,C=O(c)`, which
+has a zero-source rank jump; square-root mixing, nonzero flat mixing, and a
+direct differentiated-Ward/seagull term remain distinct live routes.
+
+Primary runner/cache is source/input pinned at `PASS=17 FAIL=0` in `13.86 s`;
+all seventeen fresh-process runner-copy mutations fail exactly one intended
+named check. Citation registration is `5,469/15,613`, with out-degree four and
+eleven resolved helper runners. Direct gates, exact-stack/overlay diagnosis,
+changed evidence, and PR delivery remain pending. The next science is to
+realize one viable scaling branch in a selected local joint action, then solve
+a nonuniform coupled background and certify continuous-zone Lorentzian
+nonlinear closure. No canonical edit, percentage move, audit verdict, or
+`review-loop` occurs.

@@ -1,6 +1,6 @@
 {
- "edge_count": 15609,
- "node_count": 5468,
+ "edge_count": 15613,
+ "node_count": 5469,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -433,6 +433,10 @@
   "admissibility_sourced_regge_flat_gauge_quotient_ward_completion_boundary_bounded_theorem_note_2026-08-10": {
    "deps_hash": "2dda77e3330a",
    "out_degree": 7
+  },
+  "admissibility_sourced_regge_joint_ward_schur_completion_boundary_bounded_theorem_note_2026-08-10": {
+   "deps_hash": "5af03547e4f2",
+   "out_degree": 4
   },
   "admissibility_timelike_edge_current_network_compact_homothety_regge_boundary_bounded_theorem_note_2026-08-10": {
    "deps_hash": "b431044c389f",

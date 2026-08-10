@@ -420,3 +420,17 @@ generator `R_*(ell,J)`, its differentiated Ward-connection terms, and a full
 nonuniform coupled solution before continuous-zone and Lorentzian certification.
 Candidate law wording is unadopted; fixed TOE percentages and canonical axioms
 remain unchanged. No `review-loop` is used.
+
+Block 23 executes the next algebraic joint-Ward obligation. It proves explicit
+per-branch six-mode completions and one common fixed-signature eight-mode
+completion, with exact graph kernels and source-dependent mixing. It also
+separates coefficient existence from coupling regularity: a regular analytic
+decoupled sector with `B(0)=0` and invertible `C(0)` starts at `O(c^2)` and
+cannot repair Block 22's linear defect.
+
+Reachability remains `upstream_support`, not direct TOE closure. A retained
+local action must select and derive a rank-jump, square-root, nonzero-flat-
+mixing, or direct Ward/connection branch, then close a nonuniform background,
+continuous momentum, and Lorentzian nonlinear stability. The sharpened joint-
+action wording is unadopted; fixed TOE percentages and canonical axioms remain
+unchanged. No `review-loop` is used.

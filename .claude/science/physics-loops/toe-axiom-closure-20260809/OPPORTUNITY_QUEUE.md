@@ -73,3 +73,17 @@ dependent quotient. It simultaneously shows that algebraic Ward projection
 cannot substitute for the missing local sourced connection law: the exact
 diagnostic is an `O(c)` source mass term overtaking the `O(k^2)` flat graviton
 operator at `k` proportional to `sqrt(c)`.
+
+## Post-Block-23 Priority Refresh
+
+| Rank | Target | Exact next witness | Why now |
+|---:|---|---|---|
+| 1 | realize one viable joint-Ward scaling branch | derive local `B(c),C(c)` or `E_A partial R^A` from one retained geometry/history action and show `2p-q=1` or a direct `O(c)` term without hand insertion | coefficient existence is solved; coupling order and locality are now the sharpest missing facts |
+| 2 | determine the zero-source rank and constraint class | prove whether the source block has the analytic `p=q=1` rank jump, nonzero flat mixing, or a singular multiplier reduction | regular decoupled invertible mixing is now excluded at first order |
+| 3 | solve one nonuniform joint stationary background | source-responsive mixed/source Hessian and transformation law on a certified field solution | the three `M_s` are linearly independent, so one source-blind correction cannot work |
+| 4 | continuous Brillouin and Lorentzian closure | exact Ward rank/inertia across continuous momentum followed by causal transfer/symplectic stability | all current completions are `k=0` Euclidean coefficient statements |
+| 5 | constituent-causal rank-one source | selected local history whose stress and mixed Hessian realize the joint law | the algebraic source sector still has no physical matter interpretation |
+
+The leading obligation is no longer an unspecified `R_*(ell,J)`: it is to
+derive which of the rank-jump, square-root, nonzero-flat-mixing, or direct-
+connection branches the local joint action actually realizes.

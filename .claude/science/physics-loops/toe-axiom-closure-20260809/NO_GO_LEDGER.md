@@ -150,3 +150,15 @@ that the orthogonal completion cannot create. The unwanted `O(c)` mass matrix
 localizes why the flat `O(k^2)` generator fails, but does not determine the
 covariant replacement. The fixed-normal witness negative is retired for this
 quotient, so this is a new infrared boundary, not a cross-cycle echo.
+
+## Block 23 Joint-Schur And Coupling-Order Boundaries
+
+| Scoped claim | Exact/bounded evidence | N1--N8 disposition | Forbidden promotion | Live routes |
+|---|---|---|---|---|
+| fewer than six auxiliary modes or definite `C` cannot exactly cancel any one supplied rank-six indefinite `M_s` in the invertible pure-Schur coefficient class; one fixed nonsingular `C` signature serving all three cannot have fewer than eight `4-/4+` directions | rank/inertia theorem, explicit saturating spectral factorizations, joint-kernel residuals below `2e-13`, and source-matrix linear independence | pass only for the declared `k=0`, coefficient-level, invertible pure-Schur class | do not infer a universal mode count, propagating ghosts, source-sector ontology, gravity failure, or axiom necessity | singular/multiplier blocks, direct connection terms, same-family seagulls, source-dependent carriers, massive phases |
+| with `B(0)=0`, invertible `C(0)`, and ordinary analytic decoupling, the Schur correction cannot cancel the linear `O(c)` defect | `B=O(c)` implies `B C^{-1}B^dagger=O(c^2)`; direct halving control; general requirement `2p-q=1` | pass only as a coupling-order boundary under the stated regularity and rank assumptions | do not claim all analytic joint actions fail or that nonanalyticity is required | analytic `p=q=1` rank jump, nonzero flat mixing, direct Ward/seagull term, one-sided square-root amplitude, massive/curved phase |
+
+The strongest steelman is constructive: explicit per-branch six-mode and
+common eight-mode completions exist. The remaining question is not algebraic
+existence but which local source-responsive scaling branch is selected and
+causally stable.

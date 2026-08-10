@@ -828,3 +828,22 @@ dependent local geometry/source generator and differentiated Ward-connection
 terms on a full nonuniform coupled solution, then prove that a selected
 massless phase begins at `O(k^2)`. Canonical axioms and the fixed TOE rubric
 remain unchanged.
+
+## Block 23 Goal Checkpoint
+
+The six-mode source defect is algebraically completable. For each retained
+source tangent, an invertible pure-Schur completion needs and admits six
+auxiliary directions with the defect's inertia. If one fixed nonsingular
+source signature must serve all three tangents, eight `4-/4+` directions are
+necessary and sufficient. The three defect matrices are linearly independent,
+so their mixing or connection must be source-responsive.
+
+The sharper new obligation is coupling order. With `B(0)=0`, invertible
+`C(0)`, and ordinary analytic decoupling, Schur mixing starts at `O(c^2)` and
+cannot cancel Block 22's `O(c)` term. The next construction must derive a
+`p=q=1` source-block rank jump, square-root mixing, nonzero flat mixing, or a
+direct Ward/seagull connection from one selected local joint action.
+
+After that, solve a nonuniform coupled background and certify continuous-
+momentum and Lorentzian nonlinear closure. Canonical axioms and the fixed TOE
+rubric remain unchanged.

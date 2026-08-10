@@ -470,3 +470,23 @@ bounded domains. Their disagreement is an explicit finite-volume infrared
 aliasing diagnosis, not continuous-zone coverage. No observation, fitted
 constant, external scientific input, new primitive, canonical axiom edit,
 audit verdict, fixed-percentage move, or `review-loop` is imported.
+
+## Block 23 Assumptions And Imports
+
+- The three Block-22 numerical `6 x 6` Hermitian source-tangent mass
+  coefficients are reconstructed from repository-local action derivatives.
+- Finite-dimensional rank inequalities, Hermitian spectral decomposition,
+  Sylvester inertia bounds, Schur complements, and Taylor-order arithmetic are
+  allowed mathematical tools.
+- The pure-Schur statements assume an invertible Hermitian coefficient block
+  `C` and no separate differentiated-generator connection term.
+- The common eight-mode statement additionally assumes one fixed nonsingular
+  `C` signature serves all three source directions while `B_s` may vary.
+- The analytic order boundary assumes `B(0)=0`, invertible `C(0)`, and ordinary
+  Taylor regularity at signed source strength zero.
+
+No locality, analytic rank-jump law, source dynamics, positive-energy or ghost
+interpretation, causal inner product, Lorentzian signature, selected action,
+nonuniform background, or physical auxiliary-mode ontology is imported. No
+external science, axiom edit, percentage move, audit verdict, or `review-loop`
+is imported.

@@ -601,3 +601,35 @@ independent_audit_required: true
   axiom/primitive, audit verdict, fixed percentage, or `review-loop` mutation.
 - Delivery: PR #6093 is open, mergeable, and `CLEAN`, stacked exactly on
   Block-21 delivery head `c8c58fc23f` at conformance head `689c9e4c5f`.
+
+## Block 23 Joint-Ward Schur-Completion Certificate
+
+- Claim type: `bounded_theorem`.
+- Reconstructed inputs: three full-rank indefinite six-mode coefficients with
+  inertias `3-/3+`, `4-/2+`, and `2-/4+`; minimum gaps exceed `0.0277` and
+  step errors are below `3e-8`.
+- Per-branch theorem: six auxiliary modes are necessary and sufficient in the
+  invertible pure-Schur coefficient class; explicit joint matrices have six
+  exact graph-kernel directions with residuals below `2e-13`.
+- Common-sector theorem: one fixed nonsingular signature serving all three
+  needs and admits eight `4-/4+` modes; all common joint matrices have inertia
+  `4-/4+/6-zero`.
+- Source response: the three coefficient matrices are linearly independent,
+  excluding one source-blind fixed correction.
+- Coupling-order boundary: `B(0)=0`, invertible `C(0)`, and Taylor regularity
+  force the Schur term to begin at `O(c^2)`; viable `O(c)` routes are an
+  analytic rank jump, square-root mixing, nonzero flat mixing, or a direct
+  Ward/seagull connection.
+- Live route: realize one of those branches in a selected local joint action,
+  then solve a nonuniform background and prove continuous-zone Lorentzian
+  nonlinear closure.
+- Runner/cache: source/input pinned, `PASS=17 FAIL=0` in `13.86 s`, with all
+  five substantive N5 resolution lines and stdout below the cache limit.
+- Mutation sensitivity: all seventeen fresh-process runner-copy mutations
+  exit nonzero at exactly one intended named check (`PASS=17 FAIL=0`).
+- Citation graph: `5,469` nodes / `15,613` edges; the new node has out-degree
+  four and eleven resolved helper runners. Direct gates, pipeline, changed
+  evidence, and delivery remain pending.
+- Governance: N1--N8 restricts every exclusion to its declared coefficient and
+  regularity class; no physical ghost, universal mode count, gravity no-go,
+  axiom/primitive edit, audit verdict, fixed percentage, or `review-loop`.

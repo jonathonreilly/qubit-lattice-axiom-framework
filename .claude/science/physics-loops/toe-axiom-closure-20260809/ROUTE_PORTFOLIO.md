@@ -520,3 +520,21 @@ Projection changes the high-momentum verdict but cannot supply the terms in
 the differentiated sourced Ward identity. The unwanted `O(c)` mass matrices
 now identify what a selected connection must cancel or reinterpret. The next
 move is law construction, not another projector or scalar coefficient scan.
+
+## Block 23 Joint-Ward Completion Route Comparison
+
+| Route | Exact object | Outcome | Decision |
+|---|---|---|---|
+| per-source pure-Schur completion | `M_s=B_s C_s^{-1}B_s^dagger` on the six flat physical modes | rank and inertia bounds require six modes; spectral factorization attains the bound with an exact six-dimensional joint kernel | retain as the minimal coefficient-level counter-control, not a physical action |
+| common fixed-signature source sector | one nonsingular `C_*` with source-dependent `B_s` | `max n_-=max n_+=4`, so eight `4-/4+` modes are necessary and sufficient | preferred algebraic interface if one source sector must serve every retained tangent |
+| source-blind correction | one fixed coefficient correction for all three `M_s` | the three Hermitian matrices are linearly independent | reject; the mixing or connection must respond to source direction |
+| regular analytic decoupled Schur sector | `B(0)=0`, invertible `C(0)`, Taylor-regular blocks | Schur correction begins at `O(c^2)` and cannot cancel the observed `O(c)` term | retire only this order-local route |
+| analytic singular-block sector | `B(c)=cB+...`, `C(c)=cC+...` | realizes the coefficient construction with `2p-q=1` but has a rank jump at `c=0` | live; derive constraints, locality, and branch selection |
+| square-root or flat-mixing sector | `B=O(sqrt(c))`, or `B(0)!=0` with varying blocks | algebraically capable of an `O(c)` correction | live; derive regularity/amplitude coordinate or the complete flat joint Ward law |
+| direct Ward/seagull connection | `E_A partial_B R^A` or a same-family geometry contact term | bypasses the pure-Schur budget | highest-priority local-action route alongside the singular-block construction |
+| nonuniform/Lorentzian completion | selected coupled background and causal dynamics | not supplied | required physical endpoint |
+
+Block 23 proves that the Block-22 defect is algebraically repairable while
+preventing the coefficient factorization from being mistaken for a regular
+decoupled weak-source theory. The exact next decision is which scaling branch
+the local joint action realizes.

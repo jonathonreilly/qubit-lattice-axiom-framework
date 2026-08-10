@@ -1,0 +1,56 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_sourced_regge_joint_ward_schur_completion_boundary_2026_08_10.py
+runner_sha256: 130fb9e960ea642bf47a2f6d855d4962676e2d7ff46f895f4d00a021e516817b
+input_fingerprint_sha256: 449419239d94837014dd6316c6ecd90d938f2a5a9a5fb91d6a7320d47232415b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 13.97
+status: ok
+----- stdout -----
+external_scientific_inputs: none; all matrices are reconstructed from the repository-local Block-22 Regge/source carrier
+analytic_boundary: rank, inertia, Schur, and differentiated-Ward statements are finite-dimensional theorems; source-tangent matrices are double-precision numerical reconstructions
+physical_boundary: the completion is coefficient-level and nonlocal until a selected joint local action supplies its source variables, scaling, stationary background, and transformations
+[PASS] source-and-axiom-boundary: the current axioms do not select the joint source/geometry completion
+[PASS] retained-route-inventory: retained artifacts separately supply a first Ward carrier and a same-family seagull route
+[PASS] note-contract: the note states the six-mode pure-Schur theorem and its strict physical boundary
+completion[two-stream]: M=(3, 3, 0); C=(3, 3, 0); joint=(3, 3, 6); gap=0.027744806; schur=1.858e-16; kernel=1.833e-16
+completion[bundle-A]: M=(4, 2, 0); C=(4, 2, 0); joint=(4, 2, 6); gap=0.140173150; schur=1.500e-15; kernel=1.550e-15
+completion[bundle-B]: M=(2, 4, 0); C=(2, 4, 0); joint=(2, 4, 6); gap=0.040347265; schur=4.324e-16; kernel=4.229e-16
+[PASS] flat-six-mode-carrier: the reconstruction isolates the same six physical flat modes as Block 22
+       shape=(15, 6); orthogonality=1.958e-15
+[PASS] three-full-rank-indefinite-defects: all three O(source) physical mass matrices are full-rank and indefinite
+       two-stream: inertia=(3, 3, 0), gap=0.027745, step=3.412e-09; bundle-A: inertia=(4, 2, 0), gap=0.140173, step=1.547e-09; bundle-B: inertia=(2, 4, 0), gap=0.040347, step=2.887e-08
+[PASS] rank-five-lower-bound: every pure Schur correction with fewer than six source modes leaves a nonzero operator-norm residual
+       Eckart-Young lower bounds for rank <=5: two-stream >= 0.027745, bundle-A >= 0.140173, bundle-B >= 0.040347
+[PASS] definite-source-block-exclusion: neither a positive- nor negative-definite C can reproduce any indefinite M through B C^{-1} B^dagger
+       positive C gives a positive-semidefinite correction; negative C gives a negative-semidefinite correction
+[PASS] minimal-signature-budgets: the explicit minimal C has exactly the positive/negative budget demanded by each M
+       two-stream: required/constructed C inertia=(3, 3, 0); bundle-A: required/constructed C inertia=(4, 2, 0); bundle-B: required/constructed C inertia=(2, 4, 0)
+[PASS] constructive-minimal-schur-completion: six auxiliary modes explicitly cancel each six-dimensional source mass coefficient
+       maximum factorization/Schur/spectral residual=1.500e-15
+[PASS] exact-joint-ward-kernel: each 12 by 12 joint coefficient Hessian has the constructed six-dimensional graph kernel
+       joint inertias=[(3, 3, 6), (4, 2, 6), (2, 4, 6)]; maximum kernel residual=1.550e-15
+[PASS] common-eight-mode-signature-lower-bound: one fixed nonsingular source-block signature serving all three tangents needs at least four negative and four positive directions
+       Sylvester bounds require dim(C) >= max n_-(M_s) + max n_+(M_s) = 4 + 4 = 8
+[PASS] common-eight-mode-constructive-completion: a single fixed C with inertia four negative and four positive explicitly completes every retained source tangent
+       joint inertias=[(4, 4, 6), (4, 4, 6), (4, 4, 6)]; maximum completion residual=1.500e-15; maximum kernel residual=1.550e-15
+[PASS] source-direction-dependence: the three defect coefficients are linearly independent, so no source-blind fixed correction cancels all three
+       mass-family singular values=[1.643351316 0.233954161 0.140555207]
+[PASS] regular-analytic-schur-order-boundary: with B(0)=0 and invertible C(0), analytic mixed blocks change the O(source) Schur coefficient only at quadratic order
+       successive ||S(c)/c-M||=1.549e-04, 7.745e-05, 3.872e-05
+[PASS] singular-scaling-taxonomy: the explicit coefficient completion occupies the analytic p=q=1 singular-block route, not the regular invertible route
+[PASS] differentiated-ward-split: the note distinguishes stationary Schur cancellation from the nonstationary connection term
+[PASS] bounded-theorem-and-no-go-scope: the result is a constructive algebraic completion plus a bounded pure-Schur minimum, not a gravity no-go
+N5_CERTIFICATE: resolution=the claim is restricted to the six-mode coefficient-level pure-Schur class
+N5_CERTIFICATE: constructive_route=per-branch six-mode and common fixed-signature eight-mode completions are supplied
+N5_CERTIFICATE: excluded_rhetoric=no universal source, matter, Ward, gravity, or axiom impossibility is claimed
+N5_CERTIFICATE: live_routes=connection terms, nonstationary backgrounds, singular blocks, additional local carriers, and massive phases remain open
+N5_CERTIFICATE: physical_boundary=locality, coupling scaling, source selection, causal signature, and nonlinear stability are not derived
+per_element: checked all six physical geometry modes and six explicit auxiliary modes for each source tangent
+per_mode: checked the k=0 O(source) coefficient; no nonzero-momentum or continuous-zone completion is claimed
+per_block: checked all three retained source tangents, their rank/signature minima, and explicit joint kernels
+lattice_wide: checked and not executed — this is not a local nonuniform action, analytic coupling family, finite-torus, Lorentzian, or nonlinear theorem
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

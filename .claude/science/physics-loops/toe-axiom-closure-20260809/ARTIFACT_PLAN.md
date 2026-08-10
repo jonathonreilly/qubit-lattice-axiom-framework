@@ -80,3 +80,20 @@ Block 5 packages a stacked bounded theorem only if it contains all of:
 6. a narrowed hypothetical axiom-side residual, with no canonical edit;
 7. an exact runner/cache, independent symbolic recomputation, mutation
    sensitivity, harness/graph registration, and direct conformance review.
+
+## Block 6
+
+Block 6 packages a stacked bounded theorem only if it contains all of:
+
+1. a center-independent content-only uniformizer on the whole displayed
+   Hermitian-center Gaussian family;
+2. a proof that every fixed bounded full-content readout kernel has an entire
+   response along the `C=tP_z` translation slice;
+3. an exact nonremovable-pole contradiction for every finite isotropic
+   extractor offset and one fixed half-projector effect;
+4. an exact condition-indexed threshold escape using the common uniformizer;
+5. a complete N1--N8 gate preserving tagged Records, changed laws, finite
+   center sets, nonunitary processes, and occurrence routes;
+6. narrowed hypothetical axiom-side alternatives, with no canonical edit;
+7. an exact runner/cache, independent symbolic recomputation, mutation
+   sensitivity, harness/graph registration, and direct conformance review.

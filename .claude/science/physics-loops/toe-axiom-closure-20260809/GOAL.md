@@ -172,6 +172,40 @@ functional or equivalent control weight/eigenbasis from the local law, then
 derive physical program/effect registration, splitting or restriction, and
 Record occurrence. No canonical axiom is edited, and no TOE percentage moves.
 
+## Block 6 Target And Disposition
+
+Block 6 executes the direct-comparator steelman accepted in Block 5. It asks
+whether the displayed Gaussian compiler can use one fixed content-only random
+scalar across all Hermitian neighbor centers, and whether one fixed bounded
+Record decoder can then reproduce the compiler's varying fixed-effect grade.
+
+The positive target is stronger than Block 4's fixed-condition construction.
+Because every Gaussian center is Hermitian, `Im Tr A` is standard normal for
+every center and invariant under unitary conjugation. Therefore
+
+`U(A)=Phi(Im Tr A)`
+
+is one center-independent content-only uniformizer. This closes Gaussian
+splitting across conditions without center subtraction.
+
+The bounded negative target holds one fixed half-projector effect and one fixed
+bounded content kernel while varying `C=tP_z`. Every such kernel has an entire
+Gaussian response in complexified `t`, while every finite isotropic extractor
+member has grade
+
+`w_lambda(t)=(t^2+2+lambda)/(2(t^2+4+2lambda))`
+
+with nonremovable finite complex poles. Equality is impossible on any nonempty
+open center interval. A condition-indexed threshold of the common uniformizer
+realizes `w_lambda(t)` exactly, so the residual is not randomness: it is
+physical selection/storage of the preparation-program tag, effect quotient,
+and occurrence.
+
+The result proves no global decoder/Record no-go and no axiom necessity. The
+narrow axiom-side alternatives are a stored tag, an explicitly indexed
+readout, or a different law shape whose fixed decoder event already carries
+the varying mass. No canonical axiom is edited, and no TOE percentage moves.
+
 ## Trace target
 
 The landed source states:

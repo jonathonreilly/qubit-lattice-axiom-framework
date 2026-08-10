@@ -107,3 +107,22 @@ occurrence, repeated trials, or realized-history typicality.
 The theorem does not identify generic raw possibility content with a density
 operator, select `lambda`, select `q`, import an observed probability, infer a
 physical partial trace, or claim autonomous occurrence/history.
+
+## Block 6 import ledger
+
+| Item | Role | Class | Load-bearing? | Disposition |
+|---|---|---|---:|---|
+| displayed Hermitian-center Gaussian family | tested law | constructed stacked parent | yes | current-compatible completion, not selected |
+| two diagonal imaginary Gaussian coordinates | common uniformizer | elementary analytic calculation | yes | each has variance `1/2`; sum has variance one |
+| standard-normal CDF | probability-integral transform | elementary analytic function | yes | no observed probability imported |
+| arbitrary bounded Borel `r(A) in [0,1]` | fixed deterministic/stochastic decoder class | explicit theorem quantifier | yes | integrates all eight coordinates; no ansatz restriction |
+| complex continuation of the Gaussian convolution | fixed-kernel classification | self-contained dominated-differentiation proof | yes | mathematical proof device, not a physical complex center |
+| identity theorem for entire functions | pole contradiction | elementary complex analysis | yes | argument is written explicitly; no literature theorem imported |
+| finite isotropic `lambda` family and `E_0` | target/probe | inherited mathematical objects | yes | no physical selector or effect registration inferred |
+| condition-indexed threshold | exact positive escape | constructed compiler | yes | index/tag and occurrence remain supplied |
+| tagged Record, indexed readout, or changed law shape | axiom-side alternatives | open interfaces | no for theorem; yes for physical closure | not assumed |
+| canonical axiom edit | governance action | forbidden absent owner authority | no | not performed |
+
+The theorem does not import a preferred distribution law, density functional,
+program tag, observed probability, physical comparator, formation site/rate,
+repeated-trial law, or realized-history typicality.

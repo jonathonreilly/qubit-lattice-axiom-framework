@@ -3,13 +3,13 @@
 ```yaml
 actual_current_surface_status: bounded-support
 target_claim_type: bounded_theorem
-claim_type_reason: "Exact Gaussian raw-content type boundary, conditioned-CNOT measure/extractor equivariance, fixed-versus-transported effect separation, and supplied-control spectrum preparation; density-functional/control selection, physical program quotient, occurrence, and axiom adoption remain open."
+claim_type_reason: "Exact center-independent Gaussian content uniformizer, entire-function classification of every fixed bounded content kernel on one preparation slice, finite-lambda pole mismatch, and condition-indexed threshold escape; selector/tag registration, physical effect quotient, occurrence, and axiom adoption remain open."
 trace_class: upstream_support
 reachability_to_target: advances
 landed_frontier_reachability: advances
 campaign_native_target_reachability: advances
-conditional_surface_status: "conditioned CNOT exactly transports the displayed Gaussian and every isotropic extractor member; supplied control weights exactly prepare the displayed spectra, but contact does not select the density functional, weight, eigenbasis, same-effect quotient, or occurrence"
-hypothetical_axiom_status: "the remaining candidate interface is narrowed to a law-derived density functional or control weight/eigenbasis plus physical program/effect quotient, splitting or restriction, and occurrence; no canonical axiom edit, adoption, minimality, or necessity claim"
+conditional_surface_status: "one fixed content-only uniformizer works for every Hermitian center of the displayed Gaussian family, but no fixed bounded content-only kernel realizes the finite-lambda extracted half-projector grade on an open center interval; condition-indexed thresholding succeeds exactly"
+hypothetical_axiom_status: "the remaining candidate interface is narrowed to a stored preparation/program tag, explicitly indexed decoder, or selected alternate law shape, together with same-effect descent and occurrence; no canonical axiom edit, adoption, minimality, or necessity claim"
 admitted_observation_status: null
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
@@ -59,6 +59,15 @@ bare_retained_allowed: false
 - A supplied control mixture can prepare each displayed spectrum exactly, but
   the control weight, eigenbasis, restriction interface, and occurrence remain
   open physical inputs.
+- Block 6 derives a single conjugation-invariant content uniformizer from the
+  displayed Gaussian law for every Hermitian center, retiring center-indexed
+  splitting inside that completion.
+- Every fixed bounded full-content readout kernel has an entire response along
+  `C=tP_z`; the finite-`lambda` extracted fixed-effect target has exact
+  nonremovable poles and cannot agree on an open interval.
+- A condition-indexed threshold of the common uniformizer realizes the target
+  exactly, localizing the remaining physical interface to selector/tag
+  storage, same-effect quotient, and occurrence rather than randomness.
 
 No proposed axiom wording is treated as retained-grade authority. The source
 note remains bounded support and requires independent audit.

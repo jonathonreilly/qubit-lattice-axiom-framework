@@ -60,6 +60,21 @@ science commit `517f6d74d7`, on the exact #6070 head. Hard landing order is
 #6063, #6065, #6067, #6070, then #6071. The canonical axiom memo remains
 untouched; no `review-loop` is used.
 
+Block 6 is under direct self-review on branch
+`physics-loop/toe-axiom-closure-block06-20260810`, stacked on the exact PR
+#6071 head `1971fe51962e05b0b70a5723fd955c27f9067d0b`. The theorem constructs a
+single center-independent Gaussian content uniformizer, classifies every fixed
+bounded decoder response as entire on the `C=tP_z` slice, proves the exact
+finite-`lambda` pole mismatch, and gives the successful condition-indexed
+threshold escape. The runner is `PASS=21 FAIL=0`; an independent SymPy route
+agrees and nineteen process-local mutations reach their intended failure
+families. N1--N8 rejects any global decoder/Record no-go. Harness/graph
+registration and direct conformance pass. The full pipeline reaches only PR
+#6061's current-main dependency-policy epoch stop after all earlier stages
+pass; 1,055 tracked generated changes and 818 new ledger shards were cleaned.
+Final cold diff and stacked delivery remain. The canonical axiom memo remains
+untouched; no `review-loop` is used.
+
 Completed Block 1 delivery checklist:
 
 - resolve or honestly demote the exact target;

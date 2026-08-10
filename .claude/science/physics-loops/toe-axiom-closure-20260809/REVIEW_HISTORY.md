@@ -354,3 +354,59 @@ failure already owned by PR #6061. No `review-loop` was invoked.
   science delta as `517f6d74d7`, pushed the dedicated branch, and opened PR
   #6071 on the exact #6070 head. Hard landing order is #6063, #6065, #6067,
   #6070, then #6071.
+
+## Block 6 common-uniformizer/fixed-decoder synthesis
+
+- Replaced the center-subtracted real-trace randomizer with the stronger fixed
+  content statistic `Im Tr A`. On every Hermitian-center Gaussian law it is
+  standard normal, so its CDF is one content-only uniform scalar across all
+  displayed conditions.
+- Proved exact unitary-conjugation invariance by trace invariance. This closes
+  the random-splitting input inside the displayed Gaussian family without
+  importing a neighbor-center lookup.
+- Classified the full fixed bounded decoder class on `C=tP_z`: after
+  integrating seven coordinates, every deterministic or stochastic kernel is
+  a Gaussian convolution whose complexified center response is entire.
+- Derived the exact finite-offset target
+  `(t^2+2+lambda)/(2(t^2+4+2lambda))`. At each denominator root its numerator
+  is `-(lambda+2)`, so the cross-multiplied entire identity leaves nonzero
+  residual `lambda+2`. No fixed bounded kernel matches on an open interval.
+- Constructed the exact positive escape: threshold the common uniformizer at
+  the condition-indexed target weight. This moves the residual from randomness
+  to physical selector/tag storage, effect quotient, and occurrence.
+- Executed the complete N1--N8 discipline. Ten materially distinct routes
+  include successful common-uniformizer and indexed/tagged escapes; three
+  remaining walls were audited for independence; hidden conditions and source
+  residuals were matched; the tag-writing hostile steelman was accepted. No
+  global content-decoder/Record no-go or axiom-necessity claim is made.
+- The primary runner is `PASS=21 FAIL=0`, including substantive
+  per-element/site/mode/block/lattice-wide output. Independent SymPy reproduces
+  variance one, the all-`lambda` rational target, pole square, exact residual,
+  representative weights, and a fixed-halfspace comparison.
+- Nineteen disposable-copy mutations cover current and stacked source
+  bindings, variance, Hermitian centers, trace invariance, weights, target
+  variation, fixed/indexed thresholds, poles, construction/boundary prose,
+  machine status, canonical nonmutation, and N1--N8. Each reaches its intended
+  named failure family; no tracked file is changed by the probes.
+- Registered the source and runner in the canonical harness and regenerated
+  the citation manifest at 5,452 nodes / 15,512 edges, the intended one-node/
+  five-edge delta. The new note has out-degree four and the harness gains one.
+- Direct conformance passes: vocabulary lint has zero findings; strict audit
+  lint has zero errors; graph/link invariants report zero link and class-F
+  violations with the topology delta acknowledged; YAML and Python compile;
+  the runner cache is SHA/input-fingerprint fresh; whitespace and the exact
+  18-file stacked delta both pass.
+- The full pipeline passed premise purity, model-family normalization, graph
+  construction, manifest writing, load-bearing computation, ledger seeding,
+  sanitization, classifier capture, effective-status computation, and stale-
+  audit invalidation. It then reproduced the current-main dependency-policy
+  epoch stop in restoration: the manifest pins `build_citation_graph.py` at
+  `20698263cbf6ad82569f15ceee0642525f18c9c093d329be1149253217d33415`,
+  while the current file hashes to
+  `c58180b642cbc7714a270c54258ab4a6c3588a83df54d573170152f7a1a4ceb1`.
+  PR #6061 owns that repair; this branch does not copy it.
+- Pipeline cleanup restored 1,055 generated tracked changes and removed 818
+  new ledger shards after verifying every untracked path lay under
+  `docs/audit/data/ledger/`. The intended staged delta remains exact.
+- The canonical axiom memo is unchanged, no percentage moves, and no
+  `review-loop` is invoked. Final cold diff and stacked delivery remain.

@@ -6,18 +6,18 @@ runtime_budget: 24h
 stop_at: 2026-08-10T19:00:00-04:00
 checkpoint_interval: 30m
 deep_block: 90m
-cycle: 6
-science_block: 5
-branch: physics-loop/toe-axiom-closure-block05-20260810
+cycle: 7
+science_block: 6
+branch: physics-loop/toe-axiom-closure-block06-20260810
 base: origin/main@323d7fc32d77598f74ea6cd4d30c38dda0fe5070
-worktree: /private/tmp/toe-axiom-block05.k81R9p/worktree
+worktree: /private/tmp/toe-axiom-block06.pI72fb/worktree
 lock_mode: cooperative
 lock_owner: physics-loop
 lock_holder_id: 019fcac5-093c-70a1-ae3e-7f2ef1b002ef
-goal: maximize honest TOE closure from the current axiom surface, now testing whether finite CNOT contact can type, select, and physically prepare the explicit Gaussian compiler
-active_route: raw-content type audit plus conditioned-CNOT measure/extractor covariance, fixed-versus-transported effects, and supplied-control spectrum preparation
-hard_residual: derive or adopt a physical density functional or equivalent control weight/eigenbasis from local law, plus atom splitting or restriction, a same-effect preparation/program quotient, Record occurrence, and realized-history extension; the stronger native frame lemma remains separately open
-target_contract_status: complete_bounded_cnot_contact_type_order_and_carrier_boundary
+goal: maximize honest TOE closure from the current axiom surface, now deriving a common Gaussian content uniformizer and testing whether one fixed Record decoder can realize the varying extracted effect grade
+active_route: center-independent imaginary-trace uniformization plus entire-response classification and finite-lambda pole comparison on C=tP_z
+hard_residual: derive or adopt a physical density/target selector and a covariantly stored preparation-program tag or selected alternate law shape, together with same-effect descent, Record occurrence, and realized-history extension; general-law atom splitting and the stronger native frame lemma remain separately open
+target_contract_status: complete_common_gaussian_uniformizer_plus_bounded_fixed_decoder_entire_boundary
 A_min:
   - Lattice
   - Qubit
@@ -42,6 +42,7 @@ block_local_allowed_premises:
   - exact rational effect-weight and quantile-interval arithmetic
   - elementary dimension and measure-zero geometry of the qubit density-operator body inside raw M_2(C)
   - Pauli-X conjugation, conditioned CNOT truth tables, finite control mixtures, and conditional control restriction
+  - elementary Gaussian convolution, dominated differentiation, entire-function identity, and exact rational pole arithmetic
 forbidden_imports:
   - the Born trace formula as a premise
   - continuity, measurability, differentiability, or ray additivity unless derived
@@ -53,6 +54,7 @@ forbidden_imports:
   - physical identification of the extracted density operator, cross-condition preparation equivalence, or program occurrence
   - direct identification of a generic raw M_2(C) realization with a density operator
   - a selected control weight, eigenbasis, partial-trace implementation, or physical CNOT program
+  - a preparation/program index in Record readout, a stored tag, or a selected alternate distribution shape
 files_touched:
   - .claude/science/physics-loops/toe-axiom-closure-20260809/
   - docs/BORN_FORM_FROM_BINARY_TERNARY_SCALED_PROJECTOR_FRAME_LIFT_BOUNDED_THEOREM_NOTE_2026-08-09.md
@@ -71,6 +73,9 @@ files_touched:
   - docs/ADMISSIBILITY_CNOT_CONTACT_GAUSSIAN_EXTRACTOR_TYPE_ORDER_BOUNDED_THEOREM_NOTE_2026-08-10.md
   - scripts/admissibility_cnot_contact_gaussian_extractor_type_order_2026_08_10.py
   - logs/runner-cache/admissibility_cnot_contact_gaussian_extractor_type_order_2026_08_10.txt
+  - docs/ADMISSIBILITY_GAUSSIAN_CONTENT_ONLY_UNIFORMIZER_WEIERSTRASS_DECODER_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md
+  - scripts/admissibility_gaussian_content_only_uniformizer_weierstrass_decoder_boundary_2026_08_10.py
+  - logs/runner-cache/admissibility_gaussian_content_only_uniformizer_weierstrass_decoder_boundary_2026_08_10.txt
 open_imports:
   - current axioms do not identify local possibilities with effects or supply a menu-independent effect grading
   - current axioms do not select the binary-plus-ternary scaled-projector family as physically eligible
@@ -85,6 +90,8 @@ open_imports:
   - current axioms do not encode ordered effect programs in Record content or identify one preparation across program-dependent neighbor conditions
   - current axioms do not type generic raw possibility content as a density operator before a channel acts
   - finite CNOT/contact covariance does not select the density functional, control weight, eigenbasis, reduction interface, or same-effect quotient
+  - one fixed bounded content-only decoder cannot reproduce the finite-lambda extracted half-projector grade on an open center interval of the displayed Gaussian family
+  - current axioms do not derive or store a preparation-program tag, license an indexed decoder, or select an alternate law shape that encodes the target under one fixed event
 no_go_routes:
   - raw_singleton_measure_identification
   - normalized_finite_restriction_as_universal_effect_grade
@@ -94,6 +101,7 @@ no_go_routes:
   - universal_deterministic_content_splitting_for_atomic_laws
   - direct_raw_gaussian_sample_as_density_state
   - conditioned_cnot_covariance_as_unique_compiler_selector
+  - fixed_bounded_content_decoder_for_gaussian_open_center_family
 approach_family_coverage:
   triangle_functional_equation: reduced_to_special_frame_lemma
   spherical_harmonic_decomposition: provisional_under_measurability
@@ -116,18 +124,22 @@ approach_family_coverage:
   conditioned_cnot_extractor_covariance: exact_all_lambda_carrier_not_selector
   fixed_versus_transported_effect: exact_positive_fixed_effect_gap_and_exact_cotransport_covariance
   supplied_control_spectrum_preparation: exact_diag_one_minus_q_q_factorization_with_weight_selection_open
-strongest_unresolved_proof_obligation: derive a physical density functional or equivalent control weight/eigenbasis from local Record and Admissibility dynamics, together with a same-effect program/preparation quotient, splitting or restriction, and occurrence; or obtain explicit owner authority for the narrowed candidate addition
+  common_imaginary_trace_uniformizer: exact_center_independent_content_only_uniform_on_displayed_gaussian_family
+  fixed_content_decoder_entire_response: exact_full_bounded_kernel_classification_on_t_pz_slice
+  finite_lambda_rational_target_boundary: exact_nonremovable_pole_residual_lambda_plus_two
+  condition_indexed_threshold: exact_positive_realization_with_tag_storage_open
+strongest_unresolved_proof_obligation: derive a physical target selector and covariantly stored preparation-program tag with same-effect descent and occurrence, or select an alternate Admissibility law shape whose fixed content event carries the target; otherwise obtain explicit owner authority for the narrowed candidate addition
 trace_gate_classification: upstream_support
 reachability_to_target: advances
 landed_frontier_reachability: advances
 campaign_native_target_reachability: advances
 actual_current_surface_status: bounded-support
 target_claim_type: bounded_theorem
-conditional_surface_status: exact conditioned-CNOT carrier and extractor equivariance, raw-content type boundary, fixed-versus-transported effect split, and supplied-control spectrum preparation; physical selector, program quotient, splitting or restriction, occurrence, and history remain open
-hypothetical_axiom_status: law-derived density functional or control mixture/eigenbasis plus preparation-program-effect registration and occurrence only; no axiom edit authorized
-review_disposition: block05_direct_self_review_passed_with_disclosed_origin_main_epoch_blocker
-pr_status: open_6071_stacked_on_open_6070
-pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/6071
+conditional_surface_status: exact center-independent Gaussian content uniformizer, fixed bounded decoder entire-response classification, finite-lambda pole mismatch, and condition-indexed threshold realization; physical selector/tag, effect quotient, occurrence, and history remain open
+hypothetical_axiom_status: stored preparation-program tag, explicitly indexed decoder, or selected alternate law shape plus same-effect descent and occurrence only; no axiom edit authorized
+review_disposition: block06_direct_self_review_passed_with_disclosed_origin_main_epoch_blocker
+pr_status: local_block06_stacked_on_open_6071
+pr_url: null
 checkpoint_zero_toe_map:
   operational_quantum_records:
     repo_science_percent: 95
@@ -154,5 +166,5 @@ checkpoint_zero_toe_map:
     physical_m2_bridge_percent: 63
     autonomous_closure_percent: 34
     evidence_ceiling_percent: 99
-next_exact_action: complete Block 5 stacked delivery, then test whether the Gaussian trace-CDF can drive a law-derived physical comparator/controller with a registered effect program and Record occurrence without supplying the missing selector
+next_exact_action: complete Block 6 stacked delivery, then test whether local contact can compute and store the required covariant preparation-program tag in Record content
 stop_condition: runtime budget reached, an honest audit-ready block is packaged and the queue exhausted, or a blocker requiring external governance or user authority prevents every ranked target

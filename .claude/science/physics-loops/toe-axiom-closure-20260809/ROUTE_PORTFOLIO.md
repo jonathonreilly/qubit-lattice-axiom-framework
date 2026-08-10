@@ -62,6 +62,20 @@ families are tracked separately in `APPROACH_REGISTRY.md`.
 | nonunitary/record process | select a stationary density functional and instrument from local dynamics | not tested by the conditioned-unitary boundary | keep live |
 | refined axiom addition | register law-derived density/control map, program/effect quotient, splitting, and occurrence | candidate consequence map only | governance fallback only |
 
+## Block 6 route comparison
+
+| Route | Exact object | Outcome | Decision |
+|---|---|---|---|
+| centered real-trace uniformizer | `Phi(Re Tr(A-C))` | exact only after fixing/supplying `C` | superseded for Gaussian splitting |
+| imaginary-trace uniformizer | `Phi(Im Tr A)` for Hermitian centers | one fixed conjugation-invariant uniform scalar for every center | positive construction |
+| fixed threshold | one cut `U<=theta` | probability is constant across centers | retire for varying target |
+| arbitrary fixed bounded decoder | any Borel `r(A) in [0,1]` | Gaussian response is entire; finite-`lambda` target has nonremovable poles | retire on open center intervals |
+| condition-indexed threshold | cut common `U` at `w_lambda(t)` | exact target for every `t` and finite `lambda` | positive compiler; tag remains open |
+| tagged Record content | contact writes preparation/program tag with locked possibility | preserves a fixed readout on enlarged stored content | rank next; write law absent |
+| alternate law shape | distribution mass of one fixed event equals target | escapes entire boundary by changing the tested family | keep live; law/target selection open |
+| finite/discrete center spectrum | satisfy only finitely many preparation points | identity-theorem boundary does not apply | keep live; physical restriction absent |
+| refined axiom addition | register stored tag or indexed decoder plus effect quotient and occurrence | sufficient candidate only | governance fallback |
+
 ## Prior-art sweep
 
 Searched authority: `origin/main@323d7fc32d77598f74ea6cd4d30c38dda0fe5070`.

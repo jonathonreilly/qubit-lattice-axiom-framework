@@ -205,3 +205,43 @@ Next exact action: test whether the existing Gaussian trace-CDF can be made a
 law-derived physical comparator/controller with a registered effect program
 and Record occurrence, or whether that construction necessarily supplies the
 same selector and program quotient it is meant to derive.
+
+## Current common-uniformizer/fixed-decoder block
+
+Block 6 executes that comparator route. Since every displayed Gaussian center
+is Hermitian, `Im Tr A` has center-independent mean zero and variance one.
+Thus `U(A)=Phi(Im Tr A)` is a single content-only uniform variable for every
+center and is invariant under unitary conjugation. The Gaussian completion no
+longer needs center subtraction or a separate splitting resource.
+
+The remaining threshold cannot be hidden inside one fixed bounded Record
+readout. Along `C=tP_z`, the Gaussian expectation of any fixed
+`r(A) in [0,1]` extends to an entire function of complex `t`. The finite-
+`lambda` fixed-effect target
+`(t^2+2+lambda)/(2(t^2+4+2lambda))` has a nonremovable pole, leaving exact
+cross-multiplied residual `lambda+2`. Equality is impossible on any nonempty
+open center interval. This covers every deterministic or stochastic bounded
+full-content kernel, not just threshold ansatzes.
+
+A threshold indexed by `lambda`, preparation, and effect realizes the target
+exactly using the common `U`. The physical residual is therefore a contact law
+that derives and stores that preparation/program tag and same-effect identity,
+or an alternate Admissibility law shape that encodes the varying mass under a
+fixed event. The source carries the complete N1--N8 gate, preserves tagged
+Records, changed laws, finite center sets, nonunitary processes, and occurrence
+as live routes, and claims no global decoder/Record no-go.
+
+The primary runner is `PASS=21 FAIL=0`; independent SymPy reproduces the
+variance, target formula, pole location, residual, and representative weights.
+Nineteen process-local mutations reach their intended named failure families.
+The graph is regenerated at 5,452 nodes / 15,512 edges; the new note has
+out-degree four and the harness gains one row. Direct conformance passes. The
+full pipeline reaches only the known current-main dependency-policy epoch
+mismatch owned by PR #6061 after every earlier stage passes; 1,055 tracked
+generated changes and 818 generated ledger shards were cleaned. The canonical
+axiom memo and checkpoint-zero percentages remain unchanged. Continue without
+`review-loop`.
+
+Next exact action: test a local tag-writing contact construction and its
+content-only storage type before asking for owner authority on the narrowed
+Record/Admissibility update.

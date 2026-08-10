@@ -1,0 +1,631 @@
+{
+  "actual_current_surface_status": "bounded-support",
+  "artifact": "Cycle 973 bounded 26-row repair map hand-off",
+  "audit_status_authority": "independent audit lane only",
+  "bearing_vocabulary": {
+    "BEARS": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
+    "SILENT": "The Cycle 970/972 state-resolved/marginal separation has no logical role in the row's semantic delta."
+  },
+  "caps": {
+    "delta_vocabulary_size": 4,
+    "direct_authoring_provenance_file_cap": 6,
+    "direct_authoring_provenance_files_declared": 3,
+    "map_row_cap_exact": 26,
+    "pinned_corpus_blob_reads_exact": 26,
+    "snapshot_path_families": 2,
+    "witness_vocabulary_size": 2,
+    "working_tree_corpus_reads": 0
+  },
+  "claim_type": "meta",
+  "cycle971_text_ast_provenance": [
+    {
+      "path": "scripts/frontier_cycle971_axiom_fidelity_reread_2026_08_09.py",
+      "sha256": "6def914db02ae5cd6c4187a0fc20b11bd640bbb223cfce73ba2df7f675f4be63",
+      "use": "text and AST provenance for the pinned census and MEANING_CHANGED set"
+    },
+    {
+      "path": "docs/AXIOM_FIDELITY_REREAD_CYCLE971_BOUNDED_THEOREM_NOTE_2026-08-09.md",
+      "sha256": "0258535aea69bc7091e1ff1bae84a822ea9d9d684b68941c00e0e9fef673aa39",
+      "use": "text provenance for the old/new semantic boundary"
+    },
+    {
+      "path": "outputs/axiom_fidelity_reread_cycle971_receipt_2026_08_09.json",
+      "sha256": "c3c25de48b46f4aecf32b0e56a1a07275beec932bbb16eb3e16308d4fc7b8455",
+      "use": "text provenance for the exact 26-path hand-off set"
+    }
+  ],
+  "cycle971_text_ast_provenance_commit": "0c453230c6334d8a9c0569925a8f95d96509e2f4",
+  "delta_class_histogram": {
+    "ORTHOGONAL_RESTATEMENT": 6,
+    "STRICTLY_STRONGER": 8,
+    "STRICTLY_WEAKER": 7,
+    "UNDERDETERMINED_BY_TEXT": 5
+  },
+  "delta_vocabulary": {
+    "ORTHOGONAL_RESTATEMENT": "The readings predicate different typed objects or bridges and neither row proposition entails the other without an extra identification.",
+    "STRICTLY_STRONGER": "The old-reading proposition is entailed by the new-reading proposition, and the converse fails; this occurs when a weaker distribution premise is asked to carry the same conditional selector conclusion.",
+    "STRICTLY_WEAKER": "The new-reading proposition is entailed by the old-reading proposition, and the converse fails on an allowed same-support weight-change model.",
+    "UNDERDETERMINED_BY_TEXT": "The row mixes historical, supplied, or resolution-ambiguous readings, so its text does not determine one comparable old/new proposition."
+  },
+  "families": {
+    "corpus_family": "tracked docs/ and scripts/ blobs at the literal snapshot pin",
+    "delta_family": "the four closed-vocabulary relations in delta_vocabulary",
+    "discharge_family": "one named smallest machine-checkable obligation per row; no obligation is attempted",
+    "quote_family": "exact pinned source blocks or exact Python AST string constants",
+    "row_family": "Cycle 971 MEANING_CHANGED paths only",
+    "witness_family": "Cycle 970 state-resolved 1/1 and marginal 0/0 construction, proved covariant and unique by Cycle 972"
+  },
+  "integrity": {
+    "all_obligations_named_and_unattempted": true,
+    "all_quotes_nonempty_and_pinned": true,
+    "closed_delta_vocabulary": true,
+    "closed_witness_vocabulary": true,
+    "literal_snapshot_objects_match": true,
+    "row_count_is_task_contract_26": true,
+    "row_paths_unique_and_sorted": true
+  },
+  "map_digest": "56e0f43f19ad2588b8cb3d78d19c94997e1bf8ce9e5e731e6f5d5d6fb15b94fe",
+  "meaning_changed_path_digest": "3241f04f3b1ffe136c5b2b20bc76ab5acdb6d3c6f9c8cb66b718f3288acfdd01",
+  "measurement_only": true,
+  "pinned_objects": {
+    "docs_tree": "7dbc99ea9bb07250a72fff4722d37cdc1c573daf",
+    "scripts_tree": "b74e1639fc2a2250c0de2a56ad33665533a22c81",
+    "snapshot_commit": "323d7fc32d77598f74ea6cd4d30c38dda0fe5070",
+    "snapshot_tree": "45f8bd67eedaccb34918cb6804e850e1ba7f21fb"
+  },
+  "pinned_snapshot_commit": "323d7fc32d77598f74ea6cd4d30c38dda0fe5070",
+  "repairs_attempted": 0,
+  "row_count": 26,
+  "rows": [
+    {
+      "cycle970_972_bearing_reason": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
+      "cycle970_972_witness": "BEARS",
+      "delta_class": "ORTHOGONAL_RESTATEMENT",
+      "minimal_discharge": {
+        "attempted_here": false,
+        "obligation_id": "O973-DISTRIBUTION-RULE-CODOMAIN",
+        "smallest_machine_checkable_fact": "Encode each classified rule value as a normalized probability distribution and machine-check equivariance plus the asserted support/value projection."
+      },
+      "path": "docs/ADMISSIBILITY_RULE_COVARIANCE_EXTENSION_CLASSIFICATION_OPENNESS_ACHIRAL_ORIENTED_FRAME_MINIMAL_CHIRAL_CHANNEL_BOUNDED_THEOREM_NOTE_2026-07-03.md",
+      "pinned_blob": "20955a2e976f7d3a1f38fed55cd0b1bdd91f82b4",
+      "pinned_blob_sha256": "fe56ef6c21c00732281676cca1724231951e40fc2b746f255f655307dc76001d",
+      "quoted_old_semantics_consumption": {
+        "exact_quoted_source_block": "The Admissibility axiom supplies \"one fixed nearest-neighbor admissibility\nrule, covariant under lattice translations and proper cubic rotations\", with\n\"the available possibilities ... determined by, and vary[ing] with, the\nnearest-neighbor conditions\"\n([`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)).",
+        "line_end": 30,
+        "line_start": 26,
+        "quote_extraction": "punctuation-bounded exact raw source sentence containing the literal anchor"
+      },
+      "what_the_row_asserts_under_old_availability_reading": "The framework supplies a support-valued nearest-neighbor rule whose available-possibility set varies, and the note classifies proper-to-full cubic extensions of rule-value channels on named alphabets.",
+      "what_the_same_text_asserts_under_landed_distribution_reading": "The framework supplies a neighbor-conditioned probability distribution; the note's scalar/frame rule-value channels are not thereby identified with either that distribution or its support."
+    },
+    {
+      "cycle970_972_bearing_reason": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
+      "cycle970_972_witness": "BEARS",
+      "delta_class": "ORTHOGONAL_RESTATEMENT",
+      "minimal_discharge": {
+        "attempted_here": false,
+        "obligation_id": "O973-BOOTSTRAP-SUPPORT-LIFT",
+        "smallest_machine_checkable_fact": "Set A(c)=supp(mu_c) for the note's rule and rerun the nonemptiness, improper-orbit, and propagation-closure checks on A."
+      },
+      "path": "docs/BOOTSTRAP_CONTINUATION_AVAILABILITY_NONEMPTY_FREE_ORBIT_REDUCTION_PROPAGATION_CLOSURE_BOUNDED_THEOREM_NOTE_2026-07-04.md",
+      "pinned_blob": "d7cc44c356540791412a11f708774a55bee5d069",
+      "pinned_blob_sha256": "95ec15dd98eb8467ed3beb3411d03145866c89ae43d0e26b7988cd58526475eb",
+      "quoted_old_semantics_consumption": {
+        "exact_quoted_source_block": "`I(empty) = 0`; the Admissibility sentences (\"one fixed\n  nearest-neighbor admissibility rule, covariant under lattice\n  translations and proper cubic rotations\"; \"the available possibilities\n  are determined by, and vary with, the nearest-neighbor conditions\");\n  the open-gates item placing formation rules downstream.",
+        "line_end": 99,
+        "line_start": 95,
+        "quote_extraction": "punctuation-bounded exact raw source sentence containing the literal anchor"
+      },
+      "what_the_row_asserts_under_old_availability_reading": "The first available set and every later availability map are support sets; their proper/improper orbit behavior controls nonemptiness, chirality, and propagation closure.",
+      "what_the_same_text_asserts_under_landed_distribution_reading": "A probability distribution exists at each condition and varies state-resolved, but its support need not carry the note's chirality or propagation action."
+    },
+    {
+      "cycle970_972_bearing_reason": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
+      "cycle970_972_witness": "BEARS",
+      "delta_class": "STRICTLY_WEAKER",
+      "minimal_discharge": {
+        "attempted_here": false,
+        "obligation_id": "O973-COMPOSITE-SUPPORT-NONCONSTANCY",
+        "smallest_machine_checkable_fact": "Exhibit two allowed neighbor conditions whose one-site distribution supports differ, while separately preserving the note's stated absence of a pair-level menu."
+      },
+      "path": "docs/BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md",
+      "pinned_blob": "754e98cb997dcd667986fd3e35b36ad49320a72d",
+      "pinned_blob_sha256": "bd019a4a2ba0827b428c4af6db1720b2a0f27f0b1a0aaf8f065d0f90fb69163f",
+      "quoted_old_semantics_consumption": {
+        "exact_quoted_source_block": "The minimal axioms\nsupply site-local possibility domains with neighbor-dependent availability -\nnot a pair-level possibility domain, not bonded-pair selection, not\nconfiguration-independent menu eligibility, and not records that lock composite\nentangled possibilities.",
+        "line_end": 92,
+        "line_start": 88,
+        "quote_extraction": "punctuation-bounded exact raw source sentence containing the literal anchor"
+      },
+      "what_the_row_asserts_under_old_availability_reading": "The minimal axioms supply neighbor-dependent one-site availability support but no pair-level domain or entangled-menu eligibility.",
+      "what_the_same_text_asserts_under_landed_distribution_reading": "The minimal axioms supply a neighbor-dependent one-site probability distribution and still no pair-level domain or entangled-menu eligibility; support dependence is no longer supplied."
+    },
+    {
+      "cycle970_972_bearing_reason": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
+      "cycle970_972_witness": "BEARS",
+      "delta_class": "STRICTLY_WEAKER",
+      "minimal_discharge": {
+        "attempted_here": false,
+        "obligation_id": "O973-BONDED-PAIR-SUPPORT-BRIDGE",
+        "smallest_machine_checkable_fact": "Machine-check that the positive support relevant to the bonded-pair construction changes with an adjacent condition and is the same support object consumed by T2."
+      },
+      "path": "docs/COLOR_ARENA_BONDED_PAIR_ADMISSIBILITY_CROSS_SITE_SURFACE_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+      "pinned_blob": "5dcff503dc34b95976a270af7a1620e3dfe1747e",
+      "pinned_blob_sha256": "a6118272095e4a692c02d257a1f76a4045cd28e4869f63cb6650691c4184c387",
+      "quoted_old_semantics_consumption": {
+        "exact_quoted_source_block": "The Admissibility sentence is consumed at its entailed strength only: the availability rule's content is indexed by nearest-neighbor adjacency, so the rule cannot be stated on a single site alone.",
+        "line_end": 14,
+        "line_start": 14,
+        "quote_extraction": "punctuation-bounded exact raw source sentence containing the literal anchor"
+      },
+      "what_the_row_asserts_under_old_availability_reading": "A site's availability support is indexed by nearest-neighbor adjacency, so the availability rule is not a single-site-only object.",
+      "what_the_same_text_asserts_under_landed_distribution_reading": "A site's probability distribution is indexed by nearest-neighbor conditions; that is weaker than nonconstant support and does not itself supply a bonded-pair carrier."
+    },
+    {
+      "cycle970_972_bearing_reason": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
+      "cycle970_972_witness": "BEARS",
+      "delta_class": "ORTHOGONAL_RESTATEMENT",
+      "minimal_discharge": {
+        "attempted_here": false,
+        "obligation_id": "O973-DYNAMICS-UNIFORM-SUPPORT-LIFT",
+        "smallest_machine_checkable_fact": "Define mu_c uniformly on every nonempty exhibited available set and check normalization, covariance, supp(mu_c)=A(c), and mu_c!=mu_c' for the displayed control conditions."
+      },
+      "path": "docs/DYNAMICS_CONTENT_SORT_ORDERING_DERIVED_ACCUMULATION_IRREDUCIBLE_BOUNDED_NOTE_2026-07-03.md",
+      "pinned_blob": "e0fadcaf294d5c6c0057e45962947bc1c963bcd3",
+      "pinned_blob_sha256": "cd2fa92ebb833efbdb4184fef21059d3393f9b1e50792fdaa354afbd64c2f6b4",
+      "quoted_old_semantics_consumption": {
+        "exact_quoted_source_block": "This rule is determined by the nearest-neighbor conditions, varies with them, references only relative neighbor offsets (so it is covariant under lattice translations and proper cubic rotations), and selects possibilities only through supplied structure (neighbor record content), never through the site's own coordinates.",
+        "line_end": 101,
+        "line_start": 101,
+        "quote_extraction": "punctuation-bounded exact raw source sentence containing the literal anchor"
+      },
+      "what_the_row_asserts_under_old_availability_reading": "The explicit set-valued rule changes available sets with neighbor records and therefore witnesses the old vary-with clause while leaving dynamics unforced.",
+      "what_the_same_text_asserts_under_landed_distribution_reading": "The same set-valued rule remains a model choice, while the landed axiom concerns a probability distribution that the row never defines; the support model and distribution assertion are unlinked typed statements."
+    },
+    {
+      "cycle970_972_bearing_reason": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
+      "cycle970_972_witness": "BEARS",
+      "delta_class": "ORTHOGONAL_RESTATEMENT",
+      "minimal_discharge": {
+        "attempted_here": false,
+        "obligation_id": "O973-FROZEN-REGION-DISTRIBUTION-LIFT",
+        "smallest_machine_checkable_fact": "Construct a normalized mu_c with support exactly the exhibited union-over-recorded-neighbors set and rerun the boundary containment and cavity controls."
+      },
+      "path": "docs/FROZEN_REGION_RECORD_SATURATION_LOCAL_FINALITY_BOUNDARY_INFLUENCE_BOUNDED_NOTE_2026-07-03.md",
+      "pinned_blob": "06c0893e6bf6e7307ff2c554f9f725cc28cfd225",
+      "pinned_blob_sha256": "a1e953b176d7f5e203a6c8c639e288c4ee02bc7e35b6d5c291f17998b6c6e323",
+      "quoted_old_semantics_consumption": {
+        "exact_quoted_source_block": "**Availability-rule dependence of T3** -- the axiom fixes the clause\n   \"determined by, and vary with, the nearest-neighbor conditions\", not the\n   specific rule; the exhibited union-over-recorded-neighbors rule is a note-level\n   model, and the monotone-containment / cavity-singleton split is a property of\n   THIS rule.",
+        "line_end": 298,
+        "line_start": 294,
+        "quote_extraction": "punctuation-bounded exact raw source sentence containing the literal anchor"
+      },
+      "what_the_row_asserts_under_old_availability_reading": "For the exhibited support-valued rule, permanence gives monotone support containment and cavity-only singleton pinning as neighbor records accumulate.",
+      "what_the_same_text_asserts_under_landed_distribution_reading": "The landed clause constrains a probability distribution, while the note's monotone-containment theorem remains about an independently exhibited support-valued rule."
+    },
+    {
+      "cycle970_972_bearing_reason": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
+      "cycle970_972_witness": "BEARS",
+      "delta_class": "ORTHOGONAL_RESTATEMENT",
+      "minimal_discharge": {
+        "attempted_here": false,
+        "obligation_id": "O973-PROTOCOL-DISTRIBUTION-REALIZATION",
+        "smallest_machine_checkable_fact": "Supply an explicit protocol-to-mu map and machine-check that the note's all-axis factor-support predicate is equivalent to the required state-resolved distribution variation on the named ten protocols."
+      },
+      "path": "docs/KINETIC_ISOTROPY_3D_FACTORIZED_PROTOCOL_SELECTION_ON_ANALYZED_CLASSES_BOUNDED_THEOREM_NOTE_2026-07-09.md",
+      "pinned_blob": "060ca434261c21da36c836069059abb1305f3da7",
+      "pinned_blob_sha256": "cf34226b18369eaf50353c551782f7876e92008aa7ca8281498adc8ba583d441",
+      "quoted_old_semantics_consumption": {
+        "exact_quoted_source_block": "> For each site, the available possibilities are determined by, and vary with, the nearest-neighbor conditions.",
+        "line_end": 96,
+        "line_start": 96,
+        "quote_extraction": "punctuation-bounded exact raw source sentence containing the literal anchor"
+      },
+      "what_the_row_asserts_under_old_availability_reading": "The quoted nonconstant-support clause motivates an all-axis nonvacuous factor-support filter, conditional on a protocol--Admissibility support realization.",
+      "what_the_same_text_asserts_under_landed_distribution_reading": "Distribution variation may occur at fixed factor support, so the landed clause and the note's factor-support predicate are different typed filters."
+    },
+    {
+      "cycle970_972_bearing_reason": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
+      "cycle970_972_witness": "BEARS",
+      "delta_class": "STRICTLY_WEAKER",
+      "minimal_discharge": {
+        "attempted_here": false,
+        "obligation_id": "O973-ARENA-SPLIT-SUPPORT-NONCONSTANCY",
+        "smallest_machine_checkable_fact": "Exhibit two neighbor conditions on the arena surface with different positive supports for the landed distributions."
+      },
+      "path": "docs/MATTER_REALIZATION_ARENA_SPLIT_PRESERVATION_UNDER_AXIS_COUPLED_FRAMES_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+      "pinned_blob": "8f03421ca7dd22e62820670c918c2e8f388c6013",
+      "pinned_blob_sha256": "fac873c8885e36c722387bc0b59725504eac10fc5108bf205b4d945edbeaee3b",
+      "quoted_old_semantics_consumption": {
+        "exact_quoted_source_block": "> \"For each site, the available possibilities are determined by, and vary with, the nearest-neighbor conditions.\"",
+        "line_end": 57,
+        "line_start": 57,
+        "quote_extraction": "punctuation-bounded exact raw source sentence containing the literal anchor"
+      },
+      "what_the_row_asserts_under_old_availability_reading": "The current foundation is quoted as requiring neighbor-varying availability support alongside the independent exchange-split calculation.",
+      "what_the_same_text_asserts_under_landed_distribution_reading": "The current foundation requires neighbor-varying probability distributions; the exchange-split calculation is unchanged, but support variation is not supplied."
+    },
+    {
+      "cycle970_972_bearing_reason": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
+      "cycle970_972_witness": "BEARS",
+      "delta_class": "STRICTLY_WEAKER",
+      "minimal_discharge": {
+        "attempted_here": false,
+        "obligation_id": "O973-KS-EDGE-DIAG-POSITIVE-MASS",
+        "smallest_machine_checkable_fact": "Check that every edge/diagonal projector used by the bridge has positive mu_c mass at its stated condition and that the relevant supports change where claimed."
+      },
+      "path": "docs/MATTER_REALIZATION_KS_HOP_BRIDGE_EDGE_DIAG_MEMBERSHIP_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+      "pinned_blob": "b3beee9be28d84631acb35af0139ec1848a6fd46",
+      "pinned_blob_sha256": "69f8e4cffd4570d470eb34bdc9780b2eddff69463b242e8f9c7b6da83d378d47",
+      "quoted_old_semantics_consumption": {
+        "exact_quoted_source_block": "> \"For each site, the available possibilities are determined by, and vary with,\n> the nearest-neighbor conditions.\"",
+        "line_end": 43,
+        "line_start": 42,
+        "quote_extraction": "punctuation-bounded exact raw source sentence containing the literal anchor"
+      },
+      "what_the_row_asserts_under_old_availability_reading": "Neighbor-varying availability support is available as foundation context for edge/diagonal membership on the KS-hop bridge surface.",
+      "what_the_same_text_asserts_under_landed_distribution_reading": "Only the probability distribution must vary; edge/diagonal positive-support membership does not follow from that variation."
+    },
+    {
+      "cycle970_972_bearing_reason": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
+      "cycle970_972_witness": "BEARS",
+      "delta_class": "STRICTLY_STRONGER",
+      "minimal_discharge": {
+        "attempted_here": false,
+        "obligation_id": "O973-K1-BILINEAR-DISTRIBUTION-SEPARATION",
+        "smallest_machine_checkable_fact": "Under an explicit kinetic-to-distribution bridge, exhaust the licensed K0 class and prove every mu_c is neighbor-constant while a K1 mu_c varies."
+      },
+      "path": "docs/MATTER_REALIZATION_QUBIT_LEVEL_CROSS_SITE_BILINEAR_FROM_K1_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-07-06.md",
+      "pinned_blob": "63ad3f8ec9faf6a50174cdb8c90686f31a53947a",
+      "pinned_blob_sha256": "71905f9a486472d4ae9ffcda6d37e799961472c1c36778aa58cbbd172f50b4fe",
+      "quoted_old_semantics_consumption": {
+        "exact_quoted_source_block": "> For each site, the available possibilities are determined by, and vary with,\n> the nearest-neighbor conditions.",
+        "line_end": 34,
+        "line_start": 33,
+        "quote_extraction": "punctuation-bounded exact raw source sentence containing the literal anchor"
+      },
+      "what_the_row_asserts_under_old_availability_reading": "Nonconstant availability support excludes the neighbor-constant K0 support structure, allowing the licensed K1 cross-site bilinear construction.",
+      "what_the_same_text_asserts_under_landed_distribution_reading": "The same K1 conclusion would have to follow from the weaker fact that probabilities vary, even though K0 can vary weights on constant support."
+    },
+    {
+      "cycle970_972_bearing_reason": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
+      "cycle970_972_witness": "BEARS",
+      "delta_class": "ORTHOGONAL_RESTATEMENT",
+      "minimal_discharge": {
+        "attempted_here": false,
+        "obligation_id": "O973-PLAQUETTE-DEPENDENCY-SUPPORT-LIFT",
+        "smallest_machine_checkable_fact": "Machine-check that every term carrier lies in supp(mu_c) generated from its stated one-step dependency set and that this identification is covariant."
+      },
+      "path": "docs/PER_PLAQUETTE_LICENSE_ONE_TICK_REACHABILITY_DERIVATION_NARROW_THEOREM_NOTE_2026-07-12.md",
+      "pinned_blob": "355ae2f6920a07f941750294b80da86b9739ad5a",
+      "pinned_blob_sha256": "c2fdb59e76df4774d86c17db9d380f8bf6a6f84b0da49bf221a2e3c783cb9057",
+      "quoted_old_semantics_consumption": {
+        "exact_quoted_source_block": "For each site, the\n> available possibilities are determined by, and vary with, the\n> nearest-neighbor conditions.",
+        "line_end": 132,
+        "line_start": 130,
+        "quote_extraction": "punctuation-bounded exact raw source sentence containing the literal anchor"
+      },
+      "what_the_row_asserts_under_old_availability_reading": "Neighbor-dependent availability support is used as carrier-level motivation for one-tick dependency-set support of each plaquette term.",
+      "what_the_same_text_asserts_under_landed_distribution_reading": "Neighbor-conditioned probabilities do not identify the carrier support of a term with the distribution's positive support or prove one-tick reachability."
+    },
+    {
+      "cycle970_972_bearing_reason": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
+      "cycle970_972_witness": "BEARS",
+      "delta_class": "STRICTLY_STRONGER",
+      "minimal_discharge": {
+        "attempted_here": false,
+        "obligation_id": "O973-RECORD-KINETIC-DISTRIBUTION-SEPARATION",
+        "smallest_machine_checkable_fact": "Under the record/kinetic realization, prove all licensed K0 conditional distributions are identical across neighbor contents and construct one varying K1 distribution with record-eligible positive support."
+      },
+      "path": "docs/REALIZED_KINETIC_BRANCH_CONDITIONAL_RECORD_REGISTRATION_NARROW_THEOREM_NOTE_2026-07-02.md",
+      "pinned_blob": "de2d33ef647fc3e0acaf8acfc10e56d3b858afb0",
+      "pinned_blob_sha256": "d55c408ad59e508dfb02e2e5790d1a92250b049b0d05c6eb7ca1526ef7ff1751",
+      "quoted_old_semantics_consumption": {
+        "exact_quoted_source_block": "It uses the exact axiom clauses\n\"for each site, the available possibilities are determined by, and vary with,\nthe nearest-neighbor conditions\" and \"locks exactly one admissible local\npossibility\" only after a supplied realized state contains the relevant\nrecord.",
+        "line_end": 147,
+        "line_start": 143,
+        "quote_extraction": "punctuation-bounded exact raw source sentence containing the literal anchor"
+      },
+      "what_the_row_asserts_under_old_availability_reading": "K0 admits only neighbor-constant availability maps whereas K1 admits a neighbor-conditioned support map, so a realized record can discriminate the branches under the old variation premise.",
+      "what_the_same_text_asserts_under_landed_distribution_reading": "The same branch discrimination would have to follow from distribution variation, although K0's constant support can carry condition-dependent weights."
+    },
+    {
+      "cycle970_972_bearing_reason": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
+      "cycle970_972_witness": "BEARS",
+      "delta_class": "UNDERDETERMINED_BY_TEXT",
+      "minimal_discharge": {
+        "attempted_here": false,
+        "obligation_id": "O973-DISCRIMINATOR-RESOLUTION-SPEC",
+        "smallest_machine_checkable_fact": "Specify the conditioning state and marginalization map, then check whether mu variation is equivalent to nonconstant qubit-factor support on both licensed branches."
+      },
+      "path": "docs/REALIZED_KINETIC_BRANCH_DISCRIMINATOR_DICHOTOMY_NARROW_THEOREM_NOTE_2026-07-02.md",
+      "pinned_blob": "960274498dc869044f87012300d23516dd5c6c81",
+      "pinned_blob_sha256": "22aed40a90df5a44240fe0e3f03f4d73ac5ad21a2b5b8e8c188de72eafb1f34c",
+      "quoted_old_semantics_consumption": {
+        "exact_quoted_source_block": "The one-bit residual is NOT decided here: it becomes the named\ninterpretive question whether the Admissibility axiom's clause (\"for each site,\nthe available possibilities are determined by, and vary with, the\nnearest-neighbor conditions\") is read as a nonvacuous determination on the\nqubit factor.",
+        "line_end": 142,
+        "line_start": 138,
+        "quote_extraction": "punctuation-bounded exact raw source sentence containing the literal anchor"
+      },
+      "what_the_row_asserts_under_old_availability_reading": "The residual asks whether availability support varies nonvacuously on the qubit factor, which would distinguish K1 from K0.",
+      "what_the_same_text_asserts_under_landed_distribution_reading": "The landed reading asks whether a probability distribution varies, but the row does not specify state-resolved versus marginal evaluation or a distribution-to-qubit-support map."
+    },
+    {
+      "cycle970_972_bearing_reason": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
+      "cycle970_972_witness": "BEARS",
+      "delta_class": "STRICTLY_STRONGER",
+      "minimal_discharge": {
+        "attempted_here": false,
+        "obligation_id": "O973-K1-DISTRIBUTION-SEPARATION",
+        "smallest_machine_checkable_fact": "Under a pinned kinetic-to-mu realization, prove K0 cannot realize any allowed state-resolved distribution change and K1 can, with the quantifiers covering the full licensed two-class surface."
+      },
+      "path": "docs/REALIZED_KINETIC_BRANCH_SELECTED_BY_ADMISSIBILITY_VARIATION_NARROW_THEOREM_NOTE_2026-07-02.md",
+      "pinned_blob": "6de6f80c7c1a4ef98275079df4f5b871ee0d0c90",
+      "pinned_blob_sha256": "b21c978caf40e27c5e0c0e0887a7d680a0297d832b00b039ecacce655178bff1",
+      "quoted_old_semantics_consumption": {
+        "exact_quoted_source_block": "The minimal axiom note now states the clarified Admissibility clause:\n\"For each site, the available possibilities are determined by, and vary with, the nearest-neighbor conditions.\"",
+        "line_end": 30,
+        "line_start": 29,
+        "quote_extraction": "punctuation-bounded exact raw source sentence containing the literal anchor"
+      },
+      "what_the_row_asserts_under_old_availability_reading": "The load-bearing support-variation premise removes K0 and selects K1 on the licensed two-class surface.",
+      "what_the_same_text_asserts_under_landed_distribution_reading": "The same K1 selection would be asserted from the weaker premise that the distribution varies, which allows same-support weight changes on K0."
+    },
+    {
+      "cycle970_972_bearing_reason": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
+      "cycle970_972_witness": "BEARS",
+      "delta_class": "STRICTLY_STRONGER",
+      "minimal_discharge": {
+        "attempted_here": false,
+        "obligation_id": "O973-FRAME-ORBIT-DISTRIBUTION-SEPARATION",
+        "smallest_machine_checkable_fact": "For every licensed local-U(1) frame, prove the induced mu family is neighbor-constant on K0 and varying on K1, and verify the property is a frame-orbit class function."
+      },
+      "path": "docs/REALIZED_KINETIC_BRANCH_SELECTION_FRAME_CLASS_TRANSPORT_NARROW_THEOREM_NOTE_2026-07-02.md",
+      "pinned_blob": "7dac7b1df9ce0a1d58dac77c93e920c0d851b07a",
+      "pinned_blob_sha256": "f4b423897680390c5417bbbfc48b3438bb9120b624c34ae3d2bebd14f599e1dc",
+      "quoted_old_semantics_consumption": {
+        "exact_quoted_source_block": "The\nselection here uses the current minimal-axiom Admissibility variation premise\nplus the licensed-surface assumptions, as in the selection sibling.",
+        "line_end": 38,
+        "line_start": 36,
+        "quote_extraction": "punctuation-bounded exact raw source sentence containing the literal anchor"
+      },
+      "what_the_row_asserts_under_old_availability_reading": "A support-variation K1 selector is transported as a class function over the licensed local-U(1) orbit.",
+      "what_the_same_text_asserts_under_landed_distribution_reading": "A distribution-variation selector would be transported over that orbit without text excluding same-support K0 weight variation, strengthening the conditional selection claim."
+    },
+    {
+      "cycle970_972_bearing_reason": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
+      "cycle970_972_witness": "BEARS",
+      "delta_class": "STRICTLY_STRONGER",
+      "minimal_discharge": {
+        "attempted_here": false,
+        "obligation_id": "O973-GAUGED-DISTRIBUTION-SEPARATION",
+        "smallest_machine_checkable_fact": "For every tested fixed background and both branches, construct the induced mu and verify K0 equality and K1 inequality across neighbor conditions after factor recovery."
+      },
+      "path": "docs/REALIZED_KINETIC_BRANCH_SELECTION_GAUGED_BACKGROUND_INVARIANCE_NARROW_THEOREM_NOTE_2026-07-02.md",
+      "pinned_blob": "9bf32ce61d1b3397c258c98425d7bbc77a5fd481",
+      "pinned_blob_sha256": "9b7bab4563d3230878c8d1b58085d8c4e9258e855bb2a5eff28919168a8edda2",
+      "quoted_old_semantics_consumption": {
+        "exact_quoted_source_block": "Therefore the clarified clause \"the available possibilities are\ndetermined by, and vary with, the nearest-neighbor conditions\" still selects\nthe K1 Dirac branch on this bounded fixed-background gauged surface.",
+        "line_end": 17,
+        "line_start": 15,
+        "quote_extraction": "punctuation-bounded exact raw source sentence containing the literal anchor"
+      },
+      "what_the_row_asserts_under_old_availability_reading": "The support-variation selector remains K1-only under the tested fixed legal gauge backgrounds.",
+      "what_the_same_text_asserts_under_landed_distribution_reading": "The same K1-only conclusion would have to hold for distribution variation, which need not change support and is not fixed by the qubit-algebra gaps."
+    },
+    {
+      "cycle970_972_bearing_reason": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
+      "cycle970_972_witness": "BEARS",
+      "delta_class": "UNDERDETERMINED_BY_TEXT",
+      "minimal_discharge": {
+        "attempted_here": false,
+        "obligation_id": "O973-SPECTRAL-SUPPORT-BRIDGE",
+        "smallest_machine_checkable_fact": "Specify mu_c and check supp(mu_c) equals the nontrivial spectral-projector set of F(c) at the witness conditions, with no appended response sector."
+      },
+      "path": "docs/RECORD_FAITHFUL_CUBIC_NEIGHBOR_RESPONSE_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+      "pinned_blob": "0e1ca9482fffb927eb70985cfbc8bd02d773bce6",
+      "pinned_blob_sha256": "1d7b8da198101597c50d1aa246301f67820326130a3a8d4fb816efb2982a0673",
+      "quoted_old_semantics_consumption": {
+        "exact_quoted_source_block": "> For at least one nontrivially varying neighbor condition, the available\n> rank-one record possibilities are the nontrivial spectral projectors of the\n> realized response `F(c)`; no independent response sector is appended that\n> has no effect on formation support or weights.",
+        "line_end": 60,
+        "line_start": 57,
+        "quote_extraction": "punctuation-bounded exact raw source sentence containing the literal anchor"
+      },
+      "what_the_row_asserts_under_old_availability_reading": "A separately supplied bridge identifies varying available rank-one possibilities with nontrivial spectral projectors of F(c), yielding b!=0.",
+      "what_the_same_text_asserts_under_landed_distribution_reading": "The conditional bridge may mean support or weights under the landed distribution reading, and the text mentions both formation support and weights without fixing which varies."
+    },
+    {
+      "cycle970_972_bearing_reason": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
+      "cycle970_972_witness": "BEARS",
+      "delta_class": "UNDERDETERMINED_BY_TEXT",
+      "minimal_discharge": {
+        "attempted_here": false,
+        "obligation_id": "O973-ATOM-POSITIVE-MASS",
+        "smallest_machine_checkable_fact": "Define the declared mu_c and check P1 has positive mass at every claimed lock condition, supp(mu_c) equals the declared rule, and mu_c varies at the stated control."
+      },
+      "path": "docs/RECORD_LOCAL_FINITE_ATOM_AVAILABILITY_NARROW_THEOREM_NOTE_2026-06-17.md",
+      "pinned_blob": "7a2c857e57e407e559be5948bda7ffffd32d6ca0",
+      "pinned_blob_sha256": "35e55b0a58c374b9c7df1d66a0b6171a1e56a83f98776041cd0ba4dd2082fe3e",
+      "quoted_old_semantics_consumption": {
+        "exact_quoted_source_block": "The live memo adds Admissibility: one fixed nearest-neighbor rule, covariant\nunder lattice translations and proper cubic rotations, under which the\navailable possibilities at each site are determined by, and vary with, the\nnearest-neighbor conditions.",
+        "line_end": 130,
+        "line_start": 127,
+        "quote_extraction": "punctuation-bounded exact raw source sentence containing the literal anchor"
+      },
+      "what_the_row_asserts_under_old_availability_reading": "A declared set-valued admissibility instance makes P1 available and varies its available set with neighbor conditions; record eligibility is support membership.",
+      "what_the_same_text_asserts_under_landed_distribution_reading": "Availability is positive support of a probability distribution, but the row and runner mix a declared support rule with the landed distribution sentence without specifying probabilities."
+    },
+    {
+      "cycle970_972_bearing_reason": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
+      "cycle970_972_witness": "BEARS",
+      "delta_class": "STRICTLY_WEAKER",
+      "minimal_discharge": {
+        "attempted_here": false,
+        "obligation_id": "O973-KINETIC-COUNTERMODEL-DISTRIBUTION",
+        "smallest_machine_checkable_fact": "Extend the exact countermodel with a normalized covariant mu_c satisfying the landed state-resolved variation sentence and rerun the unchanged kinetic/corner falsifier."
+      },
+      "path": "docs/STAGGERED_DIRAC_MINIMAL_SURFACE_KINETIC_CORNER_NONFORCING_NO_GO_NOTE_2026-07-10.md",
+      "pinned_blob": "717f145739244195da6db7bf05a8ff75b59bc980",
+      "pinned_blob_sha256": "7d2fa58bc35d0710b85e4a06e1019af88fc2173afc98c06f0258e22b5c404ec6",
+      "quoted_old_semantics_consumption": {
+        "exact_quoted_source_block": "It is not: the linked\n[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md), lines 49-53 and\n57-61, says the compatible `Cl(3,0)` presentation adds no further primitive\nstructure and requires only that available possibilities vary with neighbor\nconditions.",
+        "line_end": 387,
+        "line_start": 383,
+        "quote_extraction": "punctuation-bounded exact raw source sentence containing the literal anchor"
+      },
+      "what_the_row_asserts_under_old_availability_reading": "A countermodel has genuinely varying availability support yet does not select the first-order staggered law or eight-corner zero set.",
+      "what_the_same_text_asserts_under_landed_distribution_reading": "The same countermodel would refute selection from the weaker distribution-variation premise once a compatible distribution is supplied; distribution variation alone is easier to satisfy."
+    },
+    {
+      "cycle970_972_bearing_reason": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
+      "cycle970_972_witness": "BEARS",
+      "delta_class": "STRICTLY_WEAKER",
+      "minimal_discharge": {
+        "attempted_here": false,
+        "obligation_id": "O973-THETA-COUNTERMODEL-DISTRIBUTION",
+        "smallest_machine_checkable_fact": "Attach normalized distributions to every encoded condition with support equal to the exhibited availability set and rerun the dn!=0 witness."
+      },
+      "path": "docs/THETA_DEFECT_CLOSURE_FROM_ADMISSIBILITY_TEST_BOUNDED_NOTE_2026-07-03.md",
+      "pinned_blob": "2091031b26d477d23fc79a4b2bb49d7968edb76f",
+      "pinned_blob_sha256": "4fcc2e51b649b5b219b7f531aea547e40f2d456d3cca05e067a94d002d9e6bfb",
+      "quoted_old_semantics_consumption": {
+        "exact_quoted_source_block": "The result is negative:\nunder the explicit encoding below, nearest-neighbor single-valued availability\ndoes not force branch closure.",
+        "line_end": 44,
+        "line_start": 42,
+        "quote_extraction": "punctuation-bounded exact raw source sentence containing the literal anchor"
+      },
+      "what_the_row_asserts_under_old_availability_reading": "An explicit neighbor-varying single-valued availability encoding does not force dn=0 on the scoped finite branch complex.",
+      "what_the_same_text_asserts_under_landed_distribution_reading": "A probability-distribution encoding satisfying the weaker landed variation premise would likewise fail to force dn=0 if lifted from the same support witness."
+    },
+    {
+      "cycle970_972_bearing_reason": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
+      "cycle970_972_witness": "BEARS",
+      "delta_class": "STRICTLY_STRONGER",
+      "minimal_discharge": {
+        "attempted_here": false,
+        "obligation_id": "O973-TICK-DISTRIBUTION-BRIDGE",
+        "smallest_machine_checkable_fact": "Define the tick-induced conditional mu, state its marginalization, and exhaustively verify that landed distribution variation is equivalent to nonzero off-site tick support on the licensed period-2 family."
+      },
+      "path": "docs/TICK_CELL_SELECTION_BY_TRANSLATION_AND_VARIATION_CLAUSES_NARROW_THEOREM_NOTE_2026-07-09.md",
+      "pinned_blob": "613f6f2107bb562c240048f4eab2ee707212fe7b",
+      "pinned_blob_sha256": "114ba59e682972f290df470de2aafe350d0b71b0825028c71aef762a6d9fab57",
+      "quoted_old_semantics_consumption": {
+        "exact_quoted_source_block": "**Date:** 2026-07-09\n**Type:** bounded_theorem\n**Claim type:** bounded_theorem\n**Claim scope:** On the site-licensed, period-2, one-axis unitary-tick surface,\nassume a supplied tick--Admissibility realization bridge identifies the fixed\nrule's one-site translation covariance with one-site covariance of the tick\nmodulo local `U(1)` frames, and identifies nonvacuous variation of available\npossibilities with nonzero off-site support of that tick.",
+        "line_end": 10,
+        "line_start": 3,
+        "quote_extraction": "punctuation-bounded exact raw source sentence containing the literal anchor"
+      },
+      "what_the_row_asserts_under_old_availability_reading": "Under a supplied bridge, nonconstant availability support is identified with nonzero off-site tick support and selects the two mover families.",
+      "what_the_same_text_asserts_under_landed_distribution_reading": "The same mover selection would have to follow from distribution variation, including same-support state-resolved weight changes whose uniform marginal can be constant."
+    },
+    {
+      "cycle970_972_bearing_reason": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
+      "cycle970_972_witness": "BEARS",
+      "delta_class": "UNDERDETERMINED_BY_TEXT",
+      "minimal_discharge": {
+        "attempted_here": false,
+        "obligation_id": "O973-FORTRESS-OPEN-SITE-SUPPORT",
+        "smallest_machine_checkable_fact": "At the exact fortress conditions, compute mu_c and verify at least two positive-mass unrecorded alternatives plus the declared state-resolved/marginal dependence behavior."
+      },
+      "path": "docs/work_history/repo/review_feedback/RECORD_STATE_ONE_M2_NN_FORTRESS_CYCLE26_NOTE_2026-07-14.md",
+      "pinned_blob": "7a71e88cd1965889b4d001fc4f15c028be29d470",
+      "pinned_blob_sha256": "0f1029dd5faf633947a8163d76bb1568741cff225245468cac3063bdae0d498d",
+      "quoted_old_semantics_consumption": {
+        "exact_quoted_source_block": "Admissibility already says available\npossibilities depend on NN conditions and explicitly does not supply dynamics.",
+        "line_end": 511,
+        "line_start": 510,
+        "quote_extraction": "punctuation-bounded exact raw source sentence containing the literal anchor"
+      },
+      "what_the_row_asserts_under_old_availability_reading": "Unrecorded sites may have alternative available support, and Admissibility makes that support depend on nearest-neighbor conditions without supplying dynamics.",
+      "what_the_same_text_asserts_under_landed_distribution_reading": "Unrecorded sites have a probability distribution whose support defines availability, but only the distribution must depend on neighbors; the text does not resolve how many positive-mass alternatives or which marginal is meant."
+    },
+    {
+      "cycle970_972_bearing_reason": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
+      "cycle970_972_witness": "BEARS",
+      "delta_class": "STRICTLY_WEAKER",
+      "minimal_discharge": {
+        "attempted_here": false,
+        "obligation_id": "O973-DIAGNOSIS-DISTRIBUTION-NONDYNAMICS",
+        "smallest_machine_checkable_fact": "Machine-check a neighbor-conditioned mu on the cited architecture and separately verify that no transition/update or evolving-site-state map is present in the supplied law fields."
+      },
+      "path": "docs/work_history/repo/review_feedback/TWELVE_HOUR_TOE_FRAMEWORK_CAMPAIGN_DIAGNOSIS_2026-07-16.md",
+      "pinned_blob": "1749ddaaa5066f32fad13942fe27ba55bc0a8a97",
+      "pinned_blob_sha256": "8408b2895df70a382e417a78bde858dc401edc7086957ef5b7d9593d11c0cc92",
+      "quoted_old_semantics_consumption": {
+        "exact_quoted_source_block": "Qubit supplies possibilities\nat an unrecorded site and Admissibility makes their availability depend on\nneighbour conditions, but neither sentence supplies an actual evolving\npossibility at that site.",
+        "line_end": 197,
+        "line_start": 194,
+        "quote_extraction": "punctuation-bounded exact raw source sentence containing the literal anchor"
+      },
+      "what_the_row_asserts_under_old_availability_reading": "Admissibility makes availability support depend on neighbor conditions but supplies no actual evolving unrecorded-site possibility.",
+      "what_the_same_text_asserts_under_landed_distribution_reading": "Admissibility makes the probability distribution depend on neighbor conditions and still supplies no actual evolving possibility; the support-dependence part is dropped."
+    },
+    {
+      "cycle970_972_bearing_reason": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
+      "cycle970_972_witness": "BEARS",
+      "delta_class": "UNDERDETERMINED_BY_TEXT",
+      "minimal_discharge": {
+        "attempted_here": false,
+        "obligation_id": "O973-RUNNER-ATOM-DISTRIBUTION-CONTROL",
+        "smallest_machine_checkable_fact": "Add an independent mu_c construction whose support is R_varying and assert normalization, positive-mass atom eligibility, and state-resolved inequality at the AD4 conditions."
+      },
+      "path": "scripts/frontier_record_local_finite_atom_availability_2026_06_17.py",
+      "pinned_blob": "fb255c2ed3b7def6e8adb9239e005d6a9910596f",
+      "pinned_blob_sha256": "14b86ac4f0111a2d8da08c25e79dade95553e7492a48258d1e3552cd2fb1f2ce",
+      "quoted_old_semantics_consumption": {
+        "exact_quoted_source_block": "A4 live Admissibility axiom requires neighbor-varying availability",
+        "line_end": 258,
+        "line_start": 258,
+        "quote_extraction": "exact Python AST string-constant value containing the literal anchor"
+      },
+      "what_the_row_asserts_under_old_availability_reading": "The runner labels its axiom guard as neighbor-varying availability and tests a set-valued R_varying support control.",
+      "what_the_same_text_asserts_under_landed_distribution_reading": "The guard string matches the landed distribution sentence, but the executable control varies only a set and never constructs a probability distribution, leaving the tested proposition ambiguous."
+    },
+    {
+      "cycle970_972_bearing_reason": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
+      "cycle970_972_witness": "BEARS",
+      "delta_class": "STRICTLY_STRONGER",
+      "minimal_discharge": {
+        "attempted_here": false,
+        "obligation_id": "O973-RUNNER-K1-DISTRIBUTION-SEPARATION",
+        "smallest_machine_checkable_fact": "Enumerate the induced conditional distributions for every licensed K0/K1 representative and assert K0 equality, K1 inequality, normalization, and the declared conditioning resolution."
+      },
+      "path": "scripts/realized_kinetic_branch_selected_by_admissibility_variation_2026_07_02.py",
+      "pinned_blob": "7e368d061f3776e780a04844cdc75960a881280e",
+      "pinned_blob_sha256": "8753ae341e3a4cf78ff6ca1003b5ac0200a6e04e54cebc34db45dcc073278a93",
+      "quoted_old_semantics_consumption": {
+        "exact_quoted_source_block": "clarified Admissibility variation selects K1 on the licensed two-class surface",
+        "line_end": 515,
+        "line_start": 515,
+        "quote_extraction": "exact Python AST string-constant value containing the literal anchor"
+      },
+      "what_the_row_asserts_under_old_availability_reading": "The executable selector requires support variation and therefore returns only K1.",
+      "what_the_same_text_asserts_under_landed_distribution_reading": "The same selector label would claim K1-only selection from distribution variation, though K0 constant support can carry condition-dependent weights."
+    },
+    {
+      "cycle970_972_bearing_reason": "Cycle 970/972 is a covariant unique-law countermodel to identifying state-resolved distribution dependence with marginal dependence or support variation; it informs this semantic delta but does not discharge the row-specific obligation.",
+      "cycle970_972_witness": "BEARS",
+      "delta_class": "STRICTLY_STRONGER",
+      "minimal_discharge": {
+        "attempted_here": false,
+        "obligation_id": "O973-RUNNER-GAUGED-DISTRIBUTION-SEPARATION",
+        "smallest_machine_checkable_fact": "For every listed background seed, construct the branch-conditioned mu family and assert K0 equality and K1 inequality across the exact neighbor controls after factor recovery."
+      },
+      "path": "scripts/realized_kinetic_branch_selection_gauged_background_invariance_2026_07_02.py",
+      "pinned_blob": "f7cf8e9c1ce96a390a821f2086fc16b2c5b11e7d",
+      "pinned_blob_sha256": "4514091c1f33888fd4944fe5fdbe9ec169b6fb48efd0ad3d18a7063e499bc273",
+      "quoted_old_semantics_consumption": {
+        "exact_quoted_source_block": "clarified Admissibility variation still selects K1 for every fixed legal background tested",
+        "line_end": 545,
+        "line_start": 545,
+        "quote_extraction": "exact Python AST string-constant value containing the literal anchor"
+      },
+      "what_the_row_asserts_under_old_availability_reading": "The executable fixed-background selector preserves K1-only support variation under the tested factorized gauge actions.",
+      "what_the_same_text_asserts_under_landed_distribution_reading": "The same test label would infer K1-only selection from distribution variation without excluding same-support K0 weight changes."
+    }
+  ],
+  "status_verdicts_authored": 0,
+  "witness_bearing_counts": {
+    "BEARS": 26
+  }
+}

@@ -377,3 +377,17 @@ derivation of its coefficient/background/constraints, a continuous quotient
 theorem, and Lorentzian nonlinear sourced stability. Candidate wording records
 those obligations without adoption. No canonical edit, audit verdict, or
 fixed-percentage change occurs.
+
+The Block-20 coefficient-window extension advances the same upstream-support
+node rather than creating a new claim cluster. Exact positive-semidefinite
+ordering plus endpoint inertia proves `0<alpha<=1/128` on every declared
+finite/stress matrix. This eliminates gauge preservation, named body-source
+range, repaired Euclidean inertia, and infrared scaling order as a unique
+selector of `alpha=1/1024`.
+
+Reachability remains `upstream_support`: stronger continuous-zone, nonlinear,
+Lorentzian, coarse-grained, background, and realized-source laws can still
+select or narrow the coefficient. The result therefore sharpens the candidate
+geometry/history-law interface without making it necessary, minimal, or
+adopted. Fixed TOE percentages and canonical axioms remain unchanged. The
+cluster decision is `FOLD` into PR #6091; no new PR or `review-loop` is used.

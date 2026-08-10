@@ -1,16 +1,16 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_flat_regge_curvature_squared_branch_lift_2026_08_10.py
-runner_sha256: a57edb710d56be403b363c074122b520e72334306b085ec1ccbed51f47b79dd3
-input_fingerprint_sha256: ed7cca0e2f120fa6aa1c5190d25c8c2e81188c1a4516df7bcd8c2944a3000821
+runner_sha256: cce17665ae1f156b1098bfd3ecb4ee96fc58f34b570f85db5f880c940e514764
+input_fingerprint_sha256: 154402b51e38d4c74911c8a69c65ce48f78a559554914b4dede9231ae6b3c238
 timeout_sec: 240
 exit_code: 0
-elapsed_sec: 53.57
+elapsed_sec: 56.88
 status: ok
 ----- stdout -----
 external_scientific_inputs: none; all geometry, spectra, and finite inventories are computed from repository-local edge action data
 package_local_integrity_reads: current axioms, all approved primitives, Block 19, the actual Regge carrier, and the prior fifth-branch source control are source-bound
-analytic_boundary: the curvature-square second variation and exact gauge kernel are algebraic; the continuous Brillouin claim is a deterministic finite scan, not an interval theorem
-physical_boundary: alpha=1/1024, the flat background, Euclidean signature, and the geometry action remain supplied fixtures rather than a selected realized gravity law
+analytic_boundary: the curvature-square second variation, exact gauge kernel, and coefficient monotonicity are algebraic; momentum support remains a finite inventory plus deterministic samples, not a continuous-zone theorem
+physical_boundary: 0<alpha<=1/128 is a bounded consistency window, not a selected coefficient; the flat background, Euclidean signature, and geometry action remain supplied fixtures
 [PASS] source-and-premise-boundary: the current foundation supplies neither a geometry action nor its dimensionless correction coefficient
 [PASS] source-parent-boundary: Block 19 certifies only the five-normal homogeneous constrained system and expressly leaves inhomogeneous stability open
 [PASS] source-regge-and-fifth-branch: the retained flat carrier supplies four gauge zeros, one extra branch, and a prior projector-only repair control
@@ -26,23 +26,23 @@ physical_boundary: alpha=1/1024, the flat background, Euclidean signature, and t
        root=1.169447062377; determinant bracket=(9.355767e+04,-1.177160e+05); endpoint inertias=(10, 5, 0)/(9, 6, 0)
 [PASS] curved-pointwise-affine-soft-mode: the pointwise extension of the five-normal affine surface numerically brackets a distinct spatial soft-mode crossing
        root=2.425040995164; determinant bracket=(1.110273e+01,-1.057889e+01); endpoint inertias=(4, 1, 0)/(5, 0, 0)
-[PASS] flat-curvature-square-k0-lift: the local curvature-square action lifts only the extra k=0 branch while retaining all ten constant-metric zeros
-       exact extra lift=384*sqrt(2) + 768; numeric=1311.058007951; metric residual=3.411e-13; repaired inertia=(4, 1, 10)
+[PASS] flat-curvature-square-k0-lift: the curvature-square action lifts only the extra k=0 branch throughout the bounded coefficient window
+       exact extra lift=384*sqrt(2) + 768; numeric=1311.058007951; first negative-mode crossing=0.015942420; correction gap=334.537254; metric residual=3.411e-13
 [PASS] extended-periodic-action-validation: the actual periodic Regge-plus-curvature-square action reproduces the repaired Bloch Hessian
        finite difference=-621.244546667; prediction=-621.243775741; relative=1.241e-06
-[PASS] body-source-action-native-repair: the same gauge-compatible body source rejected by the fifth branch becomes solvable without an inserted projector
-       Ward=5.551e-17; bare=2.000000000; repaired=9.690e-14; gauge=8.110e-15
-[PASS] finite-torus-mode-inventory: all 25,308 nonzero modes on L=3 through L=10 tori have exactly four gauge zeros and no fifth branch
-       modes=25308; failures=0; minimum nonzero gap=0.148984355; gauge=4.940e-14
-[PASS] bounded-brillouin-stress-scan: the repair retains four gauge zeros and lifts the extra branch across every declared random, corner, and high-symmetry sample
-       samples=7183; failures=0; minimum extra lift=527.529003976; gauge=4.965e-14
-[PASS] infrared-einstein-order-preservation: the curvature-square correction is O(k^4) on metric perturbations and leaves the leading O(k^2) Einstein pole unchanged
-       ratios=4.799e-07,1.200e-07,2.996e-08
+[PASS] body-source-action-native-repair: the gauge-compatible body source rejected by the bare fifth branch is solvable throughout the bounded coefficient window
+       Ward=5.551e-17; bare=2.000000000; repaired max=1.175e-13; gauge max=8.573e-15
+[PASS] finite-torus-mode-inventory: positive-semidefinite monotonicity and the endpoint spectra certify the coefficient interval on all 25,308 finite-torus modes
+       modes=25308; coefficient evaluations=126540; failures=0; first crossing=0.009864625; correction gap=4.908e-02; minimum nonzero gap=0.032365006; gauge=5.031e-14
+[PASS] bounded-brillouin-stress-scan: the bounded coefficient interval retains four gauge zeros and lifts the extra branch across every declared Brillouin stress sample
+       samples=7183; coefficient evaluations=35915; failures=0; correction gap=2.090e-10; minimum extra lift=527.529003976; minimum nonzero gap=9.684e-06; gauge=5.033e-14
+[PASS] infrared-einstein-order-preservation: the entire coefficient window keeps the curvature-square metric correction at O(k^4) beside the O(k^2) Einstein term
+       low=2.999e-08,7.499e-09,1.872e-09; high=3.839e-06,9.599e-07,2.396e-07
 per_element: checked all fifteen actual edge classes in both local action Hessians and the repaired body-edge source
 per_site: checked every one of fifty hinge classes and all two-hundred-forty dihedral incidences per translation cell
-per_mode: checked two curved spatial soft-mode brackets plus 25,308 exhaustive torus modes and 7,183 stress samples
-per_block: checked the Block-19 nonflat background, the flat repaired background, and their distinct constraint interpretations
-lattice_wide: checked complete L=3 through L=10 periodic spectra and independent L=3 action reconstructions without source projection
+per_mode: checked two curved spatial soft-mode brackets plus 25,308 exhaustive torus modes and 7,183 stress samples across the bounded coefficient window
+per_block: checked the Block-19 nonflat background, the flat repaired coefficient family, and their distinct constraint interpretations
+lattice_wide: checked complete L=3 through L=10 periodic spectra, coefficient monotonicity, and independent L=3 action reconstructions without source projection
 TOTAL: PASS=16 FAIL=0
 
 ----- stderr -----

@@ -751,3 +751,35 @@ This identifies why the Block-19 background is not yet a physical vacuum and
 supplies one action-native repair mechanism without claiming action or
 coefficient selection. Canonical axioms and fixed percentages remain
 unchanged.
+
+## Block 20 Coefficient-Window Extension Result
+
+The first post-delivery target asked whether the Block-20 gauge, inertia,
+source-range, and infrared tests select the supplied `alpha=1/1024`. They do
+not. For the actual local family `Q_alpha=Q_R+alpha Q_2`, the exact difference
+between two coefficients is positive semidefinite. Bare quotient shape,
+positive extra-branch curvature, and unchanged endpoint inertia therefore
+give the complete declared interval
+
+    0 < alpha <= 1/128.
+
+All 25,308 finite-torus modes pass the interval argument; five dyadic controls
+give 126,540 zero-failure evaluations and place the first finite negative-mode
+crossing at `0.0098646245597...`, above `1/128`. The same endpoint/monotonic
+argument passes all 7,183 stress matrices with 35,915 zero-failure controls.
+The named body source remains solvable and the metric correction remains
+`O(k^4)` throughout the window.
+
+The source/input-bound primary run remains `PASS=16 FAIL=0`. Eighteen
+fresh-process runner-copy mutations each exit nonzero at exactly one intended
+named check, including the coefficient-window note contract, the `k=0` and
+finite-mode crossing margins, the correction-quotient positivity margin, and
+the infrared-order control; the aggregate mutation result is
+`PASS=18 FAIL=0`.
+
+This closes the bounded linear-selector question negatively without claiming
+that stronger physics cannot select a coefficient. N1--N8 preserves the
+continuous-zone, nonlinear, Lorentzian, coarse-grained, background, and
+realized-source routes. V1--V5 finds material value, while the cluster cap
+requires folding into existing PR #6091 rather than opening Block 21 as a new
+PR. Canonical axioms and fixed percentages remain unchanged.

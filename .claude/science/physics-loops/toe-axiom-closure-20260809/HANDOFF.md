@@ -987,3 +987,23 @@ Delivery is PR #6091, mergeable and `CLEAN` on exact Block-19 delivery head
 `cc027507f96222006ab99af353ca555da130042d`. Science commit is `4f06880082`;
 conformance is `ebde69de32`. Hard landing order is #6088, #6089, #6090, then
 #6091. Independent audit remains required.
+
+## Block 20 Coefficient-Window Extension Handoff
+
+The same PR now gains a coefficient-family theorem. Exact
+positive-semidefinite monotonicity, endpoint inertia, and quotient positivity
+show that every `0<alpha<=1/128` has the declared repaired kernel/inertia on
+all 25,308 finite-torus modes and all 7,183 stress matrices. Five dyadic
+controls contribute 162,455 total matrix-coefficient evaluations with zero
+failures; the first finite generalized negative-mode crossing is
+`0.0098646245597...`.
+
+The body-edge source remains in range and the correction remains `O(k^4)`
+throughout the bounded window. Hence the named Euclidean linear repair
+criteria do not select `1/1024`. Stronger continuous-zone, nonlinear,
+Lorentzian, coarse-grained, background, and realized-source selectors remain
+live. N1--N8 passes only at this narrow scope. The primary runner is
+`PASS=16 FAIL=0`, and all 18 fresh-process runner-copy mutations fail closed
+at exactly one intended named check each (`PASS=18 FAIL=0`). The cluster
+verdict is `FOLD` into PR #6091; do not open another adjacent gravity PR. No
+canonical edit, audit verdict, percentage move, or `review-loop` occurs.

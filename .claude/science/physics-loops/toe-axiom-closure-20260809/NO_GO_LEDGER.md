@@ -113,3 +113,14 @@ The strongest steelman succeeds in the same block: on the flat branch, the
 local `A epsilon^2` action lifts the fifth lattice mode, preserves gauge, and
 repairs the prior body source. This explicitly forbids extrapolating the two
 nonflat roots into a universal negative claim.
+
+## Block 20 Coefficient-Window Selector Boundary
+
+| Scoped claim | Exact/bounded evidence | N1--N8 disposition | Forbidden promotion | Live routes |
+|---|---|---|---|---|
+| the named flat Euclidean gauge, inertia, body-source range, and infrared-order criteria do not uniquely select `alpha=1/1024` | exact positive-semidefinite coefficient ordering; full declared interval `0<alpha<=1/128`; 126,540 finite-mode and 35,915 stress coefficient evaluations; first finite crossing `0.0098646245597...` | pass only for those criteria on those matrices; endpoint is safe and supplied, not selected | do not claim that the framework, action family, continuous zone, nonlinear theory, Lorentzian dynamics, coarse-graining, alternate background, or realized source cannot select a coefficient | complete-zone extremum, nonlinear sourced stability, Lorentzian transfer/reflection condition, renormalization/fixed point, background/constraint selection, source/coupling realization, alternate action |
+
+The strongest steelman is accepted: consistency conditions ordinarily bound a
+higher-curvature coefficient rather than determine it. The interval result
+quantifies that fact for the actual carrier but does not turn it into a
+universal coefficient no-go or axiom-necessity claim.

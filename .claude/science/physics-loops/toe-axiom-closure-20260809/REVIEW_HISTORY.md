@@ -1236,3 +1236,36 @@ instance or Fourier census.
 - Conformance commit is `ebde69de32`. PR #6091 is mergeable and `CLEAN` on
   exact Block-19 delivery head `cc027507f96222006ab99af353ca555da130042d`.
   Hard landing order adds #6091 after #6090, #6089, and #6088.
+
+## Block 20 coefficient-window extension science record
+
+- Replaced the single supplied `alpha=1/1024` test by the actual Hermitian
+  family `Q_alpha=Q_R+alpha Q_2` and derived its exact positive-semidefinite
+  coefficient ordering.
+- At `k=0`, the extra lift remains exactly `768+384sqrt(2)`, the correction is
+  positive on the five-normal quotient, and the first negative-mode crossing
+  is `0.015942419758...`.
+- On all 25,308 nonzero `L=3,...,10` modes, five dyadic witnesses give 126,540
+  zero-failure coefficient evaluations. The minimum correction quotient gap
+  is `0.04908...`; the first negative-mode crossing is
+  `0.0098646245597...`, above `1/128`.
+- On 7,183 declared stress matrices, five witnesses give 35,915 zero-failure
+  evaluations; the minimum extra lift is `527.529...` and the minimum
+  correction quotient gap is `2.09e-10`.
+- Exact monotonicity, positive extra lift, and unchanged upper-endpoint inertia
+  prove the full interval `0<alpha<=1/128` on each declared matrix. The named
+  body source remains in range and the metric term remains `O(k^4)`.
+- The named bounded Euclidean linear criteria therefore do not select
+  `1/1024`. N1--N8 preserves continuous-zone, nonlinear, Lorentzian,
+  coarse-grained, background, source, and alternate-action selectors.
+- V1--V5 finds material selector value. The extension cluster-cap verdict is
+  `FOLD` into existing PR #6091 because it uses the same action/operator; no
+  adjacent Block-21 PR is authorized.
+- The source/input-pinned primary runner and cache are fresh at
+  `PASS=16 FAIL=0`.
+- Eighteen fresh-process runner-copy mutations each exit nonzero at exactly one
+  intended named check; the aggregate harness result is `PASS=18 FAIL=0`.
+  The added controls cover the coefficient-window note contract, `k=0` and
+  finite crossing margins, periodic normalization, correction-quotient
+  positivity, and infrared order.
+- Citation refresh, direct conformance, commit, and push remain pending.

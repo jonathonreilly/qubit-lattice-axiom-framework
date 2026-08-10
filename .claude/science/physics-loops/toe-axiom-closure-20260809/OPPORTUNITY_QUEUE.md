@@ -29,8 +29,18 @@ The flat action-native lift supersedes an inserted fifth-branch projector as
 the leading repair mechanism. The coefficient, all-mode proof, and Lorentzian
 law now dominate the gravity queue.
 
-An unretained exploratory generalized-eigenvalue search on the 11-dimensional
-gauge quotient places the first sampled positive coefficient crossing near
-`alpha=0.00985322884`, about `10.09` times the supplied `1/1024`. This is
-evidence against numerical fine tuning, not a continuous or interval theorem;
-an interval coefficient window is the next exact witness.
+The coefficient-window extension closes the former rank-1 bounded question:
+exact positive-semidefinite monotonicity and endpoint inertia establish
+`0<alpha<=1/128` on every declared matrix, and the first exhaustive finite-
+torus generalized crossing is `0.0098646245597...`. The named linear repair
+criteria therefore do not select `1/1024`.
+
+## Post-Coefficient-Window Priority Refresh
+
+| Rank | Target | Exact next witness | Why now |
+|---:|---|---|---|
+| 1 | continuous Brillouin gauge-quotient theorem and coefficient extremum | analytic factorization or interval cover proving the minimum positive generalized crossing over all momentum | replaces the bounded stress set and may narrow the coefficient window |
+| 2 | Lorentzian/nonlinear coefficient selector | selected transfer or sourced stability law whose admissible set is smaller than `0<alpha<=1/128` | bounded Euclidean consistency is now eliminated as a unique selector |
+| 3 | coarse-graining or background/source selector | derived flow, fixed point, selected vacuum, or realized coupling that fixes/narrows `alpha` | remains logically independent of the linear spectrum |
+| 4 | nonlinear localized source evolution | existence and stability certificate without affine metric freezing | needed for physical gravity closure even if a coefficient is selected |
+| 5 | constituent-causal rank-one matter carrier | exact all-momentum Ward source with selected coupling | remains the leading matter/gravity source bridge |

@@ -467,3 +467,20 @@ The leading science path is positive: derive or select the local repair and
 prove its continuous gauge quotient and Lorentzian nonlinear dynamics. The two
 nonflat roots are diagnostic boundaries, not evidence that gravity cannot
 work.
+
+## Block 20 Coefficient-Window Route Comparison
+
+| Route | Exact object | Outcome | Decision |
+|---|---|---|---|
+| bounded Euclidean coefficient family | `Q_R+alpha Q_2` with exact positive-semidefinite ordering | every `0<alpha<=1/128` has the declared repaired inertia on all finite/stress matrices | bounded linear consistency does not select `1/1024` |
+| finite generalized crossing | complete 11-dimensional quotient pencil on 25,308 modes | minimum first negative-mode crossing `0.0098646245597...` | validates `1/128` as a safe supplied endpoint, not a preferred value |
+| source-range selector | named body source and exact gauge Ward identity | kernel is gauge-only and five spanning solves have residual below `1.2e-13` | source solvability leaves the interval open |
+| infrared-order selector | metric image at low momentum | every fixed coefficient remains `O(k^4)` beside `O(k^2)`; upper displayed ratio below `3.84e-6` | scaling order cannot select a finite coefficient |
+| continuous-zone extremum | all-momentum positive generalized crossing | 7,183 matrices are only a stress set | highest tractable selector/spectral route |
+| nonlinear or Lorentzian stability | selected finite-amplitude source/evolution law | not supplied by current axioms or primitives | live target-equivalent coefficient selector |
+| coarse-graining/background/source law | derived flow, vacuum, boundary, coupling, and realized source | not supplied | independent selector route; no universal no-go |
+| packaging | same Block-20 action, runner, and claim node | material extension but not an independent carrier | fold into PR #6091; do not open Block 21 |
+
+The bounded coefficient question is closed negatively at its exact scope. The
+leading route is now continuous-zone quotient control followed by a physical
+nonlinear/Lorentzian selector, not further dyadic sampling.

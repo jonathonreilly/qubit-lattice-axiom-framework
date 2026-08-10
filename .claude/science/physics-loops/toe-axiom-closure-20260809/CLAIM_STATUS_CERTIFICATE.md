@@ -491,3 +491,33 @@ independent_audit_required: true
   substantive N5 resolution lines.
 - The action, dyadic coefficient, background, continuous spectrum, Lorentzian
   law, nonlinear sourced solution, and realized history remain unselected.
+
+## Block 20 Coefficient-Window Extension Status
+
+```yaml
+claim_type: bounded_theorem
+packaging: fold_into_existing_pr_6091
+coefficient_interval: zero_open_to_one_over_128_closed
+finite_modes_exhaustive: 25308
+finite_coefficient_evaluations: 126540
+stress_matrices_bounded: 7183
+stress_coefficient_evaluations: 35915
+first_finite_negative_mode_crossing: 0.0098646245597
+unique_linear_selector_found: false
+universal_coefficient_no_go: false
+continuous_zone_theorem: false
+canonical_axiom_edit: false
+fixed_percentage_move: false
+review_loop_used: false
+independent_audit_required: true
+```
+
+- Exact positive-semidefinite monotonicity plus endpoint inertia proves the
+  full interval on every declared matrix; the five dyadic points are controls,
+  not the logical basis for interpolating between coefficients.
+- The named Euclidean linear criteria therefore do not select `1/1024`.
+  Continuous-zone, nonlinear, Lorentzian, coarse-grained, background, and
+  realized-source selection remain open.
+- The source/input-pinned primary runner is fresh at `PASS=16 FAIL=0`.
+  Eighteen fresh-process runner-copy mutations each fail exactly one intended
+  named check, for an aggregate `PASS=18 FAIL=0` mutation result.

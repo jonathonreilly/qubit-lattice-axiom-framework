@@ -285,6 +285,17 @@ mergeable and `CLEAN` on exact Block-19 delivery head `cc027507f9`. Hard
 landing order adds #6091 after #6090, #6089, and #6088. Canonical axioms and
 fixed percentages are untouched, and no `review-loop` is used.
 
+The post-delivery coefficient-window result is intentionally folded into
+#6091. It strengthens the same runner/note: exact coefficient monotonicity,
+`0<alpha<=1/128`, 126,540 finite-mode coefficient evaluations, 35,915 stress
+evaluations, first finite crossing `0.0098646245597...`, interval body-source
+range, and endpoint infrared controls. N1--N8 rejects a universal coefficient
+no-go; the extension cluster-cap verdict is `FOLD`, so no Block-21 PR will be
+opened. The refreshed primary cache is `PASS=16 FAIL=0`, and all 18
+fresh-process runner-copy mutations fail at exactly one intended named check
+each (`PASS=18 FAIL=0`). Citation refresh, direct conformance, commit, and push
+remain to be recorded.
+
 Block 16 is being packaged on branch
 `physics-loop/toe-axiom-closure-block16-network-20260810`, based on exact
 Block-15 delivery head `d6e789784c34fbc0daf20626e34ff9f7e948d5ce`.

@@ -8,16 +8,25 @@ certificate cannot answer by itself:
 * whether the flat weak-field carrier's fifth, nonmetric zero branch can be
   lifted by a local geometry action rather than an inserted projector.
 
-The repair studied here is the supplied fixture
+The parent repair is the supplied fixture
 
     S_alpha = sum_h A_h (epsilon_h + alpha epsilon_h**2), alpha = 1/1024.
+
+This runner also checks the bounded coefficient window
+
+    0 < alpha <= 1/128
+
+on the declared finite-mode and stress inventories.  Positive-semidefinite
+monotonicity plus the endpoint inertia makes that an interval statement on
+each declared matrix, not merely five unrelated coefficient samples.
 
 At a flat background its exact second variation is
 
     Q_alpha(k) = Q_R(k) + 2 alpha sum_h A_h d_h(k)^dag d_h(k).
 
-No coefficient selection, Lorentzian continuation, or realized geometry law
-is inferred from the finite fixture.
+The interval proves that the named Euclidean linear repair tests do not select
+1/1024.  It does not exclude selection by a continuous-zone, nonlinear,
+Lorentzian, coarse-grained, or realized geometry/history law.
 """
 
 from __future__ import annotations
@@ -87,6 +96,14 @@ import frontier_cubic_coxeter_regge_second_variation_3plus1_2026_06_09 as regge 
 
 
 ALPHA = 1.0 / 1024.0
+ALPHA_WITNESSES = (
+    1.0 / 16384.0,
+    1.0 / 4096.0,
+    ALPHA,
+    1.0 / 256.0,
+    1.0 / 128.0,
+)
+ALPHA_UPPER = ALPHA_WITNESSES[-1]
 TOLERANCE = 1.0e-8
 BODY = np.asarray((1, 1, 1, 1), dtype=int)
 
@@ -365,6 +382,36 @@ def orthonormal_columns(matrix, tolerance=1.0e-9):
     return left[:, singular > tolerance]
 
 
+def gauge_quotient_basis(gauge, tolerance=1.0e-9):
+    left, singular, _ = np.linalg.svd(gauge, full_matrices=True)
+    rank = int(np.sum(singular > tolerance))
+    return left[:, rank:]
+
+
+def first_positive_generalized_crossing(q, correction, basis):
+    """Return the first positive alpha with det(q + alpha correction)=0.
+
+    The correction is positive definite on each supplied quotient basis.  A
+    whitening congruence therefore turns the Hermitian pencil into an ordinary
+    Hermitian eigenproblem.  The root near zero is the lifted bare extra mode
+    and is excluded; positive roots above tolerance are negative-mode
+    crossings.
+    """
+    q_reduced = basis.conjugate().T @ q @ basis
+    correction_reduced = basis.conjugate().T @ correction @ basis
+    correction_values, correction_vectors = np.linalg.eigh(correction_reduced)
+    if np.min(correction_values) <= 1.0e-10:
+        raise AssertionError("curvature-square form is not positive on quotient")
+    whitening = correction_vectors @ np.diag(1.0 / np.sqrt(correction_values))
+    roots = np.linalg.eigvalsh(
+        -(whitening.conjugate().T @ q_reduced @ whitening)
+    ).real
+    positive = roots[roots > 1.0e-8]
+    if not len(positive):
+        raise AssertionError("no positive generalized crossing")
+    return float(np.min(positive)), float(np.min(correction_values))
+
+
 def extra_direction(q, gauge):
     values, vectors = np.linalg.eigh(q)
     null = vectors[:, np.abs(values) < TOLERANCE]
@@ -482,8 +529,8 @@ def main() -> int:
 
     print("external_scientific_inputs: none; all geometry, spectra, and finite inventories are computed from repository-local edge action data")
     print("package_local_integrity_reads: current axioms, all approved primitives, Block 19, the actual Regge carrier, and the prior fifth-branch source control are source-bound")
-    print("analytic_boundary: the curvature-square second variation and exact gauge kernel are algebraic; the continuous Brillouin claim is a deterministic finite scan, not an interval theorem")
-    print("physical_boundary: alpha=1/1024, the flat background, Euclidean signature, and the geometry action remain supplied fixtures rather than a selected realized gravity law")
+    print("analytic_boundary: the curvature-square second variation, exact gauge kernel, and coefficient monotonicity are algebraic; momentum support remains a finite inventory plus deterministic samples, not a continuous-zone theorem")
+    print("physical_boundary: 0<alpha<=1/128 is a bounded consistency window, not a selected coefficient; the flat background, Euclidean signature, and geometry action remain supplied fixtures")
 
     checks.check(
         "source-and-premise-boundary",
@@ -522,7 +569,8 @@ def main() -> int:
         "No-Go Discipline Gate" in note
         and "Candidate geometry-law wording" in note
         and "1.169" in note
-        and "A_h epsilon_h^2" in note_flat,
+        and "A_h epsilon_h^2" in note_flat
+        and "0 < alpha <= 1/128" in note_flat,
     )
 
     flat_lengths = np.sqrt(
@@ -651,7 +699,13 @@ def main() -> int:
     q0 = bloch(flat_kernel, np.zeros(4))
     r20 = bloch(r2_kernel, np.zeros(4))
     exact_extra_lift = exact_extra_curvature_square_hessian()
-    repaired_zero = q0 + ALPHA * r20
+    repaired_zero_inertias = [
+        inertia(np.linalg.eigvalsh(q0 + alpha * r20))
+        for alpha in ALPHA_WITNESSES
+    ]
+    k0_crossing, k0_correction_gap = first_positive_generalized_crossing(
+        q0, r20, basis
+    )
     metric_zero = regge.metric_map(np.zeros(4))
     extra_zero = np.asarray(
         [float(value) for value in block19.exact_symmetric_vectors(block19.mp)[1]]
@@ -661,13 +715,15 @@ def main() -> int:
     metric_r2_residual = float(np.max(np.abs(r20 @ metric_zero)))
     checks.check(
         "flat-curvature-square-k0-lift",
-        "the local curvature-square action lifts only the extra k=0 branch while retaining all ten constant-metric zeros",
+        "the curvature-square action lifts only the extra k=0 branch throughout the bounded coefficient window",
         inertia(np.linalg.eigvalsh(q0)) == (4, 0, 11)
-        and inertia(np.linalg.eigvalsh(repaired_zero)) == (4, 1, 10)
+        and repaired_zero_inertias == [(4, 1, 10)] * len(ALPHA_WITNESSES)
         and exact_extra_lift == 768 + 384 * sp.sqrt(2)
         and extra_lift_zero > 1300.0
-        and metric_r2_residual < 1.0e-10,
-        f"exact extra lift={exact_extra_lift}; numeric={extra_lift_zero:.9f}; metric residual={metric_r2_residual:.3e}; repaired inertia={inertia(np.linalg.eigvalsh(repaired_zero))}",
+        and metric_r2_residual < 1.0e-10
+        and k0_correction_gap > 300.0
+        and k0_crossing > 0.015,
+        f"exact extra lift={exact_extra_lift}; numeric={extra_lift_zero:.9f}; first negative-mode crossing={k0_crossing:.9f}; correction gap={k0_correction_gap:.6f}; metric residual={metric_r2_residual:.3e}",
     )
 
     action_vector = rng.normal(size=15)
@@ -719,56 +775,88 @@ def main() -> int:
     body_source[regge.DIR_IDX[tuple(BODY)]] = 2.0
     body_q = bloch(flat_kernel, body_momentum)
     body_r2 = bloch(r2_kernel, body_momentum)
-    body_repaired = body_q + ALPHA * body_r2
     body_gauge = regge.gauge_map(body_momentum)
     body_ward = float(np.linalg.norm(body_gauge.conjugate().T @ body_source.conjugate()))
     bare_solution = -np.linalg.pinv(body_q, rcond=1.0e-10) @ body_source.conjugate()
-    repaired_solution = -np.linalg.pinv(body_repaired, rcond=1.0e-10) @ body_source.conjugate()
     bare_residual = float(np.linalg.norm(body_q @ bare_solution + body_source.conjugate()))
-    repaired_residual = float(
-        np.linalg.norm(body_repaired @ repaired_solution + body_source.conjugate())
-    )
-    repaired_gauge = float(np.max(np.abs(body_repaired @ body_gauge)))
+    body_residuals = []
+    body_gauge_residuals = []
+    body_inertias = []
+    for alpha in ALPHA_WITNESSES:
+        body_repaired = body_q + alpha * body_r2
+        repaired_solution = (
+            -np.linalg.pinv(body_repaired, rcond=1.0e-10)
+            @ body_source.conjugate()
+        )
+        body_residuals.append(
+            float(
+                np.linalg.norm(
+                    body_repaired @ repaired_solution + body_source.conjugate()
+                )
+            )
+        )
+        body_gauge_residuals.append(
+            float(np.max(np.abs(body_repaired @ body_gauge)))
+        )
+        body_inertias.append(inertia(np.linalg.eigvalsh(body_repaired)))
     checks.check(
         "body-source-action-native-repair",
-        "the same gauge-compatible body source rejected by the fifth branch becomes solvable without an inserted projector",
+        "the gauge-compatible body source rejected by the bare fifth branch is solvable throughout the bounded coefficient window",
         body_ward < 1.0e-14
         and bare_residual > 1.9
-        and repaired_residual < 2.0e-12
-        and repaired_gauge < 1.0e-12
-        and inertia(np.linalg.eigvalsh(body_repaired)) == (9, 2, 4),
-        f"Ward={body_ward:.3e}; bare={bare_residual:.9f}; repaired={repaired_residual:.3e}; gauge={repaired_gauge:.3e}",
+        and max(body_residuals) < 2.0e-12
+        and max(body_gauge_residuals) < 1.0e-12
+        and body_inertias == [(9, 2, 4)] * len(ALPHA_WITNESSES),
+        f"Ward={body_ward:.3e}; bare={bare_residual:.9f}; repaired max={max(body_residuals):.3e}; gauge max={max(body_gauge_residuals):.3e}",
     )
 
     finite_modes = 0
+    finite_evaluations = 0
     finite_failures = 0
     finite_minimum_gap = np.inf
     finite_worst_gauge = 0.0
+    finite_first_crossing = np.inf
+    finite_correction_gap = np.inf
     for length in range(3, 11):
         for indices in product(range(length), repeat=4):
             if not any(indices):
                 continue
             momentum = 2.0 * np.pi * np.asarray(indices, dtype=float) / length
-            repaired = bloch(flat_kernel, momentum) + ALPHA * bloch(
-                r2_kernel, momentum
+            q = bloch(flat_kernel, momentum)
+            correction = bloch(r2_kernel, momentum)
+            gauge = regge.gauge_map(momentum)
+            quotient = gauge_quotient_basis(gauge)
+            crossing, correction_gap = first_positive_generalized_crossing(
+                q, correction, quotient
             )
-            values = np.linalg.eigvalsh(repaired)
             finite_modes += 1
-            finite_failures += int(inertia(values) != (9, 2, 4))
-            nonzero = np.abs(values)[np.abs(values) > TOLERANCE]
-            finite_minimum_gap = min(finite_minimum_gap, float(np.min(nonzero)))
-            finite_worst_gauge = max(
-                finite_worst_gauge,
-                float(np.max(np.abs(repaired @ regge.gauge_map(momentum)))),
-            )
+            finite_first_crossing = min(finite_first_crossing, crossing)
+            finite_correction_gap = min(finite_correction_gap, correction_gap)
+            finite_failures += int(inertia(np.linalg.eigvalsh(q)) != (9, 1, 5))
+            for alpha in ALPHA_WITNESSES:
+                repaired = q + alpha * correction
+                values = np.linalg.eigvalsh(repaired)
+                finite_evaluations += 1
+                finite_failures += int(inertia(values) != (9, 2, 4))
+                nonzero = np.abs(values)[np.abs(values) > TOLERANCE]
+                finite_minimum_gap = min(
+                    finite_minimum_gap, float(np.min(nonzero))
+                )
+                finite_worst_gauge = max(
+                    finite_worst_gauge,
+                    float(np.max(np.abs(repaired @ gauge))),
+                )
     checks.check(
         "finite-torus-mode-inventory",
-        "all 25,308 nonzero modes on L=3 through L=10 tori have exactly four gauge zeros and no fifth branch",
+        "positive-semidefinite monotonicity and the endpoint spectra certify the coefficient interval on all 25,308 finite-torus modes",
         finite_modes == 25308
+        and finite_evaluations == 25308 * len(ALPHA_WITNESSES)
         and finite_failures == 0
-        and finite_minimum_gap > 0.14
+        and finite_minimum_gap > 0.03
+        and finite_first_crossing > 0.0098
+        and ALPHA_UPPER < finite_first_crossing
         and finite_worst_gauge < 2.0e-12,
-        f"modes={finite_modes}; failures={finite_failures}; minimum nonzero gap={finite_minimum_gap:.9f}; gauge={finite_worst_gauge:.3e}",
+        f"modes={finite_modes}; coefficient evaluations={finite_evaluations}; failures={finite_failures}; first crossing={finite_first_crossing:.9f}; correction gap={finite_correction_gap:.3e}; minimum nonzero gap={finite_minimum_gap:.9f}; gauge={finite_worst_gauge:.3e}",
     )
 
     scan_points = list(rng.uniform(-np.pi, np.pi, size=(4096, 4)))
@@ -790,30 +878,49 @@ def main() -> int:
             for value in np.linspace(0.005, np.pi, 512)
         )
     scan_failures = 0
+    scan_evaluations = 0
     scan_worst_gauge = 0.0
     scan_minimum_lift = np.inf
+    scan_minimum_gap = np.inf
+    scan_correction_gap = np.inf
     for momentum in scan_points:
         q = bloch(flat_kernel, momentum)
         r2 = bloch(r2_kernel, momentum)
-        repaired = q + ALPHA * r2
-        scan_failures += int(inertia(np.linalg.eigvalsh(repaired)) != (9, 2, 4))
         gauge = regge.gauge_map(momentum)
-        scan_worst_gauge = max(
-            scan_worst_gauge, float(np.max(np.abs(repaired @ gauge)))
+        quotient = gauge_quotient_basis(gauge)
+        correction_values = np.linalg.eigvalsh(
+            quotient.conjugate().T @ r2 @ quotient
         )
+        scan_correction_gap = min(
+            scan_correction_gap, float(np.min(correction_values))
+        )
+        scan_failures += int(inertia(np.linalg.eigvalsh(q)) != (9, 1, 5))
         extra = extra_direction(q, gauge)
         scan_minimum_lift = min(
             scan_minimum_lift,
             float(np.real(extra.conjugate() @ r2 @ extra)),
         )
+        for alpha in ALPHA_WITNESSES:
+            repaired = q + alpha * r2
+            values = np.linalg.eigvalsh(repaired)
+            scan_evaluations += 1
+            scan_failures += int(inertia(values) != (9, 2, 4))
+            nonzero = np.abs(values)[np.abs(values) > TOLERANCE]
+            scan_minimum_gap = min(scan_minimum_gap, float(np.min(nonzero)))
+            scan_worst_gauge = max(
+                scan_worst_gauge, float(np.max(np.abs(repaired @ gauge)))
+            )
     checks.check(
         "bounded-brillouin-stress-scan",
-        "the repair retains four gauge zeros and lifts the extra branch across every declared random, corner, and high-symmetry sample",
+        "the bounded coefficient interval retains four gauge zeros and lifts the extra branch across every declared Brillouin stress sample",
         len(scan_points) == 7183
+        and scan_evaluations == 7183 * len(ALPHA_WITNESSES)
         and scan_failures == 0
         and scan_worst_gauge < 2.0e-12
-        and scan_minimum_lift > 500.0,
-        f"samples={len(scan_points)}; failures={scan_failures}; minimum extra lift={scan_minimum_lift:.9f}; gauge={scan_worst_gauge:.3e}",
+        and scan_minimum_lift > 500.0
+        and scan_correction_gap > 1.0e-10
+        and scan_minimum_gap > 9.0e-6,
+        f"samples={len(scan_points)}; coefficient evaluations={scan_evaluations}; failures={scan_failures}; correction gap={scan_correction_gap:.3e}; minimum extra lift={scan_minimum_lift:.9f}; minimum nonzero gap={scan_minimum_gap:.3e}; gauge={scan_worst_gauge:.3e}",
     )
 
     infrared_direction = np.asarray((0.37, -0.21, 0.43, 0.19))
@@ -821,30 +928,41 @@ def main() -> int:
     metric_components = np.asarray(
         (0.3, -0.2, 0.1, 0.4, -0.1, 0.2, 0.3, -0.4, 0.15, 0.25)
     )
-    infrared_ratios = []
-    for scale in (1.0e-2, 5.0e-3, 2.5e-3):
-        momentum = scale * infrared_direction
-        metric = regge.metric_map(momentum)
-        vector = metric @ metric_components
-        leading = float(abs(vector.conjugate() @ bloch(flat_kernel, momentum) @ vector))
-        correction = float(
-            abs(ALPHA * vector.conjugate() @ bloch(r2_kernel, momentum) @ vector)
-        )
-        infrared_ratios.append(correction / leading)
+    infrared_ratio_families = []
+    for alpha in (ALPHA_WITNESSES[0], ALPHA_UPPER):
+        infrared_ratios = []
+        for scale in (1.0e-2, 5.0e-3, 2.5e-3):
+            momentum = scale * infrared_direction
+            metric = regge.metric_map(momentum)
+            vector = metric @ metric_components
+            leading = float(
+                abs(vector.conjugate() @ bloch(flat_kernel, momentum) @ vector)
+            )
+            correction = float(
+                abs(alpha * vector.conjugate() @ bloch(r2_kernel, momentum) @ vector)
+            )
+            infrared_ratios.append(correction / leading)
+        infrared_ratio_families.append(infrared_ratios)
+    low_ratios, high_ratios = infrared_ratio_families
     checks.check(
         "infrared-einstein-order-preservation",
-        "the curvature-square correction is O(k^4) on metric perturbations and leaves the leading O(k^2) Einstein pole unchanged",
-        infrared_ratios[0] < 5.0e-7
-        and 0.23 < infrared_ratios[1] / infrared_ratios[0] < 0.27
-        and 0.23 < infrared_ratios[2] / infrared_ratios[1] < 0.27,
-        "ratios=" + ",".join(f"{value:.3e}" for value in infrared_ratios),
+        "the entire coefficient window keeps the curvature-square metric correction at O(k^4) beside the O(k^2) Einstein term",
+        high_ratios[0] < 4.0e-6
+        and all(
+            0.23 < ratios[1] / ratios[0] < 0.27
+            and 0.23 < ratios[2] / ratios[1] < 0.27
+            for ratios in infrared_ratio_families
+        )
+        and 127.9 < high_ratios[0] / low_ratios[0] < 128.1,
+        "low=" + ",".join(f"{value:.3e}" for value in low_ratios)
+        + "; high=" + ",".join(f"{value:.3e}" for value in high_ratios),
     )
 
     print("per_element: checked all fifteen actual edge classes in both local action Hessians and the repaired body-edge source")
     print("per_site: checked every one of fifty hinge classes and all two-hundred-forty dihedral incidences per translation cell")
-    print("per_mode: checked two curved spatial soft-mode brackets plus 25,308 exhaustive torus modes and 7,183 stress samples")
-    print("per_block: checked the Block-19 nonflat background, the flat repaired background, and their distinct constraint interpretations")
-    print("lattice_wide: checked complete L=3 through L=10 periodic spectra and independent L=3 action reconstructions without source projection")
+    print("per_mode: checked two curved spatial soft-mode brackets plus 25,308 exhaustive torus modes and 7,183 stress samples across the bounded coefficient window")
+    print("per_block: checked the Block-19 nonflat background, the flat repaired coefficient family, and their distinct constraint interpretations")
+    print("lattice_wide: checked complete L=3 through L=10 periodic spectra, coefficient monotonicity, and independent L=3 action reconstructions without source projection")
 
     print(f"TOTAL: PASS={checks.passed} FAIL={checks.failed}")
     return int(checks.failed != 0)

@@ -397,3 +397,19 @@ complete conditional nonlinear compact solution:
    and require the local action, rather than a rank-one projector, to repair it.
 6. Record candidate geometry-law wording as unadopted and target-equivalent;
    edit no axiom or primitive and move no fixed percentage.
+
+## Block 20 Coefficient-Window Extension
+
+1. Replace the single supplied coefficient as a selector candidate by the
+   family `Q_alpha=Q_R+alpha Q_2` with exact positive-semidefinite ordering.
+2. At `k=0`, prove the exact extra lift and check the first negative-mode
+   crossing remains above the rational endpoint `1/128`.
+3. On all 25,308 nonzero `L=3,...,10` modes, require bare quotient shape,
+   positive correction, five dyadic endpoint-spanning controls, and the first
+   generalized crossing.
+4. Repeat the endpoint/monotonic interval test on all 7,183 declared stress
+   matrices and execute the named body source and infrared order at both ends.
+5. Apply N1--N8 to the negative selector statement; preserve continuous-zone,
+   nonlinear, Lorentzian, coarse-grained, background, and source-law routes.
+6. Apply V1--V5 and the cluster cap. Fold the result into PR #6091 because it
+   extends the same action/operator rather than opening another gravity PR.

@@ -6,7 +6,7 @@ runtime_budget: 24h
 stop_at: 2026-08-10T19:00:00-04:00
 checkpoint_interval: 30m
 deep_block: 90m
-cycle: 21
+cycle: 22
 science_block: 20
 branch: physics-loop/toe-axiom-closure-block20-regge-r2-lift-20260810
 base: origin/main@39c74017b870c27c804e3992f2a11e90336476b2
@@ -15,9 +15,9 @@ lock_mode: cooperative
 lock_owner: physics-loop
 lock_holder_id: 019fcac5-093c-70a1-ae3e-7f2ef1b002ef
 goal: maximize honest TOE closure from the current axiom surface by stress-testing the nonlinear compact Regge background, constructing an action-native gravity repair where possible, and isolating the exact action-selection and Lorentzian-stability axiom interface without editing canonical axioms
-active_route: complete nonlinear Bloch-Hessian reconstruction on the Block-19 background, double-precision spatial soft-mode bracketing under two named constraint extensions, and a local deficit-squared flat Regge branch lift with exhaustive finite-mode source and infrared tests
-hard_residual: derive or select the geometry/history action and dimensionless coefficient, law-admissible background or boundary sector, constraint localization, source law, universal coupling, continuous-Brillouin-zone quotient, Lorentzian nonlinear update and inhomogeneous stability, projective completion, and realized member; constituent-causal rank-one matter and the Born functional/program selector remain separately open
-target_contract_status: bounded_nonflat_stability_diagnosis_and_action_native_flat_branch_repair_with_selection_and_lorentzian_boundary
+active_route: extend the Block-20 local deficit-squared repair from one supplied coefficient to a positive-semidefinite monotonic coefficient window, while retaining the nonflat double-precision mode brackets and exact action/source controls
+hard_residual: select the geometry/history action and coefficient from stronger continuous-zone, nonlinear, Lorentzian, coarse-grained, background, or realized-source physics; then select the constraint/boundary sector and prove nonlinear sourced stability, projective completion, and the realized member; constituent-causal rank-one matter and the Born functional/program selector remain separately open
+target_contract_status: bounded_nonflat_stability_diagnosis_action_native_flat_repair_and_linear_coefficient_nonselection_window_with_stronger_selector_boundary
 A_min:
   - Lattice
   - Qubit
@@ -367,8 +367,9 @@ approach_family_coverage:
   ten_reaction_nonlinear_kkt: complete_fifteen_edge_equations_with_unique_metric_multipliers_and_native_extra_equation
   nonflat_global_spatial_soft_mode: double_precision_bracketed_crossing_x_1_point_169447062377_with_inertia_change_on_the_block19_background_not_interval_certified
   nonflat_pointwise_affine_soft_mode: double_precision_bracketed_crossing_x_2_point_425040995164_with_inertia_change_on_the_block19_background_not_interval_certified
-  flat_curvature_squared_branch_lift: supplied_alpha_one_over_1024_lifts_the_fifth_branch_and_leaves_exactly_ten_constant_metric_zeros_at_k0
-  repaired_finite_torus_inventory: exact_25308_nonzero_modes_L3_through_L10_with_zero_failures_and_inertia_nine_negative_two_positive_four_gauge_zero
+  flat_curvature_squared_branch_lift: every_alpha_in_zero_open_to_one_over_128_closed_lifts_the_fifth_branch_and_leaves_exactly_ten_constant_metric_zeros_at_k0_by_positive_semidefinite_monotonicity_and_endpoint_inertia
+  repaired_finite_torus_inventory: exact_25308_nonzero_modes_L3_through_L10_with_zero_failures_at_five_dyadic_witnesses_and_interval_inertia_nine_negative_two_positive_four_gauge_zero
+  coefficient_window_nonselection: exact_monotonicity_plus_126540_finite_and_35915_stress_coefficient_evaluations_show_named_linear_criteria_admit_zero_open_to_one_over_128_closed_with_first_finite_crossing_0_point_0098646245597
   action_native_body_source_repair: bare_residual_two_reduced_below_one_e_minus_13_with_gauge_residual_below_one_e_minus_14
   infrared_einstein_order_preservation: curvature_square_metric_correction_is_O_k4_against_the_Regge_O_k2_leading_operator
 strongest_unresolved_proof_obligation: derive or select one physical geometry/history action and dimensionless coefficient together with a law-admissible background or boundary sector and constraint localization, then prove continuous-zone gauge-quotient closure plus Lorentzian time-dependent nonlinear sourced stability and connect it to projective and realized history; independently close constituent-causal rank-one matter and the Born functional/program selector
@@ -378,10 +379,10 @@ landed_frontier_reachability: advances
 campaign_native_target_reachability: advances
 actual_current_surface_status: bounded-support
 target_claim_type: bounded_theorem
-conditional_surface_status: the actual Block-19 nonflat background has separately double-precision-bracketed spatial soft-mode crossings under global-only and pointwise affine-normal constraint extensions, while the supplied local Regge-plus-deficit-square flat action with alpha one over 1024 lifts the fifth branch, solves the named body source, has zero failures on 25308 finite-torus modes and 7183 stress samples, and preserves the leading infrared Einstein order; interval root validation, action and coefficient selection, continuous-zone closure, nonflat repair, and Lorentzian nonlinear stability remain open
+conditional_surface_status: the actual Block-19 nonflat background has separately double-precision-bracketed spatial soft-mode crossings under global-only and pointwise affine-normal constraint extensions; on the separate flat local Regge-plus-deficit-square family every coefficient in zero open to one over 128 closed lifts the fifth branch, solves the named body source, has interval-stable inertia on 25308 finite-torus modes and 7183 stress samples, and preserves the leading infrared Einstein order, so those named bounded Euclidean linear criteria do not select alpha one over 1024; stronger-physics selection, continuous-zone closure, nonflat repair, and Lorentzian nonlinear stability remain open
 hypothetical_axiom_status: a candidate geometry-history law should select a local lattice-covariant action and dimensionless coefficients, a law-admissible background or boundary sector, localization of every constraint, gauge-quotient closure on realized momentum support, the intended infrared gravitational pole and source Ward identity, and stable Lorentzian nonlinear evolution; this wording is sufficient or target-equivalent rather than proven minimal or necessary, remains unadopted, and may instead be derived downstream
-review_disposition: block20_direct_conformance_pass_cache_fresh_runner_copy_mutations_14_of_14_graph_5466_nodes_15593_edges_independent_audit_required
-pr_status: block20_open_pr_6091_clean_mergeable_on_exact_block19_delivery_head
+review_disposition: block20_coefficient_window_extension_primary_runner_pass_16_of_16_mutation_sensitivity_pass_18_of_18_n1_n8_and_cluster_fold_landed_direct_conformance_pending
+pr_status: block20_pr_6091_coefficient_window_extension_uncommitted_fold_in_progress
 pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/6091
 checkpoint_zero_toe_map:
   operational_quantum_records:
@@ -409,5 +410,5 @@ checkpoint_zero_toe_map:
     physical_m2_bridge_percent: 63
     autonomous_closure_percent: 34
     evidence_ceiling_percent: 99
-next_exact_action: interval-certify the two nonflat determinant crossings, prove or refute continuous-Brillouin-zone gauge-quotient closure for the repaired action, derive or sharply constrain its coefficient and selected background from a local admissibility/history law, and construct the Lorentzian nonlinear sourced evolution and stability test
+next_exact_action: prove or refute continuous-Brillouin-zone gauge-quotient closure for the repaired action and test whether its extremal gap narrows the coefficient window; then test nonlinear, Lorentzian, coarse-grained, background, and realized-source coefficient selectors and construct the nonlinear sourced evolution
 stop_condition: runtime budget reached, an honest audit-ready block is packaged and the queue exhausted, or a blocker requiring external governance or user authority prevents every ranked target

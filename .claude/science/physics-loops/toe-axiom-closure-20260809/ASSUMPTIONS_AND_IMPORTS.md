@@ -411,3 +411,21 @@ No observation, fitted constant, empirical Newton coupling, external theorem,
 new premise, canonical edit, or audit verdict is imported. The continuous
 gauge-quotient spectrum, coefficient selection, Lorentzian evolution, nonlinear
 source completion, and realized geometry/history law remain open.
+
+## Block 20 Coefficient-Window Extension Assumptions
+
+- Imported exactly: the Block-20 flat Regge kernel, its local deficit-square
+  Hessian, the actual gauge map, the named body-edge source, and the fixed
+  finite/stress inventories.
+- Derived rather than imported: `Q_alpha2-Q_alpha1` is positive semidefinite,
+  every declared quotient correction is positive on the bare extra branch,
+  the `alpha=1/128` endpoint inertia, and the finite generalized crossing
+  `0.0098646245597...`.
+- Supplied only as transparent controls: the safe rational endpoint `1/128`
+  and the five dyadic witnesses `1/16384,1/4096,1/1024,1/256,1/128`. They are
+  not observed, fitted, or physically selected constants.
+- The interval statement is exhaustive on the 25,308 named finite modes and
+  separately bounded on 7,183 named stress matrices. It is not a
+  continuous-Brillouin-zone theorem.
+- No observation, external theorem, new premise, axiom/primitive edit, audit
+  verdict, or fixed-percentage move is imported.

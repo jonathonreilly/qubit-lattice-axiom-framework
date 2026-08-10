@@ -171,9 +171,9 @@ actual_current_surface_status: bounded-support
 target_claim_type: bounded_theorem
 conditional_surface_status: exact finite positive binary square-curl equivalence, unique joint-law reconstruction, cubic count-only geometric-odds classification, derived finite Ising-type action, and exact covariant hostile witness; continuous M2, dynamics, history, and gravity identification remain open
 hypothetical_axiom_status: one sufficient Admissibility addition makes the sitewise distributions one-site full conditionals of a covariant, projectively consistent family of finite-region joint laws; update-kernel semantics remains a live alternative; no axiom edit authorized
-review_disposition: block08_direct_self_review_in_progress
-pr_status: local_block08_not_yet_open
-pr_url: null
+review_disposition: block08_direct_self_review_passed_with_disclosed_origin_main_epoch_blocker
+pr_status: open_6076_stacked_on_open_6075
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/6076
 checkpoint_zero_toe_map:
   operational_quantum_records:
     repo_science_percent: 95
@@ -200,5 +200,5 @@ checkpoint_zero_toe_map:
     physical_m2_bridge_percent: 63
     autonomous_closure_percent: 34
     evidence_ceiling_percent: 99
-next_exact_action: complete Block 8 mutation sensitivity, harness/graph registration, direct conformance, and stacked PR delivery; then test the derived binary statistical action against physical source/tensor bridge obligations
+next_exact_action: search current-main and open PRs for the strongest physical source/tensor bridge applicable to the derived binary statistical action, then construct an exact test that cannot identify gravity by name alone
 stop_condition: runtime budget reached, an honest audit-ready block is packaged and the queue exhausted, or a blocker requiring external governance or user authority prevents every ranked target

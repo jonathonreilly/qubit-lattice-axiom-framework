@@ -469,7 +469,7 @@ failure already owned by PR #6061. No `review-loop` was invoked.
   #6075 on the exact #6074 head. Hard landing order is #6063, #6065, #6067,
   #6070, #6071, #6074, then #6075.
 
-## Block 8 direct-review record
+## Block 8 direct self-review — passed
 
 - Prior-art search found no in-repo finite full-conditional square-curl or
   cubic count-logit classification. Cycle 21 already owns the broad non-IID
@@ -495,5 +495,31 @@ failure already owned by PR #6061. No `review-loop` was invoked.
   projective consistency only. The statistical action is not called gravity;
   binary-code selection, continuous M2 extension, dynamics, realized history,
   and source/tensor identification remain open.
-- No canonical axiom is edited, no percentage moves, and no `review-loop` is
-  invoked. Mutation, graph, conformance, and delivery checks remain pending.
+- Twenty-one disposable-copy mutations cover canonical and parent source
+  bindings, finite compatibility algebra, reconstruction, rank, compatible and
+  hostile fixtures, cubic covariance, action recovery, candidate family
+  wording, percentage/governance boundaries, machine status, canonical
+  nonmutation, and N1--N8. Every mutation exits nonzero at its named family.
+- The citation graph is regenerated at 5,454 nodes / 15,524 edges. The new note
+  has out-degree six, the canonical harness gains one row, and repository
+  invariants pass with zero link or class-F violations and an acknowledged
+  topology delta. Strict audit lint has zero errors; its warnings/notices are
+  baseline repository debt. Vocabulary lint, YAML, Python, whitespace, cache
+  freshness, and the exact 18-file stacked delta pass.
+- After ledger seeding, changed-evidence readiness checks one Block 8 claim and
+  all eight stacked claims as forensic-ready with no failures or control
+  failures.
+- The full pipeline passes premise purity, model-family normalization, graph
+  construction, manifest writing, load-bearing computation, ledger seeding,
+  sanitization, classifier capture, effective-status computation, and stale-
+  audit invalidation. Restoration then reproduces the current-main
+  dependency-policy epoch mismatch owned by PR #6061: expected
+  `20698263cbf6ad82569f15ceee0642525f18c9c093d329be1149253217d33415`,
+  current `c58180b642cbc7714a270c54258ab4a6c3588a83df54d573170152f7a1a4ceb1`.
+  The disposable pipeline worktree contained 1,065 tracked generated changes
+  and 820 generated ledger shards and was removed whole after inspection.
+- The canonical axiom memo is byte-identical to `origin/main`, no percentage
+  moves, and no `review-loop` is invoked. Committed the 18-file science delta
+  as `735ad6e618`, pushed the dedicated branch, and opened mergeable stacked PR
+  #6076 on the exact #6075 head. Hard landing order is #6063, #6065, #6067,
+  #6070, #6071, #6074, #6075, then #6076.

@@ -336,7 +336,16 @@ source/tensor identification remain open.
 The primary runner is PASS=27 FAIL=0 with 4,511 characters of stdout. An
 independent SymPy elimination confirms the two-site compatibility condition,
 rank five/nullity two of the cubic logit system, the compatible 1/16 path, the
-hostile 1/14 and 1/9 paths, and exact action conditionals. Harness/graph
-registration, mutations, direct conformance, commit, push, and stacked PR
-delivery remain to be completed. No canonical axiom is edited, no percentage
-moves, and no review-loop is invoked.
+hostile 1/14 and 1/9 paths, and exact action conditionals. Twenty-one
+disposable-copy mutations reach their intended failure families. The graph is
+regenerated at 5,454 nodes / 15,524 edges; the new note has out-degree six and
+the harness gains one row. Direct conformance passes, and changed-evidence
+readiness marks Block 8 plus all eight stacked claims forensic-ready with no
+failures or control failures. The full pipeline reaches only the known
+current-main dependency-policy epoch mismatch owned by PR #6061 after every
+earlier stage passes; 1,065 tracked generated changes and 820 generated ledger
+shards existed only in a disposable worktree that was removed. The canonical
+axiom memo is untouched and no percentage moves. The 18-file science delta is
+commit `735ad6e618` and open as stacked PR #6076 on the exact #6075 head. Hard
+landing order is #6063, #6065, #6067, #6070, #6071, #6074, #6075, then #6076.
+No `review-loop` is invoked.

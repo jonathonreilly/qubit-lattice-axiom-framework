@@ -108,14 +108,17 @@ were cleaned. Opened: PR #6075, science commit `1c87eaedf2`, on the exact #6074
 head. Hard landing order is #6063, #6065, #6067, #6070, #6071, #6074, then
 #6075. The canonical axiom memo remains untouched; no `review-loop` is used.
 
-Block 8 is under direct self-review on branch
+Block 8 is open as PR #6076 from branch
 physics-loop/toe-axiom-closure-block08-20260810, stacked on the exact PR #6075
 head f7b0f1d50c656e6829a5c780a23e5ea4c559475a. The finite binary square-curl
 theorem, unique path-integrated joint law, cubic count-only geometric-odds
 classification, exact finite Ising-type action, covariant hostile rule,
 full-conditional/update-kernel separation, candidate Admissibility wording,
-source N1--N8 gate, runner/cache, and harness row are constructed. The primary
-runner is PASS=27 FAIL=0 and an independent SymPy elimination agrees.
-Mutation sensitivity, graph registration, direct repository conformance,
-commit, push, and stacked PR delivery remain pending. The canonical axiom
-memo remains untouched; no review-loop is used.
+source N1--N8 gate, runner/cache, and harness row are complete. The primary
+runner is PASS=27 FAIL=0, the independent SymPy elimination agrees, and all 21
+mutation probes fail closed. Direct conformance and seeded changed-evidence
+readiness pass. The full pipeline reproduces only the PR #6061 dependency-
+policy epoch mismatch after earlier stages pass. Science commit is
+`735ad6e618`. Hard landing order is #6063, #6065, #6067, #6070, #6071, #6074,
+#6075, then #6076. The canonical axiom memo remains untouched; no
+`review-loop` is used.

@@ -49,7 +49,10 @@ and [primary receipt](https://github.com/jonathonreilly/qubit-lattice-axiom-fram
 as text/AST provenance at immutable commit
 `0c453230c6334d8a9c0569925a8f95d96509e2f4`. Their SHA-256 values and exact
 roles are recorded in the primary receipt. These are pinned external PR
-artifacts, not assumed ancestors of this branch. Cycle 971 measured the set as
+artifacts, not assumed ancestors of this branch and not fetched at runtime.
+The complete 26-path catalog and pinned blob identities are literalized in
+this delta, so the external links are provenance cross-checks rather than
+execution dependencies. Cycle 971 measured the set as
 `UNAFFECTED=1,344`, `SUPPORT_READING_SAFE=70`, `MEANING_CHANGED=26`, and
 `NEWLY_WITNESSABLE=0`; this block consumes only the 26-path class.
 
@@ -84,7 +87,11 @@ These four labels are relational bookkeeping, not row verdicts.
 `BEARS` is limited to rows whose obligation explicitly turns on
 state-resolved versus uniform-marginal evaluation; every other row is
 `SILENT`. Cycle 970 is pinned by [PR #6062](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/6062)
-at `6fd0de0a288d212a4a6ce3fdd4dc9019f30dbbad`. Cycle 972 is pinned by
+at `6fd0de0a288d212a4a6ce3fdd4dc9019f30dbbad`; its
+[primary receipt](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/6fd0de0a288d212a4a6ce3fdd4dc9019f30dbbad/outputs/inter_site_gate_cycle970_receipt_2026_08_09.json)
+has SHA-256
+`dbf6c1bea9a22750aaf2a0483357c9e38f18b64669177aa9f75b8ae7e8be04f0`.
+Cycle 972 is pinned by
 [PR #6069](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/6069)
 at `3826925e019c0e1966a9b85110a397db2c61d33f`; its
 [primary receipt](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/3826925e019c0e1966a9b85110a397db2c61d33f/outputs/covariant_dependence_law_cycle972_receipt_2026_08_09.json)
@@ -96,6 +103,9 @@ marginal-dependent words, and the uniform-`x` XOR identity as the cancellation
 mechanism. It does **not** certify a same-support state-resolved witness, and
 this hand-off makes no such inference. It establishes no row-specific carrier,
 kinetic, tick, spectral, or record bridge and discharges no obligation.
+The witness facts are the task-supplied “Where this stands” premise, copied
+into the primary receipt with immutable cross-checks; neither runner resolves
+or fetches a sibling branch.
 
 ## The 26-row hand-off index
 
@@ -162,26 +172,30 @@ disagreement is not suppressed: the checker emits each one verbatim as
 ## Reproduction
 
 ```bash
-python3 scripts/frontier_cycle973_repair_map_2026_08_09.py
-python3 scripts/frontier_cycle973_map_independent_check_2026_08_09.py
-python3 -m py_compile \
-  scripts/frontier_cycle973_repair_map_2026_08_09.py \
-  scripts/frontier_cycle973_map_independent_check_2026_08_09.py
 python3 scripts/vocab_lint.py --fix \
   docs/AXIOM_EDIT_REPAIR_MAP_CYCLE973_BOUNDED_THEOREM_NOTE_2026-08-09.md \
   scripts/frontier_cycle973_repair_map_2026_08_09.py \
   scripts/frontier_cycle973_map_independent_check_2026_08_09.py
+python3 -m py_compile \
+  scripts/frontier_cycle973_repair_map_2026_08_09.py \
+  scripts/frontier_cycle973_map_independent_check_2026_08_09.py
+python3 -c 'from scripts.runner_cache import execute_and_write_cache; execute_and_write_cache("scripts/frontier_cycle973_repair_map_2026_08_09.py", 300)'
+python3 -c 'from scripts.runner_cache import execute_and_write_cache; execute_and_write_cache("scripts/frontier_cycle973_map_independent_check_2026_08_09.py", 300)'
+python3 -c 'from scripts.runner_cache import cache_status; assert cache_status("scripts/frontier_cycle973_repair_map_2026_08_09.py") == cache_status("scripts/frontier_cycle973_map_independent_check_2026_08_09.py") == "fresh"'
 git diff --check origin/main...HEAD
-python3 docs/audit/scripts/audit_lint.py --strict
 bash docs/audit/scripts/run_pipeline.sh
+python3 docs/audit/scripts/audit_lint.py --strict
+python3 docs/audit/scripts/check_changed_audit_evidence.py --base origin/main
 ```
 
 The full pipeline is a validation command only. On this snapshot it reaches
 stage 7 and then stops at the pre-existing dependency-policy epoch mismatch;
 all regenerated ledgers, queues, and effective-status files must be restored
 before commit. Strict audit lint exits zero with pre-existing warnings and
-notices. Cache envelopes bind runner path, snapshot pin, receipt path, and
-receipt SHA-256; both runners replay byte-identically.
+notices. The repository cache layer binds each canonical envelope to its
+runner and declared-input fingerprints. The runner stdout and JSON receipts
+replay byte-identically; the canonical cache also records measured elapsed
+time and is therefore not claimed byte-identical.
 
 The pinned caches are
 [`logs/runner-cache/frontier_cycle973_repair_map_2026_08_09.txt`](../logs/runner-cache/frontier_cycle973_repair_map_2026_08_09.txt)

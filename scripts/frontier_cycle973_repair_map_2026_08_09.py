@@ -48,8 +48,13 @@ CYCLE971_PROVENANCE = (
     },
 )
 CYCLE970_972_WITNESS_PROVENANCE = {
+    "premise_status": "task-supplied Where-this-stands premise; external links are immutable provenance, not runtime inputs",
+    "runtime_dependency_on_sibling_refs": False,
     "cycle970_commit": "6fd0de0a288d212a4a6ce3fdd4dc9019f30dbbad",
     "cycle970_pr": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/6062",
+    "cycle970_primary_receipt_path": "outputs/inter_site_gate_cycle970_receipt_2026_08_09.json",
+    "cycle970_primary_receipt_url": "https://raw.githubusercontent.com/jonathonreilly/qubit-lattice-axiom-framework/6fd0de0a288d212a4a6ce3fdd4dc9019f30dbbad/outputs/inter_site_gate_cycle970_receipt_2026_08_09.json",
+    "cycle970_primary_receipt_sha256": "dbf6c1bea9a22750aaf2a0483357c9e38f18b64669177aa9f75b8ae7e8be04f0",
     "cycle972_commit": "3826925e019c0e1966a9b85110a397db2c61d33f",
     "cycle972_pr": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/6069",
     "cycle972_primary_receipt_path": "outputs/covariant_dependence_law_cycle972_receipt_2026_08_09.json",
@@ -64,15 +69,19 @@ CYCLE970_972_WITNESS_PROVENANCE = {
 }
 
 RECEIPT_PATH = ROOT / "outputs/axiom_edit_repair_map_cycle973_receipt_2026_08_09.json"
-CACHE_PATH = ROOT / "logs/runner-cache/frontier_cycle973_repair_map_2026_08_09.txt"
-CACHE_FORMAT = "cycle973-runner-cache-v1"
 RUNNER_REL = "scripts/frontier_cycle973_repair_map_2026_08_09.py"
 RECEIPT_REL = "outputs/axiom_edit_repair_map_cycle973_receipt_2026_08_09.json"
 PINNED_SNAPSHOT_SURFACES = (
     f"{PINNED_SNAPSHOT_COMMIT}:docs/",
     f"{PINNED_SNAPSHOT_COMMIT}:scripts/",
 )
-AUDIT_INPUT_PATHS: tuple[str, ...] = ()
+# All corpus content is addressed through literal git objects.  The executable
+# catalog in this runner is consequently the sole tracked runtime input; the
+# canonical cache layer already hashes it as the runner and hashes it again as
+# the explicit declaration required by the audit cache contract.
+AUDIT_INPUT_PATHS = (
+    "scripts/frontier_cycle973_repair_map_2026_08_09.py",
+)
 
 DELTA_VOCABULARY = {
     "STRICTLY_WEAKER": (
@@ -503,19 +512,6 @@ def semantic_abstraction_control() -> dict:
     }
 
 
-def cache_envelope(body: str, receipt_text: str) -> str:
-    return "\n".join((
-        f"# cache_format: {CACHE_FORMAT}",
-        f"# runner: {RUNNER_REL}",
-        f"# pinned_snapshot_commit: {PINNED_SNAPSHOT_COMMIT}",
-        f"# receipt: {RECEIPT_REL}",
-        f"# receipt_sha256: {sha256(receipt_text.encode()).hexdigest()}",
-        "# cache_body: deterministic runner stdout follows",
-        body.rstrip("\n"),
-        "",
-    ))
-
-
 def build_rows() -> list[dict]:
     rows = []
     seen: set[str] = set()
@@ -577,7 +573,7 @@ def main() -> int:
             semantic_control["converse_control_same_support"],
             semantic_control["converse_control_distribution_changed"],
         )),
-        "literal_working_tree_audit_input_paths_empty": tuple(AUDIT_INPUT_PATHS) == (),
+        "literal_audit_input_is_executable_catalog": tuple(AUDIT_INPUT_PATHS) == (RUNNER_REL,),
         "all_obligations_named_and_unattempted": all(
             row["minimal_discharge"]["obligation_id"].startswith("O973-")
             and not row["minimal_discharge"]["attempted_here"]
@@ -603,6 +599,7 @@ def main() -> int:
         "cycle971_pr_url": CYCLE971_PR_URL,
         "cycle971_text_ast_provenance": list(CYCLE971_PROVENANCE),
         "cycle970_972_witness_provenance": CYCLE970_972_WITNESS_PROVENANCE,
+        "external_provenance_runtime_dependency": False,
         "families": FAMILIES,
         "caps": CAPS,
         "delta_vocabulary": DELTA_VOCABULARY,
@@ -615,10 +612,11 @@ def main() -> int:
         "rows": rows,
         "integrity": integrity,
         "cache_contract": {
-            "format": CACHE_FORMAT,
+            "format": "canonical scripts/runner_cache.py envelope",
             "runner": RUNNER_REL,
             "receipt": RECEIPT_REL,
-            "deterministic_body": True,
+            "writer": "scripts/runner_cache.py",
+            "deterministic_stdout": True,
         },
         "execution_caps": {
             "audit_timeout_sec": AUDIT_TIMEOUT_SEC,
@@ -645,7 +643,6 @@ def main() -> int:
     cache = "\n".join(cache_lines) + "\n"
     if len(cache.encode()) >= HOUSE_STDOUT_LIMIT_BYTES:
         raise AssertionError("runner stdout exceeds house cap")
-    CACHE_PATH.write_text(cache_envelope(cache, rendered), encoding="utf-8")
     print(cache, end="")
     return 0
 

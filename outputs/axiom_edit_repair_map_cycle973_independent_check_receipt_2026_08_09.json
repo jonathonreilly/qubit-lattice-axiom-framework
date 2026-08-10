@@ -1,15 +1,17 @@
 {
   "artifact": "Cycle 973 independent abstract-semantic repair-map attack",
   "audit_input_paths": [
+    "scripts/runner_cache.py",
     "scripts/frontier_cycle973_repair_map_2026_08_09.py",
     "logs/runner-cache/frontier_cycle973_repair_map_2026_08_09.txt",
     "outputs/axiom_edit_repair_map_cycle973_receipt_2026_08_09.json"
   ],
   "cache_contract": {
-    "deterministic_body": true,
-    "format": "cycle973-runner-cache-v1",
+    "deterministic_stdout": true,
+    "format": "canonical scripts/runner_cache.py envelope",
     "receipt": "outputs/axiom_edit_repair_map_cycle973_independent_check_receipt_2026_08_09.json",
-    "runner": "scripts/frontier_cycle973_map_independent_check_2026_08_09.py"
+    "runner": "scripts/frontier_cycle973_map_independent_check_2026_08_09.py",
+    "writer": "scripts/runner_cache.py"
   },
   "caps": {
     "audit_input_path_cap": 3,
@@ -271,10 +273,9 @@
     "literal_audit_input_paths": true,
     "literal_pin_matches_primary": true,
     "primary_and_independent_path_sets_match": true,
-    "primary_cache_envelope_and_receipt_pin": true,
+    "primary_cache_is_canonical_and_current": true,
     "primary_map_digest_recomputed": true,
-    "truth_table_world_cap_respected": true,
-    "witness_bearing_catalog_agrees": true
+    "truth_table_world_cap_respected": true
   },
   "logical_relation": "abstract S implies P; P does not imply S by the independently printed same-support control",
   "pinned_snapshot_commit": "323d7fc32d77598f74ea6cd4d30c38dda0fe5070",

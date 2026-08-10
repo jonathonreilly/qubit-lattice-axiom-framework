@@ -552,3 +552,17 @@ the local joint action realizes.
 
 The route fails because four homogeneous tensor directions do not match the
 required matrices, not because a direct seagull has the wrong order or inertia.
+
+## Block 25 Action-Representative Route Comparison
+
+| Route | Exact object | Outcome | Decision |
+|---|---|---|---|
+| unrestricted common geometry shift | `S_i->S_i+F(g)` | exact probability invariance and arbitrary local contact Hessian | retain as identifiability theorem, reject as physical selection |
+| explicit quotient completion | `D_s=-U M_s U^dagger` | cancels every full source matrix at `O(c)` and annihilates inherited gauge columns | positive algebraic control only |
+| local covariant representative/equivalence class | allowed cellwise counterterms and unit | not selected | highest-priority axiom/law interface |
+| global integrable joint action | one `F(g,J)` across backgrounds and source directions | not constructed | required before physical completion |
+| connected and generator-connection response | complete same-action Ward tensor | not computed | derive after representative selection |
+
+The key distinction is now exact: normalized Record probabilities fix relative
+weights, while absolute geometry response requires additional physical
+representative authority.

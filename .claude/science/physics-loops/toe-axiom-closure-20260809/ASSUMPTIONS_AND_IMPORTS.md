@@ -504,3 +504,17 @@ No connected covariance, site-dependent coframe, geometry-dependent additive
 zero, generator connection, physical action/source selection, continuous-
 zone theorem, Lorentzian law, nonlinear stability, external science, axiom
 edit, percentage move, audit verdict, or `review-loop` is imported.
+
+## Block 25 Assumptions And Imports
+
+Block 25 imports only the finite normalized-action definition, the retained
+same-family response identity, the Block-23 reconstructed source matrices,
+and the inherited flat physical/gauge decomposition. Probability invariance
+and arbitrary local Hessian realization are exact algebra. Source matrices
+and quotient/lift residuals are double-precision reconstructions.
+
+The common shift is configuration-independent at fixed geometry but may
+depend on geometry and the named source tangent. No locality, covariance,
+cellwise gluing, global integrability, one joint source coordinate, physical
+representative selection, Lorentzian law, external science, canonical edit,
+percentage move, audit verdict, or `review-loop` is imported.

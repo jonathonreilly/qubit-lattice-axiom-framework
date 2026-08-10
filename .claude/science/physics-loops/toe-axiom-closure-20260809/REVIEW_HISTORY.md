@@ -1452,3 +1452,27 @@ instance or Fourier census.
 - Science commit is `ec49ca1720`; campaign conformance is `4488ccec8c`. PR
   #6095 is open, mergeable, and `CLEAN`, stacked exactly on Block-23 delivery
   head `3c781e0585`. Independent audit remains required.
+
+## Block 25 Construction Record
+
+- Proved the exact normalized-family gauge `S_i(g)->S_i(g)+F(g)`: every
+  normalized probability is invariant while `log Z` Hessian shifts by
+  `-F''`.
+- Proved any local real symmetric Hessian, hence any complex Hermitian
+  six-mode tensor after realification, is realizable by a common quadratic.
+- Constructed explicit fifteen-edge shifts for all three Block-23 source
+  matrices. Maximum quotient cancellation residual is `2.037e-15`, inherited-
+  gauge residual is `4.580e-16`, and first-source-order scaling is exact to
+  `4.945e-17`.
+- N1--N8 preserves locality, covariance/gluing, global integrability,
+  representative/action-unit selection, source transformations, massive
+  phases, and Lorentzian stability.
+- Primary source/input-pinned cache is `PASS=13 FAIL=0` in `14.35 s`.
+- Thirteen fresh-process runner-copy mutations each exit nonzero at exactly
+  one intended named check; aggregate result is `PASS=13 FAIL=0`.
+- Citation registration is `5,471` nodes / `15,620` edges; the new node has
+  out-degree three. Vocabulary, strict lint, premise purity, model-family
+  normalization, Python/YAML, whitespace, source/input cache, canonical
+  nonmutation, and graph/link/class-F invariant gates pass.
+- Pipeline, changed evidence, commits, delivery, and independent audit remain
+  pending.

@@ -861,3 +861,18 @@ The next exact obligation is the complete same-action tensor: connected
 covariance, site dependence, additive normalization, mixed/source/multiplier
 terms, and `S_a partial R^a` on one nonuniform coupled background. Canonical
 axioms and the fixed TOE rubric remain unchanged.
+
+## Block 25 Goal Checkpoint
+
+The additive-zero branch is now exact: normalized probabilities do not
+identify absolute geometry response. A common geometry-dependent shift leaves
+all probabilities invariant, can realize any local Hermitian contact tensor,
+and explicitly cancels each full Block-23 source matrix while preserving the
+inherited gauge columns.
+
+This moves the live wall from algebraic completion to physical
+representative selection. The next obligation is one registered local
+covariant joint action/equivalence class whose allowed shifts, unit,
+source/constraint transformations, global integrability, and complete Ward
+tensor are derived before continuous-zone and Lorentzian stability. Canonical
+axioms and fixed percentages remain unchanged.

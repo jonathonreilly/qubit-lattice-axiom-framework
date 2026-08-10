@@ -502,3 +502,22 @@ complete conditional nonlinear compact solution:
   controlled five-file overlay passes all 18 stages at checkpoint
   `bbe9aca7cae0`; changed evidence is clean for `1/1` Block-24 and `24/24`
   stacked claims; delivery pending
+
+## Block 25 — Additive-Zero Contact Nonidentifiability
+
+- theorem note:
+  `docs/ADMISSIBILITY_NORMALIZED_FAMILY_ADDITIVE_ZERO_CONTACT_NONIDENTIFIABILITY_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md`
+- runner/cache:
+  `scripts/admissibility_normalized_family_additive_zero_contact_nonidentifiability_boundary_2026_08_10.py` and its source/input-pinned cache
+- packet scope: exact normalized-family gauge, log-partition Hessian shift,
+  arbitrary local real/Hermitian Hessian realization, explicit three-source
+  quotient completion, inherited-gauge-null lift, first-order scaling, and
+  N1--N8 action-selection boundary
+- exclusions: physical representative selection, locality/covariance/gluing,
+  global integrability, source law, nonuniform/continuous-zone/Lorentzian
+  closure, canonical edits, percentage movement, audit verdicts, and
+  `review-loop`
+- conformance: primary cache `PASS=13 FAIL=0` in `14.35 s`; thirteen isolated
+  mutations each fail exactly one intended check; graph `5,471/15,620`,
+  out-degree three; direct gates pass; pipeline, changed evidence, commits,
+  and delivery pending

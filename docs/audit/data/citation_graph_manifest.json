@@ -1,6 +1,6 @@
 {
- "edge_count": 15617,
- "node_count": 5470,
+ "edge_count": 15620,
+ "node_count": 5471,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -413,6 +413,10 @@
   "admissibility_nonlinear_regge_extra_branch_cubic_lift_source_compatibility_boundary_bounded_theorem_note_2026-08-10": {
    "deps_hash": "2eebdd555ba7",
    "out_degree": 2
+  },
+  "admissibility_normalized_family_additive_zero_contact_nonidentifiability_boundary_bounded_theorem_note_2026-08-10": {
+   "deps_hash": "4b8899818bd8",
+   "out_degree": 3
   },
   "admissibility_positive_two_stream_timelike_mean_dilation_zero_mode_boundary_bounded_theorem_note_2026-08-10": {
    "deps_hash": "9a9eae295351",

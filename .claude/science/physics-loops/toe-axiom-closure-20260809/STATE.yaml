@@ -6,18 +6,18 @@ runtime_budget: 24h
 stop_at: 2026-08-10T19:00:00-04:00
 checkpoint_interval: 30m
 deep_block: 90m
-cycle: 24
-science_block: 24
-branch: physics-loop/toe-axiom-closure-block24-hyperface-seagull-20260810
+cycle: 25
+science_block: 25
+branch: physics-loop/toe-axiom-closure-block25-additive-zero-20260810
 base: origin/main@39c74017b870c27c804e3992f2a11e90336476b2
-worktree: /private/tmp/toe-block24-hyperface-seagull.WuFOQu
+worktree: /private/tmp/toe-block25-additive-zero.7Mw8PZ
 lock_mode: cooperative
 lock_owner: physics-loop
 lock_holder_id: 019fcac5-093c-70a1-ae3e-7f2ef1b002ef
 goal: maximize honest TOE closure from the current axiom surface by stress-testing the nonlinear compact Regge background, constructing an action-native gravity repair where possible, and isolating the exact action-selection and Lorentzian-stability axiom interface without editing canonical axioms
-active_route: execute the retained direct same-action hyperface seagull on the Block-23 six-mode target and separate coupling-order or inertia success from full tensor matching
-hard_residual: derive the complete connected contact additive-normalization mixed source multiplier and generator-connection tensor from one selected nonuniform joint action, match the full O_k0 matrix across continuous momentum, and prove Lorentzian nonlinear closure; constituent-causal rank-one matter and the Born functional/program selector remain separately open
-target_contract_status: bounded_four_coframe_direct_contact_order_signature_and_full_tensor_span_diagnosis
+active_route: close the geometry-dependent additive-zero branch by testing whether normalized configuration probabilities identify the absolute local contact tensor
+hard_residual: select one allowed local covariant globally integrable joint action representative and unit with source and constraint transformations, derive its complete Ward tensor across nonuniform continuous momentum, and prove Lorentzian nonlinear closure; constituent-causal rank-one matter and the Born functional/program selector remain separately open
+target_contract_status: exact_normalized_family_additive_zero_contact_nonidentifiability_with_constructive_full_tensor_completion
 A_min:
   - Lattice
   - Qubit
@@ -203,6 +203,9 @@ files_touched:
   - docs/ADMISSIBILITY_FOUR_COFRAME_HYPERFACE_SEAGULL_SOURCED_REGGE_SPAN_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md
   - scripts/admissibility_four_coframe_hyperface_seagull_sourced_regge_span_boundary_2026_08_10.py
   - logs/runner-cache/admissibility_four_coframe_hyperface_seagull_sourced_regge_span_boundary_2026_08_10.txt
+  - docs/ADMISSIBILITY_NORMALIZED_FAMILY_ADDITIVE_ZERO_CONTACT_NONIDENTIFIABILITY_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md
+  - scripts/admissibility_normalized_family_additive_zero_contact_nonidentifiability_boundary_2026_08_10.py
+  - logs/runner-cache/admissibility_normalized_family_additive_zero_contact_nonidentifiability_boundary_2026_08_10.txt
 open_imports:
   - current axioms do not identify local possibilities with effects or supply a menu-independent effect grading
   - current axioms do not select the binary-plus-ternary scaled-projector family as physically eligible
@@ -408,20 +411,23 @@ approach_family_coverage:
   positive_hyperface_signature_flexibility: strictly_positive_orientation_weights_realize_all_three_source_mass_inertia_classes
   homogeneous_hyperface_span_boundary: all_three_source_matrices_raise_the_four_orientation_design_rank_to_five_with_relative_frobenius_residual_above_point_89
   direct_seagull_source_order: source_linear_hyperface_contact_enters_at_O_c_without_auxiliary_rank_jump
+  normalized_family_additive_zero_gauge: common_geometry_dependent_shift_leaves_every_normalized_configuration_probability_exactly_invariant_and_moves_log_partition_hessian_by_minus_F_second
+  arbitrary_local_contact_hessian: any_real_symmetric_or_complex_Hermitian_local_tensor_is_the_hessian_of_a_common_quadratic_shift
+  three_source_additive_contact_completion: explicit_fifteen_edge_source_linear_shifts_cancel_all_three_full_six_mode_matrices_below_2_point_1e_minus_15_and_annihilate_inherited_gauge_below_4_point_6e_minus_16
   action_native_body_source_repair: bare_residual_two_reduced_below_one_e_minus_13_with_gauge_residual_below_one_e_minus_14
   infrared_einstein_order_preservation: curvature_square_metric_correction_is_O_k4_against_the_Regge_O_k2_leading_operator
-strongest_unresolved_proof_obligation: derive one selected nonuniform joint geometry-source action and compute its complete connected contact additive-zero mixed source multiplier and differentiated-generator tensor; match minus the full sourced O_k0 coefficient across continuous momentum; prove Lorentzian nonlinear stability; independently close constituent-causal rank-one matter and the Born functional/program selector
+strongest_unresolved_proof_obligation: select one allowed local covariant globally integrable joint geometry-history action representative its unit and additive equivalence class plus source and constraint transformations; derive its complete connected contact mixed multiplier and generator tensor across nonuniform continuous momentum; prove Lorentzian nonlinear stability; independently close constituent-causal rank-one matter and the Born functional/program selector
 trace_gate_classification: upstream_support
 reachability_to_target: supports
 landed_frontier_reachability: advances
 campaign_native_target_reachability: advances
 actual_current_surface_status: bounded-support
 target_claim_type: bounded_theorem
-conditional_surface_status: the retained four_coframe hyperface contact enters at O_c and positive orientation weights realize all three source inertias, but none of the three full six_mode mass matrices lies in the homogeneous real four_orientation span at the supplied direction; connected covariance site dependence additive normalization and the full generator connection remain open with nonuniform continuous_zone and Lorentzian nonlinear closure
-hypothetical_axiom_status: a candidate complete same_action contact law should select one geometry_dependent joint action its unit and additive zero, source and constraint transformations, and the full connected contact mixed source multiplier and generator_connection tensor; the physical quotient must match the complete O_k0 matrix rather than only rank or inertia before the massless O_k2 pole, while a massive phase derives its scale causal constraints and stability; sufficient or target_equivalent, unadopted, not proven minimal or necessary
-review_disposition: block24_primary_runner_cache_pass_13_of_13_in_13_point_27_seconds_mutation_pass_13_of_13_graph_5470_nodes_15617_edges_outdegree_4_direct_gates_pass_exact_stack_inherited_policy_epoch_only_after_4808_rows_3686_runners_controlled_five_file_overlay_all_18_stages_checkpoint_bbe9aca7cae0_changed_evidence_1_and_24_ready_independent_audit_required
-pr_status: block24_pr_6095_open_mergeable_clean_on_exact_block23_delivery_head_3c781e0585_at_conformance_head_4488ccec8c
-pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/6095
+conditional_surface_status: normalized_configuration_probabilities_are_exactly_invariant_under_a_common_geometry_dependent_shift_while_the_absolute_local_contact_hessian_is_arbitrary; explicit_source_linear_gauge_null_shifts_cancel_all_three_full_source_tensors_at_the_supplied_direction; locality_covariance_global_integrability_representative_selection_nonuniform_continuous_zone_and_Lorentzian_nonlinear_closure_remain_open
+hypothetical_axiom_status: a candidate_registered_action_representative_law_should_select_one_local_covariant_joint_geometry_history_action_its_unit_and_allowed_geometry_dependent_additive_equivalence_class_before_variation_with_source_and_constraint_transformations; allowed_common_shifts_are_physically_equivalent_only_if_their_complete_geometry_response_is_equivalent_or_derived_to_vanish; sufficient_or_target_equivalent_unadopted_not_proven_minimal_or_necessary
+review_disposition: block25_primary_runner_cache_pass_13_of_13_in_14_point_35_seconds_mutation_pass_13_of_13_graph_5471_nodes_15620_edges_outdegree_3_direct_gates_pass_pipeline_and_changed_evidence_pending_independent_audit_required
+pr_status: block25_packaging_on_exact_block24_delivery_head_298d50332e
+pr_url: pending
 checkpoint_zero_toe_map:
   operational_quantum_records:
     repo_science_percent: 95
@@ -448,5 +454,5 @@ checkpoint_zero_toe_map:
     physical_m2_bridge_percent: 63
     autonomous_closure_percent: 34
     evidence_ceiling_percent: 99
-next_exact_action: derive the complete same_action tensor D_hyperface plus D_connected plus D_additive_zero plus D_mixed_source plus D_multiplier plus D_connection on one nonuniform joint background and test full matrix cancellation across continuous momentum before Lorentzian nonlinear stability
+next_exact_action: select_the_allowed_local_covariant_common_shift_class_and_action_unit_then_construct_one_globally_integrable_nonuniform_joint_action_and_derive_its_complete_connected_contact_mixed_multiplier_and_generator_tensor_across_continuous_momentum_before_Lorentzian_nonlinear_stability
 stop_condition: runtime budget reached, an honest audit-ready block is packaged and the queue exhausted, or a blocker requiring external governance or user authority prevents every ranked target

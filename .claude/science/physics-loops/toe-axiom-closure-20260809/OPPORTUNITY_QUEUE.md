@@ -97,3 +97,13 @@ connection branches the local joint action actually realizes.
 | 3 | continuous Brillouin/Lorentzian closure | exact Ward tensor across momentum plus causal nonlinear stability | current result is one-direction Euclidean `k=0` coefficient data |
 | 4 | alternate local carrier only if the complete tensor fails | new hypercells/invariants with derived coefficients | action enlargement is premature before connected/connection terms are computed |
 | 5 | constituent-causal matter source | selected rank-one history with the same joint action | physical source identity remains open |
+
+## Post-Block-25 Priority Refresh
+
+| Rank | Target | Exact next witness | Why now |
+|---:|---|---|---|
+| 1 | registered local covariant action representative | define allowed common shifts/counterterms, action unit, and source/constraint transformations before variation | normalized probabilities provably leave the full contact tensor arbitrary |
+| 2 | global/nonuniform integrability | construct one cellwise local action whose Hessians glue across backgrounds and source directions | each local source tensor is algebraically completable, but one global law is not derived |
+| 3 | complete same-action Ward tensor | sum connected/contact/mixed/multiplier/connection terms from that action | representative selection precedes meaningful tensor comparison |
+| 4 | continuous Brillouin/Lorentzian closure | full quotient cancellation plus causal nonlinear spectrum | all current contact results are local Euclidean coefficient statements |
+| 5 | constituent-causal matter and Born/history selectors | one rank-one history and registered functional/program | separate root obligations remain open |

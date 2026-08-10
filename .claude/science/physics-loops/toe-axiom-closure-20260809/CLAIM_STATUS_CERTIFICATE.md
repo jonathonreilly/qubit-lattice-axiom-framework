@@ -667,3 +667,21 @@ independent_audit_required: true
 - Governance: no contact-term, coframe, gravity, axiom, physical ghost, or
   universal-carrier no-go; no canonical edit, percentage move, audit verdict,
   or `review-loop`.
+
+## Block 25 Additive-Zero Certificate
+
+- Claim type: `bounded_theorem`.
+- Exact identity: a common `F(g)` leaves every normalized configuration
+  probability fixed while shifting `log Z` Hessian by `-F''`.
+- Exact local freedom: a common quadratic realizes any symmetric local
+  Hessian; Hermitian six-mode forms realify to symmetric twelve-mode forms.
+- Constructive control: explicit fifteen-edge shifts cancel all three full
+  source matrices with maximum quotient residual `2.037e-15`, preserve the
+  inherited gauge columns to `4.580e-16`, and enter at `O(c)`.
+- Runner/cache: source/input pinned, `PASS=13 FAIL=0` in `14.35 s`.
+- Thirteen isolated mutations each fail exactly one intended check. Graph is
+  `5,471/15,620` with out-degree three, and direct gates pass. Pipeline,
+  changed evidence, commits, delivery, and independent audit remain pending.
+- Governance: this is local normalized-family nonidentifiability, not an
+  action-selection, locality, covariance, gravity, or axiom no-go; no
+  canonical edit, percentage move, audit verdict, or `review-loop`.

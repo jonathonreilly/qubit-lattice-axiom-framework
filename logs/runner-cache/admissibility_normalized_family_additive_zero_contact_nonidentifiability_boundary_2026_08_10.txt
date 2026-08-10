@@ -1,0 +1,44 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_normalized_family_additive_zero_contact_nonidentifiability_boundary_2026_08_10.py
+runner_sha256: e286139d018285eb64911922d1ad79a39f2988067ed140b605ab4389927462fb
+input_fingerprint_sha256: 909557cc800327dd2b8eef6a35ae747132f5b480a55ea6b4dc5fcbfd98b1bf5a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 14.35
+status: ok
+----- stdout -----
+external_scientific_inputs: none; the normalized-family identity is exact algebra and the target matrices are reconstructed from repository-local actions
+analytic_boundary: probability invariance and arbitrary local Hessian realization are exact; Block-23 matrix reconstruction is double precision
+physical_boundary: a common configuration-independent geometry shift is not a selected local covariant action or an adopted axiom
+[PASS] source-and-axiom-boundary: the current axioms do not select an action representative, its geometry-dependent additive zero, or its unit
+[PASS] retained-response-contract: the retained response identity and Block-24 additive-zero route are bound
+[PASS] note-contract: the note states exact probability invariance, arbitrary local response freedom, and bounded scope
+[PASS] exact-normalized-family-gauge: S_i(g) plus a common F(g) leaves every normalized configuration probability unchanged
+[PASS] exact-log-partition-response-shift: log Z shifts by -F and its geometry Hessian shifts by -F''
+       F''=[[6, 2], [2, -10]]
+[PASS] arbitrary-local-real-hessian: a common quadratic shift realizes any symmetric Hessian in a local geometry chart
+[PASS] inherited-physical-quotient: the six Block-23 modes are orthonormal and transverse to the inherited four gauge columns
+       orthonormal residual=1.958e-15; gauge residual=5.566e-16
+[PASS] complex-hermitian-real-local-form: every sourced six-mode Hermitian tensor has a real symmetric twelve-coordinate quadratic representative
+       Hermitian residual=0.000e+00; real-form residual=0.000e+00
+[PASS] three-source-exact-additive-completion: one common geometry shift per named source tangent exactly cancels its full six-mode O(source) tensor
+       maximum quotient residual=2.037e-15
+[PASS] inherited-gauge-null-lift: the explicit fifteen-edge shift annihilates the inherited gauge columns at the supplied direction
+       maximum Ward residual=4.580e-16
+[PASS] source-linear-additive-order: F(c,g)=c F_1(g) contributes at the required first source order
+       maximum rescaled-order residual=4.945e-17
+[PASS] probability-contact-nonidentifiability: identical normalized configuration probabilities can carry distinct and arbitrarily prescribed local contact tensors
+[PASS] bounded-theorem-and-no-go-scope: the note preserves locality, covariance, global consistency, action selection, and Lorentzian closure as live obligations
+N5_CERTIFICATE: resolution=the exact ambiguity is local and restricted to normalized families modulo a common geometry-dependent shift
+N5_CERTIFICATE: positive_result=an explicit source-linear common quadratic shift cancels each named full six-mode tensor and preserves the inherited gauge columns
+N5_CERTIFICATE: negative_result=normalized probabilities alone cannot identify the absolute contact Hessian
+N5_CERTIFICATE: live_routes=a selected local covariant representative, locality and gluing, global integrability, source transformations, and Lorentzian stability remain open
+N5_CERTIFICATE: physical_boundary=the constructed shift is an identifiability witness, not a licensed action, physical completion, or adopted axiom
+per_element: checked all normalized probabilities, symbolic Hessian entries, and every entry of three six-mode and fifteen-edge completion tensors
+per_mode: checked the supplied k=0 O(source) coefficient on all six physical modes and four inherited gauge columns
+per_block: checked exact normalized-family invariance, arbitrary Hessian realization, quotient cancellation, Ward-null lift, and source order
+lattice_wide: checked and not executed — no sitewise local gluing, continuous-zone, Lorentzian, or nonlinear theorem is claimed
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

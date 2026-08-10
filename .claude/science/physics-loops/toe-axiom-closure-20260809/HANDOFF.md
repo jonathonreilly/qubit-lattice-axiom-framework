@@ -758,6 +758,23 @@ physical carrier, geometry dynamics/coupling, Lorentzian/nonlinear law, Born
 functional, or realized history. No canonical edit, percentage move, audit
 verdict, or `review-loop` occurs.
 
+## Block 25 Additive-Zero Handoff
+
+Normalized configuration probabilities have an exact geometry-dependent
+common-shift gauge: `S_i->S_i+F` leaves every probability unchanged while
+moving the absolute response by `-F''`. Any local Hermitian quotient tensor
+can be realized this way. Explicit source-linear fifteen-edge shifts cancel
+all three Block-23 matrices with maximum quotient residual `2.037e-15` and
+inherited-gauge residual `4.580e-16`.
+
+Primary cache is `PASS=13 FAIL=0` in `14.35 s`; thirteen isolated mutations
+each fail exactly one intended check. Graph is `5,471/15,620` with out-degree
+three, and direct gates pass. Pipeline, changed evidence, commits, and PR
+delivery remain pending. The next law must select the allowed local covariant
+action representative and its unit before deriving global/nonuniform,
+continuous-zone, and Lorentzian response. No canonical edit, percentage move,
+audit verdict, or `review-loop` occurs.
+
 ## Block 17 science handoff
 
 Block 17 corrects the leading compact-gravity obligation. The actual

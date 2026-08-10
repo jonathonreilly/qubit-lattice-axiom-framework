@@ -435,6 +435,14 @@ continuous momentum, and Lorentzian nonlinear stability. The sharpened joint-
 action wording is unadopted; fixed TOE percentages and canonical axioms remain
 unchanged. No `review-loop` is used.
 
+Block 25 closes the additive-zero ambiguity analysis constructively. It proves
+that normalized probabilities are invariant while the local contact Hessian
+is arbitrary, and it supplies exact full-tensor gauge-null completions for
+all three named source tangents. Reachability remains `upstream_support`:
+the completions are not selected local covariant or globally integrable
+actions. Candidate representative wording is unadopted; percentages and
+canonical axioms remain unchanged. No `review-loop` is used.
+
 Block 24 executes the retained direct hyperface-seagull route. It closes the
 first-source-order and inertia-shape tests positively, then rejects the
 homogeneous four-orientation span by large full-matrix residuals. Reachability

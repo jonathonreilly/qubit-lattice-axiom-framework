@@ -172,3 +172,13 @@ causally stable.
 The strongest steelman is accepted: the full same-action Ward tensor is not
 the four local area Hessians alone. The bounded result narrows the next
 calculation to the omitted tensor directions.
+
+## Block 25 Normalized-Family Identifiability Boundary
+
+| Scoped claim | Exact/bounded evidence | N1--N8 disposition | Forbidden promotion | Live routes |
+|---|---|---|---|---|
+| normalized probabilities alone do not identify the absolute local geometry contact Hessian | exact common-shift invariance; exact arbitrary quadratic Hessian; three full source completions with quotient/gauge residuals below `5e-15` | pass only for finite normalized families and one local chart; explicit Regge lift is one supplied direction | do not infer an action-selection, locality, covariance, global-integrability, gravity, Lorentzian, nonlinear, or axiom no-go | registered local covariant representative/equivalence class, boundary/counterterm principle, global action, source transformations, massive phase |
+
+The strongest steelman is accepted: admissible counterterms may be restricted
+by locality, covariance, gluing, and global consistency. Those restrictions
+must be part of the selected physical law before geometry variation.

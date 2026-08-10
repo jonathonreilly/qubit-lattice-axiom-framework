@@ -924,3 +924,13 @@ Next exact action: derive a Lorentzian/time-dependent law and compute its full
 homogeneous plus inhomogeneous stability spectrum, while testing whether the
 affine ensemble and targets follow from a local covariant geometry/history
 law. Do not invoke `review-loop`.
+
+Direct conformance is complete. Citation registration is `5,465` nodes /
+`15,585` edges, with the new node at out-degree three and all six helper
+runners resolved. The exact-base pipeline reaches only the inherited
+dependency-policy epoch stop after every earlier stage. A clean final-tree
+overlay of closed PR #6061's five governance files passes all 18 stages with
+4,803 ledger rows and 3,681 classified runners. Seeded changed-evidence marks
+Block 19 alone and all 19 stacked claims forensic-ready with no failures or
+control failures. Initial science commit is `f13a8ebc4d`; independent audit
+remains required.

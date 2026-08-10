@@ -340,7 +340,12 @@ finite differences reproduce the background and bundle-B source-direction
 normal equations within `9.678e-9`.
 All thirteen process-local load-bearing mutations are detected at their named
 check families.
-Primary runner/cache is `PASS=13 FAIL=0` and source/input pinned. Delivery,
-direct conformance, synthetic-main integration, and changed-evidence checks
-remain to be recorded. Canonical axioms and fixed percentages are untouched,
-and no `review-loop` is used.
+Primary runner/cache is `PASS=13 FAIL=0` and source/input pinned. Direct
+conformance passes, the graph is `5,465` nodes / `15,585` edges, and the new
+node has out-degree three with six resolved helpers. The exact-base pipeline
+isolates only the inherited policy-epoch mismatch; a final-tree overlay adding
+exactly closed PR #6061's five governance files passes all 18 stages. Seeded
+changed-evidence marks Block 19 alone and all 19 stacked claims forensic-ready
+with no failures or controls. Initial science commit is `f13a8ebc4d`.
+Delivery remains to be recorded. Canonical axioms and fixed percentages are
+untouched, and no `review-loop` is used.

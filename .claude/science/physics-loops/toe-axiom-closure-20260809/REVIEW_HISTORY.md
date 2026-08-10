@@ -1121,6 +1121,49 @@ instance or Fourier census.
   action, theorem surface, N1--N8 surface, and canonical nonmutation. The final
   corrected harness reports `PASS=13 FAIL=0`; its first pass exposed three
   repeated-phrase mutations, which were corrected to remove every occurrence.
-- Direct conformance, graph registration, full pipeline, changed evidence,
-  commit, and PR status remain to be recorded. No canonical
-  edit, audit verdict, fixed-percentage move, or `review-loop` occurs.
+- Initial science commit is `f13a8ebc4d`. No canonical edit, audit verdict,
+  fixed-percentage move, or `review-loop` occurs.
+
+## Block 19 conformance record
+
+- Section 1 self-containment: the exact Block-18 delivery head supplies every
+  stacked source. The primary runner declares its note, current axioms, both
+  parent notes, both immediate helper runners, the actual Regge runner,
+  approved-premise registry, and all three primitive notes as inputs.
+- Section 2 cache discipline: `AUDIT_TIMEOUT_SEC=240`; the canonical cache is
+  `fresh`, source-SHA and input-fingerprint bound, exits zero in `131.41 s`,
+  and reports `PASS=13 FAIL=0` with `3,596` stdout bytes.
+- Sections 3 and 5 claim scope/proof obligations: the note is typed
+  `bounded_theorem`, states the supplied affine ensemble in the claim scope,
+  separates exact/interval/local steps, and leaves physical selection and
+  stability as explicit open obligations.
+- Section 4 negative gate: N1--N8 passes only for mixed Euclidean inertia at
+  the certified point on the declared affine surface. Five materially
+  distinct routes are executed; nonmatching prior residuals are dropped; all
+  physical-instability and universal no-go readings are rejected.
+- Section 6 runner validity: thirteen genuine process-local load-bearing
+  mutations fail closed. The independent periodic action/value and
+  finite-difference gradient path does not use the primary automatic-
+  differentiation jet.
+- Sections 7 and 8 packet/citation completeness: the graph registers `5,465`
+  nodes and `15,585` edges. The new node has out-degree three and resolves six
+  helper runners verbatim: centered tick-edge, closed helix, compact reaction,
+  cut worldvolume, timelike network, and the cubic-Coxeter Regge runner.
+- Sections 9--11 note/governance/source discipline: the note carries the
+  canonical metadata and machine-status contract, authors no audit verdict,
+  edits no axiom or primitive, imports no observation or literature value,
+  and states the candidate wording as sufficient, unadopted, and nonminimal.
+- Section 12 direct gates: vocabulary, strict audit lint, Python compilation,
+  YAML parsing, whitespace, exact 17-path scope, cache freshness, graph/link
+  invariants, and canonical nonmutation pass.
+- The exact-base pipeline reaches stage 7 after graph rebuild, 4,803-row
+  fixed-point seeding, 3,681-runner classification, and effective-status
+  computation, then reproduces only the inherited dependency-policy epoch
+  mismatch.
+- A clean final-tree synthetic overlay adds exactly closed PR #6061's five
+  governance files and passes all 18 stages through strict lint, publication
+  rendering, zero authority-link/class-F violations, and static-checkpoint
+  finalization.
+- Seeded changed-evidence readiness marks Block 19 alone forensic-ready with
+  six resolved helpers and no failures or controls. Against `origin/main`, all
+  19 stacked claims are forensic-ready with no failures or controls.

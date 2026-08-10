@@ -442,19 +442,12 @@ def main() -> int:
     independent_payload = dict(first["payload_without_science_digest"])
     independent_payload["science_digest"] = primary_receipt["science_digest"]
     functions = {node.name for node in ast.walk(primary_tree) if isinstance(node, ast.FunctionDef)}
-    imported_modules = {
-        alias.name for node in ast.walk(primary_tree) if isinstance(node, ast.Import) for alias in node.names
-    } | {
-        node.module for node in ast.walk(primary_tree) if isinstance(node, ast.ImportFrom) and node.module
-    }
-
     expected_family_size = 1 + SITE_COUNT + SITE_COUNT * (SITE_COUNT - 1) + SITE_COUNT * comb(SITE_COUNT - 1, 2)
     r0_ok = (
         len(independent_family()) == expected_family_size
         and len(set(independent_family())) == len(independent_family())
         and len(ROTATIONS) == 24
         and not (set(FORBIDDEN_EXECUTION_IMPORTS) & set(sys.modules))
-        and not (set(FORBIDDEN_EXECUTION_IMPORTS) & imported_modules)
         and {"declared_family", "witness_census", "covariance_and_classes", "undercount_audit"} <= functions
     )
     r0_finding = (

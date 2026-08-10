@@ -1,17 +1,56 @@
 # Axiom-Fidelity Re-read — Cycle 971 Bounded Theorem Note
 
-**Date:** 2026-08-09  
-**Type:** bounded theorem measurement  
-**Actual current-surface status:** bounded-support  
-**Trace class:** methodology  
-**Reachability:** none; this block measures the landed corpus and edits no landed row  
-**Snapshot:** `323d7fc32d77598f74ea6cd4d30c38dda0fe5070` (the `origin/main` tip from which the requested branch was created)  
-**Primary:** `scripts/frontier_cycle971_axiom_fidelity_reread_2026_08_09.py`  
-**Independent checker:** `scripts/frontier_cycle971_fidelity_independent_check_2026_08_09.py`  
-**Primary cache:** `logs/runner-cache/frontier_cycle971_axiom_fidelity_reread_2026_08_09.txt`  
-**Checker cache:** `logs/runner-cache/frontier_cycle971_fidelity_independent_check_2026_08_09.txt`  
-**Primary receipt:** `outputs/axiom_fidelity_reread_cycle971_receipt_2026_08_09.json`  
+**Date:** 2026-08-09
+**Claim type:** `bounded_theorem`
+**Actual current-surface status:** bounded-support
+**Trace class:** methodology
+**Reachability:** none; this block measures the landed corpus and edits no landed row
+**Snapshot:** `323d7fc32d77598f74ea6cd4d30c38dda0fe5070` (the `origin/main` tip from which the requested branch was created)
+**Primary:** `scripts/frontier_cycle971_axiom_fidelity_reread_2026_08_09.py`
+**Independent checker:** `scripts/frontier_cycle971_fidelity_independent_check_2026_08_09.py`
+**Primary cache:** `logs/runner-cache/frontier_cycle971_axiom_fidelity_reread_2026_08_09.txt`
+**Checker cache:** `logs/runner-cache/frontier_cycle971_fidelity_independent_check_2026_08_09.txt`
+**Primary receipt:** `outputs/axiom_fidelity_reread_cycle971_receipt_2026_08_09.json`
 **Checker receipt:** `outputs/axiom_fidelity_reread_independent_check_cycle971_receipt_2026_08_09.json`
+
+## Machine status and trace
+
+```yaml
+actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
+target_claim_id: axiom_fidelity_reread_cycle971_bounded_theorem_note_2026-08-09
+trace_class: methodology
+target_blocker_text: null
+source_of_blocker_text: user_goal
+reachability_to_target: none
+artifact_role: runner_certificate
+next_trace_action: "Independent audit may assess the measurement after landing."
+packet_helper_runner: null
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: "Exhaustive token census and operational semantic classification at one pinned commit."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```
+
+## Inputs and proof obligations
+
+There are no measured, fitted, literature, observational, normalization, or
+boundary-condition imports. The load-bearing inputs are the pinned Git object
+tree, the [governing axiom text](MINIMAL_AXIOMS_2026-06-29.md), and its
+[premise-registry provenance](audit/data/axiom_premise_nodes.json). The Cycle
+970 counts are disclosed context only and do not enter a predicate, class, or
+witness count.
+
+The exact target is the file-level token census, four-way operational
+classification, and two-resolution literal witness count at the named commit.
+Its obligation graph has no intermediate mathematical lemma: the primary
+establishes pinned traversal, row coverage, disjoint classification, literal
+AST evidence, and controls; the independent checker recomputes the same rows
+without importing or executing the primary. The boundary is the declared
+tokens and literal rules at this one commit. Semantic uses outside that grammar
+and any later commit are outside the claim; there is no missing closure lemma.
 
 ## Bounded claim
 
@@ -26,8 +65,8 @@ tracked `docs/` and `scripts/` files. The exhaustive file partition is:
 This is a semantic-delta measurement only. It proposes no rewrite, changes no
 axiom or primitive, and edits no landed corpus row.
 
-The governing text was read at the pin rather than inferred from campaign
-memory. Admissibility's second sentence says that, for each site, the
+The [governing axiom text](MINIMAL_AXIOMS_2026-06-29.md) was read at the pin
+rather than inferred from campaign memory. Admissibility's second sentence says that, for each site, the
 probability distribution over possibilities is determined by and varies with
 nearest-neighbor conditions. Its 2026-08-05 provenance says that availability
 became the distribution's support and that the distribution's extensional form
@@ -118,7 +157,9 @@ contradict state-resolved dependence.
 Finding verbatim:
 
 ```text
-PASS D_CONTROLS :: object_pins={"axiom_blob":"2f5fdd26898f62c17fcabc846761f7785c2eadb1","docs_tree":"7dbc99ea9bb07250a72fff4722d37cdc1c573daf","registry_blob":"f01d3be864f682584d50eede8b3abe6671bb4719","scripts_tree":"b74e1639fc2a2250c0de2a56ad33665533a22c81","snapshot_commit":"323d7fc32d77598f74ea6cd4d30c38dda0fe5070","snapshot_tree":"45f8bd67eedaccb34918cb6804e850e1ba7f21fb"}; authority_checks={"availability_support_in_axiom":true,"new_sentence_in_axiom":true,"provenance_date_in_axiom":true,"registry_has_new_sentence":true,"registry_has_support_note":true}; BLOCKLIST=['323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/**', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:scripts/**'] execution=False; determinism_replay=True; runtime_s=33.682737<1400; stdout_upper_bound_bytes=3042<6000<150000; timeout_s=300<1400; literal_AUDIT_INPUT_PATHS=['323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:scripts/', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/MINIMAL_AXIOMS_2026-06-29.md', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/audit/data/axiom_premise_nodes.json']
+PASS D_CONTROLS :: object_pins={"axiom_blob":"2f5fdd26898f62c17fcabc846761f7785c2eadb1","docs_tree":"7dbc99ea9bb07250a72fff4722d37cdc1c573daf","registry_blob":"f01d3be864f682584d50eede8b3abe6671bb4719","scripts_tree":"b74e1639fc2a2250c0de2a56ad33665533a22c81","snapshot_commit":"323d7fc32d77598f74ea6cd4d30c38dda0fe5070","snapshot_tree":"45f8bd67eedaccb34918cb6804e850e1ba7f21fb"}; authority_checks={"availability_support_in_axiom":true,"new_sentence_in_axiom":true,"provenance_date_in_axiom":true,"registry_has_new_sentence":true,"registry_has_support_note":true}; BLOCKLIST=['323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/**', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:scripts/**'] execution=False; determinism_replay=True; runtime_s=28.655270<1400; stdout_upper_bound_bytes=3042<6000<150000; timeout_s=300<1400; literal_AUDIT_INPUT_PATHS=['docs/MINIMAL_AXIOMS_2026-06-29.md', 'docs/audit/data/axiom_premise_nodes.json']; pinned_snapshot_surfaces=['323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:scripts/', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/MINIMAL_AXIOMS_2026-06-29.md', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/audit/data/axiom_premise_nodes.json']
+VERDICT: PINNED_AXIOM_FIDELITY_MEASUREMENT_COMPLETE
+TOTAL: PASS=4 FAIL=0
 ```
 
 Integrity gates cover bookkeeping only. No certificate predicate demands a
@@ -139,7 +180,7 @@ PASS R1_REFUTE_CONSUMER_CENSUS :: independent_tracked/consumers=15205/1433; toke
 PASS R2_REFUTE_DELTA_CLASSIFICATION :: independent_class_counts={"MEANING_CHANGED":32,"NEWLY_WITNESSABLE":1,"SUPPORT_READING_SAFE":626,"UNAFFECTED":774}; full_lists_match=True; classes_digest=7da6c4ec1119550d4a6baef22aab764586a1aa8a21bec22d2bdd5b188ccdf713
 PASS R3_REFUTE_VACUITY_PROBE :: independent_state_resolved_runners/branch_pairs=1/1; independent_marginal_runners/branch_pairs=0/0; state_paths=['scripts/audit_companion_minimal_axioms_clean_base_exact.py']; marginal_paths=[]
 PASS R4_REFUTE_AXIOM_PROVENANCE :: independent_authority_checks={"new_distribution_sentence":true,"owner_date":true,"registry_support":true,"support_provenance":true}
-PASS R5_CONTROLS :: determinism_replay=True; runtime_s=31.597048<1400; stdout_upper_bound_bytes=3460<6000<150000; timeout_s=300<1400; literal_AUDIT_INPUT_PATHS=['scripts/frontier_cycle971_axiom_fidelity_reread_2026_08_09.py', 'logs/runner-cache/frontier_cycle971_axiom_fidelity_reread_2026_08_09.txt', 'outputs/axiom_fidelity_reread_cycle971_receipt_2026_08_09.json', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:scripts/']
+PASS R5_CONTROLS :: determinism_replay=True; runtime_s=28.532962<1400; stdout_upper_bound_bytes=3460<6000<150000; timeout_s=300<1400; literal_AUDIT_INPUT_PATHS=['scripts/frontier_cycle971_axiom_fidelity_reread_2026_08_09.py', 'logs/runner-cache/frontier_cycle971_axiom_fidelity_reread_2026_08_09.txt', 'outputs/axiom_fidelity_reread_cycle971_receipt_2026_08_09.json']
 VERDICT: PRIMARY_SURVIVES_INDEPENDENT_REFUTATION_ATTEMPT
 TOTAL: PASS=6 FAIL=0
 ```
@@ -1590,5 +1631,3 @@ TOTAL: PASS=6 FAIL=0
 ### NEWLY_WITNESSABLE (1)
 
 - `scripts/audit_companion_minimal_axioms_clean_base_exact.py`
-
-

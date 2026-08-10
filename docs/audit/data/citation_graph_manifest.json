@@ -1,6 +1,6 @@
 {
  "edge_count": 15478,
- "node_count": 5446,
+ "node_count": 5447,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1047,6 +1047,10 @@
    "out_degree": 3
   },
   "axiom_change_proposal_2026-04-10": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "axiom_edit_repair_map_cycle973_bounded_theorem_note_2026-08-09": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

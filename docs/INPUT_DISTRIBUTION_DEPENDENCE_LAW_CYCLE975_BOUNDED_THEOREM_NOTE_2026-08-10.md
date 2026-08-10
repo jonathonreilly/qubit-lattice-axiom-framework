@@ -280,8 +280,8 @@ gate words, larger gate kinds, or the full possibility domain.
 
 | Cited provenance | Residual attacked there | Current residual | Match? | Disposition |
 |---|---|---|---|---|
-| `6fd0de0a:docs/INTER_SITE_GATE_CYCLE970_BOUNDED_THEOREM_NOTE_2026-08-09.md` | existence of a fixed-`x=0` state-resolved witness | boundary over every common `mu_p` | no | provenance only; zero witness weight |
-| `3826925e:docs/COVARIANT_DEPENDENCE_LAW_CYCLE972_BOUNDED_THEOREM_NOTE_2026-08-09.md` | covariance/uniqueness of XOR and the uniform `p=1/2` marginal | full one-parameter zero set and strength | partial only at `p=1/2` | provenance only; zero witness weight for the general law |
+| `6fd0de0a:docs/INTER_SITE_GATE_CYCLE970_BOUNDED_THEOREM_NOTE_2026-08-09.md:99,120` | existence of a fixed-`x=0` state-resolved witness | boundary over every common `mu_p` | no | provenance only; zero witness weight |
+| `3826925e:docs/COVARIANT_DEPENDENCE_LAW_CYCLE972_BOUNDED_THEOREM_NOTE_2026-08-09.md:99,171-189` | covariance/uniqueness of XOR and the uniform `p=1/2` marginal | full one-parameter zero set and strength | partial only at `p=1/2` | provenance only; zero witness weight for the general law |
 
   The current boundary therefore stands on its new exhaustive affine check,
   not on residual-mismatched prior conclusions.
@@ -314,8 +314,9 @@ lattice_wide: checked and not executed -- this runner claims one target-centred 
   theorem, where the five N1 routes are exhausted.
 - **N8 — cross-cycle echo:** the targeted repository/provenance search used
   `fixed input`, `uniform marginal`, `XOR`, `requires new axiom`, and
-  `cannot be derived from A_min`. The only residual-matched predecessors are
-  the pinned Cycle-970 and Cycle-972 objects in N4. Cycle 970's fixed-input
+  `cannot be derived from A_min`. The only directly similar provenance
+  predecessors are the pinned Cycle-970 and Cycle-972 objects in N4; neither
+  is counted as a residual-matched witness. Cycle 970's fixed-input
   premise was retired by enlarging `{delta_0}` to both state rows; Cycle 972's
   uniform-only marginal was retired by enlarging `{mu_(1/2)}` to the full
   common-law simplex. The same retirement mechanism—enlarge the declared

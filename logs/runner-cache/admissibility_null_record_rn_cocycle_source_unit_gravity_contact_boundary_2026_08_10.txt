@@ -1,0 +1,50 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_null_record_rn_cocycle_source_unit_gravity_contact_boundary_2026_08_10.py
+runner_sha256: 7ecee7aa11e1249ec4a0f807816a3a74193fe49b6526efc1b3c05daf978c723b
+input_fingerprint_sha256: c564fe663e6cd5d7b9d56733f0ae0dac88ac6568047537045215ce577af28104
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 13.09
+status: ok
+----- stdout -----
+external_scientific_inputs: none; finite RN calculus, cut/source data, and Regge matrices are repository-local
+analytic_boundary: finite positive-family identities are exact; Block-23 completion matrices are double-precision reconstructions
+physical_boundary: physical intervention typing, source unit/orientation, local geometry score, pure geometry, and Lorentzian dynamics remain open
+[PASS] source-and-parent-boundary: current axioms leave source/action and dynamics open while the retained parents supply compatibility, anchor, and RN scale boundaries
+[PASS] note-contract: the note states the RN repair, retained zero-contact result, constructive escape, and bounded axiom split
+[PASS] finite-rn-normalization: the exact RN density of one positive normalized law relative to another has reference expectation one
+       RN density=(55/46, 77/69, 121/138)
+[PASS] null-relative-rn-action: the anchored action increment is exactly minus the log RN density relative to its null value
+[PASS] rn-chain-cocycle: sequential RN interventions multiply pointwise and their null-relative action increments add
+[PASS] exponential-tilt-normalizer-cancels: the exponential RN family normalizes exactly and its partition factor cancels from every null ratio
+[PASS] geometry-relative-source-response: a configuration-dependent RN score has an exact identifiable null-relative geometry contact
+[PASS] fisher-source-scale-and-orientation: unit Fisher norm selects positive lambda=1 while an unsigned norm alone leaves both orientations
+       score={-1: -lambda, 1: lambda}; Fisher=lambda**2
+[PASS] action-quantum-rn-bridge: a declared action quantum converts S_h=S_0-kappa h O exactly to the dimensionless RN source coordinate
+[PASS] retained-cut-rn-intervention: the retained two-form source is an exact null-anchored RN action increment on every finite configuration
+       configurations=256; nonzero source increments=216
+[PASS] retained-source-complement-orientation: the retained source increment reverses under configuration complement while preserving the empty anchor
+[PASS] retained-topological-source-zero-contact: the retained two-form source increment is coframe independent and has zero contact along the exact geometry path
+       path checks=1024
+[PASS] count-carrier-cubic-null-anchor: the occupancy-count carrier vanishes on empty and is invariant under all proper-cubic permutations
+       rotation/configuration checks=6144
+[PASS] anchored-full-contact-completion-exists: a configuration-dependent count-weighted quadratic preserves the null anchor and cancels every Block-23 source matrix algebraically
+       maximum completion residual=2.037e-15
+[PASS] anchored-completion-changes-odds: the anchored completion is a genuine interaction rather than a normalized-family common shift
+       minimum unit-direction odds change=0.080524
+[PASS] minimal-axiom-delta: RN composition reduces the source/action update to joint-family/intervention registration plus unit/orientation, with pure geometry separate
+[PASS] bounded-theorem-and-next-law: the theorem preserves local joint-action, proper-length, connected, generator, projective, and Lorentzian routes
+N5_CERTIFICATE: rn_repair=null-relative RN log density gives the exact additive source-action cocycle
+N5_CERTIFICATE: source_unit=unit Fisher norm fixes positive dimensionless scale while orientation and action quantum remain separate
+N5_CERTIFICATE: retained_boundary=the two-form cut source is an exact RN intervention but has identically zero coframe contact
+N5_CERTIFICATE: constructive_escape=count-weighted anchored joint interactions algebraically cancel all three Block-23 matrices
+N5_CERTIFICATE: axiom_boundary=joint-family compatibility and intervention typing may be downstream; pure geometry and causal dynamics remain independent
+per_element: checked every row of three exact positive laws and all 256 retained cut configurations
+per_site: checked occupancy-count anchoring under all 24 proper-cubic rotations on the L=2 fixture
+per_mode: checked every entry of all three fifteen-edge completions and their six-mode projections
+per_block: checked RN normalization, cocycle composition, Fisher/action units, retained source contact, and the axiom split
+lattice_wide: checked and not executed — no projective-limit, continuous-zone, nonuniform Regge, or Lorentzian theorem is claimed
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

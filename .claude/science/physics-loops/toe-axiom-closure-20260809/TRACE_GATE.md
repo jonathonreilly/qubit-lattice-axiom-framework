@@ -465,3 +465,18 @@ pure-geometry action/update. Local/projective consistency, the complete
 stationary nonuniform Ward tensor, continuous momentum, and Lorentzian
 nonlinear stability remain open. Candidate wording is unadopted; percentages
 and canonical axioms remain unchanged. No `review-loop` is used.
+
+Block 27 supplies the exact source-side composition missing from Block 26.
+Positive RN interventions become additive null-relative action cocycles;
+exponential normalizers cancel and configuration-relative geometry response
+remains. Unit Fisher norm narrows the positive source scale without fixing
+orientation or the dimensionful action quantum.
+
+Reachability remains `upstream_support`. The retained two-form source is an
+exact RN intervention but has zero coframe contact, while an explicit
+configuration-dependent anchored interaction cancels all three source tensors
+algebraically. This rejects a gravity no-go and localizes the missing law to a
+physically selected local covariant geometry-dependent RN score, compatible
+joint-family/intervention registration, and separate pure-geometry dynamics.
+Candidate wording is unadopted; percentages and canonical axioms remain
+unchanged. No `review-loop` is used.

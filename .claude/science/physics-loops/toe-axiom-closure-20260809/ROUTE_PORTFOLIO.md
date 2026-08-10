@@ -582,3 +582,20 @@ representative authority.
 The conditional repair works; the remaining failure is law selection, not an
 algebraic inconsistency. Current `I(empty)=0` is a readout rule and cannot be
 silently promoted to the action anchor.
+
+## Block 27 RN Source/Contact Route Comparison
+
+| Route | Exact object | Outcome | Decision |
+|---|---|---|---|
+| null-relative RN intervention | `Delta A=-log[(dQ/dP)_x/(dQ/dP)_null]` | exact normalization-independent action increment and sequential cocycle | retain as the preferred source/action composition bridge |
+| exponential source tilt | `R_h=exp(hO)/E exp(hO)` | leaves exactly `-h(O_x-O_null)` and all relative geometry derivatives | retain; derive the physical geometry-dependent `O` |
+| Fisher source unit | unit-variance score with positive orientation | selects dimensionless `lambda=1`; sign/action quantum remain open | retain as one unit convention, not an axiom derivation |
+| retained two-form cut source | oriented interface pairing | exact RN source with complement reversal but zero coframe contact | retain for higher-form source content; reject as the complete metric contact |
+| occupancy-count anchored completion | `q(X) delta-ell^T D_s delta-ell/2` | null anchored, changes odds, cancels all three matrices | algebraic counter-control only; reject as selected/local physics |
+| local covariant RN score | cellwise geometry/source observable and gluing law | not constructed | highest-priority physical completion |
+| pure geometry and Lorentzian update | source-independent `G[g]` or causal law | not selected | independently required endpoint |
+
+The source/action problem is no longer a choice between arbitrary common
+normalization and failure. RN log odds provide the composition law; the live
+science is selection of the local relative score and the separate geometry
+dynamics.

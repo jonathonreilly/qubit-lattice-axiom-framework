@@ -503,3 +503,15 @@ is `634d1b4c78`. PR #6098 is open, mergeable, and `CLEAN`, stacked exactly on
 Block-25 delivery head `4268fc8339`. PR #6096 is a
 complementary proper-length sibling requiring later explicit reconciliation.
 No `review-loop` is used.
+
+Block 27 is local on branch
+`physics-loop/toe-axiom-closure-block27-null-rn-cocycle-20260810`, stacked on
+exact Block-26 delivery head `8281f0a0ea`. It proves the null-relative RN
+source/action cocycle, Fisher/action-unit boundary, exhaustive retained cut
+intervention and zero-contact result, and a configuration-dependent anchored
+full-tensor escape. Primary cache is `PASS=17 FAIL=0` in `13.1 s`; seventeen
+isolated fresh-process forced failures pass; graph registration is
+`5,473/15,629` with out-degree five and fifteen helpers. Direct conformance
+passes; exact-stack/overlay pipelines, changed evidence, commit, push, and PR
+delivery remain pending. PR #6096 is a complementary proper-length sibling requiring
+explicit reconciliation. No `review-loop` is used.

@@ -193,3 +193,14 @@ The repair defeats a broad "normalization makes gravity impossible" claim.
 It also blocks the opposite overclaim that any probability-preserving common
 shift is a physical equivalence: after anchoring, a nonzero common Hessian is
 a new source/geometry interaction and requires independent law authority.
+
+## Block 27 RN Source Contact Boundary
+
+| Scoped claim | Exact/bounded evidence | N1--N8 disposition | Forbidden promotion | Live routes |
+|---|---|---|---|---|
+| the retained coframe-independent two-form source supplies no metric contact tensor | exact null-relative RN identity on all 256 configurations, complement reversal, and 1,024 exact coframe-path zero-contact checks | pass only for this declared source term; an explicit anchored geometry-dependent completion defeats any broad obstruction | do not infer a source, contact, gravity, joint-action, alternate-carrier, Lorentzian, or axiom no-go | local geometry-dependent RN score, proper-length source coordinate, hyperface/connected response, generator connection, pure geometry |
+
+The strongest steelman is constructive: a configuration-dependent occupancy-
+weighted quadratic preserves the null anchor, changes odds, and cancels all
+three target matrices. Its nonlocal target reconstruction is the remaining
+defect, not the existence of an anchored completion.

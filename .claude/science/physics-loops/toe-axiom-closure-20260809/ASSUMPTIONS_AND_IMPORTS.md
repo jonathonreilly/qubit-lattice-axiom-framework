@@ -534,3 +534,19 @@ controls. No zero-support extension, family-selection law, action unit,
 locality/covariance/gluing theorem, projective limit, pure-geometry action,
 stationary nonuniform solution, Lorentzian dynamics, external science,
 canonical edit, percentage move, audit verdict, or `review-loop` is imported.
+
+## Block 27 Assumptions And Imports
+
+Block 27 imports the Block-26 null anchor, finite strictly positive probability
+laws, elementary Radon-Nikodym ratios on finite support, the retained cut
+action/two-form source, and the reconstructed Block-23 matrices. The older RN
+notes are cited as repository-local prior routes but supply no premise
+authority; normalization, chain composition, Fisher scaling, and action-unit
+algebra are rederived exactly.
+
+The source/intervention interpretation, compatible global or projective joint
+family, positive source orientation, action quantum, and geometry-dependent
+score are explicit conditions rather than current-axiom consequences. The
+count-weighted completion uses target-reconstructed full edge matrices and is
+not assumed local or physical. No external science, observed constant,
+canonical edit, percentage move, audit verdict, or `review-loop` is imported.

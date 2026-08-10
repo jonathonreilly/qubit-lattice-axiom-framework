@@ -727,3 +727,34 @@ independent_audit_required: true
 - Science commit: `8274dab185`; campaign conformance: `634d1b4c78`.
 - Delivery: PR #6098 is open, mergeable, and `CLEAN`, stacked exactly on
   Block-25 delivery head `4268fc8339`. Independent audit remains required.
+
+## Block 27 RN Source/Action Cocycle Certificate
+
+- Claim type: `bounded_theorem`.
+- Exact theorem: for finite positive laws `P,Q`, the null-anchored action
+  increment is `-log[(dQ/dP)(x)/(dQ/dP)(null)]`; sequential interventions add
+  by the RN chain rule.
+- Exponential family: the log-partition normalizer cancels exactly and leaves
+  `-h[O(x)-O(null)]`, including all relative geometry derivatives.
+- Source unit: a unit-variance score has Fisher norm `lambda^2`; positive
+  orientation selects `lambda=1`, while sign and the dimensionful action
+  quantum remain separate inputs.
+- Retained realization and boundary: all 256 cut configurations realize the
+  RN intervention, 216 carry nonzero increments, complement reverses the
+  source, and 1,024 exact geometry-path checks give zero coframe contact.
+- Constructive escape: cubic-invariant occupancy count anchors three
+  configuration-dependent quadratics; their six-mode projections cancel all
+  Block-23 matrices below `2.037e-15` and change odds by at least `0.080524`.
+- Runner/cache: source/input pinned, `PASS=17 FAIL=0` in `13.1 s`.
+- Mutation sensitivity: seventeen isolated fresh-process forced failures exit
+  nonzero at exactly one intended named check (`PASS=17 FAIL=0`).
+- Citation graph: `5,473` nodes / `15,629` edges; the new node has out-degree
+  five and fifteen resolved helper runners.
+- Governance: the zero-contact claim is only for the retained coframe-
+  independent two-form source. Geometry-dependent RN scores, proper-length,
+  connected/contact, generator, and pure-geometry routes remain live. No
+  source/gravity/axiom no-go, canonical edit, percentage move, audit verdict,
+  or `review-loop`.
+- Conformance and delivery: direct gates pass; exact-stack pipeline,
+  controlled current-main overlay, changed evidence, commit, push, PR, and
+  independent audit remain pending.

@@ -905,3 +905,33 @@ unit; and register the source-independent pure-geometry action or causal
 update separately. Locality, covariance, projective consistency, the complete
 stationary Ward tensor, continuous momentum, and Lorentzian nonlinear closure
 remain open. No canonical axiom or fixed percentage is changed.
+
+## Block 27 Target And Disposition
+
+Block 27 asks whether a physical probability intervention supplies the
+source/action composition and unit structure left open by Block 26, and
+whether the retained two-form source then generates the missing metric
+contact.
+
+For positive finite laws `P,Q`, the result is exact:
+
+`Delta A_x=-log[(dQ/dP)(x)/(dQ/dP)(null)]`.
+
+RN chain composition makes sequential increments additive. For exponential
+tilts, the partition normalizer cancels and only the configuration-relative
+source observable survives. Unit Fisher norm fixes the positive dimensionless
+source scale; orientation and the dimensionful action quantum remain separate.
+
+The retained cut two-form source realizes this cocycle on all 256 finite
+configurations, but its coframe contact vanishes identically. It cannot fix the
+Block-23 metric defect alone. This is not a gravity no-go: a null-anchored,
+count-weighted configuration interaction cancels all three target matrices
+below `2.037e-15` while changing physical odds. The construction is nonlocal
+and target-tailored, so the live problem is to derive its local covariant
+replacement from the joint law.
+
+The minimal update is now smaller: joint-family compatibility and physical RN
+intervention typing can be a downstream bridge rather than a fifth axiom;
+source unit/orientation must be registered or derived. A separate pure-
+geometry action or causal update is still unavoidable. No canonical axiom or
+fixed percentage is changed.

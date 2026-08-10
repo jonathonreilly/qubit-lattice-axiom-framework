@@ -117,3 +117,13 @@ connection branches the local joint action actually realizes.
 | 3 | complete nonuniform same-action Ward tensor | connected, contact, mixed/source, multiplier, and generator-connection terms on one solved background | only this comparison can decide whether the Block-23 `O(c)` defect is canceled physically |
 | 4 | continuous Brillouin and Lorentzian nonlinear closure | prove the selected quotient/update over the continuous zone and causal evolution | current evidence is finite, local, and Euclidean |
 | 5 | reconcile proper-length sibling and close independent TOE roots | serialize PR #6096's support/contact theorem, then pursue rank-one matter and Born/history selectors | complementary science must be preserved without conflating stack ancestry |
+
+## Post-Block-27 Priority Refresh
+
+| Rank | Target | Exact next witness | Why now |
+|---:|---|---|---|
+| 1 | local covariant geometry-dependent RN source score | replace the full-edge target-reconstructed quadratic by cellwise source observables whose null-relative Hessian is derived before fitting | RN composition and algebraic completion work; locality/selection is now the decisive gravity wall |
+| 2 | compatible joint-family/intervention theorem | derive finite-region compatibility, marginal gluing, distinguished null state, and physical RN intervention typing from Admissibility/Record—or isolate the narrow amendment | this can keep source/action outside the foundational axioms if derived downstream |
+| 3 | selected source-independent pure geometry | one local Regge/alternate action or causal update combined stationarily with the anchored source | no matter probability ratio can determine this sector |
+| 4 | complete nonuniform Ward and Lorentzian test | connected/contact/mixed/multiplier/generator tensor on a solved background, then continuous-zone causal stability | only the complete selected law can decide physical cancellation |
+| 5 | proper-length reconciliation and independent TOE roots | serialize PR #6096, then rank-one matter and Born/history selectors | complementary contact information and independent closures remain valuable |

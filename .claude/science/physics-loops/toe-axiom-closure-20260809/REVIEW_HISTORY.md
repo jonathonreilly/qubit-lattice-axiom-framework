@@ -1517,3 +1517,28 @@ instance or Fourier census.
   #6098 is open, mergeable, and `CLEAN`, stacked exactly on Block-25 delivery
   head `4268fc8339`. Independent audit remains required. No canonical axiom,
   fixed percentage, audit verdict, or `review-loop` is changed.
+
+## Block 27 Construction Record
+
+- Proved the exact null-relative RN action identity and sequential cocycle for
+  three finite strictly positive rational laws.
+- Proved exponential normalizer cancellation, exact relative geometry
+  Hessians, Fisher `lambda^2` scaling, positive-unit selection, orientation
+  boundary, and the action-quantum/RN identity.
+- Exhausted all 256 retained cut configurations: 216 nonzero source
+  increments, exact complement reversal, and 1,024 exact coframe-path checks
+  establishing zero contact for the topological two-form source.
+- Constructed cubic-invariant occupancy-count anchored interactions whose
+  singleton Hessians cancel all three Block-23 matrices below `2.037e-15` and
+  change odds by at least `0.080524`.
+- Applied N1--N8 to preserve local geometry-dependent RN, proper-length,
+  hyperface/connected, generator, pure-geometry, projective, and Lorentzian
+  routes.
+- Primary source/input-pinned cache is `PASS=17 FAIL=0` in `13.1 s`.
+- Seventeen isolated fresh-process forced failures each exit nonzero at
+  exactly one intended named check; aggregate result is `PASS=17 FAIL=0`.
+- Citation registration is `5,473` nodes / `15,629` edges; the new node has
+  out-degree five and fifteen resolved helper runners.
+- Direct conformance passes; exact-stack/controlled-overlay pipelines, changed
+  evidence, commits, push, and independent audit remain pending. No canonical
+  axiom, fixed percentage, audit verdict, or `review-loop` is changed.

@@ -1194,3 +1194,28 @@ pure-geometry action/causal update. Those are now the highest-priority axiom
 or downstream-law decisions. PR #6096's proper-length source result remains a
 complementary sibling to reconcile after this linear stack. No canonical edit,
 percentage move, audit verdict, or `review-loop` occurs.
+
+## Block 27 RN Source/Action Handoff
+
+The null anchor now composes exactly with positive physical interventions.
+`Delta A=-log(R/R_null)` is an additive RN cocycle; exponential normalizers
+cancel, configuration-relative geometry derivatives remain, and unit Fisher
+norm isolates the positive dimensionless source scale. This provides a viable
+downstream source/action bridge without promoting Record readout to action.
+
+The retained two-form cut source passes the RN test on all 256 configurations,
+with 216 nonzero increments and exact complement reversal, but 1,024 geometry-
+path checks give zero coframe contact. That specific source cannot repair the
+metric tensor. A count-weighted anchored interaction does cancel all three
+Block-23 matrices below `2.037e-15` and changes odds by at least `0.080524`, so
+gravity remains algebraically viable; locality and physical selection are the
+actual missing science.
+
+Primary cache is `PASS=17 FAIL=0` in `13.1 s`; seventeen isolated fresh-
+process forced failures each trip one intended check. Graph is
+`5,473/15,629`, with out-degree five and fifteen helpers. Direct conformance
+passes; exact-stack and controlled-overlay pipelines remain. The highest-priority next object is a local
+covariant geometry-dependent RN score/joint interaction, combined with a
+separate selected pure-geometry action or causal update. PR #6096 remains a
+complementary proper-length route for later explicit reconciliation. No
+canonical edit, percentage move, audit verdict, or `review-loop` occurs.

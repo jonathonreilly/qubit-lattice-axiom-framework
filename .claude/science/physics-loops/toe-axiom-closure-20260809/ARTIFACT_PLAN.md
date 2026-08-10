@@ -551,3 +551,26 @@ complete conditional nonlinear compact solution:
   stacked claims; science commit `8274dab185`, campaign conformance
   `634d1b4c78`; PR #6098 is open, mergeable, and `CLEAN`, stacked on exact
   Block-25 delivery head `4268fc8339`; independent audit remains required
+
+## Block 27 — Null-Relative RN Source/Action Cocycle
+
+- theorem note:
+  `docs/ADMISSIBILITY_NULL_RECORD_RN_COCYCLE_SOURCE_UNIT_GRAVITY_CONTACT_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md`
+- runner/cache:
+  `scripts/admissibility_null_record_rn_cocycle_source_unit_gravity_contact_boundary_2026_08_10.py` and its source/input-pinned cache
+- packet scope: exact finite RN normalization, null-relative source/action
+  identity, sequential cocycle, exponential normalizer cancellation,
+  geometry-relative response, Fisher scale/orientation, action-quantum bridge,
+  exhaustive retained cut intervention and zero-contact test, anchored
+  count-weighted full-tensor escape, N1--N8, and minimized unadopted axiom or
+  downstream-law interface
+- exclusions: physical joint-family/intervention selection, zero-support
+  sectors, source orientation/action-quantum derivation, local covariant
+  geometry score, projective consistency, pure-geometry dynamics, complete
+  nonuniform Ward response, continuous-zone/Lorentzian closure, canonical
+  edits, percentage movement, audit verdicts, and `review-loop`
+- construction evidence: primary cache `PASS=17 FAIL=0` in `13.1 s`;
+  seventeen isolated fresh-process forced failures each trip exactly one
+  named check; graph `5,473/15,629`, out-degree five, with fifteen resolved
+  helpers; direct gates pass; exact-stack and controlled-overlay pipelines are
+  pending

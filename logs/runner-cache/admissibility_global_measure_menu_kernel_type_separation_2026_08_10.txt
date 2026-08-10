@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_global_measure_menu_kernel_type_separation_2026_08_10.py
+runner_sha256: 88ce9261496b9d2cc7958788d17b4deb8a838c316d94d1ceb3832c20d16bf860
+input_fingerprint_sha256: e536b3d986aa9462538364d762305f0e9507577917bc0b12534f45f9e380e20e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: current axiom wording, the parent low-arity theorem, and the earlier atomless menu-boundary note are source-bound; no observational or fitted inputs are used
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency; the cache envelope separately binds this runner and every declared input
+measure_boundary: the runner checks exact finite algebra and Gaussian dimension data; it does not replace the source proof of atomlessness/full support with samples
+negative_scope: only raw singleton identification and normalized finite restriction are rejected; other physical measure-to-effect constructions remain live
+PASS: source-admissibility the exact current distribution sentence is present
+PASS: source-atomless the current axiom note explicitly permits supported points of zero singleton measure
+PASS: source-parent the parent theorem supplies the unique trace form only after menu-independent low-arity grading
+PASS: source-boundary the earlier menu note separates atomless support from conditional effect menus
+PASS: binary-menu-resolutions the z and x projector pairs each sum exactly to the identity
+PASS: binary-menu-disjointness the z and x projective menus contain four distinct effects
+PASS: raw-singleton-contradiction two disjoint normalized binary menus force mass two inside a probability space of mass one
+PASS: gaussian-normalization the pi^-4 density cancels the eight-real-dimensional Gaussian integral exactly
+PASS: gaussian-neighbor-variation all seven neighbor-count classes have distinct scalar centers
+PASS: ternary-menu-a the asymmetric shared-effect menu is an exact scaled-projector resolution
+PASS: ternary-menu-b the symmetric shared-effect menu is an exact scaled-projector resolution
+PASS: shared-effect-incidence the two menus share exactly E0 and otherwise contain distinct effects
+PASS: atomic-global-normalization the five squared-trace atomic weights have exact normalization 509/200
+PASS: atomic-context-values normalized restriction gives the exact shared-effect values 25/142 and 2/11
+PASS: atomic-context-separation the same effect differs across the two menus by exactly -9/1562
+PASS: trace-grade-control the maximally mixed trace grade assigns E0 one quarter in both menus and normalizes each
+PASS: candidate-sufficiency-surface the note links the existing measure to all four typed interfaces and keeps the wording hypothetical
+PASS: machine-status-contract the source uses the controlled bounded-support and negative-route-pruning trace fields
+PASS: canonical-nonmutation the hypothetical partition/menu-kernel notation is absent from the canonical axiom file
+PASS: no-go-gate all N1-N8 sections and the broad-claim rejection are source-visible
+per_element: four exact binary projectors and five exact scaled ternary effects are checked; the shared effect is evaluated in both contexts
+per_site: the contradiction and both restriction witnesses are one-site statements at fixed neighbor data; no composite carrier is asserted
+per_mode: all seven neighbor-occupancy classes k=0,...,6 are checked for distinct Gaussian centers; no spectral-mode exhaustion is claimed
+per_block: the global-measure to normalized-menu to effect-grade interface is the only negative block tested
+lattice_wide: checked and not executed — neighbor-count covariance is an analytic source argument; no lattice-wide dynamics or Born no-go is claimed
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

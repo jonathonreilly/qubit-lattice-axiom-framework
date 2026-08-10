@@ -37,3 +37,19 @@ No canonical axiom or primitive file will be edited in this campaign without a
 separate user authorization. A result may support hypothetical wording that
 registers a grading or menu family. Such wording must be labeled a candidate
 governance choice, not a derivation and not current-surface closure.
+
+## Block 2 import ledger
+
+| Item | Role | Class | Load-bearing? | Disposition |
+|---|---|---|---:|---|
+| one probability measure `mu` on `M_2(C)` | exact current Admissibility object at fixed site/condition | axiom baseline | yes | do not silently retype as a menu law |
+| finite additivity of `mu` | disjoint-binary-menu contradiction | definition-level mathematics | yes | allowed |
+| eight-real-dimensional Gaussian measure | full-support atomless compatibility witness | constructed zero-input probability model | yes | exact analytic witness, no sampling |
+| two exact ternary scaled menus | contextual normalized-restriction witness | constructed finite matrix algebra | yes | conditional mathematical effects only |
+| registered measurable outcome partitions `A` pushing current `mu` to conditional Record-readout `K`, effect descent `w`, null/certain endpoints, and low-arity coverage | sufficient closure interface | hypothetical candidate | only for the consequence map | not current authority |
+| Block 1 frame-lift theorem | converts the typed interface to a unique trace grade | explicit branch-local parent | yes for sufficiency only | exposed dependency |
+| canonical axiom edit | governance action | forbidden absent user authority | no | not performed |
+
+The negative theorem does not import a Born formula, selected density matrix,
+instrument, apparatus context, observed probability, global sampler, or
+frequency interpretation.

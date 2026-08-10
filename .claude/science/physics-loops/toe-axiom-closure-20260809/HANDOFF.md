@@ -30,3 +30,36 @@ open PR #6061. Next exact action: pivot to the native frame lemma or the physica
 distribution-to-effect-grade/menu-eligibility bridge. Do not duplicate PR
 #6062's basis-menu CNOT witness. Do not edit canonical axiom files. Do not
 invoke `review-loop`.
+
+## Current axiom-interface block
+
+The physical pivot now has an exact type result. A single whole-domain
+probability measure `mu` cannot itself be a raw singleton grade on even the
+disjoint `x` and `z` binary menus: each menu would have mass one, so their
+union would have mass two. Normalized finite restriction is also not a
+universal bridge. The current wording admits a full-support atomless Gaussian
+family for which every finite menu has measure zero, and an exact atomic
+shared-effect witness gives `25/142` in one ternary menu and `2/11` in another.
+
+The sufficient axiom-facing interface is therefore typed as:
+
+1. registered measurable outcome partitions that push the existing `mu` to a
+   normalized conditional kernel for how a forming Record's locked realization
+   is read;
+2. descent to one grade of the same registered effect across menus;
+3. the endpoint values `w(0)=0` and `w(I)=1`;
+4. physical coverage of every binary and ternary resolution in the full
+   scaled domain `S`.
+
+Composed with the parent frame-lift theorem, these clauses derive a unique
+local density matrix and trace grade. They are candidate wording only: no
+canonical axiom was edited, and N1--N8 rejects any necessity or constructive-
+route-exhaustion claim.
+
+The primary runner is `PASS=20 FAIL=0`; eleven mutation probes fail exactly at
+their targets; an independent SymPy calculation agrees. The source, cache,
+harness row, and citation manifest are staged on the stacked branch. Remaining
+delivery actions are commit, push, and the stacked PR. The full
+pipeline reproduces only the current-main dependency-policy epoch mismatch
+owned by PR #6061; 1,044 tracked generated changes and 814 generated ledger
+shards were removed after the run. Continue without `review-loop`.

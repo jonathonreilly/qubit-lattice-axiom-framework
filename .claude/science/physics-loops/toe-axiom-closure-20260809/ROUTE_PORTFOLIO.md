@@ -11,6 +11,17 @@ families are tracked separately in `APPROACH_REGISTRY.md`.
 | Exact finite certificates | use rational/algebraic menu sets to expose degrees of freedom or a finite forcing basis | 2 | 3 | 2 | 3 | 2 | -1 | diagnostic; proof only if exhaustive |
 | Axiom translation | convert the exact theorem/counterexample into the narrowest candidate registration clause | 2 | 3 | 2 | 3 | 2 | -2 | only after mathematical synthesis |
 
+## Block 2 route comparison
+
+| Route | Exact object | Outcome | Decision |
+|---|---|---|---|
+| raw singleton lift | one global measure, `w(E)=mu({E})` | exact contradiction on two disjoint binary menus | retire |
+| normalized finite restriction | `mu({E})/mu(M)` | undefined for allowed atomless laws and contextual for an exact atomic witness | retire as universal bridge |
+| barycenter/evaluation | average a typed state and pair it with effects | remains viable but supplies density-state typing and trace evaluation | keep live |
+| Record event algebra | exclusive registered outcome events and finite additivity | quantifier bridge not yet derived | keep live |
+| physical program quotient | contact compiler plus operational equivalence and recurrent coverage | partial prior art exists; full interface open | rank next |
+| typed axiom addition | measurable outcome partitions/pushforward, effect descent, null/certain endpoints, binary/ternary coverage | sufficient by Block 1, not proven necessary | governance fallback only |
+
 ## Prior-art sweep
 
 Searched authority: `origin/main@323d7fc32d77598f74ea6cd4d30c38dda0fe5070`.
@@ -46,7 +57,8 @@ Binary menus are therefore included in the locked target.
 ## Block-boundary live PR sweep
 
 The 2026-08-10 sweep found no open PR proving the same one-ancilla
-binary/ternary theorem. Two new adjacent PRs affect routing but do not collide:
+binary/ternary theorem or the Block 2 partition/pushforward result. Current
+adjacent PRs affect routing but do not collide:
 
 - PR #6061 owns the dependency-policy epoch repair that explains the current
   `origin/main` pipeline failure; this science block must not absorb that
@@ -57,3 +69,7 @@ binary/ternary theorem. Two new adjacent PRs affect routing but do not collide:
   equivalence, or universal binary/ternary menu registration. The next
   physical Born block should consume it only after landing or otherwise remain
   independent of its branch-local result.
+- PR #6063 is the open Block 1 parent and must land before the stacked Block 2
+  result.
+- PR #6064 and the remaining recent open stack concern cell-cutting symmetry,
+  ranks, and exact covers rather than the Admissibility/Born interface.

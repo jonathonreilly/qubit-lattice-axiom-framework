@@ -413,8 +413,8 @@ target_claim_type: bounded_theorem
 conditional_surface_status: all three six-mode O_c source defects admit exact minimal per-branch Schur completions and one common fixed-signature eight-mode completion, but the coefficients are source-direction dependent and regular analytic decoupled invertible mixing begins only at O_c2; a selected local rank-jump, square-root, flat-mixing, or direct connection law remains open together with nonuniform continuous-zone and Lorentzian nonlinear closure
 hypothetical_axiom_status: a candidate joint local source-history covariance law should select one local action, action unit and additive normalization, jointly varied source variables and transformations, and the zero-source rank and amplitude regularity of every mixed/source block; it should derive the stationary or nonstationary differentiated Ward identity and cancel unselected O_k0 terms before the O_k2 pole in a massless phase, while a massive or curved phase derives its scale causal constraints and stability from the same law; this is sufficient or target-equivalent, unadopted, and not proven minimal or necessary
 review_disposition: block23_primary_runner_cache_pass_17_of_17_in_13_point_97_seconds_mutation_pass_17_of_17_graph_5469_nodes_15613_edges_outdegree_4_helpers_11_n1_n8_direct_gates_pass_exact_stack_inherited_policy_epoch_only_after_4807_rows_3685_runners_controlled_five_file_overlay_all_18_stages_checkpoint_3e3feb9fed42_changed_evidence_1_and_23_ready_independent_audit_required
-pr_status: block23_science_commit_c236890389_on_exact_block22_delivery_head_dc23e2f32f_delivery_pending
-pr_url: pending
+pr_status: block23_pr_6094_open_mergeable_clean_on_exact_block22_delivery_head_dc23e2f32f_at_conformance_head_66d4cc0d56
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/6094
 checkpoint_zero_toe_map:
   operational_quantum_records:
     repo_science_percent: 95

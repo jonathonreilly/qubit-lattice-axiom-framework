@@ -1110,8 +1110,10 @@ only its inherited stage-7 policy-epoch mismatch after 4,807 rows and 3,685
 runner classifications; the five-file current-main overlay passes all 18
 stages at checkpoint `3e3feb9fed42`. Changed evidence is clean for `1/1`
 Block-23 and `23/23` stacked claims. Science commit is `c236890389`; PR
-delivery remains pending. The next science is to
-realize one viable scaling branch in a selected local joint action, then solve
+delivery is #6094, open, mergeable, and `CLEAN` at conformance head
+`66d4cc0d56`, stacked exactly on Block-22 delivery head `dc23e2f32f`. The next
+science is to realize one viable scaling branch in a selected local joint
+action, then solve
 a nonuniform coupled background and certify continuous-zone Lorentzian
 nonlinear closure. No canonical edit, percentage move, audit verdict, or
 `review-loop` occurs.

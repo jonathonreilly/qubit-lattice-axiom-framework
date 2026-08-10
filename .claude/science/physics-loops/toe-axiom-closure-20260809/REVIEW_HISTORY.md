@@ -1420,5 +1420,6 @@ instance or Fourier census.
   `3e3feb9fed42`.
 - Changed-evidence readiness marks Block 23 alone (`1/1`) and all 23 stacked
   claims (`23/23`) ready with zero failures and zero control failures.
-- Science commit is `c236890389`; delivery is pending. Independent audit
-  remains required.
+- Science commit is `c236890389`; campaign conformance is `66d4cc0d56`. PR
+  #6094 is open, mergeable, and `CLEAN`, stacked exactly on Block-22 delivery
+  head `dc23e2f32f`. Independent audit remains required.

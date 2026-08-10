@@ -448,5 +448,7 @@ four and eleven resolved helper runners. Direct gates pass. The exact stack
 reaches only the inherited stage-7 policy-epoch mismatch after 4,807 rows and
 3,685 runner classifications; a five-file current-main overlay passes all 18
 stages at checkpoint `3e3feb9fed42`. Changed evidence is clean for `1/1`
-Block-23 and `23/23` stacked claims. Science is `c236890389`; delivery remains
-pending. No `review-loop` is used.
+Block-23 and `23/23` stacked claims. Science is `c236890389`; PR #6094 is
+open, mergeable, and `CLEAN` at conformance head `66d4cc0d56`,
+stacked exactly on Block-22 delivery head `dc23e2f32f`. No `review-loop` is
+used.

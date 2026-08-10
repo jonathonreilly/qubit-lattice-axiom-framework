@@ -635,7 +635,9 @@ independent_audit_required: true
   checkpoint `3e3feb9fed42`. Changed evidence is clean for Block 23 alone
   (`1/1`) and the full stack (`23/23`), with zero failures and zero control
   failures.
-- Science commit: `c236890389`; delivery remains pending.
+- Science commit: `c236890389`; campaign-conformance commit: `66d4cc0d56`.
+- Delivery: PR #6094 is open, mergeable, and `CLEAN`, stacked exactly on
+  Block-22 delivery head `dc23e2f32f` at conformance head `66d4cc0d56`.
 - Governance: N1--N8 restricts every exclusion to its declared coefficient and
   regularity class; no physical ghost, universal mode count, gravity no-go,
   axiom/primitive edit, audit verdict, fixed percentage, or `review-loop`.

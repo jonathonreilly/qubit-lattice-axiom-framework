@@ -571,6 +571,7 @@ def run_science() -> dict:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument("--receipt-path", default="outputs/witness_family_completeness_cycle977_receipt_2026_08_10.json")
+    parser.add_argument("--cache-path", default="logs/runner-cache/frontier_cycle977_witness_family_completeness_2026_08_10.txt")
     return parser.parse_args()
 
 
@@ -795,6 +796,12 @@ def main() -> int:
         "checker_payload": checker_payload,
     }
     receipt_path.write_text(json.dumps(report, indent=1, sort_keys=True) + "\n", encoding="utf-8")
+    cache_path = ROOT / args.cache_path
+    if not cache_path.resolve().is_relative_to(ROOT.resolve()):
+        sys.stderr.write("cache path escapes repository\n")
+        return 1
+    cache_path.parent.mkdir(parents=True, exist_ok=True)
+    cache_path.write_text(stdout, encoding="utf-8")
     sys.stdout.write(stdout)
     return 0 if all_pass else 1
 

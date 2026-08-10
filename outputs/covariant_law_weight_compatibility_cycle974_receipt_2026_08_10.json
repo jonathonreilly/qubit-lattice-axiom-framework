@@ -1,0 +1,493 @@
+{
+  "cache_path": "logs/runner-cache/frontier_cycle974_covariant_law_weight_compatibility_2026_08_10.txt",
+  "cache_sha256": "9eef65645087f118e31a82f2f02fd369a00348a49e6bc3c8e61dd9fbd2a3b4df",
+  "certificates": {
+    "A_REBUILD": {
+      "candidate_rows": {
+        "M1_COUNTING": {
+          "common_within_world_denominator": 1,
+          "definition": "w(e)=1",
+          "first_positive_event_index": 0,
+          "integer_numerator_total": 92260,
+          "nonnegative": true,
+          "normalizable": true,
+          "normalized_weight_digest": "6903b3d35ef861846209812ad27baa9b76069abffb6feba9fab78f57fb92eb4c",
+          "positive_weight_events": 92260,
+          "zero_weight_events": 0
+        },
+        "M2_PER_WORLD_UNIFORM": {
+          "common_within_world_denominator": 1073280,
+          "definition": "world score a(w)=1; uniform within each event-bearing world",
+          "first_positive_event_index": 0,
+          "integer_numerator_total": 802813440,
+          "nonnegative": true,
+          "normalizable": true,
+          "normalized_weight_digest": "539002346474ddd470ab1eb685e2d8b40dba9532196495eea1c1df7c62d49dac",
+          "positive_weight_events": 92260,
+          "zero_weight_events": 0
+        },
+        "M3_OCCUPATION_WEIGHTED": {
+          "common_within_world_denominator": 1073280,
+          "definition": "a(w)=clean-dwell occupation count; uniform within world",
+          "first_positive_event_index": 0,
+          "integer_numerator_total": 897595870080,
+          "nonnegative": true,
+          "normalizable": true,
+          "normalized_weight_digest": "d340abcfdc89aee174b6b4c0c45bfaa4297a47839abe60347bdc39522c6c65e7",
+          "positive_weight_events": 19172,
+          "zero_weight_events": 73088
+        },
+        "M4_FORMATION_LIFETIME": {
+          "common_within_world_denominator": 1073280,
+          "definition": "a(w)=boundaries-formation_moment(w)+1 if formed, else 0; uniform within world",
+          "first_positive_event_index": 0,
+          "integer_numerator_total": 29530480287360,
+          "nonnegative": true,
+          "normalizable": true,
+          "normalized_weight_digest": "34698cf72ea084f27f577b3a2f73b85e57395e654916e9b8f181d66688d988e4",
+          "positive_weight_events": 19172,
+          "zero_weight_events": 73088
+        },
+        "M5_FORMATION_MOMENT": {
+          "common_within_world_denominator": 1073280,
+          "definition": "a(w)=formation_moment(w) if formed, else 0; uniform within world",
+          "first_positive_event_index": 43,
+          "integer_numerator_total": 2192349344640,
+          "nonnegative": true,
+          "normalizable": true,
+          "normalized_weight_digest": "cb9e9299eb49aab12f2191f9a92c5eb5bbc9ca08bcce30bc4d4dc5ecaf043a34",
+          "positive_weight_events": 16076,
+          "zero_weight_events": 76184
+        }
+      },
+      "dependence_law": {
+        "canonical_pair": {
+          "condition_n_d_0": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "condition_n_d_1": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "distribution_n_d_0": [
+            1,
+            0
+          ],
+          "distribution_n_d_1": [
+            0,
+            1
+          ],
+          "fixed_target_input": 0
+        },
+        "changed_edge_pairs": 384,
+        "dependent_word_input_rows": 12,
+        "family_words": 20,
+        "law": "y=x XOR n_d",
+        "neighbour_conditions": 64,
+        "rotation_count": 24,
+        "rotation_failures": [],
+        "rotation_semantic_comparisons": 61440,
+        "state_resolved_class_count": 2,
+        "translation_failures": [],
+        "translation_semantic_comparisons": 15360,
+        "uniform_target_input_changed_pairs": 0,
+        "uniform_target_input_edge_pairs": 3840,
+        "witness_word_count": 6,
+        "word_law_class_count": 1,
+        "xor_failures": [],
+        "xor_truth_table_comparisons": 768
+      },
+      "event_cardinality": 92260,
+      "event_digest": "de0f650d9bbc483b18e23a5c70f92cf98f6b9972fa85b06ccaff51d7db1051d9",
+      "events_by_tag": {
+        "B0": 47872,
+        "B1": 44224,
+        "F": 164
+      },
+      "formed_worlds": 164,
+      "per_world_event_count_range": [
+        64,
+        129
+      ],
+      "provenance": {
+        "all_pins_and_text_ast_checks_match": true,
+        "blocked_modules_loaded": [],
+        "rows": [
+          {
+            "ast_candidate_names": [
+              "M1_COUNTING",
+              "M2_PER_WORLD_UNIFORM",
+              "M3_OCCUPATION_WEIGHTED",
+              "M4_FORMATION_LIFETIME",
+              "M5_FORMATION_MOMENT"
+            ],
+            "candidate_names_match": true,
+            "commit": "f655c945318231538ad7a5cc8956dc384115f8ea",
+            "label": "cycle878_event_weightings",
+            "note_blob": "17c07f4d6d3dc07c81828827f25ab575dc7b722d",
+            "note_path": "docs/EVENT_SPACE_GROUNDWORK_CYCLE878_SUPPORT_NOTE_2026-07-28.md",
+            "note_text_needles_match": true,
+            "pass": true,
+            "runner_ast_functions_match": true,
+            "runner_blob": "769f65e51ea2e896af750e92592a421464c3c0e1",
+            "runner_path": "scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py",
+            "text_ast_only": true
+          },
+          {
+            "commit": "6fd0de0a288d212a4a6ce3fdd4dc9019f30dbbad",
+            "label": "cycle970_inter_site_gate",
+            "note_blob": "f7b788d8076e7864bc5dbcbb33cb9e49554e494a",
+            "note_path": "docs/INTER_SITE_GATE_CYCLE970_BOUNDED_THEOREM_NOTE_2026-08-09.md",
+            "note_text_needles_match": true,
+            "pass": true,
+            "runner_ast_functions_match": true,
+            "runner_blob": "4670bcb9d83cfc039f1336398c6a4aa4af014f7c",
+            "runner_path": "scripts/frontier_cycle970_inter_site_gate_2026_08_09.py",
+            "text_ast_only": true
+          },
+          {
+            "commit": "3826925e019c0e1966a9b85110a397db2c61d33f",
+            "label": "cycle972_covariant_dependence_law",
+            "note_blob": "e328562ec0ff3b80acef65c490bb5903cc3e8438",
+            "note_path": "docs/COVARIANT_DEPENDENCE_LAW_CYCLE972_BOUNDED_THEOREM_NOTE_2026-08-09.md",
+            "note_text_needles_match": true,
+            "pass": true,
+            "runner_ast_functions_match": true,
+            "runner_blob": "ab497ae52f74bc8e8c6cc6eb5888bfaf9f119f15",
+            "runner_path": "scripts/frontier_cycle972_covariant_dependence_law_2026_08_09.py",
+            "text_ast_only": true
+          }
+        ]
+      },
+      "worlds_in_census": 748
+    },
+    "B_COMPATIBILITY_TEST": {
+      "auxiliary_conditioning_carrier": "q(x,n)=1/128; arbitrary strictly positive q gives the same conditional kernel and event marginal",
+      "criterion": "existential joint-extension criterion: a normalized event weighting p_i survives iff there exists P_i(e,x,n,y) with event marginal p_i and conditional P_i(y|x,n)=1{y=x XOR n_d} on every fixed-input radius-one configuration; mechanically use P_i=p_i(e)*q(x,n)*1{y=x XOR n_d}, q=1/128.  Exclude only on nonnegative/normalization failure, event-marginal mismatch, or a first conditional configuration mismatch.",
+      "excluded": [],
+      "excluded_count": 0,
+      "rows": {
+        "M1_COUNTING": {
+          "conditional_identity": "P_i(y|x,n)=1{y=x XOR n_d}",
+          "conditional_scalar_checks": 256,
+          "event_marginal_factor": "1",
+          "event_marginal_identity": "sum_{x,n,y} P_i(e,x,n,y)=p_i(e)",
+          "event_marginal_matches": true,
+          "exact_extension_witness": {
+            "canonical_configuration_pair": {
+              "condition_n_d_0": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "condition_n_d_1": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "distribution_n_d_0": [
+                1,
+                0
+              ],
+              "distribution_n_d_1": [
+                0,
+                1
+              ],
+              "fixed_target_input": 0
+            },
+            "event_atom": [
+              176,
+              0,
+              "F",
+              0
+            ],
+            "joint_mass_at_forced_outcome_per_configuration": "1/11809280",
+            "p_i_event": "1/92260"
+          },
+          "first_disagreement": null,
+          "nonnegative": true,
+          "normalizable": true,
+          "verdict": "SURVIVES"
+        },
+        "M2_PER_WORLD_UNIFORM": {
+          "conditional_identity": "P_i(y|x,n)=1{y=x XOR n_d}",
+          "conditional_scalar_checks": 256,
+          "event_marginal_factor": "1",
+          "event_marginal_identity": "sum_{x,n,y} P_i(e,x,n,y)=p_i(e)",
+          "event_marginal_matches": true,
+          "exact_extension_witness": {
+            "canonical_configuration_pair": {
+              "condition_n_d_0": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "condition_n_d_1": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "distribution_n_d_0": [
+                1,
+                0
+              ],
+              "distribution_n_d_1": [
+                0,
+                1
+              ],
+              "fixed_target_input": 0
+            },
+            "event_atom": [
+              176,
+              0,
+              "F",
+              0
+            ],
+            "joint_mass_at_forced_outcome_per_configuration": "1/12350976",
+            "p_i_event": "8320/802813440"
+          },
+          "first_disagreement": null,
+          "nonnegative": true,
+          "normalizable": true,
+          "verdict": "SURVIVES"
+        },
+        "M3_OCCUPATION_WEIGHTED": {
+          "conditional_identity": "P_i(y|x,n)=1{y=x XOR n_d}",
+          "conditional_scalar_checks": 256,
+          "event_marginal_factor": "1",
+          "event_marginal_identity": "sum_{x,n,y} P_i(e,x,n,y)=p_i(e)",
+          "event_marginal_matches": true,
+          "exact_extension_witness": {
+            "canonical_configuration_pair": {
+              "condition_n_d_0": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "condition_n_d_1": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "distribution_n_d_0": [
+                1,
+                0
+              ],
+              "distribution_n_d_1": [
+                0,
+                1
+              ],
+              "fixed_target_input": 0
+            },
+            "event_atom": [
+              176,
+              0,
+              "F",
+              0
+            ],
+            "joint_mass_at_forced_outcome_per_configuration": "1297/1726145904",
+            "p_i_event": "86328320/897595870080"
+          },
+          "first_disagreement": null,
+          "nonnegative": true,
+          "normalizable": true,
+          "verdict": "SURVIVES"
+        },
+        "M4_FORMATION_LIFETIME": {
+          "conditional_identity": "P_i(y|x,n)=1{y=x XOR n_d}",
+          "conditional_scalar_checks": 256,
+          "event_marginal_factor": "1",
+          "event_marginal_identity": "sum_{x,n,y} P_i(e,x,n,y)=p_i(e)",
+          "event_marginal_matches": true,
+          "exact_extension_witness": {
+            "canonical_configuration_pair": {
+              "condition_n_d_0": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "condition_n_d_1": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "distribution_n_d_0": [
+                1,
+                0
+              ],
+              "distribution_n_d_1": [
+                0,
+                1
+              ],
+              "fixed_target_input": 0
+            },
+            "event_atom": [
+              176,
+              0,
+              "F",
+              0
+            ],
+            "joint_mass_at_forced_outcome_per_configuration": "60075/151438360448",
+            "p_i_event": "1499472000/29530480287360"
+          },
+          "first_disagreement": null,
+          "nonnegative": true,
+          "normalizable": true,
+          "verdict": "SURVIVES"
+        },
+        "M5_FORMATION_MOMENT": {
+          "conditional_identity": "P_i(y|x,n)=1{y=x XOR n_d}",
+          "conditional_scalar_checks": 256,
+          "event_marginal_factor": "1",
+          "event_marginal_identity": "sum_{x,n,y} P_i(e,x,n,y)=p_i(e)",
+          "event_marginal_matches": true,
+          "exact_extension_witness": {
+            "canonical_configuration_pair": {
+              "condition_n_d_0": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "condition_n_d_1": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "distribution_n_d_0": [
+                1,
+                0
+              ],
+              "distribution_n_d_1": [
+                0,
+                1
+              ],
+              "fixed_target_input": 0
+            },
+            "event_atom": [
+              327,
+              1,
+              "B0",
+              0
+            ],
+            "joint_mass_at_forced_outcome_per_configuration": "19/1204587552",
+            "p_i_event": "4426240/2192349344640"
+          },
+          "first_disagreement": null,
+          "nonnegative": true,
+          "normalizable": true,
+          "verdict": "SURVIVES"
+        }
+      },
+      "survivor_count": 5,
+      "survivors": [
+        "M1_COUNTING",
+        "M2_PER_WORLD_UNIFORM",
+        "M3_OCCUPATION_WEIGHTED",
+        "M4_FORMATION_LIFETIME",
+        "M5_FORMATION_MOMENT"
+      ]
+    },
+    "C_SELECTION_STATUS": {
+      "absolute_reduction": 0,
+      "born_wall_stands": true,
+      "does_not_supply": [
+        "a local-to-event lift",
+        "an event-marginal selector",
+        "an occurrence rule",
+        "a Born rule"
+      ],
+      "excluded": [],
+      "fractional_reduction": "0",
+      "freedom_after": 5,
+      "freedom_before": 5,
+      "survivors": [
+        "M1_COUNTING",
+        "M2_PER_WORLD_UNIFORM",
+        "M3_OCCUPATION_WEIGHTED",
+        "M4_FORMATION_LIFETIME",
+        "M5_FORMATION_MOMENT"
+      ]
+    },
+    "D_CONTROLS": {
+      "blocked_modules_loaded": [],
+      "blocklist_text_ast_only": true,
+      "determinism_replay": true,
+      "full_prefix_digest": "d71745ea3f687078fdaa7b9295eebd06479d4a01824f386e8c6f998825095d88",
+      "git_blobs": {
+        "docs/MINIMAL_AXIOMS_2026-06-29.md": "2f5fdd26898f62c17fcabc846761f7785c2eadb1",
+        "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": "c123b8d681c3d76fce08ef13d7673622deac64ad"
+      },
+      "literal_audit_input_paths": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py"
+      ],
+      "provenance_blocklist": [
+        "f655c945318231538ad7a5cc8956dc384115f8ea:docs/EVENT_SPACE_GROUNDWORK_CYCLE878_SUPPORT_NOTE_2026-07-28.md (text)",
+        "f655c945318231538ad7a5cc8956dc384115f8ea:scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py (AST)",
+        "6fd0de0a288d212a4a6ce3fdd4dc9019f30dbbad:docs/INTER_SITE_GATE_CYCLE970_BOUNDED_THEOREM_NOTE_2026-08-09.md (text)",
+        "6fd0de0a288d212a4a6ce3fdd4dc9019f30dbbad:scripts/frontier_cycle970_inter_site_gate_2026_08_09.py (AST)",
+        "3826925e019c0e1966a9b85110a397db2c61d33f:docs/COVARIANT_DEPENDENCE_LAW_CYCLE972_BOUNDED_THEOREM_NOTE_2026-08-09.md (text)",
+        "3826925e019c0e1966a9b85110a397db2c61d33f:scripts/frontier_cycle972_covariant_dependence_law_2026_08_09.py (AST)"
+      ],
+      "runtime_budget_seconds": 1400,
+      "runtime_seconds": 48.52957854105625,
+      "sha256": {
+        "docs/MINIMAL_AXIOMS_2026-06-29.md": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
+        "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4"
+      },
+      "sha_pins_match": true,
+      "short_replay_digest": "d71745ea3f687078fdaa7b9295eebd06479d4a01824f386e8c6f998825095d88",
+      "stdout_bytes": 2497,
+      "stdout_limit_bytes": 6000
+    }
+  },
+  "checks": {
+    "A_REBUILD": true,
+    "B_COMPATIBILITY_TEST": true,
+    "C_SELECTION_STATUS": true,
+    "D_CONTROLS": true
+  },
+  "claim": "covariant nearest-neighbour XOR law compatibility with the five finite event weightings",
+  "cycle": 974,
+  "pass": true,
+  "primary_source_sha256": "17d056cc67fcde5f21c8b3ea23ded4d0180ae0d22b6b72893b7540639f78428a"
+}

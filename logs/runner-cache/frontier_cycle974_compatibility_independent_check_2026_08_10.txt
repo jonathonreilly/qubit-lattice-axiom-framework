@@ -1,0 +1,9 @@
+CYCLE974_COMPATIBILITY_INDEPENDENT_CHECK
+R0_PINS_BLOCKLIST_AND_AST PASS :: pins=True; text_AST_JSON_only=True; blocked_modules_loaded=[]
+R1_REFUTE_REBUILD PASS :: events=92260; candidate_digests_match=True; law={"canonical_pair":{"D0":[1,0],"D1":[0,1],"n0":[0,0,0,0,0,0],"n1":[1,0,0,0,0,0],"x":0},"changed_edge_pairs":384,"dependent_word_input_rows":12,"family_words":20,"rotation_count":24,"rotation_failures":[],"rotation_semantic_comparisons":61440,"state_resolved_class_count":2,"translation_failures":[],"translation_semantic_comparisons":15360,"uniform_target_input_changed_pairs":0,"uniform_target_input_edge_pairs":3840,"witness_word_count":6,"word_law_class_count":1,"xor_failures":[]}
+R2_REFUTE_COMPATIBILITY PASS :: verdicts={"M1_COUNTING":"SURVIVES","M2_PER_WORLD_UNIFORM":"SURVIVES","M3_OCCUPATION_WEIGHTED":"SURVIVES","M4_FORMATION_LIFETIME":"SURVIVES","M5_FORMATION_MOMENT":"SURVIVES"}; disagreement_witnesses={"M1_COUNTING":null,"M2_PER_WORLD_UNIFORM":null,"M3_OCCUPATION_WEIGHTED":null,"M4_FORMATION_LIFETIME":null,"M5_FORMATION_MOMENT":null}
+R3_ACTIVE_CORRUPTION_PROBES PASS :: rejected=negative_weight,zero_total,missing_configuration,XNOR; XNOR_witness={"configuration":[0,[0,0,0,0,0,0],0],"expected":"1","observed":"0","quantity":"P(y|x,n)"}
+R4_SELECTION_BOUNDARY PASS :: survivors=5/5; excluded=0; reduction=0/5; local-to-event lift absent; wall stands unchanged
+R5_CONTROLS PASS :: determinism=True; runtime_s=116.587<1400; stdout_bytes=1539<6000<150000
+REFUTATION_OUTCOME: NO_DISCREPANCY_FOUND
+TOTAL: PASS=6 FAIL=0

@@ -220,7 +220,7 @@ discarded with the disposable worktree. Changed-evidence readiness checks all
 #6080, then #6081. The canonical axiom memo is untouched, the fixed TOE
 percentages do not move, and no `review-loop` is used.
 
-Block 14 is prepared on branch
+Block 14 is open as PR #6082 from branch
 `physics-loop/toe-axiom-closure-block14-20260810`, based on the exact Block 13
 delivery head `d76c0f579f1d1395e71f8ebf6767d67532bed7f2`. The actual
 face-diagonal closed history, every-mode telescoping Ward identity, signed
@@ -235,5 +235,8 @@ isolated pipeline passes every stage through effective-status computation and
 then reproduces PR #6061's known dependency-policy epoch mismatch at
 restoration. Its 1,066 tracked generated changes and 826 new shards were
 discarded. Seeded changed evidence checks all 14 stacked claims with zero
-failures or control failures. Science commit is `a7b6da269a`; push and stacked
-PR delivery are pending.
+failures or control failures. Science commit is `a7b6da269a`; conformance
+commit is `c9a68765da`. PR #6082 is mergeable and `CLEAN` on the exact #6081
+delivery head `d76c0f579f1d1395e71f8ebf6767d67532bed7f2`. Hard landing order is
+#6063, #6065, #6067, #6070, #6071, #6074, #6075, #6076, #6077, #6078,
+#6079, #6080, #6081, then #6082.

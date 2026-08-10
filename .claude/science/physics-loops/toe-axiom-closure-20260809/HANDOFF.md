@@ -625,8 +625,8 @@ The existing candidate history/action amendment already types the conditional
 representative and named infrared ensembles if adopted. It remains
 hypothetical; no broader candidate or canonical edit is needed. The fixed TOE
 percentages remain unchanged and no `review-loop` is invoked. Block 14 is
-currently an uncommitted candidate stacked on the exact Block-13 delivery head
-`d76c0f579f1d1395e71f8ebf6767d67532bed7f2`. Direct vocabulary, strict audit
+committed and open as mergeable stacked PR #6082 on the exact Block-13
+delivery head `d76c0f579f1d1395e71f8ebf6767d67532bed7f2`. Direct vocabulary, strict audit
 lint, graph/link/class-F, premise, Python/YAML, whitespace, cache, exact
 18-path, and canonical checksum gates pass.
 
@@ -639,5 +639,8 @@ new ledger shards were discarded with the disposable worktree. Seeded
 changed-evidence readiness checks Block 14 and all 14 stacked claims with zero
 failures and zero control failures.
 
-The exact 18-file science delta is commit `a7b6da269a`. Delivery remains to be
-recorded; the canonical memo and fixed percentages remain unchanged.
+The exact 18-file science delta is commit `a7b6da269a`; conformance is commit
+`c9a68765da`. PR #6082 is `CLEAN` and mergeable. Hard landing order is #6063,
+#6065, #6067, #6070, #6071, #6074, #6075, #6076, #6077, #6078, #6079,
+#6080, #6081, then #6082. The canonical memo and fixed percentages remain
+unchanged.

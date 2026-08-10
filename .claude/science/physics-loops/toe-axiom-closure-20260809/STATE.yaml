@@ -289,8 +289,8 @@ target_claim_type: bounded_theorem
 conditional_surface_status: one explicit actual-edge face-diagonal cycle has an exact every-mode telescoping Ward identity; a signed transverse pair cancels k0 and gives 1088 full-null-compatible unprojected sources, while fixing only k0 gives one positive line 1281 compatible nonzero modes; the per-lattice-step moving principal source has a gauge-invariant unprojected one-over-k-squared pole and transverse one-over-r shape; positive compact mass, timelike causal dynamics, physical representative/source selection, geometry dynamics, coupling, nonlinear, projective, Born, and realized-history selection remain open
 hypothetical_axiom_status: the existing geometry-indexed history/action amendment already registers a fixed history/action representative and open, fixed-global, background-subtracted, or constrained infrared ensemble and is sufficient to type this construction; it remains unadopted, not proved necessary or minimal, no broader wording is needed, and no wording is edited into the axioms
 review_disposition: block14_direct_and_isolated_conformance_passed_with_known_dependency_policy_epoch_stop
-pr_status: block14_science_committed_conformance_passed_awaiting_push_and_pr
-pr_url: pending
+pr_status: block14_open_mergeable_clean_stacked_on_exact_block13_delivery_head
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/6082
 checkpoint_zero_toe_map:
   operational_quantum_records:
     repo_science_percent: 95

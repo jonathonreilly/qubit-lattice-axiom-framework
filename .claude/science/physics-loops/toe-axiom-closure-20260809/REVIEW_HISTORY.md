@@ -805,5 +805,8 @@ failure already owned by PR #6061. No `review-loop` was invoked.
   new ledger shards; all were removed with the disposable worktree. Seeded
   changed-evidence readiness checks Block 14 and all 14 stacked claims with
   zero failures and zero control failures.
-- The exact 18-file science delta is commit `a7b6da269a`. Push and stacked PR
-  delivery remain pending; no `review-loop` is invoked.
+- The exact 18-file science delta is commit `a7b6da269a`; conformance is commit
+  `c9a68765da`. PR #6082 is mergeable and `CLEAN` on the exact #6081 delivery
+  head `d76c0f579f1d1395e71f8ebf6767d67532bed7f2`. Hard landing order is #6063,
+  #6065, #6067, #6070, #6071, #6074, #6075, #6076, #6077, #6078, #6079,
+  #6080, #6081, then #6082; no `review-loop` is invoked.

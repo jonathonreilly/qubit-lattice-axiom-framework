@@ -526,3 +526,34 @@ independent_audit_required: true
   passes all 18 pipeline stages. Changed evidence marks the extension alone
   and all 20 stacked claims forensic-ready with no failures or control
   failures. Independent audit remains required.
+
+## Block 21 Sourced-Continuation Certificate
+
+- Claim type: `bounded_theorem`.
+- Positive result: the full off-flat Hessian is independently reconstructed;
+  all three retained sources have unique radius-`2e-9` five-normal roots at
+  `alpha=1/1024` with inertia `4-/1+`.
+- Bounded diagnosis: the Block-19-connected unsourced branch reaches a
+  numerically nondegenerate saddle-node at `alpha=0.0003941858600...`;
+  Bundle B has numerical global-only and
+  pointwise-normal crossings at `x=0.0240357490...` and
+  `x=1.9834291011...` on the named path.
+- Finite no-overlap: exact coefficient monotonicity and two root-of-unity
+  matrices require simultaneously `alpha>21/4096` and `alpha<20/4096` for
+  constant pointwise-normal inertia `4-/1+`. An independent whitened pencil
+  gives disjoint target intervals `(0.005685338165,0.008984847142)` and
+  `(-0.015580846184,0.004400735421)`; no broader gravity or action no-go is
+  licensed.
+- Live escape: the full flat gauge quotient has `9-/2+/4-zero` at both
+  witnesses; covariant constraints/source connections, full nonuniform
+  solutions, richer actions, continuous-zone closure, and Lorentzian
+  evolution remain open.
+- Runner/cache: fresh, source/input pinned, `PASS=16 FAIL=0`, with five N5
+  execution lines and independent periodic-action relative error
+  `8.759e-8`.
+- Mutation sensitivity: all 16 fresh-process runner-copy mutations exit
+  nonzero at exactly one intended named check (`PASS=16 FAIL=0`).
+- Citation graph: `5,467` nodes / `15,601` edges; new out-degree eight and
+  nine resolved helpers.
+- Governance: no axiom/primitive, audit status, ledger/queue, fixed
+  percentage, or `review-loop` mutation.

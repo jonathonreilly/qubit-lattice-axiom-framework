@@ -429,3 +429,22 @@ source completion, and realized geometry/history law remain open.
   continuous-Brillouin-zone theorem.
 - No observation, external theorem, new premise, axiom/primitive edit, audit
   verdict, or fixed-percentage move is imported.
+
+## Block 21 Assumptions And Imports
+
+Block 21 imports the actual Regge and curvature-square actions, the exact
+five-normal basis, the three Block-17 source covectors, and the supplied
+coupling `1/100`. It adds no observation, fitted prefactor, literature value,
+or axiom.
+
+The following remain explicit fixtures: Euclidean signature, homogeneous
+edge-class backgrounds, `alpha=1/1024`, ten affine metric constraints, and
+either global-only or constant pointwise localization. The source roots have
+interval Krawczyk certificates. The stationary fold and momentum roots are
+high-precision numerical brackets, not interval theorems. Positive-
+semidefinite monotonicity is exact, while the two displayed witness matrix
+signs are double-precision bounded facts with order-one margins.
+
+The candidate geometry/history wording is sufficient or target-equivalent,
+unadopted, and not proven minimal or necessary. It may instead be derived
+downstream. No canonical premise is changed.

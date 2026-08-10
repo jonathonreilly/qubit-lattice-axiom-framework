@@ -791,3 +791,19 @@ continuous-zone, nonlinear, Lorentzian, coarse-grained, background, and
 realized-source routes. V1--V5 finds material value, while the cluster cap
 requires folding into existing PR #6091 rather than opening Block 21 as a new
 PR. Canonical axioms and fixed percentages remain unchanged.
+
+## Block 21 Goal Checkpoint
+
+The urgent gravity target is now the selected covariant sourced quotient, not
+another scalar coefficient scan. The actual extended action supports all
+three declared compact source normal equations at `alpha=1/1024`, but neither
+supplied affine localization yields a constant sourced inertia, and the
+constant pointwise-normal version cannot be repaired for all momenta by any
+single `alpha` in the one-parameter family.
+
+Exact next obligation: derive the source and nonlinear constraint geometry
+from the admissibility/history law, solve a full nonuniform sourced field
+background, and prove the continuous gauge-quotient and Lorentzian nonlinear
+stability there. If that selected quotient still fails, enlarge the local
+action basis and derive its coefficients. Canonical axioms and the fixed TOE
+rubric remain unchanged.

@@ -1,0 +1,51 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_regge_curvature_squared_nonflat_continuation_2026_08_10.py
+runner_sha256: ee20839cf916dc91434cdbf1113ea2ac6af67317279209a538a4fb21acecb026
+input_fingerprint_sha256: 81aa3d43f7b5f7a24e4742072bbea4c5f2794d5babae3ad8c0882dbd47585d5c
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 158.21
+status: ok
+----- stdout -----
+external_scientific_inputs: none; all actions, sources, roots, and Hessians are reconstructed from repository-local Regge data
+package_local_integrity_reads: current axioms, approved primitives, Blocks 17/19/20, and the retained Regge carrier are source-bound
+analytic_boundary: source roots have interval Krawczyk certificates; the fold and momentum roots are high-precision numerical brackets, not interval root theorems
+physical_boundary: Euclidean signature, alpha=1/1024, compact sources, affine constraints, and both localization extensions remain supplied fixtures
+[PASS] source-and-axiom-boundary: the current foundation selects neither the gravity action nor source and constraint localization
+[PASS] source-note-contract: the note states the bounded two-witness result, live alternatives, N1-N8 gate, and candidate law wording
+[PASS] source-parent-carriers: the retained sources, Regge action, nonflat continuation, and flat repair are all explicit upstream carriers
+[PASS] full-curvature-hessian-flat-reduction: the off-flat Hessian formula reduces to the parent's exact flat Gram form
+       kernel error=6.821e-13; deficit max=6.661e-15
+[PASS] off-flat-k0-action-reconstruction: the complete real-space extended Hessian matches independent automatic differentiation off flatness
+       five-normal Hessian error=5.329e-14
+[PASS] tracked-unsourced-branch-fold: the numerically continued Block-19 unsourced branch reaches a stationary Hessian singularity before alpha=1/1024
+       a=0.003319232255134; u=0.06541411348441; alpha_fold=0.0003941858600098; residual=7.04e-39; calls=23
+[PASS] tracked-unsourced-saddle-node-nondegeneracy: continuation from the Block-19 root and both saddle-node transversality coefficients are numerically nonzero
+       positive eigenvalue path=3.15141,1.74729,0.506561,0.144821,0.0277814; endpoint distance=0.001577; parameter transversality=114.48395; null quadratic=17.215709
+[PASS] three-sourced-stationary-continuations: all three retained compact source covectors have nondegenerate alpha=1/1024 continuations from flat
+       two-stream: residual=4.5e-39, iterations=5, u=-0.00266942607; bundle-A: residual=1.5e-31, iterations=4, u=-0.000284248443; bundle-B: residual=1.5e-38, iterations=5, u=0.00937628428
+[PASS] three-sourced-interval-certificates: each sourced continuation is unique in its declared five-normal interval box
+       two-stream: radius=2.0e-9, contraction=3.086e-03; bundle-A: radius=2.0e-9, contraction=3.200e-03; bundle-B: radius=2.0e-9, contraction=4.325e-03
+[PASS] sourced-off-flat-k0-reconstruction: the complete sourced Bundle-B Hessian reduces to its independently certified five-normal Hessian
+       Hessian error=2.665e-14; deficit max=0.058010
+[PASS] sourced-periodic-action-validation: an independent periodic extended-action second difference reproduces the nonzero-momentum sourced Hessian
+       finite difference=-369.9832861; prediction=-369.9832537; relative=8.759e-08
+[PASS] sourced-global-soft-mode: the globally constrained sourced extension numerically brackets a generic-momentum inertia crossing
+       x=0.024035749022; bracket=(-1.858e-21,3.441e-21); inertias=(7, 8, 0)/(8, 7, 0)
+[PASS] sourced-pointwise-soft-mode: the constant pointwise five-normal sourced extension brackets a distinct high-momentum crossing
+       x=1.983429101070; bracket=(2.775e+03,-3.026e+03); inertias=(4, 1, 0)/(5, 0, 0)
+[PASS] pointwise-coefficient-two-witness-no-overlap: positive-semidefinite monotonicity makes the two pointwise-affine coefficient requirements disjoint
+       lower alpha=21/4096 requires alpha greater, max eigenvalue=-0.227754; upper alpha=20/4096 requires alpha smaller, second-positive=0.373824; correction gap=48.660397
+[PASS] pointwise-generalized-crossing-intervals: an independent whitened-pencil calculation gives disjoint coefficient intervals for four-negative/one-positive inertia
+       lower target interval=(0.005685338165,0.008984847142); upper target interval=(-0.015580846184,0.004400735421)
+[PASS] full-gauge-quotient-alternative-remains-live: the same two momenta retain the parent's repaired full-symbol inertia and exact four-gauge kernel
+       full inertias=[(9, 2, 4), (9, 2, 4)]
+per_element: checked all fifteen edge classes in the full off-flat Einstein-plus-curvature-square Hessian
+per_site: checked all fifty hinge classes and every local area, deficit, and deficit-Hessian contribution
+per_mode: checked two root-of-unity coefficient witnesses, one generic sourced path, and one independent periodic Bloch mode
+per_block: checked the Block-19-connected fold, three sourced continuations, and the largest sourced background
+lattice_wide: checked and not executed — no continuous-zone or full source-field theorem; only the two fixed witnesses and one sourced path are resolved
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

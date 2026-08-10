@@ -1016,3 +1016,29 @@ changed-evidence readiness checks the extension alone and all 20 stacked
 claims with no failures or control failures. Extension science commit is
 `d2223e5a3d`; conformance commit is `c664cdc0da`. Both are pushed to PR #6091,
 which was observed open, mergeable, and `CLEAN` at the conformance head.
+
+## Block 21 Sourced Continuation Handoff
+
+Block 21 differentiates the complete `A epsilon^2` action away from flatness.
+The Block-19-connected unsourced branch folds at
+`alpha=0.0003941858600...`, below `1/1024`; numerical parameter and null-
+direction controls identify a nondegenerate saddle-node. All three retained
+sources instead have interval-certified nearby normal roots at `1/1024`;
+Bundle B is the largest, with fifth normal coordinate `0.00937628428...`.
+
+Its complete Hessian is validated by an independent periodic action at
+relative `8.759e-8`, then brackets a global-only crossing at
+`x=0.0240357490...` and a pointwise-normal crossing at
+`x=1.9834291011...` along `k=x(1,0.7,-0.4,0.2)`. Two flat root-of-unity
+witnesses prove that constant pointwise normals would require both
+`alpha>21/4096` and `alpha<20/4096`; an independent generalized pencil gives
+disjoint target intervals ending at `0.004400735421...` and beginning at
+`0.005685338165...`. The full flat quotient remains healthy at both witnesses,
+so this is a constraint-localization diagnosis, not a gravity no-go.
+
+Primary cache is fresh at `PASS=16 FAIL=0`; all 16 fresh-process runner-copy
+mutations exit nonzero at exactly one intended named check. Graph registration
+is `5,467/15,601`, out-degree eight. The exact next path is a law-selected
+covariant sourced constraint/gauge quotient on a full nonuniform solution,
+then continuous-zone and Lorentzian stability. No canonical edit, percentage
+move, audit verdict, or `review-loop` occurs.

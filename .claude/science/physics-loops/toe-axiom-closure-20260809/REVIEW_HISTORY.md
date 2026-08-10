@@ -1284,3 +1284,43 @@ instance or Fourier census.
 - Both commits are pushed to PR #6091. The PR is open, mergeable, and `CLEAN`
   on the exact Block-19 delivery base; its body records the extension evidence
   and preserves the hard landing order through #6090 then #6091.
+
+## Block 21 sourced-continuation science record
+
+- Derived the complete off-flat Hessian of `sum A epsilon^2`, including area,
+  area-deficit cross, deficit Gram, and deficit-Hessian terms. It reduces to
+  the flat Gram kernel within `6.821e-13` and matches independent off-flat
+  automatic differentiation within `5.329e-14`.
+- Located the Block-19-connected unsourced fold at
+  `alpha=0.0003941858600098...`, explicitly below `1/1024`; no disconnected-
+  root exclusion is claimed. Direct branch continuation plus parameter
+  transversality `114.48395...` and null quadratic `17.215709...` numerically
+  identify it as a nondegenerate saddle-node.
+- Continued all three retained compact sources from flat at `1/1024` and
+  certified unique roots in radius-`2e-9` Krawczyk boxes. All normal Hessians
+  have inertia `4-/1+`.
+- On Bundle B, an independent periodic extended-action second difference
+  agrees at relative `8.759e-8`. The full global-only symbol brackets a
+  generic-path crossing at `x=0.024035749022...`; constant pointwise normals
+  bracket a distinct crossing at `x=1.983429101070...`.
+- Two root-of-unity witnesses plus exact PSD ordering prove that no single
+  coefficient gives pointwise-normal `4-/1+` at both: the necessary bounds
+  are `alpha>21/4096` and `alpha<20/4096`. Independent whitening gives target
+  intervals `(0.005685338165,0.008984847142)` and
+  `(-0.015580846184,0.004400735421)`. Full repaired-symbol inertia remains
+  `9-/2+/4-zero` at both, so N1--N8 rejects any broad gravity no-go.
+- Candidate wording now requires a law-selected covariant sourced second
+  variation on the selected constraint/gauge quotient. It is unadopted,
+  sufficient or target-equivalent, and not proven minimal or necessary.
+- Primary source/input-pinned cache is fresh at `PASS=16 FAIL=0` in `158.21 s`.
+  Citation graph is `5,467` nodes / `15,601` edges; new out-degree is eight
+  with nine resolved helper runners. Vocabulary, strict lint, premise purity,
+  model normalization, Python, and whitespace gates pass.
+- Sixteen fresh-process runner-copy mutations cover axiom/note binding, both
+  Hessian reconstructions, fold location and nondegeneracy, source roots and
+  interval margins, periodic normalization, both momentum roots, both exact
+  witness margins, generalized-pencil ordering, and the full-quotient escape.
+  Every mutation exits nonzero at exactly one intended named check; aggregate
+  result is `PASS=16 FAIL=0`.
+- No canonical edit, fixed-percentage move, audit verdict, or `review-loop`
+  occurs. Direct conformance and delivery remain pending.

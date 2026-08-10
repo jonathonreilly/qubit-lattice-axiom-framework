@@ -391,3 +391,17 @@ select or narrow the coefficient. The result therefore sharpens the candidate
 geometry/history-law interface without making it necessary, minimal, or
 adopted. Fixed TOE percentages and canonical axioms remain unchanged. The
 cluster decision is `FOLD` into PR #6091; no new PR or `review-loop` is used.
+
+Block 21 advances a distinct nonlinear sourced support node. The complete
+off-flat curvature-square Hessian and all three interval-certified source
+roots are positive upstream progress. The same calculation shows that neither
+supplied affine localization is yet the realized stability law, and two fixed
+momenta exclude rescuing constant pointwise normals by tuning the single
+coefficient.
+
+Reachability remains `upstream_support`, not direct TOE closure. The full flat
+gauge quotient survives the hostile witnesses, and covariant constraints,
+full sourced field equations, richer actions, and Lorentzian evolution remain
+live. The exact new axiom interface is source/constraint localization and the
+covariant sourced second variation; candidate wording is unadopted. Fixed TOE
+percentages and canonical axioms remain unchanged. No `review-loop` is used.

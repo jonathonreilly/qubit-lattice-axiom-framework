@@ -484,3 +484,20 @@ work.
 The bounded coefficient question is closed negatively at its exact scope. The
 leading route is now continuous-zone quotient control followed by a physical
 nonlinear/Lorentzian selector, not further dyadic sampling.
+
+## Block 21 Sourced-Localization Route Comparison
+
+| Route | Exact object | Outcome | Decision |
+|---|---|---|---|
+| continue old unsourced nonflat root in `alpha` | symmetric stationary equations of the full action | branch folds at `0.0003941858600...`, below `1/1024` | do not reuse the Block-19 background after changing the action; disconnected roots remain open |
+| continue retained sources from flat | three five-normal equations at coupling `1/100` | all three have interval-certified nondegenerate roots | retain as nonlinear sourced support, not full gravity |
+| global-only affine constraints | complete Bundle-B `15x15` symbol | generic-path crossing `0.0240357490...` | reject uniform-inertia claim for this supplied extension |
+| constant pointwise normal constraints | `N^dag Q N` | sourced crossing plus coefficient requirements `>21/4096` and `<20/4096` | retire scalar retuning as a global repair for this localization |
+| full flat gauge quotient | complete repaired flat symbol | `9-/2+/4-zero` at both no-overlap witnesses | live; requires continuous-zone and nonlinear sourced lift |
+| covariant sourced constraint bundle | background-dependent quotient with connection/source terms | not supplied | highest-priority constructive route |
+| richer local action | additional independent curvature invariants | not tested | conditional next route only if selected quotient fails |
+| Lorentzian evolution | causal transfer/symplectic stability | not supplied | required physical endpoint |
+
+The evidence shifts the bottleneck from coefficient existence to the
+background/source/constraint law. It does not establish a universal action or
+gravity obstruction.

@@ -413,3 +413,20 @@ complete conditional nonlinear compact solution:
    nonlinear, Lorentzian, coarse-grained, background, and source-law routes.
 6. Apply V1--V5 and the cluster cap. Fold the result into PR #6091 because it
    extends the same action/operator rather than opening another gravity PR.
+
+## Block 21 — Sourced Continuation And Constraint Localization
+
+- theorem note:
+  `docs/ADMISSIBILITY_REGGE_CURVATURE_SQUARED_SOURCED_CONTINUATION_CONSTRAINT_LOCALIZATION_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md`
+- runner:
+  `scripts/admissibility_regge_curvature_squared_nonflat_continuation_2026_08_10.py`
+- source/input-pinned cache:
+  `logs/runner-cache/admissibility_regge_curvature_squared_nonflat_continuation_2026_08_10.txt`
+- graph registration: one `bounded_theorem` node with eight explicit upstream
+  edges and nine resolved helper runners
+- packet scope: full off-flat curvature-square Hessian, tracked unsourced fold,
+  three interval-certified source continuations, Bundle-B periodic action
+  validation, two sourced momentum brackets, the two-witness pointwise
+  coefficient no-overlap, N1--N8, and unadopted covariant-law wording
+- exclusions: canonical axioms/primitives, audit verdicts/ledger/queues, fixed
+  TOE percentages, continuous-zone or Lorentzian claims, and `review-loop`

@@ -391,3 +391,18 @@ Conformance is `fc3eef6f6d`. PR #6090 is mergeable and `CLEAN` on exact
 Block-18 delivery head `ab40894b9260a31a3fd986eebff00611b13539b4`.
 Hard landing order adds #6090 after #6089 and #6088. Canonical axioms and fixed
 percentages are untouched, and no `review-loop` is used.
+
+Block 20's coefficient-window extension is science commit `d2223e5a3d` and
+has been pushed into PR #6091. It preserves the exact Block-19 base.
+
+Block 21 is being packaged on branch
+`physics-loop/toe-axiom-closure-block21-sourced-regge-20260810`, stacked
+on exact Block-20 delivery head `4338b09d21`. Its distinct review object is
+nonlinear sourced continuation and constraint localization: the complete
+off-flat curvature-square Hessian, one tracked branch fold, three interval
+source roots, two sourced momentum brackets, and a two-witness pointwise
+coefficient no-overlap with full-quotient escape preserved. Primary
+runner/cache is `PASS=16 FAIL=0`; all 16 fresh-process runner-copy mutations
+exit nonzero at exactly one intended named check (`PASS=16 FAIL=0`). Graph is
+`5,467/15,601` with out-degree eight. Direct conformance and delivery remain
+pending. No `review-loop` is used.

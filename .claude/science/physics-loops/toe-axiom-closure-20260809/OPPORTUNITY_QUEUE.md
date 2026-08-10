@@ -44,3 +44,16 @@ criteria therefore do not select `1/1024`.
 | 3 | coarse-graining or background/source selector | derived flow, fixed point, selected vacuum, or realized coupling that fixes/narrows `alpha` | remains logically independent of the linear spectrum |
 | 4 | nonlinear localized source evolution | existence and stability certificate without affine metric freezing | needed for physical gravity closure even if a coefficient is selected |
 | 5 | constituent-causal rank-one matter carrier | exact all-momentum Ward source with selected coupling | remains the leading matter/gravity source bridge |
+
+## Post-Block-21 Priority Refresh
+
+| Rank | Target | Exact next witness | Why now |
+|---:|---|---|---|
+| 1 | derive the covariant sourced constraint/gauge quotient | explicit nonlinear constraint/source connection and Hessian on one full nonuniform solution | both supplied affine extensions fail while the full flat quotient survives |
+| 2 | continuous Brillouin theorem on the selected quotient | analytic factorization or interval cover with no unintended zeros/inertia crossings | finite and two-witness tests cannot close realized momentum support |
+| 3 | Lorentzian nonlinear sourced evolution | causal transfer/symplectic spectrum using the same source and constraint law | Euclidean Hessian inertia is not the physical endpoint |
+| 4 | enlarge and derive the local action basis if the selected quotient fails | second independent curvature invariant with law-derived coefficient window | scalar retuning of the current pointwise family is decisively insufficient |
+| 5 | constituent-causal rank-one source | connected exact all-momentum Ward carrier with selected coupling | compact source roots exist but the realized matter law remains supplied |
+
+The tracked unsourced fold and sourced crossings move background,
+constraint, and source-law selection ahead of further coefficient sampling.

@@ -124,3 +124,16 @@ The strongest steelman is accepted: consistency conditions ordinarily bound a
 higher-curvature coefficient rather than determine it. The interval result
 quantifies that fact for the actual carrier but does not turn it into a
 universal coefficient no-go or axiom-necessity claim.
+
+## Block 21 Pointwise-Localization Boundary
+
+| Scoped claim | Exact/bounded evidence | N1--N8 disposition | Forbidden promotion | Live routes |
+|---|---|---|---|---|
+| no real `alpha` in `sum A(epsilon+alpha epsilon^2)` gives five-normal inertia `4-/1+` at both named flat momenta under constant pointwise `N` | exact PSD ordering; at `k_L`, `alpha=21/4096` is still `5-/0+`; at `k_U`, `alpha=20/4096` is already `3-/2+`; eigenvalue margins exceed `0.2` and `0.3` | pass only for this one action family, localization, inertia target, and two witnesses | do not claim gravity, Regge, curvature-square, all constraints, all backgrounds, or the axioms fail | full gauge quotient, covariant/background-dependent complement, nonlinear source/constraint connection, nonuniform full solution, additional invariants, Lorentzian law |
+
+The same block positively certifies three sourced normal continuations. Its
+two Bundle-B momentum brackets diagnose the supplied affine extensions only;
+they are numerical, not interval roots. The strongest steelman is accepted:
+constant pointwise normals are likely the wrong physical localization, so the
+next route is to derive the covariant sourced quotient rather than broaden the
+negative claim.

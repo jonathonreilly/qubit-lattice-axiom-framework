@@ -1371,5 +1371,15 @@ instance or Fourier census.
   witness escape, Ward defect/completion, path roots, both inventories, and
   bounded scope. Every mutation exits nonzero at exactly one intended named
   check; aggregate result is `PASS=15 FAIL=0`.
-- Graph registration and remaining direct conformance are in progress;
-  delivery remains pending.
+- Citation graph is `5,468` nodes / `15,609` edges; the new note has out-degree
+  seven with all seven retained dependencies resolved.
+- Vocabulary, strict lint, premise purity, model normalization, Python/YAML,
+  whitespace, source/input cache, canonical nonmutation, and graph/link/class-F
+  invariant gates pass.
+- The exact stacked pipeline seeds `4,806` rows and classifies `3,684` runners
+  before reproducing only the inherited stage-7 dependency-policy epoch
+  mismatch. A disposable overlay of exactly the five governed current-main
+  files passes all 18 stages and finalizes checkpoint `c29cbf6160bc`.
+- Changed-evidence readiness marks Block 22 alone (`1/1`) and all 22 stacked
+  claims (`22/22`) forensic-ready with zero failures and zero control failures.
+  Delivery remains pending.

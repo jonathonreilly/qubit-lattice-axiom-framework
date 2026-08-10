@@ -449,3 +449,7 @@ complete conditional nonlinear compact solution:
 - exclusions: canonical axiom/primitive edits, audit verdicts, physical-locality
   claim for the projector, continuous-zone/nonuniform/Lorentzian promotion,
   fixed TOE movement, and `review-loop`
+- conformance: graph `5,468/15,609` with out-degree seven; exact stack reaches
+  only the inherited stage-7 policy-epoch mismatch; the controlled five-file
+  current-main overlay passes all 18 stages at checkpoint `c29cbf6160bc`;
+  changed evidence is clean for `1/1` Block-22 and `22/22` stacked claims

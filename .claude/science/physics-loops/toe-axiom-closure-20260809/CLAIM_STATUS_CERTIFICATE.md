@@ -591,5 +591,11 @@ independent_audit_required: true
   N5 resolution lines.
 - Mutation sensitivity: all 15 fresh-process runner-copy mutations exit
   nonzero at exactly one intended named check (`PASS=15 FAIL=0`).
+- Conformance: citation graph `5,468` nodes / `15,609` edges, new out-degree
+  seven; direct gates pass; the exact stack reproduces only its inherited
+  stage-7 dependency-policy epoch mismatch; a five-file current-main overlay
+  passes all 18 stages at checkpoint `c29cbf6160bc`. Changed evidence is clean
+  for Block 22 alone (`1/1`) and the full stack (`22/22`), with zero failures
+  and zero control failures.
 - Governance: N1--N8 passes only for the inherited-map bounded diagnosis; no
   axiom/primitive, audit verdict, fixed percentage, or `review-loop` mutation.

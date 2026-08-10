@@ -1075,7 +1075,10 @@ Their generalized pencils predict two, one, and three `k/sqrt(c)` roots, all
 reproduced by direct `c=1e-5` branches. All 8,749 nonzero `L=3,...,8` modes
 still pass, exposing finite-volume IR aliasing. Primary cache is fresh at
 `PASS=15 FAIL=0` in `62.16 s`; all 15 fresh-process runner-copy mutations fail
-exactly one intended named check. N1--N8 licenses only this inherited-map
-bounded diagnosis. Graph and direct conformance are in progress; delivery
-remains pending. No canonical edit, percentage move, audit verdict, or
-`review-loop` occurs.
+exactly one intended named check. Citation registration is `5,468/15,609` with
+out-degree seven. The exact stack reaches only its inherited stage-7 policy-
+epoch mismatch; the five-file current-main overlay passes all 18 stages at
+checkpoint `c29cbf6160bc`. Changed evidence is clean for `1/1` Block-22 and
+`22/22` stacked claims. N1--N8 licenses only this inherited-map bounded
+diagnosis. Delivery remains pending. No canonical edit, percentage move,
+audit verdict, or `review-loop` occurs.

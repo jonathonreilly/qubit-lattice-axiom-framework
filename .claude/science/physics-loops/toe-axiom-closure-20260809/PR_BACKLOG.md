@@ -426,6 +426,9 @@ It retires the two fixed-normal high-momentum witnesses for this route, then
 brackets four finite-source roots, inventories five chambers across 11,279
 momenta, and shows all 8,749 `L=3,...,8` modes miss the narrow IR defect.
 Primary runner/cache is `PASS=15 FAIL=0`; all 15 fresh-process runner-copy
-mutations fail exactly one intended named check (`PASS=15 FAIL=0`). Graph and
-remaining direct conformance are in progress; delivery remains pending. No
+mutations fail exactly one intended named check (`PASS=15 FAIL=0`). Graph is
+`5,468/15,609` with out-degree seven. The exact stack reproduces only the
+inherited stage-7 policy-epoch mismatch; the five-file current-main overlay
+passes all 18 stages at checkpoint `c29cbf6160bc`. Changed evidence is clean
+for `1/1` Block-22 and `22/22` stacked claims. Delivery remains pending. No
 `review-loop` is used.

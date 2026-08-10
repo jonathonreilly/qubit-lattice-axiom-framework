@@ -1,0 +1,909 @@
+{
+ "actual_current_surface_status": "bounded-support",
+ "all_certificates_pass": true,
+ "bare_retained_allowed": false,
+ "certificates": {
+  "A_INPUT_FAMILY": {
+   "finding": "input_family=mu_p=p delta_0+(1-p) delta_1 for every real p in [0,1]; exact_cells=5; family_words=20; full_state_resolved=12/40 rows,384/7680 edge_pairs; cell_counts=[('p=0', 'marginal 6/20 words and 192/3840 edge pairs'), ('0<p<1/2', 'marginal 6/20 words and 192/3840 edge pairs'), ('p=1/2', 'marginal 0/20 words and 0/3840 edge pairs'), ('1/2<p<1', 'marginal 6/20 words and 192/3840 edge pairs'), ('p=1', 'marginal 6/20 words and 192/3840 edge pairs')]",
+   "pass": true
+  },
+  "B_BOUNDARY": {
+   "finding": "proof=exhaustive finite Boolean truth rows plus exact affine-polynomial elimination; identity=P_p(y=0|n_d=0)=p, P_p(y=0|n_d=1)=1-p; TV(P_p(.|0),P_p(.|1))=|2p-1|; zero_set=['1/2']; boundary_empty=False; marginal_visible_set=[0,1] minus {1/2}; nonzero_affine_pairs=192/3840",
+   "pass": true
+  },
+  "C_PREMISE_PRICE": {
+   "finding": "x=0 is sufficient, not necessary, and merely convenient; fixed_inputs_with_nonzero_witness=2/2; exact_970_ordered_pair_inputs=[0]; maximal_strength_inputs=[0, 1]; marginal_visible_laws=p!=1/2; delta(new gate,coupling,axiom,primitive,fixed-input premise)=0/0/0/0/0",
+   "pass": true
+  },
+  "D_CONTROLS": {
+   "finding": "sha_pins={\"docs/MINIMAL_AXIOMS_2026-06-29.md\":\"53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39\",\"scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py\":\"0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4\"}; provenance_blobs={\"cycle970_note\":\"f7b788d8076e7864bc5dbcbb33cb9e49554e494a\",\"cycle970_runner\":\"4670bcb9d83cfc039f1336398c6a4aa4af014f7c\",\"cycle972_note\":\"e328562ec0ff3b80acef65c490bb5903cc3e8438\",\"cycle972_runner\":\"ab497ae52f74bc8e8c6cc6eb5888bfaf9f119f15\"}; reads=6 explicit source files (970/972 runner+note, Cycle-719 core, axiom memo); provenance=AST/text only; determinism_replay=True; runtime_s=0.599278<timeout_s=300; stdout_upper_bound=3487<6000<150000",
+   "pass": true
+  }
+ },
+ "checker_payload": {
+  "boundary_empty": false,
+  "coefficient_patterns": [
+   [
+    [
+     "-1",
+     "2"
+    ],
+    [
+     "1",
+     "-2"
+    ]
+   ]
+  ],
+  "exact_970_ordered_pair_inputs": [
+   0
+  ],
+  "family_words": 20,
+  "fixed_inputs_with_witness": 2,
+  "input_cells": 5,
+  "input_family": "mu_p=p delta_0+(1-p) delta_1 for every real p in [0,1]",
+  "marginal_counts_by_representative": {
+   "0": [
+    6,
+    192,
+    "1"
+   ],
+   "1": [
+    6,
+    192,
+    "1"
+   ],
+   "1/2": [
+    0,
+    0,
+    "0"
+   ],
+   "1/4": [
+    6,
+    192,
+    "1/2"
+   ],
+   "3/4": [
+    6,
+    192,
+    "1/2"
+   ]
+  },
+  "science_digest": "aaed6bacc407cac135187bb68d077acc3baa7458e0d01ded392194872d6487b5",
+  "state_changed_edge_pairs": 384,
+  "state_dependent_rows": 12,
+  "state_edge_pairs": 7680,
+  "state_rows": 40,
+  "symbolic_edge_pairs": 3840,
+  "symbolic_nonzero_edge_pairs": 192,
+  "x0_classification": "sufficient, not necessary, and merely convenient",
+  "zero_set": [
+   "1/2"
+  ]
+ },
+ "claim_type": "bounded_theorem",
+ "conditional_surface_status": "exact on the declared radius-one, word-length-at-most-one basis-state family",
+ "controls": {
+  "all_inputs_exist_worktree_relative": true,
+  "axiom_distribution_needle_matches": true,
+  "blocklist_cited_primaries": [
+   "docs/MINIMAL_AXIOMS_2026-06-29.md"
+  ],
+  "blocklist_text_only": true,
+  "executable_substrate": "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+  "literal_audit_input_paths": [
+   "docs/MINIMAL_AXIOMS_2026-06-29.md",
+   "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py"
+  ],
+  "primary_source_sha256": "dec10260d1b2bfab4ee8b5e91276c2c43e1236e170d266b0d8cb161a9d09fde1",
+  "provenance_never_executed": true,
+  "provenance_pins_match": true,
+  "sha256": {
+   "docs/MINIMAL_AXIOMS_2026-06-29.md": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
+   "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4"
+  },
+  "text_ast_provenance": {
+   "cycle970_note": {
+    "bounded_scope_present": true,
+    "commit": "6fd0de0a288d212a4a6ce3fdd4dc9019f30dbbad",
+    "expected_blob": "f7b788d8076e7864bc5dbcbb33cb9e49554e494a",
+    "mentions_fixed_input_or_xor": true,
+    "observed_blob": "f7b788d8076e7864bc5dbcbb33cb9e49554e494a",
+    "path": "docs/INTER_SITE_GATE_CYCLE970_BOUNDED_THEOREM_NOTE_2026-08-09.md",
+    "read_mode": "text only"
+   },
+   "cycle970_runner": {
+    "commit": "6fd0de0a288d212a4a6ce3fdd4dc9019f30dbbad",
+    "declares_family": true,
+    "declares_marginal_census": true,
+    "declares_resolved_census": true,
+    "expected_blob": "4670bcb9d83cfc039f1336398c6a4aa4af014f7c",
+    "observed_blob": "4670bcb9d83cfc039f1336398c6a4aa4af014f7c",
+    "path": "scripts/frontier_cycle970_inter_site_gate_2026_08_09.py",
+    "read_mode": "AST only; never executed"
+   },
+   "cycle972_note": {
+    "bounded_scope_present": true,
+    "commit": "3826925e019c0e1966a9b85110a397db2c61d33f",
+    "expected_blob": "e328562ec0ff3b80acef65c490bb5903cc3e8438",
+    "mentions_fixed_input_or_xor": true,
+    "observed_blob": "e328562ec0ff3b80acef65c490bb5903cc3e8438",
+    "path": "docs/COVARIANT_DEPENDENCE_LAW_CYCLE972_BOUNDED_THEOREM_NOTE_2026-08-09.md",
+    "read_mode": "text only"
+   },
+   "cycle972_runner": {
+    "commit": "3826925e019c0e1966a9b85110a397db2c61d33f",
+    "declares_family": true,
+    "declares_marginal_census": true,
+    "declares_resolved_census": true,
+    "expected_blob": "ab497ae52f74bc8e8c6cc6eb5888bfaf9f119f15",
+    "observed_blob": "ab497ae52f74bc8e8c6cc6eb5888bfaf9f119f15",
+    "path": "scripts/frontier_cycle972_covariant_dependence_law_2026_08_09.py",
+    "read_mode": "AST only; never executed"
+   }
+  }
+ },
+ "cycle": 975,
+ "determinism_replay": true,
+ "findings": {
+  "input_family": {
+   "count_constancy_reason": "all nonzero marginal difference polynomials have their only [0,1] root at p=1/2",
+   "exact_exhaustive_partition": [
+    {
+     "cardinality": 1,
+     "exact_count_rule": "marginal 6/20 words and 192/3840 edge pairs",
+     "member": "delta_1",
+     "parameter_set": "p=0",
+     "representative_counts": {
+      "all_visible_edge_strengths_equal": true,
+      "marginal_changed_edge_pairs": 192,
+      "marginal_dependent_words": 6,
+      "marginal_edge_pairs": 3840,
+      "marginal_words": 20,
+      "p": "0",
+      "per_visible_edge_tv": "1",
+      "support_size": 1,
+      "supported_state_resolved_changed_edge_pairs": 192,
+      "supported_state_resolved_dependent_rows": 6,
+      "supported_state_resolved_edge_pairs": 3840,
+      "supported_state_resolved_rows": 20
+     },
+     "state_resolved_count_rule": "supported 6/20 word-input rows and 192/3840 edge pairs; full structural census 12/40 and 384/7680",
+     "strength": "1"
+    },
+    {
+     "cardinality": "continuum",
+     "exact_count_rule": "marginal 6/20 words and 192/3840 edge pairs",
+     "member": "left-biased full-support",
+     "parameter_set": "0<p<1/2",
+     "representative_counts": {
+      "all_visible_edge_strengths_equal": true,
+      "marginal_changed_edge_pairs": 192,
+      "marginal_dependent_words": 6,
+      "marginal_edge_pairs": 3840,
+      "marginal_words": 20,
+      "p": "1/4",
+      "per_visible_edge_tv": "1/2",
+      "support_size": 2,
+      "supported_state_resolved_changed_edge_pairs": 384,
+      "supported_state_resolved_dependent_rows": 12,
+      "supported_state_resolved_edge_pairs": 7680,
+      "supported_state_resolved_rows": 40
+     },
+     "state_resolved_count_rule": "supported/full structural census 12/40 word-input rows and 384/7680 edge pairs",
+     "strength": "1-2p in (0,1)"
+    },
+    {
+     "cardinality": 1,
+     "exact_count_rule": "marginal 0/20 words and 0/3840 edge pairs",
+     "member": "uniform",
+     "parameter_set": "p=1/2",
+     "representative_counts": {
+      "all_visible_edge_strengths_equal": true,
+      "marginal_changed_edge_pairs": 0,
+      "marginal_dependent_words": 0,
+      "marginal_edge_pairs": 3840,
+      "marginal_words": 20,
+      "p": "1/2",
+      "per_visible_edge_tv": "0",
+      "support_size": 2,
+      "supported_state_resolved_changed_edge_pairs": 384,
+      "supported_state_resolved_dependent_rows": 12,
+      "supported_state_resolved_edge_pairs": 7680,
+      "supported_state_resolved_rows": 40
+     },
+     "state_resolved_count_rule": "supported/full structural census 12/40 word-input rows and 384/7680 edge pairs",
+     "strength": "0"
+    },
+    {
+     "cardinality": "continuum",
+     "exact_count_rule": "marginal 6/20 words and 192/3840 edge pairs",
+     "member": "right-biased full-support",
+     "parameter_set": "1/2<p<1",
+     "representative_counts": {
+      "all_visible_edge_strengths_equal": true,
+      "marginal_changed_edge_pairs": 192,
+      "marginal_dependent_words": 6,
+      "marginal_edge_pairs": 3840,
+      "marginal_words": 20,
+      "p": "3/4",
+      "per_visible_edge_tv": "1/2",
+      "support_size": 2,
+      "supported_state_resolved_changed_edge_pairs": 384,
+      "supported_state_resolved_dependent_rows": 12,
+      "supported_state_resolved_edge_pairs": 7680,
+      "supported_state_resolved_rows": 40
+     },
+     "state_resolved_count_rule": "supported/full structural census 12/40 word-input rows and 384/7680 edge pairs",
+     "strength": "2p-1 in (0,1)"
+    },
+    {
+     "cardinality": 1,
+     "exact_count_rule": "marginal 6/20 words and 192/3840 edge pairs",
+     "member": "delta_0",
+     "parameter_set": "p=1",
+     "representative_counts": {
+      "all_visible_edge_strengths_equal": true,
+      "marginal_changed_edge_pairs": 192,
+      "marginal_dependent_words": 6,
+      "marginal_edge_pairs": 3840,
+      "marginal_words": 20,
+      "p": "1",
+      "per_visible_edge_tv": "1",
+      "support_size": 1,
+      "supported_state_resolved_changed_edge_pairs": 192,
+      "supported_state_resolved_dependent_rows": 6,
+      "supported_state_resolved_edge_pairs": 3840,
+      "supported_state_resolved_rows": 20
+     },
+     "state_resolved_count_rule": "supported 6/20 word-input rows and 192/3840 edge pairs; full structural census 12/40 and 384/7680",
+     "strength": "1"
+    }
+   ],
+   "family": "mu_p=p delta_0+(1-p) delta_1 for every real p in [0,1]",
+   "family_cardinality": "continuum",
+   "parameterization_unique": "p=mu({0}); mu({1})=1-p",
+   "representative_rows": {
+    "0": {
+     "all_visible_edge_strengths_equal": true,
+     "marginal_changed_edge_pairs": 192,
+     "marginal_dependent_words": 6,
+     "marginal_edge_pairs": 3840,
+     "marginal_words": 20,
+     "p": "0",
+     "per_visible_edge_tv": "1",
+     "support_size": 1,
+     "supported_state_resolved_changed_edge_pairs": 192,
+     "supported_state_resolved_dependent_rows": 6,
+     "supported_state_resolved_edge_pairs": 3840,
+     "supported_state_resolved_rows": 20
+    },
+    "1": {
+     "all_visible_edge_strengths_equal": true,
+     "marginal_changed_edge_pairs": 192,
+     "marginal_dependent_words": 6,
+     "marginal_edge_pairs": 3840,
+     "marginal_words": 20,
+     "p": "1",
+     "per_visible_edge_tv": "1",
+     "support_size": 1,
+     "supported_state_resolved_changed_edge_pairs": 192,
+     "supported_state_resolved_dependent_rows": 6,
+     "supported_state_resolved_edge_pairs": 3840,
+     "supported_state_resolved_rows": 20
+    },
+    "1/2": {
+     "all_visible_edge_strengths_equal": true,
+     "marginal_changed_edge_pairs": 0,
+     "marginal_dependent_words": 0,
+     "marginal_edge_pairs": 3840,
+     "marginal_words": 20,
+     "p": "1/2",
+     "per_visible_edge_tv": "0",
+     "support_size": 2,
+     "supported_state_resolved_changed_edge_pairs": 384,
+     "supported_state_resolved_dependent_rows": 12,
+     "supported_state_resolved_edge_pairs": 7680,
+     "supported_state_resolved_rows": 40
+    },
+    "1/4": {
+     "all_visible_edge_strengths_equal": true,
+     "marginal_changed_edge_pairs": 192,
+     "marginal_dependent_words": 6,
+     "marginal_edge_pairs": 3840,
+     "marginal_words": 20,
+     "p": "1/4",
+     "per_visible_edge_tv": "1/2",
+     "support_size": 2,
+     "supported_state_resolved_changed_edge_pairs": 384,
+     "supported_state_resolved_dependent_rows": 12,
+     "supported_state_resolved_edge_pairs": 7680,
+     "supported_state_resolved_rows": 40
+    },
+    "3/4": {
+     "all_visible_edge_strengths_equal": true,
+     "marginal_changed_edge_pairs": 192,
+     "marginal_dependent_words": 6,
+     "marginal_edge_pairs": 3840,
+     "marginal_words": 20,
+     "p": "3/4",
+     "per_visible_edge_tv": "1/2",
+     "support_size": 2,
+     "supported_state_resolved_changed_edge_pairs": 384,
+     "supported_state_resolved_dependent_rows": 12,
+     "supported_state_resolved_edge_pairs": 7680,
+     "supported_state_resolved_rows": 40
+    }
+   }
+  },
+  "premise_price": {
+   "exact_cycle970_ordered_pair_inputs": [
+    0
+   ],
+   "fixed_basis_input_family_size": 2,
+   "fixed_basis_inputs_reproducing_nonzero_witness": 2,
+   "fixed_basis_rows": [
+    {
+     "dependent": true,
+     "distribution_n_d_0": [
+      1,
+      0
+     ],
+     "distribution_n_d_1": [
+      0,
+      1
+     ],
+     "tv_strength": 1,
+     "x": 0
+    },
+    {
+     "dependent": true,
+     "distribution_n_d_0": [
+      0,
+      1
+     ],
+     "distribution_n_d_1": [
+      1,
+      0
+     ],
+     "tv_strength": 1,
+     "x": 1
+    }
+   ],
+   "fixed_x0_classification": "sufficient, not necessary, and merely convenient",
+   "general_input_laws_with_maximal_marginal_strength": "p in {0,1}",
+   "general_input_laws_with_nonzero_marginal": "every mu_p with p != 1/2",
+   "new_axioms": 0,
+   "new_couplings": 0,
+   "new_gate_classes": 0,
+   "new_registered_primitives": 0,
+   "same_maximal_strength_inputs": [
+    0,
+    1
+   ],
+   "supplied_fixed_input_premises_needed_for_general_law": 0,
+   "what_it_bought": "a delta input law with no cancellation between the two exchanged XOR rows"
+  },
+  "state_resolved": {
+   "changed_atoms_digest": "13b9a812d95f0d37d427e5b23d6f89468759d95f95fd758035905cecb11e6574",
+   "changed_edge_pairs": 384,
+   "dependent_word_input_rows": 12,
+   "edge_pair_comparisons": 7680,
+   "rows": [
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "I"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "I"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "X(C)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "X(C)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "X(+x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "X(+x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "X(-x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "X(-x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "X(+y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "X(+y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "X(-y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "X(-y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "X(+z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "X(+z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "X(-z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "X(-z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(C->+x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(C->+x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(C->-x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(C->-x)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(C->+y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(C->+y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(C->-y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(C->-y)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(C->+z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(C->+z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(C->-z)"
+    },
+    {
+     "changed_edge_pairs": 0,
+     "dependent": false,
+     "dependent_neighbour_bits": [],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(C->-z)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "+x"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(+x->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "+x"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(+x->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "-x"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(-x->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "-x"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(-x->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "+y"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(+y->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "+y"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(+y->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "-y"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(-y->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "-y"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(-y->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "+z"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(+z->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "+z"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(+z->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "-z"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 0,
+     "word_name": "CNOT(-z->C)"
+    },
+    {
+     "changed_edge_pairs": 32,
+     "dependent": true,
+     "dependent_neighbour_bits": [
+      "-z"
+     ],
+     "edge_pair_comparisons": 192,
+     "fixed_target_input": 1,
+     "word_name": "CNOT(-z->C)"
+    }
+   ],
+   "word_input_rows": 40
+  },
+  "symbolic_marginal": {
+   "affine_definition": "P_mu_p(y|n)=p*1{f(0,n)=y}+(1-p)*1{f(1,n)=y}",
+   "boundary_empty": false,
+   "candidate_zero_set": [
+    "1/2"
+   ],
+   "coefficient_patterns": [
+    [
+     [
+      "-1",
+      "2"
+     ],
+     [
+      "1",
+      "-2"
+     ]
+    ]
+   ],
+   "edge_pair_comparisons": 3840,
+   "generic_dependent_words": 6,
+   "identically_zero_edge_pairs": 3648,
+   "nonzero_affine_edge_pairs": 192,
+   "nonzero_atoms_digest": "f7262718a9bcab3775ceb424f46699b26d1deb4b0dc3fc96565e4fe361328dc9",
+   "rows": [
+    {
+     "generic_marginal_dependence": false,
+     "nonzero_affine_edge_pairs": 0,
+     "symbolically_dependent_neighbour_bits": [],
+     "word_name": "I"
+    },
+    {
+     "generic_marginal_dependence": false,
+     "nonzero_affine_edge_pairs": 0,
+     "symbolically_dependent_neighbour_bits": [],
+     "word_name": "X(C)"
+    },
+    {
+     "generic_marginal_dependence": false,
+     "nonzero_affine_edge_pairs": 0,
+     "symbolically_dependent_neighbour_bits": [],
+     "word_name": "X(+x)"
+    },
+    {
+     "generic_marginal_dependence": false,
+     "nonzero_affine_edge_pairs": 0,
+     "symbolically_dependent_neighbour_bits": [],
+     "word_name": "X(-x)"
+    },
+    {
+     "generic_marginal_dependence": false,
+     "nonzero_affine_edge_pairs": 0,
+     "symbolically_dependent_neighbour_bits": [],
+     "word_name": "X(+y)"
+    },
+    {
+     "generic_marginal_dependence": false,
+     "nonzero_affine_edge_pairs": 0,
+     "symbolically_dependent_neighbour_bits": [],
+     "word_name": "X(-y)"
+    },
+    {
+     "generic_marginal_dependence": false,
+     "nonzero_affine_edge_pairs": 0,
+     "symbolically_dependent_neighbour_bits": [],
+     "word_name": "X(+z)"
+    },
+    {
+     "generic_marginal_dependence": false,
+     "nonzero_affine_edge_pairs": 0,
+     "symbolically_dependent_neighbour_bits": [],
+     "word_name": "X(-z)"
+    },
+    {
+     "generic_marginal_dependence": false,
+     "nonzero_affine_edge_pairs": 0,
+     "symbolically_dependent_neighbour_bits": [],
+     "word_name": "CNOT(C->+x)"
+    },
+    {
+     "generic_marginal_dependence": false,
+     "nonzero_affine_edge_pairs": 0,
+     "symbolically_dependent_neighbour_bits": [],
+     "word_name": "CNOT(C->-x)"
+    },
+    {
+     "generic_marginal_dependence": false,
+     "nonzero_affine_edge_pairs": 0,
+     "symbolically_dependent_neighbour_bits": [],
+     "word_name": "CNOT(C->+y)"
+    },
+    {
+     "generic_marginal_dependence": false,
+     "nonzero_affine_edge_pairs": 0,
+     "symbolically_dependent_neighbour_bits": [],
+     "word_name": "CNOT(C->-y)"
+    },
+    {
+     "generic_marginal_dependence": false,
+     "nonzero_affine_edge_pairs": 0,
+     "symbolically_dependent_neighbour_bits": [],
+     "word_name": "CNOT(C->+z)"
+    },
+    {
+     "generic_marginal_dependence": false,
+     "nonzero_affine_edge_pairs": 0,
+     "symbolically_dependent_neighbour_bits": [],
+     "word_name": "CNOT(C->-z)"
+    },
+    {
+     "generic_marginal_dependence": true,
+     "nonzero_affine_edge_pairs": 32,
+     "symbolically_dependent_neighbour_bits": [
+      "+x"
+     ],
+     "word_name": "CNOT(+x->C)"
+    },
+    {
+     "generic_marginal_dependence": true,
+     "nonzero_affine_edge_pairs": 32,
+     "symbolically_dependent_neighbour_bits": [
+      "-x"
+     ],
+     "word_name": "CNOT(-x->C)"
+    },
+    {
+     "generic_marginal_dependence": true,
+     "nonzero_affine_edge_pairs": 32,
+     "symbolically_dependent_neighbour_bits": [
+      "+y"
+     ],
+     "word_name": "CNOT(+y->C)"
+    },
+    {
+     "generic_marginal_dependence": true,
+     "nonzero_affine_edge_pairs": 32,
+     "symbolically_dependent_neighbour_bits": [
+      "-y"
+     ],
+     "word_name": "CNOT(-y->C)"
+    },
+    {
+     "generic_marginal_dependence": true,
+     "nonzero_affine_edge_pairs": 32,
+     "symbolically_dependent_neighbour_bits": [
+      "+z"
+     ],
+     "word_name": "CNOT(+z->C)"
+    },
+    {
+     "generic_marginal_dependence": true,
+     "nonzero_affine_edge_pairs": 32,
+     "symbolically_dependent_neighbour_bits": [
+      "-z"
+     ],
+     "word_name": "CNOT(-z->C)"
+    }
+   ]
+  }
+ },
+ "law_formula": "for W_d=CNOT(a+d->a), y=x XOR n_d",
+ "marginal_identity": "P_p(y=0|n_d=0)=p, P_p(y=0|n_d=1)=1-p; TV(P_p(.|0),P_p(.|1))=|2p-1|",
+ "primary_cache_sha256": "9c3bafe0f585c5b75eb259d74693619a2324f130b7891e4e824bae6894ac321f",
+ "primary_source_sha256": "dec10260d1b2bfab4ee8b5e91276c2c43e1236e170d266b0d8cb161a9d09fde1",
+ "proposal_allowed": false,
+ "proposal_allowed_reason": "finite basis menu and word-length cap; not a full M_2(C) law",
+ "reachability_to_target": "closes",
+ "runtime_sec": 0.5992781249806285,
+ "science_digest": "aaed6bacc407cac135187bb68d077acc3baa7458e0d01ded392194872d6487b5",
+ "stdout_bytes": 2792,
+ "trace_class": "direct_blocker_closure"
+}

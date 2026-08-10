@@ -1,0 +1,141 @@
+{
+ "all_certificates_pass": true,
+ "blocklist_execution": [
+  "scripts/frontier_cycle975_input_distribution_dependence_law_2026_08_10.py",
+  "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+  "docs/MINIMAL_AXIOMS_2026-06-29.md"
+ ],
+ "certificates": {
+  "R0_PINS_BLOCKLIST_AND_AST": {
+   "finding": "primary_read=AST_only; checker_imports_primary_or_core=False; blocklist=['scripts/frontier_cycle975_input_distribution_dependence_law_2026_08_10.py', 'scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py', 'docs/MINIMAL_AXIOMS_2026-06-29.md']; primary_imports_cycle719=True; primary_imports_provenance=False",
+   "pass": true
+  },
+  "R1_REFUTE_INPUT_FAMILY": {
+   "finding": "family=20 words; input_cells=5; state_resolved=12/40 rows,384/7680 edge_pairs",
+   "pass": true
+  },
+  "R2_REFUTE_BOUNDARY_AND_STRENGTH": {
+   "finding": "independent_affine_patterns=[[['-1', '2'], ['1', '-2']]]; zero_set=['1/2']; boundary_empty=False; representative_counts={\"0\":[6,192,\"1\"],\"1\":[6,192,\"1\"],\"1/2\":[0,0,\"0\"],\"1/4\":[6,192,\"1/2\"],\"3/4\":[6,192,\"1/2\"]}",
+   "pass": true
+  },
+  "R3_REFUTE_PREMISE_PRICE": {
+   "finding": "x0=sufficient, not necessary, and merely convenient; fixed_inputs_with_witness=2/2; exact_ordered_pair=[0]",
+   "pass": true
+  },
+  "R4_ACTIVE_CORRUPTION_PROBES": {
+   "finding": "active_corruptions=5; false_acceptances=0; mutations={\"corrupt_count\":false,\"erase_affine_signal\":false,\"erase_boundary\":false,\"make_uniform_visible\":false,\"make_x0_necessary\":false}",
+   "pass": true
+  },
+  "R5_CONTROLS": {
+   "finding": "source_sha_match=True; cache_sha_match=True; cache_payload_match=True; primary_certificates=4; determinism=True; runtime_s=0.077939",
+   "pass": true
+  }
+ },
+ "checker_cache_sha256": "87772525c75fe9e047ecbb65eeca7d811fd8dcbc6f34349c74555859ecbf151e",
+ "checker_payload": {
+  "active_corruption_probes": {
+   "false_acceptances": 0,
+   "mutations": {
+    "corrupt_count": false,
+    "erase_affine_signal": false,
+    "erase_boundary": false,
+    "make_uniform_visible": false,
+    "make_x0_necessary": false
+   },
+   "probe_count": 5
+  },
+  "independent_expected": {
+   "boundary_empty": false,
+   "coefficient_patterns": [
+    [
+     [
+      "-1",
+      "2"
+     ],
+     [
+      "1",
+      "-2"
+     ]
+    ]
+   ],
+   "exact_970_ordered_pair_inputs": [
+    0
+   ],
+   "family_words": 20,
+   "fixed_inputs_with_witness": 2,
+   "input_cells": 5,
+   "input_family": "mu_p=p delta_0+(1-p) delta_1 for every real p in [0,1]",
+   "marginal_counts_by_representative": {
+    "0": [
+     6,
+     192,
+     "1"
+    ],
+    "1": [
+     6,
+     192,
+     "1"
+    ],
+    "1/2": [
+     0,
+     0,
+     "0"
+    ],
+    "1/4": [
+     6,
+     192,
+     "1/2"
+    ],
+    "3/4": [
+     6,
+     192,
+     "1/2"
+    ]
+   },
+   "state_changed_edge_pairs": 384,
+   "state_dependent_rows": 12,
+   "state_edge_pairs": 7680,
+   "state_rows": 40,
+   "symbolic_edge_pairs": 3840,
+   "symbolic_nonzero_edge_pairs": 192,
+   "x0_classification": "sufficient, not necessary, and merely convenient",
+   "zero_set": [
+    "1/2"
+   ]
+  },
+  "primary_cache_sha256": "9c3bafe0f585c5b75eb259d74693619a2324f130b7891e4e824bae6894ac321f",
+  "primary_payload_matches": true,
+  "primary_source_sha256": "dec10260d1b2bfab4ee8b5e91276c2c43e1236e170d266b0d8cb161a9d09fde1",
+  "refute_spec_count": 4
+ },
+ "checker_source_sha256": "a33f13d62da34862e15ee1a8afe2c56dad661a1516dbc011d6dda87411ae32be",
+ "checker_type": "independent_refutation_attempt",
+ "cycle": 975,
+ "imports_core": false,
+ "imports_primary": false,
+ "primary_read_mode": "AST only; never executed",
+ "refute_spec": [
+  {
+   "claim": "A_INPUT_FAMILY",
+   "falsifier": "any omitted p-cell or independently reconstructed count mismatch",
+   "target": "complete five-cell partition and dependence counts"
+  },
+  {
+   "claim": "B_BOUNDARY",
+   "falsifier": "a second root, a nonzero uniform marginal, or a different affine coefficient pattern",
+   "target": "zero set {1/2} and TV strength |2p-1|"
+  },
+  {
+   "claim": "C_PREMISE_PRICE",
+   "falsifier": "either fixed basis row is independent or only x=0 has unit strength",
+   "target": "x=0 sufficient but unnecessary; both fixed inputs have unit strength"
+  },
+  {
+   "claim": "D_CONTROLS",
+   "falsifier": "any digest mismatch, executable import, missing certificate, or nondeterministic receipt flag",
+   "target": "source/cache/receipt pins and non-executing AST boundary"
+  }
+ ],
+ "runtime_sec": 0.07793875003699213,
+ "stdout_bytes": 2620
+}

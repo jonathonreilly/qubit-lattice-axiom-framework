@@ -787,6 +787,7 @@ def main() -> int:
         },
         "findings": first,
         "controls": controls,
+        "primary_source_sha256": controls["primary_source_sha256"],
         "determinism_replay": deterministic,
         "science_digest": digest(first),
         "runtime_sec": elapsed,

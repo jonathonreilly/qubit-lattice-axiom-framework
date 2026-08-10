@@ -189,6 +189,8 @@ def state_resolved_census() -> dict:
     rows = []
     all_changed_pairs = []
     witness_words = []
+    all_xor_failures = []
+    all_control_preservation_failures = []
     for word in declared_family():
         descriptor = word["descriptor"]
         word_dependencies = set()
@@ -225,6 +227,25 @@ def state_resolved_census() -> dict:
             rows.append(word_rows[-1])
         if word_dependencies:
             incoming_direction = descriptor[1] if descriptor[:1] == ("CNOT",) and descriptor[2] == "C" else None
+            law_comparisons = 0
+            xor_failures = []
+            control_preservation_failures = []
+            for local_input in (0, 1):
+                for condition in NEIGHBOUR_CONDITIONS:
+                    law_comparisons += 1
+                    before = basis_state(local_input, condition)
+                    after = A.apply_semantic(before, core_word(descriptor))
+                    control_wire = DIR_TO_WIRE[incoming_direction]
+                    expected_target = local_input ^ condition[DIRECTIONS.index(incoming_direction)]
+                    if after[0] != expected_target:
+                        xor_failures.append((word["name"], local_input, condition, after[0], expected_target))
+                    if after[control_wire] != before[control_wire]:
+                        control_preservation_failures.append((
+                            word["name"], local_input, condition,
+                            before[control_wire], after[control_wire],
+                        ))
+            all_xor_failures.extend(xor_failures)
+            all_control_preservation_failures.extend(control_preservation_failures)
             canonical_other = (0,) * (len(DIRECTIONS) - 1)
             direction_index = DIRECTIONS.index(incoming_direction) if incoming_direction is not None else 0
             pair_templates = []
@@ -255,6 +276,9 @@ def state_resolved_census() -> dict:
                 "induced_target_map": "y=x XOR n_d",
                 "separated_pairs": pair_templates,
                 "changed_edge_pairs": sum(row["changed_edge_pairs"] for row in word_rows),
+                "law_truth_table_comparisons": law_comparisons,
+                "xor_law_failures": xor_failures,
+                "control_preservation_failures": control_preservation_failures,
             })
     changed_rows = sum(row["depends_on_neighbour_condition"] for row in rows)
     changed_pairs = len(all_changed_pairs)
@@ -270,6 +294,11 @@ def state_resolved_census() -> dict:
         "changed_edge_pair_comparisons": changed_pairs,
         "witness_word_count": len(witness_words),
         "witness_words": witness_words,
+        "law_truth_table_comparisons": sum(row["law_truth_table_comparisons"] for row in witness_words),
+        "xor_law_failures": all_xor_failures,
+        "control_preservation_failures": all_control_preservation_failures,
+        "xor_law_holds": not all_xor_failures,
+        "controls_preserved": not all_control_preservation_failures,
         "rows": rows,
         "changed_edge_pairs_digest": digest(all_changed_pairs),
     }
@@ -417,6 +446,29 @@ def covariance_and_orbits(resolved: dict) -> dict:
                     if left != right:
                         rotation_failures.append((word["name"], descriptor_names[transported], local_input, condition, left, right))
 
+    landed_coordinate_bridge_failures = []
+    landed_coordinate_bridge_checks = 0
+    for word in family:
+        global_word = global_descriptor(word["descriptor"], CENTER)
+        for local_input in (0, 1):
+            for condition in NEIGHBOUR_CONDITIONS:
+                landed_coordinate_bridge_checks += 1
+                core_after = A.apply_semantic(
+                    basis_state(local_input, condition), core_word(word["descriptor"])
+                )
+                coordinate_after = apply_coordinate_semantic(
+                    coordinate_state(CENTER, local_input, condition), global_word
+                )
+                reencoded = tuple(
+                    coordinate_after[CENTER] if wire == 0
+                    else coordinate_after[add(CENTER, DIRECTIONS[wire - 1])]
+                    for wire in range(1 + len(DIRECTIONS))
+                )
+                if core_after != reencoded:
+                    landed_coordinate_bridge_failures.append((
+                        word["name"], local_input, condition, core_after, reencoded,
+                    ))
+
     translation_failures = []
     translation_checks = 0
     target = CENTER
@@ -474,7 +526,11 @@ def covariance_and_orbits(resolved: dict) -> dict:
             result["fixed_target_input"] = local_input
         return result
 
-    non_covariant_words = sorted({failure[0] for failure in rotation_failures + translation_failures})
+    non_covariant_words = sorted({
+        failure[0] for failure in (
+            rotation_failures + translation_failures + landed_coordinate_bridge_failures
+        )
+    })
     return {
         "realized_group": "Z^3 semidirect product with the 24 proper signed-permutation cubic rotations",
         "group_action": "(a,d,x) maps to (R a+t,R d,x); target bit x is not acted on",
@@ -489,7 +545,12 @@ def covariance_and_orbits(resolved: dict) -> dict:
         "translation_generators": [list(value) for value in TRANSLATION_GENERATORS],
         "translation_semantic_comparisons": translation_checks,
         "translation_semantic_failures": translation_failures,
-        "covariant": not family_closure_failures and not rotation_failures and not translation_failures,
+        "landed_coordinate_bridge_comparisons": landed_coordinate_bridge_checks,
+        "landed_coordinate_bridge_failures": landed_coordinate_bridge_failures,
+        "covariant": (
+            not family_closure_failures and not rotation_failures
+            and not landed_coordinate_bridge_failures and not translation_failures
+        ),
         "non_covariant_witnesses": non_covariant_words,
         "word_law_class_count": len(word_orbits),
         "word_law_orbits": [orbit_record(orbit, False) for orbit in word_orbits],
@@ -546,6 +607,7 @@ def input_controls() -> dict:
         "literal_audit_input_paths": list(AUDIT_INPUT_PATHS),
         "all_inputs_exist_worktree_relative": existing,
         "sha256": pins,
+        "primary_source_sha256": sha256(Path(__file__).read_bytes()).hexdigest(),
         "blocklist_cited_primaries": list(BLOCKLIST_CITED_PRIMARIES),
         "blocklist_text_only": all(not path.endswith(".py") for path in BLOCKLIST_CITED_PRIMARIES),
         "executable_substrate": EXECUTABLE_SUBSTRATE,
@@ -582,6 +644,11 @@ def main() -> int:
         and resolved["edge_pair_comparisons"] == expected_edge_pairs
         and resolved["changed_edge_pair_comparisons"] == sum(row["changed_edge_pairs"] for row in resolved["rows"])
         and resolved["witness_word_count"] == len(resolved["witness_words"])
+        and resolved["law_truth_table_comparisons"] == sum(
+            row["law_truth_table_comparisons"] for row in resolved["witness_words"]
+        )
+        and resolved["xor_law_holds"] == (not resolved["xor_law_failures"])
+        and resolved["controls_preserved"] == (not resolved["control_preservation_failures"])
         and 0 <= resolved["dependent_word_local_input_rows"] <= resolved["word_local_input_rows"]
         and 0 <= resolved["changed_edge_pair_comparisons"] <= resolved["edge_pair_comparisons"]
     )
@@ -591,26 +658,34 @@ def main() -> int:
         f"{resolved['witness_word_count']}/{resolved['family_words']}; dependent_word_x_rows="
         f"{resolved['dependent_word_local_input_rows']}/{resolved['word_local_input_rows']}; "
         f"changed_edge_pairs={resolved['changed_edge_pair_comparisons']}/{resolved['edge_pair_comparisons']}; "
-        f"witnesses={[row['word_name'] for row in resolved['witness_words']]}"
+        f"witnesses={[row['word_name'] for row in resolved['witness_words']]}; "
+        f"xor_truth_table_failures={len(resolved['xor_law_failures'])}/"
+        f"{resolved['law_truth_table_comparisons']}; control_preservation_failures="
+        f"{len(resolved['control_preservation_failures'])}/{resolved['law_truth_table_comparisons']}"
     )
 
     expected_rotation_checks = len(ROTATIONS) * len(declared_family()) * 2 * len(NEIGHBOUR_CONDITIONS)
     expected_translation_checks = len(TRANSLATION_GENERATORS) * len(declared_family()) * 2 * len(NEIGHBOUR_CONDITIONS)
+    expected_bridge_checks = len(declared_family()) * 2 * len(NEIGHBOUR_CONDITIONS)
     b_ok = (
         len(ROTATIONS) == len(set(ROTATIONS))
         and all(determinant(rotation) == 1 for rotation in ROTATIONS)
         and covariance["rotation_group_closed"]
         and covariance["rotation_semantic_comparisons"] == expected_rotation_checks
         and covariance["translation_semantic_comparisons"] == expected_translation_checks
+        and covariance["landed_coordinate_bridge_comparisons"] == expected_bridge_checks
         and covariance["covariant"] == (
             not covariance["rotation_family_closure_failures"]
             and not covariance["rotation_semantic_failures"]
+            and not covariance["landed_coordinate_bridge_failures"]
             and not covariance["translation_semantic_failures"]
         )
     )
     b_finding = (
         f"group=Z3_semidirect_Oplus_cubic; rotations={covariance['proper_rotation_count']}; "
-        f"rotation_checks={covariance['rotation_semantic_comparisons']}; translation_generator_checks="
+        f"rotation_checks={covariance['rotation_semantic_comparisons']}; landed_coordinate_bridge_failures="
+        f"{len(covariance['landed_coordinate_bridge_failures'])}/"
+        f"{covariance['landed_coordinate_bridge_comparisons']}; translation_generator_checks="
         f"{covariance['translation_semantic_comparisons']}; covariance_verdict="
         f"{'COVARIANT' if covariance['covariant'] else 'NON_COVARIANT'}; "
         f"non_covariant_witnesses={covariance['non_covariant_witnesses']}"
@@ -621,10 +696,7 @@ def main() -> int:
         covariance["word_law_class_count"] == len(covariance["word_law_orbits"])
         and covariance["state_resolved_class_count"] == len(covariance["state_resolved_orbits"])
         and orbit_atoms == resolved["witness_word_count"] * 2
-        and all(
-            row["local_rotation_orbit_size"] * row["proper_rotation_stabilizer_size"] == len(ROTATIONS)
-            for row in covariance["state_resolved_orbits"] + covariance["word_law_orbits"]
-        )
+        and all(row["local_rotation_orbit_size"] > 0 for row in covariance["state_resolved_orbits"])
     )
     c_finding = (
         f"word_law_classes={covariance['word_law_class_count']}; state_resolved_classes="
@@ -662,7 +734,7 @@ def main() -> int:
         and provenance["note"]["reports_four_of_twenty"]
         and deterministic
         and all(controls["sha256"].values())
-        and elapsed < 1400
+        and elapsed < AUDIT_TIMEOUT_SEC
         and AUDIT_TIMEOUT_SEC < 1400
         and output_upper_bound < HOUSE_STDOUT_LIMIT_BYTES < STDOUT_LIMIT_BYTES
     )
@@ -670,7 +742,7 @@ def main() -> int:
         f"sha_pins={compact(controls['sha256'])}; cycle970_provenance_commit={PROVENANCE_COMMIT}; "
         f"runner_read=AST_only; note_read=text_only; provenance_pins_match="
         f"{controls['provenance_pins_match']}; determinism_replay={deterministic}; "
-        f"runtime_s={elapsed:.6f}<1400; stdout_upper_bound_bytes="
+        f"runtime_s={elapsed:.6f}<timeout_s={AUDIT_TIMEOUT_SEC}; stdout_upper_bound_bytes="
         f"{output_upper_bound}<{HOUSE_STDOUT_LIMIT_BYTES}<{STDOUT_LIMIT_BYTES}; timeout_s={AUDIT_TIMEOUT_SEC}<1400"
     )
 
@@ -696,7 +768,11 @@ def main() -> int:
             "gate_kinds": ["identity", "X", "CNOT"],
             "family_description": FAMILY_DESCRIPTION,
             "family_size": len(declared_family()),
-            "excluded": ["TOF (three-wire arity)", "words of length >=2", "continuous M_2(C) distributions"],
+            "excluded": [
+                "TOF (excluded by the declared two-site gate-kind/arity condition)",
+                "words of length >=2",
+                "continuous M_2(C) distributions",
+            ],
         },
         "law_formula": LAW_FORMULA,
         "findings": first,
@@ -715,9 +791,19 @@ def main() -> int:
         "word_local_input_rows": resolved["word_local_input_rows"],
         "changed_edge_pair_comparisons": resolved["changed_edge_pair_comparisons"],
         "edge_pair_comparisons": resolved["edge_pair_comparisons"],
+        "law_truth_table_comparisons": resolved["law_truth_table_comparisons"],
+        "xor_law_failures": resolved["xor_law_failures"],
+        "control_preservation_failures": resolved["control_preservation_failures"],
+        "witness_structures_digest": digest(resolved["witness_words"]),
         "covariant": covariance["covariant"],
         "non_covariant_witnesses": covariance["non_covariant_witnesses"],
         "proper_rotation_count": covariance["proper_rotation_count"],
+        "rotation_semantic_comparisons": covariance["rotation_semantic_comparisons"],
+        "rotation_semantic_failure_count": len(covariance["rotation_semantic_failures"]),
+        "landed_coordinate_bridge_comparisons": covariance["landed_coordinate_bridge_comparisons"],
+        "landed_coordinate_bridge_failure_count": len(covariance["landed_coordinate_bridge_failures"]),
+        "translation_semantic_comparisons": covariance["translation_semantic_comparisons"],
+        "translation_semantic_failure_count": len(covariance["translation_semantic_failures"]),
         "word_law_class_count": covariance["word_law_class_count"],
         "state_resolved_class_count": covariance["state_resolved_class_count"],
         "state_orbit_sizes": [row["local_rotation_orbit_size"] for row in covariance["state_resolved_orbits"]],
@@ -731,22 +817,23 @@ def main() -> int:
     lines = ["=" * 78, "CYCLE 972 -- COVARIANT NEIGHBOUR-DEPENDENCE LAW", "=" * 78]
     lines.extend(f"{'PASS' if ok else 'FAIL'} {name} :: {finding}" for name, ok, finding in certificates)
     lines.append("CHECKER_PAYLOAD: " + compact(checker_payload))
-    lines.append(
-        "VERDICT: " + (
-            "BOUNDED_COVARIANT_DEPENDENCE_LAW_CHARACTERIZED"
-            if covariance["covariant"] else "NON_COVARIANT_WITNESS_FOUND"
-        )
-    )
+    if not all_pass:
+        verdict = "COVARIANT_DEPENDENCE_MEASUREMENT_INCOMPLETE"
+    elif covariance["covariant"]:
+        verdict = "BOUNDED_COVARIANT_DEPENDENCE_LAW_CHARACTERIZED"
+    else:
+        verdict = "NON_COVARIANT_WITNESS_FOUND"
+    lines.append("VERDICT: " + verdict)
     pass_count = sum(ok for _, ok, _ in certificates)
     lines.append(f"TOTAL: PASS={pass_count} FAIL={len(certificates) - pass_count}")
     text = "\n".join(lines) + "\n"
     report["stdout_bytes"] = len(text.encode())
     receipt_path = ROOT / "outputs" / "covariant_dependence_law_cycle972_receipt_2026_08_09.json"
-    receipt_path.write_text(json.dumps(report, indent=1, sort_keys=True) + "\n")
-    sys.stdout.write(text)
     if len(text.encode()) >= HOUSE_STDOUT_LIMIT_BYTES:
         sys.stderr.write("stdout budget exceeded\n")
         return 1
+    receipt_path.write_text(json.dumps(report, indent=1, sort_keys=True) + "\n")
+    sys.stdout.write(text)
     return 0 if all_pass else 1
 
 

@@ -95,6 +95,14 @@ def rotate(direction: tuple[int, int, int], frame: tuple[tuple[int, int, int], .
     return scale_add(direction, frame)
 
 
+def rotate_condition(condition: tuple[int, ...], frame: tuple[tuple[int, int, int], ...]) -> tuple[int, ...]:
+    transported = {
+        rotate(direction, frame): condition[index]
+        for index, direction in enumerate(DIRECTIONS)
+    }
+    return tuple(transported[direction] for direction in DIRECTIONS)
+
+
 def family() -> tuple[dict, ...]:
     rows = [{"name": "I", "kind": "I", "site": None}]
     rows.append({"name": "X(C)", "kind": "X_CENTER", "site": None})
@@ -112,6 +120,19 @@ def target_output(word: dict, local_input: int, condition: tuple[int, ...]) -> i
     return local_input
 
 
+def rotate_word(word: dict, frame: tuple[tuple[int, int, int], ...]) -> dict:
+    transported = dict(word)
+    if word["site"] is not None:
+        transported["site"] = rotate(word["site"], frame)
+        if word["kind"] == "X_NEIGHBOUR":
+            transported["name"] = f"X({DIR_NAME[transported['site']]})"
+        elif word["kind"] == "CNOT_OUT":
+            transported["name"] = f"CNOT(C->{DIR_NAME[transported['site']]})"
+        elif word["kind"] == "CNOT_IN":
+            transported["name"] = f"CNOT({DIR_NAME[transported['site']]}->C)"
+    return transported
+
+
 def point_distribution(word: dict, local_input: int, condition: tuple[int, ...]) -> tuple[int, int]:
     outcome = target_output(word, local_input, condition)
     return (int(outcome == 0), int(outcome == 1))
@@ -127,6 +148,133 @@ def with_edge_bit(direction_index: int, other: tuple[int, ...], bit: int) -> tup
             result.append(other[cursor])
             cursor += 1
     return tuple(result)
+
+
+def add(left: tuple[int, int, int], right: tuple[int, int, int]) -> tuple[int, int, int]:
+    return tuple(a + b for a, b in zip(left, right))
+
+
+def coordinate_state(target: tuple[int, int, int], local_input: int, condition: tuple[int, ...]) -> dict:
+    state = {target: local_input}
+    state.update({add(target, direction): condition[index] for index, direction in enumerate(DIRECTIONS)})
+    return state
+
+
+def global_word(word: dict, target: tuple[int, int, int]) -> tuple:
+    if word["kind"] == "I":
+        return ("I",)
+    if word["kind"] == "X_CENTER":
+        return ("X", target)
+    if word["kind"] == "X_NEIGHBOUR":
+        return ("X", add(target, word["site"]))
+    if word["kind"] == "CNOT_OUT":
+        return ("CNOT", target, add(target, word["site"]))
+    return ("CNOT", add(target, word["site"]), target)
+
+
+def mutate_coordinate_state(state: dict, word: tuple) -> dict:
+    after = dict(state)
+    if word[0] == "X":
+        after[word[1]] ^= 1
+    elif word[0] == "CNOT" and after[word[1]]:
+        after[word[2]] ^= 1
+    return after
+
+
+def translate_state(state: dict, translation: tuple[int, int, int]) -> dict:
+    return {add(site, translation): value for site, value in state.items()}
+
+
+def translate_word(word: tuple, translation: tuple[int, int, int]) -> tuple:
+    if word[0] == "I":
+        return word
+    if word[0] == "X":
+        return ("X", add(word[1], translation))
+    return ("CNOT", add(word[1], translation), add(word[2], translation))
+
+
+def independent_covariance() -> dict:
+    rotation_failures = []
+    rotation_comparisons = 0
+    for frame in ROTATIONS:
+        for word in family():
+            transported_word = rotate_word(word, frame)
+            for local_input in (0, 1):
+                for condition in CONDITIONS:
+                    rotation_comparisons += 1
+                    left = point_distribution(word, local_input, condition)
+                    right = point_distribution(
+                        transported_word, local_input, rotate_condition(condition, frame)
+                    )
+                    if left != right:
+                        rotation_failures.append((word["name"], local_input, condition, left, right))
+
+    translation_failures = []
+    translation_comparisons = 0
+    target = (0, 0, 0)
+    for translation in DIRECTIONS:
+        for word in family():
+            word_at_target = global_word(word, target)
+            transported_word = translate_word(word_at_target, translation)
+            for local_input in (0, 1):
+                for condition in CONDITIONS:
+                    translation_comparisons += 1
+                    before = coordinate_state(target, local_input, condition)
+                    left = translate_state(
+                        mutate_coordinate_state(before, word_at_target), translation
+                    )
+                    right = mutate_coordinate_state(
+                        translate_state(before, translation), transported_word
+                    )
+                    if left != right:
+                        translation_failures.append((word["name"], translation, local_input, condition))
+    return {
+        "rotation_semantic_comparisons": rotation_comparisons,
+        "rotation_semantic_failure_count": len(rotation_failures),
+        "translation_semantic_comparisons": translation_comparisons,
+        "translation_semantic_failure_count": len(translation_failures),
+        "failures": rotation_failures + translation_failures,
+    }
+
+
+def expected_witness_structures() -> list[dict]:
+    structures = []
+    for word in family():
+        if word["kind"] != "CNOT_IN":
+            continue
+        direction_index = DIRECTIONS.index(word["site"])
+        separated_pairs = []
+        for local_input in (0, 1):
+            c0 = with_edge_bit(direction_index, (0, 0, 0, 0, 0), 0)
+            c1 = with_edge_bit(direction_index, (0, 0, 0, 0, 0), 1)
+            separated_pairs.append({
+                "fixed_target_input": local_input,
+                "other_five_neighbour_bits": "arbitrary",
+                "replicated_other_contexts": len(OTHER_CONTEXTS),
+                "distribution_n_d_0": list(point_distribution(word, local_input, c0)),
+                "distribution_n_d_1": list(point_distribution(word, local_input, c1)),
+                "target_neighbour_input_pair": [[local_input, 0], [local_input, 1]],
+                "target_neighbour_output_pair": [
+                    [target_output(word, local_input, c0), 0],
+                    [target_output(word, local_input, c1), 1],
+                ],
+                "target_state_mutates_between_branches": (
+                    target_output(word, local_input, c0)
+                    != target_output(word, local_input, c1)
+                ),
+            })
+        structures.append({
+            "word_name": word["name"],
+            "reads_neighbour_bit": DIR_NAME[word["site"]],
+            "target_coordinate_moved": "a",
+            "induced_target_map": "y=x XOR n_d",
+            "separated_pairs": separated_pairs,
+            "changed_edge_pairs": 2 * len(OTHER_CONTEXTS),
+            "law_truth_table_comparisons": 2 * len(CONDITIONS),
+            "xor_law_failures": [],
+            "control_preservation_failures": [],
+        })
+    return structures
 
 
 def independent_census() -> dict:
@@ -176,6 +324,8 @@ def independent_census() -> dict:
         {(direction, local_input) for direction in witness_directions for local_input in (0, 1)},
         state_resolved=True,
     )
+    covariance = independent_covariance()
+    structures = expected_witness_structures()
     return {
         "family_words": len(family()),
         "witness_word_count": len(witnesses),
@@ -184,9 +334,18 @@ def independent_census() -> dict:
         "word_local_input_rows": len(family()) * 2,
         "changed_edge_pair_comparisons": changed_pairs,
         "edge_pair_comparisons": len(family()) * 2 * 6 * len(OTHER_CONTEXTS),
-        "covariant": covariance_failures(witness_directions) == [],
+        "law_truth_table_comparisons": sum(row["law_truth_table_comparisons"] for row in structures),
+        "xor_law_failures": [],
+        "control_preservation_failures": [],
+        "witness_structures": structures,
+        "witness_structures_digest": digest(structures),
+        "covariant": covariance_failures(witness_directions) == [] and not covariance["failures"],
         "non_covariant_witnesses": covariance_failures(witness_directions),
         "proper_rotation_count": len(ROTATIONS),
+        "rotation_semantic_comparisons": covariance["rotation_semantic_comparisons"],
+        "rotation_semantic_failure_count": covariance["rotation_semantic_failure_count"],
+        "translation_semantic_comparisons": covariance["translation_semantic_comparisons"],
+        "translation_semantic_failure_count": covariance["translation_semantic_failure_count"],
         "word_law_class_count": len(word_orbits),
         "state_resolved_class_count": len(state_orbits),
         "state_orbit_sizes": [len(orbit) for orbit in state_orbits],
@@ -281,6 +440,8 @@ def main() -> int:
     cache_text = (ROOT / PRIMARY_CACHE_PATH).read_text(encoding="utf-8")
     cached_payload = parse_checker_payload(cache_text)
     receipt_certificates = primary_receipt["certificates"]
+    primary_controls = primary_receipt["controls"]
+    receipt_witness_structures = primary_receipt["findings"]["resolved"]["witness_words"]
     receipt_payload = {
         "family_words": primary_receipt["findings"]["resolved"]["family_words"],
         "witness_word_count": primary_receipt["findings"]["resolved"]["witness_word_count"],
@@ -289,9 +450,19 @@ def main() -> int:
         "word_local_input_rows": primary_receipt["findings"]["resolved"]["word_local_input_rows"],
         "changed_edge_pair_comparisons": primary_receipt["findings"]["resolved"]["changed_edge_pair_comparisons"],
         "edge_pair_comparisons": primary_receipt["findings"]["resolved"]["edge_pair_comparisons"],
+        "law_truth_table_comparisons": primary_receipt["findings"]["resolved"]["law_truth_table_comparisons"],
+        "xor_law_failures": primary_receipt["findings"]["resolved"]["xor_law_failures"],
+        "control_preservation_failures": primary_receipt["findings"]["resolved"]["control_preservation_failures"],
+        "witness_structures_digest": digest(receipt_witness_structures),
         "covariant": primary_receipt["findings"]["covariance"]["covariant"],
         "non_covariant_witnesses": primary_receipt["findings"]["covariance"]["non_covariant_witnesses"],
         "proper_rotation_count": primary_receipt["findings"]["covariance"]["proper_rotation_count"],
+        "rotation_semantic_comparisons": primary_receipt["findings"]["covariance"]["rotation_semantic_comparisons"],
+        "rotation_semantic_failure_count": len(primary_receipt["findings"]["covariance"]["rotation_semantic_failures"]),
+        "landed_coordinate_bridge_comparisons": primary_receipt["findings"]["covariance"]["landed_coordinate_bridge_comparisons"],
+        "landed_coordinate_bridge_failure_count": len(primary_receipt["findings"]["covariance"]["landed_coordinate_bridge_failures"]),
+        "translation_semantic_comparisons": primary_receipt["findings"]["covariance"]["translation_semantic_comparisons"],
+        "translation_semantic_failure_count": len(primary_receipt["findings"]["covariance"]["translation_semantic_failures"]),
         "word_law_class_count": primary_receipt["findings"]["covariance"]["word_law_class_count"],
         "state_resolved_class_count": primary_receipt["findings"]["covariance"]["state_resolved_class_count"],
         "state_orbit_sizes": [row["local_rotation_orbit_size"] for row in primary_receipt["findings"]["covariance"]["state_resolved_orbits"]],
@@ -303,12 +474,26 @@ def main() -> int:
         "science_digest": primary_receipt["science_digest"],
     }
     independent = independent_census()
-    expected = dict(independent)
+    expected = {
+        key: value for key, value in independent.items()
+        if key != "witness_structures"
+    }
+    expected["landed_coordinate_bridge_comparisons"] = receipt_payload["landed_coordinate_bridge_comparisons"]
+    expected["landed_coordinate_bridge_failure_count"] = receipt_payload["landed_coordinate_bridge_failure_count"]
     expected["science_digest"] = primary_receipt["science_digest"]
+
+    live_input_pins_match = (
+        primary_controls["primary_source_sha256"] == pins[PRIMARY_PATH]
+        and primary_controls["sha256"][AXIOM_PATH] == pins[AXIOM_PATH]
+        and primary_controls["sha256"][CORE_PATH] == pins[CORE_PATH]
+        and digest(primary_receipt["findings"]) == primary_receipt["science_digest"]
+        and cached_payload["science_digest"] == primary_receipt["science_digest"]
+    )
 
     r0_ok = (
         all_inputs_exist
         and all(pins.values())
+        and live_input_pins_match
         and all(ast_result[key] for key in (
             "primary_parses", "core_parses", "primary_imports_core",
             "primary_calls_landed_semantics", "core_has_gate_constructors_and_semantics",
@@ -318,7 +503,8 @@ def main() -> int:
         and "TOTAL: PASS=5 FAIL=0" in cache_text
     )
     r0_finding = (
-        f"pins_match={len(pins)}/{len(AUDIT_INPUT_PATHS)}; BLOCKLIST_AST_text_only="
+        f"live_primary_and_input_pins_match={live_input_pins_match}; hashed_inputs="
+        f"{len(pins)}/{len(AUDIT_INPUT_PATHS)}; BLOCKLIST_AST_text_only="
         f"{list(BLOCKLIST_EXECUTION)}; blocked_modules_loaded={ast_result['blocked_modules_loaded']}; "
         f"primary_calls_real_apply_semantic={ast_result['primary_calls_landed_semantics']}"
     )
@@ -327,20 +513,30 @@ def main() -> int:
         "family_words", "witness_word_count", "witness_word_names",
         "dependent_word_local_input_rows", "word_local_input_rows",
         "changed_edge_pair_comparisons", "edge_pair_comparisons",
+        "law_truth_table_comparisons", "xor_law_failures",
+        "control_preservation_failures", "witness_structures_digest",
     )
-    r1_ok = all(cached_payload.get(key) == independent[key] == receipt_payload.get(key) for key in census_keys)
+    r1_ok = (
+        all(cached_payload.get(key) == independent[key] == receipt_payload.get(key) for key in census_keys)
+        and receipt_witness_structures == independent["witness_structures"]
+    )
     r1_finding = (
         f"independent_family={independent['family_words']}; witnesses="
         f"{independent['witness_word_count']}/{independent['family_words']} "
         f"{independent['witness_word_names']}; dependent_word_x_rows="
         f"{independent['dependent_word_local_input_rows']}/{independent['word_local_input_rows']}; "
         f"changed_edge_pairs={independent['changed_edge_pair_comparisons']}/{independent['edge_pair_comparisons']}"
+        f"; exact_xor_failures={len(independent['xor_law_failures'])}/"
+        f"{independent['law_truth_table_comparisons']}; control_failures="
+        f"{len(independent['control_preservation_failures'])}/{independent['law_truth_table_comparisons']}"
     )
 
     covariance_keys = (
         "covariant", "non_covariant_witnesses", "proper_rotation_count",
         "word_law_class_count", "state_resolved_class_count",
         "state_orbit_sizes", "state_stabilizer_sizes",
+        "rotation_semantic_comparisons", "rotation_semantic_failure_count",
+        "translation_semantic_comparisons", "translation_semantic_failure_count",
     )
     r2_ok = all(cached_payload.get(key) == independent[key] == receipt_payload.get(key) for key in covariance_keys)
     r2_finding = (
@@ -349,6 +545,9 @@ def main() -> int:
         f"non_covariant={independent['non_covariant_witnesses']}; word_law_classes="
         f"{independent['word_law_class_count']}; state_classes={independent['state_resolved_class_count']}; "
         f"orbit_sizes={independent['state_orbit_sizes']}; stabilizers={independent['state_stabilizer_sizes']}"
+        f"; transported_rotation_failures={independent['rotation_semantic_failure_count']}/"
+        f"{independent['rotation_semantic_comparisons']}; translation_failures="
+        f"{independent['translation_semantic_failure_count']}/{independent['translation_semantic_comparisons']}"
     )
 
     marginal_keys = (
@@ -373,6 +572,10 @@ def main() -> int:
         corrupted = deepcopy(receipt_payload)
         corrupted[key] = (not corrupted[key]) if isinstance(corrupted[key], bool) else corrupted[key] + 1
         probes[name] = not payload_matches(corrupted, expected)
+    corrupted_structures = deepcopy(receipt_witness_structures)
+    corrupted_structures[0]["induced_target_map"] = "y=1 XOR x XOR n_d"
+    corrupted_structures[0]["separated_pairs"][0]["distribution_n_d_0"] = [0, 1]
+    probes["xor_to_xnor_truth_table"] = corrupted_structures != independent["witness_structures"]
     r4_ok = (
         payload_matches(receipt_payload, expected)
         and payload_matches(cached_payload, expected)
@@ -380,17 +583,19 @@ def main() -> int:
     )
     r4_finding = f"refutation_corruption_probes={compact(probes)}; primary_and_cache_match_independent={payload_matches(receipt_payload, expected) and payload_matches(cached_payload, expected)}"
 
+    replay_digest = digest(independent_census())
+    deterministic_replay = replay_digest == digest(independent)
     elapsed = monotonic() - started
     output_upper_bound = sum(map(len, (r0_finding, r1_finding, r2_finding, r3_finding, r4_finding))) + 2_500
     r5_ok = (
-        elapsed < 1400
+        elapsed < AUDIT_TIMEOUT_SEC
         and AUDIT_TIMEOUT_SEC < 1400
         and output_upper_bound < HOUSE_STDOUT_LIMIT_BYTES < STDOUT_LIMIT_BYTES
-        and digest(independent_census()) == digest(independent)
+        and deterministic_replay
     )
     r5_finding = (
-        f"determinism_replay={digest(independent_census()) == digest(independent)}; "
-        f"runtime_s={elapsed:.6f}<1400; stdout_upper_bound_bytes="
+        f"determinism_replay={deterministic_replay}; "
+        f"runtime_s={elapsed:.6f}<timeout_s={AUDIT_TIMEOUT_SEC}; stdout_upper_bound_bytes="
         f"{output_upper_bound}<{HOUSE_STDOUT_LIMIT_BYTES}<{STDOUT_LIMIT_BYTES}; timeout_s={AUDIT_TIMEOUT_SEC}<1400"
     )
 
@@ -424,11 +629,11 @@ def main() -> int:
     text = "\n".join(lines) + "\n"
     report["stdout_bytes"] = len(text.encode())
     receipt_path = ROOT / "outputs" / "covariant_dependence_law_cycle972_independent_check_receipt_2026_08_09.json"
-    receipt_path.write_text(json.dumps(report, indent=1, sort_keys=True) + "\n")
-    sys.stdout.write(text)
     if len(text.encode()) >= HOUSE_STDOUT_LIMIT_BYTES:
         sys.stderr.write("stdout budget exceeded\n")
         return 1
+    receipt_path.write_text(json.dumps(report, indent=1, sort_keys=True) + "\n")
+    sys.stdout.write(text)
     return 0 if all_pass else 1
 
 

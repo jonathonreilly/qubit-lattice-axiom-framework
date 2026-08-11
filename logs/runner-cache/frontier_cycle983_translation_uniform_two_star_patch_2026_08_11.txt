@@ -1,0 +1,19 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle983_translation_uniform_two_star_patch_2026_08_11.py
+runner_sha256: c4ff78125b1d82954acbcd7fd5e409abe61815bb64c75c1b2ca6a7aa24d6b51d
+input_fingerprint_sha256: db7786cde9df9554b9e925bd8927e6f129e0cdd1546e5ea349a31056104b73bb
+timeout_sec: 1400
+exit_code: 0
+elapsed_sec: 2.22
+status: ok
+----- stdout -----
+CYCLE983_TRANSLATION_UNIFORM_TWO_STAR_PATCH
+A_PATCH_CONSTRUCTION PASS :: patch=P2x_ADJACENT_TWO_CENTRE_CLOSED_STAR_PATCH; targets=2; support=12; overlap=2; instances=46
+B_UNIFORMITY_TEST PASS :: result=translation_uniform_on_every_target_site_of_P2x; sites=[["A",21,[["CNOT",6,[1]],["TOF_OPPOSITE_CONTROLS",3,[0]],["TOF_PERPENDICULAR_CONTROLS",12,[2]]],true],["B",21,[["CNOT",6,[1]],["TOF_OPPOSITE_CONTROLS",3,[0]],["TOF_PERPENDICULAR_CONTROLS",12,[2]]],true]]
+C_OVERLAP_CONSISTENCY PASS :: result=exact_agreement_on_all_shared_sites_and_pairs; shared_sites=2; shared_pairs=1
+D_VERDICT PASS :: verdict=TRANSLATION_UNIFORM_AT_PATCH_SCOPE; infinite_claimed=False; obstruction=null
+E_CONTROLS PASS :: source_reads=1<=6; pins=True; prior_ast_text=False; determinism=True; runtime_lt_1400=True
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

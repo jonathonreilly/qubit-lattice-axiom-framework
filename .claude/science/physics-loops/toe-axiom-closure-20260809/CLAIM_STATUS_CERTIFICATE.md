@@ -1232,8 +1232,9 @@ current repository no-go discipline.
   controlled five-file current-main overlay passes all 18 stages at checkpoint
   `bdd78a2e0b25`. Changed evidence is ready for Block 37 alone (`1/1`) and all
   37 stacked claims (`37/37`), with zero failures and zero control failures.
-  Science commit is `f571445246`; campaign conformance and delivery remain
-  pending.
+  Science commit is `f571445246`; campaign conformance is `6c9d65e56c`. PR
+  #6123 is open, mergeable, and `CLEAN`, stacked exactly on Block-36 delivery
+  head `9431cd5d47`; independent audit remains required.
 - Governance: finite coexistence is established; physical carrier/law
   selection, overlap/full-`Z^3`, displacement Ward/Bianchi, Einstein regime,
   Lorentzian update, and axiom necessity are not.

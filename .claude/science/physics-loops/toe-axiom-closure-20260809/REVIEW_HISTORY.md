@@ -1951,5 +1951,7 @@ instance or Fourier census.
   inherited stage-7 policy-epoch stop; the controlled five-file current-main
   overlay passes all 18 stages at checkpoint `bdd78a2e0b25`. Changed evidence
   is clean for `1/1` Block-37 and `37/37` stacked claims. Science commit is
-  `f571445246`; campaign conformance, push, and PR remain pending. No canonical
-  axiom, fixed percentage, or audit verdict is changed.
+  `f571445246`; campaign conformance is `6c9d65e56c`. PR #6123 is open,
+  mergeable, and `CLEAN`, stacked exactly on Block-36 delivery head
+  `9431cd5d47`; independent audit remains pending. No canonical axiom, fixed
+  percentage, or audit verdict is changed.

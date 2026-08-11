@@ -733,6 +733,8 @@ sector-deletion controls pass; direct repository conformance passes at graph
 runners and reaches only the inherited stage-7 dependency-policy epoch
 mismatch; the controlled five-file current-main overlay passes all 18 stages
 at checkpoint `bdd78a2e0b25`. Changed evidence is clean for `1/1` Block-37 and
-`37/37` stacked claims. Science commit is `f571445246`; campaign conformance,
-push, and stacked PR remain pending. Independent audit remains required. No
-canonical edit, percentage move, audit verdict, or `review-loop` is used.
+`37/37` stacked claims. Science commit is `f571445246`; campaign conformance
+checkpoint is `6c9d65e56c`. PR #6123 is open, mergeable, and `CLEAN`, stacked
+exactly on Block-36 delivery head `9431cd5d47`; independent audit remains
+required. No canonical edit, percentage move, audit verdict, or `review-loop`
+is used.

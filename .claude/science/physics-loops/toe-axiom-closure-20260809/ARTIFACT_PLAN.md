@@ -876,4 +876,6 @@ complete conditional nonlinear compact solution:
   overlay passes all 18 stages at checkpoint `bdd78a2e0b25`. Changed evidence
   is ready for Block 37 alone (`1/1`) and all 37 stacked claims (`37/37`), with
   zero failures and zero control failures. Science commit is `f571445246`;
-  campaign conformance, push, and stacked PR remain pending
+  campaign conformance is `6c9d65e56c`. PR #6123 is open, mergeable, and
+  `CLEAN`, stacked exactly on Block-36 delivery head `9431cd5d47`;
+  independent audit remains required

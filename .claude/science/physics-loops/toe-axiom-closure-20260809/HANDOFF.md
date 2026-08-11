@@ -1543,7 +1543,9 @@ runners before only the inherited stage-7 policy-epoch stop; the controlled
 five-file current-main overlay passes all 18 stages at checkpoint
 `bdd78a2e0b25`. Changed evidence is clean for Block 37 (`1/1`) and the complete
 stack (`37/37`). Science commit is `f571445246`; campaign conformance and
-delivery remain before the stacked PR.
+delivery checkpoint is `6c9d65e56c`. PR #6123 is open, mergeable, and `CLEAN`,
+stacked exactly on Block-36 delivery head `9431cd5d47`; independent audit
+remains required.
 
 The major scientific gain is a correction, not cosmetic packaging. The
 coframe-dual face bivector initially used is wrong for intrinsic spatial EC:

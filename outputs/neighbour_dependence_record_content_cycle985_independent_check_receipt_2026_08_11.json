@@ -2,15 +2,15 @@
   "artifact": "Cycle 985 independent record-content refutation attempt",
   "audit_status_authority": "independent audit lane only",
   "cache_semantic_fields": {
-    "elapsed_sec": "0.05",
+    "elapsed_sec": "0.09",
     "exit_code": "0",
     "input_fingerprint_sha256": "db7786cde9df9554b9e925bd8927e6f129e0cdd1546e5ea349a31056104b73bb",
     "runner": "scripts/frontier_cycle985_neighbour_dependence_record_content_2026_08_11.py",
-    "runner_sha256": "0e66cb4b11c38c78b03d0fab66b0218839005fe32e5c3daaf289eb64040714a2",
+    "runner_sha256": "3d66b2836743808119541536bf7562212a05da84f1149b9f5d5f12f47ff7eff8",
     "status": "ok",
     "timeout_sec": "300"
   },
-  "checker_source_sha256": "b7aa7dc7faa48635c1b5caf058bc0431d043a1de89ff64b92c84d022eb055ae4",
+  "checker_source_sha256": "d0f9790c0ae4274b719dda5fd5ecea977800ec9c0fe5f572b5a627351cd92bcf",
   "checks": {
     "R0_PRIMARY_AST_AND_PINS": true,
     "R1_INDEPENDENT_CONTENT_CENSUS": true,
@@ -21,14 +21,14 @@
   },
   "controls": {
     "input_git_blobs": {
-      "logs/runner-cache/frontier_cycle985_neighbour_dependence_record_content_2026_08_11.txt": "eb43550c7e2dc8c052c5c72bf4cb4ef99ac7c92a",
-      "outputs/neighbour_dependence_record_content_cycle985_receipt_2026_08_11.json": "6e452a1d1d4c7cc3d6da44e19a0a06d1c397ee54",
-      "scripts/frontier_cycle985_neighbour_dependence_record_content_2026_08_11.py": "fa28d8b343ef67c45cf24e299dddc0a290d6e6f4"
+      "logs/runner-cache/frontier_cycle985_neighbour_dependence_record_content_2026_08_11.txt": "9b5fb7a36b4d459018e61fd60b78d9756f206aa0",
+      "outputs/neighbour_dependence_record_content_cycle985_receipt_2026_08_11.json": "ecc58ae8c8596ab79a1561609394556496b3ea7c",
+      "scripts/frontier_cycle985_neighbour_dependence_record_content_2026_08_11.py": "879ec075d166640df91db3fb6900ddb25cc84ebd"
     },
     "input_sha256": {
-      "logs/runner-cache/frontier_cycle985_neighbour_dependence_record_content_2026_08_11.txt": "4f3d9f1299d29862a23330f491965a795bdf9755ce5b8bad406e190edfc9963f",
-      "outputs/neighbour_dependence_record_content_cycle985_receipt_2026_08_11.json": "ae6b337dad743eb2ddc389f4be055e35c9c2a4b7306003e0548ffc66f21ec6d1",
-      "scripts/frontier_cycle985_neighbour_dependence_record_content_2026_08_11.py": "0e66cb4b11c38c78b03d0fab66b0218839005fe32e5c3daaf289eb64040714a2"
+      "logs/runner-cache/frontier_cycle985_neighbour_dependence_record_content_2026_08_11.txt": "96cc997b88501192e926e8999758a8c8c5ae0044ccfa559c95b92c71405a1810",
+      "outputs/neighbour_dependence_record_content_cycle985_receipt_2026_08_11.json": "570332f2bd8b491f6c39a9d4bbcec701b23304ba9a6f493f3f957b562fc00d01",
+      "scripts/frontier_cycle985_neighbour_dependence_record_content_2026_08_11.py": "3d66b2836743808119541536bf7562212a05da84f1149b9f5d5f12f47ff7eff8"
     },
     "literal_audit_input_paths": [
       "scripts/frontier_cycle985_neighbour_dependence_record_content_2026_08_11.py",
@@ -39,9 +39,9 @@
     "primary_imported_or_executed": false,
     "runtime_budget_met": true,
     "runtime_budget_seconds": 300,
-    "stdout_bytes": 582,
+    "stdout_bytes": 583,
     "stdout_limit_bytes": 6000,
-    "synthetic_negative_outcome_accepted": true
+    "synthetic_agreement_outcome_accepted": true
   },
   "corruption_probes": {
     "cached_headline": true,
@@ -99,20 +99,21 @@
           1
         ]
       ],
+      "basis_agreement_iff_contents_equal": true,
       "family": "R^{{0,1}}, extended by finite sums",
-      "no_separator_iff_contents_equal": true,
       "outcome": "SEPARATING_ADMISSIBLE_READOUT_EXISTS",
-      "pair_count": 10
+      "pair_count": 10,
+      "visible_pair_count": 10
     },
-    "reconstruction_digest": "d9eb289439fc2bdf630cfdaeae10066862bb47d410d77850ee858abef7f551ca"
+    "reconstruction_digest": "2c934019462cdb2f9711a86c59d6ae08376cd3a993b64564c6604b1d40b7abca"
   },
   "pass": true,
   "primary_ast_and_pins": {
     "primary_has_main_guard": true,
     "primary_reads_only_axiom": true,
-    "source_git_blob": "fa28d8b343ef67c45cf24e299dddc0a290d6e6f4",
+    "source_git_blob": "879ec075d166640df91db3fb6900ddb25cc84ebd",
     "source_pin_match": true,
-    "source_sha256": "0e66cb4b11c38c78b03d0fab66b0218839005fe32e5c3daaf289eb64040714a2"
+    "source_sha256": "3d66b2836743808119541536bf7562212a05da84f1149b9f5d5f12f47ff7eff8"
   },
-  "stdout_sha256": "33cc7848093d7e8856d894673590bb9d6c15bf0c688fd1f4214eba8baddf1371"
+  "stdout_sha256": "0a7ac7c8f7d6c48e15a4e3e5506e71166e9dee83001dc14ea6d37059dbae23b5"
 }

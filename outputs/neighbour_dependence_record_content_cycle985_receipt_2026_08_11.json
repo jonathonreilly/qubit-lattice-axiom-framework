@@ -28,9 +28,9 @@
     "runtime_budget_met": true,
     "runtime_budget_seconds": 300,
     "sha_pins_match": true,
-    "stdout_bytes": 518,
+    "stdout_bytes": 519,
     "stdout_limit_bytes": 6000,
-    "synthetic_negative_visibility_accepted": true
+    "synthetic_agreement_outcome_accepted": true
   },
   "cycle": 985,
   "findings": {
@@ -40,7 +40,28 @@
         "opposite-control TOF": 0,
         "perpendicular-control TOF": 2
       },
-      "all_separated_pairs_flip_locked_content": true,
+      "M2C_possibility_embedding": {
+        "P_0": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "P_1": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      },
       "class_count": 3,
       "classes": [
         {
@@ -49,9 +70,11 @@
           "controls": [
             "+x"
           ],
+          "group_order": 24,
           "induced_target_law": "y=x XOR n_(+x)",
-          "one_neighbour_bit_separations": [
+          "one_neighbour_bit_edges": [
             {
+              "changes_locked_content": true,
               "configuration_after": {
                 "+x": 1
               },
@@ -63,6 +86,7 @@
               "target_input": 0
             },
             {
+              "changes_locked_content": true,
               "configuration_after": {
                 "+x": 1
               },
@@ -74,7 +98,35 @@
               "target_input": 1
             }
           ],
+          "one_neighbour_bit_separations": [
+            {
+              "changes_locked_content": true,
+              "configuration_after": {
+                "+x": 1
+              },
+              "configuration_before": {
+                "+x": 0
+              },
+              "content_after": 1,
+              "content_before": 0,
+              "target_input": 0
+            },
+            {
+              "changes_locked_content": true,
+              "configuration_after": {
+                "+x": 1
+              },
+              "configuration_before": {
+                "+x": 0
+              },
+              "content_after": 0,
+              "content_before": 1,
+              "target_input": 1
+            }
+          ],
+          "orbit_digest": "4639b741864ba017b5be524dfbd7759bd8011a54830b2c32685123ce7ca64c91",
           "orbit_size": 6,
+          "orbit_stabilizer_product": 24,
           "representative": "CNOT(+x->C)",
           "stabilizer": 4,
           "table": [
@@ -86,6 +138,24 @@
                 "0": 0,
                 "1": 1
               },
+              "locked_possibility_by_target_input": {
+                "0": "P_0",
+                "1": "P_1"
+              },
+              "output_bit_by_target_input": {
+                "0": 0,
+                "1": 1
+              },
+              "point_mass_distribution_by_target_input": {
+                "0": {
+                  "P_0": 1,
+                  "P_1": 0
+                },
+                "1": {
+                  "P_0": 0,
+                  "P_1": 1
+                }
+              },
               "spectator_neighbours": "arbitrary"
             },
             {
@@ -95,6 +165,24 @@
               "locked_content_by_target_input": {
                 "0": 1,
                 "1": 0
+              },
+              "locked_possibility_by_target_input": {
+                "0": "P_1",
+                "1": "P_0"
+              },
+              "output_bit_by_target_input": {
+                "0": 1,
+                "1": 0
+              },
+              "point_mass_distribution_by_target_input": {
+                "0": {
+                  "P_0": 0,
+                  "P_1": 1
+                },
+                "1": {
+                  "P_0": 1,
+                  "P_1": 0
+                }
               },
               "spectator_neighbours": "arbitrary"
             }
@@ -107,9 +195,39 @@
             "+x",
             "+y"
           ],
+          "group_order": 24,
           "induced_target_law": "y=x XOR (n_1 AND n_2)",
-          "one_neighbour_bit_separations": [
+          "one_neighbour_bit_edges": [
             {
+              "changes_locked_content": false,
+              "configuration_after": {
+                "+x": 0,
+                "+y": 1
+              },
+              "configuration_before": {
+                "+x": 0,
+                "+y": 0
+              },
+              "content_after": 0,
+              "content_before": 0,
+              "target_input": 0
+            },
+            {
+              "changes_locked_content": false,
+              "configuration_after": {
+                "+x": 1,
+                "+y": 0
+              },
+              "configuration_before": {
+                "+x": 0,
+                "+y": 0
+              },
+              "content_after": 0,
+              "content_before": 0,
+              "target_input": 0
+            },
+            {
+              "changes_locked_content": true,
               "configuration_after": {
                 "+x": 1,
                 "+y": 1
@@ -123,6 +241,7 @@
               "target_input": 0
             },
             {
+              "changes_locked_content": true,
               "configuration_after": {
                 "+x": 1,
                 "+y": 1
@@ -136,6 +255,35 @@
               "target_input": 0
             },
             {
+              "changes_locked_content": false,
+              "configuration_after": {
+                "+x": 0,
+                "+y": 1
+              },
+              "configuration_before": {
+                "+x": 0,
+                "+y": 0
+              },
+              "content_after": 1,
+              "content_before": 1,
+              "target_input": 1
+            },
+            {
+              "changes_locked_content": false,
+              "configuration_after": {
+                "+x": 1,
+                "+y": 0
+              },
+              "configuration_before": {
+                "+x": 0,
+                "+y": 0
+              },
+              "content_after": 1,
+              "content_before": 1,
+              "target_input": 1
+            },
+            {
+              "changes_locked_content": true,
               "configuration_after": {
                 "+x": 1,
                 "+y": 1
@@ -149,6 +297,7 @@
               "target_input": 1
             },
             {
+              "changes_locked_content": true,
               "configuration_after": {
                 "+x": 1,
                 "+y": 1
@@ -162,7 +311,67 @@
               "target_input": 1
             }
           ],
+          "one_neighbour_bit_separations": [
+            {
+              "changes_locked_content": true,
+              "configuration_after": {
+                "+x": 1,
+                "+y": 1
+              },
+              "configuration_before": {
+                "+x": 0,
+                "+y": 1
+              },
+              "content_after": 1,
+              "content_before": 0,
+              "target_input": 0
+            },
+            {
+              "changes_locked_content": true,
+              "configuration_after": {
+                "+x": 1,
+                "+y": 1
+              },
+              "configuration_before": {
+                "+x": 1,
+                "+y": 0
+              },
+              "content_after": 1,
+              "content_before": 0,
+              "target_input": 0
+            },
+            {
+              "changes_locked_content": true,
+              "configuration_after": {
+                "+x": 1,
+                "+y": 1
+              },
+              "configuration_before": {
+                "+x": 0,
+                "+y": 1
+              },
+              "content_after": 0,
+              "content_before": 1,
+              "target_input": 1
+            },
+            {
+              "changes_locked_content": true,
+              "configuration_after": {
+                "+x": 1,
+                "+y": 1
+              },
+              "configuration_before": {
+                "+x": 1,
+                "+y": 0
+              },
+              "content_after": 0,
+              "content_before": 1,
+              "target_input": 1
+            }
+          ],
+          "orbit_digest": "7c0a2c677245450d8dbac353df443050eb72a4ca81e51149c2f214b5ae6b3ff6",
           "orbit_size": 12,
+          "orbit_stabilizer_product": 24,
           "representative": "TOF(+x,+y->C)",
           "stabilizer": 2,
           "table": [
@@ -175,6 +384,24 @@
                 "0": 0,
                 "1": 1
               },
+              "locked_possibility_by_target_input": {
+                "0": "P_0",
+                "1": "P_1"
+              },
+              "output_bit_by_target_input": {
+                "0": 0,
+                "1": 1
+              },
+              "point_mass_distribution_by_target_input": {
+                "0": {
+                  "P_0": 1,
+                  "P_1": 0
+                },
+                "1": {
+                  "P_0": 0,
+                  "P_1": 1
+                }
+              },
               "spectator_neighbours": "arbitrary"
             },
             {
@@ -185,6 +412,24 @@
               "locked_content_by_target_input": {
                 "0": 0,
                 "1": 1
+              },
+              "locked_possibility_by_target_input": {
+                "0": "P_0",
+                "1": "P_1"
+              },
+              "output_bit_by_target_input": {
+                "0": 0,
+                "1": 1
+              },
+              "point_mass_distribution_by_target_input": {
+                "0": {
+                  "P_0": 1,
+                  "P_1": 0
+                },
+                "1": {
+                  "P_0": 0,
+                  "P_1": 1
+                }
               },
               "spectator_neighbours": "arbitrary"
             },
@@ -197,6 +442,24 @@
                 "0": 0,
                 "1": 1
               },
+              "locked_possibility_by_target_input": {
+                "0": "P_0",
+                "1": "P_1"
+              },
+              "output_bit_by_target_input": {
+                "0": 0,
+                "1": 1
+              },
+              "point_mass_distribution_by_target_input": {
+                "0": {
+                  "P_0": 1,
+                  "P_1": 0
+                },
+                "1": {
+                  "P_0": 0,
+                  "P_1": 1
+                }
+              },
               "spectator_neighbours": "arbitrary"
             },
             {
@@ -207,6 +470,24 @@
               "locked_content_by_target_input": {
                 "0": 1,
                 "1": 0
+              },
+              "locked_possibility_by_target_input": {
+                "0": "P_1",
+                "1": "P_0"
+              },
+              "output_bit_by_target_input": {
+                "0": 1,
+                "1": 0
+              },
+              "point_mass_distribution_by_target_input": {
+                "0": {
+                  "P_0": 0,
+                  "P_1": 1
+                },
+                "1": {
+                  "P_0": 1,
+                  "P_1": 0
+                }
               },
               "spectator_neighbours": "arbitrary"
             }
@@ -219,9 +500,39 @@
             "+x",
             "-x"
           ],
+          "group_order": 24,
           "induced_target_law": "y=x XOR (n_1 AND n_2)",
-          "one_neighbour_bit_separations": [
+          "one_neighbour_bit_edges": [
             {
+              "changes_locked_content": false,
+              "configuration_after": {
+                "+x": 0,
+                "-x": 1
+              },
+              "configuration_before": {
+                "+x": 0,
+                "-x": 0
+              },
+              "content_after": 0,
+              "content_before": 0,
+              "target_input": 0
+            },
+            {
+              "changes_locked_content": false,
+              "configuration_after": {
+                "+x": 1,
+                "-x": 0
+              },
+              "configuration_before": {
+                "+x": 0,
+                "-x": 0
+              },
+              "content_after": 0,
+              "content_before": 0,
+              "target_input": 0
+            },
+            {
+              "changes_locked_content": true,
               "configuration_after": {
                 "+x": 1,
                 "-x": 1
@@ -235,6 +546,7 @@
               "target_input": 0
             },
             {
+              "changes_locked_content": true,
               "configuration_after": {
                 "+x": 1,
                 "-x": 1
@@ -248,6 +560,35 @@
               "target_input": 0
             },
             {
+              "changes_locked_content": false,
+              "configuration_after": {
+                "+x": 0,
+                "-x": 1
+              },
+              "configuration_before": {
+                "+x": 0,
+                "-x": 0
+              },
+              "content_after": 1,
+              "content_before": 1,
+              "target_input": 1
+            },
+            {
+              "changes_locked_content": false,
+              "configuration_after": {
+                "+x": 1,
+                "-x": 0
+              },
+              "configuration_before": {
+                "+x": 0,
+                "-x": 0
+              },
+              "content_after": 1,
+              "content_before": 1,
+              "target_input": 1
+            },
+            {
+              "changes_locked_content": true,
               "configuration_after": {
                 "+x": 1,
                 "-x": 1
@@ -261,6 +602,7 @@
               "target_input": 1
             },
             {
+              "changes_locked_content": true,
               "configuration_after": {
                 "+x": 1,
                 "-x": 1
@@ -274,7 +616,67 @@
               "target_input": 1
             }
           ],
+          "one_neighbour_bit_separations": [
+            {
+              "changes_locked_content": true,
+              "configuration_after": {
+                "+x": 1,
+                "-x": 1
+              },
+              "configuration_before": {
+                "+x": 0,
+                "-x": 1
+              },
+              "content_after": 1,
+              "content_before": 0,
+              "target_input": 0
+            },
+            {
+              "changes_locked_content": true,
+              "configuration_after": {
+                "+x": 1,
+                "-x": 1
+              },
+              "configuration_before": {
+                "+x": 1,
+                "-x": 0
+              },
+              "content_after": 1,
+              "content_before": 0,
+              "target_input": 0
+            },
+            {
+              "changes_locked_content": true,
+              "configuration_after": {
+                "+x": 1,
+                "-x": 1
+              },
+              "configuration_before": {
+                "+x": 0,
+                "-x": 1
+              },
+              "content_after": 0,
+              "content_before": 1,
+              "target_input": 1
+            },
+            {
+              "changes_locked_content": true,
+              "configuration_after": {
+                "+x": 1,
+                "-x": 1
+              },
+              "configuration_before": {
+                "+x": 1,
+                "-x": 0
+              },
+              "content_after": 0,
+              "content_before": 1,
+              "target_input": 1
+            }
+          ],
+          "orbit_digest": "648bb06d2acc7198d0a53b4ec2b58141a6a8ea153d8ce047f7f297dd2e741af4",
           "orbit_size": 3,
+          "orbit_stabilizer_product": 24,
           "representative": "TOF(+x,-x->C)",
           "stabilizer": 8,
           "table": [
@@ -287,6 +689,24 @@
                 "0": 0,
                 "1": 1
               },
+              "locked_possibility_by_target_input": {
+                "0": "P_0",
+                "1": "P_1"
+              },
+              "output_bit_by_target_input": {
+                "0": 0,
+                "1": 1
+              },
+              "point_mass_distribution_by_target_input": {
+                "0": {
+                  "P_0": 1,
+                  "P_1": 0
+                },
+                "1": {
+                  "P_0": 0,
+                  "P_1": 1
+                }
+              },
               "spectator_neighbours": "arbitrary"
             },
             {
@@ -297,6 +717,24 @@
               "locked_content_by_target_input": {
                 "0": 0,
                 "1": 1
+              },
+              "locked_possibility_by_target_input": {
+                "0": "P_0",
+                "1": "P_1"
+              },
+              "output_bit_by_target_input": {
+                "0": 0,
+                "1": 1
+              },
+              "point_mass_distribution_by_target_input": {
+                "0": {
+                  "P_0": 1,
+                  "P_1": 0
+                },
+                "1": {
+                  "P_0": 0,
+                  "P_1": 1
+                }
               },
               "spectator_neighbours": "arbitrary"
             },
@@ -309,6 +747,24 @@
                 "0": 0,
                 "1": 1
               },
+              "locked_possibility_by_target_input": {
+                "0": "P_0",
+                "1": "P_1"
+              },
+              "output_bit_by_target_input": {
+                "0": 0,
+                "1": 1
+              },
+              "point_mass_distribution_by_target_input": {
+                "0": {
+                  "P_0": 1,
+                  "P_1": 0
+                },
+                "1": {
+                  "P_0": 0,
+                  "P_1": 1
+                }
+              },
               "spectator_neighbours": "arbitrary"
             },
             {
@@ -320,6 +776,24 @@
                 "0": 1,
                 "1": 0
               },
+              "locked_possibility_by_target_input": {
+                "0": "P_1",
+                "1": "P_0"
+              },
+              "output_bit_by_target_input": {
+                "0": 1,
+                "1": 0
+              },
+              "point_mass_distribution_by_target_input": {
+                "0": {
+                  "P_0": 0,
+                  "P_1": 1
+                },
+                "1": {
+                  "P_0": 1,
+                  "P_1": 0
+                }
+              },
               "spectator_neighbours": "arbitrary"
             }
           ]
@@ -330,7 +804,12 @@
         0,
         1
       ],
+      "distribution_construction": "for each fixed target input and representative law, mu(P_y|n)=1 and mu(P_(1-y)|n)=0; Record locks the unique supported P_y",
+      "locked_content_support_failures": 0,
+      "point_mass_normalization_failures": 0,
+      "proper_cubic_group_order": 24,
       "spectator_neighbours": "arbitrary in every displayed row",
+      "target_input_role": "fixed supplied parameter for each finite conditioned law, not an additional varying neighbour coordinate",
       "witness_multiplicity": 21
     },
     "B_READOUT_VISIBILITY": {
@@ -356,6 +835,7 @@
                 "readout": "I_one"
               }
             ],
+            "changes_locked_content": true,
             "class": "incoming CNOT",
             "configuration_after": {
               "+x": 1
@@ -382,6 +862,7 @@
                 "readout": "I_one"
               }
             ],
+            "changes_locked_content": true,
             "class": "incoming CNOT",
             "configuration_after": {
               "+x": 1
@@ -408,6 +889,7 @@
                 "readout": "I_one"
               }
             ],
+            "changes_locked_content": true,
             "class": "perpendicular-control TOF",
             "configuration_after": {
               "+x": 1,
@@ -436,6 +918,7 @@
                 "readout": "I_one"
               }
             ],
+            "changes_locked_content": true,
             "class": "perpendicular-control TOF",
             "configuration_after": {
               "+x": 1,
@@ -464,6 +947,7 @@
                 "readout": "I_one"
               }
             ],
+            "changes_locked_content": true,
             "class": "perpendicular-control TOF",
             "configuration_after": {
               "+x": 1,
@@ -492,6 +976,7 @@
                 "readout": "I_one"
               }
             ],
+            "changes_locked_content": true,
             "class": "perpendicular-control TOF",
             "configuration_after": {
               "+x": 1,
@@ -520,6 +1005,7 @@
                 "readout": "I_one"
               }
             ],
+            "changes_locked_content": true,
             "class": "opposite-control TOF",
             "configuration_after": {
               "+x": 1,
@@ -548,6 +1034,7 @@
                 "readout": "I_one"
               }
             ],
+            "changes_locked_content": true,
             "class": "opposite-control TOF",
             "configuration_after": {
               "+x": 1,
@@ -576,6 +1063,7 @@
                 "readout": "I_one"
               }
             ],
+            "changes_locked_content": true,
             "class": "opposite-control TOF",
             "configuration_after": {
               "+x": 1,
@@ -604,6 +1092,7 @@
                 "readout": "I_one"
               }
             ],
+            "changes_locked_content": true,
             "class": "opposite-control TOF",
             "configuration_after": {
               "+x": 1,
@@ -727,21 +1216,24 @@
       "selection_boundary": "the Record axiom permits this separating readout but does not select it or require every admissible readout to separate the contents"
     },
     "C_SCOPE": {
+      "binary_M2C_embedding_declared_not_unique": true,
       "born_weight_selection_claimed": false,
       "continuous_M2_probability_law_claimed": false,
-      "established": "at this cap, each separated neighbour pair changes locked basis content and is visible to the explicit additive I_one readout",
+      "established": "in the declared P0/P1 point-mass construction, the exact changing neighbour edges change the unique supported locked content and I_one reads it",
       "formation_site_probability_or_rate_claimed": false,
       "full_mosaic_claimed": false,
-      "generic_axiom_boundary": "distribution variation alone need not force disjoint supports or a different realized draw; the positive result uses the declared deterministic witness laws",
+      "generic_axiom_boundary": "distribution variation alone need not force disjoint supports or a different realized draw; the positive result uses the declared P0/P1 point-mass laws",
       "generic_axiom_only_consequence_claimed": false,
       "infinite_simultaneous_translation_uniform_law_claimed": false,
+      "point_mass_distribution_constructed_at_finite_cap": true,
       "selected_physical_readout_claimed": false,
+      "target_input_fixed_per_conditioned_law": true,
       "tested": "one forming target record at a time on the binary radius-one true-Z3 star, for the three finite deterministic witness classes"
     }
   },
-  "integrity_policy": "checks gate construction and reconciliation only; a coherent no-separator outcome passes the same visibility validator",
+  "integrity_policy": "checks gate construction and reconciliation only; a coherent family-wide agreement outcome passes the same top-level visibility validator",
   "pass": true,
-  "primary_source_sha256": "0e66cb4b11c38c78b03d0fab66b0218839005fe32e5c3daaf289eb64040714a2",
-  "science_digest": "3705c06e7f04cd6b47f1aca1c6d6f16f57367a27ad76a7ea9cd9b826b2ea33b9",
-  "stdout_sha256": "827a15c4268161e1f81355807636474f8b315b195f8062a12a0c79b621e9e345"
+  "primary_source_sha256": "3d66b2836743808119541536bf7562212a05da84f1149b9f5d5f12f47ff7eff8",
+  "science_digest": "7781fa723e6633f11046cef81ae8e69e45fe43b6989f2f6b47e9afb60dfeb45a",
+  "stdout_sha256": "4f684435699e3aba6a2279a5bb32f013671861cf8e446a5e5da79e5f34c800b4"
 }

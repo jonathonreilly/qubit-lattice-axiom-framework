@@ -1,0 +1,19 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle983_translation_uniform_two_star_patch_independent_check_2026_08_11.py
+runner_sha256: 102e5b16888d1522dd45f33386f423c8b61a9af88c5668aa28f0ffb174656e09
+input_fingerprint_sha256: 64b29f1f94fcc7978122c3f55ad0389d55bcea1dab9b898a2de0e93d8fee23d0
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+CYCLE983_TRANSLATION_UNIFORM_TWO_STAR_PATCH_INDEPENDENT_CHECK
+A_INDEPENDENT_RECONSTRUCTION PASS :: targets=2; support=12; witnesses=[21, 21]; agreement=True
+B_REFUTATION_POWER PASS :: rejected=13/13; outcome_neutral=[true,true]
+C_ARTIFACT_BINDING PASS :: pins=True; clean_bookkeeping=True
+D_PROVENANCE PASS :: primary_imported=False; cycle719_imported=False; prior_cycles_executed=False
+E_CONTROLS PASS :: source_reads=3<=6; determinism=True; runtime_lt_300=True
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

@@ -562,6 +562,24 @@ stationary Ward connection, and Lorentzian nonlinear update. Candidate wording
 is unadopted; fixed TOE percentages and canonical axioms remain unchanged. No
 `review-loop` is used.
 
+Block 39 promotes the supplied ten-label law from finite overlap to a unique
+full-`Z^3` Record phase conditional on any fixed nondegenerate geometry. It
+also closes the homogeneous flat periodic connection equation by independently
+canceling geometry-square, endpoint-exchange bond, and periodic EC-curl first
+variations, while translating the exact Bianchi word to all 27 `L=3` cubes.
+One supplied positive zero-sum marginal produces a pure-mode `sin(k)` EC
+connection load, so the curvature coupling remains load-bearing off the
+homogeneous phase.
+
+Reachability remains `upstream_support`, not direct TOE closure. The result
+does not integrate coframes/links, solve their coframe equation, derive a
+base-displacement Ward identity, establish the gauge-quotiented Einstein
+tensor, select the extensional Admissibility law, or supply Lorentzian
+permanent-Record evolution. The next trace gate is the coupled periodic
+coframe/link Hessian and connection elimination of this same law. Candidate
+wording is unadopted; fixed TOE percentages and canonical axioms remain
+unchanged. No `review-loop` is used.
+
 Block 31 instantiates a null-relative Record edge-score family, exact spatial
 product restrictions, and a rank-one metric-stress compiler. It refines the
 Block-30 ten-channel residual into nine constant-metric shape stresses plus

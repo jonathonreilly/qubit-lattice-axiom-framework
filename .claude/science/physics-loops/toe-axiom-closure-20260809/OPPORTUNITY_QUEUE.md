@@ -282,3 +282,18 @@ or calls an internal-frame/Bianchi identity a displacement or Einstein law.
 
 Efficiency rule: reuse the fixed carrier and exact Bianchi word. Do not spend
 another block on open-boundary well fitting or one-parameter stationarity.
+
+## Post-Block-39 Priority Refresh
+
+| Rank | Target | Exact next witness | Why now |
+|---:|---|---|---|
+| 1 | coupled periodic coframe/link Einstein discriminator | same-law Hessian at the flat phase, exact internal-frame null space, Schur elimination of the connection, base-displacement Ward rank, two-derivative tensor, and the zero-sum source response | Record phase, Bianchi, flat connection, and first-order source loading now close; this is the shortest remaining gravity decision |
+| 2 | Record-derived carrier and extensional law selection | derive the nondegenerate geometry observable, transport, measure, coefficients, and source meaning from Admissibility/Record content, or state the sufficient unadopted downstream interface | mathematical consistency is now strong enough that physical selection is the dominant axiom pressure |
+| 3 | continuous joint geometry phase and coframe stationarity | uniform coframe moment/tightness bound, one selected homogeneous stationary target, and uniqueness/phase analysis after integrating links/coframes | Dobrushin closes only the discrete conditional block |
+| 4 | Lorentzian permanent-Record evolution | selected `Z^3 x Z_tau` or autonomous update, constraint propagation, causal cone, and Record preservation | every current closure remains Euclidean and spatial |
+| 5 | other TOE roots | resume the strongest Born/history or causal-time root if the coupled gravity quotient saturates | keeps total campaign value high without abandoning the lowest lane |
+
+Efficiency rule: do not repeat phase, Bianchi, or first-order source scans.
+Reuse the exact periodic carrier and spend the next block only on the coupled
+Hessian/quotient; stop if a candidate inserts an unselected stiffness or
+projects out a mode by hand.

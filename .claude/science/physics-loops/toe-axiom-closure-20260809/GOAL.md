@@ -1222,3 +1222,19 @@ source and compute the nonuniform displacement/Einstein response. Physical
 selection of the carrier, measure, coefficients, and boundary state remains
 the axiom pressure. No fifth axiom is yet necessary; fixed percentages remain
 unchanged.
+
+Block 39 completes the periodic fixed-background target more strongly than
+expected. The discrete ten-label Record specification is in a universal
+Dobrushin uniqueness window, so boundary-state selection is no longer open in
+that conditional sector. Periodic incidence removes the flat EC tadpole,
+endpoint exchange removes the bond tadpole, every translated elementary
+Bianchi word closes, and one zero-sum marginal loads the connection with the
+exact first-difference Fourier symbol.
+
+The highest-value next goal is the coupled periodic coframe/link Hessian of
+this same law. Gauge-quotient the internal-frame directions, eliminate the
+connection, and decide whether the resulting coframe/source operator has the
+base-displacement Ward identity and universal two-derivative Einstein/Regge
+structure. Separately retain the continuous joint-phase, Record-to-geometry
+law-selection, and Lorentzian permanent-Record obligations. No fifth axiom is
+yet necessary; fixed percentages remain unchanged.

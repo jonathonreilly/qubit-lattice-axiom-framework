@@ -916,3 +916,27 @@ complete conditional nonlinear compact solution:
   mergeable, and `CLEAN`, stacked exactly on Block-37 delivery head
   `cb107d8a84`; independent audit remains required. No canonical edit, fixed
   percentage move, or audit verdict occurs
+
+## Block 39 — Periodic Record Phase / Flat Connection / Source Boundary
+
+- theorem note:
+  `docs/ADMISSIBILITY_PERIODIC_RECORD_EC_DOBRUSHIN_FLAT_CONNECTION_SOURCE_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-11.md`
+- runner/cache:
+  `scripts/admissibility_periodic_record_ec_dobrushin_flat_connection_source_2026_08_11.py`
+  and its source/input-pinned cache
+- exact theorem: rank-one projector distances give the universal six-neighbor
+  Dobrushin row sum `0.598007968<1` at `beta=1/5`, so the ten-label Record
+  specification has one full-`Z^3` phase for every fixed nondegenerate
+  geometry background
+- periodic connection: all 27 translated generic Bianchi identities close;
+  endpoint-exchange bond score, periodic EC curl, and geometry-square first
+  variations assemble to flat all-link max/norm
+  `5.573e-17/4.083e-16` across 486 tangents
+- source carrier: one positive zero-sum marginal has only the injected
+  `plus/minus 2pi/L` modes and exact `sin(2pi/L)` RMS scaling on
+  `L=3,5,7,9,11,15`; it is not promoted to Einstein dynamics
+- current evidence: fresh cache `PASS=20 FAIL=0` in `5.18 s`, stdout `4,983`
+  characters; runner-free numerical-action reconstruction `PASS=6 FAIL=0`;
+  citation registration `5,485/15,675`, out-degree two. Direct repository
+  conformance, science commit, full pipeline, push, and stacked PR remain
+  pending. No canonical edit, fixed percentage move, or audit verdict occurs.

@@ -1307,3 +1307,31 @@ lines are in the landing primary cache.
   Science commit is `3c94b3fa79`; campaign conformance is `c2cd76dc49`.
   PR #6124 is open, mergeable, and `CLEAN`, stacked exactly on Block-37
   delivery head `cb107d8a84`; independent audit remains required.
+
+## Block 39 Periodic Phase / Flat Connection / Source Certificate
+
+- Claim type: `bounded_theorem`; exact fixed-background phase and connection
+  identities plus a supplied source-carrier calculation.
+- Record phase: `log K` has universal width at most `beta`; one-neighbor
+  influence is at most `tanh(beta/2)`. At `beta=1/5`, the six-neighbor row sum
+  is `0.598007968<1`, below threshold `beta=0.336472237`.
+- Flat reconstruction: exact ten-label oscillation `0.380725758`, sharper row
+  sum `0.569370271`, and deterministic conditional TV maximum `0.029258813`.
+- Periodic carrier: `27/81/81/324/27` sites/links/faces/based loops/cubes;
+  translated generic Bianchi max/mean `1.760e-15/1.233e-15`.
+- Flat connection: bond antisymmetry is exact, periodic EC max/norm is
+  `5.551e-17/4.079e-16`, geometry first variation is zero, and the assembled
+  all-486-tangent max/norm is `5.573e-17/4.083e-16`.
+- Boundary control: the open `3^3` carrier restores max/norm
+  `0.654545/5.153554`.
+- Source: positive minimum `0.08`, zero mode, pure injected Fourier fraction
+  one, sine-normalized RMS `0.003142697`, and amplitude-doubling error
+  `1.943e-16` on the declared `L=3,...,15` scan.
+- Runner/cache: source/input pinned, `PASS=20 FAIL=0` in `5.18 s`, stdout
+  `4,983` characters. Independent numerical-action reconstruction is
+  `PASS=6 FAIL=0`.
+- Scope: unique fixed-background Record phase and flat periodic connection
+  stationarity are closed. Continuous joint phase, coframe equation,
+  displacement Ward, Einstein quotient, physical law selection, and
+  Lorentzian permanent-Record update remain open. N1--N8 lands; no gravity
+  no-go, fifth-axiom claim, percentage move, or audit verdict ships.

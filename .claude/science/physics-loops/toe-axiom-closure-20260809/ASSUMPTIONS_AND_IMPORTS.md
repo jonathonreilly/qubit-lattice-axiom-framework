@@ -535,6 +535,24 @@ locality/covariance/gluing theorem, projective limit, pure-geometry action,
 stationary nonuniform solution, Lorentzian dynamics, external science,
 canonical edit, percentage move, audit verdict, or `review-loop` is imported.
 
+## Block 39 Assumptions And Imports
+
+Block 39 imports the current four-axiom surface and Block 38's supplied fixed
+ten-label site/edge/EC-face potentials. It imports the cubic lattice degree
+six, finite-state conditional arithmetic, rank-one projector identities,
+elementary normalized-weight total-variation bounds, finite-range contraction,
+periodic summation by parts, `SO(4)` differentiation, and discrete Fourier
+transforms. The infinite-volume Record conclusion is proved from the displayed
+contraction rather than imported from a literature theorem.
+
+The nondegenerate coframes, links, ten rays, orbit weights, `beta=1/5`, EC
+coefficient, and source marginal are supplied bounded mathematical data. The
+phase theorem conditions on fixed geometry; it does not import a continuous
+joint coframe/link measure, coframe stationarity, a displacement symmetry,
+Einstein equation, source-as-matter identification, Lorentzian update, or
+physical selection of the law. No external science, observed constant,
+canonical edit, percentage move, audit verdict, or `review-loop` is imported.
+
 ## Block 38 Assumptions And Non-Imports
 
 The two-cube block inherits only the Block-37 ten rays, fixed site/edge/face

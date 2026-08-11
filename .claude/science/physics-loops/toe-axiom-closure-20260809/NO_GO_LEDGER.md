@@ -330,3 +330,13 @@ not an established ontology failure. No axiom amendment is proposed.
 
 The overlap obstruction is retired for fixed potentials. The surviving wall is
 bulk dynamical selection and response, not elementary Bianchi or ontology.
+
+## Block 39 Fixed-Background Phase / Einstein-Discriminator Boundary
+
+| Scoped claim | Exact/bounded evidence | N1--N8 disposition | Forbidden promotion | Live routes |
+|---|---|---|---|---|
+| The supplied fixed-background ten-label Record phase is unique and its flat periodic connection tadpole vanishes; a positive zero-sum marginal loads the EC carrier, but this does not establish a joint geometry phase, coframe stationarity, displacement Ward, Einstein universality, physical law selection, or Lorentzian dynamics | universal/sharp Dobrushin row sums `0.598007968/0.569370271`; 27 Bianchi max `1.760e-15`; assembled 486-tangent max `5.573e-17`; open control `0.654545`; pure-mode source with `sin(k)` scaling; `PASS=20 FAIL=0` | pass only for the fixed-background phase, flat-connection, and source-carrier statements; seven distinct executed routes, independent wall matrix, hidden scan, exact source matching, N5 certificate, rhetoric audit, coupled-Hessian steelman, and cross-cycle echo land | do not infer a full joint Gibbs phase, physical vacuum, diffeomorphism symmetry, Einstein equation, universal matter coupling, gravity no-go, or fifth-axiom necessity | coupled coframe/link Hessian and quotient, coframe stationarity, continuous joint measure, Regge/constrained-BF/teleparallel comparisons, Record-derived law, and Lorentzian update |
+
+The Record-phase and flat-connection obstructions are retired at fixed
+geometry. The surviving gravity wall is the coupled coframe response and law
+selection, not periodic existence, Bianchi, or ontology.

@@ -790,3 +790,19 @@ curvature decoration—is the decisive next discriminator.
 Finite overlap is no longer the wall. Periodic full-coordinate stationarity,
 source response, and physical selection now determine whether this gravity
 path survives.
+
+## Block 39 Periodic-Phase / Coupled-Response Route Comparison
+
+| Route | Exact object | Outcome | Decision |
+|---|---|---|---|
+| universal fixed-background Dobrushin phase | arbitrary fixed nondegenerate coframes/links and the ten-label bond kernel | row sum `0.598007968<1`; unique full-`Z^3` Record conditional phase | retain; do not extend to continuous joint geometry integration |
+| exact flat-kernel influence | supplied `E_*`, identity links, and all label changes | sharper row sum `0.569370271`; deterministic TV probe below the bound | retain as implementation reconstruction, not the theorem's only support |
+| periodic EC curl | all 81 faces and 486 link tangents with arbitrary uniform label marginal | max `5.551e-17`; open control max `0.654545` | retain; boundary artifact localized |
+| endpoint-exchange bond score | all 600 generator/label-pair derivatives | exact antisymmetry and zero symmetric-phase expectation | retain at the reflection-symmetric flat law |
+| zero-sum Fourier marginal | positive label deformation on six odd tori | pure injected modes and exact `sin(k)` force | retain as source carrier, not physical matter or Einstein response |
+| coupled coframe/link quotient | same-law Hessian, gauge nulls, connection Schur complement, displacement Ward and source tensor | not executed in Block 39 | highest-priority next route |
+| continuous joint phase / Lorentzian update | integrate geometry, select vacuum, then construct causal Record-preserving evolution | not executed | preserve as independent downstream obligations |
+
+Phase/Bianchi/flat-connection rescans are saturated. The next gravity result
+must come from the same-law coupled Hessian or from an exact diagnosis that
+the extensional law lacks the required displacement/Einstein structure.

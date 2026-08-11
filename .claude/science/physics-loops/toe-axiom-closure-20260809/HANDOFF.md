@@ -1597,3 +1597,24 @@ the next target is an `L>=3` periodic carrier, the translated exact Bianchi
 word, the full flat-vacuum connection gradient, then a zero-sum Record/coframe
 source and weak-wavevector displacement/Einstein response. No `review-loop` is
 used.
+
+## Block 39 Handoff
+
+Work is on branch
+`physics-loop/toe-axiom-closure-block39-periodic-record-ec-phase-20260811`,
+stacked exactly on Block-38 delivery head `d3a4e143f2`. The theorem note,
+runner, fresh cache, and citation manifest are present. Primary cache is
+`PASS=20 FAIL=0` in `5.18 s` with 4,983 stdout characters; an independent
+numerical-action reconstruction is `PASS=6 FAIL=0`. Direct conformance and
+delivery remain before the stacked PR.
+
+The major gain is exact separation of gravity issues. The fixed-background
+Record phase exists uniquely on full `Z^3`; the flat periodic connection
+gradient closes on every link; and the inherited EC term carries a zero-sum
+inhomogeneity at exact `sin(k)` order. The open flat force in Block 38 was a
+boundary effect. The remaining decisive test is now the coupled coframe/link
+Hessian and its internal-frame quotient: only connection elimination can show
+whether a base-displacement Ward identity and Einstein/Regge two-derivative
+response emerge. Physical carrier/law selection, continuous joint phase, and
+Lorentzian permanent-Record evolution remain explicit. No `review-loop` is
+used.

@@ -593,6 +593,19 @@ Science commit is `be1781ad26`; campaign conformance is `42d3056d98`. PR
 head `f2f21f9b0f`. Independent audit is pending. No canonical edit,
 percentage move, audit verdict, or `review-loop` is used.
 
+Block 39 is local on branch
+`physics-loop/toe-axiom-closure-block39-periodic-record-ec-phase-20260811`,
+stacked exactly on Block-38 delivery head `d3a4e143f2`. Its distinct review
+object is the universal fixed-background Dobrushin phase, the complete flat
+periodic connection gradient, all translated cube-Bianchi identities, the
+open-boundary control, and the positive zero-sum Fourier source carrier.
+Primary cache is `PASS=20 FAIL=0` in `5.18 s` with 4,983 stdout characters;
+independent numerical-action reconstruction is `PASS=6 FAIL=0`. Citation
+registration is `5,485/15,675`, out-degree two. Direct conformance, full
+pipeline, science/campaign commits, push, and stacked PR remain pending.
+Independent audit remains required. No canonical edit, percentage move, audit
+verdict, or `review-loop` is used.
+
 Block 31 is local on branch
 `physics-loop/toe-axiom-closure-block31-record-source-reaction-gluing-20260810`,
 stacked on exact Block-30 delivery head `317dd4a9f4`. Its distinct review

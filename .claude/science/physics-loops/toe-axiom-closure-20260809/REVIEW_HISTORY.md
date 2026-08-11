@@ -1991,3 +1991,31 @@ instance or Fourier census.
   PR #6124 is open, mergeable, and `CLEAN`, stacked exactly on Block-37
   delivery head `cb107d8a84`; independent audit remains pending. No canonical
   axiom, fixed percentage, or audit verdict is changed.
+
+## Block 39 Construction And Adversarial Record
+
+- Built the `L=3` periodic carrier with 27 sites, 81 links, 81 faces, 324
+  based loops, and 27 translated cubes; all generic noncommuting Bianchi words
+  close at maximum residual `1.760e-15`.
+- Derived a self-contained conditional influence bound
+  `6 tanh(beta/2)=0.598007968<1`, with threshold `beta=0.336472237`; the exact
+  flat kernel sharpens the row sum to `0.569370271`.
+- Proved the full fixed-background ten-label `Z^3` phase is unique and local
+  boundary influence contracts, while explicitly withholding continuous
+  coframe/link integration.
+- Assembled analytic bond scores, all 486 periodic EC tangents, and every
+  geometry-square tangent. Their total flat connection max/norm is
+  `5.573e-17/4.083e-16`; the open control restores
+  `0.654545/5.153554`.
+- Injected one positive zero-sum Record marginal on `L=3,5,7,9,11,15`; source
+  force is pure at `plus/minus 2pi/L`, has sine-normalized RMS `0.003142697`,
+  and doubles with error `1.943e-16`.
+- Executed seven distinct N1 routes and fresh N2--N8. No full joint phase,
+  coframe stationarity, displacement Ward, Einstein, Lorentzian, gravity
+  no-go, or fifth-axiom result is claimed.
+- Fresh cache is `PASS=20 FAIL=0` in `5.18 s`, stdout 4,983 characters.
+  Independent numerical-action reconstruction is `PASS=6 FAIL=0`, reproducing
+  flat EC max `5.294e-17`, source RMS `0.002721655`, and mode fraction one.
+  Citation registration is `5,485/15,675`, out-degree two. Repository
+  conformance, commit, push, and PR remain pending. No canonical axiom, fixed
+  percentage, or audit verdict is changed.

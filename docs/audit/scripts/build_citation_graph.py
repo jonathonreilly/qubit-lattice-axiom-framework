@@ -611,6 +611,12 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
     "povm_observation_comparator_exact_arithmetic_bounded_theorem_note_2026-07-30": [
         "scripts/frontier_povm_observation_comparator_independent_check_2026_07_30.py",
     ],
+    # Cycle 981's checker deliberately parses the primary as inert text/AST
+    # and reconstructs the finite identification table independently. Expose
+    # that sibling adversary beside the primary in the restricted packet.
+    "j_landed_invariant_identification_cycle981_bounded_theorem_note_2026-08-11": [
+        "scripts/frontier_cycle981_j_landed_invariant_identification_independent_check_2026_08_11.py",
+    ],
 }
 
 

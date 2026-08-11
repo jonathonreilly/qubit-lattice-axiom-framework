@@ -36,7 +36,11 @@ PRIMARY_CACHE_PATH = (
 RECEIPT_PATH = (
     "outputs/neighbour_dependence_record_content_cycle985_independent_check_receipt_2026_08_11.json"
 )
-AUDIT_INPUT_PATHS = (PRIMARY_PATH, PRIMARY_RECEIPT_PATH, PRIMARY_CACHE_PATH)
+AUDIT_INPUT_PATHS = (
+    "scripts/frontier_cycle985_neighbour_dependence_record_content_2026_08_11.py",
+    "outputs/neighbour_dependence_record_content_cycle985_receipt_2026_08_11.json",
+    "logs/runner-cache/frontier_cycle985_neighbour_dependence_record_content_2026_08_11.txt",
+)
 EXPECTED_PRIMARY_SOURCE_SHA256 = (
     "0e66cb4b11c38c78b03d0fab66b0218839005fe32e5c3daaf289eb64040714a2"
 )

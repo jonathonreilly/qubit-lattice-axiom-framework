@@ -2015,9 +2015,10 @@ instance or Fourier census.
   dependency-policy epoch mismatch; the controlled current-main five-file
   overlay passes all 18 stages at checkpoint `d7fbc211f5cc`. Changed evidence
   is clean for Block 44 (`1/1`) and all 44 stacked claims (`44/44`), with zero
-  failures or controls. Campaign conformance, push, and stacked PR remain
-  pending. No canonical axiom, fixed percentage, audit verdict, or
-  `review-loop` changes.
+  failures or controls. Science commit is `f57adabb50`; campaign conformance is
+  `0066daecbe`. PR #6135 is open, mergeable, and `CLEAN`, stacked exactly on
+  Block-43 delivery head `03eaec43f7`; independent audit is pending. No
+  canonical axiom, fixed percentage, audit verdict, or `review-loop` changes.
 
 ## Block 42 Construction And Adversarial Record
 

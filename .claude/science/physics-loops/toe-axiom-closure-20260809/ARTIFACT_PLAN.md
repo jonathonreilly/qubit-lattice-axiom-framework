@@ -1087,5 +1087,7 @@ complete conditional nonlinear compact solution:
   current-main five-file overlay passes all 18 stages at checkpoint
   `d7fbc211f5cc`. Changed evidence is clean for Block 44 (`1/1`) and all 44
   stacked claims (`44/44`). Science commit is `f57adabb50`; campaign
-  conformance, push, and stacked PR remain pending. No canonical edit, fixed
-  percentage move, audit verdict, or `review-loop` occurs
+  conformance is `0066daecbe`; PR #6135 is open, mergeable, and `CLEAN`,
+  stacked exactly on Block-43 delivery head `03eaec43f7`; independent audit
+  remains required. No canonical edit, fixed percentage move, audit verdict,
+  or `review-loop` occurs

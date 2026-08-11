@@ -1741,8 +1741,9 @@ conformance passes. The exact stack reaches only the inherited stage-7
 dependency-policy epoch mismatch after `4,828` rows / `3,706` runners; the
 controlled current-main five-file overlay passes all 18 stages at checkpoint
 `d7fbc211f5cc`. Changed evidence is clean for Block 44 (`1/1`) and all 44
-stacked claims (`44/44`). Campaign conformance, push, and stacked PR remain
-pending.
+stacked claims (`44/44`). Campaign conformance is `0066daecbe`; PR #6135 is
+open, mergeable, and `CLEAN`, stacked exactly on Block-43 delivery head
+`03eaec43f7`. Independent audit is pending.
 
 The significant gain is the complete-edge infrared canonical result. The
 repaired five-direction nonmetric block is invertible, stationary Schur

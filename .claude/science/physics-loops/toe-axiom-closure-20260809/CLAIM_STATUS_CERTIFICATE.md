@@ -1492,7 +1492,9 @@ lines are in the landing primary cache.
   citation graph is `5,490/15,698`, out-degree four. Direct conformance passes;
   the controlled current-main overlay passes all 18 exact-stack stages at
   checkpoint `d7fbc211f5cc`; changed evidence is clean for Block 44 (`1/1`)
-  and all 44 stacked claims (`44/44`). Science commit is `f57adabb50`.
+  and all 44 stacked claims (`44/44`). Science commit is `f57adabb50`;
+  campaign conformance is `0066daecbe`; PR #6135 is open, mergeable, and
+  `CLEAN`, stacked exactly on Block-43 delivery head `03eaec43f7`.
 - Scope: bounded complete-edge flat infrared theorem plus a conditional
   Lorentzian candidate and narrow current-surface dynamics-selection boundary,
   not a selected Record update, physical-energy theorem, full-frequency

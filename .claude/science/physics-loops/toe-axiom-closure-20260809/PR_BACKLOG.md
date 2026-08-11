@@ -606,9 +606,10 @@ out-degree four. Science commit is `f57adabb50`; direct conformance passes.
 The exact stack reaches only the inherited stage-7 policy epoch; the
 controlled current-main five-file overlay passes all 18 stages at checkpoint
 `d7fbc211f5cc`. Changed evidence is clean for Block 44 (`1/1`) and all 44
-stacked claims (`44/44`). Campaign conformance, push, and stacked PR are
-pending. No canonical edit, percentage move, audit verdict, or `review-loop`
-is used.
+stacked claims (`44/44`). Campaign conformance is `0066daecbe`. PR #6135 is
+open, mergeable, and `CLEAN`, stacked exactly on Block-43 delivery head
+`03eaec43f7`. Independent audit is pending. No canonical edit, percentage
+move, audit verdict, or `review-loop` is used.
 
 Block 43 is local on branch
 `physics-loop/toe-axiom-closure-block43-regge-increasing-region-20260811`,

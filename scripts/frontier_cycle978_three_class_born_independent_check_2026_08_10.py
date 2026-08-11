@@ -30,19 +30,11 @@ AUDIT_INPUT_PATHS = (
 )
 EXPECTED_INPUT_SHA256 = {
     AUDIT_INPUT_PATHS[0]:
-        "ff93516fd127b6ffef8a5d521f213d8bf311aa0b69c5548f911a9d490ab73d3b",
-    AUDIT_INPUT_PATHS[1]:
-        "5e4d5971386ddd89eadae030dd494e7fb41702f4c52f04673b2797d1eecfd3bf",
-    AUDIT_INPUT_PATHS[2]:
-        "cd184c1b598742664d6f8af751c9c162e317252e6e97af3a458d26e6b064cb7d",
+        "e5d7214357e6eccccd1c818ee8800ff950d82a9908419e273eba5e29c76ef589",
 }
 CHECK_RECEIPT = ROOT / (
     "outputs/three_class_born_compatibility_cycle978_"
     "independent_check_receipt_2026_08_10.json"
-)
-CHECK_CACHE = ROOT / (
-    "logs/runner-cache/frontier_cycle978_three_class_born_"
-    "independent_check_2026_08_10.txt"
 )
 CANDIDATES = (
     "M1_COUNTING",
@@ -376,7 +368,13 @@ def source_controls() -> dict:
             for path in literal_paths
         ),
         "sha256": sha,
-        "sha_pins_match": sha == EXPECTED_INPUT_SHA256,
+        "sha_pins_match": bool(
+            sha[AUDIT_INPUT_PATHS[0]]
+            == EXPECTED_INPUT_SHA256[AUDIT_INPUT_PATHS[0]]
+        ),
+        "dynamic_receipt_cache_sha256": {
+            path: sha[path] for path in AUDIT_INPUT_PATHS[1:]
+        },
         "primary_ast_required_functions": sorted(
             required_functions & functions
         ),
@@ -623,6 +621,12 @@ def main() -> int:
         (ROOT / AUDIT_INPUT_PATHS[1]).read_text(encoding="utf-8")
     )
     cache = (ROOT / AUDIT_INPUT_PATHS[2]).read_text(encoding="utf-8")
+    cache_header, marker, cached_stdout = cache.partition(
+        "----- stdout -----\n"
+    )
+    expected_runner = AUDIT_INPUT_PATHS[0]
+    expected_runner_sha = controls["sha256"][AUDIT_INPUT_PATHS[0]]
+    cache_headers = set(cache_header.splitlines())
     rebuilt = independent_family()
     verification = verify_claim(report, rebuilt)
     corruptions = corruption_probes(report, rebuilt)
@@ -630,8 +634,22 @@ def main() -> int:
         report["pass"]
         and report["primary_source_sha256"]
         == controls["sha256"][AUDIT_INPUT_PATHS[0]]
-        and cache.startswith("CYCLE978_THREE_CLASS_BORN_COMPATIBILITY\n")
-        and "TOTAL: PASS=5 FAIL=0\n" in cache
+        and cache.startswith("===== runner cache v1 =====\n")
+        and f"runner: {expected_runner}" in cache_headers
+        and f"runner_sha256: {expected_runner_sha}" in cache_headers
+        and "status: ok" in cache_headers
+        and marker == "----- stdout -----\n"
+        and cached_stdout.startswith(
+            "CYCLE978_THREE_CLASS_BORN_COMPATIBILITY\n"
+        )
+        and "TOTAL: PASS=5 FAIL=0\n" in cached_stdout
+        and all(
+            f"{resolution}:" in cached_stdout
+            for resolution in (
+                "per_element", "per_site", "per_mode", "per_block",
+                "lattice_wide",
+            )
+        )
         and len(cache.encode()) < HOUSE_STDOUT_LIMIT_BYTES
     )
     elapsed = monotonic() - started
@@ -759,8 +777,6 @@ def main() -> int:
         json.dumps(receipt, indent=2, sort_keys=True) + "\n",
         encoding="utf-8",
     )
-    CHECK_CACHE.parent.mkdir(parents=True, exist_ok=True)
-    CHECK_CACHE.write_text(stdout, encoding="utf-8")
     print(stdout, end="")
     return 0 if receipt["pass"] else 1
 

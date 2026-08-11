@@ -1,6 +1,6 @@
 {
   "artifact": "three_class_born_compatibility_independent_check",
-  "checker_source_sha256": "af4f288cf13500a938c3aa2b370a7cb71ab67d0a9af1ffe31ddf3343acd4ecd6",
+  "checker_source_sha256": "437ce049157d94ac904c0908a6e74ebee952ec77f32cdacceb52263322cf0e6b",
   "checks": {
     "R0_PRIMARY_AST_AND_PINS": true,
     "R1_INDEPENDENT_FAMILY_AND_CLASSES": true,
@@ -17,6 +17,10 @@
       "frontier_cycle974_covariant_law_weight_compatibility_2026_08_10",
       "frontier_cycle977_witness_family_completeness_2026_08_10"
     ],
+    "dynamic_receipt_cache_sha256": {
+      "logs/runner-cache/frontier_cycle978_three_class_born_compatibility_2026_08_10.txt": "a5d9fe4502ecd0ce69b0d70dd0657a51c3be35432ea203ca2936c78f76d92eb2",
+      "outputs/three_class_born_compatibility_cycle978_receipt_2026_08_10.json": "fd33713a31d957b1842a4afcdb4fea6d5556d4dd996f2d88b622129e91309497"
+    },
     "literal_audit_input_paths": [
       "outputs/cycle978_cited_primary_provenance_2026_08_10.json",
       "docs/MINIMAL_AXIOMS_2026-06-29.md",
@@ -32,9 +36,9 @@
     ],
     "primary_never_imported": true,
     "sha256": {
-      "logs/runner-cache/frontier_cycle978_three_class_born_compatibility_2026_08_10.txt": "cd184c1b598742664d6f8af751c9c162e317252e6e97af3a458d26e6b064cb7d",
-      "outputs/three_class_born_compatibility_cycle978_receipt_2026_08_10.json": "5e4d5971386ddd89eadae030dd494e7fb41702f4c52f04673b2797d1eecfd3bf",
-      "scripts/frontier_cycle978_three_class_born_compatibility_2026_08_10.py": "ff93516fd127b6ffef8a5d521f213d8bf311aa0b69c5548f911a9d490ab73d3b"
+      "logs/runner-cache/frontier_cycle978_three_class_born_compatibility_2026_08_10.txt": "a5d9fe4502ecd0ce69b0d70dd0657a51c3be35432ea203ca2936c78f76d92eb2",
+      "outputs/three_class_born_compatibility_cycle978_receipt_2026_08_10.json": "fd33713a31d957b1842a4afcdb4fea6d5556d4dd996f2d88b622129e91309497",
+      "scripts/frontier_cycle978_three_class_born_compatibility_2026_08_10.py": "e5d7214357e6eccccd1c818ee8800ff950d82a9908419e273eba5e29c76ef589"
     },
     "sha_pins_match": true,
     "source_read_count": 3
@@ -151,7 +155,7 @@
   },
   "pass": true,
   "primary_binding": true,
-  "runtime_seconds": 0.8621816249797121,
+  "runtime_seconds": 0.8711264579324052,
   "stdout_bytes": 1596,
   "verification": {
     "A_REBUILD": true,

@@ -1,4 +1,4 @@
-# Born compatibility with the three-class neighbour law — Cycle 978
+# Fixed-input compatibility with three displayed neighbour-law representatives — Cycle 978
 
 Date: 2026-08-10
 
@@ -10,11 +10,13 @@ Claim type: bounded_theorem
 
 Actual current surface: bounded support. On the reconstructed finite event
 space and the exhaustive word-length-at-most-one basis-state gate family
-inside a target-centred radius-one star, all five finite event weightings are
-compatible separately with each of the three covariant induced-law classes,
-but none is compatible with all three as one unindexed conditional rule.
-This does not construct a probability law on the full continuous `M_2(C)`
-possibility domain and does not select a Born weighting.
+inside a target-centred radius-one star, all five finite event weightings
+admit a separate Cycle-974 product extension with each of three displayed
+representative truth tables, but none admits one unindexed fixed-`x` kernel
+equal to all three representatives pointwise. This does not establish a
+class-level stochastic law, construct the axiom-level nearest-neighbour
+probability law, cover the full continuous `M_2(C)` possibility domain, or
+derive a Born weighting.
 
 Primary runner:
 
@@ -83,6 +85,35 @@ The complete family has zero failures in 476,160 proper-rotation semantic
 comparisons, 119,040 unit-translation semantic comparisons, and 19,840
 landed-core/coordinate bridge comparisons.
 
+## Proof obligation graph
+
+**Exact bounded theorem.** Given the reconstructed finite event vectors, the
+declared 155-word basis-state family, uniform full-support
+`q(x,n)=1/128`, the three displayed deterministic representatives, and
+pointwise equality at fixed `x`, each of the five event weightings admits all
+three separate product extensions, while no one unindexed conditional kernel
+`K_i(y|x,n)` equals all three representatives.
+
+| obligation | depends on | disposition | evidence |
+|---|---|---|---|
+| L1 event-vector validity | Cycle-719 finite event rebuild; finite caps | discharged | 92,260 atoms; every numerator nonnegative with positive total |
+| L2 155-word/21-witness/3-orbit reconstruction | seven-site star; word length at most one; basis-state semantics | discharged | exhaustive counts and zero covariance/bridge failures in A_REBUILD |
+| L3 per-class product marginal identity | L1; uniform full-support `q`; one displayed `L_c` at a time | discharged | exact rational sums reproduce every `p_i(e)` |
+| L4 fixed-`x` representative disagreement | L2; displayed CNOT and TOF representatives | discharged | `x=0`, `n=(1,0,0,0,0,0)` gives outputs 1 and 0 |
+| L5 no common pointwise `K_i(y|x,n)` | L3; L4; unindexed kernel; pointwise equality | discharged | incompatible delta distributions, independently of `p_i` |
+| M1 representative/class-to-axiom bridge | class aggregation; eliminate or interpret `x`; local-to-event lift | **open** | not supplied by this cycle |
+
+The hypotheses are preserved literally: finite caps and horizons, basis-state
+words only, the displayed representatives, uniform full-support `q`, fixed
+`x`, and pointwise equality. Covered cases are all five weightings (including
+their zero-weight events), both target inputs, all 64 neighbour conditions,
+all 155 words, and all 21 neighbour-sensitive witnesses. Degenerate identity,
+single-`X`, non-target gates, and non-neighbour-sensitive words are included
+in the exhaustive family and correctly contribute no witness. The strongest
+missing lemma is M1: a justified bridge from representative fixed-`x` kernels
+to an axiom-level covariant `K(y|n)`, including class aggregation and the
+local-to-event/Born lift.
+
 ## B_PER_CLASS_TEST — criterion and 5x3 result
 
 For each class separately, the test uses Cycle 974's product-form criterion
@@ -117,11 +148,11 @@ the nearest-neighbour condition `n`; marginalizing the uniform carrier over
 survival does not by itself establish the axiom's required variation with
 nearest-neighbour conditions.
 
-## C_JOINT_TEST — one simultaneous rule
+## C_JOINT_TEST — fixed-input common-kernel surrogate
 
-The full-family test keeps one unindexed conditional kernel. The same
-`K_i(y|x,n)` in one product extension must equal every reconstructed class
-kernel pointwise:
+The full-family test keeps one unindexed fixed-input conditional kernel. The
+same `K_i(y|x,n)` in one Cycle-974 product extension must equal every
+displayed representative kernel pointwise:
 
 ```text
 P_i(e,x,n,y) = p_i(e) q(x,n) K_i(y|x,n),
@@ -149,6 +180,20 @@ disagreeing witness pair and configuration above. The opposite-control
 representative `TOF(+x,-x->C)` also gives `y=0` on that configuration, so it
 disagrees with the CNOT representative there as well.
 
+This is not an axiom-level class contradiction. Eliminating the auxiliary
+target input with the declared `q(x|n)=1/2` gives
+
+```text
+K_c(y|n) = sum_x q(x|n) 1{y=x XOR f_c(n)} = [1/2,1/2]
+```
+
+for every class and every neighbour condition. The marginalized class
+kernels therefore agree, but they do not vary with `n` as Admissibility
+requires. The exact joint result is only that the three displayed
+deterministic representative truth tables have no common `K(y|x,n)` on the
+fixed-input surrogate. It neither proves nor refutes existence of a different
+full nearest-neighbour probability law.
+
 ## D_ARTIFACT_VERDICT
 
 ```text
@@ -156,12 +201,121 @@ NULL_WAS_FAMILY_ARTIFACT
 survivors/5: 0/5
 ```
 
-Cycle 974's five-survivor null does not survive the one-rule joint test. The
-two additional TOF law classes conflict pointwise with the CNOT class, so all
-five weightings that survive every separate class test are excluded jointly.
-This does not select a Born weighting: zero survivors refutes simultaneous
-common-kernel compatibility on this enlarged surrogate rather than deriving
-an event-marginal selector, occurrence rule, or Born rule.
+Cycle 974's five-survivor null does not survive the fixed-input common-kernel
+test on the enlarged family. The two additional TOF representative truth
+tables conflict pointwise with the CNOT representative, so all five
+weightings that survive every separate class test are excluded jointly on
+that surrogate. This does not select a Born weighting: zero survivors rejects
+simultaneous deterministic representative-kernel compatibility rather than
+deriving an axiom-level probability law, event-marginal selector, occurrence
+rule, or Born rule.
+
+The mandated label `NULL_WAS_FAMILY_ARTIFACT` is bookkeeping for the task's
+fixed-input surrogate comparison. It is not a causal claim that enlarging the
+gate family alone changed the result: both the family and the joint
+common-kernel obligation are stronger than Cycle 974's one-representative
+test.
+
+## No-Go Discipline Gate
+
+The negative surface governed here is only L5: no common pointwise fixed-`x`
+kernel for the three displayed deterministic representatives. It is not a
+`no_go` classification for Admissibility or the Born problem.
+
+**N1 — alternative routes.** Five materially different attacks were made:
+
+1. `ATTEMPTED` — change the event weighting. All five reconstructed `p_i`
+   were substituted; the representative delta-distribution mismatch is
+   independent of the positive event factor ([primary receipt](../outputs/three_class_born_compatibility_cycle978_receipt_2026_08_10.json)).
+2. `ATTEMPTED` — choose another witness in the same orbit. Exhausting all 21
+   neighbour-dependent words and their proper rotations still contains a
+   rotated CNOT/TOF disagreement ([primary cache](../logs/runner-cache/frontier_cycle978_three_class_born_compatibility_2026_08_10.txt)).
+3. `ATTEMPTED` — carry a class label and use `K_c`. This constructs three
+   context-labelled laws, not the theorem's one unindexed kernel; the rejected
+   formulation and narrowing are recorded below under Review record.
+4. `ATTEMPTED` — marginalize the auxiliary `x`. The analytic sum gives the
+   same `[1/2,1/2]` kernel for all three representatives, but changes the
+   fixed-`x` pointwise object and therefore does not refute L5; it instead
+   keeps M1 open (C_JOINT_TEST above).
+5. `ATTEMPTED` — allow a stochastic common `K` at fixed `x`. Exact equality
+   to deterministic representatives requires both incompatible delta masses
+   on the displayed disagreement input, so stochastic notation cannot satisfy
+   the pointwise-equality hypothesis ([independent checker receipt](../outputs/three_class_born_compatibility_cycle978_independent_check_receipt_2026_08_10.json)).
+
+**N2 — wall independence.** These are promotion walls beyond L5, not
+additional premises of the narrow theorem: W1 replaces the fixed-`x`
+surrogate by an axiom-level `K(y|n)`; W2 supplies representative-to-class
+aggregation/covariance; W3 supplies the local-event-to-substrate/Born lift.
+The collapsed pairwise audit is:
+
+| pair | closing first closes second? | closing second closes first? | independent? |
+|---|---|---|---|
+| W1, W2 | no | no | yes |
+| W1, W3 | no | no | yes |
+| W2, W3 | no | no | yes |
+
+Finite caps, the displayed representatives, and uniform `q` are theorem
+hypotheses rather than separately counted promotion walls. Eliminating `x`
+is part of W1, so it is not double-counted.
+
+**N3 — hidden-wall scan.** The prescribed phrase scan found no load-bearing
+use of “we assume”, “as is standard”, “the framework provides”, “naturally”,
+“obviously”, “standard QFT”, “registered”, or “canonical”. Occurrences of
+“declared” and construction language name the explicit finite hypotheses
+listed in the proof graph; none silently supplies M1. The full continuous
+domain, class aggregation, and local-to-event lift are explicit open items.
+
+**N4 — residual matching.** Prior-cycle material is provenance, not an
+imported verdict:
+
+| cited artifact | residual it resolves | residual used here | exact match? |
+|---|---|---|---|
+| Cycle 878 weighting reconstruction (`docs/EVENT_SPACE_GROUNDWORK_CYCLE878_SUPPORT_NOTE_2026-07-28.md:50-64`) | five finite event-vector definitions | L1 definitions only | yes for L1; no support for L5 |
+| Cycle 974 compatibility test (`679afcde3234:docs/COVARIANT_LAW_WEIGHT_COMPATIBILITY_CYCLE974_THEOREM_NOTE_2026-08-10.md:107-110,191-194`) | one displayed XOR product extension, separately | three-representative unindexed fixed-`x` L5 | no; provenance/comparator only |
+| Cycle 977 family reconstruction (`27ec7c243f61:docs/WITNESS_FAMILY_COMPLETENESS_CYCLE977_BOUNDED_THEOREM_NOTE_2026-08-10.md:61-75,89-113,124-137`) | 155 words, 21 witnesses, three covariant orbits | L2 reconstruction | yes for L2; no support for L5 |
+| Cycle 719 executable core (`scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py:80-87,90-133,209-223`) | finite event/controller aliases, program construction, gate semantics, and orbit execution | L1 event data and L2 landed semantic bridge | yes for L1/L2; no support for L5 |
+
+The provenance bundle authenticates the exact bytes for the non-main Cycle
+974 and Cycle 977 commit/path citations. No nonmatching predecessor verdict is
+counted toward the L5 proof; L5 is derived by the primary and independent
+checker from the displayed truth tables.
+
+**N5 — rhetoric resolutions.** The landing primary cache contains substantive
+`per_element:`, `per_site:`, `per_mode:`, `per_block:`, and `lattice_wide:`
+execution lines. Event rows, the target-centred star, and the three displayed
+blocks are checked. Continuous modes and a lattice-wide axiom law are
+explicitly marked “checked and not executed”; all negative language is
+therefore narrowed to the finite fixed-input representative kernel.
+
+**N6 — partial-closure paths.** No claim that a new axiom is required is made.
+Marginalizing `x` is an executed reframe that removes the class disagreement
+but yields a constant neighbour-conditioned marginal. A nonuniform
+`q(x|n)`, a justified stochastic class aggregation, and a local-to-event lift
+remain mathematically actionable M1 routes. Existing minimal-axiom language
+sets the target boundary but does not silently discharge them.
+
+**N7 — steelman.** A hostile reviewer should reject any axiom-level no-go:
+the fixed-`x` input is not itself the nearest-neighbour condition named by
+Admissibility, and summing the stipulated uniform `x` makes all three class
+marginals identical. A nonuniform `q(x|n)` or a covariant stochastic
+aggregation could then restore neighbour variation, provided it is connected
+to event probabilities by an explicit lift. That is a concrete unclosed
+mechanism with terminal obligation M1. It defeats the broader rhetoric and is
+why this note ships only L5; it does not defeat L5 because it changes the
+kernel's conditioning and equality obligation.
+
+**N8 — cross-cycle echo.** Cycle 974 itself is the relevant warning: a null on
+a declared 20-word family did not test the three-orbit reconstruction later
+established by Cycle 977. This cycle therefore preserves exhaustive family
+scope and refuses to echo L5 as a full-law result. Repository scans for
+“structurally undecidable”, “no retained primitive”, “requires new axiom”,
+and “cannot be derived from A_min” yielded no prior residual used as proof of
+L5. The same retirement mechanism—narrow the object and expose the missing
+bridge—is applied here.
+
+N1–N8 disposition: **PASS for the narrow L5 theorem only**. The convincing
+N7 steelman makes any broader Admissibility/Born negative premature and that
+broader claim is not shipped.
 
 ## E_CONTROLS and independent refutation
 
@@ -172,7 +326,7 @@ semantic core. All have SHA-256 and git-blob pins. Cited predecessor runners
 are blocklisted and never loaded. The deterministic short event replay and
 independent family replay agree with the full calculation.
 
-The primary completed in 52.179 seconds with 3,635 stdout bytes:
+The primary completed in 52.975 seconds with 4,402 stdout bytes:
 
 ```text
 A_REBUILD PASS
@@ -187,11 +341,13 @@ The independent checker reads three worktree-relative files, parses the
 primary as AST without importing it, and reconstructs the 155-word Boolean
 family, 21 witnesses, three classes, and proper-rotation covariance without
 Cycle-719. It derives the product-extension verdict algebraically, binds the
-primary source/receipt/cache by SHA-256, and rejects eight active corruptions:
+primary by a stable source SHA-256 pin, records the dynamic receipt/cache
+hashes, semantically binds their source hash, PASS line, table, and headline,
+and rejects eight active corruptions:
 family size, witness count, class membership, a per-class verdict, joint
 survivors, joint disagreeing witness, artifact label, and Born-wall status.
 
-It completed in 0.862 seconds with 1,596 stdout bytes:
+It completed in 0.871 seconds with 1,596 stdout bytes:
 
 ```text
 R0_PRIMARY_AST_AND_PINS PASS
@@ -205,14 +361,58 @@ TOTAL: PASS=6 FAIL=0
 
 The certificate gates construction, exhaustive reconciliation, partition
 bookkeeping, binding, corruption sensitivity, determinism, and resource
-controls. It does not gate on a desired survivor count or artifact verdict.
+controls. The primary's integrity gates remain outcome-neutral; the
+independent checker separately derives and mutation-checks the survivor count,
+disagreement, artifact label, and Born-wall line.
+
+## Imports, support, derived, open
+
+- **Executable import:** Cycle 719 supplies the finite event/controller
+  substrate used to rebuild the five vectors and the landed gate constructors,
+  Boolean semantics, and orbit machinery used for the 155-word bridge.
+- **Boundary premise:** `MINIMAL_AXIOMS_2026-06-29.md` supplies the statement
+  that the desired distribution is determined by nearest-neighbour conditions;
+  it does not supply `K`, `q`, or a lift.
+- **Explicit stipulations:** finite caps and horizon, the seven-site star,
+  word length at most one, basis-state gates, `q(x,n)=1/128`, fixed `x`, the
+  three displayed representatives, and the Cycle-974 product surrogate.
+- **Provenance-only support:** Cycle 878 names the five weighting definitions;
+  Cycle 974 names the comparator product test; Cycle 977 names the enlarged
+  family/class census. Their verdicts are neither imported nor executed.
+- **Derived here:** event-vector validity, the 155/21/3 reconstruction,
+  separate 5x3 product identities, the exact fixed-input disagreement, and
+  the absence of a common pointwise representative kernel.
+- **Open:** an axiom-level `K(y|n)`, representative-to-class aggregation and
+  covariance, elimination or interpretation of `x`, the full `M_2(C)`
+  domain, and a local-to-event/Born lift.
+
+## Review record
+
+Adversarial review rejected an earlier class-indexed carrier because it tested
+three labelled laws rather than one rule. The claim was narrowed to the exact
+fixed-input representative theorem, and the uniform-`x` marginal counterroute
+was made explicit. Raw self-written caches were replaced by authenticated
+runner-cache envelopes; receipt/cache hash binding is semantic and only the
+stable primary source is hard-pinned.
+
+Restricted-packet co-landing is mandatory. The literal helper mapping is:
+
+```text
+"three_class_born_compatibility_cycle978_bounded_theorem_note_2026-08-10": ["scripts/frontier_cycle978_three_class_born_independent_check_2026_08_10.py"]
+```
+
+The note, primary, checker, both enveloped caches, both receipts, provenance
+bundle, helper mapping, and regenerated citation-graph manifest are hard
+co-landing conditions. The generated audit row must expose the checker under
+`helper_runner_paths` and its source under `changed_surfaces`; no audit status
+or effective-status surface lands in this PR.
 
 ## Trace gate
 
 ```yaml
 trace_class: direct_blocker_closure
 target_claim_id: null
-target_blocker_text: "did Cycle 974's five-survivor null persist only because its 20-word family omitted two induced-law classes?"
+target_blocker_text: "under Cycle 974's fixed-input product-extension surrogate, did its five-survivor null persist only because the 20-word family omitted two induced-law classes?"
 source_of_blocker_text: user_goal
 reachability_to_target: closes
 artifact_role: runner_certificate
@@ -223,13 +423,16 @@ next_trace_action: "submit this bounded theorem to independent audit; do not pro
 
 ```yaml
 actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
+claim_type_reason: "finite exact theorem on five event vectors and three displayed fixed-input representative truth tables, with the axiom-level class/lift bridge explicitly open"
 trace_class: direct_blocker_closure
 reachability_to_target: closes
-conditional_surface_status: "exact on the reconstructed finite event space and the declared 155-word one-step basis-state family"
+conditional_surface_status: "exact on the reconstructed finite event space, declared 155-word one-step basis-state family, and Cycle-974 fixed-input product-extension surrogate"
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
-proposal_allowed_reason: "finite one-step basis-state horizon; no full continuous M_2(C) probability law or Born selector"
+proposal_allowed_reason: "fixed-input surrogate and finite one-step basis-state horizon; no axiom-level nearest-neighbour distribution, full continuous M_2(C) probability law, or Born selector"
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
+packet_helper_runner: scripts/frontier_cycle978_three_class_born_independent_check_2026_08_10.py
 ```

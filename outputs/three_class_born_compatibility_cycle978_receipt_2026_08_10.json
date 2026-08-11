@@ -675,7 +675,7 @@
       "per_class_exclusions": []
     },
     "C_JOINT_TEST": {
-      "criterion": "One-rule joint criterion: the same unindexed conditional kernel K_i(y|x,n) in one extension P_i(e,x,n,y) must equal every reconstructed class kernel L_c(y|x,n) pointwise. No class label or carrier is added because c is not a nearest-neighbour condition. Exclude at the first pair of class witnesses whose truth tables disagree on an exact (x,n,y) configuration.",
+      "criterion": "Cycle-974-surrogate common-kernel joint criterion: the same unindexed fixed-input conditional kernel K_i(y|x,n) in one extension P_i(e,x,n,y) must equal every displayed representative kernel L_c(y|x,n) pointwise. No class label or carrier is added because c is not a nearest-neighbour condition. Exclude at the first pair of class witnesses whose truth tables disagree on an exact (x,n,y) configuration. This is not the full Admissibility kernel K(y|n): x is an auxiliary supplied local input.",
       "excluded": [
         "M1_COUNTING",
         "M2_PER_WORLD_UNIFORM",
@@ -700,7 +700,7 @@
                 0
               ]
             ],
-            "quantity": "one unindexed K(y|x,n) equals both class kernels",
+            "quantity": "one unindexed K(y|x,n) equals both displayed representative kernels",
             "reference_class": "CNOT",
             "reference_distribution": [
               0,
@@ -733,7 +733,7 @@
                 0
               ]
             ],
-            "quantity": "one unindexed K(y|x,n) equals both class kernels",
+            "quantity": "one unindexed K(y|x,n) equals both displayed representative kernels",
             "reference_class": "CNOT",
             "reference_distribution": [
               0,
@@ -766,7 +766,7 @@
                 0
               ]
             ],
-            "quantity": "one unindexed K(y|x,n) equals both class kernels",
+            "quantity": "one unindexed K(y|x,n) equals both displayed representative kernels",
             "reference_class": "CNOT",
             "reference_distribution": [
               0,
@@ -799,7 +799,7 @@
                 0
               ]
             ],
-            "quantity": "one unindexed K(y|x,n) equals both class kernels",
+            "quantity": "one unindexed K(y|x,n) equals both displayed representative kernels",
             "reference_class": "CNOT",
             "reference_distribution": [
               0,
@@ -832,7 +832,7 @@
                 0
               ]
             ],
-            "quantity": "one unindexed K(y|x,n) equals both class kernels",
+            "quantity": "one unindexed K(y|x,n) equals both displayed representative kernels",
             "reference_class": "CNOT",
             "reference_distribution": [
               0,
@@ -866,7 +866,7 @@
                 0
               ]
             ],
-            "quantity": "one unindexed K(y|x,n) equals both class kernels",
+            "quantity": "one unindexed K(y|x,n) equals both displayed representative kernels",
             "reference_class": "CNOT",
             "reference_distribution": [
               0,
@@ -898,7 +898,7 @@
                 0
               ]
             ],
-            "quantity": "one unindexed K(y|x,n) equals both class kernels",
+            "quantity": "one unindexed K(y|x,n) equals both displayed representative kernels",
             "reference_class": "CNOT",
             "reference_distribution": [
               0,
@@ -930,7 +930,7 @@
                 0
               ]
             ],
-            "quantity": "one unindexed K(y|x,n) equals both class kernels",
+            "quantity": "one unindexed K(y|x,n) equals both displayed representative kernels",
             "reference_class": "CNOT",
             "reference_distribution": [
               0,
@@ -962,7 +962,7 @@
                 0
               ]
             ],
-            "quantity": "one unindexed K(y|x,n) equals both class kernels",
+            "quantity": "one unindexed K(y|x,n) equals both displayed representative kernels",
             "reference_class": "CNOT",
             "reference_distribution": [
               0,
@@ -994,7 +994,7 @@
                 0
               ]
             ],
-            "quantity": "one unindexed K(y|x,n) equals both class kernels",
+            "quantity": "one unindexed K(y|x,n) equals both displayed representative kernels",
             "reference_class": "CNOT",
             "reference_distribution": [
               0,
@@ -1012,7 +1012,7 @@
           "witness": "TOF(+x,+y->C)"
         }
       ],
-      "relation_to_cycle974": "the product form and event marginal are unchanged, but one unindexed conditional kernel must now satisfy all three reconstructed class laws because the substrate has one nearest-neighbour rule",
+      "relation_to_cycle974": "the product form and event marginal are unchanged, but one unindexed conditional kernel must now satisfy all three reconstructed class laws on the fixed-(x,n) surrogate; this does not identify the axiom-level nearest-neighbour kernel after auxiliary x is removed",
       "survivors": []
     },
     "D_ARTIFACT_VERDICT": {
@@ -1047,7 +1047,7 @@
                 0
               ]
             ],
-            "quantity": "one unindexed K(y|x,n) equals both class kernels",
+            "quantity": "one unindexed K(y|x,n) equals both displayed representative kernels",
             "reference_class": "CNOT",
             "reference_distribution": [
               0,
@@ -1079,7 +1079,7 @@
                 0
               ]
             ],
-            "quantity": "one unindexed K(y|x,n) equals both class kernels",
+            "quantity": "one unindexed K(y|x,n) equals both displayed representative kernels",
             "reference_class": "CNOT",
             "reference_distribution": [
               0,
@@ -1111,7 +1111,7 @@
                 0
               ]
             ],
-            "quantity": "one unindexed K(y|x,n) equals both class kernels",
+            "quantity": "one unindexed K(y|x,n) equals both displayed representative kernels",
             "reference_class": "CNOT",
             "reference_distribution": [
               0,
@@ -1143,7 +1143,7 @@
                 0
               ]
             ],
-            "quantity": "one unindexed K(y|x,n) equals both class kernels",
+            "quantity": "one unindexed K(y|x,n) equals both displayed representative kernels",
             "reference_class": "CNOT",
             "reference_distribution": [
               0,
@@ -1175,7 +1175,7 @@
                 0
               ]
             ],
-            "quantity": "one unindexed K(y|x,n) equals both class kernels",
+            "quantity": "one unindexed K(y|x,n) equals both displayed representative kernels",
             "reference_class": "CNOT",
             "reference_distribution": [
               0,
@@ -1301,7 +1301,7 @@
                   0
                 ]
               ],
-              "quantity": "one unindexed K(y|x,n) equals both class kernels",
+              "quantity": "one unindexed K(y|x,n) equals both displayed representative kernels",
               "reference_class": "CNOT",
               "reference_distribution": [
                 0,
@@ -1419,7 +1419,7 @@
         "27ec7c243f613fc1ffda4aa93960c18936b176fd:scripts/frontier_cycle977_witness_family_completeness_2026_08_10.py (AST)"
       ],
       "runtime_budget_seconds": 1400,
-      "runtime_seconds": 52.179396624909714,
+      "runtime_seconds": 52.97461966704577,
       "sha256": {
         "docs/MINIMAL_AXIOMS_2026-06-29.md": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
         "outputs/cycle978_cited_primary_provenance_2026_08_10.json": "4c242e12b987147cbd5aef73b6d5034c8fb78d1a7a916fafef29eff7ae51255e",
@@ -1427,7 +1427,7 @@
       },
       "sha_pins_match": true,
       "short_replay_digest": "d71745ea3f687078fdaa7b9295eebd06479d4a01824f386e8c6f998825095d88",
-      "stdout_bytes": 3635,
+      "stdout_bytes": 4402,
       "stdout_limit_bytes": 6000
     }
   },
@@ -1438,13 +1438,13 @@
     "D_ARTIFACT_VERDICT": true,
     "E_CONTROLS": true
   },
-  "claim": "five finite event weightings versus the full reconstructed three-class radius-one one-step star law",
+  "claim": "five finite event weightings versus three displayed radius-one one-step representative truth tables under the Cycle-974 fixed-input product-extension surrogate",
   "claim_type": "bounded_theorem",
-  "conditional_surface_status": "exact on the declared 155-word basis-state family and the five reconstructed finite event weightings",
+  "conditional_surface_status": "exact on the declared 155-word basis-state family, five reconstructed finite event weightings, and Cycle-974 fixed-input product-extension surrogate",
   "cycle": 978,
   "hypothetical_axiom_status": null,
   "pass": true,
-  "primary_source_sha256": "ff93516fd127b6ffef8a5d521f213d8bf311aa0b69c5548f911a9d490ab73d3b",
+  "primary_source_sha256": "e5d7214357e6eccccd1c818ee8800ff950d82a9908419e273eba5e29c76ef589",
   "proposal_allowed": false,
   "proposal_allowed_reason": "finite one-step basis-state horizon; no full continuous M_2(C) probability law",
   "reachability_to_target": "closes",

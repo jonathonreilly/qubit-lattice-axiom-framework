@@ -1,8 +1,20 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle978_three_class_born_independent_check_2026_08_10.py
+runner_sha256: 437ce049157d94ac904c0908a6e74ebee952ec77f32cdacceb52263322cf0e6b
+input_fingerprint_sha256: f56e384cb1b3923064606c3f6f18698b63c858ea6b0a6780255023b7b6a8fb7a
+timeout_sec: 1400
+exit_code: 0
+elapsed_sec: 0.91
+status: ok
+----- stdout -----
 CYCLE978_THREE_CLASS_BORN_INDEPENDENT_CHECK
 R0_PRIMARY_AST_AND_PINS PASS :: source_reads=3<=6; sha_pins=True; blocked_imports=[]
 R1_INDEPENDENT_FAMILY_AND_CLASSES PASS :: family=155; witnesses=21; classes={"CNOT":6,"TOF_OPPOSITE_CONTROLS":3,"TOF_PERPENDICULAR_CONTROLS":12}; covariance_failures=0
 R2_REFUTE_PER_CLASS_AND_JOINT PASS :: table_5x3={"M1_COUNTING":{"CNOT":"SURVIVES","TOF_OPPOSITE_CONTROLS":"SURVIVES","TOF_PERPENDICULAR_CONTROLS":"SURVIVES"},"M2_PER_WORLD_UNIFORM":{"CNOT":"SURVIVES","TOF_OPPOSITE_CONTROLS":"SURVIVES","TOF_PERPENDICULAR_CONTROLS":"SURVIVES"},"M3_OCCUPATION_WEIGHTED":{"CNOT":"SURVIVES","TOF_OPPOSITE_CONTROLS":"SURVIVES","TOF_PERPENDICULAR_CONTROLS":"SURVIVES"},"M4_FORMATION_LIFETIME":{"CNOT":"SURVIVES","TOF_OPPOSITE_CONTROLS":"SURVIVES","TOF_PERPENDICULAR_CONTROLS":"SURVIVES"},"M5_FORMATION_MOMENT":{"CNOT":"SURVIVES","TOF_OPPOSITE_CONTROLS":"SURVIVES","TOF_PERPENDICULAR_CONTROLS":"SURVIVES"}}; joint_survivors=[]; first_joint_disagreement={"class":"TOF_PERPENDICULAR_CONTROLS","configuration":[0,[1,0,0,0,0,0]],"reference_class":"CNOT","reference_output":1,"reference_witness":"CNOT(+x->C)","witness":"TOF(+x,+y->C)","witness_output":0}; artifact=NULL_WAS_FAMILY_ARTIFACT
-R3_RECEIPT_CACHE_BINDING PASS :: primary_pass=True; cache_bytes=3635
+R3_RECEIPT_CACHE_BINDING PASS :: primary_pass=True; cache_bytes=4781
 R4_ACTIVE_CORRUPTION_PROBES PASS :: {"artifact_label":true,"born_wall_status":true,"class_member_count":true,"family_size":true,"joint_survivors":true,"joint_witness":true,"per_class_verdict":true,"witness_count":true}
-R5_CONTROLS PASS :: runtime_s=0.862<1400; stdout_upper_bound=1677<6000<150000
+R5_CONTROLS PASS :: runtime_s=0.871<1400; stdout_upper_bound=1677<6000<150000
 TOTAL: PASS=6 FAIL=0
+
+----- stderr -----
+

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Cycle 978: five event weightings versus the full three-class law.
+"""Cycle 978: five event weightings versus three displayed representatives.
 
 Cited primaries are provenance only: cached notes are checked as text and
 cached runners are parsed as AST at pinned git objects.  They are never
@@ -124,12 +124,14 @@ PER_CLASS_CRITERION = (
     " exact first class-conditional configuration mismatch."
 )
 JOINT_CRITERION = (
-    "One-rule joint criterion: the same unindexed conditional kernel"
-    " K_i(y|x,n) in one extension P_i(e,x,n,y) must equal every"
-    " reconstructed class kernel L_c(y|x,n) pointwise. No class label or"
+    "Cycle-974-surrogate common-kernel joint criterion: the same unindexed"
+    " fixed-input conditional kernel K_i(y|x,n) in one extension"
+    " P_i(e,x,n,y) must equal every"
+    " displayed representative kernel L_c(y|x,n) pointwise. No class label or"
     " carrier is added because c is not a nearest-neighbour condition."
     " Exclude at the first pair of class witnesses whose truth tables"
-    " disagree on an exact (x,n,y) configuration."
+    " disagree on an exact (x,n,y) configuration. This is not the full"
+    " Admissibility kernel K(y|n): x is an auxiliary supplied local input."
 )
 
 FIXTURE_BANKS = 2
@@ -146,7 +148,6 @@ DIRECTIONS = (
 CONDITIONS = tuple(product((0, 1), repeat=6))
 OTHER_CONTEXTS = tuple(product((0, 1), repeat=5))
 RECEIPT_PATH = ROOT / "outputs/three_class_born_compatibility_cycle978_receipt_2026_08_10.json"
-CACHE_PATH = ROOT / "logs/runner-cache/frontier_cycle978_three_class_born_compatibility_2026_08_10.txt"
 PROVENANCE_BUNDLE_PATH = ROOT / AUDIT_INPUT_PATHS[0]
 
 
@@ -1186,7 +1187,7 @@ def evaluate_joint_extension(
                             ],
                             "quantity": (
                                 "one unindexed K(y|x,n) equals both "
-                                "class kernels"
+                                "displayed representative kernels"
                             ),
                             "reference_output": reference_y,
                             "witness_output": class_y,
@@ -1449,6 +1450,18 @@ def render_stdout(receipt: dict) -> str:
         + f" runtime_s={controls['runtime_seconds']:.3f}<1400;"
         + f" stdout_bytes={controls['stdout_bytes']}<6000<150000"
     )
+    lines.extend((
+        "per_element: checked — each of the five finite weighting rows has"
+        " the same exact representative-kernel disagreement.",
+        "per_site: checked on the target-centred seven-site star — covariance"
+        " transports the finite witness, without a lattice-wide extrapolation.",
+        "per_mode: checked and not executed — no continuous M_2(C) modes are"
+        " present in the declared basis-state gate family.",
+        "per_block: checked — CNOT, perpendicular-control TOF, and"
+        " opposite-control TOF representative blocks are reconstructed.",
+        "lattice_wide: checked and not executed — only translations of the"
+        " one-step star are verified, not a full axiom-level stochastic law.",
+    ))
     passed = sum(receipt["checks"].values())
     failed = len(receipt["checks"]) - passed
     lines.append(f"TOTAL: PASS={passed} FAIL={failed}")
@@ -1561,16 +1574,18 @@ def run() -> tuple[dict, str]:
     receipt = {
         "cycle": 978,
         "claim": (
-            "five finite event weightings versus the full reconstructed "
-            "three-class radius-one one-step star law"
+            "five finite event weightings versus three displayed radius-one "
+            "one-step representative truth tables under the Cycle-974 "
+            "fixed-input product-extension surrogate"
         ),
         "claim_type": "bounded_theorem",
         "actual_current_surface_status": "bounded-support",
         "trace_class": "direct_blocker_closure",
         "reachability_to_target": "closes",
         "conditional_surface_status": (
-            "exact on the declared 155-word basis-state family and the "
-            "five reconstructed finite event weightings"
+            "exact on the declared 155-word basis-state family, five "
+            "reconstructed finite event weightings, and Cycle-974 "
+            "fixed-input product-extension surrogate"
         ),
         "hypothetical_axiom_status": None,
         "admitted_observation_status": None,
@@ -1638,8 +1653,9 @@ def run() -> tuple[dict, str]:
                 "relation_to_cycle974": (
                     "the product form and event marginal are unchanged, but "
                     "one unindexed conditional kernel must now satisfy all "
-                    "three reconstructed class laws because the substrate "
-                    "has one nearest-neighbour rule"
+                    "three reconstructed class laws on the fixed-(x,n) "
+                    "surrogate; this does not identify the axiom-level "
+                    "nearest-neighbour kernel after auxiliary x is removed"
                 ),
                 "joint": compatibility["joint"],
                 "survivors": compatibility["joint_survivors"],
@@ -1729,8 +1745,6 @@ def main() -> int:
         json.dumps(receipt, indent=2, sort_keys=True) + "\n",
         encoding="utf-8",
     )
-    CACHE_PATH.parent.mkdir(parents=True, exist_ok=True)
-    CACHE_PATH.write_text(output, encoding="utf-8")
     sys.stdout.write(output)
     return 0 if receipt["pass"] else 1
 

@@ -1486,6 +1486,8 @@ reproduces the complete width-three numerical surface. The exact stack seeds
 4,819 rows / 3,697 runners and stops only at the inherited stage-7 epoch
 mismatch; a five-file current-main overlay passes all 18 stages at checkpoint
 `67d28dfc902f`. Changed evidence is clean for `1/1` Block-35 and `35/35`
-stacked claims. Science commit is `1c9d88cbbc`; campaign conformance, delivery,
-and independent audit remain pending. No canonical edit, fixed percentage
+stacked claims. Science commit is `1c9d88cbbc`; campaign conformance commit is
+`290330ceb1`. PR #6112 is open, mergeable, and clean, stacked exactly on
+Block-34 delivery head `4511720608`; independent audit remains pending. No
+canonical edit, fixed percentage
 move, audit verdict, or `review-loop` occurs.

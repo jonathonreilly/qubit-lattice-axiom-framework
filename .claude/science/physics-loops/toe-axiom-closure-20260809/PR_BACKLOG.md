@@ -681,8 +681,9 @@ surface. The exact stack seeds 4,819 rows / 3,697 runners and reaches only the
 inherited stage-7 dependency-policy epoch mismatch; the controlled five-file
 current-main overlay passes all 18 stages at checkpoint `67d28dfc902f`.
 Changed evidence is clean for `1/1` Block-35 and `35/35` stacked claims.
-Science commit is `1c9d88cbbc`; campaign conformance, PR delivery, and
-independent audit are pending.
+Science commit is `1c9d88cbbc`; campaign conformance commit is `290330ceb1`.
+PR #6112 is open, mergeable, and clean, stacked exactly on Block-34 delivery
+head `4511720608`; independent audit remains pending.
 PR #6096 remains a complementary proper-length sibling requiring later
 explicit reconciliation. No canonical edit, percentage move, audit verdict,
 or `review-loop` is used.

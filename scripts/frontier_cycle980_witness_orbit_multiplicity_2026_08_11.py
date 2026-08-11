@@ -67,7 +67,6 @@ BLOCKLIST_AST_MODULES = (
 
 PRIMARY_PATH = "scripts/frontier_cycle980_witness_orbit_multiplicity_2026_08_11.py"
 RECEIPT_PATH = "outputs/witness_orbit_multiplicity_cycle980_receipt_2026_08_11.json"
-CACHE_PATH = "logs/runner-cache/frontier_cycle980_witness_orbit_multiplicity_2026_08_11.txt"
 LANDED_GATE_MENU = ("X", "CNOT", "TOF")
 CENTER = (0, 0, 0)
 DIRECTIONS = (
@@ -534,19 +533,6 @@ def input_controls() -> dict:
     }
 
 
-def input_fingerprint() -> str:
-    hasher = sha256()
-    hasher.update(b"runner-cache-input-fingerprint-v1\0")
-    for relative in AUDIT_INPUT_PATHS:
-        relative_bytes = relative.encode()
-        payload = (ROOT / relative).read_bytes()
-        hasher.update(len(relative_bytes).to_bytes(8, "big"))
-        hasher.update(relative_bytes)
-        hasher.update(len(payload).to_bytes(8, "big"))
-        hasher.update(payload)
-    return hasher.hexdigest()
-
-
 def render_stdout(receipt: dict) -> str:
     findings = receipt["findings"]
     orbit = findings["orbit_decomposition"]
@@ -581,21 +567,7 @@ def render_stdout(receipt: dict) -> str:
     return "\n".join(rows) + "\n"
 
 
-def cache_bytes(stdout: str, source_sha: str) -> bytes:
-    header = (
-        "===== runner cache v1 =====\n"
-        f"runner: {PRIMARY_PATH}\n"
-        f"runner_sha256: {source_sha}\n"
-        f"input_fingerprint_sha256: {input_fingerprint()}\n"
-        f"timeout_sec: {AUDIT_TIMEOUT_SEC}\n"
-        "exit_code: 0\n"
-        "status: ok\n"
-        "----- stdout -----\n"
-    )
-    return (header + stdout + "----- stderr -----\n\n").encode()
-
-
-def run() -> tuple[dict, str, bytes]:
+def run() -> tuple[dict, str]:
     started = monotonic()
     controls = input_controls()
     first = science_measurement()
@@ -666,7 +638,7 @@ def run() -> tuple[dict, str, bytes]:
     receipt = {
         "cycle": CYCLE,
         "artifact": "witness orbit multiplicity bounded theorem primary",
-        "audit_status": "unset; independent audit remains required",
+        "audit_status_authority": "independent audit lane only",
         "integrity_policy": (
             "checks gate construction and bookkeeping only; null, non-closed, or non-three-orbit outcomes remain clean reportable findings"
         ),
@@ -690,22 +662,17 @@ def run() -> tuple[dict, str, bytes]:
         receipt["checks"]["D_CONTROLS"] = False
         stdout = render_stdout(receipt)
     receipt["pass"] = all(receipt["checks"].values())
-    cache = cache_bytes(stdout, source_sha)
-    receipt["runner_cache_sha256"] = sha256(cache).hexdigest()
     receipt["stdout_sha256"] = sha256(stdout.encode()).hexdigest()
-    return receipt, stdout, cache
+    return receipt, stdout
 
 
 def main() -> int:
     if sys.argv[1:]:
         raise SystemExit(f"usage: {Path(__file__).name}")
-    receipt, stdout, cache = run()
+    receipt, stdout = run()
     receipt_path = ROOT / RECEIPT_PATH
-    cache_path = ROOT / CACHE_PATH
     receipt_path.parent.mkdir(parents=True, exist_ok=True)
-    cache_path.parent.mkdir(parents=True, exist_ok=True)
     receipt_path.write_text(json.dumps(receipt, indent=2, sort_keys=True) + "\n", encoding="utf-8")
-    cache_path.write_bytes(cache)
     sys.stdout.write(stdout)
     return 0 if receipt["pass"] else 1
 

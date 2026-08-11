@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/physical_cell_cutting_kernel_colour_closed_form_cycle772_2026_08_11.py
+runner_sha256: b653254793a26256568bccc3edea17759cf84f99979484e311738125042427dd
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 19.40
+status: ok
+----- stdout -----
+PASS C0 cell 2672 unit-det pieces, 400 at cost floor 6, 15800 cuttings of 24, 192 pieces used, 1975 cuttings each, 379200 = 379200
+PASS C1 covers 192, each of 8 pieces, each meeting every cutting exactly once, 8 x 1975 = 15800
+PASS C2 maps 384 distinct and shut, 384 piece and cover bijections, one orbit of 192 each, free: 96 x 384 = 36864
+PASS C3 every table 2-regular, 4608 cycles all of length 8, the alternating vectors die over Z, supports disjoint
+PASS C4 canonical kernels give 2 subspaces of dim 48, class sizes 48 and 48, same split at 1000003 and 1000033
+PASS C5 rejector: the 96 tables are pairwise distinct, and 20 piece-swapped kernels keep dim 48 yet match neither class
+PASS C6 the two kernels span 84 at both primes, so they meet in 48 + 48 - 84 = 12
+PASS C7 the 16 flips act freely with 12 piece orbits; the anti-invariant space has rank 12, lies in every kernel, dies on all 96
+PASS C8 rejector: the invariant space also has rank 12 but meets every kernel in 0, and all 96 tables leave it alive
+PASS C9 7 maps generate all 384; all 672 generator images of the 96 kernel basis vectors stay inside, 0 outside
+PASS C10 rejector: dropping one basis vector leaves rank 47, and 5 of its 329 generator images fall outside
+PASS C11 stacking either colour gives 9216 rows of rank 144, the rank of every one of the 96 single tables
+PASS C12 all 2304 cross-colour stacks have rank 180 = 192 - 12, while all 2256 same-colour pairs stay at 144
+PASS C13 A + B all ones, all row and column sums 96; the index-order split shares that yet has rank 133, so regularity alone gives nothing
+PASS C14 A and B are covariant on all 36864 pairs under all 384 maps; swapping two pieces in A breaks that for 382 of them
+PASS C15 rank A = rank B = 4 at both primes, nullity 188, and A stacked on B still measures 4
+PASS C16 A and B kill all 96 kernel basis vectors over Z, while the index-order control fails on all 48 of each class
+PASS C17 A and B each have 4 distinct rows of 48 covers and 6 distinct columns of 32 pieces, constant on all 24 blocks
+PASS C18 each 4 by 6 pattern has 12 ones of 24, row sums 3, column sums 2, rank 4 at both primes, and the two are complementary
+PASS C19 exactly 16 of the 384 maps hold every row and column block, and they are exactly the 16 pure flips
+PASS C20 each cover has one non-identity fixer, a single flip; its axis takes 4 values of 48 covers, and those are the row blocks
+PASS C21 min(k, 5 - k) peaks on exactly 2 axes per piece; the pair takes 6 values of 32 pieces, and those are the column blocks
+PASS C22 axis-in-pair is constant on all 96 orbits and splits 48/48; it meets the kernel class on 0 of 36864 pairs, so equal up to naming
+PASS C23 rejector: shifting every piece pair by one axis disagrees on 24576 of 36864 pairs, and shifting every cover axis on 24576
+PASS C24 honest negative: the adjacent-corner count gives 1 label and the piece fixer weight gives 3, short of the 6 classes
+PASS C25 both labels are equivariant for the axis action: 0 failures in 73728 cover checks and 0 in 73728 piece checks
+PASS C26 rejector: the piece label shifted by one axis fails equivariance on 57344 of the same 73728 checks
+PASS C27 every cover holds 8 pieces of which 6 carry its axis, and every piece lies in 8 covers of which 6 carry the axis
+PASS C28 the incidence table is the entrywise sum of exactly 4 orbits, 3 of one colour and 1 of the other
+PASS C29 the stack of those 4 has rank 180 while their sum has rank 105 at both primes, and 192 - 105 = 87
+PASS C30 honest negative: the shared-corner profile takes 25 values, 21 of them carrying both colours, so it cannot fix the colour
+two kernels of dim 48 meeting in 12, join 84, either colour stack rank 144, colour sums rank 4, incidence rank 105
+elapsed 19 s, peak resident 178 MB
+TOTAL: PASS=31 FAIL=0
+
+----- stderr -----
+

@@ -205,6 +205,35 @@ review-only flags contradict the drain's land-end-to-end contract).
 2. **One isolated worktree per PR.** Parallel reviews never share a
    worktree or a checkout; shared worktrees race and have destroyed findings
    in this repo's history.
+
+   **Worktree lifecycle (disk discipline — mandatory).** A full checkout of
+   this repo costs ~1.8 GB. Concurrent reviews plus per-cycle confirm trees
+   have repeatedly exhausted the host disk (ENOSPC kills in-flight reviewers
+   and workers mid-run, which is how findings get lost). Create every review
+   worktree sparse, guard on free space, and remove it on exit:
+
+   ```bash
+   # preflight: refuse to spawn when the box is nearly full
+   avail_gb=$(df -Pg / | awk 'NR==2 {print $4}')
+   [ "$avail_gb" -ge 5 ] || { echo "ENOSPC guard: ${avail_gb}G free (<5G) — not spawning"; exit 1; }
+
+   WT=$(mktemp -d /private/tmp/rev-<N>-XXXXXX)
+   trap 'git worktree remove --force "$WT" 2>/dev/null; git worktree prune' EXIT
+
+   git worktree add --no-checkout -q "$WT" <branch-or-ref>
+   git -C "$WT" sparse-checkout set docs scripts logs/runner-cache outputs
+   git -C "$WT" checkout -q
+   ```
+
+   Measured on this repo (2026-08-11): full checkout 1.8 GB, sparse checkout
+   312 MB — an 83% reduction with every path a reviewer reads still present.
+   Widen the sparse set when a review genuinely needs more (`sparse-checkout
+   add <path>`); never widen it to the whole tree by default.
+
+   The `trap` is not optional: a crashed or killed reviewer otherwise leaks
+   its worktree permanently, and `git worktree list` fills with prunable
+   entries whose directories are gone. Run `git worktree prune` at the start
+   of a drain as well, to clear metadata left by earlier crashes.
 3. **One reviewer process per PR at a time**, applicable lenses combined
    into a single pass (two for large diffs), findings written incrementally
    to an untracked file in that PR's worktree, verdict line last. Freeze

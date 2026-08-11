@@ -68,9 +68,26 @@ regardless of executor.
    (`git show origin/main:docs/audit/data/ledger/<claim-id-prefix>/<claim-id>.json`)
    before citing anything as retained. Derive the result (algebra-before-spec, above), then
    decide the exact object, claim type, and boundary.
-2. **Worktree per PR.** `git worktree add /tmp/<name>-wt -b <branch>
-   origin/main`. Never work in the shared main tree; concurrent sessions race
-   it.
+2. **Worktree per PR (sparse, guarded, self-cleaning).** Never work in the
+   shared main tree; concurrent sessions race it. A full checkout costs
+   ~1.8 GB and concurrent lanes have exhausted the host disk repeatedly, so
+   spawn sparse and clean up on exit:
+
+   ```bash
+   avail_gb=$(df -Pg / | awk 'NR==2 {print $4}')
+   [ "$avail_gb" -ge 5 ] || { echo "ENOSPC guard: ${avail_gb}G free (<5G)"; exit 1; }
+   WT=/private/tmp/<name>-wt
+   trap 'git worktree remove --force "$WT" 2>/dev/null; git worktree prune' EXIT
+   git worktree add --no-checkout -q "$WT" -b <branch> origin/main
+   git -C "$WT" sparse-checkout set docs scripts logs/runner-cache outputs
+   git -C "$WT" checkout -q
+   ```
+
+   Measured 2026-08-11: full 1.8 GB vs sparse 312 MB (83% less) with every
+   path a block touches still present. Widen with `sparse-checkout add
+   <path>` only when a block genuinely needs more. Drop the `trap` only if
+   the worktree is deliberately long-lived (a reused lane worktree) — a
+   crashed one-shot worker otherwise leaks 1.8 GB permanently.
 3. **Spec file (planner).** Write `/tmp/spec-<name>.md` using the template
    below. The spec is the contract — exact files, exact phrases, exact
    acceptance checks, and EVERY proper name the artifact may use.

@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle986_patch_uniformity_induction_2026_08_11.py
-runner_sha256: b4f0a055807b97247613623d9a13bddcb678a4e05b55da97805bcd3ab6ce5636
+runner_sha256: 442afdb3ee621cfb4e1b05e490d937ce5379785c2cf55820b7aed531de2a149c
 input_fingerprint_sha256: db7786cde9df9554b9e925bd8927e6f129e0cdd1546e5ea349a31056104b73bb
 timeout_sec: 1400
 exit_code: 0
-elapsed_sec: 2.04
+elapsed_sec: 2.28
 status: ok
 ----- stdout -----
 CYCLE986_PATCH_UNIFORMITY_STAR_GLUING_INDUCTION

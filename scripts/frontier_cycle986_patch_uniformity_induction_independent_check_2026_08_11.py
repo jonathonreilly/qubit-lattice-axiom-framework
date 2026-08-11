@@ -47,12 +47,12 @@ BYTE_PINNED_INPUT_PATHS = (
     "outputs/patch_uniformity_induction_cycle986_receipt_2026_08_11.json",
 )
 EXPECTED_INPUT_SHA256 = {
-    PRIMARY_PATH: "b4f0a055807b97247613623d9a13bddcb678a4e05b55da97805bcd3ab6ce5636",
-    PRIMARY_RECEIPT_PATH: "cb52cdd73478a09cdc85881b97b6bd5a057aeede6a2a25f3511471c8c40aaa60",
+    PRIMARY_PATH: "442afdb3ee621cfb4e1b05e490d937ce5379785c2cf55820b7aed531de2a149c",
+    PRIMARY_RECEIPT_PATH: "88db21fb2c46b584a5fd0ab8d876c098ef2560a9009732e62953a58fbb55996f",
 }
 EXPECTED_INPUT_BLOBS = {
-    PRIMARY_PATH: "5239838a2bc8e2d9bc5b381d4b0b3a1bba00ae4d",
-    PRIMARY_RECEIPT_PATH: "2ef698366e0ad2b5de0b059424630ef3d30317d0",
+    PRIMARY_PATH: "765f14989d67860806be5762444ccf70ad401f35",
+    PRIMARY_RECEIPT_PATH: "5b6b355e24df01dbe097dc962a377615a8d07d7a",
 }
 FORBIDDEN_IMPORT_FRAGMENTS = (
     "frontier_cycle719_two_rail_recurrent_controller_core",
@@ -424,11 +424,28 @@ def independent_case(name: str, existing: tuple, new_target: tuple) -> dict:
     }
 
 
+def independent_base() -> dict:
+    target_rows = [independent_target_census(A), independent_target_census(B)]
+    overlap = independent_overlap(A, B)
+    return {
+        "targets": [list(A), list(B)],
+        "support_site_count": len(set(star(A)) | set(star(B))),
+        "per_target_census": target_rows,
+        "target_local_template_fields_agree": target_rows[0] == {
+            **target_rows[1], "target": target_rows[0]["target"]
+        },
+        "adjacent_star_overlap": overlap,
+        "outcome": "P2X_BASE_VERIFIED",
+        "exact_obstruction": None,
+    }
+
+
 def independent_expected() -> dict:
     universal = independent_universal()
     cases = [independent_case(*case) for case in CASES]
     return {
         "universal": universal,
+        "base": independent_base(),
         "cases": cases,
         "class_table": independent_class_table(),
         "group_order": len(ACTIONS),
@@ -455,6 +472,7 @@ def selected_primary_view(receipt: dict) -> dict:
                 "all_pairwise_chart_restrictions_agree"
             ],
         },
+        "base": induction["base_case_reconstruction"],
         "cases": cases,
         "class_table": cases[0]["new_target_census"]["class_size_J_table"],
         "group_order": cases[0]["new_target_census"]["orbit_stabilizer_products"][0],
@@ -512,6 +530,11 @@ def derive_case_outcome(row: dict) -> tuple[str, str | None]:
 
 def derive_induction(receipt: dict) -> tuple[str, str | None]:
     gluing = receipt["findings"]["A_GLUING_STEP"]
+    base = receipt["findings"]["C_INDUCTION_STATUS"]["base_case_reconstruction"]
+    if base["outcome"] != "P2X_BASE_VERIFIED":
+        return "OBSTRUCTED", compact({
+            "case": "P2x_base", "obstruction": base["exact_obstruction"],
+        })
     if gluing["universal_local_step_finding"] != (
         "VERIFIED_FOR_EVERY_NONEMPTY_TWO_STAR_OVERLAP_TYPE"
     ):
@@ -594,6 +617,24 @@ def validate_bookkeeping(receipt: dict, cache_payload: str) -> tuple[bool, list[
             errors.append(f"case_obstruction:{index}")
 
     expected_status, expected_obstruction = derive_induction(receipt)
+    base = induction["base_case_reconstruction"]
+    if len(base["targets"]) != len(base["per_target_census"]) or len(base["targets"]) != 2:
+        errors.append("base_target_count")
+    if base["support_site_count"] != 12:
+        errors.append("base_support_count")
+    base_fields = (
+        "relative_family_size", "witness_count", "class_size_J_table",
+        "orbit_stabilizer_products", "all_words_routable",
+        "landed_vs_boolean_failure_count",
+    )
+    expected_base_agreement = all(
+        row[field] == base["per_target_census"][0][field]
+        for row in base["per_target_census"][1:] for field in base_fields
+    )
+    if base["target_local_template_fields_agree"] != expected_base_agreement:
+        errors.append("base_local_agreement")
+    if base["outcome"] not in {"P2X_BASE_VERIFIED", "OBSTRUCTED", "NOT_HOSTABLE"}:
+        errors.append("base_outcome")
     if induction["induction_status"] != expected_status:
         errors.append("induction_status")
     if induction["exact_obstruction"] != expected_obstruction:

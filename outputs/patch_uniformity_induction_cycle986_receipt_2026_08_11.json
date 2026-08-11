@@ -5056,7 +5056,274 @@
       ]
     },
     "C_INDUCTION_STATUS": {
-      "base_case": "P2x={(0,0,0),(1,0,0)} with the two complete closed stars; reconstructed inside this runner without executing prior-cycle text or AST",
+      "base_case_provenance": "P2x is reconstructed inside this runner without executing prior-cycle text or AST",
+      "base_case_reconstruction": {
+        "adjacent_star_overlap": {
+          "agreement": true,
+          "centre_distance_L1": 1,
+          "left_target": [
+            0,
+            0,
+            0
+          ],
+          "overlap_type": "ADJACENT_CENTRES",
+          "pair_relations_boolean_classes_J_and_paths_agree": true,
+          "right_minus_left": [
+            1,
+            0,
+            0
+          ],
+          "right_target": [
+            1,
+            0,
+            0
+          ],
+          "shared_pair_agreement_table": [
+            {
+              "canonical_global_path_left": [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  0,
+                  0
+                ]
+              ],
+              "canonical_global_path_right": [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  0,
+                  0
+                ]
+              ],
+              "canonical_global_paths_agree": true,
+              "global_pair": [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  0,
+                  0
+                ]
+              ],
+              "left_J": 1,
+              "left_changed_edge_pairs": 64,
+              "left_class": "CNOT",
+              "left_descriptor": "CNOT(+x->C)",
+              "left_local_wires": [
+                0,
+                1
+              ],
+              "normalized_boolean_table_left": [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  1
+                ],
+                [
+                  1,
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  1,
+                  0
+                ]
+              ],
+              "normalized_boolean_table_right": [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  1
+                ],
+                [
+                  1,
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  1,
+                  0
+                ]
+              ],
+              "normalized_boolean_tables_agree": true,
+              "right_J": 1,
+              "right_changed_edge_pairs": 64,
+              "right_class": "CNOT",
+              "right_descriptor": "CNOT(-x->C)",
+              "right_local_wires": [
+                2,
+                0
+              ],
+              "semantic_pair_in_both": true,
+              "z3_edge_left": true,
+              "z3_edge_right": true
+            }
+          ],
+          "shared_pair_count": 1,
+          "shared_site_agreement_table": [
+            {
+              "binding_agrees": true,
+              "global_site": [
+                0,
+                0,
+                0
+              ],
+              "left_binding": "q_(0,0,0)",
+              "left_wire": 0,
+              "right_binding": "q_(0,0,0)",
+              "right_wire": 2
+            },
+            {
+              "binding_agrees": true,
+              "global_site": [
+                1,
+                0,
+                0
+              ],
+              "left_binding": "q_(1,0,0)",
+              "left_wire": 1,
+              "right_binding": "q_(1,0,0)",
+              "right_wire": 0
+            }
+          ],
+          "shared_site_count": 2,
+          "site_bindings_agree": true
+        },
+        "exact_obstruction": null,
+        "outcome": "P2X_BASE_VERIFIED",
+        "per_target_census": [
+          {
+            "all_words_routable": true,
+            "class_size_J_table": [
+              [
+                "CNOT",
+                6,
+                [
+                  1
+                ]
+              ],
+              [
+                "TOF_OPPOSITE_CONTROLS",
+                3,
+                [
+                  0
+                ]
+              ],
+              [
+                "TOF_PERPENDICULAR_CONTROLS",
+                12,
+                [
+                  2
+                ]
+              ]
+            ],
+            "complete_closed_star": true,
+            "expanded_primitive_count": 232,
+            "landed_vs_boolean_failure_count": 0,
+            "maximum_route_distance": 2,
+            "maximum_touched_sites": 3,
+            "orbit_stabilizer_products": [
+              24,
+              24,
+              24
+            ],
+            "relative_family_size": 23,
+            "route_failure_count": 0,
+            "routed_nn_gate_count": 292,
+            "target": [
+              0,
+              0,
+              0
+            ],
+            "truth_table_evaluations": 2944,
+            "witness_count": 21
+          },
+          {
+            "all_words_routable": true,
+            "class_size_J_table": [
+              [
+                "CNOT",
+                6,
+                [
+                  1
+                ]
+              ],
+              [
+                "TOF_OPPOSITE_CONTROLS",
+                3,
+                [
+                  0
+                ]
+              ],
+              [
+                "TOF_PERPENDICULAR_CONTROLS",
+                12,
+                [
+                  2
+                ]
+              ]
+            ],
+            "complete_closed_star": true,
+            "expanded_primitive_count": 232,
+            "landed_vs_boolean_failure_count": 0,
+            "maximum_route_distance": 2,
+            "maximum_touched_sites": 3,
+            "orbit_stabilizer_products": [
+              24,
+              24,
+              24
+            ],
+            "relative_family_size": 23,
+            "route_failure_count": 0,
+            "routed_nn_gate_count": 292,
+            "target": [
+              1,
+              0,
+              0
+            ],
+            "truth_table_evaluations": 2944,
+            "witness_count": 21
+          }
+        ],
+        "support_site_count": 12,
+        "target_local_template_fields_agree": true,
+        "targets": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ]
+      },
       "exact_obstruction": null,
       "exact_quantifier": "for every integer n>=2 and every ordered tuple of distinct targets (t1,...,tn) in Z^3 such that t2-t1 is a signed unit vector and, for each m=3,...,n, S(tm) intersects the union of S(ti) for i<m, the same relative 23-program dependence-law chart is translation-uniform on all targets of the finite support union Omega_n",
       "full_infinite_translation_uniform_lattice_law_claimed": false,
@@ -5074,7 +5341,7 @@
   },
   "integrity_policy": "checks gate construction, reconciliation, and provenance only; verified, obstructed, not-hostable, and not-glueable outcomes remain cleanly reportable",
   "pass": true,
-  "primary_source_sha256": "b4f0a055807b97247613623d9a13bddcb678a4e05b55da97805bcd3ab6ce5636",
-  "science_digest": "1b1a61862b4afd711da688c6b9776fab1ce2c2ac1e4e4b78753042d7a68c52af",
+  "primary_source_sha256": "442afdb3ee621cfb4e1b05e490d937ce5379785c2cf55820b7aed531de2a149c",
+  "science_digest": "b54f3d7c79886a54b32cbabad4a786319c30a2499034d6d1e94757253b9c7349",
   "stdout_sha256": "2cab39376bb3123c0dd9e5e34049ef668158d0706d3d5816111f0d58629d8da2"
 }

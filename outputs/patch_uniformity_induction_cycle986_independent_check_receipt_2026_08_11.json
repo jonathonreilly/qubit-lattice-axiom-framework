@@ -1,7 +1,7 @@
 {
   "artifact": "finite-patch gluing induction independent refutation checker",
   "audit_status_authority": "independent audit lane only",
-  "checker_source_sha256": "6651d962fa05c38eda00bc94d4574d90c6e9714857deee339c16167e759dbe2f",
+  "checker_source_sha256": "268f2f641ec3d5bcc0682085e21b2b154036852919ad4f7c741394ad7d7ec772",
   "checks": {
     "A_INDEPENDENT_RECONSTRUCTION": true,
     "B_REFUTATION_POWER": true,
@@ -23,12 +23,12 @@
     "forbidden_imports": [],
     "house_stdout_limit_bytes": 6000,
     "input_git_blobs": {
-      "outputs/patch_uniformity_induction_cycle986_receipt_2026_08_11.json": "2ef698366e0ad2b5de0b059424630ef3d30317d0",
-      "scripts/frontier_cycle986_patch_uniformity_induction_2026_08_11.py": "5239838a2bc8e2d9bc5b381d4b0b3a1bba00ae4d"
+      "outputs/patch_uniformity_induction_cycle986_receipt_2026_08_11.json": "5b6b355e24df01dbe097dc962a377615a8d07d7a",
+      "scripts/frontier_cycle986_patch_uniformity_induction_2026_08_11.py": "765f14989d67860806be5762444ccf70ad401f35"
     },
     "input_sha256": {
-      "outputs/patch_uniformity_induction_cycle986_receipt_2026_08_11.json": "cb52cdd73478a09cdc85881b97b6bd5a057aeede6a2a25f3511471c8c40aaa60",
-      "scripts/frontier_cycle986_patch_uniformity_induction_2026_08_11.py": "b4f0a055807b97247613623d9a13bddcb678a4e05b55da97805bcd3ab6ce5636"
+      "outputs/patch_uniformity_induction_cycle986_receipt_2026_08_11.json": "88db21fb2c46b584a5fd0ab8d876c098ef2560a9009732e62953a58fbb55996f",
+      "scripts/frontier_cycle986_patch_uniformity_induction_2026_08_11.py": "442afdb3ee621cfb4e1b05e490d937ce5379785c2cf55820b7aed531de2a149c"
     },
     "literal_audit_input_paths": [
       "scripts/frontier_cycle986_patch_uniformity_induction_2026_08_11.py",
@@ -62,6 +62,273 @@
       }
     ],
     "independent_expected": {
+      "base": {
+        "adjacent_star_overlap": {
+          "agreement": true,
+          "centre_distance_L1": 1,
+          "left_target": [
+            0,
+            0,
+            0
+          ],
+          "overlap_type": "ADJACENT_CENTRES",
+          "pair_relations_boolean_classes_J_and_paths_agree": true,
+          "right_minus_left": [
+            1,
+            0,
+            0
+          ],
+          "right_target": [
+            1,
+            0,
+            0
+          ],
+          "shared_pair_agreement_table": [
+            {
+              "canonical_global_path_left": [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  0,
+                  0
+                ]
+              ],
+              "canonical_global_path_right": [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  0,
+                  0
+                ]
+              ],
+              "canonical_global_paths_agree": true,
+              "global_pair": [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  0,
+                  0
+                ]
+              ],
+              "left_J": 1,
+              "left_changed_edge_pairs": 64,
+              "left_class": "CNOT",
+              "left_descriptor": "CNOT(+x->C)",
+              "left_local_wires": [
+                0,
+                1
+              ],
+              "normalized_boolean_table_left": [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  1
+                ],
+                [
+                  1,
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  1,
+                  0
+                ]
+              ],
+              "normalized_boolean_table_right": [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  1
+                ],
+                [
+                  1,
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  1,
+                  0
+                ]
+              ],
+              "normalized_boolean_tables_agree": true,
+              "right_J": 1,
+              "right_changed_edge_pairs": 64,
+              "right_class": "CNOT",
+              "right_descriptor": "CNOT(-x->C)",
+              "right_local_wires": [
+                2,
+                0
+              ],
+              "semantic_pair_in_both": true,
+              "z3_edge_left": true,
+              "z3_edge_right": true
+            }
+          ],
+          "shared_pair_count": 1,
+          "shared_site_agreement_table": [
+            {
+              "binding_agrees": true,
+              "global_site": [
+                0,
+                0,
+                0
+              ],
+              "left_binding": "q_(0,0,0)",
+              "left_wire": 0,
+              "right_binding": "q_(0,0,0)",
+              "right_wire": 2
+            },
+            {
+              "binding_agrees": true,
+              "global_site": [
+                1,
+                0,
+                0
+              ],
+              "left_binding": "q_(1,0,0)",
+              "left_wire": 1,
+              "right_binding": "q_(1,0,0)",
+              "right_wire": 0
+            }
+          ],
+          "shared_site_count": 2,
+          "site_bindings_agree": true
+        },
+        "exact_obstruction": null,
+        "outcome": "P2X_BASE_VERIFIED",
+        "per_target_census": [
+          {
+            "all_words_routable": true,
+            "class_size_J_table": [
+              [
+                "CNOT",
+                6,
+                [
+                  1
+                ]
+              ],
+              [
+                "TOF_OPPOSITE_CONTROLS",
+                3,
+                [
+                  0
+                ]
+              ],
+              [
+                "TOF_PERPENDICULAR_CONTROLS",
+                12,
+                [
+                  2
+                ]
+              ]
+            ],
+            "complete_closed_star": true,
+            "expanded_primitive_count": 232,
+            "landed_vs_boolean_failure_count": 0,
+            "maximum_route_distance": 2,
+            "maximum_touched_sites": 3,
+            "orbit_stabilizer_products": [
+              24,
+              24,
+              24
+            ],
+            "relative_family_size": 23,
+            "route_failure_count": 0,
+            "routed_nn_gate_count": 292,
+            "target": [
+              0,
+              0,
+              0
+            ],
+            "truth_table_evaluations": 2944,
+            "witness_count": 21
+          },
+          {
+            "all_words_routable": true,
+            "class_size_J_table": [
+              [
+                "CNOT",
+                6,
+                [
+                  1
+                ]
+              ],
+              [
+                "TOF_OPPOSITE_CONTROLS",
+                3,
+                [
+                  0
+                ]
+              ],
+              [
+                "TOF_PERPENDICULAR_CONTROLS",
+                12,
+                [
+                  2
+                ]
+              ]
+            ],
+            "complete_closed_star": true,
+            "expanded_primitive_count": 232,
+            "landed_vs_boolean_failure_count": 0,
+            "maximum_route_distance": 2,
+            "maximum_touched_sites": 3,
+            "orbit_stabilizer_products": [
+              24,
+              24,
+              24
+            ],
+            "relative_family_size": 23,
+            "route_failure_count": 0,
+            "routed_nn_gate_count": 292,
+            "target": [
+              1,
+              0,
+              0
+            ],
+            "truth_table_evaluations": 2944,
+            "witness_count": 21
+          }
+        ],
+        "support_site_count": 12,
+        "target_local_template_fields_agree": true,
+        "targets": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ]
+      },
       "cases": [
         {
           "case": "k=2_to_3",
@@ -5183,6 +5450,6 @@
   },
   "integrity_policy": "checks gate independent reconstruction, bookkeeping, artifact binding, mutation rejection, and outcome neutrality only; science agreement is reported data",
   "pass": true,
-  "science_digest": "9ff11d0a0f823b2adcf095ddedbf9134166c8cbf88af522ec3f410c129de38b3",
+  "science_digest": "7745de21756a946e20c47beea2099ab551e76f49ff0856d6655bf83c014af623",
   "stdout_sha256": "7254d40812ed8f85300e68ae72992496515e2901e034b7ecd7057586b3a31d90"
 }

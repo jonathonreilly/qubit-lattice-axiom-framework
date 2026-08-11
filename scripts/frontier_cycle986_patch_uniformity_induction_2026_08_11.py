@@ -581,7 +581,48 @@ def gluing_step_measurement(census: dict) -> dict:
     }
 
 
-def derive_induction_status(gluing: dict, cases: list[dict]) -> tuple[str, str | None]:
+def base_case_measurement() -> dict:
+    target_rows = [target_census(TARGET_A), target_census(TARGET_B)]
+    overlap = overlap_record(TARGET_A, TARGET_B)
+    local_fields = (
+        "relative_family_size", "witness_count", "class_size_J_table",
+        "orbit_stabilizer_products", "all_words_routable",
+        "landed_vs_boolean_failure_count",
+    )
+    local_agreement = all(
+        row[field] == target_rows[0][field]
+        for row in target_rows[1:] for field in local_fields
+    )
+    if not all(row["all_words_routable"] for row in target_rows):
+        outcome = "NOT_HOSTABLE"
+        obstruction = "one or more P2x target charts are not route-hostable"
+    elif not local_agreement:
+        outcome = "OBSTRUCTED"
+        obstruction = "P2x target-local template records disagree"
+    elif not overlap["agreement"]:
+        outcome = "OBSTRUCTED"
+        obstruction = "P2x adjacent-star restrictions disagree"
+    else:
+        outcome = "P2X_BASE_VERIFIED"
+        obstruction = None
+    return {
+        "targets": [list(TARGET_A), list(TARGET_B)],
+        "support_site_count": len(set(closed_star(TARGET_A)) | set(closed_star(TARGET_B))),
+        "per_target_census": target_rows,
+        "target_local_template_fields_agree": local_agreement,
+        "adjacent_star_overlap": overlap,
+        "outcome": outcome,
+        "exact_obstruction": obstruction,
+    }
+
+
+def derive_induction_status(
+    gluing: dict, cases: list[dict], base: dict
+) -> tuple[str, str | None]:
+    if base["outcome"] != "P2X_BASE_VERIFIED":
+        return "OBSTRUCTED", compact({
+            "case": "P2x_base", "obstruction": base["exact_obstruction"],
+        })
     if gluing["universal_local_step_finding"] != (
         "VERIFIED_FOR_EVERY_NONEMPTY_TWO_STAR_OVERLAP_TYPE"
     ):
@@ -598,14 +639,14 @@ def derive_induction_status(gluing: dict, cases: list[dict]) -> tuple[str, str |
     return "FINITE_PATCH_INDUCTION_CLOSES_AT_DECLARED_SCOPE", None
 
 
-def induction_measurement(gluing: dict, cases: list[dict]) -> dict:
-    status, obstruction = derive_induction_status(gluing, cases)
+def induction_measurement(gluing: dict, cases: list[dict], base: dict) -> dict:
+    status, obstruction = derive_induction_status(gluing, cases, base)
     return {
         "induction_status": status,
         "exact_obstruction": obstruction,
-        "base_case": (
-            "P2x={(0,0,0),(1,0,0)} with the two complete closed stars; reconstructed "
-            "inside this runner without executing prior-cycle text or AST"
+        "base_case_reconstruction": base,
+        "base_case_provenance": (
+            "P2x is reconstructed inside this runner without executing prior-cycle text or AST"
         ),
         "exact_quantifier": (
             "for every integer n>=2 and every ordered tuple of distinct targets "
@@ -637,8 +678,9 @@ def induction_measurement(gluing: dict, cases: list[dict]) -> dict:
 def science_measurement() -> dict:
     overlap_census = universal_overlap_census()
     gluing = gluing_step_measurement(overlap_census)
+    base = base_case_measurement()
     cases = [extension_case(*case) for case in STEP_CASES]
-    induction = induction_measurement(gluing, cases)
+    induction = induction_measurement(gluing, cases, base)
     return {
         "A_GLUING_STEP": gluing,
         "B_STEP_VERIFICATION": {
@@ -748,8 +790,32 @@ def validate_science_bookkeeping(findings: dict) -> dict:
             for row in cases
         )
     )
-    expected_status, expected_obstruction = derive_induction_status(gluing, cases)
+    base = induction["base_case_reconstruction"]
+    base_fields = (
+        "relative_family_size", "witness_count", "class_size_J_table",
+        "orbit_stabilizer_products", "all_words_routable",
+        "landed_vs_boolean_failure_count",
+    )
+    base_local_agreement = all(
+        row[field] == base["per_target_census"][0][field]
+        for row in base["per_target_census"][1:] for field in base_fields
+    )
+    base_bookkeeping = bool(
+        len(base["targets"]) == len(base["per_target_census"]) == 2
+        and base["support_site_count"] == 12
+        and base["target_local_template_fields_agree"] == base_local_agreement
+        and base["adjacent_star_overlap"]["agreement"]
+        == (
+            base["adjacent_star_overlap"]["site_bindings_agree"]
+            and base["adjacent_star_overlap"]
+                ["pair_relations_boolean_classes_J_and_paths_agree"]
+        )
+        and base["outcome"] in {"P2X_BASE_VERIFIED", "OBSTRUCTED", "NOT_HOSTABLE"}
+    )
+    expected_status, expected_obstruction = derive_induction_status(gluing, cases, base)
     c = bool(
+        base_bookkeeping
+        and
         induction["induction_status"] == expected_status
         and induction["exact_obstruction"] == expected_obstruction
         and induction["full_infinite_translation_uniform_lattice_law_claimed"] is False

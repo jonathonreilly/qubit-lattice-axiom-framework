@@ -74,3 +74,39 @@ audit_note: >
   independence" means elementwise COMMUTATION of site algebras, not
   statistical independence; "sites do not talk" appears nowhere in
   landed main. Exposure is confined to unlanded campaign-5 material.
+
+waves6_8_results:
+  IS5_cycle980: PR #6111 — the 6/12/3 multiplicity DERIVED: three orbits of
+    one 24-element action, 6x4 = 12x2 = 3x8 = 24 (translations = the
+    recentering kernel); separator J(w) = ||sum c||^2 in {1,2,0}; three
+    classes forced only for alphabets containing BOTH CNOT and TOF (subset
+    alphabets give 0-3). Primary 4/4, checker 6/6, 8/8 corruptions rejected.
+  J1_cycle981: PR #6114 — J is landed-NEW at declared scope: 9 candidates
+    enumerated, 2 comparable and both DISAGREE, 7 not comparable. No
+    cross-lane bridge. Corpus-wide newness explicitly left open.
+  IS6_cycle982: PR #6113 — THE STRUCTURE IS NOT A SUBSTRATE ARTIFACT. On the
+    axiom's own adjacency (true Z^3 star K_{1,6}, a strict sub-relation of
+    the substrate wiring K_7; extra pairs = length-two paths): 7 sites,
+    23 programs, 21 witnesses, orbits 6x4 = 12x2 = 3x8 = 24, J = 1,2,0 —
+    IDENTICAL. Scope declared: finite local star; no infinite law claimed.
+  IS7_cycle983: PR #6115 — TRANSLATION_UNIFORM_AT_PATCH_SCOPE on P2x
+    (2 targets, 12 support sites): both targets give 21 witnesses, 6/12/3
+    classes, J = 1/2/0; shared sites, edge, Boolean table, classes and paths
+    agree EXACTLY. No infinite-lattice or probability-law claim. Checker
+    rejected 14/14 corruptions.
+  B5_cycle984: PR #6116 — the Born verdict TRANSFERS to Z^3: all five
+    weightings survive, wall UNMOVED; at p=1/4 all three classes give
+    TV=1/2, survivors 5/5. Primary 5/5, checker 8/8, 10/10 corruptions
+    rejected. Cluster-cap BACKLOG judgment disclosed.
+
+campaign6_arc_to_date: >
+  The 2026-08-05 Admissibility clause went from ZERO witnesses in the corpus
+  to: 21 witnesses in 3 covariant classes, multiplicities derived as orbit
+  arithmetic under a 24-element action, separated by a new invariant
+  J = ||sum c||^2, reproduced EXACTLY on the axiom's own Z^3 star adjacency
+  and uniform across a two-target patch — while the Born wall is confirmed
+  UNMOVED (5/5) on both the substrate and Z^3. Two of our own results were
+  caught and corrected in-campaign (972's uniqueness by 977; 978's collapse
+  by 979). Ops: PR #6109 fixes the review-worktree disk leak that had been
+  killing runs (1.8 GB -> 312 MB sparse, trap cleanup, 5 GB preflight);
+  34 crashed trees holding 21 GB were removed.

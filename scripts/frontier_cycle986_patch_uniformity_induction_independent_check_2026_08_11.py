@@ -47,12 +47,12 @@ BYTE_PINNED_INPUT_PATHS = (
     "outputs/patch_uniformity_induction_cycle986_receipt_2026_08_11.json",
 )
 EXPECTED_INPUT_SHA256 = {
-    PRIMARY_PATH: "b95440a62f3909a9fd584ae5d24b7c7a1bea24dccc8415e0950d9a3b87c46f7a",
-    PRIMARY_RECEIPT_PATH: "f4ce7ee8d1f4c4838234b2a63d8e006d099ff47b3e284d81fb25a5008764d3e2",
+    PRIMARY_PATH: "7999cab3a1a7bdf0d5f2a414d8fef905edb945a0f4a36305747206ca612a5991",
+    PRIMARY_RECEIPT_PATH: "fa37340d833bd993bff86f138de5113b92d85842fde61c7693e24bb132400371",
 }
 EXPECTED_INPUT_BLOBS = {
-    PRIMARY_PATH: "d591b1723ca7f0c80e83e6e334f2879f22550aa2",
-    PRIMARY_RECEIPT_PATH: "d2eb2799a81026ab8e36c04f39b437140c5713f8",
+    PRIMARY_PATH: "5630288f98a8f28fd28564762b62bd86f7e080a4",
+    PRIMARY_RECEIPT_PATH: "ac9135d6ce022a0c6fbd90ff1e2c902ca48acf21",
 }
 FORBIDDEN_IMPORT_FRAGMENTS = (
     "frontier_cycle719_two_rail_recurrent_controller_core",
@@ -723,6 +723,11 @@ def validate_bookkeeping(receipt: dict, cache_payload: str) -> tuple[bool, list[
         errors.append("quantifier_scope")
     if not all(receipt.get("checks", {}).values()) or not receipt.get("pass"):
         errors.append("primary_checks")
+    primary_probes = receipt.get("controls", {}).get("outcome_neutrality_probes", [])
+    if len(primary_probes) != 2 or not all(
+        probe.get("accepted_by_bookkeeping_gate") for probe in primary_probes
+    ):
+        errors.append("primary_outcome_neutrality_probes")
 
     cache = parse_cache(cache_payload)
     if not cache.get("valid_envelope"):

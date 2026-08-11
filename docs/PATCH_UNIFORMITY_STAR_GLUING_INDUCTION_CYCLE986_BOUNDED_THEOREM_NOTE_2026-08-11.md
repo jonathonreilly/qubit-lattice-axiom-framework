@@ -226,7 +226,9 @@ the six-file cap.
 The primary checks construction and reconciliation only. Its science finding
 is derived into one of `FINITE_PATCH_INDUCTION_CLOSES_AT_DECLARED_SCOPE`,
 `OBSTRUCTED`, or a named hosting/gluing failure without changing bookkeeping
-cleanliness.
+cleanliness. It self-probes a coherent shared-site binding obstruction and a
+coherent not-hostable case; both pass its bookkeeping gate with their narrowed
+science outcomes.
 
 The independent checker byte-pins the primary source and receipt, binds the
 complete canonical primary cache, and independently reconstructs:

@@ -1,7 +1,7 @@
 {
   "artifact": "finite-patch gluing induction independent refutation checker",
   "audit_status_authority": "independent audit lane only",
-  "checker_source_sha256": "9efc5adc701ed700a9c9db688826688badf629387aaaa69474645b3483f5fbf6",
+  "checker_source_sha256": "df8cf476c50e904c8d008b09dd35c36589173cdd2846b06dfc28b0c02a00a4d5",
   "checks": {
     "A_INDEPENDENT_RECONSTRUCTION": true,
     "B_REFUTATION_POWER": true,
@@ -23,12 +23,12 @@
     "forbidden_imports": [],
     "house_stdout_limit_bytes": 6000,
     "input_git_blobs": {
-      "outputs/patch_uniformity_induction_cycle986_receipt_2026_08_11.json": "d2eb2799a81026ab8e36c04f39b437140c5713f8",
-      "scripts/frontier_cycle986_patch_uniformity_induction_2026_08_11.py": "d591b1723ca7f0c80e83e6e334f2879f22550aa2"
+      "outputs/patch_uniformity_induction_cycle986_receipt_2026_08_11.json": "ac9135d6ce022a0c6fbd90ff1e2c902ca48acf21",
+      "scripts/frontier_cycle986_patch_uniformity_induction_2026_08_11.py": "5630288f98a8f28fd28564762b62bd86f7e080a4"
     },
     "input_sha256": {
-      "outputs/patch_uniformity_induction_cycle986_receipt_2026_08_11.json": "f4ce7ee8d1f4c4838234b2a63d8e006d099ff47b3e284d81fb25a5008764d3e2",
-      "scripts/frontier_cycle986_patch_uniformity_induction_2026_08_11.py": "b95440a62f3909a9fd584ae5d24b7c7a1bea24dccc8415e0950d9a3b87c46f7a"
+      "outputs/patch_uniformity_induction_cycle986_receipt_2026_08_11.json": "fa37340d833bd993bff86f138de5113b92d85842fde61c7693e24bb132400371",
+      "scripts/frontier_cycle986_patch_uniformity_induction_2026_08_11.py": "7999cab3a1a7bdf0d5f2a414d8fef905edb945a0f4a36305747206ca612a5991"
     },
     "literal_audit_input_paths": [
       "scripts/frontier_cycle986_patch_uniformity_induction_2026_08_11.py",

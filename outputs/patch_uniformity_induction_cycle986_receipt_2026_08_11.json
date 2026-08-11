@@ -36,6 +36,26 @@
       "docs/MINIMAL_AXIOMS_2026-06-29.md"
     ],
     "literal_source_read_count": 1,
+    "outcome_neutrality_probes": [
+      {
+        "accepted_by_bookkeeping_gate": true,
+        "checks": {
+          "A_GLUING_STEP": true,
+          "B_STEP_VERIFICATION": true,
+          "C_INDUCTION_STATUS": true
+        },
+        "name": "coherent_site_binding_obstruction"
+      },
+      {
+        "accepted_by_bookkeeping_gate": true,
+        "checks": {
+          "A_GLUING_STEP": true,
+          "B_STEP_VERIFICATION": true,
+          "C_INDUCTION_STATUS": true
+        },
+        "name": "coherent_not_hostable_outcome"
+      }
+    ],
     "pinned_substrate": {
       "blob_pin_match": true,
       "commit": "39c74017b870c27c804e3992f2a11e90336476b2",
@@ -49,7 +69,7 @@
     "runtime_budget_met": true,
     "runtime_budget_seconds": 1400,
     "sha_pins_match": true,
-    "stdout_bytes": 940,
+    "stdout_bytes": 969,
     "stdout_limit_bytes": 150000
   },
   "cycle": 986,
@@ -5341,7 +5361,7 @@
   },
   "integrity_policy": "checks gate construction, reconciliation, and provenance only; verified, obstructed, not-hostable, and not-glueable outcomes remain cleanly reportable",
   "pass": true,
-  "primary_source_sha256": "b95440a62f3909a9fd584ae5d24b7c7a1bea24dccc8415e0950d9a3b87c46f7a",
+  "primary_source_sha256": "7999cab3a1a7bdf0d5f2a414d8fef905edb945a0f4a36305747206ca612a5991",
   "science_digest": "b54f3d7c79886a54b32cbabad4a786319c30a2499034d6d1e94757253b9c7349",
-  "stdout_sha256": "2cab39376bb3123c0dd9e5e34049ef668158d0706d3d5816111f0d58629d8da2"
+  "stdout_sha256": "70057d228ac6aaae7c4fe0af8c62cccbebde5f03ac6b6a299c74494e42e83e9d"
 }

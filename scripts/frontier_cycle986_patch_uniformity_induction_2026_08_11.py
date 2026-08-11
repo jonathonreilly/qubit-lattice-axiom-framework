@@ -11,6 +11,7 @@ coherent obstruction or not-hostable result remains bookkeeping-clean.
 from __future__ import annotations
 
 import ast
+import copy
 import importlib.util
 import io
 import json
@@ -463,11 +464,12 @@ def overlap_record(left: tuple, right: tuple) -> dict:
 def overlap_row_bookkeeping_valid(row: dict) -> bool:
     site_rows = row["shared_site_agreement_table"]
     pair_rows = row["shared_pair_agreement_table"]
-    site_agreement = all(
+    site_flags_reconcile = all(
         site["binding_agrees"]
         == (site["left_binding"] == site["right_binding"])
         for site in site_rows
     )
+    site_agreement = all(site["binding_agrees"] for site in site_rows)
     pair_agreement = all(
         pair["semantic_pair_in_both"]
         and pair["z3_edge_left"] == pair["z3_edge_right"]
@@ -491,6 +493,7 @@ def overlap_row_bookkeeping_valid(row: dict) -> bool:
     return bool(
         row["shared_site_count"] == len(site_rows)
         and row["shared_pair_count"] == len(pair_rows)
+        and site_flags_reconcile
         and row["site_bindings_agree"] == site_agreement
         and row["pair_relations_boolean_classes_J_and_paths_agree"] == pair_agreement
         and row["agreement"] == (site_agreement and pair_agreement)
@@ -880,6 +883,54 @@ def validate_science_bookkeeping(findings: dict) -> dict:
     }
 
 
+def rewrite_probe_induction(findings: dict) -> None:
+    gluing = findings["A_GLUING_STEP"]
+    cases = findings["B_STEP_VERIFICATION"]["verified_cases"]
+    induction = findings["C_INDUCTION_STATUS"]
+    status, obstruction = derive_induction_status(
+        gluing, cases, induction["base_case_reconstruction"]
+    )
+    induction["induction_status"] = status
+    induction["exact_obstruction"] = obstruction
+    induction["verdict_line"] = status
+
+
+def outcome_neutrality_probes(findings: dict) -> list[dict]:
+    probes = []
+
+    obstructed = copy.deepcopy(findings)
+    case = obstructed["B_STEP_VERIFICATION"]["verified_cases"][0]
+    overlap = case["new_to_old_agreement_table"][0]
+    site = overlap["shared_site_agreement_table"][0]
+    site["right_binding"] = "q_conflicting_binding"
+    site["binding_agrees"] = False
+    overlap["site_bindings_agree"] = False
+    overlap["agreement"] = False
+    case["outcome"], case["exact_obstruction"] = derive_extension_outcome(case)
+    rewrite_probe_induction(obstructed)
+    checks = validate_science_bookkeeping(obstructed)
+    probes.append({
+        "name": "coherent_site_binding_obstruction",
+        "accepted_by_bookkeeping_gate": all(checks.values()),
+        "checks": checks,
+    })
+
+    not_hostable = copy.deepcopy(findings)
+    case = not_hostable["B_STEP_VERIFICATION"]["verified_cases"][0]
+    census = case["new_target_census"]
+    census["route_failure_count"] = 1
+    census["all_words_routable"] = False
+    case["outcome"], case["exact_obstruction"] = derive_extension_outcome(case)
+    rewrite_probe_induction(not_hostable)
+    checks = validate_science_bookkeeping(not_hostable)
+    probes.append({
+        "name": "coherent_not_hostable_outcome",
+        "accepted_by_bookkeeping_gate": all(checks.values()),
+        "checks": checks,
+    })
+    return probes
+
+
 def render_stdout(receipt: dict) -> str:
     findings = receipt["findings"]
     gluing = findings["A_GLUING_STEP"]
@@ -917,6 +968,7 @@ def render_stdout(receipt: dict) -> str:
         + f" :: source_reads={receipt['controls']['literal_source_read_count']}<=6;"
         + f" pins={receipt['controls']['sha_pins_match'] and receipt['controls']['blob_pins_match']};"
         + f" prior_ast_text={receipt['controls']['prior_cycle_text_or_ast_executed']};"
+        + f" outcome_neutral={compact([row['accepted_by_bookkeeping_gate'] for row in receipt['controls']['outcome_neutrality_probes']])};"
         + f" determinism={receipt['controls']['determinism_replay']};"
         + f" runtime_lt_1400={receipt['controls']['runtime_budget_met']}",
     ]
@@ -932,6 +984,7 @@ def run() -> tuple[dict, str]:
     second = science_measurement()
     deterministic = first == second
     checks = validate_science_bookkeeping(first)
+    probes = outcome_neutrality_probes(first)
     runtime_budget_met = monotonic() - started < AUDIT_TIMEOUT_SEC
     controls.update({
         "determinism_replay": deterministic,
@@ -939,6 +992,7 @@ def run() -> tuple[dict, str]:
         "runtime_budget_seconds": AUDIT_TIMEOUT_SEC,
         "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
         "house_stdout_limit_bytes": HOUSE_STDOUT_LIMIT_BYTES,
+        "outcome_neutrality_probes": probes,
     })
     checks["D_CONTROLS"] = bool(
         controls["literal_source_read_count"] <= 6
@@ -950,6 +1004,7 @@ def run() -> tuple[dict, str]:
         and controls["pinned_substrate"]["sha_pin_match"]
         and controls["pinned_substrate"]["blob_pin_match"]
         and controls["base_is_ancestor_of_head"]
+        and all(row["accepted_by_bookkeeping_gate"] for row in probes)
         and deterministic and runtime_budget_met
     )
     receipt = {

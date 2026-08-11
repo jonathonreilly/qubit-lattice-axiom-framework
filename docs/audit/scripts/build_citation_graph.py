@@ -374,6 +374,12 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
         "scripts/physical_cell_cutting_hidden_three_bit_geometry_cycle743_"
         "independent_check_2026_08_05.py",
     ],
+    # Cycle 984's sibling checker independently rebuilds the finite true-Z3
+    # star, the five weighting tables, and the transfer criterion without
+    # importing or executing the primary runner.
+    "born_compatibility_z3_adjacency_cycle984_note_2026-08-11": [
+        "scripts/frontier_cycle984_born_compatibility_z3_adjacency_independent_check_2026_08_11.py",
+    ],
     "b4_clock_relation_run_cycle879_bounded_theorem_note_2026-07-28": [
         "scripts/frontier_cycle879_b4_relation_independent_check_2026_07_28.py",
     ],

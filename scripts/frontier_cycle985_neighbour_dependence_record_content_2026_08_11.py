@@ -15,7 +15,7 @@ import json
 import subprocess
 import sys
 from hashlib import sha1, sha256
-from itertools import product
+from itertools import permutations, product
 from pathlib import Path
 from time import monotonic
 
@@ -58,26 +58,24 @@ CLASS_SPECS = (
         "representative": "CNOT(+x->C)",
         "kind": "CNOT",
         "controls": ("+x",),
-        "orbit_size": 6,
-        "stabilizer": 4,
     },
     {
         "class": "perpendicular-control TOF",
         "representative": "TOF(+x,+y->C)",
         "kind": "TOF",
         "controls": ("+x", "+y"),
-        "orbit_size": 12,
-        "stabilizer": 2,
     },
     {
         "class": "opposite-control TOF",
         "representative": "TOF(+x,-x->C)",
         "kind": "TOF",
         "controls": ("+x", "-x"),
-        "orbit_size": 3,
-        "stabilizer": 8,
     },
 )
+CONTENT_EMBEDDING = {
+    0: ((1, 0), (0, 0)),
+    1: ((0, 0), (0, 1)),
+}
 READOUT_BASIS = (
     {"name": "I_zero", "singleton_values": (1, 0)},
     {"name": "I_one", "singleton_values": (0, 1)},
@@ -114,6 +112,62 @@ def vector_sum_squared(control_names: tuple[str, ...]) -> int:
     return sum(component * component for component in total)
 
 
+def determinant(matrix: tuple[tuple[int, int, int], ...]) -> int:
+    return (
+        matrix[0][0] * (matrix[1][1] * matrix[2][2] - matrix[1][2] * matrix[2][1])
+        - matrix[0][1] * (matrix[1][0] * matrix[2][2] - matrix[1][2] * matrix[2][0])
+        + matrix[0][2] * (matrix[1][0] * matrix[2][1] - matrix[1][1] * matrix[2][0])
+    )
+
+
+def proper_cubic_rotations() -> tuple:
+    rotations = set()
+    for order in permutations(range(3)):
+        for signs in product((-1, 1), repeat=3):
+            matrix = tuple(
+                tuple(signs[row] * int(column == order[row]) for column in range(3))
+                for row in range(3)
+            )
+            if determinant(matrix) == 1:
+                rotations.add(matrix)
+    return tuple(sorted(rotations))
+
+
+ROTATIONS = proper_cubic_rotations()
+
+
+def rotate_vector(matrix: tuple, vector: tuple[int, int, int]) -> tuple[int, int, int]:
+    return tuple(
+        sum(row[column] * vector[column] for column in range(3))
+        for row in matrix
+    )
+
+
+def orbit_certificate(control_names: tuple[str, ...]) -> dict:
+    controls = tuple(DIRECTIONS[name] for name in control_names)
+    unordered = len(controls) == 2
+    canonical = tuple(sorted(controls)) if unordered else controls
+    images = {
+        tuple(sorted(rotate_vector(rotation, vector) for vector in controls))
+        if unordered else tuple(rotate_vector(rotation, vector) for vector in controls)
+        for rotation in ROTATIONS
+    }
+    stabilizer = sum(
+        (
+            tuple(sorted(rotate_vector(rotation, vector) for vector in controls))
+            if unordered else tuple(rotate_vector(rotation, vector) for vector in controls)
+        ) == canonical
+        for rotation in ROTATIONS
+    )
+    return {
+        "group_order": len(ROTATIONS),
+        "orbit_size": len(images),
+        "stabilizer": stabilizer,
+        "orbit_stabilizer_product": len(images) * stabilizer,
+        "orbit_digest": digest(sorted(images)),
+    }
+
+
 def locked_content(kind: str, target_input: int, control_bits: tuple[int, ...]) -> int:
     if kind == "CNOT":
         trigger = control_bits[0]
@@ -127,41 +181,53 @@ def locked_content(kind: str, target_input: int, control_bits: tuple[int, ...]) 
 def class_content_table(spec: dict) -> dict:
     rows = []
     for control_bits in product((0, 1), repeat=len(spec["controls"])):
+        output_bits = {
+            str(target_input): locked_content(spec["kind"], target_input, control_bits)
+            for target_input in (0, 1)
+        }
         rows.append({
             "control_configuration": {
                 name: bit for name, bit in zip(spec["controls"], control_bits)
             },
-            "locked_content_by_target_input": {
-                str(target_input): locked_content(
-                    spec["kind"], target_input, control_bits
-                )
-                for target_input in (0, 1)
+            "output_bit_by_target_input": output_bits,
+            "locked_content_by_target_input": output_bits,
+            "locked_possibility_by_target_input": {
+                target_input: f"P_{output_bit}"
+                for target_input, output_bit in output_bits.items()
+            },
+            "point_mass_distribution_by_target_input": {
+                target_input: {
+                    "P_0": int(output_bit == 0),
+                    "P_1": int(output_bit == 1),
+                }
+                for target_input, output_bit in output_bits.items()
             },
             "spectator_neighbours": "arbitrary",
         })
 
-    separated = []
+    hamming_edges = []
     for target_input in (0, 1):
         configurations = tuple(product((0, 1), repeat=len(spec["controls"])))
-        for left in configurations:
-            for right in configurations:
+        for left_index, left in enumerate(configurations):
+            for right in configurations[left_index + 1:]:
                 hamming = sum(a != b for a, b in zip(left, right))
-                if hamming != 1 or left >= right:
+                if hamming != 1:
                     continue
                 content_left = locked_content(spec["kind"], target_input, left)
                 content_right = locked_content(spec["kind"], target_input, right)
-                if content_left != content_right:
-                    separated.append({
-                        "target_input": target_input,
-                        "configuration_before": {
-                            name: bit for name, bit in zip(spec["controls"], left)
-                        },
-                        "configuration_after": {
-                            name: bit for name, bit in zip(spec["controls"], right)
-                        },
-                        "content_before": content_left,
-                        "content_after": content_right,
-                    })
+                hamming_edges.append({
+                    "target_input": target_input,
+                    "configuration_before": {
+                        name: bit for name, bit in zip(spec["controls"], left)
+                    },
+                    "configuration_after": {
+                        name: bit for name, bit in zip(spec["controls"], right)
+                    },
+                    "content_before": content_left,
+                    "content_after": content_right,
+                    "changes_locked_content": content_left != content_right,
+                })
+    orbit = orbit_certificate(spec["controls"])
     return {
         "class": spec["class"],
         "representative": spec["representative"],
@@ -170,11 +236,13 @@ def class_content_table(spec: dict) -> dict:
             else "y=x XOR (n_1 AND n_2)"
         ),
         "controls": list(spec["controls"]),
-        "orbit_size": spec["orbit_size"],
-        "stabilizer": spec["stabilizer"],
+        **orbit,
         "J": vector_sum_squared(spec["controls"]),
         "table": rows,
-        "one_neighbour_bit_separations": separated,
+        "one_neighbour_bit_edges": hamming_edges,
+        "one_neighbour_bit_separations": [
+            edge for edge in hamming_edges if edge["changes_locked_content"]
+        ],
     }
 
 
@@ -183,14 +251,36 @@ def locked_content_census() -> dict:
     return {
         "condition": "conditional on a record forming at the target site",
         "content_alphabet": [0, 1],
+        "M2C_possibility_embedding": {
+            f"P_{bit}": [list(row) for row in matrix]
+            for bit, matrix in CONTENT_EMBEDDING.items()
+        },
+        "distribution_construction": (
+            "for each fixed target input and representative law, mu(P_y|n)=1 "
+            "and mu(P_(1-y)|n)=0; Record locks the unique supported P_y"
+        ),
+        "target_input_role": (
+            "fixed supplied parameter for each finite conditioned law, not an "
+            "additional varying neighbour coordinate"
+        ),
         "spectator_neighbours": "arbitrary in every displayed row",
         "classes": classes,
         "class_count": len(classes),
         "witness_multiplicity": sum(row["orbit_size"] for row in classes),
         "J_values_by_class": {row["class"]: row["J"] for row in classes},
-        "all_separated_pairs_flip_locked_content": all(
-            pair["content_before"] != pair["content_after"]
-            for row in classes for pair in row["one_neighbour_bit_separations"]
+        "proper_cubic_group_order": len(ROTATIONS),
+        "point_mass_normalization_failures": sum(
+            sum(distribution.values()) != 1
+            for row in classes for table_row in row["table"]
+            for distribution in table_row["point_mass_distribution_by_target_input"].values()
+        ),
+        "locked_content_support_failures": sum(
+            distribution[f"P_{content}"] != 1
+            for row in classes for table_row in row["table"]
+            for target_input, distribution in table_row[
+                "point_mass_distribution_by_target_input"
+            ].items()
+            for content in [table_row["locked_content_by_target_input"][target_input]]
         ),
     }
 
@@ -219,14 +309,14 @@ def analyse_visibility(content_pairs: list[dict], basis: tuple[dict, ...]) -> di
         row for row in pair_rows
         if any(value["delta"] != 0 for value in row["basis_readout_values"])
     ]
-    if len(visible) == len(pair_rows) and pair_rows:
+    if pair_rows and len(visible) == len(pair_rows):
         outcome = "SEPARATING_ADMISSIBLE_READOUT_EXISTS"
         proof = None
-    else:
-        outcome = "NO_ADMISSIBLE_SEPARATOR_IN_DECLARED_LINEAR_FAMILY"
+    elif pair_rows and not visible:
+        outcome = "DECLARED_READOUT_FAMILY_AGREES_ON_ALL_COMPARED_PAIRS"
         proof = {
             "basis_dimension": len(basis),
-            "all_basis_functionals_equal_on_unseparated_pairs": all(
+            "all_basis_functionals_equal_on_all_compared_pairs": all(
                 all(value["delta"] == 0 for value in row["basis_readout_values"])
                 for row in pair_rows
             ),
@@ -235,6 +325,12 @@ def analyse_visibility(content_pairs: list[dict], basis: tuple[dict, ...]) -> di
                 "basis equality therefore implies family-wide equality"
             ),
         }
+    elif pair_rows:
+        outcome = "PARTIAL_VISIBILITY_IN_DECLARED_READOUT_FAMILY"
+        proof = None
+    else:
+        outcome = "EMPTY_COMPARISON_DOMAIN"
+        proof = None
     return {
         "outcome": outcome,
         "pair_count": len(pair_rows),
@@ -276,6 +372,18 @@ def readout_visibility(census: dict) -> dict:
             "delta": after - before,
         })
 
+    exact_separator = None
+    if analysis["outcome"] == "SEPARATING_ADMISSIBLE_READOUT_EXISTS":
+        exact_separator = {
+            "name": "I_one",
+            "singleton_rule": "I_one({record with content c})=c",
+            "collection_rule": "I_one(R)=number of records in R whose content is 1",
+            "values_on_separated_pairs": i_one_rows,
+            "separates_every_declared_pair": all(
+                row["delta"] != 0 for row in i_one_rows
+            ),
+        }
+
     return {
         "declared_family": (
             "all functions phi:{0,1}->R, extended to finite pairwise-disjoint "
@@ -290,13 +398,7 @@ def readout_visibility(census: dict) -> dict:
         ),
         "additivity_failure_count": additivity_failures,
         "analysis": analysis,
-        "exact_separator": {
-            "name": "I_one",
-            "singleton_rule": "I_one({record with content c})=c",
-            "collection_rule": "I_one(R)=number of records in R whose content is 1",
-            "values_on_separated_pairs": i_one_rows,
-            "separates_every_declared_pair": all(row["delta"] != 0 for row in i_one_rows),
-        },
+        "exact_separator": exact_separator,
         "blind_admissible_example": {
             "singleton_values": [1, 1],
             "meaning": "record count; admissible but content-blind on equal-size collections",
@@ -315,9 +417,12 @@ def scope_measurement() -> dict:
             "star, for the three finite deterministic witness classes"
         ),
         "established": (
-            "at this cap, each separated neighbour pair changes locked basis content "
-            "and is visible to the explicit additive I_one readout"
+            "in the declared P0/P1 point-mass construction, the exact changing "
+            "neighbour edges change the unique supported locked content and I_one reads it"
         ),
+        "binary_M2C_embedding_declared_not_unique": True,
+        "point_mass_distribution_constructed_at_finite_cap": True,
+        "target_input_fixed_per_conditioned_law": True,
         "full_mosaic_claimed": False,
         "formation_site_probability_or_rate_claimed": False,
         "selected_physical_readout_claimed": False,
@@ -327,7 +432,7 @@ def scope_measurement() -> dict:
         "generic_axiom_only_consequence_claimed": False,
         "generic_axiom_boundary": (
             "distribution variation alone need not force disjoint supports or a different "
-            "realized draw; the positive result uses the declared deterministic witness laws"
+            "realized draw; the positive result uses the declared P0/P1 point-mass laws"
         ),
     }
 
@@ -335,18 +440,48 @@ def scope_measurement() -> dict:
 def validate_visibility_payload(payload: dict) -> bool:
     analysis = payload["analysis"]
     recomputed = analyse_visibility(analysis["pairs"], tuple(payload["basis"]))
-    return bool(
-        recomputed["outcome"] == analysis["outcome"]
-        and recomputed["pair_count"] == analysis["pair_count"]
-        and recomputed["visible_pair_count"] == analysis["visible_pair_count"]
-        and (
-            analysis["outcome"] == "SEPARATING_ADMISSIBLE_READOUT_EXISTS"
-            or bool(analysis["nonseparation_proof"])
+    return recomputed == analysis
+
+
+def validate_readout_measurement(payload: dict) -> bool:
+    if not validate_visibility_payload(payload):
+        return False
+    analysis = payload["analysis"]
+    if payload["empty_value"] != 0 or not payload["record_content_only"]:
+        return False
+    if payload["additivity_failure_count"] != 0:
+        return False
+    if analysis["outcome"] == "SEPARATING_ADMISSIBLE_READOUT_EXISTS":
+        separator = payload["exact_separator"]
+        expected_values = []
+        for pair in analysis["pairs"]:
+            before = finite_additive_readout((pair["content_before"],), (0, 1))
+            after = finite_additive_readout((pair["content_after"],), (0, 1))
+            expected_values.append({
+                "class": pair["class"],
+                "target_input": pair["target_input"],
+                "I_one_before": before,
+                "I_one_after": after,
+                "delta": after - before,
+            })
+        return bool(
+            separator
+            and separator["name"] == "I_one"
+            and separator["values_on_separated_pairs"] == expected_values
+            and separator["separates_every_declared_pair"]
+            == all(row["delta"] != 0 for row in expected_values)
         )
-    )
+    if analysis["outcome"] == "DECLARED_READOUT_FAMILY_AGREES_ON_ALL_COMPARED_PAIRS":
+        proof = analysis["nonseparation_proof"]
+        return bool(
+            payload["exact_separator"] is None
+            and proof
+            and proof["all_basis_functionals_equal_on_all_compared_pairs"] is True
+        )
+    return payload["exact_separator"] is None
 
 
-def synthetic_negative_visibility_control() -> bool:
+def synthetic_agreement_visibility_control() -> bool:
     pairs = [{
         "class": "synthetic equal-content fixture",
         "target_input": 0,
@@ -356,10 +491,17 @@ def synthetic_negative_visibility_control() -> bool:
         "content_after": 0,
     }]
     analysis = analyse_visibility(pairs, READOUT_BASIS)
-    payload = {"basis": list(READOUT_BASIS), "analysis": analysis}
+    payload = {
+        "basis": list(READOUT_BASIS),
+        "analysis": analysis,
+        "empty_value": 0,
+        "record_content_only": True,
+        "additivity_failure_count": 0,
+        "exact_separator": None,
+    }
     return bool(
-        analysis["outcome"] == "NO_ADMISSIBLE_SEPARATOR_IN_DECLARED_LINEAR_FAMILY"
-        and validate_visibility_payload(payload)
+        analysis["outcome"] == "DECLARED_READOUT_FAMILY_AGREES_ON_ALL_COMPARED_PAIRS"
+        and validate_readout_measurement(payload)
     )
 
 
@@ -439,7 +581,7 @@ def render_stdout(receipt: dict) -> str:
         + f" :: source_reads={receipt['controls']['literal_source_read_count']}<=6;"
         + f" pins={receipt['controls']['sha_pins_match'] and receipt['controls']['blob_pins_match']};"
         + f" deterministic={receipt['controls']['determinism_replay']};"
-        + f" negative_gate={receipt['controls']['synthetic_negative_visibility_accepted']}",
+        + f" agreement_gate={receipt['controls']['synthetic_agreement_outcome_accepted']}",
     ]
     passed = sum(receipt["checks"].values())
     lines.append(f"TOTAL: PASS={passed} FAIL={len(receipt['checks']) - passed}")
@@ -456,47 +598,45 @@ def run() -> tuple[dict, str]:
     visibility = first["B_READOUT_VISIBILITY"]
     scope = first["C_SCOPE"]
 
-    expected_row_counts = {
-        "incoming CNOT": 2,
-        "perpendicular-control TOF": 4,
-        "opposite-control TOF": 4,
-    }
     a_reconciliation = bool(
         census["class_count"] == len(census["classes"])
+        and census["proper_cubic_group_order"] == len(ROTATIONS)
         and census["witness_multiplicity"] == sum(
             row["orbit_size"] for row in census["classes"]
         )
         and all(
-            len(row["table"]) == expected_row_counts[row["class"]]
+            len(row["table"]) == 2 ** len(row["controls"])
             for row in census["classes"]
         )
         and all(
             row["J"] == vector_sum_squared(tuple(row["controls"]))
+            and row["orbit_stabilizer_product"] == row["group_order"]
+            and len(row["one_neighbour_bit_edges"])
+            == len(row["controls"]) * 2 ** len(row["controls"])
+            and all(
+                edge["changes_locked_content"]
+                == (edge["content_before"] != edge["content_after"])
+                for edge in row["one_neighbour_bit_edges"]
+            )
             for row in census["classes"]
         )
-        and census["all_separated_pairs_flip_locked_content"]
+        and census["point_mass_normalization_failures"] == 0
+        and census["locked_content_support_failures"] == 0
     )
-    b_reconciliation = bool(
-        validate_visibility_payload({
-            "basis": visibility["basis"],
-            "analysis": visibility["analysis"],
-        })
-        and visibility["empty_value"] == 0
-        and visibility["record_content_only"]
-        and visibility["additivity_failure_count"] == 0
-        and visibility["exact_separator"]["separates_every_declared_pair"]
-    )
+    b_reconciliation = validate_readout_measurement(visibility)
     c_reconciliation = bool(
         scope["full_mosaic_claimed"] is False
         and scope["formation_site_probability_or_rate_claimed"] is False
         and scope["selected_physical_readout_claimed"] is False
         and scope["generic_axiom_only_consequence_claimed"] is False
+        and scope["binary_M2C_embedding_declared_not_unique"] is True
+        and scope["point_mass_distribution_constructed_at_finite_cap"] is True
         and bool(scope["tested"] and scope["established"])
     )
     runtime_budget_met = monotonic() - started < AUDIT_TIMEOUT_SEC
     controls.update({
         "determinism_replay": deterministic,
-        "synthetic_negative_visibility_accepted": synthetic_negative_visibility_control(),
+        "synthetic_agreement_outcome_accepted": synthetic_agreement_visibility_control(),
         "runtime_budget_met": runtime_budget_met,
         "runtime_budget_seconds": AUDIT_TIMEOUT_SEC,
         "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
@@ -509,7 +649,7 @@ def run() -> tuple[dict, str]:
         and not controls["prior_cycle_modules_loaded"]
         and controls["base_is_ancestor_of_head"]
         and deterministic
-        and controls["synthetic_negative_visibility_accepted"]
+        and controls["synthetic_agreement_outcome_accepted"]
         and runtime_budget_met
     )
     receipt = {
@@ -517,8 +657,8 @@ def run() -> tuple[dict, str]:
         "artifact": "neighbour-dependence locked-content and readout bounded theorem primary",
         "audit_status_authority": "independent audit lane only",
         "integrity_policy": (
-            "checks gate construction and reconciliation only; a coherent no-separator "
-            "outcome passes the same visibility validator"
+            "checks gate construction and reconciliation only; a coherent family-wide "
+            "agreement outcome passes the same top-level visibility validator"
         ),
         "findings": first,
         "science_digest": digest(first),

@@ -380,6 +380,9 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
     "born_compatibility_z3_adjacency_cycle984_note_2026-08-11": [
         "scripts/frontier_cycle984_born_compatibility_z3_adjacency_independent_check_2026_08_11.py",
     ],
+    "neighbour_dependence_record_content_cycle985_bounded_theorem_note_2026-08-11": [
+        "scripts/frontier_cycle985_neighbour_dependence_record_content_independent_check_2026_08_11.py",
+    ],
     "b4_clock_relation_run_cycle879_bounded_theorem_note_2026-07-28": [
         "scripts/frontier_cycle879_b4_relation_independent_check_2026_07_28.py",
     ],

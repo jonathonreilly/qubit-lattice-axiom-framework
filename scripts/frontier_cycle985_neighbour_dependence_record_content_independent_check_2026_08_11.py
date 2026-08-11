@@ -42,22 +42,27 @@ AUDIT_INPUT_PATHS = (
     "logs/runner-cache/frontier_cycle985_neighbour_dependence_record_content_2026_08_11.txt",
 )
 EXPECTED_PRIMARY_SOURCE_SHA256 = (
-    "0e66cb4b11c38c78b03d0fab66b0218839005fe32e5c3daaf289eb64040714a2"
+    "3d66b2836743808119541536bf7562212a05da84f1149b9f5d5f12f47ff7eff8"
 )
 EXPECTED_PRIMARY_RECEIPT_SHA256 = (
-    "ae6b337dad743eb2ddc389f4be055e35c9c2a4b7306003e0548ffc66f21ec6d1"
+    "570332f2bd8b491f6c39a9d4bbcec701b23304ba9a6f493f3f957b562fc00d01"
 )
 EXPECTED_PRIMARY_INPUT_FINGERPRINT_SHA256 = (
     "db7786cde9df9554b9e925bd8927e6f129e0cdd1546e5ea349a31056104b73bb"
 )
 EXPECTED_PRIMARY_STDOUT_SHA256 = (
-    "827a15c4268161e1f81355807636474f8b315b195f8062a12a0c79b621e9e345"
+    "4f684435699e3aba6a2279a5bb32f013671861cf8e446a5e5da79e5f34c800b4"
 )
 
 CLASS_SPECS = (
-    ("incoming CNOT", "CNOT", ((1, 0, 0),), 6, 4),
-    ("perpendicular-control TOF", "TOF", ((1, 0, 0), (0, 1, 0)), 12, 2),
-    ("opposite-control TOF", "TOF", ((1, 0, 0), (-1, 0, 0)), 3, 8),
+    ("incoming CNOT", "CNOT", ((1, 0, 0),)),
+    ("perpendicular-control TOF", "TOF", ((1, 0, 0), (0, 1, 0))),
+    ("opposite-control TOF", "TOF", ((1, 0, 0), (-1, 0, 0))),
+)
+UNIT_VECTORS = (
+    (1, 0, 0), (-1, 0, 0),
+    (0, 1, 0), (0, -1, 0),
+    (0, 0, 1), (0, 0, -1),
 )
 
 
@@ -99,18 +104,76 @@ def j_from_vectors(vectors: tuple[tuple[int, int, int], ...]) -> int:
     return sum(value * value for value in total)
 
 
+def dot(left: tuple[int, int, int], right: tuple[int, int, int]) -> int:
+    return sum(a * b for a, b in zip(left, right))
+
+
+def cross(left: tuple[int, int, int], right: tuple[int, int, int]) -> tuple[int, int, int]:
+    return (
+        left[1] * right[2] - left[2] * right[1],
+        left[2] * right[0] - left[0] * right[2],
+        left[0] * right[1] - left[1] * right[0],
+    )
+
+
+def oriented_frame_rotations() -> tuple:
+    frames = []
+    for image_x in UNIT_VECTORS:
+        for image_y in UNIT_VECTORS:
+            if dot(image_x, image_y) == 0:
+                frames.append((image_x, image_y, cross(image_x, image_y)))
+    return tuple(frames)
+
+
+ROTATION_FRAMES = oriented_frame_rotations()
+
+
+def rotate_by_frame(frame: tuple, vector: tuple[int, int, int]) -> tuple[int, int, int]:
+    return tuple(
+        sum(vector[axis] * frame[axis][component] for axis in range(3))
+        for component in range(3)
+    )
+
+
+def independent_orbit_certificate(vectors: tuple[tuple[int, int, int], ...]) -> dict:
+    unordered = len(vectors) == 2
+    canonical = tuple(sorted(vectors)) if unordered else vectors
+    images = {
+        tuple(sorted(rotate_by_frame(frame, vector) for vector in vectors))
+        if unordered else tuple(rotate_by_frame(frame, vector) for vector in vectors)
+        for frame in ROTATION_FRAMES
+    }
+    stabilizer = sum(
+        (
+            tuple(sorted(rotate_by_frame(frame, vector) for vector in vectors))
+            if unordered else tuple(rotate_by_frame(frame, vector) for vector in vectors)
+        ) == canonical
+        for frame in ROTATION_FRAMES
+    )
+    return {
+        "group_order": len(ROTATION_FRAMES),
+        "orbit_size": len(images),
+        "stabilizer": stabilizer,
+        "orbit_stabilizer_product": len(images) * stabilizer,
+    }
+
+
 def independent_class_rows() -> list[dict]:
     classes = []
-    for label, kind, vectors, orbit_size, stabilizer in CLASS_SPECS:
+    for label, kind, vectors in CLASS_SPECS:
         table = []
-        separated = []
+        edges = []
         controls = tuple(product((0, 1), repeat=len(vectors)))
         for bits in controls:
+            contents = tuple(
+                apply_gate_permutation(kind, (target, *bits))[0]
+                for target in (0, 1)
+            )
             table.append({
                 "bits": bits,
-                "contents": tuple(
-                    apply_gate_permutation(kind, (target, *bits))[0]
-                    for target in (0, 1)
+                "contents": contents,
+                "point_masses": tuple(
+                    (int(content == 0), int(content == 1)) for content in contents
                 ),
             })
         for target in (0, 1):
@@ -120,16 +183,16 @@ def independent_class_rows() -> list[dict]:
                         continue
                     before = apply_gate_permutation(kind, (target, *left))[0]
                     after = apply_gate_permutation(kind, (target, *right))[0]
-                    if before != after:
-                        separated.append((target, left, right, before, after))
+                    edges.append((target, left, right, before, after, before != after))
+        orbit = independent_orbit_certificate(vectors)
         classes.append({
             "class": label,
             "kind": kind,
             "J": j_from_vectors(vectors),
-            "orbit_size": orbit_size,
-            "stabilizer": stabilizer,
+            **orbit,
             "table": table,
-            "separated": separated,
+            "edges": edges,
+            "separated": [edge[:5] for edge in edges if edge[5]],
         })
     return classes
 
@@ -147,14 +210,22 @@ def primary_class_rows(receipt: dict) -> list[dict]:
                     item["locked_content_by_target_input"][str(target)]
                     for target in (0, 1)
                 ),
+                "point_masses": tuple(
+                    (
+                        item["point_mass_distribution_by_target_input"][str(target)]["P_0"],
+                        item["point_mass_distribution_by_target_input"][str(target)]["P_1"],
+                    )
+                    for target in (0, 1)
+                ),
             })
-        separated = []
-        for item in row["one_neighbour_bit_separations"]:
+        edges = []
+        for item in row["one_neighbour_bit_edges"]:
             left = tuple(item["configuration_before"][name] for name in control_names)
             right = tuple(item["configuration_after"][name] for name in control_names)
-            separated.append((
+            edges.append((
                 item["target_input"], left, right,
                 item["content_before"], item["content_after"],
+                item["changes_locked_content"],
             ))
         rows.append({
             "class": row["class"],
@@ -162,8 +233,11 @@ def primary_class_rows(receipt: dict) -> list[dict]:
             "J": row["J"],
             "orbit_size": row["orbit_size"],
             "stabilizer": row["stabilizer"],
+            "group_order": row["group_order"],
+            "orbit_stabilizer_product": row["orbit_stabilizer_product"],
             "table": table,
-            "separated": separated,
+            "edges": edges,
+            "separated": [edge[:5] for edge in edges if edge[5]],
         })
     return rows
 
@@ -171,16 +245,23 @@ def primary_class_rows(receipt: dict) -> list[dict]:
 def independent_readout_result(classes: list[dict]) -> dict:
     pairs = [pair for row in classes for pair in row["separated"]]
     deltas = [after - before for _, _, _, before, after in pairs]
+    visible_count = sum(delta != 0 for delta in deltas)
+    if pairs and visible_count == len(pairs):
+        outcome = "SEPARATING_ADMISSIBLE_READOUT_EXISTS"
+    elif pairs and visible_count == 0:
+        outcome = "DECLARED_READOUT_FAMILY_AGREES_ON_ALL_COMPARED_PAIRS"
+    elif pairs:
+        outcome = "PARTIAL_VISIBILITY_IN_DECLARED_READOUT_FAMILY"
+    else:
+        outcome = "EMPTY_COMPARISON_DOMAIN"
     return {
         "family": "R^{\u007b0,1\u007d}, extended by finite sums",
         "basis": ((1, 0), (0, 1)),
         "pair_count": len(pairs),
+        "visible_pair_count": visible_count,
         "I_one_deltas": deltas,
-        "outcome": (
-            "SEPARATING_ADMISSIBLE_READOUT_EXISTS" if pairs and all(deltas)
-            else "NO_ADMISSIBLE_SEPARATOR_IN_DECLARED_LINEAR_FAMILY"
-        ),
-        "no_separator_iff_contents_equal": all(
+        "outcome": outcome,
+        "basis_agreement_iff_contents_equal": all(
             (before == after) == all(weights[before] == weights[after] for weights in ((1, 0), (0, 1)))
             for _, _, _, before, after in pairs
         ),
@@ -222,29 +303,84 @@ def primary_ast_and_pins(payloads: dict[str, bytes]) -> dict:
 
 
 def compare_receipt(receipt: dict, independent: list[dict]) -> bool:
-    return primary_class_rows(receipt) == independent
+    census = receipt["findings"]["A_LOCKED_CONTENT_CENSUS"]
+    return bool(
+        primary_class_rows(receipt) == independent
+        and census["proper_cubic_group_order"] == len(ROTATION_FRAMES)
+        and census["M2C_possibility_embedding"] == {
+            "P_0": [[1, 0], [0, 0]],
+            "P_1": [[0, 0], [0, 1]],
+        }
+        and census["point_mass_normalization_failures"] == 0
+        and census["locked_content_support_failures"] == 0
+    )
 
 
 def readout_agrees(receipt: dict, independent: dict) -> bool:
     visibility = receipt["findings"]["B_READOUT_VISIBILITY"]
     separator = visibility["exact_separator"]
-    return bool(
+    common = bool(
         visibility["analysis"]["outcome"] == independent["outcome"]
         and visibility["analysis"]["pair_count"] == independent["pair_count"]
-        and separator["name"] == "I_one"
-        and separator["separates_every_declared_pair"]
-        and [row["delta"] for row in separator["values_on_separated_pairs"]]
-        == independent["I_one_deltas"]
-        and independent["no_separator_iff_contents_equal"]
+        and visibility["analysis"]["visible_pair_count"]
+        == independent["visible_pair_count"]
+        and independent["basis_agreement_iff_contents_equal"]
     )
+    if not common:
+        return False
+    if independent["outcome"] == "SEPARATING_ADMISSIBLE_READOUT_EXISTS":
+        return bool(
+            separator
+            and separator["name"] == "I_one"
+            and separator["separates_every_declared_pair"]
+            and [row["delta"] for row in separator["values_on_separated_pairs"]]
+            == independent["I_one_deltas"]
+        )
+    if independent["outcome"] == "DECLARED_READOUT_FAMILY_AGREES_ON_ALL_COMPARED_PAIRS":
+        proof = visibility["analysis"]["nonseparation_proof"]
+        return bool(
+            separator is None
+            and proof
+            and proof["all_basis_functionals_equal_on_all_compared_pairs"] is True
+        )
+    return separator is None
 
 
-def negative_outcome_control() -> bool:
+def agreement_outcome_control(receipt: dict) -> bool:
     equal_pair_classes = [{
         "separated": [(0, (0,), (1,), 0, 0)],
     }]
     result = independent_readout_result(equal_pair_classes)
-    return result["outcome"] == "NO_ADMISSIBLE_SEPARATOR_IN_DECLARED_LINEAR_FAMILY"
+    synthetic = deepcopy(receipt)
+    synthetic["findings"]["B_READOUT_VISIBILITY"]["analysis"] = {
+        "outcome": "DECLARED_READOUT_FAMILY_AGREES_ON_ALL_COMPARED_PAIRS",
+        "pair_count": 1,
+        "visible_pair_count": 0,
+        "pairs": [],
+        "nonseparation_proof": {
+            "basis_dimension": 2,
+            "all_basis_functionals_equal_on_all_compared_pairs": True,
+            "span_argument": "synthetic checker fixture",
+        },
+    }
+    synthetic["findings"]["B_READOUT_VISIBILITY"]["exact_separator"] = None
+    return readout_agrees(synthetic, result)
+
+
+def scope_agrees(receipt: dict) -> bool:
+    scope = receipt["findings"]["C_SCOPE"]
+    return bool(
+        scope["binary_M2C_embedding_declared_not_unique"] is True
+        and scope["point_mass_distribution_constructed_at_finite_cap"] is True
+        and scope["target_input_fixed_per_conditioned_law"] is True
+        and scope["full_mosaic_claimed"] is False
+        and scope["formation_site_probability_or_rate_claimed"] is False
+        and scope["selected_physical_readout_claimed"] is False
+        and scope["born_weight_selection_claimed"] is False
+        and scope["continuous_M2_probability_law_claimed"] is False
+        and scope["infinite_simultaneous_translation_uniform_law_claimed"] is False
+        and scope["generic_axiom_only_consequence_claimed"] is False
+    )
 
 
 def active_corruption_probes(receipt: dict, independent: list[dict], cache: dict) -> dict:
@@ -262,7 +398,7 @@ def active_corruption_probes(receipt: dict, independent: list[dict], cache: dict
 
     mutant = deepcopy(receipt)
     mutant["findings"]["B_READOUT_VISIBILITY"]["analysis"]["outcome"] = (
-        "NO_ADMISSIBLE_SEPARATOR_IN_DECLARED_LINEAR_FAMILY"
+        "DECLARED_READOUT_FAMILY_AGREES_ON_ALL_COMPARED_PAIRS"
     )
     probes["visibility_outcome"] = not readout_agrees(
         mutant, independent_readout_result(independent)
@@ -270,12 +406,14 @@ def active_corruption_probes(receipt: dict, independent: list[dict], cache: dict
 
     mutant = deepcopy(receipt)
     mutant["findings"]["C_SCOPE"]["full_mosaic_claimed"] = True
-    probes["mosaic_scope"] = mutant["findings"]["C_SCOPE"] != receipt["findings"]["C_SCOPE"]
+    probes["mosaic_scope"] = scope_agrees(receipt) and not scope_agrees(mutant)
 
-    probes["source_pin"] = sha256(b"corrupted primary").hexdigest() != EXPECTED_PRIMARY_SOURCE_SHA256
+    source_mutant = {path: (ROOT / path).read_bytes() for path in AUDIT_INPUT_PATHS}
+    source_mutant[PRIMARY_PATH] += b"\n"
+    probes["source_pin"] = not primary_ast_and_pins(source_mutant)["source_pin_match"]
 
     corrupted_stdout = cache["stdout"].replace(
-        "SEPARATING_ADMISSIBLE_READOUT_EXISTS", "NO_ADMISSIBLE_SEPARATOR"
+        "SEPARATING_ADMISSIBLE_READOUT_EXISTS", "DECLARED_READOUT_FAMILY_AGREES"
     )
     probes["cached_headline"] = (
         sha256(corrupted_stdout.encode()).hexdigest() != EXPECTED_PRIMARY_STDOUT_SHA256
@@ -299,7 +437,7 @@ def render_stdout(receipt: dict) -> str:
         "R5_CONTROLS " + ("PASS" if checks["R5_CONTROLS"] else "FAIL")
         + f" :: source_reads={receipt['controls']['literal_source_read_count']}<=6;"
         + f" primary_executed={receipt['controls']['primary_imported_or_executed']};"
-        + f" negative_gate={receipt['controls']['synthetic_negative_outcome_accepted']}",
+        + f" agreement_gate={receipt['controls']['synthetic_agreement_outcome_accepted']}",
         "VERDICT: " + (
             "PRIMARY_SURVIVES_INDEPENDENT_REFUTATION_ATTEMPT"
             if all(checks.values()) else "PRIMARY_DOES_NOT_SURVIVE_INDEPENDENT_REFUTATION_ATTEMPT"
@@ -346,7 +484,9 @@ def run() -> tuple[dict, str]:
             path: git_blob(payload) for path, payload in payloads.items()
         },
         "primary_imported_or_executed": False,
-        "synthetic_negative_outcome_accepted": negative_outcome_control(),
+        "synthetic_agreement_outcome_accepted": agreement_outcome_control(
+            primary_receipt
+        ),
         "runtime_budget_met": runtime_budget_met,
         "runtime_budget_seconds": AUDIT_TIMEOUT_SEC,
         "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
@@ -359,8 +499,12 @@ def run() -> tuple[dict, str]:
         ),
         "R1_INDEPENDENT_CONTENT_CENSUS": bool(
             compare_receipt(primary_receipt, independent)
-            and [row["J"] for row in independent] == [1, 2, 0]
-            and [row["orbit_size"] for row in independent] == [6, 12, 3]
+            and all(
+                row["orbit_stabilizer_product"] == row["group_order"]
+                and len(row["edges"])
+                == (len(row["table"]).bit_length() - 1) * len(row["table"])
+                for row in independent
+            )
         ),
         "R2_INDEPENDENT_READOUT_DUAL": readout_agrees(primary_receipt, readout),
         "R3_RECEIPT_CACHE_BINDING": cache_binding,
@@ -368,7 +512,7 @@ def run() -> tuple[dict, str]:
         "R5_CONTROLS": bool(
             len(AUDIT_INPUT_PATHS) <= 6
             and not controls["primary_imported_or_executed"]
-            and controls["synthetic_negative_outcome_accepted"]
+            and controls["synthetic_agreement_outcome_accepted"]
             and runtime_budget_met
         ),
     }

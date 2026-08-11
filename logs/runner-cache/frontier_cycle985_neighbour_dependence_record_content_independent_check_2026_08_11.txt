@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle985_neighbour_dependence_record_content_independent_check_2026_08_11.py
-runner_sha256: b7aa7dc7faa48635c1b5caf058bc0431d043a1de89ff64b92c84d022eb055ae4
-input_fingerprint_sha256: 1925c057f59ec44d5275ed236801ddff33c5755729e34238aa833c224eaafa3d
+runner_sha256: d0f9790c0ae4274b719dda5fd5ecea977800ec9c0fe5f572b5a627351cd92bcf
+input_fingerprint_sha256: a6fcc0a3a34bde0752d095670462afcca369f1a8ed7bd6462d39382a13f37b93
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 CYCLE985_NEIGHBOUR_DEPENDENCE_RECORD_CONTENT_INDEPENDENT_CHECK
@@ -13,7 +13,7 @@ R1_INDEPENDENT_CONTENT_CENSUS PASS :: classes=[['incoming CNOT', 6, 4, 1, 2], ['
 R2_INDEPENDENT_READOUT_DUAL PASS :: outcome=SEPARATING_ADMISSIBLE_READOUT_EXISTS; pairs=10
 R3_RECEIPT_CACHE_BINDING PASS
 R4_ACTIVE_CORRUPTION_PROBES PASS :: rejected=6/6
-R5_CONTROLS PASS :: source_reads=3<=6; primary_executed=False; negative_gate=True
+R5_CONTROLS PASS :: source_reads=3<=6; primary_executed=False; agreement_gate=True
 VERDICT: PRIMARY_SURVIVES_INDEPENDENT_REFUTATION_ATTEMPT
 TOTAL: PASS=6 FAIL=0
 

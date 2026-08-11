@@ -234,6 +234,40 @@ class SkillBlockEditTest(FixtureTestCase):
 
 
 class AxiomSourceEditTest(FixtureTestCase):
+    def test_nested_axiom_subsection_propagates(self):
+        text = read(self.root, self.axioms_rel)
+        anchor = (
+            "the probability distribution over the possibilities is\n"
+            "determined by, and varies with, the nearest-neighbor conditions."
+        )
+        nested = (
+            anchor
+            + "\n\n#### Nested Admissibility Clarification\n\n"
+            + "This nested axiom sentence must reach every applicable block."
+        )
+        revised = text.replace(anchor, nested, 1)
+        self.assertNotEqual(text, revised, "test edit did not apply")
+        write(self.root, self.axioms_rel, revised)
+
+        self.assertEqual(run_generator(self.root, check=True)[0], 1)
+        self.assertEqual(run_generator(self.root, check=False)[0], 0)
+        self.assertInEveryTarget(
+            "This nested axiom sentence must reach every applicable block",
+            self.skill_targets(),
+        )
+        self.assertEqual(run_generator(self.root, check=True)[0], 0)
+
+    def test_duplicate_addressed_axiom_heading_fails_closed(self):
+        text = read(self.root, self.axioms_rel)
+        duplicate = "\n\n### Record / Fixed Reality\n\nAmbiguous duplicate.\n"
+        write(self.root, self.axioms_rel, text + duplicate)
+
+        code, output = run_generator(self.root, check=True)
+        self.assertEqual(code, 1)
+        self.assertIn("SOURCE DRIFT", output)
+        self.assertIn("duplicate ATX section heading", output)
+        self.assertIn("Record / Fixed Reality", output)
+
     def test_edit_outside_every_extracted_span_still_fails_until_regenerated(self):
         text = read(self.root, self.axioms_rel)
         write(self.root, self.axioms_rel, text + "\nA later clarification.\n")
@@ -359,6 +393,37 @@ class AxiomSourceEditTest(FixtureTestCase):
 
 
 class PrimitiveSourceEditTest(FixtureTestCase):
+    def test_nested_primitive_grant_and_boundary_propagate(self):
+        text = read(self.root, self.kinetic_rel)
+        grant_anchor = f"## {gen.PRIMITIVE_GRANT_SECTION}"
+        boundary_anchor = f"## {gen.PRIMITIVE_BOUNDARY_SECTION}"
+        grant_end = "## Why It Is A Primitive"
+        boundary_end = "## Audit-Pipeline Treatment"
+        revised = text.replace(
+            grant_end,
+            "### Nested Grant Clarification\n\n"
+            "This nested grant sentence must propagate.\n\n"
+            + grant_end,
+            1,
+        )
+        revised = revised.replace(
+            boundary_end,
+            "### Nested Boundary Clarification\n\n"
+            "This nested boundary sentence must propagate.\n\n"
+            + boundary_end,
+            1,
+        )
+        self.assertIn(grant_anchor, revised)
+        self.assertIn(boundary_anchor, revised)
+        self.assertNotEqual(text, revised, "test edit did not apply")
+        write(self.root, self.kinetic_rel, revised)
+
+        self.assertEqual(run_generator(self.root, check=True)[0], 1)
+        self.assertEqual(run_generator(self.root, check=False)[0], 0)
+        self.assertInEveryTarget("This nested grant sentence must propagate")
+        self.assertInEveryTarget("This nested boundary sentence must propagate")
+        self.assertEqual(run_generator(self.root, check=True)[0], 0)
+
     def test_changed_primitive_boundary_reaches_every_skill(self):
         """Review finding F2/F1: the mutation that the three anchors survived.
 

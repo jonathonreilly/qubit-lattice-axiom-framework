@@ -190,22 +190,41 @@ def visible_text(text: str) -> str:
     return norm(strip_html_comments(text))
 
 
-def split_sections(text: str) -> dict[str, str]:
-    """Map ATX heading text (level >= 2) to that section's raw body."""
-    sections: dict[str, str] = {}
-    current: str | None = None
-    buf: list[str] = []
-    for line in text.splitlines():
-        match = re.match(r"^(#{2,6})\s+(.*?)\s*$", line)
+def split_sections(text: str, where: str = "Markdown source") -> dict[str, str]:
+    """Map unique level-2-or-deeper ATX headings to hierarchical bodies.
+
+    A section owns every descendant subsection up to the next heading of equal
+    or higher rank.  Flattening all headings into peers would silently discard
+    authoritative text placed under a nested clarification.  Duplicate heading
+    names are refused because a heading-keyed extraction plan cannot choose one
+    without ambiguity.
+    """
+    lines = text.splitlines()
+    headings: list[tuple[int, int, str]] = []
+    for index, line in enumerate(lines):
+        match = re.match(r"^(#{1,6})\s+(.*?)\s*$", line)
         if match:
-            if current is not None:
-                sections[current] = "\n".join(buf)
-            current = match.group(2)
-            buf = []
-        else:
-            buf.append(line)
-    if current is not None:
-        sections[current] = "\n".join(buf)
+            headings.append((index, len(match.group(1)), match.group(2)))
+
+    names = [name for _, level, name in headings if level >= 2]
+    duplicates = sorted({name for name in names if names.count(name) > 1})
+    if duplicates:
+        raise SourceDrift(
+            f"{where}: duplicate ATX section heading(s) {duplicates!r}; "
+            "heading-addressed extraction is ambiguous, so refusing to choose "
+            "one silently."
+        )
+
+    sections: dict[str, str] = {}
+    for position, (start, level, name) in enumerate(headings):
+        if level < 2:
+            continue
+        end = len(lines)
+        for next_start, next_level, _ in headings[position + 1 :]:
+            if next_level <= level:
+                end = next_start
+                break
+        sections[name] = "\n".join(lines[start + 1 : end])
     return sections
 
 
@@ -411,7 +430,7 @@ def load_source(repo_root: Path) -> AxiomSource:
 
     axioms_text = read_source(repo_root, axioms_path, "registered axiom memo")
     source_texts[axioms_path] = axioms_text
-    sections = split_sections(axioms_text)
+    sections = split_sections(axioms_text, axioms_path)
 
     axiom_names = [
         name.strip()
@@ -469,7 +488,7 @@ def load_source(repo_root: Path) -> AxiomSource:
             repo_root, path, f"registered primitive note for '{node_id}'"
         )
         source_texts[path] = note_text
-        note_sections = split_sections(note_text)
+        note_sections = split_sections(note_text, path)
         primitives.append(
             Primitive(
                 node_id=node_id,
@@ -688,7 +707,7 @@ def build_manifest(src: AxiomSource, blocks: dict[str, list[str]]) -> dict:
         if rel_path.endswith(".md"):
             entry["sections"] = {
                 name: sha256_text(norm(body))[:12]
-                for name, body in sorted(split_sections(text).items())
+                for name, body in sorted(split_sections(text, rel_path).items())
             }
         sources[rel_path] = entry
 

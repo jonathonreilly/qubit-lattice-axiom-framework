@@ -1573,7 +1573,12 @@ Work is on branch
 exactly on Block-37 delivery head `cb107d8a84`. The theorem note, runner,
 refreshed Block-37 semantic repair/cache, Block-38 cache, and citation manifest
 are present. Primary cache is `PASS=20 FAIL=0` in `7.49 s`, with 5,257 stdout
-characters; repository conformance and delivery remain before the stacked PR.
+characters. Direct gates pass; the exact stack reaches only the inherited
+stage-7 policy-epoch mismatch, while the controlled five-file current-main
+overlay passes all 18 stages at checkpoint `cf90ef2a1ee1`. Changed evidence is
+ready for `2/2` changed claims and `38/38` stacked claims, with zero failures
+or controls. Science commit is `3c94b3fa79`; campaign delivery and the stacked
+PR remain.
 
 The main gain is that overlap is no longer the leading gravity wall. Fixed
 site/edge/face potentials obey branchwise inclusion--exclusion, the exact

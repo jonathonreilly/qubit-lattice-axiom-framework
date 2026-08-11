@@ -748,6 +748,11 @@ ordered-product cube-Bianchi identities, and homogeneous compact-connection
 classification. Primary cache is `PASS=20 FAIL=0` in `7.49 s` with 5,257
 stdout characters; an independent 100-branch nonuniform-coframe gluing
 reconstruction passes. Citation registration is `5,484/15,673`, out-degree
-two. Direct conformance and full pipeline, science/campaign commits, push, and
-stacked PR remain pending. Independent audit remains required. No canonical
-edit, percentage move, audit verdict, or `review-loop` is used.
+two. Direct conformance passes. The exact stack reconstructs `4,822` rows /
+`3,700` runners and stops only at the inherited stage-7 policy epoch; the
+controlled current-main overlay passes all 18 stages at checkpoint
+`cf90ef2a1ee1`. Changed evidence is ready for `2/2` changed claims and `38/38`
+stacked claims, with zero failures or controls. Science commit is
+`3c94b3fa79`; campaign conformance, push, and the stacked PR remain pending.
+Independent audit remains required. No canonical edit, percentage move, audit
+verdict, or `review-loop` is used.

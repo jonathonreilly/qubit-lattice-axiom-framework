@@ -1981,6 +1981,11 @@ instance or Fourier census.
   intertwining, orientation-independent shared EC scalar, common-Gram failure,
   and fixed face-load incidence.
 - Fresh cache is `PASS=20 FAIL=0` in `7.49 s`; stdout is `5,257` characters;
-  citation registration is `5,484/15,673`, out-degree two. Repository
-  conformance, commit, push, and PR remain pending. No canonical axiom, fixed
-  percentage, or audit verdict is changed.
+  citation registration is `5,484/15,673`, out-degree two. Direct repository
+  gates pass. The exact stack reconstructs `4,822` rows / `3,700` runners and
+  reproduces only the inherited stage-7 policy-epoch stop; the controlled
+  five-file current-main overlay passes all 18 stages at checkpoint
+  `cf90ef2a1ee1`. Changed evidence is ready for both changed claims (`2/2`) and
+  all 38 stacked claims (`38/38`), with zero failures or control failures.
+  Science commit is `3c94b3fa79`; campaign delivery, push, and PR remain
+  pending. No canonical axiom, fixed percentage, or audit verdict is changed.

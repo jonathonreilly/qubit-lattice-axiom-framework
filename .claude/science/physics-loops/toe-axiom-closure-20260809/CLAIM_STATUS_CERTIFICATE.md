@@ -1299,3 +1299,9 @@ lines are in the landing primary cache.
   increasing-region phase, bulk connection/displacement Ward, sourced
   Einstein regime, Lorentzian update, and axiom necessity are not. N1--N8
   lands in the theorem note; no gravity no-go or fifth-axiom claim ships.
+- Repository evidence: direct gates pass. The exact stack reconstructs
+  `4,822` rows / `3,700` runners and reaches only the inherited stage-7 policy
+  epoch mismatch. A controlled five-file current-main overlay passes all 18
+  stages at checkpoint `cf90ef2a1ee1`; changed evidence is ready for `2/2`
+  changed claims and `38/38` stacked claims, with no failures or controls.
+  Science commit is `3c94b3fa79`; independent audit remains required.

@@ -906,5 +906,11 @@ complete conditional nonlinear compact solution:
 - current evidence: fresh cache `PASS=20 FAIL=0` in `7.49 s`, stdout `5,257`
   characters; independent nonuniform-coframe gluing reconstruction passes at
   `7.105e-15`; citation registration is `5,484/15,673`, out-degree two;
-  repository conformance, science commit, delivery, push, and stacked PR remain
-  pending. No canonical edit, fixed percentage move, or audit verdict occurs
+  direct repository gates pass. The exact stack seeds `4,822` rows and
+  classifies `3,700` runners before reproducing only the inherited stage-7
+  dependency-policy epoch mismatch; the controlled five-file current-main
+  overlay passes all 18 stages at checkpoint `cf90ef2a1ee1`. Changed evidence
+  is ready for both changed claims (`2/2`) and all 38 stacked claims (`38/38`),
+  with zero failures and zero control failures. Science commit is
+  `3c94b3fa79`; delivery, push, and stacked PR remain pending. No canonical
+  edit, fixed percentage move, or audit verdict occurs

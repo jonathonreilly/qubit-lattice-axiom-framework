@@ -551,6 +551,22 @@ limit, semibounded Euclidean phase, nonlinear completion, Lorentzian update,
 Record-to-action selection, external science, canonical edit, percentage
 move, audit verdict, or `review-loop` is imported.
 
+## Block 45 Assumptions And Imports
+
+Block 45 imports only the current axiom wording, Block 35's explicit
+Record-erasing heat-bath boundary, and Block 44's conditional infrared
+Einstein tensor. The central binary `{ -I_2,+I_2 }` subalphabet, factor-four
+content rule, formation probabilities, supplied discrete step, parallel and
+sequential schedules, clock scales, and lapse/shift projector are declared
+counter-completion data rather than physical law content.
+
+No full-`M_2(C)` distribution, physical scheduler, signature, tick, time
+metric, Hamiltonian, transfer selection, physical inner product, full-edge
+finite-frequency theorem, nonlinear propagation, source meaning, external
+science, canonical edit, percentage move, audit verdict, or `review-loop` is
+imported. Compatible countermodels establish only non-entailment by the named
+surface; they do not prove gravity failure or axiom necessity/minimality.
+
 ## Block 44 Assumptions And Imports
 
 Block 44 imports Block 43's complete repaired fifteen-edge real-space kernel,

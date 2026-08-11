@@ -1313,6 +1313,25 @@ a restricted metric subspace unless the result can change the top-ranked
 Lorentzian, law-selection, full-`Z^3`, or stable-nonflat decision. No canonical
 axiom amendment is adopted and fixed percentages remain locked.
 
+## Block 45 Goal Update And Portfolio Gate
+
+The current axioms do not select the Block-44 candidate. Exact compatible
+completions now separate three independent controls: Record formation/order,
+physical clock normalization, and whether lapse/shift remain constraints at
+finite frequency. This sharpens the axiom issue to one extensional
+Admissibility--Record composition kernel on monotone extensions, with
+formation, precedence, clock, and constraint preservation supplied together.
+That interface is sufficient and unadopted, not proved necessary or minimal.
+
+The active science goal therefore becomes the candidate-killing test: continue
+the complete repaired fifteen-edge symbol to finite frequency, retain all five
+nonmetric directions through their stationary equations, locate the four gauge
+plus two TT roots, and bound the remaining edge modes. Record selection returns
+to rank one only if a genuinely new selector mechanism appears; enumerating
+more compatible kernels is stopped. Physical-state reconstruction, nonlinear
+nonflat propagation, and source semantics follow. Fixed percentages remain
+locked because no physical kernel or axiom amendment has been derived.
+
 ## Block 44 Goal Update And Portfolio Gate
 
 The repaired full-edge sector now passes the leading canonical discriminator.

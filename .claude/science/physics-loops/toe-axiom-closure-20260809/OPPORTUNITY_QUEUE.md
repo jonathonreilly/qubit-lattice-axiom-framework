@@ -360,6 +360,27 @@ projection. Rank one may consume one deep block; if it immediately requires an
 unlicensed update law, split the deliverable into a constructive extensional
 law attempt and a precise candidate axiom issue instead of hiding the import.
 
+## Post-Block-45 Priority Refresh
+
+1. **Complete-edge finite-frequency falsifier:** analytically continue the
+   repaired fifteen-edge symbol, retain the full nonmetric stationary Schur
+   block, locate gauge/TT roots, and measure separation from all other modes.
+2. **New Record selector mechanism only:** do not enumerate further compatible
+   kernels. Reopen this lane only for a derivation selecting formation,
+   precedence, clock, and constraints, or for owner evaluation of the
+   sufficient unadopted composition clause.
+3. **Physical-state reconstruction:** after an explicit viable update exists,
+   derive a positive reduced inner product or complete reflection-positive/
+   unitary reconstruction.
+4. **Stable nonflat nonlinear propagation:** construct the same-law nonflat
+   phase and prove constraint propagation.
+5. **Full-`Z^3`/source/Born closure:** pursue increasing-region and source
+   semantics only when they unblock ranks one through four.
+
+Further static grids, precision, restricted projections, and compatible
+kernel examples are deprioritized. Re-rank every three hours and after any
+pole, Ward, selector, or axiom-interface decision.
+
 ## Post-Block-44 Priority Refresh
 
 | Rank | Target | Exact next witness | Why now |

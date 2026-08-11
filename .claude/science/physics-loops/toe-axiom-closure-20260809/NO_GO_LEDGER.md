@@ -382,6 +382,21 @@ active negative boundary is formulation-specific: unreduced Euclidean
 semiboundedness. The next test is constrained Lorentzian propagation, not a
 broader no-go and not another restricted metric scan.
 
+## Block 45 Three-Wall Current-Axiom Non-Entailment Boundary
+
+Fresh N1--N8 authorizes only this bounded statement: the named current axioms,
+Block-35 Euclidean transfer, and Block-44 static/infrared gravity result do not
+entail one unique production rate/scheduler, physical clock normalization, or
+finite-frequency constraint-preserving completion. Exact compatible witnesses
+separate those controls with rank-three local response.
+
+This is not a gravity no-go and not a theorem that downstream derivation is
+impossible. Canonical constraint, full-edge continuation, unitary dilation,
+reflection-positive reconstruction, quantum instrument, inclusion-order,
+nonflat, and owner-governance routes remain live. The candidate composition
+clause is sufficient and unadopted; necessity, minimality, and adoption are
+forbidden conclusions.
+
 ## Block 44 Current-Axiom Dynamics-Selection Boundary
 
 | Scoped claim | Exact/bounded evidence | N1--N8 disposition | Forbidden promotion | Live routes |

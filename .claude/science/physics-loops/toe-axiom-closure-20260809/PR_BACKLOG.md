@@ -593,6 +593,20 @@ Science commit is `be1781ad26`; campaign conformance is `42d3056d98`. PR
 head `f2f21f9b0f`. Independent audit is pending. No canonical edit,
 percentage move, audit verdict, or `review-loop` is used.
 
+Block 45 is local on branch
+`physics-loop/toe-axiom-closure-block45-record-transition-20260811`, stacked
+exactly on Block-44 delivery head `d91500ca4e`. Its distinct review object is
+the exact permanent-Record formation-rate and scheduler separation, the
+gauge-consistent Einstein clock family, the static-identical constraint-
+breaking completion, rank-three independence certificate, and sufficient
+unadopted Admissibility--Record composition interface. Primary/cache is
+`PASS=13 FAIL=0`; eight named mutations fail singly; independent reconstruction
+is `PASS=5 FAIL=0`; graph is `5,491/15,701`, out-degree three. Direct
+conformance and the controlled 18-stage overlay at checkpoint `562cc3db21df`
+pass; evidence is clean for `1/1` Block 45 and `45/45` stacked claims. Science
+commit is `7954748635`; campaign conformance, push, and stacked PR are pending.
+No canonical edit, percentage move, audit verdict, or `review-loop` is used.
+
 Block 44 is local on branch
 `physics-loop/toe-axiom-closure-block44-lorentzian-constraints-20260811`,
 stacked exactly on Block-43 delivery head `03eaec43f7`. Its distinct review

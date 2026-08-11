@@ -530,6 +530,22 @@ to derive its law from Records localizes a candidate dynamics/law-selection
 axiom issue. Candidate wording is unadopted; fixed TOE percentages and
 canonical axioms remain unchanged. No `review-loop` is used.
 
+## Block 45 Trace Gate
+
+Block 45 reaches the campaign target as axiom-interface localization, not
+physical closure. The exact Record and Lorentzian counter-completions are
+upstream support for deciding what a physical law must select. They do not
+license a gravity no-go, an axiom amendment, or a percentage move.
+
+- `trace_gate_classification`: `upstream_support`
+- `reachability_to_target`: `supports`
+- `landed_frontier_reachability`: `advances`
+- `campaign_native_target_reachability`: `advances`
+- next gate: full repaired fifteen-edge finite-frequency pole and constraint
+  surface after complete nonmetric stationary elimination
+- alternate gate: one genuinely new extensional selector mechanism; more
+  compatible kernels do not qualify
+
 ## Block 44 Trace Gate
 
 Block 44 closes the leading complete-edge infrared canonical test. The fixed

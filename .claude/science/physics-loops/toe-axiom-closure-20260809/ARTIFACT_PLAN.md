@@ -1060,6 +1060,33 @@ complete conditional nonlinear compact solution:
   stacked exactly on Block-42 delivery head `7ac0e0e12c`; independent audit
   remains required
 
+## Block 45 Artifact Plan
+
+- theorem note: bind one fixed local content rule to two exact permanent-Record
+  formation rates and two symmetric schedules, then bind the same repaired
+  static gravity operator to three gauge-consistent clock scales and one
+  constraint-breaking completion
+- primary runner/cache: exhaust all 729 neighbour conditions, all 24 proper
+  rotations, both monotone kernels, both schedule laws, Block-44 baseline
+  retention, the clock family, spatial covariance, lapse/shift deformation,
+  wall rank, candidate interface, and fresh N1--N8; `PASS=13 FAIL=0`
+- adversarial controls: eight named in-memory mutations each fail exactly one
+  intended check; independent exact-Record and separately assembled
+  Lorentzian reconstruction is `PASS=5 FAIL=0`
+- no-go boundary: conclude only current-premise non-entailment; preserve
+  canonical, unitary-dilation, reflection-positive, instrument, nonflat, and
+  downstream-selector routes; do not claim axiom necessity or minimality
+- portfolio gate: stop enumerating compatible Record kernels; promote the full
+  fifteen-edge finite-frequency pole/constraint test unless a genuinely new
+  selector mechanism appears
+- current evidence: graph `5,491/15,701`, out-degree three; direct gates pass;
+  the unchanged stacked governance delta is inherited from Block 44, and the
+  controlled current-main five-file overlay passes all 18 stages at checkpoint
+  `562cc3db21df` with `4,829` rows / `3,707` runners. Changed evidence is clean
+  for Block 45 (`1/1`) and all 45 stacked claims (`45/45`). Science commit is
+  `7954748635`; campaign conformance, push, and stacked PR remain pending. No
+  canonical edit, percentage move, audit verdict, or `review-loop` occurs
+
 ## Block 44 Artifact Plan
 
 - theorem note: bind the complete `15=(10+5)` stationary Schur derivation,

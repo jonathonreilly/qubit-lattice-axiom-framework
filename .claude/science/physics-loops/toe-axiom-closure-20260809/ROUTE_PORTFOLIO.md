@@ -870,6 +870,21 @@ threshold. Further volume extension has low marginal value unless needed for
 an analytic all-zone proof. Constrained causal dynamics and extensional
 selection now carry the highest closure fan-out.
 
+## Block 45 Record/Clock/Constraint Selection Route Comparison
+
+| route | closure gained | decisive residual | disposition |
+|---|---|---|---|
+| more compatible Record kernels | exact monotone examples already exist | no selector for rate/order/clock | stop unless a new selection mechanism appears |
+| Record inclusion order | permanence supplies monotonicity | occurrence, adjacent precedence, and rate remain free | retain as input to a future construction, not as closure |
+| gauge-consistent Einstein clock family | preserves static, gauge, and two TT modes | physical time normalization remains free | exact boundary; do not fit a clock |
+| static-identical constraint deformation | preserves static/source and cubic covariance | lapse/shift can become kinetic and four gauge identities can disappear | promotes full-edge finite-frequency test |
+| canonical/full-edge constraint route | could select the correct finite-frequency continuation | complete fifteen-edge pole/constraint surface uncomputed | rank one active science route |
+| sufficient Admissibility--Record composition clause | would fix formation/precedence/clock/constraints extensionally | necessity, minimality, adoption, inner product, and source semantics open | owner candidate only; no canonical edit |
+
+Efficiency decision: stop kernel enumeration and static-grid tightening. Spend
+the next deep block on the complete finite-frequency edge symbol. Reopen the
+Record lane only with a genuinely new selector theorem or governance action.
+
 ## Block 44 Full-Edge Infrared Canonical / Selection Route Comparison
 
 | Route | Exact object | Outcome | Decision |

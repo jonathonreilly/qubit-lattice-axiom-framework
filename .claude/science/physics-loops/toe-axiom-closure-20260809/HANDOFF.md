@@ -1728,6 +1728,31 @@ response. Continue with Lorentzian/canonical constraint reduction and
 Record-law/source selection. Re-rank after one deep block or three hours. No
 canonical axiom, fixed percentage, audit verdict, or `review-loop` changes.
 
+## Block 45 Handoff
+
+Work is on branch
+`physics-loop/toe-axiom-closure-block45-record-transition-20260811`, stacked
+exactly on Block-44 delivery head `d91500ca4e`. The theorem note,
+source/input-pinned `PASS=13 FAIL=0` cache, eight single-failure mutation
+controls, independent `PASS=5 FAIL=0` reconstruction, fresh N1--N8, and all
+five N5 resolutions are present. Citation registration is `5,491/15,701`,
+out-degree three. Science commit is `7954748635`; direct conformance passes.
+The stacked governance delta is unchanged from Block 44; the controlled
+current-main five-file overlay passes all 18 stages at checkpoint
+`562cc3db21df`, with `4,829` rows / `3,707` runners. Changed evidence is clean
+for Block 45 (`1/1`) and all 45 stacked claims (`45/45`). Campaign conformance,
+push, and stacked PR remain pending.
+
+The gain is exact localization: formation rate/order, clock normalization, and
+finite-frequency constraint preservation are independent unselected controls.
+The sufficient unadopted axiom interface is a normalized extensional kernel on
+monotone Record extensions whose composition fixes formation, precedence, and
+clock and preserves the declared constraints. Necessity and minimality are not
+proved. Stop enumerating compatible kernels. Continue with the full repaired
+fifteen-edge finite-frequency pole/constraint surface; reopen Record selection
+only for a new selector mechanism. No canonical axiom, fixed percentage,
+audit verdict, or `review-loop` changes.
+
 ## Block 44 Handoff
 
 Work is on branch

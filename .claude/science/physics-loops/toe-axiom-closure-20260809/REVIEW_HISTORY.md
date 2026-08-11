@@ -1985,6 +1985,31 @@ instance or Fourier census.
   `7ac0e0e12c`; independent audit is pending. No canonical axiom, fixed
   percentage, audit verdict, or `review-loop` changes.
 
+## Block 45 Construction And Adversarial Record
+
+- Exhausted all 729 six-neighbour empty/binary conditions and all 24 proper
+  rotations for one exact normalized content rule.
+- Constructed monotone permanent-Record kernels at `q=1/3,2/3`; their
+  conditional contents agree exactly while expected seven-site counts are
+  `7/3,14/3` and no-formation probabilities are `128/2187,1/2187`.
+- Constructed endpoint-symmetric parallel/sequential schedules with identical
+  uniform marginals but correlations `0,3/5` and distinct precedence.
+- Reassembled the Block-44 baseline (`rank=4`, four gauge plus two TT nulls,
+  `h_tt=2`) and the clock family with TT coefficients `1/16,1/4,1` and speeds
+  `2,1,1/2`.
+- The static-identical proper-cubic lapse/shift deformation has shell rank
+  eight, time-row kinetic `1/4`, gauge residual `1/2`, and unchanged TT zeros.
+  The three selection controls have Jacobian `diag(1,1/2,1)`, rank three.
+- Fresh N1--N8 rejects gravity failure and axiom necessity. Primary/cache is
+  `PASS=13 FAIL=0`; independent reconstruction is `PASS=5 FAIL=0`; eight
+  in-memory mutations each yield exactly one intended failure. Graph is
+  `5,491/15,701`, out-degree three; direct gates pass. The controlled
+  current-main overlay passes all 18 stages at checkpoint `562cc3db21df`, with
+  `4,829` rows / `3,707` runners. Changed evidence is clean for Block 45
+  (`1/1`) and all 45 stacked claims (`45/45`). Science commit is `7954748635`;
+  campaign conformance, push, and stacked PR remain pending. No canonical
+  axiom, percentage, audit verdict, or `review-loop` changes.
+
 ## Block 44 Construction And Adversarial Record
 
 - Reconstructed the complete constant edge split: the metric map has rank ten,

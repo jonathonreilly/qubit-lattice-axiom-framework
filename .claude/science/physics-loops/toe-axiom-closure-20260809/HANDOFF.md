@@ -1577,8 +1577,9 @@ characters. Direct gates pass; the exact stack reaches only the inherited
 stage-7 policy-epoch mismatch, while the controlled five-file current-main
 overlay passes all 18 stages at checkpoint `cf90ef2a1ee1`. Changed evidence is
 ready for `2/2` changed claims and `38/38` stacked claims, with zero failures
-or controls. Science commit is `3c94b3fa79`; campaign delivery and the stacked
-PR remain.
+or controls. Science commit is `3c94b3fa79`; campaign conformance is
+`c2cd76dc49`. PR #6124 is open, mergeable, and `CLEAN`, stacked exactly on
+Block-37 delivery head `cb107d8a84`; independent audit remains required.
 
 The main gain is that overlap is no longer the leading gravity wall. Fixed
 site/edge/face potentials obey branchwise inclusion--exclusion, the exact

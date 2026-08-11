@@ -753,6 +753,7 @@ two. Direct conformance passes. The exact stack reconstructs `4,822` rows /
 controlled current-main overlay passes all 18 stages at checkpoint
 `cf90ef2a1ee1`. Changed evidence is ready for `2/2` changed claims and `38/38`
 stacked claims, with zero failures or controls. Science commit is
-`3c94b3fa79`; campaign conformance, push, and the stacked PR remain pending.
-Independent audit remains required. No canonical edit, percentage move, audit
-verdict, or `review-loop` is used.
+`3c94b3fa79`; campaign conformance is `c2cd76dc49`. PR #6124 is open,
+mergeable, and `CLEAN`, stacked exactly on Block-37 delivery head
+`cb107d8a84`. Independent audit remains required. No canonical edit,
+percentage move, audit verdict, or `review-loop` is used.

@@ -1304,4 +1304,6 @@ lines are in the landing primary cache.
   epoch mismatch. A controlled five-file current-main overlay passes all 18
   stages at checkpoint `cf90ef2a1ee1`; changed evidence is ready for `2/2`
   changed claims and `38/38` stacked claims, with no failures or controls.
-  Science commit is `3c94b3fa79`; independent audit remains required.
+  Science commit is `3c94b3fa79`; campaign conformance is `c2cd76dc49`.
+  PR #6124 is open, mergeable, and `CLEAN`, stacked exactly on Block-37
+  delivery head `cb107d8a84`; independent audit remains required.

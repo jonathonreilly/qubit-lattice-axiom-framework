@@ -1434,8 +1434,9 @@ lines are in the landing primary cache.
   reaches only the inherited stage-7 dependency-policy epoch mismatch. A
   controlled five-file current-main overlay passes all 18 stages at checkpoint
   `1465d650908b`. Seeded changed evidence is clean for Block 42 alone (`1/1`),
-  with zero failures and zero control failures. Push, PR, and independent audit
-  are pending.
+  with zero failures and zero control failures. Campaign conformance is
+  `fa6fcf4f87`; PR #6132 is open, mergeable, and `CLEAN`, stacked exactly on
+  Block-41 delivery head `66a824a29c`; independent audit remains required.
 - Scope: bounded unchanged-flat-branch instability, not a gravity no-go,
   full spectrum, nonflat exclusion, fifth-axiom result, percentage move, or
   audit verdict. Fresh N1--N8 and N5 land; no `review-loop` is used.

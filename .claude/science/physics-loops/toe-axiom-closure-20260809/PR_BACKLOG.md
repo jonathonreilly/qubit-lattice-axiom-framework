@@ -604,9 +604,11 @@ registration is `5,488/15,688`, out-degree five. Science commit is
 conformance passes. The exact stack reaches only the inherited stage-7
 dependency-policy epoch mismatch after `4,826` rows / `3,704` runners; the
 controlled five-file current-main overlay passes all 18 stages at checkpoint
-`1465d650908b`. Changed evidence is clean for Block 42 (`1/1`). Push, PR, and
-independent audit are pending. No canonical edit, percentage move, audit
-verdict, or `review-loop` is used.
+`1465d650908b`. Changed evidence is clean for Block 42 (`1/1`). Campaign
+conformance is `fa6fcf4f87`; PR #6132 is open, mergeable, and `CLEAN`, stacked
+exactly on Block-41 delivery head `66a824a29c`; independent audit remains
+required. No canonical edit, percentage move, audit verdict, or `review-loop`
+is used.
 
 Block 41 is local on branch
 `physics-loop/toe-axiom-closure-block41-nonzero-hessian-20260811`, stacked

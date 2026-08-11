@@ -1690,7 +1690,9 @@ registration is `5,488/15,688`, out-degree five. Science commit is
 `3,704` runners and reaches only the inherited stage-7 dependency-policy epoch
 mismatch. The controlled five-file current-main overlay passes all 18 stages
 at checkpoint `1465d650908b`; changed evidence is clean for Block 42 (`1/1`).
-Push, PR, and independent audit are pending.
+Campaign conformance is `fa6fcf4f87`; PR #6132 is open, mergeable, and
+`CLEAN`, stacked exactly on Block-41 delivery head `66a824a29c`; independent
+audit remains required.
 
 The decisive gain is `K_iso<=-0.030463496853` for the physical
 `A_i=J_(i,3)/sqrt(3)` direction after granting the Record sector its maximum

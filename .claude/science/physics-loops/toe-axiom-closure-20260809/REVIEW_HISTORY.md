@@ -1973,8 +1973,9 @@ instance or Fourier census.
   reaches only the inherited stage-7 dependency-policy epoch mismatch; the
   controlled five-file current-main overlay passes all 18 stages at checkpoint
   `1465d650908b`. Seeded changed evidence is clean for Block 42 (`1/1`), with
-  zero failures or control failures. Push, PR, and independent audit are
-  pending.
+  zero failures or control failures. Campaign conformance is `fa6fcf4f87`; PR
+  #6132 is open, mergeable, and `CLEAN`, stacked exactly on Block-41 delivery
+  head `66a824a29c`; independent audit remains required.
 
 ## Block 41 Construction And Adversarial Record
 

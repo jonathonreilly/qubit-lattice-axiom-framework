@@ -1,6 +1,6 @@
 {
- "edge_count": 15483,
- "node_count": 5447,
+ "edge_count": 15484,
+ "node_count": 5448,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -13501,6 +13501,10 @@
   "past_hypothesis_existence_reduction_append_only_well_foundedness_bounded_theorem_note_2026-06-11": {
    "deps_hash": "72195f0ab7ce",
    "out_degree": 5
+  },
+  "patch_uniformity_star_gluing_induction_cycle986_bounded_theorem_note_2026-08-11": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "patched_stationary_system_pl_s3_theorem_note_2026-05-03": {
    "deps_hash": "30c9889a1997",

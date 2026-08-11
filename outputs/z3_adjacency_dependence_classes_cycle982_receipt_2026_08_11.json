@@ -1,0 +1,1188 @@
+{
+  "artifact": "true Z3 adjacency dependence-class bounded census primary",
+  "audit_status_authority": "independent audit lane only",
+  "checks": {
+    "A_ADJACENCY_MAP": true,
+    "B_Z3_WITNESS_CENSUS": true,
+    "C_STRUCTURE_TRANSFER": true,
+    "D_HONEST_SCOPE": true,
+    "E_CONTROLS": true
+  },
+  "controls": {
+    "all_inputs_relative_and_present": true,
+    "base_is_ancestor_of_head": true,
+    "base_origin_main_commit": "ea0968c71ad46c39c6dacb39f88a18780363b71f",
+    "blob_pins_match": true,
+    "blocked_ast_imports": [],
+    "blocklist_ast_fragments": [
+      "cycle970",
+      "cycle972",
+      "cycle977",
+      "cycle979",
+      "cycle980"
+    ],
+    "blocklist_text_disjoint_from_reads": true,
+    "blocklist_text_paths": [
+      "docs/WITNESS_FAMILY_COMPLETENESS_CYCLE977_BOUNDED_THEOREM_NOTE_2026-08-10.md",
+      "docs/CLASS_COEXISTENCE_BORN_REQUIREMENT_CYCLE979_BOUNDED_THEOREM_NOTE_2026-08-10.md",
+      "docs/WITNESS_ORBIT_MULTIPLICITY_CYCLE980_BOUNDED_THEOREM_NOTE_2026-08-11.md"
+    ],
+    "determinism_replay": true,
+    "house_stdout_limit_bytes": 6000,
+    "input_git_blobs": {
+      "docs/MINIMAL_AXIOMS_2026-06-29.md": "2f5fdd26898f62c17fcabc846761f7785c2eadb1"
+    },
+    "input_sha256": {
+      "docs/MINIMAL_AXIOMS_2026-06-29.md": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39"
+    },
+    "literal_audit_input_paths": [
+      "docs/MINIMAL_AXIOMS_2026-06-29.md"
+    ],
+    "literal_source_read_count": 1,
+    "pinned_substrate": {
+      "blob_pin_match": true,
+      "commit": "39c74017b870c27c804e3992f2a11e90336476b2",
+      "git_blob": "c123b8d681c3d76fce08ef13d7673622deac64ad",
+      "loaded_from_immutable_git_archive": true,
+      "path": "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+      "sha256": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
+      "sha_pin_match": true
+    },
+    "prior_cycle_text_or_ast_executed": false,
+    "runtime_budget_met": true,
+    "runtime_budget_seconds": 1400,
+    "sha_pins_match": true,
+    "stdout_bytes": 658,
+    "stdout_limit_bytes": 150000
+  },
+  "cycle": 982,
+  "findings": {
+    "A_ADJACENCY_MAP": {
+      "all_semantic_pairs_have_star_internal_nn_paths": true,
+      "counterexample_to_relation_equality": {
+        "logical_pair": [
+          1,
+          3
+        ],
+        "sites": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "z3_l1_distance": 2
+      },
+      "is_quotient_map": false,
+      "non_z3_semantic_pairs_map_to_two_step_paths": true,
+      "path_realization": [
+        {
+          "all_steps_z3_nearest_neighbour": true,
+          "is_z3_edge": true,
+          "logical_names": [
+            "C",
+            "+x"
+          ],
+          "logical_pair": [
+            0,
+            1
+          ],
+          "path": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ]
+          ],
+          "path_length": 1,
+          "path_stays_in_seven_site_star": true
+        },
+        {
+          "all_steps_z3_nearest_neighbour": true,
+          "is_z3_edge": true,
+          "logical_names": [
+            "C",
+            "-x"
+          ],
+          "logical_pair": [
+            0,
+            2
+          ],
+          "path": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              -1,
+              0,
+              0
+            ]
+          ],
+          "path_length": 1,
+          "path_stays_in_seven_site_star": true
+        },
+        {
+          "all_steps_z3_nearest_neighbour": true,
+          "is_z3_edge": true,
+          "logical_names": [
+            "C",
+            "+y"
+          ],
+          "logical_pair": [
+            0,
+            3
+          ],
+          "path": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "path_length": 1,
+          "path_stays_in_seven_site_star": true
+        },
+        {
+          "all_steps_z3_nearest_neighbour": true,
+          "is_z3_edge": true,
+          "logical_names": [
+            "C",
+            "-y"
+          ],
+          "logical_pair": [
+            0,
+            4
+          ],
+          "path": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              -1,
+              0
+            ]
+          ],
+          "path_length": 1,
+          "path_stays_in_seven_site_star": true
+        },
+        {
+          "all_steps_z3_nearest_neighbour": true,
+          "is_z3_edge": true,
+          "logical_names": [
+            "C",
+            "+z"
+          ],
+          "logical_pair": [
+            0,
+            5
+          ],
+          "path": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "path_length": 1,
+          "path_stays_in_seven_site_star": true
+        },
+        {
+          "all_steps_z3_nearest_neighbour": true,
+          "is_z3_edge": true,
+          "logical_names": [
+            "C",
+            "-z"
+          ],
+          "logical_pair": [
+            0,
+            6
+          ],
+          "path": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              -1
+            ]
+          ],
+          "path_length": 1,
+          "path_stays_in_seven_site_star": true
+        },
+        {
+          "all_steps_z3_nearest_neighbour": true,
+          "is_z3_edge": false,
+          "logical_names": [
+            "+x",
+            "-x"
+          ],
+          "logical_pair": [
+            1,
+            2
+          ],
+          "path": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              -1,
+              0,
+              0
+            ]
+          ],
+          "path_length": 2,
+          "path_stays_in_seven_site_star": true
+        },
+        {
+          "all_steps_z3_nearest_neighbour": true,
+          "is_z3_edge": false,
+          "logical_names": [
+            "+x",
+            "+y"
+          ],
+          "logical_pair": [
+            1,
+            3
+          ],
+          "path": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "path_length": 2,
+          "path_stays_in_seven_site_star": true
+        },
+        {
+          "all_steps_z3_nearest_neighbour": true,
+          "is_z3_edge": false,
+          "logical_names": [
+            "+x",
+            "-y"
+          ],
+          "logical_pair": [
+            1,
+            4
+          ],
+          "path": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              -1,
+              0
+            ]
+          ],
+          "path_length": 2,
+          "path_stays_in_seven_site_star": true
+        },
+        {
+          "all_steps_z3_nearest_neighbour": true,
+          "is_z3_edge": false,
+          "logical_names": [
+            "+x",
+            "+z"
+          ],
+          "logical_pair": [
+            1,
+            5
+          ],
+          "path": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "path_length": 2,
+          "path_stays_in_seven_site_star": true
+        },
+        {
+          "all_steps_z3_nearest_neighbour": true,
+          "is_z3_edge": false,
+          "logical_names": [
+            "+x",
+            "-z"
+          ],
+          "logical_pair": [
+            1,
+            6
+          ],
+          "path": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              -1
+            ]
+          ],
+          "path_length": 2,
+          "path_stays_in_seven_site_star": true
+        },
+        {
+          "all_steps_z3_nearest_neighbour": true,
+          "is_z3_edge": false,
+          "logical_names": [
+            "-x",
+            "+y"
+          ],
+          "logical_pair": [
+            2,
+            3
+          ],
+          "path": [
+            [
+              -1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "path_length": 2,
+          "path_stays_in_seven_site_star": true
+        },
+        {
+          "all_steps_z3_nearest_neighbour": true,
+          "is_z3_edge": false,
+          "logical_names": [
+            "-x",
+            "-y"
+          ],
+          "logical_pair": [
+            2,
+            4
+          ],
+          "path": [
+            [
+              -1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              -1,
+              0
+            ]
+          ],
+          "path_length": 2,
+          "path_stays_in_seven_site_star": true
+        },
+        {
+          "all_steps_z3_nearest_neighbour": true,
+          "is_z3_edge": false,
+          "logical_names": [
+            "-x",
+            "+z"
+          ],
+          "logical_pair": [
+            2,
+            5
+          ],
+          "path": [
+            [
+              -1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "path_length": 2,
+          "path_stays_in_seven_site_star": true
+        },
+        {
+          "all_steps_z3_nearest_neighbour": true,
+          "is_z3_edge": false,
+          "logical_names": [
+            "-x",
+            "-z"
+          ],
+          "logical_pair": [
+            2,
+            6
+          ],
+          "path": [
+            [
+              -1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              -1
+            ]
+          ],
+          "path_length": 2,
+          "path_stays_in_seven_site_star": true
+        },
+        {
+          "all_steps_z3_nearest_neighbour": true,
+          "is_z3_edge": false,
+          "logical_names": [
+            "+y",
+            "-y"
+          ],
+          "logical_pair": [
+            3,
+            4
+          ],
+          "path": [
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              -1,
+              0
+            ]
+          ],
+          "path_length": 2,
+          "path_stays_in_seven_site_star": true
+        },
+        {
+          "all_steps_z3_nearest_neighbour": true,
+          "is_z3_edge": false,
+          "logical_names": [
+            "+y",
+            "+z"
+          ],
+          "logical_pair": [
+            3,
+            5
+          ],
+          "path": [
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "path_length": 2,
+          "path_stays_in_seven_site_star": true
+        },
+        {
+          "all_steps_z3_nearest_neighbour": true,
+          "is_z3_edge": false,
+          "logical_names": [
+            "+y",
+            "-z"
+          ],
+          "logical_pair": [
+            3,
+            6
+          ],
+          "path": [
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              -1
+            ]
+          ],
+          "path_length": 2,
+          "path_stays_in_seven_site_star": true
+        },
+        {
+          "all_steps_z3_nearest_neighbour": true,
+          "is_z3_edge": false,
+          "logical_names": [
+            "-y",
+            "+z"
+          ],
+          "logical_pair": [
+            4,
+            5
+          ],
+          "path": [
+            [
+              0,
+              -1,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "path_length": 2,
+          "path_stays_in_seven_site_star": true
+        },
+        {
+          "all_steps_z3_nearest_neighbour": true,
+          "is_z3_edge": false,
+          "logical_names": [
+            "-y",
+            "-z"
+          ],
+          "logical_pair": [
+            4,
+            6
+          ],
+          "path": [
+            [
+              0,
+              -1,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              -1
+            ]
+          ],
+          "path_length": 2,
+          "path_stays_in_seven_site_star": true
+        },
+        {
+          "all_steps_z3_nearest_neighbour": true,
+          "is_z3_edge": false,
+          "logical_names": [
+            "+z",
+            "-z"
+          ],
+          "logical_pair": [
+            5,
+            6
+          ],
+          "path": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              -1
+            ]
+          ],
+          "path_length": 2,
+          "path_stays_in_seven_site_star": true
+        }
+      ],
+      "quotient_obstruction": "the vertex map is injective and identifies no sites; extra semantic pairs map to paths, not edges",
+      "relation_classification": "z3_strict_subrelation_of_semantic_wiring",
+      "semantic_wiring_definition": "pair shadow of all distinct-wire landed constructors on seven logical wires",
+      "semantic_wiring_edge_count": 21,
+      "semantic_wiring_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "vertex_map": {
+        "0": [
+          0,
+          0,
+          0
+        ],
+        "1": [
+          1,
+          0,
+          0
+        ],
+        "2": [
+          -1,
+          0,
+          0
+        ],
+        "3": [
+          0,
+          1,
+          0
+        ],
+        "4": [
+          0,
+          -1,
+          0
+        ],
+        "5": [
+          0,
+          0,
+          1
+        ],
+        "6": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "vertex_map_injective": true,
+      "z3_edge_count": 6,
+      "z3_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          6
+        ]
+      ],
+      "z3_edges_map_to_single_step_paths": true,
+      "z3_relation_definition": "L1 distance exactly one on the injected sites"
+    },
+    "B_Z3_WITNESS_CENSUS": {
+      "ambient_central_degree": 6,
+      "construction": "inject wire 0 at the origin and wires 1..6 at the six signed unit vectors; use the induced L1-nearest-neighbour relation and the landed Manhattan router",
+      "family": {
+        "cap": "all 23 target-local descriptors; both centre inputs; all 2^6 neighbour conditions; no sampling",
+        "family_digest": "d7cb67193f1b63a3f08181410c320ac570cc4652002971274028d69baed7a430",
+        "family_size": 23,
+        "site_menu": [
+          0,
+          1
+        ],
+        "support": "one centre and its six genuine Z3 nearest neighbours",
+        "word_length": "zero or one",
+        "words": "I; X(C); CNOT(n->C); TOF({n,m}->C) for distinct neighbours"
+      },
+      "hosted_census": {
+        "orbit_decomposition": {
+          "J_constant_on_each_orbit": true,
+          "J_distinct_across_orbits": true,
+          "action_closed_on_witnesses": true,
+          "effective_group": "proper cubic rotation group",
+          "effective_group_order": 24,
+          "orbit_count": 3,
+          "orbits": [
+            {
+              "J_values": [
+                1
+              ],
+              "class_label": "CNOT",
+              "effective_stabilizer_order": 4,
+              "member_count": 6,
+              "members": [
+                "CNOT(+x->C)",
+                "CNOT(+y->C)",
+                "CNOT(+z->C)",
+                "CNOT(-x->C)",
+                "CNOT(-y->C)",
+                "CNOT(-z->C)"
+              ],
+              "orbit_closed_in_witness_set": true,
+              "orbit_stabilizer_product": 24,
+              "representative": "CNOT(+x->C)"
+            },
+            {
+              "J_values": [
+                0
+              ],
+              "class_label": "TOF_OPPOSITE_CONTROLS",
+              "effective_stabilizer_order": 8,
+              "member_count": 3,
+              "members": [
+                "TOF(+x,-x->C)",
+                "TOF(+y,-y->C)",
+                "TOF(+z,-z->C)"
+              ],
+              "orbit_closed_in_witness_set": true,
+              "orbit_stabilizer_product": 24,
+              "representative": "TOF(+x,-x->C)"
+            },
+            {
+              "J_values": [
+                2
+              ],
+              "class_label": "TOF_PERPENDICULAR_CONTROLS",
+              "effective_stabilizer_order": 2,
+              "member_count": 12,
+              "members": [
+                "TOF(+x,+y->C)",
+                "TOF(+x,+z->C)",
+                "TOF(+x,-y->C)",
+                "TOF(+x,-z->C)",
+                "TOF(+y,+z->C)",
+                "TOF(+y,-z->C)",
+                "TOF(-x,+y->C)",
+                "TOF(-x,+z->C)",
+                "TOF(-x,-y->C)",
+                "TOF(-x,-z->C)",
+                "TOF(-y,+z->C)",
+                "TOF(-y,-z->C)"
+              ],
+              "orbit_closed_in_witness_set": true,
+              "orbit_stabilizer_product": 24,
+              "representative": "TOF(+x,+y->C)"
+            }
+          ],
+          "partition_has_no_overlap_or_omission": true
+        },
+        "witness_count": 21,
+        "witness_digest": "f3ca8b24165990118ad58bc13a9592f15702824658b8b8ec3c222680361183fd",
+        "witness_names": [
+          "CNOT(+x->C)",
+          "CNOT(-x->C)",
+          "CNOT(+y->C)",
+          "CNOT(-y->C)",
+          "CNOT(+z->C)",
+          "CNOT(-z->C)",
+          "TOF(+x,-x->C)",
+          "TOF(+x,+y->C)",
+          "TOF(+x,-y->C)",
+          "TOF(+x,+z->C)",
+          "TOF(+x,-z->C)",
+          "TOF(-x,+y->C)",
+          "TOF(-x,-y->C)",
+          "TOF(-x,+z->C)",
+          "TOF(-x,-z->C)",
+          "TOF(+y,-y->C)",
+          "TOF(+y,+z->C)",
+          "TOF(+y,-z->C)",
+          "TOF(-y,+z->C)",
+          "TOF(-y,-z->C)",
+          "TOF(+z,-z->C)"
+        ]
+      },
+      "landed_vs_independent_truth_failure_count": 0,
+      "minimality": "a represented site plus its six distinct Z3 nearest neighbours requires at least seven sites",
+      "route_host": {
+        "all_words_routable": true,
+        "classification": "finite_seven_site_z3_star_hosted",
+        "expanded_primitive_count": 232,
+        "maximum_route_distance": 2,
+        "maximum_touched_sites": 3,
+        "non_nn_failure_count": 0,
+        "operand_order_failure_count": 0,
+        "route_return_failure_count": 0,
+        "route_rows_digest": "78d559cf4ec0bf82a61da8b9701e0502f5c952eeb5f6dbea2e44551eb995abb5",
+        "routed_nn_gate_count": 292
+      },
+      "semantic_candidate_census": {
+        "orbit_decomposition": {
+          "J_constant_on_each_orbit": true,
+          "J_distinct_across_orbits": true,
+          "action_closed_on_witnesses": true,
+          "effective_group": "proper cubic rotation group",
+          "effective_group_order": 24,
+          "orbit_count": 3,
+          "orbits": [
+            {
+              "J_values": [
+                1
+              ],
+              "class_label": "CNOT",
+              "effective_stabilizer_order": 4,
+              "member_count": 6,
+              "members": [
+                "CNOT(+x->C)",
+                "CNOT(+y->C)",
+                "CNOT(+z->C)",
+                "CNOT(-x->C)",
+                "CNOT(-y->C)",
+                "CNOT(-z->C)"
+              ],
+              "orbit_closed_in_witness_set": true,
+              "orbit_stabilizer_product": 24,
+              "representative": "CNOT(+x->C)"
+            },
+            {
+              "J_values": [
+                0
+              ],
+              "class_label": "TOF_OPPOSITE_CONTROLS",
+              "effective_stabilizer_order": 8,
+              "member_count": 3,
+              "members": [
+                "TOF(+x,-x->C)",
+                "TOF(+y,-y->C)",
+                "TOF(+z,-z->C)"
+              ],
+              "orbit_closed_in_witness_set": true,
+              "orbit_stabilizer_product": 24,
+              "representative": "TOF(+x,-x->C)"
+            },
+            {
+              "J_values": [
+                2
+              ],
+              "class_label": "TOF_PERPENDICULAR_CONTROLS",
+              "effective_stabilizer_order": 2,
+              "member_count": 12,
+              "members": [
+                "TOF(+x,+y->C)",
+                "TOF(+x,+z->C)",
+                "TOF(+x,-y->C)",
+                "TOF(+x,-z->C)",
+                "TOF(+y,+z->C)",
+                "TOF(+y,-z->C)",
+                "TOF(-x,+y->C)",
+                "TOF(-x,+z->C)",
+                "TOF(-x,-y->C)",
+                "TOF(-x,-z->C)",
+                "TOF(-y,+z->C)",
+                "TOF(-y,-z->C)"
+              ],
+              "orbit_closed_in_witness_set": true,
+              "orbit_stabilizer_product": 24,
+              "representative": "TOF(+x,+y->C)"
+            }
+          ],
+          "partition_has_no_overlap_or_omission": true
+        },
+        "witness_count": 21,
+        "witness_digest": "f3ca8b24165990118ad58bc13a9592f15702824658b8b8ec3c222680361183fd",
+        "witness_names": [
+          "CNOT(+x->C)",
+          "CNOT(-x->C)",
+          "CNOT(+y->C)",
+          "CNOT(-y->C)",
+          "CNOT(+z->C)",
+          "CNOT(-z->C)",
+          "TOF(+x,-x->C)",
+          "TOF(+x,+y->C)",
+          "TOF(+x,-y->C)",
+          "TOF(+x,+z->C)",
+          "TOF(+x,-z->C)",
+          "TOF(-x,+y->C)",
+          "TOF(-x,-y->C)",
+          "TOF(-x,+z->C)",
+          "TOF(-x,-z->C)",
+          "TOF(+y,-y->C)",
+          "TOF(+y,+z->C)",
+          "TOF(+y,-z->C)",
+          "TOF(-y,+z->C)",
+          "TOF(-y,-z->C)",
+          "TOF(+z,-z->C)"
+        ]
+      },
+      "site_count": 7
+    },
+    "C_STRUCTURE_TRANSFER": {
+      "classification": "transfers_exactly_on_the_declared_local_family",
+      "orbit_data": {
+        "J_constant_on_each_orbit": true,
+        "J_distinct_across_orbits": true,
+        "action_closed_on_witnesses": true,
+        "effective_group": "proper cubic rotation group",
+        "effective_group_order": 24,
+        "orbit_count": 3,
+        "orbits": [
+          {
+            "J_values": [
+              1
+            ],
+            "class_label": "CNOT",
+            "effective_stabilizer_order": 4,
+            "member_count": 6,
+            "members": [
+              "CNOT(+x->C)",
+              "CNOT(+y->C)",
+              "CNOT(+z->C)",
+              "CNOT(-x->C)",
+              "CNOT(-y->C)",
+              "CNOT(-z->C)"
+            ],
+            "orbit_closed_in_witness_set": true,
+            "orbit_stabilizer_product": 24,
+            "representative": "CNOT(+x->C)"
+          },
+          {
+            "J_values": [
+              0
+            ],
+            "class_label": "TOF_OPPOSITE_CONTROLS",
+            "effective_stabilizer_order": 8,
+            "member_count": 3,
+            "members": [
+              "TOF(+x,-x->C)",
+              "TOF(+y,-y->C)",
+              "TOF(+z,-z->C)"
+            ],
+            "orbit_closed_in_witness_set": true,
+            "orbit_stabilizer_product": 24,
+            "representative": "TOF(+x,-x->C)"
+          },
+          {
+            "J_values": [
+              2
+            ],
+            "class_label": "TOF_PERPENDICULAR_CONTROLS",
+            "effective_stabilizer_order": 2,
+            "member_count": 12,
+            "members": [
+              "TOF(+x,+y->C)",
+              "TOF(+x,+z->C)",
+              "TOF(+x,-y->C)",
+              "TOF(+x,-z->C)",
+              "TOF(+y,+z->C)",
+              "TOF(+y,-z->C)",
+              "TOF(-x,+y->C)",
+              "TOF(-x,+z->C)",
+              "TOF(-x,-y->C)",
+              "TOF(-x,-z->C)",
+              "TOF(-y,+z->C)",
+              "TOF(-y,-z->C)"
+            ],
+            "orbit_closed_in_witness_set": true,
+            "orbit_stabilizer_product": 24,
+            "representative": "TOF(+x,+y->C)"
+          }
+        ],
+        "partition_has_no_overlap_or_omission": true
+      },
+      "separator": {
+        "formula": "squared Euclidean norm of the sum of centre-relative control vectors",
+        "name": "J",
+        "scope": "derived target-local neighbour-dependence witnesses"
+      }
+    },
+    "D_HONEST_SCOPE": {
+      "feasibility_outcome": "finite local host is feasible and exercised; full-axiom host is outside the delivered construction",
+      "full_infinite_z3_instance_claimed": false,
+      "local_seven_site_instance_hosted": true,
+      "not_supplied_by_this_instance": [
+        "an infinite allocation of M2 sites over every point of Z3",
+        "one translation-uniform admissibility probability rule on every lattice site",
+        "a simultaneous global execution of the 23 alternative local words",
+        "a derivation identifying semantic operand availability with geometric adjacency"
+      ],
+      "scope_boundary": "the landed router realizes the finite radius-one star word by word; this packet does not construct an infinite simultaneous lattice law"
+    }
+  },
+  "integrity_policy": "checks gate construction and bookkeeping only; hosted, deformed, failed, or unavailable census outcomes remain cleanly reportable",
+  "pass": true,
+  "primary_source_sha256": "764415ed220b3036ff08ee936ea0e79eb227daef39e39b8c8866c64f8ab616e7",
+  "science_digest": "cb9add50e85268ca72c408694f0599571adb18fca46481182da2cca254fa2b9e",
+  "stdout_sha256": "9014e07a963729d52f38e367326906e66275692cdf8ec770b509ba619b41ebce"
+}

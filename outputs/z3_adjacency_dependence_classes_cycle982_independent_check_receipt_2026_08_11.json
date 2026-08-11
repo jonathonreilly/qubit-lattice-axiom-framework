@@ -1,0 +1,191 @@
+{
+  "artifact": "true Z3 adjacency dependence-class independent refutation checker",
+  "audit_status_authority": "independent audit lane only",
+  "checker_source_sha256": "90e5a562dcfdbb320b05136626ed46001f2f2696c1066a117dd0293772dcba59",
+  "checks": {
+    "A_INDEPENDENT_RECONSTRUCTION": true,
+    "B_REFUTATION_POWER": true,
+    "C_ARTIFACT_BINDING": true,
+    "D_PROVENANCE": true,
+    "E_CONTROLS": true
+  },
+  "controls": {
+    "all_inputs_relative_and_present": true,
+    "blob_pins_match": true,
+    "byte_pinned_input_paths": [
+      "scripts/frontier_cycle982_z3_adjacency_dependence_classes_2026_08_11.py",
+      "outputs/z3_adjacency_dependence_classes_cycle982_receipt_2026_08_11.json"
+    ],
+    "cycle719_imported_or_executed": false,
+    "determinism_replay": true,
+    "forbidden_imports": [],
+    "house_stdout_limit_bytes": 6000,
+    "input_git_blobs": {
+      "outputs/z3_adjacency_dependence_classes_cycle982_receipt_2026_08_11.json": "e3caae976d9f6c4d315ca271e5bddbc94cbca776",
+      "scripts/frontier_cycle982_z3_adjacency_dependence_classes_2026_08_11.py": "6ae849c0c42749ea5d4d7e607430856cd8d5523f"
+    },
+    "input_sha256": {
+      "outputs/z3_adjacency_dependence_classes_cycle982_receipt_2026_08_11.json": "bbda00e56dc7721919fe8cd52196940d88020e4671969d6199e16541bc9cc4c2",
+      "scripts/frontier_cycle982_z3_adjacency_dependence_classes_2026_08_11.py": "764415ed220b3036ff08ee936ea0e79eb227daef39e39b8c8866c64f8ab616e7"
+    },
+    "literal_audit_input_paths": [
+      "scripts/frontier_cycle982_z3_adjacency_dependence_classes_2026_08_11.py",
+      "outputs/z3_adjacency_dependence_classes_cycle982_receipt_2026_08_11.json",
+      "logs/runner-cache/frontier_cycle982_z3_adjacency_dependence_classes_2026_08_11.txt"
+    ],
+    "literal_source_read_count": 3,
+    "primary_ast_timeout_seconds": 1400,
+    "primary_imported_or_executed": false,
+    "prior_cycle_text_or_ast_executed": false,
+    "runtime_budget_met": true,
+    "runtime_budget_seconds": 300,
+    "sha_pins_match": true,
+    "stdout_bytes": 765,
+    "stdout_limit_bytes": 150000
+  },
+  "cycle": 982,
+  "findings": {
+    "clean_validation": true,
+    "clean_validation_errors": [],
+    "independent_expected": {
+      "expanded_primitive_count": 232,
+      "family_size": 23,
+      "group_order": 24,
+      "maximum_route_distance": 2,
+      "maximum_touched_sites": 3,
+      "orbits": [
+        {
+          "J_values": [
+            1
+          ],
+          "class_label": "CNOT",
+          "effective_stabilizer_order": 4,
+          "member_count": 6
+        },
+        {
+          "J_values": [
+            0
+          ],
+          "class_label": "TOF_OPPOSITE_CONTROLS",
+          "effective_stabilizer_order": 8,
+          "member_count": 3
+        },
+        {
+          "J_values": [
+            2
+          ],
+          "class_label": "TOF_PERPENDICULAR_CONTROLS",
+          "effective_stabilizer_order": 2,
+          "member_count": 12
+        }
+      ],
+      "relation_classification": "z3_strict_subrelation_of_semantic_wiring",
+      "routed_nn_gate_count": 292,
+      "semantic_edge_count": 21,
+      "witness_count": 21,
+      "witness_names": [
+        "CNOT(+x->C)",
+        "CNOT(+y->C)",
+        "CNOT(+z->C)",
+        "CNOT(-x->C)",
+        "CNOT(-y->C)",
+        "CNOT(-z->C)",
+        "TOF(+x,+y->C)",
+        "TOF(+x,+z->C)",
+        "TOF(+x,-x->C)",
+        "TOF(+x,-y->C)",
+        "TOF(+x,-z->C)",
+        "TOF(+y,+z->C)",
+        "TOF(+y,-y->C)",
+        "TOF(+y,-z->C)",
+        "TOF(+z,-z->C)",
+        "TOF(-x,+y->C)",
+        "TOF(-x,+z->C)",
+        "TOF(-x,-y->C)",
+        "TOF(-x,-z->C)",
+        "TOF(-y,+z->C)",
+        "TOF(-y,-z->C)"
+      ],
+      "z3_edge_count": 6
+    },
+    "independent_reconstruction_bookkeeping": true,
+    "mutations": [
+      {
+        "errors": [
+          "relation_classification"
+        ],
+        "name": "relation_classification",
+        "rejected": true
+      },
+      {
+        "errors": [
+          "semantic_edge_count"
+        ],
+        "name": "semantic_edge_count",
+        "rejected": true
+      },
+      {
+        "errors": [
+          "host_flag"
+        ],
+        "name": "hostability",
+        "rejected": true
+      },
+      {
+        "errors": [
+          "hosted_census_content"
+        ],
+        "name": "witness_count",
+        "rejected": true
+      },
+      {
+        "errors": [
+          "hosted_census_content"
+        ],
+        "name": "orbit_size",
+        "rejected": true
+      },
+      {
+        "errors": [
+          "hosted_census_content"
+        ],
+        "name": "stabilizer",
+        "rejected": true
+      },
+      {
+        "errors": [
+          "hosted_census_content"
+        ],
+        "name": "J_separator",
+        "rejected": true
+      },
+      {
+        "errors": [
+          "honest_scope"
+        ],
+        "name": "full_infinite_scope",
+        "rejected": true
+      },
+      {
+        "errors": [
+          "cache_source_pin"
+        ],
+        "name": "primary_source_pin",
+        "rejected": true
+      },
+      {
+        "errors": [
+          "cache_stdout_pin"
+        ],
+        "name": "cache_headline",
+        "rejected": true
+      }
+    ],
+    "primary_science_agreement": true,
+    "primary_science_agreement_mismatches": []
+  },
+  "integrity_policy": "checks gate independent reconstruction, artifact binding, and mutation rejection only",
+  "pass": true,
+  "science_digest": "a3e120dc8a22e39f99e738175c257736eef44065f0a5f48223f3f057f5e4e72c",
+  "stdout_sha256": "527c28cafb0f1516865529b11b21dc16240a9a076bae9dbbb3162a924df329ad"
+}

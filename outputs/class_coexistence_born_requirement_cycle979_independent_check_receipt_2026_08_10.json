@@ -1,0 +1,2969 @@
+{
+  "certificates": {
+    "R0_PRIMARY_AST_AND_PINS": {
+      "all_inputs_worktree_relative_and_present": true,
+      "blocked_primary_imports": [],
+      "literal_audit_input_paths": [
+        "scripts/frontier_cycle979_class_coexistence_born_requirement_2026_08_10.py",
+        "outputs/class_coexistence_born_requirement_cycle979_receipt_2026_08_10.json",
+        "logs/runner-cache/frontier_cycle979_class_coexistence_born_requirement_2026_08_10.txt"
+      ],
+      "literal_source_read_count": 3,
+      "primary_ast_functions_match": true,
+      "primary_imported_or_executed": false,
+      "primary_literal_input_count": 2,
+      "primary_literal_inputs": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py"
+      ],
+      "sha256": {
+        "logs/runner-cache/frontier_cycle979_class_coexistence_born_requirement_2026_08_10.txt": "beba5262dfc73509bf986c99a246e64f221521db27d8e98312700f01c8f7380e",
+        "outputs/class_coexistence_born_requirement_cycle979_receipt_2026_08_10.json": "80f5abf81f07f0edc01cca8dd7f5bdd74c9a545edb1b6843cb6128ec24b0a25f",
+        "scripts/frontier_cycle979_class_coexistence_born_requirement_2026_08_10.py": "63b6d83c27d71aace583f44194e8b02bde48561c0196a35282b85b777c617af2"
+      },
+      "sha_pins_match": true
+    },
+    "R1_INDEPENDENT_COEXISTENCE_CENSUS": {
+      "class_counts": {
+        "CNOT": 6,
+        "TOF_OPPOSITE_CONTROLS": 3,
+        "TOF_PERPENDICULAR_CONTROLS": 12
+      },
+      "class_members": {
+        "CNOT": [
+          "CNOT(+x->C)",
+          "CNOT(-x->C)",
+          "CNOT(+y->C)",
+          "CNOT(-y->C)",
+          "CNOT(+z->C)",
+          "CNOT(-z->C)"
+        ],
+        "TOF_OPPOSITE_CONTROLS": [
+          "TOF(+x,-x->C)",
+          "TOF(+y,-y->C)",
+          "TOF(+z,-z->C)"
+        ],
+        "TOF_PERPENDICULAR_CONTROLS": [
+          "TOF(+x,+y->C)",
+          "TOF(+x,-y->C)",
+          "TOF(+x,+z->C)",
+          "TOF(+x,-z->C)",
+          "TOF(-x,+y->C)",
+          "TOF(-x,-y->C)",
+          "TOF(-x,+z->C)",
+          "TOF(-x,-z->C)",
+          "TOF(+y,+z->C)",
+          "TOF(+y,-z->C)",
+          "TOF(-y,+z->C)",
+          "TOF(-y,-z->C)"
+        ]
+      },
+      "classless_programs": 134,
+      "cooccurrence_patterns": [
+        {
+          "classes": [],
+          "program_count": 134,
+          "programs": [
+            "I",
+            "X(C)",
+            "X(+x)",
+            "X(-x)",
+            "X(+y)",
+            "X(-y)",
+            "X(+z)",
+            "X(-z)",
+            "CNOT(C->+x)",
+            "CNOT(C->-x)",
+            "CNOT(C->+y)",
+            "CNOT(C->-y)",
+            "CNOT(C->+z)",
+            "CNOT(C->-z)",
+            "CNOT(+x->-x)",
+            "CNOT(+x->+y)",
+            "CNOT(+x->-y)",
+            "CNOT(+x->+z)",
+            "CNOT(+x->-z)",
+            "CNOT(-x->+x)",
+            "CNOT(-x->+y)",
+            "CNOT(-x->-y)",
+            "CNOT(-x->+z)",
+            "CNOT(-x->-z)",
+            "CNOT(+y->+x)",
+            "CNOT(+y->-x)",
+            "CNOT(+y->-y)",
+            "CNOT(+y->+z)",
+            "CNOT(+y->-z)",
+            "CNOT(-y->+x)",
+            "CNOT(-y->-x)",
+            "CNOT(-y->+y)",
+            "CNOT(-y->+z)",
+            "CNOT(-y->-z)",
+            "CNOT(+z->+x)",
+            "CNOT(+z->-x)",
+            "CNOT(+z->+y)",
+            "CNOT(+z->-y)",
+            "CNOT(+z->-z)",
+            "CNOT(-z->+x)",
+            "CNOT(-z->-x)",
+            "CNOT(-z->+y)",
+            "CNOT(-z->-y)",
+            "CNOT(-z->+z)",
+            "TOF(C,-x->+x)",
+            "TOF(C,+y->+x)",
+            "TOF(C,-y->+x)",
+            "TOF(C,+z->+x)",
+            "TOF(C,-z->+x)",
+            "TOF(-x,+y->+x)",
+            "TOF(-x,-y->+x)",
+            "TOF(-x,+z->+x)",
+            "TOF(-x,-z->+x)",
+            "TOF(+y,-y->+x)",
+            "TOF(+y,+z->+x)",
+            "TOF(+y,-z->+x)",
+            "TOF(-y,+z->+x)",
+            "TOF(-y,-z->+x)",
+            "TOF(+z,-z->+x)",
+            "TOF(C,+x->-x)",
+            "TOF(C,+y->-x)",
+            "TOF(C,-y->-x)",
+            "TOF(C,+z->-x)",
+            "TOF(C,-z->-x)",
+            "TOF(+x,+y->-x)",
+            "TOF(+x,-y->-x)",
+            "TOF(+x,+z->-x)",
+            "TOF(+x,-z->-x)",
+            "TOF(+y,-y->-x)",
+            "TOF(+y,+z->-x)",
+            "TOF(+y,-z->-x)",
+            "TOF(-y,+z->-x)",
+            "TOF(-y,-z->-x)",
+            "TOF(+z,-z->-x)",
+            "TOF(C,+x->+y)",
+            "TOF(C,-x->+y)",
+            "TOF(C,-y->+y)",
+            "TOF(C,+z->+y)",
+            "TOF(C,-z->+y)",
+            "TOF(+x,-x->+y)",
+            "TOF(+x,-y->+y)",
+            "TOF(+x,+z->+y)",
+            "TOF(+x,-z->+y)",
+            "TOF(-x,-y->+y)",
+            "TOF(-x,+z->+y)",
+            "TOF(-x,-z->+y)",
+            "TOF(-y,+z->+y)",
+            "TOF(-y,-z->+y)",
+            "TOF(+z,-z->+y)",
+            "TOF(C,+x->-y)",
+            "TOF(C,-x->-y)",
+            "TOF(C,+y->-y)",
+            "TOF(C,+z->-y)",
+            "TOF(C,-z->-y)",
+            "TOF(+x,-x->-y)",
+            "TOF(+x,+y->-y)",
+            "TOF(+x,+z->-y)",
+            "TOF(+x,-z->-y)",
+            "TOF(-x,+y->-y)",
+            "TOF(-x,+z->-y)",
+            "TOF(-x,-z->-y)",
+            "TOF(+y,+z->-y)",
+            "TOF(+y,-z->-y)",
+            "TOF(+z,-z->-y)",
+            "TOF(C,+x->+z)",
+            "TOF(C,-x->+z)",
+            "TOF(C,+y->+z)",
+            "TOF(C,-y->+z)",
+            "TOF(C,-z->+z)",
+            "TOF(+x,-x->+z)",
+            "TOF(+x,+y->+z)",
+            "TOF(+x,-y->+z)",
+            "TOF(+x,-z->+z)",
+            "TOF(-x,+y->+z)",
+            "TOF(-x,-y->+z)",
+            "TOF(-x,-z->+z)",
+            "TOF(+y,-y->+z)",
+            "TOF(+y,-z->+z)",
+            "TOF(-y,-z->+z)",
+            "TOF(C,+x->-z)",
+            "TOF(C,-x->-z)",
+            "TOF(C,+y->-z)",
+            "TOF(C,-y->-z)",
+            "TOF(C,+z->-z)",
+            "TOF(+x,-x->-z)",
+            "TOF(+x,+y->-z)",
+            "TOF(+x,-y->-z)",
+            "TOF(+x,+z->-z)",
+            "TOF(-x,+y->-z)",
+            "TOF(-x,-y->-z)",
+            "TOF(-x,+z->-z)",
+            "TOF(+y,-y->-z)",
+            "TOF(+y,+z->-z)",
+            "TOF(-y,+z->-z)"
+          ]
+        },
+        {
+          "classes": [
+            "CNOT"
+          ],
+          "program_count": 6,
+          "programs": [
+            "CNOT(+x->C)",
+            "CNOT(-x->C)",
+            "CNOT(+y->C)",
+            "CNOT(-y->C)",
+            "CNOT(+z->C)",
+            "CNOT(-z->C)"
+          ]
+        },
+        {
+          "classes": [
+            "TOF_OPPOSITE_CONTROLS"
+          ],
+          "program_count": 3,
+          "programs": [
+            "TOF(+x,-x->C)",
+            "TOF(+y,-y->C)",
+            "TOF(+z,-z->C)"
+          ]
+        },
+        {
+          "classes": [
+            "TOF_PERPENDICULAR_CONTROLS"
+          ],
+          "program_count": 12,
+          "programs": [
+            "TOF(+x,+y->C)",
+            "TOF(+x,-y->C)",
+            "TOF(+x,+z->C)",
+            "TOF(+x,-z->C)",
+            "TOF(-x,+y->C)",
+            "TOF(-x,-y->C)",
+            "TOF(-x,+z->C)",
+            "TOF(-x,-z->C)",
+            "TOF(+y,+z->C)",
+            "TOF(+y,-z->C)",
+            "TOF(-y,+z->C)",
+            "TOF(-y,-z->C)"
+          ]
+        }
+      ],
+      "kind_counts": {
+        "CNOT": 42,
+        "I": 1,
+        "TOF": 105,
+        "X": 7
+      },
+      "max_classes_per_program": 1,
+      "multi_class_programs": 0,
+      "per_program": [
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "I"
+          ],
+          "gate_kind": "I",
+          "neighbour_dependent": false,
+          "program": "I",
+          "program_index": 0,
+          "word_length": 0
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "X",
+            0
+          ],
+          "gate_kind": "X",
+          "neighbour_dependent": false,
+          "program": "X(C)",
+          "program_index": 1,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "X",
+            1
+          ],
+          "gate_kind": "X",
+          "neighbour_dependent": false,
+          "program": "X(+x)",
+          "program_index": 2,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "X",
+            2
+          ],
+          "gate_kind": "X",
+          "neighbour_dependent": false,
+          "program": "X(-x)",
+          "program_index": 3,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "X",
+            3
+          ],
+          "gate_kind": "X",
+          "neighbour_dependent": false,
+          "program": "X(+y)",
+          "program_index": 4,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "X",
+            4
+          ],
+          "gate_kind": "X",
+          "neighbour_dependent": false,
+          "program": "X(-y)",
+          "program_index": 5,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "X",
+            5
+          ],
+          "gate_kind": "X",
+          "neighbour_dependent": false,
+          "program": "X(+z)",
+          "program_index": 6,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "X",
+            6
+          ],
+          "gate_kind": "X",
+          "neighbour_dependent": false,
+          "program": "X(-z)",
+          "program_index": 7,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "CNOT",
+            0,
+            1
+          ],
+          "gate_kind": "CNOT",
+          "neighbour_dependent": false,
+          "program": "CNOT(C->+x)",
+          "program_index": 8,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "CNOT",
+            0,
+            2
+          ],
+          "gate_kind": "CNOT",
+          "neighbour_dependent": false,
+          "program": "CNOT(C->-x)",
+          "program_index": 9,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "CNOT",
+            0,
+            3
+          ],
+          "gate_kind": "CNOT",
+          "neighbour_dependent": false,
+          "program": "CNOT(C->+y)",
+          "program_index": 10,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "CNOT",
+            0,
+            4
+          ],
+          "gate_kind": "CNOT",
+          "neighbour_dependent": false,
+          "program": "CNOT(C->-y)",
+          "program_index": 11,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "CNOT",
+            0,
+            5
+          ],
+          "gate_kind": "CNOT",
+          "neighbour_dependent": false,
+          "program": "CNOT(C->+z)",
+          "program_index": 12,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "CNOT",
+            0,
+            6
+          ],
+          "gate_kind": "CNOT",
+          "neighbour_dependent": false,
+          "program": "CNOT(C->-z)",
+          "program_index": 13,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 64,
+          "class_count": 1,
+          "classes": [
+            "CNOT"
+          ],
+          "descriptor": [
+            "CNOT",
+            1,
+            0
+          ],
+          "gate_kind": "CNOT",
+          "neighbour_dependent": true,
+          "program": "CNOT(+x->C)",
+          "program_index": 14,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "CNOT",
+            1,
+            2
+          ],
+          "gate_kind": "CNOT",
+          "neighbour_dependent": false,
+          "program": "CNOT(+x->-x)",
+          "program_index": 15,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "CNOT",
+            1,
+            3
+          ],
+          "gate_kind": "CNOT",
+          "neighbour_dependent": false,
+          "program": "CNOT(+x->+y)",
+          "program_index": 16,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "CNOT",
+            1,
+            4
+          ],
+          "gate_kind": "CNOT",
+          "neighbour_dependent": false,
+          "program": "CNOT(+x->-y)",
+          "program_index": 17,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "CNOT",
+            1,
+            5
+          ],
+          "gate_kind": "CNOT",
+          "neighbour_dependent": false,
+          "program": "CNOT(+x->+z)",
+          "program_index": 18,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "CNOT",
+            1,
+            6
+          ],
+          "gate_kind": "CNOT",
+          "neighbour_dependent": false,
+          "program": "CNOT(+x->-z)",
+          "program_index": 19,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 64,
+          "class_count": 1,
+          "classes": [
+            "CNOT"
+          ],
+          "descriptor": [
+            "CNOT",
+            2,
+            0
+          ],
+          "gate_kind": "CNOT",
+          "neighbour_dependent": true,
+          "program": "CNOT(-x->C)",
+          "program_index": 20,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "CNOT",
+            2,
+            1
+          ],
+          "gate_kind": "CNOT",
+          "neighbour_dependent": false,
+          "program": "CNOT(-x->+x)",
+          "program_index": 21,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "CNOT",
+            2,
+            3
+          ],
+          "gate_kind": "CNOT",
+          "neighbour_dependent": false,
+          "program": "CNOT(-x->+y)",
+          "program_index": 22,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "CNOT",
+            2,
+            4
+          ],
+          "gate_kind": "CNOT",
+          "neighbour_dependent": false,
+          "program": "CNOT(-x->-y)",
+          "program_index": 23,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "CNOT",
+            2,
+            5
+          ],
+          "gate_kind": "CNOT",
+          "neighbour_dependent": false,
+          "program": "CNOT(-x->+z)",
+          "program_index": 24,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "CNOT",
+            2,
+            6
+          ],
+          "gate_kind": "CNOT",
+          "neighbour_dependent": false,
+          "program": "CNOT(-x->-z)",
+          "program_index": 25,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 64,
+          "class_count": 1,
+          "classes": [
+            "CNOT"
+          ],
+          "descriptor": [
+            "CNOT",
+            3,
+            0
+          ],
+          "gate_kind": "CNOT",
+          "neighbour_dependent": true,
+          "program": "CNOT(+y->C)",
+          "program_index": 26,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "CNOT",
+            3,
+            1
+          ],
+          "gate_kind": "CNOT",
+          "neighbour_dependent": false,
+          "program": "CNOT(+y->+x)",
+          "program_index": 27,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "CNOT",
+            3,
+            2
+          ],
+          "gate_kind": "CNOT",
+          "neighbour_dependent": false,
+          "program": "CNOT(+y->-x)",
+          "program_index": 28,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "CNOT",
+            3,
+            4
+          ],
+          "gate_kind": "CNOT",
+          "neighbour_dependent": false,
+          "program": "CNOT(+y->-y)",
+          "program_index": 29,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "CNOT",
+            3,
+            5
+          ],
+          "gate_kind": "CNOT",
+          "neighbour_dependent": false,
+          "program": "CNOT(+y->+z)",
+          "program_index": 30,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "CNOT",
+            3,
+            6
+          ],
+          "gate_kind": "CNOT",
+          "neighbour_dependent": false,
+          "program": "CNOT(+y->-z)",
+          "program_index": 31,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 64,
+          "class_count": 1,
+          "classes": [
+            "CNOT"
+          ],
+          "descriptor": [
+            "CNOT",
+            4,
+            0
+          ],
+          "gate_kind": "CNOT",
+          "neighbour_dependent": true,
+          "program": "CNOT(-y->C)",
+          "program_index": 32,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "CNOT",
+            4,
+            1
+          ],
+          "gate_kind": "CNOT",
+          "neighbour_dependent": false,
+          "program": "CNOT(-y->+x)",
+          "program_index": 33,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "CNOT",
+            4,
+            2
+          ],
+          "gate_kind": "CNOT",
+          "neighbour_dependent": false,
+          "program": "CNOT(-y->-x)",
+          "program_index": 34,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "CNOT",
+            4,
+            3
+          ],
+          "gate_kind": "CNOT",
+          "neighbour_dependent": false,
+          "program": "CNOT(-y->+y)",
+          "program_index": 35,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "CNOT",
+            4,
+            5
+          ],
+          "gate_kind": "CNOT",
+          "neighbour_dependent": false,
+          "program": "CNOT(-y->+z)",
+          "program_index": 36,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "CNOT",
+            4,
+            6
+          ],
+          "gate_kind": "CNOT",
+          "neighbour_dependent": false,
+          "program": "CNOT(-y->-z)",
+          "program_index": 37,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 64,
+          "class_count": 1,
+          "classes": [
+            "CNOT"
+          ],
+          "descriptor": [
+            "CNOT",
+            5,
+            0
+          ],
+          "gate_kind": "CNOT",
+          "neighbour_dependent": true,
+          "program": "CNOT(+z->C)",
+          "program_index": 38,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "CNOT",
+            5,
+            1
+          ],
+          "gate_kind": "CNOT",
+          "neighbour_dependent": false,
+          "program": "CNOT(+z->+x)",
+          "program_index": 39,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "CNOT",
+            5,
+            2
+          ],
+          "gate_kind": "CNOT",
+          "neighbour_dependent": false,
+          "program": "CNOT(+z->-x)",
+          "program_index": 40,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "CNOT",
+            5,
+            3
+          ],
+          "gate_kind": "CNOT",
+          "neighbour_dependent": false,
+          "program": "CNOT(+z->+y)",
+          "program_index": 41,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "CNOT",
+            5,
+            4
+          ],
+          "gate_kind": "CNOT",
+          "neighbour_dependent": false,
+          "program": "CNOT(+z->-y)",
+          "program_index": 42,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "CNOT",
+            5,
+            6
+          ],
+          "gate_kind": "CNOT",
+          "neighbour_dependent": false,
+          "program": "CNOT(+z->-z)",
+          "program_index": 43,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 64,
+          "class_count": 1,
+          "classes": [
+            "CNOT"
+          ],
+          "descriptor": [
+            "CNOT",
+            6,
+            0
+          ],
+          "gate_kind": "CNOT",
+          "neighbour_dependent": true,
+          "program": "CNOT(-z->C)",
+          "program_index": 44,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "CNOT",
+            6,
+            1
+          ],
+          "gate_kind": "CNOT",
+          "neighbour_dependent": false,
+          "program": "CNOT(-z->+x)",
+          "program_index": 45,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "CNOT",
+            6,
+            2
+          ],
+          "gate_kind": "CNOT",
+          "neighbour_dependent": false,
+          "program": "CNOT(-z->-x)",
+          "program_index": 46,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "CNOT",
+            6,
+            3
+          ],
+          "gate_kind": "CNOT",
+          "neighbour_dependent": false,
+          "program": "CNOT(-z->+y)",
+          "program_index": 47,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "CNOT",
+            6,
+            4
+          ],
+          "gate_kind": "CNOT",
+          "neighbour_dependent": false,
+          "program": "CNOT(-z->-y)",
+          "program_index": 48,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "CNOT",
+            6,
+            5
+          ],
+          "gate_kind": "CNOT",
+          "neighbour_dependent": false,
+          "program": "CNOT(-z->+z)",
+          "program_index": 49,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 64,
+          "class_count": 1,
+          "classes": [
+            "TOF_OPPOSITE_CONTROLS"
+          ],
+          "descriptor": [
+            "TOF",
+            1,
+            2,
+            0
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": true,
+          "program": "TOF(+x,-x->C)",
+          "program_index": 50,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 64,
+          "class_count": 1,
+          "classes": [
+            "TOF_PERPENDICULAR_CONTROLS"
+          ],
+          "descriptor": [
+            "TOF",
+            1,
+            3,
+            0
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": true,
+          "program": "TOF(+x,+y->C)",
+          "program_index": 51,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 64,
+          "class_count": 1,
+          "classes": [
+            "TOF_PERPENDICULAR_CONTROLS"
+          ],
+          "descriptor": [
+            "TOF",
+            1,
+            4,
+            0
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": true,
+          "program": "TOF(+x,-y->C)",
+          "program_index": 52,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 64,
+          "class_count": 1,
+          "classes": [
+            "TOF_PERPENDICULAR_CONTROLS"
+          ],
+          "descriptor": [
+            "TOF",
+            1,
+            5,
+            0
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": true,
+          "program": "TOF(+x,+z->C)",
+          "program_index": 53,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 64,
+          "class_count": 1,
+          "classes": [
+            "TOF_PERPENDICULAR_CONTROLS"
+          ],
+          "descriptor": [
+            "TOF",
+            1,
+            6,
+            0
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": true,
+          "program": "TOF(+x,-z->C)",
+          "program_index": 54,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 64,
+          "class_count": 1,
+          "classes": [
+            "TOF_PERPENDICULAR_CONTROLS"
+          ],
+          "descriptor": [
+            "TOF",
+            2,
+            3,
+            0
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": true,
+          "program": "TOF(-x,+y->C)",
+          "program_index": 55,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 64,
+          "class_count": 1,
+          "classes": [
+            "TOF_PERPENDICULAR_CONTROLS"
+          ],
+          "descriptor": [
+            "TOF",
+            2,
+            4,
+            0
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": true,
+          "program": "TOF(-x,-y->C)",
+          "program_index": 56,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 64,
+          "class_count": 1,
+          "classes": [
+            "TOF_PERPENDICULAR_CONTROLS"
+          ],
+          "descriptor": [
+            "TOF",
+            2,
+            5,
+            0
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": true,
+          "program": "TOF(-x,+z->C)",
+          "program_index": 57,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 64,
+          "class_count": 1,
+          "classes": [
+            "TOF_PERPENDICULAR_CONTROLS"
+          ],
+          "descriptor": [
+            "TOF",
+            2,
+            6,
+            0
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": true,
+          "program": "TOF(-x,-z->C)",
+          "program_index": 58,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 64,
+          "class_count": 1,
+          "classes": [
+            "TOF_OPPOSITE_CONTROLS"
+          ],
+          "descriptor": [
+            "TOF",
+            3,
+            4,
+            0
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": true,
+          "program": "TOF(+y,-y->C)",
+          "program_index": 59,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 64,
+          "class_count": 1,
+          "classes": [
+            "TOF_PERPENDICULAR_CONTROLS"
+          ],
+          "descriptor": [
+            "TOF",
+            3,
+            5,
+            0
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": true,
+          "program": "TOF(+y,+z->C)",
+          "program_index": 60,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 64,
+          "class_count": 1,
+          "classes": [
+            "TOF_PERPENDICULAR_CONTROLS"
+          ],
+          "descriptor": [
+            "TOF",
+            3,
+            6,
+            0
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": true,
+          "program": "TOF(+y,-z->C)",
+          "program_index": 61,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 64,
+          "class_count": 1,
+          "classes": [
+            "TOF_PERPENDICULAR_CONTROLS"
+          ],
+          "descriptor": [
+            "TOF",
+            4,
+            5,
+            0
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": true,
+          "program": "TOF(-y,+z->C)",
+          "program_index": 62,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 64,
+          "class_count": 1,
+          "classes": [
+            "TOF_PERPENDICULAR_CONTROLS"
+          ],
+          "descriptor": [
+            "TOF",
+            4,
+            6,
+            0
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": true,
+          "program": "TOF(-y,-z->C)",
+          "program_index": 63,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 64,
+          "class_count": 1,
+          "classes": [
+            "TOF_OPPOSITE_CONTROLS"
+          ],
+          "descriptor": [
+            "TOF",
+            5,
+            6,
+            0
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": true,
+          "program": "TOF(+z,-z->C)",
+          "program_index": 64,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            0,
+            2,
+            1
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(C,-x->+x)",
+          "program_index": 65,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            0,
+            3,
+            1
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(C,+y->+x)",
+          "program_index": 66,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            0,
+            4,
+            1
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(C,-y->+x)",
+          "program_index": 67,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            0,
+            5,
+            1
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(C,+z->+x)",
+          "program_index": 68,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            0,
+            6,
+            1
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(C,-z->+x)",
+          "program_index": 69,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            2,
+            3,
+            1
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(-x,+y->+x)",
+          "program_index": 70,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            2,
+            4,
+            1
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(-x,-y->+x)",
+          "program_index": 71,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            2,
+            5,
+            1
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(-x,+z->+x)",
+          "program_index": 72,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            2,
+            6,
+            1
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(-x,-z->+x)",
+          "program_index": 73,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            3,
+            4,
+            1
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(+y,-y->+x)",
+          "program_index": 74,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            3,
+            5,
+            1
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(+y,+z->+x)",
+          "program_index": 75,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            3,
+            6,
+            1
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(+y,-z->+x)",
+          "program_index": 76,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            4,
+            5,
+            1
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(-y,+z->+x)",
+          "program_index": 77,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            4,
+            6,
+            1
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(-y,-z->+x)",
+          "program_index": 78,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            5,
+            6,
+            1
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(+z,-z->+x)",
+          "program_index": 79,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            0,
+            1,
+            2
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(C,+x->-x)",
+          "program_index": 80,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            0,
+            3,
+            2
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(C,+y->-x)",
+          "program_index": 81,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            0,
+            4,
+            2
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(C,-y->-x)",
+          "program_index": 82,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            0,
+            5,
+            2
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(C,+z->-x)",
+          "program_index": 83,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            0,
+            6,
+            2
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(C,-z->-x)",
+          "program_index": 84,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            1,
+            3,
+            2
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(+x,+y->-x)",
+          "program_index": 85,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            1,
+            4,
+            2
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(+x,-y->-x)",
+          "program_index": 86,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            1,
+            5,
+            2
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(+x,+z->-x)",
+          "program_index": 87,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            1,
+            6,
+            2
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(+x,-z->-x)",
+          "program_index": 88,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            3,
+            4,
+            2
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(+y,-y->-x)",
+          "program_index": 89,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            3,
+            5,
+            2
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(+y,+z->-x)",
+          "program_index": 90,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            3,
+            6,
+            2
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(+y,-z->-x)",
+          "program_index": 91,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            4,
+            5,
+            2
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(-y,+z->-x)",
+          "program_index": 92,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            4,
+            6,
+            2
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(-y,-z->-x)",
+          "program_index": 93,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            5,
+            6,
+            2
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(+z,-z->-x)",
+          "program_index": 94,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            0,
+            1,
+            3
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(C,+x->+y)",
+          "program_index": 95,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            0,
+            2,
+            3
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(C,-x->+y)",
+          "program_index": 96,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            0,
+            4,
+            3
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(C,-y->+y)",
+          "program_index": 97,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            0,
+            5,
+            3
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(C,+z->+y)",
+          "program_index": 98,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            0,
+            6,
+            3
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(C,-z->+y)",
+          "program_index": 99,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            1,
+            2,
+            3
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(+x,-x->+y)",
+          "program_index": 100,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            1,
+            4,
+            3
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(+x,-y->+y)",
+          "program_index": 101,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            1,
+            5,
+            3
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(+x,+z->+y)",
+          "program_index": 102,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            1,
+            6,
+            3
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(+x,-z->+y)",
+          "program_index": 103,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            2,
+            4,
+            3
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(-x,-y->+y)",
+          "program_index": 104,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            2,
+            5,
+            3
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(-x,+z->+y)",
+          "program_index": 105,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            2,
+            6,
+            3
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(-x,-z->+y)",
+          "program_index": 106,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            4,
+            5,
+            3
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(-y,+z->+y)",
+          "program_index": 107,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            4,
+            6,
+            3
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(-y,-z->+y)",
+          "program_index": 108,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            5,
+            6,
+            3
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(+z,-z->+y)",
+          "program_index": 109,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            0,
+            1,
+            4
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(C,+x->-y)",
+          "program_index": 110,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            0,
+            2,
+            4
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(C,-x->-y)",
+          "program_index": 111,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            0,
+            3,
+            4
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(C,+y->-y)",
+          "program_index": 112,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            0,
+            5,
+            4
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(C,+z->-y)",
+          "program_index": 113,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            0,
+            6,
+            4
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(C,-z->-y)",
+          "program_index": 114,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            1,
+            2,
+            4
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(+x,-x->-y)",
+          "program_index": 115,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            1,
+            3,
+            4
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(+x,+y->-y)",
+          "program_index": 116,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            1,
+            5,
+            4
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(+x,+z->-y)",
+          "program_index": 117,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            1,
+            6,
+            4
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(+x,-z->-y)",
+          "program_index": 118,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            2,
+            3,
+            4
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(-x,+y->-y)",
+          "program_index": 119,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            2,
+            5,
+            4
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(-x,+z->-y)",
+          "program_index": 120,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            2,
+            6,
+            4
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(-x,-z->-y)",
+          "program_index": 121,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            3,
+            5,
+            4
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(+y,+z->-y)",
+          "program_index": 122,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            3,
+            6,
+            4
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(+y,-z->-y)",
+          "program_index": 123,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            5,
+            6,
+            4
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(+z,-z->-y)",
+          "program_index": 124,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            0,
+            1,
+            5
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(C,+x->+z)",
+          "program_index": 125,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            0,
+            2,
+            5
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(C,-x->+z)",
+          "program_index": 126,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            0,
+            3,
+            5
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(C,+y->+z)",
+          "program_index": 127,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            0,
+            4,
+            5
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(C,-y->+z)",
+          "program_index": 128,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            0,
+            6,
+            5
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(C,-z->+z)",
+          "program_index": 129,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            1,
+            2,
+            5
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(+x,-x->+z)",
+          "program_index": 130,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            1,
+            3,
+            5
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(+x,+y->+z)",
+          "program_index": 131,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            1,
+            4,
+            5
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(+x,-y->+z)",
+          "program_index": 132,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            1,
+            6,
+            5
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(+x,-z->+z)",
+          "program_index": 133,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            2,
+            3,
+            5
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(-x,+y->+z)",
+          "program_index": 134,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            2,
+            4,
+            5
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(-x,-y->+z)",
+          "program_index": 135,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            2,
+            6,
+            5
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(-x,-z->+z)",
+          "program_index": 136,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            3,
+            4,
+            5
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(+y,-y->+z)",
+          "program_index": 137,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            3,
+            6,
+            5
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(+y,-z->+z)",
+          "program_index": 138,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            4,
+            6,
+            5
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(-y,-z->+z)",
+          "program_index": 139,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            0,
+            1,
+            6
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(C,+x->-z)",
+          "program_index": 140,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            0,
+            2,
+            6
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(C,-x->-z)",
+          "program_index": 141,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            0,
+            3,
+            6
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(C,+y->-z)",
+          "program_index": 142,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            0,
+            4,
+            6
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(C,-y->-z)",
+          "program_index": 143,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            0,
+            5,
+            6
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(C,+z->-z)",
+          "program_index": 144,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            1,
+            2,
+            6
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(+x,-x->-z)",
+          "program_index": 145,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            1,
+            3,
+            6
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(+x,+y->-z)",
+          "program_index": 146,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            1,
+            4,
+            6
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(+x,-y->-z)",
+          "program_index": 147,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            1,
+            5,
+            6
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(+x,+z->-z)",
+          "program_index": 148,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            2,
+            3,
+            6
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(-x,+y->-z)",
+          "program_index": 149,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            2,
+            4,
+            6
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(-x,-y->-z)",
+          "program_index": 150,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            2,
+            5,
+            6
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(-x,+z->-z)",
+          "program_index": 151,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            3,
+            4,
+            6
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(+y,-y->-z)",
+          "program_index": 152,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            3,
+            5,
+            6
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(+y,+z->-z)",
+          "program_index": 153,
+          "word_length": 1
+        },
+        {
+          "changed_edge_pairs": 0,
+          "class_count": 0,
+          "classes": [],
+          "descriptor": [
+            "TOF",
+            4,
+            5,
+            6
+          ],
+          "gate_kind": "TOF",
+          "neighbour_dependent": false,
+          "program": "TOF(-y,+z->-z)",
+          "program_index": 154,
+          "word_length": 1
+        }
+      ],
+      "per_program_digest": "4bdb22953055bd4bf1e4e094a4138aa04f63c6e6561e9dbf99d7d12898969771",
+      "program_count": 155
+    },
+    "R2_REFUTE_REQUIREMENT_AND_BORN": {
+      "cycle978_joint_status": "OVER_STRONG",
+      "exclusions": [],
+      "licensed_requirement": "PER_INSTANCE",
+      "survivors": [
+        "M1_COUNTING",
+        "M2_PER_WORLD_UNIFORM",
+        "M3_OCCUPATION_WEIGHTED",
+        "M4_FORMATION_LIFETIME",
+        "M5_FORMATION_MOMENT"
+      ],
+      "survivors_over_5": "5/5"
+    },
+    "R3_NONUNIFORM_INPUT": {
+      "input_family": [
+        {
+          "classes": {
+            "CNOT": {
+              "cycle975_formula": "1/1",
+              "formula_match": true,
+              "maximum_tv": "1/1",
+              "representative": "CNOT(+x->C)"
+            },
+            "TOF_OPPOSITE_CONTROLS": {
+              "cycle975_formula": "1/1",
+              "formula_match": true,
+              "maximum_tv": "1/1",
+              "representative": "TOF(+x,-x->C)"
+            },
+            "TOF_PERPENDICULAR_CONTROLS": {
+              "cycle975_formula": "1/1",
+              "formula_match": true,
+              "maximum_tv": "1/1",
+              "representative": "TOF(+x,+y->C)"
+            }
+          },
+          "input_label": "FIXED_X0",
+          "p_zero": "1/1"
+        },
+        {
+          "classes": {
+            "CNOT": {
+              "cycle975_formula": "1/2",
+              "formula_match": true,
+              "maximum_tv": "1/2",
+              "representative": "CNOT(+x->C)"
+            },
+            "TOF_OPPOSITE_CONTROLS": {
+              "cycle975_formula": "1/2",
+              "formula_match": true,
+              "maximum_tv": "1/2",
+              "representative": "TOF(+x,-x->C)"
+            },
+            "TOF_PERPENDICULAR_CONTROLS": {
+              "cycle975_formula": "1/2",
+              "formula_match": true,
+              "maximum_tv": "1/2",
+              "representative": "TOF(+x,+y->C)"
+            }
+          },
+          "input_label": "NONUNIFORM_P_ONE_QUARTER",
+          "p_zero": "1/4"
+        },
+        {
+          "classes": {
+            "CNOT": {
+              "cycle975_formula": "0/1",
+              "formula_match": true,
+              "maximum_tv": "0/1",
+              "representative": "CNOT(+x->C)"
+            },
+            "TOF_OPPOSITE_CONTROLS": {
+              "cycle975_formula": "0/1",
+              "formula_match": true,
+              "maximum_tv": "0/1",
+              "representative": "TOF(+x,-x->C)"
+            },
+            "TOF_PERPENDICULAR_CONTROLS": {
+              "cycle975_formula": "0/1",
+              "formula_match": true,
+              "maximum_tv": "0/1",
+              "representative": "TOF(+x,+y->C)"
+            }
+          },
+          "input_label": "UNIFORM_BOUNDARY",
+          "p_zero": "1/2"
+        },
+        {
+          "classes": {
+            "CNOT": {
+              "cycle975_formula": "1/2",
+              "formula_match": true,
+              "maximum_tv": "1/2",
+              "representative": "CNOT(+x->C)"
+            },
+            "TOF_OPPOSITE_CONTROLS": {
+              "cycle975_formula": "1/2",
+              "formula_match": true,
+              "maximum_tv": "1/2",
+              "representative": "TOF(+x,-x->C)"
+            },
+            "TOF_PERPENDICULAR_CONTROLS": {
+              "cycle975_formula": "1/2",
+              "formula_match": true,
+              "maximum_tv": "1/2",
+              "representative": "TOF(+x,+y->C)"
+            }
+          },
+          "input_label": "NONUNIFORM_P_THREE_QUARTERS",
+          "p_zero": "3/4"
+        },
+        {
+          "classes": {
+            "CNOT": {
+              "cycle975_formula": "1/1",
+              "formula_match": true,
+              "maximum_tv": "1/1",
+              "representative": "CNOT(+x->C)"
+            },
+            "TOF_OPPOSITE_CONTROLS": {
+              "cycle975_formula": "1/1",
+              "formula_match": true,
+              "maximum_tv": "1/1",
+              "representative": "TOF(+x,-x->C)"
+            },
+            "TOF_PERPENDICULAR_CONTROLS": {
+              "cycle975_formula": "1/1",
+              "formula_match": true,
+              "maximum_tv": "1/1",
+              "representative": "TOF(+x,+y->C)"
+            }
+          },
+          "input_label": "FIXED_X1",
+          "p_zero": "0/1"
+        }
+      ],
+      "p_one_quarter": {
+        "classes": {
+          "CNOT": {
+            "cycle975_formula": "1/2",
+            "formula_match": true,
+            "maximum_tv": "1/2",
+            "representative": "CNOT(+x->C)"
+          },
+          "TOF_OPPOSITE_CONTROLS": {
+            "cycle975_formula": "1/2",
+            "formula_match": true,
+            "maximum_tv": "1/2",
+            "representative": "TOF(+x,-x->C)"
+          },
+          "TOF_PERPENDICULAR_CONTROLS": {
+            "cycle975_formula": "1/2",
+            "formula_match": true,
+            "maximum_tv": "1/2",
+            "representative": "TOF(+x,+y->C)"
+          }
+        },
+        "input_label": "NONUNIFORM_P_ONE_QUARTER",
+        "p_zero": "1/4"
+      }
+    },
+    "R4_RECEIPT_CACHE_BINDING": {
+      "primary_cache_sha256": "beba5262dfc73509bf986c99a246e64f221521db27d8e98312700f01c8f7380e",
+      "primary_receipt_sha256": "80f5abf81f07f0edc01cca8dd7f5bdd74c9a545edb1b6843cb6128ec24b0a25f",
+      "primary_source_sha256": "63b6d83c27d71aace583f44194e8b02bde48561c0196a35282b85b777c617af2",
+      "semantic_headlines_bound": true
+    },
+    "R5_ACTIVE_CORRUPTION_PROBES": {
+      "all_rejected": true,
+      "refute_spec": [
+        {
+          "id": "PROGRAM_REMOVED",
+          "mutation": "delete the final per-program census row",
+          "target": "A_COEXISTENCE"
+        },
+        {
+          "id": "COEXISTENCE_INJECTED_REQUIREMENT_UNCHANGED",
+          "mutation": "inject two classes into one program but retain PER_INSTANCE",
+          "target": "B_REQUIREMENT_STATUS"
+        },
+        {
+          "id": "CLASS_COUNT_CORRUPTED",
+          "mutation": "change the CNOT class count from six to five",
+          "target": "A_COEXISTENCE"
+        },
+        {
+          "id": "SURVIVOR_REMOVED",
+          "mutation": "remove M5 from the survivor list while leaving its row SURVIVES",
+          "target": "C_BORN_STATUS_CORRECTED"
+        },
+        {
+          "id": "EXCLUSION_WITHOUT_WITNESS",
+          "mutation": "exclude M1 without a first exclusion witness",
+          "target": "C_BORN_STATUS_CORRECTED"
+        },
+        {
+          "id": "SURROGATE_DEPENDENCE_FLIPPED",
+          "mutation": "claim the corrected verdict depends on fixed x",
+          "target": "D_SURROGATE_SCOPE"
+        },
+        {
+          "id": "NONUNIFORM_TV_CORRUPTED",
+          "mutation": "change the p=1/4 CNOT TV from 1/2 to 1/3",
+          "target": "D_SURROGATE_SCOPE"
+        },
+        {
+          "id": "CACHE_BORN_HEADLINE_CORRUPTED",
+          "mutation": "change the cache survivor headline from 5/5 to 0/5",
+          "target": "R4_RECEIPT_CACHE_BINDING"
+        }
+      ],
+      "results": {
+        "CACHE_BORN_HEADLINE_CORRUPTED": true,
+        "CLASS_COUNT_CORRUPTED": true,
+        "COEXISTENCE_INJECTED_REQUIREMENT_UNCHANGED": true,
+        "EXCLUSION_WITHOUT_WITNESS": true,
+        "NONUNIFORM_TV_CORRUPTED": true,
+        "PROGRAM_REMOVED": true,
+        "SURROGATE_DEPENDENCE_FLIPPED": true,
+        "SURVIVOR_REMOVED": true
+      }
+    },
+    "R6_CONTROLS": {
+      "determinism": true,
+      "runtime_budget_seconds": 300,
+      "runtime_seconds": 0.1084077910054475,
+      "stdout_bytes": 995,
+      "stdout_limit_bytes": 6000
+    }
+  },
+  "checker": "independent refutation checker",
+  "checker_source_sha256": "e23d4e422c7aa8d8a0d87574f95d5a2ca86201ab7e248186c14e024cec41a004",
+  "checks": {
+    "R0_PRIMARY_AST_AND_PINS": true,
+    "R1_INDEPENDENT_COEXISTENCE_CENSUS": true,
+    "R2_REFUTE_REQUIREMENT_AND_BORN": true,
+    "R3_NONUNIFORM_INPUT": true,
+    "R4_RECEIPT_CACHE_BINDING": true,
+    "R5_ACTIVE_CORRUPTION_PROBES": true,
+    "R6_CONTROLS": true
+  },
+  "cycle": 979,
+  "pass": true,
+  "primary_imported_or_executed": false
+}

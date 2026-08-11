@@ -1,0 +1,17 @@
+# runner-cache-v1
+# command: python3 scripts/frontier_cycle979_class_coexistence_born_requirement_2026_08_10.py
+# source_sha256: 63b6d83c27d71aace583f44194e8b02bde48561c0196a35282b85b777c617af2
+# audit_input_fingerprint: b3ea19a77a5546733acf5cf33003158c9aab7f7ca932a31ce502f87c48b08a5f
+# receipt_sha256: 80f5abf81f07f0edc01cca8dd7f5bdd74c9a545edb1b6843cb6128ec24b0a25f
+CYCLE979_CLASS_COEXISTENCE_BORN_REQUIREMENT
+A_COEXISTENCE PASS :: programs=155; patterns={"CNOT":6,"NONE":134,"TOF_OPPOSITE_CONTROLS":3,"TOF_PERPENDICULAR_CONTROLS":12}; multi_class=0; per_program_digest=4bdb22953055bd4bf1e4e094a4138aa04f63c6e6561e9dbf99d7d12898969771
+B_REQUIREMENT_STATUS PASS :: licensed=PER_INSTANCE; cycle978_joint=OVER_STRONG
+C_BORN_STATUS_CORRECTED PASS :: survivors/5=5/5; born_wall=UNMOVED; exclusions=[]
+D_SURROGATE_SCOPE PASS :: depends_on_fixed_x=false; p_zero=1/4; survivors/5=5/5; TV_by_class={"CNOT":"1/2","TOF_OPPOSITE_CONTROLS":"1/2","TOF_PERPENDICULAR_CONTROLS":"1/2"}
+E_CONTROLS PASS :: source_reads=2<=6; pins=True; determinism=True; active_corruptions=True; runtime_s=45.619<1400; stdout_bytes=1155<6000
+per_element: checked -- all five declared finite event-weighting candidates.
+per_site: checked -- target and all six sites of the radius-one star.
+per_mode: checked and not executed -- basis states only; no continuous M_2(C) modes.
+per_block: checked -- all 155 complete programs and all three class blocks.
+lattice_wide: checked and not executed -- no extrapolation beyond the declared star.
+TOTAL: PASS=5 FAIL=0

@@ -311,3 +311,13 @@ continuously, the coframe/link Ward identity closes, and a positive
 ray-resolved bond is exactly covariant. The remaining obstruction is therefore
 carrier and law derivation plus genuine gravitational curvature, not an axiom
 amendment.
+
+## Block 37 Finite-Cube / Law-Selection Boundary
+
+| Scoped claim | Exact/bounded evidence | N1--N8 disposition | Forbidden promotion | Live routes |
+|---|---|---|---|---|
+| One supplied Euclidean cube law can carry proper-cubic intrinsic EC curvature, shared Records, transport, torsion, normalization, and numerical full-coordinate stationarity, but that fixture does not itself select the law or establish overlap/full-`Z^3`, Einstein, Lorentzian, or axiom-necessity results | corrected EC/dual-face index signals `0.000070711/0` versus `0/0.000070711`; holonomy/EC/torsion `1.802069/0.963037/0.369390`; 72-link max/norm `1.776e-09/2.512e-09`; 128-coframe max `7.994e-09`; exact Record response; `PASS=21 FAIL=0` | pass only for the narrow finite supplied-law boundary; five executed proof families, collapsed wall matrix, hidden scan, residual matching, honest resolution certificate, primitive scan, translation-compatible steelman, and cross-cycle echo land in note/cache | do not infer physical gravity selection, a global sine-curvature coordinate, exact symbolic stationarity, translation invariance of the cube-centered witness, Bianchi/diffeomorphism equivalence, Einstein dynamics, Lorentzian causality, or a fifth-axiom requirement | polar coframe-derived links, Regge dual hinges, independent constrained BF, refitted teleparallel law, two-cube/DLR extension, Record-derived carrier/coefficients, and causal update |
+
+The broad negative fails: a consistent finite intrinsic-curvature law exists.
+The remaining obstruction is derivation/selection and compatible extension,
+not an established ontology failure. No axiom amendment is proposed.

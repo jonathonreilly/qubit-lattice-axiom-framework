@@ -44,6 +44,18 @@ CNOT/XOR contact family and explicitly leaves the continuous `M_2(C)` law
 open, so it does not collide. The canonical axiom memo remains untouched; no
 `review-loop` is used.
 
+Block 37 is local on branch
+`physics-loop/toe-axiom-closure-block37-proper-cubic-plaquette-20260811`,
+stacked exactly on Block-36 delivery head `9431cd5d47`. Its distinct review
+object is the corrected derived-normal complementary-triad intrinsic EC cube,
+all twenty-four plaquettes, exact shared-Record contraction, normal/coframe
+compatibility, numerical 72-link/128-coframe stationarity, and executed
+index/Wilson/pi/polar/deletion controls. The source/input-pinned cache is
+`PASS=21 FAIL=0` in `7.6 s`; runner stdout is `5,900` characters. Repository
+conformance, science commit, campaign conformance, delivery commit, push, and
+stacked PR URL are pending. No canonical edit, percentage move, or audit
+verdict is used.
+
 Delivery opened as PR #6093, mergeable and `CLEAN`, on exact Block-21 delivery
 head `c8c58fc23f`. Hard landing order extends through #6092 then #6093.
 

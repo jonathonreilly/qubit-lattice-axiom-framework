@@ -535,6 +535,25 @@ locality/covariance/gluing theorem, projective limit, pure-geometry action,
 stationary nonuniform solution, Lorentzian dynamics, external science,
 canonical edit, percentage move, audit verdict, or `review-loop` is imported.
 
+## Block 37 Assumptions And Imports
+
+Block 37 imports the four-axiom surface, Block 35's supplied ten-ray dictionary
+and orbit weights, and Block 36's continuous coframe/link carrier plus its exact
+closed-plaquette target. It does not import a curvature law from either parent.
+The registered scale-reference, kinetic-isotropy, and realized-state primitive
+notes were reread; none supplies a coframe, link, internal normal, geometry
+measure, plaquette law, coefficient, phase, or update.
+
+The Euclidean `GL+(4)^8 x SO(4)^12` carrier, Lebesgue/Haar measure, six
+coefficients, Record incidence and edge kernels, two-generator equivariant link
+family, and eight reverse-engineered target Grams are supplied finite-law data.
+The internal normal is algebraically derived from the three spatial coframe
+columns, not imported as a fourth base direction. Numerical stationarity uses
+centered finite differences and a SciPy root, not interval arithmetic. Sine
+holonomy is chart-local; the pi-holonomy mutation explicitly forbids a global
+curvature-coordinate reading. No external science, observed gravity constant,
+canonical edit, fixed percentage move, or audit verdict is imported.
+
 ## Block 28 Assumptions And Imports
 
 Block 28 imports finite strict positivity, the Block-8 full-conditional versus

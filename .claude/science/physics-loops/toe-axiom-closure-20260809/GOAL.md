@@ -1182,3 +1182,28 @@ and Lorentzian continuation remain separate. The carrier and normalized law
 still need derivation from current Record content; full-lattice phase,
 Bianchi/Einstein, and Lorentzian closure remain open. No fifth axiom is proved
 necessary, and no canonical axiom or fixed percentage is changed.
+
+## Block 37 Target And Disposition
+
+Block 37 executes Block 36's exact next target: one complete elementary
+spatial cube with all proper-cubic plaquettes, nonidentity holonomy,
+coframe/normal compatibility, torsion control, curvature linear at small
+holonomy, and Record contact inside the same normalized law.
+
+The construction succeeds after a material index correction. On a spatial
+three-base the old dual-face Hodge bivector probes normal-mixing; the correct
+intrinsic EC object is the Hodge dual of the triad-derived internal normal
+wedge the complementary triad direction. The repaired finite law is positive,
+normalizable, locally frame covariant, proper-cubic covariant, and numerically
+stationary in every link/coframe coordinate. Its Record contact and connected
+covariance are independently nonzero and the same-law Wilson comparator does
+not reproduce the coframe-curvature response.
+
+This closes finite-cube coexistence, not gravity selection. The highest-value
+next target is two face-sharing cubes under one translation-compatible local
+specification and common stationary geometry rule. Only after overlap/gluing
+works should the campaign spend on an increasing-region phase, ordered-product
+Bianchi identities versus displacement Ward content, the weak-curvature
+Einstein regime, and Lorentzian permanent-Record evolution. The current axioms
+do not select the supplied carrier or law, but no axiom amendment is yet shown
+necessary. Fixed TOE percentages remain unchanged.

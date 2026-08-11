@@ -511,6 +511,24 @@ selection is conditional on a massless phase. Candidate wording is
 unadopted; fixed TOE percentages and canonical axioms remain unchanged. No
 `review-loop` is used.
 
+Block 37 supplies one bounded upstream-support result materially closer to the
+gravity target: a complete proper-cubic spatial cube with the correct
+triad-derived intrinsic EC index contraction, nontrivial holonomy, transported
+Records, normal/coframe compatibility, torsion control, normalization, and
+numerical stationarity over all link/coframe coordinates. It also falsifies the
+old dual-face index choice and makes sine-holonomy's pi-chart blindness
+explicit.
+
+Reachability remains `upstream_support`, not direct TOE closure. The carrier,
+measure, coefficients, equivariant link family, and reverse-engineered wells
+are supplied. One cube is neither a translation-compatible finite-range
+specification nor an increasing-region phase; internal frame covariance and
+ordered holonomies do not supply displacement Ward, Einstein dynamics, or a
+Lorentzian Record update. The next gate is two face-sharing cubes sharing one
+variable set, one geometric-term count, one common potential/well rule, and a
+translation-compatible stationary connection. Fixed TOE percentages and
+canonical axioms remain unchanged.
+
 Block 30 constructs one positive rational causal-prefix Record family and a
 canonical compact response classifier. Permanent boundary Records separate
 future laws; cumulative charge compiles an axis-covariant homothety history.

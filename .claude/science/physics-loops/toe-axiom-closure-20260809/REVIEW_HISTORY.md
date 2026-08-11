@@ -1920,3 +1920,31 @@ instance or Fourier census.
   mergeable, and `CLEAN`, stacked exactly on Block-35 delivery head
   `6882d2eb7e`; independent audit remains pending. No canonical axiom, fixed
   percentage, audit verdict, or `review-loop` is changed.
+
+## Block 37 Construction And Adversarial Record
+
+- Constructed one full cube: eight sites, twelve `SO(4)` links, six faces, all
+  twenty-four based proper-cubic plaquettes, and exact tensor contraction of
+  ten shared Record labels at every site.
+- Caught a material draft defect: `star[(e s_1) wedge (e s_2)]` couples a
+  spatial face to normal-mixing curvature. Derived the triad normal and
+  complementary direction and executed the distinguishing index test.
+- Added derived-normal compatibility and found the stationary branch selects
+  spatial coefficient `0.323988455` with normal mixing `1.094e-12`.
+- Verified all 72 intrinsic link tangents (`1.776e-09` maximum) and all 128
+  coframe coordinates (`7.994e-09` maximum), while labeling both as numerical
+  finite-difference certificates rather than symbolic existence.
+- Verified every face has holonomy/EC/torsion
+  `1.802069/0.963037/0.369390`; target-Gram minimum is `1.025111`.
+- Contracted the nominal `10^8` Record sum exactly as tensors and verified
+  contact minus covariance against an independent scale finite difference.
+- Added compensated/uncompensated frame, closing-link removal, pi-holonomy,
+  same-law Wilson, pure-gauge, flat-incompatible, polar-derived-link,
+  normal-mixing, sector-deletion, and one-plane controls.
+- Applied the fresh `origin/main` no-go discipline and proof-family governance:
+  five genuinely distinct executed N1 routes; six-wall pair matrix; hidden
+  scan; corrected residual locators; honest mode/lattice-wide nonexecution;
+  primitive-source scan; strongest two-cube steelman; cross-cycle echo.
+- Fresh cache is `PASS=21 FAIL=0` in `7.6 s`; primary stdout is `5,900`
+  characters. Repository conformance remains before commit/push/PR. No
+  canonical axiom, fixed percentage, or audit verdict is changed.

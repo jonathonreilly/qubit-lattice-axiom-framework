@@ -1530,3 +1530,31 @@ law and mutate zero holonomy, link transport, compatibility, Record contact,
 and curvature coupling separately. Treat this as a spatial-curvature
 precursor; do not infer a fourth base direction or Lorentzian theory from the
 four-component coframes. No `review-loop` is used.
+
+## Block 37 Handoff
+
+Work is on branch
+`physics-loop/toe-axiom-closure-block37-proper-cubic-plaquette-20260811`,
+stacked exactly on Block-36 delivery head `9431cd5d47`. The theorem note,
+runner, and fresh cache are present. The cache is `PASS=21 FAIL=0` in `7.6 s`;
+runner stdout is `5,900` characters. Repository conformance and delivery remain
+before the stacked PR.
+
+The major scientific gain is a correction, not cosmetic packaging. The
+coframe-dual face bivector initially used is wrong for intrinsic spatial EC:
+it sees the normal-mixing generator. The runner now derives the unit internal
+normal from the triad and uses its complementary direction, independently
+distinguishing both index sectors. The corrected branch selects a nonzero
+spatial link coefficient and zero normal-mixing coefficient, transports every
+normal, carries nonidentity holonomy and EC curvature on every face, and solves
+all 72/128 numerical coordinate equations. Wilson, pi-holonomy, polar-link,
+open-loop, normal-mixing, pure-gauge, and deletion controls prevent the finite
+result from being promoted to a global or selected gravity law.
+
+Next, do not tune another isolated cube. Build two face-sharing cubes with one
+shared Record/coframe/link set and one count per geometric term. The present
+midpoint ansatz is cube-centered, so solve a homogeneous, period-two, or other
+translation-compatible link field under one common potential and Gram rule.
+The exact terminal test is compatible overlap conditionals plus shared-link and
+shared-coframe stationarity; then proceed to periodic regions and distinguish
+Bianchi from displacement Ward before Einstein/Lorentzian claims.

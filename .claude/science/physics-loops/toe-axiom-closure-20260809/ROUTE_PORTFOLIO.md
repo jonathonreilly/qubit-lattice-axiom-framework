@@ -757,3 +757,19 @@ The one-link Ward bookkeeping family is saturated. The next useful
 discriminator is whether a same-law proper-cubic closed-loop action makes
 Record stress load-bearing in a genuine coframe-curvature equation rather than
 merely in an internal-frame identity.
+
+## Block 37 Intrinsic-Curvature / Extension Route Comparison
+
+| Route | Exact object | Outcome | Decision |
+|---|---|---|---|
+| corrected intrinsic spatial EC | `star[n(e) wedge e(s_1 cross s_2)]:F^sin` inside each occupied Record branch | detects intrinsic face rotation, vanishes on normal mixing, and supports the complete numerical cube witness | retain as the bounded spatial gravity precursor |
+| old dual-face BF-like contraction | `star[(e s_1) wedge (e s_2)]:F^sin` | blind to intrinsic face rotation and detects normal mixing | retire as an intrinsic spatial EC claim; retain only as an explicitly different BF-like index route |
+| same-law Wilson substitution | replace only the curvature scalar by `4-tr(H)` | positive and frame covariant, but scale-load derivative vanishes and unrefitted link residual is `1.882414` | retain as a nonselection counterexample, not the selected law |
+| polar coframe-derived links | closest proper rotation between neighboring frames | covariant, normal-compatible, mildly curved and torsionful on the probe | retain as an unselected connection-elimination route |
+| refitted teleparallel / independent BF / Regge | torsion-only, independent bivector/simplicity, or dual-hinge variables | not executed in Block 37 | keep live; do not count as attempted or ruled out |
+| translated copy of current stationary ansatz | reuse midpoint-relative generators cube by cube | cube-centered and not automatically translation compatible | retire naive copying |
+| two face-sharing cubes under one specification | shared Record/coframe/link variables, unique geometric-term counts, common potential/wells, translation-compatible connection | not yet constructed | highest-priority route and next block |
+| periodic/Bianchi/displacement/Einstein/Lorentzian chain | increasing regions followed by distinct symmetry, dynamics, and causal obligations | not executed | preserve as ordered downstream stack, with no implication between labels |
+
+The isolated-cell family is saturated for now. Extension—not another local
+curvature decoration—is the decisive next discriminator.

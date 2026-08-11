@@ -252,3 +252,19 @@ analytic derivative/KKT machinery and spend computation only on proper-cubic
 closed-loop, coframe-compatible curvature and same-law Record load-bearing
 mutations. Stop immediately if a candidate is only a generic Wilson gauge
 action or introduces another supplied stiffness without a selector.
+
+## Post-Block-37 Priority Refresh
+
+| Rank | Target | Exact next witness | Why now |
+|---:|---|---|---|
+| 1 | translation-compatible two-cube Record/EC law | two face-sharing cubes with shared vertices, links, Records, faces counted once, a homogeneous/period-two/derived connection, one common potential and Gram rule, compatible overlap conditionals, and full shared-coordinate stationarity | Block 37 closes the one-cube existence question and exposes its cube-centered midpoint ansatz as the immediate extension risk; this is the fastest falsifier of gravity-law extensibility |
+| 2 | Record derivation / import retirement of carrier and coefficients | derive coframes or equivalent geometry, transported links, incidence, measure, and coefficients from the extensional Admissibility distribution; otherwise isolate the smallest sufficient downstream interface | finite coexistence is now strong, so law selection—not another local term—is the dominant axiom pressure |
+| 3 | periodic region, Bianchi, and displacement Ward | translate the common two-cube law to periodic `L^3`, prove uniform coercivity/tightness, execute ordered-product Bianchi identities, and separately derive any base-displacement Ward identity | this distinguishes kinematic connection algebra from gravity symmetry and tests whether a phase exists |
+| 4 | weak-curvature Einstein/source regime | compute the phase Hessian, gauge null space, two-derivative tensor structure, universal Record source coupling, and constraint content | an intrinsic EC index pattern is necessary but not sufficient for Einstein dynamics |
+| 5 | Lorentzian permanent-Record update | declare/derive the `Z^3 x Z_tau` law, reflection/reconstruction conditions, causal cone, and update preserving fixed Records | this remains independent of the successful Euclidean spatial cell |
+| 6 | Born/history and other TOE roots | resume the strongest non-gravity root after the two-cube discriminator or if the gravity route saturates | preserves campaign-wide efficiency without abandoning the lowest lane |
+
+Efficiency rule: reuse Block 37's exact cube combinatorics and tensor
+contraction, but replace the cube-centered witness before scaling. Stop any
+candidate that double-counts shared faces/edges, fits separate wells per cube,
+or calls an internal-frame/Bianchi identity a displacement or Einstein law.

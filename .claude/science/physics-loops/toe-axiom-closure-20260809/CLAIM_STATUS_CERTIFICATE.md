@@ -1199,3 +1199,58 @@ independent_audit_required: true
 The landing N1--N8 record is the theorem note itself, and the landing N5
 execution certificate is in the primary cached stdout, as required by the
 current repository no-go discipline.
+
+## Block 37 Proper-Cubic Intrinsic EC Boundary Certificate
+
+- Claim type: `bounded_theorem` with numerical stationary witness.
+- Geometry: all eight vertices, twelve links, six faces, and twenty-four based
+  outward plaquette loops of one spatial cube are executed.
+- Index repair: the derived-normal complementary-triad bivector sees
+  intrinsic/normal-mixing signals `0.000070711/0`; the rejected dual-face form
+  sees `0/0.000070711` and is not called spatial EC.
+- Connection: the equivariant spatial/normal-mixing parameters are
+  `0.323988455/1.094e-12`; the maximum/norm over all 72 link tangents is
+  `1.776e-09/2.512e-09`; transported-normal error is `1.547e-12`.
+- Curvature/torsion: every based face has holonomy gap `1.802069`, intrinsic EC
+  signal `0.963037`, and torsion norm `0.369390`.
+- Coframes: positive target-Gram minimum `1.025111`; maximum centered
+  finite-difference residual over 128 entries `7.994e-09`.
+- Record response: exact contracted `Z_R=823039502.694778`; contact/covariance
+  `2.746612820/0.010195374`; complete/numerical response
+  `2.736417446/2.736417493`; deleting contact leaves `-0.010195374`.
+- Alternatives and mutations: same-law Wilson substitution stays positive and
+  covariant but loses coframe-load response; pi holonomy exposes sine-chart
+  blindness; polar closest-frame links remain a live unselected route; pure
+  gauge, flat-incompatible, normal-mixing, closing-link, one-plane, and sector
+  deletions all execute.
+- Runner/cache: source/input pinned, `PASS=21 FAIL=0` in `7.6 s`; primary
+  stdout is `5,900` characters with substantive per-element, per-site,
+  per-mode, per-block, and lattice-wide certificates.
+- Governance: finite coexistence is established; physical carrier/law
+  selection, overlap/full-`Z^3`, displacement Ward/Bianchi, Einstein regime,
+  Lorentzian update, and axiom necessity are not.
+
+### Block 37 No-Go Discipline Working Copy
+
+- `N1`: five actually executed normalized families land in the theorem note:
+  intrinsic EC, rejected dual-face BF-like index, polar link elimination,
+  Record-induced effective action, and same-law Wilson substitution.
+- `N2`: carrier, law/measure, region extension, displacement Ward, Einstein
+  regime, and Lorentzian update remain the collapsed six-wall set; all pairwise
+  directions are checked.
+- `N3`: supplied carrier, measure, coefficients, ansatz, wells, Euclidean
+  signature, chart, and finite boundary are explicit.
+- `N4`: only the Block-36 closed-cube target directly matches; broader Regge,
+  Einstein, and axiom residuals are dropped from proof support.
+- `N5`: modes and lattice-wide behavior are honestly “checked and not
+  executed”; finite coordinates are not relabeled as modes.
+- `N6`: the axiom/primitive registry and source notes were reread; Regge,
+  constrained BF, teleparallel, overlap/DLR, and causal routes remain live.
+- `N7`: the strongest counterroute starts with two face-sharing cubes and a
+  translation-compatible link field because the present stationary ansatz is
+  cube-centered.
+- `N8`: prior ontology-shaped walls repeatedly retired through carrier/law
+  refinement, so neither a gravity no-go nor fifth-axiom necessity ships.
+
+The landing N1--N8 record is in the theorem note and the five N5 resolution
+lines are in the landing primary cache.

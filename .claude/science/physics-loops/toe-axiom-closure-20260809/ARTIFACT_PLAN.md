@@ -845,3 +845,29 @@ complete conditional nonlinear compact solution:
   `bc559c44e7`; campaign conformance is `8008591e79`. PR #6118 is open,
   mergeable, and `CLEAN`, stacked exactly on Block-35 delivery head
   `6882d2eb7e`; independent audit remains required
+
+## Block 37 — Proper-Cubic Intrinsic Spatial Einstein--Cartan Cube
+
+- theorem note:
+  `docs/ADMISSIBILITY_PROPER_CUBIC_SPATIAL_PLAQUETTE_RECORD_COFRAME_PALATINI_CURVATURE_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-11.md`
+- runner/cache:
+  `scripts/admissibility_proper_cubic_spatial_plaquette_record_coframe_palatini_curvature_boundary_2026_08_11.py`
+  and its source/input-pinned cache
+- packet scope: eight cube vertices, twelve `SO(4)` links, six faces and all
+  twenty-four based proper-cubic loops; ten shared Record labels per vertex;
+  triad-derived internal normal and complementary-triad intrinsic EC
+  contraction; coframe/normal compatibility and torsion; one strictly positive
+  normalizable finite law; full numerical 72-link and 128-coframe stationarity;
+  exact `10^8` tensor contraction; contact/covariance response; N1--N8
+- critical repair: the earlier dual-face `star[(e s_1) wedge (e s_2)]` draft
+  detects normal-mixing curvature on a spatial base. The executed index control
+  replaces it with `star[n wedge e(s_1 cross s_2)]` and distinguishes the two
+  sectors exactly at the printed scale
+- exclusions: physical law/carrier/measure/coefficient selection, symbolic or
+  interval stationarity, translation-compatible overlap, full-`Z^3` phase,
+  displacement Ward/Einstein dynamics, Lorentzian update, canonical edits,
+  percentage movement, or audit verdicts
+- current evidence: fresh cache `PASS=21 FAIL=0` in `7.6 s`; runner stdout
+  `5,900` characters; theorem-note N1--N8 and cache N5 certificates land in the
+  block; repository conformance, science commit, delivery, push, and stacked PR
+  remain pending

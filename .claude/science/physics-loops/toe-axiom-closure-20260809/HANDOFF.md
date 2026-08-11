@@ -1482,7 +1482,10 @@ stdout limit; all fifteen isolated forced-false mutations trip exactly one
 check. Citation registration is `5,481/15,665`, out-degree four. The note now
 states every executed local weight after an independent reconstruction caught
 the original omission. Its corrected runner-free rerun is `PASS=9 FAIL=0` and
-reproduces the complete width-three numerical surface. Exact-stack
-conformance, changed-evidence readiness, commits, delivery, and independent
-audit remain pending. No canonical edit, fixed percentage move, audit verdict,
-or `review-loop` occurs.
+reproduces the complete width-three numerical surface. The exact stack seeds
+4,819 rows / 3,697 runners and stops only at the inherited stage-7 epoch
+mismatch; a five-file current-main overlay passes all 18 stages at checkpoint
+`67d28dfc902f`. Changed evidence is clean for `1/1` Block-35 and `35/35`
+stacked claims. Science commit is `1c9d88cbbc`; campaign conformance, delivery,
+and independent audit remain pending. No canonical edit, fixed percentage
+move, audit verdict, or `review-loop` occurs.

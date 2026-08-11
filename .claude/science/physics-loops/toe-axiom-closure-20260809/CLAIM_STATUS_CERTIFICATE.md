@@ -1112,7 +1112,10 @@ independent_audit_required: true
   factors, matrix-free Perron/locality numbers, rank-ten source response,
   nonlinear sign reversal, and both selection controls.
 - Citation registration: `5,481` nodes / `15,665` edges; the new node has
-  out-degree four. Direct conformance gates pass. Exact-stack conformance,
-  changed-evidence readiness, commits, delivery, and independent audit remain
-  pending. No canonical edit, fixed percentage move, audit verdict, or
-  `review-loop`.
+  out-degree four. Direct conformance gates pass. The exact stack seeds 4,819
+  rows and classifies 3,697 runners before the inherited stage-7 policy-epoch
+  stop; the five-file current-main overlay passes all 18 stages at checkpoint
+  `67d28dfc902f`. Changed evidence is clean for `1/1` Block-35 and `35/35`
+  stacked claims. Science commit is `1c9d88cbbc`; campaign conformance,
+  delivery, and independent audit remain pending. No canonical edit, fixed
+  percentage move, audit verdict, or `review-loop`.

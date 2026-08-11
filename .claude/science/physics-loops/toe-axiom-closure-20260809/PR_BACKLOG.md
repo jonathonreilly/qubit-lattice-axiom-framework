@@ -677,8 +677,12 @@ fail exactly one named check. Citation registration is `5,481/15,665`, with
 out-degree four. Direct conformance passes. The independent reconstruction
 caught and triggered repair of an omitted executed-weight table; its corrected
 runner-free rerun is `PASS=9 FAIL=0` and reproduces the complete width-three
-surface. Exact-stack conformance, changed-evidence readiness,
-science/conformance commits, PR delivery, and independent audit are pending.
+surface. The exact stack seeds 4,819 rows / 3,697 runners and reaches only the
+inherited stage-7 dependency-policy epoch mismatch; the controlled five-file
+current-main overlay passes all 18 stages at checkpoint `67d28dfc902f`.
+Changed evidence is clean for `1/1` Block-35 and `35/35` stacked claims.
+Science commit is `1c9d88cbbc`; campaign conformance, PR delivery, and
+independent audit are pending.
 PR #6096 remains a complementary proper-length sibling requiring later
 explicit reconciliation. No canonical edit, percentage move, audit verdict,
 or `review-loop` is used.

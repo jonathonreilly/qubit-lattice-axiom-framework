@@ -1865,6 +1865,12 @@ instance or Fourier census.
   out-degree four. Direct vocabulary, premise-purity, model-normalization,
   cache, syntax/YAML, whitespace, strict-lint, graph/link/invariant,
   claim-typing, N1--N8, and canonical-nonmutation gates pass.
-- Exact-stack conformance, changed-evidence readiness, commits, PR delivery,
-  and independent audit remain pending. No canonical axiom, fixed percentage,
+- The exact stack seeds 4,819 rows and classifies 3,697 runners, then
+  reproduces only the inherited stage-7 dependency-policy epoch mismatch. A
+  controlled five-file current-main overlay passes all 18 stages and finalizes
+  checkpoint `67d28dfc902f`.
+- Changed-evidence readiness marks Block 35 alone (`1/1`) and all 35 stacked
+  claims (`35/35`) ready with zero failures and zero control failures.
+- Science commit is `1c9d88cbbc`; campaign conformance, PR delivery, and
+  independent audit remain pending. No canonical axiom, fixed percentage,
   audit verdict, or `review-loop` is changed.

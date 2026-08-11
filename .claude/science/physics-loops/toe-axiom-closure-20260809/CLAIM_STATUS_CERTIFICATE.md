@@ -1151,8 +1151,15 @@ independent_audit_required: true
   connection norm to `8 sqrt(2)` while leaving the intrinsic law and KKT point
   unchanged.
 - Runner/cache: source/input pinned, `PASS=19 FAIL=0` in `3.43 s`, with the
-  required substantive N5 lines for per-element, per-site, per-mode,
-  per-block, and lattice-wide scope.
+  required 5,682-character substantive N5 record for per-element, per-site,
+  per-mode, per-block, and lattice-wide scope.
+- Citation/conformance: `5,482` nodes / `15,668` edges, with note out-degree
+  three. Direct gates pass. The exact stack seeds 4,820 rows and classifies
+  3,698 runners before the inherited stage-7 policy-epoch stop; the controlled
+  five-file current-main overlay passes all 18 stages at checkpoint
+  `95e0dd08fa5d`. Changed evidence is ready for Block 36 alone (`1/1`) and all
+  36 stacked claims (`36/36`), with zero failures or control failures. Science
+  commit is `bc559c44e7`; independent audit remains required.
 - Governance: this is supplied finite existence/bookkeeping plus a narrow
   finite-label negative. It is not a Record derivation, gravitational action,
   phase, diffeomorphism/Einstein theorem, Lorentz theorem, axiom-necessity

@@ -1910,6 +1910,11 @@ instance or Fourier census.
   N8 retirement records.
 - Primary fresh cache is `PASS=19 FAIL=0` in `3.43 s`, 5,682 stdout
   characters. Independent exact/full-Hessian, runner-free, exact score-lift,
-  simplex-tangent, and stable-byte adversarial passes are clean. Repository
-  conformance remains pending before commit/push/PR. No canonical axiom, fixed
-  percentage, audit verdict, or `review-loop` is changed.
+  simplex-tangent, and stable-byte adversarial passes are clean. Direct
+  repository gates pass at citation graph `5,482/15,668`, out-degree three.
+  The exact stack seeds 4,820 rows / 3,698 runners before the inherited
+  stage-7 policy-epoch stop; the controlled five-file current-main overlay
+  passes all 18 stages at checkpoint `95e0dd08fa5d`. Changed evidence is clean
+  for `1/1` Block-36 and `36/36` stacked claims. Science commit is
+  `bc559c44e7`; PR delivery and independent audit remain pending. No canonical
+  axiom, fixed percentage, audit verdict, or `review-loop` is changed.

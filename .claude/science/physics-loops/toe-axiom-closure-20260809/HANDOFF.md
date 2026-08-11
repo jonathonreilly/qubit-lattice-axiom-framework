@@ -1501,7 +1501,12 @@ fresh cache are present; the cache is `PASS=19 FAIL=0` in `3.43 s` with
 5,682 stdout characters. Independent full-Hessian, runner-free, exact
 score-lift, and simplex-tangent reconstructions match the KKT, response, Ward,
 quotient, and mutation numbers. The stable-byte adversarial no-go pass is
-clean; repository-conformance packaging remains before commit/push/PR.
+clean. Direct gates pass at citation graph `5,482/15,668`, out-degree three.
+The exact stack seeds 4,820 rows and classifies 3,698 runners before only the
+inherited stage-7 policy-epoch stop; the controlled five-file current-main
+overlay passes all 18 stages at checkpoint `95e0dd08fa5d`. Changed evidence is
+clean for Block 36 (`1/1`) and the complete stack (`36/36`). Science commit is
+`bc559c44e7`; stacked-PR delivery and independent audit remain pending.
 
 The significant scientific gain is diagnostic. The requested fully
 stationary identity cannot also have a nonzero total generator-connection

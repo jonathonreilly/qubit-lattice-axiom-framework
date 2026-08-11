@@ -836,5 +836,10 @@ complete conditional nonlinear compact solution:
   with `5,682` stdout characters; exact KKT residual `3.331e-15`; independent
   full-Hessian, runner-free, exact score-lift, and simplex-tangent
   reconstructions reproduce the numerical surface; the stable-byte adversarial
-  no-go pass is clean; repository-conformance gates remain before the science
-  commit and stacked PR package
+  no-go pass is clean; citation registration is `5,482/15,668`, out-degree
+  three; direct conformance gates pass. The exact stack seeds `4,820` rows and
+  classifies `3,698` runners before reproducing only the inherited stage-7
+  dependency-policy epoch mismatch; the controlled five-file current-main
+  overlay passes all 18 stages at checkpoint `95e0dd08fa5d`. Changed evidence
+  is clean for `1/1` Block-36 and `36/36` stacked claims. Science commit is
+  `bc559c44e7`; stacked-PR delivery and independent audit remain pending

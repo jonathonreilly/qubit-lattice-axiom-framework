@@ -697,6 +697,10 @@ multiplier/generator accounting, intrinsic quotient, finite-label boundary,
 and continuous score/coframe/transport escapes. The source/input-pinned cache
 is `PASS=19 FAIL=0` in `3.43 s` with 5,682 stdout characters. Exact,
 runner-free, score-lift, simplex-tangent, and adversarial no-go checks pass;
-repository conformance is pending. Science commit, campaign conformance,
-delivery commit, and PR URL are pending. No canonical edit, percentage move,
-audit verdict, or `review-loop` is used.
+direct repository conformance passes at graph `5,482/15,668`, out-degree three.
+The exact stack seeds 4,820 rows / 3,698 runners and reaches only the inherited
+stage-7 dependency-policy epoch mismatch; the controlled current-main overlay
+passes all 18 stages at checkpoint `95e0dd08fa5d`. Changed evidence is clean
+for `1/1` Block-36 and `36/36` stacked claims. Science commit is `bc559c44e7`;
+campaign conformance, delivery commit, and PR URL remain pending. No canonical
+edit, percentage move, audit verdict, or `review-loop` is used.

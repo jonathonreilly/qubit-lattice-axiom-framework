@@ -1,0 +1,178 @@
+{
+  "artifact": "three_class_born_compatibility_independent_check",
+  "checker_source_sha256": "67b01d0d662c4783fe3240f862c543d62d1977e60f2996b94b0fa861b4de3535",
+  "checks": {
+    "R0_PRIMARY_AST_AND_PINS": true,
+    "R1_INDEPENDENT_FAMILY_AND_CLASSES": true,
+    "R2_REFUTE_PER_CLASS_AND_JOINT": true,
+    "R3_RECEIPT_CACHE_BINDING": true,
+    "R4_ACTIVE_CORRUPTION_PROBES": true,
+    "R5_CONTROLS": true
+  },
+  "controls": {
+    "all_inputs_worktree_relative_and_present": true,
+    "blocked_primary_imports": [],
+    "blocked_primary_modules": [
+      "frontier_cycle878_event_space_groundwork_2026_07_28",
+      "frontier_cycle974_covariant_law_weight_compatibility_2026_08_10",
+      "frontier_cycle977_witness_family_completeness_2026_08_10"
+    ],
+    "literal_audit_input_paths": [
+      "outputs/cycle978_cited_primary_provenance_2026_08_10.json",
+      "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py"
+    ],
+    "primary_ast_complete": true,
+    "primary_ast_required_functions": [
+      "candidate_rebuild",
+      "evaluate_class_extension",
+      "evaluate_joint_extension",
+      "family_and_classes_rebuild",
+      "rebuild_event_data"
+    ],
+    "primary_never_imported": true,
+    "sha256": {
+      "logs/runner-cache/frontier_cycle978_three_class_born_compatibility_2026_08_10.txt": "a95f869da308b9121250459886f8740a6ecbfccf678d86aa58c35fe61e33c429",
+      "outputs/three_class_born_compatibility_cycle978_receipt_2026_08_10.json": "04b994cfdb1ca3eb95c4bb94900e125bc02d67babb2cc9b13e2fb4968e8e2864",
+      "scripts/frontier_cycle978_three_class_born_compatibility_2026_08_10.py": "3104325f8dd6e96e6654200057a5f6f98ed81c481805929c21ed8d7e845c88d9"
+    },
+    "sha_pins_match": true,
+    "source_read_count": 3
+  },
+  "corruption_probes": {
+    "all_rejected": true,
+    "probes": {
+      "artifact_label": true,
+      "born_wall_status": true,
+      "class_member_count": true,
+      "family_size": true,
+      "joint_survivors": true,
+      "per_class_verdict": true,
+      "witness_count": true
+    }
+  },
+  "cycle": 978,
+  "independent_rebuild": {
+    "changed_edge_pairs": 1344,
+    "class_counts": {
+      "CNOT": 6,
+      "TOF_OPPOSITE_CONTROLS": 3,
+      "TOF_PERPENDICULAR_CONTROLS": 12
+    },
+    "classes": {
+      "CNOT": [
+        "CNOT(+x->C)",
+        "CNOT(+y->C)",
+        "CNOT(+z->C)",
+        "CNOT(-x->C)",
+        "CNOT(-y->C)",
+        "CNOT(-z->C)"
+      ],
+      "TOF_OPPOSITE_CONTROLS": [
+        "TOF(+x,-x->C)",
+        "TOF(+y,-y->C)",
+        "TOF(+z,-z->C)"
+      ],
+      "TOF_PERPENDICULAR_CONTROLS": [
+        "TOF(+x,+y->C)",
+        "TOF(+x,+z->C)",
+        "TOF(+x,-y->C)",
+        "TOF(+x,-z->C)",
+        "TOF(+y,+z->C)",
+        "TOF(+y,-z->C)",
+        "TOF(-x,+y->C)",
+        "TOF(-x,+z->C)",
+        "TOF(-x,-y->C)",
+        "TOF(-x,-z->C)",
+        "TOF(-y,+z->C)",
+        "TOF(-y,-z->C)"
+      ]
+    },
+    "covariance_checks": 64512,
+    "covariance_failures": [],
+    "family_size": 155,
+    "kind_counts": {
+      "CNOT": 42,
+      "I": 1,
+      "TOF": 105,
+      "X": 7
+    },
+    "representatives": {
+      "CNOT": "CNOT(+x->C)",
+      "TOF_OPPOSITE_CONTROLS": "TOF(+x,-x->C)",
+      "TOF_PERPENDICULAR_CONTROLS": "TOF(+x,+y->C)"
+    },
+    "rotation_count": 24,
+    "science_digest": "c376f89a9cc22f7101bbb79632c9c237072acf33ce8a96b2a6c96f0b2f58f6fc",
+    "witness_count": 21,
+    "witness_names": [
+      "CNOT(+x->C)",
+      "CNOT(+y->C)",
+      "CNOT(+z->C)",
+      "CNOT(-x->C)",
+      "CNOT(-y->C)",
+      "CNOT(-z->C)",
+      "TOF(+x,+y->C)",
+      "TOF(+x,+z->C)",
+      "TOF(+x,-x->C)",
+      "TOF(+x,-y->C)",
+      "TOF(+x,-z->C)",
+      "TOF(+y,+z->C)",
+      "TOF(+y,-y->C)",
+      "TOF(+y,-z->C)",
+      "TOF(+z,-z->C)",
+      "TOF(-x,+y->C)",
+      "TOF(-x,+z->C)",
+      "TOF(-x,-y->C)",
+      "TOF(-x,-z->C)",
+      "TOF(-y,+z->C)",
+      "TOF(-y,-z->C)"
+    ]
+  },
+  "pass": true,
+  "primary_binding": true,
+  "runtime_seconds": 0.8413972919806838,
+  "stdout_bytes": 1466,
+  "verification": {
+    "A_REBUILD": true,
+    "B_PER_CLASS_TEST": true,
+    "C_JOINT_TEST": true,
+    "D_ARTIFACT_VERDICT": true,
+    "expected_artifact": "NULL_CONFIRMED_AT_ENLARGED_SCOPE",
+    "expected_joint_survivors": [
+      "M1_COUNTING",
+      "M2_PER_WORLD_UNIFORM",
+      "M3_OCCUPATION_WEIGHTED",
+      "M4_FORMATION_LIFETIME",
+      "M5_FORMATION_MOMENT"
+    ],
+    "expected_table": {
+      "M1_COUNTING": {
+        "CNOT": "SURVIVES",
+        "TOF_OPPOSITE_CONTROLS": "SURVIVES",
+        "TOF_PERPENDICULAR_CONTROLS": "SURVIVES"
+      },
+      "M2_PER_WORLD_UNIFORM": {
+        "CNOT": "SURVIVES",
+        "TOF_OPPOSITE_CONTROLS": "SURVIVES",
+        "TOF_PERPENDICULAR_CONTROLS": "SURVIVES"
+      },
+      "M3_OCCUPATION_WEIGHTED": {
+        "CNOT": "SURVIVES",
+        "TOF_OPPOSITE_CONTROLS": "SURVIVES",
+        "TOF_PERPENDICULAR_CONTROLS": "SURVIVES"
+      },
+      "M4_FORMATION_LIFETIME": {
+        "CNOT": "SURVIVES",
+        "TOF_OPPOSITE_CONTROLS": "SURVIVES",
+        "TOF_PERPENDICULAR_CONTROLS": "SURVIVES"
+      },
+      "M5_FORMATION_MOMENT": {
+        "CNOT": "SURVIVES",
+        "TOF_OPPOSITE_CONTROLS": "SURVIVES",
+        "TOF_PERPENDICULAR_CONTROLS": "SURVIVES"
+      }
+    },
+    "pass": true
+  }
+}

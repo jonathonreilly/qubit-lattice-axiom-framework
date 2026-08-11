@@ -1,0 +1,999 @@
+{
+  "actual_current_surface_status": "bounded-support",
+  "admitted_observation_status": null,
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "certificates": {
+    "A_REBUILD": {
+      "bridge_checks": 19840,
+      "bridge_failure_count": 0,
+      "candidates": {
+        "M1_COUNTING": {
+          "common_within_world_denominator": 1,
+          "definition": "w(e)=1",
+          "first_positive_event_index": 0,
+          "integer_numerator_total": 92260,
+          "nonnegative": true,
+          "normalizable": true,
+          "normalized_weight_digest": "6903b3d35ef861846209812ad27baa9b76069abffb6feba9fab78f57fb92eb4c",
+          "positive_weight_events": 92260,
+          "zero_weight_events": 0
+        },
+        "M2_PER_WORLD_UNIFORM": {
+          "common_within_world_denominator": 1073280,
+          "definition": "world score a(w)=1; uniform within each event-bearing world",
+          "first_positive_event_index": 0,
+          "integer_numerator_total": 802813440,
+          "nonnegative": true,
+          "normalizable": true,
+          "normalized_weight_digest": "539002346474ddd470ab1eb685e2d8b40dba9532196495eea1c1df7c62d49dac",
+          "positive_weight_events": 92260,
+          "zero_weight_events": 0
+        },
+        "M3_OCCUPATION_WEIGHTED": {
+          "common_within_world_denominator": 1073280,
+          "definition": "a(w)=clean-dwell occupation count; uniform within world",
+          "first_positive_event_index": 0,
+          "integer_numerator_total": 897595870080,
+          "nonnegative": true,
+          "normalizable": true,
+          "normalized_weight_digest": "d340abcfdc89aee174b6b4c0c45bfaa4297a47839abe60347bdc39522c6c65e7",
+          "positive_weight_events": 19172,
+          "zero_weight_events": 73088
+        },
+        "M4_FORMATION_LIFETIME": {
+          "common_within_world_denominator": 1073280,
+          "definition": "a(w)=boundaries-formation_moment(w)+1 if formed, else 0; uniform within world",
+          "first_positive_event_index": 0,
+          "integer_numerator_total": 29530480287360,
+          "nonnegative": true,
+          "normalizable": true,
+          "normalized_weight_digest": "34698cf72ea084f27f577b3a2f73b85e57395e654916e9b8f181d66688d988e4",
+          "positive_weight_events": 19172,
+          "zero_weight_events": 73088
+        },
+        "M5_FORMATION_MOMENT": {
+          "common_within_world_denominator": 1073280,
+          "definition": "a(w)=formation_moment(w) if formed, else 0; uniform within world",
+          "first_positive_event_index": 43,
+          "integer_numerator_total": 2192349344640,
+          "nonnegative": true,
+          "normalizable": true,
+          "normalized_weight_digest": "cb9e9299eb49aab12f2191f9a92c5eb5bbc9ca08bcce30bc4d4dc5ecaf043a34",
+          "positive_weight_events": 16076,
+          "zero_weight_events": 76184
+        }
+      },
+      "changed_edge_pairs": 1344,
+      "class_count": 3,
+      "classes": [
+        {
+          "changed_edge_pairs": 384,
+          "class": "CNOT",
+          "covariant": true,
+          "first_covariance_failure": null,
+          "label": "CNOT",
+          "law": "x XOR n_+x",
+          "member_count": 6,
+          "members": [
+            "CNOT(+x->C)",
+            "CNOT(+y->C)",
+            "CNOT(+z->C)",
+            "CNOT(-x->C)",
+            "CNOT(-y->C)",
+            "CNOT(-z->C)"
+          ],
+          "representative": "CNOT(+x->C)",
+          "rotation_checks": 18432,
+          "translation_checks": 4608
+        },
+        {
+          "changed_edge_pairs": 768,
+          "class": "TOF_PERPENDICULAR_CONTROLS",
+          "covariant": true,
+          "first_covariance_failure": null,
+          "label": "perpendicular-control TOF",
+          "law": "x XOR n_+x AND n_+y",
+          "member_count": 12,
+          "members": [
+            "TOF(+x,+y->C)",
+            "TOF(+x,+z->C)",
+            "TOF(+x,-y->C)",
+            "TOF(+x,-z->C)",
+            "TOF(+y,+z->C)",
+            "TOF(+y,-z->C)",
+            "TOF(-x,+y->C)",
+            "TOF(-x,+z->C)",
+            "TOF(-x,-y->C)",
+            "TOF(-x,-z->C)",
+            "TOF(-y,+z->C)",
+            "TOF(-y,-z->C)"
+          ],
+          "representative": "TOF(+x,+y->C)",
+          "rotation_checks": 36864,
+          "translation_checks": 9216
+        },
+        {
+          "changed_edge_pairs": 192,
+          "class": "TOF_OPPOSITE_CONTROLS",
+          "covariant": true,
+          "first_covariance_failure": null,
+          "label": "opposite-control TOF",
+          "law": "x XOR n_+x AND n_-x",
+          "member_count": 3,
+          "members": [
+            "TOF(+x,-x->C)",
+            "TOF(+y,-y->C)",
+            "TOF(+z,-z->C)"
+          ],
+          "representative": "TOF(+x,-x->C)",
+          "rotation_checks": 9216,
+          "translation_checks": 2304
+        }
+      ],
+      "conditioned_configurations": 19840,
+      "dependent_word_input_rows": 42,
+      "event_cardinality": 92260,
+      "event_digest": "de0f650d9bbc483b18e23a5c70f92cf98f6b9972fa85b06ccaff51d7db1051d9",
+      "events_by_tag": {
+        "B0": 47872,
+        "B1": 44224,
+        "F": 164
+      },
+      "family_covariant": true,
+      "family_kind_counts": {
+        "CNOT": 42,
+        "I": 1,
+        "TOF": 105,
+        "X": 7
+      },
+      "family_size": 155,
+      "formed_worlds": 164,
+      "provenance": {
+        "all_pins_and_text_ast_checks_match": true,
+        "blocked_modules_loaded": [],
+        "bundle_entry_count": 3,
+        "bundle_schema": "cycle978-cited-primary-text-ast-provenance-v1",
+        "rows": [
+          {
+            "ast_candidate_names": [
+              "M1_COUNTING",
+              "M2_PER_WORLD_UNIFORM",
+              "M3_OCCUPATION_WEIGHTED",
+              "M4_FORMATION_LIFETIME",
+              "M5_FORMATION_MOMENT"
+            ],
+            "candidate_names_match": true,
+            "commit": "f655c945318231538ad7a5cc8956dc384115f8ea",
+            "label": "cycle878_event_weightings",
+            "note_blob": "17c07f4d6d3dc07c81828827f25ab575dc7b722d",
+            "note_path": "docs/EVENT_SPACE_GROUNDWORK_CYCLE878_SUPPORT_NOTE_2026-07-28.md",
+            "note_text_needles_match": true,
+            "pass": true,
+            "runner_ast_functions_match": true,
+            "runner_blob": "769f65e51ea2e896af750e92592a421464c3c0e1",
+            "runner_path": "scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py",
+            "text_ast_only": true
+          },
+          {
+            "commit": "679afcde32343a7b841e3810357d2a3ced9d3233",
+            "label": "cycle974_weight_compatibility",
+            "note_blob": "33053f5fe6f8e147455bd548f15eb7cdfb2d8c6f",
+            "note_path": "docs/COVARIANT_LAW_WEIGHT_COMPATIBILITY_CYCLE974_THEOREM_NOTE_2026-08-10.md",
+            "note_text_needles_match": true,
+            "pass": true,
+            "runner_ast_functions_match": true,
+            "runner_blob": "a52c7d719f514c1eb744ca887645aa9341c223c7",
+            "runner_path": "scripts/frontier_cycle974_covariant_law_weight_compatibility_2026_08_10.py",
+            "text_ast_only": true
+          },
+          {
+            "commit": "27ec7c243f613fc1ffda4aa93960c18936b176fd",
+            "label": "cycle977_three_class_family",
+            "note_blob": "4de442244691c3a0397b59c524c605133aab5fa1",
+            "note_path": "docs/WITNESS_FAMILY_COMPLETENESS_CYCLE977_BOUNDED_THEOREM_NOTE_2026-08-10.md",
+            "note_text_needles_match": true,
+            "pass": true,
+            "runner_ast_functions_match": true,
+            "runner_blob": "59636bcfbe187ace224f33575d4cc92161fb0f46",
+            "runner_path": "scripts/frontier_cycle977_witness_family_completeness_2026_08_10.py",
+            "text_ast_only": true
+          }
+        ]
+      },
+      "rotation_checks": 476160,
+      "rotation_failure_count": 0,
+      "translation_checks": 119040,
+      "translation_failure_count": 0,
+      "witness_count": 21,
+      "witness_digest": "3eaea8ea143ab4a20f5048e2b9a0784b0c9c1058f0db3afa7f96dc64307480e1",
+      "witnesses": [
+        {
+          "changed_edge_pairs": 64,
+          "class": "CNOT",
+          "law": "x XOR n_+x",
+          "word": "CNOT(+x->C)"
+        },
+        {
+          "changed_edge_pairs": 64,
+          "class": "CNOT",
+          "law": "x XOR n_-x",
+          "word": "CNOT(-x->C)"
+        },
+        {
+          "changed_edge_pairs": 64,
+          "class": "CNOT",
+          "law": "x XOR n_+y",
+          "word": "CNOT(+y->C)"
+        },
+        {
+          "changed_edge_pairs": 64,
+          "class": "CNOT",
+          "law": "x XOR n_-y",
+          "word": "CNOT(-y->C)"
+        },
+        {
+          "changed_edge_pairs": 64,
+          "class": "CNOT",
+          "law": "x XOR n_+z",
+          "word": "CNOT(+z->C)"
+        },
+        {
+          "changed_edge_pairs": 64,
+          "class": "CNOT",
+          "law": "x XOR n_-z",
+          "word": "CNOT(-z->C)"
+        },
+        {
+          "changed_edge_pairs": 64,
+          "class": "TOF_OPPOSITE_CONTROLS",
+          "law": "x XOR n_+x AND n_-x",
+          "word": "TOF(+x,-x->C)"
+        },
+        {
+          "changed_edge_pairs": 64,
+          "class": "TOF_PERPENDICULAR_CONTROLS",
+          "law": "x XOR n_+x AND n_+y",
+          "word": "TOF(+x,+y->C)"
+        },
+        {
+          "changed_edge_pairs": 64,
+          "class": "TOF_PERPENDICULAR_CONTROLS",
+          "law": "x XOR n_+x AND n_-y",
+          "word": "TOF(+x,-y->C)"
+        },
+        {
+          "changed_edge_pairs": 64,
+          "class": "TOF_PERPENDICULAR_CONTROLS",
+          "law": "x XOR n_+x AND n_+z",
+          "word": "TOF(+x,+z->C)"
+        },
+        {
+          "changed_edge_pairs": 64,
+          "class": "TOF_PERPENDICULAR_CONTROLS",
+          "law": "x XOR n_+x AND n_-z",
+          "word": "TOF(+x,-z->C)"
+        },
+        {
+          "changed_edge_pairs": 64,
+          "class": "TOF_PERPENDICULAR_CONTROLS",
+          "law": "x XOR n_-x AND n_+y",
+          "word": "TOF(-x,+y->C)"
+        },
+        {
+          "changed_edge_pairs": 64,
+          "class": "TOF_PERPENDICULAR_CONTROLS",
+          "law": "x XOR n_-x AND n_-y",
+          "word": "TOF(-x,-y->C)"
+        },
+        {
+          "changed_edge_pairs": 64,
+          "class": "TOF_PERPENDICULAR_CONTROLS",
+          "law": "x XOR n_-x AND n_+z",
+          "word": "TOF(-x,+z->C)"
+        },
+        {
+          "changed_edge_pairs": 64,
+          "class": "TOF_PERPENDICULAR_CONTROLS",
+          "law": "x XOR n_-x AND n_-z",
+          "word": "TOF(-x,-z->C)"
+        },
+        {
+          "changed_edge_pairs": 64,
+          "class": "TOF_OPPOSITE_CONTROLS",
+          "law": "x XOR n_+y AND n_-y",
+          "word": "TOF(+y,-y->C)"
+        },
+        {
+          "changed_edge_pairs": 64,
+          "class": "TOF_PERPENDICULAR_CONTROLS",
+          "law": "x XOR n_+y AND n_+z",
+          "word": "TOF(+y,+z->C)"
+        },
+        {
+          "changed_edge_pairs": 64,
+          "class": "TOF_PERPENDICULAR_CONTROLS",
+          "law": "x XOR n_+y AND n_-z",
+          "word": "TOF(+y,-z->C)"
+        },
+        {
+          "changed_edge_pairs": 64,
+          "class": "TOF_PERPENDICULAR_CONTROLS",
+          "law": "x XOR n_-y AND n_+z",
+          "word": "TOF(-y,+z->C)"
+        },
+        {
+          "changed_edge_pairs": 64,
+          "class": "TOF_PERPENDICULAR_CONTROLS",
+          "law": "x XOR n_-y AND n_-z",
+          "word": "TOF(-y,-z->C)"
+        },
+        {
+          "changed_edge_pairs": 64,
+          "class": "TOF_OPPOSITE_CONTROLS",
+          "law": "x XOR n_+z AND n_-z",
+          "word": "TOF(+z,-z->C)"
+        }
+      ],
+      "worlds_in_census": 748
+    },
+    "B_PER_CLASS_TEST": {
+      "class_order": [
+        "CNOT",
+        "TOF_PERPENDICULAR_CONTROLS",
+        "TOF_OPPOSITE_CONTROLS"
+      ],
+      "criterion": "Cycle-974 product-form criterion verbatim with its single law kernel L replaced only by the selected reconstructed class representative L_c: P_i(e,x,n,y)=p_i(e) q(x,n) 1{y=L_c(x,n)}, q=1/128. Exclude only on nonnegative/normalization failure, event-marginal mismatch, or the exact first class-conditional configuration mismatch.",
+      "criterion_relation_to_cycle974": "verbatim product form per class; only L is instantiated by that class representative",
+      "per_class": {
+        "M1_COUNTING": {
+          "CNOT": {
+            "conditional_scalar_checks": 256,
+            "event_marginal_factor": "1",
+            "event_marginal_matches": true,
+            "exact_product_witness": {
+              "class_witness": "CNOT(+x->C)",
+              "event_atom": [
+                176,
+                0,
+                "F",
+                0
+              ],
+              "law": "x XOR n_+x",
+              "p_i_event": "1/92260"
+            },
+            "first_disagreement": null,
+            "nonnegative": true,
+            "normalizable": true,
+            "representative_witness": "CNOT(+x->C)",
+            "verdict": "SURVIVES"
+          },
+          "TOF_OPPOSITE_CONTROLS": {
+            "conditional_scalar_checks": 256,
+            "event_marginal_factor": "1",
+            "event_marginal_matches": true,
+            "exact_product_witness": {
+              "class_witness": "TOF(+x,-x->C)",
+              "event_atom": [
+                176,
+                0,
+                "F",
+                0
+              ],
+              "law": "x XOR n_+x AND n_-x",
+              "p_i_event": "1/92260"
+            },
+            "first_disagreement": null,
+            "nonnegative": true,
+            "normalizable": true,
+            "representative_witness": "TOF(+x,-x->C)",
+            "verdict": "SURVIVES"
+          },
+          "TOF_PERPENDICULAR_CONTROLS": {
+            "conditional_scalar_checks": 256,
+            "event_marginal_factor": "1",
+            "event_marginal_matches": true,
+            "exact_product_witness": {
+              "class_witness": "TOF(+x,+y->C)",
+              "event_atom": [
+                176,
+                0,
+                "F",
+                0
+              ],
+              "law": "x XOR n_+x AND n_+y",
+              "p_i_event": "1/92260"
+            },
+            "first_disagreement": null,
+            "nonnegative": true,
+            "normalizable": true,
+            "representative_witness": "TOF(+x,+y->C)",
+            "verdict": "SURVIVES"
+          }
+        },
+        "M2_PER_WORLD_UNIFORM": {
+          "CNOT": {
+            "conditional_scalar_checks": 256,
+            "event_marginal_factor": "1",
+            "event_marginal_matches": true,
+            "exact_product_witness": {
+              "class_witness": "CNOT(+x->C)",
+              "event_atom": [
+                176,
+                0,
+                "F",
+                0
+              ],
+              "law": "x XOR n_+x",
+              "p_i_event": "8320/802813440"
+            },
+            "first_disagreement": null,
+            "nonnegative": true,
+            "normalizable": true,
+            "representative_witness": "CNOT(+x->C)",
+            "verdict": "SURVIVES"
+          },
+          "TOF_OPPOSITE_CONTROLS": {
+            "conditional_scalar_checks": 256,
+            "event_marginal_factor": "1",
+            "event_marginal_matches": true,
+            "exact_product_witness": {
+              "class_witness": "TOF(+x,-x->C)",
+              "event_atom": [
+                176,
+                0,
+                "F",
+                0
+              ],
+              "law": "x XOR n_+x AND n_-x",
+              "p_i_event": "8320/802813440"
+            },
+            "first_disagreement": null,
+            "nonnegative": true,
+            "normalizable": true,
+            "representative_witness": "TOF(+x,-x->C)",
+            "verdict": "SURVIVES"
+          },
+          "TOF_PERPENDICULAR_CONTROLS": {
+            "conditional_scalar_checks": 256,
+            "event_marginal_factor": "1",
+            "event_marginal_matches": true,
+            "exact_product_witness": {
+              "class_witness": "TOF(+x,+y->C)",
+              "event_atom": [
+                176,
+                0,
+                "F",
+                0
+              ],
+              "law": "x XOR n_+x AND n_+y",
+              "p_i_event": "8320/802813440"
+            },
+            "first_disagreement": null,
+            "nonnegative": true,
+            "normalizable": true,
+            "representative_witness": "TOF(+x,+y->C)",
+            "verdict": "SURVIVES"
+          }
+        },
+        "M3_OCCUPATION_WEIGHTED": {
+          "CNOT": {
+            "conditional_scalar_checks": 256,
+            "event_marginal_factor": "1",
+            "event_marginal_matches": true,
+            "exact_product_witness": {
+              "class_witness": "CNOT(+x->C)",
+              "event_atom": [
+                176,
+                0,
+                "F",
+                0
+              ],
+              "law": "x XOR n_+x",
+              "p_i_event": "86328320/897595870080"
+            },
+            "first_disagreement": null,
+            "nonnegative": true,
+            "normalizable": true,
+            "representative_witness": "CNOT(+x->C)",
+            "verdict": "SURVIVES"
+          },
+          "TOF_OPPOSITE_CONTROLS": {
+            "conditional_scalar_checks": 256,
+            "event_marginal_factor": "1",
+            "event_marginal_matches": true,
+            "exact_product_witness": {
+              "class_witness": "TOF(+x,-x->C)",
+              "event_atom": [
+                176,
+                0,
+                "F",
+                0
+              ],
+              "law": "x XOR n_+x AND n_-x",
+              "p_i_event": "86328320/897595870080"
+            },
+            "first_disagreement": null,
+            "nonnegative": true,
+            "normalizable": true,
+            "representative_witness": "TOF(+x,-x->C)",
+            "verdict": "SURVIVES"
+          },
+          "TOF_PERPENDICULAR_CONTROLS": {
+            "conditional_scalar_checks": 256,
+            "event_marginal_factor": "1",
+            "event_marginal_matches": true,
+            "exact_product_witness": {
+              "class_witness": "TOF(+x,+y->C)",
+              "event_atom": [
+                176,
+                0,
+                "F",
+                0
+              ],
+              "law": "x XOR n_+x AND n_+y",
+              "p_i_event": "86328320/897595870080"
+            },
+            "first_disagreement": null,
+            "nonnegative": true,
+            "normalizable": true,
+            "representative_witness": "TOF(+x,+y->C)",
+            "verdict": "SURVIVES"
+          }
+        },
+        "M4_FORMATION_LIFETIME": {
+          "CNOT": {
+            "conditional_scalar_checks": 256,
+            "event_marginal_factor": "1",
+            "event_marginal_matches": true,
+            "exact_product_witness": {
+              "class_witness": "CNOT(+x->C)",
+              "event_atom": [
+                176,
+                0,
+                "F",
+                0
+              ],
+              "law": "x XOR n_+x",
+              "p_i_event": "1499472000/29530480287360"
+            },
+            "first_disagreement": null,
+            "nonnegative": true,
+            "normalizable": true,
+            "representative_witness": "CNOT(+x->C)",
+            "verdict": "SURVIVES"
+          },
+          "TOF_OPPOSITE_CONTROLS": {
+            "conditional_scalar_checks": 256,
+            "event_marginal_factor": "1",
+            "event_marginal_matches": true,
+            "exact_product_witness": {
+              "class_witness": "TOF(+x,-x->C)",
+              "event_atom": [
+                176,
+                0,
+                "F",
+                0
+              ],
+              "law": "x XOR n_+x AND n_-x",
+              "p_i_event": "1499472000/29530480287360"
+            },
+            "first_disagreement": null,
+            "nonnegative": true,
+            "normalizable": true,
+            "representative_witness": "TOF(+x,-x->C)",
+            "verdict": "SURVIVES"
+          },
+          "TOF_PERPENDICULAR_CONTROLS": {
+            "conditional_scalar_checks": 256,
+            "event_marginal_factor": "1",
+            "event_marginal_matches": true,
+            "exact_product_witness": {
+              "class_witness": "TOF(+x,+y->C)",
+              "event_atom": [
+                176,
+                0,
+                "F",
+                0
+              ],
+              "law": "x XOR n_+x AND n_+y",
+              "p_i_event": "1499472000/29530480287360"
+            },
+            "first_disagreement": null,
+            "nonnegative": true,
+            "normalizable": true,
+            "representative_witness": "TOF(+x,+y->C)",
+            "verdict": "SURVIVES"
+          }
+        },
+        "M5_FORMATION_MOMENT": {
+          "CNOT": {
+            "conditional_scalar_checks": 256,
+            "event_marginal_factor": "1",
+            "event_marginal_matches": true,
+            "exact_product_witness": {
+              "class_witness": "CNOT(+x->C)",
+              "event_atom": [
+                327,
+                1,
+                "B0",
+                0
+              ],
+              "law": "x XOR n_+x",
+              "p_i_event": "4426240/2192349344640"
+            },
+            "first_disagreement": null,
+            "nonnegative": true,
+            "normalizable": true,
+            "representative_witness": "CNOT(+x->C)",
+            "verdict": "SURVIVES"
+          },
+          "TOF_OPPOSITE_CONTROLS": {
+            "conditional_scalar_checks": 256,
+            "event_marginal_factor": "1",
+            "event_marginal_matches": true,
+            "exact_product_witness": {
+              "class_witness": "TOF(+x,-x->C)",
+              "event_atom": [
+                327,
+                1,
+                "B0",
+                0
+              ],
+              "law": "x XOR n_+x AND n_-x",
+              "p_i_event": "4426240/2192349344640"
+            },
+            "first_disagreement": null,
+            "nonnegative": true,
+            "normalizable": true,
+            "representative_witness": "TOF(+x,-x->C)",
+            "verdict": "SURVIVES"
+          },
+          "TOF_PERPENDICULAR_CONTROLS": {
+            "conditional_scalar_checks": 256,
+            "event_marginal_factor": "1",
+            "event_marginal_matches": true,
+            "exact_product_witness": {
+              "class_witness": "TOF(+x,+y->C)",
+              "event_atom": [
+                327,
+                1,
+                "B0",
+                0
+              ],
+              "law": "x XOR n_+x AND n_+y",
+              "p_i_event": "4426240/2192349344640"
+            },
+            "first_disagreement": null,
+            "nonnegative": true,
+            "normalizable": true,
+            "representative_witness": "TOF(+x,+y->C)",
+            "verdict": "SURVIVES"
+          }
+        }
+      },
+      "per_class_exclusions": []
+    },
+    "C_JOINT_TEST": {
+      "criterion": "Stated minimal generalization for three simultaneous classes: add an explicit class index c with fixed positive r(c)=1/3 and use P_i(e,c,x,n,y)=p_i(e) r(c) q(x,n) 1{y=L_c(x,n)}. This is required solely because the enlarged family has three inequivalent kernels; it preserves Cycle 974's event marginal and product independence and does not add an event selector. Compatibility requires every class kernel simultaneously; the first disagreeing witness is reported on failure.",
+      "excluded": [],
+      "generalization_reason": "an explicit positive class carrier is the minimal way to require all three inequivalent kernels in one joint distribution while preserving the event marginal",
+      "joint": {
+        "M1_COUNTING": {
+          "class_carrier": {
+            "CNOT": "1/3",
+            "TOF_OPPOSITE_CONTROLS": "1/3",
+            "TOF_PERPENDICULAR_CONTROLS": "1/3"
+          },
+          "event_marginal_identity": "sum_{c,x,n,y} P_i(e,c,x,n,y)=p_i(e)",
+          "first_disagreement": null,
+          "verdict": "SURVIVES"
+        },
+        "M2_PER_WORLD_UNIFORM": {
+          "class_carrier": {
+            "CNOT": "1/3",
+            "TOF_OPPOSITE_CONTROLS": "1/3",
+            "TOF_PERPENDICULAR_CONTROLS": "1/3"
+          },
+          "event_marginal_identity": "sum_{c,x,n,y} P_i(e,c,x,n,y)=p_i(e)",
+          "first_disagreement": null,
+          "verdict": "SURVIVES"
+        },
+        "M3_OCCUPATION_WEIGHTED": {
+          "class_carrier": {
+            "CNOT": "1/3",
+            "TOF_OPPOSITE_CONTROLS": "1/3",
+            "TOF_PERPENDICULAR_CONTROLS": "1/3"
+          },
+          "event_marginal_identity": "sum_{c,x,n,y} P_i(e,c,x,n,y)=p_i(e)",
+          "first_disagreement": null,
+          "verdict": "SURVIVES"
+        },
+        "M4_FORMATION_LIFETIME": {
+          "class_carrier": {
+            "CNOT": "1/3",
+            "TOF_OPPOSITE_CONTROLS": "1/3",
+            "TOF_PERPENDICULAR_CONTROLS": "1/3"
+          },
+          "event_marginal_identity": "sum_{c,x,n,y} P_i(e,c,x,n,y)=p_i(e)",
+          "first_disagreement": null,
+          "verdict": "SURVIVES"
+        },
+        "M5_FORMATION_MOMENT": {
+          "class_carrier": {
+            "CNOT": "1/3",
+            "TOF_OPPOSITE_CONTROLS": "1/3",
+            "TOF_PERPENDICULAR_CONTROLS": "1/3"
+          },
+          "event_marginal_identity": "sum_{c,x,n,y} P_i(e,c,x,n,y)=p_i(e)",
+          "first_disagreement": null,
+          "verdict": "SURVIVES"
+        }
+      },
+      "joint_only_exclusions": [],
+      "survivors": [
+        "M1_COUNTING",
+        "M2_PER_WORLD_UNIFORM",
+        "M3_OCCUPATION_WEIGHTED",
+        "M4_FORMATION_LIFETIME",
+        "M5_FORMATION_MOMENT"
+      ]
+    },
+    "D_ARTIFACT_VERDICT": {
+      "born_wall_stands": true,
+      "born_wall_status": "survivors/5: 5/5",
+      "does_not_supply": [
+        "a local-to-event lift",
+        "an event-marginal selector",
+        "an occurrence rule",
+        "a Born rule"
+      ],
+      "excluded": [],
+      "joint_only_exclusions": [],
+      "survivors": [
+        "M1_COUNTING",
+        "M2_PER_WORLD_UNIFORM",
+        "M3_OCCUPATION_WEIGHTED",
+        "M4_FORMATION_LIFETIME",
+        "M5_FORMATION_MOMENT"
+      ],
+      "verdict": "NULL_CONFIRMED_AT_ENLARGED_SCOPE"
+    },
+    "E_CONTROLS": {
+      "active_corruption_controls": {
+        "all_decisive": true,
+        "expected": {
+          "missing_class": "EXCLUDED",
+          "missing_configuration": "EXCLUDED",
+          "negative_weight": "EXCLUDED",
+          "valid_joint": "SURVIVES",
+          "valid_per_class": "SURVIVES",
+          "wrong_class_kernel": "EXCLUDED",
+          "wrong_joint_kernel": "EXCLUDED",
+          "zero_total": "EXCLUDED"
+        },
+        "observed": {
+          "missing_class": "EXCLUDED",
+          "missing_configuration": "EXCLUDED",
+          "negative_weight": "EXCLUDED",
+          "valid_joint": "SURVIVES",
+          "valid_per_class": "SURVIVES",
+          "wrong_class_kernel": "EXCLUDED",
+          "wrong_joint_kernel": "EXCLUDED",
+          "zero_total": "EXCLUDED"
+        },
+        "probes": {
+          "missing_class": {
+            "class_carrier": {
+              "CNOT": "0",
+              "TOF_OPPOSITE_CONTROLS": "1/2",
+              "TOF_PERPENDICULAR_CONTROLS": "1/2"
+            },
+            "event_marginal_identity": "sum_{c,x,n,y} P_i(e,c,x,n,y)=p_i(e)",
+            "first_disagreement": {
+              "class": "CNOT",
+              "configuration": null,
+              "expected": ">0",
+              "observed": "0",
+              "quantity": "r(c)",
+              "witness": "CNOT(+x->C)"
+            },
+            "verdict": "EXCLUDED"
+          },
+          "missing_configuration": {
+            "conditional_scalar_checks": 0,
+            "event_marginal_factor": "1",
+            "event_marginal_matches": true,
+            "first_disagreement": {
+              "configuration": [
+                0,
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "expected": ">0",
+              "observed": "0",
+              "quantity": "q(x,n)",
+              "witness": "CNOT(+x->C)"
+            },
+            "nonnegative": true,
+            "normalizable": true,
+            "representative_witness": "CNOT(+x->C)",
+            "verdict": "EXCLUDED"
+          },
+          "negative_weight": {
+            "conditional_scalar_checks": 0,
+            "event_marginal_factor": "1",
+            "event_marginal_matches": true,
+            "first_disagreement": {
+              "configuration": null,
+              "expected": ">=0",
+              "observed": "-1",
+              "quantity": "min_e w_i(e)",
+              "witness": "CNOT(+x->C)"
+            },
+            "nonnegative": false,
+            "normalizable": true,
+            "representative_witness": "CNOT(+x->C)",
+            "verdict": "EXCLUDED"
+          },
+          "valid_joint": {
+            "class_carrier": {
+              "CNOT": "1/3",
+              "TOF_OPPOSITE_CONTROLS": "1/3",
+              "TOF_PERPENDICULAR_CONTROLS": "1/3"
+            },
+            "event_marginal_identity": "sum_{c,x,n,y} P_i(e,c,x,n,y)=p_i(e)",
+            "first_disagreement": null,
+            "verdict": "SURVIVES"
+          },
+          "valid_per_class": {
+            "conditional_scalar_checks": 256,
+            "event_marginal_factor": "1",
+            "event_marginal_matches": true,
+            "first_disagreement": null,
+            "nonnegative": true,
+            "normalizable": true,
+            "representative_witness": "CNOT(+x->C)",
+            "verdict": "SURVIVES"
+          },
+          "wrong_class_kernel": {
+            "conditional_scalar_checks": 1,
+            "event_marginal_factor": "1",
+            "event_marginal_matches": true,
+            "first_disagreement": {
+              "configuration": [
+                0,
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                0
+              ],
+              "expected": "1",
+              "observed": "0",
+              "quantity": "P_i(y|x,n,CNOT)",
+              "witness": "CNOT(+x->C)"
+            },
+            "nonnegative": true,
+            "normalizable": true,
+            "representative_witness": "CNOT(+x->C)",
+            "verdict": "EXCLUDED"
+          },
+          "wrong_joint_kernel": {
+            "class_carrier": {
+              "CNOT": "1/3",
+              "TOF_OPPOSITE_CONTROLS": "1/3",
+              "TOF_PERPENDICULAR_CONTROLS": "1/3"
+            },
+            "event_marginal_identity": "sum_{c,x,n,y} P_i(e,c,x,n,y)=p_i(e)",
+            "first_disagreement": {
+              "class": "CNOT",
+              "configuration": [
+                0,
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                0
+              ],
+              "expected": "1",
+              "observed": "0",
+              "quantity": "P_i(y|x,n,CNOT)",
+              "witness": "CNOT(+x->C)"
+            },
+            "verdict": "EXCLUDED"
+          },
+          "zero_total": {
+            "conditional_scalar_checks": 0,
+            "event_marginal_factor": "1",
+            "event_marginal_matches": true,
+            "first_disagreement": {
+              "configuration": null,
+              "expected": ">0",
+              "observed": "0",
+              "quantity": "sum_e w_i(e)",
+              "witness": "CNOT(+x->C)"
+            },
+            "nonnegative": true,
+            "normalizable": false,
+            "representative_witness": "CNOT(+x->C)",
+            "verdict": "EXCLUDED"
+          }
+        }
+      },
+      "all_inputs_worktree_relative_and_present": true,
+      "blocked_modules_loaded": [],
+      "blocklist_cited_primary_modules": [
+        "scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py",
+        "scripts/frontier_cycle974_covariant_law_weight_compatibility_2026_08_10.py",
+        "scripts/frontier_cycle977_witness_family_completeness_2026_08_10.py"
+      ],
+      "blocklist_text_ast_only": true,
+      "determinism_replay": true,
+      "family_replay_digest": "3eaea8ea143ab4a20f5048e2b9a0784b0c9c1058f0db3afa7f96dc64307480e1",
+      "full_prefix_digest": "d71745ea3f687078fdaa7b9295eebd06479d4a01824f386e8c6f998825095d88",
+      "git_blobs": {
+        "docs/MINIMAL_AXIOMS_2026-06-29.md": "2f5fdd26898f62c17fcabc846761f7785c2eadb1",
+        "outputs/cycle978_cited_primary_provenance_2026_08_10.json": "e78ac83a8519a85a314c93db8616bfbd3a1e64ef",
+        "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": "c123b8d681c3d76fce08ef13d7673622deac64ad"
+      },
+      "literal_audit_input_paths": [
+        "outputs/cycle978_cited_primary_provenance_2026_08_10.json",
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py"
+      ],
+      "literal_source_read_count": 3,
+      "provenance_blocklist": [
+        "f655c945318231538ad7a5cc8956dc384115f8ea:docs/EVENT_SPACE_GROUNDWORK_CYCLE878_SUPPORT_NOTE_2026-07-28.md (text)",
+        "f655c945318231538ad7a5cc8956dc384115f8ea:scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py (AST)",
+        "679afcde32343a7b841e3810357d2a3ced9d3233:docs/COVARIANT_LAW_WEIGHT_COMPATIBILITY_CYCLE974_THEOREM_NOTE_2026-08-10.md (text)",
+        "679afcde32343a7b841e3810357d2a3ced9d3233:scripts/frontier_cycle974_covariant_law_weight_compatibility_2026_08_10.py (AST)",
+        "27ec7c243f613fc1ffda4aa93960c18936b176fd:docs/WITNESS_FAMILY_COMPLETENESS_CYCLE977_BOUNDED_THEOREM_NOTE_2026-08-10.md (text)",
+        "27ec7c243f613fc1ffda4aa93960c18936b176fd:scripts/frontier_cycle977_witness_family_completeness_2026_08_10.py (AST)"
+      ],
+      "runtime_budget_seconds": 1400,
+      "runtime_seconds": 52.15045587508939,
+      "sha256": {
+        "docs/MINIMAL_AXIOMS_2026-06-29.md": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
+        "outputs/cycle978_cited_primary_provenance_2026_08_10.json": "4c242e12b987147cbd5aef73b6d5034c8fb78d1a7a916fafef29eff7ae51255e",
+        "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4"
+      },
+      "sha_pins_match": true,
+      "short_replay_digest": "d71745ea3f687078fdaa7b9295eebd06479d4a01824f386e8c6f998825095d88",
+      "stdout_bytes": 3109,
+      "stdout_limit_bytes": 6000
+    }
+  },
+  "checks": {
+    "A_REBUILD": true,
+    "B_PER_CLASS_TEST": true,
+    "C_JOINT_TEST": true,
+    "D_ARTIFACT_VERDICT": true,
+    "E_CONTROLS": true
+  },
+  "claim": "five finite event weightings versus the full reconstructed three-class radius-one one-step star law",
+  "claim_type": "bounded_theorem",
+  "conditional_surface_status": "exact on the declared 155-word basis-state family and the five reconstructed finite event weightings",
+  "cycle": 978,
+  "hypothetical_axiom_status": null,
+  "pass": true,
+  "primary_source_sha256": "3104325f8dd6e96e6654200057a5f6f98ed81c481805929c21ed8d7e845c88d9",
+  "proposal_allowed": false,
+  "proposal_allowed_reason": "finite one-step basis-state horizon; no full continuous M_2(C) probability law",
+  "reachability_to_target": "closes",
+  "trace_class": "direct_blocker_closure"
+}

@@ -1255,3 +1255,23 @@ a base-displacement Ward identity and two-derivative Einstein/Regge response.
 Do not expand at `E_*`, omit the well, fit a cancellation, or project modes by
 hand. Physical law provenance, continuous joint phase, and Lorentzian
 permanent-Record evolution remain separate. Fixed percentages remain locked.
+
+## Block 41 Goal Update
+
+The first decisive infrared gravity test is now closed for the unchanged flat
+law. Complete Record contact and connected covariance cannot cancel the
+inherited local Gram well: both proper-cubic spatial spin-two sectors retain a
+strict `O(k^0)` stiffness uniformly over the Block-40 stationary family.
+Exact zero-momentum mixed-block cancellation means a regular connection Schur
+complement cannot rescue a massless Einstein/Regge tensor.
+
+The highest-value next goal is binary. Compute the physical connection
+quotient at `k=0` and small nonzero momentum. If it is singular, derive the
+coupled zero mode, nonzero metric/source residue, two-polarization census,
+absence of extra modes, and Lorentzian stability. If it is regular, stop
+extending this unchanged flat law and construct a relational or derivative
+geometry law whose displacement Ward identity removes the forbidden
+spin-two intercept while retaining the nondegenerate vacuum. The present
+Admissibility axiom does not require that law-selection property; a sufficient
+downstream clause is identified, but no axiom amendment is adopted and fixed
+percentages remain locked.

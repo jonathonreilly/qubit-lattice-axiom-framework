@@ -1379,3 +1379,31 @@ lines are in the landing primary cache.
   geometry phase, physical law selection, and Lorentzian evolution remain.
   Fresh N1--N8 lands; no broad gravity no-go, axiom-necessity claim, fixed
   percentage move, or audit verdict ships.
+
+## Block 41 Periodic Spin-Two Gap / Schur-Boundary Certificate
+
+- Claim type: `bounded_theorem`; a complete fixed-background homogeneous
+  Record-pressure Hessian bound and a conditional regular-connection
+  obstruction for the unchanged supplied flat law.
+- Exact local enumeration: all 100 projector-bond derivatives in both
+  proper-cubic spin-two representatives reduce to nine first- and five
+  second-derivative rational families with exact positive-domain envelopes.
+- Covariance closure: the finite-volume Dobrushin--Poincare inequality with
+  Block-39 row `c=0.598007968` bounds the complete connected score covariance,
+  without independence or mean-field replacement.
+- Uniform stiffness: the inherited `alpha=16` well leaves lower bounds
+  `4.714765991` in `E` and `1.093394743` in `T2` at every Block-40 stationary
+  proper-cubic Gram on every finite periodic `L>=3` carrier.
+- Mixed block: exact endpoint exchange, periodic EC incidence, and vanishing
+  compatibility/normal/torsion residuals make the uniform Gram/link Hessian
+  block zero; regular connection elimination therefore cannot remove the
+  `O(k^0)` spin-two intercept.
+- Runner/cache: source/input pinned, `PASS=19 FAIL=0` in `1.10 s`; independent
+  runner-free reconstruction is `PASS=6 FAIL=0`.
+- Citation registration: `5,487` nodes / `15,683` edges, note out-degree four.
+- Scope: this retires only the unchanged regular flat-phase route to a
+  massless Einstein/Regge spin-two symbol. Singular connection, relational or
+  derivative law repair, nonflat phase, continuous joint geometry, physical
+  selection, and Lorentzian evolution remain. Fresh N1--N8 lands; no broad
+  gravity no-go, axiom-necessity claim, fixed percentage move, or audit
+  verdict ships.

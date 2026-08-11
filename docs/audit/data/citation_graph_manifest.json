@@ -1,6 +1,6 @@
 {
- "edge_count": 15679,
- "node_count": 5486,
+ "edge_count": 15683,
+ "node_count": 5487,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -448,6 +448,10 @@
   },
   "admissibility_periodic_gram_well_nondegenerate_flat_vacuum_local_frame_hessian_boundary_bounded_theorem_note_2026-08-11": {
    "deps_hash": "d06436992414",
+   "out_degree": 4
+  },
+  "admissibility_periodic_gram_well_spin_two_mass_gap_connection_schur_boundary_bounded_theorem_note_2026-08-11": {
+   "deps_hash": "87ae91a7e61e",
    "out_degree": 4
   },
   "admissibility_periodic_record_ec_dobrushin_flat_connection_source_boundary_bounded_theorem_note_2026-08-11": {

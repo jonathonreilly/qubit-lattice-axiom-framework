@@ -311,3 +311,19 @@ projects out a mode by hand.
 Efficiency rule: expand only at the shifted stationary phase, never the
 off-shell center. Include the well and all same-law response terms; do not fit
 or project away an `O(k^0)` residual.
+
+## Post-Block-41 Priority Refresh
+
+| Rank | Target | Exact next witness | Why now |
+|---:|---|---|---|
+| 1 | physical connection regularity versus singular escape | construct the gauge-quotiented `K_AA(0)` and small-`k` symbol from the same EC/compatibility/normal/torsion/Record law; either certify a regular inverse or exhibit the complete zero eigenvector and its metric/source residue | the uniform mixed block is zero and both Gram spin-two gaps are positive, so this one calculation decides whether the unchanged flat law has any remaining massless route |
+| 2 | relational/derivative gravity-law repair | replace absolute shape stiffness by a transforming reference, volume-only plus derivative stabilization, or another local relational mechanism; derive the displacement Ward identity and retain a nondegenerate phase without fitting | this is mandatory if the connection quotient is regular and structurally stronger than scalar critical tuning |
+| 3 | Record-derived geometry-law provenance | derive or explicitly register the coframe/link carrier, normalization, measure, coefficients, source meaning, and Ward-selection property from Admissibility/Records | the current axiom allows geometry-bearing laws that are massive; selection, not local mathematical consistency, is the axiom-facing defect |
+| 4 | continuous joint geometry phase | prove tightness and increasing-region control after integrating coframes and links around the repaired or surviving stationary branch | fixed-background Dobrushin control does not integrate geometry |
+| 5 | Lorentzian permanent-Record evolution | construct the causal update, constraint propagation, physical mode stability, and Record preservation for the surviving geometry law | every present gravity result is Euclidean and spatial |
+
+Efficiency rule: decide `K_AA` before building a full Bloch census. A regular
+zero-momentum quotient ends the unchanged-law route immediately; a singular
+one earns the more expensive residue, polarization, and Lorentzian tests. Do
+not spend another block tightening the already strict T2 envelope unless the
+regularity decision depends on it.

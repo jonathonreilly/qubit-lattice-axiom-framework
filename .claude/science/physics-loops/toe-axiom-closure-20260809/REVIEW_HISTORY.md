@@ -1956,6 +1956,34 @@ instance or Fourier census.
   `9431cd5d47`; independent audit remains pending. No canonical axiom, fixed
   percentage, or audit verdict is changed.
 
+## Block 41 Construction And Adversarial Record
+
+- Enumerated all 100 ordered ten-ray bond overlaps and their first/second
+  derivatives in normalized `E` and `T2` spatial traceless directions; each
+  sector reduces exactly to nine first and five second rational families.
+- Combined the exact derivative envelopes with the Block-39 Dobrushin row and
+  the finite-volume Dobrushin--Poincare inequality. Complete Record contact
+  plus covariance remains below the inherited well curvature, leaving uniform
+  gaps `4.714765991/1.093394743` on every finite periodic `L>=3` carrier and
+  every Block-40 stationary Gram.
+- Proved the zero-momentum Gram/link mixed block vanishes for three independent
+  reasons: Record endpoint exchange, periodic EC incidence, and identically
+  zero compatibility/normal/torsion residuals along uniform Gram variations.
+- Reconstructed the exact 1,000-assignment six-regular quotient, its shifted
+  stationary Gram, positive `E/T2` Hessians `7.885937876/7.860817760`,
+  symmetric marginals, antisymmetric link scores, and mixed maximum
+  `9.216e-15` as controls only.
+- Executed nine N1 routes, a four-wall independence audit, hidden-wall scan,
+  residual matching, all five N5 resolutions, primitive scan, singular-
+  connection and relational-law steelmen, and the cross-cycle well tradeoff.
+  The conclusion is restricted to the unchanged regular flat law; no broad
+  gravity no-go ships.
+- Fresh cache is `PASS=19 FAIL=0` in `1.10 s`, stdout 4,268 characters.
+  Independent runner-free reconstruction is `PASS=6 FAIL=0`. Citation
+  registration is `5,487/15,683`, out-degree four. Direct gates, science
+  commit, pipeline, push, and PR remain pending. No canonical axiom, fixed
+  percentage, audit verdict, or `review-loop` is changed.
+
 ## Block 40 Construction And Adversarial Record
 
 - Restored the common `alpha=16` target-Gram well that is part of the

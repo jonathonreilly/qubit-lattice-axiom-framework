@@ -1650,3 +1650,23 @@ whether a base-displacement Ward identity and Einstein/Regge two-derivative
 response emerge. Physical carrier/law selection, continuous joint phase, and
 Lorentzian permanent-Record evolution remain explicit. No `review-loop` is
 used.
+
+## Block 41 Handoff
+
+Work is on branch
+`physics-loop/toe-axiom-closure-block41-nonzero-hessian-20260811`, stacked
+exactly on Block-40 delivery head `82d943665a`. The theorem note, primary
+runner, and fresh source/input-pinned cache are present. Primary cache is
+`PASS=19 FAIL=0` in `1.10 s`; an independent runner-free reconstruction is
+`PASS=6 FAIL=0`. Citation registration is `5,487/15,683`, out-degree four.
+Direct conformance, commit, pipeline, push, and delivery remain pending.
+
+The significant gain is a sharp gravity-route localization. Exact local
+derivatives and volume-uniform covariance control leave positive zero-momentum
+spin-two Gram gaps `4.714765991/1.093394743`. The uniform Gram/link mixed block
+is exactly zero, so no regular connection Schur complement can turn this
+unchanged flat law into a massless `k^2` Einstein/Regge tensor. This is not a
+gravity no-go: a singular physical connection sector, a relational/derivative
+law, and nonflat or Lorentzian phases remain live. The next calculation must
+decide connection regularity before any broader expansion. No canonical axiom
+or percentage changes, and no `review-loop` is used.

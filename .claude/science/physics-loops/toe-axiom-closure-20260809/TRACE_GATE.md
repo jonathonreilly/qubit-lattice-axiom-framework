@@ -577,6 +577,23 @@ stationary Ward connection, and Lorentzian nonlinear update. Candidate wording
 is unadopted; fixed TOE percentages and canonical axioms remain unchanged. No
 `review-loop` is used.
 
+Block 41 evaluates the complete homogeneous fixed-background Record Hessian in
+both proper-cubic spatial spin-two irreducible sectors at every Block-40
+stationary Gram. Exact all-pair derivative envelopes and finite-volume
+Dobrushin--Poincare covariance control leave strict positive intercepts. The
+uniform Gram/link mixed block vanishes, so any regular physical connection
+Schur inverse preserves the intercept and the unchanged flat law cannot yield
+a massless Einstein/Regge `k^2` tensor.
+
+Reachability remains `upstream_support`, not direct TOE closure. The result is
+conditional on the supplied law and regular connection elimination; it does
+not prove connection regularity, exclude a singular mixed phase, select a
+replacement law, integrate continuous geometry, or construct Lorentzian
+evolution. It identifies a possible selected-law interface property—derived
+displacement Ward structure and no forbidden spin-two intercept—but does not
+show that a fifth ontology axiom is necessary or adopt any wording. Fixed TOE
+percentages and canonical axioms remain unchanged. No `review-loop` is used.
+
 Block 39 promotes the supplied ten-label law from finite overlap to a unique
 full-`Z^3` Record phase conditional on any fixed nondegenerate geometry. It
 also closes the homogeneous flat periodic connection equation by independently

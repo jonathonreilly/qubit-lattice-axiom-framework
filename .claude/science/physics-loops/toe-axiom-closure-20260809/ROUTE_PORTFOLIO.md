@@ -823,3 +823,21 @@ the extensional law lacks the required displacement/Einstein structure.
 Vacuum existence is no longer the gravity wall. The immediate discriminator is
 whether the supplied local Gram stiffness survives the complete quotient as an
 `O(k^0)` metric term or is canceled by a genuine base-displacement identity.
+
+## Block 41 Spin-Two Gap / Repair Route Comparison
+
+| Route | Exact object | Outcome | Decision |
+|---|---|---|---|
+| unchanged law, regular connection elimination | complete zero-momentum Record/well Gram Hessian plus physical connection Schur complement | strict `E/T2` intercepts `4.714765991/1.093394743`; uniform mixed block zero | retire as a massless Einstein/Regge route |
+| singular connection quotient | zero eigenvalue of gauge-quotiented `K_AA(0)` with possible `O(k)` mixing | not excluded; regular Schur argument does not apply | highest-priority same-law counterroute; require metric/source residue and full mode census |
+| remove the full Gram well | unchanged radial sites and projector bonds without the `+8` curvature | eliminates dominant positive term but reopens Block-40 coercive-vacuum existence and leaves absolute Record response | do not adopt alone |
+| volume-only stabilization | determinant/volume local factor plus shape derivative terms | avoids direct traceless well mass but does not yet cancel Record shape response or derive Ward symmetry | strongest minimal repair candidate after relational target |
+| transforming relational target | joint geometry/reference field with common displacement action | structurally able to remove absolute shape stiffness | pursue if connection is regular; track new measure and extra modes |
+| derivative-only stabilization | neighbor differences or curvature rather than onsite shape target | supplies `O(k^2)` stiffness but not homogeneous nondegenerate selection by itself | combine with volume/relational phase selection |
+| exact critical cancellation | retune parameters to cancel `E` and `T2` contacts/covariance | excluded at current `alpha=16`; no two-sector identity derived | reject scalar fitting; retain only if symmetry derives it |
+| nonflat / Lorentzian phase | background or dynamics outside the stationary Euclidean branch | untouched by the theorem | retain as independent gravity routes |
+
+The connection-regularity test now dominates campaign efficiency. If regular,
+the current Admissibility interface needs an additional selected-law property:
+no forbidden spatial spin-two intercept after quotient/elimination and a
+derived displacement Ward/source identity. This is not yet a canonical axiom.

@@ -593,6 +593,19 @@ Science commit is `be1781ad26`; campaign conformance is `42d3056d98`. PR
 head `f2f21f9b0f`. Independent audit is pending. No canonical edit,
 percentage move, audit verdict, or `review-loop` is used.
 
+Block 41 is local on branch
+`physics-loop/toe-axiom-closure-block41-nonzero-hessian-20260811`, stacked
+exactly on Block-40 delivery head `82d943665a`. Its distinct review object is
+the complete homogeneous Record-pressure Hessian in the two proper-cubic
+spatial spin-two irreps, exact all-pair derivative envelopes, finite-volume
+Dobrushin--Poincare covariance control, zero uniform Gram/link mixed block,
+and the regular-connection Schur boundary. Primary cache is
+`PASS=19 FAIL=0` in `1.10 s` with 4,268 stdout characters; independent
+runner-free reconstruction is `PASS=6 FAIL=0`. Citation registration is
+`5,487/15,683`, out-degree four. Direct conformance, science commit, pipeline,
+push, and stacked PR remain pending. Independent audit remains required. No
+canonical edit, percentage move, audit verdict, or `review-loop` is used.
+
 Block 40 is local on branch
 `physics-loop/toe-axiom-closure-block40-vacuum-ward-20260811`, stacked exactly
 on Block-39 delivery head `67bbd26652`. Its distinct review object is the

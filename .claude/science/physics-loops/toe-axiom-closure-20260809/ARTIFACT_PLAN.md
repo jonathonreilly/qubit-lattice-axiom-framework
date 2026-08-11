@@ -980,3 +980,32 @@ complete conditional nonlinear compact solution:
   `CLEAN`, stacked exactly on Block-39 delivery head `67bbd26652`;
   independent audit remains required. No canonical edit, fixed percentage
   move, or audit verdict occurs.
+
+## Block 41 — Periodic Spin-Two Gap / Connection-Schur Boundary
+
+- theorem note:
+  `docs/ADMISSIBILITY_PERIODIC_GRAM_WELL_SPIN_TWO_MASS_GAP_CONNECTION_SCHUR_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-11.md`
+- runner/cache:
+  `scripts/admissibility_periodic_gram_well_spin_two_mass_gap_schur_boundary_2026_08_11.py`
+  and its source/input-pinned cache
+- exact derivative surface: all 100 ordered ten-ray projector-bond pairs in
+  each spatial spin-two representative collapse to nine first- and five
+  second-derivative rational families with exact positive-domain suprema
+- volume-uniform theorem: the Block-39 Dobrushin row and the finite-volume
+  Dobrushin--Poincare inequality bound the complete Record contact plus
+  connected covariance; the inherited well leaves directional Gram gaps
+  `4.714765991` in `E` and `1.093394743` in `T2` on every finite periodic
+  `L>=3` carrier and every Block-40 stationary Gram
+- mixed-block boundary: Record endpoint exchange, periodic EC incidence, and
+  identically zero geometry-square residuals make the uniform Gram/link mixed
+  Hessian vanish; any regular physical connection Schur inverse preserves the
+  positive spin-two intercept
+- controls and scope: the exact 1,000-assignment six-regular quotient gives
+  `E/T2=7.885937876/7.860817760`; a singular connection, modified relational
+  law, nonflat phase, continuous joint phase, and Lorentzian evolution remain
+  live
+- current evidence: fresh cache `PASS=19 FAIL=0` in `1.10 s`, stdout 4,268
+  characters; independent runner-free reconstruction `PASS=6 FAIL=0`.
+  Citation registration is `5,487/15,683`, out-degree four. Direct gates,
+  science commit, pipeline, push, and stacked PR remain pending. No canonical
+  edit, fixed percentage move, audit verdict, or `review-loop` occurs.

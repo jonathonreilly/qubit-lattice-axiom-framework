@@ -350,3 +350,14 @@ selection, not periodic existence, Bianchi, or ontology.
 The homogeneous coframe-stationarity wall is retired for the supplied law.
 The active wall is the nonzero-momentum displacement/Einstein tensor and
 physical provenance of the geometry factor, not vacuum existence.
+
+## Block 41 Regular-Flat Massless Route Boundary
+
+| Scoped claim | Exact/bounded evidence | N1--N8 disposition | Forbidden promotion | Live routes |
+|---|---|---|---|---|
+| For the unchanged supplied flat law, every Block-40 proper-cubic stationary Gram has positive zero-momentum stiffness in both spatial spin-two irreps, and a regular connection Schur inverse cannot remove that intercept | all 100 bond derivatives in each sector; finite-volume Dobrushin--Poincare covariance; gaps `E>=4.714765991`, `T2>=1.093394743`; exact zero uniform mixed block; `PASS=19 FAIL=0` | bounded conclusion passes N1--N8 with nine distinct route families and all five N5 resolutions; the strongest singular-connection and relational-law counterroutes remain explicit | do not infer a cross-law gravity no-go, a physical graviton mass, regularity of the connection quotient, nonexistence of nonflat/Lorentzian phases, fifth-axiom necessity, or axiom adoption | singular connection with metric residue; volume-only or relational target; derivative stabilization; exact critical identity; nonflat phase; continuous joint phase; Lorentzian update |
+
+The unchanged regular flat route is retired. Gravity itself is not. The
+fastest remaining same-law falsifier is the physical connection spectrum at
+`k=0` and small momentum; if regular, the active route becomes law repair and
+a derived displacement-Ward selection property.

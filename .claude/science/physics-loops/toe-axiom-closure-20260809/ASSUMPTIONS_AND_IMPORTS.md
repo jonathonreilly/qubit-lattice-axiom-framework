@@ -535,6 +535,26 @@ locality/covariance/gluing theorem, projective limit, pure-geometry action,
 stationary nonuniform solution, Lorentzian dynamics, external science,
 canonical edit, percentage move, audit verdict, or `review-loop` is imported.
 
+## Block 41 Import Ledger
+
+Block 41 imports Block 39's proved six-neighbor Dobrushin row and Block 40's
+stationary proper-cubic Gram confinement. It uses exact finite-state
+differentiation, rational-function extrema, cubic representation symmetry,
+conditional variance bounds, finite-dimensional Hessians, endpoint exchange,
+periodic incidence, and ordinary Schur complements. Wu's finite-volume
+Dobrushin--Poincare theorem is named external mathematics; its
+`1-r_sp(C)` factor is used only after the Block-39 interdependence matrix is
+constructed and bounded.
+
+The connection quotient is not assumed regular: regularity is the explicit
+condition of the bounded Schur conclusion, while a singular physical
+connection sector remains the strongest counterroute. The six-regular
+three-site quotient is an algebra control, not a periodic-torus replacement.
+No observed graviton bound, physical mass conversion, Einstein tensor,
+continuous joint geometry phase, law provenance, Lorentzian update, new
+primitive, canonical axiom edit, percentage move, audit verdict, or
+`review-loop` is imported.
+
 ## Block 40 Import Ledger
 
 Block 40 uses the fixed Block-38/39 ten-label site/bond/EC factors and the

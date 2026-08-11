@@ -1294,3 +1294,33 @@ campaign conformance is `9e94520d17`. PR #6101 is open, mergeable, and
 `CLEAN`, stacked exactly on Block-28 delivery head `f44a67a917`.
 Independent audit remains required. No canonical edit, percentage move, audit
 verdict, or `review-loop` occurs.
+
+## Block 30 Record Null-Charge / Projective-History Handoff
+
+The compact response label is no longer arbitrary once a carrier and source
+are supplied. Compute `P_N s`: zero charge is flat-compatible; charge only in
+the positive homothety direction is solved by a rank-one scale lift; the
+orthogonal rank-ten remainder demands a constraint reaction, curved/open
+carrier, boundary flux, or source cancellation.
+
+This diagnoses the gravity failure sharply. Neutral closed histories remain
+positive controls and all 100 nonzero `L=5` modes solve. Pure-scale sources
+also solve. Every individual actual-edge source retains norm at least
+`0.770552` after the scale lift, and together they span all ten residual
+channels. The full 26-dimensional KKT system closes them algebraically, but
+the physical reaction law is still unselected.
+
+The history-side witness is one exact positive rational kernel with 3,279
+executed cylinders and 1,092 exact prefix marginals. Boundary charges zero
+and one have future-law distance `23/68`, so the boundary datum must remain a
+permanent Record. The cumulative charge compiles a covariant homothety history
+without an independent random geometry label.
+
+Primary cache is `PASS=17 FAIL=0` in `7.3 s`; independent reconstruction is
+`PASS=5 FAIL=0`; all seventeen isolated forced-false runs trip exactly one
+named check; graph registration is `5,476/15,649`, with out-degree eight and
+eighteen helpers. Next derive the physical Record-to-full-source compiler and
+selected constraint/curved response, then spatial gluing, the complete Ward
+connection, and Lorentzian stability. Direct conformance, stacked pipeline,
+changed evidence, commits, delivery, and independent audit remain pending. No
+canonical edit, percentage move, audit verdict, or `review-loop` occurs.

@@ -850,3 +850,38 @@ independent_audit_required: true
 - Delivery: PR #6101 is open, mergeable, and `CLEAN`, stacked exactly on
   Block-28 delivery head `f44a67a917`. Independent audit remains required.
   No canonical edit, percentage move, audit verdict, or `review-loop`.
+
+## Block 30 Record Null-Charge / Projective-History Certificate
+
+- Claim type: `bounded_theorem`.
+- Prefix family: one fixed rational kernel is strictly positive and exactly
+  normalized; 3,279 history cylinders and 1,092 deletion marginals pass
+  through six steps.
+- Boundary typing: the same kernel at charges zero and one gives future laws
+  at exact total variation `23/68`; the complete boundary charge must remain
+  in the permanent Record fibre.
+- Geometry compiler: cumulative scalar charge maps to the positive homothety
+  covariantly under all 24 axis permutations and restricts prefixwise.
+- Compact classifier: the Hessian rank/nullity is `4/11`; homothety removes
+  one null channel and leaves a rank-ten residual projector.
+- Positive branches: zero-null-charge sources solve flat; every supplied
+  pure homothety charge solves after a positive rank-one scale lift; the
+  neutral history solves all 100 nonzero `L=5` modes.
+- General-source boundary: every individual actual-edge ray retains residual
+  norm at least `0.770552`, and the fifteen rays span all ten remaining
+  channels. Scale response alone is insufficient for generic compact matter.
+- Reaction identity: the complete `26 x 26` KKT system is nonsingular and
+  solves every edge ray, homothety, and dense control while exposing rather
+  than deleting the eleven constraint reactions.
+- Governance: the kernel, source interpretation, stiffness, physical
+  reaction/curved law, spatial gluing, full Ward identity, and Lorentzian
+  dynamics are unselected. No fifth axiom is proved necessary.
+- Runner/cache: source/input pinned, `PASS=17 FAIL=0` in `7.3 s`.
+- Independent reconstruction: `PASS=5 FAIL=0`.
+- Mutation sensitivity: seventeen isolated fresh-process forced failures each
+  exit nonzero at exactly one intended named check (`PASS=17 FAIL=0`).
+- Citation graph: `5,476` nodes / `15,649` edges; the new node has out-degree
+  eight and eighteen resolved helper runners.
+- Direct conformance, exact stack, changed-evidence readiness, commits,
+  delivery, and independent audit are pending. No canonical edit, fixed
+  percentage move, audit verdict, or `review-loop`.

@@ -561,3 +561,17 @@ campaign conformance is `9e94520d17`. PR #6101 is open, mergeable, and
 `CLEAN`, stacked exactly on Block-28 delivery head `f44a67a917`.
 Independent audit is pending. No canonical edit, percentage move, audit
 verdict, or `review-loop` is used.
+
+Block 30 is local on branch
+`physics-loop/toe-axiom-closure-block30-record-phase-selector-20260810`,
+stacked on exact Block-29 delivery head `f2f21f9b0f`. Its distinct review
+object is the exact causal-prefix Record family, permanent-boundary separator,
+compact null-charge response classifier, pure-scale completion, complete
+reaction compiler, actual-edge residual census, and neutral-history control.
+Primary source/input-pinned cache is `PASS=17 FAIL=0` in `7.3 s`;
+independent reconstruction is `PASS=5 FAIL=0`; all seventeen isolated forced-
+false runs fail exactly one named check; graph registration is
+`5,476/15,649`, with out-degree eight and eighteen helpers. Direct
+conformance, exact-stack reconciliation, changed evidence, commits, PR, and
+independent audit are pending. No canonical edit, percentage move, audit
+verdict, or `review-loop` is used.

@@ -227,3 +227,15 @@ the retained neutral closed history solves on the unchanged flat carrier.
 The negative only blocks promotion of two homogeneous one-cell fits. The
 priority correction is to select the physical ensemble and phase before
 asking which, if any, contact coefficients must be fixed.
+
+## Block 30 Scale-Response / Generic-Source Boundary
+
+| Scoped claim | Exact/bounded evidence | N1--N8 disposition | Forbidden promotion | Live routes |
+|---|---|---|---|---|
+| a positive homothety lift solves every pure-scale compact source but none of the fifteen individual actual-edge source rays | compact rank/nullity `4/11`; rank-one scale lift; every edge residual above `0.770552`; residual span rank ten; nonsingular complete KKT reaction system; neutral-history flat escape | pass only for the supplied flat fifteen-edge carrier, its canonical projector, one homothety, identity edge rays, and the named neutral history | do not infer that generic matter, curved/open gravity, boundary flux, selected constraints, nonlinear geometry, Lorentzian dynamics, or current axioms fail | physical source restrictions/cancellations; law-derived constraint reactions; curved background; open boundary; inter-cell/full-Ward completion; alternate carrier; causal dynamics |
+
+The strongest steelman succeeds twice: zero-charge histories solve on the
+unchanged carrier, and the complete KKT reactions solve every compact source.
+The negative is only that a one-dimensional scale phase cannot answer ten
+independent residual charges. The next work must select or derive the physical
+source/reaction law, not promote this compact classifier to a gravity no-go.

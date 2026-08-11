@@ -631,3 +631,19 @@ Record-to-geometry map and joint law are actually derived.
 Coefficient fitting has moved below phase selection. If the selected law is
 massless, derive inter-cell and full differentiated-Ward coefficients; if it
 is curved or massive, the homogeneous cancellation target is not required.
+
+## Block 30 Record Null-Charge / Response Route Comparison
+
+| Route | Exact object | Outcome | Decision |
+|---|---|---|---|
+| zero-null-charge flat response | `P_N s=0` and `h=-Q0^+s` | direct compact solve; neutral history realizes all 100 nonzero `L=5` modes | retain as the strongest unchanged-carrier gravity branch |
+| positive homothety lift | `Q_kappa=Q0+kappa P_z`, `kappa>0` | raises rank four to five and solves every `s=qz` | retain as pure-scale existence; do not select `kappa` |
+| generic actual-edge source | fifteen identity rays on the edge carrier | every ray leaves residual norm at least `0.770552`; residual span has rank ten | reject scale-only gravity for generic compact sources |
+| complete compact reaction | eleven-null-basis KKT system | nonsingular rank 26 and solves every tested source | retain as an exact compiler; derive the physical constraint/reaction law |
+| curved/open or boundary-flux response | change the carrier/null charges or export them | not excluded by the compact classifier | highest-value alternative if reactions are not selected |
+| rational causal-prefix Record family | one fixed positive charge kernel and permanent boundary Record | exact arbitrary-prefix consistency; geometry prefix follows deterministically | retain as a compatibility witness, not the physical law |
+| spatial projective joint family | compatible laws on overlapping finite lattice regions | not constructed | next gluing obligation after source/reaction selection |
+| complete Ward and Lorentzian dynamics | same selected law on a nonuniform causal geometry | not constructed | physical endpoint |
+
+The free phase tag is replaced by a canonical response routing computation,
+but the physical source and reaction laws remain the load-bearing choice.

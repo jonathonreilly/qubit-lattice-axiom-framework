@@ -635,3 +635,26 @@ complete conditional nonlinear compact solution:
   stacked claims; science commit `a5df13590f`, campaign conformance
   `9e94520d17`; PR #6101 is open, mergeable, and `CLEAN`, stacked on exact
   Block-28 delivery head `f44a67a917`; independent audit remains required
+
+## Block 30 — Record Null-Charge Projective History / Response Selector
+
+- theorem note:
+  `docs/ADMISSIBILITY_RECORD_NULL_CHARGE_PROJECTIVE_HISTORY_PHASE_SELECTOR_SCALE_RESPONSE_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md`
+- runner/cache:
+  `scripts/admissibility_record_null_charge_projective_history_phase_selector_scale_response_boundary_2026_08_10.py` and its source/input-pinned cache
+- packet scope: one exact positive causal-prefix Record family, permanent-
+  boundary future separator, Record-to-homothety prefix compiler, canonical
+  eleven-charge compact response classifier, exact pure-scale completion,
+  complete reaction KKT identity, fifteen-edge residual census, neutral
+  closed-history control, RN cocycle, N1--N8, and narrowed downstream-law
+  versus axiom interface
+- exclusions: a selected physical kernel or boundary value, a full-M2
+  Record-to-source compiler, spatial finite-region projective gluing,
+  selected stiffness/reaction/curved law, complete stationary Ward connection,
+  nonlinear Lorentzian dynamics, canonical edits, percentage movement, audit
+  verdicts, and `review-loop`
+- current evidence: source/input-pinned cache `PASS=17 FAIL=0` in `7.3 s`;
+  independent reconstruction `PASS=5 FAIL=0`; seventeen isolated fresh-
+  process forced failures each trip exactly one named check; graph
+  `5,476/15,649`, out-degree eight, with eighteen resolved helpers; stacked
+  pipeline, changed-evidence, commits, delivery, and independent audit pending

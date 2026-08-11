@@ -510,3 +510,20 @@ differentiated-Ward tensor, and autonomous causal update. Inter-cell contact
 selection is conditional on a massless phase. Candidate wording is
 unadopted; fixed TOE percentages and canonical axioms remain unchanged. No
 `review-loop` is used.
+
+Block 30 constructs one positive rational causal-prefix Record family and a
+canonical compact response classifier. Permanent boundary Records separate
+future laws; cumulative charge compiles an axis-covariant homothety history.
+Zero null charge solves flat, pure homothety charge solves after a positive
+rank-one lift, and the orthogonal ten-channel charge identifies the exact
+remaining compact reaction/curvature obligation.
+
+Reachability remains `upstream_support`, not direct TOE closure. Every
+individual actual-edge source excites the ten-channel residual sector, so a
+scale phase alone cannot close generic compact matter. A complete KKT reaction
+compiler exists, and the neutral history remains an unchanged-carrier positive
+control, but neither selects physical dynamics. The next law must derive the
+full source compiler and reaction/curved response, spatial gluing, complete
+stationary Ward connection, and Lorentzian nonlinear update. Candidate wording
+is unadopted; fixed TOE percentages and canonical axioms remain unchanged. No
+`review-loop` is used.

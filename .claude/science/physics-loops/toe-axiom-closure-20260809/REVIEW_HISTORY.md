@@ -1624,3 +1624,34 @@ instance or Fourier census.
   delivery head `f44a67a917`. Independent audit remains required. No
   canonical axiom, fixed percentage, audit verdict, or `review-loop` is
   changed.
+
+## Block 30 Construction Record
+
+- Constructed one strictly positive rational charge kernel and exactly checked
+  3,279 finite history cylinders plus 1,092 causal-prefix marginals.
+- Proved an exact future-law separator `TV=23/68` between boundary charges zero
+  and one, requiring the boundary datum to remain in the complete Record
+  fibre.
+- Compiled cumulative charge to an axis-covariant prefix-compatible homothety
+  geometry under all 24 axis permutations.
+- Reconstructed compact rank/nullity `4/11` and split the null projector into
+  one positive homothety channel plus ten residual channels.
+- Solved every pure-scale source with a positive rank-one lift at three
+  stiffness controls; showed all fifteen actual-edge rays remain unsolved and
+  span all ten residual channels.
+- Built the nonsingular `26 x 26` KKT reaction system and solved all edge rays,
+  homothety, and an independent dense source without altering the source.
+- Rechecked the neutral history: 100 nonzero and 80 dynamic `L=5` sources all
+  lie in the unchanged flat Regge range.
+- Verified exact null-relative RN tilts and sequential cocycles on every
+  charge from `-6` through `6`.
+- Applied N1--N8 and preserved source restriction, complete reaction, curved/
+  open carrier, spatial gluing, full Ward, nonlinear, and Lorentzian routes.
+- Primary source/input-pinned cache is `PASS=17 FAIL=0` in `7.3 s`.
+- Independent reconstruction returns `PASS=5 FAIL=0`; seventeen isolated
+  fresh-process forced failures each fail exactly one named check.
+- Citation registration is `5,476` nodes / `15,649` edges; the new node has
+  out-degree eight and eighteen resolved helper runners.
+- Direct gates, exact stack, changed evidence, commits, delivery, and
+  independent audit remain pending. No canonical axiom, fixed percentage,
+  audit verdict, or `review-loop` is changed.

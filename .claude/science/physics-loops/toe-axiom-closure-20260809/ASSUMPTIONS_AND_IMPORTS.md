@@ -582,3 +582,20 @@ explicit conditional probes. They do not supply a physical phase, omit the
 full connection/tadpole and joint-sector terms, and do not exhaust inter-cell
 actions. No external continuum theorem, observed constant, canonical edit,
 percentage move, audit verdict, or `review-loop` is imported.
+
+## Block 30 Assumptions And Imports
+
+Block 30 imports the Block-29 phase-before-contact ordering, the retained
+compact zero-momentum Regge Hessian, its positive axis-invariant homothety,
+the compact reaction-rank framework, the neutral closed-history source, and
+the repository-local Record-fibre and causal-prefix consistency boundaries.
+The rational transition kernel, all finite history probabilities, null
+projectors, scale lifts, edge-source residuals, KKT solves, RN ratios, and
+complete `L=5` neutral inventory are reconstructed in the new runner.
+
+The scalar charge meaning, kernel, permanent boundary value, physical source
+compiler, scale stiffness, reaction law, and carrier remain supplied bounded
+data. Causal-prefix consistency is not spatial finite-region projective
+gluing, and the Euclidean Markov index is not a derived Lorentzian time. No
+external science, observed constant, canonical edit, percentage move, audit
+verdict, or `review-loop` is imported.

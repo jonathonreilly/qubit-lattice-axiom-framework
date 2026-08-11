@@ -1,0 +1,56 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_record_null_charge_projective_history_phase_selector_scale_response_boundary_2026_08_10.py
+runner_sha256: f2f4eeeb48cf270d59b7cd503900366b6d740c319a89fe41cfc2e0bc9a610ee4
+input_fingerprint_sha256: a7035e8f12ae4db08e589236f6d211f123e147e963c59dd077b6dfb24365089d
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 7.33
+status: ok
+----- stdout -----
+external_scientific_inputs: none; the causal kernel, compact projector, source inventories, and history compiler are repository-local
+analytic_boundary: finite prefix consistency and RN ratios are exact rational algebra; Regge projector and response tests are double precision
+physical_boundary: the kernel, boundary Record, source compiler, scale coefficient, spatial gluing, nonlinear geometry, and Lorentzian interpretation remain unselected
+[PASS] axiom-and-parent-boundary: current axioms supply Records and an actual-state reference but no causal kernel, boundary law, geometry compiler, or phase dynamics
+[PASS] note-contract: the note distinguishes a Record-derived response classifier from physical phase selection and carries N1--N8
+[PASS] positive-normalized-causal-kernel: one fixed rational charge kernel is strictly positive and normalized on every tested Record state
+       minimum probability=2/17; normalization error=0
+[PASS] prefix-projective-history-family: normalization of the causal kernel makes all finite Record-history laws exactly consistent under deletion of the newest slot
+       histories=3279; marginal cylinders=1092
+[PASS] permanent-boundary-record-selector: two boundary charges use the same update law but give different futures, so the boundary must remain in the complete Record fibre
+       total-variation separator=23/68
+[PASS] compact-null-charge-decomposition: the compact Hessian has eleven null charges which split canonically into one homothety and ten residual shape/constraint channels
+       rank/nullity=4/11; residual rank=10; projector error=3.408e-15
+[PASS] axis-covariant-record-geometry-compiler: the compact charge projectors and homothety geometry compiler commute with all 24 simultaneous axis permutations
+       Q=2.474e-15; Pnull=3.230e-15; z=0.000e+00
+[PASS] pure-scale-branch-response: adding one positive homothety projector raises compact rank by one and solves every pure-scale source with the analytic response -q z/kappa
+       rank={5}; equation=7.582e-14; formula=9.046e-14
+[PASS] projective-record-to-geometry-prefix-map: the cumulative permanent charge gives a geometry history whose restriction is unchanged by every later extension
+       compiled prefixes=1089; null-history weight=1/64
+[PASS] rank-one-scale-lift-boundary: none of the fifteen individual actual-edge source rays is completed by the scale branch; their residual compact charges span all ten remaining channels
+       residual norms=[0.770552,0.935414]; rank=10
+[PASS] complete-null-reaction-compiler: the canonical eleven-charge KKT compiler solves every tested compact source and exposes reactions rather than projecting sources away
+       KKT rank=26; equation=4.852e-14; constraint=1.824e-16
+[PASS] local-rn-intervention-cocycle: positive transition tilts cancel their normalizers in null-relative odds and compose exactly along the same causal family
+       RN failures=0; cocycle failures=0
+[PASS] neutral-history-flat-branch: the complete L=5 neutral closed history has zero compact charge and every nonzero source lies in the flat Regge range
+       nonzero/dynamic=100/80; null charge=2.214e-14; solve=3.093e-13
+[PASS] record-null-charge-response-selector: the source computed from a Record selects flat-compatible, pure-scale, or shape/constraint-required response without a fitted phase tag
+       neutral=flat-compatible; dilation=pure-scale; edge census={'shape-or-constraint-required': 15}
+[PASS] scale-and-boundary-nonselection: projective consistency, axis covariance, positivity, and compact solvability do not select the boundary Record or the scale stiffness
+       all three stiffnesses pass while responses and boundary futures differ
+[PASS] minimal-law-or-axiom-delta: the branch classifier is downstream algebra, while autonomy still requires one covariant causal kernel, permanent boundary typing, source compiler, and geometry/reaction law
+[PASS] bounded-theorem-and-live-routes: the construction preserves spatial projective gluing, nonlinear curved backgrounds, full Ward connection, source selection, and Lorentzian stability as live obligations
+N5_CERTIFICATE: selector=the compact null projector computes an eleven-component source charge and splits it into flat, pure-scale, and ten-channel residual response classes
+N5_CERTIFICATE: projective_family=one positive normalized causal kernel plus a permanent boundary Record yields exact prefix marginals and a compatible geometry history
+N5_CERTIFICATE: gravity_positive=neutral closed histories remain flat-compatible and a rank-one scale lift exactly solves pure homothety sources
+N5_CERTIFICATE: gravity_boundary=every individual actual-edge source retains a nonzero residual charge after the scale lift, so general matter needs the complete reaction/curved sector
+N5_CERTIFICATE: axiom_boundary=the classifier can be downstream, but current axioms do not select the kernel, boundary semantics, source compiler, stiffness, geometry/reaction law, or causal interpretation
+per_element: checked all fifteen actual-edge rays and all 24 axis permutations
+per_site: checked the retained fifteen-edge compact cell and one scalar permanent charge Record
+per_history: checked 3,279 rational history cylinders through six causal steps and 1,092 exact prefix marginals
+per_mode: checked the compact classifier and all 625 L5 neutral-history momenta
+lattice_wide: prefix-projective causal histories and one L5 torus only; no arbitrary spatial region, continuum, nonlinear, or Lorentzian theorem is claimed
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

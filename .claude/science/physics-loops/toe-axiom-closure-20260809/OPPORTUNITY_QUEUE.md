@@ -151,3 +151,17 @@ connection branches the local joint action actually realizes.
 This ordering eliminates an inefficient loop: no further homogeneous contact
 fit should run until a law selects the extension in which its target is
 physical.
+
+## Post-Block-30 Priority Refresh
+
+| Rank | Target | Exact next witness | Why now |
+|---:|---|---|---|
+| 1 | physical Record-to-full-source and reaction/curved law | derive one local covariant compiler from complete Record fibres to all eleven compact charges and a law that supplies or cancels their reactions | the classifier and KKT compiler are complete; selection of the ten non-scale channels is now the sharpest gravity wall |
+| 2 | spatial projective finite-region gluing | extend the causal-prefix witness to compatible overlapping spatial regions with one distinguished null and boundary restriction law | temporal prefix consistency is solved for the witness but does not imply lattice-wide joint-family compatibility |
+| 3 | complete stationary differentiated Ward identity | solve one nonuniform background and derive geometry, connected, contact, mixed/source, multiplier, and connection/tadpole terms from the selected law | only a same-law identity can decide whether the residual reactions are physical constraints or curvature response |
+| 4 | autonomous Lorentzian nonlinear closure | interpret the selected update causally and certify quotient stability and nonlinear continuation | the current positive Markov witness is not a Lorentzian geometry theorem |
+| 5 | independent TOE roots and stack reconciliation | preserve PR #6096, then return to constituent-causal rank-one matter and Born/history selectors | the new law interface is shared, but gravity work should not starve independent high-value closures |
+
+Efficiency rule: do not fit another arbitrary phase or homogeneous contact.
+Compile the source once, route its exact null charges, and test only laws that
+simultaneously fix reactions, spatial gluing, and the complete Ward tensor.

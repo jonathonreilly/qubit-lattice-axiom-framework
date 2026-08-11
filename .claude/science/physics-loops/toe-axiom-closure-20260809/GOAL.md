@@ -992,3 +992,32 @@ geometry-bearing joint Record/history family and Record-to-geometry map that
 selects its ensemble/phase, full stationary Ward identity, and autonomous
 causal update. That content may remain downstream; no fifth axiom is proved
 necessary. No canonical axiom or fixed percentage is changed.
+
+## Block 30 Target And Disposition
+
+Block 30 asks whether Block 29's phase choice can be reduced to a response
+class computed from Records, and whether one compatible causal-prefix family
+can carry that class without introducing an independent geometry label.
+
+The bounded answer is constructive. The compact null projector maps each
+source to eleven charges. The positive axis-invariant homothety separates one
+scale charge from ten residual shape/constraint charges, yielding a complete
+flat-compatible / pure-scale / residual trichotomy. Neutral closed histories
+take the flat route; pure homothety sources solve after a positive rank-one
+lift. All fifteen actual-edge rays remain outside that scale repair and span
+all ten residual channels. This is the precise compact reason generic matter
+still fails: the current flat carrier has more null charges than the scale
+law can answer.
+
+One supplied positive rational kernel on permanent scalar charge Records is
+exactly consistent under every causal-prefix deletion. Its cumulative charge
+compiles an axis-covariant homothety history, while boundary charges zero and
+one separate future laws by exact total variation `23/68`. The complete Record
+fibre must therefore retain the boundary datum.
+
+This narrows rather than closes the law interface. The physical Record-to-
+full-source compiler and selected reaction/curved response now outrank further
+phase fitting. Spatial gluing, the full differentiated Ward connection, and
+nonlinear Lorentzian evolution follow. All may remain downstream if derived
+from one fixed local law; no fifth ontology axiom is proved necessary. No
+canonical axiom or fixed percentage is changed.

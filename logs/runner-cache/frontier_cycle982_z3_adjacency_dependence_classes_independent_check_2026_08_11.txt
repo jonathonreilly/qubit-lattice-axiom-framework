@@ -1,7 +1,7 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle982_z3_adjacency_dependence_classes_independent_check_2026_08_11.py
-runner_sha256: 5e451eb7f2b283905b1b1edbe1c4f87f75d26a331a5f3940cd55b4dc24fa2bac
-input_fingerprint_sha256: f55355a9dff04b8d441b4a8e9e4d52b78b73451b9de7a3dfdd056d42f227e53b
+runner_sha256: 90e5a562dcfdbb320b05136626ed46001f2f2696c1066a117dd0293772dcba59
+input_fingerprint_sha256: 9b776c80c31e44bc543921119130b6cb0b4af269c7ca33294d019ed50d064b72
 timeout_sec: 300
 exit_code: 0
 elapsed_sec: 0.09
@@ -12,7 +12,7 @@ A_INDEPENDENT_RECONSTRUCTION PASS :: semantic_edges=21; z3_edges=6; witnesses=21
 B_REFUTATION_POWER PASS :: rejected=10/10
 C_ARTIFACT_BINDING PASS :: source_receipt_pins=True; cache_semantics_bound=True
 D_PROVENANCE PASS :: primary_imported=False; cycle719_imported=False; prior_cycles_executed=False
-E_CONTROLS PASS :: source_reads=2<=6; determinism=True; runtime_lt_300=True
+E_CONTROLS PASS :: source_reads=3<=6; determinism=True; runtime_lt_300=True
 TOTAL: PASS=5 FAIL=0
 
 ----- stderr -----

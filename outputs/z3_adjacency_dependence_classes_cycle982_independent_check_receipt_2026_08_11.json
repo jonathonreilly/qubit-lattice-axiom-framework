@@ -1,7 +1,7 @@
 {
   "artifact": "true Z3 adjacency dependence-class independent refutation checker",
   "audit_status_authority": "independent audit lane only",
-  "checker_source_sha256": "5e451eb7f2b283905b1b1edbe1c4f87f75d26a331a5f3940cd55b4dc24fa2bac",
+  "checker_source_sha256": "90e5a562dcfdbb320b05136626ed46001f2f2696c1066a117dd0293772dcba59",
   "checks": {
     "A_INDEPENDENT_RECONSTRUCTION": true,
     "B_REFUTATION_POWER": true,
@@ -12,6 +12,10 @@
   "controls": {
     "all_inputs_relative_and_present": true,
     "blob_pins_match": true,
+    "byte_pinned_input_paths": [
+      "scripts/frontier_cycle982_z3_adjacency_dependence_classes_2026_08_11.py",
+      "outputs/z3_adjacency_dependence_classes_cycle982_receipt_2026_08_11.json"
+    ],
     "cycle719_imported_or_executed": false,
     "determinism_replay": true,
     "forbidden_imports": [],
@@ -26,9 +30,10 @@
     },
     "literal_audit_input_paths": [
       "scripts/frontier_cycle982_z3_adjacency_dependence_classes_2026_08_11.py",
-      "outputs/z3_adjacency_dependence_classes_cycle982_receipt_2026_08_11.json"
+      "outputs/z3_adjacency_dependence_classes_cycle982_receipt_2026_08_11.json",
+      "logs/runner-cache/frontier_cycle982_z3_adjacency_dependence_classes_2026_08_11.txt"
     ],
-    "literal_source_read_count": 2,
+    "literal_source_read_count": 3,
     "primary_ast_timeout_seconds": 1400,
     "primary_imported_or_executed": false,
     "prior_cycle_text_or_ast_executed": false,
@@ -182,5 +187,5 @@
   "integrity_policy": "checks gate independent reconstruction, artifact binding, and mutation rejection only",
   "pass": true,
   "science_digest": "a3e120dc8a22e39f99e738175c257736eef44065f0a5f48223f3f057f5e4e72c",
-  "stdout_sha256": "314268cb0dc9e6337f3479a95ca6784d272b7cb85c17bf0aa70aaefe7e518046"
+  "stdout_sha256": "527c28cafb0f1516865529b11b21dc16240a9a076bae9dbbb3162a924df329ad"
 }

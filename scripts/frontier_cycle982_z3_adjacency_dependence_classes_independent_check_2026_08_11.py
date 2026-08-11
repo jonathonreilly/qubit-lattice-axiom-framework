@@ -38,6 +38,11 @@ RECEIPT_PATH = (
 AUDIT_INPUT_PATHS = (
     "scripts/frontier_cycle982_z3_adjacency_dependence_classes_2026_08_11.py",
     "outputs/z3_adjacency_dependence_classes_cycle982_receipt_2026_08_11.json",
+    "logs/runner-cache/frontier_cycle982_z3_adjacency_dependence_classes_2026_08_11.txt",
+)
+BYTE_PINNED_INPUT_PATHS = (
+    "scripts/frontier_cycle982_z3_adjacency_dependence_classes_2026_08_11.py",
+    "outputs/z3_adjacency_dependence_classes_cycle982_receipt_2026_08_11.json",
 )
 EXPECTED_INPUT_SHA256 = {
     PRIMARY_PATH: "764415ed220b3036ff08ee936ea0e79eb227daef39e39b8c8866c64f8ab616e7",
@@ -433,8 +438,12 @@ def mutation_campaign(receipt: dict, cache_payload: str, expected: dict) -> list
 
 def input_controls() -> dict:
     payloads = {path: (ROOT / path).read_bytes() for path in AUDIT_INPUT_PATHS}
-    sha_rows = {path: sha256(payload).hexdigest() for path, payload in payloads.items()}
-    blob_rows = {path: git_blob(payload) for path, payload in payloads.items()}
+    sha_rows = {
+        path: sha256(payloads[path]).hexdigest() for path in BYTE_PINNED_INPUT_PATHS
+    }
+    blob_rows = {
+        path: git_blob(payloads[path]) for path in BYTE_PINNED_INPUT_PATHS
+    }
     source = (ROOT / CHECKER_PATH).read_text(encoding="utf-8")
     tree = ast.parse(source, filename=CHECKER_PATH)
     imports = {
@@ -458,6 +467,7 @@ def input_controls() -> dict:
             primary_timeout = ast.literal_eval(node.value)
     return {
         "literal_audit_input_paths": list(AUDIT_INPUT_PATHS),
+        "byte_pinned_input_paths": list(BYTE_PINNED_INPUT_PATHS),
         "literal_source_read_count": len(AUDIT_INPUT_PATHS),
         "input_sha256": sha_rows,
         "input_git_blobs": blob_rows,

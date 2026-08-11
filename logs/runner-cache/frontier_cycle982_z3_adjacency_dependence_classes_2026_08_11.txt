@@ -4,7 +4,7 @@ runner_sha256: 764415ed220b3036ff08ee936ea0e79eb227daef39e39b8c8866c64f8ab616e7
 input_fingerprint_sha256: db7786cde9df9554b9e925bd8927e6f129e0cdd1546e5ea349a31056104b73bb
 timeout_sec: 1400
 exit_code: 0
-elapsed_sec: 1.73
+elapsed_sec: 1.88
 status: ok
 ----- stdout -----
 CYCLE982_Z3_ADJACENCY_DEPENDENCE_CLASSES

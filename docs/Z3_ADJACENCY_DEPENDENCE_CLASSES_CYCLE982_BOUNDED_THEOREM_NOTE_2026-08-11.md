@@ -262,10 +262,12 @@ reportable finding when its bookkeeping is internally consistent.
 
 The independent checker imports and executes neither the primary nor
 Cycle-719.  It byte-pins the primary source and deterministic receipt,
-authenticates the current cache's source/status/stdout semantics without
-pinning its variable elapsed-time envelope bytes, independently rebuilds the
-graph, 23 Boolean laws, 21 witnesses, cubic action, orbits, stabilizers, `J`
-values, and exact routing-count arithmetic, and rejects ten corruptions:
+input-fingerprints the complete current primary cache so any cache change
+forces checker refresh, and authenticates that cache's source/status/stdout
+semantics without assigning its variable elapsed-time envelope a fixed
+expected hash.  It independently rebuilds the graph, 23 Boolean laws, 21
+witnesses, cubic action, orbits, stabilizers, `J` values, and exact
+routing-count arithmetic, and rejects ten corruptions:
 
 1. relation classification;
 2. semantic edge count;

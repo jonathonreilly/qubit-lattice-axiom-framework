@@ -934,5 +934,7 @@ independent_audit_required: true
   checkpoint `ddfe2dfd3048`.
 - Changed-evidence readiness is clean for Block 31 alone (`1/1`) and all 31
   stacked claims (`31/31`), with zero failures and zero control failures.
-- Science commit: `8fa5edeb72`. Delivery and independent audit are pending.
+- Science commit: `8fa5edeb72`; campaign conformance: `a1c48745f1`.
+- Delivery: PR #6103 is open, mergeable, and `CLEAN`, stacked exactly on
+  Block-30 delivery head `317dd4a9f4`. Independent audit remains required.
   No canonical edit, fixed percentage move, audit verdict, or `review-loop`.

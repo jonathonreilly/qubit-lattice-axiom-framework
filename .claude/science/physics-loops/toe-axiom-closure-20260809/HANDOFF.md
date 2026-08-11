@@ -1352,6 +1352,10 @@ compact versus curved/open response, then solve one nonuniform background and
 derive the full Ward connection and Lorentzian update. Primary cache is
 `PASS=17 FAIL=0` in `6.8 s`; independent reconstruction is `PASS=5 FAIL=0`;
 all seventeen isolated forced-false runs trip one named check; graph is
-`5,477/15,654`, out-degree five, with nineteen helpers. Conformance, delivery,
-and independent audit are pending. No canonical edit, percentage move, audit
-verdict, or `review-loop` occurs.
+`5,477/15,654`, out-degree five, with nineteen helpers. Direct conformance
+passes. The exact stack reaches only the inherited stage-7 dependency-policy
+epoch mismatch after `4,815` rows / `3,693` runners; the controlled five-file
+current-main overlay passes all 18 stages at checkpoint `ddfe2dfd3048`.
+Changed evidence is clean for `1/1` Block-31 and `31/31` stacked claims.
+Science commit is `8fa5edeb72`; delivery and independent audit remain pending.
+No canonical edit, percentage move, audit verdict, or `review-loop` occurs.

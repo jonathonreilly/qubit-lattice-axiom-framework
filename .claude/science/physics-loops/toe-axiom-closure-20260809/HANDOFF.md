@@ -1290,5 +1290,7 @@ the inherited stage-7 dependency-policy epoch mismatch after `4,813` rows /
 `3,691` runners; the controlled five-file current-main overlay passes all 18
 stages at checkpoint `151215f2fc34`. Changed evidence is clean for `1/1`
 Block-29 and `29/29` stacked claims. Science commit is `a5df13590f`;
-delivery remains pending. No canonical edit, percentage move, audit verdict,
-or `review-loop` occurs.
+campaign conformance is `9e94520d17`. PR #6101 is open, mergeable, and
+`CLEAN`, stacked exactly on Block-28 delivery head `f44a67a917`.
+Independent audit remains required. No canonical edit, percentage move, audit
+verdict, or `review-loop` occurs.

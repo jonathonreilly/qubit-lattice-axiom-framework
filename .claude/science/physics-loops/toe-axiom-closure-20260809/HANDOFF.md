@@ -1677,3 +1677,19 @@ gravity no-go: a singular physical connection sector, a relational/derivative
 law, and nonflat or Lorentzian phases remain live. The next calculation must
 decide connection regularity before any broader expansion. No canonical axiom
 or percentage changes, and no `review-loop` is used.
+
+## Block 42 Handoff
+
+Work is on branch
+`physics-loop/toe-axiom-closure-block42-connection-quotient-20260811`, stacked
+exactly on Block-41 delivery head `66a824a29c`. The note, runner, landing
+N1--N8 packet, and N5 cache are present. Primary execution is
+`PASS=14 FAIL=0`; citation registration is `5,488/15,688`, out-degree five.
+Commit, full conformance, push, PR, and independent audit are pending.
+
+The decisive gain is `K_iso<=-0.030463496853` for the physical
+`A_i=J_(i,3)/sqrt(3)` direction after granting the Record sector its maximum
+stabilizing contact. Stop the unchanged saddle's full Bloch census and begin
+the relational/derivative Ward-law repair. Modified and nonflat phases remain
+live. No canonical axiom, fixed percentage, audit verdict, or `review-loop`
+changes.

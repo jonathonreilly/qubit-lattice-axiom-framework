@@ -361,3 +361,12 @@ The unchanged regular flat route is retired. Gravity itself is not. The
 fastest remaining same-law falsifier is the physical connection spectrum at
 `k=0` and small momentum; if regular, the active route becomes law repair and
 a derived displacement-Ward selection property.
+
+## Block 42 Unchanged Flat-Connection Stability Boundary
+
+| Scoped claim | Exact/bounded evidence | N1--N8 disposition | Forbidden promotion | Live routes |
+|---|---|---|---|---|
+| The unchanged Block-38--40 flat stationary branch has one negative physical `k=0` isotropic connection direction | stationary safe box; conditional `p_S>0.18`; exact EC orbit loads; Record contact lower `-0.4`; `K_iso<=-0.030463496853`; gauge rank `162 ->163`; `PASS=14 FAIL=0` | seven normalized N1 routes plus N2--N8 and all five landing N5 resolutions pass for the narrow branch claim | do not infer gravity impossibility, all-mode negativity, nonflat exclusion, modified-law failure, axiom necessity, or Lorentzian instability | relational/derivative law, phase selection, stable nonflat branch, law import retirement, continuous geometry, causal update |
+
+The active wall is a selected semibounded law with a derived displacement
+Ward identity, not another census of the same saddle.

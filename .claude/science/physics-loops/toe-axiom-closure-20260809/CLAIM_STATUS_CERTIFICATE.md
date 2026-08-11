@@ -1415,3 +1415,21 @@ lines are in the landing primary cache.
   selection, and Lorentzian evolution remain. Fresh N1--N8 lands; no broad
   gravity no-go, axiom-necessity claim, fixed percentage move, or audit
   verdict ships.
+
+## Block 42 Claim Status
+
+- Claim: the unchanged Block-38--40 homogeneous flat stationary branch has at
+  least one negative physical zero-momentum connection direction on every
+  periodic `L>=3` carrier.
+- Exact route: stationarity gives `x in (0.89,1.03)`, `y in (1.40,1.66)`;
+  Jensen--Holder gives `p_S>0.18`; exact EC loads are
+  `8sqrt(x)/3` and `8sqrt(x)/9`; full bound is
+  `K_iso<=-0.030463496853`.
+- Quotient: `L=3` local-frame tangent rank is `162/162`; augmenting by the
+  isotropic target raises rank to `163` with residual `5.196152423`.
+- Evidence: source/input-pinned cache is `PASS=14 FAIL=0`; citation graph is
+  `5,488/15,688`, out-degree five. Full conformance, commit, push, PR, and
+  independent audit are pending.
+- Scope: bounded unchanged-flat-branch instability, not a gravity no-go,
+  full spectrum, nonflat exclusion, fifth-axiom result, percentage move, or
+  audit verdict. Fresh N1--N8 and N5 land; no `review-loop` is used.

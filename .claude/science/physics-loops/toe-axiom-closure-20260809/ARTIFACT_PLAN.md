@@ -1016,3 +1016,16 @@ complete conditional nonlinear compact solution:
   #6130 is open, mergeable, and `CLEAN`, stacked exactly on Block-40 delivery
   head `82d943665a`; independent audit remains required. No canonical edit,
   fixed percentage move, audit verdict, or `review-loop` occurs.
+
+## Block 42 Artifact Plan
+
+- theorem note: land the volume-uniform physical isotropic connection negative
+  mode, stationary box, conditional orbit bound, and axiom boundary
+- primary runner/cache: derive all ten EC loads, all 100 Record contacts, the
+  `L=3` gauge quotient, and N5 certificates; target `PASS=14 FAIL=0`
+- no-go packet: land fresh N1--N8 in the note and keep modified, relational,
+  nonflat, joint-phase, and Lorentzian routes explicit
+- campaign state: retire a full Bloch census of the unchanged unstable saddle
+  and promote relational/derivative Ward-law repair to rank one
+- current evidence: graph `5,488/15,688`, out-degree five; commit, full
+  conformance, push, PR, and independent audit pending

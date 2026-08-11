@@ -327,3 +327,17 @@ zero-momentum quotient ends the unchanged-law route immediately; a singular
 one earns the more expensive residue, polarization, and Lorentzian tests. Do
 not spend another block tightening the already strict T2 envelope unless the
 regularity decision depends on it.
+
+## Post-Block-42 Priority Refresh
+
+| Rank | Target | Exact next witness | Why now |
+|---:|---|---|---|
+| 1 | relational/derivative gravity-law repair | one local proper-cubic action with a stable physical quotient and exact displacement Ward identity; verify zero `O(k^0)` spin-two term without tuning | the unchanged flat branch has a physical negative mode, so repairing the law dominates further spectral census |
+| 2 | repaired-law phase and tensor test | prove a nondegenerate phase, then compute small-`k` tensor residue, source coupling, polarization count, and extra modes | Ward structure without a stable realized phase is insufficient |
+| 3 | stable nonflat counterroute | solve the full periodic equations and quotient Hessian away from identity holonomy | strongest same-family steelman, but costlier than symmetry-first repair |
+| 4 | law provenance and joint geometry | derive or import-retire the successful carrier, coefficients, measure, and boundary specification | the axioms do not select the failed or repaired law |
+| 5 | Lorentzian permanent-Record update | causal constraint-preserving evolution for the surviving phase | Euclidean repair must precede causal mode claims |
+
+Efficiency rule: do not compute the remaining seventeen flat connection modes
+unless they inform the repair. Require each next block to move stability,
+Ward order, phase existence, or physical source residue.

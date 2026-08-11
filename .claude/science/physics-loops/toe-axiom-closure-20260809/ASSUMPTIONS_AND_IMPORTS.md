@@ -535,6 +535,20 @@ locality/covariance/gluing theorem, projective limit, pure-geometry action,
 stationary nonuniform solution, Lorentzian dynamics, external science,
 canonical edit, percentage move, audit verdict, or `review-loop` is imported.
 
+## Block 42 Assumptions And Imports
+
+Block 42 imports only the fixed Block-38 `sigma/3` face factor, Block-39
+fixed-background Record phase, Block-40 stationary Gram ellipse/local-frame
+quotient, and Block-41 connection discriminator. The coframe, link action,
+coefficients, Gram well, and Euclidean interpretation remain supplied
+downstream law data rather than axioms.
+
+No independent-label approximation is imported: the spatial-ray marginal
+floor is conditional in every six-neighbor exterior. No observed gravity
+datum, physical law selection, continuous geometry phase, Lorentzian update,
+canonical edit, percentage move, audit verdict, external science, or
+`review-loop` is used.
+
 ## Block 41 Import Ledger
 
 Block 41 imports Block 39's proved six-neighbor Dobrushin row and Block 40's

@@ -511,6 +511,20 @@ selection is conditional on a massless phase. Candidate wording is
 unadopted; fixed TOE percentages and canonical axioms remain unchanged. No
 `review-loop` is used.
 
+## Block 42 Trace Gate
+
+Block 42 resolves the Block-41 connection discriminator on the unchanged
+homogeneous flat phase. A normalized proper-cubic isotropic time--spatial
+connection direction has quotient Hessian at most `-0.030463496853`, uniformly
+on every stationary Gram and periodic `L>=3` carrier. It is physical, not
+local-frame gauge.
+
+Reachability remains `upstream_support`, not TOE closure. The result retires a
+failed supplied law/phase; it does not construct the replacement Ward law,
+stable nonflat or continuous joint phase, Einstein residue, physical
+selection, or Lorentzian update. Candidate wording is unadopted; fixed
+percentages and canonical axioms remain unchanged. No `review-loop` is used.
+
 Block 40 restores the already supplied common Gram well and proves that its
 complete periodic homogeneous Record pressure has a proper-cubic,
 nondegenerate, all-coordinate flat stationary point on every finite torus.

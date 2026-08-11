@@ -1,6 +1,6 @@
 {
- "edge_count": 15683,
- "node_count": 5487,
+ "edge_count": 15688,
+ "node_count": 5488,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -444,6 +444,10 @@
   },
   "admissibility_null_record_rn_cocycle_source_unit_gravity_contact_boundary_bounded_theorem_note_2026-08-10": {
    "deps_hash": "4fd40c3fdb28",
+   "out_degree": 5
+  },
+  "admissibility_periodic_flat_ec_connection_negative_mode_axiom_boundary_bounded_theorem_note_2026-08-11": {
+   "deps_hash": "4b6a612b7520",
    "out_degree": 5
   },
   "admissibility_periodic_gram_well_nondegenerate_flat_vacuum_local_frame_hessian_boundary_bounded_theorem_note_2026-08-11": {

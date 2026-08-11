@@ -841,3 +841,14 @@ The connection-regularity test now dominates campaign efficiency. If regular,
 the current Admissibility interface needs an additional selected-law property:
 no forbidden spatial spin-two intercept after quotient/elimination and a
 derived displacement Ward/source identity. This is not yet a canonical axiom.
+
+## Block 42 Flat-Connection Instability / Repair Route Comparison
+
+| Route | Exact object | Outcome | Decision |
+|---|---|---|---|
+| unchanged homogeneous flat connection | `A_i=J_(i,3)/sqrt(3)` with complete geometry/Record/EC directional Hessian | physical quotient value at most `-0.030463496853` | retire this flat branch as a stable or massless gravity phase |
+| full eighteen-mode flat Bloch census | remaining uniform coordinates and small nonzero momenta | cannot remove an existing negative quotient vector | deprioritize unless needed to design the repair |
+| Record susceptibility stabilization | complete contact plus connected covariance | contact can stabilize by at most `0.4`; covariance has the opposite sign | retired as a rescue of this mode |
+| relational/derivative law | transforming reference or difference/curvature-only action with phase selector | can remove absolute `O(k^0)` terms by symmetry rather than tuning | highest-priority route |
+| stable nonflat phase | full periodic equations away from identity holonomy | not excluded and is the strongest same-family steelman | retain after the symmetry-first repair attempt |
+| Lorentzian/joint-phase/provenance | selected integrated geometry and causal update | untouched | preserve as independent terminal obligations |

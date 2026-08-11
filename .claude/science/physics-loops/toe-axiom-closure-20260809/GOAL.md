@@ -1275,3 +1275,17 @@ spin-two intercept while retaining the nondegenerate vacuum. The present
 Admissibility axiom does not require that law-selection property; a sufficient
 downstream clause is identified, but no axiom amendment is adopted and fixed
 percentages remain locked.
+
+## Block 42 Goal Update
+
+The Block-41 discriminator is now decided more sharply than
+regular-versus-singular: the unchanged flat physical connection quotient has
+a strict negative isotropic direction. A full small-`k` census of that same
+unstable saddle is no longer the best use of campaign time.
+
+The highest-value next goal is the minimal modified or relational finite-range
+geometry law that is semibounded on its physical quotient and has an exact
+base-displacement Ward identity. It must retain a nondegenerate phase without
+critical fitting, remove the `O(k^0)` spatial spin-two intercept, and then
+pass source-residue, polarization, and small-`k` tests. No axiom amendment is
+adopted and fixed percentages remain locked.

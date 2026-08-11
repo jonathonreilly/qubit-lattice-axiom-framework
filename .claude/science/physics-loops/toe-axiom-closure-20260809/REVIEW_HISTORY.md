@@ -1956,6 +1956,20 @@ instance or Fourier census.
   `9431cd5d47`; independent audit remains pending. No canonical axiom, fixed
   percentage, or audit verdict is changed.
 
+## Block 42 Construction And Adversarial Record
+
+- Contracted every stationary Gram to `x=0.894520303..1.022146364` and
+  `y=1.410493841..1.652006159` using the stationary equations.
+- Proved every six-neighbor conditional has spatial-orbit mass above
+  `0.182672397`, without independence or mean-field replacement.
+- Derived exact EC directional loads `8sqrt(x)/3` and `8sqrt(x)/9`, and all
+  100 Record contacts with lower bound `-0.4`.
+- Obtained `K_iso<=-0.030463496853`; the `L=3` gauge tangent rank rises
+  `162 ->163` when the physical mode is appended.
+- Fresh N1--N8 and all five N5 lines land. Primary execution is
+  `PASS=14 FAIL=0`; graph is `5,488/15,688`, out-degree five. Commit, full
+  conformance, PR, and independent audit are pending.
+
 ## Block 41 Construction And Adversarial Record
 
 - Enumerated all 100 ordered ten-ray bond overlaps and their first/second

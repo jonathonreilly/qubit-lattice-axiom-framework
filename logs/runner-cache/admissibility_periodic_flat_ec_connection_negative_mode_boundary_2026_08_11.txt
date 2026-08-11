@@ -1,0 +1,44 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_periodic_flat_ec_connection_negative_mode_boundary_2026_08_11.py
+runner_sha256: b0deed6d9211e2f0de98ab2a88711db9b565f92a36eb84fb5e2ca9c1d33981ab
+input_fingerprint_sha256: f284995b3670c5f567aef28a8523e46394b029e78125d7e76a0f3c653e627e19
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 0.44
+status: ok
+----- stdout -----
+[PASS] premise-and-parent-scope: the proof binds the axioms and supplied EC, periodic phase, vacuum, and spin-two parents w...
+[PASS] stationary-equation-domain-contraction: the Block-40 ellipse plus the rank-one projector log-derivative bound contracts every stat...
+       exact x=0.894520303..1.022146364; y=1.410493841..1.652006159
+[PASS] normalized-isotropic-connection-direction: A_i=J_(i,3)/sqrt(3) has unit coefficient norm and is proper-cubic isotropic
+[PASS] exact-geometry-directional-hessian: compatibility plus normal compatibility gives eta(x+y+1), while the torsion first residual...
+       compatibility=0.510000000; normal=0.200000000; torsion residual=0.000e+00
+[PASS] exact-ec-orbit-curvatures: all twelve based-loop incidences give EC Hessian 8sqrt(x)/3 on four spatial rays and 8sqrt...
+       spatial/tick=2.666666667/0.888888889
+[PASS] finite-holonomy-ec-control: direct group-commutator holonomies reproduce the exact quadratic EC orbit curvatures
+       finite spatial/tick=2.515728299/0.838576100
+[PASS] six-neighbor-holder-bound: Jensen below the four spatial labels and Holder above the six tick labels bound every six-...
+       t=1.359223..1.865169; r6 spatial/tick=4.765044111/9.642466234
+[PASS] uniform-spatial-orbit-probability-floor: every finite-volume conditional and hence every marginal gives the four spatial rays total...
+       conditional floor=0.182672397; declared floor=0.18
+[PASS] record-contact-stabilization-ceiling: rank-one bond calculus bounds each Record contact below by -2 beta times the connection co...
+       corner/pair minimum=-0.400000000000; analytic lower=-0.400000000000
+[PASS] strict-negative-full-directional-bound: geometry minus complete Record-plus-EC pressure has a strict negative upper bound in the n...
+       K_iso<=-0.030463496853; d/dx upper=-0.395576808
+[PASS] physical-gauge-quotient-direction: the L3 joint coframe/link target raises the local-frame tangent rank and therefore survive...
+       tangent rank=162/162; augmented=163; least residual=5.196152423
+[PASS] volume-independent-carrier-counts: every periodic L>=3 cubic carrier has three edges, three faces, and twelve based loops per...
+[PASS] narrow-claim-and-live-escapes: the note restricts the result to the unchanged flat supplied law and keeps modified, relat...
+[PASS] no-go-discipline-landing-packet: the committed source note contains the current N1 through N8 no-go-discipline gate
+N5_CERTIFICATE: all ten EC labels, all one-hundred projector-bond contacts, one six-neighbor conditional family, one physical uniform mode, and every periodic volume are resolved at their stated scopes
+per_element: checked all ten ray labels and all one hundred ordered rank-one projector bond contacts in the supplied law
+per_site: checked the complete six-neighbor conditional orbit bound by Jensen-Holder reduction over both cubic label orbits
+per_mode: checked one normalized proper-cubic isotropic zero-momentum connection mode A_i=J_(i,3)/sqrt(3), not every mode
+per_block: checked the complete geometry, Record contact, connected covariance sign, and EC curvature bound in that directional Hessian
+lattice_wide: checked every finite periodic cubic L>=3 carrier through volume-independent local counts and conditional bounds
+scope_boundary: one supplied Euclidean flat stationary branch; no full connection spectrum, nonflat phase, modified law, Einstein tensor, or Lorentzian update
+primary_pass=14
+primary_fail=0
+
+----- stderr -----
+

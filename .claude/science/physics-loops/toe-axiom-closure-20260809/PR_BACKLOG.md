@@ -593,6 +593,16 @@ Science commit is `be1781ad26`; campaign conformance is `42d3056d98`. PR
 head `f2f21f9b0f`. Independent audit is pending. No canonical edit,
 percentage move, audit verdict, or `review-loop` is used.
 
+Block 42 is local on branch
+`physics-loop/toe-axiom-closure-block42-connection-quotient-20260811`, stacked
+exactly on Block-41 delivery head `66a824a29c`. Its review object is the
+stationary-domain contraction, six-neighbor spatial-orbit bound, exact
+isotropic EC commutator Hessian, strongest Record stabilization bound, and
+physical quotient negative mode. Primary cache is `PASS=14 FAIL=0`; citation
+registration is `5,488/15,688`, out-degree five. Science commit, conformance,
+push, PR, and independent audit are pending. No canonical edit, percentage
+move, audit verdict, or `review-loop` is used.
+
 Block 41 is local on branch
 `physics-loop/toe-axiom-closure-block41-nonzero-hessian-20260811`, stacked
 exactly on Block-40 delivery head `82d943665a`. Its distinct review object is

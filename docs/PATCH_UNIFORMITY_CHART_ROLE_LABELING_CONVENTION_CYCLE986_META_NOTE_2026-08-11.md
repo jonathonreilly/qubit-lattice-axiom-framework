@@ -35,7 +35,12 @@ chart records. Its algebraic gluing claim is separate: compatible pairwise
 record restrictions plus the coordinate-binding site cocycle glue over a
 finite union. No theorem is asserted in this meta note.
 
-## Audit-bound refutation checker
+## Review-only refutation checker
+
+Classification: `review-only evidence`. This checker does not determine an
+audit verdict or effective status for the bounded theorem. Its attachment to
+this meta row makes the paired source and pinned artifacts
+machine-discoverable while preserving that separation.
 
 Primary runner:
 [`frontier_cycle986_patch_uniformity_induction_independent_check_2026_08_11.py`](../scripts/frontier_cycle986_patch_uniformity_induction_independent_check_2026_08_11.py)

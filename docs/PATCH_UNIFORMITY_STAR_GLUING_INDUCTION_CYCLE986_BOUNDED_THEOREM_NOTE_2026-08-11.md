@@ -129,6 +129,9 @@ No labeling rule is asserted by this theorem note. Its use of
 This is a genuine induction step rather than another fixed-size census: the
 number of old charts meeting the new star is arbitrary, while each nonempty
 pairwise overlap is drawn from a finite, exhaustible relative-offset set.
+Here “arbitrary” means any permitted subset: at most 24 distinct old chart
+centres can meet one new closed star. The total finite patch size `k` remains
+unbounded.
 
 ### Complete two-star overlap census
 
@@ -261,6 +264,12 @@ universal flags, case arity/support/outcome, the exact finite quantifier,
 infinite-scope flag, artifact pins and cached stdout. It also constructs
 coherent `OBSTRUCTED` and `NOT_HOSTABLE`
 receipts; both pass the same bookkeeping validator.
+
+For audit-packet classification, this independent checker is review-only
+evidence. It does not replace the bounded theorem's primary runner, does not
+determine any audit or effective status, and is attached as the primary runner
+of the separate meta convention note so its source, receipt, and cache remain
+machine-discoverable.
 
 ### Artifacts and reproduction
 

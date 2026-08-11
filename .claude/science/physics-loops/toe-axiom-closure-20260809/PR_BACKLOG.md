@@ -687,3 +687,16 @@ head `4511720608`; independent audit remains pending.
 PR #6096 remains a complementary proper-length sibling requiring later
 explicit reconciliation. No canonical edit, percentage move, audit verdict,
 or `review-loop` is used.
+
+Block 36 is local on branch
+`physics-loop/toe-axiom-closure-block36-local-frame-ward-20260811`, stacked
+exactly on Block-35 delivery head `6882d2eb7e`. Its distinct review object is
+the two-coframe/one-constrained-link KKT functional, exact endpoint-local frame
+symmetry, anisotropic stationary witness, independent Record/source/geometry/
+multiplier/generator accounting, intrinsic quotient, finite-label boundary,
+and continuous score/coframe/transport escapes. The source/input-pinned cache
+is `PASS=19 FAIL=0` in `3.43 s` with 5,682 stdout characters. Exact,
+runner-free, score-lift, simplex-tangent, and adversarial no-go checks pass;
+repository conformance is pending. Science commit, campaign conformance,
+delivery commit, and PR URL are pending. No canonical edit, percentage move,
+audit verdict, or `review-loop` is used.

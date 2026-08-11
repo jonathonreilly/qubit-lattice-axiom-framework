@@ -1876,3 +1876,40 @@ instance or Fourier census.
   head `4511720608`; independent audit remains pending. No canonical axiom,
   fixed percentage,
   audit verdict, or `review-loop` is changed.
+
+## Block 36 Construction Record
+
+- Corrected the Block-35 target: at a fully stationary invariant KKT point the
+  total generator-connection term is zero; only nonzero sector-resolved terms
+  may cancel.
+- Proved the ten rays remain an exact `Sym(4)` basis but cannot be a nontrivial
+  connected permutation orbit; executed a continuous score-space lift with 32
+  negative entries and an independent simplex tangent nullity-zero check.
+- Added two `GL+(4)` coframes, one positive-determinant ambient link with ten
+  orthogonality constraints, and one transforming symmetric multiplier.
+- Reverse-engineered and explicitly labeled one anisotropic witness law;
+  stationarity is `3.331e-15`, the constraint is exact, and
+  `||g_1-g_0||=sqrt(873)/4` is gauge invariant.
+- Independently assembled microscopic contact, connected covariance,
+  rank-twenty source/coframe response, geometry Hessian, multiplier curvature,
+  mixed link/multiplier blocks, and generator derivatives.
+- Verified effective/multiplier Ward residuals `3.775e-15/0` and total residual
+  `6.280e-16`; independently centered differences reproduce geometry and mixed
+  Hessians to `7.292e-10/1.518e-11`.
+- Proved Record covariance and mixed sources are transverse while microscopic
+  contact is Ward-load-bearing; proved constraint curvature and mixed
+  multiplier blocks are load-bearing on the anisotropic multiplier fixture.
+- Verified intrinsic gauge-orbit curvature cancels, the gauge-fixed minimum is
+  `3.999999976`, and the redundant chart exposes exactly twelve nulls.
+- Demonstrated ambient-extension ambiguity and executed link, connection,
+  multiplier, contact, pure-gauge, nonuniformity, and transported-ray
+  mutations.
+- Applied the current `origin/main` no-go discipline: five executed N1
+  families, six-wall/15-pair N2 matrix, hidden scan, exact N4 locators, landing
+  N5 cache certificate, primitive registry scan, hostile steelman, and per-wall
+  N8 retirement records.
+- Primary fresh cache is `PASS=19 FAIL=0` in `3.43 s`, 5,682 stdout
+  characters. Independent exact/full-Hessian, runner-free, exact score-lift,
+  simplex-tangent, and stable-byte adversarial passes are clean. Repository
+  conformance remains pending before commit/push/PR. No canonical axiom, fixed
+  percentage, audit verdict, or `review-loop` is changed.

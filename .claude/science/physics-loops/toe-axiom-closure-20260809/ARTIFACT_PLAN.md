@@ -814,3 +814,27 @@ complete conditional nonlinear compact solution:
   commit is `290330ceb1`. PR #6112 is open, mergeable, and clean, stacked
   exactly on Block-34 delivery head `4511720608`; independent audit remains
   pending.
+
+## Block 36 — Ten-Ray Coframe/Link Local-Frame Ward Boundary
+
+- theorem note:
+  `docs/ADMISSIBILITY_TEN_RAY_COFRAME_LINK_LOCAL_FRAME_WARD_STATIONARITY_CONNECTION_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-11.md`
+- runner/cache:
+  `scripts/admissibility_ten_ray_coframe_link_local_frame_ward_stationarity_connection_boundary_2026_08_11.py` and its source/input-pinned cache
+- packet scope: one supplied two-vertex/one-link Euclidean KKT functional;
+  exact endpoint-local `SO(4) x SO(4)` invariance; one anisotropic stationary
+  representative; independent Record contact, covariance, source/coframe,
+  geometry, constraint, multiplier, and generator accounting; intrinsic gauge
+  quotient; finite-label permutation boundary; continuous score, coframe, and
+  transported-ray escapes; N1--N8; and a corrected gravity-relevant next target
+- exclusions: Record derivation of the coframes, links, wells, weights, or
+  transport law; closed-loop holonomy; coframe compatibility or torsion;
+  Palatini/Regge curvature selection; full-`Z^3` phase; lattice
+  diffeomorphism/Bianchi/Einstein content; Lorentzian dynamics; canonical
+  edits; percentage movement; audit verdicts; and `review-loop`
+- current evidence: source/input-pinned cache `PASS=19 FAIL=0` in `3.43 s`
+  with `5,682` stdout characters; exact KKT residual `3.331e-15`; independent
+  full-Hessian, runner-free, exact score-lift, and simplex-tangent
+  reconstructions reproduce the numerical surface; the stable-byte adversarial
+  no-go pass is clean; repository-conformance gates remain before the science
+  commit and stacked PR package

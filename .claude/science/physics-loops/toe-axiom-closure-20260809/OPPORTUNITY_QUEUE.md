@@ -236,3 +236,19 @@ Efficiency rule: freeze the scalar finite-width witness. Do not fit another
 kernel, fugacity, tension, or affine stiffness. Reuse the ten-ray carrier and
 spend computation only on a same-action nonuniform frame/link stationary
 fixture whose complete differentiated identity can fail term by term.
+
+## Post-Block-36 Priority Refresh
+
+| Rank | Target | Exact next witness | Why now |
+|---:|---|---|---|
+| 1 | proper-cubic coframe-compatible Record/gravity plaquette orbit | elementary closed spatial loops in every proper-cubic plane, with transported actual-ray images, nontrivial gauge-covariant holonomy, torsion/coframe-compatibility control, and a Palatini-like area-bivector/curvature term or exact Regge counterpart; Record stress must be load-bearing in the coframe equation or intrinsic response | Block 36 closes finite local-frame bookkeeping and proves a star, one chosen plane, or bare gauge loop is insufficient; this is the shortest experiment that can add genuine spatial gravitational curvature |
+| 2 | Record-derived carrier and normalized extensional law | derive the coframe observable, link transport, wells/weights, and common normalization from the existing `M_2(C)` Admissibility/Record family, or state the narrow sufficient downstream interface without asserting necessity | the supplied witness proves consistency but not Nature's law; this is the remaining axiom-interface pressure |
+| 3 | lattice displacement/Bianchi and Einstein regime | derive a base-lattice identity for the same proper-cubic loop action, then separately show the selected weak-curvature coframe equation has the required Einstein/Regge limit and universal source coupling | internal `SO(4)` Ward symmetry alone has different conservation content, and Bianchi does not select the dynamics |
+| 4 | increasing-region phase and Lorentzian permanent-Record dynamics | select a compatible full-`Z^3` phase, declare any Euclidean `Z^3 x Z_tau` regulator explicitly, then reconstruct or derive a causal update that preserves Records | the current fixture is one Euclidean link and has no phase, fourth base direction, cone, or autonomous update |
+| 5 | independent TOE roots and stack reconciliation | preserve the proper-length sibling, then resume Born/history and operational-selector work after the closed-loop gravity decision | gravity remains the lowest TOE lane, but one tightly scoped experiment should not monopolize the whole campaign if it saturates |
+
+Efficiency rule: retire ambient one-link witness tuning. Reuse the verified
+analytic derivative/KKT machinery and spend computation only on proper-cubic
+closed-loop, coframe-compatible curvature and same-law Record load-bearing
+mutations. Stop immediately if a candidate is only a generic Wilson gauge
+action or introduces another supplied stiffness without a selector.

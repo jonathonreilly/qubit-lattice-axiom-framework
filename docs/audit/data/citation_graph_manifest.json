@@ -1,6 +1,6 @@
 {
- "edge_count": 15665,
- "node_count": 5481,
+ "edge_count": 15668,
+ "node_count": 5482,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -485,6 +485,10 @@
   "admissibility_sourced_regge_joint_ward_schur_completion_boundary_bounded_theorem_note_2026-08-10": {
    "deps_hash": "5af03547e4f2",
    "out_degree": 4
+  },
+  "admissibility_ten_ray_coframe_link_local_frame_ward_stationarity_connection_boundary_bounded_theorem_note_2026-08-11": {
+   "deps_hash": "91b0f3b0f045",
+   "out_degree": 3
   },
   "admissibility_timelike_edge_current_network_compact_homothety_regge_boundary_bounded_theorem_note_2026-08-10": {
    "deps_hash": "b431044c389f",

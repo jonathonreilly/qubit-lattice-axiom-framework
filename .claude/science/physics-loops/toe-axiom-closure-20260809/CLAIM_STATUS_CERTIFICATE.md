@@ -1121,3 +1121,72 @@ independent_audit_required: true
   Block-34 delivery head `4511720608`; independent audit remains pending. No
   canonical edit, fixed
   percentage move, audit verdict, or `review-loop`.
+
+## Block 36 Local-Frame Ward / Finite-Label Boundary Certificate
+
+- Claim type: `bounded_theorem`.
+- Carrier boundary: the ten rays span `Sym(4)` with determinant `-24576`, but a
+  connected group has trivial continuous image in finite `S_10`; the explicit
+  45-degree rotation has best label overlap `0.804737854`.
+- Executed escapes: the induced ten-score action intertwines to `4.441e-16`
+  but has 32 negative entries and is not stochastic; the simplex-automorphism
+  tangent has rank 100 and dimension zero; continuous coframes/links and a
+  positive transported-ray bond both escape by changing the carrier/law.
+- Stationarity: `e_0=I`, `e_1=diag(2,2,2,5/2)`, `U=I`, and
+  `Lambda=diag(-2,-2,-2,-15/4)` give KKT residual `3.331e-15`, exact
+  orthogonality, and gauge-invariant metric separation `sqrt(873)/4`.
+- Record response: microscopic contact is `0.078602423638`, connected
+  covariance is `0.072424082636`, the complete contribution is
+  `0.006178341002`, and the source/coframe block has rank 20 with minimum
+  singular value `0.000559395`.
+- Ward accounting: effective and multiplier sector identities close to
+  `3.775e-15/0`; their nonzero connections cancel to total residual
+  `6.280e-16`. Record covariance and mixed sources are transverse; microscopic
+  contact, link/multiplier mixing, and constraint curvature are separately
+  mutation-load-bearing.
+- Intrinsic control: raw/chart gauge curvatures cancel as `+4/-4` and
+  `-4/+4`; the redundant chart has exactly twelve nulls and the 26-direction
+  gauge-fixed minimum is `3.999999976`.
+- Ambient-extension control: an invariant constraint multiple changes the raw
+  connection norm to `8 sqrt(2)` while leaving the intrinsic law and KKT point
+  unchanged.
+- Runner/cache: source/input pinned, `PASS=19 FAIL=0` in `3.43 s`, with the
+  required substantive N5 lines for per-element, per-site, per-mode,
+  per-block, and lattice-wide scope.
+- Governance: this is supplied finite existence/bookkeeping plus a narrow
+  finite-label negative. It is not a Record derivation, gravitational action,
+  phase, diffeomorphism/Einstein theorem, Lorentz theorem, axiom-necessity
+  result, or audit verdict. Fixed TOE percentages remain unchanged.
+
+### Block 36 No-Go Discipline Working Copy
+
+- `N1`: five normalized current-cycle routes are executed: finite cubic
+  permutations, coframe/link KKT lift, continuous score lift, simplex
+  automorphism, and ray-resolved transported bond. The latter three expose
+  constructive escapes from every broad reading.
+- `N2`: the collapsed wall set is W1 carrier/identity, W2 normalized local law,
+  W3 coframe-compatible gravitational curvature, W4 lattice
+  diffeomorphism/Bianchi, W5 Einstein-regime dynamics, and W6 Lorentzian
+  causal Records; all fifteen pairwise directional checks are `no/no`, hence
+  independent.
+- `N3`: supplied wells, weights, multiplier, and background are explicit; no
+  hidden standard-QFT, canonical, registered, or assumed premise is used.
+- `N4`: Block 35 exactly matches only bounded local-frame existence; its
+  coarse ray aggregation and Block 23's Regge residual are nonmatches and are
+  dropped from proof support.
+- `N5`: the runner certifies element/site/mode/block execution and explicitly
+  records that lattice-wide plaquette, phase, diffeomorphism, and Lorentzian
+  content was not executed.
+- `N6`: the axiom and primitive registry was checked; all live paths are
+  downstream derivation/import-retirement routes, so no fifth axiom is proven
+  necessary.
+- `N7`: the strongest counterargument is the continuous score or collective-
+  coframe action; it defeats a broad no-go but not the exact finite-permutation
+  theorem.
+- `N8`: carrier refinement retired Block 34's plane-label wall; extensional
+  law, gravitational curvature, Bianchi/Einstein, and Lorentzian walls remain
+  live and are not naming conventions.
+
+The landing N1--N8 record is the theorem note itself, and the landing N5
+execution certificate is in the primary cached stdout, as required by the
+current repository no-go discipline.

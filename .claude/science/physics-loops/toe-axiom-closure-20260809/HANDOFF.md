@@ -1491,3 +1491,35 @@ stacked claims. Science commit is `1c9d88cbbc`; campaign conformance commit is
 Block-34 delivery head `4511720608`; independent audit remains pending. No
 canonical edit, fixed percentage
 move, audit verdict, or `review-loop` occurs.
+
+## Block 36 Handoff
+
+Work continues on branch
+`physics-loop/toe-axiom-closure-block36-local-frame-ward-20260811`, stacked
+exactly on Block-35 delivery head `6882d2eb7e`. The primary note, runner, and
+fresh cache are present; the cache is `PASS=19 FAIL=0` in `3.43 s` with
+5,682 stdout characters. Independent full-Hessian, runner-free, exact
+score-lift, and simplex-tangent reconstructions match the KKT, response, Ward,
+quotient, and mutation numbers. The stable-byte adversarial no-go pass is
+clean; repository-conformance packaging remains before commit/push/PR.
+
+The significant scientific gain is diagnostic. The requested fully
+stationary identity cannot also have a nonzero total generator-connection
+term; the correct exact result is cancellation of nonzero effective and
+multiplier sector connections. Record covariance and mixed sources are
+transverse, while microscopic contact is the Record term load-bearing in the
+differentiated identity. Ambient sector connections are extension-dependent
+and must not be called physical gravity response. The ten rays are a complete
+metric-score basis but not a connected permutation orbit; continuous score,
+coframe/link, and transported-ray routes remain positive.
+
+Do not spend another cycle on an ambient one-link KKT fixture. On the inherited
+`Z^3` base, build the full proper-cubic orbit of elementary closed spatial
+plaquettes, not a star or a single chosen plane: transport the actual ray
+images, control torsion/coframe compatibility, and use a Palatini/Regge-type
+linear-curvature coupling so the result can distinguish gravity from generic
+internal gauge curvature. Derive all terms from one normalized Record/geometry
+law and mutate zero holonomy, link transport, compatibility, Record contact,
+and curvature coupling separately. Treat this as a spatial-curvature
+precursor; do not infer a fourth base direction or Lorentzian theory from the
+four-component coframes. No `review-loop` is used.

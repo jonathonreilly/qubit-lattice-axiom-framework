@@ -736,3 +736,24 @@ The scalar local-law and affine-response search is exhausted for now. The
 next useful discriminator is whether one action-level local-frame redundancy
 actually closes with all contact and generator-connection terms on a
 nonuniform background.
+
+## Block 36 Local-Frame / Gravitational-Curvature Route Comparison
+
+| Route | Exact object | Outcome | Decision |
+|---|---|---|---|
+| finite ten-label permutation | continuous connected frame path mapped into `S_10` | connected image is trivial; explicit 45-degree rotation leaves the ray set | retain as a narrow carrier boundary only |
+| continuous ten-score action | induced action through the invertible metric map | exact intertwiner, but 32 negative coefficients at 45 degrees | retain as response-basis covariance, not microscopic probability mixing |
+| continuous simplex automorphism | stochastic one-parameter map with stochastic inverse | tangent constraint rank 100, dimension zero | retire as a nontrivial connected label carrier |
+| supplied coframe/link KKT action | two coframes, constrained link, Record free energies, wells, and multiplier | exact off-shell frame invariance, anisotropic stationarity, complete sector Ward cancellation, and intrinsic quotient | retain as bounded existence/bookkeeping; derive its carrier and law |
+| ray-resolved transported bond | positive 100-entry ray-pair edge factor | exact local-frame covariance; fixed-link mutation `0.079329` | retain as strongest microscopic transport escape |
+| bare one-link ambient connection | sector connection before intrinsic constraint quotient | tunable by an invariant constraint multiple | retire as physical gravity evidence |
+| star-only extension | incident links without a closed loop | cannot define holonomy | retire as the next curvature target |
+| single-plane or bare `SO(4)` Wilson plaquette | one unsymmetrized plane, or closed internal-gauge holonomy without coframe compatibility or linear gravitational curvature | breaks proper-cubic covariance or tests gauge theory, not yet gravity | do not spend a block unless the cubic orbit is coupled to coframes gravitationally |
+| proper-cubic Palatini/Regge spatial plaquette orbit | transported rays, torsion/compatibility control, area-bivector or area-deficit linear curvature, same-law Record stress | not constructed | highest-priority gravity/axiom-interface target; spatial precursor only |
+| lattice displacement/Bianchi and Einstein routes | base-lattice transformations followed separately by weak-curvature coframe dynamics | not constructed | both required after the closed-loop action exists; neither is inferred from the other |
+| Lorentzian phase/update | selected full-lattice phase and permanent-Record causal evolution | not constructed | required physical endpoint |
+
+The one-link Ward bookkeeping family is saturated. The next useful
+discriminator is whether a same-law proper-cubic closed-loop action makes
+Record stress load-bearing in a genuine coframe-curvature equation rather than
+merely in an internal-frame identity.

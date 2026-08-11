@@ -601,3 +601,23 @@ next target is a gauge-fixed nonuniform coframe/link stationary fixture with
 every connected, contact, mixed, multiplier, and generator-connection term
 derived from the same functional. Candidate wording is unadopted; fixed TOE
 percentages and canonical axioms remain unchanged. No `review-loop` is used.
+
+Block 36 supplies one exact two-vertex/one-link local-frame KKT witness on the
+ten-ray metric dictionary. The anisotropic representative is fully stationary;
+the complete sector Ward bookkeeping closes; the intrinsic gauge orbit is
+flat; the redundant chart has twelve frame nulls; and continuous score,
+coframe/link, and ray-transport routes explicitly defeat a broad finite-carrier
+or gravity no-go. It also corrects the inconsistent requirement that a fully
+stationary total generator-connection remain nonzero.
+
+Reachability remains `upstream_support`, not direct TOE closure. The coframes,
+link, wells, weights, and law are supplied; one link has no holonomy; and
+internal `SO(4)` redundancy is not lattice diffeomorphism, Bianchi, Einstein,
+phase, or Lorentzian dynamics. The next target is the full proper-cubic orbit
+of elementary closed spatial plaquettes on `Z^3`, with transported Record rays,
+coframe compatibility/torsion control, and a Palatini/Regge-type linear-
+curvature coupling whose Record stress is load-bearing in the stationary
+coframe equation or intrinsic response. This is a spatial-curvature precursor,
+not a fourth base-lattice direction or Lorentzian theorem. Candidate wording
+is unadopted; fixed TOE percentages and canonical axioms remain unchanged. No
+`review-loop` is used.

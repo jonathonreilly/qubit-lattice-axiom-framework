@@ -1153,3 +1153,32 @@ generator-connection terms and must not be called a diffeomorphism or Einstein
 Ward theorem. The Record-derived geometry observable, full-`Z^3` phase, and
 Lorentzian permanent-Record update remain separate obligations. No fifth
 axiom is proved necessary. No canonical axiom or fixed percentage is changed.
+
+## Block 36 Target And Disposition
+
+Block 36 asks whether the Block-35 ten-ray carrier can support the requested
+fully stationary local-frame Ward identity and whether a nonzero total
+generator-connection term is a consistent target.
+
+The supplied finite construction succeeds after correcting the target.
+Continuous `SO(4)` acts on two coframes and one constrained link, not by
+permuting the ten discrete ray labels. One anisotropic background is exactly
+KKT stationary; all Record, geometry, constraint, multiplier, source, and
+generator sectors are independently assembled; the intrinsic gauge orbit is
+flat; and twelve redundant frame directions are null. At full stationarity
+the total generator-connection term must vanish. The separately nonzero
+effective and multiplier sector terms cancel, so Block 35's requested nonzero
+total term was inconsistent.
+
+This does not yet make the fixture gravity. A star alone cannot test holonomy,
+one unsymmetrized plaquette breaks cubic covariance, and a bare `SO(4)` loop is
+generic gauge theory. The next target is the proper-cubic orbit of elementary
+closed spatial plaquettes on `Z^3`, with transported Record rays, coframe
+compatibility/torsion control, and a Palatini-like coframe-area/curvature term
+or exact Regge area-deficit counterpart. Record stress/contact must be
+load-bearing in the stationary coframe equation or intrinsic response. This
+is a spatial-curvature precursor; a Euclidean `Z^3 x Z_tau` spacetime extension
+and Lorentzian continuation remain separate. The carrier and normalized law
+still need derivation from current Record content; full-lattice phase,
+Bianchi/Einstein, and Lorentzian closure remain open. No fifth axiom is proved
+necessary, and no canonical axiom or fixed percentage is changed.

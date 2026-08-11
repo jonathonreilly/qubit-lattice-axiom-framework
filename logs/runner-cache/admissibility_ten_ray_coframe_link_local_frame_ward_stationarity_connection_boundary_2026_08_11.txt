@@ -1,0 +1,56 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_ten_ray_coframe_link_local_frame_ward_stationarity_connection_boundary_2026_08_11.py
+runner_sha256: baa41c60a9cd7d414a33d9c349bdccd4ddf416a37f6bc4836ba239041fa45159
+input_fingerprint_sha256: 73df44b4ff8bff8cecee0b5008288d0ee664f3d526447d096ef18ed2357f9256
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 3.43
+status: ok
+----- stdout -----
+[PASS] premise-and-scope-binding: the runner binds the current four-axiom surface and both local-law/Ward parents without importing a coframe, link, action, or audit verdict
+[PASS] ten-ray-basis-not-continuous-label-orbit: the ten rays are an exact Sym(4) metric basis, while a connected 45-degree frame rotation leaves their finite label set
+       det=-24576; best ray overlap=0.804737854
+[PASS] continuous-score-lift-not-positive-label-mixing: the rank-ten score basis carries the induced continuous Sym(4) action, but its 45-degree matrix has negative entries and is not a stochastic microscopic-label law
+       intertwiner error=4.441e-16; negative entries=32; minimum=-0.500000
+[PASS] continuous-simplex-automorphism-tangent-is-trivial: positivity of a stochastic one-parameter map and its inverse kills every off-diagonal generator entry, while normalization kills the diagonal
+       constraint rank=100; tangent dimension=0
+[PASS] ray-resolved-transport-escape: a positive ray-resolved bond can be exactly frame invariant once coframes and a transforming link are added, so the finite-label boundary is not a gravity no-go
+       covariance error=1.110e-16; fixed-link mutation=0.079329
+[PASS] exact-nonuniform-kkt-background: the supplied wells and link-orthogonality multiplier give an exact stationary representative whose metric nonuniformity is gauge invariant
+       stationarity=3.331e-15; constraint=0.000e+00; ||g1-g0||=7.386643
+[PASS] exact-sitewise-local-frame-invariance: independent endpoint rotations leave the off-shell effective and multiplier sectors invariant and satisfy both infinitesimal first Ward identities
+       finite effective/full=0.000e+00/0.000e+00; first Ward=8.132e-20
+[PASS] record-connected-contact-decomposition: one Record free energy independently assembles a nonzero microscopic q-contact minus connected covariance, with neither term optional
+       contact=0.078602423638; covariance=0.072424082636; complete=0.006178341002
+[PASS] ten-source-mixed-geometry-block: the same two Record sums give a rank-twenty source/coframe Hessian whose twenty scalar-source rows annihilate every local-frame gauge tangent
+       rank=20; minimum singular=0.000559395; Ward=5.150e-23
+[PASS] independent-effective-hessian-differences: centered differences of the complete effective gradient reproduce the separately assembled geometry and mixed-source Hessian blocks
+       geometry=7.292e-10; mixed=1.518e-11
+[PASS] differentiated-sector-and-kkt-ward-identities: effective and multiplier sectors each need their generator derivative, while their nonzero connections cancel in the fully stationary KKT identity
+       sector errors=3.775e-15/0.000e+00; total=6.280e-16; min connection=2.828427
+[PASS] record-ward-role-classification: Record covariance and mixed sources are transverse to every gauge tangent, whereas the microscopic contact is the Record term load-bearing in the differentiated frame identity
+       drop covariance=3.775e-15; drop contact endpoints=0.146369/0.004059
+[PASS] transforming-multiplier-blocks: an anisotropic stationary multiplier transforms nontrivially at the second endpoint, making both constraint curvature and mixed multiplier blocks load-bearing
+       multiplier generator=1.750000; drop mixed/curvature=2.474874/4.250000
+[PASS] intrinsic-gauge-orbit-curvature: raw ambient curvature is canceled by the exponential-chart second fundamental form in each sector and vanishes intrinsically on the gauge orbit
+       effective raw/chart=4.000000/-4.000000; multiplier raw/chart=-4.000000/4.000000
+[PASS] gauge-fixed-and-redundant-hessian-control: the supplied Euclidean witness is positive on its polar/exponential gauge slice and the redundant chart exposes exactly twelve local-frame null directions
+       reduced minimum=3.999999976; gauge zeros=12; next=6.499999989
+[PASS] load-bearing-term-mutations: holding the link fixed, dropping the generator derivative, dropping the multiplier, or dropping the microscopic contact each breaks a different certified statement
+       fixed-link delta=1.171572875254; omitted connection=2.828427; no-multiplier residual=5.105144
+[PASS] ambient-extension-ambiguity: an invariant constraint multiple vanishes intrinsically yet tunes the ambient sector connection and is absorbed by an opposite multiplier shift
+       intrinsic shift=0.000e+00; shifted KKT=3.331e-15; connection norm=11.313708
+[PASS] nonuniformity-not-pure-gauge: metric invariants distinguish the anisotropic witness from a coordinate-nonuniform pure-gauge coframe/link control
+       pure-gauge metric difference=1.115e-16; witness=7.386643
+[PASS] stationarity-target-correction-and-scope: the note replaces the inconsistent nonzero-total-connection target by sector cancellation and keeps coframe/link selection, curvature, phase, diffeomorphism, Einstein, and Lorentzian content open
+N5_CERTIFICATE: all ten Record rays, twenty sources, two coframes, one link, and twelve local-frame generators were executed
+N5_CERTIFICATE: covariance, microscopic contact, mixed source, multiplier, generator, and intrinsic-chart terms were assembled separately
+per_element: checked one null plus ten actual-ray Record terms and exact rank-ten metric spanning
+per_site: checked both endpoints and all six SO(4) generators at each endpoint
+per_mode: checked twenty source directions, twelve gauge tangents, and twenty-six gauge-fixed directions
+per_block: checked one supplied two-vertex/one-link Euclidean KKT functional and its off-shell frame orbit
+lattice_wide: checked and not executed — no plaquette, six-incidence star, full-Z3 phase, diffeomorphism, or Lorentzian dynamics is certified
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

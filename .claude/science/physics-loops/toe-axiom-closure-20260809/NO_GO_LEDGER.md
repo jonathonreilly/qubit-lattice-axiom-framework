@@ -299,3 +299,15 @@ exact frame redundancy supplies every connected/contact/connection term on a
 nonuniform background. The bounded result therefore corrects the wall count
 to four and explicitly rejects both a gravity no-go and a fifth-axiom
 necessity claim.
+
+## Block 36 Finite-Label / Local-Frame Boundary
+
+| Scoped claim | Exact/bounded evidence | N1--N8 disposition | Forbidden promotion | Live routes |
+|---|---|---|---|---|
+| Block 35's ten discrete metric probes and coarse geometry/occupancy bond alone cannot carry a nontrivial infinitesimal connected local-frame permutation action; a supplied continuous coframe/link extension does carry an exact finite KKT Ward identity | `det M=-24576`; 45-degree best label overlap `0.804737854`; induced score lift exact with 32 negative entries; simplex tangent rank/nullity `100/0`; transported-bond covariance `1.11e-16`; stationary KKT residual `3.331e-15`; sector Ward errors `3.775e-15/0`, total `6.280e-16`; twelve gauge nulls; `PASS=19 FAIL=0` | pass only for the exact ten-label permutation boundary and the supplied two-vertex/one-link Euclidean witness; five executed N1 families, six pairwise-independent walls, exact residual matching, scope certificate, primitive scan, hostile continuous-carrier steelman, and per-wall cross-cycle echo are landing in the theorem/cache | do not infer a local-frame, gravity, coframe-emergence, curvature, diffeomorphism/Einstein, Lorentzian, fifth-axiom, or ontology no-go; do not call ambient connection terms physical | derive the coframe/link and normalized law from Record content; prove a discrete identity; construct the proper-cubic orbit of closed transported-ray spatial plaquettes with coframe compatibility and Palatini/Regge linear curvature; then full-lattice phase, Bianchi/Einstein, and Lorentzian closure |
+
+The broad negative is defeated constructively: the score span transforms
+continuously, the coframe/link Ward identity closes, and a positive
+ray-resolved bond is exactly covariant. The remaining obstruction is therefore
+carrier and law derivation plus genuine gravitational curvature, not an axiom
+amendment.

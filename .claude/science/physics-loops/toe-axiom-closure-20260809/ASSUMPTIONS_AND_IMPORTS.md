@@ -689,3 +689,22 @@ joint law, full-`Z^3` phase, local-frame/diffeomorphism Ward theorem, complete
 OS reconstruction, permanent-Record update, or Lorentzian dynamics. No
 external science, observed constant, canonical edit, percentage move, audit
 verdict, or `review-loop` is imported.
+
+## Block 36 Assumptions And Imports
+
+Block 36 imports the current four-axiom surface, Block 35's ordered ten-ray
+dictionary and two orbit-weight rows, and Block 23's differentiated-Ward
+bookkeeping obligation. It imports none of Block 23's reconstructed Regge
+matrices or coefficients. The registered scale-reference, kinetic-isotropy,
+and realized-state primitives were checked at their source notes; none supplies
+a coframe, link, action, probability weight, curvature law, or dynamics.
+
+The two coframes, positive-determinant ambient link coordinate, orthogonality
+constraint, symmetric multiplier, endpoint weights, metric wells, coupling
+`alpha=4`, and anisotropic stationary representative are supplied bounded
+witness data. The constrained link is in `SO(4)`; off-shell KKT derivatives use
+the declared ambient matrix coordinate. The positive ray-resolved transported
+bond is an executed escape, not a selected physical law. A local-frame Ward
+identity is internal-frame redundancy, not lattice diffeomorphism, Bianchi,
+Einstein, or Lorentz closure. No external science, observed constant,
+canonical edit, percentage move, audit verdict, or `review-loop` is imported.

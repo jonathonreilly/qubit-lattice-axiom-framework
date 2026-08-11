@@ -47,17 +47,24 @@ BYTE_PINNED_INPUT_PATHS = (
     "outputs/patch_uniformity_induction_cycle986_receipt_2026_08_11.json",
 )
 EXPECTED_INPUT_SHA256 = {
-    PRIMARY_PATH: "442afdb3ee621cfb4e1b05e490d937ce5379785c2cf55820b7aed531de2a149c",
-    PRIMARY_RECEIPT_PATH: "88db21fb2c46b584a5fd0ab8d876c098ef2560a9009732e62953a58fbb55996f",
+    PRIMARY_PATH: "b95440a62f3909a9fd584ae5d24b7c7a1bea24dccc8415e0950d9a3b87c46f7a",
+    PRIMARY_RECEIPT_PATH: "f4ce7ee8d1f4c4838234b2a63d8e006d099ff47b3e284d81fb25a5008764d3e2",
 }
 EXPECTED_INPUT_BLOBS = {
-    PRIMARY_PATH: "765f14989d67860806be5762444ccf70ad401f35",
-    PRIMARY_RECEIPT_PATH: "5b6b355e24df01dbe097dc962a377615a8d07d7a",
+    PRIMARY_PATH: "d591b1723ca7f0c80e83e6e334f2879f22550aa2",
+    PRIMARY_RECEIPT_PATH: "d2eb2799a81026ab8e36c04f39b437140c5713f8",
 }
 FORBIDDEN_IMPORT_FRAGMENTS = (
     "frontier_cycle719_two_rail_recurrent_controller_core",
     "frontier_cycle986_patch_uniformity_induction_2026_08_11",
     "cycle737", "cycle738", "cycle983",
+)
+EXACT_QUANTIFIER = (
+    "for every integer n>=2 and every ordered tuple of distinct targets "
+    "(t1,...,tn) in Z^3 such that t2-t1 is a signed unit vector and, for each "
+    "m=3,...,n, S(tm) intersects the union of S(ti) for i<m, the same relative "
+    "23-program dependence-law chart is translation-uniform on all targets of "
+    "the finite support union Omega_n"
 )
 
 O = (0, 0, 0)
@@ -453,6 +460,7 @@ def independent_expected() -> dict:
         "verdict_line": (
             "FINITE_P2X_ROOTED_STAR_GLUED_PATCH_UNIFORMITY_FOR_ARBITRARY_FINITE_TARGET_COUNT"
         ),
+        "exact_quantifier": EXACT_QUANTIFIER,
         "infinite_claimed": False,
     }
 
@@ -478,6 +486,7 @@ def selected_primary_view(receipt: dict) -> dict:
         "group_order": cases[0]["new_target_census"]["orbit_stabilizer_products"][0],
         "induction_status": induction["induction_status"],
         "verdict_line": induction["verdict_line"],
+        "exact_quantifier": induction["exact_quantifier"],
         "infinite_claimed": induction["full_infinite_translation_uniform_lattice_law_claimed"],
     }
 
@@ -498,14 +507,28 @@ def parse_cache(payload: str) -> dict:
 
 
 def expected_overlap_agreement(row: dict) -> tuple[bool, bool, bool]:
-    site_agreement = all(site["binding_agrees"] for site in row["shared_site_agreement_table"])
+    site_agreement = all(
+        site["binding_agrees"] == (site["left_binding"] == site["right_binding"])
+        and site["binding_agrees"]
+        for site in row["shared_site_agreement_table"]
+    )
     pair_agreement = all(
         pair["semantic_pair_in_both"]
         and pair["z3_edge_left"] == pair["z3_edge_right"]
         and pair["left_class"] == pair["right_class"]
         and pair["left_J"] == pair["right_J"]
         and pair["normalized_boolean_tables_agree"]
+            == (
+                pair["normalized_boolean_table_left"]
+                == pair["normalized_boolean_table_right"]
+            )
+        and pair["normalized_boolean_tables_agree"]
         and pair["left_changed_edge_pairs"] == pair["right_changed_edge_pairs"]
+        and pair["canonical_global_paths_agree"]
+            == (
+                pair["canonical_global_path_left"]
+                == pair["canonical_global_path_right"]
+            )
         and pair["canonical_global_paths_agree"]
         for pair in row["shared_pair_agreement_table"]
     )
@@ -550,6 +573,35 @@ def derive_induction(receipt: dict) -> tuple[str, str | None]:
             "obstruction": failed_cases[0]["exact_obstruction"],
         })
     return "FINITE_PATCH_INDUCTION_CLOSES_AT_DECLARED_SCOPE", None
+
+
+def derive_base_outcome(base: dict) -> tuple[str, str | None]:
+    if not all(row["all_words_routable"] for row in base["per_target_census"]):
+        return "NOT_HOSTABLE", "one or more P2x target charts are not route-hostable"
+    if not base["target_local_template_fields_agree"]:
+        return "OBSTRUCTED", "P2x target-local template records disagree"
+    if not base["adjacent_star_overlap"]["agreement"]:
+        return "OBSTRUCTED", "P2x adjacent-star restrictions disagree"
+    return "P2X_BASE_VERIFIED", None
+
+
+def target_census_bookkeeping_valid(row: dict) -> bool:
+    return bool(
+        row["complete_closed_star"] == (len(star(tuple(row["target"]))) == 7)
+        and row["all_words_routable"] == (row["route_failure_count"] == 0)
+        and len(row["class_size_J_table"]) == len(row["orbit_stabilizer_products"])
+    )
+
+
+def cocycle_row_bookkeeping_valid(row: dict) -> bool:
+    bindings = row["all_chart_bindings"]
+    return bool(
+        row["old_chart_membership_count"] == len(row["old_chart_memberships"])
+        and len(bindings) == row["old_chart_membership_count"] + 1
+        and bool(bindings)
+        and row["new_chart_binding"] == bindings[-1]
+        and row["site_cocycle_agrees"] == (len(set(bindings)) == 1)
+    )
 
 
 def validate_bookkeeping(receipt: dict, cache_payload: str) -> tuple[bool, list[str]]:
@@ -610,6 +662,22 @@ def validate_bookkeeping(receipt: dict, cache_payload: str) -> tuple[bool, list[
         )
         if row["multiply_shared_site_count"] != expected_multi:
             errors.append(f"case_cocycle_count:{index}")
+        if not target_census_bookkeeping_valid(row["new_target_census"]):
+            errors.append(f"case_target_census:{index}")
+        for overlap_index, overlap in enumerate(row["new_to_old_agreement_table"]):
+            site, pair, agreement = expected_overlap_agreement(overlap)
+            if overlap["shared_site_count"] != len(overlap["shared_site_agreement_table"]):
+                errors.append(f"case_shared_site_count:{index}:{overlap_index}")
+            if overlap["shared_pair_count"] != len(overlap["shared_pair_agreement_table"]):
+                errors.append(f"case_shared_pair_count:{index}:{overlap_index}")
+            if overlap["site_bindings_agree"] != site:
+                errors.append(f"case_site_agreement:{index}:{overlap_index}")
+            if overlap["pair_relations_boolean_classes_J_and_paths_agree"] != pair:
+                errors.append(f"case_pair_agreement:{index}:{overlap_index}")
+            if overlap["agreement"] != agreement:
+                errors.append(f"case_overlap_agreement:{index}:{overlap_index}")
+        if not all(cocycle_row_bookkeeping_valid(site) for site in row["site_cocycle_table"]):
+            errors.append(f"case_cocycle_rows:{index}")
         outcome, obstruction = derive_case_outcome(row)
         if row["outcome"] != outcome:
             errors.append(f"case_outcome:{index}")
@@ -633,7 +701,17 @@ def validate_bookkeeping(receipt: dict, cache_payload: str) -> tuple[bool, list[
     )
     if base["target_local_template_fields_agree"] != expected_base_agreement:
         errors.append("base_local_agreement")
-    if base["outcome"] not in {"P2X_BASE_VERIFIED", "OBSTRUCTED", "NOT_HOSTABLE"}:
+    if not all(target_census_bookkeeping_valid(row) for row in base["per_target_census"]):
+        errors.append("base_target_census")
+    site, pair, agreement = expected_overlap_agreement(base["adjacent_star_overlap"])
+    base_overlap = base["adjacent_star_overlap"]
+    if base_overlap["site_bindings_agree"] != site:
+        errors.append("base_site_agreement")
+    if base_overlap["pair_relations_boolean_classes_J_and_paths_agree"] != pair:
+        errors.append("base_pair_agreement")
+    if base_overlap["agreement"] != agreement:
+        errors.append("base_overlap_agreement")
+    if (base["outcome"], base["exact_obstruction"]) != derive_base_outcome(base):
         errors.append("base_outcome")
     if induction["induction_status"] != expected_status:
         errors.append("induction_status")
@@ -641,7 +719,7 @@ def validate_bookkeeping(receipt: dict, cache_payload: str) -> tuple[bool, list[
         errors.append("induction_obstruction")
     if induction["full_infinite_translation_uniform_lattice_law_claimed"] is not False:
         errors.append("infinite_scope")
-    if not induction["exact_quantifier"] or not induction["scope_exclusions"]:
+    if induction["exact_quantifier"] != EXACT_QUANTIFIER or not induction["scope_exclusions"]:
         errors.append("quantifier_scope")
     if not all(receipt.get("checks", {}).values()) or not receipt.get("pass"):
         errors.append("primary_checks")
@@ -700,10 +778,25 @@ def mutation_campaign(receipt: dict, cache_payload: str) -> list[dict]:
                  ["verified_cases"][0].__setitem__("new_support_site_count", 99))
     add_mutation("case_outcome", lambda row, cache: row["findings"]["B_STEP_VERIFICATION"]
                  ["verified_cases"][0].__setitem__("outcome", "OBSTRUCTED"))
+    add_mutation("base_outcome_unreconciled", lambda row, cache: row["findings"]
+                 ["C_INDUCTION_STATUS"]["base_case_reconstruction"].__setitem__(
+                     "outcome", "OBSTRUCTED"
+                 ))
+    add_mutation("route_flag_unreconciled", lambda row, cache: row["findings"]
+                 ["B_STEP_VERIFICATION"]["verified_cases"][0]["new_target_census"]
+                 .__setitem__("all_words_routable", False))
+    add_mutation("case_overlap_flag_unreconciled", lambda row, cache: row["findings"]
+                 ["B_STEP_VERIFICATION"]["verified_cases"][0]
+                 ["new_to_old_agreement_table"][0].__setitem__("agreement", False))
+    add_mutation("cocycle_flag_unreconciled", lambda row, cache: row["findings"]
+                 ["B_STEP_VERIFICATION"]["verified_cases"][0]
+                 ["site_cocycle_table"][0].__setitem__("site_cocycle_agrees", False))
     add_mutation("induction_status", lambda row, cache: row["findings"]["C_INDUCTION_STATUS"]
                  .__setitem__("induction_status", "OBSTRUCTED"))
     add_mutation("infinite_scope", lambda row, cache: row["findings"]["C_INDUCTION_STATUS"]
                  .__setitem__("full_infinite_translation_uniform_lattice_law_claimed", True))
+    add_mutation("exact_quantifier", lambda row, cache: row["findings"]["C_INDUCTION_STATUS"]
+                 .__setitem__("exact_quantifier", "for n=infinity and all of Z3"))
     add_mutation("primary_source_pin", lambda row, cache: row.__setitem__(
         "primary_source_sha256", "0" * 64
     ))
@@ -727,6 +820,7 @@ def coherent_outcome_probes(receipt: dict, cache_payload: str) -> list[dict]:
     case = obstructed["findings"]["B_STEP_VERIFICATION"]["verified_cases"][0]
     overlap = case["new_to_old_agreement_table"][0]
     overlap["shared_site_agreement_table"][0]["binding_agrees"] = False
+    overlap["shared_site_agreement_table"][0]["right_binding"] = "q_conflicting_binding"
     overlap["site_bindings_agree"] = False
     overlap["agreement"] = False
     case["outcome"] = "OBSTRUCTED"

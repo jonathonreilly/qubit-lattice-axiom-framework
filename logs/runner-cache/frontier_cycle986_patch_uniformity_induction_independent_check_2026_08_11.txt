@@ -1,15 +1,15 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle986_patch_uniformity_induction_independent_check_2026_08_11.py
-runner_sha256: 268f2f641ec3d5bcc0682085e21b2b154036852919ad4f7c741394ad7d7ec772
-input_fingerprint_sha256: fcd677da90afb162ff2fdd1e1c8b419ed8eb93573eeeeb2c6812c102c86a820e
+runner_sha256: 9efc5adc701ed700a9c9db688826688badf629387aaaa69474645b3483f5fbf6
+input_fingerprint_sha256: ad99d6bb362d51fa537eb490837200f75e8a44bea1c05016b7cc5de90e65dcc8
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.21
+elapsed_sec: 0.20
 status: ok
 ----- stdout -----
 CYCLE986_PATCH_UNIFORMITY_INDUCTION_INDEPENDENT_CHECK
 A_INDEPENDENT_RECONSTRUCTION PASS :: offsets=24; classes=[["CNOT",6,[1]],["TOF_OPPOSITE_CONTROLS",3,[0]],["TOF_PERPENDICULAR_CONTROLS",12,[2]]]; agreement=True
-B_REFUTATION_POWER PASS :: rejected=14/14; outcome_neutral=[true,true]
+B_REFUTATION_POWER PASS :: rejected=19/19; outcome_neutral=[true,true]
 C_ARTIFACT_BINDING PASS :: pins=True; clean_bookkeeping=True
 D_PROVENANCE PASS :: primary_imported=False; cycle719_imported=False; prior_cycles_executed=False
 E_CONTROLS PASS :: source_reads=3<=6; determinism=True; runtime_lt_300=True

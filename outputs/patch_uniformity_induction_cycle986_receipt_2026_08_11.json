@@ -5341,7 +5341,7 @@
   },
   "integrity_policy": "checks gate construction, reconciliation, and provenance only; verified, obstructed, not-hostable, and not-glueable outcomes remain cleanly reportable",
   "pass": true,
-  "primary_source_sha256": "442afdb3ee621cfb4e1b05e490d937ce5379785c2cf55820b7aed531de2a149c",
+  "primary_source_sha256": "b95440a62f3909a9fd584ae5d24b7c7a1bea24dccc8415e0950d9a3b87c46f7a",
   "science_digest": "b54f3d7c79886a54b32cbabad4a786319c30a2499034d6d1e94757253b9c7349",
   "stdout_sha256": "2cab39376bb3123c0dd9e5e34049ef668158d0706d3d5816111f0d58629d8da2"
 }

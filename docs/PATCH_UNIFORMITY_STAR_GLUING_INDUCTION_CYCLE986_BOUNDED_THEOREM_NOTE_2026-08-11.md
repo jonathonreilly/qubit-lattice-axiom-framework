@@ -239,9 +239,10 @@ complete canonical primary cache, and independently reconstructs:
 - the exact finite quantifier and false infinite-scope flag.
 
 Science agreement is reported data rather than an integrity condition. The
-checker rejects fourteen corruptions covering census counts, pair/path data,
-universal flags, case arity/support/outcome, induction scope, artifact pins and
-cached stdout. It also constructs coherent `OBSTRUCTED` and `NOT_HOSTABLE`
+checker rejects nineteen corruptions covering census counts, pair/path data,
+universal flags, case arity/support/outcome, the exact finite quantifier,
+infinite-scope flag, artifact pins and cached stdout. It also constructs
+coherent `OBSTRUCTED` and `NOT_HOSTABLE`
 receipts; both pass the same bookkeeping validator.
 
 ### Artifacts and reproduction

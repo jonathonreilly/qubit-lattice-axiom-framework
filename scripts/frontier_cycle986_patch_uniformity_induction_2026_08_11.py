@@ -57,6 +57,13 @@ BLOCKLIST_AST_FRAGMENTS = ("cycle737", "cycle738", "cycle983")
 
 PRIMARY_PATH = "scripts/frontier_cycle986_patch_uniformity_induction_2026_08_11.py"
 RECEIPT_PATH = "outputs/patch_uniformity_induction_cycle986_receipt_2026_08_11.json"
+EXACT_QUANTIFIER = (
+    "for every integer n>=2 and every ordered tuple of distinct targets "
+    "(t1,...,tn) in Z^3 such that t2-t1 is a signed unit vector and, for each "
+    "m=3,...,n, S(tm) intersects the union of S(ti) for i<m, the same relative "
+    "23-program dependence-law chart is translation-uniform on all targets of "
+    "the finite support union Omega_n"
+)
 
 ZERO = (0, 0, 0)
 DIRECTIONS = (
@@ -453,6 +460,63 @@ def overlap_record(left: tuple, right: tuple) -> dict:
     }
 
 
+def overlap_row_bookkeeping_valid(row: dict) -> bool:
+    site_rows = row["shared_site_agreement_table"]
+    pair_rows = row["shared_pair_agreement_table"]
+    site_agreement = all(
+        site["binding_agrees"]
+        == (site["left_binding"] == site["right_binding"])
+        for site in site_rows
+    )
+    pair_agreement = all(
+        pair["semantic_pair_in_both"]
+        and pair["z3_edge_left"] == pair["z3_edge_right"]
+        and pair["left_class"] == pair["right_class"]
+        and pair["left_J"] == pair["right_J"]
+        and pair["normalized_boolean_tables_agree"]
+            == (
+                pair["normalized_boolean_table_left"]
+                == pair["normalized_boolean_table_right"]
+            )
+        and pair["normalized_boolean_tables_agree"]
+        and pair["left_changed_edge_pairs"] == pair["right_changed_edge_pairs"]
+        and pair["canonical_global_paths_agree"]
+            == (
+                pair["canonical_global_path_left"]
+                == pair["canonical_global_path_right"]
+            )
+        and pair["canonical_global_paths_agree"]
+        for pair in pair_rows
+    )
+    return bool(
+        row["shared_site_count"] == len(site_rows)
+        and row["shared_pair_count"] == len(pair_rows)
+        and row["site_bindings_agree"] == site_agreement
+        and row["pair_relations_boolean_classes_J_and_paths_agree"] == pair_agreement
+        and row["agreement"] == (site_agreement and pair_agreement)
+    )
+
+
+def target_census_bookkeeping_valid(row: dict) -> bool:
+    center = tuple(row["target"])
+    return bool(
+        row["complete_closed_star"] == (len(closed_star(center)) == 7)
+        and row["all_words_routable"] == (row["route_failure_count"] == 0)
+        and len(row["class_size_J_table"]) == len(row["orbit_stabilizer_products"])
+    )
+
+
+def cocycle_row_bookkeeping_valid(row: dict) -> bool:
+    bindings = row["all_chart_bindings"]
+    return bool(
+        row["old_chart_membership_count"] == len(row["old_chart_memberships"])
+        and len(bindings) == row["old_chart_membership_count"] + 1
+        and bool(bindings)
+        and row["new_chart_binding"] == bindings[-1]
+        and row["site_cocycle_agrees"] == (len(set(bindings)) == 1)
+    )
+
+
 def universal_overlap_census() -> dict:
     rows = []
     for offset in product(range(-2, 3), repeat=3):
@@ -508,23 +572,7 @@ def extension_case(name: str, existing: tuple, new_target: tuple) -> dict:
             "all_chart_bindings": bindings,
             "site_cocycle_agrees": len(set(bindings)) == 1,
         })
-    new_census = target_census(new_target)
-    if not overlap_rows:
-        outcome = "NOT_GLUEABLE_EMPTY_OVERLAP"
-        obstruction = "new closed star has empty intersection with existing support"
-    elif not new_census["all_words_routable"]:
-        outcome = "NOT_HOSTABLE"
-        obstruction = f"new target {coordinate_name(new_target)} is not route-hostable"
-    elif not all(row["agreement"] for row in overlap_rows):
-        outcome = "OBSTRUCTED"
-        obstruction = "one or more new-to-old chart restrictions disagree"
-    elif not all(row["site_cocycle_agrees"] for row in cocycle_rows):
-        outcome = "OBSTRUCTED"
-        obstruction = "a multiply shared site fails the chart cocycle"
-    else:
-        outcome = "GLUING_STEP_VERIFIED"
-        obstruction = None
-    return {
+    result = {
         "case": name,
         "k": len(existing),
         "existing_targets": [list(target) for target in existing],
@@ -537,10 +585,27 @@ def extension_case(name: str, existing: tuple, new_target: tuple) -> dict:
         "multiply_shared_site_count": sum(
             row["old_chart_membership_count"] > 1 for row in cocycle_rows
         ),
-        "new_target_census": new_census,
-        "outcome": outcome,
-        "exact_obstruction": obstruction,
+        "new_target_census": target_census(new_target),
     }
+    outcome, obstruction = derive_extension_outcome(result)
+    result.update({"outcome": outcome, "exact_obstruction": obstruction})
+    return result
+
+
+def derive_extension_outcome(row: dict) -> tuple[str, str | None]:
+    if not row["new_to_old_agreement_table"]:
+        return (
+            "NOT_GLUEABLE_EMPTY_OVERLAP",
+            "new closed star has empty intersection with existing support",
+        )
+    if not row["new_target_census"]["all_words_routable"]:
+        target = tuple(row["new_target"])
+        return "NOT_HOSTABLE", f"new target {coordinate_name(target)} is not route-hostable"
+    if not all(overlap["agreement"] for overlap in row["new_to_old_agreement_table"]):
+        return "OBSTRUCTED", "one or more new-to-old chart restrictions disagree"
+    if not all(site["site_cocycle_agrees"] for site in row["site_cocycle_table"]):
+        return "OBSTRUCTED", "a multiply shared site fails the chart cocycle"
+    return "GLUING_STEP_VERIFIED", None
 
 
 def gluing_step_measurement(census: dict) -> dict:
@@ -593,27 +658,26 @@ def base_case_measurement() -> dict:
         row[field] == target_rows[0][field]
         for row in target_rows[1:] for field in local_fields
     )
-    if not all(row["all_words_routable"] for row in target_rows):
-        outcome = "NOT_HOSTABLE"
-        obstruction = "one or more P2x target charts are not route-hostable"
-    elif not local_agreement:
-        outcome = "OBSTRUCTED"
-        obstruction = "P2x target-local template records disagree"
-    elif not overlap["agreement"]:
-        outcome = "OBSTRUCTED"
-        obstruction = "P2x adjacent-star restrictions disagree"
-    else:
-        outcome = "P2X_BASE_VERIFIED"
-        obstruction = None
-    return {
+    result = {
         "targets": [list(TARGET_A), list(TARGET_B)],
         "support_site_count": len(set(closed_star(TARGET_A)) | set(closed_star(TARGET_B))),
         "per_target_census": target_rows,
         "target_local_template_fields_agree": local_agreement,
         "adjacent_star_overlap": overlap,
-        "outcome": outcome,
-        "exact_obstruction": obstruction,
     }
+    outcome, obstruction = derive_base_outcome(result)
+    result.update({"outcome": outcome, "exact_obstruction": obstruction})
+    return result
+
+
+def derive_base_outcome(base: dict) -> tuple[str, str | None]:
+    if not all(row["all_words_routable"] for row in base["per_target_census"]):
+        return "NOT_HOSTABLE", "one or more P2x target charts are not route-hostable"
+    if not base["target_local_template_fields_agree"]:
+        return "OBSTRUCTED", "P2x target-local template records disagree"
+    if not base["adjacent_star_overlap"]["agreement"]:
+        return "OBSTRUCTED", "P2x adjacent-star restrictions disagree"
+    return "P2X_BASE_VERIFIED", None
 
 
 def derive_induction_status(
@@ -648,13 +712,7 @@ def induction_measurement(gluing: dict, cases: list[dict], base: dict) -> dict:
         "base_case_provenance": (
             "P2x is reconstructed inside this runner without executing prior-cycle text or AST"
         ),
-        "exact_quantifier": (
-            "for every integer n>=2 and every ordered tuple of distinct targets "
-            "(t1,...,tn) in Z^3 such that t2-t1 is a signed unit vector and, for each "
-            "m=3,...,n, S(tm) intersects the union of S(ti) for i<m, the same relative "
-            "23-program dependence-law chart is translation-uniform on all targets of "
-            "the finite support union Omega_n"
-        ),
+        "exact_quantifier": EXACT_QUANTIFIER,
         "verdict_line": (
             "FINITE_P2X_ROOTED_STAR_GLUED_PATCH_UNIFORMITY_FOR_ARBITRARY_FINITE_TARGET_COUNT"
             if status == "FINITE_PATCH_INDUCTION_CLOSES_AT_DECLARED_SCOPE"
@@ -763,15 +821,7 @@ def validate_science_bookkeeping(findings: dict) -> dict:
         census["oriented_overlap_offset_count"] == len(census["rows"])
         and sum(row["oriented_offset_count"] for row in census["type_summary"])
             == len(census["rows"])
-        and all(
-            row["shared_site_count"] == len(row["shared_site_agreement_table"])
-            and row["shared_pair_count"] == len(row["shared_pair_agreement_table"])
-            and row["agreement"] == (
-                row["site_bindings_agree"]
-                and row["pair_relations_boolean_classes_J_and_paths_agree"]
-            )
-            for row in census["rows"]
-        )
+        and all(overlap_row_bookkeeping_valid(row) for row in census["rows"])
     )
     b = bool(
         findings["B_STEP_VERIFICATION"]["case_count"] == len(cases)
@@ -783,10 +833,14 @@ def validate_science_bookkeeping(findings: dict) -> dict:
                 site["old_chart_membership_count"] > 1
                 for site in row["site_cocycle_table"]
             )
-            and row["outcome"] in {
-                "GLUING_STEP_VERIFIED", "OBSTRUCTED", "NOT_HOSTABLE",
-                "NOT_GLUEABLE_EMPTY_OVERLAP",
-            }
+            and target_census_bookkeeping_valid(row["new_target_census"])
+            and all(
+                overlap_row_bookkeeping_valid(overlap)
+                for overlap in row["new_to_old_agreement_table"]
+            )
+            and all(cocycle_row_bookkeeping_valid(site) for site in row["site_cocycle_table"])
+            and (row["outcome"], row["exact_obstruction"])
+                == derive_extension_outcome(row)
             for row in cases
         )
     )
@@ -804,13 +858,10 @@ def validate_science_bookkeeping(findings: dict) -> dict:
         len(base["targets"]) == len(base["per_target_census"]) == 2
         and base["support_site_count"] == 12
         and base["target_local_template_fields_agree"] == base_local_agreement
-        and base["adjacent_star_overlap"]["agreement"]
-        == (
-            base["adjacent_star_overlap"]["site_bindings_agree"]
-            and base["adjacent_star_overlap"]
-                ["pair_relations_boolean_classes_J_and_paths_agree"]
-        )
-        and base["outcome"] in {"P2X_BASE_VERIFIED", "OBSTRUCTED", "NOT_HOSTABLE"}
+        and all(target_census_bookkeeping_valid(row) for row in base["per_target_census"])
+        and overlap_row_bookkeeping_valid(base["adjacent_star_overlap"])
+        and (base["outcome"], base["exact_obstruction"])
+            == derive_base_outcome(base)
     )
     expected_status, expected_obstruction = derive_induction_status(gluing, cases, base)
     c = bool(
@@ -819,7 +870,7 @@ def validate_science_bookkeeping(findings: dict) -> dict:
         induction["induction_status"] == expected_status
         and induction["exact_obstruction"] == expected_obstruction
         and induction["full_infinite_translation_uniform_lattice_law_claimed"] is False
-        and bool(induction["exact_quantifier"])
+        and induction["exact_quantifier"] == EXACT_QUANTIFIER
         and bool(induction["scope_exclusions"])
     )
     return {

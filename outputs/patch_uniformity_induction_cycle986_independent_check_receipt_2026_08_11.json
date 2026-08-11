@@ -1,7 +1,7 @@
 {
   "artifact": "finite-patch gluing induction independent refutation checker",
   "audit_status_authority": "independent audit lane only",
-  "checker_source_sha256": "268f2f641ec3d5bcc0682085e21b2b154036852919ad4f7c741394ad7d7ec772",
+  "checker_source_sha256": "9efc5adc701ed700a9c9db688826688badf629387aaaa69474645b3483f5fbf6",
   "checks": {
     "A_INDEPENDENT_RECONSTRUCTION": true,
     "B_REFUTATION_POWER": true,
@@ -23,12 +23,12 @@
     "forbidden_imports": [],
     "house_stdout_limit_bytes": 6000,
     "input_git_blobs": {
-      "outputs/patch_uniformity_induction_cycle986_receipt_2026_08_11.json": "5b6b355e24df01dbe097dc962a377615a8d07d7a",
-      "scripts/frontier_cycle986_patch_uniformity_induction_2026_08_11.py": "765f14989d67860806be5762444ccf70ad401f35"
+      "outputs/patch_uniformity_induction_cycle986_receipt_2026_08_11.json": "d2eb2799a81026ab8e36c04f39b437140c5713f8",
+      "scripts/frontier_cycle986_patch_uniformity_induction_2026_08_11.py": "d591b1723ca7f0c80e83e6e334f2879f22550aa2"
     },
     "input_sha256": {
-      "outputs/patch_uniformity_induction_cycle986_receipt_2026_08_11.json": "88db21fb2c46b584a5fd0ab8d876c098ef2560a9009732e62953a58fbb55996f",
-      "scripts/frontier_cycle986_patch_uniformity_induction_2026_08_11.py": "442afdb3ee621cfb4e1b05e490d937ce5379785c2cf55820b7aed531de2a149c"
+      "outputs/patch_uniformity_induction_cycle986_receipt_2026_08_11.json": "f4ce7ee8d1f4c4838234b2a63d8e006d099ff47b3e284d81fb25a5008764d3e2",
+      "scripts/frontier_cycle986_patch_uniformity_induction_2026_08_11.py": "b95440a62f3909a9fd584ae5d24b7c7a1bea24dccc8415e0950d9a3b87c46f7a"
     },
     "literal_audit_input_paths": [
       "scripts/frontier_cycle986_patch_uniformity_induction_2026_08_11.py",
@@ -1455,6 +1455,7 @@
           ]
         ]
       ],
+      "exact_quantifier": "for every integer n>=2 and every ordered tuple of distinct targets (t1,...,tn) in Z^3 such that t2-t1 is a signed unit vector and, for each m=3,...,n, S(tm) intersects the union of S(ti) for i<m, the same relative 23-program dependence-law chart is translation-uniform on all targets of the finite support union Omega_n",
       "group_order": 24,
       "induction_status": "FINITE_PATCH_INDUCTION_CLOSES_AT_DECLARED_SCOPE",
       "infinite_claimed": false,
@@ -5418,6 +5419,42 @@
       },
       {
         "errors": [
+          "base_outcome",
+          "induction_status",
+          "induction_obstruction"
+        ],
+        "name": "base_outcome_unreconciled",
+        "rejected": true
+      },
+      {
+        "errors": [
+          "case_target_census:0",
+          "case_outcome:0",
+          "case_obstruction:0"
+        ],
+        "name": "route_flag_unreconciled",
+        "rejected": true
+      },
+      {
+        "errors": [
+          "case_overlap_agreement:0:0",
+          "case_outcome:0",
+          "case_obstruction:0"
+        ],
+        "name": "case_overlap_flag_unreconciled",
+        "rejected": true
+      },
+      {
+        "errors": [
+          "case_cocycle_rows:0",
+          "case_outcome:0",
+          "case_obstruction:0"
+        ],
+        "name": "cocycle_flag_unreconciled",
+        "rejected": true
+      },
+      {
+        "errors": [
           "induction_status"
         ],
         "name": "induction_status",
@@ -5428,6 +5465,13 @@
           "infinite_scope"
         ],
         "name": "infinite_scope",
+        "rejected": true
+      },
+      {
+        "errors": [
+          "quantifier_scope"
+        ],
+        "name": "exact_quantifier",
         "rejected": true
       },
       {
@@ -5450,6 +5494,6 @@
   },
   "integrity_policy": "checks gate independent reconstruction, bookkeeping, artifact binding, mutation rejection, and outcome neutrality only; science agreement is reported data",
   "pass": true,
-  "science_digest": "7745de21756a946e20c47beea2099ab551e76f49ff0856d6655bf83c014af623",
-  "stdout_sha256": "7254d40812ed8f85300e68ae72992496515e2901e034b7ecd7057586b3a31d90"
+  "science_digest": "a903a45c0009409c797e1a19ed9f97ec7aa7d0d8fca1cc9217e185df45d2d930",
+  "stdout_sha256": "e488f4b4c269d28e3645ef69597d051a39696378bdd79c8315fd2ebe3764ae00"
 }

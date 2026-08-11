@@ -1,9 +1,9 @@
 # Witness-orbit multiplicity bounded theorem
 
-Date: 2026-08-11  
-Cycle: 980  
-Claim type: `bounded_theorem`  
-Audit-status authority: independent audit lane only  
+Date: 2026-08-11
+Cycle: 980
+Claim type: `bounded_theorem`
+Audit-status authority: independent audit lane only
 Effective status: pipeline-derived only after independent audit ratification and dependency closure
 
 ## Trace gate

@@ -243,8 +243,11 @@ def primary_class_rows(receipt: dict) -> list[dict]:
 
 
 def independent_readout_result(classes: list[dict]) -> dict:
-    pairs = [pair for row in classes for pair in row["separated"]]
-    deltas = [after - before for _, _, _, before, after in pairs]
+    pairs = [
+        (row.get("class", "synthetic equal-content fixture"), *pair)
+        for row in classes for pair in row["separated"]
+    ]
+    deltas = [after - before for _, _, _, _, before, after in pairs]
     visible_count = sum(delta != 0 for delta in deltas)
     if pairs and visible_count == len(pairs):
         outcome = "SEPARATING_ADMISSIBLE_READOUT_EXISTS"
@@ -260,10 +263,14 @@ def independent_readout_result(classes: list[dict]) -> dict:
         "pair_count": len(pairs),
         "visible_pair_count": visible_count,
         "I_one_deltas": deltas,
+        "pair_signatures": [
+            (class_label, target, before, after)
+            for class_label, target, _, _, before, after in pairs
+        ],
         "outcome": outcome,
         "basis_agreement_iff_contents_equal": all(
             (before == after) == all(weights[before] == weights[after] for weights in ((1, 0), (0, 1)))
-            for _, _, _, before, after in pairs
+            for _, _, _, _, before, after in pairs
         ),
     }
 
@@ -319,11 +326,21 @@ def compare_receipt(receipt: dict, independent: list[dict]) -> bool:
 def readout_agrees(receipt: dict, independent: dict) -> bool:
     visibility = receipt["findings"]["B_READOUT_VISIBILITY"]
     separator = visibility["exact_separator"]
+    receipt_pair_signatures = [
+        (
+            pair["class"], pair["target_input"],
+            pair["content_before"], pair["content_after"],
+        )
+        for pair in visibility["analysis"]["pairs"]
+    ]
     common = bool(
         visibility["analysis"]["outcome"] == independent["outcome"]
         and visibility["analysis"]["pair_count"] == independent["pair_count"]
         and visibility["analysis"]["visible_pair_count"]
         == independent["visible_pair_count"]
+        and len(visibility["analysis"]["pairs"])
+        == visibility["analysis"]["pair_count"]
+        and receipt_pair_signatures == independent["pair_signatures"]
         and independent["basis_agreement_iff_contents_equal"]
     )
     if not common:
@@ -348,6 +365,7 @@ def readout_agrees(receipt: dict, independent: dict) -> bool:
 
 def agreement_outcome_control(receipt: dict) -> bool:
     equal_pair_classes = [{
+        "class": "synthetic equal-content fixture",
         "separated": [(0, (0,), (1,), 0, 0)],
     }]
     result = independent_readout_result(equal_pair_classes)
@@ -356,7 +374,18 @@ def agreement_outcome_control(receipt: dict) -> bool:
         "outcome": "DECLARED_READOUT_FAMILY_AGREES_ON_ALL_COMPARED_PAIRS",
         "pair_count": 1,
         "visible_pair_count": 0,
-        "pairs": [],
+        "pairs": [{
+            "class": "synthetic equal-content fixture",
+            "target_input": 0,
+            "configuration_before": {"n": 0},
+            "configuration_after": {"n": 1},
+            "content_before": 0,
+            "content_after": 0,
+            "basis_readout_values": [
+                {"readout": "I_zero", "before": 1, "after": 1, "delta": 0},
+                {"readout": "I_one", "before": 0, "after": 0, "delta": 0},
+            ],
+        }],
         "nonseparation_proof": {
             "basis_dimension": 2,
             "all_basis_functionals_equal_on_all_compared_pairs": True,
@@ -364,7 +393,9 @@ def agreement_outcome_control(receipt: dict) -> bool:
         },
     }
     synthetic["findings"]["B_READOUT_VISIBILITY"]["exact_separator"] = None
-    return readout_agrees(synthetic, result)
+    broken = deepcopy(synthetic)
+    broken["findings"]["B_READOUT_VISIBILITY"]["analysis"]["pairs"] = []
+    return readout_agrees(synthetic, result) and not readout_agrees(broken, result)
 
 
 def scope_agrees(receipt: dict) -> bool:

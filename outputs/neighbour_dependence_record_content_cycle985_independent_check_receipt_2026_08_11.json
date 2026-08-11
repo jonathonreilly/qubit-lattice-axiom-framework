@@ -10,7 +10,7 @@
     "status": "ok",
     "timeout_sec": "300"
   },
-  "checker_source_sha256": "d0f9790c0ae4274b719dda5fd5ecea977800ec9c0fe5f572b5a627351cd92bcf",
+  "checker_source_sha256": "6ff60e2f5c3b826d59531894c6d0542fdcbad762fd40b0b0faf925ae435d646f",
   "checks": {
     "R0_PRIMARY_AST_AND_PINS": true,
     "R1_INDEPENDENT_CONTENT_CENSUS": true,
@@ -103,6 +103,68 @@
       "family": "R^{{0,1}}, extended by finite sums",
       "outcome": "SEPARATING_ADMISSIBLE_READOUT_EXISTS",
       "pair_count": 10,
+      "pair_signatures": [
+        [
+          "incoming CNOT",
+          0,
+          0,
+          1
+        ],
+        [
+          "incoming CNOT",
+          1,
+          1,
+          0
+        ],
+        [
+          "perpendicular-control TOF",
+          0,
+          0,
+          1
+        ],
+        [
+          "perpendicular-control TOF",
+          0,
+          0,
+          1
+        ],
+        [
+          "perpendicular-control TOF",
+          1,
+          1,
+          0
+        ],
+        [
+          "perpendicular-control TOF",
+          1,
+          1,
+          0
+        ],
+        [
+          "opposite-control TOF",
+          0,
+          0,
+          1
+        ],
+        [
+          "opposite-control TOF",
+          0,
+          0,
+          1
+        ],
+        [
+          "opposite-control TOF",
+          1,
+          1,
+          0
+        ],
+        [
+          "opposite-control TOF",
+          1,
+          1,
+          0
+        ]
+      ],
       "visible_pair_count": 10
     },
     "reconstruction_digest": "2c934019462cdb2f9711a86c59d6ae08376cd3a993b64564c6604b1d40b7abca"

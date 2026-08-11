@@ -1665,3 +1665,33 @@ instance or Fourier census.
   #6102 is open, mergeable, and `CLEAN`, stacked exactly on Block-29 delivery
   head `f2f21f9b0f`. Independent audit remains required. No canonical axiom,
   fixed percentage, audit verdict, or `review-loop` is changed.
+
+## Block 31 Construction Record
+
+- Constructed one positive null-anchored sixteen-state Record family whose
+  null-relative derivatives are the fifteen actual edge-source rays.
+- Proved each constituent edge source compiles to positive rank-one Euclidean
+  metric stress `v v^T/(2|v|)`.
+- Executed all 83,521 product probabilities over every subset of four sites,
+  19,652 exact one-site restrictions, positive all-null anchoring, and exact
+  additive probability ratios.
+- Decomposed the bare null projector as metric rank ten plus one nonmetric
+  branch and the Block-30 residual as shape rank nine plus that branch.
+- Reconstructed exact extra-branch curvature `768+384 sqrt(2)` and verified
+  the local curvature Hessian annihilates the metric image.
+- Built five repaired rank-five operators and nonsingular rank-25 metric-only
+  KKT systems.
+- Solved all 3,876 four-site Record count sources at five `alpha` and three
+  `beta` controls; reactions equal negative metric projections.
+- Checked all 24 axis permutations and demonstrated both coefficients remain
+  unselected by the positive bounded properties.
+- Applied N1--N8 and preserved curved/open, interacting, full-Ward,
+  constituent-causal, nonlinear, and Lorentzian routes.
+- Primary source/input-pinned cache is `PASS=17 FAIL=0` in `6.8 s`.
+- Independent reconstruction returns `PASS=5 FAIL=0`; seventeen isolated
+  fresh-process forced failures each fail exactly one named check.
+- Citation registration is `5,477` nodes / `15,654` edges; the new node has
+  out-degree five and nineteen resolved helper runners.
+- Conformance, exact stack, changed evidence, commits, delivery, and
+  independent audit remain pending. No canonical axiom, fixed percentage,
+  audit verdict, or `review-loop` is changed.

@@ -1021,3 +1021,30 @@ phase fitting. Spatial gluing, the full differentiated Ward connection, and
 nonlinear Lorentzian evolution follow. All may remain downstream if derived
 from one fixed local law; no fifth ontology axiom is proved necessary. No
 canonical axiom or fixed percentage is changed.
+
+## Block 31 Target And Disposition
+
+Block 31 asks whether the ten residual charges isolated in Block 30 can be
+given physical source types and solved without importing an arbitrary full
+eleven-channel reaction.
+
+The algebraic answer is exact and constructive. The ten residuals are nine
+constant-metric shape stresses plus the one nonmetric Regge branch. One local
+curvature-squared action lifts exactly that nonmetric branch. The remaining
+kernel is the ten-dimensional metric image, so a metric-only compact reaction
+system is nonsingular for every edge source.
+
+A positive null-anchored Record family supplies those sources directly:
+null-relative edge scores differentiate to actual edge rays, and each ray
+compiles to a positive rank-one Euclidean metric stress. Exact product laws
+over four sites give arbitrary finite-subset restrictions, and all 3,876
+distinct four-site source counts solve throughout the retained coefficient
+and source-unit controls.
+
+This removes the unexplained nonmetric reaction from the compact completion.
+It does not select the Record law, units, curvature action/coefficient, or the
+compact ensemble. Physical gravity must still choose whether metric stress is
+balanced by a compact reaction or curves/opens the geometry, then supply the
+interacting joint law, full Ward connection, and Lorentzian update. Those can
+remain downstream if derived; no fifth axiom is proved necessary. No canonical
+axiom or fixed percentage is changed.

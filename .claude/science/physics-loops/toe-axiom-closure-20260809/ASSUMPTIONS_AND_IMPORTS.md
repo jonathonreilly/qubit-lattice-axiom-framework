@@ -599,3 +599,21 @@ data. Causal-prefix consistency is not spatial finite-region projective
 gluing, and the Euclidean Markov index is not a derived Lorentzian time. No
 external science, observed constant, canonical edit, percentage move, audit
 verdict, or `review-loop` is imported.
+
+## Block 31 Assumptions And Imports
+
+Block 31 imports the finite positive null-Record action representative, the
+actual zero-momentum metric map and compact reaction criterion, the retained
+local curvature-squared action/window, and the Block-30 null-charge
+classifier. The local sixteen-Record family, source derivatives, rank-one
+stress tensors, exact finite-region product laws, arbitrary restriction
+checks, projector split, KKT systems, and complete four-site source census are
+reconstructed in the new runner.
+
+Edge-labelled Records, their physical meaning, `beta`, the curvature action
+and `alpha`, and the fixed-metric compact ensemble are explicit supplied data.
+Product projectivity does not supply shared-edge interactions, an endogenous
+geometry marginal, or an interacting spacetime law. Euclidean rank-one stress
+does not supply a Lorentzian causal particle. No external science, observed
+constant, canonical edit, percentage move, audit verdict, or `review-loop` is
+imported.

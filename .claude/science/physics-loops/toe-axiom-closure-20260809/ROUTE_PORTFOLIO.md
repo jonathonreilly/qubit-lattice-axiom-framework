@@ -647,3 +647,19 @@ is curved or massive, the homogeneous cancellation target is not required.
 
 The free phase tag is replaced by a canonical response routing computation,
 but the physical source and reaction laws remain the load-bearing choice.
+
+## Block 31 Record Edge-Score / Curvature-Reaction Route Comparison
+
+| Route | Exact object | Outcome | Decision |
+|---|---|---|---|
+| null-relative edge Record score | `A_e=beta(ell_e-ell_e0)` | compiles every edge label to an actual source ray | retain as a source-map witness; derive labels and `beta` physically |
+| constituent metric stress | `M0^T e_e` | positive rank-one tensor `v_e v_e^T/(2|v_e|)` | retain; seek Lorentzian constituent-causal meaning |
+| spatial product family | exact laws on every subset of four sites | all 19,652 one-site restrictions pass | retain as noninteracting gluing witness only |
+| bare residual reaction | nine metric-shape plus one nonmetric channel after scale | requires an extra lattice-artifact reaction | supersede the nonmetric reaction with the local action lift |
+| curvature-square plus metric reactions | repaired rank five and ten metric reactions | rank-25 KKT solves all 3,876 compiled sources | retain as complete compact conditional response |
+| curved/open metric response | metric stress drives geometry instead of constraint reaction | not selected | highest-value physical gravity route |
+| interacting joint Record/geometry law | shared-edge compatible odds and permanent boundary Records | not constructed | next source/phase provenance target |
+| full Ward and Lorentzian dynamics | same selected law on nonuniform causal geometry | not constructed | physical endpoint |
+
+Generic compact solvability is no longer the wall. The live decision is what
+the selected interacting law does with the now-typed metric stress.

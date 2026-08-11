@@ -580,3 +580,16 @@ Science commit is `be1781ad26`; campaign conformance is `42d3056d98`. PR
 #6102 is open, mergeable, and `CLEAN`, stacked exactly on Block-29 delivery
 head `f2f21f9b0f`. Independent audit is pending. No canonical edit,
 percentage move, audit verdict, or `review-loop` is used.
+
+Block 31 is local on branch
+`physics-loop/toe-axiom-closure-block31-record-source-reaction-gluing-20260810`,
+stacked on exact Block-30 delivery head `317dd4a9f4`. Its distinct review
+object is the null-relative Record edge-score compiler, rank-one metric
+stress, exact spatial product restriction theorem, `9+1` residual typing,
+action-native nonmetric lift, and metric-only all-source compact completion.
+Primary source/input-pinned cache is `PASS=17 FAIL=0` in `6.8 s`;
+independent reconstruction is `PASS=5 FAIL=0`; all seventeen isolated forced-
+false runs fail one named check; graph registration is `5,477/15,654`, with
+out-degree five and nineteen helpers. Direct conformance, exact stack, changed
+evidence, commits, PR, and independent audit are pending. No canonical edit,
+percentage move, audit verdict, or `review-loop` is used.

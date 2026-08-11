@@ -1,6 +1,6 @@
 {
- "edge_count": 15649,
- "node_count": 5476,
+ "edge_count": 15654,
+ "node_count": 5477,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -445,6 +445,10 @@
   "admissibility_record_continuation_refinement_conditional_bounded_theorem_note_2026-07-13": {
    "deps_hash": "c8eee4235fc9",
    "out_degree": 1
+  },
+  "admissibility_record_edge_score_rank_one_metric_stress_spatial_projective_curvature_reaction_boundary_bounded_theorem_note_2026-08-10": {
+   "deps_hash": "f1dada4aec44",
+   "out_degree": 5
   },
   "admissibility_record_null_charge_projective_history_phase_selector_scale_response_boundary_bounded_theorem_note_2026-08-10": {
    "deps_hash": "91597ec0e5c0",

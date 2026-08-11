@@ -664,3 +664,26 @@ complete conditional nonlinear compact solution:
   stacked claims; science commit `be1781ad26`, campaign conformance
   `42d3056d98`; PR #6102 is open, mergeable, and `CLEAN`, stacked on exact
   Block-29 delivery head `f2f21f9b0f`; independent audit remains required
+
+## Block 31 — Record Edge Score / Rank-One Stress / Curvature Reaction
+
+- theorem note:
+  `docs/ADMISSIBILITY_RECORD_EDGE_SCORE_RANK_ONE_METRIC_STRESS_SPATIAL_PROJECTIVE_CURVATURE_REACTION_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md`
+- runner/cache:
+  `scripts/admissibility_record_edge_score_rank_one_metric_stress_spatial_projective_curvature_reaction_boundary_2026_08_10.py` and its source/input-pinned cache
+- packet scope: positive null-anchored edge-labelled Record family, exact
+  source derivative, rank-one metric stress, exact four-site spatial
+  restrictions, `9+1` residual classification, action-native nonmetric lift,
+  metric-only compact KKT completion, all-source census, N1--N8, and narrowed
+  downstream-law versus axiom interface
+- exclusions: a derived physical Record label/score or action unit,
+  interacting/shared-edge gluing, selected curvature coefficient, selected
+  compact versus curved/open phase, full nonuniform Ward connection,
+  Lorentzian dynamics, canonical edits, percentage movement, audit verdicts,
+  and `review-loop`
+- current evidence: source/input-pinned cache `PASS=17 FAIL=0` in `6.8 s`;
+  independent reconstruction `PASS=5 FAIL=0`; seventeen isolated fresh-
+  process forced failures each trip exactly one named check; graph
+  `5,477/15,654`, out-degree five, with nineteen resolved helpers; direct
+  conformance, stacked pipeline, changed evidence, commits, delivery, and
+  independent audit pending

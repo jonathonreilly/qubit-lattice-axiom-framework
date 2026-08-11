@@ -1,0 +1,55 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_record_edge_score_rank_one_metric_stress_spatial_projective_curvature_reaction_boundary_2026_08_10.py
+runner_sha256: 2cb9bb1a9f599b6ab91db95a7104a200b93e8d2b1f88f4cbfd7b8bd99791a7fd
+input_fingerprint_sha256: 91bc3a535b9c4e693744cc24ac5ccc57cb4b748c059c9109f70bbfe9cee117aa
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 6.76
+status: ok
+----- stdout -----
+external_scientific_inputs: none; the Record family, edge-to-metric map, Regge action, and compact source inventories are repository-local
+analytic_boundary: finite-region marginals and null-relative ratios are exact; compact Regge and curvature-reaction tests use double precision plus one exact extra-branch Hessian
+physical_boundary: the edge-labelled Record law, beta action unit, alpha curvature coefficient, compact metric constraint, source interpretation, full Ward connection, and Lorentzian dynamics remain unselected
+[PASS] axiom-and-parent-boundary: current axioms do not supply the Record edge-score law or geometry dynamics, while retained parents supply only conditional action and reaction mechanisms
+[PASS] note-contract: the note separates a constructive Record/source/reaction compiler from physical law selection and carries N1--N8
+[PASS] positive-normalized-local-record-family: one null plus fifteen edge Records form a strictly positive normalized local family whose common action cancels
+       minimum probability=0.026893; normalization=0.000e+00; common shift=4.163e-17
+[PASS] null-log-odds-edge-source-compiler: null-relative log odds are beta times the edge coordinates and differentiate to the actual edge-source basis
+       action=4.996e-16; finite-difference source=6.374e-10
+[PASS] constituent-rank-one-metric-stress: every edge-labelled Record compiles to the positive rank-one Euclidean metric stress vv^T/(2|v|)
+       tensor error=1.665e-16; minimum eigenvalue=-1.563e-16; ranks={1}
+[PASS] exact-spatial-projective-record-family: the four-site product family is exactly consistent under every one-site deletion from every finite subset
+       histories=83521; marginals=19652; failures=0
+[PASS] all-null-anchor-and-additive-record-action: the all-null history has positive weight and every finite-region null-relative action factorizes into local Record scores
+       all-null probability=235204439988391133090019468272710009036225165979463168000000/3231751399917875376680230817453904787435514609163560291642797121; ratio failures=0
+[PASS] compact-null-sector-refinement: the eleven bare null charges are ten constant-metric stresses plus one nonmetric branch, and the Block-30 residual is nine metric-shape charges plus that branch
+       metric/shape/extra ranks=10/9/1; split error=2.981e-15
+[PASS] action-native-extra-branch-lift: the retained curvature-squared action lifts the nonmetric branch and annihilates the complete constant-metric image
+       exact=384*sqrt(2) + 768; numeric=1311.058007951; metric error=2.757e-12
+[PASS] axis-covariant-record-source-and-reaction-data: the local Record law, edge-to-metric compiler, both geometry Hessians, and metric reaction projector commute with all 24 axis permutations
+       M=0.000e+00; Q=2.474e-15; R2=3.322e-13; P=1.601e-15; probability=1.388e-17
+[PASS] metric-only-curvature-kkt-window: after the action-native lift, the ten-column constant-metric reaction system is nonsingular throughout the retained alpha window
+       operator ranks={5}; KKT ranks={25}
+[PASS] all-four-site-record-sources-solve: all 3,876 distinct four-site Record count sources solve at five alpha and three beta controls without source projection
+       sources=3876; equation=9.390e-13; constraint=2.255e-13
+[PASS] reaction-equals-compiled-metric-stress: the KKT reaction is exactly the negative metric projection of the compiled edge source, leaving the lifted nonmetric response dynamical
+       reaction identity=2.144e-12
+[PASS] source-unit-and-curvature-coefficient-nonselection: positivity, axis covariance, spatial projectivity, rank-one stress, and compact solvability do not select beta or alpha
+       minimum response separation=4.384549; probability separation=0.027383
+[PASS] spatial-versus-causal-projectivity-boundary: the new exact spatial product marginals and Block-30 causal-prefix marginals are complementary but do not derive an interacting joint spacetime law
+[PASS] full-ward-and-lorentzian-boundary: compact homogeneous solvability does not establish nonzero-momentum conservation, a complete differentiated Ward identity, or Lorentzian nonlinear stability
+[PASS] minimal-law-or-axiom-delta: the compilers can remain downstream, while autonomy still needs a fixed Record score law, action unit, geometry action and phase, interacting gluing, Ward connection, and causal update
+N5_CERTIFICATE: record_source=one positive null-anchored edge-labelled Record family differentiates to the actual edge-source basis and rank-one metric stress
+N5_CERTIFICATE: spatial_gluing=83,521 exact finite-region probabilities obey 19,652 arbitrary one-site restriction identities
+N5_CERTIFICATE: reaction_repair=the curvature-square action lifts the nonmetric branch and a ten-column metric-only KKT system solves all 3,876 four-site source counts
+N5_CERTIFICATE: gravity_boundary=compact reactions freeze constant-metric modes and do not replace a curved/open field equation, nonzero-momentum Ward law, or Lorentzian update
+N5_CERTIFICATE: axiom_boundary=the compiler can be downstream but the Record score, beta, alpha, phase, interacting law, and dynamics are unselected
+per_element: checked all fifteen actual-edge Records and their rank-one metric stresses
+per_site: checked one null plus fifteen edge Records at four site-dependent rational family points
+per_region: checked every subset of four sites, 83,521 probabilities, and 19,652 exact restriction identities
+per_source: checked all 3,876 four-site count sources at five alpha and three beta controls
+lattice_wide: finite product regions and the compact homogeneous carrier only; no interacting infinite-volume, full-Ward, nonlinear, or Lorentzian theorem is claimed
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

@@ -239,3 +239,14 @@ unchanged carrier, and the complete KKT reactions solve every compact source.
 The negative is only that a one-dimensional scale phase cannot answer ten
 independent residual charges. The next work must select or derive the physical
 source/reaction law, not promote this compact classifier to a gravity no-go.
+
+## Block 31 Metric-Reaction / Curved-Response Boundary
+
+| Scoped claim | Exact/bounded evidence | N1--N8 disposition | Forbidden promotion | Live routes |
+|---|---|---|---|---|
+| after the retained curvature-square lift, every supplied four-site Record count source is solvable with exactly the ten constant-metric compact reactions | `11=10 metric+1 nonmetric`; Block-30 residual `10=9 shape+1 nonmetric`; exact extra curvature; repaired rank five; KKT rank 25; 3,876 sources at fifteen controls | pass only for the supplied edge-labelled product family, flat Euclidean carrier, retained alpha controls, and fixed-metric compact ensemble | do not infer that the Record law, action/coefficient, compact phase, interacting gravity, nonzero-momentum Ward identity, Lorentzian matter, or current axioms are selected | curved/open response; boundary flux; interacting projective family; alternative action; constituent-causal carrier; full Ward connection; Lorentzian update |
+
+The strongest steelman is accepted: physical gravity should respond to metric
+stress rather than always cancel it with a compact constraint. The theorem
+proves consistency and types the reactions; it leaves compact versus
+curved/open phase selection as the leading physical obligation.

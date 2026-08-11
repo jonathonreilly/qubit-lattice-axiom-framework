@@ -527,3 +527,19 @@ full source compiler and reaction/curved response, spatial gluing, complete
 stationary Ward connection, and Lorentzian nonlinear update. Candidate wording
 is unadopted; fixed TOE percentages and canonical axioms remain unchanged. No
 `review-loop` is used.
+
+Block 31 instantiates a null-relative Record edge-score family, exact spatial
+product restrictions, and a rank-one metric-stress compiler. It refines the
+Block-30 ten-channel residual into nine constant-metric shape stresses plus
+one nonmetric lattice branch. The retained local curvature action lifts that
+branch, after which a metric-only rank-25 compact KKT system solves every
+executed Record count source.
+
+Reachability remains `upstream_support`, not direct TOE closure. The result
+removes an arbitrary nonmetric reaction and closes generic compact consistency
+for the witness family, but fixed-metric reaction is not a selected curved or
+open gravity law. Physical labels/units, interacting spatial gluing, action
+and coefficient selection, phase/boundary response, complete stationary Ward
+connection, and Lorentzian dynamics remain open. Candidate wording is
+unadopted; fixed TOE percentages and canonical axioms remain unchanged. No
+`review-loop` is used.

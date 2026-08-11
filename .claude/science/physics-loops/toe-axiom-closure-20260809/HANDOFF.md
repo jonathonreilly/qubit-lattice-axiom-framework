@@ -1330,3 +1330,28 @@ clean for `1/1` Block-30 and `30/30` stacked claims. Science commit is
 mergeable, and `CLEAN`, stacked exactly on Block-29 delivery head
 `f2f21f9b0f`. Independent audit remains required. No canonical edit,
 percentage move, audit verdict, or `review-loop` occurs.
+
+## Block 31 Record Edge-Score / Curvature-Reaction Handoff
+
+Do not carry Block 30's ten residual charges as an undifferentiated wall. They
+split exactly into nine constant-metric shape stresses plus the one nonmetric
+lattice branch. The retained local curvature-square action lifts that branch,
+so the repaired compact kernel is exactly the ten-dimensional metric image.
+
+One supplied null-anchored Record family differentiates to every actual edge
+source, and each constituent compiles to a positive rank-one Euclidean metric
+stress. Its four-site product realization checks 83,521 exact probabilities
+and 19,652 arbitrary one-site restrictions. The repaired `25 x 25` metric-only
+KKT system solves all 3,876 distinct four-site count sources at fifteen
+`(alpha,beta)` controls; reaction is exactly negative metric stress.
+
+This conditionally closes generic compact solvability without an arbitrary
+nonmetric reaction. It does not make fixed-metric reaction the physical
+gravity phase. Next derive the interacting Record score/action unit and select
+compact versus curved/open response, then solve one nonuniform background and
+derive the full Ward connection and Lorentzian update. Primary cache is
+`PASS=17 FAIL=0` in `6.8 s`; independent reconstruction is `PASS=5 FAIL=0`;
+all seventeen isolated forced-false runs trip one named check; graph is
+`5,477/15,654`, out-degree five, with nineteen helpers. Conformance, delivery,
+and independent audit are pending. No canonical edit, percentage move, audit
+verdict, or `review-loop` occurs.

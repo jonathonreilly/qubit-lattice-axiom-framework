@@ -165,3 +165,17 @@ physical.
 Efficiency rule: do not fit another arbitrary phase or homogeneous contact.
 Compile the source once, route its exact null charges, and test only laws that
 simultaneously fix reactions, spatial gluing, and the complete Ward tensor.
+
+## Post-Block-31 Priority Refresh
+
+| Rank | Target | Exact next witness | Why now |
+|---:|---|---|---|
+| 1 | interacting physical Record-score law and compact/curved phase | derive one shared-edge local specification whose null-relative derivative fixes `beta`, source meaning, and whether metric stress reacts compactly or curves/opens geometry | source compilation and compact consistency are solved conditionally; law and phase selection are now the sharpest wall |
+| 2 | interacting spatial finite-region gluing | construct compatible overlapping-region joint laws with permanent boundary Records and the same source/action under restriction | product projectivity is exact but carries no interaction or endogenous geometry marginal |
+| 3 | complete stationary differentiated Ward identity | solve one nonuniform background of the selected law and compute geometry, connected, contact, mixed/source, multiplier, and connection/tadpole terms | only a same-law identity can turn typed metric stress into gravitational response |
+| 4 | constituent-causal Lorentzian closure | select timelike Record carriers and certify causal nonlinear evolution and quotient stability | current rank-one stress is Euclidean and does not select a causal cone |
+| 5 | independent TOE roots and stack reconciliation | preserve PR #6096, then return to Born/history and operational selectors | shared Record laws may help multiple lanes, but independent closure value remains high |
+
+Efficiency rule: reuse the exact Record derivative and metric projector; do
+not refit source tensors or add another bare reaction channel. New candidates
+must simultaneously address interaction, phase, and Ward provenance.

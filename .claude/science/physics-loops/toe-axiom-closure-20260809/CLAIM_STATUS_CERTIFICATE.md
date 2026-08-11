@@ -895,3 +895,36 @@ independent_audit_required: true
 - Delivery: PR #6102 is open, mergeable, and `CLEAN`, stacked exactly on
   Block-29 delivery head `f2f21f9b0f`. Independent audit remains required.
   No canonical edit, fixed percentage move, audit verdict, or `review-loop`.
+
+## Block 31 Record Edge-Score / Curvature-Reaction Certificate
+
+- Claim type: `bounded_theorem`.
+- Record/source compiler: one positive null-anchored sixteen-state local
+  family has exact null-relative actions `beta u_e` and derivatives
+  `beta e_e` on all fifteen actual edges.
+- Constituent stress: every edge Record pulls through the metric map as the
+  positive rank-one Euclidean tensor `v_e v_e^T/(2|v_e|)`.
+- Spatial restriction: 83,521 exact probabilities over every subset of four
+  sites satisfy 19,652 exact arbitrary one-site marginal identities; all-null
+  weight is positive and actions add.
+- Residual typing: the bare eleven-null projector is metric rank ten plus one
+  nonmetric branch; the Block-30 residual is metric-shape rank nine plus that
+  branch, with projector error below `3.1e-15`.
+- Action-native repair: the curvature-square Hessian annihilates the metric
+  image and lifts the extra branch by exact unnormalized curvature
+  `768+384 sqrt(2)`.
+- Compact completion: repaired operator rank five and metric-only KKT rank 25
+  hold at five `alpha` controls. All 3,876 four-site source counts solve at
+  three `beta` controls, and reaction equals minus compiled metric stress.
+- Governance: product interaction, physical labels/units, action/coefficient,
+  compact versus curved/open phase, full Ward law, and Lorentzian dynamics
+  remain unselected. No fifth axiom is proved necessary.
+- Runner/cache: source/input pinned, `PASS=17 FAIL=0` in `6.8 s`.
+- Independent reconstruction: `PASS=5 FAIL=0`.
+- Mutation sensitivity: seventeen isolated fresh-process forced failures each
+  exit nonzero at exactly one intended named check (`PASS=17 FAIL=0`).
+- Citation graph: `5,477` nodes / `15,654` edges; the new node has out-degree
+  five and nineteen resolved helper runners.
+- Direct/stacked conformance, changed evidence, commits, delivery, and
+  independent audit are pending. No canonical edit, fixed percentage move,
+  audit verdict, or `review-loop`.

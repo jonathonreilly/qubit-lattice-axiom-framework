@@ -1419,6 +1419,8 @@ twenty-one resolved helpers. Direct conformance passes. The exact stack reaches
 only the inherited stage-7 dependency-policy epoch mismatch after `4,817` rows
 / `3,695` runners; the controlled five-file current-main overlay passes all 18
 stages at checkpoint `4e1690eb404e`. Changed evidence is clean for `1/1`
-Block-33 and `33/33` stacked claims. Science commit is `7d8f457b48`; delivery
-and independent audit remain pending. No canonical edit, percentage move,
-audit verdict, or `review-loop` occurs.
+Block-33 and `33/33` stacked claims. Science commit is `7d8f457b48`; campaign
+conformance is `31ec839457`. PR #6107 is open, mergeable, and
+`CLEAN`, stacked exactly on Block-32 delivery head `9cf533f908`. Independent
+audit remains required. No canonical edit, percentage move, audit verdict, or
+`review-loop` occurs.

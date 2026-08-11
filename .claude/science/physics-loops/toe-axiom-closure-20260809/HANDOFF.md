@@ -1664,7 +1664,9 @@ Direct repository conformance passes. The exact stack seeds `4,825` rows /
 controlled current-main overlay passes all 18 stages at checkpoint
 `ced22efa9508`. Changed evidence is clean for Block 41 (`1/1`) and the full
 stack (`41/41`), with zero failures or controls. Science commit is
-`3bff293e6e`; campaign conformance, push, and delivery remain pending.
+`3bff293e6e`; campaign conformance is `a2da4292cd`. PR #6130 is open,
+mergeable, and `CLEAN`, stacked exactly on Block-40 delivery head
+`82d943665a`; independent audit remains required.
 
 The significant gain is a sharp gravity-route localization. Exact local
 derivatives and volume-uniform covariance control leave positive zero-momentum

@@ -608,9 +608,10 @@ Science/campaign commit separation is preserved at science commit
 stops only at the inherited stage-7 policy epoch; the controlled current-main
 overlay passes all 18 stages at checkpoint `ced22efa9508`. Changed evidence is
 clean for `1/1` Block-41 and `41/41` stacked claims, with zero failures or
-controls. Campaign conformance, push, and stacked PR remain pending.
-Independent audit remains required. No canonical edit, percentage move,
-audit verdict, or `review-loop` is used.
+controls. Campaign conformance is `a2da4292cd`. PR #6130 is open, mergeable,
+and `CLEAN`, stacked exactly on Block-40 delivery head `82d943665a`.
+Independent audit remains required. No canonical edit, percentage move, audit
+verdict, or `review-loop` is used.
 
 Block 40 is local on branch
 `physics-loop/toe-axiom-closure-block40-vacuum-ward-20260811`, stacked exactly

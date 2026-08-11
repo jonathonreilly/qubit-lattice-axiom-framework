@@ -1406,7 +1406,9 @@ lines are in the landing primary cache.
   mismatch; the controlled current-main overlay passes all 18 stages at
   checkpoint `ced22efa9508`. Changed evidence is clean for `1/1` Block-41 and
   `41/41` stacked claims, with zero failures or controls. Science commit is
-  `3bff293e6e`; independent audit remains required.
+  `3bff293e6e`; campaign conformance is `a2da4292cd`. PR #6130 is open,
+  mergeable, and `CLEAN`, stacked exactly on Block-40 delivery head
+  `82d943665a`; independent audit remains required.
 - Scope: this retires only the unchanged regular flat-phase route to a
   massless Einstein/Regge spin-two symbol. Singular connection, relational or
   derivative law repair, nonflat phase, continuous joint geometry, physical

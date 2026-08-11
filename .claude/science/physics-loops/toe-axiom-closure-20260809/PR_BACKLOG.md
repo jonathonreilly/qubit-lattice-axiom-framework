@@ -658,5 +658,8 @@ reaches only the inherited stage-7 dependency-policy epoch mismatch after
 `4,818` rows / `3,696` runners; the controlled five-file current-main overlay
 passes all 18 stages at checkpoint `98aee2208d61`. Changed evidence is clean
 for `1/1` Block-34 and `34/34` stacked claims. Science commit is `c8eec957c4`;
-campaign conformance, PR, and independent audit are pending. No canonical
-edit, percentage move, audit verdict, or `review-loop` is used.
+campaign conformance is `5edf1495a1`. PR #6108 is open, mergeable, and
+`CLEAN`, stacked exactly on Block-33 delivery head `2337074c89`. PR #6096
+remains a complementary proper-length sibling requiring later explicit
+reconciliation. Independent audit remains required. No canonical edit,
+percentage move, audit verdict, or `review-loop` is used.

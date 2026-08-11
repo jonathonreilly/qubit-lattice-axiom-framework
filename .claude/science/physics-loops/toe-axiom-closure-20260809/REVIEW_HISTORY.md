@@ -1820,6 +1820,7 @@ instance or Fourier census.
   checkpoint `98aee2208d61`.
 - Changed-evidence readiness marks Block 34 alone (`1/1`) and all 34 stacked
   claims (`34/34`) ready with zero failures and zero control failures.
-- Science commit is `c8eec957c4`; delivery and independent audit remain
-  pending. No canonical axiom, fixed percentage, audit verdict, or
-  `review-loop` is changed.
+- Science commit is `c8eec957c4`; campaign conformance is `5edf1495a1`. PR
+  #6108 is open, mergeable, and `CLEAN`, stacked exactly on Block-33 delivery
+  head `2337074c89`. Independent audit remains required. No canonical axiom,
+  fixed percentage, audit verdict, or `review-loop` is changed.

@@ -6,12 +6,24 @@ Claim type: `bounded_theorem`
 Audit-status authority: independent audit lane only  
 Effective status: pipeline-derived only after independent audit ratification and dependency closure
 
+## Trace gate
+
+```yaml
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+target_claim_id: null
+target_blocker_text: "derive the 6/12/3 multiplicities and determine why exactly three classes occur"
+source_of_blocker_text: user_goal
+artifact_role: theorem
+next_trace_action: "independent audit of the bounded theorem packet"
+```
+
+## Status fields
+
 ```yaml
 claim_id: cycle980_witness_orbit_multiplicity
 claim_type: bounded_theorem
 actual_current_surface_status: bounded-support
-trace_class: direct_blocker_closure
-reachability_to_target: closes
 conditional_surface_status: null
 hypothetical_axiom_status: null
 admitted_observation_status: null
@@ -20,11 +32,6 @@ proposal_allowed_reason: "finite alphabet/support theorem; no branch-local retai
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 audit_status_authority: independent audit lane only
-target_claim_id: null
-target_blocker_text: "derive the 6/12/3 multiplicities and determine why exactly three classes occur"
-source_of_blocker_text: user_goal
-artifact_role: theorem
-next_trace_action: "independent audit of the bounded theorem packet"
 negative_assertion_classes: []
 packet_primary_runner: scripts/frontier_cycle980_witness_orbit_multiplicity_2026_08_11.py
 packet_helper_runner: scripts/frontier_cycle980_witness_orbit_multiplicity_independent_check_2026_08_11.py

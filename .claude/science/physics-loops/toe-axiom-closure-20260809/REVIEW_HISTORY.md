@@ -2022,5 +2022,7 @@ instance or Fourier census.
   five-file current-main overlay passes all 18 stages at checkpoint
   `90bff61032ac`. Changed evidence is ready for Block 39 (`1/1`) and all 39
   stacked claims (`39/39`), with zero failures or controls. Science commit is
-  `69f6ed96de`; campaign conformance, push, and PR remain pending. No canonical
-  axiom, fixed percentage, or audit verdict is changed.
+  `69f6ed96de`; campaign conformance is `ff541c0089`. PR #6126 is open,
+  mergeable, and `CLEAN`, stacked exactly on Block-38 delivery head
+  `d3a4e143f2`; independent audit remains pending. No canonical axiom, fixed
+  percentage, or audit verdict is changed.

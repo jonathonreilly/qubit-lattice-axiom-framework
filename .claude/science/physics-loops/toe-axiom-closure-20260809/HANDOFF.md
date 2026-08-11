@@ -1610,7 +1610,9 @@ exact stack seeds 4,823 rows / 3,701 runners before only the inherited stage-7
 policy-epoch stop; the controlled five-file current-main overlay passes all 18
 stages at checkpoint `90bff61032ac`. Changed evidence is clean for Block 39
 (`1/1`) and the complete stack (`39/39`), with no failures or controls. Science
-commit is `69f6ed96de`; campaign conformance, push, and stacked PR remain.
+commit is `69f6ed96de`; campaign conformance is `ff541c0089`. PR #6126 is
+open, mergeable, and `CLEAN`, stacked exactly on Block-38 delivery head
+`d3a4e143f2`; independent audit remains required.
 
 The major gain is exact separation of gravity issues. The fixed-background
 Record phase exists uniquely on full `Z^3`; the flat periodic connection

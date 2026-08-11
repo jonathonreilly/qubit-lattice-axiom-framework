@@ -943,6 +943,7 @@ complete conditional nonlinear compact solution:
   epoch mismatch; the controlled five-file current-main overlay passes all 18
   stages at checkpoint `90bff61032ac`. Changed evidence is ready for Block 39
   alone (`1/1`) and all 39 stacked claims (`39/39`), with zero failures and
-  zero control failures. Science commit is `69f6ed96de`; campaign conformance,
-  push, and stacked PR remain pending. No canonical edit, fixed percentage
-  move, or audit verdict occurs.
+  zero control failures. Science commit is `69f6ed96de`; campaign conformance
+  is `ff541c0089`. PR #6126 is open, mergeable, and `CLEAN`, stacked exactly
+  on Block-38 delivery head `d3a4e143f2`; independent audit remains required.
+  No canonical edit, fixed percentage move, or audit verdict occurs.

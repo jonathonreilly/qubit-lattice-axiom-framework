@@ -606,9 +606,10 @@ exact stack reconstructs `4,823` rows / `3,701` runners and stops only at the
 inherited stage-7 policy epoch; the controlled current-main overlay passes all
 18 stages at checkpoint `90bff61032ac`. Changed evidence is ready for `1/1`
 Block-39 and `39/39` stacked claims, with zero failures or controls. Science
-commit is `69f6ed96de`; campaign conformance, push, and stacked PR remain
-pending. Independent audit remains required. No canonical edit, percentage
-move, audit verdict, or `review-loop` is used.
+commit is `69f6ed96de`; campaign conformance is `ff541c0089`. PR #6126 is
+open, mergeable, and `CLEAN`, stacked exactly on Block-38 delivery head
+`d3a4e143f2`. Independent audit remains required. No canonical edit,
+percentage move, audit verdict, or `review-loop` is used.
 
 Block 31 is local on branch
 `physics-loop/toe-axiom-closure-block31-record-source-reaction-gluing-20260810`,

@@ -1,0 +1,52 @@
+===== runner cache v1 =====
+runner: scripts/physical_cell_cutting_weight_rigidity_image_label_cycle775_2026_08_11.py
+runner_sha256: a1c39c7d89efa670dec2b03b6c2ff2397ba9994edd9bbbc9623e97b53bca6263
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 15.62
+status: ok
+----- stdout -----
+PASS F0 2672 unit-determinant subsets, 400 at cost floor 6, 15800 cuttings of 24, 192 pieces in 1975 each, 379200 slots, 192 covers of 8
+PASS F1 96 tables of 384 entries, pairwise disjoint, summing to the all-ones table (36864); 3321960 members, the incidence one of them
+PASS F2 the 16 sign patterns have weight sizes [1, 4, 6, 4, 1], each piece-side block has 12 rows of rank 12, and stacked they reach 192, both primes
+PASS F3 at the all-signs pattern all 96 tables have rank 0 on the block and kernel 12 there, at both primes: the rank set is [0]
+PASS F4 at each of the 4 weight-3 patterns all 96 tables have rank 6: the set of all 384 measured ranks per prime is [6]
+PASS F5 at each weight-3 pattern the 96 image keys collapse to 1, and all 96 images stacked have rank 6, the rank of one table
+PASS F6 at each weight-3 pattern there are exactly 2 kernels, each of dimension 6, with class sizes [48, 48]
+PASS F7 rejector: kernel class against colour gives 2 pairs at every weight-3 pattern, against the colour shifted by one orbit 4
+PASS F8 at each weight-3 pattern the two kernels meet in 0 and stack to rank 12, the full piece-side block dimension
+PASS F9 over the 1056 sweep members the weight-3 rank of the sum is at most 6 with 0 exceptions; spread 0:56 2:28 3:496 4:120 5:380 6:3144
+PASS F10 538 of the 1056 members have a lone minority colour; each has weight-3 rank 6 and kernel meeting the majority kernel in 0, 0 misses
+PASS F11 rejector: the 369 even-split members give weight-3 ranks 0:32 3:256 4:92 5:320 6:776, so an even split does not force rank 6
+PASS F12 honest negative: colour classes 48 and 48 give 389160 same-colour, 1660416 lone-minority and 1272384 even-split members, total 3321960
+PASS F13 the incidence parts have colours [0, 0, 0, 1] and the twin parts [0, 1, 1, 1]: both are lone-minority members, with different majorities
+PASS F14 honest negative: at all 4 weight-3 patterns the two kernels are 6 and 6 meeting in 0; the theorem gives 6 each, not the meet
+PASS F15 per weight the two ranks and their kernel meet are 9/9/3 9/9/0 6/6/3 6/6/0 0/0/12, class-constant, recomposing to 105 and 105 with meet 33
+PASS F16 one table profiles 12/12/10/6/0; the drop to incidence is 3/3/4/0/0, weighting to 39; of the meet 12 sit at weight 4, 21 at 0 and 2, 0 else
+PASS F17 the image label takes 3/6/3/1/1 values by weight from 0 up, with class sizes 32/32/32 at weight 0, 16/16/16/16/16/16 at 1, 32/32/32 at 2
+PASS F18 the label and the colour are independent: 6 joint classes of 16 at weight 0, 12 of 8 at weight 1, 6 of 16 at weight 2
+PASS F19 the weight-0 label and the weight-2 label agree on all 96 orbits, so they are one map with 3 values
+PASS F20 the weight-1 label fixes the weight-0 label and each of the 3 fibres holds 2 values: 0(05) 1(14) 2(23)
+PASS F21 the 4 weight-1 patterns give one and the same label; the incidence parts carry [0, 0, 1, 2] and the twin parts [3, 4, 5, 5], disjoint
+PASS F22 swapping each incidence label for its partner in the fibre gives [3, 4, 5, 5], exactly the twin multiset [3, 4, 5, 5]
+PASS F23 the members carrying the incidence label multiset number 30720 by binomials and 30720 by enumerating all 3321960: 9 in a thousand
+PASS F24 rejector: of the 368 one-part replacements only 58 keep the label multiset, by count and by class sizes alike, so the label moves
+PASS F25 honest negative: the multiset fixes the sum rank in 0 of 15, 28 of 123, 0 of 15 groups by weight; incidence group of 13 gives 9:1 11:4 12:8
+PASS F26 honest negative: of 18336 pairs rows overlap 0:15072 1:1920 2:960 4:384 and columns 0:15168 1:1728 2:960 3:192 4:288; the twin the same
+PASS F27 honest negative: the 4 common weight-3 images, each of dimension 6, stack to rank 24, so the rigidity is one pattern at a time
+PASS F28 honest negative: the label puts the twin outside the 30720 members sharing the incidence multiset, and 30720 is far from 1
+PASS F29 the 16 flips fix 0 pieces bar the identity, giving 12 piece orbits of 16; on covers, 24 orbits of 8, every stabiliser of order 2
+PASS F30 over the 24 cover orbits the stabiliser masks are the 4 single-axis masks [1, 2, 4, 8], each carried by 6 orbits
+PASS F31 the cover-side block dimension by weight is 24/18/12/6/0, six times four less the weight, its rank at both primes and the span of all 96
+both sides sum to 192 over the 16 patterns: 192 of cover side, 16 times 12 of piece side
+PASS F32 containment: 0 of the 1536 table-and-pattern pairs put an image outside the cover-side block, so every table takes block into block
+PASS F33 ceiling 12/12/12/6/0 against measured 12/12/10/6/0 leaves 0/0/2/0/0, weighting to 156 against 144, a deficit of 12 wholly at weight 2
+so a table must die at weight 4, where the cover-side block is 0, and must fill the block at weight 3, where it is 6
+PASS F34 honest negative and rejector: one table repeated spans 12/12/10/6/0 against ambient 24/18/12/6/0, short at weights 0/1/2
+in orbit order 4/3/3/1/0 tables saturate it; the dimension bound alone allows 2/2/2/1/0, so filling is cheap and not a witness for the four parts
+the top two weights are forced, so weights 0 to 2 carry the whole excess 39; the image label separates the twin into 30720 of 3321960
+elapsed 15 s, peak resident 127 MB
+TOTAL: PASS=35 FAIL=0
+
+----- stderr -----
+

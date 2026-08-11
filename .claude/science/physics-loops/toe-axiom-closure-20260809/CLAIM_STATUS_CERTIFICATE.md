@@ -1471,3 +1471,31 @@ lines are in the landing primary cache.
   Euclidean semiboundedness boundary, not a gravity no-go, selected law,
   all-`L` theorem, Lorentzian update, axiom edit, percentage move, or audit
   verdict. Fresh N1--N8 and N5 land; no `review-loop` is used.
+
+## Block 44 Claim Status
+
+- Claim: for the supplied repaired flat fifteen-edge Regge action, stationary
+  elimination of the complete five-dimensional nonmetric complement gives a
+  ten-component infrared operator equal to `-G_E/2` across all ten independent
+  quadratic momentum monomials.
+- Complete-edge controls: the constant metric map has rank ten; the nonmetric
+  block has eigenvalues `-45.909661,-15.019910` threefold,
+  `+1.289270`, inertia `(4,1,0)`, and no fifth zero. Direct finite-momentum
+  Schur operators converge quadratically to the analytic coefficient.
+- Conditional canonical witness: with `eta=diag(+,+,+,-)`, lapse and three
+  shifts have zero frequency-squared rows; kinetic inertia is `(1,5,4)`; the
+  null shell is exactly four gauge plus two TT directions; each TT form is
+  `(omega^2-k^2)/4`; Bianchi and the inherited static `h_tt=2` residue pass.
+- Evidence: source/input-pinned cache is `PASS=15 FAIL=0`; six in-memory
+  mutations each produce the intended named nonzero failure; an independent
+  parent-kernel/direct-finite-momentum reconstruction is `PASS=5 FAIL=0`;
+  citation graph is `5,490/15,698`, out-degree four. Direct conformance passes;
+  the controlled current-main overlay passes all 18 exact-stack stages at
+  checkpoint `d7fbc211f5cc`; changed evidence is clean for Block 44 (`1/1`)
+  and all 44 stacked claims (`44/44`). Science commit is `f57adabb50`.
+- Scope: bounded complete-edge flat infrared theorem plus a conditional
+  Lorentzian candidate and narrow current-surface dynamics-selection boundary,
+  not a selected Record update, physical-energy theorem, full-frequency
+  lattice theorem, nonlinear constraint-propagation result, gravity no-go,
+  necessary axiom amendment, fixed-percentage move, or audit verdict. Fresh
+  N1--N8 and all five N5 resolutions land; no `review-loop` is used.

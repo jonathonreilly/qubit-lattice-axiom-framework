@@ -1727,3 +1727,30 @@ metric-only pole is a projection artifact. The hard boundary is the persistent
 response. Continue with Lorentzian/canonical constraint reduction and
 Record-law/source selection. Re-rank after one deep block or three hours. No
 canonical axiom, fixed percentage, audit verdict, or `review-loop` changes.
+
+## Block 44 Handoff
+
+Work is on branch
+`physics-loop/toe-axiom-closure-block44-lorentzian-constraints-20260811`,
+stacked exactly on Block-43 delivery head `03eaec43f7`. The theorem note,
+source/input-pinned `PASS=15 FAIL=0` cache, six named mutation failures,
+independent parent-kernel/direct-finite-momentum `PASS=5 FAIL=0`, fresh
+N1--N8, and all five N5 resolutions are present. Citation registration is
+`5,490/15,698`, out-degree four. Science commit is `f57adabb50`; direct
+conformance passes. The exact stack reaches only the inherited stage-7
+dependency-policy epoch mismatch after `4,828` rows / `3,706` runners; the
+controlled current-main five-file overlay passes all 18 stages at checkpoint
+`d7fbc211f5cc`. Changed evidence is clean for Block 44 (`1/1`) and all 44
+stacked claims (`44/44`). Campaign conformance, push, and stacked PR remain
+pending.
+
+The significant gain is the complete-edge infrared canonical result. The
+repaired five-direction nonmetric block is invertible, stationary Schur
+elimination gives `-G_E/2` on every quadratic momentum monomial, and the
+conditional Lorentzian candidate has lapse/shift multipliers, exactly two TT
+light-cone modes, positive TT kinetic coefficient, the linear Bianchi
+identity, and the same `h_tt=2` source residue. The active wall is now physical
+selection and realization: derive one extensional Record transition law,
+causal composition, constraint preservation, physical state space, and source
+semantics. Full-edge finite-frequency continuation is rank two. No canonical
+axiom, fixed percentage, audit verdict, or `review-loop` changes.

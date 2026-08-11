@@ -359,3 +359,20 @@ defer work that only adds grid size, decimal precision, or another congruence
 projection. Rank one may consume one deep block; if it immediately requires an
 unlicensed update law, split the deliverable into a constructive extensional
 law attempt and a precise candidate axiom issue instead of hiding the import.
+
+## Post-Block-44 Priority Refresh
+
+| Rank | Target | Exact next witness | Why now |
+|---:|---|---|---|
+| 1 | Record-native extensional transition and law selection | construct one normalized local transition kernel on Record configurations whose composition defines causal precedence, realizes the Admissibility conditionals, preserves the linear constraints, and derives the geometry/source dictionary | the complete repaired infrared sector is now Einstein with the right two-TT count; selection and realization are the shortest remaining TOE bridge |
+| 2 | repaired full-edge finite-frequency Lorentzian continuation | continue the actual fifteen-edge analytic symbol, locate the two TT pole roots, verify four exact gauge zeros and a separated nonmetric remainder, and retain the static residue | decides whether the successful infrared candidate prolongs to the lattice rather than only the continuum coefficient |
+| 3 | physical inner product or reflection-positive transfer | construct the physical quotient norm/transfer object and turn the positive TT kinetic coefficient into a genuine positivity statement | mode counting alone does not establish physical energy |
+| 4 | stable nonflat nonlinear phase and constraint propagation | solve a selected nonflat phase and prove nonlinear preservation of the constraints | required beyond the flat linear sector, but premature before law selection |
+| 5 | analytic all-zone/full-`Z^3` static control and Born/history checkpoint | close only dependencies needed by ranks one through four; otherwise recheck the competing TOE root | avoids tunnel vision without spending another block on settled finite-grid evidence |
+
+Efficiency rule: one deep block goes to rank one. A bounded rank-two probe may
+run only if it can falsify the infrared prolongation cheaply. Stop additional
+static grids, decimal tightening, alternate congruences, and unrestricted
+full-zone scans. Re-score on closure fan-out, hypothesis discrimination,
+axiom localization, dependency readiness, and deep-block cost at least every
+three hours and immediately after any decisive failure.

@@ -869,3 +869,20 @@ Portfolio conclusion: the static linear seam has crossed its usefulness
 threshold. Further volume extension has low marginal value unless needed for
 an analytic all-zone proof. Constrained causal dynamics and extensional
 selection now carry the highest closure fan-out.
+
+## Block 44 Full-Edge Infrared Canonical / Selection Route Comparison
+
+| Route | Exact object | Outcome | Decision |
+|---|---|---|---|
+| complete repaired full-edge stationary Schur | ten constant-metric tangents plus the fixed five-dimensional nonmetric complement and its full zero-momentum block | complement inertia `(4,1,0)`, gap `1.289270`; `E_2=-G_E/2` on all ten momentum monomials | retain as the complete infrared gravity operator; do not revert to metric congruence |
+| conditional standard Lorentzian continuation | `eta=diag(+,+,+,-)`, lapse/shift kinetic rows, gauge quotient, TT polarizations, and Bianchi contraction | four multiplier rows; kinetic inertia `(1,5,4)`; null shell is four gauge plus two TT; each TT form is `(omega^2-k^2)/4`; static `h_tt=2` | retain as a candidate acceptance target, not selected physical dynamics |
+| current-axiom direct selection | existing Admissibility distribution and permanent Record clauses | memo explicitly supplies no Hamiltonian/transfer choice, update law, time metric, or source/action identity | rank-one constructive target is an extensional Record transition bridge; only then reconsider an axiom update |
+| repaired fifteen-edge finite-frequency continuation | analytic complex-frequency full symbol with exact gauge columns and lifted nonmetric sector | infrared limit now fixed; finite-frequency poles not certified in this block | rank two; run only as a cheap falsifier of the candidate prolongation |
+| reflection-positive or canonical physical state space | reduced norm/transfer positivity and constraint evolution | not constructed | rank three after an update object exists |
+| stable nonflat nonlinear phase | selected background, full constraints, and propagation | untouched by the flat linear theorem | preserve as the strongest nonlinear counterroute |
+
+Portfolio conclusion: the existence of the correct complete-edge infrared
+Einstein/two-TT structure is no longer the top uncertainty. Selection,
+causal composition, physical-state positivity, and Record/source semantics are.
+Further static grids, precision, projections, or Euclidean subspace scans are
+retired unless they discharge one of those higher-ranked dependencies.

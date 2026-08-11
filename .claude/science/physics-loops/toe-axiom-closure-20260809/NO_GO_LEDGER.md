@@ -381,3 +381,15 @@ The complete-edge positive result retires a generic Ward/source failure. The
 active negative boundary is formulation-specific: unreduced Euclidean
 semiboundedness. The next test is constrained Lorentzian propagation, not a
 broader no-go and not another restricted metric scan.
+
+## Block 44 Current-Axiom Dynamics-Selection Boundary
+
+| Scoped claim | Exact/bounded evidence | N1--N8 disposition | Forbidden promotion | Live routes |
+|---|---|---|---|---|
+| The supplied repaired complete-edge infrared law has an Einstein Schur operator and a viable conditional Lorentzian two-TT constraint sector, but the current axioms and parents do not select or define its Record-native causal update | nonmetric block inertia `(4,1,0)` and gap `1.289270`; all-monomial error `2.424e-14`; kinetic inertia `(1,5,4)`; shell rank four with four gauge plus two TT nulls; Bianchi residual `5.462e-17`; `PASS=15 FAIL=0` | fresh N1--N8 passes only for the narrow present-surface absence; the downstream transition-kernel, Hamiltonian, transfer, reflection-positive, full-lattice, and stable-nonflat steelmen remain live | do not infer gravity impossibility, physical positive energy, nonlinear constraint propagation, a unique continuation, a fifth-axiom necessity result, or adoption of the candidate clause | extensional Record transition kernel, canonical lattice Hamiltonian, reflection-positive transfer, complete repaired finite-frequency poles, source semantics, and stable nonflat phase |
+
+The broad gravity no-go fails because the full-edge infrared construction
+succeeds. A mandatory axiom amendment also fails the current steelman because
+a downstream bridge could select the same update. The surviving statement is
+only that dynamics, continuation, state-space positivity, and source meaning
+are not presently supplied or derived.

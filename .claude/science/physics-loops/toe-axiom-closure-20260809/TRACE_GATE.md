@@ -530,6 +530,25 @@ to derive its law from Records localizes a candidate dynamics/law-selection
 axiom issue. Candidate wording is unadopted; fixed TOE percentages and
 canonical axioms remain unchanged. No `review-loop` is used.
 
+## Block 44 Trace Gate
+
+Block 44 closes the leading complete-edge infrared canonical test. The fixed
+five-direction nonmetric complement is nonsingular, its stationary Schur
+operator equals `-G_E/2` across all ten quadratic momentum monomials, and the
+conditional Lorentzian continuation has four multiplier rows, exactly two TT
+light-cone modes, a positive TT kinetic coefficient, the linear Bianchi
+identity, and the inherited `h_tt=2` source residue.
+
+Reachability remains `upstream_support`, not TOE closure. The continuation is
+conditional and no Record-native transition law, causal composition, physical
+inner product, finite-frequency full-lattice pole theorem, nonlinear
+constraint propagation, stable nonflat phase, or source/action identification
+is supplied. The next trace-bearing seam is extensional Record law selection,
+with full-edge analytic pole continuation as its falsifier. The candidate
+Admissibility dynamics clause is sufficient but unadopted and not proved
+necessary; fixed TOE percentages and canonical axioms remain unchanged. No
+`review-loop` is used.
+
 ## Block 42 Trace Gate
 
 Block 42 resolves the Block-41 connection discriminator on the unchanged

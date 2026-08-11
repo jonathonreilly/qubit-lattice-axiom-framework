@@ -1059,3 +1059,33 @@ complete conditional nonlinear compact solution:
   conformance is `1fe4108ded`; PR #6134 is open, mergeable, and `CLEAN`,
   stacked exactly on Block-42 delivery head `7ac0e0e12c`; independent audit
   remains required
+
+## Block 44 Artifact Plan
+
+- theorem note: bind the complete `15=(10+5)` stationary Schur derivation,
+  all-ten-monomial Einstein coefficient, conditional Lorentzian multiplier and
+  two-TT decomposition, static-source continuity, axiom boundary, and
+  three-hour portfolio gate
+- primary runner/cache: source-bind the complete edge split, nonmetric inertia,
+  analytic coefficient tensor, finite-momentum convergence, static source,
+  Lorentzian kinetic/shell/TT/Bianchi checks, and N1--N8; target
+  `PASS=15 FAIL=0`
+- adversarial controls: six named mutation failures and one independent
+  parent-kernel/direct-finite-momentum reconstruction with target
+  `PASS=5 FAIL=0`
+- no-go packet: apply fresh N1--N8 only to the textual current-surface absence
+  of dynamics selection and preserve downstream transition-kernel,
+  Hamiltonian, transfer, full-lattice, source-bridge, and nonflat routes
+- campaign state: move Record-native extensional law selection to rank one,
+  full-edge finite-frequency continuation to rank two, physical-inner-product
+  reconstruction to rank three, and demote further static grids/projections
+- current evidence: primary cache `PASS=15 FAIL=0`; independent reconstruction
+  `PASS=5 FAIL=0`; six mutation probes each fail the intended named check;
+  citation registration `5,490/15,698`, out-degree four; direct conformance
+  passes. The exact stack reaches only the inherited stage-7 dependency-policy
+  epoch mismatch after `4,828` rows / `3,706` runners; the controlled
+  current-main five-file overlay passes all 18 stages at checkpoint
+  `d7fbc211f5cc`. Changed evidence is clean for Block 44 (`1/1`) and all 44
+  stacked claims (`44/44`). Science commit is `f57adabb50`; campaign
+  conformance, push, and stacked PR remain pending. No canonical edit, fixed
+  percentage move, audit verdict, or `review-loop` occurs

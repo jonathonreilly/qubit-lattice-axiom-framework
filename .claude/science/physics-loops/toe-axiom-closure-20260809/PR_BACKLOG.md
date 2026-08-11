@@ -593,6 +593,23 @@ Science commit is `be1781ad26`; campaign conformance is `42d3056d98`. PR
 head `f2f21f9b0f`. Independent audit is pending. No canonical edit,
 percentage move, audit verdict, or `review-loop` is used.
 
+Block 44 is local on branch
+`physics-loop/toe-axiom-closure-block44-lorentzian-constraints-20260811`,
+stacked exactly on Block-43 delivery head `03eaec43f7`. Its distinct review
+object is the complete `15=(10+5)` stationary Schur construction, exhaustive
+quadratic-momentum Einstein coefficient, conditional Lorentzian multiplier/
+two-TT/Bianchi sector, static-source continuity, and current-axiom dynamics-
+selection boundary. Primary cache is `PASS=15 FAIL=0`; six named mutations
+fail as intended; independent parent-kernel/direct-finite-momentum
+reconstruction is `PASS=5 FAIL=0`; citation registration is `5,490/15,698`,
+out-degree four. Science commit is `f57adabb50`; direct conformance passes.
+The exact stack reaches only the inherited stage-7 policy epoch; the
+controlled current-main five-file overlay passes all 18 stages at checkpoint
+`d7fbc211f5cc`. Changed evidence is clean for Block 44 (`1/1`) and all 44
+stacked claims (`44/44`). Campaign conformance, push, and stacked PR are
+pending. No canonical edit, percentage move, audit verdict, or `review-loop`
+is used.
+
 Block 43 is local on branch
 `physics-loop/toe-axiom-closure-block43-regge-increasing-region-20260811`,
 stacked exactly on Block-42 delivery head `7ac0e0e12c`. Its review object is

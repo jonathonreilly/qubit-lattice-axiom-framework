@@ -1985,6 +1985,40 @@ instance or Fourier census.
   `7ac0e0e12c`; independent audit is pending. No canonical axiom, fixed
   percentage, audit verdict, or `review-loop` changes.
 
+## Block 44 Construction And Adversarial Record
+
+- Reconstructed the complete constant edge split: the metric map has rank ten,
+  `Q_0 M_0` is zero to `1.324e-14`, and the five-direction nonmetric block has
+  eigenvalues `-45.909661,-15.019910` threefold, `+1.289270`.
+- Derived the full stationary Schur coefficient from the real-space kernel.
+  Across the four square and six mixed momentum monomials it equals
+  `-G_E/2` with maximum entry error `2.424e-14`; direct finite-momentum Schur
+  errors fall quadratically to `2.030e-6`.
+- The unit static source gives `h_tt=2` with residual `9.860e-15`, matching the
+  independently derived increasing-torus residue.
+- The conditional Lorentzian operator has four lapse/shift multiplier rows,
+  kinetic inertia `(1,5,4)`, a rank-four null-shell operator whose six nulls
+  are exactly four gauge plus two TT directions, TT form
+  `(omega^2-k^2)/4`, and Bianchi residual `5.462e-17`.
+- Fresh N1--N8 rejects a broad gravity no-go and a present axiom-necessity
+  claim. It localizes extensional Record transition/law selection as rank one,
+  complete finite-frequency continuation as rank two, and physical-state
+  positivity as rank three.
+- Primary cache is `PASS=15 FAIL=0` with 3,758 stdout characters. Six
+  in-memory mutations each produce exactly the intended named failure. An
+  independent reconstruction from the parent Regge/repair kernels, direct
+  finite-momentum Richardson limit, and separately assembled Lorentzian
+  tensors is `PASS=5 FAIL=0`. Citation registration is `5,490/15,698`,
+  out-degree four. Vocabulary, strict audit lint, cache freshness, and graph/
+  link invariants pass. Science commit is `f57adabb50`. The exact stack seeds
+  `4,828` rows / `3,706` runners before reproducing only the inherited stage-7
+  dependency-policy epoch mismatch; the controlled current-main five-file
+  overlay passes all 18 stages at checkpoint `d7fbc211f5cc`. Changed evidence
+  is clean for Block 44 (`1/1`) and all 44 stacked claims (`44/44`), with zero
+  failures or controls. Campaign conformance, push, and stacked PR remain
+  pending. No canonical axiom, fixed percentage, audit verdict, or
+  `review-loop` changes.
+
 ## Block 42 Construction And Adversarial Record
 
 - Contracted every stationary Gram to `x=0.894520303..1.022146364` and

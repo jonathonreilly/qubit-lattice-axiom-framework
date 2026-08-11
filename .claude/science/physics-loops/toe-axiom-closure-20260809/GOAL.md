@@ -1312,3 +1312,31 @@ cost-to-answer. Do not extend finite grids, tighten a settled constant, or use
 a restricted metric subspace unless the result can change the top-ranked
 Lorentzian, law-selection, full-`Z^3`, or stable-nonflat decision. No canonical
 axiom amendment is adopted and fixed percentages remain locked.
+
+## Block 44 Goal Update And Portfolio Gate
+
+The repaired full-edge sector now passes the leading canonical discriminator.
+Its nonsingular five-direction nonmetric block can be eliminated through the
+complete stationary equations, and the resulting quadratic momentum tensor is
+`-G_E/2` on all ten independent monomials. The conditional standard
+Lorentzian continuation has four lapse/shift multiplier rows, exactly two TT
+light-cone modes, positive TT kinetic coefficient, a linear Bianchi identity,
+and the same `h_tt=2` static residue.
+
+The top goal therefore moves from finding a viable infrared constraint sector
+to selecting and realizing it. Construct one extensional, local,
+translation/proper-cubic-covariant Record transition law whose composition
+defines causal precedence, preserves the constraints, selects a physical
+state space, and derives the source semantics. In parallel only where it can
+change that decision, continue the repaired fifteen-edge analytic symbol to
+finite frequency and test whether four gauge plus two TT roots remain
+separated from every nonmetric branch.
+
+The three-hour efficiency gate now ranks: Record-native law/update selection;
+full-lattice finite-frequency continuation; physical-inner-product or
+reflection-positive reconstruction; stable nonflat nonlinear propagation;
+then analytic all-zone/static strengthening. Additional grids, precision,
+restricted projections, and Euclidean subspace scans are deferred unless they
+unblock a higher-ranked seam. The candidate extensional-dynamics clause is
+sufficient but unadopted and not proved necessary. No canonical axiom
+amendment is made and fixed percentages remain locked.

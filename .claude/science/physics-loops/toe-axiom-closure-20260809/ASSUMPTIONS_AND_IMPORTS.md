@@ -551,6 +551,26 @@ limit, semibounded Euclidean phase, nonlinear completion, Lorentzian update,
 Record-to-action selection, external science, canonical edit, percentage
 move, audit verdict, or `review-loop` is imported.
 
+## Block 44 Assumptions And Imports
+
+Block 44 imports Block 43's complete repaired fifteen-edge real-space kernel,
+the retained constant-metric tangent map and displacement columns, the supplied
+`alpha=1/1024`, and the already derived unit-source residue. The
+five-dimensional nonmetric complement is constructed by an orthonormal split
+of the full edge space and is eliminated only through its nonsingular
+stationary equation. No metric-only projection or fitted Einstein prefactor is
+imported.
+
+The signature `diag(+,+,+,-)`, tick direction, standard polynomial
+Lorentzian continuation, and candidate lapse/shift reading are declared
+conditional inputs. Their mode count, TT dispersion, Bianchi identity, and
+static-source continuity are computed, not treated as current-axiom content.
+No causal Record update, Hamiltonian or transfer selection, physical inner
+product, full-frequency lattice pole theorem, nonlinear constraint
+propagation, stable nonflat phase, source-as-stress identification, external
+science, canonical edit, percentage move, audit verdict, or `review-loop` is
+imported.
+
 ## Block 42 Assumptions And Imports
 
 Block 42 imports only the fixed Block-38 `sigma/3` face factor, Block-39

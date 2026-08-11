@@ -1,0 +1,766 @@
+{
+  "artifact": "translation-uniform two-star patch independent refutation checker",
+  "audit_status_authority": "independent audit lane only",
+  "checker_source_sha256": "102e5b16888d1522dd45f33386f423c8b61a9af88c5668aa28f0ffb174656e09",
+  "checks": {
+    "A_INDEPENDENT_RECONSTRUCTION": true,
+    "B_REFUTATION_POWER": true,
+    "C_ARTIFACT_BINDING": true,
+    "D_PROVENANCE": true,
+    "E_CONTROLS": true
+  },
+  "controls": {
+    "all_inputs_relative_and_present": true,
+    "blob_pins_match": true,
+    "byte_pinned_input_paths": [
+      "scripts/frontier_cycle983_translation_uniform_two_star_patch_2026_08_11.py",
+      "outputs/translation_uniform_two_star_patch_cycle983_receipt_2026_08_11.json"
+    ],
+    "cycle719_imported_or_executed": false,
+    "determinism_replay": true,
+    "forbidden_imports": [],
+    "house_stdout_limit_bytes": 6000,
+    "input_git_blobs": {
+      "outputs/translation_uniform_two_star_patch_cycle983_receipt_2026_08_11.json": "459971c0e8b7d67ccac41f789a373c0ddeb9c4e0",
+      "scripts/frontier_cycle983_translation_uniform_two_star_patch_2026_08_11.py": "c96f54135c6e0a94d4614aab556e2fb8841570f1"
+    },
+    "input_sha256": {
+      "outputs/translation_uniform_two_star_patch_cycle983_receipt_2026_08_11.json": "cbd2f7857cdd03f580aef30126294e32c8d4f57e4fb0282f6ef73936f2d75754",
+      "scripts/frontier_cycle983_translation_uniform_two_star_patch_2026_08_11.py": "c4ff78125b1d82954acbcd7fd5e409abe61815bb64c75c1b2ca6a7aa24d6b51d"
+    },
+    "literal_audit_input_paths": [
+      "scripts/frontier_cycle983_translation_uniform_two_star_patch_2026_08_11.py",
+      "outputs/translation_uniform_two_star_patch_cycle983_receipt_2026_08_11.json",
+      "logs/runner-cache/frontier_cycle983_translation_uniform_two_star_patch_2026_08_11.txt"
+    ],
+    "literal_source_read_count": 3,
+    "primary_ast_timeout_seconds": 1400,
+    "primary_imported_or_executed": false,
+    "prior_cycle_text_or_ast_executed": false,
+    "runtime_budget_met": true,
+    "runtime_budget_seconds": 300,
+    "sha_pins_match": true,
+    "stdout_bytes": 484,
+    "stdout_limit_bytes": 150000
+  },
+  "cycle": 983,
+  "findings": {
+    "clean_bookkeeping_validation": true,
+    "clean_bookkeeping_validation_errors": [],
+    "coherent_outcome_probes": [
+      {
+        "accepted_by_bookkeeping_gate": true,
+        "errors": [],
+        "name": "coherent_obstructed_outcome"
+      },
+      {
+        "accepted_by_bookkeeping_gate": true,
+        "errors": [],
+        "name": "coherent_not_hostable_outcome"
+      }
+    ],
+    "independent_expected": {
+      "construction": {
+        "center_separation_L1": 1,
+        "closed_star_intersection": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "closed_star_intersection_size": 2,
+        "closed_star_union_size": 12,
+        "host_support_site_count": 12,
+        "host_support_sites": [
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            -1
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            -1,
+            0
+          ],
+          [
+            1,
+            0,
+            -1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            2,
+            0,
+            0
+          ]
+        ],
+        "minimum_union_size": 12,
+        "offset_census_digest": "d0ede7566aead5dae9f488ccf9881857b0adf52b3ec51581cdc11a4ea504b5a0",
+        "patch_name": "P2x_ADJACENT_TWO_CENTRE_CLOSED_STAR_PATCH",
+        "relative_family_digest": "d7cb67193f1b63a3f08181410c320ac570cc4652002971274028d69baed7a430",
+        "relative_family_size_per_target": 23,
+        "site_program_instance_count": 46,
+        "target_site_count": 2,
+        "target_sites": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ]
+      },
+      "group_order": 24,
+      "overlap": {
+        "classification": "exact_agreement_on_all_shared_sites_and_pairs",
+        "shared_pair_rows": [
+          {
+            "global_pair": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0
+              ]
+            ],
+            "paths_agree_up_to_reversal": true,
+            "semantic_pair_in_both_stars": true,
+            "star_A_J": 1,
+            "star_A_class": "CNOT",
+            "star_A_local_wires_for_sorted_global_pair": [
+              0,
+              1
+            ],
+            "star_B_J": 1,
+            "star_B_class": "CNOT",
+            "star_B_local_wires_for_sorted_global_pair": [
+              2,
+              0
+            ],
+            "target_equations_are_distinct_instances_not_equal_outputs": true,
+            "z3_nearest_neighbour_in_star_A": true,
+            "z3_nearest_neighbour_in_star_B": true
+          }
+        ],
+        "shared_site_rows": [
+          {
+            "global_site": [
+              0,
+              0,
+              0
+            ],
+            "same_global_site_binding": true,
+            "star_A_local_name": "C",
+            "star_A_local_wire": 0,
+            "star_B_local_name": "-x",
+            "star_B_local_wire": 2
+          },
+          {
+            "global_site": [
+              1,
+              0,
+              0
+            ],
+            "same_global_site_binding": true,
+            "star_A_local_name": "+x",
+            "star_A_local_wire": 1,
+            "star_B_local_name": "C",
+            "star_B_local_wire": 0
+          }
+        ]
+      },
+      "uniformity": {
+        "all_patch_target_sites_tested": true,
+        "classification": "translation_uniform_on_every_target_site_of_P2x",
+        "target_rows": [
+          {
+            "class_assignments": [
+              [
+                "CNOT(+x->C)",
+                "CNOT",
+                1
+              ],
+              [
+                "CNOT(+y->C)",
+                "CNOT",
+                1
+              ],
+              [
+                "CNOT(+z->C)",
+                "CNOT",
+                1
+              ],
+              [
+                "CNOT(-x->C)",
+                "CNOT",
+                1
+              ],
+              [
+                "CNOT(-y->C)",
+                "CNOT",
+                1
+              ],
+              [
+                "CNOT(-z->C)",
+                "CNOT",
+                1
+              ],
+              [
+                "TOF(+x,+y->C)",
+                "TOF_PERPENDICULAR_CONTROLS",
+                2
+              ],
+              [
+                "TOF(+x,+z->C)",
+                "TOF_PERPENDICULAR_CONTROLS",
+                2
+              ],
+              [
+                "TOF(+x,-x->C)",
+                "TOF_OPPOSITE_CONTROLS",
+                0
+              ],
+              [
+                "TOF(+x,-y->C)",
+                "TOF_PERPENDICULAR_CONTROLS",
+                2
+              ],
+              [
+                "TOF(+x,-z->C)",
+                "TOF_PERPENDICULAR_CONTROLS",
+                2
+              ],
+              [
+                "TOF(+y,+z->C)",
+                "TOF_PERPENDICULAR_CONTROLS",
+                2
+              ],
+              [
+                "TOF(+y,-y->C)",
+                "TOF_OPPOSITE_CONTROLS",
+                0
+              ],
+              [
+                "TOF(+y,-z->C)",
+                "TOF_PERPENDICULAR_CONTROLS",
+                2
+              ],
+              [
+                "TOF(+z,-z->C)",
+                "TOF_OPPOSITE_CONTROLS",
+                0
+              ],
+              [
+                "TOF(-x,+y->C)",
+                "TOF_PERPENDICULAR_CONTROLS",
+                2
+              ],
+              [
+                "TOF(-x,+z->C)",
+                "TOF_PERPENDICULAR_CONTROLS",
+                2
+              ],
+              [
+                "TOF(-x,-y->C)",
+                "TOF_PERPENDICULAR_CONTROLS",
+                2
+              ],
+              [
+                "TOF(-x,-z->C)",
+                "TOF_PERPENDICULAR_CONTROLS",
+                2
+              ],
+              [
+                "TOF(-y,+z->C)",
+                "TOF_PERPENDICULAR_CONTROLS",
+                2
+              ],
+              [
+                "TOF(-y,-z->C)",
+                "TOF_PERPENDICULAR_CONTROLS",
+                2
+              ]
+            ],
+            "complete_six_neighbour_star_present": true,
+            "landed_vs_independent_truth_failure_count": 0,
+            "normalized_structure_digest": "264f7da9d4c69a12224491ed43e9560419271e87d00765b9c88aa70e96ebed4e",
+            "orbits": [
+              {
+                "J_values": [
+                  1
+                ],
+                "class_label": "CNOT",
+                "effective_stabilizer_order": 4,
+                "member_count": 6,
+                "members": [
+                  "CNOT(+x->C)",
+                  "CNOT(+y->C)",
+                  "CNOT(+z->C)",
+                  "CNOT(-x->C)",
+                  "CNOT(-y->C)",
+                  "CNOT(-z->C)"
+                ]
+              },
+              {
+                "J_values": [
+                  0
+                ],
+                "class_label": "TOF_OPPOSITE_CONTROLS",
+                "effective_stabilizer_order": 8,
+                "member_count": 3,
+                "members": [
+                  "TOF(+x,-x->C)",
+                  "TOF(+y,-y->C)",
+                  "TOF(+z,-z->C)"
+                ]
+              },
+              {
+                "J_values": [
+                  2
+                ],
+                "class_label": "TOF_PERPENDICULAR_CONTROLS",
+                "effective_stabilizer_order": 2,
+                "member_count": 12,
+                "members": [
+                  "TOF(+x,+y->C)",
+                  "TOF(+x,+z->C)",
+                  "TOF(+x,-y->C)",
+                  "TOF(+x,-z->C)",
+                  "TOF(+y,+z->C)",
+                  "TOF(+y,-z->C)",
+                  "TOF(-x,+y->C)",
+                  "TOF(-x,+z->C)",
+                  "TOF(-x,-y->C)",
+                  "TOF(-x,-z->C)",
+                  "TOF(-y,+z->C)",
+                  "TOF(-y,-z->C)"
+                ]
+              }
+            ],
+            "relative_family_size": 23,
+            "route": {
+              "all_words_routable": true,
+              "expanded_primitive_count": 232,
+              "maximum_route_distance": 2,
+              "maximum_touched_sites": 3,
+              "non_nn_failure_count": 0,
+              "operand_order_failure_count": 0,
+              "route_return_failure_count": 0,
+              "routed_nn_gate_count": 292
+            },
+            "target_name": "A",
+            "target_site": [
+              0,
+              0,
+              0
+            ],
+            "truth_table_evaluations": 2944,
+            "witness_count": 21,
+            "witness_names": [
+              "CNOT(+x->C)",
+              "CNOT(+y->C)",
+              "CNOT(+z->C)",
+              "CNOT(-x->C)",
+              "CNOT(-y->C)",
+              "CNOT(-z->C)",
+              "TOF(+x,+y->C)",
+              "TOF(+x,+z->C)",
+              "TOF(+x,-x->C)",
+              "TOF(+x,-y->C)",
+              "TOF(+x,-z->C)",
+              "TOF(+y,+z->C)",
+              "TOF(+y,-y->C)",
+              "TOF(+y,-z->C)",
+              "TOF(+z,-z->C)",
+              "TOF(-x,+y->C)",
+              "TOF(-x,+z->C)",
+              "TOF(-x,-y->C)",
+              "TOF(-x,-z->C)",
+              "TOF(-y,+z->C)",
+              "TOF(-y,-z->C)"
+            ]
+          },
+          {
+            "class_assignments": [
+              [
+                "CNOT(+x->C)",
+                "CNOT",
+                1
+              ],
+              [
+                "CNOT(+y->C)",
+                "CNOT",
+                1
+              ],
+              [
+                "CNOT(+z->C)",
+                "CNOT",
+                1
+              ],
+              [
+                "CNOT(-x->C)",
+                "CNOT",
+                1
+              ],
+              [
+                "CNOT(-y->C)",
+                "CNOT",
+                1
+              ],
+              [
+                "CNOT(-z->C)",
+                "CNOT",
+                1
+              ],
+              [
+                "TOF(+x,+y->C)",
+                "TOF_PERPENDICULAR_CONTROLS",
+                2
+              ],
+              [
+                "TOF(+x,+z->C)",
+                "TOF_PERPENDICULAR_CONTROLS",
+                2
+              ],
+              [
+                "TOF(+x,-x->C)",
+                "TOF_OPPOSITE_CONTROLS",
+                0
+              ],
+              [
+                "TOF(+x,-y->C)",
+                "TOF_PERPENDICULAR_CONTROLS",
+                2
+              ],
+              [
+                "TOF(+x,-z->C)",
+                "TOF_PERPENDICULAR_CONTROLS",
+                2
+              ],
+              [
+                "TOF(+y,+z->C)",
+                "TOF_PERPENDICULAR_CONTROLS",
+                2
+              ],
+              [
+                "TOF(+y,-y->C)",
+                "TOF_OPPOSITE_CONTROLS",
+                0
+              ],
+              [
+                "TOF(+y,-z->C)",
+                "TOF_PERPENDICULAR_CONTROLS",
+                2
+              ],
+              [
+                "TOF(+z,-z->C)",
+                "TOF_OPPOSITE_CONTROLS",
+                0
+              ],
+              [
+                "TOF(-x,+y->C)",
+                "TOF_PERPENDICULAR_CONTROLS",
+                2
+              ],
+              [
+                "TOF(-x,+z->C)",
+                "TOF_PERPENDICULAR_CONTROLS",
+                2
+              ],
+              [
+                "TOF(-x,-y->C)",
+                "TOF_PERPENDICULAR_CONTROLS",
+                2
+              ],
+              [
+                "TOF(-x,-z->C)",
+                "TOF_PERPENDICULAR_CONTROLS",
+                2
+              ],
+              [
+                "TOF(-y,+z->C)",
+                "TOF_PERPENDICULAR_CONTROLS",
+                2
+              ],
+              [
+                "TOF(-y,-z->C)",
+                "TOF_PERPENDICULAR_CONTROLS",
+                2
+              ]
+            ],
+            "complete_six_neighbour_star_present": true,
+            "landed_vs_independent_truth_failure_count": 0,
+            "normalized_structure_digest": "264f7da9d4c69a12224491ed43e9560419271e87d00765b9c88aa70e96ebed4e",
+            "orbits": [
+              {
+                "J_values": [
+                  1
+                ],
+                "class_label": "CNOT",
+                "effective_stabilizer_order": 4,
+                "member_count": 6,
+                "members": [
+                  "CNOT(+x->C)",
+                  "CNOT(+y->C)",
+                  "CNOT(+z->C)",
+                  "CNOT(-x->C)",
+                  "CNOT(-y->C)",
+                  "CNOT(-z->C)"
+                ]
+              },
+              {
+                "J_values": [
+                  0
+                ],
+                "class_label": "TOF_OPPOSITE_CONTROLS",
+                "effective_stabilizer_order": 8,
+                "member_count": 3,
+                "members": [
+                  "TOF(+x,-x->C)",
+                  "TOF(+y,-y->C)",
+                  "TOF(+z,-z->C)"
+                ]
+              },
+              {
+                "J_values": [
+                  2
+                ],
+                "class_label": "TOF_PERPENDICULAR_CONTROLS",
+                "effective_stabilizer_order": 2,
+                "member_count": 12,
+                "members": [
+                  "TOF(+x,+y->C)",
+                  "TOF(+x,+z->C)",
+                  "TOF(+x,-y->C)",
+                  "TOF(+x,-z->C)",
+                  "TOF(+y,+z->C)",
+                  "TOF(+y,-z->C)",
+                  "TOF(-x,+y->C)",
+                  "TOF(-x,+z->C)",
+                  "TOF(-x,-y->C)",
+                  "TOF(-x,-z->C)",
+                  "TOF(-y,+z->C)",
+                  "TOF(-y,-z->C)"
+                ]
+              }
+            ],
+            "relative_family_size": 23,
+            "route": {
+              "all_words_routable": true,
+              "expanded_primitive_count": 232,
+              "maximum_route_distance": 2,
+              "maximum_touched_sites": 3,
+              "non_nn_failure_count": 0,
+              "operand_order_failure_count": 0,
+              "route_return_failure_count": 0,
+              "routed_nn_gate_count": 292
+            },
+            "target_name": "B",
+            "target_site": [
+              1,
+              0,
+              0
+            ],
+            "truth_table_evaluations": 2944,
+            "witness_count": 21,
+            "witness_names": [
+              "CNOT(+x->C)",
+              "CNOT(+y->C)",
+              "CNOT(+z->C)",
+              "CNOT(-x->C)",
+              "CNOT(-y->C)",
+              "CNOT(-z->C)",
+              "TOF(+x,+y->C)",
+              "TOF(+x,+z->C)",
+              "TOF(+x,-x->C)",
+              "TOF(+x,-y->C)",
+              "TOF(+x,-z->C)",
+              "TOF(+y,+z->C)",
+              "TOF(+y,-y->C)",
+              "TOF(+y,-z->C)",
+              "TOF(+z,-z->C)",
+              "TOF(-x,+y->C)",
+              "TOF(-x,+z->C)",
+              "TOF(-x,-y->C)",
+              "TOF(-x,-z->C)",
+              "TOF(-y,+z->C)",
+              "TOF(-y,-z->C)"
+            ]
+          }
+        ]
+      },
+      "verdict": {
+        "exact_obstruction": null,
+        "full_infinite_translation_uniform_lattice_law_claimed": false,
+        "host_support_site_count": 12,
+        "named_patch": "P2x_ADJACENT_TWO_CENTRE_CLOSED_STAR_PATCH",
+        "target_patch_site_count": 2,
+        "verdict": "TRANSLATION_UNIFORM_AT_PATCH_SCOPE"
+      }
+    },
+    "independent_reconstruction_bookkeeping": true,
+    "mutations": [
+      {
+        "errors": [
+          "target_site_count",
+          "site_program_instances",
+          "all_patch_sites_flag"
+        ],
+        "name": "target_site_count",
+        "rejected": true
+      },
+      {
+        "errors": [
+          "support_site_count",
+          "star_union_count"
+        ],
+        "name": "support_site_count",
+        "rejected": true
+      },
+      {
+        "errors": [
+          "site_program_instances"
+        ],
+        "name": "site_program_instances",
+        "rejected": true
+      },
+      {
+        "errors": [
+          "witness_names:1",
+          "witness_assignments:1",
+          "orbit_sum:1",
+          "uniformity_classification",
+          "per_site_agreement:witness_count"
+        ],
+        "name": "second_site_witness_count",
+        "rejected": true
+      },
+      {
+        "errors": [
+          "orbit_sum:0"
+        ],
+        "name": "orbit_size",
+        "rejected": true
+      },
+      {
+        "errors": [
+          "route_host_flag:1",
+          "uniformity_classification"
+        ],
+        "name": "hostability",
+        "rejected": true
+      },
+      {
+        "errors": [
+          "uniformity_classification",
+          "verdict",
+          "verdict_obstruction"
+        ],
+        "name": "uniformity_classification",
+        "rejected": true
+      },
+      {
+        "errors": [
+          "shared_site_count"
+        ],
+        "name": "shared_site_count",
+        "rejected": true
+      },
+      {
+        "errors": [
+          "shared_pair_agreement",
+          "overlap_classification"
+        ],
+        "name": "overlap_path_agreement",
+        "rejected": true
+      },
+      {
+        "errors": [
+          "verdict"
+        ],
+        "name": "verdict",
+        "rejected": true
+      },
+      {
+        "errors": [
+          "infinite_scope"
+        ],
+        "name": "infinite_scope",
+        "rejected": true
+      },
+      {
+        "errors": [
+          "cache_source_pin"
+        ],
+        "name": "primary_source_pin",
+        "rejected": true
+      },
+      {
+        "errors": [
+          "cache_stdout_pin"
+        ],
+        "name": "cache_headline",
+        "rejected": true
+      }
+    ],
+    "primary_science_agreement": true,
+    "primary_science_agreement_mismatches": []
+  },
+  "integrity_policy": "checks gate independent reconstruction, bookkeeping, artifact binding, mutation rejection, and outcome neutrality only; science agreement is reported data",
+  "pass": true,
+  "science_digest": "2332ef182b3d2a2e7067acf1766c3ea3d0b3848fce4e0b867b391eb9d5c97794",
+  "stdout_sha256": "b17106166824765324175d50b678b523be583021c792fa5b718524d9983ee036"
+}

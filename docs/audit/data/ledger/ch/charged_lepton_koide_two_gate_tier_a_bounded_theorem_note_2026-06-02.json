@@ -47,7 +47,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 3.822,
+  "load_bearing_score": 3.959,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -186,6 +186,6 @@
   },
   "runner_path": "scripts/frontier_charged_lepton_koide_two_gate_tier_a_bounded_verifier.py",
   "title": "Charged-lepton Koide two-gate conditional companion",
-  "transitive_descendants": 9,
+  "transitive_descendants": 10,
   "verdict_rationale": null
 }

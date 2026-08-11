@@ -33,7 +33,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 5.587,
+  "load_bearing_score": 5.67,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -406,6 +406,6 @@
   },
   "runner_path": "scripts/frontier_positivity_bridge_orientation_sign_discriminator.py",
   "title": "Det-Magnitude Positivity Does Not Break S_3; Orientation-Sign Is the C_3 Route",
-  "transitive_descendants": 16,
+  "transitive_descendants": 17,
   "verdict_rationale": null
 }

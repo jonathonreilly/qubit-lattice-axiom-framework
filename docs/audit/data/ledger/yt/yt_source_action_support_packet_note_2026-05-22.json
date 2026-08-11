@@ -29,7 +29,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 13.492,
+  "load_bearing_score": 13.524,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -1700,6 +1700,6 @@
   },
   "runner_path": "scripts/frontier_yt_source_action_support_packet.py",
   "title": "Y_T Source-Action Support Packet",
-  "transitive_descendants": 44,
+  "transitive_descendants": 45,
   "verdict_rationale": null
 }

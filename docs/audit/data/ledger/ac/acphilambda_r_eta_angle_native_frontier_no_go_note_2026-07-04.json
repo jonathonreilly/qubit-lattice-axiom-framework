@@ -19,7 +19,7 @@
   "claim_type_author_hint_raw": "no_go",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
-  "criticality": "leaf",
+  "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
@@ -29,13 +29,13 @@
     "koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24",
     "ac_reta_hclass_hunit_readout_derivation_obligation"
   ],
-  "direct_in_degree": 1,
+  "direct_in_degree": 2,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 1.5,
+  "load_bearing_score": 2.585,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -129,6 +129,6 @@
   },
   "runner_path": "scripts/acphilambda_r_eta_angle_native_frontier_no_go_2026_07_04.py",
   "title": "AC_phi_lambda R-eta Angle-Native Frontier No-Go And License Certificate",
-  "transitive_descendants": 1,
+  "transitive_descendants": 2,
   "verdict_rationale": null
 }

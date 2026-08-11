@@ -29,7 +29,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 14.64,
+  "load_bearing_score": 14.66,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -1772,6 +1772,6 @@
   },
   "runner_path": "scripts/gate_b_farfield_harness.py",
   "title": "Gate B Far-Field Bounded Harness Certificate",
-  "transitive_descendants": 140,
+  "transitive_descendants": 142,
   "verdict_rationale": null
 }

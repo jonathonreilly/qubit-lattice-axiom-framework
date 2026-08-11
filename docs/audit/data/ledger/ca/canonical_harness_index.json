@@ -237,6 +237,7 @@
     "microcausality_gauged_kernel_weighted_activity_feed_bounded_theorem_note_2026-07-18",
     "microcausality_matrix_fiber_trace_norm_lemma_and_feed_bounded_theorem_note_2026-07-18",
     "microcausality_corner_class_factorization_discharge_bounded_theorem_note_2026-07-18",
+    "exactness_residual_priced_arrow_is_lane_data_cycle923_bounded_theorem_note_2026-07-28",
     "irregular_sign_core_packet_gate_note",
     "weak_coupling_retention_note_2026-04-11",
     "irregular_directional_observable_note_2026-04-11",
@@ -361,7 +362,8 @@
     "neutrino_dirac_global_lift_partial_theorem_note_2026-04-28",
     "neutrino_normal_grammar_u1_rigidity_note_2026-04-28",
     "neutrino_axiom3_reading_stuck_fanout_note_2026-04-28",
-    "neutrino_lane4_workstream_closeout_note_2026-04-28"
+    "neutrino_lane4_workstream_closeout_note_2026-04-28",
+    "tracelessness_provenance_cycle873_bounded_theorem_note_2026-07-28"
   ],
   "direct_in_degree": 7,
   "effective_status": "meta",
@@ -374,7 +376,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "c28700323b198220916dec92ad42b22e0a5534e8703beff87ac739c32eda55b7",
+  "note_hash": "b14721f5bccff05f53b7c3aa71d8d9ec7850b3cec4a461eb462fe1de7f9347c9",
   "note_path": "docs/CANONICAL_HARNESS_INDEX.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

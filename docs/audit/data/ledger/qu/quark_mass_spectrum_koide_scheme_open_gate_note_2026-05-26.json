@@ -19,7 +19,7 @@
   "claim_type_author_hint_raw": "open_gate",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
-  "criticality": "leaf",
+  "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
@@ -28,13 +28,13 @@
     "koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10",
     "record_selector_audit_sidecar_2026-06-05"
   ],
-  "direct_in_degree": 1,
+  "direct_in_degree": 2,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 1.5,
+  "load_bearing_score": 2.585,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "meta",
@@ -417,6 +417,6 @@
   },
   "runner_path": "scripts/frontier_quark_mass_spectrum_koide_scheme_open_gate.py",
   "title": "Quark Mass Spectrum Koide-Scheme Open Gate",
-  "transitive_descendants": 1,
+  "transitive_descendants": 2,
   "verdict_rationale": null
 }

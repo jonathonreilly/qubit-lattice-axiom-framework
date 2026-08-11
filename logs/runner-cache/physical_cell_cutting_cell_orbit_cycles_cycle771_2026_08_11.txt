@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/physical_cell_cutting_cell_orbit_cycles_cycle771_2026_08_11.py
+runner_sha256: 3857b9962df8fcc0c6a785d9a310dbb5147b26a76d6ff8ac373fb75b237739e2
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 13.49
+status: ok
+----- stdout -----
+PASS C0 cell 2672 unit-det, 400 at cost floor 6, 15800 cuttings of 24, 192 pieces, 1975 each, 379200=379200
+PASS C1 covers 192, each of 8 pieces, each meets every cutting once, 8 x 1975 = 15800
+PASS C2 group 384 distinct maps shut under composition, 384 bijections each side, one orbit of 192 on each
+PASS C3 both point stabilisers have order 2 and the non-identity element of each squares to the identity
+PASS C4 12 non-identity maps fix at least one piece, 4 fix at least one cover, the two sets are disjoint
+PASS C5 each of the 12 fixes 16 pieces, each of the 4 fixes 48 covers, all 16 are involutions
+PASS C6 over all 383 non-identity maps none fixes both a piece and a cover
+PASS C7 the pair action is free: 96 orbits of the full size 384, 96 x 384 = 36864 pairs
+PASS C8 each of the 96 orbit tables carries 2 ones in every one of its 192 rows and 2 in every one of its 192 columns
+PASS C9 each point has a unique non-identity fixer; it swaps the two pieces of its row and the two covers of its column
+PASS C10 12 piece gens by 4 cover gens is 48 products, order multiset 48x4
+PASS C11 rejector: 12 gens by all 75 involutions is 900 products of orders 1 2 4 8, so order 4 is not automatic
+PASS C12 every component is a cycle of length 8: 48 per table, 96 x 48 = 4608 cycles in all
+PASS C13 each of the 4608 cycles has length twice the order of the product of the two generators at its base pair
+PASS C14 block det 0 so rank at most 3, leading 3 by 3 minor det 1 so rank at least 3: rank 3 nullity 1 over every field
+PASS C15 on each cycle the 4 by 4 submatrix is that block exactly, and its rows and columns carry no ones outside it
+PASS C16 48 blocks of rank 3 give rank 144 and nullity 48 = 192 - 144 for all 96 tables, no large elimination
+PASS C17 the alternating vector on each of the 4608 cycles is annihilated exactly; the 48 per table have disjoint supports
+PASS C18 real elimination gives rank 144 for all 96 tables at both primes, 192 measurements
+PASS C19 rejector: moving one entry along a row breaks two-regularity and the rank moves from 144 to 145
+PASS C20 the 96 orbit tables sum entrywise to the all ones 192 by 192 matrix
+PASS C21 the cover by piece incidence is exactly the entrywise sum of 4 of the 96 orbit tables
+PASS C22 incidence rank 105 at both primes, kernel 87 = 192 - 105, excess 39 = 144 - 105
+PASS C23 each of the 4 summands alone has rank 144; the 6 two-element sums measure 72 93 117 129 144 144
+group 384, orbits 96, cycles 4608, every orbit table rank 144, incidence rank 105
+elapsed 13.3 s, peak resident 56.3 MB
+TOTAL: PASS=24 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle985_neighbour_dependence_record_content_independent_check_2026_08_11.py
+runner_sha256: b7aa7dc7faa48635c1b5caf058bc0431d043a1de89ff64b92c84d022eb055ae4
+input_fingerprint_sha256: 1925c057f59ec44d5275ed236801ddff33c5755729e34238aa833c224eaafa3d
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+CYCLE985_NEIGHBOUR_DEPENDENCE_RECORD_CONTENT_INDEPENDENT_CHECK
+R0_PRIMARY_AST_AND_PINS PASS
+R1_INDEPENDENT_CONTENT_CENSUS PASS :: classes=[['incoming CNOT', 6, 4, 1, 2], ['perpendicular-control TOF', 12, 2, 2, 4], ['opposite-control TOF', 3, 8, 0, 4]]
+R2_INDEPENDENT_READOUT_DUAL PASS :: outcome=SEPARATING_ADMISSIBLE_READOUT_EXISTS; pairs=10
+R3_RECEIPT_CACHE_BINDING PASS
+R4_ACTIVE_CORRUPTION_PROBES PASS :: rejected=6/6
+R5_CONTROLS PASS :: source_reads=3<=6; primary_executed=False; negative_gate=True
+VERDICT: PRIMARY_SURVIVES_INDEPENDENT_REFUTATION_ATTEMPT
+TOTAL: PASS=6 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,118 @@
+{
+  "artifact": "Cycle 985 independent record-content refutation attempt",
+  "audit_status_authority": "independent audit lane only",
+  "cache_semantic_fields": {
+    "elapsed_sec": "0.05",
+    "exit_code": "0",
+    "input_fingerprint_sha256": "db7786cde9df9554b9e925bd8927e6f129e0cdd1546e5ea349a31056104b73bb",
+    "runner": "scripts/frontier_cycle985_neighbour_dependence_record_content_2026_08_11.py",
+    "runner_sha256": "0e66cb4b11c38c78b03d0fab66b0218839005fe32e5c3daaf289eb64040714a2",
+    "status": "ok",
+    "timeout_sec": "300"
+  },
+  "checker_source_sha256": "b7aa7dc7faa48635c1b5caf058bc0431d043a1de89ff64b92c84d022eb055ae4",
+  "checks": {
+    "R0_PRIMARY_AST_AND_PINS": true,
+    "R1_INDEPENDENT_CONTENT_CENSUS": true,
+    "R2_INDEPENDENT_READOUT_DUAL": true,
+    "R3_RECEIPT_CACHE_BINDING": true,
+    "R4_ACTIVE_CORRUPTION_PROBES": true,
+    "R5_CONTROLS": true
+  },
+  "controls": {
+    "input_git_blobs": {
+      "logs/runner-cache/frontier_cycle985_neighbour_dependence_record_content_2026_08_11.txt": "eb43550c7e2dc8c052c5c72bf4cb4ef99ac7c92a",
+      "outputs/neighbour_dependence_record_content_cycle985_receipt_2026_08_11.json": "6e452a1d1d4c7cc3d6da44e19a0a06d1c397ee54",
+      "scripts/frontier_cycle985_neighbour_dependence_record_content_2026_08_11.py": "fa28d8b343ef67c45cf24e299dddc0a290d6e6f4"
+    },
+    "input_sha256": {
+      "logs/runner-cache/frontier_cycle985_neighbour_dependence_record_content_2026_08_11.txt": "4f3d9f1299d29862a23330f491965a795bdf9755ce5b8bad406e190edfc9963f",
+      "outputs/neighbour_dependence_record_content_cycle985_receipt_2026_08_11.json": "ae6b337dad743eb2ddc389f4be055e35c9c2a4b7306003e0548ffc66f21ec6d1",
+      "scripts/frontier_cycle985_neighbour_dependence_record_content_2026_08_11.py": "0e66cb4b11c38c78b03d0fab66b0218839005fe32e5c3daaf289eb64040714a2"
+    },
+    "literal_audit_input_paths": [
+      "scripts/frontier_cycle985_neighbour_dependence_record_content_2026_08_11.py",
+      "outputs/neighbour_dependence_record_content_cycle985_receipt_2026_08_11.json",
+      "logs/runner-cache/frontier_cycle985_neighbour_dependence_record_content_2026_08_11.txt"
+    ],
+    "literal_source_read_count": 3,
+    "primary_imported_or_executed": false,
+    "runtime_budget_met": true,
+    "runtime_budget_seconds": 300,
+    "stdout_bytes": 582,
+    "stdout_limit_bytes": 6000,
+    "synthetic_negative_outcome_accepted": true
+  },
+  "corruption_probes": {
+    "cached_headline": true,
+    "class_separator_J": true,
+    "locked_content_row": true,
+    "mosaic_scope": true,
+    "source_pin": true,
+    "visibility_outcome": true
+  },
+  "cycle": 985,
+  "independent": {
+    "class_summary": [
+      [
+        "incoming CNOT",
+        6,
+        4,
+        1,
+        2
+      ],
+      [
+        "perpendicular-control TOF",
+        12,
+        2,
+        2,
+        4
+      ],
+      [
+        "opposite-control TOF",
+        3,
+        8,
+        0,
+        4
+      ]
+    ],
+    "readout": {
+      "I_one_deltas": [
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        -1,
+        -1
+      ],
+      "basis": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "family": "R^{{0,1}}, extended by finite sums",
+      "no_separator_iff_contents_equal": true,
+      "outcome": "SEPARATING_ADMISSIBLE_READOUT_EXISTS",
+      "pair_count": 10
+    },
+    "reconstruction_digest": "d9eb289439fc2bdf630cfdaeae10066862bb47d410d77850ee858abef7f551ca"
+  },
+  "pass": true,
+  "primary_ast_and_pins": {
+    "primary_has_main_guard": true,
+    "primary_reads_only_axiom": true,
+    "source_git_blob": "fa28d8b343ef67c45cf24e299dddc0a290d6e6f4",
+    "source_pin_match": true,
+    "source_sha256": "0e66cb4b11c38c78b03d0fab66b0218839005fe32e5c3daaf289eb64040714a2"
+  },
+  "stdout_sha256": "33cc7848093d7e8856d894673590bb9d6c15bf0c688fd1f4214eba8baddf1371"
+}

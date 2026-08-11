@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle985_neighbour_dependence_record_content_2026_08_11.py
+runner_sha256: 0e66cb4b11c38c78b03d0fab66b0218839005fe32e5c3daaf289eb64040714a2
+input_fingerprint_sha256: db7786cde9df9554b9e925bd8927e6f129e0cdd1546e5ea349a31056104b73bb
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+CYCLE985_NEIGHBOUR_DEPENDENCE_RECORD_CONTENT
+A_LOCKED_CONTENT_CENSUS PASS :: classes=[["incoming CNOT",6,1,2],["perpendicular-control TOF",12,2,4],["opposite-control TOF",3,0,4]]; witnesses=21; separated_pairs=10
+B_READOUT_VISIBILITY PASS :: outcome=SEPARATING_ADMISSIBLE_READOUT_EXISTS; readout=I_one; visible=10/10
+C_SCOPE PASS :: single_site=True; full_mosaic_claimed=False; selected_readout_claimed=False
+D_CONTROLS PASS :: source_reads=1<=6; pins=True; deterministic=True; negative_gate=True
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

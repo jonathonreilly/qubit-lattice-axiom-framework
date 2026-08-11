@@ -3,17 +3,23 @@
 
 The finite event vectors and the complete radius-one, word-length-at-most-one
 basis-state program family are rebuilt from the landed Cycle-719 substrate.
-The compatibility requirement is selected from the reconstructed per-program
-class census: a program containing multiple classes licenses JOINT, while an
-alternative-program family licenses PER_INSTANCE.  Integrity checks validate
-that implication in either direction; they do not demand either outcome.
+Under the supervisor-specified program-instance reading, the compatibility
+requirement is selected from the reconstructed per-program class census: a
+program containing multiple classes licenses JOINT, while an alternative-
+program family licenses PER_INSTANCE. Integrity checks validate that
+implication in either direction; they do not demand either outcome.
 """
 
 from __future__ import annotations
 
 import ast
+import io
+import importlib.util
 import json
+import subprocess
 import sys
+import tarfile
+import tempfile
 from collections import Counter, defaultdict
 from fractions import Fraction
 from hashlib import sha256
@@ -24,25 +30,52 @@ from time import monotonic
 
 
 ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT / "scripts"))
-import frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26 as K  # noqa: E402
+PINNED_CYCLE719_COMMIT = "39c74017b870c27c804e3992f2a11e90336476b2"
+PINNED_CYCLE719_CORE = (
+    "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py"
+)
+PINNED_CYCLE719_CORE_SHA256 = (
+    "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4"
+)
+PINNED_CYCLE719_CORE_BLOB = "c123b8d681c3d76fce08ef13d7673622deac64ad"
+
+
+def load_pinned_cycle719_core():
+    """Load the immutable base-commit source bundle, never live worktree imports."""
+    archive = subprocess.run(
+        ["git", "archive", "--format=tar", PINNED_CYCLE719_COMMIT, "scripts"],
+        cwd=ROOT,
+        check=True,
+        capture_output=True,
+    ).stdout
+    temporary = tempfile.TemporaryDirectory(prefix="cycle979-cycle719-")
+    with tarfile.open(fileobj=io.BytesIO(archive), mode="r:") as bundle:
+        bundle.extractall(temporary.name, filter="data")
+    scripts_dir = Path(temporary.name) / "scripts"
+    sys.path.insert(0, str(scripts_dir))
+    core_path = Path(temporary.name) / PINNED_CYCLE719_CORE
+    spec = importlib.util.spec_from_file_location("cycle979_pinned_cycle719", core_path)
+    if spec is None or spec.loader is None:
+        raise RuntimeError("cannot load pinned Cycle-719 core")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return temporary, module
+
+
+PINNED_CYCLE719_TEMP, K = load_pinned_cycle719_core()
 
 
 AUDIT_TIMEOUT_SEC = 1400
 STDOUT_LIMIT_BYTES = 6000
 AUDIT_INPUT_PATHS = (
     "docs/MINIMAL_AXIOMS_2026-06-29.md",
-    "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
 )
 EXPECTED_INPUT_SHA256 = {
     AUDIT_INPUT_PATHS[0]:
         "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
-    AUDIT_INPUT_PATHS[1]:
-        "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
 }
 EXPECTED_INPUT_BLOBS = {
     AUDIT_INPUT_PATHS[0]: "2f5fdd26898f62c17fcabc846761f7785c2eadb1",
-    AUDIT_INPUT_PATHS[1]: "c123b8d681c3d76fce08ef13d7673622deac64ad",
 }
 AXIOM_SENTENCES = (
     "There is one fixed nearest-neighbor admissibility rule, covariant under lattice\n"
@@ -157,6 +190,20 @@ def input_controls() -> dict:
         blob_rows[rel] = git_blob(payload)
         texts[rel] = payload.decode("utf-8")
     axiom_text = texts[AUDIT_INPUT_PATHS[0]]
+    pinned_core_payload = subprocess.run(
+        ["git", "show", f"{PINNED_CYCLE719_COMMIT}:{PINNED_CYCLE719_CORE}"],
+        cwd=ROOT,
+        check=True,
+        capture_output=True,
+    ).stdout
+    pinned_core_sha = sha256(pinned_core_payload).hexdigest()
+    pinned_core_blob = git_blob(pinned_core_payload)
+    base_is_ancestor = subprocess.run(
+        ["git", "merge-base", "--is-ancestor", PINNED_CYCLE719_COMMIT, "HEAD"],
+        cwd=ROOT,
+        check=False,
+        capture_output=True,
+    ).returncode == 0
     blocked_loaded = sorted(
         name for name in sys.modules
         if any(name.endswith(blocked) for blocked in BLOCKLIST_PROVENANCE_MODULES)
@@ -172,6 +219,15 @@ def input_controls() -> dict:
         "git_blobs": blob_rows,
         "axiom_sentences": list(AXIOM_SENTENCES),
         "axiom_sentences_match": all(row in axiom_text for row in AXIOM_SENTENCES),
+        "pinned_cycle719_certificate": {
+            "commit": PINNED_CYCLE719_COMMIT,
+            "core_path": PINNED_CYCLE719_CORE,
+            "core_sha256": pinned_core_sha,
+            "core_git_blob": pinned_core_blob,
+            "loaded_from_immutable_git_archive": True,
+            "base_is_ancestor_of_head": base_is_ancestor,
+            "live_worktree_transitive_imports": False,
+        },
         "blocked_provenance_modules_loaded": blocked_loaded,
         "prior_cycles_executed": False,
     }
@@ -182,6 +238,9 @@ def input_controls() -> dict:
         and sha_rows == EXPECTED_INPUT_SHA256
         and blob_rows == EXPECTED_INPUT_BLOBS
         and result["axiom_sentences_match"]
+        and pinned_core_sha == PINNED_CYCLE719_CORE_SHA256
+        and pinned_core_blob == PINNED_CYCLE719_CORE_BLOB
+        and base_is_ancestor
         and not blocked_loaded
     )
     return result
@@ -569,6 +628,77 @@ def classify_witness(descriptor: tuple) -> str:
     raise AssertionError(("unclassified witness", descriptor, relation))
 
 
+def permutation_sign(order: tuple[int, int, int]) -> int:
+    inversions = sum(
+        order[left] > order[right]
+        for left in range(3) for right in range(left + 1, 3)
+    )
+    return -1 if inversions % 2 else 1
+
+
+def proper_cubic_rotations() -> tuple:
+    rotations = []
+    for order in permutations(range(3)):
+        for signs in product((-1, 1), repeat=3):
+            if permutation_sign(order) * signs[0] * signs[1] * signs[2] == 1:
+                rotations.append((order, signs))
+    return tuple(rotations)
+
+
+def rotate_offset(offset: tuple, rotation: tuple) -> tuple:
+    order, signs = rotation
+    return tuple(signs[index] * offset[order[index]] for index in range(3))
+
+
+def rotate_descriptor(descriptor: tuple, rotation: tuple) -> tuple:
+    wire_by_offset = {offset: wire for wire, offset in enumerate(WIRE_TO_OFFSET)}
+
+    def rotated_wire(wire: int) -> int:
+        return wire_by_offset[rotate_offset(WIRE_TO_OFFSET[wire], rotation)]
+
+    rotated = tuple(rotated_wire(wire) for wire in descriptor[1:])
+    if descriptor[0] == "TOF":
+        return (descriptor[0], *sorted(rotated[:2]), rotated[2])
+    return (descriptor[0], *rotated)
+
+
+def cubic_covariance_certificate(rows: list[dict]) -> dict:
+    rotations = proper_cubic_rotations()
+    class_descriptors = {
+        class_name: {
+            tuple(row["descriptor"])
+            for row in rows if class_name in row["classes"]
+        }
+        for class_name in CLASS_ORDER
+    }
+    per_class = {}
+    for class_name, descriptors in class_descriptors.items():
+        representative = min(descriptors)
+        orbit = {rotate_descriptor(representative, rotation) for rotation in rotations}
+        per_class[class_name] = {
+            "member_count": len(descriptors),
+            "representative_orbit_count": len(orbit),
+            "closed_under_all_rotations": all(
+                {rotate_descriptor(row, rotation) for row in descriptors} == descriptors
+                for rotation in rotations
+            ),
+            "one_orbit": orbit == descriptors,
+        }
+    passed = bool(
+        len(rotations) == 24
+        and all(
+            row["closed_under_all_rotations"] and row["one_orbit"]
+            for row in per_class.values()
+        )
+    )
+    return {
+        "proper_rotation_count": len(rotations),
+        "per_class": per_class,
+        "uniform_neighbour_carrier_is_rotation_invariant": True,
+        "pass": passed,
+    }
+
+
 def program_class_census() -> dict:
     family = declared_family()
     rows = []
@@ -615,6 +745,7 @@ def program_class_census() -> dict:
         for class_name in CLASS_ORDER
     }
     coexisting = [row for row in rows if row["class_count"] > 1]
+    covariance = cubic_covariance_certificate(rows)
     return {
         "family_declaration": {
             "spatial_horizon": "target-centred radius-one seven-site star",
@@ -640,6 +771,7 @@ def program_class_census() -> dict:
         "max_classes_per_program": max(row["class_count"] for row in rows),
         "coexisting_program_rows": coexisting,
         "changed_edge_pairs": changed_pairs,
+        "proper_cubic_covariance": covariance,
     }
 
 
@@ -651,19 +783,23 @@ def requirement_certificate(census: dict) -> dict:
     requirement = requirement_from_program_rows(census["per_program"])
     if requirement == "JOINT":
         reading = (
-            "At least one realized program contains multiple law classes, so the axiom's "
-            "one fixed rule must satisfy those co-realized classes jointly in that instance."
+            "Under the supervisor-specified program-instance reading, at least one "
+            "realized program contains multiple law classes, so the axiom's one fixed "
+            "rule must satisfy those co-realized classes jointly in that instance."
         )
         cycle978_joint_status = "AXIOM_FAITHFUL"
     else:
         reading = (
-            "Each realized program is a separate word containing at most one class. The "
-            "axiom's one fixed rule applies at every site of that selected program, but "
-            "does not require an unindexed kernel to equal truth tables of alternative "
-            "programs that are never co-realized in one declared instance."
+            "Under the supervisor-specified program-instance reading, each realized "
+            "program is a separate word containing at most one class. The axiom's one "
+            "fixed rule applies throughout that instance, but does not require an "
+            "unindexed kernel to equal truth tables of alternative programs that are "
+            "never co-realized in one declared instance."
         )
         cycle978_joint_status = "OVER_STRONG"
     return {
+        "premise_id": "P_instance",
+        "premise_status": "supervisor-specified program-instance reading",
         "licensed_requirement": requirement,
         "axiom_quote": " ".join(row.replace("\n", " ") for row in AXIOM_SENTENCES),
         "reading": reading,
@@ -764,6 +900,13 @@ def compatibility_certificate(
         label: sum((p_zero, 1 - p_zero), Fraction(0))
         for label, p_zero in INPUT_FAMILY
     }
+    nonuniform_classes = inputs["nonuniform_test"]["classes"]
+    neighbour_variation_gate = all(
+        row["first_sensitive_edge"] is not None
+        and Fraction(row["maximum_tv"]) > 0
+        for row in nonuniform_classes.values()
+    )
+    covariance_gate = census["proper_cubic_covariance"]["pass"]
     per_candidate = {}
     exclusions = []
     for candidate in CANDIDATE_NAMES:
@@ -775,24 +918,27 @@ def compatibility_certificate(
             invalid_reason = "zero total event weight"
         elif any(mass != 1 for mass in carrier_masses.values()):
             invalid_reason = "input carrier does not normalize"
+        elif not neighbour_variation_gate:
+            invalid_reason = "no non-uniform neighbour-variation witness"
+        elif not covariance_gate:
+            invalid_reason = "program classes fail proper-cubic orbit closure"
         instance_checks = []
         for row in program_rows:
-            for class_name in row["classes"]:
-                descriptor = tuple(row["descriptor"])
-                truth_match = all(
-                    output_bit(descriptor, x, n)
-                    == independent_boolean_output(descriptor, x, n)
-                    for x in (0, 1) for n in CONDITIONS
+            descriptor = tuple(row["descriptor"])
+            truth_match = all(
+                output_bit(descriptor, x, n)
+                == independent_boolean_output(descriptor, x, n)
+                for x in (0, 1) for n in CONDITIONS
+            )
+            instance_checks.append({
+                "program": row["program"],
+                "classes": row["classes"],
+                "landed_truth_table_matches_its_program_kernel": truth_match,
+            })
+            if not truth_match and invalid_reason is None:
+                invalid_reason = (
+                    f"program {row['program']} disagrees with its reconstructed kernel"
                 )
-                instance_checks.append({
-                    "program": row["program"],
-                    "class": class_name,
-                    "landed_truth_table_matches_its_program_kernel": truth_match,
-                })
-                if not truth_match and invalid_reason is None:
-                    invalid_reason = (
-                        f"program {row['program']} disagrees with its reconstructed kernel"
-                    )
         verdict = "SURVIVES" if invalid_reason is None else "EXCLUDED"
         if invalid_reason is not None:
             exclusions.append({"candidate": candidate, "witness": invalid_reason})
@@ -813,6 +959,9 @@ def compatibility_certificate(
     ]
     return {
         "licensed_requirement": requirement["licensed_requirement"],
+        "licensed_requirement_scope": (
+            "conditional on P_instance, the supervisor-specified program-instance reading"
+        ),
         "criterion": (
             "For each realized program separately, extend p_i(e) by the selected "
             "program's own deterministic kernel and normalized input/neighbour carrier."
@@ -825,10 +974,12 @@ def compatibility_certificate(
         "survivors": survivors,
         "survivors_over_5": f"{len(survivors)}/5",
         "exclusions": exclusions,
+        "neighbour_variation_at_p_one_quarter": neighbour_variation_gate,
+        "proper_cubic_covariance": covariance_gate,
         "born_wall_status": "UNMOVED" if len(survivors) == 5 else "MOVED",
         "cycle978_zero_over_5_scope": (
             "fixed-input common-kernel JOINT surrogate; not imposed by the axiom "
-            "on this alternative-program family"
+            "on this alternative-program family under P_instance"
             if requirement["licensed_requirement"] == "PER_INSTANCE"
             else "axiom-faithful because at least one declared program co-realizes classes"
         ),
@@ -884,19 +1035,25 @@ def render_stdout(receipt: dict) -> str:
         "A_COEXISTENCE " + ("PASS" if receipt["checks"]["A_COEXISTENCE"] else "FAIL")
         + " :: programs=155; patterns=" + compact(patterns)
         + f"; multi_class={census['multi_class_programs']};"
+        + f" proper_cubic={census['proper_cubic_covariance']['pass']};"
         + f" per_program_digest={census['per_program_digest']}"
     )
     lines.append(
         "B_REQUIREMENT_STATUS "
         + ("PASS" if receipt["checks"]["B_REQUIREMENT_STATUS"] else "FAIL")
         + f" :: licensed={requirement['licensed_requirement']};"
+        + " premise=P_instance(supervisor-specified);"
         + f" cycle978_joint={requirement['cycle978_joint_requirement_status']}"
     )
     lines.append(
         "C_BORN_STATUS_CORRECTED "
         + ("PASS" if receipt["checks"]["C_BORN_STATUS_CORRECTED"] else "FAIL")
         + f" :: survivors/5={born['survivors_over_5']};"
-        + f" born_wall={born['born_wall_status']}; exclusions={compact(born['exclusions'])}"
+        + " premise=P_instance(supervisor-specified);"
+        + f" born_wall={born['born_wall_status']};"
+        + f" neighbour_variation={born['neighbour_variation_at_p_one_quarter']};"
+        + f" proper_cubic={born['proper_cubic_covariance']};"
+        + f" exclusions={compact(born['exclusions'])}"
     )
     nonuniform = {
         class_name: row["maximum_tv"]
@@ -920,7 +1077,7 @@ def render_stdout(receipt: dict) -> str:
     )
     lines.extend((
         "per_element: checked -- all five declared finite event-weighting candidates.",
-        "per_site: checked -- target and all six sites of the radius-one star.",
+        "per_site: checked -- centre readout under all six neighbour positions and operand placements.",
         "per_mode: checked and not executed -- basis states only; no continuous M_2(C) modes.",
         "per_block: checked -- all 155 complete programs and all three class blocks.",
         "lattice_wide: checked and not executed -- no extrapolation beyond the declared star.",
@@ -966,6 +1123,7 @@ def run() -> tuple[dict, str]:
         )
         and sum(census["class_counts"].values())
             == census["neighbour_sensitive_programs"]
+        and census["proper_cubic_covariance"]["pass"]
     )
     b_pass = bool(
         requirement["licensed_requirement"]
@@ -992,6 +1150,8 @@ def run() -> tuple[dict, str]:
             for row in compatibility["per_candidate"].values()
             if row["verdict"] == "EXCLUDED"
         )
+        and compatibility["neighbour_variation_at_p_one_quarter"]
+        and compatibility["proper_cubic_covariance"]
     )
     d_pass = bool(
         all(
@@ -1043,6 +1203,9 @@ def run() -> tuple[dict, str]:
                 "git_blobs": controls["git_blobs"],
                 "sha_pins_match": controls["pass"],
                 "axiom_sentences_match": controls["axiom_sentences_match"],
+                "pinned_cycle719_certificate": controls[
+                    "pinned_cycle719_certificate"
+                ],
                 "blocked_provenance_modules_loaded": controls[
                     "blocked_provenance_modules_loaded"
                 ],

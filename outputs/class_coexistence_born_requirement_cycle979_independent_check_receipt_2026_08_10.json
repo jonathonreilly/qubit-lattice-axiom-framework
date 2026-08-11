@@ -6,20 +6,23 @@
       "literal_audit_input_paths": [
         "scripts/frontier_cycle979_class_coexistence_born_requirement_2026_08_10.py",
         "outputs/class_coexistence_born_requirement_cycle979_receipt_2026_08_10.json",
-        "logs/runner-cache/frontier_cycle979_class_coexistence_born_requirement_2026_08_10.txt"
+        "logs/runner-cache/frontier_cycle979_class_coexistence_born_requirement_2026_08_10.txt",
+        "docs/MINIMAL_AXIOMS_2026-06-29.md"
       ],
-      "literal_source_read_count": 3,
+      "literal_source_read_count": 4,
       "primary_ast_functions_match": true,
       "primary_imported_or_executed": false,
-      "primary_literal_input_count": 2,
+      "primary_literal_input_count": 1,
       "primary_literal_inputs": [
-        "docs/MINIMAL_AXIOMS_2026-06-29.md",
-        "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py"
+        "docs/MINIMAL_AXIOMS_2026-06-29.md"
       ],
+      "primary_pinned_cycle719_commit": "39c74017b870c27c804e3992f2a11e90336476b2",
+      "primary_pinned_cycle719_commit_match": true,
       "sha256": {
-        "logs/runner-cache/frontier_cycle979_class_coexistence_born_requirement_2026_08_10.txt": "beba5262dfc73509bf986c99a246e64f221521db27d8e98312700f01c8f7380e",
-        "outputs/class_coexistence_born_requirement_cycle979_receipt_2026_08_10.json": "80f5abf81f07f0edc01cca8dd7f5bdd74c9a545edb1b6843cb6128ec24b0a25f",
-        "scripts/frontier_cycle979_class_coexistence_born_requirement_2026_08_10.py": "63b6d83c27d71aace583f44194e8b02bde48561c0196a35282b85b777c617af2"
+        "docs/MINIMAL_AXIOMS_2026-06-29.md": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
+        "logs/runner-cache/frontier_cycle979_class_coexistence_born_requirement_2026_08_10.txt": "b60dda5ad268c032b4682afd0b42740b723c0ea3a8ddb0df479b89bb5838560c",
+        "outputs/class_coexistence_born_requirement_cycle979_receipt_2026_08_10.json": "1b07e765e7afa527f8828b45678782b77ad4c7f225dc860680887b47211a82c1",
+        "scripts/frontier_cycle979_class_coexistence_born_requirement_2026_08_10.py": "f75e3f95a021880f118d9a0cafabdd96013baa97a82f6fb988b8c43d9a01d9cf"
       },
       "sha_pins_match": true
     },
@@ -2720,12 +2723,41 @@
         }
       ],
       "per_program_digest": "4bdb22953055bd4bf1e4e094a4138aa04f63c6e6561e9dbf99d7d12898969771",
-      "program_count": 155
+      "program_count": 155,
+      "proper_cubic_covariance": {
+        "pass": true,
+        "per_class": {
+          "CNOT": {
+            "closed_under_all_rotations": true,
+            "member_count": 6,
+            "one_orbit": true,
+            "representative_orbit_count": 6
+          },
+          "TOF_OPPOSITE_CONTROLS": {
+            "closed_under_all_rotations": true,
+            "member_count": 3,
+            "one_orbit": true,
+            "representative_orbit_count": 3
+          },
+          "TOF_PERPENDICULAR_CONTROLS": {
+            "closed_under_all_rotations": true,
+            "member_count": 12,
+            "one_orbit": true,
+            "representative_orbit_count": 12
+          }
+        },
+        "proper_rotation_count": 24,
+        "uniform_neighbour_carrier_is_rotation_invariant": true
+      }
     },
     "R2_REFUTE_REQUIREMENT_AND_BORN": {
       "cycle978_joint_status": "OVER_STRONG",
       "exclusions": [],
       "licensed_requirement": "PER_INSTANCE",
+      "neighbour_variation_at_p_one_quarter": true,
+      "premise_id": "P_instance",
+      "premise_status": "supervisor-specified program-instance reading",
+      "proper_cubic_covariance": true,
       "survivors": [
         "M1_COUNTING",
         "M2_PER_WORLD_UNIFORM",
@@ -2884,9 +2916,9 @@
       }
     },
     "R4_RECEIPT_CACHE_BINDING": {
-      "primary_cache_sha256": "beba5262dfc73509bf986c99a246e64f221521db27d8e98312700f01c8f7380e",
-      "primary_receipt_sha256": "80f5abf81f07f0edc01cca8dd7f5bdd74c9a545edb1b6843cb6128ec24b0a25f",
-      "primary_source_sha256": "63b6d83c27d71aace583f44194e8b02bde48561c0196a35282b85b777c617af2",
+      "primary_cache_sha256": "b60dda5ad268c032b4682afd0b42740b723c0ea3a8ddb0df479b89bb5838560c",
+      "primary_receipt_sha256": "1b07e765e7afa527f8828b45678782b77ad4c7f225dc860680887b47211a82c1",
+      "primary_source_sha256": "f75e3f95a021880f118d9a0cafabdd96013baa97a82f6fb988b8c43d9a01d9cf",
       "semantic_headlines_bound": true
     },
     "R5_ACTIVE_CORRUPTION_PROBES": {
@@ -2947,13 +2979,13 @@
     "R6_CONTROLS": {
       "determinism": true,
       "runtime_budget_seconds": 300,
-      "runtime_seconds": 0.1084077910054475,
-      "stdout_bytes": 995,
+      "runtime_seconds": 0.12571141694206744,
+      "stdout_bytes": 1102,
       "stdout_limit_bytes": 6000
     }
   },
   "checker": "independent refutation checker",
-  "checker_source_sha256": "e23d4e422c7aa8d8a0d87574f95d5a2ca86201ab7e248186c14e024cec41a004",
+  "checker_source_sha256": "0d8e8af6e26b8e1841b929d97aed4c1694ba63f3430645365ab044f6069a51c6",
   "checks": {
     "R0_PRIMARY_AST_AND_PINS": true,
     "R1_INDEPENDENT_COEXISTENCE_CENSUS": true,

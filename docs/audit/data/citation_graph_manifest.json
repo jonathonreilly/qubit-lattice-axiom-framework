@@ -1,6 +1,6 @@
 {
- "edge_count": 15478,
- "node_count": 5446,
+ "edge_count": 15480,
+ "node_count": 5447,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -2249,6 +2249,10 @@
   "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "class_coexistence_born_requirement_cycle979_bounded_theorem_note_2026-08-10": {
+   "deps_hash": "165b6a5a21bb",
+   "out_degree": 2
   },
   "claude_branch_retainability_note": {
    "deps_hash": "e3b0c44298fc",

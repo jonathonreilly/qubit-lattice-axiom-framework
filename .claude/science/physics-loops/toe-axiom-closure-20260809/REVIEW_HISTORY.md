@@ -1956,6 +1956,31 @@ instance or Fourier census.
   `9431cd5d47`; independent audit remains pending. No canonical axiom, fixed
   percentage, or audit verdict is changed.
 
+## Block 40 Construction And Adversarial Record
+
+- Restored the common `alpha=16` target-Gram well that is part of the
+  Block-38 microscopic law and proved a configurationwise pressure bound:
+  maximum Record gain `21/10` per site versus singular-boundary well cost four.
+- Derived uniform Gram radius squared `21/40` and eigenvalue floor
+  `0.275431163`, forcing an interior proper-cubic minimizer for every periodic
+  `L>=3` carrier.
+- Proved translation/proper-cubic symmetry lifts the invariant minimum to all
+  site coframe equations; Block-39 endpoint/incidence identities close every
+  flat-link tangent at the shifted coframe.
+- Diagnosed `E_*` itself as off shell but proved the unchanged well has a
+  dilation root in `0.982619965..0.985173650`.
+- Differentiated exact endpoint-local invariance with the off-shell
+  generator-connection term and obtained six Hessian nulls per site at
+  stationarity; the `L=3` tangent rank is `162/162`.
+- An exact six-regular quotient sums all 1,000 Record assignments, executes 48
+  coframe and 54 link derivatives, and finds stationary Gram
+  `0.966327453/1.520253339`; independent reconstruction is `PASS=6 FAIL=0`.
+- Fresh cache is `PASS=18 FAIL=0` in `0.57 s`. Fresh N1--N8 demotes and does
+  not ship the broad no-vacuum claim. Citation registration is
+  `5,486/15,679`, out-degree four, and direct repository conformance passes.
+  Commit, pipeline, push, and PR remain pending. No canonical axiom, fixed
+  percentage, or audit verdict is changed.
+
 ## Block 38 Construction And Adversarial Record
 
 - Constructed the union/left/right/overlap carrier sets for two face-sharing

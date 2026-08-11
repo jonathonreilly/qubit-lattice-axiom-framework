@@ -340,3 +340,13 @@ bulk dynamical selection and response, not elementary Bianchi or ontology.
 The Record-phase and flat-connection obstructions are retired at fixed
 geometry. The surviving gravity wall is the coupled coframe response and law
 selection, not periodic existence, Bianchi, or ontology.
+
+## Block 40 Center-Off-Shell / Broad-No-Vacuum Demotion
+
+| Scoped claim | Exact/bounded evidence | N1--N8 disposition | Forbidden promotion | Live routes |
+|---|---|---|---|---|
+| The declared well center `E_*` is off shell, but the unchanged supplied Gram well forces at least one nearby nondegenerate proper-cubic flat stationary point on every periodic torus | positive center slope `[41/16,3]`; exact scale bracket `0.982619965..0.985173650`; pressure gain `21/10` below boundary well cost four; Gram radius squared `21/40`; `PASS=18 FAIL=0` | broad no-flat-vacuum claim fails N7 because the strongest same-well counterroute succeeds; it is demoted and not shipped. The narrow center-off-shell statement passes all N1--N8 with eight distinct route families and a landing N5 certificate | do not infer that gravity fails, that a new axiom is required, that the stationary point is physically selected, that the nonuniform Hessian is stable, or that internal-frame nulls are displacement Ward nulls | full same-law Bloch Hessian, Record contact/covariance, determinant/constraint/curved alternatives, continuous geometry phase, law provenance, and Lorentzian update |
+
+The homogeneous coframe-stationarity wall is retired for the supplied law.
+The active wall is the nonzero-momentum displacement/Einstein tensor and
+physical provenance of the geometry factor, not vacuum existence.

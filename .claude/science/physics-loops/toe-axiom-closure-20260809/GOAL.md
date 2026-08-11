@@ -1238,3 +1238,20 @@ base-displacement Ward identity and universal two-derivative Einstein/Regge
 structure. Separately retain the continuous joint-phase, Record-to-geometry
 law-selection, and Lorentzian permanent-Record obligations. No fifth axiom is
 yet necessary; fixed percentages remain unchanged.
+
+## Block 40 Goal Update
+
+The coframe-vacuum existence test is closed for the supplied periodic factor
+law. The already declared common Gram well forces a nearby nondegenerate
+proper-cubic flat stationary background, even though its named center `E_*`
+is off shell. All flat link equations close there, and the exact coupled
+local-frame quotient has six independent orbit directions per site.
+
+The highest-value next goal is now the complete nonzero-momentum Hessian at
+that stationary phase, including the well and every Record contact and
+connected-covariance term. Quotient the internal frame, eliminate the
+connection, and decide whether the local `O(k^0)` Gram stiffness cancels into
+a base-displacement Ward identity and two-derivative Einstein/Regge response.
+Do not expand at `E_*`, omit the well, fit a cancellation, or project modes by
+hand. Physical law provenance, continuous joint phase, and Lorentzian
+permanent-Record evolution remain separate. Fixed percentages remain locked.

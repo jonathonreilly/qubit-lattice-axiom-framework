@@ -297,3 +297,17 @@ Efficiency rule: do not repeat phase, Bianchi, or first-order source scans.
 Reuse the exact periodic carrier and spend the next block only on the coupled
 Hessian/quotient; stop if a candidate inserts an unselected stiffness or
 projects out a mode by hand.
+
+## Post-Block-40 Priority Refresh
+
+| Rank | Target | Exact next witness | Why now |
+|---:|---|---|---|
+| 1 | stationary-phase coupled Einstein discriminator | full coframe/link Bloch Hessian at the shifted periodic vacuum, including Gram well, Record contact/covariance, EC terms, exact internal quotient, connection Schur complement, displacement rank, and Block-39 source response | stationary background and internal gauge nulls now close; the surviving `O(k^0)` metric stiffness is the shortest gravity decision |
+| 2 | Record-derived geometry-law provenance | derive the coframe/link carrier, common well or alternate measure/constraint, coefficients, and source meaning from Admissibility/Records, or state the sufficient unadopted downstream law interface | existence no longer pressures a fifth ontology axiom; selection is the exact axiom-facing residual |
+| 3 | continuous joint geometry phase | integrate sitewise coframes/links with uniform tightness and boundary control around the stationary phase | the current theorem minimizes a homogeneous background but does not construct a continuous joint Gibbs phase |
+| 4 | Lorentzian permanent-Record evolution | selected `Z^3 x Z_tau` or autonomous update with constraints, causal cone, and Record preservation | all present closures are Euclidean and spatial |
+| 5 | other TOE roots | pivot to the highest Born/history or causal-time root if the Hessian shows an uncancelled mass term | preserves campaign value after a decisive gravity diagnosis |
+
+Efficiency rule: expand only at the shifted stationary phase, never the
+off-shell center. Include the well and all same-law response terms; do not fit
+or project away an `O(k^0)` residual.

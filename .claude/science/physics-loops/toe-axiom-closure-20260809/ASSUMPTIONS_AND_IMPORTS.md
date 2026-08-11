@@ -535,6 +535,24 @@ locality/covariance/gluing theorem, projective limit, pure-geometry action,
 stationary nonuniform solution, Lorentzian dynamics, external science,
 canonical edit, percentage move, audit verdict, or `review-loop` is imported.
 
+## Block 40 Import Ledger
+
+Block 40 uses the fixed Block-38/39 ten-label site/bond/EC factors and the
+common `alpha=16`, `G_star=diag(1,1,1,25/16)` Gram well already present in the
+microscopic law. Finite positive sums, configurationwise factor bounds,
+compact minimization, Weyl's eigenvalue bound, proper-cubic/translation
+symmetry, and differentiated finite-dimensional group invariance are allowed
+mathematics.
+
+The well, its coefficient/target, coframe/link carrier, continuous measure,
+and physical source/action meaning remain supplied downstream content. The
+scale-reference primitive was checked at its source and grants units only; it
+does not select the dimensionless well. The exact three-site six-regular
+quotient is an algebra reconstruction, not a cubic-torus replacement. No
+continuous joint geometry phase, base displacement symmetry, Einstein tensor,
+Lorentzian update, new primitive, canonical axiom edit, percentage move,
+audit verdict, or `review-loop` is imported.
+
 ## Block 39 Assumptions And Imports
 
 Block 39 imports the current four-axiom surface and Block 38's supplied fixed

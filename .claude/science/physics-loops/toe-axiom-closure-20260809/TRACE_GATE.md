@@ -511,6 +511,21 @@ selection is conditional on a massless phase. Candidate wording is
 unadopted; fixed TOE percentages and canonical axioms remain unchanged. No
 `review-loop` is used.
 
+Block 40 restores the already supplied common Gram well and proves that its
+complete periodic homogeneous Record pressure has a proper-cubic,
+nondegenerate, all-coordinate flat stationary point on every finite torus.
+The Gram is uniformly separated from singularity, the unshifted center is
+correctly rejected as off shell, and exact local-frame invariance supplies the
+complete internal Hessian null subspace at the shifted solution.
+
+Reachability remains `upstream_support`, not direct TOE closure. The well,
+carrier, coefficient, target, measure, and physical source meaning remain
+supplied; the theorem does not execute a nonzero base-displacement mode,
+Einstein tensor, continuous joint geometry phase, or Lorentzian update. The
+next gate is the full stationary-phase Bloch Hessian including Record contact
+and covariance. Candidate axiom wording is unadopted; fixed TOE percentages
+and canonical axioms remain unchanged. No `review-loop` is used.
+
 Block 38 identifies all shared variables and counts every geometric carrier
 once across two face-sharing cubes. Fixed elementary factors satisfy exact
 branchwise inclusion--exclusion, exact tensor transfer yields the positive

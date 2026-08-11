@@ -947,3 +947,29 @@ complete conditional nonlinear compact solution:
   is `ff541c0089`. PR #6126 is open, mergeable, and `CLEAN`, stacked exactly
   on Block-38 delivery head `d3a4e143f2`; independent audit remains required.
   No canonical edit, fixed percentage move, or audit verdict occurs.
+
+## Block 40 — Periodic Gram-Well Flat Vacuum / Local-Frame Hessian Boundary
+
+- theorem note:
+  `docs/ADMISSIBILITY_PERIODIC_GRAM_WELL_NONDEGENERATE_FLAT_VACUUM_LOCAL_FRAME_HESSIAN_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-11.md`
+- runner/cache:
+  `scripts/admissibility_periodic_gram_well_flat_vacuum_local_frame_hessian_boundary_2026_08_11.py`
+  and its source/input-pinned cache
+- exact theorem: the complete homogeneous periodic action with the inherited
+  `alpha=16` common Gram well has a proper-cubic interior minimizer on every
+  finite `L>=3` torus; the configurationwise Record gain is at most `21/10`
+  per site while the nearest singular-boundary well cost is four
+- nondegeneracy: every minimizer obeys Gram distance squared at most `21/40`
+  and eigenvalue floor at least `1-sqrt(21/40)=0.275431163`
+- stationarity: translation and proper-cubic symmetry lift the two invariant
+  equations to every coframe coordinate; Block-39 endpoint/incidence
+  cancellation closes every flat-link tangent
+- Hessian quotient: exact local-frame invariance gives `6|V|` nulls at the
+  stationary background; the `L=3` coupled tangent map has rank `162/162`
+- current evidence: fresh cache `PASS=18 FAIL=0` in `0.57 s`, under 4,900
+  characters; independent runner-free reconstruction `PASS=6 FAIL=0`.
+  Citation registration is `5,486/15,679`, out-degree four. Vocabulary,
+  premise, model, cache, syntax, whitespace, strict-lint, claim-typing, and
+  graph/link/invariant direct gates pass. Science commit, pipeline, push, and
+  stacked PR remain pending. No canonical edit, fixed percentage move, or
+  audit verdict occurs.

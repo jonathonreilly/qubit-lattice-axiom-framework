@@ -593,6 +593,19 @@ Science commit is `be1781ad26`; campaign conformance is `42d3056d98`. PR
 head `f2f21f9b0f`. Independent audit is pending. No canonical edit,
 percentage move, audit verdict, or `review-loop` is used.
 
+Block 40 is local on branch
+`physics-loop/toe-axiom-closure-block40-vacuum-ward-20260811`, stacked exactly
+on Block-39 delivery head `67bbd26652`. Its distinct review object is the
+configurationwise periodic Record-pressure confinement theorem, nondegenerate
+proper-cubic flat stationary vacuum, exact center-off-shell/shifted-scale
+diagnostic, and endpoint-local Hessian quotient identity. Primary
+source/input-pinned cache is `PASS=18 FAIL=0` in `0.57 s`; independent
+reconstruction is `PASS=6 FAIL=0`. Citation registration is `5,486/15,679`,
+out-degree four, and direct repository conformance passes. Science/campaign
+commits, pipeline, push, and stacked PR remain pending. Independent audit
+remains required. No canonical edit, percentage move, audit verdict, or
+`review-loop` is used.
+
 Block 39 is local on branch
 `physics-loop/toe-axiom-closure-block39-periodic-record-ec-phase-20260811`,
 stacked exactly on Block-38 delivery head `d3a4e143f2`. Its distinct review

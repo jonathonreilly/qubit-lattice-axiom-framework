@@ -806,3 +806,20 @@ path survives.
 Phase/Bianchi/flat-connection rescans are saturated. The next gravity result
 must come from the same-law coupled Hessian or from an exact diagnosis that
 the extensional law lacks the required displacement/Einstein structure.
+
+## Block 40 Flat-Vacuum / Hessian Route Comparison
+
+| Route | Exact object | Outcome | Decision |
+|---|---|---|---|
+| unchanged common Gram well | complete homogeneous Record pressure plus `alpha=16` target well | pressure gain `21/10` is below singular-boundary cost four; nondegenerate stationary Gram exists | retain; broad no-vacuum route is retired |
+| fixed center `E_*` | dilation first variation at the declared target | strictly positive slope in `[41/16,3]` | retire `E_*` as an expansion point; do not retire the well |
+| shifted dilation | same target and coefficient, variable `s E_*` | exact root in `0.982619965..0.985173650` | retain as scale control, not the complete shape solution |
+| proper-cubic full Gram minimizer | `diag(x,x,x,y)` plus symmetry lift | interior full-coordinate coframe stationarity; exact quotient reconstructs `x/y=0.966327453/1.520253339` | retain as the legitimate flat background family |
+| endpoint-local frame quotient | coframe/link orbit tangent and differentiated Ward identity | `6|V|` Hessian nulls at stationarity; `L=3` rank `162/162` | quotient these before any physical spectrum claim |
+| determinant measure / fixed volume | alternate Jacobian or constraint scale repair | mathematically live but unnecessary for existence and physically unselected | preserve as counterroutes if the Gram stiffness blocks Einstein order |
+| nonflat EC phase / alternate gravity carrier | curved holonomy, teleparallel, BF, or Regge route | not excluded by the stationary flat theorem | preserve; no broad gravity no-go |
+| same-law nonzero-momentum Hessian | Gram well plus Record contact/covariance, EC, squares, connection elimination, and source | not executed in Block 40 | highest-priority next route |
+
+Vacuum existence is no longer the gravity wall. The immediate discriminator is
+whether the supplied local Gram stiffness survives the complete quotient as an
+`O(k^0)` metric term or is canceled by a genuine base-displacement identity.

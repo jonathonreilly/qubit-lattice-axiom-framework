@@ -1344,3 +1344,30 @@ lines are in the landing primary cache.
   displacement Ward, Einstein quotient, physical law selection, and
   Lorentzian permanent-Record update remain open. N1--N8 lands; no gravity
   no-go, fifth-axiom claim, percentage move, or audit verdict ships.
+
+## Block 40 Periodic Flat Vacuum / Hessian-Quotient Certificate
+
+- Claim type: `bounded_theorem`; exact finite-volume stationary-background
+  existence plus an exact local-frame Hessian identity for the supplied law.
+- Pressure confinement: site gain at most `3/2`, bond gain at most `1/5`,
+  three bonds per site, hence total Record gain at most `21/10`; singular
+  target-Gram boundary well cost is four.
+- Nondegeneracy: Gram distance squared at most `21/40`; minimum eigenvalue at
+  least `0.275431163`, uniformly in every finite periodic `L>=3` carrier.
+- Scale control: `E_*` itself has positive slope in `[41/16,3]`; the unchanged
+  well forces a root in `0.982619965..0.985173650`.
+- Full stationarity: a proper-cubic homogeneous interior minimizer makes every
+  coframe coordinate stationary; endpoint exchange and periodic incidence
+  make every identity-link tangent stationary.
+- Internal quotient: exact endpoint-local `SO(4)` invariance gives six Hessian
+  nulls per site at stationarity; the `L=3` tangent rank is `162/162`.
+- Runner/cache: source/input pinned, `PASS=18 FAIL=0` in `0.57 s`; independent
+  reconstruction is `PASS=6 FAIL=0`.
+- Citation/conformance: `5,486` nodes / `15,679` edges, note out-degree four;
+  vocabulary, premise, model, cache, syntax, whitespace, strict-lint,
+  claim-typing, and graph/link/invariant direct gates pass.
+- Scope: this retires only the supplied-law periodic flat-vacuum existence
+  wall. Nonzero displacement modes, Einstein response, continuous joint
+  geometry phase, physical law selection, and Lorentzian evolution remain.
+  Fresh N1--N8 lands; no broad gravity no-go, axiom-necessity claim, fixed
+  percentage move, or audit verdict ships.

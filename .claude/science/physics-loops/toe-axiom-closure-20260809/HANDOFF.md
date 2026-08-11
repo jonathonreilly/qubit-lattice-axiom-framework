@@ -1598,6 +1598,26 @@ word, the full flat-vacuum connection gradient, then a zero-sum Record/coframe
 source and weak-wavevector displacement/Einstein response. No `review-loop` is
 used.
 
+## Block 40 Handoff
+
+Work is on branch
+`physics-loop/toe-axiom-closure-block40-vacuum-ward-20260811`, stacked exactly
+on Block-39 delivery head `67bbd26652`. The theorem note, primary runner, and
+fresh source/input-pinned cache are present. Primary cache is
+`PASS=18 FAIL=0` in `0.57 s`; an independent runner-free reconstruction is
+`PASS=6 FAIL=0`. Citation registration is `5,486/15,679`, out-degree four,
+and direct repository conformance passes. Commit, pipeline, push, and delivery
+remain before the stacked PR.
+
+The significant gain is that gravity's flat-background route survives a
+previously decisive-looking test. The unshifted `E_*` coframe is not a
+solution, but the same inherited `alpha=16` well forces a nondegenerate
+proper-cubic flat solution on every periodic torus. The exact Gram confinement
+is uniform, every first variation closes, and local-frame invariance provides
+the complete internal Hessian null subspace. The next block must include the
+well and full Record response at nonzero momentum; its `O(k^0)` metric
+stiffness is now the sharp Einstein discriminator. No `review-loop` is used.
+
 ## Block 39 Handoff
 
 Work is on branch

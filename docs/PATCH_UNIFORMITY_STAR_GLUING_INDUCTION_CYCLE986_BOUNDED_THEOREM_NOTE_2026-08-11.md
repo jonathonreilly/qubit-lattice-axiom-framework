@@ -118,16 +118,13 @@ restriction equality makes every shared datum single-valued, and transitivity
 of equality supplies the multiple-chart site cocycle. The target-local rule
 record remains one translated template.
 
-The lemma has two explicitly separate layers. Its algebraic layer is the
-ordinary compatible-chart statement above: equality of records on every
-pairwise intersection, plus the site cocycle, produces one record on the
-finite union. Its labeling convention is a semantic bridge: each translated
-chart is first expressed in centre-relative wire roles and then bound to the
-coordinate-labelled sites of that chart. Thus “restriction equality” means
-equality of those role-normalized, coordinate-bound records. It does not mean
-that two distinct global target components are identified or required to
-carry the same bit value. The theorem's use of “translation-uniform” is
-limited to this record-schema definition.
+The algebraic content is the ordinary compatible-chart statement above:
+equality of records on every pairwise intersection, plus the site cocycle,
+produces one record on the finite union. The record schema and chart-role
+labeling are imported unchanged from the separate
+[`Cycle-986 chart-role labeling convention`](PATCH_UNIFORMITY_CHART_ROLE_LABELING_CONVENTION_CYCLE986_META_NOTE_2026-08-11.md).
+No labeling rule is asserted by this theorem note. Its use of
+“translation-uniform” is limited to the imported record-schema definition.
 
 This is a genuine induction step rather than another fixed-size census: the
 number of old charts meeting the new star is arbitrary, while each nonempty

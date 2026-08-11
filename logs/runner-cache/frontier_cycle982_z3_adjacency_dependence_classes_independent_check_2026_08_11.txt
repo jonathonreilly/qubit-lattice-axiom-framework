@@ -1,0 +1,19 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle982_z3_adjacency_dependence_classes_independent_check_2026_08_11.py
+runner_sha256: 439297c54ad318cbcfdc6bbac1222d07462ffc2355c173caa647e95380ca68ab
+input_fingerprint_sha256: 54b4834fe05e389f5b15edb39e550ada15385a25f48aaae2f28dae7273a041e6
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+CYCLE982_Z3_ADJACENCY_DEPENDENCE_CLASSES_INDEPENDENT_CHECK
+A_INDEPENDENT_RECONSTRUCTION PASS :: semantic_edges=21; z3_edges=6; witnesses=21; orbits=[{"J_values":[1],"class_label":"CNOT","effective_stabilizer_order":4,"member_count":6},{"J_values":[0],"class_label":"TOF_OPPOSITE_CONTROLS","effective_stabilizer_order":8,"member_count":3},{"J_values":[2],"class_label":"TOF_PERPENDICULAR_CONTROLS","effective_stabilizer_order":2,"member_count":12}]
+B_REFUTATION_POWER PASS :: rejected=10/10
+C_ARTIFACT_BINDING PASS :: source_receipt_cache_pins=True; clean_validation=True
+D_PROVENANCE PASS :: primary_imported=False; cycle719_imported=False; prior_cycles_executed=False
+E_CONTROLS PASS :: source_reads=3<=6; determinism=True; runtime_s=0.023<300
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

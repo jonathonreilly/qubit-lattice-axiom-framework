@@ -1,0 +1,186 @@
+{
+  "artifact": "true Z3 adjacency dependence-class independent refutation checker",
+  "audit_status_authority": "independent audit lane only",
+  "checker_source_sha256": "439297c54ad318cbcfdc6bbac1222d07462ffc2355c173caa647e95380ca68ab",
+  "checks": {
+    "A_INDEPENDENT_RECONSTRUCTION": true,
+    "B_REFUTATION_POWER": true,
+    "C_ARTIFACT_BINDING": true,
+    "D_PROVENANCE": true,
+    "E_CONTROLS": true
+  },
+  "controls": {
+    "all_inputs_relative_and_present": true,
+    "blob_pins_match": true,
+    "cycle719_imported_or_executed": false,
+    "determinism_replay": true,
+    "forbidden_imports": [],
+    "house_stdout_limit_bytes": 6000,
+    "input_git_blobs": {
+      "logs/runner-cache/frontier_cycle982_z3_adjacency_dependence_classes_2026_08_11.txt": "2c0785129922347b9792874e546085f21dbc7b11",
+      "outputs/z3_adjacency_dependence_classes_cycle982_receipt_2026_08_11.json": "b8fd98cdf5c9f6d4f67e09e9454cd1e4afd2c516",
+      "scripts/frontier_cycle982_z3_adjacency_dependence_classes_2026_08_11.py": "34b10d7d8c6e66cdc12ff08e9b33b2a96946ce99"
+    },
+    "input_sha256": {
+      "logs/runner-cache/frontier_cycle982_z3_adjacency_dependence_classes_2026_08_11.txt": "ab17b298793d981da88667e4f5b3b1522392cf29a3e25627e20efec16141ca59",
+      "outputs/z3_adjacency_dependence_classes_cycle982_receipt_2026_08_11.json": "8a7988828b13903307cc5b34e4a76a9a30b4ba95c4f6278e41d4d20d8483b2b9",
+      "scripts/frontier_cycle982_z3_adjacency_dependence_classes_2026_08_11.py": "8b5fe04a9f5195bf152b3576cc139f2c61f31782bed829d1188ac8987dfec90c"
+    },
+    "literal_audit_input_paths": [
+      "scripts/frontier_cycle982_z3_adjacency_dependence_classes_2026_08_11.py",
+      "outputs/z3_adjacency_dependence_classes_cycle982_receipt_2026_08_11.json",
+      "logs/runner-cache/frontier_cycle982_z3_adjacency_dependence_classes_2026_08_11.txt"
+    ],
+    "literal_source_read_count": 3,
+    "primary_ast_timeout_seconds": 1400,
+    "primary_imported_or_executed": false,
+    "prior_cycle_text_or_ast_executed": false,
+    "runtime_budget_seconds": 300,
+    "runtime_seconds": 0.02338966599199921,
+    "sha_pins_match": true,
+    "stdout_bytes": 766,
+    "stdout_limit_bytes": 150000
+  },
+  "cycle": 982,
+  "findings": {
+    "clean_validation": true,
+    "clean_validation_errors": [],
+    "independent_expected": {
+      "expanded_primitive_count": 232,
+      "family_size": 23,
+      "group_order": 24,
+      "maximum_route_distance": 2,
+      "maximum_touched_sites": 3,
+      "orbits": [
+        {
+          "J_values": [
+            1
+          ],
+          "class_label": "CNOT",
+          "effective_stabilizer_order": 4,
+          "member_count": 6
+        },
+        {
+          "J_values": [
+            0
+          ],
+          "class_label": "TOF_OPPOSITE_CONTROLS",
+          "effective_stabilizer_order": 8,
+          "member_count": 3
+        },
+        {
+          "J_values": [
+            2
+          ],
+          "class_label": "TOF_PERPENDICULAR_CONTROLS",
+          "effective_stabilizer_order": 2,
+          "member_count": 12
+        }
+      ],
+      "relation_classification": "z3_strict_subrelation_of_semantic_wiring",
+      "routed_nn_gate_count": 292,
+      "semantic_edge_count": 21,
+      "witness_count": 21,
+      "witness_names": [
+        "CNOT(+x->C)",
+        "CNOT(+y->C)",
+        "CNOT(+z->C)",
+        "CNOT(-x->C)",
+        "CNOT(-y->C)",
+        "CNOT(-z->C)",
+        "TOF(+x,+y->C)",
+        "TOF(+x,+z->C)",
+        "TOF(+x,-x->C)",
+        "TOF(+x,-y->C)",
+        "TOF(+x,-z->C)",
+        "TOF(+y,+z->C)",
+        "TOF(+y,-y->C)",
+        "TOF(+y,-z->C)",
+        "TOF(+z,-z->C)",
+        "TOF(-x,+y->C)",
+        "TOF(-x,+z->C)",
+        "TOF(-x,-y->C)",
+        "TOF(-x,-z->C)",
+        "TOF(-y,+z->C)",
+        "TOF(-y,-z->C)"
+      ],
+      "z3_edge_count": 6
+    },
+    "mutations": [
+      {
+        "errors": [
+          "mismatch:relation_classification"
+        ],
+        "name": "relation_classification",
+        "rejected": true
+      },
+      {
+        "errors": [
+          "mismatch:semantic_edge_count"
+        ],
+        "name": "semantic_edge_count",
+        "rejected": true
+      },
+      {
+        "errors": [
+          "host_flag"
+        ],
+        "name": "hostability",
+        "rejected": true
+      },
+      {
+        "errors": [
+          "mismatch:witness_count"
+        ],
+        "name": "witness_count",
+        "rejected": true
+      },
+      {
+        "errors": [
+          "mismatch:orbits"
+        ],
+        "name": "orbit_size",
+        "rejected": true
+      },
+      {
+        "errors": [
+          "mismatch:orbits"
+        ],
+        "name": "stabilizer",
+        "rejected": true
+      },
+      {
+        "errors": [
+          "mismatch:orbits"
+        ],
+        "name": "J_separator",
+        "rejected": true
+      },
+      {
+        "errors": [
+          "honest_scope"
+        ],
+        "name": "full_infinite_scope",
+        "rejected": true
+      },
+      {
+        "errors": [
+          "cache_source_pin"
+        ],
+        "name": "primary_source_pin",
+        "rejected": true
+      },
+      {
+        "errors": [
+          "cache_stdout_pin"
+        ],
+        "name": "cache_headline",
+        "rejected": true
+      }
+    ]
+  },
+  "integrity_policy": "checks gate independent reconstruction, artifact binding, and mutation rejection only",
+  "pass": true,
+  "science_digest": "a3e120dc8a22e39f99e738175c257736eef44065f0a5f48223f3f057f5e4e72c",
+  "stdout_sha256": "42169e9084f3dded0e3d36ccd8d3abf9a592d8841fec7e4353ebdfec89f54b19"
+}

@@ -607,7 +607,8 @@ stack reconstructs `4,824` rows / `3,702` runners and stops only at the
 inherited stage-7 policy epoch; the controlled current-main overlay passes all
 18 stages at checkpoint `2dd15ab4ccba`. Changed evidence is clean for `1/1`
 Block-40 and `40/40` stacked claims, with zero failures or controls. Campaign
-conformance, push, and stacked PR remain pending. Independent audit remains
+conformance is `7e9f5cf9b0`. PR #6128 is open, mergeable, and `CLEAN`, stacked
+exactly on Block-39 delivery head `67bbd26652`. Independent audit remains
 required. No canonical edit, percentage move, audit verdict, or `review-loop`
 is used.
 

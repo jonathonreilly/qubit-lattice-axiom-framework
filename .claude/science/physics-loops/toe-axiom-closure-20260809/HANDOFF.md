@@ -1611,8 +1611,9 @@ and direct repository conformance passes. The exact stack seeds `4,824` rows /
 controlled current-main overlay passes all 18 stages at checkpoint
 `2dd15ab4ccba`. Changed evidence is clean for Block 40 (`1/1`) and the full
 stack (`40/40`), with zero failures or controls. Science commit is
-`ac5e241ff7`; campaign conformance, push, and delivery remain before the
-stacked PR.
+`ac5e241ff7`; campaign conformance is `7e9f5cf9b0`. PR #6128 is open,
+mergeable, and `CLEAN`, stacked exactly on Block-39 delivery head
+`67bbd26652`; independent audit remains required.
 
 The significant gain is that gravity's flat-background route survives a
 previously decisive-looking test. The unshifted `E_*` coframe is not a

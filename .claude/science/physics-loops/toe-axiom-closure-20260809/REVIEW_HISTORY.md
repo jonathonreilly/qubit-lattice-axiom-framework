@@ -1982,9 +1982,10 @@ instance or Fourier census.
   only the inherited stage-7 policy-epoch stop; the controlled current-main
   overlay passes all 18 stages at checkpoint `2dd15ab4ccba`. Changed evidence
   is ready for Block 40 (`1/1`) and all 40 stacked claims (`40/40`), with zero
-  failures or controls. Science commit is `ac5e241ff7`; campaign conformance,
-  push, and PR remain pending. No canonical axiom, fixed percentage, or audit
-  verdict is changed.
+  failures or controls. Science commit is `ac5e241ff7`; campaign conformance
+  is `7e9f5cf9b0`. PR #6128 is open, mergeable, and `CLEAN`, stacked exactly
+  on Block-39 delivery head `67bbd26652`; independent audit remains pending.
+  No canonical axiom, fixed percentage, or audit verdict is changed.
 
 ## Block 38 Construction And Adversarial Record
 

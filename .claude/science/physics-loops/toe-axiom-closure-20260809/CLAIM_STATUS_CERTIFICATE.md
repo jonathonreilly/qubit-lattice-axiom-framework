@@ -1371,7 +1371,9 @@ lines are in the landing primary cache.
   controlled current-main overlay passes all 18 stages at checkpoint
   `2dd15ab4ccba`. Changed evidence is clean for `1/1` Block-40 and `40/40`
   stacked claims, with zero failures or controls. Science commit is
-  `ac5e241ff7`; independent audit remains required.
+  `ac5e241ff7`; campaign conformance is `7e9f5cf9b0`. PR #6128 is open,
+  mergeable, and `CLEAN`, stacked exactly on Block-39 delivery head
+  `67bbd26652`; independent audit remains required.
 - Scope: this retires only the supplied-law periodic flat-vacuum existence
   wall. Nonzero displacement modes, Einstein response, continuous joint
   geometry phase, physical law selection, and Lorentzian evolution remain.

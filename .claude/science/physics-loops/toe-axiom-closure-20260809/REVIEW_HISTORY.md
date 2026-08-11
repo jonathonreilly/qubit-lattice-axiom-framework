@@ -1946,5 +1946,10 @@ instance or Fourier census.
   scan; corrected residual locators; honest mode/lattice-wide nonexecution;
   primitive-source scan; strongest two-cube steelman; cross-cycle echo.
 - Fresh cache is `PASS=21 FAIL=0` in `7.6 s`; primary stdout is `5,900`
-  characters. Repository conformance remains before commit/push/PR. No
-  canonical axiom, fixed percentage, or audit verdict is changed.
+  characters. Direct repository gates pass at citation graph `5,483/15,671`,
+  out-degree three. The exact stack seeds 4,821 rows / 3,699 runners before the
+  inherited stage-7 policy-epoch stop; the controlled five-file current-main
+  overlay passes all 18 stages at checkpoint `bdd78a2e0b25`. Changed evidence
+  is clean for `1/1` Block-37 and `37/37` stacked claims. Science commit is
+  `f571445246`; campaign conformance, push, and PR remain pending. No canonical
+  axiom, fixed percentage, or audit verdict is changed.

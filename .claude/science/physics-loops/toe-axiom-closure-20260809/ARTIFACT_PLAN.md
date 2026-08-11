@@ -869,5 +869,11 @@ complete conditional nonlinear compact solution:
   percentage movement, or audit verdicts
 - current evidence: fresh cache `PASS=21 FAIL=0` in `7.6 s`; runner stdout
   `5,900` characters; theorem-note N1--N8 and cache N5 certificates land in the
-  block; repository conformance, science commit, delivery, push, and stacked PR
-  remain pending
+  block; citation registration is `5,483/15,671`, with out-degree three;
+  direct conformance gates pass. The exact stack seeds `4,821` rows and
+  classifies `3,699` runners before reproducing only the inherited stage-7
+  dependency-policy epoch mismatch; the controlled five-file current-main
+  overlay passes all 18 stages at checkpoint `bdd78a2e0b25`. Changed evidence
+  is ready for Block 37 alone (`1/1`) and all 37 stacked claims (`37/37`), with
+  zero failures and zero control failures. Science commit is `f571445246`;
+  campaign conformance, push, and stacked PR remain pending

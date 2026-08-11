@@ -1537,8 +1537,13 @@ Work is on branch
 `physics-loop/toe-axiom-closure-block37-proper-cubic-plaquette-20260811`,
 stacked exactly on Block-36 delivery head `9431cd5d47`. The theorem note,
 runner, and fresh cache are present. The cache is `PASS=21 FAIL=0` in `7.6 s`;
-runner stdout is `5,900` characters. Repository conformance and delivery remain
-before the stacked PR.
+runner stdout is `5,900` characters. Direct gates pass at citation graph
+`5,483/15,671`, out-degree three. The exact stack seeds 4,821 rows / 3,699
+runners before only the inherited stage-7 policy-epoch stop; the controlled
+five-file current-main overlay passes all 18 stages at checkpoint
+`bdd78a2e0b25`. Changed evidence is clean for Block 37 (`1/1`) and the complete
+stack (`37/37`). Science commit is `f571445246`; campaign conformance and
+delivery remain before the stacked PR.
 
 The major scientific gain is a correction, not cosmetic packaging. The
 coframe-dual face bivector initially used is wrong for intrinsic spatial EC:

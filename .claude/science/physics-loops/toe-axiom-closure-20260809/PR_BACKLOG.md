@@ -718,3 +718,21 @@ campaign conformance is `8008591e79`. PR #6118 is open, mergeable, and
 `CLEAN`, stacked exactly on Block-35 delivery head `6882d2eb7e`; independent
 audit remains pending. No canonical edit, percentage move, audit verdict, or
 `review-loop` is used.
+
+Block 37 is local on branch
+`physics-loop/toe-axiom-closure-block37-proper-cubic-plaquette-20260811`,
+stacked exactly on Block-36 delivery head `9431cd5d47`. Its distinct review
+object is the complete proper-cubic spatial cube, triad-derived internal
+normal, corrected complementary-triad intrinsic Einstein--Cartan contraction,
+all twenty-four based plaquettes, exact ten-label Record contraction, and
+numerical all-link/all-coframe stationarity. The source/input-pinned cache is
+`PASS=21 FAIL=0` in `7.6 s` with 5,900 stdout characters. Pi-holonomy,
+same-law Wilson, polar-derived-link, normal-mixing, open-loop, pure-gauge, and
+sector-deletion controls pass; direct repository conformance passes at graph
+`5,483/15,671`, out-degree three. The exact stack seeds 4,821 rows / 3,699
+runners and reaches only the inherited stage-7 dependency-policy epoch
+mismatch; the controlled five-file current-main overlay passes all 18 stages
+at checkpoint `bdd78a2e0b25`. Changed evidence is clean for `1/1` Block-37 and
+`37/37` stacked claims. Science commit is `f571445246`; campaign conformance,
+push, and stacked PR remain pending. Independent audit remains required. No
+canonical edit, percentage move, audit verdict, or `review-loop` is used.

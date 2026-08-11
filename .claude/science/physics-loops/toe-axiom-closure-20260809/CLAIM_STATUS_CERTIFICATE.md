@@ -1226,6 +1226,14 @@ current repository no-go discipline.
 - Runner/cache: source/input pinned, `PASS=21 FAIL=0` in `7.6 s`; primary
   stdout is `5,900` characters with substantive per-element, per-site,
   per-mode, per-block, and lattice-wide certificates.
+- Citation/conformance: `5,483` nodes / `15,671` edges, with note out-degree
+  three. Direct gates pass. The exact stack seeds `4,821` rows and classifies
+  `3,699` runners before the inherited stage-7 policy-epoch stop; the
+  controlled five-file current-main overlay passes all 18 stages at checkpoint
+  `bdd78a2e0b25`. Changed evidence is ready for Block 37 alone (`1/1`) and all
+  37 stacked claims (`37/37`), with zero failures and zero control failures.
+  Science commit is `f571445246`; campaign conformance and delivery remain
+  pending.
 - Governance: finite coexistence is established; physical carrier/law
   selection, overlap/full-`Z^3`, displacement Ward/Bianchi, Einstein regime,
   Lorentzian update, and axiom necessity are not.

@@ -241,7 +241,7 @@ complete canonical primary cache, and independently reconstructs:
 - the exact finite quantifier and false infinite-scope flag.
 
 Science agreement is reported data rather than an integrity condition. The
-checker rejects nineteen corruptions covering census counts, pair/path data,
+checker rejects twenty-five corruptions covering census counts, pair/path data,
 universal flags, case arity/support/outcome, the exact finite quantifier,
 infinite-scope flag, artifact pins and cached stdout. It also constructs
 coherent `OBSTRUCTED` and `NOT_HOSTABLE`
@@ -266,7 +266,8 @@ python3 scripts/cached_runner_output.py --refresh --timeout-sec 1400 scripts/fro
 python3 scripts/cached_runner_output.py --refresh --timeout-sec 300 scripts/frontier_cycle986_patch_uniformity_induction_independent_check_2026_08_11.py
 ```
 
-Both caches pin runner SHA-256, literal inputs, timeout, exit status and stdout.
+Both caches pin runner SHA-256, literal inputs and their fingerprint, timeout,
+exit status and stdout.
 Both runners replay deterministically, keep stdout below 6000 bytes, and end in
 zero failures. Independent audit remains required before any effective-status
 consequence.

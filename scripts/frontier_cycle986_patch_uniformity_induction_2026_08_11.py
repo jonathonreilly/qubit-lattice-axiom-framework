@@ -76,6 +76,11 @@ DIRECTION_NAMES = ("+x", "-x", "+y", "-y", "+z", "-z")
 RELATIVE_SITES = (ZERO, *DIRECTIONS)
 CONDITIONS = tuple(product((0, 1), repeat=6))
 OTHER_CONTEXTS = tuple(product((0, 1), repeat=5))
+EXPECTED_CLASS_SIZE_J_TABLE = [
+    ["CNOT", 6, [1]],
+    ["TOF_OPPOSITE_CONTROLS", 3, [0]],
+    ["TOF_PERPENDICULAR_CONTROLS", 12, [2]],
+]
 
 # P2x -> P3x -> P4T exercises adjacent, axial-distance-two, and diagonal-distance-two overlaps.
 TARGET_A = (0, 0, 0)
@@ -509,6 +514,17 @@ def target_census_bookkeeping_valid(row: dict) -> bool:
     )
 
 
+def local_template_agrees(row: dict) -> bool:
+    return bool(
+        row["complete_closed_star"]
+        and row["relative_family_size"] == len(declared_relative_family())
+        and row["landed_vs_boolean_failure_count"] == 0
+        and row["witness_count"] == 21
+        and row["class_size_J_table"] == EXPECTED_CLASS_SIZE_J_TABLE
+        and row["orbit_stabilizer_products"] == [len(ROTATIONS)] * 3
+    )
+
+
 def cocycle_row_bookkeeping_valid(row: dict) -> bool:
     bindings = row["all_chart_bindings"]
     return bool(
@@ -552,6 +568,29 @@ def universal_overlap_census() -> dict:
         "all_overlap_types_exhausted": len(rows) == 24,
         "all_pairwise_chart_restrictions_agree": all(row["agreement"] for row in rows),
     }
+
+
+def overlap_census_complete(census: dict) -> bool:
+    expected_offsets = {
+        offset for offset in product(range(-2, 3), repeat=3)
+        if offset != ZERO and set(closed_star(ZERO)) & set(closed_star(offset))
+    }
+    reported_offsets = {
+        tuple(row["right_minus_left"]) for row in census["rows"]
+    }
+    expected_type_counts = {
+        "ADJACENT_CENTRES": 6,
+        "AXIAL_DISTANCE_TWO_CENTRES": 6,
+        "DIAGONAL_DISTANCE_TWO_CENTRES": 12,
+    }
+    reported_type_counts = {
+        row["overlap_type"]: row["oriented_offset_count"]
+        for row in census["type_summary"]
+    }
+    return bool(
+        reported_offsets == expected_offsets
+        and reported_type_counts == expected_type_counts
+    )
 
 
 def extension_case(name: str, existing: tuple, new_target: tuple) -> dict:
@@ -604,6 +643,8 @@ def derive_extension_outcome(row: dict) -> tuple[str, str | None]:
     if not row["new_target_census"]["all_words_routable"]:
         target = tuple(row["new_target"])
         return "NOT_HOSTABLE", f"new target {coordinate_name(target)} is not route-hostable"
+    if not local_template_agrees(row["new_target_census"]):
+        return "OBSTRUCTED", "new target-local record differs from declared 23-program template"
     if not all(overlap["agreement"] for overlap in row["new_to_old_agreement_table"]):
         return "OBSTRUCTED", "one or more new-to-old chart restrictions disagree"
     if not all(site["site_cocycle_agrees"] for site in row["site_cocycle_table"]):
@@ -676,6 +717,8 @@ def base_case_measurement() -> dict:
 def derive_base_outcome(base: dict) -> tuple[str, str | None]:
     if not all(row["all_words_routable"] for row in base["per_target_census"]):
         return "NOT_HOSTABLE", "one or more P2x target charts are not route-hostable"
+    if not all(local_template_agrees(row) for row in base["per_target_census"]):
+        return "OBSTRUCTED", "P2x target-local records differ from declared 23-program template"
     if not base["target_local_template_fields_agree"]:
         return "OBSTRUCTED", "P2x target-local template records disagree"
     if not base["adjacent_star_overlap"]["agreement"]:
@@ -716,11 +759,7 @@ def induction_measurement(gluing: dict, cases: list[dict], base: dict) -> dict:
             "P2x is reconstructed inside this runner without executing prior-cycle text or AST"
         ),
         "exact_quantifier": EXACT_QUANTIFIER,
-        "verdict_line": (
-            "FINITE_P2X_ROOTED_STAR_GLUED_PATCH_UNIFORMITY_FOR_ARBITRARY_FINITE_TARGET_COUNT"
-            if status == "FINITE_PATCH_INDUCTION_CLOSES_AT_DECLARED_SCOPE"
-            else status
-        ),
+        "verdict_line": verdict_line_for_status(status),
         "target_count_scope": "arbitrary finite n>=2 within the exact quantified family",
         "full_infinite_translation_uniform_lattice_law_claimed": False,
         "infinite_scope_reason": (
@@ -734,6 +773,14 @@ def induction_measurement(gluing: dict, cases: list[dict], base: dict) -> dict:
             "finite patches outside the stated P2x-rooted star-gluing order",
         ],
     }
+
+
+def verdict_line_for_status(status: str) -> str:
+    return (
+        "FINITE_P2X_ROOTED_STAR_GLUED_PATCH_UNIFORMITY_FOR_ARBITRARY_FINITE_TARGET_COUNT"
+        if status == "FINITE_PATCH_INDUCTION_CLOSES_AT_DECLARED_SCOPE"
+        else status
+    )
 
 
 def science_measurement() -> dict:
@@ -824,6 +871,7 @@ def validate_science_bookkeeping(findings: dict) -> dict:
         census["oriented_overlap_offset_count"] == len(census["rows"])
         and sum(row["oriented_offset_count"] for row in census["type_summary"])
             == len(census["rows"])
+        and census["all_overlap_types_exhausted"] == overlap_census_complete(census)
         and all(overlap_row_bookkeeping_valid(row) for row in census["rows"])
     )
     b = bool(
@@ -872,6 +920,7 @@ def validate_science_bookkeeping(findings: dict) -> dict:
         and
         induction["induction_status"] == expected_status
         and induction["exact_obstruction"] == expected_obstruction
+        and induction["verdict_line"] == verdict_line_for_status(expected_status)
         and induction["full_infinite_translation_uniform_lattice_law_claimed"] is False
         and induction["exact_quantifier"] == EXACT_QUANTIFIER
         and bool(induction["scope_exclusions"])
@@ -892,7 +941,7 @@ def rewrite_probe_induction(findings: dict) -> None:
     )
     induction["induction_status"] = status
     induction["exact_obstruction"] = obstruction
-    induction["verdict_line"] = status
+    induction["verdict_line"] = verdict_line_for_status(status)
 
 
 def outcome_neutrality_probes(findings: dict) -> list[dict]:

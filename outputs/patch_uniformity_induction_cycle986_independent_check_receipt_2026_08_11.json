@@ -1,7 +1,7 @@
 {
   "artifact": "finite-patch gluing induction independent refutation checker",
   "audit_status_authority": "independent audit lane only",
-  "checker_source_sha256": "df8cf476c50e904c8d008b09dd35c36589173cdd2846b06dfc28b0c02a00a4d5",
+  "checker_source_sha256": "7fb6ebc3c4ef90fbe8414e0acb12a99189c3bda0445e964b69708d96c91d28f4",
   "checks": {
     "A_INDEPENDENT_RECONSTRUCTION": true,
     "B_REFUTATION_POWER": true,
@@ -23,12 +23,12 @@
     "forbidden_imports": [],
     "house_stdout_limit_bytes": 6000,
     "input_git_blobs": {
-      "outputs/patch_uniformity_induction_cycle986_receipt_2026_08_11.json": "ac9135d6ce022a0c6fbd90ff1e2c902ca48acf21",
-      "scripts/frontier_cycle986_patch_uniformity_induction_2026_08_11.py": "5630288f98a8f28fd28564762b62bd86f7e080a4"
+      "outputs/patch_uniformity_induction_cycle986_receipt_2026_08_11.json": "25d304429c1c660f0a47da30b33105238a077457",
+      "scripts/frontier_cycle986_patch_uniformity_induction_2026_08_11.py": "495b459b74e55d92925e7a64feff32d56925de70"
     },
     "input_sha256": {
-      "outputs/patch_uniformity_induction_cycle986_receipt_2026_08_11.json": "fa37340d833bd993bff86f138de5113b92d85842fde61c7693e24bb132400371",
-      "scripts/frontier_cycle986_patch_uniformity_induction_2026_08_11.py": "7999cab3a1a7bdf0d5f2a414d8fef905edb945a0f4a36305747206ca612a5991"
+      "outputs/patch_uniformity_induction_cycle986_receipt_2026_08_11.json": "045a1366d589f4fc11d060692d530f01cdd44ccbda921dc14163660a1f112f36",
+      "scripts/frontier_cycle986_patch_uniformity_induction_2026_08_11.py": "8967351fa732987aec09d3bb98a336fa66933f6a511e41d3ec884015ca6b7021"
     },
     "literal_audit_input_paths": [
       "scripts/frontier_cycle986_patch_uniformity_induction_2026_08_11.py",
@@ -5351,7 +5351,8 @@
       },
       {
         "errors": [
-          "overlap_type_sum"
+          "overlap_type_sum",
+          "overlap_exhaustion_flag"
         ],
         "name": "type_count",
         "rejected": true
@@ -5389,7 +5390,8 @@
         "errors": [
           "gluing_finding",
           "induction_status",
-          "induction_obstruction"
+          "induction_obstruction",
+          "verdict_line"
         ],
         "name": "gluing_finding",
         "rejected": true
@@ -5412,7 +5414,8 @@
         "errors": [
           "case_outcome:0",
           "induction_status",
-          "induction_obstruction"
+          "induction_obstruction",
+          "verdict_line"
         ],
         "name": "case_outcome",
         "rejected": true
@@ -5421,7 +5424,8 @@
         "errors": [
           "base_outcome",
           "induction_status",
-          "induction_obstruction"
+          "induction_obstruction",
+          "verdict_line"
         ],
         "name": "base_outcome_unreconciled",
         "rejected": true
@@ -5476,6 +5480,36 @@
       },
       {
         "errors": [
+          "verdict_line"
+        ],
+        "name": "verdict_line",
+        "rejected": true
+      },
+      {
+        "errors": [
+          "overlap_exhaustion_flag",
+          "gluing_finding"
+        ],
+        "name": "overlap_exhaustion_flag",
+        "rejected": true
+      },
+      {
+        "errors": [
+          "case_outcome:0",
+          "case_obstruction:0"
+        ],
+        "name": "local_truth_failure",
+        "rejected": true
+      },
+      {
+        "errors": [
+          "base_outcome"
+        ],
+        "name": "base_family_size",
+        "rejected": true
+      },
+      {
+        "errors": [
           "cache_source_pin"
         ],
         "name": "primary_source_pin",
@@ -5487,6 +5521,20 @@
         ],
         "name": "cache_headline",
         "rejected": true
+      },
+      {
+        "errors": [
+          "cache_timeout"
+        ],
+        "name": "cache_timeout",
+        "rejected": true
+      },
+      {
+        "errors": [
+          "cache_input_fingerprint"
+        ],
+        "name": "cache_input_fingerprint",
+        "rejected": true
       }
     ],
     "primary_science_agreement": true,
@@ -5495,5 +5543,5 @@
   "integrity_policy": "checks gate independent reconstruction, bookkeeping, artifact binding, mutation rejection, and outcome neutrality only; science agreement is reported data",
   "pass": true,
   "science_digest": "a903a45c0009409c797e1a19ed9f97ec7aa7d0d8fca1cc9217e185df45d2d930",
-  "stdout_sha256": "e488f4b4c269d28e3645ef69597d051a39696378bdd79c8315fd2ebe3764ae00"
+  "stdout_sha256": "c9f5f6de5e22d5ac776d3757291f7fddda9ba85b57c31642d9fd187eda8b8a9b"
 }

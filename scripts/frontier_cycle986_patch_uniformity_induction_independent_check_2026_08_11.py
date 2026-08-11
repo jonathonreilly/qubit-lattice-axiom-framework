@@ -47,13 +47,16 @@ BYTE_PINNED_INPUT_PATHS = (
     "outputs/patch_uniformity_induction_cycle986_receipt_2026_08_11.json",
 )
 EXPECTED_INPUT_SHA256 = {
-    PRIMARY_PATH: "7999cab3a1a7bdf0d5f2a414d8fef905edb945a0f4a36305747206ca612a5991",
-    PRIMARY_RECEIPT_PATH: "fa37340d833bd993bff86f138de5113b92d85842fde61c7693e24bb132400371",
+    PRIMARY_PATH: "8967351fa732987aec09d3bb98a336fa66933f6a511e41d3ec884015ca6b7021",
+    PRIMARY_RECEIPT_PATH: "045a1366d589f4fc11d060692d530f01cdd44ccbda921dc14163660a1f112f36",
 }
 EXPECTED_INPUT_BLOBS = {
-    PRIMARY_PATH: "5630288f98a8f28fd28564762b62bd86f7e080a4",
-    PRIMARY_RECEIPT_PATH: "ac9135d6ce022a0c6fbd90ff1e2c902ca48acf21",
+    PRIMARY_PATH: "495b459b74e55d92925e7a64feff32d56925de70",
+    PRIMARY_RECEIPT_PATH: "25d304429c1c660f0a47da30b33105238a077457",
 }
+PRIMARY_INPUT_FINGERPRINT_SHA256 = (
+    "db7786cde9df9554b9e925bd8927e6f129e0cdd1546e5ea349a31056104b73bb"
+)
 FORBIDDEN_IMPORT_FRAGMENTS = (
     "frontier_cycle719_two_rail_recurrent_controller_core",
     "frontier_cycle986_patch_uniformity_induction_2026_08_11",
@@ -66,6 +69,11 @@ EXACT_QUANTIFIER = (
     "23-program dependence-law chart is translation-uniform on all targets of "
     "the finite support union Omega_n"
 )
+EXPECTED_CLASS_SIZE_J_TABLE = [
+    ["CNOT", 6, [1]],
+    ["TOF_OPPOSITE_CONTROLS", 3, [0]],
+    ["TOF_PERPENDICULAR_CONTROLS", 12, [2]],
+]
 
 O = (0, 0, 0)
 STEPS = (
@@ -374,6 +382,24 @@ def independent_universal() -> dict:
     }
 
 
+def overlap_census_complete(census: dict) -> bool:
+    expected_offsets = {
+        offset for offset in product(range(-2, 3), repeat=3)
+        if offset != O and set(star(O)) & set(star(offset))
+    }
+    reported_offsets = {tuple(row["right_minus_left"]) for row in census["rows"]}
+    expected_type_counts = {
+        "ADJACENT_CENTRES": 6,
+        "AXIAL_DISTANCE_TWO_CENTRES": 6,
+        "DIAGONAL_DISTANCE_TWO_CENTRES": 12,
+    }
+    reported_type_counts = {
+        row["overlap_type"]: row["oriented_offset_count"]
+        for row in census["type_summary"]
+    }
+    return reported_offsets == expected_offsets and reported_type_counts == expected_type_counts
+
+
 def independent_target_census(center: tuple) -> dict:
     witnesses = [descriptor for descriptor in family() if witness_strength(descriptor) > 0]
     return {
@@ -544,6 +570,8 @@ def derive_case_outcome(row: dict) -> tuple[str, str | None]:
     if not row["new_target_census"]["all_words_routable"]:
         target = row["new_target"]
         return "NOT_HOSTABLE", f"new target ({target[0]},{target[1]},{target[2]}) is not route-hostable"
+    if not local_template_agrees(row["new_target_census"]):
+        return "OBSTRUCTED", "new target-local record differs from declared 23-program template"
     if not all(overlap["agreement"] for overlap in row["new_to_old_agreement_table"]):
         return "OBSTRUCTED", "one or more new-to-old chart restrictions disagree"
     if not all(site["site_cocycle_agrees"] for site in row["site_cocycle_table"]):
@@ -578,6 +606,8 @@ def derive_induction(receipt: dict) -> tuple[str, str | None]:
 def derive_base_outcome(base: dict) -> tuple[str, str | None]:
     if not all(row["all_words_routable"] for row in base["per_target_census"]):
         return "NOT_HOSTABLE", "one or more P2x target charts are not route-hostable"
+    if not all(local_template_agrees(row) for row in base["per_target_census"]):
+        return "OBSTRUCTED", "P2x target-local records differ from declared 23-program template"
     if not base["target_local_template_fields_agree"]:
         return "OBSTRUCTED", "P2x target-local template records disagree"
     if not base["adjacent_star_overlap"]["agreement"]:
@@ -590,6 +620,25 @@ def target_census_bookkeeping_valid(row: dict) -> bool:
         row["complete_closed_star"] == (len(star(tuple(row["target"]))) == 7)
         and row["all_words_routable"] == (row["route_failure_count"] == 0)
         and len(row["class_size_J_table"]) == len(row["orbit_stabilizer_products"])
+    )
+
+
+def local_template_agrees(row: dict) -> bool:
+    return bool(
+        row["complete_closed_star"]
+        and row["relative_family_size"] == len(family())
+        and row["landed_vs_boolean_failure_count"] == 0
+        and row["witness_count"] == 21
+        and row["class_size_J_table"] == EXPECTED_CLASS_SIZE_J_TABLE
+        and row["orbit_stabilizer_products"] == [len(ACTIONS)] * 3
+    )
+
+
+def verdict_line_for_status(status: str) -> str:
+    return (
+        "FINITE_P2X_ROOTED_STAR_GLUED_PATCH_UNIFORMITY_FOR_ARBITRARY_FINITE_TARGET_COUNT"
+        if status == "FINITE_PATCH_INDUCTION_CLOSES_AT_DECLARED_SCOPE"
+        else status
     )
 
 
@@ -631,6 +680,8 @@ def validate_bookkeeping(receipt: dict, cache_payload: str) -> tuple[bool, list[
         if row["agreement"] != agreement:
             errors.append(f"overlap_agreement:{index}")
     all_agree = all(row["agreement"] for row in rows)
+    if census["all_overlap_types_exhausted"] != overlap_census_complete(census):
+        errors.append("overlap_exhaustion_flag")
     if census["all_pairwise_chart_restrictions_agree"] != all_agree:
         errors.append("universal_agreement")
     expected_gluing = (
@@ -717,6 +768,8 @@ def validate_bookkeeping(receipt: dict, cache_payload: str) -> tuple[bool, list[
         errors.append("induction_status")
     if induction["exact_obstruction"] != expected_obstruction:
         errors.append("induction_obstruction")
+    if induction["verdict_line"] != verdict_line_for_status(expected_status):
+        errors.append("verdict_line")
     if induction["full_infinite_translation_uniform_lattice_law_claimed"] is not False:
         errors.append("infinite_scope")
     if induction["exact_quantifier"] != EXACT_QUANTIFIER or not induction["scope_exclusions"]:
@@ -740,6 +793,10 @@ def validate_bookkeeping(receipt: dict, cache_payload: str) -> tuple[bool, list[
             errors.append("cache_source_pin")
         if fields.get("exit_code") != "0" or fields.get("status") != "ok":
             errors.append("cache_status")
+        if fields.get("timeout_sec") != "1400":
+            errors.append("cache_timeout")
+        if fields.get("input_fingerprint_sha256") != PRIMARY_INPUT_FINGERPRINT_SHA256:
+            errors.append("cache_input_fingerprint")
         if sha256(cache["stdout"].encode()).hexdigest() != receipt.get("stdout_sha256"):
             errors.append("cache_stdout_pin")
         if "TOTAL: PASS=4 FAIL=0" not in cache["stdout"]:
@@ -763,6 +820,13 @@ def mutation_campaign(receipt: dict, cache_payload: str) -> list[dict]:
         rows = row["findings"]["A_GLUING_STEP"]["finite_overlap_census"]["rows"]
         overlap = next(item for item in rows if item["shared_pair_agreement_table"])
         overlap["shared_pair_agreement_table"][0]["canonical_global_paths_agree"] = False
+
+    def mutate_both_base_family_sizes(row: dict, _cache: str) -> None:
+        rows = row["findings"]["C_INDUCTION_STATUS"]["base_case_reconstruction"][
+            "per_target_census"
+        ]
+        for target_row in rows:
+            target_row["relative_family_size"] = 22
 
     add_mutation("offset_count", lambda row, cache: row["findings"]["A_GLUING_STEP"]
                  ["finite_overlap_census"].__setitem__("oriented_overlap_offset_count", 23))
@@ -802,11 +866,27 @@ def mutation_campaign(receipt: dict, cache_payload: str) -> list[dict]:
                  .__setitem__("full_infinite_translation_uniform_lattice_law_claimed", True))
     add_mutation("exact_quantifier", lambda row, cache: row["findings"]["C_INDUCTION_STATUS"]
                  .__setitem__("exact_quantifier", "for n=infinity and all of Z3"))
+    add_mutation("verdict_line", lambda row, cache: row["findings"]["C_INDUCTION_STATUS"]
+                 .__setitem__("verdict_line", "OBSTRUCTED"))
+    add_mutation("overlap_exhaustion_flag", lambda row, cache: row["findings"]
+                 ["A_GLUING_STEP"]["finite_overlap_census"].__setitem__(
+                     "all_overlap_types_exhausted", False
+                 ))
+    add_mutation("local_truth_failure", lambda row, cache: row["findings"]
+                 ["B_STEP_VERIFICATION"]["verified_cases"][0]["new_target_census"]
+                 .__setitem__("landed_vs_boolean_failure_count", 1))
+    add_mutation("base_family_size", mutate_both_base_family_sizes)
     add_mutation("primary_source_pin", lambda row, cache: row.__setitem__(
         "primary_source_sha256", "0" * 64
     ))
     add_mutation("cache_headline", lambda row, cache: cache.replace(
         "FINITE_PATCH_INDUCTION_CLOSES_AT_DECLARED_SCOPE", "OBSTRUCTED", 1
+    ))
+    add_mutation("cache_timeout", lambda row, cache: cache.replace(
+        "timeout_sec: 1400", "timeout_sec: 1", 1
+    ))
+    add_mutation("cache_input_fingerprint", lambda row, cache: cache.replace(
+        PRIMARY_INPUT_FINGERPRINT_SHA256, "0" * 64, 1
     ))
     return mutations
 

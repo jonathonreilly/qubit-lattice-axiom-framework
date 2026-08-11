@@ -1606,8 +1606,13 @@ on Block-39 delivery head `67bbd26652`. The theorem note, primary runner, and
 fresh source/input-pinned cache are present. Primary cache is
 `PASS=18 FAIL=0` in `0.57 s`; an independent runner-free reconstruction is
 `PASS=6 FAIL=0`. Citation registration is `5,486/15,679`, out-degree four,
-and direct repository conformance passes. Commit, pipeline, push, and delivery
-remain before the stacked PR.
+and direct repository conformance passes. The exact stack seeds `4,824` rows /
+`3,702` runners and stops only at the inherited stage-7 policy epoch; the
+controlled current-main overlay passes all 18 stages at checkpoint
+`2dd15ab4ccba`. Changed evidence is clean for Block 40 (`1/1`) and the full
+stack (`40/40`), with zero failures or controls. Science commit is
+`ac5e241ff7`; campaign conformance, push, and delivery remain before the
+stacked PR.
 
 The significant gain is that gravity's flat-background route survives a
 previously decisive-looking test. The unshifted `E_*` coframe is not a

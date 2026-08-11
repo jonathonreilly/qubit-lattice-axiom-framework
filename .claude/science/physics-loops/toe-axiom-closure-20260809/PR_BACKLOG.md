@@ -602,9 +602,14 @@ diagnostic, and endpoint-local Hessian quotient identity. Primary
 source/input-pinned cache is `PASS=18 FAIL=0` in `0.57 s`; independent
 reconstruction is `PASS=6 FAIL=0`. Citation registration is `5,486/15,679`,
 out-degree four, and direct repository conformance passes. Science/campaign
-commits, pipeline, push, and stacked PR remain pending. Independent audit
-remains required. No canonical edit, percentage move, audit verdict, or
-`review-loop` is used.
+commit separation is preserved at science commit `ac5e241ff7`. The exact
+stack reconstructs `4,824` rows / `3,702` runners and stops only at the
+inherited stage-7 policy epoch; the controlled current-main overlay passes all
+18 stages at checkpoint `2dd15ab4ccba`. Changed evidence is clean for `1/1`
+Block-40 and `40/40` stacked claims, with zero failures or controls. Campaign
+conformance, push, and stacked PR remain pending. Independent audit remains
+required. No canonical edit, percentage move, audit verdict, or `review-loop`
+is used.
 
 Block 39 is local on branch
 `physics-loop/toe-axiom-closure-block39-periodic-record-ec-phase-20260811`,

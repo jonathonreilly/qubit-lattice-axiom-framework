@@ -1978,8 +1978,13 @@ instance or Fourier census.
 - Fresh cache is `PASS=18 FAIL=0` in `0.57 s`. Fresh N1--N8 demotes and does
   not ship the broad no-vacuum claim. Citation registration is
   `5,486/15,679`, out-degree four, and direct repository conformance passes.
-  Commit, pipeline, push, and PR remain pending. No canonical axiom, fixed
-  percentage, or audit verdict is changed.
+  The exact stack reconstructs `4,824` rows / `3,702` runners and reproduces
+  only the inherited stage-7 policy-epoch stop; the controlled current-main
+  overlay passes all 18 stages at checkpoint `2dd15ab4ccba`. Changed evidence
+  is ready for Block 40 (`1/1`) and all 40 stacked claims (`40/40`), with zero
+  failures or controls. Science commit is `ac5e241ff7`; campaign conformance,
+  push, and PR remain pending. No canonical axiom, fixed percentage, or audit
+  verdict is changed.
 
 ## Block 38 Construction And Adversarial Record
 

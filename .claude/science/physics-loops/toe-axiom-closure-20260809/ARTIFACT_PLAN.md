@@ -970,6 +970,11 @@ complete conditional nonlinear compact solution:
   characters; independent runner-free reconstruction `PASS=6 FAIL=0`.
   Citation registration is `5,486/15,679`, out-degree four. Vocabulary,
   premise, model, cache, syntax, whitespace, strict-lint, claim-typing, and
-  graph/link/invariant direct gates pass. Science commit, pipeline, push, and
-  stacked PR remain pending. No canonical edit, fixed percentage move, or
-  audit verdict occurs.
+  graph/link/invariant direct gates pass. The exact stack seeds `4,824` rows
+  and classifies `3,702` runners before reproducing only the inherited stage-7
+  dependency-policy epoch mismatch; the controlled five-file current-main
+  overlay passes all 18 stages at checkpoint `2dd15ab4ccba`. Changed evidence
+  is clean for Block 40 alone (`1/1`) and all 40 stacked claims (`40/40`), with
+  zero failures and zero control failures. Science commit is `ac5e241ff7`;
+  campaign conformance, push, and stacked PR remain pending. No canonical
+  edit, fixed percentage move, or audit verdict occurs.

@@ -1366,6 +1366,12 @@ lines are in the landing primary cache.
 - Citation/conformance: `5,486` nodes / `15,679` edges, note out-degree four;
   vocabulary, premise, model, cache, syntax, whitespace, strict-lint,
   claim-typing, and graph/link/invariant direct gates pass.
+- Pipeline/evidence: the exact stack seeds `4,824` rows / `3,702` runners and
+  reaches only the inherited stage-7 dependency-policy epoch mismatch; the
+  controlled current-main overlay passes all 18 stages at checkpoint
+  `2dd15ab4ccba`. Changed evidence is clean for `1/1` Block-40 and `40/40`
+  stacked claims, with zero failures or controls. Science commit is
+  `ac5e241ff7`; independent audit remains required.
 - Scope: this retires only the supplied-law periodic flat-vacuum existence
   wall. Nonzero displacement modes, Einstein response, continuous joint
   geometry phase, physical law selection, and Lorentzian evolution remain.

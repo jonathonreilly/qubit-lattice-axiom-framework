@@ -2,38 +2,42 @@
  "actual_current_surface_status": "bounded-support",
  "all_certificates_pass": true,
  "certificates": {
-  "A_INDEPENDENCE_MEASUREMENT": {
-   "finding": "definition=D[W,t,x](y|n)=indicator that landed deterministic basis-state semantics sends target input x and nearest-neighbor bit n to target output y; the same x is held on the n=0 and n=1 branches; state_resolved_changed=4/20 paired comparisons; changed_pair_configurations=8/40; uniform_self_input_changed=0/10",
+  "A_STATE_RESOLVED_CENSUS": {
+   "finding": "definition=D[W,t,x](y|n)=indicator that landed deterministic basis-state semantics sends target input x and nearest-neighbor bit n to target output y; the same x is held on the n=0 and n=1 branches; state_resolved_changed=4/20 paired comparisons; changed_pair_configurations=8/40",
    "pass": true
   },
-  "B_GATE_CONSTRUCTION": {
+  "B_ONE_CNOT_WITNESS": {
    "finding": "verdict=CONSTRUCTED; word=['CNOT(1->0)']; reads_neighbor_bit=1; D(n=0)=[1, 0]; D(n=1)=[0, 1]; transition_n1=[0, 1]->[1, 1]",
    "pass": true
   },
-  "C_PRICE": {
-   "finding": "price=new gate/coupling/axiom/registered primitive 0/0/0/0; supplied premise=fixed target input x=0; changes=unqualified substrate-wide independence is false while uniform marginal remains 0/10; full covariant M_2(C) law remains open",
+  "C_DECLARED_SCOPE": {
+   "finding": "route=one_cnot_finite_family_witness; family_words=5; contexts=20; supplied_input=fixed target input x=0 on both neighbor branches",
    "pass": true
   },
   "D_CONTROLS": {
-   "finding": "sha_pins={\"docs/MINIMAL_AXIOMS_2026-06-29.md\":\"53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39\",\"scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py\":\"0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4\"}; BLOCKLIST=['docs/MINIMAL_AXIOMS_2026-06-29.md'] text_only=True; determinism_replay=True; runtime_s=0.000617<1400; stdout_upper_bound_bytes=2667<6000<150000; timeout_s=300<1400",
+   "finding": "sha_pins={\"docs/MINIMAL_AXIOMS_2026-06-29.md\":\"53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39\",\"scripts/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.py\":\"7ffe1dd4b169f774dce5bc9db29c5329c6e06c92e02506fbc734916ff11de884\",\"scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py\":\"0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4\"}; BLOCKLIST=['docs/MINIMAL_AXIOMS_2026-06-29.md'] text_only=True; determinism_replay=True; runtime_s=0.000534<1400; stdout_upper_bound_bytes=2531<6000<150000; timeout_s=300<1400",
    "pass": true
   }
  },
  "claim_type": "bounded_theorem",
+ "claim_type_reason": "exact finite two-site basis-menu census plus an explicit one-CNOT neighbor-conditioned witness at supplied target input x=0",
  "controls": {
   "all_inputs_exist_worktree_relative": true,
   "blocklist_cited_primaries": [
    "docs/MINIMAL_AXIOMS_2026-06-29.md"
   ],
   "blocklist_text_only": true,
+  "executable_semantics": "scripts/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.py",
   "executable_substrate": "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
   "landed_axiom_needle_matches": true,
   "literal_audit_input_paths": [
    "docs/MINIMAL_AXIOMS_2026-06-29.md",
-   "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py"
+   "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+   "scripts/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.py"
   ],
   "sha256": {
    "docs/MINIMAL_AXIOMS_2026-06-29.md": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
+   "scripts/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.py": "7ffe1dd4b169f774dce5bc9db29c5329c6e06c92e02506fbc734916ff11de884",
    "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4"
   }
  },
@@ -65,7 +69,6 @@
      1
     ]
    ],
-   "minimal_in_declared_word_length": true,
    "neighbor_bit_read": 1,
    "neighbor_coordinate": [
     1,
@@ -91,43 +94,7 @@
    ],
    "target_mutated_on_neighbor_1": true,
    "target_site": 0,
-   "word_length": 1,
-   "zero_length_changes_distribution": false
-  },
-  "price": {
-   "axiom_ledger": {
-    "Admissibility": "supplies one bounded variation witness; no edit and no all-site covariant law",
-    "Lattice": "uses one supplied nearest-neighbor edge; no edit",
-    "Qubit": "uses the finite basis menu {0,1}; no edit and no claim over full M_2(C)",
-    "Record": "unused; no formation, locking, permanence, or readout claim"
-   },
-   "contradicts": [
-    "an unqualified claim that every operational site-local distribution in the landed Cycle-719 substrate is neighbor-independent"
-   ],
-   "delta": {
-    "new_axioms": 0,
-    "new_couplings": 0,
-    "new_gate_classes": 0,
-    "new_registered_primitives": 0,
-    "supplied_premises": 1
-   },
-   "does_not_supply": [
-    "a fixed translation- and proper-cubic-covariant all-site admissibility rule",
-    "probability measures on the full continuous M_2(C) possibility domain",
-    "formation site, rate, realized draw, or record dynamics"
-   ],
-   "primitive_ledger": {
-    "kinetic_isotropy_primitive": "unused; delta 0",
-    "realized_state_primitive": "not added or changed; supplied basis states remain test inputs",
-    "scale_reference_primitive": "unused; delta 0"
-   },
-   "route": "successful_landed_construction",
-   "scopes": [
-    "uniform-self-input independence remains 0/10",
-    "state-resolved dependence is 4/20",
-    "Cycle-719 controller certificates remain untouched because CNOT is landed machinery"
-   ],
-   "supplied_premise": "the target has the same fixed local input x=0 on both neighbor branches"
+   "word_length": 1
   },
   "resolved": {
    "changed_comparisons": 4,
@@ -567,149 +534,26 @@
     }
    ]
   },
-  "uniform": {
-   "changed_comparisons": 0,
-   "comparison_contexts": 10,
-   "conditioned_configurations": 20,
-   "definition": "Dbar[W,t](y|n)=(D[W,t,0](y|n)+D[W,t,1](y|n))/2",
-   "rows": [
-    {
-     "changed": false,
-     "distribution_neighbor_0": [
-      "1/2",
-      "1/2"
-     ],
-     "distribution_neighbor_1": [
-      "1/2",
-      "1/2"
-     ],
-     "target_site": 0,
-     "word_name": "I"
-    },
-    {
-     "changed": false,
-     "distribution_neighbor_0": [
-      "1/2",
-      "1/2"
-     ],
-     "distribution_neighbor_1": [
-      "1/2",
-      "1/2"
-     ],
-     "target_site": 1,
-     "word_name": "I"
-    },
-    {
-     "changed": false,
-     "distribution_neighbor_0": [
-      "1/2",
-      "1/2"
-     ],
-     "distribution_neighbor_1": [
-      "1/2",
-      "1/2"
-     ],
-     "target_site": 0,
-     "word_name": "X_0"
-    },
-    {
-     "changed": false,
-     "distribution_neighbor_0": [
-      "1/2",
-      "1/2"
-     ],
-     "distribution_neighbor_1": [
-      "1/2",
-      "1/2"
-     ],
-     "target_site": 1,
-     "word_name": "X_0"
-    },
-    {
-     "changed": false,
-     "distribution_neighbor_0": [
-      "1/2",
-      "1/2"
-     ],
-     "distribution_neighbor_1": [
-      "1/2",
-      "1/2"
-     ],
-     "target_site": 0,
-     "word_name": "X_1"
-    },
-    {
-     "changed": false,
-     "distribution_neighbor_0": [
-      "1/2",
-      "1/2"
-     ],
-     "distribution_neighbor_1": [
-      "1/2",
-      "1/2"
-     ],
-     "target_site": 1,
-     "word_name": "X_1"
-    },
-    {
-     "changed": false,
-     "distribution_neighbor_0": [
-      "1/2",
-      "1/2"
-     ],
-     "distribution_neighbor_1": [
-      "1/2",
-      "1/2"
-     ],
-     "target_site": 0,
-     "word_name": "CNOT_0_TO_1"
-    },
-    {
-     "changed": false,
-     "distribution_neighbor_0": [
-      "1/2",
-      "1/2"
-     ],
-     "distribution_neighbor_1": [
-      "1/2",
-      "1/2"
-     ],
-     "target_site": 1,
-     "word_name": "CNOT_0_TO_1"
-    },
-    {
-     "changed": false,
-     "distribution_neighbor_0": [
-      "1/2",
-      "1/2"
-     ],
-     "distribution_neighbor_1": [
-      "1/2",
-      "1/2"
-     ],
-     "target_site": 0,
-     "word_name": "CNOT_1_TO_0"
-    },
-    {
-     "changed": false,
-     "distribution_neighbor_0": [
-      "1/2",
-      "1/2"
-     ],
-     "distribution_neighbor_1": [
-      "1/2",
-      "1/2"
-     ],
-     "target_site": 1,
-     "word_name": "CNOT_1_TO_0"
-    }
+  "scope": {
+   "comparison_contexts": 20,
+   "family_words": 5,
+   "framework_inputs": [
+    "one nearest-neighbor edge",
+    "the two basis possibilities {0,1}",
+    "the Cycle-719 basis-state CNOT semantics"
+   ],
+   "route": "one_cnot_finite_family_witness",
+   "supplied_input": "the target has the same fixed local input x=0 on both neighbor branches",
+   "witness_word": [
+    "CNOT(1->0)"
    ]
   }
  },
  "operational_definition": "D[W,t,x](y|n)=indicator that landed deterministic basis-state semantics sends target input x and nearest-neighbor bit n to target output y; the same x is held on the n=0 and n=1 branches",
  "reachability_to_target": "closes",
- "runtime_sec": 0.000617082929238677,
- "science_digest": "7313ba0844a1e24b56c0b501d130b8ff1ee93285e08cea3dd80fc9c11a30215b",
- "stdout_bytes": 1987,
+ "runtime_sec": 0.0005339590134099126,
+ "science_digest": "ae7f43fcabd6677f42755a14768bb954ca9a5a78b2d4de09ab21168f4e134dde",
+ "stdout_bytes": 1807,
+ "target_claim_type": "bounded_theorem",
  "trace_class": "direct_blocker_closure"
 }

@@ -1652,6 +1652,15 @@ instance or Fourier census.
   fresh-process forced failures each fail exactly one named check.
 - Citation registration is `5,476` nodes / `15,649` edges; the new node has
   out-degree eight and eighteen resolved helper runners.
-- Direct gates, exact stack, changed evidence, commits, delivery, and
-  independent audit remain pending. No canonical axiom, fixed percentage,
-  audit verdict, or `review-loop` is changed.
+- Direct vocabulary, premise-purity, model-normalization, cache, syntax/YAML,
+  whitespace, strict-lint, graph/link/invariant, claim-typing, N1--N8, and
+  canonical-nonmutation gates pass.
+- The exact stack seeds `4,814` rows and classifies `3,692` runners, then
+  reproduces only the inherited stage-7 dependency-policy epoch mismatch. A
+  controlled five-file current-main overlay passes all 18 stages and finalizes
+  checkpoint `2bec67e4c732`.
+- Changed-evidence readiness marks Block 30 alone (`1/1`) and all 30 stacked
+  claims (`30/30`) ready with zero failures and zero control failures.
+- Science commit is `be1781ad26`; push, delivery, and independent audit remain
+  pending. No canonical axiom, fixed percentage, audit verdict, or
+  `review-loop` is changed.

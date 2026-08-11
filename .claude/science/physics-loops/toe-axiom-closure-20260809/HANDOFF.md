@@ -1321,6 +1321,10 @@ Primary cache is `PASS=17 FAIL=0` in `7.3 s`; independent reconstruction is
 named check; graph registration is `5,476/15,649`, with out-degree eight and
 eighteen helpers. Next derive the physical Record-to-full-source compiler and
 selected constraint/curved response, then spatial gluing, the complete Ward
-connection, and Lorentzian stability. Direct conformance, stacked pipeline,
-changed evidence, commits, delivery, and independent audit remain pending. No
-canonical edit, percentage move, audit verdict, or `review-loop` occurs.
+connection, and Lorentzian stability. Direct conformance passes. The exact
+stack reaches only the inherited stage-7 dependency-policy epoch mismatch
+after `4,814` rows / `3,692` runners; the controlled five-file current-main
+overlay passes all 18 stages at checkpoint `2bec67e4c732`. Changed evidence is
+clean for `1/1` Block-30 and `30/30` stacked claims. Science commit is
+`be1781ad26`; delivery and independent audit remain pending. No canonical
+edit, percentage move, audit verdict, or `review-loop` occurs.

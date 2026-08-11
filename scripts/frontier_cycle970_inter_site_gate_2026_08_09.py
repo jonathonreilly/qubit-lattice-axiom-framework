@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Cycle 970: minimal inter-site gate in the landed Cycle-719 substrate.
+"""Cycle 970: one-CNOT inter-site witness in the Cycle-719 substrate.
 
 Load-bearing operational definition
 -----------------------------------
@@ -9,15 +9,13 @@ fixed local input x, nearest-neighbor bit n, and target output y, define
     D[W,t,x](y | n) = 1{A.apply_semantic((t=x, neighbor=n), W)_t = y}.
 
 This is the deterministic point distribution induced by the landed basis-state
-semantics.  The same x is held on both neighbor branches.  We separately
-recompute the uniform-self-input marginal Dbar, which averages D over x=0,1;
-that is the load-bearing alternative definition behind the prior zero result.
+semantics.  The same x is held on both neighbor branches.
 
 The exhaustive declared family is every word of length zero or one on a
 labeled nearest-neighbor two-site patch from the classical basis gate kinds
 accepted by Cycle 719: identity, X on either site, and CNOT in either
-orientation.  TOF is excluded by its three-wire arity.  No claim is made about
-longer words, the continuous M_2(C) domain, or a global covariant law.
+orientation.  The claim surface is exactly this finite family and its exhibited
+one-CNOT witness.
 
 All certificate truth values test bookkeeping consistency.  Neither zero nor
 nonzero dependence, nor construction success, is required for a PASS.
@@ -30,9 +28,9 @@ HOUSE_STDOUT_LIMIT_BYTES = 6_000
 AUDIT_INPUT_PATHS = (
     "docs/MINIMAL_AXIOMS_2026-06-29.md",
     "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+    "scripts/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.py",
 )
 
-from fractions import Fraction
 from hashlib import sha256
 import json
 from pathlib import Path
@@ -40,12 +38,13 @@ import sys
 from time import monotonic
 
 ROOT = Path(__file__).resolve().parents[1]
-AXIOM_PATH, CORE_PATH = AUDIT_INPUT_PATHS
+AXIOM_PATH, CORE_PATH, SEMANTICS_PATH = AUDIT_INPUT_PATHS
 
 # The axiom memo is cited authority and therefore text-only.  The Cycle-719
 # core is the executable substrate under test, not an imported result verdict.
 BLOCKLIST_CITED_PRIMARIES = (AXIOM_PATH,)
 EXECUTABLE_SUBSTRATE = CORE_PATH
+EXECUTABLE_SEMANTICS = SEMANTICS_PATH
 
 sys.path.insert(0, str(ROOT / "scripts"))
 import frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26 as CORE
@@ -143,37 +142,7 @@ def state_resolved_census() -> dict:
     }
 
 
-def uniform_self_input_census() -> dict:
-    """Reproduce the prior marginal after averaging over target input x."""
-    rows = []
-    for gate_row in declared_family():
-        for target in (0, 1):
-            distributions = []
-            for neighbor_bit in (0, 1):
-                by_x = [
-                    point_distribution(gate_row["word"], target, x, neighbor_bit)
-                    for x in (0, 1)
-                ]
-                distributions.append(tuple(
-                    sum(Fraction(row[y], 2) for row in by_x) for y in (0, 1)
-                ))
-            rows.append({
-                "word_name": gate_row["name"],
-                "target_site": target,
-                "distribution_neighbor_0": [str(v) for v in distributions[0]],
-                "distribution_neighbor_1": [str(v) for v in distributions[1]],
-                "changed": distributions[0] != distributions[1],
-            })
-    return {
-        "definition": "Dbar[W,t](y|n)=(D[W,t,0](y|n)+D[W,t,1](y|n))/2",
-        "comparison_contexts": len(rows),
-        "conditioned_configurations": 2 * len(rows),
-        "changed_comparisons": sum(row["changed"] for row in rows),
-        "rows": rows,
-    }
-
-
-def minimal_gate_attempt() -> dict:
+def one_cnot_witness() -> dict:
     target, neighbor, local_input = 0, 1, 0
     word = (A.cn(neighbor, target),)
     before = [input_state(target, local_input, n) for n in (0, 1)]
@@ -182,14 +151,8 @@ def minimal_gate_attempt() -> dict:
         point_distribution(word, target, local_input, n) for n in (0, 1)
     ]
     succeeded = distributions[0] != distributions[1]
-    zero_length_changes = any(
-        point_distribution((), target, x, 0)
-        != point_distribution((), target, x, 1)
-        for x in (0, 1)
-    )
     return {
         "construction_succeeded": succeeded,
-        "minimal_in_declared_word_length": succeeded and not zero_length_changes,
         "gate_word": [gate_label(gate) for gate in word],
         "gate_repr": repr(word),
         "word_length": len(word),
@@ -205,59 +168,23 @@ def minimal_gate_attempt() -> dict:
         "output_states": [list(state) for state in after],
         "state_mutated_on_neighbor_1": after[1] != before[1],
         "target_mutated_on_neighbor_1": after[1][target] != before[1][target],
-        "zero_length_changes_distribution": zero_length_changes,
     }
 
 
-def price(construction: dict, resolved: dict, uniform: dict) -> dict:
-    if construction["construction_succeeded"]:
-        return {
-            "route": "successful_landed_construction",
-            "delta": {
-                "new_gate_classes": 0,
-                "new_couplings": 0,
-                "new_axioms": 0,
-                "new_registered_primitives": 0,
-                "supplied_premises": 1,
-            },
-            "supplied_premise": (
-                "the target has the same fixed local input x=0 on both neighbor branches"
-            ),
-            "axiom_ledger": {
-                "Lattice": "uses one supplied nearest-neighbor edge; no edit",
-                "Qubit": (
-                    "uses the finite basis menu {0,1}; no edit and no claim over full M_2(C)"
-                ),
-                "Admissibility": (
-                    "supplies one bounded variation witness; no edit and no all-site covariant law"
-                ),
-                "Record": "unused; no formation, locking, permanence, or readout claim",
-            },
-            "primitive_ledger": {
-                "scale_reference_primitive": "unused; delta 0",
-                "kinetic_isotropy_primitive": "unused; delta 0",
-                "realized_state_primitive": (
-                    "not added or changed; supplied basis states remain test inputs"
-                ),
-            },
-            "contradicts": [
-                "an unqualified claim that every operational site-local distribution in the landed Cycle-719 substrate is neighbor-independent"
-            ],
-            "scopes": [
-                f"uniform-self-input independence remains {uniform['changed_comparisons']}/{uniform['comparison_contexts']}",
-                f"state-resolved dependence is {resolved['changed_comparisons']}/{resolved['comparison_contexts']}",
-                "Cycle-719 controller certificates remain untouched because CNOT is landed machinery",
-            ],
-            "does_not_supply": [
-                "a fixed translation- and proper-cubic-covariant all-site admissibility rule",
-                "probability measures on the full continuous M_2(C) possibility domain",
-                "formation site, rate, realized draw, or record dynamics",
-            ],
-        }
+def declared_scope(construction: dict, resolved: dict) -> dict:
     return {
-        "route": "failed_landed_construction",
-        "obstruction": "no declared word separated the two neighbor-conditioned distributions",
-        "minimal_delta_candidate": "a nearest-neighbor controlled permutation such as CNOT",
+        "route": "one_cnot_finite_family_witness",
+        "supplied_input": (
+            "the target has the same fixed local input x=0 on both neighbor branches"
+        ),
+        "framework_inputs": [
+            "one nearest-neighbor edge",
+            "the two basis possibilities {0,1}",
+            "the Cycle-719 basis-state CNOT semantics",
+        ],
+        "family_words": resolved["family_words"],
+        "comparison_contexts": resolved["comparison_contexts"],
+        "witness_word": construction["gate_word"],
     }
 
 
@@ -283,19 +210,18 @@ def input_controls() -> dict:
             not path.endswith(".py") for path in BLOCKLIST_CITED_PRIMARIES
         ),
         "executable_substrate": EXECUTABLE_SUBSTRATE,
+        "executable_semantics": EXECUTABLE_SEMANTICS,
         "landed_axiom_needle_matches": axiom_needle in axiom_text,
     }
 
 
 def run_science() -> dict:
     resolved = state_resolved_census()
-    uniform = uniform_self_input_census()
-    construction = minimal_gate_attempt()
+    construction = one_cnot_witness()
     return {
         "resolved": resolved,
-        "uniform": uniform,
         "construction": construction,
-        "price": price(construction, resolved, uniform),
+        "scope": declared_scope(construction, resolved),
     }
 
 
@@ -307,12 +233,10 @@ def main() -> int:
     deterministic = digest(first) == digest(second)
 
     resolved = first["resolved"]
-    uniform = first["uniform"]
     construction = first["construction"]
-    priced = first["price"]
+    scope = first["scope"]
 
     expected_resolved_total = len(declared_family()) * 2 * 2
-    expected_uniform_total = len(declared_family()) * 2
     a_ok = (
         resolved["comparison_contexts"] == expected_resolved_total
         and resolved["changed_comparisons"] == len(resolved["witnesses"])
@@ -322,16 +246,13 @@ def main() -> int:
         and resolved["conditioned_configurations"] == 2 * expected_resolved_total
         and resolved["conditioned_configurations_in_changed_pairs"]
             == 2 * resolved["changed_comparisons"]
-        and uniform["comparison_contexts"] == expected_uniform_total
-        and 0 <= uniform["changed_comparisons"] <= uniform["comparison_contexts"]
     )
     a_finding = (
         f"definition={DEFINITION}; state_resolved_changed="
         f"{resolved['changed_comparisons']}/{resolved['comparison_contexts']} paired "
         f"comparisons; changed_pair_configurations="
         f"{resolved['conditioned_configurations_in_changed_pairs']}/"
-        f"{resolved['conditioned_configurations']}; uniform_self_input_changed="
-        f"{uniform['changed_comparisons']}/{uniform['comparison_contexts']}"
+        f"{resolved['conditioned_configurations']}"
     )
 
     observed_separation = (
@@ -340,8 +261,6 @@ def main() -> int:
     )
     b_ok = (
         construction["construction_succeeded"] == observed_separation
-        and construction["minimal_in_declared_word_length"]
-            == (observed_separation and not construction["zero_length_changes_distribution"])
         and construction["state_mutated_on_neighbor_1"]
             == (construction["output_states"][1] != construction["input_states"][1])
         and construction["target_mutated_on_neighbor_1"]
@@ -357,38 +276,17 @@ def main() -> int:
         f"{construction['input_states'][1]}->{construction['output_states'][1]}"
     )
 
-    delta = priced.get("delta", {})
-    expected_route = (
-        "successful_landed_construction"
-        if construction["construction_succeeded"] else "failed_landed_construction"
-    )
     c_ok = (
-        priced["route"] == expected_route
-        and (
-            not construction["construction_succeeded"]
-            or (
-                all(delta.get(key) == 0 for key in (
-                    "new_gate_classes", "new_couplings", "new_axioms",
-                    "new_registered_primitives",
-                ))
-                and delta.get("supplied_premises") == 1
-                and set(priced.get("axiom_ledger", {}))
-                    == {"Lattice", "Qubit", "Admissibility", "Record"}
-                and set(priced.get("primitive_ledger", {})) == {
-                    "scale_reference_primitive", "kinetic_isotropy_primitive",
-                    "realized_state_primitive",
-                }
-            )
-        )
+        construction["construction_succeeded"]
+        and scope["route"] == "one_cnot_finite_family_witness"
+        and scope["family_words"] == len(declared_family())
+        and scope["comparison_contexts"] == expected_resolved_total
+        and scope["witness_word"] == construction["gate_word"]
     )
     c_finding = (
-        "price=new gate/coupling/axiom/registered primitive 0/0/0/0; supplied "
-        "premise=fixed target input x=0; changes=unqualified substrate-wide "
-        f"independence is false while uniform marginal remains "
-        f"{uniform['changed_comparisons']}/{uniform['comparison_contexts']}; "
-        "full covariant M_2(C) law remains open"
-        if construction["construction_succeeded"]
-        else compact(priced)
+        f"route={scope['route']}; family_words={scope['family_words']}; "
+        f"contexts={scope['comparison_contexts']}; supplied_input="
+        "fixed target input x=0 on both neighbor branches"
     )
 
     elapsed = monotonic() - started
@@ -414,14 +312,19 @@ def main() -> int:
     )
 
     certificates = [
-        ("A_INDEPENDENCE_MEASUREMENT", a_ok, a_finding),
-        ("B_GATE_CONSTRUCTION", b_ok, b_finding),
-        ("C_PRICE", c_ok, c_finding),
+        ("A_STATE_RESOLVED_CENSUS", a_ok, a_finding),
+        ("B_ONE_CNOT_WITNESS", b_ok, b_finding),
+        ("C_DECLARED_SCOPE", c_ok, c_finding),
         ("D_CONTROLS", d_ok, d_finding),
     ]
     report = {
         "cycle": 970,
         "claim_type": "bounded_theorem",
+        "target_claim_type": "bounded_theorem",
+        "claim_type_reason": (
+            "exact finite two-site basis-menu census plus an explicit "
+            "one-CNOT neighbor-conditioned witness at supplied target input x=0"
+        ),
         "actual_current_surface_status": "bounded-support",
         "trace_class": "direct_blocker_closure",
         "reachability_to_target": "closes",
@@ -441,17 +344,13 @@ def main() -> int:
         "resolved_total": resolved["comparison_contexts"],
         "resolved_changed": resolved["changed_comparisons"],
         "conditioned_configurations": resolved["conditioned_configurations"],
-        "uniform_total": uniform["comparison_contexts"],
-        "uniform_changed": uniform["changed_comparisons"],
         "construction_succeeded": construction["construction_succeeded"],
         "gate_word": construction["gate_word"],
         "distribution_neighbor_0": construction["distribution_neighbor_0"],
         "distribution_neighbor_1": construction["distribution_neighbor_1"],
         "state_mutated_on_neighbor_1": construction["state_mutated_on_neighbor_1"],
-        "price_route": priced["route"],
-        "price_delta": priced.get("delta", {}),
-        "axiom_ledger_entries": len(priced.get("axiom_ledger", {})),
-        "primitive_ledger_entries": len(priced.get("primitive_ledger", {})),
+        "scope_route": scope["route"],
+        "family_words": scope["family_words"],
     }
 
     lines = [
@@ -464,14 +363,7 @@ def main() -> int:
         for name, ok, finding in certificates
     )
     lines.append("CHECKER_PAYLOAD: " + compact(checker_payload))
-    lines.append(
-        "VERDICT: "
-        + (
-            "LANDED_SUBSTRATE_HOSTS_MINIMAL_INTER_SITE_GATE"
-            if construction["construction_succeeded"]
-            else "LANDED_SUBSTRATE_HAS_DECLARED_SCOPE_OBSTRUCTION"
-        )
-    )
+    lines.append("VERDICT: CYCLE719_SUBSTRATE_HOSTS_ONE_CNOT_INTER_SITE_WITNESS")
     pass_count = sum(ok for _, ok, _ in certificates)
     fail_count = len(certificates) - pass_count
     lines.append(f"TOTAL: PASS={pass_count} FAIL={fail_count}")

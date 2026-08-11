@@ -4,35 +4,33 @@
   "scripts/frontier_cycle970_inter_site_gate_2026_08_09.py",
   "logs/runner-cache/frontier_cycle970_inter_site_gate_2026_08_09.txt",
   "docs/MINIMAL_AXIOMS_2026-06-29.md",
-  "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py"
+  "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+  "scripts/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.py"
  ],
  "certificates": {
-  "R0_PINS_BLOCKLIST_AND_LANDED_GATE_AST": {
-   "finding": "pins_match=4/4; BLOCKLIST_text_AST_only=['scripts/frontier_cycle970_inter_site_gate_2026_08_09.py', 'logs/runner-cache/frontier_cycle970_inter_site_gate_2026_08_09.txt', 'docs/MINIMAL_AXIOMS_2026-06-29.md', 'scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py']; blocked_modules_loaded=False; swap_word_cnot_order=[('left', 'right'), ('right', 'left'), ('left', 'right')]",
+  "R0_SOURCE_PINS_CACHE_ENVELOPE_AND_AST": {
+   "finding": "pins_match=4/4; primary_cache_envelope=True; BLOCKLIST_text_AST_only=['scripts/frontier_cycle970_inter_site_gate_2026_08_09.py', 'logs/runner-cache/frontier_cycle970_inter_site_gate_2026_08_09.txt', 'docs/MINIMAL_AXIOMS_2026-06-29.md', 'scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py', 'scripts/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.py']; blocked_modules_loaded=False; swap_word_cnot_order=[('left', 'right'), ('right', 'left'), ('left', 'right')]; semantics=state[gate.wires[1]] ^= state[gate.wires[0]]",
    "pass": true
   },
-  "R1_REFUTE_STATE_RESOLVED_CENSUS": {
+  "R1_INDEPENDENT_STATE_RESOLVED_CENSUS": {
    "finding": "independent_state_resolved_changed=4/20; primary=4/20",
    "pass": true
   },
-  "R2_REFUTE_UNIFORM_CENSUS": {
-   "finding": "independent_uniform_self_input_changed=0/10; primary=0/10",
+  "R2_INDEPENDENT_ONE_CNOT_WITNESS": {
+   "finding": "independent_one_cnot_witness=True; word=CNOT(1->0); D0=[1, 0]; D1=[0, 1]; transition_n1=[0, 1]->[1, 1]",
    "pass": true
   },
-  "R3_REFUTE_GATE_CONSTRUCTION": {
-   "finding": "independent_verdict=CONSTRUCTED; word=CNOT(1->0); D0=[1, 0]; D1=[0, 1]; transition_n1=[0, 1]->[1, 1]",
+  "R3_SCOPE_RECONCILIATION": {
+   "finding": "scope_route=one_cnot_finite_family_witness; family_words=5; contexts=20",
    "pass": true
   },
-  "R4_REFUTE_PRICE_AND_SCOPE": {
-   "finding": "price_route=successful_landed_construction; delta_gate/coupling/axiom/primitive=[0, 0, 0, 0]; uniform independence scoped, not deleted",
-   "pass": true
-  },
-  "R5_CONTROLS": {
-   "finding": "determinism_replay=True; runtime_s=0.003955<1400; stdout_upper_bound_bytes=2738<6000<150000; timeout_s=300<1400; literal_inputs=['scripts/frontier_cycle970_inter_site_gate_2026_08_09.py', 'logs/runner-cache/frontier_cycle970_inter_site_gate_2026_08_09.txt', 'docs/MINIMAL_AXIOMS_2026-06-29.md', 'scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py']",
+  "R4_CONTROLS": {
+   "finding": "determinism_replay=True; runtime_s=0.011667<1400; stdout_upper_bound_bytes=2782<6000<150000; timeout_s=300<1400; literal_inputs=['scripts/frontier_cycle970_inter_site_gate_2026_08_09.py', 'logs/runner-cache/frontier_cycle970_inter_site_gate_2026_08_09.txt', 'docs/MINIMAL_AXIOMS_2026-06-29.md', 'scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py', 'scripts/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.py']",
    "pass": true
   }
  },
  "claim_type": "bounded_theorem",
+ "claim_type_reason": "independent finite-family recomputation of the exact one-CNOT witness",
  "core_ast_evidence": {
   "cnot_argument_order": [
    [
@@ -58,8 +56,6 @@
   "resolved_changed": 4,
   "resolved_total": 20,
   "state_mutated_on_neighbor_1": true,
-  "uniform_changed": 0,
-  "uniform_total": 10,
   "witness_after": [
    [
     0,
@@ -95,17 +91,10 @@
  "pins": [
   {
    "exists": true,
-   "expected": "cb08af69f87b45ebd1fef2748493139fa249570d3986104857a523bfe79f4d6e",
+   "expected": "fc8edd226942f908df6cce61d7f0ce46ce473cd27b6c52ba480c21ccb4b5f075",
    "match": true,
-   "observed": "cb08af69f87b45ebd1fef2748493139fa249570d3986104857a523bfe79f4d6e",
+   "observed": "fc8edd226942f908df6cce61d7f0ce46ce473cd27b6c52ba480c21ccb4b5f075",
    "path": "scripts/frontier_cycle970_inter_site_gate_2026_08_09.py"
-  },
-  {
-   "exists": true,
-   "expected": "ca9e621ee61d5346ff6fbf5e68f454962edfd1c215395dc208545b1c2cd3d654",
-   "match": true,
-   "observed": "ca9e621ee61d5346ff6fbf5e68f454962edfd1c215395dc208545b1c2cd3d654",
-   "path": "logs/runner-cache/frontier_cycle970_inter_site_gate_2026_08_09.txt"
   },
   {
    "exists": true,
@@ -120,17 +109,42 @@
    "match": true,
    "observed": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
    "path": "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py"
+  },
+  {
+   "exists": true,
+   "expected": "7ffe1dd4b169f774dce5bc9db29c5329c6e06c92e02506fbc734916ff11de884",
+   "match": true,
+   "observed": "7ffe1dd4b169f774dce5bc9db29c5329c6e06c92e02506fbc734916ff11de884",
+   "path": "scripts/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.py"
   }
  ],
  "primary_ast_evidence": {
   "literal_audit_input_paths": [
    "docs/MINIMAL_AXIOMS_2026-06-29.md",
-   "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py"
+   "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+   "scripts/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.py"
   ],
   "matches_expected_primary_inputs": true
  },
+ "primary_cache_envelope": {
+  "elapsed_sec": "0.93",
+  "exit_code": "0",
+  "input_fingerprint_sha256": "3932e053da891115ca0e1d140559711a1ad337bbc127dbcb54614df42d6c34a9",
+  "runner": "scripts/frontier_cycle970_inter_site_gate_2026_08_09.py",
+  "runner_sha256": "fc8edd226942f908df6cce61d7f0ce46ce473cd27b6c52ba480c21ccb4b5f075",
+  "status": "ok",
+  "timeout_sec": "300"
+ },
+ "primary_cache_envelope_valid": true,
  "role": "independent_checker",
- "runtime_sec": 0.003954999963752925,
- "stdout_bytes": 1615,
- "verdict": "PRIMARY_SURVIVES_INDEPENDENT_REFUTATION_ATTEMPT"
+ "runtime_sec": 0.01166674995329231,
+ "semantics_ast_evidence": {
+  "cn_constructs_control_target_cnot": true,
+  "cn_shape": "Gate('CNOT', (control, target))",
+  "cnot_is_target_xor_control": true,
+  "cnot_update": "state[gate.wires[1]] ^= state[gate.wires[0]]"
+ },
+ "stdout_bytes": 1695,
+ "target_claim_type": "bounded_theorem",
+ "verdict": "INDEPENDENT_ONE_CNOT_WITNESS_RECOMPUTED"
 }

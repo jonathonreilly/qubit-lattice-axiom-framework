@@ -713,5 +713,9 @@ complete conditional nonlinear compact solution:
   independent reconstruction `PASS=5 FAIL=0`; nineteen isolated fresh-process
   forced failures each trip exactly one named check; graph registration
   `5,478/15,656`, out-degree two, with twenty resolved helpers; direct
-  conformance, stacked pipeline, changed evidence, commits, delivery, and
-  independent audit pending
+  gates pass; the exact stack reaches only the inherited stage-7 dependency-
+  policy epoch mismatch after `4,816` rows / `3,694` runners; the controlled
+  five-file current-main overlay passes all 18 stages at checkpoint
+  `034e0d8dc99c`; changed evidence is clean for `1/1` Block-32 and `32/32`
+  stacked claims; science commit `94cc6283d2`; delivery and independent audit
+  remain pending

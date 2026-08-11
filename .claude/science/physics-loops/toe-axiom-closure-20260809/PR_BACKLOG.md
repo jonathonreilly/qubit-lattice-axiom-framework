@@ -611,6 +611,10 @@ compact-versus-metric response control. Primary source/input-pinned cache is
 `PASS=19 FAIL=0` in `6.6 s`; independent reconstruction is `PASS=5 FAIL=0`;
 all nineteen isolated forced-false runs fail one named check. Graph
 registration is `5,478/15,656`, with out-degree two and twenty helpers. Direct
-conformance, exact stack, changed evidence, commits, PR, and independent audit
-are pending. No canonical edit, percentage move, audit verdict, or
-`review-loop` is used.
+conformance passes. The exact stack reaches only the inherited stage-7
+dependency-policy epoch mismatch after `4,816` rows / `3,694` runners; the
+controlled five-file current-main overlay passes all 18 stages at checkpoint
+`034e0d8dc99c`. Changed evidence is clean for `1/1` Block-32 and `32/32`
+stacked claims. Science commit is `94cc6283d2`; PR and independent audit are
+pending. No canonical edit, percentage move, audit verdict, or `review-loop`
+is used.

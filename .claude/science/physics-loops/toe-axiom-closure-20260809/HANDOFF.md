@@ -1659,7 +1659,12 @@ exactly on Block-40 delivery head `82d943665a`. The theorem note, primary
 runner, and fresh source/input-pinned cache are present. Primary cache is
 `PASS=19 FAIL=0` in `1.10 s`; an independent runner-free reconstruction is
 `PASS=6 FAIL=0`. Citation registration is `5,487/15,683`, out-degree four.
-Direct conformance, commit, pipeline, push, and delivery remain pending.
+Direct repository conformance passes. The exact stack seeds `4,825` rows /
+`3,703` runners and stops only at the inherited stage-7 policy epoch; the
+controlled current-main overlay passes all 18 stages at checkpoint
+`ced22efa9508`. Changed evidence is clean for Block 41 (`1/1`) and the full
+stack (`41/41`), with zero failures or controls. Science commit is
+`3bff293e6e`; campaign conformance, push, and delivery remain pending.
 
 The significant gain is a sharp gravity-route localization. Exact local
 derivatives and volume-uniform covariance control leave positive zero-momentum

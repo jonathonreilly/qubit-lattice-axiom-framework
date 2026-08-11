@@ -1401,6 +1401,12 @@ lines are in the landing primary cache.
 - Runner/cache: source/input pinned, `PASS=19 FAIL=0` in `1.10 s`; independent
   runner-free reconstruction is `PASS=6 FAIL=0`.
 - Citation registration: `5,487` nodes / `15,683` edges, note out-degree four.
+- Pipeline/evidence: direct gates pass; the exact stack seeds `4,825` rows /
+  `3,703` runners and reaches only the inherited stage-7 dependency-policy
+  mismatch; the controlled current-main overlay passes all 18 stages at
+  checkpoint `ced22efa9508`. Changed evidence is clean for `1/1` Block-41 and
+  `41/41` stacked claims, with zero failures or controls. Science commit is
+  `3bff293e6e`; independent audit remains required.
 - Scope: this retires only the unchanged regular flat-phase route to a
   massless Einstein/Regge spin-two symbol. Singular connection, relational or
   derivative law repair, nonflat phase, continuous joint geometry, physical

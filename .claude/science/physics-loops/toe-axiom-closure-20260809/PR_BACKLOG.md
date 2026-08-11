@@ -602,9 +602,15 @@ Dobrushin--Poincare covariance control, zero uniform Gram/link mixed block,
 and the regular-connection Schur boundary. Primary cache is
 `PASS=19 FAIL=0` in `1.10 s` with 4,268 stdout characters; independent
 runner-free reconstruction is `PASS=6 FAIL=0`. Citation registration is
-`5,487/15,683`, out-degree four. Direct conformance, science commit, pipeline,
-push, and stacked PR remain pending. Independent audit remains required. No
-canonical edit, percentage move, audit verdict, or `review-loop` is used.
+`5,487/15,683`, out-degree four, and direct repository conformance passes.
+Science/campaign commit separation is preserved at science commit
+`3bff293e6e`. The exact stack reconstructs `4,825` rows / `3,703` runners and
+stops only at the inherited stage-7 policy epoch; the controlled current-main
+overlay passes all 18 stages at checkpoint `ced22efa9508`. Changed evidence is
+clean for `1/1` Block-41 and `41/41` stacked claims, with zero failures or
+controls. Campaign conformance, push, and stacked PR remain pending.
+Independent audit remains required. No canonical edit, percentage move,
+audit verdict, or `review-loop` is used.
 
 Block 40 is local on branch
 `physics-loop/toe-axiom-closure-block40-vacuum-ward-20260811`, stacked exactly

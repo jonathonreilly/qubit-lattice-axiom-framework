@@ -1006,6 +1006,12 @@ complete conditional nonlinear compact solution:
   live
 - current evidence: fresh cache `PASS=19 FAIL=0` in `1.10 s`, stdout 4,268
   characters; independent runner-free reconstruction `PASS=6 FAIL=0`.
-  Citation registration is `5,487/15,683`, out-degree four. Direct gates,
-  science commit, pipeline, push, and stacked PR remain pending. No canonical
-  edit, fixed percentage move, audit verdict, or `review-loop` occurs.
+  Citation registration is `5,487/15,683`, out-degree four. Direct repository
+  gates pass. The exact stack seeds `4,825` rows / `3,703` runners and reaches
+  only the inherited stage-7 dependency-policy epoch mismatch; the controlled
+  five-file current-main overlay passes all 18 stages at checkpoint
+  `ced22efa9508`. Changed evidence is clean for Block 41 alone (`1/1`) and all
+  41 stacked claims (`41/41`), with zero failures and zero control failures.
+  Science commit is `3bff293e6e`; campaign conformance, push, and stacked PR
+  remain pending. No canonical edit, fixed percentage move, audit verdict, or
+  `review-loop` occurs.

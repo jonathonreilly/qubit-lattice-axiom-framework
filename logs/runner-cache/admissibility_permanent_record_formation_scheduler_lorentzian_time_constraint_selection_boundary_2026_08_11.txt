@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_permanent_record_formation_scheduler_lorentzian_time_constraint_selection_boundary_2026_08_11.py
+runner_sha256: 44651df981af4d8ee17018f39ed72343a54348e4764a58c7d8154461f6ac9dac
+input_fingerprint_sha256: 2c8a8cbe79c1ad21ea39d4c5f048b1356c96f3972419a33869aa2edfd8f2f1c8
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 3.23
+status: ok
+----- stdout -----
+[PASS] source-and-scope-bindings: the current axiom and two constructive parents are bound without importing a physical up...
+[PASS] fixed-content-rule-covariance: one exact binary M2 subalphabet rule is normalized on all neighbour conditions and prope...
+       neighbour environments=729; proper rotations=24
+[PASS] monotone-permanent-record-kernels: two normalized kernels use the identical content rule and never erase or overwrite a for...
+       q_slow=1/3; q_fast=2/3
+[PASS] formation-rate-nonselection: the same admissible content distribution permits distinct covariant formation probabilit...
+       E[new]=7/3,14/3; P[none]=128/2187,1/2187
+[PASS] formation-scheduler-completions: parallel and random-orientation sequential formation are normalized and preserve endpoin...
+       parallel entries=1/4; sequential same/different entries=2/5,1/10
+[PASS] precedence-and-correlation-nonselection: the two symmetric schedulers have equal one-site marginals but different precedence and ...
+       correlation=0,3/5; precedence=simultaneous versus ordered
+[PASS] block44-baseline-retention: the inherited conditional operator retains four gauge plus two TT shell nulls and the un...
+       rank=4; h_tt=2.000000000000; residual=4.041e-16
+[PASS] einstein-time-normalization-family: three gauge-consistent Einstein completions share the static operator but select differe...
+       TT kinetic=[0.062499999999999986, 0.24999999999999994, 0.9999999999999998]; coordinate speeds=[2.0, 1.0, 0.5]
+[PASS] spatial-cubic-covariance: all time-normalized and constraint-breaking completions preserve the supplied proper-cub...
+       max operator error=5.551e-17; projector error=0.000e+00
+[PASS] constraint-preservation-nonselection: a static-identical spatially covariant completion makes lapse/shift kinetic and removes ...
+       time-row kinetic=0.250; rank=8; gauge residual=0.500
+[PASS] three-independent-selection-walls: formation probability, Einstein clock scale, and multiplier kinetic status are locally i...
+       observable Jacobian diag=(1,1/2,1), rank=3
+[PASS] candidate-axiom-interface-boundary: the note states one sufficient unadopted Admissibility-Record composition interface with...
+[PASS] fresh-no-go-discipline-packet: the bounded non-entailment passes N1 through N8 while preserving constructive dynamics r...
+N5_CERTIFICATE: all 729 six-neighbour binary/empty conditions, 24 proper rotations, two monotone rates, two symmetric schedulers, three Einstein clock scales, and one constraint-breaking completion are resolved
+per_element: checked empty and both central binary Record contents plus all ten metric coordinates
+per_site: checked every six-neighbour condition and both permanent local transition kernels
+per_mode: checked static, kinetic, null-shell, generic off-shell, four gauge, and two TT probes
+per_block: checked formation-rate, precedence, time-normalization, and multiplier-constraint blocks
+lattice_wide: local covariance is exact but no full-Z3 production process, finite-frequency edge theorem, or nonlinear constraint propagation is claimed
+scope_boundary: bounded current-axiom underdetermination and a sufficient unadopted interface; not gravity failure, axiom necessity, minimality, or adoption
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

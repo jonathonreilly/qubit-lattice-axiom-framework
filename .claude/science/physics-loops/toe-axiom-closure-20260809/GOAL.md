@@ -1048,3 +1048,30 @@ balanced by a compact reaction or curves/opens the geometry, then supply the
 interacting joint law, full Ward connection, and Lorentzian update. Those can
 remain downstream if derived; no fifth axiom is proved necessary. No canonical
 axiom or fixed percentage is changed.
+
+## Block 32 Target And Disposition
+
+Block 32 asks whether adding genuine shared-edge interaction and exact spatial
+restriction selects the Record score or the compact-versus-metric gravity
+phase left open by Block 31.
+
+The constructive answer is exact but bounded. Two positive sixteen-state laws
+on a four-site spatial cycle have local neighbour-dependent full conditionals,
+nontrivial interaction cross-ratios, and exact laws on every subset. The
+interaction leaves the actual-edge source derivative and positive rank-one
+stress compiler unchanged.
+
+The restriction law exposes a new load-bearing distinction: marginalizing
+interior Records preserves probability exactly but induces correlation between
+opposite retained sites. Same-form local gluing therefore needs permanent
+boundary messages or one selected global law. Record permanence can carry the
+message; current axioms do not supply its values or fixed point.
+
+Conditional Record laws can distinguish supplied geometry sectors, yet
+positive sector multipliers freely change phase odds. The same sources also
+admit both compact reaction and unconstrained metric-response controls. Thus
+locality, covariance, projectivity, and solvability do not select the physical
+law or response phase. The next target is the overlapping-region transfer
+fixed point and its complete nonuniform Ward connection, followed by
+Lorentzian evolution. No fifth axiom is proved necessary. No canonical axiom
+or fixed percentage is changed.

@@ -663,3 +663,20 @@ but the physical source and reaction laws remain the load-bearing choice.
 
 Generic compact solvability is no longer the wall. The live decision is what
 the selected interacting law does with the now-typed metric stress.
+
+## Block 32 Interacting Gluing / Phase-Response Route Comparison
+
+| Route | Exact object | Outcome | Decision |
+|---|---|---|---|
+| interacting finite-parent Record law | two positive Potts-type laws on one four-site cycle | exact neighbour-dependent conditionals and cross-ratios `4/9` | retain as a genuine interaction witness; do not select either law |
+| exact subset marginals | every subset of the fixed parent | all 19,652 one-site restrictions per sector pass | retain as finite-parent projectivity, not arbitrary-overlap closure |
+| same-form induced-subgraph law | delete the two intervening sites | opposite retained sites remain correlated | reject silent deletion stability; require a boundary message or global law |
+| conditional geometry discriminator | two supplied sector laws | positive total variation `0.124707013` | retain as distinguishability, not phase selection |
+| sector multiplier | positive whole-sector weights | changes phase odds from one to seven with unchanged conditionals | identify joint geometry odds as separate law content |
+| compact reaction | inherited rank-25 KKT system | solves all 3,876 interacting-history sources | retain as one conditional response branch |
+| metric-response control | repaired operator plus positive metric projector | full rank and solves the same sources without reaction | retain as a branch discriminator, not a curved/open action |
+| boundary transfer plus Ward law | one selected overlapping-region fixed point and nonuniform same-action response | not constructed | highest-priority gravity/axiom-interface target |
+| Lorentzian update | causal permanent-Record transfer and physical quotient stability | not constructed | required physical endpoint |
+
+Finite-parent interaction is no longer the wall. The selected global boundary
+transfer and its geometry odds/Ward connection are now the indivisible target.

@@ -1,0 +1,58 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_interacting_record_spatial_gluing_phase_response_selection_boundary_2026_08_10.py
+runner_sha256: 488fe7a3fe2d59f99dad075d29ce1b1393d5f2f8f6e8c02b440d05d8ae8f35b1
+input_fingerprint_sha256: c64c9299204b2a9941846ce58b1ebe626920bf1a9fb06e6f8d4f63c4b2a25601
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 6.63
+status: ok
+----- stdout -----
+external_scientific_inputs: none; both interacting laws, finite-region marginals, and response controls are repository-local
+analytic_boundary: probability and restriction claims are exact on one four-site cycle; response solves use double precision on the inherited compact carrier
+physical_boundary: the score values, action unit, phase prior, geometry coefficient, boundary-message law, Ward connection, and Lorentzian update remain unselected
+[PASS] axiom-and-parent-boundary: Admissibility requires neighbour-dependent distributions but does not specify their values, while Block 31 supplies only a noninteracting conditional compiler
+[PASS] note-contract: the note separates interacting finite-parent gluing from lattice-wide law and phase selection and carries N1--N8
+[PASS] positive-exact-interacting-joint-laws: both supplied four-site laws are strictly positive and normalized on all sixteen Record states
+       partitions=[25972576, 81334656]; minimum numerator=81; normalization failures=0
+[PASS] exact-interacting-finite-region-projectivity: every subset marginal agrees under every one-site deletion for both interacting geometry sectors
+       probabilities per phase={83521}; restrictions per phase={19652}; failures=0
+[PASS] nearest-neighbour-full-conditionals: each exact full conditional depends only on the two graph neighbours and varies with their Records
+       factorization failures=0; minimum conditional variation=0.178113
+[PASS] genuine-shared-edge-interaction: adjacent conditional cross-ratios equal rho squared and are nontrivial in both sectors
+       adjacent cross-ratios=[Fraction(4, 1), Fraction(9, 1)]
+[PASS] boundary-message-under-restriction: deleting the two intervening sites induces an exact nonproduct correlation between opposite retained sites
+       induced opposite-site cross-ratios=1.227467,2.089049
+[PASS] axis-and-spatial-factor-covariance: local weights and equality couplings commute with all 24 edge-axis relabellings and all cycle automorphisms
+       axis failures=0; spatial automorphisms=8
+[PASS] null-relative-interacting-source-action: the all-null history is anchored and interaction adds geometry-independent shared-edge action
+       source vectors=3876; linearity=4.441e-16; maximum interaction action=4.394449
+[PASS] interaction-preserves-record-source-compiler: the geometry derivative of every interacting history is beta times its actual-edge count source
+       distinct sources=3876; derivative identity=4.441e-16
+[PASS] positive-metric-stress-under-interacting-gluing: constituent stresses remain rank one and every four-site aggregate stress is positive semidefinite
+       constituent error=1.665e-16; ranks={1}; aggregate minimum=-9.566e-16
+[PASS] record-conditionals-separate-geometry-sectors: the two supplied interacting geometry sectors have distinct positive Record laws
+       exact conditional total variation=0.124707013
+[PASS] geometry-phase-prior-nonselection: positive sector multipliers preserve both conditional laws while changing geometry-phase odds
+       conditional failures=0; phase odds=[Fraction(1, 1), Fraction(7, 1)]
+[PASS] compact-metric-reaction-completion: the inherited metric-only KKT branch solves every interacting-history source at all alpha and beta controls
+       ranks={25}; equation=9.390e-13; constraint=2.255e-13
+[PASS] unconstrained-metric-response-control: a supplied positive metric stiffness gives a distinct full-rank no-reaction response for the same sources
+       ranks={15}; equation=1.363e-12; separation=486.096945
+[PASS] structural-properties-do-not-select-response-phase: positivity, locality, covariance, projectivity, source compilation, and solvability admit both compact-reaction and metric-response completions
+[PASS] coefficient-family-nonselection: the bounded properties persist across beta, rho, phase-prior, alpha, and metric-stiffness controls
+       beta=3 controls; rho=2 controls; prior=2 controls; alpha=5 controls; metric stiffness=3 controls
+[PASS] lattice-wide-ward-and-lorentzian-boundary: one finite parent law does not derive an infinite-lattice boundary-message specification, a complete Ward connection, or Lorentzian dynamics
+[PASS] minimal-law-or-axiom-delta: the remaining autonomy deficit is extensional law selection, boundary-message gluing, geometry-phase dynamics, and causal update rather than another source vector
+N5_CERTIFICATE: interaction=two positive four-site shared-edge laws have exact nearest-neighbour full conditionals and nontrivial cross-ratios
+N5_CERTIFICATE: projectivity=each law supplies 83,521 exact subset probabilities and 19,652 one-site restrictions
+N5_CERTIFICATE: boundary=deletion preserves probability but induces opposite-site correlation, so same-form locality needs a boundary message
+N5_CERTIFICATE: response=the same 3,876 sources admit compact reactions and a distinct supplied metric-response control
+N5_CERTIFICATE: axiom_boundary=locality and projectivity do not select beta, rho, phase odds, alpha, response branch, Ward law, or causal update
+per_site: one null plus fifteen actual-edge-labelled Records on each of four spatial-cycle sites
+per_region: every subset of the fixed four-site parent in two interacting geometry sectors
+per_source: all 3,876 distinct four-site count sources at the declared response controls
+lattice_wide: no infinite-volume, arbitrary-overlap, complete-Ward, curved/open, nonlinear, or Lorentzian theorem is claimed
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

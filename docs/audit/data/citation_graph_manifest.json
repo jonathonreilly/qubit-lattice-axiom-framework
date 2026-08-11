@@ -1,6 +1,6 @@
 {
- "edge_count": 15654,
- "node_count": 5477,
+ "edge_count": 15656,
+ "node_count": 5478,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -409,6 +409,10 @@
   "admissibility_global_measure_menu_kernel_type_separation_bounded_theorem_note_2026-08-10": {
    "deps_hash": "7026e4c03122",
    "out_degree": 5
+  },
+  "admissibility_interacting_record_spatial_gluing_phase_response_selection_boundary_bounded_theorem_note_2026-08-10": {
+   "deps_hash": "47aff413870e",
+   "out_degree": 2
   },
   "admissibility_ising_action_record_readout_pair_resource_response_axiom_boundary_bounded_theorem_note_2026-08-10": {
    "deps_hash": "f7553c404c9a",

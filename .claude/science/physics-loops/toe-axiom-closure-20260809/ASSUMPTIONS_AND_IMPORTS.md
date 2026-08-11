@@ -617,3 +617,20 @@ geometry marginal, or an interacting spacetime law. Euclidean rank-one stress
 does not supply a Lorentzian causal particle. No external science, observed
 constant, canonical edit, percentage move, audit verdict, or `review-loop` is
 imported.
+
+## Block 32 Assumptions And Imports
+
+Block 32 imports the current Admissibility/Record wording and Block 31's
+actual-edge Record labels, null-relative source compiler, rank-one metric map,
+curvature controls, and compact KKT response. The two interacting integer
+laws, every full conditional, all subset marginals, boundary-induced
+correlation, source identities, geometry-sector separation, prior controls,
+and both response branches are reconstructed in the new runner.
+
+The four-site cycle, equality interaction, class weights, `beta`, `rho`,
+two-sector carrier, sector multipliers, `alpha`, metric stiffness, and flat
+response carrier are supplied bounded data. Finite-parent marginal
+compatibility is not an arbitrary-overlap or infinite-lattice specification;
+the metric-response control is not a curved/open field equation. No external
+science, observed constant, canonical edit, percentage move, audit verdict,
+or `review-loop` is imported.

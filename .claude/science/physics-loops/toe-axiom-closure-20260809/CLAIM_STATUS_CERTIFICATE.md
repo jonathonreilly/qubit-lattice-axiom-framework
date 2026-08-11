@@ -938,3 +938,34 @@ independent_audit_required: true
 - Delivery: PR #6103 is open, mergeable, and `CLEAN`, stacked exactly on
   Block-30 delivery head `317dd4a9f4`. Independent audit remains required.
   No canonical edit, fixed percentage move, audit verdict, or `review-loop`.
+
+## Block 32 Interacting Gluing / Phase-Response Certificate
+
+- Claim type: `bounded_theorem`.
+- Interacting laws: two positive rational four-site cycle laws have exact
+  nearest-neighbour full conditionals and adjacent cross-ratios four and nine.
+- Spatial restriction: in each sector, 83,521 exact subset probabilities
+  satisfy 19,652 exact arbitrary one-site marginal identities.
+- Boundary theorem: deleting both intervening sites induces nonproduct
+  opposite-site cross-ratios `1.227467` and `2.089049`; same-form locality
+  therefore requires a retained boundary message or selected global law.
+- Source/stress preservation: interaction contributes geometry-independent
+  action; all 3,876 derivatives remain actual-edge count sources and every
+  constituent/aggregate metric stress is positive semidefinite.
+- Geometry separation: the two conditional laws have total variation
+  `0.124707013`, while positive sector multipliers change phase odds from one
+  to seven without changing either conditional.
+- Response boundary: the same sources solve both the inherited compact
+  rank-25 KKT branch and a distinct supplied full-rank metric-response control.
+- Governance: `beta`, `rho`, boundary messages, phase odds, `alpha`, response
+  branch, full Ward law, and Lorentzian dynamics remain unselected. No fifth
+  axiom is proved necessary.
+- Runner/cache: source/input pinned, `PASS=19 FAIL=0` in `6.6 s`.
+- Independent reconstruction: `PASS=5 FAIL=0`.
+- Mutation sensitivity: nineteen isolated fresh-process forced failures each
+  exit nonzero at exactly one intended named check (`PASS=19 FAIL=0`).
+- Citation graph: `5,478` nodes / `15,656` edges; the new node has out-degree
+  two and twenty resolved helper runners.
+- Direct/stacked conformance, changed evidence, commits,
+  delivery, and independent audit are pending. No canonical edit, fixed
+  percentage move, audit verdict, or `review-loop`.

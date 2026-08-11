@@ -179,3 +179,17 @@ simultaneously fix reactions, spatial gluing, and the complete Ward tensor.
 Efficiency rule: reuse the exact Record derivative and metric projector; do
 not refit source tensors or add another bare reaction channel. New candidates
 must simultaneously address interaction, phase, and Ward provenance.
+
+## Post-Block-32 Priority Refresh
+
+| Rank | Target | Exact next witness | Why now |
+|---:|---|---|---|
+| 1 | proper-cubic boundary-message transfer fixed point | one positive overlapping-region specification whose permanent boundary Records reproduce every marginal and uniquely fix the interacting score and joint geometry odds | finite-parent interaction/projectivity is solved, and induced boundary correlations identify the exact missing gluing datum |
+| 2 | complete stationary differentiated Ward identity | solve one nonuniform background of that selected transfer law and compute geometry, connected, contact, mixed/source, multiplier, and connection/tadpole terms | both compact reaction and metric response solve algebraically; only a same-law Ward identity can select physical response |
+| 3 | constituent-causal Lorentzian closure | extend the selected boundary/update law to timelike Record carriers and certify causal nonlinear quotient stability | current stress is Euclidean and the finite parent supplies no causal cone or update |
+| 4 | coefficient/phase derivation from current axioms or narrow amendment | prove the transfer fixed point follows from the existing clauses, or isolate the sufficient unadopted law interface without asserting minimality | Admissibility requires neighbour dependence but intentionally leaves extensional values unspecified |
+| 5 | independent TOE roots and stack reconciliation | preserve PR #6096, then return to Born/history and operational selectors | the gravity wall is now one precise global-law problem and should not starve independent high-value closure |
+
+Efficiency rule: stop enumerating more finite-parent interaction witnesses.
+The next computation must share one boundary transfer law across overlaps and
+produce geometry odds plus the Ward connection from that same law.

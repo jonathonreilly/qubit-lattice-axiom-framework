@@ -543,3 +543,17 @@ and coefficient selection, phase/boundary response, complete stationary Ward
 connection, and Lorentzian dynamics remain open. Candidate wording is
 unadopted; fixed TOE percentages and canonical axioms remain unchanged. No
 `review-loop` is used.
+
+Block 32 supplies genuine nearest-neighbour Record interaction on a fixed
+four-site spatial parent while preserving exact subset marginals and the
+actual-edge source/stress compiler. Restricting away the intervening sites
+induces a nonproduct boundary correlation, so exact probability projectivity
+does not imply deletion-stable local factors without a boundary message.
+
+Reachability remains `upstream_support`, not direct TOE closure. Conditional
+Record laws can distinguish supplied geometry sectors, but their phase odds
+and compact-versus-metric response remain freely completable. The next law
+must select one proper-cubic boundary-transfer fixed point, geometry odds,
+nonuniform complete Ward connection, and Lorentzian update. Candidate wording
+is unadopted; fixed TOE percentages and canonical axioms remain unchanged. No
+`review-loop` is used.

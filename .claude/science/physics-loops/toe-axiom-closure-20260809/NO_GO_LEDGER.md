@@ -250,3 +250,15 @@ The strongest steelman is accepted: physical gravity should respond to metric
 stress rather than always cancel it with a compact constraint. The theorem
 proves consistency and types the reactions; it leaves compact versus
 curved/open phase selection as the leading physical obligation.
+
+## Block 32 Interacting-Gluing / Phase-Selection Boundary
+
+| Scoped claim | Exact/bounded evidence | N1--N8 disposition | Forbidden promotion | Live routes |
+|---|---|---|---|---|
+| nearest-neighbour interaction and finite-parent projectivity do not select the geometry-phase odds or compact-versus-metric response on the supplied fixture | two positive cycle laws; adjacent cross-ratios `4/9`; 83,521 probabilities and 19,652 restrictions per sector; induced opposite-site ratios above one; conditional TV `0.124707013`; phase odds `1/7`; two complete response branches | pass only for the fixed four-site parent, supplied equality factors/weights, two geometry sectors, flat response controls, and named coefficient lists | do not infer an infinite-lattice specification, universal phase no-go, gravity no-go, axiom necessity, curved/open equation, full Ward failure, or Lorentzian obstruction | boundary-message transfer fixed point; geometry-dependent interaction; alternate global law; curved/open carrier; boundary flux; nonlinear constraints; complete Ward connection; causal update |
+
+The strongest steelman becomes the next target: permanent Records can carry
+an exact boundary message, and a selected transfer fixed point could determine
+both the interacting score and geometry odds. The bounded negative is only
+that local conditional/projective structure does not already perform that
+selection.

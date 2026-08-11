@@ -1705,3 +1705,31 @@ instance or Fourier census.
   #6103 is open, mergeable, and `CLEAN`, stacked exactly on Block-30 delivery
   head `317dd4a9f4`. Independent audit remains required. No canonical axiom,
   fixed percentage, audit verdict, or `review-loop` is changed.
+
+## Block 32 Construction Record
+
+- Constructed two positive rational sixteen-state laws on a four-site spatial
+  cycle with exact nearest-neighbour full conditionals.
+- Proved genuine interaction by adjacent conditional cross-ratios four and
+  nine and checked all 24 edge-label relabellings plus eight cycle symmetries.
+- Executed 83,521 subset probabilities and 19,652 arbitrary one-site
+  restrictions exactly in each geometry sector.
+- Proved that deleting both intervening sites induces nonproduct opposite-site
+  cross-ratios `1.227467` and `2.089049`, requiring a boundary message for
+  same-form local restriction.
+- Preserved all 3,876 actual-edge count sources, rank-one constituent metric
+  stresses, and positive aggregate stresses under interaction.
+- Separated the conditional geometry sectors at total variation `0.124707013`
+  while changing phase odds from one to seven with unchanged conditionals.
+- Solved every source on both the rank-25 compact reaction branch and a
+  distinct full-rank supplied metric-response control.
+- Applied N1--N8 and preserved boundary-transfer, alternate-law, curved/open,
+  full-Ward, nonlinear, and Lorentzian routes.
+- Primary source/input-pinned cache is `PASS=19 FAIL=0` in `6.6 s`.
+- Independent reconstruction returns `PASS=5 FAIL=0`; nineteen isolated
+  fresh-process forced failures each fail exactly one named check.
+- Citation registration is `5,478` nodes / `15,656` edges; the new node has
+  out-degree two and twenty resolved helper runners.
+- Conformance, exact stack, changed evidence, commits,
+  delivery, and independent audit remain pending. No canonical axiom, fixed
+  percentage, audit verdict, or `review-loop` is changed.

@@ -600,3 +600,17 @@ mergeable, and `CLEAN`, stacked exactly on Block-30 delivery head
 `317dd4a9f4`. PR #6096 is a complementary proper-length sibling requiring
 later explicit reconciliation. Independent audit remains required. No
 canonical edit, percentage move, audit verdict, or `review-loop` is used.
+
+Block 32 is local on branch
+`physics-loop/toe-axiom-closure-block32-interacting-record-gluing-20260810`,
+stacked on exact Block-31 delivery head `13c769982c`. Its distinct review
+object is the interacting four-site Record law, exact finite-parent
+projectivity, induced boundary-message theorem, preserved source/stress
+compiler, conditional geometry separation, phase-prior nonselection, and
+compact-versus-metric response control. Primary source/input-pinned cache is
+`PASS=19 FAIL=0` in `6.6 s`; independent reconstruction is `PASS=5 FAIL=0`;
+all nineteen isolated forced-false runs fail one named check. Graph
+registration is `5,478/15,656`, with out-degree two and twenty helpers. Direct
+conformance, exact stack, changed evidence, commits, PR, and independent audit
+are pending. No canonical edit, percentage move, audit verdict, or
+`review-loop` is used.

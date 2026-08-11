@@ -1361,3 +1361,29 @@ Science commit is `8fa5edeb72`; campaign conformance is `a1c48745f1`. PR
 #6103 is open, mergeable, and `CLEAN`, stacked exactly on Block-30 delivery
 head `317dd4a9f4`. Independent audit remains required. No canonical edit,
 percentage move, audit verdict, or `review-loop` occurs.
+
+## Block 32 Interacting Gluing / Phase-Response Handoff
+
+Do not treat Block 31's product family as the spatial gluing endpoint. Block
+32 supplies genuine neighbour interaction: both positive four-site cycle laws
+have exact local full conditionals and adjacent cross-ratios four or nine.
+Every subset marginal and all 19,652 deletion identities per sector pass.
+
+The key new boundary is constructive. Deleting both intervening sites induces
+nonproduct opposite-site correlations, so probability projectivity does not
+make the same local factor law deletion-stable. A permanent Record boundary
+message or selected global law is load-bearing. Interaction nevertheless
+preserves all 3,876 actual-edge count sources and their positive metric stress.
+
+The two conditional sectors are distinguishable, but phase multipliers change
+joint odds without changing either conditional. Compact reaction and a
+distinct metric-response control both solve every source. The current axioms
+therefore leave the extensional score, boundary fixed point, phase odds, and
+response law open. Next derive one proper-cubic overlapping-region transfer
+law, solve a nonuniform background, and compute the complete same-law Ward
+connection before Lorentzian evolution. Primary cache is `PASS=19 FAIL=0` in
+`6.6 s`; independent reconstruction is `PASS=5 FAIL=0`; all nineteen isolated
+forced-false runs trip one named check. Citation registration is
+`5,478/15,656`, with out-degree two and twenty resolved helpers. Conformance,
+delivery, and independent audit are pending. No canonical edit, percentage
+move, audit verdict, or `review-loop` occurs.

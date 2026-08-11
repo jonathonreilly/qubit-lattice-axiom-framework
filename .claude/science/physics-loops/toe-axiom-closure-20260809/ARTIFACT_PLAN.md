@@ -692,3 +692,26 @@ complete conditional nonlinear compact solution:
   stacked claims; science commit `8fa5edeb72`, campaign conformance
   `a1c48745f1`; PR #6103 is open, mergeable, and `CLEAN`, stacked on exact
   Block-30 delivery head `317dd4a9f4`; independent audit remains required
+
+## Block 32 — Interacting Record Spatial Gluing / Phase-Response Selection
+
+- theorem note:
+  `docs/ADMISSIBILITY_INTERACTING_RECORD_SPATIAL_GLUING_PHASE_RESPONSE_SELECTION_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md`
+- runner/cache:
+  `scripts/admissibility_interacting_record_spatial_gluing_phase_response_selection_boundary_2026_08_10.py` and its source/input-pinned cache
+- packet scope: two positive interacting sixteen-state laws on one four-site
+  spatial cycle, exact nearest-neighbour full conditionals and cross-ratios,
+  every finite-parent marginal/restriction, induced boundary-message theorem,
+  preserved Record source/stress compiler, conditional geometry-sector
+  separation, phase-prior nonselection, compact versus metric-response
+  controls, N1--N8, and narrowed downstream-law versus axiom interface
+- exclusions: an arbitrary-overlap or infinite-lattice law, derived physical
+  weights/units, selected boundary messages or phase odds, a curved/open field
+  equation, complete stationary Ward connection, Lorentzian dynamics,
+  canonical edits, percentage movement, audit verdicts, and `review-loop`
+- current evidence: source/input-pinned cache `PASS=19 FAIL=0` in `6.6 s`;
+  independent reconstruction `PASS=5 FAIL=0`; nineteen isolated fresh-process
+  forced failures each trip exactly one named check; graph registration
+  `5,478/15,656`, out-degree two, with twenty resolved helpers; direct
+  conformance, stacked pipeline, changed evidence, commits, delivery, and
+  independent audit pending

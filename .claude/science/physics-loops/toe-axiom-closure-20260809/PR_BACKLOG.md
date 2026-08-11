@@ -541,3 +541,17 @@ is open, mergeable, and `CLEAN`, stacked exactly on Block-26 delivery head
 `8281f0a0ea`. PR #6096 is a complementary proper-length sibling requiring
 explicit reconciliation. Independent audit remains required. No `review-loop`
 is used.
+
+Block 29 is local on branch
+`physics-loop/toe-axiom-closure-block29-phase-ward-reclassification-20260810`,
+stacked on exact Block-28 delivery head `f44a67a917`. Its distinct review
+object is the compact-domain reclassification of the six homogeneous source
+targets, finite-momentum Ward discrimination of the complete metric and
+direct-edge one-cell contact classes, and the neutral closed-history
+constructive escape. Primary source/input-pinned cache is
+`PASS=13 FAIL=0` in `28.67 s`; independent reconstruction is
+`PASS=5 FAIL=0`; all thirteen isolated forced-false runs fail exactly one
+named check; graph registration is `5,475/15,641`, with out-degree five and
+seventeen helpers. Direct conformance, stacked pipeline, changed-evidence
+readiness, commits, PR, and independent audit are pending. No canonical edit,
+percentage move, audit verdict, or `review-loop` is used.

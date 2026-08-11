@@ -566,3 +566,19 @@ score are explicit conditions rather than current-axiom consequences. The
 count-weighted completion uses target-reconstructed full edge matrices and is
 not assumed local or physical. No external science, observed constant,
 canonical edit, percentage move, audit verdict, or `review-loop` is imported.
+
+## Block 29 Assumptions And Imports
+
+Block 29 imports the Block-19 affine compact constraint, the Block-22 exact
+lattice gauge rows, the Block-23 six-mode source matrices, the Block-28
+one-cell metric contact basis, and the retained neutral closed-history source.
+The compact-domain intersection, translation sum, complete direct-edge orbit
+census, contact designs, finite-momentum Ward probes, and `L=5` solve are
+reconstructed in the new runner.
+
+The global-only extension of compact modes, the massless target, the sampled
+training and held-out momenta, and the pure gauge-gauge discriminator are
+explicit conditional probes. They do not supply a physical phase, omit the
+full connection/tadpole and joint-sector terms, and do not exhaust inter-cell
+actions. No external continuum theorem, observed constant, canonical edit,
+percentage move, audit verdict, or `review-loop` is imported.

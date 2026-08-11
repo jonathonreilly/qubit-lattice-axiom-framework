@@ -1,6 +1,6 @@
 {
- "edge_count": 15636,
- "node_count": 5474,
+ "edge_count": 15641,
+ "node_count": 5475,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -400,6 +400,10 @@
   },
   "admissibility_gaussian_second_moment_quantile_decoder_effect_quotient_bounded_theorem_note_2026-08-10": {
    "deps_hash": "8338a3e0e019",
+   "out_degree": 5
+  },
+  "admissibility_global_constraint_phase_ward_contact_reclassification_boundary_bounded_theorem_note_2026-08-10": {
+   "deps_hash": "ced2c154a9c8",
    "out_degree": 5
   },
   "admissibility_global_measure_menu_kernel_type_separation_bounded_theorem_note_2026-08-10": {

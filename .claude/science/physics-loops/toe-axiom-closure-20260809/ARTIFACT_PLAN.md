@@ -607,3 +607,25 @@ complete conditional nonlinear compact solution:
   stacked claims; science commit `973cfa23c6`, campaign conformance
   `c93bd0c966`; PR #6100 is open, mergeable, and `CLEAN`, stacked on exact
   Block-27 delivery head `c2b18f8c6a`; independent audit remains required
+
+## Block 29 — Global-Constraint Phase / Ward Contact Reclassification
+
+- theorem note:
+  `docs/ADMISSIBILITY_GLOBAL_CONSTRAINT_PHASE_WARD_CONTACT_RECLASSIFICATION_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md`
+- runner/cache:
+  `scripts/admissibility_global_constraint_phase_ward_contact_reclassification_2026_08_10.py` and its source/input-pinned cache
+- packet scope: exact compact variational-domain typing of the six Block-23
+  modes, all-`L=5` nonzero-mode stationarity, finite-momentum Ward tests of
+  the complete 61-orbit metric and 142-orbit direct-edge one-cell classes,
+  the constructive neutral closed-history escape, N1--N8, and the corrected
+  phase-before-coefficient priority graph
+- exclusions: physical ensemble or phase selection, inter-cell contacts,
+  complete connection/tadpole and joint-sector Ward terms, a physical
+  Record-to-geometry compiler, projective gluing, continuous-zone or
+  Lorentzian closure, canonical edits, percentage movement, audit verdicts,
+  and `review-loop`
+- current evidence: source/input-pinned cache `PASS=13 FAIL=0` in `28.67 s`;
+  independent reconstruction `PASS=5 FAIL=0`; thirteen isolated fresh-
+  process forced failures each trip exactly one named check; graph
+  `5,475/15,641`, out-degree five, with seventeen resolved helpers; direct
+  conformance, stacked pipeline, and delivery remain pending

@@ -215,3 +215,15 @@ The strongest steelman succeeds: a local source-linear covariant RN contact
 exists. The remaining negative is only selection nonuniqueness on the tested
 data. More source/momentum Ward constraints or a law-derived score can remove
 the eleven blind directions; no gravity no-go is eligible.
+
+## Block 29 Phase / Ward Contact Boundaries
+
+| Scoped claim | Exact/bounded evidence | N1--N8 disposition | Forbidden promotion | Live routes |
+|---|---|---|---|---|
+| the Block-23 homogeneous source matrices are transverse to the supplied Block-19 compact tangent, and neither complete tested one-cell class satisfies the named held-out pure gauge-gauge Ward inventory | exact `image(M0)`/`ker(M0^T)` intersection theorem; metric residual `0.814467`; complete `1,800 -> 142` direct-edge census with best held-out residual `0.386333`; exact/finite `L=5` closed-history escape | pass only for the supplied global constraint, the declared one-cell source-linear quadratics, named momenta, omitted-term discriminator, and one finite torus | do not infer that gravity, massless phases, inter-cell contacts, full differentiated Ward identities, alternate actions, nonlinear solutions, Lorentzian dynamics, or current axioms fail | select a curved/massive phase; derive inter-cell contact; include connection/tadpole and joint sectors; refine the action; use neutral closed histories; derive a causal geometry/history law |
+
+The strongest steelman is constructive and survives: every nonzero mode of
+the retained neutral closed history solves on the unchanged flat carrier.
+The negative only blocks promotion of two homogeneous one-cell fits. The
+priority correction is to select the physical ensemble and phase before
+asking which, if any, contact coefficients must be fixed.

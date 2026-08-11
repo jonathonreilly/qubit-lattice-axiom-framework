@@ -494,3 +494,19 @@ physically selected local covariant geometry-dependent RN score, compatible
 joint-family/intervention registration, and separate pure-geometry dynamics.
 Candidate wording is unadopted; percentages and canonical axioms remain
 unchanged. No `review-loop` is used.
+
+Block 29 corrects the ordering of the Block-28 selection problem. The six
+homogeneous source modes lie in the constant-metric image and outside the
+supplied compact tangent, so their contact matrices are transverse
+curvatures of a conditional global-only phase. Both complete tested one-cell
+classes fail named held-out finite-momentum Ward promotion, while an exact
+neutral closed history solves every nonzero `L=5` source mode on the unchanged
+flat carrier.
+
+Reachability remains `upstream_support`, not direct TOE closure. The next
+law must select a compatible geometry-bearing joint Record/history family,
+Record-to-geometry map, ensemble and phase, complete stationary
+differentiated-Ward tensor, and autonomous causal update. Inter-cell contact
+selection is conditional on a massless phase. Candidate wording is
+unadopted; fixed TOE percentages and canonical axioms remain unchanged. No
+`review-loop` is used.

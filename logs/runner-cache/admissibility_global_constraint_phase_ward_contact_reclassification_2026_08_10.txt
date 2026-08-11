@@ -1,0 +1,46 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_global_constraint_phase_ward_contact_reclassification_2026_08_10.py
+runner_sha256: 9769b3823447fec4493aba39d9e3c77696257ae806be5bee4c9b9a35f57b0957
+input_fingerprint_sha256: 72034a70b412e79c43ed4fe5c0dd5e1f6a32b1fb12d191b43b0c27755a023b69
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 28.67
+status: ok
+----- stdout -----
+external_scientific_inputs: none; compact constraints, source tangents, Ward maps, and closed histories are repository-local
+analytic_boundary: constraint-subspace and orbit statements are exact finite algebra; source-tangent and finite-momentum fits are double precision
+physical_boundary: phase/ensemble selection, Record-to-geometry compilation, projective gluing, causal update, and Lorentzian nonlinear stability remain open
+[PASS] axiom-and-parent-boundary: current axioms do not select a geometry action, source law, dynamics, or compact ensemble, while the parents expose each supplied choice
+[PASS] note-contract: the note reclassifies the homogeneous target, reports both one-cell tests, preserves constructive gravity routes, and states N1--N8
+[PASS] six-modes-excluded-by-global-k0-constraints: all six Block-23 modes lie in the constant-metric image and have zero intersection with the Block-19 allowed k0 tangent ker(M0^T)
+       image residual=3.918e-15; constraint singular values=[1.333635 0.898445 0.762474 0.675033 0.559375 0.479062]
+[PASS] uniform-background-nonzero-mode-stationarity: translation invariance makes a uniform first variation orthogonal to every nonzero Bloch mode; only the constrained compact mode needs reactions
+       L=5; nonzero modes=624; maximum structure sum=9.862e-13
+[PASS] homogeneous-contact-target-is-conditional: the Block-28 target is exactly recoverable on the six excluded k0 modes but remains an unselected massless-phase continuation condition
+[PASS] metric-one-cell-ward-selection-misses: held-out finite-momentum gauge-gauge Ward data see only four of the eleven homogeneous blind directions and are incompatible with the one-cell metric fit
+       rank(WN)=4; relative residual=0.814467; metric-gauge map residual=4.638e-15
+[PASS] direct-edge-orbit-census: all 1,800 source-edge/geometry-edge-pair one-cell monomials reduce to 142 simultaneous-axis orbits
+       orbit sizes={1: 1, 3: 1, 4: 17, 6: 14, 12: 81, 24: 28}
+[PASS] stronger-edge-class-homogeneous-fit: the complete one-cell direct-edge class also fits the conditional homogeneous target, with rank 50 and a 92-dimensional nullspace
+       shape=(216, 142); rank=50; nullity=92; relative residual=5.045e-11
+[PASS] direct-edge-ir-fit-held-out-failure: the 142-orbit direct-edge class can learn the small/axis Ward inventory while preserving the homogeneous target, but fails the held-out generic/root-of-unity momenta
+       training relative=3.915275e-05; held-out relative=1435.577555; held-out best within homogeneous null=0.386333; combined rank=125
+[PASS] closed-neutral-history-constructive-escape: an unchanged flat Regge carrier accepts the complete L=5 neutral closed-history inventory with exact compact cancellation and unprojected Ward-compatible solves
+       nonzero/dynamic=100/80; gauge=3.111e-15; full-null=2.214e-14; solve=3.093e-13
+[PASS] phase-ensemble-ordering-correction: massless-contact coefficient selection is downstream of selecting the compact/open ensemble and massless versus curved or massive sourced phase
+[PASS] minimal-axiom-or-downstream-delta: the exact missing law is a compatible geometry-bearing joint Record/history family that selects its ensemble, source typing, full Ward connection, and causal update
+[PASS] bounded-theorem-and-live-routes: the scoped one-cell failure preserves inter-cell contacts, connection/tadpole terms, full stationary backgrounds, closed histories, refined actions, and Lorentzian routes
+N5_CERTIFICATE: reclassification=the six homogeneous contact targets are transverse curvatures of modes excluded by the supplied global k0 constraints, not on-domain k0 Hessian entries
+N5_CERTIFICATE: one_cell_boundary=metric and stronger direct-edge axis-covariant one-cell contacts do not extend the homogeneous fit to the held-out finite-momentum differentiated-Ward inventory
+N5_CERTIFICATE: constructive_escape=the L5 neutral closed history solves every sourced mode on the unchanged flat Regge carrier without source projection
+N5_CERTIFICATE: priority_order=select the physical ensemble and massless-versus-curved phase before selecting homogeneous contact coefficients
+N5_CERTIFICATE: axiom_boundary=a compatible geometry-bearing joint Record/history law, full Ward connection, and causal update may be derived downstream or explicitly registered; no fifth axiom is proven necessary
+per_element: checked all 825 metric-contact and 1,800 direct-edge-contact monomials through their complete S4 orbit classes
+per_site: checked one complete fifteen-edge cell plus every site of the L5 neutral closed-history torus
+per_mode: checked the six homogeneous modes, 12 training momenta, six held-out momenta, and all 625 L5 torus momenta
+per_block: checked compact constraint-domain typing, metric and edge contact classes, differentiated Ward data, and the closed-history escape
+lattice_wide: checked one complete L5 finite torus; no arbitrary-volume, continuous-zone, projective, Lorentzian, or nonlinear theorem is claimed
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

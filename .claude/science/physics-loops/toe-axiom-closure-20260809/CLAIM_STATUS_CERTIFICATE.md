@@ -806,3 +806,36 @@ independent_audit_required: true
 - Science commit: `973cfa23c6`; campaign conformance: `c93bd0c966`.
 - Delivery: PR #6100 is open, mergeable, and `CLEAN`, stacked exactly on
   Block-27 delivery head `c2b18f8c6a`. Independent audit remains required.
+
+## Block 29 Phase / Ward Reclassification Certificate
+
+- Claim type: `bounded_theorem`.
+- Domain theorem: all six Block-23 modes lie in `image(M0)` and intersect the
+  allowed compact tangent `ker(M0^T)` only at zero; `rank(M0^T P)=6`.
+- Stationarity: the uniform first variation is orthogonal to all 624 nonzero
+  momenta on the complete `L=5` torus.
+- Metric-contact discriminator: held-out differentiated-Ward data see rank
+  four of the eleven homogeneous blind directions and leave relative
+  incompatibility `0.814467`.
+- Direct-edge discriminator: all 1,800 one-cell monomials reduce to 142
+  simultaneous-axis orbits; the homogeneous design has rank 50/nullity 92,
+  while the best independently refit held-out residual is `0.386333`.
+- Constructive escape: the neutral closed history has exact compact
+  cancellation and solves all 100 nonzero `L=5` sourced modes, with maximum
+  gauge/full-null/solve residuals `3.111e-15`, `2.214e-14`, and `3.093e-13`.
+- Reclassification: the six homogeneous matrices are transverse curvatures
+  of excluded compact directions. A law must select the ensemble and
+  massless versus curved/massive phase before those contact coefficients are
+  physical targets.
+- Governance: neither one-cell negative is a gravity no-go. Inter-cell,
+  connection/tadpole, joint-sector, refined-action, curved-phase, and causal
+  routes remain live. No fifth axiom is proved necessary.
+- Runner/cache: source/input pinned, `PASS=13 FAIL=0` in `28.67 s`.
+- Independent reconstruction: separately assembled orbit and Ward systems
+  return `PASS=5 FAIL=0`.
+- Mutation sensitivity: thirteen isolated fresh-process forced failures each
+  exit nonzero at exactly one intended named check (`PASS=13 FAIL=0`).
+- Citation graph: `5,475` nodes / `15,641` edges; the new node has
+  out-degree five and seventeen resolved helper runners.
+- Direct/stacked conformance, commits, and delivery are pending. No canonical
+  edit, percentage move, audit verdict, or `review-loop`.

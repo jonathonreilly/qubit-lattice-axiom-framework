@@ -1260,3 +1260,30 @@ provenance from a projective joint Record/Ward law, followed by inter-cell,
 nonuniform, continuous-momentum, and Lorentzian tests. PR #6096 remains a
 complementary proper-length boundary. No canonical edit, percentage move,
 audit verdict, or `review-loop` occurs.
+
+## Block 29 Phase / Ward Reclassification Handoff
+
+Do not continue fitting the eleven Block-28 homogeneous blind directions as
+the leading task. All six target modes are excluded by Block 19's supplied
+compact `k=0` constraint. Their matrices are conditional diagnostics of a
+global-only massless extension, so ensemble/phase selection is upstream of
+coefficient selection.
+
+Both complete tested one-cell families fail held-out finite-momentum Ward
+promotion: the metric class leaves `0.814467` relative incompatibility, and
+the stronger 142-orbit direct-edge class leaves a best-refit residual
+`0.386333`. Do not turn either result into a gravity no-go; inter-cell terms,
+connection/tadpole terms, full joint sectors, refined actions, and curved or
+massive phases were not excluded.
+
+The constructive anchor is the neutral closed history: exact compact source
+cancellation and all 100 nonzero `L=5` source modes solve on the unchanged
+flat carrier. Primary cache is `PASS=13 FAIL=0` in `28.67 s`. The next exact
+target is one compatible geometry-bearing joint Record/history family and
+Record-to-geometry map that selects the ensemble/phase and complete
+stationary Ward identity; only then derive inter-cell contact coefficients
+if the selected phase is massless. Independent reconstruction is
+`PASS=5 FAIL=0`; all thirteen isolated forced-false runs trip exactly one
+named check; graph registration is `5,475/15,641`, with out-degree five and
+seventeen helpers. Direct conformance and delivery remain pending. No
+canonical edit, percentage move, audit verdict, or `review-loop` occurs.

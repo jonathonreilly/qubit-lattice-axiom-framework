@@ -616,3 +616,18 @@ local score the Record law selects, not whether a local covariant contact can
 exist. Endogenous joint odds also remove the need to identify a separate pure-
 geometry term before forming the total statistical action, provided a physical
 Record-to-geometry map and joint law are actually derived.
+
+## Block 29 Phase / Ward Reclassification Route Comparison
+
+| Route | Exact object | Outcome | Decision |
+|---|---|---|---|
+| supplied compact global constraint | `ker(M0^T)` at homogeneous momentum | all six Block-23 target modes are transverse and excluded | retain as the declared ensemble; do not demand their contact cancellation on-domain |
+| global-only massless extension | re-entry of the six modes as `k -> 0`, `k != 0` | makes the source matrices physically relevant only after phase selection | live conditional phase, not an inherited premise |
+| complete metric one-cell contact | 61 orbits with eleven homogeneous blind directions | held-out Ward visibility rank four and incompatibility `0.814467` | reject promotion to an all-momentum law |
+| complete direct-edge one-cell contact | all 1,800 monomials in 142 orbits | homogeneous rank 50/nullity 92; best held-out residual `0.386333` | reject this larger one-cell promotion; retain inter-cell completion |
+| neutral closed-history source | exact transverse line difference on the flat `L=5` carrier | zero compact source and all 100 nonzero modes solve without projection | retain as constructive gravity viability evidence |
+| compatible joint Record/history law | geometry map, joint null odds, ensemble/phase, full Ward connection, and causal update | not yet constructed | highest-priority shared TOE interface |
+
+Coefficient fitting has moved below phase selection. If the selected law is
+massless, derive inter-cell and full differentiated-Ward coefficients; if it
+is curved or massive, the homogeneous cancellation target is not required.

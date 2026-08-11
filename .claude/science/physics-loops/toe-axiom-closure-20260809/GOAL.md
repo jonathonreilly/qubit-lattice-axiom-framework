@@ -963,3 +963,32 @@ compatible projective joint Record law or differentiated Ward identity,
 derive the Record-to-geometry map, and test nonuniform momentum and Lorentzian
 dynamics. This may remain downstream; no fifth axiom is yet proven necessary.
 No canonical axiom or fixed percentage is changed.
+
+## Block 29 Target And Disposition
+
+Block 29 asks whether the eleven Block-28 contact directions can be selected
+by finite-momentum Ward data and, first, whether the six homogeneous targets
+are actually directions of the supplied compact variational problem.
+
+The ordering correction is exact. Every Block-23 physical-mode column lies
+in the constant-metric image of `M0`, whereas Block 19 restricts homogeneous
+variations to `ker(M0^T)`. Their intersection is zero and
+`rank(M0^T P)=6`. The six source matrices are therefore transverse
+curvatures of a global-only extension, not on-domain compact Hessian entries.
+A physical ensemble must select whether those modes re-enter as a massless,
+curved, or massive phase before cancellation is demanded.
+
+The finite-momentum test rejects promotion of either tested one-cell fit.
+The 61-orbit metric class leaves relative Ward incompatibility `0.814467`.
+The complete 1,800-monomial direct-edge class reduces to 142 orbits and fits
+the homogeneous matrices at rank 50/nullity 92, but its best independent
+held-out fit still leaves residual `0.386333`. These are scoped one-cell
+results; omitted inter-cell and full differentiated-Ward terms remain live.
+
+Gravity itself has not failed. A neutral closed-history source has exact
+compact cancellation and solves all 100 nonzero source modes on the unchanged
+flat `L=5` Regge carrier. The highest-priority missing law is a compatible
+geometry-bearing joint Record/history family and Record-to-geometry map that
+selects its ensemble/phase, full stationary Ward identity, and autonomous
+causal update. That content may remain downstream; no fifth axiom is proved
+necessary. No canonical axiom or fixed percentage is changed.

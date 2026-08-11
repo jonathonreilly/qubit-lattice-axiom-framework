@@ -137,3 +137,17 @@ connection branches the local joint action actually realizes.
 | 3 | nonuniform Ward discriminator | evaluate the selected contact and all eleven blind directions on translated sources and nonzero momenta, then solve one full stationary background | additional Ward data may eliminate the coefficient kernel and test whether cancellation is physical |
 | 4 | autonomous causal/Lorentzian law | derive the geometry/history update and prove quotient stability with the same joint source law | a Euclidean joint measure does not supply time or nonlinear Lorentzian closure |
 | 5 | proper-length reconciliation and independent TOE roots | serialize PR #6096, then return to rank-one matter and Born/history selectors | complementary source-coordinate evidence and independent closures remain live |
+
+## Post-Block-29 Priority Refresh
+
+| Rank | Target | Exact next witness | Why now |
+|---:|---|---|---|
+| 1 | compatible joint Record/history family and phase selector | construct one covariant `Gamma(X)`, finite-region positive joint family, distinguished null, marginal/projective compatibility, and an explicit rule choosing compact/open and massless/curved/massive phase | the six homogeneous targets are outside the supplied compact domain, so phase selection is logically prior to coefficient fitting |
+| 2 | complete stationary differentiated-Ward law | solve one nonuniform background and compute geometry, connected, contact, mixed/source, multiplier, and generator connection/tadpole terms from the same selected law | both complete tested one-cell classes fail held-out pure gauge-gauge data, while omitted same-law terms remain live |
+| 3 | inter-cell massless completion, conditional on phase | classify the smallest translated/contact range and prove the all-momentum Ward identity without target fitting | one-cell locality is now decisively insufficient for the named validation set |
+| 4 | autonomous causal/Lorentzian closure | derive the history update and certify physical quotient stability/nonlinear continuation using the same family | Euclidean stationary response still does not supply time or realized history |
+| 5 | independent TOE roots and stack reconciliation | preserve PR #6096, then return to constituent-causal rank-one matter and Born/history selectors | gravity has a constructive nonuniform route, so parallel closure value shifts back toward shared Record/history laws |
+
+This ordering eliminates an inefficient loop: no further homogeneous contact
+fit should run until a law selects the extension in which its target is
+physical.

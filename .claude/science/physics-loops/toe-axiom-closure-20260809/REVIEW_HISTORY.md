@@ -1585,3 +1585,31 @@ instance or Fourier census.
   #6099 is open, mergeable, and `CLEAN`, stacked exactly on Block-26 delivery
   head `8281f0a0ea`. Independent audit remains required. No canonical axiom,
   fixed percentage, audit verdict, or `review-loop` is changed.
+
+## Block 29 Construction Record
+
+- Proved that all six Block-23 columns lie in `image(M0)`, have zero
+  intersection with the Block-19 compact tangent `ker(M0^T)`, and give
+  `rank(M0^T P)=6`.
+- Checked uniform-background stationarity against all 624 nonzero momenta on
+  the `L=5` four-torus.
+- Tested the 61-orbit metric contact on six held-out momenta: the homogeneous
+  nullspace has Ward-visible rank four and leaves residual `0.814467`.
+- Enumerated all 1,800 direct-edge one-cell monomials into 142 simultaneous-
+  axis orbits. The homogeneous design has rank 50/nullity 92.
+- Trained that full class on 12 small/axis momenta, disclosed the unstable
+  unregularized validation value, and independently refit the held-out set to
+  establish the load-bearing residual `0.386333` and combined rank 125.
+- Recomputed the neutral closed-history response on all 625 `L=5` momenta:
+  100 sources are nonzero, 80 are dynamic, and maximum gauge/full-null/solve
+  residuals are `3.111e-15`, `2.214e-14`, and `3.093e-13`.
+- Applied N1--N8 and preserved inter-cell, connection/tadpole, full joint,
+  refined/perfect-action, curved/massive-phase, and Lorentzian routes.
+- Primary source/input-pinned cache is `PASS=13 FAIL=0` in `28.67 s`.
+- A separate orbit/Ward reconstruction returns `PASS=5 FAIL=0`; thirteen
+  isolated fresh-process forced failures each fail exactly one named check.
+- Citation registration is `5,475` nodes / `15,641` edges; the new node has
+  out-degree five and seventeen resolved helper runners.
+- Conformance, commits, changed-evidence readiness, and delivery are pending.
+  No canonical axiom, fixed percentage, audit verdict, or `review-loop` is
+  changed.

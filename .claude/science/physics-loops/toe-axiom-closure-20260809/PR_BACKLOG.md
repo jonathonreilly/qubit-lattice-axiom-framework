@@ -604,8 +604,10 @@ unadopted Admissibility--Record composition interface. Primary/cache is
 is `PASS=5 FAIL=0`; graph is `5,491/15,701`, out-degree three. Direct
 conformance and the controlled 18-stage overlay at checkpoint `562cc3db21df`
 pass; evidence is clean for `1/1` Block 45 and `45/45` stacked claims. Science
-commit is `7954748635`; campaign conformance, push, and stacked PR are pending.
-No canonical edit, percentage move, audit verdict, or `review-loop` is used.
+commit is `7954748635`; campaign conformance is `5a2039a915`. PR #6137 is open,
+mergeable, and `CLEAN`, stacked exactly on Block-44 delivery head `d91500ca4e`.
+Independent audit is pending. No canonical edit, percentage move, audit
+verdict, or `review-loop` is used.
 
 Block 44 is local on branch
 `physics-loop/toe-axiom-closure-block44-lorentzian-constraints-20260811`,

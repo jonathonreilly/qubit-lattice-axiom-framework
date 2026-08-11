@@ -2007,8 +2007,10 @@ instance or Fourier census.
   current-main overlay passes all 18 stages at checkpoint `562cc3db21df`, with
   `4,829` rows / `3,707` runners. Changed evidence is clean for Block 45
   (`1/1`) and all 45 stacked claims (`45/45`). Science commit is `7954748635`;
-  campaign conformance, push, and stacked PR remain pending. No canonical
-  axiom, percentage, audit verdict, or `review-loop` changes.
+  campaign conformance is `5a2039a915`. PR #6137 is open, mergeable, and
+  `CLEAN`, stacked exactly on Block-44 delivery head `d91500ca4e`;
+  independent audit remains required. No canonical axiom, percentage, audit
+  verdict, or `review-loop` changes.
 
 ## Block 44 Construction And Adversarial Record
 

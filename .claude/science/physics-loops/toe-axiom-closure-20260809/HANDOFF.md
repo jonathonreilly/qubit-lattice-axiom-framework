@@ -1740,8 +1740,9 @@ out-degree three. Science commit is `7954748635`; direct conformance passes.
 The stacked governance delta is unchanged from Block 44; the controlled
 current-main five-file overlay passes all 18 stages at checkpoint
 `562cc3db21df`, with `4,829` rows / `3,707` runners. Changed evidence is clean
-for Block 45 (`1/1`) and all 45 stacked claims (`45/45`). Campaign conformance,
-push, and stacked PR remain pending.
+for Block 45 (`1/1`) and all 45 stacked claims (`45/45`). Campaign conformance
+is `5a2039a915`. PR #6137 is open, mergeable, and `CLEAN`, stacked exactly on
+Block-44 delivery head `d91500ca4e`; independent audit remains required.
 
 The gain is exact localization: formation rate/order, clock normalization, and
 finite-frequency constraint preservation are independent unselected controls.

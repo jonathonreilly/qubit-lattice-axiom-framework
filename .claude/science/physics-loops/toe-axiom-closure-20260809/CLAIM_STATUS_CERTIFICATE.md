@@ -1489,7 +1489,10 @@ lines are in the landing primary cache.
   `PASS=5 FAIL=0`; eight named mutations each fail exactly one check; graph
   `5,491/15,701`, out-degree three. Direct gates and the controlled 18-stage
   overlay pass at checkpoint `562cc3db21df`; changed evidence is clean for
-  Block 45 (`1/1`) and the stack (`45/45`). Science commit is `7954748635`.
+  Block 45 (`1/1`) and the stack (`45/45`). Science commit is `7954748635`;
+  campaign conformance is `5a2039a915`. PR #6137 is open, mergeable, and
+  `CLEAN`, stacked exactly on Block-44 delivery head `d91500ca4e`;
+  independent audit remains required.
 - Scope: bounded current-axiom non-entailment and a sufficient unadopted
   Admissibility--Record composition interface, not a selected update, gravity
   no-go, full-frequency edge theorem, axiom necessity/minimality/adoption,

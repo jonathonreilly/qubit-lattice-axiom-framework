@@ -1,0 +1,1103 @@
+{
+  "artifact": "translation-uniform two-overlapping-star bounded census primary",
+  "audit_status_authority": "independent audit lane only",
+  "checks": {
+    "A_PATCH_CONSTRUCTION": true,
+    "B_UNIFORMITY_TEST": true,
+    "C_OVERLAP_CONSISTENCY": true,
+    "D_VERDICT": true,
+    "E_CONTROLS": true
+  },
+  "controls": {
+    "all_inputs_relative_and_present": true,
+    "base_is_ancestor_of_head": true,
+    "base_origin_main_commit": "ea0968c71ad46c39c6dacb39f88a18780363b71f",
+    "blob_pins_match": true,
+    "blocked_ast_imports": [],
+    "blocklist_ast_fragments": [
+      "cycle970",
+      "cycle972",
+      "cycle977",
+      "cycle979",
+      "cycle980",
+      "cycle982"
+    ],
+    "blocklist_text_disjoint_from_reads": true,
+    "blocklist_text_paths": [
+      "docs/WITNESS_FAMILY_COMPLETENESS_CYCLE977_BOUNDED_THEOREM_NOTE_2026-08-10.md",
+      "docs/CLASS_COEXISTENCE_BORN_REQUIREMENT_CYCLE979_BOUNDED_THEOREM_NOTE_2026-08-10.md",
+      "docs/WITNESS_ORBIT_MULTIPLICITY_CYCLE980_BOUNDED_THEOREM_NOTE_2026-08-11.md",
+      "docs/Z3_ADJACENCY_DEPENDENCE_CLASSES_CYCLE982_BOUNDED_THEOREM_NOTE_2026-08-11.md"
+    ],
+    "determinism_replay": true,
+    "house_stdout_limit_bytes": 6000,
+    "input_git_blobs": {
+      "docs/MINIMAL_AXIOMS_2026-06-29.md": "2f5fdd26898f62c17fcabc846761f7785c2eadb1"
+    },
+    "input_sha256": {
+      "docs/MINIMAL_AXIOMS_2026-06-29.md": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39"
+    },
+    "literal_audit_input_paths": [
+      "docs/MINIMAL_AXIOMS_2026-06-29.md"
+    ],
+    "literal_source_read_count": 1,
+    "pinned_substrate": {
+      "blob_pin_match": true,
+      "commit": "39c74017b870c27c804e3992f2a11e90336476b2",
+      "git_blob": "c123b8d681c3d76fce08ef13d7673622deac64ad",
+      "loaded_from_immutable_git_archive": true,
+      "path": "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+      "sha256": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
+      "sha_pin_match": true
+    },
+    "prior_cycle_text_or_ast_executed": false,
+    "runtime_budget_met": true,
+    "runtime_budget_seconds": 1400,
+    "sha_pins_match": true,
+    "stdout_bytes": 810,
+    "stdout_limit_bytes": 150000
+  },
+  "cycle": 983,
+  "findings": {
+    "A_PATCH_CONSTRUCTION": {
+      "center_separation_L1": 1,
+      "closed_star_intersection": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "closed_star_intersection_size": 2,
+      "closed_star_union_size": 12,
+      "family": {
+        "cap": "all 23 relative descriptors at each of two targets; both target bits; all 2^6 neighbour conditions; every neighbour-bit edge comparison; no sampling",
+        "relative_family_digest": "d7cb67193f1b63a3f08181410c320ac570cc4652002971274028d69baed7a430",
+        "relative_family_size_per_target": 23,
+        "rule_schema": "at target t: I; X(t); CNOT(t+d->t) for every signed unit d; TOF(t+d,t+e->t) for every unordered pair of distinct signed units",
+        "site_menu": [
+          0,
+          1
+        ],
+        "site_program_instance_count": 46,
+        "target_count": 2,
+        "word_length": "zero or one"
+      },
+      "host_support_definition": "Omega=union over t in P2x of {t} union {t+d: ||d||_1=1}",
+      "host_support_site_count": 12,
+      "host_support_sites": [
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          -1,
+          0
+        ],
+        [
+          1,
+          0,
+          -1
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          0
+        ]
+      ],
+      "minimality": {
+        "chosen_patch_attains_minimum": true,
+        "distinct_centres_required": true,
+        "maximum_intersection_for_distinct_closed_unit_stars": 2,
+        "minimum_union_size_for_two_distinct_overlapping_closed_unit_stars": 12,
+        "number_of_stars": 2,
+        "offset_census_digest": "d0ede7566aead5dae9f488ccf9881857b0adf52b3ec51581cdc11a4ea504b5a0",
+        "overlapping_offset_count_with_L1_at_most_2": 24,
+        "reason": "two is the smallest number of stars exceeding one; exhaustive relative offsets with nonempty intersection give maximum intersection two and minimum union twelve"
+      },
+      "patch_name": "P2x_ADJACENT_TWO_CENTRE_CLOSED_STAR_PATCH",
+      "scope_convention": "the patch sites at which the rule is asserted are the two target-domain sites; the other ten Omega sites are declared support-only halo, not silently tested targets",
+      "stars": [
+        {
+          "center": [
+            0,
+            0,
+            0
+          ],
+          "name": "A",
+          "site_count": 7,
+          "sites_in_local_wire_order": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              -1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              -1,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              -1
+            ]
+          ]
+        },
+        {
+          "center": [
+            1,
+            0,
+            0
+          ],
+          "name": "B",
+          "site_count": 7,
+          "sites_in_local_wire_order": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0
+            ],
+            [
+              1,
+              -1,
+              0
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              -1
+            ]
+          ]
+        }
+      ],
+      "support_site_roles": [
+        {
+          "closed_star_memberships": [
+            "A"
+          ],
+          "induced_support_degree": 1,
+          "role": "support_only_halo",
+          "site": [
+            -1,
+            0,
+            0
+          ]
+        },
+        {
+          "closed_star_memberships": [
+            "A"
+          ],
+          "induced_support_degree": 2,
+          "role": "support_only_halo",
+          "site": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "closed_star_memberships": [
+            "A"
+          ],
+          "induced_support_degree": 2,
+          "role": "support_only_halo",
+          "site": [
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "closed_star_memberships": [
+            "A",
+            "B"
+          ],
+          "induced_support_degree": 6,
+          "role": "target",
+          "site": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "closed_star_memberships": [
+            "A"
+          ],
+          "induced_support_degree": 2,
+          "role": "support_only_halo",
+          "site": [
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "closed_star_memberships": [
+            "A"
+          ],
+          "induced_support_degree": 2,
+          "role": "support_only_halo",
+          "site": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "closed_star_memberships": [
+            "B"
+          ],
+          "induced_support_degree": 2,
+          "role": "support_only_halo",
+          "site": [
+            1,
+            -1,
+            0
+          ]
+        },
+        {
+          "closed_star_memberships": [
+            "B"
+          ],
+          "induced_support_degree": 2,
+          "role": "support_only_halo",
+          "site": [
+            1,
+            0,
+            -1
+          ]
+        },
+        {
+          "closed_star_memberships": [
+            "A",
+            "B"
+          ],
+          "induced_support_degree": 6,
+          "role": "target",
+          "site": [
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "closed_star_memberships": [
+            "B"
+          ],
+          "induced_support_degree": 2,
+          "role": "support_only_halo",
+          "site": [
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "closed_star_memberships": [
+            "B"
+          ],
+          "induced_support_degree": 2,
+          "role": "support_only_halo",
+          "site": [
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "closed_star_memberships": [
+            "B"
+          ],
+          "induced_support_degree": 1,
+          "role": "support_only_halo",
+          "site": [
+            2,
+            0,
+            0
+          ]
+        }
+      ],
+      "target_domain_definition": "P2x={(0,0,0),(1,0,0)}",
+      "target_site_count": 2,
+      "target_sites": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    "B_UNIFORMITY_TEST": {
+      "all_patch_target_sites_tested": true,
+      "classification": "translation_uniform_on_every_target_site_of_P2x",
+      "one_rule": {
+        "formula": "at target t: I; X(t); CNOT(t+d->t) for every signed unit d; TOF(t+d,t+e->t) for every unordered pair of distinct signed units",
+        "relative_family_digest": "d7cb67193f1b63a3f08181410c320ac570cc4652002971274028d69baed7a430",
+        "translated_descriptor_table_digest": "7c0a60a225a5f21fed07b652af817f114ef36676a20c90c67f34454cc5588946",
+        "translation_vector_A_to_B": [
+          1,
+          0,
+          0
+        ]
+      },
+      "per_site_census": [
+        {
+          "complete_six_neighbour_star_present": true,
+          "landed_vs_independent_truth_failure_count": 0,
+          "normalized_structure_digest": "264f7da9d4c69a12224491ed43e9560419271e87d00765b9c88aa70e96ebed4e",
+          "orbit_decomposition": {
+            "J_constant_on_each_orbit": true,
+            "J_distinct_across_orbits": true,
+            "action_closed_on_witnesses": true,
+            "effective_group": "proper cubic rotation group",
+            "effective_group_order": 24,
+            "orbit_count": 3,
+            "orbits": [
+              {
+                "J_values": [
+                  1
+                ],
+                "class_label": "CNOT",
+                "effective_stabilizer_order": 4,
+                "member_count": 6,
+                "members": [
+                  "CNOT(+x->C)",
+                  "CNOT(+y->C)",
+                  "CNOT(+z->C)",
+                  "CNOT(-x->C)",
+                  "CNOT(-y->C)",
+                  "CNOT(-z->C)"
+                ],
+                "orbit_closed_in_witness_set": true,
+                "orbit_stabilizer_product": 24,
+                "representative": "CNOT(+x->C)"
+              },
+              {
+                "J_values": [
+                  0
+                ],
+                "class_label": "TOF_OPPOSITE_CONTROLS",
+                "effective_stabilizer_order": 8,
+                "member_count": 3,
+                "members": [
+                  "TOF(+x,-x->C)",
+                  "TOF(+y,-y->C)",
+                  "TOF(+z,-z->C)"
+                ],
+                "orbit_closed_in_witness_set": true,
+                "orbit_stabilizer_product": 24,
+                "representative": "TOF(+x,-x->C)"
+              },
+              {
+                "J_values": [
+                  2
+                ],
+                "class_label": "TOF_PERPENDICULAR_CONTROLS",
+                "effective_stabilizer_order": 2,
+                "member_count": 12,
+                "members": [
+                  "TOF(+x,+y->C)",
+                  "TOF(+x,+z->C)",
+                  "TOF(+x,-y->C)",
+                  "TOF(+x,-z->C)",
+                  "TOF(+y,+z->C)",
+                  "TOF(+y,-z->C)",
+                  "TOF(-x,+y->C)",
+                  "TOF(-x,+z->C)",
+                  "TOF(-x,-y->C)",
+                  "TOF(-x,-z->C)",
+                  "TOF(-y,+z->C)",
+                  "TOF(-y,-z->C)"
+                ],
+                "orbit_closed_in_witness_set": true,
+                "orbit_stabilizer_product": 24,
+                "representative": "TOF(+x,+y->C)"
+              }
+            ],
+            "partition_has_no_overlap_or_omission": true
+          },
+          "relative_family_size": 23,
+          "route_host": {
+            "all_words_routable": true,
+            "classification": "complete_target_star_hosted",
+            "expanded_primitive_count": 232,
+            "maximum_route_distance": 2,
+            "maximum_touched_sites": 3,
+            "non_nn_failure_count": 0,
+            "operand_order_failure_count": 0,
+            "route_return_failure_count": 0,
+            "route_rows_digest": "1f046a15ca7ac5fbb1135092490d9652841523f873a27fb3e00489061a097688",
+            "routed_nn_gate_count": 292
+          },
+          "target_name": "A",
+          "target_site": [
+            0,
+            0,
+            0
+          ],
+          "truth_table_evaluations": 2944,
+          "witness_assignments": [
+            {
+              "J": 1,
+              "changed_edge_pairs": 64,
+              "class_label": "CNOT",
+              "global_word": "CNOT((1,0,0)->(0,0,0))",
+              "relative_word": "CNOT(+x->C)"
+            },
+            {
+              "J": 1,
+              "changed_edge_pairs": 64,
+              "class_label": "CNOT",
+              "global_word": "CNOT((-1,0,0)->(0,0,0))",
+              "relative_word": "CNOT(-x->C)"
+            },
+            {
+              "J": 1,
+              "changed_edge_pairs": 64,
+              "class_label": "CNOT",
+              "global_word": "CNOT((0,1,0)->(0,0,0))",
+              "relative_word": "CNOT(+y->C)"
+            },
+            {
+              "J": 1,
+              "changed_edge_pairs": 64,
+              "class_label": "CNOT",
+              "global_word": "CNOT((0,-1,0)->(0,0,0))",
+              "relative_word": "CNOT(-y->C)"
+            },
+            {
+              "J": 1,
+              "changed_edge_pairs": 64,
+              "class_label": "CNOT",
+              "global_word": "CNOT((0,0,1)->(0,0,0))",
+              "relative_word": "CNOT(+z->C)"
+            },
+            {
+              "J": 1,
+              "changed_edge_pairs": 64,
+              "class_label": "CNOT",
+              "global_word": "CNOT((0,0,-1)->(0,0,0))",
+              "relative_word": "CNOT(-z->C)"
+            },
+            {
+              "J": 0,
+              "changed_edge_pairs": 64,
+              "class_label": "TOF_OPPOSITE_CONTROLS",
+              "global_word": "TOF((1,0,0),(-1,0,0)->(0,0,0))",
+              "relative_word": "TOF(+x,-x->C)"
+            },
+            {
+              "J": 2,
+              "changed_edge_pairs": 64,
+              "class_label": "TOF_PERPENDICULAR_CONTROLS",
+              "global_word": "TOF((1,0,0),(0,1,0)->(0,0,0))",
+              "relative_word": "TOF(+x,+y->C)"
+            },
+            {
+              "J": 2,
+              "changed_edge_pairs": 64,
+              "class_label": "TOF_PERPENDICULAR_CONTROLS",
+              "global_word": "TOF((1,0,0),(0,-1,0)->(0,0,0))",
+              "relative_word": "TOF(+x,-y->C)"
+            },
+            {
+              "J": 2,
+              "changed_edge_pairs": 64,
+              "class_label": "TOF_PERPENDICULAR_CONTROLS",
+              "global_word": "TOF((1,0,0),(0,0,1)->(0,0,0))",
+              "relative_word": "TOF(+x,+z->C)"
+            },
+            {
+              "J": 2,
+              "changed_edge_pairs": 64,
+              "class_label": "TOF_PERPENDICULAR_CONTROLS",
+              "global_word": "TOF((1,0,0),(0,0,-1)->(0,0,0))",
+              "relative_word": "TOF(+x,-z->C)"
+            },
+            {
+              "J": 2,
+              "changed_edge_pairs": 64,
+              "class_label": "TOF_PERPENDICULAR_CONTROLS",
+              "global_word": "TOF((-1,0,0),(0,1,0)->(0,0,0))",
+              "relative_word": "TOF(-x,+y->C)"
+            },
+            {
+              "J": 2,
+              "changed_edge_pairs": 64,
+              "class_label": "TOF_PERPENDICULAR_CONTROLS",
+              "global_word": "TOF((-1,0,0),(0,-1,0)->(0,0,0))",
+              "relative_word": "TOF(-x,-y->C)"
+            },
+            {
+              "J": 2,
+              "changed_edge_pairs": 64,
+              "class_label": "TOF_PERPENDICULAR_CONTROLS",
+              "global_word": "TOF((-1,0,0),(0,0,1)->(0,0,0))",
+              "relative_word": "TOF(-x,+z->C)"
+            },
+            {
+              "J": 2,
+              "changed_edge_pairs": 64,
+              "class_label": "TOF_PERPENDICULAR_CONTROLS",
+              "global_word": "TOF((-1,0,0),(0,0,-1)->(0,0,0))",
+              "relative_word": "TOF(-x,-z->C)"
+            },
+            {
+              "J": 0,
+              "changed_edge_pairs": 64,
+              "class_label": "TOF_OPPOSITE_CONTROLS",
+              "global_word": "TOF((0,1,0),(0,-1,0)->(0,0,0))",
+              "relative_word": "TOF(+y,-y->C)"
+            },
+            {
+              "J": 2,
+              "changed_edge_pairs": 64,
+              "class_label": "TOF_PERPENDICULAR_CONTROLS",
+              "global_word": "TOF((0,1,0),(0,0,1)->(0,0,0))",
+              "relative_word": "TOF(+y,+z->C)"
+            },
+            {
+              "J": 2,
+              "changed_edge_pairs": 64,
+              "class_label": "TOF_PERPENDICULAR_CONTROLS",
+              "global_word": "TOF((0,1,0),(0,0,-1)->(0,0,0))",
+              "relative_word": "TOF(+y,-z->C)"
+            },
+            {
+              "J": 2,
+              "changed_edge_pairs": 64,
+              "class_label": "TOF_PERPENDICULAR_CONTROLS",
+              "global_word": "TOF((0,-1,0),(0,0,1)->(0,0,0))",
+              "relative_word": "TOF(-y,+z->C)"
+            },
+            {
+              "J": 2,
+              "changed_edge_pairs": 64,
+              "class_label": "TOF_PERPENDICULAR_CONTROLS",
+              "global_word": "TOF((0,-1,0),(0,0,-1)->(0,0,0))",
+              "relative_word": "TOF(-y,-z->C)"
+            },
+            {
+              "J": 0,
+              "changed_edge_pairs": 64,
+              "class_label": "TOF_OPPOSITE_CONTROLS",
+              "global_word": "TOF((0,0,1),(0,0,-1)->(0,0,0))",
+              "relative_word": "TOF(+z,-z->C)"
+            }
+          ],
+          "witness_count": 21,
+          "witness_names": [
+            "CNOT(+x->C)",
+            "CNOT(-x->C)",
+            "CNOT(+y->C)",
+            "CNOT(-y->C)",
+            "CNOT(+z->C)",
+            "CNOT(-z->C)",
+            "TOF(+x,-x->C)",
+            "TOF(+x,+y->C)",
+            "TOF(+x,-y->C)",
+            "TOF(+x,+z->C)",
+            "TOF(+x,-z->C)",
+            "TOF(-x,+y->C)",
+            "TOF(-x,-y->C)",
+            "TOF(-x,+z->C)",
+            "TOF(-x,-z->C)",
+            "TOF(+y,-y->C)",
+            "TOF(+y,+z->C)",
+            "TOF(+y,-z->C)",
+            "TOF(-y,+z->C)",
+            "TOF(-y,-z->C)",
+            "TOF(+z,-z->C)"
+          ]
+        },
+        {
+          "complete_six_neighbour_star_present": true,
+          "landed_vs_independent_truth_failure_count": 0,
+          "normalized_structure_digest": "264f7da9d4c69a12224491ed43e9560419271e87d00765b9c88aa70e96ebed4e",
+          "orbit_decomposition": {
+            "J_constant_on_each_orbit": true,
+            "J_distinct_across_orbits": true,
+            "action_closed_on_witnesses": true,
+            "effective_group": "proper cubic rotation group",
+            "effective_group_order": 24,
+            "orbit_count": 3,
+            "orbits": [
+              {
+                "J_values": [
+                  1
+                ],
+                "class_label": "CNOT",
+                "effective_stabilizer_order": 4,
+                "member_count": 6,
+                "members": [
+                  "CNOT(+x->C)",
+                  "CNOT(+y->C)",
+                  "CNOT(+z->C)",
+                  "CNOT(-x->C)",
+                  "CNOT(-y->C)",
+                  "CNOT(-z->C)"
+                ],
+                "orbit_closed_in_witness_set": true,
+                "orbit_stabilizer_product": 24,
+                "representative": "CNOT(+x->C)"
+              },
+              {
+                "J_values": [
+                  0
+                ],
+                "class_label": "TOF_OPPOSITE_CONTROLS",
+                "effective_stabilizer_order": 8,
+                "member_count": 3,
+                "members": [
+                  "TOF(+x,-x->C)",
+                  "TOF(+y,-y->C)",
+                  "TOF(+z,-z->C)"
+                ],
+                "orbit_closed_in_witness_set": true,
+                "orbit_stabilizer_product": 24,
+                "representative": "TOF(+x,-x->C)"
+              },
+              {
+                "J_values": [
+                  2
+                ],
+                "class_label": "TOF_PERPENDICULAR_CONTROLS",
+                "effective_stabilizer_order": 2,
+                "member_count": 12,
+                "members": [
+                  "TOF(+x,+y->C)",
+                  "TOF(+x,+z->C)",
+                  "TOF(+x,-y->C)",
+                  "TOF(+x,-z->C)",
+                  "TOF(+y,+z->C)",
+                  "TOF(+y,-z->C)",
+                  "TOF(-x,+y->C)",
+                  "TOF(-x,+z->C)",
+                  "TOF(-x,-y->C)",
+                  "TOF(-x,-z->C)",
+                  "TOF(-y,+z->C)",
+                  "TOF(-y,-z->C)"
+                ],
+                "orbit_closed_in_witness_set": true,
+                "orbit_stabilizer_product": 24,
+                "representative": "TOF(+x,+y->C)"
+              }
+            ],
+            "partition_has_no_overlap_or_omission": true
+          },
+          "relative_family_size": 23,
+          "route_host": {
+            "all_words_routable": true,
+            "classification": "complete_target_star_hosted",
+            "expanded_primitive_count": 232,
+            "maximum_route_distance": 2,
+            "maximum_touched_sites": 3,
+            "non_nn_failure_count": 0,
+            "operand_order_failure_count": 0,
+            "route_return_failure_count": 0,
+            "route_rows_digest": "e6dda1aaa712ebbfdeca3be15bf77cd1767f05ce598a2505f573e77394145e2b",
+            "routed_nn_gate_count": 292
+          },
+          "target_name": "B",
+          "target_site": [
+            1,
+            0,
+            0
+          ],
+          "truth_table_evaluations": 2944,
+          "witness_assignments": [
+            {
+              "J": 1,
+              "changed_edge_pairs": 64,
+              "class_label": "CNOT",
+              "global_word": "CNOT((2,0,0)->(1,0,0))",
+              "relative_word": "CNOT(+x->C)"
+            },
+            {
+              "J": 1,
+              "changed_edge_pairs": 64,
+              "class_label": "CNOT",
+              "global_word": "CNOT((0,0,0)->(1,0,0))",
+              "relative_word": "CNOT(-x->C)"
+            },
+            {
+              "J": 1,
+              "changed_edge_pairs": 64,
+              "class_label": "CNOT",
+              "global_word": "CNOT((1,1,0)->(1,0,0))",
+              "relative_word": "CNOT(+y->C)"
+            },
+            {
+              "J": 1,
+              "changed_edge_pairs": 64,
+              "class_label": "CNOT",
+              "global_word": "CNOT((1,-1,0)->(1,0,0))",
+              "relative_word": "CNOT(-y->C)"
+            },
+            {
+              "J": 1,
+              "changed_edge_pairs": 64,
+              "class_label": "CNOT",
+              "global_word": "CNOT((1,0,1)->(1,0,0))",
+              "relative_word": "CNOT(+z->C)"
+            },
+            {
+              "J": 1,
+              "changed_edge_pairs": 64,
+              "class_label": "CNOT",
+              "global_word": "CNOT((1,0,-1)->(1,0,0))",
+              "relative_word": "CNOT(-z->C)"
+            },
+            {
+              "J": 0,
+              "changed_edge_pairs": 64,
+              "class_label": "TOF_OPPOSITE_CONTROLS",
+              "global_word": "TOF((2,0,0),(0,0,0)->(1,0,0))",
+              "relative_word": "TOF(+x,-x->C)"
+            },
+            {
+              "J": 2,
+              "changed_edge_pairs": 64,
+              "class_label": "TOF_PERPENDICULAR_CONTROLS",
+              "global_word": "TOF((2,0,0),(1,1,0)->(1,0,0))",
+              "relative_word": "TOF(+x,+y->C)"
+            },
+            {
+              "J": 2,
+              "changed_edge_pairs": 64,
+              "class_label": "TOF_PERPENDICULAR_CONTROLS",
+              "global_word": "TOF((2,0,0),(1,-1,0)->(1,0,0))",
+              "relative_word": "TOF(+x,-y->C)"
+            },
+            {
+              "J": 2,
+              "changed_edge_pairs": 64,
+              "class_label": "TOF_PERPENDICULAR_CONTROLS",
+              "global_word": "TOF((2,0,0),(1,0,1)->(1,0,0))",
+              "relative_word": "TOF(+x,+z->C)"
+            },
+            {
+              "J": 2,
+              "changed_edge_pairs": 64,
+              "class_label": "TOF_PERPENDICULAR_CONTROLS",
+              "global_word": "TOF((2,0,0),(1,0,-1)->(1,0,0))",
+              "relative_word": "TOF(+x,-z->C)"
+            },
+            {
+              "J": 2,
+              "changed_edge_pairs": 64,
+              "class_label": "TOF_PERPENDICULAR_CONTROLS",
+              "global_word": "TOF((0,0,0),(1,1,0)->(1,0,0))",
+              "relative_word": "TOF(-x,+y->C)"
+            },
+            {
+              "J": 2,
+              "changed_edge_pairs": 64,
+              "class_label": "TOF_PERPENDICULAR_CONTROLS",
+              "global_word": "TOF((0,0,0),(1,-1,0)->(1,0,0))",
+              "relative_word": "TOF(-x,-y->C)"
+            },
+            {
+              "J": 2,
+              "changed_edge_pairs": 64,
+              "class_label": "TOF_PERPENDICULAR_CONTROLS",
+              "global_word": "TOF((0,0,0),(1,0,1)->(1,0,0))",
+              "relative_word": "TOF(-x,+z->C)"
+            },
+            {
+              "J": 2,
+              "changed_edge_pairs": 64,
+              "class_label": "TOF_PERPENDICULAR_CONTROLS",
+              "global_word": "TOF((0,0,0),(1,0,-1)->(1,0,0))",
+              "relative_word": "TOF(-x,-z->C)"
+            },
+            {
+              "J": 0,
+              "changed_edge_pairs": 64,
+              "class_label": "TOF_OPPOSITE_CONTROLS",
+              "global_word": "TOF((1,1,0),(1,-1,0)->(1,0,0))",
+              "relative_word": "TOF(+y,-y->C)"
+            },
+            {
+              "J": 2,
+              "changed_edge_pairs": 64,
+              "class_label": "TOF_PERPENDICULAR_CONTROLS",
+              "global_word": "TOF((1,1,0),(1,0,1)->(1,0,0))",
+              "relative_word": "TOF(+y,+z->C)"
+            },
+            {
+              "J": 2,
+              "changed_edge_pairs": 64,
+              "class_label": "TOF_PERPENDICULAR_CONTROLS",
+              "global_word": "TOF((1,1,0),(1,0,-1)->(1,0,0))",
+              "relative_word": "TOF(+y,-z->C)"
+            },
+            {
+              "J": 2,
+              "changed_edge_pairs": 64,
+              "class_label": "TOF_PERPENDICULAR_CONTROLS",
+              "global_word": "TOF((1,-1,0),(1,0,1)->(1,0,0))",
+              "relative_word": "TOF(-y,+z->C)"
+            },
+            {
+              "J": 2,
+              "changed_edge_pairs": 64,
+              "class_label": "TOF_PERPENDICULAR_CONTROLS",
+              "global_word": "TOF((1,-1,0),(1,0,-1)->(1,0,0))",
+              "relative_word": "TOF(-y,-z->C)"
+            },
+            {
+              "J": 0,
+              "changed_edge_pairs": 64,
+              "class_label": "TOF_OPPOSITE_CONTROLS",
+              "global_word": "TOF((1,0,1),(1,0,-1)->(1,0,0))",
+              "relative_word": "TOF(+z,-z->C)"
+            }
+          ],
+          "witness_count": 21,
+          "witness_names": [
+            "CNOT(+x->C)",
+            "CNOT(-x->C)",
+            "CNOT(+y->C)",
+            "CNOT(-y->C)",
+            "CNOT(+z->C)",
+            "CNOT(-z->C)",
+            "TOF(+x,-x->C)",
+            "TOF(+x,+y->C)",
+            "TOF(+x,-y->C)",
+            "TOF(+x,+z->C)",
+            "TOF(+x,-z->C)",
+            "TOF(-x,+y->C)",
+            "TOF(-x,-y->C)",
+            "TOF(-x,+z->C)",
+            "TOF(-x,-z->C)",
+            "TOF(+y,-y->C)",
+            "TOF(+y,+z->C)",
+            "TOF(+y,-z->C)",
+            "TOF(-y,+z->C)",
+            "TOF(-y,-z->C)",
+            "TOF(+z,-z->C)"
+          ]
+        }
+      ],
+      "per_site_exact_agreement": {
+        "normalized_structure_digest": true,
+        "relative_family_size": true,
+        "witness_count": true,
+        "witness_names": true
+      },
+      "tested_target_site_count": 2
+    },
+    "C_OVERLAP_CONSISTENCY": {
+      "classification": "exact_agreement_on_all_shared_sites_and_pairs",
+      "overlap_definition": "closed-star intersection and induced semantic-pair intersection",
+      "shared_pair_agreement_table": [
+        {
+          "global_pair": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ]
+          ],
+          "paths_agree_up_to_reversal": true,
+          "semantic_pair_in_both_stars": true,
+          "star_A_J": 1,
+          "star_A_class": "CNOT",
+          "star_A_local_wires_for_sorted_global_pair": [
+            0,
+            1
+          ],
+          "star_A_target_equation": "q_(0,0,0)' = q_(0,0,0) XOR q_(1,0,0)",
+          "star_A_target_to_neighbour_path": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ]
+          ],
+          "star_B_J": 1,
+          "star_B_class": "CNOT",
+          "star_B_local_wires_for_sorted_global_pair": [
+            2,
+            0
+          ],
+          "star_B_target_equation": "q_(1,0,0)' = q_(1,0,0) XOR q_(0,0,0)",
+          "star_B_target_to_neighbour_path": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "target_equations_are_distinct_instances_not_equal_outputs": true,
+          "z3_nearest_neighbour_in_star_A": true,
+          "z3_nearest_neighbour_in_star_B": true
+        }
+      ],
+      "shared_pair_relations_classes_J_and_paths_agree": true,
+      "shared_semantic_pair_count": 1,
+      "shared_site_agreement_table": [
+        {
+          "global_site": [
+            0,
+            0,
+            0
+          ],
+          "global_variable": "q_(0,0,0)",
+          "same_global_site_binding": true,
+          "star_A_local_name": "C",
+          "star_A_local_wire": 0,
+          "star_B_local_name": "-x",
+          "star_B_local_wire": 2
+        },
+        {
+          "global_site": [
+            1,
+            0,
+            0
+          ],
+          "global_variable": "q_(1,0,0)",
+          "same_global_site_binding": true,
+          "star_A_local_name": "+x",
+          "star_A_local_wire": 1,
+          "star_B_local_name": "C",
+          "star_B_local_wire": 0
+        }
+      ],
+      "shared_site_count": 2,
+      "shared_site_global_bindings_agree": true
+    },
+    "D_VERDICT": {
+      "exact_obstruction": null,
+      "full_infinite_translation_uniform_lattice_law_claimed": false,
+      "host_support_site_count": 12,
+      "named_patch": "P2x_ADJACENT_TWO_CENTRE_CLOSED_STAR_PATCH",
+      "scope_established": "one relative 23-program dependence-law schema has the same 21-witness, 6/12/3 proper-cubic class structure and J={1,2,0} at both target sites of P2x, with exact consistency on the two shared sites and one shared pair",
+      "scope_exclusions": [
+        "targets outside the two-site domain P2x",
+        "an infinite allocation of one M2(C) site at every point of Z3",
+        "a simultaneous global execution or schedule of alternative local words",
+        "a translation-uniform admissibility probability or selection rule",
+        "identification of semantic operand availability with geometric adjacency"
+      ],
+      "scope_warning": "translation-uniform at this named finite target-patch scope is not an infinite-lattice theorem",
+      "target_patch_site_count": 2,
+      "verdict": "TRANSLATION_UNIFORM_AT_PATCH_SCOPE"
+    }
+  },
+  "integrity_policy": "checks gate construction and bookkeeping only; uniform, obstructed, and not-hostable outcomes all remain cleanly reportable",
+  "pass": true,
+  "primary_source_sha256": "c4ff78125b1d82954acbcd7fd5e409abe61815bb64c75c1b2ca6a7aa24d6b51d",
+  "science_digest": "8df8634e7a15382481972c5c01ec29fbbe7fd2a54abba82bb31d6fb1d8b8614e",
+  "stdout_sha256": "0e00c3df5b06020cbdb225faea7850a2ac2a3b069a17340952e1f4788acb90b8"
+}

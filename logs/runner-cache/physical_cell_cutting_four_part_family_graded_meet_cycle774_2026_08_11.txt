@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/physical_cell_cutting_four_part_family_graded_meet_cycle774_2026_08_11.py
+runner_sha256: f89a27221d310bbe605e1b007bd3bb8d611a7a6ed6b7fbb1859fc6a3a08ff9a9
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 14.61
+status: ok
+----- stdout -----
+PASS E0 the cell has 2672 unit-determinant subsets, 400 at cost floor 6, 15800 cuttings of 24, 192 pieces in 1975 each, 379200 slots both ways
+PASS E1 the 192 covers hold 8 pieces each and meet every cutting exactly once, and 8 times 1975 is the cutting count 15800
+PASS E2 the 384 maps close under composition, act transitively on pieces and covers, and freely on the 36864 pairs: 96 orbits of 384
+PASS E3 the 16 flips form a subgroup free on the 192 pieces with 12 orbits; each block has dimension 12, and all 16 stack to 192, both primes
+PASS E4 each of the 96 tables carries 384 entries, no two of them share one, and the 96 sum to the all-ones table: 96 times 384 is 36864
+PASS E5 incidence and twin, each a sum of 4 tables, have entry set [0, 1], row sums 8 and column sums 8; the family has 3321960 members
+PASS E6 rejector: a four part sum that repeats one table has entry set [0, 1, 2] and row sums 8, so zero-one comes from disjointness, not from 4
+PASS E7 rejector: the sum of 5 distinct tables is zero-one but its row sums are 10, not 8, so it is the count 4 that gives 8 regularity
+PASS E8 honest negative: all 192 incidence rows are covers, but 0 of the twin's 192 rows is, though the twin is zero-one and 8 regular
+PASS E9 every one of the 96 tables annihilates the whole all-signs block: the per-table kernel dimensions there are [12], the block dimension 12
+PASS E10 honest negative: 12 of the 33 shared kernel dimensions are the automatic all-signs block, so only 21 of the 33 are earned
+PASS E11 both are held by all 16 flips, so both kernels split: dimensions [3, 3, 6, 6, 12] by weight, class-constant, recomposing to 87, both primes
+PASS E12 the per-block meet is [3, 0, 3, 0, 12] by weight, class-constant, recomposing to 33, the meet in the full 192 dimensions, both primes
+PASS E13 the incidence-only directions are the per-block kernel less the meet: [0, 3, 3, 6, 0] by weight, recomposing to 54, and 54 plus 33 is 87
+PASS E14 at all 4 weight-3 patterns the two kernels are 6 and 6 with meet 0, stacking to 12 of 12; being flip-held, these 4 are one fact, not 4
+PASS E15 at weight 1 the two stack to rank 6 of the 12 available with meet 0; at weight 2 they share 3 of 6: the separation is at odd weight
+PASS E16 rejector: a piece swap leaves 1 of 16 flips holding it, and its blocks then sum to 71, not its kernel 87; the incidence gives 87 and 87
+PASS E17 every cover has flip stabiliser of order 2, giving 24 orbits of 8; the 12 piece orbits have size 16, and 24 times 8 is 192
+PASS E18 the orbit quotient is 24 by 12 with entry set [0, 2], row sums 8, column sums 16, and 12 distinct rows each occurring 2 times
+PASS E19 halving those rows gives a 12 by 12 zero-one table, 4 regular in rows and columns, of rank 9 at both primes and corank 3
+PASS E20 its integer kernel is 3 vectors, entries [-1, 0, 1], supports of size 4, disjoint, partitioning the 12 piece orbits, each 2 up and 2 down
+PASS E21 the twin reduces the same way, halved rank 9 and corank 3, and the two null spaces of dimension 3 meet in 3, so they are equal
+PASS E22 honest negative: the two halved quotients differ, 0 of the 24 rows agree in place and the row multisets differ, yet they share a null space
+PASS E23 the incidence row and the twin row share 0 pieces in every one of the 192 rows
+PASS E24 the difference of the two has entry set [-1, 0, 1] and 3072 nonzero entries, which is 192 times 16
+PASS E25 the per-block rank of the difference is [6, 9, 6, 6, 0] by weight, class-constant, recomposing to 102; it vanishes on the all-signs block
+PASS E26 the one swap sweep has 368 members and 185 signatures; kernel totals run 48 to 120, every meet is graded with all-signs entry 12
+PASS E27 honest negative: those meets run 12 to 59 and none reaches 87; the sweep covers 368 of the 3321960 members, a probe, not a census
+PASS E28 honest negative: 169 of the 366 members at weight-3 dimension 6 are transverse to the incidence: transversality is common, not a marker
+PASS E29 the 460 members (368 swaps, 23 quadruples, 70 subsets) realise 130 distinct weight-3 kernels, not 460, 103 of dimension 6, commonest 27
+PASS E30 honest negative: the incidence weight-3 kernel is shared by 13 of the 460 members and the twin's by 2: the graded kernel does not pin it
+the 96 tables partition the all-ones table into 3321960 four-part sums; 12 of the 33 shared kernel dimensions are free, meet [3, 0, 3, 0, 12]
+elapsed 14 s, peak resident 89 MB
+TOTAL: PASS=31 FAIL=0
+
+----- stderr -----
+

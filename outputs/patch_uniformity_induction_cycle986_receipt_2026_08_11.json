@@ -1,0 +1,5080 @@
+{
+  "artifact": "finite-patch star-gluing induction bounded theorem primary",
+  "audit_status_authority": "independent audit lane only",
+  "checks": {
+    "A_GLUING_STEP": true,
+    "B_STEP_VERIFICATION": true,
+    "C_INDUCTION_STATUS": true,
+    "D_CONTROLS": true
+  },
+  "controls": {
+    "all_inputs_relative_and_present": true,
+    "base_is_ancestor_of_head": true,
+    "base_origin_main_commit": "ea0968c71ad46c39c6dacb39f88a18780363b71f",
+    "blob_pins_match": true,
+    "blocked_ast_imports": [],
+    "blocklist_ast_fragments": [
+      "cycle737",
+      "cycle738",
+      "cycle983"
+    ],
+    "blocklist_text_disjoint_from_reads": true,
+    "blocklist_text_paths": [
+      "docs/TRANSLATION_UNIFORM_TWO_STAR_PATCH_CYCLE983_BOUNDED_THEOREM_NOTE_2026-08-11.md",
+      "docs/GENERAL_N_SECTOR_THEOREM_CYCLE738_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "docs/RING_FAMILY_UNIFORMITY_CYCLE737_BOUNDED_THEOREM_NOTE_2026-07-28.md"
+    ],
+    "determinism_replay": true,
+    "house_stdout_limit_bytes": 6000,
+    "input_git_blobs": {
+      "docs/MINIMAL_AXIOMS_2026-06-29.md": "2f5fdd26898f62c17fcabc846761f7785c2eadb1"
+    },
+    "input_sha256": {
+      "docs/MINIMAL_AXIOMS_2026-06-29.md": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39"
+    },
+    "literal_audit_input_paths": [
+      "docs/MINIMAL_AXIOMS_2026-06-29.md"
+    ],
+    "literal_source_read_count": 1,
+    "pinned_substrate": {
+      "blob_pin_match": true,
+      "commit": "39c74017b870c27c804e3992f2a11e90336476b2",
+      "git_blob": "c123b8d681c3d76fce08ef13d7673622deac64ad",
+      "loaded_from_immutable_git_archive": true,
+      "path": "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+      "sha256": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
+      "sha_pin_match": true
+    },
+    "prior_cycle_text_or_ast_executed": false,
+    "runtime_budget_met": true,
+    "runtime_budget_seconds": 1400,
+    "sha_pins_match": true,
+    "stdout_bytes": 940,
+    "stdout_limit_bytes": 150000
+  },
+  "cycle": 986,
+  "findings": {
+    "A_GLUING_STEP": {
+      "checkable_obligations": [
+        "NEW_STAR_OVERLAPS_EXISTING_SUPPORT",
+        "NEW_LOCAL_TEMPLATE_COMPLETE_AND_HOSTABLE",
+        "ALL_NEW_TO_OLD_SHARED_SITE_BINDINGS_AGREE",
+        "ALL_NEW_TO_OLD_SHARED_PAIR_RECORDS_AGREE",
+        "MULTI_CHART_SHARED_SITE_COCYCLE_AGREES"
+      ],
+      "conclusion": "The union chart is uniform on T_k union {s}; no condition is imposed on empty overlaps, and no simultaneous schedule is inferred.",
+      "finite_overlap_census": {
+        "all_overlap_types_exhausted": true,
+        "all_pairwise_chart_restrictions_agree": true,
+        "oriented_overlap_offset_count": 24,
+        "relative_offset_domain": "all nonzero d with S(0) intersection S(d) nonempty",
+        "rows": [
+          {
+            "agreement": true,
+            "centre_distance_L1": 2,
+            "left_target": [
+              0,
+              0,
+              0
+            ],
+            "overlap_type": "AXIAL_DISTANCE_TWO_CENTRES",
+            "pair_relations_boolean_classes_J_and_paths_agree": true,
+            "right_minus_left": [
+              -2,
+              0,
+              0
+            ],
+            "right_target": [
+              -2,
+              0,
+              0
+            ],
+            "shared_pair_agreement_table": [],
+            "shared_pair_count": 0,
+            "shared_site_agreement_table": [
+              {
+                "binding_agrees": true,
+                "global_site": [
+                  -1,
+                  0,
+                  0
+                ],
+                "left_binding": "q_(-1,0,0)",
+                "left_wire": 2,
+                "right_binding": "q_(-1,0,0)",
+                "right_wire": 1
+              }
+            ],
+            "shared_site_count": 1,
+            "site_bindings_agree": true
+          },
+          {
+            "agreement": true,
+            "centre_distance_L1": 2,
+            "left_target": [
+              0,
+              0,
+              0
+            ],
+            "overlap_type": "DIAGONAL_DISTANCE_TWO_CENTRES",
+            "pair_relations_boolean_classes_J_and_paths_agree": true,
+            "right_minus_left": [
+              -1,
+              -1,
+              0
+            ],
+            "right_target": [
+              -1,
+              -1,
+              0
+            ],
+            "shared_pair_agreement_table": [
+              {
+                "canonical_global_path_left": [
+                  [
+                    -1,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    -1,
+                    0
+                  ]
+                ],
+                "canonical_global_path_right": [
+                  [
+                    -1,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    -1,
+                    0
+                  ]
+                ],
+                "canonical_global_paths_agree": true,
+                "global_pair": [
+                  [
+                    -1,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    -1,
+                    0
+                  ]
+                ],
+                "left_J": 2,
+                "left_changed_edge_pairs": 64,
+                "left_class": "TOF_PERPENDICULAR_CONTROLS",
+                "left_descriptor": "TOF(-x,-y->C)",
+                "left_local_wires": [
+                  2,
+                  4
+                ],
+                "normalized_boolean_table_left": [
+                  [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    1,
+                    0
+                  ]
+                ],
+                "normalized_boolean_table_right": [
+                  [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    1,
+                    0
+                  ]
+                ],
+                "normalized_boolean_tables_agree": true,
+                "right_J": 2,
+                "right_changed_edge_pairs": 64,
+                "right_class": "TOF_PERPENDICULAR_CONTROLS",
+                "right_descriptor": "TOF(+x,+y->C)",
+                "right_local_wires": [
+                  3,
+                  1
+                ],
+                "semantic_pair_in_both": true,
+                "z3_edge_left": false,
+                "z3_edge_right": false
+              }
+            ],
+            "shared_pair_count": 1,
+            "shared_site_agreement_table": [
+              {
+                "binding_agrees": true,
+                "global_site": [
+                  -1,
+                  0,
+                  0
+                ],
+                "left_binding": "q_(-1,0,0)",
+                "left_wire": 2,
+                "right_binding": "q_(-1,0,0)",
+                "right_wire": 3
+              },
+              {
+                "binding_agrees": true,
+                "global_site": [
+                  0,
+                  -1,
+                  0
+                ],
+                "left_binding": "q_(0,-1,0)",
+                "left_wire": 4,
+                "right_binding": "q_(0,-1,0)",
+                "right_wire": 1
+              }
+            ],
+            "shared_site_count": 2,
+            "site_bindings_agree": true
+          },
+          {
+            "agreement": true,
+            "centre_distance_L1": 2,
+            "left_target": [
+              0,
+              0,
+              0
+            ],
+            "overlap_type": "DIAGONAL_DISTANCE_TWO_CENTRES",
+            "pair_relations_boolean_classes_J_and_paths_agree": true,
+            "right_minus_left": [
+              -1,
+              0,
+              -1
+            ],
+            "right_target": [
+              -1,
+              0,
+              -1
+            ],
+            "shared_pair_agreement_table": [
+              {
+                "canonical_global_path_left": [
+                  [
+                    -1,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    -1
+                  ]
+                ],
+                "canonical_global_path_right": [
+                  [
+                    -1,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    -1
+                  ]
+                ],
+                "canonical_global_paths_agree": true,
+                "global_pair": [
+                  [
+                    -1,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    -1
+                  ]
+                ],
+                "left_J": 2,
+                "left_changed_edge_pairs": 64,
+                "left_class": "TOF_PERPENDICULAR_CONTROLS",
+                "left_descriptor": "TOF(-x,-z->C)",
+                "left_local_wires": [
+                  2,
+                  6
+                ],
+                "normalized_boolean_table_left": [
+                  [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    1,
+                    0
+                  ]
+                ],
+                "normalized_boolean_table_right": [
+                  [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    1,
+                    0
+                  ]
+                ],
+                "normalized_boolean_tables_agree": true,
+                "right_J": 2,
+                "right_changed_edge_pairs": 64,
+                "right_class": "TOF_PERPENDICULAR_CONTROLS",
+                "right_descriptor": "TOF(+x,+z->C)",
+                "right_local_wires": [
+                  5,
+                  1
+                ],
+                "semantic_pair_in_both": true,
+                "z3_edge_left": false,
+                "z3_edge_right": false
+              }
+            ],
+            "shared_pair_count": 1,
+            "shared_site_agreement_table": [
+              {
+                "binding_agrees": true,
+                "global_site": [
+                  -1,
+                  0,
+                  0
+                ],
+                "left_binding": "q_(-1,0,0)",
+                "left_wire": 2,
+                "right_binding": "q_(-1,0,0)",
+                "right_wire": 5
+              },
+              {
+                "binding_agrees": true,
+                "global_site": [
+                  0,
+                  0,
+                  -1
+                ],
+                "left_binding": "q_(0,0,-1)",
+                "left_wire": 6,
+                "right_binding": "q_(0,0,-1)",
+                "right_wire": 1
+              }
+            ],
+            "shared_site_count": 2,
+            "site_bindings_agree": true
+          },
+          {
+            "agreement": true,
+            "centre_distance_L1": 1,
+            "left_target": [
+              0,
+              0,
+              0
+            ],
+            "overlap_type": "ADJACENT_CENTRES",
+            "pair_relations_boolean_classes_J_and_paths_agree": true,
+            "right_minus_left": [
+              -1,
+              0,
+              0
+            ],
+            "right_target": [
+              -1,
+              0,
+              0
+            ],
+            "shared_pair_agreement_table": [
+              {
+                "canonical_global_path_left": [
+                  [
+                    -1,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    0
+                  ]
+                ],
+                "canonical_global_path_right": [
+                  [
+                    -1,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    0
+                  ]
+                ],
+                "canonical_global_paths_agree": true,
+                "global_pair": [
+                  [
+                    -1,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    0
+                  ]
+                ],
+                "left_J": 1,
+                "left_changed_edge_pairs": 64,
+                "left_class": "CNOT",
+                "left_descriptor": "CNOT(-x->C)",
+                "left_local_wires": [
+                  2,
+                  0
+                ],
+                "normalized_boolean_table_left": [
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    0
+                  ]
+                ],
+                "normalized_boolean_table_right": [
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    0
+                  ]
+                ],
+                "normalized_boolean_tables_agree": true,
+                "right_J": 1,
+                "right_changed_edge_pairs": 64,
+                "right_class": "CNOT",
+                "right_descriptor": "CNOT(+x->C)",
+                "right_local_wires": [
+                  0,
+                  1
+                ],
+                "semantic_pair_in_both": true,
+                "z3_edge_left": true,
+                "z3_edge_right": true
+              }
+            ],
+            "shared_pair_count": 1,
+            "shared_site_agreement_table": [
+              {
+                "binding_agrees": true,
+                "global_site": [
+                  -1,
+                  0,
+                  0
+                ],
+                "left_binding": "q_(-1,0,0)",
+                "left_wire": 2,
+                "right_binding": "q_(-1,0,0)",
+                "right_wire": 0
+              },
+              {
+                "binding_agrees": true,
+                "global_site": [
+                  0,
+                  0,
+                  0
+                ],
+                "left_binding": "q_(0,0,0)",
+                "left_wire": 0,
+                "right_binding": "q_(0,0,0)",
+                "right_wire": 1
+              }
+            ],
+            "shared_site_count": 2,
+            "site_bindings_agree": true
+          },
+          {
+            "agreement": true,
+            "centre_distance_L1": 2,
+            "left_target": [
+              0,
+              0,
+              0
+            ],
+            "overlap_type": "DIAGONAL_DISTANCE_TWO_CENTRES",
+            "pair_relations_boolean_classes_J_and_paths_agree": true,
+            "right_minus_left": [
+              -1,
+              0,
+              1
+            ],
+            "right_target": [
+              -1,
+              0,
+              1
+            ],
+            "shared_pair_agreement_table": [
+              {
+                "canonical_global_path_left": [
+                  [
+                    -1,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    1
+                  ]
+                ],
+                "canonical_global_path_right": [
+                  [
+                    -1,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    1
+                  ]
+                ],
+                "canonical_global_paths_agree": true,
+                "global_pair": [
+                  [
+                    -1,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    1
+                  ]
+                ],
+                "left_J": 2,
+                "left_changed_edge_pairs": 64,
+                "left_class": "TOF_PERPENDICULAR_CONTROLS",
+                "left_descriptor": "TOF(-x,+z->C)",
+                "left_local_wires": [
+                  2,
+                  5
+                ],
+                "normalized_boolean_table_left": [
+                  [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    1,
+                    0
+                  ]
+                ],
+                "normalized_boolean_table_right": [
+                  [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    1,
+                    0
+                  ]
+                ],
+                "normalized_boolean_tables_agree": true,
+                "right_J": 2,
+                "right_changed_edge_pairs": 64,
+                "right_class": "TOF_PERPENDICULAR_CONTROLS",
+                "right_descriptor": "TOF(+x,-z->C)",
+                "right_local_wires": [
+                  6,
+                  1
+                ],
+                "semantic_pair_in_both": true,
+                "z3_edge_left": false,
+                "z3_edge_right": false
+              }
+            ],
+            "shared_pair_count": 1,
+            "shared_site_agreement_table": [
+              {
+                "binding_agrees": true,
+                "global_site": [
+                  -1,
+                  0,
+                  0
+                ],
+                "left_binding": "q_(-1,0,0)",
+                "left_wire": 2,
+                "right_binding": "q_(-1,0,0)",
+                "right_wire": 6
+              },
+              {
+                "binding_agrees": true,
+                "global_site": [
+                  0,
+                  0,
+                  1
+                ],
+                "left_binding": "q_(0,0,1)",
+                "left_wire": 5,
+                "right_binding": "q_(0,0,1)",
+                "right_wire": 1
+              }
+            ],
+            "shared_site_count": 2,
+            "site_bindings_agree": true
+          },
+          {
+            "agreement": true,
+            "centre_distance_L1": 2,
+            "left_target": [
+              0,
+              0,
+              0
+            ],
+            "overlap_type": "DIAGONAL_DISTANCE_TWO_CENTRES",
+            "pair_relations_boolean_classes_J_and_paths_agree": true,
+            "right_minus_left": [
+              -1,
+              1,
+              0
+            ],
+            "right_target": [
+              -1,
+              1,
+              0
+            ],
+            "shared_pair_agreement_table": [
+              {
+                "canonical_global_path_left": [
+                  [
+                    -1,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    0
+                  ]
+                ],
+                "canonical_global_path_right": [
+                  [
+                    -1,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    0
+                  ]
+                ],
+                "canonical_global_paths_agree": true,
+                "global_pair": [
+                  [
+                    -1,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    0
+                  ]
+                ],
+                "left_J": 2,
+                "left_changed_edge_pairs": 64,
+                "left_class": "TOF_PERPENDICULAR_CONTROLS",
+                "left_descriptor": "TOF(-x,+y->C)",
+                "left_local_wires": [
+                  2,
+                  3
+                ],
+                "normalized_boolean_table_left": [
+                  [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    1,
+                    0
+                  ]
+                ],
+                "normalized_boolean_table_right": [
+                  [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    1,
+                    0
+                  ]
+                ],
+                "normalized_boolean_tables_agree": true,
+                "right_J": 2,
+                "right_changed_edge_pairs": 64,
+                "right_class": "TOF_PERPENDICULAR_CONTROLS",
+                "right_descriptor": "TOF(+x,-y->C)",
+                "right_local_wires": [
+                  4,
+                  1
+                ],
+                "semantic_pair_in_both": true,
+                "z3_edge_left": false,
+                "z3_edge_right": false
+              }
+            ],
+            "shared_pair_count": 1,
+            "shared_site_agreement_table": [
+              {
+                "binding_agrees": true,
+                "global_site": [
+                  -1,
+                  0,
+                  0
+                ],
+                "left_binding": "q_(-1,0,0)",
+                "left_wire": 2,
+                "right_binding": "q_(-1,0,0)",
+                "right_wire": 4
+              },
+              {
+                "binding_agrees": true,
+                "global_site": [
+                  0,
+                  1,
+                  0
+                ],
+                "left_binding": "q_(0,1,0)",
+                "left_wire": 3,
+                "right_binding": "q_(0,1,0)",
+                "right_wire": 1
+              }
+            ],
+            "shared_site_count": 2,
+            "site_bindings_agree": true
+          },
+          {
+            "agreement": true,
+            "centre_distance_L1": 2,
+            "left_target": [
+              0,
+              0,
+              0
+            ],
+            "overlap_type": "AXIAL_DISTANCE_TWO_CENTRES",
+            "pair_relations_boolean_classes_J_and_paths_agree": true,
+            "right_minus_left": [
+              0,
+              -2,
+              0
+            ],
+            "right_target": [
+              0,
+              -2,
+              0
+            ],
+            "shared_pair_agreement_table": [],
+            "shared_pair_count": 0,
+            "shared_site_agreement_table": [
+              {
+                "binding_agrees": true,
+                "global_site": [
+                  0,
+                  -1,
+                  0
+                ],
+                "left_binding": "q_(0,-1,0)",
+                "left_wire": 4,
+                "right_binding": "q_(0,-1,0)",
+                "right_wire": 3
+              }
+            ],
+            "shared_site_count": 1,
+            "site_bindings_agree": true
+          },
+          {
+            "agreement": true,
+            "centre_distance_L1": 2,
+            "left_target": [
+              0,
+              0,
+              0
+            ],
+            "overlap_type": "DIAGONAL_DISTANCE_TWO_CENTRES",
+            "pair_relations_boolean_classes_J_and_paths_agree": true,
+            "right_minus_left": [
+              0,
+              -1,
+              -1
+            ],
+            "right_target": [
+              0,
+              -1,
+              -1
+            ],
+            "shared_pair_agreement_table": [
+              {
+                "canonical_global_path_left": [
+                  [
+                    0,
+                    -1,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    -1
+                  ]
+                ],
+                "canonical_global_path_right": [
+                  [
+                    0,
+                    -1,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    -1
+                  ]
+                ],
+                "canonical_global_paths_agree": true,
+                "global_pair": [
+                  [
+                    0,
+                    -1,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    -1
+                  ]
+                ],
+                "left_J": 2,
+                "left_changed_edge_pairs": 64,
+                "left_class": "TOF_PERPENDICULAR_CONTROLS",
+                "left_descriptor": "TOF(-y,-z->C)",
+                "left_local_wires": [
+                  4,
+                  6
+                ],
+                "normalized_boolean_table_left": [
+                  [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    1,
+                    0
+                  ]
+                ],
+                "normalized_boolean_table_right": [
+                  [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    1,
+                    0
+                  ]
+                ],
+                "normalized_boolean_tables_agree": true,
+                "right_J": 2,
+                "right_changed_edge_pairs": 64,
+                "right_class": "TOF_PERPENDICULAR_CONTROLS",
+                "right_descriptor": "TOF(+y,+z->C)",
+                "right_local_wires": [
+                  5,
+                  3
+                ],
+                "semantic_pair_in_both": true,
+                "z3_edge_left": false,
+                "z3_edge_right": false
+              }
+            ],
+            "shared_pair_count": 1,
+            "shared_site_agreement_table": [
+              {
+                "binding_agrees": true,
+                "global_site": [
+                  0,
+                  -1,
+                  0
+                ],
+                "left_binding": "q_(0,-1,0)",
+                "left_wire": 4,
+                "right_binding": "q_(0,-1,0)",
+                "right_wire": 5
+              },
+              {
+                "binding_agrees": true,
+                "global_site": [
+                  0,
+                  0,
+                  -1
+                ],
+                "left_binding": "q_(0,0,-1)",
+                "left_wire": 6,
+                "right_binding": "q_(0,0,-1)",
+                "right_wire": 3
+              }
+            ],
+            "shared_site_count": 2,
+            "site_bindings_agree": true
+          },
+          {
+            "agreement": true,
+            "centre_distance_L1": 1,
+            "left_target": [
+              0,
+              0,
+              0
+            ],
+            "overlap_type": "ADJACENT_CENTRES",
+            "pair_relations_boolean_classes_J_and_paths_agree": true,
+            "right_minus_left": [
+              0,
+              -1,
+              0
+            ],
+            "right_target": [
+              0,
+              -1,
+              0
+            ],
+            "shared_pair_agreement_table": [
+              {
+                "canonical_global_path_left": [
+                  [
+                    0,
+                    -1,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    0
+                  ]
+                ],
+                "canonical_global_path_right": [
+                  [
+                    0,
+                    -1,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    0
+                  ]
+                ],
+                "canonical_global_paths_agree": true,
+                "global_pair": [
+                  [
+                    0,
+                    -1,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    0
+                  ]
+                ],
+                "left_J": 1,
+                "left_changed_edge_pairs": 64,
+                "left_class": "CNOT",
+                "left_descriptor": "CNOT(-y->C)",
+                "left_local_wires": [
+                  4,
+                  0
+                ],
+                "normalized_boolean_table_left": [
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    0
+                  ]
+                ],
+                "normalized_boolean_table_right": [
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    0
+                  ]
+                ],
+                "normalized_boolean_tables_agree": true,
+                "right_J": 1,
+                "right_changed_edge_pairs": 64,
+                "right_class": "CNOT",
+                "right_descriptor": "CNOT(+y->C)",
+                "right_local_wires": [
+                  0,
+                  3
+                ],
+                "semantic_pair_in_both": true,
+                "z3_edge_left": true,
+                "z3_edge_right": true
+              }
+            ],
+            "shared_pair_count": 1,
+            "shared_site_agreement_table": [
+              {
+                "binding_agrees": true,
+                "global_site": [
+                  0,
+                  -1,
+                  0
+                ],
+                "left_binding": "q_(0,-1,0)",
+                "left_wire": 4,
+                "right_binding": "q_(0,-1,0)",
+                "right_wire": 0
+              },
+              {
+                "binding_agrees": true,
+                "global_site": [
+                  0,
+                  0,
+                  0
+                ],
+                "left_binding": "q_(0,0,0)",
+                "left_wire": 0,
+                "right_binding": "q_(0,0,0)",
+                "right_wire": 3
+              }
+            ],
+            "shared_site_count": 2,
+            "site_bindings_agree": true
+          },
+          {
+            "agreement": true,
+            "centre_distance_L1": 2,
+            "left_target": [
+              0,
+              0,
+              0
+            ],
+            "overlap_type": "DIAGONAL_DISTANCE_TWO_CENTRES",
+            "pair_relations_boolean_classes_J_and_paths_agree": true,
+            "right_minus_left": [
+              0,
+              -1,
+              1
+            ],
+            "right_target": [
+              0,
+              -1,
+              1
+            ],
+            "shared_pair_agreement_table": [
+              {
+                "canonical_global_path_left": [
+                  [
+                    0,
+                    -1,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    1
+                  ]
+                ],
+                "canonical_global_path_right": [
+                  [
+                    0,
+                    -1,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    1
+                  ]
+                ],
+                "canonical_global_paths_agree": true,
+                "global_pair": [
+                  [
+                    0,
+                    -1,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    1
+                  ]
+                ],
+                "left_J": 2,
+                "left_changed_edge_pairs": 64,
+                "left_class": "TOF_PERPENDICULAR_CONTROLS",
+                "left_descriptor": "TOF(-y,+z->C)",
+                "left_local_wires": [
+                  4,
+                  5
+                ],
+                "normalized_boolean_table_left": [
+                  [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    1,
+                    0
+                  ]
+                ],
+                "normalized_boolean_table_right": [
+                  [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    1,
+                    0
+                  ]
+                ],
+                "normalized_boolean_tables_agree": true,
+                "right_J": 2,
+                "right_changed_edge_pairs": 64,
+                "right_class": "TOF_PERPENDICULAR_CONTROLS",
+                "right_descriptor": "TOF(+y,-z->C)",
+                "right_local_wires": [
+                  6,
+                  3
+                ],
+                "semantic_pair_in_both": true,
+                "z3_edge_left": false,
+                "z3_edge_right": false
+              }
+            ],
+            "shared_pair_count": 1,
+            "shared_site_agreement_table": [
+              {
+                "binding_agrees": true,
+                "global_site": [
+                  0,
+                  -1,
+                  0
+                ],
+                "left_binding": "q_(0,-1,0)",
+                "left_wire": 4,
+                "right_binding": "q_(0,-1,0)",
+                "right_wire": 6
+              },
+              {
+                "binding_agrees": true,
+                "global_site": [
+                  0,
+                  0,
+                  1
+                ],
+                "left_binding": "q_(0,0,1)",
+                "left_wire": 5,
+                "right_binding": "q_(0,0,1)",
+                "right_wire": 3
+              }
+            ],
+            "shared_site_count": 2,
+            "site_bindings_agree": true
+          },
+          {
+            "agreement": true,
+            "centre_distance_L1": 2,
+            "left_target": [
+              0,
+              0,
+              0
+            ],
+            "overlap_type": "AXIAL_DISTANCE_TWO_CENTRES",
+            "pair_relations_boolean_classes_J_and_paths_agree": true,
+            "right_minus_left": [
+              0,
+              0,
+              -2
+            ],
+            "right_target": [
+              0,
+              0,
+              -2
+            ],
+            "shared_pair_agreement_table": [],
+            "shared_pair_count": 0,
+            "shared_site_agreement_table": [
+              {
+                "binding_agrees": true,
+                "global_site": [
+                  0,
+                  0,
+                  -1
+                ],
+                "left_binding": "q_(0,0,-1)",
+                "left_wire": 6,
+                "right_binding": "q_(0,0,-1)",
+                "right_wire": 5
+              }
+            ],
+            "shared_site_count": 1,
+            "site_bindings_agree": true
+          },
+          {
+            "agreement": true,
+            "centre_distance_L1": 1,
+            "left_target": [
+              0,
+              0,
+              0
+            ],
+            "overlap_type": "ADJACENT_CENTRES",
+            "pair_relations_boolean_classes_J_and_paths_agree": true,
+            "right_minus_left": [
+              0,
+              0,
+              -1
+            ],
+            "right_target": [
+              0,
+              0,
+              -1
+            ],
+            "shared_pair_agreement_table": [
+              {
+                "canonical_global_path_left": [
+                  [
+                    0,
+                    0,
+                    -1
+                  ],
+                  [
+                    0,
+                    0,
+                    0
+                  ]
+                ],
+                "canonical_global_path_right": [
+                  [
+                    0,
+                    0,
+                    -1
+                  ],
+                  [
+                    0,
+                    0,
+                    0
+                  ]
+                ],
+                "canonical_global_paths_agree": true,
+                "global_pair": [
+                  [
+                    0,
+                    0,
+                    -1
+                  ],
+                  [
+                    0,
+                    0,
+                    0
+                  ]
+                ],
+                "left_J": 1,
+                "left_changed_edge_pairs": 64,
+                "left_class": "CNOT",
+                "left_descriptor": "CNOT(-z->C)",
+                "left_local_wires": [
+                  6,
+                  0
+                ],
+                "normalized_boolean_table_left": [
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    0
+                  ]
+                ],
+                "normalized_boolean_table_right": [
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    0
+                  ]
+                ],
+                "normalized_boolean_tables_agree": true,
+                "right_J": 1,
+                "right_changed_edge_pairs": 64,
+                "right_class": "CNOT",
+                "right_descriptor": "CNOT(+z->C)",
+                "right_local_wires": [
+                  0,
+                  5
+                ],
+                "semantic_pair_in_both": true,
+                "z3_edge_left": true,
+                "z3_edge_right": true
+              }
+            ],
+            "shared_pair_count": 1,
+            "shared_site_agreement_table": [
+              {
+                "binding_agrees": true,
+                "global_site": [
+                  0,
+                  0,
+                  -1
+                ],
+                "left_binding": "q_(0,0,-1)",
+                "left_wire": 6,
+                "right_binding": "q_(0,0,-1)",
+                "right_wire": 0
+              },
+              {
+                "binding_agrees": true,
+                "global_site": [
+                  0,
+                  0,
+                  0
+                ],
+                "left_binding": "q_(0,0,0)",
+                "left_wire": 0,
+                "right_binding": "q_(0,0,0)",
+                "right_wire": 5
+              }
+            ],
+            "shared_site_count": 2,
+            "site_bindings_agree": true
+          },
+          {
+            "agreement": true,
+            "centre_distance_L1": 1,
+            "left_target": [
+              0,
+              0,
+              0
+            ],
+            "overlap_type": "ADJACENT_CENTRES",
+            "pair_relations_boolean_classes_J_and_paths_agree": true,
+            "right_minus_left": [
+              0,
+              0,
+              1
+            ],
+            "right_target": [
+              0,
+              0,
+              1
+            ],
+            "shared_pair_agreement_table": [
+              {
+                "canonical_global_path_left": [
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    1
+                  ]
+                ],
+                "canonical_global_path_right": [
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    1
+                  ]
+                ],
+                "canonical_global_paths_agree": true,
+                "global_pair": [
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    1
+                  ]
+                ],
+                "left_J": 1,
+                "left_changed_edge_pairs": 64,
+                "left_class": "CNOT",
+                "left_descriptor": "CNOT(+z->C)",
+                "left_local_wires": [
+                  0,
+                  5
+                ],
+                "normalized_boolean_table_left": [
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    0
+                  ]
+                ],
+                "normalized_boolean_table_right": [
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    0
+                  ]
+                ],
+                "normalized_boolean_tables_agree": true,
+                "right_J": 1,
+                "right_changed_edge_pairs": 64,
+                "right_class": "CNOT",
+                "right_descriptor": "CNOT(-z->C)",
+                "right_local_wires": [
+                  6,
+                  0
+                ],
+                "semantic_pair_in_both": true,
+                "z3_edge_left": true,
+                "z3_edge_right": true
+              }
+            ],
+            "shared_pair_count": 1,
+            "shared_site_agreement_table": [
+              {
+                "binding_agrees": true,
+                "global_site": [
+                  0,
+                  0,
+                  0
+                ],
+                "left_binding": "q_(0,0,0)",
+                "left_wire": 0,
+                "right_binding": "q_(0,0,0)",
+                "right_wire": 6
+              },
+              {
+                "binding_agrees": true,
+                "global_site": [
+                  0,
+                  0,
+                  1
+                ],
+                "left_binding": "q_(0,0,1)",
+                "left_wire": 5,
+                "right_binding": "q_(0,0,1)",
+                "right_wire": 0
+              }
+            ],
+            "shared_site_count": 2,
+            "site_bindings_agree": true
+          },
+          {
+            "agreement": true,
+            "centre_distance_L1": 2,
+            "left_target": [
+              0,
+              0,
+              0
+            ],
+            "overlap_type": "AXIAL_DISTANCE_TWO_CENTRES",
+            "pair_relations_boolean_classes_J_and_paths_agree": true,
+            "right_minus_left": [
+              0,
+              0,
+              2
+            ],
+            "right_target": [
+              0,
+              0,
+              2
+            ],
+            "shared_pair_agreement_table": [],
+            "shared_pair_count": 0,
+            "shared_site_agreement_table": [
+              {
+                "binding_agrees": true,
+                "global_site": [
+                  0,
+                  0,
+                  1
+                ],
+                "left_binding": "q_(0,0,1)",
+                "left_wire": 5,
+                "right_binding": "q_(0,0,1)",
+                "right_wire": 6
+              }
+            ],
+            "shared_site_count": 1,
+            "site_bindings_agree": true
+          },
+          {
+            "agreement": true,
+            "centre_distance_L1": 2,
+            "left_target": [
+              0,
+              0,
+              0
+            ],
+            "overlap_type": "DIAGONAL_DISTANCE_TWO_CENTRES",
+            "pair_relations_boolean_classes_J_and_paths_agree": true,
+            "right_minus_left": [
+              0,
+              1,
+              -1
+            ],
+            "right_target": [
+              0,
+              1,
+              -1
+            ],
+            "shared_pair_agreement_table": [
+              {
+                "canonical_global_path_left": [
+                  [
+                    0,
+                    0,
+                    -1
+                  ],
+                  [
+                    0,
+                    1,
+                    -1
+                  ],
+                  [
+                    0,
+                    1,
+                    0
+                  ]
+                ],
+                "canonical_global_path_right": [
+                  [
+                    0,
+                    0,
+                    -1
+                  ],
+                  [
+                    0,
+                    1,
+                    -1
+                  ],
+                  [
+                    0,
+                    1,
+                    0
+                  ]
+                ],
+                "canonical_global_paths_agree": true,
+                "global_pair": [
+                  [
+                    0,
+                    0,
+                    -1
+                  ],
+                  [
+                    0,
+                    1,
+                    0
+                  ]
+                ],
+                "left_J": 2,
+                "left_changed_edge_pairs": 64,
+                "left_class": "TOF_PERPENDICULAR_CONTROLS",
+                "left_descriptor": "TOF(+y,-z->C)",
+                "left_local_wires": [
+                  6,
+                  3
+                ],
+                "normalized_boolean_table_left": [
+                  [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    1,
+                    0
+                  ]
+                ],
+                "normalized_boolean_table_right": [
+                  [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    1,
+                    0
+                  ]
+                ],
+                "normalized_boolean_tables_agree": true,
+                "right_J": 2,
+                "right_changed_edge_pairs": 64,
+                "right_class": "TOF_PERPENDICULAR_CONTROLS",
+                "right_descriptor": "TOF(-y,+z->C)",
+                "right_local_wires": [
+                  4,
+                  5
+                ],
+                "semantic_pair_in_both": true,
+                "z3_edge_left": false,
+                "z3_edge_right": false
+              }
+            ],
+            "shared_pair_count": 1,
+            "shared_site_agreement_table": [
+              {
+                "binding_agrees": true,
+                "global_site": [
+                  0,
+                  0,
+                  -1
+                ],
+                "left_binding": "q_(0,0,-1)",
+                "left_wire": 6,
+                "right_binding": "q_(0,0,-1)",
+                "right_wire": 4
+              },
+              {
+                "binding_agrees": true,
+                "global_site": [
+                  0,
+                  1,
+                  0
+                ],
+                "left_binding": "q_(0,1,0)",
+                "left_wire": 3,
+                "right_binding": "q_(0,1,0)",
+                "right_wire": 5
+              }
+            ],
+            "shared_site_count": 2,
+            "site_bindings_agree": true
+          },
+          {
+            "agreement": true,
+            "centre_distance_L1": 1,
+            "left_target": [
+              0,
+              0,
+              0
+            ],
+            "overlap_type": "ADJACENT_CENTRES",
+            "pair_relations_boolean_classes_J_and_paths_agree": true,
+            "right_minus_left": [
+              0,
+              1,
+              0
+            ],
+            "right_target": [
+              0,
+              1,
+              0
+            ],
+            "shared_pair_agreement_table": [
+              {
+                "canonical_global_path_left": [
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    0
+                  ]
+                ],
+                "canonical_global_path_right": [
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    0
+                  ]
+                ],
+                "canonical_global_paths_agree": true,
+                "global_pair": [
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    0
+                  ]
+                ],
+                "left_J": 1,
+                "left_changed_edge_pairs": 64,
+                "left_class": "CNOT",
+                "left_descriptor": "CNOT(+y->C)",
+                "left_local_wires": [
+                  0,
+                  3
+                ],
+                "normalized_boolean_table_left": [
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    0
+                  ]
+                ],
+                "normalized_boolean_table_right": [
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    0
+                  ]
+                ],
+                "normalized_boolean_tables_agree": true,
+                "right_J": 1,
+                "right_changed_edge_pairs": 64,
+                "right_class": "CNOT",
+                "right_descriptor": "CNOT(-y->C)",
+                "right_local_wires": [
+                  4,
+                  0
+                ],
+                "semantic_pair_in_both": true,
+                "z3_edge_left": true,
+                "z3_edge_right": true
+              }
+            ],
+            "shared_pair_count": 1,
+            "shared_site_agreement_table": [
+              {
+                "binding_agrees": true,
+                "global_site": [
+                  0,
+                  0,
+                  0
+                ],
+                "left_binding": "q_(0,0,0)",
+                "left_wire": 0,
+                "right_binding": "q_(0,0,0)",
+                "right_wire": 4
+              },
+              {
+                "binding_agrees": true,
+                "global_site": [
+                  0,
+                  1,
+                  0
+                ],
+                "left_binding": "q_(0,1,0)",
+                "left_wire": 3,
+                "right_binding": "q_(0,1,0)",
+                "right_wire": 0
+              }
+            ],
+            "shared_site_count": 2,
+            "site_bindings_agree": true
+          },
+          {
+            "agreement": true,
+            "centre_distance_L1": 2,
+            "left_target": [
+              0,
+              0,
+              0
+            ],
+            "overlap_type": "DIAGONAL_DISTANCE_TWO_CENTRES",
+            "pair_relations_boolean_classes_J_and_paths_agree": true,
+            "right_minus_left": [
+              0,
+              1,
+              1
+            ],
+            "right_target": [
+              0,
+              1,
+              1
+            ],
+            "shared_pair_agreement_table": [
+              {
+                "canonical_global_path_left": [
+                  [
+                    0,
+                    0,
+                    1
+                  ],
+                  [
+                    0,
+                    1,
+                    1
+                  ],
+                  [
+                    0,
+                    1,
+                    0
+                  ]
+                ],
+                "canonical_global_path_right": [
+                  [
+                    0,
+                    0,
+                    1
+                  ],
+                  [
+                    0,
+                    1,
+                    1
+                  ],
+                  [
+                    0,
+                    1,
+                    0
+                  ]
+                ],
+                "canonical_global_paths_agree": true,
+                "global_pair": [
+                  [
+                    0,
+                    0,
+                    1
+                  ],
+                  [
+                    0,
+                    1,
+                    0
+                  ]
+                ],
+                "left_J": 2,
+                "left_changed_edge_pairs": 64,
+                "left_class": "TOF_PERPENDICULAR_CONTROLS",
+                "left_descriptor": "TOF(+y,+z->C)",
+                "left_local_wires": [
+                  5,
+                  3
+                ],
+                "normalized_boolean_table_left": [
+                  [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    1,
+                    0
+                  ]
+                ],
+                "normalized_boolean_table_right": [
+                  [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    1,
+                    0
+                  ]
+                ],
+                "normalized_boolean_tables_agree": true,
+                "right_J": 2,
+                "right_changed_edge_pairs": 64,
+                "right_class": "TOF_PERPENDICULAR_CONTROLS",
+                "right_descriptor": "TOF(-y,-z->C)",
+                "right_local_wires": [
+                  4,
+                  6
+                ],
+                "semantic_pair_in_both": true,
+                "z3_edge_left": false,
+                "z3_edge_right": false
+              }
+            ],
+            "shared_pair_count": 1,
+            "shared_site_agreement_table": [
+              {
+                "binding_agrees": true,
+                "global_site": [
+                  0,
+                  0,
+                  1
+                ],
+                "left_binding": "q_(0,0,1)",
+                "left_wire": 5,
+                "right_binding": "q_(0,0,1)",
+                "right_wire": 4
+              },
+              {
+                "binding_agrees": true,
+                "global_site": [
+                  0,
+                  1,
+                  0
+                ],
+                "left_binding": "q_(0,1,0)",
+                "left_wire": 3,
+                "right_binding": "q_(0,1,0)",
+                "right_wire": 6
+              }
+            ],
+            "shared_site_count": 2,
+            "site_bindings_agree": true
+          },
+          {
+            "agreement": true,
+            "centre_distance_L1": 2,
+            "left_target": [
+              0,
+              0,
+              0
+            ],
+            "overlap_type": "AXIAL_DISTANCE_TWO_CENTRES",
+            "pair_relations_boolean_classes_J_and_paths_agree": true,
+            "right_minus_left": [
+              0,
+              2,
+              0
+            ],
+            "right_target": [
+              0,
+              2,
+              0
+            ],
+            "shared_pair_agreement_table": [],
+            "shared_pair_count": 0,
+            "shared_site_agreement_table": [
+              {
+                "binding_agrees": true,
+                "global_site": [
+                  0,
+                  1,
+                  0
+                ],
+                "left_binding": "q_(0,1,0)",
+                "left_wire": 3,
+                "right_binding": "q_(0,1,0)",
+                "right_wire": 4
+              }
+            ],
+            "shared_site_count": 1,
+            "site_bindings_agree": true
+          },
+          {
+            "agreement": true,
+            "centre_distance_L1": 2,
+            "left_target": [
+              0,
+              0,
+              0
+            ],
+            "overlap_type": "DIAGONAL_DISTANCE_TWO_CENTRES",
+            "pair_relations_boolean_classes_J_and_paths_agree": true,
+            "right_minus_left": [
+              1,
+              -1,
+              0
+            ],
+            "right_target": [
+              1,
+              -1,
+              0
+            ],
+            "shared_pair_agreement_table": [
+              {
+                "canonical_global_path_left": [
+                  [
+                    0,
+                    -1,
+                    0
+                  ],
+                  [
+                    1,
+                    -1,
+                    0
+                  ],
+                  [
+                    1,
+                    0,
+                    0
+                  ]
+                ],
+                "canonical_global_path_right": [
+                  [
+                    0,
+                    -1,
+                    0
+                  ],
+                  [
+                    1,
+                    -1,
+                    0
+                  ],
+                  [
+                    1,
+                    0,
+                    0
+                  ]
+                ],
+                "canonical_global_paths_agree": true,
+                "global_pair": [
+                  [
+                    0,
+                    -1,
+                    0
+                  ],
+                  [
+                    1,
+                    0,
+                    0
+                  ]
+                ],
+                "left_J": 2,
+                "left_changed_edge_pairs": 64,
+                "left_class": "TOF_PERPENDICULAR_CONTROLS",
+                "left_descriptor": "TOF(+x,-y->C)",
+                "left_local_wires": [
+                  4,
+                  1
+                ],
+                "normalized_boolean_table_left": [
+                  [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    1,
+                    0
+                  ]
+                ],
+                "normalized_boolean_table_right": [
+                  [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    1,
+                    0
+                  ]
+                ],
+                "normalized_boolean_tables_agree": true,
+                "right_J": 2,
+                "right_changed_edge_pairs": 64,
+                "right_class": "TOF_PERPENDICULAR_CONTROLS",
+                "right_descriptor": "TOF(-x,+y->C)",
+                "right_local_wires": [
+                  2,
+                  3
+                ],
+                "semantic_pair_in_both": true,
+                "z3_edge_left": false,
+                "z3_edge_right": false
+              }
+            ],
+            "shared_pair_count": 1,
+            "shared_site_agreement_table": [
+              {
+                "binding_agrees": true,
+                "global_site": [
+                  0,
+                  -1,
+                  0
+                ],
+                "left_binding": "q_(0,-1,0)",
+                "left_wire": 4,
+                "right_binding": "q_(0,-1,0)",
+                "right_wire": 2
+              },
+              {
+                "binding_agrees": true,
+                "global_site": [
+                  1,
+                  0,
+                  0
+                ],
+                "left_binding": "q_(1,0,0)",
+                "left_wire": 1,
+                "right_binding": "q_(1,0,0)",
+                "right_wire": 3
+              }
+            ],
+            "shared_site_count": 2,
+            "site_bindings_agree": true
+          },
+          {
+            "agreement": true,
+            "centre_distance_L1": 2,
+            "left_target": [
+              0,
+              0,
+              0
+            ],
+            "overlap_type": "DIAGONAL_DISTANCE_TWO_CENTRES",
+            "pair_relations_boolean_classes_J_and_paths_agree": true,
+            "right_minus_left": [
+              1,
+              0,
+              -1
+            ],
+            "right_target": [
+              1,
+              0,
+              -1
+            ],
+            "shared_pair_agreement_table": [
+              {
+                "canonical_global_path_left": [
+                  [
+                    0,
+                    0,
+                    -1
+                  ],
+                  [
+                    1,
+                    0,
+                    -1
+                  ],
+                  [
+                    1,
+                    0,
+                    0
+                  ]
+                ],
+                "canonical_global_path_right": [
+                  [
+                    0,
+                    0,
+                    -1
+                  ],
+                  [
+                    1,
+                    0,
+                    -1
+                  ],
+                  [
+                    1,
+                    0,
+                    0
+                  ]
+                ],
+                "canonical_global_paths_agree": true,
+                "global_pair": [
+                  [
+                    0,
+                    0,
+                    -1
+                  ],
+                  [
+                    1,
+                    0,
+                    0
+                  ]
+                ],
+                "left_J": 2,
+                "left_changed_edge_pairs": 64,
+                "left_class": "TOF_PERPENDICULAR_CONTROLS",
+                "left_descriptor": "TOF(+x,-z->C)",
+                "left_local_wires": [
+                  6,
+                  1
+                ],
+                "normalized_boolean_table_left": [
+                  [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    1,
+                    0
+                  ]
+                ],
+                "normalized_boolean_table_right": [
+                  [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    1,
+                    0
+                  ]
+                ],
+                "normalized_boolean_tables_agree": true,
+                "right_J": 2,
+                "right_changed_edge_pairs": 64,
+                "right_class": "TOF_PERPENDICULAR_CONTROLS",
+                "right_descriptor": "TOF(-x,+z->C)",
+                "right_local_wires": [
+                  2,
+                  5
+                ],
+                "semantic_pair_in_both": true,
+                "z3_edge_left": false,
+                "z3_edge_right": false
+              }
+            ],
+            "shared_pair_count": 1,
+            "shared_site_agreement_table": [
+              {
+                "binding_agrees": true,
+                "global_site": [
+                  0,
+                  0,
+                  -1
+                ],
+                "left_binding": "q_(0,0,-1)",
+                "left_wire": 6,
+                "right_binding": "q_(0,0,-1)",
+                "right_wire": 2
+              },
+              {
+                "binding_agrees": true,
+                "global_site": [
+                  1,
+                  0,
+                  0
+                ],
+                "left_binding": "q_(1,0,0)",
+                "left_wire": 1,
+                "right_binding": "q_(1,0,0)",
+                "right_wire": 5
+              }
+            ],
+            "shared_site_count": 2,
+            "site_bindings_agree": true
+          },
+          {
+            "agreement": true,
+            "centre_distance_L1": 1,
+            "left_target": [
+              0,
+              0,
+              0
+            ],
+            "overlap_type": "ADJACENT_CENTRES",
+            "pair_relations_boolean_classes_J_and_paths_agree": true,
+            "right_minus_left": [
+              1,
+              0,
+              0
+            ],
+            "right_target": [
+              1,
+              0,
+              0
+            ],
+            "shared_pair_agreement_table": [
+              {
+                "canonical_global_path_left": [
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    1,
+                    0,
+                    0
+                  ]
+                ],
+                "canonical_global_path_right": [
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    1,
+                    0,
+                    0
+                  ]
+                ],
+                "canonical_global_paths_agree": true,
+                "global_pair": [
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    1,
+                    0,
+                    0
+                  ]
+                ],
+                "left_J": 1,
+                "left_changed_edge_pairs": 64,
+                "left_class": "CNOT",
+                "left_descriptor": "CNOT(+x->C)",
+                "left_local_wires": [
+                  0,
+                  1
+                ],
+                "normalized_boolean_table_left": [
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    0
+                  ]
+                ],
+                "normalized_boolean_table_right": [
+                  [
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    0
+                  ]
+                ],
+                "normalized_boolean_tables_agree": true,
+                "right_J": 1,
+                "right_changed_edge_pairs": 64,
+                "right_class": "CNOT",
+                "right_descriptor": "CNOT(-x->C)",
+                "right_local_wires": [
+                  2,
+                  0
+                ],
+                "semantic_pair_in_both": true,
+                "z3_edge_left": true,
+                "z3_edge_right": true
+              }
+            ],
+            "shared_pair_count": 1,
+            "shared_site_agreement_table": [
+              {
+                "binding_agrees": true,
+                "global_site": [
+                  0,
+                  0,
+                  0
+                ],
+                "left_binding": "q_(0,0,0)",
+                "left_wire": 0,
+                "right_binding": "q_(0,0,0)",
+                "right_wire": 2
+              },
+              {
+                "binding_agrees": true,
+                "global_site": [
+                  1,
+                  0,
+                  0
+                ],
+                "left_binding": "q_(1,0,0)",
+                "left_wire": 1,
+                "right_binding": "q_(1,0,0)",
+                "right_wire": 0
+              }
+            ],
+            "shared_site_count": 2,
+            "site_bindings_agree": true
+          },
+          {
+            "agreement": true,
+            "centre_distance_L1": 2,
+            "left_target": [
+              0,
+              0,
+              0
+            ],
+            "overlap_type": "DIAGONAL_DISTANCE_TWO_CENTRES",
+            "pair_relations_boolean_classes_J_and_paths_agree": true,
+            "right_minus_left": [
+              1,
+              0,
+              1
+            ],
+            "right_target": [
+              1,
+              0,
+              1
+            ],
+            "shared_pair_agreement_table": [
+              {
+                "canonical_global_path_left": [
+                  [
+                    0,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    0
+                  ]
+                ],
+                "canonical_global_path_right": [
+                  [
+                    0,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    0
+                  ]
+                ],
+                "canonical_global_paths_agree": true,
+                "global_pair": [
+                  [
+                    0,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    0
+                  ]
+                ],
+                "left_J": 2,
+                "left_changed_edge_pairs": 64,
+                "left_class": "TOF_PERPENDICULAR_CONTROLS",
+                "left_descriptor": "TOF(+x,+z->C)",
+                "left_local_wires": [
+                  5,
+                  1
+                ],
+                "normalized_boolean_table_left": [
+                  [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    1,
+                    0
+                  ]
+                ],
+                "normalized_boolean_table_right": [
+                  [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    1,
+                    0
+                  ]
+                ],
+                "normalized_boolean_tables_agree": true,
+                "right_J": 2,
+                "right_changed_edge_pairs": 64,
+                "right_class": "TOF_PERPENDICULAR_CONTROLS",
+                "right_descriptor": "TOF(-x,-z->C)",
+                "right_local_wires": [
+                  2,
+                  6
+                ],
+                "semantic_pair_in_both": true,
+                "z3_edge_left": false,
+                "z3_edge_right": false
+              }
+            ],
+            "shared_pair_count": 1,
+            "shared_site_agreement_table": [
+              {
+                "binding_agrees": true,
+                "global_site": [
+                  0,
+                  0,
+                  1
+                ],
+                "left_binding": "q_(0,0,1)",
+                "left_wire": 5,
+                "right_binding": "q_(0,0,1)",
+                "right_wire": 2
+              },
+              {
+                "binding_agrees": true,
+                "global_site": [
+                  1,
+                  0,
+                  0
+                ],
+                "left_binding": "q_(1,0,0)",
+                "left_wire": 1,
+                "right_binding": "q_(1,0,0)",
+                "right_wire": 6
+              }
+            ],
+            "shared_site_count": 2,
+            "site_bindings_agree": true
+          },
+          {
+            "agreement": true,
+            "centre_distance_L1": 2,
+            "left_target": [
+              0,
+              0,
+              0
+            ],
+            "overlap_type": "DIAGONAL_DISTANCE_TWO_CENTRES",
+            "pair_relations_boolean_classes_J_and_paths_agree": true,
+            "right_minus_left": [
+              1,
+              1,
+              0
+            ],
+            "right_target": [
+              1,
+              1,
+              0
+            ],
+            "shared_pair_agreement_table": [
+              {
+                "canonical_global_path_left": [
+                  [
+                    0,
+                    1,
+                    0
+                  ],
+                  [
+                    1,
+                    1,
+                    0
+                  ],
+                  [
+                    1,
+                    0,
+                    0
+                  ]
+                ],
+                "canonical_global_path_right": [
+                  [
+                    0,
+                    1,
+                    0
+                  ],
+                  [
+                    1,
+                    1,
+                    0
+                  ],
+                  [
+                    1,
+                    0,
+                    0
+                  ]
+                ],
+                "canonical_global_paths_agree": true,
+                "global_pair": [
+                  [
+                    0,
+                    1,
+                    0
+                  ],
+                  [
+                    1,
+                    0,
+                    0
+                  ]
+                ],
+                "left_J": 2,
+                "left_changed_edge_pairs": 64,
+                "left_class": "TOF_PERPENDICULAR_CONTROLS",
+                "left_descriptor": "TOF(+x,+y->C)",
+                "left_local_wires": [
+                  3,
+                  1
+                ],
+                "normalized_boolean_table_left": [
+                  [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    1,
+                    0
+                  ]
+                ],
+                "normalized_boolean_table_right": [
+                  [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    1,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    0,
+                    1,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    0,
+                    1
+                  ],
+                  [
+                    1,
+                    1,
+                    1,
+                    0
+                  ]
+                ],
+                "normalized_boolean_tables_agree": true,
+                "right_J": 2,
+                "right_changed_edge_pairs": 64,
+                "right_class": "TOF_PERPENDICULAR_CONTROLS",
+                "right_descriptor": "TOF(-x,-y->C)",
+                "right_local_wires": [
+                  2,
+                  4
+                ],
+                "semantic_pair_in_both": true,
+                "z3_edge_left": false,
+                "z3_edge_right": false
+              }
+            ],
+            "shared_pair_count": 1,
+            "shared_site_agreement_table": [
+              {
+                "binding_agrees": true,
+                "global_site": [
+                  0,
+                  1,
+                  0
+                ],
+                "left_binding": "q_(0,1,0)",
+                "left_wire": 3,
+                "right_binding": "q_(0,1,0)",
+                "right_wire": 2
+              },
+              {
+                "binding_agrees": true,
+                "global_site": [
+                  1,
+                  0,
+                  0
+                ],
+                "left_binding": "q_(1,0,0)",
+                "left_wire": 1,
+                "right_binding": "q_(1,0,0)",
+                "right_wire": 4
+              }
+            ],
+            "shared_site_count": 2,
+            "site_bindings_agree": true
+          },
+          {
+            "agreement": true,
+            "centre_distance_L1": 2,
+            "left_target": [
+              0,
+              0,
+              0
+            ],
+            "overlap_type": "AXIAL_DISTANCE_TWO_CENTRES",
+            "pair_relations_boolean_classes_J_and_paths_agree": true,
+            "right_minus_left": [
+              2,
+              0,
+              0
+            ],
+            "right_target": [
+              2,
+              0,
+              0
+            ],
+            "shared_pair_agreement_table": [],
+            "shared_pair_count": 0,
+            "shared_site_agreement_table": [
+              {
+                "binding_agrees": true,
+                "global_site": [
+                  1,
+                  0,
+                  0
+                ],
+                "left_binding": "q_(1,0,0)",
+                "left_wire": 1,
+                "right_binding": "q_(1,0,0)",
+                "right_wire": 2
+              }
+            ],
+            "shared_site_count": 1,
+            "site_bindings_agree": true
+          }
+        ],
+        "type_summary": [
+          {
+            "J_values": [
+              1
+            ],
+            "all_agree": true,
+            "oriented_offset_count": 6,
+            "overlap_type": "ADJACENT_CENTRES",
+            "pair_classes": [
+              "CNOT"
+            ],
+            "shared_pair_counts": [
+              1
+            ],
+            "shared_site_counts": [
+              2
+            ],
+            "z3_edge_values": [
+              true
+            ]
+          },
+          {
+            "J_values": [],
+            "all_agree": true,
+            "oriented_offset_count": 6,
+            "overlap_type": "AXIAL_DISTANCE_TWO_CENTRES",
+            "pair_classes": [],
+            "shared_pair_counts": [
+              0
+            ],
+            "shared_site_counts": [
+              1
+            ],
+            "z3_edge_values": []
+          },
+          {
+            "J_values": [
+              2
+            ],
+            "all_agree": true,
+            "oriented_offset_count": 12,
+            "overlap_type": "DIAGONAL_DISTANCE_TWO_CENTRES",
+            "pair_classes": [
+              "TOF_PERPENDICULAR_CONTROLS"
+            ],
+            "shared_pair_counts": [
+              1
+            ],
+            "shared_site_counts": [
+              2
+            ],
+            "z3_edge_values": [
+              false
+            ]
+          }
+        ]
+      },
+      "hypothesis": "Given a uniform k-target patch T_k with support Omega_k, a distinct target s extends it when S(s) intersects Omega_k; the translated 23-program chart at s is route-hostable; for every old chart S(t) meeting S(s), both restrictions agree on every shared global site and shared semantic pair (Z3-edge label, normalized Boolean table, witness strength, proper-cubic class, J, and canonical global path); and multiply shared sites satisfy the equality cocycle.",
+      "lemma_name": "FINITE_CLOSED_STAR_CHART_GLUING_STEP",
+      "proof_reduction": "Every datum of the union is either old, new-only, or shared. Old and new-only data keep their chart values; the pairwise restriction equalities make shared data single-valued, and equality transitivity gives the site cocycle. The local rule record is the same translated template at every target.",
+      "universal_local_step_finding": "VERIFIED_FOR_EVERY_NONEMPTY_TWO_STAR_OVERLAP_TYPE"
+    },
+    "B_STEP_VERIFICATION": {
+      "all_three_overlap_types_exercised": true,
+      "case_count": 2,
+      "verified_cases": [
+        {
+          "case": "k=2_to_3",
+          "exact_obstruction": null,
+          "existing_targets": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ]
+          ],
+          "k": 2,
+          "multiply_shared_site_count": 1,
+          "new_star_overlap_with_existing_union_site_count": 2,
+          "new_support_site_count": 17,
+          "new_target": [
+            2,
+            0,
+            0
+          ],
+          "new_target_census": {
+            "all_words_routable": true,
+            "class_size_J_table": [
+              [
+                "CNOT",
+                6,
+                [
+                  1
+                ]
+              ],
+              [
+                "TOF_OPPOSITE_CONTROLS",
+                3,
+                [
+                  0
+                ]
+              ],
+              [
+                "TOF_PERPENDICULAR_CONTROLS",
+                12,
+                [
+                  2
+                ]
+              ]
+            ],
+            "complete_closed_star": true,
+            "expanded_primitive_count": 232,
+            "landed_vs_boolean_failure_count": 0,
+            "maximum_route_distance": 2,
+            "maximum_touched_sites": 3,
+            "orbit_stabilizer_products": [
+              24,
+              24,
+              24
+            ],
+            "relative_family_size": 23,
+            "route_failure_count": 0,
+            "routed_nn_gate_count": 292,
+            "target": [
+              2,
+              0,
+              0
+            ],
+            "truth_table_evaluations": 2944,
+            "witness_count": 21
+          },
+          "new_to_old_agreement_table": [
+            {
+              "agreement": true,
+              "centre_distance_L1": 2,
+              "left_target": [
+                0,
+                0,
+                0
+              ],
+              "overlap_type": "AXIAL_DISTANCE_TWO_CENTRES",
+              "pair_relations_boolean_classes_J_and_paths_agree": true,
+              "right_minus_left": [
+                2,
+                0,
+                0
+              ],
+              "right_target": [
+                2,
+                0,
+                0
+              ],
+              "shared_pair_agreement_table": [],
+              "shared_pair_count": 0,
+              "shared_site_agreement_table": [
+                {
+                  "binding_agrees": true,
+                  "global_site": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "left_binding": "q_(1,0,0)",
+                  "left_wire": 1,
+                  "right_binding": "q_(1,0,0)",
+                  "right_wire": 2
+                }
+              ],
+              "shared_site_count": 1,
+              "site_bindings_agree": true
+            },
+            {
+              "agreement": true,
+              "centre_distance_L1": 1,
+              "left_target": [
+                1,
+                0,
+                0
+              ],
+              "overlap_type": "ADJACENT_CENTRES",
+              "pair_relations_boolean_classes_J_and_paths_agree": true,
+              "right_minus_left": [
+                1,
+                0,
+                0
+              ],
+              "right_target": [
+                2,
+                0,
+                0
+              ],
+              "shared_pair_agreement_table": [
+                {
+                  "canonical_global_path_left": [
+                    [
+                      1,
+                      0,
+                      0
+                    ],
+                    [
+                      2,
+                      0,
+                      0
+                    ]
+                  ],
+                  "canonical_global_path_right": [
+                    [
+                      1,
+                      0,
+                      0
+                    ],
+                    [
+                      2,
+                      0,
+                      0
+                    ]
+                  ],
+                  "canonical_global_paths_agree": true,
+                  "global_pair": [
+                    [
+                      1,
+                      0,
+                      0
+                    ],
+                    [
+                      2,
+                      0,
+                      0
+                    ]
+                  ],
+                  "left_J": 1,
+                  "left_changed_edge_pairs": 64,
+                  "left_class": "CNOT",
+                  "left_descriptor": "CNOT(+x->C)",
+                  "left_local_wires": [
+                    0,
+                    1
+                  ],
+                  "normalized_boolean_table_left": [
+                    [
+                      0,
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      0
+                    ]
+                  ],
+                  "normalized_boolean_table_right": [
+                    [
+                      0,
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      0
+                    ]
+                  ],
+                  "normalized_boolean_tables_agree": true,
+                  "right_J": 1,
+                  "right_changed_edge_pairs": 64,
+                  "right_class": "CNOT",
+                  "right_descriptor": "CNOT(-x->C)",
+                  "right_local_wires": [
+                    2,
+                    0
+                  ],
+                  "semantic_pair_in_both": true,
+                  "z3_edge_left": true,
+                  "z3_edge_right": true
+                }
+              ],
+              "shared_pair_count": 1,
+              "shared_site_agreement_table": [
+                {
+                  "binding_agrees": true,
+                  "global_site": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "left_binding": "q_(1,0,0)",
+                  "left_wire": 0,
+                  "right_binding": "q_(1,0,0)",
+                  "right_wire": 2
+                },
+                {
+                  "binding_agrees": true,
+                  "global_site": [
+                    2,
+                    0,
+                    0
+                  ],
+                  "left_binding": "q_(2,0,0)",
+                  "left_wire": 1,
+                  "right_binding": "q_(2,0,0)",
+                  "right_wire": 0
+                }
+              ],
+              "shared_site_count": 2,
+              "site_bindings_agree": true
+            }
+          ],
+          "outcome": "GLUING_STEP_VERIFIED",
+          "overlap_type_multiset": [
+            "ADJACENT_CENTRES",
+            "AXIAL_DISTANCE_TWO_CENTRES"
+          ],
+          "site_cocycle_table": [
+            {
+              "all_chart_bindings": [
+                "q_(1,0,0)",
+                "q_(1,0,0)",
+                "q_(1,0,0)"
+              ],
+              "global_site": [
+                1,
+                0,
+                0
+              ],
+              "new_chart_binding": "q_(1,0,0)",
+              "old_chart_membership_count": 2,
+              "old_chart_memberships": [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  0,
+                  0
+                ]
+              ],
+              "site_cocycle_agrees": true
+            },
+            {
+              "all_chart_bindings": [
+                "q_(2,0,0)",
+                "q_(2,0,0)"
+              ],
+              "global_site": [
+                2,
+                0,
+                0
+              ],
+              "new_chart_binding": "q_(2,0,0)",
+              "old_chart_membership_count": 1,
+              "old_chart_memberships": [
+                [
+                  1,
+                  0,
+                  0
+                ]
+              ],
+              "site_cocycle_agrees": true
+            }
+          ]
+        },
+        {
+          "case": "k=3_to_4",
+          "exact_obstruction": null,
+          "existing_targets": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              0
+            ]
+          ],
+          "k": 3,
+          "multiply_shared_site_count": 1,
+          "new_star_overlap_with_existing_union_site_count": 4,
+          "new_support_site_count": 20,
+          "new_target": [
+            1,
+            1,
+            0
+          ],
+          "new_target_census": {
+            "all_words_routable": true,
+            "class_size_J_table": [
+              [
+                "CNOT",
+                6,
+                [
+                  1
+                ]
+              ],
+              [
+                "TOF_OPPOSITE_CONTROLS",
+                3,
+                [
+                  0
+                ]
+              ],
+              [
+                "TOF_PERPENDICULAR_CONTROLS",
+                12,
+                [
+                  2
+                ]
+              ]
+            ],
+            "complete_closed_star": true,
+            "expanded_primitive_count": 232,
+            "landed_vs_boolean_failure_count": 0,
+            "maximum_route_distance": 2,
+            "maximum_touched_sites": 3,
+            "orbit_stabilizer_products": [
+              24,
+              24,
+              24
+            ],
+            "relative_family_size": 23,
+            "route_failure_count": 0,
+            "routed_nn_gate_count": 292,
+            "target": [
+              1,
+              1,
+              0
+            ],
+            "truth_table_evaluations": 2944,
+            "witness_count": 21
+          },
+          "new_to_old_agreement_table": [
+            {
+              "agreement": true,
+              "centre_distance_L1": 2,
+              "left_target": [
+                0,
+                0,
+                0
+              ],
+              "overlap_type": "DIAGONAL_DISTANCE_TWO_CENTRES",
+              "pair_relations_boolean_classes_J_and_paths_agree": true,
+              "right_minus_left": [
+                1,
+                1,
+                0
+              ],
+              "right_target": [
+                1,
+                1,
+                0
+              ],
+              "shared_pair_agreement_table": [
+                {
+                  "canonical_global_path_left": [
+                    [
+                      0,
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ]
+                  ],
+                  "canonical_global_path_right": [
+                    [
+                      0,
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ]
+                  ],
+                  "canonical_global_paths_agree": true,
+                  "global_pair": [
+                    [
+                      0,
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ]
+                  ],
+                  "left_J": 2,
+                  "left_changed_edge_pairs": 64,
+                  "left_class": "TOF_PERPENDICULAR_CONTROLS",
+                  "left_descriptor": "TOF(+x,+y->C)",
+                  "left_local_wires": [
+                    3,
+                    1
+                  ],
+                  "normalized_boolean_table_left": [
+                    [
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0,
+                      1,
+                      0
+                    ],
+                    [
+                      0,
+                      1,
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0,
+                      0,
+                      1
+                    ],
+                    [
+                      1,
+                      0,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      0,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1,
+                      0
+                    ]
+                  ],
+                  "normalized_boolean_table_right": [
+                    [
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0,
+                      1,
+                      0
+                    ],
+                    [
+                      0,
+                      1,
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0,
+                      0,
+                      1
+                    ],
+                    [
+                      1,
+                      0,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      0,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1,
+                      0
+                    ]
+                  ],
+                  "normalized_boolean_tables_agree": true,
+                  "right_J": 2,
+                  "right_changed_edge_pairs": 64,
+                  "right_class": "TOF_PERPENDICULAR_CONTROLS",
+                  "right_descriptor": "TOF(-x,-y->C)",
+                  "right_local_wires": [
+                    2,
+                    4
+                  ],
+                  "semantic_pair_in_both": true,
+                  "z3_edge_left": false,
+                  "z3_edge_right": false
+                }
+              ],
+              "shared_pair_count": 1,
+              "shared_site_agreement_table": [
+                {
+                  "binding_agrees": true,
+                  "global_site": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "left_binding": "q_(0,1,0)",
+                  "left_wire": 3,
+                  "right_binding": "q_(0,1,0)",
+                  "right_wire": 2
+                },
+                {
+                  "binding_agrees": true,
+                  "global_site": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "left_binding": "q_(1,0,0)",
+                  "left_wire": 1,
+                  "right_binding": "q_(1,0,0)",
+                  "right_wire": 4
+                }
+              ],
+              "shared_site_count": 2,
+              "site_bindings_agree": true
+            },
+            {
+              "agreement": true,
+              "centre_distance_L1": 1,
+              "left_target": [
+                1,
+                0,
+                0
+              ],
+              "overlap_type": "ADJACENT_CENTRES",
+              "pair_relations_boolean_classes_J_and_paths_agree": true,
+              "right_minus_left": [
+                0,
+                1,
+                0
+              ],
+              "right_target": [
+                1,
+                1,
+                0
+              ],
+              "shared_pair_agreement_table": [
+                {
+                  "canonical_global_path_left": [
+                    [
+                      1,
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      1,
+                      0
+                    ]
+                  ],
+                  "canonical_global_path_right": [
+                    [
+                      1,
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      1,
+                      0
+                    ]
+                  ],
+                  "canonical_global_paths_agree": true,
+                  "global_pair": [
+                    [
+                      1,
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      1,
+                      0
+                    ]
+                  ],
+                  "left_J": 1,
+                  "left_changed_edge_pairs": 64,
+                  "left_class": "CNOT",
+                  "left_descriptor": "CNOT(+y->C)",
+                  "left_local_wires": [
+                    0,
+                    3
+                  ],
+                  "normalized_boolean_table_left": [
+                    [
+                      0,
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      0
+                    ]
+                  ],
+                  "normalized_boolean_table_right": [
+                    [
+                      0,
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      0
+                    ]
+                  ],
+                  "normalized_boolean_tables_agree": true,
+                  "right_J": 1,
+                  "right_changed_edge_pairs": 64,
+                  "right_class": "CNOT",
+                  "right_descriptor": "CNOT(-y->C)",
+                  "right_local_wires": [
+                    4,
+                    0
+                  ],
+                  "semantic_pair_in_both": true,
+                  "z3_edge_left": true,
+                  "z3_edge_right": true
+                }
+              ],
+              "shared_pair_count": 1,
+              "shared_site_agreement_table": [
+                {
+                  "binding_agrees": true,
+                  "global_site": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "left_binding": "q_(1,0,0)",
+                  "left_wire": 0,
+                  "right_binding": "q_(1,0,0)",
+                  "right_wire": 4
+                },
+                {
+                  "binding_agrees": true,
+                  "global_site": [
+                    1,
+                    1,
+                    0
+                  ],
+                  "left_binding": "q_(1,1,0)",
+                  "left_wire": 3,
+                  "right_binding": "q_(1,1,0)",
+                  "right_wire": 0
+                }
+              ],
+              "shared_site_count": 2,
+              "site_bindings_agree": true
+            },
+            {
+              "agreement": true,
+              "centre_distance_L1": 2,
+              "left_target": [
+                2,
+                0,
+                0
+              ],
+              "overlap_type": "DIAGONAL_DISTANCE_TWO_CENTRES",
+              "pair_relations_boolean_classes_J_and_paths_agree": true,
+              "right_minus_left": [
+                -1,
+                1,
+                0
+              ],
+              "right_target": [
+                1,
+                1,
+                0
+              ],
+              "shared_pair_agreement_table": [
+                {
+                  "canonical_global_path_left": [
+                    [
+                      1,
+                      0,
+                      0
+                    ],
+                    [
+                      2,
+                      0,
+                      0
+                    ],
+                    [
+                      2,
+                      1,
+                      0
+                    ]
+                  ],
+                  "canonical_global_path_right": [
+                    [
+                      1,
+                      0,
+                      0
+                    ],
+                    [
+                      2,
+                      0,
+                      0
+                    ],
+                    [
+                      2,
+                      1,
+                      0
+                    ]
+                  ],
+                  "canonical_global_paths_agree": true,
+                  "global_pair": [
+                    [
+                      1,
+                      0,
+                      0
+                    ],
+                    [
+                      2,
+                      1,
+                      0
+                    ]
+                  ],
+                  "left_J": 2,
+                  "left_changed_edge_pairs": 64,
+                  "left_class": "TOF_PERPENDICULAR_CONTROLS",
+                  "left_descriptor": "TOF(-x,+y->C)",
+                  "left_local_wires": [
+                    2,
+                    3
+                  ],
+                  "normalized_boolean_table_left": [
+                    [
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0,
+                      1,
+                      0
+                    ],
+                    [
+                      0,
+                      1,
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0,
+                      0,
+                      1
+                    ],
+                    [
+                      1,
+                      0,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      0,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1,
+                      0
+                    ]
+                  ],
+                  "normalized_boolean_table_right": [
+                    [
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0,
+                      1,
+                      0
+                    ],
+                    [
+                      0,
+                      1,
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0,
+                      0,
+                      1
+                    ],
+                    [
+                      1,
+                      0,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      0,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1,
+                      0
+                    ]
+                  ],
+                  "normalized_boolean_tables_agree": true,
+                  "right_J": 2,
+                  "right_changed_edge_pairs": 64,
+                  "right_class": "TOF_PERPENDICULAR_CONTROLS",
+                  "right_descriptor": "TOF(+x,-y->C)",
+                  "right_local_wires": [
+                    4,
+                    1
+                  ],
+                  "semantic_pair_in_both": true,
+                  "z3_edge_left": false,
+                  "z3_edge_right": false
+                }
+              ],
+              "shared_pair_count": 1,
+              "shared_site_agreement_table": [
+                {
+                  "binding_agrees": true,
+                  "global_site": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "left_binding": "q_(1,0,0)",
+                  "left_wire": 2,
+                  "right_binding": "q_(1,0,0)",
+                  "right_wire": 4
+                },
+                {
+                  "binding_agrees": true,
+                  "global_site": [
+                    2,
+                    1,
+                    0
+                  ],
+                  "left_binding": "q_(2,1,0)",
+                  "left_wire": 3,
+                  "right_binding": "q_(2,1,0)",
+                  "right_wire": 1
+                }
+              ],
+              "shared_site_count": 2,
+              "site_bindings_agree": true
+            }
+          ],
+          "outcome": "GLUING_STEP_VERIFIED",
+          "overlap_type_multiset": [
+            "ADJACENT_CENTRES",
+            "DIAGONAL_DISTANCE_TWO_CENTRES",
+            "DIAGONAL_DISTANCE_TWO_CENTRES"
+          ],
+          "site_cocycle_table": [
+            {
+              "all_chart_bindings": [
+                "q_(0,1,0)",
+                "q_(0,1,0)"
+              ],
+              "global_site": [
+                0,
+                1,
+                0
+              ],
+              "new_chart_binding": "q_(0,1,0)",
+              "old_chart_membership_count": 1,
+              "old_chart_memberships": [
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "site_cocycle_agrees": true
+            },
+            {
+              "all_chart_bindings": [
+                "q_(1,0,0)",
+                "q_(1,0,0)",
+                "q_(1,0,0)",
+                "q_(1,0,0)"
+              ],
+              "global_site": [
+                1,
+                0,
+                0
+              ],
+              "new_chart_binding": "q_(1,0,0)",
+              "old_chart_membership_count": 3,
+              "old_chart_memberships": [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  0,
+                  0
+                ],
+                [
+                  2,
+                  0,
+                  0
+                ]
+              ],
+              "site_cocycle_agrees": true
+            },
+            {
+              "all_chart_bindings": [
+                "q_(1,1,0)",
+                "q_(1,1,0)"
+              ],
+              "global_site": [
+                1,
+                1,
+                0
+              ],
+              "new_chart_binding": "q_(1,1,0)",
+              "old_chart_membership_count": 1,
+              "old_chart_memberships": [
+                [
+                  1,
+                  0,
+                  0
+                ]
+              ],
+              "site_cocycle_agrees": true
+            },
+            {
+              "all_chart_bindings": [
+                "q_(2,1,0)",
+                "q_(2,1,0)"
+              ],
+              "global_site": [
+                2,
+                1,
+                0
+              ],
+              "new_chart_binding": "q_(2,1,0)",
+              "old_chart_membership_count": 1,
+              "old_chart_memberships": [
+                [
+                  2,
+                  0,
+                  0
+                ]
+              ],
+              "site_cocycle_agrees": true
+            }
+          ]
+        }
+      ]
+    },
+    "C_INDUCTION_STATUS": {
+      "base_case": "P2x={(0,0,0),(1,0,0)} with the two complete closed stars; reconstructed inside this runner without executing prior-cycle text or AST",
+      "exact_obstruction": null,
+      "exact_quantifier": "for every integer n>=2 and every ordered tuple of distinct targets (t1,...,tn) in Z^3 such that t2-t1 is a signed unit vector and, for each m=3,...,n, S(tm) intersects the union of S(ti) for i<m, the same relative 23-program dependence-law chart is translation-uniform on all targets of the finite support union Omega_n",
+      "full_infinite_translation_uniform_lattice_law_claimed": false,
+      "induction_status": "FINITE_PATCH_INDUCTION_CLOSES_AT_DECLARED_SCOPE",
+      "infinite_scope_reason": "ordinary finite induction quantifies over each finite n separately; it neither constructs an infinite allocation nor proves compatible infinite execution",
+      "scope_exclusions": [
+        "the infinite target set Z^3 as one executed or allocated patch",
+        "a simultaneous conflict-free schedule of alternative local words",
+        "a probability distribution, admissibility weight, or selection rule",
+        "finite patches outside the stated P2x-rooted star-gluing order"
+      ],
+      "target_count_scope": "arbitrary finite n>=2 within the exact quantified family",
+      "verdict_line": "FINITE_P2X_ROOTED_STAR_GLUED_PATCH_UNIFORMITY_FOR_ARBITRARY_FINITE_TARGET_COUNT"
+    }
+  },
+  "integrity_policy": "checks gate construction, reconciliation, and provenance only; verified, obstructed, not-hostable, and not-glueable outcomes remain cleanly reportable",
+  "pass": true,
+  "primary_source_sha256": "b4f0a055807b97247613623d9a13bddcb678a4e05b55da97805bcd3ab6ce5636",
+  "science_digest": "1b1a61862b4afd711da688c6b9776fab1ce2c2ac1e4e4b78753042d7a68c52af",
+  "stdout_sha256": "2cab39376bb3123c0dd9e5e34049ef668158d0706d3d5816111f0d58629d8da2"
+}

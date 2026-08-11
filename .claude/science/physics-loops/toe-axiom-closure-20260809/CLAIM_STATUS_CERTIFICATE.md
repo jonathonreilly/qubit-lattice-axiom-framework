@@ -1427,9 +1427,15 @@ lines are in the landing primary cache.
   `K_iso<=-0.030463496853`.
 - Quotient: `L=3` local-frame tangent rank is `162/162`; augmenting by the
   isotropic target raises rank to `163` with residual `5.196152423`.
-- Evidence: source/input-pinned cache is `PASS=14 FAIL=0`; citation graph is
-  `5,488/15,688`, out-degree five. Full conformance, commit, push, PR, and
-  independent audit are pending.
+- Evidence: source/input-pinned cache is `PASS=14 FAIL=0`; independent
+  runner-free reconstruction is `PASS=5 FAIL=0`; citation graph is
+  `5,488/15,688`, out-degree five. Science commit is `cad138fb65`; direct
+  conformance passes. The exact stack seeds `4,826` rows / `3,704` runners and
+  reaches only the inherited stage-7 dependency-policy epoch mismatch. A
+  controlled five-file current-main overlay passes all 18 stages at checkpoint
+  `1465d650908b`. Seeded changed evidence is clean for Block 42 alone (`1/1`),
+  with zero failures and zero control failures. Push, PR, and independent audit
+  are pending.
 - Scope: bounded unchanged-flat-branch instability, not a gravity no-go,
   full spectrum, nonflat exclusion, fifth-axiom result, percentage move, or
   audit verdict. Fresh N1--N8 and N5 land; no `review-loop` is used.

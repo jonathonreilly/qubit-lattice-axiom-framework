@@ -1967,8 +1967,14 @@ instance or Fourier census.
 - Obtained `K_iso<=-0.030463496853`; the `L=3` gauge tangent rank rises
   `162 ->163` when the physical mode is appended.
 - Fresh N1--N8 and all five N5 lines land. Primary execution is
-  `PASS=14 FAIL=0`; graph is `5,488/15,688`, out-degree five. Commit, full
-  conformance, PR, and independent audit are pending.
+  `PASS=14 FAIL=0`; independent reconstruction is `PASS=5 FAIL=0`; graph is
+  `5,488/15,688`, out-degree five. Science commit is `cad138fb65`; direct
+  conformance passes. The exact stack seeds `4,826` rows / `3,704` runners and
+  reaches only the inherited stage-7 dependency-policy epoch mismatch; the
+  controlled five-file current-main overlay passes all 18 stages at checkpoint
+  `1465d650908b`. Seeded changed evidence is clean for Block 42 (`1/1`), with
+  zero failures or control failures. Push, PR, and independent audit are
+  pending.
 
 ## Block 41 Construction And Adversarial Record
 

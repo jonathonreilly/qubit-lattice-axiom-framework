@@ -599,9 +599,14 @@ exactly on Block-41 delivery head `66a824a29c`. Its review object is the
 stationary-domain contraction, six-neighbor spatial-orbit bound, exact
 isotropic EC commutator Hessian, strongest Record stabilization bound, and
 physical quotient negative mode. Primary cache is `PASS=14 FAIL=0`; citation
-registration is `5,488/15,688`, out-degree five. Science commit, conformance,
-push, PR, and independent audit are pending. No canonical edit, percentage
-move, audit verdict, or `review-loop` is used.
+registration is `5,488/15,688`, out-degree five. Science commit is
+`cad138fb65`; independent reconstruction is `PASS=5 FAIL=0`; direct
+conformance passes. The exact stack reaches only the inherited stage-7
+dependency-policy epoch mismatch after `4,826` rows / `3,704` runners; the
+controlled five-file current-main overlay passes all 18 stages at checkpoint
+`1465d650908b`. Changed evidence is clean for Block 42 (`1/1`). Push, PR, and
+independent audit are pending. No canonical edit, percentage move, audit
+verdict, or `review-loop` is used.
 
 Block 41 is local on branch
 `physics-loop/toe-axiom-closure-block41-nonzero-hessian-20260811`, stacked

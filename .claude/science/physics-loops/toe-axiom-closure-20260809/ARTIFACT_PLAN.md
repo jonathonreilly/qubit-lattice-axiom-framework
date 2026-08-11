@@ -1027,5 +1027,10 @@ complete conditional nonlinear compact solution:
   nonflat, joint-phase, and Lorentzian routes explicit
 - campaign state: retire a full Bloch census of the unchanged unstable saddle
   and promote relational/derivative Ward-law repair to rank one
-- current evidence: graph `5,488/15,688`, out-degree five; commit, full
-  conformance, push, PR, and independent audit pending
+- current evidence: science commit `cad138fb65`; graph `5,488/15,688`,
+  out-degree five; exact stack seeds `4,826` rows / `3,704` runners and reaches
+  only the inherited stage-7 dependency-policy epoch mismatch; the controlled
+  five-file current-main overlay passes all 18 stages at checkpoint
+  `1465d650908b`; changed evidence is clean for Block 42 alone (`1/1`), with
+  zero failures and zero control failures; push, PR, and independent audit
+  pending

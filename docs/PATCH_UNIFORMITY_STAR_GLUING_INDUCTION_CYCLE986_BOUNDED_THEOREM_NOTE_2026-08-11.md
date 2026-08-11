@@ -75,8 +75,10 @@ simultaneously.
 
 The only framework source read by the primary is
 [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md). The landed
-Cycle-719 route core is loaded from an immutable Git archive and separately
-SHA-256/Git-blob pinned. Earlier induction and two-star artifacts supplied the
+[`RECURRENT_MATTER_HISTORY_CONTROLLER_CYCLE719_BOUNDED_THEOREM_NOTE_2026-07-26.md`](RECURRENT_MATTER_HISTORY_CONTROLLER_CYCLE719_BOUNDED_THEOREM_NOTE_2026-07-26.md)
+is the documentation authority for the computed route substrate. Its route
+core is loaded from an immutable Git archive and separately SHA-256/Git-blob
+pinned. Earlier induction and two-star artifacts supplied the
 research question but their text and AST are neither inputs nor executable
 dependencies; the base and step are reconstructed in this packet.
 
@@ -115,6 +117,17 @@ shared. Old-only and new-only values retain their chart values. Pairwise
 restriction equality makes every shared datum single-valued, and transitivity
 of equality supplies the multiple-chart site cocycle. The target-local rule
 record remains one translated template.
+
+The lemma has two explicitly separate layers. Its algebraic layer is the
+ordinary compatible-chart statement above: equality of records on every
+pairwise intersection, plus the site cocycle, produces one record on the
+finite union. Its labeling convention is a semantic bridge: each translated
+chart is first expressed in centre-relative wire roles and then bound to the
+coordinate-labelled sites of that chart. Thus “restriction equality” means
+equality of those role-normalized, coordinate-bound records. It does not mean
+that two distinct global target components are identified or required to
+carry the same bit value. The theorem's use of “translation-uniform” is
+limited to this record-schema definition.
 
 This is a genuine induction step rather than another fixed-size census: the
 number of old charts meeting the new star is arbitrary, while each nonempty
@@ -212,14 +225,19 @@ overlap census.
 | item | class | load-bearing role | control |
 |---|---|---|---|
 | minimal axioms | zero-input structural | `Z^3`, nearest-neighbour geometry, translations, proper cubic rotations | byte and Git-blob pinned |
-| Cycle-719 core | one computed lattice input | landed basis-state semantics and Manhattan routing | immutable commit/archive, SHA-256 and Git blob pinned |
+| [Cycle-719 controller](RECURRENT_MATTER_HISTORY_CONTROLLER_CYCLE719_BOUNDED_THEOREM_NOTE_2026-07-26.md) | one computed lattice input | landed basis-state semantics and Manhattan routing | immutable commit, full scripts-tree object, top-module SHA-256 and Git blob pinned |
 | P2x root and star-gluing order | explicit finite boundary condition | exact theorem family | declared in the quantifier |
 | 23-program family | explicit finite boundary condition | target-local alphabet and word-length cap | exhausted, no sampling |
 
 No observed value, fitted selector, literature value, normalization, probability
 weight, new axiom, or new primitive is load-bearing. The primary's literal
-source-read count is one; the independent checker's is three; both are below
-the six-file cap.
+current-surface source-read count is one; the independent checker's is three;
+both are below the six-file cap. Separately, importing the pinned Cycle-719
+core executes a 52-file transitive Python-module closure from the immutable
+historical scripts tree `b74e1639fc2a2250c0de2a56ad33665533a22c81`.
+The primary receipt enumerates those paths and binds their manifest digest;
+this pinned compute closure is not hidden inside the current-surface read
+count.
 
 ### Outcome-neutral integrity policy
 

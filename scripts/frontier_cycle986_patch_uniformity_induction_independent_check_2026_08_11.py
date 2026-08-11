@@ -47,13 +47,18 @@ BYTE_PINNED_INPUT_PATHS = (
     "outputs/patch_uniformity_induction_cycle986_receipt_2026_08_11.json",
 )
 EXPECTED_INPUT_SHA256 = {
-    PRIMARY_PATH: "8967351fa732987aec09d3bb98a336fa66933f6a511e41d3ec884015ca6b7021",
-    PRIMARY_RECEIPT_PATH: "045a1366d589f4fc11d060692d530f01cdd44ccbda921dc14163660a1f112f36",
+    PRIMARY_PATH: "6e5cb0adfe62d8b69a5118e25e9e1287fc0220f9e64dbfc92fcf2d0226e1dbd8",
+    PRIMARY_RECEIPT_PATH: "ec16c67e28f82b39a5ee010fcf15b24b6d232a9cfff90175402c9a5f347e66c8",
 }
 EXPECTED_INPUT_BLOBS = {
-    PRIMARY_PATH: "495b459b74e55d92925e7a64feff32d56925de70",
-    PRIMARY_RECEIPT_PATH: "25d304429c1c660f0a47da30b33105238a077457",
+    PRIMARY_PATH: "8c9d3076c2597c38c76d60aca695d450d8b9e238",
+    PRIMARY_RECEIPT_PATH: "ed53392825afebbbc23399158d03354a4abfcec7",
 }
+EXPECTED_PINNED_SCRIPTS_TREE = "b74e1639fc2a2250c0de2a56ad33665533a22c81"
+EXPECTED_PINNED_MODULE_COUNT = 52
+EXPECTED_PINNED_MODULE_MANIFEST_DIGEST = (
+    "28c792248f66f9b5c4415b37ded3e56df29ed9bdd70f7563eed24bf212c87fd6"
+)
 PRIMARY_INPUT_FINGERPRINT_SHA256 = (
     "db7786cde9df9554b9e925bd8927e6f129e0cdd1546e5ea349a31056104b73bb"
 )
@@ -289,26 +294,33 @@ def kind(left: tuple, right: tuple) -> str:
 
 def independent_overlap(left: tuple, right: tuple) -> dict:
     common = tuple(sorted(set(star(left)) & set(star(right))))
-    sites = [{
-        "global_site": list(site),
-        "left_wire": wire(left, site),
-        "right_wire": wire(right, site),
-        "left_binding": f"q_({site[0]},{site[1]},{site[2]})",
-        "right_binding": f"q_({site[0]},{site[1]},{site[2]})",
-        "binding_agrees": True,
-    } for site in common]
+    sites = []
+    for site in common:
+        left_binding = f"q_({site[0]},{site[1]},{site[2]})"
+        right_binding = f"q_({site[0]},{site[1]},{site[2]})"
+        sites.append({
+            "global_site": list(site),
+            "left_wire": wire(left, site),
+            "right_wire": wire(right, site),
+            "left_binding": left_binding,
+            "right_binding": right_binding,
+            "binding_agrees": left_binding == right_binding,
+        })
     pairs = []
     for pair in combinations(common, 2):
         left_descriptor = pair_descriptor(left, pair)
         right_descriptor = pair_descriptor(right, pair)
         left_table = overlap_table(left_descriptor, left, pair)
         right_table = overlap_table(right_descriptor, right, pair)
-        path = canonical_path(*pair)
+        left_path = canonical_path(*pair)
+        right_path = canonical_path(*pair)
         pairs.append({
             "global_pair": [list(site) for site in pair],
             "left_local_wires": [wire(left, site) for site in pair],
             "right_local_wires": [wire(right, site) for site in pair],
-            "semantic_pair_in_both": True,
+            "semantic_pair_in_both": all(
+                site in star(left) and site in star(right) for site in pair
+            ),
             "z3_edge_left": taxicab(*pair) == 1,
             "z3_edge_right": taxicab(*pair) == 1,
             "left_descriptor": descriptor_name(left_descriptor),
@@ -322,10 +334,21 @@ def independent_overlap(left: tuple, right: tuple) -> dict:
             "normalized_boolean_tables_agree": left_table == right_table,
             "left_changed_edge_pairs": witness_strength(left_descriptor),
             "right_changed_edge_pairs": witness_strength(right_descriptor),
-            "canonical_global_path_left": [list(site) for site in path],
-            "canonical_global_path_right": [list(site) for site in path],
-            "canonical_global_paths_agree": True,
+            "canonical_global_path_left": [list(site) for site in left_path],
+            "canonical_global_path_right": [list(site) for site in right_path],
+            "canonical_global_paths_agree": left_path == right_path,
         })
+    site_agreement = all(row["binding_agrees"] for row in sites)
+    pair_agreement = all(
+        row["semantic_pair_in_both"]
+        and row["z3_edge_left"] == row["z3_edge_right"]
+        and row["left_class"] == row["right_class"]
+        and row["left_J"] == row["right_J"]
+        and row["normalized_boolean_tables_agree"]
+        and row["left_changed_edge_pairs"] == row["right_changed_edge_pairs"]
+        and row["canonical_global_paths_agree"]
+        for row in pairs
+    )
     return {
         "left_target": list(left),
         "right_target": list(right),
@@ -336,17 +359,9 @@ def independent_overlap(left: tuple, right: tuple) -> dict:
         "shared_pair_count": len(pairs),
         "shared_site_agreement_table": sites,
         "shared_pair_agreement_table": pairs,
-        "site_bindings_agree": True,
-        "pair_relations_boolean_classes_J_and_paths_agree": all(
-            row["z3_edge_left"] == row["z3_edge_right"]
-            and row["left_class"] == row["right_class"]
-            and row["left_J"] == row["right_J"]
-            and row["normalized_boolean_tables_agree"]
-            and row["left_changed_edge_pairs"] == row["right_changed_edge_pairs"]
-            and row["canonical_global_paths_agree"]
-            for row in pairs
-        ),
-        "agreement": True,
+        "site_bindings_agree": site_agreement,
+        "pair_relations_boolean_classes_J_and_paths_agree": pair_agreement,
+        "agreement": site_agreement and pair_agreement,
     }
 
 
@@ -373,13 +388,14 @@ def independent_universal() -> dict:
             "z3_edge_values": sorted({row["z3_edge_left"] for row in pair_rows}),
             "all_agree": all(row["agreement"] for row in members),
         })
-    return {
+    result = {
         "oriented_overlap_offset_count": len(rows),
         "rows": rows,
         "type_summary": summary,
-        "all_overlap_types_exhausted": len(rows) == 24,
         "all_pairwise_chart_restrictions_agree": all(row["agreement"] for row in rows),
     }
+    result["all_overlap_types_exhausted"] = overlap_census_complete(result)
+    return result
 
 
 def overlap_census_complete(census: dict) -> bool:
@@ -400,8 +416,69 @@ def overlap_census_complete(census: dict) -> bool:
     return reported_offsets == expected_offsets and reported_type_counts == expected_type_counts
 
 
+def independent_route_census(center: tuple) -> dict:
+    rows = []
+    sites = star(center)
+    for descriptor in family():
+        if descriptor[0] == "I":
+            distances = []
+            physical = 0
+            routed = 0
+            touched = 0
+        elif descriptor[0] == "X":
+            distances = []
+            physical = 1
+            routed = 1
+            touched = 1
+        elif descriptor[0] == "CNOT":
+            distances = [taxicab(sites[descriptor[1]], sites[descriptor[2]])]
+            physical = 1
+            routed = sum(2 * distance - 1 for distance in distances)
+            touched = max(distances) + 1
+        else:
+            left = sites[descriptor[1]]
+            right = sites[descriptor[2]]
+            target = sites[descriptor[3]]
+            # The landed 15-primitive mapped TOF has nine local/NN primitives
+            # plus two uses of each of its three logical operand pairs.
+            distances = [
+                taxicab(left, target), taxicab(right, target),
+                taxicab(left, target), taxicab(right, target),
+                taxicab(left, right), taxicab(left, right),
+            ]
+            physical = 15
+            routed = 9 + sum(2 * distance - 1 for distance in distances)
+            touched = max(distances) + 1
+        bad_distances = sum(distance < 1 or distance > 2 for distance in distances)
+        bad_paths = sum(
+            canonical_path(left, right)[0] != left
+            or canonical_path(left, right)[-1] != right
+            or len(canonical_path(left, right)) != taxicab(left, right) + 1
+            for left, right in combinations(
+                [sites[wire] for wire in descriptor[1:]], 2
+            )
+        ) if descriptor[0] in ("CNOT", "TOF") else 0
+        rows.append({
+            "physical": physical,
+            "routed": routed,
+            "maximum_distance": max(distances, default=0),
+            "touched": touched,
+            "failure_count": bad_distances + bad_paths,
+        })
+    failures = sum(row["failure_count"] for row in rows)
+    return {
+        "all_words_routable": failures == 0,
+        "route_failure_count": failures,
+        "maximum_route_distance": max(row["maximum_distance"] for row in rows),
+        "maximum_touched_sites": max(row["touched"] for row in rows),
+        "expanded_primitive_count": sum(row["physical"] for row in rows),
+        "routed_nn_gate_count": sum(row["routed"] for row in rows),
+    }
+
+
 def independent_target_census(center: tuple) -> dict:
     witnesses = [descriptor for descriptor in family() if witness_strength(descriptor) > 0]
+    route = independent_route_census(center)
     return {
         "target": list(center),
         "complete_closed_star": len(star(center)) == 7,
@@ -411,12 +488,7 @@ def independent_target_census(center: tuple) -> dict:
         "witness_count": len(witnesses),
         "class_size_J_table": independent_class_table(),
         "orbit_stabilizer_products": [24, 24, 24],
-        "all_words_routable": True,
-        "route_failure_count": 0,
-        "maximum_route_distance": 2,
-        "maximum_touched_sites": 3,
-        "expanded_primitive_count": 1 + 6 + 15 * 15,
-        "routed_nn_gate_count": 1 + 6 + 15 * 19,
+        **route,
     }
 
 
@@ -440,7 +512,7 @@ def independent_case(name: str, existing: tuple, new_target: tuple) -> dict:
             "all_chart_bindings": bindings,
             "site_cocycle_agrees": len(set(bindings)) == 1,
         })
-    return {
+    result = {
         "case": name,
         "k": len(existing),
         "existing_targets": [list(target) for target in existing],
@@ -452,15 +524,15 @@ def independent_case(name: str, existing: tuple, new_target: tuple) -> dict:
         "site_cocycle_table": cocycles,
         "multiply_shared_site_count": sum(len(row["old_chart_memberships"]) > 1 for row in cocycles),
         "new_target_census": independent_target_census(new_target),
-        "outcome": "GLUING_STEP_VERIFIED",
-        "exact_obstruction": None,
     }
+    result["outcome"], result["exact_obstruction"] = derive_case_outcome(result)
+    return result
 
 
 def independent_base() -> dict:
     target_rows = [independent_target_census(A), independent_target_census(B)]
     overlap = independent_overlap(A, B)
-    return {
+    result = {
         "targets": [list(A), list(B)],
         "support_site_count": len(set(star(A)) | set(star(B))),
         "per_target_census": target_rows,
@@ -468,24 +540,34 @@ def independent_base() -> dict:
             **target_rows[1], "target": target_rows[0]["target"]
         },
         "adjacent_star_overlap": overlap,
-        "outcome": "P2X_BASE_VERIFIED",
-        "exact_obstruction": None,
     }
+    result["outcome"], result["exact_obstruction"] = derive_base_outcome(result)
+    return result
 
 
 def independent_expected() -> dict:
     universal = independent_universal()
+    base = independent_base()
     cases = [independent_case(*case) for case in CASES]
+    if base["outcome"] != "P2X_BASE_VERIFIED":
+        status = "OBSTRUCTED"
+    elif not (
+        universal["all_overlap_types_exhausted"]
+        and universal["all_pairwise_chart_restrictions_agree"]
+    ):
+        status = "OBSTRUCTED"
+    elif not all(row["outcome"] == "GLUING_STEP_VERIFIED" for row in cases):
+        status = "OBSTRUCTED"
+    else:
+        status = "FINITE_PATCH_INDUCTION_CLOSES_AT_DECLARED_SCOPE"
     return {
         "universal": universal,
-        "base": independent_base(),
+        "base": base,
         "cases": cases,
         "class_table": independent_class_table(),
         "group_order": len(ACTIONS),
-        "induction_status": "FINITE_PATCH_INDUCTION_CLOSES_AT_DECLARED_SCOPE",
-        "verdict_line": (
-            "FINITE_P2X_ROOTED_STAR_GLUED_PATCH_UNIFORMITY_FOR_ARBITRARY_FINITE_TARGET_COUNT"
-        ),
+        "induction_status": status,
+        "verdict_line": verdict_line_for_status(status),
         "exact_quantifier": EXACT_QUANTIFIER,
         "infinite_claimed": False,
     }
@@ -781,6 +863,18 @@ def validate_bookkeeping(receipt: dict, cache_payload: str) -> tuple[bool, list[
         probe.get("accepted_by_bookkeeping_gate") for probe in primary_probes
     ):
         errors.append("primary_outcome_neutrality_probes")
+    pinned = receipt.get("controls", {}).get("pinned_substrate", {})
+    if (
+        pinned.get("scripts_tree") != EXPECTED_PINNED_SCRIPTS_TREE
+        or pinned.get("scripts_tree_pin_match") is not True
+        or pinned.get("loaded_transitive_module_file_count")
+            != EXPECTED_PINNED_MODULE_COUNT
+        or len(pinned.get("loaded_transitive_module_paths", []))
+            != EXPECTED_PINNED_MODULE_COUNT
+        or pinned.get("loaded_transitive_module_manifest_digest")
+            != EXPECTED_PINNED_MODULE_MANIFEST_DIGEST
+    ):
+        errors.append("primary_pinned_module_closure")
 
     cache = parse_cache(cache_payload)
     if not cache.get("valid_envelope"):

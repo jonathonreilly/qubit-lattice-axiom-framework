@@ -39,6 +39,7 @@ PINNED_CYCLE719_CORE_SHA256 = (
     "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4"
 )
 PINNED_CYCLE719_CORE_BLOB = "c123b8d681c3d76fce08ef13d7673622deac64ad"
+PINNED_CYCLE719_SCRIPTS_TREE = "b74e1639fc2a2250c0de2a56ad33665533a22c81"
 
 AUDIT_INPUT_PATHS = ("docs/MINIMAL_AXIOMS_2026-06-29.md",)
 EXPECTED_INPUT_SHA256 = {
@@ -826,6 +827,28 @@ def input_controls() -> dict:
         ["git", "show", f"{PINNED_CYCLE719_COMMIT}:{PINNED_CYCLE719_CORE}"],
         cwd=ROOT, check=True, capture_output=True,
     ).stdout
+    pinned_scripts_tree = subprocess.run(
+        ["git", "rev-parse", f"{PINNED_CYCLE719_COMMIT}:scripts"],
+        cwd=ROOT, check=True, capture_output=True, text=True,
+    ).stdout.strip()
+    pinned_root = Path(PINNED_TEMP.name).resolve()
+    loaded_pinned_modules = {}
+    for module in tuple(sys.modules.values()):
+        module_file = getattr(module, "__file__", None)
+        if not module_file:
+            continue
+        module_path = Path(module_file).resolve()
+        try:
+            relative = module_path.relative_to(pinned_root)
+        except ValueError:
+            continue
+        if module_path.suffix != ".py":
+            continue
+        payload = module_path.read_bytes()
+        loaded_pinned_modules[str(relative)] = {
+            "sha256": sha256(payload).hexdigest(),
+            "git_blob": git_blob(payload),
+        }
     base_is_ancestor = subprocess.run(
         ["git", "merge-base", "--is-ancestor", BASE_ORIGIN_MAIN_COMMIT, "HEAD"],
         cwd=ROOT, check=False, capture_output=True,
@@ -856,6 +879,16 @@ def input_controls() -> dict:
             "sha_pin_match": sha256(pinned_core).hexdigest() == PINNED_CYCLE719_CORE_SHA256,
             "blob_pin_match": git_blob(pinned_core) == PINNED_CYCLE719_CORE_BLOB,
             "loaded_from_immutable_git_archive": True,
+            "scripts_tree": pinned_scripts_tree,
+            "scripts_tree_pin_match": pinned_scripts_tree == PINNED_CYCLE719_SCRIPTS_TREE,
+            "loaded_transitive_module_file_count": len(loaded_pinned_modules),
+            "loaded_transitive_module_manifest_digest": digest(loaded_pinned_modules),
+            "loaded_transitive_module_paths": sorted(loaded_pinned_modules),
+            "source_read_accounting": (
+                "literal_source_read_count covers current-surface declared inputs only; "
+                "the separately disclosed module closure is loaded solely from the pinned "
+                "immutable historical scripts tree"
+            ),
         },
         "base_origin_main_commit": BASE_ORIGIN_MAIN_COMMIT,
         "base_is_ancestor_of_head": base_is_ancestor,
@@ -1014,7 +1047,8 @@ def render_stdout(receipt: dict) -> str:
         + f" infinite_claimed={induction['full_infinite_translation_uniform_lattice_law_claimed']};"
         + f" obstruction={compact(induction['exact_obstruction'])}",
         "D_CONTROLS " + ("PASS" if receipt["checks"]["D_CONTROLS"] else "FAIL")
-        + f" :: source_reads={receipt['controls']['literal_source_read_count']}<=6;"
+        + f" :: current_surface_reads={receipt['controls']['literal_source_read_count']}<=6;"
+        + f" pinned_modules={receipt['controls']['pinned_substrate']['loaded_transitive_module_file_count']};"
         + f" pins={receipt['controls']['sha_pins_match'] and receipt['controls']['blob_pins_match']};"
         + f" prior_ast_text={receipt['controls']['prior_cycle_text_or_ast_executed']};"
         + f" outcome_neutral={compact([row['accepted_by_bookkeeping_gate'] for row in receipt['controls']['outcome_neutrality_probes']])};"
@@ -1052,6 +1086,7 @@ def run() -> tuple[dict, str]:
         and not controls["prior_cycle_text_or_ast_executed"]
         and controls["pinned_substrate"]["sha_pin_match"]
         and controls["pinned_substrate"]["blob_pin_match"]
+        and controls["pinned_substrate"]["scripts_tree_pin_match"]
         and controls["base_is_ancestor_of_head"]
         and all(row["accepted_by_bookkeeping_gate"] for row in probes)
         and deterministic and runtime_budget_met

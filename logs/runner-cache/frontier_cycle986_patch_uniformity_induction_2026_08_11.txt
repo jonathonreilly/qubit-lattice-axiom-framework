@@ -1,17 +1,17 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle986_patch_uniformity_induction_2026_08_11.py
-runner_sha256: 8967351fa732987aec09d3bb98a336fa66933f6a511e41d3ec884015ca6b7021
+runner_sha256: 6e5cb0adfe62d8b69a5118e25e9e1287fc0220f9e64dbfc92fcf2d0226e1dbd8
 input_fingerprint_sha256: db7786cde9df9554b9e925bd8927e6f129e0cdd1546e5ea349a31056104b73bb
 timeout_sec: 1400
 exit_code: 0
-elapsed_sec: 2.08
+elapsed_sec: 2.12
 status: ok
 ----- stdout -----
 CYCLE986_PATCH_UNIFORMITY_STAR_GLUING_INDUCTION
 A_GLUING_STEP PASS :: finding=VERIFIED_FOR_EVERY_NONEMPTY_TWO_STAR_OVERLAP_TYPE; types=[["ADJACENT_CENTRES",6,[2],[1],["CNOT"],[1],true],["AXIAL_DISTANCE_TWO_CENTRES",6,[1],[0],[],[],true],["DIAGONAL_DISTANCE_TWO_CENTRES",12,[2],[1],["TOF_PERPENDICULAR_CONTROLS"],[2],true]]
 B_STEP_VERIFICATION PASS :: cases=[["k=2_to_3",2,[2,0,0],17,["ADJACENT_CENTRES","AXIAL_DISTANCE_TWO_CENTRES"],1,"GLUING_STEP_VERIFIED"],["k=3_to_4",3,[1,1,0],20,["ADJACENT_CENTRES","DIAGONAL_DISTANCE_TWO_CENTRES","DIAGONAL_DISTANCE_TWO_CENTRES"],1,"GLUING_STEP_VERIFIED"]]
 C_INDUCTION_STATUS PASS :: status=FINITE_PATCH_INDUCTION_CLOSES_AT_DECLARED_SCOPE; verdict=FINITE_P2X_ROOTED_STAR_GLUED_PATCH_UNIFORMITY_FOR_ARBITRARY_FINITE_TARGET_COUNT; infinite_claimed=False; obstruction=null
-D_CONTROLS PASS :: source_reads=1<=6; pins=True; prior_ast_text=False; outcome_neutral=[true,true]; determinism=True; runtime_lt_1400=True
+D_CONTROLS PASS :: current_surface_reads=1<=6; pinned_modules=52; pins=True; prior_ast_text=False; outcome_neutral=[true,true]; determinism=True; runtime_lt_1400=True
 TOTAL: PASS=4 FAIL=0
 
 ----- stderr -----

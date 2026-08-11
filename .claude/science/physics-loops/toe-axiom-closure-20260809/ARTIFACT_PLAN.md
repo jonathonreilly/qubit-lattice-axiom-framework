@@ -604,5 +604,6 @@ complete conditional nonlinear compact solution:
   policy epoch mismatch after `4,812` rows / `3,690` runners; the controlled
   five-file current-main overlay passes all 18 stages and verifies checkpoint
   `61f2e90a65df`; changed evidence is clean for `1/1` Block-28 and `28/28`
-  stacked claims; science commit `973cfa23c6`; independent audit remains
-  required
+  stacked claims; science commit `973cfa23c6`, campaign conformance
+  `c93bd0c966`; PR #6100 is open, mergeable, and `CLEAN`, stacked on exact
+  Block-27 delivery head `c2b18f8c6a`; independent audit remains required

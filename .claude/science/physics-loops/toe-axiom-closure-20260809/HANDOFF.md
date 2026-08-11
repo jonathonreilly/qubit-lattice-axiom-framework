@@ -1253,8 +1253,9 @@ stack seeds `4,812` rows and classifies `3,690` runners before reproducing only
 the inherited stage-7 policy-epoch mismatch. A controlled five-file current-
 main overlay passes all 18 stages and verifies checkpoint `61f2e90a65df`;
 changed evidence is clean for `1/1` Block-28 and `28/28` stacked claims. Science
-commit is `973cfa23c6`; push and PR delivery remain pending. The exact next
-target is coefficient
+commit is `973cfa23c6`; campaign conformance is `c93bd0c966`. PR #6100 is open,
+mergeable, and `CLEAN`, stacked exactly on Block-27 delivery head `c2b18f8c6a`.
+The exact next target is coefficient
 provenance from a projective joint Record/Ward law, followed by inter-cell,
 nonuniform, continuous-momentum, and Lorentzian tests. PR #6096 remains a
 complementary proper-length boundary. No canonical edit, percentage move,

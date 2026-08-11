@@ -1549,9 +1549,10 @@ instance or Fourier census.
   checkpoint `61f2e90a65df`.
 - Changed-evidence readiness marks Block 28 alone (`1/1`) and all 28 stacked
   claims (`28/28`) ready with zero failures and zero control failures.
-- Science commit is `973cfa23c6`; push, PR delivery, and independent audit
-  remain pending. No canonical axiom, fixed percentage, audit verdict, or
-  `review-loop` is changed.
+- Science commit is `973cfa23c6`; campaign conformance is `c93bd0c966`. PR
+  #6100 is open, mergeable, and `CLEAN`, stacked exactly on Block-27 delivery
+  head `c2b18f8c6a`. Independent audit remains required. No canonical axiom,
+  fixed percentage, audit verdict, or `review-loop` is changed.
 
 ## Block 27 Construction Record
 

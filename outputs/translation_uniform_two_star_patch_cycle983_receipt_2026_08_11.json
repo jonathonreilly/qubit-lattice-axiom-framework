@@ -88,6 +88,8 @@
         "target_count": 2,
         "word_length": "zero or one"
       },
+      "global_semantic_pair_union_count": 41,
+      "global_z3_star_edge_union_count": 11,
       "host_support_definition": "Omega=union over t in P2x of {t} union {t+d: ||d||_1=1}",
       "host_support_site_count": 12,
       "host_support_sites": [
@@ -426,6 +428,9 @@
       "classification": "translation_uniform_on_every_target_site_of_P2x",
       "one_rule": {
         "formula": "at target t: I; X(t); CNOT(t+d->t) for every signed unit d; TOF(t+d,t+e->t) for every unordered pair of distinct signed units",
+        "pointwise_covariance_equation": "R_(t+tau)(tau.assignment; descriptor) = R_t(assignment; descriptor)",
+        "pointwise_translation_comparison_count": 2944,
+        "pointwise_translation_truth_failure_count": 0,
         "relative_family_digest": "d7cb67193f1b63a3f08181410c320ac570cc4652002971274028d69baed7a430",
         "translated_descriptor_table_digest": "7c0a60a225a5f21fed07b652af817f114ef36676a20c90c67f34454cc5588946",
         "translation_vector_A_to_B": [
@@ -987,6 +992,36 @@
       "overlap_definition": "closed-star intersection and induced semantic-pair intersection",
       "shared_pair_agreement_table": [
         {
+          "center_exchange_truth_table": [
+            {
+              "outputs_agree_after_target_component_exchange": true,
+              "q_A": 0,
+              "q_B": 0,
+              "star_A_target_output": 0,
+              "star_B_target_output": 0
+            },
+            {
+              "outputs_agree_after_target_component_exchange": true,
+              "q_A": 0,
+              "q_B": 1,
+              "star_A_target_output": 1,
+              "star_B_target_output": 1
+            },
+            {
+              "outputs_agree_after_target_component_exchange": true,
+              "q_A": 1,
+              "q_B": 0,
+              "star_A_target_output": 1,
+              "star_B_target_output": 1
+            },
+            {
+              "outputs_agree_after_target_component_exchange": true,
+              "q_A": 1,
+              "q_B": 1,
+              "star_A_target_output": 0,
+              "star_B_target_output": 0
+            }
+          ],
           "global_pair": [
             [
               0,
@@ -1002,6 +1037,7 @@
           "paths_agree_up_to_reversal": true,
           "semantic_pair_in_both_stars": true,
           "star_A_J": 1,
+          "star_A_changed_edge_pairs": 64,
           "star_A_class": "CNOT",
           "star_A_local_wires_for_sorted_global_pair": [
             0,
@@ -1020,7 +1056,9 @@
               0
             ]
           ],
+          "star_A_witness_id": "CNOT(+x->C)",
           "star_B_J": 1,
+          "star_B_changed_edge_pairs": 64,
           "star_B_class": "CNOT",
           "star_B_local_wires_for_sorted_global_pair": [
             2,
@@ -1039,7 +1077,9 @@
               0
             ]
           ],
-          "target_equations_are_distinct_instances_not_equal_outputs": true,
+          "star_B_witness_id": "CNOT(-x->C)",
+          "target_component_exchanged_truth_tables_agree": true,
+          "target_equations_are_distinct_target_components": true,
           "z3_nearest_neighbour_in_star_A": true,
           "z3_nearest_neighbour_in_star_B": true
         }
@@ -1097,7 +1137,7 @@
   },
   "integrity_policy": "checks gate construction and bookkeeping only; uniform, obstructed, and not-hostable outcomes all remain cleanly reportable",
   "pass": true,
-  "primary_source_sha256": "c4ff78125b1d82954acbcd7fd5e409abe61815bb64c75c1b2ca6a7aa24d6b51d",
-  "science_digest": "8df8634e7a15382481972c5c01ec29fbbe7fd2a54abba82bb31d6fb1d8b8614e",
+  "primary_source_sha256": "e67c13f4b6f0fc3ab29dcb94a4b08eff155faf37c090b31c2ff5e108b9dea0f3",
+  "science_digest": "bdf93a95030f0be7ad487696b474945f19aa23271dcfeb3cc597cc55479588d1",
   "stdout_sha256": "0e00c3df5b06020cbdb225faea7850a2ac2a3b069a17340952e1f4788acb90b8"
 }

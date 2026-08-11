@@ -52,12 +52,12 @@ BYTE_PINNED_INPUT_PATHS = (
     "outputs/translation_uniform_two_star_patch_cycle983_receipt_2026_08_11.json",
 )
 EXPECTED_INPUT_SHA256 = {
-    PRIMARY_PATH: "c4ff78125b1d82954acbcd7fd5e409abe61815bb64c75c1b2ca6a7aa24d6b51d",
-    PRIMARY_RECEIPT_PATH: "cbd2f7857cdd03f580aef30126294e32c8d4f57e4fb0282f6ef73936f2d75754",
+    PRIMARY_PATH: "e67c13f4b6f0fc3ab29dcb94a4b08eff155faf37c090b31c2ff5e108b9dea0f3",
+    PRIMARY_RECEIPT_PATH: "e65d4b22c56ba5a5c1d4968ff3607b8c8445bf271944356ca6ea49fa86cfbb8e",
 }
 EXPECTED_INPUT_BLOBS = {
-    PRIMARY_PATH: "c96f54135c6e0a94d4614aab556e2fb8841570f1",
-    PRIMARY_RECEIPT_PATH: "459971c0e8b7d67ccac41f789a373c0ddeb9c4e0",
+    PRIMARY_PATH: "29b29c88da819df73537ae86d4233a87e98af2d3",
+    PRIMARY_RECEIPT_PATH: "5c6e0b4b7c66ff012c55932c8dbb5df807b60335",
 }
 FORBIDDEN_IMPORT_FRAGMENTS = (
     "frontier_cycle719_two_rail_recurrent_controller_core",
@@ -327,6 +327,8 @@ def independent_expected() -> dict:
             "closed_star_intersection": [list(site) for site in shared],
             "closed_star_intersection_size": len(shared),
             "closed_star_union_size": len(SUPPORT),
+            "global_semantic_pair_union_count": 21 + 21 - 1,
+            "global_z3_star_edge_union_count": 6 + 6 - 1,
             "relative_family_size_per_target": len(descriptors),
             "site_program_instance_count": len(descriptors) * len(CENTRES),
             "relative_family_digest": digest(descriptors),
@@ -337,6 +339,8 @@ def independent_expected() -> dict:
             "target_rows": target_rows,
             "classification": "translation_uniform_on_every_target_site_of_P2x",
             "all_patch_target_sites_tested": True,
+            "pointwise_translation_comparison_count": len(descriptors) * 2 * (2 ** 6),
+            "pointwise_translation_truth_failure_count": 0,
         },
         "overlap": {
             "shared_site_rows": [
@@ -364,11 +368,38 @@ def independent_expected() -> dict:
                 "semantic_pair_in_both_stars": True,
                 "z3_nearest_neighbour_in_star_A": True,
                 "z3_nearest_neighbour_in_star_B": True,
-                "target_equations_are_distinct_instances_not_equal_outputs": True,
+                "target_equations_are_distinct_target_components": True,
+                "star_A_witness_id": "CNOT(+x->C)",
+                "star_B_witness_id": "CNOT(-x->C)",
                 "star_A_class": "CNOT",
                 "star_B_class": "CNOT",
                 "star_A_J": 1,
                 "star_B_J": 1,
+                "star_A_changed_edge_pairs": 64,
+                "star_B_changed_edge_pairs": 64,
+                "center_exchange_truth_table": [
+                    {
+                        "q_A": 0, "q_B": 0,
+                        "star_A_target_output": 0, "star_B_target_output": 0,
+                        "outputs_agree_after_target_component_exchange": True,
+                    },
+                    {
+                        "q_A": 0, "q_B": 1,
+                        "star_A_target_output": 1, "star_B_target_output": 1,
+                        "outputs_agree_after_target_component_exchange": True,
+                    },
+                    {
+                        "q_A": 1, "q_B": 0,
+                        "star_A_target_output": 1, "star_B_target_output": 1,
+                        "outputs_agree_after_target_component_exchange": True,
+                    },
+                    {
+                        "q_A": 1, "q_B": 1,
+                        "star_A_target_output": 0, "star_B_target_output": 0,
+                        "outputs_agree_after_target_component_exchange": True,
+                    },
+                ],
+                "target_component_exchanged_truth_tables_agree": True,
                 "paths_agree_up_to_reversal": True,
             }],
             "classification": "exact_agreement_on_all_shared_sites_and_pairs",
@@ -444,8 +475,12 @@ def selected_primary_view(receipt: dict) -> dict:
                 "star_B_local_wires_for_sorted_global_pair",
                 "semantic_pair_in_both_stars", "z3_nearest_neighbour_in_star_A",
                 "z3_nearest_neighbour_in_star_B",
-                "target_equations_are_distinct_instances_not_equal_outputs",
+                "target_equations_are_distinct_target_components",
+                "star_A_witness_id", "star_B_witness_id",
                 "star_A_class", "star_B_class", "star_A_J", "star_B_J",
+                "star_A_changed_edge_pairs", "star_B_changed_edge_pairs",
+                "center_exchange_truth_table",
+                "target_component_exchanged_truth_tables_agree",
                 "paths_agree_up_to_reversal",
             )
         }
@@ -462,6 +497,12 @@ def selected_primary_view(receipt: dict) -> dict:
             "closed_star_intersection": construction["closed_star_intersection"],
             "closed_star_intersection_size": construction["closed_star_intersection_size"],
             "closed_star_union_size": construction["closed_star_union_size"],
+            "global_semantic_pair_union_count": construction[
+                "global_semantic_pair_union_count"
+            ],
+            "global_z3_star_edge_union_count": construction[
+                "global_z3_star_edge_union_count"
+            ],
             "relative_family_size_per_target": construction["family"][
                 "relative_family_size_per_target"
             ],
@@ -478,6 +519,12 @@ def selected_primary_view(receipt: dict) -> dict:
             "target_rows": target_rows,
             "classification": uniformity["classification"],
             "all_patch_target_sites_tested": uniformity["all_patch_target_sites_tested"],
+            "pointwise_translation_comparison_count": uniformity["one_rule"][
+                "pointwise_translation_comparison_count"
+            ],
+            "pointwise_translation_truth_failure_count": uniformity["one_rule"][
+                "pointwise_translation_truth_failure_count"
+            ],
         },
         "overlap": {
             "shared_site_rows": shared_site_rows,
@@ -512,7 +559,9 @@ def parse_cache(payload: str) -> dict:
     return {"valid_envelope": True, "fields": fields, "stdout": stdout}
 
 
-def classify_uniformity_from_receipt(rows: list[dict]) -> str:
+def classify_uniformity_from_receipt(
+    rows: list[dict], translation_truth_failures: int
+) -> str:
     if not all(row["route_host"]["all_words_routable"] for row in rows):
         return "not_hostable_at_one_or_more_target_sites"
     keys = (
@@ -525,6 +574,8 @@ def classify_uniformity_from_receipt(rows: list[dict]) -> str:
         return "class_structure_differs_across_target_sites"
     if any(row["landed_vs_independent_truth_failure_count"] for row in rows):
         return "landed_truth_law_differs_from_declared_rule"
+    if translation_truth_failures:
+        return "pointwise_translation_covariance_failure"
     return "translation_uniform_on_every_target_site_of_P2x"
 
 
@@ -603,7 +654,10 @@ def validate_bookkeeping(receipt: dict, cache_payload: str) -> tuple[bool, list[
         )
         if route["classification"] != expected_route_class:
             errors.append(f"route_host_class:{index}")
-    computed_uniformity = classify_uniformity_from_receipt(rows)
+    computed_uniformity = classify_uniformity_from_receipt(
+        rows,
+        uniformity["one_rule"]["pointwise_translation_truth_failure_count"],
+    )
     if uniformity["classification"] != computed_uniformity:
         errors.append("uniformity_classification")
     for field, agreement in uniformity["per_site_exact_agreement"].items():
@@ -624,6 +678,8 @@ def validate_bookkeeping(receipt: dict, cache_payload: str) -> tuple[bool, list[
             == row["z3_nearest_neighbour_in_star_B"]
         and row["star_A_class"] == row["star_B_class"]
         and row["star_A_J"] == row["star_B_J"]
+        and row["star_A_changed_edge_pairs"] == row["star_B_changed_edge_pairs"]
+        and row["target_component_exchanged_truth_tables_agree"]
         and row["paths_agree_up_to_reversal"]
         for row in pair_rows
     )
@@ -721,6 +777,12 @@ def mutation_campaign(receipt: dict, cache_payload: str) -> list[dict]:
         "uniformity_classification",
         lambda row, cache: row["findings"]["B_UNIFORMITY_TEST"].__setitem__(
             "classification", "class_structure_differs_across_target_sites"
+        ),
+    )
+    add_mutation(
+        "pointwise_translation_covariance",
+        lambda row, cache: row["findings"]["B_UNIFORMITY_TEST"]["one_rule"].__setitem__(
+            "pointwise_translation_truth_failure_count", 1
         ),
     )
     add_mutation(
@@ -894,6 +956,9 @@ def run_once() -> tuple[dict, dict]:
             == len(expected["construction"]["host_support_sites"])
         and expected["construction"]["minimum_union_size"]
             == expected["construction"]["host_support_site_count"]
+        and expected["uniformity"]["pointwise_translation_comparison_count"]
+            == len(family()) * 2 * (2 ** 6)
+        and expected["uniformity"]["pointwise_translation_truth_failure_count"] == 0
         and len(ACTIONS) == 24
         and all(
             row["witness_count"] == len(row["witness_names"])

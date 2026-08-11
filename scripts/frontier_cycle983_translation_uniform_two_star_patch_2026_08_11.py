@@ -222,6 +222,19 @@ def independent_target_output(descriptor: tuple, x: int, conditions: tuple) -> i
     )
 
 
+def global_rule_output(
+    descriptor: tuple,
+    center: tuple[int, int, int],
+    assignment: dict[tuple[int, int, int], int],
+) -> int:
+    sites = closed_star(center)
+    return independent_target_output(
+        descriptor,
+        assignment[center],
+        tuple(assignment[site] for site in sites[1:]),
+    )
+
+
 def landed_target_output(descriptor: tuple, x: int, conditions: tuple) -> int:
     return K.A.apply_semantic((x, *conditions), core_word(descriptor))[0]
 
@@ -370,6 +383,14 @@ def family_declaration() -> dict:
 def patch_construction() -> dict:
     star_sets = tuple(set(star) for star in STAR_SITES)
     intersection = tuple(sorted(star_sets[0] & star_sets[1]))
+    semantic_pair_sets = tuple(
+        {canonical_pair(*pair) for pair in combinations(star, 2)}
+        for star in STAR_SITES
+    )
+    z3_edge_sets = tuple(
+        {pair for pair in semantic_pairs if l1(*pair) == 1}
+        for semantic_pairs in semantic_pair_sets
+    )
     offset_rows = []
     for offset in product(range(-2, 3), repeat=3):
         if offset == ORIGIN:
@@ -419,6 +440,10 @@ def patch_construction() -> dict:
         "closed_star_intersection": [list(site) for site in intersection],
         "closed_star_intersection_size": len(intersection),
         "closed_star_union_size": len(HOST_SUPPORT),
+        "global_semantic_pair_union_count": len(
+            semantic_pair_sets[0] | semantic_pair_sets[1]
+        ),
+        "global_z3_star_edge_union_count": len(z3_edge_sets[0] | z3_edge_sets[1]),
         "family": family_declaration(),
         "minimality": {
             "number_of_stars": 2,
@@ -517,7 +542,7 @@ def target_site_census(index: int) -> dict:
     }
 
 
-def classify_uniformity(per_site: list[dict]) -> str:
+def classify_uniformity(per_site: list[dict], translation_truth_failures: int) -> str:
     if not all(row["route_host"]["all_words_routable"] for row in per_site):
         return "not_hostable_at_one_or_more_target_sites"
     keys = (
@@ -531,12 +556,34 @@ def classify_uniformity(per_site: list[dict]) -> str:
         return "class_structure_differs_across_target_sites"
     if any(row["landed_vs_independent_truth_failure_count"] for row in per_site):
         return "landed_truth_law_differs_from_declared_rule"
+    if translation_truth_failures:
+        return "pointwise_translation_covariance_failure"
     return "translation_uniform_on_every_target_site_of_P2x"
 
 
 def uniformity_test() -> dict:
     per_site = [target_site_census(index) for index in range(len(TARGET_CENTRES))]
     reference = per_site[0]
+    translation = subtract(TARGET_CENTRES[1], TARGET_CENTRES[0])
+    translation_comparisons = 0
+    translation_truth_failures = 0
+    for descriptor in declared_relative_family():
+        for target_bit in (0, 1):
+            for conditions in CONDITIONS:
+                assignment_a = {
+                    site: bit for site, bit in zip(
+                        STAR_SITES[0], (target_bit, *conditions)
+                    )
+                }
+                assignment_b = {
+                    add(site, translation): bit for site, bit in assignment_a.items()
+                }
+                translation_comparisons += 1
+                translation_truth_failures += global_rule_output(
+                    descriptor, TARGET_CENTRES[0], assignment_a
+                ) != global_rule_output(
+                    descriptor, TARGET_CENTRES[1], assignment_b
+                )
     comparison_fields = (
         "relative_family_size", "witness_count", "witness_names",
         "normalized_structure_digest",
@@ -545,7 +592,12 @@ def uniformity_test() -> dict:
         "one_rule": {
             "formula": family_declaration()["rule_schema"],
             "relative_family_digest": family_declaration()["relative_family_digest"],
-            "translation_vector_A_to_B": list(subtract(TARGET_CENTRES[1], TARGET_CENTRES[0])),
+            "translation_vector_A_to_B": list(translation),
+            "pointwise_covariance_equation": (
+                "R_(t+tau)(tau.assignment; descriptor) = R_t(assignment; descriptor)"
+            ),
+            "pointwise_translation_comparison_count": translation_comparisons,
+            "pointwise_translation_truth_failure_count": translation_truth_failures,
             "translated_descriptor_table_digest": digest([
                 [
                     relative_word_name(descriptor),
@@ -562,7 +614,7 @@ def uniformity_test() -> dict:
             field: all(row[field] == reference[field] for row in per_site)
             for field in comparison_fields
         },
-        "classification": classify_uniformity(per_site),
+        "classification": classify_uniformity(per_site, translation_truth_failures),
     }
 
 
@@ -608,6 +660,27 @@ def overlap_consistency() -> dict:
         ]
         descriptor_a = ("CNOT", neighbour_from_target[0], 0)
         descriptor_b = ("CNOT", neighbour_from_target[1], 0)
+        measurement_a = witness_measurement(descriptor_a)
+        measurement_b = witness_measurement(descriptor_b)
+        center_exchange_truth_table = []
+        for bit_a, bit_b in product((0, 1), repeat=2):
+            conditions_a = [0] * 6
+            conditions_b = [0] * 6
+            conditions_a[neighbour_from_target[0] - 1] = bit_b
+            conditions_b[neighbour_from_target[1] - 1] = bit_a
+            output_a = independent_target_output(
+                descriptor_a, bit_a, tuple(conditions_a)
+            )
+            output_b = independent_target_output(
+                descriptor_b, bit_b, tuple(conditions_b)
+            )
+            center_exchange_truth_table.append({
+                "q_A": bit_a,
+                "q_B": bit_b,
+                "star_A_target_output": output_a,
+                "star_B_target_output": output_b,
+                "outputs_agree_after_target_component_exchange": output_a == output_b,
+            })
         pair_rows.append({
             "global_pair": [list(site) for site in pair],
             "star_A_local_wires_for_sorted_global_pair": list(wires[0]),
@@ -617,11 +690,20 @@ def overlap_consistency() -> dict:
             "z3_nearest_neighbour_in_star_B": pair in z3_pairs[1],
             "star_A_target_equation": "q_(0,0,0)' = q_(0,0,0) XOR q_(1,0,0)",
             "star_B_target_equation": "q_(1,0,0)' = q_(1,0,0) XOR q_(0,0,0)",
-            "target_equations_are_distinct_instances_not_equal_outputs": True,
+            "target_equations_are_distinct_target_components": True,
+            "star_A_witness_id": relative_word_name(descriptor_a),
+            "star_B_witness_id": relative_word_name(descriptor_b),
             "star_A_class": class_label(descriptor_a),
             "star_B_class": class_label(descriptor_b),
             "star_A_J": invariant_j(descriptor_a),
             "star_B_J": invariant_j(descriptor_b),
+            "star_A_changed_edge_pairs": measurement_a["changed_edge_pairs"],
+            "star_B_changed_edge_pairs": measurement_b["changed_edge_pairs"],
+            "center_exchange_truth_table": center_exchange_truth_table,
+            "target_component_exchanged_truth_tables_agree": all(
+                row["outputs_agree_after_target_component_exchange"]
+                for row in center_exchange_truth_table
+            ),
             "star_A_target_to_neighbour_path": [list(site) for site in paths[0]],
             "star_B_target_to_neighbour_path": [list(site) for site in paths[1]],
             "paths_agree_up_to_reversal": paths[0] == tuple(reversed(paths[1])),
@@ -633,6 +715,8 @@ def overlap_consistency() -> dict:
         == row["z3_nearest_neighbour_in_star_B"]
         and row["star_A_class"] == row["star_B_class"]
         and row["star_A_J"] == row["star_B_J"]
+        and row["star_A_changed_edge_pairs"] == row["star_B_changed_edge_pairs"]
+        and row["target_component_exchanged_truth_tables_agree"]
         and row["paths_agree_up_to_reversal"]
         for row in pair_rows
     )
@@ -853,7 +937,10 @@ def run() -> tuple[dict, str]:
             )
             for row in per_site
         )
-        and uniformity["classification"] == classify_uniformity(per_site)
+        and uniformity["classification"] == classify_uniformity(
+            per_site,
+            uniformity["one_rule"]["pointwise_translation_truth_failure_count"],
+        )
     )
     site_rows = overlap["shared_site_agreement_table"]
     pair_rows = overlap["shared_pair_agreement_table"]
@@ -864,6 +951,8 @@ def run() -> tuple[dict, str]:
             == row["z3_nearest_neighbour_in_star_B"]
         and row["star_A_class"] == row["star_B_class"]
         and row["star_A_J"] == row["star_B_J"]
+        and row["star_A_changed_edge_pairs"] == row["star_B_changed_edge_pairs"]
+        and row["target_component_exchanged_truth_tables_agree"]
         and row["paths_agree_up_to_reversal"]
         for row in pair_rows
     )

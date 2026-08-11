@@ -30,11 +30,11 @@ AUDIT_INPUT_PATHS = (
 )
 EXPECTED_INPUT_SHA256 = {
     AUDIT_INPUT_PATHS[0]:
-        "3104325f8dd6e96e6654200057a5f6f98ed81c481805929c21ed8d7e845c88d9",
+        "ff93516fd127b6ffef8a5d521f213d8bf311aa0b69c5548f911a9d490ab73d3b",
     AUDIT_INPUT_PATHS[1]:
-        "04b994cfdb1ca3eb95c4bb94900e125bc02d67babb2cc9b13e2fb4968e8e2864",
+        "5e4d5971386ddd89eadae030dd494e7fb41702f4c52f04673b2797d1eecfd3bf",
     AUDIT_INPUT_PATHS[2]:
-        "a95f869da308b9121250459886f8740a6ecbfccf678d86aa58c35fe61e33c429",
+        "cd184c1b598742664d6f8af751c9c162e317252e6e97af3a458d26e6b064cb7d",
 }
 CHECK_RECEIPT = ROOT / (
     "outputs/three_class_born_compatibility_cycle978_"
@@ -260,6 +260,34 @@ def independent_family() -> dict:
         )
         for class_name in CLASS_ORDER
     }
+    reference_class = CLASS_ORDER[0]
+    reference_word = representatives[reference_class]
+    common_kernel_disagreement = None
+    for class_name in CLASS_ORDER[1:]:
+        witness = representatives[class_name]
+        for local_input in (0, 1):
+            for condition in CONDITIONS:
+                reference_y = apply(
+                    reference_word, (local_input, *condition)
+                )[0]
+                witness_y = apply(
+                    witness, (local_input, *condition)
+                )[0]
+                if reference_y != witness_y:
+                    common_kernel_disagreement = {
+                        "reference_class": reference_class,
+                        "reference_witness": word_name(reference_word),
+                        "class": class_name,
+                        "witness": word_name(witness),
+                        "configuration": [local_input, list(condition)],
+                        "reference_output": reference_y,
+                        "witness_output": witness_y,
+                    }
+                    break
+            if common_kernel_disagreement:
+                break
+        if common_kernel_disagreement:
+            break
     covariance_failures = []
     covariance_checks = 0
     for rotation in ROTATIONS:
@@ -295,6 +323,7 @@ def independent_family() -> dict:
             name: word_name(word)
             for name, word in representatives.items()
         },
+        "common_kernel_disagreement": common_kernel_disagreement,
         "rotation_count": len(ROTATIONS),
         "covariance_checks": covariance_checks,
         "covariance_failures": covariance_failures,
@@ -435,13 +464,14 @@ def verify_claim(report: dict, rebuilt: dict) -> dict:
             for verdict in rows.values()
         )
     )
+    common_disagreement = rebuilt["common_kernel_disagreement"]
     expected_joint = {
         candidate: (
             "SURVIVES"
             if all(
                 verdict == "SURVIVES"
                 for verdict in expected_per_class[candidate].values()
-            )
+            ) and common_disagreement is None
             else "EXCLUDED"
         )
         for candidate in CANDIDATES
@@ -458,10 +488,34 @@ def verify_claim(report: dict, rebuilt: dict) -> dict:
         candidate for candidate in CANDIDATES
         if expected_joint[candidate] == "EXCLUDED"
     ]
+    joint_only_expected = [
+        candidate for candidate in CANDIDATES
+        if expected_joint[candidate] == "EXCLUDED"
+        and all(
+            verdict == "SURVIVES"
+            for verdict in expected_per_class[candidate].values()
+        )
+    ]
+    joint_disagreements_match = all(
+        c["joint"][candidate]["first_disagreement"] is not None
+        and all(
+            c["joint"][candidate]["first_disagreement"][key]
+            == common_disagreement[key]
+            for key in (
+                "reference_class", "reference_witness", "class",
+                "witness", "configuration", "reference_output",
+                "witness_output",
+            )
+        )
+        for candidate in joint_only_expected
+    )
     c_ok = bool(
         claimed_joint == expected_joint
         and c["survivors"] == expected_survivors
         and c["excluded"] == expected_excluded
+        and [row["candidate"] for row in c["joint_only_exclusions"]]
+        == joint_only_expected
+        and joint_disagreements_match
         and all(
             row["candidate"] in expected_excluded
             and all(
@@ -471,6 +525,7 @@ def verify_claim(report: dict, rebuilt: dict) -> dict:
             )
             and row["witness"]
             == row["first_disagreement"]["witness"]
+            and row["witness"] == common_disagreement["witness"]
             for row in c["joint_only_exclusions"]
         )
     )
@@ -494,6 +549,7 @@ def verify_claim(report: dict, rebuilt: dict) -> dict:
         "D_ARTIFACT_VERDICT": d_ok,
         "expected_table": expected_per_class,
         "expected_joint_survivors": expected_survivors,
+        "expected_joint_disagreement": common_disagreement,
         "expected_artifact": expected_artifact,
     }
 
@@ -539,8 +595,14 @@ def corruption_probes(report: dict, rebuilt: dict) -> dict:
     rejected(
         "artifact_label",
         lambda row: row["certificates"]["D_ARTIFACT_VERDICT"].__setitem__(
-            "verdict", "NULL_WAS_FAMILY_ARTIFACT"
+            "verdict", "NULL_CONFIRMED_AT_ENLARGED_SCOPE"
         ),
+    )
+    rejected(
+        "joint_witness",
+        lambda row: row["certificates"]["C_JOINT_TEST"][
+            "joint_only_exclusions"
+        ][0].__setitem__("witness", "TOF(+x,-x->C)"),
     )
     rejected(
         "born_wall_status",
@@ -594,6 +656,15 @@ def main() -> int:
             }
             and rebuilt["rotation_count"] == 24
             and not rebuilt["covariance_failures"]
+            and rebuilt["common_kernel_disagreement"] == {
+                "reference_class": "CNOT",
+                "reference_witness": "CNOT(+x->C)",
+                "class": "TOF_PERPENDICULAR_CONTROLS",
+                "witness": "TOF(+x,+y->C)",
+                "configuration": [0, [1, 0, 0, 0, 0, 0]],
+                "reference_output": 1,
+                "witness_output": 0,
+            }
         ),
         "R2_REFUTE_PER_CLASS_AND_JOINT": verification["pass"],
         "R3_RECEIPT_CACHE_BINDING": binding,
@@ -631,6 +702,8 @@ def main() -> int:
             + " :: table_5x3=" + compact(verification["expected_table"])
             + "; joint_survivors="
             + compact(verification["expected_joint_survivors"])
+            + "; first_joint_disagreement="
+            + compact(verification["expected_joint_disagreement"])
             + f"; artifact={verification['expected_artifact']}"
         ),
         (

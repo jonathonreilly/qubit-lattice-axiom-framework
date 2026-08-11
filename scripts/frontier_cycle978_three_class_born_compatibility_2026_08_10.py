@@ -124,13 +124,12 @@ PER_CLASS_CRITERION = (
     " exact first class-conditional configuration mismatch."
 )
 JOINT_CRITERION = (
-    "Stated minimal generalization for three simultaneous classes: add an"
-    " explicit class index c with fixed positive r(c)=1/3 and use"
-    " P_i(e,c,x,n,y)=p_i(e) r(c) q(x,n) 1{y=L_c(x,n)}. This is required"
-    " solely because the enlarged family has three inequivalent kernels; it"
-    " preserves Cycle 974's event marginal and product independence and does"
-    " not add an event selector. Compatibility requires every class kernel"
-    " simultaneously; the first disagreeing witness is reported on failure."
+    "One-rule joint criterion: the same unindexed conditional kernel"
+    " K_i(y|x,n) in one extension P_i(e,x,n,y) must equal every"
+    " reconstructed class kernel L_c(y|x,n) pointwise. No class label or"
+    " carrier is added because c is not a nearest-neighbour condition."
+    " Exclude at the first pair of class witnesses whose truth tables"
+    " disagree on an exact (x,n,y) configuration."
 )
 
 FIXTURE_BANKS = 2
@@ -1135,83 +1134,84 @@ def evaluate_class_extension(
     }
 
 
+
 def evaluate_joint_extension(
     vector: tuple,
     representatives: dict,
-    class_carrier: dict | None = None,
-    corrupt_class: str | None = None,
 ) -> dict:
-    if class_carrier is None:
-        class_carrier = {
-            class_name: Fraction(1, len(representatives))
-            for class_name in representatives
-        }
     total = sum(vector)
     first_disagreement = None
+    class_items = tuple(representatives.items())
+    reference_class, reference_word = class_items[0]
     if not all(value >= 0 for value in vector):
-        first_name = next(iter(representatives))
         first_disagreement = {
-            "class": first_name,
-            "witness": word_name(representatives[first_name]),
+            "reference_class": reference_class,
+            "reference_witness": word_name(reference_word),
+            "class": reference_class,
+            "witness": word_name(reference_word),
             "configuration": None,
             "quantity": "min_e w_i(e)",
             "observed": str(min(vector)),
             "expected": ">=0",
         }
     elif total <= 0:
-        first_name = next(iter(representatives))
         first_disagreement = {
-            "class": first_name,
-            "witness": word_name(representatives[first_name]),
+            "reference_class": reference_class,
+            "reference_witness": word_name(reference_word),
+            "class": reference_class,
+            "witness": word_name(reference_word),
             "configuration": None,
             "quantity": "sum_e w_i(e)",
             "observed": str(total),
             "expected": ">0",
         }
-    elif sum(class_carrier.values(), Fraction(0)) != 1:
-        first_name = next(iter(representatives))
-        first_disagreement = {
-            "class": first_name,
-            "witness": word_name(representatives[first_name]),
-            "configuration": None,
-            "quantity": "sum_c r(c)",
-            "observed": str(sum(class_carrier.values(), Fraction(0))),
-            "expected": "1",
-        }
     else:
-        for class_name, representative in representatives.items():
-            class_mass = class_carrier.get(class_name, Fraction(0))
-            if class_mass <= 0:
-                first_disagreement = {
-                    "class": class_name,
-                    "witness": word_name(representative),
-                    "configuration": None,
-                    "quantity": "r(c)",
-                    "observed": str(class_mass),
-                    "expected": ">0",
-                }
-                break
-            evaluation = evaluate_class_extension(
-                vector,
-                class_name,
-                representative,
-                corrupt_kernel=(class_name == corrupt_class),
-            )
-            if evaluation["first_disagreement"] is not None:
-                first_disagreement = {
-                    "class": class_name,
-                    **evaluation["first_disagreement"],
-                }
+        for class_name, representative in class_items[1:]:
+            for local_input in (0, 1):
+                for condition in CONDITIONS:
+                    reference_y = output_bit(
+                        reference_word, local_input, condition
+                    )
+                    class_y = output_bit(
+                        representative, local_input, condition
+                    )
+                    if reference_y != class_y:
+                        first_disagreement = {
+                            "reference_class": reference_class,
+                            "reference_witness": word_name(reference_word),
+                            "class": class_name,
+                            "witness": word_name(representative),
+                            "configuration": [
+                                local_input, list(condition)
+                            ],
+                            "quantity": (
+                                "one unindexed K(y|x,n) equals both "
+                                "class kernels"
+                            ),
+                            "reference_output": reference_y,
+                            "witness_output": class_y,
+                            "reference_distribution": [
+                                int(reference_y == 0),
+                                int(reference_y == 1),
+                            ],
+                            "witness_distribution": [
+                                int(class_y == 0),
+                                int(class_y == 1),
+                            ],
+                        }
+                        break
+                if first_disagreement:
+                    break
+            if first_disagreement:
                 break
     survives = first_disagreement is None
     return {
         "verdict": "SURVIVES" if survives else "EXCLUDED",
         "event_marginal_identity": (
-            "sum_{c,x,n,y} P_i(e,c,x,n,y)=p_i(e)"
+            "if a common K exists, "
+            "sum_{x,n,y} p_i(e)q(x,n)K(y|x,n)=p_i(e)"
         ),
-        "class_carrier": {
-            key: str(value) for key, value in class_carrier.items()
-        },
+        "class_index_added": False,
         "first_disagreement": first_disagreement,
     }
 
@@ -1225,12 +1225,8 @@ def active_compatibility_controls(representatives: dict) -> dict:
         for condition in CONDITIONS
         if not (local_input == 0 and condition == (0,) * 6)
     }
-    missing_class = {
-        class_name: (
-            Fraction(0)
-            if class_name == first_class
-            else Fraction(1, len(representatives) - 1)
-        )
+    identical_representatives = {
+        class_name: representatives[first_class]
         for class_name in representatives
     }
     probes = {
@@ -1255,12 +1251,17 @@ def active_compatibility_controls(representatives: dict) -> dict:
             representatives[first_class],
             corrupt_kernel=True,
         ),
-        "valid_joint": evaluate_joint_extension(reference, representatives),
-        "missing_class": evaluate_joint_extension(
-            reference, representatives, class_carrier=missing_class
+        "identical_kernel_joint": evaluate_joint_extension(
+            reference, identical_representatives
         ),
-        "wrong_joint_kernel": evaluate_joint_extension(
-            reference, representatives, corrupt_class=first_class
+        "three_class_common_kernel": evaluate_joint_extension(
+            reference, representatives
+        ),
+        "negative_weight_joint": evaluate_joint_extension(
+            (-1, 2, 0), representatives
+        ),
+        "zero_total_joint": evaluate_joint_extension(
+            (0, 0, 0), representatives
         ),
     }
     expected = {
@@ -1269,9 +1270,10 @@ def active_compatibility_controls(representatives: dict) -> dict:
         "zero_total": "EXCLUDED",
         "missing_configuration": "EXCLUDED",
         "wrong_class_kernel": "EXCLUDED",
-        "valid_joint": "SURVIVES",
-        "missing_class": "EXCLUDED",
-        "wrong_joint_kernel": "EXCLUDED",
+        "identical_kernel_joint": "SURVIVES",
+        "three_class_common_kernel": "EXCLUDED",
+        "negative_weight_joint": "EXCLUDED",
+        "zero_total_joint": "EXCLUDED",
     }
     return {
         "expected": expected,
@@ -1284,7 +1286,6 @@ def active_compatibility_controls(representatives: dict) -> dict:
             for name, verdict in expected.items()
         ),
     }
-
 
 def compatibility_tests(candidates: dict, event_data: dict, family: dict) -> dict:
     representatives = family["representatives"]
@@ -1405,6 +1406,12 @@ def render_stdout(receipt: dict) -> str:
         }
         for candidate in CANDIDATE_NAMES
     }
+    joint_headline = [{
+        "candidate": row["candidate"],
+        "reference_witness": row["first_disagreement"]["reference_witness"],
+        "witness": row["witness"],
+        "configuration": row["first_disagreement"]["configuration"],
+    } for row in joint["joint_only_exclusions"]]
     lines = ["CYCLE978_THREE_CLASS_BORN_COMPATIBILITY"]
     lines.append(
         "A_REBUILD "
@@ -1424,7 +1431,7 @@ def render_stdout(receipt: dict) -> str:
         + ("PASS" if receipt["checks"]["C_JOINT_TEST"] else "FAIL")
         + " :: criterion=" + JOINT_CRITERION
         + "; survivors=" + compact(joint["survivors"])
-        + "; joint_only_exclusions=" + compact(joint["joint_only_exclusions"])
+        + "; joint_only_exclusions=" + compact(joint_headline)
     )
     lines.append(
         "D_ARTIFACT_VERDICT "
@@ -1628,10 +1635,11 @@ def run() -> tuple[dict, str]:
             },
             "C_JOINT_TEST": {
                 "criterion": compatibility["joint_criterion"],
-                "generalization_reason": (
-                    "an explicit positive class carrier is the minimal way "
-                    "to require all three inequivalent kernels in one joint "
-                    "distribution while preserving the event marginal"
+                "relation_to_cycle974": (
+                    "the product form and event marginal are unchanged, but "
+                    "one unindexed conditional kernel must now satisfy all "
+                    "three reconstructed class laws because the substrate "
+                    "has one nearest-neighbour rule"
                 ),
                 "joint": compatibility["joint"],
                 "survivors": compatibility["joint_survivors"],

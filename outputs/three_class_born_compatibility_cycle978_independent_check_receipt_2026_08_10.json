@@ -1,6 +1,6 @@
 {
   "artifact": "three_class_born_compatibility_independent_check",
-  "checker_source_sha256": "67b01d0d662c4783fe3240f862c543d62d1977e60f2996b94b0fa861b4de3535",
+  "checker_source_sha256": "af4f288cf13500a938c3aa2b370a7cb71ab67d0a9af1ffe31ddf3343acd4ecd6",
   "checks": {
     "R0_PRIMARY_AST_AND_PINS": true,
     "R1_INDEPENDENT_FAMILY_AND_CLASSES": true,
@@ -32,9 +32,9 @@
     ],
     "primary_never_imported": true,
     "sha256": {
-      "logs/runner-cache/frontier_cycle978_three_class_born_compatibility_2026_08_10.txt": "a95f869da308b9121250459886f8740a6ecbfccf678d86aa58c35fe61e33c429",
-      "outputs/three_class_born_compatibility_cycle978_receipt_2026_08_10.json": "04b994cfdb1ca3eb95c4bb94900e125bc02d67babb2cc9b13e2fb4968e8e2864",
-      "scripts/frontier_cycle978_three_class_born_compatibility_2026_08_10.py": "3104325f8dd6e96e6654200057a5f6f98ed81c481805929c21ed8d7e845c88d9"
+      "logs/runner-cache/frontier_cycle978_three_class_born_compatibility_2026_08_10.txt": "cd184c1b598742664d6f8af751c9c162e317252e6e97af3a458d26e6b064cb7d",
+      "outputs/three_class_born_compatibility_cycle978_receipt_2026_08_10.json": "5e4d5971386ddd89eadae030dd494e7fb41702f4c52f04673b2797d1eecfd3bf",
+      "scripts/frontier_cycle978_three_class_born_compatibility_2026_08_10.py": "ff93516fd127b6ffef8a5d521f213d8bf311aa0b69c5548f911a9d490ab73d3b"
     },
     "sha_pins_match": true,
     "source_read_count": 3
@@ -47,6 +47,7 @@
       "class_member_count": true,
       "family_size": true,
       "joint_survivors": true,
+      "joint_witness": true,
       "per_class_verdict": true,
       "witness_count": true
     }
@@ -87,6 +88,25 @@
         "TOF(-y,+z->C)",
         "TOF(-y,-z->C)"
       ]
+    },
+    "common_kernel_disagreement": {
+      "class": "TOF_PERPENDICULAR_CONTROLS",
+      "configuration": [
+        0,
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "reference_class": "CNOT",
+      "reference_output": 1,
+      "reference_witness": "CNOT(+x->C)",
+      "witness": "TOF(+x,+y->C)",
+      "witness_output": 0
     },
     "covariance_checks": 64512,
     "covariance_failures": [],
@@ -131,21 +151,34 @@
   },
   "pass": true,
   "primary_binding": true,
-  "runtime_seconds": 0.8413972919806838,
-  "stdout_bytes": 1466,
+  "runtime_seconds": 0.8621816249797121,
+  "stdout_bytes": 1596,
   "verification": {
     "A_REBUILD": true,
     "B_PER_CLASS_TEST": true,
     "C_JOINT_TEST": true,
     "D_ARTIFACT_VERDICT": true,
-    "expected_artifact": "NULL_CONFIRMED_AT_ENLARGED_SCOPE",
-    "expected_joint_survivors": [
-      "M1_COUNTING",
-      "M2_PER_WORLD_UNIFORM",
-      "M3_OCCUPATION_WEIGHTED",
-      "M4_FORMATION_LIFETIME",
-      "M5_FORMATION_MOMENT"
-    ],
+    "expected_artifact": "NULL_WAS_FAMILY_ARTIFACT",
+    "expected_joint_disagreement": {
+      "class": "TOF_PERPENDICULAR_CONTROLS",
+      "configuration": [
+        0,
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "reference_class": "CNOT",
+      "reference_output": 1,
+      "reference_witness": "CNOT(+x->C)",
+      "witness": "TOF(+x,+y->C)",
+      "witness_output": 0
+    },
+    "expected_joint_survivors": [],
     "expected_table": {
       "M1_COUNTING": {
         "CNOT": "SURVIVES",

@@ -675,130 +675,558 @@
       "per_class_exclusions": []
     },
     "C_JOINT_TEST": {
-      "criterion": "Stated minimal generalization for three simultaneous classes: add an explicit class index c with fixed positive r(c)=1/3 and use P_i(e,c,x,n,y)=p_i(e) r(c) q(x,n) 1{y=L_c(x,n)}. This is required solely because the enlarged family has three inequivalent kernels; it preserves Cycle 974's event marginal and product independence and does not add an event selector. Compatibility requires every class kernel simultaneously; the first disagreeing witness is reported on failure.",
-      "excluded": [],
-      "generalization_reason": "an explicit positive class carrier is the minimal way to require all three inequivalent kernels in one joint distribution while preserving the event marginal",
-      "joint": {
-        "M1_COUNTING": {
-          "class_carrier": {
-            "CNOT": "1/3",
-            "TOF_OPPOSITE_CONTROLS": "1/3",
-            "TOF_PERPENDICULAR_CONTROLS": "1/3"
-          },
-          "event_marginal_identity": "sum_{c,x,n,y} P_i(e,c,x,n,y)=p_i(e)",
-          "first_disagreement": null,
-          "verdict": "SURVIVES"
-        },
-        "M2_PER_WORLD_UNIFORM": {
-          "class_carrier": {
-            "CNOT": "1/3",
-            "TOF_OPPOSITE_CONTROLS": "1/3",
-            "TOF_PERPENDICULAR_CONTROLS": "1/3"
-          },
-          "event_marginal_identity": "sum_{c,x,n,y} P_i(e,c,x,n,y)=p_i(e)",
-          "first_disagreement": null,
-          "verdict": "SURVIVES"
-        },
-        "M3_OCCUPATION_WEIGHTED": {
-          "class_carrier": {
-            "CNOT": "1/3",
-            "TOF_OPPOSITE_CONTROLS": "1/3",
-            "TOF_PERPENDICULAR_CONTROLS": "1/3"
-          },
-          "event_marginal_identity": "sum_{c,x,n,y} P_i(e,c,x,n,y)=p_i(e)",
-          "first_disagreement": null,
-          "verdict": "SURVIVES"
-        },
-        "M4_FORMATION_LIFETIME": {
-          "class_carrier": {
-            "CNOT": "1/3",
-            "TOF_OPPOSITE_CONTROLS": "1/3",
-            "TOF_PERPENDICULAR_CONTROLS": "1/3"
-          },
-          "event_marginal_identity": "sum_{c,x,n,y} P_i(e,c,x,n,y)=p_i(e)",
-          "first_disagreement": null,
-          "verdict": "SURVIVES"
-        },
-        "M5_FORMATION_MOMENT": {
-          "class_carrier": {
-            "CNOT": "1/3",
-            "TOF_OPPOSITE_CONTROLS": "1/3",
-            "TOF_PERPENDICULAR_CONTROLS": "1/3"
-          },
-          "event_marginal_identity": "sum_{c,x,n,y} P_i(e,c,x,n,y)=p_i(e)",
-          "first_disagreement": null,
-          "verdict": "SURVIVES"
-        }
-      },
-      "joint_only_exclusions": [],
-      "survivors": [
+      "criterion": "One-rule joint criterion: the same unindexed conditional kernel K_i(y|x,n) in one extension P_i(e,x,n,y) must equal every reconstructed class kernel L_c(y|x,n) pointwise. No class label or carrier is added because c is not a nearest-neighbour condition. Exclude at the first pair of class witnesses whose truth tables disagree on an exact (x,n,y) configuration.",
+      "excluded": [
         "M1_COUNTING",
         "M2_PER_WORLD_UNIFORM",
         "M3_OCCUPATION_WEIGHTED",
         "M4_FORMATION_LIFETIME",
         "M5_FORMATION_MOMENT"
-      ]
+      ],
+      "joint": {
+        "M1_COUNTING": {
+          "class_index_added": false,
+          "event_marginal_identity": "if a common K exists, sum_{x,n,y} p_i(e)q(x,n)K(y|x,n)=p_i(e)",
+          "first_disagreement": {
+            "class": "TOF_PERPENDICULAR_CONTROLS",
+            "configuration": [
+              0,
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "quantity": "one unindexed K(y|x,n) equals both class kernels",
+            "reference_class": "CNOT",
+            "reference_distribution": [
+              0,
+              1
+            ],
+            "reference_output": 1,
+            "reference_witness": "CNOT(+x->C)",
+            "witness": "TOF(+x,+y->C)",
+            "witness_distribution": [
+              1,
+              0
+            ],
+            "witness_output": 0
+          },
+          "verdict": "EXCLUDED"
+        },
+        "M2_PER_WORLD_UNIFORM": {
+          "class_index_added": false,
+          "event_marginal_identity": "if a common K exists, sum_{x,n,y} p_i(e)q(x,n)K(y|x,n)=p_i(e)",
+          "first_disagreement": {
+            "class": "TOF_PERPENDICULAR_CONTROLS",
+            "configuration": [
+              0,
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "quantity": "one unindexed K(y|x,n) equals both class kernels",
+            "reference_class": "CNOT",
+            "reference_distribution": [
+              0,
+              1
+            ],
+            "reference_output": 1,
+            "reference_witness": "CNOT(+x->C)",
+            "witness": "TOF(+x,+y->C)",
+            "witness_distribution": [
+              1,
+              0
+            ],
+            "witness_output": 0
+          },
+          "verdict": "EXCLUDED"
+        },
+        "M3_OCCUPATION_WEIGHTED": {
+          "class_index_added": false,
+          "event_marginal_identity": "if a common K exists, sum_{x,n,y} p_i(e)q(x,n)K(y|x,n)=p_i(e)",
+          "first_disagreement": {
+            "class": "TOF_PERPENDICULAR_CONTROLS",
+            "configuration": [
+              0,
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "quantity": "one unindexed K(y|x,n) equals both class kernels",
+            "reference_class": "CNOT",
+            "reference_distribution": [
+              0,
+              1
+            ],
+            "reference_output": 1,
+            "reference_witness": "CNOT(+x->C)",
+            "witness": "TOF(+x,+y->C)",
+            "witness_distribution": [
+              1,
+              0
+            ],
+            "witness_output": 0
+          },
+          "verdict": "EXCLUDED"
+        },
+        "M4_FORMATION_LIFETIME": {
+          "class_index_added": false,
+          "event_marginal_identity": "if a common K exists, sum_{x,n,y} p_i(e)q(x,n)K(y|x,n)=p_i(e)",
+          "first_disagreement": {
+            "class": "TOF_PERPENDICULAR_CONTROLS",
+            "configuration": [
+              0,
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "quantity": "one unindexed K(y|x,n) equals both class kernels",
+            "reference_class": "CNOT",
+            "reference_distribution": [
+              0,
+              1
+            ],
+            "reference_output": 1,
+            "reference_witness": "CNOT(+x->C)",
+            "witness": "TOF(+x,+y->C)",
+            "witness_distribution": [
+              1,
+              0
+            ],
+            "witness_output": 0
+          },
+          "verdict": "EXCLUDED"
+        },
+        "M5_FORMATION_MOMENT": {
+          "class_index_added": false,
+          "event_marginal_identity": "if a common K exists, sum_{x,n,y} p_i(e)q(x,n)K(y|x,n)=p_i(e)",
+          "first_disagreement": {
+            "class": "TOF_PERPENDICULAR_CONTROLS",
+            "configuration": [
+              0,
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "quantity": "one unindexed K(y|x,n) equals both class kernels",
+            "reference_class": "CNOT",
+            "reference_distribution": [
+              0,
+              1
+            ],
+            "reference_output": 1,
+            "reference_witness": "CNOT(+x->C)",
+            "witness": "TOF(+x,+y->C)",
+            "witness_distribution": [
+              1,
+              0
+            ],
+            "witness_output": 0
+          },
+          "verdict": "EXCLUDED"
+        }
+      },
+      "joint_only_exclusions": [
+        {
+          "candidate": "M1_COUNTING",
+          "first_disagreement": {
+            "class": "TOF_PERPENDICULAR_CONTROLS",
+            "configuration": [
+              0,
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "quantity": "one unindexed K(y|x,n) equals both class kernels",
+            "reference_class": "CNOT",
+            "reference_distribution": [
+              0,
+              1
+            ],
+            "reference_output": 1,
+            "reference_witness": "CNOT(+x->C)",
+            "witness": "TOF(+x,+y->C)",
+            "witness_distribution": [
+              1,
+              0
+            ],
+            "witness_output": 0
+          },
+          "witness": "TOF(+x,+y->C)"
+        },
+        {
+          "candidate": "M2_PER_WORLD_UNIFORM",
+          "first_disagreement": {
+            "class": "TOF_PERPENDICULAR_CONTROLS",
+            "configuration": [
+              0,
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "quantity": "one unindexed K(y|x,n) equals both class kernels",
+            "reference_class": "CNOT",
+            "reference_distribution": [
+              0,
+              1
+            ],
+            "reference_output": 1,
+            "reference_witness": "CNOT(+x->C)",
+            "witness": "TOF(+x,+y->C)",
+            "witness_distribution": [
+              1,
+              0
+            ],
+            "witness_output": 0
+          },
+          "witness": "TOF(+x,+y->C)"
+        },
+        {
+          "candidate": "M3_OCCUPATION_WEIGHTED",
+          "first_disagreement": {
+            "class": "TOF_PERPENDICULAR_CONTROLS",
+            "configuration": [
+              0,
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "quantity": "one unindexed K(y|x,n) equals both class kernels",
+            "reference_class": "CNOT",
+            "reference_distribution": [
+              0,
+              1
+            ],
+            "reference_output": 1,
+            "reference_witness": "CNOT(+x->C)",
+            "witness": "TOF(+x,+y->C)",
+            "witness_distribution": [
+              1,
+              0
+            ],
+            "witness_output": 0
+          },
+          "witness": "TOF(+x,+y->C)"
+        },
+        {
+          "candidate": "M4_FORMATION_LIFETIME",
+          "first_disagreement": {
+            "class": "TOF_PERPENDICULAR_CONTROLS",
+            "configuration": [
+              0,
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "quantity": "one unindexed K(y|x,n) equals both class kernels",
+            "reference_class": "CNOT",
+            "reference_distribution": [
+              0,
+              1
+            ],
+            "reference_output": 1,
+            "reference_witness": "CNOT(+x->C)",
+            "witness": "TOF(+x,+y->C)",
+            "witness_distribution": [
+              1,
+              0
+            ],
+            "witness_output": 0
+          },
+          "witness": "TOF(+x,+y->C)"
+        },
+        {
+          "candidate": "M5_FORMATION_MOMENT",
+          "first_disagreement": {
+            "class": "TOF_PERPENDICULAR_CONTROLS",
+            "configuration": [
+              0,
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "quantity": "one unindexed K(y|x,n) equals both class kernels",
+            "reference_class": "CNOT",
+            "reference_distribution": [
+              0,
+              1
+            ],
+            "reference_output": 1,
+            "reference_witness": "CNOT(+x->C)",
+            "witness": "TOF(+x,+y->C)",
+            "witness_distribution": [
+              1,
+              0
+            ],
+            "witness_output": 0
+          },
+          "witness": "TOF(+x,+y->C)"
+        }
+      ],
+      "relation_to_cycle974": "the product form and event marginal are unchanged, but one unindexed conditional kernel must now satisfy all three reconstructed class laws because the substrate has one nearest-neighbour rule",
+      "survivors": []
     },
     "D_ARTIFACT_VERDICT": {
-      "born_wall_stands": true,
-      "born_wall_status": "survivors/5: 5/5",
+      "born_wall_stands": false,
+      "born_wall_status": "survivors/5: 0/5",
       "does_not_supply": [
         "a local-to-event lift",
         "an event-marginal selector",
         "an occurrence rule",
         "a Born rule"
       ],
-      "excluded": [],
-      "joint_only_exclusions": [],
-      "survivors": [
+      "excluded": [
         "M1_COUNTING",
         "M2_PER_WORLD_UNIFORM",
         "M3_OCCUPATION_WEIGHTED",
         "M4_FORMATION_LIFETIME",
         "M5_FORMATION_MOMENT"
       ],
-      "verdict": "NULL_CONFIRMED_AT_ENLARGED_SCOPE"
+      "joint_only_exclusions": [
+        {
+          "candidate": "M1_COUNTING",
+          "first_disagreement": {
+            "class": "TOF_PERPENDICULAR_CONTROLS",
+            "configuration": [
+              0,
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "quantity": "one unindexed K(y|x,n) equals both class kernels",
+            "reference_class": "CNOT",
+            "reference_distribution": [
+              0,
+              1
+            ],
+            "reference_output": 1,
+            "reference_witness": "CNOT(+x->C)",
+            "witness": "TOF(+x,+y->C)",
+            "witness_distribution": [
+              1,
+              0
+            ],
+            "witness_output": 0
+          },
+          "witness": "TOF(+x,+y->C)"
+        },
+        {
+          "candidate": "M2_PER_WORLD_UNIFORM",
+          "first_disagreement": {
+            "class": "TOF_PERPENDICULAR_CONTROLS",
+            "configuration": [
+              0,
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "quantity": "one unindexed K(y|x,n) equals both class kernels",
+            "reference_class": "CNOT",
+            "reference_distribution": [
+              0,
+              1
+            ],
+            "reference_output": 1,
+            "reference_witness": "CNOT(+x->C)",
+            "witness": "TOF(+x,+y->C)",
+            "witness_distribution": [
+              1,
+              0
+            ],
+            "witness_output": 0
+          },
+          "witness": "TOF(+x,+y->C)"
+        },
+        {
+          "candidate": "M3_OCCUPATION_WEIGHTED",
+          "first_disagreement": {
+            "class": "TOF_PERPENDICULAR_CONTROLS",
+            "configuration": [
+              0,
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "quantity": "one unindexed K(y|x,n) equals both class kernels",
+            "reference_class": "CNOT",
+            "reference_distribution": [
+              0,
+              1
+            ],
+            "reference_output": 1,
+            "reference_witness": "CNOT(+x->C)",
+            "witness": "TOF(+x,+y->C)",
+            "witness_distribution": [
+              1,
+              0
+            ],
+            "witness_output": 0
+          },
+          "witness": "TOF(+x,+y->C)"
+        },
+        {
+          "candidate": "M4_FORMATION_LIFETIME",
+          "first_disagreement": {
+            "class": "TOF_PERPENDICULAR_CONTROLS",
+            "configuration": [
+              0,
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "quantity": "one unindexed K(y|x,n) equals both class kernels",
+            "reference_class": "CNOT",
+            "reference_distribution": [
+              0,
+              1
+            ],
+            "reference_output": 1,
+            "reference_witness": "CNOT(+x->C)",
+            "witness": "TOF(+x,+y->C)",
+            "witness_distribution": [
+              1,
+              0
+            ],
+            "witness_output": 0
+          },
+          "witness": "TOF(+x,+y->C)"
+        },
+        {
+          "candidate": "M5_FORMATION_MOMENT",
+          "first_disagreement": {
+            "class": "TOF_PERPENDICULAR_CONTROLS",
+            "configuration": [
+              0,
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "quantity": "one unindexed K(y|x,n) equals both class kernels",
+            "reference_class": "CNOT",
+            "reference_distribution": [
+              0,
+              1
+            ],
+            "reference_output": 1,
+            "reference_witness": "CNOT(+x->C)",
+            "witness": "TOF(+x,+y->C)",
+            "witness_distribution": [
+              1,
+              0
+            ],
+            "witness_output": 0
+          },
+          "witness": "TOF(+x,+y->C)"
+        }
+      ],
+      "survivors": [],
+      "verdict": "NULL_WAS_FAMILY_ARTIFACT"
     },
     "E_CONTROLS": {
       "active_corruption_controls": {
         "all_decisive": true,
         "expected": {
-          "missing_class": "EXCLUDED",
+          "identical_kernel_joint": "SURVIVES",
           "missing_configuration": "EXCLUDED",
           "negative_weight": "EXCLUDED",
-          "valid_joint": "SURVIVES",
+          "negative_weight_joint": "EXCLUDED",
+          "three_class_common_kernel": "EXCLUDED",
           "valid_per_class": "SURVIVES",
           "wrong_class_kernel": "EXCLUDED",
-          "wrong_joint_kernel": "EXCLUDED",
-          "zero_total": "EXCLUDED"
+          "zero_total": "EXCLUDED",
+          "zero_total_joint": "EXCLUDED"
         },
         "observed": {
-          "missing_class": "EXCLUDED",
+          "identical_kernel_joint": "SURVIVES",
           "missing_configuration": "EXCLUDED",
           "negative_weight": "EXCLUDED",
-          "valid_joint": "SURVIVES",
+          "negative_weight_joint": "EXCLUDED",
+          "three_class_common_kernel": "EXCLUDED",
           "valid_per_class": "SURVIVES",
           "wrong_class_kernel": "EXCLUDED",
-          "wrong_joint_kernel": "EXCLUDED",
-          "zero_total": "EXCLUDED"
+          "zero_total": "EXCLUDED",
+          "zero_total_joint": "EXCLUDED"
         },
         "probes": {
-          "missing_class": {
-            "class_carrier": {
-              "CNOT": "0",
-              "TOF_OPPOSITE_CONTROLS": "1/2",
-              "TOF_PERPENDICULAR_CONTROLS": "1/2"
-            },
-            "event_marginal_identity": "sum_{c,x,n,y} P_i(e,c,x,n,y)=p_i(e)",
-            "first_disagreement": {
-              "class": "CNOT",
-              "configuration": null,
-              "expected": ">0",
-              "observed": "0",
-              "quantity": "r(c)",
-              "witness": "CNOT(+x->C)"
-            },
-            "verdict": "EXCLUDED"
+          "identical_kernel_joint": {
+            "class_index_added": false,
+            "event_marginal_identity": "if a common K exists, sum_{x,n,y} p_i(e)q(x,n)K(y|x,n)=p_i(e)",
+            "first_disagreement": null,
+            "verdict": "SURVIVES"
           },
           "missing_configuration": {
             "conditional_scalar_checks": 0,
@@ -842,15 +1270,53 @@
             "representative_witness": "CNOT(+x->C)",
             "verdict": "EXCLUDED"
           },
-          "valid_joint": {
-            "class_carrier": {
-              "CNOT": "1/3",
-              "TOF_OPPOSITE_CONTROLS": "1/3",
-              "TOF_PERPENDICULAR_CONTROLS": "1/3"
+          "negative_weight_joint": {
+            "class_index_added": false,
+            "event_marginal_identity": "if a common K exists, sum_{x,n,y} p_i(e)q(x,n)K(y|x,n)=p_i(e)",
+            "first_disagreement": {
+              "class": "CNOT",
+              "configuration": null,
+              "expected": ">=0",
+              "observed": "-1",
+              "quantity": "min_e w_i(e)",
+              "reference_class": "CNOT",
+              "reference_witness": "CNOT(+x->C)",
+              "witness": "CNOT(+x->C)"
             },
-            "event_marginal_identity": "sum_{c,x,n,y} P_i(e,c,x,n,y)=p_i(e)",
-            "first_disagreement": null,
-            "verdict": "SURVIVES"
+            "verdict": "EXCLUDED"
+          },
+          "three_class_common_kernel": {
+            "class_index_added": false,
+            "event_marginal_identity": "if a common K exists, sum_{x,n,y} p_i(e)q(x,n)K(y|x,n)=p_i(e)",
+            "first_disagreement": {
+              "class": "TOF_PERPENDICULAR_CONTROLS",
+              "configuration": [
+                0,
+                [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "quantity": "one unindexed K(y|x,n) equals both class kernels",
+              "reference_class": "CNOT",
+              "reference_distribution": [
+                0,
+                1
+              ],
+              "reference_output": 1,
+              "reference_witness": "CNOT(+x->C)",
+              "witness": "TOF(+x,+y->C)",
+              "witness_distribution": [
+                1,
+                0
+              ],
+              "witness_output": 0
+            },
+            "verdict": "EXCLUDED"
           },
           "valid_per_class": {
             "conditional_scalar_checks": 256,
@@ -889,34 +1355,6 @@
             "representative_witness": "CNOT(+x->C)",
             "verdict": "EXCLUDED"
           },
-          "wrong_joint_kernel": {
-            "class_carrier": {
-              "CNOT": "1/3",
-              "TOF_OPPOSITE_CONTROLS": "1/3",
-              "TOF_PERPENDICULAR_CONTROLS": "1/3"
-            },
-            "event_marginal_identity": "sum_{c,x,n,y} P_i(e,c,x,n,y)=p_i(e)",
-            "first_disagreement": {
-              "class": "CNOT",
-              "configuration": [
-                0,
-                [
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0
-                ],
-                0
-              ],
-              "expected": "1",
-              "observed": "0",
-              "quantity": "P_i(y|x,n,CNOT)",
-              "witness": "CNOT(+x->C)"
-            },
-            "verdict": "EXCLUDED"
-          },
           "zero_total": {
             "conditional_scalar_checks": 0,
             "event_marginal_factor": "1",
@@ -931,6 +1369,21 @@
             "nonnegative": true,
             "normalizable": false,
             "representative_witness": "CNOT(+x->C)",
+            "verdict": "EXCLUDED"
+          },
+          "zero_total_joint": {
+            "class_index_added": false,
+            "event_marginal_identity": "if a common K exists, sum_{x,n,y} p_i(e)q(x,n)K(y|x,n)=p_i(e)",
+            "first_disagreement": {
+              "class": "CNOT",
+              "configuration": null,
+              "expected": ">0",
+              "observed": "0",
+              "quantity": "sum_e w_i(e)",
+              "reference_class": "CNOT",
+              "reference_witness": "CNOT(+x->C)",
+              "witness": "CNOT(+x->C)"
+            },
             "verdict": "EXCLUDED"
           }
         }
@@ -966,7 +1419,7 @@
         "27ec7c243f613fc1ffda4aa93960c18936b176fd:scripts/frontier_cycle977_witness_family_completeness_2026_08_10.py (AST)"
       ],
       "runtime_budget_seconds": 1400,
-      "runtime_seconds": 52.15045587508939,
+      "runtime_seconds": 52.179396624909714,
       "sha256": {
         "docs/MINIMAL_AXIOMS_2026-06-29.md": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
         "outputs/cycle978_cited_primary_provenance_2026_08_10.json": "4c242e12b987147cbd5aef73b6d5034c8fb78d1a7a916fafef29eff7ae51255e",
@@ -974,7 +1427,7 @@
       },
       "sha_pins_match": true,
       "short_replay_digest": "d71745ea3f687078fdaa7b9295eebd06479d4a01824f386e8c6f998825095d88",
-      "stdout_bytes": 3109,
+      "stdout_bytes": 3635,
       "stdout_limit_bytes": 6000
     }
   },
@@ -991,7 +1444,7 @@
   "cycle": 978,
   "hypothetical_axiom_status": null,
   "pass": true,
-  "primary_source_sha256": "3104325f8dd6e96e6654200057a5f6f98ed81c481805929c21ed8d7e845c88d9",
+  "primary_source_sha256": "ff93516fd127b6ffef8a5d521f213d8bf311aa0b69c5548f911a9d490ab73d3b",
   "proposal_allowed": false,
   "proposal_allowed_reason": "finite one-step basis-state horizon; no full continuous M_2(C) probability law",
   "reachability_to_target": "closes",

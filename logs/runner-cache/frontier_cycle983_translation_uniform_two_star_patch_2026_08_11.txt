@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle983_translation_uniform_two_star_patch_2026_08_11.py
-runner_sha256: c4ff78125b1d82954acbcd7fd5e409abe61815bb64c75c1b2ca6a7aa24d6b51d
+runner_sha256: e67c13f4b6f0fc3ab29dcb94a4b08eff155faf37c090b31c2ff5e108b9dea0f3
 input_fingerprint_sha256: db7786cde9df9554b9e925bd8927e6f129e0cdd1546e5ea349a31056104b73bb
 timeout_sec: 1400
 exit_code: 0
-elapsed_sec: 2.22
+elapsed_sec: 1.95
 status: ok
 ----- stdout -----
 CYCLE983_TRANSLATION_UNIFORM_TWO_STAR_PATCH

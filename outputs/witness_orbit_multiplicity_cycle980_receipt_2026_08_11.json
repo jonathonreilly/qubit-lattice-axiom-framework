@@ -1,0 +1,1113 @@
+{
+  "artifact": "witness orbit multiplicity bounded theorem primary",
+  "audit_status": "unset; independent audit remains required",
+  "checks": {
+    "A_ORBIT_DECOMPOSITION": true,
+    "B_INVARIANT_SEPARATOR": true,
+    "C_NECESSITY": true,
+    "D_CONTROLS": true
+  },
+  "controls": {
+    "all_inputs_relative_and_present": true,
+    "base_is_ancestor_of_head": true,
+    "base_origin_main_commit": "e8cb78a911d91f48abac9783c68305b0e7aabdf7",
+    "blob_pins_match": true,
+    "blocked_ast_imports": [],
+    "blocked_ast_modules_loaded": [],
+    "blocklist_ast_modules": [
+      "frontier_cycle977_witness_family_completeness_2026_08_10",
+      "frontier_cycle977_witness_family_independent_check_2026_08_10",
+      "frontier_cycle979_class_coexistence_born_requirement_2026_08_10",
+      "frontier_cycle979_class_coexistence_independent_check_2026_08_10"
+    ],
+    "blocklist_text_disjoint_from_reads": true,
+    "blocklist_text_paths": [
+      "docs/WITNESS_FAMILY_COMPLETENESS_CYCLE977_BOUNDED_THEOREM_NOTE_2026-08-10.md",
+      "docs/CLASS_COEXISTENCE_BORN_REQUIREMENT_CYCLE979_BOUNDED_THEOREM_NOTE_2026-08-10.md",
+      "outputs/witness_family_completeness_cycle977_receipt_2026_08_10.json",
+      "outputs/class_coexistence_born_requirement_cycle979_receipt_2026_08_10.json"
+    ],
+    "determinism_replay": true,
+    "house_stdout_limit_bytes": 6000,
+    "input_git_blobs": {
+      "docs/MINIMAL_AXIOMS_2026-06-29.md": "2f5fdd26898f62c17fcabc846761f7785c2eadb1"
+    },
+    "input_sha256": {
+      "docs/MINIMAL_AXIOMS_2026-06-29.md": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39"
+    },
+    "literal_audit_input_paths": [
+      "docs/MINIMAL_AXIOMS_2026-06-29.md"
+    ],
+    "literal_source_read_count": 1,
+    "pinned_substrate": {
+      "blob_pin_match": true,
+      "commit": "39c74017b870c27c804e3992f2a11e90336476b2",
+      "git_blob": "c123b8d681c3d76fce08ef13d7673622deac64ad",
+      "loaded_from_immutable_git_archive": true,
+      "path": "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+      "sha256": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
+      "sha_pin_match": true
+    },
+    "prior_cycle_text_or_ast_executed": false,
+    "runtime_budget_seconds": 1400,
+    "runtime_seconds": 0.9178037499077618,
+    "sha_pins_match": true,
+    "stdout_bytes": 882,
+    "stdout_limit_bytes": 150000
+  },
+  "cycle": 980,
+  "findings": {
+    "alphabet_subset_census": [
+      {
+        "alphabet": [],
+        "changed_edge_pairs": 0,
+        "family_descriptor_digest": "4ae15c885da7ec1c0034ad2527ebda45dbe41e93a956020cb79c8a825b4ea5a2",
+        "family_size": 1,
+        "landed_boolean_comparisons": 128,
+        "landed_boolean_failure_count": 0,
+        "orbit_count": 0,
+        "orbit_labels": [],
+        "orbit_member_counts": [],
+        "witness_count": 0,
+        "witness_descriptors": [],
+        "witness_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "witness_names": []
+      },
+      {
+        "alphabet": [
+          "X"
+        ],
+        "changed_edge_pairs": 0,
+        "family_descriptor_digest": "616c9c433fef50ba5ccfd7765ed3ea2907782ee17e799c3cc8fe458d24040beb",
+        "family_size": 8,
+        "landed_boolean_comparisons": 1024,
+        "landed_boolean_failure_count": 0,
+        "orbit_count": 0,
+        "orbit_labels": [],
+        "orbit_member_counts": [],
+        "witness_count": 0,
+        "witness_descriptors": [],
+        "witness_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "witness_names": []
+      },
+      {
+        "alphabet": [
+          "CNOT"
+        ],
+        "changed_edge_pairs": 384,
+        "family_descriptor_digest": "6d107221e40f92e442cabebce75d1538fb67562504927bf49dfdb7fff3d85341",
+        "family_size": 43,
+        "landed_boolean_comparisons": 5504,
+        "landed_boolean_failure_count": 0,
+        "orbit_count": 1,
+        "orbit_labels": [
+          "CNOT"
+        ],
+        "orbit_member_counts": [
+          6
+        ],
+        "witness_count": 6,
+        "witness_descriptors": [
+          [
+            "CNOT",
+            1,
+            0
+          ],
+          [
+            "CNOT",
+            2,
+            0
+          ],
+          [
+            "CNOT",
+            3,
+            0
+          ],
+          [
+            "CNOT",
+            4,
+            0
+          ],
+          [
+            "CNOT",
+            5,
+            0
+          ],
+          [
+            "CNOT",
+            6,
+            0
+          ]
+        ],
+        "witness_digest": "4730fe30804e52ef0480366688dc24346f41b5a6e23ab57a54b3d785ffb241b2",
+        "witness_names": [
+          "CNOT(+x->C)",
+          "CNOT(-x->C)",
+          "CNOT(+y->C)",
+          "CNOT(-y->C)",
+          "CNOT(+z->C)",
+          "CNOT(-z->C)"
+        ]
+      },
+      {
+        "alphabet": [
+          "TOF"
+        ],
+        "changed_edge_pairs": 960,
+        "family_descriptor_digest": "9f18ee0ad65e8002f5e082e491276da6c4a8d2d71f8b9e1a4a6d412e1e656de8",
+        "family_size": 106,
+        "landed_boolean_comparisons": 13568,
+        "landed_boolean_failure_count": 0,
+        "orbit_count": 2,
+        "orbit_labels": [
+          "TOF_PERPENDICULAR_CONTROLS",
+          "TOF_OPPOSITE_CONTROLS"
+        ],
+        "orbit_member_counts": [
+          12,
+          3
+        ],
+        "witness_count": 15,
+        "witness_descriptors": [
+          [
+            "TOF",
+            1,
+            2,
+            0
+          ],
+          [
+            "TOF",
+            1,
+            3,
+            0
+          ],
+          [
+            "TOF",
+            1,
+            4,
+            0
+          ],
+          [
+            "TOF",
+            1,
+            5,
+            0
+          ],
+          [
+            "TOF",
+            1,
+            6,
+            0
+          ],
+          [
+            "TOF",
+            2,
+            3,
+            0
+          ],
+          [
+            "TOF",
+            2,
+            4,
+            0
+          ],
+          [
+            "TOF",
+            2,
+            5,
+            0
+          ],
+          [
+            "TOF",
+            2,
+            6,
+            0
+          ],
+          [
+            "TOF",
+            3,
+            4,
+            0
+          ],
+          [
+            "TOF",
+            3,
+            5,
+            0
+          ],
+          [
+            "TOF",
+            3,
+            6,
+            0
+          ],
+          [
+            "TOF",
+            4,
+            5,
+            0
+          ],
+          [
+            "TOF",
+            4,
+            6,
+            0
+          ],
+          [
+            "TOF",
+            5,
+            6,
+            0
+          ]
+        ],
+        "witness_digest": "a50f52dd90afc9fa730a67e89b28917002b6861673b11a368f88aa25aecc871a",
+        "witness_names": [
+          "TOF(+x,-x->C)",
+          "TOF(+x,+y->C)",
+          "TOF(+x,-y->C)",
+          "TOF(+x,+z->C)",
+          "TOF(+x,-z->C)",
+          "TOF(-x,+y->C)",
+          "TOF(-x,-y->C)",
+          "TOF(-x,+z->C)",
+          "TOF(-x,-z->C)",
+          "TOF(+y,-y->C)",
+          "TOF(+y,+z->C)",
+          "TOF(+y,-z->C)",
+          "TOF(-y,+z->C)",
+          "TOF(-y,-z->C)",
+          "TOF(+z,-z->C)"
+        ]
+      },
+      {
+        "alphabet": [
+          "X",
+          "CNOT"
+        ],
+        "changed_edge_pairs": 384,
+        "family_descriptor_digest": "3432d8388836331378fea2c14e49d5d5351ed8ba5ca7d95cff328625bd5e4d5d",
+        "family_size": 50,
+        "landed_boolean_comparisons": 6400,
+        "landed_boolean_failure_count": 0,
+        "orbit_count": 1,
+        "orbit_labels": [
+          "CNOT"
+        ],
+        "orbit_member_counts": [
+          6
+        ],
+        "witness_count": 6,
+        "witness_descriptors": [
+          [
+            "CNOT",
+            1,
+            0
+          ],
+          [
+            "CNOT",
+            2,
+            0
+          ],
+          [
+            "CNOT",
+            3,
+            0
+          ],
+          [
+            "CNOT",
+            4,
+            0
+          ],
+          [
+            "CNOT",
+            5,
+            0
+          ],
+          [
+            "CNOT",
+            6,
+            0
+          ]
+        ],
+        "witness_digest": "4730fe30804e52ef0480366688dc24346f41b5a6e23ab57a54b3d785ffb241b2",
+        "witness_names": [
+          "CNOT(+x->C)",
+          "CNOT(-x->C)",
+          "CNOT(+y->C)",
+          "CNOT(-y->C)",
+          "CNOT(+z->C)",
+          "CNOT(-z->C)"
+        ]
+      },
+      {
+        "alphabet": [
+          "X",
+          "TOF"
+        ],
+        "changed_edge_pairs": 960,
+        "family_descriptor_digest": "1bcfd28930f749c3338361b3612e40614f48e23b96c91ffc20b147c62204fec9",
+        "family_size": 113,
+        "landed_boolean_comparisons": 14464,
+        "landed_boolean_failure_count": 0,
+        "orbit_count": 2,
+        "orbit_labels": [
+          "TOF_PERPENDICULAR_CONTROLS",
+          "TOF_OPPOSITE_CONTROLS"
+        ],
+        "orbit_member_counts": [
+          12,
+          3
+        ],
+        "witness_count": 15,
+        "witness_descriptors": [
+          [
+            "TOF",
+            1,
+            2,
+            0
+          ],
+          [
+            "TOF",
+            1,
+            3,
+            0
+          ],
+          [
+            "TOF",
+            1,
+            4,
+            0
+          ],
+          [
+            "TOF",
+            1,
+            5,
+            0
+          ],
+          [
+            "TOF",
+            1,
+            6,
+            0
+          ],
+          [
+            "TOF",
+            2,
+            3,
+            0
+          ],
+          [
+            "TOF",
+            2,
+            4,
+            0
+          ],
+          [
+            "TOF",
+            2,
+            5,
+            0
+          ],
+          [
+            "TOF",
+            2,
+            6,
+            0
+          ],
+          [
+            "TOF",
+            3,
+            4,
+            0
+          ],
+          [
+            "TOF",
+            3,
+            5,
+            0
+          ],
+          [
+            "TOF",
+            3,
+            6,
+            0
+          ],
+          [
+            "TOF",
+            4,
+            5,
+            0
+          ],
+          [
+            "TOF",
+            4,
+            6,
+            0
+          ],
+          [
+            "TOF",
+            5,
+            6,
+            0
+          ]
+        ],
+        "witness_digest": "a50f52dd90afc9fa730a67e89b28917002b6861673b11a368f88aa25aecc871a",
+        "witness_names": [
+          "TOF(+x,-x->C)",
+          "TOF(+x,+y->C)",
+          "TOF(+x,-y->C)",
+          "TOF(+x,+z->C)",
+          "TOF(+x,-z->C)",
+          "TOF(-x,+y->C)",
+          "TOF(-x,-y->C)",
+          "TOF(-x,+z->C)",
+          "TOF(-x,-z->C)",
+          "TOF(+y,-y->C)",
+          "TOF(+y,+z->C)",
+          "TOF(+y,-z->C)",
+          "TOF(-y,+z->C)",
+          "TOF(-y,-z->C)",
+          "TOF(+z,-z->C)"
+        ]
+      },
+      {
+        "alphabet": [
+          "CNOT",
+          "TOF"
+        ],
+        "changed_edge_pairs": 1344,
+        "family_descriptor_digest": "b8a7de46a3e31462488c8473bc7d07b2b5d5ef6599444201212594eda8270a67",
+        "family_size": 148,
+        "landed_boolean_comparisons": 18944,
+        "landed_boolean_failure_count": 0,
+        "orbit_count": 3,
+        "orbit_labels": [
+          "CNOT",
+          "TOF_PERPENDICULAR_CONTROLS",
+          "TOF_OPPOSITE_CONTROLS"
+        ],
+        "orbit_member_counts": [
+          6,
+          12,
+          3
+        ],
+        "witness_count": 21,
+        "witness_descriptors": [
+          [
+            "CNOT",
+            1,
+            0
+          ],
+          [
+            "CNOT",
+            2,
+            0
+          ],
+          [
+            "CNOT",
+            3,
+            0
+          ],
+          [
+            "CNOT",
+            4,
+            0
+          ],
+          [
+            "CNOT",
+            5,
+            0
+          ],
+          [
+            "CNOT",
+            6,
+            0
+          ],
+          [
+            "TOF",
+            1,
+            2,
+            0
+          ],
+          [
+            "TOF",
+            1,
+            3,
+            0
+          ],
+          [
+            "TOF",
+            1,
+            4,
+            0
+          ],
+          [
+            "TOF",
+            1,
+            5,
+            0
+          ],
+          [
+            "TOF",
+            1,
+            6,
+            0
+          ],
+          [
+            "TOF",
+            2,
+            3,
+            0
+          ],
+          [
+            "TOF",
+            2,
+            4,
+            0
+          ],
+          [
+            "TOF",
+            2,
+            5,
+            0
+          ],
+          [
+            "TOF",
+            2,
+            6,
+            0
+          ],
+          [
+            "TOF",
+            3,
+            4,
+            0
+          ],
+          [
+            "TOF",
+            3,
+            5,
+            0
+          ],
+          [
+            "TOF",
+            3,
+            6,
+            0
+          ],
+          [
+            "TOF",
+            4,
+            5,
+            0
+          ],
+          [
+            "TOF",
+            4,
+            6,
+            0
+          ],
+          [
+            "TOF",
+            5,
+            6,
+            0
+          ]
+        ],
+        "witness_digest": "f3ca8b24165990118ad58bc13a9592f15702824658b8b8ec3c222680361183fd",
+        "witness_names": [
+          "CNOT(+x->C)",
+          "CNOT(-x->C)",
+          "CNOT(+y->C)",
+          "CNOT(-y->C)",
+          "CNOT(+z->C)",
+          "CNOT(-z->C)",
+          "TOF(+x,-x->C)",
+          "TOF(+x,+y->C)",
+          "TOF(+x,-y->C)",
+          "TOF(+x,+z->C)",
+          "TOF(+x,-z->C)",
+          "TOF(-x,+y->C)",
+          "TOF(-x,-y->C)",
+          "TOF(-x,+z->C)",
+          "TOF(-x,-z->C)",
+          "TOF(+y,-y->C)",
+          "TOF(+y,+z->C)",
+          "TOF(+y,-z->C)",
+          "TOF(-y,+z->C)",
+          "TOF(-y,-z->C)",
+          "TOF(+z,-z->C)"
+        ]
+      },
+      {
+        "alphabet": [
+          "X",
+          "CNOT",
+          "TOF"
+        ],
+        "changed_edge_pairs": 1344,
+        "family_descriptor_digest": "fe29ad310ab15bfa4057ff2eba264df53521e581481a4f9e035c829502758497",
+        "family_size": 155,
+        "landed_boolean_comparisons": 19840,
+        "landed_boolean_failure_count": 0,
+        "orbit_count": 3,
+        "orbit_labels": [
+          "CNOT",
+          "TOF_PERPENDICULAR_CONTROLS",
+          "TOF_OPPOSITE_CONTROLS"
+        ],
+        "orbit_member_counts": [
+          6,
+          12,
+          3
+        ],
+        "witness_count": 21,
+        "witness_descriptors": [
+          [
+            "CNOT",
+            1,
+            0
+          ],
+          [
+            "CNOT",
+            2,
+            0
+          ],
+          [
+            "CNOT",
+            3,
+            0
+          ],
+          [
+            "CNOT",
+            4,
+            0
+          ],
+          [
+            "CNOT",
+            5,
+            0
+          ],
+          [
+            "CNOT",
+            6,
+            0
+          ],
+          [
+            "TOF",
+            1,
+            2,
+            0
+          ],
+          [
+            "TOF",
+            1,
+            3,
+            0
+          ],
+          [
+            "TOF",
+            1,
+            4,
+            0
+          ],
+          [
+            "TOF",
+            1,
+            5,
+            0
+          ],
+          [
+            "TOF",
+            1,
+            6,
+            0
+          ],
+          [
+            "TOF",
+            2,
+            3,
+            0
+          ],
+          [
+            "TOF",
+            2,
+            4,
+            0
+          ],
+          [
+            "TOF",
+            2,
+            5,
+            0
+          ],
+          [
+            "TOF",
+            2,
+            6,
+            0
+          ],
+          [
+            "TOF",
+            3,
+            4,
+            0
+          ],
+          [
+            "TOF",
+            3,
+            5,
+            0
+          ],
+          [
+            "TOF",
+            3,
+            6,
+            0
+          ],
+          [
+            "TOF",
+            4,
+            5,
+            0
+          ],
+          [
+            "TOF",
+            4,
+            6,
+            0
+          ],
+          [
+            "TOF",
+            5,
+            6,
+            0
+          ]
+        ],
+        "witness_digest": "f3ca8b24165990118ad58bc13a9592f15702824658b8b8ec3c222680361183fd",
+        "witness_names": [
+          "CNOT(+x->C)",
+          "CNOT(-x->C)",
+          "CNOT(+y->C)",
+          "CNOT(-y->C)",
+          "CNOT(+z->C)",
+          "CNOT(-z->C)",
+          "TOF(+x,-x->C)",
+          "TOF(+x,+y->C)",
+          "TOF(+x,-y->C)",
+          "TOF(+x,+z->C)",
+          "TOF(+x,-z->C)",
+          "TOF(-x,+y->C)",
+          "TOF(-x,-y->C)",
+          "TOF(-x,+z->C)",
+          "TOF(-x,-z->C)",
+          "TOF(+y,-y->C)",
+          "TOF(+y,+z->C)",
+          "TOF(+y,-z->C)",
+          "TOF(-y,+z->C)",
+          "TOF(-y,-z->C)",
+          "TOF(+z,-z->C)"
+        ]
+      }
+    ],
+    "declared_family": {
+      "cap": "all descriptors in this finite family; no sampling",
+      "landed_gate_menu": [
+        "I",
+        "X",
+        "CNOT",
+        "TOF"
+      ],
+      "operand_rule": "distinct wires; TOF controls unordered; no within-star adjacency restriction",
+      "support": "target-centred radius-one seven-site star",
+      "word_length": "zero or one"
+    },
+    "effective_group_validation": {
+      "all_have_inverse": true,
+      "all_signed_permutation_determinants_plus_one": true,
+      "composition_closed": true,
+      "generated_order": 24,
+      "identity_present": true
+    },
+    "full_family": {
+      "alphabet": [
+        "X",
+        "CNOT",
+        "TOF"
+      ],
+      "changed_edge_pairs": 1344,
+      "family_descriptor_digest": "fe29ad310ab15bfa4057ff2eba264df53521e581481a4f9e035c829502758497",
+      "family_size": 155,
+      "landed_boolean_comparisons": 19840,
+      "landed_boolean_failure_count": 0,
+      "orbit_count": 3,
+      "orbit_labels": [
+        "CNOT",
+        "TOF_PERPENDICULAR_CONTROLS",
+        "TOF_OPPOSITE_CONTROLS"
+      ],
+      "orbit_member_counts": [
+        6,
+        12,
+        3
+      ],
+      "witness_count": 21,
+      "witness_descriptors": [
+        [
+          "CNOT",
+          1,
+          0
+        ],
+        [
+          "CNOT",
+          2,
+          0
+        ],
+        [
+          "CNOT",
+          3,
+          0
+        ],
+        [
+          "CNOT",
+          4,
+          0
+        ],
+        [
+          "CNOT",
+          5,
+          0
+        ],
+        [
+          "CNOT",
+          6,
+          0
+        ],
+        [
+          "TOF",
+          1,
+          2,
+          0
+        ],
+        [
+          "TOF",
+          1,
+          3,
+          0
+        ],
+        [
+          "TOF",
+          1,
+          4,
+          0
+        ],
+        [
+          "TOF",
+          1,
+          5,
+          0
+        ],
+        [
+          "TOF",
+          1,
+          6,
+          0
+        ],
+        [
+          "TOF",
+          2,
+          3,
+          0
+        ],
+        [
+          "TOF",
+          2,
+          4,
+          0
+        ],
+        [
+          "TOF",
+          2,
+          5,
+          0
+        ],
+        [
+          "TOF",
+          2,
+          6,
+          0
+        ],
+        [
+          "TOF",
+          3,
+          4,
+          0
+        ],
+        [
+          "TOF",
+          3,
+          5,
+          0
+        ],
+        [
+          "TOF",
+          3,
+          6,
+          0
+        ],
+        [
+          "TOF",
+          4,
+          5,
+          0
+        ],
+        [
+          "TOF",
+          4,
+          6,
+          0
+        ],
+        [
+          "TOF",
+          5,
+          6,
+          0
+        ]
+      ],
+      "witness_digest": "f3ca8b24165990118ad58bc13a9592f15702824658b8b8ec3c222680361183fd",
+      "witness_names": [
+        "CNOT(+x->C)",
+        "CNOT(-x->C)",
+        "CNOT(+y->C)",
+        "CNOT(-y->C)",
+        "CNOT(+z->C)",
+        "CNOT(-z->C)",
+        "TOF(+x,-x->C)",
+        "TOF(+x,+y->C)",
+        "TOF(+x,-y->C)",
+        "TOF(+x,+z->C)",
+        "TOF(+x,-z->C)",
+        "TOF(-x,+y->C)",
+        "TOF(-x,-y->C)",
+        "TOF(-x,+z->C)",
+        "TOF(-x,-z->C)",
+        "TOF(+y,-y->C)",
+        "TOF(+y,+z->C)",
+        "TOF(+y,-z->C)",
+        "TOF(-y,+z->C)",
+        "TOF(-y,-z->C)",
+        "TOF(+z,-z->C)"
+      ]
+    },
+    "invariant_definition": {
+      "domain": "derived neighbour-dependence witnesses",
+      "formula": "J(w)=||sum of centre-relative control displacement vectors||^2",
+      "name": "J"
+    },
+    "orbit_decomposition": {
+      "action_closed_on_witnesses": true,
+      "ambient_group": "Z^3 semidirect O+_cubic",
+      "class_count_sum": 21,
+      "effective_group": "O+_cubic",
+      "effective_group_order": 24,
+      "finite_witness_data": "target-recentred relative descriptors",
+      "invariant_constant_on_each_orbit": true,
+      "invariant_distinct_across_orbits": true,
+      "orbit_count": 3,
+      "orbits": [
+        {
+          "ambient_orbit_size": 6,
+          "class_label": "CNOT",
+          "effective_stabilizer_order": 4,
+          "invariant_values": [
+            {
+              "control_arity": 1,
+              "control_sum_norm_squared": 1,
+              "off_diagonal_control_gram": []
+            }
+          ],
+          "member_count": 6,
+          "members": [
+            "CNOT(+x->C)",
+            "CNOT(+y->C)",
+            "CNOT(+z->C)",
+            "CNOT(-x->C)",
+            "CNOT(-y->C)",
+            "CNOT(-z->C)"
+          ],
+          "orbit_is_closed_in_witness_set": true,
+          "orbit_stabilizer_product": 24,
+          "representative": "CNOT(+x->C)"
+        },
+        {
+          "ambient_orbit_size": 12,
+          "class_label": "TOF_PERPENDICULAR_CONTROLS",
+          "effective_stabilizer_order": 2,
+          "invariant_values": [
+            {
+              "control_arity": 2,
+              "control_sum_norm_squared": 2,
+              "off_diagonal_control_gram": [
+                0
+              ]
+            }
+          ],
+          "member_count": 12,
+          "members": [
+            "TOF(+x,+y->C)",
+            "TOF(+x,+z->C)",
+            "TOF(+x,-y->C)",
+            "TOF(+x,-z->C)",
+            "TOF(+y,+z->C)",
+            "TOF(+y,-z->C)",
+            "TOF(-x,+y->C)",
+            "TOF(-x,+z->C)",
+            "TOF(-x,-y->C)",
+            "TOF(-x,-z->C)",
+            "TOF(-y,+z->C)",
+            "TOF(-y,-z->C)"
+          ],
+          "orbit_is_closed_in_witness_set": true,
+          "orbit_stabilizer_product": 24,
+          "representative": "TOF(+x,+y->C)"
+        },
+        {
+          "ambient_orbit_size": 3,
+          "class_label": "TOF_OPPOSITE_CONTROLS",
+          "effective_stabilizer_order": 8,
+          "invariant_values": [
+            {
+              "control_arity": 2,
+              "control_sum_norm_squared": 0,
+              "off_diagonal_control_gram": [
+                -1
+              ]
+            }
+          ],
+          "member_count": 3,
+          "members": [
+            "TOF(+x,-x->C)",
+            "TOF(+y,-y->C)",
+            "TOF(+z,-z->C)"
+          ],
+          "orbit_is_closed_in_witness_set": true,
+          "orbit_stabilizer_product": 24,
+          "representative": "TOF(+x,-x->C)"
+        }
+      ],
+      "partition_has_no_overlap_or_omission": true,
+      "translation_action_after_recentring": "trivial kernel Z^3"
+    },
+    "translation_kernel": {
+      "failure_count": 0,
+      "generator_checks": 126,
+      "translations_are_kernel_after_recentring": true
+    }
+  },
+  "integrity_policy": "checks gate construction and bookkeeping only; null, non-closed, or non-three-orbit outcomes remain clean reportable findings",
+  "pass": true,
+  "primary_source_sha256": "ab6c3e2ff41fe92dc9883c1ec63b0543a95d80477c7f49f8f8197825aaccfe72",
+  "runner_cache_sha256": "25b4b543da5fff7c0e07df7f16b9ba48f8459344ea306b208c4905b7567d270f",
+  "science_digest": "0dcf7e29750f903c693137322323d5575cd3d33bb6bc5cc4f88fd2aa0aabeb0a",
+  "stdout_sha256": "82850e681206cab34bdedeb43345cb1fa33ca71f7c3bad1474989440c4db44a7"
+}

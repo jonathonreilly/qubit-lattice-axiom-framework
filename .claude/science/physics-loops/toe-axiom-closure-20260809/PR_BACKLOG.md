@@ -653,6 +653,10 @@ rank-10 metric response, and alternate-law selection boundary. Primary
 source/input-pinned cache is `PASS=22 FAIL=0` in `3.4 s`; independent
 reconstruction is `PASS=5 FAIL=0`; all twenty-two isolated forced-false runs
 fail one named check. Citation registration is `5,480/15,661`, with out-degree
-three and twenty-two helpers. Direct conformance, exact stack, changed
-evidence, commits, PR, and independent audit are pending. No canonical edit,
-percentage move, audit verdict, or `review-loop` is used.
+three and twenty-two helpers. Direct conformance passes. The exact stack
+reaches only the inherited stage-7 dependency-policy epoch mismatch after
+`4,818` rows / `3,696` runners; the controlled five-file current-main overlay
+passes all 18 stages at checkpoint `98aee2208d61`. Changed evidence is clean
+for `1/1` Block-34 and `34/34` stacked claims. Science commit is `c8eec957c4`;
+campaign conformance, PR, and independent audit are pending. No canonical
+edit, percentage move, audit verdict, or `review-loop` is used.

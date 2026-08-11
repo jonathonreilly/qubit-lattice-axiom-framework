@@ -771,6 +771,10 @@ complete conditional nonlinear compact solution:
 - current evidence: source/input-pinned cache `PASS=22 FAIL=0` in `3.4 s`;
   independent reconstruction `PASS=5 FAIL=0`; twenty-two isolated fresh-
   process forced failures each trip exactly one named check; graph registration
-  `5,480/15,661`, out-degree three, with twenty-two resolved helpers; direct/
-  stacked conformance, changed evidence, commits, delivery, and independent
-  audit pending
+  `5,480/15,661`, out-degree three, with twenty-two resolved helpers; direct
+  gates pass; the exact stack reaches only the inherited stage-7 dependency-
+  policy epoch mismatch after `4,818` rows / `3,696` runners; the controlled
+  five-file current-main overlay passes all 18 stages at checkpoint
+  `98aee2208d61`; changed evidence is clean for `1/1` Block-34 and `34/34`
+  stacked claims; science commit `c8eec957c4`; delivery and independent audit
+  pending

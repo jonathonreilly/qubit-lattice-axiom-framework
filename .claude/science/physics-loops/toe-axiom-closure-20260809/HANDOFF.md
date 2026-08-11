@@ -1248,9 +1248,13 @@ directions, and the complete four-term rank-two stress ansatz misses at
 `0.985670`. Primary cache is `PASS=16 FAIL=0` in `13.97 s`; an independent
 union-find/SVD reconstruction is `PASS=5 FAIL=0`; sixteen isolated forced-
 false runs each fail one named check. Graph registration is `5,474/15,636`,
-with out-degree seven and sixteen helpers. Direct conformance passes; exact-
-stack and controlled-overlay pipelines, commit, push, and PR delivery remain
-pending. The exact next target is coefficient
+with out-degree seven and sixteen helpers. Direct conformance passes. The exact
+stack seeds `4,812` rows and classifies `3,690` runners before reproducing only
+the inherited stage-7 policy-epoch mismatch. A controlled five-file current-
+main overlay passes all 18 stages and verifies checkpoint `61f2e90a65df`;
+changed evidence is clean for `1/1` Block-28 and `28/28` stacked claims. Science
+commit is `973cfa23c6`; push and PR delivery remain pending. The exact next
+target is coefficient
 provenance from a projective joint Record/Ward law, followed by inter-cell,
 nonuniform, continuous-momentum, and Lorentzian tests. PR #6096 remains a
 complementary proper-length boundary. No canonical edit, percentage move,

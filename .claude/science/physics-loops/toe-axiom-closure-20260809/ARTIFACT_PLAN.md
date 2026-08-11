@@ -600,4 +600,9 @@ complete conditional nonlinear compact solution:
   independent union-find/SVD reconstruction `PASS=5 FAIL=0`; sixteen isolated
   fresh-process forced failures each trip exactly one named check; graph
   `5,474/15,636`, out-degree seven, with sixteen resolved helpers; direct
-  gates pass; exact-stack and controlled-overlay pipelines pending
+  gates pass; the exact stack reaches only the inherited stage-7 dependency-
+  policy epoch mismatch after `4,812` rows / `3,690` runners; the controlled
+  five-file current-main overlay passes all 18 stages and verifies checkpoint
+  `61f2e90a65df`; changed evidence is clean for `1/1` Block-28 and `28/28`
+  stacked claims; science commit `973cfa23c6`; independent audit remains
+  required

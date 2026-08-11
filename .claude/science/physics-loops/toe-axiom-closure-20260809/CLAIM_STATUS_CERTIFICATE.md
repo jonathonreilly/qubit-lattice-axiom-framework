@@ -797,5 +797,11 @@ independent_audit_required: true
 - Direct vocabulary, premise-purity, model-normalization, source-pin, syntax,
   YAML, whitespace, strict-lint, graph/link/invariant, claim-typing, N1--N8,
   and canonical-nonmutation gates pass.
-- Exact-stack/controlled-overlay pipelines, science commit, push, PR delivery,
-  and independent audit remain pending.
+- The exact stacked pipeline seeds `4,812` rows and classifies `3,690` runners,
+  then reproduces only the inherited stage-7 dependency-policy epoch mismatch.
+  A controlled five-file current-main overlay passes all 18 stages and verifies
+  checkpoint `61f2e90a65df`.
+- Changed-evidence readiness is clean for Block 28 alone (`1/1`) and all 28
+  stacked claims (`28/28`), with zero failures and zero control failures.
+- Science commit: `973cfa23c6`. Push, PR delivery, and independent audit remain
+  pending.

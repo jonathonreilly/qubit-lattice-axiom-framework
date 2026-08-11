@@ -460,9 +460,13 @@ three Block-23 tensors, and exposes an eleven-dimensional coefficient
 selection kernel. Primary cache is `PASS=16 FAIL=0` in `13.97 s`; independent
 reconstruction is `PASS=5 FAIL=0`; sixteen isolated forced-false runs pass.
 Graph registration is `5,474/15,636`, with out-degree seven and sixteen
-helpers. Direct conformance passes; exact-stack/controlled-overlay pipelines,
-commit, push, and PR delivery remain pending. PR #6096 is a complementary
-proper-length sibling requiring later
+helpers. Direct conformance passes. The exact stack reaches only the inherited
+stage-7 dependency-policy epoch mismatch after `4,812` rows / `3,690` runners;
+the controlled five-file current-main overlay passes all 18 stages and verifies
+checkpoint `61f2e90a65df`. Changed evidence is clean for Block 28 alone (`1/1`)
+and all stacked claims (`28/28`). Science commit is `973cfa23c6`; push and PR
+delivery remain pending. PR #6096 is a complementary proper-length sibling
+requiring later
 explicit reconciliation. Independent audit remains required. No
 `review-loop` is used.
 

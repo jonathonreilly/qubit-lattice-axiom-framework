@@ -1,0 +1,19 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle986_patch_uniformity_induction_independent_check_2026_08_11.py
+runner_sha256: 6651d962fa05c38eda00bc94d4574d90c6e9714857deee339c16167e759dbe2f
+input_fingerprint_sha256: 3b1d4945b91d61705fe7a8f7fe8004b9130dcbc24ee7ab1efa3154b41ea9b6a3
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.20
+status: ok
+----- stdout -----
+CYCLE986_PATCH_UNIFORMITY_INDUCTION_INDEPENDENT_CHECK
+A_INDEPENDENT_RECONSTRUCTION PASS :: offsets=24; classes=[["CNOT",6,[1]],["TOF_OPPOSITE_CONTROLS",3,[0]],["TOF_PERPENDICULAR_CONTROLS",12,[2]]]; agreement=True
+B_REFUTATION_POWER PASS :: rejected=14/14; outcome_neutral=[true,true]
+C_ARTIFACT_BINDING PASS :: pins=True; clean_bookkeeping=True
+D_PROVENANCE PASS :: primary_imported=False; cycle719_imported=False; prior_cycles_executed=False
+E_CONTROLS PASS :: source_reads=3<=6; determinism=True; runtime_lt_300=True
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

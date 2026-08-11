@@ -1459,8 +1459,12 @@ lines are in the landing primary cache.
   has response `0.180976576` and gap `0.684834735`.
 - Evidence: source/input-pinned cache is `PASS=13 FAIL=0`; independent direct
   Bloch reconstruction is `PASS=5 FAIL=0`; citation graph is `5,489/15,694`,
-  out-degree six; full conformance, commit, push, PR, and independent audit
-  remain pending.
+  out-degree six. Science commit is `e010059bfe`; direct conformance passes.
+  The exact stack seeds `4,827` rows / `3,705` runners and reaches only the
+  inherited stage-7 policy-epoch stop. The controlled five-file current-main
+  overlay passes all 18 stages at checkpoint `16e32ac30666`; changed evidence
+  is clean for `1/1` Block-43 and `43/43` stacked claims, with zero failures or
+  controls. Push, PR, and independent audit remain pending.
 - Scope: bounded five-volume linear Ward/Green result and narrow unreduced
   Euclidean semiboundedness boundary, not a gravity no-go, selected law,
   all-`L` theorem, Lorentzian update, axiom edit, percentage move, or audit

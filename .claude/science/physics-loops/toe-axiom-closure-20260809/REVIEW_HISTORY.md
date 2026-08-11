@@ -1974,7 +1974,12 @@ instance or Fourier census.
 - Fresh N1--N8 rejects a broad gravity no-go and promotes Lorentzian constraint
   reduction. Primary cache is `PASS=13 FAIL=0`; independent direct Bloch
   reconstruction is `PASS=5 FAIL=0`; citation registration is
-  `5,489/15,694`, out-degree six. Conformance, commit, PR, and independent
+  `5,489/15,694`, out-degree six. Science commit is `e010059bfe`; direct
+  conformance passes. The exact stack seeds `4,827` rows / `3,705` runners and
+  reaches only the inherited stage-7 policy-epoch stop. The controlled
+  current-main five-file overlay passes all 18 stages at checkpoint
+  `16e32ac30666`. Changed evidence is clean for Block 43 (`1/1`) and all 43
+  stacked claims (`43/43`), with zero failures or controls. PR and independent
   audit are pending. No canonical axiom, fixed percentage, audit verdict, or
   `review-loop` changes.
 

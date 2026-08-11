@@ -1709,8 +1709,12 @@ stacked exactly on Block-42 delivery head `7ac0e0e12c`. The theorem note,
 primary runner, source/input-pinned `PASS=13 FAIL=0` cache, independent direct
 symbol reconstruction `PASS=5 FAIL=0`, fresh N1--N8, and all five N5
 resolutions are present. Citation registration is
-`5,489/15,694`, out-degree six. Conformance, commit, push, PR, and independent
-audit are pending.
+`5,489/15,694`, out-degree six. Science commit is `e010059bfe`; direct
+conformance passes. The exact stack seeds `4,827` rows / `3,705` runners and
+reaches only the inherited stage-7 dependency-policy epoch mismatch. The
+controlled current-main five-file overlay passes all 18 stages at checkpoint
+`16e32ac30666`; changed evidence is clean for Block 43 (`1/1`) and all 43
+stacked claims (`43/43`). Push, PR, and independent audit are pending.
 
 The significant gain is constructive: the repaired complete-edge Regge sector
 has exact static displacement Ward compatibility, a positive fixed-average

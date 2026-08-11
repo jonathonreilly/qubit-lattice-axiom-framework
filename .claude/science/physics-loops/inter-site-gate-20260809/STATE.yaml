@@ -110,3 +110,32 @@ campaign6_arc_to_date: >
   by 979). Ops: PR #6109 fixes the review-worktree disk leak that had been
   killing runs (1.8 GB -> 312 MB sparse, trap cleanup, 5 GB preflight);
   34 crashed trees holding 21 GB were removed.
+
+wave9_results:
+  R1_cycle985: PR #6120 — THE CLAUSE HAS AN OBSERVABLE CONSEQUENCE. All 10
+    separated target-input pairs lock DIFFERENT record content: CNOT locks
+    P_{x xor n}; both TOF classes lock P_x except configuration 11 which
+    locks P_{x xor 1}. The difference is visible to an ADMISSIBLE readout
+    under the Record axiom's own discipline: additive I_one with
+    I_one(P_0)=0, I_one(P_1)=1 separates every pair. Scope declared:
+    explicit point-mass, single-formed-site construction — NOT a selected
+    physical readout and NOT a mosaic-wide claim.
+  IS8_cycle986: PR #6121 — THE INDUCTION CLOSES. Uniformity extends to every
+    FINITE rooted star-glued patch satisfying the stated overlap hypotheses;
+    all 24 overlap offsets verified (6/6/12) plus 2->3 and 3->4 with supports
+    17/20. Explicitly NO infinite-lattice and NO global-schedule claim.
+    Primary 4/4; checker 5/5 with 25/25 mutations rejected.
+
+campaign6_standing: >
+  Nine waves, fifteen blocks, zero unrecovered errors. The 2026-08-05
+  Admissibility clause now has: 21 witnesses / 3 covariant classes;
+  multiplicities as orbit arithmetic (6x4=12x2=3x8=24); a new separating
+  invariant J = ||sum c||^2; exact reproduction on the true Z^3 star;
+  uniformity across every finite star-glued patch (induction closed);
+  an observable consequence in locked record content, separable by an
+  admissible additive readout. Against that: the Born wall is UNMOVED
+  (5/5) on substrate AND Z^3, and J coincides with nothing landed.
+  Two in-campaign self-corrections (972 uniqueness -> 977; 978 collapse ->
+  979). Open: the infinite-lattice quantifier (finite patches only), the
+  mosaic-level reading of 985, corpus-wide newness of J, and the 26-row
+  audit adjudication (map at #6072).

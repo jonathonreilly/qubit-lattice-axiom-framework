@@ -1979,9 +1979,11 @@ instance or Fourier census.
   reaches only the inherited stage-7 policy-epoch stop. The controlled
   current-main five-file overlay passes all 18 stages at checkpoint
   `16e32ac30666`. Changed evidence is clean for Block 43 (`1/1`) and all 43
-  stacked claims (`43/43`), with zero failures or controls. PR and independent
-  audit are pending. No canonical axiom, fixed percentage, audit verdict, or
-  `review-loop` changes.
+  stacked claims (`43/43`), with zero failures or controls. Science commit is
+  `e010059bfe`; campaign conformance is `1fe4108ded`. PR #6134 is open,
+  mergeable, and `CLEAN`, stacked exactly on Block-42 delivery head
+  `7ac0e0e12c`; independent audit is pending. No canonical axiom, fixed
+  percentage, audit verdict, or `review-loop` changes.
 
 ## Block 42 Construction And Adversarial Record
 

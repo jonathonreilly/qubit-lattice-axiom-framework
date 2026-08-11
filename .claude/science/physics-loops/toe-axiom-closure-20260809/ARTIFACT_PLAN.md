@@ -1055,5 +1055,7 @@ complete conditional nonlinear compact solution:
   reaches only the inherited stage-7 dependency-policy epoch mismatch; the
   controlled current-main five-file overlay passes all 18 stages at checkpoint
   `16e32ac30666`. Changed evidence is clean for Block 43 alone (`1/1`) and all
-  43 stacked claims (`43/43`), with zero failures or controls. Push, PR, and
-  independent audit are pending
+  43 stacked claims (`43/43`), with zero failures or controls. Campaign
+  conformance is `1fe4108ded`; PR #6134 is open, mergeable, and `CLEAN`,
+  stacked exactly on Block-42 delivery head `7ac0e0e12c`; independent audit
+  remains required

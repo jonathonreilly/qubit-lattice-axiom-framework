@@ -1714,7 +1714,9 @@ conformance passes. The exact stack seeds `4,827` rows / `3,705` runners and
 reaches only the inherited stage-7 dependency-policy epoch mismatch. The
 controlled current-main five-file overlay passes all 18 stages at checkpoint
 `16e32ac30666`; changed evidence is clean for Block 43 (`1/1`) and all 43
-stacked claims (`43/43`). Push, PR, and independent audit are pending.
+stacked claims (`43/43`). Campaign conformance is `1fe4108ded`; PR #6134 is
+open, mergeable, and `CLEAN`, stacked exactly on Block-42 delivery head
+`7ac0e0e12c`. Independent audit is pending.
 
 The significant gain is constructive: the repaired complete-edge Regge sector
 has exact static displacement Ward compatibility, a positive fixed-average

@@ -605,8 +605,10 @@ is `5,489/15,694`, out-degree six. Science commit is `e010059bfe`; direct
 conformance passes. The exact stack reaches only the inherited stage-7 policy
 epoch; the controlled current-main five-file overlay passes all 18 stages at
 checkpoint `16e32ac30666`. Changed evidence is clean for `1/1` Block-43 and
-`43/43` stacked claims. Push, PR, and independent audit are pending. No
-canonical edit, percentage move, audit verdict, or `review-loop` is used.
+`43/43` stacked claims. Campaign conformance is `1fe4108ded`. PR #6134 is open,
+mergeable, and `CLEAN`, stacked exactly on Block-42 delivery head
+`7ac0e0e12c`. Independent audit is pending. No canonical edit, percentage
+move, audit verdict, or `review-loop` is used.
 
 Block 42 is local on branch
 `physics-loop/toe-axiom-closure-block42-connection-quotient-20260811`, stacked

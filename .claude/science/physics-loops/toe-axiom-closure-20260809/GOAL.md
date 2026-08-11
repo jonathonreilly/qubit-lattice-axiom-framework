@@ -1123,3 +1123,33 @@ The next target is a local geometry field using the same rule on all six
 proper-cubic incidences, one nonlinear nonuniform stationary solution, and the
 complete differentiated Ward identity from that same joint law. No fifth
 axiom is proved necessary. No canonical axiom or fixed percentage is changed.
+
+## Block 35 Target And Disposition
+
+Block 35 asks whether the Block-34 plane geometry label can be made genuinely
+local and whether its positive affine response survives the mandatory
+nonlinear decoder connection.
+
+The first repair succeeds on the width-three cylinder. A four-state local
+geometry/Record code with one positive symmetric Gram bond on all six
+incidences yields a matrix-free positive-definite transfer, reversible Perron
+gluing, positive local domain walls and flips, and a one-step reflection form.
+The actual Record dictionary is also repaired: ten signed-cubic rays attain
+the rank-ten lower bound, whereas the inherited fifteen-ray set closes to
+forty under the required rotations.
+
+The affine response does not survive as a decoder-independent statement. The
+same Perron functional gives a positive rank-ten susceptibility, but the exact
+nonlinear pullback includes the source-times-decoder-curvature term. A cubic-
+covariant control makes that term reverse the minimum-eigenvalue sign.
+Fugacity and wall-tension controls likewise show that the local extensional
+law is not selected by the previously fixed-sector data.
+
+The next target is therefore one local coframe/link functional on this
+ten-ray carrier, with a gauge-fixed genuinely nonuniform stationary
+background and an independently assembled exact local-frame Ward identity.
+It must include connected, contact, mixed/source, multiplier, and nonzero
+generator-connection terms and must not be called a diffeomorphism or Einstein
+Ward theorem. The Record-derived geometry observable, full-`Z^3` phase, and
+Lorentzian permanent-Record update remain separate obligations. No fifth
+axiom is proved necessary. No canonical axiom or fixed percentage is changed.

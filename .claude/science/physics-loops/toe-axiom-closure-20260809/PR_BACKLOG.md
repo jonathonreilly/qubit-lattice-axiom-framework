@@ -663,3 +663,22 @@ campaign conformance is `5edf1495a1`. PR #6108 is open, mergeable, and
 remains a complementary proper-length sibling requiring later explicit
 reconciliation. Independent audit remains required. No canonical edit,
 percentage move, audit verdict, or `review-loop` is used.
+
+Block 35 is local on branch
+`physics-loop/toe-axiom-closure-block35-local-joint-ward-20260811`, stacked on
+exact Block-34 delivery head `4511720608`. Its distinct review object is the
+sitewise four-state geometry/Record law, one positive symmetric Gram bond on
+all six incidences, matrix-free reversible `4^9` Perron transfer, local domain
+walls/flips, minimum ten-ray signed-cubic metric compiler, same-functional
+rank-ten response, nonlinear decoder connection, and fugacity/tension
+selection boundary. Primary source/input-pinned cache is `PASS=15 FAIL=0` in
+`8.23 s` with 5,261 stdout characters; all fifteen isolated forced-false runs
+fail exactly one named check. Citation registration is `5,481/15,665`, with
+out-degree four. Direct conformance passes. The independent reconstruction
+caught and triggered repair of an omitted executed-weight table; its corrected
+runner-free rerun is `PASS=9 FAIL=0` and reproduces the complete width-three
+surface. Exact-stack conformance, changed-evidence readiness,
+science/conformance commits, PR delivery, and independent audit are pending.
+PR #6096 remains a complementary proper-length sibling requiring later
+explicit reconciliation. No canonical edit, percentage move, audit verdict,
+or `review-loop` is used.

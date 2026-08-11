@@ -1,0 +1,51 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_local_geometry_record_bond_transfer_reflection_response_connection_boundary_2026_08_11.py
+runner_sha256: 59722f55fcb1e5785861ac93cdab527323c620ed45124b9433b1e47733cee8eb
+input_fingerprint_sha256: 8387f6cca3b5313f9e49d772d136e8bbe474c28c213dc5e33708f6004f998f84
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 8.23
+status: ok
+----- stdout -----
+external_scientific_inputs: none; all state factors, bonds, parent weights, and response maps are repository-local
+constructive_gain: a matrix-free local geometry/Record bond law removes the slice-plane label and supplies a symmetric positive transfer
+boundary: the local geometry code, fugacity, wall tension, full-Z3 phase, Ward generator, and Lorentzian Record dynamics remain underived
+[PASS] axiom-parent-interface: the axioms supply a covariant nearest-neighbour distribution but not its values or dynamics, while the parents require a physical local geometry map
+[PASS] note-and-no-go-contract: the source note states the finite-width Euclidean scope, lands the current N1--N8 gate, and does not claim a physical geometry decoder, full-Z3 phase, Ward identity, or Lorentzian dynamics
+[PASS] six-incidence-proper-cubic-local-rule: one normalized positive coarse geometry/occupancy conditional is invariant under all 24 proper-cubic rotations and varies with each of the six neighbour incidences
+       environments=4096; rotations=24; covariance=2.776e-16; minimum sensitivity=0.091462
+[PASS] minimal-signed-cubic-record-ray-repair: the inherited fifteen positive-support rays expand to forty under signed cubic rotations, while the ten replacement rays are closed and attain the rank-ten metric lower bound
+       inherited closure=40; determinant=24576; Gram determinant=603979776; covariance=0.0e+00
+[PASS] local-heat-bath-euclidean-control: the displayed local conditional defines a reversible single-site heat-bath sampler, while the note keeps its scheduler and Record-erasing moves outside physical dynamics
+       maximum local balance residual=1.110e-16
+[PASS] matrix-free-positive-definite-transfer: the 262144-state transfer is applied by nine four-state contractions; the positive Gram bond makes the unmaterialized symmetric transfer positive definite
+       local bond minimum eigenvalue=0.319047619; Perron residual=8.098e-16; minimum message=3.422e-04
+[PASS] every-length-local-cylinder-projectivity: the one local tensor transfer and its Perron endpoint normalize and project every finite longitudinal interval
+       executed interval error=1.110e-15; analytic identity holds for every length
+[PASS] local-geometry-domain-wall-law: geometry is sitewise rather than one plane label: mixed slices, transverse domain walls, and longitudinal local flips all have positive stationary mass
+       mixed=0.966469789; transverse disagreement=0.425829293; vertical flip=0.434619070
+[PASS] symmetric-transfer-reversibility-repair: the local Gram-bond transfer has unit forward/reverse cycle ratio and reversible Perron flux, unlike the target-sector Block-34 transfer control
+       local ratio=1.000000000000; parent control=38.443359375000
+[PASS] same-functional-local-source-and-response: the log-Perron gradient reproduces all ten signed-cubic Record-ray sources, whose symmetric susceptibility and metric pullback are positive and full rank
+       gradient=2.296e-09; symmetry=3.399e-11; minima=0.205281/0.410562
+[PASS] nonlinear-decoder-connection-chain-rule: the composed metric Hessian matches M^T H M plus source times decoder curvature; omitting that connection term fails and can reverse the affine positivity conclusion
+       included error=2.660e-07; omitted error=0.615843; nonlinear minimum=-0.205281
+[PASS] nonlinear-decoder-covariant-control: the connection mutation is not symmetry breaking: its all-edge quadratic curvature commutes with all 24 signed proper-cubic spatial rotations
+       maximum covariance error=6.509e-17
+[PASS] local-geometry-fugacity-selection-boundary: a geometry-only fugacity leaves every tested fixed-slice-geometry Record conditional unchanged while moving the joint geometry marginal
+       conditional error=1.110e-15; geometry masses=0.165265715/0.834734285
+[PASS] domain-wall-tension-selection-boundary: a second positive-definite proper-cubic bond is a constant on uniform-geometry sectors yet changes local domain-wall statistics
+       uniform-sector ratio error=0.000e+00; disagreements=0.425829293/0.297048687
+[PASS] four-obligation-boundary: the finite local Euclidean law closes neither the physical geometry carrier, full-lattice phase, exact Ward generator, nor autonomous Lorentzian Record update
+N5_CERTIFICATE: local geometry replaces the plane label; the transfer is symmetric positive and reversible
+N5_CERTIFICATE: source response includes ten cubic Record-ray fields, ten metric fields, and nonlinear decoder curvature
+N5_CERTIFICATE: fugacity and domain-wall controls preserve fixed-sector information while changing the joint local law
+per_element: checked all four local geometry/occupancy states and all ten signed-cubic Record rays in the supplied bond law
+per_site: checked all 4096 six-neighbour environments, all 24 proper-cubic rotations, and each incidence separately
+per_mode: checked ten affine and nonlinear metric-coordinate response directions; nonzero Fourier Ward modes were not executed
+per_block: checked all 262144 width-three slice states through a matrix-free nine-factor transfer and mixed-domain observables
+lattice_wide: checked and not executed — finite width does not certify a selected full-Z3 phase or Lorentzian causal dynamics
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

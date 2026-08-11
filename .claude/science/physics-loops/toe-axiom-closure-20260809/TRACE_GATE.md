@@ -583,3 +583,21 @@ shared-null physical license, local geometry field, full-`Z^3` phase,
 nonlinear stationary equation, complete Ward connection, and Lorentzian
 update remain underived. Candidate wording is unadopted; fixed TOE percentages
 and canonical axioms remain unchanged. No `review-loop` is used.
+
+Block 35 replaces the slice-global geometry label by one local four-state
+geometry/Record code on every cylinder site, repairs the Record-ray dictionary
+to an exactly signed-cubic minimum rank-ten carrier, and constructs a
+matrix-free symmetric positive-definite transfer with reversible every-length
+Perron gluing and positive domain walls/flips. It also executes the complete
+nonlinear decoder chain rule and proves the connection term can reverse the
+affine response sign.
+
+Reachability remains `upstream_support`, not direct TOE closure. The geometry
+code and local weights are supplied; fugacity and wall-tension controls remain
+physically unselected; and the result supplies neither an increasing-width
+phase, action-level local symmetry, diffeomorphism/Einstein Ward identity,
+complete OS reconstruction, nor permanent-Record Lorentzian dynamics. The
+next target is a gauge-fixed nonuniform coframe/link stationary fixture with
+every connected, contact, mixed, multiplier, and generator-connection term
+derived from the same functional. Candidate wording is unadopted; fixed TOE
+percentages and canonical axioms remain unchanged. No `review-loop` is used.

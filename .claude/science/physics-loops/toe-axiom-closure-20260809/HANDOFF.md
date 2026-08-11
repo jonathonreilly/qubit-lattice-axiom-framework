@@ -1454,3 +1454,35 @@ conformance is `5edf1495a1`. PR #6108 is open, mergeable, and `CLEAN`, stacked
 exactly on Block-33 delivery head `2337074c89`. Independent audit remains
 required. No canonical edit, percentage move, audit verdict, or `review-loop`
 occurs.
+
+## Block 35 Local Geometry / Decoder Connection Handoff
+
+Do carry the sitewise carrier, the symmetric Gram-bond transfer, and the
+ten-ray signed-cubic dictionary. They retire the slice-plane geometry defect,
+the target-transfer reversibility defect, and the inherited label-orbit
+defect on the declared cylinder. The same Perron functional gives the full
+rank-ten local source response.
+
+Do not carry affine positivity as physical metric stability. The complete
+nonlinear pullback contains `sum_e s_e C_e`; the executed covariant control
+changes the minimum to `-0.205281`. Also do not infer a physical geometry law
+from the supplied code: fugacity and wall tension remain independent
+extensional controls.
+
+The next object must be one local coframe/link action on the ten rays, not
+another scalar decoder or slice kernel. Gauge-fix a genuinely nonuniform
+stationary background and independently assemble its covariance, contact,
+mixed/source, multiplier, and generator-connection terms. Require a nonzero
+connection fixture and keep local-frame symmetry distinct from lattice
+diffeomorphism/Einstein structure. Then address increasing width/full-`Z^3`
+phase and Lorentzian permanent-Record evolution.
+
+Primary cache is `PASS=15 FAIL=0` in `8.23 s`, under the 6,000-character
+stdout limit; all fifteen isolated forced-false mutations trip exactly one
+check. Citation registration is `5,481/15,665`, out-degree four. The note now
+states every executed local weight after an independent reconstruction caught
+the original omission. Its corrected runner-free rerun is `PASS=9 FAIL=0` and
+reproduces the complete width-three numerical surface. Exact-stack
+conformance, changed-evidence readiness, commits, delivery, and independent
+audit remain pending. No canonical edit, fixed percentage move, audit verdict,
+or `review-loop` occurs.

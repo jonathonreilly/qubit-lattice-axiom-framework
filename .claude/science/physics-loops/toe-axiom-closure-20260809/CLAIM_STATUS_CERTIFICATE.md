@@ -1070,3 +1070,49 @@ independent_audit_required: true
   #6108 is open, mergeable, and `CLEAN`, stacked exactly on Block-33 delivery
   head `2337074c89`. Independent audit remains required. No canonical edit,
   fixed percentage move, audit verdict, or `review-loop`.
+
+## Block 35 Local Geometry / Decoder Connection Certificate
+
+- Claim type: `bounded_theorem`.
+- Local carrier: one four-state geometry/occupancy code is placed at every
+  site and the same positive symmetric Walsh Gram bond is used on every one
+  of the six nearest-neighbour incidences.
+- Proper-cubic scope: all 4,096 local neighbour environments and all 24
+  rotations pass; each incidence changes the conditional nontrivially.
+- Ray repair: the inherited fifteen positive-support rays close to forty,
+  while four body diagonals plus six axis-plus-tick rays are exactly closed,
+  minimum-cardinality, rank ten, and have metric-map determinant magnitude
+  `24576` and Gram determinant `603979776`.
+- Transfer: the matrix-free `4^9=262144` slice transfer is entrywise positive,
+  symmetric, and positive definite; Perron residual is `5.434e-16`, every-
+  length endpoint projectivity error is `2.665e-15`, and the cycle ratio is
+  one versus the Block-34 control `38.443359375`.
+- Local geometry: mixed-slice mass is `0.966469789`, mean transverse
+  disagreement is `0.425829293`, and the vertical flip probability is
+  `0.434619070`.
+- Same-functional response: ten source gradients match within `2.296e-09`;
+  edge and metric Hessians are positive rank ten with minima `0.205281` and
+  `0.410562`.
+- Nonlinear boundary: the complete decoder-chain-rule error is `2.660e-07`;
+  omitting the connection term misses by `0.615843`, and the full nonlinear
+  minimum is `-0.205281` while signed-cubic covariance remains exact.
+- Selection controls: fugacity moves geometry mass from `0.165265715` to
+  `0.834734285` with fixed-geometry Record conditionals unchanged to
+  `1.110e-15`; `tau=6/5` changes domain-wall disagreement to `0.297048687`.
+- Governance: the Record-derived geometry observable, extensional physical
+  law, full-`Z^3` phase, exact Ward redundancy, OS/Lorentz reconstruction,
+  and permanent-Record causal update remain open. No fifth ontology axiom is
+  proved necessary.
+- Runner/cache: source/input pinned, `PASS=15 FAIL=0` in `8.23 s`, with
+  5,261 stdout characters.
+- Mutation sensitivity: fifteen isolated fresh-process forced failures each
+  exit nonzero at exactly one intended named check (`PASS=14 FAIL=1`).
+- Independent reconstruction: `PASS=9 FAIL=0` without importing or executing
+  the primary runner; it reproduces the exact bond spectrum and executed site
+  factors, matrix-free Perron/locality numbers, rank-ten source response,
+  nonlinear sign reversal, and both selection controls.
+- Citation registration: `5,481` nodes / `15,665` edges; the new node has
+  out-degree four. Direct conformance gates pass. Exact-stack conformance,
+  changed-evidence readiness, commits, delivery, and independent audit remain
+  pending. No canonical edit, fixed percentage move, audit verdict, or
+  `review-loop`.

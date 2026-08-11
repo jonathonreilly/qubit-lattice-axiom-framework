@@ -779,3 +779,32 @@ complete conditional nonlinear compact solution:
   stacked claims; science commit `c8eec957c4`, campaign conformance
   `5edf1495a1`; PR #6108 is open, mergeable, and `CLEAN`, stacked on exact
   Block-33 delivery head `2337074c89`; independent audit remains required
+
+## Block 35 — Local Geometry/Record Transfer / Decoder Connection Boundary
+
+- theorem note:
+  `docs/ADMISSIBILITY_LOCAL_GEOMETRY_RECORD_BOND_TRANSFER_REFLECTION_RESPONSE_CONNECTION_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-11.md`
+- runner/cache:
+  `scripts/admissibility_local_geometry_record_bond_transfer_reflection_response_connection_boundary_2026_08_11.py` and its source/input-pinned cache
+- packet scope: one four-state sitewise geometry/Record code, the same positive
+  symmetric Gram bond on all six proper-cubic incidences, a matrix-free
+  `4^9` transfer, reversible every-length Perron gluing, positive local domain
+  walls/flips, a minimum-cardinality ten-ray signed-cubic metric dictionary,
+  same-functional rank-ten source/response, complete nonlinear decoder chain
+  rule, fugacity/tension controls, N1--N8, and a corrected four-obligation
+  downstream-law boundary
+- exclusions: a physical Record-derived geometry observable, selected bond or
+  decoder coefficients, an increasing-width/full-`Z^3` phase, a nonuniform
+  local-frame or diffeomorphism Ward theorem, complete OS reconstruction,
+  Lorentzian dynamics, canonical edits, percentage movement, audit verdicts,
+  and `review-loop`
+- current evidence: source/input-pinned cache `PASS=15 FAIL=0` in `8.23 s`
+  with 5,261 stdout characters; all fifteen isolated fresh-process forced
+  failures trip exactly one named check; citation registration is
+  `5,481/15,665`, out-degree four; independent runner-free reconstruction is
+  `PASS=9 FAIL=0` and reproduces the width-three Perron, local geometry,
+  source/response, nonlinear connection, fugacity, and tension numbers;
+  vocabulary, premise, model, cache, syntax, whitespace, strict-lint,
+  claim-typing, graph/link/invariant, N1--N8, and canonical-nonmutation direct
+  gates pass. Exact-stack conformance, changed-evidence readiness, commits,
+  delivery, and independent audit remain pending.

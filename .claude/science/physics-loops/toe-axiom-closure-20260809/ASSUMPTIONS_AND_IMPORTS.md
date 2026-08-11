@@ -669,3 +669,23 @@ law is not a local geometry field on all six incidences, a selected full-
 `Z^3` phase, nonlinear stationary gravity equation, complete Ward connection,
 or Lorentzian update. No external science, observed constant, canonical edit,
 percentage move, audit verdict, or `review-loop` is imported.
+
+## Block 35 Assumptions And Imports
+
+Block 35 imports the current Admissibility/Record wording, Block 34's Perron
+and same-functional source machinery, the endogenous-geometry requirement for
+a Record-derived local `Gamma`, and only the stated graining-form equality
+from the kinetic-isotropy primitive. The four-state bond algebra, all 4,096
+local environments, 24 spatial proper-cubic rotations, signed-ray closures,
+integer metric map, tensor transfer, Perron observables, response derivatives,
+and nonlinear chain rule are reconstructed in the new runner.
+
+The local geometry code, Walsh-bond coefficients, null and orbit weights,
+activity denominator, baseline/control fugacities, domain-wall tension,
+finite width, Euclidean transfer interpretation, field steps, and nonlinear
+decoder curvature are supplied bounded data and are now stated explicitly in
+the theorem note. One positive symmetric transfer is not a selected physical
+joint law, full-`Z^3` phase, local-frame/diffeomorphism Ward theorem, complete
+OS reconstruction, permanent-Record update, or Lorentzian dynamics. No
+external science, observed constant, canonical edit, percentage move, audit
+verdict, or `review-loop` is imported.

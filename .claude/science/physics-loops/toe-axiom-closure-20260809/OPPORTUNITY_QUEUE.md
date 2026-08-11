@@ -221,3 +221,18 @@ full-lattice phase, and the differentiated gravity response in the same law.
 Efficiency rule: do not add another slice-global kernel or independent
 stiffness. The next candidate must localize geometry and derive its nonlinear
 stationarity and Ward connection from the same joint functional.
+
+## Post-Block-35 Priority Refresh
+
+| Rank | Target | Exact next witness | Why now |
+|---:|---|---|---|
+| 1 | exact nonuniform local-frame Ward identity | one coframe/link functional on the ten-ray carrier, a gauge-fixed genuinely nonuniform stationary background, and independent covariance/contact/mixed/multiplier/generator-connection assemblies with a nonzero connection fixture | locality, reversible transfer, and the nonlinear decoder term are now explicit; the exact symmetry identity is the shortest test of whether the source can become coherent gravity response |
+| 2 | Record-derived geometry carrier and extensional law | derive `Gamma` inside existing `M_2(C)` Record content and fix the local weights, or register the narrow sufficient downstream interface without asserting necessity | fugacity, wall tension, and decoder curvature change the law while preserving the earlier fixed/uniform sector data |
+| 3 | increasing-width/full-`Z^3` phase | extend the same local bond/action to compatible transverse widths and prove a selected limit/phase | sitewise locality is solved only on the width-three cylinder; finite Perron uniqueness is not infinite-volume phase selection |
+| 4 | constituent-causal Lorentzian closure | derive an OS reconstruction or permanent-Record causal/unitary update compatible with the selected local law | the heat-bath sampler is reversible but Record-erasing, and one-step reflection positivity does not provide a cone or autonomous dynamics |
+| 5 | independent TOE roots and stack reconciliation | preserve the proper-length sibling and resume Born/history and operational selectors after the Ward decision | the gravity branch now has one sharply falsifiable local symmetry target rather than another coefficient search |
+
+Efficiency rule: freeze the scalar finite-width witness. Do not fit another
+kernel, fugacity, tension, or affine stiffness. Reuse the ten-ray carrier and
+spend computation only on a same-action nonuniform frame/link stationary
+fixture whose complete differentiated identity can fail term by term.

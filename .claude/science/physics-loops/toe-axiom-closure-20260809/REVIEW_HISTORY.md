@@ -1824,3 +1824,47 @@ instance or Fourier census.
   #6108 is open, mergeable, and `CLEAN`, stacked exactly on Block-33 delivery
   head `2337074c89`. Independent audit remains required. No canonical axiom,
   fixed percentage, audit verdict, or `review-loop` is changed.
+
+## Block 35 Construction Record
+
+- Replaced the Block-34 slice-global geometry label by one four-state local
+  geometry/Record code and the same positive symmetric Gram bond on all six
+  nearest-neighbour incidences.
+- Exhausted all 4,096 local environments and 24 proper-cubic rotations; every
+  incidence is load-bearing and the normalized conditional stays positive.
+- Proved the inherited fifteen positive-support rays close to forty under
+  signed cubic rotations; constructed a closed ten-ray minimum metric
+  dictionary with determinant magnitude `24576` and Gram determinant
+  `603979776`.
+- Applied the `262144`-state cylinder transfer matrix-free; its local bond
+  minimum eigenvalue is `0.319047619`, Perron residual is `5.434e-16`, and
+  every-length endpoint-projectivity error is `2.665e-15`.
+- Obtained mixed-geometry mass `0.966469789`, transverse disagreement
+  `0.425829293`, vertical flip `0.434619070`, and a reversible cycle ratio one
+  versus the exact Block-34 control `38.443359375`.
+- Matched ten same-functional sources within `2.296e-09`; the edge and metric
+  Hessians are positive rank ten with minima `0.205281/0.410562`.
+- Included the nonlinear decoder connection with error `2.660e-07`; omitting
+  it misses by `0.615843` and changes the minimum to `-0.205281` without
+  breaking signed-cubic covariance.
+- Separated geometry fugacity and wall tension while preserving the tested
+  fixed/uniform geometry Record information.
+- Applied current N1--N8, collapsed the residuals to four independent
+  obligations, retained seven live closure routes, and rejected universal
+  gravity-no-go, axiom-necessity, and ontology-enlargement readings.
+- Primary source/input-pinned cache is `PASS=15 FAIL=0` in `8.23 s`, with
+  5,261 stdout characters; fifteen isolated forced-false runs each fail
+  exactly one named check.
+- An independent reconstruction passed all five structural checks and caught
+  one note-only reproducibility defect: the executed local weight table was
+  absent. After the table and reference outputs were added and the cache was
+  refreshed, a runner-free rerun returned `PASS=9 FAIL=0`, reproducing the
+  exact bond, matrix-free Perron/locality, source/response, nonlinear
+  connection, fugacity, and tension results.
+- Citation registration is `5,481` nodes / `15,665` edges; the new node has
+  out-degree four. Direct vocabulary, premise-purity, model-normalization,
+  cache, syntax/YAML, whitespace, strict-lint, graph/link/invariant,
+  claim-typing, N1--N8, and canonical-nonmutation gates pass.
+- Exact-stack conformance, changed-evidence readiness, commits, PR delivery,
+  and independent audit remain pending. No canonical axiom, fixed percentage,
+  audit verdict, or `review-loop` is changed.

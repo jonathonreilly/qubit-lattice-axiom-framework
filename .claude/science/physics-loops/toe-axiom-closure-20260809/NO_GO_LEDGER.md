@@ -286,3 +286,16 @@ derive its pure-geometry term and metric coupling, solve one nonuniform
 background, and differentiate the exact symmetry. The bounded negative is
 only that the current structural axioms do not choose between the two executed
 joint laws.
+
+## Block 35 Local-Law / Nonlinear-Connection Boundary
+
+| Scoped claim | Exact/bounded evidence | N1--N8 disposition | Forbidden promotion | Live routes |
+|---|---|---|---|---|
+| the supplied finite-width local Gram-bond law repairs the plane geometry label and has a positive affine rank-ten response, but fixed/uniform geometry information does not select its fugacity, wall tension, or nonlinear decoder Hessian | all 4,096 environments and 24 rotations; positive-definite `4^9` transfer; mixed mass `0.966469789`; ray closure `40 -> 10`; affine minima `0.205281/0.410562`; omitted connection error `0.615843`; fugacity and tension controls | pass only for the stated four-state code, exact executed weight table, width-three Euclidean cylinder, ten homogeneous source directions, one covariant nonlinear decoder, and named controls; wall count collapses to four | do not infer a universal local-law or gravity no-go, physical geometry selection, full-`Z^3` phase, diffeomorphism/Einstein Ward identity, OS/Lorentz reconstruction, axiom necessity, or ontology enlargement | derive `Gamma` in existing Record content; local coframe/link action; selected increasing-region phase; exact frame Ward identity; OS reconstruction; permanent-Record causal/unitary dilation |
+
+The strongest steelman remains live and determines the next block: one
+Record-derived local geometry observable may feed a coframe/link action whose
+exact frame redundancy supplies every connected/contact/connection term on a
+nonuniform background. The bounded result therefore corrects the wall count
+to four and explicitly rejects both a gravity no-go and a fifth-axiom
+necessity claim.

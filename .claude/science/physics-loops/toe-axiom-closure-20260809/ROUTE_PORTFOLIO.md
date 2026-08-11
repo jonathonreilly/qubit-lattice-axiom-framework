@@ -716,3 +716,23 @@ are now one indivisible target.
 The algebraic response branch is no longer the leading wall conditional on a
 joint law. Physical selection, localization, nonlinear stationarity, and the
 complete Ward connection are now the indivisible target.
+
+## Block 35 Local Geometry / Nonlinear Connection Route Comparison
+
+| Route | Exact object | Outcome | Decision |
+|---|---|---|---|
+| sitewise coarse geometry | four states per site and one bond on all six incidences | all local environments/rotations pass; domain walls and flips have positive mass | retain as the plane-label repair, not a physical `Gamma` |
+| symmetric Gram transfer | positive-definite four-state Walsh kernel | matrix-free positive-definite transfer, every-length Perron gluing, reversibility, and one-step reflection form | retain; full OS/Lorentz reconstruction remains open |
+| signed-cubic ray repair | four body diagonals plus six axis-plus-tick rays | exact closed rank-ten minimum dictionary; inherited fifteen close to forty | retain as the metric-score carrier without adding a site type |
+| affine same-functional response | Hessian of the local Perron pressure pulled through the ten-ray map | positive rank ten | retain only as an affine susceptibility |
+| nonlinear decoder connection | `M^T H M + sum_e s_e C_e` | independently reproduced; covariant control reverses the minimum sign | require this term in every future Ward/stability calculation |
+| geometry fugacity | `eta_1=1/2` versus `2` | fixed-geometry Record conditionals agree while geometry mass changes | identify extensional local-law selection as open |
+| domain-wall tension | `tau=1` versus `6/5` | uniform-geometry Record information agrees while wall statistics change | identify finite-momentum/phase content as open |
+| local-frame Ward route | one coframe/link action, nonuniform stationary fixture, exact differentiated redundancy | not constructed | highest-priority gravity/axiom-interface target |
+| increasing-width phase | compatible transverse widths and selected limit | not constructed | required beyond the cylinder |
+| Lorentzian update | OS reconstruction or permanent-Record causal/unitary dynamics | not constructed | required physical endpoint |
+
+The scalar local-law and affine-response search is exhausted for now. The
+next useful discriminator is whether one action-level local-frame redundancy
+actually closes with all contact and generator-connection terms on a
+nonuniform background.

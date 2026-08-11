@@ -632,6 +632,11 @@ transfer normalization gauge, phase-prior nonselection, and dual response
 control. Primary source/input-pinned cache is `PASS=22 FAIL=0` in `3.3 s`;
 independent reconstruction is `PASS=5 FAIL=0`; all twenty-two isolated
 forced-false runs fail one named check. Citation registration is
-`5,479/15,658`, with out-degree two and twenty-one helpers. Direct conformance,
-exact stack, changed evidence, commits, PR, and independent audit are pending.
-No canonical edit, percentage move, audit verdict, or `review-loop` is used.
+`5,479/15,658`, with out-degree two and twenty-one helpers. Direct conformance
+passes. The exact stack reaches only the inherited stage-7 dependency-policy
+epoch mismatch after `4,817` rows / `3,695` runners; the controlled five-file
+current-main overlay passes all 18 stages at checkpoint `4e1690eb404e`.
+Changed evidence is clean for `1/1` Block-33 and `33/33` stacked claims.
+Science commit is `7d8f457b48`; campaign conformance, PR, and independent audit
+are pending. No canonical edit, percentage move, audit verdict, or
+`review-loop` is used.

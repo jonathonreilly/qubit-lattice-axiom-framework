@@ -1,0 +1,49 @@
+===== runner cache v1 =====
+runner: scripts/physical_cell_cutting_flip_counts_cycle769_2026_08_11.py
+runner_sha256: 8f7f483902bab9c4c9713d46827f008f685484cb250a5756ad6a2b9ae861bb44
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 106.79
+status: ok
+----- stdout -----
+all numbers below are exact computational identities; no floating point enters any gate
+PASS C0 object: 2672 pieces, 400 at cost floor 6, 15800 cuttings of 24, 192 used, 192 covers
+PASS C1 each piece lies in 1975 cuttings, 8 times 1975 is 15800; each cover has 8 pieces and meets every cutting once
+PASS C2 group: 384 coordinate maps, all distinct, closed under composition, every one carries pieces to pieces
+PASS C3 piece action: 384 distinct bijections of the 192 pieces, one orbit
+PASS C4 cover action: 384 distinct bijections of the 192 covers, one orbit
+PASS C5 two of the 384 elements generate all 384; neither is the identity nor either stabiliser element
+PASS C6 stabiliser of piece 0 has order 2, of cover 0 has order 2; both non-identity elements square to the identity
+PASS C7 the two stabiliser elements differ; 384 = 2 times 192 = 2 times 192
+PASS C8 direct orbit counts: 104 on ordered piece pairs, 120 on ordered cover pairs, 96 on cover-by-piece cells
+PASS C9 same three counts walked from the two generators alone: 104, 120, 96
+PASS C10 fixed-point averages over the group give the same three counts: 104, 120, 96
+PASS C11 the four counts: piece stabiliser fixes 16 pieces and 0 covers; cover stabiliser fixes 0 pieces and 48 covers
+PASS C12 twice the orbit count minus the set size 192 equals the measured fixed count in all four cases: 16, 48, 0, 0
+PASS C13 two-element stabiliser orbits counted directly: 104 on pieces, 120 on covers, 96 and 96 across
+PASS C14 perturbed piece action: all 6 transpositions tried break at least one of the four, fewest 3, most 3, the first already at try 1
+PASS C15 perturbed cover action: all 6 transpositions tried break at least one of the four, fewest 3, most 3, the first already at try 1
+PASS C16 the true action breaks 0 of the four while every perturbation breaks at least 3, so the agreement is not automatic
+PASS C17 no non-identity element fixes any of the 36864 cells; the cover stabiliser moves all 192 pieces
+PASS C18 for each of the 192 covers the stabiliser's other element fixes no piece, so cover and piece stabilisers meet in the identity
+PASS C19 free action: 36864 = 384 times 96, and 96 = 384 over 2 times 2
+PASS C20 part table: 20 rows, dimensions 1,1,1,1,3,3,3,3,4,4,8,8,8,8,12,12,24,24,32,32
+PASS C21 the 104 orbit matrices multiply by the structure constants on 7 sampled pairs; the centre has dimension 20
+PASS C22 sum of d times m is 192, sum of d times mc is 192
+PASS C23 part table sums: m dot m is 104, mc dot mc is 120, m dot mc is 96
+PASS C24 bridge: those three sums equal the direct orbit counts 104, 120, 96
+PASS C25 m dot m minus m dot mc is 8, strictly above zero, so at least one part has m above mc: 10 do
+PASS C26 the blind floor is 48, carried by the 10 parts with m above mc, which are its contributors by bookkeeping since d is at least 1
+PASS C27 each part's measured blind dimension is at least its forced part; total blind dimension 87, least slack 0
+PASS C28 row by row on all 20 rows, d times min plus d times the positive difference rebuilds the row dimension
+PASS C29 ceiling 144 plus floor 48 is 192, which is the piece count and the cover count
+PASS C30 one cell orbit alone has rank 144 at both primes and blind dimension 48, and 144 plus 48 is 192
+PASS C31 wrong-count rejector: 8 of 8 altered fixed-point tuples break at least one identity
+PASS C32 wrong-row rejector: 40 of 40 altered rows fail the row test, which turns on the dimension being d times m
+PASS C33 source hygiene: ASCII yes, no tab yes, no remainder sign yes, no long dash yes, 41 barred strings absent yes
+PASS C34 budget: 106 s under 900, 127 MB under 2500, stdout under 5200 with 1418 to spare
+characters printed before this line: 3672
+TOTAL: PASS=35 FAIL=0
+
+----- stderr -----
+

@@ -2016,6 +2016,11 @@ instance or Fourier census.
 - Fresh cache is `PASS=20 FAIL=0` in `5.18 s`, stdout 4,983 characters.
   Independent numerical-action reconstruction is `PASS=6 FAIL=0`, reproducing
   flat EC max `5.294e-17`, source RMS `0.002721655`, and mode fraction one.
-  Citation registration is `5,485/15,675`, out-degree two. Repository
-  conformance, commit, push, and PR remain pending. No canonical axiom, fixed
-  percentage, or audit verdict is changed.
+  Citation registration is `5,485/15,675`, out-degree two. Direct repository
+  gates pass. The exact stack reconstructs `4,823` rows / `3,701` runners and
+  reproduces only the inherited stage-7 policy-epoch stop; the controlled
+  five-file current-main overlay passes all 18 stages at checkpoint
+  `90bff61032ac`. Changed evidence is ready for Block 39 (`1/1`) and all 39
+  stacked claims (`39/39`), with zero failures or controls. Science commit is
+  `69f6ed96de`; campaign conformance, push, and PR remain pending. No canonical
+  axiom, fixed percentage, or audit verdict is changed.

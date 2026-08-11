@@ -601,10 +601,14 @@ periodic connection gradient, all translated cube-Bianchi identities, the
 open-boundary control, and the positive zero-sum Fourier source carrier.
 Primary cache is `PASS=20 FAIL=0` in `5.18 s` with 4,983 stdout characters;
 independent numerical-action reconstruction is `PASS=6 FAIL=0`. Citation
-registration is `5,485/15,675`, out-degree two. Direct conformance, full
-pipeline, science/campaign commits, push, and stacked PR remain pending.
-Independent audit remains required. No canonical edit, percentage move, audit
-verdict, or `review-loop` is used.
+registration is `5,485/15,675`, out-degree two. Direct conformance passes. The
+exact stack reconstructs `4,823` rows / `3,701` runners and stops only at the
+inherited stage-7 policy epoch; the controlled current-main overlay passes all
+18 stages at checkpoint `90bff61032ac`. Changed evidence is ready for `1/1`
+Block-39 and `39/39` stacked claims, with zero failures or controls. Science
+commit is `69f6ed96de`; campaign conformance, push, and stacked PR remain
+pending. Independent audit remains required. No canonical edit, percentage
+move, audit verdict, or `review-loop` is used.
 
 Block 31 is local on branch
 `physics-loop/toe-axiom-closure-block31-record-source-reaction-gluing-20260810`,

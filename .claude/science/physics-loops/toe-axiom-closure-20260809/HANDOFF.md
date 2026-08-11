@@ -1605,8 +1605,12 @@ Work is on branch
 stacked exactly on Block-38 delivery head `d3a4e143f2`. The theorem note,
 runner, fresh cache, and citation manifest are present. Primary cache is
 `PASS=20 FAIL=0` in `5.18 s` with 4,983 stdout characters; an independent
-numerical-action reconstruction is `PASS=6 FAIL=0`. Direct conformance and
-delivery remain before the stacked PR.
+numerical-action reconstruction is `PASS=6 FAIL=0`. Direct gates pass. The
+exact stack seeds 4,823 rows / 3,701 runners before only the inherited stage-7
+policy-epoch stop; the controlled five-file current-main overlay passes all 18
+stages at checkpoint `90bff61032ac`. Changed evidence is clean for Block 39
+(`1/1`) and the complete stack (`39/39`), with no failures or controls. Science
+commit is `69f6ed96de`; campaign conformance, push, and stacked PR remain.
 
 The major gain is exact separation of gravity issues. The fixed-background
 Record phase exists uniquely on full `Z^3`; the flat periodic connection

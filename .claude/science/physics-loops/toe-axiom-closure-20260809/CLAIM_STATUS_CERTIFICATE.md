@@ -1330,6 +1330,13 @@ lines are in the landing primary cache.
 - Runner/cache: source/input pinned, `PASS=20 FAIL=0` in `5.18 s`, stdout
   `4,983` characters. Independent numerical-action reconstruction is
   `PASS=6 FAIL=0`.
+- Citation/conformance: `5,485` nodes / `15,675` edges, with note out-degree
+  two. Direct gates pass. The exact stack seeds `4,823` rows and classifies
+  `3,701` runners before reproducing only the inherited stage-7 policy-epoch
+  mismatch; the controlled five-file current-main overlay passes all 18 stages
+  at checkpoint `90bff61032ac`. Changed evidence is ready for Block 39 alone
+  (`1/1`) and all 39 stacked claims (`39/39`), with zero failures and zero
+  control failures. Science commit is `69f6ed96de`; delivery remains pending.
 - Scope: unique fixed-background Record phase and flat periodic connection
   stationarity are closed. Continuous joint phase, coframe equation,
   displacement Ward, Einstein quotient, physical law selection, and

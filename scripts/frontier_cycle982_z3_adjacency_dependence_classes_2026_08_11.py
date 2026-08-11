@@ -594,7 +594,7 @@ def render_stdout(receipt: dict) -> str:
         + f" pins={receipt['controls']['sha_pins_match'] and receipt['controls']['blob_pins_match']};"
         + f" prior_ast_text={receipt['controls']['prior_cycle_text_or_ast_executed']};"
         + f" determinism={receipt['controls']['determinism_replay']};"
-        + f" runtime_s={receipt['controls']['runtime_seconds']:.3f}<1400",
+        + f" runtime_lt_1400={receipt['controls']['runtime_budget_met']}",
     ]
     passed = sum(receipt["checks"].values())
     lines.append(f"TOTAL: PASS={passed} FAIL={len(receipt['checks']) - passed}")
@@ -648,9 +648,10 @@ def run() -> tuple[dict, str]:
         and bool(scope["scope_boundary"])
         and bool(scope["not_supplied_by_this_instance"])
     )
+    runtime_budget_met = monotonic() - started < AUDIT_TIMEOUT_SEC
     controls.update({
         "determinism_replay": deterministic,
-        "runtime_seconds": monotonic() - started,
+        "runtime_budget_met": runtime_budget_met,
         "runtime_budget_seconds": AUDIT_TIMEOUT_SEC,
         "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
         "house_stdout_limit_bytes": HOUSE_STDOUT_LIMIT_BYTES,
@@ -665,7 +666,7 @@ def run() -> tuple[dict, str]:
         and controls["pinned_substrate"]["sha_pin_match"]
         and controls["pinned_substrate"]["blob_pin_match"]
         and controls["base_is_ancestor_of_head"]
-        and deterministic and controls["runtime_seconds"] < AUDIT_TIMEOUT_SEC
+        and deterministic and runtime_budget_met
     )
     receipt = {
         "cycle": CYCLE,

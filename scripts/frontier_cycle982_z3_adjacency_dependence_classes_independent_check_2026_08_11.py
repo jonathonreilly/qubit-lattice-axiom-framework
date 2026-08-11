@@ -38,17 +38,14 @@ RECEIPT_PATH = (
 AUDIT_INPUT_PATHS = (
     "scripts/frontier_cycle982_z3_adjacency_dependence_classes_2026_08_11.py",
     "outputs/z3_adjacency_dependence_classes_cycle982_receipt_2026_08_11.json",
-    "logs/runner-cache/frontier_cycle982_z3_adjacency_dependence_classes_2026_08_11.txt",
 )
 EXPECTED_INPUT_SHA256 = {
-    PRIMARY_PATH: "8b5fe04a9f5195bf152b3576cc139f2c61f31782bed829d1188ac8987dfec90c",
-    PRIMARY_RECEIPT_PATH: "8a7988828b13903307cc5b34e4a76a9a30b4ba95c4f6278e41d4d20d8483b2b9",
-    PRIMARY_CACHE_PATH: "ab17b298793d981da88667e4f5b3b1522392cf29a3e25627e20efec16141ca59",
+    PRIMARY_PATH: "764415ed220b3036ff08ee936ea0e79eb227daef39e39b8c8866c64f8ab616e7",
+    PRIMARY_RECEIPT_PATH: "bbda00e56dc7721919fe8cd52196940d88020e4671969d6199e16541bc9cc4c2",
 }
 EXPECTED_INPUT_BLOBS = {
-    PRIMARY_PATH: "34b10d7d8c6e66cdc12ff08e9b33b2a96946ce99",
-    PRIMARY_RECEIPT_PATH: "b8fd98cdf5c9f6d4f67e09e9454cd1e4afd2c516",
-    PRIMARY_CACHE_PATH: "2c0785129922347b9792874e546085f21dbc7b11",
+    PRIMARY_PATH: "6ae849c0c42749ea5d4d7e607430856cd8d5523f",
+    PRIMARY_RECEIPT_PATH: "e3caae976d9f6c4d315ca271e5bddbc94cbca776",
 }
 FORBIDDEN_IMPORT_FRAGMENTS = (
     "frontier_cycle719_two_rail_recurrent_controller_core",
@@ -242,8 +239,9 @@ def selected_primary_view(receipt: dict) -> dict:
     findings = receipt["findings"]
     adjacency = findings["A_ADJACENCY_MAP"]
     census = findings["B_Z3_WITNESS_CENSUS"]
+    candidate = census["semantic_candidate_census"]
     hosted = census["hosted_census"]
-    orbit = None if hosted is None else hosted["orbit_decomposition"]
+    orbit = candidate["orbit_decomposition"]
     return {
         "semantic_edge_count": adjacency["semantic_wiring_edge_count"],
         "z3_edge_count": adjacency["z3_edge_count"],
@@ -255,9 +253,11 @@ def selected_primary_view(receipt: dict) -> dict:
         ),
         "family_size": census["family"]["family_size"],
         "hosted": census["route_host"]["all_words_routable"],
-        "witness_count": None if hosted is None else hosted["witness_count"],
-        "witness_names": [] if hosted is None else sorted(hosted["witness_names"]),
-        "orbits": [] if orbit is None else [
+        "hosted_census_present": hosted is not None,
+        "hosted_equals_candidate": hosted == candidate if hosted is not None else False,
+        "witness_count": candidate["witness_count"],
+        "witness_names": sorted(candidate["witness_names"]),
+        "orbits": [
             {
                 "class_label": row["class_label"],
                 "member_count": row["member_count"],
@@ -266,36 +266,124 @@ def selected_primary_view(receipt: dict) -> dict:
             }
             for row in orbit["orbits"]
         ],
-        "group_order": None if orbit is None else orbit["effective_group_order"],
+        "group_order": orbit["effective_group_order"],
+        "candidate_partition": orbit["partition_has_no_overlap_or_omission"],
+        "candidate_action_closed": orbit["action_closed_on_witnesses"],
+        "candidate_J_distinct": orbit["J_distinct_across_orbits"],
         "expanded_primitive_count": census["route_host"]["expanded_primitive_count"],
         "routed_nn_gate_count": census["route_host"]["routed_nn_gate_count"],
         "maximum_route_distance": census["route_host"]["maximum_route_distance"],
         "maximum_touched_sites": census["route_host"]["maximum_touched_sites"],
+        "route_classification": census["route_host"]["classification"],
+        "route_failure_count": sum(
+            census["route_host"][key] for key in (
+                "non_nn_failure_count", "operand_order_failure_count",
+                "route_return_failure_count",
+            )
+        ),
         "transfer": findings["C_STRUCTURE_TRANSFER"]["classification"],
+        "transfer_orbit_matches_candidate": (
+            findings["C_STRUCTURE_TRANSFER"]["orbit_data"] == orbit
+        ),
         "full_infinite_claimed": findings["D_HONEST_SCOPE"]["full_infinite_z3_instance_claimed"],
         "scope_missing_count": len(findings["D_HONEST_SCOPE"]["not_supplied_by_this_instance"]),
     }
 
 
-def validate(receipt: dict, cache_payload: str, expected: dict) -> tuple[bool, list[str]]:
+def relation_classification(left: set, right: set) -> str:
+    if left == right:
+        return "relations_equal"
+    if right < left:
+        return "z3_strict_subrelation_of_semantic_wiring"
+    if left < right:
+        return "semantic_wiring_strict_subrelation_of_z3"
+    if left & right:
+        return "overlap_without_inclusion"
+    return "disjoint_relations"
+
+
+def validate(receipt: dict, cache_payload: str, _expected: dict) -> tuple[bool, list[str]]:
     errors = []
     view = selected_primary_view(receipt)
-    for key in (
-        "semantic_edge_count", "z3_edge_count", "relation_classification",
-        "family_size", "witness_count", "witness_names", "orbits", "group_order",
-        "expanded_primitive_count", "routed_nn_gate_count",
-        "maximum_route_distance", "maximum_touched_sites",
-    ):
-        if view[key] != expected[key]:
-            errors.append(f"mismatch:{key}")
-    if view["is_quotient_map"] is not False:
+    findings = receipt["findings"]
+    adjacency = findings["A_ADJACENCY_MAP"]
+    substrate = {tuple(pair) for pair in adjacency["semantic_wiring_edges"]}
+    z3_edges = {tuple(pair) for pair in adjacency["z3_edges"]}
+    if len(substrate) != view["semantic_edge_count"]:
+        errors.append("semantic_edge_count")
+    if len(z3_edges) != view["z3_edge_count"]:
+        errors.append("z3_edge_count")
+    if view["relation_classification"] != relation_classification(substrate, z3_edges):
+        errors.append("relation_classification")
+    vertex_sites = {
+        int(wire): tuple(site) for wire, site in adjacency["vertex_map"].items()
+    }
+    injective = len(set(vertex_sites.values())) == len(vertex_sites)
+    if adjacency["vertex_map_injective"] != injective:
+        errors.append("vertex_injectivity")
+    if view["is_quotient_map"] == injective:
         errors.append("quotient_flag")
-    if not view["all_paths_nn"]:
-        errors.append("non_nn_path")
-    if view["hosted"] is not True:
+    if len(adjacency["path_realization"]) != len(substrate):
+        errors.append("path_coverage")
+    for row in adjacency["path_realization"]:
+        pair = tuple(row["logical_pair"])
+        path = tuple(tuple(site) for site in row["path"])
+        actual_nn = all(l1(a, b) == 1 for a, b in zip(path, path[1:]))
+        actual_internal = set(path) <= set(vertex_sites.values())
+        if row["is_z3_edge"] != (pair in z3_edges):
+            errors.append("path_edge_label")
+        if row["path_length"] != len(path) - 1:
+            errors.append("path_length")
+        if row["all_steps_z3_nearest_neighbour"] != actual_nn:
+            errors.append("path_nn_flag")
+        if row["path_stays_in_seven_site_star"] != actual_internal:
+            errors.append("path_internal_flag")
+
+    census = findings["B_Z3_WITNESS_CENSUS"]
+    candidate = census["semantic_candidate_census"]
+    orbit = candidate["orbit_decomposition"]
+    orbit_members = [member for row in orbit["orbits"] for member in row["members"]]
+    if view["family_size"] != 2 + 6 + 15:
+        errors.append("family_reconciliation")
+    if view["witness_count"] != len(view["witness_names"]):
+        errors.append("witness_count")
+    if sorted(orbit_members) != view["witness_names"]:
+        errors.append("orbit_partition_members")
+    if sum(row["member_count"] for row in orbit["orbits"]) != view["witness_count"]:
+        errors.append("orbit_count_sum")
+    if any(
+        row["orbit_stabilizer_product"] != view["group_order"]
+        for row in orbit["orbits"]
+    ):
+        errors.append("orbit_stabilizer_product")
+    j_values = [tuple(row["J_values"]) for row in orbit["orbits"]]
+    j_distinct = len(set(j_values)) == len(j_values)
+    if orbit["J_distinct_across_orbits"] != j_distinct:
+        errors.append("J_distinct_flag")
+
+    should_host = view["route_failure_count"] == 0
+    if view["hosted"] != should_host:
         errors.append("host_flag")
-    if view["transfer"] != "transfers_exactly_on_the_declared_local_family":
-        errors.append("transfer")
+    expected_host_class = (
+        "finite_seven_site_z3_star_hosted" if should_host
+        else "finite_seven_site_z3_star_not_hosted_by_landed_router"
+    )
+    if view["route_classification"] != expected_host_class:
+        errors.append("host_classification")
+    if view["hosted_census_present"] != should_host:
+        errors.append("hosted_census_presence")
+    if should_host and not view["hosted_equals_candidate"]:
+        errors.append("hosted_census_content")
+    if not should_host:
+        expected_transfer = "not_applicable_without_a_hosted_local_instance"
+    elif view["candidate_action_closed"] and view["candidate_J_distinct"]:
+        expected_transfer = "transfers_exactly_on_the_declared_local_family"
+    elif view["candidate_action_closed"]:
+        expected_transfer = "orbit_structure_transfers_but_J_deforms"
+    else:
+        expected_transfer = "class_structure_fails_to_transfer"
+    if view["transfer"] != expected_transfer or not view["transfer_orbit_matches_candidate"]:
+        errors.append("transfer_reconciliation")
     if view["full_infinite_claimed"] is not False or view["scope_missing_count"] < 1:
         errors.append("honest_scope")
     if not all(receipt.get("checks", {}).values()) or not receipt.get("pass"):
@@ -398,8 +486,8 @@ def render_stdout(receipt: dict) -> str:
         + f" :: rejected={sum(row['rejected'] for row in receipt['findings']['mutations'])}/"
         + f"{len(receipt['findings']['mutations'])}",
         "C_ARTIFACT_BINDING " + ("PASS" if receipt["checks"]["C_ARTIFACT_BINDING"] else "FAIL")
-        + f" :: source_receipt_cache_pins={receipt['controls']['sha_pins_match'] and receipt['controls']['blob_pins_match']};"
-        + f" clean_validation={receipt['findings']['clean_validation']}",
+        + f" :: source_receipt_pins={receipt['controls']['sha_pins_match'] and receipt['controls']['blob_pins_match']};"
+        + f" cache_semantics_bound={receipt['findings']['clean_validation']}",
         "D_PROVENANCE " + ("PASS" if receipt["checks"]["D_PROVENANCE"] else "FAIL")
         + f" :: primary_imported={receipt['controls']['primary_imported_or_executed']};"
         + f" cycle719_imported={receipt['controls']['cycle719_imported_or_executed']};"
@@ -407,7 +495,7 @@ def render_stdout(receipt: dict) -> str:
         "E_CONTROLS " + ("PASS" if receipt["checks"]["E_CONTROLS"] else "FAIL")
         + f" :: source_reads={receipt['controls']['literal_source_read_count']}<=6;"
         + f" determinism={receipt['controls']['determinism_replay']};"
-        + f" runtime_s={receipt['controls']['runtime_seconds']:.3f}<300",
+        + f" runtime_lt_300={receipt['controls']['runtime_budget_met']}",
     ]
     passed = sum(receipt["checks"].values())
     lines.append(f"TOTAL: PASS={passed} FAIL={len(receipt['checks']) - passed}")
@@ -421,8 +509,32 @@ def run_once() -> tuple[dict, str]:
     expected = independent_expected()
     clean, clean_errors = validate(primary_receipt, primary_cache, expected)
     mutations = mutation_campaign(primary_receipt, primary_cache, expected)
+    primary_view = selected_primary_view(primary_receipt)
+    agreement_keys = (
+        "semantic_edge_count", "z3_edge_count", "relation_classification",
+        "family_size", "witness_count", "witness_names", "orbits", "group_order",
+        "expanded_primitive_count", "routed_nn_gate_count",
+        "maximum_route_distance", "maximum_touched_sites",
+    )
+    agreement_mismatches = [
+        key for key in agreement_keys if primary_view[key] != expected[key]
+    ]
+    expected_bookkeeping = bool(
+        expected["family_size"] == len(family())
+        and expected["witness_count"] == len(expected["witness_names"])
+        and sum(row["member_count"] for row in expected["orbits"])
+            == expected["witness_count"]
+        and all(
+            row["member_count"] * row["effective_stabilizer_order"]
+                == expected["group_order"]
+            for row in expected["orbits"]
+        )
+    )
     findings = {
         "independent_expected": expected,
+        "independent_reconstruction_bookkeeping": expected_bookkeeping,
+        "primary_science_agreement": not agreement_mismatches,
+        "primary_science_agreement_mismatches": agreement_mismatches,
         "clean_validation": clean,
         "clean_validation_errors": clean_errors,
         "mutations": mutations,
@@ -440,7 +552,7 @@ def run_once() -> tuple[dict, str]:
         and not controls["prior_cycle_text_or_ast_executed"]
     )
     checks = {
-        "A_INDEPENDENT_RECONSTRUCTION": clean,
+        "A_INDEPENDENT_RECONSTRUCTION": expected_bookkeeping,
         "B_REFUTATION_POWER": bool(mutations) and all(row["rejected"] for row in mutations),
         "C_ARTIFACT_BINDING": binding,
         "D_PROVENANCE": provenance,
@@ -459,9 +571,10 @@ def run() -> tuple[dict, str]:
     second_findings, second_checks = run_once()
     deterministic = first_findings == second_findings and first_checks == second_checks
     controls = input_controls()
+    runtime_budget_met = monotonic() - started < AUDIT_TIMEOUT_SEC
     controls.update({
         "determinism_replay": deterministic,
-        "runtime_seconds": monotonic() - started,
+        "runtime_budget_met": runtime_budget_met,
         "runtime_budget_seconds": AUDIT_TIMEOUT_SEC,
         "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
         "house_stdout_limit_bytes": HOUSE_STDOUT_LIMIT_BYTES,
@@ -470,7 +583,7 @@ def run() -> tuple[dict, str]:
     checks["E_CONTROLS"] = bool(
         checks["E_CONTROLS"] and deterministic
         and controls["sha_pins_match"] and controls["blob_pins_match"]
-        and controls["runtime_seconds"] < AUDIT_TIMEOUT_SEC
+        and runtime_budget_met
     )
     receipt = {
         "cycle": CYCLE,

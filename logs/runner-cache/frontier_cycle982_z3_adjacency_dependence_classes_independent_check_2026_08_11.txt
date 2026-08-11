@@ -1,7 +1,7 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle982_z3_adjacency_dependence_classes_independent_check_2026_08_11.py
-runner_sha256: 439297c54ad318cbcfdc6bbac1222d07462ffc2355c173caa647e95380ca68ab
-input_fingerprint_sha256: 54b4834fe05e389f5b15edb39e550ada15385a25f48aaae2f28dae7273a041e6
+runner_sha256: 5e451eb7f2b283905b1b1edbe1c4f87f75d26a331a5f3940cd55b4dc24fa2bac
+input_fingerprint_sha256: f55355a9dff04b8d441b4a8e9e4d52b78b73451b9de7a3dfdd056d42f227e53b
 timeout_sec: 300
 exit_code: 0
 elapsed_sec: 0.09
@@ -10,9 +10,9 @@ status: ok
 CYCLE982_Z3_ADJACENCY_DEPENDENCE_CLASSES_INDEPENDENT_CHECK
 A_INDEPENDENT_RECONSTRUCTION PASS :: semantic_edges=21; z3_edges=6; witnesses=21; orbits=[{"J_values":[1],"class_label":"CNOT","effective_stabilizer_order":4,"member_count":6},{"J_values":[0],"class_label":"TOF_OPPOSITE_CONTROLS","effective_stabilizer_order":8,"member_count":3},{"J_values":[2],"class_label":"TOF_PERPENDICULAR_CONTROLS","effective_stabilizer_order":2,"member_count":12}]
 B_REFUTATION_POWER PASS :: rejected=10/10
-C_ARTIFACT_BINDING PASS :: source_receipt_cache_pins=True; clean_validation=True
+C_ARTIFACT_BINDING PASS :: source_receipt_pins=True; cache_semantics_bound=True
 D_PROVENANCE PASS :: primary_imported=False; cycle719_imported=False; prior_cycles_executed=False
-E_CONTROLS PASS :: source_reads=3<=6; determinism=True; runtime_s=0.023<300
+E_CONTROLS PASS :: source_reads=2<=6; determinism=True; runtime_lt_300=True
 TOTAL: PASS=5 FAIL=0
 
 ----- stderr -----

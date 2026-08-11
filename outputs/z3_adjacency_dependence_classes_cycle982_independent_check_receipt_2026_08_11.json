@@ -1,7 +1,7 @@
 {
   "artifact": "true Z3 adjacency dependence-class independent refutation checker",
   "audit_status_authority": "independent audit lane only",
-  "checker_source_sha256": "439297c54ad318cbcfdc6bbac1222d07462ffc2355c173caa647e95380ca68ab",
+  "checker_source_sha256": "5e451eb7f2b283905b1b1edbe1c4f87f75d26a331a5f3940cd55b4dc24fa2bac",
   "checks": {
     "A_INDEPENDENT_RECONSTRUCTION": true,
     "B_REFUTATION_POWER": true,
@@ -17,28 +17,25 @@
     "forbidden_imports": [],
     "house_stdout_limit_bytes": 6000,
     "input_git_blobs": {
-      "logs/runner-cache/frontier_cycle982_z3_adjacency_dependence_classes_2026_08_11.txt": "2c0785129922347b9792874e546085f21dbc7b11",
-      "outputs/z3_adjacency_dependence_classes_cycle982_receipt_2026_08_11.json": "b8fd98cdf5c9f6d4f67e09e9454cd1e4afd2c516",
-      "scripts/frontier_cycle982_z3_adjacency_dependence_classes_2026_08_11.py": "34b10d7d8c6e66cdc12ff08e9b33b2a96946ce99"
+      "outputs/z3_adjacency_dependence_classes_cycle982_receipt_2026_08_11.json": "e3caae976d9f6c4d315ca271e5bddbc94cbca776",
+      "scripts/frontier_cycle982_z3_adjacency_dependence_classes_2026_08_11.py": "6ae849c0c42749ea5d4d7e607430856cd8d5523f"
     },
     "input_sha256": {
-      "logs/runner-cache/frontier_cycle982_z3_adjacency_dependence_classes_2026_08_11.txt": "ab17b298793d981da88667e4f5b3b1522392cf29a3e25627e20efec16141ca59",
-      "outputs/z3_adjacency_dependence_classes_cycle982_receipt_2026_08_11.json": "8a7988828b13903307cc5b34e4a76a9a30b4ba95c4f6278e41d4d20d8483b2b9",
-      "scripts/frontier_cycle982_z3_adjacency_dependence_classes_2026_08_11.py": "8b5fe04a9f5195bf152b3576cc139f2c61f31782bed829d1188ac8987dfec90c"
+      "outputs/z3_adjacency_dependence_classes_cycle982_receipt_2026_08_11.json": "bbda00e56dc7721919fe8cd52196940d88020e4671969d6199e16541bc9cc4c2",
+      "scripts/frontier_cycle982_z3_adjacency_dependence_classes_2026_08_11.py": "764415ed220b3036ff08ee936ea0e79eb227daef39e39b8c8866c64f8ab616e7"
     },
     "literal_audit_input_paths": [
       "scripts/frontier_cycle982_z3_adjacency_dependence_classes_2026_08_11.py",
-      "outputs/z3_adjacency_dependence_classes_cycle982_receipt_2026_08_11.json",
-      "logs/runner-cache/frontier_cycle982_z3_adjacency_dependence_classes_2026_08_11.txt"
+      "outputs/z3_adjacency_dependence_classes_cycle982_receipt_2026_08_11.json"
     ],
-    "literal_source_read_count": 3,
+    "literal_source_read_count": 2,
     "primary_ast_timeout_seconds": 1400,
     "primary_imported_or_executed": false,
     "prior_cycle_text_or_ast_executed": false,
+    "runtime_budget_met": true,
     "runtime_budget_seconds": 300,
-    "runtime_seconds": 0.02338966599199921,
     "sha_pins_match": true,
-    "stdout_bytes": 766,
+    "stdout_bytes": 765,
     "stdout_limit_bytes": 150000
   },
   "cycle": 982,
@@ -106,17 +103,18 @@
       ],
       "z3_edge_count": 6
     },
+    "independent_reconstruction_bookkeeping": true,
     "mutations": [
       {
         "errors": [
-          "mismatch:relation_classification"
+          "relation_classification"
         ],
         "name": "relation_classification",
         "rejected": true
       },
       {
         "errors": [
-          "mismatch:semantic_edge_count"
+          "semantic_edge_count"
         ],
         "name": "semantic_edge_count",
         "rejected": true
@@ -130,28 +128,28 @@
       },
       {
         "errors": [
-          "mismatch:witness_count"
+          "hosted_census_content"
         ],
         "name": "witness_count",
         "rejected": true
       },
       {
         "errors": [
-          "mismatch:orbits"
+          "hosted_census_content"
         ],
         "name": "orbit_size",
         "rejected": true
       },
       {
         "errors": [
-          "mismatch:orbits"
+          "hosted_census_content"
         ],
         "name": "stabilizer",
         "rejected": true
       },
       {
         "errors": [
-          "mismatch:orbits"
+          "hosted_census_content"
         ],
         "name": "J_separator",
         "rejected": true
@@ -177,10 +175,12 @@
         "name": "cache_headline",
         "rejected": true
       }
-    ]
+    ],
+    "primary_science_agreement": true,
+    "primary_science_agreement_mismatches": []
   },
   "integrity_policy": "checks gate independent reconstruction, artifact binding, and mutation rejection only",
   "pass": true,
   "science_digest": "a3e120dc8a22e39f99e738175c257736eef44065f0a5f48223f3f057f5e4e72c",
-  "stdout_sha256": "42169e9084f3dded0e3d36ccd8d3abf9a592d8841fec7e4353ebdfec89f54b19"
+  "stdout_sha256": "314268cb0dc9e6337f3479a95ca6784d272b7cb85c17bf0aa70aaefe7e518046"
 }

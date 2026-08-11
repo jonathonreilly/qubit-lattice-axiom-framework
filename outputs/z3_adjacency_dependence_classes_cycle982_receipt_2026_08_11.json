@@ -49,8 +49,8 @@
       "sha_pin_match": true
     },
     "prior_cycle_text_or_ast_executed": false,
+    "runtime_budget_met": true,
     "runtime_budget_seconds": 1400,
-    "runtime_seconds": 0.06461879098787904,
     "sha_pins_match": true,
     "stdout_bytes": 658,
     "stdout_limit_bytes": 150000
@@ -1182,7 +1182,7 @@
   },
   "integrity_policy": "checks gate construction and bookkeeping only; hosted, deformed, failed, or unavailable census outcomes remain cleanly reportable",
   "pass": true,
-  "primary_source_sha256": "8b5fe04a9f5195bf152b3576cc139f2c61f31782bed829d1188ac8987dfec90c",
+  "primary_source_sha256": "764415ed220b3036ff08ee936ea0e79eb227daef39e39b8c8866c64f8ab616e7",
   "science_digest": "cb9add50e85268ca72c408694f0599571adb18fca46481182da2cca254fa2b9e",
-  "stdout_sha256": "dc5b3a88ec9f53e03c50a1281b84f912dabd18a64ab6f2665447308cdab92563"
+  "stdout_sha256": "9014e07a963729d52f38e367326906e66275692cdf8ec770b509ba619b41ebce"
 }

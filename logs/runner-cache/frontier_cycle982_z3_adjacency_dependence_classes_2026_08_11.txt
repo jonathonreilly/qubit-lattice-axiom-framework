@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle982_z3_adjacency_dependence_classes_2026_08_11.py
-runner_sha256: 8b5fe04a9f5195bf152b3576cc139f2c61f31782bed829d1188ac8987dfec90c
+runner_sha256: 764415ed220b3036ff08ee936ea0e79eb227daef39e39b8c8866c64f8ab616e7
 input_fingerprint_sha256: db7786cde9df9554b9e925bd8927e6f129e0cdd1546e5ea349a31056104b73bb
 timeout_sec: 1400
 exit_code: 0
-elapsed_sec: 1.71
+elapsed_sec: 1.73
 status: ok
 ----- stdout -----
 CYCLE982_Z3_ADJACENCY_DEPENDENCE_CLASSES
@@ -12,7 +12,7 @@ A_ADJACENCY_MAP PASS :: relation=z3_strict_subrelation_of_semantic_wiring; seman
 B_Z3_WITNESS_CENSUS PASS :: sites=7; family=23; host=finite_seven_site_z3_star_hosted; witnesses=21
 C_STRUCTURE_TRANSFER PASS :: result=transfers_exactly_on_the_declared_local_family; orbits=[["CNOT",6,4,[1]],["TOF_OPPOSITE_CONTROLS",3,8,[0]],["TOF_PERPENDICULAR_CONTROLS",12,2,[2]]]
 D_HONEST_SCOPE PASS :: local_hosted=True; full_infinite_claimed=False; missing=4
-E_CONTROLS PASS :: source_reads=1<=6; pins=True; prior_ast_text=False; determinism=True; runtime_s=0.065<1400
+E_CONTROLS PASS :: source_reads=1<=6; pins=True; prior_ast_text=False; determinism=True; runtime_lt_1400=True
 TOTAL: PASS=5 FAIL=0
 
 ----- stderr -----

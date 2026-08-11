@@ -435,6 +435,20 @@ continuous momentum, and Lorentzian nonlinear stability. The sharpened joint-
 action wording is unadopted; fixed TOE percentages and canonical axioms remain
 unchanged. No `review-loop` is used.
 
+Block 28 executes the local covariant RN-score route left open by Block 27.
+It first sharpens the additive-zero boundary: external-geometry conditionals
+erase a common `F(g)`, while an endogenous geometry-bearing joint law detects
+it through geometry marginals and joint null odds. The total action is fixed;
+only its geometry/matter decomposition is gauge.
+
+Reachability remains `upstream_support`, not direct TOE closure. One retained
+cell admits a shared real source-linear axis-covariant RN contact cancelling
+all three homogeneous source tensors, so locality/covariance do not kill
+gravity. The rank-50 design has eleven unselected coefficient directions, and
+the physical Record-to-geometry map, projective gluing, nonuniform Ward law,
+and Lorentzian update remain absent. Candidate wording is unadopted; fixed TOE
+percentages and canonical axioms remain unchanged. No `review-loop` is used.
+
 Block 25 closes the additive-zero ambiguity analysis constructively. It proves
 that normalized probabilities are invariant while the local contact Hessian
 is arbitrary, and it supplies exact full-tensor gauge-null completions for

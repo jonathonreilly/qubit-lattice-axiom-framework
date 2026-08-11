@@ -127,3 +127,13 @@ connection branches the local joint action actually realizes.
 | 3 | selected source-independent pure geometry | one local Regge/alternate action or causal update combined stationarily with the anchored source | no matter probability ratio can determine this sector |
 | 4 | complete nonuniform Ward and Lorentzian test | connected/contact/mixed/multiplier/generator tensor on a solved background, then continuous-zone causal stability | only the complete selected law can decide physical cancellation |
 | 5 | proper-length reconciliation and independent TOE roots | serialize PR #6096, then rank-one matter and Born/history selectors | complementary contact information and independent closures remain valuable |
+
+## Post-Block-28 Priority Refresh
+
+| Rank | Target | Exact next witness | Why now |
+|---:|---|---|---|
+| 1 | law-select the one-cell RN contact | derive the 61 orbit coefficients from a compatible local Record specification or differentiated Ward identity, without using the Block-23 targets as fit inputs | local/covariant existence is solved; the eleven-dimensional selection kernel is now the sharpest gravity wall |
+| 2 | Record-to-geometry and projective gluing theorem | construct a covariant `Gamma(X)` and compatible finite-region joint laws whose restrictions and null anchors agree | endogenous joint odds fix total geometry action only after geometry is genuinely Record-derived |
+| 3 | nonuniform Ward discriminator | evaluate the selected contact and all eleven blind directions on translated sources and nonzero momenta, then solve one full stationary background | additional Ward data may eliminate the coefficient kernel and test whether cancellation is physical |
+| 4 | autonomous causal/Lorentzian law | derive the geometry/history update and prove quotient stability with the same joint source law | a Euclidean joint measure does not supply time or nonlinear Lorentzian closure |
+| 5 | proper-length reconciliation and independent TOE roots | serialize PR #6096, then return to rank-one matter and Born/history selectors | complementary source-coordinate evidence and independent closures remain live |

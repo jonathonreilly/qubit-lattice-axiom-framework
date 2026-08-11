@@ -579,3 +579,25 @@ complete conditional nonlinear compact solution:
   and `27/27` stacked claims; science commit `2d350c4f8e`, campaign conformance
   `e04ff49385`; PR #6099 is open, mergeable, and `CLEAN`, stacked on exact
   Block-26 delivery head `8281f0a0ea`; independent audit remains required
+
+## Block 28 — Endogenous Joint Geometry And Local Covariant RN Contact
+
+- theorem note:
+  `docs/ADMISSIBILITY_ENDOGENOUS_GEOMETRY_JOINT_RECORD_RN_LOCAL_COVARIANT_CONTACT_SELECTION_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md`
+- runner/cache:
+  `scripts/admissibility_endogenous_geometry_joint_record_rn_local_covariant_contact_selection_boundary_2026_08_10.py` and its source/input-pinned cache
+- packet scope: exact finite joint-action identifiability and disintegration,
+  external-conditional common-shift detection by endogenous geometry odds,
+  complete `825 -> 61` one-cell axis-orbit contact classification, rank-50
+  three-source design with nullity eleven, local covariance/source-linearity,
+  full contact existence, finite RN realization, complete four-invariant
+  rank-two-stress control, N1--N8, and narrowed axiom/downstream-law interface
+- exclusions: a physical Record-to-geometry compiler, coefficient selection,
+  projective/inter-cell gluing, full proper-cubic/diffeomorphism covariance,
+  a stationary nonuniform Ward tensor, continuous-zone or Lorentzian closure,
+  canonical edits, percentage movement, audit verdicts, and `review-loop`
+- construction evidence: primary cache `PASS=16 FAIL=0` in `13.97 s`;
+  independent union-find/SVD reconstruction `PASS=5 FAIL=0`; sixteen isolated
+  fresh-process forced failures each trip exactly one named check; graph
+  `5,474/15,636`, out-degree seven, with sixteen resolved helpers; direct
+  gates pass; exact-stack and controlled-overlay pipelines pending

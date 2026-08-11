@@ -1,6 +1,6 @@
 {
- "edge_count": 15629,
- "node_count": 5473,
+ "edge_count": 15636,
+ "node_count": 5474,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -377,6 +377,10 @@
   "admissibility_cut_worldvolume_affine_bag_regge_monopole_boundary_bounded_theorem_note_2026-08-10": {
    "deps_hash": "f29b14b08ffd",
    "out_degree": 4
+  },
+  "admissibility_endogenous_geometry_joint_record_rn_local_covariant_contact_selection_boundary_bounded_theorem_note_2026-08-10": {
+   "deps_hash": "908bca83f8ca",
+   "out_degree": 7
   },
   "admissibility_fixed_metric_nonlinear_regge_kkt_continuation_boundary_bounded_theorem_note_2026-08-10": {
    "deps_hash": "e6d013e0a56f",

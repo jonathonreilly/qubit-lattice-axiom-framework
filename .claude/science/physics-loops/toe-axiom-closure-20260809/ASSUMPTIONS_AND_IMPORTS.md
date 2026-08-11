@@ -535,6 +535,22 @@ locality/covariance/gluing theorem, projective limit, pure-geometry action,
 stationary nonuniform solution, Lorentzian dynamics, external science,
 canonical edit, percentage move, audit verdict, or `review-loop` is imported.
 
+## Block 28 Assumptions And Imports
+
+Block 28 imports finite strict positivity, the Block-8 full-conditional versus
+joint-law distinction, the Block-25 additive-zero boundary, the Block-26 null
+anchor, the Block-27 RN cocycle, the retained fifteen-edge metric lift, and the
+three reconstructed Block-23 tensors. Joint null-odds decomposition and the
+complete one-cell axis-orbit classification are rederived in the new runner.
+
+The finite geometry label is not assumed physical. A covariant Record-to-
+geometry map, projectively consistent joint family, physical source
+orientation/unit, selected orbit coefficients, full nonuniform Ward law, and
+Lorentzian update are explicit open conditions. The minimum-norm contact is
+target-inferred and is used only as an existence witness. No external
+continuum theorem, observed constant, canonical edit, percentage move, audit
+verdict, or `review-loop` is imported.
+
 ## Block 27 Assumptions And Imports
 
 Block 27 imports the Block-26 null anchor, finite strictly positive probability

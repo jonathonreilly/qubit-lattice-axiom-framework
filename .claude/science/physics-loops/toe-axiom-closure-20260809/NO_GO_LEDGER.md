@@ -204,3 +204,14 @@ The strongest steelman is constructive: a configuration-dependent occupancy-
 weighted quadratic preserves the null anchor, changes odds, and cancels all
 three target matrices. Its nonlocal target reconstruction is the remaining
 defect, not the existence of an anchored completion.
+
+## Block 28 Endogenous Geometry And Local Contact Selection Boundary
+
+| Scoped claim | Exact/bounded evidence | N1--N8 disposition | Forbidden promotion | Live routes |
+|---|---|---|---|---|
+| fixed-geometry conditional probabilities do not see `F(g)`, but a fixed endogenous joint law does; one-cell locality and axis covariance permit a full contact but do not select it | exact rational joint-law shift test; `825 -> 61` orbit census; rank `50`, nullity `11`; all three tensors cancel below `2.122e-10` relative; four-term rank-two stress residual `0.985670` | pass only for finite positive joint laws, one retained cell, simultaneous axis permutations, and the three supplied homogeneous tensors | do not infer a physical geometry code, unique contact, full proper-cubic/diffeomorphism covariance, gravity derivation, fifth-axiom necessity, or Lorentzian no-go | derived Record-to-geometry map, projective joint law, differentiated background generator, higher source moments, dynamical source blocks, refined/perfect action, massive/curved phase |
+
+The strongest steelman succeeds: a local source-linear covariant RN contact
+exists. The remaining negative is only selection nonuniqueness on the tested
+data. More source/momentum Ward constraints or a law-derived score can remove
+the eleven blind directions; no gravity no-go is eligible.

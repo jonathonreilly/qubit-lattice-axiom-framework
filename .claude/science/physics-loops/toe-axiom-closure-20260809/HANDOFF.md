@@ -1225,3 +1225,33 @@ dependent RN score/joint interaction, combined with a separate selected pure-
 geometry action or causal update. PR #6096 remains a complementary proper-
 length route for later explicit reconciliation. No canonical edit, percentage
 move, audit verdict, or `review-loop` occurs. Independent audit is required.
+
+## Block 28 Endogenous Geometry And Local Contact Handoff
+
+The fixed-geometry additive ambiguity is no longer the terminal gravity wall.
+For one finite positive joint law on geometry-bearing Record configurations,
+joint null odds fix the total dimensionless action. A common `F(g)` remains
+invisible to conditional matter probabilities, but changes the geometry
+marginal and joint odds. Only the bookkeeping split into geometry and matter
+terms remains gauge.
+
+On one retained fifteen-edge cell, the complete source-linear quadratic
+contact class has 61 simultaneous-axis orbits. Its three-source projection is
+rank 50 and contains a shared local real contact cancelling the Block-23
+tensors at aggregate relative residual `5.045e-11`. The score is null anchored,
+source linear, exactly equivariant under all 24 axis permutations, and realized
+by a finite RN tilt. This is the first local covariant existence witness in the
+current contact sequence.
+
+It is not selected physics. The design has eleven blind coefficient
+directions, and the complete four-term rank-two stress ansatz misses at
+`0.985670`. Primary cache is `PASS=16 FAIL=0` in `13.97 s`; an independent
+union-find/SVD reconstruction is `PASS=5 FAIL=0`; sixteen isolated forced-
+false runs each fail one named check. Graph registration is `5,474/15,636`,
+with out-degree seven and sixteen helpers. Direct conformance passes; exact-
+stack and controlled-overlay pipelines, commit, push, and PR delivery remain
+pending. The exact next target is coefficient
+provenance from a projective joint Record/Ward law, followed by inter-cell,
+nonuniform, continuous-momentum, and Lorentzian tests. PR #6096 remains a
+complementary proper-length boundary. No canonical edit, percentage move,
+audit verdict, or `review-loop` occurs.

@@ -764,3 +764,38 @@ independent_audit_required: true
 - Science commit: `2d350c4f8e`; campaign conformance: `e04ff49385`.
 - Delivery: PR #6099 is open, mergeable, and `CLEAN`, stacked exactly on
   Block-26 delivery head `8281f0a0ea`. Independent audit remains required.
+
+## Block 28 Endogenous Geometry And Local Contact Certificate
+
+- Claim type: `bounded_theorem`.
+- Joint-action theorem: a finite positive joint law on geometry-bearing Record
+  configurations uniquely fixes its total null-relative action. A common
+  geometry factor invisible to every fixed-geometry conditional changes the
+  geometry marginal and joint odds. Only the geometry/matter decomposition is
+  gauge.
+- Local classification: all `15 x 55 = 825` source-edge/metric-pair quadratic
+  monomials reduce to 61 simultaneous four-axis permutation orbits.
+- Contact existence: the stacked `216 x 61` projected design has rank 50 and
+  contains the negative of all three Block-23 tensors to aggregate relative
+  residual `5.045e-11`; branch residuals are at most `2.122e-10`.
+- Selection boundary: the coefficient nullspace has dimension eleven, and
+  coefficient vectors at distance one give the same tested tensors.
+- Compact control: the complete four-contraction `O(4)` scalar quadratic
+  ansatz linear in one rank-two source moment misses at relative residual
+  `0.985670`.
+- Runner/cache: source/input pinned, `PASS=16 FAIL=0` in `13.97 s`.
+- Independent reconstruction: separate union-find orbit assembly and SVD give
+  `61/50/11`, target relative residual `5.045e-11`, and `PASS=5 FAIL=0`.
+- Mutation sensitivity: sixteen isolated fresh-process forced failures exit
+  nonzero at exactly one intended check (`PASS=16 FAIL=0`).
+- Governance: this is finite joint-action identifiability and one-cell
+  axis-support-covariant contact existence, not a selected gravity law,
+  lattice-wide covariance, axiom necessity, or dynamics theorem. No canonical
+  edit, percentage move, audit verdict, or `review-loop`.
+- Citation graph: `5,474` nodes / `15,636` edges; the new node has out-degree
+  seven and sixteen resolved helper runners.
+- Direct vocabulary, premise-purity, model-normalization, source-pin, syntax,
+  YAML, whitespace, strict-lint, graph/link/invariant, claim-typing, N1--N8,
+  and canonical-nonmutation gates pass.
+- Exact-stack/controlled-overlay pipelines, science commit, push, PR delivery,
+  and independent audit remain pending.

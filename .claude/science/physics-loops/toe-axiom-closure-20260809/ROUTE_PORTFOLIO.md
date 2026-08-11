@@ -599,3 +599,20 @@ The source/action problem is no longer a choice between arbitrary common
 normalization and failure. RN log odds provide the composition law; the live
 science is selection of the local relative score and the separate geometry
 dynamics.
+
+## Block 28 Endogenous Geometry / Local Contact Route Comparison
+
+| Route | Exact object | Outcome | Decision |
+|---|---|---|---|
+| external-geometry conditional family | `P(X|g)` modulo a common geometry factor | cannot identify total geometry odds | retain only as a conditional matter description |
+| endogenous geometry-bearing joint law | `P(g,X)` with distinguished joint null | fixes total null-relative action; geometry/matter split remains a decomposition gauge | highest-value joint-family route; derive `Gamma(X)` and projective gluing |
+| one-cell axis-orbit RN score | 61 orbit sums of `J_e h_A h_B` shared across three sources | rank-50 design cancels all tensors; nullity eleven | retain as local/covariant existence, reject target-fit coefficients as physical selection |
+| rank-two continuum stress scalar | four complete `O(4)` contractions linear in `T` | misses stacked target at `0.985670` relative | retire only this compact ansatz, not higher source moments |
+| differentiated joint Ward law | local `R_*(g,J)`, score, and connection terms | not constructed | preferred coefficient-provenance mechanism |
+| projective/nonuniform/Lorentzian completion | inter-cell joint law, stationary background, causal update | not supplied | required physical endpoint |
+
+The gravity route is now constructive at one cell. The live issue is which
+local score the Record law selects, not whether a local covariant contact can
+exist. Endogenous joint odds also remove the need to identify a separate pure-
+geometry term before forming the total statistical action, provided a physical
+Record-to-geometry map and joint law are actually derived.

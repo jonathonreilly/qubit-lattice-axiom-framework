@@ -935,3 +935,31 @@ intervention typing can be a downstream bridge rather than a fifth axiom;
 source unit/orientation must be registered or derived. A separate pure-
 geometry action or causal update is still unavoidable. No canonical axiom or
 fixed percentage is changed.
+
+## Block 28 Target And Disposition
+
+Block 28 asks whether the Block-25 additive ambiguity remains fatal when
+geometry is part of the joint Record state, and whether the Block-27
+target-tailored global completion can be replaced by a local source-linear
+contact with a discrete covariance certificate.
+
+The first answer is exact: a positive joint law on geometry-bearing Record
+configurations fixes the total null-relative log-density action. A geometry-
+dependent factor invisible to `P(X|g)` changes `P(g)` and the joint null odds.
+The total gravity response is identifiable; only its split into pure geometry
+and conditional matter is conventional.
+
+The second answer is constructively positive at one homogeneous cell. All 825
+source-linear metric quadratics reduce to 61 axis-permutation orbits. Their
+three-source projection has rank 50 and admits one shared real local contact
+that cancels all Block-23 matrices below `2.122e-10` relative. An exact finite
+RN tilt realizes the contact. Gravity therefore survives the locality and
+discrete-covariance existence test.
+
+Physical closure is not yet achieved. Eleven coefficient directions are
+invisible to the three targets, and a compact rank-two stress ansatz misses by
+`0.985670` relative. The next obligation is to derive the coefficients from a
+compatible projective joint Record law or differentiated Ward identity,
+derive the Record-to-geometry map, and test nonuniform momentum and Lorentzian
+dynamics. This may remain downstream; no fifth axiom is yet proven necessary.
+No canonical axiom or fixed percentage is changed.

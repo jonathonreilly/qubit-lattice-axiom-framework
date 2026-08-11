@@ -1,0 +1,49 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_endogenous_geometry_joint_record_rn_local_covariant_contact_selection_boundary_2026_08_10.py
+runner_sha256: fd93f12d815abd3699718ad0dfaeb91c6b885290ddfa7aa1eac2f6794e12f354
+input_fingerprint_sha256: d7d69f2ade2c83648bf52dd83a9999381d298dd5af662aa2d90c82966e4edaa1
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 13.97
+status: ok
+----- stdout -----
+external_scientific_inputs: none; finite joint-law algebra, Regge source tensors, and cell symmetries are repository-local
+analytic_boundary: joint-law and orbit-covariance statements are exact finite algebra; the Block-23 tensor fit is double precision
+physical_boundary: Record-to-geometry compilation, coefficient selection, projective gluing, causal update, and Lorentzian stability remain open
+[PASS] axiom-and-parent-boundary: the current axioms supply sitewise laws but not joint geometry Records, while retained parents supply compatibility, anchor, RN, and target tensors
+[PASS] note-contract: the note states the endogenous joint-action closure, local contact existence, selection degeneracy, and bounded axiom interface
+[PASS] finite-endogenous-joint-action: one positive geometry-plus-Record law has a unique null-relative total action and an exact geometry-null plus conditional decomposition
+[PASS] external-conditional-common-shift: geometry-dependent common rescaling is invisible to every fixed-geometry conditional law
+[PASS] joint-law-detects-geometry-shift: the same rescaling changes geometry marginals and the null-relative joint action, so it is not a symmetry of a fixed endogenous joint law
+[PASS] local-axis-orbit-census: all source-linear quadratic contacts J_e h_A h_B on one retained cell form exactly 61 simultaneous-axis permutation orbits
+       orbit sizes={3: 1, 4: 3, 6: 7, 12: 36, 24: 14}
+[PASS] local-contact-design-rank: the three-source local covariant design has rank 50 and an eleven-dimensional coefficient nullspace
+       shape=(216, 61); rank=50; nullity=11
+[PASS] simultaneous-axis-covariance: the fitted one-cell score is equivariant under all 24 simultaneous permutations of source supports and metric axes
+       maximum covariance residual=0.000e+00
+[PASS] local-null-anchor-and-source-linearity: the cell score vanishes for the null source and responds linearly to signed source rows
+[PASS] local-covariant-full-contact-exists: one source-linear one-cell axis-covariant quadratic cancels all three Block-23 six-mode coefficients
+       aggregate relative=5.045e-11; branch relative=2.122e-10, 4.080e-11, 3.412e-11
+[PASS] covariance-does-not-select-contact: distinct local covariant coefficient vectors give the same three target tensors, so locality and axis covariance do not select the law
+       coefficient separation=1.000000
+[PASS] finite-rn-realization-of-local-contact: an exponential finite-menu RN intervention realizes the fitted null-relative contact and changes configuration odds on positive metrics
+       max RN error=3.061e-16; min odds change=0.000166
+[PASS] rank-two-continuum-stress-ansatz-misses: the complete four-contraction O(4)-scalar quadratic ansatz linear in one source stress tensor misses the stacked target
+       rank=4; aggregate relative residual=0.985670
+[PASS] endogenous-total-action-boundary: a joint geometry-bearing law fixes total gravity response without uniquely splitting pure geometry from conditional matter
+[PASS] minimal-axiom-or-downstream-delta: the remaining decision is a compatible geometry-bearing joint law and selected local score, followed separately by autonomous causal update
+[PASS] bounded-theorem-and-live-routes: the theorem preserves simple non-rank-two scores, dynamical source blocks, background generators, refined actions, massive phases, and Lorentzian routes
+N5_CERTIFICATE: ambiguity_boundary=fixed-geometry conditionals erase F(g), but a fixed endogenous joint law detects it and fixes the total null-relative action
+N5_CERTIFICATE: constructive_escape=one-cell source-linear axis-covariant RN score cancels all three supplied Block-23 tensors
+N5_CERTIFICATE: selection_boundary=61 orbit coefficients have rank 50 on the three targets and an eleven-dimensional nullspace
+N5_CERTIFICATE: simple_ansatz_boundary=the complete four-term O(4) rank-two-stress scalar misses at 0.98 relative residual
+N5_CERTIFICATE: axiom_boundary=joint geometry Records and local score selection may be downstream; causal update and Lorentzian stability remain separate
+per_element: checked all 825 source-edge/metric-pair monomials and all 61 simultaneous-axis orbits
+per_site: checked one complete fifteen-edge Kuhn cell; inter-cell/projective gluing is not claimed
+per_mode: checked every entry of all three six-mode source tensors and their local contact projections
+per_block: checked joint-law identifiability, RN realization, local covariance, contact fit, and coefficient nonselection
+lattice_wide: checked and not executed — no infinite-volume joint law, Record-to-geometry compiler, continuous momentum, or Lorentzian theorem is claimed
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

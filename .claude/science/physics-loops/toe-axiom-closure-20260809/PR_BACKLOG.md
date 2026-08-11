@@ -451,6 +451,21 @@ graph conformance is
 mergeable, and `CLEAN` on the exact Block-20 delivery base. No `review-loop`
 is used.
 
+Block 28 is local on branch
+`physics-loop/toe-axiom-closure-block28-local-covariant-rn-contact-20260810`,
+stacked on exact Block-27 delivery head `c2b18f8c6a`. It proves finite
+endogenous joint-action identifiability, classifies 61 one-cell axis-covariant
+source-contact orbits, constructs one shared local RN contact cancelling all
+three Block-23 tensors, and exposes an eleven-dimensional coefficient
+selection kernel. Primary cache is `PASS=16 FAIL=0` in `13.97 s`; independent
+reconstruction is `PASS=5 FAIL=0`; sixteen isolated forced-false runs pass.
+Graph registration is `5,474/15,636`, with out-degree seven and sixteen
+helpers. Direct conformance passes; exact-stack/controlled-overlay pipelines,
+commit, push, and PR delivery remain pending. PR #6096 is a complementary
+proper-length sibling requiring later
+explicit reconciliation. Independent audit remains required. No
+`review-loop` is used.
+
 Block 22 is being packaged on branch
 `physics-loop/toe-axiom-closure-block22-sourced-ward-quotient-20260810`,
 stacked on exact Block-21 delivery head `c8c58fc23f`. Its distinct review

@@ -1518,6 +1518,35 @@ instance or Fourier census.
   head `4268fc8339`. Independent audit remains required. No canonical axiom,
   fixed percentage, audit verdict, or `review-loop` is changed.
 
+## Block 28 Construction Record
+
+- Proved on an exact positive rational fixture that fixed-geometry common
+  rescalings preserve every conditional but change the geometry marginal and
+  joint null odds; the total endogenous joint action is unique.
+- Independently enumerated all 825 source-edge/metric-pair monomials into 61
+  simultaneous four-axis orbits with size census `1/3/7/36/14` at orbit sizes
+  `3/4/6/12/24`.
+- Reconstructed the `216 x 61` three-source design at rank 50 and nullity 11.
+- Constructed one shared real one-cell contact with aggregate relative target
+  residual `5.045e-11` and branch residuals no larger than `2.122e-10`.
+- Verified null anchoring, signed-source linearity, all-24 axis covariance,
+  positive-metric finite RN realization, and nonzero odds response.
+- Proved the tested tensors do not select the contact by constructing two
+  coefficient vectors at distance one with the same response.
+- Exhausted the complete four-contraction `O(4)` scalar quadratic ansatz linear
+  in one rank-two source tensor; best stacked relative residual is `0.985670`.
+- Primary source/input-pinned cache is `PASS=16 FAIL=0` in `13.97 s`.
+- A separate union-find/SVD reconstruction returns `PASS=5 FAIL=0`; sixteen
+  isolated fresh-process forced failures each fail exactly one named check.
+- Citation registration is `5,474` nodes / `15,636` edges; the new node has
+  out-degree seven and sixteen resolved helper runners.
+- Direct vocabulary, premise-purity, model-normalization, cache, syntax/YAML,
+  whitespace, strict-lint, graph/link/invariant, claim-typing, N1--N8, and
+  canonical-nonmutation gates pass.
+- Exact-stack/controlled-overlay pipelines, commits, push, PR delivery, and
+  independent audit remain pending. No canonical axiom, fixed percentage,
+  audit verdict, or `review-loop` is changed.
+
 ## Block 27 Construction Record
 
 - Proved the exact null-relative RN action identity and sequential cocycle for

@@ -1,0 +1,17 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle981_j_landed_invariant_identification_2026_08_11.py
+runner_sha256: 4b0b371bdf48ff512da4485385d5f52d9a40b7365414f8456b39271f00c4e524
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 9.79
+status: ok
+----- stdout -----
+CYCLE981_J_LANDED_INVARIANT_IDENTIFICATION
+A_CANDIDATE_ENUMERATION PASS :: pin=ea0968c71ad46c39c6dacb39f88a18780363b71f; reads=6<=6; token_files=2539; candidates=9; exact_J_hits=0; requested_nonmain_present=0
+B_IDENTIFICATION_TEST PASS :: outcomes={"COINCIDES":0,"DISAGREES":2,"NOT_COMPARABLE":7}; first_witnesses={"cycle980_control_arity":{"J":0,"candidate":2,"word":"TOF(+x,-x->C)"},"cycle980_off_diagonal_control_gram_sum":{"J":1,"candidate":0,"word":"CNOT(+x->C)"}}
+C_VERDICT PASS :: LANDED_NEW_WITHIN_DECLARED_SEARCH; coincident_landed=[]; physics_identification=false
+D_CONTROLS PASS :: sha_pins=True; blob_pins=True; determinism=True; runtime_s=9.733<300; stdout_bytes=713<6000<150000
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

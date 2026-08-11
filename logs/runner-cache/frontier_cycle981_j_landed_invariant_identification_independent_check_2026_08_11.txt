@@ -1,19 +1,19 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle981_j_landed_invariant_identification_independent_check_2026_08_11.py
-runner_sha256: e15add086f5f3a48d20e2d2201811e4be97af561180b92f8c252f4eb3f482dcb
-input_fingerprint_sha256: 57314bfc0cfc08df704d015380ef3f578cdd1ad927fcf4c97dcdc58e9820adff
+runner_sha256: 096b39909c98fe111b403d7536c11298c5fb92a97d3da31f809ba142a831681b
+input_fingerprint_sha256: 5e47da0a758623be695944225f2249811ce4179d034ad3bf4807f6a3cdd49a68
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 CYCLE981_J_LANDED_INVARIANT_IDENTIFICATION_INDEPENDENT_CHECK
 R0_PRIMARY_AST_TEXT_AND_PINS PASS :: reads=4<=6; sha_pins=True; primary_executed=false
 R1_INDEPENDENT_SHARED_INPUTS PASS :: witnesses=21; orbit_table=[{"J":1,"class":"CNOT","control_arity":1,"member_count":6,"off_diagonal_control_gram_sum":0},{"J":2,"class":"TOF_PERPENDICULAR_CONTROLS","control_arity":2,"member_count":12,"off_diagonal_control_gram_sum":0},{"J":0,"class":"TOF_OPPOSITE_CONTROLS","control_arity":2,"member_count":3,"off_diagonal_control_gram_sum":-1}]
-R2_CANDIDATE_OUTCOMES PASS :: outcomes={"COINCIDES":0,"DISAGREES":2,"NOT_COMPARABLE":7}; verdict=LANDED_NEW_WITHIN_DECLARED_SEARCH
+R2_CANDIDATE_OUTCOMES PASS :: outcomes={"COINCIDES":0,"DISAGREES":2,"NOT_COMPARABLE":7}; verdict=NO_COINCIDENCE_IN_ENUMERATED_INVENTORY__LANDED_NEWNESS_OPEN
 R3_RECEIPT_CACHE_NOTE_BINDING PASS :: bound=True
-R4_ACTIVE_CORRUPTION_PROBES PASS :: rejected=9/9
-R5_CONTROLS PASS :: determinism=True; runtime_s=0.006<300; stdout_bytes=868<6000<150000
+R4_ACTIVE_CORRUPTION_PROBES PASS :: rejected=11/11
+R5_CONTROLS PASS :: determinism=True; runtime_s=0.007<300; stdout_bytes=896<6000<150000
 TOTAL: PASS=6 FAIL=0
 
 ----- stderr -----

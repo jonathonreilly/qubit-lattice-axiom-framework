@@ -13,6 +13,11 @@
         "target": "A"
       },
       {
+        "id": "CANDIDATE_METADATA_CHANGED",
+        "mutation": "replace one extracted formula description",
+        "target": "A"
+      },
+      {
         "id": "LANDED_FLAG_FLIPPED",
         "mutation": "mark a main candidate non-landed",
         "target": "A"
@@ -33,13 +38,18 @@
         "target": "A"
       },
       {
-        "id": "EXACT_J_HIT_INJECTED",
-        "mutation": "inject a false landed exact-formula hit",
-        "target": "A"
+        "id": "EXACT_J_CACHE_COUNT_MISMATCH",
+        "mutation": "change exact-formula hits without updating the cache count",
+        "target": "R3"
+      },
+      {
+        "id": "COMPLETENESS_PROMOTED",
+        "mutation": "promote the fixed inventory to corpus-complete",
+        "target": "C"
       },
       {
         "id": "VERDICT_FLIPPED",
-        "mutation": "replace landed-new by coincidence",
+        "mutation": "replace open fixed-inventory verdict by coincidence",
         "target": "C"
       },
       {
@@ -51,8 +61,10 @@
     "results": {
       "ABSENT_SURFACE_FLIPPED": true,
       "CACHE_OUTCOME_CORRUPTED": true,
+      "CANDIDATE_METADATA_CHANGED": true,
       "CANDIDATE_REMOVED": true,
-      "EXACT_J_HIT_INJECTED": true,
+      "COMPLETENESS_PROMOTED": true,
+      "EXACT_J_CACHE_COUNT_MISMATCH": true,
       "FIRST_WITNESS_CORRUPTED": true,
       "LANDED_FLAG_FLIPPED": true,
       "NOT_COMPARABLE_PROMOTED": true,
@@ -61,7 +73,7 @@
     }
   },
   "checker": "independent refutation checker",
-  "checker_source_sha256": "e15add086f5f3a48d20e2d2201811e4be97af561180b92f8c252f4eb3f482dcb",
+  "checker_source_sha256": "096b39909c98fe111b403d7536c11298c5fb92a97d3da31f809ba142a831681b",
   "checks": {
     "R0_PRIMARY_AST_TEXT_AND_PINS": true,
     "R1_INDEPENDENT_SHARED_INPUTS": true,
@@ -75,10 +87,10 @@
     "determinism_replay": true,
     "house_stdout_limit_bytes": 6000,
     "input_sha256": {
-      "docs/J_LANDED_INVARIANT_IDENTIFICATION_CYCLE981_BOUNDED_THEOREM_NOTE_2026-08-11.md": "7161d4baccac6ea74759b3daa325d06e63d641a46e3d88712b6fc3bc4d3d4a40",
-      "logs/runner-cache/frontier_cycle981_j_landed_invariant_identification_2026_08_11.txt": "1e50ef7e0dd79f3164255d8e72ed2caa4fdabb55a7c20fbd2ca32e6c5153d583",
-      "outputs/j_landed_invariant_identification_cycle981_receipt_2026_08_11.json": "7a9988dbb7bc08a654822bc58c701dd322830cdeaa1b47af0ef9e215747dce57",
-      "scripts/frontier_cycle981_j_landed_invariant_identification_2026_08_11.py": "4b0b371bdf48ff512da4485385d5f52d9a40b7365414f8456b39271f00c4e524"
+      "docs/J_LANDED_INVARIANT_IDENTIFICATION_CYCLE981_BOUNDED_THEOREM_NOTE_2026-08-11.md": "e3d95207cbb3519c5d931fb1049524b6cf238f5fba8b50be4f84cef52473d96d",
+      "logs/runner-cache/frontier_cycle981_j_landed_invariant_identification_2026_08_11.txt": "2aa6d1452fca05938670d4a9aeee75c5d555eaa2546395a90cb8218782913349",
+      "outputs/j_landed_invariant_identification_cycle981_receipt_2026_08_11.json": "532263f7cd66e452cacdf19ee9cc2136a6600069cc88238a43450194fddbe44a",
+      "scripts/frontier_cycle981_j_landed_invariant_identification_2026_08_11.py": "9df68d87fb8cae804c0108f8c88f73122d9357cc221715254e7485b977f39857"
     },
     "literal_audit_input_paths": [
       "scripts/frontier_cycle981_j_landed_invariant_identification_2026_08_11.py",
@@ -112,9 +124,9 @@
     ],
     "primary_source_read_count": 6,
     "runtime_budget_seconds": 300,
-    "runtime_seconds": 0.005718958913348615,
+    "runtime_seconds": 0.0065941669745370746,
     "sha_pins_match": true,
-    "stdout_bytes": 868,
+    "stdout_bytes": 896,
     "stdout_limit_bytes": 150000
   },
   "cycle": 981,
@@ -223,6 +235,7 @@
         "shared_input_count": 0
       }
     ],
+    "inventory_completeness_established": false,
     "orbit_value_table": [
       {
         "J": 1,
@@ -251,10 +264,10 @@
       "DISAGREES": 2,
       "NOT_COMPARABLE": 7
     },
-    "verdict": "LANDED_NEW_WITHIN_DECLARED_SEARCH",
+    "verdict": "NO_COINCIDENCE_IN_ENUMERATED_INVENTORY__LANDED_NEWNESS_OPEN",
     "witness_count": 21
   },
   "pass": true,
   "primary_imported_or_executed": false,
-  "stdout_sha256": "cdbeece7ce7a8b621a9c3a15b8f785345a45f0595fae2bba34112efd2ffe1c2a"
+  "stdout_sha256": "48f32b9b7d0236e76f1688901264fc0953faa3f899c648f61799593c2a213f9a"
 }

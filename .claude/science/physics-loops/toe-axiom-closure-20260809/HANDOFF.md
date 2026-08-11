@@ -1393,3 +1393,28 @@ stacked claims. Science commit is `94cc6283d2`; campaign conformance is
 `442049eb71`. PR #6105 is open, mergeable, and `CLEAN`, stacked exactly on
 Block-31 delivery head `13c769982c`. Independent audit remains required. No
 canonical edit, percentage move, audit verdict, or `review-loop` occurs.
+
+## Block 33 Perron Transfer / Normalization-Response Handoff
+
+Do not carry Block 32's boundary-message fixed point as an untested wall. On
+the supplied positive `C3 x C3 x Z` transfer it exists uniquely. One null plus
+fifteen actual-edge labels reduce exactly to 512 occupancy slice states; the
+left/right Perron messages normalize and endpoint-project every longitudinal
+interval.
+
+The closure is conditional. Whole-sector transfer scaling cancels from every
+normalized interval and transition while rescaling the eigenvalue. Unique
+within-sector messages therefore do not fix absolute cross-sector
+normalization or geometry odds. The fixed stationary actual-edge sources
+retain positive metric stress, yet both compact reaction and metric response
+still solve.
+
+The next object must combine an absolutely normalized geometry-bearing
+increasing-region specification, selected full-`Z^3` phase, and complete
+nonuniform Ward connection in one law before Lorentzian evolution. Primary
+cache is `PASS=22 FAIL=0` in `3.3 s`; independent reconstruction is
+`PASS=5 FAIL=0`; all twenty-two isolated forced-false runs trip one named
+check. Citation registration is `5,479/15,658`, with out-degree two and
+twenty-one resolved helpers. Conformance, delivery, and independent audit are
+pending. No canonical edit, percentage move, audit verdict, or `review-loop`
+occurs.

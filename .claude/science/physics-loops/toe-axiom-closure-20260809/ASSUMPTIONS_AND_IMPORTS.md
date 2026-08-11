@@ -634,3 +634,21 @@ compatibility is not an arbitrary-overlap or infinite-lattice specification;
 the metric-response control is not a curved/open field equation. No external
 science, observed constant, canonical edit, percentage move, audit verdict,
 or `review-loop` is imported.
+
+## Block 33 Assumptions And Imports
+
+Block 33 imports the current Admissibility/Record wording and Block 32's
+actual-edge label weights, source/stress compiler, compact reaction, and
+metric-response control. The quotient graph, sixteen-to-occupancy reduction,
+both slice transfers, Perron messages, interval identities, stationary
+sources, scale-gauge controls, and response solves are reconstructed in the
+new runner.
+
+The width-three transverse quotient, occupancy coarse variable,
+occupancy-mediated equality factor, integer local weights, strict positivity,
+two geometry sectors, transfer orientation, sector multipliers, `alpha`,
+metric stiffness, and flat response carrier are supplied bounded data. A
+finite-width Perron phase is not a full-`Z^3` Gibbs phase; the metric-response
+control is not a curved/open field equation. No external science, observed
+constant, canonical edit, percentage move, audit verdict, or `review-loop` is
+imported.

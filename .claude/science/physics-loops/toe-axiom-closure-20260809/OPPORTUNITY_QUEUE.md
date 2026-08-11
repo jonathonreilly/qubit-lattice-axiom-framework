@@ -193,3 +193,17 @@ must simultaneously address interaction, phase, and Ward provenance.
 Efficiency rule: stop enumerating more finite-parent interaction witnesses.
 The next computation must share one boundary transfer law across overlaps and
 produce geometry odds plus the Ward connection from that same law.
+
+## Post-Block-33 Priority Refresh
+
+| Rank | Target | Exact next witness | Why now |
+|---:|---|---|---|
+| 1 | absolutely normalized geometry-bearing full-lattice specification | one increasing-width proper-cubic transfer/action with a common sector normalization and a selected limiting phase | finite-width boundary iteration is solved; the surviving gauge is absolute normalization and full-lattice phase selection |
+| 2 | same-law complete differentiated Ward identity | perturb that selected transfer on one nonuniform geometry and derive connected, contact, mixed/source, multiplier, and connection/tadpole terms from its leading functional | both response branches solve the stationary source, so only a common action derivative can discriminate them |
+| 3 | constituent-causal Lorentzian closure | extend the selected normalized specification to timelike permanent Records and certify causal nonlinear quotient stability | the cylinder is stationary and spatial; it supplies no cone or update |
+| 4 | narrow law registration or Admissibility amendment | if the scale gauge survives every derivation, state the sufficient normalized geometry-coupling interface without claiming minimality | the memo asserts one fixed rule but intentionally does not give its extensional values or cross-sector action normalization |
+| 5 | independent TOE roots and stack reconciliation | preserve PR #6096, then return to Born/history and operational selectors | the gravity wall is now one sharply typed action-normalization/Ward problem |
+
+Efficiency rule: stop generating additional finite-width Perron examples.
+The next science object must bind common sector normalization, the
+full-lattice phase, and the differentiated gravity response in the same law.

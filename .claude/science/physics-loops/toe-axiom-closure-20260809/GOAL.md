@@ -1075,3 +1075,28 @@ law or response phase. The next target is the overlapping-region transfer
 fixed point and its complete nonuniform Ward connection, followed by
 Lorentzian evolution. No fifth axiom is proved necessary. No canonical axiom
 or fixed percentage is changed.
+
+## Block 33 Target And Disposition
+
+Block 33 asks whether a unique boundary-message fixed point actually removes
+the phase and response ambiguity isolated by Block 32.
+
+The constructive part succeeds on a nontrivial finite-width quotient. Two
+positive occupancy-mediated sixteen-state laws on `C3 x C3 x Z` reduce exactly
+to 512-state slice transfers. Each has unique positive Perron boundary
+messages. Those messages normalize every longitudinal interval and make all
+endpoint deletions and overlaps compatible.
+
+The uniqueness is conditional, not autonomous selection. Multiplying an
+entire sector transfer by a positive scalar leaves every normalized cylinder
+probability unchanged while rescaling its eigenvalue. Arbitrary weights on the
+two already-normalized sectors also leave their conditional laws unchanged.
+The stationary sources are fixed within each supplied law, but compact
+reaction and metric response both still solve them.
+
+The next target is therefore not another boundary iteration. It is one
+absolutely normalized geometry-bearing specification on increasing cubic
+regions whose selected full-`Z^3` phase, source, odds, and differentiated Ward
+response all come from the same action, followed by Lorentzian evolution. No
+fifth axiom is proved necessary. No canonical axiom or fixed percentage is
+changed.

@@ -1,0 +1,63 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_proper_cubic_cylinder_boundary_transfer_perron_phase_normalization_response_boundary_2026_08_10.py
+runner_sha256: 4da2bcfc41ea3870de2deab74882ecd7bdfa56257da92ba8d3dba6d3e0fd5e25
+input_fingerprint_sha256: 158ea310b18485ac45aee6e204fc85a48f09d686324c61067ee35c0257eaef94
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 3.34
+status: ok
+----- stdout -----
+external_scientific_inputs: none; construction is repository-local
+analytic_boundary: positivity gives unique Perron messages and exact conditional endpoint restriction
+physical_boundary: transfer values, full-Z3 phase, normalization, Ward, and Lorentzian update remain unselected
+[PASS] axiom-and-parent-boundary: the axioms supply one varying nearest-neighbour rule but not its values or transfer operator, while Block 32 leaves the boundary fixed point open
+[PASS] note-contract: the note separates conditional cylinder gluing from rule, phase, response, full-lattice, Ward, and Lorentzian selection and carries N1--N8
+[PASS] c3x-c3-cylinder-carrier: the transverse quotient has nine sites, eighteen distinct edges, degree four per slice site, and degree six after the two longitudinal incidences
+       slice sites=9; transverse edges=18; occupancy states=512
+[PASS] proper-cubic-and-label-factor-covariance: occupancy matching is invariant under all 24 proper cubic rotations and local edge weights under all 24 four-axis label relabellings
+       rotations=24; spatial failures=0; label failures=0
+[PASS] exact-sixteen-state-occupancy-lift: summing the fifteen positive actual labels gives the exact binary occupancy conditional in every six-neighbour context
+       aggregate weights=[(5, 62), (7, 77)]; failures=0
+[PASS] nearest-neighbour-variation-and-interaction: the full conditional varies with the six neighbour occupancies and adjacent occupancy cross-ratios are four and nine
+       minimum null-probability variation=0.836438; cross-ratios=[4, 9]
+[PASS] strictly-positive-integer-transfer-family: both implicit 16^9-label slice laws reduce exactly to finite positive 512-by-512 occupancy transfers
+       transfer shapes=(512, 512),(512, 512); entry minima=2.383e+11,3.916e+13
+[PASS] perron-boundary-fixed-points: strict positivity supplies unique normalized left/right boundary messages and both numerical residuals are below tolerance
+       iterations(right/left)=7/8,6/7; maximum residual=9.747e-17
+[PASS] perron-initialization-control: delta, ramp, and uniform initial boundary messages converge to the same normalized positive fixed point in both sectors
+       maximum L1 separation=2.748e-16
+[PASS] exact-overlapping-interval-gluing: Perron endpoint messages normalize every tested interval length and deletion of either endpoint returns the shorter interval family
+       normalization=0.000e+00; endpoint restriction=9.683e-17
+[PASS] stationary-slice-markov-control: the Doob-normalized slice transition is stochastic and preserves the left-right stationary slice law
+       row residual=5.551e-16; stationarity=1.119e-16
+[PASS] stationary-actual-edge-source-lift: the unique occupancy boundary law lifts to fifteen positive actual-edge source expectations whose sum is the stationary occupied-site count
+       expected occupied sites=8.988408762,8.998871021
+[PASS] positive-stationary-metric-stress: each Perron-selected stationary source retains positive semidefinite Euclidean metric stress
+       minimum stress eigenvalue=8.368e-01
+[PASS] conditional-transfer-sectors-remain-distinct: the two supplied local laws produce distinct unique Perron messages and stationary cylinder laws
+       stationary TV=0.010317022; right-message TV=0.225094102
+[PASS] absolute-transfer-normalization-gauge: positive whole-sector transfer scaling leaves boundary messages and normalized interval laws unchanged while rescaling the Perron eigenvalue
+       kernel/fixed-point error=3.331e-16; eigenvalue-ratio multiplier=7.0
+[PASS] geometry-phase-prior-survives-unique-gluing: unique within-sector Perron messages do not fix cross-sector odds, which change from one to seven with both cylinder laws unchanged
+       failures=0; phase odds=[1.0, 7.0]
+[PASS] perron-source-compact-reaction-completion: the compact rank-25 reaction branch solves both Perron-selected stationary sources at every alpha and beta control
+       ranks={25}; equation=2.378e-15; constraint=9.416e-16
+[PASS] perron-source-metric-response-control: a distinct rank-15 metric-response branch solves the same fixed-point sources without selecting itself
+       ranks={15}; equation=6.216e-14; separation=26.747737
+[PASS] coefficient-family-survives-unique-gluing: positive unique boundary fixed points exist at both interaction strengths and all inherited response coefficients
+[PASS] boundary-fixed-point-does-not-select-law-or-response: unique overlap gluing is conditional on supplied coefficients and coexists with arbitrary sector odds and two complete geometry responses
+[PASS] full-z3-ward-and-lorentzian-boundary: a finite-width stationary spatial cylinder does not establish a full-Z3 phase, complete same-law Ward connection, or Lorentzian dynamics
+[PASS] minimal-law-or-axiom-delta: the narrowed deficit is an absolutely normalized geometry-bearing full-lattice specification and update, not another boundary iteration
+N5_CERTIFICATE: gluing=positive Perron messages normalize and endpoint-project every finite cylinder interval
+N5_CERTIFICATE: lift=the 512-state occupancy transfer exactly lifts to one null plus fifteen positive actual-edge Record labels
+N5_CERTIFICATE: normalization=whole-sector transfer scale cancels from normalized intervals and cannot fix geometry odds
+N5_CERTIFICATE: response=both compact reaction and metric response solve the Perron-selected stationary sources
+N5_CERTIFICATE: boundary=full-Z3 selection, absolute geometry normalization, complete Ward connection, and Lorentzian update remain open
+per_site: one null plus fifteen actual-edge labels with occupancy-mediated six-neighbour interaction
+per_slice: nine sites and 512 occupancy states on C3 x C3
+per_interval: every finite longitudinal interval by the analytic Perron endpoint identity
+full_lattice: no infinite-transverse-limit, full-Z3 Gibbs uniqueness, physical phase, Ward, or Lorentzian theorem is claimed
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

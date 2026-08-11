@@ -557,3 +557,16 @@ must select one proper-cubic boundary-transfer fixed point, geometry odds,
 nonuniform complete Ward connection, and Lorentzian update. Candidate wording
 is unadopted; fixed TOE percentages and canonical axioms remain unchanged. No
 `review-loop` is used.
+
+Block 33 constructs unique positive left/right Perron boundary messages on a
+finite-width `C3 x C3 x Z` quotient. They normalize and endpoint-project every
+longitudinal interval while lifting to positive actual-edge stationary sources
+and metric stress.
+
+Reachability remains `upstream_support`, not direct TOE closure. Whole-sector
+transfer scaling cancels from every normalized interval, and arbitrary sector
+weights plus two geometry-response completions survive unique gluing. The next
+law must supply absolute cross-sector action normalization, a selected
+full-`Z^3` phase, the nonuniform complete Ward connection, and a Lorentzian
+update together. Candidate wording is unadopted; fixed TOE percentages and
+canonical axioms remain unchanged. No `review-loop` is used.

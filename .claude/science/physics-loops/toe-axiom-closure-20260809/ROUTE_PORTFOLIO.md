@@ -680,3 +680,21 @@ the selected interacting law does with the now-typed metric stress.
 
 Finite-parent interaction is no longer the wall. The selected global boundary
 transfer and its geometry odds/Ward connection are now the indivisible target.
+
+## Block 33 Perron Transfer / Normalization-Response Route Comparison
+
+| Route | Exact object | Outcome | Decision |
+|---|---|---|---|
+| finite-width proper-cubic quotient | `C3 x C3 x Z` with occupancy-mediated sixteen-state factors | genuine six-neighbour interaction and 512-state transfer | retain as a nontrivial spatial gluing carrier, not full `Z^3` |
+| positive Perron boundary transfer | left/right messages for each supplied sector | unique normalized fixed points and every-length interval projectivity | retain; boundary iteration conditional on a transfer is closed |
+| full actual-edge lift | conditional label weights inside occupied sites | fifteen positive stationary sources and positive metric stress | retain as a source-bearing fixed-point law |
+| whole-transfer scale | multiply `K_g` and `lambda_g` by seven | every normalized within-sector law is unchanged | identify absolute action normalization as separate law content |
+| sector mixture | positive weights on the two normalized cylinder families | changes geometry odds from one to seven | identify phase odds as unselected after unique gluing |
+| compact reaction | inherited rank-25 KKT system | solves both stationary sources | retain as one conditional response branch |
+| metric response | repaired operator plus positive metric projector | rank 15 and solves the same stationary sources | retain as a branch discriminator, not a curved/open action |
+| normalized full-lattice action plus Ward law | one selected increasing-region phase and differentiated leading functional | not constructed | highest-priority gravity/axiom-interface target |
+| Lorentzian update | causal permanent-Record transfer and quotient stability | not constructed | required physical endpoint |
+
+Boundary iteration is no longer the wall. Absolute cross-sector action
+normalization, full-lattice phase selection, and the same-law Ward response
+are now one indivisible target.

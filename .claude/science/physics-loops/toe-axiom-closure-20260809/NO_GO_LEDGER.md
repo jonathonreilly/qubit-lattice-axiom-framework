@@ -262,3 +262,15 @@ an exact boundary message, and a selected transfer fixed point could determine
 both the interacting score and geometry odds. The bounded negative is only
 that local conditional/projective structure does not already perform that
 selection.
+
+## Block 33 Perron-Fixed-Point / Absolute-Normalization Boundary
+
+| Scoped claim | Exact/bounded evidence | N1--N8 disposition | Forbidden promotion | Live routes |
+|---|---|---|---|---|
+| unique positive finite-width boundary gluing does not select the supplied transfer coefficients, absolute sector normalization, geometry odds, or response branch | two positive 512-state transfers; unique Perron messages; exact all-length interval identities; stationary TV `0.010317022`; scale factor seven cancels; two stationary sources solve on two response branches | pass only for the width-three quotient, occupancy-mediated factors, supplied sectors, strict positivity, flat response controls, and named coefficient lists | do not infer a full-`Z^3` phase no-go, universal normalization no-go, gravity no-go, axiom necessity, full Ward failure, or Lorentzian obstruction | increasing widths; full-lattice specification; boundary-condition phase selection; common action unit; geometry-dependent transfer; alternate interaction; curved/open carrier; nonlinear Ward response; causal update |
+
+The strongest steelman is now mandatory: an absolutely normalized
+geometry-dependent transfer/action could select the full-lattice phase, odds,
+and response simultaneously. The bounded negative is only that Perron
+boundary uniqueness conditional on a supplied transfer does not already do
+so.

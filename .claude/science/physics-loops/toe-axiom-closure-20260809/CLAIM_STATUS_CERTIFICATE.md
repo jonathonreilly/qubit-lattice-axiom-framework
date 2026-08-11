@@ -979,3 +979,38 @@ independent_audit_required: true
 - Delivery: PR #6105 is open, mergeable, and `CLEAN`, stacked exactly on
   Block-31 delivery head `13c769982c`. Independent audit remains required.
   No canonical edit, fixed percentage move, audit verdict, or `review-loop`.
+
+## Block 33 Perron Transfer / Normalization-Response Certificate
+
+- Claim type: `bounded_theorem`.
+- Carrier: the quotient `C3 x C3 x Z` has nine slice sites, eighteen distinct
+  transverse edges, and six local neighbour incidences per site.
+- Exact lift: one null plus fifteen positive actual-edge labels reduce from
+  `16^9` full slice states to 512 occupancies with aggregate weights `(5,62)`
+  and `(7,77)`.
+- Boundary fixed point: both positive integer transfers have unique normalized
+  left/right Perron messages; maximum numerical residual is below `1e-16`.
+- Overlap gluing: every finite longitudinal interval is normalized and exactly
+  endpoint-projective by the Perron identities; executed restriction residual
+  is below `1e-16`.
+- Phase separation: stationary slice TV is `0.010317022` and right-message TV
+  is `0.225094102`.
+- Normalization boundary: scaling one whole-sector transfer by seven leaves
+  its messages, stationary law, transition, and interval probabilities
+  unchanged while multiplying its eigenvalue; phase odds separately vary from
+  one to seven.
+- Source/response: both stationary sources lift to positive metric stress and
+  solve on the rank-25 compact reaction and distinct rank-15 metric-response
+  branches; maximum response separation is `26.747737`.
+- Governance: the extensional rule, full-`Z^3` phase, common action unit,
+  absolute sector normalization, geometry odds, response, full Ward law, and
+  Lorentzian dynamics remain unselected. No fifth axiom is proved necessary.
+- Runner/cache: source/input pinned, `PASS=22 FAIL=0` in `3.3 s`.
+- Independent reconstruction: `PASS=5 FAIL=0`.
+- Mutation sensitivity: twenty-two isolated fresh-process forced failures each
+  exit nonzero at exactly one intended named check (`PASS=22 FAIL=0`).
+- Citation registration: `5,479` nodes / `15,658` edges; the new node has
+  out-degree two and twenty-one resolved helper runners.
+- Direct/stacked conformance, changed evidence, commits, delivery, and
+  independent audit are pending. No canonical edit, fixed percentage move,
+  audit verdict, or `review-loop`.

@@ -1,6 +1,6 @@
 {
- "edge_count": 15656,
- "node_count": 5478,
+ "edge_count": 15658,
+ "node_count": 5479,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -441,6 +441,10 @@
   "admissibility_positive_two_stream_timelike_mean_dilation_zero_mode_boundary_bounded_theorem_note_2026-08-10": {
    "deps_hash": "9a9eae295351",
    "out_degree": 5
+  },
+  "admissibility_proper_cubic_cylinder_boundary_transfer_perron_phase_normalization_response_boundary_bounded_theorem_note_2026-08-10": {
+   "deps_hash": "f3f2b1fab404",
+   "out_degree": 2
   },
   "admissibility_record_content_decoder_pushforward_effect_descent_independence_bounded_theorem_note_2026-08-10": {
    "deps_hash": "3897af505edd",

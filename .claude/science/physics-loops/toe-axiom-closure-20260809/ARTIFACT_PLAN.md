@@ -720,3 +720,27 @@ complete conditional nonlinear compact solution:
   stacked claims; science commit `94cc6283d2`, campaign conformance
   `442049eb71`; PR #6105 is open, mergeable, and `CLEAN`, stacked on exact
   Block-31 delivery head `13c769982c`; independent audit remains required
+
+## Block 33 — Proper-Cubic Cylinder Perron Transfer / Normalization Boundary
+
+- theorem note:
+  `docs/ADMISSIBILITY_PROPER_CUBIC_CYLINDER_BOUNDARY_TRANSFER_PERRON_PHASE_NORMALIZATION_RESPONSE_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md`
+- runner/cache:
+  `scripts/admissibility_proper_cubic_cylinder_boundary_transfer_perron_phase_normalization_response_boundary_2026_08_10.py` and its source/input-pinned cache
+- packet scope: one finite-width `C3 x C3 x Z` quotient, exact sixteen-state
+  occupancy lift, two positive 512-state slice transfers, unique Perron
+  boundary messages, every-length interval normalization and endpoint
+  projectivity, stationary actual-edge source/stress lift, absolute transfer
+  normalization gauge, phase-prior nonselection, dual gravity-response
+  controls, N1--N8, and narrowed downstream-law versus axiom interface
+- exclusions: an infinite-transverse or full-`Z^3` specification, selected
+  extensional weights or action unit, absolute cross-sector normalization,
+  selected geometry odds or response phase, complete stationary Ward
+  connection, Lorentzian dynamics, canonical edits, percentage movement,
+  audit verdicts, and `review-loop`
+- current evidence: source/input-pinned cache `PASS=22 FAIL=0` in `3.3 s`;
+  independent reconstruction `PASS=5 FAIL=0`; twenty-two isolated fresh-
+  process forced failures each trip exactly one named check; graph registration
+  `5,479/15,658`, out-degree two, with twenty-one resolved helpers; direct/
+  stacked conformance, changed evidence, commits, delivery, and independent
+  audit pending

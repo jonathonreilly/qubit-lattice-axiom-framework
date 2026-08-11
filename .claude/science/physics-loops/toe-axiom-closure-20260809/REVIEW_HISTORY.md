@@ -1743,3 +1743,34 @@ instance or Fourier census.
   #6105 is open, mergeable, and `CLEAN`, stacked exactly on Block-31 delivery
   head `13c769982c`. Independent audit remains required. No canonical axiom,
   fixed percentage, audit verdict, or `review-loop` is changed.
+
+## Block 33 Construction Record
+
+- Constructed the finite-width quotient `C3 x C3 x Z` with nine-site slices,
+  eighteen distinct transverse edges, and six local neighbour incidences.
+- Reduced one null plus fifteen positive actual-edge labels exactly from
+  `16^9` full slice states to 512 occupancy states with aggregate weights
+  `(5,62)` and `(7,77)`.
+- Built two positive integer slice transfers and proved their normalized
+  left/right Perron boundary messages are unique.
+- Derived normalized every-length interval laws with exact endpoint deletion
+  and overlap projectivity; numerical residuals are below `1e-16`.
+- Obtained stationary slice TV `0.010317022`, right-message TV `0.225094102`,
+  and positive expected actual-edge sources summing to occupied-site counts
+  `8.988408762` and `8.998871021`.
+- Proved whole-sector transfer scaling by seven cancels from messages,
+  transitions, stationary laws, and interval probabilities while rescaling
+  the eigenvalue; phase odds separately change from one to seven.
+- Solved both stationary sources on the rank-25 compact reaction and distinct
+  rank-15 metric-response branches, separated by `26.747737`.
+- Applied N1--N8 and preserved increasing-width, full-lattice,
+  boundary-condition, normalization, alternate-law, curved/open, full-Ward,
+  nonlinear, and Lorentzian routes.
+- Primary source/input-pinned cache is `PASS=22 FAIL=0` in `3.3 s`.
+- Independent reconstruction returns `PASS=5 FAIL=0`; twenty-two isolated
+  fresh-process forced failures each fail exactly one named check.
+- Citation registration is `5,479` nodes / `15,658` edges; the new node has
+  out-degree two and twenty-one resolved helper runners.
+- Conformance, exact stack, changed evidence, commits, delivery, and
+  independent audit remain pending. No canonical axiom, fixed percentage,
+  audit verdict, or `review-loop` is changed.

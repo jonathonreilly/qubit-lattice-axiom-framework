@@ -1,70 +1,122 @@
 {
-  "artifact": "witness orbit multiplicity bounded theorem primary",
-  "audit_status_authority": "independent audit lane only",
+  "active_corruption_probes": {
+    "all_rejected": true,
+    "refute_spec": [
+      {
+        "id": "ORBIT_MEMBER_REMOVED",
+        "mutation": "decrement first orbit member count",
+        "target": "A"
+      },
+      {
+        "id": "STABILIZER_CORRUPTED",
+        "mutation": "replace first stabilizer order by three",
+        "target": "A"
+      },
+      {
+        "id": "WITNESS_DROPPED",
+        "mutation": "drop one derived witness name",
+        "target": "A"
+      },
+      {
+        "id": "INVARIANT_VALUE_CORRUPTED",
+        "mutation": "replace CNOT J=1 by J=2",
+        "target": "B"
+      },
+      {
+        "id": "INVARIANT_DISTINCT_FLIPPED",
+        "mutation": "flip the separator outcome",
+        "target": "B"
+      },
+      {
+        "id": "TOF_ALPHABET_CLASS_COUNT_CORRUPTED",
+        "mutation": "replace TOF-only two orbits by three",
+        "target": "C"
+      },
+      {
+        "id": "TRANSLATION_KERNEL_FLIPPED",
+        "mutation": "claim translations are not the recentered kernel",
+        "target": "A"
+      },
+      {
+        "id": "CACHE_ORBIT_HEADLINE_CORRUPTED",
+        "mutation": "replace the 6/12/3 cache headline",
+        "target": "R3"
+      }
+    ],
+    "results": {
+      "CACHE_ORBIT_HEADLINE_CORRUPTED": true,
+      "INVARIANT_DISTINCT_FLIPPED": true,
+      "INVARIANT_VALUE_CORRUPTED": true,
+      "ORBIT_MEMBER_REMOVED": true,
+      "STABILIZER_CORRUPTED": true,
+      "TOF_ALPHABET_CLASS_COUNT_CORRUPTED": true,
+      "TRANSLATION_KERNEL_FLIPPED": true,
+      "WITNESS_DROPPED": true
+    }
+  },
+  "checker": "independent refutation checker",
+  "checker_source_sha256": "f5c34fef3342834a6c7d8fd7c151d288def44447a19157f1fc3e4cedd4e7fa1e",
   "checks": {
-    "A_ORBIT_DECOMPOSITION": true,
-    "B_INVARIANT_SEPARATOR": true,
-    "C_NECESSITY": true,
-    "D_CONTROLS": true
+    "R0_PRIMARY_AST_TEXT_AND_PINS": true,
+    "R1_INDEPENDENT_ORBIT_CENSUS": true,
+    "R2_INVARIANT_AND_ALPHABET": true,
+    "R3_RECEIPT_CACHE_BINDING": true,
+    "R4_ACTIVE_CORRUPTION_PROBES": true,
+    "R5_CONTROLS": true
   },
   "controls": {
     "all_inputs_relative_and_present": true,
-    "base_is_ancestor_of_head": true,
-    "base_origin_main_commit": "e8cb78a911d91f48abac9783c68305b0e7aabdf7",
-    "blob_pins_match": true,
-    "blocked_ast_imports": [],
-    "blocked_ast_modules_loaded": [],
-    "blocklist_ast_modules": [
+    "blocked_primary_imports": [],
+    "determinism_replay": true,
+    "house_stdout_limit_bytes": 6000,
+    "input_sha256": {
+      "docs/MINIMAL_AXIOMS_2026-06-29.md": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
+      "logs/runner-cache/frontier_cycle980_witness_orbit_multiplicity_2026_08_11.txt": "450a53e2b32a8d263f43c831d2b8cd4ff10f9ddfe26228cf00eab2481e968a57",
+      "outputs/witness_orbit_multiplicity_cycle980_receipt_2026_08_11.json": "2567e34c0b20271abc1e74a76cfbf792440b0d62a5698f376ffc8c8dff8524c8",
+      "scripts/frontier_cycle980_witness_orbit_multiplicity_2026_08_11.py": "a6508e92cdd0b9885c08b2a8757fe9cfaf6eedc4f2ac349d6c7713a9aa2f0305"
+    },
+    "literal_audit_input_paths": [
+      "scripts/frontier_cycle980_witness_orbit_multiplicity_2026_08_11.py",
+      "outputs/witness_orbit_multiplicity_cycle980_receipt_2026_08_11.json",
+      "logs/runner-cache/frontier_cycle980_witness_orbit_multiplicity_2026_08_11.txt",
+      "docs/MINIMAL_AXIOMS_2026-06-29.md"
+    ],
+    "literal_source_read_count": 4,
+    "primary_audit_input_paths": [
+      "docs/MINIMAL_AXIOMS_2026-06-29.md"
+    ],
+    "primary_blocklist_ast_modules": [
       "frontier_cycle977_witness_family_completeness_2026_08_10",
       "frontier_cycle977_witness_family_independent_check_2026_08_10",
       "frontier_cycle979_class_coexistence_born_requirement_2026_08_10",
       "frontier_cycle979_class_coexistence_independent_check_2026_08_10"
     ],
-    "blocklist_text_disjoint_from_reads": true,
-    "blocklist_text_paths": [
+    "primary_blocklist_text_paths": [
       "docs/WITNESS_FAMILY_COMPLETENESS_CYCLE977_BOUNDED_THEOREM_NOTE_2026-08-10.md",
       "docs/CLASS_COEXISTENCE_BORN_REQUIREMENT_CYCLE979_BOUNDED_THEOREM_NOTE_2026-08-10.md",
       "outputs/witness_family_completeness_cycle977_receipt_2026_08_10.json",
       "outputs/class_coexistence_born_requirement_cycle979_receipt_2026_08_10.json"
     ],
-    "determinism_replay": true,
-    "house_stdout_limit_bytes": 6000,
-    "input_git_blobs": {
-      "docs/MINIMAL_AXIOMS_2026-06-29.md": "2f5fdd26898f62c17fcabc846761f7785c2eadb1"
-    },
-    "input_sha256": {
-      "docs/MINIMAL_AXIOMS_2026-06-29.md": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39"
-    },
-    "literal_audit_input_paths": [
-      "docs/MINIMAL_AXIOMS_2026-06-29.md"
-    ],
-    "literal_source_read_count": 1,
-    "pinned_substrate": {
-      "blob_pin_match": true,
-      "commit": "39c74017b870c27c804e3992f2a11e90336476b2",
-      "git_blob": "c123b8d681c3d76fce08ef13d7673622deac64ad",
-      "loaded_from_immutable_git_archive": true,
-      "path": "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
-      "sha256": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
-      "sha_pin_match": true
-    },
-    "prior_cycle_text_or_ast_executed": false,
-    "runtime_budget_seconds": 1400,
-    "runtime_seconds": 0.8894458339782432,
+    "primary_cache_sha256": "450a53e2b32a8d263f43c831d2b8cd4ff10f9ddfe26228cf00eab2481e968a57",
+    "primary_expected_functions_present": true,
+    "primary_imported_or_executed": false,
+    "primary_pinned_commit": "39c74017b870c27c804e3992f2a11e90336476b2",
+    "primary_pinned_core_sha256": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
+    "primary_receipt_sha256": "2567e34c0b20271abc1e74a76cfbf792440b0d62a5698f376ffc8c8dff8524c8",
+    "runtime_budget_seconds": 300,
+    "runtime_seconds": 0.306600832962431,
     "sha_pins_match": true,
-    "stdout_bytes": 882,
+    "stdout_bytes": 642,
     "stdout_limit_bytes": 150000
   },
   "cycle": 980,
-  "findings": {
+  "independent_measurement": {
     "alphabet_subset_census": [
       {
         "alphabet": [],
         "changed_edge_pairs": 0,
         "family_descriptor_digest": "4ae15c885da7ec1c0034ad2527ebda45dbe41e93a956020cb79c8a825b4ea5a2",
         "family_size": 1,
-        "landed_boolean_comparisons": 128,
-        "landed_boolean_failure_count": 0,
         "orbit_count": 0,
         "orbit_labels": [],
         "orbit_member_counts": [],
@@ -80,8 +132,6 @@
         "changed_edge_pairs": 0,
         "family_descriptor_digest": "616c9c433fef50ba5ccfd7765ed3ea2907782ee17e799c3cc8fe458d24040beb",
         "family_size": 8,
-        "landed_boolean_comparisons": 1024,
-        "landed_boolean_failure_count": 0,
         "orbit_count": 0,
         "orbit_labels": [],
         "orbit_member_counts": [],
@@ -97,8 +147,6 @@
         "changed_edge_pairs": 384,
         "family_descriptor_digest": "6d107221e40f92e442cabebce75d1538fb67562504927bf49dfdb7fff3d85341",
         "family_size": 43,
-        "landed_boolean_comparisons": 5504,
-        "landed_boolean_failure_count": 0,
         "orbit_count": 1,
         "orbit_labels": [
           "CNOT"
@@ -156,8 +204,6 @@
         "changed_edge_pairs": 960,
         "family_descriptor_digest": "9f18ee0ad65e8002f5e082e491276da6c4a8d2d71f8b9e1a4a6d412e1e656de8",
         "family_size": 106,
-        "landed_boolean_comparisons": 13568,
-        "landed_boolean_failure_count": 0,
         "orbit_count": 2,
         "orbit_labels": [
           "TOF_PERPENDICULAR_CONTROLS",
@@ -287,8 +333,6 @@
         "changed_edge_pairs": 384,
         "family_descriptor_digest": "3432d8388836331378fea2c14e49d5d5351ed8ba5ca7d95cff328625bd5e4d5d",
         "family_size": 50,
-        "landed_boolean_comparisons": 6400,
-        "landed_boolean_failure_count": 0,
         "orbit_count": 1,
         "orbit_labels": [
           "CNOT"
@@ -347,8 +391,6 @@
         "changed_edge_pairs": 960,
         "family_descriptor_digest": "1bcfd28930f749c3338361b3612e40614f48e23b96c91ffc20b147c62204fec9",
         "family_size": 113,
-        "landed_boolean_comparisons": 14464,
-        "landed_boolean_failure_count": 0,
         "orbit_count": 2,
         "orbit_labels": [
           "TOF_PERPENDICULAR_CONTROLS",
@@ -478,8 +520,6 @@
         "changed_edge_pairs": 1344,
         "family_descriptor_digest": "b8a7de46a3e31462488c8473bc7d07b2b5d5ef6599444201212594eda8270a67",
         "family_size": 148,
-        "landed_boolean_comparisons": 18944,
-        "landed_boolean_failure_count": 0,
         "orbit_count": 3,
         "orbit_labels": [
           "CNOT",
@@ -648,8 +688,6 @@
         "changed_edge_pairs": 1344,
         "family_descriptor_digest": "fe29ad310ab15bfa4057ff2eba264df53521e581481a4f9e035c829502758497",
         "family_size": 155,
-        "landed_boolean_comparisons": 19840,
-        "landed_boolean_failure_count": 0,
         "orbit_count": 3,
         "orbit_labels": [
           "CNOT",
@@ -838,8 +876,6 @@
       "changed_edge_pairs": 1344,
       "family_descriptor_digest": "fe29ad310ab15bfa4057ff2eba264df53521e581481a4f9e035c829502758497",
       "family_size": 155,
-      "landed_boolean_comparisons": 19840,
-      "landed_boolean_failure_count": 0,
       "orbit_count": 3,
       "orbit_labels": [
         "CNOT",
@@ -1104,9 +1140,7 @@
       "translations_are_kernel_after_recentring": true
     }
   },
-  "integrity_policy": "checks gate construction and bookkeeping only; null, non-closed, or non-three-orbit outcomes remain clean reportable findings",
   "pass": true,
-  "primary_source_sha256": "a6508e92cdd0b9885c08b2a8757fe9cfaf6eedc4f2ac349d6c7713a9aa2f0305",
-  "science_digest": "0dcf7e29750f903c693137322323d5575cd3d33bb6bc5cc4f88fd2aa0aabeb0a",
-  "stdout_sha256": "53e66feee6e5286a67b59229751b8bb20b7d97342ae2ee668cd626e4bd653cd4"
+  "primary_imported_or_executed": false,
+  "stdout_sha256": "6b875d48ebe9719b00ddce7a49cc1106a526ddc2fec829b60d4800cac09a9e84"
 }

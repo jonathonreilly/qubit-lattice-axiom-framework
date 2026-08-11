@@ -1,16 +1,18 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle980_witness_orbit_multiplicity_2026_08_11.py
-runner_sha256: ab6c3e2ff41fe92dc9883c1ec63b0543a95d80477c7f49f8f8197825aaccfe72
+runner_sha256: a6508e92cdd0b9885c08b2a8757fe9cfaf6eedc4f2ac349d6c7713a9aa2f0305
 input_fingerprint_sha256: db7786cde9df9554b9e925bd8927e6f129e0cdd1546e5ea349a31056104b73bb
 timeout_sec: 1400
 exit_code: 0
+elapsed_sec: 2.61
 status: ok
 ----- stdout -----
 CYCLE980_WITNESS_ORBIT_MULTIPLICITY
 A_ORBIT_DECOMPOSITION PASS :: effective_group=O+_cubic(24); action_closed=True; orbits=[["CNOT",6,4],["TOF_PERPENDICULAR_CONTROLS",12,2],["TOF_OPPOSITE_CONTROLS",3,8]]; sum=21
 B_INVARIANT_SEPARATOR PASS :: J=norm2(sum_controls); values=[["CNOT",[{"control_arity":1,"control_sum_norm_squared":1,"off_diagonal_control_gram":[]}]],["TOF_PERPENDICULAR_CONTROLS",[{"control_arity":2,"control_sum_norm_squared":2,"off_diagonal_control_gram":[0]}]],["TOF_OPPOSITE_CONTROLS",[{"control_arity":2,"control_sum_norm_squared":0,"off_diagonal_control_gram":[-1]}]]]; constant=True; distinct=True
 C_NECESSITY PASS :: alphabet_to_classes={"CNOT":1,"CNOT+TOF":3,"I_ONLY":0,"TOF":2,"X":0,"X+CNOT":1,"X+CNOT+TOF":3,"X+TOF":2}
-D_CONTROLS PASS :: source_reads=1<=6; sha_pins=True; blocklist_text_ast=True; determinism=True; runtime_s=0.918<1400
+D_CONTROLS PASS :: source_reads=1<=6; sha_pins=True; blocklist_text_ast=True; determinism=True; runtime_s=0.889<1400
 TOTAL: PASS=4 FAIL=0
+
 ----- stderr -----
 

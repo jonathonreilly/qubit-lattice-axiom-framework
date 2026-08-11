@@ -535,6 +535,23 @@ locality/covariance/gluing theorem, projective limit, pure-geometry action,
 stationary nonuniform solution, Lorentzian dynamics, external science,
 canonical edit, percentage move, audit verdict, or `review-loop` is imported.
 
+## Block 38 Assumptions And Non-Imports
+
+The two-cube block inherits only the Block-37 ten rays, fixed site/edge/face
+factors, coframe/link carrier, coefficients, corrected intrinsic EC scalar,
+and finite measure convention. It supplies the two-cube finite region and the
+homogeneous direction-only connection probe. Shared variables are identified;
+vertices, edges, and geometric faces are counted once.
+
+The `sigma/3` coefficient is fixed per elementary face incidence. It is not
+recomputed from finite-region degree. The positive exterior boundary message
+is derived by exact contraction, not imported. The ordered-product cube-
+Bianchi identity follows by exact free cancellation of oriented edge words;
+it imports no field equation. No periodic phase, boundary-state selector,
+bulk connection solution, displacement symmetry, Einstein source law,
+Lorentzian signature/update, canonical edit, percentage move, audit verdict,
+or `review-loop` is imported.
+
 ## Block 37 Assumptions And Imports
 
 Block 37 imports the four-axiom surface, Block 35's supplied ten-ray dictionary

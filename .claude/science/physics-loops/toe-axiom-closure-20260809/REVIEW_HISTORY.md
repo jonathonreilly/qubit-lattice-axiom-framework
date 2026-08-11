@@ -1955,3 +1955,32 @@ instance or Fourier census.
   mergeable, and `CLEAN`, stacked exactly on Block-36 delivery head
   `9431cd5d47`; independent audit remains pending. No canonical axiom, fixed
   percentage, or audit verdict is changed.
+
+## Block 38 Construction And Adversarial Record
+
+- Constructed the union/left/right/overlap carrier sets for two face-sharing
+  cubes and verified `12/20/11/44` unique vertices/edges/faces/based loops.
+- Corrected Block 37's extendable `sigma/3` semantics: it is a fixed elementary
+  face-incidence coefficient, not a finite-region degree average.
+- Verified exact branchwise fixed-potential gluing at `7.105e-15`; a separate
+  nonuniform-coframe 100-branch reconstruction matches, while adaptive
+  averaging has mean/max defects `0.032482/0.102067` there.
+- Contracted the nominal `10^12` labels exactly at width four, exposed the
+  free-marginal TV `0.011184`, and restored the union marginal with the exact
+  right message at TV `7.362e-17`.
+- Freely reduced the six transported outward plaquette words to identity and
+  evaluated left/right generic-link Bianchi residuals
+  `8.580e-14/8.600e-14`.
+- Executed seven N1 routes: fixed potentials, adaptive averaging, duplicate
+  face, DLR message, copied cube-centered connection, homogeneous connection,
+  and ordered-product Bianchi.
+- Exhausted the homogeneous compact angle numerically: flat sampled minima,
+  nonflat maxima at `2.718312332/3.564872975`, then rejected reduced-only
+  stationarity by all 120 tangents at flat and curved probes.
+- Verified endpoint-local frame covariance, proper-cubic direction
+  intertwining, orientation-independent shared EC scalar, common-Gram failure,
+  and fixed face-load incidence.
+- Fresh cache is `PASS=20 FAIL=0` in `7.49 s`; stdout is `5,257` characters;
+  citation registration is `5,484/15,673`, out-degree two. Repository
+  conformance, commit, push, and PR remain pending. No canonical axiom, fixed
+  percentage, or audit verdict is changed.

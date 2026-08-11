@@ -1565,3 +1565,29 @@ translation-compatible link field under one common potential and Gram rule.
 The exact terminal test is compatible overlap conditionals plus shared-link and
 shared-coframe stationarity; then proceed to periodic regions and distinguish
 Bianchi from displacement Ward before Einstein/Lorentzian claims.
+
+## Block 38 Handoff
+
+Work is on branch
+`physics-loop/toe-axiom-closure-block38-two-cube-overlap-20260811`, stacked
+exactly on Block-37 delivery head `cb107d8a84`. The theorem note, runner,
+refreshed Block-37 semantic repair/cache, Block-38 cache, and citation manifest
+are present. Primary cache is `PASS=20 FAIL=0` in `7.49 s`, with 5,257 stdout
+characters; repository conformance and delivery remain before the stacked PR.
+
+The main gain is that overlap is no longer the leading gravity wall. Fixed
+site/edge/face potentials obey branchwise inclusion--exclusion, the exact
+two-cube marginal is the free left law times a positive exterior message, and
+both elementary ordered-product nonabelian Bianchi words close exactly. The
+runner rejects three false shortcuts separately: adaptive degree averaging,
+shared-face duplication, and cellwise copying of the cube-centered connection.
+
+The remaining connection result must be read physically. The homogeneous
+translation-compatible family has flat stable reduced branches; its curved
+extrema are unstable and fail all-link stationarity. Both flat and curved open
+probes retain boundary-resolved link forces, and one common Gram well cannot
+cancel all open-boundary coframe stresses. Do not call this a gravity failure:
+the next target is an `L>=3` periodic carrier, the translated exact Bianchi
+word, the full flat-vacuum connection gradient, then a zero-sum Record/coframe
+source and weak-wavevector displacement/Einstein response. No `review-loop` is
+used.

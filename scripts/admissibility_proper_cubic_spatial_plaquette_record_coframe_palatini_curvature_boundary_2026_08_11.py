@@ -373,8 +373,10 @@ def record_partition(
 ) -> float:
     state = record_state(coframes)
     loads = curvature_loads(coframes, links, plane_axis, use_wilson)
-    # Each cube vertex meets three faces.  The factor 1/3 makes the shared-site
-    # loading an incidence average instead of tripling a one-face coefficient.
+    # This is one fixed elementary face-incidence coefficient.  On this cube,
+    # where every vertex meets three faces, it is numerically an incidence
+    # average.  It must not be recomputed from finite-region vertex degree;
+    # the two-cube extension checks that such adaptive averaging breaks gluing.
     weights = [
         weight * np.exp((sigma / 3.0) * load)
         for weight, load in zip(state.weights, loads)

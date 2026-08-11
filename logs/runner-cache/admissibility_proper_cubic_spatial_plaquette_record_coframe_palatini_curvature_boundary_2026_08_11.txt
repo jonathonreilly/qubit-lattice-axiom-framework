@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_proper_cubic_spatial_plaquette_record_coframe_palatini_curvature_boundary_2026_08_11.py
-runner_sha256: 73647bed0dd7cfcc6e5d347ff68eaccd2692dcd94b9adaf44304cbbeae39cff3
-input_fingerprint_sha256: ed70af45f65fe78d2b2cd2436da7992e4d76efec3273149afcdfd68f708f3e3a
+runner_sha256: e3f3834f1813b41705a2bf820b7eb808a4b75c905284de9594eb2c50517613de
+input_fingerprint_sha256: ccd7ef5544e94e9207692793b5d31b725fa7cc59a64d33d60a8a7b2afae51248
 timeout_sec: 240
 exit_code: 0
-elapsed_sec: 7.53
+elapsed_sec: 7.08
 status: ok
 ----- stdout -----
 [PASS] premise-and-scope-binding: the runner binds the four-axiom surface and the two supplied local-law/frame parents without...

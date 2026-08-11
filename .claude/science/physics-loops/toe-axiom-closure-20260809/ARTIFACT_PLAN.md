@@ -879,3 +879,32 @@ complete conditional nonlinear compact solution:
   campaign conformance is `6c9d65e56c`. PR #6123 is open, mergeable, and
   `CLEAN`, stacked exactly on Block-36 delivery head `9431cd5d47`;
   independent audit remains required
+
+## Block 38 — Two-Cube Gibbs Overlap / Kinematical Bianchi Boundary
+
+- theorem note:
+  `docs/ADMISSIBILITY_TWO_CUBE_RECORD_EC_OVERLAP_GIBBS_CONNECTION_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-11.md`
+- runner/cache:
+  `scripts/admissibility_two_cube_record_ec_overlap_gibbs_connection_boundary_2026_08_11.py`
+  and its source/input-pinned cache; the corrected Block-37 coefficient
+  semantics and refreshed parent cache are part of this dependent repair
+- packet scope: twelve shared sites, twenty unique links, eleven unique faces,
+  forty-four based loops, exact nominal `10^12` Record contraction,
+  branchwise `union=left+right-overlap`, positive exterior boundary message,
+  normalized overlap conditional, both exact ordered-product nonabelian cube-
+  Bianchi words, and full compact homogeneous-connection diagnostics
+- significant result: fixed elementary carrier potentials glue at
+  `7.105e-15`; the free/union shared-layer TV `0.011184` is repaired by the
+  exterior message to `7.362e-17`; adaptive finite-region degree averaging,
+  duplicated shared-face counting, and copied cube-centered links fail their
+  distinct terminal tests
+- gravity boundary: the translation-compatible curved reduced extremum at
+  `a=2.718312332` has nonzero gap/EC/torsion but negative reduced curvature and
+  full-link residual `0.055838`; the flat open probe also has boundary force
+  `0.682066`. Elementary Bianchi is closed kinematically, while common-potential
+  bulk connection/displacement stationarity remains open
+- current evidence: fresh cache `PASS=20 FAIL=0` in `7.49 s`, stdout `5,257`
+  characters; independent nonuniform-coframe gluing reconstruction passes at
+  `7.105e-15`; citation registration is `5,484/15,673`, out-degree two;
+  repository conformance, science commit, delivery, push, and stacked PR remain
+  pending. No canonical edit, fixed percentage move, or audit verdict occurs

@@ -738,3 +738,16 @@ checkpoint is `6c9d65e56c`. PR #6123 is open, mergeable, and `CLEAN`, stacked
 exactly on Block-36 delivery head `9431cd5d47`; independent audit remains
 required. No canonical edit, percentage move, audit verdict, or `review-loop`
 is used.
+
+Block 38 is local on branch
+`physics-loop/toe-axiom-closure-block38-two-cube-overlap-20260811`, stacked
+exactly on Block-37 delivery head `cb107d8a84`. Its distinct review object is
+the unique-carrier two-cube factor law, exact branchwise overlap gluing,
+positive exterior-message conditional, exact nominal `10^12` transfer, both
+ordered-product cube-Bianchi identities, and homogeneous compact-connection
+classification. Primary cache is `PASS=20 FAIL=0` in `7.49 s` with 5,257
+stdout characters; an independent 100-branch nonuniform-coframe gluing
+reconstruction passes. Citation registration is `5,484/15,673`, out-degree
+two. Direct conformance and full pipeline, science/campaign commits, push, and
+stacked PR remain pending. Independent audit remains required. No canonical
+edit, percentage move, audit verdict, or `review-loop` is used.

@@ -773,3 +773,20 @@ merely in an internal-frame identity.
 
 The isolated-cell family is saturated for now. Extension—not another local
 curvature decoration—is the decisive next discriminator.
+
+## Block 38 Overlap / Periodic-Bulk Route Comparison
+
+| Route | Exact object | Outcome | Decision |
+|---|---|---|---|
+| fixed elementary factor potentials | union/left/right/overlap carrier inclusion--exclusion | exact branchwise gluing at `7.105e-15` | retain as the extensional local law form |
+| adaptive incidence average | `sigma/degree_F(A,v)` recomputed per finite region | gluing defect up to `0.055838` | retire for region extension |
+| exact exterior message | width-four contraction over the right-exclusive layer | repairs free/union marginal TV `0.011184` to `7.362e-17` | retain as the correct finite conditional/DLR interface |
+| duplicated shared face | one extra overlap-face load | shifts `log Z` by `-0.090461` | retire as bookkeeping-equivalent gluing |
+| copied cube-centered links | left/right midpoint rules on shared edges | mismatch `0.896594` | retire without a derived gluing gauge |
+| homogeneous direction-only links | `U_i=exp(aJ_i)` on all edges | translation/proper-cubic covariance; stable sampled reduced roots flat; curved roots unstable and not full stationary | retain as a bulk probe, not selected solution |
+| ordered-product cube Bianchi | six outward transported face holonomies per cube | exact free-word cancellation and two generic matrix checks | retain as kinematics; do not identify with displacement Ward |
+| periodic sourced carrier | `L>=3` torus plus zero-sum Record/coframe source | not executed | highest-priority next route |
+
+Finite overlap is no longer the wall. Periodic full-coordinate stationarity,
+source response, and physical selection now determine whether this gravity
+path survives.

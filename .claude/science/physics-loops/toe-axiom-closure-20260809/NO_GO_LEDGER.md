@@ -321,3 +321,12 @@ amendment.
 The broad negative fails: a consistent finite intrinsic-curvature law exists.
 The remaining obstruction is derivation/selection and compatible extension,
 not an established ontology failure. No axiom amendment is proposed.
+
+## Block 38 Overlap / Bulk-Stationarity Boundary
+
+| Scoped claim | Exact/bounded evidence | N1--N8 disposition | Forbidden promotion | Live routes |
+|---|---|---|---|---|
+| Fixed elementary two-cube factors glue, boundary messages give compatible conditionals, and elementary Bianchi closes; region-adaptive averaging, duplicate-face counting, copied cube-centered links, and reduced-only stationarity fail their executed tests | branchwise gluing `7.105e-15`; message repair `7.362e-17`; Bianchi `8.580e-14/8.600e-14`; adaptive defect up to `0.055838`; copied-link mismatch `0.896594`; curved full-link max `0.055838`; `PASS=20 FAIL=0` | pass only for the four narrow negatives and constructive overlap/Bianchi statements; seven executed route families, wall matrix, hidden scan, residual matching, resolution certificate, primitive scan, periodic/source steelman, and cross-cycle echo land | do not infer a gravity no-go, free-boundary projectivity requirement, bulk connection solution, displacement Ward identity, Einstein regime, Lorentzian dynamics, or fifth-axiom necessity | periodic `L>=3`, exact boundary-state/DLR extension, zero-sum source response, Regge, constrained BF, teleparallel, carrier import retirement, and causal reconstruction |
+
+The overlap obstruction is retired for fixed potentials. The surviving wall is
+bulk dynamical selection and response, not elementary Bianchi or ontology.

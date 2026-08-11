@@ -268,3 +268,17 @@ Efficiency rule: reuse Block 37's exact cube combinatorics and tensor
 contraction, but replace the cube-centered witness before scaling. Stop any
 candidate that double-counts shared faces/edges, fits separate wells per cube,
 or calls an internal-frame/Bianchi identity a displacement or Einstein law.
+
+## Post-Block-38 Priority Refresh
+
+| Rank | Target | Exact next witness | Why now |
+|---:|---|---|---|
+| 1 | periodic bulk connection plus sourced response | fixed-potential `L>=3` torus, translated exact Bianchi word, all-link flat-vacuum gradient, one zero-sum Record/coframe source, and weak-wavevector response | two-cube gluing and elementary Bianchi now work; open boundaries are the measured stationarity contaminant |
+| 2 | Record derivation / physical law selection | derive the geometry carrier, fixed coefficients, measure, and boundary state from Admissibility/Records or isolate the minimal downstream interface | exact extension exists but remains supplied, so this is still the dominant axiom pressure |
+| 3 | displacement Ward and Einstein discriminator | separate local-frame/Bianchi kinematics from base displacement redundancy, gauge nulls, two-derivative tensor, and universal source coupling | prevents a correct Bianchi identity from being overpromoted to gravity dynamics |
+| 4 | increasing-region/DLR phase control | use exact local messages with uniform coframe moment/coercivity bounds and boundary-state selection | free-marginal equality has been eliminated as the wrong target |
+| 5 | Lorentzian permanent-Record update | derive the `Z^3 x Z_tau` law, reconstruction/causal cone, constraints, and Record-preserving evolution | remains independent of the Euclidean overlap advance |
+| 6 | other TOE roots | return to the highest non-gravity root if the periodic source response saturates | preserves campaign breadth without abandoning the lowest lane |
+
+Efficiency rule: reuse the fixed carrier and exact Bianchi word. Do not spend
+another block on open-boundary well fitting or one-parameter stationarity.

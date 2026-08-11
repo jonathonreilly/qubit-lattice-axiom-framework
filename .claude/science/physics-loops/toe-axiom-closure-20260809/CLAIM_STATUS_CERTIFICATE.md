@@ -1263,3 +1263,39 @@ current repository no-go discipline.
 
 The landing N1--N8 record is in the theorem note and the five N5 resolution
 lines are in the landing primary cache.
+
+## Block 38 Two-Cube Overlap / Bianchi Boundary Certificate
+
+- Claim type: `bounded_theorem` with exact finite-factor identities and
+  explicitly numerical connection/coframe diagnostics.
+- Carrier census: 12 unique vertices, 20 unique links, 11 unique faces, 44
+  based loops; left/right/overlap counts are `8/8/4`, `12/12/4`, and `6/6/1`.
+- Gluing: twenty-four branchwise fixed-potential inclusion--exclusion checks
+  have maximum error `7.105e-15`; a separate 100-branch nonuniform-coframe
+  reconstruction has the same maximum error.
+- Conditional law: exact nominal `10^12` partition
+  `9839719143.975586`; free/union shared-layer TV `0.011184`; right-message
+  log range `0.135769`; repaired TV `7.362e-17`; conditional ratio error
+  `5.107e-15`.
+- Bianchi: both six-face transported outward nonabelian boundary words freely
+  reduce to identity; generic-field matrix residuals are
+  `8.580e-14/8.600e-14`. This is kinematics, not displacement Ward dynamics.
+- Failed routes: adaptive degree averaging produces defects up to `0.055838`;
+  shared-face duplication shifts `log Z` by `-0.090461`; copied cube-centered
+  links disagree by `0.896594`.
+- Connection: homogeneous links exactly intertwine translations and all 24
+  proper-cubic rotations. Stable sampled scalar roots are flat; the curved
+  root `2.718312332` has gap/EC/torsion
+  `1.588535/-0.139595/2.825672`, negative second derivative, and full tangent
+  max/norm `0.055838/0.232095`.
+- Open-boundary stationarity: flat full-link max/norm
+  `0.682066/4.077429`; required Gram-target spread `0.000289`; best common-well
+  max/norm residual `0.004886/0.013402`.
+- Runner/cache: source/input pinned, `PASS=20 FAIL=0` in `7.49 s`; stdout is
+  `5,257` characters with substantive per-element, per-site, per-mode,
+  per-block, and lattice-wide certificates.
+- Governance: exact finite overlap, conditional, normalization, and elementary
+  Bianchi closure are established. Physical carrier/law/measure selection,
+  increasing-region phase, bulk connection/displacement Ward, sourced
+  Einstein regime, Lorentzian update, and axiom necessity are not. N1--N8
+  lands in the theorem note; no gravity no-go or fifth-axiom claim ships.

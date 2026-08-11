@@ -511,6 +511,22 @@ selection is conditional on a massless phase. Candidate wording is
 unadopted; fixed TOE percentages and canonical axioms remain unchanged. No
 `review-loop` is used.
 
+Block 38 identifies all shared variables and counts every geometric carrier
+once across two face-sharing cubes. Fixed elementary factors satisfy exact
+branchwise inclusion--exclusion, exact tensor transfer yields the positive
+exterior boundary message and normalized overlap conditional, and both
+transported six-face nonabelian cube-Bianchi words cancel exactly.
+
+Reachability remains `upstream_support`, not direct TOE closure. Adaptive
+degree averaging, shared-face duplication, and copied cube-centered links are
+rejected, while the translation-compatible homogeneous connection shows flat
+stable reduced branches and nonflat unstable extrema that fail full
+open-boundary stationarity. Elementary Bianchi is now closed kinematically;
+bulk connection/displacement Ward, sourced Einstein response, phase/boundary
+selection, and Lorentzian dynamics remain open. Candidate wording is
+unadopted; fixed TOE percentages and canonical axioms remain unchanged. No
+`review-loop` is used.
+
 Block 37 supplies one bounded upstream-support result materially closer to the
 gravity target: a complete proper-cubic spatial cube with the correct
 triad-derived intrinsic EC index contraction, nontrivial holonomy, transported

@@ -226,8 +226,11 @@ T=(tau/8) sum_p ||
 W=(alpha/4) sum_v ||e_v^T e_v-Q_v||_F^2.             (14)
 ```
 
-The `1/3` in (10) averages the three incident-face loads rather than silently
-tripling a one-face coefficient. The same label `r_v` appears in the site
+The `1/3` in (10) is a fixed elementary face-incidence coefficient. On this
+one cube, where every vertex meets three faces, it is numerically an incidence
+average rather than a tripled one-face coefficient. It must not be recomputed
+from the degree of a larger finite region; the two-cube extension tests that
+adaptive interpretation separately. The same label `r_v` appears in the site
 weight, all incident edge kernels, and all three incident curvature loads.
 Thus the Palatini scalar is inside each occupied Record branch; it is not a
 post hoc additive spectator outside the Record sum.

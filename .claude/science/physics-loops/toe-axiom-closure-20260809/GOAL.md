@@ -1207,3 +1207,18 @@ Bianchi identities versus displacement Ward content, the weak-curvature
 Einstein regime, and Lorentzian permanent-Record evolution. The current axioms
 do not select the supplied carrier or law, but no axiom amendment is yet shown
 necessary. Fixed TOE percentages remain unchanged.
+
+Block 38 completes that immediate two-cube target at the level that is
+actually physically meaningful: fixed local potentials glue exactly, overlap
+conditionals carry the correct exterior message, and both elementary
+nonabelian Bianchi words close. It also shows why free-boundary marginal or
+stationary equality was the wrong target and rejects adaptive incidence
+averaging plus copied cube-centered links.
+
+The highest-value next goal is now an `L>=3` periodic fixed-potential carrier:
+translate the exact Bianchi word, test the full flat-vacuum connection
+gradient without open boundaries, then introduce one zero-sum Record/coframe
+source and compute the nonuniform displacement/Einstein response. Physical
+selection of the carrier, measure, coefficients, and boundary state remains
+the axiom pressure. No fifth axiom is yet necessary; fixed percentages remain
+unchanged.

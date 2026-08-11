@@ -23,12 +23,14 @@ next_trace_action: "independent audit of the bounded theorem packet"
 ```yaml
 claim_id: cycle980_witness_orbit_multiplicity
 claim_type: bounded_theorem
+target_claim_type: bounded_theorem
 actual_current_surface_status: bounded-support
 conditional_surface_status: null
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false
 proposal_allowed_reason: "finite alphabet/support theorem; no branch-local retained-grade proposal"
+claim_type_reason: "exact exhaustive classification on the explicitly capped seven-site, word-length-zero-or-one landed gate family"
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 audit_status_authority: independent audit lane only
@@ -37,6 +39,18 @@ packet_primary_runner: scripts/frontier_cycle980_witness_orbit_multiplicity_2026
 packet_helper_runner: scripts/frontier_cycle980_witness_orbit_multiplicity_independent_check_2026_08_11.py
 packet_helper_claim_scope: cycle980_witness_orbit_multiplicity
 ```
+
+## Review record
+
+```yaml
+review_loop_disposition: pass
+hard_landing_packet_helper_mapping:
+  witness_orbit_multiplicity_cycle980_bounded_theorem_note_2026-08-11:
+    - scripts/frontier_cycle980_witness_orbit_multiplicity_independent_check_2026_08_11.py
+```
+
+The hard-landing mapping above is implemented verbatim in the citation-graph
+builder so the restricted independent-audit packet contains the checker.
 
 ## Claim
 

@@ -1,0 +1,46 @@
+{
+  "active_corruption_probes": {
+    "cache_survivor_headline": true,
+    "class_count": true,
+    "coordinate_map": true,
+    "exclusion_without_witness": true,
+    "nonuniform_tv": true,
+    "primary_source_pin": true,
+    "program_count": true,
+    "survivor_count": true,
+    "transfer_headline": true,
+    "weighting_total": true
+  },
+  "checks": {
+    "R0_PRIMARY_AST_AND_PINS": true,
+    "R1_INDEPENDENT_Z3_AND_ORBITS": true,
+    "R2_INDEPENDENT_WEIGHTINGS": true,
+    "R3_PER_INSTANCE_AND_TRANSFER": true,
+    "R4_NONUNIFORM_INPUT": true,
+    "R5_RECEIPT_CACHE_BINDING": true,
+    "R6_ACTIVE_CORRUPTION_PROBES": true,
+    "R7_CONTROLS": true
+  },
+  "claim_id": "cycle984_born_compatibility_z3_adjacency_independent_check",
+  "comparisons": {
+    "cache_input_pin": true,
+    "cache_runner_pin": true,
+    "cache_semantics": true,
+    "cache_status": true,
+    "criterion": true,
+    "no_adaptation": true,
+    "no_verdict_imports": true,
+    "orbits": true,
+    "per_instance": true,
+    "requirement": true,
+    "robustness": true,
+    "transfer": true,
+    "weightings": true,
+    "z3_instance": true
+  },
+  "cycle719_imported_or_executed": false,
+  "primary_imported_or_executed": false,
+  "primary_receipt_sha256": "1632d90a128371aa69814d9eabb5a6cdcd0ea97ff220e25e26bfba796f5d32ed",
+  "primary_source_sha256": "45a5bfd7ae9a67a5b4c600ab8226b166ece0e442683374c0bef17625cda5cebc",
+  "receipt_sha256_without_self": "adef8bb49e8903e3535eea73c4b2d74ff90599e7633446aa87aa4a7cfbe57d0b"
+}

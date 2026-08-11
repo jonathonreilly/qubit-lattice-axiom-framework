@@ -511,6 +511,25 @@ selection is conditional on a massless phase. Candidate wording is
 unadopted; fixed TOE percentages and canonical axioms remain unchanged. No
 `review-loop` is used.
 
+## Block 43 Trace Gate
+
+Block 43 constructs a viable linear static gravity acceptance surface for the
+supplied repaired Regge law. On the complete edge space it joins exact
+displacement Ward nulls, removal of the fifth nonmetric branch, one positive
+fixed-average tick source, and a five-volume real-space coefficient approaching
+the residue-forced `1/(2pi)`. It also proves that the spectacular metric-only
+Brillouin-edge pole is a restriction artifact.
+
+Reachability remains `upstream_support`, not TOE closure. The complete
+unreduced Euclidean quotient is still indefinite with nine negative and two
+positive directions. No selected Record action/source, full-`Z^3` theorem,
+nonlinear phase, Lorentzian constraint update, causal Record preservation, or
+physical Newton coupling is supplied. The next trace-bearing seam is a
+complete-edge constrained causal update with two TT physical modes; failure
+to derive its law from Records localizes a candidate dynamics/law-selection
+axiom issue. Candidate wording is unadopted; fixed TOE percentages and
+canonical axioms remain unchanged. No `review-loop` is used.
+
 ## Block 42 Trace Gate
 
 Block 42 resolves the Block-41 connection discriminator on the unchanged

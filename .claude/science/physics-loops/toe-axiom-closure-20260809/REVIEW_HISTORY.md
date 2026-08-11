@@ -1956,6 +1956,28 @@ instance or Fourier census.
   `9431cd5d47`; independent audit remains pending. No canonical axiom, fixed
   percentage, or audit verdict is changed.
 
+## Block 43 Construction And Adversarial Record
+
+- Solved the complete repaired fifteen-edge symbol on every nonzero static
+  momentum of `L=33,49,65,81,97`: `1,872,320` modes total, all with inertia
+  `(9,2,4)`, normalized quotient gap above `0.058`, and no fifth branch.
+- Proved the coefficient-two tick row is one positive unit `h_tt` source and
+  annihilates the four static displacement-Ward columns exactly.
+- Derived the unfitted long-wave residue `k^2 h_tt -> 2`, hence target
+  `1/(2pi)`; the radius-eight difference sequence reaches `0.159087619` at
+  `L=97`, relative error `0.000423`.
+- Exposed a false metric-only pole: restricted response `4075.851` and gap
+  `6.019e-5` become complete-edge response `0.180976576` and gap
+  `0.684834735` at the identical momentum.
+- The uniform fixed-average compensation falls as `L^-3`; the result does not
+  claim a localized negative matter source or an all-`L` limit.
+- Fresh N1--N8 rejects a broad gravity no-go and promotes Lorentzian constraint
+  reduction. Primary cache is `PASS=13 FAIL=0`; independent direct Bloch
+  reconstruction is `PASS=5 FAIL=0`; citation registration is
+  `5,489/15,694`, out-degree six. Conformance, commit, PR, and independent
+  audit are pending. No canonical axiom, fixed percentage, audit verdict, or
+  `review-loop` changes.
+
 ## Block 42 Construction And Adversarial Record
 
 - Contracted every stationary Gram to `x=0.894520303..1.022146364` and

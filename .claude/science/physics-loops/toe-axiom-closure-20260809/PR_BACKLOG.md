@@ -593,6 +593,18 @@ Science commit is `be1781ad26`; campaign conformance is `42d3056d98`. PR
 head `f2f21f9b0f`. Independent audit is pending. No canonical edit,
 percentage move, audit verdict, or `review-loop` is used.
 
+Block 43 is local on branch
+`physics-loop/toe-axiom-closure-block43-regge-increasing-region-20260811`,
+stacked exactly on Block-42 delivery head `7ac0e0e12c`. Its review object is
+the complete fifteen-edge repaired Regge Ward quotient, positive fixed-average
+tick source, exhaustive five-torus Green reconstruction, metric-only
+false-pole control, and unreduced Euclidean-signature boundary. The
+source/input-pinned primary cache is `PASS=13 FAIL=0` over `1,872,320` modes;
+independent direct reconstruction is `PASS=5 FAIL=0`; citation registration
+is `5,489/15,694`, out-degree six. Science commit, conformance, push, PR, and
+independent audit are pending. No canonical edit, percentage move, audit
+verdict, or `review-loop` is used.
+
 Block 42 is local on branch
 `physics-loop/toe-axiom-closure-block42-connection-quotient-20260811`, stacked
 exactly on Block-41 delivery head `66a824a29c`. Its review object is the

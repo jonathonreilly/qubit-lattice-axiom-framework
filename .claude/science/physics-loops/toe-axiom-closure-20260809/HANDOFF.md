@@ -1700,3 +1700,24 @@ stabilizing contact. Stop the unchanged saddle's full Bloch census and begin
 the relational/derivative Ward-law repair. Modified and nonflat phases remain
 live. No canonical axiom, fixed percentage, audit verdict, or `review-loop`
 changes.
+
+## Block 43 Handoff
+
+Work is on branch
+`physics-loop/toe-axiom-closure-block43-regge-increasing-region-20260811`,
+stacked exactly on Block-42 delivery head `7ac0e0e12c`. The theorem note,
+primary runner, source/input-pinned `PASS=13 FAIL=0` cache, independent direct
+symbol reconstruction `PASS=5 FAIL=0`, fresh N1--N8, and all five N5
+resolutions are present. Citation registration is
+`5,489/15,694`, out-degree six. Conformance, commit, push, PR, and independent
+audit are pending.
+
+The significant gain is constructive: the repaired complete-edge Regge sector
+has exact static displacement Ward compatibility, a positive fixed-average
+tick source, no fifth nonmetric zero, and an offset-free Green coefficient
+within `4.3e-4` of the residue-forced `1/(2pi)` at `L=97`. The corresponding
+metric-only pole is a projection artifact. The hard boundary is the persistent
+`(9,2,4)` unreduced Euclidean inertia, not failure of the static gravity
+response. Continue with Lorentzian/canonical constraint reduction and
+Record-law/source selection. Re-rank after one deep block or three hours. No
+canonical axiom, fixed percentage, audit verdict, or `review-loop` changes.

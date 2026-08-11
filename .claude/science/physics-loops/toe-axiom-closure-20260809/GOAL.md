@@ -1289,3 +1289,26 @@ base-displacement Ward identity. It must retain a nondegenerate phase without
 critical fitting, remove the `O(k^0)` spatial spin-two intercept, and then
 pass source-residue, polarization, and small-`k` tests. No axiom amendment is
 adopted and fixed percentages remain locked.
+
+## Block 43 Goal Update And Portfolio Gate
+
+The supplied repaired Regge law now passes the exact static Ward, positive
+fixed-average tick-source, fifth-branch-lift, and increasing-torus Green tests
+on the complete fifteen-edge space. The residue fixes `1/(2pi)` without a fit,
+and the `L=97` offset-free coefficient is within `4.3e-4` relative error.
+
+The decisive remaining obstruction is no longer the linear static Green seam:
+the unreduced Euclidean quotient has inertia `(9,2,4)` on every declared mode.
+The highest-value goal is therefore a Record-native Lorentzian/canonical or
+reflection-positive update that derives and propagates constraints, leaves
+exactly two positive-energy transverse-traceless modes, and preserves the
+static source Ward/residue. If current axioms cannot select that update, the
+deliverable is the minimal extensional dynamics/law-selection issue, not a
+fitted coefficient.
+
+Re-rank this portfolio every three hours and after every decisive failure.
+Score closure fan-out, hypothesis discrimination, axiom localization, and
+cost-to-answer. Do not extend finite grids, tighten a settled constant, or use
+a restricted metric subspace unless the result can change the top-ranked
+Lorentzian, law-selection, full-`Z^3`, or stable-nonflat decision. No canonical
+axiom amendment is adopted and fixed percentages remain locked.

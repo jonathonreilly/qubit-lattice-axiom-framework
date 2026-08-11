@@ -535,6 +535,22 @@ locality/covariance/gluing theorem, projective limit, pure-geometry action,
 stationary nonuniform solution, Lorentzian dynamics, external science,
 canonical edit, percentage move, audit verdict, or `review-loop` is imported.
 
+## Block 43 Assumptions And Imports
+
+Block 43 imports the retained fifteen-edge Kuhn/Coxeter Regge symbol and exact
+vertex-displacement columns, the action-native deficit-squared correction at
+the already supplied `alpha=1/1024`, and the tick-edge/`h_tt` normalization.
+It supplies one positive unit static tick source and fixes only the homogeneous
+metric mode, equivalently disclosing a uniform compensator of density `L^-3`.
+
+The calculation uses complete Hermitian pseudoinversion and every nonzero
+static momentum of the five declared odd tori. The ten-metric congruence is a
+hostile control, not a physical invariant subspace. No coefficient fit,
+observed Newton constant, source-as-mass identification, all-`L` or full-`Z^3`
+limit, semibounded Euclidean phase, nonlinear completion, Lorentzian update,
+Record-to-action selection, external science, canonical edit, percentage
+move, audit verdict, or `review-loop` is imported.
+
 ## Block 42 Assumptions And Imports
 
 Block 42 imports only the fixed Block-38 `sigma/3` face factor, Block-39

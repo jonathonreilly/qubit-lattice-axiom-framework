@@ -341,3 +341,21 @@ regularity decision depends on it.
 Efficiency rule: do not compute the remaining seventeen flat connection modes
 unless they inform the repair. Require each next block to move stability,
 Ward order, phase existence, or physical source residue.
+
+## Post-Block-43 Priority Refresh
+
+| Rank | Target | Exact next witness | Why now |
+|---:|---|---|---|
+| 1 | Lorentzian/canonical constraint reduction | derive the full-edge lapse/shift constraint rows and propagation identity, quotient without metric truncation, leave exactly two TT modes, and prove positive physical energy while preserving the static source residue | the repaired static Ward/Green sector works, while unreduced Euclidean semiboundedness does not; this is the decisive gravity discriminator |
+| 2 | Record-native law and source selection | construct an extensional permanent-Record history/update whose derived action and source row are the repaired law and positive tick source, or isolate the minimal missing dynamics/selection clause | the current axioms explicitly do not choose dynamics, action, or source meaning, so mathematical viability alone cannot close the TOE bridge |
+| 3 | analytic full-`Z^3`/all-zone control | prove a continuous-Brillouin quotient lower bound and direct infinite-region Green asymptotic without the periodic compensator | strengthens the boundary theorem, but does not by itself solve physical dynamics or law selection |
+| 4 | stable nonflat counterroute | solve and quotient a complete nonflat phase with all nonmetric mixing retained | strongest independent gravity steelman if the flat constrained route fails |
+| 5 | Born/history root checkpoint | re-test whether physical effect/history registration has acquired a derivation while gravity dependencies mature | protects against gravity tunnel vision without duplicating the already conditional trace-form result |
+
+Efficiency gate every three hours and after each decisive result: score each
+route on TOE closure fan-out, power to eliminate competing hypotheses, axiom
+issue localization, dependency readiness, and estimated deep blocks. Drop or
+defer work that only adds grid size, decimal precision, or another congruence
+projection. Rank one may consume one deep block; if it immediately requires an
+unlicensed update law, split the deliverable into a constructive extensional
+law attempt and a precise candidate axiom issue instead of hiding the import.

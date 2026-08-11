@@ -370,3 +370,14 @@ a derived displacement-Ward selection property.
 
 The active wall is a selected semibounded law with a derived displacement
 Ward identity, not another census of the same saddle.
+
+## Block 43 Repaired Regge Euclidean-Signature Boundary
+
+| Scoped claim | Exact/bounded evidence | N1--N8 disposition | Forbidden promotion | Live routes |
+|---|---|---|---|---|
+| The supplied repaired flat complete-edge sector supports an exact static Ward-compatible positive-source Green response on five increasing tori, but its unreduced Euclidean quotient is not semibounded | `1,872,320` modes; inertia `(9,2,4)` throughout; `gap/khat^2>0.058`; residue `k^2 h_tt->2`; `C_97(8)=0.159087619`; `PASS=13 FAIL=0` | fresh N1--N8 passes only for the narrow Euclidean-signature boundary; the Lorentzian steelman defeats a broad gravity no-go; all five N5 resolutions land | do not infer Lorentzian ghosts, gravity impossibility, all-`L` convergence, selected action/source, physical Newton coupling, or axiom necessity | canonical lapse/shift reduction, two-TT transfer law, conformal contour, stable nonflat phase, open/Dirichlet or full-`Z^3` limit, Record law/source selection |
+
+The complete-edge positive result retires a generic Ward/source failure. The
+active negative boundary is formulation-specific: unreduced Euclidean
+semiboundedness. The next test is constrained Lorentzian propagation, not a
+broader no-go and not another restricted metric scan.

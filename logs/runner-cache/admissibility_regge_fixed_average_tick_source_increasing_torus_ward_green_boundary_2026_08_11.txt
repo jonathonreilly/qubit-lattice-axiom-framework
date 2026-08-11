@@ -1,0 +1,47 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_regge_fixed_average_tick_source_increasing_torus_ward_green_boundary_2026_08_11.py
+runner_sha256: b1bf878c3c844776908f71cfd76a4fdd25fb212637b2e92ba38351264ca6b350
+input_fingerprint_sha256: 030845935e0cb4721befa993e8da33e262dcbf0a0655d47008922f29a4293f3e
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 36.52
+status: ok
+----- stdout -----
+[PASS] source-and-scope-bindings: the current axioms and all supplied Regge, source, repair, and EC-boundary parents are r...
+[PASS] real-space-regge-kernel-reconstruction: the precomputed real-space kernel reproduces the retained fifteen-edge Regge symbol
+       max Bloch reconstruction error=3.730e-14
+[PASS] exact-static-source-ward: the coefficient-two tick edge is a unit metric source and annihilates every static verte...
+[PASS] unprojected-long-wave-residue: the complete repaired edge solve approaches k squared h_tt equals two without a source p...
+       k2h_tt=2.001725394,2.000431192,2.000107788; max relative solve=1.431e-14
+[PASS] exhaustive-increasing-torus-ward-inventory: every declared nonzero static mode has exactly four Ward nulls and no fifth nonmetric zero
+       modes=1872320; inertias=[(9, 2, 4)]
+[PASS] finite-inventory-quotient-gap: the nonzero edge quotient stays separated from zero relative to the spatial lattice mome...
+       min gap/khat2=L33:0.059087,L49:0.059007,L65:0.059025,L81:0.059004,L97:0.059013
+[PASS] unprojected-solve-and-real-field: all declared complete edge solves close and Fourier reconstruction is real with fixed ze...
+       max solve=8.703e-12; max imaginary=1.899e-17
+[PASS] increasing-region-green-difference: the boundary-offset-free radius-eight field difference approaches the residue-forced one...
+       C8=L33:0.117852344,L49:0.149781612,L65:0.156112318,L81:0.158199084,L97:0.159087619; target=0.159154943
+[PASS] fixed-average-compensator-decouples: the sole finite-volume compensation is a uniform unit-density subtraction whose local ma...
+       unit compensator density at L97=1.095682682e-06
+[PASS] metric-only-restriction-false-pole: the full-rank ten-metric congruence develops a Brillouin-edge near-zero and a response a...
+       k=[3.09326046 2.51327412 2.60993851]; metric response=4075.851; gap=6.019e-05
+[PASS] complete-edge-control-removes-false-pole: at the same momentum the complete edge quotient is regular and the unprojected response ...
+       edge response=0.180976576; gap=0.684834735; solve=3.035e-15
+[PASS] indefinite-euclidean-boundary: the repaired vertex-displacement quotient remains nine-negative/two-positive, so this is...
+[PASS] fresh-no-go-discipline-packet: the source note lands fresh N1 through N8 and preserves Lorentzian, nonflat, open-bounda...
+inventory L=33: modes=35936 solve=9.685e-13 gap/khat2=0.059087 C8=0.117852344 seconds=0.61
+inventory L=49: modes=117648 solve=1.771e-12 gap/khat2=0.059007 C8=0.149781612 seconds=1.95
+inventory L=65: modes=274624 solve=3.807e-12 gap/khat2=0.059025 C8=0.156112318 seconds=6.79
+inventory L=81: modes=531440 solve=5.047e-12 gap/khat2=0.059004 C8=0.158199084 seconds=8.81
+inventory L=97: modes=912672 solve=8.703e-12 gap/khat2=0.059013 C8=0.159087619 seconds=15.25
+N5_CERTIFICATE: all fifteen edge classes, one unit tick source, 1,872,320 static modes, the complete edge block, and five increasing tori are resolved at their stated scopes
+per_element: checked all fifteen Kuhn/Coxeter edge classes, the coefficient-two tick row, and the ten-metric restriction control
+per_site: checked one localized unit metric source plus the explicitly disclosed uniform fixed-average compensation
+per_mode: checked every nonzero static momentum on L=33,49,65,81,97 and three independent long-wave controls
+per_block: checked the complete repaired fifteen-edge symbol before any metric-only restriction and exposed the restricted false pole
+lattice_wide: checked five finite odd increasing tori only; no all-L, full-Z3, continuous-zone, nonlinear, or Lorentzian theorem is claimed
+scope_boundary: supplied flat linear Regge law with fixed average; action selection, semibounded phase, physical mass/coupling, nonlinear stability, and causal update remain open
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

@@ -1035,3 +1035,20 @@ complete conditional nonlinear compact solution:
   zero failures and zero control failures; campaign conformance is
   `fa6fcf4f87`; PR #6132 is open, mergeable, and `CLEAN`, stacked exactly on
   Block-41 delivery head `66a824a29c`; independent audit remains required
+
+## Block 43 Artifact Plan
+
+- theorem note: bind the repaired complete-edge Ward identity, positive
+  fixed-average source, exhaustive five-torus inventory, Green difference,
+  metric-only false-pole control, and Euclidean-signature boundary
+- primary runner/cache: resolve all `1,872,320` nonzero static modes on
+  `L=33,49,65,81,97`; target `PASS=13 FAIL=0` with source/input fingerprint
+- no-go packet: apply fresh N1--N8 only to the narrow unreduced-Euclidean
+  semiboundedness boundary and preserve Lorentzian, nonflat, open/Dirichlet,
+  full-`Z^3`, and law-selection routes
+- campaign state: retire additional metric-only projection and finite-volume
+  tightening; promote constrained Lorentzian propagation to rank one
+- current evidence: primary cache is `PASS=13 FAIL=0`; independent direct
+  symbol reconstruction is `PASS=5 FAIL=0`; citation registration is
+  `5,489/15,694`, out-degree six; direct/full conformance, commit, push, PR,
+  and independent audit are pending

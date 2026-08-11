@@ -852,3 +852,20 @@ derived displacement Ward/source identity. This is not yet a canonical axiom.
 | relational/derivative law | transforming reference or difference/curvature-only action with phase selector | can remove absolute `O(k^0)` terms by symmetry rather than tuning | highest-priority route |
 | stable nonflat phase | full periodic equations away from identity holonomy | not excluded and is the strongest same-family steelman | retain after the symmetry-first repair attempt |
 | Lorentzian/joint-phase/provenance | selected integrated geometry and causal update | untouched | preserve as independent terminal obligations |
+
+## Block 43 Full-Edge Ward/Green / Lorentzian Route Comparison
+
+| Route | Exact object | Outcome | Decision |
+|---|---|---|---|
+| complete repaired edge solve | `15x15` Regge plus deficit-square symbol, exact Ward quotient, positive fixed-average tick row | no fifth branch; `1/(2pi)` Green residue survives on five increasing tori | retain as the linear static acceptance surface |
+| ten-metric congruence | `M^dag Q M` on the same modes | false `4075.851` Brillouin-edge response; full edge block is regular there | retire as a spectral or physical pole witness |
+| unreduced Euclidean phase | all eleven non-Ward edge directions | inertia `(9,2)` on every declared mode; no overall sign is semibounded | do not promote to a Euclidean Gibbs geometry phase |
+| Lorentzian/canonical reduction | lapse/shift constraints, gauge quotient, TT propagator and energy | not yet constructed | rank one; must retain complete edge/nonmetric mixing and static residue |
+| Record-native action/source selection | permanent-history update deriving action and positive source meaning | absent from current axioms and present construction | rank two; constructive attempt or precise candidate amendment |
+| continuous-zone/full-`Z^3` theorem | analytic quotient gap and infinite Green inverse | finite-sequence evidence only | rank three; pursue after or alongside a viable causal law |
+| stable nonflat phase | full nonflat equations and physical quotient | untested by this block | preserve as strongest independent counterroute |
+
+Portfolio conclusion: the static linear seam has crossed its usefulness
+threshold. Further volume extension has low marginal value unless needed for
+an analytic all-zone proof. Constrained causal dynamics and extensional
+selection now carry the highest closure fan-out.

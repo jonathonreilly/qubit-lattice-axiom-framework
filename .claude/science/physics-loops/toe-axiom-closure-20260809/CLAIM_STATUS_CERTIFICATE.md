@@ -1440,3 +1440,28 @@ lines are in the landing primary cache.
 - Scope: bounded unchanged-flat-branch instability, not a gravity no-go,
   full spectrum, nonflat exclusion, fifth-axiom result, percentage move, or
   audit verdict. Fresh N1--N8 and N5 land; no `review-loop` is used.
+
+## Block 43 Claim Status
+
+- Claim: for the supplied repaired flat Regge action, one coefficient-two
+  static tick row is an exact positive unit `h_tt` source, annihilates all
+  displacement Ward columns, and has a controlled fixed-average response on
+  five increasing odd spatial tori when the complete fifteen-edge equations
+  are solved.
+- Inventory: all `1,872,320` nonzero static modes have inertia `(9,2,4)`, no
+  fifth nonmetric zero, normalized quotient gap above `0.058`, maximum solve
+  residual `8.703e-12`, and maximum Ward residual below `1.5e-13`.
+- Green witness: the low-momentum residue gives `k^2 h_tt -> 2`, fixing
+  `1/(2pi)` without fitting; radius-eight differences increase monotonically
+  to `0.159087619` at `L=97`, relative error `0.000423`.
+- Adversarial control: the full-rank metric congruence's response `4075.851`
+  and gap `6.019e-5` are false; the complete edge block at the same momentum
+  has response `0.180976576` and gap `0.684834735`.
+- Evidence: source/input-pinned cache is `PASS=13 FAIL=0`; independent direct
+  Bloch reconstruction is `PASS=5 FAIL=0`; citation graph is `5,489/15,694`,
+  out-degree six; full conformance, commit, push, PR, and independent audit
+  remain pending.
+- Scope: bounded five-volume linear Ward/Green result and narrow unreduced
+  Euclidean semiboundedness boundary, not a gravity no-go, selected law,
+  all-`L` theorem, Lorentzian update, axiom edit, percentage move, or audit
+  verdict. Fresh N1--N8 and N5 land; no `review-loop` is used.

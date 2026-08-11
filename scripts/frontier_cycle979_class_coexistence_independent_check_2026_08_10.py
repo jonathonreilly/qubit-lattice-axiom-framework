@@ -28,21 +28,29 @@ AUDIT_INPUT_PATHS = (
     "scripts/frontier_cycle979_class_coexistence_born_requirement_2026_08_10.py",
     "outputs/class_coexistence_born_requirement_cycle979_receipt_2026_08_10.json",
     "logs/runner-cache/frontier_cycle979_class_coexistence_born_requirement_2026_08_10.txt",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
 )
 EXPECTED_INPUT_SHA256 = {
     AUDIT_INPUT_PATHS[0]:
-        "63b6d83c27d71aace583f44194e8b02bde48561c0196a35282b85b777c617af2",
+        "f75e3f95a021880f118d9a0cafabdd96013baa97a82f6fb988b8c43d9a01d9cf",
     AUDIT_INPUT_PATHS[1]:
-        "80f5abf81f07f0edc01cca8dd7f5bdd74c9a545edb1b6843cb6128ec24b0a25f",
+        "1b07e765e7afa527f8828b45678782b77ad4c7f225dc860680887b47211a82c1",
     AUDIT_INPUT_PATHS[2]:
-        "beba5262dfc73509bf986c99a246e64f221521db27d8e98312700f01c8f7380e",
+        "b60dda5ad268c032b4682afd0b42740b723c0ea3a8ddb0df479b89bb5838560c",
+    AUDIT_INPUT_PATHS[3]:
+        "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
 }
 PRIMARY_EXPECTED_FUNCTIONS = (
+    "load_pinned_cycle719_core",
     "declared_family",
     "program_class_census",
     "requirement_from_program_rows",
     "compatibility_certificate",
     "input_family_certificate",
+)
+EXPECTED_PINNED_CYCLE719_COMMIT = "39c74017b870c27c804e3992f2a11e90336476b2"
+EXPECTED_PINNED_CYCLE719_CORE_SHA256 = (
+    "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4"
 )
 PRIMARY_BLOCKED_IMPORTS = (
     "frontier_cycle975_input_distribution_dependence_law_2026_08_10",
@@ -148,15 +156,16 @@ def ast_literal_assignment(tree: ast.Module, name: str):
 
 
 def parse_cache(text: str) -> tuple[dict, str]:
+    if not text.startswith("===== runner cache v1 =====\n"):
+        return {}, ""
     headers = {}
-    body = []
-    for line in text.splitlines():
-        if line.startswith("# ") and ": " in line:
-            key, value = line[2:].split(": ", 1)
+    header_text, remainder = text.split("----- stdout -----\n", 1)
+    body, _stderr = remainder.split("\n----- stderr -----\n", 1)
+    for line in header_text.splitlines()[1:]:
+        if ": " in line:
+            key, value = line.split(": ", 1)
             headers[key] = value
-        elif not line.startswith("#"):
-            body.append(line)
-    return headers, "\n".join(body) + "\n"
+    return headers, body.rstrip() + "\n"
 
 
 def input_controls() -> dict:
@@ -182,6 +191,7 @@ def input_controls() -> dict:
         if isinstance(node, ast.ImportFrom) and node.module
     }
     primary_paths = ast_literal_assignment(tree, "AUDIT_INPUT_PATHS")
+    primary_pinned_commit = ast_literal_assignment(tree, "PINNED_CYCLE719_COMMIT")
     return {
         "literal_source_read_count": len(literal_paths),
         "literal_audit_input_paths": list(literal_paths),
@@ -196,6 +206,10 @@ def input_controls() -> dict:
         ),
         "primary_literal_input_count": len(primary_paths),
         "primary_literal_inputs": list(primary_paths),
+        "primary_pinned_cycle719_commit": primary_pinned_commit,
+        "primary_pinned_cycle719_commit_match": (
+            primary_pinned_commit == EXPECTED_PINNED_CYCLE719_COMMIT
+        ),
         "blocked_primary_imports": sorted(
             name for name in primary_imports
             if any(name.endswith(blocked) for blocked in PRIMARY_BLOCKED_IMPORTS)
@@ -279,6 +293,71 @@ def classify(descriptor: tuple) -> str:
     raise AssertionError((descriptor, relation))
 
 
+def permutation_sign(order: tuple[int, int, int]) -> int:
+    inversions = sum(
+        order[left] > order[right]
+        for left in range(3) for right in range(left + 1, 3)
+    )
+    return -1 if inversions % 2 else 1
+
+
+def proper_rotations() -> tuple:
+    return tuple(
+        (order, signs)
+        for order in permutations(range(3))
+        for signs in product((-1, 1), repeat=3)
+        if permutation_sign(order) * signs[0] * signs[1] * signs[2] == 1
+    )
+
+
+def rotate_descriptor(descriptor: tuple, rotation: tuple) -> tuple:
+    order, signs = rotation
+    wire_by_offset = {offset: wire for wire, offset in enumerate(WIRE_TO_OFFSET)}
+
+    def rotated_wire(wire: int) -> int:
+        offset = WIRE_TO_OFFSET[wire]
+        rotated = tuple(
+            signs[index] * offset[order[index]] for index in range(3)
+        )
+        return wire_by_offset[rotated]
+
+    wires = tuple(rotated_wire(wire) for wire in descriptor[1:])
+    if descriptor[0] == "TOF":
+        return (descriptor[0], *sorted(wires[:2]), wires[2])
+    return (descriptor[0], *wires)
+
+
+def covariance_certificate(rows: list[dict]) -> dict:
+    rotations = proper_rotations()
+    per_class = {}
+    for class_name in CLASS_ORDER:
+        descriptors = {
+            tuple(row["descriptor"])
+            for row in rows if class_name in row["classes"]
+        }
+        orbit = {
+            rotate_descriptor(min(descriptors), rotation) for rotation in rotations
+        }
+        per_class[class_name] = {
+            "member_count": len(descriptors),
+            "representative_orbit_count": len(orbit),
+            "closed_under_all_rotations": all(
+                {rotate_descriptor(row, rotation) for row in descriptors} == descriptors
+                for rotation in rotations
+            ),
+            "one_orbit": orbit == descriptors,
+        }
+    return {
+        "proper_rotation_count": len(rotations),
+        "per_class": per_class,
+        "uniform_neighbour_carrier_is_rotation_invariant": True,
+        "pass": len(rotations) == 24 and all(
+            row["closed_under_all_rotations"] and row["one_orbit"]
+            for row in per_class.values()
+        ),
+    }
+
+
 def independent_census() -> dict:
     rows = []
     for index, descriptor in enumerate(family()):
@@ -315,6 +394,7 @@ def independent_census() -> dict:
         class_name: [row["program"] for row in rows if class_name in row["classes"]]
         for class_name in CLASS_ORDER
     }
+    covariance = covariance_certificate(rows)
     return {
         "program_count": len(rows),
         "kind_counts": dict(sorted(Counter(row["gate_kind"] for row in rows).items())),
@@ -328,6 +408,7 @@ def independent_census() -> dict:
         "classless_programs": sum(not row["classes"] for row in rows),
         "multi_class_programs": sum(row["class_count"] > 1 for row in rows),
         "max_classes_per_program": max(row["class_count"] for row in rows),
+        "proper_cubic_covariance": covariance,
     }
 
 
@@ -392,6 +473,8 @@ def validate_a(receipt: dict, census: dict) -> bool:
         and observed["classless_programs"] == census["classless_programs"]
         and observed["multi_class_programs"] == census["multi_class_programs"]
         and observed["max_classes_per_program"] == census["max_classes_per_program"]
+        and observed["proper_cubic_covariance"] == census["proper_cubic_covariance"]
+        and census["proper_cubic_covariance"]["pass"]
     )
 
 
@@ -403,6 +486,10 @@ def validate_b(receipt: dict) -> bool:
     return bool(
         observed_b["licensed_requirement"] == derived
         and observed_b["cycle978_joint_requirement_status"] == expected_status
+        and observed_b["premise_id"] == "P_instance"
+        and observed_b["premise_status"]
+            == "supervisor-specified program-instance reading"
+        and "supervisor-specified program-instance reading" in observed_b["reading"]
         and "There is one fixed nearest-neighbor admissibility rule" in observed_b[
             "axiom_quote"
         ]
@@ -415,6 +502,9 @@ def validate_c(receipt: dict) -> bool:
     event_rows = receipt["certificates"]["E_CONTROLS"][
         "candidate_event_certificate"
     ]["candidates"]
+    pinned_cycle719 = receipt["certificates"]["E_CONTROLS"][
+        "pinned_cycle719_certificate"
+    ]
     independently_valid = [
         name for name in CANDIDATE_NAMES
         if event_rows[name]["normalizable"] and event_rows[name]["nonnegative"]
@@ -429,9 +519,19 @@ def validate_c(receipt: dict) -> bool:
         )
         for row in observed["exclusions"]
     )
+    all_program_kernels_checked = all(
+        len(row["program_class_checks"]) == 155
+        and all(
+            check["landed_truth_table_matches_its_program_kernel"]
+            for check in row["program_class_checks"]
+        )
+        for row in observed["per_candidate"].values()
+    )
     return bool(
         observed["licensed_requirement"]
             == receipt["certificates"]["B_REQUIREMENT_STATUS"]["licensed_requirement"]
+        and observed["licensed_requirement_scope"]
+            == "conditional on P_instance, the supervisor-specified program-instance reading"
         and observed["survivors"] == row_survivors == independently_valid
         and observed["survivors_over_5"] == f"{len(row_survivors)}/5"
         and observed["born_wall_status"]
@@ -439,6 +539,13 @@ def validate_c(receipt: dict) -> bool:
         and exclusions_have_witnesses
         and observed["nonuniform_p_one_quarter_survivors_over_5"]
             == observed["survivors_over_5"]
+        and observed["neighbour_variation_at_p_one_quarter"]
+        and observed["proper_cubic_covariance"]
+        and all_program_kernels_checked
+        and pinned_cycle719["commit"] == EXPECTED_PINNED_CYCLE719_COMMIT
+        and pinned_cycle719["core_sha256"] == EXPECTED_PINNED_CYCLE719_CORE_SHA256
+        and pinned_cycle719["loaded_from_immutable_git_archive"] is True
+        and pinned_cycle719["live_worktree_transitive_imports"] is False
     )
 
 
@@ -475,21 +582,33 @@ def validate_d(receipt: dict, independent_rows: list[dict]) -> bool:
 def validate_cache(receipt: dict, cache_text: str) -> bool:
     headers, body = parse_cache(cache_text)
     source_payload = (ROOT / AUDIT_INPUT_PATHS[0]).read_bytes()
-    receipt_payload = (
-        json.dumps(receipt, indent=2, sort_keys=True) + "\n"
-    ).encode()
-    input_sha = receipt["certificates"]["E_CONTROLS"]["sha256"]
-    fingerprint = sha256(compact(input_sha).encode()).hexdigest()
+    primary_tree = ast.parse(source_payload.decode("utf-8"))
+    primary_inputs = ast_literal_assignment(primary_tree, "AUDIT_INPUT_PATHS")
+    input_hasher = sha256()
+    input_hasher.update(b"runner-cache-input-fingerprint-v1\0")
+    for rel in primary_inputs:
+        rel_bytes = rel.encode("utf-8")
+        payload = (ROOT / rel).read_bytes()
+        input_hasher.update(len(rel_bytes).to_bytes(8, "big"))
+        input_hasher.update(rel_bytes)
+        input_hasher.update(len(payload).to_bytes(8, "big"))
+        input_hasher.update(payload)
+    fingerprint = input_hasher.hexdigest()
     return bool(
-        headers.get("runner-cache-v1") is None
-        and headers.get("source_sha256") == sha256(source_payload).hexdigest()
-        and headers.get("audit_input_fingerprint") == fingerprint
-        and headers.get("receipt_sha256") == sha256(receipt_payload).hexdigest()
-        and receipt["primary_source_sha256"] == headers.get("source_sha256")
+        headers.get("runner") == AUDIT_INPUT_PATHS[0]
+        and headers.get("runner_sha256") == sha256(source_payload).hexdigest()
+        and headers.get("input_fingerprint_sha256") == fingerprint
+        and headers.get("timeout_sec") == "1400"
+        and headers.get("exit_code") == "0"
+        and headers.get("status") == "ok"
+        and receipt["primary_source_sha256"] == headers.get("runner_sha256")
         and "A_COEXISTENCE PASS :: programs=155" in body
         and "multi_class=0" in body
-        and "licensed=PER_INSTANCE; cycle978_joint=OVER_STRONG" in body
-        and "survivors/5=5/5; born_wall=UNMOVED; exclusions=[]" in body
+        and "licensed=PER_INSTANCE; premise=P_instance(supervisor-specified);"
+            " cycle978_joint=OVER_STRONG" in body
+        and "survivors/5=5/5; premise=P_instance(supervisor-specified);"
+            " born_wall=UNMOVED" in body
+        and "neighbour_variation=True; proper_cubic=True; exclusions=[]" in body
         and "p_zero=1/4; survivors/5=5/5" in body
         and body.rstrip().endswith("TOTAL: PASS=5 FAIL=0")
     )
@@ -542,8 +661,8 @@ def corruption_probes(
     results["NONUNIFORM_TV_CORRUPTED"] = not validate_d(mutated, input_rows)
 
     mutated_cache = cache_text.replace(
-        "survivors/5=5/5; born_wall=UNMOVED",
-        "survivors/5=0/5; born_wall=MOVED",
+        "survivors/5=5/5; premise=P_instance(supervisor-specified); born_wall=UNMOVED",
+        "survivors/5=0/5; premise=P_instance(supervisor-specified); born_wall=MOVED",
     )
     results["CACHE_BORN_HEADLINE_CORRUPTED"] = not validate_cache(
         receipt, mutated_cache
@@ -570,12 +689,15 @@ def render_stdout(receipt: dict) -> str:
         "R1_INDEPENDENT_COEXISTENCE_CENSUS "
         + ("PASS" if checks["R1_INDEPENDENT_COEXISTENCE_CENSUS"] else "FAIL")
         + f" :: programs={census['program_count']}; class_counts={compact(census['class_counts'])};"
-        + f" classless={census['classless_programs']}; multi_class={census['multi_class_programs']}"
+        + f" classless={census['classless_programs']}; multi_class={census['multi_class_programs']};"
+        + f" proper_cubic={census['proper_cubic_covariance']['pass']}"
     )
     lines.append(
         "R2_REFUTE_REQUIREMENT_AND_BORN "
         + ("PASS" if checks["R2_REFUTE_REQUIREMENT_AND_BORN"] else "FAIL")
-        + " :: licensed=PER_INSTANCE; cycle978_joint=OVER_STRONG; survivors/5=5/5; exclusions=[]"
+        + " :: premise=P_instance(supervisor-specified); licensed=PER_INSTANCE;"
+        + " cycle978_joint=OVER_STRONG; survivors/5=5/5;"
+        + " neighbour_variation=true; proper_cubic=true; exclusions=[]"
     )
     lines.append(
         "R3_NONUNIFORM_INPUT " + ("PASS" if checks["R3_NONUNIFORM_INPUT"] else "FAIL")
@@ -622,6 +744,7 @@ def run() -> tuple[dict, str]:
         and controls["sha_pins_match"]
         and controls["primary_ast_functions_match"]
         and controls["primary_literal_input_count"] <= 6
+        and controls["primary_pinned_cycle719_commit_match"]
         and not controls["blocked_primary_imports"]
         and controls["primary_imported_or_executed"] is False
     )
@@ -657,10 +780,14 @@ def run() -> tuple[dict, str]:
             },
             "R1_INDEPENDENT_COEXISTENCE_CENSUS": census,
             "R2_REFUTE_REQUIREMENT_AND_BORN": {
+                "premise_id": "P_instance",
+                "premise_status": "supervisor-specified program-instance reading",
                 "licensed_requirement": derive_requirement(census["per_program"]),
                 "cycle978_joint_status": "OVER_STRONG",
                 "survivors": list(CANDIDATE_NAMES),
                 "survivors_over_5": "5/5",
+                "neighbour_variation_at_p_one_quarter": True,
+                "proper_cubic_covariance": census["proper_cubic_covariance"]["pass"],
                 "exclusions": [],
             },
             "R3_NONUNIFORM_INPUT": {

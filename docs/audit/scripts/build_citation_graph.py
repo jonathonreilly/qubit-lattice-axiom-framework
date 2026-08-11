@@ -386,6 +386,9 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
     "local_clock_relation_cycle869_bounded_theorem_note_2026-07-28": [
         "scripts/frontier_cycle869_relation_independent_check_2026_07_28.py",
     ],
+    "class_coexistence_born_requirement_cycle979_bounded_theorem_note_2026-08-10": [
+        "scripts/frontier_cycle979_class_coexistence_independent_check_2026_08_10.py",
+    ],
     "general_n_census_law_cycle870_bounded_theorem_note_2026-07-28": [
         "scripts/frontier_cycle870_census_independent_check_2026_07_28.py",
     ],

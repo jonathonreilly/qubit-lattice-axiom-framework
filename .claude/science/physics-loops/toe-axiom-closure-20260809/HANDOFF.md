@@ -1424,3 +1424,26 @@ conformance is `31ec839457`. PR #6107 is open, mergeable, and
 `CLEAN`, stacked exactly on Block-32 delivery head `9cf533f908`. Independent
 audit remains required. No canonical edit, percentage move, audit verdict, or
 `review-loop` occurs.
+
+## Block 34 Joint Transfer / Same-Functional Response Handoff
+
+Do not carry Block 33's arbitrary sector prior or independently supplied
+metric stiffness as an algebraic necessity. A declared all-null quotient plus
+one positive joint geometry/Record transfer fixes stationary geometry odds,
+all fifteen actual-edge source components, a rank-15 susceptibility, a rank-10
+metric kernel, and unique linear responses from the same Perron functional.
+
+Do carry the selection boundary. The shared-null physical license, geometry
+kernel, and Record-to-metric coupling are supplied. Replacing persistence two
+by three preserves the bounded structural conditions while changing odds,
+stationary law, source, Hessian, and metric response.
+
+The next object must localize geometry on all six proper-cubic incidences,
+solve one nonlinear nonuniform background, and derive every connected,
+contact, mixed/source, multiplier, generator-connection, and tadpole term from
+the same joint action before Lorentzian evolution. Primary cache is
+`PASS=22 FAIL=0` in `3.4 s`; independent reconstruction is `PASS=5 FAIL=0`;
+all twenty-two isolated forced-false runs trip one named check. Citation
+registration is `5,480/15,661`, with out-degree three and twenty-two
+resolved helpers. Conformance, delivery, and independent audit are pending. No
+canonical edit, percentage move, audit verdict, or `review-loop` occurs.

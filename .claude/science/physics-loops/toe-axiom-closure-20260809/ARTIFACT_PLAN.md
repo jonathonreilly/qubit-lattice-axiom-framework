@@ -749,3 +749,28 @@ complete conditional nonlinear compact solution:
   stacked claims; science commit `7d8f457b48`, campaign conformance
   `31ec839457`; PR #6107 is open, mergeable, and `CLEAN`, stacked on exact
   Block-32 delivery head `9cf533f908`; independent audit remains required
+
+## Block 34 — Null-Anchored Joint Geometry/Record Perron Response
+
+- theorem note:
+  `docs/ADMISSIBILITY_NULL_ANCHORED_JOINT_GEOMETRY_RECORD_TRANSFER_PERRON_RESPONSE_SELECTION_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md`
+- runner/cache:
+  `scripts/admissibility_null_anchored_joint_geometry_record_transfer_perron_response_selection_boundary_2026_08_10.py` and its source/input-pinned cache
+- packet scope: exact all-null sector quotient, two positive symmetric geometry
+  kernels, positive 1,024-state joint transfers, unique joint Perron messages,
+  every-length overlap projectivity, internally selected geometry odds and
+  positive flip rates, exact fifteen-edge source gradient, positive rank-15
+  susceptibility, positive rank-10 metric pullback, unique same-functional
+  edge/metric Newton response, alternate-law discriminator, N1--N8, and
+  narrowed downstream-law versus axiom interface
+- exclusions: physical equality of all-null actions, derived geometry-kernel
+  values or Record-to-metric coupling, a locally varying proper-cubic geometry
+  field, infinite-transverse/full-`Z^3` phase, nonlinear stationary field
+  equation, complete Ward connection, Lorentzian dynamics, canonical edits,
+  percentage movement, audit verdicts, and `review-loop`
+- current evidence: source/input-pinned cache `PASS=22 FAIL=0` in `3.4 s`;
+  independent reconstruction `PASS=5 FAIL=0`; twenty-two isolated fresh-
+  process forced failures each trip exactly one named check; graph registration
+  `5,480/15,661`, out-degree three, with twenty-two resolved helpers; direct/
+  stacked conformance, changed evidence, commits, delivery, and independent
+  audit pending

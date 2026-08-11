@@ -1,0 +1,64 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_null_anchored_joint_geometry_record_transfer_perron_response_selection_boundary_2026_08_10.py
+runner_sha256: 8ed1d94375ef86bf59c948e08ffb592f46f92b4899a18fb6a73e3919f35fbe8e
+input_fingerprint_sha256: a88840d0ea303ae8052fdf509f843a6f060367b2c06fc7140a1a10869c490796
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 3.43
+status: ok
+----- stdout -----
+external_scientific_inputs: none; construction is repository-local
+constructive_closure: one supplied null-anchored joint transfer selects conditional odds and same-functional response
+selection_boundary: geometry kernel, common anchor license, metric coupling, full-Z3 phase, Ward, and Lorentzian update remain underived
+[PASS] axiom-parent-anchor-boundary: the axioms leave extensional values and transfer content open, Block 33 leaves absolute normalization open, and the inherited null anchor is conditional on a registered positive family
+[PASS] note-contract: the note separates a sufficient finite-width joint law from axiom derivation, full-lattice phase, physical gravity, Ward, and Lorentzian closure and carries N1--N8
+[PASS] all-null-sector-anchor: dividing by each all-null transition fixes both sector representatives at unit null weight
+       maximum anchor error=0.000e+00
+[PASS] sector-scale-gauge-quotient: arbitrary positive whole-sector scales cancel exactly under the declared all-null quotient
+       maximum relative quotient error=2.022e-16
+[PASS] positive-symmetric-geometry-kernels: both supplied geometry kernels are positive, symmetric, and have equal row sums within each law
+       kernel failures=0
+[PASS] positive-joint-geometry-record-transfer: each anchored sector pair and positive geometry kernel form one strictly positive 1024-by-1024 transfer
+       minimum entries=9.179e-18,6.119e-18
+[PASS] unique-joint-perron-laws: strict positivity supplies one unique normalized Perron boundary pair for each complete joint law
+       maximum residual=1.595e-15
+[PASS] joint-every-length-overlap-gluing: the joint Perron endpoints normalize and project every finite longitudinal interval
+       normalization=1.266e-14; endpoint=7.337e-15
+[PASS] joint-stationary-markov-control: the joint Doob transitions are stochastic and preserve their stationary laws
+       row=8.438e-15; stationarity=4.743e-15
+[PASS] joint-law-selects-positive-geometry-odds: each complete joint transfer fixes positive normalized geometry masses and odds without an external mixture prior
+       odds=0.140782005,0.072854022
+[PASS] positive-geometry-transition-control: both stationary joint laws have positive longitudinal geometry-flip rate rather than disconnected sector mixtures
+       flip rates=0.171858962,0.092349920
+[PASS] harmless-common-action-zero: one common positive scale of the complete joint transfer is the only tested normalization gauge and leaves the joint law unchanged
+       maximum transition error=2.220e-16
+[PASS] geometry-kernel-values-remain-law-content: two equally positive symmetric geometry kernels select distinct stationary laws and geometry odds
+       stationary TV=0.055501590; odds=[0.14078200516213374, 0.07285402220810533]
+[PASS] same-leading-functional-source-gradient: the derivative of log Perron eigenvalue matches all fifteen stationary actual-edge source expectations
+       maximum gradient error=3.878e-11
+[PASS] same-functional-susceptibility-symmetry: the finite-difference derivative of the exact source gradient is symmetric within tolerance
+       maximum antisymmetric norm=6.243e-10
+[PASS] full-edge-response-rank: the same joint leading functional supplies a positive full-rank fifteen-edge susceptibility
+       ranks=[15, 15]; minimum eigenvalues=[0.0006830046811285912, 0.000731545839295121]
+[PASS] full-metric-response-rank: pullback through the actual-edge metric map gives a positive full-rank ten-channel response kernel
+       ranks=[10, 10]; minimum eigenvalues=[0.003941172245529783, 0.003993107872173655]
+[PASS] positive-joint-stationary-metric-stress: the jointly selected actual-edge sources retain positive Euclidean metric stress
+       minimum stress eigenvalue=0.837633
+[PASS] unique-same-functional-linear-response: each positive Hessian fixes unique edge and metric Newton responses to its own selected source
+       edge equation=3.639e-13; metric equation=5.667e-14
+[PASS] response-selection-is-conditional-on-law: changing only the allowed geometry persistence kernel changes source, susceptibility, and selected metric response
+       source=0.005338853; Hessian=0.004997454; response=8.061079
+[PASS] finite-width-full-z3-ward-lorentzian-boundary: the joint cylinder law is not a full-Z3 phase, complete differentiated Ward identity, or Lorentzian update
+[PASS] minimal-law-or-axiom-delta: the remaining interface is the physical joint geometry kernel, shared null-anchor license, Record-to-metric coupling, full-lattice extension, Ward connection, and causal update
+N5_CERTIFICATE: closure=a supplied null-anchored positive joint transfer fixes geometry odds and same-functional edge/metric response
+N5_CERTIFICATE: gauge=sector scales cancel before joining; only one harmless common full-transfer scale remains
+N5_CERTIFICATE: selection=two symmetric positive geometry kernels give distinct odds and responses under the same structural axioms
+N5_CERTIFICATE: boundary=physical kernel values, anchor license, metric coupling, full-Z3 phase, Ward connection, and Lorentzian update remain open
+per_site: one null plus fifteen actual-edge labels inherited exactly
+per_slice: two geometry labels times 512 occupancy states equals 1024 joint states
+per_interval: every finite longitudinal interval by one joint Perron endpoint identity
+full_lattice: no infinite-transverse, physical action, full Ward, or causal dynamics theorem is claimed
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

@@ -698,3 +698,21 @@ transfer and its geometry odds/Ward connection are now the indivisible target.
 Boundary iteration is no longer the wall. Absolute cross-sector action
 normalization, full-lattice phase selection, and the same-law Ward response
 are now one indivisible target.
+
+## Block 34 Joint Transfer / Same-Functional Response Route Comparison
+
+| Route | Exact object | Outcome | Decision |
+|---|---|---|---|
+| all-null sector quotient | `K_g/K_g(0,0)` | cancels arbitrary positive raw sector scales exactly | retain as a sufficient shared-null convention; physical cross-geometry license remains open |
+| positive joint transfer | two anchored 512-state sectors plus one positive symmetric geometry kernel | one strictly positive 1,024-state law and unique Perron pair | retain; external mixture prior is removed inside each complete law |
+| geometry transition | positive offdiagonal entries of `B` | positive stationary flip rates | retain as a connected joint-law control, not local full-lattice geometry |
+| same-functional source | derivative of `log Lambda(h)` | matches fifteen stationary actual-edge expectations | retain as coherent source provenance |
+| same-functional response | Hessian of `log Lambda(h)` and metric pullback | positive ranks 15 and 10; unique Newton solves | retain as a full linear-response construction, not nonlinear gravity |
+| alternate symmetric kernel | persistence two versus three | changes odds, source, Hessian, and response | identify extensional geometry-kernel selection as open |
+| local proper-cubic geometry field plus Ward law | one rule on all six incidences and one nonuniform stationary solution | not constructed | highest-priority gravity/axiom-interface target |
+| full-`Z^3` phase | increasing-width compatible joint specification | not constructed | required beyond the cylinder |
+| Lorentzian update | causal permanent-Record joint transfer and stability | not constructed | required physical endpoint |
+
+The algebraic response branch is no longer the leading wall conditional on a
+joint law. Physical selection, localization, nonlinear stationarity, and the
+complete Ward connection are now the indivisible target.

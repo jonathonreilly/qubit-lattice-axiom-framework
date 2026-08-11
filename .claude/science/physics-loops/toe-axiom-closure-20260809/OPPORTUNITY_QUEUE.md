@@ -207,3 +207,17 @@ produce geometry odds plus the Ward connection from that same law.
 Efficiency rule: stop generating additional finite-width Perron examples.
 The next science object must bind common sector normalization, the
 full-lattice phase, and the differentiated gravity response in the same law.
+
+## Post-Block-34 Priority Refresh
+
+| Rank | Target | Exact next witness | Why now |
+|---:|---|---|---|
+| 1 | local proper-cubic joint geometry/Record Ward law | promote the slice geometry bit to a local field on all six incidences, solve one nonlinear nonuniform stationary background, and derive connected, contact, mixed/source, multiplier, generator-connection, and tadpole terms | common normalization, odds, source, and full-rank linear response now coexist in one supplied law; locality and the complete Ward connection are the shortest remaining gravity test |
+| 2 | physical kernel/anchor/coupling derivation or narrow registration | derive the shared-null action relation, geometry transition values, and Record-to-metric map from current structures, or state the sufficient unadopted interface | the alternate symmetric kernel changes odds and response, proving that these extensional data remain physically unselected |
+| 3 | increasing-width/full-`Z^3` phase | construct compatible local joint laws at increasing transverse width and prove a selected limit/phase | the current joint transfer is still a width-three cylinder with one slice-global geometry label |
+| 4 | constituent-causal Lorentzian closure | extend the selected local joint law to timelike permanent Records and certify causal nonlinear quotient stability | positive Euclidean response does not supply a cone or update |
+| 5 | independent TOE roots and stack reconciliation | preserve PR #6096, then return to Born/history and operational selectors | gravity now has one sharply localized local-law/Ward bottleneck |
+
+Efficiency rule: do not add another slice-global kernel or independent
+stiffness. The next candidate must localize geometry and derive its nonlinear
+stationarity and Ward connection from the same joint functional.

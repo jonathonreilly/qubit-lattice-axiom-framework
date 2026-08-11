@@ -1024,3 +1024,39 @@ independent_audit_required: true
   #6107 is open, mergeable, and `CLEAN`, stacked exactly on Block-32 delivery
   head `9cf533f908`. Independent audit remains required. No canonical edit,
   fixed percentage move, audit verdict, or `review-loop`.
+
+## Block 34 Joint Transfer / Same-Functional Response Certificate
+
+- Claim type: `bounded_theorem`.
+- Anchor: both raw sector transfers are quotiented by their all-null transition;
+  arbitrary positive pre-anchor sector scales cancel below `2.1e-16` relative.
+- Joint carrier: each positive symmetric two-state geometry kernel combines
+  the two 512-state sectors into one strictly positive 1,024-state transfer.
+- Joint gluing: unique left/right Perron messages normalize and endpoint-
+  project every finite longitudinal interval; maximum residual is below
+  `1.6e-15`.
+- Geometry selection: odds are `0.140782005` and `0.072854022`; positive flip
+  rates are `0.171858962` and `0.092349920`.
+- Alternate-law control: stationary TV is `0.055501590` for the two equally
+  positive symmetric geometry kernels.
+- Source derivative: all fifteen positive actual-edge sources equal the
+  derivative of the same log Perron eigenvalue within `3.9e-11`.
+- Response: edge susceptibility is positive rank 15 with minimum eigenvalue
+  at least `0.000683005`; its metric pullback is positive rank 10 with minimum
+  eigenvalue at least `0.003941172`.
+- Same-functional solve: unique edge and metric Newton responses solve below
+  `3.7e-13` and `5.7e-14`; alternate-kernel metric responses separate by
+  `8.061079`.
+- Governance: physical shared-null licensing, geometry-kernel values, metric
+  coupling, local/full-lattice phase, nonlinear field equation, full Ward law,
+  and Lorentzian dynamics remain unselected. No fifth axiom is proved
+  necessary.
+- Runner/cache: source/input pinned, `PASS=22 FAIL=0` in `3.4 s`.
+- Independent reconstruction: `PASS=5 FAIL=0`.
+- Mutation sensitivity: twenty-two isolated fresh-process forced failures each
+  exit nonzero at exactly one intended named check (`PASS=22 FAIL=0`).
+- Citation registration: `5,480` nodes / `15,661` edges; the new node has
+  out-degree three and twenty-two resolved helper runners.
+- Direct/stacked conformance, changed evidence, commits, delivery, and
+  independent audit are pending. No canonical edit, fixed percentage move,
+  audit verdict, or `review-loop`.

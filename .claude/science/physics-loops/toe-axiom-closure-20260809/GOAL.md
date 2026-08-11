@@ -1100,3 +1100,26 @@ regions whose selected full-`Z^3` phase, source, odds, and differentiated Ward
 response all come from the same action, followed by Lorentzian evolution. No
 fifth axiom is proved necessary. No canonical axiom or fixed percentage is
 changed.
+
+## Block 34 Target And Disposition
+
+Block 34 asks whether putting geometry and Records in one normalized transfer
+can remove the phase-prior and response-branch ambiguity left by Block 33.
+
+The constructive answer is yes on the supplied cylinder. Quotient each sector
+by its all-null transition and connect both sectors with one positive symmetric
+geometry kernel. The resulting 1,024-state transfer has one positive Perron
+law, positive geometry transitions, definite stationary odds, an exact
+fifteen-edge source gradient, a positive rank-15 susceptibility, and a
+positive rank-10 metric pullback. Its unique linear response is the Hessian of
+the same leading functional rather than an independently fitted stiffness.
+
+The answer is not autonomous physics. Two equally positive symmetric kernels
+select odds `0.140782005` and `0.072854022` and metric responses separated by
+`8.061079`. The current axioms do not select either kernel, license equality of
+pure-geometry all-null actions, or derive the Record-to-metric coupling.
+
+The next target is a local geometry field using the same rule on all six
+proper-cubic incidences, one nonlinear nonuniform stationary solution, and the
+complete differentiated Ward identity from that same joint law. No fifth
+axiom is proved necessary. No canonical axiom or fixed percentage is changed.

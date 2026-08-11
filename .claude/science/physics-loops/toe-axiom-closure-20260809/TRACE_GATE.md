@@ -570,3 +570,16 @@ law must supply absolute cross-sector action normalization, a selected
 full-`Z^3` phase, the nonuniform complete Ward connection, and a Lorentzian
 update together. Candidate wording is unadopted; fixed TOE percentages and
 canonical axioms remain unchanged. No `review-loop` is used.
+
+Block 34 combines the separately normalized sectors into one positive
+null-anchored joint geometry/Record transfer. Each supplied geometry kernel
+has one Perron law that selects stationary geometry odds, the actual-edge
+source gradient, a rank-15 susceptibility, and a rank-10 metric linear
+response from the same leading functional.
+
+Reachability remains `upstream_support`, not direct TOE closure. A second
+equally positive symmetric kernel changes odds and response, and the
+shared-null physical license, local geometry field, full-`Z^3` phase,
+nonlinear stationary equation, complete Ward connection, and Lorentzian
+update remain underived. Candidate wording is unadopted; fixed TOE percentages
+and canonical axioms remain unchanged. No `review-loop` is used.

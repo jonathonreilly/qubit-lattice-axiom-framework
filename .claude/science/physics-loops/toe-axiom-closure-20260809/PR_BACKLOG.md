@@ -642,3 +642,17 @@ is open, mergeable, and `CLEAN`, stacked exactly on Block-32 delivery head
 `9cf533f908`. PR #6096 remains a complementary proper-length sibling requiring
 later explicit reconciliation. Independent audit remains required. No
 canonical edit, percentage move, audit verdict, or `review-loop` is used.
+
+Block 34 is local on branch
+`physics-loop/toe-axiom-closure-block34-joint-geometry-transfer-20260810`,
+stacked on exact Block-33 delivery head `2337074c89`. Its distinct review
+object is the all-null sector quotient, positive symmetric geometry kernels,
+positive 1,024-state joint transfer, unique joint Perron gluing, selected
+geometry odds/flip rate, exact source gradient, rank-15 edge susceptibility,
+rank-10 metric response, and alternate-law selection boundary. Primary
+source/input-pinned cache is `PASS=22 FAIL=0` in `3.4 s`; independent
+reconstruction is `PASS=5 FAIL=0`; all twenty-two isolated forced-false runs
+fail one named check. Citation registration is `5,480/15,661`, with out-degree
+three and twenty-two helpers. Direct conformance, exact stack, changed
+evidence, commits, PR, and independent audit are pending. No canonical edit,
+percentage move, audit verdict, or `review-loop` is used.

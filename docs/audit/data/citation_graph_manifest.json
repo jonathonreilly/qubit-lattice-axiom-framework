@@ -1,6 +1,6 @@
 {
- "edge_count": 15658,
- "node_count": 5479,
+ "edge_count": 15661,
+ "node_count": 5480,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -428,6 +428,10 @@
   },
   "admissibility_normalized_family_additive_zero_contact_nonidentifiability_boundary_bounded_theorem_note_2026-08-10": {
    "deps_hash": "4b8899818bd8",
+   "out_degree": 3
+  },
+  "admissibility_null_anchored_joint_geometry_record_transfer_perron_response_selection_boundary_bounded_theorem_note_2026-08-10": {
+   "deps_hash": "2221949d9fa1",
    "out_degree": 3
   },
   "admissibility_null_record_log_odds_action_representative_anchor_boundary_bounded_theorem_note_2026-08-10": {

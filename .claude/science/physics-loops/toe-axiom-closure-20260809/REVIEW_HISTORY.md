@@ -1784,3 +1784,33 @@ instance or Fourier census.
   #6107 is open, mergeable, and `CLEAN`, stacked exactly on Block-32 delivery
   head `9cf533f908`. Independent audit remains required. No canonical axiom,
   fixed percentage, audit verdict, or `review-loop` is changed.
+
+## Block 34 Construction Record
+
+- Quotiented both Block-33 sector transfers by their all-null transitions;
+  arbitrary pre-anchor sector scales cancel below `2.1e-16` relative.
+- Coupled the anchored sectors with positive symmetric persistence-two and
+  persistence-three geometry kernels into positive 1,024-state transfers.
+- Proved unique joint Perron messages and every-length interval projectivity;
+  maximum residual is below `1.6e-15`.
+- Selected positive geometry odds `0.140782005` and `0.072854022` with flip
+  rates `0.171858962` and `0.092349920` inside the two complete laws.
+- Reconstructed all fifteen stationary actual-edge sources as derivatives of
+  the same log Perron eigenvalue within `3.9e-11`.
+- Obtained positive rank-15 susceptibilities and positive rank-10 metric
+  pullbacks, with minimum eigenvalues `0.000683005` and `0.003941172`.
+- Solved the unique same-functional edge and metric Newton responses; direct
+  residuals are below `3.7e-13` and `5.7e-14`.
+- Demonstrated alternate-law stationary TV `0.055501590` and metric-response
+  separation `8.061079` under the same bounded structural conditions.
+- Applied N1--N8 and preserved pure-geometry-anchor, local-field,
+  increasing-width, full-lattice, nonlinear, complete-Ward, and Lorentzian
+  routes.
+- Primary source/input-pinned cache is `PASS=22 FAIL=0` in `3.4 s`.
+- Independent reconstruction returns `PASS=5 FAIL=0`; twenty-two isolated
+  fresh-process forced failures each fail exactly one named check.
+- Citation registration is `5,480` nodes / `15,661` edges; the new node has
+  out-degree three and twenty-two resolved helper runners.
+- Conformance, exact stack, changed evidence, commits, delivery, and
+  independent audit remain pending. No canonical axiom, fixed percentage,
+  audit verdict, or `review-loop` is changed.

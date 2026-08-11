@@ -652,3 +652,20 @@ finite-width Perron phase is not a full-`Z^3` Gibbs phase; the metric-response
 control is not a curved/open field equation. No external science, observed
 constant, canonical edit, percentage move, audit verdict, or `review-loop` is
 imported.
+
+## Block 34 Assumptions And Imports
+
+Block 34 imports Block 33's two positive occupancy transfers, exact
+sixteen-state actual-label lift, Perron machinery, source/stress compiler, and
+metric map. It also imports Block 26's conditional null-relative action-
+representative theorem, without importing a physical license to identify the
+all-null action across geometry sectors.
+
+The all-null transfer quotient, two symmetric positive geometry kernels,
+slice-global two-state geometry label, target-sector transfer orientation,
+exponential actual-edge fields, inherited metric pullback, central-difference
+step, and linear Newton response are supplied bounded data. A joint cylinder
+law is not a local geometry field on all six incidences, a selected full-
+`Z^3` phase, nonlinear stationary gravity equation, complete Ward connection,
+or Lorentzian update. No external science, observed constant, canonical edit,
+percentage move, audit verdict, or `review-loop` is imported.

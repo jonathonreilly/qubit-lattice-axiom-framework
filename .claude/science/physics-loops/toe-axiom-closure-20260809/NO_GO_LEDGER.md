@@ -274,3 +274,15 @@ geometry-dependent transfer/action could select the full-lattice phase, odds,
 and response simultaneously. The bounded negative is only that Perron
 boundary uniqueness conditional on a supplied transfer does not already do
 so.
+
+## Block 34 Joint-Transfer / Extensional-Selection Boundary
+
+| Scoped claim | Exact/bounded evidence | N1--N8 disposition | Forbidden promotion | Live routes |
+|---|---|---|---|---|
+| one supplied null-anchored positive joint transfer selects finite-width geometry odds and same-functional linear response, while structural positivity and symmetry do not select its geometry-kernel values | two positive symmetric kernels; one 1,024-state Perron law each; odds `0.140782005/0.072854022`; stationary TV `0.055501590`; source-gradient error below `3.9e-11`; edge/metric ranks `15/10`; response separation `8.061079` | pass only for the width-three quotient, declared all-null quotient, slice-global geometry label, two named kernels, inherited metric coupling, and linear response | do not infer physical shared-null action equality, a universal kernel no-go, full-`Z^3` phase, nonlinear gravity equation, Ward closure, Lorentzian dynamics, or axiom necessity | nonzero pure-geometry null action; local geometry field; alternate kernels; increasing widths; full-lattice phase; nonlinear stationary solve; complete Ward connection; causal update |
+
+The strongest steelman advances: promote the geometry label to a local field,
+derive its pure-geometry term and metric coupling, solve one nonuniform
+background, and differentiate the exact symmetry. The bounded negative is
+only that the current structural axioms do not choose between the two executed
+joint laws.

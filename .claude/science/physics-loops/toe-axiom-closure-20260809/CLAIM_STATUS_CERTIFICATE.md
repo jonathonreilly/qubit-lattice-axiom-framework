@@ -837,5 +837,14 @@ independent_audit_required: true
   exit nonzero at exactly one intended named check (`PASS=13 FAIL=0`).
 - Citation graph: `5,475` nodes / `15,641` edges; the new node has
   out-degree five and seventeen resolved helper runners.
-- Direct/stacked conformance, commits, and delivery are pending. No canonical
-  edit, percentage move, audit verdict, or `review-loop`.
+- Direct vocabulary, premise-purity, model-normalization, cache, syntax/YAML,
+  whitespace, strict-lint, graph/link/invariant, claim-typing, N1--N8, and
+  canonical-nonmutation gates pass.
+- The exact stack seeds `4,813` rows and classifies `3,691` runners, then
+  reproduces only the inherited stage-7 dependency-policy epoch mismatch. A
+  controlled five-file current-main overlay passes all 18 stages and finalizes
+  checkpoint `151215f2fc34`.
+- Changed-evidence readiness is clean for Block 29 alone (`1/1`) and all 29
+  stacked claims (`29/29`), with zero failures and zero control failures.
+- Science commit: `a5df13590f`. Delivery is pending. No canonical edit,
+  percentage move, audit verdict, or `review-loop`.

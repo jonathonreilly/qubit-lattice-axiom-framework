@@ -552,6 +552,10 @@ constructive escape. Primary source/input-pinned cache is
 `PASS=13 FAIL=0` in `28.67 s`; independent reconstruction is
 `PASS=5 FAIL=0`; all thirteen isolated forced-false runs fail exactly one
 named check; graph registration is `5,475/15,641`, with out-degree five and
-seventeen helpers. Direct conformance, stacked pipeline, changed-evidence
-readiness, commits, PR, and independent audit are pending. No canonical edit,
-percentage move, audit verdict, or `review-loop` is used.
+seventeen helpers. Direct conformance passes. The exact stack reaches only
+the inherited stage-7 dependency-policy epoch mismatch after `4,813` rows /
+`3,691` runners; the controlled five-file current-main overlay passes all 18
+stages at checkpoint `151215f2fc34`. Changed evidence is clean for `1/1`
+Block-29 and `29/29` stacked claims. Science commit is `a5df13590f`; push,
+PR, and independent audit are pending. No canonical edit, percentage move,
+audit verdict, or `review-loop` is used.

@@ -842,4 +842,6 @@ complete conditional nonlinear compact solution:
   dependency-policy epoch mismatch; the controlled five-file current-main
   overlay passes all 18 stages at checkpoint `95e0dd08fa5d`. Changed evidence
   is clean for `1/1` Block-36 and `36/36` stacked claims. Science commit is
-  `bc559c44e7`; stacked-PR delivery and independent audit remain pending
+  `bc559c44e7`; campaign conformance is `8008591e79`. PR #6118 is open,
+  mergeable, and `CLEAN`, stacked exactly on Block-35 delivery head
+  `6882d2eb7e`; independent audit remains required

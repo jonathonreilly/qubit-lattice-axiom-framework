@@ -1159,7 +1159,9 @@ independent_audit_required: true
   five-file current-main overlay passes all 18 stages at checkpoint
   `95e0dd08fa5d`. Changed evidence is ready for Block 36 alone (`1/1`) and all
   36 stacked claims (`36/36`), with zero failures or control failures. Science
-  commit is `bc559c44e7`; independent audit remains required.
+  commit is `bc559c44e7`; campaign conformance is `8008591e79`. PR #6118 is
+  open, mergeable, and `CLEAN`, stacked exactly on Block-35 delivery head
+  `6882d2eb7e`; independent audit remains required.
 - Governance: this is supplied finite existence/bookkeeping plus a narrow
   finite-label negative. It is not a Record derivation, gravitational action,
   phase, diffeomorphism/Einstein theorem, Lorentz theorem, axiom-necessity

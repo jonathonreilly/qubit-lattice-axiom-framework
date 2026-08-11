@@ -1506,7 +1506,9 @@ The exact stack seeds 4,820 rows and classifies 3,698 runners before only the
 inherited stage-7 policy-epoch stop; the controlled five-file current-main
 overlay passes all 18 stages at checkpoint `95e0dd08fa5d`. Changed evidence is
 clean for Block 36 (`1/1`) and the complete stack (`36/36`). Science commit is
-`bc559c44e7`; stacked-PR delivery and independent audit remain pending.
+`bc559c44e7`; campaign conformance is `8008591e79`. PR #6118 is open,
+mergeable, and `CLEAN`, stacked exactly on Block-35 delivery head
+`6882d2eb7e`; independent audit remains required.
 
 The significant scientific gain is diagnostic. The requested fully
 stationary identity cannot also have a nonzero total generator-connection

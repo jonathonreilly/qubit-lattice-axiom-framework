@@ -1,6 +1,6 @@
 {
- "edge_count": 15485,
- "node_count": 5448,
+ "edge_count": 15486,
+ "node_count": 5449,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -13502,9 +13502,13 @@
    "deps_hash": "72195f0ab7ce",
    "out_degree": 5
   },
+  "patch_uniformity_chart_role_labeling_convention_cycle986_meta_note_2026-08-11": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "patch_uniformity_star_gluing_induction_cycle986_bounded_theorem_note_2026-08-11": {
-   "deps_hash": "165b6a5a21bb",
-   "out_degree": 2
+   "deps_hash": "65ae3c1c43b8",
+   "out_degree": 3
   },
   "patched_stationary_system_pl_s3_theorem_note_2026-05-03": {
    "deps_hash": "30c9889a1997",

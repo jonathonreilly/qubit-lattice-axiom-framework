@@ -393,6 +393,33 @@ class AxiomSourceEditTest(FixtureTestCase):
 
 
 class PrimitiveSourceEditTest(FixtureTestCase):
+    def assert_fenced_heading_is_not_structural(self, fence: str) -> None:
+        text = read(self.root, self.kinetic_rel)
+        next_heading = "## Why It Is A Primitive"
+        inserted = (
+            f"{fence}text\n"
+            "## Fenced Example Heading\n"
+            "FENCED_CODE_SENTINEL\n"
+            f"{fence}\n\n"
+            "VISIBLE_AFTER_FENCE_SENTINEL\n\n"
+            + next_heading
+        )
+        revised = text.replace(next_heading, inserted, 1)
+        self.assertNotEqual(text, revised, "test edit did not apply")
+        write(self.root, self.kinetic_rel, revised)
+
+        self.assertEqual(run_generator(self.root, check=True)[0], 1)
+        self.assertEqual(run_generator(self.root, check=False)[0], 0)
+        self.assertInEveryTarget("FENCED_CODE_SENTINEL")
+        self.assertInEveryTarget("VISIBLE_AFTER_FENCE_SENTINEL")
+        self.assertEqual(run_generator(self.root, check=True)[0], 0)
+
+    def test_backtick_fenced_heading_is_not_structural(self):
+        self.assert_fenced_heading_is_not_structural("```")
+
+    def test_tilde_fenced_heading_is_not_structural(self):
+        self.assert_fenced_heading_is_not_structural("~~~")
+
     def test_nested_primitive_grant_and_boundary_propagate(self):
         text = read(self.root, self.kinetic_rel)
         grant_anchor = f"## {gen.PRIMITIVE_GRANT_SECTION}"

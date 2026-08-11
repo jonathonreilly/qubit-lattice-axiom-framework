@@ -131,9 +131,44 @@ class SourceDrift(RuntimeError):
 # --------------------------------------------------------------------------
 
 BULLET_RE = re.compile(r"^\s*[-*]\s+(.*)$")
-FENCE_RE = re.compile(r"^\s*```")
+FENCE_OPEN_RE = re.compile(r"^ {0,3}(?P<fence>`{3,}|~{3,})(?P<info>.*)$")
 LINK_RE = re.compile(r"\[([^\]\[]+)\]\([^()\s]*\)")
 HTML_COMMENT_RE = re.compile(r"<!--.*?-->", re.DOTALL)
+
+
+@dataclass
+class FenceScanner:
+    """Stateful CommonMark backtick/tilde fence recognizer."""
+
+    marker: str | None = None
+    width: int = 0
+
+    @property
+    def active(self) -> bool:
+        return self.marker is not None
+
+    def consume(self, line: str) -> str | None:
+        """Consume one line and return ``open``/``close`` at a boundary."""
+        if self.marker is not None:
+            indent = len(line) - len(line.lstrip(" "))
+            candidate = line[indent:] if indent <= 3 else ""
+            run = len(candidate) - len(candidate.lstrip(self.marker))
+            if run >= self.width and not candidate[run:].strip():
+                self.marker = None
+                self.width = 0
+                return "close"
+            return None
+
+        match = FENCE_OPEN_RE.match(line)
+        if match:
+            fence = match.group("fence")
+            # CommonMark forbids backticks in a backtick fence's info string.
+            if fence[0] == "`" and "`" in match.group("info"):
+                return None
+            self.marker = fence[0]
+            self.width = len(fence)
+            return "open"
+        return None
 
 
 def norm(text: str) -> str:
@@ -201,10 +236,17 @@ def split_sections(text: str, where: str = "Markdown source") -> dict[str, str]:
     """
     lines = text.splitlines()
     headings: list[tuple[int, int, str]] = []
+    fences = FenceScanner()
     for index, line in enumerate(lines):
+        was_fenced = fences.active
+        transition = fences.consume(line)
+        if was_fenced or transition is not None:
+            continue
         match = re.match(r"^(#{1,6})\s+(.*?)\s*$", line)
         if match:
             headings.append((index, len(match.group(1)), match.group(2)))
+    if fences.active:
+        raise SourceDrift(f"{where}: unterminated code fence in Markdown source")
 
     names = [name for _, level, name in headings if level >= 2]
     duplicates = sorted({name for name in names if names.count(name) > 1})
@@ -241,7 +283,7 @@ def parse_chunks(body: str, where: str) -> tuple[Chunk, ...]:
     chunks: list[Chunk] = []
     buf: list[str] = []
     kind = "para"
-    in_fence = False
+    fences = FenceScanner()
     fence_buf: list[str] = []
 
     def flush() -> None:
@@ -253,23 +295,22 @@ def parse_chunks(body: str, where: str) -> tuple[Chunk, ...]:
         kind = "para"
 
     for line in body.splitlines():
-        if FENCE_RE.match(line):
-            if in_fence:
-                flush()
-                code = norm(" ".join(fence_buf))
-                if code:
-                    suffix = ""
-                    while code and code[-1] in ",.;:":
-                        suffix = code[-1] + suffix
-                        code = code[:-1]
-                    chunks.append(Chunk("code", f"`{code}`{suffix}"))
-                fence_buf = []
-                in_fence = False
-            else:
-                flush()
-                in_fence = True
+        transition = fences.consume(line)
+        if transition == "open":
+            flush()
             continue
-        if in_fence:
+        if transition == "close":
+            flush()
+            code = norm(" ".join(fence_buf))
+            if code:
+                suffix = ""
+                while code and code[-1] in ",.;:":
+                    suffix = code[-1] + suffix
+                    code = code[:-1]
+                chunks.append(Chunk("code", f"`{code}`{suffix}"))
+            fence_buf = []
+            continue
+        if fences.active:
             fence_buf.append(line)
             continue
         if not line.strip():
@@ -283,7 +324,7 @@ def parse_chunks(body: str, where: str) -> tuple[Chunk, ...]:
             continue
         buf.append(line.strip())
     flush()
-    if in_fence:
+    if fences.active:
         raise SourceDrift(f"{where}: unterminated code fence in an extracted span")
     return tuple(chunks)
 

@@ -177,7 +177,7 @@ The primary exhausts the two basis readouts and checks finite additivity on
 450 ordered disjoint-content-list pairs; there are zero failures.
 
 The existence statement is not universal over readouts. For example,
-`phi(0)=phi(1)=1` gives record count, which is admissible and blind to the
+`phi(P_0)=phi(P_1)=1` gives record count, which is admissible and blind to the
 content change between equal-size singleton collections. The axiom licenses
 `I_one`; it does not select it or require the unspecified fixed physical
 readout to be content-faithful.
@@ -318,5 +318,5 @@ negative_assertion_classes: []
 packet_primary_runner: scripts/frontier_cycle985_neighbour_dependence_record_content_2026_08_11.py
 packet_helper_runner: scripts/frontier_cycle985_neighbour_dependence_record_content_independent_check_2026_08_11.py
 packet_helper_claim_scope: cycle985_neighbour_dependence_record_content
-review_loop_disposition: pending
+review_loop_disposition: pass
 ```

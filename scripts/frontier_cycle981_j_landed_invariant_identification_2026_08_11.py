@@ -327,7 +327,7 @@ def candidate_inventory(payloads: dict) -> tuple[list[dict], dict]:
             "cycle980_off_diagonal_control_gram_sum",
             f"{PINNED_CYCLE980_COMMIT}:{PINNED_SOURCE_READS[0][1]}",
             WITNESS_SCHEMA, "integer", "{-1,0}",
-            "sum of off-diagonal entries of the control Gram matrix",
+            "sum over unordered control pairs (upper-triangular control-Gram entries)",
             False, "cycle980_nearby_ast_keys",
         ),
         candidate(
@@ -461,9 +461,11 @@ def science_measurement(payloads: dict) -> dict:
         row["candidate_id"] for row in comparisons
         if row["landed_at_pinned_main"] and row["outcome"] == "COINCIDES"
     ]
+    inventory_completeness_established = False
     verdict = (
         "COINCIDES_WITH_LANDED_CANDIDATE"
-        if coincident_landed else "LANDED_NEW_WITHIN_DECLARED_SEARCH"
+        if coincident_landed
+        else "NO_COINCIDENCE_IN_ENUMERATED_INVENTORY__LANDED_NEWNESS_OPEN"
     )
     return {
         "search_design": {
@@ -493,10 +495,11 @@ def science_measurement(payloads: dict) -> dict:
         "orbit_value_table": orbit_table(witnesses),
         "identification_tests": comparisons,
         "coincident_landed_candidates": coincident_landed,
+        "inventory_completeness_established": inventory_completeness_established,
         "verdict": verdict,
         "verdict_scope": (
-            "the pinned origin/main tree and declared token/AST candidate extractor; "
-            "not a semantic proof against arbitrarily disguised future formulas"
+            "the nine classified candidates extracted from the pinned origin/main token/AST search; "
+            "the 2539-file token index is not exhaustively classified, so corpus-wide landed-newness is open"
         ),
         "physics_identification_established": False,
         "physics_identification_limit": (
@@ -543,10 +546,12 @@ def verdict_bookkeeping(findings: dict) -> bool:
     )
     expected = (
         "COINCIDES_WITH_LANDED_CANDIDATE"
-        if coincidences else "LANDED_NEW_WITHIN_DECLARED_SEARCH"
+        if coincidences
+        else "NO_COINCIDENCE_IN_ENUMERATED_INVENTORY__LANDED_NEWNESS_OPEN"
     )
     return bool(
         coincidences == sorted(findings["coincident_landed_candidates"])
+        and findings["inventory_completeness_established"] is False
         and findings["verdict"] == expected
     )
 
@@ -565,7 +570,7 @@ def render_stdout(receipt: dict) -> str:
     rows = [
         "CYCLE981_J_LANDED_INVARIANT_IDENTIFICATION",
         "A_CANDIDATE_ENUMERATION " + ("PASS" if checks["A_CANDIDATE_ENUMERATION"] else "FAIL")
-        + f" :: pin={PINNED_MAIN_COMMIT}; reads={findings['search_design']['body_read_count']}<=6;"
+        + f" :: pin={PINNED_MAIN_COMMIT}; pinned_full_bodies={findings['search_design']['body_read_count']}<=6;"
         + f" token_files={findings['search_design']['token_index_hit_file_count']};"
         + f" candidates={len(findings['candidate_inventory'])};"
         + f" exact_J_hits={len(findings['search_design']['exact_J_formula_hit_paths'])};"
@@ -609,6 +614,10 @@ def run() -> tuple[dict, str]:
         and set(row["candidate_id"] for row in first["candidate_inventory"])
         == expected_candidate_ids
         and all(first["extraction_evidence"].values())
+        and all(
+            first["extraction_evidence"][row["extraction_evidence"]]
+            for row in first["candidate_inventory"]
+        )
         and not any(first["requested_surface_presence_at_pin"].values())
     )
     b_bookkeeping = identification_bookkeeping(first)

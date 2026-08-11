@@ -9,13 +9,13 @@ Effective status: pipeline-derived only after independent audit ratification and
 ## Trace gate
 
 ```yaml
-trace_class: negative_route_pruning
-reachability_to_target: prunes
+trace_class: upstream_support
+reachability_to_target: supports
 target_claim_id: null
 target_blocker_text: "is J a NEW object, or does it coincide with something the corpus already carries?"
 source_of_blocker_text: user_goal
 artifact_role: theorem
-next_trace_action: "independent audit of the bounded identification census"
+next_trace_action: "complete a deterministic rejection ledger for every token-index hit before deciding corpus-wide landed-newness"
 ```
 
 ## Status fields
@@ -43,7 +43,7 @@ packet_helper_claim_scope: cycle981_j_landed_invariant_identification
 ## Review record
 
 ```yaml
-review_loop_disposition: pending
+review_loop_disposition: pass
 hard_landing_packet_helper_mapping:
   j_landed_invariant_identification_cycle981_bounded_theorem_note_2026-08-11:
     - scripts/frontier_cycle981_j_landed_invariant_identification_independent_check_2026_08_11.py
@@ -51,11 +51,11 @@ hard_landing_packet_helper_mapping:
 
 ## Result
 
-Within the declared search of pinned `origin/main`, **`J` is landed-new**:
-no landed candidate is the same integer-valued function on the 21 target-centred
-neighbour-dependence witness words. This is a bounded corpus-identification
-statement, not a claim that no future or syntactically disguised formula can
-equal `J`.
+The bounded identification test finds **no coincidence in the enumerated
+inventory**. It does **not** establish that `J` is landed-new: the token index
+contains 2,539 files, while the six-body read cap supports exact classification
+of only the nine candidates listed below. Corpus-wide candidate completeness,
+and therefore corpus-wide landed-newness, remains open.
 
 The two quantities already adjacent to `J` on the pinned Cycle 980 substrate
 are mechanically comparable and disagree:
@@ -63,9 +63,9 @@ are mechanically comparable and disagree:
 | candidate | result | first witness | `J` | candidate |
 |---|---|---|---:|---:|
 | control arity | `DISAGREES` | `TOF(+x,-x->C)` | 0 | 2 |
-| off-diagonal control-Gram sum | `DISAGREES` | `CNOT(+x->C)` | 1 | 0 |
+| unordered-pair control-Gram sum | `DISAGREES` | `CNOT(+x->C)` | 1 | 0 |
 
-Every actually landed cross-lane candidate has a different domain or type, as
+Every enumerated landed cross-lane candidate has a different domain or type, as
 listed below. There is therefore no exact agreement table to report. Had any
 candidate agreed on all shared inputs, the runner would have reported
 `COINCIDES` with all 21 rows; that outcome would pass the same integrity gates.
@@ -77,7 +77,7 @@ The landed-corpus snapshot is the literal commit
 separately at literal commit `c186c8ba7f44f2245cf38e59fc429ce90a6e0d7d`.
 All source bodies are read with `git show`; the runner reads exactly six.
 
-The declared search has three layers:
+The declared fixed-inventory search has three layers:
 
 1. a path/token index over `docs/**/*.md` and `scripts/**/*.py` using the
    lexicon `charge-space`, `three-parity`, `parity law`, `control-sum`,
@@ -88,12 +88,14 @@ The declared search has three layers:
 3. AST extraction on the two Python bodies among the six full reads, with
    Markdown token windows on the other four.
 
-The candidate list actually extracted is:
+The candidate list actually extracted and classified is shown below. The token
+index is a reproducible discovery surface, not a proof that this nine-object
+inventory exhausts every semantic invariant in all 2,539 hit files.
 
 | candidate | landed at pin? | native domain -> codomain | native spectrum |
 |---|---:|---|---|
 | Cycle 980 control arity | no; pinned comparison substrate | witness word -> integer | `{1,2}` |
-| Cycle 980 off-diagonal control-Gram sum | no; pinned comparison substrate | witness word -> integer | `{-1,0}` |
+| Cycle 980 unordered-pair (upper-triangular) control-Gram sum | no; pinned comparison substrate | witness word -> integer | `{-1,0}` |
 | Cycle 719 B-rail occupation `sum(b)` | yes | controller trace -> integer | finite rail occupancy |
 | Cycle 719 two-rail token total | yes | controller state -> integer | `{2}` on the declared code |
 | `O_h` star shell leverage | yes | six-arm representation -> rational constant | `{3/2}` |
@@ -123,7 +125,7 @@ permutation, sign change, or spectrum relabeling is allowed. For the two
 same-word candidates the runner reconstructs every witness and compares values
 row by row:
 
-| orbit | members | `J` | control arity | off-diagonal Gram sum |
+| orbit | members | `J` | control arity | unordered-pair Gram sum |
 |---|---:|---:|---:|---:|
 | CNOT | 6 | 1 | 1 | 0 |
 | perpendicular-control TOF | 12 | 2 | 2 | 0 |
@@ -134,7 +136,7 @@ Per-candidate results:
 | candidate | result | mechanical reason |
 |---|---|---|
 | Cycle 980 control arity | `DISAGREES` | first mismatch `TOF(+x,-x->C)`: `0 != 2` |
-| Cycle 980 off-diagonal control-Gram sum | `DISAGREES` | first mismatch `CNOT(+x->C)`: `1 != 0` |
+| Cycle 980 unordered-pair control-Gram sum | `DISAGREES` | first mismatch `CNOT(+x->C)`: `1 != 0` |
 | Cycle 719 B-rail occupation | `NOT_COMPARABLE` | controller-trace domain, not gate-word domain |
 | Cycle 719 two-rail token total | `NOT_COMPARABLE` | controller-state domain, not gate-word domain |
 | `O_h` shell leverage | `NOT_COMPARABLE` | representation constant of type rational, not an integer word functional |
@@ -149,8 +151,13 @@ match before a value comparison is admitted. A shared geometric phrase such as
 
 ## C_VERDICT
 
-`J(w)=||sum_i c_i||^2` is new relative to the landed objects found by this
-pinned search. No cross-lane numeric bridge is established.
+No candidate in the enumerated inventory coincides with
+`J(w)=||sum_i c_i||^2`, so this test establishes no cross-lane numeric bridge.
+It does not establish that `J` is landed-new. That stronger verdict remains
+open until the pinned corpus has an exhaustive, mechanically checkable
+candidate-classification and rejection ledger. The known non-main charge-space,
+three-parity, and later cell-cutting surfaces also remain outside this landed-at-
+pin comparison unless and until they land on `main`.
 
 Even if a future candidate produces a 21-row exact agreement table, that would
 identify two functions on this finite shared domain only. It would not identify
@@ -159,16 +166,19 @@ a probability rule, or extend either object beyond its declared domain.
 
 ## D_CONTROLS
 
-- Six literal source-body reads, all by immutable `git show`, with SHA-256 and
-  Git-blob pins.
+- Six literal full-body payload reads, all by immutable `git show`, with
+  SHA-256 and Git-blob pins. Repository index/absence queries are reported
+  separately and are not counted as full-body payload reads.
 - Repository-wide candidate discovery is a declared path/token index; Python
-  AST inspection is restricted to the two read Python bodies.
+  AST inspection is restricted to the two read Python bodies. The runner marks
+  inventory completeness false rather than promoting the fixed inventory into
+  a corpus-exhaustive result.
 - Main-tree absence of the requested non-main surfaces is tested at the
   literal snapshot commit.
 - The 21-word comparison is exhaustive and deterministic; there is no sample,
   fitted map, rescaling, or observed input.
 - Integrity gates check inventory/comparison/verdict reconciliation only. They
-  do not require the landed-new result.
+  accept a coincidence if found and do not infer landed-newness from its absence.
 - No axiom, framework primitive, audit verdict, effective status, or
   probability interpretation is added.
 

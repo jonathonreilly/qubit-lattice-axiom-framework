@@ -31,8 +31,8 @@ AUDIT_INPUT_PATHS = (
     "docs/J_LANDED_INVARIANT_IDENTIFICATION_CYCLE981_BOUNDED_THEOREM_NOTE_2026-08-11.md",
 )
 EXPECTED_INPUT_SHA256 = {
-    AUDIT_INPUT_PATHS[0]: "4b0b371bdf48ff512da4485385d5f52d9a40b7365414f8456b39271f00c4e524",
-    AUDIT_INPUT_PATHS[3]: "7161d4baccac6ea74759b3daa325d06e63d641a46e3d88712b6fc3bc4d3d4a40",
+    AUDIT_INPUT_PATHS[0]: "9df68d87fb8cae804c0108f8c88f73122d9357cc221715254e7485b977f39857",
+    AUDIT_INPUT_PATHS[3]: "e3d95207cbb3519c5d931fb1049524b6cf238f5fba8b50be4f84cef52473d96d",
 }
 EXPECTED_MAIN_PIN = "ea0968c71ad46c39c6dacb39f88a18780363b71f"
 EXPECTED_CYCLE980_PIN = "c186c8ba7f44f2245cf38e59fc429ce90a6e0d7d"
@@ -47,6 +47,7 @@ EXPECTED_CANDIDATE_IDS = (
     "cycle733_column_subset_cost_parity_law",
     "cycle735_piece_borne_gf2_charge",
 )
+EXPECTED_CANDIDATE_INVENTORY_DIGEST = "3b50b16e52cac7c0055e7ccd15756a6ae982968e7570adb1d7626b81b14cf5e8"
 EXPECTED_PRIMARY_FUNCTIONS = (
     "pinned_source_controls",
     "declared_witnesses",
@@ -67,12 +68,14 @@ RECEIPT_PATH = (
 REFUTE_SPEC = (
     {"id": "SOURCE_PIN_CHANGED", "target": "A", "mutation": "replace the pinned main snapshot"},
     {"id": "CANDIDATE_REMOVED", "target": "A", "mutation": "remove one extracted candidate"},
+    {"id": "CANDIDATE_METADATA_CHANGED", "target": "A", "mutation": "replace one extracted formula description"},
     {"id": "LANDED_FLAG_FLIPPED", "target": "A", "mutation": "mark a main candidate non-landed"},
     {"id": "FIRST_WITNESS_CORRUPTED", "target": "B", "mutation": "replace the first arity disagreement"},
     {"id": "NOT_COMPARABLE_PROMOTED", "target": "B", "mutation": "promote a domain mismatch to coincidence"},
     {"id": "ABSENT_SURFACE_FLIPPED", "target": "A", "mutation": "claim an absent Cycle-736 path is present"},
-    {"id": "EXACT_J_HIT_INJECTED", "target": "A", "mutation": "inject a false landed exact-formula hit"},
-    {"id": "VERDICT_FLIPPED", "target": "C", "mutation": "replace landed-new by coincidence"},
+    {"id": "EXACT_J_CACHE_COUNT_MISMATCH", "target": "R3", "mutation": "change exact-formula hits without updating the cache count"},
+    {"id": "COMPLETENESS_PROMOTED", "target": "C", "mutation": "promote the fixed inventory to corpus-complete"},
+    {"id": "VERDICT_FLIPPED", "target": "C", "mutation": "replace open fixed-inventory verdict by coincidence"},
     {"id": "CACHE_OUTCOME_CORRUPTED", "target": "R3", "mutation": "replace the cache outcome counts"},
 )
 
@@ -253,21 +256,34 @@ def validate_primary(receipt: dict) -> bool:
     findings = receipt.get("findings", {})
     candidates = findings.get("candidate_inventory", [])
     tests = findings.get("identification_tests", [])
+    independent = independent_tests(candidates) if tuple(
+        row.get("candidate_id") for row in candidates
+    ) == EXPECTED_CANDIDATE_IDS else []
+    coincidences = sorted(
+        row["candidate_id"] for row in independent
+        if row["landed_at_pinned_main"] and row["outcome"] == "COINCIDES"
+    )
+    expected_verdict = (
+        "COINCIDES_WITH_LANDED_CANDIDATE"
+        if coincidences
+        else "NO_COINCIDENCE_IN_ENUMERATED_INVENTORY__LANDED_NEWNESS_OPEN"
+    )
     return bool(
         receipt.get("primary_source_sha256") == EXPECTED_INPUT_SHA256[AUDIT_INPUT_PATHS[0]]
         and receipt.get("science_digest") == digest(findings)
         and receipt.get("pass") is True and all(receipt.get("checks", {}).values())
         and findings.get("search_design", {}).get("snapshot") == EXPECTED_MAIN_PIN
         and findings.get("search_design", {}).get("body_read_count") == 6
-        and findings.get("search_design", {}).get("exact_J_formula_hit_paths") == []
         and tuple(row.get("candidate_id") for row in candidates) == EXPECTED_CANDIDATE_IDS
+        and digest(candidates) == EXPECTED_CANDIDATE_INVENTORY_DIGEST
         and len(tests) == len(EXPECTED_CANDIDATE_IDS)
-        and tests == independent_tests(candidates)
+        and tests == independent
         and findings.get("witness_count") == 21
         and findings.get("orbit_value_table") == independent_orbit_table()
         and not any(findings.get("requested_surface_presence_at_pin", {}).values())
-        and findings.get("coincident_landed_candidates") == []
-        and findings.get("verdict") == "LANDED_NEW_WITHIN_DECLARED_SEARCH"
+        and findings.get("coincident_landed_candidates") == coincidences
+        and findings.get("inventory_completeness_established") is False
+        and findings.get("verdict") == expected_verdict
         and findings.get("physics_identification_established") is False
     )
 
@@ -275,7 +291,17 @@ def validate_primary(receipt: dict) -> bool:
 def validate_cache(cache: str, receipt: dict) -> bool:
     headers, body, stderr = parse_cache(cache)
     normalized = body.rstrip() + "\n"
-    expected_outcomes = compact({"COINCIDES": 0, "DISAGREES": 2, "NOT_COMPARABLE": 7})
+    tests = receipt.get("findings", {}).get("identification_tests", [])
+    expected_outcomes = compact({
+        outcome: sum(row.get("outcome") == outcome for row in tests)
+        for outcome in ("COINCIDES", "DISAGREES", "NOT_COMPARABLE")
+    })
+    expected_verdict = receipt.get("findings", {}).get("verdict", "")
+    expected_exact_j_hits = len(
+        receipt.get("findings", {}).get("search_design", {}).get(
+            "exact_J_formula_hit_paths", []
+        )
+    )
     return bool(
         headers.get("runner") == AUDIT_INPUT_PATHS[0]
         and headers.get("runner_sha256") == EXPECTED_INPUT_SHA256[AUDIT_INPUT_PATHS[0]]
@@ -283,9 +309,9 @@ def validate_cache(cache: str, receipt: dict) -> bool:
         and headers.get("exit_code") == "0" and headers.get("status") == "ok"
         and not stderr.strip()
         and receipt.get("stdout_sha256") == sha256(normalized.encode()).hexdigest()
-        and "exact_J_hits=0" in body
         and f"outcomes={expected_outcomes}" in body
-        and "LANDED_NEW_WITHIN_DECLARED_SEARCH" in body
+        and f"exact_J_hits={expected_exact_j_hits}" in body
+        and expected_verdict in body
         and body.rstrip().endswith("TOTAL: PASS=4 FAIL=0")
     )
 
@@ -294,7 +320,7 @@ def validate_note(note: str) -> bool:
     required = (
         "Claim type: `bounded_theorem`",
         "actual_current_surface_status: bounded-support",
-        "**`J` is landed-new**",
+        "inventory completeness false",
         "TOF(+x,-x->C)",
         "CNOT(+x->C)",
         "`NOT_COMPARABLE`",
@@ -312,6 +338,7 @@ def corruption_probes(receipt: dict, cache: str) -> dict:
     original_valid = validate_primary(receipt)
 
     def rejected(mutated: dict) -> bool:
+        mutated["science_digest"] = digest(mutated["findings"])
         return original_valid and mutated != receipt and not validate_primary(mutated)
 
     mutated = copy.deepcopy(receipt)
@@ -321,6 +348,10 @@ def corruption_probes(receipt: dict, cache: str) -> dict:
     mutated = copy.deepcopy(receipt)
     mutated["findings"]["candidate_inventory"].pop()
     results["CANDIDATE_REMOVED"] = rejected(mutated)
+
+    mutated = copy.deepcopy(receipt)
+    mutated["findings"]["candidate_inventory"][0]["formula_or_definition"] = "fabricated formula"
+    results["CANDIDATE_METADATA_CHANGED"] = rejected(mutated)
 
     mutated = copy.deepcopy(receipt)
     mutated["findings"]["candidate_inventory"][2]["landed_at_pinned_main"] = False
@@ -340,15 +371,30 @@ def corruption_probes(receipt: dict, cache: str) -> dict:
     results["ABSENT_SURFACE_FLIPPED"] = rejected(mutated)
 
     mutated = copy.deepcopy(receipt)
-    mutated["findings"]["search_design"]["exact_J_formula_hit_paths"] = ["docs/FALSE.md"]
-    results["EXACT_J_HIT_INJECTED"] = rejected(mutated)
+    mutated["findings"]["search_design"]["exact_J_formula_hit_paths"] = ["docs/GENUINE_HIT.md"]
+    mutated["science_digest"] = digest(mutated["findings"])
+    results["EXACT_J_CACHE_COUNT_MISMATCH"] = bool(
+        validate_cache(cache, receipt) and validate_primary(mutated)
+        and not validate_cache(cache, mutated)
+    )
 
     mutated = copy.deepcopy(receipt)
-    mutated["findings"]["verdict"] = "COINCIDES_WITH_LANDED_CANDIDATE"
+    mutated["findings"]["inventory_completeness_established"] = True
+    results["COMPLETENESS_PROMOTED"] = rejected(mutated)
+
+    mutated = copy.deepcopy(receipt)
+    mutated["findings"]["verdict"] = (
+        "NO_COINCIDENCE_IN_ENUMERATED_INVENTORY__LANDED_NEWNESS_OPEN"
+        if receipt["findings"]["verdict"] == "COINCIDES_WITH_LANDED_CANDIDATE"
+        else "COINCIDES_WITH_LANDED_CANDIDATE"
+    )
     results["VERDICT_FLIPPED"] = rejected(mutated)
 
-    original = 'outcomes={"COINCIDES":0,"DISAGREES":2,"NOT_COMPARABLE":7}'
-    changed = 'outcomes={"COINCIDES":1,"DISAGREES":1,"NOT_COMPARABLE":7}'
+    original = "outcomes=" + compact({
+        outcome: sum(row["outcome"] == outcome for row in receipt["findings"]["identification_tests"])
+        for outcome in ("COINCIDES", "DISAGREES", "NOT_COMPARABLE")
+    })
+    changed = 'outcomes={"CORRUPTED":1}'
     mutated_cache = cache.replace(original, changed, 1)
     results["CACHE_OUTCOME_CORRUPTED"] = bool(
         validate_cache(cache, receipt) and mutated_cache != cache
@@ -405,10 +451,11 @@ def run() -> tuple[dict, str]:
                 outcome: sum(row["outcome"] == outcome for row in tests)
                 for outcome in ("COINCIDES", "DISAGREES", "NOT_COMPARABLE")
             },
+            "inventory_completeness_established": False,
             "verdict": "COINCIDES_WITH_LANDED_CANDIDATE" if any(
                 row["landed_at_pinned_main"] and row["outcome"] == "COINCIDES"
                 for row in tests
-            ) else "LANDED_NEW_WITHIN_DECLARED_SEARCH",
+            ) else "NO_COINCIDENCE_IN_ENUMERATED_INVENTORY__LANDED_NEWNESS_OPEN",
         }
 
     first = independent_measurement()

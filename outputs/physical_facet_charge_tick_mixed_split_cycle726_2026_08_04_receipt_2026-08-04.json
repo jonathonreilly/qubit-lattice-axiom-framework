@@ -1,15 +1,8 @@
 {
   "audit": "unset",
   "authority": "none",
-  "boundary": {
-    "audit_grade_claimed": false,
-    "certificate_denominator_claimed_minimal": false,
-    "face_to_face_floor_pinned_to_a_value": false,
-    "pattern_law_claimed_universal": false,
-    "solver_used_in_runner": false,
-    "square_consistent_floor_claimed_attained": false
-  },
   "carried_certificate": {
+    "all_support_unit_strengthenings_rejected": true,
     "denominator": 2,
     "least_slack": 0,
     "support": 411,
@@ -21,15 +14,16 @@
   },
   "checks": {
     "named_checks_failed": 0,
-    "named_checks_passed": 28
+    "named_checks_passed": 32
   },
-  "face_to_face_witness_box_charges": [
+  "claim_type": "bounded_theorem",
+  "cycle725_bracket_dependency": [
     108,
     128
   ],
   "facet_dissections_per_facet": 180,
   "facet_slices_of_cells": {
-    "above_volume_one": 0,
+    "non_unit": 0,
     "total": 3584
   },
   "facetwise_bracket": [
@@ -38,6 +32,7 @@
   ],
   "fail": 0,
   "gates": {
+    "Cycle 725 exact box-bracket dependency": "PASS",
     "W1 is a genuine dissection": "PASS",
     "W2 is a genuine dissection": "PASS",
     "W3 is a genuine dissection": "PASS",
@@ -46,6 +41,7 @@
     "W6 is a genuine dissection": "PASS",
     "box sample family is generic": "PASS",
     "carried denominator-2 lower certificate": "PASS",
+    "certificate support unit-strengthening attack": "PASS",
     "complete facet dissection sweep": "PASS",
     "complete sweep of the 24 square diagonals": "PASS",
     "each half reaches its own floor alone": "PASS",
@@ -57,8 +53,10 @@
     "joint floor 85 sits one above 84": "PASS",
     "mixed facet charge bracket": "PASS",
     "mixed facet: that law does not survive": "PASS",
+    "one-piece floor-84 substitution attack": "PASS",
     "per-cell charge ranges": "PASS",
     "realizable square-diagonal patterns": "PASS",
+    "six witness charge and matching tuples": "PASS",
     "square consistency costs at the floor": "PASS",
     "square-facet incidence of the four-box": "PASS",
     "stencil orbit is extremal in both halves": "PASS",
@@ -81,8 +79,23 @@
     "8": 12,
     "9": 64
   },
-  "mixed_facets": 6,
-  "pass": 28,
+  "no_go_discipline": {
+    "claim_scope": "finite nonattainment and separation statements only in the supplied one-box corner-simplex model",
+    "n5_execution_certificate": [
+      "per_element: all 2672 minimal corner simplices have exact integer volume and charge, and every cell obeys the carried denominator-two certificate slack",
+      "per_site: all 2672 pinned interior sample points have zero boundary incidences and are checked point-by-point for cover-once on every carried witness",
+      "per_mode: checked and not executed — this finite dissection theorem defines no spectral mode, modal decomposition, or per-mode negative conclusion",
+      "per_block: one supplied unit four-box is checked through all eight induced facet problems, the 24-square consistency sweep, and six explicit dissections",
+      "lattice_wide: checked and not executed — no multi-box, multi-tick, boundary-limit, continuum, or framework-wide physical cost conclusion is asserted"
+    ],
+    "status": "PASS"
+  },
+  "open_bridges": [
+    "physical selection of the corner-simplex/dissection/all-pairs charge model",
+    "physical tick-Admissibility realization",
+    "extension beyond one box and one tick"
+  ],
+  "pass": 32,
   "pattern_law": {
     "mixed_patterns_carrying_two_charges": 36,
     "tick_patterns_carrying_two_charges": 0
@@ -105,31 +118,30 @@
       4
     ]
   },
-  "sample_points": {
-    "box_boundary_incidences": 0,
-    "box_samples": 2672,
-    "facet_boundary_incidences": 0,
-    "facet_samples": 58
-  },
-  "separator_certified_facet_dissections": 180,
+  "review_loop": [
+    {
+      "date": "2026-08-12",
+      "disposition": "FIX_THEN_PROCEED",
+      "fix": "demoted the physical framing to a supplied-model theorem; bound the Cycle 725 comparison as a direct dependency; repaired the mixed-pattern gate to require exactly 36 collisions; made all witness tuples explicit; added hostile certificate/substitution controls, fail-closed exit, a generated receipt, canonical cache metadata, and the landed N1-N8/N5 packet",
+      "iteration": 1,
+      "reviewer": "Codex review-loop"
+    }
+  ],
   "square_diagonal_patterns": {
-    "absent_set_bits": 3,
+    "absent_set_bits": [
+      3
+    ],
     "realizable": 58,
     "total": 64,
     "unrealizable": 6
   },
-  "three_cube_volume_spectrum": {
-    "0": 12,
-    "1": 56,
-    "2": 2
-  },
+  "supplied_model": "one equal-grained tick-box; five-corner corner simplices; 24-piece normalized-volume-one dissections; declared spatial-L1 pair charge",
   "tick_facet_spectrum": {
     "18": 16,
     "19": 72,
     "20": 84,
     "21": 8
   },
-  "tick_facets": 2,
   "volume_spectrum": {
     "0": 1360,
     "1": 2672,

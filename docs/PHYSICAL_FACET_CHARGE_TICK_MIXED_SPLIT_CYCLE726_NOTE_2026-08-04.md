@@ -1,4 +1,4 @@
-# The facet-visible charge of the four-box splits into a tick half and a mixed half: exactly additive at the ceiling, superadditive by one at the floor — Cycle 726
+# In a supplied one-box corner-simplex model, the facet charge splits into tick and mixed halves — Cycle 726
 
 Date: 2026-08-04
 
@@ -9,13 +9,31 @@ axiom, foundation, Qualification, primitive, registry, policy, queue,
 audit-status, or PR-control surface. No new axiom or primitive is proposed or
 adopted.
 
-No coupling value, sign, or scale is selected or derived in this cycle. Every
-quantity below is an exact integer count over a finite, completely enumerated
-configuration space. This note quotes no floating-point number and no fitted
-constant; each integer it states is printed by the paired runner in the run that
-produced its `TOTAL` line.
+## Supplied model and open physical bridges
 
-The unit four-box carries eight three-dimensional facets. Two of them are the
+This is a finite theorem of a **supplied structural model**, not a derivation of
+that model from the framework axioms. The supplied domain is one unit box with
+three spatial corner coordinates and one equal-grained tick corner coordinate;
+a piece is the convex hull of five box corners; and a minimal dissection is made
+of `24` normalized-volume-one pieces with disjoint interiors. The facet-visible
+charge is also declared here: it counts selected vertex pairs under the spatial
+`L1` rule defined below.
+
+The [minimal axioms](MINIMAL_AXIOMS_2026-06-29.md) supply the spatial `Z^3`
+nearest-neighbour grading and proper cubic rotations. The registered
+[kinetic-isotropy primitive](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md)
+supplies only equal tick/edge graining. Neither selects corner simplices or
+dissections, identifies all vertex pairs of a simplex with physical slot uses,
+selects this charge as physical, nor supplies a tick--Admissibility realization
+bridge. A nonsimplicial complex, non-corner pieces, coarser pieces, or a larger
+multi-box domain is outside this theorem.
+
+No coupling value, sign, or scale is selected or derived. Every theorem below
+is an exact integer statement over the declared finite domain and is computed
+or gated by the paired runner; the imported endpoint pair is read from the
+pinned Cycle 725 receipt.
+
+The supplied unit four-box carries eight three-dimensional facets. Two are the
 equal-tick slices — the facets on which the tick coordinate is constant, so that
 all three spatial directions survive. The other six each trade one spatial
 direction for the tick. This cycle splits the facet-visible charge of a minimal
@@ -28,7 +46,8 @@ At the bottom they are not: each half reaches its own floor alone, but the two
 floors cannot be reached together, and the joint floor sits exactly one unit
 above their sum. The obstruction is supplied solver-free by one carried integer
 certificate at denominator `2`, and the value `85` it bounds is attained by an
-explicit witness, so the floor is exact rather than bracketed.
+explicit witness. These are finite facts about the declared model, not a
+framework-wide physical cost law.
 
 ## Setup
 
@@ -69,7 +88,7 @@ differs between them. The runner gates this identity rather than assuming it.
 
 **Every facet slice of a minimal cell is itself minimal.** Across the `2672`
 minimal cells there are `3584` four-vertex facet slices, and the count of those
-whose induced three-dimensional normalized volume exceeds `1` is `0`. A minimal
+whose induced three-dimensional normalized volume differs from `1` is `0`. A minimal
 dissection of the box therefore induces a *minimal* dissection of each facet, and
 the sum of `FC` over the twenty-four selected cells equals the sum over the eight
 facets of that facet's own induced dissection cost. This identity is what lets a
@@ -81,6 +100,15 @@ incidences over all `2672` minimal cells, and the facet family has `58` points
 with `0` boundary hits over the three-cube's `58` non-degenerate cells, whose
 volume spectrum is `[(0, 12), (1, 56), (2, 2)]`. A point family that touched any
 cell boundary would make the cover test unsound; the gate is what rules that out.
+
+Interior disjointness is decided by an integer separator sweep. For zero--one
+vertices, relevant differences lie in the ternary cube. In four dimensions a
+supporting normal may be chosen orthogonal to three independent ternary
+differences, so its components are three-by-three ternary minors bounded in
+absolute value by `4`; the runner sweeps the full `[-4,4]^4` range. The
+three-dimensional checker uses the corresponding bounded cross-product range.
+Non-strict separation is intentional: boundary contact is allowed while shared
+interior is not.
 
 ## Claims
 
@@ -149,15 +177,14 @@ patterns carrying two distinct charges is `0`, and the charge parity class is th
 single value `[0]`. On a tick-carrying facet neither survives: `36` patterns carry
 two distinct charges, and the parity class is `[0, 1]`.
 
-The mechanism is visible in the construction. An equal-tick facet keeps all three
+The finite mechanism is visible in the declared charge construction. An equal-tick facet keeps all three
 spatial directions, so every pair the pattern distinguishes is also a pair the
 cost weighs. A tick-carrying facet trades one spatial direction for the tick, so
 its third kept direction still enters the diagonal pattern but contributes
-nothing to the cost, and patterns collapse onto each other unevenly. Read as
-physics, the pattern-to-charge law is a law of the three spatial directions:
-substituting the tick for a spatial axis breaks it. The tick is not a fourth
-spatial direction wearing a different label, and this cycle measures the
-difference as an integer rather than asserting it.
+nothing to this declared cost, and patterns collapse onto each other unevenly.
+Thus, in this one-box model, replacing one of the three charged spatial axes by
+the uncharged tick coordinate destroys the six-bit-pattern functional relation.
+This does not establish a general physical distinction between time and space.
 
 ### A three-tier ladder in the minimum facet-visible charge
 
@@ -185,17 +212,19 @@ and its upper end is the genuine face-to-face witness `W3` at `88`, box charge
 `110`. Pinning the face-to-face floor to a single value is left open here; the
 bracket is what this cycle's solver-free machinery establishes.
 
-**Corollary, airtight and solver-free: `85 < 86`, so every configuration attaining
+**Finite corollary: `85 < 86`, so every declared-model configuration attaining
 the facet-charge floor `85` fails square consistency, and a fortiori is not
 face-to-face.** The structure is visible directly in `W1`: it uses `100` distinct
 tetrahedral facets with `32` of them unmatched, where a face-to-face selection
 uses exactly `84` with `0` unmatched. Non-face-to-face structure is not an
 accident of the search — it is forced at the bottom of the ladder.
 
-### The face-to-face restriction does not move the box-charge endpoints
+### The face-to-face restriction does not move the contained Cycle 725 box-charge endpoints
 
-The face-to-face witnesses sit at box charges already reached by unrestricted
-dissections: `W2` at `108` and `W4` at `128`. Requiring face-to-face gluing
+The paired runner reads and gates the contained Cycle 725 receipt, whose exact
+minimal-piece box-charge bracket is `[108, 128]` in this same supplied model.
+The face-to-face witnesses sit at both endpoints: `W2` at `108` and `W4` at
+`128`. Requiring face-to-face gluing
 therefore raises the facet-sum floor, from `85` to at least `86`, while leaving
 these two adjacency-charge endpoints where they were. This is reported as an
 honest negative: the two charges respond differently to the same restriction, and
@@ -205,9 +234,10 @@ should not read that into this cycle.
 The two charges are independent in the other direction as well. `W1` and `W2`
 both sit at box charge `108` yet carry facet charges `85` and `96`; `W3`, `W5`
 and `W6` all sit at box charge `110` yet carry facet charges `88`, `91` and `89`.
-The adjacency charge does not determine the facet-visible charge.
+The supplied-model adjacency charge does not determine the supplied-model
+facet-visible charge on these witness pairs.
 
-### The canonical stencil orbit is extremal in both halves at once
+### The monotone-path family is extremal in both halves at once
 
 The twenty-four monotone-path simplices — one per permutation of the four
 coordinates, generated inside the runner from the permutations rather than
@@ -215,7 +245,7 @@ carried as a literal — form witness `W2`. Its two halves are **simultaneously 
 opposite extremes**: tick half `36 = 2 x 18`, the tick floor, and mixed half
 `60 = 6 x 10`, the mixed ceiling, for a total of `96` at box charge `108`.
 
-The canonical assembly thus hides as much charge as it can from the two
+Within the supplied model, the monotone-path family hides as much charge as it can from the two
 equal-tick slices while exposing as much as it can to the six tick-carrying
 facets. The pairing is not forced by either half alone: `W5` also attains tick
 `36`, and pairs it with mixed `55` rather than `60`. Both halves of the statement
@@ -248,14 +278,16 @@ The chain has four links, and only the third carries a certificate.
    square consistency, giving the lower end of the third tier; the witness `W3`
    gives the upper end.
 
-The split itself needs no new machinery: `TC` and `MC` are the same facet-slice
-sum restricted to the two families of facets, so every gate that holds for the
-total holds for the halves by construction. What is not automatic, and is the
-result of this cycle, is that the two halves are additive at one end and not at
-the other.
+The split itself is definitional: `TC` and `MC` are the same facet-slice sum
+restricted to the two families of facets. The endpoint relations are not
+definitional; the runner gates them separately.
 
 ## Honest boundary
 
+- The theorem's domain is supplied: one equal-grained tick-box, corner
+  five-simplices, normalized-volume-one pieces, twenty-four-piece dissections,
+  and the declared pair charge. The framework does not select this domain or
+  require physical constructions to pay either charge.
 - The square-consistent value `86` is a lower bound obtained by relaxing each
   facet independently to its cheapest dissection realizing the assigned pattern.
   Whether any square-consistent twenty-four-cell configuration actually attains
@@ -271,9 +303,10 @@ the other.
 - The certificate is carried at denominator `2`. No claim is made that `2` is the
   smallest denominator at which a valid certificate exists; that question is not
   addressed.
-- The box-charge values `108`, `110` and `128` reported here are measurements of
-  the six witnesses, not a re-derivation of any adjacency bracket. Whether `108`
-  is the adjacency floor is outside this cycle.
+- The witness box-charge values are recomputed here. The statement that `108`
+  and `128` are the global minimal-piece endpoints is a direct dependency on
+  the contained Cycle 725 receipt, which the runner reads and gates. Cycle 725
+  has the same supplied-model and open-bridge boundary.
 - The genericity of both sample families is gated, and both bounds depend on it.
   A family with a boundary incidence would invalidate the cover test and with it
   the certificate argument; the gate is reported as `0` hits in both cases rather
@@ -284,9 +317,11 @@ the other.
   other identifying each of the eight induced facet dissections inside the
   separately enumerated `180` and summing that facet's own cost table. The
   agreement holds for the three witnesses that are not face-to-face as well.
-- All integer counts here are measured, not derived. The cycle establishes exact
-  brackets on a finite configuration space; it selects no coupling, sets no scale,
-  and proposes no new admitted structure.
+- The cycle establishes exact finite brackets in the supplied configuration
+  space; it selects no coupling, sets no scale, and proposes no new primitive.
+- Nothing is claimed for coarser or non-corner pieces, nonsimplicial complexes,
+  more than one box or tick, other boundary conditions, a thermodynamic or
+  continuum limit, curvature, a metric, an action, or a field equation.
 
 ## The next paths opened
 
@@ -296,7 +331,7 @@ the other.
 - The pattern-to-charge law holds on the equal-tick facets and fails on the
   tick-carrying ones by a measured `36` patterns. Classifying *which* `36`, and
   whether they share a corner-incidence profile, would turn a count into a rule.
-- The stencil orbit's double extremality suggests looking for the smallest
+- The monotone-path family's double extremality suggests looking for the smallest
   sub-block on which the tick floor and mixed ceiling still coincide, which is the
   natural sequel to this cycle.
 - The `6` unrealizable patterns all carry exactly `3` set bits. A direct
@@ -306,30 +341,145 @@ the other.
 ## Runner
 
 - Runner: `scripts/physical_facet_charge_tick_mixed_split_cycle726_2026_08_04.py`
-- Cold output: `outputs/physical_facet_charge_tick_mixed_split_cycle726_2026_08_04_cold_2026-08-04.txt`
+- Independent checker: `scripts/physical_facet_charge_tick_mixed_split_cycle726_independent_check_2026_08_04.py`
+- Pinned cache: `logs/runner-cache/physical_facet_charge_tick_mixed_split_cycle726_2026_08_04.txt`
+- Independent cache: `logs/runner-cache/physical_facet_charge_tick_mixed_split_cycle726_independent_check_2026_08_04.txt`
 - Receipt: `outputs/physical_facet_charge_tick_mixed_split_cycle726_2026_08_04_receipt_2026-08-04.json`
 
 The runner executes every gated row above and reports
 
 ```
-TOTAL: PASS=28 FAIL=0
+TOTAL: PASS=32 FAIL=0
 ```
 
-with exit code `0`. The runner contains no solver: every bound is either a
-complete enumeration, a witness, or a summation against the carried certificate.
-Two consecutive runs produce byte-identical standard output; the cold output is
-that output verbatim, and the receipt transcribes the same gate lines into a
-keyed form. Neither carries a timestamp, a wall clock, a host name, or an
-absolute path, so both are comparable across machines.
+with exit code `0`. Any failed gate exits nonzero. The primary runner contains
+no solver: every bound is either a complete enumeration, a witness, or a
+summation against the carried certificate. The cache binds the exact runner and
+its declared Cycle 725 receipt input; the receipt is generated from the same
+gate list emitted by the run.
 
-Every integer quoted in this note is the runner's own count in the run that
-produced that `TOTAL` line; none is copied from an earlier probe.
+The independent checker reports `TOTAL: PASS=8 FAIL=0`. It does not import or
+execute the primary. It parses only the carried certificate/witness literals,
+then independently checks the four-dimensional certificate by exact integer
+barycentric numerators and enumerates the `180` facet triangulations as
+compatibility six-cliques rather than by the primary's sample-cover recursion.
 
-## Citations
+Every substantive count quoted in this note is computed or dependency-gated
+in the run that produced that `TOTAL` line.
 
-- [Minimal axioms](MINIMAL_AXIOMS_2026-06-29.md)
+## Dependencies
 
-Backticked context only, with no authority edge — both are in flight and neither
-is cited as an authority for any statement above:
-`PHYSICAL_EXACT_ADJACENCY_DISSECTION_BRACKET_CYCLE725_NOTE_2026-08-03.md`,
-`PHYSICAL_SCALE_FREE_ADJACENCY_DISSECTION_BRACKET_CYCLE724_NOTE_2026-08-03.md`.
+- [Minimal axioms](MINIMAL_AXIOMS_2026-06-29.md) — supply only the spatial
+  `Z^3` nearest-neighbour grading and proper cubic rotations.
+- [Kinetic-isotropy primitive](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md)
+  — supplies only equal tick/edge graining.
+- [Cycle 725 exact adjacency bracket](PHYSICAL_EXACT_ADJACENCY_DISSECTION_BRACKET_CYCLE725_NOTE_2026-08-03.md)
+  — landed but unaudited; supplies the `[108, 128]` minimal-piece box-charge
+  bracket and the same explicit corner-simplex supplied-model boundary. The
+  Cycle 726 runner pins its receipt as a declared input. The endpoint-comparison
+  claim here remains conditional on that unaudited dependency.
+
+Cycle 723 is provenance only and is not a scientific dependency: this runner
+constructs the monotone-path family and recomputes all of its charges. Cycle
+724 is superseded for the only imported comparison by Cycle 725. Cycle 873 is
+unrelated ordering context.
+
+## No-Go Discipline Gate
+
+This packet covers only the negative-flavoured finite conclusions inside the
+declared model: no charge-`84` minimal dissection; no square-consistent or
+face-to-face charge-`85` configuration; no mixed-facet functional dependence
+on the six-bit diagonal pattern; and no determination of facet charge by box
+charge on the exhibited equal-box-charge witness pairs. It makes no physical,
+all-model, multi-box, or continuum no-go claim.
+
+**N1 — Alternative route enumeration.** The approach families are normalized
+by mathematical object, mechanism, and terminal obligation.
+
+1. `ATTEMPTED` — dual sample-weight route: all `2672` cell slacks are checked
+   against a denominator-two weight vector of total `170`; nonnegative slack
+   proves every declared minimal dissection has charge at least `85`.
+2. `ATTEMPTED` — local primal construction route: every one-piece replacement
+   of `W1` that would lower `85` to `84` is tested against the full exact
+   cover-once incidence rows; none survives. This is a hostile control, while
+   the dual certificate supplies the global proof.
+3. `ATTEMPTED` — shared-square relaxation route: all `2^24` assignments of the
+   box's square diagonals are swept, with the cheapest realizing facet
+   dissection selected independently; the relaxed minimum is `86`, excluding
+   square-consistent charge `85`.
+4. `ATTEMPTED` — face-matching route: every witness's tetrahedral facets are
+   counted exactly, and face-to-face implies shared-square consistency; hence
+   the `86` relaxation excludes face-to-face charge `85` as well.
+5. `ATTEMPTED` — complete facet-enumeration route: all `180` minimal cube
+   dissections are reconstructed and separator-certified. On mixed facets,
+   exactly `36` six-bit patterns carry two charges, directly refuting a
+   pattern-only functional law there.
+6. `ATTEMPTED` — explicit counter-witness route: `W1/W2` share box charge
+   `108` but have facet charges `85/96`, while `W3/W5/W6` share box charge
+   `110` but have facet charges `88/91/89`; box charge therefore does not fix
+   facet charge even on these carried families.
+
+**N2 — Open-condition independence.** These are walls only to a physical or
+wider interpretation, not premises missing from the finite theorem.
+
+| pair | first closes second? | second closes first? | independent? |
+|---|---:|---:|---:|
+| physical model selection / tick--Admissibility realization | no | no | yes |
+| physical model selection / multi-box or multi-tick extension | no | no | yes |
+| tick--Admissibility realization / multi-box or multi-tick extension | no | no | yes |
+
+**N3 — Hidden-condition scan.** “Supplied model” is now explicit at the front
+of the note and runner. “Registered” refers only to the kinetic-isotropy
+primitive and is linked to its registry source; it grants equal graining, not
+the model. “Monotone-path” names a generated finite family, not a canonical
+physical selection. No “standard,” “natural,” “obvious,” background, or
+framework-provides phrase supplies a proof step.
+
+**N4 — Residual matching.** Cycle 725 is used only for the exact `[108,128]`
+minimal-piece box-charge bracket in the identical supplied corner-simplex
+domain; this matches. Its certificate and parity residuals are not imported.
+The minimal axioms and kinetic-isotropy primitive are premise sources, not
+no-go witnesses. Cycles 723, 724, and 873 supply no negative witness here.
+
+**N5 — Rhetoric audit.** The primary cached stdout carries substantive
+`per_element:`, `per_site:`, `per_mode:`, `per_block:`, and `lattice_wide:`
+execution-certificate lines. Only per-element/per-site checks inside one
+per-block finite box are executed. Per-mode and lattice-wide claims are
+explicitly not executed and are not asserted.
+
+**N6 — Partial-closure paths.** The legitimate present shape is explicit
+supplied model, bounded theorem, and later import-retirement review. A retained
+physical cell-selection theorem could retire the model-selection condition; a
+retained tick-realization theorem could retire the tick condition; a separate
+composition theorem could extend the domain. The approved kinetic-isotropy
+primitive is not a wall and is not enlarged. None of these routes is called a
+required new axiom.
+
+**N7 — Steelman.** A hostile reader should reject any physical extrapolation:
+coarser corner pieces already change the Cycle 725 floor, while non-corner,
+nonsimplicial, multi-box, and alternative boundary constructions are not tested.
+That concrete route can evade the numerical floors and must remain open. It does
+not break the finite theorem, because those objects are outside its quantified
+domain; it does break the submitted physical rhetoric, which has been removed.
+
+**N8 — Cross-cycle echo.** The landed reviews of Cycles 724 and 725 found the
+same overread: exact corner-simplex counts do not select the physical assembly
+model. Both were repaired by declaring the supplied domain and open physical
+bridges. Cycle 726 adopts that mechanism and binds Cycle 725 directly rather
+than treating its result as in-flight context. Cycle 722 likewise separated a
+finite monotone-path orbit fact from an axiomatic selection claim; this note
+uses only a generated witness family.
+
+Status: **PASS** for the finite negative scope above. The N5 lines land in the
+primary cache with this packet.
+
+## Review record
+
+Review-loop iteration 1 (Codex, 2026-08-12) returned `FIX_THEN_PROCEED`. The
+submitted note was demoted from physical four-box rhetoric to a theorem of the
+supplied one-box corner-simplex model; the kinetic-isotropy premise and Cycle
+725 dependency were made explicit; the mixed-pattern gate was strengthened
+from “greater than zero” to exactly `36`; all six witness tuples were pinned;
+the runner became fail-closed and input-bound; certificate and construction
+hostile controls, a generated receipt, a pinned cache, and the N1--N8/N5 packet
+were added. No audit verdict was applied.

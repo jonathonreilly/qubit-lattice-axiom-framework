@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/physical_facet_charge_tick_mixed_split_cycle726_independent_check_2026_08_04.py
+runner_sha256: 1af06c7e82f1d50c1a8779c691153b8e250cbb80e31e79077beaaa7058180a16
+input_fingerprint_sha256: 3fccee19a8dccdbc333f2e5ac46932df85b30be4053b0733b19ff5d90f52ceb9
+timeout_sec: 90
+exit_code: 0
+elapsed_sec: 1.60
+status: ok
+----- stdout -----
+PASS independent minimal-cell census                  cells 2672
+PASS independent denominator-two certificate          samples 2672, support 411, weight 170, least slack 0
+PASS independent attaining witness                    pieces 24, normalized volume 24, facet charge 85
+PASS independent facet triangulation census           unit tetrahedra 56, compatibility six-cliques 180
+PASS independent tick spectrum                        {18: 16, 19: 72, 20: 84, 21: 8}
+PASS independent mixed spectrum                       {8: 12, 9: 64, 10: 104}
+PASS independent diagonal-pattern census              realizable 58, absent [22, 25, 26, 37, 38, 41]
+PASS independent functional-law split                 pattern collisions tick 0 mixed 36; parity tick [0] mixed [0, 1]
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

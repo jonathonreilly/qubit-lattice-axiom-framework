@@ -19,7 +19,8 @@ one-CNOT witness.
 
 PASS requires the explicit one-CNOT construction, the complete finite census,
 and the source/control checks to agree.  The tiny basis-state interpreter is
-self-contained here so no undeclared transitive import can alter the result.
+self-contained here, but it is accepted only after AST validation binds it to
+the exact Cycle-719 alias chain and Cycle-715 basis-state semantics.
 """
 from __future__ import annotations
 
@@ -28,8 +29,15 @@ STDOUT_LIMIT_BYTES = 150_000
 HOUSE_STDOUT_LIMIT_BYTES = 6_000
 AUDIT_INPUT_PATHS = (
     "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+    "scripts/frontier_cycle719_local_handshake_controller_core_2026_07_26.py",
+    "scripts/frontier_cycle719_source_local_finalizer_core_2026_07_26.py",
+    "scripts/frontier_cycle719_recurrent_cycle612_bank_core_2026_07_26.py",
+    "scripts/frontier_cycle718_carrier_return_core_2026_07_26.py",
+    "scripts/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.py",
 )
 
+import ast
 from dataclasses import dataclass
 from hashlib import sha256
 import json
@@ -38,11 +46,26 @@ import sys
 from time import monotonic
 
 ROOT = Path(__file__).resolve().parents[1]
-AXIOM_PATH, = AUDIT_INPUT_PATHS
+(
+    AXIOM_PATH,
+    CORE_PATH,
+    HANDSHAKE_PATH,
+    FINALIZER_PATH,
+    BANK_PATH,
+    RETURN_PATH,
+    SEMANTICS_PATH,
+) = AUDIT_INPUT_PATHS
 
-# The axiom memo is cited authority and therefore text-only.  The operational
-# gate semantics below are local to this certificate and runner-hash bound.
+# The axiom memo is cited authority and therefore text-only.  Every executable
+# substrate source is parsed as text/AST and never imported.
 BLOCKLIST_CITED_PRIMARIES = (AXIOM_PATH,)
+SUBSTRATE_PATHS = AUDIT_INPUT_PATHS[1:]
+ALIAS_CHAIN = (
+    (CORE_PATH, "frontier_cycle719_local_handshake_controller_core_2026_07_26", "H", "H.A"),
+    (HANDSHAKE_PATH, "frontier_cycle719_source_local_finalizer_core_2026_07_26", "M", "M.A"),
+    (FINALIZER_PATH, "frontier_cycle719_recurrent_cycle612_bank_core_2026_07_26", "B", "B.A"),
+    (BANK_PATH, "frontier_cycle718_carrier_return_core_2026_07_26", "P", "P.A"),
+)
 SITE_COORDS = ((0, 0, 0), (1, 0, 0))
 DEFINITION = (
     "D[W,t,x](y|n)=indicator that landed deterministic basis-state semantics "
@@ -81,6 +104,127 @@ def apply_semantic(state: tuple[int, int], word: tuple[Gate, ...]) -> tuple[int,
         else:
             raise ValueError(f"unsupported gate kind: {gate.kind}")
     return tuple(output)
+
+
+def _top_level_assignments(tree: ast.Module, name: str) -> list[str]:
+    values = []
+    for node in tree.body:
+        if not isinstance(node, ast.Assign):
+            continue
+        if any(isinstance(target, ast.Name) and target.id == name for target in node.targets):
+            values.append(ast.unparse(node.value))
+    return values
+
+
+def _imports_as(tree: ast.Module, module: str, alias: str) -> bool:
+    return any(
+        isinstance(node, ast.Import)
+        and any(item.name == module and item.asname == alias for item in node.names)
+        for node in tree.body
+    )
+
+
+def _mutates_semantics_alias(tree: ast.Module, alias: str) -> bool:
+    protected = {"Gate", "x", "cn", "apply_semantic"}
+    for node in tree.body:
+        targets: list[ast.expr] = []
+        if isinstance(node, ast.Assign):
+            targets.extend(node.targets)
+        elif isinstance(node, (ast.AnnAssign, ast.AugAssign)):
+            targets.append(node.target)
+        for target in targets:
+            if (
+                isinstance(target, ast.Attribute)
+                and isinstance(target.value, ast.Name)
+                and target.value.id == alias
+                and target.attr in protected
+            ):
+                return True
+    return False
+
+
+def substrate_semantics_evidence() -> dict:
+    """Bind Cycle 719's exported A alias to Cycle 715 without importing it."""
+    edges = []
+    for path, module, alias, expected_assignment in ALIAS_CHAIN:
+        tree = ast.parse((ROOT / path).read_text(encoding="utf-8"), filename=path)
+        assignments = _top_level_assignments(tree, "A")
+        imported = _imports_as(tree, module, alias)
+        mutation = _mutates_semantics_alias(tree, "A")
+        edges.append({
+            "path": path,
+            "imports": f"{module} as {alias}",
+            "import_matches": imported,
+            "a_assignments": assignments,
+            "assignment_matches": assignments == [expected_assignment],
+            "semantics_alias_mutated": mutation,
+            "pass": imported and assignments == [expected_assignment] and not mutation,
+        })
+
+    return_tree = ast.parse(
+        (ROOT / RETURN_PATH).read_text(encoding="utf-8"), filename=RETURN_PATH
+    )
+    direct_import = _imports_as(
+        return_tree,
+        "frontier_cycle715_recurrent_directional_packet_bank_2026_07_26",
+        "A",
+    )
+    direct_assignments = _top_level_assignments(return_tree, "A")
+    direct_mutation = _mutates_semantics_alias(return_tree, "A")
+    edges.append({
+        "path": RETURN_PATH,
+        "imports": "frontier_cycle715_recurrent_directional_packet_bank_2026_07_26 as A",
+        "import_matches": direct_import,
+        "a_assignments": direct_assignments,
+        "assignment_matches": direct_assignments == [],
+        "semantics_alias_mutated": direct_mutation,
+        "pass": direct_import and direct_assignments == [] and not direct_mutation,
+    })
+
+    semantics_tree = ast.parse(
+        (ROOT / SEMANTICS_PATH).read_text(encoding="utf-8"), filename=SEMANTICS_PATH
+    )
+    functions = {
+        node.name: node for node in semantics_tree.body
+        if isinstance(node, ast.FunctionDef)
+    }
+    cn_function = functions.get("cn")
+    apply_function = functions.get("apply_semantic")
+    cn_return = next(
+        (node.value for node in cn_function.body if isinstance(node, ast.Return)), None
+    ) if cn_function is not None else None
+    cnot_update = None
+    if apply_function is not None:
+        for node in ast.walk(apply_function):
+            if isinstance(node, ast.If) and ast.unparse(node.test) == "gate.kind == 'CNOT'":
+                cnot_update = next(
+                    (item for item in node.body if isinstance(item, ast.AugAssign)), None
+                )
+                break
+    cn_ok = (
+        cn_return is not None
+        and ast.unparse(cn_return) == "Gate('CNOT', (control, target))"
+    )
+    update_ok = (
+        cnot_update is not None
+        and isinstance(cnot_update.op, ast.BitXor)
+        and ast.unparse(cnot_update.target) == "state[gate.wires[1]]"
+        and ast.unparse(cnot_update.value) == "state[gate.wires[0]]"
+    )
+    semantics = {
+        "path": SEMANTICS_PATH,
+        "cn_shape": ast.unparse(cn_return) if cn_return is not None else "",
+        "cnot_update": ast.unparse(cnot_update) if cnot_update is not None else "",
+        "cn_constructs_control_target_cnot": cn_ok,
+        "cnot_is_target_xor_control": update_ok,
+        "pass": cn_ok and update_ok,
+    }
+    return {
+        "alias_edges": edges,
+        "cycle715_semantics": semantics,
+        "local_semantics_equivalent": cn_ok and update_ok,
+        "pass": all(edge["pass"] for edge in edges) and cn_ok and update_ok,
+    }
 
 
 def compact(value: object) -> str:
@@ -222,6 +366,7 @@ def input_controls() -> dict:
         "For each site, the probability distribution over the possibilities is\n"
         "determined by, and varies with, the nearest-neighbor conditions."
     )
+    substrate = substrate_semantics_evidence()
     return {
         "literal_audit_input_paths": list(AUDIT_INPUT_PATHS),
         "all_inputs_exist_worktree_relative": existing,
@@ -230,7 +375,9 @@ def input_controls() -> dict:
         "blocklist_text_only": all(
             not path.endswith(".py") for path in BLOCKLIST_CITED_PRIMARIES
         ),
-        "self_contained_semantics": True,
+        "substrate_paths_text_ast_only": list(SUBSTRATE_PATHS),
+        "substrate_semantics_evidence": substrate,
+        "self_contained_semantics_bound_to_substrate": substrate["pass"],
         "landed_axiom_needle_matches": axiom_needle in axiom_text,
     }
 
@@ -314,7 +461,7 @@ def main() -> int:
     d_ok = (
         controls["all_inputs_exist_worktree_relative"]
         and controls["blocklist_text_only"]
-        and controls["self_contained_semantics"]
+        and controls["self_contained_semantics_bound_to_substrate"]
         and controls["landed_axiom_needle_matches"]
         and all(controls["sha256"].values())
         and deterministic
@@ -326,7 +473,9 @@ def main() -> int:
     d_finding = (
         f"sha_pins={compact(controls['sha256'])}; BLOCKLIST="
         f"{controls['blocklist_cited_primaries']} text_only="
-        f"{controls['blocklist_text_only']}; determinism_replay={deterministic}; "
+        f"{controls['blocklist_text_only']}; substrate_bridge="
+        f"{controls['self_contained_semantics_bound_to_substrate']}; "
+        f"determinism_replay={deterministic}; "
         f"runtime_s={elapsed:.6f}<1400; stdout_upper_bound_bytes="
         f"{pre_output_upper_bound}<{HOUSE_STDOUT_LIMIT_BYTES}<"
         f"{STDOUT_LIMIT_BYTES}; timeout_s={AUDIT_TIMEOUT_SEC}<1400"
@@ -385,7 +534,7 @@ def main() -> int:
     )
     lines.append("CHECKER_PAYLOAD: " + compact(checker_payload))
     verdict = (
-        "SELF_CONTAINED_ONE_CNOT_INTER_SITE_WITNESS"
+        "CYCLE719_BOUND_ONE_CNOT_INTER_SITE_WITNESS"
         if report["all_certificates_pass"]
         else "CYCLE970_CHECKS_INCOMPLETE"
     )

@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """Cycle-970 independent recomputation of the one-CNOT witness.
 
-The checker imports none of the primary modules. It binds stable source
+The checker imports none of the primary or substrate modules. It binds stable source
 inputs, validates the freshly written primary cache envelope without pinning
-timing-bearing cache bytes, checks the primary's self-contained CNOT semantics
-by AST, and recomputes the finite census with an independent XOR interpreter.
+timing-bearing cache bytes, independently validates the exact Cycle-719 to
+Cycle-715 alias chain and the primary's equivalent local CNOT semantics by
+AST, and recomputes the finite census with an independent XOR interpreter.
 
 PASS predicates test source pinning, cache-envelope integrity, exact census
 reconciliation, the positive witness, and resource bounds.
@@ -18,6 +19,12 @@ AUDIT_INPUT_PATHS = (
     "scripts/frontier_cycle970_inter_site_gate_2026_08_09.py",
     "logs/runner-cache/frontier_cycle970_inter_site_gate_2026_08_09.txt",
     "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+    "scripts/frontier_cycle719_local_handshake_controller_core_2026_07_26.py",
+    "scripts/frontier_cycle719_source_local_finalizer_core_2026_07_26.py",
+    "scripts/frontier_cycle719_recurrent_cycle612_bank_core_2026_07_26.py",
+    "scripts/frontier_cycle718_carrier_return_core_2026_07_26.py",
+    "scripts/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.py",
 )
 BLOCKLIST_CITED_PRIMARIES = AUDIT_INPUT_PATHS
 
@@ -29,13 +36,42 @@ import sys
 from time import monotonic
 
 ROOT = Path(__file__).resolve().parents[1]
-PRIMARY_PATH, PRIMARY_CACHE, AXIOM_PATH = AUDIT_INPUT_PATHS
+(
+    PRIMARY_PATH,
+    PRIMARY_CACHE,
+    AXIOM_PATH,
+    CORE_PATH,
+    HANDSHAKE_PATH,
+    FINALIZER_PATH,
+    BANK_PATH,
+    RETURN_PATH,
+    SEMANTICS_PATH,
+) = AUDIT_INPUT_PATHS
+SUBSTRATE_PATHS = AUDIT_INPUT_PATHS[3:]
 EXPECTED_SHA256 = {
-    PRIMARY_PATH: "6b56fb761c478e394c95372ecb84a5d9e49623036a7eb262387ac37352e16dc0",
+    PRIMARY_PATH: "361ebed36d4b29cfb60f27dbe4b452a8e0bac0a1b70cf07d58a4185923d2bf18",
     AXIOM_PATH: "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
+    CORE_PATH: "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
+    HANDSHAKE_PATH: "0008837e938fdc589473967763c5319aeb5fc4996bd8380d5d33c3ec61062691",
+    FINALIZER_PATH: "b514b0e20197bb0ce5e5440b4b0c1f2a0f74a1962b127e8a4e4a2e97c8f86a1a",
+    BANK_PATH: "b8afe7e4697b0838715a079203930fb37bc7a6fc133e092f02a22141049aad8c",
+    RETURN_PATH: "c9196fdfe2ed6101f7f62ac3552c9fb4944276b67f9f82fe326c89f8c21e23d7",
+    SEMANTICS_PATH: "7ffe1dd4b169f774dce5bc9db29c5329c6e06c92e02506fbc734916ff11de884",
 }
 BLOCKLIST_MODULES = (
     "frontier_cycle970_inter_site_gate_2026_08_09",
+    "frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26",
+    "frontier_cycle719_local_handshake_controller_core_2026_07_26",
+    "frontier_cycle719_source_local_finalizer_core_2026_07_26",
+    "frontier_cycle719_recurrent_cycle612_bank_core_2026_07_26",
+    "frontier_cycle718_carrier_return_core_2026_07_26",
+    "frontier_cycle715_recurrent_directional_packet_bank_2026_07_26",
+)
+ALIAS_CHAIN = (
+    (CORE_PATH, "frontier_cycle719_local_handshake_controller_core_2026_07_26", "H", "H.A"),
+    (HANDSHAKE_PATH, "frontier_cycle719_source_local_finalizer_core_2026_07_26", "M", "M.A"),
+    (FINALIZER_PATH, "frontier_cycle719_recurrent_cycle612_bank_core_2026_07_26", "B", "B.A"),
+    (BANK_PATH, "frontier_cycle718_carrier_return_core_2026_07_26", "P", "P.A"),
 )
 
 
@@ -80,6 +116,112 @@ def declared_input_fingerprint(paths: tuple[str, ...]) -> str:
     return digest.hexdigest()
 
 
+def top_assignments(tree: ast.Module, name: str) -> list[str]:
+    return [
+        ast.unparse(node.value)
+        for node in tree.body
+        if isinstance(node, ast.Assign)
+        and any(isinstance(target, ast.Name) and target.id == name for target in node.targets)
+    ]
+
+
+def imports_as(tree: ast.Module, module: str, alias: str) -> bool:
+    return any(
+        isinstance(node, ast.Import)
+        and any(item.name == module and item.asname == alias for item in node.names)
+        for node in tree.body
+    )
+
+
+def semantics_alias_mutated(tree: ast.Module, alias: str) -> bool:
+    protected = {"Gate", "x", "cn", "apply_semantic"}
+    for node in tree.body:
+        targets = []
+        if isinstance(node, ast.Assign):
+            targets.extend(node.targets)
+        elif isinstance(node, (ast.AnnAssign, ast.AugAssign)):
+            targets.append(node.target)
+        if any(
+            isinstance(target, ast.Attribute)
+            and isinstance(target.value, ast.Name)
+            and target.value.id == alias
+            and target.attr in protected
+            for target in targets
+        ):
+            return True
+    return False
+
+
+def substrate_ast_evidence(payloads: dict[str, bytes]) -> dict:
+    edges = []
+    for path, module, alias, assignment in ALIAS_CHAIN:
+        tree = ast.parse(payloads[path].decode("utf-8"), filename=path)
+        assignments = top_assignments(tree, "A")
+        imported = imports_as(tree, module, alias)
+        mutation = semantics_alias_mutated(tree, "A")
+        edges.append({
+            "path": path,
+            "import_matches": imported,
+            "a_assignments": assignments,
+            "assignment_matches": assignments == [assignment],
+            "semantics_alias_mutated": mutation,
+            "pass": imported and assignments == [assignment] and not mutation,
+        })
+
+    return_tree = ast.parse(payloads[RETURN_PATH].decode("utf-8"), filename=RETURN_PATH)
+    direct_import = imports_as(
+        return_tree,
+        "frontier_cycle715_recurrent_directional_packet_bank_2026_07_26",
+        "A",
+    )
+    direct_assignments = top_assignments(return_tree, "A")
+    direct_mutation = semantics_alias_mutated(return_tree, "A")
+    edges.append({
+        "path": RETURN_PATH,
+        "import_matches": direct_import,
+        "a_assignments": direct_assignments,
+        "assignment_matches": direct_assignments == [],
+        "semantics_alias_mutated": direct_mutation,
+        "pass": direct_import and direct_assignments == [] and not direct_mutation,
+    })
+
+    tree = ast.parse(payloads[SEMANTICS_PATH].decode("utf-8"), filename=SEMANTICS_PATH)
+    functions = {
+        node.name: node for node in tree.body if isinstance(node, ast.FunctionDef)
+    }
+    cn = functions.get("cn")
+    apply_semantic = functions.get("apply_semantic")
+    cn_return = next(
+        (node.value for node in cn.body if isinstance(node, ast.Return)), None
+    ) if cn is not None else None
+    cnot_update = None
+    if apply_semantic is not None:
+        for node in ast.walk(apply_semantic):
+            if isinstance(node, ast.If) and ast.unparse(node.test) == "gate.kind == 'CNOT'":
+                cnot_update = next(
+                    (item for item in node.body if isinstance(item, ast.AugAssign)), None
+                )
+                break
+    cn_ok = cn_return is not None and ast.unparse(cn_return) == "Gate('CNOT', (control, target))"
+    update_ok = (
+        cnot_update is not None
+        and isinstance(cnot_update.op, ast.BitXor)
+        and ast.unparse(cnot_update.target) == "state[gate.wires[1]]"
+        and ast.unparse(cnot_update.value) == "state[gate.wires[0]]"
+    )
+    semantics = {
+        "path": SEMANTICS_PATH,
+        "cn_shape": ast.unparse(cn_return) if cn_return is not None else "",
+        "cnot_update": ast.unparse(cnot_update) if cnot_update is not None else "",
+        "pass": cn_ok and update_ok,
+    }
+    return {
+        "alias_edges": edges,
+        "cycle715_semantics": semantics,
+        "pass": all(edge["pass"] for edge in edges) and semantics["pass"],
+    }
+
+
 def primary_ast_evidence(primary_text: str) -> dict:
     tree = ast.parse(primary_text, filename=PRIMARY_PATH)
     assigned = None
@@ -119,7 +261,7 @@ def primary_ast_evidence(primary_text: str) -> dict:
             imported_modules.append(node.module or "")
     return {
         "literal_audit_input_paths": list(assigned) if assigned is not None else None,
-        "matches_expected_primary_inputs": assigned == (AXIOM_PATH,),
+        "matches_expected_primary_inputs": assigned == (AXIOM_PATH,) + SUBSTRATE_PATHS,
         "imported_modules": imported_modules,
         "imports_cycle719_or_cycle715": any(
             "cycle719" in name or "cycle715" in name for name in imported_modules
@@ -239,6 +381,7 @@ def main() -> int:
         claims = {}
     primary_text = payloads[PRIMARY_PATH].decode("utf-8", errors="replace")
     primary_ast = primary_ast_evidence(primary_text)
+    substrate_ast = substrate_ast_evidence(payloads)
     primary_inputs = tuple(primary_ast["literal_audit_input_paths"] or ())
     cache_header = parse_cache_header(
         payloads[PRIMARY_CACHE].decode("utf-8", errors="replace")
@@ -284,6 +427,7 @@ def main() -> int:
         and not primary_ast["imports_cycle719_or_cycle715"]
         and primary_ast["cn_constructs_control_target_cnot"]
         and primary_ast["cnot_is_target_xor_control"]
+        and substrate_ast["pass"]
         and cache_envelope_ok
     )
     r0_finding = (
@@ -292,7 +436,8 @@ def main() -> int:
         f"BLOCKLIST_text_AST_only={list(BLOCKLIST_CITED_PRIMARIES)}; "
         f"blocked_modules_loaded={any(name in sys.modules for name in BLOCKLIST_MODULES)}; "
         f"transitive_cycle_import={primary_ast['imports_cycle719_or_cycle715']}; "
-        f"self_contained_semantics={primary_ast['cnot_update']}"
+        f"self_contained_semantics={primary_ast['cnot_update']}; "
+        f"cycle719_to_cycle715_ast_bridge={substrate_ast['pass']}"
     )
 
     r1_ok = (
@@ -387,6 +532,7 @@ def main() -> int:
         "pins": pin_rows,
         "blocklist": list(BLOCKLIST_CITED_PRIMARIES),
         "primary_ast_evidence": primary_ast,
+        "substrate_ast_evidence": substrate_ast,
         "primary_cache_envelope": cache_header,
         "primary_cache_envelope_valid": cache_envelope_ok,
         "independent_findings": {

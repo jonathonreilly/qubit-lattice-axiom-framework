@@ -3,11 +3,17 @@
  "blocklist": [
   "scripts/frontier_cycle970_inter_site_gate_2026_08_09.py",
   "logs/runner-cache/frontier_cycle970_inter_site_gate_2026_08_09.txt",
-  "docs/MINIMAL_AXIOMS_2026-06-29.md"
+  "docs/MINIMAL_AXIOMS_2026-06-29.md",
+  "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+  "scripts/frontier_cycle719_local_handshake_controller_core_2026_07_26.py",
+  "scripts/frontier_cycle719_source_local_finalizer_core_2026_07_26.py",
+  "scripts/frontier_cycle719_recurrent_cycle612_bank_core_2026_07_26.py",
+  "scripts/frontier_cycle718_carrier_return_core_2026_07_26.py",
+  "scripts/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.py"
  ],
  "certificates": {
   "R0_SOURCE_PINS_CACHE_ENVELOPE_AND_AST": {
-   "finding": "pins_match=2/2; primary_cache_envelope=True; BLOCKLIST_text_AST_only=['scripts/frontier_cycle970_inter_site_gate_2026_08_09.py', 'logs/runner-cache/frontier_cycle970_inter_site_gate_2026_08_09.txt', 'docs/MINIMAL_AXIOMS_2026-06-29.md']; blocked_modules_loaded=False; transitive_cycle_import=False; self_contained_semantics=output[gate.wires[1]] ^= output[gate.wires[0]]",
+   "finding": "pins_match=8/8; primary_cache_envelope=True; BLOCKLIST_text_AST_only=['scripts/frontier_cycle970_inter_site_gate_2026_08_09.py', 'logs/runner-cache/frontier_cycle970_inter_site_gate_2026_08_09.txt', 'docs/MINIMAL_AXIOMS_2026-06-29.md', 'scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py', 'scripts/frontier_cycle719_local_handshake_controller_core_2026_07_26.py', 'scripts/frontier_cycle719_source_local_finalizer_core_2026_07_26.py', 'scripts/frontier_cycle719_recurrent_cycle612_bank_core_2026_07_26.py', 'scripts/frontier_cycle718_carrier_return_core_2026_07_26.py', 'scripts/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.py']; blocked_modules_loaded=False; transitive_cycle_import=False; self_contained_semantics=output[gate.wires[1]] ^= output[gate.wires[0]]; cycle719_to_cycle715_ast_bridge=True",
    "pass": true
   },
   "R1_INDEPENDENT_STATE_RESOLVED_CENSUS": {
@@ -23,7 +29,7 @@
    "pass": true
   },
   "R4_CONTROLS": {
-   "finding": "determinism_replay=True; runtime_s=0.001968<1400; stdout_upper_bound_bytes=2595<6000<150000; timeout_s=300<1400; literal_inputs=['scripts/frontier_cycle970_inter_site_gate_2026_08_09.py', 'logs/runner-cache/frontier_cycle970_inter_site_gate_2026_08_09.txt', 'docs/MINIMAL_AXIOMS_2026-06-29.md']",
+   "finding": "determinism_replay=True; runtime_s=0.024698<1400; stdout_upper_bound_bytes=3069<6000<150000; timeout_s=300<1400; literal_inputs=['scripts/frontier_cycle970_inter_site_gate_2026_08_09.py', 'logs/runner-cache/frontier_cycle970_inter_site_gate_2026_08_09.txt', 'docs/MINIMAL_AXIOMS_2026-06-29.md', 'scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py', 'scripts/frontier_cycle719_local_handshake_controller_core_2026_07_26.py', 'scripts/frontier_cycle719_source_local_finalizer_core_2026_07_26.py', 'scripts/frontier_cycle719_recurrent_cycle612_bank_core_2026_07_26.py', 'scripts/frontier_cycle718_carrier_return_core_2026_07_26.py', 'scripts/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.py']",
    "pass": true
   }
  },
@@ -70,9 +76,9 @@
  "pins": [
   {
    "exists": true,
-   "expected": "6b56fb761c478e394c95372ecb84a5d9e49623036a7eb262387ac37352e16dc0",
+   "expected": "361ebed36d4b29cfb60f27dbe4b452a8e0bac0a1b70cf07d58a4185923d2bf18",
    "match": true,
-   "observed": "6b56fb761c478e394c95372ecb84a5d9e49623036a7eb262387ac37352e16dc0",
+   "observed": "361ebed36d4b29cfb60f27dbe4b452a8e0bac0a1b70cf07d58a4185923d2bf18",
    "path": "scripts/frontier_cycle970_inter_site_gate_2026_08_09.py"
   },
   {
@@ -81,6 +87,48 @@
    "match": true,
    "observed": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
    "path": "docs/MINIMAL_AXIOMS_2026-06-29.md"
+  },
+  {
+   "exists": true,
+   "expected": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
+   "match": true,
+   "observed": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
+   "path": "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py"
+  },
+  {
+   "exists": true,
+   "expected": "0008837e938fdc589473967763c5319aeb5fc4996bd8380d5d33c3ec61062691",
+   "match": true,
+   "observed": "0008837e938fdc589473967763c5319aeb5fc4996bd8380d5d33c3ec61062691",
+   "path": "scripts/frontier_cycle719_local_handshake_controller_core_2026_07_26.py"
+  },
+  {
+   "exists": true,
+   "expected": "b514b0e20197bb0ce5e5440b4b0c1f2a0f74a1962b127e8a4e4a2e97c8f86a1a",
+   "match": true,
+   "observed": "b514b0e20197bb0ce5e5440b4b0c1f2a0f74a1962b127e8a4e4a2e97c8f86a1a",
+   "path": "scripts/frontier_cycle719_source_local_finalizer_core_2026_07_26.py"
+  },
+  {
+   "exists": true,
+   "expected": "b8afe7e4697b0838715a079203930fb37bc7a6fc133e092f02a22141049aad8c",
+   "match": true,
+   "observed": "b8afe7e4697b0838715a079203930fb37bc7a6fc133e092f02a22141049aad8c",
+   "path": "scripts/frontier_cycle719_recurrent_cycle612_bank_core_2026_07_26.py"
+  },
+  {
+   "exists": true,
+   "expected": "c9196fdfe2ed6101f7f62ac3552c9fb4944276b67f9f82fe326c89f8c21e23d7",
+   "match": true,
+   "observed": "c9196fdfe2ed6101f7f62ac3552c9fb4944276b67f9f82fe326c89f8c21e23d7",
+   "path": "scripts/frontier_cycle718_carrier_return_core_2026_07_26.py"
+  },
+  {
+   "exists": true,
+   "expected": "7ffe1dd4b169f774dce5bc9db29c5329c6e06c92e02506fbc734916ff11de884",
+   "match": true,
+   "observed": "7ffe1dd4b169f774dce5bc9db29c5329c6e06c92e02506fbc734916ff11de884",
+   "path": "scripts/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.py"
   }
  ],
  "primary_ast_evidence": {
@@ -90,6 +138,7 @@
   "cnot_update": "output[gate.wires[1]] ^= output[gate.wires[0]]",
   "imported_modules": [
    "__future__",
+   "ast",
    "dataclasses",
    "hashlib",
    "json",
@@ -99,23 +148,88 @@
   ],
   "imports_cycle719_or_cycle715": false,
   "literal_audit_input_paths": [
-   "docs/MINIMAL_AXIOMS_2026-06-29.md"
+   "docs/MINIMAL_AXIOMS_2026-06-29.md",
+   "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+   "scripts/frontier_cycle719_local_handshake_controller_core_2026_07_26.py",
+   "scripts/frontier_cycle719_source_local_finalizer_core_2026_07_26.py",
+   "scripts/frontier_cycle719_recurrent_cycle612_bank_core_2026_07_26.py",
+   "scripts/frontier_cycle718_carrier_return_core_2026_07_26.py",
+   "scripts/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.py"
   ],
   "matches_expected_primary_inputs": true
  },
  "primary_cache_envelope": {
-  "elapsed_sec": "0.05",
+  "elapsed_sec": "0.09",
   "exit_code": "0",
-  "input_fingerprint_sha256": "db7786cde9df9554b9e925bd8927e6f129e0cdd1546e5ea349a31056104b73bb",
+  "input_fingerprint_sha256": "2a7d6db0cd6d328bcc7eb1110f05619b385ebc9807d3fe32cc8e728e2796ca3c",
   "runner": "scripts/frontier_cycle970_inter_site_gate_2026_08_09.py",
-  "runner_sha256": "6b56fb761c478e394c95372ecb84a5d9e49623036a7eb262387ac37352e16dc0",
+  "runner_sha256": "361ebed36d4b29cfb60f27dbe4b452a8e0bac0a1b70cf07d58a4185923d2bf18",
   "status": "ok",
   "timeout_sec": "300"
  },
  "primary_cache_envelope_valid": true,
  "role": "independent_checker",
- "runtime_sec": 0.0019684169674292207,
- "stdout_bytes": 1353,
+ "runtime_sec": 0.02469845802988857,
+ "stdout_bytes": 2263,
+ "substrate_ast_evidence": {
+  "alias_edges": [
+   {
+    "a_assignments": [
+     "H.A"
+    ],
+    "assignment_matches": true,
+    "import_matches": true,
+    "pass": true,
+    "path": "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+    "semantics_alias_mutated": false
+   },
+   {
+    "a_assignments": [
+     "M.A"
+    ],
+    "assignment_matches": true,
+    "import_matches": true,
+    "pass": true,
+    "path": "scripts/frontier_cycle719_local_handshake_controller_core_2026_07_26.py",
+    "semantics_alias_mutated": false
+   },
+   {
+    "a_assignments": [
+     "B.A"
+    ],
+    "assignment_matches": true,
+    "import_matches": true,
+    "pass": true,
+    "path": "scripts/frontier_cycle719_source_local_finalizer_core_2026_07_26.py",
+    "semantics_alias_mutated": false
+   },
+   {
+    "a_assignments": [
+     "P.A"
+    ],
+    "assignment_matches": true,
+    "import_matches": true,
+    "pass": true,
+    "path": "scripts/frontier_cycle719_recurrent_cycle612_bank_core_2026_07_26.py",
+    "semantics_alias_mutated": false
+   },
+   {
+    "a_assignments": [],
+    "assignment_matches": true,
+    "import_matches": true,
+    "pass": true,
+    "path": "scripts/frontier_cycle718_carrier_return_core_2026_07_26.py",
+    "semantics_alias_mutated": false
+   }
+  ],
+  "cycle715_semantics": {
+   "cn_shape": "Gate('CNOT', (control, target))",
+   "cnot_update": "state[gate.wires[1]] ^= state[gate.wires[0]]",
+   "pass": true,
+   "path": "scripts/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.py"
+  },
+  "pass": true
+ },
  "target_claim_type": "bounded_theorem",
  "verdict": "INDEPENDENT_ONE_CNOT_WITNESS_RECOMPUTED"
 }

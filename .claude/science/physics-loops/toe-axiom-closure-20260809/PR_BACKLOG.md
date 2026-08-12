@@ -1097,3 +1097,16 @@ citation registration is `5,505/15,771`, out-degree four. N1--N8 and N5 land
 with the science. This is significant emergent-IR route progress but no
 canonical axiom, fixed TOE percentage, audit verdict, or `review-loop`
 change. Landing order adds Block 59 after #6151.
+
+## Block 60
+
+Science is committed locally on
+`physics-loop/toe-axiom-closure-block60-generic-ward-20260812`, stacked
+exactly on Block-59 delivery head `057f996939`; PR is not yet open. Its
+distinct review object is the exact face/body nonaxial phase quotient, four
+cubic Ward tails, and corrected two-stage displacement-generator cancellation
+mechanism. Primary/cache is `PASS=7 FAIL=0`; four mutations fail one check
+each; citation registration is `5,506/15,774`, out-degree three. N1--N8 and
+N5 land with the science. This is significant route progress but no canonical
+axiom, fixed TOE percentage, audit verdict, or `review-loop` change. Landing
+order will place Block 60 after #6152.

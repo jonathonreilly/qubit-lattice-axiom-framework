@@ -2664,3 +2664,29 @@ instance or Fourier census.
   movement; the map is unchanged for at least 57 hours. PR #6152 is open,
   mergeable, and `CLEAN`. No canonical axiom, audit verdict, or `review-loop`
   changes.
+
+## Block 60 Construction And Adversarial Record
+
+- Constructed exact cyclic phase quotients for face and body cubic momentum
+  windings. Verified all fifteen edges, fifty hinge classes, and 240
+  simplex-hinge incidences per phase site remain.
+- Built static and transverse Lorentz-null source tensors. Source Ward
+  residual is below `1.5e-16`; the complete eleven-dimensional nongauge
+  response residual is below `2e-11`.
+- Measured face static/null powers `2.988411/2.997559` and body static/null
+  powers `2.987628/2.970265`; maximum fit residual is `0.21%` and normalized
+  spread `2.032%`.
+- Rejected an initially proposed `O(k^2)` full-force explanation. The force is
+  bounded and nonzero; its linear-generator contraction starts at `O(k^2)`,
+  and the quadratic generator term cancels that coefficient to `O(k^3)`.
+- Phase-shift, infrared-order, factorization, and note-boundary mutations each
+  exit nonzero with one failure. Fresh N1--N8 preserves less-symmetric,
+  multi-mode, observable, nonlinear, and exact-action alternatives.
+- Primary/cache is `PASS=7 FAIL=0` in 88.7 seconds with 3,963-character
+  stdout. Citation registration is `5,506/15,774`, out-degree three.
+  Vocabulary, strict lint, premise purity, model normalization, Python/cache,
+  claim typing, whitespace, forensic N5, and enforced graph/link invariants
+  pass.
+- Science commit is `e40b298a32`, on exact Block-59 delivery `057f996939`.
+  This is significant mechanism/route progress and zero TOE percentage
+  movement. No canonical axiom, audit verdict, or `review-loop` changes.

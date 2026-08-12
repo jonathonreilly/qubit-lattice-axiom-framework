@@ -2354,3 +2354,43 @@ choose either exact microscopic Noether symmetry or a controlled emergent
 refinement contract specifying a norm, refinement map, source class,
 observable/state quotient, and convergence rate. Approximate-covariance prose
 without those data cannot close a lane.
+
+## Block 60 Handoff
+
+Block 60 is local on branch
+`physics-loop/toe-axiom-closure-block60-generic-ward-20260812`, stacked
+exactly on Block-59 delivery head `057f996939`. Science commit is
+`e40b298a32`.
+
+It tests whether Block 59's `k^3` result was a one-axis accident. Exact cyclic
+phase coordinates `s=n.x mod L` were built for face winding `(1,1,0,0)` and
+body winding `(1,1,1,0)`. Every local edge, all fifty hinges, and all 240
+simplex-hinge incidences remain; the reduction is exact for one Bloch wave.
+
+Static and transverse Lorentz-null rank-one tensors were solved in the full
+eleven-dimensional nongauge quotient. On face periods `49,97,145`, fitted
+powers are `2.988411/2.997559`. On body periods `97,145,193`, they are
+`2.987628/2.970265`. Maximum fit residual is `0.21%`; maximum spread of
+`W/|k|^3` is `2.032%`.
+
+An initially proposed `k^2`-force times `k`-generator interpretation failed
+and was removed. The correct resolved mechanism is more informative: the
+full generated force tends a nonzero bounded norm; contraction with the
+linear displacement-generator term begins at `k^2`; the quadratic generator
+term cancels that leading coefficient, leaving the exact Ward vector at
+`k^3`. Normalized complex vectors align above `0.995`, and half-amplitude
+controls are stable within `0.003%`.
+
+Primary/cache is `PASS=7 FAIL=0` in 88.7 seconds; phase-shift,
+infrared-order, factorization, and note-boundary mutations each fail one
+check. Citation registration is `5,506/15,774`, out-degree three. Vocabulary,
+strict lint, premise purity, model normalization, Python/cache, claim typing,
+whitespace, N1--N8/N5, and enforced graph/link gates pass. No canonical axiom,
+TOE percentage, audit verdict, or `review-loop` changes.
+
+This is significant mechanism-level progress and remains zero scored TOE
+progress. The next qualifying calculation is symbolic: derive the two
+multivariable generator-contraction cancellations uniformly in momentum angle
+and a named conserved source class, or break them with a less-symmetric
+winding. Then project the soft sector onto the two-TT/Record physical
+observable quotient. No more period scans qualify.

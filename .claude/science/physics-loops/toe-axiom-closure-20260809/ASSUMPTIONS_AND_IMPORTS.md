@@ -915,3 +915,25 @@ comparison with the target `k^2` equation does not supply observable
 decoupling, constraint propagation, a physical norm, source/action selection,
 or a continuum state. No external observed constant, canonical axiom edit,
 TOE percentage move, audit verdict, or `review-loop` is imported.
+
+## Block 60 Assumptions And Imports
+
+Block 60 imports the current minimal axiom boundary, Block 59's actual local
+action and axial `k^3` evidence, and Block 53's conditional two-TT causal
+target. It imports no generic-momentum theorem, nonlinear Noether identity,
+or continuum result.
+
+The integer windings `(1,1,0,0)` and `(1,1,1,0)`; their exact cyclic phase
+quotients; the static tensor; transverse Lorentz-null vectors; fixed metric
+response; analytic complex-direction amplitude; and three tail periods per
+orbit are bounded data. Each phase quotient retains the complete local
+four-dimensional action for one Bloch wave, but it does not retain arbitrary
+momentum superpositions, incommensurate angular sequences, general conserved
+stress, or nonlinear solved nonaxial branches.
+
+The displacement Taylor series is exact algebra. Constant-metric flatness and
+the two lower-order cancellations are executed evidence, not imported
+symbolic multivariable theorems. No observable decoupling, state norm,
+refinement map, selected physical source/action, external observed constant,
+canonical axiom edit, TOE percentage move, audit verdict, or `review-loop` is
+imported.

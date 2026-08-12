@@ -1933,3 +1933,29 @@ lines are in the landing primary cache.
   nonlinear Lorentzian theorem, selected law, axiom amendment, or audit
   verdict. The map is unchanged for at least 57 hours; fresh N1--N8 lands and
   no `review-loop` is used.
+
+## Block 60 Claim Status
+
+- Exact phase carrier: dotting every local edge anchor with the face or body
+  winding preserves all fifteen edge classes, fifty hinge classes, and 240
+  simplex-hinge incidences per cyclic phase site.
+- Sources: static and Lorentz-null rank-one tensors are transverse to each
+  chosen momentum. Source Ward residual stays below `1.5e-16`, and the full
+  eleven-dimensional nongauge equations close below `2e-11`.
+- Nonaxial order: fitted powers are `2.988411`, `2.997559`, `2.987628`, and
+  `2.970265`; maximum normalized-tail spread is `1.02032`, and fit residuals
+  are below `0.21%`.
+- Cancellation mechanism: the generated second-harmonic force has a bounded
+  nonzero norm. Its linear-generator contraction is `O(k^2)`; adding the
+  quadratic generator term cancels that coefficient to `O(k^3)`. Exact
+  first-to-last normalized Ward-vector alignment exceeds `0.995`.
+- Evidence: primary/cache `PASS=7 FAIL=0`; four targeted mutations fail one
+  check each; graph `5,506/15,774`, out-degree three. Vocabulary, strict lint,
+  premise purity, model normalization, Python/cache, claim typing, whitespace,
+  N5, and enforced graph/link invariants pass. Science commit is `e40b298a32`.
+- Scope: the axial-artifact objection fails on two cubic nonaxial orbits. This
+  is significant mechanism and route progress, but zero TOE percentage
+  movement—not a generic angular or uniform refinement theorem, arbitrary
+  source result, observable/state theorem, nonlinear Lorentzian closure,
+  selected law, axiom amendment, or audit verdict. Fresh N1--N8 lands; no
+  `review-loop` is used.

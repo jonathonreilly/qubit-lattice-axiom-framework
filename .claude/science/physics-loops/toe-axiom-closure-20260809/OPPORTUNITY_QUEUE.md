@@ -430,3 +430,18 @@ family, prove physical decoupling, or close nonlinear Lorentzian propagation.
 Re-score the portfolio at most every three hours and immediately after any of
 those decisions. Route progress is reported separately from TOE percentage
 movement.
+
+## Post-Block-60 Priority Refresh
+
+| Rank | Target | Exact next witness | Why now |
+|---:|---|---|---|
+| 1 | symbolic uniform Ward cancellation | derive the multivariable quadratic-force coefficients and prove the `Gamma_1` contraction has no `O(k)` term and `Gamma_1+Gamma_2` has no `O(k^2)` term for a named conserved source class; include one less-symmetric counter-control | two independent nonaxial cubic orbits now survive, and the exact cancellation coefficients—not more tail points—control the emergent route |
+| 2 | two-TT/Record observable decoupling | project the soft displacement/Schur response into the retained TT observables, Record source, and state norm with an explicit convergence rate | the Ward defect may be irrelevant only if pseudo-modes do not contaminate physical observables or evolution |
+| 3 | refinement and nonlinear Lorentzian binding | specify the refinement map/norm/source class and prove compatibility with the Block-53 causal update, positivity, and nonlinear constraint propagation | success here can begin actual gravity/Records obligation retirement |
+| 4 | exact microscopic fallback | dynamical-source cancellation, improved/perfect action, Pachner/tent, or connection law | still live, but lower expected value unless ranks one or two fail or exact cutoff symmetry is adopted |
+
+Efficiency gate: stop all period, coupling, coefficient, and precision scans.
+Rank-one work must produce symbolic coefficient identities or a concrete
+counterexample. Report mechanism/route progress separately from TOE percentage
+movement and re-rank after each identity or failure, otherwise at most every
+three hours.

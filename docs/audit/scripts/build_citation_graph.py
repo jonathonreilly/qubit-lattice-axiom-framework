@@ -192,6 +192,12 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
         "scripts/physical_stencil_derived_centrality_cycle721_"
         "independent_check_2026_08_02.py",
     ],
+    # Cycle 723's checker independently reconstructs the exact corner-piece,
+    # path-stencil, facet-cover, and one-unit-cell lower-bound enumerations.
+    "physical_adjacency_admissible_assembly_trade_cycle723_note_2026-08-03": [
+        "scripts/physical_adjacency_admissible_assembly_trade_cycle723_"
+        "independent_check_2026_08_03.py",
+    ],
     "b4_clock_relation_run_cycle879_bounded_theorem_note_2026-07-28": [
         "scripts/frontier_cycle879_b4_relation_independent_check_2026_07_28.py",
     ],

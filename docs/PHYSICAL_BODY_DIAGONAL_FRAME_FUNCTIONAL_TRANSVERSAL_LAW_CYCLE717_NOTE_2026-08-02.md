@@ -1,213 +1,227 @@
-# The Body-Diagonal Law for the Reassembled Static Operator, and the Transversal Refinement — Cycle 717
+# Finite Body-Diagonal Action, Covering-Family Census, and Seeded Transversal Scans — Cycle 717
 
 Date: 2026-08-02
 
 Claim type: bounded_theorem
 
-Authority: none. Audit: unset. Constitutional effect: none. This cycle edits no
-axiom, foundation, Qualification, primitive, registry, policy, queue,
-audit-status, or PR-control surface. No new axiom or primitive is proposed or
-adopted.
+Status: proposed_retained
 
-## Setting
+Authority: none. Audit status is set only by the independent audit lane. This
+note changes no axiom, approved primitive, premise registry, policy, queue, or
+audit-status surface, and it selects no coupling, sign, or continuum limit.
 
-The open-coframe static Hessian `Q(L)` is assembled by the cycle-696 compiler
-[physical_open_coframe_k_endpoint_compiler_cycle696_2026_07_25.py](../scripts/physical_open_coframe_k_endpoint_compiler_cycle696_2026_07_25.py)
-on an `L x L x L` box with a free (unwrapped) boundary. The 24 proper rotations
-of the cube act on the static variable index by relabelling; write `P_a` for the
-permutation carried by frame `a`, and `Q_g = P_g Q P_g^T` for the operator
-reassembled in frame `g`. The measured degree-of-freedom counts are `n = 98` at
-`L = 3` and `n = 279` at `L = 4`, at scale `2.9e+01`.
+**Primary runner:**
+[`scripts/physical_body_diagonal_frame_functional_transversal_law_cycle717_2026_08_02.py`](../scripts/physical_body_diagonal_frame_functional_transversal_law_cycle717_2026_08_02.py);
+cached stdout
+[`logs/runner-cache/physical_body_diagonal_frame_functional_transversal_law_cycle717_2026_08_02.txt`](../logs/runner-cache/physical_body_diagonal_frame_functional_transversal_law_cycle717_2026_08_02.txt);
+paired receipt
+[`outputs/physical_body_diagonal_frame_functional_transversal_law_cycle717_2026_08_02_receipt_2026-08-02.json`](../outputs/physical_body_diagonal_frame_functional_transversal_law_cycle717_2026_08_02_receipt_2026-08-02.json).
 
-Cycle `physical_source_stabilizer_coset_collapse_k_sign_law_cycle707` measured
-the stabilizer sextet `S = [1, 4, 9, 15, 18, 23]` — the six frames with
-`Q_g = Q` at tolerance `1.0e-09`. Cycle
-`physical_frame_group_factorization_cycle715` showed the reassembled operator is
-constant on the right cosets `S.g`, and cycle
-`physical_complete_averaging_set_frame_blindness_classification_cycle716`
-classified the frame-blind averaging sets over the complete powerset, finding a
-231-member family with the size ladder 24, 51, 80, 51, 24, 1.
+```yaml
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: "identify the finite four-valued frame label of the supplied Cycle-696 operator and derive the associated covering-family census without promoting seeded pairing scans to a source-independent theorem"
+source_of_blocker_text: frontier_question
+reachability_to_target: supports
+artifact_role: runner_certificate
+next_trace_action: "derive exact stencil-level sextet invariance and classify the nonzero-average source subspaces on which covering is also necessary"
+```
 
-Those cycles carried the sextet and the counts as measured facts. The sextet is
-still **measured, not derived**, from the assembled operator here. What this
-cycle adds is the geometric name of the invariant, and the derivation of the
-counts from that name.
+```yaml
+actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
+trace_class: upstream_support
+reachability_to_target: supports
+conditional_surface_status: "exact finite S4 body-diagonal action and covering-family combinatorics for the supplied frame table; numerical operator and seeded source scans on the stated Cycle-696 boxes"
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: "the finite group identities follow from exhaustive enumeration, while operator invariance and pairing blindness use bounded numerical compiler evaluations"
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```
 
-## The question this cycle answers
+## Exact target and obligation graph
 
-What *is* the four-valued invariant that the reassembled operator depends on,
-and why is the census exactly 231 with exactly that ladder?
+**Exact target.** For the supplied 24 proper rotations, identify the exact
+four-point action on unoriented cubic body diagonals and derive the subgroup
+covering family and its 231-member census. For the byte-bound Cycle-696
+compiler, test at `L in {3,4}` that the assembled operators form four numerical
+diagonal-labelled clusters, then scan all 1296 diagonal transversals for two
+declared random seeds and five structured sources at each size.
 
-## Theorem A — the invariant is a body diagonal
+**Obligation graph.** T1 enumerates the four-diagonal action and its stabilizers.
+T2 obtains all subgroups by closure expansion and proves, on the enumerated
+finite group, that sextet covering is equivalent to transitivity. T3 constructs
+the sufficient coset-union family in two ways and derives its census by
+inclusion and exclusion. T4 measures the operator clusters. T5 scans seeded
+transversals and complements. T6 supplies nearby non-blind controls, structured
+source counterexamples to a converse, and an exact zero-average domain guard.
 
-The cube has four body diagonals, taken up to sign:
+**Strongest missing lemma.** This cycle does not prove exact stencil-level
+sextet invariance, an arbitrary-`L` operator statement, or a source-independent
+necessity theorem for blind averaging sets. A classification of the source
+subspaces that add accidental cancellations remains open.
 
-    d0 = (1, 1, 1),  d1 = (1, 1, -1),  d2 = (1, -1, 1),  d3 = (-1, 1, 1).
+## Supplied inputs and read inventory
 
-A body diagonal here is an **axis of the rotation group**, not an adjacency. The
-lattice stencil is untouched throughout this cycle and remains nearest-neighbour.
+The matrix `Q`, dof index, site map, spatial classes, boundary convention, and
+frame table are supplied by the landed
+[`Cycle-696 compiler`](../scripts/physical_open_coframe_k_endpoint_compiler_cycle696_2026_07_25.py)
+and its four transitive local imports. The runner declares that complete
+five-file runtime closure in `AUDIT_INPUT_PATHS`, declares a 300-second timeout,
+and writes only its paired receipt. Cache acceptance therefore binds both the
+runner and all load-bearing repository inputs.
 
-The 24 proper rotations permute these four axes. The action is faithful and onto:
-the 24 frames realise all 24 permutations of the four diagonals, one each. The
-stabilizer of `d0` under this action is exactly the measured sextet
-`[1, 4, 9, 15, 18, 23]`, and the stabilizers of the other three diagonals are
-different sixes. Define
+The finite permutation-similarity and seeded four-cluster context comes from
+[`Cycle 714`](PHYSICAL_ASSEMBLY_DEFECT_ISOSPECTRALITY_AND_SOURCE_PAIRING_CYCLE714_NOTE_2026-08-02.md).
+The exact finite group complement criterion and its stated probe boundary come
+from [`Cycle 715`](PHYSICAL_FRAME_GROUP_COMPLEMENT_AND_FINITE_PROBE_BLINDING_CYCLE715_NOTE_2026-08-02.md).
+The 231-member sufficient family and four-seed finite powerset checks are
+context from
+[`Cycle 716`](PHYSICAL_COMPLETE_AVERAGING_SET_FRAME_BLINDNESS_CLASSIFICATION_CYCLE716_NOTE_2026-08-02.md).
+No dependency's audit status is imported as scientific evidence.
 
-    delta(g) = the body diagonal that frame g carries onto d0.
+## Result I — exact finite body-diagonal action
 
-Then the four fibres of `delta` have six frames each and are exactly the right
-cosets of the sextet. So the coset structure measured in cycle 715 is the
-diagonal-fibre structure, and the four-valued frame functional is the choice of
-body diagonal.
+Take the four unoriented cubic body diagonals
 
-This is checked at the operator level, not only through a source. Over all 276
-unordered frame pairs, the entrywise deviation between `Q_g` and `Q_h` is at most
-`1.2e-10` when `delta(g) = delta(h)`, and at least `4.0e+00` when they differ — a
-ratio of `3.2e+10`. The same three numbers are obtained at `L = 3` and at
-`L = 4`. The reassembled operator is therefore a function of the body diagonal
-alone, to ten orders of magnitude.
+`d0=(1,1,1)`, `d1=(1,1,-1)`, `d2=(1,-1,1)`, and `d3=(-1,1,1)`.
 
-## Theorem B — covering is transitivity, and the floor of four is forced
+A body diagonal here is an axis of the rotation group, not a lattice adjacency;
+the supplied nearest-neighbour stencil is unchanged. Exhaustive evaluation of
+the supplied 24 proper rotations gives all 24 permutations of these four axes,
+once each. Thus this finite action is faithful and isomorphic to `S4`.
 
-Call a subgroup `H` *covering* when `S.H` is the whole rotation group; cycle 716
-measured that the blind averaging sets are exactly the unions of right cosets of
-covering subgroups. Under Theorem A this condition has a one-line reading:
+The stabilizer of `d0` is exactly
+`S=[1,4,9,15,18,23]`. Define `delta(g)` as the diagonal that `g` carries onto
+`d0`. Its four fibres have size six and are exactly the right cosets `Sg`.
+The other three point stabilizers are different sextets.
 
-    S.H = whole group  <=>  H is transitive on the four body diagonals.
+This exact statement concerns the supplied frame table. Its identification with
+the compiler operator is numerical: at `L=3,4`, the measured operator stabilizer
+at tolerance `1e-9` is `S`; over all 276 frame pairs, the largest same-fibre
+entrywise difference is `1.2e-10`, while the smallest cross-fibre difference is
+`4.0`, a separation ratio `3.2e10`. Hence the two bounded compiler scans resolve
+four operator clusters labelled by body diagonal.
 
-The complete subgroup lattice has 30 members. Exactly 9 of them are transitive on
-the diagonals, of orders 4, 4, 4, 4, 8, 8, 8, 12, 24 — precisely the 9 covering
-subgroups. The four minimal ones act *simply* transitively (regular): order four,
-one element carrying `d0` to each diagonal. The three order-four subgroups that
-are not covering have diagonal orbits of size two, two, two, two; being the right
-size is not enough, the orbits must be single.
+## Result II — covering is transitivity
 
-The floor now has a reason. No subgroup of order 1, 2, 3 or 6 can be transitive
-on a four-element set, since a transitive action needs order divisible by four.
-So the minimum blind size of four is forced by the diagonal action, not fitted to
-the scan. Every transitive subgroup contains a regular one, so every blind
-averaging set contains a minimal one.
+For a subgroup `H`, the finite condition `SH=G` holds exactly when `H` acts
+transitively on the four body diagonals. The runner obtains the complete
+30-member subgroup lattice by starting from the identity subgroup and repeatedly
+adjoining every group element and taking closure; it assumes no generator-count
+bound.
 
-## Theorem C — the family is complement-closed
+Exactly nine subgroups are transitive, with orders
+`[4,4,4,4,8,8,8,12,24]`. The four order-four examples are regular: each maps
+`d0` once to every diagonal. The three other order-four subgroups have only
+two-point diagonal orbits. No subgroup of order `1`, `2`, `3`, or `6` is
+transitive, and every transitive subgroup contains one of the four regular
+subgroups.
 
-Complementation in the 24-frame group is an involution on the 230 proper members
-of the family; the whole group is the single member whose complement is empty.
-Consequently the size ladder reads the same in both directions on sizes below 24:
-24, 51, 80, 51, 24.
+Thus four is the minimum order of a **covering subgroup**. It is not a universal
+minimum size for physical blindness: structured sources can add blind sets of
+smaller size, as Cycle 716 records.
 
-This is confirmed physically, not only combinatorially. At `L = 3` with a generic
-source, the complements of the 24 blind transversals are blind at `8.5e-12`,
-while the complements of the other 1272 spread by at least `6.7e-04`; with a
-second independent generic source the same two numbers are `3.9e-13` and
-`3.9e-04`. At `L = 4` they are `2.3e-11` against `1.8e-02`, and `1.1e-10`
-against `1.6e-02`.
+## Result III — exact 231-member covering-criterion family
 
-## Theorem D — the census 231 is derived
+Under the exact conditional that the sextet fixes the relevant operator/pairing,
+unions of right cosets of a covering subgroup are sufficient averaging sets.
+The family can be constructed either from all nine covering subgroups or from
+the four minimal regular subgroups; direct deduplication gives the same 231
+nonempty sets.
 
-The four regular subgroups are the minimal covering subgroups. Each has six right
-cosets, so each contributes `2^6 - 1 = 63` nonempty unions of its own cosets.
-Inclusion and exclusion over the four requires the joins, which are recomputed
-rather than assumed: the six pairwise joins have orders `[8, 8, 8, 24, 24, 24]`,
-the four triple joins all have order 24, and the join of all four has order 24.
-A join of order 8 has three cosets and contributes `2^3 - 1 = 7` unions; a join
-of order 24 has one coset and contributes 1. Hence
+Each regular subgroup has six right cosets and contributes `2^6-1=63` unions.
+The six pairwise joins have orders `[8,8,8,24,24,24]`, every triple join has
+order 24, and the fourfold join has order 24. Inclusion and exclusion gives
 
-    4*63 - (3*7 + 3*1) + 4*1 - 1 = 252 - 24 + 4 - 1 = 231.
+`4*63 - (3*7 + 3*1) + 4*1 - 1 = 252 - 24 + 4 - 1 = 231`.
 
-The three terms subtracted, added and subtracted again are the pair, triple and
-quadruple overlaps in that order. The result matches an independent construction
-that enumerates the coset unions of all 9 covering subgroups and deduplicates:
-both constructions give the same 231 members, with the ladder
-`[(4, 24), (8, 51), (12, 80), (16, 51), (20, 24), (24, 1)]`. Size eight resolves
-into 9 unions that are single cosets of an order-eight covering subgroup and 42
-that are unions of two minimal cosets.
+The exact size histogram is
+`[(4,24),(8,51),(12,80),(16,51),(20,24),(24,1)]`. Complementation is an
+involution on the 230 proper members. At size eight, nine members are cosets of
+order-eight covering subgroups and the other 42 are unions of two regular
+cosets. These are finite combinatorial identities, not continuum or
+arbitrary-box claims.
 
-These are **computational identities** over a 24-element group: they carry no
-statement about the continuum.
+## Result IV — bounded seeded transversal scans
 
-## The physical refinement — transversality is necessary, not sufficient
+A diagonal transversal chooses one frame from each of the four six-frame
+fibres, giving `6^4=1296` sets of size four. The union of right cosets of the
+four regular subgroups contains 24 such sets. For NumPy seeds 7170 and 7171,
+all 1296 transversals are evaluated against the normalized averaged-source
+pairing at each size:
 
-Theorem A suggests an averaging prescription that hits each body diagonal once.
-There are `6^4 = 1296` such transversals. Exactly 24 of them are blind, and they
-are precisely the right cosets of the four regular subgroups.
+| box | seed | measured blind sets | least average norm | worst blind spread | best other spread |
+|---|---:|---:|---:|---:|---:|
+| `L=3` | 7170 | 24, exactly regular cosets | `1.6e1` | `1.4e-11` | `4.4e-3` |
+| `L=3` | 7171 | 24, exactly regular cosets | `1.8e1` | `8.8e-13` | `3.7e-3` |
+| `L=4` | 7170 | 24, exactly regular cosets | `3.1e1` | `9.7e-11` | `6.0e-2` |
+| `L=4` | 7171 | 24, exactly regular cosets | `3.3e1` | `1.0e-10` | `9.5e-2` |
 
-Measured at both box sizes and with two independent generic sources:
+For these four seeded scans, the complements of the 24 regular cosets are also
+blind below `1.1e-10`, whereas the other complements spread by at least
+`3.9e-4`. This is a finite observation for the named seeds, not a generic-source
+statement.
 
-| box | source | blind | least pulled norm | worst blind | best non-blind | ratio |
-|-----|--------|-------|-------------------|-------------|----------------|-------|
-| `L = 3` | first  | 24 of 1296 | `1.6e+01` | `1.4e-11` | `4.4e-03` | `3.2e+08` |
-| `L = 3` | second | 24 of 1296 | `1.8e+01` | `8.8e-13` | `3.7e-03` | `4.2e+09` |
-| `L = 4` | first  | 24 of 1296 | `3.1e+01` | `9.7e-11` | `6.0e-02` | `6.2e+08` |
-| `L = 4` | second | 24 of 1296 | `3.3e+01` | `1.0e-10` | `9.5e-02` | `9.3e+08` |
+## Rejectors and source boundary
 
-So spreading an averaging prescription evenly over the four diagonals — which is
-what the diagonal law would naively recommend — buys nothing on its own. Only 24
-of the 1296 even spreads are blind, and the alignment of the six-element fibres
-with a regular subgroup is what distinguishes them. Blindness is a group-theoretic
-alignment, not a counting balance.
+Three nearby group-theoretic controls are non-blind for the first seed. One
+whole diagonal fibre spreads by `1.8e-2` at `L=3` and `2.0e-1` at `L=4`. The 18
+cosets of the three intransitive order-four subgroups spread by at least
+`4.8e-3` and `3.0e-1`. The transversal `[0,1,3,5]`, which has the right balance
+but is not a regular coset, spreads by `2.3e-2` and `4.7e-1`.
 
-## Rejectors
+The runner then makes the failure of a source-independent converse explicit:
 
-Each rejector is a set that satisfies a nearby condition and is still not blind,
-measured rather than argued.
+| source | `L=3` blind transversals | `L=4` blind transversals |
+|---|---:|---:|
+| unit slot 0 | 24 | 24 |
+| unit slot 1 | 24 | 72 |
+| unit slot 7 | 24 | 24 |
+| unit slot 8 | 264 | 24 |
+| all ones | 1296 | 1296 |
 
-- One whole fibre — the sextet itself — lies inside a single body diagonal and
-  spreads `1.8e-02` at `L = 3`, `2.0e-01` at `L = 4`.
-- The 18 distinct right cosets of the three intransitive order-four subgroups
-  have least spread `4.8e-03` at `L = 3` and `3.0e-01` at `L = 4`, and none of
-  them lies in the predicted family.
-- The transversal `[0, 1, 3, 5]` meets each diagonal exactly once and still
-  spreads `2.3e-02` at `L = 3` and `4.7e-01` at `L = 4`.
+Every row still contains the 24 sufficient regular cosets. Unit slot 8 at
+`L=3` and unit slot 1 at `L=4` have nontrivial frame orbits yet add respectively
+240 and 48 blind transversals. The all-ones source has a one-point orbit and is
+blind everywhere. Therefore neither nondegeneracy of the orbit nor equal
+diagonal coverage makes the regular-coset criterion necessary.
 
-## Boundary — the transversal count is source-robust, degenerate orbits aside
+The normalized pairing has the explicit domain condition
+`||sum_(a in A) P_a^T b|| > 1e-12`. At `L=3`, the integer source with nonzero
+entries
+`{2:-1,3:1,6:1,7:-1,10:1,11:-1,14:-1,15:1}` has orbit diameter two but
+averages exactly to zero on `A=[0,1,3,5]`. The runner returns `NaN` and rejects
+classification rather than labelling this undefined normalization blind.
 
-Cycle 716 recorded that structured sources blind strictly more collections than
-generic ones. Inside the transversal family, that widening does not occur. A
-single-slot source at slot 0 and a single-slot source at slot 7 each have frame
-orbit diameter `1.0e+00`, and each blinds exactly the same 24 transversals as the
-generic sources, at both `L = 3` and `L = 4`. The extra structured blindness
-found in cycle 716 lies entirely off the transversal family.
+## Claim boundary
 
-The one source that does break the count is degenerate: the all-ones source has
-frame orbit diameter `0.0e+00` — the permutations fix it, so there is only one
-point to compare — and it is blind on all 1296 transversals. A one-point frame
-orbit carries no frame information at all, so this is a statement about the
-source, not about the operator.
+Claimed: the exact finite `S4` action of the supplied 24 rotations on four body
+diagonals; the exact subgroup lattice, covering/transitivity equivalence,
+minimal covering order, 231-member sufficient-family census, and size ladder;
+the numerical four-cluster operator identification at `L=3,4`; and the stated
+finite source/transversal scans on the byte-bound Cycle-696 compiler.
 
-## What this cycle claims and does not claim
+Not claimed: source-independent necessity; a universal minimum blind-set size;
+that every non-one-point source has only 24 blind transversals; exact
+stencil-level sextet invariance; exact numerical zero below tolerance; boxes
+beyond `L=3,4`; wrapped boundaries; alternative compilers, sources, transports,
+or pairings; continuum, asymptotic, covariance, or dynamical conclusions; or an
+audit verdict.
 
-Claimed: for the reassembled static operator of the cycle-696 compiler on an
-unwrapped box, at `L = 3` and `L = 4`, the four-valued frame functional is the
-body diagonal that the frame carries onto `(1, 1, 1)`; the measured stabilizer
-sextet is exactly the stabilizer of that diagonal; a subgroup averages the frame
-dependence away exactly when it is transitive on the four diagonals; the minimum
-blind size of four follows from that transitivity; the 231-member census and its
-ladder follow by inclusion and exclusion over the four regular subgroups; the
-family is complement-closed on its proper members; and of the 1296 diagonal
-transversals exactly 24 are blind.
+## Review record
 
-Not claimed: any statement about a continuum limit, about wrapped boundaries,
-about box sizes beyond those measured, or about the audit status of this or any
-other row. No new axiom, primitive, or import is proposed. The sextet and the
-degree-of-freedom counts remain inputs measured from the compiler.
+Review repair removed the false source-robust converse and universal minimum,
+added explicit structured and zero-average counterexamples, replaced a
+three-generator subgroup search by complete closure expansion, bound the full
+runtime input closure and cache, moved stdout to the canonical cache surface,
+and added current status, traceability, dependency, obligation, artifact-link,
+and conditional receipt-verdict surfaces. Hostile cache/input and semantic
+mutation checks are recorded in the review-loop findings ledger, not as audit
+verdicts.
 
-## Physics reading
+## Runner
 
-The frame dependence of the reassembled static operator is not a diffuse
-24-valued nuisance. It is a single geometric datum: which body diagonal of the
-cube the frame selects. Everything cycle 716 counted follows from that one fact —
-the size-four floor, the 9 covering subgroups, the 231-member family, the
-palindromic ladder. And the refinement cuts the other way from the naive reading:
-of the 1296 prescriptions that treat the four diagonals evenly, all but 24 still
-see the frame. The nearest structure to a frame-blind average is a regular
-subgroup of the rotation group acting on a cube diagonal, and the operator holds
-at that structure rather than at any balance of counts.
-
-## Reproduction
-
-Runner:
-[physical_body_diagonal_frame_functional_transversal_law_cycle717_2026_08_02.py](../scripts/physical_body_diagonal_frame_functional_transversal_law_cycle717_2026_08_02.py)
-
-Cold stdout and the machine-readable receipt are landed under `outputs/`. The
-runner prints one line per gate and ends with a `TOTAL: PASS=` line; every
-floating-point value quoted above is printed by the runner itself.
+The primary runner prints `TOTAL: PASS=51 FAIL=0` on the repaired source tree.
+Its receipt verdict is conditional on the accumulated gate failures.

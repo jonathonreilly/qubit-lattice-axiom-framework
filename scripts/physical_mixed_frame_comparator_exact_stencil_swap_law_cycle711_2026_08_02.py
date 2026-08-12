@@ -1,6 +1,6 @@
-"""Cycle 711 -- exact stencil swap law behind the mixed-frame comparator integer.
+"""Cycle 711 -- bounded exact stencil swap identity behind the mixed-frame comparator.
 
-Class-A finite check script (stdlib + numpy + sympy only).  It re-derives, from the
+Finite exhaustive and symbolic check (stdlib + numpy + sympy only).  It re-derives, from the
 landed Cycle-696 open-coframe endpoint compiler chain alone, the mixed-frame
 comparator value 4 that Cycle 710's covariance-boundary census measured but did not
 derive.  The chain has four exact stages:
@@ -25,9 +25,16 @@ derive.  The chain has four exact stages:
       is central-difference truncation with a convergence-ratio certificate and
       a closed error budget.
 
-The frame-uniform rounded census of |E| > 2 entries and the both-clean block
-ceiling are measured, not derived.  No value is read from a pinned table: every
-number printed here is recomputed from the compiler chain in this run.
+The frame-uniform rounded census of |E| > 2 entries, the both-clean block
+ceiling, and the off-integer-distance witness are measured, not derived.  Every
+number printed here is recomputed from the declared compiler-source closure in
+this run; no sibling cycle's measured value or pinned result table is consumed.
+
+Read inventory. External/ancestral scientific inputs: the Cycle-696 compiler
+and its transitive scripts/ imports, declared in AUDIT_INPUT_PATHS below and
+loaded as source. Package-local write activity: one paired receipt under
+outputs/. This runner performs no self-hash or receipt-verification integrity
+read.
 """
 from __future__ import annotations
 
@@ -48,6 +55,21 @@ _SPEC = importlib.util.spec_from_file_location("c696_compiler_for_c711", _MODULE
 c696 = importlib.util.module_from_spec(_SPEC)
 _SPEC.loader.exec_module(c696)
 
+# The load-bearing repository-source closure: the Cycle-696 compiler loaded
+# above plus every scripts/ module it imports transitively. The cache binds all
+# five files and fails stale when any of their bytes drift.
+AUDIT_INPUT_PATHS = (
+    "scripts/physical_open_coframe_k_endpoint_compiler_cycle696_2026_07_25.py",
+    "scripts/physical_dynamical_metric_source_law_bridge_tournament_cycle576_2026_07_22.py",
+    "scripts/physical_dynamical_metric_source_law_bridge_cycle576_regge_support_2026_07_22.py",
+    "scripts/physical_dynamical_metric_source_law_bridge_cycle576_plaquette_support_2026_07_22.py",
+    "scripts/frontier_cubic_coxeter_regge_second_variation_3plus1_2026_06_09.py",
+)
+
+# Declared audit timeout in seconds. The observed run is well below this bound;
+# the margin accommodates slower symbolic algebra on an independent audit host.
+AUDIT_TIMEOUT_SEC = 300
+
 FRAMES = [np.asarray(m, dtype=np.int64) for m in c696.c576.FRAMES]
 SEXTET = (1, 4, 9, 15, 18, 23)
 PLUS = (15, 18, 23)
@@ -58,7 +80,7 @@ PAIRS5 = c696.regge.PAIRS5
 L_LIST = (3, 7)
 PAIR_M4 = ((5, (2, 1, 0)), (11, (1, 1, 0)))
 PAIR_Z = ((5, (0, 0, 0)), (11, (0, 0, 0)))
-CONFIGS = ((0, 5, 1), (18, 8, 5))
+REPRESENTATIVE_CONFIGS = ((0, 5, 1), (18, 8, 5))
 DEV_TOL = 2e-8
 SWAP_LO = 1e-9
 SURD_TOL = 2e-7
@@ -140,6 +162,31 @@ def incidences(L: int, A, B):
                     if keys[j] == B:
                         hits.append((p, b, i, j))
     return hits
+
+
+def pair_key(A, B):
+    """Canonical unordered pair of global dof keys."""
+    return tuple(sorted((A, B)))
+
+
+def incidence_config_map(L: int) -> dict:
+    """Map each unordered dof-key pair to all local template/slot incidences.
+
+    The slot ordering follows the canonical global-key ordering so a translated
+    occurrence of one local configuration has the same tuple at every box size.
+    """
+    out = {}
+    for p, tmpl in enumerate(c696.CELL):
+        cls, anc = tmpl["cls"], tmpl["anc"]
+        for b in itertools.product(range(L - 1), repeat=3):
+            keys = [(cls[i], (b[0] + anc[i][0], b[1] + anc[i][1], b[2] + anc[i][2]))
+                    for i in range(10)]
+            for i in range(10):
+                for j in range(i + 1, 10):
+                    A, B = keys[i], keys[j]
+                    cfg = (p, i, j) if A <= B else (p, j, i)
+                    out.setdefault(pair_key(A, B), set()).add(cfg)
+    return out
 
 
 # --------------------------------------------------------------------------
@@ -265,18 +312,33 @@ def main() -> int:
     check("c2_shared_vertex_zero", len(hits0) == 0 and z_entry == 0.0,
           "shared-vertex pair: 0 incidences, entry exactly 0.0")
 
-    # -- C3: exact symbolic value with rejector ----------------------------
-    for (p, si, sj) in CONFIGS:
+    # -- C3: exact symbolic closure of the full finite -4 family -----------
+    rev3 = {i: key for key, i in index3.items()}
+    incmap3 = incidence_config_map(3)
+    family_pairs = {
+        pair_key(rev3[i], rev3[j])
+        for i in range(Q3.shape[0])
+        for j in range(i + 1, Q3.shape[1])
+        if abs(float(Q3[i, j]) + 4.0) <= DEV_TOL
+    }
+    family_classes = {
+        tuple(sorted((A[0], B[0]))) for A, B in family_pairs
+    }
+    family_configs = set().union(*(incmap3[key] for key in family_pairs))
+    check("c3_family_entry_count", len(family_pairs) == 48,
+          "L=3 has 48 unordered assembled entries in the measured -4 family")
+    check("c3_family_class_pairs", family_classes == {(5, 9), (5, 11), (9, 11)},
+          "all three complementary face-diagonal class pairs and no others")
+    check("c3_family_config_count", len(family_configs) == 12,
+          "12 distinct translated local template/slot configurations")
+    for (p, si, sj) in sorted(family_configs):
         flat = flat_background(p)
         exact, all_rat, acos_free = exact_mixed_d2(p, si, sj, flat)
-        tag = "p{}".format(p)
-        check("c3_exact_minus_one_{}".format(tag),
-              sp.simplify(exact + 1) == 0, "exact mixed d2 = {}".format(exact))
-        check("c3_acos_free_{}".format(tag), acos_free,
-              "no arc-cosine atom survives at the flat background")
-        check("c3_rational_hinges_{}".format(tag), all_rat,
-              "every surviving per-hinge value is rational")
-    p, si, sj = CONFIGS[0]
+        tag = "p{}_s{}_s{}".format(p, si, sj)
+        check("c3_exact_family_{}".format(tag),
+              sp.simplify(exact + 1) == 0 and all_rat and acos_free,
+              "mixed d2 = {}; rational hinges; no surviving acos".format(exact))
+    p, si, sj = REPRESENTATIVE_CONFIGS[0]
     pert = dict(flat_background(p))
     pert[QSYM[(3, 4)]] = pert[QSYM[(3, 4)]] + 1
     exact_p, _, _ = exact_mixed_d2(p, si, sj, pert)
@@ -287,7 +349,7 @@ def main() -> int:
 
     # -- C4: FD provenance of the measured deviation -----------------------
     errs_h = []
-    for (p, si, sj) in CONFIGS:
+    for (p, si, sj) in REPRESENTATIVE_CONFIGS:
         e1 = abs(float(c696.simplex_local_hessian(p, c696.FD_H)[si, sj]) + 1.0)
         e2 = abs(float(c696.simplex_local_hessian(p, c696.FD_H / 2.0)[si, sj]) + 1.0)
         errs_h.append(e1)
@@ -306,11 +368,14 @@ def main() -> int:
     for L in L_LIST:
         model = c696.assemble_static_hessian(L, wrap=False)
         Q, index = model["Q"], model["index"]
+        rev = {i: key for key, i in index.items()}
+        incmap = incidence_config_map(L)
         cls_of = np.empty(len(index), dtype=np.int64)
         for (c, x), i in index.items():
             cls_of[i] = c
         emax_hexes, argmax_counts = set(), set()
-        swaps_ok, endpoint_ok = True, True
+        swaps_ok, endpoint_ok, exact_cover_ok = True, True, True
+        observed_configs = set()
         orient = {True: 0, False: 0}
         censuses = set()
         bcm, offmax = 0.0, 0.0
@@ -334,6 +399,20 @@ def main() -> int:
                 hi = max(abs(Q[i, j]), abs(Q[m[i], m[j]]))
                 if lo > SWAP_LO or abs(hi - 4.0) > DEV_TOL:
                     swaps_ok = False
+                q0, q1 = float(Q[i, j]), float(Q[m[i], m[j]])
+                if abs(q0) <= SWAP_LO and abs(q1 + 4.0) <= DEV_TOL:
+                    nz_key = pair_key(rev[m[i]], rev[m[j]])
+                elif abs(q1) <= SWAP_LO and abs(q0 + 4.0) <= DEV_TOL:
+                    nz_key = pair_key(rev[i], rev[j])
+                else:
+                    swaps_ok = False
+                    exact_cover_ok = False
+                    nz_key = None
+                if nz_key is not None:
+                    cfgs = incmap.get(nz_key, set())
+                    observed_configs.update(cfgs)
+                    if not cfgs or not cfgs.issubset(family_configs):
+                        exact_cover_ok = False
                 si_, sj_ = bool(sub[i]), bool(sub[j])
                 if si_ == sj_ or support(int(cls_of[i])) != 2 or support(int(cls_of[j])) != 2:
                     endpoint_ok = False
@@ -352,7 +431,10 @@ def main() -> int:
         check("c5_argmax_count_uniform_{}".format(Ltag), argmax_counts == {want},
               "argmax family size {} at every mixed frame".format(sorted(argmax_counts)))
         check("c5_all_swaps_{}".format(Ltag), swaps_ok,
-              "every argmax entry is a 0 <-> 4 magnitude swap")
+              "every argmax entry is an assembled 0 <-> -4 swap")
+        check("c5_exact_family_coverage_{}".format(Ltag),
+              exact_cover_ok and observed_configs == family_configs,
+              "argmax nonzero sides use all and only the 12 symbolically closed configs")
         check("c5_one_substituted_endpoint_{}".format(Ltag),
               endpoint_ok and orient[True] == orient[False] and orient[True] > 0,
               "face-face pairs, exactly one substituted endpoint, orientations {}".format(
@@ -393,7 +475,7 @@ def main() -> int:
           "tick multiplier and FD step as supplied by the compiler")
 
     receipt = {"box_sizes": list(L_LIST),
-               "configs": [list(c) for c in CONFIGS],
+               "configs": [list(c) for c in sorted(family_configs)],
                "fail": N_FAIL,
                "gates": GATES,
                "notes": NOTES,

@@ -1,6 +1,47 @@
-# Physical Mixed-Frame Comparator: the Exact Stencil Swap Law — Cycle 711
+# Physical Mixed-Frame Comparator: a Bounded Exact Stencil Swap Identity at L = 3 and L = 7 — Cycle 711
 
-**Claim type: bounded_theorem.** Finite, recomputed statements about the landed
+Date: 2026-08-02
+
+Claim type: bounded_theorem
+
+Status: proposed_retained
+
+Authority: none. Audit: unset. Constitutional effect: none. This cycle edits no
+axiom, foundation, Qualification, primitive, registry, policy, queue,
+audit-status, or PR-control surface. No new axiom or primitive is proposed or
+adopted.
+
+**Primary runner:**
+[`scripts/physical_mixed_frame_comparator_exact_stencil_swap_law_cycle711_2026_08_02.py`](../scripts/physical_mixed_frame_comparator_exact_stencil_swap_law_cycle711_2026_08_02.py);
+cached stdout
+[`logs/runner-cache/physical_mixed_frame_comparator_exact_stencil_swap_law_cycle711_2026_08_02.txt`](../logs/runner-cache/physical_mixed_frame_comparator_exact_stencil_swap_law_cycle711_2026_08_02.txt);
+paired receipt
+[`outputs/physical_mixed_frame_comparator_exact_stencil_swap_law_cycle711_2026_08_02_receipt_2026-08-02.json`](../outputs/physical_mixed_frame_comparator_exact_stencil_swap_law_cycle711_2026_08_02_receipt_2026-08-02.json).
+
+```yaml
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: "the in-flight Cycle-710 finite covariance-boundary census measured a mixed-frame comparator near 4 but supplied no exact stencil derivation"
+source_of_blocker_text: frontier_question
+reachability_to_target: supports
+artifact_role: runner_certificate
+next_trace_action: "consume the exact two-incidence stencil identity only after Cycle 710 lands, then seek an arbitrary-size incidence-count proof; the present result covers only L = 3 and L = 7"
+```
+
+```yaml
+actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
+trace_class: upstream_support
+reachability_to_target: supports
+conditional_surface_status: "the exact identities and finite censuses are conditional on the declared Cycle-696 compiler-source closure and its supplied LT = 2 and finite-difference step; they are established only on the stated templates and box sizes"
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: "finite exhaustive frame and incidence scans at L = 3 and L = 7, combined with exact symbolic differentiation for the two stated simplex configurations; census counts and off-integer witnesses remain measured"
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```
+
+Finite, recomputed statements about the landed
 Cycle-696 open-coframe endpoint compiler chain at box sizes L ∈ {3, 7}. The
 substitution dichotomy, the two-incidence stencil decomposition, and the exact
 per-simplex value −1 are exact (integer combinatorics and symbolic computation);
@@ -47,6 +88,13 @@ translation. This is the single combinatorial notion the whole cycle runs on.
 
 ### Imported compiler contract
 
+Load-bearing source input: the landed
+[`physical_open_coframe_k_endpoint_compiler_cycle696_2026_07_25.py`](../scripts/physical_open_coframe_k_endpoint_compiler_cycle696_2026_07_25.py)
+and its four transitive local imports, all byte-bound through the primary
+runner's `AUDIT_INPUT_PATHS`. This is supplied computational structure, not a
+new framework primitive; this note does not derive its template set, tick
+multiplier, or finite-difference convention.
+
 - `assemble_static_hessian(L, wrap=False)` — the assembled Q and its dof index.
 - `simplex_local_hessian(p, step)` — per-template local Hessian at supplied FD step.
 - `frame_site_map(L, R)` — the site relabeling of the open box under frame R.
@@ -54,6 +102,23 @@ translation. This is the single combinatorial notion the whole cycle runs on.
 - Supplied constants: LT = 2, FD step 1.0e-04 (both printed and gated by the runner).
 
 ## Claims
+
+**Exact target.** On the declared Cycle-696 compiler bytes, templates, and
+constants, prove for every mixed frame at L = 3 and L = 7 that each measured
+argmax defect entry is the transport swap of an assembled zero with an assembled
+`-4` whose two local incidences each have exact symbolic mixed derivative `-1`.
+
+**Obligation graph.** T1's finite frame classification is proved here by all-24
+enumeration. T2's representative incidence count is proved here by an exhaustive
+open-box template scan, and its two local derivatives are proved symbolically.
+For T3, the runner independently derives all 48 unordered L = 3 entries in the
+measured `-4` family, finds all three complementary face-diagonal class pairs and
+all 12 translated local template/slot configurations, and proves the derivative
+`-1` symbolically for every configuration; the L = 3 and L = 7 argmax scans then
+gate that their nonzero sides use all and only those exact configurations. T4 is
+a measurement only. The strongest missing lemma is an arbitrary-L incidence and
+boundary-count classification; neither arbitrary size nor a census formula is
+proved here.
 
 ### T1 — Substitution dichotomy (exact)
 
@@ -107,6 +172,13 @@ At every one of the 18 mixed frames, at both box sizes L = 3 and L = 7:
    halved (second-order central differences contract by 4), and the closed
    budget LT × (err0 + err1) = 1.3e-08 matches the assembled-entry deviation.
 
+The exact-family closure is exhaustive for this finite claim: across the three
+complementary face-diagonal class pairs, the L = 3 assembler exposes 48
+unordered `-4` entries and 12 distinct translated local template/slot
+configurations. Every one of those 12 configurations is checked symbolically,
+and both box-size scans verify that every argmax nonzero side resolves only to
+that same closed configuration set.
+
 Together with T2 this derives the Cycle-710 comparator: the mixed-frame ceiling
 is the exact stencil integer 4 = |LT × (−1 − 1)|, attained by substitution
 swaps of the {0, −4} family, and its measured deviation is exactly the FD
@@ -147,13 +219,16 @@ edge order, the surviving per-hinge values are, per hinge pair:
 | template 0, slots (5,1) | −1/8 | 1/4 | −1/4 | 1/8 | 0 | 1/2 | −1/4 | −3/8 | 1/4 | 0 |
 | template 18, slots (8,5) | 0 | 1/4 | −1/4 | 1/8 | −3/8 | 1/2 | −1/4 | 0 | 1/4 | −1/8 |
 
-Each row sums to 1/8, and the slot edges are face diagonals of squared length
+Each displayed representative row sums to 1/8, and the slot edges are face diagonals of squared length
 2, so the mixed second derivative in the two lengths is
 4 · √2 · √2 · (−1/8) = −1 exactly, for both incident configurations. The paired
 runner certifies the total symbolically and gates every surviving per-hinge
 value rational; a wrong-background rejector (one squared length perturbed by 1)
 gives exactly −3·√7/7, at distance 1.3e-01 from −1, so the symbolic gate
-discriminates.
+discriminates. The runner repeats the exact `-1`, rational-hinge, and no-surviving-
+arc-cosine test for every one of the 12 configurations; the table shows the two
+configurations of the representative T2 pair rather than substituting for that
+full enumeration.
 
 **Incidence count (T2).** A complete scan of the path-simplex templates over
 the open box at the pair separation gives exactly the two incidences named above for the
@@ -173,15 +248,15 @@ appear.
   (64/224/136 at L = 3, 1728/4896/4056 at L = 7, argmax families 128 and 3456)
   and their frame-uniformity are verified by complete scan but no counting
   formula is derived. Deriving the counts is the named next target.
-- **The defect is not localized to substituted rows and columns.** The
-  both-clean block (both endpoints unsubstituted) has ceiling 2.8e+00 —
-  matching 2·√2 within 2.0e-07 at both sizes — which is order one. Substitution
-  changes the incidence structure globally, not only on substituted dofs; any
-  localization claim is false and none is made.
-- **E is not integer-valued globally.** The largest distance from an integer
-  over all mixed-frame entries is 4.6e-01, matching 2·√3 − 3 within 2.0e-07 at
-  both sizes. The exact integer law is a statement about the argmax swap family
-  and the stencil values, not about every entry.
+- **Observed both-clean witness.** At each tested size, the scan finds an entry
+  in the both-clean block (both endpoints unsubstituted) with magnitude
+  2.8e+00, matching 2·√2 within 2.0e-07. This is a positive finite witness at
+  L = 3 and L = 7; no conclusion about other sizes or every possible
+  localization notion is drawn.
+- **Observed off-integer-distance witness.** At each tested size, the largest
+  measured distance from an integer over the scanned mixed-frame entries is
+  4.6e-01, matching 2·√3 − 3 within 2.0e-07. The exact integer identity in this
+  note is restricted to the argmax swap family and its stated stencil values.
 - **Exactness lives at stencil level.** The assembled floats carry FD
   truncation; the claim is exact because the deviation is certified as FD
   truncation by the convergence-ratio and closed-budget gates, not because the
@@ -221,15 +296,15 @@ maps at the signed level.
 
 ## Runner
 
-`scripts/physical_mixed_frame_comparator_exact_stencil_swap_law_cycle711_2026_08_02.py`
-— class-A finite check, stdlib + numpy + sympy. Gate groups: substitution
+The primary runner linked above is a finite exhaustive and symbolic check using
+stdlib, numpy, and sympy. Gate groups: substitution
 dichotomy over all 24 frames; incidence decomposition with bit-for-bit entry
 match; exact symbolic per-simplex values with a perturbed-background rejector;
 FD provenance (convergence ratios and closed error budget); swap census over
 all 18 mixed frames at both box sizes with bitwise comparator uniformity;
 frame-uniform rounded census; sextet cross-checks (plus branch 7.1e-15, minus
-branch 1.2e-10, identity frame exactly 0.0). Prints `TOTAL: PASS=42 FAIL=0`
-and writes a JSON receipt with coarse-precision values only.
+branch 1.2e-10, identity frame exactly 0.0). It writes a JSON receipt with
+coarse-precision values only and ends with `TOTAL: PASS=53 FAIL=0`.
 
 ## Citations
 
@@ -241,6 +316,20 @@ and writes a JSON receipt with coarse-precision values only.
   — the source-stabilizer sextet this cycle characterizes combinatorially.
 - [FINITE_REGGE_PLAQUETTE_SCATTERING_DIAGNOSTICS_CYCLE576_BOUNDED_THEOREM_NOTE_2026-07-22](FINITE_REGGE_PLAQUETTE_SCATTERING_DIAGNOSTICS_CYCLE576_BOUNDED_THEOREM_NOTE_2026-07-22.md)
   — the frame table and deficit-angle machinery.
-- Compiler chain: `scripts/physical_open_coframe_k_endpoint_compiler_cycle696_2026_07_25.py`
-  (landed; LT = 2 and the FD step are its supplied constants).
+- Compiler chain: the linked Cycle-696 runner above (landed; LT = 2 and the FD
+  step are its supplied constants).
 - In flight, context only: cycles 708–710, stems backticked above.
+
+## Review record
+
+Independent review narrowed two earlier refutation-style boundary sentences to
+the positive finite witnesses actually executed at L = 3 and L = 7. No
+localization no-go and no lattice-wide integrality refutation lands here. The
+load-bearing Cycle-696 source closure is now explicit and cache-bound.
+
+Outstanding at landing, as hard landing conditions: (1) the exact heads of
+predecessor PRs #5892 and #5895 must already be contained in `origin/main`; (2)
+the primary runner must be rerun through `scripts/runner_cache.py` with a fresh
+five-file input fingerprint and exit 0; and (3) the citation-graph manifest must
+be regenerated from the final proposed landing tree and its added-node and
+dependency-edge delta inspected before acknowledgment.

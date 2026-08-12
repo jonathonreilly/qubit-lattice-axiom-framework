@@ -90,7 +90,7 @@ the bounded finite claim.
 ### Load-bearing scientific and executable inputs
 
 - The Cycle-710 defect definition and covariance boundary:
-  [`PHYSICAL_ASSEMBLY_DEFECT_COCYCLE_LAW_AND_COVARIANCE_BOUNDARY_CYCLE710_NOTE_2026-08-02.md`](PHYSICAL_ASSEMBLY_DEFECT_COCYCLE_LAW_AND_COVARIANCE_BOUNDARY_CYCLE710_NOTE_2026-08-02.md).
+  [`PHYSICAL_ASSEMBLY_DEFECT_COCYCLE_AND_MIXED_FRAME_COMPARATOR_CYCLE710_NOTE_2026-08-02.md`](PHYSICAL_ASSEMBLY_DEFECT_COCYCLE_AND_MIXED_FRAME_COMPARATOR_CYCLE710_NOTE_2026-08-02.md).
 - The Cycle-711 exact magnitude-4 stencil result and measured census anchors:
   [`PHYSICAL_MIXED_FRAME_COMPARATOR_EXACT_STENCIL_SWAP_LAW_CYCLE711_NOTE_2026-08-02.md`](PHYSICAL_MIXED_FRAME_COMPARATOR_EXACT_STENCIL_SWAP_LAW_CYCLE711_NOTE_2026-08-02.md).
 - The supplied Cycle-696 compiler:
@@ -106,7 +106,10 @@ the bounded finite claim.
 
 The Cycle-710 and Cycle-711 rows remain subject to independent audit. Until
 their dependency chain is retained-grade, this result is bounded conditional
-support rather than a chain-satisfying authority.
+support rather than a chain-satisfying authority. Cycle 710 proves its exact
+cocycle only on the constant-sign sextet at `L={3,7}`; this note imports the
+same finite transport definition for a census of the 18 mixed-frame
+comparators and does not extend that cocycle or physical-covariance claim.
 
 ### Declared analysis choices
 

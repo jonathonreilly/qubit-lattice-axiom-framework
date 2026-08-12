@@ -189,27 +189,47 @@
       "pass": true
     },
     "g7_L3_all-ones_orbit_is_one_point": {
-      "detail": "orbit diameter 0.0e+00, blind on every transversal, so a degenerate orbit breaks the count",
+      "detail": "orbit diameter 0.0e+00, all 1296 transversals blind",
       "pass": true
     },
-    "g7_L3_unit-slot0_count_survives": {
-      "detail": "orbit diameter 1.0e+00, blind on the same 24 transversals",
+    "g7_L3_unit-slot0_finite_count": {
+      "detail": "orbit diameter 1.0e+00, measured 24/1296 blind transversals; the 24 regular cosets remain sufficient",
       "pass": true
     },
-    "g7_L3_unit-slot7_count_survives": {
-      "detail": "orbit diameter 1.0e+00, blind on the same 24 transversals",
+    "g7_L3_unit-slot1_finite_count": {
+      "detail": "orbit diameter 1.0e+00, measured 24/1296 blind transversals; the 24 regular cosets remain sufficient",
+      "pass": true
+    },
+    "g7_L3_unit-slot7_finite_count": {
+      "detail": "orbit diameter 1.0e+00, measured 24/1296 blind transversals; the 24 regular cosets remain sufficient",
+      "pass": true
+    },
+    "g7_L3_unit-slot8_finite_count": {
+      "detail": "orbit diameter 1.0e+00, measured 264/1296 blind transversals; the 24 regular cosets remain sufficient",
       "pass": true
     },
     "g7_L4_all-ones_orbit_is_one_point": {
-      "detail": "orbit diameter 0.0e+00, blind on every transversal, so a degenerate orbit breaks the count",
+      "detail": "orbit diameter 0.0e+00, all 1296 transversals blind",
       "pass": true
     },
-    "g7_L4_unit-slot0_count_survives": {
-      "detail": "orbit diameter 1.0e+00, blind on the same 24 transversals",
+    "g7_L4_unit-slot0_finite_count": {
+      "detail": "orbit diameter 1.0e+00, measured 24/1296 blind transversals; the 24 regular cosets remain sufficient",
       "pass": true
     },
-    "g7_L4_unit-slot7_count_survives": {
-      "detail": "orbit diameter 1.0e+00, blind on the same 24 transversals",
+    "g7_L4_unit-slot1_finite_count": {
+      "detail": "orbit diameter 1.0e+00, measured 72/1296 blind transversals; the 24 regular cosets remain sufficient",
+      "pass": true
+    },
+    "g7_L4_unit-slot7_finite_count": {
+      "detail": "orbit diameter 1.0e+00, measured 24/1296 blind transversals; the 24 regular cosets remain sufficient",
+      "pass": true
+    },
+    "g7_L4_unit-slot8_finite_count": {
+      "detail": "orbit diameter 1.0e+00, measured 24/1296 blind transversals; the 24 regular cosets remain sufficient",
+      "pass": true
+    },
+    "g7_exact_zero_average_is_out_of_domain": {
+      "detail": "nontrivial orbit diameter 2.0e+00, average norm 0.0e+00, spread is NaN",
       "pass": true
     }
   },
@@ -217,10 +237,14 @@
     "boundary": {
       "L3_all-ones": 1296,
       "L3_unit-slot0": 24,
+      "L3_unit-slot1": 24,
       "L3_unit-slot7": 24,
+      "L3_unit-slot8": 264,
       "L4_all-ones": 1296,
       "L4_unit-slot0": 24,
-      "L4_unit-slot7": 24
+      "L4_unit-slot1": 72,
+      "L4_unit-slot7": 24,
+      "L4_unit-slot8": 24
     },
     "census": 231,
     "covering_orders": [
@@ -275,9 +299,20 @@
         "1.2e-10",
         "4.0e+00"
       ]
+    },
+    "zero_average_witness": {
+      "classification": "outside normalized-pairing domain",
+      "norm": "0.0e+00",
+      "orbit_diameter": "2.0e+00",
+      "set": [
+        0,
+        1,
+        3,
+        5
+      ]
     }
   },
-  "pass": 46,
+  "pass": 51,
   "runner": "physical_body_diagonal_frame_functional_transversal_law_cycle717_2026_08_02.py",
   "sextet": [
     1,
@@ -292,5 +327,6 @@
     "separation_min": "1.0e+03",
     "stabiliser": "1.0e-09"
   },
-  "transversals": 1296
+  "transversals": 1296,
+  "verdict": "PASS"
 }

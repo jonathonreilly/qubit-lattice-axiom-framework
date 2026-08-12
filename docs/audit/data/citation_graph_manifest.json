@@ -1,6 +1,6 @@
 {
- "edge_count": 15525,
- "node_count": 5462,
+ "edge_count": 15529,
+ "node_count": 5463,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -13793,6 +13793,10 @@
   "physical_source_stabilizer_coset_collapse_k_sign_law_cycle707_note_2026-08-01": {
    "deps_hash": "ef9523891aaa",
    "out_degree": 3
+  },
+  "physical_stencil_derived_centrality_cycle721_note_2026-08-02": {
+   "deps_hash": "ba2fbc2e6633",
+   "out_degree": 4
   },
   "physics_critic_tracker": {
    "deps_hash": "8ed7e6bfb298",

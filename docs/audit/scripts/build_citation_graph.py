@@ -304,6 +304,13 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
     "general_n_census_law_cycle870_bounded_theorem_note_2026-07-28": [
         "scripts/frontier_cycle870_census_independent_check_2026_07_28.py",
     ],
+    # Cycle 739's exact-cardinality SAT adversary deliberately imports and
+    # executes neither the meet-in-the-middle primary nor its search engine.
+    # Expose the sibling checker in the claim-scoped restricted packet.
+    "physical_cell_cutting_twelve_frontier_cycle739_note_2026-08-05": [
+        "scripts/physical_cell_cutting_twelve_frontier_cycle739_"
+        "independent_check_2026_08_05.py",
+    ],
     # Current paired certificates launch their load-bearing children with
     # subprocess rather than importing them. The Wilson note also names its
     # same-convention systematic sweep on the audited runner surface. Register

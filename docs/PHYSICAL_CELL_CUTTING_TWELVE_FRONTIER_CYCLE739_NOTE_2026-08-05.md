@@ -1,32 +1,60 @@
-# Twelve pieces: the six charges need at least fourteen — Cycle 739
+# Twelve-piece exclusion for six finite algebraic readings — Cycle 739
 
 Date: 2026-08-05
 
 Cycle: 739
 
-Authority: none
+Claim type: bounded_theorem
+
+Authority: none.
 
 Audit: unset.
 
-Status: bounded conditional theorem
+Constitutional effect: none. No axiom or primitive is proposed or adopted.
+Audit status is set only by the independent
+audit lane, and effective status is pipeline-derived.
 
-Claim type: bounded_theorem
-
-Runners:
+Primary runner:
 
 - [`physical_cell_cutting_twelve_frontier_cycle739_2026_08_05.py`](../scripts/physical_cell_cutting_twelve_frontier_cycle739_2026_08_05.py)
 
-Standing framework: [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md).
+Independent checker:
 
-Constitutional effect: none. This package changes no axiom, primitive,
-registry, policy, queue, audit result, or audit status. It records one finite
-measurement.
+- [`physical_cell_cutting_twelve_frontier_cycle739_independent_check_2026_08_05.py`](../scripts/physical_cell_cutting_twelve_frontier_cycle739_independent_check_2026_08_05.py)
+
+## Supplied model and direct dependencies
+
+This is a theorem only about a supplied finite model: the four-cube on the
+sixteen corners of `{0,1}^4`, with three labelled spatial columns, one labelled
+tick column, normalized-volume-one corner 4-simplices, the supplied
+four-coordinate L1-pair cost, and the declared 48-element spatial-rotation /
+tick-flip action. A cutting is 24 such pieces with disjoint interiors and total
+normalized volume 24. A reading is a fixed GF(2) function on the resulting
+15,800 cuttings. None of those choices is asserted to be physically selected.
+
+[Cycle 737](PHYSICAL_CELL_CUTTING_LEAST_COMPUTING_SETS_CYCLE737_NOTE_2026-08-05.md)
+is a direct dependency. Its generated receipt binds the certified geometric
+population, stable 192-piece order, exact identities of the eight constant and
+nonconstant algebraic readings, and the complete support search through size
+eight. [Cycle 738](PHYSICAL_CELL_CUTTING_SIZE_TEN_FRONTIER_CYCLE738_NOTE_2026-08-05.md)
+is also direct: its primary and independent receipts bind exact-weight-ten
+UNSAT for those same readings. The Cycle 739 primary reconstructs the finite
+population and readings, then refuses a positive result unless their canonical
+hashes and both predecessor receipts match.
+
+The [Minimal Axioms](MINIMAL_AXIOMS_2026-06-29.md) supply only the spatial
+`Z^3` nearest-neighbour lattice and proper cubic rotations. The registered
+[kinetic-isotropy primitive](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md)
+supplies only equal spatial/tick kinetic-form graining. Neither source selects
+this one-box domain, the corner-simplex class, the supplied cost, these
+algebraic readings, a physical assembly cell, or a tick--Admissibility
+realization.
 
 ## Result
 
-The object is the unit four-cube on its 16 corners, cut into pieces at the floor
-of the adjacency cost. There are 15800 such cuttings, each using 24 pieces, drawn
-from 192 pieces in all. A set of pieces carries a reading when, on every one of
+The object is the supplied unit four-cube on its 16 corners, cut into pieces at
+the floor of the supplied cost. There are 15800 such cuttings, each using 24
+pieces, drawn from 192 pieces in all. A set of pieces carries a reading when, on every one of
 the 15800 cuttings, the parity of how many of its pieces that cutting uses
 reproduces the reading.
 
@@ -38,20 +66,21 @@ readings at once, gives the counts
 ```
 
 in the order: the constant zero reading, the constant one reading, the two sides
-of each of the three charges, the four controls of the previous cycle, the five
-planted twelve-piece controls, and one synthetic reading whose forced total
-parity is odd.
+of each of the three paired nonconstant readings, the four Cycle 738 controls,
+the five planted twelve-piece controls, and one synthetic reading whose forced
+total parity is odd.
 
-The six charge entries are all 0. The complete searches at every set of at most
-eight pieces, at exactly ten, and now at exactly twelve are all empty for those
-six, and each of the six forces an even total parity, which bars every odd size.
-So no set of twelve or fewer pieces carries any of them, and the floor for all
-six moves from twelve to fourteen.
+The six nonconstant algebraic-reading entries are all 0. The complete searches
+at every set of at most eight pieces, at exactly ten, and now at exactly twelve
+are all empty for those six, and each of the six forces an even total parity,
+which bars every odd size.
+So no set of twelve or fewer pieces carries any of them, and the minimum
+support for each is at least fourteen.
 
 The bound is not vacuous. Measured apart from the search, every one of the
 readings except the synthetic one lies in the column space of the incidence
-table, so each of the six charges is carried by some piece set; what this cycle
-measures is that no such set has twelve or fewer pieces. The synthetic reading
+table, so each of the six nonconstant readings is carried by some piece set;
+what this cycle measures is that no such set has twelve or fewer pieces. The synthetic reading
 lies outside the column space, which is why it is empty at every size.
 
 ## The certificate tree
@@ -139,20 +168,23 @@ in chunks. No intermediate or final table reached the cap of
 30000000 entries.
 
 Three sweeps were run: every set of at most eight pieces, every set of exactly
-ten, and every set of exactly twelve. At twelve, every licensed cell was met
-exactly once per reading and the 1167 splits were all distinct.
+ten, and every set of exactly twelve. At twelve, an expected-inventory ledger
+is built independently of execution; every licensed cell was completed and all
+1167 scheduled splits executed exactly once. A split is credited only after its
+meet returns successfully.
 
 ## Verification
 
-The runner carries 38 gates and reports `TOTAL: PASS=38 FAIL=0`.
+The primary carries 40 gates: 38 finite search/certificate gates plus two
+direct-dependency identity gates. Its canonical cache records the exact total.
 
 - Known answer, at most eight pieces: 648 sets carry the constant zero reading,
   in 22 orbits of the cell symmetries — 17 of size 24 and 5 of size 48 — and 192
   carry the constant one reading, in 5 orbits, 2 of size 24 and 3 of size 48. The
-  six charges and the synthetic odd reading are empty there. All 845 recorded
-  sets recompute to their own reading.
+  six nonconstant readings and the synthetic odd reading are empty there. All
+  845 recorded sets recompute to their own reading.
 - Known answer at ten: the first twelve readings give 0,0,0,0,0,0,0,0,108,1,2,0,
-  reproducing the previous cycle exactly; 111 recorded sets verified; the
+  reproducing the direct Cycle 738 result exactly; 111 recorded sets verified; the
   synthetic odd reading licenses no cell at ten.
 - Recorded sets at twelve: all 11648 of them recompute to their own reading, have
   weight 12, and are pairwise distinct.
@@ -174,17 +206,46 @@ The runner carries 38 gates and reports `TOTAL: PASS=38 FAIL=0`.
   search compares a candidate's syndrome on the 88 pivot cuttings, and those 88
   rows separate the readings the table can carry, agreement there is agreement on
   all 15800 cuttings for every reading the object admits.
-- Budgets: under 90 s elapsed against a 900 second ceiling, peak memory under
-  1600 MB, output under 5500 characters.
+- Budgets: under the 900 second ceiling and 1600 MB ceiling; canonical stdout
+  remains under the repo's 6000-character limit.
+
+The independent checker imports and executes neither the primary nor its meet
+engine. It rebuilds the piece population with the opposite exact-cover pivot,
+binds the canonical row/order/function identities, selects an independent
+88-row GF(2) basis, and encodes exact-weight-twelve syndrome equations using
+Tseitin XOR clauses plus an exact cardinality totalizer. An independently
+maintained CaDiCaL backend recovers exact-weight-twelve constant-reading SAT
+controls and proves UNSAT for the six nonconstant targets; every returned SAT
+support is checked against all 15,800 rows. It separately reconstructs the
+certificate-tree ranks
+and first-quarter kernel distribution.
+
+Hostile controls make the negative result fail closed: a locally skipped
+zero-yield primary split makes the expected/executed inventory gate fail; a
+planted twelve-piece syndrome is SAT and is verified on all rows; a target-bit
+mutation changes the solver result or canonical identity; local primary,
+Cycle 737, and Cycle 738 mutations invalidate receipt hashes; and a failed
+generated verdict cannot satisfy the checker acceptance predicate.
+
+Canonical evidence:
+
+- [primary cache](../logs/runner-cache/physical_cell_cutting_twelve_frontier_cycle739_2026_08_05.txt)
+- [independent cache](../logs/runner-cache/physical_cell_cutting_twelve_frontier_cycle739_independent_check_2026_08_05.txt)
+- [primary receipt](../outputs/physical_cell_cutting_twelve_frontier_cycle739_2026_08_05_receipt_2026-08-05.json)
+- [independent receipt](../outputs/physical_cell_cutting_twelve_frontier_cycle739_independent_check_2026_08_05_receipt_2026-08-05.json)
+
+The required fresh sequence is primary first and independent checker second.
+Both generated receipts must say `status: pass` with zero failures and current
+content hashes.
 
 ## Boundary / honest read
 
-One engine produced the twelve sweep. The planted recovery — five sets drawn
-blind to the search, covering both the quarter-split and the eighth-split code
-paths — and the independent subcode enumeration, which reproduces all 30 weight-8
-and all 63 weight-12 words without consulting the search at all, narrow that
-single-engine dependence but do not remove it. An independent re-implementation
-at twelve is not part of this package.
+The primary meet engine produces the detailed twelve-piece census and orbit
+tables. The independent exact-cardinality solver removes single-engine
+dependence from the load-bearing six UNSAT results and independently recovers
+SAT controls for both constant readings. The five planted readings and local
+subcode enumeration remain controls of the primary implementation, not a claim
+of independence.
 
 The block profile is relative to the fixed canonical ordering of the 192 columns.
 Which blocks are forced, the internal dimensions 0,0,0,0,0,0,1,2 and 0,0,6,13,
@@ -192,19 +253,81 @@ and the rank drop at the first quarter are measured, not derived: a different
 ordering of the same 192 pieces would relabel the table, and nothing here shows
 that the ordering is forced.
 
-The floor statement is a lower bound and nothing more. Sizes above twelve were
-not searched, so this says the six charges need at least fourteen pieces, not
-that fourteen suffices.
+The minimum-support statement is a lower bound and nothing more. Sizes above
+twelve were not searched, so this says the six fixed nonconstant algebraic
+readings need at least fourteen pieces, not that fourteen suffices.
 
-The four controls of the previous cycle are nonempty at twelve, at 661, 25, 38
+The four Cycle 738 controls are nonempty at twelve, at 661, 25, 38
 and 38, and the constant readings at 7808 and 3072. Those counts are what a
 search able to find things looks like on this object; they are recorded here, not
 otherwise interpreted.
 
-## Claim type
+No physical charge, conservation law, cell/tick selection, arbitrary piece
+class, nonlinear or nonbinary observable, multi-cell gluing, boundary,
+arbitrary-size, or continuum statement is made.
 
-Claim type: bounded_theorem
+## No-Go Discipline Gate
 
-## Audit
+Negative assertion class: `derived_no_go_boundary`. The only exclusion is the
+minimum-support bound for six fixed algebraic functions on one supplied finite
+15,800-row, 192-column GF(2) incidence system.
 
-Audit: unset.
+- **N1 — five normalized attack families.** (1) `ATTEMPTED`: the primary's
+  quarter/eighth meet-in-the-middle formulation enumerates every licensed cell
+  and scheduled split at weights through twelve; all six targets return zero.
+  (2) `ATTEMPTED`: the independent checker uses an opposite exact-cover pivot,
+  independent row basis, CNF XOR encoding, exact-cardinality totalizer, and
+  CaDiCaL; all six exact-weight-twelve questions are UNSAT. (3) `ATTEMPTED`:
+  whole-support row-space parity independently excludes every odd cardinality.
+  (4) `ATTEMPTED`: canonical row/order/function hashes attack the wrong-target
+  route and bind the searched bytes to Cycle 737. (5) `ATTEMPTED`: hostile
+  skip, planted-SAT, target-bit, dependency, and failed-verdict mutations attack
+  completeness accounting and fail-closed evidence transport. These families
+  differ in formulation, invariant, and terminal obligation; they are not
+  alternate descriptions of one implementation.
+- **N2 — condition independence.** The conditions are `F`, the supplied finite
+  model/population; `R`, the six fixed reading identities; and `K`, support
+  cardinality at most twelve. Closing or changing any one does not close either
+  other: `F↛R`, `R↛F`, `F↛K`, `K↛F`, `R↛K`, and `K↛R`. None is collapsed or
+  presented as an independent physical wall.
+- **N3 — hidden-condition scan.** “Supplied,” “fixed,” “canonical ordering,”
+  and the search construction are load-bearing and are stated explicitly. The
+  one-box domain, corner-simplex class, minimum-cost population, GF(2) reading,
+  192-column support universe, labelled tick, 48-element action, and maximum
+  searched cardinality are all named. “Canonical” means the receipt-bound
+  finite column order, not framework selection. No hidden framework premise is
+  used.
+- **N4 — residual matching.** Cycle 737 supplies exactly the same population,
+  column order, six function identities, and complete exclusion through size
+  eight. Cycle 738 supplies exactly the same targets' exact-weight-ten UNSAT.
+  Cycle 739 adds exact-weight-twelve UNSAT and the same whole-support even-parity
+  certificate. The receipt hashes and canonical function hashes enforce these
+  residual matches; no broader no-go is cited.
+- **N5 — rhetoric audit.** The canonical primary cache lands substantive
+  `per_element`, `per_site`, `per_mode`, `per_block`, and `lattice_wide`
+  execution lines. The theorem is checked per element and on the full supplied
+  finite block. Site-field, mode, and lattice-wide extensions are explicitly
+  not executed and are not claimed.
+- **N6 — partial-closure paths.** Exact weight fourteen can be searched to test
+  sufficiency without adding an axiom. Other piece classes, costs, coefficient
+  fields, and multi-cell transports are separate supplied finite models or
+  bridge theorems. The registered primitives add none of them. These are open
+  extensions, not impossibility claims or proposals for new primitives.
+- **N7 — steelman.** A hostile reviewer should first suspect a skipped
+  zero-yield partition, because positive-return verification alone cannot detect
+  that omission; the explicit expected/executed split ledger and hostile skip
+  mutation now expose it. The next actionable attack is an exact-cardinality
+  formulation sharing neither pivot rule nor meet engine; the independent CNF
+  checker performs that attack. A smaller support could still exist after
+  changing the supplied piece universe, reading, or coefficient field, but that
+  is a different terminal problem and is outside this narrow theorem.
+- **N8 — cross-cycle echo.** Cycles 737 and 738 are the exact same minimum-
+  support ladder at smaller cardinalities; both were strengthened by independent
+  exact search and canonical identity binding rather than rhetoric. Cycle 736's
+  negative move-response statements concern different equations and are not
+  reused as support. The applicable prior repair mechanism—new exact search at
+  the next cardinality plus hostile and identity controls—is the mechanism used
+  here.
+
+No-Go Discipline status: **PASS**, conditional on the canonical fresh
+primary-then-independent execution recording zero failures.

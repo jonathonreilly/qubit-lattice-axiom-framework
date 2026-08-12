@@ -1,30 +1,112 @@
-"""Cycle 739: the complete search at twelve pieces, and the certificate tree of a cell.
+"""Cycle 739: exact-weight-twelve search and certificate tree in a finite model.
 
 The object is the unit four-cube on the sixteen corners of the sixteen zero-one words of
 length four, cut into pieces of least volume at the floor of the adjacency cost. Its
 15800 cuttings use 24 pieces each, drawn from 192 pieces in all, and a set of pieces
 carries a reading when, on every cutting, the parity of how many of its pieces that
-cutting uses reproduces the reading. The previous cycles searched every set of at most
-eight pieces and then every set of exactly ten. This runner measures the internal parity
+cutting uses reproduces the reading. Cycles 737 and 738 searched every set of at most
+eight pieces and then every set of exactly ten. This runner hash-binds their generated
+receipts and exact reading identities, measures the internal parity
 dimension of every block and block union of the 192 columns, enumerates the two kernel
 subcodes those dimensions predict, and then uses the internal parities as pruning to
 complete the search at twelve against eighteen readings: the constant zero, the constant
-one, the two sides of each of the three charges, four planted controls, five planted
+one, six fixed nonconstant algebraic readings, four planted controls, five planted
 twelve-piece controls, and one synthetic reading whose forced total parity is odd.
 
-Class-A: integer and field-with-two-elements arithmetic on a finite explicit object, no
-solver. Every count below is measured here.
+Class-A: integer and field-with-two-elements arithmetic on a supplied finite explicit
+object, no solver. Every count below is measured here. The one-cell/tick model,
+corner-simplex domain, cost, and algebraic readings are supplied rather than selected by
+the framework axioms; no physical charge identification is made.
 """
+import hashlib
 import itertools
+import json
 import math
 import resource
+import sys
 import time
+from pathlib import Path
 
 import numpy as np
 
 T0 = time.time()
 PF = [0, 0]
 OUT = [0]
+GATES = []
+ROOT = Path(__file__).resolve().parents[1]
+NOTE_PATH = "docs/PHYSICAL_CELL_CUTTING_TWELVE_FRONTIER_CYCLE739_NOTE_2026-08-05.md"
+INDEPENDENT_PATH = (
+    "scripts/physical_cell_cutting_twelve_frontier_cycle739_independent_check_2026_08_05.py"
+)
+C737_NOTE_PATH = "docs/PHYSICAL_CELL_CUTTING_LEAST_COMPUTING_SETS_CYCLE737_NOTE_2026-08-05.md"
+C737_PRIMARY_PATH = "scripts/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05.py"
+C737_CHECKER_PATH = (
+    "scripts/physical_cell_cutting_least_computing_sets_cycle737_independent_check_2026_08_05.py"
+)
+C737_RECEIPT_PATH = (
+    "outputs/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05_"
+    "receipt_2026-08-05.json"
+)
+C737_INDEPENDENT_RECEIPT_PATH = (
+    "outputs/physical_cell_cutting_least_computing_sets_cycle737_independent_check_"
+    "2026_08_05_receipt_2026-08-05.json"
+)
+C738_NOTE_PATH = "docs/PHYSICAL_CELL_CUTTING_SIZE_TEN_FRONTIER_CYCLE738_NOTE_2026-08-05.md"
+C738_PRIMARY_PATH = "scripts/physical_cell_cutting_size_ten_frontier_cycle738_2026_08_05.py"
+C738_CHECKER_PATH = (
+    "scripts/physical_cell_cutting_size_ten_frontier_cycle738_independent_check_2026_08_05.py"
+)
+C738_RECEIPT_PATH = (
+    "outputs/physical_cell_cutting_size_ten_frontier_cycle738_2026_08_05_"
+    "receipt_2026-08-05.json"
+)
+C738_INDEPENDENT_RECEIPT_PATH = (
+    "outputs/physical_cell_cutting_size_ten_frontier_cycle738_independent_check_"
+    "2026_08_05_receipt_2026-08-05.json"
+)
+RECEIPT_PATH = ROOT / (
+    "outputs/physical_cell_cutting_twelve_frontier_cycle739_2026_08_05_"
+    "receipt_2026-08-05.json"
+)
+RECEIPT_PATH.unlink(missing_ok=True)
+AUDIT_INPUT_PATHS = (
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+    "docs/PHYSICAL_CELL_CUTTING_CHARGE_SPACE_CYCLE736_NOTE_2026-08-05.md",
+    "scripts/physical_cell_cutting_charge_space_cycle736_2026_08_05.py",
+    "scripts/physical_cell_cutting_charge_space_cycle736_independent_check_2026_08_05.py",
+    "outputs/physical_cell_cutting_charge_space_cycle736_2026_08_05_"
+    "receipt_2026-08-05.json",
+    C737_NOTE_PATH,
+    C737_PRIMARY_PATH,
+    C737_CHECKER_PATH,
+    C737_RECEIPT_PATH,
+    C737_INDEPENDENT_RECEIPT_PATH,
+    C738_NOTE_PATH,
+    C738_PRIMARY_PATH,
+    C738_CHECKER_PATH,
+    C738_RECEIPT_PATH,
+    C738_INDEPENDENT_RECEIPT_PATH,
+    NOTE_PATH,
+    INDEPENDENT_PATH,
+    "requirements.txt",
+    "requirements-release.txt",
+)
+AUDIT_TIMEOUT_SEC = 900
+
+
+def file_sha256(relative_path):
+    return hashlib.sha256((ROOT / relative_path).read_bytes()).hexdigest()
+
+
+C737_RECEIPT = json.loads((ROOT / C737_RECEIPT_PATH).read_text(encoding="utf-8"))
+C737_INDEPENDENT_RECEIPT = json.loads(
+    (ROOT / C737_INDEPENDENT_RECEIPT_PATH).read_text(encoding="utf-8")
+)
+C738_RECEIPT = json.loads((ROOT / C738_RECEIPT_PATH).read_text(encoding="utf-8"))
+C738_INDEPENDENT_RECEIPT = json.loads(
+    (ROOT / C738_INDEPENDENT_RECEIPT_PATH).read_text(encoding="utf-8")
+)
 
 
 def emit(s):
@@ -36,8 +118,17 @@ def emit(s):
     print(txt)
 
 
+def receipt_inputs_current(receipt, required_paths):
+    """Require exactly the expected input closure and current bytes for a receipt."""
+    recorded = receipt.get("input_sha256", {})
+    return set(recorded) == set(required_paths) and all(
+        recorded.get(path) == file_sha256(path) for path in required_paths
+    )
+
+
 def gate(ok, name, detail):
     PF[0 if ok else 1] += 1
+    GATES.append((name, bool(ok)))
     emit(("PASS " if ok else "FAIL ") + name + "  " + detail)
 
 
@@ -366,6 +457,138 @@ PLANT = [("pair (2,2)", (10, 55, 120, 168)),
 for pname, psupp in PLANT:
     TGT.append((pname, (INCL[:, list(psupp)].sum(axis=1) & 1).astype(np.uint8)))
 NT = len(TGT)
+
+# The six nonconstant targets are not named by local enumeration order.  Cycle 737's
+# generated receipt binds the exact incidence rows, used-piece order, and function bytes;
+# Cycle 738 independently binds the predecessor exact-weight-ten UNSAT result.
+CTUP = [[int(corner) for corner in UNI[piece]] for piece in USED]
+PACKED_INCIDENCE_ROWS = [bytes(row) for row in np.packbits(INC, axis=1)]
+
+
+def canonical_reading_hash(function):
+    return hashlib.sha256(b"".join(sorted(
+        row + bytes((int(bit),))
+        for row, bit in zip(PACKED_INCIDENCE_ROWS, function)
+    ))).hexdigest()
+
+
+READING_IDENTITY = C737_RECEIPT.get("reading_identity", {})
+FUNCTION_IDENTITY = READING_IDENTITY.get("functions", {})
+EXPECTED_NAMES = [
+    "zero", "one", "four", "four-flip", "six", "six-flip", "seven", "seven-flip"
+]
+INDEPENDENT_READING_IDENTITY = C737_INDEPENDENT_RECEIPT.get("reading_identity", {})
+CANONICAL_IDENTITY_AGREES = (
+    INDEPENDENT_READING_IDENTITY.get("canonical_incidence_rows_sha256")
+    == READING_IDENTITY.get("canonical_incidence_rows_sha256")
+    and INDEPENDENT_READING_IDENTITY.get("support_column_order_sha256")
+    == READING_IDENTITY.get("support_column_order_sha256")
+    and all(
+        INDEPENDENT_READING_IDENTITY.get("functions", {}).get(name, {}).get("ones")
+        == FUNCTION_IDENTITY.get(name, {}).get("ones")
+        and INDEPENDENT_READING_IDENTITY.get("functions", {}).get(name, {}).get(
+            "canonical_rows_with_bit_sha256"
+        ) == FUNCTION_IDENTITY.get(name, {}).get("canonical_rows_with_bit_sha256")
+        for name in EXPECTED_NAMES
+    )
+)
+C737_PRIMARY_INPUTS = (
+    C737_NOTE_PATH,
+    C737_CHECKER_PATH,
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+    "docs/PHYSICAL_CELL_CUTTING_CHARGE_SPACE_CYCLE736_NOTE_2026-08-05.md",
+    "scripts/physical_cell_cutting_charge_space_cycle736_2026_08_05.py",
+    "scripts/physical_cell_cutting_charge_space_cycle736_independent_check_2026_08_05.py",
+    "outputs/physical_cell_cutting_charge_space_cycle736_2026_08_05_"
+    "receipt_2026-08-05.json",
+)
+C737_INDEPENDENT_INPUTS = (
+    C737_NOTE_PATH,
+    C737_PRIMARY_PATH,
+    C737_RECEIPT_PATH,
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+    "docs/PHYSICAL_CELL_CUTTING_CHARGE_SPACE_CYCLE736_NOTE_2026-08-05.md",
+    "scripts/physical_cell_cutting_charge_space_cycle736_2026_08_05.py",
+    "scripts/physical_cell_cutting_charge_space_cycle736_independent_check_2026_08_05.py",
+    "outputs/physical_cell_cutting_charge_space_cycle736_2026_08_05_"
+    "receipt_2026-08-05.json",
+)
+C738_PRIMARY_INPUTS = (
+    C737_NOTE_PATH,
+    C737_PRIMARY_PATH,
+    C737_CHECKER_PATH,
+    C737_RECEIPT_PATH,
+    C738_NOTE_PATH,
+    C738_CHECKER_PATH,
+)
+C738_INDEPENDENT_INPUTS = (
+    C738_NOTE_PATH,
+    C738_PRIMARY_PATH,
+    "requirements.txt",
+    "requirements-release.txt",
+    C737_NOTE_PATH,
+    C737_PRIMARY_PATH,
+    C737_CHECKER_PATH,
+    C737_RECEIPT_PATH,
+)
+IDENTITY_OK = (
+    C737_RECEIPT.get("schema") == "physical-cell-cutting-least-computing-sets-cycle737-v2"
+    and C737_RECEIPT.get("status") == "pass"
+    and C737_RECEIPT.get("gates", {}).get("fail") == 0
+    and C737_RECEIPT.get("runner_sha256") == file_sha256(C737_PRIMARY_PATH)
+    and receipt_inputs_current(C737_RECEIPT, C737_PRIMARY_INPUTS)
+    and C737_INDEPENDENT_RECEIPT.get("schema")
+    == "physical-cell-cutting-least-computing-sets-cycle737-independent-v1"
+    and C737_INDEPENDENT_RECEIPT.get("status") == "pass"
+    and C737_INDEPENDENT_RECEIPT.get("gates", {}).get("fail") == 0
+    and C737_INDEPENDENT_RECEIPT.get("runner_sha256") == file_sha256(C737_CHECKER_PATH)
+    and receipt_inputs_current(C737_INDEPENDENT_RECEIPT, C737_INDEPENDENT_INPUTS)
+    and CANONICAL_IDENTITY_AGREES
+    and C737_RECEIPT.get("complete_support_sweep", {}).get("maximum_cardinality") == 8
+    and C737_RECEIPT.get("complete_support_sweep", {}).get(
+        "nonconstant_reading_minimum_lower_bound"
+    ) == 10
+    and READING_IDENTITY.get("incidence_packbits_sha256")
+    == hashlib.sha256(np.packbits(INC, axis=1).tobytes()).hexdigest()
+    and READING_IDENTITY.get("canonical_incidence_rows_sha256")
+    == hashlib.sha256(b"".join(sorted(PACKED_INCIDENCE_ROWS))).hexdigest()
+    and READING_IDENTITY.get("support_column_order_sha256")
+    == hashlib.sha256(json.dumps(CTUP, separators=(",", ":")).encode("utf-8")).hexdigest()
+    and len(NAMED) == 3
+    and sorted(HITS.values()) == [2, 2, 2]
+)
+for name, (_local_name, function) in zip(EXPECTED_NAMES, TGT[:8]):
+    metadata = FUNCTION_IDENTITY.get(name, {})
+    IDENTITY_OK = IDENTITY_OK and metadata.get("ones") == int(function.sum())
+    IDENTITY_OK = IDENTITY_OK and metadata.get("packbits_sha256") == hashlib.sha256(
+        np.packbits(function).tobytes()
+    ).hexdigest()
+    IDENTITY_OK = IDENTITY_OK and metadata.get(
+        "canonical_rows_with_bit_sha256"
+    ) == canonical_reading_hash(function)
+
+C738_COUNTS = C738_RECEIPT.get("complete_search_at_ten", {}).get("counts", [])
+C738_READINGS = C738_RECEIPT.get("complete_search_at_ten", {}).get("readings", [])
+C738_ANSWERS = C738_INDEPENDENT_RECEIPT.get("ten_piece_answers", {})
+C738_OK = (
+    C738_RECEIPT.get("schema") == "physical-cell-cutting-size-ten-frontier-cycle738-v2"
+    and C738_RECEIPT.get("status") == "pass"
+    and C738_RECEIPT.get("gates", {}).get("fail") == 0
+    and C738_RECEIPT.get("runner_sha256") == file_sha256(C738_PRIMARY_PATH)
+    and receipt_inputs_current(C738_RECEIPT, C738_PRIMARY_INPUTS)
+    and len(C738_COUNTS) >= 8
+    and C738_COUNTS[:8] == [0] * 8
+    and C738_READINGS[:8] == EXPECTED_NAMES
+    and C738_INDEPENDENT_RECEIPT.get("schema")
+    == "physical-cell-cutting-size-ten-frontier-cycle738-independent-v1"
+    and C738_INDEPENDENT_RECEIPT.get("status") == "pass"
+    and C738_INDEPENDENT_RECEIPT.get("gates", {}).get("fail") == 0
+    and C738_INDEPENDENT_RECEIPT.get("checker_sha256") == file_sha256(C738_CHECKER_PATH)
+    and receipt_inputs_current(C738_INDEPENDENT_RECEIPT, C738_INDEPENDENT_INPUTS)
+    and all(C738_ANSWERS.get(name) is False for name in EXPECTED_NAMES)
+)
 
 # ---- the 88 pivot cuttings and a piece's packed parities, rebuilt from INC ----
 EPACK = np.packbits(INC, axis=1, bitorder="little")
@@ -942,6 +1165,7 @@ def cells_of(m):
 
 SEEN = {}
 PROCD = []
+EXPECTED = []
 
 
 def run_sweep(m, tids):
@@ -951,18 +1175,28 @@ def run_sweep(m, tids):
         act = [t for t in tids if licensed_cell(cell, m, t)]
         if not act:
             continue
-        for t in act:
-            SEEN[t] = SEEN.get(t, 0) + 1
-        for (A, B) in plan_cell(cell):
-            PROCD.append((cell, A))
-            if not run_split(A, B, act):
+        plans = plan_cell(cell)
+        EXPECTED.extend((cell, A) for A, _B in plans)
+        cell_ok = bool(plans)
+        if not plans:
+            ok = False
+        for (A, B) in plans:
+            split_ok = run_split(A, B, act)
+            if split_ok:
+                PROCD.append((cell, A))
+            else:
+                cell_ok = False
                 ok = False
+        if cell_ok:
+            for t in act:
+                SEEN[t] = SEEN.get(t, 0) + 1
     return ok
 
 
 def coverage(m, tids):
-    """(cells met per target, splits done, splits distinct)"""
-    return ([SEEN.get(t, 0) for t in tids], len(PROCD), len(set(PROCD)))
+    """(cells met per target, executed/expected splits, distinct-execution flag)"""
+    return ([SEEN.get(t, 0) for t in tids], len(PROCD), len(EXPECTED),
+            len(set(PROCD)) == len(PROCD) and PROCD == EXPECTED)
 
 
 def fresh():
@@ -970,6 +1204,7 @@ def fresh():
     RES.clear()
     SEEN.clear()
     del PROCD[:]
+    del EXPECTED[:]
 
 
 def orbsum(t):
@@ -1076,11 +1311,6 @@ def upto(v, step):
     return n
 
 
-def pshow(cols):
-    """a piece index as quarter:offset, the block coordinates used throughout"""
-    return ",".join("{0}:{1}".format(*divmod(int(c), 48)) for c in sorted(cols))
-
-
 # ---- the incidence matrix, its rank, and the rows ----
 CSUM = INCL.sum(axis=0)
 SHAPE_OK = INC.shape == (15800, 192) and NS == 15800 and NPO == 192
@@ -1089,6 +1319,12 @@ NKER = NPO - ERANK
 NDIST = len(set(EROW))
 emit("INC {0}x{1} colsum {2} rank {3} kernel {4} rows-distinct {5}".format(
     NS, NPO, 1975, ERANK, NKER, NDIST))
+gate(IDENTITY_OK, "DEP1",
+     "Cycle 737 v2 binds the exact geometric population, piece order, and eight "
+     "algebraic reading functions reconstructed here")
+gate(C738_OK, "DEP2",
+     "Cycle 738 v2 and its independent receipt bind the predecessor exact-weight-ten "
+     "UNSAT result for the same eight readings")
 gate(SHAPE_OK, "G01", "the cuttings of least cost form a {0} by {1} table over the two "
      "element field".format(NS, NPO))
 gate(CS_OK, "G02", "every one of the {0} pieces is used by exactly {1} cuttings, an odd "
@@ -1115,9 +1351,6 @@ def parvec(nm):
 ZR = [0] * NR
 QPAT12 = [0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0]
 Q2V, Q3V = parvec("Q2"), parvec("Q3")
-emit("forced " + ",".join(FNAMES) + " free " + ",".join(UNAMES))
-emit("Q2 parity t0-11 " + vshow(Q2V[:12]) + " planted " + vshow(Q2V[12:])
-     + " odd-ctl total " + "{0}".format(fbit("total", TCTL)))
 gate(FNAMES == ["L", "Q2", "Q3", "R", "total"]
      and UNAMES == ["E0", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "Q0", "Q1"]
      and len(BLK) == 15, "G05",
@@ -1150,10 +1383,6 @@ CDIM = [len(inner(compl(QCOLS[q]))) for q in range(4)]
 QRK = [col_rank(QCOLS[q]) for q in range(4)]
 ERK = [col_rank(ECOLS[e]) for e in range(8)]
 LRK, RRK = col_rank(LCOLS), col_rank(RCOLS)
-emit("internal E " + vshow(EDIM))
-emit("internal Q " + vshow(QDIM) + " L {0} R {1} cross ".format(LDIM, RDIM)
-     + vshow(XDIM) + " comp " + vshow(CDIM))
-emit("colrank Q " + vshow(QRK) + " E " + vshow(ERK) + " L {0} R {1}".format(LRK, RRK))
 gate(EDIM == [0, 0, 0, 0, 0, 0, 1, 2], "G08",
      "the eight blocks of 24 pieces carry {0}".format(EDIM))
 gate(QDIM == [0, 0, 6, 13] and LDIM == 13 and RDIM == 33, "G09",
@@ -1241,7 +1470,6 @@ for pi, (pnm, prof) in enumerate(P12SPEC):
     S = PIECES[pi]
     got = tuple(sum(1 for c in S if 48 * q <= c < 48 * q + 48) for q in range(4))
     PROF.append(got == prof and len(set(S)) == 12)
-    emit(pnm + " " + pshow(S))
 gate(all(PROF) and len(PROF) == 5, "G18",
      "the five planted readings are twelve distinct pieces each, drawn to the five "
      "quarter profiles their names carry")
@@ -1276,7 +1504,7 @@ gate(C8[1] == 192, "G22",
      "and {0} carrying the constant one reading, the sets every cutting meets "
      "oddly".format(C8[1]))
 gate(all(C8[t] == 0 for t in SIX) and C8[TCTL] == 0, "G23",
-     "no set of eight or fewer carries either side of any charge, or the synthetic odd "
+     "no set of eight or fewer carries any of the six nonconstant readings, or the synthetic odd "
      "reading")
 gate(N8Z == 22 and O8Z == {24: 17, 48: 5} and CL8Z, "G24",
      "the {0} zero-reading sets fall into {1} orbits of the cell symmetries, {2} of "
@@ -1295,7 +1523,7 @@ C10 = [CNT.get(t, 0) for t in TIDS]
 V10 = verify(TIDS)
 emit("m=10 counts " + vshow(C10) + " verify " + vshow(V10))
 gate(C10[:12] == [0, 0, 0, 0, 0, 0, 0, 0, 108, 1, 2, 0] and V10[1] == 0 and V10[2] == 0,
-     "G27", "a complete search at ten reproduces the previous cycle exactly: "
+     "G27", "a complete search at ten reproduces Cycle 738 exactly: "
      "{0}".format(C10[:12]))
 gate(C10[TCTL] == 0 and lic_count(10, TCTL) == 0, "G28",
      "the odd synthetic reading licenses no cell at ten and is carried by none")
@@ -1305,7 +1533,7 @@ fresh()
 OK12 = run_sweep(12, TIDS)
 C12 = [CNT.get(t, 0) for t in TIDS]
 V12 = verify(TIDS)
-COV, NSPL, NDS = coverage(12, TIDS)
+COV, NSPL, NEXP, EXOK = coverage(12, TIDS)
 LIC12 = [lic_count(12, t) for t in TIDS]
 PREC = [has_set(NT + pi, PIECES[pi]) for pi in range(5)]
 W12OK = sum(1 for m in M0 if bin(m).count("1") == 12 and has_set(0, cols_of(m)))
@@ -1325,9 +1553,9 @@ for t in sorted(ORB12):
         emit("m=12 orbits {0} {1} {2}".format(TNAME[t], cshow(ORB12[t][1]),
                                               dshow(ORB12[t][0])))
 emit("m=12 orbits all of size 1 for readings " + vshow(SNG))
-gate(COV == LIC12 and NSPL == NDS and NSPL > 0, "G29",
+gate(COV == LIC12 and NSPL == NEXP == 1167 and EXOK, "G29",
      "every licensed cell at twelve is met once per target, {0} per even and {1} per "
-     "odd quarter reading, and its {2} splits are distinct".format(
+     "odd quarter reading, and all {2} scheduled splits execute exactly once".format(
          LIC12[0], LIC12[8], NSPL))
 gate(OK12 and not BLOWN, "G30",
      "no intermediate or final table in the search reached the cap of {0} "
@@ -1346,7 +1574,7 @@ gate(W12OK == NW12 and NW12 <= C12[0], "G34",
      "the zero reading at twelve".format(W12OK, C12[0]))
 gate(all(C12[t] == 0 for t in SIX) and all(fbit("total", t) == 0 for t in SIX)
      and all(C8[t] == 0 for t in SIX) and all(C10[t] == 0 for t in SIX), "G35",
-     "neither side of any of the three charges is carried at any size up to twelve, "
+     "none of the six nonconstant readings is carried at any size up to twelve, "
      "and each forces an even total, barring every odd size: the six need at least "
      "fourteen pieces")
 
@@ -1372,7 +1600,22 @@ for t in range(NTG):
 emit("in-column-space " + vshow([1 if a else 0 for a in ACH]))
 gate(len(CBAS) == ERANK and all(ACH[:TCTL]) and not ACH[TCTL], "G36",
      "all but the synthetic reading lie in the column space, so each of the six "
-     "charges is carried by some set")
+     "nonconstant readings is carried by some set")
+
+N5 = [
+    "per_element: checked -- all 192 used piece columns enter every exact support "
+    "calculation",
+    "per_site: checked -- one supplied 16-corner coordinate cell; no physical cell "
+    "selection",
+    "per_mode: checked and not executed -- no field, spectral, or momentum-mode "
+    "decomposition exists",
+    "per_block: checked -- all 15800 cutting rows and every scheduled quarter/eighth "
+    "split execute",
+    "lattice_wide: checked and not executed -- no multi-cell, arbitrary-L, boundary, or "
+    "continuum claim",
+]
+for line in N5:
+    emit(line)
 
 EL = time.time() - T0
 RSS = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1048576.0
@@ -1380,7 +1623,104 @@ ELB, RSB = upto(EL, 10), upto(RSS, 100)
 emit("elapsed under {0} s peak memory under {1} MB".format(ELB, RSB))
 gate(EL < 900.0, "G37", "the whole runner finishes under {0} seconds".format(900))
 CH = OUT[0] + 120
-gate(CH < 5500, "G38", "its output stays under {0} characters".format(5500))
+gate(CH < 6000, "G38", "its output stays under {0} characters".format(6000))
+
+receipt = {
+    "schema": "physical-cell-cutting-twelve-frontier-cycle739-v2",
+    "status": "pass" if PF[1] == 0 else "fail",
+    "claim_type": "bounded_theorem",
+    "audit_status_authority": "independent audit lane only",
+    "input_sha256": {path: file_sha256(path) for path in AUDIT_INPUT_PATHS},
+    "runner_sha256": file_sha256(
+        "scripts/physical_cell_cutting_twelve_frontier_cycle739_2026_08_05.py"
+    ),
+    "supplied_model": {
+        "shape": [1, 1, 1, 1],
+        "support_universe": "the 192 pieces used by the 15800 supplied geometric cuttings only",
+        "piece_class": "five-corner normalized-volume-one simplices only",
+        "cost": "corner pairs with four-coordinate L1 separation greater than one",
+        "physical_cell_tick_simplex_reading_bridge": "open",
+    },
+    "direct_dependencies": {
+        "cycle737": {
+            "status": C737_RECEIPT.get("status"),
+            "independent_status": C737_INDEPENDENT_RECEIPT.get("status"),
+            "reading_identity_bound": IDENTITY_OK,
+            "maximum_searched_cardinality": 8,
+        },
+        "cycle738": {
+            "status": C738_RECEIPT.get("status"),
+            "independent_status": C738_INDEPENDENT_RECEIPT.get("status"),
+            "exact_weight_ten_bound": C738_OK,
+            "reading_order": C738_READINGS[:8],
+        },
+    },
+    "population": {
+        "geometric_cuttings": NS,
+        "used_pieces": NPO,
+        "pieces_per_cutting": int(INC.sum(axis=1).min()),
+        "incidence_rank": ERANK,
+        "kernel_dimension": NKER,
+    },
+    "certificate_tree": {
+        "internal_blocks_of_24": EDIM,
+        "internal_quarters": QDIM,
+        "internal_halves": [LDIM, RDIM],
+        "internal_mixed_quarter_pairs": XDIM,
+        "internal_quarter_complements": CDIM,
+        "column_ranks_blocks_of_24": ERK,
+        "column_ranks_quarters": QRK,
+        "column_ranks_halves": [LRK, RRK],
+        "duality_checks": len(TWOS),
+    },
+    "complete_search_at_twelve": {
+        "readings": TNAME,
+        "counts": C12,
+        "licensed_cells_per_reading": LIC12,
+        "scheduled_splits": NEXP,
+        "executed_splits": NSPL,
+        "execution_inventory_exact": EXOK,
+        "verified_returns": V12[0],
+        "mismatched_returns": V12[1],
+        "duplicate_returns": V12[2],
+    },
+    "nonconstant_reading_bound": {
+        "reading_names": EXPECTED_NAMES[2:],
+        "complete_even_sizes": [2, 4, 6, 8, 10, 12],
+        "odd_sizes_barred_by_total_parity": True,
+        "minimum_support_lower_bound": 14,
+        "fourteen_sufficiency_shown": False,
+    },
+    "quarter_subcode": {
+        "dimension": len(K0),
+        "weight_distribution": D0,
+        "minimum_nonzero_weight": MINW0,
+        "weight_eight_words": NW8,
+        "weight_twelve_words": NW12,
+    },
+    "column_space": {
+        "dimension": len(CBAS),
+        "named_real_readings_inside": sum(1 for value in ACH[:TCTL] if value),
+        "synthetic_reading_inside": ACH[TCTL],
+    },
+    "no_go_discipline": {
+        "status": "PASS",
+        "negative_assertion_class": "derived_no_go_boundary",
+        "claim_scope": "minimum support at least fourteen for six fixed algebraic "
+        "readings in one finite 192-column incidence system",
+        "n5_execution_certificate": N5,
+    },
+    "gates": {
+        "pass": PF[0],
+        "fail": PF[1],
+        "named": {name: "PASS" if ok else "FAIL" for name, ok in GATES},
+    },
+}
+receipt_tmp = RECEIPT_PATH.with_suffix(RECEIPT_PATH.suffix + ".tmp")
+receipt_tmp.write_text(json.dumps(receipt, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+receipt_tmp.replace(RECEIPT_PATH)
+print("RECEIPT " + str(RECEIPT_PATH.relative_to(ROOT)), flush=True)
 
 emit("")
 print("TOTAL: PASS={0} FAIL={1}".format(PF[0], PF[1]))
+sys.exit(1 if PF[1] else 0)

@@ -1,6 +1,6 @@
 {
- "edge_count": 15539,
- "node_count": 5465,
+ "edge_count": 15543,
+ "node_count": 5466,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -15857,6 +15857,10 @@
   "recurrent_endpoint_incidence_physical_m2_compiler_tournament_cycle703_note_2026-07-25": {
    "deps_hash": "697940a70eb7",
    "out_degree": 16
+  },
+  "recurrent_f17_uniform_affine_open_box_cycle873_bounded_theorem_note_2026-08-03": {
+   "deps_hash": "cf3478d99604",
+   "out_degree": 4
   },
   "recurrent_matter_history_controller_cycle719_bounded_theorem_note_2026-07-26": {
    "deps_hash": "21f117eb3761",

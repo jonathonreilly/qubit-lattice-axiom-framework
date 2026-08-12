@@ -254,6 +254,12 @@ dependency_ok = (
     == canonical_incidence_hash
     and C742.get("incidence_identity", {}).get("support_column_order_sha256")
     == column_order_hash
+    and C742.get("reading_identity", {}).get("canonical_incidence_rows_sha256")
+    == canonical_incidence_hash
+    and C742.get("reading_identity", {}).get("support_column_order_sha256")
+    == column_order_hash
+    and set(C742.get("reading_identity", {}).get("functions", {}))
+    == {"zero", "one", "four", "four-flip", "six", "six-flip", "seven", "seven-flip"}
 )
 gate(dependency_ok, "independent.dependency",
      "Cycle 742 primary/checker and exact incidence identity are current")
@@ -592,6 +598,8 @@ def primary_contract(receipt):
         }
         and receipt_inputs_current(receipt)
         and receipt.get("generated_group", {}).get("order") == 384
+        and receipt.get("direct_dependency", {}).get("functions")
+        == C742.get("reading_identity", {}).get("functions")
         and receipt.get("invariant_cutting_partition", {}).get(
             "unique_e_invariant_eight_cutting_partition") is True
         and receipt.get("invariant_cutting_partition", {}).get("block_action_image_order") == 192

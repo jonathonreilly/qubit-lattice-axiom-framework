@@ -395,6 +395,16 @@ for nm in ["four", "six", "seven"]:
 RNM = [nm for nm, _ in TGT]
 TGTv = [v for _, v in TGT]
 T8 = np.array(TGTv)
+local_reading_identity = {
+    name: {
+        "ones": int(target.sum()),
+        "canonical_rows_with_bit_sha256": hashlib.sha256(b"".join(sorted(
+            bytes(row) + bytes((int(bit),))
+            for row, bit in zip(PK, target)
+        ))).hexdigest(),
+    }
+    for name, target in TGT
+}
 
 PMS = []
 M2I = dict((int(CM[i]), i) for i in range(NPIECE))
@@ -530,6 +540,7 @@ SG1, sg1 = row_perm(b1)
 
 def dependency_contract(primary, independent):
     identity = primary.get("incidence_identity", {})
+    reading_identity = primary.get("reading_identity", {})
     automorphisms = primary.get("automorphism_certificates", {})
     cert0 = automorphisms.get("b0", {})
     cert1 = automorphisms.get("b1", {})
@@ -549,6 +560,11 @@ def dependency_contract(primary, independent):
         and identity.get("canonical_incidence_rows_sha256")
         == canonical_incidence_rows_sha256
         and identity.get("support_column_order_sha256") == support_column_order_sha256
+        and reading_identity.get("canonical_incidence_rows_sha256")
+        == canonical_incidence_rows_sha256
+        and reading_identity.get("support_column_order_sha256")
+        == support_column_order_sha256
+        and reading_identity.get("functions") == local_reading_identity
         and cert0.get("support_permutation") == [int(value) for value in b0]
         and cert1.get("support_permutation") == [int(value) for value in b1]
         and cert0.get("support_permutation_sha256") == canonical_perm_sha256(b0)
@@ -1067,6 +1083,14 @@ gate(not dependency_contract(bad_certificate, C742_INDEPENDENT_RECEIPT),
      "a self-consistently rehashed but changed predecessor permutation is rejected",
      "fail closed")
 
+bad_reading = copy.deepcopy(C742_RECEIPT)
+bad_reading["reading_identity"]["functions"]["four"][
+    "canonical_rows_with_bit_sha256"
+] = "0" * 64
+gate(not dependency_contract(bad_reading, C742_INDEPENDENT_RECEIPT),
+     "hostile.reading_identity", "a changed predecessor function identity is rejected",
+     "fail closed")
+
 mutated_b1 = b1.copy()
 mutated_b1[0], mutated_b1[1] = mutated_b1[1], mutated_b1[0]
 mut_ok, _mut_row = row_perm(mutated_b1)
@@ -1115,6 +1139,7 @@ receipt = {
         "support_column_order_sha256": support_column_order_sha256,
         "b0_support_permutation_sha256": canonical_perm_sha256(b0),
         "b1_support_permutation_sha256": canonical_perm_sha256(b1),
+        "functions": local_reading_identity,
     },
     "supplied_model": {
         "geometric_cuttings": NS,

@@ -21,6 +21,8 @@ supplies the exact finite incidence identity and the two explicit support
 permutations used as extra generators. Both runners bind the Cycle 742 primary
 and independent receipts, current source hashes, row-order-invariant incidence
 hash, declared support-column order, and the complete 192-entry permutations.
+The eight row-order-invariant function hashes are bound as well before the
+primary claims that the generated group fixes those readings.
 Cycle 741 is chronological context only; no search count, lower bound, or
 certificate from it is consumed here.
 
@@ -220,13 +222,14 @@ Hostile controls fail closed when:
   processed first endpoints);
 - either predecessor receipt is failing or stale;
 - a Cycle 742 permutation is changed and self-consistently rehashed;
+- a Cycle 742 finite-function identity hash is changed;
 - two images in an extra automorphism are transposed;
 - the second extra generator is omitted (the generated order falls from 384
   to 96);
 - one support column is moved between blocks; or
 - the primary receipt's group order or status is changed.
 
-Primary verification: `TOTAL: PASS=76 FAIL=0`. Independent reconstruction:
+Primary verification: `TOTAL: PASS=77 FAIL=0`. Independent reconstruction:
 `TOTAL: PASS=19 FAIL=0`.
 
 ## No-Go Discipline for the finite uniqueness statements

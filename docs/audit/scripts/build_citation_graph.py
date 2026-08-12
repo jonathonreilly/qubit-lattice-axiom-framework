@@ -151,6 +151,12 @@ HEADING_RE = re.compile(r"^#{1,6}\s+", re.MULTILINE)
 LINK_RE = re.compile(r"\[[^\]]*\]\(([^)\s#]+\.md)(?:#[^)]*)?\)")
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    # Cycle 745's independent checker is intentionally a sibling rather than
+    # an import of the primary anchored census.
+    "physical_cell_cutting_sixteen_census_cycle745_note_2026-08-05": [
+        "scripts/physical_cell_cutting_sixteen_census_cycle745_"
+        "independent_check_2026_08_05.py",
+    ],
     # Cycle 744's opposite-pivot incidence reconstruction and explicit-cell
     # refinement deliberately import no primary symbols. Keep the checker in
     # the restricted packet through this claim-scoped sibling edge.

@@ -1,4 +1,4 @@
-# The complete sixteen census through an anchored slice — Cycle 745
+# Bounded sixteen-piece census for the supplied cutting system — Cycle 745
 
 Date: 2026-08-05
 
@@ -6,30 +6,33 @@ Authority: none
 
 Audit: unset.
 
-Status: computational identities of the finite cutting system
+Status: proposed_retained
 
-Claim type: computational identities
+Claim type: bounded_theorem
 
 Runner:
 
-- [paired rebuild-and-gate runner](../scripts/physical_cell_cutting_sixteen_census_cycle745_2026_08_05.py)
+- [primary rebuild-and-gate runner](../scripts/physical_cell_cutting_sixteen_census_cycle745_2026_08_05.py)
+- [independent opposite-pivot/CNF checker](../scripts/physical_cell_cutting_sixteen_census_cycle745_independent_check_2026_08_05.py)
 
-Scope: computational identities of the finite cutting system. Every number
-below is machine-checked by the paired runner, which rebuilds the cell
-complex, the cuttings, the readings, the symmetries and the anchored tables
-from scratch and gates each quantity in place. Constitutional effect: none.
+Scope: exact finite identities of the supplied cutting system. The primary
+rebuilds the cell complex, cuttings, named algebraic readings, symmetries and
+anchored tables. The independent checker reconstructs the incidence table with
+the opposite exact-cover pivot, verifies the group action semantically, and
+uses an orthogonal exact-cardinality CNF search. Constitutional effect: none.
 This package changes no axiom, no framework Admissibility rule, no primitive,
 no policy, and no audit status, and it adds no import and no assumption to
 [MINIMAL_AXIOMS_2026-06-29.md](MINIMAL_AXIOMS_2026-06-29.md).
 
 ## Headline
 
-The sixteen-piece carriers of the six charge readings are completely
+The sixteen-piece carriers of the six named nonconstant algebraic readings are completely
 enumerated. The four reading carries exactly 132 sixteen-piece sets and no
-others, reconstructed as the group images of an 11-member anchored slice and
+others in this supplied finite system, reconstructed as the group images of an 11-member anchored slice and
 re-verified one by one directly against the incidence columns. The other five
-charges carry none, and since forced parity bars every odd size, their least
-possible carrier size rises to eighteen. Under the 48 cutting symmetries the
+readings carry none at size 16. Together with the complete Cycle 741 search
+through size 14 and the exact even-parity restriction, this makes 18 the next
+unsearched size; no size-18 witness or attainment is claimed. Under the 48 cutting symmetries the
 census splits into 15 orbits — ten of size 6, four of size 12 and one of size
 24; under the full group of order 384 it splits into 6 orbits — three of size
 12, two of size 24 and one of size 48.
@@ -72,11 +75,11 @@ sixteen-piece subsets that hold the anchor, checked row for row against
 direct column sums with binomial row counts.
 
 Control at twelve: across 371 splits the anchored search returns no set for
-any charge, reproducing the earlier complete result that twelve is empty.
+any of the six named readings, reproducing the earlier complete result that twelve is empty.
 The measurement at sixteen: across 2004 splits, all distinct, with every
 anchored licensed cell covered for all eleven live readings, the search
 returns 11 anchored sets for the four reading, none for the other five
-charges, and none for the synthetic odd-total reading, and it finds all five
+readings, and none for the synthetic odd-total reading, and it finds all five
 planted sixteen-piece controls, returning 2, 6, 12, 1 and 3 sets against the
 five planted readings, in each case including the planted set itself.
 
@@ -95,13 +98,15 @@ size 12, two of size 24, one of size 48. Even the full group needs 6 orbits
 to cover the carriers, and no orbit reaches the group order, so every carrier
 has a nontrivial stabilizer in the full group.
 
-## The other five charges
+## The other five named readings
 
-The anchored slices of the five other charge readings are empty at sixteen,
+The anchored slices of the five other named algebraic readings are empty at sixteen,
 so by the completeness of the anchored slice their full sixteen census is
-empty. Forced parity keeps every carrier size even, so the least open size
-for each of the five rises to eighteen. The four reading attains sixteen,
-consistent with the landed floor.
+empty. [Cycle 741](PHYSICAL_CELL_CUTTING_FOURTEEN_FRONTIER_CYCLE741_NOTE_2026-08-05.md)
+independently closes all allowed even sizes through 14, and forced parity keeps
+every carrier size even, so 18 is the next unsearched size for each of the five.
+The four reading attains 16. This is a lower-bound statement, not a size-18
+attainment claim.
 
 ## Boundary and honest read
 
@@ -119,9 +124,91 @@ consistent with the landed floor.
 - The five planted controls are seeded constructions whose profiles are fixed
   in the runner source; they exist to prove the anchored search cannot miss a
   planted answer, and each is found.
-- Earlier-cycle artifacts are named in backticks because their packages are
-  in flight, and nothing here links to them:
-  `PHYSICAL_CELL_CUTTING_FOURTEEN_FRONTIER_CYCLE741_NOTE_2026-08-05.md`,
-  `PHYSICAL_CELL_CUTTING_SIXTEEN_ATTAINED_CYCLE742_NOTE_2026-08-05.md`,
-  `PHYSICAL_CELL_CUTTING_HIDDEN_THREE_BIT_GEOMETRY_CYCLE743_NOTE_2026-08-05.md`,
-  `PHYSICAL_CELL_CUTTING_FULL_SYMMETRY_CERTIFIED_CYCLE744_NOTE_2026-08-05.md`.
+- The exact incidence ordering and eight algebraic reading identities are
+  content-bound to [Cycle 737](PHYSICAL_CELL_CUTTING_LEAST_COMPUTING_SETS_CYCLE737_NOTE_2026-08-05.md).
+  The complete through-14 lower bound is content-bound to
+  [Cycle 741](PHYSICAL_CELL_CUTTING_FOURTEEN_FRONTIER_CYCLE741_NOTE_2026-08-05.md).
+  Cycles 742--744 are historical ordering context only: this package rebuilds
+  and semantically verifies the transitive group it actually uses and imports
+  no full-automorphism classification.
+- Nothing here selects these algebraic functions as physical charges, extends
+  the result to another incidence table or column order, or proves a multicell,
+  arbitrary-size, continuum, dynamical, or framework-level statement.
+
+## No-Go Discipline for the five size-16 empty censuses
+
+The negative claim is deliberately narrow: on this exact 15800-by-192 supplied
+incidence table, the five names `four-flip`, `six`, `six-flip`, `seven`, and
+`seven-flip` have no exact weight-16 carrier. The claim is not that these
+functions never occur, nor that weight 18 is empty.
+
+### N1 — alternative routes
+
+| Route | Test and result | Marker |
+|---|---|---|
+| Primary anchored syndrome join | Exhaust all 204 licensed anchor cells and the independently generated 2004-split inventory; all five counts are zero. | ATTEMPTED |
+| Independent exact-cardinality CNF | Rebuild the incidence table with the opposite exact-cover pivot and solve each anchored weight-16 system with a separate CNF encoding; all five are UNSAT. | ATTEMPTED |
+| Escape outside the anchored slice | Verify every generator is an incidence automorphism fixing each named reading, close the group to order 384, and verify the anchor orbit has all 192 columns; every nonempty carrier therefore has an anchored image. | ATTEMPTED |
+| Omitted or redirected primary split | Delete one scheduled split and redirect one part; each hostile inventory differs from the mathematical 2004-split inventory and fails closed. | ATTEMPTED |
+| Wrong reading or traversal order | Bind canonical row-with-bit hashes and reconstruct every realizable target from a support witness; define the odd rejector on the lexicographically least packed row. | ATTEMPTED |
+| Lower weight hidden below 16 | Bind the primary and independent Cycle 741 receipts that exhaust every allowed even size through 14; parity excludes odd sizes. | RULED OUT BY PRIOR — [Cycle 741](PHYSICAL_CELL_CUTTING_FOURTEEN_FRONTIER_CYCLE741_NOTE_2026-08-05.md) |
+
+### N2 — wall independence
+
+There is one finite wall, not several: existence of a weight-16 solution to
+the exact incidence equation for each named right-hand side. The anchored
+search and transitive action are two obligations in one completeness proof;
+neither is presented as an independent physical wall. The separate
+through-14 predecessor is used only for the lower-bound corollary, not for
+size-16 emptiness.
+
+### N3 — hidden-wall scan
+
+“By construction” is restricted to the five explicitly seeded controls.
+“Framework provides,” “standard,” “canonical charge,” and physical bridge
+language are not used as proof steps. Load-bearing conditions are explicit:
+the supplied incidence bytes and column order, the six named algebraic
+right-hand sides, the exact group generators, the chosen anchor, and the
+Cycle 741 lower-size receipt.
+
+### N4 — residual matching
+
+| Citation | Witness residual | Residual used here | Match |
+|---|---|---|---|
+| [Cycle 737](PHYSICAL_CELL_CUTTING_LEAST_COMPUTING_SETS_CYCLE737_NOTE_2026-08-05.md) | Exact supplied incidence/order and eight function identities | Identity of the finite system and six searched functions | yes |
+| [Cycle 741](PHYSICAL_CELL_CUTTING_FOURTEEN_FRONTIER_CYCLE741_NOTE_2026-08-05.md) | No carrier for the six nonconstant readings at allowed sizes through 14 | Exclusion below 16 in the lower-bound corollary | yes |
+
+### N5 — rhetoric audit
+
+- Per element: tested; every one of the 192 supplied columns is eligible.
+- Per site: tested only for the one supplied 16-corner coordinate cell.
+- Per mode: not applicable; no modal object is defined.
+- Per block: tested against all 15800 supplied cutting rows.
+- Lattice-wide: not tested and not claimed.
+
+Both runners print these five resolution lines in their execution evidence.
+
+### N6 — partial-closure scan
+
+The residual does not require a new axiom or primitive. Weight 18 is a finite
+next search on the same incidence object; alternative readings and other
+incidence systems are separate finite inputs. The note therefore reports the
+exact size-16 wall and leaves size 18 open without calling it structural.
+
+### N7 — steelman
+
+A hostile reviewer should object that an anchored solver can return zero
+while silently omitting a licensed split, or that an alleged symmetry can
+move columns without preserving cuttings or the target. That would destroy
+the global negative conclusion. The repair answers this concrete attack twice:
+the primary pins its exact 2004-split schedule, while the checker uses no such
+schedule at all, verifies every group generator semantically on the rebuilt
+incidence/targets, and solves the anchored equations through independent CNF.
+
+### N8 — cross-cycle echo
+
+Cycles 738 and 741 contain similar exact finite emptiness claims. Their lesson
+is procedural, not a transitive theorem: a finite negative needs an independent
+search, exact target identity, complete execution inventory, and explicit open
+next size. No claim from those cycles is echoed into another incidence system,
+arbitrary support size, or physical no-go.

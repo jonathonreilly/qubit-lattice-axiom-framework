@@ -22,6 +22,10 @@ from pysat.solvers import Solver
 ROOT = Path(__file__).resolve().parents[1]
 NOTE_PATH = "docs/PHYSICAL_CELL_CUTTING_FOURTEEN_FRONTIER_CYCLE741_NOTE_2026-08-05.md"
 PRIMARY_PATH = "scripts/physical_cell_cutting_fourteen_frontier_cycle741_2026_08_05.py"
+PRIMARY_RECEIPT_PATH = (
+    "outputs/physical_cell_cutting_fourteen_frontier_cycle741_2026_08_05_"
+    "receipt_2026-08-05.json"
+)
 CHECKER_PATH = (
     "scripts/physical_cell_cutting_fourteen_frontier_cycle741_"
     "independent_check_2026_08_05.py"
@@ -61,6 +65,8 @@ RECEIPT_PATH = ROOT / (
 AUDIT_INPUT_PATHS = (
     "docs/PHYSICAL_CELL_CUTTING_FOURTEEN_FRONTIER_CYCLE741_NOTE_2026-08-05.md",
     "scripts/physical_cell_cutting_fourteen_frontier_cycle741_2026_08_05.py",
+    "outputs/physical_cell_cutting_fourteen_frontier_cycle741_2026_08_05_"
+    "receipt_2026-08-05.json",
     "requirements.txt",
     "requirements-release.txt",
     "docs/PHYSICAL_CELL_CUTTING_LEAST_COMPUTING_SETS_CYCLE737_NOTE_2026-08-05.md",
@@ -170,6 +176,20 @@ C739_INDEPENDENT_INPUTS = (
     "2026_08_05_receipt_2026-08-05.json",
     "requirements.txt",
     "requirements-release.txt",
+)
+C741_PRIMARY_INPUTS = (
+    C737_NOTE_PATH,
+    C737_PRIMARY_PATH,
+    C737_CHECKER_PATH,
+    C737_RECEIPT_PATH,
+    C737_INDEPENDENT_RECEIPT_PATH,
+    C739_NOTE_PATH,
+    C739_PRIMARY_PATH,
+    C739_CHECKER_PATH,
+    C739_RECEIPT_PATH,
+    C739_INDEPENDENT_RECEIPT_PATH,
+    NOTE_PATH,
+    CHECKER_PATH,
 )
 
 
@@ -336,6 +356,7 @@ C737 = json.loads((ROOT / C737_RECEIPT_PATH).read_text(encoding="utf-8"))
 C737I = json.loads((ROOT / C737_INDEPENDENT_RECEIPT_PATH).read_text(encoding="utf-8"))
 C739 = json.loads((ROOT / C739_RECEIPT_PATH).read_text(encoding="utf-8"))
 C739I = json.loads((ROOT / C739_INDEPENDENT_RECEIPT_PATH).read_text(encoding="utf-8"))
+PRIMARY_RECEIPT = json.loads((ROOT / PRIMARY_RECEIPT_PATH).read_text(encoding="utf-8"))
 identity = C737.get("reading_identity", {})
 functions = identity.get("functions", {})
 independent_identity = C737I.get("reading_identity", {})
@@ -373,6 +394,35 @@ dependency_ok = (
 )
 gate(dependency_ok, "independent.dependencies",
      "Cycles 737 and 739 pass and bind this exact incidence, functions and predecessor")
+
+EXPECTED_FOURTEEN_COUNTS = [
+    34560, 26880, 0, 0, 0, 0, 0, 0, 2665, 274, 329, 236, 1, 3, 11, 2, 6, 0
+]
+
+
+def primary_contract_ok(receipt):
+    search = receipt.get("complete_search_at_fourteen", {})
+    bound = receipt.get("nonconstant_reading_bound", {})
+    return (
+        receipt.get("schema") == "physical-cell-cutting-fourteen-frontier-cycle741-v2"
+        and receipt.get("status") == "pass"
+        and receipt.get("gates", {}).get("fail") == 0
+        and receipt.get("runner_sha256") == sha256(PRIMARY_PATH)
+        and receipt_inputs_current(receipt, C741_PRIMARY_INPUTS)
+        and search.get("counts") == EXPECTED_FOURTEEN_COUNTS
+        and search.get("execution_inventory_exact") is True
+        and search.get("scheduled_splits") == search.get("executed_splits")
+        and search.get("mismatched_returns") == 0
+        and search.get("duplicate_returns") == 0
+        and bound.get("reading_names") == list(NAMES[2:])
+        and bound.get("minimum_support_lower_bound") == 16
+        and bound.get("sixteen_sufficiency_shown") is False
+        and receipt.get("no_go_discipline", {}).get("status") == "PASS"
+    )
+
+
+gate(primary_contract_ok(PRIMARY_RECEIPT), "receipt.contract",
+     "the primary verdict, inventory, runner and every declared input are content-bound")
 
 WITNESSES = C737.get("verified_upper_witnesses", {})
 targets = {}
@@ -478,6 +528,21 @@ bad_dependency["status"] = "fail"
 gate(not (bad_dependency.get("status") == "pass"
           and bad_dependency.get("gates", {}).get("fail") == 0),
      "hostile.dependency", "a failed exact-weight-twelve predecessor cannot pass")
+bad_dependency_hash = copy.deepcopy(C739)
+bad_dependency_hash.setdefault("input_sha256", {})[C739_NOTE_PATH] = "0" * 64
+gate(not receipt_inputs_current(bad_dependency_hash, C739_PRIMARY_INPUTS),
+     "hostile.dependency_hash", "a mutated predecessor input contract is rejected")
+bad_inventory = copy.deepcopy(PRIMARY_RECEIPT)
+bad_inventory["complete_search_at_fourteen"]["executed_splits"] -= 1
+gate(not primary_contract_ok(bad_inventory), "hostile.skipped_split",
+     "a skipped primary search split invalidates the generated receipt")
+bad_primary_hash = copy.deepcopy(PRIMARY_RECEIPT)
+mutated_source = (ROOT / PRIMARY_PATH).read_bytes().replace(
+    b"every licensed cell", b"some licensed cell", 1
+)
+bad_primary_hash["runner_sha256"] = hashlib.sha256(mutated_source).hexdigest()
+gate(not primary_contract_ok(bad_primary_hash), "hostile.primary_mutation",
+     "a local semantic mutation breaks the primary source pin")
 
 N5 = [
     "per_element: checked -- all 192 columns enter each exact-weight-fourteen CNF",
@@ -496,6 +561,7 @@ receipt = {
     "audit_status_authority": "independent audit lane only",
     "input_sha256": {path: sha256(path) for path in AUDIT_INPUT_PATHS},
     "checker_sha256": sha256(CHECKER_PATH),
+    "primary_receipt_bound": primary_contract_ok(PRIMARY_RECEIPT),
     "population": {"cuttings": len(solutions), "used_pieces": len(used), "rank": len(pivots)},
     "exact_weight_fourteen_answers": answers,
     "encoding": encoded,

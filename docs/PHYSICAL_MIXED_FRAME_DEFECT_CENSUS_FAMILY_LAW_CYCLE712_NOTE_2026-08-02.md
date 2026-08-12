@@ -1,174 +1,238 @@
-# Physical Mixed-Frame Assembly-Defect Census: the Family Law — Cycle 712
+# Finite family census for the mixed-frame assembly defect — Cycle 712
 
-**Claim type: bounded_theorem.** Finite, recomputed statements about the landed
-Cycle-696 open-coframe endpoint compiler chain at box sizes L ∈ {3, 4, 5, 6, 7}.
-The twelve-family decomposition of the assembly defect, the box-descriptor
-mechanism behind it, and the closed-form counting polynomials are exact finite
-statements verified by complete scan; the wall-family and edge-family pair
-magnitudes are measured, not derived.
+**Date:** 2026-08-02 (review-loop repair 2026-08-11)
 
-## What Cycle 711 left open
+**Type:** bounded_theorem
 
-The Cycle-711 exact stencil swap law (stem
-`PHYSICAL_MIXED_FRAME_COMPARATOR_EXACT_STENCIL_SWAP_LAW_CYCLE711_NOTE_2026-08-02`,
-in flight) derived the mixed-frame comparator −4 exactly and recorded its
-census as measured, not derived: per-frame counts 64/224/136 at L = 3 and
-1728/4896/4056 at L = 7 for the rounded magnitudes 4/3/2, argmax family 128 and
-3456. This cycle derives those counts. Every one of them is the value of an
-explicit counting polynomial in the box size L, and the polynomial is produced
-by a positional mechanism — product boxes of base sites with per-axis wall pins
-and fixed-margin growing intervals — extracted at intermediate sizes and
-verified by extrapolation both down to L = 3 and up to L = 7. These are
-computational identities of the landed compiler chain.
+**Status:** proposed_retained
 
-## Setup
+**Primary runner:**
+[`physical_mixed_frame_defect_census_family_law_cycle712_2026_08_02.py`](../scripts/physical_mixed_frame_defect_census_family_law_cycle712_2026_08_02.py)
 
-The compiler chain is the landed Cycle-696 static-sector assembler: path-simplex
-templates on the open box, spatial edge classes (axis, face-diagonal,
-body-diagonal), and the assembled static Hessian Q, where the tick multiplier
-LT = 2 and the central finite-difference step 1.0e-04 are supplied compiler
-constants. Frames are the 24 proper cubic rotations of the landed Cycle-576
-table; the transport permutation Π_g is the bounding-box dof relabeling of
-Cycle 710, and the assembly defect is E_g = Π_g^T Q Π_g − Q. The six
-constant-sign frames (the sextet) have defect ceiling below 1.0e-09 and are
-exact zeros of the law; the census lives on the 18 mixed frames. For an entry
-(i, j) the defect value is the difference of the entry pair
-(a, b) = (Q[m_i, m_j], Q[i, j]); the pair classifier below uses the smaller of
-(|a|, |b|) with supplied cuts 0.5 and 10.
+**Independent checker:**
+[`physical_mixed_frame_defect_census_family_law_cycle712_independent_check_2026_08_02.py`](../scripts/physical_mixed_frame_defect_census_family_law_cycle712_independent_check_2026_08_02.py)
 
-## Theorem I — the twelve-family decomposition
+**Receipt:**
+[`physical_mixed_frame_defect_census_family_law_cycle712_2026_08_02_receipt_2026-08-02.json`](../outputs/physical_mixed_frame_defect_census_family_law_cycle712_2026_08_02_receipt_2026-08-02.json)
 
-Over all five box sizes and all 18 mixed frames, every large defect entry
-(789120 of them in the complete scan) falls into exactly one of twelve signed
-families — six unsigned families times a sign — keyed by
+## Claim boundary
 
-- **exact magnitude**: |E| ∈ {2, 2·√2, 2·√3, 4}, matched within 2.0e-07
-  (per-surd maxima 5.7e-08, 3.0e-08, 6.1e-08, 1.3e-08; distance to the
-  second-nearest magnitude at least 5.4e-01), and
-- **pair class**: *swap* (the partner side is small — a value-for-zero swap, as
-  in the Cycle-711 argmax law), *wall* (both sides order one:
-  5.857096565429 and 8.685523719688), or *edge* (both sides large, diagonal
-  i == j on axis (NN) classes: 22.150846413069 and 24.150846469784).
+For the supplied open-box compiler and the declared numerical classifier, a
+complete scan of the 18 mixed proper cubic frames at
+`L ∈ {3, 4, 5, 6, 7}` gives twelve signed numerical families. Their counts are
+exact integers and equal the six stated polynomial evaluations at all five
+sizes. At the three descriptor-extraction sizes `L ∈ {4, 5, 6}`, each
+template's base-site set has a unique six-neighbor connected-component
+decomposition into full product boxes; the normalized component descriptors
+are frame-independent and size-independent on those three sizes. Descriptors
+extracted there predict the held-out `L=3` and `L=7` counts exactly.
 
-There are no outliers. The per-family counts are identical across all 18 mixed
-frames at every L (frame uniformity), and the plus and minus families are in
-bijection (sign bijection). The six unsigned families are: (4, swap),
-(2·√3, swap), (2·√2, swap), (2·√2, wall), (2, swap), (2, edge).
+This is a bounded finite computation conditional on the compiler and classifier
+choices below. Only the magnitude-4 swap family has an upstream exact stencil
+derivation. Proximity of the other three family centers to
+`2`, `2√2`, and `2√3` is numerical finite-difference evidence, not an exact
+surd theorem.
 
-## Theorem II — the box-descriptor mechanism
+## Trace gate
 
-Fix a family and a template (the class pair and site offset of its entries).
-The set of base sites carrying that template is a product box, and each axis of
-the box is one of exactly two kinds:
+```yaml
+trace_class: upstream_support
+target_claim_id: physical_minus_branch_response_floor_assembly_defect_law_cycle709_note_2026-08-02
+target_blocker_text: "replace the finite response-floor measurements with a family-resolved size-scaling law"
+source_of_blocker_text: frontier_question
+reachability_to_target: supports
+artifact_role: runner_certificate
+next_trace_action: "derive the per-family stencil values and propagate the finite family counts through the response solve"
+```
 
-- a **wall pin** P: the coordinate is frozen at 0 or L − 1;
-- a **growing interval** G(s): the coordinate ranges over a full interval with
-  fixed margins, contributing a factor (L − s) with s independent of L.
+## Status fields
 
-The canonical form — per box the sorted multiset of axis descriptors — is
-invariant across the 18 mixed frames and across box sizes. Per sign the six
-families decompose into 8/8/12/16/20/4 boxes carrying 0/0/0/1/0/2 wall pins per
-box respectively: the three bulk swap families are pin-free product boxes, the
-wall family carries exactly one pin per box (wall-anchored plaquettes), and the
-edge family carries two pins per box (box-edge lines of diagonal entries).
-Descriptors are extracted at L ∈ {4, 5, 6}; L = 3 (where the interior interval
-of a growing axis degenerates) and L = 7 are held out and used as genuine
-extrapolation checks.
+```yaml
+actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
+trace_class: upstream_support
+reachability_to_target: supports
+conditional_surface_status: conditional-support
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: "exact finite integer counts and component-box factorizations for five supplied open-box compiler instances, with non-4 surd-center interpretations kept numerical"
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+packet_helper_runner: scripts/physical_mixed_frame_defect_census_family_law_cycle712_independent_check_2026_08_02.py
+```
 
-## Theorem III — the census laws
+## Exact target and proof obligations
 
-Summing the descriptor factors gives, per sign:
+The exact target is: for the declared compiler, frame set, five sizes,
+large-entry threshold, reference-center tolerance, and pair cuts, prove by
+complete finite enumeration that every classified entry belongs to one of the
+twelve signed families and that each per-sign family count equals the stated
+integer polynomial evaluation.
 
-| family | counting law | counts at L = 3..7 |
+| obligation | disposition |
+|---|---|
+| Produce the open-box static Hessian and the 24 proper-frame table. | Supplied by the compiler and frame-table imports below; not derived here. |
+| Define the transported defect `E_g = Π_g^T Q Π_g − Q` on the bounding-box relabeling. | Imported from the Cycle-710 definition and independently reconstructed by both runners. |
+| Show that the four numerical center bins and three pair classes are separated on the scanned data. | Closed by the complete scan: maximum center deviation `6.1×10⁻⁸`, second-center distance at least `5.4×10⁻¹`, and explicit pair-cut margins. |
+| Show frame-uniform family counts and equal plus/minus cardinalities. | Closed by exact integer comparison over all 18 mixed frames and five sizes. No canonical sign-reversing map is claimed. |
+| Factor each extraction-size template site set into product boxes without a decomposition choice. | Closed at `L=4,5,6` by unique six-neighbor components followed by exact equality with each component's bounding product box. |
+| Convert the component descriptors to the six count expressions and test the held-out sizes. | Closed as finite integer arithmetic; `L=3` and `L=7` are not used to extract descriptors. |
+| Identify every non-4 center as an exact surd and prove the laws for arbitrary `L`. | Open. These stronger statements are outside the target. |
+
+**Proof-obligation disposition:** `CONDITIONAL`. The finite enumeration and
+integer arithmetic close their stated target, conditional on the supplied
+compiler and declared classifier. The exact non-4 stencil values and any
+all-`L` extension remain open and are not target-equivalent missing lemmas for
+the bounded finite claim.
+
+## Imports and declared choices
+
+### Load-bearing scientific and executable inputs
+
+- The Cycle-710 defect definition and covariance boundary:
+  [`PHYSICAL_ASSEMBLY_DEFECT_COCYCLE_LAW_AND_COVARIANCE_BOUNDARY_CYCLE710_NOTE_2026-08-02.md`](PHYSICAL_ASSEMBLY_DEFECT_COCYCLE_LAW_AND_COVARIANCE_BOUNDARY_CYCLE710_NOTE_2026-08-02.md).
+- The Cycle-711 exact magnitude-4 stencil result and measured census anchors:
+  [`PHYSICAL_MIXED_FRAME_COMPARATOR_EXACT_STENCIL_SWAP_LAW_CYCLE711_NOTE_2026-08-02.md`](PHYSICAL_MIXED_FRAME_COMPARATOR_EXACT_STENCIL_SWAP_LAW_CYCLE711_NOTE_2026-08-02.md).
+- The supplied Cycle-696 compiler:
+  [`physical_open_coframe_k_endpoint_compiler_cycle696_2026_07_25.py`](../scripts/physical_open_coframe_k_endpoint_compiler_cycle696_2026_07_25.py),
+  including its open-boundary simplex assembly, spatial classes, `LT=2`, and
+  central finite-difference step `10⁻⁴`. The compiler contains additional
+  declared modeling choices and conditional surfaces; this note consumes its
+  static Hessian as a supplied finite object and makes no claim that the
+  compiler is a derived gravity law.
+- The proper cubic frame table and Regge support machinery imported transitively
+  by Cycle 696, whose source-facing frame authority is
+  [`FINITE_REGGE_PLAQUETTE_SCATTERING_DIAGNOSTICS_CYCLE576_BOUNDED_THEOREM_NOTE_2026-07-22.md`](FINITE_REGGE_PLAQUETTE_SCATTERING_DIAGNOSTICS_CYCLE576_BOUNDED_THEOREM_NOTE_2026-07-22.md).
+
+The Cycle-710 and Cycle-711 rows remain subject to independent audit. Until
+their dependency chain is retained-grade, this result is bounded conditional
+support rather than a chain-satisfying authority.
+
+### Declared analysis choices
+
+- sizes `L={3,4,5,6,7}`, with descriptor extraction restricted to
+  `L={4,5,6}`;
+- large-entry threshold `|E|>1.5` and Cycle-711 rounded-census cut `|E|>2`;
+- numerical reference centers `{2,2√2,2√3,4}` and center tolerance `2×10⁻⁷`;
+- pair cuts `0.5` and `10`, top-family cut `3.9`, center-2 offset window
+  `10⁻⁷`, and diagonal perturbation `1.7`.
+
+These are frozen classifier or rejector choices, not values derived from the
+four framework axioms. The observed pair-value and center gaps make the family
+assignment insensitive to small movements of the stated cuts, but no universal
+classifier is claimed.
+
+## Finite numerical family decomposition
+
+Across all five sizes and 18 mixed frames, the complete scan contains 789,120
+large entries. Every one lies within `2×10⁻⁷` of one reference center, and the
+distance to the second-nearest center is at least `5.4×10⁻¹`. The pair class is
+defined by the smaller of
+`(|Q[Π_g(i),Π_g(j)]|, |Q[i,j]|)`:
+
+- **swap:** below `0.5`; the observed maximum smaller side is `6.1×10⁻⁸`;
+- **wall:** from `0.5` to below `10`; the smaller side is at least `5.9`;
+- **edge:** at least `10`; the smaller side is at least `22`.
+
+The six unsigned labels are center-4 swap, center-`2√3` swap,
+center-`2√2` swap, center-`2√2` wall, center-2 swap, and center-2 edge.
+Each has positive and negative populations of equal cardinality. “Sign
+balance” here means exact equality of finite counts; it does not assert an
+unimplemented canonical sign involution.
+
+Only the center-4 swap label inherits an exact value from Cycle 711, where the
+stencil is `LT×(−1−1)=−4`. For the other labels, “center-`2√k`” is a numerical
+bin name.
+
+## Connected-component product boxes
+
+For each sign, family, frame, and extraction size, entries are first grouped by
+the ordered spatial-class pair and the site offset. Each resulting base-site set
+is split into its unique six-neighbor connected components. Every component is
+then checked to equal its full Cartesian bounding box exactly.
+
+An axis descriptor is either a wall pin `P` or a growing interval `G(s)` of
+length `L−s`. After sorting axes and components, the descriptor multiset is the
+same for all 18 mixed frames and all three extraction sizes. Per sign, the six
+families have respectively `8/8/12/16/20/4` component boxes and
+`0/0/0/1/0/2` wall pins per component.
+
+## Finite count identities
+
+Summing component-box cardinalities gives, per sign:
+
+| numerical family | component count expression | counts at `L=3..7` |
 |---|---|---|
-| (4, swap) | 8(L−1)³ | 64, 216, 512, 1000, 1728 |
-| (2·√3, swap) | 8(L−1)³ | 64, 216, 512, 1000, 1728 |
-| (2·√2, swap) | 12(L−1)³ | 96, 324, 768, 1500, 2592 |
-| (2·√2, wall) | 16(L−1)² | 64, 144, 256, 400, 576 |
-| (2, swap) | 12(L−1)³ + 8(L−1)²(L−2) | 128, 468, 1152, 2300, 4032 |
-| (2, edge) | 4(L−1) | 8, 12, 16, 20, 24 |
+| center-4 swap | `8(L−1)³` | 64, 216, 512, 1000, 1728 |
+| center-`2√3` swap | `8(L−1)³` | 64, 216, 512, 1000, 1728 |
+| center-`2√2` swap | `12(L−1)³` | 96, 324, 768, 1500, 2592 |
+| center-`2√2` wall | `16(L−1)²` | 64, 144, 256, 400, 576 |
+| center-2 swap | `12(L−1)³+8(L−1)²(L−2)` | 128, 468, 1152, 2300, 4032 |
+| center-2 edge | `4(L−1)` | 8, 12, 16, 20, 24 |
 
-Each law is verified three ways: the measured count equals the descriptor
-prediction equals the stated polynomial, at every L in {3, 4, 5, 6, 7}, and the
-descriptor prediction equals the polynomial identically for L = 3..10.
+At every tested size the measured count, descriptor prediction, and stated
+expression agree exactly. Evaluating the descriptor expressions and the
+written polynomials at `L=3..10` is an algebraic consistency check only; no
+compiler measurement beyond `L=7` is claimed.
 
-**Corollaries — the Cycle-711 census derived.** Rounding mixes the two middle
-surds (2·√2 and 2·√3 both round to 3), so the rounded buckets are, per sign:
+Rounding combines the center-`2√2` and center-`2√3` labels. The resulting
+per-sign buckets are
 
-- **±4**: 8(L−1)³ — 64 at L = 3, 1728 at L = 7;
-- **±3**: 20(L−1)³ + 16(L−1)² — 224 at L = 3, 4896 at L = 7;
-- **±2**: 12(L−1)³ + 8(L−1)²(L−2) + 4(L−1) — 136 at L = 3, 4056 at L = 7;
-- **argmax family** (both signs of (4, swap)): 16(L−1)³ — 128 at L = 3, 3456
-  at L = 7.
+- rounded `±4`: `8(L−1)³`;
+- rounded `±3`: `20(L−1)³+16(L−1)²`;
+- rounded `±2`: `12(L−1)³+8(L−1)²(L−2)+4(L−1)`.
 
-All four reproduce the Cycle-711 anchors exactly, and the bucket-composition
-gate confirms the identification family-by-family.
+Both signs of the center-4 family together contain `16(L−1)³` entries per
+mixed frame. These expressions reproduce the Cycle-711 `L=3` and `L=7`
+anchors exactly. The center-2 entries sit between `1.7×10⁻⁹` and
+`5.7×10⁻⁸` above the cut at 2 on this finite-difference run.
 
-**Finite-difference provenance of the ±2 bucket.** The magnitude-2 entries sit
-at offsets in (1.7e-09, 5.7e-08] strictly above 2: the FD truncation of the
-compiler chain pushes this family consistently upward, so the Cycle-711 census
-cut at 2.0e+00 is deterministic, not knife-edge.
+## Measured values and rejectors
 
-**Rejector.** Under a 1.7 diagonal perturbation of the assembled operator, 2
-entries leave the exact magnitude set at distance 3.0e-01: the family law is a
-property of the landed operator, not of the classifier.
+The wall entry pair has measured magnitudes
+`5.857096565429 / 8.685523719688`; the edge pair has
+`22.150846413069 / 24.150846469784`. Their reported spreads are at most
+`1.2×10⁻¹⁰`, but no exact stencil evaluation is supplied.
+
+A `1.7` diagonal perturbation of the assembled operator produces two large
+entries at least `0.3` away from every reference center. The independent
+checker separately reconstructs the transport and classification without
+importing the primary, verifies all family counts from raw Hessians, and
+demonstrates that a displaced center, a wrong pair cut, and a wrong count
+coefficient are rejected.
 
 ## Honest boundary
 
-- **The wall and edge pair magnitudes are measured, not derived.** The values
-  5.857096565429 / 8.685523719688 (wall, spreads 8.5e-11 / 1.2e-11) and
-  22.150846413069 / 24.150846469784 (edge, spreads 1.2e-10 / 0.0e+00) are
-  L-independent and frame-independent to the stated spreads, but no stencil
-  evaluation is given for them here. The Cycle-711 two-incidence computation
-  that produced the exact −4 is the template; running it per family is the
-  named next target.
-- **The counting laws are finite statements.** Verified for L = 3..7 under the
-  supplied compiler constants; the polynomial identity for L = 3..10 is a
-  consistency identity between the descriptor form and the stated polynomial,
-  not an independent measurement. No continuum statement is made.
-- **The mechanism is positional, not yet stencil-resolved.** Theorem II says
-  where the entries sit (bulk boxes, wall plaquettes, edge lines); it does not
-  say which incidence cancellations produce each surd. That is the same gap as
-  the pair magnitudes and has the same named target.
+- The result is finite at `L=3..7`; it is not an arbitrary-`L` or continuum
+  theorem.
+- The non-4 surd-center labels are numerical observations. Exact stencil
+  evaluation remains open.
+- The component boxes explain the finite position counts. They do not derive
+  the incidence cancellations that generate each magnitude.
+- No physical gravity, response-floor scaling, or path-symmetrized assembly
+  conclusion follows from the census alone.
+- The constant-sign sextet and nearby Cycle-707/708 source-stabilizer results
+  are provenance context only; they do not seed dependencies for this claim.
 
-## The next paths opened
+## Review record
 
-- **Per-family exact stencil evaluation.** Repeat the Cycle-711 two-incidence
-  stencil computation for the wall family and the edge family: derive
-  5.857096565429 / 8.685523719688 and 22.150846413069 / 24.150846469784 as
-  exact surd combinations, upgrading Theorem I from measured magnitudes to
-  derived ones.
-- **Propagate the census to the response floor.** The Cycle-709 minus-branch
-  floor (stem
-  `PHYSICAL_MINUS_BRANCH_RESPONSE_FLOOR_ASSEMBLY_DEFECT_LAW_CYCLE709_NOTE_2026-08-02`,
-  in flight) consumes the assembly defect through a solve; the family counts
-  and their L-scaling are the natural input for a floor-scaling law.
-- **Path-symmetrized assembly.** The wall and edge families are boundary
-  populations (16(L−1)² and 4(L−1) against the 8(L−1)³ bulk); whether a
-  re-anchored transport can remove the boundary families while preserving the
-  bulk swap structure is a sharp, finite question.
+Review-loop iteration 1 narrowed the submitted “exact surd family law” to the
+finite result actually computed. It replaced the depth-capped greedy box split
+with unique connected components, changed the unconstructed “sign bijection”
+to count balance, added pair-cut margin gates, declared the full transitive
+input closure and timeout, and added an independent raw-Hessian checker.
 
-## Relation to the interacting cycle
+Hard landing conditions:
 
-This cycle stays inside the static spatial sector of the landed 3+1 module. The
-frame sextet that carries the exact zeros is the same constant-sign sextet
-whose source-stabilizer role is analyzed in
-[PHYSICAL_SOURCE_STABILIZER_COSET_COLLAPSE_K_SIGN_LAW_CYCLE707_NOTE_2026-08-01](PHYSICAL_SOURCE_STABILIZER_COSET_COLLAPSE_K_SIGN_LAW_CYCLE707_NOTE_2026-08-01.md);
-the in-flight Cycle-708 classification (stem
-`PHYSICAL_SOURCE_EDIT_SET_SIGNED_STABILIZER_CLASSIFICATION_CYCLE708_NOTE_2026-08-02`)
-maps the same boundary at the signed level, and the in-flight Cycle-710
-covariance-boundary census (stem
-`PHYSICAL_ASSEMBLY_DEFECT_COCYCLE_LAW_AND_COVARIANCE_BOUNDARY_CYCLE710_NOTE_2026-08-02`)
-supplied the defect object this cycle counts.
+1. the exact reviewed Cycle-710 and Cycle-711 predecessor commits must be
+   contained in remote `main` before this package lands;
+2. the citation-graph helper registry must map
+   `physical_mixed_frame_defect_census_family_law_cycle712_note_2026-08-02`
+   to
+   `scripts/physical_mixed_frame_defect_census_family_law_cycle712_independent_check_2026_08_02.py`;
+3. both runner caches must be fresh against every declared input;
+4. the pipeline-generated ledger/status surfaces must be stripped, while the
+   citation-graph manifest acknowledgment co-lands.
 
-## Runner
-
-`scripts/physical_mixed_frame_defect_census_family_law_cycle712_2026_08_02.py`
-— class-A finite check, stdlib + numpy. Gate groups: sextet exact zeros;
-family-key completeness, frame uniformity, and sign bijection over the complete
-scan; per-surd magnitude deviations with a wrong-surd gap; canonical
-box-descriptor invariance across frames and sizes with the box-shape census;
-the six counting laws at L = 3..7 with the polynomial identity at L = 3..10;
-the Cycle-711 census, bucket-composition, and argmax anchors; the magnitude-2
-FD window; wall and edge pair-value stability; and the perturbed-operator
-rejector. Prints TOTAL: PASS=29 FAIL=0 with a JSON receipt in `outputs/`.
+This package makes no negative or no-go claim, so the No-Go Discipline battery
+is not applicable. Independent audit remains required for the proposed claim.

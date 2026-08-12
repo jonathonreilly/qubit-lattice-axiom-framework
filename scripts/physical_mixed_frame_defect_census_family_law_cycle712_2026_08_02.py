@@ -1,41 +1,40 @@
-"""Cycle 712 -- mixed-frame assembly-defect census family law (open-boundary box).
+"""Cycle 712 -- finite mixed-frame assembly-defect family census.
 
 Cycle `physical_mixed_frame_comparator_exact_stencil_swap_law_cycle711_2026_08_02`
-derived the exact comparator stencil behind the mixed-frame assembly defect and
-recorded its signed census (entries of magnitude above 2) as measured, not
-derived.  This runner derives those counts.  For each of the 18 mixed proper
-rotations (the complement of the constant-sign sextet) and box sizes L in
-{3,4,5,6}, the large entries of the defect E = Q[m,m] - Q decompose into
-exactly 12 signed value families (6 per sign), keyed by the exact defect
-magnitude |E| in {2, 2*sqrt(2), 2*sqrt(3), 4} (finite-difference tolerance
-2e-7) and the swap pattern of the entry pair (a, b) = (Q[m i, m j], Q[i, j]):
+derived the exact magnitude-4 comparator stencil behind the mixed-frame
+assembly defect and recorded its signed census (entries of magnitude above 2)
+as measured, not derived.  This runner certifies finite counting identities for
+that census.  For each of the 18 mixed proper rotations (the complement of the
+constant-sign sextet) and box sizes L in {3,4,5,6,7}, the large entries of the
+defect E = Q[m,m] - Q decompose into exactly 12 signed numerical families (6
+per sign), keyed by the nearest reference center in
+{2, 2*sqrt(2), 2*sqrt(3), 4} (finite-difference tolerance 2e-7) and the pair
+pattern of the entry pair (a, b) = (Q[m i, m j], Q[i, j]):
 
   swap families  -- one side of the pair vanishes (a or b below 0.5);
-  wall family    -- |E| = 2*sqrt(2), both sides finite, one wall-pinned axis;
-  edge family    -- |E| = 2, diagonal entries i == j on wall-edge lines.
+  wall family    -- centered near 2*sqrt(2), both sides finite, one wall pin;
+  edge family    -- centered near 2, diagonal entries on wall-edge lines.
 
-Every family's base-position set decomposes into wall-anchored product boxes
-whose per-axis descriptors (growing interval [lo, L-1-hi] with fixed margins,
-or a pin at a wall) are L-independent and frame-covariant.  The census laws
-follow as polynomial counts per sign,
+At L in {4,5,6}, every family's base-position set decomposes into unique
+six-neighbor connected components, each a full product box.  Their per-axis
+descriptors (growing interval [lo, L-1-hi] with fixed margins, or a pin at a
+wall) are L-independent and frame-covariant.  The resulting finite counting
+identities per sign are
 
-  8(L-1)^3   at magnitude 4,
-  8(L-1)^3   at magnitude 2*sqrt(3),
-  12(L-1)^3 + 16(L-1)^2                at magnitude 2*sqrt(2),
-  12(L-1)^3 + 8(L-1)^2(L-2) + 4(L-1)   at magnitude 2,
+  8(L-1)^3   in the center-4 swap family,
+  8(L-1)^3   in the center-2*sqrt(3) swap family,
+  12(L-1)^3 + 16(L-1)^2                in the center-2*sqrt(2) families,
+  12(L-1)^3 + 8(L-1)^2(L-2) + 4(L-1)  in the center-2 families.
 
-verified against the measured census at L in {3,4,5,6}, extrapolated from the
-descriptors alone both downward to L=3 and upward to L=7, and checked at L=7
-against the landed cycle-711 census (1728 / 4896 / 4056 per sign, argmax
-family 3456 per frame).  The rounded census buckets are corollaries: the
-bucket at rounded value 3 is the surd mixture of 2*sqrt(3) with 2*sqrt(2),
-and the magnitude-2 families enter the strict census cut A > 2.0 through a
-strictly positive finite-difference offset (every magnitude-2 entry sits in
-the window (2, 2 + 1e-7]), so the cut is deterministic for them.  Family pair
-values beyond the defect magnitudes (the wall pair and the edge diagonal
-pair) are measured, not derived, here; their exact stencil evaluation is the
-named next target.  All computational identities below are recomputed from
-the cycle-696 compiler chain in this run; a wrong-surd distance floor and a
+They are checked against the complete measured census at L in {3,4,5,6,7};
+L=3 and L=7 are held out from descriptor extraction.  The rounded buckets
+reproduce the Cycle-711 anchors.  The center-2 families enter the strict census
+cut A > 2.0 through a positive finite-difference offset, so that cut is
+deterministic on the scanned data.  Only the center-4 swap magnitude has the
+upstream exact stencil derivation.  The other surd-center identifications, and
+the wall and edge entry-pair magnitudes, remain finite-difference observations;
+exact stencil evaluation is the named next target.  All finite identities below
+are recomputed from the Cycle-696 compiler chain; a second-center gap and a
 perturbed-operator rejector discriminate.
 """
 from __future__ import annotations
@@ -60,21 +59,38 @@ FRAMES = [np.asarray(m, dtype=np.int64) for m in c696.c576.FRAMES]
 SPC = tuple(c696.SPATIAL_CLASSES)
 DIRV = {c: np.asarray(c696.regge.DIRS15[c][:3], dtype=np.int64) for c in SPC}
 
+AUDIT_TIMEOUT_SEC = 300
+AUDIT_INPUT_PATHS = (
+    "docs/PHYSICAL_MIXED_FRAME_DEFECT_CENSUS_FAMILY_LAW_CYCLE712_NOTE_2026-08-02.md",
+    "docs/PHYSICAL_ASSEMBLY_DEFECT_COCYCLE_LAW_AND_COVARIANCE_BOUNDARY_CYCLE710_NOTE_2026-08-02.md",
+    "docs/PHYSICAL_MIXED_FRAME_COMPARATOR_EXACT_STENCIL_SWAP_LAW_CYCLE711_NOTE_2026-08-02.md",
+    "scripts/physical_assembly_defect_cocycle_law_and_covariance_boundary_cycle710_2026_08_02.py",
+    "scripts/physical_mixed_frame_comparator_exact_stencil_swap_law_cycle711_2026_08_02.py",
+    "outputs/physical_assembly_defect_cocycle_law_and_covariance_boundary_cycle710_2026_08_02_receipt_2026-08-02.json",
+    "outputs/physical_mixed_frame_comparator_exact_stencil_swap_law_cycle711_2026_08_02_receipt_2026-08-02.json",
+    "scripts/physical_open_coframe_k_endpoint_compiler_cycle696_2026_07_25.py",
+    "scripts/physical_dynamical_metric_source_law_bridge_tournament_cycle576_2026_07_22.py",
+    "scripts/physical_dynamical_metric_source_law_bridge_cycle576_regge_support_2026_07_22.py",
+    "scripts/physical_dynamical_metric_source_law_bridge_cycle576_plaquette_support_2026_07_22.py",
+    "scripts/frontier_cubic_coxeter_regge_second_variation_3plus1_2026_06_09.py",
+)
+DECLARED_INPUT_PATHS = AUDIT_INPUT_PATHS
+
 L_FIT = (4, 5, 6)          # descriptor-extraction sizes
 L_ALL = (3, 4, 5, 6, 7)    # measured-census sizes (3 and 7 are extrapolation checks)
 BIG = 1.5                  # family-entry threshold on |E|
 CUT = 2.0                  # census cut of the landed cycle-711 note
-ARG_CUT = 3.9              # argmax-family cut (top magnitude 4, next surd ~3.46)
-TOL_SURD = 2e-7            # finite-difference tolerance on exact magnitudes
+ARG_CUT = 3.9              # argmax-family cut (center 4, next center ~3.46)
+TOL_CENTER = 2e-7          # finite-difference tolerance around reference centers
 PAIR_LO = 0.5              # swap-pattern threshold: vanished side of (a, b)
 PAIR_HI = 10.0             # wall pair magnitudes ~5.86/8.69, edge pair ~22.2/24.2
 WINDOW = 1e-7              # magnitude-2 census-entry offset window above 2.0
-GAP_FLOOR = 0.1            # wrong-surd rejector floor
+CENTER_GAP_FLOOR = 0.1     # distance-to-second-center rejector floor
 SEXTET_BOUND = 1e-9
-PERT = 1.7                 # perturbed-operator rejector step (lands between surds)
+PERT = 1.7                 # perturbed-operator rejector step (lands between centers)
 
-SURDS = (("two", 2.0), ("two_rt2", 2.0 * math.sqrt(2.0)),
-         ("two_rt3", 2.0 * math.sqrt(3.0)), ("four", 4.0))
+REFERENCE_CENTERS = (("two", 2.0), ("two_rt2", 2.0 * math.sqrt(2.0)),
+                     ("two_rt3", 2.0 * math.sqrt(3.0)), ("four", 4.0))
 UNSIGNED = (("four", "swap"), ("two_rt3", "swap"), ("two_rt2", "swap"),
             ("two_rt2", "wall"), ("two", "swap"), ("two", "edge"))
 POLY = {
@@ -107,7 +123,7 @@ def fmt(x) -> str:
 
 def check(name: str, ok: bool, detail: str = "") -> bool:
     """Record and print one gate.  The census gates compare recomputed counts
-    exactly; the magnitude gates carry a wrong-surd distance floor and a
+    exactly; the magnitude gates carry a second-center distance floor and a
     perturbed-operator rejector so that a wrong object cannot pass."""
     global N_PASS, N_FAIL
     ok = bool(ok)
@@ -141,38 +157,39 @@ def dof_perm(L: int, index: dict, R: np.ndarray) -> np.ndarray:
     return m
 
 
-def boxdec(xs, depth=0):
-    """Decompose a site set into disjoint full product boxes (split on a
-    non-contiguous axis, else on the fewest-valued axis; depth-capped)."""
-    ss = sorted(set(xs))
-    if len(ss) != len(xs):
+def component_product_boxes(xs):
+    """Return the unique six-neighbor components if each is a full box.
+
+    Connected components are intrinsic to the finite site set; unlike a greedy
+    recursive split, this decomposition does not depend on an axis choice.
+    """
+    points = {tuple(int(t) for t in x) for x in xs}
+    if len(points) != len(xs):
         return None
-    arr = np.asarray(ss, dtype=np.int64)
-    lo = arr.min(axis=0)
-    hi = arr.max(axis=0)
-    if int(np.prod(hi - lo + 1)) == len(ss):
-        return [tuple((int(lo[a]), int(hi[a])) for a in range(3))]
-    if depth >= 2:
-        return None
-    split = None
-    for a in range(3):
-        vals = sorted({x[a] for x in ss})
-        if len(vals) > 1 and vals[-1] - vals[0] + 1 > len(vals):
-            split = a
-            break
-    if split is None:
-        cands = [(len({x[a] for x in ss}), a) for a in range(3)
-                 if 1 < len({x[a] for x in ss}) < len(ss)]
-        if not cands:
+    unseen = set(points)
+    boxes = []
+    while unseen:
+        seed = unseen.pop()
+        component = {seed}
+        frontier = [seed]
+        while frontier:
+            x = frontier.pop()
+            for axis in range(3):
+                for step in (-1, 1):
+                    y = list(x)
+                    y[axis] += step
+                    yt = tuple(y)
+                    if yt in unseen:
+                        unseen.remove(yt)
+                        component.add(yt)
+                        frontier.append(yt)
+        arr = np.asarray(sorted(component), dtype=np.int64)
+        lo = arr.min(axis=0)
+        hi = arr.max(axis=0)
+        if int(np.prod(hi - lo + 1)) != len(component):
             return None
-        split = min(cands)[1]
-    out = []
-    for v in sorted({x[split] for x in ss}):
-        r = boxdec([x for x in ss if x[split] == v], depth + 1)
-        if r is None:
-            return None
-        out.extend(r)
-    return out
+        boxes.append(tuple((int(lo[a]), int(hi[a])) for a in range(3)))
+    return sorted(boxes)
 
 
 def axdesc(lo: int, hi: int, L: int):
@@ -207,26 +224,26 @@ def predict(canon, L: int) -> int:
 
 
 def classify(av: float):
-    """Return (surd name, deviation, distance to second-nearest surd)."""
-    devs = sorted((abs(av - s), name) for name, s in SURDS)
+    """Return (center name, deviation, distance to second-nearest center)."""
+    devs = sorted((abs(av - s), name) for name, s in REFERENCE_CENTERS)
     return devs[0][1], devs[0][0], devs[1][0]
 
 
 def main() -> int:
     mixed = [g for g in range(24) if not constant_sign(FRAMES[g])]
     sextet = [g for g in range(24) if constant_sign(FRAMES[g])]
-    print("== cycle 712: mixed-frame assembly-defect census family law ==")
+    print("== cycle 712: finite mixed-frame assembly-defect family census ==")
     print("config: fit L={} census L={} mixed_frames={} of 24 fd_step={} "
-          "tol_surd={} cut={} pair_cuts=({}, {})".format(
-              L_FIT, L_ALL, len(mixed), fmt(c696.FD_H), fmt(TOL_SURD),
+          "tol_center={} cut={} pair_cuts=({}, {})".format(
+              L_FIT, L_ALL, len(mixed), fmt(c696.FD_H), fmt(TOL_CENTER),
               fmt(CUT), PAIR_LO, PAIR_HI))
 
     counts: dict = {}       # (L, famkey) -> set of per-frame counts
-    canons: dict = {}       # (L, famkey) -> set of per-frame canonical box lists
+    canons: dict = {}       # (L, famkey) -> set of normalized component boxes
     keysets: dict = {}      # L -> set of per-frame famkey tuples
     censuses: dict = {}     # L -> set of per-frame rounded census tuples
     argmaxes: dict = {}     # L -> set of per-frame argmax-family sizes
-    dev_max = {name: 0.0 for name, _ in SURDS}
+    dev_max = {name: 0.0 for name, _ in REFERENCE_CENTERS}
     gap_min = float("inf")
     outliers = 0
     n_entries = 0
@@ -237,6 +254,9 @@ def main() -> int:
     edge_diag_ok = True
     edge_cls_ok = True
     pin_ok = True
+    swap_partner_max = 0.0
+    wall_partner_min = float("inf")
+    edge_partner_min = float("inf")
 
     sext_max = 0.0
     model3 = c696.assemble_static_hessian(3, wrap=False)
@@ -274,13 +294,19 @@ def main() -> int:
                 b = float(Q[i, j])
                 name, dev, second = classify(av)
                 n_entries += 1
-                if dev > TOL_SURD:
+                if dev > TOL_CENTER:
                     outliers += 1
                     continue
                 dev_max[name] = max(dev_max[name], dev)
                 gap_min = min(gap_min, second)
                 mab = min(abs(a), abs(b))
                 pc = "swap" if mab < PAIR_LO else ("wall" if mab < PAIR_HI else "edge")
+                if pc == "swap":
+                    swap_partner_max = max(swap_partner_max, mab)
+                elif pc == "wall":
+                    wall_partner_min = min(wall_partner_min, mab)
+                else:
+                    edge_partner_min = min(edge_partner_min, mab)
                 if name == "two":
                     off = av - CUT
                     two_off_lo = min(two_off_lo, off)
@@ -308,7 +334,7 @@ def main() -> int:
                 if store:
                     allboxes = []
                     for tpl, sites in d["tpl"].items():
-                        boxes = boxdec(sites)
+                        boxes = component_product_boxes(sites)
                         if boxes is None:
                             pin_ok = False
                             continue
@@ -334,7 +360,7 @@ def main() -> int:
                 po, pg = 0, float("inf")
                 for av2 in A2[A2 > BIG].tolist():
                     _, dev2, _ = classify(float(av2))
-                    if dev2 > TOL_SURD:
+                    if dev2 > TOL_CENTER:
                         po += 1
                         pg = min(pg, dev2)
                 pert_outliers, pert_gap = po, pg
@@ -345,19 +371,19 @@ def main() -> int:
           all(ks == {expect_keys} for ks in keysets.values()),
           "12 signed families = 6 unsigned x 2 signs at every L and frame")
     check("g03_no_outliers", outliers == 0,
-          "all {} large entries within {} of an exact magnitude".format(
-              n_entries, fmt(TOL_SURD)))
+          "all {} large entries within {} of a numerical reference center".format(
+              n_entries, fmt(TOL_CENTER)))
     check("g04_frame_uniform_counts",
           all(len(v) == 1 for v in counts.values()),
           "per-family counts identical across the 18 mixed frames at every L")
     bij = all(next(iter(counts[(L, (1, name, pc))])) ==
               next(iter(counts[(L, (-1, name, pc))]))
               for L in L_ALL for (name, pc) in UNSIGNED)
-    check("g05_sign_bijection", bij,
+    check("g05_sign_balance", bij,
           "plus and minus family counts equal at every L")
     check("g06_canon_frame_invariant",
           all(len(v) == 1 for v in canons.values()),
-          "canonical box-descriptor multiset frame-invariant at L={}".format(L_FIT))
+          "connected-component box descriptors frame-invariant at L={}".format(L_FIT))
     canon_of = {}
     lstable = True
     for (name, pc) in UNSIGNED:
@@ -376,11 +402,11 @@ def main() -> int:
           "boxes per sign 8/8/12/16/20/4 with wall pins 0/0/0/1/0/2 per box")
     check("g09_edge_family_diagonal", edge_diag_ok and edge_cls_ok,
           "edge family is diagonal (i == j) on axis (NN) classes")
-    for name, _ in SURDS:
-        check("g10_dev_{}".format(name), dev_max[name] <= TOL_SURD,
-              "max magnitude deviation {}".format(fmt(dev_max[name])))
-    check("g14_wrong_surd_gap", gap_min >= GAP_FLOOR,
-          "distance to second-nearest magnitude at least {}".format(fmt(gap_min)))
+    for name, _ in REFERENCE_CENTERS:
+        check("g10_center_dev_{}".format(name), dev_max[name] <= TOL_CENTER,
+              "max reference-center deviation {}".format(fmt(dev_max[name])))
+    check("g14_second_center_gap", gap_min >= CENTER_GAP_FLOOR,
+          "distance to second-nearest center at least {}".format(fmt(gap_min)))
     check("g15_two_window", two_all_above and two_off_hi <= WINDOW,
           "magnitude-2 offsets in ({}, {}] strictly above the census cut".format(
               fmt(two_off_lo), fmt(two_off_hi)))
@@ -396,6 +422,14 @@ def main() -> int:
           el[1] - el[0] <= WINDOW and eh[1] - eh[0] <= WINDOW,
           "edge pair magnitudes {:.12f} and {:.12f} (spreads {} / {})".format(
               el[0], eh[0], fmt(el[1] - el[0]), fmt(eh[1] - eh[0])))
+    check("g18_pair_cut_margins",
+          swap_partner_max < 1.0e-6 and wall_partner_min > PAIR_LO
+          and edge_partner_min > PAIR_HI,
+          "swap partner max {}; wall/edge smaller-side minima {} / {} stay "
+          "away from cuts {} / {}".format(fmt(swap_partner_max),
+                                           fmt(wall_partner_min),
+                                           fmt(edge_partner_min),
+                                           PAIR_LO, PAIR_HI))
     for (name, pc) in UNSIGNED:
         meas = [next(iter(counts[(L, (1, name, pc))])) for L in L_ALL]
         pred = [predict(canon_of[(name, pc)], L) for L in L_ALL]
@@ -424,7 +458,7 @@ def main() -> int:
                                      + c_of(("two_rt2", "wall")))
         comp_ok = comp_ok and n2 == (c_of(("two", "swap")) + c_of(("two", "edge")))
     check("g22_bucket_composition", comp_ok,
-          "census buckets = family sums (rounded 3 mixes the two surds)")
+          "census buckets = family sums (rounded 3 mixes two numerical centers)")
     argm_ok = all(argmaxes[L] == {ARGMAX_ANCHOR[L]}
                   and ARGMAX_ANCHOR[L] == 16 * (L - 1) ** 3
                   and ARGMAX_ANCHOR[L] == 2 * next(iter(counts[(L, (1, "four", "swap"))]))
@@ -433,7 +467,7 @@ def main() -> int:
           "argmax family per frame = 16(L-1)^3 = {} / {} (cycle-711 anchor)".format(
               ARGMAX_ANCHOR[3], ARGMAX_ANCHOR[7]))
     check("g24_perturbed_rejector", pert_outliers >= 1,
-          "{} entries leave the magnitude set (distance {}) under a {} "
+          "{} entries leave the reference-center set (distance {}) under a {} "
           "diagonal perturbation".format(pert_outliers, fmt(pert_gap), PERT))
 
     NOTES["laws_per_sign"] = {"|".join(k): POLY[k][1] for k in POLY}
@@ -442,8 +476,13 @@ def main() -> int:
         for k in POLY}
     NOTES["census_anchor"] = {str(L): list(ANCHOR[L]) for L in ANCHOR}
     NOTES["argmax_anchor"] = {str(L): ARGMAX_ANCHOR[L] for L in ARGMAX_ANCHOR}
-    NOTES["dev_max"] = {k: fmt(v) for k, v in dev_max.items()}
-    NOTES["wrong_surd_gap"] = fmt(gap_min)
+    NOTES["center_deviation_max"] = {k: fmt(v) for k, v in dev_max.items()}
+    NOTES["second_center_gap"] = fmt(gap_min)
+    NOTES["pair_cut_margins"] = {
+        "swap_partner_max": fmt(swap_partner_max),
+        "wall_smaller_side_min": fmt(wall_partner_min),
+        "edge_smaller_side_min": fmt(edge_partner_min),
+    }
     NOTES["two_window"] = [fmt(two_off_lo), fmt(two_off_hi)]
     NOTES["wall_pair"] = ["{:.12f}".format(wl[0]), "{:.12f}".format(wh[0])]
     NOTES["edge_pair"] = ["{:.12f}".format(el[0]), "{:.12f}".format(eh[0])]

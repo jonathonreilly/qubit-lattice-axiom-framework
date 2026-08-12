@@ -161,6 +161,12 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
         "scripts/physical_source_edit_set_signed_stabilizer_classification_cycle708_"
         "independent_check_2026_08_02.py",
     ],
+    # Cycle 712's checker independently reconstructs the bounding-box transport,
+    # raw Hessian census, family classification, and component arithmetic.
+    "physical_mixed_frame_defect_census_family_law_cycle712_note_2026-08-02": [
+        "scripts/physical_mixed_frame_defect_census_family_law_cycle712_"
+        "independent_check_2026_08_02.py",
+    ],
     "b4_clock_relation_run_cycle879_bounded_theorem_note_2026-07-28": [
         "scripts/frontier_cycle879_b4_relation_independent_check_2026_07_28.py",
     ],

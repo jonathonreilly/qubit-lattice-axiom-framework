@@ -10,19 +10,19 @@
       "pass": true
     },
     "g03_no_outliers": {
-      "detail": "all 789120 large entries within 2.0e-07 of an exact magnitude",
+      "detail": "all 789120 large entries within 2.0e-07 of a numerical reference center",
       "pass": true
     },
     "g04_frame_uniform_counts": {
       "detail": "per-family counts identical across the 18 mixed frames at every L",
       "pass": true
     },
-    "g05_sign_bijection": {
+    "g05_sign_balance": {
       "detail": "plus and minus family counts equal at every L",
       "pass": true
     },
     "g06_canon_frame_invariant": {
-      "detail": "canonical box-descriptor multiset frame-invariant at L=(4, 5, 6)",
+      "detail": "connected-component box descriptors frame-invariant at L=(4, 5, 6)",
       "pass": true
     },
     "g07_canon_L_invariant": {
@@ -37,24 +37,24 @@
       "detail": "edge family is diagonal (i == j) on axis (NN) classes",
       "pass": true
     },
-    "g10_dev_four": {
-      "detail": "max magnitude deviation 1.3e-08",
+    "g10_center_dev_four": {
+      "detail": "max reference-center deviation 1.3e-08",
       "pass": true
     },
-    "g10_dev_two": {
-      "detail": "max magnitude deviation 5.7e-08",
+    "g10_center_dev_two": {
+      "detail": "max reference-center deviation 5.7e-08",
       "pass": true
     },
-    "g10_dev_two_rt2": {
-      "detail": "max magnitude deviation 3.0e-08",
+    "g10_center_dev_two_rt2": {
+      "detail": "max reference-center deviation 3.0e-08",
       "pass": true
     },
-    "g10_dev_two_rt3": {
-      "detail": "max magnitude deviation 6.1e-08",
+    "g10_center_dev_two_rt3": {
+      "detail": "max reference-center deviation 6.1e-08",
       "pass": true
     },
-    "g14_wrong_surd_gap": {
-      "detail": "distance to second-nearest magnitude at least 5.4e-01",
+    "g14_second_center_gap": {
+      "detail": "distance to second-nearest center at least 5.4e-01",
       "pass": true
     },
     "g15_two_window": {
@@ -93,6 +93,10 @@
       "detail": "counts(L=3..7)=[128, 468, 1152, 2300, 4032] = 12(L-1)^3+8(L-1)^2(L-2)",
       "pass": true
     },
+    "g18_pair_cut_margins": {
+      "detail": "swap partner max 6.1e-08; wall/edge smaller-side minima 5.9e+00 / 2.2e+01 stay away from cuts 0.5 / 10.0",
+      "pass": true
+    },
     "g19_poly_identity": {
       "detail": "descriptor prediction equals the stated polynomial for L=3..10",
       "pass": true
@@ -106,7 +110,7 @@
       "pass": true
     },
     "g22_bucket_composition": {
-      "detail": "census buckets = family sums (rounded 3 mixes the two surds)",
+      "detail": "census buckets = family sums (rounded 3 mixes two numerical centers)",
       "pass": true
     },
     "g23_argmax_law": {
@@ -114,7 +118,7 @@
       "pass": true
     },
     "g24_perturbed_rejector": {
-      "detail": "2 entries leave the magnitude set (distance 3.0e-01) under a 1.7 diagonal perturbation",
+      "detail": "2 entries leave the reference-center set (distance 3.0e-01) under a 1.7 diagonal perturbation",
       "pass": true
     }
   },
@@ -134,6 +138,12 @@
         4896,
         4056
       ]
+    },
+    "center_deviation_max": {
+      "four": "1.3e-08",
+      "two": "5.7e-08",
+      "two_rt2": "3.0e-08",
+      "two_rt3": "6.1e-08"
     },
     "counts_per_sign": {
       "four|swap": [
@@ -179,12 +189,6 @@
         4032
       ]
     },
-    "dev_max": {
-      "four": "1.3e-08",
-      "two": "5.7e-08",
-      "two_rt2": "3.0e-08",
-      "two_rt3": "6.1e-08"
-    },
     "edge_pair": [
       "22.150846413069",
       "24.150846469784"
@@ -197,6 +201,12 @@
       "two|edge": "4(L-1)",
       "two|swap": "12(L-1)^3+8(L-1)^2(L-2)"
     },
+    "pair_cut_margins": {
+      "edge_smaller_side_min": "2.2e+01",
+      "swap_partner_max": "6.1e-08",
+      "wall_smaller_side_min": "5.9e+00"
+    },
+    "second_center_gap": "5.4e-01",
     "two_window": [
       "1.7e-09",
       "5.7e-08"
@@ -204,7 +214,6 @@
     "wall_pair": [
       "5.857096565429",
       "8.685523719688"
-    ],
-    "wrong_surd_gap": "5.4e-01"
+    ]
   }
 }

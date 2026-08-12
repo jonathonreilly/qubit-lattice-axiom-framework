@@ -1,146 +1,189 @@
-# Physical cell cutting: the covers and the pieces are inequivalent group sets, and the two censuses cross in the centre
+# Physical cell cutting: fixed-point cover and piece censuses cross in the centre
 
 Date: 2026-08-11
 Authority: none
-Audit: unset.
+Audit: unset
+Status: proposed_retained
 Claim type: bounded_theorem
 Constitutional effect: none.
 
-## 1. What this cycle asks
+## Trace gate
 
-The unit four-cube cell has 2672 five-corner unit-determinant subsets, 400 of them at the
-adjacency cost floor 6, and 15800 cuttings of 24 pieces, in which 192 pieces occur, each in
-1975 cuttings, filling 379200 slots. Those pieces carry 192 eight-piece covers. The 384 signed
-coordinate maps act freely on the 36864 pairs of a piece and a cover with 96 orbit tables; the
-tables are pairwise disjoint and sum to the all-ones table, so any four of them add to a
-zero-one matrix and the family of such members has 3321960 elements. The cover incidence is one
-of them.
+- `trace_class: frontier_discovery`
+- `target_claim_id: null`
+- `target_blocker_text: null`
+- `source_of_blocker_text: frontier_question`
+- `reachability_to_target: unknown_frontier`
+- `artifact_role: theorem`
+- `next_trace_action: test whether the finite fixed-point/census mechanism has a canonical downstream consumer; none is claimed here`
 
-Cycle 776 cut that family by asking that every row of a member be a cover, and 48 members
-survived. This cycle asks the mirror question on the columns: that every column of a member be
-a column of the incidence, that is the set of covers through some one piece. The two brute
-force censuses give 48 and 16. This note says where both numbers come from, and what happens
-when the two conditions are imposed together.
+## Status contract
 
-## 2. The fixed-point formula
+- `actual_current_surface_status: bounded-support`
+- `target_claim_type: bounded_theorem`
+- `trace_class: frontier_discovery`
+- `reachability_to_target: unknown_frontier`
+- `conditional_surface_status: null`
+- `hypothetical_axiom_status: null`
+- `admitted_observation_status: null`
+- `claim_type_reason: exact finite group-action and incidence identities for the declared unit four-cube object; no broader physical or lattice-wide identification`
+- `audit_required_before_effective_retained: true`
+- `bare_retained_allowed: false`
 
-**Theorem.** Let a group act transitively on a set, and suppose the holder of each point has
-order 2. Let g be the second map of one such holder. Then the number of relabellings of the set
-that commute with the action equals the number of points that g leaves alone.
+## Inputs and scope
 
-The double count is two lines. Every point has exactly one non-identity map holding it, and by
-transitivity all of those maps are conjugate, so the conjugacy class of g meets every holder
-exactly once per point it leaves alone: counting the pairs of a point and a map of the class
-holding it gives class size times fixed count equals the number of points. The relabellings
-commuting with the action are the index of the holder inside its normalizer, and since the
-holder has order 2 the normalizer is the centralizer of g, so that index is the group order
-divided by the class size and then by 2. Because the point holders have order 2 the number of
-points is the group order divided by 2, and the two divisions cancel: the index is the fixed
-count.
+The declared finite object consists of the 16 vertices of the unit four-cube, the
+five-vertex determinant-one simplices at the adjacency-cost minimum, the cuttings formed from
+those simplices, and the 384 signed coordinate maps of the cell. These are finite-scope object
+choices, not imported physical primitives. The integer counts below are derived by the linked
+runner. The two named primes are used only for the diagnostic in section 8.
 
-The two instances of the cell, each with its class equation:
+There are no load-bearing literature, empirical, fitted, external-data, or repository-derived
+scientific inputs. NumPy is an implementation dependency and supplies no scientific value.
+The runner rebuilds the object from the corners and performs every load-bearing check using
+integer arithmetic.
 
-- covers: class size 4 times fixed count 48 is 192; centralizer 96, equal to the normalizer;
-  index 96 over 2 is 48, which is the fixed count.
-- pieces: class size 12 times fixed count 16 is 192; centralizer 32, equal to the normalizer;
-  index 32 over 2 is 16, which is the fixed count.
+The exact target is to derive the cover and piece census sizes from a finite transitive-action
+fixed-point formula and identify their intersection for this object. The proof obligations are:
 
-## 3. The covers and the pieces are inequivalent group sets
+1. certify that the enumerated 24-simplex selections tile the cell;
+2. certify the two transitive actions and their order-two point stabilizers;
+3. prove the fixed-point/normalizer formula at the stated finite scope;
+4. identify the brute-force row and column censuses with the corresponding equivariant
+   relabellings as exact sets; and
+5. count and identify the incidence-intertwining pairs.
 
-The two holder generators are different maps and are not conjugate. The cover holder generator
-is a single-axis flip and lies in the flip group of 16 maps that the cover holders generate;
-the piece holder generator is not a flip and lies outside that group. Each acts without a fixed
-point on the other side: the cover holder leaves 0 pieces alone and the piece holder leaves 0
-covers alone.
+Each obligation is discharged below and by a named hard gate in the runner. This note makes no
+claim about arbitrary cell-cutting systems, physical dynamics, or a lattice-wide construction.
 
-By the theorem of section 2 the two counts 48 and 16 are the two fixed counts, so 48 against 16
-is exactly the statement that the 192 covers and the 192 pieces are inequivalent as group sets.
-That inequivalence is what makes the object rigid: no relabelling can carry the one side onto
-the other, and the two censuses therefore cannot be transported into each other.
+## 1. The exact finite object
 
-## 4. The column census
+The cell has 2672 five-corner unit-determinant subsets, 400 at adjacency-cost floor 6, and
+15800 selected 24-piece cuttings. Exactly 192 pieces occur, each in 1975 cuttings, filling
+379200 slots. Those pieces carry 192 eight-piece covers. The 384 signed coordinate maps act
+freely on the 36864 piece-cover pairs, giving 96 pairwise-disjoint orbit tables whose sum is
+the all-ones table. Any four tables therefore form a zero-one matrix, giving a family of
+3321960 members. The cover incidence is one member.
 
-The centralizer of the piece holder generator has 32 maps and yields 16 piece relabellings,
-each a bijection of the 192 pieces commuting with the group action, checked on 1179648
-comparisons with 0 misses, closed under composition and containing the identity. The images of
-the incidence under those 16 relabellings are 16 four-table sets, and they are set-equal to the
-16 members of the brute force column census, with symmetric difference 0. So the column count
-16 is the index of section 2, not an accident of the search.
+The sample lattice used to enumerate candidate cuttings avoids every candidate facet. Gate H25
+then supplies an independent exact tiling certificate: all 15168 simplex pairs that co-occur in
+a selected cutting are weakly separated by one of the 80 nonzero normals in
+`{-1,0,1}^4`. Because every simplex is full-dimensional, its interior is strictly on one side
+of such a separator. The 24 determinant-one simplex volumes sum to the unit four-cube volume.
+Thus the selected sets are genuine cuttings, while the generic sample makes the enumeration
+exhaustive within the declared candidate class.
+
+## 2. Finite fixed-point formula
+
+**Theorem.** Let a finite group `G` act transitively on a finite set `X`, and suppose every
+point stabilizer has order 2. Fix `x in X` and write `H = Stab_G(x) = {1,g}`, with `g` the
+non-identity element. Then
+
+`|Aut_G(X)| = |Fix_X(g)|`.
+
+**Proof.** Identify `X` with `G/H`. Equivariant bijections of `G/H` are indexed by
+`N_G(H)/H`. Since `H={1,g}`, an element normalizes `H` exactly when it centralizes `g`, so
+
+`|Aut_G(X)| = |C_G(g)|/2`.
+
+Every point stabilizer contains one non-identity element, and transitivity makes those elements
+conjugate to `g`. Double-counting pairs `(y,k)` with `k` in the conjugacy class of `g` and
+`ky=y` gives
+
+`|Cl_G(g)| |Fix_X(g)| = |X| = |G|/2`.
+
+Using `|Cl_G(g)|=|G|/|C_G(g)|` yields
+`|Fix_X(g)|=|C_G(g)|/2`, proving the formula. QED.
+
+For covers, the class size is 4 and the fixed count is 48; the centralizer/normalizer has size
+96, so its index over the stabilizer is 48. For pieces, the class size is 12 and the fixed
+count is 16; the centralizer/normalizer has size 32, so its index is 16.
+
+## 3. Cover and piece actions are inequivalent
+
+The cover stabilizer generator is a single-axis flip in the normal 16-element flip subgroup.
+The piece stabilizer generator lies outside that subgroup, so the generators are not conjugate.
+The first fixes 0 pieces and the second fixes 0 covers. The two transitive `G`-sets therefore
+have nonconjugate stabilizers and are inequivalent. Their equivariant automorphism groups have
+the distinct sizes 48 and 16 derived in section 2.
+
+## 4. Exact row and column censuses
+
+The centralizer of the piece stabilizer has 32 maps and yields 16 piece relabellings. Each is a
+bijection of the 192 pieces commuting with the group action, checked on 1179648 comparisons
+with 0 misses; the relabellings contain the identity and are closed under composition. Their
+incidence images equal the 16-member brute-force column census, with symmetric difference 0.
+
+The analogous 48 cover relabellings give incidence images equal to the 48-member brute-force
+row census, again with symmetric difference 0. The two census sizes are therefore the two
+fixed-point counts, rather than unexplained search counts.
 
 ## 5. The crossing is an automorphism count
 
-A member lying in both censuses is a relabelling of the rows and a relabelling of the columns
-of the incidence at once, so the pair intertwines the incidence with itself; both components
-already commute with the group. Counting directly over the 48 cover relabellings and the 16
-piece relabellings gives 768 candidate pairs, of which 2 satisfy the intertwining relation.
-Reading the four table labels off those 2 returns exactly the two members that the brute force
-crossing found, with symmetric difference 0.
+A member in both censuses supplies a cover relabelling and a piece relabelling that intertwine
+the incidence. Testing all `48 * 16 = 768` pairs gives exactly 2 intertwining pairs. Reading
+their four table labels gives exactly the two brute-force crossing members, with symmetric
+difference 0. Both components are cell maps in the centre, which has size 2, and the two cover
+components contain the identity and are closed under composition.
 
-This count never mentions the family, the censuses, or the orbit tables: it is a count of pairs
-of relabellings. Both components of both solutions are maps of the cell and both lie in the
-centre, which has size 2, and the two cover components are closed under composition and contain
-the identity.
+## 6. Independent finite conditions
 
-## 6. The two purely combinatorial conditions reach the centre with no symmetry input
+The row condition leaves 48 members and the column condition leaves 16. Of these, 46 satisfy
+only the row condition and 14 satisfy only the column condition; their intersection has size 2.
+The incidence has 192 distinct rows and 192 distinct columns, so each member determines its row
+and column map. The exact ladder is therefore `3321960 -> 48`, `3321960 -> 16`, and
+`48 intersection 16 -> 2`.
 
-The row condition alone leaves 48 members and the column condition alone leaves 16; 46 members
-satisfy the row condition and not the column condition, and 14 the other way, so neither
-condition implies the other. Together they leave 2, and the incidence has 192 distinct rows and
-192 distinct columns, so a member's row map and column map are each determined. The ladder is
-3321960, then 48, then 16, then 2.
+The two crossing members form one orbit under the declared non-identity central relabelling:
+that map carries the first member to the second entry by entry and carries its four tables to
+the other four tables. This is a positive equivalence statement for the finite object; no
+finer canonical selection is claimed.
 
-Neither step asks for a symmetry. Both are conditions on how the labels of a four-table member
-fall inside the covers, and the maps of the cell only enter afterwards, when section 2 explains
-the two numbers. Cycle 776's symmetry step is therefore a consequence of the combinatorics
-rather than an extra requirement laid on top of it.
+## 7. Finite controls
 
-## 7. What rank cannot do
+- The cycle-773 twin, table set `4/5/6/7`, occurs in neither census.
+- Swapping any subset of the four central partner tables produces 16 variants; exactly 2 occur
+  in the row census and exactly 2 in the column census.
+- Of the 352 maps outside the piece-stabilizer centralizer, 0 identify two different coset
+  representatives as the same piece map.
+- The cover-holder generators close to the 16-element flip subgroup. By comparison, 371 maps
+  fix 0 pieces; restricting those to involutions leaves 63, and adjoining the identity yields
+  a 64-element set that is not closed under multiplication. These are exact control counts,
+  not route-closure claims.
 
-The incidence has block profile 9/9/6/6/0 over the sixteen sign patterns, constant inside each
-pattern weight class, and every one of the 16 column-census members carries that same profile
-triple at both fixed primes: 16 of 16 at the first and 16 of 16 at the second. So no rank
-instrument built from the sixteen blocks separates the column census, exactly as none separates
-the row census.
+## 8. Block-rank profile at two fixed primes
 
-The instrument is nonetheless sound: at both primes the sixteen block ranks recompose to 105,
-which is the rank of the incidence measured directly, so a wrong block basis would show up here
-rather than hide.
+The incidence has the block-rank profile `9/9/6/6/0` over the sixteen sign patterns, constant
+inside each pattern-weight class. Every one of the 16 column-census members has the same tested
+profile triple at primes 1000003 and 1000033. At each prime the sixteen block ranks recompose
+to 105, equal to the directly measured incidence rank. This establishes constancy of this
+specific diagnostic on this census at the two named primes; it makes no statement about other
+rank constructions or invariants.
 
-## 8. Rejectors
+The two crossing matrices each have rank 105 at the first prime. Their sum has row sums 16,
+rather than the individual row sums 8, and therefore lies outside the declared family. This is
+only a finite control on the two returned matrices.
 
-- The cycle 773 twin, the four-table set 4/5/6/7, sits in neither census; both the row census of
-  48 and the column census of 16 were tested.
-- Precomposing the piece side with the central map sends each of the incidence's four tables to
-  a partner table. Of the 16 variants obtained by swapping each subset of the four, 2 sit in the
-  row census and 2 sit in the column census.
-- Of the 352 maps outside the centralizer of the piece holder generator, 0 give the same piece
-  map from two different coset representatives, so the 16 relabellings of section 4 are not an
-  artefact of the choice of representatives.
+## 9. Reproduction
 
-## 9. Boundary and honest auditor read
+Run
+[physical_cell_cutting_crossing_automorphism_cycle777_2026_08_11.py](../scripts/physical_cell_cutting_crossing_automorphism_cycle777_2026_08_11.py).
+The reviewed cached output is
+[physical_cell_cutting_crossing_automorphism_cycle777_2026_08_11.txt](../logs/runner-cache/physical_cell_cutting_crossing_automorphism_cycle777_2026_08_11.txt).
+The runner declares `AUDIT_TIMEOUT_SEC = 300`, typically completes in under a minute, and stays
+well under one gigabyte.
 
-The 2 members of the crossing are one object under two namings: the central map carries the
-first to the second entry by entry, and it also carries the four tables of the first onto the
-four tables of the second. So no instrument blind to the naming of the covers can separate
-them, and cutting below 2 needs an instrument that is sensitive to that naming. This cycle does
-not supply one. Neither census condition is linear either: two members sum to row sums 16 rather
-than 8, so the sum leaves the family altogether, and both members have the same rank 105 as the
-incidence.
+## 10. Review record and boundary
 
-The flip group of section 3 must be identified from the cover holders, by taking the
-non-identity map of each cover holder and closing under the product. Identifying it by free
-action does not work: the maps leaving no piece alone number 371, and imposing in addition that
-the map square to the identity leaves 63, and neither of those is 16. Both wrong numbers are
-measured, not derived. The nearest repair fails as well: the identity leaves every piece alone,
-so it sits outside the 63, and adjoining it gives 64 maps that are not closed under the product,
-so that set is not a subgroup at all.
+- Review iteration 1 (Sol, 2026-08-11) required finite theorem hypotheses, an exact
+  simplex-separation/tiling certificate, exact row-census set equality, fail-closed runner exit,
+  and explicit status/import/proof contracts.
+- Review narrowed the rank and naming discussion to the positive finite equalities and bounded
+  diagnostics actually established here.
+- The exact immutable reviewed head and landing SHA belong in the PR review comment because a
+  commit cannot contain its own hash.
+- The new citation-graph node must be regenerated and co-landed with this note.
+- Independent audit remains required before any effective retained status or downstream use.
 
-The gate results are computational identities on one exact object, over the integers and two
-fixed primes, with no floating point anywhere and no free parameter.
-
-## 10. Reproduction
-
-Runner `physical_cell_cutting_crossing_automorphism_cycle777_2026_08_11.py`, cached output
-`physical_cell_cutting_crossing_automorphism_cycle777_2026_08_11.txt`. The runner is standalone
-and rebuilds the cell object from the corners; it takes under a minute and stays well under a
-gigabyte.
+Within those boundaries, the appropriate review classification is **bounded support** for the
+declared exact finite object.

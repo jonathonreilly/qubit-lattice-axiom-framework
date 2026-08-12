@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/physical_cell_cutting_sixteen_attained_cycle742_independent_check_2026_08_05.py
+runner_sha256: b64ea254fd12366fbb42e561c33a994322c5a32f20711f6c7fbb6832cc0e86a7
+input_fingerprint_sha256: 8d1fc4a7ae6b7c89b47ca9fa3c928d523ec27271c10d4f4b4f9b861c1f75fdc5
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 137.25
+status: ok
+----- stdout -----
+PASS independent.population  opposite-pivot exact covers reconstruct 15800 rows on 192 used pieces
+PASS independent.dependencies  Cycles 737, 739 and 741 bind the exact incidence, functions and lower bound
+PASS receipt.contract  the Cycle 742 verdict, complete traversal, runner and inputs are content-bound
+PASS independent.targets  all eight Cycle 737 function identities and exact upper supports reconstruct
+PASS independent.rank  an independent 88-row basis pins all eight consistent functions
+PASS independent.restrictions  independent single-orbit and six-pair ranks reproduce every finite inconsistency
+PASS independent.sixteen  independent CNF recovers an exact weight-sixteen four-reading carrier
+PASS hostile.sat  a target planted from sixteen columns is recovered as SAT
+PASS hostile.dependency  a failed exact-weight-fourteen predecessor cannot pass
+PASS hostile.dependency_hash  a mutated predecessor input contract is rejected
+PASS hostile.skipped_row  a skipped primary construction row invalidates the generated receipt
+PASS hostile.reading_identity  a local reading-name identity mutation invalidates the primary contract
+PASS hostile.primary_mutation  a local semantic mutation breaks the primary source pin
+PASS independent.automorphisms  both supplied piece permutations independently induce cutting permutations and fix all readings
+PASS independent.carriers  all 120 supplied supports are distinct exact weight-sixteen four-reading carriers
+PASS independent.group_closure  the explicit generators act transitively and close the 36 seeds to five orbits on 120 carriers
+PASS hostile.automorphism_mutation  a one-entry automorphism mutation is rejected by independent incidence verification
+N5 per_element: checked -- all 192 columns enter the exact weight-sixteen CNF and certificates
+N5 per_site: checked -- one supplied 16-corner coordinate cell only
+N5 per_mode: checked and not executed -- this finite model has no modes
+N5 per_block: checked -- all 15800 rows enter certificate and carrier verification
+N5 lattice_wide: checked and not executed -- no multicell or limit claim
+RECEIPT outputs/physical_cell_cutting_sixteen_attained_cycle742_independent_check_2026_08_05_receipt_2026-08-05.json
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

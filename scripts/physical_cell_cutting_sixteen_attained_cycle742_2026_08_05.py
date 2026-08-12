@@ -39,6 +39,13 @@ C741_INDEPENDENT_RECEIPT_PATH = (
     "outputs/physical_cell_cutting_fourteen_frontier_cycle741_independent_check_"
     "2026_08_05_receipt_2026-08-05.json"
 )
+C737_PRIMARY_PATH = (
+    "scripts/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05.py"
+)
+C737_RECEIPT_PATH = (
+    "outputs/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05_"
+    "receipt_2026-08-05.json"
+)
 RECEIPT_PATH = ROOT / (
     "outputs/physical_cell_cutting_sixteen_attained_cycle742_2026_08_05_"
     "receipt_2026-08-05.json"
@@ -121,6 +128,7 @@ def fail_receipt(reason):
 fail_receipt("runner has not completed")
 C741 = json.loads((ROOT / C741_RECEIPT_PATH).read_text(encoding="utf-8"))
 C741I = json.loads((ROOT / C741_INDEPENDENT_RECEIPT_PATH).read_text(encoding="utf-8"))
+C737 = json.loads((ROOT / C737_RECEIPT_PATH).read_text(encoding="utf-8"))
 EXPECTED_NAMES = ["four", "four-flip", "six", "six-flip", "seven", "seven-flip"]
 C741_OK = (
     C741.get("schema") == "physical-cell-cutting-fourteen-frontier-cycle741-v2"
@@ -487,6 +495,43 @@ for nm in ["four", "six", "seven"]:
     TGT.append((nm, NAMED[nm]))
     TGT.append((nm + "-flip", NAMED[nm] ^ 1))
 
+CANONICAL_INCIDENCE_ROWS_SHA256 = hashlib.sha256(
+    b"".join(sorted(bytes(row) for row in PK))
+).hexdigest()
+SUPPORT_COLUMN_ORDER_SHA256 = hashlib.sha256(json.dumps(
+    [[int(corner) for corner in UNI[piece]] for piece in USED],
+    separators=(",", ":"),
+).encode("utf-8")).hexdigest()
+LOCAL_FUNCTION_IDENTITY = {
+    name: {
+        "ones": int(target.sum()),
+        "canonical_rows_with_bit_sha256": hashlib.sha256(b"".join(sorted(
+            bytes(row) + bytes((int(bit),))
+            for row, bit in zip(PK, target)
+        ))).hexdigest(),
+    }
+    for name, target in TGT
+}
+C737_IDENTITY = C737.get("reading_identity", {})
+C737_FUNCTIONS = C737_IDENTITY.get("functions", {})
+READING_IDENTITY_OK = (
+    C737.get("schema") == "physical-cell-cutting-least-computing-sets-cycle737-v2"
+    and C737.get("status") == "pass"
+    and C737.get("gates", {}).get("fail") == 0
+    and C737.get("runner_sha256") == file_sha256(C737_PRIMARY_PATH)
+    and C737_IDENTITY.get("canonical_incidence_rows_sha256")
+    == CANONICAL_INCIDENCE_ROWS_SHA256
+    and C737_IDENTITY.get("support_column_order_sha256")
+    == SUPPORT_COLUMN_ORDER_SHA256
+    and set(C737_FUNCTIONS) == set(LOCAL_FUNCTION_IDENTITY)
+    and all(
+        C737_FUNCTIONS.get(name, {}).get("ones") == values["ones"]
+        and C737_FUNCTIONS.get(name, {}).get("canonical_rows_with_bit_sha256")
+        == values["canonical_rows_with_bit_sha256"]
+        for name, values in LOCAL_FUNCTION_IDENTITY.items()
+    )
+)
+
 
 # ---- section B: first-appearance orbit labels ----
 INC64 = INCL
@@ -673,6 +718,8 @@ gate(CPOK and len(CP) == 48 and NP == 192, "G06",
 gate(PROCESSED_ROWS == list(range(NS)) and len(EA[4]) == 46128
      and len(EA[6]) == 31968 and len(KEY[4]) == 120, "G06A",
      "all 15800 cutting rows contribute; move inventories are 46128, 31968, and 120")
+gate(READING_IDENTITY_OK, "G06B",
+     "all eight locally derived readings match the canonical Cycle 737 identities")
 
 # ---- section E: singles and pairs ----
 SK, SM, SA = [], [], []
@@ -1125,15 +1172,6 @@ gate(EL < 700.0 and RSS < 2500.0, "G54",
 TCH = OUT[0] + 120
 gate(TCH < 7000, "G55", "its output stays under {0} characters".format(7000))
 
-CANONICAL_INCIDENCE_ROWS_SHA256 = hashlib.sha256(
-    b"".join(sorted(bytes(row) for row in np.packbits(INC, axis=1)))
-).hexdigest()
-SUPPORT_COLUMN_ORDER_SHA256 = hashlib.sha256(json.dumps(
-    [[int(corner) for corner in UNI[piece]] for piece in USED],
-    separators=(",", ":"),
-).encode("utf-8")).hexdigest()
-
-
 def permutation_sha256(permutation):
     return hashlib.sha256(json.dumps(
         [int(value) for value in permutation], separators=(",", ":")
@@ -1179,6 +1217,11 @@ receipt = {
     "incidence_identity": {
         "canonical_incidence_rows_sha256": CANONICAL_INCIDENCE_ROWS_SHA256,
         "support_column_order_sha256": SUPPORT_COLUMN_ORDER_SHA256,
+    },
+    "reading_identity": {
+        "canonical_incidence_rows_sha256": CANONICAL_INCIDENCE_ROWS_SHA256,
+        "support_column_order_sha256": SUPPORT_COLUMN_ORDER_SHA256,
+        "functions": LOCAL_FUNCTION_IDENTITY,
     },
     "automorphism_certificates": {
         "b0": {

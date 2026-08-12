@@ -469,6 +469,8 @@ def primary_contract_ok(receipt):
     four = receipt.get("four_weight_sixteen", {})
     population = receipt.get("population", {})
     incidence_identity = receipt.get("incidence_identity", {})
+    reading_identity = receipt.get("reading_identity", {})
+    primary_functions = reading_identity.get("functions", {})
     return (
         receipt.get("schema") == "physical-cell-cutting-sixteen-attained-cycle742-v2"
         and receipt.get("status") == "pass"
@@ -483,6 +485,17 @@ def primary_contract_ok(receipt):
         and incidence_identity.get("canonical_incidence_rows_sha256")
         == canonical_incidence_hash
         and incidence_identity.get("support_column_order_sha256") == column_order_hash
+        and reading_identity.get("canonical_incidence_rows_sha256")
+        == canonical_incidence_hash
+        and reading_identity.get("support_column_order_sha256") == column_order_hash
+        and set(primary_functions) == set(NAMES)
+        and all(
+            primary_functions.get(name, {}).get("ones")
+            == functions.get(name, {}).get("ones")
+            and primary_functions.get(name, {}).get("canonical_rows_with_bit_sha256")
+            == functions.get(name, {}).get("canonical_rows_with_bit_sha256")
+            for name in NAMES
+        )
         and four.get("enumerated_seed_count") == 36
         and four.get("closure_count") == 120
         and four.get("minimum_support") == 16
@@ -667,6 +680,12 @@ bad_inventory = copy.deepcopy(PRIMARY_RECEIPT)
 bad_inventory["population"]["processed_rows"] -= 1
 gate(not primary_contract_ok(bad_inventory), "hostile.skipped_row",
      "a skipped primary construction row invalidates the generated receipt")
+bad_reading_identity = copy.deepcopy(PRIMARY_RECEIPT)
+bad_reading_identity["reading_identity"]["functions"]["four"][
+    "canonical_rows_with_bit_sha256"
+] = "0" * 64
+gate(not primary_contract_ok(bad_reading_identity), "hostile.reading_identity",
+     "a local reading-name identity mutation invalidates the primary contract")
 bad_primary_hash = copy.deepcopy(PRIMARY_RECEIPT)
 mutated_source = (ROOT / PRIMARY_PATH).read_bytes().replace(
     b"hi = min(lo + 200, NS)", b"hi = min(lo + 100, NS)", 1

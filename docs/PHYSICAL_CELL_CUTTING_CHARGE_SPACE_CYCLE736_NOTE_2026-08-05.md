@@ -4,47 +4,65 @@ Date: 2026-08-05
 
 Claim type: bounded_theorem
 
-Authority: none. Audit: unset. Constitutional effect: none. This cycle edits no
-axiom, foundation, Qualification, primitive, registry, policy, queue,
-audit-status, or PR-control surface. No new axiom or primitive is proposed or
-adopted.
+Authority: none. Audit: unset. Constitutional effect: none. No axiom or primitive is
+proposed or adopted. Audit status is set only by the independent audit lane, and effective
+status is pipeline-derived.
 
-The object is one cell of the lattice carried through one tick of emergent time: the
-four-cube on the sixteen corners of `{0,1}^4`, whose three spatial columns and single tick
-column are the columns the axioms of
-[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) supply, with nearest
-neighbour adjacency only and the proper cubic rotations alone kept. A piece is a five
-corner simplex of the cell of least volume; the cost of a piece counts the pairs of its
-corners more than one lattice step apart, and the cost of a cutting is the sum over its
-pieces. The previous cycle exhibited one two sided charge on the cuttings at the floor of
-that cost: a weight on the pieces, read as a sum over the twenty four pieces of a cutting,
-which the smallest move always reverses and the next smallest always keeps. It did not say
-whether that charge stands alone, nor what picks it out. This cycle answers both by putting
-the question to every size of move at once. Reversing every move of one size is a linear
-demand on the weight, so the sizes at which a charge of that kind can exist are decided by a
-rank, and where none exists the reason is handed back as a family of exchanges of odd size
-summing to zero. The charges that answer the smallest move uniformly turn out to form a
-space of dimension three, so there are eight of them: the two constants, and three more once
-the two sides of a charge are counted as one. Those three are the previous cycle's charge, a
-sister that keeps the seven piece move instead, and their sum, which keeps the smallest move
-outright. That last one is the
-indicator of a single orbit of the cell's symmetries acting on the groups the smallest move
-leaves behind, so what the population carries is fixed by the cell and not by any choice
-made while solving. Every statement below is a check in whole numbers over an explicit
-finite set; no solver is used, and where a charge does not exist the obstruction is
-exhibited rather than asserted.
+Primary runner:
+[`scripts/physical_cell_cutting_charge_space_cycle736_2026_08_05.py`](../scripts/physical_cell_cutting_charge_space_cycle736_2026_08_05.py)
+(deterministic finite arithmetic; fails closed).
+
+Independent checker:
+[`scripts/physical_cell_cutting_charge_space_cycle736_independent_check_2026_08_05.py`](../scripts/physical_cell_cutting_charge_space_cycle736_independent_check_2026_08_05.py)
+(reconstructs the finite object without importing or executing the primary).
+
+## Supplied model and dependencies
+
+This is a theorem only about a supplied finite model: the four-cube on the sixteen corners
+of `{0,1}^4`, with three labelled spatial columns, one labelled tick column, normalized-
+volume-one corner 4-simplices, the declared four-coordinate L1 pair charge, and a declared
+48-element action made from 24 proper spatial signed permutations and the optional labelled
+tick flip. A cutting is a set of 24 such simplices with disjoint relative interiors and
+total normalized volume 24.
+
+The [Minimal Axioms](MINIMAL_AXIOMS_2026-06-29.md) supply only the spatial `Z^3`
+nearest-neighbour lattice and proper cubic rotations. The registered
+[kinetic-isotropy primitive](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md) supplies only
+equal spatial/tick kinetic-form graining. Neither source selects this one-box domain, the
+corner-simplex class, the declared pair charge, a physical assembly cell, or a
+tick--Admissibility realization.
+
+[Cycle 733](PHYSICAL_COLUMN_FAMILY_PARITY_LAW_FORCED_ORBITS_CYCLE733_NOTE_2026-08-04.md)
+is the direct theorem dependency: its hash-bound receipt certifies the same supplied model
+and the 15,800-member population through an independent exact geometric route. Cycle 736
+also rebuilds that population before computing any new charge-space result. Later
+move/charge cycles are comparative context only: none of their receipts or numerical
+literals is imported into either runner here.
+
+Within that bounded population, reversing every move of one size is a linear demand on a
+piece weight. The induced charges have rank three: eight functions including two constants,
+or three nonconstant charges up to complement. One keeps four-piece moves, one keeps
+six-piece moves, and one keeps seven-piece moves. The four-keeping charge is exactly the
+indicator of one orbit of connected components under the supplied 48-element action. These
+are finite incidence and GF(2) statements, not physical conservation laws or framework-wide
+selection statements.
 
 ## The cell, the floor, and the moves between cuttings
 
-Of the 4368 five element subsets of the 16 corners, 2672 have the least volume and are the
-pieces. They carry 2736 sample points with no collision between them and none on any
-boundary, so containment is decided in whole numbers. The cell has 48 symmetries, counting
-the 24 proper rotations against the tick flip, and the pieces fall into 57 orbits under
-them.
+Of the 4368 five-element subsets of the 16 corners, 2672 have normalized volume one. They
+carry 2736 generic rational sample points with no collision and no boundary incidence; this
+finite incidence structure accelerates the exact-cover search but is not treated as a
+geometric proof. For each of the 391 supplied-symmetry orbits of returned covers, the primary
+and independent checker separately verify all 276 simplex pairs with exact integer
+separating directions. The resulting 107,916 pair certificates, together with 24 unit-
+volume pieces, prove disjoint interiors and total volume 24. A hostile control exhibits
+sample-disjoint simplices that overlap, confirming that this separate geometry gate is
+load-bearing. The declared action has 48 elements and the pieces form 57 orbits under it.
 
-The cost of a piece is 6 at the floor and 400 pieces reach it. A complete search over those
-400 visits 502838 nodes and returns 15800 cuttings of 24 pieces each, which between them
-use 192 of the 400. Every cutting therefore sits at cost 24 times 6.
+The declared cost of a piece is 6 at the floor and 400 pieces reach it. A complete search
+over those 400 visits 502838 nodes and returns 15800 exact geometric cuttings of 24 pieces
+each, which between them use 192 of the 400. Every cutting therefore sits at declared cost
+24 times 6, or 144.
 
 A move carries one cutting to another and is measured by how many pieces it replaces. Over
 all pairs of the 15800 the counts are
@@ -58,7 +76,7 @@ pieces changes 2k of them in all, so it is the change and not k that is forced e
 sizes of either parity are otherwise present. Different moves can exchange the same set of
 pieces; reducing each move to the pieces it takes out and puts in leaves 120, 528, 1152,
 4212, 6144 and 25248 distinct exchanges at four, six, seven, eight, nine and ten pieces.
-The 120 at four are as many as the 120 regions the earlier cycle recut.
+The 120 count is reconstructed here rather than imported from a prior receipt.
 
 ## Which sizes of move a weight on the pieces can reverse
 
@@ -77,7 +95,8 @@ of odd size, summing to zero. A weight marking an odd number of pieces in each m
 such a family would have to mark an odd number in their sum, which is empty, so no such
 weight exists.
 
-Across the sizes measured the demand is met at four and at no other size. A weight is
+Across the six nonempty move sizes `{4,6,7,8,9,10}` the demand is met at four and at no
+other size. The empty size-five class is not assigned a nonvacuous response pattern. A weight is
 exhibited whose reading changes across every one of the 46128 smallest moves. At six,
 seven, eight, nine and ten pieces the obstruction is exhibited in its place, as families of
 7, 5, 5, 7 and 5 exchanges summing to zero, each of odd size. The obstruction is therefore
@@ -100,7 +119,8 @@ span lies inside both, the four piece span is exactly the overlap of the six pie
 seven piece spans. The smallest move is thus not an outlier among the sizes but the common
 part of the next two.
 
-That pattern controls what mixed demands can do. Of the 63 non-empty sets of move sizes,
+That pattern controls what mixed demands can do. Of the 63 non-empty subsets of the six
+nonempty sizes `{4,6,7,8,9,10}`,
 exactly 3 admit more than one answer pattern — four alone, four with six, and four with
 seven — and each of those admits 2. Every other set, the whole of them included, admits
 exactly one. So the freedom in the whole question lives entirely at the smallest move and
@@ -120,12 +140,11 @@ four, six and seven piece moves:
     seven     7424/8376          8376    46128     9504        0    21312   102336   183744
 
 read as the two sides of the charge, the side carrying the 48 cuttings that admit no move
-on at most eight pieces, and how many moves of each size the charge reverses. The middle row
-is the previous cycle's charge, recovered here as one member of a space rather than as a
-single solve: the 7704 against 8096 split, the 26880 of the 60096 moves at seven that it
-flips, and the 48 rigid cuttings all sitting on the 7704 side are the numbers that cycle
-measured. The bottom row is its sister and is new — a charge that keeps the seven piece move
-and reverses every one of the smallest. The top row keeps the smallest move outright.
+on at most eight pieces, and how many moves of each size the charge reverses. The three rows
+are reconstructed simultaneously here. The middle row has the 7704/8096 split and flips
+26880 of the 60096 seven-piece moves; the bottom row keeps seven-piece moves and reverses
+every smallest move; the top row keeps the smallest move outright. Agreement with prior
+finite censuses is contextual corroboration, not an input to these values.
 
 The three are not independent as functions. A space of dimension 3 that holds the two
 constants leaves exactly 3 charges once the two sides of each are counted as one, and any
@@ -135,8 +154,8 @@ single triple rather than as three separate finds.
 
 Demanding uniformity at six and at seven together, rather than at four, leaves a weight
 space of dimension 105, and every charge those weights put on the cuttings is constant. So
-the two demands that can be added to the smallest one cannot be added to each other: the
-sister charges are alternatives, not a pair.
+combining the six- and seven-piece demands collapses the induced cutting charge to a
+constant: the sister charges are nonconstant alternatives, not an independent pair.
 
 The exhibited weight sits tightly on its demand rather than loosely satisfying it: moving
 it on a single piece already destroys uniformity at the smallest move.
@@ -145,103 +164,110 @@ it on a single piece already destroys uniformity at the smallest move.
 
 Join two cuttings whenever a smallest move carries one to the other. The population falls
 into 349 groups, of sizes 1, 2, 4, 7, 236 and 9320, with 144, 96, 36, 48, 24 and 1 groups
-at each size. The 349 groups and the 144 of size one are counts the earlier cycles measured;
-they are reproduced here because the charges are read against them.
+at each size. They are reconstructed here because the charges are read against them.
 
-No symmetry of the cell splits a group, so the 48 symmetries permute the 349 groups, and
-under that action the groups fall into 14 orbits — again a count the earlier cycle measured.
+No element of the supplied 48-element action splits a group, so it permutes the 349 groups,
+and under that action the groups fall into 14 orbits.
 Two features of that action carry the result. The 24 groups of size 236 form a single orbit,
 whose stabiliser has order 2. The one group of size 9320 is held fixed by all 48.
 
-Against that, every one of the 8 charges is left where it is by all 48 symmetries, point by
-point: not merely permuted among themselves, but each one fixed. The comparison that gives
-this force is the indicator of a single group of 236 cuttings, which the same 48 symmetries
+Against that, every one of the 8 charges is left where it is by all 48 elements of the
+supplied action, point by point: not merely permuted among themselves, but each one fixed.
+The comparison that gives this force is the indicator of a single group of 236 cuttings,
+which the same 48 elements
 carry to 24 different functions. So being fixed by the symmetries is not automatic for
 functions built out of the groups, and the charges pass a test that a group indicator fails.
 
 The charge that keeps the smallest move is exactly the indicator of that one orbit of 24
 groups, holding 5664 of the 15800 cuttings, which is 24 groups of 236. It is therefore not a
 solution the elimination happened to return but a named subset of the population, picked out
-by the cell's own symmetries acting on the groups the smallest move leaves. The 48 cuttings
+by the declared finite action on the groups the smallest move leaves. The 48 cuttings
 that admit no move on at most eight pieces all sit off it, so the hard core of the population
-is on the larger side of this charge as it was on the smaller side of the previous cycle's.
+is on the larger side of this charge.
 
 ## Independent cross-checks performed
 
-The numbers in this section come from checks run outside the paired runner, by methods the
-runner does not use; the runner does not print them.
+The independent checker imports or executes neither the primary nor an author summary. It
+rebuilds all 2672 unit-volume simplices using an exact recursive determinant, validates every
+rounded inverse by integer multiplication, reconstructs the declared corner action, builds
+the 2736-point incidence system, and repeats the complete 502838-node cover search. It then
+checks one exact-separation representative of every supplied-symmetry orbit, so all 15800
+accepted objects are independently certified as geometric cuttings rather than sample-mask
+covers.
 
-Each headline was re-derived a second way. The move census was recomputed from counts of
-shared pieces, as an integer matrix product over the whole population, rather than from the
-packed popcounts the runner uses, and returned the same six move counts and the same six
-totals of distinct exchanges; the zero at five pieces is not among them, since that route
-was asked only about the sizes that occur. The reversal ladder was recomputed as a question
-about consistency rather than about a span: over the field with two elements the demand is a
-system whose right hand side is all ones, so it is met exactly when adding that column
-leaves the rank alone. The ranks came out 86, 86, 86, 87, 87 and 87 across the six sizes and
-86, 87, 87, 88, 88 and 88 with the column added, so the demand is met at four and at no
-other size, matching the runner's tag coordinate route with no shared machinery. The same
-elimination gives 107 for the weights uniform at four.
+It next performs the full unordered-pair census, rebuilds all exchange masks, and uses a
+separate GF(2) elimination to recover the population ranks, the six exchange-span ranks, and
+the fact that the all-ones reversal demand is consistent only at size four. From the
+orthogonal space it reconstructs all eight induced charge functions and the three table rows
+above. Finally it rebuilds the 349 connected components, their 14 orbits under the supplied
+action, and the exact equality between the four-keeping support and the union of 24
+components of size 236.
 
-The charges were found a third way, by solving inside the 88 dimensional image of the map
-from pieces to cuttings rather than by taking an orthogonal complement in the 192
-dimensional weight space and pushing it forward. That route reports 120 distinct response
-columns at the smallest move, 3 solutions, 8 distinct readings, and the same three rows of
-the table above, entry for entry. The groups were walked out again by breadth-first search
-rather than by union find, giving 349 groups of the same sizes and counts, and the charge
-keeping the smallest move names exactly the union of the 24 groups of 236 on the nose.
+The checker includes five hostile controls. It finds sample-disjoint simplices with
+overlapping interiors, so deleting the exact geometry gate is detected. A one-bit mutation
+of a smallest exchange changes the certified response rank. A local semantic mutation of
+the primary changes its content hash. Mutating the terminal Cycle 733 receipt hash breaks
+the declared input contract. A generated receipt with `status: fail` and a nonzero failure
+count cannot satisfy the checker acceptance predicate. These controls make the geometry,
+semantics, dependency chain, and conditional verdict independently load-bearing.
 
-One structure was built that the runner never forms: the orbits of the 48 symmetries acting
-on the cuttings themselves. There are 391 of them, of sizes 8, 12, 24 and 48 with counts 4,
-14, 96 and 277. Every one of the 8 charges is constant on every orbit, and moving a charge
-on a single cutting breaks that, so the charges are functions of the orbit and the test
-discriminates.
+Canonical evidence:
 
-The population itself was then built a second time, from the sixteen corners upward, sharing
-no step with the paired runner. Volumes came from the sum over the twenty four orderings of a
-piece's edges rather than from an expansion in two by two minors; the cost from counting the
-pairs of corners one step apart rather than the pairs further off; the faces of a piece from
-the three by three minors of its edges rather than from an inverted edge matrix; the sample
-points by listing every plane a face lies in and then choosing, inside each piece, a point
-verified to miss all of them, rather than by spreading one point per orbit of pieces over the
-symmetries; the search by settling the last uncovered point rather than the first; and the
-symmetries by permuting and flipping the four bits of a corner's label rather than by a
-matrix acting on doubled coordinates. That route returns the same 4368 five-subsets of the
-corners, the same smallest volume above nothing, the same 2672 pieces at it, the same least
-cost of six with 400 pieces at it, and the same 15800 cuttings of 24 pieces using 192 between
-them; the cuttings agree with the cached ones row for row as a set, and the 48 relabellings
-agree as a set too. Along the way it measures that a five-subset of the corners takes one of
-the volumes 0, 1, 2 and 3, with 1360, 2672, 320 and 16 subsets at each, and that the 400
-pieces of least cost put their faces in 68 distinct planes. The first of those says the
-smallest volume above nothing is one, and that is what leaves the inverse the paired runner
-takes in floating point already whole before it rounds. The two searches
-visit 586443 and 502838 nodes; a different set of sample points and a different branch order
-need not agree there, and that pair of numbers is not offered as a check.
+- [primary cache](../logs/runner-cache/physical_cell_cutting_charge_space_cycle736_2026_08_05.txt)
+- [independent cache](../logs/runner-cache/physical_cell_cutting_charge_space_cycle736_independent_check_2026_08_05.txt)
+- [generated receipt](../outputs/physical_cell_cutting_charge_space_cycle736_2026_08_05_receipt_2026-08-05.json)
 
-Five gates were then fed objects they should turn away. The reversal test, given the true
-smallest exchanges, says reversal is available; given those same exchanges with the sum of
-two of them added it says the opposite, since that addition creates a family of odd size
-summing to zero. Given the six piece exchanges it says the opposite, and given an
-independent subset of them, 86 of the 528, it says reversal is available again — so the
-test is reading the linear structure and not the size. The claim that the four piece span is
-the overlap of the six and seven piece spans was checked by containment as well as by
-dimension, and the five other pairs of sizes tried do not meet in it. The count of three
-charges was asked of each other move size by the same code and comes out otherwise every
-time, and adding a single six piece move to the smallest ones already changes it.
+The required fresh sequence is primary first and checker second; the primary regenerates
+the receipt, and the checker refuses stale input hashes or a failed verdict.
 
-The support test needed care. Being uniform at the smallest move is far too weak to name the
-keeping charge: any union of groups is uniform there, and the first three of the four near
-misses tried below are unions of groups, so they pass that weaker test as well. What pins
-the charge is that a weight on the 192 pieces can produce it, so that is
-the test applied. The union of all 24 groups of 236 comes from a weight; 23 of those 24 does
-not; those 24 with a group of seven added does not; 24 groups of size seven instead does not;
-and the 24 groups of 236 with a single cutting removed does not. A last check pair confirms
-that the 46128 smallest moves carry only 120 distinct constraints, the rarest of them
-realised 10 times, of which 86 already carry the whole demand — so dropping one move from the
-census cannot change the count of charges, while dropping one of those 86 constraints does.
-Finally the group structure was fed relabellings of the cuttings that are not symmetries of
-the cell: a shift by one, and a swap exchanging a cutting of a smallest group with one of the
-largest group. Both are turned away, while all 48 real symmetries pass.
+## No-Go Discipline Gate
+
+Negative assertion class: `derived_no_go_boundary`. The negatives are only exhaustive
+statements about the supplied 15,800-member population, the nonempty replacement sizes
+`{4,6,7,8,9,10}` (with size five separately certified empty), the fixed 192-piece additive
+GF(2) ansatz, and the declared 48-element action.
+
+- **N1 — alternative routes.** Six routes are explicit: the full unordered-pair census;
+  collapse to distinct exchange masks; augmented-rank consistency for reversal; direct
+  odd-zero exchange certificates; containment plus dimension for the span intersection;
+  and connected-component/orbit reconstruction for the support identity. The independent
+  checker repeats the pair census, augmented ranks, subspace containments, charge pushforward,
+  and component action. No inference is made from the absence of a solver witness.
+- **N2 — wall independence.** Three walls are kept separate: the finite-model wall (one
+  supplied box and charge), the geometry wall (sample incidence is necessary but not
+  sufficient), and the move-window wall (replacement sizes 4 through 10 only). The exact
+  separator gate closes the geometry wall for the accepted population; it does not close
+  either scope wall.
+- **N3 — hidden walls.** The corner-simplex class, minimum-cost restriction, labelled tick,
+  four-coordinate L1 charge, characteristic-two additive weights, and 48-element action are
+  all declared inputs. No claim is made for nonminimum pieces, nonlinear or nonbinary
+  charges, a larger symmetry group, another cell complex, or a physical realization.
+- **N4 — residual matching.** The odd-zero witnesses attack only the equations
+  `weight · exchange = 1` at sizes 6, 7, 8, 9, and 10. The zero five-piece count attacks
+  only the enumerated minimum-population pair census and carries no nonvacuous reversal
+  claim. The constant six-plus-seven result
+  attacks only additive GF(2) piece weights. No external witness is cited as closing a
+  broader residual, so there is no residual mismatch to discard.
+- **N5 — rhetoric audit.** The primary cache lands five explicit resolution lines. The
+  per-element and per-block levels are checked. Per-site, per-mode, and lattice-wide levels
+  are marked not executed with substantive reasons. Every negative below is written at the
+  narrowest checked resolution.
+- **N6 — partial-closure paths.** Replacement sizes 11 through 24 can be enumerated without
+  a new axiom. Other additive groups or nonlinear charge classes can be posed as separate
+  finite systems. Multi-cell behavior needs a supplied gluing/transport model and its own
+  theorem. These are open extensions, not impossibility walls or proposed primitives.
+- **N7 — steelman.** A charge may reverse all moves at an unenumerated larger size; another
+  piece class or cost can change every rank; and a multi-cell transport may yield a different
+  conserved quantity. None would contradict this packet because none belongs to its finite
+  domain.
+- **N8 — cross-cycle echo.** Cycle 733 is used only for its independently geometric finite
+  population and is rechecked locally. Later move/charge cycles are context only. Their
+  stronger or differently scoped negative language is not inherited, and agreement of a
+  count is not treated as a proof dependency.
+
+**Status: PASS.** Every N1 route and N2/N3 wall is named, the N4 residuals match the finite
+claims, the N5 certificate lands in the canonical primary cache, and N6/N7/N8 keep all
+larger routes open.
 
 ## Boundary and honest read
 
@@ -249,22 +275,19 @@ The pool of 192 pieces, the 120 exchanges at the smallest move and the group str
 leave are measured by the search, not derived from a symmetry statement. They are complete
 for this cell and this cost, and the note claims nothing beyond that.
 
-The counts of moves and of distinct exchanges, the ranks, and the group sizes are all
-measurements over an explicit finite population; none of them is forced by a general
-argument given here. Two of the statements above are reproductions rather than discoveries
-and are labelled as such where they appear: the group profile with its 349 groups and 144
-singletons, and the 14 orbits of groups, were measured by earlier cycles and enter here only
-so the charges can be read against them. The content of this cycle is elsewhere — that
-reversal is available at four and at no other size measured, with the obstruction exhibited
-at each of the others; that the four piece span is precisely the overlap of the six and
-seven piece spans; that the charges form a space of dimension three rather than a single
-solution; that the sister charge keeping the seven piece move exists at all; and that the
-charge keeping the smallest move is the indicator of one symmetry orbit of groups.
+The counts of moves and distinct exchanges, the ranks, and the group sizes are measurements
+over an explicit finite population; none is forced by a general framework argument. This
+cycle independently reconstructs the group profile and action because its new conclusion
+reads the charge support against them. The durable result is that reversal is available at
+four and at no other enumerated nonempty size; the four-piece span is the intersection of the six-
+and seven-piece spans; the induced charge space has rank three; and the charge keeping the
+smallest move is exactly one supplied-symmetry orbit of connected components.
 
-The range of move sizes measured runs from four to ten pieces. Nothing is measured about
-moves on eleven or more, and the statement that reversal is available at four and at no
-other size is scoped to that range; a larger range would need its own measurement. Likewise
-the count of 63 sets of sizes is a count of subsets of the same range.
+The pair census covers replacement sizes four through ten and finds the size-five class
+empty. The response theorem covers only the six nonempty sizes `{4,6,7,8,9,10}`: reversal
+is available at four and at no other member of that set. Nothing is measured about moves on
+eleven or more, and a larger range would need its own census. Likewise the count of 63 sets
+is a count of nonempty subsets of those six nonempty sizes.
 
 Every count here is scoped to the single cell of one lattice step and one tick, with the
 adjacency cost and the least volume as defined above. No statement is made about cells of

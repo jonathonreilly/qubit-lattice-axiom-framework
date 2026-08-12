@@ -8,11 +8,41 @@ weight can put on the population, and identifies the one charge that keeps the s
 move with the indicator of a single symmetry orbit of groups.
 
 Class-A: integer and field-with-two-elements arithmetic on a finite explicit object, no
-solver. Every count below is measured here.
+solver. Every count below is measured here.  The unit-cell/tick graining, corner-simplex
+domain, declared four-coordinate L1 charge, and 48-element symmetry action are supplied
+finite-model inputs rather than consequences of the framework axioms.
 """
+import hashlib
 import itertools
+import json
+import sys
+from pathlib import Path
 
 import numpy as np
+
+AUDIT_TIMEOUT_SEC = 180
+AUDIT_INPUT_PATHS = (
+    "docs/PHYSICAL_CELL_CUTTING_CHARGE_SPACE_CYCLE736_NOTE_2026-08-05.md",
+    "scripts/physical_cell_cutting_charge_space_cycle736_independent_check_2026_08_05.py",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+    "docs/PHYSICAL_COLUMN_FAMILY_PARITY_LAW_FORCED_ORBITS_CYCLE733_NOTE_2026-08-04.md",
+    "scripts/physical_column_family_parity_law_forced_orbits_cycle733_2026_08_04.py",
+    "scripts/physical_column_family_parity_law_forced_orbits_cycle733_independent_check_2026_08_04.py",
+    "outputs/physical_column_family_parity_law_forced_orbits_cycle733_2026_08_04_receipt_2026-08-04.json",
+)
+ROOT = Path(__file__).resolve().parent.parent
+RECEIPT_PATH = ROOT / (
+    "outputs/physical_cell_cutting_charge_space_cycle736_2026_08_05_"
+    "receipt_2026-08-05.json"
+)
+
+
+def file_sha256(relative_path):
+    return hashlib.sha256((ROOT / relative_path).read_bytes()).hexdigest()
+
+
+C733_RECEIPT = json.loads((ROOT / AUDIT_INPUT_PATHS[-1]).read_text(encoding="utf-8"))
 
 PF = [0, 0]
 WORD = {4: "four", 6: "six", 7: "seven", 8: "eight", 9: "nine", 10: "ten"}
@@ -26,6 +56,19 @@ def gate(ok, name, detail):
 def sec(text):
     print("")
     print(text)
+
+
+gate(
+    C733_RECEIPT.get("claim_type") == "bounded_theorem"
+    and C733_RECEIPT.get("totals", {}).get("fail") == 0
+    and C733_RECEIPT.get("minimum", {}).get("dissections") == 15800
+    and C733_RECEIPT.get("minimum", {}).get("used_pieces") == 192
+    and C733_RECEIPT.get("minimum", {}).get("geometric_representatives") == 391
+    and C733_RECEIPT.get("minimum", {}).get("geometric_pair_checks") == 107916,
+    "dep.c733",
+    "Cycle 733 binds the supplied finite model and independently certified geometric "
+    "population used here",
+)
 
 
 def det4(A):
@@ -63,6 +106,7 @@ LO = int(C4.min())
 MINP = [i for i in range(NPIECE) if int(C4[i]) == LO]
 MM = np.stack([(V[p[1:]] - V[p[0]]).T for p in UNI])
 IV = np.rint(np.linalg.inv(MM.astype(float))).astype(np.int64)
+INV_OK = bool(np.array_equal(MM @ IV, np.broadcast_to(np.eye(4, dtype=np.int64), MM.shape)))
 
 ROT = []
 for perm in itertools.permutations(range(3)):
@@ -88,6 +132,12 @@ for R in ROT:
             G.append((R, tf, np.array(img, dtype=np.int64)))
 
 posp = dict((tuple(int(c) for c in s), i) for i, s in enumerate(UNI))
+PP = []
+for (_, _, g) in G:
+    PP.append(np.array([
+        posp[tuple(sorted(int(g[c]) for c in UNI[i]))]
+        for i in range(NPIECE)
+    ], dtype=np.int32))
 LAB = -np.ones(NPIECE, dtype=np.int64)
 REPS = []
 for i in range(NPIECE):
@@ -134,9 +184,9 @@ ALLQ = (1 << NQ) - 1
 
 sec("the cuttings of the cell at the floor of the cost")
 gate(len(SUB) == 4368 and NPIECE == 2672 and NQ == 2736 and coll == 0 and face == 0
-     and CB == 3 and SB == 12810 and len(G) == 48 and NORB == 57, "base.cell",
+     and CB == 3 and SB == 12810 and len(G) == 48 and NORB == 57 and INV_OK, "base.cell",
      "{0} five-subsets of the 16 corners give {1} pieces of least volume, carrying {2} "
-     "sample points with no collision and {3} on a boundary; the cell has {4} symmetries "
+     "sample points with no collision and {3} on a boundary; the declared action has {4} symmetries "
      "and the pieces {5} orbits".format(len(SUB), NPIECE, NQ, face, len(G), NORB))
 
 BY, MK = {}, dict((i, MASK[i]) for i in MINP)
@@ -167,11 +217,53 @@ NS = len(SOL)
 USED = sorted(set(i for s in SOL for i in s))
 NPO = len(USED)
 P2I = dict((p, a) for a, p in enumerate(USED))
+
+# Finite sample coverage is only a search accelerator.  Exact separating-facet
+# certificates establish that one representative of every supplied-symmetry orbit is a
+# geometric dissection; symmetry then transports the certificate to the full population.
+NEG = [np.array(t, dtype=np.int64)
+       for t in itertools.product((-1, 0, 1), repeat=4) if any(t)]
+
+
+def separated(indices):
+    pts = [V[UNI[i]] for i in indices]
+    facets = []
+    for i in indices:
+        inv = IV[i]
+        facets.append([inv[k] for k in range(4)] + [-inv.sum(axis=0)])
+    good, total = 0, 0
+    for a in range(len(indices)):
+        for b in range(a + 1, len(indices)):
+            total += 1
+            for normal in NEG + facets[a] + facets[b]:
+                left, right = pts[a] @ normal, pts[b] @ normal
+                if int(left.max()) <= int(right.min()) or int(right.max()) <= int(left.min()):
+                    good += 1
+                    break
+    return good, total
+
+
+SOLSET = set(SOL)
+GEO_SEEN, GEO_REPS, GEO_PAIRS = set(), 0, 0
+GEO_OK = True
+for solution in SOL:
+    if solution in GEO_SEEN:
+        continue
+    GEO_REPS += 1
+    good, total = separated(solution)
+    GEO_PAIRS += total
+    GEO_OK = GEO_OK and good == total and len(solution) == 24
+    for perm in PP:
+        image = tuple(sorted(int(perm[i]) for i in solution))
+        GEO_OK = GEO_OK and image in SOLSET
+        GEO_SEEN.add(image)
 gate(LO == 6 and len(MINP) == 400 and NODE[0] == 502838 and NS == 15800
-     and FULL == set([24]) and NPO == 192, "base.floor",
+     and FULL == set([24]) and NPO == 192 and GEO_OK and GEO_REPS == 391
+     and GEO_PAIRS == 107916 and len(GEO_SEEN) == NS, "base.floor",
      "a complete search over the {0} pieces of least cost {1} visits {2} nodes and finds "
-     "{3} cuttings of {4} pieces each, between them using {5} pieces".format(
-         len(MINP), LO, NODE[0], NS, 24, NPO))
+     "{3} exact geometric cuttings of {4} pieces each, between them using {5} pieces; "
+     "{6} orbit representatives pass {7} exact pair-separation checks".format(
+         len(MINP), LO, NODE[0], NS, 24, NPO, GEO_REPS, GEO_PAIRS))
 
 CM = np.zeros(NPIECE, dtype=np.int64)
 for i in range(NPIECE):
@@ -228,7 +320,7 @@ gate([NMOVE[k] for k in SZC] == [46128, 0, 31968, 60096, 151704, 119808, 281376]
      and [NDIST[k] for k in SZG] == [120, 528, 1152, 4212, 6144, 25248], "move.size",
      "moves replacing four, five, six, seven, eight, nine and ten pieces number {0}, {1}, "
      "{2}, {3}, {4}, {5} and {6}, drawn from {7}, {8}, {9}, {10}, {11} and {12} distinct "
-     "exchanges; the {7} at four match the {7} regions the earlier cycle recut".format(
+     "exchanges in this independently reconstructed population".format(
          *([NMOVE[k] for k in SZC] + [NDIST[k] for k in SZG])))
 
 
@@ -480,7 +572,7 @@ gate(len(NAMED) == 3 and sorted(HITS.values()) == [2, 2, 2] and ONESIDE
      "there are {0} charges up to swapping the two sides, one keeping each of the four-, "
      "six- and seven-piece moves; the {1} of {2} that the six-keeping charge flips at "
      "seven, its {3} to {4} split, and the {3} side carrying all {5} rigid cuttings are "
-     "the numbers the earlier cycle measured".format(
+     "measured directly here".format(
          len(NAMED), 26880, NMOVE[7], 7704, 8096, CORE.size))
 
 J67 = rref(TK[7].values(), dict(TK[6]))
@@ -526,8 +618,7 @@ sec("the groups the smallest move leaves behind")
 gate(len(CLIST) == 349 and SZL == [1, 2, 4, 7, 236, 9320]
      and CNL == [144, 96, 36, 48, 24, 1], "comp.prof",
      "the smallest move leaves {0} groups, of sizes {1}, {2}, {3}, {4}, {5} and {6} with "
-     "{7}, {8}, {9}, {10}, {11} and {12} groups at each size; the {0} groups and the {7} "
-     "of size one are counts the earlier cycles measured".format(
+     "{7}, {8}, {9}, {10}, {11} and {12} groups at each size in the supplied population".format(
          len(CLIST), *(SZL + CNL)))
 
 CID = np.zeros(NS, dtype=np.int64)
@@ -571,8 +662,8 @@ O236 = [o for o in ORB if len(CLIST[o[0]]) == 236]
 OBIG = [o for o in ORB if len(CLIST[o[0]]) == 9320]
 gate(BROKE == 0 and len(ORB) == 14 and len(O236) == 1 and len(O236[0]) == 24
      and len(OBIG) == 1 and len(OBIG[0]) == 1, "comp.orb",
-     "no symmetry splits a group; the {0} groups fall into {1} orbits, a count the "
-     "earlier cycle measured, and the {2} of size {3} form a single orbit whose stabiliser"
+     "no supplied symmetry splits a group; the {0} groups fall into {1} orbits, and the "
+     "{2} of size {3} form a single orbit whose stabiliser"
      " has order {4}, while the largest group is held fixed by all {5}".format(
          len(CLIST), len(ORB), 24, 236, len(G) // len(O236[0]), len(G)))
 
@@ -581,7 +672,7 @@ ONEC = np.zeros(NS, dtype=np.uint8)
 ONEC[CLIST[O236[0][0]]] = 1
 MOVED = len(set(ONEC[p].tobytes() for p in PERMS))
 gate(FIX and MOVED == 24, "chg.fix",
-     "every one of the {0} charges is left where it is by all {1} symmetries of the cell, "
+     "every one of the {0} charges is left where it is by all {1} supplied symmetries, "
      "point by point, while the indicator of a single group of {2} cuttings is carried to "
      "{3} different functions".format(len(FUN), len(G), 236, MOVED))
 
@@ -597,4 +688,78 @@ gate(SUP == U236 and len(SUP) == 5664 and len(O236[0]) == 24 and CORE.size == 48
          len(O236[0]), len(SUP), NS, CORE.size))
 
 print("")
+print("per_element: checked — all 192 used simplex indicators and every enumerated exchange vector are resolved exactly over GF(2)")
+print("per_site: checked and not executed — the supplied one-cell cutting model contains no independently varying lattice-site field")
+print("per_mode: checked and not executed — no spectral or normal-mode decomposition belongs to this finite incidence theorem")
+print("per_block: checked — the complete supplied unit four-cube population of 15800 geometric cuttings is exhaustively resolved")
+print("lattice_wide: checked and not executed — no multi-cell, arbitrary-tick, boundary, continuum, or framework-selection extension is asserted")
+print("")
 print("TOTAL: PASS={0} FAIL={1}".format(PF[0], PF[1]))
+
+receipt = {
+    "schema": "physical-cell-cutting-charge-space-cycle736-v2",
+    "claim_type": "bounded_theorem",
+    "status": "pass" if PF[1] == 0 else "fail",
+    "runner_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+    "input_sha256": {path: file_sha256(path) for path in AUDIT_INPUT_PATHS},
+    "supplied_model": (
+        "one unit four-cube with three labelled spatial columns and one labelled tick "
+        "column, normalized-volume-one corner 4-simplices, four-coordinate L1 pair "
+        "charge, and the declared 48-element spatial-rotation/tick-flip action"
+    ),
+    "population": {
+        "unit_volume_pieces": NPIECE,
+        "minimum_cost": LO,
+        "minimum_pieces": len(MINP),
+        "search_nodes": NODE[0],
+        "geometric_cuttings": NS,
+        "pieces_per_cutting": 24,
+        "used_pieces": NPO,
+        "geometric_orbit_representatives": GEO_REPS,
+        "geometric_pair_checks": GEO_PAIRS,
+    },
+    "moves": {
+        "sizes": SZC,
+        "pair_counts": [NMOVE[k] for k in SZC],
+        "distinct_exchange_counts": [NDIST[k] for k in SZG],
+        "difference_span_ranks": [len(TK[k]) for k in SZG],
+        "odd_zero_certificate_sizes": [None if CERT[k] is None else len(CERT[k]) for k in SZG],
+    },
+    "responses": {
+        "population_span_rank": RKP,
+        "population_difference_rank": len(DALL),
+        "multiple_pattern_subsets": [[row[0], row[1]] for row in MULTI],
+        "smallest_move_weight_dimension": len(NUL),
+        "induced_charge_count": len(FUN),
+        "induced_charge_rank": len(BAS),
+        "constant_charge_count": FLAT,
+        "charge_table": {
+            name: {
+                "split": [TAB[name][0], TAB[name][1]],
+                "rigid_side": TAB[name][2],
+                "flip_counts": TAB[name][3],
+            }
+            for name in ("four", "six", "seven")
+        },
+        "joint_six_seven_weight_dimension": len(NUL67),
+    },
+    "components": {
+        "count": len(CLIST),
+        "size_profile": {str(size): PROF[size] for size in SZL},
+        "symmetry_orbits": len(ORB),
+        "support_component_size": 236,
+        "support_component_count": len(O236[0]),
+        "support_cuttings": len(SUP),
+        "rigid_cuttings": int(CORE.size),
+    },
+    "no_go_discipline": {
+        "status": "PASS" if PF[1] == 0 else "FAIL",
+        "negative_assertion_class": "derived_no_go_boundary",
+        "checklist": "No-Go Discipline Gate section in the Cycle 736 note",
+        "n5_certificate": "five resolution lines in primary stdout and canonical cache",
+    },
+    "gates": {"pass": PF[0], "fail": PF[1]},
+}
+RECEIPT_PATH.write_text(json.dumps(receipt, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+print("RECEIPT " + json.dumps(receipt, sort_keys=True, separators=(",", ":")))
+sys.exit(1 if PF[1] else 0)

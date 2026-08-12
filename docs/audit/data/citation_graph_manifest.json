@@ -1,6 +1,6 @@
 {
- "edge_count": 15701,
- "node_count": 5491,
+ "edge_count": 15707,
+ "node_count": 5492,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -417,6 +417,10 @@
   "admissibility_ising_action_record_readout_pair_resource_response_axiom_boundary_bounded_theorem_note_2026-08-10": {
    "deps_hash": "f7553c404c9a",
    "out_degree": 5
+  },
+  "admissibility_joint_record_gravity_law_five_control_axiom_cut_gate_bounded_theorem_note_2026-08-11": {
+   "deps_hash": "5bb0d160fd56",
+   "out_degree": 6
   },
   "admissibility_local_geometry_record_bond_transfer_reflection_response_connection_boundary_bounded_theorem_note_2026-08-11": {
    "deps_hash": "aeab719a894c",

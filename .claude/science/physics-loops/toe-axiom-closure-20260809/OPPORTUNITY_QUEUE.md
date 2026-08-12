@@ -413,3 +413,20 @@ Hessians, scalar coefficient grids, source couplings, finite momentum counts,
 or precision tightening. Re-check the portfolio after the dynamical-source
 identity and at most every three hours; if its required terms are not licensed,
 state the exact axiom datum rather than smuggling it into a repair.
+
+## Post-Block-59 Priority Refresh
+
+| Rank | Target | Exact next witness | Why now |
+|---:|---|---|---|
+| 1 | analytic/generic-momentum infrared Ward law | derive the local small-`k` tensor expansion or a uniform refinement bound in an explicit norm, and execute one genuinely nonaxial hostile momentum/source family | the de-aliased defect is approximately `eta^2 k^3`, one power softer than the target equation; proving or breaking that separation is now the highest-discrimination gravity test |
+| 2 | physical observable and state quotient | project the full soft Schur sector against the two TT observables and conserved Record source, proving decoupling or exposing contamination with a convergence rate | a small Ward norm is not sufficient if pseudo-modes survive in the physical state or update |
+| 3 | nonlinear Lorentzian/increasing-region realization | bind the surviving quotient to the Block-53 causal macro update and prove source constraint propagation, positivity, and refinement compatibility | this is the first step that could retire a scored gravity/Records obligation after ranks one and two succeed |
+| 4 | exact microscopic repair fallback | construct the dynamical-source mixed Noether cancellation or an improved/perfect/Pachner law only if rank one or two fails, or if exact cutoff symmetry is explicitly adopted | Block 59 makes automatic action replacement lower expected value but leaves exact microscopic closure live |
+| 5 | Root-A/B law selection | attach the successful gravity contract to the complete `M_2(C)` Record/history/state interface | still required for autonomous TOE closure, but premature before the gravity contract is chosen |
+
+Efficiency gate: no more period, coupling, coefficient, or precision scans.
+Every deep block must either establish a uniform order, break it on a hostile
+family, prove physical decoupling, or close nonlinear Lorentzian propagation.
+Re-score the portfolio at most every three hours and immediately after any of
+those decisions. Route progress is reported separately from TOE percentage
+movement.

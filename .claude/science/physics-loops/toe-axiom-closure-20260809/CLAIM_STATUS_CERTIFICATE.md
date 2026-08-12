@@ -1902,3 +1902,33 @@ lines are in the landing primary cache.
   full-`Z^3` result, law selection, axiom amendment, audit verdict, or TOE
   percentage movement. The map is unchanged for at least 55 hours. Fresh
   N1--N8 and all five N5 resolutions land; no `review-loop` is used.
+
+## Block 59 Claim Status
+
+- Harmonic correction: at `L=3`, the quadratic harmonic aliases the source
+  harmonic because `2k=-k`. For every executed `L>3`, the Ward residual is
+  concentrated at the distinct `2k` harmonic by more than two orders of
+  magnitude over every competitor.
+- Complete reduced branches: both sources solve all `11L-6` nongauge
+  equations on `L=3,5,7,9,11`; the rank identity
+  `(11L-6)+(4L-4)+10=15L` is exact, projected residuals stay below
+  `8.1e-13`, all lengths are positive, and metric purity improves.
+- Infrared result: the independent `L=19,25,33,49` weak-amplitude tail fits
+  momentum powers `2.978573/2.974311`, with `W/(eta^2 k^3)` equal to
+  `0.373308/0.438785` at `L=49`. Fourfold amplitude controls preserve the
+  normalization.
+- Pseudo-constraint result: all executed displacement Schur directions remain
+  finite-spacing lifted and mixed-sign, but maximum normalized extrema fall
+  `0.176688 -> 0.140878` and `0.139431 -> 0.105053` from `L=3` to `L=5`.
+  No Euclidean inertia is interpreted as a physical ghost.
+- Evidence: primary/cache `PASS=8 FAIL=0`; independent Schur companion/cache
+  `PASS=4 FAIL=0`; four targeted mutations fail exactly one check each; graph
+  `5,505/15,771`, out-degree four. Vocabulary, strict lint, premise purity,
+  model-family normalization, Python/cache, claim typing, whitespace, N5, and
+  enforced graph/link invariants pass. Science commit is `a96099e077`.
+- Scope: significant candidate and route progress, but zero TOE percentage
+  movement. This is not an all-L or generic-momentum theorem, exact continuum
+  Noether identity, observable-decoupling result, full-`Z^3` construction,
+  nonlinear Lorentzian theorem, selected law, axiom amendment, or audit
+  verdict. The map is unchanged for at least 57 hours; fresh N1--N8 lands and
+  no `review-loop` is used.

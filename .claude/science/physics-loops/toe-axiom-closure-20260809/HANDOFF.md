@@ -2298,3 +2298,56 @@ vectors. A cancellation is genuine gravity/Record interface progress. A clean
 failure retires that normalized completion family and promotes an
 improved/perfect or Pachner/tent construction. More couplings, momenta,
 coefficient grids, and affine-surrogate spectra are low leverage.
+
+## Block 59 Handoff
+
+Block 59 is local on branch
+`physics-loop/toe-axiom-closure-block59-record-source-schur-20260812`, stacked
+exactly on Block-58 delivery head `61303e8d93`. Science commit is
+`a96099e077`.
+
+The period-three result was real but not a reliable refinement diagnostic:
+for `k=2 pi/3`, its generated quadratic harmonic satisfies `2k=-k` modulo
+`2 pi`. The replacement runner keeps all `15L` edge variables and every
+Fourier harmonic on odd periods. Only ten average metric moduli are fixed; the
+remaining coordinates split exactly into `11L-6` nongauge and `4L-4`
+displacement directions.
+
+Both the static density and conditional null-Record sources solve on
+`L=3,5,7,9,11`, with projected residual below `8.1e-13`, positive lengths,
+and increasingly metric-pure response. At every `L>3`, the Ward force moves
+to the distinct second harmonic. Its norm divided by `eta^2` falls from
+`3.033635 -> 0.066601` and `1.043652 -> 0.075184`.
+
+An independent symmetric weak-amplitude calculation on
+`L=19,25,33,49` fits powers `2.978573/2.974311`; the tail values of
+`W/(eta^2 k^3)` are `0.373308/0.438785`. Fourfold amplitude controls are
+stable. The wanted sourced graviton equation begins at `O(eta k^2)`, so the
+measured Ward defect is one momentum order softer on this family.
+
+The independent full-harmonic Schur companion retains every displacement
+mode at `L=3,5`. All remain finite-spacing lifted with inertia `5-/3+` per
+positive Fourier representative, while maximum normalized lifts decrease by
+roughly twenty percent. This supports initial softening only; it is not an
+all-period bound or a physical ghost statement.
+
+Primary/cache is `PASS=8 FAIL=0` in 108.2 seconds; companion/cache is
+`PASS=4 FAIL=0` in 64.9 seconds. Four named mutations each fail one check.
+Citation registration is `5,505/15,771`, out-degree four. Vocabulary, strict
+lint, premise purity, model-family normalization, Python/cache, claim typing,
+whitespace, N1--N8/N5, and enforced graph/link gates pass. No canonical axiom,
+fixed TOE percentage, audit verdict, or `review-loop` changes.
+
+This is significant route progress but still zero TOE score movement. Fixed
+Regge remains rejected as an exact microscopic first-class law and returns as
+an emergent infrared candidate. The next qualifying work is an analytic or
+uniform small-`k` bound with a hostile nonaxial momentum control, followed by
+two-TT/Record observable decoupling. Do not run another size scan. Exact
+dynamical-source cancellation and improved/perfect or Pachner/tent dynamics
+are fallbacks if the infrared route fails or microscopic exactness is adopted.
+
+The corresponding axiom issue is now precise: an attached gravity law must
+choose either exact microscopic Noether symmetry or a controlled emergent
+refinement contract specifying a norm, refinement map, source class,
+observable/state quotient, and convergence rate. Approximate-covariance prose
+without those data cannot close a lane.

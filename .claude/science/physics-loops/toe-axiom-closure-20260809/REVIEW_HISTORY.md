@@ -2627,3 +2627,39 @@ instance or Fourier census.
   exact Block-57 delivery `00d71b0b7e`. The TOE map is unchanged for at least
   55 hours. No canonical axiom, fixed percentage, audit verdict, or
   `review-loop` changes.
+
+## Block 59 Construction And Adversarial Record
+
+- Identified the period-three alias `2k=-k (mod 2 pi)`, which prevented Block
+  58 from separating the generated quadratic Ward harmonic from the source.
+- Built an odd-period parameterization retaining every `15L` edge variable
+  and harmonic. The exact split is `11L-6` nongauge, `4L-4` displacement,
+  and ten average-metric directions.
+- Solved both conserved sources on `L=3,5,7,9,11`; maximum projected residual
+  is `8.10e-13`, all lengths exceed `0.9999`, and nonmetric/metric response
+  falls `0.357295 -> 0.036400` and `0.093337 -> 0.006825`.
+- Resolved the Ward force at the distinct `2k` harmonic for every `L>3`.
+  `W/eta^2` falls `3.033635 -> 0.066601` and
+  `1.043652 -> 0.075184`, with the dominant harmonic more than one hundred
+  times every competitor.
+- Independently evaluated the weak-amplitude jet on `L=19,25,33,49`.
+  Fitted powers are `2.978573/2.974311`, tail coefficients
+  `0.373308/0.438785`, and fourfold amplitude controls are stable.
+- Split the expensive Hessian calculation into an independent companion.
+  Full-harmonic Schur blocks retain `5-/3+` inertia per positive mode, while
+  maximum normalized extrema decrease from `0.176688 -> 0.140878` and
+  `0.139431 -> 0.105053` between `L=3,5`.
+- Harmonic-alias, infrared-power, note-boundary, and Schur-softening mutations
+  each exit nonzero with one named failure. Fresh N1--N8 rejects both a
+  universal Regge success and a gravity no-go while preserving exact and
+  emergent contracts.
+- Primary/cache is `PASS=8 FAIL=0` in 108.2 seconds; companion/cache is
+  `PASS=4 FAIL=0` in 64.9 seconds. Citation registration is
+  `5,505/15,771`, out-degree four. Vocabulary, strict lint, premise purity,
+  model-family normalization, Python/cache, claim typing, whitespace,
+  forensic N5, and enforced graph/link invariants pass.
+- Science commit is `a96099e077`, on exact Block-58 delivery `61303e8d93`.
+  Fixed Regge returns as an emergent-IR candidate but remains nonexact at
+  finite spacing. This is significant route progress and zero TOE percentage
+  movement; the map is unchanged for at least 57 hours. No canonical axiom,
+  audit verdict, or `review-loop` changes.

@@ -1490,3 +1490,32 @@ complete conditional nonlinear compact solution:
   the same-order joint Noether identity and demand cancellation of the two
   displayed Ward vectors; if that family fails, escalate directly to an
   improved/perfect or Pachner/tent law, not another coefficient or grid scan
+
+## Block 59 Artifact Plan And Result
+
+- source note: register the genuine all-edge/all-harmonic odd-period family,
+  the period-three harmonic alias, the fixed-metric-amplitude normalization,
+  the independent weak-amplitude tail, and a complete N1--N8 scope packet
+- primary runner/cache: solve both sources on `L=3,5,7,9,11`, retain all
+  `15L` edge variables, split `11L-6` nongauge plus `4L-4` displacement plus
+  ten average-metric directions, and independently evaluate the
+  `L=19,25,33,49` leading jet; achieved `PASS=8 FAIL=0` in 108.2 seconds
+- Schur companion/cache: rebuild the full raw complex-step Hessian and four
+  orthonormal full-harmonic Schur complements at `L=3,5`; achieved
+  `PASS=4 FAIL=0` in 64.9 seconds
+- decisive result: the de-aliased Ward defect is quadratic in amplitude and
+  fits powers `2.978573/2.974311` in momentum; its `k^3`-normalized tail is
+  `0.373308/0.438785`. Initial normalized Schur extrema also decrease. This
+  restores fixed Regge as an emergent-IR candidate but does not restore exact
+  finite-spacing first-class symmetry
+- adversarial controls: harmonic-alias, infrared-power, note-boundary, and
+  Schur-softening mutations each exit nonzero with exactly one failed check;
+  fresh N1--N8 preserves generic-momentum, full-`Z^3`, observable-quotient,
+  dynamical-source, improved/perfect, Pachner/tent, and Lorentzian routes
+- current evidence: science commit `a96099e077`; graph `5,505/15,771`,
+  out-degree four; vocabulary, strict lint, premise purity, model-family
+  normalization, Python/cache, claim typing, whitespace, N5, and enforced
+  graph/link checks pass
+- score and next artifact: the fixed percentage map remains unchanged for at
+  least 57 hours. Derive or falsify the local/generic-momentum `k^3` law and
+  its two-TT observable decoupling; no further size scan qualifies

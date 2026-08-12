@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/physical_body_diagonal_frame_functional_transversal_law_cycle717_2026_08_02.py
-runner_sha256: d65e5ab66836547b1078a1faac0bd55fee7c65161f78c410038e18c397887a89
+runner_sha256: 216af875a038be78251b1f3537fdf91802f074c26caa3b79382fdaae616abb7e
 input_fingerprint_sha256: f16228dfa22ac9810d4cc316446c432694b1b6d39236992c2bac39c9cf2f5eab
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 7.54
+elapsed_sec: 6.81
 status: ok
 ----- stdout -----
 c717 finite body-diagonal action and transversal probe census
@@ -21,7 +21,7 @@ PASS g2_minimal_covering_are_regular the four minimal covering subgroups act sim
 PASS g2_minimum_transitive_order_is_four no subgroup of order 1, 2, 3 or 6 is transitive, so the minimum of four is forced
 PASS g2_every_covering_contains_a_regular every transitive subgroup contains a regular one
 -- the census is derived --
-PASS g3_two_constructions_agree covering-built and transitive-built families coincide, 231 members
+PASS g3_covering_and_regular_constructions_agree all-covering and four-regular constructions coincide, 231 members
 PASS g3_joins_of_the_regular_subgroups pairwise joins [8, 8, 8, 24, 24, 24], triples [24, 24, 24, 24], all four 24
 PASS g3_inclusion_and_exclusion_gives_the_census 252 - 24 + 4 - 1 = 231, matching the direct construction
 PASS g3_size_ladder family by size [(4, 24), (8, 51), (12, 80), (16, 51), (20, 24), (24, 1)]

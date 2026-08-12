@@ -1,5 +1,4 @@
 {
-  "blind_transversals": 24,
   "body_diagonals": [
     [
       1,
@@ -70,6 +69,10 @@
       "detail": "no subgroup of order 1, 2, 3 or 6 is transitive, so the minimum of four is forced",
       "pass": true
     },
+    "g3_covering_and_regular_constructions_agree": {
+      "detail": "all-covering and four-regular constructions coincide, 231 members",
+      "pass": true
+    },
     "g3_family_is_complement_closed": {
       "detail": "an involution on the 230 proper members, so the ladder reads the same in both directions",
       "pass": true
@@ -88,10 +91,6 @@
     },
     "g3_size_ladder": {
       "detail": "family by size [(4, 24), (8, 51), (12, 80), (16, 51), (20, 24), (24, 1)]",
-      "pass": true
-    },
-    "g3_two_constructions_agree": {
-      "detail": "covering-built and transitive-built families coincide, 231 members",
       "pass": true
     },
     "g4_L3_dof_and_scale": {
@@ -323,6 +322,7 @@
     }
   },
   "pass": 52,
+  "regular_coset_transversals": 24,
   "runner": "physical_body_diagonal_frame_functional_transversal_law_cycle717_2026_08_02.py",
   "sextet": [
     1,

@@ -225,6 +225,13 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
         "scripts/physical_block_cost_interval_lift_obstruction_cycle729_"
         "independent_check_2026_08_04.py",
     ],
+    # Cycle 730's checker independently rebuilds the piece/sample orbit action,
+    # integer endpoint certificates, geometric realization witnesses, orphan
+    # certificates, and reverse-order ceiling exhaustions.
+    "physical_local_extremality_rule_cell_cycle730_note_2026-08-04": [
+        "scripts/physical_local_extremality_rule_cell_cycle730_"
+        "independent_check_2026_08_04.py",
+    ],
     "b4_clock_relation_run_cycle879_bounded_theorem_note_2026-07-28": [
         "scripts/frontier_cycle879_b4_relation_independent_check_2026_07_28.py",
     ],

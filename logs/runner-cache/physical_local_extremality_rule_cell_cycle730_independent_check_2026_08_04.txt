@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/physical_local_extremality_rule_cell_cycle730_independent_check_2026_08_04.py
+runner_sha256: 504838601c6c74a2b5aba712041c169d0381a678d3d460127f0adedf8e922f60
+input_fingerprint_sha256: 094971b421122eb6a15ce7a410e5e47d05824c9f35872103b10a48a45b42f2d0
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 36.59
+status: ok
+----- stdout -----
+PASS all certificate literals parsed                      ['CEIL_D', 'CEIL_U', 'CEIL_Z', 'FLOOR_D', 'FLOOR_U', 'FLOOR_Z']
+PASS independent piece and charge census                  volume [(0, 1360), (1, 2672), (2, 320), (3, 16)]; pieces 2672
+PASS independent 48-map orbit reconstruction              piece orbits 57 of sizes [16, 48]
+PASS independent generic-sample reconstruction            points 2736, boundary incidences 0
+PASS independent exact zero-gap certificates              tight pieces floor 2416, ceiling 1040
+PASS independent floor realization witnesses              20 geometric witnesses cover 38 orbits
+PASS independent ceiling realization witnesses            7 geometric witnesses cover 21 orbits
+PASS independent floor orphan certificates                13 orbit certificates
+PASS independent reverse-order ceiling exhaustion         {10: ('absent', 17215892), 9: ('absent', 19744438)}
+PASS hostile floor-weight mutation is rejected            least mutated slack -8
+PASS hostile ceiling-weight mutation is rejected          breaking mutation (0, -1, -12)
+PASS hostile realization-witness mutation is rejected     excluded forced piece substituted into a floor witness
+PASS hostile orphan-point mutation is rejected            a noncertificate point leaves a compatible carrier
+PASS hostile charge-threshold mutation is rejected        mutated charge range [0, 1, 2]
+PASS support partitions are exact and disjoint            {'floor': (38, 13, 51), 'ceiling': (21, 2, 23)}
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

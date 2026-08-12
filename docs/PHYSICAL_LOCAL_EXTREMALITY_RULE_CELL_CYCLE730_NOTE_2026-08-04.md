@@ -1,195 +1,265 @@
-# Extremal adjacency cost of the single cell is a condition on one piece at a time, and at the floor its support is settled completely
+# Per-piece zero-slack criterion and finite endpoint-support census — Cycle 730
 
-Status: unaudited source note. Cycle 730 of the emergent-geometry lane.
+Date: 2026-08-04
 
-## What this settles
+Claim type: bounded_theorem
 
-Cycle 725 measured the adjacency cost of dissecting one cell of the doubled lattice into
-minimal pieces, and found the interval 108 to 128 with both ends attained. That is a
-statement about whole dissections. This cycle asks what the two zero-gap certificates say
-about a *single* piece, and finds that they turn both ends of the interval into a
-membership test applied to one piece at a time.
+Authority: none. Audit: unset. Constitutional effect: none. No new axiom or
+primitive is proposed or adopted. Audit status is set only by the independent
+audit lane, and effective status is pipeline-derived.
 
-Write the floor certificate as integers on point orbits with a denominator. For any
-dissection of cost C, the per-piece slacks sum to exactly the denominator times C minus
-108. At a zero-gap certificate that identity has no room left in it: a dissection attains
-108 exactly when every one of its pieces carries slack zero, that is, exactly when every
-piece belongs to one explicitly listed set. Cheapness needs no coordination between the
-pieces of a dissection; it is a property each piece has or does not have on its own. The
-same argument runs at the ceiling with the ceiling certificate.
+Primary runner:
+`scripts/physical_local_extremality_rule_cell_cycle730_2026_08_04.py`
+(47 PASS / 0 FAIL; deterministic exact arithmetic; fails closed).
 
-Equivalently, a zero-gap floor certificate assigns each piece a number that sums to
-exactly 108 over *every* dissection whatever its cost, and never exceeds that piece's own
-adjacency charge. The excess cost of a dissection is then a sum of nonnegative local
-defects, one per piece, vanishing precisely on the rule.
+Independent checker:
+`scripts/physical_local_extremality_rule_cell_cycle730_independent_check_2026_08_04.py`
+(15 PASS / 0 FAIL; the checker does not import or execute the primary).
 
-Three further things follow, and all three are measured here.
+## Supplied model and exact scope
 
-1. The rule is necessary and not sufficient. Of the 51 orbits in the floor rule, 38 occur
-   in dissections drawn from that rule and 13 cannot; at the ceiling, 21 of 23 occur and 2
-   cannot. The local condition over-approximates the extremal support, strictly.
+This is a finite theorem about the supplied one-cell, one-tick corner-simplex
+model declared by [Cycle 725](PHYSICAL_EXACT_ADJACENCY_DISSECTION_BRACKET_CYCLE725_NOTE_2026-08-03.md).
+The box is `{0,1}^4`; the first three coordinates are spatial and the fourth is
+the tick coordinate. A piece is the convex hull of five corners with normalized
+lattice four-volume one, and a dissection is a family of 24 such pieces with
+disjoint interiors that fills the box. The declared adjacency charge of a piece
+counts corner pairs whose spatial `L1` separation exceeds one.
 
-2. At the floor the exclusions are themselves local. Force one rule piece in, delete every
-   rule piece meeting it, and look for a sample point with no surviving piece over it.
-   That single deduction step rules out 624 of the 2416 floor-rule pieces, in 13 orbits,
-   every one of them at the first round, with no branching and no dependence on the order
-   in which points are visited. The inference is short: a dissection of cost 108 has every
-   piece on the rule by the slack identity, and it induces an exact cover of the sample
-   points because none of them sits on a boundary, so a piece the step strands lies in no
-   cost-108 dissection at all. The 13 orbits it rules out and the 38 the enumeration
-   exhibits are disjoint, and together they are the whole rule, so the refutation route
-   and the realization route control each other.
+The [Minimal Axioms](MINIMAL_AXIOMS_2026-06-29.md) supply only the spatial
+`Z^3` nearest-neighbour grading and proper cubic rotations. The registered
+[kinetic-isotropy primitive](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md)
+supplies only equal tick/edge graining. Neither selects corner-simplex pieces,
+the dissection domain, the charge functional, a physical assembly cell, or a
+tick--Admissibility realization.
 
-3. At the ceiling the same step returns no verdict on any of the 1040 pieces, and the two
-   ceiling exclusions rest on the whole search instead. Minimality is local both in the
-   bound and in the exclusion of pieces that never participate; maximality here is local
-   in the bound alone.
+Within this supplied model, Cycle 725 proves that minimal-piece dissection cost
+lies in `[108,128]`, with both endpoints attained. The Cycle 730 runner also
+reconstructs the piece census, charge, certificates, and endpoint witnesses;
+the Cycle 725 receipt is separately hash-bound to prevent the shared model and
+endpoint context from drifting silently.
 
-The reason this is worth recording beyond the dissection problem is the shape of the
-statement. The framework's admissibility content in
-[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) is a single fixed local
-rule that selects, site by site, which local possibilities remain available. An extremal
-adjacency cost that reduces to per-piece membership in a fixed list has the same logical
-form: a global optimum recovered as a local availability test, with the certificate
-playing the part of the fixed rule.
+## Exact theorem
 
-## Objects
+For a minimal piece `p`, let `M[p,o]` count the generic interior sample points
+of point orbit `o` inside `p`. For the floor certificate, integers `u_o`, `Z`,
+and positive denominator `D=24` satisfy
 
-The cell is the unit 4-cube spanned by three lattice directions and one tick, with 16
-corners. A piece is a five-corner subset of unit content; there are 4368 five-subsets and
-2672 of them have volume 1/24, so a dissection of the cell uses exactly 24 pieces. The
-nonzero scaled volumes take the values 1, 2 and 3, so 1/24 is the floor and no coarser
-piece can be substituted.
+```text
+sum_o M[p,o] u_o + Z <= D charge(p)
+```
 
-The cost of a piece is its adjacency charge: the number of corner pairs whose separation
-in the three spatial directions exceeds one step. Over the 2672 minimal pieces the charge
-spectrum is 3 with multiplicity 64, 4 with 384, 5 with 1152, 6 with 768 and 7 with 304.
-Charging every piece its cheapest or dearest value gives only the interval 72 to 168 by
-counting, against the measured 108 to 128, so the interval is not a counting fact.
+on all 2672 pieces. Define the nonnegative floor slack
 
-The cell keeps all 24 proper rotations, and with the tick flip the symmetry group has 48
-elements. The 2672 pieces fall into 57 orbits of sizes 16 and 48, and adjacency charge is
-constant on each orbit, so the certificate program can be written one row per orbit.
+```text
+s_floor(p) = D charge(p) - sum_o M[p,o] u_o - Z.
+```
 
-## Method: certificates and witnesses, no solver in the artifact
+Every sample point lies in the interior of exactly one piece of any valid
+dissection. Hence, for any valid dissection `T` of cost `C`,
 
-The bound is carried by sample points, not by faces. Weights are chosen past the
-barycentric bound of the cell -- corner coordinates are bounded by 3 and the weight total
-is 12810 -- which makes the 2736 sample points generic: no two collide under the group,
-and 0 of them lie on the boundary of any piece. Because no sample point is on a boundary,
-every point lies strictly inside exactly one piece of any dissection, so a per-piece
-inequality summed over a dissection gives a valid bound with no symmetry assumption at
-all. Symmetry only shortens the program.
+```text
+sum_{p in T} s_floor(p) = 24 (C - 108).
+```
 
-A floor certificate is a vector of integers on point orbits together with a denominator,
-such that on every one of the 2672 pieces the weighted point count does not exceed the
-denominator times that piece's charge. Summing over a dissection gives the bound. The
-ceiling certificate reverses the inequality. Both are checked here in integer arithmetic
-over every piece, and the tightest row is recomputed in unbounded integers to confirm no
-overflow.
+The ceiling certificate reverses the inequality and has denominator six, so
 
-Dissections are produced by exact cover over sample points, with no cost objective
-anywhere in the search: the cost of what comes back is read off afterwards. Refutations
-use two routes, both deterministic and neither a solver -- a node-capped backtracking
-cover search, and the single deduction step described above. Realized counts from search
-are lower bounds on what occurs; refutations are conclusive.
+```text
+sum_{p in T} s_ceiling(p) = 6 (128 - C).
+```
 
-## Results
+All slacks are nonnegative. Therefore, conditional on `T` already being a
+valid dissection:
 
-**Two zero-gap certificates.** The floor certificate has denominator 24 and value 2592,
-which is exactly 108 times 24, so the cost is at least 108. The ceiling certificate has
-denominator 6 and value 768, exactly 128 times 6, so the cost is at most 128. Both are
-valid on all 2672 pieces and both round to the measured interval. The floor certificate
-survives rescaling by 2, 3 and 5 -- denominators 48, 72 and 120 give the same bound --
-confirming that the denominator is a carrier, not a claim.
+- `C=108` exactly when every piece of `T` has zero floor slack;
+- `C=128` exactly when every piece of `T` has zero ceiling slack.
 
-**Both certificates are discriminating.** Raising a single live weight on a tight row
-makes the floor inequality fail somewhere, and adding a single point to a live column of a
-tight row makes that row violate its own bound. Neither gate holds by construction.
+This is an additive per-piece endpoint-equality criterion. It does **not** make
+realizability piecewise or coordination-free: compatibility, disjointness, and
+coverage remain global conditions on a dissection.
 
-**The rule.** 2416 pieces sit on a tight floor row and 1040 on a tight ceiling row; 784
-are on both and none is on neither. Rule membership never splits an orbit, as the
-certificate is orbit-indexed. The floor rule spans 51 orbits and the ceiling rule 23. The
-6 orbits the floor rule excludes, 256 pieces, are two recognisable shapes: 4 of them carry
-a pure-tick edge and 2 carry a body diagonal.
+## Finite support census
 
-**The locality statement, on real dissections.** With no cost objective used anywhere,
-exact cover restricted to the floor-rule pool returns a dissection of 24 pieces at cost
-108; restricted to the ceiling-rule pool, cost 128; unrestricted, cost 114. The slack
-identity holds exactly on all three: floor slack 0 and ceiling slack 120 at cost 108,
-480 and 0 at cost 128, 144 and 84 at cost 114. The 24 monotone corner paths dissect the
-cell at cost 108 with every piece on the rule. The sharpest witness is a dissection at
-cost 110 with exactly one off-rule piece, whose own slack is 48, which is 24 times the
-2 units of excess -- the whole cost excess is carried by that one piece.
+The floor zero-slack set contains 2416 pieces in 51 symmetry orbits. The
+ceiling zero-slack set contains 1040 pieces in 23 orbits; 784 pieces are in
+both sets and none is in neither.
 
-**Necessary, not sufficient.** Drawing 200000 dissections from the floor rule uses 38 of
-its 51 orbits; from the ceiling rule, 21 of its 23. Forcing a piece of 9 floor orbits, 432
-pieces, leaves the whole cover search empty, and likewise for 2 ceiling orbits, 96 pieces.
-The same search is not vacuously empty: forcing each of the 24 pieces of an exhibited
-floor dissection in turn returns a dissection at cost 108 in 22 of the 24 cases and never
-returns the empty answer, and at the ceiling all 24 return a dissection at cost 128.
+The primary inspects 200000 sample exact covers at each endpoint. It does not
+equate a sample exact cover with a geometric dissection. Whenever a cover adds
+a previously unseen orbit, the runner separately checks all 276 piece pairs
+for an exhibited separating direction and checks volume and full sample
+coverage. It stores a validated 24-piece witness for every orbit classified as
+realized. The result is:
 
-**The single deduction step.** Over the whole floor rule it rules out 624 of 2416 pieces
-in 13 orbits, all at the first round. Those 13 orbits plus the 38 the enumeration exhibits
-are the whole 51-orbit rule, with no overlap and no gap, and the split never cuts an
-orbit. Over the whole ceiling rule it rules out 0 of 1040.
+- floor: 38 realized orbits and 13 excluded orbits;
+- ceiling: 21 realized orbits and 2 excluded orbits.
 
-**The witness is nameable.** For the first floor piece the step refutes, the stranded
-sample point is exhibited: 76 rule pieces contain it, all 76 overlap the forced piece, and
-the forced piece does not contain it -- so once that piece is in, the point cannot be
-covered. Exactly one piece of the already-exhibited stencil dissection contains the same
-point, so the point is perfectly coverable in general; it is the forcing that strands it.
+At the floor, every piece in the 13 excluded orbits has a one-step
+sample-cover orphan certificate. Force the piece, remove every zero-slack piece
+sharing an interior sample point with it, and one uncovered sample point has no
+remaining candidate. This excludes 624 pieces, all in the first round. The
+receipt stores one forced-piece/orphan-point certificate per orbit, while the
+runner checks all 624 pieces.
 
-**Both supports are settled.** At the floor, 38 of 51 orbits occur and the other 13
-cannot, with none left open. At the ceiling, 21 of 23 occur and the other 2 cannot.
+At the ceiling, the same one-step test excludes no piece. The two excluded
+orbits instead have independently replayable exhaustive forced-cover searches.
+The primary reports and stores the visited-node counts and fails if the search
+hits its 20000000-node cap. The independent checker reruns these searches with
+a different point-selection order.
 
-## Independent cross-checks performed
+The classification is thus exact only for the supplied finite model and these
+two endpoint zero-slack sets. “Excluded” means that no valid dissection at the
+corresponding endpoint contains the piece. It does not exclude the piece from
+non-extremal dissections or from another cell/dissection model.
 
-- Every headline number was recomputed by a second route that differs from the runner's at
-  each step -- pieces by determinant sign rather than by stored inverse, orbits by
-  generator closure rather than by the stored labelling, containment by integer facet
-  half-spaces rather than by barycentric coordinates, and cost by spatial Hamming distance
-  rather than by restricted L1 separation. All agreed, with no disagreement recorded.
-- The witness above was re-derived entirely from facet half-spaces, with the stencil
-  rebuilt from the 24 monotone corner paths rather than imported: the same 76 containing
-  pieces, the same complete overlap, the same excluded forced piece, and exactly one
-  stencil piece over the point. The two containment routes agree piece for piece.
-- Overlaps in that witness are certified by a sample point strictly interior to both
-  pieces, which proves overlap outright; a failed separating-hyperplane search would only
-  have been corroboration, and was run separately as such.
-- The cover search was re-run under three unrelated point orders. No order ever produced a
-  contradicting verdict; disagreements between orders are only settled against unsettled.
-- Carve-out, named for the record: the recorded output settles 9 of the 13 refuted floor
-  orbits by whole search inside the artifact. The remaining 4 were settled the same way
-  under two unrelated point orders outside the artifact; those runs are not part of the
-  recorded output, and inside the artifact those 4 orbits rest on the deduction step.
-- The certificates were re-derived at three rescalings and the tightest row recomputed in
-  unbounded integers.
+## Additional exact checks
 
-## Boundary and honest read
+- There are 4368 five-corner subsets, 2672 normalized-volume-one pieces, and
+  nonzero normalized volumes are `1,2,3`.
+- Piece charge has spectrum `3:64, 4:384, 5:1152, 6:768, 7:304`.
+- The supplied box action used here has 24 proper spatial rotations and the
+  independent tick flip, giving 48 maps and 57 piece orbits of sizes 16 or 48.
+- The generic sample has 2736 points, no orbit collisions, and no incidence on
+  any piece boundary.
+- The floor and ceiling certificates have values `2592=24*108` and
+  `768=6*128` and are checked on all pieces with integer arithmetic.
+- A monotone-path dissection attains 108. A separate dissection with one
+  positive-floor-slack piece has cost 110 and slack `48=24*(110-108)`.
 
-- The deduction step is a floor phenomenon here. It returns no verdict at the ceiling, so
-  the two ceiling exclusions rest on the whole search route alone. That asymmetry is a
-  measured result of this cycle, not a limitation of effort.
-- Realized-orbit counts from enumeration are budget-dependent lower bounds. Raising the
-  budget can only raise them. The refutations are not budget-dependent in the same way:
-  the deduction step is order-free and terminates in one round.
-- The rule is a strict over-approximation of the extremal support at both ends, so
-  membership in it certifies nothing about a single piece beyond eligibility.
-- The certificate denominator is a carrier, not a claim. Nothing here says 24 or 6 is the
-  smallest denominator that works.
-- Sample points certify the bound and the covers; they are not a proof device for
-  regularity, face-to-face structure, or any statement about the block. This cycle
-  measures the single cell.
-- The locality statement is about this cost function on this object. It is offered as a
-  structural echo of the admissibility form, not as a derivation of it.
+## Proof boundary
+
+Proof-obligation disposition: **CLOSED for the stated finite conditional
+domain**. The certificate identities, geometric witnesses, and exclusion
+certificates discharge every leaf of the finite theorem. The disposition is
+**CONDITIONAL for any physical interpretation**, because the corner-simplex
+model and charge are supplied rather than selected by the framework.
+
+The result does not derive or assert:
+
+- a framework Admissibility rule or an identification with that rule;
+- a physical tick--Admissibility realization or physical cell selection;
+- a theorem for nonsimplicial, coarser, noncorner, multi-cell, or multi-tick
+  dissections;
+- an arbitrary-size, boundary, continuum, metric, curvature, action, or field
+  equation result;
+- minimality of either certificate denominator.
+
+Cycles 728 and 729 are ordering/context predecessors only. This single-cell
+packet consumes none of their two-cell block endpoints, witnesses, seam
+classes, or lift-obstruction statements.
+
+## No-Go Discipline Gate
+
+The finite “excluded orbit” statements are a `derived_no_go_boundary` inside
+this bounded theorem. They are not a framework `no_go` result. The following
+N1--N8 record applies only to the two finite endpoint-support partitions.
+
+### N1 — Alternative route enumeration
+
+1. **Constructive counterexample route — ATTEMPTED.** Search for a
+   zero-slack exact cover containing each allegedly excluded representative.
+   The ceiling searches and nine floor searches exhaust; the four remaining
+   floor representatives are already stopped by a one-step orphan.
+2. **False-positive sample-cover route — ATTEMPTED.** A sample exact cover may
+   fail to be a dissection. Every realized orbit now carries a separately
+   checked geometric 24-piece witness; the primary does not classify from an
+   unvalidated cover.
+3. **Orphan-escape route — ATTEMPTED.** For all 624 excluded floor pieces, the
+   runner recomputes a sample point that the forced piece does not contain and
+   whose every zero-slack carrier overlaps the forced piece at an interior
+   sample point.
+4. **Symmetry-representative failure route — ATTEMPTED.** The full 48-map
+   action is reconstructed, charge and slack are constant on every orbit, and
+   the floor orphan test is nevertheless run piece-by-piece rather than only
+   on representatives.
+5. **Endpoint escape through an off-rule piece — ATTEMPTED.** The exact slack
+   sums on floor, ceiling, and cost-110 controls show that any positive slack
+   changes the endpoint cost by exactly its denominator-scaled amount; no
+   endpoint dissection can contain an off-rule piece.
+
+### N2 — Wall-independence audit
+
+The finite negative residual is one statement: non-participation in an
+endpoint dissection of this supplied model. It is not split into multiple
+walls. Two separate open physical interpretations lie outside the finite
+claim:
+
+| pair | closing first closes second? | closing second closes first? | independent? |
+|---|---|---|---|
+| tick--Admissibility realization / physical-cell corner-simplex identification | no | no | yes |
+
+Closing either physical bridge would not alter the finite certificates; it
+would only widen their interpretation.
+
+### N3 — Hidden-wall scan
+
+“Supplied,” “certificate,” and “symmetry” are explicit constructions, not
+hidden framework grants. The model, charge, sample recipe, certificate
+integers, and search caps are all carried. No “standard,” “obvious,”
+“canonical,” or unlinked “framework provides” step is load-bearing.
+
+### N4 — Residual matching
+
+Cycle 725 proves the `[108,128]` endpoint bracket in the same supplied model.
+It does not prove the Cycle 730 support exclusions and is not cited as a
+negative witness. The current orphan/search certificates attack exactly the
+residual claimed here: whether a named zero-slack piece can occur in a valid
+dissection at the matching endpoint.
+
+### N5 — Rhetoric audit
+
+- `per_element`: all 2672 pieces and every support orbit are resolved.
+- `per_site`: not applicable; the supplied object has no site field.
+- `per_mode`: not applicable; no modal decomposition is used.
+- `per_block`: the complete supplied one-cell by one-tick box is resolved.
+- `lattice_wide`: not tested and not claimed.
+
+The same substantive five-line certificate lands in the primary runner's
+canonical cached stdout.
+
+### N6 — Partial-closure path scan
+
+The primitive registry was checked. Minimal Axioms supply only spatial
+adjacency/rotations; kinetic isotropy supplies only equal tick/edge graining.
+Neither selects the supplied simplex model or physical realization. A future
+physical bridge could widen interpretation without adding a new axiom, but it
+is not required for this finite theorem and is not foreclosed here.
+
+### N7 — Steelman
+
+The strongest objection is that exact coverage of finitely many interior
+sample points does not imply pairwise-disjoint convex pieces filling the box.
+That objection defeats the submitted census if sample covers are accepted as
+dissections. The repaired artifact accepts the objection: classification as
+realized now requires a stored witness whose volume, coverage, and all 276
+pairwise separations are checked. For exclusions, every genuine endpoint
+dissection would necessarily be a zero-slack sample exact cover, so an orphan
+or an exhaustive absence of such a cover is sufficient in the other direction.
+
+### N8 — Cross-cycle echo
+
+Cycle 725 already distinguishes sample-cover bounds from geometrically checked
+attainment and explicitly warns that the sample device bounds a larger family
+than dissections. Cycle 726 likewise separates supplied-model finite
+exclusions from physical interpretation. Cycle 730 follows those repairs:
+sample coverage alone proves only one-sided impossibility; positive
+realizability carries geometric witnesses; no physical or arbitrary-size
+foreclosure is inferred.
+
+No-Go Discipline result: **PASS for the finite support exclusions at the exact
+scope above**.
 
 ## Artifacts
 
-- Runner: `scripts/physical_local_extremality_rule_cell_cycle730_2026_08_04.py`
-- Recorded output: `outputs/physical_local_extremality_rule_cell_cycle730_2026_08_04_cold_2026-08-04.txt`
-- Receipt: `outputs/physical_local_extremality_rule_cell_cycle730_2026_08_04_receipt_2026-08-04.json`
-
-The runner reports `TOTAL: PASS=45 FAIL=0`. The receipt is transcribed from the recorded
-output; the runner does not write it. Every number quoted above appears in that output,
-apart from the cross-check carve-out named in prose in the section above.
+- Primary runner:
+  `scripts/physical_local_extremality_rule_cell_cycle730_2026_08_04.py`
+- Independent checker:
+  `scripts/physical_local_extremality_rule_cell_cycle730_independent_check_2026_08_04.py`
+- Primary cache:
+  `logs/runner-cache/physical_local_extremality_rule_cell_cycle730_2026_08_04.txt`
+- Independent cache:
+  `logs/runner-cache/physical_local_extremality_rule_cell_cycle730_independent_check_2026_08_04.txt`
+- Cold output:
+  `outputs/physical_local_extremality_rule_cell_cycle730_2026_08_04_cold_2026-08-04.txt`
+- Generated receipt:
+  `outputs/physical_local_extremality_rule_cell_cycle730_2026_08_04_receipt_2026-08-04.json`

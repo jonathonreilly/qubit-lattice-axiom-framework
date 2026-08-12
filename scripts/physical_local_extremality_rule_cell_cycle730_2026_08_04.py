@@ -1,59 +1,46 @@
-"""Cycle 730 of the emergent-geometry lane: minimal adjacency cost is a local rule on pieces.
+"""Cycle 730: zero-slack endpoint criteria in a supplied one-tick corner model.
 
-The lane's object here is a single lattice cell carried through one tick: a 4-cube with 16
-corners, four-volume 1, dissected into minimal simplices of volume 1/24, so every
-minimal-volume dissection uses exactly 24 pieces.  The adjacency charge of a piece counts
-the corner pairs whose spatial separation exceeds one lattice step, and the cost of a
-dissection is the total over its pieces.  Cycle 725 measured that interval as 108 to 128.
+The object is the supplied Cycle-725 one-tick corner-simplex model: a four-box
+with sixteen corners, twenty-four unimodular pieces per dissection, and a
+declared charge counting vertex pairs separated by more than one spatial
+nearest-neighbour step.  The Lattice axiom supplies that spatial grading and
+the kinetic-isotropy primitive supplies equal tick/edge graining.  Neither
+selects the simplex model, cost, physical cell, or tick--Admissibility bridge.
 
-This cycle asks what kind of condition minimal cost is.  The answer is that it is local.
+The two integer endpoint certificates decompose the cost of an already-valid
+dissection into nonnegative per-piece slacks.  Endpoint equality holds exactly
+when all twenty-four slacks vanish.  This is an additive membership criterion;
+compatibility, disjointness, and coverage remain global obligations.
 
-An integer weight u_o per orbit of sample points and one integer Z give a certificate when
-
-    sum_o M[p][o] u_o + Z  <=  D * adjacency(p)
-
-holds for every minimal piece p; summing over the 24 pieces of any dissection then bounds
-the cost below, because no sample point lies on a piece boundary, so each point is interior
-to exactly one piece of any dissection.  Reversing the inequality bounds the cost above.
-Nothing here assumes the dissection is symmetric; symmetry only compresses the program.
-
-Both certificates embedded here have ZERO GAP: the floor certificate has value exactly
-108 D and the ceiling certificate value exactly 128 D.  That turns the per-piece slack
-
-    slack(p) = D * adjacency(p) - sum_o M[p][o] u_o - Z  >=  0
-
-into an exact accounting, because summing it over any dissection of cost C gives
-
-    sum over pieces of slack(p)  =  D * (C - 108)
-
-identically.  So a dissection is cheapest exactly when every one of its 24 pieces sits on
-a tight row, and the tight rows are a fixed list of pieces computed once, with no reference
-to the rest of the dissection.  Minimal cost needs no global coordination; it is a
-piece-by-piece membership test.  The same holds at the ceiling with its own list.
-
-That is the positive half.  The second half of this cycle is that the local rule is
-strictly coarser than the set of pieces that extremal dissections actually use.  The rule
-admits 2416 pieces in 51 orbits at the floor and 1040 in 23 orbits at the ceiling.  A
-bounded enumeration of exact covers exhibits 38 floor orbits and 21 ceiling orbits in use.
-For the leftover orbits a complete backtracking search finishes empty, so those pieces
-occur in NO minimal-cost dissection even though the rule admits them.  The rule is
-necessary and not sufficient: locality delivers the exact bound, and an over-approximation
-of the configurations that attain it.
-
-The last check is the sharpest form of the locality statement.  A dissection is built here
-with exactly one piece off the floor rule; its cost is 110, and the single off-rule piece
-carries slack 48 = 24 * 2, which is exactly the cost excess.  The defect is local and it
-adds.
-
-No solver appears in this artifact.  The certificates are literal integers, verified in
-integer arithmetic over every one of the 2672 pieces.  The dissections are found by a
-deterministic backtracking cover search and then proved to be dissections by volume,
-pairwise disjointness through exhibited integer normals, and containment of every sample
-point.
+The finite support census stores a geometrically checked dissection witness for
+every orbit classified as realized.  Excluded floor orbits carry one-step
+sample-cover orphan certificates; excluded ceiling orbits carry exhaustive
+forced-cover search counts.  No optimiser or external solver is called.  The
+runner writes its receipt and exits nonzero on any failed gate.
 """
+import hashlib
 import itertools
+import json
+import sys
+from pathlib import Path
 
 import numpy as np
+
+AUDIT_TIMEOUT_SEC = 180
+AUDIT_INPUT_PATHS = (
+    "docs/PHYSICAL_LOCAL_EXTREMALITY_RULE_CELL_CYCLE730_NOTE_2026-08-04.md",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+    "docs/PHYSICAL_EXACT_ADJACENCY_DISSECTION_BRACKET_CYCLE725_NOTE_2026-08-03.md",
+    "scripts/physical_exact_adjacency_dissection_bracket_cycle725_2026_08_03.py",
+    "outputs/physical_exact_adjacency_dissection_bracket_cycle725_2026_08_03_"
+    "receipt_2026-08-03.json",
+)
+ROOT = Path(__file__).resolve().parent.parent
+RECEIPT_PATH = ROOT / (
+    "outputs/physical_local_extremality_rule_cell_cycle730_2026_08_04_"
+    "receipt_2026-08-04.json"
+)
 
 NP = [0, 0]
 PAIRS = list(itertools.combinations(range(5), 2))
@@ -85,6 +72,24 @@ def gate(ok, name, detail):
 
 def sec(text):
     print(text)
+
+
+def file_sha256(relative_path):
+    return hashlib.sha256((ROOT / relative_path).read_bytes()).hexdigest()
+
+
+C725_RECEIPT = json.loads(
+    (ROOT / AUDIT_INPUT_PATHS[-1]).read_text(encoding="utf-8")
+)
+gate(
+    C725_RECEIPT.get("bracket_minimal_pieces") == [108, 128]
+    and C725_RECEIPT.get("fail") == 0
+    and "corner 4-simplex" in C725_RECEIPT.get("supplied_model", ""),
+    "the Cycle 725 supplied-model dependency is exact",
+    "contained minimal-piece bracket {0}".format(
+        C725_RECEIPT.get("bracket_minimal_pieces")
+    ),
+)
 
 
 def det4(A):
@@ -435,12 +440,18 @@ sec("the rule is necessary and not sufficient")
 
 def enumerate_support(pool, cap):
     bp = by_point(pool)
-    sup, n = set(), [0]
+    sup, witnesses, n, valid = set(), {}, [0], [0]
 
     def rec(cov, cur):
         if cov == ALLQ:
             n[0] += 1
-            sup.update(int(t) for t in LAB[np.array(cur)])
+            present = set(int(t) for t in LAB[np.array(cur)])
+            if present - sup and is_dissection(np.array(cur, dtype=np.int64)):
+                valid[0] += 1
+                witness = tuple(sorted(int(t) for t in cur))
+                for orbit in present:
+                    witnesses.setdefault(orbit, witness)
+                sup.update(present)
             return n[0] >= cap
         j = ~cov & ALLQ
         j = (j & -j).bit_length() - 1
@@ -454,7 +465,7 @@ def enumerate_support(pool, cap):
         return False
 
     rec(0, [])
-    return n[0], sup
+    return n[0], valid[0], sup, witnesses
 
 
 def occurs(pool, forced, cap):
@@ -482,8 +493,8 @@ def occurs(pool, forced, cap):
 
     rec(MASK[forced], [forced])
     if res:
-        return "occurs", np.array(sorted(res[0]), dtype=np.int64)
-    return ("unsettled" if st[0] > cap else "absent"), None
+        return "occurs", np.array(sorted(res[0]), dtype=np.int64), st[0]
+    return ("unsettled" if st[0] > cap else "absent"), None, st[0]
 
 
 def propagate(pool, forced):
@@ -515,35 +526,40 @@ def propagate(pool, forced):
 
 CAP = 20000000
 CTRL_CAP = 200000
-POOLS, SUP = {}, {}
+POOLS, SUP, REALIZATION_WITNESSES, SEARCH_CERTIFICATES = {}, {}, {}, {}
 for nm, sl, orbs, ab, want, tgt, ctrl, nc in (
         ("floor", FS, FORB, FLOOR_SEARCHED, 38, 108, sidx, 22),
         ("ceiling", CS, CORB, CEIL_ABSENT, 21, 128, COVER["ceiling rule"], 24)):
     pool = list(np.flatnonzero(sl == 0))
     POOLS[nm] = pool
-    n, sup = enumerate_support(pool, 200000)
+    n, nvalid, sup, witnesses = enumerate_support(pool, 200000)
     SUP[nm] = sup
+    REALIZATION_WITNESSES[nm] = witnesses
     gate(len(sup) == want and sup.issubset(set(orbs)),
          "the " + nm + " support is exhibited by enumeration",
-         "{0} dissections drawn from the rule use {1} of its {2} orbits".format(
-             n, len(sup), len(orbs)))
-    bad = []
+         "{0} sample exact covers inspected; {1} geometrically validated witness covers use "
+         "{2} of its {3} orbits".format(n, nvalid, len(sup), len(orbs)))
+    bad, search_certificates = [], {}
     for o in ab:
         rep = int(np.flatnonzero((LAB == o) & (sl == 0))[0])
-        st, _ = occurs(pool, rep, CAP)
+        st, _, nodes = occurs(pool, rep, CAP)
+        search_certificates[o] = {"forced_piece": rep, "nodes": nodes, "status": st}
         if st != "absent":
             bad.append(o)
+    SEARCH_CERTIFICATES[nm] = search_certificates
     gate(not bad, "the whole search comes back empty on those " + nm + " pieces",
-         "{0} orbits, {1} pieces: forcing any one in leaves the search empty".format(
-             len(ab), sum(int((LAB == o).sum()) for o in ab)))
+         "{0} orbits, {1} pieces: forcing one representative per orbit leaves the search "
+         "empty after at most {2} nodes".format(
+             len(ab), sum(int((LAB == o).sum()) for o in ab),
+             max(t["nodes"] for t in search_certificates.values())))
     nab, nocc, wrong = 0, 0, 0
     for p in ctrl:
-        st, d = occurs(pool, int(p), CTRL_CAP)
+        st, d, _ = occurs(pool, int(p), CTRL_CAP)
         if st == "absent":
             nab += 1
         elif st == "occurs":
             nocc += 1
-            if len(d) != 24 or int(CX[d].sum()) != tgt:
+            if len(d) != 24 or int(CX[d].sum()) != tgt or not is_dissection(d):
                 wrong += 1
     gate(nab == 0 and wrong == 0 and nocc == nc,
          "the same search never empties on a piece of an exhibited " + nm + " dissection",
@@ -552,10 +568,10 @@ for nm, sl, orbs, ab, want, tgt, ctrl, nc in (
 
 sec("")
 sec("one deduction step, and the point that can then no longer be covered")
-PROP, WIT, ONE = {}, {}, {}
+PROP, WIT, ONE, PRUNING_CERTIFICATES = {}, {}, {}, {}
 for nm in ("floor", "ceiling"):
     pool = POOLS[nm]
-    orbs, npc, one = set(), 0, 0
+    orbs, npc, one, pruning_certificates = set(), 0, 0, {}
     for p in pool:
         st, r, o = propagate(pool, int(p))
         if st != "absent":
@@ -566,8 +582,13 @@ for nm in ("floor", "ceiling"):
             one += 1
             if nm not in WIT and o >= 0:
                 WIT[nm] = (int(p), o)
+            if o >= 0:
+                pruning_certificates.setdefault(
+                    int(LAB[p]), {"forced_piece": int(p), "orphan_point": int(o)}
+                )
     PROP[nm] = orbs
     ONE[nm] = (npc, one)
+    PRUNING_CERTIFICATES[nm] = pruning_certificates
 
 gate(ONE["floor"][0] == ONE["floor"][1] == 624
      and ONE["ceiling"][0] == ONE["ceiling"][1],
@@ -604,5 +625,75 @@ gate(len(CEIL_ABSENT) + len(SUP["ceiling"]) == len(CORB),
      "{0} of the {1} ceiling-rule orbits occur and the other {2} cannot".format(
          len(SUP["ceiling"]), len(CORB), len(CEIL_ABSENT)))
 
+gate(
+    set(REALIZATION_WITNESSES["floor"]) == SUP["floor"]
+    and set(REALIZATION_WITNESSES["ceiling"]) == SUP["ceiling"]
+    and set(PRUNING_CERTIFICATES["floor"]) == set(FLOOR_ABSENT)
+    and set(SEARCH_CERTIFICATES["ceiling"]) == set(CEIL_ABSENT),
+    "every support classification has a landed certificate",
+    "realized orbits carry geometric witnesses; floor exclusions carry orphan points; "
+    "ceiling exclusions carry exhaustive search counts",
+)
+
+print("")
+print("per_element: checked all 2672 minimal pieces for exact certificate slack and every "
+      "classified orbit representative for a positive or negative support certificate")
+print("per_site: checked and not executed — the supplied theorem has no site field; its "
+      "smallest resolved objects are corner-simplex pieces and interior sample points")
+print("per_mode: checked and not executed — no spectral or mode decomposition occurs in "
+      "this finite exact-cover and convex-dissection theorem")
+print("per_block: checked the complete supplied one-cell by one-tick four-box, including all "
+      "2672 minimal pieces and both endpoint support partitions")
+print("lattice_wide: checked and not executed — no multi-cell, arbitrary-tick, boundary, or "
+      "continuum extension is asserted by this bounded supplied-model result")
 print("")
 print("TOTAL: PASS={0} FAIL={1}".format(NP[0], NP[1]))
+
+receipt = {
+    "claim_type": "bounded_theorem",
+    "supplied_model": C725_RECEIPT.get("supplied_model"),
+    "input_sha256": {path: file_sha256(path) for path in AUDIT_INPUT_PATHS},
+    "piece_census": {
+        "five_subsets": len(SUB),
+        "minimal_pieces": NPIECE,
+        "piece_orbits": NORB,
+        "sample_points": NQ,
+        "pieces_per_dissection": 24,
+    },
+    "certificates": {
+        "floor": {"denominator": FLOOR_D, "bound": 108, "tight_pieces": int(fr.sum())},
+        "ceiling": {"denominator": CEIL_D, "bound": 128, "tight_pieces": int(cr.sum())},
+    },
+    "support": {
+        "floor": {
+            "realized_orbits": sorted(SUP["floor"]),
+            "excluded_orbits": sorted(set(FLOOR_ABSENT)),
+            "realization_witnesses": {
+                str(o): list(REALIZATION_WITNESSES["floor"][o]) for o in sorted(SUP["floor"])
+            },
+            "pruning_certificates": {
+                str(o): PRUNING_CERTIFICATES["floor"][o] for o in sorted(FLOOR_ABSENT)
+            },
+        },
+        "ceiling": {
+            "realized_orbits": sorted(SUP["ceiling"]),
+            "excluded_orbits": sorted(set(CEIL_ABSENT)),
+            "realization_witnesses": {
+                str(o): list(REALIZATION_WITNESSES["ceiling"][o]) for o in sorted(SUP["ceiling"])
+            },
+            "search_certificates": {
+                str(o): SEARCH_CERTIFICATES["ceiling"][o] for o in sorted(CEIL_ABSENT)
+            },
+        },
+    },
+    "no_go_discipline": {
+        "status": "PASS",
+        "negative_assertion_class": "derived_no_go_boundary",
+        "checklist": "No-Go Discipline Gate section in the Cycle 730 note",
+        "n5_certificate": "five resolution lines in primary stdout and canonical cache",
+    },
+    "totals": {"pass": NP[0], "fail": NP[1]},
+}
+RECEIPT_PATH.write_text(json.dumps(receipt, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+print("RECEIPT " + json.dumps(receipt, sort_keys=True, separators=(",", ":")))
+sys.exit(1 if NP[1] else 0)

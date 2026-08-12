@@ -1,6 +1,6 @@
 {
- "edge_count": 15573,
- "node_count": 5475,
+ "edge_count": 15574,
+ "node_count": 5476,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -13753,6 +13753,10 @@
   "physical_least_cost_cutting_flip_and_move_ladder_cycle734_note_2026-08-04": {
    "deps_hash": "15e6909e594b",
    "out_degree": 4
+  },
+  "physical_least_cost_cutting_piece_charge_cycle735_note_2026-08-05": {
+   "deps_hash": "0268ea4224b0",
+   "out_degree": 1
   },
   "physical_level_set_orbit_law_improper_center_identity_cycle719_note_2026-08-02": {
    "deps_hash": "d08d4f40dfe2",

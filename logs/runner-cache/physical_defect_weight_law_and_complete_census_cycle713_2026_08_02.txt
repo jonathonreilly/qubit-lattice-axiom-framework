@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/physical_defect_weight_law_and_complete_census_cycle713_2026_08_02.py
-runner_sha256: 7941a85a9eae68395fd48b04195fa68ebe7bb5b8c769dd4eb42e583b4b8c2467
+runner_sha256: 369a418144fb6049c3184133b772cbbb081048d164a35c4b552cfb160c6a3200
 input_fingerprint_sha256: f16228dfa22ac9810d4cc316446c432694b1b6d39236992c2bac39c9cf2f5eab
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 10.63
+elapsed_sec: 10.97
 status: ok
 ----- stdout -----
 == cycle 713: assembly-defect weight law and complete census ==

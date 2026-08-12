@@ -45,6 +45,11 @@ sys.path.insert(0, str(REPO_ROOT / "docs" / "audit" / "scripts"))
 import ledger_io  # noqa: E402
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    # Cycle 744's checker is an independent executable rather than an import
+    # of the primary, so expose it explicitly in the restricted claim packet.
+    "physical_cell_cutting_full_symmetry_certified_cycle744_note_2026-08-05": [
+        "scripts/physical_cell_cutting_full_symmetry_certified_cycle744_independent_check_2026_08_05.py",
+    ],
     # Cycle 738's checker independently reconstructs the cutting incidence
     # with the opposite cover pivot and uses a separate exact-weight CNF/SAT
     # encoding, so it deliberately remains outside the primary import closure.

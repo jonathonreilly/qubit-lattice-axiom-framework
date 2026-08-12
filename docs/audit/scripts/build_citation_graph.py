@@ -151,6 +151,12 @@ HEADING_RE = re.compile(r"^#{1,6}\s+", re.MULTILINE)
 LINK_RE = re.compile(r"\[[^\]]*\]\(([^)\s#]+\.md)(?:#[^)]*)?\)")
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    # Cycle 744's opposite-pivot incidence reconstruction and explicit-cell
+    # refinement deliberately import no primary symbols. Keep the checker in
+    # the restricted packet through this claim-scoped sibling edge.
+    "physical_cell_cutting_full_symmetry_certified_cycle744_note_2026-08-05": [
+        "scripts/physical_cell_cutting_full_symmetry_certified_cycle744_independent_check_2026_08_05.py",
+    ],
     "inter_site_gate_cycle970_bounded_theorem_note_2026-08-09": [
         "scripts/frontier_cycle970_gate_independent_check_2026_08_09.py",
     ],

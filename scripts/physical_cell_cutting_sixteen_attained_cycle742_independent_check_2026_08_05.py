@@ -857,9 +857,9 @@ receipt = {
         "named": {name: "PASS" if ok else "FAIL" for name, ok in gates},
     },
 }
-receipt_tmp = RECEIPT_PATH.with_suffix(RECEIPT_PATH.suffix + ".tmp")
-receipt_tmp.write_text(json.dumps(receipt, indent=2, sort_keys=True) + "\n", encoding="utf-8")
-receipt_tmp.replace(RECEIPT_PATH)
+RECEIPT_PATH.write_text(
+    json.dumps(receipt, indent=2, sort_keys=True) + "\n", encoding="utf-8"
+)
 print("RECEIPT " + str(RECEIPT_PATH.relative_to(ROOT)), flush=True)
 print("TOTAL: PASS={0} FAIL={1}".format(passed, failed), flush=True)
 sys.exit(1 if failed else 0)

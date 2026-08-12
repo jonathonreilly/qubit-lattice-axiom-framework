@@ -28,11 +28,11 @@ SPEC.loader.exec_module(c696)
 AUDIT_TIMEOUT_SEC = 300
 AUDIT_INPUT_PATHS = (
     "docs/PHYSICAL_MIXED_FRAME_DEFECT_CENSUS_FAMILY_LAW_CYCLE712_NOTE_2026-08-02.md",
-    "docs/PHYSICAL_ASSEMBLY_DEFECT_COCYCLE_LAW_AND_COVARIANCE_BOUNDARY_CYCLE710_NOTE_2026-08-02.md",
+    "docs/PHYSICAL_ASSEMBLY_DEFECT_COCYCLE_AND_MIXED_FRAME_COMPARATOR_CYCLE710_NOTE_2026-08-02.md",
     "docs/PHYSICAL_MIXED_FRAME_COMPARATOR_EXACT_STENCIL_SWAP_LAW_CYCLE711_NOTE_2026-08-02.md",
-    "scripts/physical_assembly_defect_cocycle_law_and_covariance_boundary_cycle710_2026_08_02.py",
+    "scripts/physical_assembly_defect_cocycle_and_mixed_frame_comparator_cycle710_2026_08_02.py",
     "scripts/physical_mixed_frame_comparator_exact_stencil_swap_law_cycle711_2026_08_02.py",
-    "outputs/physical_assembly_defect_cocycle_law_and_covariance_boundary_cycle710_2026_08_02_receipt_2026-08-02.json",
+    "outputs/physical_assembly_defect_cocycle_and_mixed_frame_comparator_cycle710_2026_08_02_receipt_2026-08-02.json",
     "outputs/physical_mixed_frame_comparator_exact_stencil_swap_law_cycle711_2026_08_02_receipt_2026-08-02.json",
     "scripts/physical_open_coframe_k_endpoint_compiler_cycle696_2026_07_25.py",
     "scripts/physical_dynamical_metric_source_law_bridge_tournament_cycle576_2026_07_22.py",

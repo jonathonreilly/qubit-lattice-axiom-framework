@@ -230,7 +230,9 @@ supports are not of size ten.
 - N3 — Hidden-wall scan: `complete`, `no`, `every`, `forced`, and `physical` were scanned.
   The cell, labelling, cost, piece class, support universe, eight functions, and 48-action
   are explicit supplied data. No physical reading identification survives.
-- N4 — Residual matching: Cycle 737 supplies the exact same incidence/order/function
+- N4 — Residual matching:
+  [`PHYSICAL_CELL_CUTTING_LEAST_COMPUTING_SETS_CYCLE737_NOTE_2026-08-05.md`](PHYSICAL_CELL_CUTTING_LEAST_COMPUTING_SETS_CYCLE737_NOTE_2026-08-05.md)
+  supplies the exact same incidence/order/function
   hashes, complete search through eight, and upper witnesses. Cycle 736 is transitive;
   no other cycle is used to support the weight-ten negative.
 - N5 — Resolution: per element, all 192 columns; per site, one supplied coordinate cell;

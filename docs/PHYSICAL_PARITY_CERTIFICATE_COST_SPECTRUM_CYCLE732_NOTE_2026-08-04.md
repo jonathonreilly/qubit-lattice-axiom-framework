@@ -125,7 +125,7 @@ not a second proof excluding every larger modulus.
   nothing about all certificate languages. The note accepts that objection and narrows
   both negatives accordingly.
 - N8 — Cross-cycle echo: earlier finite-cell notes used the same supplied-model boundary.
-  Cycle 730 (`PHYSICAL_CELL_ADJACENCY_ENDPOINT_STRUCTURE_CYCLE730_NOTE_2026-08-04.md`)
+  Cycle 730 (`PHYSICAL_LOCAL_EXTREMALITY_RULE_CELL_CYCLE730_NOTE_2026-08-04.md`)
   is lineage context only; Cycle 732 consumes neither its support partitions nor its
   zero-slack theorem. Cycle 731 is the sole direct scientific predecessor because its
   bound certificates are imported exactly.

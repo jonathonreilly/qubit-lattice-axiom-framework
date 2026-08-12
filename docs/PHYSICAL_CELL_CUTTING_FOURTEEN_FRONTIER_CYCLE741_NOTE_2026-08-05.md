@@ -15,7 +15,7 @@ Claim type: bounded_theorem
 Runners:
 
 - [the complete search at fourteen, licensing, orbit inventories, planted controls](../scripts/physical_cell_cutting_fourteen_frontier_cycle741_2026_08_05.py)
-- [independent opposite-pivot exact-cardinality checker](../scripts/physical_cell_cutting_fourteen_frontier_cycle741_independent_check_2026_08_05.py)
+- [independent opposite-pivot exact syndrome-DP/MITM checker](../scripts/physical_cell_cutting_fourteen_frontier_cycle741_independent_check_2026_08_05.py)
 
 Standing framework: [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)
 
@@ -174,7 +174,7 @@ Every line below is a gate in the runner, printed in this order, all passing.
 - G22  all 11642 recorded sets at twelve recompute to their own reading, have weight 12, and are distinct
 - G23  all 63 weight 12 words of the quarter subcode are among the 7808 sets carrying the zero reading at twelve
 - G24  the complete search of the first quarter alone at fourteen returns the 164 weight 14 words of its subcode, enumerated apart from the search
-- G25  every licensed cell at fourteen is met once per reading, 204 per even and 140 per odd quarter reading, its 2562 splits distinct
+- G25  every licensed cell at fourteen is met once per reading, and the independently constructed expected sequence exactly equals all 2562 successfully executed distinct splits
 - G26  no intermediate or final table in any of the searches reached the cap of 30000000 entries
 - G27  all 64967 recorded sets at fourteen recompute to their own reading, have weight 14, and are distinct
 - G28  each of the five planted fourteen piece sets is found by a search blind to it, including the two whose profile cuts one quarter and the one that cuts two
@@ -225,7 +225,8 @@ one readings, so it must break into orbits of sizes dividing 48; the measured
 inventories are 720 orbits of size 48 and 560 orbits of size 48. The gate catches
 many partial-cell defects, including the submitted planted defect, but a search
 that omitted one or more whole orbits could still pass it. Completeness rests on
-the exact search schedule plus the independent exact-cardinality encoding.
+the exact expected-versus-executed split inventory plus the independent exact
+syndrome-DP/MITM enumeration.
 
 On the six nonconstant readings, this note says only that no set of at most fourteen pieces
 carries one of them, and that every odd size is barred by the forced
@@ -244,11 +245,11 @@ parity, their minimum support is at least sixteen.
 
 - N1 — Alternative routes: five materially distinct attacks were executed:
   the primary quarter/eighth meet-in-the-middle enumeration; independent
-  opposite-pivot reconstruction and exact-cardinality XOR/CNF solving; direct
+  opposite-pivot reconstruction and exact syndrome-DP/MITM enumeration; direct
   full-row verification of every positive return; exact row-space licensing;
-  and planted weight-fourteen SAT recovery. They agree at the declared finite
+  and planted weight-fourteen DP recovery. They agree at the declared finite
   boundary.
-- N2 — Wall independence: there is one finite UNSAT residual, not a portfolio
+- N2 — Wall independence: there is one finite empty-support residual, not a portfolio
   of physical walls. The previous-cardinality exclusions and the parity lemma
   are separate inputs to the lower bound and are not called framework theorems.
 - N3 — Hidden-wall scan: `complete`, `canonical`, `physical`, `by construction`
@@ -261,16 +262,17 @@ parity, their minimum support is at least sixteen.
   edge here.
 - N5 — Resolution: per element, all 192 columns; per site, one supplied
   coordinate cell; per mode, none exists; per block, all 15,800 rows and every
-  licensed cell/CNF clause; lattice-wide, no multi-cell, arbitrary-L, boundary
+  licensed split and exact syndrome join; lattice-wide, no multi-cell,
+  arbitrary-L, boundary
   or continuum execution.
 - N6 — Partial closure: other algebraic functions, coefficient fields,
   nonlinear supports, piece classes, costs, cells, multi-cell assemblies and
   physical identifications remain open. This result requires no new axiom.
 - N7 — Steelman: the primary join planner could omit a split or mishandle a
   large quarter while its own positive controls still pass. The independent
-  exact-cardinality checker reconstructs the table with the opposite cover
+  exact syndrome-DP checker reconstructs the table with the opposite cover
   pivot and does not use the primary cell schedule; it returns the same six
-  UNSAT answers while recovering planted SAT targets.
+  empty answers while recovering planted targets.
 - N8 — Cross-cycle echo: Cycles 737 and 739 are hash-bound direct predecessors.
   Earlier finite floors are not authority for arbitrary domains, physical
   identifications or continuum support laws.

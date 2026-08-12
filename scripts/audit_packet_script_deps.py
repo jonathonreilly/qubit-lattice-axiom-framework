@@ -52,7 +52,7 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
         "scripts/physical_cell_cutting_size_ten_frontier_cycle738_"
         "independent_check_2026_08_05.py",
     ],
-    # Cycle 741's exact-cardinality checker is deliberately a sibling rather
+    # Cycle 741's exact syndrome-DP checker is deliberately a sibling rather
     # than a primary import, so register it on the restricted packet surface.
     "physical_cell_cutting_fourteen_frontier_cycle741_note_2026-08-05": [
         "scripts/physical_cell_cutting_fourteen_frontier_cycle741_"

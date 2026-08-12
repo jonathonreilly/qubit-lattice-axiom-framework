@@ -1303,6 +1303,55 @@ def cells_of(m):
 
 SEEN = {}
 PROCD = []
+EXPECTED_SPLITS = []
+
+
+def expected_plan(cell):
+    """Independent arithmetic construction of the complete split inventory."""
+    heavy = [quarter for quarter, count in enumerate(cell) if count > 6]
+    if not heavy:
+        streamed_quarter = max(
+            range(4), key=lambda quarter: (math.comb(48, cell[quarter]), -quarter)
+        )
+        streamed = ("Q", streamed_quarter, cell[streamed_quarter])
+        remainder = tuple(
+            ("Q", quarter, cell[quarter]) for quarter in range(4)
+            if quarter != streamed_quarter
+        )
+        return [(streamed, remainder)]
+    distributions = []
+    for quarter in heavy:
+        distributions.append(tuple(
+            (left, cell[quarter] - left)
+            for left in range(cell[quarter] + 1)
+            if left <= 24 and cell[quarter] - left <= 24
+        ))
+    answer = []
+    for distribution in itertools.product(*distributions):
+        parts = []
+        for quarter, (left, right) in zip(heavy, distribution):
+            parts.extend((("E", 2 * quarter, left), ("E", 2 * quarter + 1, right)))
+        parts.extend(
+            ("Q", quarter, cell[quarter]) for quarter in range(4)
+            if quarter not in heavy
+        )
+        if len(heavy) == 1:
+            streamed_index = (
+                0 if math.comb(24, parts[0][2]) >= math.comb(24, parts[1][2]) else 1
+            )
+        else:
+            streamed_index = max(
+                range(len(parts)),
+                key=lambda index: (
+                    math.comb(24 if parts[index][0] == "E" else 48,
+                              parts[index][2]),
+                    -index,
+                ),
+            )
+        answer.append((parts[streamed_index], tuple(
+            part for index, part in enumerate(parts) if index != streamed_index
+        )))
+    return answer
 
 
 def run_cell(cell, m, tids):
@@ -1311,12 +1360,19 @@ def run_cell(cell, m, tids):
     act = [t for t in tids if licensed_cell(cell, m, t)]
     if not act:
         return ok
-    for t in act:
-        SEEN[t] = SEEN.get(t, 0) + 1
-    for (A, B) in plan_cell(cell):
-        PROCD.append((cell, A, tuple(B)))
-        if not run_split(A, B, act):
+    plans = [(streamed, tuple(remainder)) for streamed, remainder in plan_cell(cell)]
+    expected = expected_plan(cell)
+    EXPECTED_SPLITS.extend((cell, streamed, remainder) for streamed, remainder in expected)
+    if plans != expected or not plans:
+        return False
+    for streamed, remainder in plans:
+        if not run_split(streamed, list(remainder), act):
             ok = False
+        else:
+            PROCD.append((cell, streamed, remainder))
+    if ok:
+        for t in act:
+            SEEN[t] = SEEN.get(t, 0) + 1
     return ok
 
 
@@ -1330,8 +1386,12 @@ def run_sweep(m, tids):
 
 
 def coverage(m, tids):
-    """(cells met per target, splits done, splits distinct)"""
-    return ([SEEN.get(t, 0) for t in tids], len(PROCD), len(set(PROCD)))
+    """Cells and exact expected/executed inventory, including sequence identity."""
+    exact = (
+        len(PROCD) == len(set(PROCD))
+        and PROCD == EXPECTED_SPLITS
+    )
+    return ([SEEN.get(t, 0) for t in tids], len(EXPECTED_SPLITS), len(PROCD), exact)
 
 
 def fresh():
@@ -1339,6 +1399,7 @@ def fresh():
     RES.clear()
     SEEN.clear()
     del PROCD[:]
+    del EXPECTED_SPLITS[:]
 
 
 def orbsum(t):
@@ -1665,14 +1726,14 @@ fresh()
 OK12 = run_sweep(12, TIDS)
 C12 = [CNT.get(t, 0) for t in TIDS]
 V12 = verify(TIDS)
-COV12, NSPL12, NDS12 = coverage(12, TIDS)
+COV12, NSPL12, NDS12, INV12 = coverage(12, TIDS)
 LIC12 = [lic_count(12, t) for t in TIDS]
 W12OK = sum(1 for m in M0 if bin(m).count("1") == 12 and has_set(0, cols_of(m)))
 emit("m=12 counts " + vshow(C12) + " verify " + vshow(V12) + " splits " + cshow(NSPL12))
 gate(C12[:12] == [7808, 3072, 0, 0, 0, 0, 0, 0, 661, 25, 38, 38] and C12[TCTL] == 0,
      "G20", "a complete search at twelve reproduces an earlier cycle on the twelve "
      "readings it shares: {0}, and finds no synthetic set".format(C12[:12]))
-gate(COV12 == LIC12 and NSPL12 == NDS12 and NSPL12 > 0 and LIC12[0] == 140
+gate(COV12 == LIC12 and INV12 and NSPL12 == NDS12 == 1167 and LIC12[0] == 140
      and LIC12[8] == 91, "G21",
      "every licensed cell at twelve is met once per reading, {0} per even and {1} per "
      "odd quarter reading, its {2} splits distinct".format(
@@ -1703,7 +1764,10 @@ fresh()
 OK14 = run_sweep(14, TIDS)
 C14 = [CNT.get(t, 0) for t in TIDS]
 V14 = verify(TIDS)
-COV14, NSPL14, NDS14 = coverage(14, TIDS)
+COV14, NSPL14, NDS14, INV14 = coverage(14, TIDS)
+INVENTORY14_SHA256 = hashlib.sha256(
+    json.dumps(EXPECTED_SPLITS, separators=(",", ":")).encode("utf-8")
+).hexdigest()
 LIC14 = [lic_count(14, t) for t in TIDS]
 PREC = [has_set(NT + pi, PIECES[pi]) for pi in range(5)]
 ORB14 = {}
@@ -1723,7 +1787,7 @@ for t in sorted(ORB14):
     emit("m=14 orbits {0} {1} {2}".format(TNAME[t], cshow(ORB14[t][1]),
                                           dshow(ORB14[t][0])))
 emit("m=14 orbits all of size 1 for readings " + vshow(SNG))
-gate(COV14 == LIC14 and NSPL14 == NDS14 and NSPL14 > 0, "G25",
+gate(COV14 == LIC14 and INV14 and NSPL14 == NDS14 == 2562, "G25",
      "every licensed cell at fourteen is met once per reading, {0} per even and {1} "
      "per odd quarter reading, its {2} splits distinct".format(
          LIC14[0], LIC14[8], NSPL14))
@@ -1815,7 +1879,8 @@ receipt = {
         "licensed_cells_per_reading": LIC14,
         "scheduled_splits": NSPL14,
         "executed_splits": NDS14,
-        "execution_inventory_exact": COV14 == LIC14 and NSPL14 == NDS14,
+        "execution_inventory_exact": COV14 == LIC14 and INV14 and NSPL14 == NDS14,
+        "execution_inventory_sha256": INVENTORY14_SHA256,
         "verified_returns": V14[0],
         "mismatched_returns": V14[1],
         "duplicate_returns": V14[2],

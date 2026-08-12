@@ -20,7 +20,7 @@ families are tracked separately in `APPROACH_REGISTRY.md`.
 | barycenter/evaluation | average a typed state and pair it with effects | remains viable but supplies density-state typing and trace evaluation | keep live |
 | Record event algebra | exclusive registered outcome events and finite additivity | quantifier bridge not yet derived | keep live |
 | physical program quotient | contact compiler plus operational equivalence and recurrent coverage | partial prior art exists; full interface open | rank next |
-| typed axiom addition | measurable outcome partitions/pushforward, effect descent, null/certain endpoints, binary/ternary coverage | sufficient by Block 1, not proven necessary | governance fallback only |
+| typed axiom addition | measurable event partitions/pushforward, effect descent, null/certain endpoints, binary/ternary coverage | sufficient for the abstract grade by Block 1; content-only Record interpretation stays open; not proven necessary | governance fallback only |
 
 ## Prior-art sweep
 

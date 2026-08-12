@@ -46,7 +46,7 @@ governance choice, not a derivation and not current-surface closure.
 | finite additivity of `mu` | disjoint-binary-menu contradiction | definition-level mathematics | yes | allowed |
 | eight-real-dimensional Gaussian measure | full-support atomless compatibility witness | constructed zero-input probability model | yes | exact analytic witness, no sampling |
 | two exact ternary scaled menus | contextual normalized-restriction witness | constructed finite matrix algebra | yes | conditional mathematical effects only |
-| registered measurable outcome partitions `A` pushing current `mu` to conditional Record-readout `K`, effect descent `w`, null/certain endpoints, and low-arity coverage | sufficient closure interface | hypothetical candidate | only for the consequence map | not current authority |
+| registered measurable event partitions `A` pushing current `mu` to an abstract menu kernel `K`, effect descent `w`, null/certain endpoints, and low-arity coverage | sufficient abstract closure interface | hypothetical candidate | only for the consequence map | not current authority; physical Record interpretation still needs a content-only readout bridge |
 | Block 1 frame-lift theorem | converts the typed interface to a unique trace grade | explicit branch-local parent | yes for sufficiency only | exposed dependency |
 | canonical axiom edit | governance action | forbidden absent user authority | no | not performed |
 

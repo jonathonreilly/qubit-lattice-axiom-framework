@@ -43,18 +43,19 @@ shared-effect witness gives `25/142` in one ternary menu and `2/11` in another.
 
 The sufficient axiom-facing interface is therefore typed as:
 
-1. registered measurable outcome partitions that push the existing `mu` to a
-   normalized conditional kernel for how a forming Record's locked realization
-   is read;
+1. registered measurable event partitions that push the existing `mu` to a
+   normalized abstract menu kernel;
 2. descent to one grade of the same registered effect across menus;
 3. the endpoint values `w(0)=0` and `w(I)=1`;
 4. physical coverage of every binary and ternary resolution in the full
    scaled domain `S`.
 
 Composed with the parent frame-lift theorem, these clauses derive a unique
-local density matrix and trace grade. They are candidate wording only: no
-canonical axiom was edited, and N1--N8 rejects any necessity or constructive-
-route-exhaustion claim.
+local density matrix and trace grade. A physical Record-outcome reading still
+requires a content-only bridge from the registered event label to record
+content. The clauses are candidate wording only: no canonical axiom was
+edited, and N1--N8 rejects any necessity or constructive-route-exhaustion
+claim.
 
 The primary runner is `PASS=20 FAIL=0`; eleven mutation probes fail exactly at
 their targets; an independent SymPy calculation agrees. The source, cache,
@@ -65,7 +66,7 @@ owned by PR #6061; 1,044 tracked generated changes and 814 generated ledger
 shards were removed after the run. Continue without `review-loop`.
 
 Next campaign block: test a constructive derivation of the registered
-measurable outcome partitions and same-effect descent from Record plus
-Admissibility. If current structure underdetermines them, seek an exact paired-
-model witness and report the residual axiom update; do not edit the canonical
-axiom memo without owner authorization.
+measurable event partitions, same-effect descent, and content-only Record
+bridge from Record plus Admissibility. If current structure underdetermines
+them, seek an exact paired-model witness and report the residual axiom update;
+do not edit the canonical axiom memo without owner authorization.

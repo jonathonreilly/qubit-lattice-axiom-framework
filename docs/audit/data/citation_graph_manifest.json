@@ -1,6 +1,6 @@
 {
- "edge_count": 15594,
- "node_count": 5484,
+ "edge_count": 15597,
+ "node_count": 5485,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -13692,6 +13692,10 @@
   },
   "physical_cell_cutting_fourteen_frontier_cycle741_note_2026-08-05": {
    "deps_hash": "5f68f24a11a0",
+   "out_degree": 3
+  },
+  "physical_cell_cutting_full_symmetry_certified_cycle744_note_2026-08-05": {
+   "deps_hash": "9696050bd7d0",
    "out_degree": 3
   },
   "physical_cell_cutting_hidden_three_bit_geometry_cycle743_note_2026-08-05": {

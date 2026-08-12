@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/physical_least_cost_cutting_piece_charge_cycle735_independent_check_2026_08_05.py
+runner_sha256: 03762bee82892193629e4247531901dd7d59738fa80b47a3bfe1db5398fad54c
+input_fingerprint_sha256: 647965bf1bc375749edb4f1ac145b210457d43dcd4525130f92fd7c2e7d59309
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 16.25
+status: ok
+----- stdout -----
+PASS independent supplied cell census  2,672 unit pieces; four-coordinate charge counts 400/1,216/864/192
+PASS independent carried action  48 elements and 57 piece orbits
+PASS independent generic chamber  2,736 points; no boundary incidence
+PASS opposite-pivot complete floor population  15,800 covers, 192 used pieces, 24 pieces each
+PASS independent exact dissection geometry  2,928 primitive normals separate all 15,168 cooccurring pairs
+PASS independent packed-XOR move census  all 124,812,100 pairs; move counts 46,128/31,968/60,096/151,704
+PASS independent region reconstruction  46,128 smallest moves reduce to 120 exact region keys
+PASS direct Cycle 734 receipt binding  Cycle 734 floor, move, and region results match reconstruction
+PASS independent whole-component cube census  349 components; 276 whole cubes cover 480 vertices in dimensions 0..2
+PASS independent embedded-cube closure  160 labelled dimension-6 cubes; exhaustive closure finds none in dimension 7
+PASS independent dense GF2 charge solve  ranks 86/87; induced dimensions 2/1; sides 7,704/8,096; reversed-size6 inconsistent
+PASS independent region-family rank structure  all single deletions retain rank86; family deletion size/ranks match five families
+PASS independent larger-move charge readback  reversals at sizes 4/6/7/8 are 46128/0/26880/28608
+PASS independent finite move-isolated set  48 vertices form one symmetry orbit on the smaller, symmetry-fixed charge side
+PASS hostile independent controls  one flipped region target, a duplicated cover, and reversed-size6 demands fail
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

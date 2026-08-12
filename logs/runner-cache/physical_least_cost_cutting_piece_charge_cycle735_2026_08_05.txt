@@ -1,0 +1,65 @@
+===== runner cache v1 =====
+runner: scripts/physical_least_cost_cutting_piece_charge_cycle735_2026_08_05.py
+runner_sha256: 138e882d87b78878601ea138df90c80747217a16f45e5480a2b2bb9c215d67d1
+input_fingerprint_sha256: 136e7dff040d4769d9873a6ad8047a8a699c2dc6aa4dcd06446b6e9ba7884255
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 14.52
+status: ok
+----- stdout -----
+
+the cuttings of the cell at the floor of the cost
+PASS base.cell  subsets=4368, unit pieces=2672, boundary-free points=2736, action=48, orbits=57
+PASS base.floor  a complete search over the 400 pieces of least cost 6 visits 502838 nodes and finds 15800 cuttings of 24 pieces each, between them using 192 pieces
+PASS base.gram  the float32 Gram path contains only exact integer sums of 24 bits
+PASS base.region  the smallest move replaces four pieces and occurs in 46128 ways; those recut 120 regions, each holding exactly two cuts at the floor, and the two cuts of a region share no piece
+PASS dep.cycle734  Cycle 734's exact floor population, move ladder, and region census are input-bound
+
+how many of those switches a cutting offers at once
+PASS sw.count  region-degree census [(0, 144), (1, 192), (2, 624), (3, 1600), (4, 2304), (5, 1920), (6, 4448), (7, 1344), (8, 672), (9, 1728), (10, 192), (12, 432), (15, 192), (24, 8)]; total 92256=2*46128
+PASS sw.match  cutting by cutting that number is exactly the number of smallest moves out of it, and no cutting holds both cuts of any region
+
+whole-component cubes and embedded commuting switches
+PASS grp.count  under the smallest move the 15800 cuttings fall into 349 groups of sizes [(1, 144), (2, 96), (4, 36), (7, 48), (236, 24), (9320, 1)]
+PASS grp.cube  276 whole connected components are switch cubes, covering 480 cuttings; their dimensions are [0, 1, 2], and no other component even has power-of-two size
+PASS grp.embedded  exhaustive labelled closure finds 160 embedded dimension-6 switch cubes (64 cuttings each), and no dimension 7; one starts at cutting 4
+PASS grp.seven  48 identical seven-cutting components: 4 regions, 8 moves, degrees 4 and 2
+PASS grp.share  of the 273936 pairs of switches a cutting offers at once 54912 share a piece and so cannot both be thrown; the cuttings with no sharing pair number 8880
+PASS grp.giant  the largest group holds 9320 of the 15800 cuttings with 33216 moves between them, the farthest 16 moves from the first
+PASS grp.orbit  the 349 groups fall into 14 orbits of the cell symmetry; the 144 cuttings with no smallest move at all lie in 6 of them, and the largest group is carried to itself by all 48
+
+a label on the pieces
+PASS lab.one  asking that the sum of the label over a cutting reverse under every smallest move is 120 demands of rank 86 on the 192 pieces in play; they are consistent, leave 106 weights free, and the labels reach 2 to the power 2
+PASS lab.two  asking as well that it hold under every move on six pieces raises the rank to 87, leaves 105 free, and cuts the labels to 2 to the power 1
+PASS lab.core  all 120 single-row deletions keep rank 86; five family deletions give [(12, 84), (12, 84), (24, 75), (24, 83), (48, 64)]
+PASS lab.same  the two labels differ on every one of the 15800 cuttings, so they name the same two sided split, of sizes [7704, 8096]
+PASS lab.show  one such label sits on 56 of the 192 pieces and puts the two cuts of all 120 regions on opposite sides; drop any single piece from it and at least one region is left unsplit, the best such attempt reaching 115
+PASS lab.move  the label read back off the pieces meets both demands: every one of the 46128 smallest moves reverses it and none of the 31968 moves on six pieces does
+PASS lab.keep  on larger moves it does both: 26880 of 60096 moves on seven pieces reverse it and 28608 of 151704 on eight, so it is not reversed by every move
+PASS lab.flip  the fixed 192-piece additive GF(2) ansatz is inconsistent if both four- and six-piece moves are required to reverse
+PASS lab.bare  dropping the demand that the label be read off the pieces, the same two demands leave one free sign for each of the 157 groups under moves on four and six pieces, that is 2 to the power 157 labellings
+PASS lab.sym  all 48 symmetries of the cell carry the label to itself, and the 157 groups fall into 5 orbits under them
+PASS lab.local  inside the tested family-constant and coordinate-parity subfamilies, the best separates 48/120 and 0/120 regions respectively (4 families, 16 weights, 5 coordinate sums)
+PASS lab.split  inside each group the label splits the cuttings as [(1, 0, 144), (2, 1, 96), (4, 2, 36), (7, 3, 48), (236, 104, 24), (9320, 4616, 1)], written as the size of the group, the smaller side, and how many groups do that
+
+the next move up, and the cuttings that cannot move at all
+PASS six.split  of the 31968 moves on six pieces 21696 stay inside one group of the smallest move, and every one of those joins two cuttings exactly two smallest moves apart; the other 10272 join two different groups
+PASS six.ladder  allowing moves on four up to ten pieces the cuttings join into [349, 349, 157, 61, 61, 13, 1] groups, of which [144, 144, 48, 48, 48, 0, 0] hold a single cutting
+PASS six.frozen  48 cuttings are isolated through size 8, form one orbit, and lie on the smaller charge side; size<=10 degrees on the size-4 isolated set are [(20, 48), (60, 48), (80, 48)]
+
+hostile controls
+PASS hostile.weight  removing one selected piece breaks a required region reversal
+PASS hostile.six  the six-piece keep system is consistent while the reversal mutation is not
+PASS hostile.cover  duplicating one piece is rejected by the exact-cover cardinality
+
+N5 execution certificate
+N5 per_element: checked -- all 192 used pieces and all 120 exact region rows
+N5 per_site: checked -- one supplied 16-corner four-cube; no physical cell selection
+N5 per_mode: checked and not executed -- no field, spectral, or momentum modes
+N5 per_block: checked -- all 15,800 cuttings, 124,812,100 pairs, move graphs, and cubes
+N5 lattice_wide: checked and not executed -- no multi-cell, arbitrary-L, or continuum claim
+RECEIPT outputs/physical_least_cost_cutting_piece_charge_cycle735_2026_08_05_receipt_2026-08-05.json
+TOTAL: PASS=32 FAIL=0
+
+----- stderr -----
+

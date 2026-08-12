@@ -6,25 +6,112 @@ length four, cut into pieces of least volume at the floor of the adjacency cost.
 carries a reading when, on every cutting, the parity of how many of its pieces that
 cutting uses reproduces the reading. Earlier cycles completed the search at every set of
 at most eight pieces, at exactly ten and at exactly twelve and found none of the six
-charge readings there, and the forced total parity of each charge bars every odd size.
+nonconstant algebraic readings there, and their forced total parity bars every odd size.
 This runner reproduces those sweeps and then completes the search at exactly fourteen
 against eighteen readings: the constant zero, the constant one, the two sides of each of
-the three charges, four planted controls, five planted fourteen-piece controls, and one
+the six nonconstant readings, four planted controls, five planted fourteen-piece controls, and one
 synthetic reading whose forced total parity is odd.
 
 Class-A: integer and field-with-two-elements arithmetic on a finite explicit object, no
 solver. Every count below is measured here.
 """
+import hashlib
 import itertools
+import json
 import math
 import resource
+import sys
 import time
+from pathlib import Path
 
 import numpy as np
 
 T0 = time.time()
 PF = [0, 0]
 OUT = [0]
+GATES = []
+ROOT = Path(__file__).resolve().parents[1]
+C737_NOTE_PATH = "docs/PHYSICAL_CELL_CUTTING_LEAST_COMPUTING_SETS_CYCLE737_NOTE_2026-08-05.md"
+C737_PRIMARY_PATH = "scripts/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05.py"
+C737_CHECKER_PATH = (
+    "scripts/physical_cell_cutting_least_computing_sets_cycle737_"
+    "independent_check_2026_08_05.py"
+)
+C737_RECEIPT_PATH = (
+    "outputs/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05_"
+    "receipt_2026-08-05.json"
+)
+C737_INDEPENDENT_RECEIPT_PATH = (
+    "outputs/physical_cell_cutting_least_computing_sets_cycle737_independent_check_"
+    "2026_08_05_receipt_2026-08-05.json"
+)
+C739_NOTE_PATH = "docs/PHYSICAL_CELL_CUTTING_TWELVE_FRONTIER_CYCLE739_NOTE_2026-08-05.md"
+C739_PRIMARY_PATH = "scripts/physical_cell_cutting_twelve_frontier_cycle739_2026_08_05.py"
+C739_CHECKER_PATH = (
+    "scripts/physical_cell_cutting_twelve_frontier_cycle739_"
+    "independent_check_2026_08_05.py"
+)
+C739_RECEIPT_PATH = (
+    "outputs/physical_cell_cutting_twelve_frontier_cycle739_2026_08_05_"
+    "receipt_2026-08-05.json"
+)
+C739_INDEPENDENT_RECEIPT_PATH = (
+    "outputs/physical_cell_cutting_twelve_frontier_cycle739_independent_check_"
+    "2026_08_05_receipt_2026-08-05.json"
+)
+NOTE_PATH = "docs/PHYSICAL_CELL_CUTTING_FOURTEEN_FRONTIER_CYCLE741_NOTE_2026-08-05.md"
+CHECKER_PATH = (
+    "scripts/physical_cell_cutting_fourteen_frontier_cycle741_"
+    "independent_check_2026_08_05.py"
+)
+PRIMARY_PATH = "scripts/physical_cell_cutting_fourteen_frontier_cycle741_2026_08_05.py"
+RECEIPT_PATH = ROOT / (
+    "outputs/physical_cell_cutting_fourteen_frontier_cycle741_2026_08_05_"
+    "receipt_2026-08-05.json"
+)
+AUDIT_INPUT_PATHS = (
+    "docs/PHYSICAL_CELL_CUTTING_LEAST_COMPUTING_SETS_CYCLE737_NOTE_2026-08-05.md",
+    "scripts/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05.py",
+    "scripts/physical_cell_cutting_least_computing_sets_cycle737_"
+    "independent_check_2026_08_05.py",
+    "outputs/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05_"
+    "receipt_2026-08-05.json",
+    "outputs/physical_cell_cutting_least_computing_sets_cycle737_independent_check_"
+    "2026_08_05_receipt_2026-08-05.json",
+    "docs/PHYSICAL_CELL_CUTTING_TWELVE_FRONTIER_CYCLE739_NOTE_2026-08-05.md",
+    "scripts/physical_cell_cutting_twelve_frontier_cycle739_2026_08_05.py",
+    "scripts/physical_cell_cutting_twelve_frontier_cycle739_"
+    "independent_check_2026_08_05.py",
+    "outputs/physical_cell_cutting_twelve_frontier_cycle739_2026_08_05_"
+    "receipt_2026-08-05.json",
+    "outputs/physical_cell_cutting_twelve_frontier_cycle739_independent_check_"
+    "2026_08_05_receipt_2026-08-05.json",
+    "docs/PHYSICAL_CELL_CUTTING_FOURTEEN_FRONTIER_CYCLE741_NOTE_2026-08-05.md",
+    "scripts/physical_cell_cutting_fourteen_frontier_cycle741_"
+    "independent_check_2026_08_05.py",
+)
+AUDIT_TIMEOUT_SEC = 900
+
+
+def file_sha256(relative_path):
+    return hashlib.sha256((ROOT / relative_path).read_bytes()).hexdigest()
+
+
+def receipt_inputs_current(receipt, required_paths):
+    expected = receipt.get("input_sha256", {})
+    return set(expected) == set(required_paths) and all(
+        expected.get(path) == file_sha256(path) for path in required_paths
+    )
+
+
+C737_RECEIPT = json.loads((ROOT / C737_RECEIPT_PATH).read_text(encoding="utf-8"))
+C737_INDEPENDENT_RECEIPT = json.loads(
+    (ROOT / C737_INDEPENDENT_RECEIPT_PATH).read_text(encoding="utf-8")
+)
+C739_RECEIPT = json.loads((ROOT / C739_RECEIPT_PATH).read_text(encoding="utf-8"))
+C739_INDEPENDENT_RECEIPT = json.loads(
+    (ROOT / C739_INDEPENDENT_RECEIPT_PATH).read_text(encoding="utf-8")
+)
 
 
 def emit(s):
@@ -37,8 +124,19 @@ def emit(s):
 
 
 def gate(ok, name, detail):
-    PF[0 if ok else 1] += 1
-    emit(("PASS " if ok else "FAIL ") + name + "  " + detail)
+    passed = bool(ok)
+    PF[0 if passed else 1] += 1
+    GATES.append((name, passed))
+    emit(("PASS " if passed else "FAIL ") + name + "  " + detail)
+
+
+def dependency_smoke():
+    gate(IDENTITY_OK and C739_OK, "D01",
+         "Cycles 737 and 739 bind the exact incidence, eight readings, and complete "
+         "weight-twelve predecessor result")
+    if len(sys.argv) > 1 and sys.argv[1] == "smoke":
+        emit("TOTAL: PASS={0} FAIL={1}".format(PF[0], PF[1]))
+        raise SystemExit(1 if PF[1] else 0)
 
 
 
@@ -366,6 +464,166 @@ PLANT = [("pair (2,2)", (10, 55, 120, 168)),
 for pname, psupp in PLANT:
     TGT.append((pname, (INCL[:, list(psupp)].sum(axis=1) & 1).astype(np.uint8)))
 NT = len(TGT)
+
+# Cycle 737 fixes the exact algebraic reading identities on the supplied incidence;
+# Cycle 739 fixes the complete exact-weight-twelve predecessor result.  Rebuild all
+# bytes locally and reject stale or incomplete dependency receipts before searching.
+EXPECTED_NAMES = [
+    "zero", "one", "four", "four-flip", "six", "six-flip", "seven", "seven-flip"
+]
+CTUP = [[int(corner) for corner in UNI[piece]] for piece in USED]
+PACKED_INCIDENCE_ROWS = [bytes(row) for row in np.packbits(INC, axis=1)]
+
+
+def canonical_reading_hash(function):
+    return hashlib.sha256(b"".join(sorted(
+        row + bytes((int(bit),))
+        for row, bit in zip(PACKED_INCIDENCE_ROWS, function)
+    ))).hexdigest()
+
+
+C737_PRIMARY_INPUTS = (
+    C737_NOTE_PATH,
+    C737_CHECKER_PATH,
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+    "docs/PHYSICAL_CELL_CUTTING_CHARGE_SPACE_CYCLE736_NOTE_2026-08-05.md",
+    "scripts/physical_cell_cutting_charge_space_cycle736_2026_08_05.py",
+    "scripts/physical_cell_cutting_charge_space_cycle736_independent_check_2026_08_05.py",
+    "outputs/physical_cell_cutting_charge_space_cycle736_2026_08_05_"
+    "receipt_2026-08-05.json",
+)
+C737_INDEPENDENT_INPUTS = (
+    C737_NOTE_PATH,
+    C737_PRIMARY_PATH,
+    C737_RECEIPT_PATH,
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+    "docs/PHYSICAL_CELL_CUTTING_CHARGE_SPACE_CYCLE736_NOTE_2026-08-05.md",
+    "scripts/physical_cell_cutting_charge_space_cycle736_2026_08_05.py",
+    "scripts/physical_cell_cutting_charge_space_cycle736_independent_check_2026_08_05.py",
+    "outputs/physical_cell_cutting_charge_space_cycle736_2026_08_05_"
+    "receipt_2026-08-05.json",
+)
+C739_PRIMARY_INPUTS = (
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+    "docs/PHYSICAL_CELL_CUTTING_CHARGE_SPACE_CYCLE736_NOTE_2026-08-05.md",
+    "scripts/physical_cell_cutting_charge_space_cycle736_2026_08_05.py",
+    "scripts/physical_cell_cutting_charge_space_cycle736_independent_check_2026_08_05.py",
+    "outputs/physical_cell_cutting_charge_space_cycle736_2026_08_05_"
+    "receipt_2026-08-05.json",
+    C737_NOTE_PATH,
+    C737_PRIMARY_PATH,
+    C737_CHECKER_PATH,
+    C737_RECEIPT_PATH,
+    C737_INDEPENDENT_RECEIPT_PATH,
+    "docs/PHYSICAL_CELL_CUTTING_SIZE_TEN_FRONTIER_CYCLE738_NOTE_2026-08-05.md",
+    "scripts/physical_cell_cutting_size_ten_frontier_cycle738_2026_08_05.py",
+    "scripts/physical_cell_cutting_size_ten_frontier_cycle738_"
+    "independent_check_2026_08_05.py",
+    "outputs/physical_cell_cutting_size_ten_frontier_cycle738_2026_08_05_"
+    "receipt_2026-08-05.json",
+    "outputs/physical_cell_cutting_size_ten_frontier_cycle738_independent_check_"
+    "2026_08_05_receipt_2026-08-05.json",
+    C739_NOTE_PATH,
+    C739_CHECKER_PATH,
+    "requirements.txt",
+    "requirements-release.txt",
+)
+C739_INDEPENDENT_INPUTS = (
+    C739_NOTE_PATH,
+    C739_CHECKER_PATH,
+    C739_PRIMARY_PATH,
+    C739_RECEIPT_PATH,
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+    "docs/PHYSICAL_CELL_CUTTING_CHARGE_SPACE_CYCLE736_NOTE_2026-08-05.md",
+    "scripts/physical_cell_cutting_charge_space_cycle736_2026_08_05.py",
+    "scripts/physical_cell_cutting_charge_space_cycle736_independent_check_2026_08_05.py",
+    "outputs/physical_cell_cutting_charge_space_cycle736_2026_08_05_"
+    "receipt_2026-08-05.json",
+    C737_NOTE_PATH,
+    C737_PRIMARY_PATH,
+    C737_CHECKER_PATH,
+    C737_RECEIPT_PATH,
+    C737_INDEPENDENT_RECEIPT_PATH,
+    "docs/PHYSICAL_CELL_CUTTING_SIZE_TEN_FRONTIER_CYCLE738_NOTE_2026-08-05.md",
+    "scripts/physical_cell_cutting_size_ten_frontier_cycle738_2026_08_05.py",
+    "scripts/physical_cell_cutting_size_ten_frontier_cycle738_"
+    "independent_check_2026_08_05.py",
+    "outputs/physical_cell_cutting_size_ten_frontier_cycle738_2026_08_05_"
+    "receipt_2026-08-05.json",
+    "outputs/physical_cell_cutting_size_ten_frontier_cycle738_independent_check_"
+    "2026_08_05_receipt_2026-08-05.json",
+    "requirements.txt",
+    "requirements-release.txt",
+)
+READING_IDENTITY = C737_RECEIPT.get("reading_identity", {})
+FUNCTION_IDENTITY = READING_IDENTITY.get("functions", {})
+INDEPENDENT_IDENTITY = C737_INDEPENDENT_RECEIPT.get("reading_identity", {})
+IDENTITY_OK = (
+    C737_RECEIPT.get("schema") == "physical-cell-cutting-least-computing-sets-cycle737-v2"
+    and C737_RECEIPT.get("status") == "pass"
+    and C737_RECEIPT.get("gates", {}).get("fail") == 0
+    and C737_RECEIPT.get("runner_sha256") == file_sha256(C737_PRIMARY_PATH)
+    and receipt_inputs_current(C737_RECEIPT, C737_PRIMARY_INPUTS)
+    and C737_INDEPENDENT_RECEIPT.get("schema")
+    == "physical-cell-cutting-least-computing-sets-cycle737-independent-v1"
+    and C737_INDEPENDENT_RECEIPT.get("status") == "pass"
+    and C737_INDEPENDENT_RECEIPT.get("gates", {}).get("fail") == 0
+    and C737_INDEPENDENT_RECEIPT.get("runner_sha256") == file_sha256(C737_CHECKER_PATH)
+    and receipt_inputs_current(C737_INDEPENDENT_RECEIPT, C737_INDEPENDENT_INPUTS)
+    and INDEPENDENT_IDENTITY.get("canonical_incidence_rows_sha256")
+    == READING_IDENTITY.get("canonical_incidence_rows_sha256")
+    and INDEPENDENT_IDENTITY.get("support_column_order_sha256")
+    == READING_IDENTITY.get("support_column_order_sha256")
+    and READING_IDENTITY.get("incidence_packbits_sha256")
+    == hashlib.sha256(np.packbits(INC, axis=1).tobytes()).hexdigest()
+    and READING_IDENTITY.get("canonical_incidence_rows_sha256")
+    == hashlib.sha256(b"".join(sorted(PACKED_INCIDENCE_ROWS))).hexdigest()
+    and READING_IDENTITY.get("support_column_order_sha256")
+    == hashlib.sha256(json.dumps(CTUP, separators=(",", ":")).encode("utf-8")).hexdigest()
+)
+for name, (_local_name, function) in zip(EXPECTED_NAMES, TGT[:8]):
+    metadata = FUNCTION_IDENTITY.get(name, {})
+    independent_metadata = INDEPENDENT_IDENTITY.get("functions", {}).get(name, {})
+    IDENTITY_OK = IDENTITY_OK and metadata.get("ones") == int(function.sum())
+    IDENTITY_OK = IDENTITY_OK and metadata.get("packbits_sha256") == hashlib.sha256(
+        np.packbits(function).tobytes()
+    ).hexdigest()
+    IDENTITY_OK = IDENTITY_OK and metadata.get(
+        "canonical_rows_with_bit_sha256"
+    ) == canonical_reading_hash(function)
+    IDENTITY_OK = IDENTITY_OK and independent_metadata.get("ones") == metadata.get("ones")
+    IDENTITY_OK = IDENTITY_OK and independent_metadata.get(
+        "canonical_rows_with_bit_sha256"
+    ) == metadata.get("canonical_rows_with_bit_sha256")
+
+C739_SEARCH = C739_RECEIPT.get("complete_search_at_twelve", {})
+C739_ANSWERS = C739_INDEPENDENT_RECEIPT.get("exact_weight_twelve_answers", {})
+C739_OK = (
+    C739_RECEIPT.get("schema") == "physical-cell-cutting-twelve-frontier-cycle739-v2"
+    and C739_RECEIPT.get("status") == "pass"
+    and C739_RECEIPT.get("gates", {}).get("fail") == 0
+    and C739_RECEIPT.get("runner_sha256") == file_sha256(C739_PRIMARY_PATH)
+    and receipt_inputs_current(C739_RECEIPT, C739_PRIMARY_INPUTS)
+    and C739_INDEPENDENT_RECEIPT.get("schema")
+    == "physical-cell-cutting-twelve-frontier-cycle739-independent-v1"
+    and C739_INDEPENDENT_RECEIPT.get("status") == "pass"
+    and C739_INDEPENDENT_RECEIPT.get("gates", {}).get("fail") == 0
+    and C739_INDEPENDENT_RECEIPT.get("checker_sha256") == file_sha256(C739_CHECKER_PATH)
+    and receipt_inputs_current(C739_INDEPENDENT_RECEIPT, C739_INDEPENDENT_INPUTS)
+    and C739_SEARCH.get("readings", [])[:8] == EXPECTED_NAMES
+    and C739_SEARCH.get("counts", [])[:8] == [7808, 3072, 0, 0, 0, 0, 0, 0]
+    and C739_SEARCH.get("execution_inventory_exact") is True
+    and C739_SEARCH.get("mismatched_returns") == 0
+    and C739_SEARCH.get("duplicate_returns") == 0
+    and C739_ANSWERS.get("zero") is True
+    and C739_ANSWERS.get("one") is True
+    and all(C739_ANSWERS.get(name) is False for name in EXPECTED_NAMES[2:])
+)
+dependency_smoke()
 
 # ---- the 88 pivot cuttings and a piece's packed parities, rebuilt from INC ----
 EPACK = np.packbits(INC, axis=1, bitorder="little")
@@ -1332,7 +1590,7 @@ for t in range(NTG):
 emit("in-column-space " + vshow([1 if a else 0 for a in ACH]))
 gate(len(CBAS) == ERANK and all(ACH[:TCTL]) and not ACH[TCTL], "G11",
      "all but the synthetic reading lie in the column space, so each of the six "
-     "charges is carried by some set")
+     "nonconstant readings is carried by some set")
 
 # ---- licensed cells, by direct enumeration and by the square continuation ----
 SIZES = (2, 4, 6, 8, 10, 12, 14)
@@ -1379,7 +1637,7 @@ gate(C8[0] == 648 and C8[1] == 192 and V8[1] == 0 and V8[2] == 0
      "constant zero reading and {1} the constant one reading, all {2} "
      "recorded sets verified".format(C8[0], C8[1], V8[0]))
 gate(all(C8[t] == 0 for t in SIX) and C8[TCTL] == 0, "G16",
-     "no set of eight or fewer carries either side of any charge, or the synthetic odd "
+     "no set of eight or fewer carries any nonconstant reading, or the synthetic odd "
      "reading")
 gate(N8Z == 22 and O8Z == {24: 17, 48: 5} and CL8Z and N8O == 5
      and O8O == {24: 2, 48: 3} and CL8O, "G17",
@@ -1486,13 +1744,13 @@ gate(C14[TCTL] == 0 and C10[TCTL] == 0 and C12[TCTL] == 0 and C8[TCTL] == 0, "G3
      "searched")
 
 gate(all(C14[t] == 0 for t in SIX), "G31",
-     "neither side of any of the three charges is carried by any set of exactly "
+     "none of the six nonconstant readings is carried by any set of exactly "
      "fourteen pieces")
 gate(all(C8[t] == 0 for t in SIX) and all(C10[t] == 0 for t in SIX)
      and all(C12[t] == 0 for t in SIX) and all(C14[t] == 0 for t in SIX)
      and all(fbit("total", t) == 0 for t in SIX), "G32",
      "the searches at every even size to fourteen are complete and empty for the six, "
-     "and each forces an even total, barring every odd size: the six charges need at "
+     "and each forces an even total, barring every odd size: the six readings need at "
      "least sixteen pieces")
 
 EL = time.time() - T0
@@ -1502,8 +1760,93 @@ emit("elapsed under {0} s peak memory under {1} MB".format(ELB, RSB))
 gate(EL < 900.0 and RSS < float(RSB), "G33",
      "the whole runner finishes under {0} seconds inside the printed {1} MB".format(
          900, 2500))
-CH = OUT[0] + 120
-gate(CH < 5500, "G34", "its output stays under {0} characters".format(5500))
 
+N5 = [
+    "per_element: checked -- all 192 columns enter every exact support search",
+    "per_site: checked -- one supplied 16-corner coordinate cell only",
+    "per_mode: checked and not executed -- this finite model has no modes",
+    "per_block: checked -- all 15800 rows and every licensed search cell",
+    "lattice_wide: checked and not executed -- no multicell or limit claim",
+]
+for line in N5:
+    emit("N5 " + line)
+CH = OUT[0] + 180
+gate(CH < 6000, "G34", "its output stays under {0} characters".format(6000))
+
+receipt = {
+    "schema": "physical-cell-cutting-fourteen-frontier-cycle741-v2",
+    "status": "pass" if PF[1] == 0 else "fail",
+    "claim_type": "bounded_theorem",
+    "audit_status_authority": "independent audit lane only",
+    "input_sha256": {path: file_sha256(path) for path in AUDIT_INPUT_PATHS},
+    "runner_sha256": file_sha256(PRIMARY_PATH),
+    "supplied_model": {
+        "geometric_cuttings": NS,
+        "used_pieces": NPO,
+        "pieces_per_cutting": int(INC.sum(axis=1).min()),
+        "incidence_rank": ERANK,
+        "kernel_dimension": NKER,
+        "physical_reading_identification": "open",
+    },
+    "direct_dependencies": {
+        "cycle737": {
+            "status": C737_RECEIPT.get("status"),
+            "independent_status": C737_INDEPENDENT_RECEIPT.get("status"),
+            "reading_identity_bound": IDENTITY_OK,
+        },
+        "cycle739": {
+            "status": C739_RECEIPT.get("status"),
+            "independent_status": C739_INDEPENDENT_RECEIPT.get("status"),
+            "exact_weight_twelve_bound": C739_OK,
+        },
+    },
+    "complete_search_at_fourteen": {
+        "readings": TNAME,
+        "counts": C14,
+        "licensed_cells_per_reading": LIC14,
+        "scheduled_splits": NSPL14,
+        "executed_splits": NDS14,
+        "execution_inventory_exact": COV14 == LIC14 and NSPL14 == NDS14,
+        "verified_returns": V14[0],
+        "mismatched_returns": V14[1],
+        "duplicate_returns": V14[2],
+    },
+    "nonconstant_reading_bound": {
+        "reading_names": EXPECTED_NAMES[2:],
+        "complete_even_sizes": [2, 4, 6, 8, 10, 12, 14],
+        "odd_sizes_barred_by_total_parity": True,
+        "minimum_support_lower_bound": 16,
+        "sixteen_sufficiency_shown": False,
+    },
+    "constant_families_at_fourteen": {
+        "zero_supports": C14[0],
+        "one_coset_supports": C14[1],
+        "zero_orbits": ORB14.get(0),
+        "one_orbits": ORB14.get(1),
+        "covariance_closed": CL14,
+        "claimed_as_completeness_proof": False,
+    },
+    "quarter_subcode": {
+        "dimension": len(K0),
+        "weight_eight_words": NW8,
+        "weight_twelve_words": NW12,
+        "weight_fourteen_words": NW14,
+    },
+    "no_go_discipline": {
+        "status": "PASS" if PF[1] == 0 else "FAIL",
+        "claim_scope": "exact-weight-fourteen emptiness for six named functions in one supplied incidence system",
+        "n5_execution_certificate": N5,
+    },
+    "gates": {
+        "pass": PF[0],
+        "fail": PF[1],
+        "named": {name: "PASS" if ok else "FAIL" for name, ok in GATES},
+    },
+}
+receipt_tmp = RECEIPT_PATH.with_suffix(RECEIPT_PATH.suffix + ".tmp")
+receipt_tmp.write_text(json.dumps(receipt, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+receipt_tmp.replace(RECEIPT_PATH)
+emit("RECEIPT " + str(RECEIPT_PATH.relative_to(ROOT)))
 emit("")
-print("TOTAL: PASS={0} FAIL={1}".format(PF[0], PF[1]))
+emit("TOTAL: PASS={0} FAIL={1}".format(PF[0], PF[1]))
+sys.exit(1 if PF[1] else 0)

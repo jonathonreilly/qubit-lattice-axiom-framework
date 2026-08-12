@@ -283,6 +283,12 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
         "scripts/physical_cell_cutting_forced_certificate_cycle740_"
         "independent_check_2026_08_05.py",
     ],
+    # Cycle 741's checker reconstructs the cutting incidence with the opposite
+    # cover pivot and uses an independent exact-cardinality XOR/CNF solver.
+    "physical_cell_cutting_fourteen_frontier_cycle741_note_2026-08-05": [
+        "scripts/physical_cell_cutting_fourteen_frontier_cycle741_"
+        "independent_check_2026_08_05.py",
+    ],
     "b4_clock_relation_run_cycle879_bounded_theorem_note_2026-07-28": [
         "scripts/frontier_cycle879_b4_relation_independent_check_2026_07_28.py",
     ],

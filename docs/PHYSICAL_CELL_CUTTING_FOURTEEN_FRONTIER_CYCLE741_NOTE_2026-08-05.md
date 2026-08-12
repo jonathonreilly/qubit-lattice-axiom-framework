@@ -1,4 +1,4 @@
-# The complete search at fourteen is empty for the six charges — Cycle 741
+# Exact weight-fourteen frontier for six finite algebraic readings — Cycle 741
 
 Date: 2026-08-05
 
@@ -15,6 +15,7 @@ Claim type: bounded_theorem
 Runners:
 
 - [the complete search at fourteen, licensing, orbit inventories, planted controls](../scripts/physical_cell_cutting_fourteen_frontier_cycle741_2026_08_05.py)
+- [independent opposite-pivot exact-cardinality checker](../scripts/physical_cell_cutting_fourteen_frontier_cycle741_independent_check_2026_08_05.py)
 
 Standing framework: [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)
 
@@ -22,6 +23,14 @@ Constitutional effect: none. This package changes no axiom, framework
 Admissibility rule, primitive, registry, policy, audit result, or audit status.
 It measures finite structure on an object the previous cycles already built, and
 nothing in it is promoted above its own scope.
+
+Direct scientific inputs are the exact finite population and eight algebraic
+function identities from [Cycle 737](PHYSICAL_CELL_CUTTING_LEAST_COMPUTING_SETS_CYCLE737_NOTE_2026-08-05.md)
+and the complete exact-weight-twelve result from
+[Cycle 739](PHYSICAL_CELL_CUTTING_TWELVE_FRONTIER_CYCLE739_NOTE_2026-08-05.md).
+Their primary and independent generated receipts are hash-bound in both Cycle 741
+executables. Cycle 740 is ordering context only: this package reconstructs its own
+row-space, block certificate and first-quarter kernel rather than importing Cycle 740.
 
 ## Result
 
@@ -32,45 +41,45 @@ dimension 104, all 15800 rows pairwise distinct, every piece used by exactly
 1975 cuttings. A piece set *carries* a reading when on every one of the 15800
 cuttings the parity of its meet with that cutting reproduces the reading there.
 
-The previous cycle searched every set of at most twelve pieces and found no set
-carrying either side of any of the three physical charges, and the forced-parity
+Cycle 739 searched every set of at most twelve pieces and found no set
+carrying any of the six named nonconstant algebraic readings, and the forced-parity
 certificate makes each of those six readings force an even whole, so every odd
 size is barred. Fourteen was the open size. This cycle runs the complete search
 at exactly fourteen.
 
-**Nothing at fourteen carries a charge.** The complete search over the licensed
+**None of the six named nonconstant readings has weight fourteen.** The complete search over the licensed
 cells at fourteen returns, on the eighteen readings carried through the runner,
 the counts
 
     34560,26880,0,0,0,0,0,0,2665,274,329,236,1,3,11,2,6,0
 
 The first two entries are the constant zero and constant one readings; the next
-six are the two sides of each of the three charges and every one of them is
+six are the named nonconstant readings and every one of them is
 empty; the next four are the planted controls; the next five are the planted
 fourteen-piece sets, each recovered by a search blind to it; the last is the
 synthetic reading, which lies outside the column space and licenses no cell at
 fourteen at all. All 64967 recorded sets recompute to their own reading on all
 15800 cuttings, have weight 14, and are distinct.
 
-**The floor for the six charge readings moves to sixteen.** The searches at two,
+**The lower bound for the six nonconstant readings moves to sixteen.** The searches at two,
 four, six, eight, ten, twelve and fourteen are complete and empty for the six in
 this same run, and each of the six forces an even whole, so no odd size can hold
-one either. A set carrying a side of one of the three charges therefore needs at
+one either. A support carrying any of the six readings therefore needs at
 least sixteen pieces.
 
 The zero and one readings at fourteen fall into 720 and 560 orbits respectively,
 every orbit of size 48, under the 48 symmetries that fix those readings. That is
 not decoration: a complete family of fourteen-piece carriers is closed under the
 symmetries that fix its reading, so it can only break into orbits whose sizes
-divide 48, and an incomplete search shows up there immediately as an orbit of
-some other size.
+divide 48. This covariance inventory is a necessary consistency check, not a
+proof of completeness: an incomplete union of whole orbits could still pass it.
 
 ## What was searched
 
 Eighteen readings are carried through every sweep at once:
 
 - the constant zero reading and the constant one reading;
-- the two sides of each of the three physical charges, six readings;
+- the six named nonconstant algebraic readings;
 - four planted controls of the previous cycles' construction;
 - five planted fourteen-piece sets, drawn from a printed fixed seed to the five
   quarter profiles 7-7-0-0, 4-4-4-2, 2-2-4-6, 0-2-4-8 and 0-0-2-12. Two of them,
@@ -151,12 +160,12 @@ Every line below is a gate in the runner, printed in this order, all passing.
 - G08  the sets inside the first quarter met evenly by every cutting form a space of dimension 14, all 16384 words verified
 - G09  its least nonzero weight is 8, with 30 words there and 63 at weight 12
 - G10  the five planted readings are fourteen distinct pieces each, drawn to the five quarter profiles their names carry
-- G11  all but the synthetic reading lie in the column space, so each of the six charges is carried by some set
+- G11  all but the synthetic reading lie in the column space, so each of the six nonconstant readings is carried by some set
 - G12  the cells an even reading licenses at sizes 2 to 12 are [5, 14, 30, 55, 91, 140] with square differences [9, 16, 25, 36, 49], reproducing an earlier cycle
 - G13  at fourteen the count 204 for an even reading equals the continuation 140 plus the next square 64, and 140 for an odd quarter reading equals 91 plus 49
 - G14  the synthetic reading, whose forced whole is odd, licenses no cell at fourteen
 - G15  a complete search of every set of at most eight pieces finds 648 carrying the constant zero reading and 192 the constant one reading, all 845 recorded sets verified
-- G16  no set of eight or fewer carries either side of any charge, or the synthetic odd reading
+- G16  no set of eight or fewer carries any nonconstant reading, or the synthetic odd reading
 - G17  the 648 zero-reading sets fall into 22 orbits of the symmetries, 17 of size 24 and 5 of size 48, and the 192 one-reading sets into 5 orbits, 2 of size 24 and 3 of size 48
 - G18  all 30 weight 8 words of the quarter subcode, enumerated apart from it, are among those 648
 - G19  a complete search at ten reproduces an earlier cycle on the twelve readings it shares: [0, 0, 0, 0, 0, 0, 0, 0, 108, 1, 2, 0], the synthetic reading licensing no cell
@@ -171,18 +180,18 @@ Every line below is a gate in the runner, printed in this order, all passing.
 - G28  each of the five planted fourteen piece sets is found by a search blind to it, including the two whose profile cuts one quarter and the one that cuts two
 - G29  the sets found at fourteen fall into orbits of the symmetries that fix their reading, of sizes dividing 48
 - G30  the synthetic reading outside the column space is carried by no set at any size searched
-- G31  neither side of any of the three charges is carried by any set of exactly fourteen pieces
-- G32  the searches at every even size to fourteen are complete and empty for the six, and each forces an even total, barring every odd size: the six charges need at least sixteen pieces
+- G31  none of the six nonconstant readings is carried by any set of exactly fourteen pieces
+- G32  the searches at every even size to fourteen are complete and empty for the six, and each forces an even total, barring every odd size: the six readings need at least sixteen pieces
 - G33  the whole runner finishes under 900 seconds inside the printed 2500 MB
-- G34  its output stays under 5500 characters
+- G34  its output stays under 6000 characters
 
-The runner keeps its output under 5500 characters, and the run is bounded at
+The runner keeps its output under 6000 characters, and the run is bounded at
 elapsed under 500 s and peak memory under 2500 MB, both printed and both checked
 against the measured run.
 
 ## Boundary and honest read
 
-The construction is one canonical cutting family in one fixed piece order. The
+The construction is one supplied cutting family in one fixed piece order. The
 block labels, the quarter and eighth partitions, and therefore the cells, are
 properties of that order: they are measured, not derived. Another order would
 relabel every cell in this note, and the forced-parity certificate that does the
@@ -210,27 +219,70 @@ cell that blew it would have been searched incompletely — the emptiness claim
 would then cover strictly less than it says. No cell reached the cap in this run,
 and the cap was not moved to make that true.
 
-The orbit inventory is a completeness check and not a summary. A complete family
+The orbit inventory is a covariance consistency check and not a completeness proof. A complete family
 of fourteen-piece carriers is closed under the 48 symmetries fixing the zero and
 one readings, so it must break into orbits of sizes dividing 48; the measured
-inventories are 720 orbits of size 48 and 560 orbits of
-size 48. A search that missed part of a cell would show an orbit of some other
-size, and the gate is written to fail on exactly that.
+inventories are 720 orbits of size 48 and 560 orbits of size 48. The gate catches
+many partial-cell defects, including the submitted planted defect, but a search
+that omitted one or more whole orbits could still pass it. Completeness rests on
+the exact search schedule plus the independent exact-cardinality encoding.
 
-On the six charges, this note says only that no set of at most fourteen pieces
-carries a side of one of them, and that every odd size is barred by the forced
+On the six nonconstant readings, this note says only that no set of at most fourteen pieces
+carries one of them, and that every odd size is barred by the forced
 even whole. It says nothing about sixteen beyond that bound: no search at sixteen
 was run, and nothing here shows a carrier at sixteen exists, or that the smallest
 carrier is unique, or what any such carrier would mean physically. The six
 readings do lie in the column space, so a carrier of some size exists for each of
 them; where the smallest one sits at or above sixteen is open.
 
+## No-Go Discipline Gate
+
+The negative statement is deliberately finite: in this one supplied 15,800-row
+by 192-column binary incidence system, six named functions have no support of
+weight fourteen. Combined with the Cycle 737/739 searches and the exact total
+parity, their minimum support is at least sixteen.
+
+- N1 — Alternative routes: five materially distinct attacks were executed:
+  the primary quarter/eighth meet-in-the-middle enumeration; independent
+  opposite-pivot reconstruction and exact-cardinality XOR/CNF solving; direct
+  full-row verification of every positive return; exact row-space licensing;
+  and planted weight-fourteen SAT recovery. They agree at the declared finite
+  boundary.
+- N2 — Wall independence: there is one finite UNSAT residual, not a portfolio
+  of physical walls. The previous-cardinality exclusions and the parity lemma
+  are separate inputs to the lower bound and are not called framework theorems.
+- N3 — Hidden-wall scan: `complete`, `canonical`, `physical`, `by construction`
+  and `previous cycle` were scanned. The cell, order, cost, piece class, function
+  identities and finite support universe are explicit supplied data; no
+  physical reading identification survives.
+- N4 — Residual matching: Cycle 737 binds exactly this population, order and
+  eight functions through weight eight; Cycle 739 binds exactly the same
+  functions at weight twelve. Cycle 740 is context only and carries no theorem
+  edge here.
+- N5 — Resolution: per element, all 192 columns; per site, one supplied
+  coordinate cell; per mode, none exists; per block, all 15,800 rows and every
+  licensed cell/CNF clause; lattice-wide, no multi-cell, arbitrary-L, boundary
+  or continuum execution.
+- N6 — Partial closure: other algebraic functions, coefficient fields,
+  nonlinear supports, piece classes, costs, cells, multi-cell assemblies and
+  physical identifications remain open. This result requires no new axiom.
+- N7 — Steelman: the primary join planner could omit a split or mishandle a
+  large quarter while its own positive controls still pass. The independent
+  exact-cardinality checker reconstructs the table with the opposite cover
+  pivot and does not use the primary cell schedule; it returns the same six
+  UNSAT answers while recovering planted SAT targets.
+- N8 — Cross-cycle echo: Cycles 737 and 739 are hash-bound direct predecessors.
+  Earlier finite floors are not authority for arbitrary domains, physical
+  identifications or continuum support laws.
+
+No-Go status for this exact finite weight-fourteen statement: PASS.
+
 ## Claim type
 
 `Claim type: bounded_theorem`. The claims are finite, integer and
 field-with-two-elements statements about an explicitly constructed 15800 by 192
 table, each one carrying a certificate checked in the runner. The conditionality
-is stated above: the cell labels are relative to the fixed canonical order, and
+is stated above: the cell labels are relative to the fixed declared order, and
 completeness is relative to the licensing the certificate supplies.
 
 ## Audit

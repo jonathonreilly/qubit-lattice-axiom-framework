@@ -427,6 +427,8 @@ gate(generator_ok and len(base_permutations) == 48
 
 
 def append_xor(cnf, literals, right_hand_side, top_id):
+    literals = [int(literal) for literal in literals]
+    right_hand_side = int(right_hand_side)
     if not literals:
         if right_hand_side:
             cnf.append([])

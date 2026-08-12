@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/physical_adjacency_admissible_assembly_trade_cycle723_independent_check_2026_08_03.py
-runner_sha256: 865071c5711e0725716387f3fd613f18e04bd001509288d69fbf824d1adf3876
+runner_sha256: cd4349ba96e8350b58f38c11ce444a13607e3a948a6c78f4dc7f999bb3777400
 input_fingerprint_sha256: 3bd26d121cb7d43e3c2926398b3390331675a028e7b3850d1cdc19843619ed6d
 timeout_sec: 120
 exit_code: 0
@@ -14,10 +14,11 @@ status: ok
 [PASS] exact_facet_census
 [PASS] exact_facet_and_cell_floors facet 18, unit-cell 48
 [PASS] primary_source_pin observed 45cc789d0721e329ce6c71c1b78c54490b68ea363ea92d25f675a6eae0800a94
+[PASS] supplied_runtime_closure_pins all 5 declared supplied inputs match
 [PASS] primary_receipt_exact_anchors
 [PASS] primary_receipt_numerical_scope
 INDEPENDENT BOUNDARY: exact one-cell corner-piece/facet enumeration only; numerical Cycle-696 rows remain supplied finite evidence
-TOTAL: PASS=9 FAIL=0
+TOTAL: PASS=10 FAIL=0
 
 ----- stderr -----
 

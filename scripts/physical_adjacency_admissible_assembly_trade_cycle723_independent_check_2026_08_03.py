@@ -31,6 +31,13 @@ RECEIPT = ROOT / "outputs" / (
     "receipt_2026-08-03.json"
 )
 PRIMARY_SHA256 = "45cc789d0721e329ce6c71c1b78c54490b68ea363ea92d25f675a6eae0800a94"
+PINNED_INPUT_SHA256 = {
+    AUDIT_INPUT_PATHS[1]: "2b289407e7cbe339bc25647f829f6831d3e9c1bc09b5dbe15b32ef1246dcea35",
+    AUDIT_INPUT_PATHS[2]: "8b82a5129eb098c9f67382340b41d9e931acdeb25991e3f784abd705a91e651b",
+    AUDIT_INPUT_PATHS[3]: "dcc397cbdade106d959b4fed41177f4928c8d2d99668b549c31af13ef5f7dcf1",
+    AUDIT_INPUT_PATHS[4]: "b5050b0df3d59b713448c399431a5028ea5c28c4c0d63e1a187a431d28a2f31d",
+    AUDIT_INPUT_PATHS[5]: "537371554e1a5244875645ca600f5f01e0ccfae64530572630d934e8ea0a85ce",
+}
 PASS = 0
 FAIL = 0
 
@@ -182,6 +189,10 @@ gate("exact_facet_and_cell_floors", facet_floor == 18 and cell_floor == 48,
 primary_sha = hashlib.sha256(PRIMARY.read_bytes()).hexdigest()
 gate("primary_source_pin", primary_sha == PRIMARY_SHA256,
      "observed {0}".format(primary_sha))
+observed_inputs = {path: hashlib.sha256((ROOT / path).read_bytes()).hexdigest()
+                   for path in PINNED_INPUT_SHA256}
+gate("supplied_runtime_closure_pins", observed_inputs == PINNED_INPUT_SHA256,
+     "all {0} declared supplied inputs match".format(len(observed_inputs)))
 try:
     receipt = json.loads(RECEIPT.read_text(encoding="utf-8"))
 except (OSError, ValueError):

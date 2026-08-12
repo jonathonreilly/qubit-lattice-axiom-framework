@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_regge_nonlinear_metric_completion_skew_momentum_ward_refinement_boundary_2026_08_12.py
+runner_sha256: 3c170251051ccd3127ff277b28d83259ac0049bb0115adf67bb16868c508fc93
+input_fingerprint_sha256: d823b73d4ce335f44a7c444a71c968999395d0c251b7475b2fff6c0de613265c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 112.88
+status: ok
+----- stdout -----
+analytic_boundary: exact second-order square-root metric embedding and one skew single-Bloch phase quotient of the actual Regge-plus-deficit-square action
+physical_boundary: constant-metric ten-tangent identity plus winding (1,2,3,0) static/null controls; not a uniform angular, all-source, or nonlinear evolution theorem
+uniform_identity: pairs=55 force/reaction/symbol ranks=5/5/5 max_relative=9.951e-07
+completion_result: source=static L=145 |k|=0.162134667 Fcompleted/|k|^2=5.530056198 W/|k|^3=0.871076076 completed/raw=0.027206
+completion_result: source=null L=145 |k|=0.162134667 Fcompleted/|k|^2=4.526217836 W/|k|^3=0.834772805 completed/raw=0.040011
+completion_result: source=static L=193 |k|=0.121811019 Fcompleted/|k|^2=5.561601128 W/|k|^3=0.878523116 completed/raw=0.015369
+completion_result: source=null L=193 |k|=0.121811019 Fcompleted/|k|^2=4.537670166 W/|k|^3=0.844725385 completed/raw=0.022307
+completion_result: source=static L=257 |k|=0.091476758 Fcompleted/|k|^2=5.579511800 W/|k|^3=0.882839704 completed/raw=0.008671
+completion_result: source=null L=257 |k|=0.091476758 Fcompleted/|k|^2=4.544199188 W/|k|^3=0.850392425 completed/raw=0.012493
+[PASS] complete-uniform-metric-second-jet: all 55 symmetric metric-tangent pairs cancel against the square-root completion reaction
+       ranks=5/5/5; max relative=9.951e-07
+[PASS] skew-conserved-source-response: the less-symmetric static and Lorentz-null sources are transverse and solve the full non...
+       maximum source Ward=1.61e-16
+[PASS] nonlinear-metric-completion-removes-reaction: the square-root completion removes the bounded reaction and leaves a vanishing skew forc...
+       static: 0.02721->0.00867; null: 0.04001->0.01249
+[PASS] completed-force-k-squared-tail: the reaction-subtracted force has resolved quadratic order on the skew family
+       static: p=1.984445, Cmax/Cmin=1.00894; null: p=1.993073, Cmax/Cmin=1.00397
+[PASS] completion-is-Ward-null: the flat-Hessian completion reaction changes no displacement Ward component
+       maximum reaction Ward=3.19e-16
+[PASS] skew-Ward-k-cubed-tail: the unchanged skew Ward vector has resolved cubic order after nonlinear metric completion
+       static: p=2.976564, Cmax/Cmin=1.01350; null: p=2.967612, Cmax/Cmin=1.01871
+[PASS] skew-response-metric-purity: the same less-symmetric response approaches the nonlinear metric carrier
+       static: 0.001415; null: 0.001106
+[PASS] scope-refinement-and-no-go-packet: the note keeps the exact metric identity separate from uniform refinement and physical c...
+N5_CERTIFICATE: all 55 constant-metric tangent pairs and a three-period skew winding with two conserved sources were executed
+per_element: all fifteen edge classes enter the square-root completion and every local action gradient
+per_site: all fifty hinges and 240 simplex-hinge incidences enter every skew phase site
+per_mode: fundamental response, generated second harmonic, Hessian reaction, and Ward projection are separately retained
+per_block: ten metric tangents, 55 symmetric pairs, skew static/null tails, and reaction-null controls are checked
+lattice_wide: not executed; a uniform angular/source theorem, multimode fields, observables, and nonlinear Lorentzian refinement remain open
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

@@ -3,7 +3,7 @@
 constant-sign sextet, with a finite mixed-frame comparator census.
 
 Paired note:
-  docs/PHYSICAL_ASSEMBLY_DEFECT_COCYCLE_LAW_AND_COVARIANCE_BOUNDARY_CYCLE710_NOTE_2026-08-02.md
+  docs/PHYSICAL_ASSEMBLY_DEFECT_COCYCLE_AND_MIXED_FRAME_COMPARATOR_CYCLE710_NOTE_2026-08-02.md
 
 Measures, on the cycle-696 compiled chain imported verbatim (never re-implemented):
   C0  frame scope: census of the 24 proper rotations, transport bijections,
@@ -68,7 +68,7 @@ SEXTET_EXPECT = [1, 4, 9, 15, 18, 23]
 ORDERS_EXPECT = {1: 2, 4: 2, 9: 2, 15: 3, 18: 3, 23: 1}
 NFLIP_EXPECT = {0: 3, 1: 9, 2: 9, 3: 3}
 BODY_CLASS = 13
-RECEIPT_NAME = ("physical_assembly_defect_cocycle_law_and_covariance_boundary_"
+RECEIPT_NAME = ("physical_assembly_defect_cocycle_and_mixed_frame_comparator_"
                 "cycle710_2026_08_02_receipt_2026-08-02.json")
 
 fmt = "{:.1e}".format

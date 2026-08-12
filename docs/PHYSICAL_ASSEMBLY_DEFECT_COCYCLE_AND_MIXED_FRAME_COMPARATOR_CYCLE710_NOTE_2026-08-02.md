@@ -16,11 +16,11 @@ verbatim and never re-implemented. There is no measured, fitted, or literature
 constant imported by this cycle.
 
 **Primary runner:**
-`scripts/physical_assembly_defect_cocycle_law_and_covariance_boundary_cycle710_2026_08_02.py`;
+`scripts/physical_assembly_defect_cocycle_and_mixed_frame_comparator_cycle710_2026_08_02.py`;
 cached stdout
-`logs/runner-cache/physical_assembly_defect_cocycle_law_and_covariance_boundary_cycle710_2026_08_02.txt`;
+`logs/runner-cache/physical_assembly_defect_cocycle_and_mixed_frame_comparator_cycle710_2026_08_02.txt`;
 paired receipt
-`outputs/physical_assembly_defect_cocycle_law_and_covariance_boundary_cycle710_2026_08_02_receipt_2026-08-02.json`.
+`outputs/physical_assembly_defect_cocycle_and_mixed_frame_comparator_cycle710_2026_08_02_receipt_2026-08-02.json`.
 
 ```yaml
 trace_class: upstream_support
@@ -396,7 +396,7 @@ comparator census.
 
 ## Runner
 
-[physical_assembly_defect_cocycle_law_and_covariance_boundary_cycle710_2026_08_02.py](../scripts/physical_assembly_defect_cocycle_law_and_covariance_boundary_cycle710_2026_08_02.py)
+[physical_assembly_defect_cocycle_and_mixed_frame_comparator_cycle710_2026_08_02.py](../scripts/physical_assembly_defect_cocycle_and_mixed_frame_comparator_cycle710_2026_08_02.py)
 runs 55 gates in seven sections: frame scope and census; sextet functoriality
 and group structure; the exact cocycle law with its discriminators; branch
 bit-uniformity and the coset-spread law; the first-order law at every all-minus
@@ -404,7 +404,7 @@ frame; the finite mixed-frame comparator census; and census cross-checks
 against the landed Cycle-700 identification. The gates are finite-dimensional
 computational identities and measured-band checks. It prints
 `TOTAL: PASS=55 FAIL=0` and writes the receipt
-`outputs/physical_assembly_defect_cocycle_law_and_covariance_boundary_cycle710_2026_08_02_receipt_2026-08-02.json`
+`outputs/physical_assembly_defect_cocycle_and_mixed_frame_comparator_cycle710_2026_08_02_receipt_2026-08-02.json`
 (floats stored as `{:.1e}`-formatted strings; no timestamps, hosts, or
 absolute paths). Gate bands were fixed before the runner ran — from probe
 measurements where probed, a priori where not (the `L = 7` mixed-frame rejector)

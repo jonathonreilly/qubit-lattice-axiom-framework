@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
-runner: scripts/physical_assembly_defect_cocycle_law_and_covariance_boundary_cycle710_2026_08_02.py
-runner_sha256: 73ec5b895a55cb8bc7b3f6699a7655dccaba1d5dba4770d18c17fea281f521ed
+runner: scripts/physical_assembly_defect_cocycle_and_mixed_frame_comparator_cycle710_2026_08_02.py
+runner_sha256: bdf88b9500315bb6bf6eb755f73c833be1695ecf17ecda4c2ee155824400992d
 input_fingerprint_sha256: f16228dfa22ac9810d4cc316446c432694b1b6d39236992c2bac39c9cf2f5eab
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 5.69
+elapsed_sec: 5.71
 status: ok
 ----- stdout -----
 == frame combinatorics (all 24 proper rotations) ==
@@ -90,7 +90,7 @@ ok   c5.equiv zero mixed classes iff constant-sign sextet, over all 24
 ok   c6.list constant-sign list [1, 4, 9, 15, 18, 23]
 ok   c6.nflip nflip census [(0, 3), (1, 9), (2, 9), (3, 3)]
 ok   c6.orders sextet element orders [(1, 2), (4, 2), (9, 2), (15, 3), (18, 3), (23, 1)]
-RECEIPT: outputs/physical_assembly_defect_cocycle_law_and_covariance_boundary_cycle710_2026_08_02_receipt_2026-08-02.json
+RECEIPT: outputs/physical_assembly_defect_cocycle_and_mixed_frame_comparator_cycle710_2026_08_02_receipt_2026-08-02.json
 TOTAL: PASS=55 FAIL=0
 
 ----- stderr -----

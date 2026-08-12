@@ -1,18 +1,27 @@
 ===== runner cache v1 =====
 runner: scripts/physical_assembly_defect_isospectrality_and_source_pairing_cycle714_2026_08_02.py
-runner_sha256: 8d195c7380fe38b5828e744cf775b985eb5f4610fe72b1cd2c3af1485eb4713e
+runner_sha256: ea149706a127fc8016e4740ab81ef51711ef29f56264edf8aec13de83d0aaf4a
+input_fingerprint_sha256: a4be7219a6088a8e5e4a4f355a48ea74ad987a911c114097666a80aceb391615
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 7.25
+elapsed_sec: 6.97
 status: ok
 ----- stdout -----
 == Cycle 714: assembly-defect isospectrality and the source pairing ==
 frames=24 constant-sign=6 mixed=18 LT=2
+[PASS] Cycle-713 finite resolved-weight receipt is present and positive | cycle=713 pass=28 fail=0 sizes=[3, 4, 5, 6, 7, 8, 9]
+[PASS] Cycle-713 magnitude rows reassemble its finite census | finite sizes L=3..9; no arbitrary-L inference
+[PASS] squared Cycle-713 resolved weights give coefficients 800,224,32 | coefficients in u=L-1 are (800, 224, 32, 0)
+[PASS] compiler frame table has 24 distinct proper signed permutations | 24 distinct orthogonal integer matrices with determinant +1
+[PASS] supplied compiler tick multiplier is LT = 2 | Cycle-696 LT=2
+[PASS] constant-sign predicate derives the body-diagonal stabilizer sextet | derived frame indices [1, 4, 9, 15, 18, 23]
 [PASS] dof count matches the open-box formula | n = 98 279 604 1115
 [PASS] every frame relabelling is a bijection of the dof set | 24 frames at L = 3,4,5,6; zero dofs outside the index
+[PASS] the finite dof action is faithful | 24 distinct induced permutations at each L = 3,4,5,6
 [PASS] identity frame gives the identity relabelling | frame index 23
 [PASS] group law m(ab) = m(a) after m(b) at L = 3 | 576 of 576 ordered pairs
 [PASS] group law m(ab) = m(a) after m(b) at L = 4 | 576 of 576 ordered pairs
+[PASS] reassembly is exact permutation similarity on the finite surface | all 24 frames at L = 3,4,5,6; bitwise index roundtrip
 [PASS] rejector: dropping the anchor shift breaks bijectivity | L = 3: 45 of 98 dofs outside, 53 distinct images
 [PASS] the assembled operator is nonsingular and indefinite | negative/positive counts at L = 3,4,5: 96/2 265/14 569/35 ; smallest magnitude 3.2e-03
 [PASS] spectrum is unchanged by mixed-frame reassembly at L = 3 | 18 frames, worst deviation 1.9e-13
@@ -21,35 +30,35 @@ frames=24 constant-sign=6 mixed=18 LT=2
 [PASS] spectrum is unchanged by mixed-frame reassembly at L = 6 | 2 frames, worst deviation 9.4e-13
 [PASS] defect is traceless at L = 3 | 18 mixed frames, worst 0.0e+00
 [PASS] defect is traceless at L = 4 | 18 mixed frames, worst 0.0e+00
-[PASS] second power-sum identity holds | worst 9.1e-13
-[PASS] third power-sum identity holds | worst 1.2e-10
+[PASS] second power-sum consistency check holds | redundant with permutation similarity; worst 9.1e-13
+[PASS] third power-sum consistency check holds | redundant with permutation similarity; worst 1.2e-10
 [PASS] eigenvectors are transported, not mixed | top and bottom, 3 frames, worst residual 2.6e-14
 [PASS] rejector: same pattern, same magnitudes, resigned, at L = 3 | smallest spectral shift 8.92e+00 over 3 seeds
 [PASS] rejector: same pattern, same magnitudes, resigned, at L = 4 | smallest spectral shift 9.36e+00 over 3 seeds
-[PASS] Frobenius law reassembles from the landed census | cubic 800, quadratic 224, linear 32
-[PASS] Frobenius law 7360 holds at L = 3 | 18 mixed frames, worst relative deviation 3.4e-09
-[PASS] Frobenius law 23712 holds at L = 4 | 18 mixed frames, worst relative deviation 2.1e-09
-[PASS] Frobenius law 54912 holds at L = 5 | 18 mixed frames, worst relative deviation 1.5e-09
-[PASS] Frobenius law 105760 holds at L = 6 | 18 mixed frames, worst relative deviation 1.1e-09
-[PASS] Frobenius law 181056 holds at L = 7 | 18 mixed frames, worst relative deviation 8.2e-10
-[PASS] Frobenius law 285600 holds at L = 8 | 3 mixed frames, worst relative deviation 6.4e-10
-[PASS] constant-sign frames carry no defect | 6 frames at L = 3,4,5,6, ceiling 2.9e-17
-[PASS] relative defect grows with box size | ratios 0.1029 0.1271 0.1454 0.1596 0.1709 0.1802
+[PASS] Cycle-713 Frobenius prediction 7360 agrees at L = 3 | 18 mixed frames, worst relative deviation 3.4e-09
+[PASS] Cycle-713 Frobenius prediction 23712 agrees at L = 4 | 18 mixed frames, worst relative deviation 2.1e-09
+[PASS] Cycle-713 Frobenius prediction 54912 agrees at L = 5 | 18 mixed frames, worst relative deviation 1.5e-09
+[PASS] Cycle-713 Frobenius prediction 105760 agrees at L = 6 | 18 mixed frames, worst relative deviation 1.1e-09
+[PASS] Cycle-713 Frobenius prediction 181056 agrees at L = 7 | 18 mixed frames, worst relative deviation 8.2e-10
+[PASS] Cycle-713 Frobenius prediction 285600 agrees at L = 8 | 3 mixed frames, worst relative deviation 6.4e-10
+[PASS] sextet defect is below the finite compiler tolerance | 6 frames at L = 3,4,5,6; max squared Frobenius 2.9e-17
+[PASS] relative defect grows across the scanned box sizes | ratios 0.1029 0.1271 0.1454 0.1596 0.1709 0.1802
 [PASS] pairing transfers to the relabelled source at L = 3 | 24 frames, worst deviation 1.1e-16
 [PASS] pairing transfers to the relabelled source at L = 4 | 24 frames, worst deviation 3.4e-14
 [PASS] a transported source reproduces the reference solution | worst relative deviation 4.2e-14
-[PASS] a source held fixed does not | smallest relative deviation 2.6671
+[PASS] the seeded fixed source changes on each tested mixed frame | 3 frames; minimum relative deviation 1.5316
 [PASS] frame spread of the pairing stays order one | spread over reference 1.6928 7.3335 10.5157
 [PASS] constant-sign frames form a subgroup | order 6, traces [-1, -1, -1, 0, 0, 3]
 [PASS] the subgroup has four right cosets | sizes 6 6 6 6
-[PASS] the pairing is constant on each right coset | worst variation within a coset 6.2e-10
-[PASS] the four coset values are separated | nearest pair of coset values 0.0027 apart
-[PASS] the 24-frame scan takes exactly four values | distinct values at L = 3,4,5,6: 4 4 4 4
-[PASS] a fully averaged source is blind to the frame | spread over 24 frames 4.4e-16
+[PASS] reassembled operators form four numerical right-coset clusters | all frames at L=3..6; worst entrywise variation 1.2e-10
+[PASS] the seeded pairing is constant within each numerical right-coset cluster | one seed at L=3..6; worst within-cluster variation 6.2e-10
+[PASS] the four seeded cluster values are separated | one seed at L=3..6; nearest pair 0.0027 apart
+[PASS] the seeded 24-frame scan takes four numerical values | seed 714; distinct values at L = 3,4,5,6: 4 4 4 4
+[PASS] the fully group-averaged seeded source is frame-invariant | spread over 24 frames 4.4e-16
 [PASS] rejector: averaging over the subgroup alone does not suffice | smallest remaining spread 0.0176
 receipt: outputs/physical_assembly_defect_isospectrality_and_source_pairing_cycle714_2026_08_02_receipt_2026-08-02.json
 
-TOTAL: PASS=39 FAIL=0
+TOTAL: PASS=47 FAIL=0
 
 ----- stderr -----
 

@@ -1,186 +1,158 @@
 {
-  "cycle": 731,
-  "failures": 0,
-  "gates": 45,
-  "headline": "an exhibited floor certificate has slack 0 or the denominator on every minimal piece, so the adjacency cost of a dissection of the cell equals 108 plus the number of its pieces outside that certificate's support",
-  "lane": "emergent-geometry",
-  "note": "docs/PHYSICAL_COST_IDENTITY_INDICATOR_CERTIFICATE_CYCLE731_NOTE_2026-08-04.md",
-  "recorded_output": "outputs/physical_cost_identity_indicator_certificate_cycle731_2026_08_04_cold_2026-08-04.txt",
-  "results": {
-    "ceiling": {
-      "ceiling_cost": 128,
-      "denominator": 3,
-      "forced_tight_orbits": [
-        17,
-        1,
-        15,
-        27
-      ],
-      "least_denominator": 3,
-      "slack_spectrum": [
-        0,
-        2,
+  "audit_status_authority": "independent audit lane only",
+  "carried_action": {
+    "description": "proper spatial cubic rotations times tick reversal",
+    "orbit_sizes": [
+      16,
+      48
+    ],
+    "order": 48,
+    "piece_orbits": 57
+  },
+  "ceiling_fixed_certificate_family": {
+    "binary_indicator_excluded": true,
+    "denominator": 3,
+    "dependency_charge_combination": -2,
+    "dependency_orbits_coefficients": [
+      [
         3,
-        4
-      ],
-      "tight_orbits": 21,
-      "tight_pieces": 944,
-      "value": 384
-    },
-    "cell": {
-      "charge_spectrum": [
-        3,
-        64,
-        4,
-        384,
-        5,
-        1152,
-        6,
-        768,
-        7,
-        304
-      ],
-      "five_subsets": 4368,
-      "least_nonzero_scaled_volume": 1,
-      "minimal_pieces": 2672,
-      "scaled_volumes": [
-        0,
-        1,
-        2,
         3
-      ]
-    },
-    "cost_identity": {
-      "ceiling_cap": 128,
-      "certificate_value_over_a_dissection": 23328,
-      "cost_and_pieces_outside": [
-        108,
-        0,
-        114,
-        6,
-        108,
-        0,
-        128,
-        20
       ],
-      "costs": [
-        108,
-        114,
-        108,
-        128
+      [
+        17,
+        1
       ],
-      "fewest_inside_seen": 4,
-      "orbits_occurring": 31,
-      "orbits_surviving_a_support_flip": 0,
-      "pieces_inside_at_least": 4,
-      "pieces_outside_at_most": 20,
-      "pieces_per_dissection": 24
-    },
-    "floor_certificate": {
-      "constant": 756,
-      "denominator": 216,
-      "floor_cost": 108,
-      "single_step_moves_surviving": 0,
-      "single_step_moves_tried": 116,
-      "slack_spectrum": [
-        0,
-        216
-      ],
-      "support_orbits": 38,
-      "support_pieces": 1792,
-      "value": 23328
-    },
-    "local_reading": {
-      "invariants_separating_the_support": 0,
-      "local_invariants_swept": 6,
-      "orbits_outside_the_support": 19,
-      "pieces_and_support_by_charge": [
-        3,
-        64,
-        64,
-        4,
-        384,
-        384,
-        5,
-        1152,
-        960,
-        6,
-        768,
-        384,
-        7,
-        304,
-        0
-      ],
-      "pieces_decided_by_charge": 752,
-      "pieces_undecided": 1920
-    },
-    "row_identity": {
-      "charge_combination": -2,
-      "charge_combinations": {
-        "-2": 22,
-        "0": 136,
-        "2": 26,
-        "4": 1
-      },
-      "charges": [
-        4,
-        6,
-        3,
-        5,
-        6
-      ],
-      "circuit_coefficient_sum": 0,
-      "circuit_residual": 0,
-      "circuits": 185,
-      "circuits_with_a_nonzero_combination": 49,
-      "coefficient_changes_destroying_it": 10,
-      "coefficient_sum": 0,
-      "coefficients": [
-        3,
+      [
         1,
-        -1,
-        -1,
+        -1
+      ],
+      [
+        15,
+        -1
+      ],
+      [
+        27,
         -2
-      ],
-      "dependency_space": 44,
-      "largest_residual": 0,
-      "row_classes": 49,
-      "row_span": 13,
-      "supports_swept": 1906884,
-      "weight_vectors_checked": 59
-    },
-    "sample_points": {
-      "barycentric_bound": 3,
-      "points": 2736,
-      "points_on_a_boundary": 0,
-      "weight_total": 12810
-    },
-    "support": {
-      "five_subsets_covering_all": 0,
-      "five_subsets_swept": 501942,
-      "orbits": 38,
-      "seeds": [
-        12,
-        13,
-        45,
-        50,
-        53,
-        56
       ]
+    ],
+    "forced_tight_orbits": [
+      17,
+      1,
+      15,
+      27
+    ],
+    "least_positive_integer_denominator": 3,
+    "slack_spectrum": [
+      0,
+      2,
+      3,
+      4
+    ],
+    "value": 384
+  },
+  "cell": {
+    "charge_spectrum": {
+      "3": 64,
+      "4": 384,
+      "5": 1152,
+      "6": 768,
+      "7": 304
     },
-    "symmetry": {
-      "group_order": 48,
-      "orbit_sizes": [
-        16,
-        48
-      ],
-      "orbit_sizes_sum": 2672,
-      "piece_orbits": 57,
-      "proper_rotations": 24
+    "corners": 16,
+    "five_subsets": 4368,
+    "minimal_pieces": 2672,
+    "pieces_per_dissection": 24,
+    "scaled_volume_spectrum": {
+      "0": 1360,
+      "1": 2672,
+      "2": 320,
+      "3": 16
     }
   },
-  "runner": "scripts/physical_cost_identity_indicator_certificate_cycle731_2026_08_04.py",
-  "sections": 8,
-  "status": "unaudited source note",
-  "total_line": "TOTAL: PASS=45 FAIL=0"
+  "claim_type": "bounded_theorem",
+  "floor_indicator": {
+    "constant": 756,
+    "denominator": 216,
+    "forced_completions_verified_as_dissections": 38,
+    "six_seed_cover": [
+      12,
+      13,
+      45,
+      50,
+      53,
+      56
+    ],
+    "slack_spectrum": [
+      0,
+      216
+    ],
+    "stored_forced_completion_five_cover_count": 0,
+    "support_orbits": 38,
+    "support_pieces": 1792,
+    "value": 23328
+  },
+  "gates": {
+    "fail": 0,
+    "pass": 45
+  },
+  "identity": {
+    "all_dissections_in_declared_class": true,
+    "exhibited_costs": [
+      108,
+      114,
+      108,
+      128
+    ],
+    "exhibited_off_support_counts": [
+      0,
+      6,
+      0,
+      20
+    ],
+    "formula": "cost equals 108 plus off-support piece count"
+  },
+  "local_sweep": {
+    "declared_invariants": [
+      "body-diagonal pairs",
+      "largest spatial gap",
+      "least spatial gap",
+      "orbit size",
+      "tick differences",
+      "zero-gap pairs"
+    ],
+    "scope": "the six named scalar invariants on the 57 carried piece orbits only",
+    "separating_invariants": []
+  },
+  "no_go_discipline": {
+    "n5_certificate": "five resolution lines in primary cached stdout",
+    "no_universal_no_go_claim_shipped": true,
+    "scope": "fixed incidence-certificate family and six named invariants only",
+    "status": "PASS"
+  },
+  "row_census": {
+    "charge_combinations": {
+      "-2": 22,
+      "0": 136,
+      "2": 26,
+      "4": 1
+    },
+    "five_class_supports_swept": 1906884,
+    "minimal_dependencies": 185,
+    "row_classes": 49,
+    "row_span": 13
+  },
+  "schema": "physical-cost-identity-indicator-certificate-cycle731-v2",
+  "status": "pass",
+  "supplied_model": {
+    "charge": "all corner pairs with spatial L1 separation greater than one",
+    "physical_assembly_cell_simplex_bridge": "open",
+    "physical_tick_admissibility_bridge": "open",
+    "piece_class": "five-corner normalized-volume-one simplices only",
+    "shape": [
+      1,
+      1,
+      1,
+      1
+    ]
+  }
 }

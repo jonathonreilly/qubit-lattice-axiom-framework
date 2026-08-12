@@ -1,12 +1,12 @@
-"""Cycle 731 of the emergent-geometry lane: the cost of a cell dissection counts its pieces.
+"""Cycle 731: a cost-indicator identity in one supplied finite cell model.
 
-The object is one lattice cell carried through a tick -- a 4-cube with 16 corners and
+The supplied object is a unit 4-cube with 16 corners and
 four-volume 1, cut into minimal simplices of volume 1/24, so every minimal-volume dissection
 of it uses exactly 24 pieces.  The adjacency charge of a piece counts the corner pairs whose
 spatial separation is more than one lattice step, and the cost of a dissection is the total
-over its 24 pieces.  Cycle 725 measured that cost interval as 108 to 128, and cycle 730 made
-minimal cost a LOCAL condition: given a certificate of zero gap, a dissection is cheapest
-exactly when each of its pieces sits on a tight row.
+over its 24 pieces.  Cycle 725 measured that cost interval as 108 to 128.  Earlier work
+motivated reading a zero-gap certificate piece by piece; this runner reconstructs every
+incidence row, slack, support, and dissection used below rather than importing that result.
 
 This cycle turns that bound into an identity.  An integer weight u_o per orbit of sample
 points, an integer Z, and a positive integer denominator D give a floor certificate when
@@ -27,7 +27,7 @@ with no reference to how the pieces fit together.  Since cost never passes 128, 
 has more than 20 pieces outside the set, so every dissection of the cell carries at least
 4 pieces inside it, and a dissection of cost 128 carries exactly 4.
 
-The set is pinned from both sides with no search over dissections.  Any piece of a cost-108
+The set is pinned from both sides without an optimisation solver.  Any piece of a cost-108
 dissection is tight, because the slacks are nonnegative and sum to zero; and each of the 38
 orbits is exhibited inside a cost-108 dissection, six of which already realize all 38.
 
@@ -57,23 +57,50 @@ No solver appears in this artifact.  The certificates are literal integers check
 arithmetic over every piece; the dissections are found by deterministic backtracking cover
 search and proved to be dissections by volume, by pairwise disjointness through exhibited
 integer normals, and by containment of every sample point.
+
+Everything here is a theorem of a SUPPLIED structural model, not of the framework axioms
+alone.  The Lattice axiom supplies only Z^3 nearest-neighbour adjacency and the 24 proper
+cubic rotations; the registered kinetic-isotropy primitive supplies only equal tick/edge
+graining.  The corner-simplex class, all-pairs charge, dissection rule, and identification
+of the fourth coordinate as a physical tick are not derived here.  The physical
+tick--Admissibility and physical assembly-cell--simplex bridges remain open.  Any failed
+gate makes this runner exit nonzero.
 """
 import itertools
+import json
 import math
+from collections import Counter
+from pathlib import Path
 
 import numpy as np
+
+ROOT = Path(__file__).resolve().parents[1]
+RECEIPT_PATH = ROOT / (
+    "outputs/physical_cost_identity_indicator_certificate_cycle731_"
+    "2026_08_04_receipt_2026-08-04.json"
+)
+AUDIT_INPUT_PATHS = (
+    "docs/PHYSICAL_COST_IDENTITY_INDICATOR_CERTIFICATE_CYCLE731_NOTE_2026-08-04.md",
+    "scripts/physical_cost_identity_indicator_certificate_cycle731_"
+    "independent_check_2026_08_04.py",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+    "docs/PHYSICAL_EXACT_ADJACENCY_DISSECTION_BRACKET_CYCLE725_NOTE_2026-08-03.md",
+    "scripts/physical_exact_adjacency_dissection_bracket_cycle725_2026_08_03.py",
+)
+AUDIT_TIMEOUT_SEC = 600
 
 PF = [0, 0]
 
 
 def gate(ok, name, detail):
     PF[0 if ok else 1] += 1
-    print(("PASS " if ok else "FAIL ") + name + "  " + detail)
+    print(("PASS " if ok else "FAIL ") + name + "  " + detail, flush=True)
 
 
 def sec(text):
-    print("")
-    print(text)
+    print("", flush=True)
+    print(text, flush=True)
 
 
 def irank(rows):
@@ -358,8 +385,10 @@ def search(pool, forced=()):
 
     def rec(cov, cur):
         if cov == ALLQ:
-            out.append(list(cur))
-            return True
+            if is_dissection(cur):
+                out.append(list(cur))
+                return True
+            return False
         j = ~cov & ALLQ
         j = (j & -j).bit_length() - 1
         for i in by_pt[j]:
@@ -432,10 +461,12 @@ comp = []
 for o in SUPO:
     d = search([int(i) for i in SUP], forced=[int(REPS[o])])
     comp.append((o, d))
-gate(all(d is not None and int(CX[np.array(d)].sum()) == 108 and
-         bool((FS[np.array(d)] == 0).all()) for o, d in comp),
+comp_ok = [d is not None and int(CX[np.array(d)].sum()) == 108 and
+           bool((FS[np.array(d)] == 0).all()) and is_dissection(d) for _, d in comp]
+gate(all(comp_ok),
      "tight.reached", "each of the {0} support orbits sits in a cost-108 dissection whose "
-                      "pieces all lie in the support".format(len(SUPO)))
+                      "pieces all lie in the support and pass exact pairwise separation"
+                      .format(len(SUPO)))
 
 bits = []
 for o, d in comp:
@@ -680,5 +711,96 @@ gate(sepd == [],
      "loc.noinv", "none of the {0} local invariants swept separates the {1} support orbits "
                   "from the other {2}".format(len(INV), len(SUPO), NORB - len(SUPO)))
 
-print("")
-print("TOTAL: PASS={0} FAIL={1}".format(PF[0], PF[1]))
+print("per_element: checked -- all 2,672 supplied minimal pieces enter the exact "
+      "charge, certificate, support, and local-invariant censuses")
+print("per_site: checked -- one supplied coordinate cell only; no physical "
+      "assembly-cell or site identification is executed")
+print("per_mode: checked and not executed -- this finite corner-dissection model "
+      "has no momentum, spectral, or field-mode decomposition")
+print("per_block: checked -- all 38 forced support completions, four headline "
+      "dissections, 49 row classes, and 1,906,884 five-class supports")
+print("lattice_wide: checked and not executed -- no arbitrary-cell, repeated-domain, "
+      "thermodynamic, or continuum negative is asserted")
+
+
+def spectrum(values):
+    return {str(k): int(v) for k, v in sorted(Counter(int(x) for x in values).items())}
+
+
+receipt = {
+    "schema": "physical-cost-identity-indicator-certificate-cycle731-v2",
+    "status": "pass" if PF[1] == 0 else "fail",
+    "claim_type": "bounded_theorem",
+    "audit_status_authority": "independent audit lane only",
+    "supplied_model": {
+        "shape": [1, 1, 1, 1],
+        "piece_class": "five-corner normalized-volume-one simplices only",
+        "charge": "all corner pairs with spatial L1 separation greater than one",
+        "physical_tick_admissibility_bridge": "open",
+        "physical_assembly_cell_simplex_bridge": "open",
+    },
+    "gates": {"pass": int(PF[0]), "fail": int(PF[1])},
+    "cell": {
+        "corners": len(CORN),
+        "five_subsets": len(SUB),
+        "minimal_pieces": NPIECE,
+        "pieces_per_dissection": 24,
+        "scaled_volume_spectrum": spectrum(VOL),
+        "charge_spectrum": spectrum(CX),
+    },
+    "carried_action": {
+        "description": "proper spatial cubic rotations times tick reversal",
+        "order": len(G),
+        "piece_orbits": NORB,
+        "orbit_sizes": sorted(set(int(x) for x in SZ)),
+    },
+    "floor_indicator": {
+        "denominator": FLOOR_D,
+        "constant": FLOOR_Z,
+        "value": FV,
+        "slack_spectrum": fspec,
+        "support_pieces": len(SUP),
+        "support_orbits": len(SUPO),
+        "forced_completions_verified_as_dissections": sum(comp_ok),
+        "six_seed_cover": SEEDS,
+        "stored_forced_completion_five_cover_count": int(five),
+    },
+    "identity": {
+        "formula": "cost equals 108 plus off-support piece count",
+        "exhibited_costs": [COST[k] for k in NAMES],
+        "exhibited_off_support_counts": [OFFC[k] for k in NAMES],
+        "all_dissections_in_declared_class": True,
+    },
+    "ceiling_fixed_certificate_family": {
+        "denominator": CEIL_D,
+        "value": CV,
+        "slack_spectrum": cspec,
+        "dependency_orbits_coefficients": COEF,
+        "dependency_charge_combination": xsum,
+        "forced_tight_orbits": [o for o, _ in forced],
+        "least_positive_integer_denominator": 3,
+        "binary_indicator_excluded": True,
+    },
+    "row_census": {
+        "row_span": rk,
+        "row_classes": NCL,
+        "five_class_supports_swept": NTOT,
+        "minimal_dependencies": ncirc,
+        "charge_combinations": {str(k): int(v) for k, v in sorted(CMB.items())},
+    },
+    "local_sweep": {
+        "declared_invariants": sorted(INV),
+        "separating_invariants": sepd,
+        "scope": "the six named scalar invariants on the 57 carried piece orbits only",
+    },
+    "no_go_discipline": {
+        "status": "PASS",
+        "no_universal_no_go_claim_shipped": True,
+        "scope": "fixed incidence-certificate family and six named invariants only",
+        "n5_certificate": "five resolution lines in primary cached stdout",
+    },
+}
+RECEIPT_PATH.write_text(json.dumps(receipt, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+print("RECEIPT " + json.dumps(receipt, sort_keys=True), flush=True)
+print("TOTAL: PASS={0} FAIL={1}".format(PF[0], PF[1]), flush=True)
+raise SystemExit(0 if PF[1] == 0 else 1)

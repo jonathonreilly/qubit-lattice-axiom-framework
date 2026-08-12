@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/physical_cost_identity_indicator_certificate_cycle731_independent_check_2026_08_04.py
+runner_sha256: 57518a8d8edfca47df5cb781acd1bdac04ef86d907b4dd62f323bcbf4a575faf
+input_fingerprint_sha256: 137aad3be275b3cf30de261f5308d06e3cc8ae05bb376802a4f83e8662d3dee2
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 147.65
+status: ok
+----- stdout -----
+PASS independent cell census  subsets=4368 minimal=2672 volumes=[(0, 1360), (1, 2672), (2, 320), (3, 16)]
+PASS independent adjacency-charge census  [(3, 64), (4, 384), (5, 1152), (6, 768), (7, 304)]
+PASS independent carried action and orbit census  action=48 orbits=57 sizes=[16, 48]
+PASS independent generic incidence reconstruction  points=2736 scale=12810 boundary=0
+PASS independent floor-indicator reconstruction  value=23328 slacks=[0, 216] support=1792/38
+PASS hostile floor-constant mutation  raising the floor constant by one gives least slack -1
+PASS independent support-orbit completion reconstruction  valid exact dissection completions=38/38
+PASS independent stored-completion covering census  six named completions cover all 38; zero of 501942 stored-completion five-subsets do
+PASS independent ceiling and exact row identity  value=384 slacks=[0, 2, 3, 4] residual=0 charge_combo=-2
+PASS independent exact row-span reconstruction  row_rank=13 constant_augmented_rank=13
+PASS hostile row-identity mutation  largest mutated residual=4
+PASS independent forced ceiling-tight completions  valid cost-128 dissections=4/4
+PASS fixed-family denominator and indicator exclusion  3*slack(orbit3)=6=2D; no binary solution to 3x=2
+PASS hostile dissection-duplication mutation  duplicating one simplex destroys the exact dissection predicate
+PASS independent cost identity and hostile support mutation  all 38 reconstructed floor completions satisfy the identity; an orbit flip breaks it
+RECEIPT {"audit_status_authority": "independent audit lane only", "ceiling_fixed_family": {"binary_indicator_excluded": true, "forced_tight_completions": 4, "row_relation_residual": 0, "slack_spectrum": [0, 2, 3, 4], "value": 384}, "claim_type": "bounded_theorem_independent_check", "fail": 0, "floor": {"slack_spectrum": [0, 216], "support_orbits": 38, "support_pieces": 1792, "valid_forced_completions": 38, "value": 23328}, "pass": 15, "results": {"fixed-family denominator and indicator exclusion": {"detail": "3*slack(orbit3)=6=2D; no binary solution to 3x=2", "ok": true}, "hostile dissection-duplication mutation": {"detail": "duplicating one simplex destroys the exact dissection predicate", "ok": true}, "hostile floor-constant mutation": {"detail": "raising the floor constant by one gives least slack -1", "ok": true}, "hostile row-identity mutation": {"detail": "largest mutated residual=4", "ok": true}, "independent adjacency-charge census": {"detail": "[(3, 64), (4, 384), (5, 1152), (6, 768), (7, 304)]", "ok": true}, "independent carried action and orbit census": {"detail": "action=48 orbits=57 sizes=[16, 48]", "ok": true}, "independent ceiling and exact row identity": {"detail": "value=384 slacks=[0, 2, 3, 4] residual=0 charge_combo=-2", "ok": true}, "independent cell census": {"detail": "subsets=4368 minimal=2672 volumes=[(0, 1360), (1, 2672), (2, 320), (3, 16)]", "ok": true}, "independent cost identity and hostile support mutation": {"detail": "all 38 reconstructed floor completions satisfy the identity; an orbit flip breaks it", "ok": true}, "independent exact row-span reconstruction": {"detail": "row_rank=13 constant_augmented_rank=13", "ok": true}, "independent floor-indicator reconstruction": {"detail": "value=23328 slacks=[0, 216] support=1792/38", "ok": true}, "independent forced ceiling-tight completions": {"detail": "valid cost-128 dissections=4/4", "ok": true}, "independent generic incidence reconstruction": {"detail": "points=2736 scale=12810 boundary=0", "ok": true}, "independent stored-completion covering census": {"detail": "six named completions cover all 38; zero of 501942 stored-completion five-subsets do", "ok": true}, "independent support-orbit completion reconstruction": {"detail": "valid exact dissection completions=38/38", "ok": true}}, "schema": "physical-cost-identity-indicator-certificate-cycle731-independent-v1", "scope": "supplied one-cell minimal-piece model and fixed generic-incidence certificate family only; no physical or arbitrary-domain conclusion", "status": "pass", "supplied_model": {"carried_action_order": 48, "minimal_pieces": 2672, "piece_orbits": 57, "sample_points": 2736}}
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

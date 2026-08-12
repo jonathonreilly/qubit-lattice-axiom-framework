@@ -1,0 +1,215 @@
+===== runner cache v1 =====
+runner: scripts/physical_mixed_frame_defect_census_family_law_cycle712_independent_check_2026_08_02.py
+runner_sha256: f6b711d7b6a454ec083bbca2ec841accc99ae6f9378f3474d0090803d68eda23
+input_fingerprint_sha256: 06915ea0c4b8dde12b3874eccdb567c225b9e0e492fa663a9aa2809d633b11b5
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 5.90
+status: ok
+----- stdout -----
+PASS frame_partition sextet=(1, 4, 9, 15, 18, 23)
+PASS descriptor_identity_four_swap component factors equal written expression at L=3..10
+PASS descriptor_identity_two_rt3_swap component factors equal written expression at L=3..10
+PASS descriptor_identity_two_rt2_swap component factors equal written expression at L=3..10
+PASS descriptor_identity_two_rt2_wall component factors equal written expression at L=3..10
+PASS descriptor_identity_two_swap component factors equal written expression at L=3..10
+PASS descriptor_identity_two_edge component factors equal written expression at L=3..10
+PASS center_tolerance_L3_frame0 max=6.06e-08
+PASS raw_family_counts_L3_frame0 all twelve counts equal component expressions
+PASS center_tolerance_L3_frame2 max=6.06e-08
+PASS raw_family_counts_L3_frame2 all twelve counts equal component expressions
+PASS center_tolerance_L3_frame3 max=6.06e-08
+PASS raw_family_counts_L3_frame3 all twelve counts equal component expressions
+PASS center_tolerance_L3_frame5 max=6.06e-08
+PASS raw_family_counts_L3_frame5 all twelve counts equal component expressions
+PASS center_tolerance_L3_frame6 max=6.06e-08
+PASS raw_family_counts_L3_frame6 all twelve counts equal component expressions
+PASS center_tolerance_L3_frame7 max=6.06e-08
+PASS raw_family_counts_L3_frame7 all twelve counts equal component expressions
+PASS center_tolerance_L3_frame8 max=6.06e-08
+PASS raw_family_counts_L3_frame8 all twelve counts equal component expressions
+PASS center_tolerance_L3_frame10 max=6.06e-08
+PASS raw_family_counts_L3_frame10 all twelve counts equal component expressions
+PASS center_tolerance_L3_frame11 max=6.06e-08
+PASS raw_family_counts_L3_frame11 all twelve counts equal component expressions
+PASS center_tolerance_L3_frame12 max=6.06e-08
+PASS raw_family_counts_L3_frame12 all twelve counts equal component expressions
+PASS center_tolerance_L3_frame13 max=6.06e-08
+PASS raw_family_counts_L3_frame13 all twelve counts equal component expressions
+PASS center_tolerance_L3_frame14 max=6.06e-08
+PASS raw_family_counts_L3_frame14 all twelve counts equal component expressions
+PASS center_tolerance_L3_frame16 max=6.06e-08
+PASS raw_family_counts_L3_frame16 all twelve counts equal component expressions
+PASS center_tolerance_L3_frame17 max=6.06e-08
+PASS raw_family_counts_L3_frame17 all twelve counts equal component expressions
+PASS center_tolerance_L3_frame19 max=6.06e-08
+PASS raw_family_counts_L3_frame19 all twelve counts equal component expressions
+PASS center_tolerance_L3_frame20 max=6.06e-08
+PASS raw_family_counts_L3_frame20 all twelve counts equal component expressions
+PASS center_tolerance_L3_frame21 max=6.06e-08
+PASS raw_family_counts_L3_frame21 all twelve counts equal component expressions
+PASS center_tolerance_L3_frame22 max=6.06e-08
+PASS raw_family_counts_L3_frame22 all twelve counts equal component expressions
+PASS frame_uniformity_L3 all 18 independently rebuilt frame censuses agree
+PASS rounded_anchor_L3 anchor=((-4, 64), (-3, 224), (-2, 136), (2, 136), (3, 224), (4, 64))
+PASS top_family_L3 count=128
+PASS center_tolerance_L4_frame0 max=6.06e-08
+PASS raw_family_counts_L4_frame0 all twelve counts equal component expressions
+PASS center_tolerance_L4_frame2 max=6.06e-08
+PASS raw_family_counts_L4_frame2 all twelve counts equal component expressions
+PASS center_tolerance_L4_frame3 max=6.06e-08
+PASS raw_family_counts_L4_frame3 all twelve counts equal component expressions
+PASS center_tolerance_L4_frame5 max=6.06e-08
+PASS raw_family_counts_L4_frame5 all twelve counts equal component expressions
+PASS center_tolerance_L4_frame6 max=6.06e-08
+PASS raw_family_counts_L4_frame6 all twelve counts equal component expressions
+PASS center_tolerance_L4_frame7 max=6.06e-08
+PASS raw_family_counts_L4_frame7 all twelve counts equal component expressions
+PASS center_tolerance_L4_frame8 max=6.06e-08
+PASS raw_family_counts_L4_frame8 all twelve counts equal component expressions
+PASS center_tolerance_L4_frame10 max=6.06e-08
+PASS raw_family_counts_L4_frame10 all twelve counts equal component expressions
+PASS center_tolerance_L4_frame11 max=6.06e-08
+PASS raw_family_counts_L4_frame11 all twelve counts equal component expressions
+PASS center_tolerance_L4_frame12 max=6.06e-08
+PASS raw_family_counts_L4_frame12 all twelve counts equal component expressions
+PASS center_tolerance_L4_frame13 max=6.06e-08
+PASS raw_family_counts_L4_frame13 all twelve counts equal component expressions
+PASS center_tolerance_L4_frame14 max=6.06e-08
+PASS raw_family_counts_L4_frame14 all twelve counts equal component expressions
+PASS center_tolerance_L4_frame16 max=6.06e-08
+PASS raw_family_counts_L4_frame16 all twelve counts equal component expressions
+PASS center_tolerance_L4_frame17 max=6.06e-08
+PASS raw_family_counts_L4_frame17 all twelve counts equal component expressions
+PASS center_tolerance_L4_frame19 max=6.06e-08
+PASS raw_family_counts_L4_frame19 all twelve counts equal component expressions
+PASS center_tolerance_L4_frame20 max=6.06e-08
+PASS raw_family_counts_L4_frame20 all twelve counts equal component expressions
+PASS center_tolerance_L4_frame21 max=6.06e-08
+PASS raw_family_counts_L4_frame21 all twelve counts equal component expressions
+PASS center_tolerance_L4_frame22 max=6.06e-08
+PASS raw_family_counts_L4_frame22 all twelve counts equal component expressions
+PASS frame_uniformity_L4 all 18 independently rebuilt frame censuses agree
+PASS center_tolerance_L5_frame0 max=6.06e-08
+PASS raw_family_counts_L5_frame0 all twelve counts equal component expressions
+PASS center_tolerance_L5_frame2 max=6.06e-08
+PASS raw_family_counts_L5_frame2 all twelve counts equal component expressions
+PASS center_tolerance_L5_frame3 max=6.06e-08
+PASS raw_family_counts_L5_frame3 all twelve counts equal component expressions
+PASS center_tolerance_L5_frame5 max=6.06e-08
+PASS raw_family_counts_L5_frame5 all twelve counts equal component expressions
+PASS center_tolerance_L5_frame6 max=6.06e-08
+PASS raw_family_counts_L5_frame6 all twelve counts equal component expressions
+PASS center_tolerance_L5_frame7 max=6.06e-08
+PASS raw_family_counts_L5_frame7 all twelve counts equal component expressions
+PASS center_tolerance_L5_frame8 max=6.06e-08
+PASS raw_family_counts_L5_frame8 all twelve counts equal component expressions
+PASS center_tolerance_L5_frame10 max=6.06e-08
+PASS raw_family_counts_L5_frame10 all twelve counts equal component expressions
+PASS center_tolerance_L5_frame11 max=6.06e-08
+PASS raw_family_counts_L5_frame11 all twelve counts equal component expressions
+PASS center_tolerance_L5_frame12 max=6.06e-08
+PASS raw_family_counts_L5_frame12 all twelve counts equal component expressions
+PASS center_tolerance_L5_frame13 max=6.06e-08
+PASS raw_family_counts_L5_frame13 all twelve counts equal component expressions
+PASS center_tolerance_L5_frame14 max=6.06e-08
+PASS raw_family_counts_L5_frame14 all twelve counts equal component expressions
+PASS center_tolerance_L5_frame16 max=6.06e-08
+PASS raw_family_counts_L5_frame16 all twelve counts equal component expressions
+PASS center_tolerance_L5_frame17 max=6.06e-08
+PASS raw_family_counts_L5_frame17 all twelve counts equal component expressions
+PASS center_tolerance_L5_frame19 max=6.06e-08
+PASS raw_family_counts_L5_frame19 all twelve counts equal component expressions
+PASS center_tolerance_L5_frame20 max=6.06e-08
+PASS raw_family_counts_L5_frame20 all twelve counts equal component expressions
+PASS center_tolerance_L5_frame21 max=6.06e-08
+PASS raw_family_counts_L5_frame21 all twelve counts equal component expressions
+PASS center_tolerance_L5_frame22 max=6.06e-08
+PASS raw_family_counts_L5_frame22 all twelve counts equal component expressions
+PASS frame_uniformity_L5 all 18 independently rebuilt frame censuses agree
+PASS center_tolerance_L6_frame0 max=6.06e-08
+PASS raw_family_counts_L6_frame0 all twelve counts equal component expressions
+PASS center_tolerance_L6_frame2 max=6.06e-08
+PASS raw_family_counts_L6_frame2 all twelve counts equal component expressions
+PASS center_tolerance_L6_frame3 max=6.06e-08
+PASS raw_family_counts_L6_frame3 all twelve counts equal component expressions
+PASS center_tolerance_L6_frame5 max=6.06e-08
+PASS raw_family_counts_L6_frame5 all twelve counts equal component expressions
+PASS center_tolerance_L6_frame6 max=6.06e-08
+PASS raw_family_counts_L6_frame6 all twelve counts equal component expressions
+PASS center_tolerance_L6_frame7 max=6.06e-08
+PASS raw_family_counts_L6_frame7 all twelve counts equal component expressions
+PASS center_tolerance_L6_frame8 max=6.06e-08
+PASS raw_family_counts_L6_frame8 all twelve counts equal component expressions
+PASS center_tolerance_L6_frame10 max=6.06e-08
+PASS raw_family_counts_L6_frame10 all twelve counts equal component expressions
+PASS center_tolerance_L6_frame11 max=6.06e-08
+PASS raw_family_counts_L6_frame11 all twelve counts equal component expressions
+PASS center_tolerance_L6_frame12 max=6.06e-08
+PASS raw_family_counts_L6_frame12 all twelve counts equal component expressions
+PASS center_tolerance_L6_frame13 max=6.06e-08
+PASS raw_family_counts_L6_frame13 all twelve counts equal component expressions
+PASS center_tolerance_L6_frame14 max=6.06e-08
+PASS raw_family_counts_L6_frame14 all twelve counts equal component expressions
+PASS center_tolerance_L6_frame16 max=6.06e-08
+PASS raw_family_counts_L6_frame16 all twelve counts equal component expressions
+PASS center_tolerance_L6_frame17 max=6.06e-08
+PASS raw_family_counts_L6_frame17 all twelve counts equal component expressions
+PASS center_tolerance_L6_frame19 max=6.06e-08
+PASS raw_family_counts_L6_frame19 all twelve counts equal component expressions
+PASS center_tolerance_L6_frame20 max=6.06e-08
+PASS raw_family_counts_L6_frame20 all twelve counts equal component expressions
+PASS center_tolerance_L6_frame21 max=6.06e-08
+PASS raw_family_counts_L6_frame21 all twelve counts equal component expressions
+PASS center_tolerance_L6_frame22 max=6.06e-08
+PASS raw_family_counts_L6_frame22 all twelve counts equal component expressions
+PASS frame_uniformity_L6 all 18 independently rebuilt frame censuses agree
+PASS center_tolerance_L7_frame0 max=6.06e-08
+PASS raw_family_counts_L7_frame0 all twelve counts equal component expressions
+PASS center_tolerance_L7_frame2 max=6.06e-08
+PASS raw_family_counts_L7_frame2 all twelve counts equal component expressions
+PASS center_tolerance_L7_frame3 max=6.06e-08
+PASS raw_family_counts_L7_frame3 all twelve counts equal component expressions
+PASS center_tolerance_L7_frame5 max=6.06e-08
+PASS raw_family_counts_L7_frame5 all twelve counts equal component expressions
+PASS center_tolerance_L7_frame6 max=6.06e-08
+PASS raw_family_counts_L7_frame6 all twelve counts equal component expressions
+PASS center_tolerance_L7_frame7 max=6.06e-08
+PASS raw_family_counts_L7_frame7 all twelve counts equal component expressions
+PASS center_tolerance_L7_frame8 max=6.06e-08
+PASS raw_family_counts_L7_frame8 all twelve counts equal component expressions
+PASS center_tolerance_L7_frame10 max=6.06e-08
+PASS raw_family_counts_L7_frame10 all twelve counts equal component expressions
+PASS center_tolerance_L7_frame11 max=6.06e-08
+PASS raw_family_counts_L7_frame11 all twelve counts equal component expressions
+PASS center_tolerance_L7_frame12 max=6.06e-08
+PASS raw_family_counts_L7_frame12 all twelve counts equal component expressions
+PASS center_tolerance_L7_frame13 max=6.06e-08
+PASS raw_family_counts_L7_frame13 all twelve counts equal component expressions
+PASS center_tolerance_L7_frame14 max=6.06e-08
+PASS raw_family_counts_L7_frame14 all twelve counts equal component expressions
+PASS center_tolerance_L7_frame16 max=6.06e-08
+PASS raw_family_counts_L7_frame16 all twelve counts equal component expressions
+PASS center_tolerance_L7_frame17 max=6.06e-08
+PASS raw_family_counts_L7_frame17 all twelve counts equal component expressions
+PASS center_tolerance_L7_frame19 max=6.06e-08
+PASS raw_family_counts_L7_frame19 all twelve counts equal component expressions
+PASS center_tolerance_L7_frame20 max=6.06e-08
+PASS raw_family_counts_L7_frame20 all twelve counts equal component expressions
+PASS center_tolerance_L7_frame21 max=6.06e-08
+PASS raw_family_counts_L7_frame21 all twelve counts equal component expressions
+PASS center_tolerance_L7_frame22 max=6.06e-08
+PASS raw_family_counts_L7_frame22 all twelve counts equal component expressions
+PASS frame_uniformity_L7 all 18 independently rebuilt frame censuses agree
+PASS rounded_anchor_L7 anchor=((-4, 1728), (-3, 4896), (-2, 4056), (2, 4056), (3, 4896), (4, 1728))
+PASS top_family_L7 count=3456
+PASS complete_scan_total entries=789120
+PASS displaced_center_rejector rejected_entries=126720
+PASS wrong_pair_cut_rejector reclassified_entries=51840
+PASS wrong_coefficient_rejector coefficient 9 cannot replace component multiplicity 8
+PASS primary_receipt_all_gates_pass
+PASS primary_receipt_count_agreement receipt counts equal independent component arithmetic
+TOTAL: PASS=202 FAIL=0
+
+----- stderr -----
+

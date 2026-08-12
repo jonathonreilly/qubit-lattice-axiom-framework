@@ -1,30 +1,32 @@
 ===== runner cache v1 =====
 runner: scripts/physical_mixed_frame_defect_census_family_law_cycle712_2026_08_02.py
-runner_sha256: e9b00c910cbc42988a291a63f56953465f04d67d8f1d8db4e22cc2aa6fbdb243
+runner_sha256: e5a344f837708cbc09394df42d5a23a78e7ab776525197bc130d9531a180d0c6
+input_fingerprint_sha256: 960ec2b6795b4d5cf01289733b03bff94f70bceb0bacc90c466b7a0f810157d3
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 8.52
+elapsed_sec: 8.76
 status: ok
 ----- stdout -----
-== cycle 712: mixed-frame assembly-defect census family law ==
-config: fit L=(4, 5, 6) census L=(3, 4, 5, 6, 7) mixed_frames=18 of 24 fd_step=1.0e-04 tol_surd=2.0e-07 cut=2.0e+00 pair_cuts=(0.5, 10.0)
+== cycle 712: finite mixed-frame assembly-defect family census ==
+config: fit L=(4, 5, 6) census L=(3, 4, 5, 6, 7) mixed_frames=18 of 24 fd_step=1.0e-04 tol_center=2.0e-07 cut=2.0e+00 pair_cuts=(0.5, 10.0)
 PASS g01_sextet_defect_zero max defect below 1.0e-09 on all 6 constant-sign frames
 PASS g02_family_key_set 12 signed families = 6 unsigned x 2 signs at every L and frame
-PASS g03_no_outliers all 789120 large entries within 2.0e-07 of an exact magnitude
+PASS g03_no_outliers all 789120 large entries within 2.0e-07 of a numerical reference center
 PASS g04_frame_uniform_counts per-family counts identical across the 18 mixed frames at every L
-PASS g05_sign_bijection plus and minus family counts equal at every L
-PASS g06_canon_frame_invariant canonical box-descriptor multiset frame-invariant at L=(4, 5, 6)
-PASS g07_canon_L_invariant descriptors carry fixed margins and wall pins, independent of L
-PASS g08_box_shape boxes per sign 8/8/12/16/20/4 with wall pins 0/0/0/1/0/2 per box
+PASS g05_sign_balance plus and minus family counts equal at every L
+PASS g06_canon_frame_invariant connected-component box descriptors frame-invariant at L=(4, 5, 6)
+PASS g07_canon_L_invariant both signs carry fixed margins and wall pins, independent of L
+PASS g08_box_shape both signs: boxes 8/8/12/16/20/4 with pins 0/0/0/1/0/2 per box
 PASS g09_edge_family_diagonal edge family is diagonal (i == j) on axis (NN) classes
-PASS g10_dev_two max magnitude deviation 5.7e-08
-PASS g10_dev_two_rt2 max magnitude deviation 3.0e-08
-PASS g10_dev_two_rt3 max magnitude deviation 6.1e-08
-PASS g10_dev_four max magnitude deviation 1.3e-08
-PASS g14_wrong_surd_gap distance to second-nearest magnitude at least 5.4e-01
+PASS g10_center_dev_two max reference-center deviation 5.7e-08
+PASS g10_center_dev_two_rt2 max reference-center deviation 3.0e-08
+PASS g10_center_dev_two_rt3 max reference-center deviation 6.1e-08
+PASS g10_center_dev_four max reference-center deviation 1.3e-08
+PASS g14_second_center_gap distance to second-nearest center at least 5.4e-01
 PASS g15_two_window magnitude-2 offsets in (1.7e-09, 5.7e-08] strictly above the census cut
 PASS g16_wall_pair_values wall pair magnitudes 5.857096565429 and 8.685523719688 (spreads 8.5e-11 / 1.2e-11)
 PASS g17_edge_pair_values edge pair magnitudes 22.150846413069 and 24.150846469784 (spreads 1.2e-10 / 0.0e+00)
+PASS g18_pair_cut_margins swap max 6.1e-08; wall range [5.9e+00, 5.9e+00]; edge min 2.2e+01 stay between cuts 0.5 / 10.0
 PASS g18_law_four_swap counts(L=3..7)=[64, 216, 512, 1000, 1728] = 8(L-1)^3
 PASS g18_law_two_rt3_swap counts(L=3..7)=[64, 216, 512, 1000, 1728] = 8(L-1)^3
 PASS g18_law_two_rt2_swap counts(L=3..7)=[96, 324, 768, 1500, 2592] = 12(L-1)^3
@@ -34,11 +36,11 @@ PASS g18_law_two_edge counts(L=3..7)=[8, 12, 16, 20, 24] = 4(L-1)
 PASS g19_poly_identity descriptor prediction equals the stated polynomial for L=3..10
 PASS g20_census_anchor_L3 rounded census above cut = ((-4, 64), (-3, 224), (-2, 136), (2, 136), (3, 224), (4, 64)) (cycle-711 anchor)
 PASS g20_census_anchor_L7 rounded census above cut = ((-4, 1728), (-3, 4896), (-2, 4056), (2, 4056), (3, 4896), (4, 1728)) (cycle-711 anchor)
-PASS g22_bucket_composition census buckets = family sums (rounded 3 mixes the two surds)
+PASS g22_bucket_composition census buckets = family sums (rounded 3 mixes two numerical centers)
 PASS g23_argmax_law argmax family per frame = 16(L-1)^3 = 128 / 3456 (cycle-711 anchor)
-PASS g24_perturbed_rejector 2 entries leave the magnitude set (distance 3.0e-01) under a 1.7 diagonal perturbation
+PASS g24_perturbed_rejector 2 entries leave the reference-center set (distance 3.0e-01) under a 1.7 diagonal perturbation
 receipt: outputs/physical_mixed_frame_defect_census_family_law_cycle712_2026_08_02_receipt_2026-08-02.json
-TOTAL: PASS=29 FAIL=0
+TOTAL: PASS=30 FAIL=0
 
 ----- stderr -----
 

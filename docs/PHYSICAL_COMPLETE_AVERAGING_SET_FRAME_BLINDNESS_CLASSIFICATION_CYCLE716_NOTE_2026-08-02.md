@@ -75,7 +75,10 @@ The zero-defect set is recomputed from the compiled operators at tolerance
 Its order-six subgroup and right-coset role are inherited from the finite
 [Cycle-714 operator/source pairing result](PHYSICAL_ASSEMBLY_DEFECT_ISOSPECTRALITY_AND_SOURCE_PAIRING_CYCLE714_NOTE_2026-08-02.md)
 and the [Cycle-715 group factorization](PHYSICAL_FRAME_GROUP_FACTORIZATION_AND_MINIMAL_BLINDING_CYCLE715_NOTE_2026-08-02.md).
-The present runner recomputes the sextet, group table, and subgroup lattice.
+Cycle 715's exact finite complement/right-coset arithmetic and covering-subgroup
+sufficiency are conditional on a numerical near-zero-defect sextet at
+`L in {3,4}`; it does not supply universal necessity. The present runner
+recomputes the sextet, group table, and subgroup lattice.
 
 ## Derived sufficiency on the nonzero-average domain
 
@@ -190,8 +193,10 @@ runner bytes and the declared compiler-source fingerprint.
   supplies the finite operator/source pairing and four-right-coset collapse this
   cycle extends from subgroups to arbitrary sets.
 - [Cycle 715](PHYSICAL_FRAME_GROUP_FACTORIZATION_AND_MINIMAL_BLINDING_CYCLE715_NOTE_2026-08-02.md)
-  supplies the finite sextet/complement factorization and subgroup blinding
-  criterion generalized here through left stabilizers.
+  supplies the exact finite complement/right-coset factorization and
+  covering-subgroup sufficiency, conditional on its numerical near-zero-defect
+  sextet at `L in {3,4}`. The present cycle extends that sufficient construction
+  through arbitrary-set left stabilizers; it does not import necessity.
 - The linked Cycle-696 script supplies the executable compiler contract and its
   24-frame table; it is a support surface, not audit authority.
 

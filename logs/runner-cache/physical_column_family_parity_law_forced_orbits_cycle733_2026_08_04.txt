@@ -1,3 +1,14 @@
+===== runner cache v1 =====
+runner: scripts/physical_column_family_parity_law_forced_orbits_cycle733_2026_08_04.py
+runner_sha256: 9a4ec5fcd0f6307bef42644afe5c15d754bf92368862a2524adc0be2a1333690
+input_fingerprint_sha256: ce3931cc6e3b449c5f036710788dd0617f7c5682aa1ea06f6762755c45dfa833
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 18.21
+status: ok
+----- stdout -----
+PASS dep.c725  Cycle 725 binds the supplied corner-simplex model and exact adjacency bracket
+PASS dep.c731  Cycle 731 binds the spatial floor 108 and its 1792-piece certificate support
 
 the cell and its pieces of least volume
 PASS cell.pieces  4368 five-subsets of the 16 corners, 2672 of least volume
@@ -53,6 +64,7 @@ PASS flo.bound  no piece costs under 6, so no dissection costs under 144; what i
 the minimum principle forces four orbits of pieces
 PASS for.count  a complete search over the 400 pieces of least cost visits 502838 nodes and finds 15800 dissections
 PASS for.orbits  they fall into 391 orbits of sizes [8, 12, 24, 48], covering all 15800
+PASS for.geometry  all 391 sample-cover orbits have geometric dissection representatives; 107916 pair certificates checked and symmetry covers all 15800 solutions
 PASS for.pool  the pieces they use are 4 whole orbits, 192 pieces; the other 208 pieces of least cost are never used
 PASS for.needed  and every one of the four is needed: drop any one and the remaining 352 pieces of least cost admit no dissection at all
 PASS for.stencil  the monotone stencil takes six pieces from each of those 4
@@ -64,4 +76,14 @@ PASS sep.blind  the pair of costs that the symmetries keep fixed is blind to the
 PASS sep.sharp  the whole family is not blind: 12 cost vectors on the kept pieces, 13 on those left out, 0 in common
 PASS sep.level  so the kept pieces are exactly a union of level sets of the family, 12 of the 25 carried by any piece of least cost; three other splits into the same two sizes share [25, 12, 6] vectors, so a clean separation is not automatic
 
-TOTAL: PASS=41 FAIL=0
+per_element: checked all 2672 minimal pieces for the eleven costs, ten parity certificates, the full-set dual obstruction, and the least-cost support partition
+per_site: checked and not executed — the supplied theorem has no lattice-site field; its smallest resolved objects are one-cell corner simplices and sample points
+per_mode: checked and not executed — no spectral or mode decomposition occurs in this finite incidence and exact-cover theorem
+per_block: checked the complete supplied one-cell by one-tick four-box, all 2672 minimal pieces, all 15800 least-cost dissections, and all 391 symmetry orbits
+lattice_wide: checked and not executed — no multi-cell, arbitrary-tick, boundary, continuum, or framework-selection extension is asserted
+
+TOTAL: PASS=44 FAIL=0
+RECEIPT {"claim_type":"bounded_theorem","cycle731_floor":{"bound":108,"support_pieces":1792},"family":{"certificate_supports":[234,232,212,210,214,234,168,238,270,246],"column_sets":15,"full_set_dual_cost":25,"full_set_dual_pieces":[4,52,228,839],"nontrivial_sets":11,"proper_sets_certified":10,"trivial_sets":4},"input_sha256":{"docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md":"5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b","docs/MINIMAL_AXIOMS_2026-06-29.md":"53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39","docs/PHYSICAL_COLUMN_FAMILY_PARITY_LAW_FORCED_ORBITS_CYCLE733_NOTE_2026-08-04.md":"67ff41b2a57f3d0cefb20afdb11f661cff4febfee0bffa3267d31c54adf4b039","docs/PHYSICAL_COST_IDENTITY_INDICATOR_CERTIFICATE_CYCLE731_NOTE_2026-08-04.md":"d9a19a7664cced7a2d6a94e8b0d70238bf1b44f009dc012bfc5dde1ca655dc5e","docs/PHYSICAL_EXACT_ADJACENCY_DISSECTION_BRACKET_CYCLE725_NOTE_2026-08-03.md":"f080cc51bda354b6dd780c3bb67e81a6a0f95cc25a71153c23998100d04aa8e9","outputs/physical_cost_identity_indicator_certificate_cycle731_2026_08_04_receipt_2026-08-04.json":"970702f44703f53d26a9087c4a5a907509baf5ce646a7a21f248a0ddb5874fd7","outputs/physical_exact_adjacency_dissection_bracket_cycle725_2026_08_03_receipt_2026-08-03.json":"56d0bc3763f02b3a15d52d961c7bec8ab482cdd7670f351e9098c17802dbde5b","scripts/physical_cost_identity_indicator_certificate_cycle731_2026_08_04.py":"898db66b8aaabcdf76a8503fbab3e2bb4cf1a16aa1c90e9779ebfa6ad65d889a","scripts/physical_exact_adjacency_dissection_bracket_cycle725_2026_08_03.py":"8e5d4f99373ee3a36bb03ee176de1eda6299c34878474764745efefe25d2f43e"},"minimum":{"dissection_cost":144,"dissection_orbits":391,"dissections":15800,"exact_cover_nodes":502838,"excluded_pieces":208,"geometric_pair_checks":107916,"geometric_representatives":391,"holes":379200,"least_pieces":400,"piece_cost":6,"used_piece_orbits":[8,11,18,28],"used_pieces":192},"no_go_discipline":{"checklist":"No-Go Discipline Gate section in the Cycle 733 note","n5_certificate":"five resolution lines in primary stdout and canonical cache","negative_assertion_class":"derived_no_go_boundary","status":"PASS"},"separation":{"excluded_vectors":13,"intersection":0,"kept_vectors":12},"supplied_model":"corner 4-simplex pieces of one lattice cell carried through one tick, all ten vertex pairs graded by spatial L1 separation; the piece/dissection structure is supplied here, not derived from the Lattice axiom","totals":{"fail":0,"pass":44}}
+
+----- stderr -----
+

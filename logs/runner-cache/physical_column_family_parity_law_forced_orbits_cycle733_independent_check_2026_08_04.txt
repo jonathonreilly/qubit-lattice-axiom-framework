@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/physical_column_family_parity_law_forced_orbits_cycle733_independent_check_2026_08_04.py
+runner_sha256: e165480467acb7f07b3dd0cd62dc9810f3bc83ce168ff4f540f4d520f2327a13
+input_fingerprint_sha256: fe2dcc123f2f5dd3e3e1d7f4c4ade6f52112be100b93aebb8edffaf9ed0dd6d1
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 10.61
+status: ok
+----- stdout -----
+PASS carried literals parse                         Cycle 733 witness/dual/floor data and Cycle 731 floor data
+PASS Cycle 731 certificate is not stale             Cycle 733 carries the exact current Cycle 731 spatial-floor certificate
+PASS four-box minimal pieces                        [(0, 1360), (1, 2672), (2, 320), (3, 16)]
+PASS finite cell group                              24 proper spatial rotations times the independent tick flip
+PASS piece orbits                                   57 complete symmetry orbits
+PASS generic sample incidence                       2736 points, no collision and no boundary incidence
+PASS exhibited dissections                          12 carried witnesses plus the independently constructed monotone stencil
+PASS column-cost family                             four singleton zero costs, eleven nonzero costs
+PASS no nonzero cost is cut-blind                   each varies on the 13 exhibited dissections
+PASS proper parity systems                          all ten admit an even-support affine GF(2) certificate
+PASS full parity system is inconsistent             the affine GF(2) system has no solution
+PASS minimal full-set dual obstruction              four pieces suffice; no one-, two-, or three-piece odd dual exists
+PASS tick-coupled split                             full cost equals spatial plus exactly-one-spatial-step tick pairs
+PASS opposite-order minimum enumeration             496849 search nodes, 15800 exact covers
+PASS minimum geometry and symmetry                  391 geometrically certified representatives cover all 15800 solutions
+PASS four indispensable piece orbits                every minimum dissection uses every one of the four orbits
+PASS Cycle 731 spatial-floor consumption            all minimum full-cost dissections lie in the bound Cycle 731 support
+PASS single-piece holes are rigid                   2672 distinct interior footprints imply 15800*24 unique single-piece refills
+PASS full-family support separation                 12 kept vectors and 13 excluded vectors are disjoint
+PASS hostile full-cost mutation rejected            dropping the tick destroys the four-piece odd obstruction
+PASS hostile dual substitution rejected             no single-piece replacement preserves the even cover with odd total
+PASS sample-cover geometry hostile control          sample-disjoint simplices can overlap, so the separate geometry gate is load-bearing
+PASS hostile Cycle 731 weight mutation rejected     a one-unit floor-certificate mutation violates nonnegative slack
+PASS receipt summary matches reconstruction         generated primary receipt is consistent with the independent route
+
+per_element: checked all 2672 minimal pieces, ten proper parity systems, the full dual obstruction, and both 192/208 least-cost support classes
+per_site: checked and not executed — this supplied one-cell theorem has no lattice-site field beyond its finite corner coordinates
+per_mode: checked and not executed — no modal or spectral statement is made
+per_block: checked the complete one-cell by one-tick box and independently enumerated all 15800 minimum exact covers with 391 geometric orbit checks
+lattice_wide: checked and not executed — no arbitrary-size, multi-cell, boundary, or continuum result is claimed
+TOTAL: PASS=24 FAIL=0
+
+----- stderr -----
+

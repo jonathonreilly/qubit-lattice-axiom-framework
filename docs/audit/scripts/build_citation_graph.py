@@ -167,6 +167,12 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
         "scripts/physical_mixed_frame_defect_census_family_law_cycle712_"
         "independent_check_2026_08_02.py",
     ],
+    # Cycle 715's checker independently rebuilds the frame action, subgroup
+    # lattice, source stabilizer, Hessian clusters, and finite probe census.
+    "physical_frame_group_complement_and_finite_probe_blinding_cycle715_note_2026-08-02": [
+        "scripts/physical_frame_group_complement_and_finite_probe_blinding_cycle715_"
+        "independent_check_2026_08_02.py",
+    ],
     "b4_clock_relation_run_cycle879_bounded_theorem_note_2026-07-28": [
         "scripts/frontier_cycle879_b4_relation_independent_check_2026_07_28.py",
     ],

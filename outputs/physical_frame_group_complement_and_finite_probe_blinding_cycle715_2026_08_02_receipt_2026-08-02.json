@@ -1,0 +1,314 @@
+{
+  "box_sizes": [
+    3,
+    4
+  ],
+  "fail": 0,
+  "gates": {
+    "G.complement.cover": {
+      "detail": "|S C4|=24",
+      "pass": true
+    },
+    "G.complement.hostile_overlap": {
+      "detail": "candidate=(0, 4, 19, 23), intersection=2, coverage=12",
+      "pass": true
+    },
+    "G.complement.intersection": {
+      "detail": "intersection=[23]",
+      "pass": true
+    },
+    "G.cosets.partition": {
+      "detail": "right cosets=((1, 4, 9, 15, 18, 23), (0, 6, 10, 12, 19, 21), (2, 5, 11, 14, 16, 20), (3, 7, 8, 13, 17, 22))",
+      "pass": true
+    },
+    "G.group.associative": {
+      "detail": "24^3 multiplication-table comparisons",
+      "pass": true
+    },
+    "G.group.frames": {
+      "detail": "24 distinct determinant-one signed permutations",
+      "pass": true
+    },
+    "G.group.identity": {
+      "detail": "identity frame=23",
+      "pass": true
+    },
+    "G.relabel.compose.L3": {
+      "detail": "m_ab=m_a\u2218m_b for 576/576 pairs",
+      "pass": true
+    },
+    "G.relabel.compose.L4": {
+      "detail": "m_ab=m_a\u2218m_b for 576/576 pairs",
+      "pass": true
+    },
+    "G.relabel.reverse_rejector.L3": {
+      "detail": "reversed order matches only 120/576 pairs",
+      "pass": true
+    },
+    "G.relabel.reverse_rejector.L4": {
+      "detail": "reversed order matches only 120/576 pairs",
+      "pass": true
+    },
+    "G.sextet.order.L3": {
+      "detail": "near-zero-defect labels=[1, 4, 9, 15, 18, 23] at tolerance 1.0e-09",
+      "pass": true
+    },
+    "G.sextet.order.L4": {
+      "detail": "near-zero-defect labels=[1, 4, 9, 15, 18, 23] at tolerance 1.0e-09",
+      "pass": true
+    },
+    "G.sextet.same": {
+      "detail": "L3=[1, 4, 9, 15, 18, 23], L4=[1, 4, 9, 15, 18, 23]",
+      "pass": true
+    },
+    "G.sextet.subgroup": {
+      "detail": "closure=[1, 4, 9, 15, 18, 23]",
+      "pass": true
+    },
+    "G.solve.margin.L3": {
+      "detail": "min singular=4.724e-01, condition=1.341e+02",
+      "pass": true
+    },
+    "G.solve.margin.L4": {
+      "detail": "min singular=3.677e-02, condition=1.755e+03",
+      "pass": true
+    },
+    "G.source_stabilizer.reconstructed": {
+      "detail": "C4=[20, 21, 22, 23], derived={3: [20, 21, 22, 23], 7: [20, 21, 22, 23]}",
+      "pass": true
+    },
+    "H.accidental_ones.L3": {
+      "detail": "H={e} all-ones spread=2.220e-16",
+      "pass": true
+    },
+    "H.accidental_ones.L4": {
+      "detail": "H={e} all-ones spread=8.571e-14",
+      "pass": true
+    },
+    "H.covering.count_law": {
+      "detail": "matches=30/30",
+      "pass": true
+    },
+    "H.covering.minimum": {
+      "detail": "minimum covering subgroups=[(0, 3, 20, 23), (0, 7, 16, 23), (3, 10, 14, 23), (20, 21, 22, 23)]",
+      "pass": true
+    },
+    "H.covering.orders": {
+      "detail": "orders=[4, 4, 4, 4, 8, 8, 8, 12, 24]",
+      "pass": true
+    },
+    "H.probes.average_invariance.L3": {
+      "detail": "max H-invariance residual=2.502e-16",
+      "pass": true
+    },
+    "H.probes.average_invariance.L4": {
+      "detail": "max H-invariance residual=2.753e-16",
+      "pass": true
+    },
+    "H.probes.covering_sufficiency.L3": {
+      "detail": "covering worst=1.140e-11",
+      "pass": true
+    },
+    "H.probes.covering_sufficiency.L4": {
+      "detail": "covering worst=1.788e-10",
+      "pass": true
+    },
+    "H.probes.no_cancellation.L3": {
+      "detail": "minimum pre-normalization average norm=2.581e-01",
+      "pass": true
+    },
+    "H.probes.no_cancellation.L4": {
+      "detail": "minimum pre-normalization average norm=1.961e-01",
+      "pass": true
+    },
+    "H.probes.noncovering_witness.L3": {
+      "detail": "smallest noncovering Gaussian spread=2.477e-02",
+      "pass": true
+    },
+    "H.probes.noncovering_witness.L4": {
+      "detail": "smallest noncovering Gaussian spread=9.497e-02",
+      "pass": true
+    },
+    "H.probes.scan.L3": {
+      "detail": "three seed-7153 Gaussian probes agree on 30/30 subgroups",
+      "pass": true
+    },
+    "H.probes.scan.L4": {
+      "detail": "three seed-7154 Gaussian probes agree on 30/30 subgroups",
+      "pass": true
+    },
+    "H.subgroups.count": {
+      "detail": "count=30",
+      "pass": true
+    },
+    "Q.cluster.separation.L3": {
+      "detail": "between-cluster minimum=4.000000",
+      "pass": true
+    },
+    "Q.cluster.separation.L4": {
+      "detail": "between-cluster minimum=4.000000",
+      "pass": true
+    },
+    "Q.cluster.within.L3": {
+      "detail": "within=1.243e-10, tolerance=1.0e-06",
+      "pass": true
+    },
+    "Q.cluster.within.L4": {
+      "detail": "within=1.243e-10, tolerance=1.0e-06",
+      "pass": true
+    },
+    "Q.coset_orientation.hostile.L3": {
+      "detail": "left-block spread=4.000000",
+      "pass": true
+    },
+    "Q.coset_orientation.hostile.L4": {
+      "detail": "left-block spread=4.000000",
+      "pass": true
+    },
+    "Q.matrix_mutation.hostile.L3": {
+      "detail": "single-entry mutation raises sextet spread to 2.500e-01",
+      "pass": true
+    },
+    "Q.matrix_mutation.hostile.L4": {
+      "detail": "single-entry mutation raises sextet spread to 2.500e-01",
+      "pass": true
+    },
+    "Q.sextet.gap.L3": {
+      "detail": "nearest nonmember defect=4.000000",
+      "pass": true
+    },
+    "Q.sextet.gap.L4": {
+      "detail": "nearest nonmember defect=4.000000",
+      "pass": true
+    }
+  },
+  "notes": {
+    "cluster_rows": {
+      "3": {
+        "across": 4.000000013337779,
+        "left_spread": 4.000000013337779,
+        "nonmember_gap": 4.000000013337779,
+        "within": 1.2434497875801753e-10
+      },
+      "4": {
+        "across": 4.000000013337779,
+        "left_spread": 4.000000013337779,
+        "nonmember_gap": 4.000000013337779,
+        "within": 1.2434497875801753e-10
+      }
+    },
+    "covering_orders": [
+      4,
+      4,
+      4,
+      4,
+      8,
+      8,
+      8,
+      12,
+      24
+    ],
+    "minimum_covering_subgroups": [
+      [
+        0,
+        3,
+        20,
+        23
+      ],
+      [
+        0,
+        7,
+        16,
+        23
+      ],
+      [
+        3,
+        10,
+        14,
+        23
+      ],
+      [
+        20,
+        21,
+        22,
+        23
+      ]
+    ],
+    "near_zero_defect_sextet": [
+      1,
+      4,
+      9,
+      15,
+      18,
+      23
+    ],
+    "near_zero_defect_tolerance": 1e-09,
+    "probe_rows": {
+      "3": {
+        "all_ones_identity_spread": 2.220446049250313e-16,
+        "average_invariance_residual": 2.5018537765542007e-16,
+        "covering_worst": 1.1397563448589665e-11,
+        "minimum_average_norm": 0.2581346273153595,
+        "noncovering_best": 0.02476707964055025,
+        "observed_matches": 30,
+        "seed": 7153
+      },
+      "4": {
+        "all_ones_identity_spread": 8.570921750106208e-14,
+        "average_invariance_residual": 2.752765189240739e-16,
+        "covering_worst": 1.7879253633168446e-10,
+        "minimum_average_norm": 0.19613682443016717,
+        "noncovering_best": 0.0949714624801018,
+        "observed_matches": 30,
+        "seed": 7154
+      }
+    },
+    "right_cosets": [
+      [
+        1,
+        4,
+        9,
+        15,
+        18,
+        23
+      ],
+      [
+        0,
+        6,
+        10,
+        12,
+        19,
+        21
+      ],
+      [
+        2,
+        5,
+        11,
+        14,
+        16,
+        20
+      ],
+      [
+        3,
+        7,
+        8,
+        13,
+        17,
+        22
+      ]
+    ],
+    "sizes": [
+      3,
+      4
+    ],
+    "source_stabilizer": [
+      20,
+      21,
+      22,
+      23
+    ],
+    "subgroup_count": 30
+  },
+  "pass": 44,
+  "runner": "physical_frame_group_complement_and_finite_probe_blinding_cycle715_2026_08_02.py"
+}

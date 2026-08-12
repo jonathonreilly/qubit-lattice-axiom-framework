@@ -2,8 +2,8 @@
 
 The single cell is the unit four-cube with three lattice directions and one tick. Its
 least-volume cuttings at the floor of the supplied four-coordinate L1-pair cost carry eight readings of the
-population: the constant zero, the constant one, and the two sides of each of the three
-charges. A set of pieces carries a reading when, on every cutting, the parity of how many
+population: the constant zero, the constant one, and the two sides of each of three
+nonconstant algebraic readings. A set of pieces carries a reading when, on every cutting, the parity of how many
 of its pieces that cutting uses reproduces the reading. The previous cycle searched every
 set of at most eight pieces; this runner completes the next even size. It rebuilds the
 cuttings and the block parities any search of them is forced to respect, reproduces the
@@ -605,7 +605,7 @@ gate(fb == 1, "lic.ctrl",
 if len(sys.argv) > 1 and sys.argv[1] == "smoke":
     print("")
     print("SMOKE OK: PASS={0} FAIL={1}".format(PF[0], PF[1]))
-    raise SystemExit(0)
+    raise SystemExit(1 if PF[1] else 0)
 
 # ------------------------------------ Part 3: the engine for the size-ten search
 # A set of pieces is split by quarter into a cell (q0, q1, q2, q3). Each quarter's
@@ -1232,8 +1232,8 @@ gate(C8[0] == 648 and LC8 == 55, "m8.zero",
      "{1} cells the eight readings license".format(C8[0], LC8))
 gate(C8[1] == 192, "m8.one",
      "the constant one reading is carried by {0} sets of eight pieces".format(C8[1]))
-gate(all(c == 0 for c in C8[2:]), "m8.charge",
-     "no set of eight pieces carries either side of any of the three charges: the six "
+gate(all(c == 0 for c in C8[2:]), "m8.reading",
+     "no set of eight pieces carries any of the six nonconstant readings: the six "
      "counts are {0}".format(C8[2:]))
 NV8 = 0
 BAD8 = 0

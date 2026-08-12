@@ -1,61 +1,74 @@
-"""Cycle 729 of the emergent-geometry lane: the block's adjacency cost is exactly [216, 320].
+"""Cycle 729: an exact finite theorem in a supplied two-cell corner-simplex model.
 
-The lane's object is a 2 by 1 by 1 spatial block of the Z^3 lattice carried through one
-tick, so a 3 by 2 by 2 by 2 array of 24 corners.  Its four-volume is 2, a minimal piece has
-volume 1/24, so every minimal-volume dissection uses exactly 48 pieces.  The adjacency
-charge of a piece counts the corner pairs whose spatial separation exceeds one lattice
-step, and the cost of a dissection is the total over its pieces.
+The framework does not select the model used here.  Its supplied domain is a 2 by 1 by 1
+spatial corner box with one equally grained tick coordinate, normalized-volume-one
+five-corner simplices, 48-piece dissections, and a declared charge counting vertex pairs
+whose spatial L1 separation exceeds one.  The Lattice axiom supplies only the spatial
+nearest-neighbour grading and proper cubic rotations.  The registered kinetic-isotropy
+primitive supplies only equal spatial/tick graining.  Neither selects corner simplices,
+dissections, this charge, or a physical tick realization.
 
-Charging every piece its least or its greatest adjacency gives only the interval 144 to
-432.  This cycle replaces both ends by exact values, with an integer certificate and an
-exhibited dissection at each end, and no solver anywhere in the artifact.
+Inside that finite domain the cost interval is exactly [216, 320].  Integer sample-point
+certificates give both bounds, and explicit 48-piece dissections attain both.  The supplied
+cost-320 maximizer is non-face-to-face and therefore is not the lower hull of any corner
+lift.  This is a statement about that one exhibited maximizer, not about every maximizer,
+every dissection model, or a physical construction.
 
-  FLOOR  216, certificate at denominator 512, attained by the stacked monotone stencil.
-  CEILING 320, certificate at denominator 49, attained by a 48-piece dissection built here.
+Cycle 728 is a direct, unaudited dependency only for its carried cost-318 block witness and
+the earlier [318, 324] maximum window.  This runner binds the exact Cycle 728 witness before
+rechecking it.  It does not attribute lift-search provenance or a certificate-shape
+necessity claim to Cycle 728; those claims did not survive Cycle 728 review.
 
-The certificate inequality is one line.  Fix an integer weight u_o for every orbit of
-sample points and one integer Z.  If
-
-    sum_o M[p][o] u_o + Z  <=  D * adjacency(p)
-
-holds for every minimal piece p, then summing over the 48 pieces of any dissection gives
-16 * sum(u) + 48 * Z <= D * cost, because the sample points are group-closed with 16 per
-orbit and no sample point lies on a piece boundary, so each point is interior to exactly
-one piece of any dissection.  The same statement with the inequality reversed bounds the
-cost above.  Nothing in the argument assumes the dissection is symmetric; the symmetry is
-used only to compress the program from 17280 rows to 1080.
-
-Two readings from cycle 728 are corrected here, both in the direction of a sharper result.
-
-  Its best dissection cost 318 and its certified ceiling was 324.  The window shuts at 320:
-  a dissection of cost 320 is exhibited, and a certificate rules out 321.
-
-  Its boundary paragraph said sharpening the ceiling would need a certificate of a
-  different shape rather than a larger denominator.  That is wrong for denominators from 49
-  upward, and the certificate embedded here is the constructive demonstration.  The
-  arithmetic slipped: the bound is the integer part of value over D, so a fixed gap of 48
-  between the value and 320 D stops mattering as soon as D exceeds 48.
-
-The last section explains why cycle 728's search stopped where it did.  A dissection that
-is the set of lower faces of a lifted polytope is face-to-face, because lower faces of a
-polytope meet in common faces.  The stencil and cycle 728's own best dissection both carry
-an explicit integer height, so both are lower hulls.  The cost-320 dissection has facets
-carried by exactly one piece and away from the boundary of the box, so it is not
-face-to-face and no lift produces it.  Cycle 728 generated candidates as lower hulls, so
-the dearest dissection was outside its search space by construction, not by bad luck.
-
-Not being face-to-face is ordinary here and carries no soundness cost: the exact-cover
-proof uses volume, pairwise disjointness by exhibited integer normals, and containment of
-every sample point, and never uses a face-to-face hypothesis.
+The primary runner contains no solver.  Every failed gate makes the process exit nonzero.
 """
+import ast
 import itertools
+import json
+import sys
 from collections import Counter
+from pathlib import Path
 
 import numpy as np
+
+ROOT = Path(__file__).resolve().parents[1]
+NOTE_PATH = (
+    "docs/PHYSICAL_BLOCK_COST_INTERVAL_LIFT_OBSTRUCTION_CYCLE729_NOTE_2026-08-04.md"
+)
+INDEPENDENT_PATH = (
+    "scripts/physical_block_cost_interval_lift_obstruction_cycle729_independent_check_"
+    "2026_08_04.py"
+)
+C728_NOTE_PATH = (
+    "docs/PHYSICAL_SPATIAL_BLOCK_SEAM_DICHOTOMY_CYCLE728_NOTE_2026-08-04.md"
+)
+C728_RUNNER_PATH = (
+    "scripts/physical_spatial_block_seam_dichotomy_cycle728_2026_08_04.py"
+)
+C728_RECEIPT_PATH = (
+    "outputs/physical_spatial_block_seam_dichotomy_cycle728_2026_08_04_"
+    "receipt_2026-08-04.json"
+)
+RECEIPT_PATH = ROOT / (
+    "outputs/physical_block_cost_interval_lift_obstruction_cycle729_2026_08_04_"
+    "receipt_2026-08-04.json"
+)
+AUDIT_INPUT_PATHS = (
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+    "docs/PHYSICAL_SPATIAL_BLOCK_SEAM_DICHOTOMY_CYCLE728_NOTE_2026-08-04.md",
+    "scripts/physical_spatial_block_seam_dichotomy_cycle728_2026_08_04.py",
+    "outputs/physical_spatial_block_seam_dichotomy_cycle728_2026_08_04_"
+    "receipt_2026-08-04.json",
+    "docs/PHYSICAL_BLOCK_COST_INTERVAL_LIFT_OBSTRUCTION_CYCLE729_NOTE_2026-08-04.md",
+    "scripts/physical_block_cost_interval_lift_obstruction_cycle729_independent_check_"
+    "2026_08_04.py",
+)
+AUDIT_TIMEOUT_SEC = 300
 
 PAIRS = list(itertools.combinations(range(5), 2))
 OFF = np.array([0, 1, 7, 49, 343], dtype=np.int64)
 NP = [0, 0]
+GATES = []
 
 FLOOR_U = [-1081, 2, 1, -373, 0, 0, 503, 1, 0, 648, 0, 1055, 0, -522, -20, 0, -416, 386, 0,
            -687, 0, 1, 0, 169, 0, 0, 0, 0, 0, 0, 0, 0, -415, -500, -292, 4, 2548, 2, 0, 7,
@@ -185,7 +198,20 @@ HGT_PR = [704, 448, 704, 352, 704, 704, 672, 0, 560, 560, 400, 208, 464, 688, 52
 
 def gate(ok, name, detail):
     NP[0 if ok else 1] += 1
-    print(("PASS " if ok else "FAIL ") + name + "  " + detail)
+    GATES.append((name, bool(ok)))
+    print(("PASS " if ok else "FAIL ") + name + "  " + detail, flush=True)
+
+
+def carried_literal(path, name):
+    """Read one literal assignment from a dependency without executing it."""
+    tree = ast.parse((ROOT / path).read_text(encoding="utf-8"))
+    for node in tree.body:
+        if not isinstance(node, ast.Assign) or len(node.targets) != 1:
+            continue
+        target = node.targets[0]
+        if isinstance(target, ast.Name) and target.id == name:
+            return ast.literal_eval(node.value)
+    raise ValueError("missing carried literal {0} in {1}".format(name, path))
 
 
 def sec(text):
@@ -431,6 +457,19 @@ def lower_rows(V, P):
     return np.array(out, dtype=np.int64)
 
 
+# ------------------------------------------------- direct dependency closure
+C728_RECEIPT = json.loads((ROOT / C728_RECEIPT_PATH).read_text(encoding="utf-8"))
+C728_WITNESS = carried_literal(C728_RUNNER_PATH, "BLOCK_HI")
+gate(
+    C728_RECEIPT.get("status") == "pass"
+    and C728_RECEIPT.get("seam", {}).get("seam_respecting_exact_bracket") == [216, 256]
+    and C728_RECEIPT.get("block", {}).get("global_maximum_window") == [318, 324]
+    and 318 in C728_RECEIPT.get("block", {}).get("attained_witness_costs", [])
+    and C728_WITNESS == PRIOR,
+    "Cycle 728 carried-witness dependency",
+    "exact carried cost-318 witness and [318, 324] window are input-bound",
+)
+
 # ------------------------------------------------- the block and its minimal pieces
 CORNB = [(x, y, z, t) for x in range(3) for y in range(2)
          for z in range(2) for t in range(2)]
@@ -506,14 +545,15 @@ gs, ts = separated(VB, STEN)
 CS = int(charge(VB, STEN, [0, 1, 2]).sum())
 
 sec("the floor: 216, certified and attained")
-gate(len(UFL) == NORB and wf >= 0, "floor certificate is valid",
+gate(len(UFL) == NORB and wf == 0 and tf == 30, "floor certificate is valid",
      "least slack {0} over all {1} orbit rows, tight on {2}".format(wf, NORB, tf))
 gate(wfa == wf, "floor certificate checked on every piece",
      "least slack {0} over all {1} pieces matches the orbit program".format(
          wfa, len(MINB)))
 gate(vfl == FLOOR_VAL and bfl == 216, "floor bound",
      "value {0} over denominator {1} rounds up to {2}".format(vfl, FLOOR_D, bfl))
-gate(len(STEN) == 48 and int(volumes(VB, STEN).sum()) == 48 and gs == ts,
+gate(len(STEN) == 48 and int(volumes(VB, STEN).sum()) == 48
+     and gs == ts == 1128,
      "the stacked stencil is a dissection",
      "48 pieces, volumes sum to the box volume, all {0} pairs separated".format(ts))
 gate(CS == 216, "the stacked stencil attains the floor",
@@ -533,20 +573,22 @@ gp, tp = separated(VB, PRIORP)
 CP = int(charge(VB, PRIORP, [0, 1, 2]).sum())
 
 sec("the ceiling: 320, certified and attained")
-gate(len(UCL) == NORB and wc >= 0, "ceiling certificate is valid",
+gate(len(UCL) == NORB and wc == 0 and tc == 53, "ceiling certificate is valid",
      "least slack {0} over all {1} orbit rows, tight on {2}".format(wc, NORB, tc))
 gate(wca == wc, "ceiling certificate checked on every piece",
      "least slack {0} over all {1} pieces matches the orbit program".format(
          wca, len(MINB)))
 gate(vcl == CEIL_VAL and bcl == 320, "ceiling bound",
      "value {0} over denominator {1} rounds down to {2}".format(vcl, CEIL_D, bcl))
-gate(len(DEARP) == 48 and int(volumes(VB, DEARP).sum()) == 48 and gd == td,
+gate(len(DEARP) == 48 and int(volumes(VB, DEARP).sum()) == 48
+     and gd == td == 1128,
      "the dearest dissection is a dissection",
      "48 pieces, volumes sum to the box volume, all {0} pairs separated".format(td))
 gate(CD == 320, "it attains the ceiling", "its adjacency cost is {0}".format(CD))
 gate(bfl == CS and bcl == CD, "the interval is pinned at both ends",
      "cost lies in 216 to 320 and both ends are reached")
-gate(len(PRIORP) == 48 and gp == tp and CP == 318 and CP < CD,
+gate(len(PRIORP) == 48 and int(volumes(VB, PRIORP).sum()) == 48
+     and gp == tp == 1128 and CP == 318 and CP < CD,
      "the previously dearest dissection is passed",
      "the earlier witness is a dissection of cost {0}".format(CP))
 
@@ -559,7 +601,7 @@ _, _, ODD_S = facets(VB, STEN, FACE)
 _, _, ODD_P = facets(VB, PRIORP, FACE)
 
 sec("the dearest dissection is not the lower hull of any lift")
-gate(ODD_D > 0, "it is not face-to-face",
+gate(ODD_D == 16, "it is not face-to-face",
      "{0} facets are carried by one piece and lie away from the boundary".format(ODD_D))
 gate(int((RS @ HS).max()) <= -1, "the stacked stencil is a lower hull",
      "an integer height clears all {0} lower-face inequalities, worst {1}".format(
@@ -567,9 +609,10 @@ gate(int((RS @ HS).max()) <= -1, "the stacked stencil is a lower hull",
 gate(int((RP @ HP).max()) <= -1, "the earlier witness is a lower hull",
      "an integer height clears all {0} lower-face inequalities, worst {1}".format(
          len(RP), int((RP @ HP).max())))
-gate(ODD_S == 0 and ODD_P == 0 and CS < CP < CD, "why a lift-based search stops at 318",
-     "lifts reach 216 and {0}; the dissection costing {1} is not reachable that way"
-     .format(CP, CD))
+gate(ODD_S == 0 and ODD_P == 0 and CS < CP < CD,
+     "regular comparators and nonregular maximizer separate",
+     "the supplied 216 and Cycle 728 cost-{0} witnesses are regular; the carried "
+     "cost-{1} witness is not".format(CP, CD))
 
 # ------------------------------------------------- controls
 UF2, of2 = bump(BO, BXO, UFL, FLOOR_Z, FLOOR_D, False)
@@ -592,7 +635,7 @@ gate(gb < tb, "the separation test is not automatic",
      "swapping one piece leaves {0} of {1} pairs separated".format(gb, tb))
 gate(HD > -1, "a height is specific to its own dissection",
      "the stencil height fails the dearest dissection's rows, worst {0}".format(HD))
-gate(ODD_D > 0 and ODD_S == 0, "the facet count separates the objects",
+gate(ODD_D == 16 and ODD_S == 0, "the facet count separates the objects",
      "{0} for the dearest dissection against {1} for the stencil".format(ODD_D, ODD_S))
 
 # ------------------------------------------------- computational identities
@@ -615,4 +658,98 @@ EXACT = FLOOR_D * int(BXO[RW]) - (sum(int(BO[RW, o]) * int(UFL[o])
 gate(EXACT == wf, "the arithmetic does not overflow",
      "recomputing the tightest row in unbounded integers gives {0}".format(EXACT))
 
-print("TOTAL: PASS={0} FAIL={1}".format(NP[0], NP[1]))
+N5 = [
+    "per_element: checked -- all 17,280 supplied normalized-volume-one corner "
+    "simplices enter both exact certificate inequalities",
+    "per_site: checked -- only the 24 corners of the supplied 2 by 1 by 1 spatial "
+    "block with one equal-grained tick; no physical cell selection is executed",
+    "per_mode: checked and not executed -- the finite corner-dissection theorem has "
+    "no spectral, field-mode, or momentum decomposition",
+    "per_block: checked -- three carried 48-piece witnesses, all 1,128 pairs per "
+    "witness, both full certificate systems, and the internal-facet obstruction",
+    "lattice_wide: checked and not executed -- no arbitrary block, repeated-block, "
+    "longer-tick, thermodynamic, boundary-limit, or continuum claim is asserted",
+]
+for line in N5:
+    print(line, flush=True)
+
+RECEIPT = {
+    "schema": "physical-block-cost-interval-lift-obstruction-cycle729-v2",
+    "status": "pass" if NP[1] == 0 else "fail",
+    "claim_type": "bounded_theorem",
+    "audit_status_authority": "independent audit lane only",
+    "supplied_model": {
+        "spatial_shape": [2, 1, 1],
+        "tick_extent": 1,
+        "piece_class": "five-corner normalized-volume-one simplices",
+        "pieces_per_dissection": 48,
+        "charge": "vertex pairs with spatial L1 separation greater than one",
+        "physical_tick_admissibility_bridge": "open",
+        "physical_simplex_and_charge_selection_bridge": "open",
+    },
+    "direct_dependency": {
+        "cycle": 728,
+        "status": C728_RECEIPT.get("status"),
+        "carried_witness_matches": C728_WITNESS == PRIOR,
+        "imported_window": C728_RECEIPT.get("block", {}).get("global_maximum_window"),
+        "imported_witness_cost": 318,
+    },
+    "checks": {"named_checks_passed": NP[0], "named_checks_failed": NP[1]},
+    "gates": {name: ("PASS" if ok else "FAIL") for name, ok in GATES},
+    "box": {
+        "corners": len(VB),
+        "five_corner_subsets": len(SUBB),
+        "minimal_pieces": len(MINB),
+        "piece_orbits": NORB,
+        "orbit_size": [int(SZB.min()), int(SZB.max())],
+        "charge_spectrum": {str(k): v for k, v in sorted(Counter(BX.tolist()).items())},
+    },
+    "exact_interval": [bfl, bcl],
+    "floor_certificate": {
+        "denominator": FLOOR_D,
+        "numerator": vfl,
+        "least_slack": wf,
+        "tight_orbit_rows": tf,
+    },
+    "ceiling_certificate": {
+        "denominator": CEIL_D,
+        "numerator": vcl,
+        "least_slack": wc,
+        "tight_orbit_rows": tc,
+    },
+    "witnesses": {
+        "stacked_monotone": {"cost": CS, "pair_separators": gs, "regular": True},
+        "cycle728_carried": {"cost": CP, "pair_separators": gp, "regular": True},
+        "cost320": {
+            "cost": CD,
+            "pair_separators": gd,
+            "regular": False,
+            "unpaired_internal_tetrahedral_facets": ODD_D,
+        },
+    },
+    "no_go_discipline": {
+        "status": "PASS",
+        "claim_scope": (
+            "one carried cost-320 dissection is not any corner lift's lower hull "
+            "inside the supplied finite model"
+        ),
+        "n5_execution_certificate": N5,
+    },
+    "review_loop": [{
+        "iteration": 1,
+        "disposition": "FIX_THEN_PROCEED",
+        "reviewer": "Codex review-loop",
+        "date": "2026-08-12",
+        "fix": (
+            "demoted the model to supplied finite data; added kinetic-isotropy and "
+            "Cycle 728 dependency closure; removed unsupported Cycle 728 lift-search "
+            "and certificate-shape history; tightened exact gates; added a separate "
+            "exact checker, hostile controls, generated receipt, canonical caches, "
+            "fail-closed exit, and a landed N1-N8/N5 packet"
+        ),
+    }],
+}
+RECEIPT_PATH.write_text(json.dumps(RECEIPT, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+print("RECEIPT " + json.dumps(RECEIPT, sort_keys=True), flush=True)
+print("TOTAL: PASS={0} FAIL={1}".format(NP[0], NP[1]), flush=True)
+sys.exit(0 if NP[1] == 0 else 1)

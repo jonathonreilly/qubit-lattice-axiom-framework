@@ -218,6 +218,13 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
         "scripts/physical_spatial_block_seam_dichotomy_cycle728_"
         "independent_check_2026_08_04.py",
     ],
+    # Cycle 729's checker independently reconstructs the exact block census,
+    # symmetry orbits, certificate loads, three witness covers, and the
+    # internal-facet/lower-hull distinction without executing the primary.
+    "physical_block_cost_interval_lift_obstruction_cycle729_note_2026-08-04": [
+        "scripts/physical_block_cost_interval_lift_obstruction_cycle729_"
+        "independent_check_2026_08_04.py",
+    ],
     "b4_clock_relation_run_cycle879_bounded_theorem_note_2026-07-28": [
         "scripts/frontier_cycle879_b4_relation_independent_check_2026_07_28.py",
     ],

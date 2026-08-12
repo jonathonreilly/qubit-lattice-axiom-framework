@@ -1,216 +1,300 @@
-# What a two-cell block costs, pinned at both ends, and why lifting cannot reach the top
+# An exact `[216,320]` supplied-block cost interval with a non-regular maximizer — Cycle 729
 
-Status: unaudited source note. Cycle 729 of the emergent-geometry lane.
+Date: 2026-08-04
 
-## What this settles
+Claim type: bounded_theorem
 
-Take two lattice cells side by side, carry them through one tick, cut the resulting box
-into minimal pieces, and charge each piece for the pairs of its corners that sit more than
-one step apart in space. The previous cycle bracketed that cost between 216 and 324 and
-exhibited a dissection costing 318. This note pins the interval exactly, and explains why
-the earlier search stopped where it did.
+Authority: none. Audit: unset. Constitutional effect: none. This cycle edits no
+axiom, approved primitive, premise registry, audit verdict, queue, or PR-control
+surface. No new axiom or primitive is proposed or adopted.
 
-**The cost of a dissection of this box lies between 216 and 320, and both ends are
-attained.** The floor is carried by an integer certificate at denominator 512, valid with
-least slack zero on all 1080 piece orbits and again piece by piece on all 17280 minimal
-pieces, and attained by the stacked monotone stencil. The ceiling is carried by an integer
-certificate at denominator 49, checked the same two ways, and attained by an exhibited
-48-piece dissection costing 320. Charging every piece the least or the most its charge
-allows gives only 144 to 432, so both ends sit well inside what counting alone delivers.
-Neither certificate is searched for inside the artifact: both arrive as integer data and
-are verified there by direct integer arithmetic.
+Status: **unaudited source note**. This is an exact finite theorem of a supplied
+corner-simplex model, not a derivation of that model from the framework axioms.
 
-**The dearest dissection is not the lower hull of any lift.** Sixteen of its facets are
-carried by a single piece and lie away from the boundary of the box, so the dissection is
-not face-to-face; a lower hull always is. The stacked stencil and the earlier 318 witness
-are lower hulls, each with an exhibited integer height clearing all 912 lower-face
-inequalities. So the three objects separate cleanly: lifting reaches 216 and 318, and the
-dissection costing 320 is not reachable that way at all. That is the answer to a question
-the previous cycle left open — its hill climb generated dissections by lifting, and the
-maximiser lies outside the reach of that construction by a structural obstruction, not by
-bad luck in the search.
+## Result
 
-**Two statements from the previous cycle are corrected here, both upward.** Its best
-witness of cost 318 is superseded by the verified dissection of cost 320. And its boundary
-read — that sharpening the block ceiling would need a different certificate shape rather
-than a larger denominator — does not hold: the shape here is the same one, and what
-changes is the denominator. The earlier argument was that a certificate value is always a
-multiple of 16, so the bounds a certificate can reach are coarse; that granularity bites
-only while the denominator stays at or below 16. At denominator 49 the value 15728 sits 48
-above 320 times the denominator, which is less than the denominator itself, so the bound
-lands exactly on 320 rather than on the 324 the previous cycle reported.
+In the supplied model below, every 48-piece dissection of the two-cell,
+one-tick box has declared adjacency cost in
 
-## Objects
+\[
+216 \leq C \leq 320,
+\]
 
-The box is `{0,1,2} x {0,1} x {0,1}` in space and `{0,1}` in tick: 24 corners, spatial
-volume 2. Of its 42504 five-corner subsets, 17280 have unit normalised volume; these are
-the minimal pieces, and a dissection into them uses 48. The spatial adjacency charge counts
-corner pairs whose separation in the three spatial coordinates exceeds one step; on minimal
-pieces it ranges from 3 to 9, with spectrum 128, 768, 2816, 4928, 5760, 2608 and 272 pieces
-at each value. The transposed charge reads the same count with the tick substituted for the
-long spatial axis.
+and both endpoints are attained. The lower endpoint is reached by the stacked
+monotone-path dissection. A second carried dissection reaches `320`.
 
-The box has a symmetry group of order 16 — the 8 proper rotations that preserve it,
-doubled by the tick flip. The 17280 minimal pieces fall into 1080 orbits, every one of size
-16.
+The carried cost-`320` maximizer is not face-to-face and therefore is not the
+lower hull of any assignment of heights to the box's 24 corners. This is a
+statement about that exhibited maximizer in this finite model. It does not say
+that every maximizing dissection is non-regular, that lifting cannot find some
+other maximizer, or that a physical construction must optimize this charge.
 
-The lattice, its adjacency, and the proper cubic rotations acting on it are the ones fixed
-by [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md); no further structure is
-used.
+## Supplied model and premise boundary
 
-## Method: certificates and witnesses, no solver in the artifact
+The finite domain is supplied rather than selected by the framework:
 
-A **floor certificate** is an integer weight per piece orbit together with an integer
-constant and a denominator, such that on every minimal piece the orbit weights that piece
-meets, summed and offset by the constant, stay at or below the denominator times its
-charge. Summing that inequality over the 48 pieces of any dissection turns it into a lower
-bound on the cost that depends only on the certificate, never on the dissection. A
-**ceiling certificate** reverses the inequality and bounds the cost above. Both are
-verified here by integer arithmetic against every orbit row and then against every one of
-the 17280 pieces.
+- spatial corners are `{0,1,2} x {0,1} x {0,1}`;
+- the tick coordinate is `{0,1}` at the same regulator graining;
+- a piece is a five-corner 4-simplex of normalized volume one;
+- a dissection is an interior-disjoint exact cover by 48 such pieces; and
+- a piece's declared charge is the number of its ten vertex pairs whose
+  spatial L1 separation is greater than one.
 
-The step that makes the sum work is that each sample point lies inside exactly one piece of
-any dissection, so the weights add up the same way no matter how the box is cut. Rather
-than hope the sample points are generic, the artifact forces it: the largest barycentric
-integer any corner sees on any piece is measured first — it is 6 — and the corner weights
-are then chosen superincreasing and large enough that no barycentric coordinate of a sample
-point can vanish, with the resulting weights spread by under 1.15. The consequence is then
-checked directly, as zero boundary incidences over all 17280 pieces. The bound therefore
-holds with no symmetry assumption at all; symmetry only shrinks the program from 17280 rows
-to 1080, and the artifact confirms that shrinking is lossless by reproducing all 17280 piece
-rows from the 1080 orbit rows, and by re-running both certificates at full size.
+There are 24 corners and `42504` five-corner subsets. Exact determinant
+enumeration gives `17280` normalized-volume-one pieces, with charge spectrum
 
-A **witness** is an exhibited dissection, checked three ways: every piece has volume one,
-the volumes sum to the box, and every one of its 1128 pairs of pieces carries an integer
-normal, produced on the spot, that separates them. Volume together with pairwise
-separation is already an exact cover, so certifying a witness needs no solver either.
+```
+3:128, 4:768, 5:2816, 6:4928, 7:5760, 8:2608, 9:272.
+```
 
-**Regularity** is settled in both directions without a solver. A lift assigns a height to
-each of the 24 corners; the lower faces of the lifted polytope form a face-to-face complex,
-so any dissection arising as a lower hull is face-to-face. Contrapositively, one interior
-facet carried by a single piece already rules out every lift: a three-dimensional face of a
-four-simplex is a facet, so if some second piece covered the other side of it the two
-pieces would meet in that whole facet and the count would be two, not one. In the other
-direction an exhibited integer height, checked against all 912 lower-face inequalities in
-integer arithmetic, proves a dissection is a lower hull outright. Both directions are pure
-verification of supplied data.
+The Lattice axiom supplies only the spatial `Z^3` nearest-neighbour grading and
+proper cubic rotations. The registered kinetic-isotropy primitive supplies
+only equal tick/edge graining. Neither source selects corner simplices,
+minimal-volume dissections, this all-pairs charge, a physical block, or a
+tick--Admissibility realization. Those are open physical bridges, not hidden
+consequences of the exact finite calculation.
 
-## Results
+## Exact certificate proof
 
-**The floor is 216.** The certificate has value 110144 at denominator 512; 216 is what that
-rounds up to, and the certificate is valid with least slack zero over all 1080 orbit rows,
-tight on 30 of them, with the identical least slack recovered from all 17280 pieces
-directly. The stacked monotone stencil — for each of the 24 orderings of the four
-coordinates the piece spanned by the corresponding monotone corner path, stacked over both
-cells — is verified to be a dissection and to cost exactly 216. So the floor is certified
-and attained.
+The proper-spatial stabilizer of the elongated box, together with tick
+reversal, has order `16`. Its action partitions the `17280` pieces into `1080`
+orbits of size `16`.
 
-**The ceiling is 320.** The certificate has value 15728 at denominator 49; 320 is what that
-rounds down to, again with least slack zero over all 1080 orbit rows, tight on 53, and
-matched piece by piece over all 17280. An exhibited 48-piece dissection is verified to be a
-dissection and to cost exactly 320. So the ceiling is certified and attained, and the cost
-of a dissection of this box is pinned to the interval from 216 to 320 with both ends
-reached.
+For each piece orbit, the runner constructs a generic point orbit. The point
+coordinates are superincreasing integer barycentric combinations of the
+piece's corners. Exact barycentric tests gate all `17280` points against all
+`17280` pieces and find zero boundary incidences. Consequently, every point is
+interior to exactly one piece of any supplied dissection.
 
-**The maximiser is not regular, and that is why lifting stopped at 318.** Sixteen facets of
-the 320 dissection are carried by one piece and lie away from the box boundary, so it is
-not face-to-face and no lift produces it. Meanwhile the stacked stencil carries an integer
-height clearing all 912 inequalities with worst value -16, and the earlier 318 witness
-carries one with worst value -32. A lift-based search therefore has 216 and 318 inside its
-reach and 320 outside it. The separation is not an artifact of which height was tried: the
-stencil's own height, applied to the dearest dissection's rows, fails them by 336.
+Let `M[p,o]` count points of orbit `o` interior to piece `p`. If integer data
+`u_o`, `Z`, and positive denominator `D` satisfy
 
-**The picture is stable under the checks that could have broken it.** Rescaling a
-certificate's weights, constant and denominator together by 2, 3 and 5 leaves its bound
-exactly where it was — 1024, 1536 and 2560 on the floor side, 98, 147 and 245 on the
-ceiling side — so neither end is an artifact of the denominator chosen. Swapping the long
-spatial axis for the tick axis leaves the stencil at 216. Recomputing the tightest
-certificate row in unbounded integers returns the same zero, so nothing here rides on
-machine word size.
+\[
+\sum_o M[p,o]u_o + Z \leq D c(p)
+\]
 
-## Independent cross-checks performed
+for every minimal piece, summing over a 48-piece dissection gives
 
-Every headline number was re-derived by a route the artifact does not use, and every
-load-bearing gate was tested by damaging the object it is about.
+\[
+16\sum_o u_o + 48Z \leq DC.
+\]
 
-The three costs — 216 for the stencil, 320 for the dearest dissection, 318 for the earlier
-witness, and 216 again for the stencil under the transposed charge — were recomputed by a
-plain double loop over corner pairs with no array machinery at all, and agree. The
-certificate slacks were recomputed in unbounded integers and the two bounds in exact
-rational arithmetic, and agree. A fractional relaxation of the same counting program,
-solved independently of every certificate, returns exactly the same two endpoints, so
-neither certificate is leaving anything on the table that a certificate of this shape
-could have collected.
+Reversing the inequality gives an upper certificate. Symmetry compresses the
+verification but is not assumed of the dissection: both certificates are
+checked on all `1080` representative rows and again on all `17280` pieces.
 
-The membership matrix is the one place a floating-point inverse could have rounded
-silently, so it was rebuilt from exact integer cofactor adjugates for a large random sample
-of pieces together with the tightest certificate row, and agrees entrywise. The exact
-cover claimed for each witness was re-tested on fresh random rational points in exact
-rational arithmetic: every point lying off the shared faces is inside exactly one piece,
-and no point escapes every piece. A first version of that test demanded that no sampled
-point land on a face at all, which random rational sampling cannot deliver, and it reported
-failures for the plain stencil — a dissection beyond doubt. Restating the predicate
-correctly cleared all three witnesses.
+The carried floor certificate has denominator `512`, numerator `110144`, least
+slack zero, and `30` tight orbit rows. Thus
 
-Non-regularity was then proved a second time, by machinery disjoint from the facet count: an
-exact integer vector of nonnegative multipliers on the 912 lower-face inequalities, summing
-them to zero, exists for the dearest dissection and is verified with no solver. No such
-vector exists for the stencil or for the earlier witness, as must be the case since both are
-lower hulls. Regularity was also confirmed a third way, by taking the convex hull of the 24
-lifted corners directly and reading its lower facets: for the stencil and for the earlier
-witness they are exactly the 48 pieces, and the stencil's lift does not reproduce the
-dearest dissection.
+\[
+C \geq \left\lceil 110144/512 \right\rceil = 216.
+\]
 
-Each gate was then perturbed. Raising the floor certificate's constant by one breaks it;
-lowering the ceiling certificate's constant by one breaks that one. Deleting any single
-positive weight from the floor certificate drops its bound below 216, so no weight is
-decoration. Raising a membership entry on a row with no slack, in a column whose weight is
-live, breaks the floor certificate every time it is tried. Lowering the charge of the
-tightest row breaks it. Swapping one piece of the dearest dissection leaves pairs
-unseparated, so the separation test is not automatic. Two perturbations deliberately did
-*not* break their gate, and both were chased down rather than waved through: moving a single
-corner of the stencil height by one changes nothing, because being a lower hull is an open
-condition and the heights that induce a given hull form a cone with interior — the least
-single-corner move that does break it is 16 in either direction at every one of the 24
-corners, exactly the margin the artifact reports, so the cone is bounded and the witness is
-not vacuous. And corrupting a membership entry in a column whose weight is zero changes no
-product, which is why the retargeted version above is the honest form of that control.
+The carried ceiling certificate has denominator `49`, numerator `15728`, least
+slack zero, and `53` tight orbit rows. Thus
 
-## Boundary and honest read
+\[
+C \leq \left\lfloor 15728/49 \right\rfloor = 320.
+\]
 
-**The interval is pinned for this box and this charge, not in general.** What is settled is
-that dissections of the two-cell one-tick box have adjacency cost between 216 and 320 with
-both ends attained. Nothing here says how that interval scales, and the previous cycle's
-seam result — that a dissection which respects the seam between the two cells costs between
-216 and 256 — remains the separate statement it was. The two fit together: the floor 216 is
-reached without breaking the seam, while 320 is above 256, so the maximiser must break it.
+The certificate vectors are supplied integer data verified by the runners;
+the artifact does not derive or optimize them. No minimal-denominator claim is
+made.
 
-**Both certificates are supplied data.** The weights, constants and denominators are
-integer inputs that the artifact verifies; it does not search for them. The denominators
-512 and 49 are the ones the certificates are carried at, and no claim is made that either
-is the smallest denominator at which a certificate of this shape exists.
+## Endpoint witnesses
 
-**Non-regularity is proved for this maximiser, not for maximisers as a class.** The 320
-dissection is not a lower hull and no lift produces it. Whether every cost-maximising
-dissection of every such box shares that property is open, and the argument given here does
-not settle it.
+The primary and independent runners certify each witness by exact normalized
+volume, total volume `48`, and a separating integer normal for all `1128`
+piece pairs. Since every piece lies in the box, pairwise interior-disjointness
+and the full volume establish exact cover.
 
-**Two conventions are choices, and both are named.** The charge counts corner pairs
-separated by more than one lattice step; the pieces are minimal in normalised volume. Both
-are read off the lattice adjacency, but neither is forced by it.
+- The two stacked monotone-path stencils contain 48 pieces and cost `216`.
+- The Cycle 728 carried witness contains 48 pieces and costs `318`.
+- The new carried witness contains 48 pieces and costs `320`.
 
-## Artifacts
+The independent checker does not import or execute the primary. It parses the
+carried literals, reconstructs the `42504`-subset census with a recursive exact
+determinant, builds exact unimodular inverses by cofactors, and searches a
+broader set of `2928` primitive integer normals in `[-4,4]^4` for every witness
+pair. It independently obtains costs `216`, `318`, and `320` and all `1128`
+separations for each witness.
 
-- runner `scripts/physical_block_cost_interval_lift_obstruction_cycle729_2026_08_04.py`
-- cold output
-  `outputs/physical_block_cost_interval_lift_obstruction_cycle729_2026_08_04_cold_2026-08-04.txt`
-- receipt
+## What the lower-hull obstruction proves
+
+A regular corner triangulation is the lower-face complex of lifted corners.
+Faces of a polytope meet face-to-face. Therefore a supplied dissection with an
+unpaired tetrahedral facet strictly inside the box cannot be such a lower hull.
+
+Exact tetrahedral-facet counting finds:
+
+- no unpaired internal facets for the stacked `216` witness;
+- no unpaired internal facets for the Cycle 728 cost-`318` witness; and
+- `16` unpaired internal facets for the cost-`320` witness.
+
+The first two comparisons are also positive, not merely absence-of-obstruction
+checks. Supplied integer height vectors clear all `912` outside-corner lower
+face inequalities with exact minimum margins `16` and `32`, respectively.
+Thus these two witnesses are regular, while the exhibited cost-`320` witness
+is not.
+
+This proves that the finite configuration space has a non-regular maximizer.
+It does not prove that the regular subspace has maximum `318`: the runners do
+not enumerate every regular dissection, and another regular cost-`320` witness
+is not excluded.
+
+## Relation to Cycle 728
+
+[Cycle 728](PHYSICAL_SPATIAL_BLOCK_SEAM_DICHOTOMY_CYCLE728_NOTE_2026-08-04.md)
+is a direct but unaudited dependency. It supplies the exact cost-`318` witness,
+the seam-respecting bracket `[216,256]`, and the earlier global maximum window
+`[318,324]`. The primary runner reads Cycle 728's receipt, parses its
+`BLOCK_HI` literal without executing the dependency, and gates entrywise
+identity with the local `PRIOR` data.
+
+Cycle 729 sharpens the earlier global window to `[216,320]` by new certificates
+and a new witness. It does **not** claim that Cycle 728 used a lift-only search,
+that `318` was the maximum among regular triangulations, or that Cycle 728
+proved a different certificate shape was necessary. Those statements appeared
+in the submitted Cycle 729 prose but are not carried by the reviewed Cycle 728
+package and have been removed.
+
+Cycle 727 is ordering and affine-comparison context only. Its long direction is
+the tick coordinate, while the charge here reads the long spatial coordinate;
+no Cycle 727 theorem bears load here. Cycle 725 is model lineage only: this
+runner reconstructs its own finite census, certificates, and endpoint witnesses
+rather than importing the one-cell bracket.
+
+## Honest boundary
+
+- The exact interval quantifies only over supplied normalized-volume-one
+  corner-simplex dissections of this one `2 x 1 x 1` spatial block through one
+  equal-grained tick.
+- The cost is the declared spatial-L1 vertex-pair charge. The framework does
+  not require a physical construction to pay it.
+- The cost-`320` witness is non-face-to-face but remains a valid dissection:
+  exact pair separation and total volume certify the cover without assuming a
+  conforming complex.
+- Only this carried maximizer is proved non-regular. No classification of all
+  maximizers or exact maximum over regular triangulations is carried.
+- No result is claimed for coarser or non-corner pieces, nonsimplicial cells,
+  other charges, larger blocks, longer tick runs, alternative boundaries,
+  thermodynamic or continuum limits, curvature, a metric, an action, or a
+  field equation.
+
+## Evidence package
+
+- Primary runner:
+  `scripts/physical_block_cost_interval_lift_obstruction_cycle729_2026_08_04.py`
+- Independent checker:
+  `scripts/physical_block_cost_interval_lift_obstruction_cycle729_independent_check_2026_08_04.py`
+- Primary cache:
+  `logs/runner-cache/physical_block_cost_interval_lift_obstruction_cycle729_2026_08_04.txt`
+- Independent cache:
+  `logs/runner-cache/physical_block_cost_interval_lift_obstruction_cycle729_independent_check_2026_08_04.txt`
+- Generated receipt:
   `outputs/physical_block_cost_interval_lift_obstruction_cycle729_2026_08_04_receipt_2026-08-04.json`
 
-The runner prints `TOTAL: PASS=43 FAIL=0`. The cold output is its stdout verbatim; the
-receipt transcribes the numbers from that stdout. Every number quoted above appears in the
-runner's own output, with three carve-outs named in place: the certificate weights,
-constants and denominators are supplied to the runner as integer data and verified by it
-rather than derived by it; the cross-check counts come from separate probes that are not
-part of the landed artifact; and the values 324 and 256 are quoted from the previous
-cycle's own record, not measured here.
+The primary contains no solver and exits nonzero on any failed gate. The
+independent checker uses different exact determinant, inverse, orbit,
+membership-load, separator, and lower-hull implementations. It also damages
+both certificates and one witness and requires every mutation to fail its
+target gate.
+
+## Dependencies
+
+- [Minimal axioms](MINIMAL_AXIOMS_2026-06-29.md) — supply only the spatial
+  lattice grading and proper cubic rotations.
+- [Kinetic-isotropy primitive](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md)
+  — supplies only equal regulator graining of the tick and spatial axes.
+- [Cycle 728 spatial-block seam theorem](PHYSICAL_SPATIAL_BLOCK_SEAM_DICHOTOMY_CYCLE728_NOTE_2026-08-04.md)
+  — landed but unaudited; supplies the exact cost-`318` witness and the
+  `[318,324]` window under the same supplied-model boundary.
+
+## No-Go Discipline Gate
+
+This packet covers only the finite negative statement that the one carried
+cost-`320` maximizer is not the lower hull of any height assignment to these 24
+corners. It does not ship a physical, all-maximizer, all-model, arbitrary-block,
+or continuum no-go.
+
+**N1 — Alternative route enumeration.** The route families are normalized by
+mathematical mechanism and terminal obligation.
+
+1. `ATTEMPTED` — face-complex route: exact facet multiplicities identify `16`
+   tetrahedral facets carried once and off every box boundary face. Since the
+   separately certified witness covers the box, these are nonconforming
+   internal facets; lower faces of a polytope form a face-to-face complex.
+2. `ATTEMPTED` — positive comparator route: all `912` strict lower-face
+   inequalities are reconstructed for the `216` and `318` witnesses, and
+   carried integer heights clear them with margins `16` and `32`. This shows
+   the implementation can certify regular objects and is not a blanket
+   rejection.
+3. `NOT ATTEMPTED` — a Farkas dual certificate for infeasibility of all `912`
+   cost-`320` lift inequalities could give a second algebraic obstruction. It
+   is not needed for the exact facet proof and is not claimed as landed
+   evidence.
+4. `NOT ATTEMPTED` — exhaustive enumeration of all regular dissections could
+   determine the regular-subspace maximum. The present result deliberately
+   does not make that stronger claim.
+
+**N2 — Open-condition independence.** These are walls only to broader physical
+interpretations, not missing assumptions in the finite theorem.
+
+| pair | first closes second? | second closes first? | independent? |
+|---|---:|---:|---:|
+| physical model selection / tick--Admissibility realization | no | no | yes |
+| physical model selection / larger-block composition | no | no | yes |
+| tick--Admissibility realization / larger-block composition | no | no | yes |
+
+**N3 — Hidden-condition scan.** “Supplied” is explicit at the title, opening,
+runner docstring, receipt, and boundary. “Regular” means only the lower hull of
+corner heights. “Maximizer” means the exhibited cost-`320` witness attains the
+independently certified finite ceiling. No “natural,” “standard,” or
+framework-selected language supplies a missing physical bridge.
+
+**N4 — Residual matching.** Cycle 728 supplies exactly the carried cost-`318`
+witness and `[318,324]` window in the same spatial-block model; the runner binds
+both through its receipt and literal. Cycle 728 does not supply lift-search
+provenance or certificate-shape necessity, so neither is imported. The minimal
+axioms and kinetic-isotropy note are premise sources, not no-go witnesses.
+
+**N5 — Rhetoric audit.** The primary cached stdout carries substantive
+`per_element:`, `per_site:`, `per_mode:`, `per_block:`, and `lattice_wide:`
+execution-certificate lines. Only per-element and per-block finite checks are
+executed. Per-mode and lattice-wide conclusions are explicitly not executed and
+are not asserted.
+
+**N6 — Partial-closure paths.** A physical cell/charge-selection result could
+retire the supplied-model condition. A tick-realization bridge could retire the
+tick condition. A separate composition theorem could extend the box domain. An
+exhaustive regular-triangulation theorem could settle the regular-subspace
+maximum. None is renamed as a required new axiom, and none is treated as closed.
+
+**N7 — Steelman.** The strongest surviving objection is concrete: there may be
+another cost-`320` dissection that is face-to-face and regular, and non-corner,
+coarser, or nonsimplicial constructions need not obey this interval at all. That
+objection defeats an all-maximizer or physical no-go. It does not defeat the
+bounded statement about the one carried witness, whose exact cover, cost,
+internal facets, and ceiling attainment are independently checked.
+
+**N8 — Cross-cycle echo.** Reviews of Cycles 724--728 repeatedly found that
+exact corner-simplex arithmetic does not select a physical assembly model.
+Cycle 729 carries that supplied-model boundary forward. The submitted Cycle 729
+also echoed two historical statements that did not survive Cycle 728 review;
+they were removed rather than laundered into a new dependency claim.
+
+Status: **PASS** for the finite obstruction above. The N5 lines land in the
+primary cache with this packet.
+
+## Review record
+
+Review-loop iteration 1 (Codex, 2026-08-12) returned `FIX_THEN_PROCEED`. The
+submitted interval and witness survived independent exact reconstruction. The
+review demoted the physical framing to a supplied-model theorem, added the
+kinetic-isotropy and direct Cycle 728 dependencies, removed unsupported Cycle
+728 lift-search and certificate-shape history, narrowed the non-regularity
+claim to the carried maximizer, tightened exact gates, made the runner
+fail-closed, added a fully independent exact checker and hostile controls,
+replaced the cold output with canonical content-pinned caches, generated the
+receipt from the run, and landed the N1--N8/N5 packet. No audit verdict was
+applied.

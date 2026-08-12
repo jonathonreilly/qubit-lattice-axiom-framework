@@ -4,7 +4,7 @@ runner_sha256: 45cc789d0721e329ce6c71c1b78c54490b68ea363ea92d25f675a6eae0800a94
 input_fingerprint_sha256: f16228dfa22ac9810d4cc316446c432694b1b6d39236992c2bac39c9cf2f5eab
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 8.82
+elapsed_sec: 8.86
 status: ok
 ----- stdout -----
 [PASS] slot_uses_total 240 slot-uses of which 120 are purely spatial

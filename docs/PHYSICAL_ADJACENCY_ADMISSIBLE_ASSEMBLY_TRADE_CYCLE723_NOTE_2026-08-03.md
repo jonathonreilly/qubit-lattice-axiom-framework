@@ -262,6 +262,15 @@ two box sizes, and the claim that the cutoff reduction generates range rather th
 inheriting it rests on the assembled form's beyond-cell entries being exactly zero,
 which is measured and not tolerance-limited.
 
+Current-main integration context, non-load-bearing: the later unaudited
+`PHYSICAL_EXACT_ADJACENCY_DISSECTION_BRACKET_CYCLE725_NOTE_2026-08-03.md`
+independently strengthens the supplied-model census to an exact floor of 68
+when all corner-piece volumes are allowed, and to 108 for minimal-volume
+pieces. Therefore this packet's 48 is a conservative intermediate lower bound,
+not the strongest bound currently recorded. No Cycle725 certificate is used by
+the proof here, so this provenance notice deliberately creates no dependency
+edge.
+
 ## Dependencies
 
 - [Tick-extension second variation](CUBIC_COXETER_REGGE_3PLUS1_TICK_EXTENSION_SECOND_VARIATION_NARROW_THEOREM_NOTE_2026-06-09.md) — landed, unaudited: the tick-extended second-variation object assembled here.

@@ -2397,3 +2397,32 @@ multivariable generator-contraction cancellations uniformly in momentum angle
 and a named conserved source class, or break them with a less-symmetric
 winding. Then project the soft sector onto the two-TT/Record physical
 observable quotient. No more period scans qualify.
+
+## Block 61 Handoff
+
+Block 61 resolves the main interpretive ambiguity left by Block 60. For all
+55 symmetric pairs of the ten constant-metric tangents, the bounded quadratic
+force has rank five and cancels the rank-five flat-Hessian reaction generated
+by the exact second-order square-root edge-length embedding. Maximum relative
+residual is `9.951e-7`. The apparent `O(1)` nonlinear force was therefore the
+nonmetric coordinate reaction of a linear edge chart, not a physical metric
+force.
+
+On the less-symmetric winding `(1,2,3,0)`, static and transverse Lorentz-null
+controls at periods `145,193,257` leave completed-force powers
+`1.984445/1.993073` and Ward powers `2.976564/2.967612`. The completion
+reaction is Ward-null below `3.19e-16`, so the mechanism is now clean:
+metric force `O(k^2)` times displacement map `O(k)` gives Ward `O(k^3)`.
+
+Primary/cache is `PASS=8 FAIL=0` in 112.9 seconds. Five targeted mutations
+each fail one named check. Citation registration is `5,507/15,778`,
+out-degree four. Vocabulary, strict lint, premise purity, model normalization,
+Python/cache, claim typing, whitespace, N1--N8/N5, and enforced graph/link
+gates pass. Science commit is `7b6c571e9e`; PR receipt is pending.
+
+This is significant route progress but zero scored TOE progress; the fixed map
+has not moved for at least 58 hours. The next qualifying calculation is the
+full transverse conserved-source and multimode bilinear identity, followed by
+two-TT/Record observable decoupling in an explicit refinement norm. If either
+fails, pivot immediately to exact microscopic action/dynamical-source repair.
+No additional period, coupling, coefficient, or precision scan qualifies.

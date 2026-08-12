@@ -1548,3 +1548,29 @@ complete conditional nonlinear compact solution:
   percentage movement. Derive the symbolic multivariable coefficient
   cancellations or break them on a less-symmetric source/momentum; then test
   the two-TT/Record observable quotient
+
+## Block 61 Artifact Plan And Result
+
+- source note: register the exact nonlinear square-root metric embedding, the
+  all-55-pair reaction identity, one hostile skew source family, and fresh
+  N1--N8/N5 boundaries
+- primary runner/cache: assemble the complete constant-metric second jet and
+  the actual Regge-plus-deficit-square force on winding `(1,2,3,0)` at periods
+  `145,193,257`; achieved `PASS=8 FAIL=0` in 112.9 seconds with
+  3,668-character stdout
+- decisive result: raw quadratic force, completion reaction, and flat symbol
+  all have rank five; their maximum relative cancellation residual is
+  `9.951e-7`. The completed static/null forces scale with powers
+  `1.984445/1.993073`, and the unchanged Ward vectors with
+  `2.976564/2.967612`
+- adversarial controls: uniform-identity, metric-completion, force-order,
+  Ward-order, and note-boundary mutations each exit nonzero with one failed
+  check
+- current evidence: science commit `7b6c571e9e`; graph `5,507/15,778`,
+  out-degree four; vocabulary, strict lint, premise purity, model-family
+  normalization, Python/cache, claim typing, whitespace, N5, and enforced
+  graph/link checks pass; PR receipt is pending
+- score and next artifact: significant mechanism progress and zero TOE
+  percentage movement. Build the full transverse conserved-source/multimode
+  identity or a concrete falsifier, then test two-TT/Record observable
+  decoupling. No further period scan qualifies

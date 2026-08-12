@@ -445,3 +445,17 @@ Rank-one work must produce symbolic coefficient identities or a concrete
 counterexample. Report mechanism/route progress separately from TOE percentage
 movement and re-rank after each identity or failure, otherwise at most every
 three hours.
+
+## Post-Block-61 Priority Refresh
+
+| Rank | Target | Exact next witness | Why now |
+|---:|---|---|---|
+| 1 | full conserved-source and multimode Ward theorem | construct the full transverse source basis at generic momentum and prove the metric-completed quadratic bilinear force gives a uniform `O(k^3)` Ward bound, including cross-mode resonances, or exhibit one concrete failure | Block 61 removes the coordinate reaction; source and mode generality is now the narrowest remaining mechanism risk |
+| 2 | two-TT/Record observable decoupling | project the completed soft response and rank-five nonmetric reaction onto the retained TT observables, Record decoder, and state norm with an explicit convergence rate | a soft Ward defect only helps TOE closure if pseudo-modes are invisible to physical readout and evolution |
+| 3 | refinement and nonlinear Lorentzian binding | state the refinement map, norm, source class, and rate, then prove compatibility with the Block-53 causal macro update and nonlinear constraint propagation | this is the first step capable of retiring a scored gravity/Records obligation |
+| 4 | exact microscopic fallback | construct a dynamical-source mixed Noether identity, improved/perfect or Pachner/tent action, or connection law if ranks one or two fail or exact cutoff symmetry is selected | the emergent route has higher current value, but exact closure remains the required fallback |
+
+Efficiency gate: no further period, coupling, coefficient, precision, or
+single-source scan. Every block must retire one of the named source,
+multimode, observable, refinement, or Lorentzian obligations, or falsify the
+route. Re-rank immediately after either result and at least every three hours.

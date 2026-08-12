@@ -2691,3 +2691,31 @@ instance or Fourier census.
   This is significant mechanism/route progress and zero TOE percentage
   movement. PR #6153 is open, mergeable, and `CLEAN`. No canonical axiom,
   audit verdict, or `review-loop` changes.
+
+## Block 61 Construction And Adversarial Record
+
+- Expanded the exact edge-length map to second order and tested all 55
+  symmetric pairs of ten constant-metric tangents. Raw force, completion
+  reaction, and flat symbol each have rank five; maximum relative
+  cancellation residual is `9.951e-7`.
+- Reinterpreted the bounded Block-60 force as the nonmetric coordinate
+  reaction of linear edge coordinates. The square-root completion removes it
+  while leaving every displacement Ward component unchanged below
+  `3.19e-16`.
+- Executed the less-symmetric winding `(1,2,3,0)` with static and transverse
+  Lorentz-null sources at periods `145,193,257`. Completed-force powers are
+  `1.984445/1.993073`; Ward powers are `2.976564/2.967612`; terminal
+  nonmetric-purity fractions are `0.001415/0.001106`.
+- Uniform-identity, metric-completion, force-order, Ward-order, and
+  note-boundary mutations each exit nonzero with exactly one failure. Fresh
+  N1--N8 preserves full source, multimode, observable, refinement,
+  Lorentzian, and exact-action alternatives.
+- Primary/cache is `PASS=8 FAIL=0` in 112.9 seconds with 3,668-character
+  stdout. Citation registration is `5,507/15,778`, out-degree four.
+  Vocabulary, strict lint, premise purity, model normalization, Python/cache,
+  claim typing, whitespace, forensic N5, and enforced graph/link invariants
+  pass.
+- Science commit is `7b6c571e9e`, on exact Block-60 delivery `f29604d9cd`.
+  This is significant mechanism/route progress and zero TOE percentage
+  movement; the fixed map has not moved for at least 58 hours. PR receipt is
+  pending. No canonical axiom, audit verdict, or `review-loop` changes.

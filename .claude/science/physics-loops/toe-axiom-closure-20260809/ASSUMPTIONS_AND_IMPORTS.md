@@ -937,3 +937,25 @@ symbolic multivariable theorems. No observable decoupling, state norm,
 refinement map, selected physical source/action, external observed constant,
 canonical axiom edit, TOE percentage move, audit verdict, or `review-loop` is
 imported.
+
+## Block 61 Assumptions And Imports
+
+Block 61 imports the current minimal axiom boundary, the actual local
+Regge-plus-deficit-square action and cyclic quotient from Blocks 59--60, and
+the conditional two-TT target from Block 53. It imports no continuum Noether
+theorem, coordinate-invariance theorem, physical metric identification, or
+selected refinement law.
+
+The exact expansion
+`sqrt(ell^2+dq)=ell+d-d^2/(2ell)+...`, its ten constant-metric tangents, all
+55 symmetric tangent pairs, and the flat Hessian reaction are finite algebra.
+Richardson-extrapolated complex-direction forces and the winding
+`(1,2,3,0)` period family are bounded executed diagnostics. They do not import
+a uniform momentum neighborhood, arbitrary transverse source, multimode
+superposition law, physical observable quotient, or nonlinear evolution.
+
+The rank-five reaction cancellation identifies a coordinate artifact in the
+linear edge parameterization; it does not establish exact microscopic
+first-class symmetry. No selected source/action, refinement norm or map,
+state norm, Record observable, Lorentzian propagation, canonical axiom edit,
+TOE percentage move, audit verdict, or `review-loop` is imported.

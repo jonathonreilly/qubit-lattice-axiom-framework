@@ -1960,3 +1960,29 @@ lines are in the landing primary cache.
   source result, observable/state theorem, nonlinear Lorentzian closure,
   selected law, axiom amendment, or audit verdict. Fresh N1--N8 lands; no
   `review-loop` is used.
+
+## Block 61 Claim Status Certificate
+
+- Exact metric identity: all 55 symmetric pairs of the ten constant-metric
+  tangents satisfy cancellation of the raw quadratic force by the
+  square-root embedding reaction. Raw force, reaction, and flat symbol each
+  have rank five; maximum relative residual is `9.951e-7`.
+- Hostile skew control: winding `(1,2,3,0)` retains all fifteen edge classes,
+  fifty hinges, and 240 simplex-hinge incidences. Static and transverse-null
+  source Ward residual is below `1.61e-16`.
+- Completed order: static/null force powers are `1.984445/1.993073`; Ward
+  powers are `2.976564/2.967612`. Completion/raw fractions fall to
+  `0.008671/0.012493`; the reaction Ward residual is below `3.19e-16`.
+- Interpretation: the previously bounded `O(1)` force is the five-dimensional
+  nonmetric reaction caused by linear edge coordinates. Removing it exposes
+  the expected metric `O(k^2)` force while preserving the `O(k^3)` Ward tail.
+- Evidence: primary/cache `PASS=8 FAIL=0`; five targeted mutations fail one
+  check each; graph `5,507/15,778`, out-degree four. Vocabulary, strict lint,
+  premise purity, model normalization, Python/cache, claim typing, whitespace,
+  N5, and enforced graph/link invariants pass. Science commit is
+  `7b6c571e9e`; PR receipt is pending.
+- Scope: this is significant mechanism progress and zero TOE percentage
+  movement—not a uniform angular/all-source or multimode theorem,
+  observable/state decoupling, nonlinear Lorentzian/refinement closure,
+  selected law, axiom amendment, or audit verdict. Fresh N1--N8 lands; no
+  `review-loop` is used.

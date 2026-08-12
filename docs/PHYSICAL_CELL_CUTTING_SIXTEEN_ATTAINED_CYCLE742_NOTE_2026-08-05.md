@@ -116,8 +116,8 @@ was run.
   independent reconstruction and CaDiCaL exact-cardinality encoding attack the
   asserted weight-16 sufficiency without importing the primary construction.
   (5) `ATTEMPTED`: the smaller-cardinality route is the exact same six
-  functions and population checked through fourteen by hash-bound fresh
-  [Cycle 741](PHYSICAL_CELL_CUTTING_FOURTEEN_FRONTIER_CYCLE741_NOTE_2026-08-05.md),
+  functions and population checked through fourteen by the fresh, hash-bound
+  [Cycle 741](PHYSICAL_CELL_CUTTING_FOURTEEN_FRONTIER_CYCLE741_NOTE_2026-08-05.md) packet,
   whose primary exhaustive inventory and independent CNF answers are both
   required. These differ in restricted linear system, enumerated code,
   construction completeness, solver formulation, and predecessor cardinality.

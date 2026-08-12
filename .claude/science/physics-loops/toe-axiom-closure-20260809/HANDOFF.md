@@ -2609,6 +2609,8 @@ aggregate check. Citation registration is `5,512/15,802`, out-degree six.
 Vocabulary, strict lint, premise purity, model normalization, Python/cache,
 claim typing, whitespace, N1--N8, and enforced graph/link invariants pass.
 Science commit is `b721146968`.
+Delivery commit is `62ddb3ac63`; PR #6159 is open, mergeable, and `CLEAN`
+on exact Block-65 delivery `f5fa1e0aef`.
 
 An independent proof challenge accepts the decoded-interface theorem and
 confirms no CP/reference obstruction. It rejects any broader physical claim:

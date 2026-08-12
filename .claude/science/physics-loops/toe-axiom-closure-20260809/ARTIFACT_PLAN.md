@@ -1145,3 +1145,26 @@ complete conditional nonlinear compact solution:
   certificate from the already completed pole calculation, followed by the
   physical transfer/inner-product discriminator; no more kernel enumeration or
   denser frequency grids
+
+## Block 47 Artifact Plan
+
+- theorem note: preserve the completed raw-Laurent finite-frequency result on
+  one declared inventory, retain all fifteen edge coordinates and four exact
+  gauge columns, and separate positive pole survival from physical transfer or
+  inner-product selection
+- primary runner/cache: resolve the 99 shift pairings, `11+4` edge and `3+1`
+  gauge parity sectors, 72 bordered pole solves, analytic Schur Ward identity,
+  nonmetric gap, TT-coordinate overlap, infrared scaling, and momentum
+  reversal; achieved `PASS=12 FAIL=0`
+- adversarial control: independent reconstruction from the Block-43 kernel at
+  eight representative sector roots; achieved `PASS=5 FAIL=0`
+- no-go packet: scope the negative only to lack of exactly real and degenerate
+  poles in the displayed single-orientation raw continuation; preserve
+  reflected orientation, OS transfer, similarity, observable-transfer,
+  unitary-dilation, and Record-clock routes
+- current evidence: science commit `67fd4f896c`; graph `5,493/15,711`, new
+  out-degree four; direct gates pass; PR #6140 is open, mergeable, and `CLEAN`
+  on exact Block-46 delivery `8f8495ea0d`
+- next artifact: one smallest physical transfer/inner-product construction or
+  exact localized failure, preserving the Ward quotient, two-mode count, and
+  static residue; no new pole grid

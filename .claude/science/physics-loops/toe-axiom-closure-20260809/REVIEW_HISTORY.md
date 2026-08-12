@@ -1988,6 +1988,39 @@ instance or Fourier census.
   head `1f23bccf25`. No canonical edit, fixed-percentage move, audit verdict,
   or `review-loop` occurs.
 
+## Block 47 Construction And Adversarial Record
+
+- Preserved the raw 99-term Laurent symbol at complex temporal momentum rather
+  than applying the real-momentum Hermitian symmetrizer; verified temporal
+  support counts `4,29,33,29,4` and transpose-pairing error `4.441e-16`.
+- Built the exact y/z-reflection quotient with edge dimensions `11+4` and
+  gauge dimensions `3+1`; retained all four two-sided analytic displacement
+  Ward columns with maximum representative absolute residual `1.069e-13`.
+- Resolved one bordered-determinant pole in each sector at four low momenta and
+  32 uniform axis momenta through `pi`: 72 successful solves. Vanishing border
+  multipliers and complete-edge null residuals reject a gauge or bordering
+  artifact; the next singular ratio stays above `1.6947e-5`.
+- Kept the complete metric/nonmetric Schur problem. Its five-direction
+  complement gap stays above `1.28838745`; gauge-removed TT-coordinate overlap
+  stays above `0.93191359`; nonmetric/metric dressing stays below `0.56138735`.
+- Found empirical `k^3` real dispersion/polarization corrections and `k^5`
+  phase over four low-momentum doublings. Maximum sampled relative dispersion,
+  polarization split, and phase are `0.009344`, `0.006665`, and `0.001393`;
+  momentum reversal gives the conjugate root below `8.8e-17` normalized
+  singular residual.
+- Fresh N1--N8 restricts the negative to the displayed single-orientation raw
+  representation and preserves reflected orientation, OS reconstruction,
+  similarity/observable transfer, unitary dilation, and Record-clock routes.
+  No gravity no-go or global instability ships.
+- Primary source/input-pinned cache is `PASS=12 FAIL=0`; an independent
+  reconstruction is `PASS=5 FAIL=0`; the declared-input cache suite passes
+  `16/16`. Graph is `5,493/15,711`, out-degree four. Vocabulary, strict lint,
+  premise purity, Python/cache, staged claim typing, whitespace, and enforced
+  graph/link invariants pass.
+- Science commit is `67fd4f896c`; PR #6140 is open, mergeable, and `CLEAN` on
+  exact Block-46 delivery `8f8495ea0d`. No canonical edit, fixed-percentage
+  move, audit verdict, or `review-loop` occurs.
+
 ## Block 43 Construction And Adversarial Record
 
 - Solved the complete repaired fifteen-edge symbol on every nonzero static

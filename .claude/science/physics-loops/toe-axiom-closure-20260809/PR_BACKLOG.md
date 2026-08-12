@@ -609,6 +609,24 @@ Admissibility-law constitutional cut. It makes no canonical edit, percentage
 move, audit verdict, gravity no-go, or `review-loop` claim. Landing order adds
 #6138 after #6137.
 
+## Block 47
+
+PR #6140
+(`physics-loop/toe-axiom-closure-block47-full-frequency-20260811`) is stacked
+exactly on Block-46 delivery head `8f8495ea0d`. Science commit `67fd4f896c`
+adds one bounded theorem note, one source/input-pinned runner/cache, and the
+mechanically refreshed citation manifest. Primary execution is
+`PASS=12 FAIL=0`; independent reconstruction is `PASS=5 FAIL=0`; citation
+registration is `5,493/15,711`, out-degree four. Direct vocabulary, strict
+lint, premise purity, Python/cache, staged claim typing, whitespace, and
+graph/link gates pass. GitHub reports the PR mergeable and `CLEAN`; independent
+audit remains required.
+
+Review object: complete-edge sampled finite-frequency pole survival and the
+single-orientation physical-reconstruction boundary. It makes no canonical
+edit, percentage move, audit verdict, selected-dynamics claim, gravity no-go,
+or `review-loop` claim. Landing order adds #6140 after #6138.
+
 Block 45 is local on branch
 `physics-loop/toe-axiom-closure-block45-record-transition-20260811`, stacked
 exactly on Block-44 delivery head `d91500ca4e`. Its distinct review object is

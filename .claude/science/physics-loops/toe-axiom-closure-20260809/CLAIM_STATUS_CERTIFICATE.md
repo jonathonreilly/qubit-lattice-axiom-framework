@@ -1556,3 +1556,28 @@ lines are in the landing primary cache.
   selected dynamics, physical equivalence of all five coordinates, gravity
   failure, global axiom minimality, adoption, TOE percentage movement, or an
   audit verdict. Fresh N1--N8 lands; no `review-loop` is used.
+
+## Block 47 Claim Status
+
+- Claim: for the supplied repaired fifteen-edge Regge law and conditional
+  `q=(k,0,0,-i omega)` continuation, the raw 99-shift Laurent symbol retains
+  four exact displacement columns and one isolated physical pole in each
+  transverse parity sector at all 36 declared wave numbers.
+- Complete-edge controls: all 72 bordered roots have negligible multipliers
+  and are nulls of the unreduced edge symbol; the five-direction nonmetric
+  block has gap at least `1.28838745`, gauge-removed TT-coordinate overlap at
+  least `0.93191359`, and next-singular ratio at least `1.6947e-5`.
+- Infrared and orientation result: real dispersion and polarization
+  corrections scale empirically as `k^3`, pole phase as `k^5`, and momentum
+  reversal gives the conjugate pole. The displayed orientation has small
+  finite-lattice phase and splitting before physical reconstruction.
+- Evidence: source/input-pinned primary cache `PASS=12 FAIL=0`; independent
+  reconstruction `PASS=5 FAIL=0`; graph `5,493/15,711`, out-degree four;
+  vocabulary, strict lint, premise purity, Python/cache, claim typing,
+  whitespace, and graph/link invariants pass. Science commit is `67fd4f896c`;
+  PR #6140 is open, mergeable, and `CLEAN` on exact Block-46 delivery
+  `8f8495ea0d`.
+- Scope: sampled finite-frequency survival, not selected dynamics, physical
+  norm, unitarity/stability, nonlinear/nonflat gravity, axiom amendment, TOE
+  percentage movement, or audit verdict. Fresh N1--N8 lands; no `review-loop`
+  is used.

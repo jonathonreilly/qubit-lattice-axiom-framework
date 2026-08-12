@@ -1818,3 +1818,34 @@ enumeration can choose `L*`. Continue science by preserving only the decisive
 completed full-edge finite-frequency gravity evidence, then test the physical
 transfer/inner-product route. Do not add denser pole grids or more compatible
 Record counterkernels.
+
+## Block 47 Handoff
+
+Work is on branch
+`physics-loop/toe-axiom-closure-block47-full-frequency-20260811`, stacked
+exactly on Block-46 delivery head `8f8495ea0d`. The theorem uses the raw
+99-shift analytic Laurent symbol, all fifteen edges, all four exact complex
+Ward columns, and a bordered `11+4` / `3+1` reflection-sector quotient. It
+resolves one isolated complete-edge pole in each sector at all 36 declared
+wave numbers: 72 solves total.
+
+The nonmetric block stays gapped above `1.28838745`; gauge-removed
+metric-coordinate TT overlap stays above `0.93191359`; and border multipliers
+stay below `5.1e-13`. Low-momentum real corrections and polarization splitting
+scale as `k^3`, pole phase as `k^5`, and momentum reversal supplies the
+conjugate pole. This confirms finite-frequency gravity survival but does not
+define a physical norm or transfer.
+
+Primary source/input-pinned cache is `PASS=12 FAIL=0`; an independent
+reconstruction is `PASS=5 FAIL=0`. Citation registration is
+`5,493/15,711`, out-degree four. Direct repository gates pass. Science commit
+is `67fd4f896c`; PR #6140 is open, mergeable, and `CLEAN`. Independent audit
+remains required. No canonical axiom, fixed TOE percentage, audit verdict, or
+`review-loop` changes.
+
+Stop the pole-search seam. The next high-value block must construct the
+smallest reflected-orientation or OS physical transfer/inner product and test
+positivity, gauge descent, two-mode spectrum, static residue, and Record-clock
+meaning. If that requires an independent clock, norm, or orientation choice,
+return that exact choice to the Block-46 joint `L*` contract. Re-rank before
+any nonlinear or global follow-on.

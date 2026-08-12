@@ -68,13 +68,13 @@ RECEIPT_PATH = ROOT / (
     "receipt_2026-08-08.json"
 )
 AUDIT_INPUT_PATHS = (
-    NOTE_PATH,
-    CHECKER_PATH,
-    C745_NOTE_PATH,
-    C745_PRIMARY_PATH,
-    C745_CHECKER_PATH,
-    C745_RECEIPT_PATH,
-    C745_INDEPENDENT_RECEIPT_PATH,
+    "docs/PHYSICAL_CELL_CUTTING_CARRIER_PARITY_LAW_CYCLE746_NOTE_2026-08-08.md",
+    "scripts/physical_cell_cutting_carrier_parity_law_cycle746_independent_check_2026_08_08.py",
+    "docs/PHYSICAL_CELL_CUTTING_SIXTEEN_CENSUS_CYCLE745_NOTE_2026-08-05.md",
+    "scripts/physical_cell_cutting_sixteen_census_cycle745_2026_08_05.py",
+    "scripts/physical_cell_cutting_sixteen_census_cycle745_independent_check_2026_08_05.py",
+    "outputs/physical_cell_cutting_sixteen_census_cycle745_2026_08_05_receipt_2026-08-05.json",
+    "outputs/physical_cell_cutting_sixteen_census_cycle745_independent_check_2026_08_05_receipt_2026-08-05.json",
     "docs/MINIMAL_AXIOMS_2026-06-29.md",
     "requirements.txt",
     "requirements-release.txt",
@@ -1051,10 +1051,9 @@ receipt = {
         "named": {name: "PASS" if ok else "FAIL" for name, ok in GATES},
     },
 }
-tmp_receipt = RECEIPT_PATH.with_suffix(RECEIPT_PATH.suffix + ".tmp")
-tmp_receipt.write_text(json.dumps(receipt, indent=2, sort_keys=True) + "\n",
-                       encoding="utf-8")
-tmp_receipt.replace(RECEIPT_PATH)
+RECEIPT_PATH.write_text(
+    json.dumps(receipt, indent=2, sort_keys=True) + "\n", encoding="utf-8"
+)
 print("RECEIPT " + str(RECEIPT_PATH.relative_to(ROOT)), flush=True)
 print("TOTAL: PASS={0} FAIL={1}".format(PF[0], PF[1]), flush=True)
 sys.exit(0 if PF[1] == 0 else 1)

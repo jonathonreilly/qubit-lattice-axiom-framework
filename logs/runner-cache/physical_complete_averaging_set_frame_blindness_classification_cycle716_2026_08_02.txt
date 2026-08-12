@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/physical_complete_averaging_set_frame_blindness_classification_cycle716_2026_08_02.py
-runner_sha256: 9dae6d0c63f1ac7f6eabe37e2c27c364852bfb4250dec98dae0f34bf443f87d4
+runner_sha256: 1369a2b119d644a14ffbd506405aa3ed9374e3d2671468e2cfdc1ba0c27825c1
 input_fingerprint_sha256: f16228dfa22ac9810d4cc316446c432694b1b6d39236992c2bac39c9cf2f5eab
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 240.08
+elapsed_sec: 239.05
 status: ok
 ----- stdout -----
 c716 finite classification of frame-blind averaging sets

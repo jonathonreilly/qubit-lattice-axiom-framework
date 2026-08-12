@@ -23,25 +23,11 @@ every g in the product set S L(A) gives the same value of v_A.  Hence
 
     S L(A) = whole group  ==>  v_A is constant  (sufficiency, for EVERY source).
 
-Gates:
-
-  G1  the group layer: sextet, subgroup lattice, covering subgroups, complements, the
-      24 minimum-size covering-family members, and the family they generate;
-  G2  the same family recovered from the left-stabilizer criterion alone, evaluated
-      combinatorially on all 16777215 collections;
-  G3  the four-representative screen: its representatives are a four-coset
-      transversal and therefore a subset of the 24 frames; a bounded comparison
-      sample is carried as a consistency check, not as a proof of reduction;
-  G4  sufficiency on the nonvanishing-average domain, on five supplied sources and
-      two box sizes, for all 231 predicted members;
-  G5  complete finite scans of all 16777215 collections at four declared seeded
-      standard-normal inputs (two base seeds at each of two box sizes), with every
-      screen acceptance re-tested on all 24 frames;
-  G6  finite rejector witnesses at the first seeded input;
-  G7  finite structured-source witnesses showing that the seeded-scan counts are not
-      source-independent;
-  G8  a zero-average hostile witness: the normalized response is undefined and must
-      return a non-passing NaN rather than be classified as blind.
+Gate groups cover the exact finite group structure, full-powerset left-stabilizer
+classification, four-frame screening premise, bounded screen-consistency sample,
+sufficiency on the nonvanishing-average domain, four complete seeded scans with
+all-24 acceptance retests, finite structured-source witnesses, and a zero-average
+hostile witness that must return a non-passing NaN.
 
 The exact group statements are conditional on the measured sextet returned by the
 supplied compiler.  The full-powerset response counts are finite statements at the four
@@ -269,7 +255,7 @@ def scan_sizes(bp, QIs, kmax, collect=True):
 
 
 # ---------------------------------------------------------------------------
-# G1 -- the group layer
+# Exact finite group layer
 # ---------------------------------------------------------------------------
 def group_layer(S):
     Sset = frozenset(S)
@@ -361,7 +347,7 @@ def run_group_layer(gl, S):
 
 
 # ---------------------------------------------------------------------------
-# G2 -- the left-stabilizer criterion on the complete powerset
+# Left-stabilizer criterion on the complete powerset
 # ---------------------------------------------------------------------------
 def stabilizer_classification(gl):
     """Evaluate S L(A) = whole group for every one of the 16777215 nonempty A, using
@@ -422,7 +408,7 @@ def run_stabilizer_layer(gl):
 
 
 # ---------------------------------------------------------------------------
-# G3-G7 -- the measured layer, per box size
+# Measured finite layer, per box size
 # ---------------------------------------------------------------------------
 def run_L(ctx, gl):
     L = ctx["L"]
@@ -455,7 +441,7 @@ def run_L(ctx, gl):
           " of size at most 3".format(
               fmt(worst_red)))
 
-    # G4 sufficiency, all five sources, all 231 predicted members
+    # Sufficiency, all five supplied sources, all 231 predicted members
     worst_suf, minnorm_suf = 0.0, float("inf")
     for name, src in sources(ctx):
         sp = pulled(ctx, src)
@@ -469,7 +455,7 @@ def run_L(ctx, gl):
           "spread {} smallest norm {}".format(
               fmt(worst_suf), fmt(minnorm_suf)))
 
-    # G5 complete finite scans at the four declared seeded standard-normal inputs.
+    # Complete finite scans at the four declared seeded standard-normal inputs.
     for name, src in sources(ctx)[:2]:
         sp = pulled(ctx, src)
         got, hist, wb, bn, mn, nd = scan_sizes(sp, ctx["QI4"], 24)
@@ -490,7 +476,7 @@ def run_L(ctx, gl):
               "all {} screen acceptances retested on all 24 frames; worst spread {}"
               .format(len(all24), fmt(max(all24) if all24 else float("inf"))))
 
-    # G6 finite named witnesses at the first seeded input.
+    # Finite named witnesses at the first seeded input.
     bp0 = pulled(ctx, sources(ctx)[0][1])
     s_sextet, _ = spread_of(ctx["S"], bp0, ctx["QI24"])
     check("g6_{}_sextet_spread_witness".format(tag), s_sextet > TOL_BLIND,
@@ -512,7 +498,7 @@ def run_L(ctx, gl):
 
 
 def run_boundary(ctx, gl):
-    """G7 -- finite structured-source existence witnesses."""
+    """Finite structured-source existence witnesses."""
     L = ctx["L"]
     tag = "L{}".format(L)
     pred8 = {A for A in gl["family"] if len(A) <= KMAX_BOUNDARY}
@@ -552,7 +538,7 @@ def run_boundary(ctx, gl):
 
 
 def run_zero_average_domain(ctx):
-    """G8 -- a nonzero input whose full-group average vanishes."""
+    """A nonzero input whose full-group average vanishes."""
     b = np.zeros(ctx["n"])
     b[0] = 1.0
     b[35] = -1.0

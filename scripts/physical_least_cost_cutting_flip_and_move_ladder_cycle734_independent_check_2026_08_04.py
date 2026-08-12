@@ -27,7 +27,12 @@ AUDIT_INPUT_PATHS = (
     "docs/PHYSICAL_LEAST_COST_CUTTING_FLIP_AND_MOVE_LADDER_CYCLE734_NOTE_2026-08-04.md",
     "docs/MINIMAL_AXIOMS_2026-06-29.md",
     "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+    "docs/PHYSICAL_EXACT_ADJACENCY_DISSECTION_BRACKET_CYCLE725_NOTE_2026-08-03.md",
+    "scripts/physical_exact_adjacency_dissection_bracket_cycle725_2026_08_03.py",
     "docs/PHYSICAL_COLUMN_FAMILY_PARITY_LAW_FORCED_ORBITS_CYCLE733_NOTE_2026-08-04.md",
+    "scripts/physical_column_family_parity_law_forced_orbits_cycle733_2026_08_04.py",
+    "scripts/physical_column_family_parity_law_forced_orbits_cycle733_"
+    "independent_check_2026_08_04.py",
 )
 AUDIT_TIMEOUT_SEC = 600
 

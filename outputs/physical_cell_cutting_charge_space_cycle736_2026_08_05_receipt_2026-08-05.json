@@ -1,166 +1,176 @@
 {
- "cycle": 736,
- "failures": 0,
- "gates": 14,
- "headline": "On the single cell of one lattice step and one tick, the 15800 cuttings that reach the floor of the adjacency cost span 88 dimensions and carry not one two sided charge but a space of them. A weight on the 192 pieces can read the same way across every move of a given size at four pieces and at no other size measured from four to ten, with an odd family of exchanges summing to zero exhibited as the obstruction at six, seven, eight, nine and ten; the four-piece exchange span is exactly the overlap of the six- and the seven-piece spans, and of the 63 non-empty sets of move sizes exactly 3 admit more than one answer pattern. The weights uniform at the smallest move form a space of dimension 107 and induce 8 charges spanning dimension 3, so there are 3 charges up to swapping the two sides: one keeping the six-piece move, splitting 7704 to 8096, which reproduces the charge the earlier cycle measured; a sister keeping the seven-piece move, splitting 7424 to 8376; and their sum, keeping the four-piece move, splitting 5664 to 10136. That last one is exactly the indicator of a single orbit of 24 groups of 236 cuttings under the smallest move. Every one of the 8 charges is left point by point where it is by all 48 symmetries of the cell, while the indicator of one such group is carried to 24 different functions, and the 48 cuttings admitting no move on at most eight pieces sit off that orbit.",
- "lane": "emergent-geometry",
- "note": "docs/PHYSICAL_CELL_CUTTING_CHARGE_SPACE_CYCLE736_NOTE_2026-08-05.md",
- "recorded_output": "outputs/physical_cell_cutting_charge_space_cycle736_2026_08_05_cold_2026-08-05.txt",
- "results": {
-  "canonicity_and_support": {
-   "charges_fixed_point_by_point": 8,
-   "cuttings_at_the_floor": 15800,
-   "cuttings_the_four_keeping_charge_holds": 5664,
-   "functions_that_single_group_is_carried_to": 24,
-   "rigid_cuttings_sitting_off_that_orbit": 48,
-   "size_of_the_group_moved_for_contrast": 236,
-   "symmetries_fixing_them": 48
+  "claim_type": "bounded_theorem",
+  "components": {
+    "count": 349,
+    "rigid_cuttings": 48,
+    "size_profile": {
+      "1": 144,
+      "2": 96,
+      "236": 24,
+      "4": 36,
+      "7": 48,
+      "9320": 1
+    },
+    "support_component_count": 24,
+    "support_component_size": 236,
+    "support_cuttings": 5664,
+    "symmetry_orbits": 14
   },
-  "cell": {
-   "cell_symmetries": 48,
-   "five_subsets": 4368,
-   "piece_orbits": 57,
-   "pieces_of_least_volume": 2672,
-   "sample_points": 2736,
-   "sample_points_on_a_boundary": 0
+  "gates": {
+    "fail": 0,
+    "pass": 15
   },
-  "floor": {
-   "cuttings_at_the_floor": 15800,
-   "piece_cost_floor": 6,
-   "pieces_at_the_cost_floor": 400,
-   "pieces_in_play": 192,
-   "pieces_per_cutting": 24,
-   "search_nodes": 502838
+  "input_sha256": {
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
+    "docs/PHYSICAL_CELL_CUTTING_CHARGE_SPACE_CYCLE736_NOTE_2026-08-05.md": "b577a9ccfb12a246022a2caa85aab0f87d5cc65005b89d0b8d252b499cf56004",
+    "docs/PHYSICAL_COLUMN_FAMILY_PARITY_LAW_FORCED_ORBITS_CYCLE733_NOTE_2026-08-04.md": "67ff41b2a57f3d0cefb20afdb11f661cff4febfee0bffa3267d31c54adf4b039",
+    "outputs/physical_column_family_parity_law_forced_orbits_cycle733_2026_08_04_receipt_2026-08-04.json": "3064f3011c2c7f0f1e243661d1f5b53fde6a1340b0978ea889fe00b74c7db79e",
+    "scripts/physical_cell_cutting_charge_space_cycle736_independent_check_2026_08_05.py": "e771c7ce3ddde897d3c6c65ab4589acb94297fe07c3c261b29e3075a518b0bf9",
+    "scripts/physical_column_family_parity_law_forced_orbits_cycle733_2026_08_04.py": "9a4ec5fcd0f6307bef42644afe5c15d754bf92368862a2524adc0be2a1333690",
+    "scripts/physical_column_family_parity_law_forced_orbits_cycle733_independent_check_2026_08_04.py": "e165480467acb7f07b3dd0cd62dc9810f3bc83ce168ff4f540f4d520f2327a13"
   },
-  "groups_under_the_smallest_move": {
-   "group_sizes": [
-    1,
-    2,
-    4,
-    7,
-    236,
-    9320
-   ],
-   "groups": 349,
-   "groups_at_each_size": [
-    144,
-    96,
-    36,
-    48,
-    24,
-    1
-   ],
-   "groups_of_size_236": 24,
-   "no_symmetry_splits_a_group": true,
-   "orbits_of_groups": 14,
-   "size_of_those_groups": 236,
-   "stabiliser_order_of_that_orbit": 2,
-   "symmetries_fixing_the_largest_group": 48
+  "moves": {
+    "difference_span_ranks": [
+      85,
+      86,
+      86,
+      87,
+      87,
+      87
+    ],
+    "distinct_exchange_counts": [
+      120,
+      528,
+      1152,
+      4212,
+      6144,
+      25248
+    ],
+    "odd_zero_certificate_sizes": [
+      null,
+      7,
+      5,
+      5,
+      7,
+      5
+    ],
+    "pair_counts": [
+      46128,
+      0,
+      31968,
+      60096,
+      151704,
+      119808,
+      281376
+    ],
+    "sizes": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
   },
-  "moves_by_size": {
-   "distinct_exchanges_at_the_sizes_that_occur": [
-    120,
-    528,
-    1152,
-    4212,
-    6144,
-    25248
-   ],
-   "moves_at_each_size": [
-    46128,
-    0,
-    31968,
-    60096,
-    151704,
-    119808,
-    281376
-   ],
-   "regions_the_earlier_cycle_recut": 120,
-   "sizes_measured": [
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10
-   ],
-   "smallest_exchanges_match_the_regions": 120
+  "no_go_discipline": {
+    "checklist": "No-Go Discipline Gate section in the Cycle 736 note",
+    "n5_certificate": "five resolution lines in primary stdout and canonical cache",
+    "negative_assertion_class": "derived_no_go_boundary",
+    "status": "PASS"
   },
-  "spans": {
-   "a_population_difference_outside_the_seven_piece_span_is_exhibited": true,
-   "dimension_the_cuttings_span": 88,
-   "dimension_their_differences_span": 87,
-   "exchange_span_at_four": 85,
-   "exchange_span_at_the_largest_sizes": 87,
-   "four_piece_span_inside_both_others": true,
-   "four_piece_span_is_that_meet": true,
-   "meet_of_the_six_and_seven_piece_spans": 85
+  "population": {
+    "geometric_cuttings": 15800,
+    "geometric_orbit_representatives": 391,
+    "geometric_pair_checks": 107916,
+    "minimum_cost": 6,
+    "minimum_pieces": 400,
+    "pieces_per_cutting": 24,
+    "search_nodes": 502838,
+    "unit_volume_pieces": 2672,
+    "used_pieces": 192
   },
-  "the_charge_space": {
-   "all_of_those_charges_are_constant": true,
-   "charges_they_induce": 8,
-   "charges_up_to_swapping_the_two_sides": 3,
-   "constant_among_them": 2,
-   "dimension_those_charges_span": 3,
-   "keeps_four_row": [
-    5664,
-    10136,
-    10136,
-    0,
-    9504,
-    26880,
-    32640,
-    48960,
-    124224
-   ],
-   "keeps_seven_row": [
-    7424,
-    8376,
-    8376,
-    46128,
-    9504,
-    0,
-    21312,
-    102336,
-    183744
-   ],
-   "keeps_six_row": [
-    7704,
-    8096,
-    7704,
-    46128,
-    0,
-    26880,
-    28608,
-    87552,
-    190848
-   ],
-   "one_bit_change_to_the_weight_breaks_uniformity": true,
-   "rigid_cuttings_on_that_side": 48,
-   "row_layout": "split of the 15800, cuttings on the side holding the rigid 48, then moves at four, six, seven, eight, nine and ten the charge changes across",
-   "seven_piece_moves_in_all": 60096,
-   "seven_piece_moves_the_six_keeping_charge_flips": 26880,
-   "the_earlier_cycle_s_split": [
-    7704,
-    8096
-   ],
-   "weights_uniform_at_six_and_seven_at_once": 105,
-   "weights_uniform_at_the_smallest_move": 107
+  "responses": {
+    "charge_table": {
+      "four": {
+        "flip_counts": [
+          0,
+          9504,
+          26880,
+          32640,
+          48960,
+          124224
+        ],
+        "rigid_side": 10136,
+        "split": [
+          5664,
+          10136
+        ]
+      },
+      "seven": {
+        "flip_counts": [
+          46128,
+          9504,
+          0,
+          21312,
+          102336,
+          183744
+        ],
+        "rigid_side": 8376,
+        "split": [
+          7424,
+          8376
+        ]
+      },
+      "six": {
+        "flip_counts": [
+          46128,
+          0,
+          26880,
+          28608,
+          87552,
+          190848
+        ],
+        "rigid_side": 7704,
+        "split": [
+          7704,
+          8096
+        ]
+      }
+    },
+    "constant_charge_count": 2,
+    "induced_charge_count": 8,
+    "induced_charge_rank": 3,
+    "joint_six_seven_weight_dimension": 105,
+    "multiple_pattern_subsets": [
+      [
+        [
+          4
+        ],
+        2
+      ],
+      [
+        [
+          4,
+          6
+        ],
+        2
+      ],
+      [
+        [
+          4,
+          7
+        ],
+        2
+      ]
+    ],
+    "population_difference_rank": 87,
+    "population_span_rank": 88,
+    "smallest_move_weight_dimension": 107
   },
-  "which_sizes_a_weight_can_reverse": {
-   "non_empty_sets_of_sizes": 63,
-   "odd_families_summing_to_zero_at_six_through_ten": [
-    7,
-    5,
-    5,
-    7,
-    5
-   ],
-   "odd_size_forbids_reversal_at_those_sizes": true,
-   "patterns_each_such_set_admits": 2,
-   "sets_admitting_more_than_one_pattern": 3,
-   "smallest_moves_a_weight_reverses": 46128
-  }
- }
+  "runner_sha256": "ba85245a332b3b68984c7d4759f637be296bcf3b4a9bb8742008ae9e3d446d36",
+  "schema": "physical-cell-cutting-charge-space-cycle736-v2",
+  "status": "pass",
+  "supplied_model": "one unit four-cube with three labelled spatial columns and one labelled tick column, normalized-volume-one corner 4-simplices, four-coordinate L1 pair charge, and the declared 48-element spatial-rotation/tick-flip action"
 }

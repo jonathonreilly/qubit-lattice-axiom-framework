@@ -1082,3 +1082,18 @@ three mutations fail one check each; citation registration is `5,504/15,767`,
 out-degree four. N1--N8 and N5 land with the science. No canonical axiom, fixed
 TOE percentage, audit verdict, or `review-loop` changes. Landing order adds
 Block 58 after #6150.
+
+## Block 59
+
+PR #6152
+(`physics-loop/toe-axiom-closure-block59-record-source-schur-20260812`) is
+open, mergeable, and `CLEAN`, stacked exactly on Block-58 delivery head
+`61303e8d93`. Its distinct review object is the period-three harmonic-alias
+correction, complete all-edge/all-harmonic odd-period branches, executed
+`eta^2 O(k^3)` Ward scaling, improving metric purity, and independent initial
+full-harmonic Schur softening. Primary/cache is `PASS=8 FAIL=0`; Schur
+companion/cache is `PASS=4 FAIL=0`; four mutations fail one check each;
+citation registration is `5,505/15,771`, out-degree four. N1--N8 and N5 land
+with the science. This is significant emergent-IR route progress but no
+canonical axiom, fixed TOE percentage, audit verdict, or `review-loop`
+change. Landing order adds Block 59 after #6151.

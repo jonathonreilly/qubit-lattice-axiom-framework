@@ -1925,7 +1925,8 @@ lines are in the landing primary cache.
   `PASS=4 FAIL=0`; four targeted mutations fail exactly one check each; graph
   `5,505/15,771`, out-degree four. Vocabulary, strict lint, premise purity,
   model-family normalization, Python/cache, claim typing, whitespace, N5, and
-  enforced graph/link invariants pass. Science commit is `a96099e077`.
+  enforced graph/link invariants pass. Science commit is `a96099e077`; PR
+  #6152 is open, mergeable, and `CLEAN`.
 - Scope: significant candidate and route progress, but zero TOE percentage
   movement. This is not an all-L or generic-momentum theorem, exact continuum
   Noether identity, observable-decoupling result, full-`Z^3` construction,

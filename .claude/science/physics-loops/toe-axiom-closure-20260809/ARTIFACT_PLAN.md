@@ -1515,7 +1515,8 @@ complete conditional nonlinear compact solution:
 - current evidence: science commit `a96099e077`; graph `5,505/15,771`,
   out-degree four; vocabulary, strict lint, premise purity, model-family
   normalization, Python/cache, claim typing, whitespace, N5, and enforced
-  graph/link checks pass
+  graph/link checks pass; PR #6152 is open, mergeable, and `CLEAN` on exact
+  Block-58 delivery `61303e8d93`
 - score and next artifact: the fixed percentage map remains unchanged for at
   least 57 hours. Derive or falsify the local/generic-momentum `k^3` law and
   its two-TT observable decoupling; no further size scan qualifies

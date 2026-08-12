@@ -2338,6 +2338,9 @@ lint, premise purity, model-family normalization, Python/cache, claim typing,
 whitespace, N1--N8/N5, and enforced graph/link gates pass. No canonical axiom,
 fixed TOE percentage, audit verdict, or `review-loop` changes.
 
+PR #6152 is open, mergeable, and `CLEAN`, stacked exactly on the Block-58
+delivery branch at `61303e8d93`.
+
 This is significant route progress but still zero TOE score movement. Fixed
 Regge remains rejected as an exact microscopic first-class law and returns as
 an emergent infrared candidate. The next qualifying work is an analytic or

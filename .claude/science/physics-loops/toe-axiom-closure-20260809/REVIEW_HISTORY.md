@@ -2661,5 +2661,6 @@ instance or Fourier census.
 - Science commit is `a96099e077`, on exact Block-58 delivery `61303e8d93`.
   Fixed Regge returns as an emergent-IR candidate but remains nonexact at
   finite spacing. This is significant route progress and zero TOE percentage
-  movement; the map is unchanged for at least 57 hours. No canonical axiom,
-  audit verdict, or `review-loop` changes.
+  movement; the map is unchanged for at least 57 hours. PR #6152 is open,
+  mergeable, and `CLEAN`. No canonical axiom, audit verdict, or `review-loop`
+  changes.

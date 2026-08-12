@@ -31,10 +31,10 @@ quarters and the eight blocks of twenty four pieces of the fixed column ordering
 parity exists for exactly the whole, the halves and the two quarters of the second half —
 and the cells of quarter splits those certificates license are then covered in full, 146
 of them across the eighteen readings in play. The search returns nothing: no set of
-exactly ten pieces computes any of the six nonconstant readings, and there is no even set and
-no odd set of ten pieces at all. With parity, every one of the six readings needs at least
-twelve pieces, and both octet families are isolated — the next even set and the next odd
-set lie at twelve pieces or beyond. The search is not trusted on its word: the sizes below
+exactly ten pieces computes any of the six nonconstant readings, and there is no
+zero-kernel or constant-one-coset support of weight ten. With parity, every one of the six
+readings needs at least twelve pieces, and both octet families are isolated — the next
+support in either family lies at weight twelve or beyond. The search is not trusted on its word: the sizes below
 ten are rerun by the same engine first and return exactly the previous cycle's answers,
 control readings built from explicit sets are carried at ten by exactly 108, 1, 2 and 0
 sets, five planted ten piece readings are each recovered, and every verified return is
@@ -63,12 +63,13 @@ Write the population as its use table: one row per cutting, one column per used 
 entry marking use. A set of pieces computes a two valued function on cuttings — a reading
 — when the parity of each row's overlap with the set equals the function's value on that
 row. Two sets compute the same reading exactly when their symmetric difference is met
-evenly by every cutting: the even sets compute the constant zero, the odd sets the
-constant one, and the computing sets of any fixed reading form a single class under
-symmetric difference with even sets. The previous cycle found the smallest even sets and
-the smallest odd sets at exactly eight pieces — the even and odd octets — and nothing for
-the six nonconstant readings through eight. This cycle asks for the next size: whether ten pieces
-compute a reading, and whether any even or odd set of ten pieces exists.
+evenly by every cutting. Call those zero-kernel sets; the sets met oddly by every cutting
+form the constant-one coset. The supports computing any fixed reading form one affine
+coset under symmetric difference with the zero kernel. The previous cycle found the
+smallest nonempty zero-kernel supports and the smallest constant-one-coset supports at
+exactly eight pieces, and nothing for the six nonconstant readings through eight. This
+cycle asks for the next size: whether ten pieces compute a reading, including whether a
+weight-ten zero-kernel or constant-one-coset support exists.
 
 ## Sizes are even
 
@@ -105,12 +106,12 @@ pass discriminate.
 The engine that will run ten is checked against the previous cycle's complete search
 first, through the same licensed cell machinery. Sizes two, four and six license 5, 14 and
 30 cells and return nothing for any of the eight readings. Size eight licenses 55 cells
-and returns exactly the 648 even octets, the 192 odd octets, and nothing for any of the
+and returns exactly the 648 nonempty zero-kernel octets, the 192 constant-one-coset octets, and nothing for any of the
 six nonconstant readings. Each of the 840 returned octets is verified piece by piece against all 15800
 cuttings with 0 mismatched. The two families close under the 48 symmetries exactly, in
-orbits of sizes 24 and 48 — seventeen and five of them for the even family, two and three
-for the odd — and the 648 even octets span the full 104 dimensional space of even sets, as
-do the differences of the 192 odd octets. The engine reproduces the previous cycle's floor
+orbits of sizes 24 and 48 — seventeen and five of them for the zero-kernel family, two and three
+for the constant-one family — and the 648 zero-kernel octets span the full 104-dimensional
+kernel, as do the differences of the 192 constant-one octets. The engine reproduces the previous cycle's floor
 before it is trusted at the frontier.
 
 ## The complete search at ten
@@ -146,9 +147,10 @@ witness size there. The predecessor's lower bound of ten therefore rises to twel
 
 The same completeness answers the octet question. The sets every cutting meets evenly
 number 0 below eight pieces, 648 at eight, and 0 at ten; the sets every cutting meets
-oddly number 0, 192 and 0. In the 104 dimensional space of even sets the least weight is
-eight, and the next weight is not ten: the octets are followed by a gap, and the next even
-set and the next odd set both have twelve pieces or more. Every one of the 48 symmetries
+oddly number 0, 192 and 0. In the 104-dimensional zero kernel the least weight is
+eight among nonempty supports, and the next weight is not ten: the octets are followed by
+a gap. The next zero-kernel support and the next constant-one-coset support both have
+twelve pieces or more. Every one of the 48 symmetries
 of the cell permutes the 15800 cuttings among themselves, 8 of the 18 readings are unmoved
 by all of them, and the sets carrying those readings map onto one another under the action
 — so the emptiness at ten and the two octet families are symmetry consistent verdicts,

@@ -1436,7 +1436,7 @@ receipt = {
         "counts": GOT,
         "nonconstant_readings": 6,
         "nonconstant_minimum_lower_bound": 12,
-        "zero_and_one_next_support_lower_bound": 12,
+        "zero_kernel_and_one_coset_weight_ten_empty": GOT[0] == 0 and GOT[1] == 0,
         "duplicate_returns": DUP10,
         "mismatched_verified_returns": BAD10,
     },

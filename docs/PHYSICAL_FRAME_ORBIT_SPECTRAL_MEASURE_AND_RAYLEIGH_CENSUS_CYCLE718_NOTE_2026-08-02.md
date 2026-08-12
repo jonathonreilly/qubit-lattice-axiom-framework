@@ -323,6 +323,4 @@ Hard landing conditions:
 4. pipeline-generated ledger and status outputs must be stripped, while the
    citation-graph manifest acknowledgment co-lands if topology changes.
 
-This package makes a positive bounded finite claim and ships no negative or
-no-go result, so the No-Go Discipline battery is not applicable. Independent
-audit remains required for the proposed claim.
+Independent audit remains required for the proposed claim.

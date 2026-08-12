@@ -125,7 +125,7 @@ smaller size, as Cycle 716 records.
 
 ## Result III — exact 231-member covering-criterion family
 
-Under the exact conditional that the sextet fixes the relevant operator/pairing,
+Under the exact conditional that the sextet fixes the relevant Hessian,
 unions of right cosets of a covering subgroup are sufficient averaging sets.
 The family can be constructed either from all nine covering subgroups or from
 the four minimal regular subgroups; direct deduplication gives the same 231

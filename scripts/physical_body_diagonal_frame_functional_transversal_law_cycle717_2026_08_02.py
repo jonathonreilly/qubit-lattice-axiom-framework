@@ -1,15 +1,15 @@
-"""Cycle 717 -- the body-diagonal law for the reassembled static operator.
+"""Cycle 717 -- finite body-diagonal action and transversal probe census.
 
 Class-A finite check script (stdlib + numpy only).  It executes the landed Cycle-696
 open-coframe endpoint compiler chain, relabels the assembled static operator by each of
 the 24 proper rotations, and identifies the invariant that the operator actually depends
 on.
 
-Cycle 715 showed the reassembled operator is constant on right cosets of the sextet of
-frames that leave it fixed; Cycle 716 classified, over the complete powerset, which
-averaging sets erase the residual dependence.  Both cycles carried the sextet and the
-resulting counts as measured facts.  This cycle names the invariant and derives the
-counts.
+The exact layer identifies the body-diagonal action of the supplied 24 proper rotations
+and derives the 231-member covering-criterion sufficient family.  The numerical layer
+measures operator clustering and transversal blindness at L=3,4 for explicitly named
+sources.  It does not claim a source-independent converse or a universal minimum blind
+set: structured unit sources below furnish additional blind transversals.
 
 The derivation this script measures.  The four body diagonals of the cubic cell,
 
@@ -30,21 +30,21 @@ Two consequences follow, and both are checked here against direct measurement:
 
   (a) a subgroup H fills the group against the sextet exactly when H acts transitively
       on the four body diagonals, so the covering subgroups are the transitive ones,
-      the minimal ones are the four regular ones, and the minimum blind size of four is
-      forced -- a transitive group on four points has order divisible by four;
+      the minimal ones are the four regular ones, and the minimum covering-subgroup
+      order is four -- a transitive group on four points has order divisible by four;
 
-  (b) the census of blind collections is not a measured number.  Every transitive
-      subgroup contains a regular one, so the blind family is the union of four
+  (b) the census of the covering-criterion sufficient family is not a measured number.
+      Every transitive subgroup contains a regular one, so the family is the union of four
       coset families of size 63, and inclusion and exclusion over their joins gives
       4*63 - (3*7 + 3*1) + 4*1 - 1 = 231.
 
-The sharp physical content is a refinement, not a restatement.  Averaging one frame per
-body diagonal -- a transversal of delta -- is NECESSARY for blindness at minimum size
-but far from sufficient: of the 1296 transversals exactly 24 are blind, and they are
-exactly the right cosets of the four regular subgroups.
+For each of two seeded normal vectors at each size, exactly 24 of the 1296 transversals
+are blind, namely the right cosets of the four regular subgroups.  This seeded converse
+is not source-robust: unit-slot counterexamples add blind transversals at both sizes.
 
-No value is read from a pinned table: every number printed here is recomputed from the
-compiler chain in this run.
+Read inventory.  The Cycle-696 compiler and its four transitive imports are the only
+load-bearing repository inputs and are declared in AUDIT_INPUT_PATHS.  Every reported
+number is recomputed in this run; the only package-local write is the paired receipt.
 """
 from __future__ import annotations
 
@@ -65,6 +65,15 @@ _SPEC = importlib.util.spec_from_file_location("c696_compiler_for_c717", _MODULE
 c696 = importlib.util.module_from_spec(_SPEC)
 _SPEC.loader.exec_module(c696)
 
+AUDIT_INPUT_PATHS = (
+    "scripts/physical_open_coframe_k_endpoint_compiler_cycle696_2026_07_25.py",
+    "scripts/physical_dynamical_metric_source_law_bridge_tournament_cycle576_2026_07_22.py",
+    "scripts/physical_dynamical_metric_source_law_bridge_cycle576_regge_support_2026_07_22.py",
+    "scripts/physical_dynamical_metric_source_law_bridge_cycle576_plaquette_support_2026_07_22.py",
+    "scripts/frontier_cubic_coxeter_regge_second_variation_3plus1_2026_06_09.py",
+)
+AUDIT_TIMEOUT_SEC = 300
+
 FRAMES = [np.asarray(m, dtype=np.int64) for m in c696.c576.FRAMES]
 DIRS = c696.regge.DIRS15
 CLASS_OF = {}
@@ -81,6 +90,7 @@ TOL_BLIND = 1e-8
 TOL_STAB = 1e-9
 SEP_MIN = 1e3
 NORM_MIN = 1.0
+TOL_ZERO_NORM = 1e-12
 N_TRANSVERSALS = 6 ** 4
 BLIND_TRANSVERSALS = 24
 LADDER = [(4, 24), (8, 51), (12, 80), (16, 51), (20, 24), (24, 1)]
@@ -171,10 +181,21 @@ FIBRE = {j: tuple(sorted(g for g in range(24) if DELTA[g] == j)) for j in range(
 
 
 def subgroup_lattice():
-    subs = set()
-    for r in (1, 2, 3):
-        for gens in itertools.combinations(range(24), r):
-            subs.add(closure(gens))
+    """Enumerate the complete subgroup lattice by closure expansion.
+
+    This does not assume a bound on the size of a generating set: every discovered
+    subgroup is expanded by adjoining each group element until no new closure occurs.
+    """
+    identity = frozenset({IDENT})
+    subs = {identity}
+    pending = [identity]
+    while pending:
+        H = pending.pop()
+        for g in range(24):
+            K = closure(set(H) | {g})
+            if K not in subs:
+                subs.add(K)
+                pending.append(K)
     return sorted(subs, key=lambda H: (len(H), sorted(H)))
 
 
@@ -224,7 +245,9 @@ def sources(ctx):
         rg = np.random.default_rng(seed + ctx["L"])
         out.append(("generic-{}".format(seed), rg.standard_normal(ctx["n"])))
     out.append(("unit-slot0", np.eye(ctx["n"])[0]))
+    out.append(("unit-slot1", np.eye(ctx["n"])[1]))
     out.append(("unit-slot7", np.eye(ctx["n"])[7]))
+    out.append(("unit-slot8", np.eye(ctx["n"])[8]))
     out.append(("all-ones", np.ones(ctx["n"])))
     return out
 
@@ -238,7 +261,9 @@ def spread_of(A, bp, QIs):
     """Frame spread of the averaged pairing, and the norm of the averaged source."""
     v = bp[list(A)].sum(axis=0)
     nrm = float(np.linalg.norm(v))
-    v = v / (nrm if nrm > 0.0 else 1.0)
+    if nrm <= TOL_ZERO_NORM:
+        return float("nan"), nrm
+    v = v / nrm
     vals = [float(v @ Qi @ v) for Qi in QIs]
     return float(max(vals) - min(vals)), nrm
 
@@ -512,38 +537,65 @@ def run_rejectors(ctx, orb4, reg, srcs, TV):
 # G7 -- boundary
 # ---------------------------------------------------------------------------
 def run_boundary(ctx, reg, srcs, TV):
-    """Where the transversal count is robust, and where it is not.
-
-    Cycle 716 found structured sources blind on strictly more collections than the
-    generic family, some below the generic minimum size.  Restricted to transversals
-    that extra blindness does not appear: the count survives every source whose frame
-    orbit is more than one point, and fails exactly when the orbit degenerates."""
+    """Bound the seeded transversal observation with structured counterexamples."""
     tag = "L{}".format(ctx["L"])
     predicted = set()
     for R in reg:
         predicted |= right_cosets(R)
+    expected = {
+        3: {"unit-slot0": 24, "unit-slot1": 24, "unit-slot7": 24,
+            "unit-slot8": 264, "all-ones": N_TRANSVERSALS},
+        4: {"unit-slot0": 24, "unit-slot1": 72, "unit-slot7": 24,
+            "unit-slot8": 24, "all-ones": N_TRANSVERSALS},
+    }
     for name, b in srcs:
         if name.startswith("generic"):
             continue
         bp = pulled(ctx, b)
         diam = float(np.abs(bp - bp[0]).max())
-        blind = {A for A in TV if spread_of(sorted(A), bp, ctx["QI"])[0] < TOL_BLIND}
+        blind = set()
+        for A in TV:
+            spread, _ = spread_of(sorted(A), bp, ctx["QI"])
+            if np.isfinite(spread) and spread < TOL_BLIND:
+                blind.add(A)
+        wanted = expected[ctx["L"]][name]
         if diam < TOL_STAB:
             check("g7_{}_{}_orbit_is_one_point".format(tag, name),
-                  len(blind) == len(TV) and name == "all-ones",
-                  "orbit diameter {}, blind on every transversal, so a degenerate "
-                  "orbit breaks the count".format(fmt(diam)))
-        else:
-            check("g7_{}_{}_count_survives".format(tag, name),
-                  blind == predicted and diam > TOL_STAB,
-                  "orbit diameter {}, blind on the same {} transversals".format(
+                  len(blind) == wanted == len(TV) and name == "all-ones",
+                  "orbit diameter {}, all {} transversals blind".format(
                       fmt(diam), len(blind)))
+        else:
+            check("g7_{}_{}_finite_count".format(tag, name),
+                  len(blind) == wanted and predicted <= blind and diam > TOL_STAB,
+                  "orbit diameter {}, measured {}/{} blind transversals; the {} "
+                  "regular cosets remain sufficient".format(
+                      fmt(diam), len(blind), len(TV), len(predicted)))
         NOTES.setdefault("boundary", {})["{}_{}".format(tag, name)] = len(blind)
+
+    if ctx["L"] == 3:
+        # Exact integer kernel witness for the average over A={0,1,3,5}.  Its pulled
+        # orbit is nontrivial, but the averaged source is exactly zero.  Such a set is
+        # outside the normalized-pairing domain and must never be labelled blind.
+        b = np.zeros(ctx["n"])
+        for i, value in ((2, -1), (3, 1), (6, 1), (7, -1),
+                         (10, 1), (11, -1), (14, -1), (15, 1)):
+            b[i] = value
+        bp = pulled(ctx, b)
+        spread, nrm = spread_of((0, 1, 3, 5), bp, ctx["QI"])
+        diam = float(np.abs(bp - bp[0]).max())
+        check("g7_exact_zero_average_is_out_of_domain",
+              nrm <= TOL_ZERO_NORM and np.isnan(spread) and diam > TOL_STAB,
+              "nontrivial orbit diameter {}, average norm {}, spread is NaN".format(
+                  fmt(diam), fmt(nrm)))
+        NOTES["zero_average_witness"] = {
+            "set": [0, 1, 3, 5], "norm": fmt(nrm), "orbit_diameter": fmt(diam),
+            "classification": "outside normalized-pairing domain",
+        }
 
 
 # ---------------------------------------------------------------------------
 def main():
-    print("c717 the body-diagonal law for the reassembled static operator")
+    print("c717 finite body-diagonal action and transversal probe census")
     print("-- body diagonals and the sextet --")
     run_diagonal_layer()
     print("-- covering is transitivity --")
@@ -563,6 +615,7 @@ def main():
 
     receipt = {
         "runner": Path(__file__).name,
+        "verdict": "PASS" if N_FAIL == 0 else "FAIL",
         "pass": N_PASS,
         "fail": N_FAIL,
         "box_sizes": list(L_LIST),

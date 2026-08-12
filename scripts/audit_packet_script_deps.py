@@ -45,6 +45,13 @@ sys.path.insert(0, str(REPO_ROOT / "docs" / "audit" / "scripts"))
 import ledger_io  # noqa: E402
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    # Cycle 738's checker independently reconstructs the cutting incidence
+    # with the opposite cover pivot and uses a separate exact-weight CNF/SAT
+    # encoding, so it deliberately remains outside the primary import closure.
+    "physical_cell_cutting_size_ten_frontier_cycle738_note_2026-08-05": [
+        "scripts/physical_cell_cutting_size_ten_frontier_cycle738_"
+        "independent_check_2026_08_05.py",
+    ],
     "baxis_second_leg_certificate_cycle875_support_note_2026-07-28": [
         "scripts/frontier_cycle875_baxis_independent_check_2026_07_28.py",
     ],

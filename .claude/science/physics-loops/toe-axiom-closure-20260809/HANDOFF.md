@@ -1932,3 +1932,41 @@ Compare a canonical/symplectic formulation and an OS/transfer formulation
 against the same immutable contract. If both remain lawful and inequivalent,
 write the smallest extensional Admissibility-law delta; do not return to pole
 grids, orientation averaging, or hard-zero gluing.
+
+## Block 50 Handoff
+
+Block 50 is local on branch
+`physics-loop/toe-axiom-closure-block50-positive-transfer-20260811`, stacked
+exactly on Block-49 delivery head `225c4e64f2`. It performs the physical Gram
+test missing from Block 48. At `k=0.4`, `h_yz` is orthogonal to all four
+displacement-gauge columns. The complete six-dimensional quotient covariance
+agrees with an independent Lagrange-bordered inverse to `6.722e-15`.
+
+On every periodic-time carrier `N=128,256,512,1024,2048,4096`, the first
+one-step and even-slice two-step Hankel Grams are indefinite. At `N=4096`
+their determinants are `-0.154853981` and `-0.059345208`; minimum eigenvalues
+are `-0.043916043` and `-0.020538833`. Both common tensor poles nevertheless
+remain real near `0.3949`, proving that positive roots did not supply positive
+action-covariance residues or a physical Hilbert form.
+
+The same engine is positive on a two-atom transfer control. A nine-slice
+first Gram is positive, so longer blocking, boundary terms, local-edge
+observables, canonical reduction, unitary reconstruction, and nonlinear
+connection routes remain live. Fresh N1--N8 explicitly prevents a gravity or
+all-blocking no-go.
+
+Primary/cache is `PASS=13 FAIL=0`; all three process-local mutations exit
+nonzero as intended. Citation registration is `5,496/15,732`, out-degree six.
+Vocabulary, strict lint, Python/cache, staged typing, whitespace, forensic N5,
+and graph/link gates pass. Science commit is `fa9062f973`; PR #6143 is open,
+mergeable, and `CLEAN`. Independent audit remains required. No canonical
+axiom, fixed TOE percentage, audit verdict, or `review-loop` changes.
+
+The next block must stop trying to rescue short-step common-metric poles. Build
+the smallest canonical three-plus-one update on state
+`(h_plus,h_cross,p_plus,p_cross)`, preserve the sourced Ricci/lapse-shift
+constraints, prove the positive state or OS form, and bind one update to one
+permanent-Record event. Then construct a distinct lawful clock/boundary
+completion or prove uniqueness. If selection remains open, the necessary
+constitutional object is an exact extensional Admissibility `L*` referent—not
+a sentence saying that some positive transfer exists.

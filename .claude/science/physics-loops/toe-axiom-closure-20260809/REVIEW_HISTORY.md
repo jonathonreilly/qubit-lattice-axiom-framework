@@ -2336,3 +2336,36 @@ instance or Fourier census.
 - Science commit is `6d7acde008`; PR #6142 is stacked on exact Block-48
   delivery `a7f4269d17`. No canonical edit, fixed percentage, audit verdict,
   or `review-loop` occurs.
+
+## Block 50 Construction And Adversarial Record
+
+- Used `h_yz` at `k=0.4`, verified gauge overlap below `1.225e-14`, and
+  inverted the complete six-dimensional quotient of the sign-fixed Block-48
+  common-metric operator at every declared Euclidean time mode.
+- The quotient inertia is `(1,5,0)` throughout. A separate fourteen-dimensional
+  Lagrange-bordered inverse agrees with the quotient covariance to
+  `6.722e-15`; Ward and Hermiticity residuals are
+  `1.163e-13/8.565e-15`.
+- On `N=128,256,512,1024,2048,4096`, the one-step determinant lies in
+  `-0.154853981..-0.154787529` and the even-slice two-step determinant in
+  `-0.059345208..-0.059339148`. The finest minimum eigenvalues are
+  `-0.043916043/-0.020538833`.
+- Re-solved both common tensor poles at `0.394911593/0.394947166`; their
+  reality coexists with the negative covariance Grams. Positive pole
+  locations therefore do not derive positive residues or an action-to-Hilbert
+  map.
+- An explicit positive two-atom transfer passes both first Grams. The
+  nine-slice first determinant is `+0.000203227`, preserving longer-block and
+  boundary routes. Three process-local mutations—plus-coordinate swap,
+  bordered-inverse corruption, and positive-control corruption—each fail
+  nonzero in the intended checks.
+- Fresh N1--N8 restricts the negative to the displayed coordinate, operator,
+  and block depths one/two while preserving local-edge, canonical, unitary,
+  boundary, longer-block, and nonlinear routes.
+- Primary/cache is `PASS=13 FAIL=0`; citation registration is
+  `5,496/15,732`, out-degree six. Vocabulary, strict lint, premise purity,
+  Python/cache, staged claim typing, whitespace, forensic readiness, and
+  enforced graph/link invariants pass.
+- Science commit is `fa9062f973`; PR #6143 is open, mergeable, and `CLEAN` on
+  exact Block-49 delivery `225c4e64f2`. No canonical edit, fixed percentage,
+  audit verdict, or `review-loop` occurs.

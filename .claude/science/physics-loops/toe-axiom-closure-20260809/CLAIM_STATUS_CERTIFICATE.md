@@ -1640,3 +1640,31 @@ lines are in the landing primary cache.
   selected physical transfer, nonlinear/nonflat theorem, gravity no-go,
   axiom amendment, TOE percentage movement, or audit verdict. Fresh N1--N8
   and all five N5 resolutions land; no `review-loop` is used.
+
+## Block 50 Claim Status
+
+- Narrow negative: for the explicit Block-48 common-metric stationary-Schur
+  operator at `k=0.4`, the gauge-invariant `h_yz` action covariance has
+  indefinite first one-step and even-slice two-step moment Grams on every
+  declared periodic-time carrier `N=128..4096`.
+- Full physical test: all four gauge directions are removed before inversion;
+  the six-dimensional quotient has inertia `(1,5,0)` and agrees with an
+  independent Lagrange-bordered covariance to `6.722e-15`.
+- Root/residue separation: both tensor poles remain real near `0.3949`, while
+  the `N=4096` Gram determinants are `-0.154853981/-0.059345208`. Real
+  positive branch numbers therefore did not derive nonnegative spectral
+  weights or the physical Hilbert form.
+- Live routes: a positive two-atom control passes and a nine-slice first Gram
+  is positive. Local-edge observables, boundary terms, longer blocking,
+  canonical constraint reduction, unitary reconstruction, and nonlinear
+  connection laws remain open.
+- Evidence: source/input-pinned primary cache `PASS=13 FAIL=0`; three
+  process-local mutations exit nonzero; graph `5,496/15,732`, out-degree six.
+  Vocabulary, strict lint, premise purity, Python/cache, claim typing,
+  whitespace, forensic readiness, and enforced graph/link invariants pass.
+  Science commit is `fa9062f973`; PR #6143 is open, mergeable, and `CLEAN` on
+  exact Block-49 delivery `225c4e64f2`.
+- Scope: short-step action-to-transfer blocker resolution, not gravity
+  failure, all-blocking failure, selected transfer, axiom amendment, TOE
+  percentage movement, or audit verdict. Fresh N1--N8 and all five N5
+  resolutions land; no `review-loop` is used.

@@ -1224,3 +1224,31 @@ complete conditional nonlinear compact solution:
   decaying branch, and Record tick; if distinct legal completions survive,
   package the exact extensional Admissibility-law fork rather than another
   support block
+
+## Block 50 Artifact Plan
+
+- theorem note: test the Block-48 common-metric stationary-Schur candidate at
+  the physical OS gate by inverting the full gauge quotient for one
+  gauge-invariant TT observable; distinguish roots from spectral weights and
+  do not promote a candidate failure to a gravity no-go
+- primary runner/cache: check all `8,064` temporal modes on six carriers,
+  four gauge columns, the six-dimensional quotient, quotient/bordered method
+  agreement, one-step and even-slice two-step first Hankel Grams, both tensor
+  poles, positive-transfer atoms, a nine-slice escape control, exact-law
+  boundary, and fresh N1--N8; achieved `PASS=13 FAIL=0`
+- adversarial controls: process-local replacement by the plus coordinate,
+  corruption of the bordered inverse, and corruption of the positive atom
+  control each exit nonzero in the intended checks
+- no-go packet: restrict the result to `h_yz` and block depths one and two for
+  the displayed common-metric operator; preserve local-edge observables,
+  boundary terms, longer blocking, canonical constraint reduction, unitary
+  Lorentzian reconstruction, and nonlinear connection laws
+- current evidence: science commit `fa9062f973`; PR #6143 is open, mergeable,
+  and `CLEAN` on exact Block-49 delivery `225c4e64f2`; graph
+  `5,496/15,732`, out-degree six; vocabulary, strict lint, Python/cache,
+  claim typing, whitespace, forensic N5, and enforced graph/link checks pass;
+  no TOE percentage moves
+- next artifact: one explicit canonical two-TT lattice transfer with sourced
+  Ricci constraint, positive physical state form, trace-free/Weyl propagation,
+  and one declared Record step, followed by an inequivalent lawful completion
+  or a uniqueness theorem that decides the exact extensional `L*` axiom cut

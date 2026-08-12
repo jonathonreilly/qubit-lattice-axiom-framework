@@ -1866,7 +1866,7 @@ lines are in the landing primary cache.
   mutations fail exactly one check each; graph `5,503/15,763`, out-degree
   four. Vocabulary, strict lint, premise purity, Python/cache, claim typing,
   whitespace, N5, and enforced graph/link invariants pass. Science commit is
-  `5cfc183a93`; PR pending.
+  `5cfc183a93`; PR #6150 is open, mergeable, and `CLEAN`.
 - Scope: exact present-surface non-entailment, axiom issue identification, and
   campaign strategy correction—not a universal TOE no-go, global minimality,
   law selection, owner adoption, axiom amendment, audit verdict, or TOE

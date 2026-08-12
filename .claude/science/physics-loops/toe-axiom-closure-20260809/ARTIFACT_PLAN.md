@@ -1447,8 +1447,8 @@ complete conditional nonlinear compact solution:
 - current evidence: science commit `5cfc183a93`; graph `5,503/15,763`,
   out-degree four; vocabulary, strict lint, premise purity, Python/cache,
   claim typing, whitespace, N1--N8/N5, and enforced graph/link checks pass;
-  PR pending; fixed percentages remain unchanged and independent audit is
-  required
+  PR #6150 is open, mergeable, and `CLEAN`; fixed percentages remain
+  unchanged and independent audit is required
 - next artifact: run one provisional complete-law tournament beginning with
   the source-complete nonlinear gravity kill test and the Root-A/B interface;
   stop all independent carrier, projective-count, coefficient-grid, and

@@ -2235,9 +2235,9 @@ Primary/cache is `PASS=9 FAIL=0`; continuous-rank, signature-count, and
 grading-count mutations each fail exactly one check. Citation registration is
 `5,503/15,763`, out-degree four. Vocabulary, strict lint, premise purity,
 Python/cache, claim typing, whitespace, fresh N1--N8/N5, and graph/link gates
-pass. Science commit is `5cfc183a93`; PR pending. Independent audit remains
-required. No canonical axiom, fixed TOE percentage, audit verdict, or
-`review-loop` changes.
+pass. Science commit is `5cfc183a93`; PR #6150 is open, mergeable, and
+`CLEAN`. Independent audit remains required. No canonical axiom, fixed TOE
+percentage, audit verdict, or `review-loop` changes.
 
 Execution now changes. Run one provisional complete-law tournament, beginning
 with the source-complete nonlinear gravity kill test and the Root-A/B physical

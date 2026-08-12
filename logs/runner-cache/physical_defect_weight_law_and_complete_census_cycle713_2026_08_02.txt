@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/physical_defect_weight_law_and_complete_census_cycle713_2026_08_02.py
-runner_sha256: 6a1f4d9b7c6c79f14547c9aec43ea41222d29e0eba2e42ef91ed315730b58bea
+runner_sha256: a3474fb73effa9e2e8ac23a133d2f2a0da67aac0903037b6588a237b606928eb
 input_fingerprint_sha256: f16228dfa22ac9810d4cc316446c432694b1b6d39236992c2bac39c9cf2f5eab
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 10.58
+elapsed_sec: 10.41
 status: ok
 ----- stdout -----
 == cycle 713: assembly-defect weight law and complete census ==
@@ -15,7 +15,7 @@ PASS g03_complete_classification all 2418192 resolved entries above 1.0e-09 obey
 PASS g04_weight_law_dev max weight-law deviation 6.1e-08
 PASS g05_half_signature_axis_only half weight occurs only on axis-axis pairs, signature set [(1, 1)]
 PASS g06_full_signatures realized full signatures [(1, 1), (1, 2), (1, 3), (2, 1), (2, 2), (3, 1)]
-PASS g07_absent_signatures signatures [(2, 3), (3, 2), (3, 3)] are never realized
+PASS g07_signature_set_complete realized signature set is exactly [(1, 1), (1, 2), (1, 3), (2, 1), (2, 2), (3, 1)]
 PASS g08_additive_rejector additive alternative LT*sqrt(s_i+s_j) misses by at least 0.54 where it differs
 PASS g09_full_half_gap largest half-weight magnitude 1.0e+00 below the cycle-711 cut 2.0e+00, smallest full-weight magnitude 2.0e+00
 PASS g10_cut_is_weight_separator entries above the cycle-711 cut equal the full-weight entries at every size and frame
@@ -36,7 +36,7 @@ PASS g21_carrier_size 30 ordered class pairs carry the full-weight entries, at e
 PASS g22_carrier_signature carrier support signatures {'(1, 1)': 8, '(1, 2)': 7, '(1, 3)': 2, '(2, 1)': 7, '(2, 2)': 4, '(3, 1)': 2}, with 3 frame-dependent identity sets
 PASS g23_support_shuffle_rejector swapping the axis and body-diagonal supports leaves 1656 entries outside the weight law
 PASS g24_uniform_shift_invariance a uniform 1.7 diagonal shift leaves the defect unchanged, because the frame relabelling is a permutation
-PASS g25_ramp_rejector a site-graded diagonal ramp of height 1.7, which the relabelling does not commute with, leaves 272 entries outside the weight law
+PASS g25_ramp_rejector a site-graded diagonal ramp of height 1.7, noncommuting with the relabeling, leaves 272 entries outside the weight law
 receipt: outputs/physical_defect_weight_law_and_complete_census_cycle713_2026_08_02_receipt_2026-08-02.json
 TOTAL: PASS=28 FAIL=0
 

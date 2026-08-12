@@ -38,8 +38,8 @@
       "detail": "realized full signatures [(1, 1), (1, 2), (1, 3), (2, 1), (2, 2), (3, 1)]",
       "pass": true
     },
-    "g07_absent_signatures": {
-      "detail": "signatures [(2, 3), (3, 2), (3, 3)] are never realized",
+    "g07_signature_set_complete": {
+      "detail": "realized signature set is exactly [(1, 1), (1, 2), (1, 3), (2, 1), (2, 2), (3, 1)]",
       "pass": true
     },
     "g08_additive_rejector": {
@@ -123,7 +123,7 @@
       "pass": true
     },
     "g25_ramp_rejector": {
-      "detail": "a site-graded diagonal ramp of height 1.7, which the relabelling does not commute with, leaves 272 entries outside the weight law",
+      "detail": "a site-graded diagonal ramp of height 1.7, noncommuting with the relabeling, leaves 272 entries outside the weight law",
       "pass": true
     }
   },

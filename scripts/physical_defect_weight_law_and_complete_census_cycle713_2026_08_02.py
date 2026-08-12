@@ -9,7 +9,7 @@ This runner derives the menu and completes the census.
 
 Let v_i be the spatial direction vector of the coframe variable i in the
 cycle-696 open compiler chain and s_i = |v_i|^2 its support (1 for the three
-axis directions, 2 for the six face diagonals, 3 for the body diagonal), and
+axis directions, 2 for the three admitted face diagonals, 3 for the body diagonal), and
 let LT = 2 be the tick length of the landed 3+1 module.  For every proper
 rotation R outside the constant-sign sextet, and every scanned box size L,
 EVERY resolved entry of the assembly defect E = Q[m, m] - Q, meaning
@@ -87,7 +87,7 @@ PERT = 1.7                    # perturbed-operator rejector step
 CARRIER = 30                  # ordered class pairs carrying full-weight entries
 ANCHOR_FULL = {3: 424, 7: 10680}   # cycle-711 per-sign census totals
 SIG_FULL = ((1, 1), (1, 2), (1, 3), (2, 1), (2, 2), (3, 1))
-SIG_ABSENT = ((2, 3), (3, 2), (3, 3))
+SIG_UNREALIZED = ((2, 3), (3, 2), (3, 3))
 CARRIER_SIG = {(1, 1): 8, (1, 2): 7, (2, 1): 7, (1, 3): 2, (3, 1): 2, (2, 2): 4}
 MAG_LAW = (
     ("four", 4.0, lambda L: 8 * (L - 1) ** 3, "8(L-1)^3"),
@@ -116,7 +116,7 @@ def check(name: str, ok: bool, detail: str = "") -> bool:
     """Record and print one gate.  The census gates compare recomputed integer
     counts exactly; the weight-law gates carry an additive-alternative floor, a
     shuffled-support rejector and a perturbed-operator rejector, so a wrong
-    magnitude rule cannot pass them."""
+    magnitude rule is rejected."""
     global N_PASS, N_FAIL
     ok = bool(ok)
     if ok:
@@ -285,9 +285,9 @@ def main() -> int:
           "{}".format(sorted(half_sig)))
     check("g06_full_signatures", tuple(sorted(full_sig)) == SIG_FULL,
           "realized full signatures {}".format(sorted(full_sig)))
-    check("g07_absent_signatures",
-          all(s not in full_sig and s not in half_sig for s in SIG_ABSENT),
-          "signatures {} are never realized".format(list(SIG_ABSENT)))
+    check("g07_signature_set_complete",
+          all(s not in full_sig and s not in half_sig for s in SIG_UNREALIZED),
+          "realized signature set is exactly {}".format(list(SIG_FULL)))
     check("g08_additive_rejector", min(add_gap) >= ADD_FLOOR,
           "additive alternative LT*sqrt(s_i+s_j) misses by at least "
           "{:.2f} where it differs".format(min(add_gap)))
@@ -381,8 +381,8 @@ def main() -> int:
     e_r = entries(Qr, cls, m, sup)
     bad = ~(e_r["isf"] | e_r["ish"])
     check("g25_ramp_rejector", int(bad.sum()) > 0,
-          "a site-graded diagonal ramp of height {:.1f}, which the relabelling "
-          "does not commute with, leaves {} entries outside the weight "
+          "a site-graded diagonal ramp of height {:.1f}, noncommuting with the "
+          "relabeling, leaves {} entries outside the weight "
           "law".format(PERT, int(bad.sum())))
 
     NOTES["weight_law"] = "|E_ij| = w * LT * sqrt(s_i s_j), w in (1, 1/2)"

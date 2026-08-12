@@ -1,4 +1,4 @@
-# Physical Assembly-Defect Weight Law and the Complete Census — Cycle 713
+# Physical Assembly-Defect Weight Classification and Complete Resolved-Entry Census — Cycle 713
 
 Date: 2026-08-02
 
@@ -8,6 +8,13 @@ Status: proposed_retained
 
 Authority: none. Audit status is set only by the independent audit lane; this
 note changes no axiom, approved primitive, premise registry, or policy surface.
+
+Primary runner:
+`scripts/physical_defect_weight_law_and_complete_census_cycle713_2026_08_02.py`;
+cached stdout:
+`logs/runner-cache/physical_defect_weight_law_and_complete_census_cycle713_2026_08_02.txt`;
+paired receipt:
+`outputs/physical_defect_weight_law_and_complete_census_cycle713_2026_08_02_receipt_2026-08-02.json`.
 
 Finite, recomputed statements about the landed
 Cycle-696 open-coframe endpoint compiler chain at box sizes L ∈ {3, 4, 5, 6, 7,
@@ -50,8 +57,8 @@ took the four magnitudes {2, 2·√2, 2·√3, 4} themselves as a measured menu 
 counted only the entries above the supplied cut 2.0e+00. This note extends the
 same finite scan to `L = 8, 9` and classifies the sub-cut population.
 
-This cycle derives the finite menu, classifies every remaining entry, and
-records the complete scanned census. Within the scanned compiler surface, the
+This cycle derives the finite menu, classifies every remaining resolved entry,
+and records the complete scanned census. Within the scanned compiler surface, the
 full-weight magnitude factorizes over the two coframe-leg lengths; a separate
 measured bit selects a half-weight subpopulation within the axis-axis
 signature. All statements below are recomputed from the landed compiler chain
@@ -64,8 +71,8 @@ templates on the open box, spatial edge classes, and the assembled static
 Hessian Q, with tick multiplier LT = 2 and central finite-difference step
 1.0e-04 as supplied compiler constants. Each coframe variable i carries a
 spatial direction vector v_i fixed by its edge class, with **support**
-s_i = |v_i|² ∈ {1, 2, 3}: support 1 for the three axis classes, 2 for the six
-face-diagonal classes, 3 for the body-diagonal class. Frames are the 24 proper
+s_i = |v_i|² ∈ {1, 2, 3}: support 1 for the three axis classes, 2 for the three
+admitted face-diagonal classes, 3 for the body-diagonal class. Frames are the 24 proper
 cubic rotations of the landed Cycle-576 table; the transport permutation Π_g is
 the bounding-box dof relabeling of Cycle 710, and the assembly defect is
 E_g = Π_g^T Q Π_g − Q. The six constant-sign frames (the sextet) have measured
@@ -76,7 +83,7 @@ not an exact-zero theorem. The census lives on the 18 mixed frames.
 
 - The open-box Cycle-696 compiler, its seven spatial edge classes, `LT = 2`,
   finite-difference step `1e-4`, and proper-frame table are supplied compiler
-  structure. This note does not derive their physical interpretation.
+  structure. Their physical interpretation remains inherited.
 - The strict comparison cut `2.0` and the two finite per-sign anchor counts
   `424` (`L = 3`) and `10680` (`L = 7`) are imported from Cycle 711 only as
   cross-check targets. The runner recomputes the entries that meet them.
@@ -101,9 +108,8 @@ below the numerical floor are outside the classification. Two facts sharpen it:
 - **Half weight is axis-locked.** The realized signature set of the w = 1/2
   population is exactly {(1, 1)} — half weight occurs on axis-by-axis pairs and
   nowhere else. Its magnitude is therefore always 1.0e+00.
-- **Three signatures are never realized.** The w = 1 population realizes exactly
-  the signatures (1,1), (1,2), (2,1), (1,3), (3,1), (2,2); the signatures
-  (2,3), (3,2), (3,3) carry no defect entry at any scanned frame or size.
+- **Full-weight signature support.** The realized signature set is exactly
+  {(1,1), (1,2), (2,1), (1,3), (3,1), (2,2)} at every scanned frame and size.
 
 Consequently the support signature determines the full-weight magnitude, while
 the extra measured weight bit distinguishes magnitudes 1 and 2 inside the
@@ -119,8 +125,8 @@ The law is not a fit to a plausible-looking form. The additive alternative
 LT·√(s_i + s_j) — which agrees at signature (2,2), where both read 4 — misses by
 at least 0.54 wherever the two differ. Swapping the axis and body-diagonal
 support assignments leaves 1656 entries outside the law at a single frame and
-size. A site-graded diagonal ramp on Q, which the relabeling does not commute
-with, leaves 272 entries outside it. A uniform diagonal shift, by contrast,
+size. A site-graded diagonal ramp on Q, noncommuting with the relabeling,
+leaves 272 entries outside it. A uniform diagonal shift, by contrast,
 leaves the defect exactly unchanged — the relabeling is a permutation, so a
 multiple of the identity cancels between the two terms of E_g.
 
@@ -172,8 +178,8 @@ The carrier size and support-signature partition are frame-independent: exactly
 and size. They are partitioned as 8 pairs of type (1,1), 7 each of types (1,2)
 and (2,1), 2 each of types (1,3) and (3,1), and 4 of type (2,2). The identities
 of the pairs form three frame-dependent carrier sets. Seven spatial classes
-admit 49 ordered pairs, so 19 pairs are absent at each frame; they are not a
-single universal set of 19.
+admit 49 ordered pairs, so the per-frame complement contains 19 pairs and
+varies with the carrier identity set.
 
 Scope limit: only the supplied open-box relabeling is executed. Alternative
 boundary re-anchorings and arbitrary box sizes remain outside this result.
@@ -201,9 +207,9 @@ Obligation graph:
    comparison.
 
 The strongest missing lemma is an arbitrary-size combinatorial derivation of
-the weight bit and descriptor counts from the stencil incidence rules. The
-finite `L = 3..9` theorem does not require that lemma; a universal polynomial
-or boundary-convention theorem would.
+the weight bit and descriptor counts from the stencil incidence rules. That
+lemma is needed only for a universal polynomial or boundary-convention theorem,
+outside the finite `L = 3..9` target.
 
 Degenerate and boundary cases: the smallest scanned box is `L = 3`; all 18
 mixed frames and every matrix entry above the declared numerical floor
@@ -213,12 +219,11 @@ numerical ceiling at `L = 3` and are not part of the weight census.
 ## Scope boundary
 
 - **The weight bit is measured, not derived.** Theorem I says that w ∈ {1, 1/2}
-  and that w = 1/2 occurs only on axis-by-axis pairs. It does not derive *which*
-  axis-axis entries take half weight or why that population splits while every
-  other realized signature carries only the full branch.
-- **The three absent signatures are a fact, not yet a mechanism.** That (2,3),
-  (3,2) and (3,3) never appear is a complete-scan statement over the sizes and
-  frames listed; the incidence reason is not given here.
+  and that w = 1/2 occurs only on axis-by-axis pairs. The selection of *which*
+  axis-axis entries take half weight and why that population splits while every
+  other realized signature carries only the full branch remains open.
+- **Signature-set completeness is measured.** The exact six-signature set is a
+  complete finite-scan statement; its incidence mechanism remains open.
 - **Signs are not classified.** The census is sign-balanced, and the magnitudes
   are fully determined, but which entry carries which sign is left to the
   Cycle-711 swap law and the Cycle-712 descriptor.
@@ -235,26 +240,24 @@ numerical ceiling at `L = 3` and are not part of the weight census.
 ## The next paths opened
 
 - **Derive the weight bit.** The half branch is exactly the axis-by-axis
-  signature and exactly the 16(L−1)² surface population — the same quadratic
+  signature and exactly the per-sign 16(L−1)² surface population — the same quadratic
   that carries the Cycle-712 wall family. Testing whether the half branch *is*
   the wall family, entry for entry, is a sharp finite question and would turn
   the weight bit into a positional statement.
-- **Derive the three absent signatures.** The face-diagonal-by-body-diagonal and
-  body-diagonal-by-body-diagonal pairs would carry magnitudes 2·√6 and 6. Their
-  absence is an incidence cancellation of the same kind the Cycle-711 stencil
-  computation resolved for the comparator, and is the natural next target for
-  that machinery.
+- **Derive the signature-set completeness.** A stencil-incidence account of
+  why the exact realized set stops at the six reported signatures is the
+  natural next target for the Cycle-711 machinery.
 - **Propagate the fitted leading density to the response floor.** The
   Cycle-709 minus-branch response-floor note
   `PHYSICAL_MINUS_BRANCH_RESPONSE_FLOOR_ASSEMBLY_DEFECT_LAW_CYCLE709_NOTE_2026-08-02`
   consumes the assembly defect through a solve. A finite defect census with a
   factorized magnitude law is a stronger input to a future floor-scaling law
   than an isolated measured count.
-- **Test the factorization against the source-side census.** The magnitude
-  factorizes over the two coframe legs, so it carries no direction-pair
-  correlation beyond the product of the leg lengths. Whether the same
-  factorization holds for the source-side edit sets is a direct question for the
-  Cycle-708 signed classification.
+- **Test the factorization against the source-side census.** The full-weight
+  magnitude factorizes over the two coframe-leg lengths, while the additional
+  half-weight bit remains positional. Whether the same two-part structure holds
+  for the source-side edit sets is a direct question for the Cycle-708 signed
+  classification.
 
 ## Relation to the interacting cycle
 
@@ -273,10 +276,10 @@ as a premise or numerical input here.
 — finite check, stdlib + numpy, self-contained against the Cycle-696 compiler
 chain. `AUDIT_INPUT_PATHS` declares that compiler and its four transitive
 script imports, and `AUDIT_TIMEOUT_SEC = 600`; no sibling cycle's numeric
-output is read. Gate groups: the numerical sextet ceiling and relabeling
-bijectivity; complete magnitude classification with zero unclassified entries and the
+output is read at runtime. Gate groups: the numerical sextet ceiling and
+relabeling bijectivity; complete magnitude classification with zero unclassified entries and the
 weight-law deviation ceiling; half-weight signature locking, realized full
-signatures, and absent signatures; the additive-law rejector, the full/half
+signatures and signature-set completeness; the additive-law rejector, the full/half
 separator, and the coincidence of the Cycle-712 cut with the weight split; sign
 balance and frame uniformity; the three census polynomials and the four
 magnitude polynomials at L = 3..9; held-out cubic extrapolation to L = 7, 8, 9;
@@ -302,12 +305,11 @@ non-linking because no result here depends on their claims.
 
 ## Review record
 
-Review removed the submitted universal statement that a boundary re-anchoring
-can change only the fitted quadratic/linear populations and therefore cannot
-remove the cubic population. The runner constructs no alternative transport,
+Review removed the submitted universal statement that every boundary
+re-anchoring preserves the fitted cubic population. The runner constructs no alternative transport,
 so that negative conclusion was unsupported. The durable result is the finite
-weight classification, finite per-frame carrier census, and polynomial agreement on the
-declared `L = 3..9` surface. Review also replaced an exact-zero claim for the
+weight classification, finite per-frame carrier census, and polynomial
+agreement on the declared `L = 3..9` surface. Review also replaced an exact-zero claim for the
 constant-sign sextet with the numerical ceiling actually gated at `L = 3`,
 made the `1e-9` resolved-entry floor explicit, and bound the runner cache to the
 complete transitive compiler-source closure. Independent audit remains required

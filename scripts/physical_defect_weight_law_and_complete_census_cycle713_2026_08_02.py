@@ -25,10 +25,11 @@ then holds at three polynomials, per mixed frame and frame-uniform:
     half weight, per sign : 16(L-1)^2
     nonzero entries       : 96(L-1)^3 + 48(L-1)^2 + 8(L-1)
 
-so the defect carries a bulk density of exactly 96 entries per unit cell, a
-surface term, and an edge term -- a re-anchoring of the box boundary can move
-at most the two subleading terms.  The cycle-711 cut at 2.0 is exactly the
-full/half separator (largest half magnitude 1, smallest full magnitude 2).
+so the finite census agrees with a cubic leading coefficient of 96, a
+quadratic term, and a linear term at the scanned sizes.  No alternative
+boundary re-anchoring is constructed or tested.  The cycle-711 cut at 2.0 is
+exactly the full/half separator (largest half magnitude 1, smallest full
+magnitude 2).
 The laws are fitted on L in {3, 4, 5, 6} and tested against L = 7, 8 and 9,
 which no earlier cycle measured, and against the landed cycle-711 per-sign
 census totals at L = 3 and L = 7.  All computational identities below are
@@ -54,6 +55,18 @@ _MODULE = HERE / "physical_open_coframe_k_endpoint_compiler_cycle696_2026_07_25.
 _SPEC = importlib.util.spec_from_file_location("c696_compiler_for_c713", _MODULE)
 c696 = importlib.util.module_from_spec(_SPEC)
 _SPEC.loader.exec_module(c696)
+
+# The complete repository-source closure used by the imported Cycle-696
+# compiler.  The cache binds these bytes so a transitive compiler change makes
+# this result stale instead of silently reusing old output.
+AUDIT_INPUT_PATHS = (
+    "scripts/physical_open_coframe_k_endpoint_compiler_cycle696_2026_07_25.py",
+    "scripts/physical_dynamical_metric_source_law_bridge_tournament_cycle576_2026_07_22.py",
+    "scripts/physical_dynamical_metric_source_law_bridge_cycle576_regge_support_2026_07_22.py",
+    "scripts/physical_dynamical_metric_source_law_bridge_cycle576_plaquette_support_2026_07_22.py",
+    "scripts/frontier_cubic_coxeter_regge_second_variation_3plus1_2026_06_09.py",
+)
+AUDIT_TIMEOUT_SEC = 600
 
 FRAMES = [np.asarray(m, dtype=np.int64) for m in c696.c576.FRAMES]
 SPC = tuple(c696.SPATIAL_CLASSES)
@@ -253,8 +266,8 @@ def main() -> int:
         mag_counts[L] = {n: mag[n] // (2 * len(mixed)) for n, _, _, _ in MAG_LAW}
         del Q, model
 
-    check("g01_sextet_defect_zero", sextet_max < SEXTET_BOUND,
-          "max defect below {} on all {} constant-sign frames".format(
+    check("g01_sextet_defect_ceiling", sextet_max < SEXTET_BOUND,
+          "measured max defect below {} on all {} constant-sign frames at L=3".format(
               fmt(SEXTET_BOUND), len(sextet)))
     check("g02_frame_relabel_bijective", perm_ok,
           "frame relabelling is a permutation of the coframe variables")

@@ -2,28 +2,50 @@
 
 **Claim type: bounded_theorem.** Finite, recomputed statements about the landed
 Cycle-696 open-coframe endpoint compiler chain at box sizes L ∈ {3, 4, 5, 6, 7,
-8, 9}. The magnitude law, its support-signature resolution, the closed-form
-census polynomials, and the codimension grading are exact finite statements
+8, 9}. The magnitude law, its support-signature resolution, the finite census
+values, and their polynomial agreement are bounded computational statements
 verified by complete scan over all 18 mixed frames; the identification of the
 compiler chain with the static spatial sector is inherited, not re-derived here.
 
-## What Cycles 711 and 712 left open
+```yaml
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: "derive the finite weight split and support-signature mechanism, then prove any arbitrary-size counting extension rather than inferring it from seven boxes"
+source_of_blocker_text: strongest_missing_lemma
+reachability_to_target: supports
+artifact_role: runner_certificate
+next_trace_action: "derive the half-weight incidence mechanism and an arbitrary-L descriptor-count theorem, then test alternative transport definitions separately"
+```
 
-The Cycle-711 exact stencil swap law (stem
-`PHYSICAL_MIXED_FRAME_COMPARATOR_EXACT_STENCIL_SWAP_LAW_CYCLE711_NOTE_2026-08-02`,
-in flight) derived the mixed-frame comparator −4 exactly and recorded its
-per-sign census as measured, not derived. The Cycle-712 family law (stem
-`PHYSICAL_MIXED_FRAME_DEFECT_CENSUS_FAMILY_LAW_CYCLE712_NOTE_2026-08-02`, in
-flight) derived those counts from a positional box-descriptor mechanism, but
-took the four magnitudes {2, 2·√2, 2·√3, 4} themselves as a measured menu, and
-counted only the entries above the supplied cut 2.0e+00 — the sub-cut
-population was never classified at all.
+```yaml
+actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
+trace_class: upstream_support
+reachability_to_target: supports
+conditional_surface_status: "Complete finite scan of the supplied Cycle-696 compiler at L in {3,...,9}; polynomial and factorization statements are not extended beyond that enumerated domain."
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: "the runner exhausts the declared finite frame-size surface, while the compiler identification, floating finite-difference values, arbitrary-size law, and alternative boundary transports are not derived here"
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```
 
-This cycle derives the menu, classifies every remaining entry, and gives the
-census in closed form. The magnitude of a defect entry is a function of the two
-edge classes it connects, and of nothing else: it factorizes over the two
-coframe legs. All statements below are computational identities of the landed
-compiler chain, recomputed in this cycle's runner.
+## Finite targets inherited from Cycles 711 and 712
+
+The [Cycle-711 exact stencil swap law](PHYSICAL_MIXED_FRAME_COMPARATOR_EXACT_STENCIL_SWAP_LAW_CYCLE711_NOTE_2026-08-02.md)
+derived the mixed-frame comparator −4 exactly at `L in {3, 7}` and recorded its
+per-sign census as measured, not derived. The
+[Cycle-712 finite family census](PHYSICAL_MIXED_FRAME_DEFECT_CENSUS_FAMILY_LAW_CYCLE712_NOTE_2026-08-02.md)
+derived the `L = 3..7` counts from a positional box-descriptor mechanism, but
+took the four magnitudes {2, 2·√2, 2·√3, 4} themselves as a measured menu and
+counted only the entries above the supplied cut 2.0e+00. This note extends the
+same finite scan to `L = 8, 9` and classifies the sub-cut population.
+
+This cycle derives the finite menu, classifies every remaining entry, and
+records the complete scanned census. Within the scanned compiler surface, the
+magnitude of a defect entry is a function of the two edge classes it connects:
+it factorizes over the two coframe legs. All statements below are recomputed
+from the landed compiler chain in this cycle's runner.
 
 ## Setup
 
@@ -36,9 +58,9 @@ s_i = |v_i|² ∈ {1, 2, 3}: support 1 for the three axis classes, 2 for the six
 face-diagonal classes, 3 for the body-diagonal class. Frames are the 24 proper
 cubic rotations of the landed Cycle-576 table; the transport permutation Π_g is
 the bounding-box dof relabeling of Cycle 710, and the assembly defect is
-E_g = Π_g^T Q Π_g − Q. The six constant-sign frames (the sextet) have defect
-ceiling below 1.0e-09 and are exact zeros; the census lives on the 18 mixed
-frames.
+E_g = Π_g^T Q Π_g − Q. The six constant-sign frames (the sextet) have measured
+defect ceiling below 1.0e-09 at the probed `L = 3`; this is a numerical gate,
+not an exact-zero theorem. The census lives on the 18 mixed frames.
 
 ## Theorem I — the weight law
 
@@ -55,7 +77,7 @@ entries scanned, and **zero** entries left unclassified. Two facts sharpen it:
   nowhere else. Its magnitude is therefore always 1.0e+00.
 - **Three signatures are never realized.** The w = 1 population realizes exactly
   the signatures (1,1), (1,2), (2,1), (1,3), (3,1), (2,2); the signatures
-  (2,3), (3,2), (3,3) carry no defect entry at any frame or size.
+  (2,3), (3,2), (3,3) carry no defect entry at any scanned frame or size.
 
 Consequently the magnitude is determined by the support signature alone, and the
 Cycle-712 menu is the list of values LT·√(s_i s_j) that the realized signatures
@@ -74,10 +96,10 @@ with, leaves 272 entries outside it. A uniform diagonal shift, by contrast,
 leaves the defect exactly unchanged — the relabeling is a permutation, so a
 multiple of the identity cancels between the two terms of E_g.
 
-## Theorem II — the complete census in closed form
+## Theorem II — the complete finite census and polynomial agreement
 
-Per mixed frame, and identically for all 18 of them, the counts are exact
-polynomials in the box size:
+Per mixed frame, and identically for all 18 of them, the counts agree with the
+following integer polynomials at every scanned size `L = 3..9`:
 
 | population | per sign | L = 3 … 9 |
 |---|---|---|
@@ -85,9 +107,9 @@ polynomials in the box size:
 | half weight | 16(L−1)² | 64, 144, 256, 400, 576, 784, 1024 |
 | all nonzeros (both signs) | 96(L−1)³ + 48(L−1)² + 8(L−1) | 976, 3048, 6944, 13240, 22512, 35336, 52288 |
 
-Plus and minus counts are equal for both weights at every size and frame. The
-magnitude-resolved census follows from Theorem I, one polynomial per magnitude,
-per sign:
+Plus and minus counts are equal for both weights at every scanned size and
+frame. The magnitude-resolved finite census agrees with one integer polynomial
+per magnitude and sign at every scanned size:
 
 | magnitude | signature | per sign |
 |---|---|---|
@@ -109,28 +131,56 @@ polynomials reproduce the landed Cycle-711 per-sign census totals 424 at L = 3
 and 10680 at L = 7, and — after the two magnitudes 2·√2 and 2·√3 are merged, as
 the Cycle-711 rounded buckets merge them — its bucket composition as well.
 
-## Theorem III — codimension grading and the carrier
+## Finite polynomial grading and the carrier
 
-The three polynomial degrees are the three codimensions of the box. The leading
-term is a bulk density: **96 nonzero defect entries per unit cell per mixed
-frame**, 48 per sign, independent of L. The quadratic term 48(L−1)² is a surface
-population and the linear term 8(L−1) an edge population; in the Cycle-712
-box-descriptor language the degree is 3 minus the number of pinned axes, so the
-wall family sits at degree 2 and the edge family at degree 1.
+The finite fits have cubic, quadratic, and linear terms. On the scanned boxes,
+their Cycle-712 descriptor interpretation is respectively unpinned,
+one-axis-pinned, and two-axis-pinned populations. The leading coefficient is
+96 nonzero defect entries per unit-cell factor `(L-1)^3` per mixed frame, 48
+per sign; the fitted subleading terms are `48(L-1)^2` and `8(L-1)`.
 
 The carrier is small and frame-independent: exactly **30 ordered edge-class
-pairs** carry full-weight entries, at every frame and every size, partitioned by
-support signature as 8 pairs of type (1,1), 7 each of types (1,2) and (2,1), 2
-each of types (1,3) and (3,1), and 4 of type (2,2). Seven spatial classes admit
-49 ordered pairs; 19 of them never carry a defect entry.
+pairs** carry full-weight entries at every scanned frame and size. They are
+partitioned by support signature as 8 pairs of type (1,1), 7 each of types
+(1,2) and (2,1), 2 each of types (1,3) and (3,1), and 4 of type (2,2). Seven
+spatial classes admit 49 ordered pairs; 19 of them never carry a defect entry.
 
-The bulk-extensivity statement has a direct consequence for the transport
-question. A re-anchoring of the transport at the box boundary can move at most
-the surface and edge populations, 48(L−1)² + 8(L−1) entries per frame. The
-bulk term 96(L−1)³ is untouched by any boundary convention, so the assembly
-defect is not a boundary artifact of the open box at any size.
+Scope limit: only the supplied open-box relabeling is executed. Alternative
+boundary re-anchorings and arbitrary box sizes remain outside this result.
 
-## Boundary — what this cycle does not establish
+## Exact target and proof obligations
+
+**Exact target.** For the imported Cycle-696 open-box compiler at each
+`L in {3,...,9}`, classify every numerically nonzero entry of `E_g` at all 18
+mixed frames by the two-leg weight menu; report the complete finite counts,
+their agreement with the displayed integer polynomials, and the finite carrier
+census.
+
+Obligation graph:
+
+1. The 18 analyzed maps are bijective label relabelings: checked exactly by
+   integer permutation enumeration at every scanned size.
+2. Every entry above the declared `1e-9` numerical floor belongs to exactly one
+   weight branch within `2e-7`: checked exhaustively over 2,418,192 entries.
+3. The frame-uniform sign, magnitude, and carrier censuses equal the displayed
+   formulas at all seven sizes: checked by exact integer comparison after the
+   finite floating classification.
+4. Arbitrary-`L` extension remains open. Four sizes determine each cubic and
+   three held-out sizes test it, but finite interpolation is not induction.
+5. Alternative boundary transports remain open and are outside the executed
+   comparison.
+
+The strongest missing lemma is an arbitrary-size combinatorial derivation of
+the weight bit and descriptor counts from the stencil incidence rules. The
+finite `L = 3..9` theorem does not require that lemma; a universal polynomial
+or boundary-convention theorem would.
+
+Degenerate and boundary cases: the smallest scanned box is `L = 3`; all 18
+mixed frames and every nonzero matrix entry above the declared numerical floor
+are included. The six constant-sign frames are checked separately only for a
+numerical ceiling at `L = 3` and are not part of the weight census.
+
+## Scope boundary
 
 - **The weight bit is measured, not derived.** Theorem I says that w ∈ {1, 1/2}
   and that w = 1/2 occurs exactly on axis-by-axis pairs. It does not derive
@@ -145,6 +195,9 @@ defect is not a boundary artifact of the open box at any size.
 - **Finite scan, not induction.** The polynomials are verified at seven sizes,
   three of them held out from the fit. That is strong evidence and a clean
   extrapolation, not a proof for all L.
+- **Alternative transports remain open.** The scan uses one supplied open-box
+  relabeling. Other re-anchorings and interior-changing transport definitions
+  are outside the executed comparison.
 - **This is the static spatial sector.** No dynamical or interacting statement
   is made, and no claim about the wrapped stencil, which the Cycle-696 header
   places outside the executed path.
@@ -161,12 +214,11 @@ defect is not a boundary artifact of the open box at any size.
   absence is an incidence cancellation of the same kind the Cycle-711 stencil
   computation resolved for the comparator, and is the natural next target for
   that machinery.
-- **Propagate the bulk density to the response floor.** The Cycle-709
-  minus-branch floor (stem
-  `PHYSICAL_MINUS_BRANCH_RESPONSE_FLOOR_ASSEMBLY_DEFECT_LAW_CYCLE709_NOTE_2026-08-02`,
-  in flight) consumes the assembly defect through a solve. A defect with an
-  exact bulk density and a factorized magnitude law is a much stronger input to
-  a floor-scaling law than a measured count was.
+- **Propagate the fitted leading density to the response floor.** The
+  [Cycle-709 minus-branch response-floor note](PHYSICAL_MINUS_BRANCH_RESPONSE_FLOOR_ASSEMBLY_DEFECT_LAW_CYCLE709_NOTE_2026-08-02.md)
+  consumes the assembly defect through a solve. A finite defect census with a
+  factorized magnitude law is a stronger input to a future floor-scaling law
+  than an isolated measured count.
 - **Test the factorization against the source-side census.** The magnitude
   factorizes over the two coframe legs, so it carries no direction-pair
   correlation beyond the product of the leg lengths. Whether the same
@@ -176,22 +228,22 @@ defect is not a boundary artifact of the open box at any size.
 ## Relation to the interacting cycle
 
 This cycle stays inside the static spatial sector of the landed 3+1 module. The
-frame sextet that carries the exact zeros of the weight law is the same
+frame sextet that carries the numerical near-zero ceiling is the same
 constant-sign sextet whose source-stabilizer role is analyzed in
 [PHYSICAL_SOURCE_STABILIZER_COSET_COLLAPSE_K_SIGN_LAW_CYCLE707_NOTE_2026-08-01](PHYSICAL_SOURCE_STABILIZER_COSET_COLLAPSE_K_SIGN_LAW_CYCLE707_NOTE_2026-08-01.md);
-the in-flight Cycle-708 classification (stem
-`PHYSICAL_SOURCE_EDIT_SET_SIGNED_STABILIZER_CLASSIFICATION_CYCLE708_NOTE_2026-08-02`)
-maps the same boundary at the signed level, and the in-flight Cycle-710
-covariance-boundary census (stem
-`PHYSICAL_ASSEMBLY_DEFECT_COCYCLE_LAW_AND_COVARIANCE_BOUNDARY_CYCLE710_NOTE_2026-08-02`)
-supplied the defect object this cycle now classifies completely.
+the landed Cycle-708 classification is complementary source-side context. The
+[Cycle-710 finite assembly-defect cocycle and mixed-frame comparator](PHYSICAL_ASSEMBLY_DEFECT_COCYCLE_AND_MIXED_FRAME_COMPARATOR_CYCLE710_NOTE_2026-08-02.md)
+supplied the finite defect object this cycle classifies. Cycle 708 is not used
+as a premise or numerical input here.
 
 ## Runner
 
 `scripts/physical_defect_weight_law_and_complete_census_cycle713_2026_08_02.py`
-— class-A finite check, stdlib + numpy, self-contained against the Cycle-696
-compiler chain. Gate groups: sextet exact zeros and relabeling bijectivity;
-complete magnitude classification with zero unclassified entries and the
+— finite check, stdlib + numpy, self-contained against the Cycle-696 compiler
+chain. `AUDIT_INPUT_PATHS` declares that compiler and its four transitive
+script imports, and `AUDIT_TIMEOUT_SEC = 600`; no sibling cycle's numeric
+output is read. Gate groups: the numerical sextet ceiling and relabeling
+bijectivity; complete magnitude classification with zero unclassified entries and the
 weight-law deviation ceiling; half-weight signature locking, realized full
 signatures, and absent signatures; the additive-law rejector, the full/half
 separator, and the coincidence of the Cycle-712 cut with the weight split; sign

@@ -14,8 +14,8 @@
     25120
   ],
   "gates": {
-    "g01_sextet_defect_zero": {
-      "detail": "max defect below 1.0e-09 on all 6 constant-sign frames",
+    "g01_sextet_defect_ceiling": {
+      "detail": "measured max defect below 1.0e-09 on all 6 constant-sign frames at L=3",
       "pass": true
     },
     "g02_frame_relabel_bijective": {

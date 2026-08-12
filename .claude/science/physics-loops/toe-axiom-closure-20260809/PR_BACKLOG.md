@@ -1009,9 +1009,10 @@ audit verdict, or `review-loop` changes. Landing order adds #6146 after #6145.
 
 ## Block 54
 
-The pending Block-54 PR
+PR #6147
 (`physics-loop/toe-axiom-closure-block54-perfect-action-gate-20260812`) is
-stacked exactly on Block-53 delivery head `b1b6f20b34`. Its distinct review
+open, mergeable, and `CLEAN`, stacked exactly on Block-53 delivery head
+`b1b6f20b34`. Its distinct review
 object is the reconstructed sourced curved Regge Hessian, exhaustive
 flat-rank-eleven versus sourced-rank-fifteen contrast over 2,254 modes, direct
 inherited-generator Ward loss, differentiated Noether scope correction, and

@@ -2494,6 +2494,6 @@ instance or Fourier census.
   Python/cache, claim typing, whitespace, forensic readiness, and enforced
   graph/link invariants pass. The full pipeline reaches only the inherited
   stage-7 dependency-policy epoch mismatch.
-- Science commit is `d2bb8e1c26`; the PR is pending on exact Block-53 delivery
-  `b1b6f20b34`. No canonical edit, fixed percentage, audit verdict, or
-  `review-loop` occurs.
+- Science commit is `d2bb8e1c26`; PR #6147 is open, mergeable, and `CLEAN` on
+  exact Block-53 delivery `b1b6f20b34`. No canonical edit, fixed percentage,
+  audit verdict, or `review-loop` occurs.

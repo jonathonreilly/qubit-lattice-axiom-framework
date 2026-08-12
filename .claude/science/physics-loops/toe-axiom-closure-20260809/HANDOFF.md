@@ -2119,9 +2119,9 @@ mutations each fail exactly one check. Citation registration is
 `5,500/15,753`, out-degree three. Vocabulary, strict lint, premise purity,
 Python/cache, claim typing, whitespace, forensic N5, and graph/link gates
 pass. The full pipeline reaches only the inherited stage-7 dependency-policy
-epoch mismatch. Science commit is `d2bb8e1c26`; PR is pending. Independent
-audit remains required. No canonical axiom, fixed TOE percentage, audit
-verdict, or `review-loop` changes.
+epoch mismatch. Science commit is `d2bb8e1c26`; PR #6147 is open, mergeable,
+and `CLEAN`. Independent audit remains required. No canonical axiom, fixed TOE
+percentage, audit verdict, or `review-loop` changes.
 
 The campaign policy changes here. Blocks ship only for an actual lane move,
 an exact axiom-choice packet, or decisive failure of a live high-value route.

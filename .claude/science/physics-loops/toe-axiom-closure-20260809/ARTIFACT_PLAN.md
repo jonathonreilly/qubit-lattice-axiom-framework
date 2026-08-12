@@ -1362,7 +1362,8 @@ complete conditional nonlinear compact solution:
   out-degree three; vocabulary, strict lint, premise purity, Python/cache,
   claim typing, whitespace, forensic N5, and enforced graph/link checks pass;
   the full pipeline reaches only the inherited stage-7 dependency-policy epoch
-  mismatch; no TOE percentage moves and independent audit remains required
+  mismatch; PR #6147 is open, mergeable, and `CLEAN`; no TOE percentage moves
+  and independent audit remains required
 - next artifact: one 90-minute construction attempt at a source-complete
   discrete Noether connection or controlled improved/perfect/Pachner move. If
   it cannot directly move a lane or force an exact axiom choice, pivot to the

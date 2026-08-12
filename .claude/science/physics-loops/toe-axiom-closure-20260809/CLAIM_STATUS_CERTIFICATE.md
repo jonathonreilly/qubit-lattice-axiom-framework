@@ -1781,7 +1781,8 @@ lines are in the landing primary cache.
   flat-rank, and note-number mutations each fail one check; graph
   `5,500/15,753`, out-degree three. Vocabulary, strict lint, premise purity,
   Python/cache, claim typing, whitespace, forensic N5, and enforced graph/link
-  invariants pass. Science commit is `d2bb8e1c26`.
+  invariants pass. Science commit is `d2bb8e1c26`; PR #6147 is open,
+  mergeable, and `CLEAN` on exact Block-53 delivery `b1b6f20b34`.
 - Scope: one finite-inventory route-decision theorem, not a complete nonlinear
   constraint algebra, selected law, physical state, full-`Z^3` theorem, axiom
   amendment, TOE percentage movement, or audit verdict. Fresh N1--N8 and all

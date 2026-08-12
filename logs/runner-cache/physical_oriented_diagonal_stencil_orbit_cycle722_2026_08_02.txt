@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/physical_oriented_diagonal_stencil_orbit_cycle722_2026_08_02.py
-runner_sha256: a8a1de847005172b6aafb4e9d90270e458f96c58bf241b8d26feef6860510c1b
+runner_sha256: c8885d0f270eddaa0c070134c0b99604c7cd77d26b231ab6f13e741a669a2e93
 input_fingerprint_sha256: f16228dfa22ac9810d4cc316446c432694b1b6d39236992c2bac39c9cf2f5eab
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 22.31
+elapsed_sec: 22.51
 status: ok
 ----- stdout -----
 Cycle 722 -- oriented body diagonal of the assembly stencil

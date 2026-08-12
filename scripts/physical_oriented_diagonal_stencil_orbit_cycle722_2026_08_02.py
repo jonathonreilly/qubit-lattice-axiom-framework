@@ -26,8 +26,8 @@ from it, and the tick-resolved assembly is required to contract onto its static 
 import importlib.util
 import itertools
 import json
-import os
 import sys
+from pathlib import Path
 
 import numpy as np
 
@@ -40,14 +40,14 @@ AUDIT_INPUT_PATHS = (
 )
 AUDIT_TIMEOUT_SEC = 300
 
-HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = os.path.dirname(HERE)
-C696 = os.path.join(HERE, "physical_open_coframe_k_endpoint_compiler_cycle696_2026_07_25.py")
+HERE = Path(__file__).resolve().parent
+ROOT = HERE.parent
+C696 = HERE / "physical_open_coframe_k_endpoint_compiler_cycle696_2026_07_25.py"
 
 _spec = importlib.util.spec_from_file_location("c696", C696)
 m = importlib.util.module_from_spec(_spec)
-sys.path.insert(0, ROOT)
-sys.path.insert(0, HERE)
+sys.path.insert(0, str(ROOT))
+sys.path.insert(0, str(HERE))
 _spec.loader.exec_module(m)
 
 regge = m.regge
@@ -581,8 +581,8 @@ RECEIPT["orientation_class_determinant_splits"] = {
 RECEIPT["oriented_labels"] = 8
 RECEIPT["line_labels"] = 4
 RECEIPT["temporal_drop_floor"] = 1.0
-with open(os.path.join(ROOT, "outputs",
-                       "physical_oriented_diagonal_stencil_orbit_cycle722_2026_08_02_receipt_2026-08-02.json"),
+with open(ROOT / "outputs" /
+          "physical_oriented_diagonal_stencil_orbit_cycle722_2026_08_02_receipt_2026-08-02.json",
           "w") as fh:
     json.dump(RECEIPT, fh, indent=2, sort_keys=True)
     fh.write("\n")

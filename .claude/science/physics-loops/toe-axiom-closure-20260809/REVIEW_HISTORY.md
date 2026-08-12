@@ -2555,6 +2555,6 @@ instance or Fourier census.
   `5,502/15,759`, out-degree four. Vocabulary, strict lint, premise purity,
   Python/cache, claim typing, whitespace, forensic N5, and enforced graph/link
   invariants pass.
-- Science commit is `20debf55ee`; PR pending on exact Block-55 delivery
-  `52f55f0021`. No canonical edit, fixed percentage, audit verdict, or
-  `review-loop` occurs.
+- Science commit is `20debf55ee`; PR #6149 is open, mergeable, and `CLEAN` on
+  exact Block-55 delivery `52f55f0021`. No canonical edit, fixed percentage,
+  audit verdict, or `review-loop` occurs.

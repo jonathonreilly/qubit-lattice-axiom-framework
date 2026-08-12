@@ -1419,7 +1419,8 @@ complete conditional nonlinear compact solution:
 - current evidence: science commit `20debf55ee`; graph `5,502/15,759`,
   out-degree four; vocabulary, strict lint, premise purity, Python/cache, claim
   typing, whitespace, fresh N1--N8/N5, and enforced graph/link checks pass;
-  PR pending; no TOE percentage moves and independent audit remains required
+  PR #6149 is open, mergeable, and `CLEAN`; no TOE percentage moves and
+  independent audit remains required
 - next artifact: portfolio re-check Root A against the remaining Root-B
   lineage. Ship only one exact joint-law selection/uniqueness result or the
   minimal complete extensional axiom delta; do not produce another carrier,

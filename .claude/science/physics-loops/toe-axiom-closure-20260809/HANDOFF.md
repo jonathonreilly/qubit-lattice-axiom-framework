@@ -2190,9 +2190,9 @@ Primary/cache is `PASS=8 FAIL=0`; decoder-rank, carrier-cardinality, and
 note-boundary mutations each fail exactly one check. Citation registration is
 `5,502/15,759`, out-degree four. Vocabulary, strict lint, premise purity,
 Python/cache, claim typing, whitespace, fresh N1--N8/N5, and graph/link gates
-pass. Science commit is `20debf55ee`; PR pending. Independent audit remains
-required. No canonical axiom, fixed TOE percentage, audit verdict, or
-`review-loop` changes.
+pass. Science commit is `20debf55ee`; PR #6149 is open, mergeable, and
+`CLEAN`. Independent audit remains required. No canonical axiom, fixed TOE
+percentage, audit verdict, or `review-loop` changes.
 
 Re-rank now. The only qualifying next results are either one exact joint law
 or uniqueness theorem binding this action/decoder/compiler to Root-A

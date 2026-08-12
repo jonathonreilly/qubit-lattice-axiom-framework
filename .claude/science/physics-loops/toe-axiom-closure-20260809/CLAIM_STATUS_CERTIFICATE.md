@@ -1833,7 +1833,8 @@ lines are in the landing primary cache.
   carrier-cardinality, and note-boundary mutations each fail exactly one
   check; graph `5,502/15,759`, out-degree four. Vocabulary, strict lint,
   premise purity, Python/cache, claim typing, whitespace, N5, and enforced
-  graph/link invariants pass. Science commit is `20debf55ee`; PR pending.
+  graph/link invariants pass. Science commit is `20debf55ee`; PR #6149 is
+  open, mergeable, and `CLEAN` on exact Block-55 delivery `52f55f0021`.
 - Scope: one finite exact capacity theorem and current-axiom two-completion
   witness, not a selected internal action, physical Record vector, sector
   compiler, chirality or gravity sign, joint law, axiom amendment, TOE

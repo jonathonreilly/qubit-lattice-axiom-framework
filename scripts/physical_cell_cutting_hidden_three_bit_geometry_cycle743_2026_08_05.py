@@ -1,18 +1,99 @@
-"""Cycle 743: the hidden three-bit geometry of the cell-cutting system.
+"""Cycle 743: a finite affine action in a supplied cutting-incidence system.
 
 Rebuilds the incidence table of the 15800 cuttings on 192 pieces, the eight
 readings, the 48 cutting permutations and the two extra incidence
-automorphisms of the previous cycle, then computes the full extended group,
-its canonical partition of the pieces into eight blocks, and the affine
-three-bit structure of the induced action on those blocks. Every quantity is
-recomputed from the rebuilt machinery and compared with a pinned expectation.
-Output stays under 5500 characters.
+automorphisms of the previous cycle, then computes their generated group,
+its unique E-invariant cutting-support partition of the pieces into eight
+blocks, and the affine three-bit structure of the induced action on those
+blocks.  The partition is canonical only relative to the explicitly generated
+finite group E; it is not asserted to be intrinsic to the incidence table or
+to a physical model.  Every quantity is recomputed from the rebuilt machinery
+and compared with a pinned expectation.  Failed gates write a failing receipt
+and exit nonzero.  Output stays under 5500 characters.
 """
+import copy
+import hashlib
 import itertools
+import json
+import resource
+import sys
+import time
+from pathlib import Path
 
 import numpy as np
 
 PF = [0, 0]
+GATES = []
+OUT = [0]
+T0 = time.time()
+
+ROOT = Path(__file__).resolve().parents[1]
+NOTE_PATH = "docs/PHYSICAL_CELL_CUTTING_HIDDEN_THREE_BIT_GEOMETRY_CYCLE743_NOTE_2026-08-05.md"
+CHECKER_PATH = (
+    "scripts/physical_cell_cutting_hidden_three_bit_geometry_cycle743_"
+    "independent_check_2026_08_05.py"
+)
+C742_NOTE_PATH = "docs/PHYSICAL_CELL_CUTTING_SIXTEEN_ATTAINED_CYCLE742_NOTE_2026-08-05.md"
+C742_RUNNER_PATH = "scripts/physical_cell_cutting_sixteen_attained_cycle742_2026_08_05.py"
+C742_CHECKER_PATH = (
+    "scripts/physical_cell_cutting_sixteen_attained_cycle742_"
+    "independent_check_2026_08_05.py"
+)
+C742_RECEIPT_PATH = (
+    "outputs/physical_cell_cutting_sixteen_attained_cycle742_2026_08_05_"
+    "receipt_2026-08-05.json"
+)
+C742_INDEPENDENT_RECEIPT_PATH = (
+    "outputs/physical_cell_cutting_sixteen_attained_cycle742_independent_check_"
+    "2026_08_05_receipt_2026-08-05.json"
+)
+RECEIPT_PATH = ROOT / (
+    "outputs/physical_cell_cutting_hidden_three_bit_geometry_cycle743_2026_08_05_"
+    "receipt_2026-08-05.json"
+)
+AUDIT_INPUT_PATHS = (
+    NOTE_PATH,
+    CHECKER_PATH,
+    C742_NOTE_PATH,
+    C742_RUNNER_PATH,
+    C742_CHECKER_PATH,
+    C742_RECEIPT_PATH,
+    C742_INDEPENDENT_RECEIPT_PATH,
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+)
+AUDIT_TIMEOUT_SEC = 900
+
+RECEIPT_PATH.write_text(json.dumps({
+    "schema": "physical-cell-cutting-hidden-three-bit-geometry-cycle743-v2",
+    "status": "fail",
+    "claim_type": "bounded_theorem",
+    "reason": "runner has not completed",
+}, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+
+
+def file_sha256(path):
+    return hashlib.sha256((ROOT / path).read_bytes()).hexdigest()
+
+
+def canonical_perm_sha256(perm):
+    """Hash compatible with Cycle 742's canonical JSON permutation payload."""
+    payload = json.dumps([int(value) for value in perm], separators=(",", ":"))
+    return hashlib.sha256(payload.encode("utf-8")).hexdigest()
+
+
+def receipt_inputs_current(receipt):
+    """Require every source path declared by a predecessor to remain byte-current."""
+    recorded = receipt.get("input_sha256", {})
+    return bool(recorded) and all(
+        (ROOT / path).is_file() and recorded[path] == file_sha256(path)
+        for path in recorded
+    )
+
+
+with (ROOT / C742_RECEIPT_PATH).open(encoding="utf-8") as handle:
+    C742_RECEIPT = json.load(handle)
+with (ROOT / C742_INDEPENDENT_RECEIPT_PATH).open(encoding="utf-8") as handle:
+    C742_INDEPENDENT_RECEIPT = json.load(handle)
 
 
 def emit(s):
@@ -21,14 +102,17 @@ def emit(s):
     if ("9" + "9") in txt:
         raise ValueError("barred digit pair in output")
     print(txt)
+    OUT[0] += len(txt) + 1
 
 
 def gate(ok, n, name, got, exp=None):
     """record and print one gate: computed value first, pinned value after"""
-    PF[0 if ok else 1] += 1
+    passed = bool(ok)
+    PF[0 if passed else 1] += 1
+    GATES.append((str(n), passed))
     tail = "" if exp is None else " exp {0}".format(exp)
     emit("G{0} {1}: {2}{3} -> {4}".format(n, name, got, tail,
-                                          "PASS" if ok else "FAIL"))
+                                          "PASS" if passed else "FAIL"))
 
 
 def cshow(c):
@@ -184,6 +268,13 @@ for i, s in enumerate(SOL):
     BITS[i] = v
 INCL = INC.astype(np.int64)
 NP = NPO
+CTUP = [tuple(sorted(int(c) for c in UNI[USED[a]])) for a in range(NPO)]
+canonical_incidence_rows_sha256 = hashlib.sha256(
+    b"".join(sorted(bytes(row) for row in np.packbits(INC, axis=1)))
+).hexdigest()
+support_column_order_sha256 = hashlib.sha256(
+    json.dumps(CTUP, separators=(",", ":")).encode("utf-8")
+).hexdigest()
 
 PK = np.packbits(INC, axis=1)
 LUT = np.array([bin(i).count("1") for i in range(256)], dtype=np.uint8)
@@ -192,8 +283,10 @@ SZG = [4]
 EA = dict((k, []) for k in SZC)
 EB = dict((k, []) for k in SZC)
 DIS = dict((k, set()) for k in SZG)
+PROCESSED_PAIR_ROWS = 0
 for lo in range(0, NS, 200):
-    hi = min(lo + 100, NS)
+    hi = min(lo + 200, NS)
+    PROCESSED_PAIR_ROWS += hi - lo
     d = LUT[np.bitwise_xor(PK[lo:hi, None, :], PK[None, :, :])].sum(axis=2,
                                                                    dtype=np.int16)
     for k in SZC:
@@ -435,6 +528,36 @@ OK1, b1 = build_pi(cb1)
 SG0, sg0 = row_perm(b0)
 SG1, sg1 = row_perm(b1)
 
+def dependency_contract(primary, independent):
+    identity = primary.get("incidence_identity", {})
+    automorphisms = primary.get("automorphism_certificates", {})
+    cert0 = automorphisms.get("b0", {})
+    cert1 = automorphisms.get("b1", {})
+    return (
+        primary.get("schema") == "physical-cell-cutting-sixteen-attained-cycle742-v2"
+        and primary.get("status") == "pass"
+        and primary.get("gates", {}).get("fail") == 0
+        and primary.get("runner_sha256") == file_sha256(C742_RUNNER_PATH)
+        and receipt_inputs_current(primary)
+        and independent.get("schema")
+        == "physical-cell-cutting-sixteen-attained-cycle742-independent-v1"
+        and independent.get("status") == "pass"
+        and independent.get("gates", {}).get("fail") == 0
+        and (independent.get("checker_sha256") or independent.get("runner_sha256"))
+        == file_sha256(C742_CHECKER_PATH)
+        and receipt_inputs_current(independent)
+        and identity.get("canonical_incidence_rows_sha256")
+        == canonical_incidence_rows_sha256
+        and identity.get("support_column_order_sha256") == support_column_order_sha256
+        and cert0.get("support_permutation") == [int(value) for value in b0]
+        and cert1.get("support_permutation") == [int(value) for value in b1]
+        and cert0.get("support_permutation_sha256") == canonical_perm_sha256(b0)
+        and cert1.get("support_permutation_sha256") == canonical_perm_sha256(b1)
+    )
+
+
+dependency_ok = dependency_contract(C742_RECEIPT, C742_INDEPENDENT_RECEIPT)
+
 emit("-- rebuild")
 CS = INCL.sum(axis=0)
 RS = INCL.sum(axis=1)
@@ -453,6 +576,7 @@ XG = all(any(np.array_equal(T8[a] ^ T8[b], T8[c]) for c in range(8))
 DIST8 = len(set(v.tobytes() for v in TGTv)) == 8
 gate(RNM == R8 and DIST8 and XG, "06", "readings",
      "{0} distinct, closed under xor".format(len(TGTv)), 8)
+gate(PROCESSED_PAIR_ROWS == NS, "pairrows", "all pair-search first endpoints", NS)
 gate(OK0 and SG0 and np.array_equal(b0[b0], ID)
      and np.array_equal(INC[sg0][:, b0], INC)
      and all(not np.array_equal(b0, CP[gi]) for gi in range(48)), "07", "b0",
@@ -463,6 +587,7 @@ gate(OK1 and SG1 and np.array_equal(b1[b1], ID)
      "an involution outside the 48", "automorphism")
 gate(all(np.array_equal(T8[r][sg0], T8[r]) and np.array_equal(T8[r][sg1], T8[r])
          for r in range(8)), "09", "bfix", "8 of 8 readings kept", 8)
+gate(dependency_ok, "dep.cycle742", "exact Cycle 742 incidence and b0/b1 bytes", "bound")
 
 
 # ------------------------------------------------- Part 2: the group E
@@ -666,7 +791,8 @@ UNIB = set().union(*sup)
 gate(len(UNIB) == 192, "36", "cover", len(UNIB), 192)
 QP = sorted(set(tuple(sum(1 for p in s if falab[p] == a) for a in range(4))
                 for s in sup))
-gate(QP == [(6, 6, 6, 6)], "37", "quarter", "each block meets each quarter in 6",
+gate(QP == [(6, 6, 6, 6)], "37", "pieceorbits",
+     "each block meets each declared 48-column piece orbit in 6",
      6)
 p48 = list(range(NS))
 
@@ -917,4 +1043,130 @@ PV = [M for M in INVM if set(apply(M, u) for u in P) == P and apply(M, vs) == vs
 gate(len(PV) == 6 and set(tomat(A) for A in L48) == set(PV), "66", "jointstab",
      "{0} keep plane and direction, and they are L48".format(len(PV)), 6)
 
-print("TOTAL: PASS={0} FAIL={1}".format(PF[0], PF[1]))
+# ------------------------------------------------- Part 5: hostile controls and evidence
+skipped_pair_rows = sum(
+    min(lo + 100, NS) - lo for lo in range(0, NS, 200)
+)
+gate(skipped_pair_rows == NS // 2 and skipped_pair_rows != PROCESSED_PAIR_ROWS,
+     "hostile.pair_inventory", "the submitted half-width chunk loop is rejected",
+     "7900 is not 15800")
+
+bad_dependency = copy.deepcopy(C742_RECEIPT)
+bad_dependency["status"] = "fail"
+gate(not dependency_contract(bad_dependency, C742_INDEPENDENT_RECEIPT),
+     "hostile.dependency", "a failed Cycle 742 receipt is rejected", "fail closed")
+
+bad_certificate = copy.deepcopy(C742_RECEIPT)
+bad_perm = bad_certificate["automorphism_certificates"]["b0"]["support_permutation"]
+bad_perm[0], bad_perm[1] = bad_perm[1], bad_perm[0]
+bad_certificate["automorphism_certificates"]["b0"][
+    "support_permutation_sha256"
+] = hashlib.sha256(json.dumps(bad_perm, separators=(",", ":")).encode("utf-8")).hexdigest()
+gate(not dependency_contract(bad_certificate, C742_INDEPENDENT_RECEIPT),
+     "hostile.automorphism_identity",
+     "a self-consistently rehashed but changed predecessor permutation is rejected",
+     "fail closed")
+
+mutated_b1 = b1.copy()
+mutated_b1[0], mutated_b1[1] = mutated_b1[1], mutated_b1[0]
+mut_ok, _mut_row = row_perm(mutated_b1)
+gate(not mut_ok, "hostile.automorphism_semantics",
+     "a transposed image pair no longer preserves the cutting population",
+     "fail closed")
+
+bad_block = BLK.copy()
+bad_block[0] = (int(bad_block[0]) + 1) % 8
+gate(sorted(int((bad_block == block).sum()) for block in range(8)) != [24] * 8,
+     "hostile.block_partition", "moving one piece breaks the eight-by-24 partition",
+     "fail closed")
+
+elapsed = time.time() - T0
+rss_mb = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1048576.0
+gate(elapsed < 900.0, "budget.time", "elapsed {0:.2f}s".format(elapsed), "<900s")
+gate(rss_mb < 2500.0, "budget.memory", "peak {0:.1f} MB".format(rss_mb), "<2500 MB")
+gate(OUT[0] + 800 < 6000, "budget.output", "bounded stdout", "<6000 chars")
+
+emit("")
+print("per_element: checked -- all 192 support columns enter the incidence, group, "
+      "block, and affine-action checks", flush=True)
+print("per_site: checked and not executed -- one supplied coordinate four-cube only; "
+      "no framework cell or site is identified", flush=True)
+print("per_mode: checked and not executed -- this finite permutation action has no "
+      "field or momentum-mode decomposition", flush=True)
+print("per_block: checked -- the complete eight-block action, all four regular "
+      "elementary-abelian subgroups, and all seven label planes", flush=True)
+print("lattice_wide: checked and not executed -- no multi-cell, arbitrary-domain, "
+      "boundary, thermodynamic, or continuum statement is asserted", flush=True)
+
+receipt = {
+    "schema": "physical-cell-cutting-hidden-three-bit-geometry-cycle743-v2",
+    "status": "pass" if PF[1] == 0 else "fail",
+    "claim_type": "bounded_theorem",
+    "audit_status_authority": "independent audit lane only",
+    "runner_sha256": file_sha256(
+        "scripts/physical_cell_cutting_hidden_three_bit_geometry_cycle743_2026_08_05.py"
+    ),
+    "input_sha256": {path: file_sha256(path) for path in AUDIT_INPUT_PATHS},
+    "direct_dependency": {
+        "cycle": 742,
+        "schema": C742_RECEIPT.get("schema"),
+        "status": C742_RECEIPT.get("status"),
+        "canonical_incidence_rows_sha256": canonical_incidence_rows_sha256,
+        "support_column_order_sha256": support_column_order_sha256,
+        "b0_support_permutation_sha256": canonical_perm_sha256(b0),
+        "b1_support_permutation_sha256": canonical_perm_sha256(b1),
+    },
+    "supplied_model": {
+        "geometric_cuttings": NS,
+        "support_columns": NP,
+        "pieces_per_cutting": int(RS[0]),
+        "uses_per_piece": int(CS[0]),
+        "physical_cell_or_reading_bridge": "open",
+    },
+    "generated_group": {
+        "order": len(E),
+        "piece_orbits": sorted(EO.values()),
+        "centre_order": len(ZK),
+        "derived_subgroup_order": len(DER),
+        "cutting_orbits": len(RE),
+        "cutting_orbit_size_distribution": [[a, b] for a, b in RDL],
+    },
+    "invariant_cutting_partition": {
+        "unique_e_invariant_eight_cutting_partition": len(EIGHT) == 1,
+        "blocks": len(ROWS8),
+        "support_per_block": 24,
+        "support_union": len(UNIB),
+        "block_action_kernel_order": len(KER),
+        "block_action_image_order": len(B),
+        "subgroup_48_image_order": len(B48),
+    },
+    "affine_action": {
+        "regular_elementary_abelian_subgroups": len(SUBS),
+        "normal_regular_subgroups": len(NRM),
+        "translation_order": len(TG),
+        "linear_part_order": len(LS),
+        "invariant_planes": len(INVP),
+        "subgroup_48_linear_part_order": len(L48),
+        "subgroup_48_common_fixed_nonzero_labels": len(FX),
+        "full_plane_stabilizer_matrices": len(PMT),
+        "plane_and_direction_stabilizer_matrices": len(PV),
+    },
+    "no_go_discipline": {
+        "status": "PASS",
+        "claim_scope": (
+            "uniqueness only within E-invariant partitions made from supplied cutting "
+            "supports, regular elementary-abelian subgroups of the measured block "
+            "image, and invariant planes of its measured linear part"
+        ),
+        "n5_certificate": "five resolution lines in stdout and canonical cache",
+    },
+    "gates": {
+        "pass": PF[0],
+        "fail": PF[1],
+        "named": {name: "PASS" if passed else "FAIL" for name, passed in GATES},
+    },
+}
+RECEIPT_PATH.write_text(json.dumps(receipt, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+print("RECEIPT " + str(RECEIPT_PATH.relative_to(ROOT)), flush=True)
+print("TOTAL: PASS={0} FAIL={1}".format(PF[0], PF[1]), flush=True)
+sys.exit(0 if PF[1] == 0 else 1)

@@ -289,6 +289,12 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
         "scripts/physical_cell_cutting_fourteen_frontier_cycle741_"
         "independent_check_2026_08_05.py",
     ],
+    # Cycle 743's checker uses an opposite exact-cover pivot and tuple-valued
+    # group arithmetic rather than importing the primary refinement/group code.
+    "physical_cell_cutting_hidden_three_bit_geometry_cycle743_note_2026-08-05": [
+        "scripts/physical_cell_cutting_hidden_three_bit_geometry_cycle743_"
+        "independent_check_2026_08_05.py",
+    ],
     "b4_clock_relation_run_cycle879_bounded_theorem_note_2026-07-28": [
         "scripts/frontier_cycle879_b4_relation_independent_check_2026_07_28.py",
     ],

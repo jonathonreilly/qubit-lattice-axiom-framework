@@ -6,35 +6,50 @@ Authority: none
 
 Audit: unset.
 
-Status: computational identities of the finite cutting system
+Status: bounded conditional theorem
 
-Claim type: computational identities
+Claim type: bounded_theorem
 
-Runner:
+Runners:
 
-- [paired rebuild-and-gate runner](../scripts/physical_cell_cutting_hidden_three_bit_geometry_cycle743_2026_08_05.py)
+- [primary finite-group and affine-action runner](../scripts/physical_cell_cutting_hidden_three_bit_geometry_cycle743_2026_08_05.py)
+- [independent opposite-pivot and tuple-group reconstruction](../scripts/physical_cell_cutting_hidden_three_bit_geometry_cycle743_independent_check_2026_08_05.py)
 
-Scope: computational identities of the finite cutting system. Every number
-below is machine-checked by the paired runner, which rebuilds the cell
-complex, the cuttings, the readings and the symmetries from scratch and gates
-each quantity against a pinned value. Constitutional effect: none. This
+Direct finite-data dependency:
+[Cycle 742](PHYSICAL_CELL_CUTTING_SIXTEEN_ATTAINED_CYCLE742_NOTE_2026-08-05.md)
+supplies the exact finite incidence identity and the two explicit support
+permutations used as extra generators. Both runners bind the Cycle 742 primary
+and independent receipts, current source hashes, row-order-invariant incidence
+hash, declared support-column order, and the complete 192-entry permutations.
+Cycle 741 is chronological context only; no search count, lower bound, or
+certificate from it is consumed here.
+
+Framework boundary:
+[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) does **not**
+supply this finite cell model, simplex population, pair cost, incidence table,
+reading space, support ordering, or either extra automorphism.
+
+Scope: exact finite identities of a supplied cutting-incidence system. Every
+number below is machine-checked by the primary and independently reconstructed
+at the load-bearing group/action boundary. Constitutional effect: none. This
 package changes no axiom, no framework Admissibility rule, no primitive, no
-policy, and no audit status, and it adds no import and no assumption to
-[MINIMAL_AXIOMS_2026-06-29.md](MINIMAL_AXIOMS_2026-06-29.md).
+policy, no audit result, and no audit status.
 
 ## Headline
 
-The symmetry of the finite cutting system extends from the 48 cutting
-symmetries to a group of order 384 that fixes all eight readings pointwise.
-That group preserves exactly one partition of the 192 pieces into the supports
-of eight pairwise disjoint cuttings — eight blocks of 24, each meeting each of
-the four piece-orbits in 6. The induced action on the eight blocks realizes a
+In the supplied finite table, the declared 48 support permutations together
+with the two exact Cycle 742 permutations generate a group `E` of order 384.
+Within the complete cutting population, exactly one `E`-orbit has size 8;
+its supports are pairwise disjoint and cover the 192 columns. Consequently it
+is the unique **E-invariant partition whose eight blocks are supports of
+supplied cuttings** — not a claim about arbitrary incidence automorphisms or
+arbitrary 24-column partitions. Each block meets each of the four 48-column
+orbits of the declared subgroup in 6. The induced action on the blocks has a
 hidden three-bit affine geometry: the image has order 192 and splits as the 8
 translations together with the full 24-element stabilizer of a distinguished
 plane, and the original 48 cutting symmetries induce exactly the subgroup
 whose linear part additionally fixes a distinguished direction lying off that
-plane. The two automorphisms constructed in the previous cycle release that
-pinned direction, enlarging the linear part from 6 to 24.
+plane. This is a theorem about the generated finite action only.
 
 ## The rebuilt system
 
@@ -43,9 +58,15 @@ distinct cuttings on 192 pieces, every cutting of width 24, every piece used
 in exactly 1975 cuttings, and all 15800 supports distinct. The 48 cutting
 symmetries act as piece permutations with 4 orbits, each of size 48; the eight
 readings are recovered as before and are closed under bitwise addition. The
-two extra incidence automorphisms of `PHYSICAL_CELL_CUTTING_SIXTEEN_ATTAINED_CYCLE742_NOTE_2026-08-05.md`
-are rebuilt by the same seeded refinement, and each is again an involution
-lying outside the 48 and fixing all 8 readings elementwise.
+two extra incidence automorphisms of
+[Cycle 742](PHYSICAL_CELL_CUTTING_SIXTEEN_ATTAINED_CYCLE742_NOTE_2026-08-05.md)
+are rebuilt by the primary's seeded refinement, exact-compared with the
+predecessor's 192-entry certificates, and independently checked row by row by
+the second runner. Each is an involution outside the 48 and fixes all 8
+declared finite readings elementwise. The corrected primary processes all
+15,800 first endpoints in its pair comparison; the submitted 200-step/100-row
+chunk defect would have processed only 7,900 and is retained as a hostile
+failure control.
 
 ## The group E
 
@@ -82,13 +103,21 @@ with sizes distributed as
 
 ## The eight blocks
 
-Exactly one E-orbit of cuttings has size 8. Those 8 cuttings each have support
+Exactly one E-orbit of cuttings has size 8, and every other orbit has size at
+least 24. Those 8 cuttings each have support
 of size 24, are pairwise disjoint, and their union is all 192 pieces. They
 therefore give an E-invariant partition of the pieces into 8 blocks of 24, and
 each block meets each of the four piece-orbits in exactly 6. The same 8
 cuttings already form a single orbit under the 48 cutting symmetries alone, so
 the partition is not new to the extended group — what is new is that E
 preserves it while acting on the blocks far more richly.
+
+Any E-invariant eight-element set of supplied cutting supports must be a union
+of complete E-orbits. The complete orbit census therefore makes this the only
+such eight-cutting set; the disjoint-cover check makes it the unique partition
+of the stated restricted kind. This does not classify partitions whose blocks
+are not supplied cutting supports or partitions invariant under an unknown
+larger incidence-automorphism group.
 
 The kernel of the block action is exactly the centre, of order 2, containing
 z. The image B of E therefore has order 192, and the image B48 of the 48
@@ -99,8 +128,10 @@ cutting symmetries has order 48, so the 48 act faithfully on the blocks.
 B has 25 fixed-point-free involutions. A complete search over commuting
 triples of them finds exactly 4 subgroups of B that are elementary abelian of
 order 8 and regular on the eight blocks, and exactly 1 of those 4 is normal in
-B. That unique normal one, T, is the canonical translation group; no labelling
-choice enters its construction.
+B. That unique normal one, T, is intrinsic to the measured block image B; no
+labelling choice enters its construction. “Intrinsic to B” is not a claim that
+the group, partition, or translation structure is canonical for the bare
+incidence table.
 
 Taking the block containing the first piece as origin, the map sending a
 translation to the image of the origin is a bijection from T onto the eight
@@ -157,14 +188,128 @@ image from 48 to 192.
   transitively by E. These are two distinct actions on two distinct sets, and
   no identification between the two three-bit spaces is claimed or implied by
   the coincidence of their sizes.
-- All statements above are basis-independent. Block labels are a bookkeeping
-  choice made to state additivity, and every gated quantity is a group order,
-  an orbit size, a census, or a set equality that does not depend on it. No
-  coordinate assignment for any piece, block, or label appears in this note.
-- The witness intervals for the remaining charges are unchanged from
-  `PHYSICAL_CELL_CUTTING_SIXTEEN_ATTAINED_CYCLE742_NOTE_2026-08-05.md` and are
-  not re-derived here.
+- The invariant content is basis-independent. The runner does choose an origin
+  block and three generators to write three-bit labels; alternate choices
+  conjugate the displayed matrices and preserve the gated orders, orbit sizes,
+  invariant-plane count and stabilizer equalities. No coordinate assignment is
+  made to a physical object.
+- The witness intervals for the remaining finite functions are unchanged from
+  [Cycle 742](PHYSICAL_CELL_CUTTING_SIXTEEN_ATTAINED_CYCLE742_NOTE_2026-08-05.md)
+  and are not consumed or re-derived here.
 - The minima questions left open by
-  `PHYSICAL_CELL_CUTTING_FOURTEEN_FRONTIER_CYCLE741_NOTE_2026-08-05.md` and
-  carried forward by the previous cycle — the least weights on the six and
-  seven-flip readings — remain open. Nothing here bears on them.
+  Cycle 741 and carried forward by the previous cycle remain open. Nothing
+  here bears on them.
+
+## Independent reconstruction and hostile controls
+
+The primary uses its own exact-cover recursion, packed GF(2) reading
+construction, seeded Gram-color refinement and array-valued group closure. The
+independent checker imports none of that implementation. It uses a Leibniz
+determinant, the opposite exact-cover pivot, the exact Cycle 742 permutation
+certificates, packed-row lookup against every image cutting, tuple-valued group
+arithmetic, generator union-find on the cutting action, and a separately coded
+complete matrix census. It reconstructs the exact 15,800-row population,
+orders 48/96/384, the group census/centre/derived subgroup, the complete
+74-orbit cutting distribution, the unique restricted partition, block image
+192, four regular order-eight subgroups with one normal, linear part 24,
+unique invariant plane, and joint stabilizer 6.
+
+Hostile controls fail closed when:
+
+- the submitted half-width pair chunk is restored (7,900 rather than 15,800
+  processed first endpoints);
+- either predecessor receipt is failing or stale;
+- a Cycle 742 permutation is changed and self-consistently rehashed;
+- two images in an extra automorphism are transposed;
+- the second extra generator is omitted (the generated order falls from 384
+  to 96);
+- one support column is moved between blocks; or
+- the primary receipt's group order or status is changed.
+
+Primary verification: `TOTAL: PASS=76 FAIL=0`. Independent reconstruction:
+`TOTAL: PASS=19 FAIL=0`.
+
+## No-Go Discipline for the finite uniqueness statements
+
+The negative assertion class is `derived_no_go_boundary`. Its entire scope is:
+(i) no second E-invariant eight-block partition made from supplied cutting
+supports, (ii) no second normal regular elementary-abelian order-eight subgroup
+of the measured block image B, and (iii) no second invariant plane for the
+measured linear part L. It says nothing negative about a larger automorphism
+group, non-cutting partitions, alternate finite models, or physical geometry.
+
+**N1 — alternative routes.** Six routes were enumerated: complete cutting-orbit
+census; direct disjoint-cover reconstruction of the size-eight orbit; subgroup
+generation from all 25 fixed-point-free involutions; normality by every B
+conjugate; orbit-union plus direct enumeration of all seven planes; and an
+independent tuple-group/opposite-pivot reconstruction. All were attempted. The
+first five close their named finite questions and the sixth reproduces them
+without the primary group engine.
+
+**N2 — wall independence.** Let D be the supplied 15,800-by-192 incidence
+bytes, G the two exact Cycle 742 generators together with the declared 48, C
+the restriction to partitions whose blocks are supplied cutting supports, and
+X any larger/physical extension. D/G fixes the generated action but not the
+partition class; D/C does not select E; D/X cannot classify unsearched
+automorphisms. G/C closes only E-invariant cutting partitions. G/X and C/X
+remain open because neither finite generation nor a restricted partition class
+supplies a framework or physical bridge. No pair of collapsed walls closes an
+X statement.
+
+**N3 — hidden-wall scan.** The rhetoric scan covered “unique,” “canonical,”
+“full,” “symmetry,” “geometry,” “all,” “only,” and “no.” “Unique” is now tied
+to complete finite sets. “Canonical translation” was narrowed to intrinsic to
+the measured B. “Full stabilizer” means the complete 512-matrix census inside
+GL(3,2), not a full incidence-automorphism group. “Geometry” names an affine
+finite action, not physical space.
+
+**N4 — residual matching.** Cycle 742 is the direct exact identity source for
+b0/b1 and is hash- and certificate-bound. Cycle 741 is context only. No Cycle
+741 lower bound or Cycle 742 carrier/minimum interval is used to establish the
+group result.
+
+**N5 — resolution lines.** `per_element`, `per_site`, `per_mode`, `per_block`
+and `lattice_wide` lines are emitted into both canonical caches. They distinguish
+the executed 192-column/eight-block finite checks from site, mode, multi-cell,
+boundary and continuum questions that are not executed.
+
+**N6 — partial-closure paths.** An alternate exact generator pair, a larger
+incidence-automorphism group, partitions not made of cutting supports, another
+finite cell/cost, and a physical realization could change the available
+partitions or action. These are named open paths, not ruled-out variants.
+
+**N7 — steelman.** The strongest counterroute is to compute the full
+automorphism group of the bare incidence table and classify its systems of
+imprimitivity. That could show E is proper or that the restricted partition is
+not intrinsic to the full group. This package does not attempt that route and
+therefore makes no full-automorphism claim.
+
+**N8 — cross-cycle echo.** The Cycle 742 generator certificates and Cycle 740's
+earlier declared block-partition caution are respected: a support order or
+subgroup artifact is not silently promoted to physical or order-independent
+geometry. No negative conclusion is inherited from a predecessor.
+
+No-Go Discipline disposition: **PASS for the bounded finite negatives above**.
+This is review evidence, not an audit verdict.
+
+## Claim and proof-obligation disposition
+
+`Claim type: bounded_theorem`. Proof-obligation disposition: **CONDITIONAL**.
+The exact finite group/action theorem closes for the supplied incidence bytes,
+declared 48 and exact Cycle 742 generator bytes. The existence or completeness
+of a physical action, a full incidence-automorphism classification, other
+partitions, other finite models, multi-cell assembly, arbitrary L, boundary
+limits and continuum meaning remain open. Audit authority belongs only to the
+independent audit lane; effective status is pipeline-derived after audit
+ratification and dependency closure.
+
+Canonical evidence:
+
+- Primary cache:
+  [`physical_cell_cutting_hidden_three_bit_geometry_cycle743_2026_08_05.txt`](../logs/runner-cache/physical_cell_cutting_hidden_three_bit_geometry_cycle743_2026_08_05.txt)
+- Independent cache:
+  [`physical_cell_cutting_hidden_three_bit_geometry_cycle743_independent_check_2026_08_05.txt`](../logs/runner-cache/physical_cell_cutting_hidden_three_bit_geometry_cycle743_independent_check_2026_08_05.txt)
+- Primary receipt:
+  [`physical_cell_cutting_hidden_three_bit_geometry_cycle743_2026_08_05_receipt_2026-08-05.json`](../outputs/physical_cell_cutting_hidden_three_bit_geometry_cycle743_2026_08_05_receipt_2026-08-05.json)
+- Independent receipt:
+  [`physical_cell_cutting_hidden_three_bit_geometry_cycle743_independent_check_2026_08_05_receipt_2026-08-05.json`](../outputs/physical_cell_cutting_hidden_three_bit_geometry_cycle743_independent_check_2026_08_05_receipt_2026-08-05.json)

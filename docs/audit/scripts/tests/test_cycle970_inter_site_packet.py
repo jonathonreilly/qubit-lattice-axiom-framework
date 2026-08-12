@@ -14,8 +14,8 @@ from tempfile import TemporaryDirectory
 REPO_ROOT = Path(__file__).resolve().parents[4]
 PRIMARY = "scripts/frontier_cycle970_inter_site_gate_2026_08_09.py"
 CHECKER = "scripts/frontier_cycle970_gate_independent_check_2026_08_09.py"
-SEMANTICS = (
-    "scripts/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.py"
+ALIAS_HOP = (
+    "scripts/frontier_cycle719_local_handshake_controller_core_2026_07_26.py"
 )
 AXIOMS = "docs/MINIMAL_AXIOMS_2026-06-29.md"
 
@@ -78,7 +78,7 @@ class Cycle970PacketTest(unittest.TestCase):
         )
         return result.stdout.strip()
 
-    def test_fresh_primary_then_checker_and_semantics_mutation_fail_closed(self):
+    def test_fresh_pair_is_alias_independent_and_local_mutation_fails_closed(self):
         primary = self.execute_and_cache(PRIMARY)
         self.assertEqual(primary.returncode, 0, primary.stdout + primary.stderr)
         checker = self.execute_and_cache(CHECKER)
@@ -86,19 +86,60 @@ class Cycle970PacketTest(unittest.TestCase):
         self.assertEqual(self.cache_status(PRIMARY), "fresh")
         self.assertEqual(self.cache_status(CHECKER), "fresh")
 
-        semantics_path = self.root / SEMANTICS
-        original = semantics_path.read_text(encoding="utf-8")
-        mutated = original.replace(
-            "state[gate.wires[1]] ^= state[gate.wires[0]]",
-            "state[gate.wires[1]] ^= 0",
+        alias_path = self.root / ALIAS_HOP
+        alias_original = alias_path.read_text(encoding="utf-8")
+        alias_mutated = alias_original.replace(
+            "A = M.A",
+            "A = M.A\nA.apply_semantic = lambda state, word: tuple(state)",
             1,
         )
-        self.assertNotEqual(original, mutated, "CNOT mutation did not apply")
-        semantics_path.unlink()  # break the fixture hardlink before mutation
-        semantics_path.write_text(mutated, encoding="utf-8")
+        self.assertNotEqual(alias_original, alias_mutated, "alias mutation did not apply")
+        alias_path.unlink()
+        alias_path.write_text(alias_mutated, encoding="utf-8")
 
-        self.assertEqual(self.cache_status(PRIMARY), "input_mismatch")
+        self.assertEqual(self.cache_status(PRIMARY), "fresh")
+        self.assertEqual(self.cache_status(CHECKER), "fresh")
+        alias_independent = subprocess.run(
+            [sys.executable, PRIMARY],
+            cwd=self.root,
+            text=True,
+            capture_output=True,
+            timeout=30,
+            check=False,
+        )
+        self.assertEqual(
+            alias_independent.returncode,
+            0,
+            alias_independent.stdout + alias_independent.stderr,
+        )
+
+        primary_path = self.root / PRIMARY
+        primary_original = primary_path.read_text(encoding="utf-8")
+        primary_mutated = primary_original.replace(
+            "output[gate.wires[1]] ^= output[gate.wires[0]]",
+            "output[gate.wires[1]] ^= 0",
+            1,
+        )
+        self.assertNotEqual(primary_original, primary_mutated, "local CNOT mutation did not apply")
+        primary_path.unlink()
+        primary_path.write_text(primary_mutated, encoding="utf-8")
+
+        self.assertEqual(self.cache_status(PRIMARY), "sha_mismatch")
         self.assertEqual(self.cache_status(CHECKER), "input_mismatch")
+        mutated_primary = subprocess.run(
+            [sys.executable, PRIMARY],
+            cwd=self.root,
+            text=True,
+            capture_output=True,
+            timeout=30,
+            check=False,
+        )
+        self.assertNotEqual(mutated_primary.returncode, 0, mutated_primary.stdout)
+        self.assertNotIn(
+            "VERDICT: SELF_CONTAINED_ONE_CNOT_INTER_SITE_WITNESS",
+            mutated_primary.stdout,
+        )
+        self.assertIn("VERDICT: CYCLE970_CHECKS_INCOMPLETE", mutated_primary.stdout)
         direct = subprocess.run(
             [sys.executable, CHECKER],
             cwd=self.root,

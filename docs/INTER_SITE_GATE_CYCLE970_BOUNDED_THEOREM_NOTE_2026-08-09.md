@@ -4,7 +4,7 @@ Date: 2026-08-09
 
 Audit: unset; independent audit remains a separate lane
 
-Status: bounded support on the declared finite family
+Status: proposed_retained
 
 **Type:** bounded_theorem
 
@@ -27,11 +27,14 @@ The source delta preserves the four-axiom and registered-primitive rosters.
 
 ## Load-bearing sources and declared domain
 
-The finite gate semantics come from the
+The gate family is motivated by the
 [`RECURRENT_MATTER_HISTORY_CONTROLLER_CYCLE719_BOUNDED_THEOREM_NOTE_2026-07-26.md`](RECURRENT_MATTER_HISTORY_CONTROLLER_CYCLE719_BOUNDED_THEOREM_NOTE_2026-07-26.md)
-package and its Cycle-719/Cycle-715 executable chain. That source row is an
-unaudited dependency, so this row enters the audit graph as bounded and pending
-with the dependency edge visible.
+package. That source row is an unaudited dependency, so this row enters the
+audit graph as bounded and pending with the dependency edge visible. The proof
+runner does not import that package's transitive runtime chain: it carries the
+five-element basis-gate family and the X/CNOT truth tables locally, under the
+runner hash. This keeps the bounded witness independent of alias or import
+changes elsewhere in the Cycle-719 implementation.
 
 The [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) memo supplies
 the names for the two neighboring sites, their basis possibilities, and the
@@ -50,8 +53,8 @@ D[W,t,x](y | n)
   = 1{ applying W to (target t=x, nearest neighbor=n) outputs t=y }.
 ```
 
-This is the deterministic point distribution induced by the cited basis-state
-semantics.
+This is the deterministic point distribution induced by the explicitly
+displayed, self-contained basis-state semantics.
 
 ## Exact census
 
@@ -98,17 +101,17 @@ The separate audit lane owns any effective-status transition.
 
 ## Provenance and independent recomputation
 
-The primary cache input fingerprint binds:
+The primary cache envelope binds:
 
-- the axiom memo;
-- the Cycle-719 wrapper;
-- the Cycle-715 file that implements `cn` and `apply_semantic`.
+- the primary runner hash, including its local `Gate`, `cn`, and
+  `apply_semantic` definitions; and
+- the axiom memo through the input fingerprint.
 
-The independent checker uses an internal XOR interpreter while reading the
-substrate sources as AST/text. It validates the stable source hashes, parses
-the fresh primary cache envelope, recomputes
-the primary input fingerprint, checks the Cycle-715 CNOT construction and XOR
-update by AST, and independently enumerates the 20 comparisons.
+The independent checker uses a separate tuple-based XOR interpreter. It
+validates the stable primary and axiom hashes, parses the fresh primary cache
+envelope, recomputes the primary input fingerprint, checks by AST that the
+primary has no Cycle-719/Cycle-715 runtime import and that its local CNOT uses
+target XOR control, and independently enumerates the 20 comparisons.
 
 The required execution order is primary cache refresh followed by independent
 cache refresh. Both receipts and both cache envelopes are generated from that
@@ -131,6 +134,8 @@ next_trace_action: "independent audit the exact finite-family witness and its Cy
 ```yaml
 actual_current_surface_status: bounded-support
 target_claim_type: bounded_theorem
+trace_class: direct_blocker_closure
+reachability_to_target: closes
 conditional_surface_status: "exact finite two-site basis-menu census with a supplied fixed target input"
 hypothetical_axiom_status: null
 admitted_observation_status: null
@@ -156,8 +161,9 @@ Review-loop hard landing conditions for this repaired final state:
    Cycle-970 ledger row names the Cycle-719 claim id in `deps` and the checker
    in `helper_runner_paths`.
 3. A fresh primary-cache execution followed by a fresh independent-cache
-   execution passes, and a Cycle-715 CNOT-semantics mutation invalidates the
-   bound evidence.
+   execution passes; mutating the primary's local CNOT truth table invalidates
+   the bound evidence, while mutating an old Cycle-719 alias hop leaves the
+   self-contained result and both cache fingerprints unchanged.
 
 ## Result
 

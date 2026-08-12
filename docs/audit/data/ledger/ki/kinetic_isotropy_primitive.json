@@ -26,13 +26,13 @@
     "minimal_axioms",
     "scale_reference_primitive"
   ],
-  "direct_in_degree": 61,
+  "direct_in_degree": 64,
   "effective_status": "meta",
   "effective_status_reason": "metadata",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "meta",
-  "load_bearing_score": 40.307,
+  "load_bearing_score": 41.839,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -53,6 +53,6 @@
   },
   "runner_path": null,
   "title": "Kinetic-Isotropy Primitive",
-  "transitive_descendants": 895,
+  "transitive_descendants": 915,
   "verdict_rationale": null
 }

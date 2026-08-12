@@ -32,7 +32,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 21.044,
+  "load_bearing_score": 21.065,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -792,6 +792,6 @@
   },
   "runner_path": "scripts/frontier_hypercharge_identification_scope_repair_2026_07_04.py",
   "title": "Name-Free U(1) Two-Block Algebra",
-  "transitive_descendants": 1055,
+  "transitive_descendants": 1070,
   "verdict_rationale": null
 }

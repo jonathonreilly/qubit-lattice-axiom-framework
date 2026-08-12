@@ -1,224 +1,179 @@
-# The adjacency cost of a cell dissection is always even, and its spectrum is exactly the eleven even integers from 108 to 128
+# Exact even cost spectrum in the supplied one-cell corner-simplex model
 
-Status: unaudited source note. Cycle 732 of the emergent-geometry lane.
+Date: 2026-08-04
 
-## What this settles
+Claim type: bounded_theorem
 
-Earlier cycles of this lane bracketed the adjacency cost of a dissection of the single
-cell: it lies between 108 and 128, and both ends are attained. That left the inside of
-the bracket open. Twenty-one integers sit in it; nothing said which of them a dissection
-can actually realise.
+Status: unaudited source note
 
-This note answers that, and the answer is sharp. Exactly eleven of the twenty-one occur:
-the even ones. The evenness is not a feature of the dissections that happened to be
-constructed. It is forced, by an exhibited object that can be checked by hand once it is
-written down — a set of 228 sample points that meets every piece of least volume in a
-number of points congruent, modulo 2, to that piece's adjacency charge. Summing that
-congruence over the pieces of any dissection turns it into a statement about cost, and
-228 is even.
+Audit authority: none; audit status belongs to the independent audit lane.
 
-Three further things follow, and each of them is the kind of statement that this lane has
-been unable to make before.
+## Result
 
-The parity argument carries no constant term. It therefore never appeals to how many
-pieces a dissection has, nor to their volumes. The conclusion follows from the covering
-property alone: that each sample point lies inside exactly one piece.
+For the supplied unit four-cube model, the exact adjacency-cost spectrum of a
+24-piece dissection is
 
-The certificate cannot keep the full symmetry of the cell. A complete sweep of all 98
-subgroups of the cell's 48 symmetries shows that among the 12 subgroups of order at least
-12, exactly one admits an invariant certificate, and it has order 12. The symmetry the
-argument must give up is therefore index 4, exactly, and no more.
+`{108, 110, 112, 114, 116, 118, 120, 122, 124, 126, 128}`.
 
-Modulo 2 is the sharp modulus, by two independent routes. The eleven exhibited costs
-differ by a greatest common divisor of 2, so no larger modulus divides all the
-differences. And modulo 3 there is no certificate at all — not as the outcome of a
-failed search, but because of an exhibited local obstruction that turns out to be a
-common feature of the cell rather than one freak configuration.
+Here the supplied corners are `{0,1}^4`, with three coordinates labelled spatial and
+one labelled tick.  An allowed piece is a five-corner simplex of normalized volume one.
+The declared charge counts vertex pairs whose spatial L1 separation exceeds one.  A
+dissection is an exact cover by 24 allowed pieces.
 
-All of this concerns the single cell, and is stated about it. Its inputs are the lattice
-adjacency of [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) and nothing
-else.
+This is a theorem about that finite supplied object.  The framework does not select the
+corner-simplex model, the charge, a physical cell, or a physical tick realization.
+[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) supplies only the spatial
+grading and proper-rotation language.  Equal tick/edge graining is the only premise
+imported from
+[`KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md`](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md).
 
-## Objects
+## Exact finite construction
 
-The cell is the 4-cube on 16 corners: three spatial coordinates and one tick, each corner
-a point of `{0,1}^4`. A piece is a set of five corners; there are 4368 of them, and 2672
-have least nonzero volume. Those 2672 are the pieces a dissection may use.
+There are 4,368 five-corner subsets and 2,672 normalized-volume-one pieces.  Their
+charge census is
 
-The adjacency charge of a piece counts the pairs of its five corners whose distance in
-the three spatial coordinates exceeds one — the pairs that are not nearest neighbours of
-the lattice. The charge spectrum over the 2672 pieces is
-`[(3, 64), (4, 384), (5, 1152), (6, 768), (7, 304)]`. The adjacency cost of a dissection
-is the sum of the charges of its 24 pieces.
+`[(3,64), (4,384), (5,1152), (6,768), (7,304)]`.
 
-The cell keeps 24 proper rotations, and with the tick flip the symmetry group has 48
-elements. It acts on the pieces with 57 orbits, of sizes 16 and 48, summing to 2672, and
-the charge is constant on every orbit.
+The 24 proper spatial rotations, extended by the tick flip, form a 48-element action.
+They split the pieces into 57 charge-constant orbits of sizes 16 and 48.
 
-Sample points are chosen so that no point lies on any piece boundary. Superincreasing
-weights with total 12810 and barycentric bound 3 produce 2736 of them, none on a
-boundary, falling into 57 orbits of size 48 — one for each piece orbit, so the action on
-the points is free. Each piece contains between 6 and 409 of them and each point lies in
-between 90 and 224 pieces, so the incidence has no empty row and no empty column.
+Superincreasing barycentric weights construct 2,736 sample points, 57 free orbits of
+size 48.  No sample point lies on any allowed-piece boundary.  The resulting exact
+incidence matrix has 2,672 rows and 2,736 columns; its row loads range from 6 to 409 and
+its column loads from 90 to 224.
 
-That there are no points on a boundary is the load-bearing property, and it is worth
-naming separately. It means every sample point is interior to exactly one piece of any
-dissection whatsoever. A congruence that holds piece by piece therefore sums over a
-dissection without any hypothesis about how the dissection was built.
+Exact GF(2) elimination produces a 228-point, zero-constant certificate satisfying
 
-## Method: certificates and witnesses, no solver in the artifact
+`incidence(piece, certificate) = charge(piece) (mod 2)`
 
-The runner exhibits objects and checks them. It does not search for them, and it calls no
-optimiser.
+for every allowed piece.  Each point is interior to exactly one piece in any supplied
+dissection, so summing the congruence gives the cost modulo two.  The certificate has
+even cardinality; every supplied-model dissection therefore has even cost.
 
-A parity certificate is a set of sample points together with a constant, such that for
-every piece of least volume the number of certificate points inside it, plus the
-constant, is congruent to the piece's charge modulo 2. The certificate in this note is
-derived inside the runner by exact Gaussian elimination over the field of two elements, so
-no list of 228 point indices is transcribed by hand. Its properties are then checked
-directly against all 2672 pieces.
+The independent checker reconstructs the incidence without importing or executing the
+primary runner and obtains a different zero-constant certificate with 168 selected
+points.  It verifies all 2,672 congruences using pure-Python big-integer elimination.
+Thus the parity conclusion does not depend on the primary certificate's symmetry
+restriction or pivot choices.
 
-The bounding certificates are the integer weight systems of earlier cycles, pasted in as
-literals and re-verified here: the exhibited floor rows hold on all 2672 pieces and sum
-over a dissection to 23328, which is 108 times 216; the exhibited ceiling rows hold on all
-2672 pieces and sum to 384, which is 128 times 3.
+The exact 108 and 128 bound certificates are load-bearing carried data from
+[`PHYSICAL_COST_IDENTITY_INDICATOR_CERTIFICATE_CYCLE731_NOTE_2026-08-04.md`](PHYSICAL_COST_IDENTITY_INDICATOR_CERTIFICATE_CYCLE731_NOTE_2026-08-04.md).
+The runner parses Cycle 731's six certificate literals, checks its generated receipt,
+and re-verifies every row.  The floor numerator is `23328 = 108*216`; the ceiling
+numerator is `384 = 128*3`.
 
-The dissections are pinned as eleven explicit 24-tuples. Each is verified from scratch:
-24 distinct pieces of least volume, pairwise disjoint by an exhibited integer separating
-direction, and every one of the 2736 sample points covered. Volume and disjointness
-together make the cover exact without a solver being asked anything.
+Eleven pinned 24-piece covers attain costs
 
-The subgroup sweep takes every one-element extension of every set already found to a
-fixpoint. This reaches every subgroup, because any subgroup generated by elements
-`h_1, ..., h_k` is the last link of the chain of subgroups generated by the initial
-segments, and every link of that chain is a one-element extension of the previous one.
+`[108,110,112,114,116,118,120,122,124,126,128]`.
 
-Exact integer elimination over a finite field, verification of an exhibited integer
-combination, and a complete enumeration over an explicit finite set are all arithmetic,
-not search. Nothing in the artifact hands a question to a solver.
+Both runners verify distinct unit-volume pieces, exact point coverage once, and all 276
+pair separations in each witness.  The independent checker sweeps 2,928 canonical
+primitive normals in `[-4,4]^4`, broader than the primary's ternary-plus-facet family.
+Parity, the two exact bounds, and attainment prove the displayed spectrum.
 
-## Results
+## Two ansatz-bounded negative results
 
-**The parity certificate.** The exhibited set of 228 sample points meets every one of the
-2672 pieces of least volume in a number of points congruent to that piece's charge modulo
-2, with no constant term. Because 228 is even, and because each sample point is interior
-to exactly one piece of any dissection, the adjacency cost of every dissection of the cell
-is even. The eleven exhibited dissections confirm this concretely: summing the point set
-over the pieces of each of them returns 228 every time.
+These negatives concern only the fixed 2,736-point incidence ansatz.  They do not rule
+out other point families, analytic identities, cochain constructions, or geometric
+certificates.
 
-**The certificate is rigid.** Moving any single one of the 2736 sample points into or out
-of the set breaks at least 90 of the 2672 congruences. Changing the constant term by one
-breaks every one of them. Neither the complementary point set nor the set of all sample
-points certifies the same congruence.
+First, exhaustive closure enumerates all 98 subgroups of the 48-element action.  Among
+the 12 subgroups of order at least 12, with order census
+`[(48,1),(24,3),(16,3),(12,5)]`, exactly one permits an invariant certificate in the
+fixed incidence ansatz.  It has order 12; the primary's 228-point certificate has that
+stabilizer.  This is a sharp invariance result inside the ansatz, not a claim that every
+parity proof must break symmetry by index four.
 
-**The symmetry ladder is sharp at index 4.** The 48 symmetries of the cell have 98
-subgroups. Of the 12 whose order is at least 12 — with orders
-`[(48, 1), (24, 3), (16, 3), (12, 5)]` — exactly one admits an invariant certificate. All
-7 subgroups of order above 12 fail. The survivor has order 12, carries the tick flip on 0
-of its elements, and has rotation traces `[-1, -1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 3]`. It
-splits the 2736 sample points into 228 orbits of size 12, and the certificate is a union
-of 19 of them. Exactly 12 of the 48 symmetries fix the certificate, and they are that
-subgroup. So the parity argument keeps a pure rotation subgroup of order 12 and drops the
-tick flip entirely; the symmetry falls by index 4 and no further.
+Second, the same fixed incidence-plus-constant system is inconsistent modulo three.
+The four rows indexed `[(72,1),(74,2),(176,2),(479,1)]` have weighted incidence entries
+only 0 or 3 and total coefficient 6, but their weighted charges total 31.  This exact
+dual relation contradicts a modulo-three solution in that matrix.  It is a discrete
+row relation, not a claim of a geometric triple cover and not an exclusion of other
+certificate mechanisms.  Full elimination agrees.  Among 8,008 six-corner subsets,
+1,104 contain a locally inconsistent subsystem: 864 with four contained allowed pieces
+and 240 with six.
 
-**There is no rule modulo 3, and the obstruction is geometric.** Four pieces of least
-volume sit inside the single six-corner set `[0, 1, 3, 7, 8, 10]`. Counted with
-multiplicities `[1, 2, 2, 1]` they cover 266 sample points exactly three times each and
-the remaining 2470 not at all — a triple cover of part of the cell and nothing else. Any
-rule assigning a residue modulo 3 to each piece would have to hand that triple cover a
-total divisible by 3. The four charges are `[4, 5, 6, 5]`, and
-`1 x 4 + 2 x 5 + 2 x 6 + 1 x 5 = 31`, which is 1 modulo 3. The multiplicities themselves
-add to 6, so the obstruction survives any constant shift as well.
+The greatest common divisor of differences among the eleven exhibited costs is two.
+That fact alone makes parity the greatest universal congruence modulus for this supplied
+cost spectrum.  The modulo-three obstruction is additional ansatz-specific structure,
+not a second proof excluding every larger modulus.
 
-**And that obstruction is common, not exceptional.** The cell has 8008 six-corner
-subsets. 1104 of them carry an obstruction of exactly this kind using only the pieces of
-least volume they contain themselves: 864 hold four such pieces and 240 hold six. The
-wall at modulus 3 is a pervasive local feature of the cell.
+## No-Go Discipline packet for the bounded negatives
 
-Eliminating the whole point-level system agrees with the local witness: modulo 3 the
-system has rank 465 and an inconsistent row, while modulo 2 it has the same rank 465 and
-is consistent.
+- N1 — Alternative routes: tested full GF(2)/GF(3) elimination, explicit dual
+  verification, exhaustive subgroup closure, an independently coded big-integer GF(2)
+  solve, and the local six-corner census. Other point families and analytic identities
+  remain open routes.
+- N2 — Wall independence: the two walls are finite linear-algebra statements about the
+  fixed matrix. They are independent of physical simplex selection, multi-cell gluing,
+  boundary limits, dynamics, and continuum recovery, none of which is executed.
+- N3 — Hidden walls: the negative wording was scanned for `any`, `all`, `must`,
+  `impossible`, `cannot`, `universal`, and `no rule`. Every surviving negative names
+  the fixed 2,736-point incidence ansatz.
+- N4 — Residual matching: Cycle 731 contributes only its exact finite floor/ceiling
+  literals and receipt. No physical interpretation or universal certificate claim is
+  inherited.
+- N5 — Execution certificate: per element, all 2,672 rows are checked; per site, only
+  the one supplied 16-corner cell is checked; per mode, no field/spectral/momentum mode
+  is executed; per block, the full incidence, all 98 subgroups, all 8,008 six-corner
+  sets, and eleven witnesses are checked; lattice-wide, no multi-cell, arbitrary-L,
+  thermodynamic, boundary-limit, or continuum operation is executed.
+- N6 — Partial-closure paths: a different point family, a non-point incidence basis,
+  an analytic parity identity, or a symmetry-preserving proof may exist. The theorem
+  does not require closing those paths.
+- N7 — Steelman: the strongest objection is that a failed fixed incidence system says
+  nothing about all certificate languages. The note accepts that objection and narrows
+  both negatives accordingly.
+- N8 — Cross-cycle echo: earlier finite-cell notes used the same supplied-model boundary.
+  Cycle 730 (`PHYSICAL_CELL_ADJACENCY_ENDPOINT_STRUCTURE_CYCLE730_NOTE_2026-08-04.md`)
+  is lineage context only; Cycle 732 consumes neither its support partitions nor its
+  zero-slack theorem. Cycle 731 is the sole direct scientific predecessor because its
+  bound certificates are imported exactly.
 
-**The spectrum.** The exhibited floor rows bound every cost below by 108. The exhibited
-ceiling rows bound every cost above by 128. The certificate makes every cost even. Eleven
-exhibited dissections realise costs
-`[108, 110, 112, 114, 116, 118, 120, 122, 124, 126, 128]`, and the greatest common divisor
-of their differences is 2. The adjacency cost spectrum of the cell is therefore exactly
-those eleven even integers.
+No-Go status for the two fixed-ansatz negatives: PASS.
 
-## Independent cross-checks performed
+## Hostile tests and claim boundary
 
-Every headline of this note was re-derived by a method the runner does not use, and every
-gate was tested against a perturbed object to confirm it discriminates. These checks were
-run in separate probes, not inside the artifact; the counts they report in this section
-are therefore theirs, and are not among the numbers the runner prints.
+The primary and independent artifacts reject a toggled parity point, a changed
+modulo-three dual coefficient, a tightened bound constant, and a damaged dissection.
+The independent checker also reconstructs the full finite action and subgroup lattice.
 
-The incidence of points in pieces was rebuilt with exact rational barycentric
-coordinates, with no common denominator and no integer scaling anywhere. On a sample of
-20 pieces taken at a fixed stride through the 2672, checked against all 2736 points, it
-disagreed with the runner's integer incidence nowhere.
+What is proved:
 
-The subgroup family was rebuilt by a different closure: every subgroup is the join of its
-cyclic subgroups, so closing the distinct cyclic subgroups under pairwise join reaches all
-of them. It returns the identical family of 98. There are 34 distinct cyclic subgroups,
-not one per element, since different elements generate coinciding cyclic subgroups.
+- exact finite parity and spectrum for the supplied one-cell, one-tick,
+  normalized-volume-one corner-simplex model;
+- exact invariance and modulo-three obstruction statements only for the fixed
+  2,736-point incidence ansatz;
+- eleven explicit attaining dissections.
 
-The eleven dissections were re-validated against a second, independent family of sample
-points built from different weights. It yields 2736 points, none on a boundary, orbits of
-size 48, and column sums between 90 and 224 — and all eleven covers hit every point of it
-exactly once. The construction does not depend on the particular weights chosen.
+What is not proved:
 
-The elimination over the field of two elements was redone with rows held as big integers
-and lowest-set-bit pivoting, with no array library involved, and returned the same rank
-465.
-
-The perturbation tests behaved as required. One point of the certificate set moved breaks
-rows. A witness with one piece swapped is no longer a dissection. Equal weights instead of
-superincreasing ones put points on boundaries, where the runner's family puts none. No
-subgroup of order above 12 leaves the exhibited point set invariant.
-
-Certifiability is not generic, and this is worth stating on its own. The point-level
-system modulo 2 has rank 465 among its 2672 rows, so the targets it can certify are a
-very thin subspace. Ten uniformly random targets were tested and none was certifiable.
-Ten random shuffles of the charge vector itself were tested and none was certifiable
-either — a shuffle keeps how many pieces carry an odd charge and still fails. That the
-actual charge vector is certifiable is therefore a fact about how charge sits on the
-pieces of this cell, not something any assignment of the same charges would give.
-
-One check changed the language of this note. Nudging the floor weights by a single unit
-breaks a row in only 12 of the 24 possible directions, so those weights are not the only
-integer system that certifies the floor. The note therefore says "the exhibited floor
-rows" throughout and never speaks of a unique floor certificate.
-
-## Boundary and honest read
-
-The parity theorem is about this cell. It is proved by exhibiting a certificate for this
-cell's 2672 pieces, and it says nothing about any other object. An earlier cycle's attempt
-at a parity law across objects was refuted, and nothing here revives it.
-
-The certificate was found by elimination, so this note does not claim it is the only one,
-or the smallest. What is claimed is that the exhibited one works, is rigid under
-single-point changes, and forces evenness.
-
-The floor of 108 and the ceiling of 128 are inherited from earlier cycles of this lane and
-re-verified here rather than re-derived. The new content is the parity, the sharpness of
-the modulus, the index-4 symmetry ladder, and the attainment of every even value between
-the bounds.
-
-The eleven dissections are exhibited, not classified. The note does not say how many
-dissections realise each cost, only that each even cost is realised.
-
-The step from the row congruence to the cost statement uses that no sample point lies on a
-piece boundary. That is measured, not assumed, and it is what makes the argument
-independent of any structural hypothesis about the dissection.
+- that the framework selects this cell, allowed-piece class, charge, or dissection;
+- that the supplied tick coordinate is a physical tick realization;
+- uniqueness or classification of dissections or parity certificates;
+- absence of another modulo-three or more symmetric certificate construction;
+- any multi-cell, arbitrary-domain, arbitrary-L, boundary, thermodynamic, continuum,
+  gravity, Record, or Born-rule statement.
 
 ## Artifacts
 
-- Runner: `scripts/physical_parity_certificate_cost_spectrum_cycle732_2026_08_04.py`
-- Recorded output:
-  `outputs/physical_parity_certificate_cost_spectrum_cycle732_2026_08_04_cold_2026-08-04.txt`
-- Receipt:
+- Primary runner:
+  `scripts/physical_parity_certificate_cost_spectrum_cycle732_2026_08_04.py`
+- Independent checker:
+  `scripts/physical_parity_certificate_cost_spectrum_cycle732_independent_check_2026_08_04.py`
+- Primary cache:
+  `logs/runner-cache/physical_parity_certificate_cost_spectrum_cycle732_2026_08_04.txt`
+- Independent cache:
+  `logs/runner-cache/physical_parity_certificate_cost_spectrum_cycle732_independent_check_2026_08_04.txt`
+- Generated receipt:
   `outputs/physical_parity_certificate_cost_spectrum_cycle732_2026_08_04_receipt_2026-08-04.json`
 
-The runner reports `TOTAL: PASS=39 FAIL=0`. Every number quoted above appears in that
-output.
+## Review-loop repair record
+
+On 2026-08-12 the review loop independently re-derived the theorem, found the parity and
+spectrum sound, and required claim repair before landing.  The repair demoted the model
+to supplied finite data; made Cycle 731 a direct input-bound dependency; narrowed the
+symmetry and modulo-three negatives to the fixed ansatz; removed the geometric
+triple-cover and universal-certificate rhetoric; added an independent exact checker,
+hostile controls, generated receipt, canonical caches, fail-closed exits, and this
+N1-N8/N5 packet.  This record is source-review provenance, not an audit verdict.

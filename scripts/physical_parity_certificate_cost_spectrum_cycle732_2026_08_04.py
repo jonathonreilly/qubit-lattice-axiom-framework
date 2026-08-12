@@ -1,79 +1,106 @@
-"""Cycle 732: a parity certificate for the single cell, and the exact cost spectrum.
+"""Cycle 732: an exact spectrum theorem in one supplied finite cell model.
 
-THE OBJECT.  The cell is the unit four-box over the lattice: three spatial coordinates
-and one tick, sixteen corners.  A piece is a five-corner set of least volume; its
-adjacency charge counts the corner pairs whose spatial separation exceeds one step.  A
-dissection of the cell is a family of twenty four pieces with disjoint interiors whose
-union is the cell, and its cost is the sum of the piece charges.
+The supplied object is a unit four-cube with three spatial corner coordinates and one
+equally grained tick coordinate.  Its allowed pieces are normalized-volume-one
+five-corner simplices, its dissections contain 24 such pieces, and its declared charge
+counts vertex pairs whose spatial L1 separation exceeds one.  The framework does not
+select this corner-simplex model or charge.  The Lattice axiom supplies only the spatial
+grading and proper rotations; kinetic isotropy supplies only equal tick/edge graining.
 
-WHAT IS ALREADY MEASURED IN THIS LANE.  The cost of a dissection lies between 108 and
-128, both ends attained, each end certified by an exhibited integer combination of the
-piece inequalities.  A further certificate turns the lower end into an equality: the
-floor slack takes only two values, so the cost is 108 plus the number of pieces outside
-the tight set.
+Inside that domain an exact sample-point incidence certificate proves that every cost is
+even.  Carried Cycle 731 bound certificates give 108 <= cost <= 128, and eleven explicit
+dissections attain every even value in that interval.  Thus the supplied-model spectrum
+is exactly {108, 110, ..., 128}.
 
-WHAT THIS ADDS: a congruence, and with it the whole spectrum.
+Two negative statements are deliberately ansatz-bounded.  Among the 48-symmetry
+subgroups, the largest subgroup under which this carried 2,736-point incidence system
+admits an invariant parity certificate has order 12.  The same fixed point-incidence
+system has no solution modulo 3, certified by a four-row dual witness.  Neither statement
+excludes another certificate construction or another sample-point family.
 
-  1.  PARITY.  There is a set S of sample points, each interior to the cell and none on
-      any piece boundary, with
-
-          the number of points of S inside p  ==  charge(p)   modulo 2
-
-      on every one of the 2672 pieces of least volume.  Every sample point lies inside
-      exactly one piece of any dissection, so summing the congruence over a dissection
-      gives cost == the size of S modulo 2.  The set exhibited here has 228 points, an
-      even number, so EVERY dissection of the cell has EVEN cost.  The argument uses no
-      solver and no piece count: only the exhibited set and the 2672 verified rows.
-
-  2.  HOW MUCH SYMMETRY A CERTIFICATE CAN KEEP.  The cell has 48 symmetries, the 24
-      proper rotations with and without the tick flip.  No parity certificate is
-      invariant under all of them.  Sweeping every subgroup: of the twelve subgroups of
-      order twelve or more, exactly one admits an invariant certificate, and it is a
-      twelve element subgroup of pure rotations, no tick flip, with rotation traces 3
-      once, 0 eight times and -1 three times.  So a certificate must drop the symmetry
-      by index four, and need drop no more.  The set S above is a union of nineteen
-      orbits of that subgroup.
-
-  3.  PARITY IS THE SHARP CONGRUENCE, by two independent routes.  Eleven dissections are
-      exhibited, one of each even cost from 108 to 128, each validated in full: twenty
-      four distinct pieces of least volume, pairwise disjoint by an exhibited integer
-      separating direction, covering every sample point.  Their costs differ by 2, so no
-      modulus above 2 divides every cost difference.  Independently, the point level
-      system has no solution modulo 3.
-
-  4.  THE SPECTRUM.  The two bounding certificates give 108 <= cost <= 128, the parity
-      certificate makes every cost even, and the eleven dissections attain every even
-      value between.  The cost spectrum of the cell is exactly the eleven even integers
-      108, 110, ..., 128.
-
-METHOD.  No solver appears in this artifact.  The certificate is produced by exact
-Gaussian elimination over a prime field and then verified row by row in integer
-arithmetic; the negative result modulo three is the same elimination reporting an
-inconsistent row.  Subgroups are found by closing generator sets to a fixpoint, which
-reaches every subgroup because any subgroup is the last link of a chain of single
-generator extensions, and the family is checked closed under one more extension.
-Dissections are exhibited, never searched for inside the artifact: each pinned piece
-list is checked for least volume, for pairwise disjointness against an exhibited integer
-direction, and for covering all 2736 sample points.
-
-Every number quoted in the companion note is printed below.
+The runner performs exact finite elimination and verification, calls no external
+optimizer, and exits nonzero on any failed gate.
 """
+import ast
 import itertools
+import json
 import math
+import sys
+from collections import Counter
+from pathlib import Path
 
 import numpy as np
 
 PF = [0, 0]
+GATES = []
+
+ROOT = Path(__file__).resolve().parents[1]
+NOTE_PATH = "docs/PHYSICAL_PARITY_CERTIFICATE_COST_SPECTRUM_CYCLE732_NOTE_2026-08-04.md"
+INDEPENDENT_PATH = (
+    "scripts/physical_parity_certificate_cost_spectrum_cycle732_independent_check_"
+    "2026_08_04.py"
+)
+C731_NOTE_PATH = (
+    "docs/PHYSICAL_COST_IDENTITY_INDICATOR_CERTIFICATE_CYCLE731_NOTE_2026-08-04.md"
+)
+C731_RUNNER_PATH = (
+    "scripts/physical_cost_identity_indicator_certificate_cycle731_2026_08_04.py"
+)
+C731_RECEIPT_PATH = (
+    "outputs/physical_cost_identity_indicator_certificate_cycle731_2026_08_04_"
+    "receipt_2026-08-04.json"
+)
+RECEIPT_PATH = ROOT / (
+    "outputs/physical_parity_certificate_cost_spectrum_cycle732_2026_08_04_"
+    "receipt_2026-08-04.json"
+)
+AUDIT_INPUT_PATHS = (
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+    "docs/PHYSICAL_COST_IDENTITY_INDICATOR_CERTIFICATE_CYCLE731_NOTE_2026-08-04.md",
+    "scripts/physical_cost_identity_indicator_certificate_cycle731_2026_08_04.py",
+    "outputs/physical_cost_identity_indicator_certificate_cycle731_2026_08_04_"
+    "receipt_2026-08-04.json",
+    "docs/PHYSICAL_PARITY_CERTIFICATE_COST_SPECTRUM_CYCLE732_NOTE_2026-08-04.md",
+    "scripts/physical_parity_certificate_cost_spectrum_cycle732_independent_check_"
+    "2026_08_04.py",
+)
+AUDIT_TIMEOUT_SEC = 300
 
 
 def gate(ok, name, detail):
     PF[0 if ok else 1] += 1
-    print(("PASS " if ok else "FAIL ") + name + "  " + detail)
+    GATES.append((name, bool(ok)))
+    print(("PASS " if ok else "FAIL ") + name + "  " + detail, flush=True)
 
 
 def sec(text):
-    print("")
-    print(text)
+    print("", flush=True)
+    print(text, flush=True)
+
+
+def carried_literals(path, wanted):
+    """Parse selected dependency literals without importing or executing it."""
+    tree = ast.parse((ROOT / path).read_text(encoding="utf-8"))
+    found = {}
+    for node in tree.body:
+        if not isinstance(node, ast.Assign) or len(node.targets) != 1:
+            continue
+        target = node.targets[0]
+        if isinstance(target, ast.Name) and target.id in wanted:
+            found[target.id] = ast.literal_eval(node.value)
+        elif isinstance(target, ast.Tuple) and isinstance(node.value, ast.Tuple):
+            names = [item.id for item in target.elts if isinstance(item, ast.Name)]
+            values = ([ast.literal_eval(item) for item in node.value.elts]
+                      if wanted.intersection(names) else [])
+            if len(names) == len(values):
+                for name, value in zip(names, values):
+                    if name in wanted:
+                        found[name] = value
+    missing = sorted(set(wanted) - set(found))
+    if missing:
+        raise ValueError("missing carried literals {0} in {1}".format(missing, path))
+    return found
 
 
 def det4(A):
@@ -328,9 +355,8 @@ while todo:
 SHUT = all(all(TAB[a][b] in H for a in H for b in H) and E in H for H in subs)
 LAG = all(divmod(len(G), len(H))[1] == 0 for H in subs)
 gate(len(subs) == 98 and SHUT and LAG,
-     "lad.closed", "closing every one-element extension to a fixpoint reaches {0} sets, "
-                   "each of them shut under composition, holding the identity, and of "
-                   "order dividing {1}".format(len(subs), len(G)))
+     "lad.closed", "{0} closed identity-containing subgroups, all orders dividing "
+                   "{1}".format(len(subs), len(G)))
 
 BIG = sorted([H for H in subs if len(H) >= 12], key=lambda h: (-len(h), sorted(h)))
 CEN2 = [(d, sum(1 for H in BIG if len(H) == d))
@@ -356,7 +382,8 @@ OVER = [H for H in BIG if len(H) > 12]
 WO = sorted(len(H) for H, _, _, _ in wins)
 gate(len(OVER) == 7 and max(WO) == 12 and len(G) // max(WO) == 4,
      "lad.index", "all {0} subgroups of order above 12 fail and one of order {1} "
-                  "succeeds, so the symmetry drops by index {2} and no more".format(
+                  "succeeds inside this fixed incidence ansatz; its invariant "
+                  "certificate has index {2}".format(
                       len(OVER), max(WO), len(G) // max(WO)))
 
 HW, LBW, NBW, XW = wins[0]
@@ -406,7 +433,7 @@ gate(not bool((np.remainder(MI @ (1 - W) + ZC, 2) == CXB).all()) and
      "par.wrong", "neither the complementary point set nor the set of all sample points "
                   "certifies the same congruence")
 
-sec("no rule modulo three, exhibited on four pieces and confirmed twice over")
+sec("no rule modulo three in the fixed incidence ansatz")
 
 AP = np.zeros((NPIECE, NQ + 1), dtype=np.int16)
 AP[:, :NQ] = MI
@@ -416,10 +443,10 @@ X3, R3 = solvep(AP, TG3, 3)
 X2, R2 = solvep(AP, CXB, 2)
 
 # The obstruction, exhibited rather than reported as the outcome of a search.  These four
-# pieces of least volume all sit inside a single six corner subset of the cell, and taken
-# with the multiplicities below they cover part of the cell exactly three times over and
-# the rest of it not at all.  Any rule assigning a residue modulo three to each piece
-# would have to hand that triple cover a total divisible by three.  The charges decline.
+# pieces of least volume all sit inside a single six-corner subset.  On the fixed 2,736
+# incidence columns, their weighted row sum is divisible by three while their weighted
+# charge is not.  This is an exact linear-algebra obstruction for this ansatz; it is not
+# asserted to be a geometric triple cover or to exclude another certificate family.
 DUAL = [(72, 1), (74, 2), (176, 2), (479, 1)]
 DJ = [j for j, _ in DUAL]
 DC = np.array([c for _, c in DUAL], dtype=np.int64)
@@ -429,9 +456,9 @@ DCH = int(DC @ CX[DJ])
 gate(len(DSIX) == 6 and sorted(set(int(t) for t in DCOL)) == [0, 3] and
      int(np.remainder(DC.sum(), 3)) == 0 and int(np.remainder(DCH, 3)) != 0,
      "cong.witness",
-     "four pieces inside the six corner set {0}, counted {1} times over, cover {2} sample "
-     "points three times each and the remaining {3} not at all, and their multiplicities "
-     "add to {4}; their charges {5} add to {6}, which is {7} modulo 3".format(
+     "four rows inside the six-corner set {0}, counted {1} times, sum to 3 on {2} fixed "
+     "incidence columns and 0 on the remaining {3}; their multiplicities add to {4}, "
+     "while charges {5} add to {6}, which is {7} modulo 3".format(
          DSIX, [c for _, c in DUAL], int((DCOL == 3).sum()), int((DCOL == 0).sum()),
          int(DC.sum()), [int(CX[j]) for j in DJ], DCH, int(np.remainder(DCH, 3))))
 
@@ -455,8 +482,8 @@ gate(NSIX == 8008 and loc == 1104 and sorted(held.items()) == [(4, 864), (6, 240
                    "of least volume and {3} hold six".format(
                        NSIX, loc, held.get(4, 0), held.get(6, 0)))
 gate(X3 is None,
-     "cong.mod3", "eliminating the whole point level system agrees: rank {0} modulo 3 "
-                  "with an inconsistent row, so no certificate modulo 3 exists".format(R3))
+     "cong.mod3", "eliminating the whole fixed point-incidence system agrees: rank {0} "
+                  "modulo 3 with an inconsistent row".format(R3))
 gate(X2 is not None and R2 == 465,
      "cong.mod2", "the same system has rank {0} modulo 2 and is consistent".format(R2))
 
@@ -532,9 +559,8 @@ def is_dissection(idx):
 
 COST = [int(CX[np.array(d)].sum()) for d in DIS]
 gate(all(is_dissection(d) for d in DIS),
-     "wit.dissect", "all {0} pinned covers are dissections: 24 distinct pieces of least "
-                    "volume, pairwise disjoint by an exhibited direction, every sample "
-                    "point covered".format(len(DIS)))
+     "wit.dissect", "all {0} pinned covers have 24 distinct unit pieces, pairwise "
+                    "separation, and full point coverage".format(len(DIS)))
 gate(COST == list(range(108, 129, 2)),
      "wit.cost", "their costs are {0}".format(COST))
 gate(all(int(MI[np.array(d)].sum(axis=0).max()) == 1 for d in DIS),
@@ -560,6 +586,25 @@ FLOOR_D, FLOOR_Z = 216, 756
 CEIL_U = [(0, 3), (4, 3), (20, 3), (22, -5), (34, 4), (35, -31), (36, 31),
           (37, 6), (43, 2), (44, -4), (45, -1), (51, -1), (52, -2)]
 CEIL_D, CEIL_Z = 3, 0
+C731_DATA = carried_literals(
+    C731_RUNNER_PATH,
+    {"FLOOR_U", "FLOOR_D", "FLOOR_Z", "CEIL_U", "CEIL_D", "CEIL_Z"},
+)
+C731_RECEIPT = json.loads((ROOT / C731_RECEIPT_PATH).read_text(encoding="utf-8"))
+gate(
+    C731_RECEIPT.get("status") == "pass"
+    and C731_RECEIPT.get("floor_indicator", {}).get("denominator") == 216
+    and C731_RECEIPT.get("floor_indicator", {}).get("value") == 23328
+    and C731_RECEIPT.get("ceiling_fixed_certificate_family", {}).get("denominator") == 3
+    and C731_DATA["FLOOR_U"] == FLOOR_U
+    and C731_DATA["FLOOR_D"] == FLOOR_D
+    and C731_DATA["FLOOR_Z"] == FLOOR_Z
+    and C731_DATA["CEIL_U"] == CEIL_U
+    and C731_DATA["CEIL_D"] == CEIL_D
+    and C731_DATA["CEIL_Z"] == CEIL_Z,
+    "dep.cycle731",
+    "Cycle 731's carried floor and ceiling certificate literals are input-bound",
+)
 ROWM = np.zeros((NPIECE, NORB), dtype=np.int64)
 for o in range(NORB):
     ROWM[:, o] = MI[:, PORB == o].sum(axis=1)
@@ -599,5 +644,105 @@ gate(sorted(set(COST)) == list(range(108, 129, 2)) and len(set(COST)) == 11,
                       "every even value between attained: the cost spectrum of the cell "
                       "is exactly {0}".format(sorted(set(COST))))
 
-print("")
-print("TOTAL: PASS={0} FAIL={1}".format(PF[0], PF[1]))
+sec("hostile controls")
+gate(int(slacks(FU, FLOOR_Z + 1, FLOOR_D, False).min()) < 0 and
+     int(slacks(CU, CEIL_Z - 1, CEIL_D, True).min()) < 0,
+     "hostile.bounds", "tightening either exact bound by one numerator unit breaks a row")
+DC_BAD = DC.copy()
+DC_BAD[0] += 1
+BAD_COL = np.remainder(DC_BAD @ MI[DJ], 3)
+gate(bool(BAD_COL.any()),
+     "hostile.dual", "changing one dual multiplicity destroys the modulo-3 row relation")
+BAD_W = list(DIS[0])
+BAD_W[0] = next(i for i in range(NPIECE) if i not in BAD_W)
+gate(not is_dissection(BAD_W),
+     "hostile.witness", "replacing one pinned piece is rejected by the dissection gate")
+BAD_PAR = W.copy()
+BAD_PAR[0] ^= 1
+gate(not bool((np.remainder(MI @ BAD_PAR + ZC, 2) == CXB).all()),
+     "hostile.parity", "toggling one certificate point is rejected by the all-row gate")
+
+sec("N5 execution certificate")
+N5 = [
+    "per_element: checked -- all 2,672 supplied normalized-volume-one corner "
+    "simplices enter the exact parity and bound rows",
+    "per_site: checked -- one supplied 16-corner unit four-cube only; no physical cell "
+    "or simplex selection is executed",
+    "per_mode: checked and not executed -- this finite incidence theorem has no field, "
+    "spectral, or momentum modes",
+    "per_block: checked -- the full 2,672 by 2,736 incidence system, all 98 subgroups, "
+    "all 8,008 six-corner sets, and eleven 24-piece witnesses",
+    "lattice_wide: checked and not executed -- no multi-cell, boundary-limit, "
+    "thermodynamic, continuum, or arbitrary-L claim is asserted",
+]
+for line in N5:
+    print("N5 " + line, flush=True)
+
+receipt = {
+    "schema": "physical-parity-certificate-cost-spectrum-cycle732-v2",
+    "status": "pass" if PF[1] == 0 else "fail",
+    "audit_status_authority": "independent audit lane only",
+    "claim_type": "bounded_theorem",
+    "supplied_model": {
+        "corners": 16,
+        "piece_class": "five-corner normalized-volume-one simplices",
+        "pieces": NPIECE,
+        "pieces_per_dissection": 24,
+        "charge": "vertex pairs with spatial L1 separation greater than one",
+        "physical_cell_simplex_charge_selection_bridge": "open",
+        "physical_tick_admissibility_bridge": "open",
+    },
+    "direct_dependency": {
+        "cycle": 731,
+        "status": C731_RECEIPT.get("status"),
+        "carried_floor_denominator": FLOOR_D,
+        "carried_ceiling_denominator": CEIL_D,
+        "carried_literals_match": bool(C731_DATA["FLOOR_U"] == FLOOR_U and
+                                       C731_DATA["CEIL_U"] == CEIL_U),
+    },
+    "parity_certificate": {
+        "sample_points": NQ,
+        "selected_points": SSZ,
+        "constant": ZC,
+        "all_piece_rows_checked": NPIECE,
+        "fixed_ansatz_rank_mod2": R2,
+    },
+    "fixed_incidence_ansatz": {
+        "group_order": len(G),
+        "subgroups": len(subs),
+        "largest_invariance_order_found": max(WO),
+        "certificate_stabilizer_order": STAB,
+        "mod3_rank": R3,
+        "mod3_consistent": X3 is not None,
+        "six_corner_local_obstructions": loc,
+    },
+    "exact_spectrum": sorted(set(COST)),
+    "witnesses": {
+        str(cost): {"pieces": len(dis), "pair_separators": 276}
+        for cost, dis in zip(COST, DIS)
+    },
+    "checks": {"named_checks_passed": PF[0], "named_checks_failed": PF[1]},
+    "gates": dict((name, "PASS" if ok else "FAIL") for name, ok in GATES),
+    "no_go_discipline": {
+        "status": "PASS",
+        "claim_scope": "two exact negative results only inside the fixed 2,736-point "
+        "incidence ansatz: no modulo-3 solution and no invariant certificate above "
+        "subgroup order 12",
+        "n5_execution_certificate": N5,
+    },
+    "review_loop": [{
+        "date": "2026-08-12",
+        "iteration": 1,
+        "reviewer": "Codex review-loop",
+        "disposition": "FIX_THEN_PROCEED",
+        "fix": "demoted the construction to supplied finite data; bound the symmetry "
+        "and modulo-3 negatives to the tested incidence ansatz; added the direct Cycle "
+        "731 dependency, independent exact reconstruction, hostile controls, generated "
+        "receipt, canonical caches, fail-closed exit, and an N1-N8/N5 packet",
+    }],
+}
+RECEIPT_PATH.write_text(json.dumps(receipt, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+print("RECEIPT " + str(RECEIPT_PATH.relative_to(ROOT)), flush=True)
+print("", flush=True)
+print("TOTAL: PASS={0} FAIL={1}".format(PF[0], PF[1]), flush=True)
+sys.exit(0 if PF[1] == 0 else 1)

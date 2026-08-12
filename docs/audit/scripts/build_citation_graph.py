@@ -239,6 +239,12 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
         "scripts/physical_cost_identity_indicator_certificate_cycle731_"
         "independent_check_2026_08_04.py",
     ],
+    # Cycle 732's checker independently rebuilds the finite action, full incidence,
+    # parity solve, subgroup ladder, bound rows, dual obstruction, and all witnesses.
+    "physical_parity_certificate_cost_spectrum_cycle732_note_2026-08-04": [
+        "scripts/physical_parity_certificate_cost_spectrum_cycle732_"
+        "independent_check_2026_08_04.py",
+    ],
     "b4_clock_relation_run_cycle879_bounded_theorem_note_2026-07-28": [
         "scripts/frontier_cycle879_b4_relation_independent_check_2026_07_28.py",
     ],

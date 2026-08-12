@@ -223,5 +223,5 @@ verdicts.
 
 ## Runner
 
-The primary runner prints `TOTAL: PASS=51 FAIL=0` on the repaired source tree.
+The primary runner prints `TOTAL: PASS=52 FAIL=0` on the repaired source tree.
 Its receipt verdict is conditional on the accumulated gate failures.

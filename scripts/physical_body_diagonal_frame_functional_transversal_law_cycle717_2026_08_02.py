@@ -82,6 +82,9 @@ for _c in c696.SPATIAL_CLASSES:
 
 WRAP = False
 L_LIST = (3, 4)
+EXPECTED_LT = 2
+EXPECTED_FD_H = 1.0e-4
+EXPECTED_SPATIAL_CLASSES = 7
 NDOF = {3: 98, 4: 279}
 SEXTET_EXPECTED = (1, 4, 9, 15, 18, 23)
 DIAGONALS = ((1, 1, 1), (1, 1, -1), (1, -1, 1), (-1, 1, 1))
@@ -120,6 +123,17 @@ def check(name: str, ok: bool, detail: str = "") -> bool:
     GATES[name] = {"pass": ok, "detail": detail}
     print("{} {} {}".format("PASS" if ok else "FAIL", name, detail))
     return ok
+
+
+def run_input_layer():
+    """Reject direct execution on a silently changed compiler configuration."""
+    check("g0_compiler_configuration",
+          c696.LT == EXPECTED_LT and c696.FD_H == EXPECTED_FD_H
+          and len(c696.SPATIAL_CLASSES) == EXPECTED_SPATIAL_CLASSES
+          and len(FRAMES) == len({tuple(f.ravel()) for f in FRAMES}) == 24,
+          "LT {} FD_H {} spatial classes {} distinct frames {}".format(
+              c696.LT, c696.FD_H, len(c696.SPATIAL_CLASSES),
+              len({tuple(f.ravel()) for f in FRAMES})))
 
 
 # ---------------------------------------------------------------------------
@@ -596,6 +610,8 @@ def run_boundary(ctx, reg, srcs, TV):
 # ---------------------------------------------------------------------------
 def main():
     print("c717 finite body-diagonal action and transversal probe census")
+    print("-- supplied compiler configuration --")
+    run_input_layer()
     print("-- body diagonals and the sextet --")
     run_diagonal_layer()
     print("-- covering is transitivity --")
@@ -619,6 +635,10 @@ def main():
         "pass": N_PASS,
         "fail": N_FAIL,
         "box_sizes": list(L_LIST),
+        "compiler_configuration": {
+            "LT": c696.LT, "FD_H": c696.FD_H,
+            "spatial_classes": len(c696.SPATIAL_CLASSES), "wrap": WRAP,
+        },
         "sextet": list(SEXTET_EXPECTED),
         "body_diagonals": [list(d) for d in DIAGONALS],
         "transversals": N_TRANSVERSALS,

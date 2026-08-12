@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """Cycle-710 runner -- the assembly equivariance defect is an exact cocycle on the
-covariance sextet; branch uniformity, the all-sextet response law, and the
-order-one comparator at the covariance boundary.
+constant-sign sextet, with a finite mixed-frame comparator census.
 
 Paired note:
   docs/PHYSICAL_ASSEMBLY_DEFECT_COCYCLE_LAW_AND_COVARIANCE_BOUNDARY_CYCLE710_NOTE_2026-08-02.md
@@ -11,17 +10,24 @@ Measures, on the cycle-696 compiled chain imported verbatim (never re-implemente
       solver scope, identity-frame zero
   C1  transport functoriality on the sextet: m_(a.b) = m_a[m_b] exactly, closure,
       branch product rule
-  C2  the exact cocycle identity E_(a.b) = E_b + Pi_b^T E_a Pi_b, with a
-      reversed-composition rejector
+  C2  the exact cocycle identity E_(a.b) = E_b + Pi_b^T E_a Pi_b, with
+      transport-order and wrong-branch discriminators
   C3  branch uniformity: within-branch and across-size bitwise equality of the
       defect ceiling, and the derived coset-spread law (spread = plus ceiling,
       bit for bit)
-  C4  the first-order response law at every non-identity sextet frame, with
-      plus-branch rejectors and the floor-uniformity band
-  C5  the covariance boundary: order-one comparator, bitwise uniform across all
-      18 non-sextet frames, its separation, law-failure rejector, and the
-      body-diagonal carrier census
+  C4  the first-order response law at every all-minus frame, with plus-branch
+      rejectors and the floor-uniformity band
+  C5  the finite mixed-frame comparator census: order-one comparator, bitwise
+      uniform across all 18 non-sextet frames, its separation, one law-failure
+      witness, and the body-diagonal sign-mixing census
   C6  census cross-checks against the landed cycle-700 identification
+
+Read inventory. External/ancestral scientific input: the cycle-696 compiler module
+and its transitive scripts/ imports, declared in AUDIT_INPUT_PATHS below and loaded
+as a library; every physical quantity below is computed through them. No sibling
+cycle's measured value is read or copied in. Package-local write activity: one paired
+receipt under outputs/. This runner performs no self-hash or receipt-verification
+integrity read.
 
 All floating quantities print through one format ({:.1e}); the receipt carries the
 same strings. Honest-miss rule: every gate band was fixed before this runner ran;
@@ -39,6 +45,21 @@ _MODULE = HERE / "physical_open_coframe_k_endpoint_compiler_cycle696_2026_07_25.
 _SPEC = importlib.util.spec_from_file_location("c696_c710", _MODULE)
 c696 = importlib.util.module_from_spec(_SPEC)
 _SPEC.loader.exec_module(c696)
+
+# The load-bearing repository-source closure: the cycle-696 compiler loaded above
+# plus every scripts/ module it imports transitively. Declared so the runner cache
+# pins their bytes and rejects input drift.
+AUDIT_INPUT_PATHS = (
+    "scripts/physical_open_coframe_k_endpoint_compiler_cycle696_2026_07_25.py",
+    "scripts/physical_dynamical_metric_source_law_bridge_tournament_cycle576_2026_07_22.py",
+    "scripts/physical_dynamical_metric_source_law_bridge_cycle576_regge_support_2026_07_22.py",
+    "scripts/physical_dynamical_metric_source_law_bridge_cycle576_plaquette_support_2026_07_22.py",
+    "scripts/frontier_cubic_coxeter_regge_second_variation_3plus1_2026_06_09.py",
+)
+
+# Observed runtime is a few seconds at L=7; this margin covers the dense solve on
+# a slower independent-review host.
+AUDIT_TIMEOUT_SEC = 600
 
 FRAMES = [np.asarray(m, dtype=np.int64) for m in c696.c576.FRAMES]
 EYE3 = np.eye(3, dtype=np.int64)
@@ -204,6 +225,7 @@ for L in L_LIST:
     mixed_hex = set()
     mixed_emax = None
     mixed_law = None
+    mixed_law_frame = None
     for g in mixed_set:
         m = M[g]
         Em = Q[np.ix_(m, m)] - Q
@@ -211,6 +233,7 @@ for L in L_LIST:
         mixed_hex.add(e.hex())
         if mixed_emax is None:
             mixed_emax = e
+            mixed_law_frame = g
             t2 = eps_of(push(b0, m)) - push(eps0, m)
             pred = push(eps_of(Em @ eps0), m)
             mixed_law = float(np.linalg.norm(t2 - pred)) / float(np.linalg.norm(t2))
@@ -223,7 +246,8 @@ for L in L_LIST:
                "coc_pairs": coc_pairs, "rev": rev, "wrong": wrong,
                "k_fwd": k_fwd, "k_rev": k_rev, "laws": laws,
                "floor_spread": floor_spread, "mixed_hex": mixed_hex,
-               "mixed_emax": mixed_emax, "mixed_law": mixed_law}
+               "mixed_emax": mixed_emax, "mixed_law": mixed_law,
+               "mixed_law_frame": mixed_law_frame}
 
 print("== C0 frame scope, census, bijections, solver scope ==")
 check("c0.det", all(round(float(np.linalg.det(FRAMES[g]))) == 1 for g in range(24)),
@@ -262,12 +286,12 @@ check("c1.coset", all(branch_sign(find_frame(FRAMES[a] @ FRAMES[b]))
                       for a in SEXTET for b in SEXTET),
       "branch product rule: minus.minus=plus, minus.plus=minus")
 
-print("== C2 exact cocycle identity with reversed-composition rejector ==")
+print("== C2 exact cocycle identity with frame-specific discriminators ==")
 for L in L_LIST:
     check("c2.cocycle.L{}".format(L), meas[L]["coc_worst"] <= 1e-20,
           "worst residual {} over composable pairs".format(fmt(meas[L]["coc_worst"])))
     check("c2.pairs.L{}".format(L), meas[L]["coc_pairs"] == 20,
-          "composable non-identity pairs {}".format(meas[L]["coc_pairs"]))
+          "non-identity pairs with non-identity product {}".format(meas[L]["coc_pairs"]))
 m_rej = int(np.sum(ctx[3]["M"][1][ctx[3]["M"][15]] != ctx[3]["M"][15][ctx[3]["M"][1]]))
 check("c2.reject.m", m_rej >= 1 and meas[3]["k_fwd"] != meas[3]["k_rev"],
       "non-commuting pair: {} transport entries differ under reversal".format(m_rej))
@@ -299,7 +323,7 @@ for L in L_LIST:
           "coset spread equals plus ceiling bit for bit {}".format(
               fmt(max(sp.values()))))
 
-print("== C4 first-order law at every non-identity sextet frame ==")
+print("== C4 first-order law at every all-minus frame ==")
 for L in L_LIST:
     laws = meas[L]["laws"]
     for g in minus_set:
@@ -314,7 +338,7 @@ for L in L_LIST:
     check("c4.floor.L{}".format(L), meas[L]["floor_spread"] <= 1e-2,
           "minus floor relative spread {}".format(fmt(meas[L]["floor_spread"])))
 
-print("== C5 the covariance boundary: comparator, separation, carrier ==")
+print("== C5 finite mixed-frame comparator census and one response-law witness ==")
 for L in L_LIST:
     check("c5.uniform.L{}".format(L), len(meas[L]["mixed_hex"]) == 1,
           "comparator bit-identical across all 18 non-sextet frames")
@@ -325,8 +349,8 @@ for L in L_LIST:
           meas[L]["mixed_emax"] / meas[L]["dq"][1] >= 1e9,
           "boundary separation {}".format(fmt(meas[L]["mixed_emax"] / meas[L]["dq"][1])))
     check("c5.reject.L{}".format(L), meas[L]["mixed_law"] >= 0.5,
-          "first-order law fails at the boundary, residual {}".format(
-              fmt(meas[L]["mixed_law"])))
+          "first-order law fails at mixed frame {}, residual {}".format(
+              meas[L]["mixed_law_frame"], fmt(meas[L]["mixed_law"])))
 check("c5.carrier",
       all(BODY_CLASS in mixed_classes(FRAMES[g]) for g in mixed_set),
       "body-diagonal class carries the obstruction at all 18 frames")
@@ -367,6 +391,7 @@ receipt = {
             "mixed_offset": fmt(abs(meas[L]["mixed_emax"] - 4.0)),
             "mixed_sep": fmt(meas[L]["mixed_emax"] / meas[L]["dq"][1]),
             "mixed_law_resid": fmt(meas[L]["mixed_law"]),
+            "mixed_law_frame": meas[L]["mixed_law_frame"],
         } for L in L_LIST
     },
     "total": {"PASS": PASS, "FAIL": FAIL},

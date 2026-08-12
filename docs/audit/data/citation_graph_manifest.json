@@ -1,6 +1,6 @@
 {
- "edge_count": 15795,
- "node_count": 5511,
+ "edge_count": 15802,
+ "node_count": 5512,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -389,6 +389,10 @@
   "admissibility_cut_worldvolume_affine_bag_regge_monopole_boundary_bounded_theorem_note_2026-08-10": {
    "deps_hash": "f29b14b08ffd",
    "out_degree": 4
+  },
+  "admissibility_cycle713_endpoint_record_attachment_intertwiner_boundary_bounded_theorem_note_2026-08-12": {
+   "deps_hash": "d01171e4fcae",
+   "out_degree": 6
   },
   "admissibility_endogenous_geometry_joint_record_rn_local_covariant_contact_selection_boundary_bounded_theorem_note_2026-08-10": {
    "deps_hash": "908bca83f8ca",
@@ -1891,8 +1895,8 @@
    "out_degree": 11
   },
   "canonical_harness_index": {
-   "deps_hash": "f8659fe2023e",
-   "out_degree": 359
+   "deps_hash": "6937c38fdf7b",
+   "out_degree": 360
   },
   "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": {
    "deps_hash": "808c1ccb6109",

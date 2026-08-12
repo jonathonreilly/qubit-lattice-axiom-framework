@@ -1,0 +1,24 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_cycle713_endpoint_record_attachment_intertwiner_boundary_2026_08_12.py
+runner_sha256: 07e3da5d0e333ab7bb542378557f1f717950d860ccc4a8ec2245a7ec54323a1e
+input_fingerprint_sha256: df99e51219368f0068727eb768368ece2074a6e180eb0cffd98ee9a5e6ccf148
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 25.08
+status: ok
+----- stdout -----
+PASS A-current-source-and-target-boundary: current axioms, literal Cycle 713, and Block 65 identify the endpoint-state bridge without importing occurrence or context selection
+PASS B-literal-Cycle713-no-additional-clean-ancilla-endpoint-decoder: 4096 executed seam rows obey p=l xor r; using Cycle 713's supplied p, each two-CNOT choice needs no additional clean ancilla and covers all four P-tensor-M basis rows
+PASS C-arbitrary-coherent-density-intertwiner: 16/16 matrix units intertwine with max residual 0.0e+00; left/right reduced states differ by controlled X
+PASS D-literal-nearest-neighbor-physical-routing: both logical basis changes add two qubit primitives with zero routing failures; routed gates right/left=17820/17820, assigned M2=42
+PASS E-transformed-charge-dictionary-and-nonconservation-boundary: U N_old U^dagger=N_transformed with residual 0.0e+00; on the code N=M+(P xor M), while commutator norm 2 forbids an unchanged-number claim
+PASS F-internal-controlled-X-Block65-instrument-intertwiner: 256/256 full branch/matrix-unit outputs intertwine with max residual 0.0e+00; full spatial 24/576 endpoint-frame covariance remains open
+PASS G-conditional-Block65-Block64-history-continuation: all three decoded-input formation branches continue conditionally for 64 outcomes through 567 microsteps and 191 permanent Records
+PASS H-oriented-endpoint-selection-fork: same literal menu gives right=(Fraction(0, 1), Fraction(1, 2), Fraction(1, 2), Fraction(0, 1)) versus left=(Fraction(0, 1), Fraction(0, 1), Fraction(1, 5), Fraction(4, 5)); the internal endpoint transform is fixed but its signed spatial-frame realization is physical law data
+PASS I-owner-interface-and-no-go-boundary: the decoded logical factor is literal, while one-site physical locality, spatial frame action, orientation, context, occurrence, source disposition, law adoption, and retention remain explicit
+METRICS cycle713_rows=4096 matrix_units=16 routed_right_left=17820/17820 number_commutator=2 instrument_matrix_units=256 continuation_microsteps=567 records_N64=191
+BOUNDARY: Cycle 713 supplies an exact decoded P-tensor-M logical factor after an oriented two-CNOT basis change; the internal controlled-X instrument intertwiner is exact, but the signed 24-frame endpoint action, one-site physical implementation, transformed source disposition, context, occurrence, and law selection remain open
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

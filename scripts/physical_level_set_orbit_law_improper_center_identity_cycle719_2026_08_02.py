@@ -1,30 +1,16 @@
-"""Cycle 719 -- level sets of the k-endpoint value functional are orbits of an
-order-12 assembly symmetry whose improper half carries no frame label.
+"""Cycle 719 -- finite single-slot level sets and center-reflection orbits.
 
 Class-A finite check script (stdlib + numpy only).  It runs on the landed Cycle-696
 open-coframe endpoint compiler, taking the identity-frame static assembly Q and its
 inverse, and measures, from that assembly alone:
 
-  G1  the relabelling index map is a homomorphism of the 24 proper rotations, and is
-      NOT the anti-homomorphism the matrix convention would suggest;
-  G2  the body-diagonal stabilizer sextet and the four right cosets it cuts;
-  G3  the exact stabilizer of the assembly among the 24 frames IS that sextet, with a
-      wide separation from every frame outside it;
-  G4  delta-measurability of the value functional for EVERY slot source and for drawn
-      dense sources, with a resolved gap between distinct body-diagonal labels;
-  G5  a sextet-breaking control on the assembly, which destroys G4;
-  G6  the box-center point reflection as an improper computational identity: an
-      involution, an exact symmetry of the assembly, central in the relabelling group,
-      and not equal to any of the 24 frames;
-  G7  the resulting symmetry order 12 = 6 proper + 6 improper;
-  G8  the orbits of that order-12 group carry the diagonal value function exactly:
-      constant on orbits AND separating distinct orbits;
-  G9  a rejector showing the improper half is the single center reflection and not the
-      larger group of independent per-axis face swaps;
-  G10 full frame-blindness of a slot source is equivalent to its frame stabilizer being
-      transitive on the four body diagonals;
-  G11 a complete classification of every merged value pair as stabilizer-linked,
-      sextet-linked, or center-reflection-linked, with no residue.
+Gate groups cover the faithful 24-frame action and its right-coset fibres; the
+numerical near-stabilizer and uniform within-fibre Rayleigh bound; finite seeded
+probes and a broken-operator control; the center reflection and 12-element numerical
+near-symmetry census; the complete single-slot orbit/level-set census at L={3,4};
+transitivity agreement; and a disjoint proper-sextet versus reflection-required
+merged-pair census.  Exact every-source implications are conditional on exact
+operator invariance; the compiled matrices carry numerical residuals.
 
 No value is read from a pinned table: every number printed here is recomputed from the
 compiler chain in this run.
@@ -38,6 +24,15 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 import numpy as np
+
+AUDIT_INPUT_PATHS = (
+    "scripts/physical_open_coframe_k_endpoint_compiler_cycle696_2026_07_25.py",
+    "scripts/physical_dynamical_metric_source_law_bridge_tournament_cycle576_2026_07_22.py",
+    "scripts/physical_dynamical_metric_source_law_bridge_cycle576_regge_support_2026_07_22.py",
+    "scripts/physical_dynamical_metric_source_law_bridge_cycle576_plaquette_support_2026_07_22.py",
+    "scripts/frontier_cubic_coxeter_regge_second_variation_3plus1_2026_06_09.py",
+)
+AUDIT_TIMEOUT_SEC = 300
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
@@ -53,7 +48,9 @@ CLASS_OF = {tuple(int(abs(int(t))) for t in DIRS[c][:3]): c for c in c696.SPATIA
 WRAP = False
 L_LIST = (3, 4)
 DIAGONALS = ((1, 1, 1), (1, 1, -1), (1, -1, 1), (-1, 1, 1))
-TOL = 1e-8
+TOL_LEVEL = 1e-8
+TOL_STABILIZER = 1e-9
+SEP_OPERATOR = 1.0
 RECEIPT_NAME = ("physical_level_set_orbit_law_improper_center_identity_cycle719"
                 "_2026_08_02_receipt_2026-08-02.json")
 
@@ -173,40 +170,53 @@ def run_L(L: int) -> dict:
     rec = {"n": n}
     print("-- L={} n={} --".format(L, n))
 
-    # G1 -- the relabelling index map is a homomorphism, not an anti-homomorphism
+    # The relabelling index map is a faithful homomorphism.
     hom = max(int(np.abs(perms[MUL[a][b]] - perms[a][perms[b]]).max())
               for a in range(24) for b in range(24))
     anti = max(int(np.abs(perms[MUL[a][b]] - perms[b][perms[a]]).max())
                for a in range(24) for b in range(24))
     rec["hom_mismatch"], rec["antihom_mismatch"] = hom, anti
-    check("G1", hom == 0 and anti > 0,
+    faithful = len({tuple(int(x) for x in p) for p in perms}) == 24
+    check("frame_action_L{}".format(L), hom == 0 and anti > 0 and faithful,
           "index map homomorphism mismatch {} anti-homomorphism mismatch {}".format(hom, anti))
 
-    # G2 -- the body-diagonal stabilizer sextet and its four right cosets
+    # The body-diagonal fibres are exactly the four right cosets of the sextet.
     sizes = sorted(len(FIB[j]) for j in range(4))
-    check("G2", len(SEXTET) == 6 and sizes == [6, 6, 6, 6],
-          "sextet {} cuts four cosets of sizes {}".format(list(SEXTET), sizes))
+    sset = frozenset(SEXTET)
+    closed = frozenset(int(MUL[a][b]) for a in sset for b in sset) == sset
+    right_cosets = {frozenset(int(MUL[h][a]) for h in sset) for a in range(24)}
+    fibres = set(frozenset(FIB[j]) for j in range(4))
+    check("body_diagonal_right_cosets_L{}".format(L),
+          len(SEXTET) == 6 and sizes == [6, 6, 6, 6] and closed
+          and fibres == right_cosets,
+          "sextet {} closed {}, four fibre sizes {}, fibres equal right cosets {}"
+          .format(list(SEXTET), closed, sizes, fibres == right_cosets))
 
-    # G3 -- the exact stabilizer of the assembly among the 24 frames
+    # Numerical near-stabilizer of the compiled assembly among the 24 frames.
     devs = [float(np.abs(Q[np.ix_(perms[g], perms[g])] - Q).max()) for g in range(24)]
     din = max(devs[g] for g in SEXTET)
     dout = min(devs[g] for g in range(24) if g not in SEXTET)
-    stab = tuple(sorted(g for g in range(24) if devs[g] <= 1e-9))
+    stab = tuple(sorted(g for g in range(24) if devs[g] <= TOL_STABILIZER))
     rec["stab_in_dev"], rec["stab_out_dev"] = fmt(din), fmt(dout)
-    check("G3", stab == SEXTET and din <= 1e-9 and dout >= 1.0,
-          "assembly stabilizer {} sextet dev {} outside dev {}".format(
-              "IS the sextet" if stab == SEXTET else list(stab), fmt(din), fmt(dout)))
+    check("numerical_near_stabilizer_L{}".format(L),
+          stab == SEXTET and din <= TOL_STABILIZER and dout >= SEP_OPERATOR,
+          "near-stabilizer {} sextet dev {} outside dev {}".format(
+              "matches the sextet" if stab == SEXTET else list(stab), fmt(din), fmt(dout)))
 
-    # G4 -- delta-measurability of the value functional, slot sources and dense sources
+    # Uniform numerical within-fibre Rayleigh bound, plus slot and seeded probes.
     meas = 0
     for i in range(n):
         vals = np.array([d[perms[g][i]] for g in range(24)])
-        if all(float(np.abs(vals[list(FIB[j])] - vals[FIB[j][0]]).max()) <= TOL
+        if all(float(np.abs(vals[list(FIB[j])] - vals[FIB[j][0]]).max()) <= TOL_LEVEL
                for j in range(4)):
             meas += 1
     rng = np.random.default_rng(7190 + L)
     spread, gap = 0.0, float("inf")
     Qi = np.linalg.inv(Q)
+    rayleigh_operators = [Qi[np.ix_(perms[g], perms[g])] for g in range(24)]
+    uniform = max(float(np.linalg.norm(
+        rayleigh_operators[g] - rayleigh_operators[FIB[j][0]], ord=2))
+        for j in range(4) for g in FIB[j])
     for _ in range(8):
         u = rng.standard_normal(n)
         v = []
@@ -219,11 +229,12 @@ def run_L(L: int) -> dict:
             spread = max(spread, float(np.abs(v[list(FIB[j])] - v[FIB[j][0]]).max()))
         gap = min(gap, min(abs(v[FIB[a][0]] - v[FIB[b][0]])
                            for a in range(4) for b in range(a + 1, 4)))
-    rec["slots_measurable"] = meas
+    rec["slots_measurable"], rec["uniform_rayleigh_bound"] = meas, fmt(uniform)
     rec["dense_spread"], rec["dense_gap"] = fmt(spread), fmt(gap)
-    check("G4", meas == n and spread <= TOL and gap >= 1e-4,
-          "delta-measurable slots {} of {} dense spread {} label gap {}".format(
-              meas, n, fmt(spread), fmt(gap)))
+    check("finite_body_diagonal_measurability_L{}".format(L),
+          meas == n and uniform <= TOL_LEVEL and spread <= TOL_LEVEL and gap >= 1e-4,
+          "slots {} of {}, uniform normalized-source bound {}, seeded spread {}, "
+          "seeded label gap {}".format(meas, n, fmt(uniform), fmt(spread), fmt(gap)))
 
     # G5 -- sextet-breaking control: the same measurement must fail on a broken assembly
     R = Q.copy()
@@ -241,10 +252,10 @@ def run_L(L: int) -> dict:
         for j in range(4):
             bad = max(bad, float(np.abs(v[list(FIB[j])] - v[FIB[j][0]]).max()))
     rec["control_spread"] = fmt(bad)
-    check("G5", bad >= 1e-4,
+    check("broken_operator_control_L{}".format(L), bad >= 1e-4,
           "sextet-breaking control destroys delta-measurability, spread {}".format(fmt(bad)))
 
-    # G6 -- the center reflection as an improper computational identity
+    # Center reflection as a finite numerical computational identity.
     is_perm = sorted(sig.tolist()) == list(range(n))
     invol = int(np.abs(sig[sig] - np.arange(n)).max()) == 0
     devs_sig = float(np.abs(Q[np.ix_(sig, sig)] - Q).max())
@@ -252,24 +263,29 @@ def run_L(L: int) -> dict:
     isframe = any(int(np.abs(sig - perms[g]).max()) == 0 for g in range(24))
     comm = max(int(np.abs(sig[perms[g]] - perms[g][sig]).max()) for g in range(24))
     rec["reflection_dev"], rec["reflection_diag_dev"] = fmt(devs_sig), fmt(dev_diag)
-    check("G6", is_perm and invol and devs_sig <= 1e-9 and dev_diag <= 1e-8
+    check("center_reflection_L{}".format(L),
+          is_perm and invol and devs_sig <= TOL_STABILIZER and dev_diag <= TOL_LEVEL
           and not isframe and comm == 0,
           "center reflection involution {} assembly dev {} diag dev {} a frame {} central {}"
           .format(invol, fmt(devs_sig), fmt(dev_diag), isframe, comm == 0))
 
-    # G7 -- the symmetry order among the 24 frames and their center-reflected partners
-    proper = sum(1 for g in range(24) if devs[g] <= 1e-9)
+    # Numerical near-symmetry census among 48 distinct relabellings.
+    proper = sum(1 for g in range(24) if devs[g] <= TOL_STABILIZER)
     improper = 0
+    candidates = [tuple(int(x) for x in perms[g]) for g in range(24)]
+    candidates += [tuple(int(x) for x in sig[perms[g]]) for g in range(24)]
     for g in range(24):
         m2 = sig[perms[g]]
-        if float(np.abs(Q[np.ix_(m2, m2)] - Q).max()) <= 1e-9:
+        if float(np.abs(Q[np.ix_(m2, m2)] - Q).max()) <= TOL_STABILIZER:
             improper += 1
     rec["sym_proper"], rec["sym_improper"] = proper, improper
-    check("G7", proper == 6 and improper == 6 and proper + improper == 12,
-          "assembly symmetry order {} = {} proper + {} improper".format(
+    check("numerical_near_symmetry_census_L{}".format(L),
+          len(set(candidates)) == 48 and proper == 6 and improper == 6,
+          "48 distinct candidates, near-symmetry count {} = {} proper + {} improper"
+          .format(
               proper + improper, proper, improper))
 
-    # G8 -- the order-12 orbits carry the diagonal value function exactly
+    # Complete finite single-slot level-set/orbit census.
     orb = orbit_partition(n, [perms[s] for s in SEXTET] + [sig])
     const = max(float(np.abs(d[v] - d[v[0]]).max()) for v in orb.values())
     reps = [float(d[v[0]]) for v in orb.values()]
@@ -278,67 +294,78 @@ def run_L(L: int) -> dict:
     hist = dict(sorted(Counter(len(v) for v in orb.values()).items()))
     rec["orbits"], rec["orbit_const"], rec["orbit_sep"] = len(orb), fmt(const), fmt(sep)
     rec["orbit_sizes"] = {str(k): v for k, v in hist.items()}
-    check("G8", const <= TOL and sep > TOL,
+    check("slot_level_set_orbit_census_L{}".format(L),
+          const <= TOL_LEVEL and sep > TOL_LEVEL,
           "orbits {} constant to {} separated by {} sizes {}".format(
               len(orb), fmt(const), fmt(sep), hist))
 
-    # G9 -- rejector: independent per-axis face swaps over-merge
+    # Rejector: independent per-axis face-flip combinations over-merge.
     swaps = axis_face_swaps(L)
     orb8 = orbit_partition(n, swaps + [perms[s] for s in SEXTET])
     dev8 = max(float(np.abs(d[v] - d[v[0]]).max()) for v in orb8.values())
     rec["swap_maps"], rec["swap_orbits"], rec["swap_dev"] = len(swaps), len(orb8), fmt(dev8)
-    check("G9", len(swaps) == 8 and len(orb8) < len(orb) and dev8 >= 1e-3,
+    check("axis_face_flip_rejector_L{}".format(L),
+          len(swaps) == 8 and len(orb8) < len(orb) and dev8 >= 1e-3,
           "{} per-axis face swaps over-merge to {} orbits, value dev {}".format(
               len(swaps), len(orb8), fmt(dev8)))
 
-    # G10 -- full frame-blindness is transitivity of the frame stabilizer
+    # Finite slot-by-slot blindness/transitivity agreement.
     blind = trans = both = 0
     for i in range(n):
         vd = [float(d[perms[FIB[j][0]][i]]) for j in range(4)]
-        b = max(abs(vd[j] - vd[0]) for j in range(4)) <= TOL
+        b = max(abs(vd[j] - vd[0]) for j in range(4)) <= TOL_LEVEL
         H = [h for h in range(24) if perms[h][i] == i]
         t = diag_transitive(H)
         blind += int(b)
         trans += int(t)
         both += int(b and t)
     rec["blind"], rec["transitive"] = blind, trans
-    check("G10", blind == trans == both,
+    check("slot_blindness_transitivity_census_L{}".format(L),
+          blind == trans == both,
           "blind slots {} stabilizer-transitive {} agreeing {}".format(blind, trans, both))
 
-    # G11 -- complete classification of every merged value pair
+    # Complete disjoint group census of every merged single-slot label pair.
     tally = Counter()
+    source_stabilizer_links = 0
     for i in range(n):
         rp = [perms[FIB[j][0]][i] for j in range(4)]
         H = [h for h in range(24) if perms[h][i] == i]
         for a in range(4):
             for b in range(a + 1, 4):
-                if abs(d[rp[a]] - d[rp[b]]) > TOL:
+                if abs(d[rp[a]] - d[rp[b]]) > TOL_LEVEL:
                     continue
-                if any(perms[h][rp[a]] == rp[b] for h in H):
-                    tally["stabilizer"] += 1
-                elif any(perms[g][rp[a]] == rp[b] for g in SEXTET):
-                    tally["sextet"] += 1
-                elif any(sig[perms[g][rp[a]]] == rp[b] for g in range(24)):
-                    tally["reflection"] += 1
+                source_stabilizer_links += int(
+                    any(perms[h][rp[a]] == rp[b] for h in H)
+                )
+                if any(perms[g][rp[a]] == rp[b] for g in SEXTET):
+                    tally["proper_sextet"] += 1
+                elif any(sig[perms[g][rp[a]]] == rp[b] for g in SEXTET):
+                    tally["reflection_required"] += 1
                 else:
                     tally["residue"] += 1
     tot = sum(tally.values())
     rec["merged_total"] = tot
-    rec["merged"] = {k: tally[k] for k in ("stabilizer", "sextet", "reflection", "residue")}
-    check("G11", tally["residue"] == 0 and tot > 0,
-          "merged pairs {} = {} stabilizer + {} sextet + {} reflection, residue {}".format(
-              tot, tally["stabilizer"], tally["sextet"], tally["reflection"],
-              tally["residue"]))
+    rec["merged"] = {k: tally[k] for k in (
+        "proper_sextet", "reflection_required", "residue"
+    )}
+    rec["source_stabilizer_links"] = source_stabilizer_links
+    check("merged_pair_group_census_L{}".format(L),
+          tally["residue"] == 0 and tot > 0
+          and tally["reflection_required"] > tally["proper_sextet"],
+          "merged pairs {} = {} proper-sextet + {} reflection-required, "
+          "residue {}; overlapping source-stabilizer links {}".format(
+              tot, tally["proper_sextet"], tally["reflection_required"],
+              tally["residue"], source_stabilizer_links))
     return rec
 
 
 def main() -> int:
-    print("c719 level sets of the k-endpoint value functional as symmetry orbits")
+    print("Cycle 719 finite single-slot Rayleigh level-set and reflection-orbit census")
     print("24 proper rotations, body-diagonal sextet {}, four cosets".format(list(SEXTET)))
     per_L = {}
     for L in L_LIST:
         per_L[str(L)] = run_L(L)
-    NOTES.append("the improper half of the assembly symmetry carries no body-diagonal label")
+    NOTES.append("center reflection fixes each body diagonal as an unsigned line")
     receipt = {"box_sizes": list(L_LIST),
                "fail": N_FAIL,
                "gates": GATES,
@@ -346,7 +373,9 @@ def main() -> int:
                "pass": N_PASS,
                "per_box": per_L,
                "runner": Path(__file__).name,
-               "sextet": list(SEXTET)}
+               "sextet": list(SEXTET),
+               "tolerances": {"level": fmt(TOL_LEVEL),
+                              "stabilizer": fmt(TOL_STABILIZER)}}
     out = ROOT / "outputs" / RECEIPT_NAME
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(receipt, sort_keys=True, indent=2) + "\n")

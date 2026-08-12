@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/physical_level_set_orbit_law_improper_center_identity_cycle719_2026_08_02.py
+runner_sha256: d8808c3d117420f71b21e95d6c3f2ac67278ba18f7732b7f13bb431bb29437a4
+input_fingerprint_sha256: f16228dfa22ac9810d4cc316446c432694b1b6d39236992c2bac39c9cf2f5eab
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 4.60
+status: ok
+----- stdout -----
+Cycle 719 finite single-slot Rayleigh level-set and reflection-orbit census
+24 proper rotations, body-diagonal sextet [1, 4, 9, 15, 18, 23], four cosets
+-- L=3 n=98 --
+  [PASS] frame_action_L3 index map homomorphism mismatch 0 anti-homomorphism mismatch 64
+  [PASS] body_diagonal_right_cosets_L3 sextet [1, 4, 9, 15, 18, 23] closed True, four fibre sizes [6, 6, 6, 6], fibres equal right cosets True
+  [PASS] numerical_near_stabilizer_L3 near-stabilizer matches the sextet sextet dev 1.243450e-10 outside dev 4.000000e+00
+  [PASS] finite_body_diagonal_measurability_L3 slots 98 of 98, uniform normalized-source bound 1.801548e-10, seeded spread 7.581911e-12, seeded label gap 9.063688e-04
+  [PASS] broken_operator_control_L3 sextet-breaking control destroys delta-measurability, spread 4.482319e-04
+  [PASS] center_reflection_L3 center reflection involution True assembly dev 1.243450e-10 diag dev 2.391624e-11 a frame False central True
+  [PASS] numerical_near_symmetry_census_L3 48 distinct candidates, near-symmetry count 12 = 6 proper + 6 improper
+  [PASS] slot_level_set_orbit_census_L3 orbits 13 constant to 2.391640e-11 separated by 4.286579e-05 sizes {2: 1, 6: 8, 12: 4}
+  [PASS] axis_face_flip_rejector_L3 8 per-axis face swaps over-merge to 6 orbits, value dev 2.356587e-01
+  [PASS] slot_blindness_transitivity_census_L3 blind slots 6 stabilizer-transitive 6 agreeing 6
+  [PASS] merged_pair_group_census_L3 merged pairs 180 = 72 proper-sextet + 108 reflection-required, residue 0; overlapping source-stabilizer links 24
+-- L=4 n=279 --
+  [PASS] frame_action_L4 index map homomorphism mismatch 0 anti-homomorphism mismatch 177
+  [PASS] body_diagonal_right_cosets_L4 sextet [1, 4, 9, 15, 18, 23] closed True, four fibre sizes [6, 6, 6, 6], fibres equal right cosets True
+  [PASS] numerical_near_stabilizer_L4 near-stabilizer matches the sextet sextet dev 1.243450e-10 outside dev 4.000000e+00
+  [PASS] finite_body_diagonal_measurability_L4 slots 279 of 279, uniform normalized-source bound 8.581749e-09, seeded spread 2.214548e-10, seeded label gap 5.635424e-03
+  [PASS] broken_operator_control_L4 sextet-breaking control destroys delta-measurability, spread 1.636304e-03
+  [PASS] center_reflection_L4 center reflection involution True assembly dev 1.243450e-10 diag dev 7.638423e-10 a frame False central True
+  [PASS] numerical_near_symmetry_census_L4 48 distinct candidates, near-symmetry count 12 = 6 proper + 6 improper
+  [PASS] slot_level_set_orbit_census_L4 orbits 34 constant to 7.638064e-10 separated by 1.264701e-04 sizes {1: 1, 2: 1, 6: 18, 12: 14}
+  [PASS] axis_face_flip_rejector_L4 8 per-axis face swaps over-merge to 16 orbits, value dev 1.858569e+00
+  [PASS] slot_blindness_transitivity_census_L4 blind slots 19 stabilizer-transitive 19 agreeing 19
+  [PASS] merged_pair_group_census_L4 merged pairs 450 = 174 proper-sextet + 276 reflection-required, residue 0; overlapping source-stabilizer links 70
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

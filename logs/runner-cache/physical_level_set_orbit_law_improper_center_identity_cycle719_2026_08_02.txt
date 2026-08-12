@@ -4,7 +4,7 @@ runner_sha256: d8808c3d117420f71b21e95d6c3f2ac67278ba18f7732b7f13bb431bb29437a4
 input_fingerprint_sha256: f16228dfa22ac9810d4cc316446c432694b1b6d39236992c2bac39c9cf2f5eab
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 4.60
+elapsed_sec: 4.41
 status: ok
 ----- stdout -----
 Cycle 719 finite single-slot Rayleigh level-set and reflection-orbit census

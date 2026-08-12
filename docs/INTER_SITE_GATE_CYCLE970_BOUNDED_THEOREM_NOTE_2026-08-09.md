@@ -31,10 +31,12 @@ The gate family is motivated by the
 [`RECURRENT_MATTER_HISTORY_CONTROLLER_CYCLE719_BOUNDED_THEOREM_NOTE_2026-07-26.md`](RECURRENT_MATTER_HISTORY_CONTROLLER_CYCLE719_BOUNDED_THEOREM_NOTE_2026-07-26.md)
 package. That source row is an unaudited dependency, so this row enters the
 audit graph as bounded and pending with the dependency edge visible. The proof
-runner does not import that package's transitive runtime chain: it carries the
-five-element basis-gate family and the X/CNOT truth tables locally, under the
-runner hash. This keeps the bounded witness independent of alias or import
-changes elsewhere in the Cycle-719 implementation.
+runner does not import that package's runtime modules. Instead it hash-binds
+and AST-validates the exact exported-semantics chain
+`CORE -> H -> M -> B -> P -> Cycle715`, then checks that its local
+five-element basis-gate interpreter implements the same Cycle-715 `cn` and
+target-XOR-control rule. Any alias-hop or terminal-semantics change invalidates
+the evidence and fails the direct controls.
 
 The [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) memo supplies
 the names for the two neighboring sites, their basis possibilities, and the
@@ -53,8 +55,9 @@ D[W,t,x](y | n)
   = 1{ applying W to (target t=x, nearest neighbor=n) outputs t=y }.
 ```
 
-This is the deterministic point distribution induced by the explicitly
-displayed, self-contained basis-state semantics.
+This is the deterministic point distribution induced by the displayed local
+basis-state interpreter after its equivalence to the bound Cycle-719/Cycle-715
+semantics has passed.
 
 ## Exact census
 
@@ -105,13 +108,16 @@ The primary cache envelope binds:
 
 - the primary runner hash, including its local `Gate`, `cn`, and
   `apply_semantic` definitions; and
-- the axiom memo through the input fingerprint.
+- the axiom memo plus every source in the exact
+  `CORE -> H -> M -> B -> P -> Cycle715` semantics chain through the input
+  fingerprint.
 
 The independent checker uses a separate tuple-based XOR interpreter. It
-validates the stable primary and axiom hashes, parses the fresh primary cache
-envelope, recomputes the primary input fingerprint, checks by AST that the
-primary has no Cycle-719/Cycle-715 runtime import and that its local CNOT uses
-target XOR control, and independently enumerates the 20 comparisons.
+validates stable hashes for the primary, axiom, and six substrate sources;
+parses the fresh primary cache envelope; recomputes the primary input
+fingerprint; independently checks the complete alias chain, the terminal
+Cycle-715 CNOT rule, and the equivalent local rule by AST; and independently
+enumerates the 20 comparisons. Neither runner imports the substrate modules.
 
 The required execution order is primary cache refresh followed by independent
 cache refresh. Both receipts and both cache envelopes are generated from that
@@ -161,9 +167,9 @@ Review-loop hard landing conditions for this repaired final state:
    Cycle-970 ledger row names the Cycle-719 claim id in `deps` and the checker
    in `helper_runner_paths`.
 3. A fresh primary-cache execution followed by a fresh independent-cache
-   execution passes; mutating the primary's local CNOT truth table invalidates
-   the bound evidence, while mutating an old Cycle-719 alias hop leaves the
-   self-contained result and both cache fingerprints unchanged.
+   execution passes; mutating a Cycle-719 alias hop, the terminal Cycle-715
+   CNOT rule, or the primary's local CNOT truth table invalidates the bound
+   evidence and makes both direct runners fail closed.
 
 ## Result
 

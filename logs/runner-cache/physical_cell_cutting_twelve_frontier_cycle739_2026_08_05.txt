@@ -1,0 +1,76 @@
+===== runner cache v1 =====
+runner: scripts/physical_cell_cutting_twelve_frontier_cycle739_2026_08_05.py
+runner_sha256: 9fb052ebe5b58585c716d766c81882f04e16e4584482e7a5a354ff66c8510b9d
+input_fingerprint_sha256: 6cec6a3bd00ee62db7c98240b9324bf1308c148270d703b29bb3a5caacb22571
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 89.78
+status: ok
+----- stdout -----
+INC 15800x192 colsum 1975 rank 88 kernel 104 rows-distinct 15800
+PASS DEP1  Cycle 737 v2 binds the exact geometric population, piece order, and eight algebraic reading functions reconstructed here
+PASS DEP2  Cycle 738 v2 and its independent receipt bind the predecessor exact-weight-ten UNSAT result for the same eight readings
+PASS G01  the cuttings of least cost form a 15800 by 192 table over the two element field
+PASS G02  every one of the 192 pieces is used by exactly 1975 cuttings, an odd count
+PASS G03  that table has rank 88 and kernel dimension 104
+PASS G04  the 15800 cuttings are pairwise distinct as piece sets
+PASS G05  of the 15 block indicators exactly the whole set, its halves and the two quarters of the second half lie in the row space
+PASS G06  those quarters force the printed parity vector on the first twelve readings; the whole and its halves force even; the synthetic reading forces an odd whole
+PASS G07  each planted twelve piece reading forces exactly the whole, half and quarter parities its own profile has
+PASS G08  the eight blocks of 24 pieces carry [0, 0, 0, 0, 0, 0, 1, 2]
+PASS G09  the four quarters carry [0, 0, 6, 13], the halves 13 and 33
+PASS G10  the four mixed quarter pairs carry [9, 13, 15, 22]
+PASS G11  the complements of the four quarters carry [54, 40, 40, 40]
+PASS G12  the quarters, blocks of 24 and halves have the column ranks printed above
+PASS G13  for all 22 blocks and unions the internal dimension plus the rank of the complementary columns is 88
+Q0 subcode dim 14 words 16384 minwt 8
+Q0 wdist {0:1,8:30,12:63,14:164,16:395,18:929,20:1846,22:3017,24:3456,26:2962,28:1891,30:974,32:470,34:141,36:40,38:5}
+E0 subcode dim 5 words 32 wdist {0:1,8:9,12:12,16:9,24:1}
+PASS G14  the sets inside the first quarter met evenly by every cutting form a space of dimension 14, all 16384 words verified
+PASS G15  its least nonzero weight is 8, with 30 words there and 63 at weight 12
+PASS G16  inside the first block of 24 pieces the same space has dimension 5, and all 32 of its words are verified
+PASS G17  every one of those 32 words also lies in the quarter subcode, as the column containment requires
+PASS G18  the five planted readings are twelve distinct pieces each, drawn to the five quarter profiles their names carry
+licensed all-even 5,14,30,55,91,140 diffs 9,16,25,36,49
+PASS G19  the cells of an even reading at sizes 2 to 12 number [5, 14, 30, 55, 91, 140]
+PASS G20  their consecutive differences are the squares [9, 16, 25, 36, 49]
+m<=8 counts 648,192,0,0,0,0,0,0,2,1,1,1,0,0,0,0,0,0
+m<=8 verify 845,0,0 orbits zero {24:17,48:5} one {24:2,48:3}
+PASS G21  a complete search of every set of at most eight pieces finds 648 carrying the constant zero reading, all verified
+PASS G22  and 192 carrying the constant one reading, the sets every cutting meets oddly
+PASS G23  no set of eight or fewer carries any of the six nonconstant readings, or the synthetic odd reading
+PASS G24  the 648 zero-reading sets fall into 22 orbits of the cell symmetries, 17 of size 24 and 5 of size 48
+PASS G25  the 192 one-reading sets fall into 5 orbits, 2 of size 24 and 3 of size 48
+PASS G26  all 30 weight 8 words of the quarter subcode, enumerated apart from the search, are among those 648
+m=10 counts 0,0,0,0,0,0,0,0,108,1,2,0,0,0,0,0,0,0 verify 111,0,0
+PASS G27  a complete search at ten reproduces Cycle 738 exactly: [0, 0, 0, 0, 0, 0, 0, 0, 108, 1, 2, 0]
+PASS G28  the odd synthetic reading licenses no cell at ten and is carried by none
+m=12 counts 7808,3072,0,0,0,0,0,0,661,25,38,38,1,1,1,2,1,0
+m=12 licensed 140,140,140,140,140,140,140,140,91,91,140,140,91,91,91,140,140,0
+m=12 verify 11648,0,0 splits 1167
+m=12 orbits zero 174 {8:2,16:1,24:18,48:153}
+m=12 orbits one 70 {8:2,16:2,24:6,48:60}
+m=12 orbits all of size 1 for readings 8,9,10,11,12,13,14,15,16
+PASS G29  every licensed cell at twelve is met once per target, 140 per even and 91 per odd quarter reading, and all 1167 scheduled splits execute exactly once
+PASS G30  no intermediate or final table in the search reached the cap of 30000000 entries
+PASS G31  all 11648 recorded sets at twelve recompute to their own reading, have weight 12, and are distinct
+PASS G32  each of the five planted twelve piece sets is found by a search blind to it, including the two forcing the eighth split
+PASS G33  the sets found at twelve fall into orbits of the symmetries that fix their reading, of sizes dividing 48
+PASS G34  all 63 weight 12 words of the quarter subcode are among the 7808 sets carrying the zero reading at twelve
+PASS G35  none of the six nonconstant readings is carried at any size up to twelve, and each forces an even total, barring every odd size: the six need at least fourteen pieces
+in-column-space 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0
+PASS G36  all but the synthetic reading lie in the column space, so each of the six nonconstant readings is carried by some set
+per_element: checked -- all 192 used piece columns enter every exact support calculation
+per_site: checked -- one supplied 16-corner coordinate cell; no physical cell selection
+per_mode: checked and not executed -- no field, spectral, or momentum-mode decomposition exists
+per_block: checked -- all 15800 cutting rows and every scheduled quarter/eighth split execute
+lattice_wide: checked and not executed -- no multi-cell, arbitrary-L, boundary, or continuum claim
+elapsed under 90 s peak memory under 1600 MB
+PASS G37  the whole runner finishes under 900 seconds
+PASS G38  its output stays under 6000 characters
+RECEIPT outputs/physical_cell_cutting_twelve_frontier_cycle739_2026_08_05_receipt_2026-08-05.json
+
+TOTAL: PASS=40 FAIL=0
+
+----- stderr -----
+

@@ -1,273 +1,303 @@
 {
- "cycle": 739,
- "failures": 0,
- "gates": 38,
- "headline": "On the 15800 least-cost cuttings of the single cell, the complete search moves from ten pieces to twelve. The forced-parity certificate licenses 140 cells per even reading and 91 per odd quarter reading, 1167 distinct splits in all, and every licensed cell is covered completely against eighteen readings at once. No set of exactly twelve pieces computes any of the six physical charges; with the forced even total, every odd size is barred as well, so each of the six charges needs at least fourteen pieces. The engine first reproduces the previous cycle exactly - 648 even octets and 192 odd octets at eight or fewer, the four controls at 108, 1, 2 and 0 sets of ten - recovers all five planted twelve-piece readings blind, including the two that force the eighth split, and verifies all 11648 recorded returns piece by piece with 0 mismatched. Beside the search, the certificate tree is measured: internal parity dimensions 0,0,0,0,0,0,1,2 on the eight blocks and 0,0,6,13 on the quarters, the first quarter degenerate at column rank 34 with a subcode of dimension 14 whose 30 weight-eight words are exactly among the octets and whose 63 weight-twelve words are among the 7808 zero-reading sets at twelve, and all seventeen real readings inside the 88-dimensional column space, so each charge is carried at some size - just not at twelve or below.",
- "lane": "emergent-geometry",
- "note": "docs/PHYSICAL_CELL_CUTTING_TWELVE_FRONTIER_CYCLE739_NOTE_2026-08-05.md",
- "recorded_output": "outputs/physical_cell_cutting_twelve_frontier_cycle739_2026_08_05_cold_2026-08-05.txt",
- "results": {
+  "audit_status_authority": "independent audit lane only",
   "certificate_tree": {
-   "column_ranks_blocks_of_24": [
-    19,
-    24,
-    24,
-    24,
-    24,
-    24,
-    24,
-    24
-   ],
-   "column_ranks_halves": [
-    55,
-    75
-   ],
-   "column_ranks_quarters": [
-    34,
-    48,
-    48,
-    48
-   ],
-   "duality_blocks_and_unions_checked": 22,
-   "internal_blocks_of_24": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    1,
-    2
-   ],
-   "internal_halves": [
-    13,
-    33
-   ],
-   "internal_mixed_quarter_pairs": [
-    9,
-    13,
-    15,
-    22
-   ],
-   "internal_quarter_complements": [
-    54,
-    40,
-    40,
-    40
-   ],
-   "internal_quarters": [
-    0,
-    0,
-    6,
-    13
-   ]
+    "column_ranks_blocks_of_24": [
+      19,
+      24,
+      24,
+      24,
+      24,
+      24,
+      24,
+      24
+    ],
+    "column_ranks_halves": [
+      55,
+      75
+    ],
+    "column_ranks_quarters": [
+      34,
+      48,
+      48,
+      48
+    ],
+    "duality_checks": 22,
+    "internal_blocks_of_24": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      2
+    ],
+    "internal_halves": [
+      13,
+      33
+    ],
+    "internal_mixed_quarter_pairs": [
+      9,
+      13,
+      15,
+      22
+    ],
+    "internal_quarter_complements": [
+      54,
+      40,
+      40,
+      40
+    ],
+    "internal_quarters": [
+      0,
+      0,
+      6,
+      13
+    ]
   },
+  "claim_type": "bounded_theorem",
   "column_space": {
-   "dimension": 88,
-   "real_readings_inside": 17,
-   "synthetic_reading_inside": false
+    "dimension": 88,
+    "named_real_readings_inside": 17,
+    "synthetic_reading_inside": false
   },
   "complete_search_at_twelve": {
-   "counts": [
-    7808,
-    3072,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    661,
-    25,
-    38,
-    38,
-    1,
-    1,
-    1,
-    2,
-    1,
-    0
-   ],
-   "duplicate_returns": 0,
-   "licensed_cells_per_reading": [
-    140,
-    140,
-    140,
-    140,
-    140,
-    140,
-    140,
-    140,
-    91,
-    91,
-    140,
-    140,
-    91,
-    91,
-    91,
-    140,
-    140,
-    0
-   ],
-   "mismatched": 0,
-   "planted_recovered": 5,
-   "readings": 18,
-   "splits_all_distinct": 1167,
-   "twelve_sets_verified": 11648
-  },
-  "floor": {
-   "complete_and_empty_sizes": [
-    2,
-    4,
-    6,
-    8,
-    10,
-    12
-   ],
-   "odd_sizes_barred_by_parity": true,
-   "physical_charge_floor": 14
-  },
-  "forced_parity_certificate": {
-   "forced_blocks": [
-    "whole",
-    "left half",
-    "right half",
-    "third quarter",
-    "fourth quarter"
-   ],
-   "forced_quarter_pattern_first_twelve": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    1,
-    1,
-    0,
-    0
-   ],
-   "free_blocks": 10,
-   "odd_total_reading_licenses_zero_cells": true,
-   "planted_quarter_parities": [
-    1,
-    1,
-    1,
-    0,
-    0
-   ],
-   "planted_readings_force_exactly_own_parities": 5
-  },
-  "orbits_at_twelve": {
-   "one_reading_orbit_sizes_and_counts": [
-    [
-     8,
-     2
+    "counts": [
+      7808,
+      3072,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      661,
+      25,
+      38,
+      38,
+      1,
+      1,
+      1,
+      2,
+      1,
+      0
     ],
-    [
-     16,
-     2
+    "duplicate_returns": 0,
+    "executed_splits": 1167,
+    "execution_inventory_exact": true,
+    "execution_inventory_sha256": "b0216889b4a71c1dd5e1c6e4b64d86870f7338a5ddab6ca47472f06879b43df5",
+    "licensed_cells_per_reading": [
+      140,
+      140,
+      140,
+      140,
+      140,
+      140,
+      140,
+      140,
+      91,
+      91,
+      140,
+      140,
+      91,
+      91,
+      91,
+      140,
+      140,
+      0
     ],
-    [
-     24,
-     6
+    "mismatched_returns": 0,
+    "readings": [
+      "zero",
+      "one",
+      "four",
+      "four-flip",
+      "six",
+      "six-flip",
+      "seven",
+      "seven-flip",
+      "pair (2,2)",
+      "h6 (6,2)",
+      "in-left quarters (3,5)",
+      "in-right one quarter (0,8)",
+      "p12-3333",
+      "p12-1155",
+      "p12-5511",
+      "p12-0-2-10",
+      "p12-8220",
+      "odd-ctl"
     ],
-    [
-     48,
-     60
+    "scheduled_splits": 1167,
+    "verified_returns": 11648
+  },
+  "direct_dependencies": {
+    "cycle737": {
+      "independent_status": "pass",
+      "maximum_searched_cardinality": 8,
+      "reading_identity_bound": true,
+      "status": "pass"
+    },
+    "cycle738": {
+      "exact_weight_ten_bound": true,
+      "independent_status": "pass",
+      "reading_order": [
+        "zero",
+        "one",
+        "four",
+        "four-flip",
+        "six",
+        "six-flip",
+        "seven",
+        "seven-flip"
+      ],
+      "status": "pass"
+    }
+  },
+  "gates": {
+    "fail": 0,
+    "named": {
+      "DEP1": "PASS",
+      "DEP2": "PASS",
+      "G01": "PASS",
+      "G02": "PASS",
+      "G03": "PASS",
+      "G04": "PASS",
+      "G05": "PASS",
+      "G06": "PASS",
+      "G07": "PASS",
+      "G08": "PASS",
+      "G09": "PASS",
+      "G10": "PASS",
+      "G11": "PASS",
+      "G12": "PASS",
+      "G13": "PASS",
+      "G14": "PASS",
+      "G15": "PASS",
+      "G16": "PASS",
+      "G17": "PASS",
+      "G18": "PASS",
+      "G19": "PASS",
+      "G20": "PASS",
+      "G21": "PASS",
+      "G22": "PASS",
+      "G23": "PASS",
+      "G24": "PASS",
+      "G25": "PASS",
+      "G26": "PASS",
+      "G27": "PASS",
+      "G28": "PASS",
+      "G29": "PASS",
+      "G30": "PASS",
+      "G31": "PASS",
+      "G32": "PASS",
+      "G33": "PASS",
+      "G34": "PASS",
+      "G35": "PASS",
+      "G36": "PASS",
+      "G37": "PASS",
+      "G38": "PASS"
+    },
+    "pass": 40
+  },
+  "input_sha256": {
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
+    "docs/PHYSICAL_CELL_CUTTING_CHARGE_SPACE_CYCLE736_NOTE_2026-08-05.md": "b577a9ccfb12a246022a2caa85aab0f87d5cc65005b89d0b8d252b499cf56004",
+    "docs/PHYSICAL_CELL_CUTTING_LEAST_COMPUTING_SETS_CYCLE737_NOTE_2026-08-05.md": "eab3120bdee580b4b54561740659ebe142bc543c95901c00fa71e04c7d558a5a",
+    "docs/PHYSICAL_CELL_CUTTING_SIZE_TEN_FRONTIER_CYCLE738_NOTE_2026-08-05.md": "7bf3775314fb19ef6908aca67aaed9af5a2d13a3590199ef0e61cd74216eb426",
+    "docs/PHYSICAL_CELL_CUTTING_TWELVE_FRONTIER_CYCLE739_NOTE_2026-08-05.md": "173ae15f814ba015705089f5c5ccdd5bb42895df5e12023d459b9b8bfcceebb4",
+    "outputs/physical_cell_cutting_charge_space_cycle736_2026_08_05_receipt_2026-08-05.json": "e3bfc00d596d0f934bd39f7268c8f5f43b2d98e3291f8e0c1cacbac97fd69820",
+    "outputs/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05_receipt_2026-08-05.json": "1088b2cf8aa99b9f4517fec84097b167ad6511df7f63943ee0f3f1e3240efb30",
+    "outputs/physical_cell_cutting_least_computing_sets_cycle737_independent_check_2026_08_05_receipt_2026-08-05.json": "1590f37efa5a093869177ded29941d9e02856856cfae51edf0264d829939b5c4",
+    "outputs/physical_cell_cutting_size_ten_frontier_cycle738_2026_08_05_receipt_2026-08-05.json": "06a4e992a8059743d25401dcdf484f14536172798d6638026ef7dab0284e677a",
+    "outputs/physical_cell_cutting_size_ten_frontier_cycle738_independent_check_2026_08_05_receipt_2026-08-05.json": "473977cd09538a624177a141513e843de277fe2bdd5e2d176784f74768c4b915",
+    "requirements-release.txt": "e153eea331ce1b76cd99f09e14a777df2bc9efbaa06a201528ddfdc0f3f01bee",
+    "requirements.txt": "3fda988835a13d9a7236b0b508aa9bcd2f9b3f3b9a47b4875a15f86dbc77a3ad",
+    "scripts/physical_cell_cutting_charge_space_cycle736_2026_08_05.py": "ba85245a332b3b68984c7d4759f637be296bcf3b4a9bb8742008ae9e3d446d36",
+    "scripts/physical_cell_cutting_charge_space_cycle736_independent_check_2026_08_05.py": "e771c7ce3ddde897d3c6c65ab4589acb94297fe07c3c261b29e3075a518b0bf9",
+    "scripts/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05.py": "4943c2bd0d89099394c06555f065bbed93c2d536c87a8a131a483535f6b027cd",
+    "scripts/physical_cell_cutting_least_computing_sets_cycle737_independent_check_2026_08_05.py": "e452a7b00ba0fadf65949ad2fb3e7eed462905a0202bacdc494b2fe83e642c5e",
+    "scripts/physical_cell_cutting_size_ten_frontier_cycle738_2026_08_05.py": "00d22430ecaa46c222c3e2ef96749e61e3f14e9c7cdba43f5a0dd60572a83020",
+    "scripts/physical_cell_cutting_size_ten_frontier_cycle738_independent_check_2026_08_05.py": "2eb029e0b1b614c1ab7ef098c7f647ca3e12c4010cb47b4dd2617fe9b6d3235c",
+    "scripts/physical_cell_cutting_twelve_frontier_cycle739_independent_check_2026_08_05.py": "e6b75cd4e42fc83b694f745a2f6b9659830c4655487a4dc4009d74b19ed96ee9"
+  },
+  "no_go_discipline": {
+    "claim_scope": "minimum support at least fourteen for six fixed algebraic readings in one finite 192-column incidence system",
+    "n5_execution_certificate": [
+      "per_element: checked -- all 192 used piece columns enter every exact support calculation",
+      "per_site: checked -- one supplied 16-corner coordinate cell; no physical cell selection",
+      "per_mode: checked and not executed -- no field, spectral, or momentum-mode decomposition exists",
+      "per_block: checked -- all 15800 cutting rows and every scheduled quarter/eighth split execute",
+      "lattice_wide: checked and not executed -- no multi-cell, arbitrary-L, boundary, or continuum claim"
+    ],
+    "negative_assertion_class": "derived_no_go_boundary",
+    "status": "PASS"
+  },
+  "nonconstant_reading_bound": {
+    "complete_even_sizes": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12
+    ],
+    "fourteen_sufficiency_shown": false,
+    "minimum_support_lower_bound": 14,
+    "odd_sizes_barred_by_total_parity": true,
+    "reading_names": [
+      "four",
+      "four-flip",
+      "six",
+      "six-flip",
+      "seven",
+      "seven-flip"
     ]
-   ],
-   "one_reading_orbits": 70,
-   "readings_with_trivial_stabilizer": [
-    8,
-    9,
-    10,
-    11,
-    12,
-    13,
-    14,
-    15,
-    16
-   ],
-   "zero_reading_orbit_sizes_and_counts": [
-    [
-     8,
-     2
-    ],
-    [
-     16,
-     1
-    ],
-    [
-     24,
-     18
-    ],
-    [
-     48,
-     153
-    ]
-   ],
-   "zero_reading_orbits": 174
   },
-  "parity_law": {
-   "gf2_rank": 88,
-   "kernel_dimension": 104,
-   "uses_per_piece_odd": 1975
+  "population": {
+    "geometric_cuttings": 15800,
+    "incidence_rank": 88,
+    "kernel_dimension": 104,
+    "pieces_per_cutting": 24,
+    "used_pieces": 192
   },
   "quarter_subcode": {
-   "block_words_inside_quarter_subcode": true,
-   "dimension": 14,
-   "first_block_dimension": 5,
-   "first_block_words": 32,
-   "least_nonzero_weight": 8,
-   "weight_eight_words": 30,
-   "weight_eight_words_among_octets": true,
-   "weight_twelve_words": 63,
-   "weight_twelve_words_among_twelve_sets": true,
-   "words": 16384
+    "dimension": 14,
+    "minimum_nonzero_weight": 8,
+    "weight_distribution": {
+      "0": 1,
+      "8": 30,
+      "12": 63,
+      "14": 164,
+      "16": 395,
+      "18": 929,
+      "20": 1846,
+      "22": 3017,
+      "24": 3456,
+      "26": 2962,
+      "28": 1891,
+      "30": 974,
+      "32": 470,
+      "34": 141,
+      "36": 40,
+      "38": 5
+    },
+    "weight_eight_words": 30,
+    "weight_twelve_words": 63
   },
-  "rerun_below_twelve": {
-   "even_octets": 648,
-   "even_orbits_of_24": 17,
-   "even_orbits_of_48": 5,
-   "licensed_cells_by_size": {
-    "eight": 55,
-    "four": 14,
-    "six": 30,
-    "ten": 91,
-    "twelve": 140,
-    "two": 5
-   },
-   "mismatched": 0,
-   "octets_verified": 845,
-   "odd_octets": 192,
-   "odd_orbits_of_24": 2,
-   "odd_orbits_of_48": 3,
-   "physical_charges_at_eight": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "ten_counts_first_twelve": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    108,
-    1,
-    2,
-    0
-   ],
-   "ten_sets_verified": 111
+  "runner_sha256": "9fb052ebe5b58585c716d766c81882f04e16e4584482e7a5a354ff66c8510b9d",
+  "schema": "physical-cell-cutting-twelve-frontier-cycle739-v2",
+  "status": "pass",
+  "supplied_model": {
+    "cost": "corner pairs with four-coordinate L1 separation greater than one",
+    "physical_cell_tick_simplex_reading_bridge": "open",
+    "piece_class": "five-corner normalized-volume-one simplices only",
+    "shape": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "support_universe": "the 192 pieces used by the 15800 supplied geometric cuttings only"
   }
- }
 }

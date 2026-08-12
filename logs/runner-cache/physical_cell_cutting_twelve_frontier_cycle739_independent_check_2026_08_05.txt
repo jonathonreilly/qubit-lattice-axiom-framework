@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/physical_cell_cutting_twelve_frontier_cycle739_independent_check_2026_08_05.py
+runner_sha256: e6b75cd4e42fc83b694f745a2f6b9659830c4655487a4dc4009d74b19ed96ee9
+input_fingerprint_sha256: fc65b556574fd483ba3741ed6d5f5ad6f7cc1183dcc125b9454b425bc10062cf
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 556.57
+status: ok
+----- stdout -----
+PASS independent.population  opposite-pivot exact covers reconstruct 15800 rows on the 192 used pieces
+PASS independent.dependencies  Cycle 737 binds this exact population/functions and both Cycle 738 receipts pass
+PASS independent.targets  all eight Cycle 737 algebraic reading identities reconstruct exactly
+PASS independent.rank  an independently selected 88-row basis pins every carried reading
+PASS independent.consistency  each bound reading lies in the reconstructed incidence column space before basis reduction
+PASS independent.twelve  independent CNF gives SAT controls for both constants and UNSAT for all six nonconstant targets at exact weight twelve
+PASS independent.certificate_tree  all block/quarter/half ranks and internal dimensions reconstruct independently
+PASS independent.quarter_kernel  the first-quarter dimension-14 kernel and complete weight distribution agree
+PASS receipt.contract  the primary verdict, execution inventory, runner, and every declared input are content-bound
+PASS hostile.planted_sat  a reading planted from twelve pieces is recovered as SAT
+PASS hostile.skipped_split  a skipped scheduled split invalidates the positive receipt predicate
+PASS hostile.primary_mutation  a local primary semantic mutation breaks its source pin
+PASS hostile.target_mutation  a canonical target-identity mutation is rejected
+PASS hostile.predecessor  a failed exact-weight-ten predecessor cannot pass
+PASS hostile.failed_verdict  a failed generated primary verdict cannot pass
+
+per_element: checked -- all 192 used columns enter the independent exact-weight-twelve CNFs
+per_site: checked -- one supplied 16-corner coordinate cell; no physical cell selection
+per_mode: checked and not executed -- no field, spectral, or momentum-mode decomposition exists
+per_block: checked -- all 15800 rows, block ranks, kernel words, and exact-cardinality controls
+lattice_wide: checked and not executed -- no multi-cell, arbitrary-L, boundary, or continuum claim
+RECEIPT outputs/physical_cell_cutting_twelve_frontier_cycle739_independent_check_2026_08_05_receipt_2026-08-05.json
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

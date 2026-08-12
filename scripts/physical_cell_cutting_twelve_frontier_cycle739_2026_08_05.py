@@ -68,7 +68,19 @@ RECEIPT_PATH = ROOT / (
     "outputs/physical_cell_cutting_twelve_frontier_cycle739_2026_08_05_"
     "receipt_2026-08-05.json"
 )
-RECEIPT_PATH.unlink(missing_ok=True)
+RECEIPT_PATH.write_text(
+    json.dumps(
+        {
+            "schema": "physical-cell-cutting-twelve-frontier-cycle739-v2",
+            "status": "fail",
+            "reason": "runner has not completed",
+        },
+        indent=2,
+        sort_keys=True,
+    )
+    + "\n",
+    encoding="utf-8",
+)
 AUDIT_INPUT_PATHS = (
     "docs/MINIMAL_AXIOMS_2026-06-29.md",
     "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
@@ -77,18 +89,25 @@ AUDIT_INPUT_PATHS = (
     "scripts/physical_cell_cutting_charge_space_cycle736_independent_check_2026_08_05.py",
     "outputs/physical_cell_cutting_charge_space_cycle736_2026_08_05_"
     "receipt_2026-08-05.json",
-    C737_NOTE_PATH,
-    C737_PRIMARY_PATH,
-    C737_CHECKER_PATH,
-    C737_RECEIPT_PATH,
-    C737_INDEPENDENT_RECEIPT_PATH,
-    C738_NOTE_PATH,
-    C738_PRIMARY_PATH,
-    C738_CHECKER_PATH,
-    C738_RECEIPT_PATH,
-    C738_INDEPENDENT_RECEIPT_PATH,
-    NOTE_PATH,
-    INDEPENDENT_PATH,
+    "docs/PHYSICAL_CELL_CUTTING_LEAST_COMPUTING_SETS_CYCLE737_NOTE_2026-08-05.md",
+    "scripts/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05.py",
+    "scripts/physical_cell_cutting_least_computing_sets_cycle737_independent_check_"
+    "2026_08_05.py",
+    "outputs/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05_"
+    "receipt_2026-08-05.json",
+    "outputs/physical_cell_cutting_least_computing_sets_cycle737_independent_check_"
+    "2026_08_05_receipt_2026-08-05.json",
+    "docs/PHYSICAL_CELL_CUTTING_SIZE_TEN_FRONTIER_CYCLE738_NOTE_2026-08-05.md",
+    "scripts/physical_cell_cutting_size_ten_frontier_cycle738_2026_08_05.py",
+    "scripts/physical_cell_cutting_size_ten_frontier_cycle738_independent_check_"
+    "2026_08_05.py",
+    "outputs/physical_cell_cutting_size_ten_frontier_cycle738_2026_08_05_"
+    "receipt_2026-08-05.json",
+    "outputs/physical_cell_cutting_size_ten_frontier_cycle738_independent_check_"
+    "2026_08_05_receipt_2026-08-05.json",
+    "docs/PHYSICAL_CELL_CUTTING_TWELVE_FRONTIER_CYCLE739_NOTE_2026-08-05.md",
+    "scripts/physical_cell_cutting_twelve_frontier_cycle739_independent_check_"
+    "2026_08_05.py",
     "requirements.txt",
     "requirements-release.txt",
 )
@@ -1724,9 +1743,9 @@ receipt = {
         "named": {name: "PASS" if ok else "FAIL" for name, ok in GATES},
     },
 }
-receipt_tmp = RECEIPT_PATH.with_suffix(RECEIPT_PATH.suffix + ".tmp")
-receipt_tmp.write_text(json.dumps(receipt, indent=2, sort_keys=True) + "\n", encoding="utf-8")
-receipt_tmp.replace(RECEIPT_PATH)
+RECEIPT_PATH.write_text(
+    json.dumps(receipt, indent=2, sort_keys=True) + "\n", encoding="utf-8"
+)
 print("RECEIPT " + str(RECEIPT_PATH.relative_to(ROOT)), flush=True)
 
 emit("")

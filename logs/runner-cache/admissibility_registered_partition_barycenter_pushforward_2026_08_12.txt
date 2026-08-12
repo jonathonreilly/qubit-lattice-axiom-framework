@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_registered_partition_barycenter_pushforward_2026_08_12.py
+runner_sha256: 6999132776f64e68dfa8166dd40a7ce446f5e3526307cf81c4eb29a17e58e968
+input_fingerprint_sha256: 78eb334c5fb2cd60e89f46f7292a77ec208ff6fa1d9875b80ded10d2fe587c2c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+external_scientific_inputs: axiom wording and the two parent notes are source-bound; no observational or fitted inputs
+construction: product registration Y=D×[0,1]; (μ⊗λ)(A(i|M))=Tr(ρ_μ E_i); restriction is a hostile control
+negative_scope: Dirac pushforwards on D or X are {0,1}-valued; product lifts remain live
+PASS: source-admissibility the current distribution sentence is pinned in the axiom memo and the note
+PASS: source-parents Aug 10 has restriction witness and partition language; Aug 9 has menu-independent Tr form
+PASS: menu-resolutions both hostile menus are exact matrix resolutions of I by five distinct scaled projectors
+PASS: restriction-recompute atomic restriction recomputed from matrix traces is 25/142 on M_A and 2/11 on M_B with Z=509/200
+PASS: dirac-obstruction Tr(I/2,E_0)=1/4 and Tr(diag(3/5,2/5),E_0)=3/10 are not in {0,1}
+PASS: partition-cover prefix sums start at 0, end at 1, are nondecreasing; interval lengths sum to 1 on both menus
+PASS: mixed-pushforward E_0 fiber length is 1/4 in both menus at I/2 and both menus normalize
+PASS: biased-pushforward E_0 lengths 3/10 and 2/5 in both menus at the two biased states; menus normalize
+PASS: disagree-restriction pushforward E_0 values disagree with restriction 25/142 and 2/11
+PASS: spectral-endpoints at δ_P(z) the E_0 length is 1/2; at δ_P(-z) the length is 0
+PASS: mixture-equals-barycenter pushforward of 3/5 δ_P(z)+2/5 δ_P(-z) equals pairing of the barycenter on every menu member
+PASS: order-independence reversed M_A gives the same three lengths as a multiset; E_0 length unchanged
+PASS: embedding-optional ι(ρ,t)=ρ+i(t-1/2)I is injective on the finite sample of (ρ,t) pairs
+PASS: singleton-mass-two raw singleton normalization of the z and x projective menus still forces mass two
+PASS: note-contract machine-status fields, required phrases, and forbidden-word hygiene hold
+per_element: E_0 and remaining declared menu members checked by fiber lengths and restriction controls
+per_site: Dirac obstruction, product partition, and pushforward identity are one-site statements
+per_mode: prefix-sum fibers on the declared menus; optional embedding uses an imag-multiple-of-I coordinate
+per_block: only the atomic-support partition obstruction and the product registration block are executed
+lattice_wide: checked and not executed — no lattice-wide dynamics, formation rate, or Record identification is claimed
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

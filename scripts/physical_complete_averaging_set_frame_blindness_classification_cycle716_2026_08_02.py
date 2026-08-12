@@ -2,12 +2,12 @@
 
 Class-A finite check script (stdlib + numpy only).  It executes the landed Cycle-696
 open-coframe endpoint compiler chain to assemble the static operator, relabels it by
-each of the 24 proper rotations, and then answers ONE question completely: for which
-collections A of frames does averaging a source over A erase the frame dependence of
-the reassembled operator's pairing?
+each of the 24 proper rotations, derives a sufficient covering family, and scans every
+one of the 16777215 nonempty frame collections at four declared seeded inputs.
 
-Cycle 715 answered this for A a SUBGROUP, by a counting identity.  Here A ranges over
-every one of the 16777215 nonempty collections, and the subgroup hypothesis is removed.
+Cycle 715 established exact complement arithmetic and covering-subgroup sufficiency
+conditional on exact sextet invariance, plus finite probe agreement.  Here arbitrary
+sets enter through their left stabilizers; source-space necessity is not claimed.
 
 The derivation this script measures.  Write b for the source, P_a for the relabelling
 of frame a, and
@@ -18,10 +18,13 @@ of frame a, and
 Relabelling composes as an anti-homomorphism, P_a P_b = P_{ba}.  Define the LEFT
 stabilizer L(A) = {t : tA = A}; it is a subgroup, and A is a union of right cosets of
 L(A), so the order of L(A) divides the size of A.  Since transpose(P_t) bbar_A =
-bbar_{tA} = bbar_A for t in L(A), and since the operator is unchanged by the sextet S,
-every g in the product set S L(A) gives the same value of v_A.  Hence
+bbar_{tA} = bbar_A for t in L(A), and conditional on exact operator invariance under
+the sextet S, every g in the product set S L(A) gives the same value of v_A.  Hence
 
-    S L(A) = whole group  ==>  v_A is constant  (sufficiency, for EVERY source).
+    S L(A) = whole group  ==>  v_A is constant
+
+for every source on the nonzero-average domain under that exact invariance premise.
+The compiled application below tests the resulting response numerically.
 
 Gate groups cover the exact finite group structure, full-powerset left-stabilizer
 classification, four-frame screening premise, bounded screen-consistency sample,
@@ -72,7 +75,7 @@ WRAP = False
 L_LIST = (3, 4)
 NDOF = {3: 98, 4: 279}
 SEXTET_EXPECTED = (1, 4, 9, 15, 18, 23)
-GENERIC_SEEDS = (7160, 7161)
+BASE_SEEDS = (7160, 7161)
 TOL_BLIND = 1e-8
 TOL_STAB = 1e-9
 TOL_REDUCE = 1e-8
@@ -184,7 +187,7 @@ def sources(ctx):
     """Five supplied probes: two declared seeded draws and three structured inputs."""
     n = ctx["n"]
     out = []
-    for seed in GENERIC_SEEDS:
+    for seed in BASE_SEEDS:
         rg = np.random.default_rng(seed + ctx["L"])
         out.append(("seeded-normal-base-{}".format(seed), rg.standard_normal(n)))
     out.append(("unit-slot0", np.eye(n)[0]))
@@ -421,7 +424,7 @@ def run_L(ctx, gl):
     # The four representative values form a monotone screen because the selected
     # representatives are a literal subset of the 24 frames.  Agreement below is
     # only a bounded consistency sample; every screen acceptance is separately
-    # retested against all 24 frames in G5.
+    # retested against all 24 frames in the complete seeded scans below.
     reps_ok = (len(ctx["reps"]) == 4 and len(set(ctx["reps"])) == 4
                and all(0 <= r < 24 for r in ctx["reps"])
                and len(ctx["QI4"]) == len(ctx["reps"]))
@@ -550,7 +553,7 @@ def run_zero_average_domain(ctx):
 
 
 def main() -> int:
-    print("c716 finite classification of frame-blind averaging sets")
+    print("Cycle 716 finite classification of frame-blind averaging sets")
     ctxs = {L: build_ctx(L) for L in L_LIST}
     gl = group_layer(ctxs[L_LIST[0]]["S"])
     print("-- group layer --")

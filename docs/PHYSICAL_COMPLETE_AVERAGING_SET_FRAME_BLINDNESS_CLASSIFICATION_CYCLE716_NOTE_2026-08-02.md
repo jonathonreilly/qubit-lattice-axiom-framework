@@ -18,8 +18,9 @@ paired receipt:
 `outputs/physical_complete_averaging_set_frame_blindness_classification_cycle716_2026_08_02_receipt_2026-08-02.json`.
 
 This note contains two distinct finite results. Exact finite group arithmetic,
-conditional on the stabilizer sextet measured from the supplied Cycle-696
-compiler, identifies a 231-member sufficient family of averaging sets. Four
+conditional on exact invariance under the sextet numerically identified from
+the supplied Cycle-696 compiler, identifies a 231-member sufficient family of
+averaging sets. Four
 complete numerical scans — two declared seeded standard-normal inputs at each
 of `L = 3, 4` — find exactly that family among all 16777215 nonempty frame
 collections. The second statement is about those four inputs; it is not a
@@ -77,17 +78,18 @@ Its order-six subgroup and right-coset role are inherited from the finite
 and the [Cycle-715 finite group complement result](PHYSICAL_FRAME_GROUP_COMPLEMENT_AND_FINITE_PROBE_BLINDING_CYCLE715_NOTE_2026-08-02.md).
 Cycle 715's exact finite complement/right-coset arithmetic and covering-subgroup
 sufficiency are conditional on a numerical near-zero-defect sextet at
-`L in {3,4}`; it does not supply universal necessity. The present runner
-recomputes the sextet, group table, and subgroup lattice.
+`L in {3,4}`; its claim boundary is sufficiency plus finite probe agreement.
+The present runner recomputes the sextet, group table, and subgroup lattice.
 
 ## Imported inputs and proof obligation
 
 The exact target proved here is: conditional on the supplied finite compiler
-action and its measured sextet `S` at `L in {3,4}`, every nonempty frame set
+action being exactly invariant under the numerically identified sextet `S`,
+every nonempty frame set
 whose left stabilizer covers with `S` has a frame-constant normalized quadratic
 response for every supplied vector with nonzero averaged norm; separately, the
-four declared seeded vectors select exactly that sufficient family in complete
-finite powerset scans.
+four declared seeded vectors are classified at `1.0e-08` as exactly that
+sufficient family in complete finite powerset scans at `L in {3,4}`.
 
 The obligation graph is:
 
@@ -106,6 +108,11 @@ The obligation graph is:
    size census, and all-24 acceptance retests are numerical results produced by
    the primary runner. They establish no source-space quantifier.
 
+**Proof-obligation disposition:** `CONDITIONAL`. The group arithmetic and
+sufficiency implication are exact under exact sextet invariance; the supplied
+compiler establishes only numerical near-invariance and finite response spreads
+at the two executed sizes.
+
 The `1.0e-09` sextet threshold, `1.0e-08` response threshold, NumPy arithmetic,
 and seeded standard-normal vectors are declared numerical conventions/probes;
 they are not approved primitives or physical observations. The strongest
@@ -122,9 +129,10 @@ products, `P_a P_b = P_{ba}`, one has
 `P_t^T b_A = b_{tA} = b_A` for every `t` in `L(A)`.
 
 If `S L(A)` fills all 24 rotations, write any frame as `g = s t` with `s` in
-`S` and `t` in `L(A)`. The `t` factor fixes `b_A`, while `s` fixes `Q` and its
-inverse. Therefore `v_A(g) = v_A(e)`. This proves sufficiency for every supplied
-`b` for which the normalized response is defined.
+`S` and `t` in `L(A)`. Under the exact-invariance premise, the `t` factor fixes
+`b_A`, while `s` fixes `Q` and its inverse. Therefore `v_A(g) = v_A(e)`. This
+proves conditional sufficiency for every supplied `b` for which the normalized
+response is defined; the compiled matrices test its numerical counterpart.
 
 The runner constructs every subgroup of the finite rotation group without a
 generating-rank assumption. Nine subgroups cover with `S`, of orders
@@ -197,8 +205,9 @@ family minimum; they do not define a universal source class.
 ## Claim boundary and physics reading
 
 The durable result is an exhaustive finite group classification conditional on
-the measured sextet, an analytic sufficiency implication on the nonzero-average
-domain, and four complete finite response scans at `L = 3, 4`. The supplied
+the measured sextet, an analytic sufficiency implication conditional on exact
+sextet invariance and the nonzero-average domain, and four complete finite
+response scans at `L = 3, 4`. The supplied
 compiler, its open boundary, its static spatial-sector interpretation, its
 finite-difference residuals, the `1.0e-08` response tolerance, and the four
 source vectors are explicit premises.

@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/physical_complete_averaging_set_frame_blindness_classification_cycle716_2026_08_02.py
-runner_sha256: 1369a2b119d644a14ffbd506405aa3ed9374e3d2671468e2cfdc1ba0c27825c1
+runner_sha256: 27e8bd4adcf36a7a6f1588b75fbd8d3f0abe97443a29719f006ec286bbb70f44
 input_fingerprint_sha256: f16228dfa22ac9810d4cc316446c432694b1b6d39236992c2bac39c9cf2f5eab
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 239.05
+elapsed_sec: 229.33
 status: ok
 ----- stdout -----
-c716 finite classification of frame-blind averaging sets
+Cycle 716 finite classification of frame-blind averaging sets
 -- group layer --
 PASS g1_sextet_identity S [1, 4, 9, 15, 18, 23] order 6 closed
 PASS g1_sextet_right_coset_count index 4 = 24 over 6

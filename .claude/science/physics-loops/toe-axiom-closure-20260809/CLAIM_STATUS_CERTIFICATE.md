@@ -1812,3 +1812,30 @@ lines are in the landing primary cache.
   relation, gravity sign, selected law, axiom amendment, TOE percentage
   movement, or audit verdict. Fresh N1--N8 and all five N5 resolutions land;
   no `review-loop` is used.
+
+## Block 56 Claim Status
+
+- Capacity positive: four invariant central tags times six Pauli directions
+  give 24 distinct `M_2(C)` Record contents. Trace and Pauli coefficients
+  recover role and direction, and all 1,296 Cycle-876 supports embed exactly.
+- Decoder conditional positive: under the exact proper-cubic Pauli-adjoint
+  action, the linear vector-equivariance system has rank eight and nullity one;
+  normalization fixes the Bloch decoder.
+- Current-axiom independence: the trivial internal action is also an exact
+  algebra action and shares one total central nearest-neighbour distribution
+  with the adjoint action. Its decoder system has rank nine and nullity zero.
+  The current text therefore selects neither action nor decoder.
+- Axiom boundary: a complete physical law must additionally select the
+  readable vector, sector-role compiler, unit grading or selector principle,
+  generation-chirality/gravity-sign lineage, and Root-A joint-law interfaces.
+  Algebraic capacity does not supply those identifications.
+- Evidence: primary/input-pinned cache `PASS=8 FAIL=0`; decoder-rank,
+  carrier-cardinality, and note-boundary mutations each fail exactly one
+  check; graph `5,502/15,759`, out-degree four. Vocabulary, strict lint,
+  premise purity, Python/cache, claim typing, whitespace, N5, and enforced
+  graph/link invariants pass. Science commit is `20debf55ee`; PR pending.
+- Scope: one finite exact capacity theorem and current-axiom two-completion
+  witness, not a selected internal action, physical Record vector, sector
+  compiler, chirality or gravity sign, joint law, axiom amendment, TOE
+  percentage movement, or audit verdict. Fresh N1--N8 and all five N5
+  resolutions land; no `review-loop` is used.

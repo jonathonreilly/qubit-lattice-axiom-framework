@@ -2162,3 +2162,40 @@ three sector coefficients, generation-chirality carrier, and sign observable,
 with a derived selector. If the actual interfaces fail that test, preserve the
 failure exactly and prepare the smaller direct unit-class datum for owner
 choice; then return to the Root-A joint-law selector.
+
+## Block 56 Handoff
+
+Block 56 is local on branch
+`physics-loop/toe-axiom-closure-block56-m2-grading-carrier-20260812`, stacked
+exactly on Block-55 delivery head `52f55f0021`. It attacks the physical
+`M_2(C)` bridge rather than refining the projective census.
+
+The positive result clears carrier capacity. Four distinct central tags and
+six Pauli directions give a 24-symbol one-site Record alphabet. Trace recovers
+the role tag, the normalized Pauli coefficient recovers direction, and four
+such Records reproduce every incoming/matter/field/auxiliary balance in all
+1,296 Cycle-876 configurations, including the Block-55 rank and special-count
+controls.
+
+The decisive result is the action/decoder fork. The Pauli-adjoint proper-cubic
+action gives decoder constraint rank eight and nullity one, so normalization
+fixes the Bloch decoder. The trivial internal action gives rank nine and
+nullity zero. Both are exact algebra actions and both coexist with the same
+total central nearest-neighbour probability rule, which is compatible with
+the current local axiom surface. Thus the current axioms do not select the
+external-to-internal action or readable vector. Capacity is not the wall;
+extensional physical law is.
+
+Primary/cache is `PASS=8 FAIL=0`; decoder-rank, carrier-cardinality, and
+note-boundary mutations each fail exactly one check. Citation registration is
+`5,502/15,759`, out-degree four. Vocabulary, strict lint, premise purity,
+Python/cache, claim typing, whitespace, fresh N1--N8/N5, and graph/link gates
+pass. Science commit is `20debf55ee`; PR pending. Independent audit remains
+required. No canonical axiom, fixed TOE percentage, audit verdict, or
+`review-loop` changes.
+
+Re-rank now. The only qualifying next results are either one exact joint law
+or uniqueness theorem binding this action/decoder/compiler to Root-A
+formation, probability, clock, constraints, source, and history, or a minimal
+complete extensional axiom delta for owner choice. Another carrier argument,
+projective count, or bare gravity scan is low leverage and should not ship.

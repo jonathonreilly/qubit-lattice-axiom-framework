@@ -1,6 +1,6 @@
 {
- "edge_count": 15763,
- "node_count": 5503,
+ "edge_count": 15767,
+ "node_count": 5504,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -449,6 +449,10 @@
   "admissibility_nonlinear_regge_extra_branch_cubic_lift_source_compatibility_boundary_bounded_theorem_note_2026-08-10": {
    "deps_hash": "2eebdd555ba7",
    "out_degree": 2
+  },
+  "admissibility_nonuniform_conserved_source_regge_second_order_ward_pseudoconstraint_gate_bounded_theorem_note_2026-08-12": {
+   "deps_hash": "9f65b03f397d",
+   "out_degree": 4
   },
   "admissibility_normalized_family_additive_zero_contact_nonidentifiability_boundary_bounded_theorem_note_2026-08-10": {
    "deps_hash": "4b8899818bd8",

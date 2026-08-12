@@ -1,24 +1,24 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_curved_regge_pseudoconstraint_perfect_action_route_gate_2026_08_12.py
-runner_sha256: 4b2839ce3916244a88d3fbc4b9eb008d2bcecceafa441e360038172aaa40c54d
-input_fingerprint_sha256: 52f5a80fb59282de8c2dccaa69f94375fd68eb29bbf26dc637c6f8702de6a301
+runner_sha256: 3e1b982253e847adbb5d863b761a814d86624543e0a3849a4a14e2fc0b4ef06e
+input_fingerprint_sha256: 2f413e6ca40257e20308a7b5c4209d68a76cae4fb9e3ff0925b25b759769288c
 timeout_sec: 240
 exit_code: 0
-elapsed_sec: 18.43
+elapsed_sec: 18.02
 status: ok
 ----- stdout -----
 external_scientific_inputs: Bahr-Dittrich fixed-Regge gauge-symmetry analysis, perfect-action construction, and Dittrich-Hoehn canonical Pachner evolution are cited as primary-literature route context
 analytic_boundary: the discrete Noether implication is exact; ranks and Ward residuals are double-precision exhaustive finite-mode calculations on the reconstructed repository action
-physical_boundary: the sourced background includes affine reactions while the tested bare Hessian omits the source/constraint connection; full rank diagnoses that omission and is not a gravity no-go
+physical_boundary: linear source and affine reactions have zero length-length Hessian, while the ten affine constraints freeze all metric tangents and remove the four displacement columns; this is a nonmetric surrogate, not a gravity no-go
 [PASS] source-and-axiom-boundary: the foundation and parents leave nonlinear constraint/source dynamics unselected
 [PASS] source-note-contract: the note records the finite claim, literature route correction, value gate, and landed N1-N8 packet
 [PASS] sourced-background-reconstruction: the Block-21 Bundle-B continuation and nonzero curvature are reconstructed, not hard-coded into the Hessian test
        coordinate error=0.000e+00; deficit max=0.058009759; Newton iterations=5
 [PASS] flat-four-null-inventory: every nonzero L=3 through L=6 mode of the flat repaired kernel has rank eleven and four null directions
        modes=2254; rank counts=[{11: 80}, {11: 255}, {11: 624}, {11: 1295}]; max ||Q Gamma||=1.544e-13
-[PASS] sourced-bare-full-rank-inventory: the bare fixed-action Hessian on the sourced continuation is full rank at every same periodic mode
+[PASS] affine-length-block-full-rank-inventory: the complete length-length block on the affine continuation is full rank at every same periodic mode
        rank counts=[{15: 80}, {15: 255}, {15: 624}, {15: 1295}]; minimum gap=4.488559217e-06 at (3, (0, 2, 2, 1))
-[PASS] inherited-generator-ward-loss: two generic momenta separate machine-zero flat Ward residuals from nonzero sourced bare-Hessian residuals
+[PASS] inherited-generator-ward-loss: two generic momenta separate machine-zero flat Ward residuals from nonzero affine-surrogate residuals
        x=0.4: flat=3.102e-14, sourced=0.199804055, relative=2.479426999e-03; x=1.0: flat=7.147e-14, sourced=0.441617350, relative=2.516981284e-03
 [PASS] route-boundary-not-universal: the source note keeps improved/perfect actions, variable triangulations, connection variables, and complete source constraints live
 per_element: checked all fifteen edge-class rows of both reconstructed Regge Hessians and all four inherited displacement columns

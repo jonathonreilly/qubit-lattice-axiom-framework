@@ -3,14 +3,16 @@
 
 Block 53 constructs an exact causal update for the *linear* two-TT sector.
 This runner asks whether the inherited flat vertex-displacement kernel remains
-an exact constraint generator on the supplied Block-21 sourced curved
+an exact constraint generator on the supplied Block-21 affine nonmetric
 continuation.  It reconstructs both Hessians from the repository-local Regge
 action and inventories every nonzero momentum on L=3,...,6 periodic carriers.
 
-The result is deliberately diagnostic.  The sourced background is stationary
-only after the declared source and affine reactions are included, whereas the
-tested Hessian omits their nonlinear connection terms.  Full rank therefore
-proves that those missing terms are load-bearing; it is not a gravity no-go.
+The result is deliberately diagnostic.  The declared source is linear and the
+reactions are affine, so their length-length Hessians vanish and the tested
+matrix is the complete length-length block of that affine KKT law.  The ten
+affine constraints freeze every metric tangent and remove all four inherited
+displacement columns.  Full rank therefore characterizes a nonmetric,
+gauge-fixed surrogate; it is not a physical curved-background gravity test.
 """
 
 from __future__ import annotations
@@ -203,7 +205,7 @@ def main():
 
     print("external_scientific_inputs: Bahr-Dittrich fixed-Regge gauge-symmetry analysis, perfect-action construction, and Dittrich-Hoehn canonical Pachner evolution are cited as primary-literature route context")
     print("analytic_boundary: the discrete Noether implication is exact; ranks and Ward residuals are double-precision exhaustive finite-mode calculations on the reconstructed repository action")
-    print("physical_boundary: the sourced background includes affine reactions while the tested bare Hessian omits the source/constraint connection; full rank diagnoses that omission and is not a gravity no-go")
+    print("physical_boundary: linear source and affine reactions have zero length-length Hessian, while the ten affine constraints freeze all metric tangents and remove the four displacement columns; this is a nonmetric surrogate, not a gravity no-go")
 
     checks.check(
         "source-and-axiom-boundary",
@@ -223,7 +225,9 @@ def main():
         and "pseudo-constraints" in note
         and "perfect action" in note_flat
         and "Pachner" in note
-        and "not evidence that gravity cannot work" in note_flat,
+        and "not evidence that gravity cannot work" in note_flat
+        and "identically zero length-length hessians" in note_flat.lower()
+        and "freezes all ten metric tangents" in note_flat.lower(),
     )
 
     data = build_flat_and_sourced_kernels()
@@ -265,8 +269,8 @@ def main():
         f"modes={total_modes}; rank counts={[record[2] for record in inventory['records']]}; max ||Q Gamma||={inventory['flat_ward_max']:.3e}",
     )
     checks.check(
-        "sourced-bare-full-rank-inventory",
-        "the bare fixed-action Hessian on the sourced continuation is full rank at every same periodic mode",
+        "affine-length-block-full-rank-inventory",
+        "the complete length-length block on the affine continuation is full rank at every same periodic mode",
         sourced_pattern and inventory["sourced_min_gap"] > 4.0e-6,
         f"rank counts={[record[3] for record in inventory['records']]}; minimum gap={inventory['sourced_min_gap']:.9e} at {inventory['sourced_min_location']}",
     )
@@ -274,7 +278,7 @@ def main():
     rays = ray_diagnostics(data["flat_kernel"], data["sourced_kernel"])
     checks.check(
         "inherited-generator-ward-loss",
-        "two generic momenta separate machine-zero flat Ward residuals from nonzero sourced bare-Hessian residuals",
+        "two generic momenta separate machine-zero flat Ward residuals from nonzero affine-surrogate residuals",
         all(record["flat_rank"] == 11 for record in rays)
         and all(record["sourced_rank"] == 15 for record in rays)
         and rays[0]["flat_ward"] < 5.0e-13

@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_nonuniform_conserved_source_regge_second_order_ward_pseudoconstraint_gate_2026_08_12.py
+runner_sha256: 59eba36b46eb84a562e97799577fa813925b0c2427524e3a03bdd61bd77b3d58
+input_fingerprint_sha256: 76e06660f826343aec8c7ba0cb52b0081da45d87f8e90edb39d50a5349e1c77c
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 44.44
+status: ok
+----- stdout -----
+analytic_boundary: period-three transversely homogeneous full-edge Regge plus deficit-square action at alpha=1/1024
+physical_boundary: the static source is Euclidean; the null Record bundle has only a conditional Lorentzian interpretation
+progress_boundary: a decisive fixed-law route rejection is blocker burn-down, not TOE percentage movement
+[PASS] affine-surrogate-correction: the prior affine KKT continuation freezes all ten metric tangents and all four displacem...
+       metric/normal ranks=10/5; M0^T Gamma rank=4; KKT rank=25
+[PASS] independent-reduced-action: the reduced action and derivative agree with the original periodic box action and centra...
+       static: action=4.33e-09, gradient=3.69e-06, Hessian=4.42e-10; null: action=1.45e-09, gradient=3.14e-06, Hessian=3.65e-10
+[PASS] conserved-zero-total-sources: both named Fourier sources realize their metric targets, have zero mean, and annihilate ...
+       static: target=5.78e-16, Ward=7.10e-16, mean=1.06e-15; null: target=5.77e-16, Ward=4.25e-16, mean=1.45e-15
+[PASS] genuine-nonuniform-full-edge-branches: both conserved sources solve every nongauge equation with nonzero curvature and metric-d...
+       static: proj=3.30e-13, deficit=3.802e-03, metric/nonmetric=2.82; null: proj=3.76e-13, deficit=5.345e-03, metric/nonmetric=10.71
+[PASS] second-order-ward-obstruction: a nonzero gauge residual stabilizes at order c squared for both named genuine metric sou...
+       static: ||W2||=11.513700, gauge/c^2=1.918285..1.911864; null: ||W2||=12.988440, gauge/c^2=2.164783..2.164180
+[PASS] eight-pseudoconstraint-directions: all eight real displacement directions lift into soft mixed-sign Schur modes on both bra...
+       static: ranks=[8, 8], extrema=1.049e-03/2.164e-03; null: ranks=[8, 8], extrema=1.480e-03/2.978e-03
+[PASS] scalar-source-seagull-rejected: the full one-parameter interval-power source family cannot cancel the leading Ward vectors
+       optimized residual fractions: static=0.929341, null=0.635485
+[PASS] cubic-deficit-order-mismatch: a fixed finite sum A epsilon cubed coefficient enters one order after the leading Ward o...
+       static: beta influence/c^2=1.499673,0.750197,0.375189; null: beta influence/c^2=0.381879,0.192482,0.096629
+[PASS] scope-strategy-and-no-go-packet: the source note carries N1 through N8, preserves live completions, and records zero lane...
+N5_CERTIFICATE: two conserved sources, 45 full-edge variables, 27 fixed-gauge coordinates, eight gauge coordinates, and three explicit repair families were resolved
+per_element: checked all 45 period-three edge lengths, 27 nongauge coordinates, and eight real displacement coordinates
+per_site: checked all 50 hinge classes and 240 simplex-hinge incidences in each reduced slice against the independent periodic box action
+per_mode: checked k=2pi/3 for a static density mode and a conditional Lorentzian null Record-bundle mode, including c-to-zero order tests
+per_block: corrected the Block-19/21/54 affine surrogate, solved the genuine full-edge branch, and tested scalar-seagull, cubic-deficit, and pseudo-constraint responses
+lattice_wide: not executed; full-Z3, continuous-zone, nonlinear Lorentzian evolution, and refinement/projective consistency remain open
+scope_boundary: bounded fixed-action route decision; not a gravity no-go, nonlinear TOE closure, axiom amendment, or TOE score movement
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

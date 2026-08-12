@@ -1,7 +1,7 @@
 ---
 claim_id: admissibility_curved_regge_pseudoconstraint_perfect_action_route_gate_bounded_theorem_note_2026-08-12
 claim_type: bounded_theorem
-claim_scope: "For the repository's supplied four-dimensional Kuhn/Coxeter Regge-plus-deficit-square action at alpha=1/1024, the flat repaired Hessian has exactly four vertex-displacement null directions and satisfies the corresponding Ward identity at every one of the 2,254 nonzero modes on periodic L=3 through L=6 carriers. Reconstructing the interval-certified Block-21 Bundle-B sourced curved continuation and differentiating only that same bare geometry action gives a full-rank fifteen-by-fifteen Hessian at every one of those modes. On the generic ray k=x(1,0.7,-0.4,0.2), the inherited-generator residual ||Q Gamma|| changes from below 8e-14 at flatness to 0.199804055 at x=0.4 and 0.441617350 at x=1. Because the sourced background is stationary only with declared affine reactions while this Hessian omits the nonlinear source/constraint connection, the result proves that the omitted connection is load-bearing; it does not prove a gravitational anomaly or nonlinear gravity no-go. Primary literature identifies the same fixed-Regge curved-background behavior as broken discrete diffeomorphism symmetry and pseudo-constraints, and keeps improved/perfect actions plus variable-triangulation Pachner evolution constructive. The exact next gravity target is therefore a source-complete improved/perfect or variable-triangulation joint law, not another fixed-action TT projector, coefficient scan, or propagator. No selected law, perfect action, physical inner product, full-Z3 theorem, axiom amendment, audit verdict, or TOE percentage movement is claimed."
+claim_scope: "For the repository's supplied four-dimensional Kuhn/Coxeter Regge-plus-deficit-square action at alpha=1/1024, the flat repaired Hessian has exactly four vertex-displacement null directions and satisfies the corresponding Ward identity at every one of the 2,254 nonzero modes on periodic L=3 through L=6 carriers. Reconstructing the interval-certified Block-21 Bundle-B affine continuation gives a full-rank fifteen-by-fifteen length-length Hessian at every one of those modes, with inherited-generator residuals 0.199804055 and 0.441617350 on two generic-ray points. Correction: the supplied source is linear and its reactions and constraints are affine, so their length-length Hessians vanish identically; the displayed matrix is the complete length-length block of that affine KKT Lagrangian, not a bare block missing affine connection terms. The rank-ten affine constraints freeze all ten metric tangents, leave only five nonmetric edge modes, and have rank four on the generic displacement columns. The finite-rank result therefore characterizes a gauge-fixed nonmetric ensemble surrogate and is not a physical curved-metric gravity test. A covariant nonlinear source/generator law would replace rather than complete the supplied affine law. No gravitational anomaly, nonlinear gravity no-go, selected law, perfect action, physical inner product, full-Z3 theorem, axiom amendment, audit verdict, or TOE percentage movement is claimed."
 upstream_dependencies:
   - minimal_axioms
   - admissibility_regge_curvature_squared_sourced_continuation_constraint_localization_boundary_bounded_theorem_note_2026-08-10
@@ -9,16 +9,15 @@ upstream_dependencies:
 runner: scripts/admissibility_curved_regge_pseudoconstraint_perfect_action_route_gate_2026_08_12.py
 ---
 
-# Curved Regge Pseudo-Constraint / Perfect-Action Route Gate
+# Affine Regge Pseudo-Constraint / Perfect-Action Route Gate (Corrected)
 
 **Date:** 2026-08-12
 
 **Type:** `bounded_theorem`
 
-**Role:** test the first genuinely nonlinear constraint obligation after the
-Block-53 linear causal repair, decide whether the current fixed-action route
-is still the highest-value gravity seam, and redirect the campaign without
-inflating blocker diagnosis into TOE progress.
+**Role:** preserve the finite Hessian census after correcting its physical
+interpretation: the Block-21 continuation is a five-nonmetric-mode affine
+ensemble surrogate, not the first genuinely curved metric/source test.
 
 **Audit-status authority:** independent audit lane only. This source note
 authors no audit verdict and predicts none.
@@ -41,8 +40,8 @@ S_alpha = sum_h A_h (epsilon_h + alpha epsilon_h^2),
 alpha = 1/1024,                                               (1)
 ~~~
 
-the answer for the bare fixed-action Hessian on the Block-21 sourced curved
-continuation is sharply negative, but only in a diagnostic sense.
+the answer for the length-length Hessian on the Block-21 affine continuation
+is sharply negative, but only for that gauge-fixed nonmetric surrogate.
 
 At flatness, the Hessian `Q_0(k)` and the four exact vertex-displacement
 columns `Gamma(k)` obey
@@ -73,15 +72,25 @@ eigenvalue is `4.488559e-6`. On the generic ray
 | `0.4` | `3.10e-14` | `0.199804055` |
 | `1.0` | `7.15e-14` | `0.441617350` |
 
-This is not evidence that gravity cannot work. The sourced point is stationary
-only after the Block-21 source and affine reaction terms are included, while
-`Q_J` above differentiates the bare geometry action alone. The nonlinear
-second variation of a complete invariant sourced law contains the source and
-constraint transformation/connection terms. Equations (2)--(3) prove that
-those missing terms are load-bearing: they cannot be omitted and then replaced
-by the flat TT projector or the expectation that four flat nulls survive.
+This is not evidence that gravity cannot work. The Block-21 source is linear,
+and its reaction and constraint functions are affine. Their second length
+derivatives therefore vanish: `Q_J` is the complete length-length block of the
+supplied affine KKT Lagrangian, not a bare block missing affine reaction terms.
+The linear source and affine reaction terms have identically zero
+length-length Hessians.
 
-The result also changes the campaign's route ranking. Primary literature on
+That clarification changes the interpretation. The affine constraint matrix
+has rank ten, freezes all ten metric tangents, and leaves only the five
+nonmetric edge directions used by the continuation. At generic momentum its
+product with the four displacement columns has rank four, so the constraints
+explicitly remove those directions. Equations (2)--(3) therefore characterize
+a gauge-fixed, nonmetric ensemble surrogate. A covariant nonlinear source,
+generator, and connection law would be a replacement joint law, not a term
+silently omitted from the supplied affine law. This result does not test a
+genuinely nonuniform curved metric response.
+
+This correction withdraws the original route decision based on the affine
+surrogate alone. Primary literature on
 canonical Regge calculus reports that curved solutions on an ordinary fixed
 discretization generally lose exact gauge symmetry and replace constraints by
 background-dependent pseudo-constraints; it equates recovery of a consistent
@@ -96,16 +105,13 @@ spaces and exactly tracks the covariant discrete dynamics
 primary-literature route context, not framework premises or evidence that the
 required four-dimensional construction already exists here.
 
-Therefore the next high-value gravity target is one of:
-
-1. a source-complete improved/perfect coarse action whose exact discrete
-   Noether identity supplies the four nonlinear constraints; or
-2. a variable-triangulation Pachner/tent evolution in which the evolving
-   constraint data, Record event, and source current are fields of the same
-   joint law.
-
-Another fixed-action coefficient scan, TT projection, or linear propagator is
-now low leverage. This block closes no TOE lane and moves no percentage.
+The immediate high-value target is therefore a genuinely nonuniform full-edge
+solution driven by an exactly conserved zero-total metric source, with only
+the flat displacement directions gauge-fixed. If that branch also loses the
+nonlinear Ward identity, a source-complete improved/perfect action or a
+variable-triangulation Pachner/tent law becomes the constructive target. This
+block alone does not establish that antecedent. It closes no TOE lane and
+moves no percentage.
 
 ## Exact Target Contract And Proof-Obligation Graph
 
@@ -113,15 +119,21 @@ now low leverage. This block closes no TOE lane and moves no percentage.
 |---|---|---|
 | reproduce the repaired flat four-null sector | all `2,254` nonzero periodic modes have rank eleven and machine-zero `Q_0 Gamma` | closed on `L=3...6` |
 | reconstruct the declared nonlinear sourced point | parent five-normal equations solved again; nonzero deficits and coordinates checked | closed for Bundle B at coupling `1/100` |
-| test inherited flat generators at the sourced point | full ranks plus two direct generic-ray residuals | closed for the bare Hessian on the declared finite inventory |
-| distinguish missing connection from gravity failure | sourced stationarity uses reactions absent from the tested bare Hessian; full quotient and complete action remain live | closed as a scope distinction |
+| test inherited flat generators at the affine point | full ranks plus two direct generic-ray residuals | closed for the complete length-length block on the declared finite inventory |
+| distinguish affine surrogate from physical gravity | linear source and affine constraints have zero length-length Hessian; ten constraints freeze all metric tangents and remove all four displacement columns | closed as a correction |
 | construct a complete nonlinear constraint algebra | no source-complete invariant action or canonical constraint brackets are built | open |
 | construct a perfect action or Pachner update | literature supplies route mechanisms only | open |
 | bind the update to Record formation, clock, source, and physical state | Block-46/53 joint-law fields | open |
 | prove full-`Z^3`, continuous-zone, or nonlinear stability | no extrapolation from four finite carriers | open |
 | select or amend the framework law | owner/derivation decision | not attempted |
 
-The strongest missing lemma is now precise:
+The immediate missing test is precise:
+
+> Solve a genuinely nonuniform full-edge branch for a conserved zero-total
+> metric source while fixing only the flat displacement directions, and test
+> the joint nonlinear Ward residual through second order in source strength.
+
+The strongest closure lemma beyond that test remains:
 
 > Construct one local or controlled-quasilocal joint Record--geometry action
 > or canonical move family whose source-complete discrete Noether identity
@@ -129,9 +141,8 @@ The strongest missing lemma is now precise:
 > the Block-44/53 two-TT law, and whose physical update is positive, causal,
 > and projectively consistent.
 
-This lemma is target-equivalent to nonlinear gravity closure on this campaign
-surface. The current result locates the correct formulation; it does not prove
-the lemma.
+The second lemma is target-equivalent to nonlinear gravity closure on this
+campaign surface. The affine-surrogate result proves neither lemma.
 
 ## 1. Reconstructed Objects
 
@@ -172,17 +183,19 @@ behind (2). The flat repaired action leaves the same ten metric tangents at
 zero momentum and the same four displacement columns at every nonzero mode.
 
 Equation (5) is also why an off-background Hessian null test cannot be read in
-isolation. If the complete stationary equation contains source and constraint
-terms, their gradients and the derivative of the generator contribute to the
-identity. Block 21 already warned that these terms vanish at the flat anchor
-but not on its affine sourced surrogate. The present exhaustive rank result
-turns that warning into a route gate.
+isolation. In the supplied affine KKT law the linear source and affine
+reaction terms contribute no length-length Hessian, while the fixed affine
+constraints are not a covariant gauge system: they explicitly cut the metric
+and displacement directions. A physical nonlinear law must instead transform
+its source and generator jointly. The exhaustive rank result is therefore an
+affine-surrogate route gate, not evidence that an omitted affine Hessian term
+would restore the nulls.
 
 ## 3. Finite Inventory
 
 The complete nonzero-mode census is:
 
-| `L` | modes | flat rank counts | sourced bare-Hessian rank counts |
+| `L` | modes | flat rank counts | affine length-block rank counts |
 |---:|---:|---:|---:|
 | `3` | `80` | `rank 11: 80` | `rank 15: 80` |
 | `4` | `255` | `rank 11: 255` | `rank 15: 255` |
@@ -216,7 +229,7 @@ physical coefficient and move rule unselected.
 
 | Gate | Assessment |
 |---|---|
-| V1 -- specific obstruction | closes the ambiguity between a bad linear integrator and the genuinely missing nonlinear constraint/source connection |
+| V1 -- specific correction | identifies the prior continuation as a five-nonmetric-mode, gauge-fixed affine ensemble rather than a physical curved metric |
 | V2 -- exact next action | retires fixed-action TT projection and coefficient tuning; promotes improved/perfect action and variable-triangulation construction |
 | V3 -- framework contact | uses the actual campaign Regge action, sourced continuation, gauge generator, and Block-53 update target |
 | V4 -- marginal content | adds an exhaustive `2,254`-mode full-rank contrast and a primary-literature formulation correction not present in prior blocks |
@@ -230,7 +243,7 @@ TOE percentage move: no nonlinear constraint algebra is constructed.
 The narrow negative is only:
 
 > The inherited flat vertex-displacement columns are not null directions of
-> the *bare fixed-action Hessian* on the declared Block-21 sourced curved
+> the complete length-length block on the declared Block-21 affine nonmetric
 > continuation across the executed `L=3...6` inventory.
 
 It is not “Regge gravity fails,” “no discrete gravity has first-class
@@ -240,8 +253,9 @@ constraints,” or “no local nonlinear completion exists.”
 
 | normalized route | attack and outcome | marker |
 |---|---|---|
-| bare fixed Regge-plus-deficit-square Hessian | Reconstruct the sourced curved continuation and test the inherited generators directly; all `2,254` nonzero modes are full rank. | `ATTEMPTED` |
-| complete source/constraint action | Add the source transformation, reaction, and nonlinear constraint-curvature terms required by (5); those terms are omitted here and are the preferred immediate repair. | `ATTEMPTED` as omission diagnosis; construction remains live |
+| affine Regge-plus-deficit-square length block | Reconstruct the five-nonmetric-mode affine continuation and test the inherited generators directly; all `2,254` nonzero modes are full rank. | `ATTEMPTED`; surrogate only |
+| genuine nonuniform conserved metric source | Solve the full-edge branch while fixing only displacement directions, then test the second-order Ward identity. | `UNTRIED` in this block; preferred immediate test |
+| complete source/constraint action | Replace the affine surrogate with a dynamical source, transformed generator, and nonlinear constraint identity required by (5). | `ATTEMPTED` as formulation diagnosis; construction remains live |
 | improved/perfect action | Refine and integrate interior data so the coarse action recovers exact symmetry; primary literature gives explicit lower-dimensional and restricted four-dimensional constructions, not this campaign's source-complete law. | `ATTEMPTED` as primary-literature route check; construction remains live |
 | variable-triangulation Pachner/tent evolution | Replace a fixed lattice tick by canonical local moves on extended phase spaces; the route is mathematically consistent but not yet bound to this Record/source carrier. | `ATTEMPTED` as primary-literature route check; construction remains live |
 | independent connection/tetrad constraint system | Reinstate connection, lapse, and shift variables so constraint preservation is an exact local identity rather than a TT projection; Blocks 35--42 give partial carriers but no selected stable nonlinear law. | `RULED OUT BY PRIOR` only as already-complete; route remains live |
@@ -284,9 +298,9 @@ rank tolerance are all explicit boundaries rather than hidden conditions.
 
 | witness | witness residual | current residual | match? |
 |---|---|---|---:|
-| [Block 21](ADMISSIBILITY_REGGE_CURVATURE_SQUARED_SOURCED_CONTINUATION_CONSTRAINT_LOCALIZATION_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md), Sections 5--6 | omitted nonlinear constraint/source connection on a sourced Regge continuation | inherited flat-generator nullity of the bare sourced Hessian | yes |
+| [Block 21](ADMISSIBILITY_REGGE_CURVATURE_SQUARED_SOURCED_CONTINUATION_CONSTRAINT_LOCALIZATION_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md), Sections 5--6 | five-normal affine continuation with all metric tangents fixed | inherited flat-generator nullity on the same nonmetric surrogate | yes after the present interpretation correction |
 | [Block 53](ADMISSIBILITY_TWO_TT_SPLIT_STEP_RECORD_FRONTIER_CAUSAL_MACRO_UPDATE_LSTAR_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-11.md), Sections 5 and N2 | nonlinear extension of the linear two-TT constraint circuit | identify whether fixed-action projection is that extension | yes |
-| Bahr--Dittrich 2009 | fixed-discretization curved Regge gauge breaking and pseudo-constraints | formulation class of the observed bare-Hessian loss | yes as context, not proof of runner numerics |
+| Bahr--Dittrich 2009 | fixed-discretization curved Regge gauge breaking and pseudo-constraints | possible formulation class after a genuine curved metric test | no as direct witness; route context only |
 | Bahr--Dittrich perfect actions | symmetry recovery through improved/perfect action | live repair route | no as negative witness; retained only as counterroute |
 | Dittrich--Hoehn Pachner evolution | consistent varying-phase-space canonical evolution | live repair route | no as negative witness; retained only as counterroute |
 
@@ -317,14 +331,14 @@ therefore does not say a new axiom is required.
 
 ### N7 -- Steelman
 
-A hostile reviewer should object that full rank of an incomplete bare Hessian
-at an affine-reaction point is almost expected and says nothing negative about
-the complete sourced law. Equation (5) itself displays the omitted terms.
-Moreover, a refined/perfect action can restore exact vertex-displacement
-symmetry, and a Pachner evolution can encode consistent discrete dynamics
-without a fixed-dimensional transfer. That steelman succeeds. It forces the
-claim down to the narrow diagnostic and makes the complete source/constraint
-action or refined move family the next target.
+A hostile reviewer should object that the Hessian is not incomplete: linear
+source and affine reaction terms have identically zero length-length Hessians.
+The real defect is that the ten affine constraints freeze all metric tangents
+and explicitly remove the displacement columns, so the continuation is not a
+physical curved-metric test. That steelman succeeds and is adopted here.
+Moreover, a dynamical source law, refined/perfect action, or Pachner evolution
+can restore a joint Noether identity. The claim is forced down to the narrow
+affine-surrogate diagnostic.
 
 ### N8 -- Cross-Cycle Echo
 
@@ -332,13 +346,13 @@ Blocks 19--21 initially tried affine constraints and coefficient repair; Block
 21 correctly kept a covariant constraint localization and refined/perfect
 action live. Blocks 42--53 then repaired the flat linear sector by changing
 the quotient and update rather than declaring gravity failure. The same
-mechanism applies again: change the formulation to include the missing
-nonlinear connection or refinement data. Earlier source-additive-zero and
+mechanism applies again: change the formulation to a dynamical nonlinear
+connection/source law or add refinement data. Earlier source-additive-zero and
 flat-projection walls were likewise retired by endogenizing the joint law.
 The present route decision incorporates those escapes instead of repeating a
 fixed-carrier no-go.
 
-**N1--N8 status: `PASS` for the narrow finite-inventory bare-Hessian claim.**
+**N1--N8 status: `PASS` for the narrow finite-inventory affine-surrogate claim.**
 The universal gravity no-go fails N1 and N7 and is not shipped.
 
 ## Reproduction
@@ -360,11 +374,13 @@ TOTAL: PASS=7 FAIL=0
 
 We were at risk of mistaking repeated linear and fixed-action repairs for TOE
 progress. The corrected result is more useful: the linear causal sector works,
-but the first sourced curved continuation exposes exactly where an ordinary
-fixed Regge Hessian stops carrying four constraints. The missing object is not
-another integrator parameter. It is the source-complete nonlinear Noether
-identity, realized either by a complete connection/constraint action, an
-improved/perfect action, or a variable-triangulation canonical move law.
+but the first affine continuation was not a physical curved metric: it froze
+all ten metric tangents and varied only five nonmetric modes. Its full-rank
+Hessian therefore cannot carry the interpretation previously assigned to it.
+The missing object is not an affine Hessian term or another integrator
+parameter. It is a replacement source-complete nonlinear Noether identity,
+realized either by a dynamical source/connection action, an improved/perfect
+action, or a variable-triangulation canonical move law.
 
 That is now the gravity priority. Until one of those constructions exists and
 is bound to the Record clock/source/state fields, gravity/source/resources

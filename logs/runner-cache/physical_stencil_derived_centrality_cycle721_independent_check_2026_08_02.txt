@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/physical_stencil_derived_centrality_cycle721_independent_check_2026_08_02.py
+runner_sha256: 26781450049763801f7ae12ebf9e511143929ef0c65d472de1e067cbf0e59b25
+input_fingerprint_sha256: cf539addac36cf4030a5f504d4bf367dff38daaf4ca8b6e91bdcc96d102e7c19
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 4.96
+status: ok
+----- stdout -----
+PASS independent.paths generated=24 compiler=24
+PASS independent.signed_group order=48 products=48
+PASS independent.proper_frames compiler=24 determinant_one=24
+PASS independent.folded_stabilizer order=12
+PASS independent.body_diagonal agreement=12/48
+PASS independent.tick_fixed folded=12 tick_fixed_unsigned=6
+PASS independent.fold_coset unsigned=6 sign_reversed=6
+PASS independent.tick_fixed_determinants split=3+3
+PASS independent.determinants split=6+6
+PASS independent.subgroup product and inverse closure
+PASS independent.sextet indices=(1, 4, 9, 15, 18, 23)
+PASS independent.cosets count=4 sizes=[6]
+PASS independent.slots.L3 slots=98 distinct=48
+PASS independent.action.L3 forward=0 reverse=175104
+PASS independent.centrality.L3 central_residual=0 mixed_noncommuters=32
+PASS independent.closed_form.L3 mismatches=0
+PASS independent.slots.L5 slots=604 distinct=48
+PASS independent.action.L5 forward=0 reverse=1094400
+PASS independent.centrality.L5 central_residual=0 mixed_noncommuters=32
+PASS independent.closed_form.L5 mismatches=0
+PASS independent.assembly_group.L3 measured=12 exact=12
+PASS independent.assembly_margin.L3 inside=1.243e-10 tolerance=2.945e-07 outside=4.000000
+PASS independent.frame_cosets.L3 classes=4 sizes=[6]
+PASS independent.assembly_group.L4 measured=12 exact=12
+PASS independent.assembly_margin.L4 inside=1.243e-10 tolerance=2.945e-07 outside=4.000000
+PASS independent.frame_cosets.L4 classes=4 sizes=[6]
+PASS independent.assembly_group.L5 measured=12 exact=12
+PASS independent.assembly_margin.L5 inside=1.243e-10 tolerance=2.945e-07 outside=4.000000
+PASS independent.frame_cosets.L5 classes=4 sizes=[6]
+PASS independent.primary_receipt primary finite anchors agree after independent reconstruction
+TOTAL: PASS=30 FAIL=0
+
+----- stderr -----
+

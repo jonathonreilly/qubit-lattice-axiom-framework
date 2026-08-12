@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/physical_cell_cutting_hidden_three_bit_geometry_cycle743_independent_check_2026_08_05.py
+runner_sha256: 5cd179ddc93085ac8c25968c196d37bd6c22c210a4cfe4f8d3fa8ee23f49d7ca
+input_fingerprint_sha256: 90a550866adc125f10c7004dc8b10e87d565ba499c706cbb0c85bd760fa752f8
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 9.86
+status: ok
+----- stdout -----
+PASS independent.population  opposite-pivot reconstruction gives the complete 15800 by 192 table
+PASS independent.dependency  Cycle 742 primary/checker and exact incidence identity are current
+PASS independent.automorphisms  both exact predecessor maps are involutive automorphisms of every row
+PASS independent.group_orders  generator closures have orders 48, 96, and 384
+PASS independent.group_structure  tuple arithmetic reproduces the element census, centre, and point stabilizer
+PASS independent.derived  derived subgroup has order 96 and contains every square
+PASS independent.cutting_orbits  complete generated cutting action has 74 orbits
+PASS independent.unique_partition  the unique size-eight cutting orbit is the sole E-invariant eight-cutting partition
+PASS independent.block_profiles  every block meets each declared subgroup orbit in exactly six columns
+PASS independent.block_action  block image has order 192 with central kernel two
+PASS independent.translation  exactly one of four regular order-eight subgroups is normal
+PASS independent.affine  split affine action has plane stabilizer 24 and joint stabilizer 6
+PASS independent.matrix_census  complete 3-by-3 matrix census matches both stabilizers
+PASS independent.primary_contract  primary receipt pins current sources and the independently rebuilt headline
+PASS hostile.automorphism  transposing two map images breaks incidence preservation
+PASS hostile.omitted_generator  omitting the second extra generator collapses 384 to 96
+PASS hostile.partition  moving one column breaks the eight-by-24 partition
+PASS hostile.primary_status  a failing primary receipt cannot satisfy the consumer contract
+PASS hostile.group_order  a mutated group order cannot satisfy the consumer contract
+per_element: checked -- all 192 support columns enter the independent incidence, group, block, and affine checks
+per_site: checked and not executed -- one supplied coordinate four-cube only; no framework cell or site is identified
+per_mode: checked and not executed -- the finite permutation action has no field or momentum-mode decomposition
+per_block: checked -- complete eight-block action, four regular subgroups, and all seven label planes
+lattice_wide: checked and not executed -- no multi-cell, arbitrary-domain, boundary, thermodynamic, or continuum result
+RECEIPT outputs/physical_cell_cutting_hidden_three_bit_geometry_cycle743_independent_check_2026_08_05_receipt_2026-08-05.json
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

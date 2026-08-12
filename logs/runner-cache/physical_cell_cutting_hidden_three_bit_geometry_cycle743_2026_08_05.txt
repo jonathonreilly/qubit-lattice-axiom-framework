@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/physical_cell_cutting_hidden_three_bit_geometry_cycle743_2026_08_05.py
-runner_sha256: 3615996cb52b6015795ccf40d4e6032d28691fd887d3f0b46726ddba32f7dadc
-timeout_sec: 120
+runner_sha256: a4a0797c95e6ccf7965e25c0fe7b0692a17d7811eac325997fc98f663caee404
+input_fingerprint_sha256: a2b348d8a094d8c4b468783ff63f8127e47044c37d80f12b8dd4d68ec6cc4289
+timeout_sec: 900
 exit_code: 0
-elapsed_sec: 8.36
+elapsed_sec: 14.91
 status: ok
 ----- stdout -----
 -- rebuild
@@ -13,9 +14,11 @@ G03 rowsupp: width 24 distinct 15800 exp 24 15800 -> PASS
 G04 perms48: 48 exp 48 -> PASS
 G05 orbits48: 4 of sizes [48, 48, 48, 48] exp 4 of 48 -> PASS
 G06 readings: 8 distinct, closed under xor exp 8 -> PASS
+Gpairrows all pair-search first endpoints: 15800 -> PASS
 G07 b0: an involution outside the 48 exp automorphism -> PASS
 G08 b1: an involution outside the 48 exp automorphism -> PASS
 G09 bfix: 8 of 8 readings kept exp 8 -> PASS
+Gdep.cycle742 exact Cycle 742 incidence and b0/b1 bytes: bound -> PASS
 -- the group E
 G10 ord48: 48 exp 48 -> PASS
 G11 ord48b0: 96 exp 96 -> PASS
@@ -45,7 +48,7 @@ G33 rowdist: 8:1 24:4 32:1 48:7 64:1 96:11 192:24 384:25 -> PASS
 G34 one8: 1 exp 1 -> PASS
 G35 blocks: 8 supports of 24, pairwise disjoint exp 8 of 24 -> PASS
 G36 cover: 192 exp 192 -> PASS
-G37 quarter: each block meets each quarter in 6 exp 6 -> PASS
+G37 pieceorbits: each block meets each declared 48-column piece orbit in 6 exp 6 -> PASS
 G38 same48: one 48-orbit of size 8 exp 8 -> PASS
 G39 kernel: 2, the centre exp 2 -> PASS
 G40 imB: 192 exp 192 -> PASS
@@ -76,7 +79,23 @@ G63 L48orb: [1, 3, 3] exp [1, 3, 3] -> PASS
 G64 vstar: 1 label kept by all of L48, off the plane exp 1 -> PASS
 G65 vin4: in the four-orbit, stabilizer 6 equal to L48 exp 6 -> PASS
 G66 jointstab: 6 keep plane and direction, and they are L48 exp 6 -> PASS
-TOTAL: PASS=66 FAIL=0
+Ghostile.pair_inventory the submitted half-width chunk loop is rejected: 7900 is not 15800 -> PASS
+Ghostile.dependency a failed Cycle 742 receipt is rejected: fail closed -> PASS
+Ghostile.automorphism_identity a self-consistently rehashed but changed predecessor permutation is rejected: fail closed -> PASS
+Ghostile.reading_identity a changed predecessor function identity is rejected: fail closed -> PASS
+Ghostile.automorphism_semantics a transposed image pair no longer preserves the cutting population: fail closed -> PASS
+Ghostile.block_partition moving one piece breaks the eight-by-24 partition: fail closed -> PASS
+Gbudget.time elapsed 14.80s: <900s -> PASS
+Gbudget.memory peak 323.4 MB: <2500 MB -> PASS
+Gbudget.output bounded stdout: <6000 chars -> PASS
+
+per_element: checked -- all 192 support columns enter the incidence, group, block, and affine-action checks
+per_site: checked and not executed -- one supplied coordinate four-cube only; no framework cell or site is identified
+per_mode: checked and not executed -- this finite permutation action has no field or momentum-mode decomposition
+per_block: checked -- the complete eight-block action, all four regular elementary-abelian subgroups, and all seven label planes
+lattice_wide: checked and not executed -- no multi-cell, arbitrary-domain, boundary, thermodynamic, or continuum statement is asserted
+RECEIPT outputs/physical_cell_cutting_hidden_three_bit_geometry_cycle743_2026_08_05_receipt_2026-08-05.json
+TOTAL: PASS=77 FAIL=0
 
 ----- stderr -----
 

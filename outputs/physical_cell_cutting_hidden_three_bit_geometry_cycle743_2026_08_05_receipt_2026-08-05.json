@@ -1,77 +1,220 @@
 {
- "cycle": 743,
- "failures": 0,
- "gates": 66,
- "headline": "The symmetry of the finite cutting system extends from the 48 cutting symmetries to a group of order 384 that fixes all eight readings pointwise. That group preserves exactly one partition of the 192 pieces into the supports of eight pairwise disjoint cuttings - eight blocks of 24, each meeting each of the four piece-orbits in 6. The induced action on the eight blocks realizes a hidden three-bit affine geometry: the image has order 192 and splits as the 8 translations together with the full 24-element stabilizer of a distinguished plane, and the original 48 cutting symmetries induce exactly the subgroup whose linear part additionally fixes a distinguished direction lying off that plane. The two automorphisms constructed in the previous cycle release that pinned direction, enlarging the linear part from 6 to 24.",
- "lane": "emergent-geometry",
- "note": "docs/PHYSICAL_CELL_CUTTING_HIDDEN_THREE_BIT_GEOMETRY_CYCLE743_NOTE_2026-08-05.md",
- "recorded_output": "outputs/physical_cell_cutting_hidden_three_bit_geometry_cycle743_2026_08_05_cold_2026-08-05.txt",
- "results": {
-  "affine_three_bit_structure": {
-   "additive_label_pairs": 64,
-   "faithful_image_on_four_orbit": 24,
-   "fixed_directions_off_plane": 1,
-   "fixed_point_free_involutions": 25,
-   "invariant_planes": 1,
-   "invertible_matrices": 168,
-   "joint_stabilizer_matrices": 6,
-   "linear_parts": 24,
-   "linear_parts_of_the_48": 6,
-   "matrices_over_two_element_field": 512,
-   "normal_among_them": 1,
-   "plane_labels": 4,
-   "plane_preserving_matrices": 24,
-   "planes_in_the_space": 7,
-   "regular_elementary_abelian_subgroups": 4,
-   "split_product": 192,
-   "translations": 8
+  "affine_action": {
+    "full_plane_stabilizer_matrices": 24,
+    "invariant_planes": 1,
+    "linear_part_order": 24,
+    "normal_regular_subgroups": 1,
+    "plane_and_direction_stabilizer_matrices": 6,
+    "regular_elementary_abelian_subgroups": 4,
+    "subgroup_48_common_fixed_nonzero_labels": 1,
+    "subgroup_48_linear_part_order": 6,
+    "translation_order": 8
   },
-  "cutting_orbits": {
-   "size_distribution": "8:1 24:4 32:1 48:7 64:1 96:11 192:24 384:25",
-   "under_the_48": 391,
-   "under_the_whole_group": 74
+  "audit_status_authority": "independent audit lane only",
+  "claim_type": "bounded_theorem",
+  "direct_dependency": {
+    "b0_support_permutation_sha256": "443d8fabee7be38f67945a9a3b1e6343dea2e9941ba6538d54dc3dcdaa69b95a",
+    "b1_support_permutation_sha256": "f3002cfbcfd866cc94e983fc5222c46da19b0a29128633deb25f2a38c4e95743",
+    "canonical_incidence_rows_sha256": "49c70821648fa7a96aa621289ee133ca767a792d2e326f7aca11b6bd85a09bda",
+    "cycle": 742,
+    "functions": {
+      "four": {
+        "canonical_rows_with_bit_sha256": "a20e73d19d927e43e0d91af911722fbd8913c484f6bef9c572efaf792316d191",
+        "ones": 5664
+      },
+      "four-flip": {
+        "canonical_rows_with_bit_sha256": "33251a165ab0a2101fa646f762a7015fcf2d5d8032d5cadb1df50e9dda52bd19",
+        "ones": 10136
+      },
+      "one": {
+        "canonical_rows_with_bit_sha256": "cd0070ded9d3ccd559cdba5b6f375548ddfa70ad946f9d99d4ac17f64377c2bc",
+        "ones": 15800
+      },
+      "seven": {
+        "canonical_rows_with_bit_sha256": "5311e95f082dfb171d2ae94b3f0ccde8516fcac440696eae18cbc3e3f33f8643",
+        "ones": 7424
+      },
+      "seven-flip": {
+        "canonical_rows_with_bit_sha256": "b4bffadc08ae448822a115f7787307f592a573692f30c6d637da508cf587eb85",
+        "ones": 8376
+      },
+      "six": {
+        "canonical_rows_with_bit_sha256": "016921ddc4d1b953ceb41b4087ae4e0530925b28f6b83a1fa8024e60651021b8",
+        "ones": 7704
+      },
+      "six-flip": {
+        "canonical_rows_with_bit_sha256": "9cdc13d500cab0f64e56104866b4b298609d27fcf1d0c0ca6d9a0cc2dcd28195",
+        "ones": 8096
+      },
+      "zero": {
+        "canonical_rows_with_bit_sha256": "cbdbd1b019969819a98851ef9cc08782121da63ab99519717bb06b5d08c5b0f4",
+        "ones": 0
+      }
+    },
+    "schema": "physical-cell-cutting-sixteen-attained-cycle742-v2",
+    "status": "pass",
+    "support_column_order_sha256": "56b1de932ec32c731c060e02886775465ceca0281e6de1d99292140aedcf158b"
   },
-  "eight_blocks": {
-   "block_action_kernel_order": 2,
-   "block_image_order": 192,
-   "image_of_the_48": 48,
-   "pairwise_disjoint": true,
-   "pieces_per_block_per_orbit": 6,
-   "support_of_each": 24,
-   "union_of_supports": 192,
-   "unique_orbit_of_size": 8
+  "gates": {
+    "fail": 0,
+    "named": {
+      "01": "PASS",
+      "02": "PASS",
+      "03": "PASS",
+      "04": "PASS",
+      "05": "PASS",
+      "06": "PASS",
+      "07": "PASS",
+      "08": "PASS",
+      "09": "PASS",
+      "10": "PASS",
+      "11": "PASS",
+      "12": "PASS",
+      "13": "PASS",
+      "14": "PASS",
+      "15": "PASS",
+      "16": "PASS",
+      "17": "PASS",
+      "18": "PASS",
+      "19": "PASS",
+      "20": "PASS",
+      "21": "PASS",
+      "22": "PASS",
+      "23": "PASS",
+      "24": "PASS",
+      "25": "PASS",
+      "26": "PASS",
+      "27": "PASS",
+      "28": "PASS",
+      "29": "PASS",
+      "30": "PASS",
+      "31": "PASS",
+      "32": "PASS",
+      "33": "PASS",
+      "34": "PASS",
+      "35": "PASS",
+      "36": "PASS",
+      "37": "PASS",
+      "38": "PASS",
+      "39": "PASS",
+      "40": "PASS",
+      "41": "PASS",
+      "42": "PASS",
+      "43": "PASS",
+      "44": "PASS",
+      "45": "PASS",
+      "46": "PASS",
+      "47": "PASS",
+      "48": "PASS",
+      "49": "PASS",
+      "50": "PASS",
+      "51": "PASS",
+      "52": "PASS",
+      "53": "PASS",
+      "54": "PASS",
+      "55": "PASS",
+      "56": "PASS",
+      "57": "PASS",
+      "58": "PASS",
+      "59": "PASS",
+      "60": "PASS",
+      "61": "PASS",
+      "62": "PASS",
+      "63": "PASS",
+      "64": "PASS",
+      "65": "PASS",
+      "66": "PASS",
+      "budget.memory": "PASS",
+      "budget.output": "PASS",
+      "budget.time": "PASS",
+      "dep.cycle742": "PASS",
+      "hostile.automorphism_identity": "PASS",
+      "hostile.automorphism_semantics": "PASS",
+      "hostile.block_partition": "PASS",
+      "hostile.dependency": "PASS",
+      "hostile.pair_inventory": "PASS",
+      "hostile.reading_identity": "PASS",
+      "pairrows": "PASS"
+    },
+    "pass": 77
   },
-  "element_order_censuses": {
-   "derived_subgroup": "1:1 2:19 3:32 4:12 6:32",
-   "the_48": "1:1 2:19 3:8 4:12 6:8",
-   "whole_group": "1:1 2:75 3:32 4:132 6:96 8:48"
+  "generated_group": {
+    "centre_order": 2,
+    "cutting_orbit_size_distribution": [
+      [
+        8,
+        1
+      ],
+      [
+        24,
+        4
+      ],
+      [
+        32,
+        1
+      ],
+      [
+        48,
+        7
+      ],
+      [
+        64,
+        1
+      ],
+      [
+        96,
+        11
+      ],
+      [
+        192,
+        24
+      ],
+      [
+        384,
+        25
+      ]
+    ],
+    "cutting_orbits": 74,
+    "derived_subgroup_order": 96,
+    "order": 384,
+    "piece_orbits": [
+      192
+    ]
   },
-  "group_of_order_384": {
-   "abelianization_order": 4,
-   "centre_involution_fixed_pieces": 0,
-   "centre_order": 2,
-   "derived_equals_first_extra_closure": false,
-   "derived_subgroup_order": 96,
-   "elements_fixing_all_eight_readings": 384,
-   "elements_of_order_three": 32,
-   "first_extra_inside_second_closure": true,
-   "order_of_48_alone": 48,
-   "order_with_first_extra": 96,
-   "order_with_second_extra": 384,
-   "permutation_rank": 104,
-   "point_stabilizer_order": 2,
-   "stabilizer_involution_fixed_pieces": 16,
-   "subgroups_of_order_three": 16,
-   "transitive_on_pieces": 192
+  "input_sha256": {
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
+    "docs/PHYSICAL_CELL_CUTTING_HIDDEN_THREE_BIT_GEOMETRY_CYCLE743_NOTE_2026-08-05.md": "c99e12672509305b36472b5e7de167287754864f69c3df3038ea09fc8778d796",
+    "docs/PHYSICAL_CELL_CUTTING_SIXTEEN_ATTAINED_CYCLE742_NOTE_2026-08-05.md": "70d3b201056cbaecc7e03ff4f7fd8a44528997ac6831f4f867f838f642cb53fe",
+    "outputs/physical_cell_cutting_sixteen_attained_cycle742_2026_08_05_receipt_2026-08-05.json": "d018b7da4b99b7017679b67e11e85035b302161a99ca6125764c7aa4e9f64ac6",
+    "outputs/physical_cell_cutting_sixteen_attained_cycle742_independent_check_2026_08_05_receipt_2026-08-05.json": "d893aafd0528ab9866a0e5e67f35a785a104f2756ce6270ce16f036166ce16c7",
+    "requirements-release.txt": "e153eea331ce1b76cd99f09e14a777df2bc9efbaa06a201528ddfdc0f3f01bee",
+    "requirements.txt": "3fda988835a13d9a7236b0b508aa9bcd2f9b3f3b9a47b4875a15f86dbc77a3ad",
+    "scripts/physical_cell_cutting_hidden_three_bit_geometry_cycle743_independent_check_2026_08_05.py": "5cd179ddc93085ac8c25968c196d37bd6c22c210a4cfe4f8d3fa8ee23f49d7ca",
+    "scripts/physical_cell_cutting_sixteen_attained_cycle742_2026_08_05.py": "3e5d865635ccb7be15da4279785d8213d7198c3175ac4d6a16760af22edb6a72",
+    "scripts/physical_cell_cutting_sixteen_attained_cycle742_independent_check_2026_08_05.py": "b64ea254fd12366fbb42e561c33a994322c5a32f20711f6c7fbb6832cc0e86a7"
   },
-  "rebuilt_system": {
-   "cutting_symmetries": 48,
-   "cutting_width": 24,
-   "distinct_cuttings": 15800,
-   "piece_orbits": 4,
-   "pieces": 192,
-   "readings": 8,
-   "uses_per_piece": 1975
+  "invariant_cutting_partition": {
+    "block_action_image_order": 192,
+    "block_action_kernel_order": 2,
+    "blocks": 8,
+    "subgroup_48_image_order": 48,
+    "support_per_block": 24,
+    "support_union": 192,
+    "unique_e_invariant_eight_cutting_partition": true
+  },
+  "no_go_discipline": {
+    "claim_scope": "uniqueness only within E-invariant partitions made from supplied cutting supports, regular elementary-abelian subgroups of the measured block image, and invariant planes of its measured linear part",
+    "n5_certificate": "five resolution lines in stdout and canonical cache",
+    "status": "PASS"
+  },
+  "runner_sha256": "a4a0797c95e6ccf7965e25c0fe7b0692a17d7811eac325997fc98f663caee404",
+  "schema": "physical-cell-cutting-hidden-three-bit-geometry-cycle743-v2",
+  "status": "pass",
+  "supplied_model": {
+    "geometric_cuttings": 15800,
+    "physical_cell_or_reading_bridge": "open",
+    "pieces_per_cutting": 24,
+    "support_columns": 192,
+    "uses_per_piece": 1975
   }
- }
 }

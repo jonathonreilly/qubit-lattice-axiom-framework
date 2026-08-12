@@ -1,0 +1,56 @@
+{
+  "audit_status_authority": "independent audit lane only",
+  "checker_sha256": "5cd179ddc93085ac8c25968c196d37bd6c22c210a4cfe4f8d3fa8ee23f49d7ca",
+  "claim_type": "bounded_theorem",
+  "gates": {
+    "fail": 0,
+    "named": {
+      "hostile.automorphism": "PASS",
+      "hostile.group_order": "PASS",
+      "hostile.omitted_generator": "PASS",
+      "hostile.partition": "PASS",
+      "hostile.primary_status": "PASS",
+      "independent.affine": "PASS",
+      "independent.automorphisms": "PASS",
+      "independent.block_action": "PASS",
+      "independent.block_profiles": "PASS",
+      "independent.cutting_orbits": "PASS",
+      "independent.dependency": "PASS",
+      "independent.derived": "PASS",
+      "independent.group_orders": "PASS",
+      "independent.group_structure": "PASS",
+      "independent.matrix_census": "PASS",
+      "independent.population": "PASS",
+      "independent.primary_contract": "PASS",
+      "independent.translation": "PASS",
+      "independent.unique_partition": "PASS"
+    },
+    "pass": 19
+  },
+  "independent_reconstruction": {
+    "block_image_order": 192,
+    "cutting_orbits": 74,
+    "exact_covers": 15800,
+    "generated_group_order": 384,
+    "invariant_planes": 1,
+    "linear_part_order": 24,
+    "normal_regular_order_eight_subgroups": 1,
+    "regular_order_eight_subgroups": 4,
+    "support_columns": 192
+  },
+  "input_sha256": {
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
+    "docs/PHYSICAL_CELL_CUTTING_HIDDEN_THREE_BIT_GEOMETRY_CYCLE743_NOTE_2026-08-05.md": "c99e12672509305b36472b5e7de167287754864f69c3df3038ea09fc8778d796",
+    "docs/PHYSICAL_CELL_CUTTING_SIXTEEN_ATTAINED_CYCLE742_NOTE_2026-08-05.md": "70d3b201056cbaecc7e03ff4f7fd8a44528997ac6831f4f867f838f642cb53fe",
+    "outputs/physical_cell_cutting_hidden_three_bit_geometry_cycle743_2026_08_05_receipt_2026-08-05.json": "267b0a2ba48c61aa803f5b7e7408087221f5eac05ad2618084a8dd7b4f715f07",
+    "outputs/physical_cell_cutting_sixteen_attained_cycle742_2026_08_05_receipt_2026-08-05.json": "d018b7da4b99b7017679b67e11e85035b302161a99ca6125764c7aa4e9f64ac6",
+    "outputs/physical_cell_cutting_sixteen_attained_cycle742_independent_check_2026_08_05_receipt_2026-08-05.json": "d893aafd0528ab9866a0e5e67f35a785a104f2756ce6270ce16f036166ce16c7",
+    "requirements-release.txt": "e153eea331ce1b76cd99f09e14a777df2bc9efbaa06a201528ddfdc0f3f01bee",
+    "requirements.txt": "3fda988835a13d9a7236b0b508aa9bcd2f9b3f3b9a47b4875a15f86dbc77a3ad",
+    "scripts/physical_cell_cutting_hidden_three_bit_geometry_cycle743_2026_08_05.py": "a4a0797c95e6ccf7965e25c0fe7b0692a17d7811eac325997fc98f663caee404",
+    "scripts/physical_cell_cutting_sixteen_attained_cycle742_2026_08_05.py": "3e5d865635ccb7be15da4279785d8213d7198c3175ac4d6a16760af22edb6a72",
+    "scripts/physical_cell_cutting_sixteen_attained_cycle742_independent_check_2026_08_05.py": "b64ea254fd12366fbb42e561c33a994322c5a32f20711f6c7fbb6832cc0e86a7"
+  },
+  "schema": "physical-cell-cutting-hidden-three-bit-geometry-cycle743-independent-v1",
+  "status": "pass"
+}

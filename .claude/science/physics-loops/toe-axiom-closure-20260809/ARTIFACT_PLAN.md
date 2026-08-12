@@ -1542,7 +1542,8 @@ complete conditional nonlinear compact solution:
 - current evidence: science commit `e40b298a32`; graph `5,506/15,774`,
   out-degree three; vocabulary, strict lint, premise purity, model-family
   normalization, Python/cache, claim typing, whitespace, N5, and enforced
-  graph/link checks pass
+  graph/link checks pass; PR #6153 is open, mergeable, and `CLEAN` on exact
+  Block-59 delivery `057f996939`
 - score and next artifact: significant mechanism/route progress and zero TOE
   percentage movement. Derive the symbolic multivariable coefficient
   cancellations or break them on a less-symmetric source/momentum; then test

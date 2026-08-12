@@ -1100,9 +1100,9 @@ change. Landing order adds Block 59 after #6151.
 
 ## Block 60
 
-Science is committed locally on
+PR #6153 is open, mergeable, and `CLEAN` on
 `physics-loop/toe-axiom-closure-block60-generic-ward-20260812`, stacked
-exactly on Block-59 delivery head `057f996939`; PR is not yet open. Its
+exactly on Block-59 delivery head `057f996939`. Its
 distinct review object is the exact face/body nonaxial phase quotient, four
 cubic Ward tails, and corrected two-stage displacement-generator cancellation
 mechanism. Primary/cache is `PASS=7 FAIL=0`; four mutations fail one check

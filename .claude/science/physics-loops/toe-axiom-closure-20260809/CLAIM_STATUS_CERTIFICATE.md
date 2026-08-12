@@ -1953,6 +1953,7 @@ lines are in the landing primary cache.
   check each; graph `5,506/15,774`, out-degree three. Vocabulary, strict lint,
   premise purity, model normalization, Python/cache, claim typing, whitespace,
   N5, and enforced graph/link invariants pass. Science commit is `e40b298a32`.
+  PR #6153 is open, mergeable, and `CLEAN`.
 - Scope: the axial-artifact objection fails on two cubic nonaxial orbits. This
   is significant mechanism and route progress, but zero TOE percentage
   movement—not a generic angular or uniform refinement theorem, arbitrary

@@ -198,6 +198,13 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
         "scripts/physical_adjacency_admissible_assembly_trade_cycle723_"
         "independent_check_2026_08_03.py",
     ],
+    # Cycle 726's checker independently reconstructs the denominator-two
+    # certificate, attaining witness, facet triangulations, spectra, and
+    # diagonal-pattern law without importing or executing the primary.
+    "physical_facet_charge_tick_mixed_split_cycle726_note_2026-08-04": [
+        "scripts/physical_facet_charge_tick_mixed_split_cycle726_"
+        "independent_check_2026_08_04.py",
+    ],
     "b4_clock_relation_run_cycle879_bounded_theorem_note_2026-07-28": [
         "scripts/frontier_cycle879_b4_relation_independent_check_2026_07_28.py",
     ],

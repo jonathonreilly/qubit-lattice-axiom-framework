@@ -1,0 +1,170 @@
+{
+  "audit_status_authority": "independent audit lane only",
+  "automorphism_certificates_verified": true,
+  "automorphism_support_permutation_sha256": {
+    "b0": "443d8fabee7be38f67945a9a3b1e6343dea2e9941ba6538d54dc3dcdaa69b95a",
+    "b1": "f3002cfbcfd866cc94e983fc5222c46da19b0a29128633deb25f2a38c4e95743"
+  },
+  "checker_sha256": "51b7853a6d243d09b56bcf86b144c151295ce33efd8b4ed9970834c137576ccd",
+  "claim_type": "bounded_theorem",
+  "exact_weight_sixteen_four": {
+    "answer": true,
+    "clauses": 152899,
+    "support": [
+      15,
+      18,
+      26,
+      40,
+      45,
+      70,
+      77,
+      80,
+      97,
+      113,
+      120,
+      140,
+      156,
+      169,
+      181,
+      190
+    ],
+    "variables": 5160
+  },
+  "extended_group": {
+    "carrier_orbit_sizes": [
+      12,
+      12,
+      24,
+      24,
+      48
+    ],
+    "closure_count": 120,
+    "piece_transitive": true
+  },
+  "gates": {
+    "fail": 0,
+    "named": {
+      "hostile.automorphism_mutation": "PASS",
+      "hostile.dependency": "PASS",
+      "hostile.dependency_hash": "PASS",
+      "hostile.primary_mutation": "PASS",
+      "hostile.reading_identity": "PASS",
+      "hostile.sat": "PASS",
+      "hostile.skipped_row": "PASS",
+      "independent.automorphisms": "PASS",
+      "independent.carriers": "PASS",
+      "independent.dependencies": "PASS",
+      "independent.group_closure": "PASS",
+      "independent.population": "PASS",
+      "independent.rank": "PASS",
+      "independent.restrictions": "PASS",
+      "independent.sixteen": "PASS",
+      "independent.targets": "PASS",
+      "receipt.contract": "PASS"
+    },
+    "pass": 17
+  },
+  "incidence_identity": {
+    "canonical_incidence_rows_sha256": "49c70821648fa7a96aa621289ee133ca767a792d2e326f7aca11b6bd85a09bda",
+    "support_column_order_sha256": "56b1de932ec32c731c060e02886775465ceca0281e6de1d99292140aedcf158b"
+  },
+  "input_sha256": {
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
+    "docs/PHYSICAL_CELL_CUTTING_FOURTEEN_FRONTIER_CYCLE741_NOTE_2026-08-05.md": "9e23f3bc4617a4fb989a4ae64aaa56f885a3ae1d3050df9e79ecaf69090066b7",
+    "docs/PHYSICAL_CELL_CUTTING_LEAST_COMPUTING_SETS_CYCLE737_NOTE_2026-08-05.md": "eab3120bdee580b4b54561740659ebe142bc543c95901c00fa71e04c7d558a5a",
+    "docs/PHYSICAL_CELL_CUTTING_SIXTEEN_ATTAINED_CYCLE742_NOTE_2026-08-05.md": "70d3b201056cbaecc7e03ff4f7fd8a44528997ac6831f4f867f838f642cb53fe",
+    "docs/PHYSICAL_CELL_CUTTING_TWELVE_FRONTIER_CYCLE739_NOTE_2026-08-05.md": "173ae15f814ba015705089f5c5ccdd5bb42895df5e12023d459b9b8bfcceebb4",
+    "outputs/physical_cell_cutting_fourteen_frontier_cycle741_2026_08_05_receipt_2026-08-05.json": "fe2a3ab7615aef978cb38aa36b5e71b2e1e517ffacd496ad087ee01e0a150b98",
+    "outputs/physical_cell_cutting_fourteen_frontier_cycle741_independent_check_2026_08_05_receipt_2026-08-05.json": "592d2ed4e8566379c16b46d0b6c509d1418b7a9ae533e9320400e051239df9d6",
+    "outputs/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05_receipt_2026-08-05.json": "1088b2cf8aa99b9f4517fec84097b167ad6511df7f63943ee0f3f1e3240efb30",
+    "outputs/physical_cell_cutting_least_computing_sets_cycle737_independent_check_2026_08_05_receipt_2026-08-05.json": "1590f37efa5a093869177ded29941d9e02856856cfae51edf0264d829939b5c4",
+    "outputs/physical_cell_cutting_sixteen_attained_cycle742_2026_08_05_receipt_2026-08-05.json": "b9d21603dc07e38bf6902546e9d4f465d4998791c23ac656c96dd3492ff807ec",
+    "outputs/physical_cell_cutting_twelve_frontier_cycle739_2026_08_05_receipt_2026-08-05.json": "d9912e51db80f729c647e9d9ba5136ec09e32a794c75196fab131998d93ae8ee",
+    "outputs/physical_cell_cutting_twelve_frontier_cycle739_independent_check_2026_08_05_receipt_2026-08-05.json": "f093afb5c490fae541195b4d22ddccc937db47d3e339a7a4b860cc5a0270816f",
+    "requirements-release.txt": "e153eea331ce1b76cd99f09e14a777df2bc9efbaa06a201528ddfdc0f3f01bee",
+    "requirements.txt": "3fda988835a13d9a7236b0b508aa9bcd2f9b3f3b9a47b4875a15f86dbc77a3ad",
+    "scripts/physical_cell_cutting_fourteen_frontier_cycle741_2026_08_05.py": "8abd6cc44b5701897d4e8def30dc97339d30c4243cc55e410179d7e5e09022d7",
+    "scripts/physical_cell_cutting_fourteen_frontier_cycle741_independent_check_2026_08_05.py": "842e4b276daf6d82e516bf553b2bbe6ab844a58d28dce72b2763a9918507c25d",
+    "scripts/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05.py": "4943c2bd0d89099394c06555f065bbed93c2d536c87a8a131a483535f6b027cd",
+    "scripts/physical_cell_cutting_least_computing_sets_cycle737_independent_check_2026_08_05.py": "e452a7b00ba0fadf65949ad2fb3e7eed462905a0202bacdc494b2fe83e642c5e",
+    "scripts/physical_cell_cutting_sixteen_attained_cycle742_2026_08_05.py": "3e5d865635ccb7be15da4279785d8213d7198c3175ac4d6a16760af22edb6a72",
+    "scripts/physical_cell_cutting_twelve_frontier_cycle739_2026_08_05.py": "9fb052ebe5b58585c716d766c81882f04e16e4584482e7a5a354ff66c8510b9d",
+    "scripts/physical_cell_cutting_twelve_frontier_cycle739_independent_check_2026_08_05.py": "e6b75cd4e42fc83b694f745a2f6b9659830c4655487a4dc4009d74b19ed96ee9"
+  },
+  "n5_execution_certificate": [
+    "per_element: checked -- all 192 columns enter the exact weight-sixteen CNF and certificates",
+    "per_site: checked -- one supplied 16-corner coordinate cell only",
+    "per_mode: checked and not executed -- this finite model has no modes",
+    "per_block: checked -- all 15800 rows enter certificate and carrier verification",
+    "lattice_wide: checked and not executed -- no multicell or limit claim"
+  ],
+  "population": {
+    "cuttings": 15800,
+    "rank": 88,
+    "used_pieces": 192
+  },
+  "primary_receipt_bound": true,
+  "restricted_ranks": {
+    "pair_consistent_readings": [
+      [
+        "zero",
+        "four",
+        "six",
+        "seven-flip"
+      ],
+      [
+        "zero",
+        "one",
+        "four",
+        "four-flip"
+      ],
+      [
+        "zero",
+        "one",
+        "four",
+        "four-flip"
+      ],
+      [
+        "zero",
+        "one",
+        "four",
+        "four-flip"
+      ],
+      [
+        "zero",
+        "one",
+        "four",
+        "four-flip"
+      ],
+      [
+        "zero",
+        "one",
+        "four",
+        "four-flip"
+      ]
+    ],
+    "pairs": [
+      81,
+      80,
+      80,
+      69,
+      69,
+      59
+    ],
+    "single": [
+      48,
+      48,
+      41,
+      41
+    ],
+    "single_augmented_four": [
+      49,
+      49,
+      42,
+      42
+    ]
+  },
+  "schema": "physical-cell-cutting-sixteen-attained-cycle742-independent-v1",
+  "status": "pass",
+  "verified_carrier_supports": 120
+}

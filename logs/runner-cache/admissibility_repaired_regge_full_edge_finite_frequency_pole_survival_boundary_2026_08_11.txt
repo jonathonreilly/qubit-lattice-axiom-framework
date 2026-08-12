@@ -1,0 +1,41 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_repaired_regge_full_edge_finite_frequency_pole_survival_boundary_2026_08_11.py
+runner_sha256: c28f1bdb5a721c90c3061cf854e5748433b1e40eb571a9213c1907366f269e1c
+input_fingerprint_sha256: ca053ae9d7531a5a94a11e98d635ad89f8886ac2583efb6182dab43a6d2e70c3
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 3.36
+status: ok
+----- stdout -----
+[PASS] source-and-scope-bindings: the current axioms and three parent boundaries are read without selecting the continuati...
+[PASS] raw-laurent-symbol-pairing: the 99-term real-space kernel is transpose-paired and the raw symbol agrees with the Her...
+       time counts={-2: 4, -1: 29, 0: 33, 1: 29, 2: 4}; pair error=4.441e-16
+[PASS] axis-reflection-sector-decomposition: the y/z reflection splits all fifteen edges and all four gauge parameters into exact 11+...
+       edge dims=11+4; gauge dims=3+1; max intertwining error=1.776e-15
+[PASS] exact-complex-momentum-ward-identity: the complete raw Laurent symbol retains four exact displacement columns on both sides at...
+       max absolute Ward residual=1.069e-13; gauge ranks=[4]
+[PASS] two-sampled-pole-branches-resolved: one isolated bordered-determinant zero is resolved in each parity sector at every one of...
+       root residual max=1.803e-19; next-singular ratio min=1.695e-05
+[PASS] physical-edge-null-not-border-artifact: the bordered zeros have vanishing gauge multipliers and are actual nulls of the complete...
+       Ward=4.343e-16; Schur Ward=8.122e-12; multiplier=5.094e-13
+[PASS] gapped-remainder-and-tt-character: the five nonmetric directions stay invertible while both pole vectors remain predominant...
+       gap min=1.288387; TT overlap min=0.931914; n/h max=0.561387
+[PASS] infrared-einstein-branch-survival: both full-edge branches approach the common infrared light cone with cubic real correcti...
+       orders: correction=2.997,2.989,2.958; split=2.997,2.990,2.960; phase=4.997,4.986,4.944
+[PASS] bounded-oriented-lattice-artifacts: the sampled finite-lattice poles are close to the scalar reference but are not exactly r...
+       relative dispersion=0.009344; split=0.006665; phase=0.001393
+[PASS] momentum-reversal-conjugacy: each tested positive-momentum pole has the conjugate pole at reversed momentum, so the s...
+       max reversed bordered-null ratio=8.730e-17
+[PASS] physical-and-axiom-boundary: the source keeps pole survival distinct from a selected transfer operator, physical norm...
+[PASS] fresh-no-go-discipline-packet: the narrow single-orientation artifact boundary passes N1 through N8 while preserving al...
+N5_CERTIFICATE: 99 Laurent shifts, fifteen edges, four exact gauge columns, five nonmetric directions, two reflection sectors, 36 wave numbers, and 72 pole solves are resolved
+per_element: checked every Laurent coefficient pairing, every edge coordinate, and every gauge column
+per_site: the supplied translation-invariant repaired Kuhn/Coxeter unit-cell kernel is used without metric-only truncation
+per_mode: checked both parity branches at four infrared and 32 uniformly spaced positive-axis momenta through pi
+per_block: checked exact Ward quotient, full metric/nonmetric Schur block, bordered null vectors, TT diagnostics, and momentum reversal
+lattice_wide: no continuum of momenta, off-axis shell, physical Hilbert space, transfer operator, nonlinear phase, or full-Z3 history is inferred
+scope_boundary: sampled finite-frequency survival for the supplied single-orientation analytic continuation; not selected dynamics, unitarity, stability, or TOE closure
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

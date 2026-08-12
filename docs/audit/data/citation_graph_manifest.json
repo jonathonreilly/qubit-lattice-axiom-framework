@@ -1,6 +1,6 @@
 {
- "edge_count": 15707,
- "node_count": 5492,
+ "edge_count": 15711,
+ "node_count": 5493,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -505,6 +505,10 @@
   "admissibility_regge_fixed_average_tick_source_increasing_torus_ward_green_boundary_bounded_theorem_note_2026-08-11": {
    "deps_hash": "0cab21cb9805",
    "out_degree": 6
+  },
+  "admissibility_repaired_regge_full_edge_finite_frequency_pole_survival_boundary_bounded_theorem_note_2026-08-11": {
+   "deps_hash": "2a48363d5c4a",
+   "out_degree": 4
   },
   "admissibility_repaired_regge_full_edge_schur_ir_lorentzian_constraint_tt_axiom_boundary_bounded_theorem_note_2026-08-11": {
    "deps_hash": "9d953fec7f2e",

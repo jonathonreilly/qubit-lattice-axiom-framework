@@ -1,6 +1,6 @@
 {
- "edge_count": 15782,
- "node_count": 5508,
+ "edge_count": 15786,
+ "node_count": 5509,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -517,6 +517,10 @@
   "admissibility_record_edge_score_rank_one_metric_stress_spatial_projective_curvature_reaction_boundary_bounded_theorem_note_2026-08-10": {
    "deps_hash": "f1dada4aec44",
    "out_degree": 5
+  },
+  "admissibility_record_native_state_dependent_born_history_joint_law_candidate_gate_note_2026-08-12": {
+   "deps_hash": "6c8d54e48caa",
+   "out_degree": 3
   },
   "admissibility_record_null_charge_projective_history_phase_selector_scale_response_boundary_bounded_theorem_note_2026-08-10": {
    "deps_hash": "91597ec0e5c0",
@@ -1879,8 +1883,8 @@
    "out_degree": 11
   },
   "canonical_harness_index": {
-   "deps_hash": "a635034645f0",
-   "out_degree": 356
+   "deps_hash": "40c530cb1897",
+   "out_degree": 357
   },
   "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": {
    "deps_hash": "808c1ccb6109",

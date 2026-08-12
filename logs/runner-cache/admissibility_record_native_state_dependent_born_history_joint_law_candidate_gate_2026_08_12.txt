@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_record_native_state_dependent_born_history_joint_law_candidate_gate_2026_08_12.py
+runner_sha256: ab927f3b088b8e355e2f55dc9b1841e23fe03b8866b29875ac0ac89d8f8a95d1
+input_fingerprint_sha256: 3309f3a68f22fd16b6a3f963a26895b667fdfe087f92c07f727f249585f7f7b1
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.32
+status: ok
+----- stdout -----
+PASS A-current-source-closure: current axiom, trace-form, and M2 carrier sources are literal; L41 geometry/falsifier algebra is rederived and the historic successor stack is not read
+PASS B-state-dependent-CP-kernel: five fixtures, two menus, CP Choi min=0.000e+00; old rotor biased residuals L1=1.5, Linf=0.5
+PASS C-shared-effect-carrier-covariance: shared E0 mass/codeword, exact head/outcome decoders, and all24 co-transport close
+PASS D-projective-history-law: N=0..5 normalize exactly and all 81 held length-four prefixes marginalize
+PASS E-contingent-one-history-semantics: two realized-state innovation members give distinct positive-weight histories (0, 0, 0, 1, 2, 1)/(2, 2, 2, 1, 1, 0); neither selects the kernel
+PASS F-unbounded-append-and-local-program: 64 events give 1415 permanent Records; translation-residue proof gives arbitrary-N fresh support; program is head-carried; readiness radius is declared three
+PASS G-claim-boundary: bounded radius-three candidate, current dependencies, no historic laundering, no adoption, and N1-N8 are explicit
+METRICS fixture_pairs=10 covariance=24/24 cylinders_N5=243 records_N64=1415 cp_min=0.000e+00
+BOUNDARY: the fixed state-dependent kernel, exact histories, and unbounded no-overwrite single front pass; radius-three readiness is not the current nearest-neighbor Admissibility attachment, physical law selection remains open, and no percentage moves
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

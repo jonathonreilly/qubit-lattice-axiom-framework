@@ -1340,3 +1340,31 @@ complete conditional nonlinear compact solution:
   split rival against the same static/source/constraint contract; then either
   derive a unique joint update and Record clock or write the smallest exact
   extensional `L*` choice for owner decision
+
+## Block 54 Artifact Plan
+
+- theorem note: test the first nonlinear constraint obligation on the actual
+  Block-21 sourced curved continuation, distinguish an incomplete bare-Hessian
+  null test from the source-complete Noether identity, and correct the gravity
+  route using primary literature without promoting the result to a no-go
+- primary runner/cache: reconstruct the continuation rather than hard-code it,
+  exhaust every nonzero periodic mode on `L=3...6`, compare flat and sourced
+  ranks, evaluate inherited-generator Ward residuals on two generic momenta,
+  bind exact reported numbers to the note, print all five N5 resolutions, and
+  execute fresh N1--N8; achieved `PASS=7 FAIL=0`
+- adversarial controls: process-local sourced-rank, flat-rank, and note-number
+  mutations each exit nonzero with exactly one failed check
+- route decision: retire more bare fixed-action coefficient, TT-projector,
+  propagator, and finite-grid work; keep complete source/constraint actions,
+  improved/perfect actions, variable triangulations, and connection/tetrad
+  formulations live
+- current evidence: science commit `d2bb8e1c26`; graph `5,500/15,753`,
+  out-degree three; vocabulary, strict lint, premise purity, Python/cache,
+  claim typing, whitespace, forensic N5, and enforced graph/link checks pass;
+  the full pipeline reaches only the inherited stage-7 dependency-policy epoch
+  mismatch; no TOE percentage moves and independent audit remains required
+- next artifact: one 90-minute construction attempt at a source-complete
+  discrete Noether connection or controlled improved/perfect/Pachner move. If
+  it cannot directly move a lane or force an exact axiom choice, pivot to the
+  underworked high-fanout Root-A joint-law or Root-B chirality selector rather
+  than ship another gravity diagnostic

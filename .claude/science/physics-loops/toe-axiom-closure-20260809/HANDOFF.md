@@ -2091,3 +2091,42 @@ exact extensional `L*` owner-choice packet showing the irreducible fork. If a
 current principle uniquely selects a law, prove that theorem. Do not return to
 pole grids, orientation averages, static source dictionaries, or further
 working-propagator variants; they are no longer TOE-progress seams.
+
+## Block 54 Handoff
+
+Block 54 is local on branch
+`physics-loop/toe-axiom-closure-block54-perfect-action-gate-20260812`, stacked
+exactly on Block-53 delivery head `b1b6f20b34`. It performs the first nonlinear
+constraint check after the linear causal repair. On all 2,254 nonzero
+periodic modes for `L=3...6`, the repaired flat Hessian has rank eleven and
+four inherited displacement nulls. The runner independently reconstructs the
+Block-21 Bundle-B source continuation at coupling `1/100`; its bare fixed-
+action Hessian instead has rank fifteen everywhere, with minimum absolute
+eigenvalue `4.488559217e-6`. Generic inherited-generator Ward residuals are
+`0.199804055` and `0.441617350`, versus machine zero at flatness.
+
+This is a formulation diagnosis, not a gravity failure. The sourced point is
+stationary only after source and affine-reaction terms are included, while the
+tested Hessian differentiates the bare geometry action. The differentiated
+Noether identity therefore requires omitted source/constraint connection
+terms. Primary literature independently identifies curved fixed-Regge
+pseudo-constraints and keeps improved/perfect actions and canonical Pachner
+evolution live. The exact gravity target is now a source-complete nonlinear
+constraint law, not another TT projector, coefficient scan, or finite grid.
+
+Primary/cache is `PASS=7 FAIL=0`; sourced-rank, flat-rank, and note-number
+mutations each fail exactly one check. Citation registration is
+`5,500/15,753`, out-degree three. Vocabulary, strict lint, premise purity,
+Python/cache, claim typing, whitespace, forensic N5, and graph/link gates
+pass. The full pipeline reaches only the inherited stage-7 dependency-policy
+epoch mismatch. Science commit is `d2bb8e1c26`; PR is pending. Independent
+audit remains required. No canonical axiom, fixed TOE percentage, audit
+verdict, or `review-loop` changes.
+
+The campaign policy changes here. Blocks ship only for an actual lane move,
+an exact axiom-choice packet, or decisive failure of a live high-value route.
+Give the source-complete Noether/perfect-action/Pachner construction one deep
+block. If it does not meet that gate, pivot to the underworked high-fanout
+Root-A extensional joint law and Root-B physical grading/chirality selector.
+Re-check the portfolio every three hours; do not count blocker count, runner
+count, PR count, or narrower finite inventories as TOE progress.

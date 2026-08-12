@@ -1757,3 +1757,32 @@ lines are in the landing primary cache.
   accelerated matter, nonlinear gravity, axiom amendment, TOE percentage
   movement, or audit verdict. Fresh N1--N8 and all five N5 resolutions land;
   no `review-loop` is used.
+
+## Block 54 Claim Status
+
+- Flat positive: all 2,254 nonzero periodic `L=3...6` modes of the repaired
+  flat Hessian have rank eleven and exactly four inherited vertex-displacement
+  nulls; maximum computed Ward residual is `1.544e-13`.
+- Curved diagnostic: the reconstructed interval-certified Block-21 Bundle-B
+  sourced continuation has nonzero deficit `0.058009759`; its incomplete bare
+  geometry Hessian has rank fifteen on all same modes, minimum absolute
+  eigenvalue `4.488559217e-6`, and generic inherited-generator residuals
+  `0.199804055/0.441617350`.
+- Scope correction: the sourced point is stationary only with affine reaction
+  and source terms omitted by that Hessian. The calculation proves those
+  nonlinear connection terms are load-bearing; it does not prove a
+  gravitational anomaly, Regge failure, perfect-action failure, or gravity
+  no-go.
+- Route correction: complete source/constraint actions, improved/perfect
+  actions, variable-triangulation Pachner evolution, and connection/tetrad
+  formulations remain constructive. Bare-action TT projections, coefficient
+  scans, and more finite grids are retired as low leverage.
+- Evidence: primary/input-pinned cache `PASS=7 FAIL=0`; sourced-rank,
+  flat-rank, and note-number mutations each fail one check; graph
+  `5,500/15,753`, out-degree three. Vocabulary, strict lint, premise purity,
+  Python/cache, claim typing, whitespace, forensic N5, and enforced graph/link
+  invariants pass. Science commit is `d2bb8e1c26`.
+- Scope: one finite-inventory route-decision theorem, not a complete nonlinear
+  constraint algebra, selected law, physical state, full-`Z^3` theorem, axiom
+  amendment, TOE percentage movement, or audit verdict. Fresh N1--N8 and all
+  five N5 resolutions land; no `review-loop` is used.

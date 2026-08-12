@@ -1852,9 +1852,9 @@ receipt = {
         "named": {name: "PASS" if ok else "FAIL" for name, ok in GATES},
     },
 }
-receipt_tmp = RECEIPT_PATH.with_suffix(RECEIPT_PATH.suffix + ".tmp")
-receipt_tmp.write_text(json.dumps(receipt, indent=2, sort_keys=True) + "\n", encoding="utf-8")
-receipt_tmp.replace(RECEIPT_PATH)
+RECEIPT_PATH.write_text(
+    json.dumps(receipt, indent=2, sort_keys=True) + "\n", encoding="utf-8"
+)
 emit(receipt_line)
 emit("")
 emit("TOTAL: PASS={0} FAIL={1}".format(PF[0], PF[1]))

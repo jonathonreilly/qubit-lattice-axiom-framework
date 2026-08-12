@@ -4,7 +4,7 @@ runner_sha256: c02cab67a7ba9e5f0f11a32165cb25fe7882a83c7df79eda0b608ef2f3c31c32
 input_fingerprint_sha256: 0cfc7d93ec2d7e71d455432136a7da7fc0f6818f7a29dd89dc09930fd3cd37f0
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 18.75
+elapsed_sec: 19.24
 status: ok
 ----- stdout -----
 PASS independent subset and minimal-piece census  subsets=42504 block_minimal=17280 cell_minimal=2672

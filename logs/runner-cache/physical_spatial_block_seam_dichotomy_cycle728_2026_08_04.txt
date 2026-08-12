@@ -4,7 +4,7 @@ runner_sha256: fce22ea4f8f18b7ba8f02b2dc372b2dc9e67d0cb35d28bc8f1e1a4a454b4935b
 input_fingerprint_sha256: 93c8aa6a40d78054ddcec0361927c558c3b0373330c4b397157237829ff9cf1b
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 5.10
+elapsed_sec: 5.24
 status: ok
 ----- stdout -----
 2 by 1 by 1 spatial block: two lattice cells side by side, carried through one tick

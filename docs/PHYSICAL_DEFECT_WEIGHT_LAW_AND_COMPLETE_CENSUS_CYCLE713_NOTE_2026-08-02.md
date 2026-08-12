@@ -1,6 +1,15 @@
 # Physical Assembly-Defect Weight Law and the Complete Census — Cycle 713
 
-**Claim type: bounded_theorem.** Finite, recomputed statements about the landed
+Date: 2026-08-02
+
+Claim type: bounded_theorem
+
+Status: proposed_retained
+
+Authority: none. Audit status is set only by the independent audit lane; this
+note changes no axiom, approved primitive, premise registry, or policy surface.
+
+Finite, recomputed statements about the landed
 Cycle-696 open-coframe endpoint compiler chain at box sizes L ∈ {3, 4, 5, 6, 7,
 8, 9}. The magnitude law, its support-signature resolution, the finite census
 values, and their polynomial agreement are bounded computational statements
@@ -43,9 +52,10 @@ same finite scan to `L = 8, 9` and classifies the sub-cut population.
 
 This cycle derives the finite menu, classifies every remaining entry, and
 records the complete scanned census. Within the scanned compiler surface, the
-magnitude of a defect entry is a function of the two edge classes it connects:
-it factorizes over the two coframe legs. All statements below are recomputed
-from the landed compiler chain in this cycle's runner.
+full-weight magnitude factorizes over the two coframe-leg lengths; a separate
+measured bit selects a half-weight subpopulation within the axis-axis
+signature. All statements below are recomputed from the landed compiler chain
+in this cycle's runner.
 
 ## Setup
 
@@ -62,15 +72,31 @@ E_g = Π_g^T Q Π_g − Q. The six constant-sign frames (the sextet) have measur
 defect ceiling below 1.0e-09 at the probed `L = 3`; this is a numerical gate,
 not an exact-zero theorem. The census lives on the 18 mixed frames.
 
+### Supplied and measured inputs
+
+- The open-box Cycle-696 compiler, its seven spatial edge classes, `LT = 2`,
+  finite-difference step `1e-4`, and proper-frame table are supplied compiler
+  structure. This note does not derive their physical interpretation.
+- The strict comparison cut `2.0` and the two finite per-sign anchor counts
+  `424` (`L = 3`) and `10680` (`L = 7`) are imported from Cycle 711 only as
+  cross-check targets. The runner recomputes the entries that meet them.
+- The unpinned/one-axis-pinned/two-axis-pinned interpretation is imported from
+  Cycle 712. The complete resolved-entry values at `L = 3..9`, including the
+  new `L = 8, 9` data, are measured by this runner.
+- No fitted, observational, or literature constant enters. The displayed
+  polynomials are interpolation/finite-agreement descriptions, not supplied
+  physics inputs.
+
 ## Theorem I — the weight law
 
-For every mixed frame and every box size in the scan, **every** nonzero entry of
-the assembly defect satisfies
+For every mixed frame and every box size in the scan, every **resolved** entry
+of the assembly defect, defined here by `|E_ij| > 1e-9`, satisfies
 
 > |E_ij| = w · LT · |v_i| · |v_j| = w · LT · √(s_i s_j),  w ∈ {1, 1/2},
 
-matched within 2.0e-07, with worst deviation 6.1e-08 over all 2418192 nonzero
-entries scanned, and **zero** entries left unclassified. Two facts sharpen it:
+matched within 2.0e-07, with worst deviation 6.1e-08 over all 2,418,192 resolved
+entries scanned, and **zero resolved entries** left unclassified. Entries at or
+below the numerical floor are outside the classification. Two facts sharpen it:
 
 - **Half weight is axis-locked.** The realized signature set of the w = 1/2
   population is exactly {(1, 1)} — half weight occurs on axis-by-axis pairs and
@@ -79,10 +105,12 @@ entries scanned, and **zero** entries left unclassified. Two facts sharpen it:
   the signatures (1,1), (1,2), (2,1), (1,3), (3,1), (2,2); the signatures
   (2,3), (3,2), (3,3) carry no defect entry at any scanned frame or size.
 
-Consequently the magnitude is determined by the support signature alone, and the
-Cycle-712 menu is the list of values LT·√(s_i s_j) that the realized signatures
-produce: (1,1) → 2, (1,2) and (2,1) → 2·√2, (1,3) and (3,1) → 2·√3, (2,2) → 4,
-plus the half-weight value 1 that the Cycle-712 cut had removed. The cut 2.0e+00
+Consequently the support signature determines the full-weight magnitude, while
+the extra measured weight bit distinguishes magnitudes 1 and 2 inside the
+axis-axis signature. The Cycle-712 menu is the list of values
+LT·√(s_i s_j) that the realized full-weight signatures produce: (1,1) → 2,
+(1,2) and (2,1) → 2·√2, (1,3) and (3,1) → 2·√3, (2,2) → 4, plus the half-weight
+value 1 that the Cycle-712 cut had removed. The cut 2.0e+00
 is exactly the full/half separator: the largest half-weight magnitude is
 1.0e+00 and the smallest full-weight magnitude is 2.0e+00, so the entries above
 the Cycle-712 cut coincide with the full-weight entries at every frame and size.
@@ -105,7 +133,7 @@ following integer polynomials at every scanned size `L = 3..9`:
 |---|---|---|
 | full weight | 48(L−1)³ + 8(L−1)² + 4(L−1) | 424, 1380, 3216, 6220, 10680, 16884, 25120 |
 | half weight | 16(L−1)² | 64, 144, 256, 400, 576, 784, 1024 |
-| all nonzeros (both signs) | 96(L−1)³ + 48(L−1)² + 8(L−1) | 976, 3048, 6944, 13240, 22512, 35336, 52288 |
+| all resolved entries (both signs) | 96(L−1)³ + 48(L−1)² + 8(L−1) | 976, 3048, 6944, 13240, 22512, 35336, 52288 |
 
 Plus and minus counts are equal for both weights at every scanned size and
 frame. The magnitude-resolved finite census agrees with one integer polynomial
@@ -125,7 +153,7 @@ linear coefficient 4 reassemble the full-weight polynomial exactly.
 
 The laws were fitted on L ∈ {3, 4, 5, 6} and then tested against L = 7, 8 and 9.
 A cubic interpolated through the four fitting sizes predicts the full-weight
-count and the nonzero count at all three held-out sizes with no residual;
+count and the resolved-entry count at all three held-out sizes with no residual;
 L = 8 and L = 9 were measured by no earlier cycle. Independently, the
 polynomials reproduce the landed Cycle-711 per-sign census totals 424 at L = 3
 and 10680 at L = 7, and — after the two magnitudes 2·√2 and 2·√3 are merged, as
@@ -136,14 +164,16 @@ the Cycle-711 rounded buckets merge them — its bucket composition as well.
 The finite fits have cubic, quadratic, and linear terms. On the scanned boxes,
 their Cycle-712 descriptor interpretation is respectively unpinned,
 one-axis-pinned, and two-axis-pinned populations. The leading coefficient is
-96 nonzero defect entries per unit-cell factor `(L-1)^3` per mixed frame, 48
+96 resolved defect entries per unit-cell factor `(L-1)^3` per mixed frame, 48
 per sign; the fitted subleading terms are `48(L-1)^2` and `8(L-1)`.
 
-The carrier is small and frame-independent: exactly **30 ordered edge-class
-pairs** carry full-weight entries at every scanned frame and size. They are
-partitioned by support signature as 8 pairs of type (1,1), 7 each of types
-(1,2) and (2,1), 2 each of types (1,3) and (3,1), and 4 of type (2,2). Seven
-spatial classes admit 49 ordered pairs; 19 of them never carry a defect entry.
+The carrier size and support-signature partition are frame-independent: exactly
+**30 ordered edge-class pairs** carry full-weight entries at every scanned frame
+and size. They are partitioned as 8 pairs of type (1,1), 7 each of types (1,2)
+and (2,1), 2 each of types (1,3) and (3,1), and 4 of type (2,2). The identities
+of the pairs form three frame-dependent carrier sets. Seven spatial classes
+admit 49 ordered pairs, so 19 pairs are absent at each frame; they are not a
+single universal set of 19.
 
 Scope limit: only the supplied open-box relabeling is executed. Alternative
 boundary re-anchorings and arbitrary box sizes remain outside this result.
@@ -151,7 +181,7 @@ boundary re-anchorings and arbitrary box sizes remain outside this result.
 ## Exact target and proof obligations
 
 **Exact target.** For the imported Cycle-696 open-box compiler at each
-`L in {3,...,9}`, classify every numerically nonzero entry of `E_g` at all 18
+`L in {3,...,9}`, classify every resolved entry of `E_g` at all 18
 mixed frames by the two-leg weight menu; report the complete finite counts,
 their agreement with the displayed integer polynomials, and the finite carrier
 census.
@@ -176,16 +206,16 @@ finite `L = 3..9` theorem does not require that lemma; a universal polynomial
 or boundary-convention theorem would.
 
 Degenerate and boundary cases: the smallest scanned box is `L = 3`; all 18
-mixed frames and every nonzero matrix entry above the declared numerical floor
+mixed frames and every matrix entry above the declared numerical floor
 are included. The six constant-sign frames are checked separately only for a
 numerical ceiling at `L = 3` and are not part of the weight census.
 
 ## Scope boundary
 
 - **The weight bit is measured, not derived.** Theorem I says that w ∈ {1, 1/2}
-  and that w = 1/2 occurs exactly on axis-by-axis pairs. It does not derive
-  *why* the axis-by-axis population splits into a full and a half branch while
-  every other signature carries only the full branch.
+  and that w = 1/2 occurs only on axis-by-axis pairs. It does not derive *which*
+  axis-axis entries take half weight or why that population splits while every
+  other realized signature carries only the full branch.
 - **The three absent signatures are a fact, not yet a mechanism.** That (2,3),
   (3,2) and (3,3) never appear is a complete-scan statement over the sizes and
   frames listed; the incidence reason is not given here.
@@ -215,7 +245,8 @@ numerical ceiling at `L = 3` and are not part of the weight census.
   computation resolved for the comparator, and is the natural next target for
   that machinery.
 - **Propagate the fitted leading density to the response floor.** The
-  [Cycle-709 minus-branch response-floor note](PHYSICAL_MINUS_BRANCH_RESPONSE_FLOOR_ASSEMBLY_DEFECT_LAW_CYCLE709_NOTE_2026-08-02.md)
+  Cycle-709 minus-branch response-floor note
+  `PHYSICAL_MINUS_BRANCH_RESPONSE_FLOOR_ASSEMBLY_DEFECT_LAW_CYCLE709_NOTE_2026-08-02`
   consumes the assembly defect through a solve. A finite defect census with a
   factorized magnitude law is a stronger input to a future floor-scaling law
   than an isolated measured count.
@@ -230,7 +261,7 @@ numerical ceiling at `L = 3` and are not part of the weight census.
 This cycle stays inside the static spatial sector of the landed 3+1 module. The
 frame sextet that carries the numerical near-zero ceiling is the same
 constant-sign sextet whose source-stabilizer role is analyzed in
-[PHYSICAL_SOURCE_STABILIZER_COSET_COLLAPSE_K_SIGN_LAW_CYCLE707_NOTE_2026-08-01](PHYSICAL_SOURCE_STABILIZER_COSET_COLLAPSE_K_SIGN_LAW_CYCLE707_NOTE_2026-08-01.md);
+`PHYSICAL_SOURCE_STABILIZER_COSET_COLLAPSE_K_SIGN_LAW_CYCLE707_NOTE_2026-08-01`;
 the landed Cycle-708 classification is complementary source-side context. The
 [Cycle-710 finite assembly-defect cocycle and mixed-frame comparator](PHYSICAL_ASSEMBLY_DEFECT_COCYCLE_AND_MIXED_FRAME_COMPARATOR_CYCLE710_NOTE_2026-08-02.md)
 supplied the finite defect object this cycle classifies. Cycle 708 is not used
@@ -253,3 +284,31 @@ the Cycle-711 census anchors; carrier size and carrier signature partition; and
 three operator-level rejectors — support shuffle, uniform-shift invariance, and
 a site-graded ramp. Prints TOTAL: PASS=28 FAIL=0 with a JSON receipt in
 `outputs/`.
+
+## Load-bearing dependencies
+
+- [Cycle 710](PHYSICAL_ASSEMBLY_DEFECT_COCYCLE_AND_MIXED_FRAME_COMPARATOR_CYCLE710_NOTE_2026-08-02.md)
+  supplies the bounded finite assembly-defect object and mixed-frame comparator
+  interpretation used here.
+- [Cycle 711](PHYSICAL_MIXED_FRAME_COMPARATOR_EXACT_STENCIL_SWAP_LAW_CYCLE711_NOTE_2026-08-02.md)
+  supplies the finite strict-cut anchor census and exact `0 <-> -4` local swap
+  context used as cross-checks.
+- [Cycle 712](PHYSICAL_MIXED_FRAME_DEFECT_CENSUS_FAMILY_LAW_CYCLE712_NOTE_2026-08-02.md)
+  supplies the finite component-box descriptor interpretation used for the
+  polynomial grading.
+
+Provenance-only mentions of Cycles 707, 708, and 709 above deliberately remain
+non-linking because no result here depends on their claims.
+
+## Review record
+
+Review removed the submitted universal statement that a boundary re-anchoring
+can change only the fitted quadratic/linear populations and therefore cannot
+remove the cubic population. The runner constructs no alternative transport,
+so that negative conclusion was unsupported. The durable result is the finite
+weight classification, finite per-frame carrier census, and polynomial agreement on the
+declared `L = 3..9` surface. Review also replaced an exact-zero claim for the
+constant-sign sextet with the numerical ceiling actually gated at `L = 3`,
+made the `1e-9` resolved-entry floor explicit, and bound the runner cache to the
+complete transitive compiler-source closure. Independent audit remains required
+before any effective retained grade.

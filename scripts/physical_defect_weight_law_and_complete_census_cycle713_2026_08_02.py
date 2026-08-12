@@ -11,8 +11,9 @@ Let v_i be the spatial direction vector of the coframe variable i in the
 cycle-696 open compiler chain and s_i = |v_i|^2 its support (1 for the three
 axis directions, 2 for the six face diagonals, 3 for the body diagonal), and
 let LT = 2 be the tick length of the landed 3+1 module.  For every proper
-rotation R outside the constant-sign sextet, and every box size L, EVERY
-nonzero entry of the assembly defect E = Q[m, m] - Q obeys the weight law
+rotation R outside the constant-sign sextet, and every scanned box size L,
+EVERY resolved entry of the assembly defect E = Q[m, m] - Q, meaning
+|E_ij| > 1e-9, obeys the weight law
 
     |E_ij| = w * LT * |v_i| * |v_j| = w * LT * sqrt(s_i s_j),   w in {1, 1/2},
 
@@ -23,7 +24,7 @@ then holds at three polynomials, per mixed frame and frame-uniform:
 
     full weight, per sign : 48(L-1)^3 + 8(L-1)^2 + 4(L-1)
     half weight, per sign : 16(L-1)^2
-    nonzero entries       : 96(L-1)^3 + 48(L-1)^2 + 8(L-1)
+    resolved entries      : 96(L-1)^3 + 48(L-1)^2 + 8(L-1)
 
 so the finite census agrees with a cubic leading coefficient of 96, a
 quadratic term, and a linear term at the scanned sizes.  No alternative
@@ -77,7 +78,7 @@ LT = int(c696.LT)
 L_FIT = (3, 4, 5, 6)          # law-fitting sizes
 L_HELD = (7, 8, 9)            # held-out sizes measured by no earlier cycle
 L_ALL = L_FIT + L_HELD
-ZERO = 1e-9                   # nonzero-entry floor on |E|
+ZERO = 1e-9                   # resolved-entry floor on |E|
 TOL_W = 2e-7                  # weight-law tolerance (finite-difference scale)
 CUT = 2.0                     # census cut of the landed cycle-711 note
 SEXTET_BOUND = 1e-9
@@ -154,7 +155,7 @@ def class_vector(index: dict) -> np.ndarray:
 
 
 def entries(Q, cls, m, sup):
-    """Nonzero defect entries with their support signature and weight split."""
+    """Resolved defect entries with their support signature and weight split."""
     E = Q[np.ix_(m, m)] - Q
     ii, jj = np.nonzero(np.abs(E) > ZERO)
     val = E[ii, jj]
@@ -208,6 +209,7 @@ def main() -> int:
     uniform = {}
     carrier_ok = True
     carrier_sig_ok = True
+    carrier_sets = set()
     mag_counts = {}
     sextet_max = 0.0
     scanned = 0
@@ -255,6 +257,7 @@ def main() -> int:
             for a, b in zip(cls[e["i"][e["isf"]]], cls[e["j"][e["isf"]]]):
                 pairs[(int(a), int(b))] += 1
             carrier_ok = carrier_ok and len(pairs) == CARRIER
+            carrier_sets.add(tuple(sorted(pairs)))
             sigc = Counter()
             for (ca, cb) in pairs:
                 sigc[(SUP[ca], SUP[cb])] += 1
@@ -272,8 +275,9 @@ def main() -> int:
     check("g02_frame_relabel_bijective", perm_ok,
           "frame relabelling is a permutation of the coframe variables")
     check("g03_complete_classification", unclassified == 0,
-          "all {} nonzero entries obey |E| = w*LT*sqrt(s_i s_j), w in "
-          "(1, 1/2); unclassified {}".format(scanned, unclassified))
+          "all {} resolved entries above {} obey |E| = w*LT*sqrt(s_i s_j), "
+          "w in (1, 1/2); unclassified {}".format(
+              scanned, fmt(ZERO), unclassified))
     check("g04_weight_law_dev", dev_all < TOL_W,
           "max weight-law deviation {}".format(fmt(dev_all)))
     check("g05_half_signature_axis_only", set(half_sig) == {(1, 1)},
@@ -314,7 +318,8 @@ def main() -> int:
     check("g14_half_law", half_meas == half_law,
           "half per sign L={}: {} = 16(L-1)^2".format(L_ALL, half_meas))
     check("g15_total_law", tot_meas == tot_law,
-          "nonzeros per frame L={}: {} = 96(L-1)^3+48(L-1)^2+8(L-1)".format(
+          "resolved entries per frame L={}: {} = "
+          "96(L-1)^3+48(L-1)^2+8(L-1)".format(
               L_ALL, tot_meas))
 
     fit_full = cubic_from([per_L[L][2] for L in L_FIT])
@@ -325,7 +330,7 @@ def main() -> int:
               L_FIT, L_HELD, [fit_full(L) for L in L_HELD]))
     check("g17_heldout_total",
           all(fit_tot(L) == 2 * (per_L[L][0] + per_L[L][2]) for L in L_HELD),
-          "cubic fitted on L={} predicts nonzeros per frame at L={}: {}".format(
+          "cubic fitted on L={} predicts resolved entries per frame at L={}: {}".format(
               L_FIT, L_HELD, [fit_tot(L) for L in L_HELD]))
     check("g18_census_anchor",
           all(per_L[L][2] == ANCHOR_FULL[L] for L in ANCHOR_FULL),
@@ -344,9 +349,10 @@ def main() -> int:
     check("g21_carrier_size", carrier_ok,
           "{} ordered class pairs carry the full-weight entries, at every "
           "size and frame".format(CARRIER))
-    check("g22_carrier_signature", carrier_sig_ok,
-          "carrier support signatures {}".format(
-              {str(k): v for k, v in sorted(CARRIER_SIG.items())}))
+    check("g22_carrier_signature", carrier_sig_ok and len(carrier_sets) == 3,
+          "carrier support signatures {}, with {} frame-dependent identity "
+          "sets".format({str(k): v for k, v in sorted(CARRIER_SIG.items())},
+                         len(carrier_sets)))
 
     L = L_FIT[1]
     model = c696.assemble_static_hessian(L, wrap=False)
@@ -382,11 +388,12 @@ def main() -> int:
     NOTES["weight_law"] = "|E_ij| = w * LT * sqrt(s_i s_j), w in (1, 1/2)"
     NOTES["full_per_sign_poly"] = "48(L-1)^3 + 8(L-1)^2 + 4(L-1)"
     NOTES["half_per_sign_poly"] = "16(L-1)^2"
-    NOTES["nonzeros_per_frame_poly"] = "96(L-1)^3 + 48(L-1)^2 + 8(L-1)"
+    NOTES["resolved_entries_per_frame_poly"] = "96(L-1)^3 + 48(L-1)^2 + 8(L-1)"
     NOTES["magnitude_polys"] = {n: t for n, _, _, t in MAG_LAW}
     NOTES["half_max"] = fmt(half_max)
     NOTES["full_min"] = fmt(full_min)
     NOTES["carrier_pairs"] = CARRIER
+    NOTES["carrier_identity_sets"] = len(carrier_sets)
 
     receipt = {
         "cycle": 713,
@@ -397,7 +404,7 @@ def main() -> int:
         "sizes": list(L_ALL),
         "full_per_sign": full_meas,
         "half_per_sign": half_meas,
-        "nonzeros_per_frame": tot_meas,
+        "resolved_entries_per_frame": tot_meas,
         "weight_law_dev": fmt(dev_all),
         "additive_gap": "{:.2f}".format(min(add_gap)),
         "entries_scanned": scanned,

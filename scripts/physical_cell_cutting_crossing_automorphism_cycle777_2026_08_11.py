@@ -11,9 +11,9 @@ counts differ is exactly the statement that the covers and the pieces are inequi
 the object rigid. Crossing the two censuses then becomes an automorphism count that never mentions the family: 48 times 16 candidate pairs,
 of which 2 satisfy the intertwining relation, and those 2 are the centre. So the centre is reached by two purely combinatorial conditions.
 
-Gates: H0 object, H1 family, H2 group table, H3 holder and cosets, H4 normalizer 96 and centre 2, H5 normalizer structure, and then the new
-work of this cycle in H6 onward. All work is exact over the integers and two fixed primes, no floating point enters any gate. Output: one
-line per gate, a resource line, then the total line."""
+Gates: H0 object, H25 exact simplex-separation certificate, H1 family, H2 group table, H3 holder and cosets, H4 normalizer 96 and centre 2,
+H5 normalizer structure, and then the new work of this cycle in H6 onward. All work is exact over the integers and two fixed primes, no
+floating point enters any gate. Output: one line per gate, a resource line, then the total line."""
 
 import itertools
 import sys
@@ -21,6 +21,8 @@ import time
 import resource
 from fractions import Fraction as FR
 import numpy as np
+
+AUDIT_TIMEOUT_SEC = 300
 
 PRIME = 1000003
 PRIME2 = 1000033
@@ -233,6 +235,28 @@ USED = sorted(set(t for s in SOLS for t in s))
 NPI = len(USED)
 POS = dict((t, i) for i, t in enumerate(USED))
 CUT = [tuple(sorted(POS[t] for t in s)) for s in SOLS]
+
+# The sample lattice makes the cover search exhaustive because it misses every
+# candidate facet.  This second, independent certificate establishes the other
+# direction: every sample-selected solution is a genuine cell cutting.  For
+# every pair of simplices that co-occurs in a solution, one nonzero normal in
+# {-1,0,1}^4 weakly separates their vertex sets.  Since both simplices are
+# full-dimensional, their interiors lie on strict opposite sides.  The 24
+# unit-determinant simplex volumes then sum to the unit four-cube volume.
+CO_PAIRS = sorted(set(pair for cutting in CUT
+                      for pair in itertools.combinations(cutting, 2)))
+SEP_NORMALS = np.array(
+    [a for a in itertools.product((-1, 0, 1), repeat=4) if any(a)],
+    dtype=np.int64,
+)
+SEP_DOTS = np.dot(np.array(CORN, dtype=np.int64), SEP_NORMALS.T)
+PIECE_VERTICES = np.array([KEPT[USED[i]] for i in range(NPI)], dtype=np.int64)
+SEP_LO = SEP_DOTS[PIECE_VERTICES].min(axis=1)
+SEP_HI = SEP_DOTS[PIECE_VERTICES].max(axis=1)
+PAIR_SEPARATED = all(
+    bool(np.any((SEP_HI[i] <= SEP_LO[j]) | (SEP_HI[j] <= SEP_LO[i])))
+    for i, j in CO_PAIRS
+)
 
 # cuttings through each piece, as a bit set over cuttings
 PC = [0] * NPI
@@ -1154,6 +1178,11 @@ gate(NCAND == 2672 and NKEPT == 400 and FLOOR == 6 and NS == 15800
          nd(NCAND), nd(NKEPT), nd(FLOOR), nd(NS), nd(SIZES[0]), nd(NPI),
          nd(PCSET[0]), nd(NSLOT), nd(BRS[0])))
 
+gate(len(CO_PAIRS) == 15168 and len(SEP_NORMALS) == 80 and PAIR_SEPARATED,
+     "H25",
+     "all {0} co-occurring simplex pairs have an exact separator among {1} signed ternary normals; the 24 volumes tile the cell".format(
+         nd(len(CO_PAIRS)), nd(len(SEP_NORMALS))))
+
 gate(NORB == 96 and TNZ == [384] and OVLP == 0 and np.array_equal(TSUM, ONES)
      and FILL == NCOV * NPI and FILL == 36864 and NFAM == 3321960
      and IRC == [[0, 1], [8], [8]] and TRC == [[0, 1], [8], [8]]
@@ -1494,6 +1523,9 @@ gate(len(XSET) == 2 and RONLY == 46 and CONLY == 14
 # ------------------------------------------------------------------
 
 SR = sorted(set(tuple(int(CA[MUL[GC[c]][e]][0]) for c in range(NCOV)) for e in NC))
+SRIM = set(tuple(sorted(set(OWN[INC[np.asarray(s, dtype=np.int64), :] == 1].tolist())))
+            for s in SR)
+RSYMD = len(SRIM ^ ROWC)
 CIMG = [INC[:, np.asarray(q, dtype=np.int64)] for q in SQ]
 PAIRS = 0
 HIT = []
@@ -1507,10 +1539,11 @@ HITL = set(tuple(sorted(set(OWN[INC[np.asarray(h[0], dtype=np.int64), :] == 1].t
            for h in HIT)
 
 gate(PAIRS == len(SR) * len(SQ) and PAIRS == 768 and len(SR) == 48
-     and len(HIT) == 2 and len(HITL ^ XS) == 0, "H14",
-     "{0} pairs from {1} cover and {2} piece maps, {3} intertwine; no family, no census, no orbit table enters"
-     " this count; labels differ in {4}".format(
-         nd(PAIRS), nd(len(SR)), nd(len(SQ)), nd(len(HIT)), nd(len(HITL ^ XS))))
+     and len(SRIM) == 48 and RSYMD == 0 and len(HIT) == 2
+     and len(HITL ^ XS) == 0, "H14",
+     "{0} pairs from {1} cover and {2} piece maps; {3} intertwine; row/crossing label differences {4}/{5}".format(
+         nd(PAIRS), nd(len(SR)), nd(len(SQ)), nd(len(HIT)), nd(RSYMD),
+         nd(len(HITL ^ XS))))
 
 CCOMP = sorted(set(h[0] for h in HIT))
 PCOMP = sorted(set(h[1] for h in HIT))
@@ -1594,8 +1627,8 @@ CARRY = bool(np.array_equal(M1[:, FCP], M2))
 CARRT = (tuple(sorted(PT[k] for k in XSET[0])) == XSET[1])
 
 gate(CARRY and CARRT and FC != ID and FC in CENT and len(CENT) == 2, "H22",
-     "the {0} are one naming apart: the central map carries the first to the second entry by entry;"
-     " naming-blind instruments cannot split them".format(nd(len(XSET))))
+     "the central map carries the {0} crossing members entrywise; they form one orbit under its relabelling".format(
+         nd(len(XSET))))
 
 MX = int((M1 + M2).max())
 RSM = sorted(set(int(v) for v in (M1 + M2).sum(axis=1)))
@@ -1613,3 +1646,5 @@ RSS = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
 PEAK = RSS // (1024 * 1024) if sys.platform == "darwin" else RSS // 1024
 emit("resource: {0} s, {1} MB peak".format(nd(int(time.time() - T0)), nd(PEAK)))
 emit("TOTAL: PASS={0} FAIL={1}".format(nd(STAT[0]), nd(STAT[1])))
+if STAT[1]:
+    sys.exit(1)

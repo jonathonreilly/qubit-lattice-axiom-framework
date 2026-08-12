@@ -1,12 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/physical_cell_cutting_crossing_automorphism_cycle777_2026_08_11.py
-runner_sha256: 212fd4cdfb2ad34bf1ade85e8f7a45128a3ada59ef578b8394bf8eaad6844fdd
+runner_sha256: 402b35420dc84dd5918c7668198ae666edfafc6f4b297b7ba85f9e1945889f1a
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 15.41
+elapsed_sec: 16.17
 status: ok
 ----- stdout -----
 PASS H0 2672 unit-determinant subsets, 400 at cost floor 6, 15800 cuttings of 24, 192 pieces in 1975 each, 379200 slots, 192 covers of 8
+PASS H25 all 15168 co-occurring simplex pairs have an exact separator among 80 signed ternary normals; the 24 volumes tile the cell
 PASS H1 96 tables of 384 entries, pairwise disjoint, summing to the all-ones table (36864); 3321960 members, the incidence one of them
 PASS H2 the 384 maps close with a unit and inverses; on 147456 pairs the cover action follows the piece action, 0 miss; all 192 covers reached
 PASS H3 a cover is held by 2 maps, the second a flip of axis 0 alone; every cover likewise; 192 coset pairs, the second the first times that flip
@@ -22,17 +23,17 @@ PASS H11 of the 352 maps outside the centralizer, 0 give the same piece map from
 PASS H20 the incidence has 192 distinct rows and 192 distinct columns, so a member's row map and its column map are each determined
 PASS H12 the row census keeps 48 members and the column census 16; the 16 images of the piece relabellings are 16 four-table sets, difference 0
 PASS H13 row 48, column 16, crossing 2; row-only 46, column-only 14, neither condition implies the other; the two are 0/1/2/3 76/77/91/95
-PASS H14 768 pairs from 48 cover and 16 piece maps, 2 intertwine; no family, no census, no orbit table enters this count; labels differ in 0
+PASS H14 768 pairs from 48 cover and 16 piece maps; 2 intertwine; row/crossing label differences 0/0
 PASS H15 the 2 cover maps and 2 piece maps are maps of the cell in the centre of size 2; the cover pair is closed under composition with a unit
 PASS H16 the cycle 773 twin 4/5/6/7 sits in neither census, tested against the row census of 48 and the column census of 16
 PASS H17 of the 16 partner-swap variants of the incidence's four tables, 16 distinct, 2 sit in the row census and 2 in the column census
 PASS H18 the block profile 9/9/6/6/0 of the incidence is carried by every column-census member at both primes: 16 of 16 and 16 of 16
 PASS H19 the sixteen block ranks recompose to 105 = rank 105 at the first prime and 105 = rank 105 at the second
 PASS H21 the ladder: 3321960 members, the row condition leaves 48, the column condition leaves 16, their crossing leaves 2
-PASS H22 the 2 are one naming apart: the central map carries the first to the second entry by entry; naming-blind instruments cannot split them
+PASS H22 the central map carries the 2 crossing members entrywise; they form one orbit under its relabelling
 PASS H23 two members sum to row sums 16, not 8, so the sum leaves the family and neither census is linear; both ranks 105 match; tags unique
-resource: 15 s, 143 MB peak
-TOTAL: PASS=25 FAIL=0
+resource: 16 s, 152 MB peak
+TOTAL: PASS=26 FAIL=0
 
 ----- stderr -----
 

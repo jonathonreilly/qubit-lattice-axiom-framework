@@ -1,6 +1,6 @@
 {
- "edge_count": 15577,
- "node_count": 5477,
+ "edge_count": 15580,
+ "node_count": 5478,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -13685,6 +13685,10 @@
   "physical_cell_cutting_crossing_automorphism_cycle777_note_2026-08-11": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "physical_cell_cutting_least_computing_sets_cycle737_note_2026-08-05": {
+   "deps_hash": "ba0326da985f",
+   "out_degree": 3
   },
   "physical_column_family_parity_law_forced_orbits_cycle733_note_2026-08-04": {
    "deps_hash": "34379e6103b0",

@@ -1,6 +1,6 @@
 {
- "edge_count": 15750,
- "node_count": 5499,
+ "edge_count": 15753,
+ "node_count": 5500,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -377,6 +377,10 @@
   "admissibility_compact_regge_homogeneous_reaction_rank_kkt_boundary_bounded_theorem_note_2026-08-10": {
    "deps_hash": "d5f980b256b0",
    "out_degree": 8
+  },
+  "admissibility_curved_regge_pseudoconstraint_perfect_action_route_gate_bounded_theorem_note_2026-08-12": {
+   "deps_hash": "c4f61f974a87",
+   "out_degree": 3
   },
   "admissibility_cut_surface_coframe_stress_higher_form_ward_geometry_dynamics_boundary_bounded_theorem_note_2026-08-10": {
    "deps_hash": "088c2e2a5f1e",

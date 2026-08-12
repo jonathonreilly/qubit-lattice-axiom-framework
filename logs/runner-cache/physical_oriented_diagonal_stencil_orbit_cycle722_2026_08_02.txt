@@ -4,7 +4,7 @@ runner_sha256: a8a1de847005172b6aafb4e9d90270e458f96c58bf241b8d26feef6860510c1b
 input_fingerprint_sha256: f16228dfa22ac9810d4cc316446c432694b1b6d39236992c2bac39c9cf2f5eab
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 23.18
+elapsed_sec: 22.31
 status: ok
 ----- stdout -----
 Cycle 722 -- oriented body diagonal of the assembly stencil

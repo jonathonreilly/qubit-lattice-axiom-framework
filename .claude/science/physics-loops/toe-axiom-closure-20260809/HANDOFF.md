@@ -1849,3 +1849,44 @@ positivity, gauge descent, two-mode spectrum, static residue, and Record-clock
 meaning. If that requires an independent clock, norm, or orientation choice,
 return that exact choice to the Block-46 joint `L*` contract. Re-rank before
 any nonlinear or global follow-on.
+
+## Block 48 Handoff
+
+Work is on branch
+`physics-loop/toe-axiom-closure-block48-physical-transfer-20260811`, stacked
+exactly on Block-47 delivery head `d51d8386f8`. The direct identification
+`lambda=exp(-omega)` is not a positive self-adjoint one-step transfer because
+the sampled single-orientation roots are nonreal. This is a narrow obstruction,
+not gravity failure.
+
+The minimal local time-reflected union has `22` edge classes, `8` shared edge
+classes, `133` Laurent shifts, exact reflection covariance, and four exact
+Ward columns. Its constant paired-metric fiber has exact dimension thirteen:
+ten common-metric directions plus three relative forward/backward `h_it`
+shifts. Each orientation-local action annihilates all thirteen, so separable
+coefficient retuning cannot lift the excess. Eight declared nonzero static
+momenta retain a fifth null beyond gauge.
+
+The viable repair is to identify one metric before averaging the two
+complete-edge stationary Schur operators. This gives exact reflection and
+Ward identities, eight real sampled tensor poles, positive conditional
+two-step eigenvalues, and the inherited static residue. It does not derive a
+local physical carrier, inner product/OS form, decaying branch, or Record step.
+The missing law is now precise: a three-component orientation-shift
+intertwiner plus the action-to-physical-transfer and Record-clock map.
+
+Primary/cache is `PASS=14 FAIL=0`; independent runner-free reconstruction is
+`PASS=5 FAIL=0`; declared-input tests pass `16/16`. Citation registration is
+`5,494/15,721`, out-degree ten. Direct gates and forensic N5 readiness pass.
+Science commit is `acced2a144`; PR #6141 is open, mergeable, and `CLEAN`.
+Independent audit remains required. No canonical axiom, fixed TOE percentage,
+audit verdict, or `review-loop` changes.
+
+The next block must attack the extensional joint law, not another regulator.
+Try distinct alternating-orientation, metric-first local cross-coupling, and
+OS half-space families against one exact target: derive the common carrier,
+three-shift intertwiner, positive physical transfer, constraint preservation,
+static residue, and Record step from one local update. If two legal current-
+foundation completions survive, write the smallest explicit distinguishing
+axiom delta. Do not add pole grids, source fixtures, or separable action
+coefficients.

@@ -1168,3 +1168,29 @@ complete conditional nonlinear compact solution:
 - next artifact: one smallest physical transfer/inner-product construction or
   exact localized failure, preserving the Ward quotient, two-mode count, and
   static residue; no new pole grid
+
+## Block 48 Artifact Plan
+
+- theorem note: separate the direct single-orientation positive-transfer
+  obstruction from the broader gravity question, construct the minimal local
+  time-reflected edge union, derive its exact constant-fiber excess, and retain
+  the viable common-metric repair without calling it selected physics
+- primary runner/cache: check all reflected labels and `133` Laurent shifts,
+  exact reflection and Ward identities, exact radical fiber ranks
+  `(7,10,3,13)`, the sampled fifth static branch, eight common-metric pole
+  solves, conditional two-step spectrum, static residue, physical boundary,
+  and fresh N1--N8; achieved `PASS=14 FAIL=0`
+- adversarial control: independent runner-free reconstruction of the union,
+  exact shared rank, static branch, common-metric roots, two-step spectrum, and
+  residue; achieved `PASS=5 FAIL=0`
+- no-go packet: land N1--N8 and the cached five-resolution N5 certificate;
+  restrict the negatives to the literal direct one-step spectrum and scalar
+  retuning of orientation-separable actions; preserve alternating-orientation,
+  common-metric, unitary-dilation, and OS routes
+- current evidence: science commit `acced2a144`; graph `5,494/15,721`, new
+  out-degree ten; declared-input tests `16/16`; direct gates and forensic N5
+  readiness pass; PR #6141 is open, mergeable, and `CLEAN` on exact Block-47
+  delivery `d51d8386f8`
+- next artifact: an exact target contract and first construction/falsification
+  of the local Record-faithful orientation/metric transfer piece of `L*`; no
+  further pole grids, source fixtures, or separable regulator variants

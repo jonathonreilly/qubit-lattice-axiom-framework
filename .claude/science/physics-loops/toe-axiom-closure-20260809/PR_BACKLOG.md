@@ -627,6 +627,21 @@ single-orientation physical-reconstruction boundary. It makes no canonical
 edit, percentage move, audit verdict, selected-dynamics claim, gravity no-go,
 or `review-loop` claim. Landing order adds #6140 after #6138.
 
+## Block 48
+
+PR #6141
+(`physics-loop/toe-axiom-closure-block48-physical-transfer-20260811`) is open,
+mergeable, and `CLEAN`, stacked exactly on Block-47 delivery head
+`d51d8386f8`. Its distinct review object is the direct positive one-step
+transfer obstruction, exact `22`-edge time-reflected union, `13 versus 10`
+constant-fiber theorem, sampled fifth static branch, and viable common-metric
+reflected two-step candidate. Primary/cache is `PASS=14 FAIL=0`; independent
+runner-free reconstruction is `PASS=5 FAIL=0`; declared-input tests are
+`16/16`; citation registration is `5,494/15,721`, out-degree ten. The N1--N8
+packet and N5 execution certificate land with the science. No canonical axiom,
+fixed TOE percentage, audit verdict, or `review-loop` changes. Landing order
+adds #6141 after #6140.
+
 Block 45 is local on branch
 `physics-loop/toe-axiom-closure-block45-record-transition-20260811`, stacked
 exactly on Block-44 delivery head `d91500ca4e`. Its distinct review object is

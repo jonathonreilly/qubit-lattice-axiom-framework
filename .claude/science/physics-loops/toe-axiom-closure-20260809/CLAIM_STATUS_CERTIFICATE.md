@@ -1581,3 +1581,32 @@ lines are in the landing primary cache.
   norm, unitarity/stability, nonlinear/nonflat gravity, axiom amendment, TOE
   percentage movement, or audit verdict. Fresh N1--N8 lands; no `review-loop`
   is used.
+
+## Block 48 Claim Status
+
+- Narrow negative: the sampled complex Block-47 poles cannot themselves be
+  eigenvalues `exp(-omega)` of a positive self-adjoint one-step transfer; a
+  minimal local reflected union cannot remove its exact three relative
+  mixed-time metric directions by retuning the two orientation coefficients.
+- Exact union result: the original/reflected edge complexes form `22` edge
+  classes with `8` shared classes and `133` Laurent shifts, exact reflection
+  covariance and four Ward columns. The constant fiber has dimension `13`,
+  decomposing as one ten-component common metric plus three relative `h_it`
+  shifts; eight sampled static momenta have four gauge plus one extra null.
+- Positive repair candidate: common-metric averaging after complete-edge
+  stationary Schur elimination gives exact reflection/Ward identities, eight
+  real positive sampled tensor poles, a positive conditional decaying two-step
+  spectrum, and the parent `k^2 h_tt -> 2` residue.
+- Exact residual: derive the three-component orientation-shift intertwiner,
+  local action-to-physical-transfer map, positive inner product or OS form,
+  decaying-branch rule, and Record step. The common-metric candidate is not
+  selected and not proved necessary.
+- Evidence: source/input-pinned cache `PASS=14 FAIL=0`; independent runner-free
+  reconstruction `PASS=5 FAIL=0`; declared-input suite `16/16`; graph
+  `5,494/15,721`, out-degree ten; direct and forensic evidence gates pass.
+  Science commit is `acced2a144`; PR #6141 is open, mergeable, and `CLEAN` on
+  exact Block-47 delivery `d51d8386f8`.
+- Scope: blocker localization with a viable repair, not a gravity no-go,
+  physical transfer theorem, selected joint law, axiom amendment, TOE
+  percentage movement, or audit verdict. Fresh N1--N8 and all five N5
+  resolutions land; no `review-loop` is used.

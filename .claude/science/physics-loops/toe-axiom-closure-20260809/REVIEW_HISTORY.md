@@ -2021,6 +2021,39 @@ instance or Fourier census.
   exact Block-46 delivery `8f8495ea0d`. No canonical edit, fixed-percentage
   move, audit verdict, or `review-loop` occurs.
 
+## Block 48 Construction And Adversarial Record
+
+- Recomputed the Block-47 roots at `k=0.4,pi/2`; the maximum pole phase is
+  `6.137007e-4` and maximum imaginary part of `exp(-omega)` is
+  `1.636610e-4`, excluding only their direct interpretation as a positive
+  self-adjoint one-step spectrum.
+- Constructed the local time-reflected union coefficient by coefficient,
+  including base-cell offsets: `22` edge classes, `8` shared classes, `133`
+  shifts, transpose pairing error `2.220e-16`, reflection covariance error
+  `2.665e-15`, and four Ward columns with residual `1.168e-14`.
+- Proved the paired constant-metric shared constraint has exact radical rank
+  seven. Its fiber has dimension thirteen: one rank-ten common metric plus the
+  three relative forward/backward `h_it` shifts. Both component actions
+  annihilate the full fiber, so scalar retuning cannot lift it.
+- At eight declared static momenta the union inertia is `(14,3,5)` with next
+  gap `4.113e-4`; four directions are gauge and one is extra.
+- Identified the metrics before reflected stationary Schur averaging. The
+  resulting operator has exact reflection/Ward identities, eight real sampled
+  tensor poles with phase below `3.9e-15`, isolated next ratio above
+  `3.123e-8`, positive two-step eigenvalues `0.027467..0.818864`, and static
+  residues `2.0000755..2.0048245`.
+- Fresh N1--N8 restricts both negatives and preserves the common-metric,
+  alternating-orientation, unitary-dilation, and OS routes. The cached N5
+  certificate passes forensic readiness.
+- Primary/cache is `PASS=14 FAIL=0`; independent reconstruction is
+  `PASS=5 FAIL=0`; declared-input tests pass `16/16`. Citation registration is
+  `5,494/15,721`, out-degree ten. Vocabulary, strict lint, premise purity,
+  Python/cache, staged claim typing, whitespace, and enforced graph/link
+  invariants pass.
+- Science commit is `acced2a144`; PR #6141 is open, mergeable, and `CLEAN` on
+  exact Block-47 delivery `d51d8386f8`. No canonical edit, fixed percentage,
+  audit verdict, or `review-loop` occurs.
+
 ## Block 43 Construction And Adversarial Record
 
 - Solved the complete repaired fifteen-edge symbol on every nonzero static

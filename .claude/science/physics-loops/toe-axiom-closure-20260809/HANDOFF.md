@@ -2489,7 +2489,8 @@ translation-residue proof gives `22N+7` and no overwrite for arbitrary `N` on
 the declared blank ray. Primary/cache is `PASS=7 FAIL=0`; seven targeted
 mutations fail one aggregate check each. Citation registration is
 `5,509/15,786`, out-degree three; all direct gates pass. Science commit is
-`fe4f5265a0`.
+`fe4f5265a0`; PR #6156 is open, mergeable, and `CLEAN` on exact Block-62
+delivery `46a6c351bd`.
 
 This is the first joint Record/Born/history candidate construction in the
 reset portfolio, but it retires no scored obligation. Its readiness predicate

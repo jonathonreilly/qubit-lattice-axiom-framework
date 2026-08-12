@@ -2789,5 +2789,6 @@ instance or Fourier census.
   check. The only promotion-blocking construction wall is exact radius-three
   readiness, while physical selection/compiler/time/global walls remain
   separately open. Graph registration is `5,509/15,786`, out-degree three;
-  all direct gates pass. Science commit is `fe4f5265a0`. This is zero TOE
-  percentage movement and no `review-loop`.
+  all direct gates pass. Science commit is `fe4f5265a0`; PR #6156 is open,
+  mergeable, and `CLEAN`. This is zero TOE percentage movement and no
+  `review-loop`.

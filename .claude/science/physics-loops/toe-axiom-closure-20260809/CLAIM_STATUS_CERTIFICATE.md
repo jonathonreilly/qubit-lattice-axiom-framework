@@ -2032,7 +2032,8 @@ lines are in the landing primary cache.
   `|000>` by `L1=1.5`, `Linf=0.5`; seven targeted mutations fail exactly one
   check each.
 - Evidence: primary/cache `PASS=7 FAIL=0`; graph `5,509/15,786`, out-degree
-  three. All direct repository gates pass. Science commit is `fe4f5265a0`.
+  three. All direct repository gates pass. Science commit is `fe4f5265a0`;
+  PR #6156 is open, mergeable, and `CLEAN`.
 - Scope: `bounded_theorem`. Exact radius-three readiness prevents current
   nearest-neighbor attachment. Physical CP compilation, time/rate,
   multi-front/global resources, law selection/adoption, audit retention, and

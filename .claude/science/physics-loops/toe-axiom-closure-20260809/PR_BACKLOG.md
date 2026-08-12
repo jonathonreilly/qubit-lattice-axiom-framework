@@ -1140,7 +1140,7 @@ Block 62 after #6154.
 
 ## Block 63
 
-Pull request pending on
+PR #6156 is open, mergeable, and `CLEAN` on
 `physics-loop/toe-axiom-closure-block63-record-born-history-20260812`, stacked
 exactly on Block-62 delivery head `46a6c351bd`. Its distinct review object is
 the fixed state-dependent CP kernel, exact incompatible-menu/shared-effect

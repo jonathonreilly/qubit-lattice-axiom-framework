@@ -1636,7 +1636,8 @@ complete conditional nonlinear compact solution:
 - science commit is `fe4f5265a0`; citation registration is
   `5,509/15,786`, out-degree three; vocabulary, strict lint, premise purity,
   model normalization, Python/cache, staged claim typing, whitespace,
-  N1--N8/N5, and enforced graph/link invariants pass
+  N1--N8/N5, and enforced graph/link invariants pass; PR #6156 is open,
+  mergeable, and `CLEAN`
 - exact witness covers five density fixtures times two incompatible menus,
   one literal shared effect/codeword, positive CP Choi tensors, all 24 proper
   cubic co-transports, exact cylinders through `N=5`, all 81 held length-four

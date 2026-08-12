@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/physical_parity_certificate_cost_spectrum_cycle732_independent_check_2026_08_04.py
+runner_sha256: 06d68fa284648c71ebcf41767660156722bd4e557f9c695fd8186ae314e51b4e
+input_fingerprint_sha256: 2390752fcc9b4a0dc78aafaa66aeae988a62daf5a8a3821a51c78802430e8e35
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 2.37
+status: ok
+----- stdout -----
+PASS direct Cycle 731 literal binding  all six carried floor/ceiling literals agree exactly
+PASS independent cell and charge census  4,368 subsets; 2,672 unit pieces; charge multiplicities 64/384/1152/768/304
+PASS independent finite action  48 elements; 57 charge-constant piece orbits of sizes 16 and 48
+PASS independent generic incidence  2,736 boundary-free points; row loads 6..409 and column loads 90..224
+PASS independent unrestricted GF2 certificate  pure-big-integer elimination gives rank 465 and a distinct even 168-point certificate
+PASS independent subgroup-ladder census  98 subgroups; among 12 of order >=12 exactly one order-12 subgroup is soluble
+PASS independent exact bound certificates  all 2,672 rows hold; values are 108*216 and 128*3
+PASS independent fixed-ansatz mod3 dual  four-row relation is zero modulo 3 but weighted charge is 31
+PASS independent local mod3 census  sparse GF3 reduction finds 864 four-row and 240 six-row obstructions
+PASS independent broad-normal witness validation  2,928 primitive normals validate all 276 pairs in each of 11 witnesses; costs 108..128
+PASS independent exact spectrum deduction  parity plus exact bounds plus attainment leaves exactly eleven even values
+PASS hostile independent controls  tightened floor, mutated dual, and toggled parity certificate all fail closed
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

@@ -1113,7 +1113,7 @@ order will place Block 60 after #6152.
 
 ## Block 61
 
-PR receipt is pending on
+PR #6154 is open, mergeable, and `CLEAN` on
 `physics-loop/toe-axiom-closure-block61-metric-completion-20260812`, stacked
 exactly on Block-60 delivery head `f29604d9cd`. Its distinct review object is
 the exact all-55-pair nonlinear metric-completion reaction identity and one

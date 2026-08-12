@@ -2717,5 +2717,6 @@ instance or Fourier census.
   pass.
 - Science commit is `7b6c571e9e`, on exact Block-60 delivery `f29604d9cd`.
   This is significant mechanism/route progress and zero TOE percentage
-  movement; the fixed map has not moved for at least 58 hours. PR receipt is
-  pending. No canonical axiom, audit verdict, or `review-loop` changes.
+  movement; the fixed map has not moved for at least 58 hours. PR #6154 is
+  open, mergeable, and `CLEAN`. No canonical axiom,
+  audit verdict, or `review-loop` changes.

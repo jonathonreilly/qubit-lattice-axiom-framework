@@ -2418,7 +2418,8 @@ Primary/cache is `PASS=8 FAIL=0` in 112.9 seconds. Five targeted mutations
 each fail one named check. Citation registration is `5,507/15,778`,
 out-degree four. Vocabulary, strict lint, premise purity, model normalization,
 Python/cache, claim typing, whitespace, N1--N8/N5, and enforced graph/link
-gates pass. Science commit is `7b6c571e9e`; PR receipt is pending.
+gates pass. Science commit is `7b6c571e9e`; PR #6154 is open, mergeable,
+and `CLEAN`, stacked exactly on Block-60 delivery `f29604d9cd`.
 
 This is significant route progress but zero scored TOE progress; the fixed map
 has not moved for at least 58 hours. The next qualifying calculation is the

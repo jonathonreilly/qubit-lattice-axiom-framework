@@ -1569,7 +1569,7 @@ complete conditional nonlinear compact solution:
 - current evidence: science commit `7b6c571e9e`; graph `5,507/15,778`,
   out-degree four; vocabulary, strict lint, premise purity, model-family
   normalization, Python/cache, claim typing, whitespace, N5, and enforced
-  graph/link checks pass; PR receipt is pending
+  graph/link checks pass; PR #6154 is open, mergeable, and `CLEAN`
 - score and next artifact: significant mechanism progress and zero TOE
   percentage movement. Build the full transverse conserved-source/multimode
   identity or a concrete falsifier, then test two-TT/Record observable

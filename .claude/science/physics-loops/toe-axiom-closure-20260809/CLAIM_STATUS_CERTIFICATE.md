@@ -1980,7 +1980,7 @@ lines are in the landing primary cache.
   check each; graph `5,507/15,778`, out-degree four. Vocabulary, strict lint,
   premise purity, model normalization, Python/cache, claim typing, whitespace,
   N5, and enforced graph/link invariants pass. Science commit is
-  `7b6c571e9e`; PR receipt is pending.
+  `7b6c571e9e`; PR #6154 is open, mergeable, and `CLEAN`.
 - Scope: this is significant mechanism progress and zero TOE percentage
   movement—not a uniform angular/all-source or multimode theorem,
   observable/state decoupling, nonlinear Lorentzian/refinement closure,

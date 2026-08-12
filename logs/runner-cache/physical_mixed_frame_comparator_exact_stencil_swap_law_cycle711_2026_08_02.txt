@@ -4,7 +4,7 @@ runner_sha256: 8d822e318a6f503028e52e37252eb235842a33eeb7dae873c681516bccc8a3bb
 input_fingerprint_sha256: f16228dfa22ac9810d4cc316446c432694b1b6d39236992c2bac39c9cf2f5eab
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 51.07
+elapsed_sec: 56.84
 status: ok
 ----- stdout -----
 c711 exact stencil swap law behind the mixed-frame comparator

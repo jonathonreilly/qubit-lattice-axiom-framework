@@ -21,11 +21,11 @@ paired receipt
 ```yaml
 trace_class: upstream_support
 target_claim_id: null
-target_blocker_text: "the in-flight Cycle-710 finite covariance-boundary census measured a mixed-frame comparator near 4 but supplied no exact stencil derivation"
+target_blocker_text: "the landed Cycle-710 finite covariance-boundary census measured a mixed-frame comparator near 4 but supplied no exact stencil derivation"
 source_of_blocker_text: frontier_question
 reachability_to_target: supports
 artifact_role: runner_certificate
-next_trace_action: "consume the exact two-incidence stencil identity only after Cycle 710 lands, then seek an arbitrary-size incidence-count proof; the present result covers only L = 3 and L = 7"
+next_trace_action: "use the exact two-incidence stencil identity as bounded support for the landed Cycle-710 comparator, then seek an arbitrary-size incidence-count proof; the present result covers only L = 3 and L = 7"
 ```
 
 ```yaml
@@ -51,9 +51,9 @@ measured, not derived.
 
 ## What Cycle 710 left open
 
-The Cycle-710 covariance-boundary census (stem
-`PHYSICAL_ASSEMBLY_DEFECT_COCYCLE_LAW_AND_COVARIANCE_BOUNDARY_CYCLE710_NOTE_2026-08-02`,
-in flight) measured the assembly defect E_g = Π_g^T Q Π_g − Q of the static
+The landed
+[Cycle-710 covariance-boundary census](PHYSICAL_ASSEMBLY_DEFECT_COCYCLE_AND_MIXED_FRAME_COMPARATOR_CYCLE710_NOTE_2026-08-02.md)
+measured the assembly defect E_g = Π_g^T Q Π_g − Q of the static
 Hessian under the 24 proper-rotation frames and found its ceiling at every mixed
 frame to sit within 2.0e-08 of the integer 4 — recorded there as measured, not
 derived. This cycle derives that integer. The comparator is the exact stencil
@@ -274,10 +274,9 @@ appear.
   above a counting argument: the argmax family size should follow from the
   substituted-class orbit sizes and the open-box boundary combinatorics. The
   same machinery should decide the ±3 and ±2 families.
-- **Propagate the swap law to the response floor.** The Cycle-709 minus-branch
-  floor (stem
-  `PHYSICAL_MINUS_BRANCH_RESPONSE_FLOOR_ASSEMBLY_DEFECT_LAW_CYCLE709_NOTE_2026-08-02`,
-  in flight) consumes the assembly defect through a solve; the exact swap
+- **Propagate the swap identity to the response floor.** The landed
+  [Cycle-709 minus-branch floor](PHYSICAL_MINUS_BRANCH_RESPONSE_FLOOR_ASSEMBLY_DEFECT_LAW_CYCLE709_NOTE_2026-08-02.md)
+  consumes the assembly defect through a solve; the exact swap
   structure derived here is the natural input for an exact floor statement.
 - **Path-symmetrized assembly.** The substitution dichotomy suggests a
   symmetrized transport (average over re-anchoring choices) whose defect could
@@ -292,8 +291,8 @@ per-simplex sum. The K-endpoint transport and the source-stabilizer analysis of
 [PHYSICAL_SOURCE_STABILIZER_COSET_COLLAPSE_K_SIGN_LAW_CYCLE707_NOTE_2026-08-01](PHYSICAL_SOURCE_STABILIZER_COSET_COLLAPSE_K_SIGN_LAW_CYCLE707_NOTE_2026-08-01.md)
 sit downstream of the same frame sextet; the dichotomy of T1 gives that sextet
 a purely combinatorial characterization (constant-sign matrices), sharpening
-the boundary that the in-flight Cycle-708 classification (stem
-`PHYSICAL_SOURCE_EDIT_SET_SIGNED_STABILIZER_CLASSIFICATION_CYCLE708_NOTE_2026-08-02`)
+the boundary that the landed
+[Cycle-708 classification](PHYSICAL_SOURCE_EDIT_SET_SIGNED_STABILIZER_CLASSIFICATION_CYCLE708_NOTE_2026-08-02.md)
 maps at the signed level.
 
 ## Runner
@@ -320,7 +319,8 @@ coarse-precision values only and ends with `TOTAL: PASS=55 FAIL=0`.
   — the frame table and deficit-angle machinery.
 - Compiler chain: the linked Cycle-696 runner above (landed; LT = 2 and the FD
   step are its supplied constants).
-- In flight, context only: cycles 708–710, stems backticked above.
+- Landed bounded context: the linked Cycle-708, Cycle-709, and Cycle-710 notes;
+  none supplies a measured input to the primary runner.
 
 ## Review record
 
@@ -329,9 +329,10 @@ the positive finite witnesses actually executed at L = 3 and L = 7; no broader
 scientific conclusion is attached to those witnesses. The load-bearing
 Cycle-696 source closure is now explicit and cache-bound.
 
-Outstanding at landing, as hard landing conditions: (1) the exact heads of
-predecessor PRs #5892 and #5895 must already be contained in `origin/main`; (2)
-the primary runner must be rerun through `scripts/runner_cache.py` with a fresh
-five-file input fingerprint and exit 0; and (3) the citation-graph manifest must
-be regenerated from the final proposed landing tree and its added-node and
-dependency-edge delta inspected before acknowledgment.
+Predecessor containment was satisfied before the final replay: PR #5892 and PR
+#5895 are both merged into `origin/main`. Outstanding at landing, as hard
+landing conditions: (1) the primary runner must be rerun through
+`scripts/runner_cache.py` with a fresh five-file input fingerprint and exit 0;
+and (2) the citation-graph manifest must be regenerated from the final proposed
+landing tree and its added-node and dependency-edge delta inspected before
+acknowledgment.

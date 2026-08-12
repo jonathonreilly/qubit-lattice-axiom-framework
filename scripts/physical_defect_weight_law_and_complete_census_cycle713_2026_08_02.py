@@ -207,6 +207,7 @@ def main() -> int:
     full_sig = Counter()
     per_L = {}
     uniform = {}
+    mag_uniform = {}
     carrier_ok = True
     carrier_sig_ok = True
     carrier_sets = set()
@@ -226,7 +227,7 @@ def main() -> int:
                 m = dof_perm(L, index, FRAMES[k])
                 sextet_max = max(sextet_max, float(np.abs(Q[np.ix_(m, m)] - Q).max()))
         rec = []
-        mag = Counter()
+        mag_rec = []
         for k in mixed:
             m = dof_perm(L, index, FRAMES[k])
             perm_ok = perm_ok and len(np.unique(m)) == len(m)
@@ -262,11 +263,17 @@ def main() -> int:
             for (ca, cb) in pairs:
                 sigc[(SUP[ca], SUP[cb])] += 1
             carrier_sig_ok = carrier_sig_ok and dict(sigc) == CARRIER_SIG
+            one_mag = []
             for name, target, _, _ in MAG_LAW:
-                mag[name] += int((np.abs(e["av"] - target) < TOL_W).sum())
+                mask = np.abs(e["av"] - target) < TOL_W
+                one_mag.append((name, int((mask & (v > 0)).sum()),
+                                int((mask & (v < 0)).sum())))
+            mag_rec.append(tuple(one_mag))
         uniform[L] = len(set(rec)) == 1
+        mag_uniform[L] = (len(set(mag_rec)) == 1
+                          and all(pos == neg for _, pos, neg in mag_rec[0]))
         per_L[L] = rec[0]
-        mag_counts[L] = {n: mag[n] // (2 * len(mixed)) for n, _, _, _ in MAG_LAW}
+        mag_counts[L] = {name: pos for name, pos, _ in mag_rec[0]}
         del Q, model
 
     check("g01_sextet_defect_ceiling", sextet_max < SEXTET_BOUND,
@@ -302,9 +309,9 @@ def main() -> int:
     check("g11_sign_balance",
           all(r[0] == r[1] and r[2] == r[3] for r in per_L.values()),
           "plus and minus counts equal for both weights at every size")
-    check("g12_frame_uniform", all(uniform.values()),
-          "per-frame weight counts identical across the {} mixed "
-          "frames at every size".format(len(mixed)))
+    check("g12_frame_uniform", all(uniform.values()) and all(mag_uniform.values()),
+          "per-frame weight and magnitude-resolved sign counts identical "
+          "across the {} mixed frames at every size".format(len(mixed)))
 
     full_meas = [per_L[L][2] for L in L_ALL]
     half_meas = [per_L[L][0] for L in L_ALL]

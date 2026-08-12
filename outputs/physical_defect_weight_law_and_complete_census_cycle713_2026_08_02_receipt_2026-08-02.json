@@ -59,7 +59,7 @@
       "pass": true
     },
     "g12_frame_uniform": {
-      "detail": "per-frame weight counts identical across the 18 mixed frames at every size",
+      "detail": "per-frame weight and magnitude-resolved sign counts identical across the 18 mixed frames at every size",
       "pass": true
     },
     "g13_full_law": {

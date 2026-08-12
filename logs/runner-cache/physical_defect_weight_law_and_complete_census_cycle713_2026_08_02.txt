@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/physical_defect_weight_law_and_complete_census_cycle713_2026_08_02.py
-runner_sha256: a3474fb73effa9e2e8ac23a133d2f2a0da67aac0903037b6588a237b606928eb
+runner_sha256: 902e9577eeca8ce9c83a6be30572a188344f99e9acdf1c40675455fec5fb0d79
 input_fingerprint_sha256: f16228dfa22ac9810d4cc316446c432694b1b6d39236992c2bac39c9cf2f5eab
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 10.41
+elapsed_sec: 10.36
 status: ok
 ----- stdout -----
 == cycle 713: assembly-defect weight law and complete census ==
@@ -20,7 +20,7 @@ PASS g08_additive_rejector additive alternative LT*sqrt(s_i+s_j) misses by at le
 PASS g09_full_half_gap largest half-weight magnitude 1.0e+00 below the cycle-711 cut 2.0e+00, smallest full-weight magnitude 2.0e+00
 PASS g10_cut_is_weight_separator entries above the cycle-711 cut equal the full-weight entries at every size and frame
 PASS g11_sign_balance plus and minus counts equal for both weights at every size
-PASS g12_frame_uniform per-frame weight counts identical across the 18 mixed frames at every size
+PASS g12_frame_uniform per-frame weight and magnitude-resolved sign counts identical across the 18 mixed frames at every size
 PASS g13_full_law full per sign L=(3, 4, 5, 6, 7, 8, 9): [424, 1380, 3216, 6220, 10680, 16884, 25120] = 48(L-1)^3+8(L-1)^2+4(L-1)
 PASS g14_half_law half per sign L=(3, 4, 5, 6, 7, 8, 9): [64, 144, 256, 400, 576, 784, 1024] = 16(L-1)^2
 PASS g15_total_law resolved entries per frame L=(3, 4, 5, 6, 7, 8, 9): [976, 3048, 6944, 13240, 22512, 35336, 52288] = 96(L-1)^3+48(L-1)^2+8(L-1)

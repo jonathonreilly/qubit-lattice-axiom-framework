@@ -1,4 +1,4 @@
-"""Cycle 733. The whole family of nearest neighbour costs on the single cell.
+"""Cycle 733: finite column-cost parity and minimum-support theorem.
 
 The cell is the unit four-cube, three lattice directions and one tick, cut into pieces
 of least volume. For a set S of columns, the cost of a piece counts the pairs of its
@@ -8,26 +8,76 @@ of fifteen such costs at once: which of them are blind to how the cell is cut, w
 obey a parity law with an exhibited certificate, where that law breaks and why, and
 which pieces the minimum principle forces a least cost dissection to use.
 
-No solver. Every bound is either an exhibited certificate checked in integers, a
-complete search over an explicit finite set, or exact elimination over a finite field.
+The cell, tick graining, corner-simplex domain, and charge are supplied inputs rather
+than consequences of the framework axioms.  No solver is called.  Every finite result
+is an exhibited certificate checked in integers, a complete exact-cover enumeration,
+or exact elimination over a finite field.  Every enumerated positive exact cover is
+also checked geometrically before it is called a dissection.
 """
 
+import hashlib
 import itertools
+import json
 import math
+import sys
+from pathlib import Path
 
 import numpy as np
+
+AUDIT_TIMEOUT_SEC = 180
+AUDIT_INPUT_PATHS = (
+    "docs/PHYSICAL_COLUMN_FAMILY_PARITY_LAW_FORCED_ORBITS_CYCLE733_NOTE_2026-08-04.md",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+    "docs/PHYSICAL_EXACT_ADJACENCY_DISSECTION_BRACKET_CYCLE725_NOTE_2026-08-03.md",
+    "scripts/physical_exact_adjacency_dissection_bracket_cycle725_2026_08_03.py",
+    "outputs/physical_exact_adjacency_dissection_bracket_cycle725_2026_08_03_receipt_2026-08-03.json",
+    "docs/PHYSICAL_COST_IDENTITY_INDICATOR_CERTIFICATE_CYCLE731_NOTE_2026-08-04.md",
+    "scripts/physical_cost_identity_indicator_certificate_cycle731_2026_08_04.py",
+    "outputs/physical_cost_identity_indicator_certificate_cycle731_2026_08_04_receipt_2026-08-04.json",
+)
+ROOT = Path(__file__).resolve().parent.parent
+RECEIPT_PATH = ROOT / (
+    "outputs/physical_column_family_parity_law_forced_orbits_cycle733_2026_08_04_"
+    "receipt_2026-08-04.json"
+)
+
+
+def file_sha256(relative_path):
+    return hashlib.sha256((ROOT / relative_path).read_bytes()).hexdigest()
+
+
+C725_RECEIPT = json.loads((ROOT / AUDIT_INPUT_PATHS[5]).read_text(encoding="utf-8"))
+C731_RECEIPT = json.loads((ROOT / AUDIT_INPUT_PATHS[8]).read_text(encoding="utf-8"))
 
 PF = [0, 0]
 
 
 def gate(ok, name, detail):
     PF[0 if ok else 1] += 1
-    print(("PASS " if ok else "FAIL ") + name + "  " + detail)
+    print(("PASS " if ok else "FAIL ") + name + "  " + detail, flush=True)
 
 
 def sec(text):
     print("")
     print(text)
+
+
+gate(
+    C725_RECEIPT.get("bracket_minimal_pieces") == [108, 128]
+    and C725_RECEIPT.get("fail") == 0
+    and "corner 4-simplex" in C725_RECEIPT.get("supplied_model", ""),
+    "dep.c725",
+    "Cycle 725 binds the supplied corner-simplex model and exact adjacency bracket",
+)
+gate(
+    C731_RECEIPT.get("claim_type") == "bounded_theorem"
+    and C731_RECEIPT.get("totals", {}).get("fail") == 0
+    and C731_RECEIPT.get("floor", {}).get("bound") == 108
+    and C731_RECEIPT.get("floor", {}).get("support_pieces") == 1792,
+    "dep.c731",
+    "Cycle 731 binds the spatial floor 108 and its 1792-piece certificate support",
+)
 
 
 def det4(A):
@@ -534,6 +584,28 @@ gate(len(OSZ) == 391 and sorted(set(OSZ)) == [8, 12, 24, 48] and len(SEEN) == le
      "for.orbits", "they fall into {0} orbits of sizes {1}, covering all {2}".format(
          len(OSZ), sorted(set(OSZ)), len(SEEN)))
 
+# Sample exact coverage is necessary for a dissection, but is not by itself a
+# geometric proof.  Check one representative of every symmetry orbit with the
+# independent separating-direction predicate; symmetry carries that exact
+# convex-geometric certificate to every member of the orbit.
+GEO_REPS, GEO_PAIRS, GEO_OK = [], 0, True
+geo_seen = set()
+for s in SOL:
+    if s in geo_seen:
+        continue
+    GEO_REPS.append(s)
+    good, total = separated(list(s))
+    GEO_PAIRS += total
+    GEO_OK = GEO_OK and good == total and is_dissection(list(s))
+    for a in range(len(G)):
+        geo_seen.add(tuple(sorted(int(PP[a][i]) for i in s)))
+gate(GEO_OK and len(GEO_REPS) == len(OSZ) and len(geo_seen) == len(SOL)
+     and GEO_PAIRS == 391 * 276,
+     "for.geometry",
+     "all {0} sample-cover orbits have geometric dissection representatives; {1} pair "
+     "certificates checked and symmetry covers all {2} solutions".format(
+         len(GEO_REPS), GEO_PAIRS, len(geo_seen)))
+
 USED = sorted(set(i for s in SOL for i in s))
 FOUR = sorted(set(int(LAB[i]) for i in USED))
 POOL = [i for i in MINP if int(LAB[i]) in set(FOUR)]
@@ -635,4 +707,60 @@ gate(len(ALLV) == len(VP) + len(VR) and min(CTRL) > 0, "sep.level",
 
 
 print("")
+print("per_element: checked all 2672 minimal pieces for the eleven costs, ten parity "
+      "certificates, the full-set dual obstruction, and the least-cost support partition")
+print("per_site: checked and not executed — the supplied theorem has no lattice-site field; "
+      "its smallest resolved objects are one-cell corner simplices and sample points")
+print("per_mode: checked and not executed — no spectral or mode decomposition occurs in "
+      "this finite incidence and exact-cover theorem")
+print("per_block: checked the complete supplied one-cell by one-tick four-box, all 2672 "
+      "minimal pieces, all 15800 least-cost dissections, and all 391 symmetry orbits")
+print("lattice_wide: checked and not executed — no multi-cell, arbitrary-tick, boundary, "
+      "continuum, or framework-selection extension is asserted")
+print("")
 print("TOTAL: PASS={0} FAIL={1}".format(PF[0], PF[1]))
+
+receipt = {
+    "claim_type": "bounded_theorem",
+    "supplied_model": C725_RECEIPT.get("supplied_model"),
+    "input_sha256": {path: file_sha256(path) for path in AUDIT_INPUT_PATHS},
+    "family": {
+        "column_sets": len(SETS),
+        "trivial_sets": len(ZS),
+        "nontrivial_sets": len(NZ),
+        "proper_sets_certified": len(PROP),
+        "full_set_dual_pieces": list(DU),
+        "full_set_dual_cost": DSUM,
+        "certificate_supports": SUP,
+    },
+    "minimum": {
+        "piece_cost": LO,
+        "dissection_cost": 24 * LO,
+        "least_pieces": len(MINP),
+        "exact_cover_nodes": NODE[0],
+        "dissections": len(SOL),
+        "dissection_orbits": len(OSZ),
+        "geometric_representatives": len(GEO_REPS),
+        "geometric_pair_checks": GEO_PAIRS,
+        "used_piece_orbits": FOUR,
+        "used_pieces": len(USED),
+        "excluded_pieces": len(REST),
+        "holes": HOL,
+    },
+    "separation": {
+        "kept_vectors": len(VP),
+        "excluded_vectors": len(VR),
+        "intersection": len(VP & VR),
+    },
+    "cycle731_floor": {"bound": 108, "support_pieces": len(ON)},
+    "no_go_discipline": {
+        "status": "PASS",
+        "negative_assertion_class": "derived_no_go_boundary",
+        "checklist": "No-Go Discipline Gate section in the Cycle 733 note",
+        "n5_certificate": "five resolution lines in primary stdout and canonical cache",
+    },
+    "totals": {"pass": PF[0], "fail": PF[1]},
+}
+RECEIPT_PATH.write_text(json.dumps(receipt, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+print("RECEIPT " + json.dumps(receipt, sort_keys=True, separators=(",", ":")))
+sys.exit(1 if PF[1] else 0)

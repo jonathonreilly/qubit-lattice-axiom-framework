@@ -1390,7 +1390,8 @@ complete conditional nonlinear compact solution:
 - current evidence: science commit `6b88b6d3e1`; graph `5,501/15,755`,
   out-degree two; vocabulary, strict lint, premise purity, Python/cache, claim
   typing, whitespace, fresh N1--N8/N5, and enforced graph/link checks pass;
-  PR pending; no TOE percentage moves and independent audit remains required
+  PR #6148 is open, mergeable, and `CLEAN`; no TOE percentage moves and
+  independent audit remains required
 - next artifact: derive one explicit compiler from current `M_2(C)` Record and
   Admissibility objects to the three sector coefficients and physical
   chirality/sign carrier, including selector authority. Stop further finite

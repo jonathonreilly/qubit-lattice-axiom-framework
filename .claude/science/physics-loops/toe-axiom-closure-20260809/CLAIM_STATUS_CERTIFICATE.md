@@ -1805,7 +1805,8 @@ lines are in the landing primary cache.
   maximum, and note-boundary mutations each fail exactly one check; graph
   `5,501/15,755`, out-degree two. Vocabulary, strict lint, premise purity,
   Python/cache, claim typing, whitespace, N5, and enforced graph/link
-  invariants pass. Science commit is `6b88b6d3e1`; PR pending.
+  invariants pass. Science commit is `6b88b6d3e1`; PR #6148 is open,
+  mergeable, and `CLEAN` on exact Block-54 delivery `6081ae7e72`.
 - Scope: one complete exact classification and conditional selector on the
   stipulated one-block model, not a physical grading, generation count, Koide
   relation, gravity sign, selected law, axiom amendment, TOE percentage

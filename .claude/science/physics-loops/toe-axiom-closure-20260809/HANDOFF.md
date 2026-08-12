@@ -2152,9 +2152,9 @@ Primary/cache is `PASS=8 FAIL=0`; rank-census, maximum, and note-boundary
 mutations each fail exactly one check. Citation registration is
 `5,501/15,755`, out-degree two. Vocabulary, strict lint, premise purity,
 Python/cache, claim typing, whitespace, fresh N1--N8/N5, and graph/link gates
-pass. Science commit is `6b88b6d3e1`; PR pending. Independent audit remains
-required. No canonical axiom, fixed TOE percentage, audit verdict, or
-`review-loop` changes.
+pass. Science commit is `6b88b6d3e1`; PR #6148 is open, mergeable, and
+`CLEAN`. Independent audit remains required. No canonical axiom, fixed TOE
+percentage, audit verdict, or `review-loop` changes.
 
 The next qualifying target is the physical bridge, not more projective
 counting: derive a map from current `M_2(C)` Record/Admissibility content to the

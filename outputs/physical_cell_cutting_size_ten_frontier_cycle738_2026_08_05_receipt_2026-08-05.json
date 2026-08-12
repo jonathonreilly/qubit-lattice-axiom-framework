@@ -1,0 +1,170 @@
+{
+  "audit_status_authority": "independent audit lane only",
+  "claim_type": "bounded_theorem",
+  "complete_search_at_ten": {
+    "counts": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      108,
+      1,
+      2,
+      0,
+      2,
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    "duplicate_returns": 0,
+    "mismatched_verified_returns": 0,
+    "nonconstant_minimum_lower_bound": 12,
+    "nonconstant_readings": 6,
+    "readings": [
+      "zero",
+      "one",
+      "four",
+      "four-flip",
+      "six",
+      "six-flip",
+      "seven",
+      "seven-flip",
+      "pair (2,2)",
+      "h6 (6,2)",
+      "in-left quarters (3,5)",
+      "in-right one quarter (0,8)",
+      "p10-2233",
+      "p10-1144",
+      "p10-4411",
+      "p10-5500",
+      "p10-0019",
+      "odd-ctl"
+    ],
+    "zero_kernel_and_one_coset_weight_ten_empty": true
+  },
+  "direct_dependency": {
+    "cycle": 737,
+    "geometric_cuttings": 15800,
+    "previous_maximum_cardinality": 8,
+    "reading_identity_bound": true,
+    "status": "pass",
+    "used_pieces": 192
+  },
+  "forced_parity_certificate": {
+    "forced_blocks": [
+      "L",
+      "Q2",
+      "Q3",
+      "R",
+      "total"
+    ],
+    "free_blocks": [
+      "E0",
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "Q0",
+      "Q1"
+    ],
+    "licensed_cells_at_ten": 146,
+    "quarter_pattern": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1
+    ]
+  },
+  "gates": {
+    "fail": 0,
+    "named": {
+      "base.cell": "PASS",
+      "base.cols": "PASS",
+      "base.floor": "PASS",
+      "base.rank": "PASS",
+      "dep.c737": "PASS",
+      "eng.pack": "PASS",
+      "lic.ctrl": "PASS",
+      "lic.forced": "PASS",
+      "lic.free": "PASS",
+      "lic.full": "PASS",
+      "lic.half": "PASS",
+      "lic.odd": "PASS",
+      "lic.orb": "PASS",
+      "lic.plant": "PASS",
+      "lic.prof": "PASS",
+      "lic.quart": "PASS",
+      "m8.below": "PASS",
+      "m8.one": "PASS",
+      "m8.reading": "PASS",
+      "m8.span": "PASS",
+      "m8.ver": "PASS",
+      "m8.zero": "PASS",
+      "par.colsum": "PASS",
+      "par.ones": "PASS",
+      "ten.counts": "PASS",
+      "ten.floor": "PASS",
+      "ten.gap": "PASS",
+      "ten.plant": "PASS",
+      "ten.sym": "PASS",
+      "ten.ver": "PASS"
+    },
+    "pass": 30
+  },
+  "input_sha256": {
+    "docs/PHYSICAL_CELL_CUTTING_LEAST_COMPUTING_SETS_CYCLE737_NOTE_2026-08-05.md": "eab3120bdee580b4b54561740659ebe142bc543c95901c00fa71e04c7d558a5a",
+    "docs/PHYSICAL_CELL_CUTTING_SIZE_TEN_FRONTIER_CYCLE738_NOTE_2026-08-05.md": "7bf3775314fb19ef6908aca67aaed9af5a2d13a3590199ef0e61cd74216eb426",
+    "outputs/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05_receipt_2026-08-05.json": "1088b2cf8aa99b9f4517fec84097b167ad6511df7f63943ee0f3f1e3240efb30",
+    "scripts/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05.py": "4943c2bd0d89099394c06555f065bbed93c2d536c87a8a131a483535f6b027cd",
+    "scripts/physical_cell_cutting_least_computing_sets_cycle737_independent_check_2026_08_05.py": "e452a7b00ba0fadf65949ad2fb3e7eed462905a0202bacdc494b2fe83e642c5e",
+    "scripts/physical_cell_cutting_size_ten_frontier_cycle738_independent_check_2026_08_05.py": "2eb029e0b1b614c1ab7ef098c7f647ca3e12c4010cb47b4dd2617fe9b6d3235c"
+  },
+  "no_go_discipline": {
+    "claim_scope": "exact-weight-ten UNSAT for eight named functions in one fixed 192-column finite incidence system only",
+    "n5_execution_certificate": [
+      "per_element: checked -- all 192 used piece columns and every exact-weight-ten support",
+      "per_site: checked -- one supplied 16-corner coordinate cell; no physical cell selection",
+      "per_mode: checked and not executed -- no field, spectral, or momentum-mode decomposition",
+      "per_block: checked -- all 15,800 cutting rows and every licensed quarter-split cell",
+      "lattice_wide: checked and not executed -- no multi-cell, arbitrary-L, or continuum claim"
+    ],
+    "status": "PASS"
+  },
+  "runner_sha256": "00d22430ecaa46c222c3e2ef96749e61e3f14e9c7cdba43f5a0dd60572a83020",
+  "schema": "physical-cell-cutting-size-ten-frontier-cycle738-v2",
+  "status": "pass",
+  "supplied_model": {
+    "cost": "corner pairs with four-coordinate L1 separation greater than one",
+    "physical_cell_tick_simplex_reading_bridge": "open",
+    "piece_class": "five-corner normalized-volume-one simplices only",
+    "shape": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "support_universe": "the 192 pieces used by the 15,800 supplied cuttings only"
+  }
+}

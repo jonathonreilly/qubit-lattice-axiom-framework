@@ -1,0 +1,80 @@
+{
+  "audit_status_authority": "independent audit lane only",
+  "checker_sha256": "2eb029e0b1b614c1ab7ef098c7f647ca3e12c4010cb47b4dd2617fe9b6d3235c",
+  "claim_type": "bounded_theorem",
+  "encoding": {
+    "four": {
+      "clauses": 27936,
+      "variables": 5160
+    },
+    "four-flip": {
+      "clauses": 52695,
+      "variables": 5160
+    },
+    "one": {
+      "clauses": 29828,
+      "variables": 5160
+    },
+    "seven": {
+      "clauses": 20869,
+      "variables": 5160
+    },
+    "seven-flip": {
+      "clauses": 24439,
+      "variables": 5160
+    },
+    "six": {
+      "clauses": 30759,
+      "variables": 5160
+    },
+    "six-flip": {
+      "clauses": 17601,
+      "variables": 5160
+    },
+    "zero": {
+      "clauses": 22243,
+      "variables": 5160
+    }
+  },
+  "gates": {
+    "fail": 0,
+    "named": {
+      "hostile.dependency": "PASS",
+      "hostile.sat": "PASS",
+      "independent.consistency": "PASS",
+      "independent.dependency": "PASS",
+      "independent.population": "PASS",
+      "independent.rank": "PASS",
+      "independent.targets": "PASS",
+      "independent.ten": "PASS"
+    },
+    "pass": 8
+  },
+  "input_sha256": {
+    "docs/PHYSICAL_CELL_CUTTING_LEAST_COMPUTING_SETS_CYCLE737_NOTE_2026-08-05.md": "eab3120bdee580b4b54561740659ebe142bc543c95901c00fa71e04c7d558a5a",
+    "docs/PHYSICAL_CELL_CUTTING_SIZE_TEN_FRONTIER_CYCLE738_NOTE_2026-08-05.md": "7bf3775314fb19ef6908aca67aaed9af5a2d13a3590199ef0e61cd74216eb426",
+    "outputs/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05_receipt_2026-08-05.json": "1088b2cf8aa99b9f4517fec84097b167ad6511df7f63943ee0f3f1e3240efb30",
+    "requirements-release.txt": "e153eea331ce1b76cd99f09e14a777df2bc9efbaa06a201528ddfdc0f3f01bee",
+    "requirements.txt": "3fda988835a13d9a7236b0b508aa9bcd2f9b3f3b9a47b4875a15f86dbc77a3ad",
+    "scripts/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05.py": "4943c2bd0d89099394c06555f065bbed93c2d536c87a8a131a483535f6b027cd",
+    "scripts/physical_cell_cutting_least_computing_sets_cycle737_independent_check_2026_08_05.py": "e452a7b00ba0fadf65949ad2fb3e7eed462905a0202bacdc494b2fe83e642c5e",
+    "scripts/physical_cell_cutting_size_ten_frontier_cycle738_2026_08_05.py": "00d22430ecaa46c222c3e2ef96749e61e3f14e9c7cdba43f5a0dd60572a83020"
+  },
+  "population": {
+    "cuttings": 15800,
+    "rank": 88,
+    "used_pieces": 192
+  },
+  "schema": "physical-cell-cutting-size-ten-frontier-cycle738-independent-v1",
+  "status": "pass",
+  "ten_piece_answers": {
+    "four": false,
+    "four-flip": false,
+    "one": false,
+    "seven": false,
+    "seven-flip": false,
+    "six": false,
+    "six-flip": false,
+    "zero": false
+  }
+}

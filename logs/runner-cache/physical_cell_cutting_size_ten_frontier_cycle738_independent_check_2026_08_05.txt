@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/physical_cell_cutting_size_ten_frontier_cycle738_independent_check_2026_08_05.py
+runner_sha256: 2eb029e0b1b614c1ab7ef098c7f647ca3e12c4010cb47b4dd2617fe9b6d3235c
+input_fingerprint_sha256: f2e5af321a25e8413d6eab6e2bb85a1e19d4d4b754a97d75c6752d7ef6e3c2a8
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 295.78
+status: ok
+----- stdout -----
+PASS independent.population  opposite-pivot exact covers reconstruct 15,800 rows on the 192 used pieces
+PASS independent.dependency  Cycle 737 v2 is pass and binds this exact incidence/order
+PASS independent.targets  all eight Cycle 737 reading identities and upper supports reconstruct exactly
+PASS independent.rank  an independently selected 88-row basis pins every reading
+PASS independent.consistency  each bound reading lies in the reconstructed incidence column space before basis reduction
+PASS independent.ten  independent CNF solver returns UNSAT for all eight exact-weight-ten syndromes
+PASS hostile.sat  a reading planted from ten pieces is recovered as SAT
+PASS hostile.dependency  a failed direct-dependency receipt cannot pass
+
+per_element: checked -- all 192 used piece columns enter each exact-weight-ten CNF
+per_site: checked -- one supplied 16-corner coordinate cell; no physical cell selection
+per_mode: checked and not executed -- no field, spectral, or momentum modes exist
+per_block: checked -- all 15,800 cutting rows through an independent 88-row basis
+lattice_wide: checked and not executed -- no multi-cell, arbitrary-L, or continuum claim
+RECEIPT outputs/physical_cell_cutting_size_ten_frontier_cycle738_independent_check_2026_08_05_receipt_2026-08-05.json
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

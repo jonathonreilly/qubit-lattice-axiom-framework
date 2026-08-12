@@ -1,0 +1,98 @@
+===== runner cache v1 =====
+runner: scripts/physical_frame_orbit_spectral_measure_and_rayleigh_census_cycle718_2026_08_02.py
+runner_sha256: 0fb5dfca92905fdf3db3163f39f03bea8f426d2336dd86ed1cd5434604739674
+input_fingerprint_sha256: 5ef9f9adf57d197fbb86a61353a4d55a06f96847f94eab8d9d7aaea67d0ef1dc
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 4.65
+status: ok
+----- stdout -----
+=== Cycle 718: finite frame-orbit spectral measures and Rayleigh census ===
+--- L=3 ---
+PASS group.frame_table.L3 24 distinct determinant-one signed permutations
+PASS group.dof_bijections.L3 n=98, expected=98, 24 bijections
+PASS group.composition.L3 m_ab=m_a∘m_b for 576/576 pairs
+PASS group.composition_reverse_witness.L3 reversed order matches 120/576 pairs
+PASS group.body_diagonal_action.L3 sextet=(1, 4, 9, 15, 18, 23), subgroups=30, regular=4
+PASS matrix.symmetry_roundtrip.L3 symmetry=0.000e+00, permutation roundtrip=0.000e+00
+PASS matrix.conjugator.L3 inverse-left residual=0.000e+00 over 576 pairs
+PASS matrix.conjugator_reverse_witness.L3 reversed product differs on 456 pairs, residual=4.000000
+PASS matrix.fibre_separation.L3 within max=1.243e-10, cross minimum=4.000000
+PASS matrix.spectral_consistency.L3 eigen=1.918e-13, trace=0.000e+00, frobenius=0.000e+00, logabsdet=1.705e-13, det-sign=[1]
+PASS matrix.rank_one_spectral_witness.L3 bump=1.0e-03, spectrum shift=2.305e-04
+PASS matrix.inverse_margin.L3 minimum |eigenvalue|=4.724e-01
+PASS matrix.eigenspace_resolution.L3 clusters=66, doublets=32, internal max=3.553e-14, external min=1.278e-02
+PASS probe.seed7180.orbit_distinct.L3 minimum raw orbit distance=12.204625
+PASS probe.seed7180.spectral_measure_fibres.L3 within L1 max=2.138e-10, cross L1 min=0.675699
+PASS probe.seed7180.rayleigh_fibres.L3 within max=2.959e-12, cross mean gap=0.002720
+PASS probe.seed7180.transfer_identity.L3 residual=2.776e-17, minimum average norm=10.442217
+PASS probe.seed7180.weighted_hull.L3 weighted residual=3.109e-15, hull=[-0.706553,2.116776], minimum margin=0.618279
+PASS probe.seed7180.regular_cover.L3 |S H|=24, distinct left translates=6
+PASS probe.seed7180.translate_symmetry_labels.L3 six translates represented by sextet labels=[1, 4, 9, 15, 18, 23]
+PASS probe.seed7180.translated_sources_distinct.L3 normalized distance min=1.011248, symmetry relation=1.188e-16
+PASS probe.seed7180.translated_spectral_measure.L3 measure L1 max=3.505e-11, Rayleigh spread=2.810e-12
+PASS probe.seed7180.individual_weight_basis_witness.L3 individual-weight L1=0.707602, rotation range=0.657906; eigenspace measure max=3.505e-11
+PASS probe.seed7180.nonregular_contrast.L3 translates=24, measure L1 max=1.117897, Rayleigh spread=0.038593
+PASS probe.seed7181.orbit_distinct.L3 minimum raw orbit distance=11.955480
+PASS probe.seed7181.spectral_measure_fibres.L3 within L1 max=2.583e-10, cross L1 min=0.825577
+PASS probe.seed7181.rayleigh_fibres.L3 within max=2.697e-12, cross mean gap=0.021632
+PASS probe.seed7181.transfer_identity.L3 residual=8.327e-17, minimum average norm=9.827648
+PASS probe.seed7181.weighted_hull.L3 weighted residual=7.716e-15, hull=[-0.706553,2.116776], minimum margin=0.573446
+PASS probe.seed7181.regular_cover.L3 |S H|=24, distinct left translates=6
+PASS probe.seed7181.translate_symmetry_labels.L3 six translates represented by sextet labels=[1, 4, 9, 15, 18, 23]
+PASS probe.seed7181.translated_sources_distinct.L3 normalized distance min=0.976595, symmetry relation=7.952e-17
+PASS probe.seed7181.translated_spectral_measure.L3 measure L1 max=1.029e-10, Rayleigh spread=1.822e-12
+PASS probe.seed7181.individual_weight_basis_witness.L3 individual-weight L1=0.760824, rotation range=0.470788; eigenspace measure max=1.029e-10
+PASS probe.seed7181.nonregular_contrast.L3 translates=24, measure L1 max=1.404016, Rayleigh spread=0.070120
+PASS census.fibre_representative.L3 maximum single-slot within-fibre residual=2.392e-11
+PASS census.classifier_margin.L3 close max=2.392e-11, separated min=4.287e-05
+PASS census.partition_count.L3 slots=98, patterns=14/15
+PASS census.finest_count.L3 finest-pattern slots=0
+PASS census.constant_slots.L3 constant slots=6, classes={1: 2, 3: 2, 7: 2}
+PASS census.deterministic_gaussian_sample.L3 finest=20/20, minimum pair gap=7.215e-04
+--- L=4 ---
+PASS group.frame_table.L4 24 distinct determinant-one signed permutations
+PASS group.dof_bijections.L4 n=279, expected=279, 24 bijections
+PASS group.composition.L4 m_ab=m_a∘m_b for 576/576 pairs
+PASS group.composition_reverse_witness.L4 reversed order matches 120/576 pairs
+PASS group.body_diagonal_action.L4 sextet=(1, 4, 9, 15, 18, 23), subgroups=30, regular=4
+PASS matrix.symmetry_roundtrip.L4 symmetry=0.000e+00, permutation roundtrip=0.000e+00
+PASS matrix.conjugator.L4 inverse-left residual=0.000e+00 over 576 pairs
+PASS matrix.conjugator_reverse_witness.L4 reversed product differs on 456 pairs, residual=4.000000
+PASS matrix.fibre_separation.L4 within max=1.243e-10, cross minimum=4.000000
+PASS matrix.spectral_consistency.L4 eigen=4.832e-13, trace=1.819e-12, frobenius=5.684e-14, logabsdet=1.251e-12, det-sign=[-1]
+PASS matrix.rank_one_spectral_witness.L4 bump=1.0e-03, spectrum shift=2.140e-04
+PASS matrix.inverse_margin.L4 minimum |eigenvalue|=3.677e-02
+PASS matrix.eigenspace_resolution.L4 clusters=187, doublets=92, internal max=3.439e-14, external min=4.669e-03
+PASS probe.seed7180.orbit_distinct.L4 minimum raw orbit distance=20.967071
+PASS probe.seed7180.spectral_measure_fibres.L4 within L1 max=2.976e-10, cross L1 min=0.867442
+PASS probe.seed7180.rayleigh_fibres.L4 within max=1.852e-10, cross mean gap=0.005583
+PASS probe.seed7180.transfer_identity.L4 residual=4.441e-16, minimum average norm=15.957389
+PASS probe.seed7180.weighted_hull.L4 weighted residual=4.557e-14, hull=[-2.322488,27.197218], minimum margin=2.295591
+PASS probe.seed7180.regular_cover.L4 |S H|=24, distinct left translates=6
+PASS probe.seed7180.translate_symmetry_labels.L4 six translates represented by sextet labels=[1, 4, 9, 15, 18, 23]
+PASS probe.seed7180.translated_sources_distinct.L4 normalized distance min=1.098451, symmetry relation=1.094e-16
+PASS probe.seed7180.translated_spectral_measure.L4 measure L1 max=1.424e-10, Rayleigh spread=6.581e-11
+PASS probe.seed7180.individual_weight_basis_witness.L4 individual-weight L1=0.804475, rotation range=0.475653; eigenspace measure max=1.424e-10
+PASS probe.seed7180.nonregular_contrast.L4 translates=24, measure L1 max=1.310128, Rayleigh spread=0.517711
+PASS probe.seed7181.orbit_distinct.L4 minimum raw orbit distance=21.054429
+PASS probe.seed7181.spectral_measure_fibres.L4 within L1 max=3.074e-10, cross L1 min=0.883554
+PASS probe.seed7181.rayleigh_fibres.L4 within max=9.027e-11, cross mean gap=0.016597
+PASS probe.seed7181.transfer_identity.L4 residual=1.943e-16, minimum average norm=16.410165
+PASS probe.seed7181.weighted_hull.L4 weighted residual=5.351e-14, hull=[-2.322488,27.197218], minimum margin=2.193054
+PASS probe.seed7181.regular_cover.L4 |S H|=24, distinct left translates=6
+PASS probe.seed7181.translate_symmetry_labels.L4 six translates represented by sextet labels=[1, 4, 9, 15, 18, 23]
+PASS probe.seed7181.translated_sources_distinct.L4 normalized distance min=1.390780, symmetry relation=1.034e-16
+PASS probe.seed7181.translated_spectral_measure.L4 measure L1 max=1.954e-10, Rayleigh spread=1.266e-11
+PASS probe.seed7181.individual_weight_basis_witness.L4 individual-weight L1=0.763628, rotation range=0.399722; eigenspace measure max=1.954e-10
+PASS probe.seed7181.nonregular_contrast.L4 translates=24, measure L1 max=1.469382, Rayleigh spread=0.293054
+PASS census.fibre_representative.L4 maximum single-slot within-fibre residual=7.639e-10
+PASS census.classifier_margin.L4 close max=3.185e-10, separated min=1.826e-04
+PASS census.partition_count.L4 slots=279, patterns=15/15
+PASS census.finest_count.L4 finest-pattern slots=48
+PASS census.constant_slots.L4 constant slots=19, classes={5: 4, 9: 4, 11: 4, 13: 7}
+PASS census.deterministic_gaussian_sample.L4 finest=20/20, minimum pair gap=1.394e-03
+TOTAL: PASS=82 FAIL=0
+
+----- stderr -----
+

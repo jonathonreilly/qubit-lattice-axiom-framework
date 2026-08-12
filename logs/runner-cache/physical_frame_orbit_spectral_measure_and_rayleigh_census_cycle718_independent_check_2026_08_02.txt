@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/physical_frame_orbit_spectral_measure_and_rayleigh_census_cycle718_independent_check_2026_08_02.py
+runner_sha256: b4a12e68eefc5c415188730aeb10b058233f81a1554450898bfc9d30e6648b55
+input_fingerprint_sha256: 9dd1f5d431cc2280be5fc2b98f6b11099c7f09213b0bd065752e6dfaacdc45e0
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 4.81
+status: ok
+----- stdout -----
+PASS independent.group subgroups=30, regular=4, sextet=(1, 4, 9, 15, 18, 23)
+PASS independent.action.L3 anti-action=576/576, reversed=120/576
+PASS independent.conjugator.L3 correct=0.000e+00, reversed witness=4.000000
+PASS independent.matrix_fibres.L3 within=1.243e-10, cross minimum=4.000000
+PASS independent.eigenspaces.L3 clusters=66, doublets=32, internal=3.553e-14, external=1.278e-02
+PASS independent.orbit_measure.seed7180.L3 within=2.138e-10, cross=0.675699
+PASS independent.regular_coset.seed7180.L3 distance=1.011248, measure=3.505e-11, Rayleigh=2.810e-12
+PASS independent.basis_witness.seed7180.L3 individual-weight rotation range=0.657906
+PASS independent.orbit_measure.seed7181.L3 within=2.583e-10, cross=0.825577
+PASS independent.regular_coset.seed7181.L3 distance=0.976595, measure=1.029e-10, Rayleigh=1.822e-12
+PASS independent.basis_witness.seed7181.L3 individual-weight rotation range=0.470788
+PASS independent.census.L3 patterns=14, finest=0, classes={1: 2, 3: 2, 7: 2}, gaps=2.392e-11/4.287e-05
+PASS independent.spectral_mutation.L3 rank-one mutation shift=1.597e-04
+PASS independent.action.L4 anti-action=576/576, reversed=120/576
+PASS independent.conjugator.L4 correct=0.000e+00, reversed witness=4.000000
+PASS independent.matrix_fibres.L4 within=1.243e-10, cross minimum=4.000000
+PASS independent.eigenspaces.L4 clusters=187, doublets=92, internal=3.439e-14, external=4.669e-03
+PASS independent.orbit_measure.seed7180.L4 within=2.976e-10, cross=0.867442
+PASS independent.regular_coset.seed7180.L4 distance=1.098451, measure=1.424e-10, Rayleigh=6.581e-11
+PASS independent.basis_witness.seed7180.L4 individual-weight rotation range=0.475653
+PASS independent.orbit_measure.seed7181.L4 within=3.074e-10, cross=0.883554
+PASS independent.regular_coset.seed7181.L4 distance=1.390780, measure=1.954e-10, Rayleigh=1.266e-11
+PASS independent.basis_witness.seed7181.L4 individual-weight rotation range=0.399722
+PASS independent.census.L4 patterns=15, finest=48, classes={5: 4, 9: 4, 11: 4, 13: 7}, gaps=3.185e-10/1.826e-04
+PASS independent.spectral_mutation.L4 rank-one mutation shift=8.321e-05
+PASS independent.primary_receipt independent results agree with primary finite anchors
+TOTAL: PASS=26 FAIL=0
+
+----- stderr -----
+

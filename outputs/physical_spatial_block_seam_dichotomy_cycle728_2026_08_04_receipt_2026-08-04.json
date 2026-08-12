@@ -1,21 +1,27 @@
 {
-  "block_ceiling_certificate": {
-    "bound": 324,
-    "denominator": 12,
-    "denominator_law": {
-      "carried": 12,
-      "for_216": "even",
-      "for_324": "a multiple of four"
+  "audit_status_authority": "independent audit lane only",
+  "block": {
+    "attained_318_crossing_pieces": 31,
+    "attained_318_transposed_cost": 238,
+    "attained_witness_costs": [
+      216,
+      256,
+      318
+    ],
+    "ceiling_certificate": {
+      "bound": 324,
+      "denominator": 12,
+      "equality_pieces": 1200,
+      "least_slack": 0,
+      "numerator": 3888,
+      "point_orbits": 1080,
+      "points_per_orbit": 16
     },
-    "equality_pieces": 1200,
-    "least_slack": 0,
-    "pieces": 17280,
-    "value": 3888
+    "global_maximum_window": [
+      318,
+      324
+    ]
   },
-  "block_maximum_window": [
-    318,
-    324
-  ],
   "box": {
     "corners_block": 24,
     "corners_one_cell": 16,
@@ -33,23 +39,20 @@
       "6": 16
     }
   },
-  "bracket_one_cell": [
-    108,
-    128
-  ],
-  "bracket_seam_respecting": [
-    216,
-    256
-  ],
+  "carried_symmetry": {
+    "description": "proper-spatial block stabilizer times tick reversal",
+    "eligible_orbits": 23,
+    "exact_cover_orbit_triples": 0,
+    "group_order": 16,
+    "invariant_dissection_count": 0,
+    "orbit_size": [
+      16,
+      16
+    ],
+    "partial_symmetry_classification": "not attempted",
+    "piece_orbits": 1080
+  },
   "charges": {
-    "counting_bounds_spatial": [
-      144,
-      432
-    ],
-    "counting_bounds_transposed": [
-      144,
-      336
-    ],
     "long_axis_span_range": [
       0,
       4
@@ -61,11 +64,13 @@
       "3": 3040,
       "4": 2208
     },
-    "spatial_adjacency_range": [
+    "spatial_larger_on": 12208,
+    "spatial_range": [
       3,
       9
     ],
-    "spatial_adjacency_spectrum": {
+    "spatial_smaller_on": 1952,
+    "spatial_spectrum": {
       "3": 128,
       "4": 768,
       "5": 2816,
@@ -74,8 +79,6 @@
       "8": 2608,
       "9": 272
     },
-    "spatial_larger_on": 12208,
-    "spatial_smaller_on": 1952,
     "transposed_range": [
       3,
       7
@@ -88,113 +91,61 @@
       "7": 1872
     }
   },
+  "claim_type": "bounded_theorem",
   "gates": {
     "fail": 0,
     "pass": 65
   },
-  "measured_span": [
-    216,
-    318
-  ],
-  "no_symmetric_dissection": {
-    "covering_triples": 0,
-    "orbits_eligible": 23,
-    "orbits_excluded": 1057,
-    "orbits_in_a_symmetric_dissection": 3
+  "no_go_discipline": {
+    "n5_certificate": "five resolution lines in primary cached stdout",
+    "no_go_claim_shipped": false,
+    "scope": "two exact finite exclusions only",
+    "status": "PASS"
   },
-  "one_cell_certificates": {
-    "ceiling": {
+  "one_cell": {
+    "ceiling_certificate": {
+      "bound": 128,
       "denominator": 3,
       "equality_pieces": 944,
       "least_slack": 0,
-      "orbits": 24,
-      "pieces": 2672,
-      "value": "128.000000",
-      "weight_total": 16
+      "numerator": 384
     },
-    "floor": {
+    "exact_bracket": [
+      108,
+      128
+    ],
+    "floor_certificate": {
+      "bound": 108,
       "denominator": 2,
       "equality_pieces": 1984,
       "least_slack": 0,
-      "orbits": 24,
-      "pieces": 2672,
-      "value": "108.000000",
-      "weight_total": 9
-    }
+      "numerator": 216
+    },
+    "point_orbits": 57,
+    "points_per_orbit": 48
   },
-  "sample_points": {
-    "barycentric_bound": 6,
-    "boundary_incidences": 0,
-    "distinct_membership_rows": 1060,
-    "one_cell_boundary_incidences": 0,
-    "one_cell_points": 2736,
-    "points": 17280,
-    "points_per_orbit": 16,
-    "weight_spread_block": "1.142857",
-    "weight_spread_one_cell": "1.285595"
-  },
-  "seam_split": {
-    "least_charge_confined": 3,
-    "least_charge_crossing": 5,
-    "seam_crossing": 11936,
-    "slab_confined": 5344,
-    "slab_confined_spectrum": {
-      "3": 128,
-      "4": 768,
-      "5": 2304,
-      "6": 1536,
-      "7": 608
-    }
-  },
-  "symmetry": {
-    "group_order": 16,
-    "one_cell_group_order": 48,
-    "one_cell_piece_orbits": 57,
-    "orbit_size": 16,
-    "piece_orbits": 1080,
-    "proper_cubic_rotations": 24,
-    "rotations_keeping_the_block": 8
-  },
-  "trivial_counting_bounds": [
-    144,
-    432
-  ],
-  "two_charges": {
-    "on_the_dear_block_dissection": [
-      318,
-      238
-    ],
-    "on_the_dear_one_cell_dissection": [
-      128,
-      116
-    ],
-    "on_the_stacked_stencil": [
+  "schema": "physical-spatial-block-seam-dichotomy-cycle728-v2",
+  "seam": {
+    "crossing_pieces": 11936,
+    "global_floor_status": "open; 216 is an attained value only",
+    "least_confined_piece_charge": 3,
+    "least_crossing_piece_charge": 5,
+    "seam_respecting_exact_bracket": [
       216,
-      216
-    ]
+      256
+    ],
+    "slab_confined_pieces": 5344
   },
-  "witnesses": {
-    "seam_crossing_greatest": {
-      "charge": 318,
-      "piece_pairs": 1128,
-      "pieces": 48,
-      "seam_crossings": 31,
-      "separating_normals": 1128,
-      "transposed_charge": 238
-    },
-    "seam_respecting_greatest": {
-      "charge": 256,
-      "piece_pairs": 1128,
-      "pieces": 48,
-      "seam_crossings": 0,
-      "separating_normals": 1128
-    },
-    "seam_respecting_least": {
-      "charge": 216,
-      "piece_pairs": 1128,
-      "pieces": 48,
-      "seam_crossings": 0,
-      "separating_normals": 1128
-    }
+  "status": "pass",
+  "supplied_model": {
+    "physical_simplex_identification_bridge": "open",
+    "physical_tick_admissibility_bridge": "open",
+    "piece_class": "five-corner normalized-volume-one simplices",
+    "spatial_shape": [
+      2,
+      1,
+      1
+    ],
+    "tick_extent": 1
   }
 }

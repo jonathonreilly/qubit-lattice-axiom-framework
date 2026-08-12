@@ -1,0 +1,85 @@
+{
+  "fail": 0,
+  "global_floor_status": "open; 216 independently confirmed as attained",
+  "global_maximum_window": [
+    318,
+    324
+  ],
+  "pass": 15,
+  "primary_sample_chamber": {
+    "boundary_incidences": 0,
+    "eligible_orbits": 23,
+    "exact_cover_triples": 0,
+    "points": 17280
+  },
+  "results": {
+    "hostile block-ceiling constant mutation": {
+      "detail": "lowering the carried ceiling constant by one violates an exact piece inequality",
+      "ok": true
+    },
+    "hostile one-cell certificate mutations": {
+      "detail": "one-unit strengthening crosses both zero-slack certificate surfaces",
+      "ok": true
+    },
+    "hostile witness duplication mutation": {
+      "detail": "duplicating one simplex destroys pairwise interior disjointness",
+      "ok": true
+    },
+    "independent block ceiling certificate reconstruction": {
+      "detail": "boundary=0 least_slack=0 bound=324",
+      "ok": true
+    },
+    "independent carried group and orbit reconstruction": {
+      "detail": "group=16 orbits=1080 size=16",
+      "ok": true
+    },
+    "independent charge ranges": {
+      "detail": "spatial=3..9 transposed=3..7 span=0..4",
+      "ok": true
+    },
+    "independent exact volume spectrum": {
+      "detail": "[(0, 13152), (1, 17280), (2, 9840), (3, 1472), (4, 680), (5, 64), (6, 16)]",
+      "ok": true
+    },
+    "independent exact witness reconstruction": {
+      "detail": "all three carried 48-piece families are exact interior-disjoint covers",
+      "ok": true
+    },
+    "independent invariant-cover census in primary sample chamber": {
+      "detail": "eligible=23 exact_cover_triples=0",
+      "ok": true
+    },
+    "independent one-cell certificate reconstruction": {
+      "detail": "zero boundaries and exact certificate bracket [108,128]",
+      "ok": true
+    },
+    "independent seam split": {
+      "detail": "confined=5344 crossing=11936 least charges=3/5",
+      "ok": true
+    },
+    "independent subset and minimal-piece census": {
+      "detail": "subsets=42504 block_minimal=17280 cell_minimal=2672",
+      "ok": true
+    },
+    "independent witness charges and seam counts": {
+      "detail": "spatial=216/256/318 transposed(318)=238 crossings(318)=31",
+      "ok": true
+    },
+    "seam-maximizer exclusion inequality": {
+      "detail": "attained 318 exceeds the independently reconstructed seam-respecting ceiling 256",
+      "ok": true
+    },
+    "second-chamber invariant-cover reconstruction": {
+      "detail": "boundary=0 eligible=23 exact_cover_triples=0",
+      "ok": true
+    }
+  },
+  "schema": "physical-spatial-block-seam-dichotomy-cycle728-independent-v1",
+  "second_sample_chamber": {
+    "boundary_incidences": 0,
+    "eligible_orbits": 23,
+    "exact_cover_triples": 0,
+    "points": 17280
+  },
+  "status": "pass"
+}

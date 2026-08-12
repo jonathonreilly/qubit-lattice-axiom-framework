@@ -1,3 +1,12 @@
+===== runner cache v1 =====
+runner: scripts/physical_spatial_block_seam_dichotomy_cycle728_2026_08_04.py
+runner_sha256: fce22ea4f8f18b7ba8f02b2dc372b2dc9e67d0cb35d28bc8f1e1a4a454b4935b
+input_fingerprint_sha256: 93c8aa6a40d78054ddcec0361927c558c3b0373330c4b397157237829ff9cf1b
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 5.10
+status: ok
+----- stdout -----
 2 by 1 by 1 spatial block: two lattice cells side by side, carried through one tick
 PASS corner count  block 24 one cell 16
 PASS five-subset census  subsets 42504
@@ -59,10 +68,10 @@ PASS seam-respecting cost bracket  between 216 and 256, from the certified one-c
 PASS least-charge stacked dissection  48 unit pieces, 1128 of 1128 pairs separated, charge 216, span zero
 PASS greatest seam-respecting dissection  48 unit pieces, 1128 of 1128 pairs separated, charge 256, span zero
 the dissection that refuses the seam
-PASS greatest-charge witness is a dissection  48 pieces, every one of volume one, volumes summing to the box
-PASS greatest-charge witness pieces are pairwise interior-disjoint  1128 of 1128 pairs separated
-PASS greatest-charge witness charge  spatial 318, transposed 238
-PASS greatest-charge witness crosses the seam  31 of its 48 pieces
+PASS 318-charge witness is a dissection  48 pieces, every one of volume one, volumes summing to the box
+PASS 318-charge witness pieces are pairwise interior-disjoint  1128 of 1128 pairs separated
+PASS 318-charge witness charge  spatial 318, transposed 238
+PASS 318-charge witness crosses the seam  31 of its 48 pieces
 PASS the dearest dissection cannot respect the seam  318 above the seam-respecting ceiling 256
 PASS block ceiling holds on every piece  least slack 0, equality on 1200 of 17280
 PASS certified block ceiling  3888 over 12 is 324, and the witness reaches 318
@@ -73,4 +82,13 @@ PASS the stencil uses every ordering of the four coordinates  the long spatial a
 PASS so the two charges agree on the stacked stencil  one cell 108 both ways, stacked 216 against 216
 PASS the dear one-cell dissection has no such symmetry  the swap moves it, and its charges read 128 against 116
 PASS measured span of the cost  216 at the least found and 318 at the greatest found, inside 144 and 432
+per_element: checked -- all 17,280 minimal block pieces and all 2,672 one-cell pieces enter the exact charge and certificate inequalities
+per_site: checked -- the supplied one-cell and two-cell coordinate boxes only; no physical assembly-cell identification is executed
+per_mode: checked and not executed -- this finite corner-dissection model has no momentum, spectral, or field-mode decomposition
+per_block: checked -- exact carried witnesses, the 1,080 piece-orbit certificate, and all invariant-orbit triples on the supplied block
+lattice_wide: checked and not executed -- no arbitrary-box, repeated-block, thermodynamic, or continuum negative is asserted by this package
+RECEIPT {"audit_status_authority": "independent audit lane only", "block": {"attained_318_crossing_pieces": 31, "attained_318_transposed_cost": 238, "attained_witness_costs": [216, 256, 318], "ceiling_certificate": {"bound": 324, "denominator": 12, "equality_pieces": 1200, "least_slack": 0, "numerator": 3888, "point_orbits": 1080, "points_per_orbit": 16}, "global_maximum_window": [318, 324]}, "box": {"corners_block": 24, "corners_one_cell": 16, "five_corner_subsets": 42504, "minimal_pieces_block": 17280, "minimal_pieces_one_cell": 2672, "pieces_per_dissection": 48, "volume_spectrum": {"0": 13152, "1": 17280, "2": 9840, "3": 1472, "4": 680, "5": 64, "6": 16}}, "carried_symmetry": {"description": "proper-spatial block stabilizer times tick reversal", "eligible_orbits": 23, "exact_cover_orbit_triples": 0, "group_order": 16, "invariant_dissection_count": 0, "orbit_size": [16, 16], "partial_symmetry_classification": "not attempted", "piece_orbits": 1080}, "charges": {"long_axis_span_range": [0, 4], "long_axis_span_spectrum": {"0": 5344, "1": 1744, "2": 4944, "3": 3040, "4": 2208}, "spatial_larger_on": 12208, "spatial_range": [3, 9], "spatial_smaller_on": 1952, "spatial_spectrum": {"3": 128, "4": 768, "5": 2816, "6": 4928, "7": 5760, "8": 2608, "9": 272}, "transposed_range": [3, 7], "transposed_spectrum": {"3": 432, "4": 2592, "5": 7488, "6": 4896, "7": 1872}}, "claim_type": "bounded_theorem", "gates": {"fail": 0, "pass": 65}, "no_go_discipline": {"n5_certificate": "five resolution lines in primary cached stdout", "no_go_claim_shipped": false, "scope": "two exact finite exclusions only", "status": "PASS"}, "one_cell": {"ceiling_certificate": {"bound": 128, "denominator": 3, "equality_pieces": 944, "least_slack": 0, "numerator": 384}, "exact_bracket": [108, 128], "floor_certificate": {"bound": 108, "denominator": 2, "equality_pieces": 1984, "least_slack": 0, "numerator": 216}, "point_orbits": 57, "points_per_orbit": 48}, "schema": "physical-spatial-block-seam-dichotomy-cycle728-v2", "seam": {"crossing_pieces": 11936, "global_floor_status": "open; 216 is an attained value only", "least_confined_piece_charge": 3, "least_crossing_piece_charge": 5, "seam_respecting_exact_bracket": [216, 256], "slab_confined_pieces": 5344}, "status": "pass", "supplied_model": {"physical_simplex_identification_bridge": "open", "physical_tick_admissibility_bridge": "open", "piece_class": "five-corner normalized-volume-one simplices", "spatial_shape": [2, 1, 1], "tick_extent": 1}}
 TOTAL: PASS=65 FAIL=0
+
+----- stderr -----
+

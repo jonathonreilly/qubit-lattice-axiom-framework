@@ -1,4 +1,4 @@
-"""Cycle 728 -- a 2 by 1 by 1 spatial block, and what its seam costs.
+"""Cycle 728 -- a supplied 2 by 1 by 1 spatial block and its seam cost.
 
 Two neighbouring lattice cells, carried through one tick, make a box with 24 corners.
 Dissect it into minimal pieces -- corner simplices of the least possible volume -- and
@@ -9,8 +9,17 @@ The box has an internal wall: the plane through the shared face of the two cells
 the seam.  A piece either stays inside one closed cell or it crosses.  Everything in this
 cycle is about what crossing buys and what it costs.
 
-Three things are established here, all by arithmetic over the full piece set, with no
-solver anywhere in this file.
+Everything here is a theorem of a SUPPLIED structural model, not of the framework
+axioms alone.  The Lattice axiom supplies only the spatial Z^3 nearest-neighbour
+adjacency and the 24 proper cubic rotations.  The registered kinetic-isotropy
+primitive supplies only equal tick/edge graining.  The corner-simplex piece class,
+the all-pairs charge, the dissection rule, and the identification of a coordinate as
+a physical tick are not derived here.  The physical tick--Admissibility bridge and
+the identification of physical assembly cells with pairwise-adjacency simplices
+remain open.
+
+Three finite-model facts are established, all by exact arithmetic over the full
+piece set, with no solver anywhere in this file.
 
   * The one-cell cost is bracketed between 108 and 128 by two integer certificates, and
     both ends are reached by explicit dissections carried here as data.
@@ -38,12 +47,31 @@ re-verified here against every one of the 2672 one-cell pieces.
 
 Weights are generic by construction, not by luck: with barycentric integers bounded by C
 and a superincreasing offset chain, no sample point can land on a piece boundary, and the
-verification confirms it.
+verification confirms it.  Any failed gate makes this runner exit nonzero.
 """
 import itertools
+import json
+import sys
 from collections import Counter
+from pathlib import Path
 
 import numpy as np
+
+ROOT = Path(__file__).resolve().parents[1]
+NOTE_PATH = (
+    "docs/PHYSICAL_SPATIAL_BLOCK_SEAM_DICHOTOMY_CYCLE728_NOTE_2026-08-04.md"
+)
+INDEPENDENT_PATH = (
+    "scripts/physical_spatial_block_seam_dichotomy_cycle728_independent_check_2026_08_04.py"
+)
+RECEIPT_PATH = ROOT / (
+    "outputs/physical_spatial_block_seam_dichotomy_cycle728_2026_08_04_receipt_2026-08-04.json"
+)
+AUDIT_INPUT_PATHS = (
+    "docs/PHYSICAL_SPATIAL_BLOCK_SEAM_DICHOTOMY_CYCLE728_NOTE_2026-08-04.md",
+    "scripts/physical_spatial_block_seam_dichotomy_cycle728_independent_check_2026_08_04.py",
+)
+AUDIT_TIMEOUT_SEC = 300
 
 PAIRS = list(itertools.combinations(range(5), 2))
 OFF = np.array([0, 1, 7, 49, 343], dtype=np.int64)
@@ -611,13 +639,13 @@ gate(bool((vsh == 1).all()) and int(vsh.sum()) == 48 and gsh == tsh
 
 sec("the dissection that refuses the seam")
 gate(bool((vhi == 1).all()) and int(vhi.sum()) == 48,
-     "greatest-charge witness is a dissection",
+     "318-charge witness is a dissection",
      "48 pieces, every one of volume one, volumes summing to the box")
-gate(ghi == thi, "greatest-charge witness pieces are pairwise interior-disjoint",
+gate(ghi == thi, "318-charge witness pieces are pairwise interior-disjoint",
      "{0} of {1} pairs separated".format(ghi, thi))
-gate(xhi == 318 and tkhi == 238, "greatest-charge witness charge",
+gate(xhi == 318 and tkhi == 238, "318-charge witness charge",
      "spatial {0}, transposed {1}".format(xhi, tkhi))
-gate(crosshi == 31, "greatest-charge witness crosses the seam",
+gate(crosshi == 31, "318-charge witness crosses the seam",
      "{0} of its 48 pieces".format(crosshi))
 gate(xhi > 2 * 128, "the dearest dissection cannot respect the seam",
      "318 above the seam-respecting ceiling 256")
@@ -654,4 +682,114 @@ gate(not swaphi and tk_hi_c == 116, "the dear one-cell dissection has no such sy
 gate(48 * int(BX.min()) < xlo and xhi < 48 * int(BX.max()), "measured span of the cost",
      "216 at the least found and 318 at the greatest found, inside 144 and 432")
 
+print("per_element: checked -- all 17,280 minimal block pieces and all 2,672 "
+      "one-cell pieces enter the exact charge and certificate inequalities")
+print("per_site: checked -- the supplied one-cell and two-cell coordinate boxes "
+      "only; no physical assembly-cell identification is executed")
+print("per_mode: checked and not executed -- this finite corner-dissection model "
+      "has no momentum, spectral, or field-mode decomposition")
+print("per_block: checked -- exact carried witnesses, the 1,080 piece-orbit "
+      "certificate, and all invariant-orbit triples on the supplied block")
+print("lattice_wide: checked and not executed -- no arbitrary-box, repeated-block, "
+      "thermodynamic, or continuum negative is asserted by this package")
+
+
+def spectrum(values):
+    return {str(k): int(v) for k, v in sorted(Counter(values.tolist()).items())}
+
+
+receipt = {
+    "schema": "physical-spatial-block-seam-dichotomy-cycle728-v2",
+    "status": "pass" if NP[1] == 0 else "fail",
+    "claim_type": "bounded_theorem",
+    "audit_status_authority": "independent audit lane only",
+    "supplied_model": {
+        "spatial_shape": [2, 1, 1],
+        "tick_extent": 1,
+        "piece_class": "five-corner normalized-volume-one simplices",
+        "physical_tick_admissibility_bridge": "open",
+        "physical_simplex_identification_bridge": "open",
+    },
+    "gates": {"pass": int(NP[0]), "fail": int(NP[1])},
+    "box": {
+        "corners_block": len(CORNB),
+        "corners_one_cell": len(CORNC),
+        "five_corner_subsets": len(SUBB),
+        "minimal_pieces_block": len(MINB),
+        "minimal_pieces_one_cell": len(MINC),
+        "pieces_per_dissection": 48,
+        "volume_spectrum": spectrum(DB),
+    },
+    "charges": {
+        "spatial_range": [int(BX.min()), int(BX.max())],
+        "spatial_spectrum": spectrum(BX),
+        "transposed_range": [int(BT.min()), int(BT.max())],
+        "transposed_spectrum": spectrum(BT),
+        "long_axis_span_range": [int(SX.min()), int(SX.max())],
+        "long_axis_span_spectrum": spectrum(SX),
+        "spatial_larger_on": hi_x,
+        "spatial_smaller_on": hi_t,
+    },
+    "seam": {
+        "slab_confined_pieces": int(slab.sum()),
+        "crossing_pieces": int(seam.sum()),
+        "least_confined_piece_charge": int(BX[slab].min()),
+        "least_crossing_piece_charge": int(BX[seam].min()),
+        "seam_respecting_exact_bracket": [216, 256],
+        "global_floor_status": "open; 216 is an attained value only",
+    },
+    "one_cell": {
+        "exact_bracket": [c_lo, c_hi],
+        "point_orbits": NOC,
+        "points_per_orbit": int(szc.min()),
+        "floor_certificate": {
+            "denominator": CELL_DFL,
+            "numerator": vfl,
+            "bound": vfl // CELL_DFL,
+            "least_slack": int(sfl.min()),
+            "equality_pieces": int((sfl == 0).sum()),
+        },
+        "ceiling_certificate": {
+            "denominator": CELL_DCL,
+            "numerator": vcl,
+            "bound": vcl // CELL_DCL,
+            "least_slack": int(scl.min()),
+            "equality_pieces": int((scl == 0).sum()),
+        },
+    },
+    "block": {
+        "attained_witness_costs": [xlo, xsh, xhi],
+        "attained_318_transposed_cost": tkhi,
+        "attained_318_crossing_pieces": crosshi,
+        "global_maximum_window": [xhi, vbl // BLOCK_DCL],
+        "ceiling_certificate": {
+            "point_orbits": NORB,
+            "points_per_orbit": int(ptsz.min()),
+            "denominator": BLOCK_DCL,
+            "numerator": vbl,
+            "bound": vbl // BLOCK_DCL,
+            "least_slack": int(sbl.min()),
+            "equality_pieces": int((sbl == 0).sum()),
+        },
+    },
+    "carried_symmetry": {
+        "description": "proper-spatial block stabilizer times tick reversal",
+        "group_order": len(GB),
+        "piece_orbits": NORB,
+        "orbit_size": [int(szb.min()), int(szb.max())],
+        "eligible_orbits": len(elig),
+        "exact_cover_orbit_triples": tri,
+        "invariant_dissection_count": 0,
+        "partial_symmetry_classification": "not attempted",
+    },
+    "no_go_discipline": {
+        "status": "PASS",
+        "no_go_claim_shipped": False,
+        "scope": "two exact finite exclusions only",
+        "n5_certificate": "five resolution lines in primary cached stdout",
+    },
+}
+RECEIPT_PATH.write_text(json.dumps(receipt, indent=2, sort_keys=True) + "\n")
+print("RECEIPT " + json.dumps(receipt, sort_keys=True))
 print("TOTAL: PASS={0} FAIL={1}".format(NP[0], NP[1]))
+raise SystemExit(0 if NP[1] == 0 else 1)

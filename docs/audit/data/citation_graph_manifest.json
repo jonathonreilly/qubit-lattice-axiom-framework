@@ -1,6 +1,6 @@
 {
- "edge_count": 15556,
- "node_count": 5470,
+ "edge_count": 15559,
+ "node_count": 5471,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -13744,6 +13744,10 @@
   },
   "physical_level_set_orbit_law_improper_center_identity_cycle719_note_2026-08-02": {
    "deps_hash": "d08d4f40dfe2",
+   "out_degree": 3
+  },
+  "physical_local_extremality_rule_cell_cycle730_note_2026-08-04": {
+   "deps_hash": "d0f4f46d2a8f",
    "out_degree": 3
   },
   "physical_m2_endpoint_instrument_cycle704_cycle612_bridge_cycle713_bounded_theorem_note_2026-07-26": {

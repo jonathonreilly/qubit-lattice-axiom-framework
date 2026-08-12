@@ -272,24 +272,32 @@ Negative assertion class: `derived_no_go_boundary`. The only exclusion is the
 minimum-support bound for six fixed algebraic functions on one supplied finite
 15,800-row, 192-column GF(2) incidence system.
 
-- **N1 — five normalized attack families.** (1) `ATTEMPTED`: the primary's
-  quarter/eighth meet-in-the-middle formulation enumerates every licensed cell
-  and scheduled split at weights through twelve; all six targets return zero.
-  (2) `ATTEMPTED`: the independent checker uses an opposite exact-cover pivot,
-  independent row basis, CNF XOR encoding, exact-cardinality totalizer, and
-  CaDiCaL; all six exact-weight-twelve questions are UNSAT. (3) `ATTEMPTED`:
-  whole-support row-space parity independently excludes every odd cardinality.
-  (4) `ATTEMPTED`: canonical row/order/function hashes attack the wrong-target
-  route and bind the searched bytes to Cycle 737. (5) `ATTEMPTED`: hostile
-  skip, planted-SAT, target-bit, dependency, and failed-verdict mutations attack
-  completeness accounting and fail-closed evidence transport. These families
-  differ in formulation, invariant, and terminal obligation; they are not
-  alternate descriptions of one implementation.
+- **N1 — five normalized attack routes.** (1) `ATTEMPTED`: direct exhaustive
+  support enumeration at sizes 2, 4, 6, and 8 attacks the bound below ten; the
+  Cycle 739 primary rerun and the hash-bound [Cycle 737](PHYSICAL_CELL_CUTTING_LEAST_COMPUTING_SETS_CYCLE737_NOTE_2026-08-05.md)
+  evidence find none of the six readings. (2) `ATTEMPTED`: a separately planned
+  exact-weight-ten meet search attacks the next even size; the primary rerun and
+  hash-bound [Cycle 738](PHYSICAL_CELL_CUTTING_SIZE_TEN_FRONTIER_CYCLE738_NOTE_2026-08-05.md)
+  evidence return zero. (3) `ATTEMPTED`: the quarter/eighth
+  meet-in-the-middle search attacks exact weight twelve and executes all 1,167
+  scheduled splits; all six return zero. (4) `ATTEMPTED`: an opposite-pivot
+  reconstruction plus independent row basis, CNF XOR encoding, exact-cardinality
+  totalizer, and CaDiCaL attacks exact weight twelve without the primary meet
+  engine; all six formulas are UNSAT. (5) `ATTEMPTED`: the whole-support
+  row-space parity identity attacks every odd cardinality at once; each target
+  has even total parity while every used column has odd total parity. These are
+  distinct cardinality/formulation routes, not five phrasings of one search.
 - **N2 — condition independence.** The conditions are `F`, the supplied finite
   model/population; `R`, the six fixed reading identities; and `K`, support
-  cardinality at most twelve. Closing or changing any one does not close either
-  other: `F↛R`, `R↛F`, `F↛K`, `K↛F`, `R↛K`, and `K↛R`. None is collapsed or
-  presented as an independent physical wall.
+  cardinality at most twelve.
+
+  | pair | first closes second? | second closes first? | independent? |
+  | --- | --- | --- | --- |
+  | `F`, `R` | no | no | yes |
+  | `F`, `K` | no | no | yes |
+  | `R`, `K` | no | no | yes |
+
+  None is collapsed or presented as an independent physical wall.
 - **N3 — hidden-condition scan.** “Supplied,” “fixed,” “canonical ordering,”
   and the search construction are load-bearing and are stated explicitly. The
   one-box domain, corner-simplex class, minimum-cost population, GF(2) reading,
@@ -297,12 +305,17 @@ minimum-support bound for six fixed algebraic functions on one supplied finite
   searched cardinality are all named. “Canonical” means the receipt-bound
   finite column order, not framework selection. No hidden framework premise is
   used.
-- **N4 — residual matching.** Cycle 737 supplies exactly the same population,
-  column order, six function identities, and complete exclusion through size
-  eight. Cycle 738 supplies exactly the same targets' exact-weight-ten UNSAT.
-  Cycle 739 adds exact-weight-twelve UNSAT and the same whole-support even-parity
-  certificate. The receipt hashes and canonical function hashes enforce these
-  residual matches; no broader no-go is cited.
+- **N4 — residual matching.** No older no-go is used as authority. The two
+  bounded predecessor results are matched as follows:
+
+  | cited witness | witness residual | residual consumed here | match? |
+  | --- | --- | --- | --- |
+  | [Cycle 737](PHYSICAL_CELL_CUTTING_LEAST_COMPUTING_SETS_CYCLE737_NOTE_2026-08-05.md) | same finite population/order/functions, no support through 8 | exclude even sizes through 8 | yes |
+  | [Cycle 738](PHYSICAL_CELL_CUTTING_SIZE_TEN_FRONTIER_CYCLE738_NOTE_2026-08-05.md) | same functions, exact-weight-10 UNSAT | exclude size 10 | yes |
+
+  Cycle 739 adds exact-weight-twelve UNSAT and the same whole-support
+  even-parity certificate. Receipt and canonical function hashes enforce these
+  exact matches; no broader residual is cited.
 - **N5 — rhetoric audit.** The canonical primary cache lands substantive
   `per_element`, `per_site`, `per_mode`, `per_block`, and `lattice_wide`
   execution lines. The theorem is checked per element and on the full supplied

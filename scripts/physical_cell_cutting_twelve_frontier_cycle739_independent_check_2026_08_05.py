@@ -13,6 +13,7 @@ import copy
 import hashlib
 import itertools
 import json
+import math
 import sys
 from pathlib import Path
 
@@ -565,6 +566,43 @@ gate(len(quarter_kernel) == 14 and distribution == expected_distribution,
      "independent.quarter_kernel",
      "the first-quarter dimension-14 kernel and complete weight distribution agree")
 
+
+def independent_split_inventory():
+    """Reconstruct the exact size-twelve schedule without the primary planner."""
+    descriptors = []
+    for q0 in range(13):
+        for q1 in range(13 - q0):
+            for q2 in range(13 - q0 - q1):
+                q3 = 12 - q0 - q1 - q2
+                cell = (q0, q1, q2, q3)
+                # At size twelve, the bound readings license exactly the cells
+                # with even left-half parity; total parity makes Q2/Q3 agree.
+                if (q0 + q1) & 1:
+                    continue
+                profile = list(cell)
+                if max(profile) <= 6:
+                    best = max(
+                        range(4), key=lambda index: (math.comb(48, profile[index]), -index)
+                    )
+                    descriptors.append((cell, ("Q", best, profile[best])))
+                    continue
+                block = max(range(4), key=lambda index: (profile[index], -index))
+                for first_weight in range(profile[block] + 1):
+                    second_weight = profile[block] - first_weight
+                    even, odd = 2 * block, 2 * block + 1
+                    if math.comb(24, first_weight) >= math.comb(24, second_weight):
+                        streamed = ("E", even, first_weight)
+                    else:
+                        streamed = ("E", odd, second_weight)
+                    descriptors.append((cell, streamed))
+    return descriptors
+
+
+expected_inventory = independent_split_inventory()
+expected_inventory_sha256 = hashlib.sha256(
+    json.dumps(expected_inventory, separators=(",", ":")).encode("utf-8")
+).hexdigest()
+
 gate(
     PRIMARY_RECEIPT.get("schema") == "physical-cell-cutting-twelve-frontier-cycle739-v2"
     and PRIMARY_RECEIPT.get("status") == "pass"
@@ -575,6 +613,10 @@ gate(
     and PRIMARY_RECEIPT.get("complete_search_at_twelve", {}).get(
         "execution_inventory_exact"
     ) is True
+    and len(expected_inventory) == 1167
+    and PRIMARY_RECEIPT.get("complete_search_at_twelve", {}).get(
+        "execution_inventory_sha256"
+    ) == expected_inventory_sha256
     and input_contract_ok(
         PRIMARY_RECEIPT,
         (
@@ -664,6 +706,7 @@ receipt = {
     "exact_weight_twelve_answers": answers,
     "certificate_tree": tree,
     "quarter_kernel_weight_distribution": distribution,
+    "independent_execution_inventory_sha256": expected_inventory_sha256,
     "gates": {
         "pass": passed,
         "fail": failed,

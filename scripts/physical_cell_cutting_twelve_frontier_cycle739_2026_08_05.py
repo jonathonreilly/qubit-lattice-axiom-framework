@@ -1166,6 +1166,9 @@ def cells_of(m):
 SEEN = {}
 PROCD = []
 EXPECTED = []
+EXPECTED_INVENTORY_SHA256 = (
+    "b0216889b4a71c1dd5e1c6e4b64d86870f7338a5ddab6ca47472f06879b43df5"
+)
 
 
 def run_sweep(m, tids):
@@ -1534,6 +1537,9 @@ OK12 = run_sweep(12, TIDS)
 C12 = [CNT.get(t, 0) for t in TIDS]
 V12 = verify(TIDS)
 COV, NSPL, NEXP, EXOK = coverage(12, TIDS)
+INVENTORY_SHA256 = hashlib.sha256(
+    json.dumps(EXPECTED, separators=(",", ":")).encode("utf-8")
+).hexdigest()
 LIC12 = [lic_count(12, t) for t in TIDS]
 PREC = [has_set(NT + pi, PIECES[pi]) for pi in range(5)]
 W12OK = sum(1 for m in M0 if bin(m).count("1") == 12 and has_set(0, cols_of(m)))
@@ -1553,7 +1559,8 @@ for t in sorted(ORB12):
         emit("m=12 orbits {0} {1} {2}".format(TNAME[t], cshow(ORB12[t][1]),
                                               dshow(ORB12[t][0])))
 emit("m=12 orbits all of size 1 for readings " + vshow(SNG))
-gate(COV == LIC12 and NSPL == NEXP == 1167 and EXOK, "G29",
+gate(COV == LIC12 and NSPL == NEXP == 1167 and EXOK
+     and INVENTORY_SHA256 == EXPECTED_INVENTORY_SHA256, "G29",
      "every licensed cell at twelve is met once per target, {0} per even and {1} per "
      "odd quarter reading, and all {2} scheduled splits execute exactly once".format(
          LIC12[0], LIC12[8], NSPL))
@@ -1680,6 +1687,7 @@ receipt = {
         "scheduled_splits": NEXP,
         "executed_splits": NSPL,
         "execution_inventory_exact": EXOK,
+        "execution_inventory_sha256": INVENTORY_SHA256,
         "verified_returns": V12[0],
         "mismatched_returns": V12[1],
         "duplicate_returns": V12[2],

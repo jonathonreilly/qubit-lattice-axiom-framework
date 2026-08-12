@@ -1,6 +1,6 @@
 {
- "edge_count": 15753,
- "node_count": 5500,
+ "edge_count": 15755,
+ "node_count": 5501,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -541,6 +541,10 @@
   "admissibility_rule_covariance_extension_classification_openness_achiral_oriented_frame_minimal_chiral_channel_bounded_theorem_note_2026-07-03": {
    "deps_hash": "d69dd5ba8c7f",
    "out_degree": 4
+  },
+  "admissibility_sector_grading_full_projective_stratification_positive_selector_axiom_boundary_bounded_theorem_note_2026-08-12": {
+   "deps_hash": "5514fb4a818c",
+   "out_degree": 2
   },
   "admissibility_sourced_regge_flat_gauge_quotient_ward_completion_boundary_bounded_theorem_note_2026-08-10": {
    "deps_hash": "2dda77e3330a",

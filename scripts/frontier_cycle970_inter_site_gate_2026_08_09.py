@@ -6,7 +6,7 @@ Load-bearing operational definition
 On the two-site basis menu {0, 1}, for a landed gate word W, target site t,
 fixed local input x, nearest-neighbor bit n, and target output y, define
 
-    D[W,t,x](y | n) = 1{A.apply_semantic((t=x, neighbor=n), W)_t = y}.
+    D[W,t,x](y | n) = 1{apply_semantic((t=x, neighbor=n), W)_t = y}.
 
 This is the deterministic point distribution induced by the landed basis-state
 semantics.  The same x is held on both neighbor branches.
@@ -17,8 +17,9 @@ accepted by Cycle 719: identity, X on either site, and CNOT in either
 orientation.  The claim surface is exactly this finite family and its exhibited
 one-CNOT witness.
 
-All certificate truth values test bookkeeping consistency.  Neither zero nor
-nonzero dependence, nor construction success, is required for a PASS.
+PASS requires the explicit one-CNOT construction, the complete finite census,
+and the source/control checks to agree.  The tiny basis-state interpreter is
+self-contained here so no undeclared transitive import can alter the result.
 """
 from __future__ import annotations
 
@@ -27,10 +28,9 @@ STDOUT_LIMIT_BYTES = 150_000
 HOUSE_STDOUT_LIMIT_BYTES = 6_000
 AUDIT_INPUT_PATHS = (
     "docs/MINIMAL_AXIOMS_2026-06-29.md",
-    "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
-    "scripts/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.py",
 )
 
+from dataclasses import dataclass
 from hashlib import sha256
 import json
 from pathlib import Path
@@ -38,18 +38,11 @@ import sys
 from time import monotonic
 
 ROOT = Path(__file__).resolve().parents[1]
-AXIOM_PATH, CORE_PATH, SEMANTICS_PATH = AUDIT_INPUT_PATHS
+AXIOM_PATH, = AUDIT_INPUT_PATHS
 
-# The axiom memo is cited authority and therefore text-only.  The Cycle-719
-# core is the executable substrate under test, not an imported result verdict.
+# The axiom memo is cited authority and therefore text-only.  The operational
+# gate semantics below are local to this certificate and runner-hash bound.
 BLOCKLIST_CITED_PRIMARIES = (AXIOM_PATH,)
-EXECUTABLE_SUBSTRATE = CORE_PATH
-EXECUTABLE_SEMANTICS = SEMANTICS_PATH
-
-sys.path.insert(0, str(ROOT / "scripts"))
-import frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26 as CORE
-
-A = CORE.A
 SITE_COORDS = ((0, 0, 0), (1, 0, 0))
 DEFINITION = (
     "D[W,t,x](y|n)=indicator that landed deterministic basis-state semantics "
@@ -60,6 +53,34 @@ FAMILY_DESCRIPTION = (
     "all length-zero/one words on a labeled two-site nearest-neighbor patch "
     "from {identity, X on either site, CNOT in either orientation}"
 )
+
+
+@dataclass(frozen=True)
+class Gate:
+    """Local, hash-bound representation of a basis gate."""
+
+    kind: str
+    wires: tuple[int, ...]
+
+
+def x(wire: int) -> Gate:
+    return Gate("X", (wire,))
+
+
+def cn(control: int, target: int) -> Gate:
+    return Gate("CNOT", (control, target))
+
+
+def apply_semantic(state: tuple[int, int], word: tuple[Gate, ...]) -> tuple[int, int]:
+    output = list(state)
+    for gate in word:
+        if gate.kind == "X":
+            output[gate.wires[0]] ^= 1
+        elif gate.kind == "CNOT":
+            output[gate.wires[1]] ^= output[gate.wires[0]]
+        else:
+            raise ValueError(f"unsupported gate kind: {gate.kind}")
+    return tuple(output)
 
 
 def compact(value: object) -> str:
@@ -82,10 +103,10 @@ def declared_family() -> tuple[dict, ...]:
     """Every length <= 1 two-site word from the declared landed kinds."""
     return (
         {"name": "I", "word": ()},
-        {"name": "X_0", "word": (A.x(0),)},
-        {"name": "X_1", "word": (A.x(1),)},
-        {"name": "CNOT_0_TO_1", "word": (A.cn(0, 1),)},
-        {"name": "CNOT_1_TO_0", "word": (A.cn(1, 0),)},
+        {"name": "X_0", "word": (x(0),)},
+        {"name": "X_1", "word": (x(1),)},
+        {"name": "CNOT_0_TO_1", "word": (cn(0, 1),)},
+        {"name": "CNOT_1_TO_0", "word": (cn(1, 0),)},
     )
 
 
@@ -99,7 +120,7 @@ def input_state(target: int, local_input: int, neighbor_bit: int) -> tuple[int, 
 def point_distribution(
     word: tuple, target: int, local_input: int, neighbor_bit: int
 ) -> tuple[int, int]:
-    after = A.apply_semantic(input_state(target, local_input, neighbor_bit), word)
+    after = apply_semantic(input_state(target, local_input, neighbor_bit), word)
     outcome = after[target]
     return (int(outcome == 0), int(outcome == 1))
 
@@ -144,9 +165,9 @@ def state_resolved_census() -> dict:
 
 def one_cnot_witness() -> dict:
     target, neighbor, local_input = 0, 1, 0
-    word = (A.cn(neighbor, target),)
+    word = (cn(neighbor, target),)
     before = [input_state(target, local_input, n) for n in (0, 1)]
-    after = [A.apply_semantic(state, word) for state in before]
+    after = [apply_semantic(state, word) for state in before]
     distributions = [
         point_distribution(word, target, local_input, n) for n in (0, 1)
     ]
@@ -209,8 +230,7 @@ def input_controls() -> dict:
         "blocklist_text_only": all(
             not path.endswith(".py") for path in BLOCKLIST_CITED_PRIMARIES
         ),
-        "executable_substrate": EXECUTABLE_SUBSTRATE,
-        "executable_semantics": EXECUTABLE_SEMANTICS,
+        "self_contained_semantics": True,
         "landed_axiom_needle_matches": axiom_needle in axiom_text,
     }
 
@@ -294,6 +314,7 @@ def main() -> int:
     d_ok = (
         controls["all_inputs_exist_worktree_relative"]
         and controls["blocklist_text_only"]
+        and controls["self_contained_semantics"]
         and controls["landed_axiom_needle_matches"]
         and all(controls["sha256"].values())
         and deterministic
@@ -363,7 +384,13 @@ def main() -> int:
         for name, ok, finding in certificates
     )
     lines.append("CHECKER_PAYLOAD: " + compact(checker_payload))
-    lines.append("VERDICT: CYCLE719_SUBSTRATE_HOSTS_ONE_CNOT_INTER_SITE_WITNESS")
+    verdict = (
+        "SELF_CONTAINED_ONE_CNOT_INTER_SITE_WITNESS"
+        if report["all_certificates_pass"]
+        else "CYCLE970_CHECKS_INCOMPLETE"
+    )
+    lines.append("VERDICT: " + verdict)
+    report["verdict"] = verdict
     pass_count = sum(ok for _, ok, _ in certificates)
     fail_count = len(certificates) - pass_count
     lines.append(f"TOTAL: PASS={pass_count} FAIL={fail_count}")

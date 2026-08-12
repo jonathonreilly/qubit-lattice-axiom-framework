@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle970_inter_site_gate_2026_08_09.py
-runner_sha256: fc8edd226942f908df6cce61d7f0ce46ce473cd27b6c52ba480c21ccb4b5f075
-input_fingerprint_sha256: 3932e053da891115ca0e1d140559711a1ad337bbc127dbcb54614df42d6c34a9
+runner_sha256: 6b56fb761c478e394c95372ecb84a5d9e49623036a7eb262387ac37352e16dc0
+input_fingerprint_sha256: db7786cde9df9554b9e925bd8927e6f129e0cdd1546e5ea349a31056104b73bb
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.93
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -13,9 +13,9 @@ CYCLE 970 -- INTER-SITE GATE SUBSTRATE
 PASS A_STATE_RESOLVED_CENSUS :: definition=D[W,t,x](y|n)=indicator that landed deterministic basis-state semantics sends target input x and nearest-neighbor bit n to target output y; the same x is held on the n=0 and n=1 branches; state_resolved_changed=4/20 paired comparisons; changed_pair_configurations=8/40
 PASS B_ONE_CNOT_WITNESS :: verdict=CONSTRUCTED; word=['CNOT(1->0)']; reads_neighbor_bit=1; D(n=0)=[1, 0]; D(n=1)=[0, 1]; transition_n1=[0, 1]->[1, 1]
 PASS C_DECLARED_SCOPE :: route=one_cnot_finite_family_witness; family_words=5; contexts=20; supplied_input=fixed target input x=0 on both neighbor branches
-PASS D_CONTROLS :: sha_pins={"docs/MINIMAL_AXIOMS_2026-06-29.md":"53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39","scripts/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.py":"7ffe1dd4b169f774dce5bc9db29c5329c6e06c92e02506fbc734916ff11de884","scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py":"0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4"}; BLOCKLIST=['docs/MINIMAL_AXIOMS_2026-06-29.md'] text_only=True; determinism_replay=True; runtime_s=0.000534<1400; stdout_upper_bound_bytes=2531<6000<150000; timeout_s=300<1400
+PASS D_CONTROLS :: sha_pins={"docs/MINIMAL_AXIOMS_2026-06-29.md":"53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39"}; BLOCKLIST=['docs/MINIMAL_AXIOMS_2026-06-29.md'] text_only=True; determinism_replay=True; runtime_s=0.000478<1400; stdout_upper_bound_bytes=2531<6000<150000; timeout_s=300<1400
 CHECKER_PAYLOAD: {"conditioned_configurations":40,"construction_succeeded":true,"distribution_neighbor_0":[1,0],"distribution_neighbor_1":[0,1],"family_words":5,"gate_word":["CNOT(1->0)"],"resolved_changed":4,"resolved_total":20,"scope_route":"one_cnot_finite_family_witness","state_mutated_on_neighbor_1":true}
-VERDICT: CYCLE719_SUBSTRATE_HOSTS_ONE_CNOT_INTER_SITE_WITNESS
+VERDICT: SELF_CONTAINED_ONE_CNOT_INTER_SITE_WITNESS
 TOTAL: PASS=4 FAIL=0
 
 ----- stderr -----

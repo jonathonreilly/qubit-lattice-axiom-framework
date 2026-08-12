@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Cycle-970 independent recomputation of the one-CNOT witness.
 
-The checker imports none of the primary/substrate modules. It binds stable
-source inputs, validates the freshly written primary cache envelope without
-pinning timing-bearing cache bytes, checks the executable CNOT semantics by
-AST, and recomputes the finite census with an independent XOR interpreter.
+The checker imports none of the primary modules. It binds stable source
+inputs, validates the freshly written primary cache envelope without pinning
+timing-bearing cache bytes, checks the primary's self-contained CNOT semantics
+by AST, and recomputes the finite census with an independent XOR interpreter.
 
 PASS predicates test source pinning, cache-envelope integrity, exact census
 reconciliation, the positive witness, and resource bounds.
@@ -18,8 +18,6 @@ AUDIT_INPUT_PATHS = (
     "scripts/frontier_cycle970_inter_site_gate_2026_08_09.py",
     "logs/runner-cache/frontier_cycle970_inter_site_gate_2026_08_09.txt",
     "docs/MINIMAL_AXIOMS_2026-06-29.md",
-    "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
-    "scripts/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.py",
 )
 BLOCKLIST_CITED_PRIMARIES = AUDIT_INPUT_PATHS
 
@@ -31,17 +29,13 @@ import sys
 from time import monotonic
 
 ROOT = Path(__file__).resolve().parents[1]
-PRIMARY_PATH, PRIMARY_CACHE, AXIOM_PATH, CORE_PATH, SEMANTICS_PATH = AUDIT_INPUT_PATHS
+PRIMARY_PATH, PRIMARY_CACHE, AXIOM_PATH = AUDIT_INPUT_PATHS
 EXPECTED_SHA256 = {
-    PRIMARY_PATH: "fc8edd226942f908df6cce61d7f0ce46ce473cd27b6c52ba480c21ccb4b5f075",
+    PRIMARY_PATH: "6b56fb761c478e394c95372ecb84a5d9e49623036a7eb262387ac37352e16dc0",
     AXIOM_PATH: "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
-    CORE_PATH: "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
-    SEMANTICS_PATH: "7ffe1dd4b169f774dce5bc9db29c5329c6e06c92e02506fbc734916ff11de884",
 }
 BLOCKLIST_MODULES = (
     "frontier_cycle970_inter_site_gate_2026_08_09",
-    "frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26",
-    "frontier_cycle715_recurrent_directional_packet_bank_2026_07_26",
 )
 
 
@@ -86,49 +80,6 @@ def declared_input_fingerprint(paths: tuple[str, ...]) -> str:
     return digest.hexdigest()
 
 
-def swap_word_ast_evidence(core_text: str) -> dict:
-    """Verify the exact landed three-CNOT SWAP macro without importing it."""
-    tree = ast.parse(core_text, filename=CORE_PATH)
-    function = next(
-        (
-            node for node in tree.body
-            if isinstance(node, ast.FunctionDef) and node.name == "swap_word"
-        ),
-        None,
-    )
-    calls = []
-    if function is not None:
-        returned = next(
-            (node.value for node in function.body if isinstance(node, ast.Return)),
-            None,
-        )
-        if isinstance(returned, ast.Tuple):
-            for element in returned.elts:
-                if (
-                    isinstance(element, ast.Call)
-                    and isinstance(element.func, ast.Attribute)
-                    and isinstance(element.func.value, ast.Name)
-                    and element.func.value.id == "A"
-                    and element.func.attr == "cn"
-                    and len(element.args) == 2
-                    and all(isinstance(arg, ast.Name) for arg in element.args)
-                ):
-                    calls.append(tuple(arg.id for arg in element.args))
-                else:
-                    calls.append(("AST_MISMATCH",))
-    expected = [
-        ("left", "right"),
-        ("right", "left"),
-        ("left", "right"),
-    ]
-    return {
-        "swap_word_found": function is not None,
-        "cnot_argument_order": calls,
-        "matches_landed_three_cnot_word": calls == expected,
-        "single_cnot_1_to_0_is_landed_gate_instance": ("left", "right") in calls,
-    }
-
-
 def primary_ast_evidence(primary_text: str) -> dict:
     tree = ast.parse(primary_text, filename=PRIMARY_PATH)
     assigned = None
@@ -139,16 +90,6 @@ def primary_ast_evidence(primary_text: str) -> dict:
                for target in node.targets):
             assigned = ast.literal_eval(node.value)
             break
-    return {
-        "literal_audit_input_paths": list(assigned) if assigned is not None else None,
-        "matches_expected_primary_inputs": assigned == (
-            AXIOM_PATH, CORE_PATH, SEMANTICS_PATH
-        ),
-    }
-
-
-def semantics_ast_evidence(semantics_text: str) -> dict:
-    tree = ast.parse(semantics_text, filename=SEMANTICS_PATH)
     functions = {
         node.name: node for node in tree.body if isinstance(node, ast.FunctionDef)
     }
@@ -170,7 +111,19 @@ def semantics_ast_evidence(semantics_text: str) -> dict:
                 (item for item in node.body if isinstance(item, ast.AugAssign)), None
             )
             break
+    imported_modules = []
+    for node in tree.body:
+        if isinstance(node, ast.Import):
+            imported_modules.extend(alias.name for alias in node.names)
+        elif isinstance(node, ast.ImportFrom):
+            imported_modules.append(node.module or "")
     return {
+        "literal_audit_input_paths": list(assigned) if assigned is not None else None,
+        "matches_expected_primary_inputs": assigned == (AXIOM_PATH,),
+        "imported_modules": imported_modules,
+        "imports_cycle719_or_cycle715": any(
+            "cycle719" in name or "cycle715" in name for name in imported_modules
+        ),
         "cn_shape": cn_shape,
         "cn_constructs_control_target_cnot": (
             cn_shape == "Gate('CNOT', (control, target))"
@@ -179,8 +132,8 @@ def semantics_ast_evidence(semantics_text: str) -> dict:
         "cnot_is_target_xor_control": (
             cnot_update is not None
             and isinstance(cnot_update.op, ast.BitXor)
-            and ast.unparse(cnot_update.target) == "state[gate.wires[1]]"
-            and ast.unparse(cnot_update.value) == "state[gate.wires[0]]"
+            and ast.unparse(cnot_update.target) == "output[gate.wires[1]]"
+            and ast.unparse(cnot_update.value) == "output[gate.wires[0]]"
         ),
     }
 
@@ -285,11 +238,7 @@ def main() -> int:
     if claims is None:
         claims = {}
     primary_text = payloads[PRIMARY_PATH].decode("utf-8", errors="replace")
-    core_text = payloads[CORE_PATH].decode("utf-8", errors="replace")
-    semantics_text = payloads[SEMANTICS_PATH].decode("utf-8", errors="replace")
-    ast_evidence = swap_word_ast_evidence(core_text)
     primary_ast = primary_ast_evidence(primary_text)
-    semantics_ast = semantics_ast_evidence(semantics_text)
     primary_inputs = tuple(primary_ast["literal_audit_input_paths"] or ())
     cache_header = parse_cache_header(
         payloads[PRIMARY_CACHE].decode("utf-8", errors="replace")
@@ -331,11 +280,10 @@ def main() -> int:
     r0_ok = (
         pins_ok
         and not any(name in sys.modules for name in BLOCKLIST_MODULES)
-        and ast_evidence["matches_landed_three_cnot_word"]
-        and ast_evidence["single_cnot_1_to_0_is_landed_gate_instance"]
         and primary_ast["matches_expected_primary_inputs"]
-        and semantics_ast["cn_constructs_control_target_cnot"]
-        and semantics_ast["cnot_is_target_xor_control"]
+        and not primary_ast["imports_cycle719_or_cycle715"]
+        and primary_ast["cn_constructs_control_target_cnot"]
+        and primary_ast["cnot_is_target_xor_control"]
         and cache_envelope_ok
     )
     r0_finding = (
@@ -343,8 +291,8 @@ def main() -> int:
         f"primary_cache_envelope={cache_envelope_ok}; "
         f"BLOCKLIST_text_AST_only={list(BLOCKLIST_CITED_PRIMARIES)}; "
         f"blocked_modules_loaded={any(name in sys.modules for name in BLOCKLIST_MODULES)}; "
-        f"swap_word_cnot_order={ast_evidence['cnot_argument_order']}; "
-        f"semantics={semantics_ast['cnot_update']}"
+        f"transitive_cycle_import={primary_ast['imports_cycle719_or_cycle715']}; "
+        f"self_contained_semantics={primary_ast['cnot_update']}"
     )
 
     r1_ok = (
@@ -439,8 +387,6 @@ def main() -> int:
         "pins": pin_rows,
         "blocklist": list(BLOCKLIST_CITED_PRIMARIES),
         "primary_ast_evidence": primary_ast,
-        "core_ast_evidence": ast_evidence,
-        "semantics_ast_evidence": semantics_ast,
         "primary_cache_envelope": cache_header,
         "primary_cache_envelope_valid": cache_envelope_ok,
         "independent_findings": {

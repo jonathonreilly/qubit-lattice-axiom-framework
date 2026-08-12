@@ -15,7 +15,7 @@
    "pass": true
   },
   "D_CONTROLS": {
-   "finding": "sha_pins={\"docs/MINIMAL_AXIOMS_2026-06-29.md\":\"53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39\",\"scripts/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.py\":\"7ffe1dd4b169f774dce5bc9db29c5329c6e06c92e02506fbc734916ff11de884\",\"scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py\":\"0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4\"}; BLOCKLIST=['docs/MINIMAL_AXIOMS_2026-06-29.md'] text_only=True; determinism_replay=True; runtime_s=0.000534<1400; stdout_upper_bound_bytes=2531<6000<150000; timeout_s=300<1400",
+   "finding": "sha_pins={\"docs/MINIMAL_AXIOMS_2026-06-29.md\":\"53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39\"}; BLOCKLIST=['docs/MINIMAL_AXIOMS_2026-06-29.md'] text_only=True; determinism_replay=True; runtime_s=0.000478<1400; stdout_upper_bound_bytes=2531<6000<150000; timeout_s=300<1400",
    "pass": true
   }
  },
@@ -27,18 +27,13 @@
    "docs/MINIMAL_AXIOMS_2026-06-29.md"
   ],
   "blocklist_text_only": true,
-  "executable_semantics": "scripts/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.py",
-  "executable_substrate": "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
   "landed_axiom_needle_matches": true,
   "literal_audit_input_paths": [
-   "docs/MINIMAL_AXIOMS_2026-06-29.md",
-   "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
-   "scripts/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.py"
+   "docs/MINIMAL_AXIOMS_2026-06-29.md"
   ],
+  "self_contained_semantics": true,
   "sha256": {
-   "docs/MINIMAL_AXIOMS_2026-06-29.md": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
-   "scripts/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.py": "7ffe1dd4b169f774dce5bc9db29c5329c6e06c92e02506fbc734916ff11de884",
-   "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4"
+   "docs/MINIMAL_AXIOMS_2026-06-29.md": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39"
   }
  },
  "cycle": 970,
@@ -551,9 +546,10 @@
  },
  "operational_definition": "D[W,t,x](y|n)=indicator that landed deterministic basis-state semantics sends target input x and nearest-neighbor bit n to target output y; the same x is held on the n=0 and n=1 branches",
  "reachability_to_target": "closes",
- "runtime_sec": 0.0005339590134099126,
+ "runtime_sec": 0.0004784580087289214,
  "science_digest": "ae7f43fcabd6677f42755a14768bb954ca9a5a78b2d4de09ab21168f4e134dde",
- "stdout_bytes": 1807,
+ "stdout_bytes": 1510,
  "target_claim_type": "bounded_theorem",
- "trace_class": "direct_blocker_closure"
+ "trace_class": "direct_blocker_closure",
+ "verdict": "SELF_CONTAINED_ONE_CNOT_INTER_SITE_WITNESS"
 }

@@ -68,6 +68,10 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
         "scripts/physical_cell_cutting_twelve_frontier_cycle739_"
         "independent_check_2026_08_05.py",
     ],
+    "physical_cell_cutting_sixteen_attained_cycle742_note_2026-08-05": [
+        "scripts/physical_cell_cutting_sixteen_attained_cycle742_"
+        "independent_check_2026_08_05.py",
+    ],
     # Current paired certificates launch their load-bearing children with
     # subprocess rather than importing them. The Wilson note also names its
     # same-convention systematic sweep on the audited runner surface. Register

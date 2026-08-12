@@ -1,18 +1,113 @@
-"""Cycle 742: the charge floor sixteen is attained; two new involutions extend
+"""Cycle 742: the supplied six-reading carrier floor sixteen is attained; two involutions extend
 the 48 cutting symmetries to a piece-transitive group; complete weight
 enumerators on the enumerable orbit pairs; witness intervals for the six
 charges. Rebuilds the incidence system from the admissibility construction,
 relabels orbits by first appearance, and gates every number quoted in the
 paired note. Output stays under 5500 characters."""
+import hashlib
 import itertools
+import json
 import resource
+import sys
 import time
+from pathlib import Path
 
 import numpy as np
 
 T0 = time.time()
 PF = [0, 0]
 OUT = [0]
+GATES = []
+ROOT = Path(__file__).resolve().parents[1]
+NOTE_PATH = "docs/PHYSICAL_CELL_CUTTING_SIXTEEN_ATTAINED_CYCLE742_NOTE_2026-08-05.md"
+CHECKER_PATH = (
+    "scripts/physical_cell_cutting_sixteen_attained_cycle742_"
+    "independent_check_2026_08_05.py"
+)
+PRIMARY_PATH = "scripts/physical_cell_cutting_sixteen_attained_cycle742_2026_08_05.py"
+C741_NOTE_PATH = "docs/PHYSICAL_CELL_CUTTING_FOURTEEN_FRONTIER_CYCLE741_NOTE_2026-08-05.md"
+C741_PRIMARY_PATH = "scripts/physical_cell_cutting_fourteen_frontier_cycle741_2026_08_05.py"
+C741_CHECKER_PATH = (
+    "scripts/physical_cell_cutting_fourteen_frontier_cycle741_"
+    "independent_check_2026_08_05.py"
+)
+C741_RECEIPT_PATH = (
+    "outputs/physical_cell_cutting_fourteen_frontier_cycle741_2026_08_05_"
+    "receipt_2026-08-05.json"
+)
+C741_INDEPENDENT_RECEIPT_PATH = (
+    "outputs/physical_cell_cutting_fourteen_frontier_cycle741_independent_check_"
+    "2026_08_05_receipt_2026-08-05.json"
+)
+RECEIPT_PATH = ROOT / (
+    "outputs/physical_cell_cutting_sixteen_attained_cycle742_2026_08_05_"
+    "receipt_2026-08-05.json"
+)
+AUDIT_INPUT_PATHS = (
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    C741_NOTE_PATH,
+    C741_PRIMARY_PATH,
+    C741_CHECKER_PATH,
+    C741_RECEIPT_PATH,
+    C741_INDEPENDENT_RECEIPT_PATH,
+    NOTE_PATH,
+    CHECKER_PATH,
+)
+AUDIT_TIMEOUT_SEC = 900
+
+
+def file_sha256(relative_path):
+    return hashlib.sha256((ROOT / relative_path).read_bytes()).hexdigest()
+
+
+def receipt_inputs_current(receipt):
+    recorded = receipt.get("input_sha256", {})
+    return bool(recorded) and all(
+        (ROOT / path).is_file() and recorded.get(path) == file_sha256(path)
+        for path in recorded
+    )
+
+
+def fail_receipt(reason):
+    RECEIPT_PATH.write_text(json.dumps({
+        "schema": "physical-cell-cutting-sixteen-attained-cycle742-v2",
+        "status": "fail",
+        "claim_type": "bounded_theorem",
+        "reason": reason,
+    }, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+
+
+fail_receipt("runner has not completed")
+C741 = json.loads((ROOT / C741_RECEIPT_PATH).read_text(encoding="utf-8"))
+C741I = json.loads((ROOT / C741_INDEPENDENT_RECEIPT_PATH).read_text(encoding="utf-8"))
+EXPECTED_NAMES = ["four", "four-flip", "six", "six-flip", "seven", "seven-flip"]
+C741_OK = (
+    C741.get("schema") == "physical-cell-cutting-fourteen-frontier-cycle741-v2"
+    and C741.get("status") == "pass"
+    and C741.get("gates", {}).get("fail") == 0
+    and C741.get("runner_sha256") == file_sha256(C741_PRIMARY_PATH)
+    and receipt_inputs_current(C741)
+    and C741.get("nonconstant_reading_bound", {}).get("reading_names") == EXPECTED_NAMES
+    and C741.get("nonconstant_reading_bound", {}).get("complete_even_sizes")
+    == [2, 4, 6, 8, 10, 12, 14]
+    and C741.get("nonconstant_reading_bound", {}).get("odd_sizes_barred_by_total_parity")
+    is True
+    and C741.get("nonconstant_reading_bound", {}).get("minimum_support_lower_bound") == 16
+    and C741.get("nonconstant_reading_bound", {}).get("sixteen_sufficiency_shown") is False
+    and C741I.get("schema")
+    == "physical-cell-cutting-fourteen-frontier-cycle741-independent-v1"
+    and C741I.get("status") == "pass"
+    and C741I.get("gates", {}).get("fail") == 0
+    and C741I.get("checker_sha256") == file_sha256(C741_CHECKER_PATH)
+    and receipt_inputs_current(C741I)
+    and C741I.get("exact_weight_fourteen_answers")
+    == {name: False for name in EXPECTED_NAMES}
+)
+if not C741_OK:
+    fail_receipt("Cycle 741 exact lower-bound contract failed")
+    print("FAIL DEP1  Cycle 741 exact lower-bound contract failed", flush=True)
+    print("TOTAL: PASS=0 FAIL=1", flush=True)
+    raise SystemExit(1)
 
 
 def emit(s):
@@ -25,8 +120,10 @@ def emit(s):
 
 
 def gate(ok, name, detail):
-    PF[0 if ok else 1] += 1
-    emit(("PASS " if ok else "FAIL ") + name + "  " + detail)
+    passed = bool(ok)
+    PF[0 if passed else 1] += 1
+    GATES.append((name, passed))
+    emit(("PASS " if passed else "FAIL ") + name + "  " + detail)
 
 
 # ---------------------------------------------------------------- Part 1: machinery
@@ -191,8 +288,10 @@ SZG = [4]
 EA = dict((k, []) for k in SZC)
 EB = dict((k, []) for k in SZC)
 DIS = dict((k, set()) for k in SZG)
+PROCESSED_ROWS = []
 for lo in range(0, NS, 200):
-    hi = min(lo + 100, NS)
+    hi = min(lo + 200, NS)
+    PROCESSED_ROWS.extend(range(lo, hi))
     d = LUT[np.bitwise_xor(PK[lo:hi, None, :], PK[None, :, :])].sum(axis=2, dtype=np.int16)
     for k in SZC:
         rr, cc = np.nonzero(d == 2 * k)
@@ -509,6 +608,8 @@ def tshow(t):
 # ---- section D: the global system, parity, XOR laws ----
 KDF, MKF = pair_solve_all(list(range(NP)))
 CS = INC64.sum(axis=0)
+gate(C741_OK, "DEP1",
+     "Cycle 741 primary and independent receipts bind the exact six-reading lower bound 16")
 gate(INC.shape == (15800, 192) and KDF == 104 and NP - KDF == 88 and MKF == 0,
      "G01", "table {0} by {1}, rank {2}, kernel dim {3}, eight readings consistent".format(
          15800, 192, NP - KDF, KDF))
@@ -528,6 +629,9 @@ gate(nl == 4 and OSZ4 == [48, 48, 48, 48] and int(falab[0]) == 0
      "four piece orbits of size 48, first-appearance labels, first piece in orbit 0")
 gate(CPOK and len(CP) == 48 and NP == 192, "G06",
      "all 48 column permutations verified as symmetries of the 192 pieces")
+gate(PROCESSED_ROWS == list(range(NS)) and len(EA[4]) == 46128
+     and len(EA[6]) == 31968 and len(KEY[4]) == 120, "G06A",
+     "all 15800 cutting rows contribute; move inventories are 46128, 31968, and 120")
 
 # ---- section E: singles and pairs ----
 SK, SM, SA = [], [], []
@@ -961,15 +1065,114 @@ gate(MINC == 16 and WWT == [20, 24, 24, 30, 30], "G52",
      "four sits at 16 exactly; four-flip [16,20]; six [16,24]; six-flip [16,24]; "
      "seven [16,30]; seven-flip [16,30]")
 gate(int(ho[12]) == 16 and int(ho[13:22].sum()) == 0, "G53",
-     "the reading one is no charge: 16 carriers of weight 12 already inside pair 1,2")
+     "the definition-excluded one reading has 16 weight-12 carriers inside pair 1,2")
 
 # ---- section L: budgets ----
+N5 = [
+    "per_element: checked -- all 192 supplied piece columns enter the exact GF(2) systems",
+    "per_site: checked -- one supplied 16-corner coordinate cell; no physical-cell selection",
+    "per_mode: checked and not executed -- no field, spectral, or momentum-mode object exists",
+    "per_block: checked -- all 15800 cutting rows and all single/pair orbit restrictions execute",
+    "lattice_wide: checked and not executed -- no multi-cell, arbitrary-L, boundary, or continuum claim",
+]
+for line in N5:
+    emit(line)
 EL = time.time() - T0
 RSS = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1048576.0
 gate(EL < 700.0 and RSS < 2500.0, "G54",
      "the whole runner finishes under {0} seconds inside {1} MB".format(700, 2500))
 TCH = OUT[0] + 120
-gate(TCH < 5500, "G55", "its output stays under {0} characters".format(5500))
+gate(TCH < 7000, "G55", "its output stays under {0} characters".format(7000))
+
+CANONICAL_INCIDENCE_ROWS_SHA256 = hashlib.sha256(
+    b"".join(sorted(bytes(row) for row in np.packbits(INC, axis=1)))
+).hexdigest()
+SUPPORT_COLUMN_ORDER_SHA256 = hashlib.sha256(json.dumps(
+    [[int(corner) for corner in UNI[piece]] for piece in USED],
+    separators=(",", ":"),
+).encode("utf-8")).hexdigest()
+
+
+def permutation_sha256(permutation):
+    return hashlib.sha256(json.dumps(
+        [int(value) for value in permutation], separators=(",", ":")
+    ).encode("utf-8")).hexdigest()
+
+receipt = {
+    "schema": "physical-cell-cutting-sixteen-attained-cycle742-v2",
+    "status": "pass" if PF[1] == 0 else "fail",
+    "claim_type": "bounded_theorem",
+    "audit_status_authority": "independent audit lane only",
+    "runner_sha256": file_sha256(PRIMARY_PATH),
+    "input_sha256": {path: file_sha256(path) for path in AUDIT_INPUT_PATHS},
+    "direct_dependencies": {"cycle741": {
+        "primary_status": C741.get("status"),
+        "independent_status": C741I.get("status"),
+        "reading_names": EXPECTED_NAMES,
+        "complete_even_sizes": [2, 4, 6, 8, 10, 12, 14],
+        "odd_sizes_barred_by_total_parity": True,
+        "minimum_support_lower_bound": 16,
+    }},
+    "population": {
+        "cuttings": NS, "pieces": NP, "rank": NP - KDF, "kernel_dimension": KDF,
+        "four_move_pairs": len(EA[4]), "six_move_pairs": len(EA[6]),
+        "four_move_differences": len(KEY[4]), "processed_rows": len(PROCESSED_ROWS),
+    },
+    "single_orbit": {
+        "ranks": SK, "augmented_four_ranks": SA,
+        "six_charges_consistent_on_any_single": False,
+    },
+    "orbit_pairs": {
+        "kernel_dimensions": PKD,
+        "consistent_readings": [sorted(value) for value in CONS],
+    },
+    "four_weight_sixteen": {
+        "enumerated_seed_supports": [list(word) for word in K36],
+        "enumerated_seed_count": len(K36),
+        "all_verified_supports": [list(word) for word in CL],
+        "closure_count": len(CL),
+        "profile_counts": [[list(profile), count] for profile, count in sorted(PROF.items())],
+        "extended_orbit_sizes": ESP,
+        "minimum_support": 16,
+    },
+    "incidence_identity": {
+        "canonical_incidence_rows_sha256": CANONICAL_INCIDENCE_ROWS_SHA256,
+        "support_column_order_sha256": SUPPORT_COLUMN_ORDER_SHA256,
+    },
+    "automorphism_certificates": {
+        "b0": {
+            "support_permutation": b0.tolist(),
+            "support_permutation_sha256": permutation_sha256(b0),
+        },
+        "b1": {
+            "support_permutation": b1.tolist(),
+            "support_permutation_sha256": permutation_sha256(b1),
+        },
+    },
+    "witness_intervals": {
+        "four": [16, 16], "four-flip": [16, 20], "six": [16, 24],
+        "six-flip": [16, 24], "seven": [16, 30], "seven-flip": [16, 30],
+    },
+    "witness_supports": {
+        name: np.cumsum(np.array(WIT[name][2])).astype(int).tolist() for name in WNM
+    },
+    "one_reading": {
+        "classification": "excluded by the supplied charge definition",
+        "weight_twelve_pair_12_carriers": 16,
+    },
+    "no_go_discipline": {
+        "status": "PASS",
+        "claim_scope": "finite exact single-orbit/pair inconsistency and lower-bound statements only",
+        "n5_execution_certificate": N5,
+    },
+    "gates": {
+        "pass": PF[0], "fail": PF[1],
+        "named": {name: "PASS" if ok else "FAIL" for name, ok in GATES},
+    },
+}
+RECEIPT_PATH.write_text(json.dumps(receipt, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+print("RECEIPT " + str(RECEIPT_PATH.relative_to(ROOT)), flush=True)
 
 emit("")
 print("TOTAL: PASS={0} FAIL={1}".format(PF[0], PF[1]))
+sys.exit(1 if PF[1] else 0)

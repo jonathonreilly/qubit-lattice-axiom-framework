@@ -258,6 +258,12 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
         "scripts/physical_least_cost_cutting_piece_charge_cycle735_"
         "independent_check_2026_08_05.py",
     ],
+    # Cycle 736's checker independently rebuilds the complete geometric cutting
+    # population, move ladder, GF(2) response space, components, and supplied action.
+    "physical_cell_cutting_charge_space_cycle736_note_2026-08-05": [
+        "scripts/physical_cell_cutting_charge_space_cycle736_"
+        "independent_check_2026_08_05.py",
+    ],
     "b4_clock_relation_run_cycle879_bounded_theorem_note_2026-07-28": [
         "scripts/frontier_cycle879_b4_relation_independent_check_2026_07_28.py",
     ],

@@ -2720,3 +2720,48 @@ instance or Fourier census.
   movement; the fixed map has not moved for at least 58 hours. PR #6154 is
   open, mergeable, and `CLEAN`. No canonical axiom,
   audit verdict, or `review-loop` changes.
+
+## Block 62 Construction And Adversarial Record
+
+- Constructed complete six-dimensional transverse conserved symmetric-source
+  bases at `k` and `2k` on winding `(1,2,3,0)` and retained the transformed
+  physical-source maps rather than equating source and response norms.
+- Evaluated all 21 symmetric equal-mode pairs at output `2k` and all 36
+  unequal-harmonic pairs at output `3k` on periods `145,193,257`.
+- Equal full-tensor force/Ward powers are `1.987246/3.014849`; unequal powers
+  are `1.959182/3.018894`. Completion/raw fractions fall to
+  `0.019865/0.052079`; reaction Ward is below `9.64e-16`.
+- Source-basis condition is below `1.855279`; scaled singular values lie
+  between `0.497824` and `0.933394`. Batch/scalar gradient agreement is
+  `1.510e-14` absolute and `1.591e-11` relative.
+- Batch-gradient, source-basis, equal-tensor, multimode-tensor,
+  amplitude-control, and note-boundary mutations each fail exactly one named
+  check. Fresh N1--N8 preserves angular, noncollinear, observable, refinement,
+  Lorentzian, exact-action, and extensional-law routes.
+- Primary/cache is `PASS=7 FAIL=0` in 364.4 seconds. Citation registration is
+  `5,508/15,782`, out-degree four. Vocabulary, strict lint, premise purity,
+  model normalization, Python/cache, claim typing, whitespace, forensic N5,
+  and enforced graph/link invariants pass.
+- Science commit is `93bcb15711`, on exact Block-61 delivery `167429f95a`.
+  This is significant route evidence and zero TOE percentage movement; the
+  fixed map has not moved for at least 59 hours. PR #6155 is open, mergeable,
+  and `CLEAN`. No canonical axiom, positive retention, audit verdict, or
+  `review-loop` changes.
+
+## Independent Global Portfolio Audit After Block 62
+
+- The audit was read-only, used no `review-loop`, and changed no audit status.
+- It independently ranks a current-epoch Record-native state-dependent
+  Born/history law gate first because it has three direct lane consumers and
+  two indirect consumers, with one block to a decisive pass/kill.
+- Cycle-870 renewal ranks second; one terminal Block-62 observable/refinement
+  quotient ranks third; standalone Root-B and source/action work are deferred
+  unless they bind directly into the joint law.
+- The historical Cycle-574--587 successor stack is branch-only,
+  never-mainlined, and has no active audit claim ids. Its fixed rotor already
+  fails the biased `|000>` grade by `L1=1.5`, `Linf=0.5`; this is a falsifier
+  for state-independent actualizers, not a universal Born no-go.
+- Selected allocation is 65/20/10/5 percent for Record/Born/history plus
+  independent validation, matter renewal, terminal gravity, and integrated
+  Root-B/action work respectively. No axiom edit is ready; the next valuable
+  axiom datum is one surviving exact extensional candidate.

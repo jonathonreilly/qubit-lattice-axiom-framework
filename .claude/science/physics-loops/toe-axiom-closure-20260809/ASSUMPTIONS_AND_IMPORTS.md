@@ -959,3 +959,22 @@ linear edge parameterization; it does not establish exact microscopic
 first-class symmetry. No selected source/action, refinement norm or map,
 state norm, Record observable, Lorentzian propagation, canonical axiom edit,
 TOE percentage move, audit verdict, or `review-loop` is imported.
+
+## Block 62 Assumptions And Imports
+
+Block 62 imports the exact Block-61 square-root metric completion, the actual
+Regge-plus-deficit-square action, and finite-dimensional Fourier and symmetric
+tensor algebra. It constructs complete six-dimensional conserved-source bases
+at `k` and `2k` on one skew ray and explicitly retains the transformed
+physical-source Gram map.
+
+The response-normalized Frobenius tensor norms do not import a fixed-unit
+physical-source norm: source singular values and their expected `k^2` scaling
+are reported separately. The unequal-mode one-half bilinear convention and
+the corresponding completion coefficient are stated rather than hidden.
+
+No uniform angular neighborhood, noncollinear source composition, all-`L`
+bound, observable/state quotient, refinement map, selected physical
+source/action, nonlinear Lorentzian evolution, exact attached joint law,
+canonical axiom edit, positive retention, TOE percentage move, audit verdict,
+or `review-loop` is imported.

@@ -1123,3 +1123,17 @@ check each; citation registration is `5,507/15,778`, out-degree four. N1--N8
 and N5 land with the science. This is significant route progress but no
 canonical axiom, fixed TOE percentage, audit verdict, or `review-loop`
 change. Landing order will place Block 61 after #6153.
+
+## Block 62
+
+PR #6155 is open, mergeable, and `CLEAN` on
+`physics-loop/toe-axiom-closure-block62-full-source-multimode-20260812`,
+stacked exactly on Block-61 delivery head `167429f95a`. Its distinct review
+object is the complete six-source bases at `k` and `2k`, all 21 equal-mode and
+36 unequal-harmonic bilinear tensors, and the explicit response-versus-
+physical-source normalization boundary. Primary/cache is `PASS=7 FAIL=0`;
+six mutations fail one check each; citation registration is `5,508/15,782`,
+out-degree four. N1--N8 and N5 land with the science. This is significant
+route evidence but no canonical axiom, fixed TOE percentage, positive
+retention, audit verdict, or `review-loop` change. Landing order will place
+Block 62 after #6154.

@@ -2427,3 +2427,47 @@ full transverse conserved-source and multimode bilinear identity, followed by
 two-TT/Record observable decoupling in an explicit refinement norm. If either
 fails, pivot immediately to exact microscopic action/dynamical-source repair.
 No additional period, coupling, coefficient, or precision scan qualifies.
+
+## Block 62 Handoff
+
+Block 62 replaces the two selected Block-61 polarizations by complete
+six-dimensional conserved symmetric-source bases at `k` and `2k` on the skew
+ray `(1,2,3,0)`. It evaluates all 21 equal-mode and all 36 unequal-harmonic
+bilinear pairs. Equal/unequal completed-force powers are
+`1.987246/1.959182`; Ward powers are `3.014849/3.018894`; the fixed completion
+reaction is Ward-null below `9.64e-16`.
+
+The transformed physical-source maps are invertible with condition below
+`1.855279`; their singular values scale with the input momentum squared. The
+reported tensor norm therefore controls unit response-normalized coefficient
+combinations and is not mislabeled as a fixed-unit-physical-source norm.
+
+Primary/cache is `PASS=7 FAIL=0` in 364.4 seconds. Six targeted mutations each
+fail one named check. Citation registration is `5,508/15,782`, out-degree
+four. All repository gates pass. Science commit is `93bcb15711`; PR #6155 is
+open, mergeable, and `CLEAN` on exact Block-61 delivery `167429f95a`.
+
+This closes the selected-polarization and equal-input objections on one ray,
+but it is still zero scored TOE progress and the map has not moved for at
+least 59 hours. The next block is controlled by a global five-lane portfolio
+audit, not gravity sunk cost. Freeze all additional source/period scans. If
+gravity remains top-ranked, run one terminal two-TT/Record observable and
+inverse-amplification refinement acceptance test; otherwise pivot directly to
+the extensional `L_phys` component with the shortest positive-retention path.
+
+The independent audit selects the pivot. Block 63 is the current-epoch
+Record-native state-dependent Born/history candidate-law gate, not another
+gravity or standalone Root-B block. It must rederive the needed Cycle-41
+algebra self-contained; the never-mainlined Cycle-574--587 stack is diagnostic
+source material only. One fixed kernel must pass uniform, biased,
+phase-sensitive, mixed, and incompatible-menu/shared-effect fixtures, type one
+realized history without confusing correlation with actuality, and prove
+arbitrary-`N` monotone renewal. Failure kills or demotes the candidate rather
+than opening another parameter scan.
+
+Portfolio allocation is 65 percent to this Record/Born/history gate and its
+independent controls, 20 percent to Cycle-870 matter renewal, 10 percent to one
+terminal gravity observable/refinement quotient, and 5 percent to Root-B or
+action fields only inside the joint law. No axiom edit is ready. A successful
+Block 63 would instead make one extensional law datum decision-ready for an
+explicit owner adoption decision.

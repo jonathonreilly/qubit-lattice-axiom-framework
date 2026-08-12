@@ -459,3 +459,33 @@ Efficiency gate: no further period, coupling, coefficient, precision, or
 single-source scan. Every block must retire one of the named source,
 multimode, observable, refinement, or Lorentzian obligations, or falsify the
 route. Re-rank immediately after either result and at least every three hours.
+
+## Post-Block-62 Global Portfolio Gate
+
+The gravity mechanism survived complete source and unequal-harmonic control
+on one ray, but the fixed TOE map has not moved for at least 59 hours. Sunk
+cost is now explicitly excluded from ranking. An independent five-lane audit
+must compare gravity, operational/Record law, Born/history, causal time,
+matter/inertia, and the joint extensional-law route by expected scored
+obligation retirement and probability of positive retention.
+
+The independent read-only audit selects this queue:
+
+| Rank | Target | Proof distance | Exact next witness | Stop condition |
+|---:|---|---|---|---|
+| 1 | current-epoch Record-native state-dependent Born/history law | one block to decisive pass/kill; two or three to an unbounded single-front positive theorem; at least five to full `L_phys` | one fixed state/program-carried stochastic kernel must combine the current Cycle-41 readiness and fresh append, a faithful physical CP instrument with `q_h(rho)=Tr(K_h rho K_h^dagger)`, exact prefix-projective cylinders, one explicitly typed realized-history member, and arbitrary-`N` no-overwrite renewal | kill a state-independent actualizer on the biased or incompatible-menu fixtures; demote if actuality remains a coherent direct sum, renewal needs external blanks, locality needs host scheduling, or the proof depends on the unaudited historic chain |
+| 2 | Cycle-870 matter renewal | one or two blocks to the reset/renewal wall and three or four to autonomous matter | compile a local double-buffer or garbage-conveyor renewal that survives the first spent-packet overrun without external clean support | stop if clean genesis, admission, boundary/coframe choice, or numeric law selection remains host supplied |
+| 3 | terminal Block-62 gravity quotient | one block to pass/kill, but three to five further obligations after a pass | project the completed response and pseudo-sector through physical two-TT/Record observables with inverse amplification and a volume-independent refinement rate | kill the fixed-Regge candidate if pseudo/soft readout is nonzero or lacks a uniform rate; after a pass, freeze gravity until the joint law exists |
+| 4 | Root-B/action integration | three to five blocks alone | use grading, sign, decoder, or action work only as a field of the joint-law manifest | stop any standalone selector or pricing block that leaves physical lineage, state, and Record semantics open |
+
+Twenty-four-hour allocation is `65%` to rank 1 including independent hostile
+validation, `20%` to rank 2, `10%` to rank 3, and `5%` to rank 4 only where it
+plugs into the joint law. The historical Cycle-574--587 stack was never
+mainlined and has no active audit claim IDs; it is recoverable design and
+falsifier material only, never current authority.
+
+Efficiency gate: no more source bases, periods, coupling grids, precision
+tightening, carrier counts, deterministic copy/dephase/rotor actuality
+attempts, or independent lane-support blocks. A block must have a direct
+promotion path to positive retention, retire a scored obligation, or
+decisively terminate a live end-to-end candidate.

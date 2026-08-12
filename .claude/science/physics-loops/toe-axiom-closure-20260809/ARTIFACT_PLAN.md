@@ -1574,3 +1574,55 @@ complete conditional nonlinear compact solution:
   percentage movement. Build the full transverse conserved-source/multimode
   identity or a concrete falsifier, then test two-TT/Record observable
   decoupling. No further period scan qualifies
+
+## Block 62 Artifact Plan And Result
+
+- source note: register complete six-dimensional conserved-source bases at
+  `k` and `2k`, all 21 equal-mode and 36 unequal-harmonic bilinear tensors,
+  the physical-source normalization boundary, and fresh N1--N8/N5 scope
+- primary runner/cache: evaluate the actual metric-completed local action on
+  winding `(1,2,3,0)` at periods `145,193,257`; achieved `PASS=7 FAIL=0` in
+  364.4 seconds
+- decisive result: full-tensor completed-force powers are
+  `1.987246/1.959182` and Ward powers `3.014849/3.018894`; reaction Ward is
+  below `9.64e-16`, source-basis condition is below `1.855279`, and the
+  completion/raw fractions fall to `0.019865/0.052079`
+- adversarial controls: batch-gradient, source-basis, equal-tensor,
+  multimode-tensor, amplitude, and note-boundary mutations each exit nonzero
+  with exactly one intended failure
+- current evidence: science commit `93bcb15711`; PR #6155 is open, mergeable,
+  and `CLEAN`; graph `5,508/15,782`, out-degree four; vocabulary, strict lint,
+  premise purity, model-family
+  normalization, Python/cache, claim typing, whitespace, N5, and enforced
+  graph/link checks pass
+- score and next artifact: significant route evidence and zero TOE percentage
+  movement. Apply the independent five-lane portfolio ranking. No further
+  source, period, coupling, coefficient, or precision scan qualifies; gravity
+  continues only through a terminal two-TT/Record observable/refinement test
+  if that remains the globally highest-value seam. No `review-loop` is used
+
+## Block 63 Selected Artifact Contract
+
+- target note:
+  `docs/ADMISSIBILITY_RECORD_NATIVE_STATE_DEPENDENT_BORN_HISTORY_JOINT_LAW_CANDIDATE_GATE_NOTE_2026-08-12.md`
+- target runner:
+  `scripts/admissibility_record_native_state_dependent_born_history_joint_law_candidate_gate_2026_08_12.py`
+- target claim id:
+  `admissibility_record_native_state_dependent_born_history_joint_law_candidate_gate_2026-08-12`
+- current-epoch inputs: the canonical four axioms, the current Cycle-41 and
+  Cycle-85 executable constructions, the Block-1 trace-form theorem, the
+  Block-2 global-measure/menu-kernel separation, and the current physical
+  effect-label/Record carrier; never-mainlined Cycle-574--587 objects may
+  supply hostile fixtures or implementation ideas but not dependencies
+- decisive witness: one fixed state/program-carried CP kernel with exact
+  arbitrary-`N` normalized and prefix-projective cylinders, a non-circular
+  one-history type, monotone fresh Record append and renewable resources,
+  tested on uniform, biased, phase-sensitive, mixed, and incompatible-menu
+  fixtures under all 24 proper-cubic frames
+- promotion boundary: only an unbounded declared-domain theorem with current
+  dependency closure can be typed positive; retention still requires
+  independent audit, and percentage movement still requires physical
+  selection or explicit owner adoption of the extensional law
+- kill boundary: reject deterministic/state-independent actualizers on the
+  biased fixture; reject coherent-copy actuality, external blank refresh,
+  host scheduling, same-effect contextuality, or historic-chain laundering

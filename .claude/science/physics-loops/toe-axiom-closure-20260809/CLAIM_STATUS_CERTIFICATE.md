@@ -1986,3 +1986,27 @@ lines are in the landing primary cache.
   observable/state decoupling, nonlinear Lorentzian/refinement closure,
   selected law, axiom amendment, or audit verdict. Fresh N1--N8 lands; no
   `review-loop` is used.
+
+## Block 62 Claim Status Certificate
+
+- Complete source surface: both input harmonics carry six-dimensional
+  conserved symmetric-source bases. Source Ward, solve, and orthonormality
+  residuals are below `1.4e-14`; the physical-source basis condition number is
+  at most `1.855279`.
+- Complete bilinear tensors: all 21 symmetric equal-mode pairs and all 36
+  `k+2k` pairs enter the aggregate force and Ward norms on periods
+  `145,193,257`.
+- Executed order: equal/unequal completed-force powers are
+  `1.987246/1.959182`; Ward powers are `3.014849/3.018894`; completion/raw
+  fractions fall to `0.019865/0.052079`; reaction Ward is below `9.64e-16`.
+- Normalization boundary: the Frobenius tensors bound unit coefficients in the
+  response-normalized basis, not unit physical-source Frobenius norm. The
+  invertible source map and its singular values provide the conversion.
+- Evidence: primary/cache `PASS=7 FAIL=0`; six targeted mutations fail one
+  intended check each; graph `5,508/15,782`, out-degree four. All repository
+  gates pass. Science commit is `93bcb15711`; PR #6155 is open, mergeable,
+  and `CLEAN`.
+- Scope: this is significant route evidence and zero TOE percentage movement,
+  not a uniform angular/noncollinear, observable/state, refinement,
+  Lorentzian, selected-law, axiom, retained, or audit result. Fresh N1--N8
+  lands; no `review-loop` is used.

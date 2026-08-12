@@ -1453,3 +1453,39 @@ complete conditional nonlinear compact solution:
   the source-complete nonlinear gravity kill test and the Root-A/B interface;
   stop all independent carrier, projective-count, coefficient-grid, and
   propagator-variant work
+
+## Block 58 Artifact Plan
+
+- correction: withdraw the Block-54 interpretation that affine source or
+  reaction Hessian terms were omitted. The Block-19/21 source is linear and
+  every reaction/constraint is affine, so their length-length Hessians vanish;
+  the rank-ten constraints freeze all ten metric tangents and remove all four
+  displacement columns, leaving a five-nonmetric-mode ensemble surrogate
+- theorem note: replace that surrogate by the actual period-three full-edge
+  Regge-plus-deficit-square action, fix only average metric moduli and the flat
+  displacement coordinates, and solve conserved zero-total static-density and
+  conditional null-Record source branches
+- primary runner/cache: independently match the reduced action against the
+  original periodic box action, solve all twenty-seven nongauge equations,
+  measure the second-order Ward vector, form the eight-real-direction relaxed
+  Schur complement, and test scalar source-seagull and cubic-deficit repairs;
+  achieved `PASS=9 FAIL=0`, 45 edge variables, 50 hinges, 240 incidences per
+  slice, and 3,807-character cached stdout
+- decisive result: both metric-dominated branches have projected residuals
+  below `3.3e-12`, but stable nonzero `O(c^2)` Ward residuals and rank-eight
+  mixed-sign pseudo-constraint spectra. A scalar interval-power source family
+  leaves `92.9%/63.5%`; a fixed cubic-deficit term is one order too late
+- adversarial controls: affine-rank, Ward-order, and note-boundary mutations
+  each exit nonzero with exactly one failed check; fresh N1--N8 preserves
+  dynamical source, improved/perfect, Pachner/tent, connection, and controlled
+  refinement routes
+- current evidence: science commit `85cbe08df2`; graph `5,504/15,767`,
+  out-degree four; primary/cache, vocabulary, strict lint, premise purity,
+  Python/cache, claim typing, whitespace, N5, and enforced graph/link checks
+  pass. The full pipeline reaches only the inherited stage-7 dependency-policy
+  epoch mismatch already present in the parent stack
+- score and next artifact: the fixed percentage map remains unchanged for at
+  least 55 hours. Construct the dynamical Record/matter source contribution to
+  the same-order joint Noether identity and demand cancellation of the two
+  displayed Ward vectors; if that family fails, escalate directly to an
+  improved/perfect or Pachner/tent law, not another coefficient or grid scan

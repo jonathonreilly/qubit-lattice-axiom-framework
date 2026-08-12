@@ -1872,3 +1872,33 @@ lines are in the landing primary cache.
   law selection, owner adoption, axiom amendment, audit verdict, or TOE
   percentage movement. Fresh N1--N8 and all five N5 resolutions land; no
   `review-loop` is used.
+
+## Block 58 Claim Status
+
+- Correction: the Block-19/21 source is linear and its constraints/reactions
+  are affine, so their length-length Hessians vanish. The rank-ten affine
+  constraints freeze all metric tangents and remove all four generic
+  displacement columns; Block 54 is retained only as an affine-surrogate rank
+  census, not a physical curved-background connection diagnosis.
+- Genuine branch: both zero-mean conserved sources solve all twenty-seven
+  nongauge full-edge equations with projected residual below `3.3e-12`,
+  nonzero deficits, positive lengths, and metric-dominated response.
+- Nonlinear result: gauge residuals stabilize at nonzero order `c^2`; leading
+  Ward vector norms are `11.513700/12.988440`. Every one of the eight real
+  displacement directions lifts in the relaxed Schur complement on both
+  source branches.
+- Narrow repair exclusions: the leading one-scalar interval-power family
+  leaves `92.9%/63.5%` of the residual, and any fixed finite cubic-deficit
+  coefficient enters at `O(c^3)`. General dynamical matter, perfect actions,
+  Pachner moves, and refinement limits remain live.
+- Evidence: primary/input-pinned cache `PASS=9 FAIL=0`; three process-local
+  mutations fail exactly one check each; graph `5,504/15,767`, out-degree
+  four. Vocabulary, strict lint, premise purity, Python/cache, claim typing,
+  whitespace, N5, and enforced graph/link invariants pass. The full pipeline
+  reaches the inherited stage-7 dependency-policy mismatch. Science commit is
+  `85cbe08df2`; PR pending.
+- Scope: decisive rejection of one fixed-action/external-source candidate and
+  two narrow repair families—not a gravity no-go, Lorentzian nonlinear theorem,
+  full-`Z^3` result, law selection, axiom amendment, audit verdict, or TOE
+  percentage movement. The map is unchanged for at least 55 hours. Fresh
+  N1--N8 and all five N5 resolutions land; no `review-loop` is used.

@@ -2590,3 +2590,39 @@ instance or Fourier census.
 - Science commit is `5cfc183a93`; PR #6150 is open, mergeable, and `CLEAN` on
   exact Block-56 delivery `551c8cf7c6`. No canonical edit, fixed percentage,
   audit verdict, or `review-loop` occurs.
+
+## Block 58 Construction And Adversarial Record
+
+- Recomputed the Block-19/21 affine KKT geometry. The metric map has rank ten,
+  its normal complement rank five, `rank(M0^T Gamma)=4` at generic momentum,
+  and the bordered KKT matrix rank twenty-five. Corrected Block 54: no affine
+  source/reaction Hessian is missing; the prior branch freezes the physical
+  metric and displacement directions.
+- Built a fast exact first derivative for the period-three full-edge action,
+  retaining forty-five edge variables, fifty hinge classes, and 240
+  simplex-hinge incidences per slice. An independent original `L=3` periodic
+  box action agrees within `4.4e-9`; central gradient and Hessian derivatives
+  pass with wide margins.
+- Constructed static-density and conditional null-Record Fourier sources with
+  target, Ward-conservation, and zero-mean residuals below `1.5e-15`. Solved
+  all twenty-seven nongauge equations for seven couplings from `1e-5` to
+  `1e-3`; maximum projected residual is below `3.3e-12`.
+- Measured stable nonzero second-order Ward coefficients near `1.918` and
+  `2.165`, with leading eight-real-vector norms `11.513700/12.988440`.
+  Both relaxed gauge Schur complements have rank eight and mixed signs at
+  `c=5e-4,1e-3`.
+- Optimized the leading scalar interval-power source family; residual fractions
+  are `0.929341/0.635485`. Proved and executed that a fixed cubic-deficit term
+  contributes at `O(c^3)`, one order after the obstruction.
+- Affine-rank, Ward-order, and note-boundary mutations each exit nonzero with
+  exactly one failed check. Fresh N1--N8 rejects a universal gravity no-go and
+  preserves dynamical source, improved/perfect, Pachner/tent, connection, and
+  controlled refinement routes.
+- Primary/cache is `PASS=9 FAIL=0`, stdout 3,807 characters; citation
+  registration is `5,504/15,767`, out-degree four. Vocabulary, strict lint,
+  premise purity, Python/cache, claim typing, whitespace, forensic N5, and
+  enforced graph/link invariants pass. The full pipeline reaches only the
+  inherited stage-7 dependency-policy epoch mismatch.
+- Science commit is `85cbe08df2`; PR pending on exact Block-57 delivery
+  `00d71b0b7e`. The TOE map is unchanged for at least 55 hours. No canonical
+  axiom, fixed percentage, audit verdict, or `review-loop` changes.

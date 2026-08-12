@@ -2245,3 +2245,56 @@ interface. Pause carrier counts, projective refinements, bare fixed-action
 scans, coefficient grids, and additional working propagators. A future block
 qualifies only by deriving/adopting a physical interface, decisively killing a
 live candidate, or supplying a genuinely extensional owner datum.
+
+## Block 58 Handoff
+
+Block 58 is local on branch
+`physics-loop/toe-axiom-closure-block58-nonuniform-full-edge-20260812`, stacked
+exactly on Block-57 delivery head `00d71b0b7e`. It corrects a material route
+error before running the source-complete gravity kill test.
+
+The Block-19/21 continuation is not a curved metric workhorse. Its source is
+linear and its reactions and constraints are affine, so their length-length
+Hessians vanish identically. The ten affine constraint columns have rank ten,
+annihilate every uniform metric tangent, and have rank four on the generic
+displacement columns. The bordered KKT matrix is rank twenty-five. The five
+continuation coordinates are precisely the nonmetric complement. Block 54's
+finite rank census remains valid, but its “missing affine connection Hessian”
+interpretation is corrected in the landed note and runner.
+
+The replacement branch retains all forty-five period-three edge lengths. It
+fixes ten average metric moduli and eight real flat displacement coordinates,
+then solves all twenty-seven remaining equations. Both an exactly conserved
+zero-mean static `h_tt` source and a conditional Lorentzian `t+x` Record/null
+bundle source produce nonzero curvature, positive lengths, and metric-dominated
+responses. At `c=10^-3` their projected residuals are `3.30e-13/3.76e-13`.
+
+The physical candidate nevertheless fails the exact nonlinear gate. The gauge
+residual divided by `c^2` stabilizes near `1.918` and `2.165` as `c` tends to
+zero; the leading eight-real-component Ward vectors have norms `11.513700`
+and `12.988440`. All eight relaxed displacement directions lift into soft
+mixed-sign Schur modes on both sources. This is a fixed-action/external-source
+candidate rejection, not a gravity no-go or Euclidean instability claim.
+
+Two cheap repairs are retired. The complete leading one-scalar interval-power
+source direction leaves `92.9341%` of the static vector and `63.5485%` of the
+null vector. A fixed `sum A epsilon^3` coefficient enters the gauge projection
+at `O(c^3)` and cannot cancel an `O(c^2)` obstruction. Dynamical matter/Record
+fields, nonlinear generator/current terms, perfect actions, Pachner moves, and
+controlled refinement remain live.
+
+Primary/cache is `PASS=9 FAIL=0`; affine-rank, Ward-order, and note-boundary
+mutations each fail exactly one check. The independent box-action mismatch is
+below `4.4e-9`. Citation registration is `5,504/15,767`, out-degree four.
+Vocabulary, strict lint, premise purity, Python/cache, claim typing,
+whitespace, N1--N8/N5, and enforced graph/link gates pass. The full pipeline
+reaches only the inherited stage-7 dependency-policy epoch mismatch. Science
+commit is `85cbe08df2`; PR pending. No canonical axiom, fixed TOE percentage,
+audit verdict, or `review-loop` changes.
+
+The next qualifying calculation is the mixed source--geometry Noether identity
+for a dynamical Record/matter source, evaluated against both displayed Ward
+vectors. A cancellation is genuine gravity/Record interface progress. A clean
+failure retires that normalized completion family and promotes an
+improved/perfect or Pachner/tent construction. More couplings, momenta,
+coefficient grids, and affine-surrogate spectra are low leverage.

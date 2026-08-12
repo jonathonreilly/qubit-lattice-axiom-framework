@@ -866,3 +866,28 @@ bond is an executed escape, not a selected physical law. A local-frame Ward
 identity is internal-frame redundancy, not lattice diffeomorphism, Bianchi,
 Einstein, or Lorentz closure. No external science, observed constant,
 canonical edit, percentage move, audit verdict, or `review-loop` is imported.
+
+## Block 58 Assumptions And Imports
+
+Block 58 imports the current minimal axiom boundary, the actual fifteen-edge
+four-dimensional Kuhn/Coxeter Regge action, the flat curvature-square repair at
+the explicitly conditional coefficient `alpha=1/1024`, the exact flat metric
+and displacement maps, and Block 53's linear two-TT causal target. It corrects
+rather than imports Block 54's interpretation: linear source and affine
+reaction/constraint terms have zero length-length Hessian, and the prior ten
+constraints freeze all metric tangents.
+
+The period-three, transversely homogeneous carrier; fixed average metric
+moduli; static `h_tt` source; conditional `t+x` Record/null target; Euclidean
+signature; finite coupling window; double precision; and gauge-fixed branch
+are declared bounded data. “Full edge” means all forty-five reduced edge
+variables before the stated eighteen constraints, not full `Z^3` or a complete
+Lorentzian history. The null interpretation is conditional and its mixed-sign
+Euclidean Schur spectrum is not a physical instability.
+
+Bahr--Dittrich fixed-Regge symmetry analysis, improved/perfect action work, and
+Dittrich--Hoehn Pachner evolution remain primary-literature route context from
+the corrected Block-54 note; they are not premises that a four-dimensional
+source-complete law already exists. No external observed constant, selected
+source law, dynamical matter completion, canonical axiom edit, TOE percentage
+move, audit verdict, or `review-loop` is imported.

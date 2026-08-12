@@ -397,3 +397,19 @@ static grids, decimal tightening, alternate congruences, and unrestricted
 full-zone scans. Re-score on closure fan-out, hypothesis discrimination,
 axiom localization, dependency readiness, and deep-block cost at least every
 three hours and immediately after any decisive failure.
+
+## Post-Block-58 Priority Refresh
+
+| Rank | Target | Exact next witness | Why now |
+|---:|---|---|---|
+| 1 | dynamical Record/matter source completion | add source fields, their equations, transformed current/generator, and mixed source--geometry Hessian to the full-edge branch; cancel both measured `O(c^2)` Ward vectors without fitting source-specific coefficients | this is the only live same-order repair that simultaneously advances gravity, Records, causal time, and realized history |
+| 2 | improved/perfect or Pachner/tent gravity law | integrate refinement data or construct a variable-triangulation move family whose exact joint Noether identity has the Block-44/53 flat limit and the two named source responses | the fixed Regge-plus-deficit-square/external-source candidate now fails on a genuine metric branch, so formulation change outranks more coefficient scans |
+| 3 | controlled pseudo-constraint refinement | prove all eight lifted modes vanish and decouple from physical observables under increasing-region/refinement limits | preserves an emergent route if exact finite-spacing first-class symmetry is unavailable, but it is weaker than direct exact closure |
+| 4 | Root-A/B extensional owner surface | attach any surviving gravity/source law to the local `M_2(C)` distribution, Record instrument/history, action/decoder/grading/sign, physical state, and realized-history measure | law selection remains a cross-root axiom issue even if the gravity identity closes |
+
+Efficiency gate: score only a cancellation, a normalized live-family kill, or
+an extensional owner-ready law. Do not spend a block on more affine-source
+Hessians, scalar coefficient grids, source couplings, finite momentum counts,
+or precision tightening. Re-check the portfolio after the dynamical-source
+identity and at most every three hours; if its required terms are not licensed,
+state the exact axiom datum rather than smuggling it into a repair.

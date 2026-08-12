@@ -1067,3 +1067,17 @@ each; citation registration is `5,503/15,763`, out-degree four. The N1--N8
 packet and N5 execution certificate land with the science. No canonical axiom,
 fixed TOE percentage, audit verdict, or `review-loop` changes. Landing order
 adds Block 57 after #6149.
+
+## Block 58
+
+PR pending for
+`physics-loop/toe-axiom-closure-block58-nonuniform-full-edge-20260812`, stacked
+exactly on Block-57 delivery head `00d71b0b7e`. Its distinct review object is
+the correction of the Block-19/21/54 affine nonmetric surrogate, the first
+genuine full-edge conserved-source branches, their nonzero second-order Ward
+vectors and rank-eight pseudo-constraint Schur blocks, and the narrow scalar
+seagull/cubic-deficit repair exclusions. Primary/cache is `PASS=9 FAIL=0`;
+three mutations fail one check each; citation registration is `5,504/15,767`,
+out-degree four. N1--N8 and N5 land with the science. No canonical axiom, fixed
+TOE percentage, audit verdict, or `review-loop` changes. Landing order adds
+Block 58 after #6150.

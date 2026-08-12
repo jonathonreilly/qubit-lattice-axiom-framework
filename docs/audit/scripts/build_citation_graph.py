@@ -154,6 +154,13 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
     "inter_site_gate_cycle970_bounded_theorem_note_2026-08-09": [
         "scripts/frontier_cycle970_gate_independent_check_2026_08_09.py",
     ],
+    # Cycle 708's checker reconstructs the signed-permutation algebra and the
+    # four weighted-domain stabilizers without importing the numerical primary
+    # or its supplied source-response compiler.
+    "physical_source_edit_set_signed_stabilizer_classification_cycle708_note_2026-08-02": [
+        "scripts/physical_source_edit_set_signed_stabilizer_classification_cycle708_"
+        "independent_check_2026_08_02.py",
+    ],
     "b4_clock_relation_run_cycle879_bounded_theorem_note_2026-07-28": [
         "scripts/frontier_cycle879_b4_relation_independent_check_2026_07_28.py",
     ],

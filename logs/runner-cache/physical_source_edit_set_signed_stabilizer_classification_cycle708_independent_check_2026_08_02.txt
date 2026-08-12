@@ -1,0 +1,72 @@
+===== runner cache v1 =====
+runner: scripts/physical_source_edit_set_signed_stabilizer_classification_cycle708_independent_check_2026_08_02.py
+runner_sha256: 7cdf9d3b9d92249b796fc0b9de5884e18aa57c41d7e66bcdda36beec624eaf7a
+input_fingerprint_sha256: 49d378f8a1e48df6a29c5124f03f29899b14e579ad2e76f07dcdebcee593eb8b
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+PASS group has 48 distinct signed permutations
+PASS proper subgroup has order 24
+PASS constant-sign subgroup has order 12
+PASS constant-sign set is closed
+PASS constant-sign character is multiplicative
+PASS one_edit stabilizer order
+PASS one_edit constant-sign intersection order
+PASS one_edit subgroup-product formula
+PASS one_edit determinant balance
+PASS one_edit exact proper-frame profile
+PASS one_edit collision criterion
+PASS one_edit every-representative census
+PASS one_edit L=3 receipt profile
+PASS one_edit L=3 primary agreement
+PASS one_edit L=3 receipt representative census
+PASS one_edit L=7 receipt profile
+PASS one_edit L=7 primary agreement
+PASS one_edit L=7 receipt representative census
+PASS two_distinct_axis_edits stabilizer order
+PASS two_distinct_axis_edits constant-sign intersection order
+PASS two_distinct_axis_edits subgroup-product formula
+PASS two_distinct_axis_edits determinant balance
+PASS two_distinct_axis_edits exact proper-frame profile
+PASS two_distinct_axis_edits collision criterion
+PASS two_distinct_axis_edits every-representative census
+PASS two_distinct_axis_edits L=3 receipt profile
+PASS two_distinct_axis_edits L=3 primary agreement
+PASS two_distinct_axis_edits L=3 receipt representative census
+PASS two_distinct_axis_edits L=7 receipt profile
+PASS two_distinct_axis_edits L=7 primary agreement
+PASS two_distinct_axis_edits L=7 receipt representative census
+PASS three_distinct_axis_edits stabilizer order
+PASS three_distinct_axis_edits constant-sign intersection order
+PASS three_distinct_axis_edits subgroup-product formula
+PASS three_distinct_axis_edits determinant balance
+PASS three_distinct_axis_edits exact proper-frame profile
+PASS three_distinct_axis_edits collision criterion
+PASS three_distinct_axis_edits every-representative census
+PASS three_distinct_axis_edits L=3 receipt profile
+PASS three_distinct_axis_edits L=3 primary agreement
+PASS three_distinct_axis_edits L=3 receipt representative census
+PASS three_distinct_axis_edits L=7 receipt profile
+PASS three_distinct_axis_edits L=7 primary agreement
+PASS three_distinct_axis_edits L=7 receipt representative census
+PASS inversion_pair stabilizer order
+PASS inversion_pair constant-sign intersection order
+PASS inversion_pair subgroup-product formula
+PASS inversion_pair determinant balance
+PASS inversion_pair exact proper-frame profile
+PASS inversion_pair collision criterion
+PASS inversion_pair every-representative census
+PASS inversion_pair L=3 receipt profile
+PASS inversion_pair L=3 primary agreement
+PASS inversion_pair L=3 receipt representative census
+PASS inversion_pair L=7 receipt profile
+PASS inversion_pair L=7 primary agreement
+PASS inversion_pair L=7 receipt representative census
+PASS right-coset sidedness rejector changes eight frame labels
+PASS primary receipt reports no failed gates
+TOTAL: PASS=59 FAIL=0
+
+----- stderr -----
+

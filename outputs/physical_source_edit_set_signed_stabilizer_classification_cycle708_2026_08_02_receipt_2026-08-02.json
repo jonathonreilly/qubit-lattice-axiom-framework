@@ -31,20 +31,52 @@
   },
   "domains": {
     "L3": {
-      "d1": {
+      "inversion_pair": {
+        "agreement": 24,
+        "broken_minimum": "none",
+        "broken_over_floor": "none",
+        "cs_stab_has_minus_sign": true,
+        "cs_stab_order": 4,
+        "cs_stab_product_order": 48,
+        "distinct_representatives": 12,
+        "edits": "(c,c+ex):5 (c,c-ex):5",
+        "floor_both": "6.4e-12",
+        "floor_minus": "none",
+        "floor_plus": "none",
+        "forbidden_gap_hits": 0,
+        "lawful_pairs": 96,
+        "measured_profile": [
+          0,
+          0,
+          24,
+          0
+        ],
+        "pointwise_minus": "1.3e-11",
+        "pointwise_plus": "3.8e-15",
+        "predicted_profile": [
+          0,
+          0,
+          24,
+          0
+        ],
+        "product_formula": 48,
+        "stab48_order": 16,
+        "worst_lawful_floor": "6.4e-12"
+      },
+      "one_edit": {
         "agreement": 24,
         "broken_minimum": "none",
         "broken_over_floor": "none",
         "cs_stab_has_minus_sign": false,
         "cs_stab_order": 2,
         "cs_stab_product_order": 48,
-        "distinct_representatives": 6,
+        "distinct_representatives": 12,
         "edits": "(c,c+ex):5",
         "floor_both": "none",
         "floor_minus": "2.5e-12",
         "floor_plus": "2.3e-15",
         "forbidden_gap_hits": 0,
-        "lawful_pairs": 24,
+        "lawful_pairs": 48,
         "measured_profile": [
           12,
           12,
@@ -52,7 +84,7 @@
           0
         ],
         "pointwise_minus": "2.5e-12",
-        "pointwise_plus": "3.3e-15",
+        "pointwise_plus": "3.4e-15",
         "predicted_profile": [
           12,
           12,
@@ -63,39 +95,7 @@
         "stab48_order": 8,
         "worst_lawful_floor": "2.5e-12"
       },
-      "d2": {
-        "agreement": 24,
-        "broken_minimum": "5.7e-02",
-        "broken_over_floor": "2.3e+09",
-        "cs_stab_has_minus_sign": false,
-        "cs_stab_order": 1,
-        "cs_stab_product_order": 24,
-        "distinct_representatives": 12,
-        "edits": "(c,c+ex):5 (c,c+ey):7",
-        "floor_both": "none",
-        "floor_minus": "2.4e-11",
-        "floor_plus": "3.0e-15",
-        "forbidden_gap_hits": 0,
-        "lawful_pairs": 12,
-        "measured_profile": [
-          6,
-          6,
-          0,
-          12
-        ],
-        "pointwise_minus": "2.4e-11",
-        "pointwise_plus": "3.0e-15",
-        "predicted_profile": [
-          6,
-          6,
-          0,
-          12
-        ],
-        "product_formula": 24,
-        "stab48_order": 2,
-        "worst_lawful_floor": "2.4e-11"
-      },
-      "d3": {
+      "three_distinct_axis_edits": {
         "agreement": 24,
         "broken_minimum": "8.5e-02",
         "broken_over_floor": "3.1e+09",
@@ -127,28 +127,62 @@
         "stab48_order": 1,
         "worst_lawful_floor": "2.7e-11"
       },
-      "d4": {
+      "two_distinct_axis_edits": {
+        "agreement": 24,
+        "broken_minimum": "5.7e-02",
+        "broken_over_floor": "2.3e+09",
+        "cs_stab_has_minus_sign": false,
+        "cs_stab_order": 1,
+        "cs_stab_product_order": 24,
+        "distinct_representatives": 12,
+        "edits": "(c,c+ex):5 (c,c+ey):7",
+        "floor_both": "none",
+        "floor_minus": "2.4e-11",
+        "floor_plus": "3.0e-15",
+        "forbidden_gap_hits": 0,
+        "lawful_pairs": 12,
+        "measured_profile": [
+          6,
+          6,
+          0,
+          12
+        ],
+        "pointwise_minus": "2.4e-11",
+        "pointwise_plus": "3.0e-15",
+        "predicted_profile": [
+          6,
+          6,
+          0,
+          12
+        ],
+        "product_formula": 24,
+        "stab48_order": 2,
+        "worst_lawful_floor": "2.4e-11"
+      }
+    },
+    "L7": {
+      "inversion_pair": {
         "agreement": 24,
         "broken_minimum": "none",
         "broken_over_floor": "none",
         "cs_stab_has_minus_sign": true,
         "cs_stab_order": 4,
         "cs_stab_product_order": 48,
-        "distinct_representatives": 6,
+        "distinct_representatives": 12,
         "edits": "(c,c+ex):5 (c,c-ex):5",
-        "floor_both": "6.4e-12",
+        "floor_both": "1.2e-10",
         "floor_minus": "none",
         "floor_plus": "none",
         "forbidden_gap_hits": 0,
-        "lawful_pairs": 48,
+        "lawful_pairs": 96,
         "measured_profile": [
           0,
           0,
           24,
           0
         ],
-        "pointwise_minus": "1.3e-11",
-        "pointwise_plus": "3.8e-15",
+        "pointwise_minus": "1.2e-10",
+        "pointwise_plus": "1.3e-13",
         "predicted_profile": [
           0,
           0,
@@ -157,24 +191,22 @@
         ],
         "product_formula": 48,
         "stab48_order": 16,
-        "worst_lawful_floor": "6.4e-12"
-      }
-    },
-    "L7": {
-      "d1": {
+        "worst_lawful_floor": "1.2e-10"
+      },
+      "one_edit": {
         "agreement": 24,
         "broken_minimum": "none",
         "broken_over_floor": "none",
         "cs_stab_has_minus_sign": false,
         "cs_stab_order": 2,
         "cs_stab_product_order": 48,
-        "distinct_representatives": 6,
+        "distinct_representatives": 12,
         "edits": "(c,c+ex):5",
         "floor_both": "none",
         "floor_minus": "8.2e-11",
         "floor_plus": "8.9e-14",
         "forbidden_gap_hits": 0,
-        "lawful_pairs": 24,
+        "lawful_pairs": 48,
         "measured_profile": [
           12,
           12,
@@ -193,39 +225,7 @@
         "stab48_order": 8,
         "worst_lawful_floor": "8.2e-11"
       },
-      "d2": {
-        "agreement": 24,
-        "broken_minimum": "4.1e-02",
-        "broken_over_floor": "2.6e+08",
-        "cs_stab_has_minus_sign": false,
-        "cs_stab_order": 1,
-        "cs_stab_product_order": 24,
-        "distinct_representatives": 12,
-        "edits": "(c,c+ex):5 (c,c+ey):7",
-        "floor_both": "none",
-        "floor_minus": "1.5e-10",
-        "floor_plus": "2.1e-13",
-        "forbidden_gap_hits": 0,
-        "lawful_pairs": 12,
-        "measured_profile": [
-          6,
-          6,
-          0,
-          12
-        ],
-        "pointwise_minus": "1.5e-10",
-        "pointwise_plus": "2.1e-13",
-        "predicted_profile": [
-          6,
-          6,
-          0,
-          12
-        ],
-        "product_formula": 24,
-        "stab48_order": 2,
-        "worst_lawful_floor": "1.5e-10"
-      },
-      "d3": {
+      "three_distinct_axis_edits": {
         "agreement": 24,
         "broken_minimum": "1.2e-01",
         "broken_over_floor": "7.7e+08",
@@ -257,37 +257,37 @@
         "stab48_order": 1,
         "worst_lawful_floor": "1.6e-10"
       },
-      "d4": {
+      "two_distinct_axis_edits": {
         "agreement": 24,
-        "broken_minimum": "none",
-        "broken_over_floor": "none",
-        "cs_stab_has_minus_sign": true,
-        "cs_stab_order": 4,
-        "cs_stab_product_order": 48,
-        "distinct_representatives": 6,
-        "edits": "(c,c+ex):5 (c,c-ex):5",
-        "floor_both": "1.2e-10",
-        "floor_minus": "none",
-        "floor_plus": "none",
+        "broken_minimum": "4.1e-02",
+        "broken_over_floor": "2.6e+08",
+        "cs_stab_has_minus_sign": false,
+        "cs_stab_order": 1,
+        "cs_stab_product_order": 24,
+        "distinct_representatives": 12,
+        "edits": "(c,c+ex):5 (c,c+ey):7",
+        "floor_both": "none",
+        "floor_minus": "1.5e-10",
+        "floor_plus": "2.1e-13",
         "forbidden_gap_hits": 0,
-        "lawful_pairs": 48,
+        "lawful_pairs": 12,
         "measured_profile": [
+          6,
+          6,
           0,
-          0,
-          24,
-          0
+          12
         ],
-        "pointwise_minus": "1.2e-10",
-        "pointwise_plus": "1.2e-13",
+        "pointwise_minus": "1.5e-10",
+        "pointwise_plus": "2.1e-13",
         "predicted_profile": [
+          6,
+          6,
           0,
-          0,
-          24,
-          0
+          12
         ],
-        "product_formula": 48,
-        "stab48_order": 16,
-        "worst_lawful_floor": "1.2e-10"
+        "product_formula": 24,
+        "stab48_order": 2,
+        "worst_lawful_floor": "1.5e-10"
       }
     }
   },
@@ -311,35 +311,35 @@
   },
   "note": "PHYSICAL_SOURCE_EDIT_SET_SIGNED_STABILIZER_CLASSIFICATION_CYCLE708_NOTE_2026-08-02.md",
   "rejectors": {
-    "det_model_misclassified_d1": 12,
-    "full_classifier_lawful_d2": 12,
-    "proper_only_lawful_d2": 6,
-    "proper_only_mismatch_d2": 6,
+    "det_model_misclassified_one_edit": 12,
+    "full_classifier_lawful_two_distinct_axis_edits": 12,
+    "proper_only_lawful_two_distinct_axis_edits": 6,
+    "proper_only_mismatch_two_distinct_axis_edits": 6,
     "sgn_set_single_valued_lawful_frames": {
-      "d1": 24,
-      "d2": 12,
-      "d3": 6
+      "one_edit": 24,
+      "three_distinct_axis_edits": 6,
+      "two_distinct_axis_edits": 12
     },
     "wrong_sign_distance": {
       "L3": {
-        "d1": {
+        "one_edit": {
           "minus_frame": "5.0e-02",
           "over_floor": "2.0e+10",
           "plus_frame": "5.0e-02"
         },
-        "d3": {
+        "three_distinct_axis_edits": {
           "minus_frame": "4.2e-02",
           "over_floor": "1.5e+09",
           "plus_frame": "4.2e-02"
         }
       },
       "L7": {
-        "d1": {
+        "one_edit": {
           "minus_frame": "1.2e-02",
           "over_floor": "1.5e+08",
           "plus_frame": "1.2e-02"
         },
-        "d3": {
+        "three_distinct_axis_edits": {
           "minus_frame": "3.2e-02",
           "over_floor": "2.0e+08",
           "plus_frame": "3.2e-02"

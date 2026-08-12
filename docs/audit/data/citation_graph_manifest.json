@@ -1,6 +1,6 @@
 {
- "edge_count": 15488,
- "node_count": 5450,
+ "edge_count": 15490,
+ "node_count": 5451,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -13740,6 +13740,10 @@
   },
   "physical_scale_free_adjacency_dissection_bracket_cycle724_note_2026-08-03": {
    "deps_hash": "0d988fd1ac07",
+   "out_degree": 2
+  },
+  "physical_source_edit_set_signed_stabilizer_classification_cycle708_note_2026-08-02": {
+   "deps_hash": "7f0a42542a90",
    "out_degree": 2
   },
   "physical_source_stabilizer_coset_collapse_k_sign_law_cycle707_note_2026-08-01": {

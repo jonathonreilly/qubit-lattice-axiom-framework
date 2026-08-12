@@ -1,3 +1,12 @@
+===== runner cache v1 =====
+runner: scripts/physical_source_edit_set_signed_stabilizer_classification_cycle708_2026_08_02.py
+runner_sha256: f2e41a0191ce85a71275cbcfcb2064bb1f26ef68927b6b5b262b78ea7a4bb855
+input_fingerprint_sha256: 085f31f5aa02277c391a3f15d5bdd8748a3acb0a9ac49a51a687baae096d67eb
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 5.98
+status: ok
+----- stdout -----
 Cycle 708 conditional signed-stabilizer classifier for a supplied K map
 note PHYSICAL_SOURCE_EDIT_SET_SIGNED_STABILIZER_CLASSIFICATION_CYCLE708_NOTE_2026-08-02.md
 battery one-edit, two-distinct-axis-edits, three-distinct-axis-edits, and inversion-pair; sizes 3 and 7
@@ -52,3 +61,6 @@ separation_floor L=7 smallest off-class distance over worst lawful floor 1.5e+08
 size_independence Stab48 member index lists equal at L=3 and L=7 for all four domains PASS
 sign_single_valuedness on every lawful frame one_edit 24 two_distinct_axis_edits 12 three_distinct_axis_edits 6 PASS
 TOTAL: PASS=95 FAIL=0
+
+----- stderr -----
+

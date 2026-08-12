@@ -227,7 +227,7 @@ receipt_ok = (
     and C737.get("gates", {}).get("fail") == 0
     and C737.get("complete_support_sweep", {}).get("maximum_cardinality") == 8
     and C737.get("complete_support_sweep", {}).get("nonconstant_reading_minimum_lower_bound") == 10
-    and identity.get("canonical_incidence_rows_sha256") == packed_incidence_hash
+    and identity.get("canonical_sorted_incidence_rows_sha256") == packed_incidence_hash
     and identity.get("support_column_order_sha256") == column_order_hash
 )
 gate(receipt_ok, "independent.dependency", "Cycle 737 v2 is pass and binds this exact incidence/order")
@@ -252,7 +252,9 @@ for name in NAMES:
     canonical_function_hash = hashlib.sha256(b"".join(sorted(
         row + bytes([int(bit)]) for row, bit in zip(packed_rows, target)
     ))).hexdigest()
-    target_ok = target_ok and canonical_function_hash == metadata.get("canonical_rows_with_bit_sha256")
+    target_ok = target_ok and canonical_function_hash == metadata.get(
+        "canonical_incidence_row_bit_pairs_sha256"
+    )
 gate(target_ok, "independent.targets", "all eight Cycle 737 reading identities and upper supports reconstruct exactly")
 
 row_bits = []

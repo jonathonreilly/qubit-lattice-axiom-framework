@@ -1,0 +1,48 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_nonuniform_conserved_source_regge_increasing_period_pseudoconstraint_scaling_2026_08_12.py
+runner_sha256: 02ce6bdd92087f157a03ca2149ec749499084f47d3bb5a2d0eb8cf1abb2cd5ce
+input_fingerprint_sha256: c0d2d26d5f39d1f75cf37f2c6d25251e1d6c1adb732d36aaa3cc0997a4bec43b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 108.16
+status: ok
+----- stdout -----
+analytic_boundary: actual Regge-plus-deficit-square action, odd transversely homogeneous tori, every edge and harmonic retained
+physical_boundary: Euclidean static density and conditionally Lorentzian null Record source; no selected source, continuum law, or causal nonlinear update
+progress_boundary: infrared pseudo-constraint suppression is positive route evidence, but finite samples do not move a TOE percentage
+period_result: source=static L=3 k=2.094395102 Ward/eta^2=3.033634901 dominant_harmonic=1 nonmetric/metric=0.357295
+period_result: source=null L=3 k=2.094395102 Ward/eta^2=1.043651804 dominant_harmonic=1 nonmetric/metric=0.093337
+period_result: source=static L=5 k=1.256637061 Ward/eta^2=0.811713003 dominant_harmonic=2 nonmetric/metric=0.161968
+period_result: source=null L=5 k=1.256637061 Ward/eta^2=0.560584371 dominant_harmonic=2 nonmetric/metric=0.032605
+period_result: source=static L=7 k=0.897597901 Ward/eta^2=0.267442216 dominant_harmonic=2 nonmetric/metric=0.087163
+period_result: source=null L=7 k=0.897597901 Ward/eta^2=0.255345173 dominant_harmonic=2 nonmetric/metric=0.016729
+period_result: source=static L=9 k=0.698131701 Ward/eta^2=0.121835533 dominant_harmonic=2 nonmetric/metric=0.053827
+period_result: source=null L=9 k=0.698131701 Ward/eta^2=0.131313670 dominant_harmonic=2 nonmetric/metric=0.010166
+period_result: source=static L=11 k=0.571198664 Ward/eta^2=0.066601217 dominant_harmonic=2 nonmetric/metric=0.036400
+period_result: source=null L=11 k=0.571198664 Ward/eta^2=0.075183683 dominant_harmonic=2 nonmetric/metric=0.006825
+[PASS] full-edge-all-harmonic-parameterization: every nonaverage edge direction splits into the complete nongauge and displacement bases
+       L=3 static: ranks=27+8+10=45; L=3 null: ranks=27+8+10=45; L=5 static: ranks=49+16+10=75; L=5 null: ranks=49...
+[PASS] increasing-period-nonlinear-branches: both conserved sources solve all nongauge equations with positive lengths and metric-dom...
+       periods=(3, 5, 7, 9, 11); max projected residual=8.10e-13
+[PASS] quadratic-harmonic-dealiasing: the L=3 defect is an aliased second harmonic; at every larger period it sits at 2k
+       static L=3: m=1, null L=3: m=1, static L=5: m=2, null L=5: m=2, static L=7: m=2, null L=7: m=2, static L=9:...
+[PASS] quadratic-amplitude-law: the solved Ward force matches the symmetric quadratic jet and survives a fourfold amplit...
+       static L=3: nonlinear/leading=0.995351; null L=3: nonlinear/leading=0.999819; static L=5: nonlinear/leading...
+[PASS] nonlinear-infrared-suppression: the full nonlinear Ward defect decreases monotonically at fixed physical metric amplitude
+       static: 3.033635->0.066601; null: 1.043652->0.075184
+[PASS] leading-k-cubed-scaling: the independent weak-amplitude tail is k cubed to the resolved commensurate-period accuracy
+       static: exponent=2.978573, C(k_min)=0.373308; null: exponent=2.974311, C(k_min)=0.438785
+[PASS] metric-purity-improves: the nonlinear branches become increasingly metric-dominated along the same infrared sequ...
+       static: nonmetric/metric=0.357295->0.036400; null: nonmetric/metric=0.093337->0.006825
+[PASS] scope-strategy-and-no-go-packet: the note preserves exact-finite versus controlled-infrared boundaries and carries N1 thr...
+N5_CERTIFICATE: all edge variables and Fourier harmonics were retained on five odd periods for two conserved sources; longer periods isolate the leading infrared jet
+per_element: checked 15L edge lengths, 11L-6 nongauge coordinates, and 4L-4 displacement coordinates through L=11
+per_site: checked every one of the 50 hinge classes and 240 simplex-hinge incidences per longitudinal site
+per_mode: checked every nonzero harmonic on the nonlinear tori and separated the fundamental source from its generated second harmonic
+per_block: checked both sources, five nonlinear periods, four leading-jet periods, and two amplitude controls per source; Schur blocks are independently checked by the companion
+lattice_wide: increasing-period evidence only; no all-L, full-Z3, observable-decoupling, Lorentzian nonlinear, or selected-law theorem is claimed
+scope_boundary: fixed Regge remains non-exact at finite spacing, while its measured Ward and pseudo-constraint defects soften toward the infrared
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

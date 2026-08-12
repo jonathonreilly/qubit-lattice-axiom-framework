@@ -1,0 +1,30 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_nonuniform_conserved_source_regge_increasing_period_pseudoconstraint_schur_companion_2026_08_12.py
+runner_sha256: e0e6f83802114399d35e4e25ad94ba113503ddb9c67680356dcb1b7052b14d4d
+input_fingerprint_sha256: 7c61995abcc62e47d7b7c6ed2bb7d96c3abc7e0802059bbe1babdd3729185396
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 64.88
+status: ok
+----- stdout -----
+analytic_boundary: orthonormal full-harmonic Schur complements of the actual sourced Regge length Hessian
+physical_boundary: Euclidean finite-spacing pseudo-constraint inertia, not a Lorentzian ghost or continuum theorem
+schur_result: source=static L=3 dimension=8 inertia=5-/3+/0zero max_abs/eta=0.176688
+schur_result: source=null L=3 dimension=8 inertia=5-/3+/0zero max_abs/eta=0.139431
+schur_result: source=static L=5 dimension=16 inertia=10-/6+/0zero max_abs/eta=0.140878
+schur_result: source=null L=5 dimension=16 inertia=10-/6+/0zero max_abs/eta=0.105053
+[PASS] schur-source-branches: all four companion branches solve the nongauge equations before Hessian elimination
+[PASS] full-harmonic-mixed-sign-inertia: every executed displacement harmonic remains lifted with five-negative/three-positive in...
+[PASS] pseudoconstraint-schur-softening: the largest normalized Schur lift decreases from period three to period five for both so...
+       static: 0.176688->0.140878; null: 0.139431->0.105053
+[PASS] companion-scope-boundary: the source note identifies this independent companion and preserves the finite-spacing b...
+N5_CERTIFICATE: four complete orthonormal Schur eliminations cover both sources and both declared periods
+per_element: complex-step differentiated every raw length column before orthonormal projection
+per_site: all fifty hinge classes and 240 simplex-hinge incidences contribute to each Hessian column
+per_mode: all eight real displacement directions per positive Fourier representative enter the Schur block
+per_block: compared 8-by-8 and 16-by-16 relaxed gauge blocks for static and Record/null sources
+lattice_wide: not executed; this companion establishes finite-period mixed-sign lift and initial softening only
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

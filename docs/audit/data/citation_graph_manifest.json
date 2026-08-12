@@ -1,6 +1,6 @@
 {
- "edge_count": 15786,
- "node_count": 5509,
+ "edge_count": 15789,
+ "node_count": 5510,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -581,6 +581,10 @@
   "admissibility_sourced_regge_joint_ward_schur_completion_boundary_bounded_theorem_note_2026-08-10": {
    "deps_hash": "5af03547e4f2",
    "out_degree": 4
+  },
+  "admissibility_strict_nearest_neighbor_state_dependent_record_born_history_single_front_positive_theorem_note_2026-08-12": {
+   "deps_hash": "ac1145dbe30e",
+   "out_degree": 2
   },
   "admissibility_ten_ray_coframe_link_local_frame_ward_stationarity_connection_boundary_bounded_theorem_note_2026-08-11": {
    "deps_hash": "91b0f3b0f045",
@@ -1883,8 +1887,8 @@
    "out_degree": 11
   },
   "canonical_harness_index": {
-   "deps_hash": "40c530cb1897",
-   "out_degree": 357
+   "deps_hash": "a6ebbb7ef21a",
+   "out_degree": 358
   },
   "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": {
    "deps_hash": "808c1ccb6109",

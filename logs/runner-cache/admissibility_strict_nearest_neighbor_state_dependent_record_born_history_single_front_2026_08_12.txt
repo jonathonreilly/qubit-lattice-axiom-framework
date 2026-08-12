@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_strict_nearest_neighbor_state_dependent_record_born_history_single_front_2026_08_12.py
+runner_sha256: f345b15ca8ea1cb24dd395fa8a98b4966da7e74328337ac7228026dd8c0156af
+input_fingerprint_sha256: ffbcaf38070ef922f1a14d7fd6ee41f9237bd2da1b6b309db2e1c2e59a66f1fa
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 36.28
+status: ok
+----- stdout -----
+PASS A-current-source-closure: current axiom and Block-63 law are literal; no historical recurrence is read
+PASS B-unchanged-state-dependent-CP-kernel: 10 fixture/program pairs; CP Choi min=-1.129e-16; hostile rotor L1=1.5, Linf=0.5
+PASS C-literal-carriers-shared-effect-covariance: 1104 exact decodes, literal shared E0 carrier, additive readout, and 72/72 active rotation/translation controls close
+PASS D-projective-contingent-history: 243 length-five cylinders, 81 held marginals, and distinct positive members (0, 0, 0, 1, 2, 1)/(2, 2, 2, 1, 1, 0)
+PASS E-homogeneous-strict-nearest-neighbor-schema: three covariant local clauses use only six unit offsets across 480 contexts / 1440 exact stochastic branches
+PASS F-absence-finalized-unique-local-answer: 5/5 symbolic role relations, 16/16 accumulated-history parity cases, and all 192 held microsteps have one local answer; no host schedule is supplied
+PASS G-arbitrary-length-permanent-renewal: N=64 writes 193 permanent M2 Records; exact parity/residue proof gives 3N+1 fresh sites for every N on the declared strip
+PASS H-positive-claim-boundary: unbounded single-front existence theorem only; global completion, selection, adoption, audit retention, and TOE scoring remain open
+METRICS fixture_pairs=10 covariance=72/72 decoder_cases=1104 schema_cases=480 intertwiner_branches=1440 cylinders_N5=243 active_induction=5/5 parity_quotient=16/16 active_microsteps=192 records_N64=193 cp_min=-1.129e-16
+BOUNDARY: the unchanged state-dependent CP kernel and projective contingent histories now execute through one homogeneous strict-NN absence-finalized 3N+1 single front; physical law selection, autonomous matter compilation, rate/time, multi-front/global resources, audit retention, and TOE percentages remain open
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

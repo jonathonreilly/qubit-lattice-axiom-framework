@@ -45,13 +45,35 @@ RECEIPT_PATH = ROOT / (
 )
 AUDIT_INPUT_PATHS = (
     "docs/MINIMAL_AXIOMS_2026-06-29.md",
-    C741_NOTE_PATH,
-    C741_PRIMARY_PATH,
-    C741_CHECKER_PATH,
-    C741_RECEIPT_PATH,
-    C741_INDEPENDENT_RECEIPT_PATH,
-    NOTE_PATH,
-    CHECKER_PATH,
+    "docs/PHYSICAL_CELL_CUTTING_LEAST_COMPUTING_SETS_CYCLE737_NOTE_2026-08-05.md",
+    "scripts/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05.py",
+    "scripts/physical_cell_cutting_least_computing_sets_cycle737_"
+    "independent_check_2026_08_05.py",
+    "outputs/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05_"
+    "receipt_2026-08-05.json",
+    "outputs/physical_cell_cutting_least_computing_sets_cycle737_independent_check_"
+    "2026_08_05_receipt_2026-08-05.json",
+    "docs/PHYSICAL_CELL_CUTTING_TWELVE_FRONTIER_CYCLE739_NOTE_2026-08-05.md",
+    "scripts/physical_cell_cutting_twelve_frontier_cycle739_2026_08_05.py",
+    "scripts/physical_cell_cutting_twelve_frontier_cycle739_"
+    "independent_check_2026_08_05.py",
+    "outputs/physical_cell_cutting_twelve_frontier_cycle739_2026_08_05_"
+    "receipt_2026-08-05.json",
+    "outputs/physical_cell_cutting_twelve_frontier_cycle739_independent_check_"
+    "2026_08_05_receipt_2026-08-05.json",
+    "requirements.txt",
+    "requirements-release.txt",
+    "docs/PHYSICAL_CELL_CUTTING_FOURTEEN_FRONTIER_CYCLE741_NOTE_2026-08-05.md",
+    "scripts/physical_cell_cutting_fourteen_frontier_cycle741_2026_08_05.py",
+    "scripts/physical_cell_cutting_fourteen_frontier_cycle741_"
+    "independent_check_2026_08_05.py",
+    "outputs/physical_cell_cutting_fourteen_frontier_cycle741_2026_08_05_"
+    "receipt_2026-08-05.json",
+    "outputs/physical_cell_cutting_fourteen_frontier_cycle741_independent_check_"
+    "2026_08_05_receipt_2026-08-05.json",
+    "docs/PHYSICAL_CELL_CUTTING_SIXTEEN_ATTAINED_CYCLE742_NOTE_2026-08-05.md",
+    "scripts/physical_cell_cutting_sixteen_attained_cycle742_"
+    "independent_check_2026_08_05.py",
 )
 AUDIT_TIMEOUT_SEC = 900
 C737_SURFACES = (

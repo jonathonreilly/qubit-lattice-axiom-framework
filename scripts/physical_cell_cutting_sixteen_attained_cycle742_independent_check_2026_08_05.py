@@ -76,15 +76,19 @@ RECEIPT_PATH = ROOT / (
     "2026_08_05_receipt_2026-08-05.json"
 )
 AUDIT_INPUT_PATHS = (
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
     "docs/PHYSICAL_CELL_CUTTING_SIXTEEN_ATTAINED_CYCLE742_NOTE_2026-08-05.md",
     "scripts/physical_cell_cutting_sixteen_attained_cycle742_2026_08_05.py",
     "outputs/physical_cell_cutting_sixteen_attained_cycle742_2026_08_05_"
     "receipt_2026-08-05.json",
-    C741_NOTE_PATH,
-    C741_PRIMARY_PATH,
-    C741_CHECKER_PATH,
-    C741_RECEIPT_PATH,
-    C741_INDEPENDENT_RECEIPT_PATH,
+    "docs/PHYSICAL_CELL_CUTTING_FOURTEEN_FRONTIER_CYCLE741_NOTE_2026-08-05.md",
+    "scripts/physical_cell_cutting_fourteen_frontier_cycle741_2026_08_05.py",
+    "scripts/physical_cell_cutting_fourteen_frontier_cycle741_"
+    "independent_check_2026_08_05.py",
+    "outputs/physical_cell_cutting_fourteen_frontier_cycle741_2026_08_05_"
+    "receipt_2026-08-05.json",
+    "outputs/physical_cell_cutting_fourteen_frontier_cycle741_independent_check_"
+    "2026_08_05_receipt_2026-08-05.json",
     "requirements.txt",
     "requirements-release.txt",
     "docs/PHYSICAL_CELL_CUTTING_LEAST_COMPUTING_SETS_CYCLE737_NOTE_2026-08-05.md",
@@ -105,6 +109,10 @@ AUDIT_INPUT_PATHS = (
     "2026_08_05_receipt_2026-08-05.json",
 )
 AUDIT_TIMEOUT_SEC = 900
+PRIMARY_REQUIRED_INPUTS = tuple(
+    path for path in AUDIT_INPUT_PATHS
+    if path not in (PRIMARY_PATH, PRIMARY_RECEIPT_PATH)
+) + (CHECKER_PATH,)
 
 
 def sha256(path):
@@ -466,12 +474,7 @@ def primary_contract_ok(receipt):
         and receipt.get("status") == "pass"
         and receipt.get("gates", {}).get("fail") == 0
         and receipt.get("runner_sha256") == sha256(PRIMARY_PATH)
-        and receipt_inputs_current(receipt, (
-            "docs/MINIMAL_AXIOMS_2026-06-29.md",
-            C741_NOTE_PATH, C741_PRIMARY_PATH, C741_CHECKER_PATH,
-            C741_RECEIPT_PATH, C741_INDEPENDENT_RECEIPT_PATH,
-            NOTE_PATH, CHECKER_PATH,
-        ))
+        and receipt_inputs_current(receipt, PRIMARY_REQUIRED_INPUTS)
         and population.get("cuttings") == 15800
         and population.get("pieces") == 192
         and population.get("processed_rows") == 15800

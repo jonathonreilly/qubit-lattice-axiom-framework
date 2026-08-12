@@ -1,6 +1,6 @@
 {
- "edge_count": 15789,
- "node_count": 5510,
+ "edge_count": 15795,
+ "node_count": 5511,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -493,6 +493,10 @@
   "admissibility_permanent_record_formation_scheduler_lorentzian_time_constraint_selection_axiom_boundary_bounded_theorem_note_2026-08-11": {
    "deps_hash": "a6cdd63b4050",
    "out_degree": 3
+  },
+  "admissibility_physical_state_to_record_attachment_selection_cut_bounded_theorem_note_2026-08-12": {
+   "deps_hash": "cb936bc01be9",
+   "out_degree": 5
   },
   "admissibility_positive_two_stream_timelike_mean_dilation_zero_mode_boundary_bounded_theorem_note_2026-08-10": {
    "deps_hash": "9a9eae295351",
@@ -1887,8 +1891,8 @@
    "out_degree": 11
   },
   "canonical_harness_index": {
-   "deps_hash": "a6ebbb7ef21a",
-   "out_degree": 358
+   "deps_hash": "f8659fe2023e",
+   "out_degree": 359
   },
   "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": {
    "deps_hash": "808c1ccb6109",

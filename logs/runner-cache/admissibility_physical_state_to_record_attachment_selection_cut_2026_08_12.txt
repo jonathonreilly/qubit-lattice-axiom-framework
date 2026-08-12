@@ -1,0 +1,24 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_physical_state_to_record_attachment_selection_cut_2026_08_12.py
+runner_sha256: 3b0695ef261e6704b071e7efe593d8c467d43d77ceb9b0fc1c1f5078dd76a3c2
+input_fingerprint_sha256: be7dfe088081e499a4a9a500854bc6198a4959946d45c0597db2a8521c85ec7e
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 25.71
+status: ok
+----- stdout -----
+PASS A-current-source-and-route-correction: current axioms, Block 64, Cycle 713, Cycle 883, and the prior selection cut are literal; reset/renewal is not reopened
+PASS B-coherent-pointer-state-dependent-CP-instrument: 96 frame/menu/hazard effect resolutions normalize; CP Choi min=-1.129e-16; coherent pointer formation weight=3/8
+PASS C-no-unknown-density-copy-branch-first-repair: deterministic exact-density Record labeling fails mixture affinity; branch weights are affine and every successor head carries the fixed effect-normalized state
+PASS D-total-pointer-density-and-dirty-disposition: five arbitrary/coherent/entangled joint densities normalize; invalid, occupied, and spent patches refuse without a clean-bank premise
+PASS E-strict-NN-outcome-gated-bootstrap: 48/48 frame/phase patches use three unit edges; local absence/presence forces outcome then head then the Block-64 relay
+PASS F-exact-Block64-history-continuation: all three first branches continue 63 events with 567 unique microsteps; 64 outcomes occupy 191=3*64-1 permanent Records
+PASS G-active-proper-cubic-translation-covariance: 144/144 joint pointer/instrument/Record extension controls intertwine exactly
+PASS H-extensional-menu-and-occurrence-forks: menu 0/1 give distinct exact laws while preserving literal shared E0; hazards 1 and 3/4 change occurrence but not conditional content
+PASS I-owner-clause-completeness-and-boundary: all eleven attachment fields are explicit; the packet is an unadopted bounded selection cut with no audit or TOE promotion
+METRICS effects=96 cp_min=-1.129e-16 dirty_inputs=5 local_cases=48/48 continuation_microsteps=567 records_N64=191 covariance=144/144 menu_fork=(Fraction(0, 1), Fraction(9, 50), Fraction(77, 250), Fraction(64, 125))!=(Fraction(0, 1), Fraction(9, 50), Fraction(13, 20), Fraction(17, 100))
+BOUNDARY: a branch-first coherent-pointer instrument can seed the unchanged Block-64 front without copying an unknown density, but physical-state ontology, menu/frame/decoder, occurrence hazard, global conflicts, clock, and law adoption are extensional owner choices
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

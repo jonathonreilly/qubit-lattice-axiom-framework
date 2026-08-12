@@ -94,6 +94,18 @@
       "detail": "templates carrying the four-cube body diagonal 24 of 24",
       "pass": true
     },
+    "D10.stabilizer_is_subgroup": {
+      "detail": "product and inverse closure within the order-12 stabilizer",
+      "pass": true
+    },
+    "D11.orbit_structure": {
+      "detail": "stencil orbits under the derived group 2 of size [12]",
+      "pass": true
+    },
+    "D12.local_pieces_coincide": {
+      "detail": "worst spread over the 24 local pieces 0.000000e+00 with 24 distinct class tuples",
+      "pass": true
+    },
     "D2.folded_stabilizer_order": {
       "detail": "signed axis permutations preserving the stencil 12",
       "pass": true
@@ -102,28 +114,28 @@
       "detail": "stencil stabilizer equals the set fixing the body-diagonal line, 48 of 48",
       "pass": true
     },
-    "D4.tick_fold_supplies_improper_half": {
-      "detail": "order without the periodic tick identification 6 against 12",
+    "D4.tick_fixed_unsigned_subgroup": {
+      "detail": "tick-fixed order 6 equals the unsigned coordinate-permutation subgroup",
       "pass": true
     },
-    "D5.determinant_split": {
+    "D5.fold_adds_global_sign_coset": {
+      "detail": "folded stabilizer is unsigned order 6 plus sign-reversed order 6",
+      "pass": true
+    },
+    "D6.folded_determinant_split": {
       "detail": "proper 6 improper 6 within the stabilizer",
       "pass": true
     },
-    "D6.proper_half_is_the_sextet": {
+    "D7.tick_fixed_determinant_split": {
+      "detail": "tick-fixed proper 3 improper 3",
+      "pass": true
+    },
+    "D8.proper_half_is_the_sextet": {
       "detail": "proper members among the 24 landed frames (1, 4, 9, 15, 18, 23)",
       "pass": true
     },
-    "D7.coset_count": {
+    "D9.coset_count": {
       "detail": "proper frames per stabilizer member 4",
-      "pass": true
-    },
-    "D8.orbit_structure": {
-      "detail": "stencil orbits under the derived group 2 of size [12]",
-      "pass": true
-    },
-    "D9.local_pieces_coincide": {
-      "detail": "worst spread over the 24 local pieces 0.000000e+00 with 24 distinct class tuples",
       "pass": true
     },
     "E1.L3.derived_predicts_measured": {
@@ -193,11 +205,13 @@
   },
   "notes": {
     "offset_escapes": 7938,
+    "rigid_improper": 3,
     "rigid_order": 6,
+    "rigid_proper": 3,
     "stencil_order": 12,
     "tracked_stencils": 6
   },
-  "pass": 46,
+  "pass": 49,
   "runner": "physical_stencil_derived_centrality_cycle721_2026_08_02.py",
   "sextet": [
     1,

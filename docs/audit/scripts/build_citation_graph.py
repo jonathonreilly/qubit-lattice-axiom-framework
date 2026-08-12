@@ -186,6 +186,12 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
         "scripts/physical_ambient_domain_symmetry_split_cycle720_"
         "independent_check_2026_08_02.py",
     ],
+    # Cycle 721's checker independently generates the four-cube paths, uses a
+    # pure-tuple signed-permutation group, and transports edge endpoints.
+    "physical_stencil_derived_centrality_cycle721_note_2026-08-02": [
+        "scripts/physical_stencil_derived_centrality_cycle721_"
+        "independent_check_2026_08_02.py",
+    ],
     "b4_clock_relation_run_cycle879_bounded_theorem_note_2026-07-28": [
         "scripts/frontier_cycle879_b4_relation_independent_check_2026_07_28.py",
     ],

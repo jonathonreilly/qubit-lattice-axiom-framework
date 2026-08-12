@@ -1,11 +1,8 @@
 """Cycle 721 -- stencil-derived centrality of the box-centre point reflection.
 
-Class-A finite check script (stdlib + numpy only).  Cycles 717-720 MEASURED that the
-static open-box assembly of the landed Cycle-696 compiler is invariant under a
-twelve-element set of signed axis permutations whose proper half is a sextet, and that
-the box-centre point reflection sigma commutes with all twenty-four proper frames.
-This script DERIVES that group from the assembly stencil alone and then confirms the
-derivation against the assembled form, in this order:
+Finite check script (stdlib + numpy only).  For the supplied Cycle-696 compiler,
+the script derives the finite signed-permutation stabilizer from the assembly
+stencil and then compares that prediction with the assembled form, in this order:
 
   A  the frame site map of the landed compiler is the centre conjugate
      s -> R(s - c) + c, and its translation part is exactly (I - R)c, an integer
@@ -17,9 +14,10 @@ derivation against the assembled form, in this order:
      no evaluation of the assembled form at all, and the Cycle-719 closed form for
      sigma is recovered rather than measured;
   D  the assembly stencil is the twenty-four path simplices of the base cell, every one
-     of which carries the body diagonal of the four-cube; on the folded tick the set of
-     signed axis permutations preserving that stencil has order twelve, and the improper
-     half of it is supplied by the periodic tick identification;
+     of which carries the body diagonal of the four-cube; on the supplied folded tick
+     the set of signed axis permutations preserving that stencil has order twelve,
+     while the explicitly tick-fixed comparison is the unsigned order-six coordinate-
+     permutation subgroup; the fold adds its globally sign-reversed coset;
   E  the derived group predicts the invariance of the assembled form at three box sizes,
      and -- the discriminating gate -- tracks deliberately mutilated stencils, where the
      derived and measured groups move together.
@@ -27,8 +25,9 @@ derivation against the assembled form, in this order:
 The six improper members are registered as computational identities of the assembled
 form, not as lattice symmetries: the lattice axiom sanctions proper rotations only.
 
-No value is read from a pinned table: every number printed here is recomputed in this
-run from the landed compiler and from the stencil combinatorics.
+No value is read from a pinned result table.  Scientific inputs are declared in
+``AUDIT_INPUT_PATHS``; the runner imports the supplied compiler and its transitive
+modules, and writes only its paired receipt.
 """
 from __future__ import annotations
 
@@ -48,6 +47,27 @@ _SPEC = importlib.util.spec_from_file_location("c696_compiler_for_c721", _MODULE
 c696 = importlib.util.module_from_spec(_SPEC)
 _SPEC.loader.exec_module(c696)
 regge = c696.regge
+
+AUDIT_TIMEOUT_SEC = 120
+AUDIT_INPUT_PATHS = (
+    "docs/PHYSICAL_STENCIL_DERIVED_CENTRALITY_CYCLE721_NOTE_2026-08-02.md",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/PHYSICAL_BODY_DIAGONAL_FRAME_FUNCTIONAL_TRANSVERSAL_LAW_CYCLE717_NOTE_2026-08-02.md",
+    "scripts/physical_body_diagonal_frame_functional_transversal_law_cycle717_2026_08_02.py",
+    "outputs/physical_body_diagonal_frame_functional_transversal_law_cycle717_2026_08_02_receipt_2026-08-02.json",
+    "docs/PHYSICAL_LEVEL_SET_ORBIT_LAW_IMPROPER_CENTER_IDENTITY_CYCLE719_NOTE_2026-08-02.md",
+    "scripts/physical_level_set_orbit_law_improper_center_identity_cycle719_2026_08_02.py",
+    "outputs/physical_level_set_orbit_law_improper_center_identity_cycle719_2026_08_02_receipt_2026-08-02.json",
+    "docs/PHYSICAL_AMBIENT_DOMAIN_SYMMETRY_SPLIT_CYCLE720_NOTE_2026-08-02.md",
+    "scripts/physical_ambient_domain_symmetry_split_cycle720_2026_08_02.py",
+    "outputs/physical_ambient_domain_symmetry_split_cycle720_2026_08_02_receipt_2026-08-02.json",
+    "scripts/physical_open_coframe_k_endpoint_compiler_cycle696_2026_07_25.py",
+    "scripts/physical_dynamical_metric_source_law_bridge_tournament_cycle576_2026_07_22.py",
+    "scripts/physical_dynamical_metric_source_law_bridge_cycle576_regge_support_2026_07_22.py",
+    "scripts/physical_dynamical_metric_source_law_bridge_cycle576_plaquette_support_2026_07_22.py",
+    "scripts/frontier_cubic_coxeter_regge_second_variation_3plus1_2026_06_09.py",
+)
+DECLARED_INPUT_PATHS = AUDIT_INPUT_PATHS
 
 L_LIST = (3, 4, 5)
 L_PAIRS = (3, 5)
@@ -318,35 +338,55 @@ def section_d() -> None:
     crit = {k for k in range(48) if len({int(t) for t in (B48[k] @ one)}) == 1}
     dets = [int(round(float(np.linalg.det(B48[k])))) for k in stab]
     proper = sorted(FRAME_AT.index(k) for k in stab if k in FRAME_AT)
+    unsigned = {
+        k for k in stab
+        if all(int(value) >= 0 for value in B48[k].reshape(-1))
+    }
+    sign_reversed = {KEY48[(-B48[k]).tobytes()] for k in unsigned}
+    rigid_dets = [int(round(float(np.linalg.det(B48[k])))) for k in rigid]
+    products = {KEY48[(B48[a] @ B48[b]).tobytes()] for a in stab for b in stab}
+    inverses = {KEY48[B48[a].T.tobytes()] for a in stab}
     check("D2.folded_stabilizer_order", len(stab) == 12,
           "signed axis permutations preserving the stencil {}".format(len(stab)))
     check("D3.body_diagonal_criterion", stab == crit,
           "stencil stabilizer equals the set fixing the body-diagonal line, 48 of 48")
-    check("D4.tick_fold_supplies_improper_half", len(rigid) == 6 and rigid < stab,
-          "order without the periodic tick identification {} against {}".format(
-              len(rigid), len(stab)))
-    check("D5.determinant_split", dets.count(1) == 6 and dets.count(-1) == 6,
+    check("D4.tick_fixed_unsigned_subgroup", rigid == unsigned and len(rigid) == 6,
+          "tick-fixed order {} equals the unsigned coordinate-permutation subgroup".format(
+              len(rigid)))
+    check("D5.fold_adds_global_sign_coset",
+          not (unsigned & sign_reversed) and stab == unsigned | sign_reversed,
+          "folded stabilizer is unsigned order {} plus sign-reversed order {}".format(
+              len(unsigned), len(sign_reversed)))
+    check("D6.folded_determinant_split", dets.count(1) == 6 and dets.count(-1) == 6,
           "proper {} improper {} within the stabilizer".format(
               dets.count(1), dets.count(-1)))
-    check("D6.proper_half_is_the_sextet", tuple(proper) == SEXTET,
+    check("D7.tick_fixed_determinant_split",
+          rigid_dets.count(1) == 3 and rigid_dets.count(-1) == 3,
+          "tick-fixed proper {} improper {}".format(
+              rigid_dets.count(1), rigid_dets.count(-1)))
+    check("D8.proper_half_is_the_sextet", tuple(proper) == SEXTET,
           "proper members among the 24 landed frames {}".format(tuple(proper)))
-    check("D7.coset_count", len(FRAMES) // len(proper) == 4,
+    check("D9.coset_count", len(FRAMES) // len(proper) == 4,
           "proper frames per stabilizer member {}".format(len(FRAMES) // len(proper)))
+    check("D10.stabilizer_is_subgroup", products == stab and inverses == stab,
+          "product and inverse closure within the order-{} stabilizer".format(len(stab)))
     orbits = set()
     for p in range(len(SIMPLICES)):
         orbits.add(frozenset(RHO[k][p] for k in stab))
-    check("D8.orbit_structure", len(orbits) == 2 and {len(o) for o in orbits} == {12},
+    check("D11.orbit_structure", len(orbits) == 2 and {len(o) for o in orbits} == {12},
           "stencil orbits under the derived group {} of size {}".format(
               len(orbits), sorted({len(o) for o in orbits})))
     hs = [c696.simplex_local_hessian(p) for p in range(len(SIMPLICES))]
     spread = max(float(np.max(np.abs(hs[p] - hs[q])))
                  for p in range(len(hs)) for q in range(len(hs)))
     classes = len({tuple(c696.CELL[p]["cls"]) for p in range(len(SIMPLICES))})
-    check("D9.local_pieces_coincide", spread == BOUND_EXACT and classes == 24,
+    check("D12.local_pieces_coincide", spread == BOUND_EXACT and classes == 24,
           "worst spread over the 24 local pieces {} with {} distinct class tuples".format(
               fmt(spread), classes))
     NOTES["stencil_order"] = len(stab)
     NOTES["rigid_order"] = len(rigid)
+    NOTES["rigid_proper"] = rigid_dets.count(1)
+    NOTES["rigid_improper"] = rigid_dets.count(-1)
 
 
 def section_e() -> None:

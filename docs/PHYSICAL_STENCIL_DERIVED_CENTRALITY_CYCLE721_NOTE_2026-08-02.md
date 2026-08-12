@@ -1,291 +1,263 @@
-# Centrality of the box-centre point reflection, derived from the assembly stencil — Cycle 721
+# Finite stencil stabilizer and box-centre centrality — Cycle 721
 
-Date: 2026-08-02
+**Date:** 2026-08-02 (review-loop repair 2026-08-12)
 
-Claim type: bounded_theorem
+**Type:** bounded_theorem
 
-Authority: none. Audit: unset. Constitutional effect: none. This cycle edits no
-axiom, foundation, Qualification, primitive, registry, policy, queue,
-audit-status, or PR-control surface. No new axiom or primitive is proposed or
-adopted.
+**Status:** proposed_retained
 
-No coupling value, sign, or scale is selected or derived in this cycle; every
-such object is named as supplied. The floating-point rows are conditional on the
-fixed, joined Cycle-696 compiler contract inventoried below; that compiler is a
-landed but audit-excluded support surface, not an independent audit authority.
+**Primary runner:**
+[`physical_stencil_derived_centrality_cycle721_2026_08_02.py`](../scripts/physical_stencil_derived_centrality_cycle721_2026_08_02.py)
 
-Cycles 717 through 720 established, by direct evaluation of the assembled static
-form, that a twelve-element set of signed axis permutations leaves that form
-fixed, that the six proper members of the set are a sextet inside the
-twenty-four proper rotations, and that the box-centre point reflection commutes
-with all twenty-four. In those cycles the group was **measured, not derived**:
-its members were found by relabelling the assembled form and reading off which
-relabellings changed nothing. This cycle removes the evaluation. The same
-twelve-element group, the same sextet, the same four-valued frame label, and the
-centrality of the box-centre point reflection are obtained here from the
-assembly stencil and the box geometry alone, and the assembled form is then used
-only to confirm a prediction that was already fixed before it was consulted.
+**Independent checker:**
+[`physical_stencil_derived_centrality_cycle721_independent_check_2026_08_02.py`](../scripts/physical_stencil_derived_centrality_cycle721_independent_check_2026_08_02.py)
 
-The derivation is a four-link chain. The site map carried by the landed compiler
-is the centre conjugate `s -> R(s - c) + c`; its translation part is exactly
-`(I - R)c`, an integer box-corner offset taking only the values `0` and `L - 1`
-per axis, so the map is a signed axis permutation followed by a corner shift.
-That structure makes the induced relabelling of edge slots a group homomorphism
-on all forty-eight signed axis permutations. The box-centre point reflection is
-the scalar `-I`, hence central in the matrix group; a homomorphism carries
-centrality forward, so its slot relabelling commutes with every frame — with no
-assembled form evaluated anywhere in the argument, and with the Cycle-719 closed
-form for that relabelling recovered rather than remeasured. Finally the stencil
-itself fixes the group: every one of the twenty-four path simplices of the base
-cell carries the body diagonal of the four-cube, so a signed axis permutation
-permutes the stencil exactly when it preserves the body-diagonal line, giving
-order twelve, six proper and six improper, and `24 / 6 = 4` cosets — the
-four-valued frame label as a theorem about the stencil rather than a count read
-off a table of numbers.
+**Primary cache:**
+[`physical_stencil_derived_centrality_cycle721_2026_08_02.txt`](../logs/runner-cache/physical_stencil_derived_centrality_cycle721_2026_08_02.txt)
 
-## Improper-frame framing
+**Independent cache:**
+[`physical_stencil_derived_centrality_cycle721_independent_check_2026_08_02.txt`](../logs/runner-cache/physical_stencil_derived_centrality_cycle721_independent_check_2026_08_02.txt)
 
-Six of the twelve derived members have determinant `-1`. These are
-**computational identities** of the assembled quadratic form, not lattice
-symmetries: improper signed permutations are NOT axiom symmetries — the Lattice
-axiom names proper cubic rotations only. They enter this note only as exact
-relabellings under which the assembled form is unchanged, and every physical
-statement below is carried by the proper sextet alone. The derivation makes
-their origin explicit for the first time: without the periodic tick fold the
-stencil stabilizer has order `6` and is entirely proper; the improper half
-appears only once the tick of length `2` is identified periodically, on which
-the tick complement acts as the identity, so the spatial point reflection is
-realized as the full four-dimensional complement — the reversal of the path
-simplices' chain order.
+**Receipt:**
+[`physical_stencil_derived_centrality_cycle721_2026_08_02_receipt_2026-08-02.json`](../outputs/physical_stencil_derived_centrality_cycle721_2026_08_02_receipt_2026-08-02.json)
 
-## Setup
+## Claim boundary
 
-The object is the static open-box assembly `Q` of the landed
-[Cycle-696 open-coframe endpoint compiler](../scripts/physical_open_coframe_k_endpoint_compiler_cycle696_2026_07_25.py),
-with wrap disabled, at box sizes `L = 3, 4, 5`, carrying `98`, `279` and `604`
-edge-slot variables. A slot is a pair (spatial class, low corner). The forty-
-eight signed axis permutations are enumerated as the three-by-three integer
-matrices with one nonzero entry of modulus one per row and per column. The
-twenty-four proper rotations of the landed frame table sit inside them; the
-box-centre point reflection is the scalar `-I` and is not among them.
+For the supplied Cycle-696 stencil of 24 four-dimensional monotone path
+simplices, exhaustively enumerate the 48 spatial signed axis permutations. A
+template image is compared after a free spatial translation and the supplied
+periodic tick shift modulo two. On this exact finite domain, the template-set
+stabilizer has order 12 and equals the stabilizer of the spatial
+body-diagonal line. It is a subgroup with six determinant-one and six
+determinant-minus-one elements. Its proper half is exactly frame indices
+`(1, 4, 9, 15, 18, 23)` in the supplied 24-frame table, so the proper-frame
+right-coset count is four.
 
-For a signed axis permutation `R` and box size `L`, the corner offset is defined
-componentwise as `L - 1` on the axes where `R` carries a negative entry and `0`
-elsewhere. The induced slot relabelling sends the slot with class direction `w`
-and low corner `x` to the slot whose class direction is the non-negative
-representative of `Rw` and whose low corner is `Rx + offset + min(Rw, 0)`
-componentwise.
+In the explicit tick-fixed comparison, the same enumeration gives the unsigned
+order-six coordinate-permutation subgroup, with determinant split `3+3`.
+Allowing the modulo-two tick shift adds the disjoint globally sign-reversed
+coset, also split `3+3`. Thus the proper sextet contains three tick-fixed even
+permutations and three sign-reversed odd permutations; the extra coset is not
+the improper half. This comparison is not a uniqueness statement about other
+tick models or other stencils.
 
-### Imported compiler contract
+For the open-box slot sets at `L in {3,5}`, the centre-conjugate site maps and
+their induced edge-slot maps are exact permutations and obey the declared
+composition order on all `48^2` pairs. The scalar point reflection `-I` is
+therefore central in the induced finite action. For the supplied assembled
+static form at `L in {3,4,5}`, the exact order-12 stencil prediction agrees
+numerically with all 48 relabeling tests: within-stabilizer residual is at most
+`1.243450e-10`, while the smallest outside residual is `4`.
 
-The following are supplied inputs, not outputs of this cycle:
+These are finite results about the supplied compiler bytes and conventions.
+They provide neither an arbitrary-size incidence theorem nor a derivation of
+the stencil, tick fold, or improper relabelings from the framework axioms.
 
-- the open spatial box, `L_T = 2` periodic tick fold, the twenty-four path
-  simplices of the base cell, and the static-sector Regge Hessian construction;
-- the spatial class table, the class length assignment, the ten edge pairs of a
-  five-vertex simplex, and the barycentric hinge-row convention;
-- central finite-difference step `1.0e-4` and every numerical gate tolerance in
-  the runner, including the relative comparison tolerance `1.0e-8`;
-- the selected samples `L = 3, 4, 5` and the landed twenty-four-frame table.
+## Trace gate
 
-There is no measured, fitted, or literature constant imported by this cycle. The
-combinatorial statements — the offset identity, the homomorphism, the centrality
-corollary, the stencil stabilizer and its determinant split, and the coset count
-— are exact integer facts, independent of the floating-point construction. The
-transport and invariance figures are machine-precision measurements of this
-fixed compiler only.
+```yaml
+trace_class: upstream_support
+target_claim_id: physical_assembly_defect_isospectrality_and_source_pairing_cycle714_note_2026-08-02
+target_blocker_text: "derive exact stencil-level sextet invariance and an arbitrary-L incidence theorem, then classify the source subspaces that reduce the four numerical clusters"
+source_of_blocker_text: next_trace_action
+reachability_to_target: supports
+artifact_role: runner_certificate
+next_trace_action: "derive an arbitrary-L incidence theorem for the supplied stencil family, or identify the exact finite boundary at which the slot action changes"
+```
 
-## Claims
+## Status fields
 
-### The landed site map is a signed permutation plus a corner shift
+```yaml
+actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
+trace_class: upstream_support
+reachability_to_target: supports
+conditional_surface_status: conditional-support
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: "exact finite signed-permutation, template-stabilizer, subgroup, and slot-action identities plus numerical assembled-form comparisons at three supplied box sizes"
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+packet_helper_runner: scripts/physical_stencil_derived_centrality_cycle721_independent_check_2026_08_02.py
+```
 
-Over all forty-eight signed axis permutations and all three box sizes, the
-corner offset defined above agrees with `(I - R)c` at deviation `0.000000e+00`,
-where `c` is the geometric box centre, and the resulting site map reproduces the
-landed compiler's own frame site map with `0` mismatches. The integrality of
-`(I - R)c` is not automatic for an integer linear map: four unimodular
-non-permutation rejectors produce a non-integer corner offset at even box size,
-so the offset identity is a property of the signed axis permutations and not of
-integer maps in general. Dropping the offset is fatal — `7938` site images leave
-the box across the sampled sizes.
+## Exact target and proof-obligation graph
 
-### The slot relabelling is a homomorphism
+**Exact target.** On the declared finite signed-permutation, stencil-template,
+and box-index sets, determine the stencil stabilizer, its determinant split and
+proper-frame cosets, and the centrality of the induced box-centre point
+reflection; then compare the exact prediction with the supplied assembled
+matrix at the three declared sizes.
 
-At `L = 3` and `L = 5` all forty-eight slot relabellings are bijections of the
-`98` and `604` slots, all forty-eight are distinct, and composition is exact:
-the relabelling of a product frame equals the composite of the relabellings, at
-`0` mismatches over all `2304` ordered pairs. The composition order is fixed and
-discriminating, not conventional: the reversed order mismatches `175104` slot
-entries at `L = 3` and `1094400` at `L = 5`.
+| obligation | disposition |
+|---|---|
+| Reconstruct the 24 path simplices and the 48 signed axis permutations. | Closed by exhaustive integer enumeration; the independent checker generates the paths from all permutations of the four coordinate steps. |
+| Prove the centre-conjugate site and slot action on the declared boxes. | Closed at `L=3,5` by bijectivity, 48 distinct maps, and all 2,304 composition pairs. Reversing composition changes 175,104 and 1,094,400 entries. |
+| Transport centrality from `-I` to the slot maps. | Closed because `-I` commutes with all 48 integer matrices and the finite slot maps obey the homomorphism law. A non-scalar sign flip fails against 32 frames. |
+| Determine the folded template stabilizer and relate it to the body diagonal. | Closed on all 48 candidates: both predicates select the same 12 elements; product and inverse closure are checked explicitly. |
+| Separate the periodic-tick and tick-fixed canonicalizations. | Closed for the supplied template set: the tick-fixed stabilizer is the unsigned `S_3` coordinate-permutation subgroup with determinant split `3+3`; folding adds its globally sign-reversed coset, also split `3+3`. |
+| Identify the proper sextet and four cosets. | Closed against the supplied frame table and independently against determinant/parity arithmetic. |
+| Compare the exact prediction with the assembled form. | Closed numerically at `L=3,4,5`, with an explicit within/outside margin and six altered-template controls at `L=3`. |
+| Derive the stencil or tick fold from Lattice, Qubit, Admissibility, and Record, or extend the slot/assembly result to arbitrary `L`. | Open and outside this bounded target. |
 
-### Centrality as a corollary, with no assembled form
+**Proof-obligation disposition:** `CONDITIONAL`. The group, template, subgroup,
+and finite map statements are exact for the declared finite sets. The result is
+conditional on the supplied Cycle-696 stencil and storage conventions, and the
+assembled-matrix comparisons are numerical at the three named sizes.
 
-The box-centre point reflection is the scalar `-I`, whose matrix commutator
-against all forty-eight signed axis permutations is `0`. Since the slot
-relabelling is a homomorphism, centrality transports: the worst slot commutator
-of the box-centre point reflection against all forty-eight relabellings is `0`
-at both sampled sizes. Nothing in this argument evaluates the assembled form.
-The rejector is sharp — a single-axis sign flip, which is a signed axis
-permutation but not a scalar, fails to commute with `32` of the forty-eight both
-at matrix level and at slot level. The closed form recorded in Cycle 719 for the
-box-centre relabelling, sending the slot with class direction `w` and low corner
-`x` to the slot with the same class and low corner `(L - 1) - x - w`
-componentwise, is recovered here at `0` mismatches, so it is a consequence of
-the offset identity rather than an independent observation.
+## Load-bearing inputs and declared choices
 
-### The stencil fixes the group before any assembly
+### Scientific and executable inputs
 
-All `24` path simplices of the base cell carry the body diagonal of the
-four-cube. On the folded lattice — free spatial translation together with the
-free tick shift permitted by the periodic tick of length `2` — the set of signed
-axis permutations that permutes the stencil has order `12`, and it coincides,
-on all forty-eight, with the set that maps the body-diagonal direction to plus
-or minus itself. Its determinant split is `6` proper and `6` improper; its
-proper members are exactly the frames at indices `1, 4, 9, 15, 18, 23` of the
-landed table, the sextet reported in Cycle 719. The stencil breaks into `2`
-orbits of size `12` under it, and the twenty-four proper rotations fall into
-`24 / 6 = 4` cosets.
+- The supplied
+  [Cycle-696 open-coframe compiler](../scripts/physical_open_coframe_k_endpoint_compiler_cycle696_2026_07_25.py)
+  and its four transitive Cycle-576/Regge modules provide the stencil, static
+  slot index, spatial direction classes, local Hessian construction, frame
+  table, open boundary, and tick length two.
+- The finite body-diagonal action and transversal comparison is recorded by
+  [Cycle 717](PHYSICAL_BODY_DIAGONAL_FRAME_FUNCTIONAL_TRANSVERSAL_LAW_CYCLE717_NOTE_2026-08-02.md),
+  its [runner](../scripts/physical_body_diagonal_frame_functional_transversal_law_cycle717_2026_08_02.py),
+  and its [receipt](../outputs/physical_body_diagonal_frame_functional_transversal_law_cycle717_2026_08_02_receipt_2026-08-02.json).
+- The finite proper-frame cosets and point-reflection map used for comparison
+  are recorded by
+  [Cycle 719](PHYSICAL_LEVEL_SET_ORBIT_LAW_IMPROPER_CENTER_IDENTITY_CYCLE719_NOTE_2026-08-02.md),
+  its [runner](../scripts/physical_level_set_orbit_law_improper_center_identity_cycle719_2026_08_02.py),
+  and its [receipt](../outputs/physical_level_set_orbit_law_improper_center_identity_cycle719_2026_08_02_receipt_2026-08-02.json).
+- The finite ambient/domain distinction used to keep improper relabelings out
+  of the physical-symmetry claim is recorded by
+  [Cycle 720](PHYSICAL_AMBIENT_DOMAIN_SYMMETRY_SPLIT_CYCLE720_NOTE_2026-08-02.md),
+  its [runner](../scripts/physical_ambient_domain_symmetry_split_cycle720_2026_08_02.py),
+  and its [receipt](../outputs/physical_ambient_domain_symmetry_split_cycle720_2026_08_02_receipt_2026-08-02.json).
+- The [minimal axioms](MINIMAL_AXIOMS_2026-06-29.md) grant proper cubic
+  rotations as Lattice symmetries. They do not grant improper spatial
+  permutations; the six determinant-minus-one elements remain computational
+  relabelings of this supplied assembly.
 
-Holding the tick fixed instead of folding it reduces the stabilizer to order
-`6`, a proper subset of the order-`12` group, and that residual six is exactly
-the proper half. The improper half is therefore supplied by the periodic tick
-identification and by nothing else.
+Both runners declare the complete note/runner/receipt and compiler-module
+closure in `AUDIT_INPUT_PATHS`. They import no audit grade from these sources.
 
-A structural fact of the stencil sits underneath: the twenty-four local pieces
-of the assembly, one per path simplex, are pairwise identical at spread
-`0.000000e+00`, although the twenty-four class tuples labelling them are all
-distinct. An edge between the `i`-th and `j`-th vertex of a path simplex spans
-`j - i` distinct unit axes whatever those axes are, so its length depends only
-on the step count; the local piece cannot see which axes were used. All of the
-stencil's dependence on direction therefore lives in the class and anchor data,
-which is precisely the data the relabelling above transports.
+### Declared finite and numerical choices
 
-### The prediction, and the discriminating counterfactual
+- exact signed-permutation and template comparisons over 48 group candidates
+  and 24 templates;
+- site and slot action checks at `L={3,5}` and assembled-form checks at
+  `L={3,4,5}`;
+- relative equality tolerance `1e-8` for assembled matrices and separation
+  ratio `1e3`;
+- central finite-difference step `1e-4`, local Regge conventions, open boundary,
+  and tick length two inherited from the compiler;
+- six named altered-template subsets at `L=3`: full set, templates 0 and 7
+  separately, one full orbit, the first 12 templates, and templates `(0,1)`.
 
-The derived order-`12` group predicts which relabellings fix the assembled form.
-At `L = 3, 4, 5` the prediction is correct on all forty-eight, with worst
-deviation `1.243450e-10` inside the derived group against a floor of
-`4.000000e+00` outside it and a largest entry of `2.945214e+01`. Grouping the
-twenty-four proper frames by the assembled form they produce gives `4` classes
-of `6`, and these coincide with the `4` derived cosets at every sampled size:
-the four-valued frame label of Cycles 717 through 720 is the coset count.
+The tolerances and finite subsets are analysis choices, not physical constants.
+No fitted, measured, observational, or literature value enters this cycle.
 
-Agreement with a prediction is not yet evidence that the derivation found the
-source. The discriminating gate mutilates the stencil and asks whether the
-derived group tracks it. Restricted to a single path simplex the derived group
-drops to order `1` and the measured symmetry drops to `1` as well, at floors
-`1.221442e+00` and `2.500719e+00` for the two sampled templates; restricted to
-one full orbit of `12` templates both are `12` at floor `5.001437e+00`;
-restricted to the first `12` templates, which is not an orbit, both are `2` at
-floor `1.116895e+01`; restricted to a pair both are `1` at floor
-`3.141593e+00`; on the full stencil both are `12` at floor `1.007048e+01`. In
-all `6` cases the derived and measured groups are equal, not merely nested. The
-derivation moves with the stencil.
+## Exact finite derivation
 
-## Derivation sketch
+For a signed axis permutation `R`, box centre `c=((L-1)/2)1`, and site `s`,
+the centre-conjugate map is
 
-Write the compiler's site map as `f_R(s) = R(s - c) + c` with `c` the geometric
-box centre. Expanding, `f_R(s) = Rs + (I - R)c`. Because every coordinate of `c`
-equals `(L - 1) / 2` and every row of a signed axis permutation has exactly one
-nonzero entry, of modulus one, the `a`-th coordinate of `(I - R)c` equals
-`((L - 1) / 2)(1 - s_a)` with `s_a` the sign in row `a`. That is `0` when the
-sign is positive and `L - 1` when it is negative — always an integer, and always
-a box corner. Hence `f_R` is a permutation of the box sites, and `f_{RS} = f_R`
-composed with `f_S`, since the centre conjugate is a group action by
-construction. Passing to edge slots preserves this: an edge is determined by its
-low corner and its class direction, the image direction is `Rw` up to the sign
-convention that stores the non-negative representative, and the compensating
-shift `min(Rw, 0)` is exactly the correction from "image of the low corner" to
-"low corner of the image". So the slot relabelling is a group homomorphism.
+`f_R(s) = R(s-c)+c = Rs+(I-R)c`.
 
-The box-centre point reflection is `-I`, which commutes with every matrix. A
-homomorphism sends a central element to an element commuting with the whole
-image, so its slot relabelling commutes with every frame's relabelling. That is
-the centrality of Cycles 719 and 720, reached without any reference to the
-assembled form.
+Every row of `R` has one sign `epsilon_a`, so coordinate `a` of the offset is
+`((L-1)/2)(1-epsilon_a)`, namely `0` or `L-1`. For each edge with stored
+non-negative direction `w`, the image edge is stored with direction `|Rw|` and
+with the smaller image endpoint as its low corner. Exhaustive index comparison
+then gives `m_(RS)=m_R after m_S` on the declared boxes. The reversed order is
+the explicit convention rejector.
 
-For the stencil: the assembly sums, over base cells and over the twenty-four
-path simplices, a local piece contracted through the class-and-anchor data. Two
-facts make this transport combinatorial. First, the local pieces are identical,
-so relabelling cannot change them. Second, a path simplex of the four-cube is a
-maximal chain in the cube's face lattice, so it contains both the all-zero and
-the all-one vertex; the segment joining them is the body diagonal, shared by all
-twenty-four. A signed axis permutation acting on the spatial part maps the
-stencil into itself precisely when it maps that shared diagonal to itself as a
-line, that is when `R` applied to the all-ones spatial vector has all three
-components equal. Those `R` with the plus sign are the `6` rotations fixing the
-diagonal pointwise; those with the minus sign reverse it, and reversal exchanges
-the two ends of every chain — realizable only because the tick is folded, since
-on a tick of length `2` the complement is the identity and the chain reversal
-can be absorbed. The `12` derived elements are therefore the stabilizer of a
-line, and the four cosets follow by index.
+The point reflection is `sigma=-I`, which is central in the signed-permutation
+group. The exact finite homomorphism therefore gives
+`m_sigma m_R = m_R m_sigma`. Direct endpoint transport independently recovers
+the closed slot formula
+
+`(w,x) -> (w,(L-1)1-x-w)`.
+
+The four-dimensional path templates are the maximal chains obtained by adding
+the four coordinate steps in all 24 orders. Each contains the zero and all-one
+vertices. Exhaustive action on these 24 chains shows that the folded-template
+stabilizer is exactly the set of spatial signed permutations taking
+`(1,1,1)` to `+(1,1,1)` or `-(1,1,1)`. The positive case is the unsigned
+coordinate-permutation subgroup; in the negative case the supplied modulo-two
+tick shift supplies the fourth-coordinate complement and admits the globally
+sign-reversed coset. Each order-six set has determinant split `3+3`. The proper
+sextet therefore draws three elements from each set.
+
+## Numerical assembly comparisons
+
+For the supplied static matrix `Q`, the stencil-derived order-12 set equals the
+tolerance-resolved relabeling-invariance set at each of `L=3,4,5`. The maximum
+within-set max-entry residual is `1.243450e-10`; the minimum outside residual is
+`4`, while the largest matrix entry is `2.945214e1`. The 24 proper frames form
+four numerical matrix classes of six, identical to the exact proper right
+cosets.
+
+The 24 compiler local Hessian pieces have numerical spread zero while their 24
+class tuples are distinct. Six altered template subsets produce exact derived
+stabilizer orders `(12,1,1,12,2,1)` and the same six tolerance-resolved matrix
+symmetry orders at `L=3`. These are discriminating finite controls. They show
+that this stabilizer calculation responds to the selected template set; they do
+not classify admissible stencils in general.
+
+## Independent reconstruction and hostile checks
+
+The independent checker imports no Cycle-721 code. It generates the 24 paths
+from coordinate-order permutations, represents signed permutations as pure
+integer `(permutation, signs)` tuples, transports edge endpoints directly
+rather than using the primary low-corner formula, and recomputes the stabilizer,
+determinant split, subgroup closure, central map, proper cosets, and finite
+assembled-matrix comparisons. It reads the primary receipt only after its own
+calculation.
+
+On the repaired source the primary reports `TOTAL: PASS=49 FAIL=0` and the
+independent checker reports `TOTAL: PASS=30 FAIL=0`.
+
+Review-loop hostile mutations separately confirmed that the gates reject:
+
+1. disabling the periodic tick shift in the folded stabilizer;
+2. reversing the slot-composition order;
+3. changing the expected proper sextet;
+4. raising the matrix classifier tolerance above the outside-group floor.
 
 ## Honest boundary
 
-The chain establishes that the twelve-element group, the sextet, the four-valued
-label, and centrality all follow from the stencil and the box geometry. It does
-not establish that these are forced by the axioms: the stencil, the periodic
-tick of length `2`, the barycentric hinge convention, and the slot storage
-convention are all supplied by the landed compiler, and a different admissible
-stencil would give a different group — which is exactly what the counterfactual
-gate demonstrates. The derivation converts a measurement into a property of the
-supplied stencil; it does not convert it into a property of the axioms.
+- Exactness applies to finite integer comparisons over the declared group,
+  templates, and index sets. The assembled Hessian, local-piece equality, and
+  relabeling residuals are floating-point measurements of the supplied
+  compiler.
+- The periodic-tick comparison identifies what changes between two explicit
+  canonicalizations of this stencil. It is not an exhaustive classification of
+  tick models, stencils, boundary conditions, or improper symmetries.
+- The determinant-minus-one half is a computational identity of the supplied
+  assembly, not a framework Lattice symmetry. Physical statements use the
+  determinant-one sextet only.
+- Arbitrary `L`, other boundaries, other stencil families, continuum limits,
+  and derivation of the compiler conventions from the axioms remain outside
+  the result.
 
-The improper half remains registered as computational identities. Its derivation
-here makes its status sharper, not stronger: it exists because a tick of length
-`2` cannot distinguish a complement from the identity, which is a property of the
-supplied tick fold and not a lattice symmetry.
+## Review record
 
-The invariance and transport figures are floating-point measurements of one fixed
-compiler at three box sizes. The floors are large — `4.000000e+00` against
-`1.243450e-10` — but they are floors of this compiler, not of the framework. The
-combinatorial rows carry no such caveat: the offset identity, the homomorphism,
-the centrality corollary, the stabilizer order and split, and the coset count are
-exact integer statements.
+Review-loop iteration 1 retained the exact finite stabilizer result but repaired
+its package and boundary. It replaced raw cold stdout with canonical caches,
+declared the full input closure and timeout, added an implementation-independent
+checker and subgroup-closure gate, and corrected a substantive false inference
+in the submitted `46/0` result: the primary checked only that the tick-fixed
+stabilizer had order six and was a proper subset, then identified it in prose
+with the determinant-one half. Independent enumeration shows instead that it
+is unsigned `S_3`, with three proper and three improper elements, while the fold
+adds its globally sign-reversed coset. The repair also separates exact finite
+identities from numerical assembly measurements and narrows “sole source” and
+“different admissible stencil” language to the two explicit canonicalizations
+and six altered template subsets actually tested.
 
-## The next paths opened
+Hard landing conditions:
 
-Two directions follow. First, the body-diagonal line is now the object that
-carries the whole symmetry, and its stabilizer is what the frame label counts;
-asking which admissible stencils share that line, and whether the framework's own
-locality data selects such a stencil, moves the question from the compiler to the
-axioms. Second, the tick fold is now identified as the sole source of the
-improper half, so varying the tick length is a sharp probe: at tick length
-greater than `2` the complement is no longer the identity and the derived group
-should lose its improper half without touching the proper sextet. Both are
-cheap to attempt on the landed compiler.
+1. reviewed predecessor PRs #5908 and #5911 must be contained in remote `main`;
+2. the citation-graph helper registry must map
+   `physical_stencil_derived_centrality_cycle721_note_2026-08-02` to
+   `scripts/physical_stencil_derived_centrality_cycle721_independent_check_2026_08_02.py`;
+3. both caches must be fresh against the complete declared input closure;
+4. pipeline-generated ledger and status outputs must be stripped, while the
+   citation-graph manifest acknowledgment co-lands because topology changes.
 
-## Runner
-
-The [Cycle721 runner](../scripts/physical_stencil_derived_centrality_cycle721_2026_08_02.py)
-executes every gated row above and reports
-
-```
-TOTAL: PASS=46 FAIL=0
-```
-
-with exit code `0`. Two consecutive runs produce byte-identical standard output
-and a byte-identical receipt. The receipt is written to
-`outputs/physical_stencil_derived_centrality_cycle721_2026_08_02_receipt_2026-08-02.json`
-and carries no timestamp, no wall clock, no host name, and no absolute path, so
-it is comparable across machines.
-
-Apart from the supplied finite-difference step and gate tolerances inventoried
-under the imported compiler contract, every floating-point number quoted in this
-note is the runner's own measurement in the run that produced that `TOTAL` line;
-none is copied from an earlier probe.
-
-## Citations
-
-- [Minimal axioms](MINIMAL_AXIOMS_2026-06-29.md)
-- [Cycle 700](PHYSICAL_OPERATIONAL_SOURCE_RESPONSE_READOUT_CHAIN_CYCLE700_NOTE_2026-07-25.md)
-- [Cycle 707 coset collapse](PHYSICAL_SOURCE_STABILIZER_COSET_COLLAPSE_K_SIGN_LAW_CYCLE707_NOTE_2026-08-01.md)
-- [joined-compiler tournament note](work_history/repo/review_feedback/PHYSICAL_OPEN_COFRAME_K_ENDPOINT_JOINED_COMPILER_TOURNAMENT_NOTE_2026-07-23.md)
-
-Cycle 700, Cycle 707, and the joined-compiler tournament note are landed. The
-linked Cycle696 compiler and Cycle721 runner are support/code dependencies.
-Backticked context only, with no authority edge — these cycles are in flight and
-carry no authority here:
-`PHYSICAL_BODY_DIAGONAL_FRAME_FUNCTIONAL_TRANSVERSAL_LAW_CYCLE717_NOTE_2026-08-02.md`,
-`PHYSICAL_LEVEL_SET_ORBIT_LAW_IMPROPER_CENTER_IDENTITY_CYCLE719_NOTE_2026-08-02.md`,
-`PHYSICAL_AMBIENT_DOMAIN_SYMMETRY_SPLIT_CYCLE720_NOTE_2026-08-02.md`.
+Independent audit remains required for the proposed bounded claim.

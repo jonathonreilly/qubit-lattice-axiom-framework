@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/physical_ambient_domain_symmetry_split_cycle720_independent_check_2026_08_02.py
+runner_sha256: f9069dfbb4f745fa90c1aa613bb4ea0c426fe6cc359ff6cb5ee489c0d658dea2
+input_fingerprint_sha256: f16228dfa22ac9810d4cc316446c432694b1b6d39236992c2bac39c9cf2f5eab
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 5.08
+status: ok
+----- stdout -----
+PASS i01_frame_reconstruction independently constructed 24 proper signed permutations
+PASS i02_group12 12 distinct, determinant split 6+6, closed, proper kernel is compiler sextet
+PASS i03_endpoint_maps_L3 endpoint construction is bijective and site-compatible
+PASS i04_ambient_L3 within 1.243e-10 reflection 1.243e-10 outside 4.000e+00
+PASS i05_exact_restriction_lemma integer-symmetrized matrix, skew nine-slot domain, all 144 (s,g) pairs
+PASS i06_row_L3_full sym 12=6+6 levels/orbits 13 frames [6, 6, 6, 6]
+PASS i06_row_L3_corner2 sym 6=3+3 levels/orbits 4 frames [6, 6, 6, 6]
+PASS i06_row_L3_corner3 sym 6=3+3 levels/orbits 10 frames [6, 6, 6, 6]
+PASS i06_row_L3_corner4 sym 6=3+3 levels/orbits 17 frames [6, 6, 6, 6]
+PASS i06_row_L3_slab sym 2=1+1 levels/orbits 33 frames [6, 6, 6, 6]
+PASS i03_endpoint_maps_L4 endpoint construction is bijective and site-compatible
+PASS i04_ambient_L4 within 1.243e-10 reflection 1.243e-10 outside 4.000e+00
+PASS i06_row_L4_full sym 12=6+6 levels/orbits 34 frames [6, 6, 6, 6]
+PASS i06_row_L4_corner2 sym 6=3+3 levels/orbits 4 frames [6, 6, 6, 6]
+PASS i06_row_L4_corner3 sym 6=3+3 levels/orbits 11 frames [6, 6, 6, 6]
+PASS i06_row_L4_corner4 sym 6=3+3 levels/orbits 21 frames [6, 6, 6, 6]
+PASS i06_row_L4_slab sym 2=1+1 levels/orbits 64 frames [6, 6, 6, 6]
+PASS i03_endpoint_maps_L5 endpoint construction is bijective and site-compatible
+PASS i04_ambient_L5 within 1.243e-10 reflection 1.243e-10 outside 4.000e+00
+PASS i06_row_L5_full sym 12=6+6 levels/orbits 66 frames [6, 6, 6, 6]
+PASS i06_row_L5_corner2 sym 6=3+3 levels/orbits 4 frames [6, 6, 6, 6]
+PASS i06_row_L5_corner3 sym 6=3+3 levels/orbits 11 frames [6, 6, 6, 6]
+PASS i06_row_L5_corner4 sym 6=3+3 levels/orbits 22 frames [6, 6, 6, 6]
+PASS i06_row_L5_slab sym 2=1+1 levels/orbits 105 frames [6, 6, 6, 6]
+PASS i07_hostile_bump single diagonal mutation leaves 2 of 6 symmetries
+PASS i08_row_count independently checked 15 rows
+TOTAL: PASS=26 FAIL=0
+
+----- stderr -----
+

@@ -386,22 +386,24 @@ def main() -> int:
     check("g06_canon_frame_invariant",
           all(len(v) == 1 for v in canons.values()),
           "connected-component box descriptors frame-invariant at L={}".format(L_FIT))
-    canon_of = {}
+    canon_of_signed = {}
     lstable = True
-    for (name, pc) in UNSIGNED:
-        cs = [next(iter(canons[(L, (1, name, pc))])) for L in L_FIT]
-        lstable = lstable and (len(set(cs)) == 1)
-        canon_of[(name, pc)] = cs[0]
+    for sign in (-1, 1):
+        for (name, pc) in UNSIGNED:
+            cs = [next(iter(canons[(L, (sign, name, pc))])) for L in L_FIT]
+            lstable = lstable and (len(set(cs)) == 1)
+            canon_of_signed[(sign, name, pc)] = cs[0]
     check("g07_canon_L_invariant", lstable,
-          "descriptors carry fixed margins and wall pins, independent of L")
+          "both signs carry fixed margins and wall pins, independent of L")
     shape_ok = pin_ok
-    for (name, pc), (nbox, npin) in BOX_SHAPE.items():
-        cb = canon_of[(name, pc)]
-        shape_ok = shape_ok and (len(cb) == nbox)
-        shape_ok = shape_ok and all(
-            sum(1 for d in box if d == "P") == npin for box in cb)
+    for sign in (-1, 1):
+        for (name, pc), (nbox, npin) in BOX_SHAPE.items():
+            cb = canon_of_signed[(sign, name, pc)]
+            shape_ok = shape_ok and (len(cb) == nbox)
+            shape_ok = shape_ok and all(
+                sum(1 for d in box if d == "P") == npin for box in cb)
     check("g08_box_shape", shape_ok,
-          "boxes per sign 8/8/12/16/20/4 with wall pins 0/0/0/1/0/2 per box")
+          "both signs: boxes 8/8/12/16/20/4 with pins 0/0/0/1/0/2 per box")
     check("g09_edge_family_diagonal", edge_diag_ok and edge_cls_ok,
           "edge family is diagonal (i == j) on axis (NN) classes")
     for name, _ in REFERENCE_CENTERS:
@@ -434,14 +436,17 @@ def main() -> int:
                                            fmt(edge_partner_min),
                                            PAIR_LO, PAIR_HI))
     for (name, pc) in UNSIGNED:
+        canon = canon_of_signed[(1, name, pc)]
         meas = [next(iter(counts[(L, (1, name, pc))])) for L in L_ALL]
-        pred = [predict(canon_of[(name, pc)], L) for L in L_ALL]
+        pred = [predict(canon, L) for L in L_ALL]
         poly = [POLY[(name, pc)][0](L) for L in L_ALL]
         check("g18_law_{}_{}".format(name, pc),
               meas == pred == poly,
               "counts(L=3..7)={} = {}".format(meas, POLY[(name, pc)][1]))
-    poly_ok = all(predict(canon_of[k], L) == POLY[k][0](L)
-                  for k in canon_of for L in range(3, 11))
+    poly_ok = all(
+        predict(canon_of_signed[(sign,) + k], L) == POLY[k][0](L)
+        for sign in (-1, 1) for k in POLY for L in range(3, 11)
+    )
     check("g19_poly_identity", poly_ok,
           "descriptor prediction equals the stated polynomial for L=3..10")
     for L in (3, 7):

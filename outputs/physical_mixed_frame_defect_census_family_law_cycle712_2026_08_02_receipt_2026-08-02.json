@@ -26,11 +26,11 @@
       "pass": true
     },
     "g07_canon_L_invariant": {
-      "detail": "descriptors carry fixed margins and wall pins, independent of L",
+      "detail": "both signs carry fixed margins and wall pins, independent of L",
       "pass": true
     },
     "g08_box_shape": {
-      "detail": "boxes per sign 8/8/12/16/20/4 with wall pins 0/0/0/1/0/2 per box",
+      "detail": "both signs: boxes 8/8/12/16/20/4 with pins 0/0/0/1/0/2 per box",
       "pass": true
     },
     "g09_edge_family_diagonal": {

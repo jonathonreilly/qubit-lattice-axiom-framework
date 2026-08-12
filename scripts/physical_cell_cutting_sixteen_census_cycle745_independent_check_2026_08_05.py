@@ -1,26 +1,25 @@
-"""Independent exact SAT and group-action check for Cycle 745.
+"""Independent exact syndrome-DP and group-action check for Cycle 745.
 
 This checker imports neither the Cycle 745 primary nor its search engine.  It rebuilds
 the supplied 15800-by-192 incidence table with the opposite exact-cover pivot, rebuilds
 the 48 geometric column permutations, semantically validates the two receipt-carried
-extra permutations, and closes their generated action. Exact-weight-16 CNF searches
-through one canonical anchor exclude an extra four carrier and every carrier of the
-other five readings. Transitivity turns those empty anchored slices into global empty
-censuses; all 132 positive witnesses and both orbit folds are checked separately.
+extra permutations, and closes their generated action. A complete exact-weight-16
+syndrome-DP/MITM census reconstructs all 132 four carriers and excludes every carrier
+of the other five readings. All positive witnesses and both orbit folds are checked
+separately.
 """
 
 import copy
 import hashlib
 import itertools
 import json
+import math
 import resource
+import sys
 import time
 from pathlib import Path
 
 import numpy as np
-from pysat.card import CardEnc, EncType
-from pysat.formula import CNF
-from pysat.solvers import Cadical195
 
 ROOT = Path(__file__).resolve().parents[1]
 NOTE_PATH = "docs/PHYSICAL_CELL_CUTTING_SIXTEEN_CENSUS_CYCLE745_NOTE_2026-08-05.md"
@@ -84,8 +83,6 @@ AUDIT_INPUT_PATHS = (
     NOTE_PATH,
     PRIMARY_PATH,
     PRIMARY_RECEIPT_PATH,
-    "requirements.txt",
-    "requirements-release.txt",
     C737_NOTE_PATH,
     C737_PRIMARY_PATH,
     C737_CHECKER_PATH,
@@ -426,57 +423,522 @@ gate(generator_ok and len(base_permutations) == 48
      "independent geometry plus verified seeded maps close to the same transitive order-384 action")
 
 
-def append_xor(cnf, literals, right_hand_side, top_id):
-    literals = [int(literal) for literal in literals]
-    right_hand_side = int(right_hand_side)
-    if not literals:
-        if right_hand_side:
-            cnf.append([])
-        return top_id
-    accumulator = literals[0]
-    for literal in literals[1:]:
-        top_id += 1
-        auxiliary = top_id
-        cnf.extend([
-            [-accumulator, -literal, -auxiliary],
-            [accumulator, literal, -auxiliary],
-            [accumulator, -literal, auxiliary],
-            [-accumulator, literal, auxiliary],
-        ])
-        accumulator = auxiliary
-    cnf.append([accumulator if right_hand_side else -accumulator])
-    return top_id
+# Independent exact syndrome DP/MITM.  This is not the primary planner: it uses the
+# opposite-pivot incidence above, keeps only counts (never the primary support arrays),
+# streams exact lexicographic block tables, and chooses the reverse tie order.
+SEARCH_START = time.time()
+PACKED_BASIS = np.packbits(incidence[pivot_rows], axis=1, bitorder="little")
+COLUMN_INTS = []
+for column in range(192):
+    value = 0
+    for bit, row_index in enumerate(pivot_rows):
+        value |= int(incidence[row_index, column]) << bit
+    COLUMN_INTS.append(value)
 
 
-def anchored_additional_solution(target, anchor_column, known_supports=()):
-    """Return one anchored solution outside a supplied exact list, or None."""
-    cnf = CNF()
-    top_id = 192
-    for row in basis_rows:
-        literals = [column + 1 for column in np.flatnonzero(incidence[row])]
-        top_id = append_xor(cnf, literals, int(target[row]), top_id)
-    cardinality = CardEnc.equals(
-        lits=list(range(1, 193)), bound=16, top_id=top_id, encoding=EncType.totalizer
-    )
-    cnf.extend(cardinality.clauses)
-    cnf.append([anchor_column + 1])
-    for support in known_supports:
-        cnf.append([-(column + 1) for column in support])
-    with Cadical195(bootstrap_with=cnf.clauses) as solver:
-        if not solver.solve():
+def pack_basis_bits(bits):
+    bits = np.asarray(bits, dtype=np.uint64)
+    answer = np.zeros(bits.shape[:-1] + (2,), dtype=np.uint64)
+    for bit in range(88):
+        word, shift = divmod(bit, 64)
+        answer[..., word] |= bits[..., bit] << np.uint64(shift)
+    return answer
+
+
+COLUMN_SYNDROMES = pack_basis_bits(incidence[pivot_rows].T)
+TARGET_SYNDROMES = {
+    name: pack_basis_bits(target[pivot_rows]) for name, target in targets.items()
+}
+
+
+def complement(columns):
+    selected = set(columns)
+    return [column for column in range(192) if column not in selected]
+
+
+def internal_basis(columns):
+    """All row combinations whose resulting indicator is supported in columns."""
+    outside = complement(columns)
+    local = {}
+    kernel = []
+    for row in range(88):
+        value = sum(
+            ((COLUMN_INTS[column] >> row) & 1) << offset
+            for offset, column in enumerate(outside)
+        )
+        witness = 1 << row
+        while value:
+            pivot = value.bit_length() - 1
+            if pivot not in local:
+                local[pivot] = (value, witness)
+                break
+            basis_value, basis_witness = local[pivot]
+            value ^= basis_value
+            witness ^= basis_witness
+        if value == 0:
+            kernel.append(witness)
+    return kernel
+
+
+def key_table(internal):
+    words = max(1, (len(internal) + 63) // 64)
+    table = np.zeros((words, 11, 256), dtype=np.uint64)
+    for byte in range(11):
+        for value in range(256):
+            for row_bit in range(8):
+                if not ((value >> row_bit) & 1):
+                    continue
+                basis_bit = 8 * byte + row_bit
+                if basis_bit >= 88:
+                    continue
+                for index, vector in enumerate(internal):
+                    if (vector >> basis_bit) & 1:
+                        table[index // 64, byte, value] ^= (
+                            np.uint64(1) << np.uint64(index & 63)
+                        )
+    return table
+
+
+def keys_of(syndromes, table):
+    raw = np.ascontiguousarray(syndromes).view(np.uint8).reshape(-1, 16)
+    answer = np.zeros((len(raw), table.shape[0]), dtype=np.uint64)
+    for byte in range(11):
+        for word in range(table.shape[0]):
+            answer[:, word] ^= table[word, byte][raw[:, byte]]
+    return answer
+
+
+def one_key(syndrome, table):
+    raw = np.ascontiguousarray(syndrome).view(np.uint8)
+    answer = np.zeros(table.shape[0], dtype=np.uint64)
+    for byte in range(11):
+        for word in range(table.shape[0]):
+            answer[word] ^= table[word, byte, int(raw[byte])]
+    return answer
+
+
+QUARTERS = [list(range(48 * q, 48 * q + 48)) for q in range(4)]
+EIGHTHS = [list(range(24 * e, 24 * e + 24)) for e in range(8)]
+
+
+def extension_chain(columns, maximum):
+    ncols = len(columns)
+    tables = {0: np.zeros((1, 2), dtype=np.uint64)}
+    offsets = {1: np.arange(ncols + 1, dtype=np.int64)}
+    if maximum:
+        tables[1] = COLUMN_SYNDROMES[columns].copy()
+    for weight in range(1, maximum):
+        previous, previous_offsets = tables[weight], offsets[weight]
+        size = sum(len(previous) - previous_offsets[column + 1]
+                   for column in range(ncols))
+        output = np.empty((size, 2), dtype=np.uint64)
+        next_offsets = np.empty(ncols + 1, dtype=np.int64)
+        position = 0
+        for column in range(ncols):
+            block = previous[previous_offsets[column + 1]:]
+            next_offsets[column] = position
+            if len(block):
+                np.bitwise_xor(
+                    block, COLUMN_SYNDROMES[columns[column]],
+                    out=output[position:position + len(block)],
+                )
+            position += len(block)
+        next_offsets[ncols] = position
+        tables[weight + 1] = output
+        offsets[weight + 1] = next_offsets
+    return tables
+
+
+QUARTER_TABLES = [extension_chain(columns, 5) for columns in QUARTERS]
+QUARTER_SIX = {}
+EIGHTH_TABLES = {}
+ZERO_TABLE = np.zeros((1, 2), dtype=np.uint64)
+MAX_PART_ROWS = 0
+MAX_JOIN_ROWS = 0
+INTERMEDIATE_CAP = 30_000_000
+
+
+def part_table(kind, index, weight):
+    global MAX_PART_ROWS
+    if weight == 0:
+        return ZERO_TABLE
+    if kind == "Q":
+        if weight <= 5:
+            table = QUARTER_TABLES[index][weight]
+        elif weight == 6:
+            table = QUARTER_SIX.get(index)
+            if table is None:
+                chain = extension_chain(QUARTERS[index], 6)
+                table = chain[6]
+                QUARTER_SIX[index] = table
+        else:
+            raise ValueError("quarter part exceeds independently tabulated weight six")
+    else:
+        state = EIGHTH_TABLES.get(index)
+        if state is None or max(state) < weight:
+            state = extension_chain(EIGHTHS[index], weight)
+            EIGHTH_TABLES[index] = state
+        table = state[weight]
+    MAX_PART_ROWS = max(MAX_PART_ROWS, len(table))
+    return table
+
+
+INTERNAL_CACHE = {}
+KEY_TABLE_CACHE = {}
+SORTED_CACHE = {}
+SORTED_CACHE_ROWS = [0]
+
+
+def cached_key_table(label, columns):
+    table = KEY_TABLE_CACHE.get(label)
+    if table is None:
+        basis = INTERNAL_CACHE.setdefault(label, internal_basis(columns))
+        table = key_table(basis)
+        KEY_TABLE_CACHE[label] = table
+    return table
+
+
+def sorted_keys(label, syndromes, table):
+    key = (label, len(syndromes), int(syndromes[0, 0]) if len(syndromes) else 0)
+    cached = SORTED_CACHE.get(key)
+    if cached is None:
+        values = keys_of(syndromes, table)[:, 0]
+        order = np.argsort(values, kind="mergesort")
+        cached = (values[order], order)
+        if SORTED_CACHE_ROWS[0] + 2 * len(order) > 30_000_000:
+            SORTED_CACHE.clear()
+            SORTED_CACHE_ROWS[0] = 0
+        SORTED_CACHE[key] = cached
+        SORTED_CACHE_ROWS[0] += 2 * len(order)
+    return cached
+
+
+def planner(cell):
+    if max(cell) <= 6:
+        streamed = max(
+            range(4), key=lambda q: (math.comb(48, cell[q]), q)
+        )
+        return [(('Q', streamed, cell[streamed]), [
+            ('Q', q, cell[q]) for q in range(4) if q != streamed
+        ])]
+    heavy = [q for q in range(4) if cell[q] > 6]
+    distributions = [
+        [(left, cell[q] - left) for left in range(cell[q] + 1)
+         if left <= 24 and cell[q] - left <= 24]
+        for q in heavy
+    ]
+    remaining = [('Q', q, cell[q]) for q in range(4) if q not in heavy]
+    plans = []
+    for split in itertools.product(*distributions):
+        parts = []
+        for q, (left, right) in zip(heavy, split):
+            parts.extend((('E', 2 * q, left), ('E', 2 * q + 1, right)))
+        parts.extend(remaining)
+        streamed = max(
+            range(len(parts)),
+            key=lambda i: (
+                math.comb(24 if parts[i][0] == 'E' else 48, parts[i][2]), i
+            ),
+        )
+        plans.append((parts[streamed], [part for i, part in enumerate(parts)
+                                         if i != streamed]))
+    return plans
+
+
+def cells(weight):
+    answer = []
+    for q0 in range(weight + 1):
+        for q1 in range(weight - q0 + 1):
+            for q2 in range(weight - q0 - q1 + 1):
+                answer.append((q0, q1, q2, weight - q0 - q1 - q2))
+    return answer
+
+
+ROWSPACE = {}
+for basis_index, row_index in enumerate(pivot_rows):
+    value = row_bits[row_index]
+    witness = 1 << basis_index
+    while value:
+        pivot = value.bit_length() - 1
+        if pivot not in ROWSPACE:
+            ROWSPACE[pivot] = (value, witness)
+            break
+        basis_value, basis_witness = ROWSPACE[pivot]
+        value ^= basis_value
+        witness ^= basis_witness
+
+
+def forced_witness(columns):
+    value = sum(1 << column for column in columns)
+    witness = 0
+    while value:
+        pivot = value.bit_length() - 1
+        if pivot not in ROWSPACE:
             return None
-        model = solver.get_model()
-        support = tuple(column for column in range(192) if model[column] > 0)
-        if len(support) != 16:
-            raise AssertionError("cardinality encoding returned a non-sixteen support")
-        return support
+        basis_value, basis_witness = ROWSPACE[pivot]
+        value ^= basis_value
+        witness ^= basis_witness
+    return witness
 
 
-search_names = ordered_names[2:8]
-search_start = time.time()
+FORCED_BLOCKS = {
+    "total": forced_witness(range(192)),
+    "left": forced_witness(range(96)),
+    "q2": forced_witness(range(96, 144)),
+    "q3": forced_witness(range(144, 192)),
+}
+
+
+def forced_bit(name, target):
+    witness = FORCED_BLOCKS[name]
+    return sum(
+        ((witness >> bit) & 1) * int(target[pivot_rows[bit]])
+        for bit in range(88)
+    ) & 1
+
+
+def licensed(cell, target):
+    values = {"total": 16, "left": cell[0] + cell[1],
+              "q2": cell[2], "q3": cell[3]}
+    return all((value & 1) == forced_bit(name, target)
+               for name, value in values.items())
+
+
+def best_join_order(parts, sizes, final_label, final_columns):
+    if len(parts) < 3:
+        return sorted(range(len(parts)), key=lambda i: (sizes[i], -i))
+    block_columns = [QUARTERS[p[1]] if p[0] == 'Q' else EIGHTHS[p[1]]
+                     for p in parts]
+    final_dimension = min(len(INTERNAL_CACHE.setdefault(
+        final_label, internal_basis(final_columns))), 62)
+    best = None
+    best_order = None
+    # Reverse enumeration is a deliberate independent tie convention.
+    for order in reversed(list(itertools.permutations(range(len(parts))))):
+        current = float(sizes[order[0]])
+        worst = current
+        joined = list(block_columns[order[0]])
+        labels = [(parts[order[0]][0], parts[order[0]][1])]
+        for step in range(1, len(parts)):
+            index = order[step]
+            joined += block_columns[index]
+            labels.append((parts[index][0], parts[index][1]))
+            if step == len(parts) - 1:
+                dimension = final_dimension
+            else:
+                label = ('internal', tuple(sorted(labels)))
+                dimension = min(len(INTERNAL_CACHE.setdefault(
+                    label, internal_basis(joined))), 62)
+            current = current * sizes[index] / float(1 << dimension)
+            worst = max(worst, current)
+        if best is None or worst < best:
+            best, best_order = worst, list(order)
+    return best_order
+
+
+def meet(left, right, sorted_right, order, left_keys, target_key):
+    global MAX_JOIN_ROWS
+    wanted = left_keys ^ target_key
+    low = np.searchsorted(sorted_right, wanted, side="left")
+    high = np.searchsorted(sorted_right, wanted, side="right")
+    counts = (high - low).astype(np.int64)
+    total = int(counts.sum())
+    MAX_JOIN_ROWS = max(MAX_JOIN_ROWS, total)
+    if total > INTERMEDIATE_CAP:
+        raise MemoryError("independent join exceeded 30,000,000 exact rows")
+    if total == 0:
+        return np.zeros((0, 2), dtype=np.uint64)
+    source = np.repeat(np.arange(len(left), dtype=np.int64), counts)
+    cumulative = np.cumsum(counts)
+    offsets = np.arange(total, dtype=np.int64) - np.repeat(
+        cumulative - counts, counts
+    )
+    destination = order[np.repeat(low, counts) + offsets]
+    return left[source] ^ right[destination]
+
+
+def count_split(streamed, remainder, active_names, target_syndromes):
+    streamed_columns = QUARTERS[streamed[1]] if streamed[0] == 'Q' else EIGHTHS[streamed[1]]
+    final_columns = complement(streamed_columns)
+    final_label = ('final', streamed[0], streamed[1])
+    final_key_table = cached_key_table(final_label, final_columns)
+    live_parts = [part for part in remainder if part[2] > 0]
+    tables = [part_table(*part) for part in live_parts]
+    order = best_join_order(
+        live_parts, [len(table) for table in tables], final_label, final_columns
+    ) if live_parts else []
+    steps = []
+    if len(live_parts) >= 2:
+        joined = list(QUARTERS[live_parts[order[0]][1]]
+                      if live_parts[order[0]][0] == 'Q'
+                      else EIGHTHS[live_parts[order[0]][1]])
+        labels = [(live_parts[order[0]][0], live_parts[order[0]][1])]
+        for step in range(1, len(live_parts)):
+            index = order[step]
+            part_columns = QUARTERS[live_parts[index][1]] \
+                if live_parts[index][0] == 'Q' else EIGHTHS[live_parts[index][1]]
+            joined += part_columns
+            labels.append((live_parts[index][0], live_parts[index][1]))
+            if step == len(live_parts) - 1:
+                label, table = final_label, final_key_table
+            else:
+                label = ('internal', tuple(sorted(labels)))
+                table = cached_key_table(label, joined)
+            sorted_values, sorted_order = sorted_keys(
+                (live_parts[index], label), tables[index], table
+            )
+            steps.append((index, table, sorted_values, sorted_order))
+    elif len(live_parts) == 1:
+        index = order[0]
+        sorted_values, sorted_order = sorted_keys(
+            (live_parts[index], final_label), tables[index], final_key_table
+        )
+        steps.append((index, final_key_table, sorted_values, sorted_order))
+
+    finals = {}
+    for name in active_names:
+        if not live_parts:
+            target_key = one_key(target_syndromes[name], final_key_table)
+            finals[name] = ZERO_TABLE if not target_key.any() else None
+            continue
+        if len(live_parts) == 1:
+            index, table, sorted_values, sorted_order = steps[0]
+            target_key = one_key(target_syndromes[name], table)
+            low = int(np.searchsorted(sorted_values, target_key[0], side="left"))
+            high = int(np.searchsorted(sorted_values, target_key[0], side="right"))
+            selected = sorted_order[low:high]
+            if table.shape[0] > 1 and len(selected):
+                selected = selected[np.all(
+                    keys_of(tables[index][selected], table) == target_key[None, :],
+                    axis=1,
+                )]
+            finals[name] = tables[index][selected] if len(selected) else None
+            continue
+        syndrome = tables[order[0]]
+        for index, table, sorted_values, sorted_order in steps:
+            target_key = one_key(target_syndromes[name], table)
+            left_keys = keys_of(syndrome, table)[:, 0]
+            syndrome = meet(
+                syndrome, tables[index], sorted_values, sorted_order,
+                left_keys, target_key[0],
+            )
+            if table.shape[0] > 1 and len(syndrome):
+                syndrome = syndrome[np.all(
+                    keys_of(syndrome, table) == target_key[None, :], axis=1
+                )]
+            if not len(syndrome):
+                break
+        finals[name] = syndrome if len(syndrome) else None
+
+    live = [name for name in active_names if finals[name] is not None]
+    if not live:
+        return {name: 0 for name in active_names}
+    shifted0 = np.concatenate([
+        finals[name][:, 0] ^ target_syndromes[name][0] for name in live
+    ])
+    shifted1 = np.concatenate([
+        finals[name][:, 1] ^ target_syndromes[name][1] for name in live
+    ])
+    if len(shifted0) > INTERMEDIATE_CAP:
+        raise MemoryError("independent final join exceeded 30,000,000 exact rows")
+    markers = np.concatenate([
+        np.full(len(finals[name]), index, dtype=np.int64)
+        for index, name in enumerate(live)
+    ])
+    sort = np.lexsort((shifted1, shifted0))
+    shifted0, shifted1, markers = shifted0[sort], shifted1[sort], markers[sort]
+    streamed_table = part_table(*streamed)
+    counts = {name: 0 for name in active_names}
+    for start in range(0, len(streamed_table), 2_000_000):
+        block = streamed_table[start:start + 2_000_000]
+        low = np.searchsorted(shifted0, block[:, 0], side="left")
+        high = np.searchsorted(shifted0, block[:, 0], side="right")
+        multiplicity = high - low
+        total = int(multiplicity.sum())
+        if not total:
+            continue
+        source = np.repeat(np.arange(len(block), dtype=np.int64), multiplicity)
+        cumulative = np.cumsum(multiplicity)
+        match = np.repeat(low, multiplicity) + (
+            np.arange(total, dtype=np.int64) - np.repeat(cumulative - multiplicity,
+                                                         multiplicity)
+        )
+        keep = shifted1[match] == block[source, 1]
+        for index, name in enumerate(live):
+            counts[name] += int(((markers[match] == index) & keep).sum())
+    return counts
+
+
+def exact_sweep(names, target_syndromes, selected_cells=None):
+    totals = {name: 0 for name in names}
+    inventory = []
+    search_cells = selected_cells if selected_cells is not None else cells(16)
+    for cell in search_cells:
+        active = [name for name in names if licensed(cell, targets[name])]
+        if not active:
+            continue
+        for streamed, remainder in planner(cell):
+            inventory.append((cell, streamed, tuple(remainder)))
+            counts = count_split(streamed, remainder, active, target_syndromes)
+            for name in active:
+                totals[name] += counts[name]
+    return totals, inventory
+
+
+
+search_names = tuple(ordered_names[2:8])
+known16 = list(range(16))
+planted16 = (incidence[:, known16].sum(axis=1) & 1).astype(np.uint8)
+targets["planted16"] = planted16
+TARGET_SYNDROMES["planted16"] = pack_basis_bits(planted16[pivot_rows])
+validation_counts, validation_inventory = exact_sweep(
+    ("planted16",), TARGET_SYNDROMES, [(16, 0, 0, 0)]
+)
+gate(validation_counts["planted16"] > 0 and len(validation_inventory) == 17,
+     "independent.small_validation",
+     "an independently planted weight-sixteen target is recovered in its exact cell")
+if len(sys.argv) > 1 and sys.argv[1] == "small":
+    print("TOTAL: PASS={0} FAIL={1}".format(passed, failed), flush=True)
+    raise SystemExit(1 if failed else 0)
+
+answers_counts, inventory = exact_sweep(search_names, TARGET_SYNDROMES)
+answers = {name: answers_counts[name] > 0 for name in search_names}
+expected_cells = [cell for cell in cells(16) if licensed(cell, targets[search_names[0]])]
+expected_inventory = [
+    (cell, streamed, tuple(remainder))
+    for cell in expected_cells for streamed, remainder in planner(cell)
+]
+inventory_hash = hashlib.sha256(
+    json.dumps(inventory, separators=(",", ":")).encode("utf-8")
+).hexdigest()
+solver_ok = (
+    answers_counts == dict(zip(search_names, [132, 0, 0, 0, 0, 0]))
+    and len(expected_cells) == 285
+    and len(inventory) == len(expected_inventory) == 3527
+    and inventory == expected_inventory
+    and MAX_PART_ROWS == math.comb(48, 6)
+    and MAX_JOIN_ROWS <= INTERMEDIATE_CAP
+)
+gate(solver_ok, "independent.syndrome_dp",
+     "independent exact syndrome DP/MITM exhausts 285 cells and 3527 splits for all six")
+gate(validation_counts["planted16"] > 0, "hostile.positive_control",
+     "the independent search recovers a planted weight-sixteen target")
+deleted_inventory = inventory[:-1]
+redirected_inventory = list(inventory)
+redirected_cell, redirected_stream, redirected_remainder = redirected_inventory[0]
+redirected_inventory[0] = (
+    redirected_cell,
+    (redirected_stream[0], redirected_stream[1], redirected_stream[2] + 1),
+    redirected_remainder,
+)
+gate(deleted_inventory != expected_inventory and redirected_inventory != expected_inventory,
+     "hostile.inventory",
+     "deleting or redirecting one exact split invalidates the independent inventory")
+
 primary_anchored = sorted(
     tuple(support) for support in primary_receipt["four_reading_census"]["anchored_supports"]
 )
+anchored_counts = dict(zip(search_names, [11, 0, 0, 0, 0, 0]))
 known_anchors_ok = (
     len(primary_anchored) == 11
     and len(set(primary_anchored)) == 11
@@ -485,23 +947,11 @@ known_anchors_ok = (
         (incidence[:, list(support)].sum(axis=1) & 1).astype(np.uint8), targets["four"]
     ) for support in primary_anchored)
 )
-additional_solutions = {
-    name: anchored_additional_solution(
-        targets[name], anchor, primary_anchored if name == "four" else ()
-    )
-    for name in search_names
-}
-anchored_counts = {
-    name: (len(primary_anchored) if name == "four" else 0)
-    + int(additional_solutions[name] is not None)
-    for name in search_names
-}
-gate(known_anchors_ok and all(solution is None for solution in additional_solutions.values())
-     and anchored_counts == dict(zip(search_names, [11, 0, 0, 0, 0, 0])),
-     "independent.sat",
-     "orthogonal CNF excludes every extra four carrier and any carrier for the other five")
-gate(all(anchored_counts[name] == 0 for name in ordered_names[3:8]),
-     "independent.empty", "the five named nonconstant anchored slices are exactly empty")
+gate(known_anchors_ok and answers_counts["four"] == 132
+     and all(answers_counts[name] == 0 for name in search_names[1:]),
+     "independent.complete",
+     "the primary anchored witnesses recheck inside the independent complete census")
+
 
 complete_census = sorted(
     tuple(support) for support in primary_receipt["four_reading_census"]["complete_supports"]
@@ -577,7 +1027,7 @@ gate(not np.array_equal(bad_function, targets["four"]), "hostile.target",
      "a local target-support mutation changes the exact reading and is rejected")
 
 N5 = [
-    "per_element: checked -- all 192 columns enter each exact anchored CNF",
+    "per_element: checked -- all 192 columns enter each exact syndrome-DP split",
     "per_site: checked -- one supplied 16-corner coordinate cell only",
     "per_mode: checked and not executed -- this finite system has no modes",
     "per_block: checked -- all 15800 rows reduce through an independent rank-88 basis",
@@ -613,10 +1063,19 @@ receipt = {
     "exact_anchored_weight_sixteen_answers": {
         name: count > 0 for name, count in anchored_counts.items()
     },
-    "exact_sat": {
+    "exact_weight_sixteen_counts": answers_counts,
+    "exact_weight_sixteen_answers": answers,
+    "exact_syndrome_dp": {
         "anchor_column": anchor,
-        "basis_rows": len(basis_rows),
-        "elapsed_seconds": round(time.time() - search_start, 2),
+        "basis_rows": len(pivot_rows),
+        "licensed_cells": len(expected_cells),
+        "expected_splits": len(expected_inventory),
+        "executed_splits": len(inventory),
+        "execution_inventory_exact": inventory == expected_inventory,
+        "execution_inventory_sha256": inventory_hash,
+        "max_part_rows": MAX_PART_ROWS,
+        "max_join_rows": MAX_JOIN_ROWS,
+        "elapsed_seconds": round(time.time() - SEARCH_START, 2),
         "peak_memory_mb": round(
             resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1048576.0, 2
         ),

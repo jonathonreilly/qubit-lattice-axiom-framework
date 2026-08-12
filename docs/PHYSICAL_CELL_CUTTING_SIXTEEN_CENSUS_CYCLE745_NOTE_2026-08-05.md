@@ -13,13 +13,13 @@ Claim type: bounded_theorem
 Runner:
 
 - [primary rebuild-and-gate runner](../scripts/physical_cell_cutting_sixteen_census_cycle745_2026_08_05.py)
-- [independent opposite-pivot/CNF checker](../scripts/physical_cell_cutting_sixteen_census_cycle745_independent_check_2026_08_05.py)
+- [independent opposite-pivot syndrome-DP/MITM checker](../scripts/physical_cell_cutting_sixteen_census_cycle745_independent_check_2026_08_05.py)
 
 Scope: exact finite identities of the supplied cutting system. The primary
 rebuilds the cell complex, cuttings, named algebraic readings, symmetries and
 anchored tables. The independent checker reconstructs the incidence table with
 the opposite exact-cover pivot, verifies the group action semantically, and
-uses an orthogonal exact-cardinality CNF search. Constitutional effect: none.
+uses an orthogonal exact syndrome-DP/MITM census. Constitutional effect: none.
 This package changes no axiom, no framework Admissibility rule, no primitive,
 no policy, and no audit status, and it adds no import and no assumption to
 [MINIMAL_AXIOMS_2026-06-29.md](MINIMAL_AXIOMS_2026-06-29.md).
@@ -150,7 +150,7 @@ functions never occur, nor that weight 18 is empty.
 | Route | Test and result | Marker |
 |---|---|---|
 | Primary anchored syndrome join | Exhaust all 204 licensed anchor cells and the independently generated 2004-split inventory; all five counts are zero. | ATTEMPTED |
-| Independent exact-cardinality CNF | Rebuild the incidence table with the opposite exact-cover pivot and solve each anchored weight-16 system with a separate CNF encoding; all five are UNSAT. | ATTEMPTED |
+| Independent exact syndrome DP/MITM | Rebuild the incidence table with the opposite exact-cover pivot and exhaust all 285 licensed weight-16 cells through an independently scheduled 3,527-split syndrome census; all five counts are zero. | ATTEMPTED |
 | Escape outside the anchored slice | Verify every generator is an incidence automorphism fixing each named reading, close the group to order 384, and verify the anchor orbit has all 192 columns; every nonempty carrier therefore has an anchored image. | ATTEMPTED |
 | Omitted or redirected primary split | Delete one scheduled split and redirect one part; each hostile inventory differs from the mathematical 2004-split inventory and fails closed. | ATTEMPTED |
 | Wrong reading or traversal order | Bind canonical row-with-bit hashes and reconstruct every realizable target from a support witness; define the odd rejector on the lexicographically least packed row. | ATTEMPTED |
@@ -206,7 +206,7 @@ move columns without preserving cuttings or the target. That would destroy
 the global negative conclusion. The repair answers this concrete attack twice:
 the primary pins its exact 2004-split schedule, while the checker uses no such
 schedule at all, verifies every group generator semantically on the rebuilt
-incidence/targets, and solves the anchored equations through independent CNF.
+incidence/targets, and exhausts the weight-16 equations through independent syndrome DP/MITM.
 
 ### N8 — cross-cycle echo
 

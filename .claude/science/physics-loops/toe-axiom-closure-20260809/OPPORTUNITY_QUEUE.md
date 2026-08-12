@@ -553,3 +553,37 @@ selected interface. Expected path to positive retention is selection cut,
 then constructive pointer witness, with generic genesis/pump work a distant
 third. Recheck at least every three hours and after any adoption, exact type
 failure, or independent audit result.
+
+## Post-Block-66 Full-Science Portfolio Gate
+
+The independent read-only recheck used scored obligation retirement and
+positive independent retention per wall-clock hour, not axiom-document ease or
+runner count. It finds no fixed TOE movement for at least 62.5 hours. The
+local `origin/main` snapshot has 4,356 unaudited science rows and zero
+effective retained or retained-bounded top-level science; Cycle 713, Cycle
+870, and Cycle 883 are unaudited and absent from the current twelve-item audit
+dispatch queue. Blocks 37 and 62--65 are not ancestors of `origin/main`.
+
+Block 66 passes the capped type gate but also sharpens the stop condition. The
+literal Cycle-713 code is exactly reducible to `P tensor M`, including
+arbitrary references and the full Block-65 branch superoperators. The decoder
+is a logical basis change, not an unchanged number-preserving matter word;
+`N=M+(P xor M)`. Its internal endpoint transform is controlled `X`, while the
+actual signed 24-frame endpoint representation, one-site joint instrument,
+and source disposition are still open.
+
+| Rank | Investment | Hard cap | Required value event |
+|---:|---|---:|---|
+| 1 | one `713 -> 65 -> 64 -> 52/53` realized-transition vertical slice | 4--5 h | the same `P=1` event becomes a permanent Record, conserved transition current, and sourced causal two-TT update |
+| 2 | complete-law selection/uniqueness gate | 1.5--2 h | derive one law or present one complete owner-adoptable object plus an inequivalent rival |
+| 3 | Block-62 TT/Record observable and inverse-amplification terminal test | 2--3 h | volume-independent physical decoupling/refinement or a fixed-Regge route kill |
+| 4 | two-front collision/background totalization | 2--3 h | remove isolated-front scope without a global arbitration oracle |
+| 5 | Cycle-883 clean-genesis/admission discriminator | 3--5 h | autonomous first lawful domain rather than conditional renewal |
+
+Immediate allocation is `60%` to the vertical slice, `20%` to the resulting
+selection/owner datum, `15%` to the terminal gravity backup, and `5%` to
+dependency minimization. Recheck after two and five hours. Kill the vertical
+slice if it hides an arbitrary subsystem, partial trace, preferred endpoint,
+clean bank, host occurrence, charge reservoir, source-specific fit, or a
+different transition at each interface. Freeze standalone plaquette, source,
+period, precision, reset, and menu variants.

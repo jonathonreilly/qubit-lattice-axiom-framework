@@ -1715,3 +1715,27 @@ complete conditional nonlinear compact solution:
   clause and prove the literal Cycle-713 endpoint/context mapping. Do not
   reopen generic reset, extend the density-label head, or fund source/gravity
   work that does not consume this realized transition
+
+## Block 66 Contract And Result
+
+- capped contract: decide whether the actual Cycle-713 decoded seam output is
+  exactly the Block-65 `P tensor M` input for arbitrary coherence, or expose a
+  fatal subsystem, frame, locality, or conservation mismatch
+- positive logical result: `p=l xor r` on 4,096 literal rows gives two exact
+  two-CNOT decoders; sixteen matrix units prove reference-safe factorization
+- physical-route boundary: both basis changes route using the existing 42 M2
+  and no additional assigned site, but the irreversible joint instrument is
+  not compiled or localized to one physical `M_2(C)` site
+- conservation result: the exact transformed operator is
+  `N=M+(P xor M)`; commutator norm `2` prevents laundering this into the old
+  number-preserving Cycle-713 theorem
+- internal-law result: 256/256 full branch outputs intertwine under the
+  controlled-`X` endpoint-coordinate transform; the actual signed 24-frame/
+  576-product spatial action remains open
+- primary/cache `PASS=9 FAIL=0`; seven targeted mutations fail one aggregate;
+  science commit `b721146968`; graph `5,512/15,802`, out-degree six
+- next artifact: one vertical transition-source theorem or decisive cut that
+  physically realizes the local joint instrument and signed frame, writes the
+  Block-65/64 Records, preserves the transformed unit source in Block 52, and
+  drives the Block-53 causal two-TT update without a host occurrence, clean
+  reservoir, source fit, or interface-specific transition

@@ -2096,3 +2096,34 @@ lines are in the landing primary cache.
 - Scope: `bounded_theorem` and unadopted selection cut. It is not a literal
   Cycle-713/883 physical composition, full-`Z^3` law, axiom amendment, audit
   verdict, retained claim, or TOE score movement. No `review-loop` is used.
+
+## Block 66 Claim Status Certificate
+
+- Literal code: all 4,096 executed Cycle-713 seam rows satisfy `p=l xor r`;
+  either two-CNOT decoder cleans one endpoint and covers all four `P tensor M`
+  logical rows using no additional clean ancilla beyond the supplied pointer.
+- Coherence: all sixteen code matrix units intertwine with zero residual, so
+  arbitrary coherent, mixed, and reference-entangled inputs factor exactly.
+- Routing: both logical basis changes use the existing 42 assigned M2, route
+  to 17,820 nearest-neighbor gates, and have zero placement, adjacency,
+  operand-order, or route-return failure.
+- Conservation boundary: `U N_old U^dagger=N_transformed` has zero residual;
+  on the code `N=M+(P xor M)` and `P=N mod 2`. The old-number commutator norm
+  is `2`, forbidding an unchanged fermion-number claim.
+- Internal instrument: all 256 branch/matrix-unit outputs for two menus, two
+  hazards, and four branches intertwine exactly under the internal controlled-
+  `X` endpoint-coordinate change. The actual signed spatial 24-frame and 576-
+  product representation remains open.
+- Conditional history: all three first formation branches enter the unchanged
+  Block-64 front, execute 567 microsteps, and have 191 permanent Records at 64
+  outcomes. This does not physically implement the joint irreversible
+  instrument at one site.
+- Hostile controls: decoder-gate deletion, basis-only checking, physical-route
+  omission, hidden charge dictionary, broken internal intertwining, erased
+  orientation fork, and broadened boundary each fail one aggregate check.
+- Evidence: primary/cache `PASS=9 FAIL=0`; graph `5,512/15,802`, out-degree
+  six; direct gates pass. Science commit is `b721146968` on exact Block-65
+  delivery `f5fa1e0aef`.
+- Scope: `bounded_theorem`. No one-site attachment instrument, spatial-frame
+  theorem, source disposition, selected physical law, axiom amendment, audit
+  verdict, retained claim, or TOE score movement. No `review-loop` is used.

@@ -2578,3 +2578,49 @@ endpoint/context intertwiner and prepare the eleven-field attachment object
 for an owner decision. Fund source/causal/gravity work only when it consumes
 this same realized transition. Do not reopen Cycle-870 reset, copy an unknown
 density into a head, or return to standalone parameter/support scans.
+
+## Block 66 Handoff
+
+Block 66 is on
+`physics-loop/toe-axiom-closure-block66-cycle713-record-intertwiner-20260812`,
+stacked exactly on Block-65 delivery `f5fa1e0aef`. It executes the literal
+Cycle-713 seam on all 4,096 matter rows and proves `p=l xor r`. Two CNOTs using
+the already supplied pointer clean either endpoint with no additional clean
+ancilla and factor the four-dimensional code as a clean bit tensor the exact
+Block-65 `P tensor M` logical input. All sixteen code matrix units close, so
+the result holds for arbitrary coherent, mixed, and reference-entangled
+states.
+
+Both logical basis changes route on the existing 42 assigned M2 with 17,820
+routed gates and zero placement, nearest-neighbor, operand-order, or return
+failure. The full operator identity carries the original endpoint number to
+`N=M+(P xor M)` with zero residual; the old-number commutator norm is `2`, so
+this is not an unchanged number-preserving Cycle-713 matter word.
+
+The internal left/right coordinate change is controlled `X`. All 256 branch/
+matrix-unit outputs across both Block-65 menus and hazards intertwine exactly,
+including output states. Withholding that transform gives the exact menu-0
+fork `(0,1/2,1/2,0)` versus `(0,0,1/5,4/5)`. Every first formation branch
+still continues conditionally through 567 Block-64 microsteps and 191 Records
+at 64 outcomes.
+
+Primary/cache is `PASS=9 FAIL=0`; seven targeted mutations each fail one
+aggregate check. Citation registration is `5,512/15,802`, out-degree six.
+Vocabulary, strict lint, premise purity, model normalization, Python/cache,
+claim typing, whitespace, N1--N8, and enforced graph/link invariants pass.
+Science commit is `b721146968`.
+
+An independent proof challenge accepts the decoded-interface theorem and
+confirms no CP/reference obstruction. It rejects any broader physical claim:
+the signed 24-frame/576-product endpoint action, one-site physical
+`P tensor M` placement, nearest-neighbor irreversible instrument, and source
+disposition remain unbuilt. Therefore Block 66 is significant type and
+conservation progress but zero scored TOE progress.
+
+The independent full-science portfolio audit says not to extend this as an
+isolated bridge. The next block must force the same `P=1` one-particle
+transition through Block-65/64 Record formation, Block-52 conserved current,
+and Block-53 sourced causal two-TT propagation, including the local joint
+instrument and signed-frame action. Stop at the first irreducible law choice
+and prepare the complete owner object. If that vertical slice fails, run one
+terminal Block-62 TT/Record inverse-amplification/refinement discriminator.

@@ -1177,3 +1177,17 @@ the eleven-field extensional owner decision. Primary/cache is
 citation registration is `5,511/15,795`, out-degree five. No canonical axiom,
 fixed TOE percentage, positive retention, audit verdict, or `review-loop`
 changes. Landing order will place Block 65 after #6157.
+
+## Block 66
+
+Branch
+`physics-loop/toe-axiom-closure-block66-cycle713-record-intertwiner-20260812`
+is stacked exactly on Block-65 delivery `f5fa1e0aef`. Its distinct review
+object is the literal Cycle-713 decoded endpoint-to-Block-65 logical
+intertwiner, reference-safe matrix-unit proof, two routed basis changes,
+transformed number dictionary, internal controlled-`X` full-instrument
+intertwiner, and exact spatial/locality/source selection boundary.
+Primary/cache is `PASS=9 FAIL=0`; seven targeted mutations fail one aggregate
+check each; citation registration is `5,512/15,802`, out-degree six. No
+canonical axiom, fixed TOE percentage, positive retention, audit verdict, or
+`review-loop` changes. Landing order will place Block 66 after #6158.

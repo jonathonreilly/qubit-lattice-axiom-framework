@@ -2856,3 +2856,35 @@ instance or Fourier census.
   This is significant selection/type progress and zero scored TOE progress;
   PR #6158 is open, mergeable, and `CLEAN`. No canonical edit, audit verdict,
   retained status, or `review-loop` occurs.
+
+## Independent Full-Science Recheck And Block 66 Construction
+
+- Independent portfolio verdict: the fixed TOE scores have not moved for at
+  least 62.5 hours. Recent blocks are meaningful route science but have not
+  retired an obligation or reached positive retention; the local main ledger
+  has 4,356 unaudited science rows and no effectively retained or retained-
+  bounded top-level science.
+- Ranking correction: cap the Cycle-713-to-Block-65 type bridge at one block,
+  then require the same realized transition to enter Block 52/53. The full
+  vertical slice ranks above standalone gravity, reset, collision, or another
+  attachment fixture because it is the only current seam with fan-out across
+  all five lanes.
+- Literal decoder result: all 4,096 Cycle-713 rows satisfy `p=l xor r`; both
+  two-CNOT decoders factor a clean endpoint and exact `P tensor M` logical
+  state. All sixteen code matrix units and both physical routes pass.
+- Independent challenge identified the decisive conservation and
+  representation boundaries. The decoder has old-number commutator norm `2`
+  but exactly carries `N=M+(P xor M)`. Internal endpoint exchange is
+  controlled `X`; it is not yet the signed proper-cubic endpoint action.
+- Strengthened after challenge: all 256 full branch/matrix-unit outputs, not
+  only weights, intertwine with zero residual; the note explicitly leaves the
+  24/576 spatial representation, local physical joint instrument, and source
+  disposition open.
+- Primary/cache is `PASS=9 FAIL=0`; seven mutations fail one aggregate check.
+  Graph registration is `5,512/15,802`, out-degree six. Vocabulary, strict
+  lint, premise purity, model normalization, cache, typing, whitespace,
+  N1--N8, and enforced graph/link checks pass.
+- Science commit is `b721146968` on exact Block-65 delivery `f5fa1e0aef`.
+  This is significant decoded-interface progress and zero scored TOE
+  progress. No canonical edit, audit verdict, retained status, or
+  `review-loop` occurs.

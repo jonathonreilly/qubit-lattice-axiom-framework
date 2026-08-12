@@ -1060,3 +1060,24 @@ compiler genesis/dirty repair, coframe generation, attempt cadence, collision
 law, physical clock, source/gravity binding, owner adoption, positive
 retention, audit verdict, TOE percentage move, and `review-loop` remain open
 and are not imported.
+
+## Block 66 Assumptions And Imports
+
+Block 66 imports the literal Cycle-713 decoded gate segment and its supplied
+clean pointer/scratch/code/route domain, plus the conditional Block-65
+instrument and Block-64 history continuation. None of those claims is treated
+as retained authority. The endpoint code relation, two-CNOT words, matrix-unit
+identities, transformed number operator, internal controlled-`X` transform,
+physical route counts, and orientation fork are recomputed by the new runner.
+
+The word uses Cycle 713's already supplied `p`; “no additional clean ancilla”
+does not derive `d_u,d_v,p` genesis. The surviving `M` is a decoded logical
+factor. It is not imported as one local physical Block-65 site, and no partial
+trace, preferred endpoint, clean reservoir, or unknown-density copy is hidden.
+
+Internal controlled-`X` conjugation is not imported as the actual spatial
+proper-cubic endpoint action. The signed 24-frame/576-product representation,
+local nearest-neighbor dilation of the irreversible joint instrument,
+context/program/phase, occurrence, menu, hazard, source disposition, cadence,
+collision, clock, total global law, owner adoption, audit verdict, retention,
+TOE score movement, and `review-loop` remain open.

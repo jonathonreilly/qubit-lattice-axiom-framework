@@ -1,13 +1,15 @@
 ===== runner cache v1 =====
 runner: scripts/physical_body_diagonal_frame_functional_transversal_law_cycle717_2026_08_02.py
-runner_sha256: 7b7e6c8c919228f3a2d43d03ca481ad512ced2fda841338dc374fa490124bc29
+runner_sha256: d65e5ab66836547b1078a1faac0bd55fee7c65161f78c410038e18c397887a89
 input_fingerprint_sha256: f16228dfa22ac9810d4cc316446c432694b1b6d39236992c2bac39c9cf2f5eab
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 7.53
+elapsed_sec: 7.54
 status: ok
 ----- stdout -----
 c717 finite body-diagonal action and transversal probe census
+-- supplied compiler configuration --
+PASS g0_compiler_configuration LT 2 FD_H 0.0001 spatial classes 7 distinct frames 24
 -- body diagonals and the sextet --
 PASS g1_action_faithful_and_full 24 frames give all 24 permutations of the four body diagonals, faithfully
 PASS g1_sextet_is_the_d0_stabiliser stabiliser of (1, 1, 1) is [1, 4, 9, 15, 18, 23], the other three differ
@@ -64,7 +66,7 @@ PASS g7_L4_unit-slot1_finite_count orbit diameter 1.0e+00, measured 72/1296 blin
 PASS g7_L4_unit-slot7_finite_count orbit diameter 1.0e+00, measured 24/1296 blind transversals; the 24 regular cosets remain sufficient
 PASS g7_L4_unit-slot8_finite_count orbit diameter 1.0e+00, measured 24/1296 blind transversals; the 24 regular cosets remain sufficient
 PASS g7_L4_all-ones_orbit_is_one_point orbit diameter 0.0e+00, all 1296 transversals blind
-TOTAL: PASS=51 FAIL=0
+TOTAL: PASS=52 FAIL=0
 
 ----- stderr -----
 

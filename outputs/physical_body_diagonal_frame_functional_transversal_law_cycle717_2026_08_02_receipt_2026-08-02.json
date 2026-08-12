@@ -26,8 +26,18 @@
     3,
     4
   ],
+  "compiler_configuration": {
+    "FD_H": 0.0001,
+    "LT": 2,
+    "spatial_classes": 7,
+    "wrap": false
+  },
   "fail": 0,
   "gates": {
+    "g0_compiler_configuration": {
+      "detail": "LT 2 FD_H 0.0001 spatial classes 7 distinct frames 24",
+      "pass": true
+    },
     "g1_action_faithful_and_full": {
       "detail": "24 frames give all 24 permutations of the four body diagonals, faithfully",
       "pass": true
@@ -312,7 +322,7 @@
       ]
     }
   },
-  "pass": 51,
+  "pass": 52,
   "runner": "physical_body_diagonal_frame_functional_transversal_law_cycle717_2026_08_02.py",
   "sextet": [
     1,

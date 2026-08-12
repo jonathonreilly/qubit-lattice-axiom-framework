@@ -1,14 +1,323 @@
 {
-  "fail": "0",
-  "line_labels": "4",
-  "line_stabilizer_48": "12",
-  "orbit_average_cost": "1.394925e+00",
-  "oriented_labels": "8",
-  "oriented_stabilizer_48": "6",
-  "pass": "51",
-  "static_form_scale": "2.945214e+01",
-  "static_labels_LT2": "4",
-  "static_labels_LT3": "4",
-  "stencil_separation": "2.789850e+00",
-  "temporal_drop_floor": "1.000000"
+  "controls": {
+    "factor_shift": 0.001
+  },
+  "fail": 0,
+  "gates": [
+    {
+      "detail": "mine = 50, landed = 50",
+      "gate": "triangle types match the landed count",
+      "ok": true
+    },
+    {
+      "detail": "dim = 446, dev < 1.0e-09",
+      "gate": "L=3 LT=2 contraction equals (LT/2) times the landed form",
+      "ok": true
+    },
+    {
+      "detail": "dev = 2.945214e-02",
+      "gate": "rejector: a shifted tick-length factor is refused",
+      "ok": true
+    },
+    {
+      "detail": "dim = 669, dev < 1.0e-09",
+      "gate": "L=3 LT=3 contraction equals (LT/2) times the landed form",
+      "ok": true
+    },
+    {
+      "detail": "dim = 1244, dev < 1.0e-09",
+      "gate": "L=4 LT=2 contraction equals (LT/2) times the landed form",
+      "ok": true
+    },
+    {
+      "detail": "dim = 1866, dev < 1.0e-09",
+      "gate": "L=4 LT=3 contraction equals (LT/2) times the landed form",
+      "ok": true
+    },
+    {
+      "detail": "0 slot mismatches over 240",
+      "gate": "classifier reproduces the landed cell template on the source corner 000",
+      "ok": true
+    },
+    {
+      "detail": "0 violations over 1920 slots",
+      "gate": "every edge slot of all eight stencils satisfies the anchor law",
+      "ok": true
+    },
+    {
+      "detail": "1116 violations over 1920 slots",
+      "gate": "rejector: the sign-blind anchor rule breaks the anchor law",
+      "ok": true
+    },
+    {
+      "detail": "orbit = 8, stabilizer = 3, 24/3 = 8",
+      "gate": "proper rotations act transitively on the 8 oriented diagonals",
+      "ok": true
+    },
+    {
+      "detail": "orbit = 4, stabilizer = 6, 24/6 = 4",
+      "gate": "proper rotations act transitively on the 4 diagonal lines",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "gate": "oriented stabilizer inside the proper rotations has order 3",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "gate": "line stabilizer inside the proper rotations has order 6 (the sextet)",
+      "ok": true
+    },
+    {
+      "detail": "48/6 = 8 oriented labels",
+      "gate": "oriented stabilizer inside the 48 signed permutations has order 6",
+      "ok": true
+    },
+    {
+      "detail": "48/12 = 4 line labels",
+      "gate": "line stabilizer inside the 48 signed permutations has order 12",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "gate": "oriented and line stabilizers are closed exact matrix subgroups",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "gate": "diagonal-orientation-reversing coset has six elements",
+      "ok": true
+    },
+    {
+      "detail": "orientation-preserving = (3, 3), orientation-reversing = (3, 3)",
+      "gate": "spatial determinant splits 3+3 on both diagonal-orientation classes",
+      "ok": true
+    },
+    {
+      "detail": "proper split = 3 orientation-preserving + 3 orientation-reversing",
+      "gate": "proper line sextet draws three elements from each orientation class",
+      "ok": true
+    },
+    {
+      "detail": "192 pairs, dev < 1.0e-09",
+      "gate": "L=3 LT=3: relabelling by g carries stencil a onto stencil g.a",
+      "ok": true
+    },
+    {
+      "detail": "dev = 2.789850e+00",
+      "gate": "rejector: holding the stencil fixed under the same relabelling is refused",
+      "ok": true
+    },
+    {
+      "detail": "192 pairs, dev < 1.0e-09",
+      "gate": "L=4 LT=2: relabelling by g carries stencil a onto stencil g.a",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "gate": "the point reflection sends source corner 000 to 111",
+      "ok": true
+    },
+    {
+      "detail": "dev < 1.0e-09",
+      "gate": "L=3 LT=3: reflection carries stencil 000 form to stencil 111 form",
+      "ok": true
+    },
+    {
+      "detail": "floor = 2.789850e+00, min separation = 2.789850e+00",
+      "gate": "L=3 LT=3: fixed-stencil reflection cost equals stencil separation",
+      "ok": true
+    },
+    {
+      "detail": "dev < 1.0e-09",
+      "gate": "L=4 LT=2: reflection carries stencil 000 form to stencil 111 form",
+      "ok": true
+    },
+    {
+      "detail": "floor = 2.789850e+00, min separation = 2.789850e+00",
+      "gate": "L=4 LT=2: fixed-stencil reflection cost equals stencil separation",
+      "ok": true
+    },
+    {
+      "detail": "24 of 24",
+      "gate": "L=3 LT=3: the orbit average admits all 24 axiom proper frames",
+      "ok": true
+    },
+    {
+      "detail": "48 of 48",
+      "gate": "L=3 LT=3: the finite fixture also admits all 48 signed spatial frames",
+      "ok": true
+    },
+    {
+      "detail": "",
+      "gate": "the orbit-averaged form carries a single frame label",
+      "ok": true
+    },
+    {
+      "detail": "cost = 1.394925e+00, separation = 2.789850e+00",
+      "gate": "the averaging cost is exactly half the stencil separation",
+      "ok": true
+    },
+    {
+      "detail": "dim = 446, distinct = 8, classes = 8",
+      "gate": "LT=2: 8 distinct stencil forms and 8 frame classes",
+      "ok": true
+    },
+    {
+      "detail": "dim = 669, distinct = 8, classes = 8",
+      "gate": "LT=3: 8 distinct stencil forms and 8 frame classes",
+      "ok": true
+    },
+    {
+      "detail": "dim = 1115, distinct = 8, classes = 8",
+      "gate": "LT=5: 8 distinct stencil forms and 8 frame classes",
+      "ok": true
+    },
+    {
+      "detail": "admitted signed spatial frames = 6 (oriented stabilizer); stencils separated at 2.789850e+00",
+      "gate": "LT=2 tick-resolved, all classes",
+      "ok": true
+    },
+    {
+      "detail": "admitted signed spatial frames = 12 (line stabilizer); stencils identified",
+      "gate": "LT=2 tick-resolved, temporal dropped",
+      "ok": true
+    },
+    {
+      "detail": "admitted signed spatial frames = 12 (line stabilizer); stencils identified",
+      "gate": "LT=2 tick-folded, all classes",
+      "ok": true
+    },
+    {
+      "detail": "admitted signed spatial frames = 12 (line stabilizer); stencils identified",
+      "gate": "LT=2 tick-folded, temporal dropped = STATIC",
+      "ok": true
+    },
+    {
+      "detail": "admitted signed spatial frames = 6 (oriented stabilizer); stencils separated at 2.789850e+00",
+      "gate": "LT=3 tick-resolved, all classes",
+      "ok": true
+    },
+    {
+      "detail": "admitted signed spatial frames = 6 (oriented stabilizer); stencils separated at 1.000000e+00",
+      "gate": "LT=3 tick-resolved, temporal dropped",
+      "ok": true
+    },
+    {
+      "detail": "admitted signed spatial frames = 12 (line stabilizer); stencils identified",
+      "gate": "LT=3 tick-folded, all classes",
+      "ok": true
+    },
+    {
+      "detail": "admitted signed spatial frames = 12 (line stabilizer); stencils identified",
+      "gate": "LT=3 tick-folded, temporal dropped = STATIC",
+      "ok": true
+    },
+    {
+      "detail": "admitted signed spatial frames = 6 (oriented stabilizer); stencils separated at 2.789850e+00",
+      "gate": "LT=5 tick-resolved, all classes",
+      "ok": true
+    },
+    {
+      "detail": "admitted signed spatial frames = 6 (oriented stabilizer); stencils separated at 1.000000e+00",
+      "gate": "LT=5 tick-resolved, temporal dropped",
+      "ok": true
+    },
+    {
+      "detail": "admitted signed spatial frames = 12 (line stabilizer); stencils identified",
+      "gate": "LT=5 tick-folded, all classes",
+      "ok": true
+    },
+    {
+      "detail": "admitted signed spatial frames = 12 (line stabilizer); stencils identified",
+      "gate": "LT=5 tick-folded, temporal dropped = STATIC",
+      "ok": true
+    },
+    {
+      "detail": "floor = 1.000000",
+      "gate": "LT=3: dropping temporal classes leaves the stencils separated",
+      "ok": true
+    },
+    {
+      "detail": "floor = 1.000000",
+      "gate": "LT=4: dropping temporal classes leaves the stencils separated",
+      "ok": true
+    },
+    {
+      "detail": "dev < 1.0e-09",
+      "gate": "LT=4: the tick fold identifies them where dropping does not",
+      "ok": true
+    },
+    {
+      "detail": "floor = 1.000000",
+      "gate": "LT=5: dropping temporal classes leaves the stencils separated",
+      "ok": true
+    },
+    {
+      "detail": "translations = 6, with reversal = 12",
+      "gate": "LT=2: translations select the oriented stabilizer; adding tick reversal selects the line stabilizer",
+      "ok": true
+    },
+    {
+      "detail": "translations = 6, with reversal = 12",
+      "gate": "LT=3: translations select the oriented stabilizer; adding tick reversal selects the line stabilizer",
+      "ok": true
+    },
+    {
+      "detail": "translations = 6, with reversal = 12",
+      "gate": "LT=4: translations select the oriented stabilizer; adding tick reversal selects the line stabilizer",
+      "ok": true
+    },
+    {
+      "detail": "translations = 6, with reversal = 12",
+      "gate": "LT=5: translations select the oriented stabilizer; adding tick reversal selects the line stabilizer",
+      "ok": true
+    },
+    {
+      "detail": "total = 240, spatial = 120",
+      "gate": "the stencil carries 240 edge slots, 120 of them spatial",
+      "ok": true
+    },
+    {
+      "detail": "72 on the six axis directions, 48 not",
+      "gate": "a large share of the spatial slots are not nearest-neighbour steps",
+      "ok": true
+    },
+    {
+      "detail": "labels = 4",
+      "gate": "static form at LT=2 carries 4 frame labels",
+      "ok": true
+    },
+    {
+      "detail": "labels = 4",
+      "gate": "static form at LT=3 carries 4 frame labels",
+      "ok": true
+    }
+  ],
+  "line_labels": 4,
+  "line_stabilizer_48": 12,
+  "orbit_average_cost": 1.394925078723509,
+  "orientation_class_determinant_splits": {
+    "preserving": [
+      3,
+      3
+    ],
+    "reversing": [
+      3,
+      3
+    ]
+  },
+  "oriented_labels": 8,
+  "oriented_stabilizer_48": 6,
+  "pass": 58,
+  "static_form_scale": 29.452136694480856,
+  "static_labels_LT2": 4,
+  "static_labels_LT3": 4,
+  "stencil_separation": 2.789850155283471,
+  "temporal_drop_floor": 1.0,
+  "tolerances": {
+    "matrix": 1e-09,
+    "reported_scalar": 1e-06
+  }
 }

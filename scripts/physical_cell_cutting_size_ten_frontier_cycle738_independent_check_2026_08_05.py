@@ -353,6 +353,9 @@ receipt = {
     "claim_type": "bounded_theorem",
     "audit_status_authority": "independent audit lane only",
     "input_sha256": {path: sha256(path) for path in AUDIT_INPUT_PATHS},
+    "checker_sha256": sha256(
+        "scripts/physical_cell_cutting_size_ten_frontier_cycle738_independent_check_2026_08_05.py"
+    ),
     "population": {"cuttings": len(solutions), "used_pieces": len(used), "rank": len(pivots)},
     "ten_piece_answers": answers,
     "encoding": encoded,

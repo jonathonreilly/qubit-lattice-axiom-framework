@@ -1070,9 +1070,10 @@ adds Block 57 after #6149.
 
 ## Block 58
 
-PR pending for
-`physics-loop/toe-axiom-closure-block58-nonuniform-full-edge-20260812`, stacked
-exactly on Block-57 delivery head `00d71b0b7e`. Its distinct review object is
+PR #6151
+(`physics-loop/toe-axiom-closure-block58-nonuniform-full-edge-20260812`) is
+open, mergeable, and `CLEAN`, stacked exactly on Block-57 delivery head
+`00d71b0b7e`. Its distinct review object is
 the correction of the Block-19/21/54 affine nonmetric surrogate, the first
 genuine full-edge conserved-source branches, their nonzero second-order Ward
 vectors and rank-eight pseudo-constraint Schur blocks, and the narrow scalar

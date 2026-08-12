@@ -2289,8 +2289,8 @@ below `4.4e-9`. Citation registration is `5,504/15,767`, out-degree four.
 Vocabulary, strict lint, premise purity, Python/cache, claim typing,
 whitespace, N1--N8/N5, and enforced graph/link gates pass. The full pipeline
 reaches only the inherited stage-7 dependency-policy epoch mismatch. Science
-commit is `85cbe08df2`; PR pending. No canonical axiom, fixed TOE percentage,
-audit verdict, or `review-loop` changes.
+commit is `85cbe08df2`; PR #6151 is open, mergeable, and `CLEAN`. No canonical
+axiom, fixed TOE percentage, audit verdict, or `review-loop` changes.
 
 The next qualifying calculation is the mixed source--geometry Noether identity
 for a dynamical Record/matter source, evaluated against both displayed Ward

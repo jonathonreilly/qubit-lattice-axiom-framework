@@ -1896,7 +1896,7 @@ lines are in the landing primary cache.
   four. Vocabulary, strict lint, premise purity, Python/cache, claim typing,
   whitespace, N5, and enforced graph/link invariants pass. The full pipeline
   reaches the inherited stage-7 dependency-policy mismatch. Science commit is
-  `85cbe08df2`; PR pending.
+  `85cbe08df2`; PR #6151 is open, mergeable, and `CLEAN`.
 - Scope: decisive rejection of one fixed-action/external-source candidate and
   two narrow repair families—not a gravity no-go, Lorentzian nonlinear theorem,
   full-`Z^3` result, law selection, axiom amendment, audit verdict, or TOE

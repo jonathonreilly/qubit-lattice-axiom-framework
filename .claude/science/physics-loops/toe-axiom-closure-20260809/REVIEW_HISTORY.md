@@ -2623,6 +2623,7 @@ instance or Fourier census.
   premise purity, Python/cache, claim typing, whitespace, forensic N5, and
   enforced graph/link invariants pass. The full pipeline reaches only the
   inherited stage-7 dependency-policy epoch mismatch.
-- Science commit is `85cbe08df2`; PR pending on exact Block-57 delivery
-  `00d71b0b7e`. The TOE map is unchanged for at least 55 hours. No canonical
-  axiom, fixed percentage, audit verdict, or `review-loop` changes.
+- Science commit is `85cbe08df2`; PR #6151 is open, mergeable, and `CLEAN` on
+  exact Block-57 delivery `00d71b0b7e`. The TOE map is unchanged for at least
+  55 hours. No canonical axiom, fixed percentage, audit verdict, or
+  `review-loop` changes.

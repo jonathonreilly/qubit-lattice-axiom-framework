@@ -1483,7 +1483,8 @@ complete conditional nonlinear compact solution:
   out-degree four; primary/cache, vocabulary, strict lint, premise purity,
   Python/cache, claim typing, whitespace, N5, and enforced graph/link checks
   pass. The full pipeline reaches only the inherited stage-7 dependency-policy
-  epoch mismatch already present in the parent stack
+  epoch mismatch already present in the parent stack; PR #6151 is open,
+  mergeable, and `CLEAN`
 - score and next artifact: the fixed percentage map remains unchanged for at
   least 55 hours. Construct the dynamical Record/matter source contribution to
   the same-order joint Noether identity and demand cancellation of the two

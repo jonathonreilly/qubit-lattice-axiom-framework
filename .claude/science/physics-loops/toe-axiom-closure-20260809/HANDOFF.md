@@ -2539,3 +2539,41 @@ scheduler. If exact local construction succeeds, bind its conserved
 transition source into the existing causal/TT law. If the remaining choices
 are extensional rather than derivable, stop and produce the smallest complete
 axiom decision surface; do not substitute another carrier or fixture scan.
+
+## Block 65 Handoff
+
+An independent read-only portfolio challenge corrected the target before the
+block was packaged. Cycle 883 already proves conditional repeated operation
+and full supplied-domain return; another reset/pump search would leave first
+genesis, invocation, occurrence, typing, coframe, numeric law, and selection
+untouched. The highest-value route is the physical-state-to-Record extensional
+selection cut, using a direct matter-pointer attachment only as its witness.
+
+Block 65 constructs that witness. On an arbitrary coherent or entangled joint
+pointer/matter density, one four-branch CP instrument either forms no Record
+or actualizes one of the three Block-64 effects. A realized branch writes the
+pure first outcome Record and then the known effect-normalized successor head.
+It never attempts to copy the unknown input density into classical head
+content. The outcome and head targets are locally forced over unit edges; the
+result enters the unchanged Block-64 front at `H_1`.
+
+Primary/cache is `PASS=9 FAIL=0`; nine mutations each fail one aggregate
+check. The executed surface covers 96 effect resolutions, five arbitrary/
+coherent/entangled input classes, 48 local patches, 567 continuation
+microsteps, 191 permanent Records for 64 outcomes, and 144/144 active
+covariance controls. Graph registration is `5,511/15,795`, out-degree five.
+Science commit is `35f8c82354` on Block-64 delivery `12ee01a522`.
+
+The exact gain is a positive type-correct attachment route and a sharper
+owner decision. The exact remaining fields are physical-state domain, pointer
+projector, admission/dirty disposition, formation hazard, causal precedence,
+effect menu, Record carrier, next-head decoder, coframe rule, collision
+domain, and clock normalization. Menu 0/1 and hazard one/three-quarters are
+explicit competing extensions; current axioms do not select them.
+
+This remains zero scored TOE progress until one complete law is derived or
+adopted and independently retained. Next execute the literal Cycle-713
+endpoint/context intertwiner and prepare the eleven-field attachment object
+for an owner decision. Fund source/causal/gravity work only when it consumes
+this same realized transition. Do not reopen Cycle-870 reset, copy an unknown
+density into a head, or return to standalone parameter/support scans.

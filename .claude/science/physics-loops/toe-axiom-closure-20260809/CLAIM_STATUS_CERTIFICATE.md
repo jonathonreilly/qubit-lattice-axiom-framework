@@ -2067,3 +2067,32 @@ lines are in the landing primary cache.
   formation, physical occurrence/rate/clock, multi-front/full-`Z^3` dynamics,
   source/gravity binding, law selection/adoption, and every TOE percentage
   remain open. No `review-loop` is used.
+
+## Block 65 Claim Status Certificate
+
+- Instrument: for arbitrary joint pointer/matter density, the no-Record effect
+  and three formation effects are positive and sum exactly to identity. All
+  96 frame/menu/hazard resolutions pass; branch Choi minimum
+  `-1.129e-16` is numerical roundoff.
+- Type repair: deterministic exact-density classical labeling violates
+  mixture affinity on an exact two-state control. The branch-first instrument
+  is affine, and every successor head contains the fixed normalized effect
+  state rather than the unknown input density.
+- Local attachment: 48/48 frame/phase ready squares force outcome then head
+  over unit edges. Every realized first branch leaves exactly one ordinary
+  Block-64 relay active; no host chooses the order.
+- Continuation/history: all three first outcomes continue through 63 further
+  events and 567 unique microsteps. The 64-outcome cylinder weights equal the
+  Block-63/64 law exactly, with 191 permanent Records.
+- Covariance/selection: 144/144 active rotation/translation controls pass.
+  Menu and occurrence-hazard forks are exact, distinct, and preserve their
+  stated shared-effect/conditional-content invariants.
+- Hostile controls: state independence, ontic-density copy, clean bank,
+  nonlocal bootstrap, host schedule, finite stock, contextual shared effect,
+  selected rate, and broadened boundary each fail one aggregate check.
+- Evidence: primary/cache `PASS=9 FAIL=0`; graph `5,511/15,795`, out-degree
+  five; direct gates pass. Science commit is `35f8c82354` on exact Block-64
+  delivery `12ee01a522`.
+- Scope: `bounded_theorem` and unadopted selection cut. It is not a literal
+  Cycle-713/883 physical composition, full-`Z^3` law, axiom amendment, audit
+  verdict, retained claim, or TOE score movement. No `review-loop` is used.

@@ -527,3 +527,29 @@ hours. A block qualifies only if it attaches a field to the joint law,
 retires a scored obligation, decisively kills the candidate, or proves that a
 specific extensional datum must be selected. The fixed TOE percentages remain
 unchanged.
+
+## Post-Block-65 Independent Portfolio Correction
+
+The independent check rejects “Cycle-870 reset/renewal” as the active second
+root: Cycle 883 already returns the supplied clean domain after every
+externally invoked epoch. The live compiler residual is first genesis/
+admission plus invocation, while the cross-lane root is physical occurrence
+and coherent-state-to-permanent-Record attachment.
+
+Block 65 proves one branch-first attachment exists and localizes the exact
+choice, so the queue is now:
+
+| Rank | Next target | Acceptance | Kill/pivot condition |
+|---:|---|---|---|
+| 1 | complete extensional attachment decision | populate all eleven Block-65 fields with one derived or owner-adoptable physical law; preserve CP, shared effect, local precedence, dirty disposition, and exact Block-64 continuation | stop if the result is only an unattached `L*`, leaves menu/hazard/cadence/coframe hidden, or calls a conditional witness adopted physics |
+| 2 | literal current-matter pointer-to-Record intertwiner | map the actual Cycle-713 endpoint and physical matter sector into the Block-65 `P tensor M` input/context without a host direction copy, preferred site, clean-bank substitution, or coherent pointer mislabeled as outcome | elevate the exact missing ontology/interface field if no type-correct mapping exists; do not return to generic reset |
+| 3 | retention/dependency readiness | make Block 64 and Block 65 independently auditable with exact current-tree parents and no branch-only authority; keep audit verdicts in the audit lane | do not spend this allocation on landing mechanics or status prose that leaves a science defect untouched |
+| 4 | source/causal/multi-front/gravity consumption | use the selected realized Record transition as the source/current/clock input and test collision/global semantics | freeze any task that reintroduces an external source, cumulative Record count, implicit signature, or unselected clock |
+
+Working allocation is `45%` exact extensional selection/owner datum, `25%`
+bounded literal pointer-to-Record witness, `20%` retention/dependency
+readiness, and `10%` source/gravity/multi-front work only where it consumes the
+selected interface. Expected path to positive retention is selection cut,
+then constructive pointer witness, with generic genesis/pump work a distant
+third. Recheck at least every three hours and after any adoption, exact type
+failure, or independent audit result.

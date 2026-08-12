@@ -1683,3 +1683,34 @@ complete conditional nonlinear compact solution:
   renewal. If the seed, clean support, admission event, kernel/menu, rate,
   clock, or action decoder remains supplied, record that as the precise
   extensional-law/axiom selection wall rather than extending the compiler
+
+## Block 65 Contract And Result
+
+- corrected target: Cycle 883 already returns its complete supplied clean
+  domain after each externally invoked epoch, so reset/renewal is not the
+  current root; physical occurrence and coherent-pointer-to-Record attachment
+  are the current root
+- contract: either build a type-correct local pointer/matter bootstrap into
+  Block 64 without a clean bank, host schedule, preferred site, or unknown-
+  density copy, or isolate the exact owner choice with a competing completion
+- implemented a branch-first CP instrument on arbitrary joint pointer/matter
+  densities: no-formation plus three formation effects sum to identity; a
+  realized outcome writes `O_0`, then a deterministic known-state `H_1`, then
+  the unchanged Block-64 front continues
+- exact mixture-affinity control rejects a deterministic classical
+  `H(rho,...)` label from one unknown input while the repair stays affine and
+  CP; this is a route-local type obstruction, not an attachment no-go
+- primary/cache is `PASS=9 FAIL=0`; nine targeted mutations each fail one
+  aggregate check; 96 effect resolutions, five arbitrary/coherent/entangled
+  inputs, 48 local patches, 144 covariance cases, and every first-outcome
+  branch through 64 outcomes pass
+- science commit is `35f8c82354`; graph registration is `5,511/15,795`,
+  out-degree five; all direct source, cache, claim-typing, vocabulary,
+  premise, model-family, whitespace, and graph/link gates pass
+- exact selection surface: menu 0 versus 1 changes the matter distribution
+  while preserving the literal shared effect; hazards one versus three-
+  quarters change occurrence while preserving conditional content
+- next artifact: derive or register the complete eleven-field attachment
+  clause and prove the literal Cycle-713 endpoint/context mapping. Do not
+  reopen generic reset, extend the density-label head, or fund source/gravity
+  work that does not consume this realized transition

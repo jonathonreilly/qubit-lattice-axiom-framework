@@ -1031,3 +1031,32 @@ rate, physical clock, multi-front collision/resource rule, total full-`Z^3`
 law, source/gravity binding, physical selection, owner adoption, axiom edit,
 positive retention, audit verdict, TOE percentage move, or `review-loop` is
 imported.
+
+## Block 65 Assumptions And Imports
+
+Block 65 imports the current minimal axioms, the exact Block-64 carrier/local
+rule, the Cycle-713 statement that its coherent pointer is opportunity rather
+than occurrence or Record, the Cycle-883 returned-domain theorem on its
+supplied clean box, and the prior exact formation-rate selection witness. The
+Cycle-713/883 claims remain conditional and unaudited; they provide route
+typing, not retained authority.
+
+The live input factorization `P tensor M`, arbitrary joint density `Omega`,
+pointer projector `P_1`, ready-square context, frame/program/phase, effect
+menu, hazard, and physical attempt are supplied candidate-law data. The
+instrument is total on every two-qubit density, including coherent and
+entangled inputs; no clean auxiliary bank is imported into this bounded
+instrument. Invalid, occupied, and spent patches refuse.
+
+The no-Record branch and three formation branches are orthogonal direct-sum
+output sectors. The known post-outcome state is effect-normalized and may be
+encoded without copying the unknown input density. The proof imports the
+elementary affinity of quantum channels; it does not import an ontic density
+field, tomography ensemble, state-specific transition table, host schedule,
+preferred coordinate, audit grade, or physical law selection.
+
+The literal Cycle-713 endpoint-to-`P tensor M` intertwiner, autonomous full
+compiler genesis/dirty repair, coframe generation, attempt cadence, collision
+law, physical clock, source/gravity binding, owner adoption, positive
+retention, audit verdict, TOE percentage move, and `review-loop` remain open
+and are not imported.

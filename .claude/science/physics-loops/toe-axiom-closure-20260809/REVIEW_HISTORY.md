@@ -2823,3 +2823,35 @@ instance or Fourier census.
   matter formation, physical law selection, time/rate, multi-front/global
   composition, source/gravity binding, audit retention, and all TOE scores
   remain open. No `review-loop` is used.
+
+## Independent Portfolio Challenge And Block 65 Construction
+
+- Independent read-only verdict: pursue the physical-state-to-Record
+  extensional selection cut, use direct pointer attachment as its constructive
+  witness, and demote generic genesis/pump search. The agent corrected the
+  stale Cycle-870 reset target by reading Cycle 883's full supplied-domain
+  return and issued no audit verdict.
+- Identified a precise type issue: Block 64's supplied initial head stores the
+  complete density as classical content, but deterministic exact-density
+  labeling of one unknown quantum input violates channel mixture affinity.
+  This is not an attachment no-go because a branch-first route succeeds.
+- Constructed the exact effects `F_empty=P0 tensor I+(1-f)P1 tensor I` and
+  `F_h=f P1 tensor E_(m,h)`. They normalize for arbitrary joint pointer/
+  matter density; formation branches are measure-and-prepare CP maps.
+- Executed outcome-first Recordization and deterministic known-state head
+  finalization over three unit edges. Every first branch leaves one ordinary
+  Block-64 relay active; every 64-outcome cylinder agrees exactly.
+- Primary/cache is `PASS=9 FAIL=0`; nine targeted mutations each fail one
+  aggregate check. Metrics: 96 effect resolutions, five dirty/coherent/
+  entangled inputs, 48 local contexts, 567 continuation microsteps, 191
+  Records, and 144/144 covariance cases.
+- Exact selection fork: menu 0/1 distributions differ while sharing literal
+  `E0`; hazards one/three-quarters change occurrence but not conditional
+  content. Eleven explicit owner fields prevent a hidden clean bank, host
+  schedule, preferred site, decoder, rate, or clock.
+- Graph registration is `5,511/15,795`, out-degree five. Vocabulary, strict
+  lint, premise purity, model normalization, Python/cache, claim typing,
+  whitespace, N1--N8, and enforced graph/link invariants pass.
+- Science commit is `35f8c82354` on exact Block-64 delivery `12ee01a522`.
+  This is significant selection/type progress and zero scored TOE progress;
+  no canonical edit, audit verdict, retained status, or `review-loop` occurs.

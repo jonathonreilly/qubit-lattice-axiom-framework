@@ -2558,3 +2558,35 @@ instance or Fourier census.
 - Science commit is `20debf55ee`; PR #6149 is open, mergeable, and `CLEAN` on
   exact Block-55 delivery `52f55f0021`. No canonical edit, fixed percentage,
   audit verdict, or `review-loop` occurs.
+
+## Block 57 Construction And Adversarial Record
+
+- Verified the checkpoint introduction commit and wall clock: percentages
+  first recorded at 2026-08-09 20:05 EDT, unchanged through the 2026-08-12
+  02:10 EDT re-check, establishing the conservative at-least-54-hour interval.
+- Composed the exact Block-46 diagnostics with vector-decoder normalization.
+  Central differences reproduce `diag(1,3/5,1/2,1,2,1)` within `2e-9`, with
+  rank six and determinant `3/5`.
+- Recomputed both decoder systems: adjoint rank eight/nullity one, trivial
+  rank nine/nullity zero.
+- Replayed all 1,296 grading supports and the `96/768/432` rank census. The
+  unit and signed pair `[1:1:1]`, `[1:-1:-1]` both have count 90 before the
+  unselected strict-positive restriction.
+- Exhausted the declared cross-product sample: `2^5` Record/gravity settings,
+  three action/decoder settings, two gradings, and two signs give exactly 384
+  distinct signatures. The note explicitly refuses to promote these bounded
+  signatures to complete laws.
+- Recorded an exact five-part attached-law acceptance contract and separated
+  derive-only, provisional-law tournament, and owner-adoption routes. No
+  placeholder or structural prose is called an amendment.
+- Continuous-Jacobian, signature-count, and grading-count mutations each exit
+  nonzero with one named failed check. Fresh N1--N8 rejects a universal TOE
+  no-go and preserves uniqueness, quotient, relational, exact-law,
+  perfect-action, Pachner, and alternate-law routes.
+- Primary/cache is `PASS=9 FAIL=0`, stdout 2,465 characters; citation
+  registration is `5,503/15,763`, out-degree four. Vocabulary, strict lint,
+  premise purity, Python/cache, claim typing, whitespace, forensic N5, and
+  enforced graph/link invariants pass.
+- Science commit is `5cfc183a93`; PR pending on exact Block-56 delivery
+  `551c8cf7c6`. No canonical edit, fixed percentage, audit verdict, or
+  `review-loop` occurs.

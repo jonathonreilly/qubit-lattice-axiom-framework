@@ -2199,3 +2199,49 @@ or uniqueness theorem binding this action/decoder/compiler to Root-A
 formation, probability, clock, constraints, source, and history, or a minimal
 complete extensional axiom delta for owner choice. Another carrier argument,
 projective count, or bare gravity scan is low leverage and should not ship.
+
+## Block 57 Handoff
+
+Block 57 is local on branch
+`physics-loop/toe-axiom-closure-block57-joint-law-axiom-decision-20260812`,
+stacked exactly on Block-56 delivery head `551c8cf7c6`. It performs the
+portfolio reset requested by the user and does not pretend that another
+bounded interface theorem is percentage-bearing TOE progress.
+
+The verified accounting result is stark. The checkpoint map was first written
+on 2026-08-09 at 20:05 EDT and had never changed at the 2026-08-12 02:10 EDT
+re-check. It has therefore been at least 54 hours since recorded lane movement.
+Blocks 53--56 removed false walls and localized the law-selection boundary,
+but they earned zero TOE points.
+
+The cross-root exact result combines the Block-46 five-control surface with
+the Block-56 decoder scale. Its Jacobian is
+`diag(1,3/5,1/2,1,2,1)`, rank six, determinant `3/5`. The trivial/adjoint
+action fork, two equal-count 90-support gradings, and two sign assignments
+remain discrete choices. A declared two-value sample of the first five
+controls, three action/decoder settings, two gradings, and two signs gives 384
+distinct diagnostic signatures. These are witness signatures, not 384
+complete laws.
+
+The axiom consequence is precise. Structural adjectives or an unattached
+`L*` cannot select the physics. The narrowest potentially sufficient update
+would retype Admissibility to reference one exact attached joint-law object or
+exact Record-faithful equivalence class covering the full local `M_2(C)` law,
+Record instrument and history, internal action/decoder/compiler/grading/sign,
+clock, nonlinear source-complete gravity, physical state, and realized-history
+measure. No such object currently exists, so no canonical edit is made.
+
+Primary/cache is `PASS=9 FAIL=0`; continuous-rank, signature-count, and
+grading-count mutations each fail exactly one check. Citation registration is
+`5,503/15,763`, out-degree four. Vocabulary, strict lint, premise purity,
+Python/cache, claim typing, whitespace, fresh N1--N8/N5, and graph/link gates
+pass. Science commit is `5cfc183a93`; PR pending. Independent audit remains
+required. No canonical axiom, fixed TOE percentage, audit verdict, or
+`review-loop` changes.
+
+Execution now changes. Run one provisional complete-law tournament, beginning
+with the source-complete nonlinear gravity kill test and the Root-A/B physical
+interface. Pause carrier counts, projective refinements, bare fixed-action
+scans, coefficient grids, and additional working propagators. A future block
+qualifies only by deriving/adopting a physical interface, decisively killing a
+live candidate, or supplying a genuinely extensional owner datum.

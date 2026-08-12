@@ -1840,3 +1840,35 @@ lines are in the landing primary cache.
   compiler, chirality or gravity sign, joint law, axiom amendment, TOE
   percentage movement, or audit verdict. Fresh N1--N8 and all five N5
   resolutions land; no `review-loop` is used.
+
+## Block 57 Claim Status
+
+- Campaign accounting: the checkpoint percentages were first recorded at
+  2026-08-09 20:05 EDT and had never changed at the 2026-08-12 02:10 EDT
+  portfolio check. The defensible statement is therefore at least 54 hours
+  with zero recorded percentage movement.
+- Cross-root continuous extent: formation, precedence, Lorentzian clock,
+  constraint status, source coupling, and decoder normalization have exact
+  diagnostic Jacobian `diag(1,3/5,1/2,1,2,1)`, rank six, determinant `3/5`.
+- Discrete extent: current-compatible trivial and adjoint internal actions
+  disagree on vector-decoder existence; `[1:1:1]` and `[1:-1:-1]` both have
+  90 supports before positivity is selected; neither chirality/gravity-sign
+  assignment is current-axiom content.
+- Resolution certificate: the declared two-point sampling gives exactly 384
+  distinct diagnostic signatures. They are explicitly not claimed as 384
+  complete physical laws.
+- Axiom boundary: a structural sentence or placeholder law name is
+  insufficient. The only potentially sufficient constitutional shape is one
+  exact attached law or exact Record-faithful physical-equivalence class;
+  since no complete extensional object is supplied, no canonical edit is
+  ready.
+- Evidence: primary/input-pinned cache `PASS=9 FAIL=0`; three process-local
+  mutations fail exactly one check each; graph `5,503/15,763`, out-degree
+  four. Vocabulary, strict lint, premise purity, Python/cache, claim typing,
+  whitespace, N5, and enforced graph/link invariants pass. Science commit is
+  `5cfc183a93`; PR pending.
+- Scope: exact present-surface non-entailment, axiom issue identification, and
+  campaign strategy correction—not a universal TOE no-go, global minimality,
+  law selection, owner adoption, axiom amendment, audit verdict, or TOE
+  percentage movement. Fresh N1--N8 and all five N5 resolutions land; no
+  `review-loop` is used.

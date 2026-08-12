@@ -1425,3 +1425,31 @@ complete conditional nonlinear compact solution:
   lineage. Ship only one exact joint-law selection/uniqueness result or the
   minimal complete extensional axiom delta; do not produce another carrier,
   projective-count, or bare-gravity support block
+
+## Block 57 Artifact Plan
+
+- theorem note: combine the highest-fanout Root-A and Root-B forks, verify how
+  long the fixed percentage map has actually remained unchanged, and turn the
+  result into an exact owner-decision surface without calling blocker work TOE
+  progress
+- primary runner/cache: reconstruct the five Block-46 Record/gravity controls,
+  add vector-decoder normalization, solve the action ranks, replay all 1,296
+  grading supports, and enumerate a 384-signature cross-root stress sample;
+  achieved `PASS=9 FAIL=0` with 2,465-character stdout
+- adversarial controls: process-local continuous-Jacobian, signature-count,
+  and grading-count mutations each exit nonzero with exactly one failed check
+- decision result: the displayed surface has six independent continuous
+  diagnostics plus action, grading, and sign forks. Structural existence,
+  covariance, or a placeholder `L*` cannot supply the missing values. An
+  honest Admissibility amendment needs an exact attached law object covering
+  probability, Records, the `M_2(C)` interface, nonlinear gravity, physical
+  state, and realized history; no such object is yet supplied
+- current evidence: science commit `5cfc183a93`; graph `5,503/15,763`,
+  out-degree four; vocabulary, strict lint, premise purity, Python/cache,
+  claim typing, whitespace, N1--N8/N5, and enforced graph/link checks pass;
+  PR pending; fixed percentages remain unchanged and independent audit is
+  required
+- next artifact: run one provisional complete-law tournament beginning with
+  the source-complete nonlinear gravity kill test and the Root-A/B interface;
+  stop all independent carrier, projective-count, coefficient-grid, and
+  propagator-variant work

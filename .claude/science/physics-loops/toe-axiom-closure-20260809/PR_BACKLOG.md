@@ -1052,3 +1052,17 @@ fail one check each; citation registration is `5,502/15,759`, out-degree four.
 The N1--N8 packet and N5 execution certificate land with the science. No
 canonical axiom, fixed TOE percentage, audit verdict, or `review-loop`
 changes. Landing order adds #6149 after #6148.
+
+## Block 57
+
+PR pending for
+`physics-loop/toe-axiom-closure-block57-joint-law-axiom-decision-20260812`,
+stacked exactly on Block-56 delivery head `551c8cf7c6`. Its distinct review
+object is the rank-six cross-root control surface, exact 384-signature sample,
+verified at-least-54-hour zero-movement interval, strict separation of blocker
+burn-down from TOE movement, and attached-law amendment acceptance contract.
+Primary/cache is `PASS=9 FAIL=0`; three process-local mutations fail one check
+each; citation registration is `5,503/15,763`, out-degree four. The N1--N8
+packet and N5 execution certificate land with the science. No canonical axiom,
+fixed TOE percentage, audit verdict, or `review-loop` changes. Landing order
+adds Block 57 after #6149.

@@ -991,3 +991,18 @@ nonzero; citation registration is `5,498/15,745`, out-degree six. The N1--N8
 packet and N5 execution certificate land with the science. No canonical axiom,
 fixed TOE percentage, audit verdict, or `review-loop` changes. Landing order
 adds #6145 after #6144.
+
+## Block 53
+
+PR #6146
+(`physics-loop/toe-axiom-closure-block53-splitstep-causal-20260811`) is open,
+mergeable, and `CLEAN`, stacked exactly on Block-52 delivery head
+`22d6b1bbe4`. Its distinct review object is the exact minimal equal-substep
+depth-two symplectic macro update, full-zone positive shadow energy, exact
+two-TT/four-constraint preservation, radius-two/14-layer circuit certificate,
+unit physical group cone, conserved Record-frontier composition, and explicit
+finite-depth selector fork. Primary/cache is `PASS=12 FAIL=0`; three
+process-local mutations fail nonzero; citation registration is
+`5,499/15,750`, out-degree five. The N1--N8 packet and N5 execution
+certificate land with the science. No canonical axiom, fixed TOE percentage,
+audit verdict, or `review-loop` changes. Landing order adds #6146 after #6145.

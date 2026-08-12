@@ -1727,3 +1727,33 @@ lines are in the landing primary cache.
   selected clock/law, axiom amendment, TOE percentage movement, or audit
   verdict. Fresh N1--N8 and all five N5 resolutions land; no `review-loop` is
   used.
+
+## Block 53 Claim Status
+
+- Causal-feasibility positive: two equal kick/drift substeps are symplectic,
+  full-zone stable, and preserve an exact positive shadow form on every
+  nonzero mode; depth one is UV unstable, so two is minimal in this exact
+  equal-substep class.
+- Tensor/causal positive: trace plus three divergence rows leave exactly two
+  TT coordinates and are preserved. The macro map has strict radius two, a
+  fourteen-layer disjoint local-gate schedule, and analytic physical group
+  speed at most one.
+- Source positive: two equal half-kicks compose one Block-52 conserved
+  straight Record-frontier event, preserve the sourced constraint rows, and
+  remain inside the macro cone with nonzero generic TT forcing.
+- Selector boundary: depths `2,3,4,8` share static response and leading unit
+  speed but have respective finite energies
+  `0.397995029/0.397629658/0.397502205/0.397379513` at `k=0.4`. Feasibility
+  therefore does not select the physical update, event placement, or clock.
+- Evidence: primary/input-pinned cache `PASS=12 FAIL=0`; anisotropy,
+  shadow-form corruption, and leaky-incidence mutations exit nonzero; graph
+  `5,499/15,750`, out-degree five. Vocabulary, strict lint, premise purity,
+  Python/cache, claim typing, whitespace, forensic readiness `1/1`, and
+  enforced graph/link invariants pass. Science commit is `b229b3f796`; PR
+  #6146 is open, mergeable, and `CLEAN` on exact Block-52 delivery
+  `22d6b1bbe4`.
+- Scope: one conditional linear equal-substep construction and depth-one
+  class boundary, not a unique law, radius-one QCA classification, massive or
+  accelerated matter, nonlinear gravity, axiom amendment, TOE percentage
+  movement, or audit verdict. Fresh N1--N8 and all five N5 resolutions land;
+  no `review-loop` is used.

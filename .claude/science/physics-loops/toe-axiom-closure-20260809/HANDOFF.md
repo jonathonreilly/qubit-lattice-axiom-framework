@@ -2049,3 +2049,45 @@ frontier. Quantify its macro causal radius and whether Record events occur per
 substep or macro step. If a depth-two solution works, the remaining issue is
 selection/clock semantics, not gravity feasibility; package that exact `L*`
 choice rather than another negative block.
+
+## Block 53 Handoff
+
+Block 53 is local on branch
+`physics-loop/toe-axiom-closure-block53-splitstep-causal-20260811`, stacked
+exactly on Block-52 delivery head `22d6b1bbe4`. It overturns the apparent
+finite-depth gravity obstruction. For
+`H=(p^T p+h^T L_s h)/2`, two equal symplectic-Euler kick/drift substeps give a
+full-zone stable macro map and preserve the exact local shadow form
+`Q=[[lambda,-delta lambda/2],[-delta lambda/2,1]]` on every nonzero mode.
+The corner bound `lambda<=12` proves that two is the exact minimum in this
+class; the depth-one spectral radius is `9.898979`.
+
+The macro map is symplectic, strictly radius two, and admits a fourteen-layer
+disjoint local-gate schedule. Its analytic physical group-speed norm is at
+most one. Trace plus three lattice-divergence rows have rank four on all 728
+nonzero `L=9` momenta and leave exactly two TT coordinates. Splitting one
+Block-52 null-frontier source into two equal half-kicks preserves the sourced
+rows and exact Record continuity.
+
+The key boundary is now selection, not propagation. Depths `2,3,4,8` meet the
+same static/OS0 contract but give distinct finite energies. The construction
+therefore earns zero TOE percentage points: the current axioms still do not
+choose depth, order, source placement, Record event cadence, or nonlinear
+completion.
+
+Primary/cache is `PASS=12 FAIL=0`; all three process-local mutations exit
+nonzero. Citation registration is `5,499/15,750`, out-degree five. Vocabulary,
+strict lint, premise purity, Python/cache, claim typing, whitespace, changed
+forensic readiness `1/1`, and graph/link gates pass. The full pipeline reaches
+only the inherited stage-7 dependency-policy epoch mismatch. Science commit
+is `b229b3f796`; PR #6146 is open, mergeable, and `CLEAN`. Independent audit
+remains required. No canonical axiom, fixed TOE percentage, audit verdict, or
+`review-loop` changes.
+
+The next block is gated tightly. First attack the strongest physically
+inequivalent radius-one auxiliary-QCA or reversible-order rival against this
+same source/constraint/static contract. If it survives, prepare the smallest
+exact extensional `L*` owner-choice packet showing the irreducible fork. If a
+current principle uniquely selects a law, prove that theorem. Do not return to
+pole grids, orientation averages, static source dictionaries, or further
+working-propagator variants; they are no longer TOE-progress seams.

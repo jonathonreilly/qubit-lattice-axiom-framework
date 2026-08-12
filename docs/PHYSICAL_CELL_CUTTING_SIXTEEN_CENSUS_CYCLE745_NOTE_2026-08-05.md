@@ -150,7 +150,7 @@ functions never occur, nor that weight 18 is empty.
 | Route | Test and result | Marker |
 |---|---|---|
 | Primary anchored syndrome join | Exhaust all 204 licensed anchor cells and the independently generated 2004-split inventory; all five counts are zero. | ATTEMPTED |
-| Independent exact syndrome DP/MITM | Rebuild the incidence table with the opposite exact-cover pivot and exhaust all 285 licensed weight-16 cells through an independently scheduled 3,527-split syndrome census; all five counts are zero. | ATTEMPTED |
+| Independent exact syndrome DP/MITM | Rebuild the incidence table with the opposite exact-cover pivot, XOR out the fixed anchor, and exhaust all 204 licensed residual-weight-15 cells through an independently scheduled 2,004-split syndrome census; all five anchored counts are zero, hence the global counts are zero by transitivity. | ATTEMPTED |
 | Escape outside the anchored slice | Verify every generator is an incidence automorphism fixing each named reading, close the group to order 384, and verify the anchor orbit has all 192 columns; every nonempty carrier therefore has an anchored image. | ATTEMPTED |
 | Omitted or redirected primary split | Delete one scheduled split and redirect one part; each hostile inventory differs from the mathematical 2004-split inventory and fails closed. | ATTEMPTED |
 | Wrong reading or traversal order | Bind canonical row-with-bit hashes and reconstruct every realizable target from a support witness; define the odd rejector on the lexicographically least packed row. | ATTEMPTED |

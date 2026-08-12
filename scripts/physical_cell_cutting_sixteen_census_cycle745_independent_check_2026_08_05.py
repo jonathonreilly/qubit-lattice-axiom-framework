@@ -3,10 +3,10 @@
 This checker imports neither the Cycle 745 primary nor its search engine.  It rebuilds
 the supplied 15800-by-192 incidence table with the opposite exact-cover pivot, rebuilds
 the 48 geometric column permutations, semantically validates the two receipt-carried
-extra permutations, and closes their generated action. A complete exact-weight-16
-syndrome-DP/MITM census reconstructs all 132 four carriers and excludes every carrier
-of the other five readings. All positive witnesses and both orbit folds are checked
-separately.
+extra permutations, and closes their generated action. An anchored exact-weight-16
+syndrome-DP/MITM census finds the 11 anchored four carriers and excludes anchored
+carriers of the other five readings; transitivity closes their global empty censuses.
+All 132 positive witnesses and both orbit folds are checked separately.
 """
 
 import copy
@@ -423,9 +423,10 @@ gate(generator_ok and len(base_permutations) == 48
      "independent geometry plus verified seeded maps close to the same transitive order-384 action")
 
 
-# Independent exact syndrome DP/MITM.  This is not the primary planner: it uses the
-# opposite-pivot incidence above, keeps only counts (never the primary support arrays),
-# streams exact lexicographic block tables, and chooses the reverse tie order.
+# Independent anchored exact syndrome DP/MITM.  XORing out the fixed anchor maps
+# weight-16 supports through it bijectively to residual weight-15 supports on the other
+# 191 columns.  This is not the primary planner: it uses the opposite-pivot incidence,
+# keeps only counts, streams exact lexicographic block tables, and reverses tie order.
 SEARCH_START = time.time()
 PACKED_BASIS = np.packbits(incidence[basis_rows], axis=1, bitorder="little")
 COLUMN_INTS = []
@@ -447,7 +448,8 @@ def pack_basis_bits(bits):
 
 COLUMN_SYNDROMES = pack_basis_bits(incidence[basis_rows].T)
 TARGET_SYNDROMES = {
-    name: pack_basis_bits(target[basis_rows]) for name, target in targets.items()
+    name: pack_basis_bits(target[basis_rows] ^ incidence[basis_rows, anchor])
+    for name, target in targets.items()
 }
 
 
@@ -517,8 +519,14 @@ def one_key(syndrome, table):
     return answer
 
 
-QUARTERS = [list(range(48 * q, 48 * q + 48)) for q in range(4)]
-EIGHTHS = [list(range(24 * e, 24 * e + 24)) for e in range(8)]
+QUARTERS = [
+    [column for column in range(48 * q, 48 * q + 48) if column != anchor]
+    for q in range(4)
+]
+EIGHTHS = [
+    [column for column in range(24 * e, 24 * e + 24) if column != anchor]
+    for e in range(8)
+]
 
 
 def extension_chain(columns, maximum):
@@ -616,7 +624,7 @@ def sorted_keys(label, syndromes, table):
 def planner(cell):
     if max(cell) <= 6:
         streamed = max(
-            range(4), key=lambda q: (math.comb(48, cell[q]), q)
+            range(4), key=lambda q: (math.comb(len(QUARTERS[q]), cell[q]), q)
         )
         return [(('Q', streamed, cell[streamed]), [
             ('Q', q, cell[q]) for q in range(4) if q != streamed
@@ -624,7 +632,8 @@ def planner(cell):
     heavy = [q for q in range(4) if cell[q] > 6]
     distributions = [
         [(left, cell[q] - left) for left in range(cell[q] + 1)
-         if left <= 24 and cell[q] - left <= 24]
+         if left <= len(EIGHTHS[2 * q])
+         and cell[q] - left <= len(EIGHTHS[2 * q + 1])]
         for q in heavy
     ]
     remaining = [('Q', q, cell[q]) for q in range(4) if q not in heavy]
@@ -637,7 +646,11 @@ def planner(cell):
         streamed = max(
             range(len(parts)),
             key=lambda i: (
-                math.comb(24 if parts[i][0] == 'E' else 48, parts[i][2]), i
+                math.comb(
+                    len(EIGHTHS[parts[i][1]]) if parts[i][0] == 'E'
+                    else len(QUARTERS[parts[i][1]]),
+                    parts[i][2],
+                ), i
             ),
         )
         plans.append((parts[streamed], [part for i, part in enumerate(parts)
@@ -699,7 +712,7 @@ def forced_bit(name, target):
 
 def licensed(cell, target):
     values = {"total": 16, "left": cell[0] + cell[1],
-              "q2": cell[2], "q3": cell[3]}
+              "q2": cell[2], "q3": cell[3] + 1}
     return all((value & 1) == forced_bit(name, target)
                for name, value in values.items())
 
@@ -872,7 +885,7 @@ def count_split(streamed, remainder, active_names, target_syndromes):
 def exact_sweep(names, target_syndromes, selected_cells=None):
     totals = {name: 0 for name in names}
     inventory = []
-    search_cells = selected_cells if selected_cells is not None else cells(16)
+    search_cells = selected_cells if selected_cells is not None else cells(15)
     for cell in search_cells:
         active = [name for name in names if licensed(cell, targets[name])]
         if not active:
@@ -887,14 +900,16 @@ def exact_sweep(names, target_syndromes, selected_cells=None):
 
 
 search_names = tuple(ordered_names[2:8])
-known16 = list(range(16))
+known16 = list(range(15)) + [anchor]
 planted16 = (incidence[:, known16].sum(axis=1) & 1).astype(np.uint8)
 targets["planted16"] = planted16
-TARGET_SYNDROMES["planted16"] = pack_basis_bits(planted16[basis_rows])
-validation_counts, validation_inventory = exact_sweep(
-    ("planted16",), TARGET_SYNDROMES, [(16, 0, 0, 0)]
+TARGET_SYNDROMES["planted16"] = pack_basis_bits(
+    planted16[basis_rows] ^ incidence[basis_rows, anchor]
 )
-gate(validation_counts["planted16"] > 0 and len(validation_inventory) == 17,
+validation_counts, validation_inventory = exact_sweep(
+    ("planted16",), TARGET_SYNDROMES, [(15, 0, 0, 0)]
+)
+gate(validation_counts["planted16"] > 0 and len(validation_inventory) == 16,
      "independent.small_validation",
      "an independently planted weight-sixteen target is recovered in its exact cell")
 if len(sys.argv) > 1 and sys.argv[1] == "small":
@@ -903,7 +918,7 @@ if len(sys.argv) > 1 and sys.argv[1] == "small":
 
 answers_counts, inventory = exact_sweep(search_names, TARGET_SYNDROMES)
 answers = {name: answers_counts[name] > 0 for name in search_names}
-expected_cells = [cell for cell in cells(16) if licensed(cell, targets[search_names[0]])]
+expected_cells = [cell for cell in cells(15) if licensed(cell, targets[search_names[0]])]
 expected_inventory = [
     (cell, streamed, tuple(remainder))
     for cell in expected_cells for streamed, remainder in planner(cell)
@@ -912,15 +927,15 @@ inventory_hash = hashlib.sha256(
     json.dumps(inventory, separators=(",", ":")).encode("utf-8")
 ).hexdigest()
 solver_ok = (
-    answers_counts == dict(zip(search_names, [132, 0, 0, 0, 0, 0]))
-    and len(expected_cells) == 285
-    and len(inventory) == len(expected_inventory) == 3527
+    answers_counts == dict(zip(search_names, [11, 0, 0, 0, 0, 0]))
+    and len(expected_cells) == 204
+    and len(inventory) == len(expected_inventory) == 2004
     and inventory == expected_inventory
     and MAX_PART_ROWS == math.comb(48, 6)
     and MAX_JOIN_ROWS <= INTERMEDIATE_CAP
 )
 gate(solver_ok, "independent.syndrome_dp",
-     "independent exact syndrome DP/MITM exhausts 285 cells and 3527 splits for all six")
+     "independent anchored syndrome DP/MITM exhausts 204 cells and 2004 splits for all six")
 gate(validation_counts["planted16"] > 0, "hostile.positive_control",
      "the independent search recovers a planted weight-sixteen target")
 deleted_inventory = inventory[:-1]
@@ -947,7 +962,7 @@ known_anchors_ok = (
         (incidence[:, list(support)].sum(axis=1) & 1).astype(np.uint8), targets["four"]
     ) for support in primary_anchored)
 )
-gate(known_anchors_ok and answers_counts["four"] == 132
+gate(known_anchors_ok and answers_counts["four"] == 11
      and all(answers_counts[name] == 0 for name in search_names[1:]),
      "independent.complete",
      "the primary anchored witnesses recheck inside the independent complete census")
@@ -1063,8 +1078,6 @@ receipt = {
     "exact_anchored_weight_sixteen_answers": {
         name: count > 0 for name, count in anchored_counts.items()
     },
-    "exact_weight_sixteen_counts": answers_counts,
-    "exact_weight_sixteen_answers": answers,
     "exact_syndrome_dp": {
         "anchor_column": anchor,
         "basis_rows": len(basis_rows),

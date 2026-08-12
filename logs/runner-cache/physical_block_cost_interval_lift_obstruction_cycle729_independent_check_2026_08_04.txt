@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/physical_block_cost_interval_lift_obstruction_cycle729_independent_check_2026_08_04.py
+runner_sha256: 2f74d320feee05b2195cd79fcefa63cb6065d28fd9de2f2892cabc5daaa8f068
+input_fingerprint_sha256: b52b8a42ea9182405b91bf8019c424be12aacfc9e519b568c14fdba9e7c3260e
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 7.12
+status: ok
+----- stdout -----
+PASS independent Cycle 728 witness binding                Cycle 729 PRIOR equals Cycle 728 BLOCK_HI entry by entry
+PASS independent block cell census                        subsets 42504; unit cells 17280; spectrum [(0, 13152), (1, 17280), (2, 9840), (3, 1472), (4, 680), (5, 64), (6, 16)]
+PASS independent charge spectrum                          [(3, 128), (4, 768), (5, 2816), (6, 4928), (7, 5760), (8, 2608), (9, 272)]
+PASS independent supplied block symmetry                  group order 16
+PASS independent piece-orbit census                       orbits 1080; sizes [16]
+PASS independent generic sample family                    points 17280; orbit multiplicity 16
+PASS independent exact floor certificate                  least slack 0; tight pieces 480; numerator 110144/512
+PASS independent exact ceiling certificate                least slack 0; tight pieces 848; numerator 15728/49
+PASS independent exact witness covers and costs           {'stencil': (48, 48, 216, 1128), 'cycle728': (48, 48, 318, 1128), 'cost320': (48, 48, 320, 1128)}
+PASS independent regular comparator heights               stencil (16, 912); Cycle 728 witness (32, 912)
+PASS independent non-face-to-face obstruction             {'stencil': 0, 'cycle728': 0, 'cost320': 16}
+PASS hostile certificate mutations are rejected           floor least -1; ceiling least -1
+PASS hostile witness mutation is rejected                 separated pairs 1116/1128
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

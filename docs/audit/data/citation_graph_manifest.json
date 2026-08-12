@@ -1,6 +1,6 @@
 {
- "edge_count": 15553,
- "node_count": 5469,
+ "edge_count": 15556,
+ "node_count": 5470,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -13669,6 +13669,10 @@
   "physical_assembly_defect_isospectrality_and_source_pairing_cycle714_note_2026-08-02": {
    "deps_hash": "12f9a294c26a",
    "out_degree": 2
+  },
+  "physical_block_cost_interval_lift_obstruction_cycle729_note_2026-08-04": {
+   "deps_hash": "2379d13a6689",
+   "out_degree": 3
   },
   "physical_body_diagonal_frame_functional_transversal_law_cycle717_note_2026-08-02": {
    "deps_hash": "7749103a0f1f",

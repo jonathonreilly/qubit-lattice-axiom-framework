@@ -37,14 +37,16 @@ RECEIPT_PATH = ROOT / (
     "2026_08_05_receipt_2026-08-05.json"
 )
 AUDIT_INPUT_PATHS = (
-    NOTE_PATH,
-    PRIMARY_PATH,
+    "docs/PHYSICAL_CELL_CUTTING_SIZE_TEN_FRONTIER_CYCLE738_NOTE_2026-08-05.md",
+    "scripts/physical_cell_cutting_size_ten_frontier_cycle738_2026_08_05.py",
     "requirements.txt",
     "requirements-release.txt",
-    C737_NOTE_PATH,
-    C737_PRIMARY_PATH,
-    C737_CHECKER_PATH,
-    C737_RECEIPT_PATH,
+    "docs/PHYSICAL_CELL_CUTTING_LEAST_COMPUTING_SETS_CYCLE737_NOTE_2026-08-05.md",
+    "scripts/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05.py",
+    "scripts/physical_cell_cutting_least_computing_sets_cycle737_"
+    "independent_check_2026_08_05.py",
+    "outputs/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05_"
+    "receipt_2026-08-05.json",
 )
 AUDIT_TIMEOUT_SEC = 900
 

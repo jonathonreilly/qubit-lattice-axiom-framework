@@ -1,0 +1,44 @@
+===== runner cache v1 =====
+runner: scripts/record_content_only_shared_effect_descent_2026_08_12.py
+runner_sha256: e4f43c44d926f23e626d22d01679b42c48b2b10efe98916a755f2422d423c861
+input_fingerprint_sha256: 9fa58d89962b2ed2a9a4b0d1907e1a791ec8f3853b78a6f44cf009017ae84d64
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: current Record wording and the Aug 10 menus/atomic masses are source-bound; no observational or fitted inputs are used
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency; no runner cache is written
+negative_scope: only effect-only descent of the Aug 10 restriction kernel is rejected; menu-in-content remains a live formal escape
+PASS: audit-input-paths declared audit inputs exist and match the note, axiom memo, and Aug 10 parent
+PASS: source-record-content-only the exact current content-only Record sentences are present
+PASS: source-aug10-restriction the Aug 10 parent states the shared-effect restriction witness and its masses
+PASS: ternary-menu-a the asymmetric shared-effect menu is an exact scaled-projector resolution
+PASS: ternary-menu-b the symmetric shared-effect menu is an exact scaled-projector resolution
+PASS: shared-effect-incidence the two menus share exactly E0 and otherwise contain distinct effects
+PASS: atomic-global-normalization the five squared-trace atomic weights have exact normalization 509/200
+PASS: atomic-restriction-values normalized restriction recomputes to 25/142 on M_A and 2/11 on M_B
+PASS: atomic-restriction-separation the same effect differs across the two menus by exactly -9/1562
+PASS: effect-only-one-I I circ Phi_eff assigns one scalar to E0 in both menus
+PASS: restriction-not-effect-only the restriction kernel is not I circ Phi_eff because it assigns two scalars to E0
+PASS: menu-context-two-I I circ Phi_ctx assigns the two distinct scalars 1 and 2 to the two (M,E0) pairs
+PASS: menu-context-distinct-content the menu-context records are distinct matrices in M_2(C)
+PASS: menu-context-content-only both menu-context scalars are the same function Im Tr(Phi)/2 of the stored matrix
+PASS: readout-additivity Im Tr(Phi)/2 is additive and vanishes at the zero matrix
+PASS: note-preserves-record-sentences the note quotes both current Record content-only sentences
+PASS: note-preserves-restriction-fractions the note records the recomputed restriction values 25/142 and 2/11
+PASS: note-links-parents the note links the axiom memo and the Aug 10 type-separation note
+PASS: claim-type-contract the author hint uses the exact bounded-theorem enum
+PASS: machine-status-contract the source uses the controlled bounded-support fields
+PASS: forbidden-rhetoric-absent the note avoids axiom-adoption, promotion, and executor-name rhetoric
+PASS: canonical-nonmutation the menu-context encoding is absent from the canonical axiom file
+PASS: parent-objects-bound the Aug 10 parent still names the shared effect and both menus
+per_element: one shared scaled effect is evaluated under Phi_eff, restriction, and Phi_ctx
+per_site: the three maps are one-site statements; no composite carrier is asserted
+per_mode: no spectral-mode exhaustion is claimed
+per_block: only the effect-only versus restriction versus menu-in-content interface is tested
+lattice_wide: checked and not executed — no lattice-wide dynamics or Born uniqueness is claimed
+TOTAL: PASS=23 FAIL=0
+
+----- stderr -----
+

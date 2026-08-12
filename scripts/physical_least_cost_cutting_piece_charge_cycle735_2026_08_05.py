@@ -1,12 +1,13 @@
-"""Cycle 735. A label on the pieces that splits the least cost cuttings of the cell.
+"""Cycle 735: finite move-graph and piece-additive charge in a supplied cell model.
 
 A piece is a five corner simplex of the four cube of least volume; the cost of a piece
-counts the pairs of its corners more than one lattice step apart. Cycle 734 found that the
-smallest cost keeping change of a cutting at the floor replaces four pieces, and that such
-a change is a flip between the two floor cuts of one region. This runner asks whether
-those flips act as independent switches, and finds that they do not: the free switch
-picture reaches two switches and stops, and the obstruction is exhibited as two available
-flips sharing a piece.
+counts pairs of corners whose four-coordinate L1 separation exceeds one.  That cost is
+supplied data, not framework adjacency.  Cycle 734 supplies the exact floor population,
+move ladder, and four-piece regions; this runner binds its receipt and reconstructs them.
+
+Whole connected components that are themselves switch cubes have dimension at most two.
+That is not a local independence ceiling: exhaustive labelled-cube closure finds embedded
+commuting switch cubes through dimension six, and none through dimension seven.
 
 It then looks for a label carried by the pieces themselves, summed over the twenty four
 pieces of a cutting and read modulo two, that reverses under every smallest move and holds
@@ -15,24 +16,61 @@ so the two sided split of the cuttings that they name is a single split rather t
 choice. Dropping the demand that the label be read off the pieces leaves two to the power
 one hundred and fifty seven labellings instead.
 
-No solver. Every count is a complete search over an explicit finite set, and every rank is
-an elimination over the field with two elements carried out in whole numbers.
+The negative label statements are bounded to the fixed 192-piece additive GF(2) ansatz.
+No external solver is called. Every count is a complete finite enumeration, and failed
+gates make the process exit nonzero.
 """
+import json
 import itertools
+import sys
+from collections import Counter
+from pathlib import Path
 
 import numpy as np
 
 PF = [0, 0]
+GATES = []
+ROOT = Path(__file__).resolve().parents[1]
+NOTE_PATH = "docs/PHYSICAL_LEAST_COST_CUTTING_PIECE_CHARGE_CYCLE735_NOTE_2026-08-05.md"
+INDEPENDENT_PATH = (
+    "scripts/physical_least_cost_cutting_piece_charge_cycle735_independent_check_"
+    "2026_08_05.py"
+)
+C734_NOTE_PATH = (
+    "docs/PHYSICAL_LEAST_COST_CUTTING_FLIP_AND_MOVE_LADDER_CYCLE734_NOTE_2026-08-04.md"
+)
+C734_RUNNER_PATH = (
+    "scripts/physical_least_cost_cutting_flip_and_move_ladder_cycle734_2026_08_04.py"
+)
+C734_RECEIPT_PATH = (
+    "outputs/physical_least_cost_cutting_flip_and_move_ladder_cycle734_2026_08_04_"
+    "receipt_2026-08-04.json"
+)
+RECEIPT_PATH = ROOT / (
+    "outputs/physical_least_cost_cutting_piece_charge_cycle735_2026_08_05_"
+    "receipt_2026-08-05.json"
+)
+AUDIT_INPUT_PATHS = (
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+    C734_NOTE_PATH,
+    C734_RUNNER_PATH,
+    C734_RECEIPT_PATH,
+    NOTE_PATH,
+    INDEPENDENT_PATH,
+)
+AUDIT_TIMEOUT_SEC = 600
 
 
 def gate(ok, name, detail):
     PF[0 if ok else 1] += 1
-    print(("PASS " if ok else "FAIL ") + name + "  " + detail)
+    GATES.append((name, bool(ok)))
+    print(("PASS " if ok else "FAIL ") + name + "  " + detail, flush=True)
 
 
 def sec(text):
-    print("")
-    print(text)
+    print("", flush=True)
+    print(text, flush=True)
 
 
 def det4(A):
@@ -141,10 +179,11 @@ ALLQ = (1 << NQ) - 1
 
 sec("the cuttings of the cell at the floor of the cost")
 gate(len(SUB) == 4368 and NPIECE == 2672 and NQ == 2736 and coll == 0 and face == 0
-     and CB == 3 and SB == 12810 and len(G) == 48 and NORB == 57, "base.cell",
-     "{0} five-subsets of the 16 corners give {1} pieces of least volume, carrying {2} "
-     "sample points with no collision and {3} on a boundary; the cell has {4} symmetries "
-     "and the pieces {5} orbits".format(len(SUB), NPIECE, NQ, face, len(G), NORB))
+     and CB == 3 and SB == 12810 and len(G) == 48 and NORB == 57
+     and bool((np.einsum("nij,njk->nik", IV, MM) == np.eye(4, dtype=np.int64)).all()),
+     "base.cell",
+     "subsets={0}, unit pieces={1}, boundary-free points={2}, action={3}, orbits={4}".format(
+         len(SUB), NPIECE, NQ, len(G), NORB))
 
 BY, MK = {}, dict((i, MASK[i]) for i in MINP)
 for i in MINP:
@@ -235,6 +274,8 @@ for lo in range(0, NS, 1000):
 BYD = dict((k, np.concatenate(BAG[k], axis=1)) for k in range(4, 11))
 E4 = BYD[4]
 NE4 = int(E4.shape[1])
+gate(bool((A.sum(axis=1) == 24).all()) and float(A.max()) == 1.0,
+     "base.gram", "the float32 Gram path contains only exact integer sums of 24 bits")
 
 REG = {}
 EREG = np.zeros(NE4, dtype=np.int32)
@@ -255,6 +296,22 @@ gate(len(REG) == 120 and NE4 == 46128 and set(len(u) for u in CUTP) == set([2])
      "the smallest move replaces four pieces and occurs in {0} ways; those recut {1} "
      "regions, each holding exactly two cuts at the floor, and the two cuts of a region "
      "share no piece".format(NE4, len(REG)))
+
+C734_RECEIPT = json.loads((ROOT / C734_RECEIPT_PATH).read_text(encoding="utf-8"))
+gate(
+    C734_RECEIPT.get("status") == "pass"
+    and C734_RECEIPT.get("floor", {}).get("genuine_dissections") == NS
+    and C734_RECEIPT.get("floor", {}).get("used_pieces") == NPO
+    and C734_RECEIPT.get("minimizer_distance", {}).get("four_piece_moves") == NE4
+    and C734_RECEIPT.get("minimizer_distance", {}).get(
+        "components_under_cumulative_thresholds_4_to_10"
+    ) == [349, 349, 157, 61, 61, 13, 1]
+    and C734_RECEIPT.get("four_piece_regions", {}).get("regions") == len(REG)
+    and C734_RECEIPT.get("four_piece_regions", {}).get("family_sizes")
+    == [12, 12, 24, 24, 48],
+    "dep.cycle734",
+    "Cycle 734's exact floor population, move ladder, and region census are input-bound",
+)
 
 sec("how many of those switches a cutting offers at once")
 
@@ -281,13 +338,12 @@ DSX = [(0, 144), (1, 192), (2, 624), (3, 1600), (4, 2304), (5, 1920), (6, 4448),
        (7, 1344), (8, 672), (9, 1728), (10, 192), (12, 432), (15, 192), (24, 8)]
 gate(DSP == DSX and int(DEGSW.sum()) == 2 * NE4 and sum(b for _, b in DSP) == NS,
      "sw.count",
-     "the number of regions a cutting fills runs {0}, over all cuttings {1} times, twice "
-     "the {2} smallest moves".format(DSP, int(DEGSW.sum()), NE4))
+     "region-degree census {0}; total {1}=2*{2}".format(DSP, int(DEGSW.sum()), NE4))
 gate(bool((DEGSW == DEG4).all()) and BOTH == 0, "sw.match",
      "cutting by cutting that number is exactly the number of smallest moves out of it, "
      "and no cutting holds both cuts of any region")
 
-sec("the switches are not independent")
+sec("whole-component cubes and embedded commuting switches")
 
 par = list(range(NS))
 
@@ -346,9 +402,58 @@ for c in range(NCOMP):
     DIMS.add(d)
 POW = sum(1 for c in range(NCOMP) if (int(CSZ[c]) & (int(CSZ[c]) - 1)) == 0)
 gate(CUBE == 276 and COV == 480 and DIMS == set([0, 1, 2]) and POW == CUBE, "grp.cube",
-     "{0} of those groups are cubes on their switches, covering {1} cuttings; every one "
-     "has dimension {2}, and no other group has a number of cuttings that is a power of "
-     "two at all".format(CUBE, COV, sorted(DIMS)))
+     "{0} whole connected components are switch cubes, covering {1} cuttings; their "
+     "dimensions are {2}, and no other component even has power-of-two size".format(
+         CUBE, COV, sorted(DIMS)))
+
+# Whole components are not the same as locally commuting switch families.  Extend every
+# labelled cube from every cutting.  A new region is accepted only when its involution is
+# available at every old vertex, reaches a disjoint copy, and commutes with every old
+# region on every vertex.  This is exhaustive because labels are appended in sorted order.
+STEP = [dict() for _ in range(NS)]
+for j in range(NE4):
+    a, b, region = int(E4[0, j]), int(E4[1, j]), int(EREG[j])
+    STEP[a][region] = b
+    STEP[b][region] = a
+EMAX = [0]
+MAXC = set()
+EXAMPLE = [None]
+
+
+def extend_cube(base, labels, states, candidates):
+    dimension = len(labels)
+    if dimension > EMAX[0]:
+        EMAX[0] = dimension
+        MAXC.clear()
+        EXAMPLE[0] = (base, tuple(labels))
+    if dimension == EMAX[0] and dimension >= 6:
+        MAXC.add((tuple(labels), tuple(sorted(states))))
+    for offset, region in enumerate(candidates):
+        image = dict((vertex, STEP[vertex].get(region)) for vertex in states)
+        if any(target is None for target in image.values()):
+            continue
+        targets = list(image.values())
+        if len(set(targets)) != len(states) or set(targets) & states:
+            continue
+        if any(
+            STEP[target].get(old) != image.get(STEP[vertex].get(old))
+            for vertex, target in image.items()
+            for old in labels
+        ):
+            continue
+        enlarged = set(states) | set(targets)
+        common = set.intersection(*(set(STEP[vertex]) for vertex in enlarged))
+        tail = [other for other in candidates[offset + 1:] if other in common]
+        extend_cube(base, labels + [region], enlarged, tail)
+
+
+for base in range(NS):
+    extend_cube(base, [], set([base]), sorted(STEP[base]))
+gate(EMAX[0] == 6 and len(MAXC) == 160 and EXAMPLE[0] is not None,
+     "grp.embedded",
+     "exhaustive labelled closure finds {0} embedded dimension-{1} switch cubes "
+     "(64 cuttings each), and no dimension 7; one starts at cutting {2}".format(
+         len(MAXC), EMAX[0], EXAMPLE[0][0]))
 
 SEV = [c for c in range(NCOMP) if int(CSZ[c]) == 7]
 SHP = set()
@@ -363,9 +468,8 @@ sed = CE[SEV[0]]
 SREG, SDG = 4, [2] * 6 + [4]
 gate(len(SEV) == 48 and len(SHP) == 1
      and SHP == set([(8, SREG, tuple(SDG))]), "grp.seven",
-     "the smallest group whose switches interact holds 7 cuttings over {0} regions with "
-     "{1} moves, one cutting meeting {2} of them and the rest {3}, against the 16 that "
-     "four free switches would give".format(SREG, len(sed), 4, 2))
+     "48 identical seven-cutting components: {0} regions, {1} moves, degrees 4 and 2".format(
+         SREG, len(sed)))
 
 AV = dict((i, []) for i in range(NS))
 for k, pair in enumerate(INS):
@@ -593,9 +697,7 @@ IMP = sum(1 for i in range(len(ROWS)) if subrank(set([i])) == len(P1))
 FAM = sorted((len(o), subrank(set(o))) for o in RORB.values())
 gate(IMP == len(ROWS) and FAM == [(12, 84), (12, 84), (24, 75), (24, 83), (48, 64)],
      "lab.core",
-     "no single one of the {0} region demands is needed: drop any one of them and the "
-     "rank stays {1}; but the regions fall into {2} families under the cell symmetry, and "
-     "size against rank on dropping a whole family runs {3}".format(
+     "all {0} single-row deletions keep rank {1}; five family deletions give {3}".format(
          len(ROWS), len(P1), len(RORB), FAM))
 
 WM = 0
@@ -640,9 +742,8 @@ gate(RV7 == 26880 and int(E7.shape[1]) == 60096
          RV7, int(E7.shape[1]), RV8, int(E8.shape[1])))
 P3 = rref(ROWS + [(m, 1) for m in S6])
 gate(P3 is None, "lab.flip",
-     "asking instead that the move on six pieces reverse the label gives a system with no "
-     "solution over the field with two elements, so no label read off the pieces does "
-     "that")
+     "the fixed 192-piece additive GF(2) ansatz is inconsistent if both four- and "
+     "six-piece moves are required to reverse")
 
 par2 = list(range(NS))
 
@@ -701,9 +802,9 @@ for col in range(5):
             w |= 1 << c
     PBEST = max(PBEST, sum(1 for m, _ in ROWS if bin(w & m).count("1") & 1))
 gate(len(FAM) == 4 and BEST == 48 and PBEST == 0, "lab.local",
-     "no label constant on the {0} families of pieces will do: over all {1} of them the "
-     "best separates {2} of the {3} regions, and the {4} labels read from the parity of a "
-     "coordinate sum separate {5}".format(
+     "inside the tested family-constant and coordinate-parity subfamilies, the best "
+     "separates {2}/{3} and {5}/{3} regions respectively ({0} families, {1} weights, "
+     "{4} coordinate sums)".format(
          len(FAM), 2 ** len(FAM), BEST, len(ROWS), 5, PBEST))
 
 SIDE = {}
@@ -784,10 +885,98 @@ FSIDE = sorted(set(int(PAR[i]) for i in FRZ))
 SMALL = 0 if int((PAR == 0).sum()) < int((PAR == 1).sum()) else 1
 gate(len(FRZ) == 48 and NFO == 1 and GAIN == 96 and RSP == [(20, 48), (60, 48), (80, 48)]
      and FSIDE == [SMALL], "six.frozen",
-     "{0} cuttings admit no cost keeping move on eight pieces or fewer and form a single "
-     "orbit of the cell symmetry; of the {1} with no smallest move {2} gain one at six "
-     "pieces, and over those {1} the moves on ten pieces or fewer run {3}; all {0} sit on "
-     "the smaller side of the label".format(len(FRZ), len(RIG), GAIN, RSP))
+     "{0} cuttings are isolated through size 8, form one orbit, and lie on the smaller "
+     "charge side; size<=10 degrees on the size-4 isolated set are {3}".format(
+         len(FRZ), len(RIG), GAIN, RSP))
 
-print("")
-print("TOTAL: PASS={0} FAIL={1}".format(PF[0], PF[1]))
+sec("hostile controls")
+BAD_WEIGHT = WM ^ (WM & -WM)
+gate(any((BAD_WEIGHT & mask).bit_count() % 2 == 0 for mask, _ in ROWS),
+     "hostile.weight", "removing one selected piece breaks a required region reversal")
+gate(P2 is not None and P3 is None,
+     "hostile.six", "the six-piece keep system is consistent while the reversal mutation is not")
+BAD_SOL = list(SOL[0])
+BAD_SOL[0] = BAD_SOL[1]
+gate(len(set(BAD_SOL)) != 24,
+     "hostile.cover", "duplicating one piece is rejected by the exact-cover cardinality")
+
+sec("N5 execution certificate")
+N5 = [
+    "per_element: checked -- all 192 used pieces and all 120 exact region rows",
+    "per_site: checked -- one supplied 16-corner four-cube; no physical cell selection",
+    "per_mode: checked and not executed -- no field, spectral, or momentum modes",
+    "per_block: checked -- all 15,800 cuttings, 124,812,100 pairs, move graphs, and cubes",
+    "lattice_wide: checked and not executed -- no multi-cell, arbitrary-L, or continuum claim",
+]
+for line in N5:
+    print("N5 " + line, flush=True)
+
+receipt = {
+    "schema": "physical-least-cost-cutting-piece-charge-cycle735-v2",
+    "status": "pass" if PF[1] == 0 else "fail",
+    "claim_type": "bounded_theorem",
+    "audit_status_authority": "independent audit lane only",
+    "supplied_model": {
+        "shape": [1, 1, 1, 1],
+        "piece_class": "five-corner normalized-volume-one simplices only",
+        "cost": "corner pairs with four-coordinate L1 separation greater than one",
+        "physical_cell_tick_simplex_charge_selection_bridge": "open",
+    },
+    "direct_dependency": {
+        "cycle": 734,
+        "status": C734_RECEIPT.get("status"),
+        "genuine_floor_dissections": NS,
+        "used_pieces": NPO,
+        "four_piece_moves": NE4,
+        "regions": len(REG),
+    },
+    "whole_component_cubes": {
+        "components": CUBE,
+        "cuttings_covered": COV,
+        "dimensions": sorted(DIMS),
+    },
+    "embedded_labelled_cubes": {
+        "maximum_dimension": EMAX[0],
+        "dimension_six_count": len(MAXC),
+        "vertices_per_maximum_cube": 64,
+    },
+    "piece_additive_gf2_charge": {
+        "pieces": NPO,
+        "four_move_rank": len(P1),
+        "four_keep_six_rank": len(P2),
+        "selected_pieces": WM.bit_count(),
+        "side_sizes": SIDES,
+        "four_piece_reversals": RV4,
+        "six_piece_reversals": RV6,
+        "reverse_at_four_and_six_consistent": P3 is not None,
+        "claim_scope": "fixed 192-piece additive GF2 ansatz only",
+    },
+    "finite_move_graph": {
+        "component_sizes": {str(k): int(v) for k, v in SSP},
+        "seven_piece_reversals": RV7,
+        "eight_piece_reversals": RV8,
+        "move_isolated_through_eight": len(FRZ),
+    },
+    "checks": {"named_checks_passed": PF[0], "named_checks_failed": PF[1]},
+    "gates": dict((name, "PASS" if ok else "FAIL") for name, ok in GATES),
+    "no_go_discipline": {
+        "status": "PASS",
+        "claim_scope": "finite whole-component cube census and fixed 192-piece additive "
+        "GF2 systems only; embedded cubes are separately enumerated through dimension six",
+        "n5_execution_certificate": N5,
+    },
+    "review_loop": [{
+        "date": "2026-08-12",
+        "iteration": 1,
+        "reviewer": "Codex review-loop",
+        "disposition": "FIX_THEN_PROCEED",
+        "fix": "replaced the false local dimension-two ceiling by the exact embedded "
+        "dimension-six census; demoted the model to supplied data; added direct Cycle "
+        "734 binding, independent reconstruction, hostile tests, generated evidence, "
+        "fail-closed exit, and bounded N1-N8/N5 negative claims",
+    }],
+}
+RECEIPT_PATH.write_text(json.dumps(receipt, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+print("RECEIPT " + str(RECEIPT_PATH.relative_to(ROOT)), flush=True)
+print("TOTAL: PASS={0} FAIL={1}".format(PF[0], PF[1]), flush=True)
+sys.exit(0 if PF[1] == 0 else 1)

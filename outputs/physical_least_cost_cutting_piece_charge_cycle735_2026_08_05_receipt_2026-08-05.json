@@ -1,217 +1,124 @@
 {
- "cycle": 735,
- "failures": 0,
- "gates": 26,
- "headline": "On the single cell of one lattice step and one tick, each of the 15800 cuttings that reach the floor of the adjacency cost offers a switch for every one of the 120 regions it fills, and those switches are not independent: free switch behaviour survives only to dimension two, 54912 of the 273936 pairs a cutting offers at once share a piece, and 9320 of the cuttings form one connected object under the smallest move. In place of independence the population carries a two sided charge that is a sum of a weight over a cutting's own pieces, reversed by every one of the 46128 smallest moves and kept by every one of the 31968 moves on six pieces; asking instead for reversal at six pieces has no solution over the field with two elements. The partition it names, of sizes 7704 and 8096, is determined, and no single region demand is load bearing while dropping any one of the 5 symmetry families of regions lowers the rank. A core of 48 cuttings admits no cost keeping move on eight pieces or fewer, and all 48 sit on the smaller side of the charge.",
- "lane": "emergent-geometry",
- "note": "docs/PHYSICAL_LEAST_COST_CUTTING_PIECE_CHARGE_CYCLE735_NOTE_2026-08-05.md",
- "recorded_output": "outputs/physical_least_cost_cutting_piece_charge_cycle735_2026_08_05_cold_2026-08-05.txt",
- "results": {
-  "cell": {
-   "cell_symmetries": 48,
-   "five_subsets": 4368,
-   "piece_orbits": 57,
-   "pieces_of_least_volume": 2672,
-   "sample_points": 2736,
-   "sample_points_on_a_boundary": 0
+  "audit_status_authority": "independent audit lane only",
+  "checks": {
+    "named_checks_failed": 0,
+    "named_checks_passed": 32
   },
-  "charge": {
-   "best_reach_after_dropping_one_piece": 115,
-   "cuttings_on_which_the_two_labels_differ": 15800,
-   "family_size_against_surviving_rank": [
-    12,
-    84,
-    12,
-    84,
-    24,
-    75,
-    24,
-    83,
-    48,
-    64
-   ],
-   "labels_at_four_as_a_power_of_two": 2,
-   "labels_at_six_as_a_power_of_two": 1,
-   "pieces_carrying_a_weight": 192,
-   "pieces_the_exhibited_weight_sits_on": 56,
-   "rank_after_dropping_any_single_region": 86,
-   "rank_of_the_four_piece_demands": 86,
-   "rank_once_six_piece_moves_are_added": 87,
-   "region_demands": 120,
-   "region_families_under_the_cell_symmetry": 5,
-   "regions_it_splits": 120,
-   "the_demands_are_consistent": true,
-   "the_two_sides": [
-    7704,
-    8096
-   ],
-   "weights_left_free_at_four": 106,
-   "weights_left_free_at_six": 105
+  "claim_type": "bounded_theorem",
+  "direct_dependency": {
+    "cycle": 734,
+    "four_piece_moves": 46128,
+    "genuine_floor_dissections": 15800,
+    "regions": 120,
+    "status": "pass",
+    "used_pieces": 192
   },
-  "floor": {
-   "cuttings_at_the_floor": 15800,
-   "piece_cost_floor": 6,
-   "pieces_at_the_cost_floor": 400,
-   "pieces_in_play": 192,
-   "pieces_per_cutting": 24,
-   "search_nodes": 502838
+  "embedded_labelled_cubes": {
+    "dimension_six_count": 160,
+    "maximum_dimension": 6,
+    "vertices_per_maximum_cube": 64
   },
-  "groups_under_the_smallest_move": {
-   "cube_dimensions_seen": [
-    0,
-    1,
-    2
-   ],
-   "cuttings_they_cover": 480,
-   "cuttings_with_no_sharing_pair": 8880,
-   "cuttings_with_no_smallest_move": 144,
-   "group_orbits_of_the_cell_symmetry": 14,
-   "group_sizes": [
-    1,
-    144,
-    2,
-    96,
-    4,
-    36,
-    7,
-    48,
-    236,
-    24,
-    9320,
-    1
-   ],
-   "groups": 349,
-   "groups_that_are_cubes_on_their_switches": 276,
-   "its_farthest_member": 16,
-   "its_moves": 8,
-   "its_moves_inside": 33216,
-   "its_regions": 4,
-   "largest_group": 9320,
-   "no_other_group_has_a_power_of_two_size": true,
-   "orbits_they_lie_in": 6,
-   "pairs_of_switches_offered_at_once": 273936,
-   "pairs_sharing_a_piece": 54912,
-   "smallest_interacting_group": 7,
-   "symmetries_carrying_the_largest_group_to_itself": 48,
-   "what_four_free_switches_would_give": 16
+  "finite_move_graph": {
+    "component_sizes": {
+      "1": 144,
+      "2": 96,
+      "236": 24,
+      "4": 36,
+      "7": 48,
+      "9320": 1
+    },
+    "eight_piece_reversals": 28608,
+    "move_isolated_through_eight": 48,
+    "seven_piece_reversals": 26880
   },
-  "larger_moves": {
-   "eight_piece_moves": 151704,
-   "eight_piece_moves_reversing": 28608,
-   "reversal_at_six_has_no_solution": true,
-   "seven_piece_moves": 60096,
-   "seven_piece_moves_reversing": 26880,
-   "six_piece_moves_none_of_which_reverse_it": 31968,
-   "smallest_moves_that_reverse_it": 46128
+  "gates": {
+    "base.cell": "PASS",
+    "base.floor": "PASS",
+    "base.gram": "PASS",
+    "base.region": "PASS",
+    "dep.cycle734": "PASS",
+    "grp.count": "PASS",
+    "grp.cube": "PASS",
+    "grp.embedded": "PASS",
+    "grp.giant": "PASS",
+    "grp.orbit": "PASS",
+    "grp.seven": "PASS",
+    "grp.share": "PASS",
+    "hostile.cover": "PASS",
+    "hostile.six": "PASS",
+    "hostile.weight": "PASS",
+    "lab.bare": "PASS",
+    "lab.core": "PASS",
+    "lab.flip": "PASS",
+    "lab.keep": "PASS",
+    "lab.local": "PASS",
+    "lab.move": "PASS",
+    "lab.one": "PASS",
+    "lab.same": "PASS",
+    "lab.show": "PASS",
+    "lab.split": "PASS",
+    "lab.sym": "PASS",
+    "lab.two": "PASS",
+    "six.frozen": "PASS",
+    "six.ladder": "PASS",
+    "six.split": "PASS",
+    "sw.count": "PASS",
+    "sw.match": "PASS"
   },
-  "regions": {
-   "cuts_at_the_floor_per_region": 2,
-   "regions": 120,
-   "smallest_moves": 46128,
-   "the_two_cuts_of_a_region_share_no_piece": true
+  "no_go_discipline": {
+    "claim_scope": "finite whole-component cube census and fixed 192-piece additive GF2 systems only; embedded cubes are separately enumerated through dimension six",
+    "n5_execution_certificate": [
+      "per_element: checked -- all 192 used pieces and all 120 exact region rows",
+      "per_site: checked -- one supplied 16-corner four-cube; no physical cell selection",
+      "per_mode: checked and not executed -- no field, spectral, or momentum modes",
+      "per_block: checked -- all 15,800 cuttings, 124,812,100 pairs, move graphs, and cubes",
+      "lattice_wide: checked and not executed -- no multi-cell, arbitrary-L, or continuum claim"
+    ],
+    "status": "PASS"
   },
-  "switches_a_cutting_offers": {
-   "fillings_equal_moves_out_of_a_cutting": true,
-   "no_cutting_holds_both_cuts_of_a_region": true,
-   "region_fillings_in_all": 92256,
-   "regions_filled_distribution": [
-    0,
-    144,
-    1,
-    192,
-    2,
-    624,
-    3,
-    1600,
-    4,
-    2304,
-    5,
-    1920,
-    6,
-    4448,
-    7,
-    1344,
-    8,
-    672,
-    9,
-    1728,
-    10,
-    192,
-    12,
-    432,
-    15,
-    192,
-    24,
-    8
-   ],
-   "twice_the_smallest_moves": 46128
+  "piece_additive_gf2_charge": {
+    "claim_scope": "fixed 192-piece additive GF2 ansatz only",
+    "four_keep_six_rank": 87,
+    "four_move_rank": 86,
+    "four_piece_reversals": 46128,
+    "pieces": 192,
+    "reverse_at_four_and_six_consistent": false,
+    "selected_pieces": 56,
+    "side_sizes": [
+      7704,
+      8096
+    ],
+    "six_piece_reversals": 0
   },
-  "the_ladder_and_the_core": {
-   "cuttings_with_no_move_on_eight_pieces_or_fewer": 48,
-   "each_of_those_joins_a_pair_two_smallest_moves_apart": true,
-   "groups_allowing_moves_of_four_to_ten": [
-    349,
-    349,
-    157,
-    61,
-    61,
-    13,
-    1
-   ],
-   "moves_on_ten_pieces_or_fewer_over_those_144": [
-    20,
-    48,
-    60,
-    48,
-    80,
-    48
-   ],
-   "of_those_144_gaining_a_move_at_six": 96,
-   "singletons_allowing_moves_of_four_to_ten": [
-    144,
-    144,
-    48,
-    48,
-    48,
-    0,
-    0
-   ],
-   "six_piece_moves": 31968,
-   "six_piece_moves_inside_one_group": 21696,
-   "six_piece_moves_joining_two_groups": 10272,
-   "the_core_is_a_single_orbit": true,
-   "the_core_sits_on_one_side_of_the_charge": true
+  "review_loop": [
+    {
+      "date": "2026-08-12",
+      "disposition": "FIX_THEN_PROCEED",
+      "fix": "replaced the false local dimension-two ceiling by the exact embedded dimension-six census; demoted the model to supplied data; added direct Cycle 734 binding, independent reconstruction, hostile tests, generated evidence, fail-closed exit, and bounded N1-N8/N5 negative claims",
+      "iteration": 1,
+      "reviewer": "Codex review-loop"
+    }
+  ],
+  "schema": "physical-least-cost-cutting-piece-charge-cycle735-v2",
+  "status": "pass",
+  "supplied_model": {
+    "cost": "corner pairs with four-coordinate L1 separation greater than one",
+    "physical_cell_tick_simplex_charge_selection_bridge": "open",
+    "piece_class": "five-corner normalized-volume-one simplices only",
+    "shape": [
+      1,
+      1,
+      1,
+      1
+    ]
   },
-  "what_the_charge_is_not": {
-   "best_regions_a_constant_weight_separates": 48,
-   "constant_weights_tried": 16,
-   "coordinate_parity_labels": 5,
-   "free_signs_without_the_piece_sum": 157,
-   "group_size_smaller_side_and_count": [
-    1,
-    0,
-    144,
-    2,
-    1,
-    96,
-    4,
-    2,
-    36,
-    7,
-    3,
-    48,
-    236,
-    104,
-    24,
-    9320,
-    4616,
-    1
-   ],
-   "labellings_as_a_power_of_two": 157,
-   "orbits_of_those_groups": 5,
-   "piece_families": 4,
-   "regions_a_coordinate_parity_separates": 0,
-   "symmetries_carrying_the_charge_to_itself": 48
+  "whole_component_cubes": {
+    "components": 276,
+    "cuttings_covered": 480,
+    "dimensions": [
+      0,
+      1,
+      2
+    ]
   }
- }
 }

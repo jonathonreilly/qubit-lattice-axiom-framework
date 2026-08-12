@@ -155,6 +155,25 @@ class Cycle970PacketTest(unittest.TestCase):
         self.assertEqual(self.cache_status(PRIMARY), "fresh")
         self.assertEqual(self.cache_status(CHECKER), "fresh")
 
+        semantics_x_mutated = semantics_original.replace(
+            "state[gate.wires[0]] ^= 1",
+            "state[gate.wires[0]] ^= 0",
+            1,
+        )
+        self.assertNotEqual(
+            semantics_original, semantics_x_mutated, "substrate X mutation did not apply"
+        )
+        semantics_path.unlink()
+        semantics_path.write_text(semantics_x_mutated, encoding="utf-8")
+        self.assertEqual(self.cache_status(PRIMARY), "input_mismatch")
+        self.assertEqual(self.cache_status(CHECKER), "input_mismatch")
+        self.direct_failure()
+
+        semantics_path.unlink()
+        semantics_path.write_text(semantics_original, encoding="utf-8")
+        self.assertEqual(self.cache_status(PRIMARY), "fresh")
+        self.assertEqual(self.cache_status(CHECKER), "fresh")
+
         primary_path = self.root / PRIMARY
         primary_original = primary_path.read_text(encoding="utf-8")
         primary_mutated = primary_original.replace(
@@ -166,6 +185,25 @@ class Cycle970PacketTest(unittest.TestCase):
         primary_path.unlink()
         primary_path.write_text(primary_mutated, encoding="utf-8")
 
+        self.assertEqual(self.cache_status(PRIMARY), "sha_mismatch")
+        self.assertEqual(self.cache_status(CHECKER), "input_mismatch")
+        self.direct_failure()
+
+        primary_path.unlink()
+        primary_path.write_text(primary_original, encoding="utf-8")
+        self.assertEqual(self.cache_status(PRIMARY), "fresh")
+        self.assertEqual(self.cache_status(CHECKER), "fresh")
+
+        primary_x_mutated = primary_original.replace(
+            "output[gate.wires[0]] ^= 1",
+            "output[gate.wires[0]] ^= 0",
+            1,
+        )
+        self.assertNotEqual(
+            primary_original, primary_x_mutated, "local X mutation did not apply"
+        )
+        primary_path.unlink()
+        primary_path.write_text(primary_x_mutated, encoding="utf-8")
         self.assertEqual(self.cache_status(PRIMARY), "sha_mismatch")
         self.assertEqual(self.cache_status(CHECKER), "input_mismatch")
         self.direct_failure()

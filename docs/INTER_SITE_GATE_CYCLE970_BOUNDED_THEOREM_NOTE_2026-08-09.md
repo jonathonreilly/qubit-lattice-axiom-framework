@@ -35,8 +35,9 @@ runner does not import that package's runtime modules. Instead it hash-binds
 and AST-validates the exact exported-semantics chain
 `CORE -> H -> M -> B -> P -> Cycle715`, then checks that its local
 five-element basis-gate interpreter implements the same Cycle-715 `cn` and
-target-XOR-control rule. Any alias-hop or terminal-semantics change invalidates
-the evidence and fails the direct controls.
+`x` constructors and the same X/XOR-one and CNOT/target-XOR-control rules. Any
+alias-hop or terminal-semantics change invalidates the evidence and fails the
+direct controls.
 
 The [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) memo supplies
 the names for the two neighboring sites, their basis possibilities, and the
@@ -116,7 +117,7 @@ The independent checker uses a separate tuple-based XOR interpreter. It
 validates stable hashes for the primary, axiom, and six substrate sources;
 parses the fresh primary cache envelope; recomputes the primary input
 fingerprint; independently checks the complete alias chain, the terminal
-Cycle-715 CNOT rule, and the equivalent local rule by AST; and independently
+Cycle-715 X and CNOT rules, and both equivalent local rules by AST; and independently
 enumerates the 20 comparisons. Neither runner imports the substrate modules.
 
 The required execution order is primary cache refresh followed by independent
@@ -168,8 +169,8 @@ Review-loop hard landing conditions for this repaired final state:
    in `helper_runner_paths`.
 3. A fresh primary-cache execution followed by a fresh independent-cache
    execution passes; mutating a Cycle-719 alias hop, the terminal Cycle-715
-   CNOT rule, or the primary's local CNOT truth table invalidates the bound
-   evidence and makes both direct runners fail closed.
+   X/CNOT rule, or either primary local truth-table branch invalidates the
+   bound evidence and makes both direct runners fail closed.
 
 ## Result
 

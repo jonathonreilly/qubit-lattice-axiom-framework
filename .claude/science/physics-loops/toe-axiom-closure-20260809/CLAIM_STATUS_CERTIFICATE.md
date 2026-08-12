@@ -2092,7 +2092,7 @@ lines are in the landing primary cache.
   selected rate, and broadened boundary each fail one aggregate check.
 - Evidence: primary/cache `PASS=9 FAIL=0`; graph `5,511/15,795`, out-degree
   five; direct gates pass. Science commit is `35f8c82354` on exact Block-64
-  delivery `12ee01a522`.
+  delivery `12ee01a522`; PR #6158 is open, mergeable, and `CLEAN`.
 - Scope: `bounded_theorem` and unadopted selection cut. It is not a literal
   Cycle-713/883 physical composition, full-`Z^3` law, axiom amendment, audit
   verdict, retained claim, or TOE score movement. No `review-loop` is used.

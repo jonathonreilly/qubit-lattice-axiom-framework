@@ -1706,7 +1706,8 @@ complete conditional nonlinear compact solution:
   branch through 64 outcomes pass
 - science commit is `35f8c82354`; graph registration is `5,511/15,795`,
   out-degree five; all direct source, cache, claim-typing, vocabulary,
-  premise, model-family, whitespace, and graph/link gates pass
+  premise, model-family, whitespace, and graph/link gates pass; PR #6158 is
+  open, mergeable, and `CLEAN`
 - exact selection surface: menu 0 versus 1 changes the matter distribution
   while preserving the literal shared effect; hazards one versus three-
   quarters change occurrence while preserving conditional content

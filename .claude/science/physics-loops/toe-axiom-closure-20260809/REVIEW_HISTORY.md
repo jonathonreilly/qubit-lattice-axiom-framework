@@ -2854,4 +2854,5 @@ instance or Fourier census.
   whitespace, N1--N8, and enforced graph/link invariants pass.
 - Science commit is `35f8c82354` on exact Block-64 delivery `12ee01a522`.
   This is significant selection/type progress and zero scored TOE progress;
-  no canonical edit, audit verdict, retained status, or `review-loop` occurs.
+  PR #6158 is open, mergeable, and `CLEAN`. No canonical edit, audit verdict,
+  retained status, or `review-loop` occurs.

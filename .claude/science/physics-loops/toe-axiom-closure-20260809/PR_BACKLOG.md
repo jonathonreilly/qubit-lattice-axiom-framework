@@ -1163,3 +1163,17 @@ and arbitrary-`N` `3N+1` permanent support. Primary/cache is
 read-only challenge found no mathematical/locality blocker. No canonical
 axiom, fixed TOE percentage, positive retention, audit verdict, or
 `review-loop` changes. Landing order will place Block 64 after #6156.
+
+## Block 65
+
+PR #6158 is open, mergeable, and `CLEAN` on
+`physics-loop/toe-axiom-closure-block65-matter-seed-selection-20260812`,
+stacked exactly on Block-64 delivery head `12ee01a522`. Its distinct review
+object is the branch-first physical-state-to-Record CP attachment, exact
+unknown-density mixture-affinity cut, strict-nearest-neighbor first outcome
+and known-state head, unchanged arbitrary-length Block-64 continuation, and
+the eleven-field extensional owner decision. Primary/cache is
+`PASS=9 FAIL=0`; nine targeted mutations fail one aggregate check each;
+citation registration is `5,511/15,795`, out-degree five. No canonical axiom,
+fixed TOE percentage, positive retention, audit verdict, or `review-loop`
+changes. Landing order will place Block 65 after #6157.

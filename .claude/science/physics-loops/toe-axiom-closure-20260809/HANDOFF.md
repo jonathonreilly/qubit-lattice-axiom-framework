@@ -2562,7 +2562,8 @@ check. The executed surface covers 96 effect resolutions, five arbitrary/
 coherent/entangled input classes, 48 local patches, 567 continuation
 microsteps, 191 permanent Records for 64 outcomes, and 144/144 active
 covariance controls. Graph registration is `5,511/15,795`, out-degree five.
-Science commit is `35f8c82354` on Block-64 delivery `12ee01a522`.
+Science commit is `35f8c82354` on Block-64 delivery `12ee01a522`; PR #6158 is
+open, mergeable, and `CLEAN`.
 
 The exact gain is a positive type-correct attachment route and a sharper
 owner decision. The exact remaining fields are physical-state domain, pointer

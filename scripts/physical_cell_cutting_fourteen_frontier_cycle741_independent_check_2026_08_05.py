@@ -467,7 +467,7 @@ gate(len(pivots) == 88 and consistent, "independent.rank",
      "an independent 88-row basis pins all eight consistent functions")
 
 
-def xor_clauses(literals, value, next_variable):
+def xor_chain(literals, next_variable):
     clauses = []
     current = literals[0]
     for literal in literals[1:]:
@@ -478,50 +478,69 @@ def xor_clauses(literals, value, next_variable):
             [-current, literal, output], [-current, -literal, -output],
         ]
         current = output
-    clauses.append([current if value else -current])
-    return clauses, next_variable
+    return clauses, next_variable, current
 
 
-def solve_target(target):
-    clauses = []
-    top = 192
-    for row_index in pivot_rows:
-        literals = [int(column) + 1 for column in np.flatnonzero(incidence[row_index])]
-        added, top = xor_clauses(literals, int(target[row_index]), top)
-        clauses += added
-    cardinality = CardEnc.equals(
-        lits=list(range(1, 193)), bound=14, top_id=top, encoding=EncType.totalizer
-    )
-    clauses += cardinality.clauses
-    with Solver(name="cadical195", bootstrap_with=clauses) as solver:
-        sat = solver.solve()
-        support = None
-        if sat:
-            model = set(value for value in solver.get_model() if value > 0)
-            support = [column for column in range(192) if column + 1 in model]
-        return sat, support, solver.nof_clauses(), solver.nof_vars()
+clauses = []
+top = 192
+row_outputs = []
+for row_index in pivot_rows:
+    literals = [int(column) + 1 for column in np.flatnonzero(incidence[row_index])]
+    added, top, output = xor_chain(literals, top)
+    clauses += added
+    row_outputs.append(output)
+cardinality = CardEnc.equals(
+    lits=list(range(1, 193)), bound=14, top_id=top, encoding=EncType.totalizer
+)
+clauses += cardinality.clauses
+
+
+def assumptions_for(target):
+    return [
+        output if int(target[row_index]) else -output
+        for output, row_index in zip(row_outputs, pivot_rows)
+    ]
+
+
+def solve_target(solver, target):
+    sat = solver.solve(assumptions=assumptions_for(target))
+    support = None
+    if sat:
+        model = set(value for value in solver.get_model() if value > 0)
+        support = [column for column in range(192) if column + 1 in model]
+    return sat, support, solver.nof_clauses(), solver.nof_vars()
 
 
 answers = {}
 encoded = {}
 solver_ok = True
-for name in NAMES[2:]:
-    sat, support, clause_count, variable_count = solve_target(targets[name])
-    answers[name] = sat
-    encoded[name] = {"clauses": clause_count, "variables": variable_count}
-    solver_ok = solver_ok and sat is False
-    if sat:
-        solver_ok = solver_ok and len(support) == 14 and np.array_equal(
-            (incidence[:, support].sum(axis=1) & 1).astype(np.uint8), targets[name]
-        )
-gate(solver_ok, "independent.fourteen",
-     "independent CNF returns UNSAT for all six nonconstant exact-weight-fourteen syndromes")
-
 known = list(range(14))
 planted = (incidence[:, known].sum(axis=1) & 1).astype(np.uint8)
-sat, support, _clauses, _variables = solve_target(planted)
-gate(sat is True and support is not None and len(support) == 14 and np.array_equal(
-         (incidence[:, support].sum(axis=1) & 1).astype(np.uint8), planted
+with Solver(name="cadical195", bootstrap_with=clauses) as shared_solver:
+    planted_sat, planted_support, _clauses, _variables = solve_target(
+        shared_solver, planted
+    )
+    # Start with the short complement orbit and preserve every learned clause
+    # across the six exact RHS assumption sets. The formula itself is shared;
+    # only the 88 independently reconstructed pivot-row parity literals vary.
+    solve_order = ("seven-flip", "seven", "six-flip", "six", "four-flip", "four")
+    for name in solve_order:
+        sat, support, clause_count, variable_count = solve_target(
+            shared_solver, targets[name]
+        )
+        answers[name] = sat
+        encoded[name] = {"clauses": clause_count, "variables": variable_count}
+        solver_ok = solver_ok and sat is False
+        if sat:
+            solver_ok = solver_ok and len(support) == 14 and np.array_equal(
+                (incidence[:, support].sum(axis=1) & 1).astype(np.uint8), targets[name]
+            )
+gate(solver_ok, "independent.fourteen",
+     "one shared independent CNF returns UNSAT under all six exact RHS assumptions")
+
+gate(planted_sat is True and planted_support is not None
+     and len(planted_support) == 14 and np.array_equal(
+         (incidence[:, planted_support].sum(axis=1) & 1).astype(np.uint8), planted
      ), "hostile.sat", "a target planted from fourteen columns is recovered as SAT")
 bad_dependency = copy.deepcopy(C739)
 bad_dependency["status"] = "fail"

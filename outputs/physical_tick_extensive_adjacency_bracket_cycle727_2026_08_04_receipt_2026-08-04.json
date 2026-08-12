@@ -1,10 +1,10 @@
 {
   "box": {
-    "corners_one_tick": 16,
-    "corners_two_tick": 24,
+    "corners_one_slab": 16,
+    "corners_two_slab": 24,
     "five_corner_subsets": 42504,
-    "minimal_pieces_one_tick": 2672,
-    "minimal_pieces_two_tick": 17280,
+    "minimal_pieces_one_slab": 2672,
+    "minimal_pieces_two_slab": 17280,
     "pieces_per_dissection": 48,
     "volume_spectrum": {
       "0": 13152,
@@ -16,11 +16,11 @@
       "6": 16
     }
   },
-  "bracket_one_tick": [
+  "bracket_one_slab": [
     108,
     128
   ],
-  "bracket_two_tick": [
+  "bracket_two_slab": [
     216,
     256
   ],
@@ -29,35 +29,27 @@
       "denominator": 288,
       "equality_pieces": 6336,
       "least_slack": 0,
-      "numerator_total": 1536,
-      "pieces": 17280,
-      "value": "256.000000"
+      "numerator_total": 1536
     },
     "floor": {
       "denominator": 2,
       "equality_pieces": 13392,
       "least_slack": 0,
-      "numerator_total": 9,
-      "pieces": 17280,
-      "value": "216.000000"
+      "numerator_total": 9
     }
   },
   "charges": {
-    "adjacency_range": [
+    "spatial_pair_range": [
       3,
       7
     ],
-    "adjacency_spectrum": {
+    "spatial_pair_spectrum": {
       "3": 432,
       "4": 2592,
       "5": 7488,
       "6": 4896,
       "7": 1872
     },
-    "counting_bounds": [
-      144,
-      336
-    ],
     "tick_span_range": [
       0,
       4
@@ -70,62 +62,96 @@
       "4": 2208
     }
   },
-  "gates": {
+  "claim_type": "bounded_theorem",
+  "gate_totals": {
     "fail": 0,
-    "pass": 49
+    "pass": 50
   },
+  "gates": {
+    "adjacency charge is constant on every orbit": "PASS",
+    "adjacency charge range": "PASS",
+    "adjacency spectrum": "PASS",
+    "barycentric integers are bounded": "PASS",
+    "both certificates are met by a witness": "PASS",
+    "both ends of the bracket double": "PASS",
+    "ceiling certificate holds on every minimal piece": "PASS",
+    "ceiling certificate value": "PASS",
+    "corner count": "PASS",
+    "declared packet inputs exist and are content bound": "PASS",
+    "five-subset census": "PASS",
+    "floor certificate holds on every minimal piece": "PASS",
+    "floor certificate value": "PASS",
+    "greatest-charge witness charge": "PASS",
+    "greatest-charge witness is a dissection": "PASS",
+    "greatest-charge witness pieces are pairwise interior-disjoint": "PASS",
+    "greatest-charge witness respects the seam": "PASS",
+    "group order": "PASS",
+    "least-charge witness charge": "PASS",
+    "least-charge witness is a dissection": "PASS",
+    "least-charge witness pieces are pairwise interior-disjoint": "PASS",
+    "least-charge witness respects the seam": "PASS",
+    "membership is constant on every orbit": "PASS",
+    "minimal pieces": "PASS",
+    "no sample point lands on a piece boundary": "PASS",
+    "one-tick greatest-charge witness charge": "PASS",
+    "one-tick greatest-charge witness is a dissection": "PASS",
+    "one-tick greatest-charge witness pieces are pairwise interior-disjoint": "PASS",
+    "one-tick least-charge witness charge": "PASS",
+    "one-tick least-charge witness is a dissection": "PASS",
+    "one-tick least-charge witness pieces are pairwise interior-disjoint": "PASS",
+    "piece orbits": "PASS",
+    "pieces per dissection": "PASS",
+    "point family": "PASS",
+    "points per orbit": "PASS",
+    "proper cubic rotations": "PASS",
+    "seam pieces reach the same least charge": "PASS",
+    "seam-crossing count": "PASS",
+    "slab-confined charge doubles the one-tick spectrum": "PASS",
+    "slab-confined count": "PASS",
+    "the bracket sits strictly inside the counting bounds": "PASS",
+    "the denominator law the two ends obey": "PASS",
+    "the tick-span charge vanishes identically on the one-tick box": "PASS",
+    "tick-span charge range": "PASS",
+    "tick-span is new at two ticks": "PASS",
+    "tick-span spectrum": "PASS",
+    "tick-span splits along the seam": "PASS",
+    "trivial counting bounds": "PASS",
+    "volume spectrum": "PASS",
+    "weights are generic by construction and near-uniform": "PASS"
+  },
+  "headline": "in the supplied equal-grained two-slab corner-simplex model with declared spatial-pair charge, the exact minimal-piece bracket is [216, 256]",
+  "input_sha256": {
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
+    "docs/PHYSICAL_EXACT_ADJACENCY_DISSECTION_BRACKET_CYCLE725_NOTE_2026-08-03.md": "f080cc51bda354b6dd780c3bb67e81a6a0f95cc25a71153c23998100d04aa8e9",
+    "docs/PHYSICAL_TICK_EXTENSIVE_ADJACENCY_BRACKET_CYCLE727_NOTE_2026-08-04.md": "69659c87e67b04ef00b06c0f91e714e28c8411752426c83d8fc96a1e536f2b26"
+  },
+  "no_go_discipline": {
+    "checklist": "committed N1-N8 record in the note",
+    "n5_certificate": "five resolution lines in this stdout",
+    "no_go_shipped": false,
+    "status": "PASS"
+  },
+  "open_bridges": [
+    "physical rule-to-tick realization",
+    "framework selection of corner-simplex assembly cells",
+    "framework selection of zero slab-coordinate charge",
+    "coarser, noncorner, nonsimplicial, longer-run, larger-block, and continuum extension"
+  ],
+  "review_loop": [
+    {
+      "date": "2026-08-12",
+      "disposition": "FIX_THEN_PROCEED",
+      "fix": "narrowed the claim to the supplied two-slab corner-simplex model; made the runner exact and fail closed; bound declared premises and the independent checker; replaced raw stdout with canonical caches; added receipt, harness, graph, hostile controls, and N1-N8 surfaces",
+      "iteration": 1,
+      "reviewer": "Sol"
+    }
+  ],
   "sample_points": {
-    "barycentric_bound": 6,
     "boundary_incidences": 0,
     "distinct_membership_rows": 342,
-    "points": 17472,
-    "points_per_orbit": 48,
-    "weight_spread": "1.142857"
+    "orbits": 364,
+    "points": 17472
   },
-  "seam_split": {
-    "seam_crossing": 11936,
-    "slab_confined": 5344,
-    "slab_confined_adjacency_spectrum": {
-      "3": 128,
-      "4": 768,
-      "5": 2304,
-      "6": 1536,
-      "7": 608
-    }
-  },
-  "symmetry": {
-    "group_order": 48,
-    "orbit_sizes": {
-      "16": 6,
-      "48": 358
-    },
-    "piece_orbits": 364,
-    "proper_cubic_rotations": 24
-  },
-  "witnesses": {
-    "one_tick_greatest": {
-      "charge": 128,
-      "piece_pairs": 276,
-      "pieces": 24,
-      "separating_normals": 276
-    },
-    "one_tick_least": {
-      "charge": 108,
-      "piece_pairs": 276,
-      "pieces": 24,
-      "separating_normals": 276
-    },
-    "two_tick_greatest": {
-      "charge": 256,
-      "piece_pairs": 1128,
-      "pieces": 48,
-      "separating_normals": 1128
-    },
-    "two_tick_least": {
-      "charge": 216,
-      "piece_pairs": 1128,
-      "pieces": 48,
-      "separating_normals": 1128
-    }
-  }
+  "source_sha256": "fad12066154112242965529c99d7b98c6eb4afc2d724d3794314ce7d7cac9173"
 }

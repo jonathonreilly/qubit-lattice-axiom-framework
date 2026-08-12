@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/physical_tick_extensive_adjacency_bracket_cycle727_independent_check_2026_08_04.py
+runner_sha256: 2eab8a6f033f86454a445015d3c4053ec1cc0ee942f0f80e77729a5be04de8f3
+input_fingerprint_sha256: b18c2bf0097678e9c7969a1406f5b5510778b0ae1f10b4051cc3060460f9a96b
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 40.20
+status: ok
+----- stdout -----
+PASS primary source is pinned                                aaca4133f699e7c05911dba72f2a57f2cb5d7b2ef7778fd35fb277416fb99781
+PASS declared checker inputs exist                           6 paths
+PASS independent exact subset and volume census              subsets 42504; minimal 17280
+PASS independent exact charge censuses                       spatial [(3, 432), (4, 2592), (5, 7488), (6, 4896), (7, 1872)]; slab-span [(0, 5344), (1, 1744), (2, 4944), (3, 3040), (4, 2208)]
+PASS independent group and piece-orbit reconstruction        group 48; orbits 364
+PASS independent point-orbit reconstruction                  17472 distinct integer numerators
+PASS independent exact point membership is boundary free     all 17280 by 17472 incidences checked in integer arithmetic
+PASS uncompressed rows respect the independently built orbits 342 distinct membership rows
+PASS independent floor certificate arithmetic                least slack 0; tight 13392
+PASS independent ceiling certificate arithmetic              least slack 0; tight 6336
+PASS independent exact attaining-witness verification        costs [216, 256, 108, 128]
+PASS hostile cost/certificate/witness controls are rejected  spatial threshold, floor constant, ceiling denominator, witness corner
+PASS primary direct run is fail-closed green                 exit 0; one terminal verdict
+PASS committed receipt equals the live primary receipt       schema and every gate-bound value match
+PASS receipt binds the primary and every declared primary input source and input SHA-256 map
+CHECKER_RECEIPT {"claim_type": "bounded_theorem", "exact_minimal_piece_bracket": [216, 256], "gates": {"fail": 0, "pass": 15}, "hostile_controls": ["spatial_threshold", "floor_constant", "ceiling_denominator", "witness_corner"], "independent_membership_rows": 342, "primary_sha256": "aaca4133f699e7c05911dba72f2a57f2cb5d7b2ef7778fd35fb277416fb99781"}
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

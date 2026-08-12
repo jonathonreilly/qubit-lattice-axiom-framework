@@ -205,6 +205,12 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
         "scripts/physical_facet_charge_tick_mixed_split_cycle726_"
         "independent_check_2026_08_04.py",
     ],
+    # Cycle 727's checker independently rebuilds the exact corner census,
+    # sample-point membership matrix, integer certificates, and witnesses.
+    "physical_tick_extensive_adjacency_bracket_cycle727_note_2026-08-04": [
+        "scripts/physical_tick_extensive_adjacency_bracket_cycle727_"
+        "independent_check_2026_08_04.py",
+    ],
     "b4_clock_relation_run_cycle879_bounded_theorem_note_2026-07-28": [
         "scripts/frontier_cycle879_b4_relation_independent_check_2026_07_28.py",
     ],

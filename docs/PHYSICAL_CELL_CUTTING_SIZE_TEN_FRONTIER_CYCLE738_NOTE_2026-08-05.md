@@ -219,8 +219,8 @@ result here depends on an arrow.
 The negative statement is deliberately narrow: in this exact 15,800-row by 192-column
 incidence system, none of eight named functions has support of Hamming weight ten.
 Combined with Cycle 737's complete search through eight and the even-size identity, the
-six nonconstant functions have lower bound twelve and the next zero/one kernel-coset
-supports are not of size ten.
+six nonconstant functions have lower bound twelve, while neither the zero kernel nor the
+constant-one coset has a support of size ten.
 
 - N1 — Alternative routes: the primary quarter-split meet-in-the-middle enumeration,
   independent XOR/CNF encoding, direct full-row verification of every returned support,

@@ -256,6 +256,7 @@ def main() -> int:
     pin_ok = True
     swap_partner_max = 0.0
     wall_partner_min = float("inf")
+    wall_partner_max = 0.0
     edge_partner_min = float("inf")
 
     sext_max = 0.0
@@ -305,6 +306,7 @@ def main() -> int:
                     swap_partner_max = max(swap_partner_max, mab)
                 elif pc == "wall":
                     wall_partner_min = min(wall_partner_min, mab)
+                    wall_partner_max = max(wall_partner_max, mab)
                 else:
                     edge_partner_min = min(edge_partner_min, mab)
                 if name == "two":
@@ -423,11 +425,12 @@ def main() -> int:
           "edge pair magnitudes {:.12f} and {:.12f} (spreads {} / {})".format(
               el[0], eh[0], fmt(el[1] - el[0]), fmt(eh[1] - eh[0])))
     check("g18_pair_cut_margins",
-          swap_partner_max < 1.0e-6 and wall_partner_min > PAIR_LO
+          swap_partner_max < PAIR_LO and wall_partner_min > PAIR_LO
+          and wall_partner_max < PAIR_HI
           and edge_partner_min > PAIR_HI,
-          "swap partner max {}; wall/edge smaller-side minima {} / {} stay "
-          "away from cuts {} / {}".format(fmt(swap_partner_max),
-                                           fmt(wall_partner_min),
+          "swap max {}; wall range [{}, {}]; edge min {} stay between cuts "
+          "{} / {}".format(fmt(swap_partner_max), fmt(wall_partner_min),
+                                           fmt(wall_partner_max),
                                            fmt(edge_partner_min),
                                            PAIR_LO, PAIR_HI))
     for (name, pc) in UNSIGNED:
@@ -481,6 +484,7 @@ def main() -> int:
     NOTES["pair_cut_margins"] = {
         "swap_partner_max": fmt(swap_partner_max),
         "wall_smaller_side_min": fmt(wall_partner_min),
+        "wall_smaller_side_max": fmt(wall_partner_max),
         "edge_smaller_side_min": fmt(edge_partner_min),
     }
     NOTES["two_window"] = [fmt(two_off_lo), fmt(two_off_hi)]

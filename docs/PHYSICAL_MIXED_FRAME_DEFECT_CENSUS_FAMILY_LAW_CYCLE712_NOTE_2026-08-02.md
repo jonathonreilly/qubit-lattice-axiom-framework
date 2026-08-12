@@ -134,7 +134,8 @@ defined by the smaller of
 `(|Q[Π_g(i),Π_g(j)]|, |Q[i,j]|)`:
 
 - **swap:** below `0.5`; the observed maximum smaller side is `6.1×10⁻⁸`;
-- **wall:** from `0.5` to below `10`; the smaller side is at least `5.9`;
+- **wall:** from `0.5` to below `10`; the smaller side lies within
+  `5.8570965654 ± 1.2×10⁻¹⁰`;
 - **edge:** at least `10`; the smaller side is at least `22`.
 
 The six unsigned labels are center-4 swap, center-`2√3` swap,

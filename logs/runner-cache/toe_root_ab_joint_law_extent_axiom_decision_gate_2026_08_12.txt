@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/toe_root_ab_joint_law_extent_axiom_decision_gate_2026_08_12.py
+runner_sha256: bc6b319363bf11eee5e42cdc75377942672ede346b25fddaa11d4ab6674dc8c1
+input_fingerprint_sha256: ca96e69eb2bdb7ccdaac7cbcef4f7b4551687457de84a48e9aaf637273063db6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 3.50
+status: ok
+----- stdout -----
+analytic_boundary: exact cross-root product witness and axiom-decision extent
+physical_boundary: no extensional joint law, physical quotient, or owner adoption is supplied
+progress_boundary: blocker localization and axiom issue identification are not scored as TOE lane movement
+[PASS] current-foundation-boundary: the four axioms name a local distribution and Records but explicitly omit dynamics and e...
+[PASS] six-continuous-controls: five Root-A/gravity controls plus vector-decoder normalization are locally independent
+       diag=(1,3/5,1/2,1,2,1); rank=6; determinant=3/5
+[PASS] discrete-action-decoder-fork: the same current-compatible central rule permits decoder-nullity one and zero internal a...
+       adjoint rank/nullity=8/1; trivial=9/0
+[PASS] discrete-grading-fork: two distinct projective gradings have equal support count before the unaxiomatized posit...
+       counts=(90, 90)
+[PASS] cross-root-product-separation: the sampled product contains 384 distinct diagnostic signatures, not 384 claimed physica...
+       2^5 Root-A/gravity settings * 3 action/decoder settings * 2 gradings * 2 sign assignments
+[PASS] exact-amendment-content-test: an honest amendment must attach extensional law content and cannot close the fork with s...
+[PASS] decision-ready-not-adopted: the packet distinguishes derivation, provisional hypothesis, and owner adoption without ...
+[PASS] fresh-no-go-discipline: the narrow present-foundation non-entailment carries N1 through N8 and preserves live co...
+[PASS] score-gate-and-clock: the packet records the unchanged checkpoint and separates blocker burn-down from lane mo...
+N5_CERTIFICATE: six continuous diagnostics, two exact internal actions, two exact grading classes, and two sign assignments are resolved on the displayed product witness
+per_element: checked each control response and all nine decoder matrix coordinates
+per_site: inherited all 729 binary neighbour conditions and the exact 24-element cubic action checks
+per_mode: checked the Block-46 static, kinetic, constraint, and source diagnostics; no new Fourier or nonlinear claim is made
+per_block: checked all 1,296 grading supports and 384 sampled cross-root diagnostic signatures
+lattice_wide: not executed; a selected full-Z3 law, nonlinear gravity, and complete realized history remain open
+scope_boundary: exact axiom-decision extent and campaign strategy correction; not law selection, axiom adoption, or TOE progress
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

@@ -211,6 +211,7 @@ def main() -> int:
     carrier_ok = True
     carrier_sig_ok = True
     carrier_sets = set()
+    carrier_sets_by_L = {}
     mag_counts = {}
     sextet_max = 0.0
     scanned = 0
@@ -228,6 +229,7 @@ def main() -> int:
                 sextet_max = max(sextet_max, float(np.abs(Q[np.ix_(m, m)] - Q).max()))
         rec = []
         mag_rec = []
+        one_L_carrier_sets = set()
         for k in mixed:
             m = dof_perm(L, index, FRAMES[k])
             perm_ok = perm_ok and len(np.unique(m)) == len(m)
@@ -259,6 +261,7 @@ def main() -> int:
                 pairs[(int(a), int(b))] += 1
             carrier_ok = carrier_ok and len(pairs) == CARRIER
             carrier_sets.add(tuple(sorted(pairs)))
+            one_L_carrier_sets.add(tuple(sorted(pairs)))
             sigc = Counter()
             for (ca, cb) in pairs:
                 sigc[(SUP[ca], SUP[cb])] += 1
@@ -274,6 +277,7 @@ def main() -> int:
                           and all(pos == neg for _, pos, neg in mag_rec[0]))
         per_L[L] = rec[0]
         mag_counts[L] = {name: pos for name, pos, _ in mag_rec[0]}
+        carrier_sets_by_L[L] = one_L_carrier_sets
         del Q, model
 
     check("g01_sextet_defect_ceiling", sextet_max < SEXTET_BOUND,
@@ -356,7 +360,8 @@ def main() -> int:
     check("g21_carrier_size", carrier_ok,
           "{} ordered class pairs carry the full-weight entries, at every "
           "size and frame".format(CARRIER))
-    check("g22_carrier_signature", carrier_sig_ok and len(carrier_sets) == 3,
+    check("g22_carrier_signature", carrier_sig_ok and len(carrier_sets) == 3
+          and all(len(sets) == 3 for sets in carrier_sets_by_L.values()),
           "carrier support signatures {}, with {} frame-dependent identity "
           "sets".format({str(k): v for k, v in sorted(CARRIER_SIG.items())},
                          len(carrier_sets)))

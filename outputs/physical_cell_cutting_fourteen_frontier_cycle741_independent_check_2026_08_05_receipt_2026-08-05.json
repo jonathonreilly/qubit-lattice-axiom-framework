@@ -1,0 +1,86 @@
+{
+  "audit_status_authority": "independent audit lane only",
+  "checker_sha256": "842e4b276daf6d82e516bf553b2bbe6ab844a58d28dce72b2763a9918507c25d",
+  "claim_type": "bounded_theorem",
+  "exact_syndrome_dp": {
+    "elapsed_seconds": 209.27,
+    "executed_splits": 1533,
+    "execution_inventory_sha256": "c78080dbde496de12c86da119dc18842948a05262b7265fc9b8733187ff56727",
+    "expected_splits": 1533,
+    "intermediate_cap": 30000000,
+    "licensed_cells_per_reading": 204,
+    "maximum_join_rows": 21507024,
+    "maximum_part_rows": 12271512,
+    "peak_memory_mb": 1487.88,
+    "planted_weight_fourteen_hits": 181,
+    "quarter_kernel_dimension": 14,
+    "quarter_weight_fourteen_words": 164
+  },
+  "exact_weight_fourteen_answers": {
+    "four": false,
+    "four-flip": false,
+    "seven": false,
+    "seven-flip": false,
+    "six": false,
+    "six-flip": false
+  },
+  "exact_weight_fourteen_counts": {
+    "four": 0,
+    "four-flip": 0,
+    "seven": 0,
+    "seven-flip": 0,
+    "six": 0,
+    "six-flip": 0
+  },
+  "gates": {
+    "fail": 0,
+    "named": {
+      "hostile.dependency": "PASS",
+      "hostile.dependency_hash": "PASS",
+      "hostile.inventory": "PASS",
+      "hostile.primary_mutation": "PASS",
+      "hostile.sat": "PASS",
+      "hostile.skipped_split": "PASS",
+      "independent.dependencies": "PASS",
+      "independent.fourteen": "PASS",
+      "independent.population": "PASS",
+      "independent.rank": "PASS",
+      "independent.small_validation": "PASS",
+      "independent.targets": "PASS",
+      "receipt.contract": "PASS"
+    },
+    "pass": 13
+  },
+  "input_sha256": {
+    "docs/PHYSICAL_CELL_CUTTING_FOURTEEN_FRONTIER_CYCLE741_NOTE_2026-08-05.md": "9e23f3bc4617a4fb989a4ae64aaa56f885a3ae1d3050df9e79ecaf69090066b7",
+    "docs/PHYSICAL_CELL_CUTTING_LEAST_COMPUTING_SETS_CYCLE737_NOTE_2026-08-05.md": "eab3120bdee580b4b54561740659ebe142bc543c95901c00fa71e04c7d558a5a",
+    "docs/PHYSICAL_CELL_CUTTING_TWELVE_FRONTIER_CYCLE739_NOTE_2026-08-05.md": "173ae15f814ba015705089f5c5ccdd5bb42895df5e12023d459b9b8bfcceebb4",
+    "outputs/physical_cell_cutting_fourteen_frontier_cycle741_2026_08_05_receipt_2026-08-05.json": "fe2a3ab7615aef978cb38aa36b5e71b2e1e517ffacd496ad087ee01e0a150b98",
+    "outputs/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05_receipt_2026-08-05.json": "1088b2cf8aa99b9f4517fec84097b167ad6511df7f63943ee0f3f1e3240efb30",
+    "outputs/physical_cell_cutting_least_computing_sets_cycle737_independent_check_2026_08_05_receipt_2026-08-05.json": "1590f37efa5a093869177ded29941d9e02856856cfae51edf0264d829939b5c4",
+    "outputs/physical_cell_cutting_twelve_frontier_cycle739_2026_08_05_receipt_2026-08-05.json": "d9912e51db80f729c647e9d9ba5136ec09e32a794c75196fab131998d93ae8ee",
+    "outputs/physical_cell_cutting_twelve_frontier_cycle739_independent_check_2026_08_05_receipt_2026-08-05.json": "f093afb5c490fae541195b4d22ddccc937db47d3e339a7a4b860cc5a0270816f",
+    "requirements-release.txt": "e153eea331ce1b76cd99f09e14a777df2bc9efbaa06a201528ddfdc0f3f01bee",
+    "requirements.txt": "3fda988835a13d9a7236b0b508aa9bcd2f9b3f3b9a47b4875a15f86dbc77a3ad",
+    "scripts/physical_cell_cutting_fourteen_frontier_cycle741_2026_08_05.py": "8abd6cc44b5701897d4e8def30dc97339d30c4243cc55e410179d7e5e09022d7",
+    "scripts/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05.py": "4943c2bd0d89099394c06555f065bbed93c2d536c87a8a131a483535f6b027cd",
+    "scripts/physical_cell_cutting_least_computing_sets_cycle737_independent_check_2026_08_05.py": "e452a7b00ba0fadf65949ad2fb3e7eed462905a0202bacdc494b2fe83e642c5e",
+    "scripts/physical_cell_cutting_twelve_frontier_cycle739_2026_08_05.py": "9fb052ebe5b58585c716d766c81882f04e16e4584482e7a5a354ff66c8510b9d",
+    "scripts/physical_cell_cutting_twelve_frontier_cycle739_independent_check_2026_08_05.py": "e6b75cd4e42fc83b694f745a2f6b9659830c4655487a4dc4009d74b19ed96ee9"
+  },
+  "n5_execution_certificate": [
+    "per_element: checked -- all 192 columns enter each exact syndrome-DP split",
+    "per_site: checked -- one supplied 16-corner coordinate cell only",
+    "per_mode: checked and not executed -- this finite model has no modes",
+    "per_block: checked -- all 15800 rows through an independent 88-row basis",
+    "lattice_wide: checked and not executed -- no multicell or limit claim"
+  ],
+  "population": {
+    "cuttings": 15800,
+    "rank": 88,
+    "used_pieces": 192
+  },
+  "primary_receipt_bound": true,
+  "schema": "physical-cell-cutting-fourteen-frontier-cycle741-independent-v1",
+  "status": "pass"
+}

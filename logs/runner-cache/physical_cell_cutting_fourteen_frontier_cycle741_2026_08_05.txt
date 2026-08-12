@@ -1,0 +1,75 @@
+===== runner cache v1 =====
+runner: scripts/physical_cell_cutting_fourteen_frontier_cycle741_2026_08_05.py
+runner_sha256: 8abd6cc44b5701897d4e8def30dc97339d30c4243cc55e410179d7e5e09022d7
+input_fingerprint_sha256: 3543689859b745b1eed2c8f3b95d9f916cc83d62a23da741e654a9a3a79abdb3
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 339.21
+status: ok
+----- stdout -----
+PASS D01  Cycles 737 and 739 bind the exact incidence, eight readings, and complete weight-twelve predecessor result
+INC 15800x192 colsum 1975 rank 88 kernel 104 rows-distinct 15800
+PASS G01  the cuttings of least cost form a 15800 by 192 table over the two element field
+PASS G02  every one of the 192 pieces is used by exactly 1975 cuttings, an odd count
+PASS G03  that table has rank 88 and kernel dimension 104
+PASS G04  the 15800 cuttings are pairwise distinct as piece sets
+forced L,Q2,Q3,R,total free E0,E1,E2,E3,E4,E5,E6,E7,Q0,Q1
+Q2 parity t0-11 0,0,0,0,0,0,0,0,1,1,0,0 planted 0,0,0,0,0 odd-ctl total 1
+PASS G05  of the 15 block indicators exactly the whole set, its halves and the two quarters of the second half lie in the row space
+PASS G06  those quarters force the printed parity vector on the first twelve readings; the whole and its halves force even; the synthetic reading forces an odd whole
+PASS G07  each planted fourteen piece reading forces exactly the whole, half and quarter parities its own profile has
+Q0 subcode dim 14 words 16384 minwt 8 at8 30 at12 63 at14 164
+PASS G08  the sets inside the first quarter met evenly by every cutting form a space of dimension 14, all 16384 words verified
+PASS G09  its least nonzero weight is 8, with 30 words there and 63 at weight 12
+planted seed 74100 profiles 7-7-0-0 4-4-4-2 2-2-4-6 0-2-4-8 0-0-2-12
+PASS G10  the five planted readings are fourteen distinct pieces each, drawn to the five quarter profiles their names carry
+in-column-space 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0
+PASS G11  all but the synthetic reading lie in the column space, so each of the six nonconstant readings is carried by some set
+licensed even 5,14,30,55,91,140,204 diffs 9,16,25,36,49,64
+licensed odd-quarter 1,5,14,30,55,91,140 diffs 4,9,16,25,36,49
+PASS G12  the cells an even reading licenses at sizes 2 to 12 are [5, 14, 30, 55, 91, 140] with square differences [9, 16, 25, 36, 49], reproducing an earlier cycle
+PASS G13  at fourteen the count 204 for an even reading equals the continuation 140 plus the next square 64, and 140 for an odd quarter reading equals 91 plus 49
+PASS G14  the synthetic reading, whose forced whole is odd, licenses no cell at fourteen
+m<=8 counts 648,192,0,0,0,0,0,0,2,1,1,1,0,0,0,0,0,0 verify 845,0,0
+m<=8 orbits zero 22 {24:17,48:5} one 5 {24:2,48:3}
+PASS G15  a complete search of every set of at most eight pieces finds 648 carrying the constant zero reading and 192 the constant one reading, all 845 recorded sets verified
+PASS G16  no set of eight or fewer carries any nonconstant reading, or the synthetic odd reading
+PASS G17  the 648 zero-reading sets fall into 22 orbits of the symmetries, 17 of size 24 and 5 of size 48, and the 192 one-reading sets into 5 orbits, 2 of size 24 and 3 of size 48
+PASS G18  all 30 weight 8 words of the quarter subcode, enumerated apart from it, are among those 648
+m=10 counts 0,0,0,0,0,0,0,0,108,1,2,0,0,0,0,0,0,0 verify 111,0,0
+PASS G19  a complete search at ten reproduces an earlier cycle on the twelve readings it shares: [0, 0, 0, 0, 0, 0, 0, 0, 108, 1, 2, 0], the synthetic reading licensing no cell
+m=12 counts 7808,3072,0,0,0,0,0,0,661,25,38,38,0,0,0,0,0,0 verify 11642,0,0 splits 1167
+PASS G20  a complete search at twelve reproduces an earlier cycle on the twelve readings it shares: [7808, 3072, 0, 0, 0, 0, 0, 0, 661, 25, 38, 38], and finds no synthetic set
+PASS G21  every licensed cell at twelve is met once per reading, 140 per even and 91 per odd quarter reading, its 1167 splits distinct
+PASS G22  all 11642 recorded sets at twelve recompute to their own reading, have weight 12, and are distinct
+PASS G23  all 63 weight 12 words of the quarter subcode are among the 7808 sets carrying the zero reading at twelve
+first-quarter-14 found 164 subcode 164 verify 164,0,0
+PASS G24  the complete search of the first quarter alone at fourteen returns the 164 weight 14 words of its subcode, enumerated apart from the search
+m=14 counts 34560,26880,0,0,0,0,0,0,2665,274,329,236,1,3,11,2,6,0
+m=14 licensed 204,204,204,204,204,204,204,204,140,140,204,204,204,204,204,204,204,0
+m=14 verify 64967,0,0 splits 2562 cells 344
+m=14 orbits zero 720 {48:720}
+m=14 orbits one 560 {48:560}
+m=14 orbits all of size 1 for readings 8,9,10,11,12,13,14,15,16
+PASS G25  every licensed cell at fourteen is met once per reading, 204 per even and 140 per odd quarter reading, its 2562 splits distinct
+PASS G26  no intermediate or final table in any of the searches reached the cap of 30000000 entries
+PASS G27  all 64967 recorded sets at fourteen recompute to their own reading, have weight 14, and are distinct
+PASS G28  each of the five planted fourteen piece sets is found by a search blind to it, including the two whose profile cuts one quarter and the one that cuts two
+PASS G29  the sets found at fourteen fall into orbits of the symmetries that fix their reading, of sizes dividing 48
+PASS G30  the synthetic reading outside the column space is carried by no set at any size searched
+PASS G31  none of the six nonconstant readings is carried by any set of exactly fourteen pieces
+PASS G32  the searches at every even size to fourteen are complete and empty for the six, and each forces an even total, barring every odd size: the six readings need at least sixteen pieces
+elapsed under 500 s peak memory under 2500 MB
+PASS G33  the whole runner finishes under 900 seconds inside the printed 2500 MB
+N5 per_element: checked -- all 192 columns
+N5 per_site: checked -- one supplied coordinate cell
+N5 per_mode: checked, not executed -- no modes
+N5 per_block: checked -- all 15800 rows and licensed cells
+N5 lattice_wide: checked, not executed -- no limit claim
+PASS G34  the complete output stays under 6000 characters
+RECEIPT outputs/physical_cell_cutting_fourteen_frontier_cycle741_2026_08_05_receipt_2026-08-05.json
+
+TOTAL: PASS=35 FAIL=0
+
+----- stderr -----
+

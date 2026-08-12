@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/physical_cell_cutting_fourteen_frontier_cycle741_independent_check_2026_08_05.py
+runner_sha256: 842e4b276daf6d82e516bf553b2bbe6ab844a58d28dce72b2763a9918507c25d
+input_fingerprint_sha256: b51ba083dca52d4586f0625ef725a4942ea176d039c7447ff0cf36a158485782
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 210.77
+status: ok
+----- stdout -----
+PASS independent.population  opposite-pivot exact covers reconstruct 15800 rows on 192 used pieces
+PASS independent.dependencies  Cycles 737 and 739 pass and bind this exact incidence, functions and predecessor
+PASS receipt.contract  the primary verdict, inventory, runner and every declared input are content-bound
+PASS independent.targets  all eight Cycle 737 function identities and exact upper supports reconstruct
+PASS independent.rank  an independent 88-row basis pins all eight consistent functions
+PASS independent.small_validation  Q0 has 164 exact weight-fourteen kernel words and the planted target is recovered
+PASS independent.fourteen  independent exact syndrome DP/MITM exhausts 204 cells and 1533 splits for all six
+PASS hostile.sat  a reading planted from fourteen columns is recovered by DP/MITM
+PASS hostile.inventory  deleting or redirecting one exact split invalidates the inventory predicate
+PASS hostile.dependency  a failed exact-weight-twelve predecessor cannot pass
+PASS hostile.dependency_hash  a mutated predecessor input contract is rejected
+PASS hostile.skipped_split  a skipped primary search split invalidates the generated receipt
+PASS hostile.primary_mutation  a local semantic mutation breaks the primary source pin
+N5 per_element: checked -- all 192 columns enter each exact syndrome-DP split
+N5 per_site: checked -- one supplied 16-corner coordinate cell only
+N5 per_mode: checked and not executed -- this finite model has no modes
+N5 per_block: checked -- all 15800 rows through an independent 88-row basis
+N5 lattice_wide: checked and not executed -- no multicell or limit claim
+RECEIPT outputs/physical_cell_cutting_fourteen_frontier_cycle741_independent_check_2026_08_05_receipt_2026-08-05.json
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

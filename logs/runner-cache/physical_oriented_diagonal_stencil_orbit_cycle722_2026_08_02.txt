@@ -1,0 +1,106 @@
+===== runner cache v1 =====
+runner: scripts/physical_oriented_diagonal_stencil_orbit_cycle722_2026_08_02.py
+runner_sha256: a8a1de847005172b6aafb4e9d90270e458f96c58bf241b8d26feef6860510c1b
+input_fingerprint_sha256: f16228dfa22ac9810d4cc316446c432694b1b6d39236992c2bac39c9cf2f5eab
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 23.18
+status: ok
+----- stdout -----
+Cycle 722 -- oriented body diagonal of the assembly stencil
+Local pieces imported from the cycle-696 compiler; its tick length is 2.
+
+-- Tick-resolved contraction onto the supplied static form --
+[PASS] triangle types match the landed count mine = 50, landed = 50
+[PASS] L=3 LT=2 contraction equals (LT/2) times the landed form dim = 446, dev < 1.0e-09
+[PASS] rejector: a shifted tick-length factor is refused dev = 2.945214e-02
+[PASS] L=3 LT=3 contraction equals (LT/2) times the landed form dim = 669, dev < 1.0e-09
+[PASS] L=4 LT=2 contraction equals (LT/2) times the landed form dim = 1244, dev < 1.0e-09
+[PASS] L=4 LT=3 contraction equals (LT/2) times the landed form dim = 1866, dev < 1.0e-09
+Supplied static form scale 2.945214e+01; all declared contractions differ
+only by the overall factor LT/2.
+
+-- Sign-absorbing edge classifier --
+[PASS] classifier reproduces the landed cell template on the source corner 000 0 slot mismatches over 240
+[PASS] every edge slot of all eight stencils satisfies the anchor law 0 violations over 1920 slots
+[PASS] rejector: the sign-blind anchor rule breaks the anchor law 1116 violations over 1920 slots
+
+-- Finite stencil orbit and three distinct group gradings --
+[PASS] proper rotations act transitively on the 8 oriented diagonals orbit = 8, stabilizer = 3, 24/3 = 8
+[PASS] proper rotations act transitively on the 4 diagonal lines orbit = 4, stabilizer = 6, 24/6 = 4
+[PASS] oriented stabilizer inside the proper rotations has order 3
+[PASS] line stabilizer inside the proper rotations has order 6 (the sextet)
+[PASS] oriented stabilizer inside the 48 signed permutations has order 6 48/6 = 8 oriented labels
+[PASS] line stabilizer inside the 48 signed permutations has order 12 48/12 = 4 line labels
+[PASS] oriented and line stabilizers are closed exact matrix subgroups
+[PASS] diagonal-orientation-reversing coset has six elements
+[PASS] spatial determinant splits 3+3 on both diagonal-orientation classes orientation-preserving = (3, 3), orientation-reversing = (3, 3)
+[PASS] proper line sextet draws three elements from each orientation class proper split = 3 orientation-preserving + 3 orientation-reversing
+Order 12 stabilizes the UNORIENTED line, order 6 the ORIENTED diagonal; the
+orientation-reversing coset is determinant-mixed (3 proper + 3 improper).
+
+-- Finite assembly covariance across the stencil orbit --
+[PASS] L=3 LT=3: relabelling by g carries stencil a onto stencil g.a 192 pairs, dev < 1.0e-09
+[PASS] rejector: holding the stencil fixed under the same relabelling is refused dev = 2.789850e+00
+[PASS] L=4 LT=2: relabelling by g carries stencil a onto stencil g.a 192 pairs, dev < 1.0e-09
+
+-- Spatial box-centre reflection intertwiner --
+[PASS] the point reflection sends source corner 000 to 111
+[PASS] L=3 LT=3: reflection carries stencil 000 form to stencil 111 form dev < 1.0e-09
+[PASS] L=3 LT=3: fixed-stencil reflection cost equals stencil separation floor = 2.789850e+00, min separation = 2.789850e+00
+[PASS] L=4 LT=2: reflection carries stencil 000 form to stencil 111 form dev < 1.0e-09
+[PASS] L=4 LT=2: fixed-stencil reflection cost equals stencil separation floor = 2.789850e+00, min separation = 2.789850e+00
+
+-- Orbit-average proper-frame invariance and signed-frame extension --
+[PASS] L=3 LT=3: the orbit average admits all 24 axiom proper frames 24 of 24
+[PASS] L=3 LT=3: the finite fixture also admits all 48 signed spatial frames 48 of 48
+[PASS] the orbit-averaged form carries a single frame label
+[PASS] the averaging cost is exactly half the stencil separation cost = 1.394925e+00, separation = 2.789850e+00
+
+-- Tick-resolved finite frame-label census --
+[PASS] LT=2: 8 distinct stencil forms and 8 frame classes dim = 446, distinct = 8, classes = 8
+[PASS] LT=3: 8 distinct stencil forms and 8 frame classes dim = 669, distinct = 8, classes = 8
+[PASS] LT=5: 8 distinct stencil forms and 8 frame classes dim = 1115, distinct = 8, classes = 8
+
+-- Finite projection identification and admitted-frame census --
+[PASS] LT=2 tick-resolved, all classes admitted signed spatial frames = 6 (oriented stabilizer); stencils separated at 2.789850e+00
+[PASS] LT=2 tick-resolved, temporal dropped admitted signed spatial frames = 12 (line stabilizer); stencils identified
+[PASS] LT=2 tick-folded, all classes admitted signed spatial frames = 12 (line stabilizer); stencils identified
+[PASS] LT=2 tick-folded, temporal dropped = STATIC admitted signed spatial frames = 12 (line stabilizer); stencils identified
+[PASS] LT=3 tick-resolved, all classes admitted signed spatial frames = 6 (oriented stabilizer); stencils separated at 2.789850e+00
+[PASS] LT=3 tick-resolved, temporal dropped admitted signed spatial frames = 6 (oriented stabilizer); stencils separated at 1.000000e+00
+[PASS] LT=3 tick-folded, all classes admitted signed spatial frames = 12 (line stabilizer); stencils identified
+[PASS] LT=3 tick-folded, temporal dropped = STATIC admitted signed spatial frames = 12 (line stabilizer); stencils identified
+[PASS] LT=5 tick-resolved, all classes admitted signed spatial frames = 6 (oriented stabilizer); stencils separated at 2.789850e+00
+[PASS] LT=5 tick-resolved, temporal dropped admitted signed spatial frames = 6 (oriented stabilizer); stencils separated at 1.000000e+00
+[PASS] LT=5 tick-folded, all classes admitted signed spatial frames = 12 (line stabilizer); stencils identified
+[PASS] LT=5 tick-folded, temporal dropped = STATIC admitted signed spatial frames = 12 (line stabilizer); stencils identified
+Identification selects the exact line stabilizer; separation selects the exact
+oriented stabilizer in every declared row.
+
+-- Tick fold versus temporal-class removal --
+[PASS] LT=3: dropping temporal classes leaves the stencils separated floor = 1.000000
+[PASS] LT=4: dropping temporal classes leaves the stencils separated floor = 1.000000
+[PASS] LT=4: the tick fold identifies them where dropping does not dev < 1.0e-09
+[PASS] LT=5: dropping temporal classes leaves the stencils separated floor = 1.000000
+Temporal-class dropping identifies only at tick length 2; the fold identifies
+at each declared tick length.  The supplied static form applies both projections.
+
+-- Diagonal-orientation reversal and tick sense --
+[PASS] LT=2: translations select the oriented stabilizer; adding tick reversal selects the line stabilizer translations = 6, with reversal = 12
+[PASS] LT=3: translations select the oriented stabilizer; adding tick reversal selects the line stabilizer translations = 6, with reversal = 12
+[PASS] LT=4: translations select the oriented stabilizer; adding tick reversal selects the line stabilizer translations = 6, with reversal = 12
+[PASS] LT=5: translations select the oriented stabilizer; adding tick reversal selects the line stabilizer translations = 6, with reversal = 12
+
+-- Stencil edge-slot inventory versus nearest-neighbour adjacency --
+[PASS] the stencil carries 240 edge slots, 120 of them spatial total = 240, spatial = 120
+[PASS] a large share of the spatial slots are not nearest-neighbour steps 72 on the six axis directions, 48 not
+
+-- Static projection reproduction of the four-label census --
+[PASS] static form at LT=2 carries 4 frame labels labels = 4
+[PASS] static form at LT=3 carries 4 frame labels labels = 4
+
+TOTAL: PASS=58 FAIL=0
+
+----- stderr -----
+

@@ -1,22 +1,23 @@
-"""Cycle 722 -- the assembly stencil's oriented body diagonal, and what projection hides.
+"""Cycle 722 -- finite oriented-diagonal stencil and projection census.
 
 Cycles 717-721 measured an order-12 frame group and a 4-valued frame label on the
 landed STATIC second-variation form.  This runner rebuilds the same assembly on the
 TICK-RESOLVED complex at tick lengths 2, 3, 4 and 5 and separates three things the
 static form had merged:
 
-  (1) the static form is blind to tick length -- its entire tick-length dependence is
-      the overall factor LT/2;
-  (2) the frame label is 8-valued, not 4-valued, on the tick-resolved complex at every
-      tick length -- it names an ORIENTED body diagonal of the cell;
-  (3) the order-12 group and its 4-valued label appear exactly when a projection
-      IDENTIFIES the two stencils sharing one diagonal line.  Two projections do that,
-      and tick length separates them.
+  (1) the declared static contractions at L={3,4}, LT={2,3} differ only by LT/2;
+  (2) the frame label is 8-valued on the tick-resolved complex at the declared
+      L=3, LT={2,3,5} rows and names an oriented body diagonal of the cell;
+  (3) in twelve declared projection rows, the exact line stabilizer is admitted when
+      the complementary stencils are numerically identified, while the exact oriented
+      stabilizer is admitted when they are separated.
 
 The eight stencils are the eight Kuhn path triangulations of the unit 4-cube, one per
 oriented main diagonal, indexed by the spatial corner a in {0,1}^3 at tick 0.  The
-LATTICE axiom's proper cubic rotations act transitively on them, so the axiom selects
-none of them: the label counts an orbit, not a preference.
+Lattice axiom's proper cubic rotations act transitively on the declared family.  No
+member is fixed by the full proper-frame action, so selecting one member is additional
+input on this finite surface.  Spatial determinant, diagonal-orientation reversal,
+and tick sense are kept as three separate gradings.
 
 Everything is anchored to the landed cycle-696 compiler: the local pieces are imported
 from it, and the tick-resolved assembly is required to contract onto its static form.
@@ -29,6 +30,15 @@ import os
 import sys
 
 import numpy as np
+
+AUDIT_INPUT_PATHS = (
+    "scripts/physical_open_coframe_k_endpoint_compiler_cycle696_2026_07_25.py",
+    "scripts/physical_dynamical_metric_source_law_bridge_tournament_cycle576_2026_07_22.py",
+    "scripts/physical_dynamical_metric_source_law_bridge_cycle576_regge_support_2026_07_22.py",
+    "scripts/physical_dynamical_metric_source_law_bridge_cycle576_plaquette_support_2026_07_22.py",
+    "scripts/frontier_cubic_coxeter_regge_second_variation_3plus1_2026_06_09.py",
+)
+AUDIT_TIMEOUT_SEC = 300
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -47,9 +57,13 @@ PAIRS5 = [(i, j) for i in range(5) for j in range(i + 1, 5)]
 CORNERS = list(itertools.product((0, 1), repeat=3))
 
 TOL = 1.0e-9
+TOL_SCALAR = 1.0e-6
+CONTROL_FACTOR_SHIFT = 1.0e-3
 PASS = 0
 FAIL = 0
-RECEIPT = {}
+GATES = []
+RECEIPT = {"controls": {"factor_shift": CONTROL_FACTOR_SHIFT},
+           "tolerances": {"matrix": TOL, "reported_scalar": TOL_SCALAR}}
 
 
 def md(x, n):
@@ -65,6 +79,7 @@ def chk(name, ok, detail=""):
     else:
         FAIL += 1
         tag = "FAIL"
+    GATES.append({"detail": detail, "gate": name, "ok": bool(ok)})
     print("[{0}] {1}{2}".format(tag, name, (" " + detail) if detail else ""))
 
 
@@ -190,12 +205,38 @@ for _perm in itertools.permutations(range(3)):
             _A[_i, _perm[_i]] = _sg[_i]
         SIGNED.append(_A)
 PROPER = [A for A in SIGNED if round(float(np.linalg.det(A))) == 1]
+SIGNED_KEY = {tuple(int(x) for x in A.ravel()): i for i, A in enumerate(SIGNED)}
 
 
 def corner_of(A, a):
     """Where a signed axis permutation sends a corner of the cell."""
     s = np.array([1 if A[q].min() < 0 else 0 for q in range(3)], dtype=np.int64)
     return tuple(int(z) for z in (A @ np.array(a) + s))
+
+
+def matrix_subset_closed(indices):
+    """Exact closure of a subset of the signed spatial permutation group."""
+    ss = set(indices)
+    return all(SIGNED_KEY[tuple(int(x) for x in (SIGNED[i] @ SIGNED[j]).ravel())] in ss
+               for i in ss for j in ss)
+
+
+def determinant_split(indices):
+    dets = [int(round(float(np.linalg.det(SIGNED[i])))) for i in indices]
+    return (dets.count(1), dets.count(-1))
+
+
+SOURCE_CORNER = (0, 0, 0)
+SOURCE_LINE = frozenset((SOURCE_CORNER, (1, 1, 1)))
+ORIENTED_FRAME_IDS = tuple(i for i, A in enumerate(SIGNED)
+                           if corner_of(A, SOURCE_CORNER) == SOURCE_CORNER)
+LINE_FRAME_IDS = tuple(i for i, A in enumerate(SIGNED)
+                       if frozenset((corner_of(A, SOURCE_CORNER),
+                                     tuple(1 - z for z in corner_of(A, SOURCE_CORNER))))
+                       == SOURCE_LINE)
+REVERSING_COSET_IDS = tuple(i for i in LINE_FRAME_IDS if i not in ORIENTED_FRAME_IDS)
+PROPER_FRAME_IDS = frozenset(i for i, A in enumerate(SIGNED)
+                             if int(round(float(np.linalg.det(A)))) == 1)
 
 
 def keymap(L, LT, keys, A, k, eps, fold, drop):
@@ -236,20 +277,24 @@ def project(idx, Q, LT, fold, drop):
     return out, P @ Q @ P.T
 
 
-def nsym(L, LT, keys, QP, fold, drop, senses=(1,)):
-    """Signed axis permutations admitting SOME tick shift, in the given tick senses."""
-    n = 0
-    for A in SIGNED:
+def symmetry_frames(L, LT, keys, QP, fold, drop, senses=(1,), frames=SIGNED):
+    """Spatial frame indices admitting some declared tick relabelling."""
+    out = []
+    for A in frames:
         for k in range(LT):
             for e in senses:
                 mp = keymap(L, LT, keys, A, k, e, fold, drop)
                 if np.abs(QP[np.ix_(mp, mp)] - QP).max() < TOL:
-                    n += 1
+                    out.append(SIGNED_KEY[tuple(int(x) for x in A.ravel())])
                     break
             else:
                 continue
             break
-    return n
+    return tuple(sorted(out))
+
+
+def nsym(L, LT, keys, QP, fold, drop, senses=(1,), frames=SIGNED):
+    return len(symmetry_frames(L, LT, keys, QP, fold, drop, senses, frames))
 
 
 def nlabels(L, LT, keys, QP, fold, drop):
@@ -268,7 +313,7 @@ print("Local pieces imported from the cycle-696 compiler; its tick length is "
       + str(m.LT) + ".")
 print("")
 
-print("-- A. the tick-resolved assembly contracts onto the landed static form --")
+print("-- Tick-resolved contraction onto the supplied static form --")
 S0 = stencil((0, 0, 0))
 chk("triangle types match the landed count",
     len(triangles(S0)) == len(m.TRI_UW),
@@ -288,15 +333,16 @@ for L in (3, 4):
         chk("L={0} LT={1} contraction equals (LT/2) times the landed form".format(L, LT),
             dev < TOL, "dim = {0}, {1}".format(Q4.shape[0], bound(dev)))
         if L == 3 and LT == 2:
-            bad = float(np.abs(C @ Q4 @ C.T - (LT / 2.0 + 1.0e-3) * Qs).max())
+            bad = float(np.abs(C @ Q4 @ C.T
+                               - (LT / 2.0 + CONTROL_FACTOR_SHIFT) * Qs).max())
             chk("rejector: a shifted tick-length factor is refused", bad > TOL,
                 "dev = {0:.6e}".format(bad))
-            RECEIPT["static_form_scale"] = "{0:.6e}".format(scale_seen)
-print("Landed static form scale {0:.6e}; its whole tick-length".format(scale_seen))
-print("dependence is the overall factor LT/2.")
+            RECEIPT["static_form_scale"] = scale_seen
+print("Supplied static form scale {0:.6e}; all declared contractions differ".format(scale_seen))
+print("only by the overall factor LT/2.")
 print("")
 
-print("-- B. the sign-absorbing edge classifier is the landed one --")
+print("-- Sign-absorbing edge classifier --")
 mism = sum(1 for p, T in enumerate(S0) for i in range(10)
            if T["cls"][i] != m.CELL[p]["cls"][i]
            or tuple(T["anc"][i]) != tuple(int(z) for z in m.CELL[p]["anc"][i]))
@@ -324,14 +370,14 @@ chk("rejector: the sign-blind anchor rule breaks the anchor law", vb > 0,
     "{0} violations over 1920 slots".format(vb))
 print("")
 
-print("-- C. the eight stencils form ONE orbit of the axiom's rotations --")
+print("-- Finite stencil orbit and three distinct group gradings --")
 orb8 = len({corner_of(A, (0, 0, 0)) for A in PROPER})
 st8 = sum(1 for A in PROPER if corner_of(A, (0, 0, 0)) == (0, 0, 0))
 line = lambda a: frozenset({a, tuple(1 - z for z in a)})
 orb4 = len({line(corner_of(A, (0, 0, 0))) for A in PROPER})
 st4 = sum(1 for A in PROPER if line(corner_of(A, (0, 0, 0))) == line((0, 0, 0)))
-s48o = sum(1 for A in SIGNED if corner_of(A, (0, 0, 0)) == (0, 0, 0))
-s48l = sum(1 for A in SIGNED if line(corner_of(A, (0, 0, 0))) == line((0, 0, 0)))
+s48o = len(ORIENTED_FRAME_IDS)
+s48l = len(LINE_FRAME_IDS)
 chk("proper rotations act transitively on the 8 oriented diagonals", orb8 == 8,
     "orbit = {0}, stabilizer = {1}, 24/{1} = {2}".format(orb8, st8, 24 // st8))
 chk("proper rotations act transitively on the 4 diagonal lines", orb4 == 4,
@@ -342,64 +388,90 @@ chk("oriented stabilizer inside the 48 signed permutations has order 6", s48o ==
     "48/6 = 8 oriented labels")
 chk("line stabilizer inside the 48 signed permutations has order 12", s48l == 12,
     "48/12 = 4 line labels")
+chk("oriented and line stabilizers are closed exact matrix subgroups",
+    matrix_subset_closed(ORIENTED_FRAME_IDS) and matrix_subset_closed(LINE_FRAME_IDS))
+chk("diagonal-orientation-reversing coset has six elements",
+    len(REVERSING_COSET_IDS) == 6 and
+    set(LINE_FRAME_IDS) == set(ORIENTED_FRAME_IDS) | set(REVERSING_COSET_IDS))
+chk("spatial determinant splits 3+3 on both diagonal-orientation classes",
+    determinant_split(ORIENTED_FRAME_IDS) == (3, 3)
+    and determinant_split(REVERSING_COSET_IDS) == (3, 3),
+    "orientation-preserving = {0}, orientation-reversing = {1}"
+    .format(determinant_split(ORIENTED_FRAME_IDS),
+            determinant_split(REVERSING_COSET_IDS)))
+proper_line = set(LINE_FRAME_IDS) & PROPER_FRAME_IDS
+chk("proper line sextet draws three elements from each orientation class",
+    len(proper_line & set(ORIENTED_FRAME_IDS)) == 3
+    and len(proper_line & set(REVERSING_COSET_IDS)) == 3,
+    "proper split = 3 orientation-preserving + 3 orientation-reversing")
 print("Order 12 stabilizes the UNORIENTED line, order 6 the ORIENTED diagonal; the")
-print("improper half is exactly the orientation-reversing coset.")
+print("orientation-reversing coset is determinant-mixed (3 proper + 3 improper).")
 print("")
 
-print("-- D. assembly is covariant, so no rotation prefers a stencil --")
+print("-- Finite assembly covariance across the stencil orbit --")
+reflection_rows = []
 for (L, LT) in ((3, 3), (4, 2)):
     idx, _ = assemble(L, LT, S0)
     QA = {a: assemble(L, LT, stencil(a))[1] for a in CORNERS}
+    keys = sorted(idx, key=lambda k: idx[k])
     worst = 0.0
     npair = 0
     for A in PROPER:
-        mp = keymap(L, LT, sorted(idx, key=lambda k: idx[k]), A, 0, 1, 0, 0)
+        mp = keymap(L, LT, keys, A, 0, 1, 0, 0)
         for a in CORNERS:
             worst = max(worst, float(np.abs(QA[a][np.ix_(mp, mp)] - QA[corner_of(A, a)]).max()))
             npair += 1
     chk("L={0} LT={1}: relabelling by g carries stencil a onto stencil g.a".format(L, LT),
         worst < TOL, "{0} pairs, {1}".format(npair, bound(worst)))
+    sepL = min(float(np.abs(QA[(0, 0, 0)] - QA[a]).max()) for a in CORNERS[1:])
+    mI = -np.eye(3, dtype=np.int64)
+    sdevL = min(float(np.abs(QA[(0, 0, 0)][np.ix_(mp, mp)] - QA[(0, 0, 0)]).max())
+                for mp in (keymap(L, LT, keys, mI, k, 1, 0, 0) for k in range(LT)))
+    sxL = min(float(np.abs(QA[(0, 0, 0)][np.ix_(mp, mp)] - QA[(1, 1, 1)]).max())
+              for mp in (keymap(L, LT, keys, mI, k, 1, 0, 0) for k in range(LT)))
+    reflection_rows.append((L, LT, sxL, sdevL, sepL))
     if L == 3:
         wrong = 0.0
         for A in PROPER:
-            mp = keymap(L, LT, sorted(idx, key=lambda k: idx[k]), A, 0, 1, 0, 0)
+            mp = keymap(L, LT, keys, A, 0, 1, 0, 0)
             wrong = max(wrong, float(np.abs(QA[(0, 0, 0)][np.ix_(mp, mp)] - QA[(0, 0, 0)]).max()))
         chk("rejector: holding the stencil fixed under the same relabelling is refused",
             wrong > TOL, "dev = {0:.6e}".format(wrong))
-        sep = min(float(np.abs(QA[(0, 0, 0)] - QA[a]).max()) for a in CORNERS[1:])
-        RECEIPT["stencil_separation"] = "{0:.6e}".format(sep)
+        sep = sepL
+        RECEIPT["stencil_separation"] = sep
         Qb = sum(QA[a] for a in CORNERS) / 8.0
         cost = float(np.abs(Qb - QA[(0, 0, 0)]).max())
-        keys = sorted(idx, key=lambda k: idx[k])
-        nb = nsym(L, LT, keys, Qb, 0, 0)
+        signed_average_frames = symmetry_frames(L, LT, keys, Qb, 0, 0)
+        proper_average_frames = symmetry_frames(L, LT, keys, Qb, 0, 0,
+                                                frames=PROPER)
         lb = nlabels(L, LT, keys, Qb, 0, 0)
-        mI = -np.eye(3, dtype=np.int64)
-        sdev = min(float(np.abs(QA[(0, 0, 0)][np.ix_(mp, mp)] - QA[(0, 0, 0)]).max())
-                   for mp in (keymap(L, LT, keys, mI, k, 1, 0, 0) for k in range(LT)))
-        sx = min(float(np.abs(QA[(0, 0, 0)][np.ix_(mp, mp)] - QA[(1, 1, 1)]).max())
-                 for mp in (keymap(L, LT, keys, mI, k, 1, 0, 0) for k in range(LT)))
-        RECEIPT["orbit_average_cost"] = "{0:.6e}".format(cost)
+        RECEIPT["orbit_average_cost"] = cost
 print("")
 
-print("-- E. the box-centre point reflection is an intertwiner, not a broken symmetry --")
+print("-- Spatial box-centre reflection intertwiner --")
 chk("the point reflection sends source corner 000 to 111",
     corner_of(-np.eye(3, dtype=np.int64), (0, 0, 0)) == (1, 1, 1))
-chk("it carries the form of stencil 000 onto the form of stencil 111", sx < TOL, bound(sx))
-chk("its apparent failure on stencil 000 equals the stencil separation exactly",
-    abs(sdev - sep) < TOL,
-    "floor = {0:.6e} = the min separation".format(sdev))
+for L, LT, sxL, sdevL, sepL in reflection_rows:
+    chk("L={0} LT={1}: reflection carries stencil 000 form to stencil 111 form"
+        .format(L, LT), sxL < TOL, bound(sxL))
+    chk("L={0} LT={1}: fixed-stencil reflection cost equals stencil separation"
+        .format(L, LT), abs(sdevL - sepL) < TOL,
+        "floor = {0:.6e}, min separation = {1:.6e}".format(sdevL, sepL))
 print("")
 
-print("-- F. averaging over the orbit restores the axiom's full symmetry, at a price --")
-chk("the orbit-averaged form admits all 48 signed permutations", nb == 48,
-    "{0} of 48".format(nb))
+print("-- Orbit-average proper-frame invariance and signed-frame extension --")
+chk("L=3 LT=3: the orbit average admits all 24 axiom proper frames",
+    len(proper_average_frames) == 24, "{0} of 24".format(len(proper_average_frames)))
+chk("L=3 LT=3: the finite fixture also admits all 48 signed spatial frames",
+    len(signed_average_frames) == 48,
+    "{0} of 48".format(len(signed_average_frames)))
 chk("the orbit-averaged form carries a single frame label", lb == 1)
 chk("the averaging cost is exactly half the stencil separation",
-    abs(2.0 * cost - sep) < 1.0e-6,
+    abs(2.0 * cost - sep) < TOL_SCALAR,
     "cost = {0:.6e}, separation = {1:.6e}".format(cost, sep))
 print("")
 
-print("-- G. the frame label is 8-valued on the tick-resolved complex --")
+print("-- Tick-resolved finite frame-label census --")
 for LT in (2, 3, 5):
     idx, _ = assemble(3, LT, S0)
     QA = {a: assemble(3, LT, stencil(a))[1] for a in CORNERS}
@@ -415,7 +487,7 @@ for LT in (2, 3, 5):
     del QA, dis
 print("")
 
-print("-- H. order 12 holds exactly when the projection IDENTIFIES the two stencils --")
+print("-- Finite projection identification and admitted-frame census --")
 VARIANTS = (("tick-resolved, all classes", 0, 0),
             ("tick-resolved, temporal dropped", 0, 1),
             ("tick-folded, all classes", 1, 0),
@@ -427,19 +499,24 @@ for LT in (2, 3, 5):
         keys, P0 = project(idx, Q0, LT, fold, drop)
         _, P1 = project(idx, Q1, LT, fold, drop)
         sepv = float(np.abs(P0 - P1).max())
-        ns = nsym(3, LT, keys, P0, fold, drop)
+        admitted = symmetry_frames(3, LT, keys, P0, fold, drop)
+        ns = len(admitted)
         ident = sepv < TOL
-        chk("LT={0} {1}".format(LT, nm), (ns == 12) == ident,
-            "sym = {0}, stencils {1}".format(ns, "identified" if ident
-                                             else "separated at {0:.6e}".format(sepv)))
+        expected = LINE_FRAME_IDS if ident else ORIENTED_FRAME_IDS
+        chk("LT={0} {1}".format(LT, nm), admitted == expected
+            and matrix_subset_closed(admitted),
+            "admitted signed spatial frames = {0} ({1}); stencils {2}".format(
+                ns, "line stabilizer" if ident else "oriented stabilizer",
+                "identified" if ident else "separated at {0:.6e}".format(sepv)))
         if fold == 1 and drop == 1 and LT in (2, 3):
             nlab = nlabels(3, LT, keys, P0, fold, drop)
-            RECEIPT["static_labels_LT{0}".format(LT)] = str(nlab)
+            RECEIPT["static_labels_LT{0}".format(LT)] = nlab
     del idx, Q0, Q1
-print("Identification and order 12 agree in every row.")
+print("Identification selects the exact line stabilizer; separation selects the exact")
+print("oriented stabilizer in every declared row.")
 print("")
 
-print("-- I. two projections identify, and tick length tells them apart --")
+print("-- Tick fold versus temporal-class removal --")
 for LT in (3, 4, 5):
     idx, Q0 = assemble(3, LT, stencil((0, 0, 0)))
     _, Q1 = assemble(3, LT, stencil((1, 1, 1)))
@@ -447,7 +524,7 @@ for LT in (3, 4, 5):
     _, P1 = project(idx, Q1, LT, 0, 1)
     d = float(np.abs(P0 - P1).max())
     chk("LT={0}: dropping temporal classes leaves the stencils separated".format(LT),
-        abs(d - 1.0) < 1.0e-6, "floor = {0:.6f}".format(d))
+        abs(d - 1.0) < TOL_SCALAR, "floor = {0:.6f}".format(d))
     if LT == 4:
         _, F0 = project(idx, Q0, LT, 1, 1)
         _, F1 = project(idx, Q1, LT, 1, 1)
@@ -456,21 +533,24 @@ for LT in (3, 4, 5):
             df < TOL, bound(df))
     del idx, Q0, Q1, P0, P1
 print("Temporal-class dropping identifies only at tick length 2; the fold identifies")
-print("at every tick length.  The landed static form applies both.")
+print("at each declared tick length.  The supplied static form applies both projections.")
 print("")
 
-print("-- J. the improper half needs a tick reversal; it does not vanish --")
+print("-- Diagonal-orientation reversal and tick sense --")
 for LT in (2, 3, 4, 5):
     idx, Q = assemble(3, LT, S0)
     keys = sorted(idx, key=lambda k: idx[k])
-    n1 = nsym(3, LT, keys, Q, 0, 0, senses=(1,))
-    n2 = nsym(3, LT, keys, Q, 0, 0, senses=(1, -1))
-    chk("LT={0}: tick translations give 6, adding a tick reversal gives 12".format(LT),
-        n1 == 6 and n2 == 12, "translations = {0}, with reversal = {1}".format(n1, n2))
+    trans = symmetry_frames(3, LT, keys, Q, 0, 0, senses=(1,))
+    with_reversal = symmetry_frames(3, LT, keys, Q, 0, 0, senses=(1, -1))
+    chk("LT={0}: translations select the oriented stabilizer; adding tick reversal "
+        "selects the line stabilizer".format(LT),
+        trans == ORIENTED_FRAME_IDS and with_reversal == LINE_FRAME_IDS,
+        "translations = {0}, with reversal = {1}".format(
+            len(trans), len(with_reversal)))
     del idx, Q
 print("")
 
-print("-- K. the stencil is derived structure, not the axiom's adjacency --")
+print("-- Stencil edge-slot inventory versus nearest-neighbour adjacency --")
 AXIS = {c for c, d in enumerate(DIRS) if d[3] == 0 and sum(d[:3]) == 1}
 tot = sum(1 for T in S0 for c in T["cls"])
 spa = sum(1 for T in S0 for c in T["cls"] if DIRS[c][3] == 0)
@@ -482,20 +562,25 @@ chk("a large share of the spatial slots are not nearest-neighbour steps",
     "{0} on the six axis directions, {1} not".format(axc, spa - axc))
 print("")
 
-print("-- L. the static rows reproduce the landed cycle-721 reading --")
-chk("static form at LT=2 carries 4 frame labels", RECEIPT.get("static_labels_LT2") == "4",
+print("-- Static projection reproduction of the four-label census --")
+chk("static form at LT=2 carries 4 frame labels", RECEIPT.get("static_labels_LT2") == 4,
     "labels = " + str(RECEIPT.get("static_labels_LT2")))
-chk("static form at LT=3 carries 4 frame labels", RECEIPT.get("static_labels_LT3") == "4",
+chk("static form at LT=3 carries 4 frame labels", RECEIPT.get("static_labels_LT3") == 4,
     "labels = " + str(RECEIPT.get("static_labels_LT3")))
 print("")
 
-RECEIPT["pass"] = str(PASS)
-RECEIPT["fail"] = str(FAIL)
-RECEIPT["oriented_stabilizer_48"] = str(s48o)
-RECEIPT["line_stabilizer_48"] = str(s48l)
-RECEIPT["oriented_labels"] = "8"
-RECEIPT["line_labels"] = "4"
-RECEIPT["temporal_drop_floor"] = "1.000000"
+RECEIPT["pass"] = PASS
+RECEIPT["fail"] = FAIL
+RECEIPT["gates"] = GATES
+RECEIPT["oriented_stabilizer_48"] = s48o
+RECEIPT["line_stabilizer_48"] = s48l
+RECEIPT["orientation_class_determinant_splits"] = {
+    "preserving": list(determinant_split(ORIENTED_FRAME_IDS)),
+    "reversing": list(determinant_split(REVERSING_COSET_IDS)),
+}
+RECEIPT["oriented_labels"] = 8
+RECEIPT["line_labels"] = 4
+RECEIPT["temporal_drop_floor"] = 1.0
 with open(os.path.join(ROOT, "outputs",
                        "physical_oriented_diagonal_stencil_orbit_cycle722_2026_08_02_receipt_2026-08-02.json"),
           "w") as fh:

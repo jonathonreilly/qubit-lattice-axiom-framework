@@ -115,8 +115,8 @@ was run.
   reading identities are accepted. (4) `ATTEMPTED`: the opposite-pivot
   independent reconstruction and CaDiCaL exact-cardinality encoding attack the
   asserted weight-16 sufficiency without importing the primary construction.
-  (5) `RULED OUT BY PRIOR`: the smaller-cardinality route is the exact same six
-  functions and population discharged through fourteen by hash-bound
+  (5) `ATTEMPTED`: the smaller-cardinality route is the exact same six
+  functions and population checked through fourteen by hash-bound fresh
   [Cycle 741](PHYSICAL_CELL_CUTTING_FOURTEEN_FRONTIER_CYCLE741_NOTE_2026-08-05.md),
   whose primary exhaustive inventory and independent CNF answers are both
   required. These differ in restricted linear system, enumerated code,
@@ -140,12 +140,13 @@ was run.
   48-element subgroup, five enumerated pairs, and seeded generators are all
   scoped. No registered primitive selects them, and no physical interpretation
   is inferred.
-- **N4 — residual matching.** The only prior negative used as authority is
-  Cycle 741: it attacks the same canonical incidence/function identities at
-  every cardinality through fourteen, exactly the lower-bound residual consumed
-  here. Its primary and independent receipts are content-bound. Cycle 740's
-  forced-block theorem is context only and supplies no residual. No broader
-  no-go is cited.
+- **N4 — residual matching.** The only predecessor negative consumed as a
+  bounded premise is Cycle 741: it attacks the same canonical
+  incidence/function identities at every cardinality through fourteen, exactly
+  the lower-bound residual consumed here. It is not treated as retained audit
+  authority; its primary and independent receipts are freshly required and
+  content-bound. Cycle 740's forced-block theorem is context only and supplies
+  no residual. No broader no-go is cited.
 - **N5 — rhetoric audit.** Both canonical caches land substantive
   `per_element`, `per_site`, `per_mode`, `per_block`, and `lattice_wide` lines.
   The finite per-element and one-block claims are executed. Mode and

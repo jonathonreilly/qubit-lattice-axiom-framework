@@ -427,11 +427,11 @@ gate(generator_ok and len(base_permutations) == 48
 # opposite-pivot incidence above, keeps only counts (never the primary support arrays),
 # streams exact lexicographic block tables, and chooses the reverse tie order.
 SEARCH_START = time.time()
-PACKED_BASIS = np.packbits(incidence[pivot_rows], axis=1, bitorder="little")
+PACKED_BASIS = np.packbits(incidence[basis_rows], axis=1, bitorder="little")
 COLUMN_INTS = []
 for column in range(192):
     value = 0
-    for bit, row_index in enumerate(pivot_rows):
+    for bit, row_index in enumerate(basis_rows):
         value |= int(incidence[row_index, column]) << bit
     COLUMN_INTS.append(value)
 
@@ -445,9 +445,9 @@ def pack_basis_bits(bits):
     return answer
 
 
-COLUMN_SYNDROMES = pack_basis_bits(incidence[pivot_rows].T)
+COLUMN_SYNDROMES = pack_basis_bits(incidence[basis_rows].T)
 TARGET_SYNDROMES = {
-    name: pack_basis_bits(target[pivot_rows]) for name, target in targets.items()
+    name: pack_basis_bits(target[basis_rows]) for name, target in targets.items()
 }
 
 
@@ -655,7 +655,7 @@ def cells(weight):
 
 
 ROWSPACE = {}
-for basis_index, row_index in enumerate(pivot_rows):
+for basis_index, row_index in enumerate(basis_rows):
     value = row_bits[row_index]
     witness = 1 << basis_index
     while value:
@@ -692,7 +692,7 @@ FORCED_BLOCKS = {
 def forced_bit(name, target):
     witness = FORCED_BLOCKS[name]
     return sum(
-        ((witness >> bit) & 1) * int(target[pivot_rows[bit]])
+        ((witness >> bit) & 1) * int(target[basis_rows[bit]])
         for bit in range(88)
     ) & 1
 
@@ -890,7 +890,7 @@ search_names = tuple(ordered_names[2:8])
 known16 = list(range(16))
 planted16 = (incidence[:, known16].sum(axis=1) & 1).astype(np.uint8)
 targets["planted16"] = planted16
-TARGET_SYNDROMES["planted16"] = pack_basis_bits(planted16[pivot_rows])
+TARGET_SYNDROMES["planted16"] = pack_basis_bits(planted16[basis_rows])
 validation_counts, validation_inventory = exact_sweep(
     ("planted16",), TARGET_SYNDROMES, [(16, 0, 0, 0)]
 )
@@ -1067,7 +1067,7 @@ receipt = {
     "exact_weight_sixteen_answers": answers,
     "exact_syndrome_dp": {
         "anchor_column": anchor,
-        "basis_rows": len(pivot_rows),
+        "basis_rows": len(basis_rows),
         "licensed_cells": len(expected_cells),
         "expected_splits": len(expected_inventory),
         "executed_splits": len(inventory),

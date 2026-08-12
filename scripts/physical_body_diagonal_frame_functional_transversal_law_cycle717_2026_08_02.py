@@ -17,14 +17,15 @@ The derivation this script measures.  The four body diagonals of the cubic cell,
 
 each taken up to overall sign, carry an action of the 24 proper rotations.  That action
 is faithful and realises every permutation of the four.  The stabiliser of a single
-diagonal therefore has order six -- and the sextet of frames that fix the assembled
-static operator is exactly the stabiliser of d0.  Writing
+diagonal therefore has order six.  On the two measured boxes, the numerical sextet of
+frames that fixes the assembled static operator is the stabiliser of d0.  Writing
 
     delta(g) = the body diagonal that g carries onto d0,
 
-the fibres of delta are precisely the right cosets of the sextet, so the operator
-depends on the frame ONLY through delta.  This is a statement about an axis of the
-rotation group; the adjacency stencil is untouched and remains nearest-neighbour.
+the fibres of delta are precisely the right cosets of the sextet.  The numerical
+operator clusters depend on the frame only through delta on the measured boxes.  This
+is a statement about an axis of the rotation group; the adjacency stencil is untouched
+and remains nearest-neighbour.
 
 Two consequences follow, and both are checked here against direct measurement:
 
@@ -359,15 +360,15 @@ def run_census_layer(subs, cover, reg):
         for r in range(1, len(cs) + 1):
             for pick in itertools.combinations(cs, r):
                 fam_cover.add(frozenset().union(*pick))
-    fam_trans = set()
-    for H in [K for K in subs if transitive(K)]:
+    fam_reg = set()
+    for H in reg:
         cs = sorted(right_cosets(H), key=lambda c: sorted(c))
         for r in range(1, len(cs) + 1):
             for pick in itertools.combinations(cs, r):
-                fam_trans.add(frozenset().union(*pick))
-    check("g3_two_constructions_agree",
-          fam_cover == fam_trans and len(fam_cover) == 231,
-          "covering-built and transitive-built families coincide, {} members".format(
+                fam_reg.add(frozenset().union(*pick))
+    check("g3_covering_and_regular_constructions_agree",
+          fam_cover == fam_reg and len(fam_cover) == 231,
+          "all-covering and four-regular constructions coincide, {} members".format(
               len(fam_cover)))
 
     joins = {}
@@ -503,8 +504,9 @@ def run_transversal_layer(ctx, reg, srcs, TV):
                 wc = max(wc, s)
             else:
                 bc = s if bc is None else min(bc, s)
+        complement_ratio = bc / wc if wc > 0.0 else float("inf")
         check("g5_{}_{}_complement_law".format(tag, name),
-              wc < TOL_BLIND and bc is not None and bc / wc > SEP_MIN,
+              wc < TOL_BLIND and bc is not None and complement_ratio > SEP_MIN,
               "complements of the {} blind are blind at {}, the other {} spread at "
               "least {}".format(len(predicted), fmt(wc), len(TV) - len(predicted),
                                 fmt(bc)))
@@ -642,7 +644,7 @@ def main():
         "sextet": list(SEXTET_EXPECTED),
         "body_diagonals": [list(d) for d in DIAGONALS],
         "transversals": N_TRANSVERSALS,
-        "blind_transversals": BLIND_TRANSVERSALS,
+        "regular_coset_transversals": BLIND_TRANSVERSALS,
         "tolerance": {"blind": fmt(TOL_BLIND), "stabiliser": fmt(TOL_STAB),
                       "separation_min": fmt(SEP_MIN)},
         "gates": GATES,

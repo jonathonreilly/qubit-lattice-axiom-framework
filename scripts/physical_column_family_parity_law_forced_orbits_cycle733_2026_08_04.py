@@ -72,9 +72,11 @@ gate(
 )
 gate(
     C731_RECEIPT.get("claim_type") == "bounded_theorem"
-    and C731_RECEIPT.get("totals", {}).get("fail") == 0
-    and C731_RECEIPT.get("floor", {}).get("bound") == 108
-    and C731_RECEIPT.get("floor", {}).get("support_pieces") == 1792,
+    and C731_RECEIPT.get("status") == "pass"
+    and C731_RECEIPT.get("gates", {}).get("fail") == 0
+    and C731_RECEIPT.get("floor_indicator", {}).get("value")
+    == 108 * C731_RECEIPT.get("floor_indicator", {}).get("denominator", -1)
+    and C731_RECEIPT.get("floor_indicator", {}).get("support_pieces") == 1792,
     "dep.c731",
     "Cycle 731 binds the spatial floor 108 and its 1792-piece certificate support",
 )

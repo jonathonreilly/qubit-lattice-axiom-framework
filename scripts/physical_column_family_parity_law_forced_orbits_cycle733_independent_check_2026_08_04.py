@@ -398,7 +398,9 @@ floor_slack = -(membership @ floor_vector + LIT["FLOOR_Z"]
                 - LIT["FLOOR_D"] * SPATIAL)
 FLOOR_SUPPORT = {index for index, slack in enumerate(floor_slack) if int(slack) == 0}
 gate("Cycle 731 spatial-floor consumption", len(FLOOR_SUPPORT) == 1792
-     and C731_RECEIPT.get("floor", {}).get("support_pieces") == 1792
+     and C731_RECEIPT.get("status") == "pass"
+     and C731_RECEIPT.get("gates", {}).get("fail") == 0
+     and C731_RECEIPT.get("floor_indicator", {}).get("support_pieces") == 1792
      and all(sum(int(SPATIAL[index]) for index in solution) == 108
              and set(solution) <= FLOOR_SUPPORT for solution in SOLUTIONS),
      "all minimum full-cost dissections lie in the bound Cycle 731 support")

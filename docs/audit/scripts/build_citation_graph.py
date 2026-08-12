@@ -173,6 +173,12 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
     "physical_cell_cutting_full_symmetry_certified_cycle744_note_2026-08-05": [
         "scripts/physical_cell_cutting_full_symmetry_certified_cycle744_independent_check_2026_08_05.py",
     ],
+    # Cycle 746's opposite-pivot exact-cover and low-column GF(2) checker
+    # deliberately imports no primary symbols. Expose the sibling executable
+    # in this claim's restricted packet.
+    "physical_cell_cutting_carrier_parity_law_cycle746_note_2026-08-08": [
+        "scripts/physical_cell_cutting_carrier_parity_law_cycle746_independent_check_2026_08_08.py",
+    ],
     "inter_site_gate_cycle970_bounded_theorem_note_2026-08-09": [
         "scripts/frontier_cycle970_gate_independent_check_2026_08_09.py",
     ],

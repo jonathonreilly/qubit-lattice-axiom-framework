@@ -17,27 +17,99 @@ piece sets no cutting can see: a block is left free exactly when one of those se
 it in an odd number of pieces, and the size parity is what the odd number of cuttings
 per piece already forces.
 
-Those three parities sort the eighteen readings into exactly three classes, and all six
-charge readings land in the one class where the three are even: every carrier of a
-charge has even size and meets quarters two and three evenly. Each class then has its
-own count of licensed splits in closed form, measured here against the search's own
-licensing test and against a direct enumeration, together with what demanding a piece in
-the anchor quarter costs, and a rejector showing the count belongs to that parity pair
-and not to the other three.
+Those three parities sort the seventeen realizable supplied targets into exactly two
+classes, and all six charge readings land in the all-even class.  The eighteenth target
+is the deliberately inconsistent odd control from Cycle 745; it is retained only as a
+hostile non-column-space rejector and is not called a reading or carrier class.  The two
+realizable classes have exact licensed-split counts over the stated finite size ranges.
 
 Class-A: integer and field-with-two-elements arithmetic on a finite explicit object, no
 solver. Every count below is measured here.
 """
+import copy
+import hashlib
 import itertools
-import math
+import json
 import resource
+import sys
 import time
+from pathlib import Path
 
 import numpy as np
 
 T0 = time.time()
 PF = [0, 0]
+GATES = []
 OUT = [0]
+
+ROOT = Path(__file__).resolve().parents[1]
+PRIMARY_PATH = "scripts/physical_cell_cutting_carrier_parity_law_cycle746_2026_08_08.py"
+NOTE_PATH = "docs/PHYSICAL_CELL_CUTTING_CARRIER_PARITY_LAW_CYCLE746_NOTE_2026-08-08.md"
+CHECKER_PATH = (
+    "scripts/physical_cell_cutting_carrier_parity_law_cycle746_"
+    "independent_check_2026_08_08.py"
+)
+C745_NOTE_PATH = "docs/PHYSICAL_CELL_CUTTING_SIXTEEN_CENSUS_CYCLE745_NOTE_2026-08-05.md"
+C745_PRIMARY_PATH = "scripts/physical_cell_cutting_sixteen_census_cycle745_2026_08_05.py"
+C745_CHECKER_PATH = (
+    "scripts/physical_cell_cutting_sixteen_census_cycle745_"
+    "independent_check_2026_08_05.py"
+)
+C745_RECEIPT_PATH = (
+    "outputs/physical_cell_cutting_sixteen_census_cycle745_2026_08_05_"
+    "receipt_2026-08-05.json"
+)
+C745_INDEPENDENT_RECEIPT_PATH = (
+    "outputs/physical_cell_cutting_sixteen_census_cycle745_"
+    "independent_check_2026_08_05_receipt_2026-08-05.json"
+)
+RECEIPT_PATH = ROOT / (
+    "outputs/physical_cell_cutting_carrier_parity_law_cycle746_2026_08_08_"
+    "receipt_2026-08-08.json"
+)
+AUDIT_INPUT_PATHS = (
+    NOTE_PATH,
+    CHECKER_PATH,
+    C745_NOTE_PATH,
+    C745_PRIMARY_PATH,
+    C745_CHECKER_PATH,
+    C745_RECEIPT_PATH,
+    C745_INDEPENDENT_RECEIPT_PATH,
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "requirements.txt",
+    "requirements-release.txt",
+)
+
+
+def file_sha256(path):
+    return hashlib.sha256((ROOT / path).read_bytes()).hexdigest()
+
+
+def receipt_inputs_current(receipt):
+    recorded = receipt.get("input_sha256", {})
+    return bool(recorded) and all(
+        (ROOT / path).is_file() and recorded[path] == file_sha256(path)
+        for path in recorded
+    )
+
+
+def load_receipt(path):
+    with (ROOT / path).open(encoding="utf-8") as handle:
+        return json.load(handle)
+
+
+def fail_receipt(reason):
+    RECEIPT_PATH.write_text(json.dumps({
+        "schema": "physical-cell-cutting-carrier-parity-law-cycle746-v2",
+        "status": "fail",
+        "claim_type": "bounded_theorem",
+        "reason": reason,
+    }, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+
+
+fail_receipt("runner has not completed")
+C745_RECEIPT = load_receipt(C745_RECEIPT_PATH)
+C745_INDEPENDENT_RECEIPT = load_receipt(C745_INDEPENDENT_RECEIPT_PATH)
 
 
 def emit(s):
@@ -50,8 +122,10 @@ def emit(s):
 
 
 def gate(ok, name, detail):
-    PF[0 if ok else 1] += 1
-    emit(("PASS " if ok else "FAIL ") + name + "  " + detail)
+    passed = bool(ok)
+    PF[0 if passed else 1] += 1
+    GATES.append((name, passed))
+    emit(("PASS " if passed else "FAIL ") + name + "  " + detail)
 
 
 # ---------------------------------------------------------------- Part 1: machinery
@@ -208,6 +282,13 @@ for i, s in enumerate(SOL):
         v |= 1 << a
     BITS[i] = v
 INCL = INC.astype(np.int64)
+CTUP = [tuple(sorted(int(c) for c in UNI[USED[a]])) for a in range(NPO)]
+CANONICAL_INCIDENCE_ROWS_SHA256 = hashlib.sha256(
+    b"".join(sorted(bytes(row) for row in np.packbits(INC, axis=1)))
+).hexdigest()
+SUPPORT_COLUMN_ORDER_SHA256 = hashlib.sha256(
+    json.dumps(CTUP, separators=(",", ":")).encode("utf-8")
+).hexdigest()
 
 PK = np.packbits(INC, axis=1)
 LUT = np.array([bin(i).count("1") for i in range(256)], dtype=np.uint8)
@@ -216,8 +297,10 @@ SZG = [4]
 EA = dict((k, []) for k in SZC)
 EB = dict((k, []) for k in SZC)
 DIS = dict((k, set()) for k in SZG)
+PROCESSED_PAIR_ROWS = 0
 for lo in range(0, NS, 200):
-    hi = min(lo + 100, NS)
+    hi = min(lo + 200, NS)
+    PROCESSED_PAIR_ROWS += hi - lo
     d = LUT[np.bitwise_xor(PK[lo:hi, None, :], PK[None, :, :])].sum(axis=2, dtype=np.int16)
     for k in SZC:
         rr, cc = np.nonzero(d == 2 * k)
@@ -429,13 +512,56 @@ for pi, (pnm, prof) in enumerate(P16SPEC):
     TNAME.append(pnm)
     FVEC.append((INCL[:, Sp].sum(axis=1) & 1).astype(np.uint8))
 FODD = np.zeros(NS, dtype=np.uint8)
-FODD[0] = 1
+ODD_CONTROL_ROW_BYTES = min(bytes(row) for row in PK)
+ODD_CONTROL_ROW_INDEX = next(
+    index for index, row in enumerate(PK) if bytes(row) == ODD_CONTROL_ROW_BYTES
+)
+ODD_CONTROL_ROW_SHA256 = hashlib.sha256(ODD_CONTROL_ROW_BYTES).hexdigest()
+FODD[ODD_CONTROL_ROW_INDEX] = 1
 TNAME.append("odd-ctl")
 FVEC.append(FODD)
 NTG = len(FVEC)
 TCTL = NTG - 1
 FV = np.stack(FVEC)
 TG = pack88(FV[:, EPIV])
+
+
+def target_is_realizable(target):
+    """Exact consistency of INC*x=target by simultaneous GF(2) elimination."""
+    pivots = {}
+    for row, bit in zip(EROW, target):
+        vector, rhs = int(row), int(bit)
+        while vector:
+            pivot = vector.bit_length() - 1
+            if pivot not in pivots:
+                pivots[pivot] = (vector, rhs)
+                break
+            basis_vector, basis_rhs = pivots[pivot]
+            vector ^= basis_vector
+            rhs ^= basis_rhs
+        if vector == 0 and rhs:
+            return False
+    return True
+
+
+REALIZABLE = [target_is_realizable(FV[t]) for t in range(NTG)]
+REAL_IDS = [t for t in range(NTG) if REALIZABLE[t]]
+TARGET_FUNCTION_IDENTITY = {
+    name: {
+        "ones": int(FV[index].sum()),
+        "canonical_rows_with_bit_sha256": hashlib.sha256(b"".join(sorted(
+            bytes(row) + bytes((int(bit),))
+            for row, bit in zip(PK, FV[index])
+        ))).hexdigest(),
+        "realizable": bool(REALIZABLE[index]),
+    }
+    for index, name in enumerate(TNAME)
+}
+FIXED_CONTROL_SUPPORTS = {name: [int(value) for value in support]
+                          for name, support in PLANT}
+PLANTED_SPECS = {name: [int(value) for value in profile] for name, profile in P16SPEC}
+PLANTED_SUPPORTS = {TNAME[index]: [int(value) for value in PSET[index]]
+                    for index in sorted(PSET)}
 
 # ---- the parities a search of the pieces is forced to respect on each block ----
 LBAS = {}
@@ -481,6 +607,73 @@ for q in range(4):
 for e in range(8):
     BLK["E{0}".format(e)] = range(24 * e, 24 * e + 24)
 FORCED = dict((nm, reduce_u(uint_of(b))) for nm, b in BLK.items())
+
+
+def cycle745_contract(primary, independent):
+    """Bind the exact 18-target predecessor population and hostile control."""
+    identity = primary.get("target_identity", {})
+    independent_identity = independent.get("target_identity", {})
+
+    def identity_matches(candidate):
+        targets = candidate.get("targets", {})
+        metadata_ok = (
+            candidate.get("canonical_incidence_rows_sha256")
+            == CANONICAL_INCIDENCE_ROWS_SHA256
+            and candidate.get("support_column_order_sha256")
+            == SUPPORT_COLUMN_ORDER_SHA256
+            and candidate.get("ordered_names") == TNAME
+            and candidate.get("fixed_control_supports") == FIXED_CONTROL_SUPPORTS
+            and candidate.get("pseed") == PSEED
+            and candidate.get("planted_specs") == PLANTED_SPECS
+            and candidate.get("planted_supports") == PLANTED_SUPPORTS
+            and candidate.get("odd_control_non_column_space") is True
+            and candidate.get("odd_control_row_sha256") == ODD_CONTROL_ROW_SHA256
+        )
+        functions_ok = all(
+            name in targets
+            and targets[name].get("ones") == local["ones"]
+            and targets[name].get("canonical_rows_with_bit_sha256")
+            == local["canonical_rows_with_bit_sha256"]
+            and targets[name].get("realizable") == local["realizable"]
+            for name, local in TARGET_FUNCTION_IDENTITY.items()
+        )
+        witness_ok = True
+        for index, name in enumerate(TNAME):
+            support = targets.get(name, {}).get("witness_support")
+            if REALIZABLE[index]:
+                witness_ok = witness_ok and isinstance(support, list)
+                if isinstance(support, list):
+                    witness_ok = witness_ok and all(
+                        isinstance(value, int) and 0 <= value < NPO for value in support
+                    )
+                    witness_ok = witness_ok and len(set(support)) == len(support)
+                    witness_ok = witness_ok and np.array_equal(
+                        (INCL[:, support].sum(axis=1) & 1).astype(np.uint8), FV[index]
+                    )
+            else:
+                witness_ok = witness_ok and support is None
+        return metadata_ok and functions_ok and witness_ok
+
+    return (
+        primary.get("schema") == "physical-cell-cutting-sixteen-census-cycle745-v2"
+        and primary.get("status") == "pass"
+        and primary.get("gates", {}).get("fail") == 0
+        and primary.get("runner_sha256") == file_sha256(C745_PRIMARY_PATH)
+        and receipt_inputs_current(primary)
+        and independent.get("schema")
+        == "physical-cell-cutting-sixteen-census-cycle745-independent-v1"
+        and independent.get("status") == "pass"
+        and independent.get("gates", {}).get("fail") == 0
+        and (independent.get("checker_sha256") or independent.get("runner_sha256"))
+        == file_sha256(C745_CHECKER_PATH)
+        and receipt_inputs_current(independent)
+        and identity_matches(identity)
+        and identity_matches(independent_identity)
+    )
+
+
+C745_OK = cycle745_contract(C745_RECEIPT, C745_INDEPENDENT_RECEIPT)
+
 # ---- which cells a reading licenses, and the sweep over them ----
 def licensed_cell(cell, m, tid):
     q0, q1, q2, q3 = cell
@@ -521,16 +714,22 @@ def upto(v, step):
 RW = INC.sum(axis=1)
 CU = INC.sum(axis=0)
 emit("cuttings {0}  pieces {1}  pieces per cutting {2}  cuttings per piece {3}  "
-     "pivot rank {4}  readings {5}".format(
-         NS, NPO, int(RW.min()), int(CU.min()), ERANK, NTG))
+     "pivot rank {4}  realizable targets {5}  hostile controls {6}".format(
+         NS, NPO, int(RW.min()), int(CU.min()), ERANK, len(REAL_IDS), NTG - len(REAL_IDS)))
 gate(NS == 15800 and NPO == 192 and int(RW.min()) == int(RW.max()) == 24, "G1",
      "the cut object carries {0} cuttings, each using {1} of its {2} pieces".format(
          15800, 24, 192))
 gate(int(CU.min()) == int(CU.max()) == 1975 and int(CU.min()) & 1 == 1, "G2",
      "every piece is used by the same odd number of cuttings, {0}".format(1975))
-gate(ERANK == 88 and NTG == 18 and len(SIX) == 6, "G3",
-     "the incidence has pivot rank {0} and carries {1} readings, six of them "
-     "charges".format(88, 18))
+gate(ERANK == 88 and NTG == 18 and len(REAL_IDS) == 17 and len(SIX) == 6,
+     "G3", "the incidence has pivot rank 88; 17 targets are realizable, six of "
+     "them named charge readings, and one is a hostile inconsistent control")
+gate(PROCESSED_PAIR_ROWS == NS, "inventory.pair_rows",
+     "the move scan processes all 15800 possible first endpoints")
+gate(C745_OK, "dependency.cycle745",
+     "the exact Cycle 745 target identities, supports, seed, and control status are bound")
+gate(REAL_IDS == list(range(17)) and not REALIZABLE[TCTL], "target.consistency",
+     "targets zero through sixteen lie in the incidence column space; odd-ctl does not")
 
 # ---- which blocks a reading fixes the parity of ----
 NAMES = ("total", "L", "R", "Q0", "Q1", "Q2", "Q3")
@@ -544,16 +743,17 @@ def par(nm, t):
     return None if f is None else (f >> t) & 1
 
 
-DET = [nm for nm in NAMES if all(par(nm, t) is not None for t in range(NTG))]
-FRE = [nm for nm in NAMES if all(par(nm, t) is None for t in range(NTG))]
-emit("fixed by every reading: " + ", ".join(SHOW[nm] for nm in DET))
-emit("left free by every reading: " + ", ".join(SHOW[nm] for nm in FRE))
+DET = [nm for nm in NAMES if all(par(nm, t) is not None for t in REAL_IDS)]
+FRE = [nm for nm in NAMES if all(par(nm, t) is None for t in REAL_IDS)]
+emit("fixed for every realizable target: " + ", ".join(SHOW[nm] for nm in DET))
+emit("left free for every realizable target: " + ", ".join(SHOW[nm] for nm in FRE))
 gate(sorted(DET + FRE) == sorted(NAMES)
      and set(DET) == set(("total", "L", "R", "Q2", "Q3")), "G4",
-     "each block is fixed by every reading or by none, and the fixed ones are the size, "
+     "each block is fixed for every realizable target or free for all, and the fixed "
+     "ones are the size, "
      "both halves, and quarters two and three")
 gate(all(par("R", t) == (par("Q2", t) ^ par("Q3", t))
-         and par("L", t) == (par("total", t) ^ par("R", t)) for t in range(NTG)), "G5",
+         and par("L", t) == (par("total", t) ^ par("R", t)) for t in REAL_IDS), "G5",
      "each half parity is the sum of the parities it covers, so licensing a reading is "
      "exactly three conditions: the size, quarter two, and quarter three")
 
@@ -612,7 +812,7 @@ gate(FREEK == set(FRE), "G7",
      "a block is left free exactly when one of those invisible sets meets it in an odd "
      "number of pieces, which happens for quarter zero and quarter one and no other")
 WPAR = [int(np.count_nonzero(np.asarray(FVEC[t]))) & 1 for t in range(NTG)]
-gate(all(par("total", t) == WPAR[t] for t in range(NTG)), "G8",
+gate(all(par("total", t) == WPAR[t] for t in REAL_IDS), "G8",
      "and the size parity a reading fixes is the parity of how many cuttings the reading "
      "marks, which is what an odd number of cuttings per piece already forces")
 
@@ -628,23 +828,24 @@ def label(tr):
 
 
 CLS = {}
-for t in range(NTG):
+for t in REAL_IDS:
     CLS.setdefault(triple(t), []).append(t)
 for tr in sorted(CLS):
     emit("  {0}: {1} readings, {2} of them charges".format(
         label(tr), len(CLS[tr]), sum(1 for t in CLS[tr] if t in SIX)))
-gate(len(CLS) == 3, "G9",
-     "the {0} readings fall into exactly three classes by that triple".format(18))
+gate(len(CLS) == 2 and sorted(len(members) for members in CLS.values()) == [2, 15],
+     "G9", "the 17 realizable targets fall into exactly two classes of sizes 2 and 15")
 gate(all(triple(t) == (0, 0, 0) for t in SIX), "G10",
      "every charge reading sits in the all-even class, so every carrier of a charge has "
      "even size and meets quarters two and three evenly")
 ODD = [tr for tr in CLS if tr[0] == 1]
-gate(len(ODD) == 1 and not [t for t in CLS[ODD[0]] if t in SIX], "G11",
-     "exactly one class demands an odd size, and it holds no charge reading")
+gate(not ODD and triple(TCTL) == (1, 1, 1) and not REALIZABLE[TCTL], "G11",
+     "no realizable class demands odd size; the apparent third class is only odd-ctl, "
+     "which exact elimination rejects as inconsistent")
 NPR, DIS = 0, 0
 for m in range(1, 21):
     for c in cells_of(m):
-        for t in range(NTG):
+        for t in REAL_IDS:
             NPR += 1
             if licensed_cell(c, m, t) != ((m & 1) == par("total", t)
                                           and (c[2] & 1) == par("Q2", t)
@@ -652,18 +853,13 @@ for m in range(1, 21):
                 DIS += 1
 gate(DIS == 0, "G12",
      "the search's own licensing test agrees with those three parities on all {0} pairs "
-     "of a split and a reading up to size twenty".format(NPR))
+     "of a split and a realizable target up to size twenty".format(NPR))
 
 
 # ---- what each class leaves the search to cover ----
 def pyr(n):
     """the sum of the first n squares"""
     return n * (n + 1) * (2 * n + 1) // 6
-
-
-def tet(n):
-    """the sum of the first n triangular numbers"""
-    return n * (n + 1) * (n + 2) // 6
 
 
 def direct(m, a, b, anchored):
@@ -724,17 +920,13 @@ gate(L2 == [pyr(m // 2) for m in EV], "G18",
 gate(A2 == L2, "G19",
      "and every split it licenses already holds a piece in the anchor quarter, so there "
      "the anchor is free")
-THR = CLS[ODD[0]][0]
-L3 = [lic_count(m, THR) for m in OD]
-emit("odd-size class, splits licensed at sizes one to nineteen: "
-     + ",".join(str(x) for x in L3))
-gate(L3 == [2 * tet(m // 2) for m in OD], "G20",
-     "the reading that demands an odd size licenses, at size two k plus one, twice the "
-     "sum of the first k triangular numbers")
-gate(all(lic_count(m, THR) == 0 for m in EV)
-     and all(lic_count(m, TCH) == 0 for m in OD), "G21",
-     "that reading licenses nothing at any even size, and no charge licenses anything at "
-     "any odd size")
+gate(not target_is_realizable(FODD), "G20",
+     "the planted one-hot odd control is rejected by an exact zero-row/nonzero-RHS "
+     "dependency and is not promoted to a carrier class")
+gate(all(par("total", t) == 0 for t in REAL_IDS)
+     and all(lic_count(m, t) == 0 for m in OD for t in REAL_IDS), "G21",
+     "every realizable supplied target has even forced size and licenses no odd-size "
+     "split through nineteen")
 NMATCH = 0
 for _a, _b in ((0, 0), (0, 1), (1, 0), (1, 1)):
     ROW = [direct(m, _a, _b, False) for m in EV[:8]]
@@ -747,13 +939,119 @@ gate(NMATCH == 1, "G22",
      "of the four parity pairs only the even one reproduces the charge count, so this "
      "test rejects a wrong parity instead of holding whatever the parities are")
 
+SKIPPED_PAIR_ROWS = sum(min(lo + 100, NS) - lo for lo in range(0, NS, 200))
+gate(SKIPPED_PAIR_ROWS == NS // 2 and SKIPPED_PAIR_ROWS != PROCESSED_PAIR_ROWS,
+     "hostile.pair_inventory",
+     "the submitted half-width chunk loop is detected as 7900 rather than 15800 rows")
+bad_dependency = copy.deepcopy(C745_RECEIPT)
+bad_dependency["status"] = "fail"
+gate(not cycle745_contract(bad_dependency, C745_INDEPENDENT_RECEIPT),
+     "hostile.dependency", "a failing predecessor receipt is rejected")
+bad_identity = copy.deepcopy(C745_RECEIPT)
+bad_identity["target_identity"]["targets"]["four"][
+    "canonical_rows_with_bit_sha256"
+] = "0" * 64
+gate(not cycle745_contract(bad_identity, C745_INDEPENDENT_RECEIPT),
+     "hostile.target_identity", "a changed target function identity is rejected")
+mutated_odd = FODD.copy()
+mutated_odd[ODD_CONTROL_ROW_INDEX] = 0
+gate(target_is_realizable(mutated_odd) and not target_is_realizable(FODD),
+     "hostile.consistency", "the exact consistency test distinguishes zero from one-hot")
+
 EL = time.time() - T0
 RSS = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1048576.0
 ELB, RSB = upto(EL, 20), 2500
 emit("elapsed under {0} s peak memory under {1} MB".format(ELB, RSB))
 gate(EL < 900.0 and RSS < float(RSB), "G23",
      "it finishes inside its time and memory budget")
-CH = OUT[0] + 120
-gate(CH < 5500, "G24", "its output stays under {0} characters".format(5500))
+CH = OUT[0] + 1400
+gate(CH < 6500, "G24", "its output stays under {0} characters".format(6500))
 emit("")
-print("TOTAL: PASS={0} FAIL={1}".format(PF[0], PF[1]))
+print("per_element: checked -- all 192 support columns enter the incidence, kernel, "
+      "block, and consistency calculations", flush=True)
+print("per_site: checked and not executed -- one supplied coordinate four-cube only; "
+      "no framework cell or site is identified", flush=True)
+print("per_mode: checked and not executed -- these finite binary targets have no field "
+      "or momentum-mode decomposition", flush=True)
+print("per_block: checked -- total, two halves, four quarters, all 17 realizable "
+      "targets, and the inconsistent control", flush=True)
+print("lattice_wide: checked and not executed -- no multi-cell, arbitrary-domain, "
+      "boundary, thermodynamic, or continuum statement", flush=True)
+
+receipt = {
+    "schema": "physical-cell-cutting-carrier-parity-law-cycle746-v2",
+    "status": "pass" if PF[1] == 0 else "fail",
+    "claim_type": "bounded_theorem",
+    "audit_status_authority": "independent audit lane only",
+    "runner_sha256": file_sha256(PRIMARY_PATH),
+    "input_sha256": {path: file_sha256(path) for path in AUDIT_INPUT_PATHS},
+    "direct_dependency": {
+        "cycle": 745,
+        "schema": C745_RECEIPT.get("schema"),
+        "target_identity": C745_RECEIPT.get("target_identity"),
+    },
+    "supplied_incidence": {
+        "cuttings": NS,
+        "support_columns": NPO,
+        "rank": ERANK,
+        "kernel_dimension": len(KER),
+        "canonical_incidence_rows_sha256": CANONICAL_INCIDENCE_ROWS_SHA256,
+        "support_column_order_sha256": SUPPORT_COLUMN_ORDER_SHA256,
+        "processed_pair_rows": PROCESSED_PAIR_ROWS,
+    },
+    "target_population": {
+        "ordered_names": TNAME,
+        "functions": TARGET_FUNCTION_IDENTITY,
+        "realizable_target_indices": REAL_IDS,
+        "realizable_targets": len(REAL_IDS),
+        "inconsistent_controls": [TNAME[TCTL]],
+        "named_charge_indices": SIX,
+    },
+    "forced_block_parity": {
+        "fixed_blocks": DET,
+        "free_blocks": FRE,
+        "independent_coordinates": ["total", "Q2", "Q3"],
+        "realizable_classes": {
+            "000": [TNAME[t] for t in CLS[(0, 0, 0)]],
+            "011": [TNAME[t] for t in CLS[(0, 1, 1)]],
+        },
+        "odd_control_triple": list(triple(TCTL)),
+        "odd_control_is_realizable": bool(REALIZABLE[TCTL]),
+    },
+    "licensed_split_counts": {
+        "measured_even_sizes": EV,
+        "all_even_class": LIC,
+        "all_even_class_anchored_q3": ANC,
+        "all_even_class_missing_q3": GAP,
+        "odd_quarters_class": L2,
+        "odd_quarters_class_anchored_q3": A2,
+        "split_target_pairs_checked": NPR,
+    },
+    "no_go_discipline": {
+        "status": "PASS",
+        "claim_scope": (
+            "necessary block-parity licensing and finite split-count identities for "
+            "17 exact realizable targets in one supplied incidence table; no carrier "
+            "existence or sufficiency claim"
+        ),
+        "n5_execution_certificate": [
+            "per_element checked",
+            "per_site checked and not executed",
+            "per_mode checked and not executed",
+            "per_block checked",
+            "lattice_wide checked and not executed",
+        ],
+    },
+    "gates": {
+        "pass": PF[0],
+        "fail": PF[1],
+        "named": {name: "PASS" if ok else "FAIL" for name, ok in GATES},
+    },
+}
+tmp_receipt = RECEIPT_PATH.with_suffix(RECEIPT_PATH.suffix + ".tmp")
+tmp_receipt.write_text(json.dumps(receipt, indent=2, sort_keys=True) + "\n",
+                       encoding="utf-8")
+tmp_receipt.replace(RECEIPT_PATH)
+print("RECEIPT " + str(RECEIPT_PATH.relative_to(ROOT)), flush=True)
+print("TOTAL: PASS={0} FAIL={1}".format(PF[0], PF[1]), flush=True)
+sys.exit(0 if PF[1] == 0 else 1)

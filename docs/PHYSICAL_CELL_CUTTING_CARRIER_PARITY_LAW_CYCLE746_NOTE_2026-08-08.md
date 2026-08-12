@@ -1,4 +1,4 @@
-# The parity law that decides which splits can carry a charge — Cycle 746
+# Block-parity licensing for seventeen supplied targets — Cycle 746
 
 Date: 2026-08-08
 
@@ -6,141 +6,234 @@ Authority: none
 
 Audit: unset.
 
-Status: computational identities of the finite cutting system
+Status: bounded theorem for one exact finite incidence table
 
-Claim type: computational identities
+Claim type: bounded theorem
 
 Runner:
 
-- [paired rebuild-and-gate runner](../scripts/physical_cell_cutting_carrier_parity_law_cycle746_2026_08_08.py)
+- [primary rebuild and parity derivation](../scripts/physical_cell_cutting_carrier_parity_law_cycle746_2026_08_08.py)
+- [independent opposite-pivot checker](../scripts/physical_cell_cutting_carrier_parity_law_cycle746_independent_check_2026_08_08.py)
 
-Scope: computational identities of the finite cutting system. Every number
-below is machine-checked by the paired runner, which rebuilds the cell
-complex, the cuttings, the readings and the block bookkeeping from scratch and
-gates each quantity in place. Constitutional effect: none. This package
-changes no axiom, no framework Admissibility rule, no primitive, no policy,
-and no audit status, and it adds no import and no assumption to
-[MINIMAL_AXIOMS_2026-06-29.md](MINIMAL_AXIOMS_2026-06-29.md).
+Direct dependency:
 
-## Headline
+- [Cycle 745 exact target population and identities](PHYSICAL_CELL_CUTTING_SIXTEEN_CENSUS_CYCLE745_NOTE_2026-08-05.md)
 
-Carrying a charge is exactly three parity conditions. The 192 pieces of the
-cut object sit in two halves and four quarters, and for each of the 18
-readings the runner reads off the incidence which of those blocks the reading
-fixes the parity of. The answer is the same five blocks for every reading: the
-size, both halves, and quarters two and three. Quarters zero and one are never
-fixed, and each half parity is the sum of the two quarter parities it covers,
-so the five collapse to three. Those three sort the 18 readings into exactly
-three classes, and all six charge readings land in the single class where the
-three are even: every carrier of a charge has even size and meets quarters two
-and three in an even number of pieces. Each class then has its own count of
-licensed splits in closed form, and demanding a piece in the anchor quarter
-costs exactly one size step.
+Constitutional effect: none. This package changes no axiom, framework
+Admissibility rule, primitive, policy, or audit status. It adds no import or
+assumption to [Minimal Axioms](MINIMAL_AXIOMS_2026-06-29.md).
 
-## The rebuilt system
+## Corrected bounded result
 
-The runner rebuilds the incidence table of the cutting system from scratch:
-15800 distinct cuttings on 192 pieces, each cutting using 24 pieces, each
-piece used in exactly 1975 cuttings. The incidence has pivot rank 88 and
-carries 18 readings, six of them charges. A set of pieces carries a reading
-when, on every cutting, the parity of how many of its pieces that cutting uses
-reproduces the reading.
+In the exact supplied 15,800-by-192 binary incidence table, consider the
+seventeen Cycle 745 targets that lie in the incidence column space. For each
+target, every carrier support has fixed parity on the total support, the two
+96-column halves, and quarters Q2 and Q3. Parities on Q0 and Q1 are free.
+Because each half is a union of two quarters, three forced parities suffice:
 
-## Which blocks a reading can fix
+\[
+(|S|,\ |S\cap Q_2|,\ |S\cap Q_3|)\pmod 2.
+\]
 
-For a named block of pieces and a reading, either every carrier of that
-reading meets the block in a fixed parity, or both parities occur. The runner
-measures this for the size, both halves and all four quarters. Every block is
-fixed by every reading or by none of them: the size, both halves and quarters
-two and three are fixed by all 18, and quarters zero and one by none. The two
-half parities are not independent of the quarters, since each half parity is
-the sum of the parities it covers, so licensing a reading is exactly three
-conditions on a split: the size, quarter two, and quarter three.
+The seventeen realizable targets occupy exactly two triples:
 
-Two of those five determinations are then checked a second, independent way.
+- `(0,0,0)`: fifteen targets, including all six named nonconstant charge
+  readings;
+- `(0,1,1)`: two planted controls.
 
-The first uses the piece sets no cutting can see. Row reduction over the field
-with two elements on the 88 pivot cuttings yields 104 independent such sets,
-built from the pivot rows alone and then each checked invisible directly
-against the full incidence, so the check has to survive the 15800 cuttings and
-not just the 88 it was built from. The ones the runner builds range in size
-from 8 to 20 pieces. A block is left free exactly when one of those invisible
-sets meets it in an odd number of pieces, and that happens for quarter zero
-and quarter one and for no other block. So the free blocks are not read off
-the bookkeeping twice; they are what invisibility forces.
+Therefore every carrier of any of the six named charge readings has even
+size and meets Q2 and Q3 evenly. This is a necessary licensing condition, not
+a carrier-existence or sufficiency theorem.
 
-The second recovers the size parity. The parity a reading fixes on the size is
-the parity of how many cuttings the reading marks, which is what an odd number
-of cuttings per piece already forces. That odd number is the measured 1975.
+The submitted note incorrectly reported three realizable classes. Its third
+triple `(1,1,1)` was produced solely by `odd-ctl`, the deliberately planted
+one-hot inconsistent target from Cycle 745. Exact augmented GF(2) elimination
+proves that `odd-ctl` is not in the incidence column space. It remains in this
+package only as a hostile rejector and is not called a reading or carrier
+class.
 
-## The three classes
+The repaired control puts its single bit on the lexicographically least
+packed incidence row and binds that row's hash. The submitted `row 0` form was
+traversal-order-dependent and would name a different cutting under the
+checker’s opposite exact-cover pivot.
 
-Sorting the 18 readings by the triple of fixed parities on the size, quarter
-two and quarter three gives exactly three classes:
+## Exact finite object and provenance
 
-- even size, quarter two even, quarter three even: 15 readings, all six
-  charges among them
-- even size, quarter two odd, quarter three odd: 2 readings, no charges
-- odd size, quarter two odd, quarter three odd: 1 reading, no charges
+Both executables rebuild the exact-cover population: 15,800 distinct cutting
+rows on 192 used support columns, with row weight 24, column weight 1,975,
+and GF(2) rank 88. They bind Cycle 745's current primary and independent
+receipts, exact source/input closure, canonical row-order-independent
+incidence identity, support-column order, ordered 18-target population,
+per-target function identities and column-space status, four fixed-control
+supports, seeded five-control specification and supports, and the explicit
+non-column-space status of `odd-ctl`.
 
-Exactly one class demands an odd size, and it holds no charge reading. Against
-the search's own licensing test the three-parity rule agrees on all 191250
-pairs of a split and a reading up to size twenty, with no disagreement.
+The primary exact-cover traversal chooses the least uncovered sample; the
+checker chooses the greatest. Target identity is compared by canonical hashes
+of incidence-row bytes paired with target bits, so differing row traversal
+orders do not weaken the binding.
 
-## What each class costs the search
+The submitted move scan repeated an earlier chunking defect: it advanced by
+200 rows but processed only 100, covering 7,900 of 15,800 possible first
+endpoints. The repaired scan covers all 15,800. The complete inventory leaves
+the reconstructed target functions and final parity numbers unchanged. A
+hostile inventory gate preserves the skipped loop as a rejected control.
 
-A split of a size across the four quarters is a unit of the anchored search's
-budget. For a charge reading, at size two k the licensed splits number the sum
-of the first k plus one squares, measured 5, 14, 30, 55, 91, 140, 204, 285,
-385, 506 at sizes two through twenty; of those, the ones holding a piece in
-the anchor quarter number the sum of the first k squares, measured 1, 5, 14,
-30, 55, 91, 140, 204, 285, 385. Both agree with a direct enumeration that
-never consults the incidence.
+## Linear-algebra derivation
 
-The anchored count at one size therefore equals the licensed count one size
-below, so drawing every subset through the anchor costs exactly one size step
-of the split budget. The splits a charge licenses that miss the anchor quarter
-number k plus one, squared: 4, 9, 16, 25, 36, 49, 64, 81, 100, 121.
+Write the incidence matrix as
 
-The class whose two fixed quarters are both odd licenses the sum of the first
-k squares, one size step below a charge, measured 1, 5, 14, 30, 55, 91, 140,
-204, 285, 385 at the same sizes; there every licensed split already holds a
-piece in the anchor quarter, so anchoring is free. The reading that demands an
-odd size licenses, at size two k plus one, twice the sum of the first k
-triangular numbers, measured 0, 2, 8, 20, 40, 70, 112, 168, 240, 330 at sizes
-one through nineteen. That reading licenses nothing at any even size, and no
-charge licenses anything at any odd size.
+\[
+I\in\mathbb F_2^{15800\times192}.
+\]
 
-## The counts belong to the parities
+A support vector `x` carries target `f` exactly when `Ix=f`. A block indicator
+`u` has target-forced parity precisely when `u` lies in the row space of I:
+if `u=y^T I`, then every solution obeys
 
-A closed form measured against the machinery that produced it can hold by
-construction, so the runner also builds the count for each of the four parity
-pairs on quarters two and three and asks which reproduces the charge count.
-Only one does: 5, 14, 30, 55, 91, 140, 204, 285 for the even pair against 2,
-8, 20, 40, 70, 112, 168, 240 for each mixed pair and 1, 5, 14, 30, 55, 91,
-140, 204 for the odd pair. The test rejects a wrong parity instead of holding
-whatever the parities are.
+\[
+u\cdot x=y\cdot f.
+\]
+
+If `u` is outside the row space, a kernel vector `k` exists with `Ik=0` and
+`u·k=1`; whenever one carrier exists, `x` and `x+k` realize both block
+parities. Thus “free” is proved only for realizable targets. This is why the
+inconsistent odd control cannot legitimately form another carrier class.
+
+Exact elimination gives row rank 88 and kernel dimension 104. The primary
+constructs a 104-vector kernel basis and checks every vector against all
+15,800 rows, not only against pivot rows. Its basis vectors have weights 8
+through 20; that interval describes this basis only and is not a minimum
+kernel-weight theorem.
+
+Among the seven declared block indicators, the row-space members are
+`total`, `L`, `R`, `Q2`, and `Q3`; Q0 and Q1 are outside. The independently
+constructed kernel basis meets Q0 and Q1 oddly but meets every fixed block
+evenly. The identities
+
+\[
+R=Q_2+Q_3,\qquad L=\mathrm{total}+R
+\]
+
+then reduce the five fixed parities to the three stated coordinates. Because
+every column occurs in the odd number 1,975 of rows, the total-support parity
+also equals the parity of the target's Hamming weight.
+
+## Finite licensed-split counts
+
+A split is a quadruple `(q0,q1,q2,q3)` of nonnegative integers summing to
+the candidate support size, with each entry at most 48. These counts enumerate
+split profiles satisfying the necessary parities. They do not count carriers.
+
+For even sizes 2 through 20, the all-even class licenses
+
+`5,14,30,55,91,140,204,285,385,506`
+
+profiles. Requiring `q3≥1` leaves
+
+`1,5,14,30,55,91,140,204,285,385`.
+
+On this measured range, for size `2k` these are respectively
+
+\[
+\sum_{j=1}^{k+1}j^2,
+\qquad
+\sum_{j=1}^{k}j^2.
+\]
+
+Their difference is `(k+1)^2`. Thus the anchored profile count at one listed
+size equals the unanchored count at the preceding listed size. This is a
+profile-count identity; “one size step” is not a wall-clock or solver-cost
+claim.
+
+The `(0,1,1)` class licenses
+
+`1,5,14,30,55,91,140,204,285,385`
+
+profiles at the same sizes, all already having `q3≥1`. Direct enumeration of
+all four Q2/Q3 parity pairs independently reproduces the two formulas and
+shows that only `(0,0)` gives the all-even sequence. Across sizes 1 through
+20, the three-parity predicate agrees with the runner's block-licensing test
+on every one of the 180,625 pairs of a split and a realizable target.
+
+## No-Go Discipline: N1–N8
+
+The claim excludes other fixed/free blocks and excludes an apparent third
+realizable class, so the finite negative statements receive the complete
+stress record.
+
+### N1 — alternative routes
+
+The fixed/free classification is derived three ways: direct row-space
+reduction, orthogonality to a full kernel basis, and an independent
+opposite-pivot reconstruction. Total parity is also derived from odd column
+weight. Split counts are checked by both the licensing predicate and a direct
+four-variable enumeration.
+
+### N2 — wall independence
+
+Block classification depends only on exact row space and kernel. Target-class
+membership depends on exact augmented consistency and forced RHS parities.
+The combinatorial count formulas use only the resulting parity triples. No
+carrier-search nonexistence or Cycle 745 census count is used to prove the
+parity law.
+
+### N3 — hidden-wall scan
+
+The crucial hidden wall was realizability. Treating all supplied vectors as
+readings made the inconsistent `odd-ctl` look like a third class. The repaired
+runner checks `Ix=f` consistency for every target before classifying it. It
+also distinguishes free block parity from existence of a carrier at any
+specified size.
+
+### N4 — residual matching
+
+For a realizable target and a block outside the row space, the kernel
+orthogonality argument constructs the residual parity flip abstractly. For a
+block inside the row space, the exact row combination fixes its parity. These
+two cases exhaust all seven block indicators. The inconsistent odd control is
+separately rejected and has no carrier residual.
+
+### N5 — resolution execution
+
+- `per_element`: checked for all 192 support columns.
+- `per_site`: checked and not executed; no framework site is identified.
+- `per_mode`: checked and not executed; no field or momentum modes occur.
+- `per_block`: checked for all seven block indicators and all supplied targets.
+- `lattice_wide`: checked and not executed; no multi-cell or continuum claim.
+
+### N6 — rhetoric audit
+
+“Licenses” means satisfies necessary block-parity conditions. It does not mean
+that a carrier exists. “Charge” is only the inherited name of six exact
+binary targets; no physical charge interpretation is asserted. Closed forms
+are reported only on the explicitly checked finite ranges.
+
+### N7 — steelman
+
+The strongest competing explanation is that Q0 or Q1 is actually fixed for a
+particular target despite being free generically. For every realizable target,
+adding the explicitly checked kernel vector that pairs oddly with the block
+preserves `Ix=f` and flips that block parity. Conversely, no such vector can
+flip a row-space block. This proves target-by-target freedom and fixation.
+
+### N8 — cross-cycle echo
+
+Cycle 745 supplies the exact target population and uses `odd-ctl` as a
+control. This package preserves that role rather than promoting the control
+to science. Cycles 742–744 are context only here: no automorphism-completeness,
+hidden-geometry, or carrier-census result is imported into the parity proof.
 
 ## Boundary and honest read
 
-- Every statement here is about the finite cutting system. No physical reading
-  of the parity classes or of the class counts is claimed.
-- The parity law says which splits a carrier of a reading could occupy. It
-  does not say a carrier of any given size exists; a licensed split can be
-  empty of carriers, and at the sizes searched in earlier cycles many are.
-  Licensing bounds the search's work, not the answer.
-- The 104 invisible piece sets are one basis of the sets no cutting can see,
-  chosen by the row reduction; the free-block conclusion does not depend on
-  the choice, since a block met evenly by every member of a basis is met
-  evenly by every combination.
-- The sizes 8 to 20 quoted for those sets describe the basis the runner
-  builds, not a bound on how small an invisible set can be.
-- The class counts are measured through size twenty and stated as closed forms
-  in the size; sizes beyond twenty are not measured here.
-- Earlier-cycle artifacts are named in backticks because their packages are in
-  flight, and nothing here links to them:
-  `PHYSICAL_CELL_CUTTING_SIZE_TEN_FRONTIER_CYCLE738_NOTE_2026-08-05.md`,
-  `PHYSICAL_CELL_CUTTING_SIXTEEN_ATTAINED_CYCLE742_NOTE_2026-08-05.md`,
-  `PHYSICAL_CELL_CUTTING_HIDDEN_THREE_BIT_GEOMETRY_CYCLE743_NOTE_2026-08-05.md`,
-  `PHYSICAL_CELL_CUTTING_FULL_SYMMETRY_CERTIFIED_CYCLE744_NOTE_2026-08-05.md`,
-  `PHYSICAL_CELL_CUTTING_SIXTEEN_CENSUS_CYCLE745_NOTE_2026-08-05.md`.
+- Exact: one supplied 15,800-by-192 binary incidence table, the declared
+  support-column ordering, seventeen exact realizable targets, and one
+  inconsistent hostile control.
+- Exact: necessary block-parity conditions and split-profile counts over the
+  sizes stated above.
+- Not claimed: existence or count of carriers at any profile, sufficiency of a
+  licensed profile, physical charge, search-runtime complexity, other target
+  families, other support partitions, noncorner/nonsimplicial pieces,
+  multi-cell compatibility, framework Admissibility, arbitrary lattice size,
+  boundaries, thermodynamic limits, or continuum physics.
+- Audit remains unset; an independent audit is still required.

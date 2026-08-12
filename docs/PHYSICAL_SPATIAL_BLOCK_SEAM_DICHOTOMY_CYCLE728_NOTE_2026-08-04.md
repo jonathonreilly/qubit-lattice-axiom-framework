@@ -15,7 +15,7 @@ Canonical primary cache:
 Primary receipt:
 [`outputs/physical_spatial_block_seam_dichotomy_cycle728_2026_08_04_receipt_2026-08-04.json`](../outputs/physical_spatial_block_seam_dichotomy_cycle728_2026_08_04_receipt_2026-08-04.json).
 
-Independent reconstruction:
+Independent checker:
 [`scripts/physical_spatial_block_seam_dichotomy_cycle728_independent_check_2026_08_04.py`](../scripts/physical_spatial_block_seam_dichotomy_cycle728_independent_check_2026_08_04.py)
 (15 PASS / 0 FAIL, fail-closed), with canonical cache
 [`logs/runner-cache/physical_spatial_block_seam_dichotomy_cycle728_independent_check_2026_08_04.txt`](../logs/runner-cache/physical_spatial_block_seam_dichotomy_cycle728_independent_check_2026_08_04.txt)

@@ -264,6 +264,13 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
         "scripts/physical_cell_cutting_charge_space_cycle736_"
         "independent_check_2026_08_05.py",
     ],
+    # Cycle 737's checker independently uses a Leibniz determinant, opposite
+    # exact-cover pivot, and reversed support-half traversal before rebuilding
+    # the complete through-eight support and octet-family censuses.
+    "physical_cell_cutting_least_computing_sets_cycle737_note_2026-08-05": [
+        "scripts/physical_cell_cutting_least_computing_sets_cycle737_"
+        "independent_check_2026_08_05.py",
+    ],
     "b4_clock_relation_run_cycle879_bounded_theorem_note_2026-07-28": [
         "scripts/frontier_cycle879_b4_relation_independent_check_2026_07_28.py",
     ],

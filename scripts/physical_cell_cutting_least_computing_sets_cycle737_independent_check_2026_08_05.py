@@ -1,4 +1,4 @@
-"""Cycle 737: minimum supports for finite binary readings of supplied cuttings.
+"""Independent reconstruction of Cycle 737's finite support theorem.
 
 The single cell is the unit four-cube with three lattice directions and one tick. Its
 least-volume cuttings at the floor of the adjacency cost carry eight readings of the
@@ -9,11 +9,11 @@ at most eight pieces, lists the two families of eight-piece sets and their symme
 orbits, verifies a set of pieces carrying each of the six charge readings, and reads off
 the corner geometry of the eight-piece families.
 
-Every theorem here is confined to the 192 pieces that occur in the supplied finite
-population.  Pieces outside that used set have identically zero incidence and are not
-members of the support universe.  The readings are finite GF(2) functions, not physical
-charges.  Class-A: integer and field-with-two-elements arithmetic on a finite explicit
-object, no solver. Every count below is measured here. Failed gates exit nonzero.
+This checker imports and executes no primary implementation.  It uses a Leibniz
+determinant rather than the primary minor formula and the largest uncovered exact-cover
+pivot rather than the primary smallest pivot.  The support search is rerun from the
+independently reconstructed incidence matrix and every returned support is checked on all
+15,800 rows.  Failed gates exit nonzero.
 """
 import hashlib
 import itertools
@@ -26,22 +26,26 @@ import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
 NOTE_PATH = "docs/PHYSICAL_CELL_CUTTING_LEAST_COMPUTING_SETS_CYCLE737_NOTE_2026-08-05.md"
-INDEPENDENT_PATH = (
-    "scripts/physical_cell_cutting_least_computing_sets_cycle737_"
-    "independent_check_2026_08_05.py"
+PRIMARY_PATH = (
+    "scripts/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05.py"
+)
+PRIMARY_RECEIPT_PATH = (
+    "outputs/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05_"
+    "receipt_2026-08-05.json"
 )
 C736_RECEIPT_PATH = (
     "outputs/physical_cell_cutting_charge_space_cycle736_2026_08_05_"
     "receipt_2026-08-05.json"
 )
 RECEIPT_PATH = ROOT / (
-    "outputs/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05_"
+    "outputs/physical_cell_cutting_least_computing_sets_cycle737_independent_check_2026_08_05_"
     "receipt_2026-08-05.json"
 )
 AUDIT_INPUT_PATHS = (
     "docs/PHYSICAL_CELL_CUTTING_LEAST_COMPUTING_SETS_CYCLE737_NOTE_2026-08-05.md",
-    "scripts/physical_cell_cutting_least_computing_sets_cycle737_"
-    "independent_check_2026_08_05.py",
+    "scripts/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05.py",
+    "outputs/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05_"
+    "receipt_2026-08-05.json",
     "docs/MINIMAL_AXIOMS_2026-06-29.md",
     "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
     "docs/PHYSICAL_CELL_CUTTING_CHARGE_SPACE_CYCLE736_NOTE_2026-08-05.md",
@@ -58,6 +62,7 @@ def file_sha256(relative_path):
 
 
 C736_RECEIPT = json.loads((ROOT / C736_RECEIPT_PATH).read_text(encoding="utf-8"))
+PRIMARY_RECEIPT = json.loads((ROOT / PRIMARY_RECEIPT_PATH).read_text(encoding="utf-8"))
 
 PF = [0, 0]
 GATES = []
@@ -73,15 +78,16 @@ def gate(ok, name, detail):
 
 
 def det4(A):
-    def minors(r0, r1):
-        out = {}
-        for i in range(4):
-            for j in range(i + 1, 4):
-                out[(i, j)] = (A[:, r0, i] * A[:, r1, j] - A[:, r0, j] * A[:, r1, i])
-        return out
-    m, c = minors(0, 1), minors(2, 3)
-    return (m[(0, 1)] * c[(2, 3)] - m[(0, 2)] * c[(1, 3)] + m[(0, 3)] * c[(1, 2)]
-            + m[(1, 2)] * c[(0, 3)] - m[(1, 3)] * c[(0, 2)] + m[(2, 3)] * c[(0, 1)])
+    result = np.zeros(len(A), dtype=np.int64)
+    rows = np.arange(4)
+    for permutation in itertools.permutations(range(4)):
+        inversions = sum(
+            permutation[i] > permutation[j]
+            for i in range(4) for j in range(i + 1, 4)
+        )
+        sign = -1 if inversions % 2 else 1
+        result += sign * np.prod(A[:, rows, permutation], axis=1, dtype=np.int64)
+    return result
 
 
 CORN = [(x, y, z, t) for x in (0, 1) for y in (0, 1) for z in (0, 1) for t in (0, 1)]
@@ -107,6 +113,11 @@ LO = int(C4.min())
 MINP = [i for i in range(NPIECE) if int(C4[i]) == LO]
 MM = np.stack([(V[p[1:]] - V[p[0]]).T for p in UNI])
 IV = np.rint(np.linalg.inv(MM.astype(float))).astype(np.int64)
+gate(bool(np.array_equal(
+         MM @ IV,
+         np.broadcast_to(np.eye(4, dtype=np.int64), MM.shape))),
+     "independent.inverse",
+     "every float-proposed inverse is accepted only after exact integer multiplication")
 
 ROT = []
 for perm in itertools.permutations(range(3)):
@@ -219,7 +230,7 @@ def rec(cov, chosen):
         SOL.append(tuple(sorted(chosen)))
         return
     rem = ALLQ & ~cov
-    j = (rem & -rem).bit_length() - 1
+    j = rem.bit_length() - 1
     for i in BY[j]:
         if MK[i] & cov:
             continue
@@ -233,9 +244,10 @@ NS = len(SOL)
 USED = sorted(set(i for s in SOL for i in s))
 NPO = len(USED)
 P2I = dict((p, a) for a, p in enumerate(USED))
-gate(LO == 6 and len(MINP) == 400 and NODE[0] == 502838 and NS == 15800
+gate(LO == 6 and len(MINP) == 400 and NODE[0] == 496849 and NS == 15800
      and FULL == set([24]) and NPO == 192, "base.floor",
-     "a complete search over the {0} pieces of least cost {1} visits {2} nodes and finds "
+    "the independent largest-uncovered-pivot search over the {0} pieces of least cost "
+    "{1} visits {2} nodes and finds "
      "{3} cuttings of {4} pieces each, between them using {5} pieces".format(
          len(MINP), LO, NODE[0], NS, 24, NPO))
 
@@ -756,8 +768,8 @@ def in_half_multi(cols96, m, tlist, sink):
             stream_multi(qb, lx, combined_light(ta[k1], tlist), qa, k2, tk, sink)
 
 
-HL = np.arange(96, dtype=np.int64)
-HR = np.arange(96, 192, dtype=np.int64)
+HL = np.arange(95, -1, -1, dtype=np.int64)
+HR = np.arange(191, 95, -1, dtype=np.int64)
 TL = side_tables(HL, 4)
 TR = side_tables(HR, 4)
 XL4 = lexk(HL, 4)
@@ -1099,13 +1111,47 @@ def canonical_reading_hash(function):
     ).hexdigest()
 
 
+reading_identity = {
+    "incidence_packbits_sha256": hashlib.sha256(
+        np.packbits(INC, axis=1).tobytes()
+    ).hexdigest(),
+    "canonical_incidence_rows_sha256": hashlib.sha256(
+        b"".join(canonical_incidence_rows)
+    ).hexdigest(),
+    "support_column_order_sha256": hashlib.sha256(
+        json.dumps(CTUP, separators=(",", ":")).encode("utf-8")
+    ).hexdigest(),
+    "functions": {
+        name: {
+            "ones": int(function.sum()),
+            "packbits_sha256": hashlib.sha256(
+                np.packbits(function).tobytes()
+            ).hexdigest(),
+            "canonical_rows_with_bit_sha256": canonical_reading_hash(function),
+        }
+        for name, function in TGT[:8]
+    },
+}
+gate(
+    PRIMARY_RECEIPT.get("schema")
+    == "physical-cell-cutting-least-computing-sets-cycle737-v2"
+    and PRIMARY_RECEIPT.get("status") == "pass"
+    and PRIMARY_RECEIPT.get("gates", {}).get("fail") == 0
+    and PRIMARY_RECEIPT.get("runner_sha256") == file_sha256(PRIMARY_PATH)
+    and PRIMARY_RECEIPT.get("reading_identity") == reading_identity,
+    "dep.primary_receipt",
+    "the primary pass receipt binds the current primary bytes and exactly matches the "
+    "independently reconstructed canonical incidence/readings identity",
+)
+
 receipt = {
-    "schema": "physical-cell-cutting-least-computing-sets-cycle737-v2",
+    "schema": "physical-cell-cutting-least-computing-sets-cycle737-independent-v1",
     "status": "pass" if PF[1] == 0 else "fail",
     "claim_type": "bounded_theorem",
     "audit_status_authority": "independent audit lane only",
     "runner_sha256": file_sha256(
-        "scripts/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05.py"
+        "scripts/physical_cell_cutting_least_computing_sets_cycle737_"
+        "independent_check_2026_08_05.py"
     ),
     "input_sha256": {path: file_sha256(path) for path in AUDIT_INPUT_PATHS},
     "supplied_model": {
@@ -1141,25 +1187,7 @@ receipt = {
         "nonconstant_readings": 6,
         "duplicate_free": DUP,
     },
-    "reading_identity": {
-        "incidence_packbits_sha256": hashlib.sha256(
-            np.packbits(INC, axis=1).tobytes()
-        ).hexdigest(),
-        "canonical_incidence_rows_sha256": hashlib.sha256(
-            b"".join(canonical_incidence_rows)
-        ).hexdigest(),
-        "support_column_order_sha256": hashlib.sha256(
-            json.dumps(CTUP, separators=(",", ":")).encode("utf-8")
-        ).hexdigest(),
-        "functions": {
-            name: {
-                "ones": int(function.sum()),
-                "packbits_sha256": hashlib.sha256(np.packbits(function).tobytes()).hexdigest(),
-                "canonical_rows_with_bit_sha256": canonical_reading_hash(function),
-            }
-            for name, function in TGT[:8]
-        },
-    },
+    "reading_identity": reading_identity,
     "verified_upper_witnesses": {
         name: {
             "size": size,

@@ -1,206 +1,267 @@
-# The fewest pieces that compute a charge — Cycle 737
+# Minimum supports for finite binary readings of supplied one-cell cuttings — Cycle 737
 
 Date: 2026-08-05
 
 Claim type: bounded_theorem
 
-Authority: none. Audit: unset. Constitutional effect: none. This cycle edits no
-axiom, foundation, Qualification, primitive, registry, policy, queue,
-audit-status, or PR-control surface. No new axiom or primitive is proposed or
-adopted.
+Status: unaudited source note
 
-The object is one cell of the lattice carried through one tick of emergent time: the
-four-cube on the sixteen corners of `{0,1}^4`, whose three spatial columns and single tick
-column are the columns the axioms of
-[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) supply, with nearest
-neighbour adjacency only and the proper cubic rotations alone kept. A piece is a five
-corner simplex of the cell of least volume, the cost of a piece counts the pairs of its
-corners more than one lattice step apart, and the cuttings at the floor of that cost are
-the population of the last cycles. The previous cycle showed that the two valued charges
-answering the smallest move uniformly form a space of dimension three — the two constants
-and three two sided charges, named four, six and seven for the move size each keeps — and
-that each is carried by a weight over all 192 pieces the cuttings use. This cycle asks how
-little of the cell a charge actually needs. A set of pieces computes a charge when, for
-every one of the 15800 cuttings, the parity of the count of its pieces falling in the set
-is the charge's value on that cutting. The answers are exact where the search is complete
-and bracketed where it is not. Every computing set of any of the eight
-charges has even size, because each of the 192 pieces is used by an odd number of
-cuttings and every charge takes the value one on an even count of them. A complete search
-of every set of at most
-eight pieces finds the smallest sets a cutting cannot see — sets met evenly by every
-cutting — at exactly eight pieces, 648 of them, and the smallest sets met oddly by every
-cutting, likewise at eight, 192 of them; both families are unions of full symmetry orbits
-and each touches all 192 pieces. The eight pieces of any octet share exactly two corners
-of the cell, and for the odd family the shared pair is always an edge, six octets on each
-of the 32 edges. No physical charge is computable from eight pieces or
-fewer, so with parity every one of the six needs at least ten. Explicit computing sets of
-sizes 16, 20, 24, 24, 30 and 30 are exhibited and verified, so the least sizes lie
-between ten and those numbers. The 648 eight piece sets met evenly by every cutting are
-disjoint from the 120
-exchange masks of the smallest move, and no indicator of a symmetry orbit of pieces is
-expressible from cutting rows at all, so the octet families are new objects, neither the
-moves nor the orbits. Every statement below is a check in whole numbers over an explicit
-finite set; no solver is used, and completeness of the search is certified inside the
-runner rather than assumed.
+Audit authority: none; audit status belongs only to the independent audit lane.
 
-## The cell, the cuttings, and the charges
+## Supplied model and premise boundary
 
-Of the 4368 five element subsets of the 16 corners, 2672 have the least volume and are the
-pieces. The adjacency cost has floor 6 over the pieces, 400 pieces attain it, and the
-complete search of the previous cycles cuts the cell into 24 such pieces in 15800 ways,
-using 192 of the 400. The 48 symmetries of the cell — the 24 proper spatial rotations,
-each with and without the tick flip — act on the cuttings and on the pieces; on the 192
-used pieces the action is free, with four orbits of 48. The three two sided charges and
-their flips take the value one on 7704, 8096, 7424, 8376, 5664 and 10136 cuttings for six,
-six flipped, seven, seven flipped, four and four flipped respectively. These counts, the
-population and the charge space are the previous cycle's results and are reproduced here
-because the question is asked of them.
+This theorem concerns one supplied finite object. The object is the unit four-cube
+`{0,1}^4`, with three coordinates labelled spatial and one labelled tick, cut into 24
+normalized-volume-one five-corner simplices. The declared piece cost counts corner pairs
+whose full four-coordinate `L1` separation exceeds one. The carried action consists of
+24 proper spatial signed permutations with the optional labelled tick flip.
 
-## What it means for a set of pieces to compute a charge
+The [Minimal Axioms](MINIMAL_AXIOMS_2026-06-29.md) supply only the spatial `Z^3`
+nearest-neighbour lattice and proper cubic rotations. The registered
+[kinetic-isotropy primitive](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md) supplies only
+equal spatial/tick kinetic-form graining. Neither source selects this four-cube, simplex
+class, cost, dissection rule, binary reading, physical assembly cell, or
+tick–Admissibility realization.
 
-Write the population as its use table: one row per cutting, one column per used piece, an
-entry marking use. A set of pieces computes a two valued function when the parity of each
-row's overlap with the set equals the function's value on that row. Two sets compute the
-same function exactly when their symmetric difference is met evenly by every cutting, so
-the sets a cutting cannot see are the ambiguity of the whole question: call a set every
-cutting meets evenly an even set, and a set every cutting meets oddly an odd set. The even
-sets compute the constant zero, the odd sets compute the constant one, and the computing
-sets of any fixed charge form a single class under symmetric difference with even sets.
-The charges themselves are columns of the previous cycle's charge space, so at least one
-computing set exists for each; the question is the least size.
+[Cycle 736](PHYSICAL_CELL_CUTTING_CHARGE_SPACE_CYCLE736_NOTE_2026-08-05.md) is the direct
+scientific dependency. Its hash-bound receipt supplies the same finite population and the
+complete rank-three space of eight induced GF(2) functions: two constants and three
+nonconstant complement pairs. The present primary and independent checker also reconstruct
+the population and functions locally. Cycles 734 and 735 are chronological context only;
+no count, certificate, witness, or receipt from them is consumed directly here.
 
-## Sizes are even
+The words “support” and “reading” below are deliberately finite. The support universe is
+exactly the 192 pieces that occur in at least one of the 15,800 supplied cuttings. A piece
+outside that universe has an identically zero incidence column and is not counted as a
+support coordinate. The six nonconstant functions are not identified with physical
+charges, observables, conserved quantities, or Record content.
 
-Each of the 192 used pieces is used by exactly 1975 cuttings, an odd count. Summing all
-15800 rows of the use table therefore gives the all ones vector: the whole population,
-taken together, meets every set of pieces with the parity of the set's size. So a set of
-even size computes a function taking the value one on an even number of cuttings, and a
-set of odd size a function taking one on an odd number. All eight charges take the value
-one on an even count of cuttings — 0, 15800, 5664, 10136, 7704, 8096, 7424 and 8376 —
-so every computing set of any of them has even size. Odd sizes are settled before any
-search: nine pieces can no more compute a charge than one piece can.
+## Exact theorem
 
-## The complete search below ten
+Let `A` be the `15800 × 192` binary incidence matrix whose row records the pieces in one
+cutting. For a support `S` among the 192 used pieces, its reading is `A 1_S` over
+`GF(2)`. A support computes a named function `f` exactly when
 
-All sets of at most eight pieces are searched. Completeness does not rest on trying the
-sets one by one: the runner first certifies, by exhibiting the combinations of rows that
-realize them, that the all ones indicator over the 192 pieces and the indicator of a fixed
-half of the columns are both sums of cutting rows with even overlap forced against every
-target searched, which confines solutions to even counts on each half of a fixed ordering; the
-search then covers every such split by three routes — two stored tables met in the middle,
-a streamed heavy side against a stored light side, and a within half sweep over quarter
-splits including the odd ones, which the certificate does not cover. Each route is
-exercised on planted sets rebuilt from their own rows before the real targets are run, a
-deliberately odd synthetic target is shown to force odd overlap — so the certificate can
-fail — and every set the search returns is verified against all 15800 rows.
+`A 1_S = f`.
 
-The search returns, for the constant zero, no even set of size two, four or six, and
-exactly 648 even sets of size eight. For the constant one it returns no odd set below
-eight and exactly 192 odd sets of size eight. For the six charges it returns nothing at
-all through size eight. With parity, the least size of a computing set of every physical
-charge is at least ten.
+The exact finite results are:
+
+- every used piece occurs in exactly 1,975 cuttings, and `rank_GF(2)(A)=88`;
+- each of the eight Cycle-736 functions has an even number of ones, so every support
+  computing one of them has even cardinality;
+- the empty support computes constant zero; the smallest **nonempty** constant-zero
+  supports have cardinality eight, and there are exactly 648;
+- the smallest supports computing constant one have cardinality eight, and there are
+  exactly 192;
+- none of the six nonconstant readings has a support of cardinality at most eight;
+  therefore every such support has cardinality at least ten;
+- explicit supports of sizes 16, 20, 24, 24, 30, and 30 compute, respectively, the
+  functions labelled `four`, `four_flip`, `six`, `six_flip`, `seven`, and
+  `seven_flip`.
+
+The last line is only a verified upper bound. Those witnesses were found by a seeded search
+outside the proof runner. Nothing here proves their optimality or even tests cardinality
+ten and above.
+
+## Geometric population and direct dependency
+
+There are 4,368 five-corner subsets of the 16 corners and 2,672 have normalized volume one.
+The declared cost has floor six on 400 of them. The exact-cover reconstruction returns
+15,800 covers of 24 floor pieces, using 192 pieces. All 15,168 piece pairs that co-occur in
+a returned cover have an exact integer separating plane. Because the 24 normalized unit
+volumes sum to the four-cube volume, the returned objects are genuine geometric
+dissections, not merely sample-mask covers.
+
+The Cycle-736 receipt is accepted only when its schema, pass status, zero failure count,
+15,800 geometric cuttings, 192 used pieces, eight induced readings, rank three, and two
+constants all match. The local reconstruction also checks the three nonconstant split
+sizes `5664/10136`, `7704/8096`, and `7424/8376`.
+
+## Parity and exhaustive support search
+
+Summing all rows of `A` gives the all-ones vector because every column sum is 1,975. Thus
+
+`|S| mod 2 = sum_i f_i mod 2`.
+
+Every one of the eight target functions has even Hamming weight, so odd support sizes are
+excluded exactly.
+
+For even cardinalities two, four, six, and eight, the primary search compresses `A` to
+88 independent rows and represents each column by its exact 88-bit syndrome. A row-space
+certificate fixes even overlap with a declared 96-column half for all eight readings.
+The search then exhausts every allowed half split:
+
+- stored-table meets for light/light splits;
+- streamed heavy/light meets for six-plus-zero and six-plus-two splits; and
+- a complete two-quarter sweep for supports lying wholly inside one half, including the
+  odd quarter splits that the half certificate does not eliminate.
+
+Every returned support is re-evaluated on all 15,800 incidence rows, and duplicate-freedom
+across search routes is checked. Four planted controls exercise the pair, heavy/light,
+odd-quarter, and single-quarter paths. A synthetic target with forced odd half parity
+confirms that the licensing test can reject a target rather than always returning “even.”
+
+The independent checker imports and executes no primary implementation. It uses a Leibniz
+determinant instead of the primary minor formula, the largest uncovered sample point
+instead of the smallest in exact-cover recursion (496,849 nodes rather than 502,838), and
+reversed traversal within both support halves. It independently reconstructs the same
+population, geometric separation, readings, 648/192 octet families, empty nonconstant
+search through eight, and all upper witnesses.
 
 ## The two octet families
 
-Call the 648 smallest even sets and the 192 smallest odd sets the even octets and the odd
-octets. Both families are closed under the 48 symmetries exactly: the even octets fall
-into 22 orbits, seventeen of size 24 and five of size 48, and the odd octets into five
-orbits, two of size 24 and three of size 48. Each family, taken together, touches all 192
-used pieces. Across the four symmetry classes of pieces the even octets spread as
-(0,0,4,4) in 120 cases, (0,2,2,4) in 48, (1,1,3,3) in 192 and (2,2,2,2) in 288, each
-spread the ordered counts smallest first without naming the classes; the odd octets show
-the same four spreads with exactly 48 sets at each.
+The 648 minimum nonempty constant-zero supports form 22 orbits under the declared
+48-element action: 17 of size 24 and five of size 48. The 192 minimum constant-one supports
+form five orbits of sizes `24,24,48,48,48`. Each family is closed under the action and,
+as a family, touches every one of the 192 support coordinates. This does not say that one
+octet is itself a union of complete piece orbits.
 
-Geometry pins both families further. Over the 192 used pieces every corner of the cell
-lies on exactly 60 and every edge, tick or spatial, on exactly 24; constancy within each
-kind is forced by the symmetries, which carry any corner to any corner and any edge of a
-kind to any edge of the same kind, while the shared value 24 across the two kinds is
-measured, not forced. In both families the eight pieces of an octet share exactly two
-corners of the cell. For the odd octets the shared pair is always an edge: each of the 32
-edges carries exactly six of the 192 odd octets, evenly across the four directions, and
-each odd octet's pieces together touch all sixteen corners. For the even octets every one
-of the 120 corner pairs occurs as a shared pair, and the count of octets on a pair depends
-only on the number of coordinates in which its corners differ: nine on each of the 32
-pairs differing in one coordinate, the edges; three on each of the 48 pairs differing in
-two coordinates and each of the 32 differing in three; fifteen on each of the eight pairs
-differing in all four, the opposite corners of the cell. The corners an even octet touches
-number ten, twelve or sixteen — in
-240, 120 and 288 cases — and follow the shared pair: pairs differing in two or three
-coordinates always give ten, edge pairs give twelve in 96 cases and sixteen in 192, and
-opposite pairs give twelve in 24 cases and sixteen in 96.
+The eight simplices in every octet share exactly two cell corners. For the constant-one
+octets that pair is always one of the 32 cell edges; each edge supports exactly six
+octets, and every octet collectively touches all 16 corners.
 
-## The charges need ten or more
+For the constant-zero octets every one of the 120 corner pairs occurs. Pairs at Hamming
+distances one, two, three, and four occur with multiplicities nine, three, three, and
+fifteen per pair. Their union contains 10, 12, or 16 corners in 240, 120, and 288 cases.
 
-Through size eight the search is complete and empty for all six physical targets, and odd
-sizes are excluded by parity, so 10 is a floor. From above, explicit computing sets are
-exhibited: a set of 16 pieces computes the four charge and a set of 20 its flip, sets of
-24 compute the six charge and its flip, and sets of 30 the seven charge and its flip.
-Each is verified against all 15800 cuttings inside the runner. The least sizes therefore
-lie in the even numbers from ten to the exhibited sizes.
-The exhibited sets were found by a seeded randomized basis search outside the runner; the
-runner verifies them and claims only what verification shows, that the sizes suffice.
+The 120 four-piece exchange masks from the finite move graph are disjoint from the 648
+constant-zero octets. No declared 48-piece orbit indicator lies in the row space of
+`A`, so orbit-parity is not fixed across all supports of a target. These are exact
+linear-incidence facts, not physical locality or dynamics.
 
-## What the octets are not
+## Independent and hostile checks
 
-The previous cycle's smallest move exchanges four pieces for four others, and the 120
-distinct exchange masks each involve eight pieces. None of the 120 is an even set — every
-one is seen by some cutting — and none of the 648 even octets is an exchange mask; the
-overlap of the two eight piece families is empty. The smallest sets the population cannot
-see are not the moves.
+Both runners reconstruct rather than merely trust the submitted transcript. The primary
+has exact full-table verification, exact geometry, planted-route recovery, an odd-license
+control, and dependency-schema checks. It also rejects a one-piece deletion from a
+constant-zero octet, proves that a failed Cycle-736 receipt cannot satisfy the dependency
+predicate, and exhibits sample-disjoint pieces that overlap so the geometric separator
+gate is load-bearing.
 
-The four symmetry orbits of pieces are the cell's natural classes, and one could ask
-whether every computing set of a given charge meets each orbit with a forced parity. It
-does not: no orbit indicator is a sum of cutting rows, so no such constraint exists, and
-computing sets can shift weight between orbits freely. The forced parities that do exist —
-the total and the certified half — do not include any symmetry orbit.
+The independent checker repeats the result with the alternate determinant, exact-cover
+pivot, and traversal. Each runner is fail-closed, emits a generated receipt, and is bound
+to the complete declared source closure by its canonical cache.
 
-The three two sided charges satisfy one relation worth recording at the level of
-functions: the four charge equals the sum of the six charge, the seven charge and the
-constant one, and not the bare sum of six and seven; the offset by the constant is real
-and is checked both ways.
+## Claim boundary
 
-## Independent cross-checks performed
+What is proved is exact finite coding and geometry for the declared 192-column incidence
+system and the eight supplied Cycle-736 readings.
 
-The runner re-derives the machinery it stands on — pieces, floor, cuttings, symmetries,
-charge values — rather than loading any of it. The membership certificates are produced by
-exact elimination over the integers modulo two, and their forced parities are printed and
-gated; the deliberately odd synthetic target shows the same machinery returning odd, so
-the even verdicts discriminate. Four planted sets are recovered by the same code paths
-that report the real counts, covering every search route, the odd quarter split inside a
-half among them. Every returned set is checked against the full use table, the families
-are checked to be duplicate free across routes, orbit closure is checked exactly — the
-image of every returned set under all 48 symmetries is again a returned set — and the
-witness sets are pinned to the cell by their pieces' corner tuples and checked against
-the full table, with their sizes' parity confirmed even.
-The split counts of the octet families across the certified halves are printed by the
-runner as bookkeeping of the search's coverage.
+What is not proved:
 
-## Boundary and honest read
+- the exact minimum support above the lower bound ten for any nonconstant reading;
+- a result for a different binary function, support universe, coefficient field,
+  nonlinear readout, piece class, cost, action, or dissection population;
+- physical selection of the cell, tick, simplex class, cost, reading, or support;
+- a physical observable, conservation law, local process, memory mechanism, or Record
+  interpretation;
+- a multi-cell, arbitrary-extent, arbitrary-`L`, boundary, thermodynamic, continuum, or
+  gravity statement.
 
-The search is complete for sets of at most eight pieces and for the twelve targets named;
-nothing is measured about size ten and above except the exhibited witnesses, so for each
-physical charge the least size is known only to lie between ten and its witness size. The
-witnesses come from a randomized search whose seed and sample count are fixed outside the
-runner; the runner's claim about them is verification, not optimality. The population, the
-floor, the 192 pieces, the charge values and the 120 exchange masks are reproductions of
-earlier cycles' measurements, derived again inside the runner where they appear; the
-content of this cycle is the parity law, the completeness certificates, the two octet
-families with their orbit structure, spread and geometry, the ten piece floor for all six
-charges, the verified upper sizes, and the two separations — octets from exchange masks,
-and forced parities from orbit indicators.
+Proof-obligation disposition: **CONDITIONAL**. The finite coding and geometry theorem is
+closed on the supplied model. Any physical reading remains conditional on the explicitly
+open selection and realization bridges above.
 
-The halves and quarters of the column ordering are bookkeeping of the search, not objects
-of the cell: no symmetry exchanges the halves, and the certified half indicator is a
-property of the use table under one fixed ordering, exhibited inside the runner for the
-sake of a complete search and claimed for nothing else.
+## No-Go Discipline Gate
 
-Every count here is scoped to the single cell of one lattice step and one tick, with the
-adjacency cost and the least volume as defined above. No statement is made about cells of
-other extent, other adjacency, other costs, or about the lattice as a whole. The charges
-are two valued functions on cuttings arrived at as parities of piece use; nothing here
-identifies any of them with a physical quantity, and what a least computing set would mean
-for a lattice of many cells is not measured and is not claimed.
+Negative assertion class: `derived_no_go_boundary`. The only exact negative shipped is
+that no support of cardinality at most eight computes any of the six fixed nonconstant
+readings in this fixed 192-column finite system.
 
-Time enters only as the fourth column of the cell. Nothing in this cycle selects a
-direction along it, and the tick flip is kept in the symmetry group throughout, so no
-result here depends on an arrow.
+**N1 — alternative-route enumeration.** Six materially distinct attacks are executed.
+
+1. `ATTEMPTED` — parity attack: derive the total support parity from all 15,800 rows and
+   try every odd cardinality; the target weights force even support.
+2. `ATTEMPTED` — light/light collision attack: reduce to 88 independent rows and join
+   stored syndrome tables for every half split whose two sides have weight at most four.
+3. `ATTEMPTED` — heavy/light streaming attack: generate each six-piece heavy support
+   uniquely by prefix plus lexicographic tail and match it against the light-side table.
+4. `ATTEMPTED` — unlicensed-quarter attack: explicitly sweep every quarter split for
+   supports wholly inside one half, including the odd quarter splits that no license
+   eliminates.
+5. `ATTEMPTED` — independent-population/traversal attack: rebuild the 15,800 geometric
+   rows using the opposite exact-cover pivot and repeat the support joins with both halves
+   traversed in reverse.
+6. `ATTEMPTED` — full-table falsification attack: evaluate every returned support on all
+   15,800 rows and mutate a valid octet by one deletion; the mutation fails.
+
+**N2 — wall-independence audit.** The raw population, used-piece universe, and six target
+functions are not counted separately: the used universe and targets are defined from the
+declared finite data, so they collapse into D (the supplied finite data). The remaining
+collapsed walls are C (binary additive-incidence readout), H (the cardinality window
+through eight), and X (physical or multi-cell extension).
+
+| pair | first closes second? | second closes first? | independent? |
+|---|---:|---:|---:|
+| D–C | no | no | yes |
+| D–H | no | no | yes |
+| D–X | no | no | yes |
+| C–H | no | no | yes |
+| C–X | no | no | yes |
+| H–X | no | no | yes |
+
+The finite theorem closes H only for D/C as declared. It closes none of the other
+walls and does not inflate them into a universal obstruction.
+
+**N3 — hidden-wall scan.** The scan covers “assume,” “by construction,” “framework
+provides,” “naturally,” “canonical,” “physical,” “all,” and “no.” The cell, cost, piece
+class, support universe, target functions, coefficient field, additivity, exact-cover
+predicate, acting group, and cardinality window are explicit. “Canonical cache” is
+non-load-bearing evidence packaging. No hidden model choice is promoted to an axiom.
+
+**N4 — residual matching.** Cycle 736 is cited only for the exact same supplied geometric
+population and eight induced functions, which the local runners reconstruct and compare.
+No previous negative or wall is used to prove the support lower bound. Cycles 734 and 735
+are context only, so no mismatched residual is inherited.
+
+**N5 — rhetoric audit.** The primary canonical cache lands five resolution lines.
+Per-element resolves all 192 used columns; per-site resolves one supplied coordinate cell;
+per-mode is not executed because there is no spectral or field-mode object; per-block
+resolves all 15,800 rows and every support through size eight; lattice-wide is not
+executed and no lattice-wide negative is asserted.
+
+**N6 — partial-closure paths.** Sizes ten and above can be enumerated in the same finite
+system without a new axiom. Other targets, coefficient fields, and nonlinear readouts can
+be posed as separate finite problems. A physical or multi-cell interpretation needs an
+explicit supplied bridge and its own theorem. These routes remain open extensions.
+
+**N7 — steelman.** A hostile reviewer should expect supports at cardinality ten or twelve,
+because the proof deliberately stops at eight and already exhibits larger witnesses.
+They should also expect a different target, larger support universe, or nonlinear rule to
+change the minimum. That is a concrete attack on any broader claim, which is why no exact
+minimum, universal coding bound, physical obstruction, or lattice-wide statement ships.
+It does not challenge the completed finite search through eight.
+
+**N8 — cross-cycle echo.** Cycle 734 showed that pairwise co-occurrence cliques need not be
+genuine shared-cutting triples, and Cycle 735 showed that whole-component cube dimension
+need not bound embedded cube dimension. The present proof therefore distinguishes sample
+cover from geometry, checks the full row table after syndrome compression, and states only
+the searched cardinality window. No broader negative is inferred from a compressed proxy.
+
+**Status: PASS.** All N1–N8 items land with the note, the five N5 resolution lines land in
+the primary canonical cache, and the negative remains confined to the exact finite window.
+
+## Artifacts
+
+- Primary runner:
+  [`scripts/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05.py`](../scripts/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05.py)
+- Independent checker:
+  [`scripts/physical_cell_cutting_least_computing_sets_cycle737_independent_check_2026_08_05.py`](../scripts/physical_cell_cutting_least_computing_sets_cycle737_independent_check_2026_08_05.py)
+- Primary cache:
+  [`logs/runner-cache/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05.txt`](../logs/runner-cache/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05.txt)
+- Independent cache:
+  [`logs/runner-cache/physical_cell_cutting_least_computing_sets_cycle737_independent_check_2026_08_05.txt`](../logs/runner-cache/physical_cell_cutting_least_computing_sets_cycle737_independent_check_2026_08_05.txt)
+- Primary receipt:
+  [`outputs/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05_receipt_2026-08-05.json`](../outputs/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05_receipt_2026-08-05.json)
+- Independent receipt:
+  [`outputs/physical_cell_cutting_least_computing_sets_cycle737_independent_check_2026_08_05_receipt_2026-08-05.json`](../outputs/physical_cell_cutting_least_computing_sets_cycle737_independent_check_2026_08_05_receipt_2026-08-05.json)
+
+## Review-loop record
+
+On 2026-08-12 review corrected the submitted premise and theorem boundary: the model is
+supplied rather than axiom-derived; “physical charges” became finite binary readings; the
+support universe became explicitly the 192 used pieces; and the constant-zero statement
+became the minimum **nonempty** kernel support. Review also added the direct Cycle-736
+binding, exact geometric separation, an independent checker, fail-closed receipts and
+canonical caches, hostile controls, and the landed N1–N8/N5 packet. This is review
+provenance, not an audit verdict.

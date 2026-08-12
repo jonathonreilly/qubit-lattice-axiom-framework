@@ -962,3 +962,17 @@ stacked claims, with zero failures or controls. Science commit is
 mergeable, and `CLEAN`, stacked exactly on Block-37 delivery head
 `cb107d8a84`. Independent audit remains required. No canonical edit,
 percentage move, audit verdict, or `review-loop` is used.
+
+## Block 51
+
+PR #6144
+(`physics-loop/toe-axiom-closure-block51-canonical-joint-law-20260811`) is
+open, mergeable, and `CLEAN`, stacked exactly on Block-50 delivery head
+`45ac5e2ec3`. Its distinct review object is the exact two-TT quotient, positive
+`r=0/r=1` Gaussian/OS and symplectic transfers, static-equal finite-energy
+selector fork, closed-periodic isolated Record-charge continuity obstruction,
+and balanced transition/Gauss repair. Primary/cache is `PASS=14 FAIL=0`; three
+process-local mutations fail nonzero; citation registration is
+`5,497/15,739`, out-degree seven. The N1--N8 packet and N5 execution
+certificate land with the science. No canonical axiom, fixed TOE percentage,
+audit verdict, or `review-loop` changes. Landing order adds #6144 after #6143.

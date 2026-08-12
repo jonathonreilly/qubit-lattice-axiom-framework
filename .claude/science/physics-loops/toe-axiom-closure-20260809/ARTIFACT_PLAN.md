@@ -1252,3 +1252,31 @@ complete conditional nonlinear compact solution:
   Ricci constraint, positive physical state form, trace-free/Weyl propagation,
   and one declared Record step, followed by an inequivalent lawful completion
   or a uniqueness theorem that decides the exact extensional `L*` axiom cut
+
+## Block 51 Artifact Plan
+
+- theorem note: construct the smallest local constrained positive two-TT
+  transfer after the Block-50 action-covariance failure, exhibit a physically
+  distinct completion meeting the same declared structural/static contract,
+  and test whether one new permanent Record can be a conserved gravity source
+- primary runner/cache: check all `728` nonzero `L=9` momenta, six symmetric-
+  tensor coordinates, four TT constraints, both `r=0,1` transfers, 24 proper
+  rotations, six-by-six OS blocks, canonical symplectic/energy preservation,
+  all 27 sites and 81 edges of the `L=3` continuity carrier, three Record rays,
+  one isolated event, one conservative repair, the exact-law boundary, and
+  fresh N1--N8; achieved `PASS=14 FAIL=0`
+- adversarial controls: process-local cubic anisotropy, negative spectral
+  residue, and leaky incidence each exit nonzero at their intended gates
+- no-go packet: restrict the negatives to isolated nonzero raw Record charge on
+  a closed periodic carrier and nonselection by the declared transfer contract;
+  preserve open boundaries, reservoirs, neutral formation, worldlines,
+  downstream uniqueness, nonlinear completion, and exact joint-law adoption
+- current evidence: science commit `d1f83684b1`; PR #6144 is open, mergeable,
+  and `CLEAN` on exact Block-50 delivery `45ac5e2ec3`; graph
+  `5,497/15,739`, out-degree seven; vocabulary, strict lint, premise purity,
+  Python/cache, claim typing, whitespace, forensic N5, and enforced graph/link
+  checks pass; no TOE percentage moves
+- next artifact: one explicit monotone Record worldline/frontier instrument
+  with `Delta J + div S = 0`, the full sourced linearized Bianchi/constraint
+  intertwiner, and the positive two-TT update; test a derived minimal-range or
+  Record-clock selector before preparing an exact `L*` owner-decision packet

@@ -2369,3 +2369,34 @@ instance or Fourier census.
 - Science commit is `fa9062f973`; PR #6143 is open, mergeable, and `CLEAN` on
   exact Block-49 delivery `225c4e64f2`. No canonical edit, fixed percentage,
   audit verdict, or `review-loop` occurs.
+
+## Block 51 Construction And Adversarial Record
+
+- Constructed the local action symbol
+  `K_r=kappa^2+(1+r kappa^2)4 sin^2(q_t/2)` and verified its proper-cubic
+  covariance under all 24 rotations.
+- Trace plus three lattice-divergence constraints have rank four at all 728
+  nonzero `L=9` momenta, leaving exactly two TT coordinates.
+- For `r=0,1`, temporal mass, energy, residue, and contraction decay are
+  positive on every mode; six-by-six OS moment blocks are PSD and the sampled
+  coordinate kernel factors as a positive Gaussian convolution `M C_A M`.
+- The log-transfer oscillator map preserves the symplectic form, positive
+  Hamiltonian, and TT constraints to declared tolerances. Static kernels agree
+  exactly while finite energies differ by `0.027578969` at `k=0.4`.
+- Proved analytically that a closed incidence divergence has total zero. The
+  `L=3` carrier has rank 26 and one isolated charge `1/4` has best residual
+  `0.048112522`; one-edge balanced transport repairs continuity and the Gauss
+  update exactly.
+- Three process-local mutations—cubic anisotropy, negative spectral residue,
+  and leaky incidence—each exit nonzero in the intended checks.
+- Fresh N1--N8 restricts the negatives to the closed isolated source and the
+  displayed transfer contract, preserving boundaries, reservoirs, neutral
+  events, worldlines, uniqueness theorems, nonlinear completion, and exact
+  joint-law adoption.
+- Primary/cache is `PASS=14 FAIL=0`; citation registration is
+  `5,497/15,739`, out-degree seven. Vocabulary, strict lint, premise purity,
+  Python/cache, claim typing, whitespace, forensic readiness, and enforced
+  graph/link invariants pass.
+- Science commit is `d1f83684b1`; PR #6144 is open, mergeable, and `CLEAN` on
+  exact Block-50 delivery `45ac5e2ec3`. No canonical edit, fixed percentage,
+  audit verdict, or `review-loop` occurs.

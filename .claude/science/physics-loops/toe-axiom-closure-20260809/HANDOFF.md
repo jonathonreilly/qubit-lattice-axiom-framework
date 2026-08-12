@@ -1970,3 +1970,42 @@ permanent-Record event. Then construct a distinct lawful clock/boundary
 completion or prove uniqueness. If selection remains open, the necessary
 constitutional object is an exact extensional Admissibility `L*` referent—not
 a sentence saying that some positive transfer exists.
+
+## Block 51 Handoff
+
+Block 51 is local on branch
+`physics-loop/toe-axiom-closure-block51-canonical-joint-law-20260811`, stacked
+exactly on Block-50 delivery head `45ac5e2ec3`. It closes the canonical
+positive-propagation feasibility question. Trace plus lattice divergence have
+rank four at all `728` nonzero `L=9` spatial momenta, leaving exactly two TT
+coordinates. Both `r=0` and `r=1` local action members have positive Gaussian
+one-step kernels, positive OS moments, and positive-energy symplectic
+constraint-preserving log-transfers.
+
+The two members have identical static kernels and unit-speed OS0 limits but
+finite energies `0.394770230/0.367191261` at `k=(0.4,0,0)`. This is the exact
+selection fork: finding a viable transfer did not select a physical law.
+
+The higher-value new result is source continuity. On a closed periodic
+carrier every edge divergence has zero total charge. A single newly formed
+`t`- or `x`-like Record with conditional Block-49 charge `+/-1/4` therefore
+cannot be newly created gravity charge. The `L=3` incidence has rank 26 and
+isolated residual `0.048112522`. A balanced nearest-neighbor transition gives
+`Delta J=-div S` and `E'=E-S`, preserving the Gauss constraint exactly.
+
+Primary/cache is `PASS=14 FAIL=0`; all three process-local mutations exit
+nonzero as intended. Citation registration is `5,497/15,739`, out-degree
+seven. Vocabulary, strict lint, premise purity, Python/cache, staged typing,
+whitespace, forensic N5, and graph/link gates pass. Science commit is
+`d1f83684b1`; PR #6144 is open, mergeable, and `CLEAN`. Independent audit
+remains required. No canonical axiom, fixed TOE percentage, audit verdict, or
+`review-loop` changes.
+
+The next block must bind the available carrier to a real Record law. Construct
+a monotone spacetime worldline/frontier extension instrument whose new Records
+encode conserved transport rather than new charge; derive the complete source
+current tensor and preserve the Hamiltonian, momentum/Ricci, and trace-free
+constraints under the positive two-TT update. Then test whether minimal range,
+exact Record-clock composition, or operational equivalence derives `r=0`. If
+not, prepare one exact extensional `L*` candidate for owner decision. Do not
+count another transfer variant or static source dictionary as TOE progress.

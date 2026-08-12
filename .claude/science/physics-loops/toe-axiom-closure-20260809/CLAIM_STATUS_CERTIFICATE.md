@@ -1668,3 +1668,33 @@ lines are in the landing primary cache.
   failure, all-blocking failure, selected transfer, axiom amendment, TOE
   percentage movement, or audit verdict. Fresh N1--N8 and all five N5
   resolutions land; no `review-loop` is used.
+
+## Block 51 Claim Status
+
+- Positive result: the local constrained family has exactly two TT coordinates
+  at every one of the `728` nonzero `L=9` momenta, a positive one-step
+  Gaussian/OS transfer, and a positive-energy constraint-preserving
+  symplectic Lorentzian log-transfer for both `r=0` and `r=1`.
+- Selector boundary: both members have the same static source response and
+  unit-speed OS0 limit, but at `k=(0.4,0,0)` their energies are
+  `0.394770230/0.367191261`. Positive propagation is feasible; the current
+  foundation does not select its finite-lattice law.
+- Source boundary: a single `+/-1/4` Block-49 Record Ricci-charge increment is
+  not in the range of a closed periodic incidence matrix. On `L=3`, the rank
+  is 26 and the optimal isolated residual is `0.048112522`.
+- Constructive repair: a nearest-neighbor balanced transition has zero total
+  source increment and the exact update `E'=E-S` preserves the discrete Gauss
+  constraint. The missing source is a transition-based conserved current, not
+  cumulative permanent-Record count.
+- Evidence: source/input-pinned primary cache `PASS=14 FAIL=0`; cubic-
+  anisotropy, negative-residue, and leaky-incidence mutations exit nonzero;
+  graph `5,497/15,739`, out-degree seven. Vocabulary, strict lint, premise
+  purity, Python/cache, claim typing, whitespace, forensic readiness, and
+  enforced graph/link invariants pass. Science commit is `d1f83684b1`; PR
+  #6144 is open, mergeable, and `CLEAN` on exact Block-50 delivery
+  `45ac5e2ec3`.
+- Scope: positive linear two-TT feasibility plus a closed-periodic continuity
+  cut, not selected gravity, full sourced Bianchi propagation, nonlinear or
+  full-`Z^3` closure, axiom amendment, TOE percentage movement, or audit
+  verdict. Fresh N1--N8 and all five N5 resolutions land; no `review-loop` is
+  used.

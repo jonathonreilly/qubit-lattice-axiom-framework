@@ -77,6 +77,12 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
     "pairwise_separated_multisource_cycle736_bounded_theorem_note_2026-07-28": [
         "scripts/frontier_cycle736_multisource_independent_check_2026_07_28.py",
     ],
+    # Cycle 737's exact finite support checker is deliberately a sibling rather
+    # than a primary import. Keep it in the restricted claim packet explicitly.
+    "physical_cell_cutting_least_computing_sets_cycle737_note_2026-08-05": [
+        "scripts/physical_cell_cutting_least_computing_sets_cycle737_"
+        "independent_check_2026_08_05.py",
+    ],
     # Cycle 737's independent checker requires a fresh passing primary, then
     # evaluates the primary's exported literal gates without importing it.
     "ring_family_uniformity_cycle737_bounded_theorem_note_2026-07-28": [

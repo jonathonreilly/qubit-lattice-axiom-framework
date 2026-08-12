@@ -33,6 +33,7 @@
       "base.geometry": "PASS",
       "base.rank": "PASS",
       "dep.cycle736": "PASS",
+      "dep.primary_receipt": "PASS",
       "dep.responses": "PASS",
       "geo.corner": "PASS",
       "geo.even.d": "PASS",
@@ -43,6 +44,7 @@
       "hostile.dependency": "PASS",
       "hostile.sample_geometry": "PASS",
       "hostile.support": "PASS",
+      "independent.inverse": "PASS",
       "lic.ctrl": "PASS",
       "lic.full": "PASS",
       "lic.half": "PASS",
@@ -69,7 +71,7 @@
       "wit.six": "PASS",
       "wit.six-flip": "PASS"
     },
-    "pass": 41
+    "pass": 43
   },
   "input_sha256": {
     "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
@@ -77,9 +79,10 @@
     "docs/PHYSICAL_CELL_CUTTING_CHARGE_SPACE_CYCLE736_NOTE_2026-08-05.md": "b577a9ccfb12a246022a2caa85aab0f87d5cc65005b89d0b8d252b499cf56004",
     "docs/PHYSICAL_CELL_CUTTING_LEAST_COMPUTING_SETS_CYCLE737_NOTE_2026-08-05.md": "eab3120bdee580b4b54561740659ebe142bc543c95901c00fa71e04c7d558a5a",
     "outputs/physical_cell_cutting_charge_space_cycle736_2026_08_05_receipt_2026-08-05.json": "e3bfc00d596d0f934bd39f7268c8f5f43b2d98e3291f8e0c1cacbac97fd69820",
+    "outputs/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05_receipt_2026-08-05.json": "1088b2cf8aa99b9f4517fec84097b167ad6511df7f63943ee0f3f1e3240efb30",
     "scripts/physical_cell_cutting_charge_space_cycle736_2026_08_05.py": "ba85245a332b3b68984c7d4759f637be296bcf3b4a9bb8742008ae9e3d446d36",
     "scripts/physical_cell_cutting_charge_space_cycle736_independent_check_2026_08_05.py": "e771c7ce3ddde897d3c6c65ab4589acb94297fe07c3c261b29e3075a518b0bf9",
-    "scripts/physical_cell_cutting_least_computing_sets_cycle737_independent_check_2026_08_05.py": "e452a7b00ba0fadf65949ad2fb3e7eed462905a0202bacdc494b2fe83e642c5e"
+    "scripts/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05.py": "4943c2bd0d89099394c06555f065bbed93c2d536c87a8a131a483535f6b027cd"
   },
   "no_go_discipline": {
     "claim_scope": "complete support search through cardinality eight in the fixed 192-column finite incidence system only",
@@ -137,12 +140,12 @@
       "four": {
         "canonical_rows_with_bit_sha256": "a20e73d19d927e43e0d91af911722fbd8913c484f6bef9c572efaf792316d191",
         "ones": 5664,
-        "packbits_sha256": "a9254e1cfdc70ad7a737d26b67a5ee6709f8717ed039855a67f7a2fe947b69d6"
+        "packbits_sha256": "d449fe9fd835fe265ef274c509479f80de684c324d049e7ef8917f29e46b85aa"
       },
       "four-flip": {
         "canonical_rows_with_bit_sha256": "33251a165ab0a2101fa646f762a7015fcf2d5d8032d5cadb1df50e9dda52bd19",
         "ones": 10136,
-        "packbits_sha256": "a3ae0a599b22927626fddb1c0262895a95bfd447b6d5e9c32828ba22531df078"
+        "packbits_sha256": "56075a5889b290adc895433a87d4649a6f4ca9b6db93d766efe3503b0c1363e9"
       },
       "one": {
         "canonical_rows_with_bit_sha256": "cd0070ded9d3ccd559cdba5b6f375548ddfa70ad946f9d99d4ac17f64377c2bc",
@@ -152,22 +155,22 @@
       "seven": {
         "canonical_rows_with_bit_sha256": "5311e95f082dfb171d2ae94b3f0ccde8516fcac440696eae18cbc3e3f33f8643",
         "ones": 7424,
-        "packbits_sha256": "4ffe85a17ff8944585d393145b23856081af78c93bb438687bbf01c711db38e8"
+        "packbits_sha256": "16005caca3f7078f15cf243f69f7a9983551b5e28804863aa7c77d2862314260"
       },
       "seven-flip": {
         "canonical_rows_with_bit_sha256": "b4bffadc08ae448822a115f7787307f592a573692f30c6d637da508cf587eb85",
         "ones": 8376,
-        "packbits_sha256": "706683a6dea0d41e4a8249d4228770423df68c0b3fa7d8d8568273d24c089992"
+        "packbits_sha256": "3a35ed79e6d115ac273cf89c71613a61cae923bd9179c2ba2e8150b4b6ab883b"
       },
       "six": {
         "canonical_rows_with_bit_sha256": "016921ddc4d1b953ceb41b4087ae4e0530925b28f6b83a1fa8024e60651021b8",
         "ones": 7704,
-        "packbits_sha256": "36175a38e4663c4166e8305f59cc0c032016a6e36790ae649728f3f28d2754f2"
+        "packbits_sha256": "03391b1187d55deecfca04a8a1a81678466f27db2349b69900f55386a03e77d0"
       },
       "six-flip": {
         "canonical_rows_with_bit_sha256": "9cdc13d500cab0f64e56104866b4b298609d27fcf1d0c0ca6d9a0cc2dcd28195",
         "ones": 8096,
-        "packbits_sha256": "a7a40ffcf7c0cea0974ecda126cb5b763e2149582df813c83c691dbbeaeafcb3"
+        "packbits_sha256": "601a95ad5b4fddcdda3938a8d7cb474b2dd9b63e2de6334ecdcd9ad284fccee9"
       },
       "zero": {
         "canonical_rows_with_bit_sha256": "cbdbd1b019969819a98851ef9cc08782121da63ab99519717bb06b5d08c5b0f4",
@@ -175,11 +178,11 @@
         "packbits_sha256": "0b9c4b62ba620c77aebb3bb958027e5ea9c3c9e0728e53a5e2893836d5c70935"
       }
     },
-    "incidence_packbits_sha256": "7a40d8d5f9124fc19f32d2c20875fb9842b1ff75eced9d137e39ac017a7c89e5",
+    "incidence_packbits_sha256": "4491c348fa01ec7ec29d4e2bf9412983d919cee14107d5782a6a11103b286742",
     "support_column_order_sha256": "56b1de932ec32c731c060e02886775465ceca0281e6de1d99292140aedcf158b"
   },
-  "runner_sha256": "4943c2bd0d89099394c06555f065bbed93c2d536c87a8a131a483535f6b027cd",
-  "schema": "physical-cell-cutting-least-computing-sets-cycle737-v2",
+  "runner_sha256": "e452a7b00ba0fadf65949ad2fb3e7eed462905a0202bacdc494b2fe83e642c5e",
+  "schema": "physical-cell-cutting-least-computing-sets-cycle737-independent-v1",
   "status": "pass",
   "supplied_model": {
     "cost": "corner pairs with four-coordinate L1 separation greater than one",

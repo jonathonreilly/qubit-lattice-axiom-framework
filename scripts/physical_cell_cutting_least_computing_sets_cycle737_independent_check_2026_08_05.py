@@ -1132,16 +1132,35 @@ reading_identity = {
         for name, function in TGT[:8]
     },
 }
+primary_identity = PRIMARY_RECEIPT.get("reading_identity", {})
+canonical_identity_matches = (
+    primary_identity.get("canonical_incidence_rows_sha256")
+    == reading_identity["canonical_incidence_rows_sha256"]
+    and primary_identity.get("support_column_order_sha256")
+    == reading_identity["support_column_order_sha256"]
+    and set(primary_identity.get("functions", {}))
+    == set(reading_identity["functions"])
+    and all(
+        primary_identity["functions"][name].get("ones")
+        == reading_identity["functions"][name]["ones"]
+        and primary_identity["functions"][name].get(
+            "canonical_rows_with_bit_sha256"
+        )
+        == reading_identity["functions"][name]["canonical_rows_with_bit_sha256"]
+        for name in reading_identity["functions"]
+    )
+)
 gate(
     PRIMARY_RECEIPT.get("schema")
     == "physical-cell-cutting-least-computing-sets-cycle737-v2"
     and PRIMARY_RECEIPT.get("status") == "pass"
     and PRIMARY_RECEIPT.get("gates", {}).get("fail") == 0
     and PRIMARY_RECEIPT.get("runner_sha256") == file_sha256(PRIMARY_PATH)
-    and PRIMARY_RECEIPT.get("reading_identity") == reading_identity,
+    and canonical_identity_matches,
     "dep.primary_receipt",
     "the primary pass receipt binds the current primary bytes and exactly matches the "
-    "independently reconstructed canonical incidence/readings identity",
+    "independently reconstructed row-order-invariant incidence/readings identity; "
+    "ordered hashes are retained as traversal-specific provenance",
 )
 
 receipt = {

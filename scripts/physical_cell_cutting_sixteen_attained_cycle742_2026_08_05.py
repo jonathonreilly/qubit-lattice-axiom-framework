@@ -1,7 +1,7 @@
 """Cycle 742: the supplied six-reading carrier floor sixteen is attained; two involutions extend
 the 48 cutting symmetries to a piece-transitive group; complete weight
 enumerators on the enumerable orbit pairs; witness intervals for the six
-charges. Rebuilds the incidence system from the admissibility construction,
+named readings. Rebuilds the incidence system from the supplied construction,
 relabels orbits by first appearance, and gates every number quoted in the
 paired note. Output stays under 5500 characters."""
 import hashlib
@@ -1037,7 +1037,7 @@ ESP = orbit_split(CLO, GENS)
 gate(ESP == [12, 12, 24, 24, 48], "G44",
      "extended-group orbit sizes of the 120 are " + " ".join(str(v) for v in ESP))
 
-# ---- section K: witnesses for the other five charges ----
+# ---- section K: witnesses for the other five named readings ----
 WIT = {
     "four-flip": (20, (0, 0, 12, 8),
                   [13, 17, 4, 23, 11, 2, 12, 2, 1, 8, 4, 24, 10, 9, 9, 2, 10, 11, 9, 6]),
@@ -1139,7 +1139,7 @@ receipt = {
     },
     "single_orbit": {
         "ranks": SK, "augmented_four_ranks": SA,
-        "six_charges_consistent_on_any_single": False,
+        "six_named_readings_consistent_on_any_single": False,
     },
     "orbit_pairs": {
         "kernel_dimensions": PKD,
@@ -1176,7 +1176,7 @@ receipt = {
         name: np.cumsum(np.array(WIT[name][2])).astype(int).tolist() for name in WNM
     },
     "one_reading": {
-        "classification": "excluded by the supplied charge definition",
+        "classification": "excluded by the supplied six-reading definition",
         "weight_twelve_pair_12_carriers": 16,
     },
     "no_go_discipline": {

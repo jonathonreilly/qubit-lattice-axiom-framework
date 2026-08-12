@@ -1,27 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/physical_cell_cutting_forced_certificate_cycle740_2026_08_05.py
+runner_sha256: e5c68db1920acb76d1bd9b0d0e41095f9ca8a3215312aade5b9195b56b47f0e3
+input_fingerprint_sha256: 8d6a426ae43f79b00c9051223cdb564344b48cb1bf360b3a5ac0f768bb45f79e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 3.26
+status: ok
+----- stdout -----
 cycle 740: INC 15800x192 per-cutting 24 to 24 per-piece 1975 to 1975 rowrank 88 colrank 88 kernel 104 distinct 15800
 kernel words checked on every cutting, least weight 8 greatest 20
-PASS G01  the cuttings of least cost form a 15800 by 192 table over the two element field, 24 pieces to a cutting in the search and in the table alike
-PASS G02  every one of the 192 pieces is used by exactly 1975 cuttings, an odd count
-PASS G03  the elimination over the cuttings and the independent elimination over the pieces return the same rank 88, leaving a kernel of dimension 104
-PASS G04  the 15800 cuttings are pairwise distinct as piece sets
-PASS G05  all 104 kernel words meet every one of the 15800 cuttings evenly and are independent
-PASS G06  the 48 symmetries permute cuttings and pieces leaving the table fixed, which is what fixes the canonical piece order the blocks are cut from
+PASS base.geometry  all 15168 co-occurring pairs have an exact separator
+PASS dep.cycle737  Cycle 737 binds this 15,800-row ordered 192-piece population
+PASS G01  exact-cover table 15800 by 192, row weight 24
+PASS G02  all 192 columns have odd weight 1975
+PASS G03  row and column ranks 88; kernel dimension 104
+PASS G04  all 15800 rows are distinct
+PASS G05  104 independent kernel words vanish on all 15800 rows
+PASS G06  48 declared cell symmetries preserve the table; blocks use a separate lexicographic order
 whole set: xor of all 15800 cuttings fills 24 packed bytes and 192 odd columns, and a pivot combination of 48
 PASS G07  the symmetric difference of all 15800 cuttings is the whole piece set: all 24 packed bytes come out full and all 192 column counts come out odd
 PASS G08  the whole set is carried a second way, by an explicit combination of 48 pivot cuttings checked on all 192 piece coordinates
 quarter image dim 1 words 0000,1100 block image dim 5 words 32 basis 00000011,00001100,00110000,01100000,11000000
-PASS G09  no kernel word meets the whole set, either half or either quarter of the second half oddly, which is the previous cycle's forcing pattern seen from the kernel
+PASS G09  no kernel word meets the whole set, either half or either quarter of the second half oddly, reconstructing the five-set forcing profile directly from this table
 PASS G10  the quarter parity image is exactly the two words 0000,1100: contained in the annihilator of the forced quarters, and its generator is present because kernel words meet the first quarter oddly
 quarter unions forced 8 of 16: empty,Q3,Q2,R,L,compQ2,compQ3,whole
 PASS G11  of the 16 quarter unions exactly the 8 annihilating the image are forced, the two quarter complements among them, and the direct membership test agrees with the annihilator one for one
 PASS G12  each of the 16 quarter unions carries its own certificate: a combination checked piece by piece when forced, a kernel word meeting it oddly when free
 block unions forced 8 of 256, annihilator 8, two to the 8 less 5
 of the 15 blocks forced L,Q2,Q3,R,whole; free E0,E1,E2,E3,E4,E5,E6,E7,Q0,Q1
-PASS G13  the block parity image annihilates the block words of the 5 sets the previous cycle found forced, which bounds its dimension by 5; the measurement attains that bound at 5 with 32 words
+PASS G13  the block parity image annihilates the block words of the 5 sets this search reconstructs as forced, which bounds its dimension by 5; the measurement attains that bound at 5 with 32 words
 PASS G14  on all 256 block unions the direct membership test and the annihilator of the measured image return the same answer
 PASS G15  exactly 8 of the 256 block unions are forced, two to the 8 less 5
 PASS G16  each of the 256 block unions carries its own certificate, checked piece by piece when forced and by an odd kernel meet when free
-PASS G17  read back on the 15 block indicators the sweep returns the previous cycle's answer: the whole set, its halves and the two quarters of the second half
+PASS G17  on the 15 declared block indicators the direct sweep returns the whole set, its halves and the two quarters of the second half
 PASS G18  the forced block unions contain the empty set and are closed under symmetric difference, so they are a space of 8 sets
 PASS G19  every forced block union is a union of quarters: no block of 24 pieces is forced alone, and the two quarters of the first half are forced only together
 combinations L 46 Q2 26 compQ2 50 compQ3 46
@@ -35,8 +46,21 @@ planted forced weight 96 from 30 cuttings, recovered 44; with the half 44; plant
 PASS G25  the planted forced set is recovered blind as forced, by a combination of 44 pivot cuttings that is not the 30 cuttings planted, checked piece by piece
 PASS G26  its symmetric difference with the first half, a set that is no block union, is forced too, by 44 pivot cuttings checked the same way
 PASS G27  the planted 20 piece set is not forced: a kernel word of weight 8 with zero syndrome meets it oddly, after 0 redraws
+PASS hostile.order  a cyclic order shift changes the forced block profile
+PASS hostile.dependency  failed dependency status is rejected
+PASS hostile.sample_geometry  sample-disjoint pieces can overlap; exact separation is load-bearing
+PASS hostile.incidence  one flipped bit breaks row/column counts and population identity
 elapsed under 10 s peak memory under 200 MB
 PASS G28  the whole runner finishes under 900 seconds
 PASS G29  its output stays under 5500 characters
 
-TOTAL: PASS=29 FAIL=0
+per_element: checked -- all 192 used pieces enter the exact incidence, row-space, kernel, block, and certificate checks
+per_site: checked -- one supplied 16-corner coordinate cell only; no physical assembly-cell or framework site identification is executed
+per_mode: checked and not executed -- the finite incidence system has no field, spectral, or momentum-mode decomposition
+per_block: checked -- all 16 quarter unions and all 256 unions of the eight declared lexicographic 24-piece blocks
+lattice_wide: checked and not executed -- no multi-cell, arbitrary-domain, thermodynamic, boundary, or continuum negative is asserted
+RECEIPT outputs/physical_cell_cutting_forced_certificate_cycle740_2026_08_05_receipt_2026-08-05.json
+TOTAL: PASS=35 FAIL=0
+
+----- stderr -----
+

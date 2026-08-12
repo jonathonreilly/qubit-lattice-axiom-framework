@@ -1,120 +1,206 @@
 {
- "cycle": 740,
- "failures": 0,
- "gates": 29,
- "headline": "On the 15800 least-cost cuttings of the single cell, the forced piece sets form a space over the two element field, and the previous cycle's five forced blocks are its shadow on the block lattice. Row rank 88 against kernel dimension 104 on 192 pieces; the quarter-parity image of the kernel is exactly the two words 0000 and 1100, so of the 16 quarter unions exactly 8 are forced, the complements of the third and fourth quarters among them for the first time; the block-parity image measures dimension 5, attaining the bound of 5 that the previous cycle's five forced sets impose, so exactly 8 of the 256 block unions are forced, two to the 8 less 5, and every one is a union of quarters - no block of 24 pieces is forced alone, and the two quarters of the first half are forced only together. The whole set is the symmetric difference of all 15800 cuttings, every piece used an odd 1975 times, and is carried again by 48 pivot cuttings; explicit combinations carry the first half from 46 pivot cuttings, the third quarter from 26, and the two complements from 50 and 46. Every free block has a kernel witness of weight 8 with zero syndrome on all 15800 cuttings; the reduced kernel basis has least weight 8 and greatest 20. A planted forced set of weight 96 folded from 30 cuttings is recovered blind from 44 pivot cuttings, its symmetric difference with the first half - a set that is no block union - is forced too, and a planted 20 piece set is caught free by a weight-8 witness after 0 redraws.",
- "lane": "emergent-geometry",
- "note": "docs/PHYSICAL_CELL_CUTTING_FORCED_CERTIFICATE_CYCLE740_NOTE_2026-08-05.md",
- "recorded_output": "outputs/physical_cell_cutting_forced_certificate_cycle740_2026_08_05_cold_2026-08-05.txt",
- "results": {
-  "block_image": {
-   "basis": [
-    "00000011",
-    "00001100",
-    "00110000",
-    "01100000",
-    "11000000"
-   ],
-   "bound_from_previous_cycle": 5,
-   "dimension": 5,
-   "words": 32
+  "audit_status_authority": "independent audit lane only",
+  "block_partition": {
+    "complete_union_census": 256,
+    "forced_indicator_labels": [
+      "L",
+      "Q2",
+      "Q3",
+      "R",
+      "whole"
+    ],
+    "forced_union_count": 8,
+    "forced_union_masks": [
+      "00000000",
+      "00000011",
+      "00001100",
+      "00001111",
+      "11110000",
+      "11110011",
+      "11111100",
+      "11111111"
+    ],
+    "free_indicator_labels": [
+      "E0",
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "Q0",
+      "Q1"
+    ],
+    "image_basis": [
+      "00000011",
+      "00001100",
+      "00110000",
+      "01100000",
+      "11000000"
+    ],
+    "image_dimension": 5,
+    "image_word_count": 32,
+    "image_words": [
+      "00000000",
+      "00000011",
+      "00001100",
+      "00001111",
+      "00110000",
+      "00110011",
+      "00111100",
+      "00111111",
+      "01010000",
+      "01010011",
+      "01011100",
+      "01011111",
+      "01100000",
+      "01100011",
+      "01101100",
+      "01101111",
+      "10010000",
+      "10010011",
+      "10011100",
+      "10011111",
+      "10100000",
+      "10100011",
+      "10101100",
+      "10101111",
+      "11000000",
+      "11000011",
+      "11001100",
+      "11001111",
+      "11110000",
+      "11110011",
+      "11111100",
+      "11111111"
+    ]
   },
-  "block_unions": {
-   "all_forced_are_quarter_unions": true,
-   "forced": 8,
-   "of": 256,
-   "routes_agree_on_all": true,
-   "space_closed_under_symmetric_difference": true
+  "claim_type": "bounded_theorem",
+  "direct_dependency": {
+    "canonical_incidence_rows_sha256": "49c70821648fa7a96aa621289ee133ca767a792d2e326f7aca11b6bd85a09bda",
+    "cycle": 737,
+    "schema": "physical-cell-cutting-least-computing-sets-cycle737-v2",
+    "status": "pass",
+    "support_column_order_sha256": "56b1de932ec32c731c060e02886775465ceca0281e6de1d99292140aedcf158b"
   },
-  "combinations": {
-   "L": 46,
-   "Q2": 26,
-   "compQ2": 50,
-   "compQ3": 46,
-   "whole": 48
+  "explicit_certificates": {
+    "L": 46,
+    "Q2": 26,
+    "compQ2": 50,
+    "compQ3": 46,
+    "free_block_witness_weights": [
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8
+    ],
+    "planted_forced_pivot_cuttings": 44,
+    "planted_free_witness_weight": 8,
+    "whole_pivot_cuttings": 48
   },
-  "controls": {
-   "planted_forced_cuttings": 30,
-   "planted_forced_recovered_from_pivots": 44,
-   "planted_forced_weight": 96,
-   "planted_free_pieces": 20,
-   "planted_free_redraws": 0,
-   "planted_free_witness_weight": 8,
-   "seed": 74000,
-   "symmetric_difference_with_half_pivots": 44
+  "forced_subset_definition": "indicator lies in the GF(2) row space, equivalently is orthogonal to the incidence kernel; its meet parity is invariant among carriers of one fixed finite reading",
+  "gates": {
+    "fail": 0,
+    "named": {
+      "G01": "PASS",
+      "G02": "PASS",
+      "G03": "PASS",
+      "G04": "PASS",
+      "G05": "PASS",
+      "G06": "PASS",
+      "G07": "PASS",
+      "G08": "PASS",
+      "G09": "PASS",
+      "G10": "PASS",
+      "G11": "PASS",
+      "G12": "PASS",
+      "G13": "PASS",
+      "G14": "PASS",
+      "G15": "PASS",
+      "G16": "PASS",
+      "G17": "PASS",
+      "G18": "PASS",
+      "G19": "PASS",
+      "G20": "PASS",
+      "G21": "PASS",
+      "G22": "PASS",
+      "G23": "PASS",
+      "G24": "PASS",
+      "G25": "PASS",
+      "G26": "PASS",
+      "G27": "PASS",
+      "G28": "PASS",
+      "G29": "PASS",
+      "base.geometry": "PASS",
+      "dep.cycle737": "PASS",
+      "hostile.dependency": "PASS",
+      "hostile.incidence": "PASS",
+      "hostile.order": "PASS",
+      "hostile.sample_geometry": "PASS"
+    },
+    "pass": 35
   },
-  "fifteen_blocks": {
-   "forced": [
-    "L",
-    "Q2",
-    "Q3",
-    "R",
-    "whole"
-   ],
-   "free": [
-    "E0",
-    "E1",
-    "E2",
-    "E3",
-    "E4",
-    "E5",
-    "E6",
-    "E7",
-    "Q0",
-    "Q1"
-   ]
+  "input_sha256": {
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
+    "docs/PHYSICAL_CELL_CUTTING_FORCED_CERTIFICATE_CYCLE740_NOTE_2026-08-05.md": "5aa071ea6bd0567cf77cc9f0190ace7d24e400e5e2695bb6059f50b71e663d6b",
+    "outputs/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05_receipt_2026-08-05.json": "1088b2cf8aa99b9f4517fec84097b167ad6511df7f63943ee0f3f1e3240efb30",
+    "scripts/physical_cell_cutting_forced_certificate_cycle740_independent_check_2026_08_05.py": "30ab843c1dc8afa2d6e880835446356a6fb89bb00f2ab7dbedb4554045c3c475",
+    "scripts/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05.py": "4943c2bd0d89099394c06555f065bbed93c2d536c87a8a131a483535f6b027cd"
   },
-  "parity_law": {
-   "distinct_cuttings": 15800,
-   "gf2_rank": 88,
-   "kernel_dimension": 104,
-   "pieces": 192,
-   "pieces_per_cutting": 24,
-   "uses_per_piece_odd": 1975
+  "no_go_discipline": {
+    "claim_scope": "complete 16-quarter-union and 256-declared-block-union censuses in the fixed 15,800 by 192 finite incidence system only",
+    "n5_certificate": "five resolution lines in primary stdout and canonical cache",
+    "status": "PASS"
   },
-  "quarter_image": {
-   "dimension": 1,
-   "words": [
-    "0000",
-    "1100"
-   ]
+  "population": {
+    "cooccurring_pairs_exactly_separated": 15168,
+    "geometric_cuttings": 15800,
+    "incidence_rank": 88,
+    "kernel_dimension": 104,
+    "pieces_per_cutting": 24,
+    "used_pieces": 192,
+    "uses_per_piece": 1975
   },
-  "quarter_unions": {
-   "forced": 8,
-   "forced_list": [
-    "empty",
-    "Q3",
-    "Q2",
-    "R",
-    "L",
-    "compQ2",
-    "compQ3",
-    "whole"
-   ],
-   "of": 16,
-   "routes_agree_on_all": true
+  "quarter_partition": {
+    "complete_union_census": 16,
+    "forced_union_count": 8,
+    "forced_union_labels": [
+      "empty",
+      "Q3",
+      "Q2",
+      "R",
+      "L",
+      "compQ2",
+      "compQ3",
+      "whole"
+    ],
+    "image_dimension": 1,
+    "image_words": [
+      "0000",
+      "1100"
+    ]
   },
-  "witnesses": {
-   "basis_greatest_weight": 20,
-   "basis_least_weight": 8,
-   "first_two_parity_words": [
-    "10011100",
-    "01011100"
-   ],
-   "free_blocks_with_witness": 10,
-   "least_basis_pair_weight": 8,
-   "witness_weights": [
-    8,
-    8,
-    8,
-    8,
-    8,
-    8,
-    8,
-    8,
-    8,
-    8
-   ]
+  "runner_sha256": "e5c68db1920acb76d1bd9b0d0e41095f9ca8a3215312aade5b9195b56b47f0e3",
+  "schema": "physical-cell-cutting-forced-certificate-cycle740-v2",
+  "status": "pass",
+  "supplied_model": {
+    "block_partition": "declared lexicographic support order in eight blocks of 24",
+    "cost": "corner pairs with four-coordinate L1 separation greater than one",
+    "physical_cell_tick_simplex_reading_bridge": "open",
+    "piece_class": "five-corner normalized-volume-one simplices only",
+    "shape": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "support_universe": "the 192 pieces used by the 15,800 supplied cuttings only"
   }
- }
 }

@@ -97,6 +97,11 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
         "scripts/physical_cell_cutting_least_computing_sets_cycle737_"
         "independent_check_2026_08_05.py",
     ],
+    # Cycle 740's independent checker is a sibling rather than a primary import.
+    "physical_cell_cutting_forced_certificate_cycle740_note_2026-08-05": [
+        "scripts/physical_cell_cutting_forced_certificate_cycle740_"
+        "independent_check_2026_08_05.py",
+    ],
     # Cycle 737's independent checker requires a fresh passing primary, then
     # evaluates the primary's exported literal gates without importing it.
     "ring_family_uniformity_cycle737_bounded_theorem_note_2026-07-28": [

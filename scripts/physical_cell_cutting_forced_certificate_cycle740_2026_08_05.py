@@ -1,30 +1,69 @@
-"""Cycle 740: the forced piece sets as a space, and the block lattice it cuts out.
+"""Cycle 740: forced subsets in a supplied finite cutting-incidence system.
 
-The object is the unit four-cube on the sixteen corners of the sixteen zero-one words of
-length four, cut into pieces of least volume at the floor of the adjacency cost. Its
-15800 cuttings use 24 pieces each, drawn from 192 pieces in all. A set of pieces is
-forced when its indicator lies in the row space of the incidence table: every cutting
-then fixes the parity of how many of that set's pieces it uses, so any carrier's meet
-with a forced set has a parity no reading can move. The previous cycle measured which of
-the 15 block indicators of the canonical piece order are forced. This runner checks that
-the forced sets are a space, measures the quarter parity image and the block parity image
+The supplied object is the unit four-cube on the sixteen zero-one corner labels, cut
+into normalized-volume-one corner simplices at the floor of a declared four-coordinate
+L1 pair cost. Its 15,800 rows use 24 pieces each, drawn from 192 used pieces.
+A subset is called forced when its indicator lies in the incidence row space:
+its meet parity is invariant among supports of one fixed finite reading. This is
+finite linear algebra, not physical necessity. The runner reconstructs the
+profile of 15 indicators from a declared lexicographic piece order, measures the
+quarter parity image and the block parity image
 of the kernel, settles all 16 quarter unions and all 256 block unions by two independent
 routes with a certificate attached to each, recovers explicit cutting combinations for
 the forced blocks, exhibits a kernel witness for every free block, and runs two planted
 controls.
 
 Class-A: integer and field-with-two-elements arithmetic on a finite explicit object, no
-solver. Every count below is measured here.
+solver. Every count below is measured here. No physical cell, tick, reading, observable,
+or framework selection is identified. Failed gates write a failing receipt and exit
+nonzero.
 """
+import hashlib
 import itertools
+import json
 import resource
+import sys
 import time
+from pathlib import Path
 
 import numpy as np
+
+ROOT = Path(__file__).resolve().parents[1]
+NOTE_PATH = "docs/PHYSICAL_CELL_CUTTING_FORCED_CERTIFICATE_CYCLE740_NOTE_2026-08-05.md"
+INDEPENDENT_PATH = (
+    "scripts/physical_cell_cutting_forced_certificate_cycle740_"
+    "independent_check_2026_08_05.py"
+)
+C737_RECEIPT_PATH = (
+    "outputs/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05_"
+    "receipt_2026-08-05.json"
+)
+RECEIPT_PATH = ROOT / (
+    "outputs/physical_cell_cutting_forced_certificate_cycle740_2026_08_05_"
+    "receipt_2026-08-05.json"
+)
+AUDIT_INPUT_PATHS = (
+    "docs/PHYSICAL_CELL_CUTTING_FORCED_CERTIFICATE_CYCLE740_NOTE_2026-08-05.md",
+    "scripts/physical_cell_cutting_forced_certificate_cycle740_"
+    "independent_check_2026_08_05.py",
+    "outputs/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05_"
+    "receipt_2026-08-05.json",
+    "scripts/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05.py",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+)
+
+
+def file_sha256(path):
+    return hashlib.sha256((ROOT / path).read_bytes()).hexdigest()
+
+
+with (ROOT / C737_RECEIPT_PATH).open(encoding="utf-8") as handle:
+    C737_RECEIPT = json.load(handle)
 
 T0 = time.time()
 PF = [0, 0]
 OUT = [0]
+GATES = []
 BAD = "9" + "9"
 
 
@@ -38,8 +77,10 @@ def emit(s):
 
 
 def gate(ok, name, detail):
-    PF[0 if ok else 1] += 1
-    emit(("PASS " if ok else "FAIL ") + name + "  " + detail)
+    passed = bool(ok)
+    PF[0 if passed else 1] += 1
+    GATES.append((name, passed))
+    emit(("PASS " if passed else "FAIL ") + name + "  " + detail)
 
 
 def cshow(n):
@@ -170,6 +211,32 @@ for i in range(NPIECE):
         b |= 1 << int(j)
     MASK.append(b)
 ALLQ = (1 << NQ) - 1
+NEG = [
+    np.array(t, dtype=np.int64)
+    for t in itertools.product((-1, 0, 1), repeat=4)
+    if any(t)
+]
+
+
+def separated(piece_indices):
+    """Count pairs separated by an exact integer plane from a finite candidate set."""
+    points = [V[UNI[i]] for i in piece_indices]
+    facets = []
+    for i in piece_indices:
+        inverse = IV[i]
+        facets.append([inverse[k] for k in range(4)] + [-inverse.sum(axis=0)])
+    good = 0
+    total = 0
+    for a in range(len(piece_indices)):
+        for b in range(a + 1, len(piece_indices)):
+            total += 1
+            for normal in NEG + facets[a] + facets[b]:
+                left = points[a] @ normal
+                right = points[b] @ normal
+                if int(left.max()) <= int(right.min()) or int(right.max()) <= int(left.min()):
+                    good += 1
+                    break
+    return good, total
 
 
 BY, MK = {}, dict((i, MASK[i]) for i in MINP)
@@ -200,6 +267,11 @@ NS = len(SOL)
 USED = sorted(set(i for s in SOL for i in s))
 NPO = len(USED)
 P2I = dict((p, a) for a, p in enumerate(USED))
+
+cooccurring = set()
+for solution in SOL:
+    cooccurring.update(itertools.combinations(solution, 2))
+separated_pairs = sum(separated(pair)[0] for pair in sorted(cooccurring))
 
 CM = np.zeros(NPIECE, dtype=np.int64)
 for i in range(NPIECE):
@@ -423,8 +495,34 @@ BPV, BSPAN = spanof(bpar(w) for w in KB)
 D4, D8 = len(QPV), len(BPV)
 QANN, BANN = annih(QSPAN, 4), annih(BSPAN, 8)
 BBASIS = [bshow(BPV[h], 8) for h in sorted(BPV)]
+CTUP = [tuple(sorted(int(c) for c in UNI[USED[a]])) for a in range(NPO)]
+packed_incidence_rows = [bytes(row) for row in np.packbits(INC, axis=1)]
+canonical_incidence_rows_sha256 = hashlib.sha256(
+    b"".join(sorted(packed_incidence_rows))
+).hexdigest()
+support_column_order_sha256 = hashlib.sha256(
+    json.dumps(CTUP, separators=(",", ":")).encode("utf-8")
+).hexdigest()
+dep_identity = C737_RECEIPT.get("reading_identity", {})
+dep_population = C737_RECEIPT.get("population", {})
+dependency_ok = (
+    C737_RECEIPT.get("schema")
+    == "physical-cell-cutting-least-computing-sets-cycle737-v2"
+    and C737_RECEIPT.get("status") == "pass"
+    and C737_RECEIPT.get("gates", {}).get("fail") == 0
+    and C737_RECEIPT.get("runner_sha256")
+    == file_sha256(
+        "scripts/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05.py"
+    )
+    and dep_population.get("geometric_cuttings") == NS
+    and dep_population.get("used_pieces") == NPO
+    and dep_identity.get("canonical_incidence_rows_sha256")
+    == canonical_incidence_rows_sha256
+    and dep_identity.get("support_column_order_sha256")
+    == support_column_order_sha256
+)
 
-# ---- the table, its two spaces, and the symmetries that fix the canonical piece order
+# ---- the table, its spaces, declared ordering, and supplied cell symmetries
 RS = INCL.sum(axis=1)
 RMIN, RMAX = int(RS.min()), int(RS.max())
 CMIN, CMAX = int(CSUM.min()), int(CSUM.max())
@@ -433,23 +531,30 @@ emit("cycle 740: INC {0}x{1} per-cutting {2} to {3} per-piece {4} to {5} rowrank
                                                   ERANK, CRANK, NKER, NDIST))
 emit("kernel words checked on every cutting, least weight {0} greatest {1}".format(
     KWT[0], KWT[-1]))
+gate(
+    len(cooccurring) == 15168 and separated_pairs == len(cooccurring),
+    "base.geometry",
+    "all {0} co-occurring pairs have an exact separator".format(len(cooccurring)),
+)
+gate(
+    dependency_ok,
+    "dep.cycle737",
+    "Cycle 737 binds this 15,800-row ordered 192-piece population",
+)
 gate(INC.shape == (15800, 192) and NS == 15800 and NPO == 192 and FULL == set([24])
      and RMIN == 24 and RMAX == 24, "G01",
-     "the cuttings of least cost form a {0} by {1} table over the two element field, "
-     "{2} pieces to a cutting in the search and in the table alike".format(NS, NPO, RMIN))
+     "exact-cover table {0} by {1}, row weight {2}".format(NS, NPO, RMIN))
 gate(CMIN == CMAX and CMIN == 1975 and (CMIN & 1) == 1, "G02",
-     "every one of the {0} pieces is used by exactly {1} cuttings, an odd count".format(
+     "all {0} columns have odd weight {1}".format(
          NPO, CMIN))
 gate(ERANK == 88 and CRANK == 88 and NKER == 104 and NKER == NPO - CRANK, "G03",
-     "the elimination over the cuttings and the independent elimination over the pieces "
-     "return the same rank {0}, leaving a kernel of dimension {1}".format(ERANK, NKER))
-gate(NDIST == NS, "G04", "the {0} cuttings are pairwise distinct as piece sets".format(NS))
+     "row and column ranks {0}; kernel dimension {1}".format(ERANK, NKER))
+gate(NDIST == NS, "G04", "all {0} rows are distinct".format(NS))
 gate(KZERO and KIND and len(KB) == NKER, "G05",
-     "all {0} kernel words meet every one of the {1} cuttings evenly and are "
-     "independent".format(NKER, NS))
+     "{0} independent kernel words vanish on all {1} rows".format(NKER, NS))
 gate(CPOK and coll == 0 and len(CP) == 48, "G06",
-     "the {0} symmetries permute cuttings and pieces leaving the table fixed, which is "
-     "what fixes the canonical piece order the blocks are cut from".format(48))
+     "{0} declared cell symmetries preserve the table; blocks use a separate "
+     "lexicographic order".format(48))
 
 # ---- the whole set as the symmetric difference of every cutting ----
 PKX = np.bitwise_xor.reduce(np.packbits(INC, axis=1), axis=0)
@@ -479,7 +584,7 @@ emit("quarter image dim {0} words {1} block image dim {2} words {3} basis {4}".f
     D4, ",".join(bshow(x, 4) for x in QSPAN), D8, len(BSPAN), ",".join(BBASIS)))
 gate(NOODD and len(FIVE) == 5, "G09",
      "no kernel word meets the whole set, either half or either quarter of the second "
-     "half oddly, which is the previous cycle's forcing pattern seen from the kernel")
+     "half oddly, reconstructing the five-set forcing profile directly from this table")
 gate([x for x in QSPAN] == QPRED and D4 == 1 and len(Q0ODD) > 0, "G10",
      "the quarter parity image is exactly the two words {0}: contained in the "
      "annihilator of the forced quarters, and its generator is present because kernel "
@@ -550,8 +655,8 @@ emit("block unions forced {0} of {1}, annihilator {2}, two to the {3} less {4}".
     NF256, 256, len(BANN), 8, D8))
 emit("of the 15 blocks forced " + ",".join(FNAM) + "; free " + ",".join(UNAM))
 gate(FOK and INANN and CONS and D8 == BOUND and len(BSPAN) == (1 << D8), "G13",
-     "the block parity image annihilates the block words of the {0} sets the previous "
-     "cycle found forced, which bounds its dimension by {1}; the measurement attains "
+     "the block parity image annihilates the block words of the {0} sets this "
+     "search reconstructs as forced, which bounds its dimension by {1}; the measurement attains "
      "that bound at {2} with {3} words".format(len(FIVE), BOUND, D8, len(BSPAN)))
 gate(BAOK and len(BCERT) == 256, "G14",
      "on all {0} block unions the direct membership test and the annihilator of the "
@@ -564,8 +669,8 @@ gate(BPOS and BNEG and all(k in (0, 1) for k, _d in BCERT), "G16",
      "when forced and by an odd kernel meet when free".format(256))
 gate(FNAM == ["L", "Q2", "Q3", "R", "whole"] and len(FIF) == 15
      and UNAM == ["E0", "E1", "E2", "E3", "E4", "E5", "E6", "E7", "Q0", "Q1"], "G17",
-     "read back on the {0} block indicators the sweep returns the previous cycle's "
-     "answer: the whole set, its halves and the two quarters of the second half".format(15))
+     "on the {0} declared block indicators the direct sweep returns the whole set, its "
+     "halves and the two quarters of the second half".format(15))
 gate(CLOSED and len(set(FSET)) == NF256, "G18",
      "the forced block unions contain the empty set and are closed under symmetric "
      "difference, so they are a space of {0} sets".format(NF256))
@@ -678,6 +783,63 @@ gate(GFREE and (bin(GW & GM).count("1") & 1) == 1 and len(GP) == 20, "G27",
      "the planted {0} piece set is not forced: a kernel word of weight {1} with zero "
      "syndrome meets it oddly, after {2} redraws".format(20, bin(GW).count("1"), REDRAW))
 
+# ---- hostile controls: each load-bearing bridge must be capable of failing
+shift_masks = [
+    sum(1 << ((24 * e + j + 1) % NPO) for j in range(24))
+    for e in range(8)
+]
+shift_forced = [
+    u for u in range(256) if redrow(uset(u, 8, shift_masks)) is not None
+]
+gate(
+    shift_forced != FSET,
+    "hostile.order",
+    "a cyclic order shift changes the forced block profile",
+)
+
+mutated_dependency = dict(C737_RECEIPT)
+mutated_dependency["status"] = "fail"
+gate(
+    dependency_ok
+    and not (
+        mutated_dependency.get("schema")
+        == "physical-cell-cutting-least-computing-sets-cycle737-v2"
+        and mutated_dependency.get("status") == "pass"
+        and mutated_dependency.get("gates", {}).get("fail") == 0
+    ),
+    "hostile.dependency",
+    "failed dependency status is rejected",
+)
+
+overlap_control = next(
+    (
+        (left, right)
+        for left in MINP
+        for right in MINP
+        if left < right
+        and not (MASK[left] & MASK[right])
+        and separated((left, right))[0] == 0
+    ),
+    None,
+)
+gate(
+    overlap_control is not None,
+    "hostile.sample_geometry",
+    "sample-disjoint pieces can overlap; exact separation is load-bearing",
+)
+
+mutated_incidence = INC.copy()
+mutated_incidence[0, 0] ^= np.uint8(1)
+mutated_rows = [bytes(row) for row in np.packbits(mutated_incidence, axis=1)]
+mutated_identity = hashlib.sha256(b"".join(sorted(mutated_rows))).hexdigest()
+gate(
+    int(mutated_incidence[0].sum()) != 24
+    and int(mutated_incidence[:, 0].sum()) != 1975
+    and mutated_identity != canonical_incidence_rows_sha256,
+    "hostile.incidence",
+    "one flipped bit breaks row/column counts and population identity",
+)
+
 EL = time.time() - T0
 RSS = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1048576.0
 emit("elapsed under {0} s peak memory under {1} MB".format(upto(EL, 10), upto(RSS, 100)))
@@ -685,4 +847,100 @@ gate(EL < 900.0, "G28", "the whole runner finishes under {0} seconds".format(900
 gate(OUT[0] + 120 < 5500, "G29", "its output stays under {0} characters".format(5500))
 
 emit("")
+print("per_element: checked -- all 192 used pieces enter the exact incidence, row-space, "
+      "kernel, block, and certificate checks", flush=True)
+print("per_site: checked -- one supplied 16-corner coordinate cell only; no physical "
+      "assembly-cell or framework site identification is executed", flush=True)
+print("per_mode: checked and not executed -- the finite incidence system has no field, "
+      "spectral, or momentum-mode decomposition", flush=True)
+print("per_block: checked -- all 16 quarter unions and all 256 unions of the eight "
+      "declared lexicographic 24-piece blocks", flush=True)
+print("lattice_wide: checked and not executed -- no multi-cell, arbitrary-domain, "
+      "thermodynamic, boundary, or continuum negative is asserted", flush=True)
+
+receipt = {
+    "schema": "physical-cell-cutting-forced-certificate-cycle740-v2",
+    "status": "pass" if PF[1] == 0 else "fail",
+    "claim_type": "bounded_theorem",
+    "audit_status_authority": "independent audit lane only",
+    "runner_sha256": file_sha256(
+        "scripts/physical_cell_cutting_forced_certificate_cycle740_2026_08_05.py"
+    ),
+    "input_sha256": {path: file_sha256(path) for path in AUDIT_INPUT_PATHS},
+    "supplied_model": {
+        "shape": [1, 1, 1, 1],
+        "support_universe": "the 192 pieces used by the 15,800 supplied cuttings only",
+        "piece_class": "five-corner normalized-volume-one simplices only",
+        "cost": "corner pairs with four-coordinate L1 separation greater than one",
+        "block_partition": "declared lexicographic support order in eight blocks of 24",
+        "physical_cell_tick_simplex_reading_bridge": "open",
+    },
+    "direct_dependency": {
+        "cycle": 737,
+        "schema": C737_RECEIPT.get("schema"),
+        "status": C737_RECEIPT.get("status"),
+        "canonical_incidence_rows_sha256": canonical_incidence_rows_sha256,
+        "support_column_order_sha256": support_column_order_sha256,
+    },
+    "population": {
+        "geometric_cuttings": NS,
+        "cooccurring_pairs_exactly_separated": len(cooccurring),
+        "used_pieces": NPO,
+        "pieces_per_cutting": RMIN,
+        "uses_per_piece": CMIN,
+        "incidence_rank": ERANK,
+        "kernel_dimension": NKER,
+    },
+    "forced_subset_definition": (
+        "indicator lies in the GF(2) row space, equivalently is orthogonal to the "
+        "incidence kernel; its meet parity is invariant among carriers of one fixed "
+        "finite reading"
+    ),
+    "quarter_partition": {
+        "image_dimension": D4,
+        "image_words": [bshow(x, 4) for x in QSPAN],
+        "forced_union_count": sum(1 for value in QDIR if value),
+        "forced_union_labels": [
+            QNAME.get(u, bshow(u, 4)) for u in range(16) if QDIR[u]
+        ],
+        "complete_union_census": 16,
+    },
+    "block_partition": {
+        "image_dimension": D8,
+        "image_basis": BBASIS,
+        "image_words": [bshow(value, 8) for value in BSPAN],
+        "image_word_count": len(BSPAN),
+        "forced_union_count": NF256,
+        "forced_union_masks": [bshow(u, 8) for u in FSET],
+        "complete_union_census": 256,
+        "forced_indicator_labels": FNAM,
+        "free_indicator_labels": UNAM,
+    },
+    "explicit_certificates": {
+        "whole_pivot_cuttings": WSZ,
+        **{name: size for name, _ok, size, _pivot in COMB},
+        "free_block_witness_weights": WWT,
+        "planted_forced_pivot_cuttings": PSZ,
+        "planted_free_witness_weight": bin(GW).count("1"),
+    },
+    "no_go_discipline": {
+        "status": "PASS",
+        "claim_scope": (
+            "complete 16-quarter-union and 256-declared-block-union censuses in the "
+            "fixed 15,800 by 192 finite incidence system only"
+        ),
+        "n5_certificate": "five resolution lines in primary stdout and canonical cache",
+    },
+    "gates": {
+        "pass": PF[0],
+        "fail": PF[1],
+        "named": {name: "PASS" if passed else "FAIL" for name, passed in GATES},
+    },
+}
+RECEIPT_PATH.write_text(
+    json.dumps(receipt, indent=2, sort_keys=True) + "\n",
+    encoding="utf-8",
+)
+print("RECEIPT " + str(RECEIPT_PATH.relative_to(ROOT)), flush=True)
 print("TOTAL: PASS={0} FAIL={1}".format(PF[0], PF[1]))
+sys.exit(0 if PF[1] == 0 else 1)

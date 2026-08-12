@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/physical_cell_cutting_forced_certificate_cycle740_independent_check_2026_08_05.py
+runner_sha256: 30ab843c1dc8afa2d6e880835446356a6fb89bb00f2ab7dbedb4554045c3c475
+input_fingerprint_sha256: 75321ddd198e4975263e7b881aec092fbb50c1eb8d1dbafc75e4ee0223ef85f9
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.38
+status: ok
+----- stdout -----
+PASS independent.inverse  every float-proposed simplex inverse is accepted only after exact integer multiplication
+PASS base.cell  the independent construction finds 2,672 normalized-volume-one pieces, 2,736 labelled interior samples, and the declared 48 cell symmetries
+PASS base.population  the independent opposite-pivot exact-cover search reconstructs 15,800 24-piece rows over the same 192 used pieces
+PASS base.geometry  all 15,168 co-occurring pairs have an exact integer separating plane, certifying every independently returned cover as a geometric dissection
+PASS algebra.kernel  least-pivot row reduction gives rank 88 and an independently constructed 104-dimensional exact kernel
+PASS census.quarters  the independently reconstructed quarter image is {0000,1100}, and exactly the same eight of all 16 quarter unions are forced
+PASS census.blocks  the independent block image has dimension five and 32 words, and exactly the same eight of all 256 declared block unions are forced
+PASS census.profile  all eight exact forced-union masks match the primary and each is a union of the declared 48-piece quarters
+PASS certificate.named  all 192 columns have odd count 1,975 and the independently reduced row space contains the same five named indicators
+PASS certificate.free  each of the ten named free indicators has an exact kernel witness odd on that indicator and zero on all 15,800 rows
+PASS dep.cycle737  Cycle 737 binds exactly the independently reconstructed canonical population and support order
+PASS dep.primary_receipt  the primary pass receipt binds the current primary bytes and exactly the independently reconstructed row-order-invariant population identity
+PASS hostile.order  a cyclic shift of the declared support order changes the forced block profile, so the partition is load-bearing
+PASS hostile.incidence  one flipped incidence bit breaks both exact regularity checks
+
+per_element: checked -- all 192 used pieces enter the independent incidence, row-space, kernel, block, and witness checks
+per_site: checked -- one supplied 16-corner coordinate cell only; no physical assembly-cell or framework site identification is executed
+per_mode: checked and not executed -- the finite incidence system has no field, spectral, or momentum-mode decomposition
+per_block: checked -- all 16 quarter unions and all 256 unions of the eight declared lexicographic 24-piece blocks
+lattice_wide: checked and not executed -- no multi-cell, arbitrary-domain, thermodynamic, boundary, or continuum negative is asserted
+RECEIPT outputs/physical_cell_cutting_forced_certificate_cycle740_independent_check_2026_08_05_receipt_2026-08-05.json
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

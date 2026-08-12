@@ -1,0 +1,110 @@
+{
+  "audit_status_authority": "independent audit lane only",
+  "claim_type": "bounded_theorem",
+  "complete_census": {
+    "block_image_words": [
+      "00000000",
+      "00000011",
+      "00001100",
+      "00001111",
+      "00110000",
+      "00110011",
+      "00111100",
+      "00111111",
+      "01010000",
+      "01010011",
+      "01011100",
+      "01011111",
+      "01100000",
+      "01100011",
+      "01101100",
+      "01101111",
+      "10010000",
+      "10010011",
+      "10011100",
+      "10011111",
+      "10100000",
+      "10100011",
+      "10101100",
+      "10101111",
+      "11000000",
+      "11000011",
+      "11001100",
+      "11001111",
+      "11110000",
+      "11110011",
+      "11111100",
+      "11111111"
+    ],
+    "forced_block_masks": [
+      "00000000",
+      "00000011",
+      "00001100",
+      "00001111",
+      "11110000",
+      "11110011",
+      "11111100",
+      "11111111"
+    ],
+    "forced_quarter_masks": [
+      "0000",
+      "0001",
+      "0010",
+      "0011",
+      "1100",
+      "1101",
+      "1110",
+      "1111"
+    ],
+    "quarter_image_words": [
+      "0000",
+      "1100"
+    ]
+  },
+  "gates": {
+    "fail": 0,
+    "named": {
+      "algebra.kernel": "PASS",
+      "base.cell": "PASS",
+      "base.geometry": "PASS",
+      "base.population": "PASS",
+      "census.blocks": "PASS",
+      "census.profile": "PASS",
+      "census.quarters": "PASS",
+      "certificate.free": "PASS",
+      "certificate.named": "PASS",
+      "dep.cycle737": "PASS",
+      "dep.primary_receipt": "PASS",
+      "hostile.incidence": "PASS",
+      "hostile.order": "PASS",
+      "independent.inverse": "PASS"
+    },
+    "pass": 14
+  },
+  "independent_route": {
+    "determinant": "Leibniz expansion",
+    "exact_cover_pivot": "largest uncovered sample",
+    "gf2_pivot": "least significant bit",
+    "kernel": "constructed from row reduced form",
+    "visited_exact_cover_nodes": 496849
+  },
+  "input_sha256": {
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
+    "docs/PHYSICAL_CELL_CUTTING_FORCED_CERTIFICATE_CYCLE740_NOTE_2026-08-05.md": "5aa071ea6bd0567cf77cc9f0190ace7d24e400e5e2695bb6059f50b71e663d6b",
+    "outputs/physical_cell_cutting_forced_certificate_cycle740_2026_08_05_receipt_2026-08-05.json": "5affc6d0f34e8262e92f04410cda619cf13ffe26823ed0536d37e8957667d593",
+    "outputs/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05_receipt_2026-08-05.json": "1088b2cf8aa99b9f4517fec84097b167ad6511df7f63943ee0f3f1e3240efb30",
+    "scripts/physical_cell_cutting_forced_certificate_cycle740_2026_08_05.py": "e5c68db1920acb76d1bd9b0d0e41095f9ca8a3215312aade5b9195b56b47f0e3",
+    "scripts/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05.py": "4943c2bd0d89099394c06555f065bbed93c2d536c87a8a131a483535f6b027cd"
+  },
+  "population": {
+    "canonical_incidence_rows_sha256": "49c70821648fa7a96aa621289ee133ca767a792d2e326f7aca11b6bd85a09bda",
+    "geometric_cuttings": 15800,
+    "incidence_rank": 88,
+    "kernel_dimension": 104,
+    "support_column_order_sha256": "56b1de932ec32c731c060e02886775465ceca0281e6de1d99292140aedcf158b",
+    "used_pieces": 192
+  },
+  "runner_sha256": "30ab843c1dc8afa2d6e880835446356a6fb89bb00f2ab7dbedb4554045c3c475",
+  "schema": "physical-cell-cutting-forced-certificate-cycle740-independent-v1",
+  "status": "pass"
+}

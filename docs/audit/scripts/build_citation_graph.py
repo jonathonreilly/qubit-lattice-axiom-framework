@@ -277,6 +277,12 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
         "scripts/physical_cell_cutting_size_ten_frontier_cycle738_"
         "independent_check_2026_08_05.py",
     ],
+    # Cycle 740's checker independently rebuilds the finite population and
+    # complete declared quarter/block union censuses without importing primary.
+    "physical_cell_cutting_forced_certificate_cycle740_note_2026-08-05": [
+        "scripts/physical_cell_cutting_forced_certificate_cycle740_"
+        "independent_check_2026_08_05.py",
+    ],
     "b4_clock_relation_run_cycle879_bounded_theorem_note_2026-07-28": [
         "scripts/frontier_cycle879_b4_relation_independent_check_2026_07_28.py",
     ],

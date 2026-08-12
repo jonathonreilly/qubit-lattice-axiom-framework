@@ -94,7 +94,7 @@
       "pass": true
     },
     "g18_pair_cut_margins": {
-      "detail": "swap partner max 6.1e-08; wall/edge smaller-side minima 5.9e+00 / 2.2e+01 stay away from cuts 0.5 / 10.0",
+      "detail": "swap max 6.1e-08; wall range [5.9e+00, 5.9e+00]; edge min 2.2e+01 stay between cuts 0.5 / 10.0",
       "pass": true
     },
     "g19_poly_identity": {
@@ -204,6 +204,7 @@
     "pair_cut_margins": {
       "edge_smaller_side_min": "2.2e+01",
       "swap_partner_max": "6.1e-08",
+      "wall_smaller_side_max": "5.9e+00",
       "wall_smaller_side_min": "5.9e+00"
     },
     "second_center_gap": "5.4e-01",

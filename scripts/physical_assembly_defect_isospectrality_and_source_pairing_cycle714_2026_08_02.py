@@ -1,21 +1,29 @@
-"""Cycle 714 - assembly-defect isospectrality and the source-pairing collapse.
+"""Cycle 714 -- finite permutation similarity and seeded source-pairing clusters.
 
-Self-contained against the landed Cycle-696 open-coframe compiler chain. Establishes
-that the 24 coframe relabellings act on the static degrees of freedom by permutations
-forming a faithful group action, that the assembly defect is therefore exactly
-isospectral with an exact Frobenius law, and that its entire observable content is the
-pairing with a source that does not transport - which collapses the 24-frame scan to
-four values, one per right coset of the constant-sign sextet.
+On the declared Cycle-696 compiler-source closure, this runner checks that the 24
+coframe relabellings induce a faithful permutation action at L=3..6.  Consequently
+the reassembled matrices are permutation-similar on that bounded surface.  It also
+checks the Cycle-713 resolved-weight prediction for the Frobenius defect at the
+explicitly scanned sizes and measures four right-coset clusters for one seeded
+source at L=3..6.  The spectral statement is positive permutation similarity, not a
+universal no-go for every conceivable observable; the four-cluster statement is a
+finite seeded-source measurement, not an arbitrary-source theorem.
 
-Class-A finite-dimensional check. Prints TOTAL: PASS=N FAIL=0.
+Read inventory.  Load-bearing repository inputs are the Cycle-696 compiler and its
+four transitive imports plus the Cycle-713 runner and receipt, all declared in
+AUDIT_INPUT_PATHS.  The only package-local write is this runner's paired receipt.
+Prints TOTAL: PASS=N FAIL=0.
 """
 
 import importlib.util
 import json
 import os
+import re
+from pathlib import Path
 import numpy as np
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = Path(HERE).parent
 _spec = importlib.util.spec_from_file_location(
     "c696_chain",
     os.path.join(HERE,
@@ -23,13 +31,35 @@ _spec = importlib.util.spec_from_file_location(
 c696 = importlib.util.module_from_spec(_spec)
 _spec.loader.exec_module(c696)
 
+AUDIT_INPUT_PATHS = (
+    "scripts/physical_open_coframe_k_endpoint_compiler_cycle696_2026_07_25.py",
+    "scripts/physical_dynamical_metric_source_law_bridge_tournament_cycle576_2026_07_22.py",
+    "scripts/physical_dynamical_metric_source_law_bridge_cycle576_regge_support_2026_07_22.py",
+    "scripts/physical_dynamical_metric_source_law_bridge_cycle576_plaquette_support_2026_07_22.py",
+    "scripts/frontier_cubic_coxeter_regge_second_variation_3plus1_2026_06_09.py",
+    "scripts/physical_defect_weight_law_and_complete_census_cycle713_2026_08_02.py",
+    "outputs/physical_defect_weight_law_and_complete_census_cycle713_2026_08_02_receipt_2026-08-02.json",
+)
+AUDIT_TIMEOUT_SEC = 300
+
+C713_RECEIPT = (ROOT / "outputs" /
+                "physical_defect_weight_law_and_complete_census_cycle713_2026_08_02_receipt_2026-08-02.json")
+
 FRAMES = [np.asarray(F, dtype=np.int64) for F in c696.c576.FRAMES]
 DIRS15 = c696.regge.DIRS15
 SPC = sorted(c696.SPATIAL_CLASSES)
 DIRV = {c: np.asarray(DIRS15[c][:3], dtype=np.int64) for c in SPC}
 D2C = {tuple(int(t) for t in DIRV[c]): c for c in SPC}
-LT = 2
-SEXTET = [1, 4, 9, 15, 18, 23]
+LT = int(c696.LT)
+
+
+def constant_sign(R):
+    """Whether all nonzero signed-permutation entries have one common sign."""
+    nz = R[R != 0]
+    return bool(nz.size and (np.all(nz == 1) or np.all(nz == -1)))
+
+
+SEXTET = [g for g, R in enumerate(FRAMES) if constant_sign(R)]
 MIXED = [g for g in range(24) if g not in SEXTET]
 FMAP = {tuple(F.ravel().tolist()): a for a, F in enumerate(FRAMES)}
 
@@ -87,14 +117,104 @@ def dof_count(L):
     return 3 * u * L * L + 3 * u * u * L + u ** 3
 
 
+def eval_count_poly(text, L):
+    """Evaluate the narrow integer-polynomial grammar emitted by Cycle 713."""
+    allowed = set("0123456789L()-+* ^")
+    if not isinstance(text, str) or any(ch not in allowed for ch in text):
+        raise ValueError("unsupported Cycle-713 polynomial")
+    expr = re.sub(r"(?<=\d)\(", "*(", text.replace("^", "**"))
+    return int(eval(expr, {"__builtins__": {}}, {"L": int(L)}))
+
+
 def frob_law(L):
-    u = L - 1
-    return 800.0 * u ** 3 + 224.0 * u ** 2 + 32.0 * u
+    return float(C713_FROB[L])
 
 
 print("== Cycle 714: assembly-defect isospectrality and the source pairing ==")
 print("frames={} constant-sign={} mixed={} LT={}".format(
     len(FRAMES), len(SEXTET), len(MIXED), LT))
+
+# ---------------------------------------------------------- predecessor input
+try:
+    with C713_RECEIPT.open() as fh:
+        C713 = json.load(fh)
+except (OSError, ValueError):
+    C713 = {}
+
+c713_ok = (
+    C713.get("cycle") == 713
+    and C713.get("fail") == 0
+    and int(C713.get("pass", 0)) > 0
+    and C713.get("LT") == LT
+    and C713.get("sizes") == list(range(3, 10))
+    and isinstance(C713.get("notes", {}).get("magnitude_polys"), dict)
+)
+gate("Cycle-713 finite resolved-weight receipt is present and positive", c713_ok,
+     "cycle={} pass={} fail={} sizes={}".format(
+         C713.get("cycle"), C713.get("pass"), C713.get("fail"), C713.get("sizes")))
+
+try:
+    mp = C713["notes"]["magnitude_polys"]
+    half_poly = C713["notes"]["half_per_sign_poly"]
+
+    def c713_frob_at(L):
+        counts = {name: eval_count_poly(mp[name], L)
+                  for name in ("four", "two_rt3", "two_rt2", "two")}
+        half = eval_count_poly(half_poly, L)
+        return 2 * (16 * counts["four"] + 12 * counts["two_rt3"]
+                    + 8 * counts["two_rt2"] + 4 * counts["two"] + half)
+
+    c713_full = []
+    c713_half = []
+    c713_resolved = []
+    C713_FROB = {}
+    for L in range(3, 10):
+        counts = {name: eval_count_poly(mp[name], L)
+                  for name in ("four", "two_rt3", "two_rt2", "two")}
+        half = eval_count_poly(half_poly, L)
+        full = sum(counts.values())
+        c713_full.append(full)
+        c713_half.append(half)
+        c713_resolved.append(2 * (full + half))
+        C713_FROB[L] = c713_frob_at(L)
+    f0, f1, f2, f3 = (c713_frob_at(L) for L in (1, 2, 3, 4))
+    d1, d2, d3 = f1 - f0, f2 - f1, f3 - f2
+    cubic = ((d3 - d2) - (d2 - d1)) // 6
+    quadratic = ((d2 - d1) - 6 * cubic) // 2
+    linear = d1 - cubic - quadratic
+    constant = f0
+    C713_FROB_COEFFS = (cubic, quadratic, linear, constant)
+    c713_consistent = (
+        c713_full == C713.get("full_per_sign")
+        and c713_half == C713.get("half_per_sign")
+        and c713_resolved == C713.get("resolved_entries_per_frame")
+    )
+except (KeyError, TypeError, ValueError, SyntaxError):
+    C713_FROB = {L: 0 for L in range(3, 10)}
+    C713_FROB_COEFFS = ()
+    c713_consistent = False
+gate("Cycle-713 magnitude rows reassemble its finite census", c713_consistent,
+     "finite sizes L=3..9; no arbitrary-L inference")
+gate("squared Cycle-713 resolved weights give coefficients 800,224,32",
+     C713_FROB_COEFFS == (800, 224, 32, 0),
+     "coefficients in u=L-1 are {}".format(C713_FROB_COEFFS))
+
+frame_ok = (len(FRAMES) == 24
+            and len({tuple(F.ravel().tolist()) for F in FRAMES}) == 24
+            and all(np.array_equal(F.T @ F, np.eye(3, dtype=np.int64))
+                    and round(float(np.linalg.det(F))) == 1 for F in FRAMES))
+gate("compiler frame table has 24 distinct proper signed permutations", frame_ok,
+     "24 distinct orthogonal integer matrices with determinant +1")
+gate("supplied compiler tick multiplier is LT = 2", LT == 2,
+     "Cycle-696 LT={}".format(LT))
+
+diag = np.ones(3, dtype=np.int64)
+diag_stabilizer = [g for g, R in enumerate(FRAMES)
+                   if (np.array_equal(R @ diag, diag)
+                       or np.array_equal(R @ diag, -diag))]
+gate("constant-sign predicate derives the body-diagonal stabilizer sextet",
+     len(SEXTET) == 6 and SEXTET == diag_stabilizer,
+     "derived frame indices {}".format(SEXTET))
 
 # ---------------------------------------------------------------- group action
 cache = {}
@@ -119,6 +239,11 @@ for L in (3, 4, 5, 6):
 gate("every frame relabelling is a bijection of the dof set", bij,
      "24 frames at L = 3,4,5,6; zero dofs outside the index")
 
+faithful = all(len({tuple(m.tolist()) for m in perms[L]}) == 24
+               for L in (3, 4, 5, 6))
+gate("the finite dof action is faithful", faithful,
+     "24 distinct induced permutations at each L = 3,4,5,6")
+
 idg = [a for a in range(24) if np.array_equal(FRAMES[a], np.eye(3, dtype=np.int64))]
 ok = (len(idg) == 1
       and all(np.array_equal(perms[L][idg[0]], np.arange(cache[L][0].shape[0]))
@@ -131,6 +256,17 @@ for L in (3, 4):
                if np.array_equal(perms[L][mul(a, b)], perms[L][a][perms[L][b]]))
     gate("group law m(ab) = m(a) after m(b) at L = {}".format(L), hits == 576,
          "{} of 576 ordered pairs".format(hits))
+
+roundtrip = True
+for L in (3, 4, 5, 6):
+    Q = cache[L][0]
+    for m in perms[L]:
+        inv = np.argsort(m)
+        Qg = Q[np.ix_(m, m)]
+        if not np.array_equal(Qg[np.ix_(inv, inv)], Q):
+            roundtrip = False
+gate("reassembly is exact permutation similarity on the finite surface", roundtrip,
+     "all 24 frames at L = 3,4,5,6; bitwise index roundtrip")
 
 rej = []
 for L in (3, 4):
@@ -188,8 +324,10 @@ for g in MIXED:
     w2 = max(w2, abs(float(np.trace(QE) + 0.5 * np.trace(E @ E))))
     w3 = max(w3, abs(float(3.0 * np.trace(Q3 @ QE) + 3.0 * np.trace(QE @ E)
                            + np.trace(E @ E @ E))))
-gate("second power-sum identity holds", w2 < 1.0e-08, "worst {:.1e}".format(w2))
-gate("third power-sum identity holds", w3 < 1.0e-06, "worst {:.1e}".format(w3))
+gate("second power-sum consistency check holds", w2 < 1.0e-08,
+     "redundant with permutation similarity; worst {:.1e}".format(w2))
+gate("third power-sum consistency check holds", w3 < 1.0e-06,
+     "redundant with permutation similarity; worst {:.1e}".format(w3))
 
 Q4, _ = cache[4]
 ev4, U4 = np.linalg.eigh(Q4)
@@ -222,12 +360,6 @@ for L in (3, 4):
          "smallest spectral shift {:.2e} over 3 seeds".format(min(shifts)))
 
 # ------------------------------------------------------------- Frobenius law
-c713_counts = [(16.0, 8, 0, 0), (12.0, 8, 0, 0), (8.0, 12, 16, 0),
-               (4.0, 20, -8, 4), (1.0, 0, 16, 0)]
-asm = [2.0 * sum(row[0] * row[1 + k] for row in c713_counts) for k in (0, 1, 2)]
-gate("Frobenius law reassembles from the landed census", asm == [800.0, 224.0, 32.0],
-     "cubic {:.0f}, quadratic {:.0f}, linear {:.0f}".format(*asm))
-
 fnorms = {}
 for L in (3, 4, 5, 6, 7, 8):
     if L in cache:
@@ -244,7 +376,8 @@ for L in (3, 4, 5, 6, 7, 8):
         E = Q[np.ix_(m, m)] - Q
         worst = max(worst, abs(float((E * E).sum()) - frob_law(L)) / frob_law(L))
         del E
-    gate("Frobenius law {:.0f} holds at L = {}".format(frob_law(L), L),
+    gate("Cycle-713 Frobenius prediction {:.0f} agrees at L = {}".format(
+             frob_law(L), L),
          worst < 1.0e-08,
          "{} mixed frames, worst relative deviation {:.1e}".format(
              len(cover), worst))
@@ -258,12 +391,12 @@ for L in (3, 4, 5, 6):
         m = perms[L][g]
         E = Q[np.ix_(m, m)] - Q
         worst = max(worst, float((E * E).sum()))
-gate("constant-sign frames carry no defect", worst < 1.0e-12,
-     "6 frames at L = 3,4,5,6, ceiling {:.1e}".format(worst))
+gate("sextet defect is below the finite compiler tolerance", worst < 1.0e-12,
+     "6 frames at L = 3,4,5,6; max squared Frobenius {:.1e}".format(worst))
 
 ratios = [frob_law(L) / fnorms[L] for L in (3, 4, 5, 6, 7, 8)]
 ok = all(ratios[i] < ratios[i + 1] for i in range(len(ratios) - 1)) and min(ratios) > 0.1
-gate("relative defect grows with box size", ok,
+gate("relative defect grows across the scanned box sizes", ok,
      "ratios " + " ".join("{:.4f}".format(r) for r in ratios))
 
 # ------------------------------------------------------ source-pairing content
@@ -300,18 +433,20 @@ rg = np.random.default_rng(714)
 b4 = rg.normal(size=Q4.shape[0])
 b4 = b4 / np.linalg.norm(b4)
 xref = np.linalg.solve(Q4, b4)
-wt = wf = 0.0
+wt = 0.0
+fixed_devs = []
 for g in MIXED[:3]:
     m = perms[4][g]
     Qp = Q4[np.ix_(m, m)]
     wt = max(wt, float(np.linalg.norm(np.linalg.solve(Qp, b4[m]) - xref[m])
                        / np.linalg.norm(xref)))
-    wf = max(wf, float(np.linalg.norm(np.linalg.solve(Qp, b4) - xref)
-                       / np.linalg.norm(xref)))
+    fixed_devs.append(float(np.linalg.norm(np.linalg.solve(Qp, b4) - xref)
+                            / np.linalg.norm(xref)))
 gate("a transported source reproduces the reference solution", wt < 1.0e-09,
      "worst relative deviation {:.1e}".format(wt))
-gate("a source held fixed does not", wf > 0.5,
-     "smallest relative deviation {:.4f}".format(wf))
+gate("the seeded fixed source changes on each tested mixed frame",
+     min(fixed_devs) > 0.5,
+     "3 frames; minimum relative deviation {:.4f}".format(min(fixed_devs)))
 
 spreads = []
 for L in (3, 4, 5):
@@ -332,6 +467,19 @@ for a in range(24):
 gate("the subgroup has four right cosets", len(cosets) == 4,
      "sizes " + " ".join(str(len(v)) for v in cosets.values()))
 
+q_coset_worst = 0.0
+for L in (3, 4, 5, 6):
+    Q = cache[L][0]
+    for cs in cosets.values():
+        cs = sorted(cs)
+        Q0 = Q[np.ix_(perms[L][cs[0]], perms[L][cs[0]])]
+        for g in cs[1:]:
+            q_coset_worst = max(q_coset_worst, float(np.abs(
+                Q[np.ix_(perms[L][g], perms[L][g])] - Q0).max()))
+gate("reassembled operators form four numerical right-coset clusters",
+     q_coset_worst < 1.0e-08,
+     "all frames at L=3..6; worst entrywise variation {:.1e}".format(q_coset_worst))
+
 worst_in = 0.0
 least_out = 1.0e9
 for L in (3, 4, 5, 6):
@@ -344,17 +492,18 @@ for L in (3, 4, 5, 6):
     reps = sorted(reps)
     least_out = min(least_out,
                     min(reps[i + 1] - reps[i] for i in range(3)))
-gate("the pairing is constant on each right coset", worst_in < 1.0e-08,
-     "worst variation within a coset {:.1e}".format(worst_in))
-gate("the four coset values are separated", least_out > 1.0e-03,
-     "nearest pair of coset values {:.4f} apart".format(least_out))
+gate("the seeded pairing is constant within each numerical right-coset cluster",
+     worst_in < 1.0e-08,
+     "one seed at L=3..6; worst within-cluster variation {:.1e}".format(worst_in))
+gate("the four seeded cluster values are separated", least_out > 1.0e-03,
+     "one seed at L=3..6; nearest pair {:.4f} apart".format(least_out))
 
 nd = []
 for L in (3, 4, 5, 6):
     v = np.sort(np.asarray(orb[L]))
     nd.append(1 + int((np.diff(v) > 1.0e-06).sum()))
-gate("the 24-frame scan takes exactly four values", set(nd) == {4},
-     "distinct values at L = 3,4,5,6: " + " ".join(str(k) for k in nd))
+gate("the seeded 24-frame scan takes four numerical values", set(nd) == {4},
+     "seed 714; distinct values at L = 3,4,5,6: " + " ".join(str(k) for k in nd))
 
 def averaged_spread(L, over):
     Q = cache[L][0]
@@ -374,14 +523,15 @@ def averaged_spread(L, over):
 
 full = max(averaged_spread(L, range(24)) for L in (3, 4))
 part = min(averaged_spread(L, SEXTET) for L in (3, 4))
-gate("a fully averaged source is blind to the frame", full < 1.0e-09,
+gate("the fully group-averaged seeded source is frame-invariant", full < 1.0e-09,
      "spread over 24 frames {:.1e}".format(full))
 gate("rejector: averaging over the subgroup alone does not suffice", part > 1.0e-02,
      "smallest remaining spread {:.4f}".format(part))
 
 # ------------------------------------------------------------------- receipt
 NOTES["action"] = "m(gh) = m(g) after m(h); Q_g = P Q P^T, P the permutation of m(g)"
-NOTES["frobenius_law"] = "|E_g|_F^2 = 800(L-1)^3 + 224(L-1)^2 + 32(L-1)"
+NOTES["frobenius_finite_prediction"] = (
+    "|E_g|_F^2 = 800(L-1)^3 + 224(L-1)^2 + 32(L-1), checked only on stated boxes")
 NOTES["frobenius_values"] = {str(L): frob_law(L) for L in (3, 4, 5, 6, 7, 8)}
 NOTES["dof_counts"] = {str(L): dof_count(L) for L in (3, 4, 5, 6, 7, 8)}
 NOTES["pairing_transfer"] = "b . Q_g^-1 . b = (P^T b) . Q^-1 . (P^T b)"
@@ -389,10 +539,12 @@ NOTES["coset_sizes"] = [len(v) for v in cosets.values()]
 NOTES["sextet_traces"] = sorted(int(np.trace(FRAMES[a])) for a in SEXTET)
 NOTES["full_average_spread"] = "{:.1e}".format(full)
 NOTES["subgroup_average_spread"] = "{:.1e}".format(part)
+NOTES["scope"] = ("permutation action L=3..6; Frobenius scans L=3..8 with stated "
+                  "frame coverage; one seeded source at L=3..6")
 
 receipt = {
     "cycle": 714,
-    "object": "assembly-defect isospectrality and the source-pairing collapse",
+    "object": "finite permutation similarity and seeded source-pairing clusters",
     "LT": LT,
     "frames": len(FRAMES),
     "constant_sign_frames": len(SEXTET),
@@ -401,6 +553,8 @@ receipt = {
                        if np.array_equal(FRAMES[a], np.eye(3, dtype=np.int64))][0],
     "sizes": [3, 4, 5, 6, 7, 8],
     "distinct_pairing_values": 4,
+    "runner": Path(__file__).name,
+    "verdict": "PASS" if FAIL == 0 else "FAIL",
     "gates": GATES,
     "notes": NOTES,
     "pass": PASS,

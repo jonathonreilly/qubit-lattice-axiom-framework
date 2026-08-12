@@ -29,7 +29,7 @@ generic-source theorem.
 trace_class: upstream_support
 target_claim_id: null
 target_blocker_text: "characterize the exceptional source varieties on which additional frame-blind averaging sets occur"
-source_of_blocker_text: strongest_missing_lemma
+source_of_blocker_text: frontier_question
 reachability_to_target: supports
 artifact_role: runner_certificate
 next_trace_action: "solve the finite quadratic equalities in source space rather than extrapolating from seeded probes"
@@ -79,6 +79,40 @@ Cycle 715's exact finite complement/right-coset arithmetic and covering-subgroup
 sufficiency are conditional on a numerical near-zero-defect sextet at
 `L in {3,4}`; it does not supply universal necessity. The present runner
 recomputes the sextet, group table, and subgroup lattice.
+
+## Imported inputs and proof obligation
+
+The exact target proved here is: conditional on the supplied finite compiler
+action and its measured sextet `S` at `L in {3,4}`, every nonempty frame set
+whose left stabilizer covers with `S` has a frame-constant normalized quadratic
+response for every supplied vector with nonzero averaged norm; separately, the
+four declared seeded vectors select exactly that sufficient family in complete
+finite powerset scans.
+
+The obligation graph is:
+
+1. **Compiler action and sextet.** The open-box Hessian, 24 frame matrices,
+   degree-of-freedom relabelling, and finite-difference operator values are
+   imported from the linked Cycle-696 script. Their static-sector physical
+   interpretation and numerical precision are supplied support, not derived in
+   this note. The sextet is remeasured at both sizes and gated numerically.
+2. **Finite group layer.** The anti-homomorphism, 30-subgroup lattice,
+   complement orders, right cosets, left stabilizers, and 231-member family are
+   recomputed and proved by exhaustive finite arithmetic in the primary runner.
+3. **Sufficiency lemma.** Stabilizer invariance of `b_A` and sextet invariance
+   of `Q` imply response constancy when `S L(A)` covers the group. This is proved
+   below with the nonzero-average hypothesis preserved.
+4. **Seeded-scan agreement.** The four finite powerset scans, population gap,
+   size census, and all-24 acceptance retests are numerical results produced by
+   the primary runner. They establish no source-space quantifier.
+
+The `1.0e-09` sextet threshold, `1.0e-08` response threshold, NumPy arithmetic,
+and seeded standard-normal vectors are declared numerical conventions/probes;
+they are not approved primitives or physical observations. The strongest
+missing lemma is an exact characterization of the quadratic exceptional sets
+in source space on which collections outside the covering family become
+frame-blind. That problem remains a frontier question and is not needed for the
+bounded target above.
 
 ## Derived sufficiency on the nonzero-average domain
 

@@ -334,6 +334,48 @@ gate(
     "four-row relation is zero modulo 3 but weighted charge is 31",
 )
 
+
+def sparse_gf3_inconsistent(indices: list[int]) -> bool:
+    """Row-reduce a tiny subsystem as sparse dictionaries, unlike the primary."""
+    basis: dict[int, tuple[dict[int, int], int]] = {}
+    for index0 in indices:
+        row = {int(column): 1 for column in np.flatnonzero(incidence[index0])}
+        rhs = int(charges[index0]) % 3
+        while row:
+            pivot = min(row)
+            if pivot not in basis:
+                if row[pivot] == 2:
+                    row = {column: (2 * value) % 3 for column, value in row.items()}
+                    rhs = (2 * rhs) % 3
+                basis[pivot] = (row, rhs)
+                break
+            old, old_rhs = basis[pivot]
+            factor = row[pivot]
+            for column, value in old.items():
+                changed = (row.get(column, 0) - factor * value) % 3
+                if changed:
+                    row[column] = changed
+                else:
+                    row.pop(column, None)
+            rhs = (rhs - factor * old_rhs) % 3
+        if not row and rhs:
+            return True
+    return False
+
+
+piece_position = {tuple(int(x) for x in piece): i for i, piece in enumerate(pieces)}
+local = Counter()
+for six in itertools.combinations(range(16), 6):
+    contained = [piece_position[key] for omitted in six
+                 if (key := tuple(c for c in six if c != omitted)) in piece_position]
+    if len(contained) >= 2 and sparse_gf3_inconsistent(contained):
+        local[len(contained)] += 1
+gate(
+    "independent local mod3 census",
+    local == Counter({4: 864, 6: 240}),
+    "sparse GF3 reduction finds 864 four-row and 240 six-row obstructions",
+)
+
 primitive = []
 for normal in itertools.product(range(-4, 5), repeat=4):
     if not any(normal) or math.gcd(*(abs(x) for x in normal)) != 1:

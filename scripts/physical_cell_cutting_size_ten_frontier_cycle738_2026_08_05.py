@@ -1,7 +1,7 @@
-"""Cycle 738: the size-ten frontier for the readings a cell's cuttings can carry.
+"""Cycle 738: the size-ten frontier for readings in a supplied finite cutting model.
 
 The single cell is the unit four-cube with three lattice directions and one tick. Its
-least-volume cuttings at the floor of the adjacency cost carry eight readings of the
+least-volume cuttings at the floor of the supplied four-coordinate L1-pair cost carry eight readings of the
 population: the constant zero, the constant one, and the two sides of each of the three
 charges. A set of pieces carries a reading when, on every cutting, the parity of how many
 of its pieces that cutting uses reproduces the reading. The previous cycle searched every
@@ -13,20 +13,61 @@ pieces against eighteen readings: the eight above, four planted controls of four
 eight pieces, five planted ten-piece controls, and one synthetic reading whose forced
 total parity is odd, which no set of an even size can carry.
 
-Class-A: integer and field-with-two-elements arithmetic on a finite explicit object, no
-solver. Every count below is measured here.
+The named readings are algebraic functions induced by Cycle 737; this runner makes no
+physical identification.  Class-A: integer and field-with-two-elements arithmetic on a
+finite explicit object, no solver. Every count below is measured here.
 """
+import hashlib
 import itertools
+import json
 import math
+import sys
+from pathlib import Path
 
 import numpy as np
 
 PF = [0, 0]
+GATES = []
+ROOT = Path(__file__).resolve().parents[1]
+NOTE_PATH = "docs/PHYSICAL_CELL_CUTTING_SIZE_TEN_FRONTIER_CYCLE738_NOTE_2026-08-05.md"
+INDEPENDENT_PATH = (
+    "scripts/physical_cell_cutting_size_ten_frontier_cycle738_independent_check_2026_08_05.py"
+)
+C737_NOTE_PATH = "docs/PHYSICAL_CELL_CUTTING_LEAST_COMPUTING_SETS_CYCLE737_NOTE_2026-08-05.md"
+C737_PRIMARY_PATH = "scripts/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05.py"
+C737_CHECKER_PATH = (
+    "scripts/physical_cell_cutting_least_computing_sets_cycle737_independent_check_2026_08_05.py"
+)
+C737_RECEIPT_PATH = (
+    "outputs/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05_"
+    "receipt_2026-08-05.json"
+)
+RECEIPT_PATH = ROOT / (
+    "outputs/physical_cell_cutting_size_ten_frontier_cycle738_2026_08_05_"
+    "receipt_2026-08-05.json"
+)
+AUDIT_INPUT_PATHS = (
+    C737_NOTE_PATH,
+    C737_PRIMARY_PATH,
+    C737_CHECKER_PATH,
+    C737_RECEIPT_PATH,
+    NOTE_PATH,
+    INDEPENDENT_PATH,
+)
+AUDIT_TIMEOUT_SEC = 900
+
+
+def file_sha256(relative_path):
+    return hashlib.sha256((ROOT / relative_path).read_bytes()).hexdigest()
+
+
+C737_RECEIPT = json.loads((ROOT / C737_RECEIPT_PATH).read_text(encoding="utf-8"))
 
 
 def gate(ok, name, detail):
     PF[0 if ok else 1] += 1
-    print(("PASS " if ok else "FAIL ") + name + "  " + detail)
+    GATES.append((name, bool(ok)))
+    print(("PASS " if ok else "FAIL ") + name + "  " + detail, flush=True)
 
 
 # ---------------------------------------------------------------- Part 1: machinery
@@ -137,6 +178,7 @@ for i in range(NPIECE):
 ALLQ = (1 << NQ) - 1
 
 gate(len(SUB) == 4368 and NPIECE == 2672 and NQ == 2736 and coll == 0 and face == 0
+     and np.array_equal(MM @ IV, np.broadcast_to(np.eye(4, dtype=np.int64), MM.shape))
      and CB == 3 and SB == 12810 and len(G) == 48 and NORB == 57, "base.cell",
      "{0} five-subsets of the 16 corners give {1} pieces of least volume, carrying {2} "
      "sample points with no collision and {3} on a boundary; the cell has {4} "
@@ -418,6 +460,50 @@ gate(ONES == [0, 15800, 5664, 10136, 7704, 8096, 7424, 8376]
      "zero, one, four, four-flip, six, six-flip, seven and seven-flip hold on {0}, {1}, "
      "{2}, {3}, {4}, {5}, {6} and {7} cuttings, every count even".format(*ONES))
 
+CTUP = [[int(corner) for corner in UNI[piece]] for piece in USED]
+READING_IDENTITY = C737_RECEIPT.get("reading_identity", {})
+FUNCTION_IDENTITY = READING_IDENTITY.get("functions", {})
+EXPECTED_NAMES = ["zero", "one", "four", "four-flip", "six", "six-flip", "seven", "seven-flip"]
+IDENTITY_OK = (
+    C737_RECEIPT.get("schema") == "physical-cell-cutting-least-computing-sets-cycle737-v2"
+    and C737_RECEIPT.get("status") == "pass"
+    and C737_RECEIPT.get("gates", {}).get("fail") == 0
+    and C737_RECEIPT.get("complete_support_sweep", {}).get("maximum_cardinality") == 8
+    and C737_RECEIPT.get("complete_support_sweep", {}).get(
+        "nonconstant_reading_minimum_lower_bound"
+    ) == 10
+    and READING_IDENTITY.get("incidence_packbits_sha256")
+    == hashlib.sha256(np.packbits(INC, axis=1).tobytes()).hexdigest()
+    and READING_IDENTITY.get("support_column_order_sha256")
+    == hashlib.sha256(json.dumps(CTUP, separators=(",", ":")).encode("utf-8")).hexdigest()
+)
+EXPECTED_WITNESS_SIZES = {
+    "four": 16,
+    "four-flip": 20,
+    "six": 24,
+    "six-flip": 24,
+    "seven": 30,
+    "seven-flip": 30,
+}
+for name, expected_size in EXPECTED_WITNESS_SIZES.items():
+    witness = C737_RECEIPT.get("verified_upper_witnesses", {}).get(name, {})
+    support = witness.get("support_indices_0_to_191", [])
+    corner_support = witness.get("support_corner_tuples", [])
+    IDENTITY_OK = IDENTITY_OK and witness.get("size") == expected_size
+    IDENTITY_OK = IDENTITY_OK and len(support) == expected_size == len(corner_support)
+    IDENTITY_OK = IDENTITY_OK and all(
+        CTUP[index] == corners for index, corners in zip(support, corner_support)
+    )
+for name, (_target_name, function) in zip(EXPECTED_NAMES, TGT[:8]):
+    metadata = FUNCTION_IDENTITY.get(name, {})
+    IDENTITY_OK = IDENTITY_OK and metadata.get("ones") == int(function.sum())
+    IDENTITY_OK = IDENTITY_OK and metadata.get("packbits_sha256") == hashlib.sha256(
+        np.packbits(function).tobytes()
+    ).hexdigest()
+gate(IDENTITY_OK, "dep.c737",
+     "Cycle 737 v2 is pass and binds the exact 15,800-row incidence, piece order, eight "
+     "reading functions, and lower-bound-10 predecessor result")
+
 FB = []
 for i in range(NS):
     fb = 0
@@ -515,7 +601,6 @@ gate(fb == 1, "lic.ctrl",
          wodd[0], wodd[1], wodd[2], wodd[3], fb))
 
 # ---------------------------------- smoke stop: the construction and its certificates
-import sys
 
 if len(sys.argv) > 1 and sys.argv[1] == "smoke":
     print("")
@@ -1297,9 +1382,9 @@ SIX = list(range(2, 8))
 gate(all(CS[msml][t] == 0 for msml in (2, 4, 6) for t in SIX)
      and all(C8[t] == 0 for t in SIX) and all(GOT[t] == 0 for t in SIX)
      and all(fbit("total", t) == 0 for t in SIX), "ten.floor",
-     "neither side of any of the three charges is carried at two, four, six, eight or "
+     "neither side of any of the three nonconstant readings is carried at two, four, six, eight or "
      "ten pieces, and each forces an even total, which bars every odd size: every one "
-     "of the six needs at least twelve pieces")
+     "of the six nonconstant readings needs at least twelve pieces")
 gate(all(CS[msml][0] == 0 and CS[msml][1] == 0 for msml in (2, 4, 6))
      and C8[0] == 648 and GOT[0] == 0 and C8[1] == 192 and GOT[1] == 0, "ten.gap",
      "the sets carrying the constant zero reading number 0 below eight pieces, {0} at "
@@ -1307,4 +1392,62 @@ gate(all(CS[msml][0] == 0 and CS[msml][1] == 0 for msml in (2, 4, 6))
      "{3}".format(C8[0], GOT[0], C8[1], GOT[1]))
 
 print("")
-print("TOTAL: PASS={0} FAIL={1}".format(PF[0], PF[1]))
+print("N5 execution certificate", flush=True)
+N5 = [
+    "per_element: checked -- all 192 used piece columns and every exact-weight-ten support",
+    "per_site: checked -- one supplied 16-corner coordinate cell; no physical cell selection",
+    "per_mode: checked and not executed -- no field, spectral, or momentum-mode decomposition",
+    "per_block: checked -- all 15,800 cutting rows and every licensed quarter-split cell",
+    "lattice_wide: checked and not executed -- no multi-cell, arbitrary-L, or continuum claim",
+]
+for line in N5:
+    print("N5 " + line, flush=True)
+
+receipt = {
+    "schema": "physical-cell-cutting-size-ten-frontier-cycle738-v2",
+    "status": "pass" if PF[1] == 0 else "fail",
+    "claim_type": "bounded_theorem",
+    "audit_status_authority": "independent audit lane only",
+    "input_sha256": {path: file_sha256(path) for path in AUDIT_INPUT_PATHS},
+    "runner_sha256": file_sha256("scripts/physical_cell_cutting_size_ten_frontier_cycle738_2026_08_05.py"),
+    "supplied_model": {
+        "shape": [1, 1, 1, 1],
+        "support_universe": "the 192 pieces used by the 15,800 supplied cuttings only",
+        "piece_class": "five-corner normalized-volume-one simplices only",
+        "cost": "corner pairs with four-coordinate L1 separation greater than one",
+        "physical_cell_tick_simplex_reading_bridge": "open",
+    },
+    "direct_dependency": {
+        "cycle": 737,
+        "status": C737_RECEIPT.get("status"),
+        "geometric_cuttings": NS,
+        "used_pieces": NPO,
+        "reading_identity_bound": IDENTITY_OK,
+        "previous_maximum_cardinality": C737_RECEIPT.get("complete_support_sweep", {}).get("maximum_cardinality"),
+    },
+    "forced_parity_certificate": {
+        "forced_blocks": FNAMES,
+        "free_blocks": UNAMES,
+        "quarter_pattern": QPAT,
+        "licensed_cells_at_ten": LC10,
+    },
+    "complete_search_at_ten": {
+        "readings": TNAME,
+        "counts": GOT,
+        "nonconstant_readings": 6,
+        "nonconstant_minimum_lower_bound": 12,
+        "zero_and_one_next_support_lower_bound": 12,
+        "duplicate_returns": DUP10,
+        "mismatched_verified_returns": BAD10,
+    },
+    "no_go_discipline": {
+        "status": "PASS",
+        "claim_scope": "exact-weight-ten UNSAT for eight named functions in one fixed 192-column finite incidence system only",
+        "n5_execution_certificate": N5,
+    },
+    "gates": {"pass": PF[0], "fail": PF[1], "named": {name: "PASS" if ok else "FAIL" for name, ok in GATES}},
+}
+RECEIPT_PATH.write_text(json.dumps(receipt, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+print("RECEIPT " + str(RECEIPT_PATH.relative_to(ROOT)), flush=True)
+print("TOTAL: PASS={0} FAIL={1}".format(PF[0], PF[1]), flush=True)
+sys.exit(1 if PF[1] else 0)

@@ -4,3 +4,4 @@ scipy>=1.10
 pyyaml>=6.0
 networkx>=3.0
 sympy>=1.12
+python-sat>=1.8.dev13

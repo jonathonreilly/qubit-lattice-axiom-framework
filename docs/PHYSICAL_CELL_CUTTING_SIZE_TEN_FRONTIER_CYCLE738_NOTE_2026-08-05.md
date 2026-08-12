@@ -1,4 +1,4 @@
-# Ten pieces compute no charge — Cycle 738
+# Exact size-ten support frontier in a supplied cutting model — Cycle 738
 
 Date: 2026-08-05
 
@@ -9,62 +9,66 @@ axiom, foundation, Qualification, primitive, registry, policy, queue,
 audit-status, or PR-control surface. No new axiom or primitive is proposed or
 adopted.
 
-The object is one cell of the lattice carried through one tick of emergent time: the
-four-cube on the sixteen corners of `{0,1}^4`, whose three spatial columns and single tick
-column are the columns the axioms of
-[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) supply, with nearest
-neighbour adjacency only and the proper cubic rotations alone kept. A piece is a five
-corner simplex of the cell of least volume, the cost of a piece counts the pairs of its
-corners more than one lattice step apart, and the cuttings at the floor of that cost are
-the population of the last cycles. The previous cycle proved that every set of pieces
-computing any of the eight charges — the two constants and the three two sided charges
+The supplied object is the four-cube on the sixteen corners of `{0,1}^4`, with three
+coordinates labelled spatial and one labelled tick. A piece is a normalized-volume-one
+five-corner simplex. Its supplied cost counts pairs of corners whose four-coordinate L1
+separation exceeds one; that is not framework nearest-neighbour adjacency. The framework
+does not select this cell, labelling, piece class, cost, cutting population, or reading.
+
+The direct scientific predecessor is
+[`PHYSICAL_CELL_CUTTING_LEAST_COMPUTING_SETS_CYCLE737_NOTE_2026-08-05.md`](PHYSICAL_CELL_CUTTING_LEAST_COMPUTING_SETS_CYCLE737_NOTE_2026-08-05.md).
+Its v2 generated receipt binds the exact 15,800-row incidence, stable order of 192 used
+pieces, all eight reading functions, and verified upper supports; the primary and
+independent checker reject any mismatch. Cycle 736 is transitive through that package.
+Cycle 737 proved that every set of pieces
+computing any of the eight algebraic readings — the two constants and the three two-sided functions
 with their flips — has even size, found the smallest sets every cutting meets evenly and
 the smallest it meets oddly at exactly eight pieces, 648 and 192 of them, and left the six
-physical charges with a floor of ten: none is computable from eight pieces or fewer. This
+nonconstant readings with a lower bound of ten: none is computable from eight pieces or fewer. This
 cycle searches ten completely. Exact elimination inside the runner certifies which
 parities a computing set must carry — among the whole set, the two halves, the four
 quarters and the eight blocks of twenty four pieces of the fixed column ordering, a forced
 parity exists for exactly the whole, the halves and the two quarters of the second half —
 and the cells of quarter splits those certificates license are then covered in full, 146
 of them across the eighteen readings in play. The search returns nothing: no set of
-exactly ten pieces computes any of the six physical charges, and there is no even set and
-no odd set of ten pieces at all. With parity, every one of the six charges needs at least
+exactly ten pieces computes any of the six nonconstant readings, and there is no even set and
+no odd set of ten pieces at all. With parity, every one of the six readings needs at least
 twelve pieces, and both octet families are isolated — the next even set and the next odd
 set lie at twelve pieces or beyond. The search is not trusted on its word: the sizes below
 ten are rerun by the same engine first and return exactly the previous cycle's answers,
 control readings built from explicit sets are carried at ten by exactly 108, 1, 2 and 0
 sets, five planted ten piece readings are each recovered, and every verified return is
 checked against all 15800 cuttings. Every statement below is a check in whole numbers over
-an explicit finite set; no solver is used, and completeness of the search is certified
-inside the runner rather than assumed.
+an explicit finite set. The primary uses no external solver; the independent checker uses
+a separate exact CNF/SAT formulation. Completeness is certified rather than assumed.
 
-## The cell, the cuttings, and the charges
+## The supplied cell, cuttings, and readings
 
 Of the 4368 five element subsets of the 16 corners, 2672 have the least volume and are the
-pieces. The adjacency cost has floor 6 over the pieces, 400 pieces attain it, and the
-complete search of the previous cycles cuts the cell into 24 such pieces in 15800 ways,
+pieces. The supplied cost has floor 6 over the pieces, 400 pieces attain it, and the
+complete search of Cycle 737 cuts the cell into 24 such pieces in 15800 ways,
 using 192 of the 400. The 48 symmetries of the cell — the 24 proper spatial rotations,
 each with and without the tick flip — act on the cuttings and on the pieces; on the 192
-used pieces the action is free, with four orbits of 48. The three two sided charges and
+used pieces the action is free, with four orbits of 48. The three two-sided readings and
 their flips take the value one on 7704, 8096, 7424, 8376, 5664 and 10136 cuttings for six,
 six flipped, seven, seven flipped, four and four flipped respectively; the constants zero
 and one hold on 0 and 15800. As rows over the field with two elements the 15800 cuttings
 span 88 dimensions, and the sets that carry the constant zero form a space of dimension
-104. These counts, the population and the charge space are the previous cycles' results
+104. These counts, the population and the reading space are the previous cycle's results
 and are reproduced here because the question is asked of them.
 
-## What it means for a set of pieces to compute a charge
+## What it means for a set of pieces to compute a reading
 
 Write the population as its use table: one row per cutting, one column per used piece, an
 entry marking use. A set of pieces computes a two valued function on cuttings — a reading
 — when the parity of each row's overlap with the set equals the function's value on that
 row. Two sets compute the same reading exactly when their symmetric difference is met
 evenly by every cutting: the even sets compute the constant zero, the odd sets the
-constant one, and the computing sets of any fixed charge form a single class under
+constant one, and the computing sets of any fixed reading form a single class under
 symmetric difference with even sets. The previous cycle found the smallest even sets and
 the smallest odd sets at exactly eight pieces — the even and odd octets — and nothing for
-the six charges through eight. This cycle asks for the next size: whether ten pieces
-compute a charge, and whether any even or odd set of ten pieces exists.
+the six nonconstant readings through eight. This cycle asks for the next size: whether ten pieces
+compute a reading, and whether any even or odd set of ten pieces exists.
 
 ## Sizes are even
 
@@ -102,7 +106,7 @@ The engine that will run ten is checked against the previous cycle's complete se
 first, through the same licensed cell machinery. Sizes two, four and six license 5, 14 and
 30 cells and return nothing for any of the eight readings. Size eight licenses 55 cells
 and returns exactly the 648 even octets, the 192 odd octets, and nothing for any of the
-six charges. Each of the 840 returned octets is verified piece by piece against all 15800
+six nonconstant readings. Each of the 840 returned octets is verified piece by piece against all 15800
 cuttings with 0 mismatched. The two families close under the 48 symmetries exactly, in
 orbits of sizes 24 and 48 — seventeen and five of them for the even family, two and three
 for the odd — and the 648 even octets span the full 104 dimensional space of even sets, as
@@ -120,7 +124,7 @@ tallying every computing set of every reading licensed there.
 
 The result is the count vector [0, 0, 0, 0, 0, 0, 0, 0, 108, 1, 2, 0, 2, 1, 1, 1, 1, 0]
 over the eighteen readings: nothing for the constant zero, the constant one, or any of the
-six physical charges, and for the ten control readings exactly what must be there. A
+six nonconstant readings, and for the ten control readings exactly what must be there. A
 control reading built from an explicit set spread evenly across the two halves is carried
 by exactly 108 sets of ten pieces; one built from a set spread unevenly across them, by 1;
 one built from a set lying inside the first half, by 2; one built from a set inside a
@@ -130,13 +134,13 @@ among them, but none of size ten. The five planted ten piece readings are carrie
 returned sets, 109 — up to 100 per reading — are verified piece by piece against all 15800
 cuttings with 0 mismatched, and no reading returns a set twice.
 
-## The floor moves to twelve
+## The lower bound moves to twelve
 
-For each of the six physical charges the search is now complete and empty at two, four,
+For each of the six nonconstant readings the search is now complete and empty at two, four,
 six, eight and ten pieces, and every odd size is barred by parity, so every one of the six
 needs at least twelve pieces. The previous cycle exhibited and verified explicit computing
 sets for all six, so each least size lies in the even numbers from twelve up to its
-witness size there. The floor the previous cycle set at ten stands at twelve.
+witness size there. The predecessor's lower bound of ten therefore rises to twelve.
 
 ## The octet families are isolated
 
@@ -150,10 +154,10 @@ by all of them, and the sets carrying those readings map onto one another under 
 — so the emptiness at ten and the two octet families are symmetry consistent verdicts,
 checked exactly rather than assumed.
 
-## Independent cross-checks performed
+## Independent reconstruction and hostile checks
 
-The runner re-derives the machinery it stands on — pieces, floor, cuttings, symmetries,
-charge values, the rank of the use table — rather than loading any of it. The certificates
+The primary re-derives the machinery it stands on — pieces, floor, cuttings, symmetries,
+reading values, and the rank of the use table — rather than loading any of it. The certificates
 are produced by exact elimination over the integers modulo two, and their forced parities
 are printed and gated. Two synthetic readings are shown to fail the license machinery
 honestly: one, built from pieces 5, 17, 60 and 130, has forced left half parity odd, and
@@ -167,33 +171,39 @@ cuttings — 840 octets at eight, 109 ten piece sets, up to 100 per reading, all
 mismatched — the returns are duplicate free within each reading, and orbit closure under
 all 48 symmetries is checked exactly on the families of the unmoved readings.
 
+The independent checker imports and executes neither the primary nor its quarter-split
+engine. It reconstructs the finite population with the opposite exact-cover pivot,
+binds the eight function hashes and upper supports from Cycle 737, selects an independent
+88-row basis, and asks eight exact-weight-ten syndrome questions through separately
+encoded Tseitin XOR and totalizer CNF constraints. CaDiCaL returns UNSAT for all eight.
+A ten-piece planted reading returns SAT and its model is checked on all 15,800 rows.
+Mutating the direct-dependency status also fails closed.
+
 ## Boundary and honest read
 
 The search is complete for sets of exactly ten pieces and the eighteen readings named, on
 top of the previous cycle's completeness through eight; nothing is measured above ten, so
-for each physical charge the least size is known only to lie between twelve and the
+for each nonconstant reading the least size is known only to lie between twelve and the
 witness size the previous cycle verified. The population, the floor, the 192 pieces, the
-charge values, the parity law and the eight piece families are reproductions of the
+reading values, the parity law and the eight piece families are reproductions of the
 previous cycle's measurements, derived again inside the runner where they appear; the
 content of this cycle is the full forced parity certificate over halves, quarters and
 blocks, the licensed cell coverage argument, the empty complete search at ten for all
-eight readings, the floor of twelve for the six charges, and the isolation of both octet
-families.
+eight readings, the lower bound of twelve for the six nonconstant readings, and the
+isolation of both octet families.
 
-The ten level search is one engine design. Its coverage is certified by the licensing
-argument, its known answers reproduce the previous cycle's complete search, its returns
-are verified row by row and closed under symmetry where symmetry applies, and its planted
-readings are recovered — but a second, independently designed search at ten is not among
-this cycle's checks, and the empty verdict carries that residual.
+The primary quarter-split engine and independent SAT/CNF engine use distinct search
+objects. Agreement removes the submitted single-engine residual but does not enlarge the
+finite claim boundary.
 
 The halves, quarters and blocks of the column ordering are bookkeeping of the search, not
 objects of the cell: which blocks carry forced parities is a property of the use table
 under one fixed ordering, exhibited inside the runner for the sake of a complete search
 and claimed for nothing else.
 
-Every count here is scoped to the single cell of one lattice step and one tick, with the
-adjacency cost and the least volume as defined above. No statement is made about cells of
-other extent, other adjacency, other costs, or about the lattice as a whole. The charges
+Every count here is scoped to the supplied coordinate cell, cost, and piece class. No
+statement is made about cells of other extent, other adjacency, other costs, or about the
+lattice as a whole. The readings
 are two valued functions on cuttings arrived at as parities of piece use; nothing here
 identifies any of them with a physical quantity, and what a least computing set would mean
 for a lattice of many cells is not measured and is not claimed.
@@ -201,3 +211,60 @@ for a lattice of many cells is not measured and is not claimed.
 Time enters only as the fourth column of the cell. Nothing in this cycle selects a
 direction along it, and the tick flip is kept in the symmetry group throughout, so no
 result here depends on an arrow.
+
+## No-Go Discipline gate
+
+The negative statement is deliberately narrow: in this exact 15,800-row by 192-column
+incidence system, none of eight named functions has support of Hamming weight ten.
+Combined with Cycle 737's complete search through eight and the even-size identity, the
+six nonconstant functions have lower bound twelve and the next zero/one kernel-coset
+supports are not of size ten.
+
+- N1 — Alternative routes: the primary quarter-split meet-in-the-middle enumeration,
+  independent XOR/CNF encoding, direct full-row verification of every returned support,
+  planted ten-support recovery, and exact GF(2) forced-parity elimination are five
+  materially distinct attacks, all attempted. They agree on the bounded statement.
+- N2 — Wall independence: there is one finite UNSAT residual, not multiple physical
+  walls. The even-size step and exact-weight-ten emptiness are separate lemmas; neither is
+  presented as a framework selection theorem.
+- N3 — Hidden-wall scan: `complete`, `no`, `every`, `forced`, and `physical` were scanned.
+  The cell, labelling, cost, piece class, support universe, eight functions, and 48-action
+  are explicit supplied data. No physical reading identification survives.
+- N4 — Residual matching: Cycle 737 supplies the exact same incidence/order/function
+  hashes, complete search through eight, and upper witnesses. Cycle 736 is transitive;
+  no other cycle is used to support the weight-ten negative.
+- N5 — Resolution: per element, all 192 columns; per site, one supplied coordinate cell;
+  per mode, none exists; per block, all 15,800 rows and all licensed cells/CNF clauses;
+  lattice-wide, no multi-cell, arbitrary-L, boundary, or continuum execution.
+- N6 — Partial closure: another function, coefficient field, nonlinear support language,
+  piece class, cost, cell, or multi-cell assembly remains open. This finite UNSAT result
+  is not phrased as requiring a new axiom or primitive.
+- N7 — Steelman: the submitted primary might have silently omitted a quarter split or
+  mishandled a meet-in-the-middle payload. The independent exact-weight CNF encoding is
+  the strongest concrete counter-route and returns the same eight UNSAT answers while a
+  planted target returns SAT.
+- N8 — Cross-cycle echo: Cycle 737 is the direct function/population predecessor and is
+  hash-bound. Cycle 736 is its direct predecessor, hence transitive here. Earlier finite
+  floors do not authorize a physical or arbitrary-domain extrapolation.
+
+No-Go status for this exact finite weight-ten statement: PASS.
+
+## Artifacts
+
+- Primary runner and cache:
+  `scripts/physical_cell_cutting_size_ten_frontier_cycle738_2026_08_05.py`,
+  `logs/runner-cache/physical_cell_cutting_size_ten_frontier_cycle738_2026_08_05.txt`
+- Independent checker and cache:
+  `scripts/physical_cell_cutting_size_ten_frontier_cycle738_independent_check_2026_08_05.py`,
+  `logs/runner-cache/physical_cell_cutting_size_ten_frontier_cycle738_independent_check_2026_08_05.txt`
+- Generated primary and independent receipts:
+  `outputs/physical_cell_cutting_size_ten_frontier_cycle738_2026_08_05_receipt_2026-08-05.json`,
+  `outputs/physical_cell_cutting_size_ten_frontier_cycle738_independent_check_2026_08_05_receipt_2026-08-05.json`
+
+## Review-loop record
+
+On 2026-08-12 review reproduced the submitted 29/0 output, then made Cycle 737 a
+receipt-bound direct dependency, removed unsupported physical language, added an
+independent exact-weight-ten checker, generated caches/receipts, hostile controls,
+fail-closed exits, and this N1-N8/N5 record. This is source-review provenance, not an
+audit verdict.

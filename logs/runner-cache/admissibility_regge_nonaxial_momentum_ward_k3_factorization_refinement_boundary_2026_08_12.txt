@@ -1,0 +1,46 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_regge_nonaxial_momentum_ward_k3_factorization_refinement_boundary_2026_08_12.py
+runner_sha256: 8816f2c34b04e3824433b41302c0d4aa8fdd49d54af3a9fbb470e7a4a3067797
+input_fingerprint_sha256: 4c3241a1037ce06ff86700e5e386b03e06f9b3ad8dec65b8c7fa4cf82c2bb22e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 88.68
+status: ok
+----- stdout -----
+analytic_boundary: exact single-Bloch cyclic phase quotients of the actual four-dimensional Regge-plus-deficit-square action
+physical_boundary: two nonaxial spatial momentum orbits and conserved static/null polarizations; not generic momentum, all-L, or nonlinear evolution
+tail_result: family=face source=static L=49 |k|=0.181342161 W/|k|^3=0.711136829 |F2|=4.933689107 W1/|k|^2=1.104397890 W12/|k|^3=1.677261327
+tail_result: family=face source=null L=49 |k|=0.181342161 W/|k|^3=0.586329352 |F2|=3.298800870 W1/|k|^2=0.471279305 W12/|k|^3=0.757455201
+tail_result: family=face source=static L=97 |k|=0.091605834 W/|k|^3=0.718435685 |F2|=4.973234169 W1/|k|^2=1.122679668 W12/|k|^3=1.737852870
+tail_result: family=face source=null L=97 |k|=0.091605834 W/|k|^3=0.587639412 |F2|=3.384369720 W1/|k|^2=0.450882128 W12/|k|^3=0.791668313
+tail_result: family=face source=static L=145 |k|=0.061281144 W/|k|^3=0.719821717 |F2|=4.980920781 W1/|k|^2=1.126283866 W12/|k|^3=1.749450638
+tail_result: family=face source=null L=145 |k|=0.061281144 W/|k|^3=0.587821253 |F2|=3.400759453 W1/|k|^2=0.447471777 W12/|k|^3=0.798659494
+tail_result: family=body source=static L=97 |k|=0.112193775 W/|k|^3=1.004445533 |F2|=5.758622729 W1/|k|^2=2.693623380 W12/|k|^3=4.424934860
+tail_result: family=body source=null L=97 |k|=0.112193775 W/|k|^3=1.063162640 |F2|=1.236170709 W1/|k|^2=0.661651760 W12/|k|^3=1.312408676
+tail_result: family=body source=static L=145 |k|=0.075053767 W/|k|^3=1.010662638 |F2|=5.778315261 W1/|k|^2=2.722860863 W12/|k|^3=4.468406405
+tail_result: family=body source=null L=145 |k|=0.075053767 W/|k|^3=1.079110210 |F2|=1.236684604 W1/|k|^2=0.642005566 W12/|k|^3=1.323479374
+tail_result: family=body source=static L=193 |k|=0.056387545 W/|k|^3=1.012886820 |F2|=5.785307382 W1/|k|^2=2.733158154 W12/|k|^3=4.483738527
+tail_result: family=body source=null L=193 |k|=0.056387545 W/|k|^3=1.084756110 |F2|=1.237265423 W1/|k|^2=0.635055264 W12/|k|^3=1.327729883
+[PASS] exact-cyclic-phase-quotient: the nonaxial phase shifts retain every local hinge and simplex-hinge incidence
+       two cubic momentum orbits; 50 hinge classes and 240 incidences per phase site
+[PASS] uniform-metric-flat-anchor: a nontrivial constant metric remains an exactly flat zero-force family
+       maximum deficit=4.66e-15; maximum action gradient=2.89e-14
+[PASS] nonaxial-conserved-source-response: both source polarizations are transverse and solve the flat nongauge response
+       maximum source Ward=1.44e-16
+[PASS] nonaxial-k-cubed-tail: face- and body-diagonal static/null Ward tails have resolved cubic momentum order
+       face/static: p=2.988411, Cmax/Cmin=1.01221; face/null: p=2.997559, Cmax/Cmin=1.00254; body/static: p=2.9876...
+[PASS] ward-order-factorization: the bounded force loses its k-squared Ward term between first- and second-order generato...
+       face/static: F-ratio=1.0096, cancel=0.2754->0.0952, align=0.999430; face/null: F-ratio=1.0309, cancel=0.291...
+[PASS] complex-jet-amplitude-control: halving the complex-step field amplitude preserves both hostile normalized Ward coeffici...
+       ratio=1.0000234; ratio=1.0000058
+[PASS] scope-refinement-and-no-go-packet: the note separates two nonaxial controls from uniform refinement and physical closure
+N5_CERTIFICATE: two nonaxial cubic momentum orbits, two conserved source polarizations, and three infrared periods per orbit were executed
+per_element: every one of fifteen edge classes enters all fifty hinge classes at every cyclic phase site
+per_site: all 240 simplex-hinge incidences are rebuilt with the exact dot(winding,anchor) phase shift
+per_mode: the fundamental response and generated second harmonic are distinct on every executed period
+per_block: face/body times static/null tails plus two half-amplitude controls test order and anisotropy
+lattice_wide: not executed; arbitrary momentum direction, uniform all-L bounds, observables, and nonlinear Lorentzian refinement remain open
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

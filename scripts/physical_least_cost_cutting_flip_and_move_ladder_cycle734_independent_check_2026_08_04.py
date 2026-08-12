@@ -417,7 +417,11 @@ for region, edges in regions.items():
         if not compatible or covered != region[1]:
             continue
         candidate = common + list(refill)
-        geometric = all(
+        full_cover = 0
+        for piece in candidate:
+            full_cover |= masks[piece]
+        geometric = len(candidate) == 24 and len(set(candidate)) == 24 \
+            and full_cover == all_points and all(
             pair_separated(vertices, pieces, inverse, a, b)
             for a, b in itertools.combinations(candidate, 2)
         )

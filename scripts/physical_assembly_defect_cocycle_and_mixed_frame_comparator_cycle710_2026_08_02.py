@@ -347,7 +347,7 @@ for L in L_LIST:
               fmt(meas[L]["mixed_emax"]), fmt(abs(meas[L]["mixed_emax"] - 4.0))))
     check("c5.sep.L{}".format(L),
           meas[L]["mixed_emax"] / meas[L]["dq"][1] >= 1e9,
-          "boundary separation {}".format(fmt(meas[L]["mixed_emax"] / meas[L]["dq"][1])))
+          "comparator separation {}".format(fmt(meas[L]["mixed_emax"] / meas[L]["dq"][1])))
     check("c5.reject.L{}".format(L), meas[L]["mixed_law"] >= 0.5,
           "first-order law fails at mixed frame {}, residual {}".format(
               meas[L]["mixed_law_frame"], fmt(meas[L]["mixed_law"])))

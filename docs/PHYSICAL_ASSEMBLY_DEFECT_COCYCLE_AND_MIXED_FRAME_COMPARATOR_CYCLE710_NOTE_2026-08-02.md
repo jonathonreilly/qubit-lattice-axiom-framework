@@ -322,7 +322,7 @@ exactly sextet membership. The observed uniformity (one bit pattern across all
 18 frames per size) and the proximity of the value to the integer 4 are
 measurements; deriving the 4 from stencil combinatorics is a named next path.
 
-**Law at all sextet frames.** Cycle 709 established the first-order mechanism
+**All-sextet law census.** Cycle 709 established the first-order mechanism
 `Pi^T Q^-1 Pi = Q^-1 - Q^-1 E Q^-1 + O(E^2)` at one witness per branch. Here
 the same zero-parameter prediction is evaluated at every non-identity sextet
 frame: it holds on the entire all-minus coset (residuals at most `9.4e-04`,
@@ -383,10 +383,9 @@ This cycle measures the assembly-defect landscape over that identification and
 cross-checks its census (Claim 7).
 [Cycle 707](PHYSICAL_SOURCE_STABILIZER_COSET_COLLAPSE_K_SIGN_LAW_CYCLE707_NOTE_2026-08-01.md)
 measured the branch degeneracy at one witness per branch and posed the
-frame-structure questions this cycle answers at the Hessian level. The open-PR
-note `PHYSICAL_SOURCE_EDIT_SET_SIGNED_STABILIZER_CLASSIFICATION_CYCLE708_NOTE_2026-08-02`
-classifies source edits by signed stabilizer — complementary context only; no
-claim or calculation here depends on it. The landed
+frame-structure questions this cycle answers at the Hessian level. The landed
+Cycle 708 note classifies source edits by signed stabilizer — complementary
+context only; no claim or calculation here depends on it. The landed
 [Cycle 709 response-floor note](PHYSICAL_MINUS_BRANCH_RESPONSE_FLOOR_ASSEMBLY_DEFECT_LAW_CYCLE709_NOTE_2026-08-02.md)
 introduced `E`, the exact response-stage decomposition, and the zero-parameter
 law at one witness per branch; this cycle extends that measurement from two

@@ -1,0 +1,476 @@
+{
+  "body_diagonals": [
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      -1
+    ],
+    [
+      1,
+      -1,
+      1
+    ],
+    [
+      -1,
+      1,
+      1
+    ]
+  ],
+  "box_sizes": [
+    3,
+    4
+  ],
+  "fail": 0,
+  "gates": {
+    "census.classifier_margin.L3": {
+      "detail": "close max=2.392e-11, separated min=4.287e-05",
+      "pass": true
+    },
+    "census.classifier_margin.L4": {
+      "detail": "close max=3.185e-10, separated min=1.826e-04",
+      "pass": true
+    },
+    "census.constant_slots.L3": {
+      "detail": "constant slots=6, classes={1: 2, 3: 2, 7: 2}",
+      "pass": true
+    },
+    "census.constant_slots.L4": {
+      "detail": "constant slots=19, classes={5: 4, 9: 4, 11: 4, 13: 7}",
+      "pass": true
+    },
+    "census.deterministic_gaussian_sample.L3": {
+      "detail": "finest=20/20, minimum pair gap=7.215e-04",
+      "pass": true
+    },
+    "census.deterministic_gaussian_sample.L4": {
+      "detail": "finest=20/20, minimum pair gap=1.394e-03",
+      "pass": true
+    },
+    "census.fibre_representative.L3": {
+      "detail": "maximum single-slot within-fibre residual=2.392e-11",
+      "pass": true
+    },
+    "census.fibre_representative.L4": {
+      "detail": "maximum single-slot within-fibre residual=7.639e-10",
+      "pass": true
+    },
+    "census.finest_count.L3": {
+      "detail": "finest-pattern slots=0",
+      "pass": true
+    },
+    "census.finest_count.L4": {
+      "detail": "finest-pattern slots=48",
+      "pass": true
+    },
+    "census.partition_count.L3": {
+      "detail": "slots=98, patterns=14/15",
+      "pass": true
+    },
+    "census.partition_count.L4": {
+      "detail": "slots=279, patterns=15/15",
+      "pass": true
+    },
+    "group.body_diagonal_action.L3": {
+      "detail": "sextet=(1, 4, 9, 15, 18, 23), subgroups=30, regular=4",
+      "pass": true
+    },
+    "group.body_diagonal_action.L4": {
+      "detail": "sextet=(1, 4, 9, 15, 18, 23), subgroups=30, regular=4",
+      "pass": true
+    },
+    "group.composition.L3": {
+      "detail": "m_ab=m_a\u2218m_b for 576/576 pairs",
+      "pass": true
+    },
+    "group.composition.L4": {
+      "detail": "m_ab=m_a\u2218m_b for 576/576 pairs",
+      "pass": true
+    },
+    "group.composition_reverse_witness.L3": {
+      "detail": "reversed order matches 120/576 pairs",
+      "pass": true
+    },
+    "group.composition_reverse_witness.L4": {
+      "detail": "reversed order matches 120/576 pairs",
+      "pass": true
+    },
+    "group.dof_bijections.L3": {
+      "detail": "n=98, expected=98, 24 bijections",
+      "pass": true
+    },
+    "group.dof_bijections.L4": {
+      "detail": "n=279, expected=279, 24 bijections",
+      "pass": true
+    },
+    "group.frame_table.L3": {
+      "detail": "24 distinct determinant-one signed permutations",
+      "pass": true
+    },
+    "group.frame_table.L4": {
+      "detail": "24 distinct determinant-one signed permutations",
+      "pass": true
+    },
+    "matrix.conjugator.L3": {
+      "detail": "inverse-left residual=0.000e+00 over 576 pairs",
+      "pass": true
+    },
+    "matrix.conjugator.L4": {
+      "detail": "inverse-left residual=0.000e+00 over 576 pairs",
+      "pass": true
+    },
+    "matrix.conjugator_reverse_witness.L3": {
+      "detail": "reversed product differs on 456 pairs, residual=4.000000",
+      "pass": true
+    },
+    "matrix.conjugator_reverse_witness.L4": {
+      "detail": "reversed product differs on 456 pairs, residual=4.000000",
+      "pass": true
+    },
+    "matrix.eigenspace_resolution.L3": {
+      "detail": "clusters=66, doublets=32, internal max=3.553e-14, external min=1.278e-02",
+      "pass": true
+    },
+    "matrix.eigenspace_resolution.L4": {
+      "detail": "clusters=187, doublets=92, internal max=3.439e-14, external min=4.669e-03",
+      "pass": true
+    },
+    "matrix.fibre_separation.L3": {
+      "detail": "within max=1.243e-10, cross minimum=4.000000",
+      "pass": true
+    },
+    "matrix.fibre_separation.L4": {
+      "detail": "within max=1.243e-10, cross minimum=4.000000",
+      "pass": true
+    },
+    "matrix.inverse_margin.L3": {
+      "detail": "minimum |eigenvalue|=4.724e-01",
+      "pass": true
+    },
+    "matrix.inverse_margin.L4": {
+      "detail": "minimum |eigenvalue|=3.677e-02",
+      "pass": true
+    },
+    "matrix.rank_one_spectral_witness.L3": {
+      "detail": "bump=1.0e-03, spectrum shift=2.305e-04",
+      "pass": true
+    },
+    "matrix.rank_one_spectral_witness.L4": {
+      "detail": "bump=1.0e-03, spectrum shift=2.140e-04",
+      "pass": true
+    },
+    "matrix.spectral_consistency.L3": {
+      "detail": "eigen=1.918e-13, trace=0.000e+00, frobenius=0.000e+00, logabsdet=1.705e-13, det-sign=[1]",
+      "pass": true
+    },
+    "matrix.spectral_consistency.L4": {
+      "detail": "eigen=4.832e-13, trace=1.819e-12, frobenius=5.684e-14, logabsdet=1.251e-12, det-sign=[-1]",
+      "pass": true
+    },
+    "matrix.symmetry_roundtrip.L3": {
+      "detail": "symmetry=0.000e+00, permutation roundtrip=0.000e+00",
+      "pass": true
+    },
+    "matrix.symmetry_roundtrip.L4": {
+      "detail": "symmetry=0.000e+00, permutation roundtrip=0.000e+00",
+      "pass": true
+    },
+    "probe.seed7180.individual_weight_basis_witness.L3": {
+      "detail": "individual-weight L1=0.707602, rotation range=0.657906; eigenspace measure max=3.505e-11",
+      "pass": true
+    },
+    "probe.seed7180.individual_weight_basis_witness.L4": {
+      "detail": "individual-weight L1=0.804475, rotation range=0.475653; eigenspace measure max=1.424e-10",
+      "pass": true
+    },
+    "probe.seed7180.nonregular_contrast.L3": {
+      "detail": "translates=24, measure L1 max=1.117897, Rayleigh spread=0.038593",
+      "pass": true
+    },
+    "probe.seed7180.nonregular_contrast.L4": {
+      "detail": "translates=24, measure L1 max=1.310128, Rayleigh spread=0.517711",
+      "pass": true
+    },
+    "probe.seed7180.orbit_distinct.L3": {
+      "detail": "minimum raw orbit distance=12.204625",
+      "pass": true
+    },
+    "probe.seed7180.orbit_distinct.L4": {
+      "detail": "minimum raw orbit distance=20.967071",
+      "pass": true
+    },
+    "probe.seed7180.rayleigh_fibres.L3": {
+      "detail": "within max=2.959e-12, cross mean gap=0.002720",
+      "pass": true
+    },
+    "probe.seed7180.rayleigh_fibres.L4": {
+      "detail": "within max=1.852e-10, cross mean gap=0.005583",
+      "pass": true
+    },
+    "probe.seed7180.regular_cover.L3": {
+      "detail": "|S H|=24, distinct left translates=6",
+      "pass": true
+    },
+    "probe.seed7180.regular_cover.L4": {
+      "detail": "|S H|=24, distinct left translates=6",
+      "pass": true
+    },
+    "probe.seed7180.spectral_measure_fibres.L3": {
+      "detail": "within L1 max=2.138e-10, cross L1 min=0.675699",
+      "pass": true
+    },
+    "probe.seed7180.spectral_measure_fibres.L4": {
+      "detail": "within L1 max=2.976e-10, cross L1 min=0.867442",
+      "pass": true
+    },
+    "probe.seed7180.transfer_identity.L3": {
+      "detail": "residual=2.776e-17, minimum average norm=10.442217",
+      "pass": true
+    },
+    "probe.seed7180.transfer_identity.L4": {
+      "detail": "residual=4.441e-16, minimum average norm=15.957389",
+      "pass": true
+    },
+    "probe.seed7180.translate_symmetry_labels.L3": {
+      "detail": "six translates represented by sextet labels=[1, 4, 9, 15, 18, 23]",
+      "pass": true
+    },
+    "probe.seed7180.translate_symmetry_labels.L4": {
+      "detail": "six translates represented by sextet labels=[1, 4, 9, 15, 18, 23]",
+      "pass": true
+    },
+    "probe.seed7180.translated_sources_distinct.L3": {
+      "detail": "normalized distance min=1.011248, symmetry relation=1.188e-16",
+      "pass": true
+    },
+    "probe.seed7180.translated_sources_distinct.L4": {
+      "detail": "normalized distance min=1.098451, symmetry relation=1.094e-16",
+      "pass": true
+    },
+    "probe.seed7180.translated_spectral_measure.L3": {
+      "detail": "measure L1 max=3.505e-11, Rayleigh spread=2.810e-12",
+      "pass": true
+    },
+    "probe.seed7180.translated_spectral_measure.L4": {
+      "detail": "measure L1 max=1.424e-10, Rayleigh spread=6.581e-11",
+      "pass": true
+    },
+    "probe.seed7180.weighted_hull.L3": {
+      "detail": "weighted residual=3.109e-15, hull=[-0.706553,2.116776], minimum margin=0.618279",
+      "pass": true
+    },
+    "probe.seed7180.weighted_hull.L4": {
+      "detail": "weighted residual=4.557e-14, hull=[-2.322488,27.197218], minimum margin=2.295591",
+      "pass": true
+    },
+    "probe.seed7181.individual_weight_basis_witness.L3": {
+      "detail": "individual-weight L1=0.760824, rotation range=0.470788; eigenspace measure max=1.029e-10",
+      "pass": true
+    },
+    "probe.seed7181.individual_weight_basis_witness.L4": {
+      "detail": "individual-weight L1=0.763628, rotation range=0.399722; eigenspace measure max=1.954e-10",
+      "pass": true
+    },
+    "probe.seed7181.nonregular_contrast.L3": {
+      "detail": "translates=24, measure L1 max=1.404016, Rayleigh spread=0.070120",
+      "pass": true
+    },
+    "probe.seed7181.nonregular_contrast.L4": {
+      "detail": "translates=24, measure L1 max=1.469382, Rayleigh spread=0.293054",
+      "pass": true
+    },
+    "probe.seed7181.orbit_distinct.L3": {
+      "detail": "minimum raw orbit distance=11.955480",
+      "pass": true
+    },
+    "probe.seed7181.orbit_distinct.L4": {
+      "detail": "minimum raw orbit distance=21.054429",
+      "pass": true
+    },
+    "probe.seed7181.rayleigh_fibres.L3": {
+      "detail": "within max=2.697e-12, cross mean gap=0.021632",
+      "pass": true
+    },
+    "probe.seed7181.rayleigh_fibres.L4": {
+      "detail": "within max=9.027e-11, cross mean gap=0.016597",
+      "pass": true
+    },
+    "probe.seed7181.regular_cover.L3": {
+      "detail": "|S H|=24, distinct left translates=6",
+      "pass": true
+    },
+    "probe.seed7181.regular_cover.L4": {
+      "detail": "|S H|=24, distinct left translates=6",
+      "pass": true
+    },
+    "probe.seed7181.spectral_measure_fibres.L3": {
+      "detail": "within L1 max=2.583e-10, cross L1 min=0.825577",
+      "pass": true
+    },
+    "probe.seed7181.spectral_measure_fibres.L4": {
+      "detail": "within L1 max=3.074e-10, cross L1 min=0.883554",
+      "pass": true
+    },
+    "probe.seed7181.transfer_identity.L3": {
+      "detail": "residual=8.327e-17, minimum average norm=9.827648",
+      "pass": true
+    },
+    "probe.seed7181.transfer_identity.L4": {
+      "detail": "residual=1.943e-16, minimum average norm=16.410165",
+      "pass": true
+    },
+    "probe.seed7181.translate_symmetry_labels.L3": {
+      "detail": "six translates represented by sextet labels=[1, 4, 9, 15, 18, 23]",
+      "pass": true
+    },
+    "probe.seed7181.translate_symmetry_labels.L4": {
+      "detail": "six translates represented by sextet labels=[1, 4, 9, 15, 18, 23]",
+      "pass": true
+    },
+    "probe.seed7181.translated_sources_distinct.L3": {
+      "detail": "normalized distance min=0.976595, symmetry relation=7.952e-17",
+      "pass": true
+    },
+    "probe.seed7181.translated_sources_distinct.L4": {
+      "detail": "normalized distance min=1.390780, symmetry relation=1.034e-16",
+      "pass": true
+    },
+    "probe.seed7181.translated_spectral_measure.L3": {
+      "detail": "measure L1 max=1.029e-10, Rayleigh spread=1.822e-12",
+      "pass": true
+    },
+    "probe.seed7181.translated_spectral_measure.L4": {
+      "detail": "measure L1 max=1.954e-10, Rayleigh spread=1.266e-11",
+      "pass": true
+    },
+    "probe.seed7181.weighted_hull.L3": {
+      "detail": "weighted residual=7.716e-15, hull=[-0.706553,2.116776], minimum margin=0.573446",
+      "pass": true
+    },
+    "probe.seed7181.weighted_hull.L4": {
+      "detail": "weighted residual=5.351e-14, hull=[-2.322488,27.197218], minimum margin=2.193054",
+      "pass": true
+    }
+  },
+  "notes": {
+    "census_L3": {
+      "close_max": 2.391640357979341e-11,
+      "constant": 6,
+      "constant_classes": {
+        "1": 2,
+        "3": 2,
+        "7": 2
+      },
+      "finest": 0,
+      "generic_finest": 20,
+      "generic_gap": 0.0007214806892252151,
+      "patterns": 14,
+      "separated_min": 4.286578473796515e-05
+    },
+    "census_L4": {
+      "close_max": 3.1846836279214585e-10,
+      "constant": 19,
+      "constant_classes": {
+        "5": 4,
+        "9": 4,
+        "11": 4,
+        "13": 7
+      },
+      "finest": 48,
+      "generic_finest": 20,
+      "generic_gap": 0.0013941131852401867,
+      "patterns": 15,
+      "separated_min": 0.00018262645795912719
+    },
+    "matrix_L3": {
+      "cross_fibre_minimum": 4.000000013337779,
+      "doublets": 32,
+      "eigenspace_external_gap": 0.012777484483796897,
+      "eigenspace_internal_gap": 3.552713678800501e-14,
+      "eigenspaces": 66,
+      "rank_one_shift": 0.00023053747390733292,
+      "spectrum_residual": 1.9184653865522705e-13,
+      "within_fibre": 1.2434497875801753e-10
+    },
+    "matrix_L4": {
+      "cross_fibre_minimum": 4.000000013337779,
+      "doublets": 92,
+      "eigenspace_external_gap": 0.004668959018918173,
+      "eigenspace_internal_gap": 3.4389158187764224e-14,
+      "eigenspaces": 187,
+      "rank_one_shift": 0.00021398151589124836,
+      "spectrum_residual": 4.831690603168681e-13,
+      "within_fibre": 1.2434497875801753e-10
+    },
+    "probe_seed7180_L3": {
+      "contrast_measure_max": 1.1178967204574537,
+      "contrast_rayleigh_spread": 0.0385927731153034,
+      "individual_weight_basis_range": 0.6579061263979764,
+      "orbit_distance": 12.204625064393268,
+      "orbit_measure_between": 0.6756989923736416,
+      "orbit_measure_within": 2.137992280828281e-10,
+      "orbit_rayleigh_between": 0.0027196536734741955,
+      "orbit_rayleigh_within": 2.959278655456643e-12,
+      "transfer_residual": 2.7755575615628914e-17,
+      "translated_measure_spread": 3.5047785439436145e-11,
+      "translated_rayleigh_spread": 2.809530386116421e-12,
+      "translated_source_distance": 1.0112479618619294,
+      "translated_source_relation": 1.1875450762752485e-16
+    },
+    "probe_seed7180_L4": {
+      "contrast_measure_max": 1.3101284810231955,
+      "contrast_rayleigh_spread": 0.5177107370235045,
+      "individual_weight_basis_range": 0.47565308565212805,
+      "orbit_distance": 20.967070945212466,
+      "orbit_measure_between": 0.8674423931127526,
+      "orbit_measure_within": 2.9763088821982e-10,
+      "orbit_rayleigh_between": 0.005583070401124657,
+      "orbit_rayleigh_within": 1.851750419668008e-10,
+      "transfer_residual": 4.440892098500626e-16,
+      "translated_measure_spread": 1.4240259075959665e-10,
+      "translated_rayleigh_spread": 6.581379885517435e-11,
+      "translated_source_distance": 1.0984512408980165,
+      "translated_source_relation": 1.0940208977544894e-16
+    },
+    "probe_seed7181_L3": {
+      "contrast_measure_max": 1.4040162780544807,
+      "contrast_rayleigh_spread": 0.07012039251774892,
+      "individual_weight_basis_range": 0.4707880722717333,
+      "orbit_distance": 11.955480060267659,
+      "orbit_measure_between": 0.8255766246219373,
+      "orbit_measure_within": 2.583007626377122e-10,
+      "orbit_rayleigh_between": 0.021632139027482983,
+      "orbit_rayleigh_within": 2.6969537714194303e-12,
+      "transfer_residual": 8.326672684688674e-17,
+      "translated_measure_spread": 1.029130846628354e-10,
+      "translated_rayleigh_spread": 1.822153539166038e-12,
+      "translated_source_distance": 0.9765945191756416,
+      "translated_source_relation": 7.952083827632509e-17
+    },
+    "probe_seed7181_L4": {
+      "contrast_measure_max": 1.4693818869978772,
+      "contrast_rayleigh_spread": 0.29305412679523474,
+      "individual_weight_basis_range": 0.3997219064645994,
+      "orbit_distance": 21.054428581164306,
+      "orbit_measure_between": 0.8835543404357387,
+      "orbit_measure_within": 3.073658159300608e-10,
+      "orbit_rayleigh_between": 0.0165966493070428,
+      "orbit_rayleigh_within": 9.02720953543934e-11,
+      "transfer_residual": 1.942890293094024e-16,
+      "translated_measure_spread": 1.9544208510166296e-10,
+      "translated_rayleigh_spread": 1.265632043612186e-11,
+      "translated_source_distance": 1.3907800824463143,
+      "translated_source_relation": 1.033565906103239e-16
+    }
+  },
+  "pass": 82,
+  "probe_seeds": [
+    7180,
+    7181
+  ],
+  "runner": "physical_frame_orbit_spectral_measure_and_rayleigh_census_cycle718_2026_08_02.py"
+}

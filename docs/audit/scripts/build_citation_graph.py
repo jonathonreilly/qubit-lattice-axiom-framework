@@ -173,6 +173,12 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
         "scripts/physical_frame_group_complement_and_finite_probe_blinding_cycle715_"
         "independent_check_2026_08_02.py",
     ],
+    # Cycle 718's checker independently constructs dense frame permutations,
+    # eigenspace projectors, regular-coset sources, and the single-slot census.
+    "physical_frame_orbit_spectral_measure_and_rayleigh_census_cycle718_note_2026-08-02": [
+        "scripts/physical_frame_orbit_spectral_measure_and_rayleigh_census_cycle718_"
+        "independent_check_2026_08_02.py",
+    ],
     "b4_clock_relation_run_cycle879_bounded_theorem_note_2026-07-28": [
         "scripts/frontier_cycle879_b4_relation_independent_check_2026_07_28.py",
     ],

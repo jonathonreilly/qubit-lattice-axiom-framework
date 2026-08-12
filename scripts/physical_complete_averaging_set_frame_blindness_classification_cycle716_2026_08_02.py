@@ -1,4 +1,4 @@
-"""Cycle 716 -- complete classification of frame-blind averaging sets.
+"""Cycle 716 -- finite classification of frame-blind averaging sets.
 
 Class-A finite check script (stdlib + numpy only).  It executes the landed Cycle-696
 open-coframe endpoint compiler chain to assemble the static operator, relabels it by
@@ -26,21 +26,26 @@ every g in the product set S L(A) gives the same value of v_A.  Hence
 Gates:
 
   G1  the group layer: sextet, subgroup lattice, covering subgroups, complements, the
-      24 minimal blind collections, and the family they generate;
+      24 minimum-size covering-family members, and the family they generate;
   G2  the same family recovered from the left-stabilizer criterion alone, evaluated
       combinatorially on all 16777215 collections;
-  G3  the four-representative reduction, validated against all 24 frames rather than
-      assumed, on every collection of size at most three;
-  G4  sufficiency, on five sources and two box sizes, for all 231 predicted members;
-  G5  the converse for generic sources, by complete scan of all 16777215 collections
-      at two independent sources and two box sizes;
-  G6  rejectors: the sextet itself, a non-subgroup subset of it, and the right cosets
-      of the three non-covering order-four subgroups;
-  G7  the honest boundary: structured sources are blind on strictly more collections,
-      so the converse is a generic-source statement and is reported as one.
+  G3  the four-representative screen: its representatives are a four-coset
+      transversal and therefore a subset of the 24 frames; a bounded comparison
+      sample is carried as a consistency check, not as a proof of reduction;
+  G4  sufficiency on the nonvanishing-average domain, on five supplied sources and
+      two box sizes, for all 231 predicted members;
+  G5  complete finite scans of all 16777215 collections at four declared seeded
+      standard-normal inputs (two base seeds at each of two box sizes), with every
+      screen acceptance re-tested on all 24 frames;
+  G6  finite rejector witnesses at the first seeded input;
+  G7  finite structured-source witnesses showing that the seeded-scan counts are not
+      source-independent;
+  G8  a zero-average hostile witness: the normalized response is undefined and must
+      return a non-passing NaN rather than be classified as blind.
 
-No value is read from a pinned table: every number printed here is recomputed from the
-compiler chain in this run.
+The exact group statements are conditional on the measured sextet returned by the
+supplied compiler.  The full-powerset response counts are finite statements at the four
+declared seeded inputs only; they do not establish a generic-source theorem.
 """
 from __future__ import annotations
 
@@ -53,6 +58,15 @@ from collections import Counter
 from pathlib import Path
 
 import numpy as np
+
+AUDIT_INPUT_PATHS = (
+    "scripts/physical_open_coframe_k_endpoint_compiler_cycle696_2026_07_25.py",
+    "scripts/physical_dynamical_metric_source_law_bridge_tournament_cycle576_2026_07_22.py",
+    "scripts/physical_dynamical_metric_source_law_bridge_cycle576_regge_support_2026_07_22.py",
+    "scripts/physical_dynamical_metric_source_law_bridge_cycle576_plaquette_support_2026_07_22.py",
+    "scripts/frontier_cubic_coxeter_regge_second_variation_3plus1_2026_06_09.py",
+)
+AUDIT_TIMEOUT_SEC = 900
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
@@ -76,6 +90,7 @@ GENERIC_SEEDS = (7160, 7161)
 TOL_BLIND = 1e-8
 TOL_STAB = 1e-9
 TOL_REDUCE = 1e-8
+TOL_ZERO_NORM = 1e-12
 SEP_MIN = 1e3
 NORM_MIN = 1.0
 BLOCK = 20000
@@ -180,12 +195,12 @@ def build_ctx(L):
 
 
 def sources(ctx):
-    """The five sources: two generic, three structured."""
+    """Five supplied probes: two declared seeded draws and three structured inputs."""
     n = ctx["n"]
     out = []
     for seed in GENERIC_SEEDS:
         rg = np.random.default_rng(seed + ctx["L"])
-        out.append(("generic-{}".format(seed), rg.standard_normal(n)))
+        out.append(("seeded-normal-base-{}".format(seed), rg.standard_normal(n)))
     out.append(("unit-slot0", np.eye(n)[0]))
     out.append(("unit-slot7", np.eye(n)[7]))
     out.append(("all-ones", np.ones(n)))
@@ -202,7 +217,9 @@ def spread_of(A, bp, QIs):
     for a in A:
         v = v + bp[a]
     nrm = float(np.linalg.norm(v))
-    v = v / (nrm if nrm > 0.0 else 1.0)
+    if nrm <= TOL_ZERO_NORM:
+        return float("nan"), nrm
+    v = v / nrm
     vals = [float(v @ Qi @ v) for Qi in QIs]
     return max(vals) - min(vals), nrm
 
@@ -210,12 +227,15 @@ def spread_of(A, bp, QIs):
 def scan_sizes(bp, QIs, kmax, collect=True):
     """Complete scan over every collection of size 1..kmax.  Returns the measured blind
     family (when collect is set), its size histogram, the worst blind spread, the best
-    non-blind spread, and the smallest norm of the averaged source encountered (a zero
-    would make any gate vacuous).  With collect off only the counts are kept, so a
+    non-blind spread, the smallest norm of the averaged source encountered, and the
+    number of degenerate normalized responses.  A zero average is undefined and belongs
+    to neither population.  With collect off only the counts are kept, so a
     source that is blind almost everywhere does not have to be materialised."""
     measured = set()
     by_size = Counter()
-    worst_blind, best_non, minnorm = 0.0, float("inf"), float("inf")
+    worst_blind, best_non, minnorm, degenerate = (
+        0.0, float("inf"), float("inf"), 0
+    )
     for k in range(1, kmax + 1):
         it = itertools.combinations(range(24), k)
         while True:
@@ -228,22 +248,24 @@ def scan_sizes(bp, QIs, kmax, collect=True):
                 B += bp[idx[:, j]]
             nrm = np.linalg.norm(B, axis=1)
             minnorm = min(minnorm, float(nrm.min()))
-            B /= np.where(nrm > 0.0, nrm, 1.0)[:, None]
+            valid = nrm > TOL_ZERO_NORM
+            degenerate += int((~valid).sum())
+            B /= np.where(valid, nrm, 1.0)[:, None]
             V = np.stack([np.einsum("ij,jk,ik->i", B, Qi, B, optimize=True)
                           for Qi in QIs], axis=1)
             sp = V.max(axis=1) - V.min(axis=1)
-            hit = np.flatnonzero(sp < TOL_BLIND)
+            hit = np.flatnonzero(valid & (sp < TOL_BLIND))
             by_size[k] += int(hit.size)
             if collect:
                 for h in hit:
                     measured.add(frozenset(int(t) for t in idx[h]))
             if hit.size:
                 worst_blind = max(worst_blind, float(sp[hit].max()))
-            keep = np.ones(sp.shape, dtype=bool)
-            keep[hit] = False
+            keep = valid & (sp >= TOL_BLIND)
             if keep.any():
                 best_non = min(best_non, float(sp[keep].min()))
-    return measured, sorted(by_size.items()), worst_blind, best_non, minnorm
+    return (measured, sorted(by_size.items()), worst_blind, best_non, minnorm,
+            degenerate)
 
 
 # ---------------------------------------------------------------------------
@@ -251,10 +273,18 @@ def scan_sizes(bp, QIs, kmax, collect=True):
 # ---------------------------------------------------------------------------
 def group_layer(S):
     Sset = frozenset(S)
-    subs = set()
-    for k in (1, 2, 3):
-        for gens in itertools.combinations(range(24), k):
-            subs.add(closure(gens))
+    # Exhaust the subgroup lattice constructively.  Starting from {e}, adjoining
+    # every group element to every subgroup already found reaches every finitely
+    # generated subgroup without assuming a bound on generating rank.
+    subs = {frozenset({IDENT})}
+    frontier = list(subs)
+    while frontier:
+        H = frontier.pop()
+        for g in range(24):
+            K = closure(set(H) | {g})
+            if K not in subs:
+                subs.add(K)
+                frontier.append(K)
     subs = sorted(subs, key=lambda h: (len(h), sorted(h)))
     covering = [H for H in subs if len(prod_set(Sset, H)) == 24]
     comps = [H for H in covering if len(H) == 4]
@@ -290,13 +320,13 @@ def run_group_layer(gl, S):
     check("g1_complements", len(gl["comps"]) == 4
           and all(len(H & Sset) == 1 for H in gl["comps"]),
           "4 complements meeting S in the identity alone")
-    check("g1_noncovering_order4_rejector", len(gl["noncov4"]) == 3
+    check("g1_noncovering_order4_witness", len(gl["noncov4"]) == 3
           and all(len(H & Sset) == 2 and len(prod_set(Sset, H)) == 12
                   for H in gl["noncov4"]),
           "3 order-4 subgroups meet S twice, cover 12 of 24")
-    check("g1_minimal_blind_collections", len(gl["minimal"]) == 24
+    check("g1_minimal_covering_family_members", len(gl["minimal"]) == 24
           and all(len(A) == 4 for A in gl["minimal"]),
-          "24 right cosets of the complements, each of size 4")
+          "24 size-4 right cosets of the complements")
     check("g1_left_family_equals_right_family", gl["left"] == set(gl["minimal"]),
           "left and right coset families coincide as sets")
     check("g1_covering_contains_complement",
@@ -309,12 +339,12 @@ def run_group_layer(gl, S):
     quarters = sorted({len(A) // 4 * 4 == len(A) for A in gl["family"]})
     check("g1_sizes_are_multiples_of_four", quarters == [True]
           and min(len(A) for A in gl["family"]) == 4,
-          "no member of size 1, 2, 3 or any size off the quarter ladder")
+          "family size support [4, 8, 12, 16, 20, 24], minimum 4")
     decomposes = all(A == frozenset().union(frozenset(),
                                             *[M for M in gl["minimal"] if M <= A])
                      for A in gl["family"])
     check("g1_family_generated_by_minimal", decomposes,
-          "every member is a union of minimal blind collections")
+          "every member is a union of minimal covering-family members")
     pairs = [(i, j) for i in range(24) for j in range(i + 1, 24)
              if not (gl["minimal"][i] & gl["minimal"][j])]
     outside = [(i, j) for (i, j) in pairs
@@ -322,12 +352,12 @@ def run_group_layer(gl, S):
     check("g1_family_not_union_closed", len(pairs) == 168 and len(outside) == 108,
           "{} disjoint minimal pairs, {} unions outside the family".format(
               len(pairs), len(outside)))
-    NOTES["example_union_outside_family"] = [
+    NOTES["example_disjoint_pair_with_union_outside_family"] = [
         sorted(gl["minimal"][outside[0][0]]), sorted(gl["minimal"][outside[0][1]])]
     overlap = [(i, j) for i in range(24) for j in range(i + 1, 24)
                if gl["minimal"][i] & gl["minimal"][j]]
     check("g1_minimal_cover_overlaps", len(overlap) == 108,
-          "the 24 minimal collections overlap partially, they do not partition")
+          "108 of 276 pairs overlap")
 
 
 # ---------------------------------------------------------------------------
@@ -402,7 +432,16 @@ def run_L(ctx, gl):
     check("g3_{}_sextet_recovered".format(tag), tuple(ctx["S"]) == SEXTET_EXPECTED,
           "S {} at tol {}".format(list(ctx["S"]), fmt(TOL_STAB)))
 
-    # four-representative reduction: validated, not assumed
+    # The four representative values form a monotone screen because the selected
+    # representatives are a literal subset of the 24 frames.  Agreement below is
+    # only a bounded consistency sample; every screen acceptance is separately
+    # retested against all 24 frames in G5.
+    reps_ok = (len(ctx["reps"]) == 4 and len(set(ctx["reps"])) == 4
+               and all(0 <= r < 24 for r in ctx["reps"])
+               and len(ctx["QI4"]) == len(ctx["reps"]))
+    check("g3_{}_screening_premise".format(tag), reps_ok,
+          "four distinct frame representatives {} are a subset of the 24".format(
+              ctx["reps"]))
     b = sources(ctx)[0][1]
     bp = pulled(ctx, b)
     worst_red = 0.0
@@ -411,8 +450,9 @@ def run_L(ctx, gl):
             s4, _ = spread_of(A, bp, ctx["QI4"])
             s24, _ = spread_of(A, bp, ctx["QI24"])
             worst_red = max(worst_red, abs(s4 - s24))
-    check("g3_{}_four_representative_reduction".format(tag), worst_red < TOL_REDUCE,
-          "worst deviation {} over all 2324 collections of size at most 3".format(
+    check("g3_{}_four_representative_sample".format(tag), worst_red < TOL_REDUCE,
+          "bounded consistency sample: worst deviation {} over 2324 collections"
+          " of size at most 3".format(
               fmt(worst_red)))
 
     # G4 sufficiency, all five sources, all 231 predicted members
@@ -423,48 +463,56 @@ def run_L(ctx, gl):
             s, nrm = spread_of(A, sp, ctx["QI24"])
             worst_suf = max(worst_suf, s)
             minnorm_suf = min(minnorm_suf, nrm)
-    check("g4_{}_sufficiency_all_sources".format(tag), worst_suf < TOL_BLIND
+    check("g4_{}_sufficiency_supplied_sources".format(tag), worst_suf < TOL_BLIND
           and minnorm_suf > NORM_MIN,
-          "231 members x 5 sources, worst spread {} smallest norm {}".format(
+          "231 members x 5 supplied inputs on the nonzero-average domain, worst "
+          "spread {} smallest norm {}".format(
               fmt(worst_suf), fmt(minnorm_suf)))
 
-    # G5 converse, complete scan, generic sources
+    # G5 complete finite scans at the four declared seeded standard-normal inputs.
     for name, src in sources(ctx)[:2]:
         sp = pulled(ctx, src)
-        got, hist, wb, bn, mn = scan_sizes(sp, ctx["QI4"], 24)
+        got, hist, wb, bn, mn, nd = scan_sizes(sp, ctx["QI4"], 24)
         sep = bn / wb if wb > 0.0 else float("inf")
-        check("g5_{}_{}_complete_converse".format(tag, name), got == gl["family"],
-              "{} collections, {} blind, family match {}".format(
+        check("g5_{}_{}_finite_scan_family".format(tag, name), got == gl["family"],
+              "{} collections, {} classified blind, covering-family match {}".format(
                   NALL, len(got), got == gl["family"]))
         check("g5_{}_{}_separation".format(tag, name),
-              sep > SEP_MIN and mn > NORM_MIN,
-              "worst blind {} best non-blind {} ratio {} smallest norm {}".format(
-                  fmt(wb), fmt(bn), fmt(sep), fmt(mn)))
-        check("g5_{}_{}_size_ladder".format(tag, name), hist == LADDER,
-              "zero blind collections at every size off the quarter ladder, "
-              "nonzero counts {}".format([(k, c) for k, c in hist if c]))
+              sep > SEP_MIN and mn > NORM_MIN and nd == 0,
+              "worst blind {} best non-blind {} ratio {} smallest norm {} "
+              "degenerate {}".format(fmt(wb), fmt(bn), fmt(sep), fmt(mn), nd))
+        check("g5_{}_{}_size_census".format(tag, name), hist == LADDER,
+              "counts by size {}".format(hist))
+        all24 = [spread_of(A, sp, ctx["QI24"])[0] for A in got]
+        check("g5_{}_{}_all_24_acceptance".format(tag, name),
+              len(all24) == len(gl["family"])
+              and all(math.isfinite(s) and s < TOL_BLIND for s in all24),
+              "all {} screen acceptances retested on all 24 frames; worst spread {}"
+              .format(len(all24), fmt(max(all24) if all24 else float("inf"))))
 
-    # G6 rejectors
+    # G6 finite named witnesses at the first seeded input.
     bp0 = pulled(ctx, sources(ctx)[0][1])
     s_sextet, _ = spread_of(ctx["S"], bp0, ctx["QI24"])
-    check("g6_{}_sextet_not_blind".format(tag), s_sextet > TOL_BLIND,
-          "the sextet itself spreads {}".format(fmt(s_sextet)))
+    check("g6_{}_sextet_spread_witness".format(tag), s_sextet > TOL_BLIND,
+          "the sextet spread is {} at this input".format(fmt(s_sextet)))
     subset = (1, 4, 9, 23)
     s_sub, _ = spread_of(subset, bp0, ctx["QI24"])
-    check("g6_{}_non_subgroup_subset_not_blind".format(tag), s_sub > TOL_BLIND,
-          "subset {} of the sextet spreads {}".format(list(subset), fmt(s_sub)))
+    check("g6_{}_non_subgroup_subset_spread_witness".format(tag),
+          s_sub > TOL_BLIND,
+          "subset {} spread is {} at this input".format(list(subset), fmt(s_sub)))
     worst_nc = float("inf")
     for H in gl["noncov4"]:
         for a in range(24):
             s, _ = spread_of(frozenset(int(MUL[h][a]) for h in H), bp0, ctx["QI24"])
             worst_nc = min(worst_nc, s)
-    check("g6_{}_non_covering_cosets_not_blind".format(tag), worst_nc > TOL_BLIND,
-          "72 cosets of the 3 non-covering order-4 subgroups, least spread {}".format(
+    check("g6_{}_noncovering_coset_spread_witness".format(tag),
+          worst_nc > TOL_BLIND,
+          "72 cosets of 3 noncovering order-4 subgroups, least spread {}".format(
               fmt(worst_nc)))
 
 
 def run_boundary(ctx, gl):
-    """G7 -- the honest boundary: structured sources blind strictly more."""
+    """G7 -- finite structured-source existence witnesses."""
     L = ctx["L"]
     tag = "L{}".format(L)
     pred8 = {A for A in gl["family"] if len(A) <= KMAX_BOUNDARY}
@@ -472,8 +520,9 @@ def run_boundary(ctx, gl):
     counts, small = {}, {}
     for name, src in sources(ctx)[2:]:
         sp = pulled(ctx, src)
-        got, hist, wb, bn, mn = scan_sizes(sp, ctx["QI4"], KMAX_BOUNDARY,
-                                           collect=(name != "all-ones"))
+        got, hist, wb, bn, mn, nd = scan_sizes(
+            sp, ctx["QI4"], KMAX_BOUNDARY, collect=(name != "all-ones")
+        )
         counts[name] = sum(c for _, c in hist)
         small[name] = sum(c for k, c in hist if k < 4)
         if name == "all-ones":
@@ -483,28 +532,39 @@ def run_boundary(ctx, gl):
                   "orbit diameter {} blind on all {} collections".format(
                       fmt(orbit), counts[name]))
         else:
-            check("g7_{}_{}_blinds_strictly_more".format(tag, name),
+            check("g7_{}_{}_additional_blind_witnesses".format(tag, name),
                   got > pred8,
-                  "{} blind of {} at size at most {}, family has {}, nonzero at sizes "
-                  "{}, below the generic floor {}".format(
+                  "{} blind of {} at size at most {}, family contributes {}, counts "
+                  "by occupied sizes {}, counts below size 4 {}".format(
                       counts[name], nsmall, KMAX_BOUNDARY, len(pred8),
                       [k for k, c in hist if c], [(k, c) for k, c in hist if c and k < 4]))
         NOTES["boundary_{}_{}".format(tag, name)] = {
             "blind": counts[name], "worst_blind": fmt(wb), "best_non_blind": fmt(bn),
-            "min_norm": fmt(mn)}
+            "min_norm": fmt(mn), "degenerate": nd}
     check("g7_{}_boundary_ordering".format(tag),
           counts["unit-slot7"] > counts["unit-slot0"] > len(pred8),
           "structured blind counts {} and {} against family {}".format(
               counts["unit-slot7"], counts["unit-slot0"], len(pred8)))
-    check("g7_{}_sub_minimal_blindness_is_structured_only".format(tag),
+    check("g7_{}_size_two_blind_witness".format(tag),
           small["unit-slot7"] > 0 and small["unit-slot0"] == 0,
-          "a structured source admits {} blind collections below the generic minimum "
-          "size of four, so that floor is generic, not universal".format(
-              small["unit-slot7"]))
+          "unit-slot7 has {} blind collections below size 4 in this scan; "
+          "unit-slot0 has {}".format(small["unit-slot7"], small["unit-slot0"]))
+
+
+def run_zero_average_domain(ctx):
+    """G8 -- a nonzero input whose full-group average vanishes."""
+    b = np.zeros(ctx["n"])
+    b[0] = 1.0
+    b[35] = -1.0
+    spread, norm = spread_of(range(24), pulled(ctx, b), ctx["QI24"])
+    check("g8_zero_average_domain_is_nonpassing",
+          norm <= TOL_ZERO_NORM and math.isnan(spread),
+          "nonzero e0-e35 input, full-group average norm {}, spread {}".format(
+              fmt(norm), spread))
 
 
 def main() -> int:
-    print("c716 complete classification of frame-blind averaging sets")
+    print("c716 finite classification of frame-blind averaging sets")
     ctxs = {L: build_ctx(L) for L in L_LIST}
     gl = group_layer(ctxs[L_LIST[0]]["S"])
     print("-- group layer --")
@@ -516,6 +576,8 @@ def main() -> int:
         run_L(ctxs[L], gl)
     print("-- boundary (structured sources) --")
     run_boundary(ctxs[L_LIST[0]], gl)
+    print("-- zero-average domain witness --")
+    run_zero_average_domain(ctxs[L_LIST[0]])
 
     receipt = {"blind_family_size": len(gl["family"]),
                "box_sizes": list(L_LIST),
@@ -523,13 +585,14 @@ def main() -> int:
                "covering_orders": sorted(len(H) for H in gl["covering"]),
                "fail": N_FAIL,
                "gates": GATES,
-               "minimal_blind_collections": len(gl["minimal"]),
+               "minimal_covering_family_members": len(gl["minimal"]),
                "notes": NOTES,
                "pass": N_PASS,
                "runner": Path(__file__).name,
                "sextet": list(SEXTET_EXPECTED),
                "subgroup_lattice": len(gl["subs"]),
-               "tolerance": fmt(TOL_BLIND)}
+               "tolerance": fmt(TOL_BLIND),
+               "zero_norm_tolerance": fmt(TOL_ZERO_NORM)}
     out = ROOT / "outputs" / RECEIPT_NAME
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(receipt, sort_keys=True, indent=2) + "\n")

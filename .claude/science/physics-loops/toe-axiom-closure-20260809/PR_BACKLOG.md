@@ -1153,7 +1153,7 @@ canonical axiom, fixed TOE percentage, positive retention, audit verdict, or
 
 ## Block 64
 
-PR creation is pending on
+PR #6157 is open, mergeable, and `CLEAN` on
 `physics-loop/toe-axiom-closure-block64-strict-nn-record-front-20260812`,
 stacked exactly on Block-63 delivery head `11abac13d3`. Its distinct review
 object is the homogeneous strict-nearest-neighbor alternating-square front,

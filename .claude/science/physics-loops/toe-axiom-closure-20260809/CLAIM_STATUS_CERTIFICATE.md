@@ -2060,7 +2060,8 @@ lines are in the landing primary cache.
   exactly one aggregate check.
 - Evidence: primary/cache `PASS=8 FAIL=0`; graph `5,510/15,789`, out-degree
   two; all direct gates pass. Science commit is `bd7804aedb`. An independent
-  read-only agent found no material mathematical or locality blocker.
+  read-only agent found no material mathematical or locality blocker. PR
+  #6157 is open, mergeable, and `CLEAN` on exact Block-63 delivery.
 - Scope: proposed `positive_theorem` for the declared unbounded single-front
   domain only. Audit owns claim typing and retained status. Autonomous matter
   formation, physical occurrence/rate/clock, multi-front/full-`Z^3` dynamics,

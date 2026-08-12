@@ -1671,7 +1671,8 @@ complete conditional nonlinear compact solution:
   intertwiners, 5/5 symbolic active-site relations, 16/16 accumulated-history
   parity cases, and exact `3N+1` support for arbitrary `N`
 - science commit is `bd7804aedb`; citation registration is
-  `5,510/15,789`, out-degree two; all direct gates pass
+  `5,510/15,789`, out-degree two; all direct gates pass; PR #6157 is open,
+  mergeable, and `CLEAN`
 - an independent read-only agent reran the final 8/8 surface plus exhaustive
   depth-five histories, `N=128`, both phases, translation, shared-effect, and
   576 covariance controls and found no mathematical/locality blocker

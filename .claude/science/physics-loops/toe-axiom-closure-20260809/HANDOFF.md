@@ -2517,7 +2517,8 @@ controls, 480 local contexts, 1,440 exact branches, 5/5 symbolic induction
 relations, 16/16 accumulated-history parity cases, and exact arbitrary-`N`
 support `3N+1` (193 Records at `N=64`). Citation registration is
 `5,510/15,789`, out-degree two; all direct gates pass. Science commit is
-`bd7804aedb`.
+`bd7804aedb`; PR #6157 is open, mergeable, and `CLEAN` on exact Block-63
+delivery `11abac13d3`.
 
 An independent read-only challenge reran the final 8/8 result, exhaustively
 checked depth-five branch trees, tested `N=128` in the opposite phase, all

@@ -2818,7 +2818,8 @@ instance or Fourier census.
   mathematical/locality blocker and judged `positive_theorem` defensible in
   the exact single-front scope; it made no audit verdict or retained claim.
 - Science commit is `bd7804aedb`, on exact Block-63 delivery
-  `11abac13d3`. The radius-three construction wall is retired, but autonomous
+  `11abac13d3`; PR #6157 is open, mergeable, and `CLEAN`. The radius-three
+  construction wall is retired, but autonomous
   matter formation, physical law selection, time/rate, multi-front/global
   composition, source/gravity binding, audit retention, and all TOE scores
   remain open. No `review-loop` is used.

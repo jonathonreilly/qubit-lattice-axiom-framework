@@ -11,8 +11,9 @@ runner rebuilds the two seeded order-two piece permutations that extend the 48 t
 generators acting with a single orbit on the pieces and fixing all eight readings, so
 every sixteen-piece carrier of such a reading has an image through a chosen anchor piece. It
 then completes the anchored slice of the search at exactly sixteen, every subset drawn
-through the anchor, against the six named nonconstant readings, five planted sixteen-piece controls
-through the anchor, and one synthetic odd-total reading, and reconstructs the full
+through the anchor, against the six named nonconstant readings and five planted sixteen-piece controls
+through the anchor. A canonical synthetic odd-total target is separately rejected by
+augmented rank before licensing or search. The runner reconstructs the full
 census of each reading as the group images of its anchored slice, re-verifying every
 reconstructed member directly against the incidence columns and folding the census into
 orbits under the 48 and under the full group.
@@ -1695,15 +1696,14 @@ def fbit(nm, t):
 # ---- Part 4b: reading lists and the licensing gates ----
 SIX = list(range(2, 8))
 PL16 = list(range(NT, NT + 5))
-SWEEP = SIX + PL16 + [TCTL]
+SWEEP = SIX + PL16
 PIECES = [PSET[NT + pi] for pi in range(5)]
 
 gate(set(nm for nm in BLK if FORCED[nm] is not None) >= {"total", "L", "R", "Q2", "Q3"}
      and all(fbit(nm, t) == 0 for t in SIX + PL16
-             for nm in ("total", "L", "R", "Q2", "Q3"))
-     and fbit("total", TCTL) == 1, "G11",
-     "each named nonconstant reading and each planted reading forces even total, side, and quarter "
-     "parities, and the synthetic reading forces an odd total")
+             for nm in ("total", "L", "R", "Q2", "Q3")), "G11",
+     "each realizable named nonconstant reading and each planted reading forces even "
+     "total, side, and quarter parities")
 
 SEQ = [lic_count(m, 2) for m in range(2, 17, 2)]
 ARITH = [sum((k + 1) * (m - 2 * k + 1) for k in range(m // 2 + 1))
@@ -1717,8 +1717,8 @@ CS = [frozenset(c for c in cells_of(16) if licensed_cell(c, 16, t)) for t in SIX
 gate(all(cs == CS[0] for cs in CS) and len(CS[0]) == 285
      and all(lic_count(16, t) == 285 for t in SIX), "G13",
      "all six named nonconstant readings license the same 285 cells at sixteen, one pass covers the six")
-gate(lic_count(16, TCTL) == 0, "G14",
-     "the odd-total synthetic reading licenses no cell at sixteen")
+gate(TCTL not in SWEEP and not TARGET_IDENTITY["odd-ctl"]["realizable"], "G14",
+     "the inconsistent odd-total synthetic target is rejected before licensing or search")
 
 AL16 = [c for c in cells_of(16) if licensed_cell(c, 16, 2) and c[3] >= 1]
 gate(len(AL16) == 204 and all(
@@ -1869,7 +1869,7 @@ COV16, NSPL16, NDS16 = coverage(16, SWEEP)
 emit("m=16 anchored counts " + vshow(C16) + " splits " + cshow(NSPL16))
 gate(OK16 and not BLOWN, "G18",
      "the anchored search at sixteen runs every split within the table budget")
-gate(COV16 == [len(AL16)] * 11 + [0] and NSPL16 == NDS16 and NSPL16 > 0, "G19",
+gate(COV16 == [len(AL16)] * 11 and NSPL16 == NDS16 and NSPL16 > 0, "G19",
      "every anchored licensed cell at sixteen is covered for all eleven live readings "
      "and all splits are distinct")
 gate(NSPL16 == NDS16 == len(EXPECTED16) == 2004 and PROCD == EXPECTED16, "G19b",
@@ -1893,8 +1893,8 @@ for t in SWEEP:
     for w, arr in by_width(t).items():
         ANOK = ANOK and bool((arr == ACOL).any(axis=1).all())
 gate(ANOK, "G21", "every recorded set holds the anchor piece")
-gate(C16[len(SIX) + 5] == 0, "G22",
-     "the search finds no set for the odd-total synthetic reading")
+gate(TCTL not in SWEEP and TARGET_IDENTITY["odd-ctl"]["witness_support"] is None, "G22",
+     "the non-column-space odd-total synthetic target cannot enter the carrier search")
 PREC = [has_set(NT + pi, PIECES[pi]) for pi in range(5)]
 gate(all(PREC) and len(PREC) == 5, "G23",
      "all five planted anchored sixteen-piece controls are found by the search")

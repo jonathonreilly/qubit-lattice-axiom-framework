@@ -300,7 +300,9 @@ def primary_contract_ok(receipt):
         and incidence_identity.get("support_column_corner_tuples") == column_order
         and len(target_identity.get("ordered_names", [])) == 18
         and target_identity.get("odd_control_non_column_space") is True
-        and search.get("counts") == [11, 0, 0, 0, 0, 0, 2, 6, 12, 1, 3, 0]
+        and search.get("readings") == target_identity.get("ordered_names", [])[2:8]
+        + target_identity.get("ordered_names", [])[12:17]
+        and search.get("counts") == [11, 0, 0, 0, 0, 0, 2, 6, 12, 1, 3]
         and search.get("scheduled_splits") == search.get("executed_splits") == 2004
         and search.get("execution_inventory_exact") is True
         and search.get("mismatched_returns") == search.get("duplicate_returns") == 0

@@ -77,11 +77,14 @@ direct column sums with binomial row counts.
 Control at twelve: across 371 splits the anchored search returns no set for
 any of the six named readings, reproducing the earlier complete result that twelve is empty.
 The measurement at sixteen: across 2004 splits, all distinct, with every
-anchored licensed cell covered for all eleven live readings, the search
+anchored licensed cell covered for all eleven realizable live readings, the search
 returns 11 anchored sets for the four reading, none for the other five
-readings, and none for the synthetic odd-total reading, and it finds all five
+readings, and it finds all five
 planted sixteen-piece controls, returning 2, 6, 12, 1 and 3 sets against the
 five planted readings, in each case including the planted set itself.
+The separately named `odd-ctl` target is the canonical one-row inconsistent
+hostile control: augmented rank rejects it before carrier licensing or search,
+so no carrier count is inferred for a target outside the column space.
 
 ## The census and its folds
 

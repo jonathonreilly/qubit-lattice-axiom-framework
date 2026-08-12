@@ -2765,3 +2765,29 @@ instance or Fourier census.
   independent validation, matter renewal, terminal gravity, and integrated
   Root-B/action work respectively. No axiom edit is ready; the next valuable
   axiom datum is one surviving exact extensional candidate.
+
+## Block 63 Construction And Adversarial Record
+
+- Reconstructed the needed L41 geometry and uniform/biased projectors inside
+  a current-epoch runner; no branch-only successor is read.
+- Built two exact incompatible rational ternary effect programs sharing `E0`
+  and one measure-and-prepare CP instrument with branch Choi form
+  `E^T tensor tau`.
+- Built exact `M_2(C)` head and outcome carriers with fixed decoders for
+  density, direction, program, effect, and label. All 24 proper-cubic matrix
+  and event-support co-transports pass.
+- Applied one fixed trace kernel to maximally mixed, biased, relative-phase
+  plus/minus, and mixed fixtures. The reconstructed uniform rotor still fails
+  biased `|000>` by `L1=1.5`, `Linf=0.5`.
+- Exact cylinders normalize through `N=5`; all 81 held length-four prefixes
+  marginalize. Two innovation sequences produce distinct positive-weight
+  contingent members after the kernel is fixed.
+- The 64-event recurrence decodes the state/program from each new head Record
+  and writes 1,415 permanent Records. The translation-residue proof gives
+  `22N+7` without overwrite for arbitrary `N` on the declared blank ray.
+- Primary/cache is `PASS=7 FAIL=0`; seven mutations each fail one aggregate
+  check. The only promotion-blocking construction wall is exact radius-three
+  readiness, while physical selection/compiler/time/global walls remain
+  separately open. Graph registration is `5,509/15,786`, out-degree three;
+  all direct gates pass. Science commit is `fe4f5265a0`. This is zero TOE
+  percentage movement and no `review-loop`.

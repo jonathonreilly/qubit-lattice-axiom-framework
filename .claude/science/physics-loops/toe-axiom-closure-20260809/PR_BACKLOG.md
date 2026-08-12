@@ -1137,3 +1137,16 @@ out-degree four. N1--N8 and N5 land with the science. This is significant
 route evidence but no canonical axiom, fixed TOE percentage, positive
 retention, audit verdict, or `review-loop` change. Landing order will place
 Block 62 after #6154.
+
+## Block 63
+
+Pull request pending on
+`physics-loop/toe-axiom-closure-block63-record-born-history-20260812`, stacked
+exactly on Block-62 delivery head `46a6c351bd`. Its distinct review object is
+the fixed state-dependent CP kernel, exact incompatible-menu/shared-effect
+surface, `M_2(C)` state/program and outcome carriers, projective contingent
+history law, and arbitrary-`N` 22-record append proof. Primary/cache is
+`PASS=7 FAIL=0`; seven mutations fail one aggregate check each. The exact
+radius-three boundary prevents current nearest-neighbor attachment. No
+canonical axiom, fixed TOE percentage, positive retention, audit verdict, or
+`review-loop` changes. Landing order will place Block 63 after #6155.

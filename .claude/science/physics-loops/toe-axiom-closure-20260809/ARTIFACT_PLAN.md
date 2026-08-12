@@ -1608,12 +1608,12 @@ complete conditional nonlinear compact solution:
 - target runner:
   `scripts/admissibility_record_native_state_dependent_born_history_joint_law_candidate_gate_2026_08_12.py`
 - target claim id:
-  `admissibility_record_native_state_dependent_born_history_joint_law_candidate_gate_2026-08-12`
-- current-epoch inputs: the canonical four axioms, the current Cycle-41 and
-  Cycle-85 executable constructions, the Block-1 trace-form theorem, the
-  Block-2 global-measure/menu-kernel separation, and the current physical
-  effect-label/Record carrier; never-mainlined Cycle-574--587 objects may
-  supply hostile fixtures or implementation ideas but not dependencies
+  `admissibility_record_native_state_dependent_born_history_joint_law_candidate_gate_note_2026-08-12`
+- current-epoch inputs: the canonical four axioms, the Block-1 trace-form
+  theorem, and the current bounded effect-label/Record carrier. The runner
+  reconstructs the radius-three front directly; Cycle-41 and Cycle-85 are
+  provenance only. Never-mainlined Cycle-574--587 objects may supply hostile
+  fixtures or implementation ideas but not dependencies
 - decisive witness: one fixed state/program-carried CP kernel with exact
   arbitrary-`N` normalized and prefix-projective cylinders, a non-circular
   one-history type, monotone fresh Record append and renewable resources,
@@ -1626,3 +1626,29 @@ complete conditional nonlinear compact solution:
 - kill boundary: reject deterministic/state-independent actualizers on the
   biased fixture; reject coherent-copy actuality, external blank refresh,
   host scheduling, same-effect contextuality, or historic-chain laundering
+
+## Block 63 Artifact Result
+
+- implemented the selected note, runner, and source-identity-pinned cache
+- primary/cache is `PASS=7 FAIL=0`; state-independent, contextual-shared,
+  prefix-projectivity, coherent-actuality, finite-stock, host-program, and
+  note-boundary mutations each fail exactly one aggregate check
+- science commit is `fe4f5265a0`; citation registration is
+  `5,509/15,786`, out-degree three; vocabulary, strict lint, premise purity,
+  model normalization, Python/cache, staged claim typing, whitespace,
+  N1--N8/N5, and enforced graph/link invariants pass
+- exact witness covers five density fixtures times two incompatible menus,
+  one literal shared effect/codeword, positive CP Choi tensors, all 24 proper
+  cubic co-transports, exact cylinders through `N=5`, all 81 held length-four
+  prefix marginals, two distinct positive-weight contingent histories, and
+  1,415 permanent Records at the `N=64` held horizon
+- the state and next program are decoded from the newly written head Record on
+  every event; no external loop variable carries the law state
+- the arbitrary-`N` support proof uses absence of nonzero three-step
+  translation collisions in the 22-site event support and gives `22N+7`
+- decisive boundary: readiness remains exactly radius three, so the result is
+  an arbitrary-length `bounded_theorem`, not a current nearest-neighbor
+  attachment, selected law, positive retention, axiom amendment, or TOE move
+- next artifact: preserve this exact kernel/history test suite while compiling
+  a one-head radius-one front or the Cycle-85 strict-NN recurrence; a failure
+  is a decisive candidate demotion, not a request for parameter scans

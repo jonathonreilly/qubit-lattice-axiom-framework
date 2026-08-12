@@ -2010,3 +2010,30 @@ lines are in the landing primary cache.
   not a uniform angular/noncollinear, observable/state, refinement,
   Lorentzian, selected-law, axiom, retained, or audit result. Fresh N1--N8
   lands; no `review-loop` is used.
+
+## Block 63 Claim Status Certificate
+
+- Kernel: one formula `Tr(rho E)` covers five exact states and both rational
+  incompatible ternary programs; the programs share literal `E0`, its mass,
+  and its `M_2(C)` outcome codeword.
+- Instrument/carrier: all branch Choi tensors are positive semidefinite, each
+  program is trace preserving, and fixed left inverses recover density,
+  direction, program, effect, and label. All 24 proper cubic co-transports
+  preserve the weights and event geometry.
+- History: cylinders normalize exactly through `N=5`, all 81 length-four
+  prefixes marginalize, and the arbitrary-`N` result follows by the displayed
+  normalized-kernel induction. Two distinct positive-weight contingent
+  members are executed; neither chooses the law.
+- Renewal: the head state/program is decoded from the preceding Record on
+  every step. The held `N=64` run writes 1,415 permanent Records, while the
+  exact translation-residue argument gives `22N+7` without wrap for arbitrary
+  `N` on the declared blank-ray single front.
+- Hostile controls: the reconstructed fixed rotor still misses biased
+  `|000>` by `L1=1.5`, `Linf=0.5`; seven targeted mutations fail exactly one
+  check each.
+- Evidence: primary/cache `PASS=7 FAIL=0`; graph `5,509/15,786`, out-degree
+  three. All direct repository gates pass. Science commit is `fe4f5265a0`.
+- Scope: `bounded_theorem`. Exact radius-three readiness prevents current
+  nearest-neighbor attachment. Physical CP compilation, time/rate,
+  multi-front/global resources, law selection/adoption, audit retention, and
+  TOE percentage movement remain open. No `review-loop` is used.

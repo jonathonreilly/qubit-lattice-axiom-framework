@@ -489,3 +489,18 @@ tightening, carrier counts, deterministic copy/dephase/rotor actuality
 attempts, or independent lane-support blocks. A block must have a direct
 promotion path to positive retention, retire a scored obligation, or
 decisively terminate a live end-to-end candidate.
+
+## Post-Block-63 Candidate Gate
+
+The rank-one target passed its kernel/history/renewal tests but hit the exact
+expected locality wall. Queue order remains global rather than reverting to
+gravity:
+
+| Rank | Next target | Acceptance | Kill/demote |
+|---:|---|---|---|
+| 1 | strict-NN state-dependent Record front | store density, direction, and program in one head `M_2(C)` Record or compose them with the Cycle-85 endpoint-to-tube law; require radius-one readiness, absence finalization, all hostile fixtures, exact cylinders, contingent member typing, all24 covariance, and arbitrary-`N` no overwrite | demote if a nonlocal header, host program, external blank refresh, state-specific table, or coherent actuality returns |
+| 2 | Cycle-870 reset/renewal | close the first spent-packet overrun with a local double buffer or garbage conveyor | stop if clean genesis/admission remains external |
+| 3 | terminal Block-62 physical quotient | require pseudo/soft readout to vanish with a volume-independent rate | kill fixed Regge on nonvanishing readout or absent rate; freeze after pass |
+
+Allocation stays 65/20/10/5. Block 63 is route progress, not TOE progress;
+the map remains unchanged for roughly 60 hours.

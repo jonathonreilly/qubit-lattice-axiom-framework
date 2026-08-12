@@ -2471,3 +2471,31 @@ terminal gravity observable/refinement quotient, and 5 percent to Root-B or
 action fields only inside the joint law. No axiom edit is ready. A successful
 Block 63 would instead make one extensional law datum decision-ready for an
 explicit owner adoption decision.
+
+## Block 63 Handoff
+
+Block 63 passes its first candidate-law gate. One fixed trace kernel and
+measure-and-prepare CP instrument cover five state fixtures, two incompatible
+ternary programs, and one shared effect/codeword. Exact `M_2(C)` carriers
+store the head density/direction/program and outcome effect/label. All24
+co-transports pass, exact cylinders normalize through `N=5`, every held
+length-four prefix marginalizes, and two different realized-state innovation
+sequences produce distinct positive-weight contingent histories without
+selecting the counterfactual law.
+
+The append law decodes its state and next program from the newly written head
+Record at every event. At `N=64` it contains 1,415 permanent Records. A finite
+translation-residue proof gives `22N+7` and no overwrite for arbitrary `N` on
+the declared blank ray. Primary/cache is `PASS=7 FAIL=0`; seven targeted
+mutations fail one aggregate check each. Citation registration is
+`5,509/15,786`, out-degree three; all direct gates pass. Science commit is
+`fe4f5265a0`.
+
+This is the first joint Record/Born/history candidate construction in the
+reset portfolio, but it retires no scored obligation. Its readiness predicate
+is exactly radius three, so it is not the current nearest-neighbor
+Admissibility rule; physical law selection, CP/matter compilation, rate/time,
+and global resources also remain open. The next block must port the unchanged
+kernel/history suite to a one-head radius-one front or the Cycle-85 strict-NN
+recurrence with absence finalization. Do not return to a rotor, copy/dephase
+actualizer, coefficient scan, or standalone gravity block.

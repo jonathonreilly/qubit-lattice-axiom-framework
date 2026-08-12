@@ -978,3 +978,29 @@ bound, observable/state quotient, refinement map, selected physical
 source/action, nonlinear Lorentzian evolution, exact attached joint law,
 canonical axiom edit, positive retention, TOE percentage move, audit verdict,
 or `review-loop` is imported.
+
+## Block 63 Assumptions And Imports
+
+Block 63 uses the current minimal axioms and the current bounded trace-form and
+`M_2(C)` effect-label carrier parents. It re-states the two rational ternary
+menus, the measure-and-prepare CP instrument, both Record carriers, the
+projective-cylinder recursion, the cluster/biased hostile projectors, and the
+22-site front geometry in its own runner.
+
+The current-tree Cycle-41 and Cycle-85 notes are provenance only. The runner
+does not read them, and it reads no branch-only Cycle-574--587 object. No old
+audit status, fixed rotor, host sampler, state-specific transition table,
+external program counter, finite clean packet, supplied fresh blank after the
+seed, effect-context adjustment, or actual-history-to-law inference is
+imported.
+
+The contingent innovation sequence types one realized member only after the
+counterfactual kernel is fixed. It is not a physical randomness mechanism or
+frequency theorem. The infinite blank ray is the declared domain supporting
+fresh coordinates, not a thermodynamic renewal theorem. The CP instrument is
+mathematically physical but has no autonomous matter-gate compiler here.
+
+No strict-nearest-neighbor attachment, absence finalization, formation rate,
+physical clock, multi-front collision law, full-`Z^3` state, physical law
+selection, owner adoption, axiom edit, positive retention, audit verdict, TOE
+percentage move, or `review-loop` is imported.

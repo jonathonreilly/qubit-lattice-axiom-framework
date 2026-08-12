@@ -15,8 +15,8 @@ lock_mode: cooperative
 lock_owner: physics-loop
 lock_holder_id: 019fcac5-093c-70a1-ae3e-7f2ef1b002ef
 goal: maximize honest TOE closure from the current axiom surface, now isolating the exact Admissibility update needed for a physical Born interface
-active_route: exact separation of the global possibility measure from registered outcome partitions, menu-indexed normalized kernels, and effect-functional grades
-hard_residual: derive or adopt measurable outcome partitions that push the existing Admissibility measure to a conditional Record-readout menu kernel, same-effect descent across physical registrations, null/certain endpoint values, and universal binary-and-ternary scaled-domain menu coverage; the stronger native frame lemma remains separately open
+active_route: exact separation of the global possibility measure from registered event partitions, menu-indexed normalized kernels, effect-functional grades, and physical content-only Record interpretation
+hard_residual: derive or adopt measurable event partitions that push the existing Admissibility measure to an abstract menu kernel, same-effect descent across physical registrations, null/certain endpoint values, and universal binary-and-ternary scaled-domain menu coverage, then derive a content-only bridge to physical Record readout; the stronger native frame lemma remains separately open
 target_contract_status: exact_type_separation_plus_hypothetical_sufficient_axiom_cut
 A_min:
   - Lattice
@@ -55,8 +55,9 @@ open_imports:
   - current axioms do not identify local possibilities with effects or supply a menu-independent effect grading
   - current axioms do not select the binary-plus-ternary scaled-projector family as physically eligible
   - current axioms require a neighborhood-varying probability distribution but do not determine its form or values
-  - current axioms do not register measurable outcome partitions that push the whole-domain measure to normalized conditional kernels on finite local menus
+  - current axioms do not register measurable event partitions that push the whole-domain measure to normalized conditional kernels on finite local menus
   - current axioms do not require same-effect probability descent across different physical menu registrations
+  - current axioms do not identify a menu-indexed event label with content-only Record readout
 no_go_routes:
   - raw_singleton_measure_identification
   - normalized_finite_restriction_as_universal_effect_grade
@@ -68,8 +69,8 @@ approach_family_coverage:
   naimark_frame_lift: bounded_artifact_complete_native_target_blocked_on_named_frame_theorem
   raw_singleton_measure_identification: exact_two_disjoint_binary_menu_contradiction
   normalized_finite_menu_restriction: exact_atomless_undefined_and_atomic_contextual_witnesses
-  typed_menu_kernel_axiom_cut: measurable_partition_pushforward_sufficient_when_composed_with_block_1_not_adopted_or_proven_necessary
-strongest_unresolved_proof_obligation: derive registered measurable outcome partitions, effect functionality, null/certain endpoints, and low-arity physical coverage from Record and Admissibility dynamics, or obtain explicit owner authority for the candidate axiom addition
+  typed_menu_kernel_axiom_cut: measurable_partition_pushforward_sufficient_for_abstract_grade_when_composed_with_block_1_not_adopted_or_proven_necessary_record_readout_bridge_open
+strongest_unresolved_proof_obligation: derive registered measurable event partitions, effect functionality, null/certain endpoints, low-arity physical coverage, and a content-only Record-readout bridge from Record and Admissibility dynamics, or obtain explicit owner authority for the abstract candidate addition while keeping the physical bridge open
 trace_gate_classification: negative_route_pruning
 reachability_to_target: advances
 landed_frontier_reachability: advances
@@ -107,5 +108,5 @@ checkpoint_zero_toe_map:
     physical_m2_bridge_percent: 63
     autonomous_closure_percent: 34
     evidence_ceiling_percent: 99
-next_exact_action: launch Block 3 from PR 6065 and test whether Record plus Admissibility derives measurable outcome partitions and same-effect descent; if not, construct an exact paired-model underdetermination witness and sharpen the narrow axiom update without editing canonical files
+next_exact_action: launch Block 3 from PR 6065 and test whether Record plus Admissibility derives measurable event partitions, same-effect descent, and content-only Record interpretation; if not, construct an exact paired-model underdetermination witness and sharpen the narrow axiom update without editing canonical files
 stop_condition: runtime budget reached, an honest audit-ready block is packaged and the queue exhausted, or a blocker requiring external governance or user authority prevents every ranked target

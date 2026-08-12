@@ -1,5 +1,5 @@
 {
- "edge_count": 15489,
+ "edge_count": 15486,
  "node_count": 5448,
  "nodes": {
   "3d_correction_master_note": {
@@ -347,8 +347,8 @@
    "out_degree": 3
   },
   "admissibility_global_measure_menu_kernel_type_separation_bounded_theorem_note_2026-08-10": {
-   "deps_hash": "7026e4c03122",
-   "out_degree": 5
+   "deps_hash": "8830c572e201",
+   "out_degree": 2
   },
   "admissibility_record_continuation_refinement_conditional_bounded_theorem_note_2026-07-13": {
    "deps_hash": "c8eee4235fc9",

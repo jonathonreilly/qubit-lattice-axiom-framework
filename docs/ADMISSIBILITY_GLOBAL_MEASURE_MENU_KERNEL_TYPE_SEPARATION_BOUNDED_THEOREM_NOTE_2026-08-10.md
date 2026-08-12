@@ -1,7 +1,7 @@
 ---
 claim_id: admissibility_global_measure_menu_kernel_type_separation_bounded_theorem_note_2026-08-10
 claim_type: bounded_theorem
-claim_scope: "At one M_2(C) site, a single probability measure on the full possibility domain cannot be identified by raw singleton mass with a normalized grade on even two disjoint projective binary menus. A full-support atomless, neighbor-varying family allowed by the current Admissibility wording makes normalized finite-menu restriction undefined, while an exact atomic two-menu witness shows that normalized restriction need not be effect-functional. The result separates a global possibility measure from a menu-indexed effect-functional outcome kernel and gives a sufficient, hypothetical axiom-side closure through registered measurable outcome partitions that push the existing measure to the kernel, when combined with the binary/ternary frame-lift theorem. It proves neither axiom necessity nor exhaustion of constructive physical bridges."
+claim_scope: "At one M_2(C) site, a single probability measure on the full possibility domain cannot be identified by raw singleton mass with a normalized grade on even two disjoint projective binary menus. A full-support atomless, neighbor-varying family allowed by the current Admissibility wording makes normalized finite-menu restriction undefined, while an exact atomic two-menu witness shows that normalized restriction need not be effect-functional. The result separates a global possibility measure from a menu-indexed effect-functional kernel and gives a sufficient, hypothetical mathematical closure through registered measurable event partitions that push the existing measure to the kernel, when combined with the binary/ternary frame-lift theorem. Identifying that kernel with physical Record outcomes remains conditional on a separate content-only readout bridge. The result proves neither axiom necessity nor exhaustion of constructive physical bridges."
 upstream_dependencies:
   - minimal_axioms
   - born_form_from_binary_ternary_scaled_projector_frame_lift_bounded_theorem_note_2026-08-09
@@ -11,7 +11,7 @@ runner: scripts/admissibility_global_measure_menu_kernel_type_separation_2026_08
 # Admissibility Global-Measure / Menu-Kernel Type Separation
 
 **Date:** 2026-08-10
-**Type:** bounded theorem and axiom-consequence map
+**Type:** bounded_theorem
 **Scope:** exact one-site probability/effect typing under the current
 `M_2(C)` possibility-domain wording.
 **Audit-status authority:** independent audit lane only. This note authors no
@@ -39,27 +39,29 @@ Three exact statements locate the boundary.
    `mu({E})/mu(M)` is undefined. When the restriction is defined, an exact
    atomic witness below gives two different conditional probabilities to one
    shared effect in two ternary menus.
-3. **The sufficient missing type is explicit.** Registered measurable outcome
-   partitions for eligible menus push the existing Admissibility measure to a
-   normalized kernel for how a forming Record's locked realization is read. If
-   that kernel descends
+3. **The sufficient mathematical type is explicit.** Registered measurable
+   event partitions for eligible menus push the existing Admissibility measure
+   to a normalized abstract menu kernel. If that kernel descends
    to one grade of the registered effect with null and certain endpoints, and
    every binary and ternary nonzero resolution by members of the full scaled
    domain `S` is physically covered,
    the one-ancilla theorem forces a unique local density matrix and Born trace
-   grade.
+   grade. Calling the event label a physical Record outcome additionally
+   requires a content-only readout bridge: the current Record axiom does not
+   permit an external menu/context label to change the readout of otherwise
+   identical record content.
 
 This is a type-separation theorem, not a global Born no-go. A retained
-physical construction could still derive the outcome partitions, menu kernel,
-effect functionality, endpoint values, and menu coverage without changing an
-axiom. No canonical axiom is edited here.
+physical construction could still derive the event partitions, menu kernel,
+effect functionality, endpoint values, menu coverage, and content-only Record
+bridge without changing an axiom. No canonical axiom is edited here.
 
 ## Machine Status And Trace
 
 ```yaml
 actual_current_surface_status: bounded-support
 target_claim_type: bounded_theorem
-claim_type_reason: "The finite-additivity contradiction, Gaussian compatibility witness, and exact shared-effect atomic witness are proved on declared one-site objects, while registered physical outcome partitions, effect descent, endpoint values, low-arity coverage, and axiom adoption remain open."
+claim_type_reason: "The finite-additivity contradiction, Gaussian compatibility witness, and exact shared-effect atomic witness are proved on declared one-site objects, while registered event partitions, effect descent, endpoint values, low-arity coverage, content-only Record interpretation, and axiom adoption remain open."
 trace_class: negative_route_pruning
 target_claim_id: admissibility_distribution_to_effect_grade_bridge
 target_blocker_text: "derive distribution-to-effect-grade identification/functionality and universal binary-and-ternary physical menu eligibility"
@@ -93,10 +95,9 @@ The parent theorem's full scaled domain is
 `S={cP(n):0<=c<=1, |n|=1} union {cI:0<=c<=1}`.
 
 A finite effect menu is a labeled family `M=(E_1,...,E_r)` with
-`sum_i E_i=I`. For fixed preparation condition `eta`, a registered outcome
-partition is a labeled measurable partition `(A_eta(i|M))_i` of `X`: a locked
-realization in `A_eta(i|M)` is read as outcome `i`. Its pushforward menu law is
-the probability vector
+`sum_i E_i=I`. For fixed preparation condition `eta`, a registered event
+partition is a labeled measurable partition `(A_eta(i|M))_i` of `X`. Its
+pushforward abstract menu law is the probability vector
 
 `K_eta(i|M)=mu_eta(A_eta(i|M))`.
 
@@ -114,12 +115,12 @@ The distinction is therefore:
 | Object | Domain | Normalization statement |
 |---|---|---|
 | current Admissibility measure `mu_eta` | measurable subsets of all point possibilities `X` | `mu_eta(X)=1` |
-| registered outcome partition `A_eta(i|M)` | measurable subsets of `X`, labeled by the Record outcome for menu `M` | pairwise disjoint union `X` |
+| registered event partition `A_eta(i|M)` | measurable subsets of `X`, carrying a mathematical label for menu `M`; physical Record-outcome identification remains separate | pairwise disjoint union `X` |
 | finite-menu kernel `K_eta` | labeled alternatives conditional on an eligible menu `M` | `K_eta(i|M)=mu_eta(A_eta(i|M))`, hence `sum_i K_eta(i|M)=1` |
 | effect grade `w_eta` | registered effects | menu equations plus equality of the same effect across menus |
 
 The current distribution sentence names the first row. It does not literally
-name the outcome partitions, their pushforward, or the effect grade. The
+name the event partitions, their pushforward, or the effect grade. The
 theorem below says more than that textual comparison for two tempting
 identifications; it does not say no theorem can ever connect the rows.
 
@@ -138,7 +139,7 @@ necessity.
 | derive the mass contradiction from measure axioms | raw singleton test | proved by finite additivity and `mu(X)=1` |
 | show an atomless law is live under the current wording | normalized-restriction test | explicit full-support Gaussian family, with covariance and Record compatibility stated below |
 | test automatic effect descent when restriction is defined | functionality test | exact two-ternary-menu atomic witness proved below |
-| show the partition/pushforward interface is sufficient for Born form | consequence map | parent frame-lift theorem cited explicitly; no physical premise is inferred |
+| show the partition/pushforward interface is sufficient for the abstract Born form | consequence map | parent frame-lift theorem cited explicitly; no physical Record premise is inferred |
 | derive the typed interface from current physical structure | autonomous closure | open; strongest missing lemma |
 
 The fixed-measure scope is load-bearing. A different measure conditioned on
@@ -146,9 +147,10 @@ each apparatus/menu is outside Theorem 1 and is a live route. Theorem 2 covers
 finite point menus under an atomless full-support law, not conditioning on a
 positive-measure event algebra. Theorem 3 is one exact contextual witness, not
 a classification of all atomic measures. The strongest missing lemma is a
-physical construction that produces registered measurable outcome partitions,
+physical construction that produces registered measurable event partitions,
 same-effect descent, null/certain endpoints, and binary/ternary coverage from
-Record and Admissibility structure.
+Record and Admissibility structure, together with a content-only bridge from
+the event label to physical Record readout.
 
 ## Theorem 1 — Raw Point Mass Cannot Be The Universal Menu Grade
 
@@ -308,22 +310,26 @@ uses the existing Admissibility measure rather than postulating an unlinked
 second probability law:
 
 > For each site and nearest-neighbor preparation condition `eta`, let `mu_eta`
-> be the Admissibility probability measure on `X`. Conditional on formation at
-> that site, each eligible finite local menu `M=(E_i)_{i=1}^r` registers a
+> be the Admissibility probability measure on `X`. Each eligible finite local
+> menu `M=(E_i)_{i=1}^r` registers a
 > measurable partition `(A_eta(i|M))_{i=1}^r` of `X`. If the forming Record
-> locks `x in A_eta(i|M)`, its readout is labeled outcome `i`. Define the menu
-> kernel by
+> locks `x in A_eta(i|M)`, the registered mathematical event label is `i`.
+> Define the menu kernel by
 > `K_eta(i|M)=mu_eta(A_eta(i|M))`. There is one grade `w_eta` on the registered
 > one-site scaled domain `S`, with `w_eta(0)=0` and `w_eta(I)=1`, such that
 > `K_eta(i|M)=w_eta(E_i)` whenever `E_i` occurs in `M`. Every binary and
 > ternary nonzero resolution of `I` by members of `S` is eligible.
 
-This is hypothetical sufficient wording. It is not an edit, an adopted
-primitive, a recommendation, a claim of literal minimality, or a conclusion
-that a new axiom is necessary. The phrase "preparation condition" is itself a
-typing choice: if the physical menu is encoded in the neighboring records,
-an operational equivalence theorem must specify which parts of that condition
-are held fixed when equal effects are compared.
+This is hypothetical sufficient wording for an abstract menu kernel. It is not
+an edit, an adopted primitive, a recommendation, a claim of literal
+minimality, or a conclusion that a new axiom is necessary. It does not by
+itself identify `i` with the current Record readout. That physical step needs a
+separate theorem showing that the menu/context is encoded in the record
+content, or another explicit content-only map consistent with Record. The
+phrase "preparation condition" is itself a typing choice: if the physical menu
+is encoded in the neighboring records, an operational equivalence theorem
+must specify which parts of that condition are held fixed when equal effects
+are compared.
 
 Under the displayed addition, finite additivity and the partition property
 give menu normalization directly from the current `mu_eta`. Effect
@@ -333,12 +339,16 @@ The parent one-ancilla theorem then gives a unique density matrix `rho_eta` and
 
 `K_eta(i|M)=Tr(rho_eta E_i)`
 
-on the scaled domain. The density matrix is an output, not a new axiom atom.
+on the scaled domain. This is the abstract grade. A physical Record-probability
+interpretation still consumes the content-only bridge just named. The density
+matrix is an output, not a new axiom atom.
 
 This addition still does not supply:
 
-- a dynamics-derived construction of the outcome partitions or a physical
+- a dynamics-derived construction of the event partitions or a physical
   compiler realizing the abstract menus;
+- a content-only identification of the menu event label with current Record
+  readout;
 - the extensional function `eta -> rho_eta`;
 - arbitrary-effect merging or a full instrument/update law;
 - record-formation site or rate;
@@ -347,9 +357,9 @@ This addition still does not supply:
 
 ## Why This Is Higher Value Than Adding “Born Rule”
 
-Writing the trace formula directly would hide three independent physical
-obligations: how the locked matrix possibility is read as a labeled outcome,
-what the eligible local experiments are, and why equal effects carry equal
+Writing the trace formula directly would hide four independent physical
+obligations: how a menu event is registered, how that event label is made a
+content-only Record readout, what the eligible local experiments are, and why equal effects carry equal
 probabilities across their different implementations. The typed partition and
 kernel clauses expose those obligations and let the trace formula remain a
 theorem of the parent frame lift.
@@ -376,7 +386,7 @@ global non-derivability theorem.
 | Support/elegibility reading | treat every supported point as an eligible outcome with a probability | Theorem 2 and the [canonical support reading](MINIMAL_AXIOMS_2026-06-29.md) show that support need not mean positive singleton mass | **ATTEMPTED** |
 | Barycenter/evaluation | average possibility matrices and evaluate an effect against the average | the [parent route audit](BORN_FORM_FROM_BINARY_TERNARY_SCALED_PROJECTOR_FRAME_LIFT_BOUNDED_THEOREM_NOTE_2026-08-09.md#no-go-discipline-gate-for-the-axiom-boundary) keeps it live after density-state typing and trace evaluation are supplied | **ATTEMPTED** |
 | Record-additivity lift | use scalar additivity over disjoint realized records to force counterfactual menu equations | the [canonical Record quantifier](MINIMAL_AXIOMS_2026-06-29.md) covers disjoint realized records; extension to counterfactual outcome events remains live | **ATTEMPTED** |
-| Physical program quotient | derive effects, operational equivalence, and menu coverage from a contact compiler | the [physical-contact source](work_history/repo/review_feedback/PHYSICAL_CONTACT_TERNARY_BORN_FORCING_BRIDGE_CYCLE317_NOTE_2026-07-18.md) constructs partial contact while retaining the interface hypotheses | **ATTEMPTED** |
+| Physical program quotient | derive effects, operational equivalence, and menu coverage from a contact compiler | the contextual source `docs/work_history/repo/review_feedback/PHYSICAL_CONTACT_TERNARY_BORN_FORCING_BRIDGE_CYCLE317_NOTE_2026-07-18.md` constructs partial contact while retaining the interface hypotheses | **ATTEMPTED** |
 
 The first four routes concern the global measure itself. The last three use
 additional structure and remain possible. Accordingly, the broad statement
@@ -395,12 +405,14 @@ additional structure and remain possible. Accordingly, the broad statement
 | global possibility measure / registered partition/kernel | no: a measure alone names no outcome partition; Theorems 1--3 reject two direct substitutions | registered partitions push a global measure to menu laws | distinct types linked by the candidate map |
 | density matrix / the four interface clauses | yes only after the parent theorem; it is derived | no clause may assume the target representer | density matrix is not counted as an extra wall |
 
-The sufficient candidate exposes four typed interfaces: registered measurable
+The sufficient abstract candidate exposes four typed interfaces: registered measurable
 partitions that push the current measure to normalized menu laws, effect
 descent, null/certain endpoint values, and low-arity physical coverage. The
 parent theorem packages the grade, its range and endpoints, and menu
 normalization as explicit premises; the present decomposition prevents the
-word "distribution" from hiding any part.
+word "distribution" from hiding any part. Physical Record interpretation adds
+a fifth, downstream bridge: the event label must be determined by record
+content alone. It is not silently counted as part of the abstract consequence.
 
 ### N3 — hidden-condition scan
 
@@ -409,7 +421,7 @@ word "distribution" from hiding any part.
 | `mu` | one countably additive probability measure on measurable subsets of `M_2(C)` at fixed site/condition |
 | singleton identification | explicit hostile proposal, not attributed to the axiom |
 | finite menus as point sets | used only to test raw/restricted measure routes; operational registration is not inferred |
-| `A_eta(i|M)` | explicit hypothetical measurable outcome partition linking the current measure to Record labels; not present in the current axioms |
+| `A_eta(i|M)` | explicit hypothetical measurable event partition producing an abstract menu label; not present in the current axioms and not yet a physical Record readout |
 | support | topological support, exactly matching the canonical atomless reading; not equated with positive singleton mass |
 | "registered" | explicit theorem/candidate condition on effects or events; never attributed to the current axioms |
 | "canonical" | provenance label for the linked current axiom source and its reading note; non-load-bearing by itself |
@@ -431,9 +443,9 @@ assumed.
 |---|---|---|
 | [`docs/MINIMAL_AXIOMS_2026-06-29.md:43-73`](MINIMAL_AXIOMS_2026-06-29.md) | full one-site possibility domain; neighbor-determined varying probability measure; atomless support reading | exact current wording only; no menu/effect conclusion borrowed |
 | [`docs/BORN_FORM_FROM_BINARY_TERNARY_SCALED_PROJECTOR_FRAME_LIFT_BOUNDED_THEOREM_NOTE_2026-08-09.md:67-95`](BORN_FORM_FROM_BINARY_TERNARY_SCALED_PROJECTOR_FRAME_LIFT_BOUNDED_THEOREM_NOTE_2026-08-09.md) | menu-independent low-arity grade implies a unique trace form | used only after the candidate supplies its premises |
-| [`docs/BORN_FORM_MENU_OUTCOME_THRESHOLD_AND_MIXED_PROJECTIVE_FORCING_BOUNDED_THEOREM_NOTE_2026-07-17.md:355-373`](BORN_FORM_MENU_OUTCOME_THRESHOLD_AND_MIXED_PROJECTIVE_FORCING_BOUNDED_THEOREM_NOTE_2026-07-17.md) | distinction between atomless Admissibility support and conditional effect menus | boundary provenance only |
-| [`docs/work_history/repo/review_feedback/PHYSICAL_EFFECT_EQUIVALENCE_NORMALIZED_GRADE_CYCLE321_NOTE_2026-07-18.md:35-55`](work_history/repo/review_feedback/PHYSICAL_EFFECT_EQUIVALENCE_NORMALIZED_GRADE_CYCLE321_NOTE_2026-07-18.md) | same effects need not mean the same full CP process; effect-only quotient remains open | live physical route and exact caution only |
-| [`docs/work_history/repo/review_feedback/PHYSICAL_CONTACT_TERNARY_BORN_FORCING_BRIDGE_CYCLE317_NOTE_2026-07-18.md:25-107`](work_history/repo/review_feedback/PHYSICAL_CONTACT_TERNARY_BORN_FORCING_BRIDGE_CYCLE317_NOTE_2026-07-18.md) | genuine bounded effect/menu compiler with functionality still supplied | partial closure, not universal coverage |
+| `docs/BORN_FORM_MENU_OUTCOME_THRESHOLD_AND_MIXED_PROJECTIVE_FORCING_BOUNDED_THEOREM_NOTE_2026-07-17.md:355-373` | distinction between atomless Admissibility support and conditional effect menus | boundary provenance only; deliberately not a graph dependency |
+| `docs/work_history/repo/review_feedback/PHYSICAL_EFFECT_EQUIVALENCE_NORMALIZED_GRADE_CYCLE321_NOTE_2026-07-18.md:35-55` | same effects need not mean the same full CP process; effect-only quotient remains open | live physical route and exact caution only; deliberately not a graph dependency |
+| `docs/work_history/repo/review_feedback/PHYSICAL_CONTACT_TERNARY_BORN_FORCING_BRIDGE_CYCLE317_NOTE_2026-07-18.md:25-107` | genuine bounded effect/menu compiler with functionality still supplied | partial closure, not universal coverage; deliberately not a graph dependency |
 
 No citation is used as authority for the new two-menu contradiction, Gaussian
 witness, or shared-effect arithmetic; those are proved here and checked by the
@@ -466,6 +478,10 @@ The runner cache emits substantive `per_element`, `per_site`, `per_mode`,
    could close the interface constructively.
 5. An owner-approved typed axiom addition could close the interface directly.
 
+Every physical route must additionally respect the current Record rule that
+readout is determined by record content alone; a menu-indexed label cannot be
+called a Record outcome until that content/context bridge is explicit.
+
 The approved scale-reference, kinetic-isotropy, and realized-state primitives
 were checked in the campaign registry. None supplies a menu kernel or effect
 quotient, and none is counted as an extra wall.
@@ -473,8 +489,8 @@ quotient, and none is counted as an extra wall.
 | Partial-closure / governance surface checked | Current status used here | What it could close |
 |---|---|---|
 | `docs/audit/data/axiom_premise_nodes.json` | scale reference, kinetic isotropy, and realized state are registered primitives; none is a probability/effect interface | no part of this menu-kernel wall |
-| [`physical contact source:25-107`](work_history/repo/review_feedback/PHYSICAL_CONTACT_TERNARY_BORN_FORCING_BRIDGE_CYCLE317_NOTE_2026-07-18.md) | bounded compiler/contact construction, with functionality and eligibility supplied | physical menu realization after the open interfaces are derived |
-| [`physical equivalence source:35-55`](work_history/repo/review_feedback/PHYSICAL_EFFECT_EQUIVALENCE_NORMALIZED_GRADE_CYCLE321_NOTE_2026-07-18.md) | exact warning that equal effects need not identify full CP processes; effect-only quotient remains open | probability descent without asserting full-process equality |
+| `physical contact source: docs/work_history/repo/review_feedback/PHYSICAL_CONTACT_TERNARY_BORN_FORCING_BRIDGE_CYCLE317_NOTE_2026-07-18.md:25-107` | bounded compiler/contact construction, with functionality and eligibility supplied | physical menu realization after the open interfaces are derived |
+| `physical equivalence source: docs/work_history/repo/review_feedback/PHYSICAL_EFFECT_EQUIVALENCE_NORMALIZED_GRADE_CYCLE321_NOTE_2026-07-18.md:35-55` | exact warning that equal effects need not identify full CP processes; effect-only quotient remains open | probability descent without asserting full-process equality |
 | [open PR #6062](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/6062) as checked 2026-08-10 | bounded two-site computational-basis distribution; its PR scope says it does not construct the full continuous covariant `M_2(C)` law | a local apparatus/contact ingredient, not the typed universal kernel |
 
 The same live-PR sweep found no open axiom/menu-kernel ratification PR. That is
@@ -522,15 +538,18 @@ exhausted."
 | elementary Gaussian measure on `R^8` | Theorem 2 compatibility witness | constructed here |
 | two exact ternary effect menus | Theorem 3 hostile witness | constructed here |
 | parent binary/ternary frame-lift theorem | sufficient-consequence step | explicit conditional dependency |
-| measurable outcome partitions/pushforward, effect functionality, null/certain endpoints, low-arity coverage | candidate interfaces | not current authority |
+| measurable event partitions/pushforward, effect functionality, null/certain endpoints, low-arity coverage | abstract candidate interfaces | not current authority |
+| content-only event-label to Record-readout bridge | physical interpretation | open; not supplied by the abstract candidate |
 | Born trace formula | output after candidate plus parent theorem | never a premise of Theorems 1--3 |
 | observed probabilities, frequencies, fits | none | not used |
 
 The exact advance is an axiom-facing type theorem. It does not move the fixed
 TOE percentages by itself because no physical interface has yet been derived
 or adopted. It does make the next update decision testable: derive the
-measurable outcome partitions, effect descent, and coverage, or explicitly add
-them; do not identify a whole-domain measure with a menu law by point mass.
+measurable event partitions, effect descent, coverage, and content-only Record
+bridge, or explicitly add the abstract interfaces while keeping the physical
+bridge open; do not identify a whole-domain measure with a menu law by point
+mass.
 
 ## Review Record
 

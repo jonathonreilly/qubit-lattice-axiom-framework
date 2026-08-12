@@ -1,20 +1,19 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_global_measure_menu_kernel_type_separation_2026_08_10.py
-runner_sha256: 88ce9261496b9d2cc7958788d17b4deb8a838c316d94d1ceb3832c20d16bf860
-input_fingerprint_sha256: e536b3d986aa9462538364d762305f0e9507577917bc0b12534f45f9e380e20e
+runner_sha256: a9006aae48f586bfd8519a71af856b3b8e9adb7e402bd5ef621257507ba80540
+input_fingerprint_sha256: a45ab8431874d89ce42952346ffe2c09cbdb995eb7437340dc2fbabe18eaa04e
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.05
 status: ok
 ----- stdout -----
-external_scientific_inputs: current axiom wording, the parent low-arity theorem, and the earlier atomless menu-boundary note are source-bound; no observational or fitted inputs are used
+external_scientific_inputs: current axiom wording and the parent low-arity theorem are source-bound; no observational or fitted inputs are used
 package_local_integrity_reads: the proposed source note is read for claim-surface consistency; the cache envelope separately binds this runner and every declared input
 measure_boundary: the runner checks exact finite algebra and Gaussian dimension data; it does not replace the source proof of atomlessness/full support with samples
 negative_scope: only raw singleton identification and normalized finite restriction are rejected; other physical measure-to-effect constructions remain live
 PASS: source-admissibility the exact current distribution sentence is present
 PASS: source-atomless the current axiom note explicitly permits supported points of zero singleton measure
 PASS: source-parent the parent theorem supplies the unique trace form only after menu-independent low-arity grading
-PASS: source-boundary the earlier menu note separates atomless support from conditional effect menus
 PASS: binary-menu-resolutions the z and x projector pairs each sum exactly to the identity
 PASS: binary-menu-disjointness the z and x projective menus contain four distinct effects
 PASS: raw-singleton-contradiction two disjoint normalized binary menus force mass two inside a probability space of mass one
@@ -27,7 +26,8 @@ PASS: atomic-global-normalization the five squared-trace atomic weights have exa
 PASS: atomic-context-values normalized restriction gives the exact shared-effect values 25/142 and 2/11
 PASS: atomic-context-separation the same effect differs across the two menus by exactly -9/1562
 PASS: trace-grade-control the maximally mixed trace grade assigns E0 one quarter in both menus and normalizes each
-PASS: candidate-sufficiency-surface the note links the existing measure to all four typed interfaces and keeps the wording hypothetical
+PASS: candidate-sufficiency-surface the note links the existing measure to all four abstract interfaces, keeps the wording hypothetical, and leaves the content-only Record bridge open
+PASS: claim-type-contract the author hint uses the exact bounded-theorem enum
 PASS: machine-status-contract the source uses the controlled bounded-support and negative-route-pruning trace fields
 PASS: canonical-nonmutation the hypothetical partition/menu-kernel notation is absent from the canonical axiom file
 PASS: no-go-gate all N1-N8 sections and the broad-claim rejection are source-visible

@@ -75,10 +75,11 @@ The resulting theorem proves that raw singleton mass fails on two disjoint
 binary menus, that normalized restriction is undefined for an allowed
 full-support atomless family, and that an exact atomic restriction can be
 contextual on two ternary menus sharing one effect. It identifies the
-sufficient remaining interface as registered measurable outcome partitions
-that push the existing Admissibility measure to a conditional Record-readout
-menu kernel, descent to the same effect across menus, null/certain endpoint
-values, and binary/ternary physical coverage.
+sufficient remaining abstract interface as registered measurable event
+partitions that push the existing Admissibility measure to a menu kernel,
+descent to the same effect across menus, null/certain endpoint values, and
+binary/ternary physical coverage. A physical Record-outcome reading remains
+conditional on a separate content-only readout bridge.
 
 This closes the type diagnosis. It does not close the physical interface,
 prove that an axiom edit is necessary, or authorize a canonical edit.

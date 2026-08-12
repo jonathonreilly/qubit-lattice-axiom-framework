@@ -25,7 +25,8 @@ Block 2 packages a stacked bounded theorem only if it contains all of:
 2. a current-axiom-compatible atomless family defeating finite restriction;
 3. an exact shared-effect atomic witness defeating automatic functionality;
 4. a complete N1--N8 gate preserving constructive closure routes;
-5. a typed sufficient axiom candidate that composes with Block 1 without
-   editing the canonical memo;
+5. a typed sufficient abstract candidate that composes with Block 1 without
+   editing the canonical memo and leaves content-only Record interpretation
+   explicit as an open bridge;
 6. an exact runner, content-pinned cache, canonical harness row, citation
    graph entry, and direct conformance review.

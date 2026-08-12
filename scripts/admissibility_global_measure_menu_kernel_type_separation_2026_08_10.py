@@ -21,13 +21,11 @@ ROOT = Path(__file__).resolve().parents[1]
 NOTE_PATH = ROOT / "docs" / "ADMISSIBILITY_GLOBAL_MEASURE_MENU_KERNEL_TYPE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-08-10.md"
 AXIOM_PATH = ROOT / "docs" / "MINIMAL_AXIOMS_2026-06-29.md"
 PARENT_PATH = ROOT / "docs" / "BORN_FORM_FROM_BINARY_TERNARY_SCALED_PROJECTOR_FRAME_LIFT_BOUNDED_THEOREM_NOTE_2026-08-09.md"
-PRIOR_PATH = ROOT / "docs" / "BORN_FORM_MENU_OUTCOME_THRESHOLD_AND_MIXED_PROJECTIVE_FORCING_BOUNDED_THEOREM_NOTE_2026-07-17.md"
 
 AUDIT_INPUT_PATHS = (
     "docs/ADMISSIBILITY_GLOBAL_MEASURE_MENU_KERNEL_TYPE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-08-10.md",
     "docs/MINIMAL_AXIOMS_2026-06-29.md",
     "docs/BORN_FORM_FROM_BINARY_TERNARY_SCALED_PROJECTOR_FRAME_LIFT_BOUNDED_THEOREM_NOTE_2026-08-09.md",
-    "docs/BORN_FORM_MENU_OUTCOME_THRESHOLD_AND_MIXED_PROJECTIVE_FORCING_BOUNDED_THEOREM_NOTE_2026-07-17.md",
 )
 
 
@@ -135,10 +133,9 @@ def main() -> int:
     note = NOTE_PATH.read_text(encoding="utf-8")
     axiom = AXIOM_PATH.read_text(encoding="utf-8")
     parent = PARENT_PATH.read_text(encoding="utf-8")
-    prior = PRIOR_PATH.read_text(encoding="utf-8")
     normalized_note = normalize(note).replace("> ", "")
 
-    print("external_scientific_inputs: current axiom wording, the parent low-arity theorem, and the earlier atomless menu-boundary note are source-bound; no observational or fitted inputs are used")
+    print("external_scientific_inputs: current axiom wording and the parent low-arity theorem are source-bound; no observational or fitted inputs are used")
     print("package_local_integrity_reads: the proposed source note is read for claim-surface consistency; the cache envelope separately binds this runner and every declared input")
     print("measure_boundary: the runner checks exact finite algebra and Gaussian dimension data; it does not replace the source proof of atomlessness/full support with samples")
     print("negative_scope: only raw singleton identification and normalized finite restriction are rejected; other physical measure-to-effect constructions remain live")
@@ -169,12 +166,6 @@ def main() -> int:
             )
         ),
     )
-    checks.check(
-        "source-boundary",
-        "the earlier menu note separates atomless support from conditional effect menus",
-        "supported point in an atomless continuous law" in prior,
-    )
-
     # The z and x projective bases are two disjoint two-point subsets.
     pz_plus = ((Fraction(1), Fraction(0)), (Fraction(0), Fraction(0)))
     pz_minus = ((Fraction(0), Fraction(0)), (Fraction(0), Fraction(1)))
@@ -288,17 +279,23 @@ def main() -> int:
     candidate_needles = (
         "registers a measurable partition `(A_eta(i|M))_{i=1}^r` of `X`",
         "`K_eta(i|M)=mu_eta(A_eta(i|M))`",
-        "locks `x in A_eta(i|M)`, its readout is labeled outcome `i`",
-        "Conditional on formation at that site",
+        "locks `x in A_eta(i|M)`, the registered mathematical event label is `i`",
         "There is one grade `w_eta`",
         "with `w_eta(0)=0` and `w_eta(I)=1`",
         "Every binary and ternary nonzero resolution of `I` by members of `S`",
         "not an edit, an adopted primitive, a recommendation",
+        "does not by itself identify `i` with the current Record readout",
+        "content-only map consistent with Record",
     )
     checks.check(
         "candidate-sufficiency-surface",
-        "the note links the existing measure to all four typed interfaces and keeps the wording hypothetical",
+        "the note links the existing measure to all four abstract interfaces, keeps the wording hypothetical, and leaves the content-only Record bridge open",
         all(phrase in normalized_note for phrase in candidate_needles),
+    )
+    checks.check(
+        "claim-type-contract",
+        "the author hint uses the exact bounded-theorem enum",
+        "**Type:** bounded_theorem" in note,
     )
     checks.check(
         "machine-status-contract",

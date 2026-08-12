@@ -116,10 +116,11 @@ failure already owned by PR #6061. No `review-loop` was invoked.
   effect `25/142` and `2/11`.
 - Preserved the barycenter/evaluation, Record event-algebra, apparatus-context,
   and physical program-quotient routes as live under a complete N1--N8 gate.
-- Mapped a sufficient typed addition: registered measurable outcome partitions
-  pushing the existing Admissibility measure to a Record-readout menu kernel,
+- Mapped a sufficient typed abstract addition: registered measurable event
+  partitions pushing the existing Admissibility measure to a menu kernel,
   same-effect descent, null/certain endpoint values, and binary/ternary
-  coverage. No axiom edit or necessity claim was made.
+  coverage. Physical Record interpretation remains conditional on a separate
+  content-only readout bridge. No axiom edit or necessity claim was made.
 - Primary runner after controlled-status hardening: `PASS=20 FAIL=0`; cached
   stdout is 3.8 KB and content/input fingerprints are fresh.
 - Eleven disposable-copy mutations each produced exactly one named failure and

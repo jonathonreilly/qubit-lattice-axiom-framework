@@ -2302,3 +2302,37 @@ instance or Fourier census.
   mergeable, and `CLEAN`, stacked exactly on Block-38 delivery head
   `d3a4e143f2`; independent audit remains pending. No canonical axiom, fixed
   percentage, or audit verdict is changed.
+
+## Block 49 Construction And Adversarial Record
+
+- Derived the three exact orientation-shift rows on the reflected twenty-two-
+  edge union. They are four-side/two-diagonal plaquette combinations, have
+  rank three, annihilate the displacement Ward image to `2.776e-16`, and are
+  centered-time-reflection even to `4.475e-16`.
+- At zero momentum the rows annihilate all ten common metric directions and
+  map the three relative mixed-time directions to `2 I_3`; the paired fiber
+  is therefore exactly the ten-component metric image.
+- On the exact line-average metric map, proved the row equals sectional
+  curvature times
+  `[sinc((a-b)/2)-sinc((a+b)/2)]/(2ab)`. The form factor tends to `1/12` and
+  remains strictly positive on the principal Brillouin square.
+- Rejected hard homogeneous metric equality as the physical repair: it removes
+  the fifth static branch but sets sourced Newtonian curvature to zero, while
+  the inherited response approaches a nonzero `1/6` in the declared
+  normalization.
+- Contracted the inherited rank-one Record stress to the exact temporal/Ricci
+  source `J=(2v_t^2-|v|^2)/(4|v|)`, then exhibited a continuous
+  proper-cubic/time-reflection-covariant source family with identical `J` and
+  different trace-free sectional components.
+- Fresh N1--N8 rules out only the homogeneous gluing repair and preserves
+  physical-transfer, boundary-state, connection, and nonlinear routes. It
+  localizes the next test to propagation of the two TT/Weyl modes under a
+  Record-faithful positive transfer.
+- Primary/cache is `PASS=13 FAIL=0`; independent reconstruction is
+  `PASS=5 FAIL=0`; declared inputs pass `9/9`. Citation registration is
+  `5,495/15,726`, out-degree five. Vocabulary, strict lint, premise purity,
+  Python/cache, staged claim typing, whitespace, forensic evidence, and
+  enforced graph/link invariants pass.
+- Science commit is `6d7acde008`; PR #6142 is stacked on exact Block-48
+  delivery `a7f4269d17`. No canonical edit, fixed percentage, audit verdict,
+  or `review-loop` occurs.

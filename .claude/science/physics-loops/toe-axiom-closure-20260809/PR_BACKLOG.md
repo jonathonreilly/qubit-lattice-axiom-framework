@@ -642,6 +642,22 @@ packet and N5 execution certificate land with the science. No canonical axiom,
 fixed TOE percentage, audit verdict, or `review-loop` changes. Landing order
 adds #6141 after #6140.
 
+## Block 49
+
+PR #6142
+(`physics-loop/toe-axiom-closure-block49-joint-transfer-20260811`) is open,
+stacked exactly on Block-48 delivery head `a7f4269d17`. Its distinct review
+object is the exact three-row reflected plaquette curvature intertwiner,
+ten-dimensional common constant-metric fiber, positive finite-momentum
+sectional-curvature factorization, hard-zero Newtonian-source falsifier,
+additive Record Ricci contraction, and explicit trace-free covariant decoder
+fork. Primary/cache is `PASS=13 FAIL=0`; independent runner-free
+reconstruction is `PASS=5 FAIL=0`; declared inputs are `9/9`; citation
+registration is `5,495/15,726`, out-degree five. The N1--N8 packet and N5
+execution certificate land with the science. No canonical axiom, fixed TOE
+percentage, audit verdict, or `review-loop` changes. Landing order adds #6142
+after #6141.
+
 Block 45 is local on branch
 `physics-loop/toe-axiom-closure-block45-record-transition-20260811`, stacked
 exactly on Block-44 delivery head `d91500ca4e`. Its distinct review object is

@@ -1610,3 +1610,33 @@ lines are in the landing primary cache.
   physical transfer theorem, selected joint law, axiom amendment, TOE
   percentage movement, or audit verdict. Fresh N1--N8 and all five N5
   resolutions land; no `review-loop` is used.
+
+## Block 49 Claim Status
+
+- Exact local result: on the twenty-two-edge reflected union, the three
+  plaquette rows `C_i(q)` have rank three, annihilate all four displacement
+  Ward columns, are centered-time-reflection even, and remove exactly the
+  three relative forward/backward `h_it` directions at zero momentum.
+- Curvature identification: on the exact line-average metric image, the
+  centered row is the sectional-curvature symbol
+  `q_i^2 h_tt - 2 q_i q_t h_it + q_t^2 h_ii` times a strictly positive
+  principal-zone form factor with limit `1/12`.
+- Source boundary: hard homogeneous `C=0` removes the fifth static branch but
+  also forbids the inherited Newtonian Record response. The inherited
+  rank-one Record stress fixes the trace-reversed temporal/Ricci contraction
+  `J=(2 v_t^2-|v|^2)/(4|v|)`, while an explicit continuous covariant family
+  preserves `J` and varies the trace-free three-sectional source.
+- Consequence: the residual is a physical constraint/transfer/state/boundary
+  law that propagates the two TT/Weyl modes while Records fix the Ricci
+  contraction, together with the Record tick. No additional orientation
+  average or homogeneous gluing constraint can supply that law.
+- Evidence: source/input-pinned primary cache `PASS=13 FAIL=0`; independent
+  reconstruction `PASS=5 FAIL=0`; declared inputs `9/9`; graph
+  `5,495/15,726`, out-degree five. Vocabulary, strict lint, premise purity,
+  Python/cache, claim typing, whitespace, forensic evidence, and enforced
+  graph/link invariants pass. Science commit is `6d7acde008`; PR #6142 is
+  stacked on exact Block-48 delivery `a7f4269d17`.
+- Scope: exact curvature/source blocker resolution and science support, not a
+  selected physical transfer, nonlinear/nonflat theorem, gravity no-go,
+  axiom amendment, TOE percentage movement, or audit verdict. Fresh N1--N8
+  and all five N5 resolutions land; no `review-loop` is used.

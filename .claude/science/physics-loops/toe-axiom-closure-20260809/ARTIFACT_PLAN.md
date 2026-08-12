@@ -1194,3 +1194,33 @@ complete conditional nonlinear compact solution:
 - next artifact: an exact target contract and first construction/falsification
   of the local Record-faithful orientation/metric transfer piece of `L*`; no
   further pole grids, source fixtures, or separable regulator variants
+
+## Block 49 Artifact Plan
+
+- theorem note: construct the exact three-component reflected plaquette
+  intertwiner, prove displacement Ward and centered time-reflection covariance,
+  identify its common-carrier and finite-momentum curvature meanings, and do
+  not count the algebraic construction as a physical update
+- primary runner/cache: check all `22` union edge labels, three plaquette rows,
+  four Ward columns, ten common metric plus three relative directions, exact
+  line-metric factorization, the principal-zone form-factor control, eight
+  static source controls, all `22` Record rays, all `24` proper rotations, the
+  trace-free decoder fork, physical boundary, and fresh N1--N8; achieved
+  `PASS=13 FAIL=0`
+- adversarial control: independently reconstruct the Ward rows, sectional
+  factorization, ten-dimensional common fiber, nonzero Newtonian curvature,
+  and two equal-contraction source decoders; achieved `PASS=5 FAIL=0`
+- no-go packet: restrict the negatives to homogeneous `C=0` at finite
+  momentum and uniqueness from the contracted source; preserve sourced
+  connection, canonical constraint, OS/transfer, nonflat, and downstream
+  uniqueness routes
+- current evidence: science commit `6d7acde008`; PR #6142 is open on exact
+  Block-48 delivery `a7f4269d17`; graph `5,495/15,726`, new out-degree five;
+  declared inputs `9/9`; vocabulary, strict lint, Python,
+  cache freshness, staged typing, whitespace, forensic N5, and graph/link
+  checks pass; no TOE percentage moves
+- next artifact: one physical two-TT canonical or reflection-positive transfer
+  with explicit lapse/shift propagation, physical state/inner product,
+  decaying branch, and Record tick; if distinct legal completions survive,
+  package the exact extensional Admissibility-law fork rather than another
+  support block

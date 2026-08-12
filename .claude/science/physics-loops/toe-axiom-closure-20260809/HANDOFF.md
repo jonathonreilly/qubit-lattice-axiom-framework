@@ -1890,3 +1890,45 @@ static residue, and Record step from one local update. If two legal current-
 foundation completions survive, write the smallest explicit distinguishing
 axiom delta. Do not add pole grids, source fixtures, or separable action
 coefficients.
+
+## Block 49 Handoff
+
+Block 49 is local on branch
+`physics-loop/toe-axiom-closure-block49-joint-transfer-20260811`, stacked
+exactly on Block-48 delivery head `a7f4269d17`. It resolves the previously
+unnamed three-shift object: each spatial direction has one exact local
+two-diagonal-minus-four-side space-time plaquette row. The three rows have
+rank three, annihilate all four displacement columns, and become exactly
+time-reflection even after plaquette-centering.
+
+At zero momentum the rows annihilate all ten common metrics and map the three
+relative forward/backward `h_it` modes to `2 I_3`. At finite momentum their
+exact line-average metric pullback is a strictly positive form factor times
+the linearized `R_itit` polynomial. Therefore homogeneous gluing is rejected:
+it removes the fifth static branch but also forbids the inherited Newtonian
+source curvature, which tends to `1/6`.
+
+The inherited edge-labelled Record stress supplies an exact additive,
+time-reflection-even trace-reversed temporal/Ricci contraction. It does not
+select the three sectional components. Explicit `eta=0` and `eta=1`
+proper-cubic covariant decoders have the same contraction, distinct values,
+and generic metric lifts. Their difference is trace-free electric-Weyl data
+that must be fixed by the constraint/transfer evolution and state or boundary
+conditions.
+
+Primary/cache is `PASS=13 FAIL=0`; independent runner-free reconstruction is
+`PASS=5 FAIL=0`; declared inputs are `9/9`. Citation registration is
+`5,495/15,726`, out-degree five. Vocabulary, strict lint, Python/cache,
+staged-typing, whitespace, forensic N5, and graph/link gates pass. Science
+commit is `6d7acde008`; PR #6142 is open on exact Block-48 delivery
+`a7f4269d17`. Independent audit remains required. No canonical
+axiom, fixed TOE percentage, audit verdict, or `review-loop` changes.
+
+The next block must construct or falsify the physical two-TT law: explicit
+lapse/shift constraint propagation, a physical inner product or OS
+reconstruction, decaying-branch selection, and one permanent-Record event per
+step, while retaining the Block-49 contracted source and static residue.
+Compare a canonical/symplectic formulation and an OS/transfer formulation
+against the same immutable contract. If both remain lawful and inequivalent,
+write the smallest extensional Admissibility-law delta; do not return to pole
+grids, orientation averaging, or hard-zero gluing.

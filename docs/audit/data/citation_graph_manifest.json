@@ -1,6 +1,6 @@
 {
- "edge_count": 15500,
- "node_count": 5453,
+ "edge_count": 15503,
+ "node_count": 5454,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -13725,6 +13725,10 @@
   "physical_mixed_frame_comparator_exact_stencil_swap_law_cycle711_note_2026-08-02": {
    "deps_hash": "aa685ea8e84b",
    "out_degree": 7
+  },
+  "physical_mixed_frame_defect_census_family_law_cycle712_note_2026-08-02": {
+   "deps_hash": "ca0f7c8882b6",
+   "out_degree": 3
   },
   "physical_operational_source_response_readout_chain_cycle700_note_2026-07-25": {
    "deps_hash": "7dc7df7e6543",

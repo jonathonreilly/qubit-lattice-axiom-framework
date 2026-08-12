@@ -1956,6 +1956,38 @@ instance or Fourier census.
   `9431cd5d47`; independent audit remains pending. No canonical axiom, fixed
   percentage, or audit verdict is changed.
 
+## Block 46 Construction And Adversarial Record
+
+- Re-read the complete four-node supplied foundation rather than testing the
+  four axioms alone. The scale primitive remains units-only, the realized-state
+  primitive remains selector-free, and the kinetic primitive fixes Euclidean
+  OS0 form without silently importing the Wick/Record clock map.
+- Split Block 45's grouped formation/order wall into two exact controls using
+  the symmetric schedule family
+  `P_r=(1-r)P_parallel+rP_sequential`, with correlation `3r/5` and unchanged
+  one-site marginals.
+- Added the independent Record/source dictionary control `h_tt=2g` for
+  `g=1/2,1,2`, giving residues `1,2,4` under the same Einstein operator.
+- Computed the five-control diagnostic Jacobian
+  `diag(1,3/5,1/2,1,2)`, rank five, determinant `3/5`, and checked both
+  Record-fixed/gravity-varied and gravity-fixed/Record-varied factorizations.
+- Hardened the rhetoric: only `q,r` are already Record-distinguishable;
+  `a,zeta,g` are conditional gravity diagnostics until an exact physical
+  operational quotient is supplied. A future quotient may remove a coordinate
+  only by proving all legal Record protocols agree.
+- Fresh N1--N8 preserves a downstream uniqueness theorem, exact law reference,
+  exact physical-equivalence class, reflection-positive reconstruction,
+  unitary dilation, canonical constraints, and Record-inclusion derivation.
+- Primary/cache is `PASS=10 FAIL=0`; independent reconstruction is
+  `PASS=5 FAIL=0`; the runner-cache declared-input suite passes `16/16`.
+  Standalone `test_runner_pin_gate.py` has one pre-existing fixture-path error
+  (`docs/FIXTURE.md` absent), while the actual runner-pin gate exits zero.
+  Graph is `5,492/15,707`, out-degree six; vocabulary, strict lint, premise
+  purity, Python, cache, staged claim typing, and whitespace pass.
+- Science commit is `c487c72ef7`; PR #6138 is open on exact Block-45 delivery
+  head `1f23bccf25`. No canonical edit, fixed-percentage move, audit verdict,
+  or `review-loop` occurs.
+
 ## Block 43 Construction And Adversarial Record
 
 - Solved the complete repaired fifteen-edge symbol on every nonzero static

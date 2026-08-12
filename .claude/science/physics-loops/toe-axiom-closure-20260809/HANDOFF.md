@@ -1781,3 +1781,40 @@ selection and realization: derive one extensional Record transition law,
 causal composition, constraint preservation, physical state space, and source
 semantics. Full-edge finite-frequency continuation is rank two. No canonical
 axiom, fixed percentage, audit verdict, or `review-loop` changes.
+
+## Block 46 Handoff
+
+Work is on branch
+`physics-loop/toe-axiom-closure-block46-joint-law-cut-20260811`, stacked
+exactly on Block-45 delivery head `1f23bccf25`. The new theorem corrects the
+Block-45 wall count and foundation interpretation without claiming physical
+closure. Formation probability `q`, symmetric precedence mixing `r`,
+Euclidean-to-Lorentzian clock map `a`, constraint deformation `zeta`, and
+Record/source coupling `g` have computed diagnostic Jacobian
+`diag(1,3/5,1/2,1,2)`, rank five, determinant `3/5`. The first two already
+distinguish Record laws; the last three distinguish conditional gravity
+completions before an exact operational quotient.
+
+The approved kinetic-isotropy primitive fixes the Euclidean OS0 form. The
+displayed `a` family keeps that form fixed and varies the physical continuation
+`k_4=i a omega`; a stronger governance reading that also fixes the physical
+clock map is isolated explicitly and would set `a=1`. Holding one tested Record
+kernel fixed leaves four distinct gravity signatures, while holding the
+Einstein/source surface fixed leaves three distinct Record signatures. The
+narrow sufficient constitutional target is therefore one exact immutable
+joint `L*`, or exact record-faithful equivalence class, not another structural
+existence sentence.
+
+Primary/cache is `PASS=10 FAIL=0`; an independent reconstruction is
+`PASS=5 FAIL=0`. Citation registration is `5,492/15,707`, out-degree six.
+Vocabulary, strict lint, premise purity, Python compilation, cache freshness,
+staged claim typing, and whitespace pass. Science commit is `c487c72ef7`; PR
+#6138 is open on the exact Block-45 delivery base. Independent audit remains
+required. No canonical axiom, fixed TOE percentage, audit verdict, or
+`review-loop` changes.
+
+The axiom lane is now a real governance/selection gate: no additional kernel
+enumeration can choose `L*`. Continue science by preserving only the decisive
+completed full-edge finite-frequency gravity evidence, then test the physical
+transfer/inner-product route. Do not add denser pole grids or more compatible
+Record counterkernels.

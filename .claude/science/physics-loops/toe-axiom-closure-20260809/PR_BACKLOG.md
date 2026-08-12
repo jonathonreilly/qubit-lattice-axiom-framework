@@ -593,6 +593,22 @@ Science commit is `be1781ad26`; campaign conformance is `42d3056d98`. PR
 head `f2f21f9b0f`. Independent audit is pending. No canonical edit,
 percentage move, audit verdict, or `review-loop` is used.
 
+## Block 46
+
+PR #6138 (`physics-loop/toe-axiom-closure-block46-joint-law-cut-20260811`) is
+stacked exactly on Block-45 delivery head `1f23bccf25`. Science commit
+`c487c72ef7` adds one bounded theorem note, one source/input-bound runner and
+cache, and the mechanically refreshed citation manifest. Primary execution is
+`PASS=10 FAIL=0`; independent reconstruction is `PASS=5 FAIL=0`; citation
+registration is `5,492/15,707`, out-degree six. Direct vocabulary, strict
+lint, premise purity, Python, cache, staged claim typing, and whitespace gates
+pass. Independent audit remains required.
+
+Review object: five-control joint Record/gravity law separation and the exact
+Admissibility-law constitutional cut. It makes no canonical edit, percentage
+move, audit verdict, gravity no-go, or `review-loop` claim. Landing order adds
+#6138 after #6137.
+
 Block 45 is local on branch
 `physics-loop/toe-axiom-closure-block45-record-transition-20260811`, stacked
 exactly on Block-44 delivery head `d91500ca4e`. Its distinct review object is

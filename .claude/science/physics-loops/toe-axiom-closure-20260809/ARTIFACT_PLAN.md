@@ -1120,3 +1120,28 @@ complete conditional nonlinear compact solution:
   stacked exactly on Block-43 delivery head `03eaec43f7`; independent audit
   remains required. No canonical edit, fixed percentage move, audit verdict,
   or `review-loop` occurs
+
+## Block 46 Artifact Plan
+
+- theorem note: bind the complete approved foundation, distinguish OS0 form
+  from the physical continuation map, separate the five law controls, execute
+  both Record/gravity factorization directions, and state the exact joint-law
+  constitutional cut without proposing an empty axiom reference
+- primary runner/cache: source-bind all four foundation nodes and Blocks 44--45;
+  compute schedule interpolation, continued TT form, source scaling, the
+  numerical five-by-five Jacobian, and both factorization signatures; target
+  `PASS=10 FAIL=0`
+- adversarial control: independent reconstruction of schedule correlation,
+  TT polynomial, lapse coefficient, source response, and rank/determinant;
+  target `PASS=5 FAIL=0`
+- no-go packet: scope the negative to present-foundation non-identification on
+  the displayed family; preserve derivation, exact-reference, equivalence,
+  reflection-positive, unitary, canonical-constraint, and inclusion-order
+  routes
+- current evidence: science commit `c487c72ef7`; graph `5,492/15,707`, new
+  out-degree six; primary/cache `PASS=10 FAIL=0`; independent `PASS=5 FAIL=0`;
+  direct gates pass; PR #6138 is open on Block-45 delivery `1f23bccf25`
+- next artifact: one compact full-edge finite-frequency gravity-survival
+  certificate from the already completed pole calculation, followed by the
+  physical transfer/inner-product discriminator; no more kernel enumeration or
+  denser frequency grids

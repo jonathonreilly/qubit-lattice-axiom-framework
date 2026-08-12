@@ -1528,3 +1528,31 @@ lines are in the landing primary cache.
   lattice theorem, nonlinear constraint-propagation result, gravity no-go,
   necessary axiom amendment, fixed-percentage move, or audit verdict. Fresh
   N1--N8 and all five N5 resolutions land; no `review-loop` is used.
+
+## Block 46 Claim Status
+
+- Claim: on the complete supplied foundation and displayed Block-45 completion
+  family, `(q,r,a,zeta,g)` are five coordinate-level independent law controls
+  with diagnostic Jacobian `diag(1,3/5,1/2,1,2)`, rank five, determinant
+  `3/5`.
+- Foundation correction: the `a` family preserves the fixed Euclidean OS0 TT
+  form and varies the separate continuation `k_4=i a omega`; a stronger
+  owner/governance reading that also fixes the physical clock map is explicitly
+  isolated rather than silently assumed.
+- Factorization: one tested exact Record kernel admits distinct conditional
+  gravity signatures, and one fixed Einstein/source surface admits distinct
+  Record signatures. Neither sector alone is the complete physical law on this
+  surface.
+- Constitutional boundary: the narrow sufficient target is one exact immutable
+  joint `L*` or exact record-faithful physical-equivalence class binding the
+  Record-extension instrument, event precedence, clock map, constraint
+  intertwiner, and Record/source decoder. A placeholder symbol is insufficient;
+  no live axiom edit is ready.
+- Evidence: primary/cache `PASS=10 FAIL=0`; independent reconstruction
+  `PASS=5 FAIL=0`; graph `5,492/15,707`, out-degree six; direct gates pass;
+  science commit `c487c72ef7`; PR #6138 is open on exact Block-45 delivery
+  `1f23bccf25`.
+- Scope: bounded present-foundation non-entailment and exact-law cut gate, not
+  selected dynamics, physical equivalence of all five coordinates, gravity
+  failure, global axiom minimality, adoption, TOE percentage movement, or an
+  audit verdict. Fresh N1--N8 lands; no `review-loop` is used.

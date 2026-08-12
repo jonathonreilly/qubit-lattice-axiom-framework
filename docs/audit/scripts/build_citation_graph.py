@@ -211,6 +211,13 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
         "scripts/physical_tick_extensive_adjacency_bracket_cycle727_"
         "independent_check_2026_08_04.py",
     ],
+    # Cycle 728's checker independently rebuilds exact determinants, the two
+    # certificate incidence systems, all three carried witnesses, the group
+    # action, and a second generic sample chamber without importing the primary.
+    "physical_spatial_block_seam_dichotomy_cycle728_note_2026-08-04": [
+        "scripts/physical_spatial_block_seam_dichotomy_cycle728_"
+        "independent_check_2026_08_04.py",
+    ],
     "b4_clock_relation_run_cycle879_bounded_theorem_note_2026-07-28": [
         "scripts/frontier_cycle879_b4_relation_independent_check_2026_07_28.py",
     ],

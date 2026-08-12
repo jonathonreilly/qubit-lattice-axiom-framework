@@ -1,3 +1,12 @@
+===== runner cache v1 =====
+runner: scripts/physical_ambient_domain_symmetry_split_cycle720_2026_08_02.py
+runner_sha256: a6de80af8a2d57eff1994caaebb8b0ce234506d838374fd3b97003a1d12a4690
+input_fingerprint_sha256: f16228dfa22ac9810d4cc316446c432694b1b6d39236992c2bac39c9cf2f5eab
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 5.25
+status: ok
+----- stdout -----
 c720 ambient stabilizer versus domain symmetry on the cycle-696 open-box static assembly
 box sizes 3 4 5 | domains: full box, corner simplices, one slab
 A order-12 set: distinct 12 proper 6 improper 6 | proper half is the cycle-719 sextet True
@@ -29,3 +38,6 @@ B ambient sextet dev 1.243450e-10 centre-reflection dev 1.243450e-10 | entry max
 R3 reversed composition differs on 456/576 frame pairs | R4 bumped-diagonal survivors 2/6 at 1.000000e+00 | R5 other-side grouping 4.000000e+00
 D0 over all rows: largest within-orbit spread 4.591440e-09 smallest level gap 1.705615e-06 smallest ratio 3.812660e+03
 TOTAL: PASS=98 FAIL=0
+
+----- stderr -----
+

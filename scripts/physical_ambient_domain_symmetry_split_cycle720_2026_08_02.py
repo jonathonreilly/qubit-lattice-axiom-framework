@@ -1,11 +1,12 @@
-"""Cycle 720: on the Cycle-696 open-box static assembly, the frame label of a
-sub-domain response is fixed by the AMBIENT assembly's stabilizer, while the level
-sets of that response are fixed by the SUB-DOMAIN's own symmetry.
+"""Cycle 720: finite ambient- and domain-symmetry identities for the supplied
+Cycle-696 open-box static assembly.
 
-The two are independent. Restricting the response to a sub-domain that is not
-centre-symmetric halves the sub-domain symmetry group and does restore the finer
-level sets, but it never removes that group's improper half and never refines the
-frame label past four classes.
+For fifteen declared (box size, domain) rows, restricting the response to a
+non-centre-symmetric sub-domain changes its measured level-set partition while the
+24 measured frame assemblies remain in four tolerance-resolved classes. Separately,
+an exact conditional algebraic lemma shows that restriction preserves any *exact*
+ambient assembly invariance. The numerical compiler invariance itself is not
+promoted to an exact or arbitrary-domain theorem.
 
 Class-A finite-dimensional check. Every printed float is produced here. No coupling
 value, sign, or scale is selected or derived. The signed permutations that are not
@@ -29,6 +30,15 @@ _MODULE = (ROOT / "scripts"
 _SPEC = importlib.util.spec_from_file_location("c696_compiler_for_c720", _MODULE)
 c696 = importlib.util.module_from_spec(_SPEC)
 _SPEC.loader.exec_module(c696)
+
+AUDIT_INPUT_PATHS = (
+    "scripts/physical_open_coframe_k_endpoint_compiler_cycle696_2026_07_25.py",
+    "scripts/physical_dynamical_metric_source_law_bridge_tournament_cycle576_2026_07_22.py",
+    "scripts/physical_dynamical_metric_source_law_bridge_cycle576_regge_support_2026_07_22.py",
+    "scripts/physical_dynamical_metric_source_law_bridge_cycle576_plaquette_support_2026_07_22.py",
+    "scripts/frontier_cubic_coxeter_regge_second_variation_3plus1_2026_06_09.py",
+)
+AUDIT_TIMEOUT_SEC = 300
 
 FRAMES = [np.asarray(m, dtype=np.int64) for m in c696.c576.FRAMES]
 DIRS = c696.regge.DIRS15
@@ -289,7 +299,7 @@ def run_domain(L, n, idx, Q, perms, sigma, dfull, classes, name, D) -> None:
          "levels {} orbits {} within-orbit {} smallest gap {}".format(
              len(lv), len(orb), fmt(const), fmt(gap)))
 
-    # E: the frame label follows the AMBIENT stabilizer, on every domain.
+    # E: the frame label follows the measured ambient stabilizer on this domain.
     A_g = [Q[np.ix_(perms[g][D], perms[g][D])] for g in range(24)]
     within = max(float(np.abs(A_g[g] - A_g[v[0]]).max()) for v in classes for g in v)
     cross = min(float(np.abs(A_g[classes[a][0]] - A_g[classes[b][0]]).max())

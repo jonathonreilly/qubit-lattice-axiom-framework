@@ -1,9 +1,10 @@
-# The ambient-versus-domain symmetry split of the open-box static assembly, and the
-non-centre-symmetric box — Cycle 720
+# Finite ambient-versus-domain symmetry split of the open-box static assembly — Cycle 720
 
 Date: 2026-08-02
 
 Claim type: bounded_theorem
+
+Status: proposed_retained
 
 Authority: none. Audit: unset. Constitutional effect: none. This cycle edits no
 axiom, foundation, Qualification, primitive, registry, policy, queue,
@@ -15,6 +16,63 @@ such object is named as supplied. The floating-point rows are conditional on the
 fixed, joined Cycle-696 compiler contract inventoried below; that compiler is a
 landed but audit-excluded support surface, not an independent audit authority.
 
+**Primary runner:**
+[`scripts/physical_ambient_domain_symmetry_split_cycle720_2026_08_02.py`](../scripts/physical_ambient_domain_symmetry_split_cycle720_2026_08_02.py);
+cached stdout
+[`logs/runner-cache/physical_ambient_domain_symmetry_split_cycle720_2026_08_02.txt`](../logs/runner-cache/physical_ambient_domain_symmetry_split_cycle720_2026_08_02.txt);
+paired receipt
+[`outputs/physical_ambient_domain_symmetry_split_cycle720_2026_08_02_receipt_2026-08-02.json`](../outputs/physical_ambient_domain_symmetry_split_cycle720_2026_08_02_receipt_2026-08-02.json).
+
+**Independent checker:**
+[`scripts/physical_ambient_domain_symmetry_split_cycle720_independent_check_2026_08_02.py`](../scripts/physical_ambient_domain_symmetry_split_cycle720_independent_check_2026_08_02.py);
+cached stdout
+[`logs/runner-cache/physical_ambient_domain_symmetry_split_cycle720_independent_check_2026_08_02.txt`](../logs/runner-cache/physical_ambient_domain_symmetry_split_cycle720_independent_check_2026_08_02.txt).
+
+```yaml
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: "separate the finite measured ambient-frame clustering from the finite measured domain level-set partition on the supplied Cycle-696 compiler"
+source_of_blocker_text: frontier_question
+reachability_to_target: supports
+artifact_role: runner_certificate
+next_trace_action: "derive exact stencil-level ambient invariance, or test additional declared domains and box sizes without promoting the current finite census"
+```
+
+```yaml
+actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
+trace_class: upstream_support
+reachability_to_target: supports
+conditional_surface_status: "exact finite signed-permutation identities and an exact conditional restriction lemma; numerical five-domain census for the supplied Cycle-696 compiler at L=3,4,5 and stated tolerances"
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: "the group identities are exhaustive finite arithmetic, while the ambient invariance, level partitions, and four-class attainment are bounded numerical compiler evaluations"
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```
+
+## Exact target and obligation graph
+
+**Exact target.** Establish the exact order-12 signed-permutation structure and
+the exact conditional fact that restricting a matrix after an exact ambient
+symmetry preserves the corresponding frame coincidence. On the supplied
+Cycle-696 compiler, test the ambient invariance tolerance and the level/orbit and
+frame-cluster partitions for five named domains at each `L in {3,4,5}`.
+
+**Obligation graph.** A enumerates the finite signed-permutation group. R1 checks
+the relabelling representation against the compiler. B measures the compiler's
+ambient near-invariance. C–G independently classify domain-preserving maps,
+inverse-diagonal level sets, frame clusters, centre-reflection census, and blind
+slots on the fifteen rows. R3–R5 are wrong-convention and perturbed-matrix
+controls. The algebraic restriction lemma uses exact ambient invariance as an
+explicit hypothesis; the numerical layer establishes only tolerance-resolved
+facts on the declared rows.
+
+**Strongest missing lemma.** The packet does not derive exact stencil-level
+sextet or centre-reflection invariance of the compiler. Therefore it proves no
+exact four-class result for the actual compiler outside the measured rows, no
+arbitrary-domain converse for the level partitions, and no arbitrary-`L` law.
+
 ## Summary
 
 Cycle 719 measured, on the full open box, that the level sets of the diagonal of
@@ -25,34 +83,36 @@ direct question: **does an assembly whose box is not centre-symmetric lose the
 improper half and restore 24 distinct level sets?** This cycle answers it on five
 domain types at three box sizes, and the answer separates into three parts.
 
-First, **no on the improper half.** Truncating the box to a corner simplex or to a
+First, in the finite census, truncating the box to a corner simplex or to a
 slab does reduce the symmetry available inside the order-12 set — from `12` on the
 full box, to `6` on every corner simplex, to `2` on the slab — but the reduction
-is always by a factor that preserves the split exactly in half: `12 = 6 + 6`,
-`6 = 3 + 3`, `2 = 1 + 1`, proper and improper, in all fifteen measured rows. There
-is no truncation in this family whose symmetry group is purely proper.
+is accompanied by an equal determinant split: `12 = 6 + 6`,
+`6 = 3 + 3`, `2 = 1 + 1`, proper and improper, in all fifteen measured rows. None
+of these fifteen rows has a purely proper domain-symmetry subgroup.
 
-Second, **yes on the finer level sets, but the target is not 24.** On the full box
+Second, the measured truncated-domain level sets are finer, but their count is not
+fixed at `24`. On the full box
 the count of distinct levels sits strictly below the count of orbits of the
-permutation part alone — `13` against `25` at `L = 3`, `34` against `64` at
+axis-permutation direct factor alone — `13` against `25` at `L = 3`, `34` against `64` at
 `L = 4`, `66` against `130` at `L = 5`, a deficit of `12`, `30`, `64`. On every
 truncated domain that deficit is `0`: the level count, the permutation-orbit
-count, and the full domain-orbit count coincide. Removing the centre reflection
-from the domain's symmetry does remove the pairwise merge, exactly and in every
-row. It restores the permutation-orbit count, which is a property of the domain,
-not the number `24`.
+count, and the full domain-orbit count coincide. In this census removal of the
+centre reflection accompanies removal of the pairwise merge. The recovered count
+is the axis-permutation-factor orbit count, which is a property of the domain, not
+the number `24`.
 
-Third — and this is the load-bearing negative — **the frame label does not refine
-at all.** Across all five domains and all three box sizes the `24` restricted
+Third, **the measured frame label remains four-valued on all fifteen rows.**
+Across all five domains and all three box sizes the `24` restricted
 assemblies fall into exactly `4` classes, coinciding within `1.243450e-10` and
 separated across classes by `4.000000e+00`. The within-class figure is *identically*
-the ambient assembly's own symmetry tolerance, which is the mechanism: the
-restricted assembly at frame `sg` equals the one at frame `g` whenever `s` is a
-symmetry of the **ambient** assembly, because the relabelling acts on `Q` before
-any restriction is taken. That argument never mentions the domain. The frame label
-is therefore controlled by ambient symmetry and the level sets by domain symmetry,
-and no choice of sub-domain can move the first. Antipodal blindness in the frame
-label is relocated out of the boundary geometry and into the ambient stencil.
+the ambient assembly's measured symmetry tolerance. The exact companion lemma is
+conditional: if `s` is an exact symmetry of an ambient `Q`, then the restricted
+assembly at frame `sg` equals the one at frame `g`, because relabelling acts on `Q`
+before restriction. For the supplied floating-point compiler, sections B and E
+establish the corresponding tolerance-resolved statement only on the declared
+boxes and domains. Thus this census separates a stable ambient contribution from
+the domain-dependent level partition without claiming exact stencil invariance or
+an arbitrary-domain classification.
 
 ## Improper-frame framing
 
@@ -167,11 +227,14 @@ A order-12 set: distinct 12 proper 6 improper 6 | proper half is the cycle-719 s
 A the proper half is the graph of the sign character True | composition-closed True | centre reflection central True
 ```
 
-The structural consequence used throughout is that the proper half is a **diagonal**
+The structural consequence used for the enumerated rows is that the proper half is a **diagonal**
 subgroup, not a direct factor. The order-12 set splits as a product of the axis
 permutations with the two-element set generated by the centre reflection, but the
 proper members are not one of those two factors — they are the graph of a
-character. That is why halving the set never produces a purely proper remainder.
+character. Any subgroup that contains an improper element has equally many proper
+and improper elements because determinant restricts to a surjection onto
+`{+1,-1}`. A subgroup contained in the determinant kernel can of course be purely
+proper; this packet neither excludes nor classifies domains realizing that case.
 
 ### R1. Anchor: the generic relabelling reproduces the landed site map exactly
 
@@ -209,7 +272,7 @@ orders of magnitude, while the eighteen proper rotations outside the sextet devi
 by at least `4.000000e+00`. That floor is the rejector for this section: the
 tolerance is not a loose threshold that any frame would pass.
 
-### C. Every domain symmetry group is exactly half improper
+### C. Each of the fifteen measured domain-symmetry groups is half improper
 
 For each domain, the members of the order-12 set that map `D` onto itself and
 leave the restricted matrix invariant are counted, split by determinant. The
@@ -227,10 +290,10 @@ structure as in section A, now restricted to the subgroup that preserves
 `sum(x) + sum(dir(c)) <= K`. The slab, cut on one axis, keeps only the identity and
 the exchange of the other two, and again splits `1 + 1`.
 
-So the first half of the posed question is answered **no**. Removing centre
-symmetry halves the group; it does not remove the improper half, because the
-improper elements are not a coset that can be dropped independently — they are
-paired with the proper ones by the sign character.
+Thus, for these twelve truncations, removing centre symmetry halves the measured
+group while preserving equal proper/improper counts. This census does not exclude
+other cuts whose surviving subgroup lies entirely in the proper determinant
+kernel.
 
 ### D. Level sets are exactly the domain-symmetry orbits
 
@@ -268,7 +331,9 @@ indefinite matrix; its size is measured, not derived, and no constant is fitted
 anywhere in this cycle.
 
 **The truncation effect.** Compare the level count against the orbit count of the
-permutation part alone — the domain's symmetry with the improper half discarded:
+axis-permutation direct factor alone. This is **not** the proper half: three of the
+six axis-permutation matrices have determinant `-1`. The comparison removes the
+central-reflection factor, which is the operation relevant to the observed merges:
 
 | box | domain | permutation orbits | levels | deficit |
 |---|---|---|---|---|
@@ -280,14 +345,14 @@ permutation part alone — the domain's symmetry with the improper half discarde
 | `L = 5` | corner `K = 2`, `K = 3`, `K = 4` | `4`, `11`, `22` | `4`, `11`, `22` | `0` |
 | `L = 3`, `4`, `5` | slab `x <= 1` | `33`, `64`, `105` | `33`, `64`, `105` | `0` |
 
-On the full box the merge is real and large. On every truncated domain it is
-absent: the deficit is `0` in all twelve truncated rows. This is the second half of
-the posed question answered **yes** — the finer level sets are restored, exactly —
-together with the reason the restored number is not `24`: what returns is the
-permutation-orbit count of the domain, a geometric property of the cut, which is
-`4` for the smallest corner and `105` for the largest slab.
+On the full box the merge relative to the axis-permutation factor is real and
+large. On every truncated domain in this census it is absent: the deficit is `0`
+in all twelve rows. Thus their tolerance-resolved level partitions recover the
+axis-permutation-factor orbit count, a geometric property of the cut ranging from
+`4` for the smallest corner to `105` for the largest slab. This is a finite-census
+statement, not a universal converse.
 
-### E. The frame label does not refine: four classes on every domain
+### E. The frame label has four classes on every measured domain
 
 The `24` restricted assemblies `Q_g` are classified by pairwise agreement. On
 every domain and every box size the result is the same:
@@ -303,7 +368,7 @@ to the ambient assembly's own symmetry deviation measured in section B. Truncati
 changes the number of level sets by up to a factor of two and changes nothing at
 all about the number of frame classes.
 
-### F. The merge is biconditional on the centre reflection
+### F. In the finite census, the merge is equivalent to centre-reflection membership
 
 Sections C, D and E are tied together by a single gate: in all fifteen rows, the
 centre reflection belongs to the domain's symmetry group **if and only if** the
@@ -312,23 +377,24 @@ deficits are `12`, `30`, `64`; it is absent on the twelve truncated rows, whose
 deficits are all `0`. There is no row where the reflection is present and the
 levels are unmerged, and none where it is absent and they merge anyway.
 
-That is the mechanism stated exactly. The merge in the level sets is caused by the
-centre reflection *being a symmetry of the domain*, and truncation removes it. The
-frame-class coincidence is caused by the sextet *being a symmetry of the ambient
-assembly*, which truncation cannot touch, since `Q[m_s[u], m_s[v]] = Q[u, v]` for
-ambient-symmetric `s` holds for every pair of slot indices `u, v` — the restriction
-to `D` is applied afterwards and the identity survives it verbatim.
+The forward mechanism is exact under its stated hypothesis: centre-reflection
+domain symmetry identifies its orbit partners, while exact sextet ambient
+invariance would identify frames after every restriction. The converse—absence of
+reflection implies absence of accidental equalities—is numerical evidence on these
+fifteen rows, not an arbitrary-domain theorem. For the supplied compiler all
+symmetry statements retain the measured tolerances of sections B–E.
 
 ### G. Truncation reduces blind slots without refining the label
 
-A slot is **blind** when its value is the same under all eight signed corner labels.
+A slot is **blind** in this packet when its value is the same under one
+representative of each of the four measured right-coset frame classes.
 Comparing the ambient count against the restricted count on the *same* slot set:
 
 - `L = 3`: corner `K = 3` goes `3 -> 0`; corner `K = 4` goes `6 -> 0`; slab goes `5 -> 1`;
 - `L = 4`: corner `K = 4` goes `3 -> 0`; slab goes `3 -> 3`;
 - `L = 5`: corner `K = 4` goes `0 -> 0`; slab goes `1 -> 1`.
 
-Truncation strictly reduces blindness or leaves it fixed; it never increases it.
+Across these fifteen comparisons truncation reduces blindness or leaves it fixed.
 The full-box rows are the control and agree trivially — `6 -> 6`, `19 -> 19`,
 `12 -> 12` — as they must, since there the restricted assembly is the ambient one.
 The contrast with section E is the point: the per-slot blindness is a boundary
@@ -366,19 +432,21 @@ an ambient symmetry. Then for any domain `D` and any frame `g`,
 Q_{sg}[a, b] = Q[ m_{sg}[D_a], m_{sg}[D_b] ] = Q[ m_s[m_g[D_a]], m_s[m_g[D_b]] ] = Q_g[a, b]
 ```
 
-using the homomorphism property gated in R1 and the ambient symmetry of `s`. `D`
-appears only as a passive index list; the identity holds for every `D`
-simultaneously. Hence the map `g -> Q_g` is constant on right cosets `S·g` of the
-ambient symmetry group, and since the sextet has index `4` in the `24` proper
-rotations, at most `4` classes can ever appear — for any domain whatsoever. Section
-E measures that the bound is attained and the four classes are genuinely separated.
+using the homomorphism property gated in R1 and the exact ambient-symmetry
+hypothesis. `D` appears only as a passive index list, so this conditional identity
+holds for every `D` simultaneously. If the sextet is an exact ambient symmetry,
+`g -> Q_g` is constant on right cosets `S·g` and has at most four classes. For the
+actual floating-point compiler, section B supplies near-invariance rather than an
+exact premise; section E independently measures four tolerance-resolved classes on
+the fifteen declared rows.
 
 The level sets obey the opposite rule. `v_i(g)` is a functional of `Q_g`, so a
 relabelling permutes the values within a fixed `g` only when it maps `D` to itself.
 That is a condition on the domain, and it is exactly what sections C and D count.
-The centre reflection is an ambient symmetry, so it never affects the class count;
-it is a domain symmetry only when `D` is centre-symmetric, so it merges level sets
-only then. The biconditional gated in section F is that statement measured.
+Within the measured rows the centre reflection is an ambient near-symmetry and is a
+domain symmetry only for the full boxes. Section F records that its membership and
+the observed deficit agree on all fifteen rows; it does not promote this finite
+agreement to an arbitrary-domain converse.
 
 The corner simplex is the sharp case because it separates the two roles cleanly:
 it destroys centre symmetry of the domain — restoring the level sets — while
@@ -386,14 +454,13 @@ leaving the ambient assembly, and therefore the frame label, untouched.
 
 ## Honest boundary
 
-- Five domain types at three box sizes is a family, not a classification. No
+- Five domain types at three box sizes is a finite census, not a classification. No
   statement is made here about domains outside `{full box, corner simplex, slab}`,
   and in particular no domain has been exhibited whose symmetry group inside the
-  order-12 set is purely proper. Section A explains why one cannot exist *inside
-  that set* — the proper half is the graph of a character, so any subgroup meets
-  both halves in equal numbers whenever it meets the improper half at all — but a
-  domain whose symmetry group is a proper subgroup of the axis permutations alone
-  is not excluded and is named as a next path below.
+  order-12 set is purely proper. Section A proves only that a subgroup containing
+  any improper element has an equal determinant split. A domain whose surviving
+  symmetry lies inside the proper determinant kernel is not excluded and is named
+  as a next path below.
 - The four-class count is a measured attainment of a derived upper bound. The bound
   `4` follows from the coset argument; that the four classes are separated by
   `4.000000e+00` rather than coinciding further is measured, not derived.
@@ -416,9 +483,9 @@ leaving the ambient assembly, and therefore the frame label, untouched.
 - **Cut the axis permutations, not the centre.** Every domain in this family keeps
   either all three axes symmetric or exactly two. The next path opened is a domain
   whose symmetry inside the axis permutations is trivial or of order three — a
-  wedge or a skew cut — where the level count would have to reach the slot count
-  itself, and where the four-class frame label would still be predicted to survive
-  unchanged. That is the sharpest available test of the ambient-versus-domain split.
+  wedge or a skew cut — to test whether the level count reaches the slot count and
+  whether the measured four-class frame label survives. This is an open test, not a
+  consequence claimed by the present finite census.
 - **Perturb the ambient stencil instead of the domain.** Section F localizes the
   four-class label in the ambient assembly. The next path opened is to modify `Q`
   itself — a boundary-weighted or anisotropic static assembly whose sextet symmetry
@@ -439,14 +506,12 @@ leaving the ambient assembly, and therefore the frame label, untouched.
 
 ## Relation to the preceding cycle
 
-Cycle 719 (`PHYSICAL_LEVEL_SET_ORBIT_LAW_IMPROPER_CENTER_IDENTITY_CYCLE719_NOTE_2026-08-02.md`,
-with runner `physical_level_set_orbit_law_improper_center_identity_cycle719_2026_08_02.py`)
-measured the full-box level-set law and identified the order-12 set. It is in
-flight and not landed, so it is named here in backticks rather than linked as
-authority, and every statement this cycle needs from it — the sextet membership,
-the centre reflection's exactness, the order-12 closure — is re-derived here from
-the compiler directly in sections A, B and R1. The full-box rows of section D
-reproduce its counts `13`, `34`, `66` independently.
+Cycle 719, [the finite full-box level-set and centre-reflection census](PHYSICAL_LEVEL_SET_ORBIT_LAW_IMPROPER_CENTER_IDENTITY_CYCLE719_NOTE_2026-08-02.md),
+measures the antecedent full-box result. It is contextual rather than load-bearing:
+Cycle 720 independently reconstructs the signed-permutation set, compiler maps,
+ambient tolerance, and all full-box counts it uses. The Cycle 719 boundary is also
+preserved here: its numerical stencil invariance is not promoted to exactness or
+arbitrary `L`.
 
 ## Runner
 
@@ -457,13 +522,13 @@ executes every gated and diagnostic row above and reports
 TOTAL: PASS=98 FAIL=0
 ```
 
-with exit code `0`, in under six seconds. Two consecutive runs produce
-byte-identical standard output and a byte-identical receipt. The receipt is
+with exit code `0`. Two consecutive runs produce byte-identical standard output and
+a byte-identical receipt. The receipt is
 written to
 `outputs/physical_ambient_domain_symmetry_split_cycle720_2026_08_02_receipt_2026-08-02.json`
 and carries no timestamp, no wall clock, no host name, and no absolute path, so it
-is comparable across machines. The standard output of that run is preserved at
-`outputs/physical_ambient_domain_symmetry_split_cycle720_2026_08_02_cold_2026-08-02.txt`.
+is comparable across machines. SHA- and declared-input-bound stdout for the primary
+and independent checker is preserved under `logs/runner-cache/` at the paths above.
 
 Every floating-point number quoted in this note is the runner's own measurement in
 the run that produced that `TOTAL` line; none is copied from an earlier probe.

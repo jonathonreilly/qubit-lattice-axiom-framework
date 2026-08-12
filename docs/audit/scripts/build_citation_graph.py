@@ -252,6 +252,12 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
         "scripts/physical_least_cost_cutting_flip_and_move_ladder_cycle734_"
         "independent_check_2026_08_04.py",
     ],
+    # Cycle 735's checker independently rebuilds the exact floor population,
+    # packed-XOR move graph, regions, whole/embedded cubes, and dense GF(2) charge.
+    "physical_least_cost_cutting_piece_charge_cycle735_note_2026-08-05": [
+        "scripts/physical_least_cost_cutting_piece_charge_cycle735_"
+        "independent_check_2026_08_05.py",
+    ],
     "b4_clock_relation_run_cycle879_bounded_theorem_note_2026-07-28": [
         "scripts/frontier_cycle879_b4_relation_independent_check_2026_07_28.py",
     ],

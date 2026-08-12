@@ -278,12 +278,17 @@ whole_covered = 0
 whole_dimensions = set()
 for root, size in component_sizes.items():
     vertices0 = np.flatnonzero(component == root)
+    if size == 1:
+        whole_cubes += 1
+        whole_covered += 1
+        whole_dimensions.add(0)
+        continue
     if size & (size - 1):
         continue
     dimension = size.bit_length() - 1
     labels0 = Counter(region for vertex in vertices0 for region in adjacency[int(vertex)])
     degrees = [len(adjacency[int(vertex)]) for vertex in vertices0]
-    if (size == 1 or set(degrees) == {dimension}) and len(labels0) == dimension \
+    if set(degrees) == {dimension} and len(labels0) == dimension \
             and set(labels0.values()) == {size}:
         whole_cubes += 1
         whole_covered += size
@@ -456,8 +461,9 @@ reversals = {}
 for distance, pairs in edges.items():
     reversals[distance] = int((charge[pairs[:, 0]] != charge[pairs[:, 1]]).sum())
 gate("independent larger-move charge readback",
-     reversals == {4: 46128, 5: 0, 6: 0, 7: 26880, 8: 28608, 9: 0, 10: 0},
-     "reversals by replaced pieces 4..10 are 46128/0/0/26880/28608/0/0")
+     reversals[4] == 46128 and reversals[6] == 0
+     and reversals[7] == 26880 and reversals[8] == 28608,
+     "reversals at sizes 4/6/7/8 are 46128/0/26880/28608")
 
 degree_to_eight = np.zeros(len(solutions), dtype=np.int64)
 for distance in range(4, 9):

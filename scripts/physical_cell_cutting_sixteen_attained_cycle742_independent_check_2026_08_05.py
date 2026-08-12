@@ -209,13 +209,23 @@ C741_PRIMARY_INPUTS = (
     C741_NOTE_PATH,
     C741_CHECKER_PATH,
 )
-
-
-def receipt_all_inputs_current(receipt):
-    expected = receipt.get("input_sha256", {})
-    return bool(expected) and all(
-        (ROOT / path).is_file() and expected.get(path) == sha256(path) for path in expected
-    )
+C741_INDEPENDENT_INPUTS = (
+    C741_NOTE_PATH,
+    C741_PRIMARY_PATH,
+    C741_RECEIPT_PATH,
+    "requirements.txt",
+    "requirements-release.txt",
+    C737_NOTE_PATH,
+    C737_PRIMARY_PATH,
+    C737_CHECKER_PATH,
+    C737_RECEIPT_PATH,
+    C737_INDEPENDENT_RECEIPT_PATH,
+    C739_NOTE_PATH,
+    C739_PRIMARY_PATH,
+    C739_CHECKER_PATH,
+    C739_RECEIPT_PATH,
+    C739_INDEPENDENT_RECEIPT_PATH,
+)
 
 
 passed = 0
@@ -429,7 +439,7 @@ dependency_ok = (
     and C741.get("schema") == "physical-cell-cutting-fourteen-frontier-cycle741-v2"
     and C741.get("status") == "pass" and C741.get("gates", {}).get("fail") == 0
     and C741.get("runner_sha256") == sha256(C741_PRIMARY_PATH)
-    and receipt_all_inputs_current(C741)
+    and receipt_inputs_current(C741, C741_PRIMARY_INPUTS)
     and C741.get("nonconstant_reading_bound", {}).get("reading_names")
     == list(NAMES[2:])
     and C741.get("nonconstant_reading_bound", {}).get("complete_even_sizes")
@@ -440,7 +450,7 @@ dependency_ok = (
     == "physical-cell-cutting-fourteen-frontier-cycle741-independent-v1"
     and C741I.get("status") == "pass" and C741I.get("gates", {}).get("fail") == 0
     and C741I.get("checker_sha256") == sha256(C741_CHECKER_PATH)
-    and receipt_all_inputs_current(C741I)
+    and receipt_inputs_current(C741I, C741_INDEPENDENT_INPUTS)
     and C741I.get("exact_weight_fourteen_answers")
     == {name: False for name in NAMES[2:]}
 )
@@ -522,6 +532,74 @@ consistent = all(
 gate(len(pivots) == 88 and consistent, "independent.rank",
      "an independent 88-row basis pins all eight consistent functions")
 
+# Reconstruct the original 48 support permutations and its first-appearance orbits.
+column_permutations = []
+for action in group:
+    permutation = []
+    for piece in used:
+        image_piece = tuple(sorted(action[corner] for corner in PIECES[piece]))
+        image_global = piece_index[image_piece]
+        permutation.append(position[image_global])
+    column_permutations.append(np.asarray(permutation, dtype=np.int64))
+parent = list(range(192))
+
+
+def find(value):
+    while parent[value] != value:
+        parent[value] = parent[parent[value]]
+        value = parent[value]
+    return value
+
+
+for permutation in column_permutations:
+    for column in range(192):
+        left, right = find(column), find(int(permutation[column]))
+        if left != right:
+            parent[left] = right
+orbit_labels = np.full(192, -1, dtype=np.int64)
+next_label = 0
+for column in range(192):
+    if orbit_labels[column] < 0:
+        root = find(column)
+        orbit_labels[[find(candidate) == root for candidate in range(192)]] = next_label
+        next_label += 1
+orbits = [np.flatnonzero(orbit_labels == label).tolist() for label in range(4)]
+
+
+def restricted_rank(columns, target=None):
+    rows = []
+    for row_index in range(len(solutions)):
+        value = 0
+        for local, column in enumerate(columns):
+            value |= int(incidence[row_index, column]) << local
+        if target is not None:
+            value |= int(target[row_index]) << len(columns)
+        rows.append(value)
+    return len(gf2_pivots(rows)[0])
+
+
+single_ranks = [restricted_rank(columns) for columns in orbits]
+single_augmented = [restricted_rank(columns, targets["four"]) for columns in orbits]
+pair_indices = [(0, 1), (1, 2), (0, 3), (1, 3), (0, 2), (2, 3)]
+pair_columns = [orbits[left] + orbits[right] for left, right in pair_indices]
+pair_ranks = [restricted_rank(columns) for columns in pair_columns]
+pair_consistent = []
+for columns, rank in zip(pair_columns, pair_ranks):
+    pair_consistent.append([
+        name for name in NAMES if restricted_rank(columns, targets[name]) == rank
+    ])
+restriction_ok = (
+    [len(orbit) for orbit in orbits] == [48, 48, 48, 48]
+    and single_ranks == [48, 48, 41, 41]
+    and single_augmented == [49, 49, 42, 42]
+    and pair_ranks == [81, 80, 80, 69, 69, 59]
+    and pair_consistent[0] == ["zero", "four", "six", "seven-flip"]
+    and all(value == ["zero", "one", "four", "four-flip"]
+            for value in pair_consistent[1:])
+)
+gate(restriction_ok, "independent.restrictions",
+     "independent single-orbit and six-pair ranks reproduce every finite inconsistency")
+
 
 def xor_clauses(literals, value, next_variable):
     clauses = []
@@ -580,7 +658,7 @@ bad_dependency_hash = copy.deepcopy(C741)
 first_dep_input = next(iter(bad_dependency_hash.get("input_sha256", {})), None)
 if first_dep_input:
     bad_dependency_hash["input_sha256"][first_dep_input] = "0" * 64
-gate(not receipt_all_inputs_current(bad_dependency_hash),
+gate(not receipt_inputs_current(bad_dependency_hash, C741_PRIMARY_INPUTS),
      "hostile.dependency_hash", "a mutated predecessor input contract is rejected")
 bad_inventory = copy.deepcopy(PRIMARY_RECEIPT)
 bad_inventory["population"]["processed_rows"] -= 1
@@ -613,6 +691,7 @@ def certificate_ok(permutation):
 
 certs = PRIMARY_RECEIPT.get("automorphism_certificates", {})
 cert_ok = True
+cert_permutations = []
 for name in ("b0", "b1"):
     certificate = certs.get(name, {})
     permutation = certificate.get("support_permutation", [])
@@ -622,6 +701,7 @@ for name in ("b0", "b1"):
     ok, row_permutation = certificate_ok(permutation)
     cert_ok = cert_ok and ok and row_permutation is not None
     cert_ok = cert_ok and certificate.get("support_permutation_sha256") == expected_hash
+    cert_permutations.append(np.asarray(permutation, dtype=np.int64))
     cert_ok = cert_ok and all(
         np.array_equal(targets[target_name][row_permutation], targets[target_name])
         for target_name in NAMES
@@ -638,6 +718,62 @@ supports_ok = len(all_supports) == len(set(all_supports)) == 120 and all(
 )
 gate(supports_ok, "independent.carriers",
      "all 120 supplied supports are distinct exact weight-sixteen four-reading carriers")
+
+seed_supports = set(tuple(value) for value in PRIMARY_RECEIPT.get(
+    "four_weight_sixteen", {}).get("enumerated_seed_supports", []))
+generator_permutations = column_permutations + cert_permutations
+closure = set(seed_supports)
+frontier = list(seed_supports)
+while frontier:
+    current = frontier.pop()
+    for permutation in generator_permutations:
+        image = tuple(sorted(int(permutation[column]) for column in current))
+        if image not in closure:
+            closure.add(image)
+            frontier.append(image)
+
+
+def support_orbit_sizes(supports):
+    remaining = set(supports)
+    sizes = []
+    while remaining:
+        start = remaining.pop()
+        orbit = {start}
+        work = [start]
+        while work:
+            current = work.pop()
+            for permutation in generator_permutations:
+                image = tuple(sorted(int(permutation[column]) for column in current))
+                if image not in orbit:
+                    orbit.add(image)
+                    work.append(image)
+        remaining -= orbit
+        sizes.append(len(orbit))
+    return sorted(sizes)
+
+
+transitive_parent = list(range(192))
+
+
+def transitive_find(value):
+    while transitive_parent[value] != value:
+        transitive_parent[value] = transitive_parent[transitive_parent[value]]
+        value = transitive_parent[value]
+    return value
+
+
+for permutation in generator_permutations:
+    for column in range(192):
+        left, right = transitive_find(column), transitive_find(int(permutation[column]))
+        if left != right:
+            transitive_parent[left] = right
+group_ok = (
+    closure == set(all_supports)
+    and support_orbit_sizes(all_supports) == [12, 12, 24, 24, 48]
+    and len({transitive_find(column) for column in range(192)}) == 1
+)
+gate(group_ok, "independent.group_closure",
+     "the explicit generators act transitively and close the 36 seeds to five orbits on 120 carriers")
 
 bad_certificate = copy.deepcopy(PRIMARY_RECEIPT)
 bad_certificate["automorphism_certificates"]["b0"]["support_permutation"][0] = (
@@ -668,12 +804,30 @@ receipt = {
     "checker_sha256": sha256(CHECKER_PATH),
     "primary_receipt_bound": primary_contract_ok(PRIMARY_RECEIPT),
     "population": {"cuttings": len(solutions), "used_pieces": len(used), "rank": len(pivots)},
+    "incidence_identity": {
+        "canonical_incidence_rows_sha256": canonical_incidence_hash,
+        "support_column_order_sha256": column_order_hash,
+    },
     "exact_weight_sixteen_four": {
         "answer": bool(four_sat), "support": four_support,
         "clauses": clause_count, "variables": variable_count,
     },
     "automorphism_certificates_verified": bool(cert_ok),
+    "automorphism_support_permutation_sha256": {
+        name: certs[name]["support_permutation_sha256"] for name in ("b0", "b1")
+    },
     "verified_carrier_supports": len(all_supports) if supports_ok else 0,
+    "restricted_ranks": {
+        "single": single_ranks,
+        "single_augmented_four": single_augmented,
+        "pairs": pair_ranks,
+        "pair_consistent_readings": pair_consistent,
+    },
+    "extended_group": {
+        "piece_transitive": bool(group_ok),
+        "closure_count": len(closure),
+        "carrier_orbit_sizes": support_orbit_sizes(all_supports),
+    },
     "n5_execution_certificate": N5,
     "gates": {
         "pass": passed,

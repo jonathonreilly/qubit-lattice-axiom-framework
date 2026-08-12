@@ -54,17 +54,36 @@ AUDIT_INPUT_PATHS = (
     CHECKER_PATH,
 )
 AUDIT_TIMEOUT_SEC = 900
+C737_SURFACES = (
+    "docs/PHYSICAL_CELL_CUTTING_LEAST_COMPUTING_SETS_CYCLE737_NOTE_2026-08-05.md",
+    "scripts/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05.py",
+    "scripts/physical_cell_cutting_least_computing_sets_cycle737_independent_check_2026_08_05.py",
+    "outputs/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05_receipt_2026-08-05.json",
+    "outputs/physical_cell_cutting_least_computing_sets_cycle737_independent_check_2026_08_05_receipt_2026-08-05.json",
+)
+C739_SURFACES = (
+    "docs/PHYSICAL_CELL_CUTTING_TWELVE_FRONTIER_CYCLE739_NOTE_2026-08-05.md",
+    "scripts/physical_cell_cutting_twelve_frontier_cycle739_2026_08_05.py",
+    "scripts/physical_cell_cutting_twelve_frontier_cycle739_independent_check_2026_08_05.py",
+    "outputs/physical_cell_cutting_twelve_frontier_cycle739_2026_08_05_receipt_2026-08-05.json",
+    "outputs/physical_cell_cutting_twelve_frontier_cycle739_independent_check_2026_08_05_receipt_2026-08-05.json",
+)
+C741_PRIMARY_INPUTS = C737_SURFACES + C739_SURFACES + (C741_NOTE_PATH, C741_CHECKER_PATH)
+C741_INDEPENDENT_INPUTS = (
+    C741_NOTE_PATH, C741_PRIMARY_PATH, C741_RECEIPT_PATH,
+    "requirements.txt", "requirements-release.txt",
+) + C737_SURFACES + C739_SURFACES
 
 
 def file_sha256(relative_path):
     return hashlib.sha256((ROOT / relative_path).read_bytes()).hexdigest()
 
 
-def receipt_inputs_current(receipt):
+def receipt_inputs_current(receipt, required_paths):
     recorded = receipt.get("input_sha256", {})
-    return bool(recorded) and all(
+    return set(recorded) == set(required_paths) and all(
         (ROOT / path).is_file() and recorded.get(path) == file_sha256(path)
-        for path in recorded
+        for path in required_paths
     )
 
 
@@ -86,7 +105,7 @@ C741_OK = (
     and C741.get("status") == "pass"
     and C741.get("gates", {}).get("fail") == 0
     and C741.get("runner_sha256") == file_sha256(C741_PRIMARY_PATH)
-    and receipt_inputs_current(C741)
+    and receipt_inputs_current(C741, C741_PRIMARY_INPUTS)
     and C741.get("nonconstant_reading_bound", {}).get("reading_names") == EXPECTED_NAMES
     and C741.get("nonconstant_reading_bound", {}).get("complete_even_sizes")
     == [2, 4, 6, 8, 10, 12, 14]
@@ -99,7 +118,7 @@ C741_OK = (
     and C741I.get("status") == "pass"
     and C741I.get("gates", {}).get("fail") == 0
     and C741I.get("checker_sha256") == file_sha256(C741_CHECKER_PATH)
-    and receipt_inputs_current(C741I)
+    and receipt_inputs_current(C741I, C741_INDEPENDENT_INPUTS)
     and C741I.get("exact_weight_fourteen_answers")
     == {name: False for name in EXPECTED_NAMES}
 )
@@ -1059,7 +1078,7 @@ gate(bool((((INC64 @ yw) & 1) == TGTv[4]).all()) and int(yw.sum()) == 24
      "the b0 image of the six witness is a second six-carrier of weight 24")
 MINC = int(XC.sum(axis=1).min())
 gate(MINC == 16 and bool((CS & 1).all()), "G51",
-     "odd column sums bar odd sizes, the previous cycle swept every even size to 14, "
+     "odd column sums bar odd sizes, hash-bound Cycle 741 swept every even size to 14, "
      "and 16 is reached")
 gate(MINC == 16 and WWT == [20, 24, 24, 30, 30], "G52",
      "four sits at 16 exactly; four-flip [16,20]; six [16,24]; six-flip [16,24]; "

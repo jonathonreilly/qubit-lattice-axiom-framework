@@ -1,6 +1,6 @@
 {
- "edge_count": 15755,
- "node_count": 5501,
+ "edge_count": 15759,
+ "node_count": 5502,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -440,6 +440,10 @@
   },
   "admissibility_m2_effect_label_record_carrier_atomic_born_law_factorization_bounded_theorem_note_2026-08-10": {
    "deps_hash": "c12edc090f3d",
+   "out_degree": 4
+  },
+  "admissibility_m2_record_cubic_vector_decoder_sector_grading_carrier_axiom_boundary_bounded_theorem_note_2026-08-12": {
+   "deps_hash": "0366382389ed",
    "out_degree": 4
   },
   "admissibility_nonlinear_regge_extra_branch_cubic_lift_source_compatibility_boundary_bounded_theorem_note_2026-08-10": {

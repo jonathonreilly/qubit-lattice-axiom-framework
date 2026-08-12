@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_m2_record_cubic_vector_decoder_sector_grading_carrier_axiom_boundary_2026_08_12.py
+runner_sha256: cafd8eb1bb2bb13e2c066f0ffd3043c1b97286ce401bcee26eb29454f0eb4970
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.15
+status: ok
+----- stdout -----
+analytic_boundary: exact proper-cubic representation and Pauli-pointer carrier algebra
+physical_boundary: no internal rotation lift, non-scalar decoder, sector roles, grading selector, chirality carrier, or gravity sign is selected
+external_scientific_inputs: none; all group, algebra, rule, and finite-support calculations are reconstructed exactly
+[PASS] source-interface-boundary: the current sources supply M2 content and scalar readout but keep the vector decoder conditional
+[PASS] proper-cubic-group-and-orbit: the 24 determinant-one signed permutations form a group transitive on six signed directions
+       group=24; orbit=6; closure=True
+[PASS] two-current-compatible-internal-actions: both trivial and Pauli-adjoint proper-cubic actions are exact M2 algebra representations
+       adjoint algebra failures=0; representation failures=0; trivial action is identity
+[PASS] shared-current-axiom-completion: one exact total central rule varies with six-neighbour conditions and is covariant under both internal actions
+       probabilities=[Fraction(1, 8), Fraction(1, 4), Fraction(3, 8), Fraction(1, 2), Fraction(5, 8), Fraction(3, 4), Fraction(7, 8)]; failures=0; support={-I,+I} fixed by both actions
+[PASS] equivariant-decoder-space-fork: the adjoint action has one normalized vector decoder while the trivial action has none
+       adjoint rank/nullity=8/1; trivial rank/nullity=9/0
+[PASS] typed-pauli-record-balance-embedding: four central-tagged Pauli-pointer Records reproduce the complete Cycle-876 balance model exactly
+       alphabet=24; ranks={0: 0, 1: 96, 2: 768, 3: 432}; unit=90; three controls=(216, 216, 216)
+[PASS] scalar-readout-orbit-blindness: every proper-cubic-invariant scalar is constant on the transitive pointer orbit and every invariant linear scalar vanishes there
+       orbit size=6; invariant-covector rank=3; trace/2 values={0}
+[PASS] axiom-choice-not-physical-identification: the note preserves live joint-law and axiom routes without claiming TOE movement
+per_element: checked every Pauli basis product, action image, balance entry, and special-point residual
+per_site: checked the full one-site M2 Pauli pointer orbit and one total six-neighbour local-rule completion
+per_mode: checked all 24 proper-cubic transformations and both exact internal representation choices; no Fourier claim is made
+per_block: checked all 1,296 typed four-Record support configurations and the complete decoder constraint systems
+lattice_wide: checked and not executed — no selected full-Z3 law, sector compiler, chirality lineage, or gravity-sign theorem is claimed
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

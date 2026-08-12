@@ -4,7 +4,7 @@ runner_sha256: 57518a8d8edfca47df5cb781acd1bdac04ef86d907b4dd62f323bcbf4a575faf
 input_fingerprint_sha256: 137aad3be275b3cf30de261f5308d06e3cc8ae05bb376802a4f83e8662d3dee2
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 147.65
+elapsed_sec: 144.46
 status: ok
 ----- stdout -----
 PASS independent cell census  subsets=4368 minimal=2672 volumes=[(0, 1360), (1, 2672), (2, 320), (3, 16)]

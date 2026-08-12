@@ -1,0 +1,75 @@
+===== runner cache v1 =====
+runner: scripts/physical_complete_averaging_set_frame_blindness_classification_cycle716_2026_08_02.py
+runner_sha256: 9dae6d0c63f1ac7f6eabe37e2c27c364852bfb4250dec98dae0f34bf443f87d4
+input_fingerprint_sha256: f16228dfa22ac9810d4cc316446c432694b1b6d39236992c2bac39c9cf2f5eab
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 240.08
+status: ok
+----- stdout -----
+c716 finite classification of frame-blind averaging sets
+-- group layer --
+PASS g1_sextet_identity S [1, 4, 9, 15, 18, 23] order 6 closed
+PASS g1_sextet_right_coset_count index 4 = 24 over 6
+PASS g1_subgroup_lattice complete lattice by closure 30
+PASS g1_covering_subgroups orders [4, 4, 4, 4, 8, 8, 8, 12, 24]
+PASS g1_complements 4 complements meeting S in the identity alone
+PASS g1_noncovering_order4_witness 3 order-4 subgroups meet S twice, cover 12 of 24
+PASS g1_minimal_covering_family_members 24 size-4 right cosets of the complements
+PASS g1_left_family_equals_right_family left and right coset families coincide as sets
+PASS g1_covering_contains_complement every covering subgroup contains a complement
+PASS g1_family_size_and_histogram 231 members, by size [(4, 24), (8, 51), (12, 80), (16, 51), (20, 24), (24, 1)]
+PASS g1_sizes_are_multiples_of_four family size support [4, 8, 12, 16, 20, 24], minimum 4
+PASS g1_family_generated_by_minimal every member is a union of minimal covering-family members
+PASS g1_family_not_union_closed 168 disjoint minimal pairs, 108 unions outside the family
+PASS g1_minimal_cover_overlaps 108 of 276 pairs overlap
+-- left-stabilizer criterion on the complete powerset --
+PASS g2_stabilizers_are_subgroups every left stabilizer over the complete powerset lies in the 30-member lattice, 30 distinct values
+PASS g2_criterion_recovers_family S L(A) = whole group holds for exactly 231 of 16777215 collections
+PASS g2_stabilizer_order_divides_size order of L(A) divides size of A on all 231, minimum order 4
+-- L=3 --
+PASS g3_L3_dof_and_scale n 98 scale 2.9e+01
+PASS g3_L3_sextet_recovered S [1, 4, 9, 15, 18, 23] at tol 1.0e-09
+PASS g3_L3_screening_premise four distinct frame representatives [0, 1, 2, 3] are a subset of the 24
+PASS g3_L3_four_representative_sample bounded consistency sample: worst deviation 6.2e-12 over 2324 collections of size at most 3
+PASS g4_L3_sufficiency_supplied_sources 231 members x 5 supplied inputs on the nonzero-average domain, worst spread 7.0e-12 smallest norm 2.0e+00
+PASS g5_L3_seeded-normal-base-7160_finite_scan_family 16777215 collections, 231 classified blind, covering-family match True
+PASS g5_L3_seeded-normal-base-7160_separation worst blind 5.8e-12 best non-blind 6.8e-06 ratio 1.2e+06 smallest norm 1.1e+01 degenerate 0
+PASS g5_L3_seeded-normal-base-7160_size_census counts by size [(1, 0), (2, 0), (3, 0), (4, 24), (5, 0), (6, 0), (7, 0), (8, 51), (9, 0), (10, 0), (11, 0), (12, 80), (13, 0), (14, 0), (15, 0), (16, 51), (17, 0), (18, 0), (19, 0), (20, 24), (21, 0), (22, 0), (23, 0), (24, 1)]
+PASS g5_L3_seeded-normal-base-7160_all_24_acceptance all 231 screen acceptances retested on all 24 frames; worst spread 5.8e-12
+PASS g5_L3_seeded-normal-base-7161_finite_scan_family 16777215 collections, 231 classified blind, covering-family match True
+PASS g5_L3_seeded-normal-base-7161_separation worst blind 7.0e-12 best non-blind 4.7e-05 ratio 6.6e+06 smallest norm 9.7e+00 degenerate 0
+PASS g5_L3_seeded-normal-base-7161_size_census counts by size [(1, 0), (2, 0), (3, 0), (4, 24), (5, 0), (6, 0), (7, 0), (8, 51), (9, 0), (10, 0), (11, 0), (12, 80), (13, 0), (14, 0), (15, 0), (16, 51), (17, 0), (18, 0), (19, 0), (20, 24), (21, 0), (22, 0), (23, 0), (24, 1)]
+PASS g5_L3_seeded-normal-base-7161_all_24_acceptance all 231 screen acceptances retested on all 24 frames; worst spread 7.0e-12
+PASS g6_L3_sextet_spread_witness the sextet spread is 2.0e-02 at this input
+PASS g6_L3_non_subgroup_subset_spread_witness subset [1, 4, 9, 23] spread is 3.3e-02 at this input
+PASS g6_L3_noncovering_coset_spread_witness 72 cosets of 3 noncovering order-4 subgroups, least spread 5.4e-03
+-- L=4 --
+PASS g3_L4_dof_and_scale n 279 scale 2.9e+01
+PASS g3_L4_sextet_recovered S [1, 4, 9, 15, 18, 23] at tol 1.0e-09
+PASS g3_L4_screening_premise four distinct frame representatives [0, 1, 2, 3] are a subset of the 24
+PASS g3_L4_four_representative_sample bounded consistency sample: worst deviation 3.0e-10 over 2324 collections of size at most 3
+PASS g4_L4_sufficiency_supplied_sources 231 members x 5 supplied inputs on the nonzero-average domain, worst spread 1.6e-10 smallest norm 2.0e+00
+PASS g5_L4_seeded-normal-base-7160_finite_scan_family 16777215 collections, 231 classified blind, covering-family match True
+PASS g5_L4_seeded-normal-base-7160_separation worst blind 1.6e-10 best non-blind 6.6e-05 ratio 4.2e+05 smallest norm 1.6e+01 degenerate 0
+PASS g5_L4_seeded-normal-base-7160_size_census counts by size [(1, 0), (2, 0), (3, 0), (4, 24), (5, 0), (6, 0), (7, 0), (8, 51), (9, 0), (10, 0), (11, 0), (12, 80), (13, 0), (14, 0), (15, 0), (16, 51), (17, 0), (18, 0), (19, 0), (20, 24), (21, 0), (22, 0), (23, 0), (24, 1)]
+PASS g5_L4_seeded-normal-base-7160_all_24_acceptance all 231 screen acceptances retested on all 24 frames; worst spread 1.6e-10
+PASS g5_L4_seeded-normal-base-7161_finite_scan_family 16777215 collections, 231 classified blind, covering-family match True
+PASS g5_L4_seeded-normal-base-7161_separation worst blind 1.1e-10 best non-blind 3.4e-04 ratio 3.1e+06 smallest norm 1.6e+01 degenerate 0
+PASS g5_L4_seeded-normal-base-7161_size_census counts by size [(1, 0), (2, 0), (3, 0), (4, 24), (5, 0), (6, 0), (7, 0), (8, 51), (9, 0), (10, 0), (11, 0), (12, 80), (13, 0), (14, 0), (15, 0), (16, 51), (17, 0), (18, 0), (19, 0), (20, 24), (21, 0), (22, 0), (23, 0), (24, 1)]
+PASS g5_L4_seeded-normal-base-7161_all_24_acceptance all 231 screen acceptances retested on all 24 frames; worst spread 1.1e-10
+PASS g6_L4_sextet_spread_witness the sextet spread is 1.4e+00 at this input
+PASS g6_L4_non_subgroup_subset_spread_witness subset [1, 4, 9, 23] spread is 1.1e+00 at this input
+PASS g6_L4_noncovering_coset_spread_witness 72 cosets of 3 noncovering order-4 subgroups, least spread 2.3e-01
+-- boundary (structured sources) --
+PASS g7_L3_unit-slot0_additional_blind_witnesses 153 blind of 1271625 at size at most 8, family contributes 75, counts by occupied sizes [4, 8], counts below size 4 []
+PASS g7_L3_unit-slot7_additional_blind_witnesses 723 blind of 1271625 at size at most 8, family contributes 75, counts by occupied sizes [2, 4, 6, 8], counts below size 4 [(2, 24)]
+PASS g7_L3_all_ones_orbit_is_one_point orbit diameter 0.0e+00 blind on all 1271625 collections
+PASS g7_L3_boundary_ordering structured blind counts 723 and 153 against family 75
+PASS g7_L3_size_two_blind_witness unit-slot7 has 24 blind collections below size 4 in this scan; unit-slot0 has 0
+-- zero-average domain witness --
+PASS g8_zero_average_domain_is_nonpassing nonzero e0-e35 input, full-group average norm 0.0e+00, spread nan
+TOTAL: PASS=55 FAIL=0
+
+----- stderr -----
+

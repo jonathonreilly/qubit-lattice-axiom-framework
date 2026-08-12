@@ -1,177 +1,209 @@
-# Complete Classification of Frame-Blind Averaging Sets for the Reassembled Static Operator — Cycle 716
+# Finite Classification of Frame-Blind Averaging Sets for the Reassembled Static Operator — Cycle 716
 
 Date: 2026-08-02
 
 Claim type: bounded_theorem
 
-Authority: none. Audit: unset. Constitutional effect: none. This cycle edits no
-axiom, foundation, Qualification, primitive, registry, policy, queue,
-audit-status, or PR-control surface. No new axiom or primitive is proposed or
-adopted.
+Status: proposed_retained
 
-## Setting
+Authority: none. Audit status is set only by the independent audit lane. This
+note changes no axiom, approved primitive, premise registry, policy, queue, or
+audit-status surface.
 
-The open-coframe static Hessian `Q(L)` is assembled by the cycle-696 compiler
-[physical_open_coframe_k_endpoint_compiler_cycle696_2026_07_25.py](../scripts/physical_open_coframe_k_endpoint_compiler_cycle696_2026_07_25.py)
-on an `L x L x L` box with a free (unwrapped) boundary. The 24 proper rotations
-of the cube act on the static variable index by relabelling; write `P_a` for the
-permutation carried by frame `a`, and `Q_g = P_g Q P_g^T` for the operator
-reassembled in frame `g`. The measured degree-of-freedom counts are `n = 98` at
-`L = 3` and `n = 279` at `L = 4`, at scale `2.9e+01`.
+Primary runner:
+`scripts/physical_complete_averaging_set_frame_blindness_classification_cycle716_2026_08_02.py`;
+cached stdout:
+`logs/runner-cache/physical_complete_averaging_set_frame_blindness_classification_cycle716_2026_08_02.txt`;
+paired receipt:
+`outputs/physical_complete_averaging_set_frame_blindness_classification_cycle716_2026_08_02_receipt_2026-08-02.json`.
 
-Cycle `physical_source_stabilizer_coset_collapse_k_sign_law_cycle707` and its
-successor `physical_frame_group_factorization_cycle715` measured the stabilizer
-sextet `S = [1, 4, 9, 15, 18, 23]` — the six frames with `Q_g = Q` at tolerance
-`1.0e-09` — and established that `g -> Q_g` is constant on the right cosets
-`S.g`, so the reassembled operator is a function on four cosets rather than on
-24 frames.
+This note contains two distinct finite results. Exact finite group arithmetic,
+conditional on the stabilizer sextet measured from the supplied Cycle-696
+compiler, identifies a 231-member sufficient family of averaging sets. Four
+complete numerical scans — two declared seeded standard-normal inputs at each
+of `L = 3, 4` — find exactly that family among all 16777215 nonempty frame
+collections. The second statement is about those four inputs; it is not a
+generic-source theorem.
 
-The sextet `S` is **measured, not derived**, from the assembled operator. Every
-group-layer statement below is derived from `S` by the coset argument and then
-matched against a complete scan; nothing in the group layer is fitted.
+```yaml
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: "characterize the exceptional source varieties on which additional frame-blind averaging sets occur"
+source_of_blocker_text: strongest_missing_lemma
+reachability_to_target: supports
+artifact_role: runner_certificate
+next_trace_action: "solve the finite quadratic equalities in source space rather than extrapolating from seeded probes"
+```
 
-## The question this cycle answers
+```yaml
+actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
+trace_class: upstream_support
+reachability_to_target: supports
+conditional_surface_status: "Exact finite group classification conditional on the measured sextet, plus complete powerset counts at four declared seeded inputs on L in {3,4}."
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: "the group layer is exhaustive on the 24 rotations, while the response converse is measured only at four finite source vectors and two box sizes"
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```
 
-Cycle 715 classified which *subgroups* of the rotation group average the frame
-dependence away. An averaging prescription need not be a subgroup. In general it
-is an arbitrary nonempty collection `A` of frames, defining a pulled source and a
-reassembled response
+## Supplied setting and domain
 
-    b_A = sum over a in A of P_a^T b,     v_A(g) = (b_A / |b_A|)^T Q_g^{-1} (b_A / |b_A|).
+The [Cycle-696 open-coframe compiler](../scripts/physical_open_coframe_k_endpoint_compiler_cycle696_2026_07_25.py)
+assembles the unwrapped static Hessian `Q(L)`. The 24 proper cubic rotations act
+on its degree-of-freedom index by permutation matrices `P_a`; the reassembled
+operator in frame `g` is `Q_g = P_g Q P_g^T`. The measured sizes are `n = 98`
+at `L = 3` and `n = 279` at `L = 4`.
 
-Call `A` **frame-blind** for `b` when `g -> v_A(g)` is constant. There are
-16777215 nonempty collections. This cycle classifies all of them.
+For a nonempty averaging set `A` and supplied vector `b`, define
 
-## Theorem I — sufficiency, valid for every source
+    b_A = sum_{a in A} P_a^T b,
+    v_A(g) = (b_A / ||b_A||)^T Q_g^{-1} (b_A / ||b_A||).
 
-Let `L(A) = { t : t.A = A }` be the left stabilizer of `A`. It is a subgroup, and
-`A` is a union of right cosets of `L(A)`, so the order of `L(A)` divides the size
-of `A`. Because `a -> P_a` reverses products (`P_a P_b = P_{ba}`), the pulled
-source transforms as `P_t^T b_A = b_{t.A}`; hence `b_A` is fixed by every
-`t` in `L(A)`. If the sextet and the left stabilizer together fill the rotation
-group, `S.L(A) = G`, then every frame is reached from a stabilizer frame by an
-element that fixes `b_A`, and `v_A` is constant.
+The normalized response is defined only where `||b_A|| > 0`. The runner returns
+`NaN`, a non-passing value, when the average vanishes; such a collection enters
+neither the blind nor non-blind population. A hostile witness `b = e_0 - e_35`
+with `A` equal to the full group has zero averaged norm at `L = 3` and gates this
+domain behavior.
 
-Equivalently: **`A` is blind for every source exactly when `A` is a union of
-right cosets of a covering subgroup** — a subgroup `H` with `S.H = G`.
+The zero-defect set is recomputed from the compiled operators at tolerance
+`1.0e-09` and is measured as
 
-This direction is one of the cycle's **computational identities**: it does not
-depend on the source. Measured over all 231 members of the predicted family
-against five distinct sources (two generic draws, two single-slot sources, and
-the all-ones source), the worst spread is `7.0e-12` at `L = 3` and `1.6e-10` at
-`L = 4`, with smallest normalizing norm `2.0e+00`.
+    S = {1, 4, 9, 15, 18, 23}.
 
-## Theorem II — the converse, over the complete powerset
+Its order-six subgroup and right-coset role are inherited from the finite
+[Cycle-714 operator/source pairing result](PHYSICAL_ASSEMBLY_DEFECT_ISOSPECTRALITY_AND_SOURCE_PAIRING_CYCLE714_NOTE_2026-08-02.md)
+and the [Cycle-715 group factorization](PHYSICAL_FRAME_GROUP_FACTORIZATION_AND_MINIMAL_BLINDING_CYCLE715_NOTE_2026-08-02.md).
+The present runner recomputes the sextet, group table, and subgroup lattice.
 
-Scanning all 16777215 nonempty collections, at two independent generic sources
-and at both box sizes, the measured blind family is exactly the predicted family
-of 231 members, with no member missing and none extra:
+## Derived sufficiency on the nonzero-average domain
 
-| box | source | blind | family match | worst blind | best non-blind | ratio | smallest norm |
-|-----|--------|-------|--------------|-------------|----------------|-------|----------------|
-| `L = 3` | generic seed 7160 | 231 | yes | `5.8e-12` | `6.8e-06` | `1.2e+06` | `1.1e+01` |
-| `L = 3` | generic seed 7161 | 231 | yes | `7.0e-12` | `4.7e-05` | `6.6e+06` | `9.7e+00` |
-| `L = 4` | generic seed 7160 | 231 | yes | `1.6e-10` | `6.6e-05` | `4.2e+05` | `1.6e+01` |
-| `L = 4` | generic seed 7161 | 231 | yes | `1.1e-10` | `3.4e-04` | `3.1e+06` | `1.6e+01` |
+Let `L(A) = {t : tA = A}` be the left stabilizer of `A`. This is a subgroup,
+and `A` is a union of its right cosets. Because the relabelling reverses
+products, `P_a P_b = P_{ba}`, one has
+`P_t^T b_A = b_{tA} = b_A` for every `t` in `L(A)`.
 
-The blind and non-blind populations are separated by at least five orders of
-magnitude in every column, so the classification is not a tolerance artefact.
+If `S L(A)` fills all 24 rotations, write any frame as `g = s t` with `s` in
+`S` and `t` in `L(A)`. The `t` factor fixes `b_A`, while `s` fixes `Q` and its
+inverse. Therefore `v_A(g) = v_A(e)`. This proves sufficiency for every supplied
+`b` for which the normalized response is defined.
 
-The size ladder is identical in all four scans: sizes 4, 8, 12, 16, 20 and 24
-carry 24, 51, 80, 51, 24 and 1 blind collections respectively, and **every one of
-the other eighteen sizes carries none**. No collection of size 1, 2 or 3 is blind
-for a generic source.
+The runner constructs every subgroup of the finite rotation group without a
+generating-rank assumption. Nine subgroups cover with `S`, of orders
+`4, 4, 4, 4, 8, 8, 8, 12, 24`. The four order-four covering subgroups are
+complements of `S`. Unions of their right cosets, equivalently sets whose left
+stabilizer covers with `S`, form a family of 231 collections with size census
 
-The complete scan is made feasible by the cycle-715 coset collapse: the frame
-functional takes at most four distinct values, so four representatives suffice.
-That reduction is validated inside this cycle rather than assumed — over all 2324
-collections of size at most three, the four-representative and 24-frame spreads
-agree to `6.2e-12` at `L = 3` and `3.0e-10` at `L = 4`.
+| size | 4 | 8 | 12 | 16 | 20 | 24 |
+|---|---:|---:|---:|---:|---:|---:|
+| family count | 24 | 51 | 80 | 51 | 24 | 1 |
 
-## Theorem III — the structure of the blind family
+The family has 24 size-four members. Every family member is a union of those
+members, but arbitrary unions need not stay in the family: 108 of the 168
+disjoint pairs have a union outside it, and 108 of all 276 pairs overlap. The
+size-four minimum is a property of this covering-criterion family: the order of
+`L(A)` divides `|A|`, and a covering stabilizer has order at least four.
 
-Independently of any source, from the sextet alone:
+Across all 231 family members and five supplied inputs — two seeded normals,
+two single-slot vectors, and the all-ones vector — the worst all-24 spread is
+`7.0e-12` at `L = 3` and `1.6e-10` at `L = 4`; the smallest averaging norm is
+`2.0e+00`.
 
-- The rotation group has a 30-member subgroup lattice. Exactly nine subgroups are
-  covering, of orders 4, 4, 4, 4, 8, 8, 8, 12 and 24.
-- The four order-4 covering subgroups meet the sextet in the identity alone; they
-  are complements of `S`. Every covering subgroup contains a complement.
-- Their right cosets give 24 minimal blind collections, each of size four. The
-  left-coset family is the same 24 sets.
-- Every one of the 231 members is a union of minimal blind collections.
-- The family is nonetheless **not union-closed**: of the 168 disjoint pairs of
-  minimal collections, 108 have a union that is not blind. The 24 minimal
-  collections overlap partially — they do not partition the rotation group.
-- A left stabilizer computed over the complete powerset always lands in the
-  30-member lattice, taking 30 distinct values; the covering criterion
-  `S.L(A) = G` selects exactly 231 of the 16777215 collections; and on all 231
-  the order of `L(A)` divides the size of `A`, with minimum order four.
+## Complete finite scans at four seeded inputs
 
-The minimum blind size of four is therefore derived, not observed: a covering
-subgroup must have order at least four, and the order of `L(A)` divides `|A|`.
+For each box, the runner instantiates NumPy's `default_rng(base_seed + L)` and
+draws a standard-normal vector. Thus the four scans use base seeds 7160 and
+7161, with actual RNG seeds 7163 and 7164 at `L = 3`, and 7164 and 7165 at
+`L = 4`. Reuse of an integer seed across different vector dimensions does not
+identify the vectors.
 
-## Rejectors
+All 16777215 nonempty collections are scanned in each case:
 
-Every gate carries an explicit wrong-set rejector, so a mistaken family would
-fail rather than pass silently. At the generic source:
+| box | base seed | classified blind | family match | worst blind | best non-blind | ratio | minimum norm | degenerate |
+|---|---:|---:|---|---:|---:|---:|---:|---:|
+| `L = 3` | 7160 | 231 | yes | `5.8e-12` | `6.8e-06` | `1.2e+06` | `1.1e+01` | 0 |
+| `L = 3` | 7161 | 231 | yes | `7.0e-12` | `4.7e-05` | `6.6e+06` | `9.7e+00` | 0 |
+| `L = 4` | 7160 | 231 | yes | `1.6e-10` | `6.6e-05` | `4.2e+05` | `1.6e+01` | 0 |
+| `L = 4` | 7161 | 231 | yes | `1.1e-10` | `3.4e-04` | `3.1e+06` | `1.6e+01` | 0 |
 
-| rejector | `L = 3` spread | `L = 4` spread |
-|----------|----------------|----------------|
-| the sextet `S` itself (order 6, not covering) | `2.0e-02` | `1.4e+00` |
-| the non-subgroup 4-subset `[1, 4, 9, 23]` of the sextet | `3.3e-02` | `1.1e+00` |
-| least over the 72 cosets of the three non-covering order-4 subgroups | `5.4e-03` | `2.3e-01` |
+At each of these four vectors, the six-size census is exactly the group-family
+census above, with count zero on the other eighteen sizes. The gap between the
+two numerical populations is at least five orders of magnitude at the declared
+`1.0e-08` classification tolerance.
 
-The three non-covering order-4 subgroups meet the sextet twice and reach 12 of
-the 24 frames; being the same size as a complement is not enough.
+The full scan uses four right-coset representatives as a monotone screen, not
+as an assumed equality. Those four representatives are frames, so their spread
+cannot exceed the all-24 spread: a screen rejection is conclusive and only
+acceptance can require more work. Every one of the 231 screen acceptances in
+each scan is re-evaluated on all 24 frames. A separate bounded consistency
+sample compares four- and 24-frame spreads over all 2324 collections of size at
+most three; its worst differences are `6.2e-12` and `3.0e-10` at `L = 3, 4`.
+The sample is not used to authorize the screen.
 
-## Boundary — the converse is a generic-source statement
+## Finite source-dependence witnesses
 
-Sufficiency holds for every source, but the converse does not. Structured sources
-blind strictly more. Over the 1271625 collections of size at most eight at
-`L = 3`, where the predicted family contributes 75 members:
+The first seeded input supplies three named spread witnesses. At `L = 3` and
+`L = 4`, respectively, the sextet spreads by `2.0e-02` and `1.4e+00`; the
+four-set `{1,4,9,23}` spreads by `3.3e-02` and `1.1e+00`; and the least spread
+among 72 right cosets of the three noncovering order-four subgroups is
+`5.4e-03` and `2.3e-01`.
 
-- a single-slot source at slot 0 blinds 153 collections, all at sizes four and
-  eight;
-- a single-slot source at slot 7 blinds 723 collections, and 24 of them have size
-  **two** — below the generic minimum of four;
-- the all-ones source has a one-point frame orbit (orbit diameter `0.0e+00`,
-  since the permutations fix it) and is blind on all 1271625 collections.
+Other supplied vectors exhibit additional blind sets. Over the 1271625
+collections of size at most eight at `L = 3`, the covering family contributes
+75 sets, while the slot-0 unit vector has 153 blind sets, the slot-7 unit vector
+has 723 (including 24 of size two), and the all-ones vector has a one-point
+frame orbit and 1271625 blind sets. These are positive existence witnesses for
+source dependence. They delimit the four seeded counts and the size-four
+family minimum; they do not define a universal source class.
 
-So the size-four floor is a generic-source floor, not a universal one, and the
-231-member family is the *smallest* blind family, attained by generic sources.
-This is stated as a limit of the theorem, not as a residual to be repaired.
+## Claim boundary and physics reading
 
-## What this cycle claims and does not claim
+The durable result is an exhaustive finite group classification conditional on
+the measured sextet, an analytic sufficiency implication on the nonzero-average
+domain, and four complete finite response scans at `L = 3, 4`. The supplied
+compiler, its open boundary, its static spatial-sector interpretation, its
+finite-difference residuals, the `1.0e-08` response tolerance, and the four
+source vectors are explicit premises.
 
-Claimed: for the reassembled static operator of the cycle-696 compiler on an
-unwrapped box, at `L = 3` and `L = 4`, an averaging prescription is frame-blind
-for a generic source exactly when it is a union of right cosets of a covering
-subgroup, and blind for *every* source whenever it is; the family has 231
-members with the ladder above; the minimum blind size is four; and the family is
-generated by, but not closed under unions of, its 24 minimal members.
+No arbitrary-`L`, wrapped-boundary, continuum, source-measure, or physical
+averaging prescription is selected here. In particular, four seeded vectors do
+not establish a generic-source converse or identify the exceptional algebraic
+source sets. What the finite data do show is that the coset-aligned family
+saturates the blindness census at four widely separated numerical probes, while
+structured vectors can enlarge it substantially.
 
-Not claimed: any statement about a continuum limit, about wrapped boundaries,
-about box sizes beyond those measured, or about the audit status of this or any
-other row. No new axiom, primitive, or import is proposed. The sextet and the
-degree-of-freedom counts are inputs measured from the compiler, and the note
-carries no closed form for them.
+## Runner and evidence
 
-## Physics reading
+The primary runner declares `AUDIT_INPUT_PATHS` for the Cycle-696 compiler and
+its four transitive script imports and declares `AUDIT_TIMEOUT_SEC = 900`. It
+recomputes the 24-frame group law, measured sextet, complete 30-subgroup lattice,
+covering family, full-powerset stabilizers, four complete source scans, all-24
+acceptance retests, finite witnesses, and zero-average domain rejector. It ends
+with `TOTAL: PASS=55 FAIL=0` and writes the paired JSON receipt. The canonical
+cache is produced through `scripts/runner_cache.py`, so its header binds both
+runner bytes and the declared compiler-source fingerprint.
 
-The reassembled static operator carries a genuine four-valued frame functional,
-and this cycle shows how hard it is to erase. No collection of one, two or three
-frames erases it. Of the 16777215 averaging prescriptions available, 231 do, and
-they are exactly the coset-aligned ones. Frame-blindness is a rare structural
-alignment between the averaging set and the stabilizer sextet, not something a
-generic averaging prescription achieves — and this removes the subgroup
-hypothesis that the cycle-715 classification carried, replacing it with a
-statement over arbitrary averaging sets.
+## Load-bearing dependencies
 
-## Reproduction
+- [Cycle 714](PHYSICAL_ASSEMBLY_DEFECT_ISOSPECTRALITY_AND_SOURCE_PAIRING_CYCLE714_NOTE_2026-08-02.md)
+  supplies the finite operator/source pairing and four-right-coset collapse this
+  cycle extends from subgroups to arbitrary sets.
+- [Cycle 715](PHYSICAL_FRAME_GROUP_FACTORIZATION_AND_MINIMAL_BLINDING_CYCLE715_NOTE_2026-08-02.md)
+  supplies the finite sextet/complement factorization and subgroup blinding
+  criterion generalized here through left stabilizers.
+- The linked Cycle-696 script supplies the executable compiler contract and its
+  24-frame table; it is a support surface, not audit authority.
 
-Runner:
-[physical_complete_averaging_set_frame_blindness_classification_cycle716_2026_08_02.py](../scripts/physical_complete_averaging_set_frame_blindness_classification_cycle716_2026_08_02.py)
+## Review record
 
-Cold stdout and the machine-readable receipt are landed under `outputs/`. The
-runner prints one line per gate and ends with a `TOTAL: PASS=` line; every
-floating-point value quoted above is printed by the runner itself.
+Review withdrew the submitted universal converse and the phrase “generic
+source”: two seeded draws per box do not prove a statement on source space, and
+structured vectors in the same runner furnish counterexamples to universal
+minimality. Review also made the nonzero-average domain explicit, changed a zero
+average from a false pass to `NaN`, replaced a bounded four-frame comparison by
+the monotone-screen argument plus all-24 acceptance retests, removed the
+generating-rank assumption from subgroup enumeration, disclosed the actual RNG
+seed convention, bound cached evidence to the transitive compiler closure, and
+added the direct Cycle-714/715 dependency edges. Independent audit remains
+required before any effective retained grade.

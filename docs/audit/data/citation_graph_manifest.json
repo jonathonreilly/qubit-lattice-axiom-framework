@@ -1,6 +1,6 @@
 {
- "edge_count": 15600,
- "node_count": 5486,
+ "edge_count": 15602,
+ "node_count": 5487,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -15681,6 +15681,10 @@
   "record_conditional_law_three_point_period_series_bounded_theorem_note_2026-06-11": {
    "deps_hash": "7dab68b99d29",
    "out_degree": 1
+  },
+  "record_content_only_shared_effect_descent_bounded_theorem_note_2026-08-12": {
+   "deps_hash": "e8920a7a8b6a",
+   "out_degree": 2
   },
   "record_content_readout_license_split_registration_unreachability_theorem_note_2026-07-02": {
    "deps_hash": "c228186e4577",

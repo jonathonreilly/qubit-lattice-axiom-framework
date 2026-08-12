@@ -22,8 +22,8 @@ derive.  The chain has four exact stages:
       defect E = P^T Q P - Q consists solely of 0 <-> 4 swaps on face-face pairs
       with exactly one substituted endpoint, so the comparator equals
       |LT * (-1 - 1)| = 4 exactly at stencil level, and the measured deviation
-      is central-difference truncation with a convergence-ratio certificate and
-      a closed error budget.
+      is numerically accounted for by the two local finite-difference errors,
+      within the declared budget tolerance, with a convergence-ratio check.
 
 The frame-uniform rounded census of |E| > 2 entries, the both-clean block
 ceiling, and the off-integer-distance witness are measured, not derived.  Every
@@ -441,7 +441,15 @@ def main() -> int:
                   dict(orient)))
         check("c6_census_frame_uniform_{}".format(Ltag), len(censuses) == 1,
               "rounded census of entries above 2: {}".format(sorted(next(iter(censuses)))))
-        keys = {v for v, c in next(iter(censuses))}
+        census = next(iter(censuses))
+        expected_census = {
+            3: ((-4, 64), (-3, 224), (-2, 136), (2, 136), (3, 224), (4, 64)),
+            7: ((-4, 1728), (-3, 4896), (-2, 4056),
+                (2, 4056), (3, 4896), (4, 1728)),
+        }[L]
+        check("c6_census_counts_{}".format(Ltag), census == expected_census,
+              "full rounded-value multiplicities equal the preregistered census")
+        keys = {v for v, c in census}
         check("c6_census_keys_{}".format(Ltag), keys == {-4, -3, -2, 2, 3, 4},
               "swap family values")
         check("c6_both_clean_sqrt8_{}".format(Ltag),

@@ -167,10 +167,11 @@ At every one of the 18 mixed frames, at both box sizes L = 3 and L = 7:
    equal numbers — 1152 each at L = 3, 31104 each at L = 7, summed over frames;
 3. the ceiling of |E_g| carries one bit pattern across all 18 mixed frames and
    across both box sizes, and its deviation from 4 is 1.3e-08;
-4. the deviation is finite-difference truncation, certified two ways: the
-   per-incidence FD error at step h contracts by ratio 4.09 and 3.93 when h is
-   halved (second-order central differences contract by 4), and the closed
-   budget LT × (err0 + err1) = 1.3e-08 matches the assembled-entry deviation.
+4. the measured deviation is numerically accounted for by the two local
+   finite-difference errors: the per-incidence FD error at step h contracts by
+   ratio 4.09 and 3.93 when h is halved (second-order central differences
+   contract by 4), and the budget LT × (err0 + err1) = 1.3e-08 matches the
+   assembled-entry deviation within the gate's `1e-3` relative tolerance.
 
 The exact-family closure is exhaustive for this finite claim: across the three
 complementary face-diagonal class pairs, the L = 3 assembler exposes 48
@@ -181,8 +182,9 @@ that same closed configuration set.
 
 Together with T2 this derives the Cycle-710 comparator: the mixed-frame ceiling
 is the exact stencil integer 4 = |LT × (−1 − 1)|, attained by substitution
-swaps of the {0, −4} family, and its measured deviation is exactly the FD
-truncation of the two incident local Hessians.
+swaps of the {0, −4} family. The finite-difference halving ratios and budget
+agreement account numerically for the measured floating deviation without
+promoting that attribution to a symbolic equality.
 
 ### T4 — Frame-uniform census (measured, not derived)
 
@@ -258,9 +260,9 @@ appear.
   4.6e-01, matching 2·√3 − 3 within 2.0e-07. The exact integer identity in this
   note is restricted to the argmax swap family and its stated stencil values.
 - **Exactness lives at stencil level.** The assembled floats carry FD
-  truncation; the claim is exact because the deviation is certified as FD
-  truncation by the convergence-ratio and closed-budget gates, not because the
-  floats are exact.
+  truncation and roundoff. Exact status comes from the symbolic closure of all
+  12 local configurations; the convergence-ratio and budget gates account for
+  the observed floating deviation numerically within their stated tolerances.
 - **Scope.** Two box sizes (L = 3, 7), the landed template set, the supplied
   compiler constants. No continuum statement, no statement about other pair
   types' stencil families beyond the {0, −4} face-diagonal family used by the
@@ -300,11 +302,11 @@ The primary runner linked above is a finite exhaustive and symbolic check using
 stdlib, numpy, and sympy. Gate groups: substitution
 dichotomy over all 24 frames; incidence decomposition with bit-for-bit entry
 match; exact symbolic per-simplex values with a perturbed-background rejector;
-FD provenance (convergence ratios and closed error budget); swap census over
+FD provenance (convergence ratios and finite error budget); swap census over
 all 18 mixed frames at both box sizes with bitwise comparator uniformity;
 frame-uniform rounded census; sextet cross-checks (plus branch 7.1e-15, minus
 branch 1.2e-10, identity frame exactly 0.0). It writes a JSON receipt with
-coarse-precision values only and ends with `TOTAL: PASS=53 FAIL=0`.
+coarse-precision values only and ends with `TOTAL: PASS=55 FAIL=0`.
 
 ## Citations
 
@@ -323,9 +325,9 @@ coarse-precision values only and ends with `TOTAL: PASS=53 FAIL=0`.
 ## Review record
 
 Independent review narrowed two earlier refutation-style boundary sentences to
-the positive finite witnesses actually executed at L = 3 and L = 7. No
-localization no-go and no lattice-wide integrality refutation lands here. The
-load-bearing Cycle-696 source closure is now explicit and cache-bound.
+the positive finite witnesses actually executed at L = 3 and L = 7; no broader
+scientific conclusion is attached to those witnesses. The load-bearing
+Cycle-696 source closure is now explicit and cache-bound.
 
 Outstanding at landing, as hard landing conditions: (1) the exact heads of
 predecessor PRs #5892 and #5895 must already be contained in `origin/main`; (2)

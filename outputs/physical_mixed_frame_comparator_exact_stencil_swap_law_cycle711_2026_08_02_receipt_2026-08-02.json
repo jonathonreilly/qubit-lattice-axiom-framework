@@ -243,6 +243,14 @@
       "detail": "both-clean ceiling 2.8e+00 matches 2*sqrt(2) within 2.0e-07",
       "pass": true
     },
+    "c6_census_counts_L3": {
+      "detail": "full rounded-value multiplicities equal the preregistered census",
+      "pass": true
+    },
+    "c6_census_counts_L7": {
+      "detail": "full rounded-value multiplicities equal the preregistered census",
+      "pass": true
+    },
     "c6_census_frame_uniform_L3": {
       "detail": "rounded census of entries above 2: [(-4, 64), (-3, 224), (-2, 136), (2, 136), (3, 224), (4, 64)]",
       "pass": true
@@ -286,6 +294,6 @@
     "emax_L3": "4.0e+00",
     "emax_L7": "4.0e+00"
   },
-  "pass": 53,
+  "pass": 55,
   "runner": "physical_mixed_frame_comparator_exact_stencil_swap_law_cycle711_2026_08_02.py"
 }

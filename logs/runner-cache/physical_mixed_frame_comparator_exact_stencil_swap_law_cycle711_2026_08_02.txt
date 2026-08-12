@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/physical_mixed_frame_comparator_exact_stencil_swap_law_cycle711_2026_08_02.py
-runner_sha256: 5f839399dd4f09c0ec162b35870469a995d59ae501a30e5064f002e479e36a4d
+runner_sha256: 8d822e318a6f503028e52e37252eb235842a33eeb7dae873c681516bccc8a3bb
 input_fingerprint_sha256: f16228dfa22ac9810d4cc316446c432694b1b6d39236992c2bac39c9cf2f5eab
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 52.79
+elapsed_sec: 51.07
 status: ok
 ----- stdout -----
 c711 exact stencil swap law behind the mixed-frame comparator
@@ -45,6 +45,7 @@ PASS c5_all_swaps_L3 every argmax entry is an assembled 0 <-> -4 swap
 PASS c5_exact_family_coverage_L3 argmax nonzero sides use all and only the 12 symbolically closed configs
 PASS c5_one_substituted_endpoint_L3 face-face pairs, exactly one substituted endpoint, orientations {True: 1152, False: 1152}
 PASS c6_census_frame_uniform_L3 rounded census of entries above 2: [(-4, 64), (-3, 224), (-2, 136), (2, 136), (3, 224), (4, 64)]
+PASS c6_census_counts_L3 full rounded-value multiplicities equal the preregistered census
 PASS c6_census_keys_L3 swap family values
 PASS c6_both_clean_sqrt8_L3 both-clean ceiling 2.8e+00 matches 2*sqrt(2) within 2.0e-07
 PASS c6_offint_sqrt12_L3 largest integer distance 4.6e-01 matches 2*sqrt(3) - 3
@@ -55,6 +56,7 @@ PASS c5_all_swaps_L7 every argmax entry is an assembled 0 <-> -4 swap
 PASS c5_exact_family_coverage_L7 argmax nonzero sides use all and only the 12 symbolically closed configs
 PASS c5_one_substituted_endpoint_L7 face-face pairs, exactly one substituted endpoint, orientations {True: 31104, False: 31104}
 PASS c6_census_frame_uniform_L7 rounded census of entries above 2: [(-4, 1728), (-3, 4896), (-2, 4056), (2, 4056), (3, 4896), (4, 1728)]
+PASS c6_census_counts_L7 full rounded-value multiplicities equal the preregistered census
 PASS c6_census_keys_L7 swap family values
 PASS c6_both_clean_sqrt8_L7 both-clean ceiling 2.8e+00 matches 2*sqrt(2) within 2.0e-07
 PASS c6_offint_sqrt12_L7 largest integer distance 4.6e-01 matches 2*sqrt(3) - 3
@@ -62,7 +64,7 @@ PASS c5_emax_bitwise_size_stable same comparator bit pattern at both box sizes
 PASS c7_sextet_ceilings plus branch 7.1e-15 minus branch 1.2e-10
 PASS c7_identity_exact_zero identity frame defect exactly 0.0
 PASS c7_supplied_constants tick multiplier and FD step as supplied by the compiler
-TOTAL: PASS=53 FAIL=0
+TOTAL: PASS=55 FAIL=0
 
 ----- stderr -----
 

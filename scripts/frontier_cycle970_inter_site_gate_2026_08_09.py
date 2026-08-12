@@ -143,6 +143,72 @@ def _mutates_semantics_alias(tree: ast.Module, alias: str) -> bool:
     return False
 
 
+def _basis_semantics_ast(
+    tree: ast.Module,
+    *,
+    x_argument: str,
+    state_name: str,
+) -> dict:
+    functions = {
+        node.name: node for node in tree.body
+        if isinstance(node, ast.FunctionDef)
+    }
+    x_function = functions.get("x")
+    cn_function = functions.get("cn")
+    apply_function = functions.get("apply_semantic")
+    x_return = next(
+        (node.value for node in x_function.body if isinstance(node, ast.Return)), None
+    ) if x_function is not None else None
+    cn_return = next(
+        (node.value for node in cn_function.body if isinstance(node, ast.Return)), None
+    ) if cn_function is not None else None
+    x_update = None
+    cnot_update = None
+    if apply_function is not None:
+        for node in ast.walk(apply_function):
+            if not isinstance(node, ast.If):
+                continue
+            update = next(
+                (item for item in node.body if isinstance(item, ast.AugAssign)), None
+            )
+            if ast.unparse(node.test) == "gate.kind == 'X'":
+                x_update = update
+            elif ast.unparse(node.test) == "gate.kind == 'CNOT'":
+                cnot_update = update
+    x_constructor_ok = (
+        x_return is not None
+        and ast.unparse(x_return) == f"Gate('X', ({x_argument},))"
+    )
+    cn_constructor_ok = (
+        cn_return is not None
+        and ast.unparse(cn_return) == "Gate('CNOT', (control, target))"
+    )
+    x_update_ok = (
+        x_update is not None
+        and isinstance(x_update.op, ast.BitXor)
+        and ast.unparse(x_update.target) == f"{state_name}[gate.wires[0]]"
+        and isinstance(x_update.value, ast.Constant)
+        and x_update.value.value == 1
+    )
+    cnot_update_ok = (
+        cnot_update is not None
+        and isinstance(cnot_update.op, ast.BitXor)
+        and ast.unparse(cnot_update.target) == f"{state_name}[gate.wires[1]]"
+        and ast.unparse(cnot_update.value) == f"{state_name}[gate.wires[0]]"
+    )
+    return {
+        "x_shape": ast.unparse(x_return) if x_return is not None else "",
+        "cn_shape": ast.unparse(cn_return) if cn_return is not None else "",
+        "x_update": ast.unparse(x_update) if x_update is not None else "",
+        "cnot_update": ast.unparse(cnot_update) if cnot_update is not None else "",
+        "x_constructs_single_wire_gate": x_constructor_ok,
+        "cn_constructs_control_target_cnot": cn_constructor_ok,
+        "x_is_target_xor_one": x_update_ok,
+        "cnot_is_target_xor_control": cnot_update_ok,
+        "pass": x_constructor_ok and cn_constructor_ok and x_update_ok and cnot_update_ok,
+    }
+
+
 def substrate_semantics_evidence() -> dict:
     """Bind Cycle 719's exported A alias to Cycle 715 without importing it."""
     edges = []
@@ -184,46 +250,19 @@ def substrate_semantics_evidence() -> dict:
     semantics_tree = ast.parse(
         (ROOT / SEMANTICS_PATH).read_text(encoding="utf-8"), filename=SEMANTICS_PATH
     )
-    functions = {
-        node.name: node for node in semantics_tree.body
-        if isinstance(node, ast.FunctionDef)
-    }
-    cn_function = functions.get("cn")
-    apply_function = functions.get("apply_semantic")
-    cn_return = next(
-        (node.value for node in cn_function.body if isinstance(node, ast.Return)), None
-    ) if cn_function is not None else None
-    cnot_update = None
-    if apply_function is not None:
-        for node in ast.walk(apply_function):
-            if isinstance(node, ast.If) and ast.unparse(node.test) == "gate.kind == 'CNOT'":
-                cnot_update = next(
-                    (item for item in node.body if isinstance(item, ast.AugAssign)), None
-                )
-                break
-    cn_ok = (
-        cn_return is not None
-        and ast.unparse(cn_return) == "Gate('CNOT', (control, target))"
+    semantics = _basis_semantics_ast(
+        semantics_tree, x_argument="target", state_name="state"
     )
-    update_ok = (
-        cnot_update is not None
-        and isinstance(cnot_update.op, ast.BitXor)
-        and ast.unparse(cnot_update.target) == "state[gate.wires[1]]"
-        and ast.unparse(cnot_update.value) == "state[gate.wires[0]]"
-    )
-    semantics = {
-        "path": SEMANTICS_PATH,
-        "cn_shape": ast.unparse(cn_return) if cn_return is not None else "",
-        "cnot_update": ast.unparse(cnot_update) if cnot_update is not None else "",
-        "cn_constructs_control_target_cnot": cn_ok,
-        "cnot_is_target_xor_control": update_ok,
-        "pass": cn_ok and update_ok,
-    }
+    semantics["path"] = SEMANTICS_PATH
+    local_tree = ast.parse(Path(__file__).read_text(encoding="utf-8"), filename=__file__)
+    local = _basis_semantics_ast(local_tree, x_argument="wire", state_name="output")
+    local["path"] = str(Path(__file__).resolve().relative_to(ROOT.resolve()))
     return {
         "alias_edges": edges,
         "cycle715_semantics": semantics,
-        "local_semantics_equivalent": cn_ok and update_ok,
-        "pass": all(edge["pass"] for edge in edges) and cn_ok and update_ok,
+        "local_semantics": local,
+        "local_semantics_equivalent": semantics["pass"] and local["pass"],
+        "pass": all(edge["pass"] for edge in edges) and semantics["pass"] and local["pass"],
     }
 
 

@@ -1,193 +1,320 @@
-# The local move structure of the single cell's least-cost cuttings — Cycle 734
+# Finite move structure at one supplied cell's four-column cost floor
 
 Date: 2026-08-04
 
 Claim type: bounded_theorem
 
-Authority: none. Audit: unset. Constitutional effect: none. This cycle edits no
-axiom, foundation, Qualification, primitive, registry, policy, queue,
-audit-status, or PR-control surface. No new axiom or primitive is proposed or
-adopted.
+Authority: none. Audit: unset. Constitutional effect: none. No axiom or
+primitive is proposed or adopted. Cycle 734 of the emergent-geometry lane.
 
-The object is one cell of the lattice carried through one tick of emergent time: the
-four-cube on the sixteen corners of `{0,1}^4`, whose three spatial columns and single
-tick column are the columns the axioms of
-[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) supply, with nearest
-neighbour adjacency only and the proper cubic rotations alone kept. A piece is a five
-corner simplex of the cell of least volume; the cost of a piece counts the pairs of its
-corners more than one lattice step apart, and the cost of a cutting is the sum over its
-pieces. Earlier cycles measured the floor of that cost on this cell. This cycle asks what
-freedom a cutting has once it sits at the floor, and answers by complete search: the floor
-is not locally adjustable on two pieces or on three, the smallest cost keeping change
-replaces exactly four, that change is a flip between the two least cuts of one of five
-regions, and the cuttings at the floor stay in separate groups until moves on ten pieces
-are allowed. Every statement below is a check in whole numbers over an explicit finite
-set; no solver is used, and no two pieces are called separate without a plane exhibited
-and verified in whole numbers.
+Primary runner:
+[`scripts/physical_least_cost_cutting_flip_and_move_ladder_cycle734_2026_08_04.py`](../scripts/physical_least_cost_cutting_flip_and_move_ladder_cycle734_2026_08_04.py)
+(31 PASS / 0 FAIL, fail-closed), with canonical cache
+[`logs/runner-cache/physical_least_cost_cutting_flip_and_move_ladder_cycle734_2026_08_04.txt`](../logs/runner-cache/physical_least_cost_cutting_flip_and_move_ladder_cycle734_2026_08_04.txt)
+and receipt
+[`outputs/physical_least_cost_cutting_flip_and_move_ladder_cycle734_2026_08_04_receipt_2026-08-04.json`](../outputs/physical_least_cost_cutting_flip_and_move_ladder_cycle734_2026_08_04_receipt_2026-08-04.json).
 
-## The least volume forces the piece count
+Independent checker:
+[`scripts/physical_least_cost_cutting_flip_and_move_ladder_cycle734_independent_check_2026_08_04.py`](../scripts/physical_least_cost_cutting_flip_and_move_ladder_cycle734_independent_check_2026_08_04.py)
+(11 PASS / 0 FAIL, fail-closed), with canonical cache
+[`logs/runner-cache/physical_least_cost_cutting_flip_and_move_ladder_cycle734_independent_check_2026_08_04.txt`](../logs/runner-cache/physical_least_cost_cutting_flip_and_move_ladder_cycle734_independent_check_2026_08_04.txt)
+and receipt
+[`outputs/physical_least_cost_cutting_flip_and_move_ladder_cycle734_independent_check_2026_08_04_receipt_2026-08-04.json`](../outputs/physical_least_cost_cutting_flip_and_move_ladder_cycle734_independent_check_2026_08_04_receipt_2026-08-04.json).
 
-Over all 4368 five corner subsets of the cell the volumes run
-`[(0, 1360), (1, 2672), (2, 320), (3, 16)]` in units of one over 24. The least nonzero
-value is one such unit, so a piece of least volume is one part in 24 of the cell, and a
-cutting of the cell into pieces of least volume has exactly 24 of them. This is measured
-over the whole set of five corner subsets, not imposed: the 2672 pieces are the ones the
-spectrum selects. The same fact fixes the shape of any local move — a hole left by
-removing `k` pieces can only be refilled by `k` pieces.
+## Supplied model and premise boundary
 
-The adjacency charge over the 2672 pieces runs
-`[(3, 64), (4, 384), (5, 1152), (6, 768), (7, 304)]`, and every piece matrix inverts
-exactly over the integers.
+Every result below is a theorem of a **supplied finite structural model**, not
+of the framework axioms alone. The model chooses the unit four-cube, its
+five-corner normalized-volume-one simplex pieces, exact interior-disjoint
+24-piece dissections, and a four-coordinate pair charge.
 
-## A corner inside a piece is a corner of that piece, and what buys it
+- The **Lattice** axiom in
+  [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) supplies only
+  spatial `Z^3` nearest-neighbour adjacency and the 24 proper cubic rotations.
+- The registered
+  [`KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md`](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md)
+  supplies only equal tick/edge graining. It does not select a physical cell or
+  provide a rule-to-tick correspondence.
+- The four-cube, normalized-volume-one corner-simplex class, exact dissection
+  rule, and charge counting corner pairs whose full four-coordinate `L1`
+  separation exceeds one are declared inputs. This is **not** the spatial-only
+  Cycle-725/Cycle-731 charge.
+- The physical tick–Admissibility bridge and physical assembly-cell–simplex
+  bridge remain open.
 
-Because a piece matrix inverts exactly over the integers, a corner of the cell read
-against a piece gives whole numbers. A corner lying in the closed piece then has all but
-one of those numbers zero, so it is one of the piece's own corners. Over all 2672 pieces
-the corners lying inside are exactly the five of the piece itself. This makes a candidate
-filter on the sixteen corner bits exactly sound, which is what the searches below rely on.
+The landed
+[`PHYSICAL_EXACT_ADJACENCY_DISSECTION_BRACKET_CYCLE725_NOTE_2026-08-03.md`](PHYSICAL_EXACT_ADJACENCY_DISSECTION_BRACKET_CYCLE725_NOTE_2026-08-03.md)
+is prior authority for the supplied cell and minimal-piece convention. The
+landed
+[`PHYSICAL_COLUMN_FAMILY_PARITY_LAW_FORCED_ORBITS_CYCLE733_NOTE_2026-08-04.md`](PHYSICAL_COLUMN_FAMILY_PARITY_LAW_FORCED_ORBITS_CYCLE733_NOTE_2026-08-04.md)
+is prior authority for the same four-column charge and its cost-144 floor. The
+present runners independently reconstruct every object and count they use.
+Cycles 731 and 732 are chronological context only; no certificate, support,
+witness, or theorem from them is consumed.
 
-The scope of that argument was tested rather than assumed, and the test moved the claim.
-The whole numbers are what the least volume buys: all 336 five corner sets of volume two
-or three read some corner in fractions, so the route through integrality does belong to
-the least volume. The conclusion does not. Of those same 336 sets, 0 reach past their own
-corners. So the containment statement holds at every nondegenerate volume here, and only
-the proof by whole numbers is special. The note claims the narrower fact.
+## What this settles
 
-## The floor, the cuttings that reach it, and that they really cut the cell
+In the declared model there are exactly 15,800 cost-144 dissections. Among all
+`C(15800,2)=124,812,100` pairs of these minimizers, the number of replaced
+pieces takes the exact values
 
-One piece costs `[(6, 400), (7, 1216), (8, 864), (9, 192)]`. A complete search over the
-400 pieces of least cost visits 502838 nodes and finds 15800 cuttings, each of 24 pieces,
-so the floor 144 is reached. Those cuttings between them use 192 of the 400 pieces of
-least cost, filling 4 whole families of the cell symmetry; the remaining pieces of least
-cost appear in no cutting at the floor.
+```text
+4, 6, 7, ..., 24
+```
 
-An exact cover of sample points is not by itself a cutting of the cell. It becomes one
-here: each of the 15168 pairs of pieces sharing a cutting is pushed apart by a plane
-exhibited and checked in whole numbers, so the 24 pieces of a cutting meet only on their
-boundaries, and, carrying between them the volume of the cell, they fill it.
+with 5 absent. The smallest cost-preserving change therefore replaces four
+pieces, and there are 46,128 such unordered pairs. The absence of distances 1,
+2, and 3 also proves that no cost-preserving re-cut of one, two, or three pieces
+connects two floor dissections. This conclusion comes from the complete
+minimizer-distance census, not from treating an incidence-compatible candidate
+as automatically geometric.
 
-## No move on two pieces keeps the cost
+Connect minimizers when they differ in at most `k` pieces. For cumulative
+thresholds `k=4,...,10`, the exact component counts are
 
-Over the 15168 pairs the corners in common run
-`[(0, 2976), (1, 5280), (2, 5376), (3, 1248), (4, 288)]`. Exactly 288 of the pairs can be
-refilled a second way, and they are exactly the pairs meeting in four corners. The six
-corners of such a pair carry one relation, and that relation puts two corners of weight
-one on each side and leaves two out, recorded as `[((2, 2, 2), 288)]`: the four corners
-that move are the corners of a flat square, and the move re-cuts that square along its
-other diagonal. Recutting it always costs more, by `[(1, 192), (2, 96)]`. So the square
-re-cut, the one local move the cell offers on two pieces, never preserves the floor.
+```text
+349, 349, 157, 61, 61, 13, 1.
+```
 
-## No move on three pieces keeps the cost, and the fills that exist cost more
+Thus the finite minimizer graph becomes connected at threshold ten. This is a
+property of these 15,800 model dissections; it is not a mixing-time, dynamical,
+or arbitrary-domain theorem.
 
-Of the 649600 triples of pieces sharing a cutting, 40512 admit a second refill at all,
-and 0 admit one by three pieces of least cost. This is stated as a positive measurement
-rather than an absence: the second refills that do exist cost
-`[(19, 27264), (20, 14592), (21, 384)]`, every one of them strictly above the floor 18 for
-three pieces of least cost. Every three piece re-cut therefore costs more, and by at
-least one unit.
+Every four-piece edge replaces one of 120 eight-corner regions. Under the
+carried order-48 action those regions form five families of sizes
+`12,12,24,24,48`. Each region has either 2 or 24 genuine four-piece geometric
+refills after adjoining the unchanged 20-piece complement, and exactly two of
+those refills have local cost 24. Swapping these two floor refills is an
+involution and accounts for all 46,128 four-piece minimizer edges.
 
-Taken with the previous section this fixes the local picture. A move that exchanges two
-pieces for two, or three for three, is the only kind the volume permits at those sizes,
-since the hole from `k` pieces takes exactly `k` back. Both are measured here and neither
-keeps the cost. So the smallest cost keeping change is not a single local re-cut of that
-kind; it is a composite.
+## Exact finite objects
 
-## The smallest change replaces four pieces, and the population is wide
+The unit four-cube has 16 corners and 4,368 five-corner subsets. Exact
+determinants give normalized-volume spectrum
+`0:1360, 1:2672, 2:320, 3:16`. The declared piece class contains the 2,672
+volume-one simplices, so every dissection in that class has 24 pieces. Coarser
+pieces exist and are excluded by the declared class; they are not impossible.
 
-Over all 124812100 pairs of cuttings at the floor the number of pieces they differ in
-takes the values `[4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23,
-24]` — never one, two, three or five. The smallest is 4, reached 46128 times. At the other
-end of the same range 29069284 pairs share no piece at all, counted a second way by
-listing which cuttings each piece belongs to.
+For a piece, the four-column charge counts corner pairs whose `L1` separation
+across all four coordinates exceeds one. Its spectrum is
+`6:400, 7:1216, 8:864, 9:192`. Every dissection has 24 pieces, so 144 is a lower
+bound; the complete exact-cover search finds 15,800 attaining dissections and
+therefore proves the floor. They use 192 of the 400 cost-six pieces, filling
+four complete orbits of the carried action.
 
-The two absences have different standing and the note keeps them apart. That one, two and
-three do not occur is proved by the two sections above, which examine every pair and every
-triple. That five does not occur is measured, by a census that is complete because its
-entries sum to the number of pairs of cuttings.
+The carried action is 24 proper spatial cubic rotations times reversal of the
+fourth coordinate. It has order 48 and partitions all pieces into 57 orbits of
+sizes 16 and 48. It is not called the full four-cube symmetry group.
 
-Allowing moves on up to four, then five, and so on to ten pieces, the cuttings at the
-floor sit in `[349, 349, 157, 61, 61, 13, 1]` groups within reach of one another. The
-ladder is flat from four to five and again from seven to eight, and reaches a single group
-only at ten. So the floor is locally rigid and globally connected, and the two facts do
-not conflict: nearly a quarter of all pairs of cuttings at the floor share no piece, while
-no pair differs in fewer than four.
+The generic sample chamber has 2,736 points, common integer denominator 12,810,
+and zero piece-boundary incidences. Sample-point exact cover is used as a search
+index, not as the final geometric predicate. Across the minimizer population,
+15,168 piece pairs co-occur; every one is verified by an integer separating
+hyperplane. Their unit volumes sum to the cell volume, so all 15,800 covers are
+genuine dissections.
 
-## The smallest move is a rigid flip on one of five regions
+## Two- and three-piece candidate refills
 
-The 46128 smallest moves re-cut 120 regions with 120 distinct corner sets, each holding 8
-corners and reaching both values in all four columns. Up to the symmetry of the cell there
-are 5 such regions, in families of sizes `[12, 12, 24, 24, 48]`.
+Among the 15,168 co-occurring pairs, shared-corner counts are
+`0:2976, 1:5280, 2:5376, 3:1248, 4:288`. Exactly the 288 pairs sharing four
+corners have a second incidence-compatible two-piece refill. Their six-corner
+Radon relation has two `+1`, two `-1`, and two zero coefficients. After the
+unchanged 22-piece complement is adjoined, all 288 alternate refills pass the
+full geometric dissection predicate. Their local costs rise by one in 192 cases
+and by two in 96; none preserves the floor.
 
-A region holds `[8, 32]` pieces and cuts into four in `[2, 24]` ways, of which exactly 2
-reach its own floor 24. The regions of a family are used equally often, `[10, 478]` times
-each; the family holding only 8 pieces is the rigid one, used 240 times in all, sitting at
-the low end of both ranges above.
+The submitted runner called 649,600 pairwise co-occurrence graph triangles
+“triples sharing a cutting.” Review found that 13,568 are spurious cliques:
+their three pairs occur in minimizers, but no single minimizer contains all
+three. The repaired exact count is 636,032 genuine shared-cutting triples.
 
-Swapping the two floor cuts of a region carries a cutting at the floor to another and back
-46128 times, exactly the number of smallest moves. So every smallest move is that swap,
-and the swap is an involution on the cuttings at the floor: the local freedom of a cutting
-at the floor is a binary switch for each region it happens to fill. Whether those switches
-can be thrown independently of one another is not measured here.
+Of those genuine triples, 40,512 have an incidence-compatible second three-piece
+refill candidate. Candidate local costs are `19:27264, 20:14592, 21:384`, above
+the three-piece floor 18. These candidate counts are explicitly incidence
+counts; the note does not promote all of them to geometric re-cuts. The exact
+absence of a cost-preserving three-piece move is already independently closed by
+the complete minimizer-distance census, which contains no distance three.
 
-## Independent cross-checks performed
+## Smallest regions and flip law
 
-The numbers in this section come from checks run outside the paired runner, by methods the
-runner does not use; the runner does not print them.
+The 46,128 four-piece minimizer edges determine 120 distinct region corner
+supports, each with eight corners and extent in all four coordinates. The five
+carried region-family sizes are `12,12,24,24,48`. Depending on the family, a
+region exposes 8 or 32 candidate pieces and has 2 or 24 genuine four-piece
+geometric refills. Exactly two genuine refills attain local cost 24 in every
+region.
 
-Each headline was re-derived a second way. The volume spectrum was recomputed by
-fraction-free elimination rather than cofactor expansion and agreed. The corner statement
-was recomputed by floating solve verified in whole numbers rather than by the adjugate,
-giving 13360 corners inside and no mismatch. The cuttings were found again by a complete
-search with the opposite pivot rule, which visits 496849 nodes rather than 502838 and
-returns the identical set of 15800. Those cuttings decompose into 391 families of the cell
-symmetry, of sizes 8, 12, 24 and 48, matching the family count measured in the previous
-cycle by a different route. The triples were counted again as one sixth of the trace of
-the cube of the co-occurrence matrix. The distance census was recomputed from posting
-lists and the ladder by depth-first labelling rather than by merging. The region families
-were recomputed from stabiliser orders, and the count of smallest moves recomputed by
-counting the cuttings that contain one floor cut of each region.
+Each four-piece edge removes one floor refill and inserts the other. Conversely,
+whenever a minimizer contains one of the two floor refills, the swap returns
+another minimizer, and swapping back restores the original. The 46,128 verified
+applications equal the complete four-piece edge count. The note does not claim
+that flips in overlapping regions are independent, commuting, or dynamically
+available without a coordination rule.
 
-Each check was also perturbed, to confirm it would fail if the object it tests were wrong.
-A cost reading one column alone is not constant on the piece families — it varies inside
-40 of the 57 — so constancy is a fact about the adjacency cost and not about the families.
-Admitting the mirror turns as well gives a group of 96 elements and collapses the pieces
-to 36 families rather than 57, so the family count depends on keeping only the proper
-rotations, exactly as the lattice axiom does. The boundary test applied to the sixteen
-corners flags 37680 of 42752 readings, well past the 13360 forced by a piece holding its
-own corners. The fraction test that separates the volumes flags 0 of the 2672 pieces of
-least volume, so flagging all 336 larger sets is a fact about those sets. The separation
-test refuses every one of 159 sampled pairs of pieces that genuinely share an interior
-point. Dropping the single most used piece, which carries 1975 cuttings, leaves 13825
-rather than 15800. Of the 1248 pairs meeting in three corners, 0 admit a second fill.
-There are 12862 eight corner sets reaching both values in all four columns, of which only
-120 are regions, so being a region is a strong condition and not a generic one. In all 120
-regions the two floor cuts hold four pieces each and share none, so the flip moves exactly
-four. Finally the cuttings meet the pieces 379200 times, matching 15800 cuttings of 24.
+## Independent reconstruction and hostile controls
 
-The perturbation of the corner statement is the check that changed the note. Its first
-form assumed the containment conclusion belonged to the least volume, and measurement
-refuted that: the conclusion holds at volume two and three as well. What the least volume
-buys is the reading in whole numbers. The claim in the body was narrowed to the measured
-scope, and the runner now measures and prints both halves.
+The independent checker imports and executes no primary implementation. It
+uses a separate Leibniz determinant expansion, pure coordinate action, exact
+integer inverse acceptance, and the opposite (largest uncovered point) pivot in
+its complete exact-cover search. That search visits 496,849 nodes rather than
+the primary's 502,838 and returns the identical 15,800-dissection set.
+
+Its 11 gates independently reconstruct all headline finite objects, including:
+
+- 15,168 exactly separated co-occurring pairs;
+- 649,600 pairwise graph triangles split into 636,032 genuine shared-cutting
+  triples and 13,568 spurious cliques;
+- the full 124,812,100-pair distance spectrum and component ladder;
+- 120 regions in the five carried families; and
+- genuine region refill counts 2/24 with exactly two floor refills each.
+
+Hostile controls raise the charge of one cost-six piece, removing it from the
+complete floor-search pool, and duplicate a simplex in a minimizer, destroying
+the declared dissection cardinality. The primary separately rejects a
+one-unit expected floor mutation and verifies all alternate two- and four-piece
+geometric refills. Both runners fail closed.
 
 ## Boundary and honest read
 
-The pool of 192 pieces is measured by the search, not derived from a symmetry statement,
-and the same holds for the 5 region shapes and their family sizes. They are complete for
-this cell and this cost, and the note claims nothing beyond that.
+- The theorem is only for normalized-volume-one corner simplices in one supplied
+  cell with the declared four-column pair charge.
+- The 15,800 minimizers, distance spectrum, component ladder, 120 regions, five
+  region families, and flip count are exact only for this population.
+- The two-piece alternatives and four-piece region refills pass genuine
+  geometry. The three-piece refill spectrum is only an incidence-compatible
+  candidate census; it is not called a geometric refill census.
+- The no-one/two/three-piece cost-preserving statement quantifies over pairs of
+  floor dissections in the complete census. It says nothing about nonminimum
+  dissections or another cost.
+- Connectivity at threshold ten is graph connectivity, not a local physical
+  process, energy barrier, ergodicity rate, or independence of flips.
+- No physical tick, framework Admissibility, physical assembly-cell selection,
+  noncorner/coarser piece class, multi-cell domain, arbitrary extent, boundary,
+  thermodynamic, or continuum claim is made.
 
-Every count here is scoped to the single cell of one lattice step and one tick, with the
-adjacency cost and the least volume as defined above. No statement is made about cells of
-other extent, other adjacency, other costs, or about the lattice as a whole; a claim of
-that kind would need its own measurement. In particular the flat ladder steps and the
-group count 1 at ten pieces are properties of this population of 15800 cuttings.
+## Dependencies
 
-The absence of a cost keeping move on two or three pieces is proved on this cell by
-examining every pair and every triple. It does not by itself say what the largest local
-re-cut is that a cutting away from the floor admits, nor whether the four piece flip is
-the smallest move for costs above the floor. Both are open and neither is touched here.
+- [Minimal axioms](MINIMAL_AXIOMS_2026-06-29.md) — spatial adjacency and proper
+  cubic rotations only.
+- [Kinetic-isotropy primitive](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md) —
+  equal tick/edge graining only.
+- [Cycle 725 exact one-cell bracket](PHYSICAL_EXACT_ADJACENCY_DISSECTION_BRACKET_CYCLE725_NOTE_2026-08-03.md) —
+  prior authority for the supplied cell and minimal-piece convention only.
+- [Cycle 733 column-family parity law](PHYSICAL_COLUMN_FAMILY_PARITY_LAW_FORCED_ORBITS_CYCLE733_NOTE_2026-08-04.md) —
+  prior authority for the four-column charge and cost-144 floor; all used
+  objects are reconstructed locally.
 
-Time enters only as the fourth column of the cell. Nothing in this cycle selects a
-direction along it, and the tick flip is kept in the symmetry group throughout, so no
-result here depends on an arrow.
+## Proof-obligation disposition
+
+CONDITIONAL. The finite census, distance graph, region classification, and flip
+law are exact on the supplied model. Any physical reading is conditional on the
+two open bridges above.
+
+## Review record
+
+The submitted branch passed its own 28 gates, but review found four material
+evidence/scope defects: it treated 649,600 pairwise graph triangles as genuine
+shared-cutting triples; it promoted sample-incidence refill candidates to
+geometric re-cuts without adjoining the unchanged complement; it presented the
+four-coordinate cost as if axioms supplied it; and it lacked fail-closed exit,
+canonical caches, an independent checker, and a complete No-Go Discipline
+packet. The repair separates the 13,568 spurious cliques, checks two- and
+four-piece alternatives as complete geometric dissections, scopes the
+three-piece spectrum to incidence candidates, declares the supplied-model
+boundary, generates receipts, and adds independent reconstruction. No audit
+verdict is authored or applied.
+
+## No-Go Discipline Gate
+
+This N1–N8 record covers two retained exact finite exclusions: (A) no pair of
+floor dissections differs in one, two, or three pieces; and (B) the minimizer
+graph is not connected below cumulative threshold ten. No universal `no_go`
+claim ships. The primary cache contains the five required N5 resolution lines.
+
+**N1 — Alternative route enumeration.** Every route is marked `ATTEMPTED` and
+executed in the landed runners.
+
+1. `ATTEMPTED` — complete minimizer-distance route: enumerate all 124,812,100
+   pairs and observe minimum distance four, with no 1/2/3.
+2. `ATTEMPTED` — exact two-piece geometry route: exhaust all co-occurring pairs,
+   construct every alternative, adjoin 22 unchanged pieces, and show all 288
+   genuine alternatives increase cost.
+3. `ATTEMPTED` — genuine-triple route: intersect solution-membership bitsets to
+   remove 13,568 spurious graph cliques before pricing candidate refills.
+4. `ATTEMPTED` — opposite-pivot route: independently enumerate the identical
+   15,800 minimizers with a search visiting a different node count.
+5. `ATTEMPTED` — integer distance-matrix route: independently rebuild the full
+   distance spectrum and cumulative component ladder.
+6. `ATTEMPTED` — region-complement route: independently adjoin each unchanged
+   20-piece complement and verify every 2/24 region refill geometrically.
+7. `ATTEMPTED` — posting-list disjointness route: independently reproduce the
+   29,069,284 distance-24 pairs from exact solution incidence.
+8. `ATTEMPTED` — hostile mutation route: alter a minimum piece charge and
+   duplicate a simplex; both cross their protected finite surfaces.
+
+**N2 — Wall-independence audit.** The six open walls are NF (nonfloor
+dissections), OC (other costs), PC (other piece classes), TR (physical
+tick–Admissibility), SI (physical assembly-cell–simplex identification), and DE
+(other domains or limits).
+
+| pair | first→second | second→first | independent? | reason |
+|---|---|---|---|---|
+| NF–OC | no | no | yes | classifying nonminimizers for this cost does not classify another cost, or conversely |
+| NF–PC | no | no | yes | nonminimum moves and changing the piece class are separate censuses |
+| NF–TR | no | no | yes | finite graph structure does not realize a physical tick |
+| NF–SI | no | no | yes | nonfloor classification does not identify framework cells |
+| NF–DE | no | no | yes | one-cell nonminimum structure does not extend the domain |
+| OC–PC | no | no | yes | changing the charge does not select the dissection class |
+| OC–TR | no | no | yes | another finite cost does not supply a rule-to-tick bridge |
+| OC–SI | no | no | yes | a cost convention and physical cell identification are distinct |
+| OC–DE | no | no | yes | another one-cell cost does not imply multi-cell structure |
+| PC–TR | no | no | yes | another piece class does not realize physical time |
+| PC–SI | no | no | yes | choosing pieces does not identify physical assembly cells |
+| PC–DE | no | no | yes | another one-cell class does not prove domain extension |
+| TR–SI | no | no | yes | rule-to-tick and cell-shape bridges are distinct |
+| TR–DE | no | no | yes | physical tick realization does not prove arbitrary-domain combinatorics |
+| SI–DE | no | no | yes | identifying one cell does not extend the finite proof |
+
+No wall automatically closes another; the collapsed set remains six.
+
+**N3 — Hidden-wall scan.** The cell, volume normalization, piece class,
+dissection predicate, four-coordinate charge, acting group, sample chamber,
+floor population, move metric, and graph threshold convention are explicit.
+“Local” means replacement cardinality inside this finite dissection population;
+it is not framework locality. Sample cover is never promoted to geometry without
+separator checks. No canonical, natural, obvious, or standard-physics premise
+is hidden.
+
+**N4 — Residual matching.** The no-small-move exclusion matches the complete
+pair-distance residual: minimum four. The connectivity threshold matches the
+exact cumulative component residual `349,349,157,61,61,13,1`. The two- and
+four-piece geometric checks match their respective unchanged complements.
+None of these residuals speaks about nonfloor states, other costs, other piece
+classes, physical cells, or larger domains.
+
+**N5 — Rhetoric audit.** Primary cached stdout records `per_element` for all
+2,672 pieces, `per_site` for one supplied coordinate cell, `per_mode` not
+executed because the model has no modes, `per_block` for the complete finite
+minimizer/move/region censuses, and `lattice_wide` not executed with no
+lattice-wide negative asserted.
+
+**N6 — Partial-closure path scan.** NF closes by enumerating named higher-cost
+levels; OC and PC close by rebuilding the exact proof for declared alternatives;
+TR and SI may be imported by later bounded theorems and retired only by
+theorem/audit; DE closes by an exact larger-domain reconstruction. Flip
+independence can be studied through the overlap graph without any new axiom.
+
+**N7 — Steelman.** A nonminimum dissection may admit a smaller preserving re-cut;
+another charge or piece class may have distance-one moves; and a larger domain
+may remain disconnected beyond ten. Those are concrete live routes. They do not
+alter the complete finite distance or component census for this population.
+
+**N8 — Cross-cycle echo.** Cycles 725 and 731 required the lane to distinguish
+the supplied corner-simplex model from physical assembly and to avoid treating
+sample-point cover as geometric dissection. This review applies both lessons:
+the model boundary is explicit, graph cliques are separated from genuine
+co-occurrence, and candidate refills are priced at their actual evidence level.
+
+**Status: PASS.** All eight checks are answered; all eight N1 routes are
+`ATTEMPTED`; the complete N2 pair table lands; N5 resolution lines land in the
+canonical primary cache; and no universal negative remains.

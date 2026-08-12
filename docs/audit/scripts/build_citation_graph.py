@@ -245,6 +245,13 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
         "scripts/physical_parity_certificate_cost_spectrum_cycle732_"
         "independent_check_2026_08_04.py",
     ],
+    # Cycle 734's checker independently rebuilds the complete floor-dissection
+    # population with the opposite exact-cover pivot, genuine co-occurrence,
+    # integer distance graph, and geometric region-refill census.
+    "physical_least_cost_cutting_flip_and_move_ladder_cycle734_note_2026-08-04": [
+        "scripts/physical_least_cost_cutting_flip_and_move_ladder_cycle734_"
+        "independent_check_2026_08_04.py",
+    ],
     "b4_clock_relation_run_cycle879_bounded_theorem_note_2026-07-28": [
         "scripts/frontier_cycle879_b4_relation_independent_check_2026_07_28.py",
     ],

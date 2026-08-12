@@ -1,0 +1,56 @@
+===== runner cache v1 =====
+runner: scripts/physical_adjacency_admissible_assembly_trade_cycle723_2026_08_03.py
+runner_sha256: 45cc789d0721e329ce6c71c1b78c54490b68ea363ea92d25f675a6eae0800a94
+input_fingerprint_sha256: f16228dfa22ac9810d4cc316446c432694b1b6d39236992c2bac39c9cf2f5eab
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 8.82
+status: ok
+----- stdout -----
+[PASS] slot_uses_total 240 slot-uses of which 120 are purely spatial
+[PASS] spatial_slot_split spatial 120 = 72 axis + 36 face-diagonal + 12 body-diagonal
+[PASS] footprint_census slot-uses by spatial footprint weight 0/1/2/3 = 24/108/72/36
+[PASS] distinct_slots_per_cell 65 distinct slots per cell = 8/36/18/3 by footprint weight
+[PASS] slot_uses_exceeding_adjacency 108 of 240 slot-uses and 21 of 65 distinct slots exceed 6-NN adjacency
+[PASS] six_nn_pairs_three_corners at most 2 of the 3 slots of a nondegenerate corner triangle are 6-NN
+[PASS] six_nn_pairs_four_corners an affinely independent corner quadruple reaches 3; the rejector, a dependent one, reaches 4
+[PASS] corner_simplex_census_complete 3008 nondegenerate corner 4-simplices among all 4368 corner 5-subsets
+[PASS] exceeding_floor_every_tick_split every nondegenerate corner 4-simplex carries at least 3 exceeding slots, at all four splits
+[PASS] no_adjacency_only_five_corner_simplex that floor is positive, so no five-corner simplex in the supplied model is adjacency-only
+[PASS] path_stencil_attains_spatial_floor spatial-only floor 3/1/1/3 by tick split, and the path stencil realizes exactly 3/1/1/3
+[PASS] path_stencil_exceeds_footprint_floor the path stencil carries 5/4/4/5 exceeding slots against the floor 3/3/3/3
+[PASS] facet_forcing_law a corner 4-simplex meets the tick-0 hyperplane in a 3-face exactly when 4 corners lie there
+[PASS] cone_volume_relation an extreme-split simplex is a cone whose 24-fold volume equals its base facet's 6-fold volume
+[PASS] facet_corner_tetrahedra 58 nondegenerate corner tetrahedra of a cell facet, of 6-fold volume 1 and 2
+[PASS] facet_corner_dissections 182 corner dissections of a cell facet, of sizes 5 and 6
+[PASS] facet_dissection_exceeding_floor every corner dissection of a facet carries at least 18 exceeding slots
+[PASS] interior_volume_bookkeeping the two cone families take 6 volume units each, leaving 12 for simplices of size at most 3
+[PASS] unit_cell_corner_dissection_floor any complete one-cell corner-simplex dissection carries at least 48 exceeding slot-uses; the path stencil carries 108
+[PASS] floor_and_spatial_count_are_distinct_quantities the floor and the stencil's spatial-only count are different counts that happen to agree
+[PASS] assembled_form_is_cell_local no coupling of the assembled form reaches past one cell; largest entry there 0.000000e+00
+[PASS] partition_sizes 446 slot variables split into 270 adjacency-admissible and 176 exceeding
+[PASS] exceeding_block_scanned_flat_counts on the three scanned rows, discarded directions match cells times ticks: L=3 LT=2 gives 16, L=3 LT=3 gives 24, L=4 LT=2 gives 54
+[PASS] near_flat_eigenvalue_and_mixed_coupling_bounds flat eigenvalues below 1.0e-05; their coupling to the admissible slots below 1.0e-04
+[PASS] cutoff_classification_is_stable the discarded-mode count is unchanged when the supplied cutoff moves from 1e-6 to 1e-4
+[PASS] live_block_is_well_conditioned softest live eigenvalue 1.5900e-01 and 4.8367e-02; condition number 1.83e+02 and 6.00e+02
+[PASS] cutoff_pseudoinverse_quadratic_identity the cutoff-pseudoinverse reduced form reproduces its constructed full quadratic value, deviation below 1.0e-12
+[PASS] cutoff_reduction_rejector a uniformly shifted cutoff-reduced form breaks that identity at 8.608e-04
+[PASS] discarded_mode_stationarity_residual the constructed vector is not exactly stationary: D-gradient norm 3.147189e-06, max 1.333344e-06
+[PASS] deletion_horn_discarded_share deleting the exceeding slots discards 0.529 of the form at L=3 and 0.547 at L=4
+[PASS] cutoff_reduction_generates_range cutoff-reduced form past one cell: 0.235 at L=3; 0.160 at range 2 and 0.304 at range 3 at L=4
+[PASS] range_is_generated_not_inherited largest past-cell entry: assembled form 0.000000e+00, cutoff-reduced form 6.318
+[PASS] cell_local_share_of_cutoff_reduced_form cutoff-reduced form at L=3 carries 0.400 on-site and 0.886 at range 1
+[PASS] frame_label_of_the_full_form full form: 6 spatial stabilizers at both tick shifts and 8 proper-frame classes
+[PASS] frame_label_survives_deletion deleted form has the identical stabilizer members and proper-frame partition
+[PASS] frame_partition_survives_cutoff_reduction cutoff-reduced form has the identical stabilizer members and proper-frame partition
+N5 EXECUTION CERTIFICATE
+per_element: all 4368 five-corner subsets and all 58 facet tetrahedra are resolved exactly in integer arithmetic
+per_site: no separate site theorem is claimed; slot uses are counted only inside one supplied tick-extended unit cell
+per_mode: the supplied cutoff classifies the three finite Q_DD spectra; discarded-mode couplings and the nonzero stationarity residual are reported
+per_block: all 182 carried facet dissections and the full/deleted/cutoff-reduced matrices at L=3,4 are resolved at stated tolerances
+lattice_wide: unresolved; no arbitrary-L, multi-cell, refined-cell, nonsimplicial, boundary-free, or continuum obstruction is claimed
+RECEIPT {"assembled_form_past_cell_entry": "0.000000e+00", "cutoff_reduced_form_past_cell_entry": "6.318", "cutoff_reduced_share_by_range": {"L3": {"0": "0.400", "1": "0.886", "2": "0.235"}, "L4": {"0": "0.428", "1": "0.836", "2": "0.160", "3": "0.304"}}, "deletion_discarded_share": {"L3": "0.529", "L4": "0.547"}, "discarded_mode_gradient_max": "1.333344e-06", "discarded_mode_gradient_norm": "3.147189e-06", "distinct_slots_by_footprint_weight": [8, 36, 18, 3], "exceeding_floor_by_tick_split": [3, 3, 3, 3], "facet_corner_dissections": 182, "facet_corner_tetrahedra": 58, "facet_dissection_exceeding_floor": 18, "flat_directions": {"L3_LT2": 16, "L3_LT3": 24, "L4_LT2": 54}, "gates": {"fail": 0, "pass": 36}, "live_condition_number": {"L3_LT2": "1.83e+02", "L3_LT3": "1.83e+02", "L4_LT2": "6.00e+02"}, "nondegenerate_corner_4_simplices": 3008, "quadratic_identity_relative_deviation": "7.400e-16", "shifted_reduction_rejector_deviation": "8.608e-04", "slot_uses_by_footprint_weight": [24, 108, 72, 36], "softest_live_eigenvalue": {"L3_LT2": "1.5900e-01", "L3_LT3": "1.5900e-01", "L4_LT2": "4.8367e-02"}, "spatial_axis_face_body": [72, 36, 12], "spatial_floor_by_tick_split": [3, 1, 1, 3], "stencil_exceeding_by_tick_split": [5, 4, 4, 5], "symmetry_members_and_frame_blocks": {"L3": [12, 8], "L4": [12, 8]}, "unit_cell_corner_dissection_floor": 48}
+TOTAL: PASS=36 FAIL=0
+
+----- stderr -----
+

@@ -1,14 +1,14 @@
 """Cycle 723 - adjacency-admissible assembly and the excess-slot trade.
 
-Every edge slot of the tick-extended assembly is partitioned by its SPATIAL FOOTPRINT
+Every edge slot of the tick-extended assembly is partitioned by its spatial-footprint
 weight: the L1 weight of the spatial part of the slot's direction. Weight 0 is a
-same-site slot, weight 1 is a nearest-neighbour slot of the LATTICE axiom's own 6-NN
+same-site slot, weight 1 is a nearest-neighbour slot of the Lattice axiom's own 6-NN
 adjacency, and weight 2 or more exceeds that adjacency. The runner measures
 
-  (a) how much of the assembly stencil sits above adjacency, and whether any corner
-      stencil at all could avoid it, and
+  (a) how much of the assembly stencil sits above adjacency, and whether any
+      five-corner simplex in the supplied one-cell model could avoid it, and
   (b) what the assembled second-variation form does when the exceeding slots are
-      deleted, and when they are eliminated instead.
+      deleted, and when the supplied cutoff pseudoinverse is applied instead.
 
 The combinatorial half is exact integer arithmetic over a complete enumeration of
 corner subsets. The assembly half reuses the open-coframe endpoint compiler.
@@ -19,8 +19,19 @@ import itertools
 import json
 import os
 import sys
+from fractions import Fraction
+from pathlib import Path
 
 import numpy as np
+
+AUDIT_INPUT_PATHS = (
+    "scripts/physical_open_coframe_k_endpoint_compiler_cycle696_2026_07_25.py",
+    "scripts/physical_dynamical_metric_source_law_bridge_tournament_cycle576_2026_07_22.py",
+    "scripts/physical_dynamical_metric_source_law_bridge_cycle576_regge_support_2026_07_22.py",
+    "scripts/physical_dynamical_metric_source_law_bridge_cycle576_plaquette_support_2026_07_22.py",
+    "scripts/frontier_cubic_coxeter_regge_second_variation_3plus1_2026_06_09.py",
+)
+AUDIT_TIMEOUT_SEC = 300
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -39,6 +50,10 @@ C4 = [tuple(v) for v in itertools.product((0, 1), repeat=4)]
 C3 = [tuple(v) for v in itertools.product((0, 1), repeat=3)]
 FLAT_TOL = 1.0e-5
 SYM_TOL = 1.0e-6
+RECEIPT_PATH = Path(ROOT) / "outputs" / (
+    "physical_adjacency_admissible_assembly_trade_cycle723_2026_08_03_"
+    "receipt_2026-08-03.json"
+)
 
 PASS = 0
 FAIL = 0
@@ -78,10 +93,44 @@ def stp(p, q):
     return tuple(abs(p[i] - q[i]) for i in range(4))
 
 
+def det_int(M):
+    """Exact determinant by the Leibniz formula (dimensions here are at most four)."""
+    n = len(M)
+    out = 0
+    for p in itertools.permutations(range(n)):
+        inv = sum(p[a] > p[b] for a in range(n) for b in range(a + 1, n))
+        term = -1 if inv % 2 else 1
+        for a in range(n):
+            term *= int(M[a][p[a]])
+        out += term
+    return out
+
+
+def rank_int(M):
+    """Exact rational row rank for the small corner-incidence matrices."""
+    A = [[Fraction(int(x)) for x in row] for row in M]
+    if not A:
+        return 0
+    r = 0
+    for c in range(len(A[0])):
+        pivot = next((q for q in range(r, len(A)) if A[q][c]), None)
+        if pivot is None:
+            continue
+        A[r], A[pivot] = A[pivot], A[r]
+        z = A[r][c]
+        A[r] = [x / z for x in A[r]]
+        for q in range(len(A)):
+            if q != r and A[q][c]:
+                z = A[q][c]
+                A[q] = [A[q][j] - z * A[r][j] for j in range(len(A[0]))]
+        r += 1
+    return r
+
+
 def vol24(P):
-    """Twenty-four times the volume of a corner 4-simplex, as an exact integer."""
-    M = np.array([[P[t][c] - P[0][c] for c in range(4)] for t in range(1, 5)], dtype=np.int64)
-    return abs(int(round(float(np.linalg.det(M)))))
+    """Twenty-four times the volume of a corner 4-simplex, exactly."""
+    M = [[P[t][c] - P[0][c] for c in range(4)] for t in range(1, 5)]
+    return abs(det_int(M))
 
 
 def cross(a, b):
@@ -161,9 +210,9 @@ for msz in (3, 4):
     bi, bd = 0, 0
     for comb in itertools.combinations(range(8), msz):
         P = [C3[i] for i in comb]
-        M = np.array([[P[t][c] - P[0][c] for c in range(3)] for t in range(1, msz)], dtype=float)
+        M = [[P[t][c] - P[0][c] for c in range(3)] for t in range(1, msz)]
         e = sum(1 for i, j in itertools.combinations(range(msz), 2) if foot(P[i], P[j]) == 1)
-        if int(np.linalg.matrix_rank(M)) == msz - 1:
+        if rank_int(M) == msz - 1:
             bi = max(bi, e)
         else:
             bd = max(bd, e)
@@ -208,8 +257,8 @@ chk("corner_simplex_census_complete", len(SIMS) == 3008,
     "{0} nondegenerate corner 4-simplices among all 4368 corner 5-subsets".format(len(SIMS)))
 chk("exceeding_floor_every_tick_split", [nfloor[k] for k in (1, 2, 3, 4)] == [3, 3, 3, 3],
     "every nondegenerate corner 4-simplex carries at least 3 exceeding slots, at all four splits")
-chk("no_adjacency_only_corner_stencil", min(nfloor.values()) > 0,
-    "that floor is positive, so no corner assembly stencil is adjacency-only")
+chk("no_adjacency_only_five_corner_simplex", min(nfloor.values()) > 0,
+    "that floor is positive, so no five-corner simplex in the supplied model is adjacency-only")
 chk("path_stencil_attains_spatial_floor",
     [sfloor[k] for k in (1, 2, 3, 4)] == [3, 1, 1, 3]
     and [sorted(ksp[k]) for k in (1, 2, 3, 4)] == [[3], [1], [1], [3]],
@@ -218,7 +267,7 @@ chk("path_stencil_exceeds_footprint_floor",
     [sorted(kex[k]) for k in (1, 2, 3, 4)] == [[5], [4], [4], [5]],
     "the path stencil carries 5/4/4/5 exceeding slots against the floor 3/3/3/3")
 
-# ------------------------------ section 3: facet forcing and the global floor
+# --------------------------- section 3: facet forcing and the unit-cell floor
 
 chk("facet_forcing_law",
     all(kfaces[k] == set([0]) for k in (1, 2, 3)) and kfaces[4] == set([1]),
@@ -292,8 +341,8 @@ chk("facet_dissection_exceeding_floor", dna == 18,
     "every corner dissection of a facet carries at least 18 exceeding slots")
 chk("interior_volume_bookkeeping", vmax23 == 3 and vinner == 12 and ninner == 4,
     "the two cone families take 6 volume units each, leaving 12 for simplices of size at most 3")
-chk("global_corner_stencil_floor", gfloor == 48 and uses[2] + uses[3] == 108,
-    "any corner stencil carries at least {0} exceeding slot-uses; the path stencil carries {1}".format(
+chk("unit_cell_corner_dissection_floor", gfloor == 48 and uses[2] + uses[3] == 108,
+    "any complete one-cell corner-simplex dissection carries at least {0} exceeding slot-uses; the path stencil carries {1}".format(
         gfloor, uses[2] + uses[3]))
 chk("floor_and_spatial_count_are_distinct_quantities",
     gfloor == spat[2] + spat[3] and gfloor != uses[2] + uses[3],
@@ -392,7 +441,7 @@ for _perm in itertools.permutations(range(3)):
         for _i in range(3):
             _A[_i, _perm[_i]] = _sg[_i]
         SIGNED.append(_A)
-PROPER = [A for A in SIGNED if round(float(np.linalg.det(A))) == 1]
+PROPER = [A for A in SIGNED if det_int(A.tolist()) == 1]
 
 
 def extents(keys, sel):
@@ -428,25 +477,32 @@ def keymap(keys, L, LT, A, k):
     return mp
 
 
-def nsym(keys, L, LT, M):
-    n = 0
-    for A in SIGNED:
+def stabilizer_signature(keys, L, LT, M):
+    """Exact member labels of the tolerance-resolved signed/tick stabilizer."""
+    out = []
+    for ai, A in enumerate(SIGNED):
         for k in range(LT):
             mp = keymap(keys, L, LT, A, k)
             if mp is not None and np.abs(M[np.ix_(mp, mp)] - M).max() < SYM_TOL:
-                n += 1
-                break
-    return n
+                out.append((ai, k))
+    return tuple(out)
 
 
-def nlabels(keys, L, LT, M):
+def frame_partition(keys, L, LT, M):
+    """Equivalence partition of the 24 proper-frame transforms."""
     reps = []
-    for A in PROPER:
+    blocks = []
+    for ai, A in enumerate(PROPER):
         mp = keymap(keys, L, LT, A, 0)
         Mg = M[np.ix_(mp, mp)]
-        if not any(np.abs(Mg - R).max() < SYM_TOL for R in reps):
+        hit = next((j for j, R in enumerate(reps)
+                    if np.abs(Mg - R).max() < SYM_TOL), None)
+        if hit is None:
             reps.append(Mg)
-    return len(reps)
+            blocks.append([ai])
+        else:
+            blocks[hit].append(ai)
+    return tuple(sorted(tuple(block) for block in blocks))
 
 
 def split(keys):
@@ -479,6 +535,7 @@ chk("partition_sizes", (len(keys3), len(A3), len(D3)) == (446, 270, 176),
     "446 slot variables split into 270 adjacency-admissible and 176 exceeding")
 
 flat = {}
+flat_eigs = {}
 for (L, LT) in ((3, 2), (3, 3), (4, 2)):
     kk, QQ = assemble(L, LT, stencil((0, 0, 0)))
     AA, DD = split(kk)
@@ -487,15 +544,20 @@ for (L, LT) in ((3, 2), (3, 3), (4, 2)):
     dec = float(max(np.linalg.norm(QQ[np.ix_(AA, DD)] @ V[:, j]) for j in np.where(ker)[0]))
     flat[(L, LT)] = (int(ker.sum()), LT * (L - 1) ** 3, float(np.abs(w[ker]).max()), dec,
                      float(live.min()), float(live.max() / live.min()))
+    flat_eigs[(L, LT)] = w
 
-chk("exceeding_block_flat_count_law", all(flat[k][0] == flat[k][1] for k in flat),
-    "flat directions of the exceeding block number one per cell per tick: {0}".format(
+chk("exceeding_block_scanned_flat_counts", all(flat[k][0] == flat[k][1] for k in flat),
+    "on the three scanned rows, discarded directions match cells times ticks: {0}".format(
         ", ".join("L={0} LT={1} gives {2}".format(k[0], k[1], flat[k][0]) for k in sorted(flat))))
-chk("flat_directions_are_decoupled",
+chk("near_flat_eigenvalue_and_mixed_coupling_bounds",
     all(flat[k][2] < FLAT_TOL and flat[k][3] < 1.0e-4 for k in flat),
     "flat eigenvalues {0}; their coupling to the admissible slots {1}".format(
         bound(max(flat[k][2] for k in flat), FLAT_TOL),
         bound(max(flat[k][3] for k in flat), 1.0e-4)))
+chk("cutoff_classification_is_stable",
+    all(int((np.abs(flat_eigs[(L, LT)]) < tol).sum()) == flat[(L, LT)][0]
+        for L, LT in ((3, 2), (3, 3), (4, 2)) for tol in (1.0e-6, 1.0e-4)),
+    "the discarded-mode count is unchanged when the supplied cutoff moves from 1e-6 to 1e-4")
 chk("live_block_is_well_conditioned",
     all(flat[k][4] > 1.0e-2 and flat[k][5] < 1.0e4 for k in flat),
     "softest live eigenvalue {0:.4e} and {1:.4e}; condition number {2:.2e} and {3:.2e}".format(
@@ -510,12 +572,19 @@ zv[D3] = -(V3 @ (inv3 * (V3.T @ (Q3[np.ix_(A3, D3)].T @ xv))))
 rhs = float(zv @ Q3 @ zv)
 rel = abs(float(xv @ S3 @ xv) - rhs) / abs(rhs)
 relp = abs(float(xv @ (S3 + 1.0e-2 * np.eye(len(A3))) @ xv) - rhs) / abs(rhs)
+grad_d = Q3[np.ix_(D3, range(len(keys3)))] @ zv
+grad_d_norm = float(np.linalg.norm(grad_d))
+grad_d_max = float(np.abs(grad_d).max())
 
-chk("schur_stationarity_identity", rel < 1.0e-12,
-    "the eliminated form reproduces the stationary value of the full form, deviation {0}".format(
+chk("cutoff_pseudoinverse_quadratic_identity", rel < 1.0e-12,
+    "the cutoff-pseudoinverse reduced form reproduces its constructed full quadratic value, deviation {0}".format(
         bound(rel, 1.0e-12)))
-chk("schur_stationarity_rejector", relp > 1.0e-4,
-    "a uniformly shifted eliminated form breaks that identity at {0:.3e}".format(relp))
+chk("cutoff_reduction_rejector", relp > 1.0e-4,
+    "a uniformly shifted cutoff-reduced form breaks that identity at {0:.3e}".format(relp))
+chk("discarded_mode_stationarity_residual",
+    1.0e-8 < grad_d_norm < 1.0e-4 and grad_d_max < 1.0e-4,
+    "the constructed vector is not exactly stationary: D-gradient norm {0:.6e}, max {1:.6e}".format(
+        grad_d_norm, grad_d_max))
 
 rows = {}
 for (L, LT) in ((3, 2), (4, 2)):
@@ -527,35 +596,36 @@ for (L, LT) in ((3, 2), (4, 2)):
     tS = fro(S)
     sh = dict((int(e), fro(S[E == e]) / tS) for e in sorted(set(E.flatten())))
     kA = [kk[i] for i in AA]
+    fsig, fpart = stabilizer_signature(kk, L, LT, QQ), frame_partition(kk, L, LT, QQ)
+    dsig, dpart = stabilizer_signature(kA, L, LT, QAA), frame_partition(kA, L, LT, QAA)
+    esig, epart = stabilizer_signature(kA, L, LT, S), frame_partition(kA, L, LT, S)
     rows[L] = (1.0 - (fro(QAA) / fro(QQ)) ** 2, sh, float(np.abs(S[E >= 2]).max()),
-               nsym(kk, L, LT, QQ), nlabels(kk, L, LT, QQ),
-               nsym(kA, L, LT, QAA), nlabels(kA, L, LT, QAA),
-               nsym(kA, L, LT, S), nlabels(kA, L, LT, S))
+               fsig, fpart, dsig, dpart, esig, epart)
 
 chk("deletion_horn_discarded_share",
     0.5 < rows[3][0] < 0.6 and 0.5 < rows[4][0] < 0.6,
     "deleting the exceeding slots discards {0} of the form at L=3 and {1} at L=4".format(
         f3(rows[3][0]), f3(rows[4][0])))
-chk("elimination_horn_generates_range",
+chk("cutoff_reduction_generates_range",
     rows[3][1][2] > 0.2 and rows[4][1][2] + rows[4][1][3] > 0.3,
-    "eliminated form past one cell: {0} at L=3; {1} at range 2 and {2} at range 3 at L=4".format(
+    "cutoff-reduced form past one cell: {0} at L=3; {1} at range 2 and {2} at range 3 at L=4".format(
         f3(rows[3][1][2]), f3(rows[4][1][2]), f3(rows[4][1][3])))
 chk("range_is_generated_not_inherited", qbey == 0.0 and rows[3][2] > 1.0,
-    "largest past-cell entry: assembled form {0:.6e}, eliminated form {1:.3f}".format(
+    "largest past-cell entry: assembled form {0:.6e}, cutoff-reduced form {1:.3f}".format(
         qbey, rows[3][2]))
-chk("cell_local_share_of_eliminated_form",
+chk("cell_local_share_of_cutoff_reduced_form",
     abs(rows[3][1][0] - 0.400) < 0.002 and abs(rows[3][1][1] - 0.886) < 0.002,
-    "eliminated form at L=3 carries {0} on-site and {1} at range 1".format(
+    "cutoff-reduced form at L=3 carries {0} on-site and {1} at range 1".format(
         f3(rows[3][1][0]), f3(rows[3][1][1])))
 chk("frame_label_of_the_full_form",
-    (rows[3][3], rows[3][4], rows[4][3], rows[4][4]) == (6, 8, 6, 8),
-    "full form: symmetry count 6 and 8 frame labels at both box sizes")
+    all(len(rows[L][3]) == 12 and len(rows[L][4]) == 8 for L in (3, 4)),
+    "full form: 6 spatial stabilizers at both tick shifts and 8 proper-frame classes")
 chk("frame_label_survives_deletion",
-    (rows[3][5], rows[3][6], rows[4][5], rows[4][6]) == (6, 8, 6, 8),
-    "deleted form: symmetry count 6 and 8 frame labels at both box sizes")
-chk("frame_label_survives_elimination",
-    (rows[3][7], rows[3][8], rows[4][7], rows[4][8]) == (6, 8, 6, 8),
-    "eliminated form: symmetry count 6 and 8 frame labels at both box sizes")
+    all(rows[L][5] == rows[L][3] and rows[L][6] == rows[L][4] for L in (3, 4)),
+    "deleted form has the identical stabilizer members and proper-frame partition")
+chk("frame_partition_survives_cutoff_reduction",
+    all(rows[L][7] == rows[L][3] and rows[L][8] == rows[L][4] for L in (3, 4)),
+    "cutoff-reduced form has the identical stabilizer members and proper-frame partition")
 
 RECEIPT = {
     "slot_uses_by_footprint_weight": [uses[w] for w in range(4)],
@@ -568,24 +638,35 @@ RECEIPT = {
     "facet_corner_tetrahedra": len(TET),
     "facet_corner_dissections": len(SOLS),
     "facet_dissection_exceeding_floor": dna,
-    "global_corner_stencil_floor": gfloor,
+    "unit_cell_corner_dissection_floor": gfloor,
     "flat_directions": dict(("L{0}_LT{1}".format(k[0], k[1]), flat[k][0]) for k in sorted(flat)),
     "softest_live_eigenvalue": dict(
         ("L{0}_LT{1}".format(k[0], k[1]), "{0:.4e}".format(flat[k][4])) for k in sorted(flat)),
     "live_condition_number": dict(
         ("L{0}_LT{1}".format(k[0], k[1]), "{0:.2e}".format(flat[k][5])) for k in sorted(flat)),
     "deletion_discarded_share": {"L3": f3(rows[3][0]), "L4": f3(rows[4][0])},
-    "eliminated_share_by_range": {
+    "cutoff_reduced_share_by_range": {
         "L3": dict((str(e), f3(v)) for e, v in rows[3][1].items()),
         "L4": dict((str(e), f3(v)) for e, v in rows[4][1].items())},
     "assembled_form_past_cell_entry": "{0:.6e}".format(qbey),
-    "eliminated_form_past_cell_entry": "{0:.3f}".format(rows[3][2]),
-    "stationarity_relative_deviation": "{0:.3e}".format(rel),
-    "stationarity_rejector_deviation": "{0:.3e}".format(relp),
-    "symmetry_and_labels": {"full": [rows[3][3], rows[3][4]],
-                            "deleted": [rows[3][5], rows[3][6]],
-                            "eliminated": [rows[3][7], rows[3][8]]},
+    "cutoff_reduced_form_past_cell_entry": "{0:.3f}".format(rows[3][2]),
+    "quadratic_identity_relative_deviation": "{0:.3e}".format(rel),
+    "shifted_reduction_rejector_deviation": "{0:.3e}".format(relp),
+    "discarded_mode_gradient_norm": "{0:.6e}".format(grad_d_norm),
+    "discarded_mode_gradient_max": "{0:.6e}".format(grad_d_max),
+    "symmetry_members_and_frame_blocks": {
+        "L3": [len(rows[3][3]), len(rows[3][4])],
+        "L4": [len(rows[4][3]), len(rows[4][4])]},
+    "gates": {},
 }
+RECEIPT["gates"] = {"pass": PASS, "fail": FAIL}
+RECEIPT_PATH.write_text(json.dumps(RECEIPT, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+print("N5 EXECUTION CERTIFICATE")
+print("per_element: all 4368 five-corner subsets and all 58 facet tetrahedra are resolved exactly in integer arithmetic")
+print("per_site: no separate site theorem is claimed; slot uses are counted only inside one supplied tick-extended unit cell")
+print("per_mode: the supplied cutoff classifies the three finite Q_DD spectra; discarded-mode couplings and the nonzero stationarity residual are reported")
+print("per_block: all 182 carried facet dissections and the full/deleted/cutoff-reduced matrices at L=3,4 are resolved at stated tolerances")
+print("lattice_wide: unresolved; no arbitrary-L, multi-cell, refined-cell, nonsimplicial, boundary-free, or continuum obstruction is claimed")
 print("RECEIPT " + json.dumps(RECEIPT, sort_keys=True))
 print("TOTAL: PASS={0} FAIL={1}".format(PASS, FAIL))
 sys.exit(1 if FAIL else 0)

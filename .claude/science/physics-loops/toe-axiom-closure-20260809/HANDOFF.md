@@ -2009,3 +2009,43 @@ constraints under the positive two-TT update. Then test whether minimal range,
 exact Record-clock composition, or operational equivalence derives `r=0`. If
 not, prepare one exact extensional `L*` candidate for owner decision. Do not
 count another transfer variant or static source dictionary as TOE progress.
+
+## Block 52 Handoff
+
+Block 52 is local on branch
+`physics-loop/toe-axiom-closure-block52-record-worldline-20260811`, stacked
+exactly on Block-51 delivery head `12b9041de1`. It constructs the missing
+conserved source in one exact domain. A straight Record path stores each
+incoming cubic direction as an M2 involution; the local decoder occupancy
+minus outgoing degree cancels every permanent interior Record and leaves one
+active frontier. One extension transports that frontier across one edge.
+
+With `k=(1,e)` and `rho=1/(2sqrt(2))`, the extension carries symmetric rank-one
+Lorentz-null stress. All four columns obey exact continuity, the four
+contracted Gauss/Bianchi constraints propagate, and the spatial stress has a
+nonzero generic two-TT projection. This also corrects the source signature:
+the Block-49 `x+t` value is zero only under Euclidean trace reversal;
+Lorentzian null stress has temporal Ricci source `rho`.
+
+The causal test finds an exact tradeoff inside the Block-51 quadratic family.
+The direct unit-tick recurrence is UV-unstable for `r<1/6`, Jordan-marginal at
+`r=1/6`, and positive-energy stable for `r>1/6`. Every stable member's
+next-slice solve contains `(I+rL)^-1`, strictly dense at all separations. The
+continuous-time `r=0` Hamiltonian instead has a finite-range stable generator
+and quasilocal time-one map, with asynchronous Record events.
+
+Primary/cache is `PASS=14 FAIL=0`; all three process-local mutations exit
+nonzero. Citation registration is `5,498/15,745`, out-degree six. Vocabulary,
+strict lint, premise purity, Python/cache, staged typing, whitespace, forensic
+N5, and graph/link gates pass. Science commit is `6d76743d73`; PR #6145 is
+open, mergeable, and `CLEAN`. Independent audit remains required. No canonical
+axiom, fixed TOE percentage, audit verdict, or `review-loop` changes.
+
+The strongest live counterroute is now mandatory: build a two-or-more-substep
+Störmer--Verlet/operator-split or auxiliary-QCA macro tick. It must be
+full-zone positive, exactly finite radius, unit-speed at OS0, preserve trace,
+divergence and the four sourced constraints, and compose the conserved Record
+frontier. Quantify its macro causal radius and whether Record events occur per
+substep or macro step. If a depth-two solution works, the remaining issue is
+selection/clock semantics, not gravity feasibility; package that exact `L*`
+choice rather than another negative block.

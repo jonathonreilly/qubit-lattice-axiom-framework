@@ -976,3 +976,18 @@ process-local mutations fail nonzero; citation registration is
 `5,497/15,739`, out-degree seven. The N1--N8 packet and N5 execution
 certificate land with the science. No canonical axiom, fixed TOE percentage,
 audit verdict, or `review-loop` changes. Landing order adds #6144 after #6143.
+
+## Block 52
+
+PR #6145
+(`physics-loop/toe-axiom-closure-block52-record-worldline-20260811`) is open,
+mergeable, and `CLEAN`, stacked exactly on Block-51 delivery head
+`12b9041de1`. Its distinct review object is the M2 incoming-pointer worldline,
+local conserved frontier decoder, symmetric Lorentz-null four-current,
+signature-aware source correction, generic TT forcing, exact full-zone CFL
+threshold, dense stable-slice inverse, and continuous-time local-generator
+repair. Primary/cache is `PASS=14 FAIL=0`; three process-local mutations fail
+nonzero; citation registration is `5,498/15,745`, out-degree six. The N1--N8
+packet and N5 execution certificate land with the science. No canonical axiom,
+fixed TOE percentage, audit verdict, or `review-loop` changes. Landing order
+adds #6145 after #6144.

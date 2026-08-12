@@ -2400,3 +2400,31 @@ instance or Fourier census.
 - Science commit is `d1f83684b1`; PR #6144 is open, mergeable, and `CLEAN` on
   exact Block-50 delivery `45ac5e2ec3`. No canonical edit, fixed percentage,
   audit verdict, or `review-loop` occurs.
+
+## Block 52 Construction And Adversarial Record
+
+- Exhausted 24 proper frames, six directions, and prefix lengths zero through
+  six. Every straight prefix is self-avoiding/permanent and each M2 pointer is
+  Hermitian, traceless, involutive, and exactly decodes its cubic direction.
+- The local frontier decoder cancels every path interior. One `L=5` extension
+  moves unit source across an edge with exact `Delta J+div S=0`.
+- Built `T=rho k outer k`; it is symmetric, rank one, Lorentz-null, and all
+  four current columns close continuity and the contracted Gauss update
+  exactly. Generic TT source norm is `0.181758736`.
+- Separated Euclidean and Lorentzian trace reversal on the same `x+t` ray:
+  values are `0` and `0.353553391` respectively.
+- Proved `lambda_max=12/(1+12r)`. Full-zone controls give maxima
+  `12,6,4,3` at `r=0,1/12,1/6,1/4`; the threshold mode has Jordan growth
+  `32.031` by step 16, while `r=1/4,1` preserve positive energy.
+- Confirmed both stable temporal inverses are strictly dense on `L=5`; the
+  continuous-time repair has exactly seven generator entries per row while
+  both time-one kernels are dense.
+- Pointer-scale, leaky-incidence, and negative-energy mutations each exit
+  nonzero at their intended gates.
+- Primary/cache is `PASS=14 FAIL=0`; citation registration is
+  `5,498/15,745`, out-degree six. Vocabulary, strict lint, premise purity,
+  Python/cache, claim typing, whitespace, forensic readiness, and enforced
+  graph/link invariants pass.
+- Science commit is `6d76743d73`; PR #6145 is open, mergeable, and `CLEAN` on
+  exact Block-51 delivery `12b9041de1`. No canonical edit, fixed percentage,
+  audit verdict, or `review-loop` occurs.

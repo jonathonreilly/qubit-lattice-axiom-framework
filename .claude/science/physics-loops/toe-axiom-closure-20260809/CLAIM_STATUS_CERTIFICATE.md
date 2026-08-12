@@ -1698,3 +1698,32 @@ lines are in the landing primary cache.
   full-`Z^3` closure, axiom amendment, TOE percentage movement, or audit
   verdict. Fresh N1--N8 and all five N5 resolutions land; no `review-loop` is
   used.
+
+## Block 52 Claim Status
+
+- Record/source positive: straight proper-cubic path prefixes use Hermitian
+  traceless M2 incoming-pointer involutions. Occupancy minus outgoing degree
+  cancels every permanent interior Record and leaves exactly one frontier.
+- Stress/constraint positive: the frontier transition carries symmetric
+  rank-one Lorentz-null stress. All four current columns satisfy exact
+  continuity and the corresponding four contracted Gauss constraints are
+  preserved; its spatial stress has a nonzero generic TT projection.
+- Signature correction: the `x+t` Euclidean trace-reversed temporal source is
+  zero, while Lorentzian null stress has positive value `1/(2sqrt(2))`. A
+  physical source decoder must be signature aware.
+- Causal family boundary: the direct unit-tick recurrence has
+  `lambda_max=12/(1+12r)`, hence is unstable below `r=1/6`, Jordan-marginal at
+  equality, and positive-energy stable above it. Every stable `r>0` explicit
+  slice map uses a dense inverse. The continuous `r=0` Hamiltonian is a stable
+  finite-range-generator repair with a quasilocal time-one map.
+- Evidence: primary/cache `PASS=14 FAIL=0`; three process-local mutations exit
+  nonzero; graph `5,498/15,745`, out-degree six. Vocabulary, strict lint,
+  premise purity, Python/cache, claim typing, whitespace, forensic readiness,
+  and enforced graph/link invariants pass. Science commit is `6d76743d73`; PR
+  #6145 is open, mergeable, and `CLEAN` on exact Block-51 delivery
+  `12b9041de1`.
+- Scope: one straight null source plus a family-scoped causal cut, not a
+  massive/accelerated source, all finite-depth updates, nonlinear gravity,
+  selected clock/law, axiom amendment, TOE percentage movement, or audit
+  verdict. Fresh N1--N8 and all five N5 resolutions land; no `review-loop` is
+  used.

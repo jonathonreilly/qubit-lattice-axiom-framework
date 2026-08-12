@@ -1280,3 +1280,34 @@ complete conditional nonlinear compact solution:
   with `Delta J + div S = 0`, the full sourced linearized Bianchi/constraint
   intertwiner, and the positive two-TT update; test a derived minimal-range or
   Record-clock selector before preparing an exact `L*` owner-decision packet
+
+## Block 52 Artifact Plan
+
+- theorem note: encode one straight monotone Record history with local M2
+  incoming pointers, derive its active frontier and Lorentz-null conserved
+  stress, correct the Euclidean/Lorentzian source signature, and test whether
+  the Block-51 transfer family also supplies a stable finite-radius explicit
+  one-tick Lorentzian update
+- primary runner/cache: check 24 proper frames, six directions, 1,008 Record
+  prefixes, local frontier cancellation, one periodic transition, four stress
+  current columns, signature-aware trace reversal, four constraint fluxes, a
+  generic two-TT source projection, 4,913 full-zone modes at five `r` values,
+  stable/marginal energy forms, two dense temporal inverses, continuous-time
+  local-generator repair, exact-law boundary, and fresh N1--N8; achieved
+  `PASS=14 FAIL=0`
+- adversarial controls: process-local pointer-content scaling, leaky incidence,
+  and negative conserved energy each exit nonzero at their intended gates
+- no-go packet: restrict the negative to the Block-51 quadratic family under
+  unit-tick explicit-slice finite-radius and full-zone positive-energy
+  requirements; preserve smaller ticks, IR restriction, implicit action
+  locality, continuous Hamiltonians, splitting, auxiliary QCA, and other
+  spacetime actions
+- current evidence: science commit `6d76743d73`; PR #6145 is open, mergeable,
+  and `CLEAN` on exact Block-51 delivery `12b9041de1`; graph
+  `5,498/15,745`, out-degree six; vocabulary, strict lint, premise purity,
+  Python/cache, claim typing, whitespace, forensic N5, and enforced graph/link
+  checks pass; no TOE percentage moves
+- next artifact: construct the minimal two-substep symplectic or auxiliary-QCA
+  macro update and compose the conserved frontier kick; require a full-zone
+  positive state, exact finite radius, four constraints, two TT modes, unit
+  OS0 speed, and an explicit relation between substeps and Record events

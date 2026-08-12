@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/physical_cell_cutting_sixteen_census_cycle745_independent_check_2026_08_05.py
+runner_sha256: 7a5dad6f4f59c6498d50a0dd4a35e83a20dbd34e0c3eb89b2d743984d8b91e4f
+input_fingerprint_sha256: 3adceadf8904e3457823711223372179fd0dd8f8509f1b95dd93aa2f62abc78f
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 174.74
+status: ok
+----- stdout -----
+PASS independent.population  opposite-pivot exact covers reconstruct all 15800 rows on 192 used pieces
+PASS receipt.contract  the primary verdict, source, inputs, inventory and bounded claim are content-bound
+PASS independent.targets  all 18 canonical targets reconstruct; exactly the canonical odd control is inconsistent
+PASS independent.group  independent geometry plus verified seeded maps close to the same transitive order-384 action
+PASS independent.small_validation  an independently planted weight-sixteen target is recovered in its exact cell
+PASS independent.syndrome_dp  independent anchored syndrome DP/MITM exhausts 204 cells and 2004 splits for all six
+PASS hostile.positive_control  the independent search recovers a planted weight-sixteen target
+PASS hostile.inventory  deleting or redirecting one exact split invalidates the independent inventory
+PASS independent.complete  the primary anchored witnesses recheck inside the independent complete census
+PASS independent.census  all 132 witnesses recheck and independently fold 15 ways under 48 and 6 under 384
+PASS independent.controls  all five seeded size-16 controls independently reconstruct and hold the anchor
+PASS hostile.skipped_split  a skipped primary split invalidates the content-bound receipt
+PASS hostile.primary_source  a primary source mutation invalidates its runner hash
+PASS hostile.group  a non-permutation mutation of a seeded map is rejected
+PASS hostile.target  a local target-support mutation changes the exact reading and is rejected
+N5 per_element: checked -- all 192 columns enter each exact syndrome-DP split
+N5 per_site: checked -- one supplied 16-corner coordinate cell only
+N5 per_mode: checked and not executed -- this finite system has no modes
+N5 per_block: checked -- all 15800 rows reduce through an independent rank-88 basis
+N5 lattice_wide: checked and not executed -- no multicell or limiting claim
+RECEIPT outputs/physical_cell_cutting_sixteen_census_cycle745_independent_check_2026_08_05_receipt_2026-08-05.json
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

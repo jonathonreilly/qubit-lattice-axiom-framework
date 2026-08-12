@@ -1,11 +1,17 @@
 ===== runner cache v1 =====
 runner: scripts/physical_cell_cutting_sixteen_census_cycle745_2026_08_05.py
-runner_sha256: 30db70bc05f70248ba7b1623cef86e35cb64bfc04d85d56d643dae3cc2fab7f1
-timeout_sec: 600
+runner_sha256: c5bd4c42b97db472ba869beba47c42940c3f3ae1f9d0f883b59a49b3db456883
+input_fingerprint_sha256: 8c130f05374aa315c975be4382d1fa24ba3ee5c00d0824aa646294da9369b987
+timeout_sec: 900
 exit_code: 0
-elapsed_sec: 245.97
+elapsed_sec: 235.72
 status: ok
 ----- stdout -----
+PASS D01  Cycle 737 binds this exact incidence, order, and eight readings
+PASS D02  Cycle 741 primary and independent receipts bind complete emptiness through weight 14
+PASS ID01  the complete 124812100-pair census pins 46128 four-moves, 31968 six-moves, 120 four-move differences, and exactly the three normalized reading pairs
+PASS ID02  seventeen named targets are realizable; the odd-total synthetic rejector alone is not
+PASS ID03  every realizable target has a directly rechecked exact support witness
 PASS G0  the Gram matrix of the table has constant diagonal 1975
 PASS G1  all 15800 cuttings carry distinct piece supports
 PASS G2  the anchored and the two seeded colour refinements are all discrete
@@ -17,38 +23,46 @@ PASS G7  b1 fixes all eight readings
 PASS G8  b1 lies outside the 48, orbit rows (8,8,16,16) (8,8,16,16) (16,16,8,8) (16,16,8,8)
 PASS G9  b0 and b1 are different permutations
 PASS G10  the 48 together with b0 and b1 act on the 192 pieces with one orbit, transitive
-PASS G11  each charge and each planted reading forces even total, side, and quarter parities, and the synthetic reading forces an odd total
-PASS G12  the licensed cells of a charge count 5,14,30,55,91,140,204,285 at the even sizes two to sixteen, matching the closed sum, with consecutive odd squares as steps
-PASS G13  all six charges license the same 285 cells at sixteen, one pass covers the six
-PASS G14  the odd-total synthetic reading licenses no cell at sixteen
-PASS G15  the licensed cells at sixteen with a piece in the last quarter number 204, and the six charges and the five planted readings share exactly that list
+PASS G11  each realizable named nonconstant reading and each planted reading forces even total, side, and quarter parities
+PASS G12  the licensed cells of a named nonconstant reading count 5,14,30,55,91,140,204,285 at the even sizes two to sixteen, matching the closed sum, with consecutive odd squares as steps
+PASS G13  all six named nonconstant readings license the same 285 cells at sixteen, one pass covers the six
+PASS G14  the inconsistent odd-total synthetic target is rejected before licensing or search
+PASS G15  the licensed cells at sixteen with a piece in the last quarter number 204, and the six named nonconstant readings and the five planted readings share exactly that list
 PASS G16  the anchored tables list exactly the subsets through the anchor piece, row for row against direct column sums, with binomial row counts
 m=12 anchored control counts 0,0,0,0,0,0 splits 371
-PASS G17  the anchored search at twelve reproduces the earlier empty census for the six charges, every anchored licensed cell covered, all splits distinct
-m=16 anchored counts 11,0,0,0,0,0,2,6,12,1,3,0 splits 2004
+PASS G17  the anchored search at twelve reproduces the earlier empty census for the six readings, every anchored licensed cell and all 371 expected splits covered
+m=16 anchored counts 11,0,0,0,0,0,2,6,12,1,3 splits 2004
 PASS G18  the anchored search at sixteen runs every split within the table budget
 PASS G19  every anchored licensed cell at sixteen is covered for all eleven live readings and all splits are distinct
+PASS G19b  the executed anchored schedule equals the independently constructed 2004-split inventory in exact order
+PASS H01  deleting or redirecting one scheduled split invalidates the exact inventory
 PASS G20  every recorded set checks back against the columns, no duplicates
 PASS G21  every recorded set holds the anchor piece
-PASS G22  the search finds no set for the odd-total synthetic reading
+PASS G22  the non-column-space odd-total synthetic target cannot enter the carrier search
 PASS G23  all five planted anchored sixteen-piece controls are found by the search
 PASS G24  the four reading attains sixteen, consistent with the landed floor
-PASS G25  each of the 48 pairs with its cutting permutation on the table and fixes all six charge readings
+PASS G25  each of the 48 pairs with its cutting permutation on the table and fixes all six named algebraic readings
 PASS G26  the fifty generators close into a group of order 384 whose images of the anchor piece reach all 192 pieces
 the four reading: anchored slice 11 sets, census 132 sets
 PASS G27  the census is exactly twelve sets for each anchored one
 PASS G28  each of the 192 pieces lies in the same number of census sets as the anchor
 PASS G29  the anchored members of the reconstructed census are exactly the recorded slice, so the slice is stable under the group
 PASS G30  every census member re-checks directly against the incidence columns as a sixteen-piece carrier of the four reading, all distinct
-PASS G31  the anchored slices of the other five charges are empty, so their sixteen census is empty and, with odd sizes barred, their next open size is eighteen
+PASS G31  the anchored slices of the other five readings are empty, so their size-16 censuses are empty and, with prior sizes and odd sizes barred, 18 is next unsearched
 PASS G32  the census is a union of whole orbits under the 48 and under the full group
 census fold under the 48: 15 orbits sized {6:10,12:4,24:1}
 census fold under the full group: 6 orbits sized {12:3,24:2,48:1}
 elapsed under 500 s peak memory under 2500 MB
 PASS G33  the whole runner finishes under 900 seconds inside the printed 2500 MB
 PASS G34  its output stays under 5500 characters
+N5 per_element: checked -- every one of the 192 supplied columns is eligible
+N5 per_site: checked -- the claim concerns one supplied 16-corner cell only
+N5 per_mode: checked and not executed -- this finite system defines no modes
+N5 per_block: checked -- all 15800 cutting rows constrain every exact search
+N5 lattice_wide: checked and not executed -- no multicell or limit claim is made
+RECEIPT outputs/physical_cell_cutting_sixteen_census_cycle745_2026_08_05_receipt_2026-08-05.json
 
-TOTAL: PASS=35 FAIL=0
+TOTAL: PASS=42 FAIL=0
 
 ----- stderr -----
 

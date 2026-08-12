@@ -1,0 +1,94 @@
+{
+  "audit_status_authority": "independent audit lane only",
+  "checker_sha256": "7a5dad6f4f59c6498d50a0dd4a35e83a20dbd34e0c3eb89b2d743984d8b91e4f",
+  "claim_type": "bounded_theorem",
+  "exact_anchored_weight_sixteen_answers": {
+    "four": true,
+    "four-flip": false,
+    "seven": false,
+    "seven-flip": false,
+    "six": false,
+    "six-flip": false
+  },
+  "exact_anchored_weight_sixteen_counts": {
+    "four": 11,
+    "four-flip": 0,
+    "seven": 0,
+    "seven-flip": 0,
+    "six": 0,
+    "six-flip": 0
+  },
+  "exact_syndrome_dp": {
+    "anchor_column": 144,
+    "basis_rows": 88,
+    "elapsed_seconds": 169.53,
+    "executed_splits": 2004,
+    "execution_inventory_exact": true,
+    "execution_inventory_sha256": "3685e5ba4fcf3caad7f905dfc2bedcd37f92d9d2f67f9d958a9e0f69ae3d6175",
+    "expected_splits": 2004,
+    "licensed_cells": 204,
+    "max_join_rows": 21507024,
+    "max_part_rows": 12271512,
+    "peak_memory_mb": 1527.3
+  },
+  "gates": {
+    "fail": 0,
+    "named": {
+      "hostile.group": "PASS",
+      "hostile.inventory": "PASS",
+      "hostile.positive_control": "PASS",
+      "hostile.primary_source": "PASS",
+      "hostile.skipped_split": "PASS",
+      "hostile.target": "PASS",
+      "independent.census": "PASS",
+      "independent.complete": "PASS",
+      "independent.controls": "PASS",
+      "independent.group": "PASS",
+      "independent.population": "PASS",
+      "independent.small_validation": "PASS",
+      "independent.syndrome_dp": "PASS",
+      "independent.targets": "PASS",
+      "receipt.contract": "PASS"
+    },
+    "pass": 15
+  },
+  "input_sha256": {
+    "docs/PHYSICAL_CELL_CUTTING_FOURTEEN_FRONTIER_CYCLE741_NOTE_2026-08-05.md": "9e23f3bc4617a4fb989a4ae64aaa56f885a3ae1d3050df9e79ecaf69090066b7",
+    "docs/PHYSICAL_CELL_CUTTING_LEAST_COMPUTING_SETS_CYCLE737_NOTE_2026-08-05.md": "eab3120bdee580b4b54561740659ebe142bc543c95901c00fa71e04c7d558a5a",
+    "docs/PHYSICAL_CELL_CUTTING_SIXTEEN_CENSUS_CYCLE745_NOTE_2026-08-05.md": "03b00756f5db8c12e45644ba955e460a80b8c122fcc59005bbf60efbf30fbaf3",
+    "outputs/physical_cell_cutting_fourteen_frontier_cycle741_2026_08_05_receipt_2026-08-05.json": "fe2a3ab7615aef978cb38aa36b5e71b2e1e517ffacd496ad087ee01e0a150b98",
+    "outputs/physical_cell_cutting_fourteen_frontier_cycle741_independent_check_2026_08_05_receipt_2026-08-05.json": "592d2ed4e8566379c16b46d0b6c509d1418b7a9ae533e9320400e051239df9d6",
+    "outputs/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05_receipt_2026-08-05.json": "1088b2cf8aa99b9f4517fec84097b167ad6511df7f63943ee0f3f1e3240efb30",
+    "outputs/physical_cell_cutting_least_computing_sets_cycle737_independent_check_2026_08_05_receipt_2026-08-05.json": "1590f37efa5a093869177ded29941d9e02856856cfae51edf0264d829939b5c4",
+    "outputs/physical_cell_cutting_sixteen_census_cycle745_2026_08_05_receipt_2026-08-05.json": "d7e1d9040269614b6a04406debfadfebddb481fe1ff680be127f1420f07f8bbd",
+    "scripts/physical_cell_cutting_fourteen_frontier_cycle741_2026_08_05.py": "8abd6cc44b5701897d4e8def30dc97339d30c4243cc55e410179d7e5e09022d7",
+    "scripts/physical_cell_cutting_fourteen_frontier_cycle741_independent_check_2026_08_05.py": "842e4b276daf6d82e516bf553b2bbe6ab844a58d28dce72b2763a9918507c25d",
+    "scripts/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05.py": "4943c2bd0d89099394c06555f065bbed93c2d536c87a8a131a483535f6b027cd",
+    "scripts/physical_cell_cutting_least_computing_sets_cycle737_independent_check_2026_08_05.py": "e452a7b00ba0fadf65949ad2fb3e7eed462905a0202bacdc494b2fe83e642c5e",
+    "scripts/physical_cell_cutting_sixteen_census_cycle745_2026_08_05.py": "c5bd4c42b97db472ba869beba47c42940c3f3ae1f9d0f883b59a49b3db456883"
+  },
+  "n5_execution_certificate": [
+    "per_element: checked -- all 192 columns enter each exact syndrome-DP split",
+    "per_site: checked -- one supplied 16-corner coordinate cell only",
+    "per_mode: checked and not executed -- this finite system has no modes",
+    "per_block: checked -- all 15800 rows reduce through an independent rank-88 basis",
+    "lattice_wide: checked and not executed -- no multicell or limiting claim"
+  ],
+  "population": {
+    "cuttings": 15800,
+    "rank": 88,
+    "used_pieces": 192
+  },
+  "primary_receipt_bound": true,
+  "schema": "physical-cell-cutting-sixteen-census-cycle745-independent-v1",
+  "status": "pass",
+  "target_identity_bound": true,
+  "verified_group": {
+    "anchor_orbit_size": 192,
+    "explicit_base_support_permutations_matched": true,
+    "explicit_support_column_corner_tuples_matched": true,
+    "generated_group_sha256": "5c189c2ae4548fc4dd27df75d7c2830ba6391b0433433b8220f4b24545bd7980",
+    "order": 384,
+    "ordered_generator_support_permutations_sha256": "1fe4dcaea2138c1aa874fd6b1eac1602592e2632b0d61c57cabc40ed7bff5381"
+  }
+}

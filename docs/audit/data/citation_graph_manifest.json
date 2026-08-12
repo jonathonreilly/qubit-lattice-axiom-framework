@@ -1,6 +1,6 @@
 {
- "edge_count": 15600,
- "node_count": 5486,
+ "edge_count": 15603,
+ "node_count": 5487,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -344,6 +344,10 @@
   },
   "adm2_global_su3_symmetry_reduces_action_form_bi_invariance_narrow_theorem_note_2026-06-08": {
    "deps_hash": "17b0cde87f4c",
+   "out_degree": 3
+  },
+  "admissibility_barycenter_evaluation_menu_kernel_bounded_theorem_note_2026-08-12": {
+   "deps_hash": "ae792f44891f",
    "out_degree": 3
   },
   "admissibility_global_measure_menu_kernel_type_separation_bounded_theorem_note_2026-08-10": {

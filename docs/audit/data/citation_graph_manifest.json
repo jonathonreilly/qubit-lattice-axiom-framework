@@ -1,6 +1,6 @@
 {
- "edge_count": 15562,
- "node_count": 5472,
+ "edge_count": 15565,
+ "node_count": 5473,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -13793,6 +13793,10 @@
   "physical_pair_kernel_minimal_position_extension_cycle698_note_2026-07-25": {
    "deps_hash": "32ac84e8f2ad",
    "out_degree": 4
+  },
+  "physical_parity_certificate_cost_spectrum_cycle732_note_2026-08-04": {
+   "deps_hash": "39d2f470b5f2",
+   "out_degree": 3
   },
   "physical_proper_cubic_covariance_ceiling_cycle690_note_2026-07-24": {
    "deps_hash": "e3b0c44298fc",

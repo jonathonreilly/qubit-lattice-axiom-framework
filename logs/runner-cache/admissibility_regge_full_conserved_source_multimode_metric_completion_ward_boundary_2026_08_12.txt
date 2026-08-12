@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_regge_full_conserved_source_multimode_metric_completion_ward_boundary_2026_08_12.py
+runner_sha256: ae27903c9bc265aec87d31413583ee0e0d14ebdcc4f07e64e25c4bb138f58597
+input_fingerprint_sha256: 5dadc83a10bbb3d46569a3d43496279d15f17c1872c5a73c748f485a0a0a364a
+timeout_sec: 480
+exit_code: 0
+elapsed_sec: 364.40
+status: ok
+----- stdout -----
+analytic_boundary: complete six-dimensional transverse source bases at k and 2k, response-normalized with an explicit invertible physical-source Gram map, plus all 21 equal-mode and 36 k-plus-2k bilinear pairs
+physical_boundary: one skew collinear momentum ray and its first two harmonics; not a uniform angular, noncollinear-mode, observable, or nonlinear evolution theorem
+batch_equivalence: absolute=1.510e-14 relative=1.591e-11
+tensor_result: L=145 k=0.162134667 sourceWard=3.66e-17 orth=1.08e-15 residual=1.24e-14 sourceCond=1.848840 sourceScaled=[0.497824,0.928345] equal F/k2=28.270417212 W/k3=4.491406795 frac=0.062231 cross F/k2=72.736229042 W/k3=14.998618278 frac=0.160324 reactionWard=9.64e-16 seconds=82.1
+tensor_result: L=193 k=0.121811019 sourceWard=1.67e-17 orth=8.42e-16 residual=1.20e-14 sourceCond=1.852942 sourceScaled=[0.500319,0.931563] equal F/k2=28.402393263 W/k3=4.466618853 frac=0.035195 cross F/k2=73.825500344 W/k3=14.891941929 frac=0.091786 reactionWard=7.89e-16 seconds=107.7
+tensor_result: L=257 k=0.091476758 sourceWard=6.98e-18 orth=8.03e-16 residual=1.32e-14 sourceCond=1.855279 sourceScaled=[0.501730,0.933394] equal F/k2=28.477555477 W/k3=4.453393937 frac=0.019865 cross F/k2=74.455595643 W/k3=14.837288510 frac=0.052079 reactionWard=5.55e-16 seconds=142.8
+tensor_fits: equal force=1.987245719 Ward=3.014849221; unequal force=1.959182257 Ward=3.018893777
+amplitude_control: equal_relative=3.155e-07 cross_relative=1.197e-06
+[PASS] vectorized-action-gradient-equivalence: the batched full-tensor evaluator reproduces the retained scalar local-action gradient
+       absolute=1.510e-14; relative=1.591e-11
+[PASS] complete-transverse-source-bases: both unequal input harmonics carry complete six-dimensional conserved source and respons...
+       ranks=6/6; max Ward=3.66e-17; max condition=1.855279
+[PASS] all-source-equal-mode-completed-Ward-order: the complete 21-component symmetric source tensor has quadratic completed force and cubi...
+       force p=1.987246; Ward p=3.014849; fraction=0.06223->0.01986
+[PASS] all-pair-unequal-harmonic-completed-Ward-order: all 36 k-plus-2k bilinear source pairs have quadratic completed force and cubic Ward order
+       force p=1.959182; Ward p=3.018894; fraction=0.16032->0.05208
+[PASS] metric-completion-reaction-is-Ward-null: the fixed square-root completion changes no displacement Ward component in either full t...
+       maximum=9.64e-16
+[PASS] weak-jet-amplitude-control: halving the field amplitude preserves representative equal- and unequal-harmonic quadrat...
+       equal=3.155e-07; unequal=1.197e-06
+[PASS] scope-refinement-and-no-go-packet: the note separates the full one-ray tensor result from angular, observable, and physical...
+N5_CERTIFICATE: two complete six-dimensional input bases, 21 equal-mode pairs, 36 unequal-harmonic pairs, and three infrared periods were executed
+per_element: all fifteen edge classes enter every raw force, square-root completion, and Hessian reaction
+per_site: all fifty hinges and 240 simplex-hinge incidences enter every cyclic phase site
+per_mode: k, 2k, equal-output 2k, and cross-output 3k sectors are separately retained
+per_block: full source bases, all 21 symmetric pairs, all 36 cross pairs, amplitude control, and Ward-null reactions are checked
+lattice_wide: not executed; angular uniformity, noncollinear mode pairs, observables, refinement, and nonlinear Lorentzian closure remain open
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

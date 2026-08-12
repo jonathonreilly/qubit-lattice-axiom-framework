@@ -1,6 +1,6 @@
 {
- "edge_count": 15778,
- "node_count": 5507,
+ "edge_count": 15782,
+ "node_count": 5508,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -537,6 +537,10 @@
   "admissibility_regge_fixed_average_tick_source_increasing_torus_ward_green_boundary_bounded_theorem_note_2026-08-11": {
    "deps_hash": "0cab21cb9805",
    "out_degree": 6
+  },
+  "admissibility_regge_full_conserved_source_multimode_metric_completion_ward_refinement_boundary_bounded_theorem_note_2026-08-12": {
+   "deps_hash": "aca5a6fa021f",
+   "out_degree": 4
   },
   "admissibility_regge_nonaxial_momentum_ward_k3_factorization_refinement_boundary_bounded_theorem_note_2026-08-12": {
    "deps_hash": "5998a3c174db",

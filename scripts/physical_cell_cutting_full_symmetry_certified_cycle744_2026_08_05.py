@@ -64,18 +64,18 @@ RECEIPT_PATH = ROOT / (
     "receipt_2026-08-05.json"
 )
 AUDIT_INPUT_PATHS = (
-    NOTE_PATH,
-    CHECKER_PATH,
-    C742_NOTE_PATH,
-    C742_PRIMARY_PATH,
-    C742_CHECKER_PATH,
-    C742_RECEIPT_PATH,
-    C742_INDEPENDENT_RECEIPT_PATH,
-    C743_NOTE_PATH,
-    C743_PRIMARY_PATH,
-    C743_CHECKER_PATH,
-    C743_RECEIPT_PATH,
-    C743_INDEPENDENT_RECEIPT_PATH,
+    "docs/PHYSICAL_CELL_CUTTING_FULL_SYMMETRY_CERTIFIED_CYCLE744_NOTE_2026-08-05.md",
+    "scripts/physical_cell_cutting_full_symmetry_certified_cycle744_independent_check_2026_08_05.py",
+    "docs/PHYSICAL_CELL_CUTTING_SIXTEEN_ATTAINED_CYCLE742_NOTE_2026-08-05.md",
+    "scripts/physical_cell_cutting_sixteen_attained_cycle742_2026_08_05.py",
+    "scripts/physical_cell_cutting_sixteen_attained_cycle742_independent_check_2026_08_05.py",
+    "outputs/physical_cell_cutting_sixteen_attained_cycle742_2026_08_05_receipt_2026-08-05.json",
+    "outputs/physical_cell_cutting_sixteen_attained_cycle742_independent_check_2026_08_05_receipt_2026-08-05.json",
+    "docs/PHYSICAL_CELL_CUTTING_HIDDEN_THREE_BIT_GEOMETRY_CYCLE743_NOTE_2026-08-05.md",
+    "scripts/physical_cell_cutting_hidden_three_bit_geometry_cycle743_2026_08_05.py",
+    "scripts/physical_cell_cutting_hidden_three_bit_geometry_cycle743_independent_check_2026_08_05.py",
+    "outputs/physical_cell_cutting_hidden_three_bit_geometry_cycle743_2026_08_05_receipt_2026-08-05.json",
+    "outputs/physical_cell_cutting_hidden_three_bit_geometry_cycle743_independent_check_2026_08_05_receipt_2026-08-05.json",
     "docs/MINIMAL_AXIOMS_2026-06-29.md",
     "requirements.txt",
     "requirements-release.txt",
@@ -987,9 +987,9 @@ receipt = {
         "named": {name: "PASS" if passed else "FAIL" for name, passed in GATES},
     },
 }
-tmp_receipt = RECEIPT_PATH.with_suffix(RECEIPT_PATH.suffix + ".tmp")
-tmp_receipt.write_text(json.dumps(receipt, indent=2, sort_keys=True) + "\n", encoding="utf-8")
-tmp_receipt.replace(RECEIPT_PATH)
+RECEIPT_PATH.write_text(
+    json.dumps(receipt, indent=2, sort_keys=True) + "\n", encoding="utf-8"
+)
 print("RECEIPT " + str(RECEIPT_PATH.relative_to(ROOT)), flush=True)
 print("TOTAL: PASS={0} FAIL={1}".format(PF[0], PF[1]), flush=True)
 sys.exit(0 if PF[1] == 0 else 1)

@@ -1,0 +1,63 @@
+{
+  "audit_status_authority": "independent audit lane only",
+  "checker_sha256": "bcaca5d81b325c0187b5153a6023cd4e5b8b2ddfde453c32062b0fc68c7a3d77",
+  "claim_type": "bounded_theorem",
+  "gates": {
+    "fail": 0,
+    "named": {
+      "hostile.automorphism": "PASS",
+      "hostile.incidence_identity": "PASS",
+      "hostile.omitted_generator": "PASS",
+      "hostile.primary_status": "PASS",
+      "hostile.stabilizer_size": "PASS",
+      "independent.dependencies": "PASS",
+      "independent.exhaustive_stabilizer_branch": "PASS",
+      "independent.extra_automorphisms": "PASS",
+      "independent.full_group": "PASS",
+      "independent.generated_group": "PASS",
+      "independent.point_partition": "PASS",
+      "independent.population": "PASS",
+      "independent.primary_contract": "PASS"
+    },
+    "pass": 13
+  },
+  "independent_reconstruction": {
+    "branch_rounds": [
+      3,
+      3
+    ],
+    "canonical_incidence_rows_sha256": "49c70821648fa7a96aa621289ee133ca767a792d2e326f7aca11b6bd85a09bda",
+    "cuttings": 15800,
+    "full_automorphism_group_order": 384,
+    "generated_group_order": 384,
+    "overlap_gram_sha256": "5f053adc6bc187b25da483986212ad80679c9dfc020988004a31c3dfd88b115d",
+    "point_partition_cells": 104,
+    "point_stabilizer_size": 2,
+    "selected_pair": [
+      179,
+      183
+    ],
+    "support_column_order_sha256": "56b1de932ec32c731c060e02886775465ceca0281e6de1d99292140aedcf158b",
+    "support_columns": 192
+  },
+  "input_sha256": {
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
+    "docs/PHYSICAL_CELL_CUTTING_FULL_SYMMETRY_CERTIFIED_CYCLE744_NOTE_2026-08-05.md": "9deae9a802371f3d6439dac705bc76780e99475e4a8d687f6ab713e9af7742f5",
+    "docs/PHYSICAL_CELL_CUTTING_HIDDEN_THREE_BIT_GEOMETRY_CYCLE743_NOTE_2026-08-05.md": "c99e12672509305b36472b5e7de167287754864f69c3df3038ea09fc8778d796",
+    "docs/PHYSICAL_CELL_CUTTING_SIXTEEN_ATTAINED_CYCLE742_NOTE_2026-08-05.md": "70d3b201056cbaecc7e03ff4f7fd8a44528997ac6831f4f867f838f642cb53fe",
+    "outputs/physical_cell_cutting_full_symmetry_certified_cycle744_2026_08_05_receipt_2026-08-05.json": "417b0eb4601efc551c5322d786606dbd766e3c997f36dd4769d64fb1ffe5cbf4",
+    "outputs/physical_cell_cutting_hidden_three_bit_geometry_cycle743_2026_08_05_receipt_2026-08-05.json": "267b0a2ba48c61aa803f5b7e7408087221f5eac05ad2618084a8dd7b4f715f07",
+    "outputs/physical_cell_cutting_hidden_three_bit_geometry_cycle743_independent_check_2026_08_05_receipt_2026-08-05.json": "152c1723e586bbb2cf76136baddce74c7a96b814021e0e314270033eba44d971",
+    "outputs/physical_cell_cutting_sixteen_attained_cycle742_2026_08_05_receipt_2026-08-05.json": "d018b7da4b99b7017679b67e11e85035b302161a99ca6125764c7aa4e9f64ac6",
+    "outputs/physical_cell_cutting_sixteen_attained_cycle742_independent_check_2026_08_05_receipt_2026-08-05.json": "d893aafd0528ab9866a0e5e67f35a785a104f2756ce6270ce16f036166ce16c7",
+    "requirements-release.txt": "e153eea331ce1b76cd99f09e14a777df2bc9efbaa06a201528ddfdc0f3f01bee",
+    "requirements.txt": "3fda988835a13d9a7236b0b508aa9bcd2f9b3f3b9a47b4875a15f86dbc77a3ad",
+    "scripts/physical_cell_cutting_full_symmetry_certified_cycle744_2026_08_05.py": "9fc93479f414e8ed0619e82490e297892a9a15eae847885308a98dbc43bea85f",
+    "scripts/physical_cell_cutting_hidden_three_bit_geometry_cycle743_2026_08_05.py": "a4a0797c95e6ccf7965e25c0fe7b0692a17d7811eac325997fc98f663caee404",
+    "scripts/physical_cell_cutting_hidden_three_bit_geometry_cycle743_independent_check_2026_08_05.py": "5cd179ddc93085ac8c25968c196d37bd6c22c210a4cfe4f8d3fa8ee23f49d7ca",
+    "scripts/physical_cell_cutting_sixteen_attained_cycle742_2026_08_05.py": "3e5d865635ccb7be15da4279785d8213d7198c3175ac4d6a16760af22edb6a72",
+    "scripts/physical_cell_cutting_sixteen_attained_cycle742_independent_check_2026_08_05.py": "b64ea254fd12366fbb42e561c33a994322c5a32f20711f6c7fbb6832cc0e86a7"
+  },
+  "schema": "physical-cell-cutting-full-symmetry-certified-cycle744-independent-v1",
+  "status": "pass"
+}

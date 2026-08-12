@@ -1,52 +1,184 @@
 {
- "cycle": 744,
- "failures": 0,
- "gates": 42,
- "headline": "The group of order 384 constructed in the previous cycle is certified to be the complete symmetry group of the finite cutting system: a complete search - sound because its refinement keys are invariant under every symmetry of the incidence structure - finds no permutation of the 192 pieces beyond that group which maps cuttings to cuttings. The hidden three-bit affine geometry is therefore the whole symmetry of the system, not merely a symmetry within it.",
- "lane": "emergent-geometry",
- "note": "docs/PHYSICAL_CELL_CUTTING_FULL_SYMMETRY_CERTIFIED_CYCLE744_NOTE_2026-08-05.md",
- "recorded_output": "outputs/physical_cell_cutting_full_symmetry_certified_cycle744_2026_08_05_cold_2026-08-05.txt",
- "results": {
-  "conclusion": {
-   "equals_the_previous_cycle_group": true,
-   "full_automorphism_group_order": 384,
-   "orbit_of_a_piece": 192,
-   "point_stabilizer": 2
+  "audit_status_authority": "independent audit lane only",
+  "claim_type": "bounded_theorem",
+  "direct_dependencies": {
+    "cycle742": {
+      "b0_support_permutation_sha256": "443d8fabee7be38f67945a9a3b1e6343dea2e9941ba6538d54dc3dcdaa69b95a",
+      "b1_support_permutation_sha256": "f3002cfbcfd866cc94e983fc5222c46da19b0a29128633deb25f2a38c4e95743",
+      "canonical_incidence_rows_sha256": "49c70821648fa7a96aa621289ee133ca767a792d2e326f7aca11b6bd85a09bda",
+      "functions": {
+        "four": {
+          "canonical_rows_with_bit_sha256": "a20e73d19d927e43e0d91af911722fbd8913c484f6bef9c572efaf792316d191",
+          "ones": 5664
+        },
+        "four-flip": {
+          "canonical_rows_with_bit_sha256": "33251a165ab0a2101fa646f762a7015fcf2d5d8032d5cadb1df50e9dda52bd19",
+          "ones": 10136
+        },
+        "one": {
+          "canonical_rows_with_bit_sha256": "cd0070ded9d3ccd559cdba5b6f375548ddfa70ad946f9d99d4ac17f64377c2bc",
+          "ones": 15800
+        },
+        "seven": {
+          "canonical_rows_with_bit_sha256": "5311e95f082dfb171d2ae94b3f0ccde8516fcac440696eae18cbc3e3f33f8643",
+          "ones": 7424
+        },
+        "seven-flip": {
+          "canonical_rows_with_bit_sha256": "b4bffadc08ae448822a115f7787307f592a573692f30c6d637da508cf587eb85",
+          "ones": 8376
+        },
+        "six": {
+          "canonical_rows_with_bit_sha256": "016921ddc4d1b953ceb41b4087ae4e0530925b28f6b83a1fa8024e60651021b8",
+          "ones": 7704
+        },
+        "six-flip": {
+          "canonical_rows_with_bit_sha256": "9cdc13d500cab0f64e56104866b4b298609d27fcf1d0c0ca6d9a0cc2dcd28195",
+          "ones": 8096
+        },
+        "zero": {
+          "canonical_rows_with_bit_sha256": "cbdbd1b019969819a98851ef9cc08782121da63ab99519717bb06b5d08c5b0f4",
+          "ones": 0
+        }
+      },
+      "schema": "physical-cell-cutting-sixteen-attained-cycle742-v2",
+      "support_column_order_sha256": "56b1de932ec32c731c060e02886775465ceca0281e6de1d99292140aedcf158b"
+    },
+    "cycle743": {
+      "generated_group_order": 384,
+      "independent_generated_group_order": 384,
+      "schema": "physical-cell-cutting-hidden-three-bit-geometry-cycle743-v2"
+    }
   },
-  "piece_pair_overlap_profile": {
-   "diagonal_value": 1975,
-   "distinct_cutting_rows": 15800,
-   "off_diagonal_distinct_values": 47,
-   "off_diagonal_maximum": 1266
+  "full_automorphism_certificate": {
+    "base_partition_cells": 104,
+    "base_partition_pairs": 88,
+    "base_partition_singletons": 16,
+    "base_support_column": 0,
+    "branch_cells": [
+      192,
+      192
+    ],
+    "branch_rounds": [
+      3,
+      3
+    ],
+    "candidate_permutation_sha256": [
+      "8f824944b05312482763055d2d994a8aba1ca5173513fb48c04d6f0d3159c54e",
+      "f3002cfbcfd866cc94e983fc5222c46da19b0a29128633deb25f2a38c4e95743"
+    ],
+    "candidate_stabilizer_size": 2,
+    "equals_generated_group": true,
+    "full_automorphism_group_order": 384,
+    "role_preserving_incidence_automorphisms": true,
+    "selected_pair": [
+      79,
+      120
+    ]
   },
-  "rebuilt_system": {
-   "cutting_symmetries": 48,
-   "cutting_width": 24,
-   "distinct_cuttings": 15800,
-   "piece_orbits": 4,
-   "pieces": 192,
-   "readings": 8,
-   "uses_per_piece": 1975
+  "gates": {
+    "fail": 0,
+    "named": {
+      "01": "PASS",
+      "02": "PASS",
+      "03": "PASS",
+      "04": "PASS",
+      "05": "PASS",
+      "06": "PASS",
+      "07": "PASS",
+      "08": "PASS",
+      "09": "PASS",
+      "10": "PASS",
+      "11": "PASS",
+      "12": "PASS",
+      "13": "PASS",
+      "14": "PASS",
+      "15": "PASS",
+      "16": "PASS",
+      "17": "PASS",
+      "18": "PASS",
+      "19": "PASS",
+      "20": "PASS",
+      "21": "PASS",
+      "22": "PASS",
+      "23": "PASS",
+      "24": "PASS",
+      "25": "PASS",
+      "26": "PASS",
+      "27": "PASS",
+      "28": "PASS",
+      "29": "PASS",
+      "30": "PASS",
+      "31": "PASS",
+      "32": "PASS",
+      "33": "PASS",
+      "34": "PASS",
+      "35": "PASS",
+      "36": "PASS",
+      "37": "PASS",
+      "38": "PASS",
+      "39": "PASS",
+      "40": "PASS",
+      "41": "PASS",
+      "42": "PASS",
+      "budget.memory": "PASS",
+      "budget.output": "PASS",
+      "budget.time": "PASS",
+      "dep.cycle742": "PASS",
+      "dep.cycle743": "PASS",
+      "hostile.automorphism_identity": "PASS",
+      "hostile.dependency": "PASS",
+      "hostile.omitted_generator": "PASS",
+      "hostile.pair_inventory": "PASS",
+      "hostile.reading_identity": "PASS",
+      "pairrows": "PASS"
+    },
+    "pass": 53
   },
-  "refinement_certificate": {
-   "base_cells": 1,
-   "base_rounds": 1,
-   "branch_rounds": 3,
-   "candidates_verified_directly": 2,
-   "cells_after_one_individualization": 104,
-   "discrete_branch_cells": 192,
-   "generators_passing_direct_check": 50,
-   "point_stabilizer_candidates": 2,
-   "rounds_to_stable": 3,
-   "singleton_cells": 16,
-   "two_element_cells": 88
+  "generated_group": {
+    "generators_directly_verified": 50,
+    "order": 384,
+    "point_stabilizer_order": 2,
+    "point_stabilizer_permutation_sha256": "f3002cfbcfd866cc94e983fc5222c46da19b0a29128633deb25f2a38c4e95743",
+    "transitive_support_orbit": 192
   },
-  "the_group_of_order_384": {
-   "elements_fixing_all_eight_readings": 384,
-   "order": 384,
-   "point_stabilizer_order": 2,
-   "stabilizer_involution_fixed_pieces": 16,
-   "transitive_on_pieces": 192
+  "input_sha256": {
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
+    "docs/PHYSICAL_CELL_CUTTING_FULL_SYMMETRY_CERTIFIED_CYCLE744_NOTE_2026-08-05.md": "9deae9a802371f3d6439dac705bc76780e99475e4a8d687f6ab713e9af7742f5",
+    "docs/PHYSICAL_CELL_CUTTING_HIDDEN_THREE_BIT_GEOMETRY_CYCLE743_NOTE_2026-08-05.md": "c99e12672509305b36472b5e7de167287754864f69c3df3038ea09fc8778d796",
+    "docs/PHYSICAL_CELL_CUTTING_SIXTEEN_ATTAINED_CYCLE742_NOTE_2026-08-05.md": "70d3b201056cbaecc7e03ff4f7fd8a44528997ac6831f4f867f838f642cb53fe",
+    "outputs/physical_cell_cutting_hidden_three_bit_geometry_cycle743_2026_08_05_receipt_2026-08-05.json": "267b0a2ba48c61aa803f5b7e7408087221f5eac05ad2618084a8dd7b4f715f07",
+    "outputs/physical_cell_cutting_hidden_three_bit_geometry_cycle743_independent_check_2026_08_05_receipt_2026-08-05.json": "152c1723e586bbb2cf76136baddce74c7a96b814021e0e314270033eba44d971",
+    "outputs/physical_cell_cutting_sixteen_attained_cycle742_2026_08_05_receipt_2026-08-05.json": "d018b7da4b99b7017679b67e11e85035b302161a99ca6125764c7aa4e9f64ac6",
+    "outputs/physical_cell_cutting_sixteen_attained_cycle742_independent_check_2026_08_05_receipt_2026-08-05.json": "d893aafd0528ab9866a0e5e67f35a785a104f2756ce6270ce16f036166ce16c7",
+    "requirements-release.txt": "e153eea331ce1b76cd99f09e14a777df2bc9efbaa06a201528ddfdc0f3f01bee",
+    "requirements.txt": "3fda988835a13d9a7236b0b508aa9bcd2f9b3f3b9a47b4875a15f86dbc77a3ad",
+    "scripts/physical_cell_cutting_full_symmetry_certified_cycle744_independent_check_2026_08_05.py": "bcaca5d81b325c0187b5153a6023cd4e5b8b2ddfde453c32062b0fc68c7a3d77",
+    "scripts/physical_cell_cutting_hidden_three_bit_geometry_cycle743_2026_08_05.py": "a4a0797c95e6ccf7965e25c0fe7b0692a17d7811eac325997fc98f663caee404",
+    "scripts/physical_cell_cutting_hidden_three_bit_geometry_cycle743_independent_check_2026_08_05.py": "5cd179ddc93085ac8c25968c196d37bd6c22c210a4cfe4f8d3fa8ee23f49d7ca",
+    "scripts/physical_cell_cutting_sixteen_attained_cycle742_2026_08_05.py": "3e5d865635ccb7be15da4279785d8213d7198c3175ac4d6a16760af22edb6a72",
+    "scripts/physical_cell_cutting_sixteen_attained_cycle742_independent_check_2026_08_05.py": "b64ea254fd12366fbb42e561c33a994322c5a32f20711f6c7fbb6832cc0e86a7"
+  },
+  "no_go_discipline": {
+    "claim_scope": "exhaustive absence of additional role-preserving automorphisms only for the exact supplied 15800-by-192 incidence table",
+    "n5_execution_certificate": [
+      "per_element checked",
+      "per_site checked and not executed",
+      "per_mode checked and not executed",
+      "per_block checked",
+      "lattice_wide checked and not executed"
+    ],
+    "status": "PASS"
+  },
+  "runner_sha256": "9fc93479f414e8ed0619e82490e297892a9a15eae847885308a98dbc43bea85f",
+  "schema": "physical-cell-cutting-full-symmetry-certified-cycle744-v2",
+  "status": "pass",
+  "supplied_incidence": {
+    "canonical_incidence_rows_sha256": "49c70821648fa7a96aa621289ee133ca767a792d2e326f7aca11b6bd85a09bda",
+    "cuttings": 15800,
+    "overlap_gram_sha256": "5f053adc6bc187b25da483986212ad80679c9dfc020988004a31c3dfd88b115d",
+    "pieces_per_cutting": 24,
+    "support_column_order_sha256": "56b1de932ec32c731c060e02886775465ceca0281e6de1d99292140aedcf158b",
+    "support_columns": 192,
+    "uses_per_piece": 1975
   }
- }
 }

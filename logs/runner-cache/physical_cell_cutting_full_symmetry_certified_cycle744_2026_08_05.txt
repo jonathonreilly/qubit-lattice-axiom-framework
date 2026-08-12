@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/physical_cell_cutting_full_symmetry_certified_cycle744_2026_08_05.py
-runner_sha256: ec79a115227105e259e1759c87445dfee932bbd673e421ed2b0b32640fe26eb1
-timeout_sec: 120
+runner_sha256: 9fc93479f414e8ed0619e82490e297892a9a15eae847885308a98dbc43bea85f
+input_fingerprint_sha256: 5e6820172217dada48ebd3456ade428c33b2cf234ee785291812d7a25269e29f
+timeout_sec: 900
 exit_code: 0
-elapsed_sec: 8.31
+elapsed_sec: 14.69
 status: ok
 ----- stdout -----
 -- rebuild
@@ -13,9 +14,12 @@ G03 rowsupp: width 24 distinct 15800 exp 24 15800 -> PASS
 G04 perms48: 48 exp 48 -> PASS
 G05 orbits48: 4 of sizes [48, 48, 48, 48] exp 4 of 48 -> PASS
 G06 readings: 8 distinct, closed under xor exp 8 -> PASS
+Gpairrows all pair-search first endpoints: 15800 -> PASS
 G07 b0: an involution outside the 48 exp automorphism -> PASS
 G08 b1: an involution outside the 48 exp automorphism -> PASS
 G09 bfix: 8 of 8 readings kept exp 8 -> PASS
+Gdep.cycle742 exact incidence/readings/b0/b1 bytes: bound -> PASS
+Gdep.cycle743 exact generated order-384 group bytes: bound -> PASS
 -- the group E
 G10 ordE: 384 exp 384 -> PASS
 G11 trans: 1 orbit of 192 exp 1 of 192 -> PASS
@@ -55,7 +59,21 @@ G39 gens: 50 generators carry the family onto itself exp 50 -> PASS
 G40 orbit: 192 images of the base piece exp 192 -> PASS
 G41 stabsame: 2 elements, the same two exp 2 -> PASS
 G42 count: 192 times 2 is 384 exp 384 -> PASS
-TOTAL: PASS=42 FAIL=0
+Ghostile.pair_inventory submitted half-width chunks are rejected: 7900 is not 15800 -> PASS
+Ghostile.dependency a failing Cycle 743 receipt is rejected: fail closed -> PASS
+Ghostile.automorphism_identity a self-consistently rehashed changed predecessor map is rejected: fail closed -> PASS
+Ghostile.omitted_generator omitting b1 collapses the generated group: 96 not 384 -> PASS
+Ghostile.reading_identity a changed reading identity is rejected: fail closed -> PASS
+Gbudget.time elapsed 14.59s: <900s -> PASS
+Gbudget.memory peak 356.5 MB: <2500 MB -> PASS
+Gbudget.output bounded stdout: <6500 chars -> PASS
+per_element: checked -- all 192 support columns enter the exact incidence, group, overlap, and stabilizer-branch checks
+per_site: checked and not executed -- one supplied coordinate four-cube only; no framework cell or site is identified
+per_mode: checked and not executed -- the finite incidence table has no field or momentum-mode decomposition
+per_block: checked -- every one of the 15800 supplied cutting supports and all 50 declared generators enter the direct automorphism tests
+lattice_wide: checked and not executed -- no multi-cell, arbitrary-domain, boundary, thermodynamic, or continuum theorem is asserted
+RECEIPT outputs/physical_cell_cutting_full_symmetry_certified_cycle744_2026_08_05_receipt_2026-08-05.json
+TOTAL: PASS=53 FAIL=0
 
 ----- stderr -----
 

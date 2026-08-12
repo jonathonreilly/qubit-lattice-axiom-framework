@@ -53,11 +53,13 @@ RECEIPT_PATH = ROOT / (
 AUDIT_INPUT_PATHS = (
     "docs/MINIMAL_AXIOMS_2026-06-29.md",
     "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
-    C734_NOTE_PATH,
-    C734_RUNNER_PATH,
-    C734_RECEIPT_PATH,
-    NOTE_PATH,
-    INDEPENDENT_PATH,
+    "docs/PHYSICAL_LEAST_COST_CUTTING_FLIP_AND_MOVE_LADDER_CYCLE734_NOTE_2026-08-04.md",
+    "scripts/physical_least_cost_cutting_flip_and_move_ladder_cycle734_2026_08_04.py",
+    "outputs/physical_least_cost_cutting_flip_and_move_ladder_cycle734_2026_08_04_"
+    "receipt_2026-08-04.json",
+    "docs/PHYSICAL_LEAST_COST_CUTTING_PIECE_CHARGE_CYCLE735_NOTE_2026-08-05.md",
+    "scripts/physical_least_cost_cutting_piece_charge_cycle735_independent_check_"
+    "2026_08_05.py",
 )
 AUDIT_TIMEOUT_SEC = 600
 

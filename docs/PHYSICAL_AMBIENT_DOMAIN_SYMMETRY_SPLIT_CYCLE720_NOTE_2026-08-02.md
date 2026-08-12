@@ -6,14 +6,15 @@ Claim type: bounded_theorem
 
 Status: proposed_retained
 
-Authority: none. Audit: unset. Constitutional effect: none. This cycle edits no
+Authority: none. Audit status is set only by the independent audit lane.
+Constitutional effect: none. This cycle edits no
 axiom, foundation, Qualification, primitive, registry, policy, queue,
 audit-status, or PR-control surface. No new axiom or primitive is proposed or
 adopted.
 
 No coupling value, sign, or scale is selected or derived in this cycle; every
 such object is named as supplied. The floating-point rows are conditional on the
-fixed, joined Cycle-696 compiler contract inventoried below; that compiler is a
+fixed, landed Cycle-696 compiler contract inventoried below; that compiler is a
 landed but audit-excluded support surface, not an independent audit authority.
 
 **Primary runner:**
@@ -27,6 +28,10 @@ paired receipt
 [`scripts/physical_ambient_domain_symmetry_split_cycle720_independent_check_2026_08_02.py`](../scripts/physical_ambient_domain_symmetry_split_cycle720_independent_check_2026_08_02.py);
 cached stdout
 [`logs/runner-cache/physical_ambient_domain_symmetry_split_cycle720_independent_check_2026_08_02.txt`](../logs/runner-cache/physical_ambient_domain_symmetry_split_cycle720_independent_check_2026_08_02.txt).
+It reconstructs the signed permutations and endpoint slot maps, forms orbit and
+value-equivalence partitions by graph traversal, and obtains inverse diagonals
+from the spectral identity `diag(Q^-1)_i = sum_k |u_ik|^2/lambda_k` rather than
+calling the primary's dense-inverse path.
 
 ```yaml
 trace_class: upstream_support
@@ -177,10 +182,11 @@ Q_g[a, b] = Q[ m_g[D_a], m_g[D_b] ]
 ```
 
 and the value functional is the diagonal of its matrix inverse,
-`v_i(g) = (Q_g^{-1})_{ii}`. Taking a principal submatrix is the Dirichlet freeze
-of every slot outside `D` — the same boundary treatment the open box already
-applies at its own faces — so no re-assembly on a smaller box is performed
-anywhere in this cycle, and the ambient stencil is never modified. Five domains
+`v_i(g) = (Q_g^{-1})_{ii}`. Algebraically, taking a principal submatrix holds
+every coordinate outside `D` fixed at zero increment. No claim equates that
+operation to re-assembling the compiler on a different physical region: no
+re-assembly on a smaller box is performed, and the ambient stencil is never
+modified. Five domains
 are used at each box size:
 
 - **full box** — every slot;

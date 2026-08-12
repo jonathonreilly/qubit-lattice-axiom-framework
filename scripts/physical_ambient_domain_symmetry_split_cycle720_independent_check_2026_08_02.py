@@ -249,7 +249,10 @@ def main() -> int:
                     local_maps.append(mapping)
                     local_det.append(det)
             orbit_partition = sorted(components(local_maps, domain))
-            values = np.diag(np.linalg.inv(Q[np.ix_(domain, domain)]))
+            eigenvalues, eigenvectors = np.linalg.eigh(Q[np.ix_(domain, domain)])
+            values = np.sum(
+                (eigenvectors * eigenvectors) / eigenvalues[np.newaxis, :], axis=1
+            )
             value_partition = equivalence(values, TOL_LEVEL)
 
             assemblies = [Q[np.ix_(mapping[domain], mapping[domain])] for mapping in frame_maps]

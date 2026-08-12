@@ -559,7 +559,10 @@ TARGET_FUNCTION_IDENTITY = {
 }
 FIXED_CONTROL_SUPPORTS = {name: [int(value) for value in support]
                           for name, support in PLANT}
-PLANTED_SPECS = {name: [int(value) for value in profile] for name, profile in P16SPEC}
+PLANTED_SPECS = [
+    {"name": name, "profile": [int(value) for value in profile]}
+    for name, profile in P16SPEC
+]
 PLANTED_SUPPORTS = {TNAME[index]: [int(value) for value in PSET[index]]
                     for index in sorted(PSET)}
 

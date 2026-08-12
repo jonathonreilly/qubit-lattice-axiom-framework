@@ -250,16 +250,17 @@ FIXED_SUPPORTS = {
     "in-right one quarter (0,8)": [150, 151, 160, 165, 170, 180, 185, 191],
 }
 PSEED = 74516
-P16SPECS = {
-    "p16-a4444": [4, 4, 4, 4],
-    "p16-a0-0-6-10": [0, 0, 6, 10],
-    "p16-a8044": [8, 0, 4, 4],
-    "p16-a2-2-2-10": [2, 2, 2, 10],
-    "p16-a0-8-0-8": [0, 8, 0, 8],
-}
+P16SPECS = [
+    {"name": "p16-a4444", "profile": [4, 4, 4, 4]},
+    {"name": "p16-a0-0-6-10", "profile": [0, 0, 6, 10]},
+    {"name": "p16-a8044", "profile": [8, 0, 4, 4]},
+    {"name": "p16-a2-2-2-10", "profile": [2, 2, 2, 10]},
+    {"name": "p16-a0-8-0-8", "profile": [0, 8, 0, 8]},
+]
 rng = np.random.default_rng(PSEED)
 P16SUPPORTS = {}
-for name, profile in P16SPECS.items():
+for spec in P16SPECS:
+    name, profile = spec["name"], spec["profile"]
     support = [144] + [145 + int(value) for value in rng.choice(47, profile[3] - 1,
                                                                 replace=False)]
     for quarter in range(3):

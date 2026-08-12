@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_common_metric_tt_os_one_two_step_hankel_obstruction_axiom_boundary_2026_08_11.py
+runner_sha256: d0356a1cc08d0c0e11c7cd7d99bdc8cb022d30f44b46e87eaede3fafd967a4f7
+input_fingerprint_sha256: a91de5dca7293aa0e4a734cc3d16cf902d5d9dcc0ac9731893632cfad693a03d
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 5.22
+status: ok
+----- stdout -----
+[PASS] source-and-scope-bindings: the current axioms and exact gravity/transfer parents are read without importing a selec...
+[PASS] gauge-invariant-cross-coordinate: the axis-momentum h_yz coordinate is orthogonal to every displacement-gauge column on ev...
+       maximum gauge overlap=1.225e-14
+[PASS] common-operator-ward-and-hermiticity: the sign-fixed common-metric operator remains Hermitian and Ward-null on all tested Eucl...
+       Ward=1.163e-13; Hermiticity=8.565e-15
+[PASS] six-dimensional-quotient-signature: the full gauge quotient, not a scalar pole projection, is inverted and has one conformal...
+       inertias=[((1, 5, 0),)]
+[PASS] quotient-bordered-crosscheck: null-basis quotient inversion and an independent Lagrange-bordered inverse give the same...
+       maximum method difference=6.722e-15
+[PASS] finite-carrier-convergence: the first five covariance moments stabilize across the two finest periodic-time carriers
+       N=4096 moments=2.357705509,1.675150736,1.124515338,0.751734899,0.511170514
+[PASS] one-step-os-hankel-obstruction: the first h_yz moment Gram is indefinite on every declared carrier, excluding this covar...
+       det range=-0.154853981..-0.154787529; finest min=-0.043916043
+[PASS] two-step-os-hankel-obstruction: even-slice blocking leaves the first h_yz moment Gram indefinite, so the positive pole b...
+       det range=-0.059345208..-0.059339148; finest min=-0.020538833
+[PASS] positive-transfer-moment-control: the identical Gram engine is positive on an explicit two-atom positive self-adjoint tran...
+       controls=((0.0525000000000002, 0.03649625535950253), (0.06352499999999993, 0.05131963287299281))
+[PASS] positive-poles-do-not-supply-positive-residues: both Block-48 tensor poles remain real and give positive decaying numbers while the full...
+       poles=0.394911593,0.394947166
+[PASS] longer-block-and-boundary-routes-preserved: a nine-slice first Gram is positive, so the result does not become a no-blocking, no-bou...
+       nine-slice determinant=0.000203227
+[PASS] exact-law-and-axiom-boundary: the obstruction removes the advertised one/two-step common-metric repair but does not in...
+[PASS] fresh-no-go-discipline-packet: the bounded transfer obstruction passes N1 through N8 while retaining distinct construct...
+N5_CERTIFICATE: one complete ten-coordinate common metric, four gauge columns, six quotient directions, the h_yz TT coordinate, all 8,064 temporal modes on six carriers, one-step and two-step first Hankel blocks, two positive-control atoms, two tensor poles, and one nine-slice escape control are resolved
+per_element: checked all ten metric coordinates through the full quotient operator and all four displacement-gauge columns before reading h_yz
+per_site: checked the local common-metric cross-polarization coordinate and its independent quotient/bordered covariance constructions
+per_mode: checked every Euclidean time mode on N=128,256,512,1024,2048,4096 at the declared k=0.4 axis momentum
+per_block: checked one-step, even-slice two-step, positive-transfer atom controls, both common tensor poles, and a nine-slice non-no-go control
+lattice_wide: no alternative field coordinate, boundary normalization, canonical constraint transfer, nonlinear connection, full-Z3 phase, or Record clock is excluded or inferred
+scope_boundary: finite-carrier h_yz one/two-step OS obstruction for the Block-48 common-metric stationary-Schur candidate; not gravity failure, all-blocking failure, selected law, axiom adoption, or TOE closure
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

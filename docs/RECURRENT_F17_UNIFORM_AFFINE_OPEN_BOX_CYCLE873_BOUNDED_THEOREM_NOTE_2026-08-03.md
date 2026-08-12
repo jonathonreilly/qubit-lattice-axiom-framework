@@ -4,9 +4,20 @@ Type: bounded_theorem
 
 **Primary runner:** [cold Cycle 873 package acceptance](../scripts/frontier_cycle873_recurrent_f17_uniform_affine_open_box_acceptance_2026_08_03.py)
 
+**Primary cache:** [canonical acceptance output](../logs/runner-cache/frontier_cycle873_recurrent_f17_uniform_affine_open_box_acceptance_2026_08_03.txt)
+
+**Independent checker:** [independent reconstruction](../scripts/frontier_cycle873_recurrent_f17_uniform_affine_open_box_independent_check_2026_08_03.py)
+
+**Independent cache:** [independent cold output](../logs/runner-cache/frontier_cycle873_recurrent_f17_uniform_affine_open_box_independent_check_2026_08_03.txt)
+
 Status: bounded construction candidate. Authority: none. Audit: unset. Constitutional effect: none. The effective status remains pipeline-derived after independent audit.
 
 **Result scope:** modular literal-physical/effective and effective/affine intertwiners on supplied open-box code inputs; no monolithic physical affine-state preparation or autonomous recurrence theorem.
+
+**Proof-obligation disposition:** `CONDITIONAL`. Exact finite construction and
+preservation statements are conditional on the declared Cycle 870/871/714
+compiler interfaces, clean/one-hot F17 banks, fixed compatible background and
+number sector, coframes, schedule origin, and recurrence invocation.
 
 Base: freshly fetched `origin/main` at `c73a11d1ea7ddd564c48aa2a5a459a43d94262ef`. Cycle 873 was unused on that base before this package was prepared. The executable provenance check requires this base to be an ancestor of the current checkout; it does not require the current `HEAD` to equal the base and therefore remains valid after a reviewed package commit.
 
@@ -116,7 +127,14 @@ The onsite part of the preservation claim is executed rather than assigned by st
 
 ## Inherited Cycle 870 numerical recurrence and dispersion fixture
 
-Cycle 873 does not select or derive a numerical coin/contact law. It re-executes the exact numerical fixture already supplied by Cycle 870: `beta=-0.3` and `g_contact=0.37`. Here `g_contact` denotes the onsite contact coupling and is distinct from the separately supplied affine star/background field `g`. The affine core reconstructs the inherited dense coin, its 20-gate QR schedule, onsite encoded intertwiner, same-block eightfold-multiplication consistency, and local curvature. Separately, the independent checker constructs the F17-encoded length-five recurrence and the native one-particle matrix through different code paths and compares their eighth powers. It obtains
+The numerical coin/contact law is an input from Cycle 870: `beta=-0.3` and
+`g_contact=0.37`. Here `g_contact` denotes the onsite contact coupling and is
+distinct from the separately supplied affine star/background field `g`. The
+affine core reconstructs the inherited dense coin, its 20-gate QR schedule,
+onsite encoded intertwiner, same-block eightfold-multiplication consistency,
+and local curvature. Separately, the independent checker constructs the
+F17-encoded length-five recurrence and the native one-particle matrix through
+different code paths and compares their eighth powers. It obtains
 
 - analytic mass `0.4534056541748852`;
 - rest mass `0.4534056541748851`;
@@ -141,21 +159,6 @@ The primary and independent receipts require activity or detection for:
 - drift in every pinned primary source, child receipt, base-ancestry certificate, factor order, phase ledger, rank, resource census, and cold-run byte comparison.
 
 The independent checker does not import the primary runner or physical Cycle 873 core. It parses their source surfaces for exact pins and rail/factor declarations, then reconstructs the physical seam, effective encoded macro, open-box constraints, repeated factors, and Cycle 219 recurrence through separately implemented code.
-
-## No-Go Discipline disposition for the path-history diagnostic
-
-The raw computational-basis link witness is not shipped as an obstruction, no-go, minimum-content result, or axiom pressure. Applying N1-N8 gives `FAIL` for any broader negative claim and therefore demotes the result to a route-local diagnostic:
-
-- **N1 — alternative routes:** product-basis link labels were attempted and retain orthogonal circulation history; the trivial-character uniform affine route was attempted and succeeds; a nontrivial character was attempted as an active control and retains a phase; the local star-register bundle, a shared-edge gauge/binder realization, and a staggered transport realization remain separate constructive routes not closed by this package. Because one route already succeeds and three remain open, no obstruction claim passes N1.
-- **N2 — wall independence:** no independent wall set is asserted. Preparation, enforcement, translation/origin equivalence, and monolithic physical composition are listed as distinct open implementation obligations, not as a proved jointly necessary minimum.
-- **N3 — hidden-wall scan:** the fixed background, fixed-number sector, one-hot genesis, parity origin, color traversal, coframes, and recurrence invocation are explicit supplied inputs. No “standard QFT,” naturality, or canonical-background premise is hidden.
-- **N4 — residual matching:** no prior no-go is cited as authority for the diagnostic. The exact tested residual is only the zero inner product between two product-link words with equal endpoint divergence.
-- **N5 — rhetoric resolution:** the test is per supplied computational-basis link word on one elementary plaquette. It does not cover uniform cycle-space states, arbitrary encoded observables, full lattices, or all local/gauge encodings.
-- **N6 — partial closure:** the uniform `+1` cycle-space construction in this same package is an explicit partial-closure route: it identifies closed-current translations algebraically without a new axiom.
-- **N7 — steelman:** the strongest counterargument is constructive and wins—the trivial-character affine state is invariant under every plaquette translation, so the two path histories act on the same encoded vector. This defeats any whole-F17 obstruction reading.
-- **N8 — cross-cycle echo:** the campaign repeatedly retired route-specific parity/history failures by changing the local auxiliary representation rather than changing axioms; the successful affine route is the directly relevant echo here.
-
-No-go gate status: `FAIL`. Controlled demotion: `partial-narrowing`. The preserved content is only the explicitly scoped computational-basis path-history witness. No shared substrate obstruction or axiom-pressure conclusion is drawn.
 
 ## Secondary and optional evidence
 
@@ -183,7 +186,10 @@ An optimal next route, not part of this package, would remove the ordered fixed-
 
 Each link would first be prepared locally in unary `|+_17>`, after which bounded star operations would coherently compute `g`. A seam update `n -> n+Bj`, `ell -> ell+j` preserves `g` and merely reindexes the full link sum, requiring neither a preferred vertex order nor a global particle-number service.
 
-This concept is not Cycle 873 evidence. Literal physical-M2 `g`-bank placement, a routed unary `|+_17>` preparation word, routing/schedule, finite synthesis, clean genesis, and a source-readout firewall remain open and need their own reviewed constructive runner.
+This concept is future work outside the Cycle 873 result. Its constructive
+obligations are literal physical-M2 `g`-bank placement, a routed unary
+`|+_17>` preparation word, routing/schedule, finite synthesis, clean genesis,
+and a source-readout firewall, each requiring its own reviewed runner.
 
 ## Claim graph and implementation provenance
 
@@ -200,16 +206,21 @@ The exact script and receipt hashes in the citation manifest are implementation 
 
 ## Audit surface
 
-The exact candidate surface has 33 files:
+The exact scientific package has 33 files:
 
 - this bounded theorem note;
 - the [physical all-seam core](../scripts/frontier_cycle873_recurrent_f17_all_seam_physical_core_2026_08_03.py), [local-constraint core](../scripts/frontier_cycle873_f17_open_box_local_constraints_core_2026_08_03.py), [affine-intertwiner core](../scripts/frontier_cycle873_uniform_affine_gauss_intertwiner_core_2026_08_03.py), [primary runner](../scripts/frontier_cycle873_recurrent_f17_uniform_affine_open_box_primary_2026_08_03.py), [independent checker](../scripts/frontier_cycle873_recurrent_f17_uniform_affine_open_box_independent_check_2026_08_03.py), and cold package acceptance runner linked at the top of this note;
 - the five canonical computational receipts from the three cores, primary runner, and independent checker;
 - the citation manifest, package-acceptance receipt, and import-free source-view validation helper used by acceptance;
-- the primary and independent cold-output logs; and
+- the primary-child and independent cold-output logs; and
 - 16 import-free byte-exact source-view modules, each below the restricted helper-source ceiling, covering the complete five computational children. The acceptance runner reconstructs each child byte-for-byte, verifies line-range/ordinal/hash integrity, and runs prefix, ordinal, payload, hard-pin, and child-mutation controls. These views transport evidence only; they are not runners, derivations, or authorities.
 
 The citation manifest SHA-pins every non-circular artifact. It excludes its own hash, the acceptance source that pins the manifest, and the acceptance receipt generated by that source; the acceptance receipt records the acceptance-source hash and the exclusion reasons. No package file is authoritative, and no audit verdict is set.
+
+The canonical acceptance-runner cache linked above is review/audit transport
+evidence outside that 33-file scientific package. Its own input fingerprint
+binds the complete declared input closure, so it is intentionally not fed back
+into the package's self-hashing manifest.
 
 Review commands are:
 

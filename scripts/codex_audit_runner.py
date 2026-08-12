@@ -126,6 +126,22 @@ AUTHORITY_PER_NOTE_OVERRIDES = {
         "free_dirac_poincare_representation_bounded_note_2026-05-30",
         "free_staggered_pole_residue_dirac_carrier_car_relabeling_bounded_theorem_note_2026-07-17",
     ): 22_000,
+    (
+        "recurrent_f17_uniform_affine_open_box_cycle873_bounded_theorem_note_2026-08-03",
+        "minimal_axioms",
+    ): 11_000,
+    (
+        "recurrent_f17_uniform_affine_open_box_cycle873_bounded_theorem_note_2026-08-03",
+        "openreference_cubic_recurrent_physical_m2_matter_compiler_cycle870_bounded_theorem_note_2026-08-02",
+    ): 32_000,
+    (
+        "recurrent_f17_uniform_affine_open_box_cycle873_bounded_theorem_note_2026-08-03",
+        "openreference_matter_endpoint_causal_interval_packet_cycle871_bounded_theorem_note_2026-08-02",
+    ): 13_000,
+    (
+        "recurrent_f17_uniform_affine_open_box_cycle873_bounded_theorem_note_2026-08-03",
+        "physical_m2_full34_fixed_packet_composition_cycle714_bounded_theorem_note_2026-07-26",
+    ): 17_000,
 }
 CLIPPED_EVIDENCE_MARKERS = (
     "... [packet-clipped ",
@@ -492,11 +508,16 @@ def clip_packet_text(text: str, limit: int, label: str) -> str:
 
 
 def authority_note_limit(claim_id: str, dep_claim_id: str, dep_count: int) -> int:
-    per_note_max = AUTHORITY_PER_NOTE_OVERRIDES.get(
-        (claim_id, dep_claim_id), AUTHORITY_PER_NOTE_MAX
-    )
+    explicit_max = AUTHORITY_PER_NOTE_OVERRIDES.get((claim_id, dep_claim_id))
+    if explicit_max is not None:
+        # A reviewed pair override is an exact packet repair: unlike the
+        # generic equal-share budget it must be able to carry one unusually
+        # long authority beside several short ones.  The hard prompt limit
+        # remains the final transport bound, and each override is regression
+        # tested against the complete real authority text.
+        return explicit_max
     return min(
-        per_note_max,
+        AUTHORITY_PER_NOTE_MAX,
         max(AUTHORITY_PER_NOTE_MIN, AUTHORITY_TOTAL_CHAR_LIMIT // max(1, dep_count)),
     )
 

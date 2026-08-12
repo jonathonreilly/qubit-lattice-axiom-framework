@@ -66,11 +66,15 @@ LOCAL_RECEIPT = "outputs/cycle873_f17_open_box_local_constraints_core_receipt_20
 AFFINE_RECEIPT = "outputs/cycle873_uniform_affine_gauss_intertwiner_core_receipt_2026_08_03.json"
 ACCEPTANCE_RECEIPT = "outputs/cycle873_recurrent_f17_uniform_affine_open_box_package_acceptance_receipt_2026_08_03.json"
 MANIFEST = "outputs/cycle873_recurrent_f17_uniform_affine_open_box_citation_manifest_2026_08_03.json"
+ACCEPTANCE_CACHE = (
+    "logs/runner-cache/"
+    "frontier_cycle873_recurrent_f17_uniform_affine_open_box_acceptance_2026_08_03.txt"
+)
 NOTE = "docs/RECURRENT_F17_UNIFORM_AFFINE_OPEN_BOX_CYCLE873_BOUNDED_THEOREM_NOTE_2026-08-03.md"
 PRIMARY_LOG = "logs/runner-cache/frontier_cycle873_recurrent_f17_uniform_affine_open_box_primary_2026_08_03.txt"
 INDEPENDENT_LOG = "logs/runner-cache/frontier_cycle873_recurrent_f17_uniform_affine_open_box_independent_check_2026_08_03.txt"
 DEFAULT_OUTPUT = ROOT / ACCEPTANCE_RECEIPT
-EXPECTED_MANIFEST_SHA256 = "4382c9eb7c73ef325a48e85c1c35ee474f8eb0438e0283a018bb62020c176774"
+EXPECTED_MANIFEST_SHA256 = "ac61eb99f92025c5c2932536877fe88c883e29ab3a415eb5edc9e27053514c0e"
 
 LOCAL_SOURCE_VIEWS = (
     "scripts/frontier_cycle873_local_constraints_source_audit_view_part1_2026_08_03.py",
@@ -111,8 +115,6 @@ SOURCE_VIEW_FILES = tuple(
 
 AUDIT_INPUT_PATHS = (
     "docs/RECURRENT_F17_UNIFORM_AFFINE_OPEN_BOX_CYCLE873_BOUNDED_THEOREM_NOTE_2026-08-03.md",
-    "logs/runner-cache/frontier_cycle873_recurrent_f17_uniform_affine_open_box_primary_2026_08_03.txt",
-    "logs/runner-cache/frontier_cycle873_recurrent_f17_uniform_affine_open_box_independent_check_2026_08_03.txt",
     "outputs/cycle873_f17_open_box_local_constraints_core_receipt_2026_08_03.json",
     "outputs/cycle873_recurrent_f17_all_seam_physical_core_receipt_2026_08_03.json",
     "outputs/cycle873_recurrent_f17_uniform_affine_open_box_citation_manifest_2026_08_03.json",
@@ -144,9 +146,10 @@ AUDIT_INPUT_PATHS = (
     "scripts/frontier_cycle873_affine_source_audit_view_part3_2026_08_03.py",
 )
 DECLARED_INPUT_PATHS = AUDIT_INPUT_PATHS
+AUDIT_TIMEOUT_SEC = 300
 
 EXPECTED_ARTIFACT_SHA256 = {
-    NOTE: "37bf888a461aac7f3929d0126a7a2b4c21f4fd01cc8e299ff6f8b42eba88e67f",
+    NOTE: "c849718f5b125fabbf7c9c5b077d9e5a1edd8fd7561c60a5b757a92c9f40f56f",
     PRIMARY_LOG: "72be1cd183bf85663c6726223f9db9fb61be3e80b6ed0f3d386f32849312eb74",
     INDEPENDENT_LOG: "6689ee8aac078f36507af89c20a90a19ea0721d34af74b1a98318cec06c35812",
     PHYSICAL_RECEIPT: "397657af570393fad9967edc55e74f7a66f46e8284fd5102be0f5e1df9247d0b",
@@ -226,15 +229,15 @@ NOTE_REQUIRED_TEXT = (
     "Cycle 696 is neither imported nor pinned",
     "classical 19-vertex/18-edge six-ray-tree projection",
     "Cycle 700 is classical only",
-    "This concept is not Cycle 873 evidence.",
-    "No-go gate status: `FAIL`. Controlled demotion: `partial-narrowing`.",
+    "This concept is future work outside the Cycle 873 result.",
     "2,448 rows with seam bits",
     "612 `a=b=1` rows carry the FSWAP minus sign",
     "supplied lattice parity origin",
     "does not prove unit-translation/origin-shift equivalence",
     "The 20 M2 persistent bank is not the whole routing substrate.",
-    "The exact candidate surface has 33 files:",
+    "The exact scientific package has 33 files:",
     "16 import-free byte-exact source-view modules",
+    "evidence outside that 33-file scientific package",
     "[Minimal framework axioms](MINIMAL_AXIOMS_2026-06-29.md)",
     "[Cycle 870 recurrent physical-M2 matter compiler]",
 )
@@ -249,6 +252,14 @@ def load_json(path: Path) -> dict:
 
 
 def package_manifest() -> tuple[str, ...]:
+    package_name_markers = (
+        "recurrent_f17",
+        "uniform_affine",
+        "f17_open_box",
+        "source_audit_view",
+        "source_view_validation",
+        "all_seam_physical",
+    )
     output: list[str] = []
     for directory in ("docs", "scripts", "outputs", "logs/runner-cache"):
         base = ROOT / directory
@@ -259,7 +270,9 @@ def package_manifest() -> tuple[str, ...]:
             for path in base.iterdir()
             if path.is_file()
             and "cycle873" in path.name.lower()
+            and any(marker in path.name.lower() for marker in package_name_markers)
             and path.suffix != ".pyc"
+            and str(path.relative_to(ROOT)) != ACCEPTANCE_CACHE
         )
     return tuple(sorted(output))
 

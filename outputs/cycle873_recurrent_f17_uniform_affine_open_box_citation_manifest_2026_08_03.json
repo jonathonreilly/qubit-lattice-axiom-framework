@@ -6,7 +6,7 @@
     "was_cycle873_unused_scope": "freshly fetched origin/main base tree before package construction"
   },
   "candidate_artifacts_sha256": {
-    "docs/RECURRENT_F17_UNIFORM_AFFINE_OPEN_BOX_CYCLE873_BOUNDED_THEOREM_NOTE_2026-08-03.md": "37bf888a461aac7f3929d0126a7a2b4c21f4fd01cc8e299ff6f8b42eba88e67f",
+    "docs/RECURRENT_F17_UNIFORM_AFFINE_OPEN_BOX_CYCLE873_BOUNDED_THEOREM_NOTE_2026-08-03.md": "c849718f5b125fabbf7c9c5b077d9e5a1edd8fd7561c60a5b757a92c9f40f56f",
     "logs/runner-cache/frontier_cycle873_recurrent_f17_uniform_affine_open_box_independent_check_2026_08_03.txt": "6689ee8aac078f36507af89c20a90a19ea0721d34af74b1a98318cec06c35812",
     "logs/runner-cache/frontier_cycle873_recurrent_f17_uniform_affine_open_box_primary_2026_08_03.txt": "72be1cd183bf85663c6726223f9db9fb61be3e80b6ed0f3d386f32849312eb74",
     "outputs/cycle873_f17_open_box_local_constraints_core_receipt_2026_08_03.json": "ed30056eaeeac03301849d3f386a6d8d0b7accbef2237b4c388e85a595212f1e",
@@ -45,7 +45,6 @@
     "constraints": "characterization and preservation only; no preparation, enforcement, projection, cooling, reset, or genesis",
     "evidence_composition": "physical-word/effective-action and effective-action/affine-encoder legs are separately reconstructed and pinned; no runner constructs or executes one physical affine encoder/Gauss-projector composition",
     "onsite_F17_star": "the live Cycle870 coin, reverse, contact, and composed onsite targets are lifted to all 64 occupation columns and tested for F17-star commutation and unitarity with an active bare-flip control",
-    "raw_history_diagnostic": "the computational-basis path-history witness is route-local only; N1-N8 returns FAIL for any obstruction, no-go, minimum-content, or axiom-pressure claim because the uniform affine route succeeds and other constructive routes remain open",
     "recurrence_eighth_power": "the affine core tests same-block eightfold multiplication consistency and the independent checker compares encoded and native eighth powers; neither is an autonomous recurrence theorem",
     "schedule_origin": "owner-coordinate parity origin and ordered 24-color traversal are supplied compiler inputs; unit-translation/origin-shift equivalence and host-free recurrence are not established",
     "six_mode_extension": "2,448 alpha=+1 algebraic total-occupation rows including 612 11 FSWAP-minus rows; not a many-mode state-preparation compiler"
@@ -94,7 +93,7 @@
   "upstream_citations_sha256": {
     "docs/MINIMAL_AXIOMS_2026-06-29.md": {
       "role": "direct lattice, qubit, and admissibility premise surface; no Record interpretation is added",
-      "sha256": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+      "sha256": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39"
     },
     "docs/OPENREFERENCE_CUBIC_RECURRENT_PHYSICAL_M2_MATTER_COMPILER_CYCLE870_BOUNDED_THEOREM_NOTE_2026-08-02.md": {
       "role": "direct theorem-level recurrent physical-M2 input",

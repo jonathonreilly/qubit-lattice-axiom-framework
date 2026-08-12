@@ -9,12 +9,10 @@
   },
   "acceptance_receipt_self_hash_excluded": true,
   "acceptance_source": "scripts/frontier_cycle873_recurrent_f17_uniform_affine_open_box_acceptance_2026_08_03.py",
-  "acceptance_source_sha256": "40e7c9c4e8ff98571ced2f676ddd9ae96016cbccb51738fc5c4e49ef65f96363",
+  "acceptance_source_sha256": "1edfcd18980ebba504922a7b05779c9400f96587462ab747320c9af70f2ae57f",
   "audit_input_missing": [],
   "audit_input_paths": [
     "docs/RECURRENT_F17_UNIFORM_AFFINE_OPEN_BOX_CYCLE873_BOUNDED_THEOREM_NOTE_2026-08-03.md",
-    "logs/runner-cache/frontier_cycle873_recurrent_f17_uniform_affine_open_box_primary_2026_08_03.txt",
-    "logs/runner-cache/frontier_cycle873_recurrent_f17_uniform_affine_open_box_independent_check_2026_08_03.txt",
     "outputs/cycle873_f17_open_box_local_constraints_core_receipt_2026_08_03.json",
     "outputs/cycle873_recurrent_f17_all_seam_physical_core_receipt_2026_08_03.json",
     "outputs/cycle873_recurrent_f17_uniform_affine_open_box_citation_manifest_2026_08_03.json",
@@ -56,7 +54,7 @@
   },
   "candidate_artifact_hash_drift": {},
   "candidate_artifact_sha256": {
-    "docs/RECURRENT_F17_UNIFORM_AFFINE_OPEN_BOX_CYCLE873_BOUNDED_THEOREM_NOTE_2026-08-03.md": "37bf888a461aac7f3929d0126a7a2b4c21f4fd01cc8e299ff6f8b42eba88e67f",
+    "docs/RECURRENT_F17_UNIFORM_AFFINE_OPEN_BOX_CYCLE873_BOUNDED_THEOREM_NOTE_2026-08-03.md": "c849718f5b125fabbf7c9c5b077d9e5a1edd8fd7561c60a5b757a92c9f40f56f",
     "logs/runner-cache/frontier_cycle873_recurrent_f17_uniform_affine_open_box_independent_check_2026_08_03.txt": "6689ee8aac078f36507af89c20a90a19ea0721d34af74b1a98318cec06c35812",
     "logs/runner-cache/frontier_cycle873_recurrent_f17_uniform_affine_open_box_primary_2026_08_03.txt": "72be1cd183bf85663c6726223f9db9fb61be3e80b6ed0f3d386f32849312eb74",
     "outputs/cycle873_f17_open_box_local_constraints_core_receipt_2026_08_03.json": "ed30056eaeeac03301849d3f386a6d8d0b7accbef2237b4c388e85a595212f1e",
@@ -94,7 +92,7 @@
     "physical": "pass",
     "primary": "pass"
   },
-  "citation_manifest_sha256": "4382c9eb7c73ef325a48e85c1c35ee474f8eb0438e0283a018bb62020c176774",
+  "citation_manifest_sha256": "ac61eb99f92025c5c2932536877fe88c883e29ab3a415eb5edc9e27053514c0e",
   "cold_runs": {
     "independent": {
       "canonical_log_sha256": "6689ee8aac078f36507af89c20a90a19ea0721d34af74b1a98318cec06c35812",

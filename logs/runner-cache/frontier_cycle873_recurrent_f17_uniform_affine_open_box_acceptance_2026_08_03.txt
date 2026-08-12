@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle873_recurrent_f17_uniform_affine_open_box_acceptance_2026_08_03.py
+runner_sha256: 1edfcd18980ebba504922a7b05779c9400f96587462ab747320c9af70f2ae57f
+input_fingerprint_sha256: c175de32865706a65af46d0b2e3ec095f3d1c47fb1ac0178abef19edbb799ce1
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 34.73
+status: ok
+----- stdout -----
+{
+  "base_commit": "c73a11d1ea7ddd564c48aa2a5a459a43d94262ef",
+  "base_is_ancestor_of_head": true,
+  "cycle873_unused_on_base": true,
+  "failures": [],
+  "independent_cold_receipt_match": true,
+  "package_file_count": 33,
+  "primary_cold_receipt_match": true,
+  "receipt": "outputs/cycle873_recurrent_f17_uniform_affine_open_box_package_acceptance_receipt_2026_08_03.json",
+  "status": "pass"
+}
+
+----- stderr -----
+

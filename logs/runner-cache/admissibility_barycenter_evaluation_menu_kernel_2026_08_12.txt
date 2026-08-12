@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_barycenter_evaluation_menu_kernel_2026_08_12.py
+runner_sha256: 75895a1294deec8ef80748638581cf32920f0e292598a4228906c0da1dfad98d
+input_fingerprint_sha256: 064aa5d24b3e6e378124c5686dfae3d87ad82869d51f66aa7f756d8cc969a8a9
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: axiom wording and the two parent notes are source-bound; no observational or fitted inputs
+kernel_formula: w(E)=Tr(rho_mu E) recomputed from 2x2 matrices; restriction and singleton mass are hostile controls
+negative_scope: restriction is not this kernel; non-affine kernels remain live
+PASS: source-admissibility the current distribution sentence is pinned in the axiom memo and the note
+PASS: source-parents both parent notes supply the restriction witness and the menu-independent trace form
+PASS: menu-resolutions both hostile menus are exact matrix resolutions of I by scaled projectors
+PASS: restriction-recompute atomic restriction recomputed from matrix traces is 25/142 on M_A and 2/11 on M_B with Z=509/200
+PASS: mixed-barycenter maximally mixed barycenter evaluation of E0 is 1/4 in both menus and both menus normalize
+PASS: biased-barycenter two non-mixed barycenters evaluate E0 to 3/10 and 2/5 in both menus
+PASS: disagree-restriction barycenter evaluation is not restriction on either menu, at mixed and biased barycenters
+PASS: spectral-endpoints each declared scaled projector saturates its matrix spectrum at the two eigenstate Diracs
+PASS: affine-uniqueness positivity plus spectral endpoints force the extracted Bloch coefficients to Tr(rho E)
+PASS: reject-wrong-kernels restriction is menu-dependent, and Tr(E)/2 plus an E0 Bloch extra fails additivity
+PASS: singleton-mass-two raw singleton normalization of the z and x projective menus still forces mass two
+PASS: binary-menu-kernel barycenter evaluation normalizes both projective binary menus at mixed and biased states
+PASS: note-contract machine-status fields, required phrases, and forbidden-word hygiene hold
+per_element: five declared scaled effects and the four projective binary atoms are checked by matrix traces
+per_site: the kernel, restriction rejector, and singleton-mass parent argument are one-site statements
+per_mode: Bloch coefficients of each declared effect are extracted; a perpendicular extra mode is rejected by positivity
+per_block: only the finite-support barycenter-evaluation block is constructed; restriction is not this kernel
+lattice_wide: checked and not executed — no lattice-wide dynamics, formation rate, or Record identification is claimed
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

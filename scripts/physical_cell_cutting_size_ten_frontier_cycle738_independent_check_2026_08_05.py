@@ -265,6 +265,17 @@ for row in incidence:
     row_bits.append(bits)
 pivots, pivot_rows = gf2_pivots(row_bits)
 gate(len(pivots) == 88, "independent.rank", "an independently selected 88-row basis pins every reading")
+consistent_targets = all(
+    len(gf2_pivots([
+        row | (int(bit) << 192) for row, bit in zip(row_bits, targets[name])
+    ])[0]) == len(pivots)
+    for name in NAMES
+)
+gate(
+    consistent_targets,
+    "independent.consistency",
+    "each bound reading lies in the reconstructed incidence column space before basis reduction",
+)
 
 
 def xor_clauses(literals, value, next_variable):

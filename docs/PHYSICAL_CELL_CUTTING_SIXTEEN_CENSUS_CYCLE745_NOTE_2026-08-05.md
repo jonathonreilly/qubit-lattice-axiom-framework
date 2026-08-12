@@ -52,9 +52,9 @@ order 384 whose images of the anchor piece reach all 192 pieces.
 
 ## Why an anchored slice is complete
 
-Every element of that group carries cuttings to cuttings and fixes each
-charge reading, so it maps sixteen-piece carriers of a charge to sixteen-piece
-carriers of the same charge. The group is transitive on the pieces, so every
+Every element of that group carries cuttings to cuttings and fixes each named
+algebraic reading, so it maps sixteen-piece carriers of a reading to
+sixteen-piece carriers of the same reading. The group is transitive on the pieces, so every
 carrier has at least one group image holding the chosen anchor piece. The
 anchored slice — the carriers through the anchor — therefore meets every
 group orbit of carriers, and the full census is recovered as the set of all
@@ -64,10 +64,10 @@ census holds exactly twelve sets for each anchored one.
 
 ## The anchored search
 
-Parity licensing leaves the same cell list for every charge: the licensed
-cells of a charge number 5, 14, 30, 55, 91, 140, 204 and 285 at the even
-sizes two to sixteen, the steps being consecutive odd squares, and all six
-charges license the same 285 cells at sixteen in one shared pass. Of those
+Parity licensing leaves the same cell list for every named nonconstant reading:
+the licensed cells of such a reading number 5, 14, 30, 55, 91, 140, 204 and
+285 at the even sizes two to sixteen, the steps being consecutive odd squares,
+and all six readings license the same 285 cells at sixteen in one shared pass. Of those
 285 cells, 204 hold a piece in the last quarter — and a subset through the
 anchor must, since the anchor lies there; the five planted readings share
 exactly that 204-cell list. The anchored tables enumerate exactly the
@@ -111,7 +111,7 @@ attainment claim.
 ## Boundary and honest read
 
 - Completeness of the census rests only on measured facts gated in this
-  runner: the fifty generators carry cuttings to cuttings, fix the charge
+  runner: the fifty generators carry cuttings to cuttings, fix the named algebraic
   readings, and act on the pieces with a single orbit. It does not rest on
   any claim that the group of order 384 is the full symmetry group of the
   system; that certification is the previous cycle's business and is not

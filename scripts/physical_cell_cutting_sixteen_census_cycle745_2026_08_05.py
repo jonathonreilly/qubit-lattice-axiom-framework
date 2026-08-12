@@ -6,12 +6,12 @@ length four, cut into pieces of least volume at the floor of the declared adjace
 represents a named algebraic reading when, on every cutting, the parity of how many of its pieces that
 cutting uses reproduces the reading. Earlier cycles completed the search at every even
 size up to fourteen and found none of the six named nonconstant readings, and the forced total
-parity of each charge bars every odd size, so sixteen is the first open size. This
+parity of each reading bars every odd size, so sixteen is the first open size. This
 runner rebuilds the two seeded order-two piece permutations that extend the 48 to fifty
 generators acting with a single orbit on the pieces and fixing all eight readings, so
 every sixteen-piece carrier of such a reading has an image through a chosen anchor piece. It
 then completes the anchored slice of the search at exactly sixteen, every subset drawn
-through the anchor, against the six charges, five planted sixteen-piece controls
+through the anchor, against the six named nonconstant readings, five planted sixteen-piece controls
 through the anchor, and one synthetic odd-total reading, and reconstructs the full
 census of each reading as the group images of its anchored slice, re-verifying every
 reconstructed member directly against the incidence columns and folding the census into
@@ -1702,7 +1702,7 @@ gate(set(nm for nm in BLK if FORCED[nm] is not None) >= {"total", "L", "R", "Q2"
      and all(fbit(nm, t) == 0 for t in SIX + PL16
              for nm in ("total", "L", "R", "Q2", "Q3"))
      and fbit("total", TCTL) == 1, "G11",
-     "each charge and each planted reading forces even total, side, and quarter "
+     "each named nonconstant reading and each planted reading forces even total, side, and quarter "
      "parities, and the synthetic reading forces an odd total")
 
 SEQ = [lic_count(m, 2) for m in range(2, 17, 2)]
@@ -1711,12 +1711,12 @@ ARITH = [sum((k + 1) * (m - 2 * k + 1) for k in range(m // 2 + 1))
 DIFF = [SEQ[i + 1] - SEQ[i] for i in range(7)]
 gate(SEQ == ARITH and SEQ == [5, 14, 30, 55, 91, 140, 204, 285]
      and DIFF == [(i + 3) * (i + 3) for i in range(7)], "G12",
-     "the licensed cells of a charge count 5,14,30,55,91,140,204,285 at the even sizes "
+     "the licensed cells of a named nonconstant reading count 5,14,30,55,91,140,204,285 at the even sizes "
      "two to sixteen, matching the closed sum, with consecutive odd squares as steps")
 CS = [frozenset(c for c in cells_of(16) if licensed_cell(c, 16, t)) for t in SIX]
 gate(all(cs == CS[0] for cs in CS) and len(CS[0]) == 285
      and all(lic_count(16, t) == 285 for t in SIX), "G13",
-     "all six charges license the same 285 cells at sixteen, one pass covers the six")
+     "all six named nonconstant readings license the same 285 cells at sixteen, one pass covers the six")
 gate(lic_count(16, TCTL) == 0, "G14",
      "the odd-total synthetic reading licenses no cell at sixteen")
 
@@ -1725,7 +1725,7 @@ gate(len(AL16) == 204 and all(
      frozenset(c for c in cells_of(16) if licensed_cell(c, 16, t) and c[3] >= 1)
      == frozenset(AL16) for t in SIX + PL16), "G15",
      "the licensed cells at sixteen with a piece in the last quarter number 204, and "
-     "the six charges and the five planted readings share exactly that list")
+     "the six named nonconstant readings and the five planted readings share exactly that list")
 
 # ---- Part 4c: the anchored engine, every enumerated subset holds the anchor ----
 ACOL, AQ, AE = 144, 3, 6
@@ -2026,6 +2026,17 @@ seeded_permutations = {
     "b0": [int(column) for column in b0],
     "b1": [int(column) for column in b1],
 }
+base_support_permutations = [
+    [int(column) for column in permutation] for permutation in CP
+]
+ordered_generator_support_permutations = base_support_permutations + [
+    seeded_permutations["b0"], seeded_permutations["b1"]
+]
+ordered_generator_support_permutations_sha256 = hashlib.sha256(
+    json.dumps(
+        ordered_generator_support_permutations, separators=(",", ":")
+    ).encode("utf-8")
+).hexdigest()
 receipt = {
     "schema": "physical-cell-cutting-sixteen-census-cycle745-v2",
     "status": "pass" if PF[1] == 0 else "fail",
@@ -2041,6 +2052,11 @@ receipt = {
         "cuttings": NS,
         "used_pieces": NPO,
         "incidence_rank": ERANK,
+    },
+    "incidence_identity": {
+        "canonical_incidence_rows_sha256": CANONICAL_INCIDENCE_ROWS_SHA256,
+        "support_column_order_sha256": SUPPORT_COLUMN_ORDER_SHA256,
+        "support_column_corner_tuples": [list(support) for support in SUPPORT_TUPLES],
     },
     "reading_identity": {
         "canonical_incidence_rows_sha256": CANONICAL_INCIDENCE_ROWS_SHA256,
@@ -2088,12 +2104,16 @@ receipt = {
     },
     "transitive_group": {
         "base_generator_count": len(CP),
+        "base_support_permutations": base_support_permutations,
         "seeded_support_permutations": seeded_permutations,
         "seeded_support_permutations_sha256": hashlib.sha256(
             json.dumps(seeded_permutations, separators=(",", ":"), sort_keys=True).encode(
                 "utf-8"
             )
         ).hexdigest(),
+        "ordered_generator_support_permutations_sha256": (
+            ordered_generator_support_permutations_sha256
+        ),
         "generated_order": len(EGL),
         "anchor_column": ACOL,
         "anchor_orbit_size": len(set(int(p[ACOL]) for p in EGL)),

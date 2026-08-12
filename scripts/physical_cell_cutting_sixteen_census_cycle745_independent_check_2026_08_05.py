@@ -279,6 +279,7 @@ primary_receipt = json.loads((ROOT / PRIMARY_RECEIPT_PATH).read_text(encoding="u
 
 
 def primary_contract_ok(receipt):
+    incidence_identity = receipt.get("incidence_identity", {})
     target_identity = receipt.get("target_identity", {})
     search = receipt.get("complete_anchored_search_at_sixteen", {})
     group = receipt.get("transitive_group", {})
@@ -293,6 +294,10 @@ def primary_contract_ok(receipt):
         and target_identity.get("canonical_incidence_rows_sha256")
         == canonical_incidence_hash
         and target_identity.get("support_column_order_sha256") == column_order_hash
+        and incidence_identity.get("canonical_incidence_rows_sha256")
+        == canonical_incidence_hash
+        and incidence_identity.get("support_column_order_sha256") == column_order_hash
+        and incidence_identity.get("support_column_corner_tuples") == column_order
         and len(target_identity.get("ordered_names", [])) == 18
         and target_identity.get("odd_control_non_column_space") is True
         and search.get("counts") == [11, 0, 0, 0, 0, 0, 2, 6, 12, 1, 3, 0]
@@ -360,10 +365,22 @@ for action in geometric_actions:
         permutation.append(position[piece_index[image]])
     base_permutations.append(np.array(permutation, dtype=np.int64))
 seeded = primary_receipt["transitive_group"]["seeded_support_permutations"]
+explicit_base_permutations = primary_receipt["transitive_group"].get(
+    "base_support_permutations", []
+)
+explicit_generator_hash = primary_receipt["transitive_group"].get(
+    "ordered_generator_support_permutations_sha256"
+)
 generators = base_permutations + [
     np.array(seeded["b0"], dtype=np.int64),
     np.array(seeded["b1"], dtype=np.int64),
 ]
+ordered_generator_lists = [
+    [int(column) for column in permutation] for permutation in generators
+]
+ordered_generator_hash = hashlib.sha256(
+    json.dumps(ordered_generator_lists, separators=(",", ":")).encode("utf-8")
+).hexdigest()
 row_lookup = {
     tuple(int(column) for column in np.flatnonzero(row)): index
     for index, row in enumerate(incidence)
@@ -397,7 +414,10 @@ while frontier:
     frontier = following
 group_hash = hashlib.sha256(b"".join(sorted(group))).hexdigest()
 anchor = primary_receipt["transitive_group"]["anchor_column"]
-gate(generator_ok and len(base_permutations) == 48 and len(group) == 384
+gate(generator_ok and len(base_permutations) == 48
+     and explicit_base_permutations == ordered_generator_lists[:48]
+     and explicit_generator_hash == ordered_generator_hash
+     and len(group) == 384
      and len({int(permutation[anchor]) for permutation in group.values()}) == 192
      and group_hash == primary_receipt["transitive_group"]["generated_group_sha256"],
      "independent.group",
@@ -576,6 +596,14 @@ receipt = {
         "order": len(group),
         "anchor_orbit_size": len({int(permutation[anchor]) for permutation in group.values()}),
         "generated_group_sha256": group_hash,
+        "explicit_support_column_corner_tuples_matched": (
+            primary_receipt["incidence_identity"]["support_column_corner_tuples"]
+            == column_order
+        ),
+        "explicit_base_support_permutations_matched": (
+            explicit_base_permutations == ordered_generator_lists[:48]
+        ),
+        "ordered_generator_support_permutations_sha256": ordered_generator_hash,
     },
     "exact_anchored_weight_sixteen_counts": anchored_counts,
     "exact_anchored_weight_sixteen_answers": {

@@ -1762,16 +1762,25 @@ gate(EL < 900.0 and RSS < float(RSB), "G33",
          900, 2500))
 
 N5 = [
-    "per_element: checked -- all 192 columns enter every exact support search",
-    "per_site: checked -- one supplied 16-corner coordinate cell only",
-    "per_mode: checked and not executed -- this finite model has no modes",
-    "per_block: checked -- all 15800 rows and every licensed search cell",
-    "lattice_wide: checked and not executed -- no multicell or limit claim",
+    "per_element: checked -- all 192 columns",
+    "per_site: checked -- one supplied coordinate cell",
+    "per_mode: checked, not executed -- no modes",
+    "per_block: checked -- all 15800 rows and licensed cells",
+    "lattice_wide: checked, not executed -- no limit claim",
 ]
 for line in N5:
     emit("N5 " + line)
-CH = OUT[0] + 180
-gate(CH < 6000, "G34", "its output stays under {0} characters".format(6000))
+g34_detail = "the complete output stays under 6000 characters"
+receipt_line = "RECEIPT " + str(RECEIPT_PATH.relative_to(ROOT))
+future_pass = "PASS G34  " + g34_detail
+future_fail = "FAIL G34  " + g34_detail
+future_total_pass = "TOTAL: PASS={0} FAIL={1}".format(PF[0] + 1, PF[1])
+future_total_fail = "TOTAL: PASS={0} FAIL={1}".format(PF[0], PF[1] + 1)
+CH = OUT[0] + max(
+    len(future_pass) + len(future_total_pass),
+    len(future_fail) + len(future_total_fail),
+) + len(receipt_line) + 4
+gate(CH < 6000, "G34", g34_detail)
 
 receipt = {
     "schema": "physical-cell-cutting-fourteen-frontier-cycle741-v2",
@@ -1846,7 +1855,7 @@ receipt = {
 receipt_tmp = RECEIPT_PATH.with_suffix(RECEIPT_PATH.suffix + ".tmp")
 receipt_tmp.write_text(json.dumps(receipt, indent=2, sort_keys=True) + "\n", encoding="utf-8")
 receipt_tmp.replace(RECEIPT_PATH)
-emit("RECEIPT " + str(RECEIPT_PATH.relative_to(ROOT)))
+emit(receipt_line)
 emit("")
 emit("TOTAL: PASS={0} FAIL={1}".format(PF[0], PF[1]))
 sys.exit(1 if PF[1] else 0)

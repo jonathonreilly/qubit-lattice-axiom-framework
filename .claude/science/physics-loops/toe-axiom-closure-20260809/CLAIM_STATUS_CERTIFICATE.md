@@ -2038,3 +2038,31 @@ lines are in the landing primary cache.
   nearest-neighbor attachment. Physical CP compilation, time/rate,
   multi-front/global resources, law selection/adoption, audit retention, and
   TOE percentage movement remain open. No `review-loop` is used.
+
+## Block 64 Claim Status Certificate
+
+- Local law: one homogeneous three-clause rule reads only the six strict
+  nearest neighbors and forces `head -> relay -> outcome -> next head` on an
+  alternating-square single front.
+- Kernel/carriers: the exact Block-63 state-dependent trace kernel and CP
+  instrument survive. Fixed decoders pass 1,104 cases; the two incompatible
+  menus retain one literal shared `E0` carrier; 72/72 active covariance
+  controls and 1,440 exact branch intertwiners close.
+- History: all 243 length-five cylinders and 81 held marginals pass, with two
+  distinct positive-weight contingent histories after the counterfactual law
+  is fixed.
+- Unique answer/permanence: 5/5 symbolic role relations and 16/16 two-residue
+  accumulated-history cases prove the local induction; the exact support is
+  `3N+1` for arbitrary `N`, with 193 Records at `N=64`.
+- Hostile controls: nine mutations—state independence, contextual shared
+  effect, broken projectivity, coherent actuality, nonlocal relay, premature
+  finalization, host schedule, finite stock, and broadened boundary—each fail
+  exactly one aggregate check.
+- Evidence: primary/cache `PASS=8 FAIL=0`; graph `5,510/15,789`, out-degree
+  two; all direct gates pass. Science commit is `bd7804aedb`. An independent
+  read-only agent found no material mathematical or locality blocker.
+- Scope: proposed `positive_theorem` for the declared unbounded single-front
+  domain only. Audit owns claim typing and retained status. Autonomous matter
+  formation, physical occurrence/rate/clock, multi-front/full-`Z^3` dynamics,
+  source/gravity binding, law selection/adoption, and every TOE percentage
+  remain open. No `review-loop` is used.

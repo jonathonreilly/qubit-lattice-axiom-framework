@@ -1150,3 +1150,16 @@ history law, and arbitrary-`N` 22-record append proof. Primary/cache is
 radius-three boundary prevents current nearest-neighbor attachment. No
 canonical axiom, fixed TOE percentage, positive retention, audit verdict, or
 `review-loop` changes. Landing order will place Block 63 after #6155.
+
+## Block 64
+
+PR creation is pending on
+`physics-loop/toe-axiom-closure-block64-strict-nn-record-front-20260812`,
+stacked exactly on Block-63 delivery head `11abac13d3`. Its distinct review
+object is the homogeneous strict-nearest-neighbor alternating-square front,
+unique local active-site induction, unchanged state-dependent CP/history law,
+and arbitrary-`N` `3N+1` permanent support. Primary/cache is
+`PASS=8 FAIL=0`; nine mutations fail one aggregate check each. An independent
+read-only challenge found no mathematical/locality blocker. No canonical
+axiom, fixed TOE percentage, positive retention, audit verdict, or
+`review-loop` changes. Landing order will place Block 64 after #6156.

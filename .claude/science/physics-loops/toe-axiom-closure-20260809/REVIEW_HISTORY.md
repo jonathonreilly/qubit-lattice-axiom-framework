@@ -2792,3 +2792,33 @@ instance or Fourier census.
   all direct gates pass. Science commit is `fe4f5265a0`; PR #6156 is open,
   mergeable, and `CLEAN`. This is zero TOE percentage movement and no
   `review-loop`.
+
+## Block 64 Construction And Independent Challenge
+
+- Replaced the radius-three 22-write front with one homogeneous alternating-
+  square radius-one rule having exactly three writes per event.
+- Preserved the state-dependent trace kernel, measure-and-prepare instrument,
+  two incompatible menus, literal within-Block-64 shared `E0` outcome,
+  projective cylinders, and contingent-member semantics.
+- Distinguished productive occupied offsets from clause guards: the
+  implementation inspects occupancy/type at all six nearest neighbors and no
+  site outside that radius.
+- Proved the unique-active-site induction with 5/5 abstract role relations
+  and 16/16 accumulated-history parity cases. The support proof covers both
+  initial phases and gives `3N+1` permanent Records for arbitrary `N`.
+- Primary/cache is `PASS=8 FAIL=0`; nine named mutations each exit nonzero
+  with exactly one failure. Graph registration is `5,510/15,789`, out-degree
+  two. Vocabulary, strict lint, premise purity, model normalization,
+  Python/cache, staged claim typing, whitespace, N1--N8, and enforced
+  graph/link invariants pass.
+- The independent read-only agent found and prompted three proof-surface
+  clarifications before commit, then reran 8/8, exhaustive depth-five branch
+  trees, `N=128` opposite-phase/translated execution, literal shared effects,
+  and 576 covariance combinations with zero failures. It found no material
+  mathematical/locality blocker and judged `positive_theorem` defensible in
+  the exact single-front scope; it made no audit verdict or retained claim.
+- Science commit is `bd7804aedb`, on exact Block-63 delivery
+  `11abac13d3`. The radius-three construction wall is retired, but autonomous
+  matter formation, physical law selection, time/rate, multi-front/global
+  composition, source/gravity binding, audit retention, and all TOE scores
+  remain open. No `review-loop` is used.

@@ -1653,3 +1653,32 @@ complete conditional nonlinear compact solution:
 - next artifact: preserve this exact kernel/history test suite while compiling
   a one-head radius-one front or the Cycle-85 strict-NN recurrence; a failure
   is a decisive candidate demotion, not a request for parameter scans
+
+## Block 64 Contract And Result
+
+- contract: port the unchanged Block-63 state-dependent CP kernel, literal
+  shared-effect property, projective contingent histories, and permanent
+  renewal to one homogeneous strict-nearest-neighbor rule without a host
+  program, nonlocal header, state-specific table, refreshed blanks, or
+  coherent actuality
+- implemented one alternating-square three-write cell
+  `H_n -> C_n -> O_n -> H_(n+1)`; every clause reads only the six radius-one
+  neighbors, and the outcome remains a separate literal Record
+- primary/cache is `PASS=8 FAIL=0`; nine targeted mutations each fail exactly
+  one aggregate check
+- exact proof surface includes 1,104 carrier decodes, 72/72 active
+  rotation/translation controls, 480 local contexts, 1,440 stochastic branch
+  intertwiners, 5/5 symbolic active-site relations, 16/16 accumulated-history
+  parity cases, and exact `3N+1` support for arbitrary `N`
+- science commit is `bd7804aedb`; citation registration is
+  `5,510/15,789`, out-degree two; all direct gates pass
+- an independent read-only agent reran the final 8/8 surface plus exhaustive
+  depth-five histories, `N=128`, both phases, translation, shared-effect, and
+  576 covariance controls and found no mathematical/locality blocker
+- decisive boundary: this is a proposed `positive_theorem` only for the
+  declared unbounded single-front domain; it retires the radius-three
+  construction wall but no scored TOE obligation
+- next artifact: attach the exact front to autonomous matter formation and
+  renewal. If the seed, clean support, admission event, kernel/menu, rate,
+  clock, or action decoder remains supplied, record that as the precise
+  extensional-law/axiom selection wall rather than extending the compiler

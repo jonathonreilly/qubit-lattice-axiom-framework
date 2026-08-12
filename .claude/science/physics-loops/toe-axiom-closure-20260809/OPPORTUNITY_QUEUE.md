@@ -504,3 +504,26 @@ gravity:
 
 Allocation stays 65/20/10/5. Block 63 is route progress, not TOE progress;
 the map remains unchanged for roughly 60 hours.
+
+## Post-Block-64 Portfolio Recheck
+
+The former rank-one radius-one construction target passed. That retires a
+named route wall but no scored obligation, because the law remains a supplied
+single-front candidate. The shortest science path to positive end-to-end
+retention is now the matter/formation attachment that was previously rank
+two—not additional Born fixtures or gravity refinement.
+
+| Rank | Next target | Acceptance | Kill/pivot condition |
+|---:|---|---|---|
+| 1 | autonomous matter seed and renewal compiler for the Block-64 front | a current local matter process writes/adopts the first head and renews the front without external clean support, host admission, or a supplied event schedule; preserve all Block-64 kernel/history/locality tests | if seed identity, admission event, clean support, menu/kernel, occurrence, rate, or decoder remains freely supplied, isolate the independent choices and move directly to the smallest axiom/joint-law decision surface |
+| 2 | conserved transition-source and causal/TT composition | decode each accepted front event into the existing balanced transition current and prove exact sourced constraint propagation within the finite-depth causal cone | stop if cumulative permanent Record count is reused as source, signature continuation is implicit, or the physical state/clock remains external |
+| 3 | multi-front/full-`Z^3` totalization | define collision, shared-resource, and inactive-background behavior while preserving projective histories and local uniqueness | demote if totalization needs a global ordering or boundary oracle |
+| 4 | terminal gravity observable/refinement quotient | run only if ranks 1–2 expose a gravity-specific dependency or stall on a named independent wall | freeze after one pass/kill; no source, period, coefficient, or precision scan |
+
+Working allocation becomes `60%` autonomous matter attachment, `20%`
+transition-source/causal composition, `10%` multi-front totalization, and
+`10%` terminal gravity or exact axiom-decision packaging. Recheck every three
+hours. A block qualifies only if it attaches a field to the joint law,
+retires a scored obligation, decisively kills the candidate, or proves that a
+specific extensional datum must be selected. The fixed TOE percentages remain
+unchanged.

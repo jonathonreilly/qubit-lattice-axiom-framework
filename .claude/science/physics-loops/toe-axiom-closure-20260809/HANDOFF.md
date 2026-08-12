@@ -2500,3 +2500,41 @@ and global resources also remain open. The next block must port the unchanged
 kernel/history suite to a one-head radius-one front or the Cycle-85 strict-NN
 recurrence with absence finalization. Do not return to a rotor, copy/dephase
 actualizer, coefficient scan, or standalone gravity block.
+
+## Block 64 Handoff
+
+Block 64 removes the exact Block-63 radius-three construction wall. One
+homogeneous radius-one rule uses alternating square cells and three local
+writes per event: head to context relay, relay to one state-dependent
+stochastic pure-outcome Record, and old head plus that outcome to the next
+head. Record permanence disables every completed target, so the rule itself
+supplies the unique microstep order; no host schedule is used.
+
+The unchanged kernel/history suite passes. Primary/cache is
+`PASS=8 FAIL=0`; nine targeted mutations each fail exactly one aggregate
+check. The proof surface contains 1,104 exact decodes, 72/72 active covariance
+controls, 480 local contexts, 1,440 exact branches, 5/5 symbolic induction
+relations, 16/16 accumulated-history parity cases, and exact arbitrary-`N`
+support `3N+1` (193 Records at `N=64`). Citation registration is
+`5,510/15,789`, out-degree two; all direct gates pass. Science commit is
+`bd7804aedb`.
+
+An independent read-only challenge reran the final 8/8 result, exhaustively
+checked depth-five branch trees, tested `N=128` in the opposite phase, all
+shared-effect frames, translations, and 576 outer covariance combinations,
+and found no mathematical or locality blocker. It issued no audit verdict.
+
+This is the first proposed positive unbounded single-front theorem in the
+reset Record/Born/history route, and it is significant route progress. It is
+still zero scored TOE progress: the front begins from a supplied head on a
+declared blank strip and does not select its effect menu/kernel, occurrence,
+rate, clock, action decoder, multi-front collision law, full-`Z^3` domain, or
+source/gravity composition. Audit retention and owner adoption are open.
+
+The portfolio now pivots to autonomous matter attachment/renewal. Preserve
+Block 64 unchanged and try to generate/admit the first head and continuing
+front from a current matter engine without supplied clean support or a host
+scheduler. If exact local construction succeeds, bind its conserved
+transition source into the existing causal/TT law. If the remaining choices
+are extensional rather than derivable, stop and produce the smallest complete
+axiom decision surface; do not substitute another carrier or fixture scan.

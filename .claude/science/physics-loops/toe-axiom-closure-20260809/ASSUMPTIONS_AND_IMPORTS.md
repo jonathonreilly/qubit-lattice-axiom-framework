@@ -1004,3 +1004,30 @@ No strict-nearest-neighbor attachment, absence finalization, formation rate,
 physical clock, multi-front collision law, full-`Z^3` state, physical law
 selection, owner adoption, axiom edit, positive retention, audit verdict, TOE
 percentage move, or `review-loop` is imported.
+
+## Block 64 Assumptions And Imports
+
+Block 64 imports the current minimal axioms and the exact Block-63 kernel,
+instrument, menus, density/effect formulas, projective-history recursion, and
+mathematical contingent-member typing. Its runner imports only the checked-in
+Block-63 helper module; no never-mainlined historical branch or audit status
+is read.
+
+The Pauli-adjoint proper-cubic action, frame vector `(1,2,3)`, central role
+codes, carrier decoders, binary program toggle, initial head, initial phase,
+innovation prefix, and blank infinite width-three strip are supplied
+candidate-law/domain data. The Block-64 outcome carrier is an injective label
+shift of the Block-63 carrier; the kernel, branch state, history law, and
+literal equality of the shared outcome within Block 64 are unchanged.
+
+Clause guards inspect occupancy/type at all six nearest neighbors. No
+explicit absent-neighbor symbol, host clock, coordinate, external program
+counter, finite stock recycling, or refreshed blank is imported. Outcome-
+gated writing at an unrecorded target is the exact “absence finalization”
+used by the construction.
+
+No autonomous seed or matter-gate compiler, occurrence mechanism, formation
+rate, physical clock, multi-front collision/resource rule, total full-`Z^3`
+law, source/gravity binding, physical selection, owner adoption, axiom edit,
+positive retention, audit verdict, TOE percentage move, or `review-loop` is
+imported.

@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/two_nn_varying_laws_are_admissibility_shaped_axioms_pick_neither_2026_08_13.py
+runner_sha256: d59f77117058b33484ca0ba5e71e30e3ed87300cd30c9222768f22a71a313c15
+input_fingerprint_sha256: 7a1516a65860c38f148750a6a7982e82817dffbe909ca67f7219705859a6ad5b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+external_scientific_inputs: current axiom wording only; no observational or fitted inputs
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency
+negative_scope: function-selection on one occupancy coarse-grain; later selectors remain live
+PASS: source-admissibility the exact current distribution sentence is present
+PASS: source-one-fixed-rule Admissibility names one fixed nearest-neighbor rule
+PASS: source-form-values-open the axiom memo leaves the distribution form and values unspecified
+PASS: identity-mu1-at-1 mu1(n) equals 1/6 at n=1
+PASS: identity-mu2-at-1 mu2(n) equals 1/4 at n=1
+PASS: identity-mu1-at-2 mu1(n) equals 1/3 at n=2
+PASS: identity-mu2-at-2 mu2(n) equals 3/8 at n=2
+PASS: identity-gates-call-mu identity gates call mu1(n) and mu2(n)
+PASS: theorem-1-variation both laws vary with n
+PASS: theorem-2-disagreement the two laws disagree at n=2
+PASS: mutation-mu1-equals-mu2-fails-at-n2 the predicate mu1=mu2 fails at n=2 because 1/3 != 3/8
+PASS: mutation-axioms-force-half-fails-at-n2 the predicate axioms force mu(A)=1/2 for all n fails at n=2
+PASS: mu2-full-support mu2(n) stays in (0,1) for every occupancy class
+PASS: mu1-zero-clause mu1 uses the full-support n=0 clause and the occupancy fraction thereafter
+PASS: note-theorem-surface the note records both identities, non-adoption, no universal half-weight, and an open later selector
+PASS: note-n5-theorem-4 N5 is attached to Theorem 4 and refuses L_phys adoption and a universal half-weight
+PASS: claim-type-contract the author hint uses the exact bounded-theorem enum
+PASS: machine-status-contract the source uses the controlled bounded-support fields
+PASS: canonical-nonmutation the displayed occupancy laws are absent from the canonical axiom file
+PASS: no-go-gate all N1-N8 sections and the broad-claim rejection are source-visible
+PASS: audit-input-paths declared inputs are the new note and the axiom memo only
+PASS: no-unmerged-pr-citation the note cites no unmerged pull-request numbers
+per_element: identity gates evaluate mu1(n) and mu2(n) at n=1 and n=2
+per_site: one center site with menu {A,B}; no composite carrier
+per_mode: occupancy classes n=0,...,6 are the declared coarse-grain
+per_block: function-selection only; neither law is adopted as L_phys
+lattice_wide: checked and not executed — no lattice-wide dynamics claim
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

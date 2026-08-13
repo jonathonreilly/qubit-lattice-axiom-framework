@@ -1,0 +1,53 @@
+===== runner cache v1 =====
+runner: scripts/energy_dictionary_mobius_interpolation_uniqueness_2026_08_13.py
+runner_sha256: 4d0965e8545cdca9df760c0e6906ed7a738a4a0f97717caff5de895b3a42f759
+input_fingerprint_sha256: 9ea2764bdd2af965974e92b9c7716ee04418c43729d63437c4e2b678d9148440
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.45
+status: ok
+----- stdout -----
+external_scientific_inputs: July 12 Residual Atom 2 and the three named endpoints are source-bound; no observational or fitted inputs are used
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency; no runner cache is written
+negative_scope: Residual Atom 2 is not derived; universal r=1/2 is rejected; two-point Möbius interpolation remains non-unique
+PASS: audit-input-paths declared audit inputs exist and match the note, July 12 relocation note, and axiom memo
+PASS: source-residual-atom-2 July 12 Residual Atom 2 names the identification as a declared modeling element and records r = (1-w)/(2w)
+PASS: source-named-endpoints July 12 names quotient counting w=1/2, carrier-trace w=1/3, and domain endpoint w=1
+PASS: source-record-additivity the exact current Record additivity sentence is present in the axiom memo
+PASS: theorem-1-nullspace-dimension the three-point interpolation matrix has a one-dimensional nullspace
+PASS: theorem-1-scale-class normalizing α=1 yields the coefficient class (1,-1,-2,0)
+PASS: theorem-1-nonconstant the solved representative has αδ-βγ ≠ 0
+PASS: theorem-1-equals-identity-gate the solved Möbius map is identically (1-w)/(2w)
+PASS: theorem-1-endpoints r_of_w and the solved map send 1,1/2,1/3 to 0,1/2,1
+PASS: theorem-2-inverse-endpoints w_of_r sends 0,1/2,1 to 1,1/2,1/3
+PASS: theorem-2-inverse-roundtrip w_of_r inverts r_of_w at the three endpoints
+PASS: theorem-2-q-composition Q_of_r(r_of_w(w)) equals 1/(3w) and is 1/3,2/3,1 at the three endpoints
+PASS: theorem-2-wrong-closed-form (2-w)/(3w) misses Q(w=1/2)=2/3
+PASS: theorem-3-two-point-dimension the two-point interpolation matrix has a two-dimensional nullspace
+PASS: theorem-3-two-point-witness r_2pt=(3/2)(1-w) hits w=1→0 and w=1/3→1 but misses w=1/2→1/2
+PASS: theorem-3-r-alt-rejector (1-w)/w at w=1/2 equals 1, not 1/2
+PASS: mutation-alt-fails-half replacing r_of_w by (1-w)/w fails w=1/2 → 1/2
+PASS: mutation-lin-fails-third replacing r_of_w by 1-w fails w=1/3 → 1
+PASS: mutation-universal-r-half-fails the predicate that the dictionary forces r=1/2 for every sector fails at w=1/3
+PASS: theorem-5-nonnegative-image r_of_w maps the sample in (0,1] into r ≥ 0
+PASS: theorem-5-half-is-one-point r=1/2 is the image of w=1/2 only on the sample
+PASS: theorem-5-difference-identity r_of_w(w)-1/2 equals (1-2w)/(2w) and is nonzero at w=1/3
+PASS: note-pins-declared-modeling the note quotes Residual Atom 2 as a declared modeling element and quotes r = (1-w)/(2w)
+PASS: note-pins-endpoints-and-rejector the note records the three endpoints and the rejector (1-w)/w
+PASS: note-links-parents the note links the axiom memo and the July 12 relocation note
+PASS: claim-type-contract the author hint uses the exact bounded-theorem enum
+PASS: machine-status-contract the source uses the controlled bounded-support fields
+PASS: forbidden-rhetoric-absent the note avoids axiom-adoption, promotion, executor-name, and campaign rhetoric
+PASS: note-quotes-additivity the note quotes the current Record additivity sentence
+PASS: canonical-nonmutation the Möbius uniqueness claim is absent from the canonical axiom file
+PASS: july12-declares-not-derives July 12 still presents the energy dictionary as a declared modeling element
+PASS: n5-scoped-negatives five N5 resolution lines are present and scoped
+per_element: the three named endpoints and the coefficient 4-tuple are evaluated under r_of_w
+per_site: the statements are two-cell menu statements; no composite carrier is asserted
+per_mode: the channel split and dial r=|b|^2/a^2 are scoped; no spectral-mode exhaustion is claimed
+per_block: only Möbius 3-point uniqueness, the 2-point family, and Theorems 4-5 are tested
+lattice_wide: checked and not executed — no lattice-wide dictionary or universal r=1/2 is claimed
+TOTAL: PASS=32 FAIL=0
+
+----- stderr -----
+

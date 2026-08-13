@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/second_c8_with_minus_y0_cancels_cubic_and_is_extra_2026_08_13.py
+runner_sha256: 9fd72ce94451ca242a2143fc70543adc279171635fd9c971f4b58a3effa9edf9
+input_fingerprint_sha256: 3c320a71a7a6f756d09e67020902abb63dea4220f9a91b32c5803cde98c8ab32
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+PASS: source-parent-ratio May 2 parent states the 1 : (-3) multiplicity ratio
+PASS: source-parent-no-sm-y May 2 parent keeps SM hypercharge identification out of scope
+PASS: source-qubit-m2 Qubit one-site domain is M_2(C) and names neither second C^8 nor Y_oplus
+PASS: source-note-theorems note states the five theorems and the extra-object bound
+PASS: source-note-negative-scope note adopts no generation axiom and does not close P-HY
+PASS: projectors Pi_+ and Pi_- are complementary rank-(6,2) projectors on C^8
+PASS: first-block-ratio Y_0 keeps the parent (6,2) spectrum 1 x6 and -3 x2
+PASS: identity-cubic-Y0 Tr(Y_0^3) equals reconstructed 6*(1)^3 + 2*(-3)^3
+PASS: identity-cubic-Yplus Tr(Y_oplus^3) vanishes by the complementary block
+PASS: dim-extra dim H = 16 exceeds one-site C^2 and one C^8
+PASS: minimality-opposite-octet opposite spectrum of Y_0 occupies eight eigenvalues
+PASS: mutation-cubic-zero predicate Tr(Y_0^3)=0 fails because the cubic is 6-54
+PASS: mutation-m2-contains-yplus predicate one-site M_2 contains Y_oplus fails (dim 16 vs 2)
+PASS: identity-gates-call-cubics identity gates call cubic_Y0() and cubic_Yplus()
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the new note, the May 2 note, and the axiom memo
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

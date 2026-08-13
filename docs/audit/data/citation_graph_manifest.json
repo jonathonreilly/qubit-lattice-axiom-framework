@@ -1,6 +1,6 @@
 {
- "edge_count": 15600,
- "node_count": 5486,
+ "edge_count": 15601,
+ "node_count": 5487,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -13313,6 +13313,10 @@
   "occupancy_nonexclusivity_mixture_bound_note_2026-06-09": {
    "deps_hash": "188680808cab",
    "out_degree": 3
+  },
+  "occupancy_pattern_is_smallest_complete_formation_input_bounded_theorem_note_2026-08-13": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "occupancy_readout_exponent_berezin_subsumption_bounded_theorem_note_2026-06-09": {
    "deps_hash": "95b72757a210",

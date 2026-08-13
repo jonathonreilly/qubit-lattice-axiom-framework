@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/i_empty_zero_is_not_a_vacuum_energy_2026_08_13.py
+runner_sha256: f3b5c43cee3d155ccf5f7b49ec08e84cdc55d783e46e70e578a89f141c0f771a
+input_fingerprint_sha256: 6644deb13d6aa994d69c2c5a6e35ea837a0b202294dd2a057896ed36e67fcbd9
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+external_scientific_inputs: axiom wording and the realized-state primitive are source-bound; no observational or fitted inputs are used
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency
+PASS: i-empty-zero I_empty() equals 0 as the lock count of the empty collection
+PASS: additivity-empty-union I(empty ∪ empty) equals I_empty() + I_empty()
+PASS: additive-identity-unique I_empty() = I_empty() + I_empty() forces the unique rational 0
+PASS: trial-e0-one trial_E0(1) is the well-defined rational 1 and is not I_empty()
+PASS: trial-e0-half trial_E0(1/2) is the well-defined rational 1/2 and is not 0
+PASS: trial-e0-zero-is-still-extra trial_E0(0) equals I_empty() as a rational and remains an extra object
+PASS: mutation-equals-one the predicate I(empty)=1 fails
+PASS: mutation-selects-half the predicate I(empty) selects E0=1/2 fails
+PASS: identity-gates-present identity gates I_empty() and trial_E0() are defined and called
+PASS: source-record the axiom memo states finite additivity with I(empty)=0
+PASS: source-realized-state the realized-state primitive states pointwise evaluation and no averaging
+PASS: note-theorem-1 the note recomputes I(empty ∪ empty)=I(empty)+I(empty) ⇒ I(empty)=0
+PASS: note-theorem-2 the note states E0=1 and E0=1/2 are unequal to I(empty)
+PASS: note-theorem-3 the note quotes pointwise evaluation and refuses a selectable vacuum readout
+PASS: note-theorem-4 the note displays E0=1 as extra, does not adopt it, and claims no cosmology
+PASS: note-theorem-5 the note does not identify E0 with r, w, or G_N and does not force r=1/2
+PASS: note-mutation the note requires I(empty)=1 and I(empty) selects E0=1/2 to fail
+PASS: note-forbidden-surface the note has no adoption phrasing and cites no unmerged pull request
+PASS: canonical-nonmutation the displayed trial constant E0 is absent from the canonical axiom file
+PASS: claim-type-contract the author hint uses the exact bounded-theorem enum
+PASS: parents-unmutated the axiom identity and the realized-state pointwise sentence remain
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the new note, axiom memo, and realized-state primitive
+per_element: I_empty() and trial_E0() are the only identity gates
+per_site: the empty collection is the only record collection used
+per_mode: trial values are 1 and 1/2; r=1/2 is not forced
+per_block: rejected blocks are I(empty)=1 and I(empty) selects E0=1/2
+lattice_wide: checked and not executed — no lattice-wide claim is made
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

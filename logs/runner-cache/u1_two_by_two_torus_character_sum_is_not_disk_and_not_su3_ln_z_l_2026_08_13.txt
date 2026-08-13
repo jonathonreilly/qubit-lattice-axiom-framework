@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/u1_two_by_two_torus_character_sum_is_not_disk_and_not_su3_ln_z_l_2026_08_13.py
+runner_sha256: 55362033b4a7c2ba297581a6399eeceff7303a1b130375b7ddc929110eaa312f
+input_fingerprint_sha256: 50b60b31973ece1f642d90c6bc1b40ed7e86881e6fdb36aa08f3cdb6bba3f1c0
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+PASS: audit-parent-quote — June 10 parent names the four-dimensional ln Z_L enclosure target
+PASS: audit-axiom-memo — axiom memo is present as Lattice/Qubit/Admissibility/Record premises
+PASS: audit-note-inputs — source note cites the June 10 parent, the axiom memo, and the quote
+PASS: identity-s10-beta2 — i_n_partial(1, 2, 0) equals (2/2)^1/(0!1!) = 1
+PASS: theorem1-gap — 2 I_1(2)^4 >= 2 so Z_T(2) >= Z_D(2)+2
+PASS: mutation-zt-equals-zd — predicate Z_T = Z_D fails at beta=2 (gap >= 2)
+PASS: identity-s10-beta1 — i_n_partial(1, 1, 0) equals 1/2
+PASS: theorem2-gap — Z_T(1) - Z_D(1) >= 2*(1/2)^4 = 1/8
+PASS: remainder-q-contractive — every q_n(6) at |n|<=2 and beta in {1,2,3} is strictly less than 1
+PASS: remainder-nonnegative — factorial majorants t_7/(1-q) are nonnegative Rationals
+PASS: theorem3-enclosures — I_0 and I_1 at beta in {1,2,3} match the note's exact rational intervals
+PASS: theorem3-model-only — note states that a perfect table of Z_T is this 2D U(1) 2x2 torus model only
+PASS: identity-plaquette-count-4d — plaquette_count_4d(2) equals 6*2^4 = 96
+PASS: theorem4-count-mismatch — N_p=4 is not N_p(L=2)=96 of four-dimensional SU(3)
+PASS: theorem4-group-mismatch — note records U(1) is not SU(3) and quotes the June 10 ln Z_L sentence
+PASS: mutation-zt-is-ln-zl — predicate Z_T is 4D SU(3) ln Z_L fails (4 != 96)
+PASS: identity-term-ratio — t_{k+1}/t_k equals (beta/2)^2/((k+1)(k+1+n)) at n=1, beta=2, k=0
+PASS: theorem5-refusals — note refuses axiom rewrite, Z_T-for-f_L substitution, and four-dimensional <P>*
+PASS: audit-input-paths — declared AUDIT_INPUT_PATHS exist on disk
+PASS: n5-length — each N5 resolution line is at least 40 characters
+per_element: I_n partial sums and remainder majorants at beta in {1,2,3} are exact Fractions
+PASS: n5-length — each N5 resolution line is at least 40 characters
+per_site: the 2x2 torus is four plaquettes; no 4D site configuration is sampled
+PASS: n5-length — each N5 resolution line is at least 40 characters
+per_mode: the character index n is checked; no 4D transfer-matrix mode is claimed
+PASS: n5-length — each N5 resolution line is at least 40 characters
+per_block: only Z_T versus Z_D gaps and the 4-versus-96 type split are executed
+PASS: n5-length — each N5 resolution line is at least 40 characters
+lattice_wide: checked and not executed — no 4D SU(3) ln Z_L enclosure is claimed
+TOTAL: PASS=24 FAIL=0
+
+----- stderr -----
+

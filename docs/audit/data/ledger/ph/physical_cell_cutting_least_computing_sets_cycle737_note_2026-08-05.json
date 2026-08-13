@@ -12,7 +12,7 @@
   "blocker": null,
   "chain_closes": null,
   "chain_closure_explanation": null,
-  "claim_id": "physical_exact_adjacency_dissection_bracket_cycle725_note_2026-08-03",
+  "claim_id": "physical_cell_cutting_least_computing_sets_cycle737_note_2026-08-05",
   "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
@@ -24,21 +24,24 @@
   "decoration_parent_claim_id": null,
   "deps": [
     "minimal_axioms",
-    "kinetic_isotropy_primitive"
+    "kinetic_isotropy_primitive",
+    "physical_cell_cutting_charge_space_cycle736_note_2026-08-05"
   ],
-  "direct_in_degree": 7,
+  "direct_in_degree": 5,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
-  "helper_runner_paths": [],
+  "helper_runner_paths": [
+    "scripts/physical_cell_cutting_least_computing_sets_cycle737_independent_check_2026_08_05.py"
+  ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 8.5,
+  "load_bearing_score": 5.67,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "f080cc51bda354b6dd780c3bb67e81a6a0f95cc25a71153c23998100d04aa8e9",
-  "note_path": "docs/PHYSICAL_EXACT_ADJACENCY_DISSECTION_BRACKET_CYCLE725_NOTE_2026-08-03.md",
+  "note_hash": "eab3120bdee580b4b54561740659ebe142bc543c95901c00fa71e04c7d558a5a",
+  "note_path": "docs/PHYSICAL_CELL_CUTTING_LEAST_COMPUTING_SETS_CYCLE737_NOTE_2026-08-05.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [],
@@ -51,8 +54,8 @@
     "D": 0,
     "total_pass": 0
   },
-  "runner_path": "scripts/physical_exact_adjacency_dissection_bracket_cycle725_2026_08_03.py",
-  "title": "Exact adjacency-cost bracket for dissections of one tick-box \u2014 Cycle 725",
-  "transitive_descendants": 31,
+  "runner_path": "scripts/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05.py",
+  "title": "Minimum supports for finite binary readings of supplied one-cell cuttings \u2014 Cycle 737",
+  "transitive_descendants": 8,
   "verdict_rationale": null
 }

@@ -1,0 +1,68 @@
+===== runner cache v1 =====
+runner: scripts/y_like_spectrum_does_not_identify_u1y_2026_08_13.py
+runner_sha256: dbf53c2da660d8446c036487ae6010fda2acd2361d1b75628e5e6d0e4db6e3d8
+input_fingerprint_sha256: feb72a72c78dfa6c6b45bde2d8a2bb1cee3704c18028687b1807bb6c2c9b2bf8
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+external_scientific_inputs: native residual-swap Y_like construction and the four-axiom memo; no observational or fitted inputs
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency; no runner cache is written
+negative_scope: spectrum plus trace do not identify a unique anomaly-complete U(1)_Y generator; U(1)_Y is not claimed impossible
+PASS: audit-input-paths declared audit inputs exist and match the note, axiom memo, and native surface note
+PASS: native-nonclaim-phrase the native note contains the exact non-claim phrase
+PASS: native-construction the native note states the projector formula and the +1/3,-1 spectrum
+PASS: axiom-does-not-name-generator the axiom memo does not name Y_like or U(1)_Y
+PASS: tau-0-involution tau^2 = I as exact permutation-matrix arithmetic
+PASS: tau-0-hermitian tau is a real symmetric permutation matrix
+PASS: projectors-0 Pi_+ and Pi_- are complementary projectors of ranks 6 and 2
+PASS: closed-form-0 identity-gate y_like(axis) equals (1/3)Pi_+ - Pi_- and (2 tau - I)/3
+PASS: trace-0 Tr Y_a = 0
+PASS: spectrum-0 spec(Y_a) = {1/3 x6, -1 x2} by rank(Y-lambda I)
+PASS: hermitian-0 Y_a is real symmetric, hence Hermitian
+PASS: tau-1-involution tau^2 = I as exact permutation-matrix arithmetic
+PASS: tau-1-hermitian tau is a real symmetric permutation matrix
+PASS: projectors-1 Pi_+ and Pi_- are complementary projectors of ranks 6 and 2
+PASS: closed-form-1 identity-gate y_like(axis) equals (1/3)Pi_+ - Pi_- and (2 tau - I)/3
+PASS: trace-1 Tr Y_a = 0
+PASS: spectrum-1 spec(Y_a) = {1/3 x6, -1 x2} by rank(Y-lambda I)
+PASS: hermitian-1 Y_a is real symmetric, hence Hermitian
+PASS: tau-2-involution tau^2 = I as exact permutation-matrix arithmetic
+PASS: tau-2-hermitian tau is a real symmetric permutation matrix
+PASS: projectors-2 Pi_+ and Pi_- are complementary projectors of ranks 6 and 2
+PASS: closed-form-2 identity-gate y_like(axis) equals (1/3)Pi_+ - Pi_- and (2 tau - I)/3
+PASS: trace-2 Tr Y_a = 0
+PASS: spectrum-2 spec(Y_a) = {1/3 x6, -1 x2} by rank(Y-lambda I)
+PASS: hermitian-2 Y_a is real symmetric, hence Hermitian
+PASS: eigenspace-action Y_0 acts by +1/3 on the +1 space of tau_0 and by -1 on the -1 space
+PASS: vector-witness-001 tau_0, tau_1, tau_2 send e_(0,0,1) to three different basis vectors
+PASS: pairwise-tau-entries each pair of residual swaps disagrees at a named matrix entry
+PASS: pairwise-y-distinct Y_0 != Y_1 != Y_2 != Y_0 as exact Fraction matrices
+PASS: isospectral all three generators have spectrum Sigma_* and trace 0
+PASS: scale-k-one spec(k Y_0) equals Sigma_* if and only if k=1 among the tested rationals
+PASS: scale-one-third-spectrum k=1/3 produces spec {1/9 x6, -1/3 x2}, which is not Sigma_*
+PASS: scale-minus-one-spectrum k=-1 produces spec {-1/3 x6, +1 x2}, which is not Sigma_*
+PASS: average-not-target the average of the three Y_a has spec {1/3 x4, -1/3 x4}, not Sigma_*
+PASS: mutation-scale-fails-target replacing y_like by k=1/3 times itself fails spectrum-equals-Sigma_*
+PASS: mutation-collapse-fails-distinct replacing all three axes by axis 0 fails pairwise distinctness
+PASS: mutation-pi-plus-fails-target replacing y_like by Pi_+ yields spec {1 x6, 0 x2} and fails Sigma_*
+PASS: note-contract machine-status fields, required phrases, and forbidden-word hygiene hold
+PASS: note-links-parents the note links the axiom memo and the native abelian-surface note
+PASS: claim-type-contract the author hint uses the exact bounded-theorem enum
+PASS: note-does-not-forbid-u1y the note states the scoped gap and does not claim U(1)_Y is impossible
+PASS: canonical-nonmutation the uniqueness obstruction is absent from the canonical axiom file
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_element: named generators Y_0, Y_1, Y_2 and the tested scales of Y_0 are recomputed as exact Fraction 8x8 matrices
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_site: statements are one taste-cube C^8 statements; no composite spacetime-site carrier is asserted
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_mode: eigenvalue multiplicities of Y_a are checked by rank(Y-lambda I); no harmonic mode is claimed
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_block: only three-axis distinctness, closed form, and the k=1 scale rejector are executed
+PASS: n5-length each N5 resolution line is at least 40 characters
+lattice_wide: checked and not executed — no lattice-wide U(1)_Y identification or anomaly cancellation is claimed
+TOTAL: PASS=47 FAIL=0
+
+----- stderr -----
+

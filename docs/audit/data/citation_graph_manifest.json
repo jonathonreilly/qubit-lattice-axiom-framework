@@ -1,6 +1,6 @@
 {
- "edge_count": 15600,
- "node_count": 5486,
+ "edge_count": 15602,
+ "node_count": 5487,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1365,6 +1365,10 @@
   "bh_quarter_wald_noether_framework_carrier_theorem_note_2026-04-29": {
    "deps_hash": "4d23bb968eea",
    "out_degree": 6
+  },
+  "bilinear_normalized_pairing_uniqueness_newton_product_bounded_theorem_note_2026-08-13": {
+   "deps_hash": "7ea010b16c05",
+   "out_degree": 2
   },
   "binary_octahedral_discrete_spinor_sign_narrow_theorem_note_2026-05-28": {
    "deps_hash": "a2b1fdf02953",

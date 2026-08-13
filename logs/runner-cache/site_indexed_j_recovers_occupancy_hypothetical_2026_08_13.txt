@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/site_indexed_j_recovers_occupancy_hypothetical_2026_08_13.py
+runner_sha256: dc98c1305dab65cbba193d58ca336cc87484a8880f1367eead8e924f315f4437
+input_fingerprint_sha256: 7f101eb9295f8665c58bff1518b376c65e3b014cf65c70b449962b4518464ef2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: current axiom wording is source-bound; occupancy bits and both 2x2 tables are reconstructed here
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency
+negative_scope: only scalar I as a splitter of o10/o01 and silent adoption of C1 or of a pairing through I are rejected
+PASS: source-records-form the axiom states that records form
+PASS: source-content-only the axiom makes readout content-only
+PASS: source-record-I the axiom supplies additive I with I(empty)=0
+PASS: source-formation-site-unsupplied the Admissibility reading note does not supply formation site
+PASS: source-does-not-name-J the axiom memo does not name the displayed site-indexed J
+PASS: theorem1-I-does-not-split I(o10)=I(o01)=1 and site-blind mu is the same
+PASS: theorem1-J-splits J(o10)=(A,0) differs from J(o01)=(0,A)
+PASS: theorem2-retract o_from_J recovers occupancy on every {0,1}-occupancy of W
+PASS: theorem3-I-J-equals-I I_J equals current I on the four occupancies
+PASS: theorem3-i-table the reconstructed I-table is (0,1,1,2)
+PASS: theorem3-pi-table the reconstructed product table is (0,0,0,1)
+PASS: mutation-I-splits the predicate that I splits o10 from o01 fails
+PASS: mutation-J-equal the predicate that J(o10)=J(o01) fails
+PASS: source-note-display the note displays J, refuses C1, and keeps the pairing extra
+PASS: claim-type-contract the author hint uses the exact bounded-theorem enum
+PASS: machine-status-contract the source uses the required C1 and bounded-support fields
+PASS: canonical-nonmutation the displayed C1 map is absent from the canonical axiom file
+PASS: no-go-gate all N1-N8 sections and the broad-claim rejection are source-visible
+per_element: each site of W is assigned 0 or a locked menu entry in J
+per_site: two named sites with unit locks; I(o10) and I(o01) are both 1
+per_mode: checked and not executed — no spectral or harmonic mode is used
+per_block: only the scalar-I versus site-indexed-J readout block is tested
+lattice_wide: checked and not executed — no lattice-wide formation rate is claimed
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

@@ -1,6 +1,6 @@
 {
- "edge_count": 15600,
- "node_count": 5486,
+ "edge_count": 15602,
+ "node_count": 5487,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -13413,6 +13413,10 @@
   "ordered_lattice_quasi_persistent_relaunch_note": {
    "deps_hash": "599444f3c8b2",
    "out_degree": 1
+  },
+  "os0_is_a_primitive_cut_not_lattice_hypothetical_bounded_theorem_note_2026-08-13": {
+   "deps_hash": "0d988fd1ac07",
+   "out_degree": 2
   },
   "osterwalder_schrader_from_framework_narrow_theorem_note_2026-05-27": {
    "deps_hash": "37b34cf3d5e2",

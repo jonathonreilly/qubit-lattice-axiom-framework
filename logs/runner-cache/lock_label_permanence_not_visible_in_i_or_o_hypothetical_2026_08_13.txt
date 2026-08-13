@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/lock_label_permanence_not_visible_in_i_or_o_hypothetical_2026_08_13.py
+runner_sha256: 475faa28a1c1c8be5e78109bffa5650622dc7caf02f5cfef1f2919d8b6f9b634
+input_fingerprint_sha256: ef5c292fbb4f4cae3f71d47359f36ceafffdae3f7117ee6aa367bb9803fef6b8
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: current axiom wording only; J arithmetic is reconstructed in this runner
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency
+PASS: source-permanence Record states that records are permanent
+PASS: source-locks-exactly-one Record states that a record locks exactly one admissible local possibility
+PASS: source-additivity Record names additive scalar I with I(empty)=0
+PASS: note-hypothetical-status note carries the required hypothetical axiom status
+PASS: note-surface-status note is bounded-support and not adopted
+identity_gate I_seq(S)=(1, 1)
+identity_gate I_seq(R)=(1, 1)
+identity_gate o_seq(S)=((1, 0), (1, 0))
+identity_gate o_seq(R)=((1, 0), (1, 0))
+identity_gate bag_seq(S)=(['A'], ['A'])
+identity_gate bag_seq(R)=(['A'], ['B'])
+identity_gate J_seq(S)=(('A', 0), ('A', 0))
+identity_gate J_seq(R)=(('A', 0), ('B', 0))
+PASS: identity-gate-calls runner source calls I_seq, o_seq, bag_seq, J_seq on S and R
+PASS: occupancy-stays-at-x both histories keep one unit lock at x
+PASS: I-seq-both I-seq of stay and relock is (1,1) by unit count
+PASS: mutation-I-seq-differs predicate I_seq(S) differs from I_seq(R) fails
+PASS: mutation-o-seq-differs predicate o_seq(S) differs from o_seq(R) fails
+PASS: bag-stay site-blind bag of stay is ({A},{A})
+PASS: bag-relock site-blind bag of relock is ({A},{B})
+PASS: bag-splits bag_seq splits stay from relock
+PASS: J-seq-values J-seq is ((A,0),(A,0)) on stay and ((A,0),(B,0)) on relock
+PASS: mutation-J-seq-equal predicate J_seq(S)=J_seq(R) fails
+PASS: site-move-contrast reconstructed site-move shares I and bag with stay, not o or J
+PASS: visibility-split J sees move and relock; o sees only the move; bag sees only the relock
+PASS: unit-count-convention I=1 is a unit convention; additivity also holds for unit 2
+PASS: not-formation occupancy count stays 1; this is not a formation-rate history
+PASS: not-site-change relock keeps the occupied site; it is not a site move
+PASS: note-forbids-relock-quotes note quotes permanence and locks-exactly-one as jointly forbidding relock
+PASS: display-only note does not force r=1/2, adopt L_phys, or put a pairing on J
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

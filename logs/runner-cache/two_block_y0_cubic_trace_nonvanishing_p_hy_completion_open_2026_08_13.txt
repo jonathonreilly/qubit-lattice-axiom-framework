@@ -1,0 +1,49 @@
+===== runner cache v1 =====
+runner: scripts/two_block_y0_cubic_trace_nonvanishing_p_hy_completion_open_2026_08_13.py
+runner_sha256: 28fc8acce0b1b65fa28fcd6dc5f1290e8169b2b1c88cdf6714f085a2d918cc84
+input_fingerprint_sha256: cdfac79aa8b60842e5e20df3cfa7671e4c77b129fe41b37ca65de421a88aaca8
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.07
+status: ok
+----- stdout -----
+external_scientific_inputs: May 2 ranks and ratio, name-free Y_0, cycle 692 scale freedom, and the May 1 Y^3 exclusion are source-bound; no observational or fitted inputs are used
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency; no runner cache is written
+negative_scope: the 8-component cubic is nonzero at every nonzero scale; Y_like is not U(1)_Y; a completion remains open
+PASS: audit-input-paths declared audit inputs exist and match the note, May 2, name-free Y_0, cycle 692, and axiom memo
+PASS: source-may2-ratio May 2 pins ranks 6 and 2 and the forced ratio beta=-3 alpha
+PASS: source-may2-no-identify May 2 does not identify the ratio with Y
+PASS: source-y0-generator the name-free note writes Y_0 = P_sym - 3 P_anti
+PASS: source-cycle692-scale cycle 692 records that tracelessness does not fix alpha=1/3
+PASS: source-may1-y3-scoped May 1 closed SU(2)^2 Y and scoped Y^3 out
+PASS: two-block-ranks Pi_+ and Pi_- are complementary rank-(6,2) projectors
+PASS: y0-spectrum-trace Y_0 has spec {+1 x6, -3 x2} and vanishing linear trace
+PASS: theorem-1-cubic-formula identity-gate cubic_trace(t) equals -48 t^3 and the eigenvalue-cube sum
+PASS: theorem-1-specializations specializations are -48, -16/9, -2/9 and match the displayed witnesses
+PASS: theorem-1-linear-not-cubic the May 2 linear trace vanishes at every scale and does not evaluate the cubes
+PASS: theorem-2-never-zero cubic_trace(t)=0 iff t=0; every nonzero sample is nonzero
+PASS: theorem-2-predicate the predicate that some nonzero t has vanishing cubic on these 8 components is false
+PASS: theorem-3-may1-scope the note quotes May 1's Y^3 exclusion and treats the cubic as that residual
+PASS: theorem-4-scale-extra axioms do not select t; cycle 692 leaves alpha=1/3 underived
+PASS: theorem-4-cubic-nonzero-at-named-scales Y_like and PDG-like points have nonzero cubics -16/9 and -2/9
+PASS: theorem-5-completion-open a later completion remains open and extra fields are not adopted
+PASS: mutation-zero-fails replacing cubic_trace by 0 fails at t=1 and t=1/3
+PASS: mutation-vanishing-predicate-fails a predicate that some nonzero t has vanishing cubic fails Theorem 2
+PASS: mutation-identify-fails identifying Y_like with U(1)_Y as a theorem fails: scale extra and cubic nonzero
+PASS: note-contract machine-status fields, required phrases, and forbidden-word hygiene hold
+PASS: canonical-nonmutation the cubic construction is absent from the canonical axiom file
+PASS: may2-ratio-bound May 2 still states the structural ratio and refuses SM-Y identification
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_element: the eight eigenvalues of Y(t) and the specializations -48, -16/9, -2/9 are recomputed
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_site: the single C^8 two-block carrier is the only site; no composite generation
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_mode: only the cubic trace of the two-block line is executed; no mixed SU(3)^2 Y mode
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_block: Theorems 4-5 close identification and axiom edit, not a later completion
+PASS: n5-length each N5 resolution line is at least 40 characters
+lattice_wide: checked and not executed — no lattice-wide hypercharge or U(1)_Y law is claimed
+TOTAL: PASS=28 FAIL=0
+
+----- stderr -----
+

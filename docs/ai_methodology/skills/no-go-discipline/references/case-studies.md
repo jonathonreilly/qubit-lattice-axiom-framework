@@ -90,9 +90,10 @@ P1/readout parent), plus **one downstream consequence** (A-W-C follows from
 A-W-A), plus **one hidden bilinear-identification admission** (the EWSB
 order-parameter identification from unaudited
 HIERARCHY_BOSONIC_BILINEAR_SELECTOR_NOTE). On the current surface, narrow
-Record additivity is again a supplied/open dependency unless separately
-retained; any P2/log-det/readout content from the older parent also remains
-separate. The right shape is not "three independent walls."
+Record additivity is again a separate explicit condition/open dependency
+unless independently retained; any P2/log-det/readout content from the older
+parent also remains separate. The right shape is not "three independent
+walls."
 
 **Which N-checks would have caught this:**
 

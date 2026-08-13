@@ -28,13 +28,16 @@ them.
 Current science/open-lane follow-ups:
 
 - `2026-08-13-record-additivity-premise-removal-consumers`
-  Scope: the 576 direct and 2,274 total citation-graph consumers of
-  `minimal_axioms`, including runners and notes that quote or test the retired
-  named scalar `I`, finite additivity, or `I(empty)=0` premise.
+  Scope: at reviewed main `c45dd5ab30b5a65df74621af789ae34cf6e4ae35`
+  plus the PR #6247 proposed source delta, the citation graph has 576 direct
+  and 2,274 total consumers of `minimal_axioms`, including runners and notes
+  that quote or test the retired named scalar `I`, finite additivity, or
+  `I(empty)=0` premise.
   Finding: the owner-approved Record simplification is a semantic premise
-  narrowing, not an equivalent rewrite. Main currently has no retained-grade
-  science judgments to preserve, but many unaudited consumer runners now fail
-  honestly because their former premise is absent.
+  narrowing, not an equivalent rewrite. At that reviewed snapshot, all 4,824
+  ledger rows are `unaudited` or `meta`, so no retained-grade science judgment
+  is preserved by the delta; many unaudited consumer runners now fail honestly
+  because their former premise is absent.
   Disposition: `science-needed`; do not mechanically replace old needles or
   migrate verdicts. Each load-bearing consumer must cite a separate retained
   additivity supplier, narrow its claim, or remain open through fresh review

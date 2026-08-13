@@ -1,6 +1,6 @@
 {
- "edge_count": 15600,
- "node_count": 5486,
+ "edge_count": 15602,
+ "node_count": 5487,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -17121,6 +17121,10 @@
   "spectral_trajectory_theorem_2026-04-11": {
    "deps_hash": "db257ac283db",
    "out_degree": 7
+  },
+  "speed_preserving_linear_wick_map_is_unit_clock_bounded_theorem_note_2026-08-13": {
+   "deps_hash": "0d988fd1ac07",
+   "out_degree": 2
   },
   "sphaleron_coefficient_28_79_from_sm_like_content_admission_bridge_note_2026-05-28": {
    "deps_hash": "7a3ee4490765",

@@ -408,3 +408,18 @@ succeeds. A mandatory axiom amendment also fails the current steelman because
 a downstream bridge could select the same update. The surviving statement is
 only that dynamics, continuation, state-space positivity, and source meaning
 are not presently supplied or derived.
+
+## Block 67 Sharp-Menu / Immediate-Registration Partial Narrowing
+
+| Scoped claim | Exact/bounded evidence | Failing N1--N8 items | Demoted disposition | Live/reopen routes |
+|---|---|---|---|---|
+| the fixed supplied menu-1 POVM has no joint **sharp** endpoint-orientation marginal, and `f=1` is unique only under an additional immediate-registration/no-live-branch contract | exact sharp-PVM commutant theorem; 96 noncommuting menu-1 projector/effect pairs over 24 frames; exact Block-65 no-Record branch retains the normalized live state at `f<1` | `N1` fails because fewer than five route families are closed by retained authority; `N7` succeeds against any broader claim via unsharp/replacement instruments and recurrent registration; all parents are unretained | `partial-narrowing`; no universal instrument no-go, `f<1` obstruction, gravity no-go, or axiom-necessity claim ships | unsharp current, replacement/refined menu, larger carrier, recurrent physical dilation, explicit reservoir/open/paired source, owner adoption and audit |
+
+The same packet constructs a content-only whole-history root selector and an
+arbitrary-horizon signed head-source current on the declared single front.
+Those positive repairs conditionally discharge the event-selection and
+Record-continuation subwalls on the declared single front, but retire no tracked
+obligation, make no bootstrap head physical matter, and do not transmit signed
+`T0i` into gravity. Reopen the negative gate only with retained
+authority that closes the live route families; otherwise keep the exact matrix
+criterion and contract test at `partial-narrowing`.

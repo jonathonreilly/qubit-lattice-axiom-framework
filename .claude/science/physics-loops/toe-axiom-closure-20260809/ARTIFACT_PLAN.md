@@ -1739,3 +1739,37 @@ complete conditional nonlinear compact solution:
   Block-65/64 Records, preserves the transformed unit source in Block 52, and
   drives the Block-53 causal two-TT update without a host occurrence, clean
   reservoir, source fit, or interface-specific transition
+
+## Block 67 Contract And Result
+
+- capped contract: force the same literal Cycle-713 `P=1` transfer through a
+  sharp signed Record refinement, a content-decoded conservative current, and
+  the conditional causal TT response, or stop at the first exact law/type cut
+- literal result: all 4,096 seam rows resolve into 2,048 exact one-particle
+  transfers; all sixteen coherent matrix units and 256 external-reference
+  branch cases close
+- selector result: the sharp-PVM commutant theorem gives four nonzero joint
+  branches per proper frame for menu 0, while menu 1 has 96 noncommuting
+  projector/effect pairs across 24 frames; only an additional, unadopted
+  immediate-registration/no-live-branch contract forces `f=1`
+- Record result: a proper 180-degree successor-frame reflection stores either
+  transfer direction in existing Block-64 carrier content; all 96 branches
+  cross the first write cycle, four orbit representatives continue 32 events,
+  and all 2,304 frame-product cases close
+- source result: a content-only root decoder recovers the initial event pair
+  inside continued histories, while a radius-one head-child charge yields an
+  exact arbitrary-horizon signed single-front source candidate; 1,728 staged
+  configurations contain 1,152 zero-source writes and 576 conserved signed
+  nearest-neighbour head moves across all six directions
+- gravity result: each head move repeats the exact four-column null stress and
+  its spatial tensor gives a nonzero conditional TT response, but opposite
+  signs give identical TT response and signed `T0i` is not transmitted
+- primary `PASS=10 FAIL=0`; ten targeted mutations each fail exactly one
+  aggregate; input-pinned cache is fresh; graph is `5,513/15,810`, out-degree
+  seven; packaging commit pending after the head-current strengthening
+- decisive boundary: the joint CP instrument, dilation, and same-M2 Record
+  embedding are not physically compiled; the bootstrap outcome-to-head
+  handoff and head-as-matter/stress identification remain conditional; cadence,
+  source normalization, signature, global coupling, current-to-gravity
+  reconstruction, selected transfer, nonlinear completion, adoption, audit
+  retention, and all fixed TOE percentages remain open

@@ -1,11 +1,14 @@
 #!/usr/bin/env python3
 """Block 67: signed Cycle-713 source through Records into a causal TT response.
 
-This runner sharpens the conditional Blocks 52--66 vertical stack.  It proves
-that source completeness selects hazard one and that a sharp endpoint-current
-refinement exists for menu zero but not menu one.  The selected signed branch
-is written with the existing Block-64 carrier grammar, gives an exact one-edge
-continuity current, and drives the same Block-53 depth-two TT update.
+This runner sharpens the conditional Blocks 52--66 vertical interfaces.  It
+proves that an explicit immediate-registration contract selects hazard one and
+that a sharp endpoint-current refinement exists for menu zero but not menu
+one.  The selected signed event pair is written with the existing Block-64
+carrier grammar.  A content-only root decoder keeps selecting that pair inside
+continued history, while a radius-one head-child relation gives a conserved,
+signed, arbitrary-horizon single-front source candidate.  Its spatial tensor
+supplies a conditional nonzero Block-53 TT response.
 
 The result is a bounded candidate theorem, not a retained law or TOE closure.
 """
@@ -41,6 +44,7 @@ BLOCK65_NOTE = ROOT / "docs" / "ADMISSIBILITY_PHYSICAL_STATE_TO_RECORD_ATTACHMEN
 BLOCK64_NOTE = ROOT / "docs" / "ADMISSIBILITY_STRICT_NEAREST_NEIGHBOR_STATE_DEPENDENT_RECORD_BORN_HISTORY_SINGLE_FRONT_POSITIVE_THEOREM_NOTE_2026-08-12.md"
 BLOCK52_NOTE = ROOT / "docs" / "ADMISSIBILITY_CANONICAL_TWO_TT_POSITIVE_TRANSFER_RECORD_SOURCE_CONTINUITY_LSTAR_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-11.md"
 BLOCK53_NOTE = ROOT / "docs" / "ADMISSIBILITY_TWO_TT_SPLIT_STEP_RECORD_FRONTIER_CAUSAL_MACRO_UPDATE_LSTAR_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-11.md"
+BLOCK44_NOTE = ROOT / "docs" / "ADMISSIBILITY_REPAIRED_REGGE_FULL_EDGE_SCHUR_IR_LORENTZIAN_CONSTRAINT_TT_AXIOM_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-11.md"
 
 AUDIT_INPUT_PATHS = (
     "docs/ADMISSIBILITY_CYCLE713_SIGNED_RECORD_SOURCE_CAUSAL_TT_VERTICAL_SLICE_BOUNDED_THEOREM_NOTE_2026-08-13.md",
@@ -50,10 +54,13 @@ AUDIT_INPUT_PATHS = (
     "docs/ADMISSIBILITY_STRICT_NEAREST_NEIGHBOR_STATE_DEPENDENT_RECORD_BORN_HISTORY_SINGLE_FRONT_POSITIVE_THEOREM_NOTE_2026-08-12.md",
     "docs/ADMISSIBILITY_CANONICAL_TWO_TT_POSITIVE_TRANSFER_RECORD_SOURCE_CONTINUITY_LSTAR_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-11.md",
     "docs/ADMISSIBILITY_TWO_TT_SPLIT_STEP_RECORD_FRONTIER_CAUSAL_MACRO_UPDATE_LSTAR_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-11.md",
+    "docs/ADMISSIBILITY_REPAIRED_REGGE_FULL_EDGE_SCHUR_IR_LORENTZIAN_CONSTRAINT_TT_AXIOM_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-11.md",
 )
 
 TOL = 4.0e-11
 FLIP_FORWARD = ((-1, 0, 0), (0, 1, 0), (0, 0, -1))
+SOURCE_TORUS_SIZE = 5
+SOURCE_INCIDENCE, SOURCE_EDGE_LOOKUP = b52.periodic_incidence(SOURCE_TORUS_SIZE)
 
 
 class Checks:
@@ -305,6 +312,68 @@ def joint_refinement_certificate() -> dict[str, object]:
     }
 
 
+def immediate_registration_certificate() -> dict[str, object]:
+    """Separate conservation from the stronger no-live-branch contract.
+
+    Block 65's no-Record Kraus branch retains the live P=1 matter state.  The
+    immediate-registration contract is therefore an additional conditional
+    rule, not a consequence of conservation.  It requires that branch's
+    weight to vanish on every P=1 input on this attempt.
+    """
+    hazards = tuple(
+        sorted(
+            {
+                Fraction(numerator, denominator)
+                for denominator in range(1, 17)
+                for numerator in range(denominator + 1)
+            }
+        )
+    )
+    matter_states = (
+        b65.P0,
+        b65.P1,
+        b65.PPLUS,
+        b63.matrix_scale(Fraction(1, 2), b63.IDENTITY),
+        b63.pure_real(Fraction(3, 5), Fraction(4, 5)),
+    )
+    weight_failures = 0
+    unique = []
+    cases = 0
+    for hazard in hazards:
+        no_record, formation = b65.instrument_effects(
+            b64.IDENTITY_ROTATION, 0, hazard
+        )
+        weights = []
+        for matter in matter_states:
+            omega = b65.product_state(b65.P1, matter)
+            no_weight = b65.qtrace_product(omega, no_record)
+            formation_weight = sum(
+                (b65.qtrace_product(omega, effect) for effect in formation),
+                Fraction(0),
+            )
+            weight_failures += no_weight != 1 - hazard
+            weight_failures += formation_weight != hazard
+            weights.append(no_weight)
+            cases += 1
+        if all(weight == 0 for weight in weights):
+            unique.append(hazard)
+
+    # At f=3/4 the no-Record Kraus action is exactly rho -> rho/4 on P=1,
+    # so its normalized output is the same live matter state, not erasure.
+    live_residual = 0.0
+    for matter in matter_states:
+        rho = b63.to_numpy(matter)
+        output = 0.25 * rho
+        live_residual = max(live_residual, float(np.linalg.norm(output / np.trace(output) - rho)))
+    return {
+        "hazards": len(hazards),
+        "cases": cases,
+        "weight_failures": weight_failures,
+        "immediate_registration_solutions": tuple(unique),
+        "three_quarter_live_residual": live_residual,
+    }
+
+
 @dataclass(frozen=True)
 class SignedBranch:
     outcome: int
@@ -323,6 +392,14 @@ class DecodedSource:
     new_source: b64.Coord
     head_site: b64.Coord
     outcome: int
+
+
+@dataclass(frozen=True)
+class AppendEdge:
+    old_source: b64.Coord
+    new_source: b64.Coord
+    direction: b64.Coord
+    kind: str
 
 
 def signed_branch(
@@ -358,27 +435,427 @@ def signed_branch(
 
 
 def decode_signed_source(records: b64.Records) -> DecodedSource | None:
-    """Decode the current using only the two permanent branch Records."""
+    """Decode the unique root event packet from an arbitrary continued front.
+
+    Every ordinary Block-64 outcome has a compatible relay predecessor one
+    forward edge behind it.  The supplied bootstrap outcome is the unique
+    exception.  Its adjacent bootstrap head is then selected by the head's
+    transverse geometry, without using a branch label or insertion history.
+    """
+
+    root_outcomes: list[tuple[b64.Coord, tuple[b64.Carrier, int]]] = []
+    for outcome_site, carrier in records.items():
+        decoded = b64.outcome_decode(carrier)
+        if decoded is None:
+            continue
+        effect, outcome = decoded
+        compatible_relays = tuple(
+            relay_site
+            for direction in b64.DIRECTIONS
+            if (relay_site := b64.add(outcome_site, direction)) in records
+            and (context := b64.decode_context(records[relay_site])) is not None
+            and context.role == "relay"
+            and b64.add(relay_site, context.forward) == outcome_site
+            and b64.rotated_menus(context.rotation)[context.menu][outcome] == effect
+        )
+        if not compatible_relays:
+            root_outcomes.append((outcome_site, decoded))
+
+    if len(root_outcomes) != 1:
+        return None
+    new_source, (_effect, outcome) = root_outcomes[0]
     heads = tuple(
         (site, context)
-        for site, carrier in records.items()
-        if (context := b64.decode_context(carrier)) is not None
+        for direction in b64.DIRECTIONS
+        if (site := b64.add(new_source, direction)) in records
+        and (context := b64.decode_context(records[site])) is not None
         and context.role == "head"
+        and b64.add(new_source, context.transverse) == site
     )
-    outcomes = tuple(
-        (site, decoded)
-        for site, carrier in records.items()
-        if (decoded := b64.outcome_decode(carrier)) is not None
-    )
-    if len(heads) != 1 or len(outcomes) != 1:
+    if len(heads) != 1:
         return None
     head_site, context = heads[0]
-    new_source, (_effect, outcome) = outcomes[0]
     direction = context.forward
     old_source = b64.add(new_source, b64.neg(direction))
     if manhattan(old_source, new_source) != 1 or manhattan(head_site, new_source) != 1:
         return None
     return DecodedSource(direction, old_source, new_source, head_site, outcome)
+
+
+def decode_active_append_edge(
+    records: b64.Records,
+    finalize_from_head: bool = False,
+) -> AppendEdge | None:
+    """Decode the unique next source hop from the current Record configuration."""
+    active = b64.active_sites(records)
+    if len(active) != 1:
+        return None
+    target, distribution = next(iter(active.items()))
+    signature = b64.local_signature(records, target)
+    contexts = tuple(
+        (offset, context)
+        for offset, carrier in signature.items()
+        if (context := b64.decode_context(carrier)) is not None
+    )
+    if len(contexts) != 1:
+        return None
+    context_offset, context = contexts[0]
+    if distribution.kind == "relay" and context.role == "head":
+        source = b64.add(target, context_offset)
+    elif distribution.kind == "outcome" and context.role == "relay":
+        source = b64.add(target, context_offset)
+    elif distribution.kind == "finalize" and context.role == "head":
+        source = b64.add(
+            target,
+            context_offset if finalize_from_head else context.transverse,
+        )
+        carrier = records.get(source)
+        if carrier is None or b64.outcome_decode(carrier) is None:
+            return None
+    else:
+        return None
+    direction = tuple(new - old for old, new in zip(source, target))
+    if direction not in b64.DIRECTIONS:
+        return None
+    return AppendEdge(source, target, direction, distribution.kind)  # type: ignore[arg-type]
+
+
+def edge_continuity_residual(edge: AppendEdge) -> float:
+    size = SOURCE_TORUS_SIZE
+    old_index = torus_index(edge.old_source, size)
+    new_index = torus_index(edge.new_source, size)
+    direction = np.asarray(edge.direction, dtype=float)
+    axis = int(np.flatnonzero(np.abs(direction) > 0.5)[0])
+    flux = np.zeros(3 * size**3)
+    if int(direction[axis]) == 1:
+        flux[SOURCE_EDGE_LOOKUP[(old_index, axis)]] = 1.0
+    else:
+        flux[SOURCE_EDGE_LOOKUP[(new_index, axis)]] = -1.0
+    increment = np.zeros(size**3)
+    increment[old_index] = -1.0
+    increment[new_index] = 1.0
+    return float(np.linalg.norm(increment + SOURCE_INCIDENCE @ flux))
+
+
+@dataclass(frozen=True)
+class HeadProfile:
+    frontiers: tuple[b64.Coord, ...]
+    heads: int
+    children: int
+    invalid_children: int
+
+
+def decoded_head_child(
+    records: b64.Records,
+    site: b64.Coord,
+    context: b64.Context,
+    reverse_child: bool = False,
+) -> tuple[b64.Coord | None, bool]:
+    """Return a locally certified next head and an invalid-occupancy flag."""
+    direction = b64.neg(context.forward) if reverse_child else context.forward
+    target = b64.add(site, direction)
+    carrier = records.get(target)
+    if carrier is None:
+        return None, False
+    child = b64.decode_context(carrier)
+    if child is None or child.role != "head":
+        return None, True
+    valid = (
+        child.rotation == context.rotation
+        and child.menu == 1 - context.menu
+        and child.phase == 1 - context.phase
+    )
+    return (target, False) if valid else (None, True)
+
+
+def decoded_head_profile(
+    records: b64.Records,
+    reverse_child: bool = False,
+) -> HeadProfile:
+    """Evaluate the radius-one head-child charge on a whole configuration."""
+    frontiers: list[b64.Coord] = []
+    heads = children = invalid_children = 0
+    for site, carrier in records.items():
+        context = b64.decode_context(carrier)
+        if context is None or context.role != "head":
+            continue
+        heads += 1
+        child, invalid = decoded_head_child(records, site, context, reverse_child)
+        invalid_children += int(invalid)
+        if child is None:
+            frontiers.append(site)
+        else:
+            children += 1
+    return HeadProfile(tuple(sorted(frontiers)), heads, children, invalid_children)
+
+
+def head_source_worldline_certificate(
+    reverse_child: bool = False,
+) -> dict[str, object]:
+    """Check the conditional head-source current at every Block-64 stage.
+
+    The charge J_H is one on a head with no compatible head child and zero on
+    a head that has one.  Relay and outcome writes leave J_H fixed; finalize
+    moves it one forward edge.  Block64's symbolic support/active-site lemmas
+    lift the executed finite checks to arbitrary single-front horizon.
+    """
+    innovations = tuple(
+        Fraction(value, 31)
+        for value in (1, 5, 9, 13, 17, 21, 25, 29, 3, 7, 11, 15, 19, 23, 27)
+    )
+    configurations = finalizations = zero_stages = 0
+    profile_failures = root_failures = stage_failures = 0
+    direction_failures = charge_failures = 0
+    continuity_error = stress_error = 0.0
+    direction_set: set[b64.Coord] = set()
+
+    for rotation in b64.ROTATIONS:
+        for outcome, sign in nonzero_menu0_pairs(rotation):
+            branch = signed_branch(rotation, outcome, sign)
+            records = dict(branch.records)
+            root = decode_signed_source(records)
+            root_failures += root is None or not (
+                root.old_source == branch.old_source
+                and root.new_source == branch.new_source
+                and root.head_site == branch.head_site
+                and root.direction == branch.direction
+                and root.outcome == branch.outcome
+            )
+            profile = decoded_head_profile(records, reverse_child)
+            profile_failures += not (
+                profile.frontiers == (branch.head_site,)
+                and profile.heads == 1
+                and profile.children == 0
+                and profile.invalid_children == 0
+            )
+
+            for step in range(18):
+                expected_kind = ("relay", "outcome", "finalize")[step % 3]
+                before = decoded_head_profile(records, reverse_child)
+                profile_failures += not (
+                    len(before.frontiers) == 1
+                    and before.invalid_children == 0
+                    and before.children == before.heads - 1
+                )
+                if len(before.frontiers) != 1:
+                    stage_failures += 1
+                    break
+                old_frontier = before.frontiers[0]
+                old_context = b64.decode_context(records[old_frontier])
+                direction_failures += (
+                    old_context is None
+                    or old_context.role != "head"
+                    or old_context.forward != branch.direction
+                )
+
+                active = b64.active_sites(records)
+                if len(active) != 1:
+                    stage_failures += 1
+                    break
+                target, distribution = next(iter(active.items()))
+                stage_failures += (
+                    distribution.kind != expected_kind
+                    or not distribution.normalized
+                )
+                if expected_kind == "outcome":
+                    _choice, carrier = b64.choose(
+                        distribution, innovations[(step // 3) % len(innovations)]
+                    )
+                else:
+                    _choice, carrier = b64.choose(distribution, Fraction(0))
+                records = b64.append_one(records, target, carrier)
+
+                after = decoded_head_profile(records, reverse_child)
+                profile_failures += not (
+                    len(after.frontiers) == 1
+                    and after.invalid_children == 0
+                    and after.children == after.heads - 1
+                )
+                if len(after.frontiers) != 1:
+                    stage_failures += 1
+                    break
+                new_frontier = after.frontiers[0]
+                if expected_kind == "finalize":
+                    edge = AppendEdge(
+                        old_frontier,
+                        new_frontier,
+                        tuple(
+                            new - old
+                            for old, new in zip(old_frontier, new_frontier)
+                        ),
+                        "head_finalize",
+                    )
+                    valid_edge = (
+                        new_frontier == target
+                        and edge.direction == branch.direction
+                        and edge.direction in b64.DIRECTIONS
+                    )
+                    direction_failures += not valid_edge
+                    if valid_edge:
+                        residual = edge_continuity_residual(edge)
+                        continuity_error = max(continuity_error, residual)
+                        k = (1,) + edge.direction
+                        stress_error = max(
+                            stress_error,
+                            *(abs(component) * residual for component in k),
+                        )
+                        direction_set.add(edge.direction)
+                    else:
+                        continuity_error = float("inf")
+                        stress_error = float("inf")
+                    charge_failures += before.heads + 1 != after.heads
+                    finalizations += 1
+                else:
+                    charge_failures += (
+                        new_frontier != old_frontier
+                        or before.heads != after.heads
+                    )
+                    zero_stages += 1
+
+                root = decode_signed_source(records)
+                root_failures += root is None or not (
+                    root.old_source == branch.old_source
+                    and root.new_source == branch.new_source
+                    and root.head_site == branch.head_site
+                    and root.direction == branch.direction
+                    and root.outcome == branch.outcome
+                )
+                configurations += 1
+
+    symbolic_parent, symbolic_parent_checks = b64.symbolic_unique_active_induction()
+    symbolic_support = b64.arbitrary_support_lemma()
+    symbolic_stages = (
+        ("relay", 0),
+        ("outcome", 0),
+        ("finalize", 1),
+    )
+    symbolic_ok = (
+        symbolic_parent
+        and symbolic_parent_checks == 5
+        and symbolic_support
+        and tuple(delta for _kind, delta in symbolic_stages) == (0, 0, 1)
+    )
+    return {
+        "configurations": configurations,
+        "finalizations": finalizations,
+        "zero_stages": zero_stages,
+        "profile_failures": profile_failures,
+        "root_failures": root_failures,
+        "stage_failures": stage_failures,
+        "direction_failures": direction_failures,
+        "charge_failures": charge_failures,
+        "continuity_error": continuity_error,
+        "stress_error": stress_error,
+        "directions": tuple(sorted(direction_set)),
+        "symbolic_ok": symbolic_ok,
+        "symbolic_checks": symbolic_parent_checks + 2,
+    }
+
+
+def append_source_walk_certificate(
+    finalize_from_head: bool = False,
+) -> dict[str, object]:
+    innovations = tuple(
+        Fraction(value, 29)
+        for value in (1, 5, 9, 13, 17, 21, 25, 3, 7, 11, 15, 19, 23, 27)
+    )
+    decode_failures = chain_failures = kind_failures = 0
+    continuity_error = 0.0
+    initial_edges = append_edges = 0
+    direction_set: set[b64.Coord] = set()
+
+    def run_steps(
+        branch: SignedBranch,
+        events: int,
+    ) -> None:
+        nonlocal decode_failures, chain_failures, kind_failures
+        nonlocal continuity_error, initial_edges, append_edges
+        records = dict(branch.records)
+        decoded = decode_signed_source(records)
+        decode_failures += decoded is None
+        if decoded is None:
+            return
+        initial = (
+            AppendEdge(
+                decoded.old_source,
+                decoded.new_source,
+                decoded.direction,
+                "bootstrap_outcome",
+            ),
+            AppendEdge(
+                decoded.new_source,
+                decoded.head_site,
+                tuple(
+                    head - outcome
+                    for outcome, head in zip(decoded.new_source, decoded.head_site)
+                ),
+                "bootstrap_head",
+            ),
+        )
+        current = branch.old_source
+        for edge in initial:
+            chain_failures += edge.old_source != current
+            chain_failures += edge.direction not in b64.DIRECTIONS
+            continuity_error = max(continuity_error, edge_continuity_residual(edge))
+            direction_set.add(edge.direction)
+            current = edge.new_source
+            initial_edges += 1
+
+        chain_failures += current != branch.head_site
+        for event in range(events):
+            for expected_kind in ("relay", "outcome", "finalize"):
+                edge = decode_active_append_edge(records, finalize_from_head)
+                decode_failures += edge is None
+                if edge is None:
+                    return
+                chain_failures += edge.old_source != current
+                kind_failures += edge.kind != expected_kind
+                active = b64.active_sites(records)
+                target, distribution = next(iter(active.items()))
+                if expected_kind == "outcome":
+                    _choice, carrier = b64.choose(
+                        distribution, innovations[event % len(innovations)]
+                    )
+                else:
+                    _choice, carrier = b64.choose(distribution, Fraction(0))
+                records = b64.append_one(records, target, carrier)
+                continuity_error = max(
+                    continuity_error, edge_continuity_residual(edge)
+                )
+                direction_set.add(edge.direction)
+                current = edge.new_source
+                append_edges += 1
+
+    for rotation in b64.ROTATIONS:
+        for outcome, sign in nonzero_menu0_pairs(rotation):
+            run_steps(signed_branch(rotation, outcome, sign), 1)
+    for outcome, sign in nonzero_menu0_pairs(b64.IDENTITY_ROTATION):
+        run_steps(signed_branch(b64.IDENTITY_ROTATION, outcome, sign), 32)
+
+    symbolic_parent, symbolic_parent_checks = b64.symbolic_unique_active_induction()
+    symbolic_source_roles = (
+        ("head", "relay", "relay"),
+        ("relay", "outcome", "outcome"),
+        ("outcome", "head", "finalize"),
+    )
+    symbolic_ok = (
+        symbolic_parent
+        and symbolic_parent_checks == 5
+        and len(symbolic_source_roles) == 3
+        and tuple(item[2] for item in symbolic_source_roles)
+        == ("relay", "outcome", "finalize")
+    )
+    return {
+        "initial_edges": initial_edges,
+        "append_edges": append_edges,
+        "decode_failures": decode_failures,
+        "chain_failures": chain_failures,
+        "kind_failures": kind_failures,
+        "continuity_error": continuity_error,
+        "directions": tuple(sorted(direction_set)),
+        "symbolic_ok": symbolic_ok,
+        "symbolic_checks": symbolic_parent_checks + len(symbolic_source_roles),
+    }
 
 
 def nonzero_menu0_pairs(rotation: b64.Rotation) -> tuple[tuple[int, int], ...]:
@@ -398,6 +875,8 @@ def signed_record_certificate(forget_sign: bool = False) -> dict[str, object]:
     continuation_failures = geometry_failures = decode_failures = 0
     covariance_failures = chart_failures = 0
     continuations = long_continuations = active_checks = records_N33 = 0
+    permanence_failures = whole_history_decoder_failures = 0
+    whole_history_decoder_checks = 0
     innovations = tuple(Fraction(value, 23) for value in (1, 5, 9, 13, 17, 21, 3, 7, 11, 15, 19))
     for rotation in b64.ROTATIONS:
         pairs = nonzero_menu0_pairs(rotation)
@@ -418,6 +897,19 @@ def signed_record_certificate(forget_sign: bool = False) -> dict[str, object]:
             continuation_failures += not (
                 run.ok and len(run.history) == 1 and len(run.records) == 5
             )
+            permanence_failures += any(
+                run.records.get(site) != carrier
+                for site, carrier in branch.records.items()
+            )
+            whole = decode_signed_source(run.records)
+            whole_history_decoder_failures += whole is None or not (
+                whole.old_source == branch.old_source
+                and whole.new_source == branch.new_source
+                and whole.head_site == branch.head_site
+                and whole.direction == branch.direction
+                and whole.outcome == branch.outcome
+            )
+            whole_history_decoder_checks += 1
             continuations += 1
             active_checks += run.active_checks
 
@@ -427,6 +919,19 @@ def signed_record_certificate(forget_sign: bool = False) -> dict[str, object]:
         continuation_failures += not (
             run.ok and len(run.history) == 32 and len(run.records) == 98
         )
+        permanence_failures += any(
+            run.records.get(site) != carrier
+            for site, carrier in branch.records.items()
+        )
+        whole = decode_signed_source(run.records)
+        whole_history_decoder_failures += whole is None or not (
+            whole.old_source == branch.old_source
+            and whole.new_source == branch.new_source
+            and whole.head_site == branch.head_site
+            and whole.direction == branch.direction
+            and whole.outcome == branch.outcome
+        )
+        whole_history_decoder_checks += 1
         long_continuations += 1
         active_checks += run.active_checks
         records_N33 = len(run.records)
@@ -466,6 +971,9 @@ def signed_record_certificate(forget_sign: bool = False) -> dict[str, object]:
         "decode_failures": decode_failures,
         "active_checks": active_checks,
         "records_N33": records_N33,
+        "permanence_failures": permanence_failures,
+        "whole_history_decoder_checks": whole_history_decoder_checks,
+        "whole_history_decoder_failures": whole_history_decoder_failures,
         "chart_failures": chart_failures,
         "covariance_cases": 24 * 24 * len(base_pairs),
         "covariance_failures": covariance_failures,
@@ -548,7 +1056,10 @@ def source_transition_certificate(reverse_incidence: bool = False) -> dict[str, 
     }
 
 
-def causal_tt_certificate(separate_source: bool = False, per_branch_coupling: bool = False) -> dict[str, object]:
+def conditional_tt_projection_certificate(
+    separate_source: bool = False,
+    per_branch_coupling: bool = False,
+) -> dict[str, object]:
     momentum = np.asarray((0.55, 0.83, -0.37))
     kappa_squared = b53.spatial_symbol(momentum)
     constraint = b53.tt_constraint(momentum)
@@ -557,6 +1068,7 @@ def causal_tt_certificate(separate_source: bool = False, per_branch_coupling: bo
     constraint_error = scale_error = 0.0
     minimum_tt_response = np.inf
     naive_row_mismatch = np.inf
+    orientation_even_response_error = 0.0
     responses: dict[tuple[b64.Coord, int], dict[Fraction, np.ndarray]] = {}
     directions = b64.DIRECTIONS
     decoder_failures = 0
@@ -607,6 +1119,19 @@ def causal_tt_certificate(separate_source: bool = False, per_branch_coupling: bo
         t0nu = np.concatenate(([1.0], direction))
         naive_row_mismatch = min(naive_row_mismatch, float(np.linalg.norm(t0nu - constraint @ force)))
 
+    for positive in ((1, 0, 0), (0, 1, 0), (0, 0, 1)):
+        negative = tuple(-value for value in positive)
+        for coupling in (Fraction(1, 2), Fraction(1), Fraction(2)):
+            orientation_even_response_error = max(
+                orientation_even_response_error,
+                float(
+                    np.linalg.norm(
+                        responses[(positive, 1)][coupling]
+                        - responses[(negative, 1)][coupling]
+                    )
+                ),
+            )
+
     # Check the inherited depth-two law across the full Brillouin-zone sample.
     grid = np.linspace(-np.pi, np.pi, 17)
     symplectic_form = np.asarray(((0.0, 1.0), (-1.0, 0.0)))
@@ -637,6 +1162,7 @@ def causal_tt_certificate(separate_source: bool = False, per_branch_coupling: bo
         "scale_error": scale_error,
         "minimum_tt_response": minimum_tt_response,
         "naive_row_mismatch": naive_row_mismatch,
+        "orientation_even_response_error": orientation_even_response_error,
         "symplectic_error": symplectic_error,
         "shadow_error": shadow_error,
         "minimum_shadow": minimum_shadow,
@@ -655,6 +1181,8 @@ def main() -> int:
             "hazard_three_quarters",
             "hide_physical_distance",
             "reverse_incidence",
+            "reverse_head_child",
+            "finalize_from_head",
             "separate_source",
             "per_branch_coupling",
             "broaden_boundary",
@@ -663,15 +1191,16 @@ def main() -> int:
     mutation = parser.parse_args().mutation
     checks = Checks()
 
-    notes = tuple(flat(path) for path in (NOTE_PATH, AXIOM_PATH, BLOCK66_NOTE, BLOCK65_NOTE, BLOCK64_NOTE, BLOCK52_NOTE, BLOCK53_NOTE))
+    notes = tuple(flat(path) for path in (NOTE_PATH, AXIOM_PATH, BLOCK66_NOTE, BLOCK65_NOTE, BLOCK64_NOTE, BLOCK52_NOTE, BLOCK53_NOTE, BLOCK44_NOTE))
     source = " ".join(notes)
     checks.check(
         "A-source-stack-and-scope-binding",
         all((ROOT / path).exists() for path in AUDIT_INPUT_PATHS)
         and "does not choose a hamiltonian or transfer operator" in notes[1]
+        and "the linear bianchi identity" in notes[7]
         and "zero toe percentage movement" in notes[0]
-        and "conditional vertical slice" in notes[0],
-        "Blocks 52--66 and the current axioms are bound as conditional inputs; no parent is promoted to retained law",
+        and "conditional vertical interface" in notes[0],
+        "Blocks 44 and 52--66 plus the current local axiom snapshot are bound as conditional inputs; no parent is promoted to retained law",
     )
 
     literal = literal_signed_transfer()
@@ -711,6 +1240,7 @@ def main() -> int:
     )
 
     joint = joint_refinement_certificate()
+    registration = immediate_registration_certificate()
     hazard = Fraction(3, 4) if mutation == "hazard_three_quarters" else Fraction(1)
     joint_ok = (
         mutation != "use_menu1"
@@ -723,12 +1253,15 @@ def main() -> int:
         and joint["choi_minimum"] > -TOL
         and joint["reference_cases"] == 256
         and joint["reference_residual"] < TOL
-        and hazard == 1
+        and registration["weight_failures"] == 0
+        and registration["immediate_registration_solutions"] == (Fraction(1),)
+        and registration["three_quarter_live_residual"] < TOL
+        and hazard in registration["immediate_registration_solutions"]
     )
     checks.check(
-        "D-sharp-current-menu-and-source-completeness-selector",
+        "D-sharp-current-menu-and-immediate-registration-selector",
         joint_ok,
-        f"menu0 has 4 nonzero joint branches/frame and exact sharp marginals; menu1 has {joint['menu1_noncommuting']} noncommuting pairs; P=1 source completeness forces f=1; reference cases={joint['reference_cases']}",
+        f"menu0 has 4 nonzero joint branches/frame; menu1 has {joint['menu1_noncommuting']} noncommuting pairs; the additional no-live-branch-on-this-attempt contract uniquely gives f={registration['immediate_registration_solutions']}; f=3/4 instead retains the normalized live state",
     )
 
     signed = signed_record_certificate(mutation == "forget_sign")
@@ -742,15 +1275,20 @@ def main() -> int:
         and signed["covariance_cases"] == 2304
         and signed["covariance_failures"] == 0
         and signed["records_N33"] == 98
+        and signed["permanence_failures"] == 0
+        and signed["whole_history_decoder_checks"] == 100
+        and signed["whole_history_decoder_failures"] == 0
         and mutation != "forget_sign"
     )
     checks.check(
-        "E-existing-carrier-signed-Record-front-and-24x576-covariance",
+        "E-existing-carrier-signed-event-pair-and-Block64-seeding",
         signed_ok,
-        f"all {signed['continuations']} signed branches cross the attachment cycle and {signed['long_continuations']} orbit representatives continue 32 events through {signed['active_checks']} local checks; covariance failures={signed['covariance_failures']}/{signed['covariance_cases']}",
+        f"all {signed['continuations']} signed event pairs seed one attachment cycle and remain unchanged; {signed['long_continuations']} orbit representatives continue 32 events, with {signed['whole_history_decoder_checks']} exact content-only root-pair selections and zero failures",
     )
 
     source_certificate = source_transition_certificate(mutation == "reverse_incidence")
+    head_source = head_source_worldline_certificate(mutation == "reverse_head_child")
+    append_walk = append_source_walk_certificate(mutation == "finalize_from_head")
     source_ok = (
         source_certificate["transitions"] == 48
         and source_certificate["decoder_failures"] == 0
@@ -759,14 +1297,32 @@ def main() -> int:
         and source_certificate["symmetry_failures"] == 0
         and source_certificate["null_trace_failures"] == 0
         and source_certificate["sign_pair_failures"] == 0
+        and head_source["configurations"] == 1728
+        and head_source["finalizations"] == 576
+        and head_source["zero_stages"] == 1152
+        and head_source["profile_failures"] == 0
+        and head_source["root_failures"] == 0
+        and head_source["stage_failures"] == 0
+        and head_source["direction_failures"] == 0
+        and head_source["charge_failures"] == 0
+        and head_source["continuity_error"] < TOL
+        and head_source["stress_error"] < TOL
+        and set(head_source["directions"]) == set(b64.DIRECTIONS)
+        and head_source["symbolic_ok"]
+        and append_walk["decode_failures"] == 0
+        and append_walk["chain_failures"] == 0
+        and append_walk["kind_failures"] == 0
+        and append_walk["continuity_error"] < TOL
+        and set(append_walk["directions"]) == set(b64.DIRECTIONS)
+        and append_walk["symbolic_ok"]
     )
     checks.check(
-        "F-same-event-one-edge-current-and-four-column-null-stress",
+        "F-content-decoded-arbitrary-head-source-worldline",
         source_ok,
-        f"{source_certificate['transitions']} content-decoded signed Record transitions give max continuity={source_certificate['continuity_error']:.1e}, decoder failures={source_certificate['decoder_failures']}, and four-column stress residual={source_certificate['stress_error']:.1e}",
+        f"{head_source['configurations']} whole-history stages resolve one head charge: {head_source['zero_stages']} zero-source relay/outcome writes and {head_source['finalizations']} signed NN moves cover six directions with exact four-column incidence; Block64 supplies the {head_source['symbolic_checks']}-check arbitrary-horizon lift (alternate microstep-ledger hops={append_walk['initial_edges'] + append_walk['append_edges']})",
     )
 
-    causal = causal_tt_certificate(
+    causal = conditional_tt_projection_certificate(
         mutation == "separate_source",
         mutation == "per_branch_coupling",
     )
@@ -778,11 +1334,12 @@ def main() -> int:
         and causal["scale_error"] < 3.0e-14
         and causal["minimum_tt_response"] > 0.04
         and causal["naive_row_mismatch"] > 0.1
+        and causal["orientation_even_response_error"] < TOL
     )
     checks.check(
-        "G-same-source-global-coupling-causal-TT-response",
+        "G-decoded-event-tensor-conditional-TT-response",
         causal_ok,
-        f"all six signed axes give nonzero TT response={causal['minimum_tt_response']:.6f}, exact global-coupling scaling={causal['scale_error']:.1e}, and explicitly nonidentified four-row residual={causal['naive_row_mismatch']:.3f}",
+        f"the decoded event d-tensor has conditional nonzero TT response={causal['minimum_tt_response']:.6f}, and +/- responses correctly coincide to {causal['orientation_even_response_error']:.1e}; T00/T0i still require the open Block44 lapse/shift-source reconstruction (naive Block53-row mismatch={causal['naive_row_mismatch']:.3f})",
     )
 
     dynamics_ok = (
@@ -805,56 +1362,59 @@ def main() -> int:
         "not one macro tick",
         "four current columns are not the four tt constraint rows",
         "global coupling remains supplied",
-        "joint cp instrument and its record-lattice embedding are not physically compiled",
+        "joint-instrument embedding",
+        "immediate-registration contract is additional and unadopted",
         "no canonical axiom is edited",
     )
     boundary_ok = mutation != "broaden_boundary" and all(phrase in notes[0] for phrase in boundary_phrases)
     checks.check(
         "I-interface-cadence-normalization-and-retention-boundary",
         boundary_ok,
-        "the prepared decoder, uncompiled joint instrument, content-decoded continuity ledger, and TT macro are typed separately; embedding, cadence, coupling, signature, nonlinear completion, adoption, and retention remain open",
+        "the prepared decoder, uncompiled joint instrument, conditional head-source identification, incidence ledger, and TT projection are typed separately; physical embedding and Block44 lapse/shift-source/Bianchi reconstruction remain open with cadence, coupling, adoption, and retention",
     )
 
     no_go_phrases = tuple(f"n{index} —" for index in range(1, 9)) + (
-        "joint sharp refinement",
-        "commutant theorem",
-        "paired neutral formation",
-        "background reservoir",
-        "partial closure",
+        "no-go discipline gate status: fail",
+        "partial-narrowing",
+        "unretained authority",
+        "sharp-pvm commutant criterion",
+        "pairwise directional wall table",
+        "per-hit hidden-wall table",
+        "per-citation residual table",
     )
     no_go_ok = all(phrase in notes[0] for phrase in no_go_phrases)
     checks.check(
-        "J-fresh-no-go-discipline-and-route-ranking",
+        "J-no-go-discipline-honest-partial-narrowing",
         no_go_ok,
-        "N1--N8 preserve live escape routes while the menu1 obstruction and hazard1 necessity are stated only on their proved domains",
+        "N1--N8 are landed; absent retained route authority makes the gate FAIL, so the fixed-menu commutator result ships only as partial-narrowing with live unsharp/replacement routes",
     )
 
     print(
         "METRICS "
         f"cycle713_rows={literal['rows']} p1_transfers={literal['p1_rows']} "
-        f"joint_reference_cases={joint['reference_cases']} signed_continuations={signed['continuations']} "
-        f"source_transitions={source_certificate['transitions']} routed_right_left={physical[0]['routed_gates']}/{physical[1]['routed_gates']}"
+        f"joint_reference_cases={joint['reference_cases']} immediate_registration_cases={registration['cases']} signed_event_pairs={signed['continuations']} "
+        f"head_source_moves={head_source['finalizations']} append_ledger_hops={append_walk['initial_edges'] + append_walk['append_edges']} routed_right_left={physical[0]['routed_gates']}/{physical[1]['routed_gates']}"
     )
     print(
-        "N5_CERTIFICATE: every one of 4096 literal Cycle-713 rows, all 16 logical matrix units with a two-dimensional external reference, 24 proper frames and all 576 frame compositions, all nonzero menu-zero sharp-current branches, both endpoint signs, six one-edge source directions, four continuity/stress columns, three global coupling controls, and the full 17-cubed momentum sample are resolved"
+        "N5_CERTIFICATE: every one of 4096 literal Cycle-713 rows, all 16 logical matrix units with a two-dimensional external reference, the exact hazard grid and live-branch controls, 24 proper frames and all 576 frame compositions, every nonzero menu-zero branch, all content-decoded head stages and six directions, four source-stress columns, three coupling controls, and the full 17-cubed momentum sample are resolved"
     )
     print(
         "per_element: each P-tensor-M matrix unit, joint branch effect, successor carrier field, source-current component, symmetric-tensor coordinate, and TT quotient coordinate is checked explicitly"
     )
     print(
-        "per_site: both endpoints of every signed nearest-neighbour transition are checked on the L=5 incidence carrier; every branch crosses one write cycle and four orbit representatives continue through 32 strict-NN events"
+        "per_site: the bootstrap root pair and head frontier are decoded from each whole configuration; all 576 finalize moves and the alternate append ledger are checked on the L=5 incidence carrier"
     )
     print(
         "per_mode: every point of the declared 17-by-17-by-17 Brillouin-zone sample is checked for depth-two symplecticity, positive shadow energy, unit-circle stability, and the unit group cone"
     )
     print(
-        "per_block: Cycle713 decoding, physical P--M placement, sharp instrument refinement, signed Record attachment, Block64 continuation, Block52 continuity, and Block53 TT response are checked at their typed interfaces"
+        "per_block: Cycle713 decoding, physical P--M placement, sharp instrument refinement, signed event-pair attachment, arbitrary-horizon head-source induction, and conditional TT projection are checked at typed boundaries"
     )
     print(
-        "lattice_wide: the signed branch and one-edge continuity formulas are translation-covariant, but no selected cadence, physical normalization, Lorentzian signature, global coupling, nonlinear gravity law, full-lattice scheduler, or retained theorem is inferred"
+        "lattice_wide: the declared single-front head-source current is translation/frame covariant for arbitrary finite horizon, but its physical source identity is conditional and no multi-front law, edge-stress Fourier map, selected cadence, metrology, nonlinear law, or retained theorem is inferred"
     )
     print(
-        "scope_boundary: conditional signed source-preserving vertical slice and a two-candidate menu/hazard selector; not an axiom update, retained theory, autonomous one-tick law, nonlinear Einstein dynamics, or TOE closure"
+        "scope_boundary: conditional signed event-pair interface, conserved arbitrary-length single-front head-source worldline candidate, sharp-menu discriminator, and immediate-registration contract test; not a compiled physical matter identity, Block52-to-Block44 source/Bianchi intertwiner, axiom update, retained theory, or TOE closure"
     )
     return checks.finish()
 

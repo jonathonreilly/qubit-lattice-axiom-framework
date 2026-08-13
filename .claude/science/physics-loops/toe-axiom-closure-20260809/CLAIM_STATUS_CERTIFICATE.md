@@ -2127,3 +2127,84 @@ lines are in the landing primary cache.
 - Scope: `bounded_theorem`. No one-site attachment instrument, spatial-frame
   theorem, source disposition, selected physical law, axiom amendment, audit
   verdict, retained claim, or TOE score movement. No `review-loop` is used.
+
+## Block 67 Claim Status Certificate
+
+- Literal transfer: all 4,096 Cycle-713 seam rows resolve into four exact
+  endpoint transitions; the 2,048 `P=1` rows are single-particle transfers and
+  the decoded matter bit gives their signed direction.
+- Coherence/reference: all sixteen logical matrix units and all 256 joint-
+  branch cases tensored with a two-dimensional external reference have zero
+  intertwining residual.
+- Physical decoder boundary: both retained P--M choices are nearest neighbours
+  on 42 assigned M2 sites and route with 17,866/17,838 gates, maximum distance
+  24, and zero routing failure. Clean supplied scratch and blank route work
+  remain; the irreversible Record instrument is not compiled.
+- Exact selector: menu 0 has four positive nonzero joint sharp-current branches
+  per frame with exact marginals. Menu 1 has 96 noncommuting pairs across 24
+  frames and cannot have that sharp marginal. Only the additional, unadopted
+  immediate-registration/no-live-branch contract forces hazard `f=1`;
+  conservation alone leaves recurrent `f<1` registration live.
+- Existing-carrier signed front: all 96 nonzero signed branches cross one full
+  Block-64 write cycle, four orbit representatives continue 32 events to 98
+  permanent Records, and all 2,304 frame-product plus both chart controls pass.
+- Content-decoded source: the unique root event pair remains selectable inside
+  whole continued histories. Conditional on head-as-source typing, a radius-one
+  child relation leaves one head charge: all 1,728 stages across 96 signed
+  seeds have zero failures; relay/outcome give 1,152 zero-source writes and 576
+  finalizations move the charge by one signed nearest-neighbour edge. Block64's
+  support induction lifts this to arbitrary finite single-front horizon.
+- Causal response: the same decoded spatial stress gives a nonzero TT response
+  for all six axes, exact scaling at one global coupling, exact sourced
+  constraint bookkeeping, and the full `17^3` depth-two stability/cone control;
+  opposite source directions nevertheless have identical TT response.
+- Type boundary: the four current columns are not Block-53's four constraint
+  rows; the representative naive identification has residual `0.194`. Physical
+  instrument dilation/embedding, cadence, normalization, signature, coupling,
+  reconstruction, transfer selection, and nonlinear completion remain open.
+- Hostile controls: forgotten sign, menu 1, `f=3/4`, hidden physical distance,
+  reversed incidence, reversed head-child direction, misidentified finalize
+  source, separately reconstructed source, per-branch coupling, and broadened
+  scope are required to fail.
+- Evidence: primary `PASS=10 FAIL=0`; all ten targeted mutations fail exactly
+  one aggregate; the input-pinned cache is fresh and the graph is
+  `5,513/15,810`, out-degree seven, on exact Block-66 delivery `52d6c9b5d1`.
+  The packaging commit is pending. Claim type is `bounded_theorem`,
+  unaudited and unretained. The bootstrap head-as-matter identification remains
+  conditional. No axiom edit, audit verdict, TOE score movement, or
+  `review-loop`.
+
+### Block 67 No-Go Discipline Checklist
+
+The theorem note contains the full N1--N8 tables. The campaign disposition is:
+
+- N1 — **FAIL**: only the fixed-menu sharp-marginal route is closed on its
+  declared finite domain; unsharp, replacement-menu, larger-carrier,
+  recurrent-registration, reservoir/open-boundary, and relabeling routes lack
+  retained closure.
+- N2 — six collapsed walls remain pairwise independent: physical instrument
+  embedding; source typing/bootstrap/cadence; metrology/signature/coupling;
+  edge-current-to-gravity reconstruction; selected positive transfer; and
+  nonlinear/full-lattice completion.
+- N3 — every hidden-wall phrase hit is classified in the theorem note; the
+  reservoir is a live counter-route, while canonical/registered/background
+  uses are annotated non-load-bearing contexts.
+- N4 — the minimal-axiom scope input and Blocks 44, 52--53, and 64--66
+  citations are residual-matched; theorem parents are used only as unretained
+  typed inputs, never as retained negative authority.
+- N5 — the cache reports per-element, per-site, per-mode, per-block, and
+  lattice-wide resolution. Only the fixed menu-1 **sharp** marginal is denied;
+  gravity transmission is explicitly orientation-even and incomplete.
+- N6 — import-retirement paths remain live. This block conditionally discharges
+  the content-selector and arbitrary-continuation subwalls on its declared
+  single front, while physical source typing, instrument embedding, and
+  reconstruction stay open; no tracked obligation is retired and no automatic
+  new-axiom claim is made.
+- N7 — the hostile steelman succeeds: unsharp/replacement instruments and
+  Block65's recurrent live `f<1` branch defeat any broad no-go.
+- N8 — the Block52 transition repair is reused successfully at arbitrary
+  single-front horizon; no prior wall is laundered into retained closure.
+
+Gate status is **FAIL — partial-narrowing**. The failing routes are recorded in
+`NO_GO_LEDGER.md`; a universal instrument no-go, `f<1` obstruction, gravity
+no-go, or axiom-necessity claim is forbidden.

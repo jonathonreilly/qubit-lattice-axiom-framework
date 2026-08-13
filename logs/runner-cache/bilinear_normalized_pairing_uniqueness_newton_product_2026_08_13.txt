@@ -1,0 +1,53 @@
+===== runner cache v1 =====
+runner: scripts/bilinear_normalized_pairing_uniqueness_newton_product_2026_08_13.py
+runner_sha256: d97acf57651acdef9906907aa62d17249dfb9f914da8c8d0f32ad2fe7eb5f435
+input_fingerprint_sha256: 5f99af25bd2de66d446f4435af63752ccba33b5100ac92ce2e3fbd553514374e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+external_scientific_inputs: current Record additivity, content-only readout, and the Newton kernel/non-claims are source-bound; no observational or fitted inputs are used
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency; no runner cache is written
+negative_scope: Record does not select the extra pairing; uniqueness is only among Q-bilinear normalized maps; no Newton force law
+PASS: audit-input-paths declared audit inputs exist and match the note, axiom memo, and Newton packet
+PASS: source-record-additivity the exact current Record additivity sentence is present in the axiom memo
+PASS: source-record-content-only the exact current content-only readout sentence is present in the axiom memo
+PASS: source-newton-nonclaim-product the Newton packet lists the physical product law as a non-claim
+PASS: source-newton-nonclaim-force the Newton packet lists F = -M_test grad(phi) as a non-claim
+PASS: empty-readout I(empty)=0
+PASS: disjoint-additivity I(A union B)=I(A)+I(B) on disjoint unit-atom collections
+PASS: overlap-rejected union is refused when labels are not disjoint
+PASS: theorem-1-defined-on-overlap pi is defined without disjointness: overlapping labels still return the product
+PASS: theorem-1-empty-slot pi(empty, T)=0
+PASS: theorem-1-biadditive pi(S1 union S2, T)=pi(S1,T)+pi(S2,T) on a disjoint split of strength 3 against 4
+PASS: theorem-1-rejector pi and pairing separate (2,0),(1,1),(0,2) as 0,1,0
+PASS: theorem-1-unit-3-4 pi(unit_3, unit_4)=12 and pairing agrees
+PASS: theorem-2-normalized B(1,1)=1 for the unique Q-bilinear map with unit 1
+PASS: theorem-2-bilinear the unit-1 map is Q-bilinear on the sample grid
+PASS: theorem-2-uniqueness B(x,y)=xy on the sample grid and integer additivity reconstructs 12 as 4+4+4
+PASS: theorem-3-union-sum-only I(S union T) equals the sum 2,2,2 on the three rejector pairs
+PASS: theorem-3-union-not-pi union readout cannot equal pi on the three-pair rejector
+PASS: theorem-4-green-source-only Green coefficients at r=1 are 2,1,0 and carry no test-mass factor
+PASS: theorem-4-multiply-is-pi multiplying the Green coefficient by I(T) recovers pi / r^2
+PASS: theorem-5-not-selected content-only additivity supplies the sum, not the pairing; pi remains a second object
+PASS: mutation-sum-fails-rejector replacing pi by I(S)+I(T) fails (1,1) product 1 vs sum 2 and (2,0) product 0 vs sum 2
+PASS: mutation-source-only-fails replacing pi by I(S) fails (1,1) versus (1,2)
+PASS: mutation-normalization-fails a bilinear B with B(1,1)=2 fails uniqueness at normalization
+PASS: note-contract machine-status fields, required phrases, and forbidden-word hygiene hold
+PASS: canonical-nonmutation the pairing construction is absent from the canonical axiom file
+PASS: newton-kernel-bound the Newton packet still states the source-linear kernel algebra
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_element: rejector pairs (2,0),(1,1),(0,2) and the unit witness (3,4) are recomputed under pi
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_site: two finite collections and their scalar strengths are the only objects; no composite carrier
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_mode: value-group bilinearity is checked; no spectral or harmonic mode is claimed
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_block: only bilinear uniqueness, the union rejector, and the source-linear Green coefficient are executed
+PASS: n5-length each N5 resolution line is at least 40 characters
+lattice_wide: checked and not executed — no lattice-wide gravity or Newton force law is claimed
+TOTAL: PASS=32 FAIL=0
+
+----- stderr -----
+

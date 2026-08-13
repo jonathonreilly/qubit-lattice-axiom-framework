@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/naming_nn_edges_would_type_a_link_field_hypothetical_2026_08_13.py
+runner_sha256: bede99ba1741b5754e5927a136d0fd583430033094c3ed994bb0d8966bee931d
+input_fingerprint_sha256: d80ec2f8bb129981a0fa66012a253ca14f99c701731dd82d860daba1e42a0eb8
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: current axiom wording is source-bound; no observational or fitted inputs are used
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency
+negative_scope: S' is displayed and not adopted; holonomy, group, Bianchi, L_phys, and gauge values remain extra
+PASS: source-lattice the current Lattice sentence names sites of Z^3 with nearest-neighbor adjacency
+PASS: identity-vertex-count vertex_count() enumerates eight unit-cube sites
+PASS: identity-edge-count edge_count() enumerates twelve nearest-neighbor edges
+PASS: theorem-1-unequal-cardinalities eight sites are not twelve edges
+PASS: mutation-V-equals-E the predicate |V|=|E| fails
+PASS: occupancy-type site occupancy is a {0,1}-field on the eight named sites
+PASS: link-field-type a link assignment is a {0,1}-field on the twelve edges
+PASS: theorem-2-current-S-extra under current S the edge set is unnamed, so θ is extra
+PASS: theorem-2-counterfactual-typed under displayed S' both occupancy and θ are {0,1}-fields on named sets
+PASS: theorem-2-pattern-counts-survive the unequal domain sizes keep 2^|V| distinct from 2^|E|
+PASS: mutation-S-S-prime-site-count the predicate that S and S' disagree about |V| fails; both have eight sites
+PASS: displayed-S-prime the note displays the unadopted counterfactual sentence S'
+PASS: theorem-3-no-gauge-values S' does not name a holonomy, a group, or a Bianchi identity
+PASS: theorem-4-undissolved-walls C9 does not dissolve formation occupancy, Newton B, or Born K
+PASS: machine-status-contract the note carries the required C9 counterfactual and bounded-support fields
+PASS: canonical-nonmutation the canonical axiom memo does not name S', θ on E, or a connection axiom
+PASS: no-adoption-imports the note refuses to adopt S' or L_phys and does not import 0.5934
+per_element: eight unit-cube sites and twelve Hamming-1 edges are enumerated
+per_block: current-S extra typing versus displayed-S' named-domain typing is the only retype tested
+lattice_wide: checked and not executed — the cube is a finite window; no holonomy, L_phys, or axiom edit is claimed
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

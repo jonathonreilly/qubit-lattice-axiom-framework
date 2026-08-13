@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/cube_has_eight_vertices_and_twelve_edges_occupancy_is_not_connection_2026_08_13.py
+runner_sha256: 62a912914069822a0ff6bc2052f20c5f3dbb4277542d7edecea8a7ca93bd36f3
+input_fingerprint_sha256: 5ecf64c81306f887bf3b83211161cd73a60e69078490a736d6e0d83afcbb1b38
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: current axiom wording only; no observational or fitted inputs
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency
+measure_boundary: exact finite enumeration of V={0,1}^3 and its 1-skeleton
+negative_scope: occupancy is not identified with a connection; no holonomy or Bianchi is computed
+PASS: identity-vertex-gate identity gate calls vertex_count() and obtains 8
+PASS: identity-edge-gate identity gate calls edge_count() and obtains 12
+PASS: vertex-set V is exactly the product {0,1}^3
+PASS: edge-rule every edge differs in exactly one coordinate and E has edge_count() members
+PASS: handshaking each of the eight vertices has degree three, so 2|E|=24
+PASS: mutation-equal-cardinality the predicate |V|=|E| fails because vertex_count() != edge_count()
+PASS: no-bijection there is no bijection V <-> E
+PASS: occupancy-count occupancy patterns are 2^8 = 256
+PASS: link-field-count link fields are 2^12 = 4096
+PASS: unequal-configuration-sets 256 occupancy patterns are not 4096 link fields
+PASS: source-lattice Lattice names sites of Z^3 with nearest-neighbor adjacency
+PASS: source-record Record locks a possibility at a site
+PASS: note-quotes-parents the note quotes Lattice sites/NN adjacency and Record locking at a site
+PASS: note-displays-theta the note displays theta as a map on edges and refuses a connection axiom
+PASS: note-integers-only the note uses the exact integer counts and makes no four-dimensional SU(3) claim
+PASS: forbidden-surface the note contains none of L_phys, 0.5934, or we adopt
+PASS: claim-type-contract the author hint uses the exact bounded-theorem enum
+PASS: machine-status-contract the source uses the controlled bounded-support and negative-route-pruning fields
+PASS: audit-inputs AUDIT_INPUT_PATHS is the new note and the axiom memo only
+PASS: canonical-nonmutation the displayed link-field notation is absent from the canonical axiom file
+per_element: eight vertices and twelve edges of the unit cube are enumerated
+per_site: occupancy is typed on V; Record locking remains site-local
+per_mode: no spectral or continuum mode is claimed
+per_block: the 0-skeleton versus 1-skeleton inequality is the only negative block
+lattice_wide: checked and not executed — Z^3 is quoted from Lattice; the identity is the unit cube
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

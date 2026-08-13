@@ -1,6 +1,6 @@
 {
- "edge_count": 15600,
- "node_count": 5486,
+ "edge_count": 15603,
+ "node_count": 5487,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -15629,6 +15629,10 @@
   "reconstructed_h_quasilocal_from_analytic_dispersion_microcausality_bridge_narrow_theorem_note_2026-06-06": {
    "deps_hash": "8e0303c6f18c",
    "out_degree": 2
+  },
+  "record_additivity_does_not_supply_ad_invariant_step_measure_bounded_theorem_note_2026-08-13": {
+   "deps_hash": "e5ea68c16df7",
+   "out_degree": 3
   },
   "record_asymptotic_reset_convergence_ledger_2026-06-05": {
    "deps_hash": "ffe526446f32",

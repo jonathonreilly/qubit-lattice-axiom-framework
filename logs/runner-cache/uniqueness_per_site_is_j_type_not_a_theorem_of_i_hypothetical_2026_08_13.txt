@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/uniqueness_per_site_is_j_type_not_a_theorem_of_i_hypothetical_2026_08_13.py
+runner_sha256: 54b4a252dad4ef2a07b23e514283f03fa2f94475d7d9911296958d9458e71ffb
+input_fingerprint_sha256: 6b319a6dda247f0dc3a5d7ac36d77deb320d689c9278f8915274ccdd1721dade
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: current axiom wording only; no observational or fitted inputs
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency
+negative_scope: uniqueness-per-site is not an I-equation on the displayed window; C1 is not adopted
+PASS: source-record-lock-one the axiom memo states that a record locks exactly one admissible local possibility
+PASS: source-record-one-per-site the axiom memo states that a site never carries more than one record
+PASS: honest-menu-excludes-zero honest M={A,B} has 0 notin M, so the rejector is not a zero token
+PASS: identity-J-of-L J_of(L) is the legal unit lock (A, 0)
+PASS: mutation-D-not-J-value predicate 'D is a value of J:W→{0}∪M' fails
+PASS: mutation-I-of-L-is-one predicate 'I(L)≠1' fails by the unit-count convention
+PASS: mutation-occ-count-D-is-one predicate 'occ_count(D)≠1' fails
+PASS: I-domain-excludes-D current scalar I is not defined on the double mark, so no I-equation fails on D
+PASS: double-mark-contents D marks {A,B} at x and empty at y, and {A,B} is not in {0}∪M
+PASS: note-type-not-I-theorem the note states uniqueness is J's type, not a theorem of I, and does not adopt C1
+PASS: note-not-c1zero the note displays the type gap and separates it from a zero-token menu
+PASS: note-non-claims the note refuses r=1/2, L_phys, pairing on J, and additivity-forced I=1
+PASS: machine-status-contract the source uses the required hypothetical and bounded-support status strings
+PASS: canonical-nonmutation the axiom memo is not rewritten with C1 maps or double-mark notation
+PASS: no-go-gate N1-N8 and the do-not-ship list are source-visible
+per_element: legal unit lock L and double mark D are the only displayed histories
+per_site: both objects occupy only x; y is unformed / unmarked
+per_mode: occupancy-count and C1 typing are the only compared readouts
+lattice_wide: checked and not executed — the window is two named sites
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

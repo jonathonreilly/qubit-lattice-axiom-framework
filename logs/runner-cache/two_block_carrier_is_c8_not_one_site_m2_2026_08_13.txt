@@ -1,0 +1,61 @@
+===== runner cache v1 =====
+runner: scripts/two_block_carrier_is_c8_not_one_site_m2_2026_08_13.py
+runner_sha256: d9b1f1191debac2e2e2825aa08350baef482c2a07c695b67df460f0980fdb4fc
+input_fingerprint_sha256: 431c2b60ae1f2d552f310af6e141541a5dd32791ce749e5b5d00626a5b2e8eb4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+PASS: audit-input-present:TWO_BLOCK_CARRIER_IS_C8_NOT_ONE_SITE_M2_BOUNDED_THEOREM_NOTE_2026-08-13.md (f270fb2d6156)
+PASS: audit-input-present:LH_DOUBLET_TRACELESS_ABELIAN_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-02.md (3039740f093a)
+PASS: audit-input-present:MINIMAL_AXIOMS_2026-06-29.md (53175250f045)
+PASS: axiom-qubit-sentence
+PASS: axiom-lattice-sites
+PASS: axiom-lattice-unprivileged
+PASS: note-quotes-qubit
+PASS: note-quotes-lattice-privilege
+PASS: axiom-does-not-name-taste-cube-or-ranks
+PASS: may2-cited-identity
+PASS: note-cites-may2-identity
+PASS: note-reconstructs-y0
+PASS: note-states-min-dim-8
+PASS: note-does-not-identify-u1y
+PASS: note-does-not-select-62-over-44
+PASS: note-does-not-derive-alpha-one-third
+PASS: note-does-not-force-r-half
+PASS: note-does-not-adopt-taste-cube
+PASS: note-forbids-adoption-language
+PASS: note-does-not-cite-unmerged-prs
+PASS: pi-plus-projector
+PASS: pi-minus-projector
+PASS: pi-plus-minus-orthogonal
+PASS: pi-sum-identity
+PASS: y0-self-adjoint
+PASS: y0-is-diagonal
+PASS: spectrum-multiset-reconstructed (1,1,1,1,1,1,-3,-3)
+PASS: spectrum-length-eight
+PASS: trace-zero (0)
+PASS: cited-may2-ratio-at-alpha-one
+PASS: trace-matches-cited-may2
+PASS: site-dim-is-two (2)
+PASS: carrier-dim-is-eight
+PASS: min-dim-is-len-spectrum
+PASS: eight-exceeds-two
+PASS: predicate-y0-acts-on-c2-fails
+PASS: predicate-one-site-m2-contains-y0-fails
+PASS: identity-gates-call-spectrum-and-site-dim
+PASS: n5 per_element: eight e
+per_element: eight eigenvalues of Y_0 and site_dim=2 are recomputed
+PASS: n5 per_site: one C^8 ca
+per_site: one C^8 carrier versus one M_2(C) site; no lattice of taste cubes
+PASS: n5 per_mode: only the t
+per_mode: only the two-block spectrum is checked; no U(1)_Y mode
+PASS: n5 per_block: only the 
+per_block: only the 8-versus-2 dimension split and the display residual are executed
+PASS: n5 lattice_wide: checke
+lattice_wide: checked and not executed — no lattice-wide hypercharge law is claimed
+TOTAL: PASS=43 FAIL=0
+
+----- stderr -----
+

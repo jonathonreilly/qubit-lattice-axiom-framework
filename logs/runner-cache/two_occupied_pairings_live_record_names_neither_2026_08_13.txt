@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/two_occupied_pairings_live_record_names_neither_2026_08_13.py
+runner_sha256: 31ea4a734cbb0662722ef2323cf03ad6c91dc45e92058320c12d8dbd31eb1686
+input_fingerprint_sha256: 34a8fdd58d3febd9ef0dc14105456febf912fdb5060db77179ecd258c40102d9
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+external_scientific_inputs: live Record wording is source-bound; no observational or fitted inputs are used
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency
+negative_scope: both pairings are extras; no pairing axiom, J-field pairing, G_N, or 1/r is installed
+PASS: audit-input-paths-literal AUDIT_INPUT_PATHS is the string-literal tuple of the new note and the axiom memo
+PASS: source-live-record the live Record body names readable records, content-alone readout, and blank unreadability
+PASS: source-i-not-axiom the axiom memo states that named I and I(empty)=0 are not Record axiom content
+PASS: note-quotes-live-record the note quotes the three live Record readout sentences
+PASS: identity-pi-table B_pi reconstructs the Fraction four-tuple (0, 0, 0, 1)
+PASS: identity-plus-table B_plus reconstructs the Fraction four-tuple (0, 1, 1, 2)
+PASS: identity-gate-calls identity gates call B_pi(S, T) and B_plus(S, T)
+PASS: theorem1-occupied-occupied B_π({s},{t})=1 ≠ 2=B_+({s},{t})
+PASS: theorem1-disagreement-count the two supplied tables disagree at three of four cells
+PASS: theorem2-no-two-argument-map live Record does not name a two-argument map and the note says so
+PASS: theorem2-b-plus-not-axiom live Record does not name B_+ as axiom content
+PASS: theorem3-both-extras the note declares both tables extras and displays them
+PASS: theorem3-do-not-adopt-pi the note does not adopt π and does not pair on a J field
+PASS: mutation-tables-equal-fails the predicate B_π == B_+ is false
+PASS: mutation-live-memo-i-empty-fails the predicate live memo contains I(empty)=0 is false
+PASS: fraction-types every B_π and B_+ cell is an exact Fraction
+PASS: nonclaims-surface the note refuses G_N, 1/r, J-field pairing, and restoring I
+PASS: independence-surface the note does not depend on the I-table versus T_π cut or a multiplicative I retype
+PASS: claim-type-contract the author hint uses the exact bounded-theorem enum
+per_element: four occupied-pair cells on two disjoint unit locks are checked
+per_site: no lattice site composite is asserted
+per_mode: no spectral-mode exhaustion is claimed
+per_block: the two extra pairing tables are the only comparison tested
+lattice_wide: checked and not executed — no G_N or 1/r installation is claimed
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

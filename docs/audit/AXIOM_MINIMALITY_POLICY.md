@@ -797,3 +797,19 @@ delta; not a discharge):
   nearest-neighbor-determined is structural and does not breach the fence.
   The memo's reading notes are interpretive and non-governing. Historical
   record of the approval only.
+
+- **2026-08-13 -- Record: drop named additive `I`; blank sites cannot be
+  read (owner-approved, 2026-08-13).** The Record axiom's last sentence is
+  edited in place from "For any finite collection of pairwise-disjoint
+  records, scalar readout `I` is additive, with `I(empty)=0`." to "A site
+  with no record cannot be read." The lock sentence, one-record-per-site,
+  permanence, "Only records are readable," and "content alone" stay.
+  Content notes: named scalar `I` and finite additivity are no longer
+  axiom content (counting occupied sites is arithmetic if later supplied);
+  `I(empty)=0` treated absence as the number 0 and is removed; a blank
+  site has no readout value. Qualification still says "A state is a
+  configuration of records," so the empty configuration remains a state.
+  This is not a site-indexed lock field and not a formation rule. Owner
+  rejected replacing "admissible local possibility" with "writing" and
+  rejected "a site with no record is empty" (that would make blank a
+  readout value). Historical record of the approval only.

@@ -14,8 +14,9 @@ discrete-physics program:
    availability varies with the nearest-neighbor conditions.
 4. **Record** — records form. When present, a record locks exactly one
    admissible local possibility; a site never carries more than one record;
-   records are permanent. Only records are readable, and scalar readout is
-   additive over finite disjoint record collections.
+   records are permanent. Only records are readable. A readout value is
+   determined by record content alone. A site with no record cannot be
+   read.
 
 The canonical axiom memo is
 [`docs/MINIMAL_AXIOMS_2026-06-29.md`](docs/MINIMAL_AXIOMS_2026-06-29.md).

@@ -108,10 +108,6 @@ def manhattan(a: tuple[int, int, int], b: tuple[int, int, int]) -> int:
     return sum(abs(a[i] - b[i]) for i in range(3))
 
 
-def record_functional(records: set[str], weights: dict[str, float]) -> float:
-    return sum(weights[r] for r in records)
-
-
 def local_distribution(neighborhood_records: frozenset[str]) -> dict[str, float]:
     """Toy local probability rule; availability is its positive support."""
     if "blocks_up" in neighborhood_records:
@@ -245,6 +241,13 @@ def source_boundary_checks() -> list[Check]:
             "",
         ),
         Check(
+            "Policy records 2026-08-13 Record blank-unread revision",
+            contains(policy, "2026-08-13 -- Record: drop named additive `I`")
+            and contains(policy, "A site with no record cannot be read")
+            and contains(policy, "named scalar `I` and finite additivity are no longer"),
+            "",
+        ),
+        Check(
             "Policy records 2026-07-03 Record permanence restoration",
             "2026-07-03 -- Record permanence restoration" in policy
             and contains(policy, "records are permanent"),
@@ -355,8 +358,7 @@ def source_boundary_checks() -> list[Check]:
             and contains(note, "records are permanent")
             and contains(note, "Only records are readable")
             and contains(note, "A readout value is determined by record content alone")
-            and contains(note, "For any finite collection of pairwise-disjoint records, scalar readout `I` is additive")
-            and "`I(empty)=0`" in note,
+            and contains(note, "A site with no record cannot be read"),
             "",
         ),
         Check("Qualification is named-content-only language", "These axioms state only their named primitive content" in note, ""),
@@ -448,21 +450,16 @@ def run_checks() -> list[Check]:
         )
     )
 
-    weights = {"r1": 1.25, "r2": 2.5, "r3": -0.75, "r4": 4.0}
-    r_left = {"r1", "r2"}
-    r_right = {"r3", "r4"}
-    union = r_left | r_right
-    additive = (
-        r_left.isdisjoint(r_right)
-        and record_functional(union, weights)
-        == record_functional(r_left, weights) + record_functional(r_right, weights)
-        and record_functional(set(), weights) == 0
-    )
+    sites = {origin: None, (1, 0, 0): {"possibility": "down"}}
+
+    def site_readable(site: tuple[int, int, int]) -> bool:
+        return sites.get(site) is not None
+
     checks.append(
         Check(
-            "Record: finite scalar record functional is additive over disjoint collections",
-            additive,
-            "I(R1 union R2)=I(R1)+I(R2) and I(empty)=0 checked for finite weighted records",
+            "Record: a site with no record cannot be read",
+            site_readable((1, 0, 0)) and not site_readable(origin),
+            "toy configuration: occupied site has a lock; blank site has no readout",
         )
     )
 
@@ -526,7 +523,7 @@ def run_checks() -> list[Check]:
         Check(
             "Boundary: runner imports no context-selection/log-det/P2/measurement/dynamics/scale conclusion",
             True,
-            "script checks only algebraic notation, graph adjacency, local distribution/support bookkeeping, fixed record readout, and finite additivity",
+            "script checks only algebraic notation, graph adjacency, local distribution/support bookkeeping, and fixed record readout",
         )
     )
     return checks

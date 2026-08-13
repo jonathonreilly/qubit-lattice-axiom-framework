@@ -1,0 +1,46 @@
+===== runner cache v1 =====
+runner: scripts/scaled_effect_is_not_a_projector_axioms_pick_neither_instrument_2026_08_13.py
+runner_sha256: f0a81005ab384ac243c0cf4ef65ff44985538760763a9eeec3ce92b724412c1d
+input_fingerprint_sha256: 6be3f92cd70454c7acacb4e0e2a34138851eefa95dc381317a1e841dc86e6765
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.07
+status: ok
+----- stdout -----
+external_scientific_inputs: current axiom wording and the August 10 E0 object; no observational or fitted inputs
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency
+negative_scope: projector identity and first-outcome scale on one site; later compilers remain live
+PASS: source-admissibility the exact current distribution sentence is present
+PASS: source-record the exact current lock sentence is present
+PASS: source-parent-e0 the August 10 parent supplies the shared object E0=(1/2)P(z)
+PASS: identity-is-projector-P is_projector(P) holds
+PASS: identity-is-projector-E0 is_projector(E0) fails
+PASS: identity-born-rho-P born(rho,P) equals 3/5
+PASS: identity-born-rho-E0 born(rho, E0) equals 3/10
+PASS: identity-gates-call-born-and-is-projector identity gates call born(rho,P) and is_projector(E0)
+PASS: theorem-1-projector-split P^2=P and E0^2=diag(1/4,0) so E0 is not a projector
+PASS: theorem-2-instruments-disagree Tr(rho P)=3/5 and Tr(rho E0)=3/10 disagree
+PASS: mutation-e0-is-projector-fails the predicate E0 is a projector fails
+PASS: mutation-traces-equal-fails the predicate Tr(rho P)=Tr(rho E0) fails because 3/5 != 3/10
+PASS: binary-menus-resolve-identity both displayed menus sum exactly to I
+PASS: complements-born-normalize each menu's Born weights sum to one
+PASS: note-theorem-surface the note records both identities, non-adoption, no forced half-scale, and non-replacement
+PASS: note-n5-theorem-4 N5 is attached to Theorem 4 and refuses L_phys adoption and a forced r=1/2
+PASS: claim-type-contract the author hint uses the exact bounded-theorem enum
+PASS: machine-status-contract the source uses the controlled bounded-support fields
+PASS: canonical-nonmutation the displayed instruments are absent from the canonical axiom file
+PASS: no-go-gate all N1-N8 sections and the broad-claim rejection are source-visible
+PASS: audit-input-paths declared inputs are the new note, the August 10 note, and the axiom memo
+PASS: no-unmerged-pr-citation the note cites no unmerged pull-request numbers
+PASS: no-gleason the note does not invoke Gleason
+PASS: august-standing-not-replaced August 9 and August 10 are left standing
+PASS: theorem-3-axiom-quotes the note quotes the distribution sentence and the lock sentence
+per_element: identity gates call born(rho,P) and is_projector(E0)
+per_site: one M_2(C) site; P versus (1/2)P only
+per_mode: the rank-one ray of P and the scale c=1/2
+per_block: instrument selection only; neither menu is adopted
+lattice_wide: checked and not executed — no lattice-wide dynamics claim
+TOTAL: PASS=25 FAIL=0
+
+----- stderr -----
+

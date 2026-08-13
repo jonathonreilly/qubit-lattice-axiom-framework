@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/two_set_content_law_is_not_a_density_matrix_2026_08_13.py
+runner_sha256: 5b9394c6fe866382d551aea5294040f81d3a1f7ba6d89426ac14fabf3ecb6e17
+input_fingerprint_sha256: 702ef059450ca0e2775f30a792beec03ed79e852d4f598f7f8bf365f58b87bf6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+external_scientific_inputs: current axiom wording only; no observational or fitted inputs are used
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency
+PASS: source-admissibility Admissibility names a distribution over possibilities
+PASS: source-qubit Qubit presents the local domain as M_2(C)
+PASS: law-normalization the displayed 2-set law is a probability
+PASS: identity-gate-mu-A both trial densities carry mu_A on the (0,0) entry
+PASS: identity-gate-unequal-rho the two displayed densities are unequal matrices
+PASS: rho0-density ρ0 is Hermitian, trace one, and positive definite
+PASS: rho1-density ρ1 is Hermitian, trace one, and positive definite with det 1/5
+PASS: common-diagonal both densities have diagonal (μ(A), μ(B))
+PASS: born-weights-shared both densities reproduce μ on {P_z, I−P_z}
+PASS: uniqueness-predicate-fails the predicate μ uniquely determines ρ fails on {ρ0, ρ1}
+PASS: mu-has-no-off-diagonal μ is a function on {A, B} rather than a 2×2 matrix
+PASS: bloch-radius-not-half neither displayed density is forced to Bloch radius 1/2
+PASS: note-theorem-surface Theorems 1–5 and the display/no-dictionary boundary are source-visible
+PASS: note-forbidden-rhetoric the note avoids Gleason, unmerged-PR cites, and a Born-is-false claim
+PASS: axiom-quotes-in-note the note quotes the current Admissibility and Qubit sentences
+per_element: μ(A), μ(B), ρ0, and ρ1 are checked exactly; off-diagonals distinguish the two densities
+per_site: the type mismatch is an algebraic one-site statement; no composite carrier is asserted
+per_mode: only the menu {P_z, I−P_z} is used for the uniqueness test
+per_block: the 2-set-law versus density identification is the only negative block tested
+lattice_wide: checked and not executed — no lattice-wide dynamics or Born no-go is claimed
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

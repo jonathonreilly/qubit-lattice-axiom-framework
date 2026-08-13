@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/site_indexed_j_restricts_scalar_i_does_not_hypothetical_2026_08_13.py
+runner_sha256: 23aab7795e7d87eabd7f22e31e41710ee6178e57d624ecc5cdef0ddcfb35326d
+input_fingerprint_sha256: 9a7859a289339b09272a7883b98390a7875fdb376ad87ae8c69574360f413f1b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: axiom memo Record wording only; C1 J arithmetic is reconstructed locally
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency
+negative_scope: display restriction only; C1, sheaf, pairing, Newton-π, fifth extra, r=1/2, and L_phys are not adopted
+PASS: audit-input-paths declared inputs are the new note and the axiom memo
+PASS: machine-status-contract required hypothetical and surface-status strings are present
+PASS: record-quote current Record names scalar additive I determined by content alone
+PASS: identity-I_W-h10 I_W(h10) is the exact integer 1
+PASS: identity-I_W-h01 I_W(h01) is the exact integer 1
+PASS: identity-I_U-h10 I_U(h10) is the exact integer 1
+PASS: identity-I_U-h01 I_U(h01) is the exact integer 0
+PASS: theorem1-window-equal I_W(h10)=I_W(h01)=1
+PASS: theorem1-subsite-split I_U(h10)=1 ≠ 0=I_U(h01)
+PASS: mutation-I-not-function predicate I_U is a function of I_W fails
+PASS: identity-J_restrict-h10 J_W(h10)=(A,0) determines J|_U=A
+PASS: identity-J_restrict-h01 J_W(h01)=(0,A) determines J|_U=0
+PASS: mutation-J-restrict-unequal predicate J|_U(h10)=J|_U(h01) fails
+PASS: identity-gate-ast identity gates call I_W, I_U, J_of, and J_restrict on h10 and h01
+PASS: menu-window-subsite reconstructed objects are W={x,y}, U={x}, M={A,B}
+PASS: display-only-surface note displays restriction and refuses C1, sheaf, pairing, Newton-π, fifth extra, r=1/2, and L_phys
+PASS: canonical-nonmutation axiom memo is not rewritten to site-indexed J
+per_element: two unit-A lock histories on a two-site window
+per_site: restriction is evaluation at the single site of U
+per_mode: occupancy I is a cardinality; no product table is formed
+per_block: Record readout restriction type is the only negative block tested
+lattice_wide: checked and not executed — only W={x,y} is in scope
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

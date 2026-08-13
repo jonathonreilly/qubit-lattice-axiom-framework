@@ -170,8 +170,7 @@ When present, a record locks exactly one admissible local possibility. A site
 never carries more than one record; records are permanent.
 
 Only records are readable. A readout value is determined by record content
-alone. For any finite collection of pairwise-disjoint records, scalar readout
-`I` is additive, with `I(empty)=0`.
+alone. A site with no record cannot be read.
 
 *Qualification*
 

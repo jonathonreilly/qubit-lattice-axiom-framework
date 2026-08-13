@@ -175,9 +175,15 @@ class ExtractionFidelityTest(FixtureTestCase):
                 "There is one fixed nearest-neighbor admissibility rule, "
                 "covariant under lattice translations and proper cubic rotations",
                 "Records form.",
-                "scalar readout `I` is additive, with `I(empty)=0`",
+                "A site with no record cannot be read.",
             ):
                 self.assertIn(sentence, body, target.path)
+
+            for retired in (
+                "scalar readout `I` is additive",
+                "`I(empty)=0`",
+            ):
+                self.assertNotIn(retired, body, target.path)
 
     def test_retired_paraphrases_are_gone(self):
         """Wordings the old templates asserted but the sources never said."""

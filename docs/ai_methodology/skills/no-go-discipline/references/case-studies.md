@@ -62,8 +62,8 @@ walls**:
 - A-W-A: staggered-Dirac realization gate (`staggered_dirac_realization_gate_note_2026-05-03`, `open_gate`);
 - A-W-B: older scalar-additivity P1/readout parent
   (`observable_principle_from_axiom_note`, `audited_conditional`; under the
-  current framework, narrow Record additivity is an axiom, but this broader
-  parent still carries non-axiom readout content);
+  2026-08-13 framework, narrow Record additivity is no longer an axiom, and
+  this broader parent carries separate non-axiom readout content);
 - A-W-C: CPT-even phase blindness (`cpt_exact_note`, `unaudited`).
 
 **Why A-W-C is not independent of A-W-A:** the 2026-05-09 revision of
@@ -90,9 +90,9 @@ P1/readout parent), plus **one downstream consequence** (A-W-C follows from
 A-W-A), plus **one hidden bilinear-identification admission** (the EWSB
 order-parameter identification from unaudited
 HIERARCHY_BOSONIC_BILINEAR_SELECTOR_NOTE). On the current surface, narrow
-Record additivity itself is no longer a wall; any P2/log-det/readout content
-from the older parent remains separate. The right shape is not "three
-independent walls."
+Record additivity is again a supplied/open dependency unless separately
+retained; any P2/log-det/readout content from the older parent also remains
+separate. The right shape is not "three independent walls."
 
 **Which N-checks would have caught this:**
 

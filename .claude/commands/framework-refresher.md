@@ -41,8 +41,9 @@ statuses all change; only current repo surfaces are authoritative.
   varies with, the nearest-neighbor conditions; availability is its support.
 - **Record** — a site need not carry a record; when present, a record locks
   exactly one available local possibility. Only records are readable; readout
-  value is determined by record content alone; scalar readout is finitely
-  additive over finite pairwise-disjoint record collections.
+  value is determined by record content alone; a site with no record cannot be
+  read. No named scalar collection functional, finite additivity, or value for
+  the absence of a record is supplied by Record.
 - **Qualification** — a state is a configuration of records. A law privileges
   no states; its domain is a supplied condition, and where that condition holds
   it gives exactly one answer.

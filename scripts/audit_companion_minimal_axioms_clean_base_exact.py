@@ -29,6 +29,7 @@ AUDIT_INPUT_PATHS = (
     "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
     "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
 )
+AUDIT_TIMEOUT_SEC = 120
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -130,6 +131,16 @@ def governing_admissibility_distribution_sentence(note: str) -> str:
     return normalize(match.group(0)) if match else ""
 
 
+def governing_record_section(note: str) -> str:
+    """Extract only the live Record axiom, excluding historical discussion."""
+    try:
+        section = note.split("### Record / Fixed Reality", 1)[1]
+        section = section.split("## Qualification", 1)[0]
+    except IndexError:
+        return ""
+    return normalize(section)
+
+
 def source_boundary_checks() -> list[Check]:
     note = read(NOTE)
     policy = read(POLICY)
@@ -141,6 +152,16 @@ def source_boundary_checks() -> list[Check]:
     derivation_targets = history.get("derivation_targets") or {}
     record_reclass = (history.get("reclassified_primitives") or {}).get("minimal_axioms_record", {})
     governing_distribution_sentence = governing_admissibility_distribution_sentence(note)
+    record_section = governing_record_section(note)
+    registry_note = normalize(node.get("note", ""))
+    removed_record_phrases = (
+        "pairwise-disjoint records",
+        "scalar readout `I` is additive",
+        "scalar readout I is additive",
+        "`I(empty)=0`",
+        "I(empty)=0",
+        "finite scalar additivity",
+    )
 
     checks = [
         Check("Source note exists", NOTE.exists(), rel(NOTE)),
@@ -197,14 +218,20 @@ def source_boundary_checks() -> list[Check]:
         ),
         Check(
             "Registry note records 2026-07-02/03 no-privilege/readout/state/law/record wording",
-            "no possibility privileged" in node.get("note", "")
-            and "record locks exactly one admissible local possibility" in node.get("note", "")
-            and "a site never carries more than one record" in node.get("note", "")
-            and "a readout value is determined by record content alone" in node.get("note", "")
-            and "records are permanent" in node.get("note", "")
-            and "A state is a configuration of records" in node.get("note", "")
-            and "A law privileges no states" in node.get("note", ""),
+            "no possibility privileged" in registry_note
+            and "record locks exactly one admissible local possibility" in registry_note
+            and "a site never carries more than one record" in registry_note
+            and "a readout value is determined by record content alone" in registry_note
+            and "a site with no record cannot be read" in registry_note
+            and "records are permanent" in registry_note
+            and "A state is a configuration of records" in registry_note
+            and "A law privileges no states" in registry_note,
             "",
+        ),
+        Check(
+            "Registry excludes retired additive-I premise",
+            all(phrase not in registry_note for phrase in removed_record_phrases),
+            "no named scalar collection functional, additivity, or empty-value assignment",
         ),
         Check(
             "Policy records 2026-07-02 foundation wording additions",
@@ -278,6 +305,15 @@ def source_boundary_checks() -> list[Check]:
             and "source/action" in record_reclass.get("boundary", "")
             and "readout-context selection" in record_reclass.get("boundary", ""),
             "",
+        ),
+        Check(
+            "Record provenance names blank unreadability and excludes retired additive-I premise",
+            "unreadability of a site with no record" in record_reclass.get("statement", "")
+            and "finite additivity" in record_reclass.get("boundary", "")
+            and "named scalar collection functional I" in record_reclass.get("boundary", "")
+            and "I(empty)=0" in record_reclass.get("boundary", "")
+            and "readout value for a site with no record" in record_reclass.get("boundary", ""),
+            "current primitive provenance must record both the adopted clause and the subtraction",
         ),
         Check("Note names exactly four framework axioms", "1. **Lattice**" in note and "2. **Qubit**" in note and "3. **Admissibility**" in note and "4. **Record**" in note, ""),
         Check(
@@ -353,13 +389,19 @@ def source_boundary_checks() -> list[Check]:
         ),
         Check(
             "Record fixed-reality clause is present",
-            contains(note, "When present, a record locks exactly one admissible local possibility.")
-            and contains(note, "A\nsite never carries more than one record")
-            and contains(note, "records are permanent")
-            and contains(note, "Only records are readable")
-            and contains(note, "A readout value is determined by record content alone")
-            and contains(note, "A site with no record cannot be read"),
+            contains(record_section, "When present, a record locks exactly one admissible local possibility.")
+            and contains(record_section, "A site never carries more than one record")
+            and contains(record_section, "records are permanent")
+            and contains(record_section, "Only records are readable")
+            and contains(record_section, "A readout value is determined by record content alone")
+            and contains(record_section, "A site with no record cannot be read"),
             "",
+        ),
+        Check(
+            "Live Record axiom excludes retired additive-I premise",
+            bool(record_section)
+            and all(phrase not in record_section for phrase in removed_record_phrases),
+            "historical discussion may quote the retired sentence; the governing section may not",
         ),
         Check("Qualification is named-content-only language", "These axioms state only their named primitive content" in note, ""),
         Check(

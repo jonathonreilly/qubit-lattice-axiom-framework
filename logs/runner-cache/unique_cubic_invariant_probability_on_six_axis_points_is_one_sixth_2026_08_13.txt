@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/unique_cubic_invariant_probability_on_six_axis_points_is_one_sixth_2026_08_13.py
+runner_sha256: dc69ef12d5e5625dd1be1cee173c0a18f23fcf05e7a664adf8239d8d10b2a4a4
+input_fingerprint_sha256: 3ce0fc0c52f10fa705d1bf156b6a99b348b71ff7ff66bc68fffae36d4ca40f46
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: current axiom wording only; no observational or fitted inputs
+package_local_integrity_reads: proposed source note plus axiom memo
+audit_input_paths: docs/UNIQUE_CUBIC_INVARIANT_PROBABILITY_ON_SIX_AXIS_POINTS_IS_ONE_SIXTH_BOUNDED_THEOREM_NOTE_2026-08-13.md, docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: source-lattice Lattice names proper cubic rotations about each site
+PASS: source-qubit Qubit names that no possibility is privileged
+PASS: cardinality the axis set X has six points
+PASS: group-order the proper cubic group has 24 matrices of determinant +1
+PASS: transitivity G acts transitively; 90 degrees about z sends e1 to e2
+PASS: rx-sends-e3-to-e2 90 degrees about x sends e3 to e2
+PASS: identity-haar-six identity gate: haar_six is the constant 1/|X| probability
+PASS: identity-invariance identity gate: is_invariant(haar_six()) holds and identity preserves p
+PASS: uniqueness-reynolds the G-average of any probability equals haar_six
+PASS: delta-legal the point mass on e3 is a legal probability
+PASS: mutation-delta-invariant predicate 'delta_e3 is G-invariant' fails
+PASS: mutation-half-unique predicate 'p(e1)=1/2 is the unique invariant law' fails
+PASS: note-theorems the source note states Theorems 1-5 and the N5 fence on Theorem 5
+PASS: note-scope Haar is displayed and not adopted; r=1/2 is not forced
+per_element: six axis points and 24 proper cubic matrices are enumerated exactly
+negative_scope: only G-invariance on this six-point set is decided; no Born kernel or Bloch vector is claimed
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

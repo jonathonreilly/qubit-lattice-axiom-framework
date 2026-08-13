@@ -1,0 +1,57 @@
+===== runner cache v1 =====
+runner: scripts/speed_preserving_linear_wick_map_is_unit_clock_2026_08_13.py
+runner_sha256: cfc5eca2e48a662bee021f2650fe382607d8147f32d7882bbf74411693a83149
+input_fingerprint_sha256: 0d33101bde93b045dcb87501f481760e7c103b57efa69771f5cacb4dcd7ad8eb
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.32
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/SPEED_PRESERVING_LINEAR_WICK_MAP_IS_UNIT_CLOCK_BOUNDED_THEOREM_NOTE_2026-08-13.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md
+cache_write: false
+external_scientific_inputs: axiom memo and kinetic-isotropy primitive; no observational or fitted inputs
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency; no runner cache is written
+negative_scope: axioms and c_t = c_s as namers of speed-preservation are rejected; a declared matching remains a live formal escape
+PASS: audit-input-paths declared audit inputs exist and match the note, axiom memo, and primitive
+PASS: source-primitive-ct-cs the primitive supplies the Euclidean equality c_t = c_s
+PASS: source-primitive-os0 the primitive identifies that equality with OS0 kinetic normalization
+PASS: source-primitive-no-axiom-amend the primitive states that it does not add or amend an axiom
+PASS: source-axiom-lattice-z3 the axiom memo states that physical sites are the cubic lattice Z^3
+PASS: source-axiom-no-time-metric Admissibility is recorded as not defining a time metric
+PASS: theorem-1-euclidean-independent-of-a Q_E = (k4^2+k^2)/4 contains no continuation parameter a
+PASS: theorem-1-os0-equal-coefficients Euclidean coefficients of k4^2 and kx^2 are both 1/4, so c_t = c_s
+PASS: theorem-1-shared-euclidean displayed continuations recover the same Q_E; sample (k4,kx)=(2,3) is 13/4
+PASS: theorem-2-continuation substituting k4 = i a ω into Q_E yields (-a^2 ω^2 + k^2)/4
+PASS: identity-omega-coeff omega_coeff(a)=-a^2/4 equals the derived [ω^2] Q_a on every sample
+PASS: theorem-2-spatial-unchanged the spatial coefficient remains 1/4 for every displayed a
+PASS: theorem-2-speed-preservation-iff-square-one speed_preserved(a) iff a*a==1 on the rational sample
+PASS: theorem-2-unique-up-to-orientation among the samples only a=+1 and a=-1 preserve speed, unique up to time-orientation
+PASS: theorem-3-half a=1/2 gives a^2=1/4 ≠ 1 and omega_coeff=-1/16 versus spatial 1/4
+PASS: theorem-3-double a=2 gives a^2=4 ≠ 1 and omega_coeff=-1 versus spatial 1/4
+PASS: mutation-true-for-all-fails-at-half replacing speed_preserved by True-for-all-a wrongly accepts a=1/2
+PASS: identity-gates-present identity gates call omega_coeff(a)=-a^2/4 and speed_preserved(a):=(a*a==1)
+PASS: theorem-4-sources-do-not-name-matching neither source writes the continuation, omega_coeff, or speed_preserved
+PASS: theorem-4-primitive-does-not-force-a-1 the primitive is c_t = c_s only and does not force a=1
+PASS: canonical-nonmutation the continuation family is absent from the canonical axiom and primitive files
+PASS: note-preserves-ct-cs the note records c_t = c_s
+PASS: note-links-parents the note links the axiom memo and the kinetic-isotropy primitive
+PASS: claim-type-contract the author hint uses the exact bounded-theorem enum
+PASS: machine-status-contract the source uses the controlled bounded-support fields
+PASS: note-theorem-4-noninstall the note does not install a=1 and does not claim Lorentzian closure
+PASS: note-witnesses the note exhibits omega_coeff -1/16 versus 1/4 and unit-clock a=±1
+PASS: forbidden-rhetoric-absent the note avoids axiom-adoption, promotion, and executor-name rhetoric
+N5: Theorem 4 does not install a=1
+N5: Theorem 4 does not claim Lorentzian closure
+N5: speed-preservation is an extra matching, not an axiom sentence
+per_element: each displayed a is tested by speed_preserved(a):=(a*a==1)
+per_site: momentum-space quadratic forms; no composite carrier is asserted
+per_mode: quadratic TT form only; no spectral-mode exhaustion is claimed
+per_block: linear Wick family versus the extra speed matching
+lattice_wide: checked and not executed — no lattice-wide Lorentzian closure is claimed
+TOTAL: PASS=28 FAIL=0
+
+----- stderr -----
+

@@ -1,6 +1,6 @@
 {
- "edge_count": 15600,
- "node_count": 5486,
+ "edge_count": 15603,
+ "node_count": 5487,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -16401,6 +16401,10 @@
   "scalar_trace_tensor_record_invariance_companion_note_2026-06-04": {
    "deps_hash": "02deca191ed1",
    "out_degree": 2
+  },
+  "scale_reference_a_inverse_is_not_wick_clock_parameter_bounded_theorem_note_2026-08-13": {
+   "deps_hash": "872a440eb583",
+   "out_degree": 3
   },
   "scale_reference_primitive": {
    "deps_hash": "c8eee4235fc9",

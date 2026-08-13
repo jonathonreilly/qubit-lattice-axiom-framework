@@ -1,0 +1,41 @@
+===== runner cache v1 =====
+runner: scripts/empty_unit_pairing_table_is_extra_i_fills_a_different_two_by_two_2026_08_13.py
+runner_sha256: 8cb54a16bbabed929d7095d0cdd787fd86795a359d9d5d48adbdb0e178d6f63b
+input_fingerprint_sha256: 23f9c8b49fae0a4d2bcf8e35a5acf0b0944ce4c18e1a78bea9908000fe4a9caa
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: current Record wording and the Newton product-law non-claim are source-bound; no observational or fitted inputs are used
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency
+negative_scope: T_π is extra; no pairing axiom, Newton claim, G_N, or 1/r is installed
+PASS: source-record-additivity the current Record sentence names one-argument additive I with I(empty)=0
+PASS: source-newton-nonclaim the Newton packet lists the physical product law as a non-claim
+PASS: note-quotes-record the note quotes the one-argument Record additivity sentence
+PASS: note-quotes-newton-nonclaim the note quotes only the Newton product-law non-claim
+PASS: identity-i-table i_table() is the Fraction four-tuple (0, 1, 1, 2)
+PASS: identity-pi-table pi_table() is the Fraction four-tuple (0, 0, 0, 1)
+PASS: identity-gate-calls identity gates call i_table() and pi_table()
+PASS: theorem1-recompute I(empty)=0 and disjoint additivity recompute I({s} ⊔ {t}) as 2
+PASS: theorem2-disagreement-count T_π disagrees with the I-table at three of four cells
+PASS: theorem2-unit-unit the unit-unit cell is 2 ≠ 1
+PASS: mutation-predicate-fails the predicate I-table equals T_π is false
+PASS: mutation-fails-at-unit-unit the equality predicate fails at the unit-unit cell
+PASS: theorem3-record-one-arg the axiom memo does not name T_π or a two-argument pairing table
+PASS: theorem3-tpi-extra the note declares T_π extra and not an axiom
+PASS: theorem4-extension-34 the unique extension evaluates to 12 at (3, 4)
+PASS: theorem4-uniqueness-grid separate additivity on N forces T(n, m) = n m on the checked grid
+PASS: theorem4-not-record the note states that the later supplier is not Record additivity
+PASS: theorem5-nonclaims the note refuses a pairing axiom, a Newton claim, and installation of G_N or 1/r
+PASS: fraction-types every I-table and T_π cell is an exact Fraction
+PASS: claim-type-contract the author hint uses the exact bounded-theorem enum
+per_element: four pair cells on two named unit atoms are checked
+per_site: no lattice site composite is asserted
+per_mode: no spectral-mode exhaustion is claimed
+per_block: the I-table versus extra T_π block is the only comparison tested
+lattice_wide: checked and not executed — no Newton, G_N, or 1/r installation is claimed
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

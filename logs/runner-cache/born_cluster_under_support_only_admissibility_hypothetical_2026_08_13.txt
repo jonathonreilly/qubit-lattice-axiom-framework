@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/born_cluster_under_support_only_admissibility_hypothetical_2026_08_13.py
+runner_sha256: 26bdfd8857f917d718f633cc37cc46f41c493373c36de046394cad6e63f67164
+input_fingerprint_sha256: 3f561f4a3a43660a2609f49da7ebe166e21580966ea168f0a8ab22e656622c7d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: current axiom wording is source-bound; no observational or fitted inputs are used
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency
+negative_scope: only the four reconstructed facts and the reading-relative missing-mu classification are checked; a later compiler remains live
+PASS: source-admissibility-aug5 the exact current distribution sentence is present
+PASS: source-support-reading the axiom reading note takes available to be the distribution support
+PASS: source-form-unspecified the memo withholds the distribution form and values
+PASS: source-record-I the axiom supplies additive I with I(empty)=0
+PASS: source-one-lock the axiom locks exactly one admissible local possibility
+PASS: fact1-values the two occupancy laws evaluate to 1/3 and 3/8 at k=2
+PASS: mutation-occupancy-laws-agree the predicate mu1(A|2)=mu2(A|2) fails
+PASS: fact2-born-pairing Tr(rho P) equals 3/5
+PASS: fact2-one-lock I of one lock equals 1
+PASS: mutation-born-equals-I the predicate Tr(rho P)=I(one lock) fails
+PASS: fact3-menu-identity Tr(I_2)=2 is not I(empty)=0
+PASS: fact4-scaled-not-projector E0=(1/2)P is not a projector, while P is
+PASS: theorem1-reading-independence the note states Facts 1-4 hold on both readings
+PASS: theorem2-expected-under-r-supp missing-mu sentences are expected under R_supp and walls under R_dist
+PASS: theorem3-type-splits-remain Facts 2-4 remain type-splits and the compiler need is not dissolved
+PASS: theorem4-flip-count exactly one of the four reconstructed claims flips wall to gap
+PASS: source-note-readings both readings are quoted and neither is adopted as a rewrite
+PASS: claim-type-contract the author hint uses the exact bounded-theorem enum
+PASS: machine-status-contract the source uses the required diagnostic machine-status fields
+PASS: excluded-imports Gleason, 0.5934, and unmerged-PR premises are refused
+PASS: canonical-nonmutation the diagnostic witnesses are absent from the canonical axiom file
+PASS: no-go-gate all N1-N8 sections and the broad-claim rejection are source-visible
+per_element: occupancy pair, Born pairing, empty count, and scaled projector are checked
+per_site: one site at neighbor count 2 and one unit lock; no composite carrier is asserted
+per_mode: checked and not executed — no spectral mode is used
+per_block: only the four reconstructed facts and the reading flip are classified
+lattice_wide: checked and not executed — no lattice-wide frequency claim is made
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

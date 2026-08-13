@@ -1,0 +1,48 @@
+===== runner cache v1 =====
+runner: scripts/one_site_admissibility_laws_do_not_force_fair_binary_margin_2026_08_13.py
+runner_sha256: 92f2cf55f21e3594f4bee959ce2282c3c04bb4f25d55aaf810d8c64a70c63b5e
+input_fingerprint_sha256: 04a778681709246320aa838f8a5b38252c8a7905a4222f6e49941b5e8be5314e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+external_scientific_inputs: current Admissibility and Record wording plus the August 10 open-interface phrase are source-bound; no observational or fitted inputs
+integrity_reads: this runner, its paired note, the axiom memo, and the August 10 interface note; no other repository scientific inputs
+construction: one-site laws on {0,1}, n=2 independent products, lock conditional, displayed counting selector
+negative_scope: Admissibility, graph separation, and Record lock do not force p=1/2; formation is not derived; no compiler non-existence
+PASS: audit-input-paths declared audit inputs exist and match the note, axiom memo, and August 10 note
+PASS: source-admissibility the current distribution sentence is pinned in the axiom memo and the note
+PASS: source-formation-reading-note the Admissibility reading note on formation site/rate is pinned
+PASS: source-record-lock the Record lock sentence is pinned in the axiom memo and the note
+PASS: source-record-typing content-only and additivity sentences are pinned as typing premises
+PASS: source-aug10-interface August 10 open-interface phrase is pinned in the parent and the note
+PASS: theorem-1-value-open p=1/2 and p=1/3 are distinct one-site laws on {0,1}
+PASS: theorem-1-full-support both executed laws have full support, so both possibilities are available
+PASS: theorem-2-fair-product (1/2)*(1/2)=1/4 and the fair product is uniform
+PASS: theorem-2-biased-witness (1/3)*(1/3)=1/9, which is not 1/4
+PASS: theorem-2-mixed-witness (1/2)*(1/3)=1/6, which is not 1/4
+PASS: theorem-2-uniformity-criterion the four atoms equal 1/4 iff both margins are 1/2
+PASS: theorem-3-lock-does-not-reweight after lock bit1=0 on (1/2,1/3), the second-bit law is still 1/3
+PASS: theorem-4-counting-haar the counting measure on {0,1} is the law p=1/2
+PASS: theorem-4-selector-extra p=1/3 remains an allowed one-site law, so Haar is extra
+PASS: theorem-5-formation-not-derived formation site/rate remains a reading-note residual, not a product identity
+PASS: theorem-5-separation-does-not-force an independent product of one-site laws may be biased
+PASS: mutation-always-fair-fails always_fair(p) is true on (0,1] but fails fairness at p=1/3
+PASS: mutation-uniform-table-fails-ninth replacing the product by the uniform 1/4 table misses the 1/9 witness
+PASS: mutation-lock-forces-fair-fails a predicate that lock of bit 1 forces bit 2 to 1/2 fails Theorem 3
+PASS: note-contract machine-status fields, required phrases, and forbidden-word hygiene hold
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_element: named margins 1/2 and 1/3 with atoms 1/4, 1/9, 1/6 recomputed
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_site: one-site laws and the n=2 product are site-local statements, not a composite arena
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_mode: Bernoulli product atoms are checked; no spectral or harmonic mode is claimed
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_block: only value-openness, the uniformity criterion, lock-non-reweighting, and the displayed selector are executed
+PASS: n5-length each N5 resolution line is at least 40 characters
+lattice_wide: checked and not executed — no lattice-wide compiler, formation rate, or fair-margin law is claimed
+TOTAL: PASS=26 FAIL=0
+
+----- stderr -----
+

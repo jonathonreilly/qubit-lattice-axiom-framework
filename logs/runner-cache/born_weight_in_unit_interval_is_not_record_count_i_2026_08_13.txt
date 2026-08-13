@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/born_weight_in_unit_interval_is_not_record_count_i_2026_08_13.py
+runner_sha256: ba7c50b0f8139dca3af324e68615630e93e6e83b8282e718072eee31a561a912
+input_fingerprint_sha256: dd66a03f4a370eec2a2201d60d0d20cbf8cd9d4f91dc69cb8ac6f33172030051
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: axiom Record wording and the August 9 supplied-grading Born form are source-bound; no observational or fitted inputs
+package_local_integrity_reads: the proposed source note, the August 9 parent, and the axiom memo are read for claim-surface consistency
+arithmetic: exact Fraction matrix pairing and integer unit-lock cardinality
+PASS: source-record the axiom memo states additive I with I(empty)=0
+PASS: source-parent the August 9 parent supplies the unique trace form on a supplied grading
+PASS: identity-born identity gate born(rho, P) returns the exact pairing 3/5
+PASS: identity-record identity gate record_I(nlocks) is the unit-lock cardinality
+PASS: identity-gate-calls identity gates call born(rho, P) and record_I(nlocks)
+PASS: record-additivity unit-lock I is additive on disjoint locks
+PASS: projector-and-density P is a projector and rho is a trace-one positive diagonal density
+PASS: mutation-integer-born the predicate Tr(rho P) is an integer fails on 3/5
+PASS: mutation-one-lock-fraction the predicate I(one lock)=3/5 fails
+PASS: type-separation the pairing is rational non-integral and the unit-lock values are integers
+PASS: note-theorems the note states the five theorems, the extra dictionary, and the two failed predicates
+PASS: independence-surface the note excludes Bessel functions, Haar measure, and four-dimensional plaquettes
+PASS: forbidden-imports-absent the note does not cite Gleason, the decimal 0.5934, or unmerged block names
+PASS: claim-type-contract the author hint uses the exact bounded-theorem enum
+PASS: audit-input-paths declared audit inputs are the new note, the August 9 parent, and the axiom memo
+PASS: canonical-nonmutation the axiom memo is not edited by this block
+per_element: one exact projector-density pairing and the unit-lock counts 0,1,2
+dictionary: displayed mismatch only; no pairing-to-count map is adopted
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

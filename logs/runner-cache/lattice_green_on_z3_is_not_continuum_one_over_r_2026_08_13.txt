@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/lattice_green_on_z3_is_not_continuum_one_over_r_2026_08_13.py
+runner_sha256: d098f182e858fc0db3eea5cff099058ec3d9ab97551dd5f099c919d778848d7c
+input_fingerprint_sha256: 18a1ccce6610740447d8810a51c7bb76f37bacd2fffdfc60f8536550c59a0561
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+PASS AUDIT_INPUT_PATHS has the new note, Newton note, axiom memo
+PASS T1 graph distances at e1, 2e1, e1+e2 are 1, 2, 2
+PASS T1 reciprocals at e1, 2e1, e1+e2 are 1, 1/2, 1/2
+PASS T1 six neighbors of e1: origin undefined, five halves
+PASS T1 zero-extended nn-Laplacian of 1/d at e1 is -7/2
+PASS mutation: 1/d is nn-harmonic off 0 fails at e1
+PASS T2 no origin value makes 1/d a Green trial (7/6 != 7/2)
+PASS T2 1/d Laplacian at e1+e2 is 1/3 (stencil avoids origin)
+PASS executed cube {-2..2}^3\{0} has 124 Fraction values 1/d
+PASS T2 G_cont∘d is not a lattice Green: 1/d fails Poisson/harmonicity
+PASS T3 axiom memo states Record readout additivity on disjoint records
+PASS T3 Record additivity text does not name either kernel
+PASS T4 Newton packet still isolates phi = M G and formal G(r)
+PASS T4 this note does not retire Newton and splits kernel from π
+PASS note states Theorems 1–4 and refuses gravity / G_N / 1/r install
+PASS no G_N import and no force-law derivation in this pair
+PASS n5 per_element: graph dista
+per_element: graph distances and 1/d values at e1, 2e1, e1+e2 are exact Fractions
+PASS n5 per_site: the nn-Laplaci
+per_site: the nn-Laplacian is evaluated at e1 and e1+e2 only
+PASS n5 per_mode: 6-nn graph Lap
+per_mode: 6-nn graph Laplacian is checked; no continuum mode is claimed
+PASS n5 per_block: only the 1/d 
+per_block: only the 1/d versus Green-trial split and the additivity residual are executed
+PASS n5 lattice_wide: checked an
+lattice_wide: checked and not executed — no lattice-wide gravity or G_N is claimed
+TOTAL: PASS=21 FAIL=0
+
+----- stderr -----
+

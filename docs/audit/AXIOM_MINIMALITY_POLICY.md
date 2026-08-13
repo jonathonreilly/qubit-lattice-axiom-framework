@@ -812,4 +812,7 @@ delta; not a discharge):
   This is not a site-indexed lock field and not a formation rule. Owner
   rejected replacing "admissible local possibility" with "writing" and
   rejected "a site with no record is empty" (that would make blank a
-  readout value). Historical record of the approval only.
+  readout value). This is a semantic premise narrowing, not an equivalence
+  migration: prior judgments that consumed the removed structure must return
+  to fresh review and audit through the premise-epoch guard. Historical record
+  of the approval only.

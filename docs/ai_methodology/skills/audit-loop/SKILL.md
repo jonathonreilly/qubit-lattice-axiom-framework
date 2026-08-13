@@ -158,8 +158,7 @@ Use this skill to audit one claim at a time from the repository audit queue and 
   never carries more than one record; records are permanent.
 
   Only records are readable. A readout value is determined by record content
-  alone. For any finite collection of pairwise-disjoint records, scalar readout
-  `I` is additive, with `I(empty)=0`.
+  alone. A site with no record cannot be read.
 
   *Qualification*
 

@@ -50,19 +50,19 @@
    "sections": {
     "Admissibility / Local Constraint": "adfd9a423aec",
     "Audit-Pipeline Treatment": "10321a931853",
-    "Historical Context": "155ad0d819c4",
+    "Historical Context": "e24c1b831ad3",
     "Lattice / Physical Locality": "049996af50c4",
     "Open Gates Outside The Axioms": "31d6f96cb840",
     "Purpose": "37c8746f6b31",
     "Qualification": "3ee115daf95e",
     "Qubit / Site Possibility": "08c620aa728b",
-    "Record / Fixed Reality": "ef0944d3b2cf",
+    "Record / Fixed Reality": "4e423674e53b",
     "Relation To Dynamics And Kinetic Branch Selection": "1cf2c6a2467b",
-    "Relation To The 2026-06-05 Record Wording": "59ac17e9dfd7",
-    "Relation To The Older Observable-Principle Parent": "7a47f4abd7ed",
-    "The Four Framework Axioms": "49874126a656"
+    "Relation To The 2026-06-05 Record Wording": "90ac378b8869",
+    "Relation To The Older Observable-Principle Parent": "9364ac68eb42",
+    "The Four Framework Axioms": "703dcc1ddfa7"
    },
-   "sha256": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39"
+   "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
   },
   "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": {
    "sections": {
@@ -85,7 +85,7 @@
    "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
   },
   "docs/audit/data/axiom_premise_nodes.json": {
-   "sha256": "56fde9133eb35f4c5ad8c38829904737771242d7c0188b55b7c03b4d6eb9b535"
+   "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
   }
  },
  "targets": {
@@ -97,24 +97,24 @@
    ]
   },
   "docs/ai_methodology/skills/audit-loop/SKILL.md": {
-   "block_lines": 195,
-   "block_sha256": "abb17461e3988378720b369ce6201909ee22ea2df9a000c7d179ec33484598e9",
+   "block_lines": 194,
+   "block_sha256": "d09a5fa4208fbc37ff7052965cd2606bfaccca068f5ffd309b40ecab70a4f0e0",
    "spans": [
     "axioms",
     "primitives"
    ]
   },
   "docs/ai_methodology/skills/physics-loop/SKILL.md": {
-   "block_lines": 190,
-   "block_sha256": "4641934814234cddd1110e6d932b69db66ae8c2577250f602e56e6c646194b92",
+   "block_lines": 189,
+   "block_sha256": "16e3fc3edd3c1229ca17f2eb59ac541a016ceda3abb8fc150b507a5e11105715",
    "spans": [
     "axioms",
     "primitives"
    ]
   },
   "docs/ai_methodology/skills/review-loop/SKILL.md": {
-   "block_lines": 190,
-   "block_sha256": "4641934814234cddd1110e6d932b69db66ae8c2577250f602e56e6c646194b92",
+   "block_lines": 189,
+   "block_sha256": "16e3fc3edd3c1229ca17f2eb59ac541a016ceda3abb8fc150b507a5e11105715",
    "spans": [
     "axioms",
     "primitives"

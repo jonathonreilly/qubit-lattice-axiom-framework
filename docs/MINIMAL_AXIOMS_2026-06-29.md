@@ -6,7 +6,7 @@
 **Date:** 2026-06-29
 **Type:** meta
 **Status:** current public framework axiom memo for the qubit-on-`Z^3`
-package with local admissibility and fixed scalar record readout.
+package with local admissibility and fixed record readout.
 **Status authority:** explicit owner approval for the 2026-06-29 foundation
 reset is recorded in `docs/audit/AXIOM_MINIMALITY_POLICY.md` section 6.
 Audit status remains set only by the independent audit lane.
@@ -145,6 +145,11 @@ persistence dynamics, local observability, or any other additional bridge must
 cite separate retained authorities or remain bounded/pending according to the
 audit ledger.
 
+Finite additivity, a named scalar collection functional `I`, and an assigned
+value `I(empty)=0` are not Record axiom content. Rows that require any of those
+structures must likewise cite a separate retained authority or remain
+conditional/open.
+
 ## Relation To The 2026-06-05 Record Wording
 
 The 2026-06-05 Record axiom named durable realized-outcome registration and
@@ -159,8 +164,8 @@ readout structure:
   probability distribution over the possibilities is determined by, and
   varies with, the nearest-neighbor conditions.
 - Record names the fixed locking of one admissible local possibility,
-  one-record-per-site uniqueness, permanence, and finite scalar readout
-  additivity over disjoint record collections.
+  one-record-per-site uniqueness, permanence, content-determined readout, and
+  the unreadability of a site with no record.
 - `K`/CPT orbit structure, central-sector decomposition, and any sector
   generation rule are downstream readout-context content, not generic axiom
   content.
@@ -211,6 +216,13 @@ review (per-point likelihood under-specifies an atomless law on the continuous
 one-site domain). The file
 path was again kept unchanged so existing runner needles and links continue
 to resolve.
+
+The 2026-08-13 owner-approved revision removed the named scalar functional
+`I`, finite additivity over disjoint record collections, and `I(empty)=0` from
+Record. The replacement says that a site with no record cannot be read; it
+does not assign a scalar value to absence. The file path remains unchanged so
+the premise-epoch guard can invalidate old judgments and send consumers that
+used the removed structure through fresh review and audit.
 
 This memo exposes the remaining minimal ontology needed by the blocked audit
 lanes: records are not arbitrary mosaics. The admissibility rule determines the

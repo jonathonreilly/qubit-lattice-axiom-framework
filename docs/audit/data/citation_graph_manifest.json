@@ -1,6 +1,6 @@
 {
- "edge_count": 15600,
- "node_count": 5486,
+ "edge_count": 15601,
+ "node_count": 5487,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -15505,6 +15505,10 @@
   "qubit_axiom_hardening_note_2026-05-20": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "qubit_direct_sum_has_no_unital_m3_hypothetical_bounded_theorem_note_2026-08-13": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "qubit_k1_derivation_from_minimality_narrow_theorem_note_2026-05-22": {
    "deps_hash": "0b48e244e1f7",

@@ -1,6 +1,6 @@
 {
- "edge_count": 15600,
- "node_count": 5486,
+ "edge_count": 15602,
+ "node_count": 5487,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -16421,6 +16421,10 @@
   "science_3plus1_line_law_known_limits_note_2026-04-20": {
    "deps_hash": "3e19d7b5d628",
    "out_degree": 6
+  },
+  "second_c8_with_minus_y0_cancels_cubic_and_is_extra_bounded_theorem_note_2026-08-13": {
+   "deps_hash": "61e9d69bb3fe",
+   "out_degree": 2
   },
   "second_grown_family_complex_boundary_note": {
    "deps_hash": "3ba1a856c176",

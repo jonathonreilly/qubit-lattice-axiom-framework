@@ -1,0 +1,41 @@
+===== runner cache v1 =====
+runner: scripts/three_qubit_c8_carries_y0_cubic_cancel_still_extra_2026_08_13.py
+runner_sha256: 32c1c5eacc986541598afefc52edc3da744c4eb8a191a74e32c7d34223965f00
+input_fingerprint_sha256: 8fa756ab6a0c3dcc047cc40561254402546735de832e3eae5462e4cb95a61c86
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+external_scientific_inputs: current axiom wording is source-bound; no observational or fitted inputs are used
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency; parents on origin/main are the axiom memo only
+measure_boundary: exact integer traces and dimensions only; 6-54=-48 is reconstructed from the spectrum and from the matrix cube
+negative_scope: one 3-qubit Hilbert is not a cubic-cancel; no charge naming and no generation axiom
+PASS: source-qubit the current Qubit wording names one-site M_2(C)
+PASS: source-no-y0 the axiom memo does not name Y_0
+PASS: source-no-second-c8 the axiom memo does not name a second C^8
+PASS: dim-H dim H = 2^3 = 8
+PASS: pi-plus-projector Pi_+ is a rank-6 projector
+PASS: pi-minus-projector Pi_- is a rank-2 projector
+PASS: pi-complement Pi_+ and Pi_- are complementary orthogonal projectors on C^8
+PASS: y0-definition Y_0 = Pi_+ - 3 Pi_- equals diag(I_6, -3 I_2)
+PASS: spectrum-multiplicities Y_0 has six +1 eigenvalues and two -3 eigenvalues
+PASS: reconstruct-6-minus-54 6(1)^3 + 2(-3)^3 reconstructs as 6-54=-48
+PASS: tr-y0-cubed matrix Tr(Y_0^3) equals the reconstructed integer -48
+PASS: tr-y0-cubed-nonzero Tr(Y_0^3) != 0
+PASS: mutation-tr-y0-cubed-zero hostile predicate Tr(Y_0^3)==0 fails
+PASS: dim-oplus dim(H oplus H) = 16
+PASS: mutation-dim-oplus-eight hostile predicate dim(H oplus H)==8 fails
+PASS: tr-y-oplus-cubed Tr(Y_oplus^3) = -48 + 48 = 0
+PASS: note-theorem-1 the note states dim H = 8 and Tr(Y_0^3) = 6-54=-48 != 0
+PASS: note-theorem-2 the note states the complementary cancel on H oplus H at dimension 16
+PASS: note-theorem-3 the note states that one 3-qubit Hilbert does not force Tr(Y^3)=0
+PASS: note-theorem-4 the note quotes Qubit M_2(C) and refuses a generation axiom
+PASS: note-no-charge-naming the note does not perform U(1)_Y or PDG identification
+PASS: note-independence the note is independent of the dim-16-vs-C^2 and Hilbert-vs-M_3 holes
+PASS: note-status machine status is bounded-support
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the new note and the axiom memo only
+TOTAL: PASS=24 FAIL=0
+
+----- stderr -----
+

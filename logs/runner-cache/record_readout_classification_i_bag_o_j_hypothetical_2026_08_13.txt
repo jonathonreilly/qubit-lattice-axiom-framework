@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/record_readout_classification_i_bag_o_j_hypothetical_2026_08_13.py
+runner_sha256: f7b7ebd4965835e96a9c6937351b0b02a39076f694834a1054b11d3c74fa0d96
+input_fingerprint_sha256: 28777760294a7ea292ae725987ce73b9e5bbd318d11a655fa175cc91b4f1cd7a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: current axiom wording is source-bound; occupancy/lock arithmetic is reconstructed; no observational or fitted inputs are used
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency
+negative_scope: the four displayed readouts are compared on five histories; none is adopted
+PASS: source-records-form the current Record section opens with Records form
+PASS: source-content-only readout is determined by record content alone and I is additive with I(empty)=0
+PASS: source-neither-o-nor-J current Record names scalar I and does not name occupancy o or site-indexed J
+PASS: identity-five-histories I_of, bag_of, o_of, J_of match the displayed table on all five histories
+PASS: theorem-1-site-column I and bag fail to split h10A from h01A; occupancy and J split them
+PASS: theorem-2-lock-column I and occupancy fail to split h10A from h10B; bag and J split them
+PASS: theorem-3-ordered-locks I, bag, and occupancy fail to split h11AB from h11BA; only J splits them
+PASS: theorem-4-lock-recovery lock_J recovers every lock; no map of o, I, or bag recovers the lock at x on the displayed set
+PASS: mutation-predicates the five hostile predicates fail: I site-split, bag order-split, o lock-split, J site-equality, J order-equality
+PASS: machine-status-contract the source uses the required hypothetical and bounded-support status fields
+PASS: theorem-5-negatives the note refuses pairing on J, r=1/2, L_phys, a fifth extra, and adoption
+PASS: displayed-table the note displays the five-history readout table and the three-column split summary
+PASS: no-go-gate all N1-N8 sections and the broad-claim rejection are source-visible
+PASS: canonical-nonmutation the hypothetical bag/J classification notation is absent from the canonical axiom file
+PASS: audit-input-paths declared inputs are exactly the new note and the axiom memo
+per_element: five histories and four readouts are checked by I_of, bag_of, o_of, J_of
+per_site: named sites x and y are compared; no lattice-wide formation rule is asserted
+per_mode: site column, lock column, and ordered two-site column are the only modes tested
+per_block: Record readout type is the only negative block tested
+lattice_wide: checked and not executed — no lattice-wide dynamics or axiom necessity is claimed
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

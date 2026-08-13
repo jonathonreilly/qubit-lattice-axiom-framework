@@ -1,0 +1,44 @@
+===== runner cache v1 =====
+runner: scripts/realized_state_primitive_forbids_ensemble_plaquette_as_record_i_2026_08_13.py
+runner_sha256: 48606b880cd9a4dc3464f6df37333c838b561d422e7eeecf7829c27f2f66bc5b
+input_fingerprint_sha256: 7728a0e0499d1f7e9bde3fa5e448808e988f74d92fcfab43f848813e5ae1ec0d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: realized-state primitive and Record readout sentences are source-bound; I_n series uses Bessel terms only
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency; no runner cache is written
+negative_scope: U(1) one-plaquette <P>(2) is not unit-lock Record I; June 10 is not retired; 4D <P>* is not claimed
+PASS: audit-input-paths declared audit inputs exist and match the note, primitive, and axiom memo
+PASS: source-realized-state the primitive supplies pointwise evaluation and no averaging over alternatives
+PASS: source-record-i the axiom memo supplies content-only additive I with I(empty)=0
+PASS: theorem-1-s0-two S0_2(2)=1+1+1/4=9/4 via i0_partial
+PASS: theorem-1-i0-ratio I_0 term ratio at beta=2 is 1/(k+1)^2
+PASS: theorem-1-s1-one S1_1(2)=1+1/2=3/2 via i1_partial
+PASS: theorem-1-s1-three S1_3=3/2+1/12+1/144=229/144 via i1_partial
+PASS: theorem-1-i1-lt-two next-term remainder < 1/2880/(1-1/25) < 1/2000, so I_1(2)<2
+PASS: theorem-1-ratio-bound 0 < I_1(2)/I_0(2) < 2/(9/4)=8/9 < 1
+PASS: theorem-2-record-integer record_I is a nonnegative integer and I(empty)=0
+PASS: identity-mean-not-integer predicate that <P>(2) is an integer fails
+PASS: identity-I-equals-mean predicate that I equals <P>(2) fails on I=0 and on I=1
+PASS: theorem-3-primitive-forbids the note applies the primitive to forbid identifying <P> with Record I
+PASS: theorem-4-note-negatives the note records the scoped negatives of Theorem 4
+PASS: mutation-injected-numeral feeding 5934/10000 into I_n as a coefficient is rejected; coefficients are Bessel terms only
+PASS: note-contract machine-status fields, required phrases, and forbidden-word hygiene hold
+PASS: canonical-nonmutation the ensemble mean and Bessel table are absent from the canonical axiom file
+PASS: no-go-gate all N1-N8 sections and the broad-claim rejection are source-visible
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_element: remainder-controlled Bessel terms of I_0(2) and I_1(2) and the ratio bound 8/9 are the only evaluated objects
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_site: one U(1) plaquette versus one unit-lock pattern; no 4D site configuration is sampled
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_mode: the I_n power series is checked; no 4D transfer-matrix mode or mass-gap rate is claimed
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_block: only the integer type of Record I, the non-integer <P>(2) enclosure, and the primitive ban are executed
+PASS: n5-length each N5 resolution line is at least 40 characters
+lattice_wide: checked and not executed — no 4D <P>* and no June 10 retirement is claimed
+TOTAL: PASS=23 FAIL=0
+
+----- stderr -----
+

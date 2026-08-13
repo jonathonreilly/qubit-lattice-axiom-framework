@@ -18402,6 +18402,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "two_site_factor_swap_uniquely_names_rank3_corner_bounded_theorem_note_2026-08-13": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
+  },
   "two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06": {
    "deps_hash": "4fb4f7ea0100",
    "out_degree": 4

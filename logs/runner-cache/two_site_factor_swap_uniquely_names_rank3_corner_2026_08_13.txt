@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/two_site_factor_swap_uniquely_names_rank3_corner_2026_08_13.py
+runner_sha256: 089c84b65c981987c9b98f7bf3f9391b3b3ef529e5ec0a15380a472cd087b1b7
+input_fingerprint_sha256: 148c18c3c21a4639187cc52d74be8cbfb6f4036d6fd0732f4f67f256c975f412
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+external_scientific_inputs: none; exact Fraction two-site swap
+package_local_integrity_reads: proposed source note and live axiom memo only
+measure_boundary: exact Fraction; no float, no QCD import
+negative_scope: factor-swap names p_+; leftover not adopted
+PASS: thm1-hermitian F^* = F
+PASS: thm1-involution F^2 = I_4
+PASS: thm1-trace Tr(F) = 2
+PASS: thm2-ad-exchanges Ad_F(X⊗I)=I⊗X and Ad_F(I⊗X)=X⊗I on E00,E01,σx,σz
+PASS: thm3-basis-images F sends |i⟩⊗|j⟩ to |j⟩⊗|i⟩ on the four product basis vectors
+PASS: mutation-f-eq-minus-f-fails predicate F == -F fails
+PASS: thm4-minus-f-also-implements (-F)(X⊗I)(-F)=I⊗X on E00
+PASS: thm4-span-contains-pm-f intertwining span contains F and -F
+PASS: thm4-only-pm-f Hermitian involutions in the integer grid on the intertwining span are exactly ±F
+PASS: thm5-pplus-proj p_+^2 = p_+ = p_+^*
+PASS: thm5-pminus-proj p_-^2 = p_- = p_-^*
+PASS: thm5-rank-pplus rank(p_+) = 3
+PASS: thm5-rank-pminus rank(p_-) = 1
+PASS: mutation-rank-pplus-eq-1-fails predicate rank(p_+) == 1 fails
+PASS: mutation-pplus-eq-i4-fails predicate p_+ == I_4 fails
+PASS: thm6-refusals note refuses SU(3), QCD, color adoption, and Qubit rewrite
+PASS: machine-status-contract note carries the required leftover status and bounded-support surface
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: claim-type-and-gate bounded theorem type and N1-N8 gate are source-visible; no QCD module load
+PASS: live-record-unread live Record unread sentence is quoted
+per_element: F, -F, p_+, p_-, E_00, E_01
+per_site: two-site tensor T_2 ≅ M_4; no lattice-wide carrier
+per_mode: displayed factor-swap and its rank-3 spectral projection
+per_block: uniqueness of ±F among real-symmetric implementing involutions
+lattice_wide: checked and not executed
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

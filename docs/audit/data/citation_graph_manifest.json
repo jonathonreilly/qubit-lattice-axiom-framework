@@ -1,6 +1,6 @@
 {
- "edge_count": 15600,
- "node_count": 5486,
+ "edge_count": 15601,
+ "node_count": 5487,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -16785,6 +16785,10 @@
   "single_step_locality_excludes_quadratic_generator_bounded_note_2026-07-02": {
    "deps_hash": "ccc79bcb9fe8",
    "out_degree": 2
+  },
+  "site_indexed_j_recovers_occupancy_hypothetical_bounded_theorem_note_2026-08-13": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "site_license_tick_dichotomy_all_periods_bounded_theorem_note_2026-06-11": {
    "deps_hash": "71548c1b3e14",

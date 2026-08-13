@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/permanence_not_visible_in_scalar_i_hypothetical_2026_08_13.py
+runner_sha256: c159ddfb5b5761e06d7c540be83c4b6dd6116244a34d025b93b19a15c6a7233e
+input_fingerprint_sha256: f05d16f46ec97cc3b14d451a53467ad361c3fd81fed6798ae80914a6680190d2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: current axiom wording only; no observational or fitted inputs
+package_local_integrity_reads: proposed source note plus axiom memo
+input_sha256: docs/PERMANENCE_NOT_VISIBLE_IN_SCALAR_I_HYPOTHETICAL_BOUNDED_THEOREM_NOTE_2026-08-13.md=3b68743937db52530cf9a3d1ad42d717a29df38f50261c832e5c7e1c3fd6cc7c, docs/MINIMAL_AXIOMS_2026-06-29.md=53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39
+PASS: source-permanence axiom memo contains records are permanent
+PASS: source-named-I axiom memo names additive scalar readout I
+PASS: source-one-lock axiom memo locks exactly one admissible local possibility
+PASS: menu-absence absence 0 is not a menu element
+PASS: identity-I-S I_seq(S) is (1, 1)
+PASS: identity-I-M I_seq(M) is (1, 1)
+PASS: identity-J-S J_seq(S) is ((A, 0), (A, 0))
+PASS: identity-J-M J_seq(M) is ((A, 0), (0, A))
+PASS: identity-call-sites runner source calls I_seq(S), I_seq(M), J_seq(S), J_seq(M)
+PASS: theorem-1-I I-seq and bag do not split stay from illegal move
+PASS: theorem-2-J J-seq of S differs from J-seq of M
+PASS: theorem-4-occupancy occupancy stays 1; no growth from empty
+PASS: permanence-S-legal stay S respects permanence
+PASS: permanence-M-illegal move M is forbidden by permanence
+PASS: mutation-I-seq predicate I_seq(S) differs from I_seq(M) fails
+PASS: mutation-J-seq predicate J_seq(S)=J_seq(M) fails
+PASS: note-hypothetical-status note carries the required hypothetical_axiom_status
+PASS: note-surface-status note carries actual_current_surface_status bounded-support
+PASS: note-permanence-quote note quotes records are permanent
+PASS: note-display-only note does not adopt C1, r=1/2, L_phys, or a pairing on J
+PASS: note-not-formation note refuses formation-rate and addition-order growth readings
+PASS: parents-axiom-only AUDIT_INPUT_PATHS are the new note and the axiom memo
+per_element: two snapshots, unit lock I=1 on stay and illegal move
+per_site: window {x,y}; illegal move empties x and occupies y
+per_mode: I-seq and bag are stay/move-blind; J-seq is not
+per_block: permanence visibility in named readout only; no rate or clock
+lattice_wide: checked and not executed — two-site window only
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

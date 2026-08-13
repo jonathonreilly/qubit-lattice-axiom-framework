@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/qubit_full_vs_composite_carrier_hypothetical_2026_08_13.py
+runner_sha256: c9d8b54c46d9e34f04b76272502cad16506a269439a68f95a9d5597479165219
+input_fingerprint_sha256: 7dbf70fccb86fb95516f9d02c02c8412510ebb148939d6a546c683d88f51f108
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: current axiom wording is source-bound; dimensions are counted from standard bases; no observational or fitted inputs are used
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency; unmerged color3/phycomp/ranksplit surfaces are not imported
+negative_scope: only the reading that nothing physical is larger than one-site A2 is separated from the 9>4 and 8>2 facts; S' is displayed and not adopted
+PASS: identity-dim-m2 the identity gate dim_m2() equals 4 by counting 2-by-2 matrix units
+PASS: identity-dim-m3 the identity gate dim_m3() equals 9 by counting 3-by-3 matrix units
+PASS: identity-dim-c8 the identity gate dim_c8() equals 8 by counting the standard basis of C^8
+PASS: one-site-hilbert the one-site Hilbert space of A2 is C^2 with dimension 2
+PASS: theorem1-no-injective 9>4 so no injective C-linear map A3→A2 exists
+PASS: theorem1-c8-not-one-site 8>2 so C^8 is not the one-site Hilbert space
+PASS: mutation-dim-m3-le-dim-m2 the predicate dim M_3 ≤ dim M_2 fails
+PASS: theorem2-agree-dim-a2 S and S' both name A2 and both assign dim_C A2 = 4
+PASS: mutation-s-sprime-disagree-dim-a2 the predicate that S and S' disagree about dim A2 fails
+PASS: source-qubit-sentence the current axiom memo and the note both carry sentence S
+PASS: displayed-not-adopted the note displays S' and refuses adoption and a Qubit rewrite
+PASS: theorem3-wall-is-reading the note locates the color/P-HY wall in a reading of S, not in the dimensions
+PASS: theorem4-boundary the note refuses QCD, generation, U(1)_Y, 0.5934, and r=1/2 identifications
+PASS: machine-status-contract the source uses the required C2 counterfactual and bounded-support fields
+PASS: no-unmerged-citation the note does not cite unmerged color3, phycomp, or ranksplit surfaces
+per_element: identity gates call dim_m2(), dim_m3(), and dim_c8(); injectivity is the dimension comparison
+per_site: A2 and C^2 are one-site objects; A3 and C^8 are extras to one site
+per_mode: no spectral-mode exhaustion is claimed
+per_block: the S-versus-S' reading of the Qubit sentence is the only negative block tested
+lattice_wide: checked and not executed — no lattice-wide compiler or QCD claim is made
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

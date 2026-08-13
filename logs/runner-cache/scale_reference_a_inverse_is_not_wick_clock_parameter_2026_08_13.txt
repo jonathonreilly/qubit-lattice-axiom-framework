@@ -1,0 +1,30 @@
+===== runner cache v1 =====
+runner: scripts/scale_reference_a_inverse_is_not_wick_clock_parameter_2026_08_13.py
+runner_sha256: fa33ed5063e39a0bbcdcd438eae091220c9d1cacf8c23aa60960754dd1bc1c39
+input_fingerprint_sha256: 15bb934fd8da9e60b1bc16a04f21076a157536dbb4d9a7b035b90ec29fcd0292
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+external_scientific_inputs: none; algebra is exact Fraction substitution into Q_E
+package_local_integrity_reads: new note, scale-reference primitive, kinetic isotropy, axiom memo
+negative_scope: type split only; a_w=1 is not installed; speed-preservation and Lorentz remain extra
+PASS: identity-omega-half omega_coeff(1/2) reconstructs -1/16
+PASS: identity-omega-two omega_coeff(2) reconstructs -1
+PASS: identity-spatial spatial_coeff reconstructs 1/4 from Q_E
+PASS: identity-ratio-half is_dimensionless_ratio(|omega_coeff(1/2)|, spatial_coeff) and the ratio is (1/2)^2
+PASS: identity-ratio-two is_dimensionless_ratio(|omega_coeff(2)|, spatial_coeff) and the ratio is 2^2
+PASS: identity-ratio-one-not-installed omega_coeff(1)=-1/4 is legal but is_dimensionless_ratio does not install a_w=1
+PASS: q-e-independent-of-aw Q_E(k4^2, k^2) has no a_w argument and is unchanged across Wick samples
+PASS: types-unequal a_sr is dimensionful; a_w ratios are dimensionless
+PASS: mutation-selects-one-fails predicate a_sr selects a_w=1 fails; a_w=1/2 remains legal
+PASS: source-scale-reference scale-reference is a_sr^{-1}=M_Pl with no dimensionless content
+PASS: source-kinetic-isotropy kinetic isotropy is Euclidean c_t=c_s, not a Wick parameter
+PASS: source-axiom-memo axiom memo names the four axioms and does not install a Wick clock
+PASS: note-theorems-and-gates note records Theorems 1-5, the mutation, and the required identity-gate names
+PASS: claim-type-contract the author hint uses the exact bounded-theorem enum
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

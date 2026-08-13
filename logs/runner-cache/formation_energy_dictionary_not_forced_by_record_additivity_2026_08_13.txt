@@ -1,0 +1,59 @@
+===== runner cache v1 =====
+runner: scripts/formation_energy_dictionary_not_forced_by_record_additivity_2026_08_13.py
+runner_sha256: ac95c5b4ab9d7f0222bb260d3c5b3a345d0071d79679c2b8f0b101084a06664d
+input_fingerprint_sha256: 5f5c896ab7cd2aad25d0a88268bfffdd67de647f712d5ab074d3ee77efa176bc
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+external_scientific_inputs: current Record additivity and the July 12 Residual Atom 2 declaration are source-bound; no observational or fitted inputs are used
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency; no runner cache is written
+negative_scope: only I-on-the-union as a selector of D_* is rejected; a later dynamics bridge remains live; no dictionary is claimed impossible
+PASS: audit-input-paths declared audit inputs exist and match the note, axiom memo, and July 12 relocation note
+PASS: source-record-additivity the exact current Record additivity sentence is present in the axiom memo
+PASS: source-residual-atom-2 July 12 Residual Atom 2 names the identification as a declared modeling element not supplied by the Record axiom
+PASS: source-july12-atom-2-body July 12 Residual Atoms section contains the energy-dictionary declaration
+PASS: empty-readout I(empty)=0
+PASS: declared-channel-split 3 a^2 and 6 |b|^2 recover the declared shares
+PASS: declared-r-identity r_from_energies on declared_shares equals (1-w)/(2w) and |b|^2/a^2
+PASS: declared-inverse w = 1/(1+2r) inverts the declared image
+PASS: declared-channel-split 3 a^2 and 6 |b|^2 recover the declared shares
+PASS: declared-r-identity r_from_energies on declared_shares equals (1-w)/(2w) and |b|^2/a^2
+PASS: declared-inverse w = 1/(1+2r) inverts the declared image
+PASS: theorem-1-special-points declared_shares at w=1/3 gives r=1 and at w=1/2 gives r=1/2
+PASS: theorem-1-amplitudes a^2 = w E_tot/3 and |b|^2 = (1-w) E_tot/6 at the two lawful w
+PASS: theorem-2-table r table is 1 vs 1/2 for D_*, 1/2 constantly for D_eq, 1 constantly for D_dim, and 1/4 vs 1/2 for D_inv
+PASS: theorem-2-not-bijections D_eq and D_dim are constant in w; D_inv equals D_* only at w=1/2
+PASS: cells-disjoint the two formation cells are pairwise disjoint
+PASS: union-sum-only I({s,d}) equals I(s)+I(d) and equals 1
+PASS: cells-disjoint the two formation cells are pairwise disjoint
+PASS: union-sum-only I({s,d}) equals I(s)+I(d) and equals 1
+PASS: theorem-3-union-constant I({s,d})=1 at both lawful w and cannot distinguish them
+PASS: theorem-3-cannot-match-declared the constant union scalar cannot equal the declared pair 1 and 1/2
+PASS: theorem-4-no-function no function of the single scalar I({s,d}) equals declared r on {1/3,1/2}
+PASS: mutation-eq-fails-w-third replacing declared_shares by D_eq fails the w=1/3 => r=1 identity
+PASS: mutation-dim-fails-w-half replacing declared_shares by D_dim fails the w=1/2 => r=1/2 identity
+PASS: mutation-constant-r-fails-w-third replacing r_from_energies by the constant 1/2 fails the w=1/3 declared image
+PASS: note-preserves-empty the note records I(empty)=0
+PASS: note-preserves-additivity-sentence the note quotes the current Record additivity sentence
+PASS: note-pins-declared-modeling-element the note quotes Residual Atom 2 as a declared modeling element
+PASS: note-links-parents the note links the axiom memo and the July 12 relocation note
+PASS: claim-type-contract the author hint uses the exact bounded-theorem enum
+PASS: note-contract machine-status fields, required phrases, and forbidden-word hygiene hold
+PASS: canonical-nonmutation the alternative dictionaries are absent from the canonical axiom file
+PASS: july12-declares-not-derives July 12 still presents the energy dictionary as a declared modeling element
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_element: the two cells {s,d} and the four share maps are evaluated under r_from_energies and I(union)
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_site: the statements are two-cell menu statements; no composite carrier is asserted
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_mode: the channel split E_s=3 a^2, E_d=6 |b|^2 is checked; no spectral-mode exhaustion is claimed
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_block: only the declared solve, alternative-dictionary table, and I-union obstruction are tested
+PASS: n5-length each N5 resolution line is at least 40 characters
+lattice_wide: checked and not executed — no lattice-wide formation law or energy dictionary is claimed
+TOTAL: PASS=38 FAIL=0
+
+----- stderr -----
+

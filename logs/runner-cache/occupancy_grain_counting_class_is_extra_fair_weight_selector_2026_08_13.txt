@@ -1,0 +1,48 @@
+===== runner cache v1 =====
+runner: scripts/occupancy_grain_counting_class_is_extra_fair_weight_selector_2026_08_13.py
+runner_sha256: 7d034c17a633567ad8df181c6b8d82e1040af0c7fe7de05931b588069c65c693
+input_fingerprint_sha256: 4b6680ce0731d14902aa90ff89d431ea8ff4d9a4142b16bced4838d86d321393
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+external_scientific_inputs: July 16 record-influence uniqueness and the current axiom wording are source-bound; no observational or fitted inputs
+integrity_reads: this runner, its paired note, the July 16 parent, and the axiom memo; no runner cache is written
+negative_scope: the occupancy-grain class is not adopted; r=1/2 is not forced; axioms do not select w=1/2 via that class
+PASS: audit-input-paths declared audit inputs exist and match the note, July 16 parent, and axiom memo
+PASS: source-july16-unique-interior July 16 names unique interior 2-cell stationary weight w=1/2
+PASS: source-july16-selects-none July 16 selects no menu, weight, horn, or dial value
+PASS: source-july16-class July 16 declares T_f and the identity-family negative control
+PASS: source-july16-dictionary July 16 displays the explicitly unadopted dictionary r = (1-w)/(2w)
+PASS: source-july16-conditional July 16 marks its premise weight as conditional
+PASS: source-admissibility the current distribution sentence is pinned in the axiom memo and the note
+PASS: source-admissibility-residuals update laws, unspecified form/values, and no weight values are pinned
+PASS: source-record-and-formation Record lock, content-only, additivity, and the formation reading note are pinned
+PASS: source-primitive-content the axiom memo states that the axioms name only their primitive content
+PASS: theorem-1-odds-identity f(w)(1-w)-w f(1-w) equals w(1-w)[g(w)-g(1-w)] on the sample
+PASS: theorem-1-half-stationary T_f(1/2)=1/2 for the executed class profiles
+PASS: theorem-1-unique-on-sample on the executed sample the only interior stationary weight is 1/2
+PASS: theorem-1-g-injective g(x)=x^{k-1} is strictly increasing on the ordered sample
+PASS: theorem-2-third-full-support w=1/3 is a distinct full-support 2-cell law
+PASS: theorem-2-third-not-stationary T_{x^2}(1/3)=1/5 and T_{x^3}(1/3)=1/9, neither equal to 1/3
+PASS: theorem-2-value-open Admissibility leaves both executed full-support weights available
+PASS: theorem-3-axioms-do-not-name-class the axiom memo does not name the record-influence / occupancy-grain class
+PASS: theorem-4-dictionary-images r(1/2)=1/2 and r(1/3)=1 by the displayed dictionary
+PASS: theorem-4-difference-identity r(w)-1/2 equals (1-2w)/(2w) and is nonzero at w=1/3
+PASS: theorem-4-not-adopted the note displays the dictionary and does not force r=1/2
+PASS: theorem-5-extra-selector class uniqueness requires T_f; Record additivity and Admissibility values do not supply it
+PASS: mutation-axioms-force-w-half-fails the predicate that the axioms force w=1/2 fails because w=1/3 remains legal
+PASS: mutation-all-laws-stationary-fails replacing the July 16 class by all 2-cell laws stationary at 1/2 fails on w=1/3
+PASS: note-contract machine-status fields, required phrases, and forbidden-word hygiene hold
+PASS: canonical-nonmutation occupancy-grain counting and T_f uniqueness are absent from the axiom memo
+PASS: n5-scoped-negatives five N5 resolution lines for Theorems 3-5 are present and scoped
+per_element: named weights 1/2 and 1/3 with T_f values 1/5, 1/9 and dial images 1/2, 1 recomputed
+per_site: the statements are one 2-cell menu; no composite carrier is asserted
+per_mode: occupancy-grain T_f is checked against axiom sentences; no spectral mode is claimed
+per_block: only Theorems 3-5 are gated here: non-naming, unadopted dictionary, extra selector
+lattice_wide: checked and not executed — no lattice-wide fair-weight law or universal r=1/2 is claimed
+TOTAL: PASS=27 FAIL=0
+
+----- stderr -----
+

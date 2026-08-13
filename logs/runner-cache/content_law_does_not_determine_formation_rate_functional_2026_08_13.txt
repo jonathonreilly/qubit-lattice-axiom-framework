@@ -1,0 +1,50 @@
+===== runner cache v1 =====
+runner: scripts/content_law_does_not_determine_formation_rate_functional_2026_08_13.py
+runner_sha256: 8870b31ccfb81bc8d934d8f328d96b14a97f922645a479134559980e1be64367
+input_fingerprint_sha256: 140572bbfcd132fc0b6dee0b82828419c509083e2dfa9ecb12d086a9bd4638ce
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+external_scientific_inputs: current Admissibility and Record wording are source-bound; no observational or fitted inputs are used
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency; no runner cache is written
+negative_scope: no functional of the content law equals the empirical window rate; a physical rate supplier remains extra
+PASS: audit-input-paths declared audit inputs exist and match the note and axiom memo
+PASS: source-rate-nonsupply the rate non-supply sentence is pinned in the axiom memo and the note
+PASS: source-records-form Records form. and the lock sentence are pinned in the axiom memo and the note
+PASS: source-support finite-menu support and the distribution sentence are pinned
+PASS: measure-normalized declared masses 1/3, 2/3, 0 form a probability on the three-point menu
+PASS: support-computed support computed from positive mass is {A,B}, so C is not admissible
+PASS: window-cardinality the path and the tetrahedron are 4-site windows
+PASS: theorem-1-four-rates identity-gate empirical_rate returns 1/4, 1/2, 3/4, 1 on the prefix histories
+PASS: theorem-1-all-lawful identity-gate lawful accepts every prefix history and occurrence holds
+PASS: theorem-1-empty-excluded the all-empty history has rate 0 and fails occurrence
+PASS: theorem-2-rho-constant any μ-only map is constant on the four prefix histories
+PASS: theorem-2-rates-not-constant the four empirical rates are pairwise distinct
+PASS: theorem-2-no-functional the μ-only value cannot equal every empirical_rate(h)
+PASS: theorem-3-always-form-is-one the always-form selector forces r=1 and fills h_1 to a rate-1 history
+PASS: theorem-3-selector-extra always-form is recorded as a selector, not a theorem of Admissibility or Record
+PASS: theorem-4-no-lock-C a history that locks C is rejected, while A/B locks remain lawful
+PASS: theorem-4-n4-allowed μ(C)=0 does not forbid N=4: h_4 locks four copies of A and is lawful
+PASS: theorem-4-two-site-counts reconstructed 2-site star admits formation counts 1 and 2 under the same μ
+PASS: theorem-5-residual-open a Poisson intensity is a single rational and is recorded as extra, not adopted
+PASS: mutation-rate-function-of-mu-fails rate_is_function_of_mu returns one rational and fails Theorem 2 against the four rates
+PASS: mutation-four-copies-h1-fails replacing the four histories by four copies of h_1 fails four distinct rates
+PASS: mutation-c-forbids-n4-fails a predicate that μ(C)=0 forbids N=4 rejects lawful h_4, whose locks are all A
+PASS: note-contract machine-status fields, required phrases, and forbidden-word hygiene hold
+PASS: canonical-nonmutation the four-rate rejector and ρ(μ) construction are absent from the canonical axiom file
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_element: menu points {A,B,C} and prefix rates 1/4, 1/2, 3/4, 1 are recomputed from the masses
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_site: occupancy is a per-site 0/1 mark on one 4-site window; mu is the same at each site
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_mode: empirical_rate and lawful are checked; no spectral or harmonic mode is claimed
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_block: only the four-rate rejector, the always-form selector, and the scoped residual are executed
+PASS: n5-length each N5 resolution line is at least 40 characters
+lattice_wide: checked and not executed — no lattice-wide formation process or rate law is claimed
+TOTAL: PASS=29 FAIL=0
+
+----- stderr -----
+

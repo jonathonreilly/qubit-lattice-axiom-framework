@@ -1,0 +1,51 @@
+===== runner cache v1 =====
+runner: scripts/z2_unit_cube_face_holonomies_obey_bianchi_monopole_impossible_2026_08_13.py
+runner_sha256: 2ca3fea79c395af4bedbb41ed94f99c4c0fae9ec4540571e48d5bf370c02b037
+input_fingerprint_sha256: 9f8146a2e9b98c446e9dbe0df33e8d6f90cdadd0b60078a90502f5fc5436198b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+PASS: inputs-exist declared note and axiom memo are present
+PASS: axiom-lattice Lattice names Z^3 with nearest-neighbor adjacency
+PASS: axiom-admissibility Admissibility names the nearest-neighbor distribution sentence
+PASS: axiom-no-link-form the axiom memo does not name a link 1-form or closed 2-cochain
+PASS: face-arity face (0, 5, 1, 4) has four distinct edges
+PASS: face-arity face (2, 7, 3, 6) has four distinct edges
+PASS: face-arity face (0, 9, 2, 8) has four distinct edges
+PASS: face-arity face (1, 11, 3, 10) has four distinct edges
+PASS: face-arity face (4, 10, 6, 8) has four distinct edges
+PASS: face-arity face (5, 11, 7, 9) has four distinct edges
+PASS: edge-incidence each of the 12 edges lies in exactly two faces
+PASS: identity-call-zero identity_zero_link_field calls face_holonomies and bianchi_sum
+PASS: identity-call-flip identity_single_edge_flip calls face_holonomies and bianchi_sum
+PASS: identity-call-field identity_bianchi_on_field calls face_holonomies and bianchi_sum
+PASS: identity-call-all identity_bianchi_all_fields calls face_holonomies and bianchi_sum
+PASS: identity-zero theta=0 maps to H=0^6 with even Bianchi sum
+PASS: identity-single-flip each single-edge flip changes exactly two faces and preserves Bianchi
+PASS: identity-sample a mixed field has even Bianchi sum
+PASS: identity-enumerate every one of the 4096 link fields has even Bianchi sum
+PASS: identity-calls-fired enumeration invoked face_holonomies and bianchi_sum
+PASS: image-even holonomy image equals the 32 even-weight 6-tuples
+PASS: monopole-odd m=(1,0,0,0,0,0) has odd Bianchi weight
+PASS: monopole-missing m is not a face-holonomy image
+PASS: mutation-independent-plaquettes the predicate that every 6-tuple is a holonomy image fails on m
+PASS: np-not-june10 N_p(this cube)=6 is not N_p(L=2)=96
+PASS: group-not-su3 the cube group is Z2, not SU(3)
+PASS: note-theorems the note states Bianchi, monopole impossibility, and extra edge object
+PASS: hygiene note carries no fitted-plaquette input and no axiom-adoption language
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_element: twelve edge bits and six face holonomies are Z2 sums
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_site: one unit cube; no lattice-wide gauge field is sampled
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_mode: Z2 coboundary is checked; no SU(3) mode is claimed
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_block: only Bianchi even-sum and the missing monopole 6-tuple are executed
+PASS: n5-length each N5 resolution line is at least 40 characters
+lattice_wide: checked and not executed — no 4D SU(3) ln Z_L claim
+TOTAL: PASS=33 FAIL=0
+
+----- stderr -----
+

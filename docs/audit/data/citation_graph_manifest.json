@@ -1,6 +1,6 @@
 {
- "edge_count": 15600,
- "node_count": 5486,
+ "edge_count": 15601,
+ "node_count": 5487,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -18397,6 +18397,10 @@
   "two_seam_forest_gauge_polyakov_holonomy_preservation_bounded_theorem_note_2026-07-12": {
    "deps_hash": "5fc9a31251f2",
    "out_degree": 3
+  },
+  "two_set_content_law_is_not_a_density_matrix_bounded_theorem_note_2026-08-13": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "two_sign_comparison_note_2026-04-10": {
    "deps_hash": "e3b0c44298fc",

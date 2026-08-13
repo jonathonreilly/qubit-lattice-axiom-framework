@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/j_zero_is_absence_not_a_menu_element_hypothetical_2026_08_13.py
+runner_sha256: 2bc255809d712aaebd550f3fc675d5e4e7a4a3d32da7fe2378e3b78954178e1b
+input_fingerprint_sha256: 9887acf447d2f289652a995f682a4f1189399408ed3efe584d29c314948152da
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: current axiom wording is source-bound; no observational or fitted inputs are used
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency
+PASS: mutation-zero-notin-honest-M predicate '0 is an element of honest M' fails
+PASS: identity-o_from_J-u o_from_J(u) equals occupancy (0,1)
+PASS: identity-o_from_J-v o_from_J(v) equals occupancy (1,0)
+PASS: theorem1-disjoint-union honest {0}∪M is a three-point disjoint union
+PASS: theorem1-zero-means-unformed on honest M, J(z)=0 means unformed not lock 0
+PASS: theorem2-M0-contains-zero counterfactual M0 contains the token 0
+PASS: theorem2-union-not-disjoint {0}∪M0 equals M0 so the union is not disjoint
+PASS: identity-o_from_J-ambiguous_J0 o_from_J(ambiguous_J0) returns (0,1) and so counts a possible lock-0 as unformed
+PASS: mutation-M0-does-not-classify predicate 'J0 on M0 classifies lock-0 versus unformed' fails
+PASS: theorem2-retract-not-occupancy-on-M0 o_from_J does not recover a well-defined occupancy-of-locks on M0
+PASS: source-record-axiom the axiom memo still names formation, one locked possibility, content-only readout, and I(empty)=0
+PASS: theorem3-unformed-not-a-lock the note keeps unformed outside the locked-possibility type
+PASS: machine-status-contract required hypothetical and surface-status strings are source-visible
+PASS: theorem4-nonadoption the note does not pick {A,B}, adopt C1, or install a vacuum possibility
+PASS: theorem5-no-extras the note refuses r=1/2, L_phys, and a pairing on J
+PASS: canonical-nonmutation the axiom memo is not edited with C1, J, or a zero lock token
+PASS: identity-gate-surface the note names the three identity-gate calls
+per_element: two honest J-cells and one ambiguous M0 cell are checked with exact integer retracts
+per_site: both window sites are read; classification fails at the site that writes 0 on M0
+per_mode: not executed — no spectral or rate object is claimed
+per_block: the only negative block is 0-as-lock-label versus 0-as-absence
+lattice_wide: checked and not executed — the window is two sites; no lattice-wide adoption is claimed
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

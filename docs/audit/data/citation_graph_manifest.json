@@ -1,6 +1,6 @@
 {
- "edge_count": 15600,
- "node_count": 5486,
+ "edge_count": 15603,
+ "node_count": 5487,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -21369,6 +21369,10 @@
   "writing_voice_guide_2026-04-25": {
    "deps_hash": "8990b3713089",
    "out_degree": 1
+  },
+  "y_like_spectrum_does_not_identify_u1y_bounded_theorem_note_2026-08-13": {
+   "deps_hash": "7efb7eb41272",
+   "out_degree": 3
   },
   "yang_mills_coupling_marginality_forces_d_four_narrow_theorem_note_2026-05-26": {
    "deps_hash": "e3b0c44298fc",

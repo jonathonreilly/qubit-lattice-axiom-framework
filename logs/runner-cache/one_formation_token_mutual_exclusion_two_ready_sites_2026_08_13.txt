@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/one_formation_token_mutual_exclusion_two_ready_sites_2026_08_13.py
+runner_sha256: d0aeafedfe070b4be582403f65a4ea12d030b0f81aa9b6be4879419b41d59d67
+input_fingerprint_sha256: abfe4c649e1e44317eadb18f55c39d4e305df77c73f37a2fb60852acf6a94063
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: current Admissibility and Record wording are source-bound; no observational or fitted inputs
+integrity_reads: this runner, its paired note, and the axiom memo; no other repository scientific inputs
+construction: shared μ on {A,B}; token alphabet {x, y, none}; histories (μ, T); I(empty)=0 and singleton content readout
+negative_scope: μ does not select T; both ready sites do not form in this calculus; Record additivity is not a site picker
+PASS: audit-input-paths declared audit inputs exist and match the note and axiom memo
+PASS: source-admissibility the current distribution sentence is pinned in the axiom memo and the note
+PASS: source-formation-reading-note the Admissibility reading note on formation site/rate is pinned
+PASS: source-record-when-present the Record lock sentence When present is pinned in the axiom memo and the note
+PASS: source-record-additivity Record additivity and I(empty)=0 and content-alone readout are pinned
+PASS: measure-full-support declared masses 1/3 and 2/3 form a full-support probability on {A,B}
+table: histories Hx_muA=1/3 Hx_T=x Hy_muA=1/3 Hy_T=y Hnone_muA=1/3 Hnone_T=none
+PASS: theorem-1-same-mu μ is the same for T=x, T=y, and T=none
+PASS: theorem-2-mutual-exclusion T=x and T=y are mutually exclusive; no history has both sites formed
+PASS: theorem-3-three-compatible all three tokens are Admissibility-compatible; axioms do not select T
+PASS: theorem-4-one-token-window exactly one token per window yields mutual exclusion and a formed site
+PASS: theorem-4-not-record-additivity I(empty)=0 and I of a formed singleton is a content readout, not a site picker
+PASS: theorem-5-scoped-negatives the note refuses a token-memo edit and does not claim no formation rule exists
+PASS: mutation-both-ready-sites-form-fails the predicate both-ready-sites-form fails on every history of this calculus
+PASS: mutation-mu-selects-T-fails the predicate μ-selects-T fails: one μ appears with three tokens
+PASS: note-contract machine-status fields, required phrases, and forbidden-word hygiene hold
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_element: menu labels A, B and token values x, y, none are listed as exact objects
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_site: the shared one-site law and the token mark are site-local at the two ready sites
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_mode: content masses are checked against occupancy tokens; no spectral mode is claimed
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_block: only the three-history token calculus and the additivity contrast are executed
+PASS: n5-length each N5 resolution line is at least 40 characters
+lattice_wide: checked and not executed — no lattice-wide no-go against formation rules is claimed
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

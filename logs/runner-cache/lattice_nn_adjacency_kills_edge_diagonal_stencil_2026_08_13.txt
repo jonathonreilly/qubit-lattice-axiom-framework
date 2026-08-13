@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/lattice_nn_adjacency_kills_edge_diagonal_stencil_2026_08_13.py
+runner_sha256: 07cfdc708d0aed2805807b31cdb552366c21127f3c56702331be687d9aabf185
+input_fingerprint_sha256: 97c0d2eea75ed6bae8a5afaccbe907e4a2a8a157d80fe25f47a0c83d49f89b93
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+external_scientific_inputs: current Lattice wording is source-bound; no observational or fitted inputs
+integrity_reads: this runner, its paired note, and the axiom memo; no other repository scientific inputs
+construction: six NN sites, twelve edge-diagonals, unnormalized stencils of φ at the origin, graph distance on the 6-NN cubic graph
+negative_scope: Lattice kills β inside Δ_{α,β}; no field operator, Green function, 1/r kernel, M_s M_t, Newton constant, or Laplacian axiom
+PASS: audit-input-paths declared audit inputs exist and match the note and axiom memo
+PASS: source-lattice the current Lattice nearest-neighbor sentence is pinned in the axiom memo and the note
+PASS: classes-cardinalities the NN class has 6 sites and the edge-diagonal class has 12 distinct sites
+PASS: classes-are-oh-orbits NN is the O_h orbit of e1 and the edge class is the O_h orbit of e1+e2
+table: delta_nn_phi=6 delta_edge_phi=24
+PASS: theorem-1-delta-nn-phi (Δ_NN φ)(0)=6 by summing φ(x)-φ(0) over the six NN sites
+PASS: theorem-1-delta-edge-phi (Δ_edge φ)(0)=24 by summing φ(x)-φ(0) over the twelve edge sites
+PASS: theorem-1-operators-disagree Δ_NN ≠ Δ_edge as operators because they disagree on this φ
+PASS: theorem-2-nn-graph-distance every NN site has graph distance 1 from the origin
+PASS: theorem-2-edge-graph-distance every edge-diagonal has graph distance 2, so those sites are not nearest neighbors
+PASS: theorem-2-named-graph-is-6-not-18 the named adjacency is the 6-NN cubic graph, not the 18-neighbor graph
+PASS: theorem-3-beta-zero a named-adjacency Laplacian is a rational multiple of Δ_NN, so β=0
+PASS: theorem-3-axioms-name-no-field-operator the axioms do not name a field operator; Lattice kills only β inside the class
+PASS: theorem-4-no-kernel-no-newton the note refuses a Green function, a 1/r kernel, M_s M_t, and Newton’s constant
+PASS: theorem-5-no-laplacian-axiom the note refuses a Laplacian axiom and ℓ² uniqueness for Δ_NN
+PASS: mutation-equal-stencils-fails the predicate Δ_NN φ = Δ_edge φ at 0 fails because 6 ≠ 24
+PASS: mutation-edge-are-nn-fails the predicate that edge-diagonals are nearest neighbors fails at graph distance 2
+PASS: note-contract machine-status fields, required phrases, and forbidden-word hygiene hold
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_element: origin, six NN sites, twelve edge-diagonal sites, and the integer values 6 and 24 are recomputed
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_site: the stencils are evaluated at the origin of Z^3; O_h merely orbits that site's neighbor classes
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_mode: unnormalized graph stencils on one quadratic test function; no Green function or harmonic mode is claimed
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_block: only the 6-versus-24 split, graph distance 2, and β=0 inside the named 2-parameter family are executed
+PASS: n5-length each N5 resolution line is at least 40 characters
+lattice_wide: checked and not executed — no uniqueness of Δ_NN on all of l2(Z^3) and no Laplacian axiom is claimed
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

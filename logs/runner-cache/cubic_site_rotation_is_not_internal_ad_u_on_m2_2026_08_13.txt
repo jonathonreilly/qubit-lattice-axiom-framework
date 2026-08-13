@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/cubic_site_rotation_is_not_internal_ad_u_on_m2_2026_08_13.py
+runner_sha256: 89c9319237fbf47e9037166a1e6673e1be3f01ac0b4c080335d8fc5cf4275217
+input_fingerprint_sha256: a2eefd0993ba7c6926e94494fd6fac70151de064809f3195ffba35f567b5b060
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: current axiom wording only; no observational or fitted inputs are used
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency
+negative_scope: only matrix equality and axiom identification are rejected
+PASS: source-lattice the exact Lattice site-rotation sentence is present
+PASS: source-qubit the exact Qubit M_2(C) sentence is present
+PASS: theorem1-shape R is a 3x3 integer matrix
+PASS: theorem1-so3 R^T R = I and det R = 1
+PASS: theorem1-not-m2 R has no matrix elements in M_2(C) and is not an element of SU(2)
+PASS: theorem2-su2 U is in SU(2) subset M_2(C)
+PASS: theorem2-not-sites U does not act on Z^3: it is 2x2 and does not map sites to sites
+PASS: theorem2-different-spaces R and U live on different spaces
+PASS: theorem3-ad-x Ad_U(sigma_x) = sigma_y
+PASS: theorem3-ad-yz Ad_U(sigma_y) = -sigma_x and Ad_U(sigma_z) = sigma_z
+PASS: theorem3-bloch-match both send e1 to e2 on the Bloch chart
+PASS: mutation-matrix-equality predicate R equals U as matrices fails (3x3 versus 2x2)
+PASS: mutation-axiom-identification predicate axioms identify R with Ad_U fails
+PASS: identity-gates identity gates call spatial_Rz90() and ad_Uz90(sigma_x)
+PASS: note-theorems the source note states theorems 1-5 and quotes Lattice and Qubit
+PASS: note-nonadoption the note displays the matching and refuses a spin-orbit axiom
+PASS: canonical-nonmutation the axiom memo does not contain the extra matching or a spin-orbit axiom
+PASS: parents-axiom-only declared parents are the axiom memo only
+per_element: one R and one U are checked by exact matrix algebra
+per_site: one site-centered cubic rotation and one one-site algebra
+per_mode: the z-axis 90 degree pair only
+per_block: spatial-versus-internal identification only
+lattice_wide: R acts on Z^3; U does not; no dynamics claimed
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

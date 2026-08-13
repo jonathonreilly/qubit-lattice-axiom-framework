@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/multiplicative_i_would_make_product_table_native_hypothetical_2026_08_13.py
+runner_sha256: 53cf6724518e444e445586e4d33bc40b53eae8a3a7d9b0b34da4e9b3044e4732
+input_fingerprint_sha256: c1c056cd0d89db2ca80ecdf36356d34630b6f90fe941b493ff77c8ba09012adf
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS: docs/MULTIPLICATIVE_I_WOULD_MAKE_PRODUCT_TABLE_NATIVE_HYPOTHETICAL_BOUNDED_THEOREM_NOTE_2026-08-13.md, docs/MINIMAL_AXIOMS_2026-06-29.md
+external_scientific_inputs: current Record additive wording is source-bound; no observational or fitted inputs are used
+I_× adoption: displayed only; not installed as axiom content
+PASS: theorem-1-identities I_+(empty)=0 and I_×(empty)=1, so the identities differ
+PASS: mutation-empty-identities the predicate I_+(empty)=I_×(empty) fails (0≠1)
+PASS: theorem-2-two-units I_+(2)=2 and I_×(2,q=1)=1
+PASS: mutation-two-units-q1 the predicate I_+(2)=I_×(2) for q=1 fails (2≠1)
+PASS: theorem-2-no-one-arg-product neither I_+ nor I_× on a single collection equals n m for n=2, m=3
+PASS: i-table-from-additivity union I-table on (empty,empty),(empty,unit),(unit,empty),(unit,unit) is (0,1,1,2)
+PASS: product-table T_π on the four pairs is (0,0,0,1)
+PASS: tables-disagree T_+ disagrees with T_π at the (unit,unit) cell 2≠1
+PASS: i-times-pairing-not-pi the q=1 pairing I_×(S) I_×(T) is (1,1,1,1), not T_π
+PASS: multiplicativity I_×(n+m,q)=I_×(n,q) I_×(m,q) and I_+(n+m)=I_+(n)+I_+(m)
+PASS: additivity-forces-empty-zero I_+(empty)=I_+(empty)+I_+(empty) holds and I_×(empty)=I_×(empty)+I_×(empty) fails
+PASS: source-record-additivity the current axiom memo names additive I with I(empty)=0
+PASS: axiom-does-not-name-i-times the current axiom memo does not name I_× or a product table T_π
+PASS: machine-status-contract the note carries the required C8 counterfactual and bounded-support status lines
+PASS: non-adoption-surface the note displays the C8 failure and refuses I_×, G_N, and 1/r
+per_element: empty and two-unit identity gates call I_plus(n) and I_times(n,q); the four-pair tables are reconstructed from those gates
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,44 @@
+===== runner cache v1 =====
+runner: scripts/one_plaquette_free_energy_is_not_four_d_ln_z_l_2026_08_13.py
+runner_sha256: 19833e072b1a7564b6fffdc13ddbbed883f758890daec832559d9664b5820e42
+input_fingerprint_sha256: 09884c05c55caf03d4a5e51016d6d8235c625e10f53b4ef3655401b4aaefc87f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+AUDIT_TIMEOUT_SEC: 120
+AUDIT_INPUT_PATHS:
+  docs/ONE_PLAQUETTE_FREE_ENERGY_IS_NOT_FOUR_D_LN_Z_L_BOUNDED_THEOREM_NOTE_2026-08-13.md
+  docs/PLAQUETTE_VALUE_DERIVATION_PROGRAM_SPECIFICATION_AND_BRACKET_REDUCTION_NARROW_THEOREM_NOTE_2026-06-10.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+external_scientific_inputs: June 10 recurrence, Haar majorant, L2 wrapping count; 0.5934 is not an input to J or p_1
+PASS: audit-input-paths-exist  (3 paths)
+PASS: recurrence-a3-from-seeds
+PASS: recurrence-a4-from-recurrence
+PASS: haar-majorant-0-le-a-n-le-1-over-n-factorial
+PASS: counting-L2-plaquettes-links-wrap
+PASS: L2-wrapping-enumerated
+PASS: N-p-neq-1-for-L-ge-2
+PASS: identity-j-is-not-ln-z-l  (N_p(2)=96 != 1)
+PASS: identity-plaquette-count-not-one
+PASS: wrapping-unused-by-one-plaquette-J
+PASS: theorem-2-three-point-J-and-p1  (p1(5)<2/5, p1(6)<1/2, p1(7)<1/2)
+PASS: n16-b6-partial-sums-and-half-ceiling
+PASS: mutation-forced-p1-rejected-by-remainder  (p_1(6)<1/2<5934/10000)
+PASS: note-does-not-derive-05934
+PASS: note-does-not-claim-ln-J-is-ln-Z-L
+PASS: note-quotes-june10-interface
+PASS: note-machine-status-contract
+PASS: n5-scoped-negative-lines
+PASS: note-theorems-and-witnesses
+PASS: note-forbidden-phrases-absent
+PASS: june10-recurrence-and-wrapping-formula
+PASS: axiom-memo-unedited-surface
+PASS: note-links-required-sources
+PASS: non-claims-visible
+TOTAL: PASS=24 FAIL=0
+
+----- stderr -----
+

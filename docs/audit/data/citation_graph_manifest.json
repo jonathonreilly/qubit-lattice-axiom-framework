@@ -1,6 +1,6 @@
 {
- "edge_count": 15600,
- "node_count": 5486,
+ "edge_count": 15602,
+ "node_count": 5487,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -13309,6 +13309,10 @@
   "occupancy_atom_is_the_outcome_dictionary_flow_selects_equipartition_bounded_note_2026-06-12": {
    "deps_hash": "61b6add32af6",
    "out_degree": 3
+  },
+  "occupancy_grain_counting_class_is_extra_fair_weight_selector_bounded_theorem_note_2026-08-13": {
+   "deps_hash": "022d96095784",
+   "out_degree": 2
   },
   "occupancy_nonexclusivity_mixture_bound_note_2026-06-09": {
    "deps_hash": "188680808cab",

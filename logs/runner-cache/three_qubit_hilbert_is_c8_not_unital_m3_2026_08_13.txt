@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/three_qubit_hilbert_is_c8_not_unital_m3_2026_08_13.py
+runner_sha256: 085f688b665f9b42f2bb9d6718dfcde7db76f44e4dbcf8e2a018ba24b990997d
+input_fingerprint_sha256: 5357ef62d73bf38268c42fb1d7a3f6778c2804dde84a021961ec206d9369f510
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+PASS: one-site-module defining module of M_2(C) is C^2
+PASS: theorem1-tensor-product dim H_3 is the product of three site dimensions
+PASS: theorem1-identity 2**3 == 8
+PASS: theorem2-m3-dim dim M_3 is the count of 3-by-3 matrix units
+PASS: theorem2-m3-not-h3 dim M_3 != dim H_3, so M_3 is not B(H_3)
+PASS: theorem2-m8-dim dim B(H_3) = dim H_3 times dim H_3
+PASS: theorem2-m3-not-m8 dim M_3 != dim M_8
+PASS: theorem3-unital-nonembed 3 does not divide 8, so unital M_3 does not sit in M_8
+PASS: theorem3-native-tensor-exists the three-site Lattice+Qubit tensor is constructed and has dim 8
+PASS: mutation-2-cubed-eq-9 predicate 2**3 == 9 fails
+PASS: mutation-3-divides-8 predicate 3 divides 8 fails
+PASS: source-qubit-m2 axiom memo names one-site M_2(C)
+PASS: source-lattice-sites axiom memo names Lattice sites of Z^3
+PASS: note-bounded-support note machine status is bounded-support
+PASS: note-type-split note displays the Hilbert-tensor versus unital-algebra type split
+PASS: note-no-generation-axiom note refuses a generation axiom
+PASS: audit-inputs declared inputs are the new note and the axiom memo
+PASS: axiom-qubit-normalized normalized axiom memo still carries the Qubit presentation
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

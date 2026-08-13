@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/c3_bloch_orbit_is_three_menu_not_unital_m3_2026_08_13.py
+runner_sha256: a529a25c9a625b7008e001de4f4d60d0b921b8cf84dc057e539f842dc59998c1
+input_fingerprint_sha256: 433651f770f02f12a9184a3438aa353b852298c93af84749be824928f93075b7
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+external_scientific_inputs: none; exact cyclotomic Q(ω)
+package_local_integrity_reads: proposed source note and live axiom memo only
+measure_boundary: exact Q(ω); no float, no QCD import
+negative_scope: C3 orbit is a 3-menu not unital M_3; leftover not adopted
+PASS: omega-minimal ω^2 + ω + 1 = 0
+PASS: omega-cube ω^3 = 1
+PASS: omega-not-one ω ≠ 1
+PASS: thm1-p0-proj P0 is a rank-1 projection
+PASS: thm1-p1-proj P1 is a rank-1 projection
+PASS: thm1-p2-proj P2 is a rank-1 projection
+PASS: thm1-pairwise-distinct P0, P1, P2 are pairwise distinct
+PASS: thm1-orbit-closes Ad_R(P2) = P0
+PASS: thm1-p1-formula P1 equals ((1/2, ω^2/2), (ω/2, 1/2))
+PASS: thm2-not-e11 P1 ≠ |1><1|
+PASS: thm2-not-p0 P1 ≠ P0
+PASS: thm3-sum-is-three-halves P0+P1+P2 = (3/2) I_2
+PASS: mutation-sum-eq-i-fails predicate P0+P1+P2 == I_2 fails
+PASS: thm4-generated-dim-4 dim generated algebra = 4
+PASS: mutation-dim-eq-9-fails predicate dim generated == 9 fails
+PASS: thm5-three-not-divides-two 3 does not divide 2
+PASS: mutation-unital-m3-to-m2-fails predicate unital M_3 → M_2 exists fails
+PASS: thm6-record-and-refusals note locks one ray and refuses QCD / Qubit rewrite / r=1/2 axiom
+PASS: machine-status-contract note carries the required leftover status and bounded-support surface
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: claim-type-and-gate bounded theorem type and N1-N8 gate are source-visible; no QCD module load
+per_element: P0, P1, P2 over Q(ω)
+per_site: one-site A = M_2; generated dimension 4
+per_mode: displayed Ad_R orbit of |+><+|
+per_block: C3 menu is not a unital M_3 factor and not a PVM
+lattice_wide: checked and not executed — no NN-covariance claim
+TOTAL: PASS=21 FAIL=0
+
+----- stderr -----
+

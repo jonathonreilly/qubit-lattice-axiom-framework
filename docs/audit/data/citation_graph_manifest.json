@@ -1,6 +1,6 @@
 {
- "edge_count": 15600,
- "node_count": 5486,
+ "edge_count": 15603,
+ "node_count": 5487,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -15700,6 +15700,10 @@
   },
   "record_dephasing_broadcast_interface_2026-06-05": {
    "deps_hash": "9f8fd308f473",
+   "out_degree": 3
+  },
+  "record_does_not_type_newton_source_versus_test_bounded_theorem_note_2026-08-13": {
+   "deps_hash": "f3e3aeef73e3",
    "out_degree": 3
   },
   "record_dominated_pointer_sector_transport_generator_vacuous_link_bounded_theorem_note_2026-06-09": {

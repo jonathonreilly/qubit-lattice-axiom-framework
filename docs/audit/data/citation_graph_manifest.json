@@ -1,6 +1,6 @@
 {
- "edge_count": 15600,
- "node_count": 5486,
+ "edge_count": 15602,
+ "node_count": 5487,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -16476,6 +16476,10 @@
   },
   "semigroup_closure_does_not_force_heat_kernel_quadratic_condition_bounded_note_2026-07-02": {
    "deps_hash": "36daf746aba1",
+   "out_degree": 2
+  },
+  "separate_q_linearity_plus_unit_normalization_is_smallest_pairing_extra_bounded_theorem_note_2026-08-13": {
+   "deps_hash": "7ea010b16c05",
    "out_degree": 2
   },
   "separated_pair_lawful_control_cycle735_bounded_theorem_note_2026-07-28": {

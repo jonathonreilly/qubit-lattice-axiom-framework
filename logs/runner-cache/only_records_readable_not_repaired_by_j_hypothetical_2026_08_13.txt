@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/only_records_readable_not_repaired_by_j_hypothetical_2026_08_13.py
+runner_sha256: 68f01a3c8ba8667eee4dc747790be4975ef382c40ecc3c61c5020024f0afbf47
+input_fingerprint_sha256: 372ecc0dc1a8fd1c86d309e0d04f05ab59a11d169eb1f036f70c02907d789ed1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: current Record wording is source-bound; no observational or fitted inputs are used
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency
+negative_scope: C1 is displayed only; no Record rewrite, pairing on J, L_phys, or r=1/2 is adopted
+PASS: identity-gate-calls identity gates call I_of(e), J_of(e), o_from_J(e), I_of(u), and J_of(u)
+PASS: empty-I-defined predicate I(e) is undefined fails because I_of(e) equals 0
+PASS: empty-J-defined predicate J(e) is undefined fails because J_of(e) equals (0, 0)
+PASS: empty-has-no-lock predicate e has a lock fails because o_from_J(e) equals (0, 0)
+PASS: unit-I-convention I_of(u) equals the unit-count convention 1
+PASS: unit-J-field J_of(u) is the one-lock field (A, 0)
+PASS: strict-readout-contrast R_strict leaves e without a readout while current I still reads 0
+PASS: c1-type both displayed fields are values of J:W to {0} union M and 0 is not a menu label
+PASS: source-record-clause the axiom memo still carries the leftover clause and the empty identity
+PASS: note-leftover-display the note displays the leftover clause and the including-empty owner reading
+PASS: machine-status-contract the source uses the required C1 follow-on hypothetical status and bounded-support surface
+PASS: no-adoption the note refuses a Record rewrite, pairing on J, L_phys, and r=1/2
+PASS: unit-count-is-convention the note does not claim Record additivity forces I(u)=1
+PASS: canonical-nonmutation the canonical axiom file is not rewritten with C1 field notation
+per_element: empty and unit C1 fields are the only configurations evaluated
+per_site: occupancy is the sitewise blank-versus-lock bit; no lattice-wide dynamics is claimed
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/second_c8_with_minus_y0_cancels_cubic_and_is_extra_2026_08_13.py
 runner_sha256: 9fd72ce94451ca242a2143fc70543adc279171635fd9c971f4b58a3effa9edf9
-input_fingerprint_sha256: 3c320a71a7a6f756d09e67020902abb63dea4220f9a91b32c5803cde98c8ab32
+input_fingerprint_sha256: 93a07c36d25b4ab44d893a581b8ea08ed76390c468090cf8f32d1fb54a399f50
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 PASS: source-parent-ratio May 2 parent states the 1 : (-3) multiplicity ratio

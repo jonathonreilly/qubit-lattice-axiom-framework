@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/record_frequency_is_history_not_axiom_rhalf_2026_08_13.py
+runner_sha256: c31f46a82e8458e515dadde1c18089d9519a791e81a246933e78ae6514b3d608
+input_fingerprint_sha256: 87d23e0153e90bc68ecd537927e4e563674ba505e5d8b2df00c89c9e1c5355e5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+external_scientific_inputs: current Record wording from the axiom memo only; no observational, fitted, or Koide-Q inputs
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency against the live axiom memo
+PASS: source-record-readout the three live Record readout sentences occur verbatim
+PASS: source-named-I-not-content named I and I(empty)=0 are stated not to be Record axiom content
+PASS: theorem1-histories H1=AAAB and H2=AABB are length-4 words in the two-lock menu
+PASS: theorem1-frequencies computed f(H1,A)=3/4 and f(H2,A)=1/2
+PASS: theorem1-axiom-silent-on-frequencies the axiom memo names neither displayed history nor either frequency
+PASS: theorem2-empty-undefined f(empty, ·) is undefined
+PASS: theorem2-half-on-blank-is-not-readout returning 1/2 on the empty history is not a Record readout
+PASS: theorem3-supplied-selector equal-block (1,1) supplies r=1/2 by normalization, not by Record
+PASS: theorem3-histories-displayed the note displays both histories and types (1,1) as a supplied selector
+PASS: theorem3-no-koide-q the note does not derive Koide Q and does not say quarks forbid the investigation
+PASS: mutation-universal-half not every length-4 history has f(A)=1/2; H1 is the witness
+PASS: mutation-empty-half-axiom f(empty)=1/2 is not axiom content
+PASS: note-quotes-live-record the note quotes the three readout sentences verbatim
+PASS: claim-type-contract the author hint uses the exact bounded-theorem enum
+PASS: machine-status-contract current-surface status is bounded-support and is not a retype
+PASS: no-adoption the note neither adopts nor universally forces r=1/2
+PASS: canonical-nonmutation the axiom memo is not edited and does not contain the toy frequency algebra
+PASS: parent-is-axiom-memo-only declared audit inputs are exactly the new note and the axiom memo
+per_element: sixteen length-4 words and the two displayed histories are counted with exact Fraction
+per_site: the toy menu is one site with two lock labels; no composite carrier is asserted
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

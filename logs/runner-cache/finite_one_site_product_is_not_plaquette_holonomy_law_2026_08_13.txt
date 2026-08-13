@@ -1,0 +1,48 @@
+===== runner cache v1 =====
+runner: scripts/finite_one_site_product_is_not_plaquette_holonomy_law_2026_08_13.py
+runner_sha256: 651fecacb58a36ae7895d0db03075635b90639e770af116fe1a22bca2999eb67
+input_fingerprint_sha256: d52d0eb183a494336608cf3fa830efc2105ae4d50552b17e5b3d29e507df6fca
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+external_scientific_inputs: current Lattice, Admissibility, and Qualification wording are source-bound; no observational or fitted inputs
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency; no runner cache is written
+construction: 16-atom one-site product on the unit-square corners; two-point holonomy on the four oriented links
+negative_scope: the executable product is a site-bit table, not a holonomy law; not a no-go against gauge theory
+PASS: audit-input-paths declared audit inputs exist and match the note and axiom memo
+PASS: source-lattice the current Lattice nearest-neighbor sentence is pinned in the axiom memo and the note
+PASS: source-admissibility the current distribution sentence is pinned in the axiom memo and the note
+PASS: source-law-domain the Qualification domain sentence is pinned in the axiom memo and the note
+PASS: theorem-1-fair-sixteen each of the 16 fair atoms has mass (1/2)^4 = 1/16
+PASS: theorem-1-fair-normalized the sixteen fair masses sum to 1
+PASS: theorem-1-biased-81 the biased atom 0000 has mass (1/3)^4 = 1/81
+PASS: theorem-1-table-is-a-measure the biased 16-atom table is a finite measure: nonnegative and sums to 1
+PASS: theorem-2-holonomy-zero H(0,0,0,0)=0 (mod 2)
+PASS: theorem-2-holonomy-one H(1/2,0,0,0)=1 (mod 2)
+PASS: theorem-2-independent-of-bits at fixed bits 0000 the two link configurations give H=0 and H=1, so H is independent of P_S
+PASS: theorem-2-bits-are-not-arguments holonomy is constant in the site bits: every bit string leaves H(θ) unchanged
+PASS: theorem-3-domains-unequal bit-sum is typed on the four sites and holonomy is typed on the four links
+PASS: theorem-3-bit-sum-not-holonomy B flips with bits at fixed θ, while H flips with θ at fixed bits
+PASS: theorem-4-type-residual P_S is a site-bit table; a holonomy law would be a law on links; L_phys is not adopted
+PASS: theorem-5-not-factorization distant-bit factorization is recorded as a different theorem, not this type split
+PASS: mutation-product-mass-determines-holonomy-fails a predicate that product_mass determines holonomy fails on H=0 versus H=1 at fixed bits
+PASS: mutation-bit-sum-domain-fails replacing holonomy by bit-sum fails domain equality of links versus sites
+PASS: mutation-fair-mass-not-one setting every p=1/2 gives atom mass 1/16, not 1
+PASS: note-contract machine-status fields, required phrases, and forbidden-word hygiene hold
+PASS: canonical-nonmutation the holonomy-law construction and L_phys are absent from the canonical axiom file
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_element: the 16 atoms of P_S and the holonomy inputs (0,0,0,0) and (1/2,0,0,0) are recomputed
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_site: one-site binary laws on the four corners are site-local maps, not a composite arena
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_mode: two-point holonomy and the bit-sum are checked; no spectral or harmonic mode is claimed
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_block: only executability of P_S and the bit-link type split are executed
+PASS: n5-length each N5 resolution line is at least 40 characters
+lattice_wide: checked and not executed — no lattice-wide no-go against gauge theory is claimed
+TOTAL: PASS=26 FAIL=0
+
+----- stderr -----
+

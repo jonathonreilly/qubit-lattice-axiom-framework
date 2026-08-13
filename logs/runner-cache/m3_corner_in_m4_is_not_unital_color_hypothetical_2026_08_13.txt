@@ -1,0 +1,41 @@
+===== runner cache v1 =====
+runner: scripts/m3_corner_in_m4_is_not_unital_color_hypothetical_2026_08_13.py
+runner_sha256: 811277348062dfab3b3e8a6f16c1e67c3c20f6a3c618d4533ae48f8bd1ea7b78
+input_fingerprint_sha256: 7256a79b12b191cbd69bcdc2b52aad49f6867d67e6e37ef0277964626a2425b1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+external_scientific_inputs: current axiom wording is source-bound; no observational or fitted inputs are used
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency
+measure_boundary: exact integer/Fraction matrix algebra only
+negative_scope: only the displayed non-unital corner pad is rejected; SU(3), QCD, and a color axiom are not installed
+PASS: source-qubit the axiom memo names the full one-site possibility domain M_2(C)
+PASS: dim-two-site T_2 = M_2 ⊗ M_2 has complex dimension 16, matching M_4
+PASS: dim-m3 M_3 has complex dimension 9
+PASS: thm1-linear iota is Q-linear on a two-term combination of E_12 and I_3
+PASS: thm1-star iota preserves the adjoint on E_12 and I_3
+PASS: thm1-multiplicative iota(E_12 E_21) equals iota(E_12) iota(E_21) and recovers iota(E_11)
+PASS: thm1-injective iota has trivial kernel on the nine matrix units
+PASS: thm1-e12 iota(E_12) is the 4x4 matrix unit in position (1,2)
+PASS: thm1-identity-image iota(I_3) is the projection P = diag(1,1,1,0)
+PASS: thm2-not-unital iota(I_3) is not I_4, so the pad is not a unital *-homomorphism
+PASS: thm3-rank rank(iota(I_3)) is 3 and rank(I_4) is 4
+PASS: thm3-projection P is a projection with complementary rank 1
+PASS: mutation-unital predicate iota(I_3) == I_4 fails
+PASS: mutation-rank predicate rank(iota(I_3)) == 4 fails
+PASS: machine-status-contract the source uses the required bounded-support and C2 leftover status lines
+PASS: note-negative-scope the note refuses SU(3) installation, QCD naming, and color-axiom adoption
+PASS: canonical-nonmutation the axiom memo does not contain the pad or a color-algebra rewrite
+PASS: no-go-gate N1-N8 and the broad-claim rejection are source-visible
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the declared note-plus-axiom tuple
+per_element: I_3, I_4, E_12, E_21, and E_11 are evaluated under iota
+per_site: the statement is the two-site tensor T_2 ≅ M_4; no lattice-wide carrier is asserted
+per_mode: the displayed top-left pad is the tested map
+per_block: only unit-algebra identification via the cheap pad is rejected
+lattice_wide: checked and not executed
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

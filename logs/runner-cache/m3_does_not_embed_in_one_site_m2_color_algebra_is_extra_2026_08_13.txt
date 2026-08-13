@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/m3_does_not_embed_in_one_site_m2_color_algebra_is_extra_2026_08_13.py
+runner_sha256: ae86fdbc3bc195a0d0a79f5e177396c64914890624114a6b2c6714f0a5b94491
+input_fingerprint_sha256: 2b98d934c08ccbc523769dd22c635f4830a7d91087f5c229fe8e27f05460a933
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+external_scientific_inputs: none; exact integer dimensions only
+package_local_integrity_reads: new note and current axiom memo
+negative_scope: one-site injection only; multi-site tensors remain open
+PASS: identity-dim-m2 dim_C(M_2(C)) = 4 via dim_m2()
+PASS: identity-dim-m3 dim_C(M_3(C)) = 9 via dim_m3()
+PASS: exact-integers both dimensions are exact Python ints
+PASS: theorem-1-strict 9 > 4 so no injective C-linear map A3 → A2
+PASS: mutation-dim-m3-leq-dim-m2-fails predicate dim M_3 <= dim M_2 fails (9 ≰ 4)
+PASS: no-injective-star-hom an injective *-hom would be an injective C-linear map, already impossible
+PASS: theorem-2-qubit-quote axiom memo names the one-site algebra as M_2(C)
+PASS: theorem-2-no-m3 axiom memo does not name M_3(C)
+PASS: theorem-2-no-su3 axiom memo does not name SU(3)
+PASS: theorem-3-display-a3 note displays A3 = M_3(C) as an extra object
+PASS: theorem-3-no-color-axiom note does not adopt a color axiom
+PASS: theorem-3-not-qcd note does not identify A3 with QCD
+PASS: theorem-3-min-dim-or-c3 extra object is at least 9-dimensional or a C^3 Hilbert space
+PASS: theorem-4-june-10-not-retired note does not retire June 10
+PASS: theorem-4-np-not-lnzl N_p and ln Z_L are different objects
+PASS: theorem-4-no-05934 0.5934 is not imported
+PASS: theorem-5-no-r-half note does not force r=1/2
+PASS: theorem-5-no-multisite-impossibility note does not claim color is impossible later on a multi-site tensor
+PASS: audit-inputs-axiom-and-note-only declared audit inputs are the new note and the axiom memo
+PASS: no-unmerged-pr-citation note does not cite unmerged PR numbers or c8carrier/phycomp
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

@@ -1,6 +1,6 @@
 {
- "edge_count": 15600,
- "node_count": 5486,
+ "edge_count": 15602,
+ "node_count": 5487,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -18381,6 +18381,10 @@
   "two_band_orbital_response_closed_form_bounded_theorem_note_2026-06-12": {
    "deps_hash": "10b6ffe3f823",
    "out_degree": 1
+  },
+  "two_block_carrier_is_c8_not_one_site_m2_bounded_theorem_note_2026-08-13": {
+   "deps_hash": "61e9d69bb3fe",
+   "out_degree": 2
   },
   "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05": {
    "deps_hash": "bd71c5f30cb7",

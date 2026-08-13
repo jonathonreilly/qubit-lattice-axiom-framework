@@ -1,6 +1,6 @@
 {
- "edge_count": 15600,
- "node_count": 5486,
+ "edge_count": 15602,
+ "node_count": 5487,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -12117,6 +12117,10 @@
   "localized_source_response_sweep_note_2026-05-17": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "lock_history_length_is_not_wick_clock_a_bounded_theorem_note_2026-08-13": {
+   "deps_hash": "0d988fd1ac07",
+   "out_degree": 2
   },
   "lock_point_menu_record_and_likelihood_lemma_cycle911_bounded_theorem_note_2026-07-28": {
    "deps_hash": "9250d476c7ae",

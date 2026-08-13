@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/os0_is_a_primitive_cut_not_lattice_hypothetical_2026_08_13.py
+runner_sha256: 207e1f62a0df26124a1352cc3013e04218cd86642a55157d3933b3c4d80f594d
+input_fingerprint_sha256: 8e96996683261ba9255068acc272c85b93a8275ce57d55e9c50a13402b703fa9
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS: docs/OS0_IS_A_PRIMITIVE_CUT_NOT_LATTICE_HYPOTHETICAL_BOUNDED_THEOREM_NOTE_2026-08-13.md, docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md, docs/MINIMAL_AXIOMS_2026-06-29.md
+external_scientific_inputs: current Lattice wording and the kinetic-isotropy primitive are source-bound; no observational or fitted inputs are used
+Q_lopsided adoption: displayed only; a=1 is not installed; OS0 is not dropped
+PASS: q-e-coefficients Q_E has quadratic coefficients 1/4 and 1/4
+PASS: q-lopsided-coefficients Q_lopsided has temporal coefficient 1 and spatial coefficient 1/4
+PASS: mutation-q-e-names-a predicate Q_E names a fails
+PASS: identity-omega-coeff-E identity gate omega_coeff_E(a) equals -a^2/4
+PASS: identity-omega-coeff-lop identity gate omega_coeff_lop(a) equals -a^2
+PASS: reconstructed-omega-values omega_coeff_E(1)=-1/4, omega_coeff_E(1/2)=-1/16, omega_coeff_lop(1)=-1, omega_coeff_lop(1/2)=-1/4
+PASS: speed-preservation-Q-E speed-preservation on Q_E is a^2=1
+PASS: speed-preservation-Q-lopsided speed-preservation on Q_lopsided is a^2=1/4, a=±1/2
+PASS: mutation-same-wick-a predicate speed-preservation selects the same a for Q_E and Q_lopsided fails (1 vs 1/2)
+PASS: source-lattice Lattice names Z^3, nearest-neighbor adjacency, and proper cubic rotations
+PASS: source-lattice-no-clock Lattice does not name a Euclidean tick, c_t, OS0, or Wick a
+PASS: source-kinetic-isotropy the kinetic-isotropy primitive supplies c_t = c_s rather than deriving it
+PASS: machine-status-contract the note carries the required C5 primitive-cut and bounded-support status lines
+PASS: claim-type-contract the author hint uses the exact bounded-theorem enum
+PASS: theorem-surface the note locates the clock wall in the primitive cut and refuses a=1, Q_lopsided, L_phys, and r=1/2
+PASS: parents-and-paths AUDIT_INPUT_PATHS are the new note, kinetic isotropy, and the axiom memo
+per_element: identity gates call omega_coeff_E(a) and omega_coeff_lop(a) at a=1/2, 1, and 2; Euclidean polynomials are reconstructed without a
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

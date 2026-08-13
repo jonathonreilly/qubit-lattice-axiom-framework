@@ -1,6 +1,6 @@
 {
- "edge_count": 15600,
- "node_count": 5486,
+ "edge_count": 15601,
+ "node_count": 5487,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -337,6 +337,10 @@
   "adaptive_coevolving_geometry_no_go": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "additive_i_is_a_lemma_of_j_hypothetical_bounded_theorem_note_2026-08-13": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "adjacency_rank_qubit_clifford_bound_narrow_theorem_note_2026-06-10": {
    "deps_hash": "017358056d9e",

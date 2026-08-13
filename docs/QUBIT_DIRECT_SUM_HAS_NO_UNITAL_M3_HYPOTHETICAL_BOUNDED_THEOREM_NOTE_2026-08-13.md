@@ -1,0 +1,295 @@
+---
+claim_id: qubit_direct_sum_has_no_unital_m3_hypothetical_bounded_theorem_note_2026-08-13
+claim_type: bounded_theorem
+claim_scope: "On the current Qubit wording the one-site algebra is M_2(C). A hypothetical C2-strong reading that lets a physical object be a finite direct sum of those site algebras still admits no unital C-linear *-homomorphism from M_3(C) into S_n = M_2(C)^⊕n for any n in {1,2,3,4}. The same composite reading with tensor products is independently obstructed by 3 not dividing 2^k. The C2-strong reading is not adopted, the Qubit axiom is not rewritten, and no color axiom is added."
+upstream_dependencies:
+  - minimal_axioms
+runner: scripts/qubit_direct_sum_has_no_unital_m3_hypothetical_2026_08_13.py
+---
+
+# Qubit Direct Sum Has No Unital `M_3`
+
+**Date:** 2026-08-13
+**Type:** bounded_theorem
+**Scope:** exact finite-dimensional *-homomorphism obstruction for a
+hypothetical C2-strong direct-sum composite of one-site `M_2(C)`.
+**Audit-status authority:** independent audit lane only. This note authors no
+audit verdict and predicts none.
+**Primary runner:**
+[`scripts/qubit_direct_sum_has_no_unital_m3_hypothetical_2026_08_13.py`](../scripts/qubit_direct_sum_has_no_unital_m3_hypothetical_2026_08_13.py)
+
+Parent on `origin/main`: the current axiom memo
+[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) only.
+
+## Result Up Front
+
+The current Qubit axiom supplies one local algebra, `M_2(C)`. A hypothetical
+C2-strong composite reading keeps that local algebra and allows a physical
+object to be a finite direct sum of site algebras. That reading is **not
+adopted**. It is not a Qubit rewrite, not a fifth extra, not a C6/C7 addition,
+and not a C1 clone that replaces the one-site algebra by `M_3(C)`.
+
+Even under that unadopted reading, a unital copy of `M_3(C)` is not hosted.
+
+Write `A2 = M_2(C)` and `A3 = M_3(C)`, and write
+
+`S_n = A2 ⊕ ⋯ ⊕ A2` (`n` copies).
+
+Then `dim_C(A2) = 4`, `dim_C(A3) = 9`, and `dim_C(S_n) = 4n`. Any unital
+C-linear `*`-homomorphism `φ : A3 → S_n` would yield, after a coordinate
+projection, a unital `*`-homomorphism `A3 → A2`. Dimension forbids the latter,
+so no such `φ` exists for any `n ∈ {1,2,3,4}`.
+
+A tensor-composite reading of the same C2 idea is independently obstructed:
+a unital `*`-homomorphism `A3 → M_{2^k}(C)` would force `3 | 2^k`, which fails
+for every `k`. That divisibility fact is reconstructed here; it is not imported
+from an unmerged parent.
+
+C2 “composites allowed” therefore does not make an `M_3` factor expected if
+“composite” means a finite direct sum or a finite tensor of one-site `M_2`.
+This note does not adopt a color axiom and does not treat `A3` as a physical
+gauge algebra.
+
+## Machine Status And Trace
+
+```yaml
+actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
+claim_type_reason: "The dimension, simplicity, projection, and divisibility facts are proved on declared finite matrix algebras. The C2-strong composite reading is hypothetical and not adopted; Qubit is not rewritten; no color axiom is added."
+trace_class: negative_route_pruning
+target_claim_id: c2_composite_unital_m3_host
+target_blocker_text: "decide whether a C2-strong composite of one-site M_2 hosts a unital M_3 factor"
+source_of_blocker_text: handoff
+reachability_to_target: advances
+artifact_role: theorem
+conditional_surface_status: "exact for unital *-homs A3 → A2 and A3 → S_n with n in {1,2,3,4}, and for the reconstructed tensor divisibility 3 does not divide 2^k; adoption of any composite axiom remains open and is refused here"
+hypothetical_axiom_status: "C2-strong direct-sum composite: local algebra M_2; physical object may be a finite direct sum of site algebras; not adopted"
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```
+
+## Exact Objects
+
+Let `A2 = M_2(C)` and `A3 = M_3(C)`. These are unital involutive
+C-algebras. As complex vector spaces,
+
+`dim_C(A2) = 2 · 2 = 4`, `dim_C(A3) = 3 · 3 = 9`.
+
+For each integer `n ≥ 1` let `S_n` be the unital C-linear `*`-direct sum of
+`n` copies of `A2`. Elements of `S_n` are n-tuples `(a_1,…,a_n)` with each
+`a_i ∈ A2`. Addition, multiplication, and involution are coordinatewise, and
+
+`1_{S_n} = (1_{A2},…,1_{A2})`.
+
+Hence `dim_C(S_n) = n · dim_C(A2) = 4n`.
+
+Write `π_i : S_n → A2` for the `i`-th coordinate projection. Each `π_i` is a
+unital C-linear `*`-homomorphism.
+
+A C-linear `*`-homomorphism is **unital** when it sends the unit to the unit.
+The current Qubit wording is the one-site presentation `M_2(C)` in
+[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md). Nothing in that
+memo supplies `A3` or `S_n` as axiom content.
+
+## Theorem 1 — No Unital `*`-Hom `A3 → A2`
+
+`A3` is simple: its only two-sided ideals are `0` and itself. Explicitly, if
+`T ∈ M_3(C)` is nonzero then some entry `T_{ab}` is nonzero, so the two-sided
+ideal generated by `T` contains the matrix unit `E_{ab}`. Left and right
+multiplication by matrix units then produces every `E_{kl}`, and the sum of
+the diagonal matrix units is `1_{A3}`. Thus every nonzero two-sided ideal is
+the whole algebra.
+
+Let `ψ : A3 → A2` be a unital C-linear `*`-homomorphism. The kernel of `ψ` is
+a two-sided `*`-ideal. It cannot be `A3` because `ψ(1_{A3}) = 1_{A2} ≠ 0`.
+Simplicity therefore forces `ker ψ = 0`, so `ψ` is injective as a C-linear
+map. An injective C-linear map `A3 → A2` would require
+
+`dim_C(A3) ≤ dim_C(A2)`,
+
+that is `9 ≤ 4`. This predicate fails: `9 > 4`. Therefore no unital C-linear
+`*`-homomorphism `A3 → A2` exists.
+
+The same dimension witness is the mutation check: the predicate
+“unital hom `A3 → A2` exists” fails because any such hom would be injective.
+
+## Theorem 2 — No Unital `*`-Hom `A3 → S_n` For `n ∈ {1,2,3,4}`
+
+Let `φ : A3 → S_n` be a unital C-linear `*`-homomorphism. Each composite
+`π_i ∘ φ : A3 → A2` is a C-linear `*`-homomorphism. By simplicity of `A3`,
+each composite is either injective or the zero map. An injective composite is
+unital, because it sends `1_{A3}` to a nonzero projection that must be
+`1_{A2}` in the simple unital algebra `A2`.
+
+If every composite `π_i ∘ φ` were zero, then `φ` itself would be zero, so
+`φ(1_{A3}) = 0`. Unitality forbids that: `φ(1_{A3}) = 1_{S_n} ≠ 0`. Therefore
+some `π_i ∘ φ` is a unital `*`-homomorphism `A3 → A2`.
+
+Theorem 1 says no such homomorphism exists. Hence no unital C-linear
+`*`-homomorphism `φ : A3 → S_n` exists.
+
+The argument does not use a special value of `n` beyond finiteness of the
+direct sum. The checked range is the declared range `n ∈ {1,2,3,4}`.
+
+## Theorem 3 — Finite Direct-Sum Composites Of One-Site `M_2` Do Not Host Unital `M_3`
+
+The C2-strong reading under test keeps the local algebra equal to `A2` and
+allows a physical object to be some `S_n`. Theorems 1 and 2 say that no unital
+copy of `A3` embeds into any such object in the checked range. Finite
+direct-sum composites of one-site `M_2` therefore do not host unital `M_3`.
+
+This is not a claim that every conceivable composite construction is
+impossible. It is the direct-sum half of the C2 reading named in the machine
+status. The tensor half is the next section.
+
+## Tensor Composite Reconstructed Here
+
+Suppose instead that a C2 composite is a finite tensor of one-site algebras,
+`A2^{⊗ k} ≅ M_{2^k}(C)`. Dimension alone is not the obstruction for `k ≥ 2`:
+
+`dim_C(A3) = 9 ≤ 4^k = dim_C(M_{2^k}(C))`.
+
+A unital C-linear `*`-homomorphism `A3 → M_{2^k}(C)` is a unital `*`-representation
+of `A3` on `C^{2^k}`. The unique irreducible `*`-representation of `M_3(C)` has
+dimension `3`. Complete reducibility therefore requires `3 | 2^k`.
+
+For every integer `k ≥ 0` the residue of `2^k` modulo `3` is either `1` or
+`2`, never `0`. So `3 ∤ 2^k`. There is no unital `*`-homomorphism
+`A3 → M_{2^k}(C)`.
+
+Together with Theorems 1–3, C2 “composites allowed” still does not make an
+`M_3` factor expected if composite means a finite direct sum or a finite
+tensor of `M_2`.
+
+## What Is Not Claimed
+
+- The Qubit axiom is not rewritten. The one-site presentation remains `M_2(C)`.
+- The C2-strong direct-sum reading is hypothetical and **not adopted**.
+- This is not a fifth extra, not a C6/C7 axiom, and not a C1 clone that
+  replaces the local algebra by `M_3`.
+- `A3` is a comparison algebra only. It is not adopted as a color axiom and is
+  not identified with a physical gauge sector.
+- Non-unital maps, quotient maps out of `S_n`, infinite products, and
+  constructions that change the one-site algebra are outside the claim.
+- No observational input is used.
+
+## No-Go Discipline Gate
+
+The negative claims are restricted to unital C-linear `*`-homomorphisms from
+`A3` into `A2`, into `S_n` for `n ∈ {1,2,3,4}`, and into `M_{2^k}(C)`. The
+gate does not certify that every color-adjacent construction is impossible,
+and it does not certify that an axiom update is necessary.
+
+### N1 — materially distinct routes
+
+| Route | Exact attack | Result | Marker |
+|---|---|---|---|
+| One-site unital host | unital `*`-hom `A3 → A2` | Theorem 1: injectivity plus `9 > 4` | **ATTEMPTED** |
+| Direct-sum composite host | unital `*`-hom `A3 → S_n` | Theorem 2: some coordinate is a unital hom into `A2` | **ATTEMPTED** |
+| Dimension-only on `S_n` | compare `9` with `4n` | for `n ≥ 3` one has `9 ≤ 4n`, so dimension of `S_n` is not the obstruction; simplicity plus projection is | **ATTEMPTED** |
+| Tensor composite host | unital `*`-hom `A3 → M_{2^k}(C)` | reconstructed here: `3 ∤ 2^k` | **ATTEMPTED** |
+| Qubit rewrite to `M_3` | replace the one-site algebra | refused; not a C1 clone | **ATTEMPTED** |
+| Adopt C2-strong as axiom | add a composite extra | refused; not a fifth extra and not C6/C7 | **ATTEMPTED** |
+
+The last two routes are governance refusals, not algebraic existence proofs.
+The broad statement “the axioms cannot derive any three-valued internal
+degree” is not shipped.
+
+### N2 — wall independence and collapse
+
+| Pair | First closes second? | Second closes first? | Disposition |
+|---|---:|---:|---|
+| `9 > 4` / simplicity of `A3` | no: dimension forbids linear injection even without ideals | no: simplicity names kernels, not dimensions | independent, jointly used |
+| one-site host / direct-sum host | yes for unital maps: Theorem 2 reduces to Theorem 1 | no: absence of a map into `A2` does not mention `S_n` until projections are used | reduction, not identification |
+| direct-sum host / tensor host | no: `S_n` is not `M_{2^k}` | no: divisibility is not a direct-sum fact | independent composite readings |
+| C2-strong reading / Qubit rewrite | no: the reading keeps local `M_2` | no: rewriting the site algebra is a different extra | distinct refused moves |
+
+### N3 — hidden-condition scan
+
+| Item | Classification |
+|---|---|
+| `A2`, `A3`, `S_n` | declared finite unital `*`-algebras |
+| unital C-linear `*`-hom | the only map class ruled out |
+| simplicity of `M_3(C)` | standard matrix-unit generation, checked on matrix units |
+| coordinate projections `π_i` | unital `*`-homs by the definition of `S_n` |
+| `n ∈ {1,2,3,4}` | declared check range for Theorem 2 |
+| `3 ∤ 2^k` | reconstructed tensor obstruction, not a parent citation |
+| C2-strong wording | hypothetical, not adopted, absent from the axiom memo |
+| observations | none |
+
+No dynamics, Record readout, or gauge identification is assumed.
+
+### N4 — source residual matching
+
+| Source | Exact residual used | Match and limit |
+|---|---|---|
+| [`docs/MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) | one-site possibility domain presented as `M_2(C)` | exact current wording; no composite clause borrowed |
+
+No unmerged pull request is a parent. The tensor divisibility fact is proved
+in this note and checked by the runner.
+
+### N5 — resolution and rhetoric audit
+
+| Resolution | Executed claim | Claim not made |
+|---|---|---|
+| per element | matrix units of `M_3` and the unit of `S_n` | no classification of every linear map |
+| per site | one-site algebra remains `M_2(C)` | no multi-site dynamics |
+| per mode | not used | no spectral exhaustion |
+| per block | unital `*`-hom block into direct sums and tensors of `M_2` | no physical color sector |
+| lattice-wide | not executed | no lattice-wide no-go |
+
+The runner emits substantive `per_element`, `per_site`, `per_mode`,
+`per_block`, and `lattice_wide` lines.
+
+### N6 — live partial-closure paths
+
+1. A later derivation could produce an `M_3` factor from structure that is not
+   a unital `*`-hom into a direct sum or tensor of `M_2`.
+2. A different extra, if ever owner-adopted, could change the one-site algebra.
+   That is a C1-type move and is not this note.
+3. Non-unital correspondences or corner embeddings are a separate question
+   and are not decided here.
+
+The approved primitives were not used and are not extra walls.
+
+### N7 — hostile steelman
+
+> Direct sums have dimension `4n`, which already exceeds `9` once `n ≥ 3`.
+> Perhaps `A3` sits inside `S_n` as soon as there is enough room, or perhaps
+> a unital map can die in every coordinate except a non-unital remainder.
+
+Room is not enough: a unital map into `S_n` cannot vanish in every coordinate,
+and any surviving coordinate is a unital map into `A2`, which dimension
+forbids. The steelman therefore fails for the declared unital `*`-hom class.
+
+### N8 — cross-cycle echo
+
+This lane is independent of any unmerged tensor or corner package. The tensor
+divisibility obstruction is reconstructed here so the direct-sum theorem does
+not lean on an unlanded parent.
+
+**Gate disposition:** PASS for (i) no unital `*`-hom `A3 → A2`, (ii) no unital
+`*`-hom `A3 → S_n` on `n ∈ {1,2,3,4}`, and (iii) reconstructed `3 ∤ 2^k`.
+FAIL / DO NOT SHIP for “an axiom update is necessary,” “every three-valued
+degree is impossible,” or “the C2-strong reading is adopted.”
+
+## Imports And Claim Boundary
+
+| Item | Role | Status |
+|---|---|---|
+| current Qubit sentence | one-site algebra `M_2(C)` | supplied; no edit |
+| finite matrix dimension | Theorems 1–3 | computed here |
+| simplicity of `M_3(C)` | kernel control | proved here by matrix units |
+| coordinate projections of `S_n` | Theorem 2 | definition of the direct sum |
+| `3 ∤ 2^k` | tensor companion | reconstructed here |
+| C2-strong composite wording | hypothetical reading | not adopted |
+| color axiom / Qubit rewrite | refused extras | not used |
+
+The exact advance is a bounded negative theorem about unital hosts for `A3`
+inside finite `M_2` composites. It does not move axiom text.
+
+## Review Record
+
+Independent audit remains required before any effective status may change.
+No `review-loop` was invoked in producing or self-reviewing this artifact.

@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/qubit_direct_sum_has_no_unital_m3_hypothetical_2026_08_13.py
+runner_sha256: 7b760ed101a94c941015ca66cc8bec6e854353ffcab51d0c950945be6a5cdb4f
+input_fingerprint_sha256: 73d4bce75c4acb2099918bde25ad980e2bfcb87e05e9881b5f068433e28f2732
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.07
+status: ok
+----- stdout -----
+external_scientific_inputs: current axiom wording is source-bound; no observational or fitted inputs are used
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency
+measure_boundary: the runner checks exact integer matrix dimensions, matrix-unit generation, and modular residues
+negative_scope: only unital C-linear *-homs from A3 into A2, S_n, and M_{2^k} are rejected
+PASS: source-qubit the exact current one-site algebra sentence is present
+PASS: dim-a2 A2 = M_2(C) has complex dimension computed as level squared
+PASS: dim-a3 A3 = M_3(C) has complex dimension computed as level squared
+PASS: dim-obstruction no injective C-linear map A3 → A2 exists
+PASS: mutation-dim predicate 9 ≤ 4 fails on the computed dimensions
+PASS: mutation-unital-hom predicate unital hom A3→A2 exists fails; witness is dimension
+PASS: simplicity-a3 every matrix-unit two-sided ideal of M_3 is the full algebra
+PASS: dim-direct-sum dim_C(S_n) = n * dim_C(A2) on the declared range
+PASS: unital-forbids-all-zero 1_{S_n} has nonzero coordinates, so a unital map cannot vanish in every slot
+PASS: theorem-direct-sum no unital *-hom A3 → S_n exists for n in {1,2,3,4}
+PASS: room-is-not-enough S_3 and S_4 have room by dimension, so the obstruction is not dim(S_n)
+PASS: tensor-divisibility 3 does not divide 2^k for the reconstructed tensor composite
+PASS: tensor-dim-not-the-obstruction for k>=2 the tensor algebra is large enough, so 3 | 2^k is the needed fact
+PASS: machine-status-contract the source carries the required C2-strong and bounded-support fields
+PASS: claim-type-contract the author hint uses the exact bounded-theorem enum
+PASS: theorem-surface the three declared theorems and the reconstructed tensor fact are source-visible
+PASS: canonical-nonmutation the hypothetical C2-strong composite wording is absent from the axiom memo
+PASS: no-rewrite-no-color-axiom the note refuses a Qubit rewrite and refuses a color axiom
+PASS: no-go-gate all N1-N8 sections and the broad-claim rejection are source-visible
+PASS: audit-input-paths the declared audit inputs are exactly the new note and the axiom memo
+per_element: matrix units of M_3 and the unit of each S_n coordinate are checked
+per_site: the one-site algebra remains M_2(C); no site rewrite is asserted
+per_mode: checked and not executed — no spectral-mode claim
+per_block: the unital *-hom block into direct sums and tensors of M_2 is the only negative block tested
+lattice_wide: checked and not executed — no lattice-wide dynamics or color sector is claimed
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

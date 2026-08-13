@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/declared_m3_carrier_is_extra_not_composite_hypothetical_2026_08_13.py
+runner_sha256: 927dd8fdbd295ca86180292cfcc59f7372ac2fc17e9c69122c700ad34acfe160
+input_fingerprint_sha256: 2cf42ab665e6606cb164ae0483f026361c236cecfca69eaf4bb224c985c10104
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+external_scientific_inputs: current axiom wording is source-bound; dimensions are counted from standard bases; class-C exclusion is exact integer remainder; no observational or fitted inputs
+package_local_integrity_reads: the proposed source note and live axiom memo only
+negative_scope: declared M_3 is typed as extra, not as a composite in C; S' and S'' are displayed and not adopted
+PASS: identity-dim-m2 dim_m2() counts the four standard 2-by-2 matrix units
+PASS: identity-dim-m3 dim_m3() counts the nine standard 3-by-3 matrix units
+PASS: theorem1-nine-gt-four 9>4 so dim M_3 exceeds dim M_2
+PASS: theorem1-s-does-not-name-m3 sentence S names M_2(C) and does not name M_3
+PASS: theorem2-three-never-divides 3 does not divide 2^k for each k in 1..8
+PASS: theorem2-no-unital-into-power-of-two no unital *-hom M_3 -> M_{2^k} for k=1..8
+PASS: theorem2-simple-factor-witnesses unital M_3 is absent from the four class-C witnesses by simple factoring
+PASS: theorem2-sprime-does-not-supply-m3 S' plus class C does not supply M_3
+PASS: mutation-memo-names-m3 the predicate that the axiom memo names M_3(C) fails
+PASS: mutation-nine-le-four the predicate 9≤4 fails
+PASS: theorem3-sdoubleprime-is-declaration S'' names M_3 by declaration and is displayed as extra, not adopted
+PASS: theorem4-wall-slogan-not-extra C2 as a reading removes a wall slogan, not the extra object
+PASS: machine-status-contract the source uses the required leftover status and bounded-support fields
+PASS: live-qubit-nonmutation live axiom memo still states one-site M_2(C); leftover sentences are not adopted
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: no-qcd-no-fifth-axiom note refuses QCD identification and a fifth axiom; runner loads no QCD module
+per_element: identity gates call dim_m2() and dim_m3(); 3 ∤ 2^k is integer remainder
+per_site: A2 is the one-site algebra named by S; A3 is a comparison algebra only
+per_block: leftover type after class C is the only negative block tested
+lattice_wide: checked and not executed — no lattice-wide color or QCD claim
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

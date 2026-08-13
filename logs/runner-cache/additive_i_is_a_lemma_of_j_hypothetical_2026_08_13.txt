@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/additive_i_is_a_lemma_of_j_hypothetical_2026_08_13.py
+runner_sha256: 377db6628358829d6a314165915da78de9ecaec3948e001cc03c30a61682cdc3
+input_fingerprint_sha256: 1ad8456655d83000be0770eb7ac4d90cda6f95a1b390150d143dcfe97a57e450
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: current Record wording only; C1 J arithmetic reconstructed locally
+package_local_integrity_reads: proposed source note plus axiom memo; no runner cache
+negative_scope: C1 and a pairing through I or I_J remain unadopted
+PASS: source-record axiom memo still contains additive I and I(empty)=0
+PASS: note-displays-record note displays the two Record sentences and does not drop them
+PASS: note-type-change note records primitive-to-theorem type change under displayed C1
+PASS: machine-hypothetical note pins the required hypothetical axiom status
+PASS: machine-surface note pins actual_current_surface_status bounded-support
+PASS: identity-I_J_empty I_J(empty)=0 by counting
+PASS: mutation-empty-nonzero predicate I_J(empty)!=0 fails
+PASS: identity-unit-and-window I_J({x})=1, I_J({y})=1, I_J(W)=2
+PASS: identity-named-pairs I_J on union, intersection, S, T for (empty,W), ({x},{y}), ({x},W), ({x},{x})
+PASS: modularity-all-16 I_J(S union T)+I_J(S intersect T)=I_J(S)+I_J(T) on all 16 pairs
+PASS: mutation-additivity predicate I_J({x})+I_J({y}) != I_J({x,y})+I_J(empty) fails
+PASS: identity-I_table I-table on the four occupancies is (0,1,1,2)
+PASS: identity-product_table declared product table is (0,0,0,1)
+PASS: mutation-tables-equal predicate I-table equals product table fails
+PASS: note-no-adoption note does not adopt C1, r=1/2, L_phys, or a pairing on J
+per_element: I_J on four subsets; sixteen modular pairs
+per_site: window {x,y}; double lock J11=(A,B)
+per_mode: I-table is a cardinality; product table stays extra
+per_block: additive-I type change under displayed C1 only
+lattice_wide: checked and not executed — two-site window only
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/two_kernels_one_menu_k_is_not_lock_content_2026_08_13.py
+runner_sha256: 575e9a6868097c47fdeb00926cecc8cdf6398f88b042f386984e481bfb3117b0
+input_fingerprint_sha256: 7c9d18cefd2aa5c443c08e47b487a6acd3819d1b93d46f1ab1aaedc5d072b2cc
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+external_scientific_inputs: current axiom wording is source-bound; no observational or fitted inputs are used
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency
+arithmetic: exact Fraction matrix pairing; two kernels on one menu
+PASS: source-content-alone live Record determines readout value by record content alone
+PASS: source-locks-one live Record locks exactly one admissible local possibility
+PASS: source-I-excluded memo states named I and I(empty)=0 are not Record axiom content
+PASS: mutation-live-memo-tr predicate live memo names Tr(ρP) fails on governing Record
+PASS: menu-resolution P_A and P_B sum exactly to the identity
+PASS: density-trace-one rho is a diagonal trace-one positive matrix
+PASS: identity-K-tr-A K_tr(rho, P_A) computes the exact value 3/5
+PASS: identity-K-tr-B K_tr(rho, P_B) computes the exact value 2/5
+PASS: identity-K-step-A K_step(rho, P_A) computes the exact value 1
+PASS: identity-K-step-B K_step(rho, P_B) computes the exact value 0
+PASS: mutation-kernel-equality predicate K_tr(rho, P_A) == K_step(rho, P_A) fails
+PASS: t1-disagreement same menu, same rho, same lock label A, kernels 3/5 and 1 disagree
+PASS: t2-lock-is-label the formed lock is the label A, not 3/5 and not 1
+PASS: t2-no-I-A-axiom-step note does not write I(A)=1 as an axiom step
+PASS: t3-display-both note displays both kernels and adopts neither
+PASS: note-theorems note states Theorems 1-3 and the two failed predicates
+PASS: note-quotes-content-alone note quotes the live content-alone sentence
+PASS: hygiene-forbidden-phrases the source does not adopt Born, restore I, or import Gleason
+PASS: claim-type-contract the author hint uses the exact bounded-theorem enum
+PASS: note-status note machine status is bounded-support
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the declared note and axiom memo
+per_element: one binary menu, one density, two exact kernels, one lock label
+per_site: one formed lock of content A; no composite carrier is asserted
+TOTAL: PASS=21 FAIL=0
+
+----- stderr -----
+

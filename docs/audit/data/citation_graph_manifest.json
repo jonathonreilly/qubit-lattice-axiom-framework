@@ -1,6 +1,6 @@
 {
- "edge_count": 15600,
- "node_count": 5486,
+ "edge_count": 15602,
+ "node_count": 5487,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -13365,6 +13365,10 @@
   "one_parameter_reduced_shell_law_note": {
    "deps_hash": "03d023bc9c3c",
    "out_degree": 1
+  },
+  "one_plaquette_free_energy_is_not_four_d_ln_z_l_bounded_theorem_note_2026-08-13": {
+   "deps_hash": "d1f939911911",
+   "out_degree": 2
   },
   "one_time_dimension_dt1_reduces_to_emergent_dynamics_gate_open_gate_note_2026-06-17": {
    "deps_hash": "6b456ae72212",

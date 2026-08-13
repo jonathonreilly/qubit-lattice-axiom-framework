@@ -1,6 +1,6 @@
 {
- "edge_count": 15600,
- "node_count": 5486,
+ "edge_count": 15601,
+ "node_count": 5487,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -12605,6 +12605,10 @@
   "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "naming_nn_edges_would_type_a_link_field_hypothetical_bounded_theorem_note_2026-08-13": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "native_carrier_registration_kernel_rate_vs_unit_variance_point_theorem_note_2026-07-02": {
    "deps_hash": "f0528fe9a3de",

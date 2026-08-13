@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/unit_lock_i_is_a_cardinality_q_strength_is_extra_2026_08_13.py
+runner_sha256: 5f5dbc8a69cb61d5d98ebad5b1c5c86f78fd05d2a724f1c75391e15415ce8864
+input_fingerprint_sha256: 1611401504257f0b0bb060c174e6e5b5d41e75945e5e8eee3404a92afc422097
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: current Record wording is source-bound; no observational or fitted inputs are used
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency against the axiom memo
+PASS: source-record-lock the axiom names unit locking of one admissible local possibility
+PASS: source-record-content the axiom determines readout by record content alone
+PASS: source-record-additivity the axiom names additive scalar I with I(empty)=0
+PASS: source-no-strength-dictionary the axiom memo does not name a Q-valued per-lock strength
+PASS: pattern-disjoint-union two singleton domains are disjoint and union to cardinality two
+PASS: theorem1-one-lock I_#(one lock)=1
+PASS: theorem1-two-locks I_#(two disjoint locks)=2
+PASS: theorem1-empty I_#(empty)=0
+PASS: theorem1-additivity I_# is additive on disjoint unit locks
+PASS: theorem2-unit-strength-recovers-card I_q with every q_x=1 recovers I_#
+PASS: theorem2-three-halves-one I_q(one lock)=3/2 at q=3/2
+PASS: theorem2-three-halves-two I_q(two locks)=3 at q=3/2
+PASS: theorem2-mismatch I_q differs from I_# at one lock when q=3/2
+PASS: mutation-strength-equals-card the predicate I_q(one lock)=I_#(one lock) for q=3/2 fails
+PASS: identity-gates-call-card-and-strength identity gates call I_card(n) and I_strength(n, q)
+PASS: note-cardinal-definition the note defines I_# as the domain cardinality
+PASS: note-strength-definition the note defines I_q as a positive-rational domain sum
+PASS: note-display-not-adopt the note displays I_q and refuses adoption, Newton mass, and insufficiency rhetoric
+PASS: note-theorem5-nonclaims the note refuses r=1/2 and L_phys
+PASS: note-parent-is-axiom-memo the only named parent is the current axiom memo
+PASS: claim-type-contract the author hint uses the exact bounded-theorem enum
+PASS: machine-status-contract the source uses the controlled bounded-support fields
+per_element: one lock, two disjoint locks, and the empty pattern are checked
+per_site: each lock occupies one site and one menu entry
+per_mode: two strength trials q=1 and q=3/2 are compared to I_#
+per_block: the extra-dictionary block is I_q versus cardinal I_#
+lattice_wide: checked and not executed — no lattice-wide dynamics is claimed
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

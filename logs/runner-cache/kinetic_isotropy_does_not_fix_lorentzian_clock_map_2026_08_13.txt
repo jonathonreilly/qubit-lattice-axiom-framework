@@ -1,0 +1,52 @@
+===== runner cache v1 =====
+runner: scripts/kinetic_isotropy_does_not_fix_lorentzian_clock_map_2026_08_13.py
+runner_sha256: 7c05227eb3a80353abe765de7d7beb2e4fdcd78e03e96cc2227a10de33460d05
+input_fingerprint_sha256: 811da7869f8c815a43330f3641f4ff79747d4822568312d5cb277ad0ebc266cb
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.26
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/KINETIC_ISOTROPY_DOES_NOT_FIX_LORENTZIAN_CLOCK_MAP_BOUNDED_THEOREM_NOTE_2026-08-13.md
+  docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+external_scientific_inputs: kinetic-isotropy primitive and the four-axiom memo; no observational or fitted inputs
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency; no runner cache is written
+negative_scope: only Euclidean OS0 as a selector of a is rejected; a declared continuation remains a live formal escape
+PASS: audit-input-paths declared audit inputs exist and match the note, primitive, and axiom memo
+PASS: source-primitive-ct-cs the primitive supplies the Euclidean equality c_t = c_s
+PASS: source-primitive-os0 the primitive identifies that equality with OS0 kinetic normalization
+PASS: source-primitive-no-axiom-amend the primitive states that it does not add or amend an axiom
+PASS: source-axiom-lattice-z3 the axiom memo states that physical sites are the cubic lattice Z^3
+PASS: source-axiom-no-time-metric Admissibility is recorded as not defining a time metric
+PASS: theorem-1-euclidean-independent-of-a Q_E = (k4^2+k^2)/4 contains no continuation parameter a
+PASS: theorem-1-os0-equal-coefficients Euclidean coefficients of k4^2 and kx^2 are both 1/4, so c_t = c_s
+PASS: theorem-1-shared-euclidean-values all three continuations recover the same Q_E; sample (k4,k)=(2,3) is 13/4
+PASS: theorem-2-continuation-identity substituting k4 = i a ω into Q_E yields (-a^2 ω^2 + k^2)/4
+PASS: theorem-2-three-coefficients a = 1/2, 1, 2 give Lorentzian ω^2 coefficients 1/16, 1/4, 1
+PASS: theorem-2-distinct the three Lorentzian coefficients are pairwise distinct
+PASS: theorem-2-spatial-coeff-unchanged the spatial coefficient remains 1/4 for every displayed a
+PASS: theorem-2-euclidean-recovery ω = -i k4 / a returns Q_E on each displayed row
+PASS: discriminating-a-less-wick dropping a and writing k4 = i ω collapses every coefficient to 1/4
+PASS: discriminating-half-normalization replacing the TT factor 1/4 by 1/2 moves the triple to 1/8, 1/2, 2
+PASS: discriminating-a-in-euclidean putting a into Q_E makes the Euclidean temporal coefficient a-dependent
+PASS: note-preserves-ct-cs the note records c_t = c_s
+PASS: note-links-parents the note links the primitive and the axiom memo
+PASS: claim-type-contract the author hint uses the exact bounded-theorem enum
+PASS: machine-status-contract the source uses the controlled bounded-support fields
+PASS: note-three-a-values the note exhibits a=1/2,1,2 and coefficients 1/16, 1/4, 1
+PASS: forbidden-rhetoric-absent the note avoids axiom-adoption, promotion, and executor-name rhetoric
+PASS: sources-do-not-name-clock-map-a neither source note writes the continuation k4 = i a ω or the family Q_a
+PASS: canonical-nonmutation the continuation family is absent from the canonical axiom and primitive files
+PASS: primitive-a-uses-are-spacing-or-scale primitive uses of a are a_x = a_y = a_z and a^{-1} = M_Pl only
+per_element: each a in {1/2, 1, 2} is continued from the same Q_E
+per_site: the statements are momentum-space quadratic forms; no composite carrier is asserted
+per_mode: no spectral-mode exhaustion is claimed
+per_block: only Euclidean OS0 versus the linear clock map a is tested
+lattice_wide: checked and not executed — no lattice-wide Lorentz restoration is claimed
+TOTAL: PASS=26 FAIL=0
+
+----- stderr -----
+

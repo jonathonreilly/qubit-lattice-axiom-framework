@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/j_type_does_not_enforce_admissibility_hypothetical_2026_08_13.py
+runner_sha256: f5f142f7d5d52c15bed62a72247ee8a7815d9a180256d68b15ecdd001bb484f9
+input_fingerprint_sha256: bb09c4d9f54e6ce2de458f682688148507bede4fe2817f86b36826126715952d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+external_scientific_inputs: axiom memo Record wording only; C1 J arithmetic is reconstructed
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency
+negative_scope: leftover image constraint; C1 not adopted; no pairing on J; no Tr
+PASS: audit-input-paths declared inputs are the new note and the axiom memo
+PASS: record-quote current Record locks exactly one admissible local possibility
+PASS: identity-I_of-J_ok I_of(J_ok) is unit-count 1
+PASS: identity-I_of-J_bad I_of(J_bad) is unit-count 1
+PASS: theorem1-I-does-not-split I(J_ok) equals I(J_bad)
+PASS: identity-J_of-J_ok J_of on J_ok returns (A, 0)
+PASS: identity-J_of-J_bad J_of on J_bad returns (C, 0)
+PASS: theorem2-J-splits displayed J_ok is not J_bad
+PASS: identity-mu_C mu_C() is 0
+PASS: identity-mu_A mu_A() is 3/5
+PASS: declared-support supp(mu) is {A, B}
+PASS: theorem3-both-well-typed J_ok and J_bad are values of W→{0}∪M
+PASS: theorem3-legal-versus-illegal J_ok meets im(J)\{0} ⊆ supp(mu); J_bad does not
+PASS: mutation-I-splits predicate I splits J_ok from J_bad fails
+PASS: mutation-J-equal predicate J_ok=J_bad fails
+PASS: mutation-mu-C-nonzero predicate mu(C)!=0 fails
+PASS: machine-status-contract required hypothetical and surface-status strings are present
+PASS: note-no-adoption note does not adopt C1, r=1/2, L_phys, pairing, or Tr
+PASS: note-unit-and-model unit-count I=1 is a convention; declared mu is a model
+per_element: J_ok=(A,0) and J_bad=(C,0); labels {A,B,C}
+per_site: window {x,y}; one occupied site on each lock
+per_mode: unit-count I versus displayed J; leftover image constraint
+per_block: C1 type versus Record admissible; mu declared not derived
+lattice_wide: checked and not executed — two-site window only
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

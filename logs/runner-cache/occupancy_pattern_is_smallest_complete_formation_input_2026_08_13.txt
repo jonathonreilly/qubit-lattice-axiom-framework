@@ -4,7 +4,7 @@ runner_sha256: 60913c5804c3336d68616bc6edc9f6e3777a3022922d42e98a162e255e217cde
 input_fingerprint_sha256: bb9176a8905964f7054732d05f835e927feb3116529cff2481c01456cfceb669
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 external_scientific_inputs: current Admissibility and Record wording are source-bound; no observational or fitted inputs

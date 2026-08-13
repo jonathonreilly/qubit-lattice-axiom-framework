@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/two_occupancy_counts_one_mu_live_record_picks_neither_2026_08_13.py
+runner_sha256: 7f010b00d60aab14fe124ab698c2a925da9aa63f842ef5155a49e44fc53947e7
+input_fingerprint_sha256: 3fbd5df22a9351e5b42c46aa54d371619e75a79ecaddc05b3a4e2cc0d90b22c4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+external_scientific_inputs: live axiom wording only; no observational or fitted inputs
+package_local_integrity_reads: the source note is read for claim-surface consistency
+negative_scope: neither displayed window ratio is adopted; I is not restored
+PASS: window-cardinality the declared window has four sites
+PASS: content-law μ assigns 3/5 and 2/5 and is a probability on {A,B}
+PASS: same-mu both configurations are compatible with that one content law
+PASS: occupancy-split formed counts are 1 and 2 on the same window
+PASS: empirical-rates computed window ratios are exactly 1/4 and 1/2
+PASS: theorem-1-rates-differ same μ does not force equal occupancy ratios
+PASS: theorem-2-sigma1-readout site readout of σ1 is defined only at w
+PASS: theorem-2-sigma2-readout site readout of σ2 is defined only at w and x
+PASS: theorem-2-blank-not-readout blank occupancy is not a site readout: unread sites have no content
+PASS: theorem-2-rate-uses-blanks each ratio puts unread blanks in the denominator
+PASS: mutation-equal-rates predicate r(σ1)==r(σ2) fails
+PASS: mutation-i-empty predicate live memo contains I(empty)=0 fails
+PASS: source-blank-unread live Record states that a site with no record cannot be read
+PASS: source-content-only live Record names content-only readout and does not name I
+PASS: source-i-not-content the memo states that I(empty)=0 is not Record axiom content
+PASS: source-rate-downstream the memo keeps formation rate outside axiom supply
+PASS: note-displays-both-rates the note displays 1/4 and 1/2 and adopts neither
+PASS: note-does-not-restore-i the note quotes live blank-unread Record and does not restore I
+PASS: machine-status-contract the source uses the controlled bounded-support fields
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the new note and the axiom memo
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

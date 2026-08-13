@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_condition_is_six_nn_not_eighteen_neighbor_star_2026_08_13.py
+runner_sha256: b6037a71e8a20c7d7e99a33f54926930c6783c8f2fcbd18731fe4e5996012654
+input_fingerprint_sha256: b601cf3050e6c6dccf1096cbe63f952496086ae8dcb1493c42c8f8fa147e39eb
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: current axiom wording is source-bound; no observational or fitted inputs are used
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency
+negative_scope: values of mu6, L_phys, gravity, and any Laplacian remain unselected
+PASS: audit-inputs declared inputs are the new note and the axiom memo
+PASS: theorem-1-cardinalities constructed |S6|=6, |D|=12, |S18|=18 with empty intersection
+PASS: theorem-1-s6-distance every vector in S6 has graph distance 1
+PASS: theorem-1-d-distance every edge-diagonal has graph distance 2
+PASS: theorem-2-lattice-quote Lattice names nearest-neighbor adjacency
+PASS: theorem-2-admissibility-quote Admissibility names nearest-neighbor conditions as the distribution's domain
+PASS: theorem-2-six-tuple the named condition is a 6-tuple, not an 18-tuple
+PASS: theorem-3-mu6-ignores-d mu6 is unchanged when only an edge-diagonal occupancy flips
+PASS: theorem-3-mu18-depends-on-d mu18 depends on the occupancy of e1+e2
+PASS: theorem-3-domain the displayed pair names mu6's domain, not mu18
+PASS: theorem-4-nonclaims note does not adopt L_phys and does not claim gravity or a Laplacian
+PASS: theorem-5-no-half-weight displayed integer laws are not forced to r=1/2
+PASS: mutation-edge-diagonals-are-nn predicate 'edge-diagonals are nearest neighbors' fails
+PASS: mutation-s6-eq-18 predicate '|S6|=18' fails
+PASS: identity-nn-count identity gate calls nn_count() and reads 6
+PASS: identity-graph-distance identity gate calls graph_distance(e1+e2) and reads 2
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

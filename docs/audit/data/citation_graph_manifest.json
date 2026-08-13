@@ -1,6 +1,6 @@
 {
- "edge_count": 15802,
- "node_count": 5512,
+ "edge_count": 15810,
+ "node_count": 5513,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -393,6 +393,10 @@
   "admissibility_cycle713_endpoint_record_attachment_intertwiner_boundary_bounded_theorem_note_2026-08-12": {
    "deps_hash": "d01171e4fcae",
    "out_degree": 6
+  },
+  "admissibility_cycle713_signed_record_source_causal_tt_vertical_slice_bounded_theorem_note_2026-08-13": {
+   "deps_hash": "24bf525103b8",
+   "out_degree": 7
   },
   "admissibility_endogenous_geometry_joint_record_rn_local_covariant_contact_selection_boundary_bounded_theorem_note_2026-08-10": {
    "deps_hash": "908bca83f8ca",
@@ -1895,8 +1899,8 @@
    "out_degree": 11
   },
   "canonical_harness_index": {
-   "deps_hash": "6937c38fdf7b",
-   "out_degree": 360
+   "deps_hash": "7e16c0fe10ea",
+   "out_degree": 361
   },
   "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": {
    "deps_hash": "808c1ccb6109",

@@ -2626,3 +2626,71 @@ and Block-53 sourced causal two-TT propagation, including the local joint
 instrument and signed-frame action. Stop at the first irreducible law choice
 and prepare the complete owner object. If that vertical slice fails, run one
 terminal Block-62 TT/Record inverse-amplification/refinement discriminator.
+
+## Block 67 Handoff
+
+Block 67 is on
+`physics-loop/toe-axiom-closure-block67-record-source-gravity-20260813`,
+stacked exactly on Block-66 delivery `52d6c9b5d1`. The initial science commit
+is `bf2b8a6406`; strengthened science head `dc50e63cbd` is published in stacked
+PR #6266.
+No stacked parent is treated as retained. The local parent snapshot still
+contains finite scalar Record additivity, but the head charge, incidence flux,
+and stress are explicit conditional candidate-law algebra rather than axiom
+content. The already-landed `origin/main` Record epoch narrows additivity; the
+final delivery should rebase onto that authority without co-landing an axiom
+edit, then refresh the bound cache.
+
+The literal Cycle-713 `P=1` sector is exactly 2,048 one-particle transfers, and
+the right-chart matter bit supplies the transfer sign. Requiring the Record
+instrument to preserve a sharp endpoint-current marginal proves an exact
+selector: menu 0 commutes with that PVM and has four nonzero joint branches per
+frame, while menu 1 has 96 noncommuting pairs over 24 frames and cannot admit
+the sharp refinement. The no-Record effect forces `f=1` only under the
+additional, unadopted contract that this transfer register immediately with no
+live-source branch. Conservation alone permits recurrent registration at
+`f<1`.
+
+The constructive realization uses no new carrier field. For negative current,
+the successor head frame is composed with a proper 180-degree transverse-axis
+rotation and the outcome is mirrored onto the signed edge. A content-only root
+decoder recovers direction plus the abstract Record-patch incidence endpoints
+from the whole continued history; their same-M2 physical embedding remains
+open. All 96 branches cross the first unchanged Block-64 write cycle, four
+orbit representatives continue 32 events, and all 2,304 frame-product cases
+pass.
+
+The higher-value strengthening is an arbitrary-horizon head-source candidate.
+At every intermediate Record configuration, a radius-one child relation
+cancels every old head and leaves the latest head as the unique charge. Relay
+and outcome writes give zero source motion; finalize moves the charge one edge
+in the original signed direction. Across 96 seeds and 1,728 stages, all 576
+head moves satisfy exact Block-52 incidence in four unit-null-stress columns,
+and Block64's symbolic support induction lifts the result to arbitrary finite
+single-front horizon. The same spatial tensor drives a nonzero, globally
+scaled Block-53 TT response on all six axes, but opposite signs have identical
+TT responses, as it should. Signed `T0i` has not yet reached Block44's
+lapse/shift constraint sector.
+
+Primary is `PASS=10 FAIL=0`; all ten targeted mutations fail exactly one
+aggregate. The input-pinned cache is fresh; graph registration is
+`5,513/15,810`, out-degree seven.
+The full declared `17^3` depth-two stability and unit-cone control passes. This
+is significant unretained science progress: it conditionally discharges the
+content-selection and arbitrary-continuation subwalls on the declared front.
+No tracked obligation is retired. It remains zero scored TOE progress until
+independent audit retains a complete claim.
+
+The next seam is no longer Record continuity or TT feasibility. It is the
+physical owner law connecting the logical event to stress-energy: decide
+whether the bootstrap `O_s -> H_0` handoff transfers physical source identity,
+compile/dilate and embed the joint CP instrument on the same M2 carrier, bind
+event cadence, derive or select one global normalization/signature/coupling,
+and give a local edge-current-to-gravity reconstruction. The four conserved
+current columns are not Block53's four TT gauge/projection rows. The decisive
+next test is instead Block67 `T^{mu nu}` into Block44's full ten-component
+metric/source coordinates, including lapse/shift coupling of `T00/T0i`, a
+matched finite-frequency edge symbol, and linear Bianchi propagation. Block53
+remains the TT-transfer feasibility control. Nonlinear completion and
+full-`Z^3` scheduling remain after that seam. Do not fund another standalone
+TT, menu, coefficient, period, precision, or Record-front fixture.

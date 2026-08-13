@@ -1081,3 +1081,44 @@ local nearest-neighbor dilation of the irreversible joint instrument,
 context/program/phase, occurrence, menu, hazard, source disposition, cadence,
 collision, clock, total global law, owner adoption, audit verdict, retention,
 TOE score movement, and `review-loop` remain open.
+
+## Block 67 Assumptions And Imports
+
+Block 67 imports the conditional typed interfaces of Blocks 52--53 and
+64--66 without treating any as retained. It re-executes the 4,096-row literal
+Cycle-713 seam, coherent decoder, physical P--M placement, sharp joint POVM,
+all-frame signed carrier construction, content-only event-source decoder,
+periodic incidence identities, and depth-two TT response/stability controls.
+
+The local parent snapshot still states finite scalar Record additivity, but
+that does not identify a physical source, flux, stress tensor, coupling, or
+update. Block 67's head charge, edge-flux addition, and stress columns are
+explicit conditional candidate-law definitions. The already-landed
+`origin/main` Record epoch narrows additivity further; packaging onto that
+authority must preserve, not silently import, this explicit-law boundary.
+
+The conclusion `f=1` is conditional on an additional, unadopted requirement
+that the already realized `P=1` transfer register on this attempt with no live
+no-Record branch. Conservation alone does not select `f`: the exact Block-65
+no-Record branch retains the normalized live state for a later attempt.
+Reservoir, open-boundary, paired-neutral-event, separately represented source,
+and recurrent-registration completions remain live. Menu 0 is selected only
+against the one supplied menu-1 rival under a sharp endpoint-current marginal;
+unsharp and replacement instruments remain live.
+
+The root-pair selector and radius-one head-child relation are decoded from
+Record content and exact on the declared single front. Treating their unique
+head charge as physical matter/stress is an explicit conditional identification,
+not a derived ontology. In particular, the abstract Record-patch edge
+`Q -> O_s` algebraically represents the decoded literal matter hop but has not
+been embedded on the same physical M2 endpoint sites; the adjacent bootstrap
+`O_s -> H_0` ledger handoff is not asserted to be literal matter motion.
+Multi-front collisions and full-`Z^3` source typing are not imported.
+
+The unit null stress, diagnostic Lorentzian signature, global coupling,
+Block-53 depth/order, event cadence, and current-to-constraint relation are
+not imported as axioms or derived physics. The physical route compiles only
+the reversible decoder preparation. It does not compile the irreversible
+joint CP dilation or embed the abstract Record patch on the same M2 carrier.
+Full-Z3 scheduling, collisions, nonlinear gravity, law adoption, audit verdict,
+retention, TOE score movement, and `review-loop` remain open.

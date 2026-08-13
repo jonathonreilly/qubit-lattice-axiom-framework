@@ -1,0 +1,44 @@
+===== runner cache v1 =====
+runner: scripts/j_stack_splits_record_addition_order_hypothetical_2026_08_13.py
+runner_sha256: 11902ab7329c99698eb4dc91a7a2bc8262fd912fc8915514d0ead40c8d299be9
+input_fingerprint_sha256: 29952f1a6883621a386a4b57dc20d4a2aacc888cb242886c28d62882c1773d1d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+external_scientific_inputs: current Record wording only; no observational or fitted inputs
+package_local_integrity_reads: source note and axiom memo are the declared audit inputs
+input_sha256: {'docs/J_STACK_SPLITS_RECORD_ADDITION_ORDER_HYPOTHETICAL_BOUNDED_THEOREM_NOTE_2026-08-13.md': '368f23bbd5cbac561d02f4bf99c6ab585368c20e2fe16fdf8345d052f211a9fb', 'docs/MINIMAL_AXIOMS_2026-06-29.md': '53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39'}
+PASS: source-records-form axiom names record occurrence
+PASS: source-permanence axiom names one-record-per-site permanence
+PASS: source-content-only axiom names content-only readout
+PASS: source-additive-I axiom names additive scalar I with empty zero
+PASS: identity-I-xy I_stack(H_xy) equals (0,1,2)
+PASS: identity-I-yx I_stack(H_yx) equals (0,1,2)
+PASS: identity-J-xy J_stack(H_xy) equals ((0,0),(A,0),(A,A))
+PASS: identity-J-yx J_stack(H_yx) equals ((0,0),(0,A),(A,A))
+PASS: theorem-1-I-agreement I-stacks agree so addition order is I-blind
+PASS: theorem-1-bags site-blind content bags agree on both histories
+PASS: theorem-2-J-split J-stacks differ at the mid-step
+PASS: three-snapshots each history has empty, one-lock, and two-lock frames
+PASS: unit-lock-integers empty I is 0 and each unit lock adds exactly 1
+PASS: permanence-nondecreasing occupancy is nondecreasing on both legal orders
+PASS: both-orders-lock-A both legal orders lock A and never B
+PASS: mutation-I-differ-fails predicate I_stack(H_xy) differs from I_stack(H_yx) fails
+PASS: mutation-J-equal-fails predicate J_stack(H_xy)=J_stack(H_yx) fails
+PASS: note-displayed-stacks note displays both I-stacks and both J-stacks
+PASS: note-theorem-3-record-quote note quotes formation, permanence, content-only readout, and additive I
+PASS: note-non-adoption note displays and does not adopt rate, clock, r=1/2, L_phys, or pairing on J
+PASS: machine-status-contract required hypothetical and surface status strings are present
+PASS: axiom-unedited canonical axiom memo does not contain the hypothetical J-stack rewrite
+PASS: identity-gates-bind-functions identity gates are live calls of I_stack and J_stack on both histories
+per_element: two addition events per history; unit lock I=1
+per_site: window {x,y}; mid-step site is the only J split
+per_mode: I-stack and site-blind bags are order-blind; J-stack is not
+per_block: addition-order process type only; no rate, clock, L_phys, or pairing
+lattice_wide: checked and not executed — two-site window only
+TOTAL: PASS=23 FAIL=0
+
+----- stderr -----
+

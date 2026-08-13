@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_six_star_is_not_a_four_link_plaquette_2026_08_13.py
+runner_sha256: 8d6f43dd8a29c6e8bd51ead11130a01810323d148ad52514b7d6862ded715767
+input_fingerprint_sha256: 5ab23e3453ce85833bb2fc1cb1c699d257a89c214e04385ffd632fdb90e96868
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: current axiom wording only; no observational or fitted inputs
+package_local_integrity_reads: proposed source note plus axiom memo
+audit_input_paths: docs/ADMISSIBILITY_SIX_STAR_IS_NOT_A_FOUR_LINK_PLAQUETTE_BOUNDED_THEOREM_NOTE_2026-08-13.md, docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: audit-inputs declared inputs are the new note and the axiom memo
+PASS: source-lattice Lattice names nearest-neighbor adjacency of sites of Z^3
+PASS: source-admissibility Admissibility determines the site distribution by nearest-neighbor conditions
+PASS: identity-star-size identity gate: identity_star_size calls star_size and returns 6
+PASS: identity-plaquette-link-count identity gate: identity_plaquette_link_count calls plaquette_link_count and returns 4
+PASS: theorem-1-no-bijection six neighbor sites are not in bijection with four plaquette links
+PASS: mutation-cardinalities-equal predicate '|S|=|L|' fails because 6 != 4
+PASS: types-sites-versus-edges star members are sites; plaquette members are edges
+PASS: theorem-3-pairing-extra displayed pairing is extra: four pairs, two unused sites, unequal arities
+PASS: note-theorems the source note states Theorems 1-5 and the N5 fence on Theorem 5
+PASS: note-axiom-quotes the note quotes Lattice adjacency and the Admissibility distribution sentence
+PASS: theorem-5-one-square N_p of this one square is 1 and is not 96
+PASS: display-not-adopt the pairing is displayed and a holonomy axiom is not adopted
+PASS: claim-type-contract the author hint uses the exact bounded-theorem enum
+PASS: forbidden-rhetoric note and runner avoid adoption rhetoric and unmerged-PR citations
+per_element: six star sites and four plaquette links are enumerated exactly
+negative_scope: only the 6-versus-4 site/edge split is decided; no holonomy law is claimed
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

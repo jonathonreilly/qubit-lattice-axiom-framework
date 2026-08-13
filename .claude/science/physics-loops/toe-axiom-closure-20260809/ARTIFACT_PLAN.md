@@ -1766,7 +1766,7 @@ complete conditional nonlinear compact solution:
   signs give identical TT response and signed `T0i` is not transmitted
 - primary `PASS=10 FAIL=0`; ten targeted mutations each fail exactly one
   aggregate; input-pinned cache is fresh; graph is `5,513/15,810`, out-degree
-  seven; packaging commit pending after the head-current strengthening
+  seven; strengthened science head `dc50e63cbd`; stacked PR #6266 is open
 - decisive boundary: the joint CP instrument, dilation, and same-M2 Record
   embedding are not physically compiled; the bootstrap outcome-to-head
   handoff and head-as-matter/stress identification remain conditional; cadence,

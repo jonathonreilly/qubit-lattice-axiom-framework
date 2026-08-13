@@ -2169,7 +2169,7 @@ lines are in the landing primary cache.
 - Evidence: primary `PASS=10 FAIL=0`; all ten targeted mutations fail exactly
   one aggregate; the input-pinned cache is fresh and the graph is
   `5,513/15,810`, out-degree seven, on exact Block-66 delivery `52d6c9b5d1`.
-  The packaging commit is pending. Claim type is `bounded_theorem`,
+  Science head is `dc50e63cbd`; stacked PR #6266 is open. Claim type is `bounded_theorem`,
   unaudited and unretained. The bootstrap head-as-matter identification remains
   conditional. No axiom edit, audit verdict, TOE score movement, or
   `review-loop`.

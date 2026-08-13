@@ -2632,7 +2632,8 @@ terminal Block-62 TT/Record inverse-amplification/refinement discriminator.
 Block 67 is on
 `physics-loop/toe-axiom-closure-block67-record-source-gravity-20260813`,
 stacked exactly on Block-66 delivery `52d6c9b5d1`. The initial science commit
-is `bf2b8a6406`; the strengthened head-current packaging commit is pending.
+is `bf2b8a6406`; strengthened science head `dc50e63cbd` is published in stacked
+PR #6266.
 No stacked parent is treated as retained. The local parent snapshot still
 contains finite scalar Record additivity, but the head charge, incidence flux,
 and stress are explicit conditional candidate-law algebra rather than axiom

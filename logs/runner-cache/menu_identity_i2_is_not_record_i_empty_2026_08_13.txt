@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/menu_identity_i2_is_not_record_i_empty_2026_08_13.py
+runner_sha256: a0c48ddb7f45dfac69a2c565d8aca3642bd72e2792865238d323fd82dff9be29
+input_fingerprint_sha256: 0be7925bd0f293535572cdc7dbe703aa3e07271dad7c2b2e15c483a52ffedf92
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+external_scientific_inputs: current axiom wording and the parent menu-sum convention are source-bound; no observational or fitted inputs are used
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency
+identity_boundary: identity gates call tr_I2() and I_empty(); the hostile equality predicate must fail
+negative_scope: only the I_2 / I(empty) homonym is rejected; Born form, weights, and lengths remain unforced
+PASS: source-record Record supplies a scalar readout I with I(empty)=0
+PASS: source-parent-menu-identity the August 9 parent uses I_2 as the operator menus sum to
+PASS: i2-matrix-type I_2 is a 2x2 matrix over Q
+PASS: i-empty-scalar-type I(empty) is a scalar rational count
+PASS: type-separation the menu identity and the empty readout have different types
+PASS: tr-i2-value tr_I2() returns the exact rational 2
+PASS: i-empty-value I_empty() returns the exact rational 0
+PASS: identity-gate-rational-unequal Tr(I_2)=2 is not I(empty)=0 even as rationals
+PASS: mutation-predicate the hostile predicate Tr(I_2)=I(empty) fails
+PASS: binary-menu-resolution the binary menu {P, I_2-P} sums exactly to I_2
+PASS: theorem-surface the note states Theorems 1 through 5 on the declared objects
+PASS: no-dictionary-adoption the note displays the mismatch and refuses a dictionary
+PASS: no-born-false-claim the note does not claim Born is false
+PASS: no-r-half-force the note does not force r=1/2
+PASS: no-lphys-adoption the note does not adopt L_phys
+PASS: claim-type-contract the author hint uses the exact bounded-theorem enum
+PASS: machine-status-contract the source uses the controlled bounded-support and negative-route-pruning trace fields
+PASS: canonical-nonmutation the canonical axiom memo is not edited and still has only the Record scalar I(empty)=0
+PASS: no-unmerged-pr-citation the note does not cite unmerged PR labels
+PASS: no-go-gate all N1-N8 sections and the broad-claim rejection are source-visible
+per_element: I_2 diagonal entries, empty-collection readout, and one rank-one binary menu are checked
+per_site: the mismatch is a one-site statement in M_2(C); no composite carrier is asserted
+per_mode: only the identity-versus-empty-readout pair is tested
+per_block: the two-symbol homonym is the only negative block tested
+lattice_wide: checked and not executed — no lattice-wide dynamics or Born no-go is claimed
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

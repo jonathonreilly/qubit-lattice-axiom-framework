@@ -1,6 +1,6 @@
 {
- "edge_count": 15600,
- "node_count": 5486,
+ "edge_count": 15602,
+ "node_count": 5487,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -18420,6 +18420,10 @@
   },
   "u1_fermion_number_conservation_theorem_note_2026-05-02": {
    "deps_hash": "45b34f1904c9",
+   "out_degree": 2
+  },
+  "u1_two_by_two_torus_character_sum_is_not_disk_and_not_su3_ln_z_l_bounded_theorem_note_2026-08-13": {
+   "deps_hash": "d1f939911911",
    "out_degree": 2
   },
   "u4_closes_under_qubit_reframe_narrow_theorem_note_2026-05-20": {

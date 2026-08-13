@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/content_alone_clause_forbids_site_indexed_j_hypothetical_2026_08_13.py
+runner_sha256: 2180f706e21ce146987117ed396e37210e019642636ab725b617905af5167500
+input_fingerprint_sha256: 15ae22570309041eb4e9e8079be072ba82e6edd96e4198edca2c181d2d8483a9
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: current Record wording is source-bound; no observational or fitted inputs are used
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency; axiom memo is the only parent
+PASS: source-record-clause the exact current content-alone sentence is present
+PASS: reconstruct-h10A h10A locks only x to A and reconstructs J=(A,0) with I=1
+PASS: reconstruct-h01A h01A locks only y to A and reconstructs J=(0,A) with I=1
+PASS: identity-I identity gates call I_of on both one-record histories and get 1
+PASS: identity-J identity gates call J_of on both histories and get distinct pairs
+PASS: identity-bag identity gate bag_of(h10A) is the site-blind singleton {A}
+PASS: identity-source-needles runner source contains the required identity-gate calls
+PASS: theorem-1-r-strict-I-bag scalar I and the site-blind bag obey R_strict
+PASS: mutation-j-obeys-r-strict predicate J obeys R_strict fails
+PASS: mutation-i-differs predicate I(h10A) differs from I(h01A) fails
+PASS: theorem-4-weak-occupancy weak occupancy also violates R_strict
+PASS: theorem-3-r-lax-allows-J under R_lax the two histories are distinct contents and J may differ
+PASS: machine-status-contract note carries the required C1 follow-on status strings
+PASS: note-readings-and-nonadoption note quotes the clause, displays both readings, and adopts neither extra
+PASS: canonical-nonmutation site-indexed J histories are absent from the canonical axiom file
+PASS: audit-input-paths declared inputs are the new note and the axiom memo
+PASS: no-go-gate N1-N8 sections and the broad-claim rejection are source-visible
+PASS: no-pairing-no-half reconstructed maps use exact integer occupancy and no pairing of J
+per_element: checked one locked possibility A on each history; both records lock A and I equals 1
+per_site: checked the ordered pair J at x then y; (A,0) is not equal to (0,A)
+per_mode: checked and not executed — no spectral or harmonic mode is defined on this two-site window
+per_block: checked the two-site window block; R_strict equality is tested only on that window
+lattice_wide: checked and not executed — no lattice-wide dynamics or axiom rewrite is claimed
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

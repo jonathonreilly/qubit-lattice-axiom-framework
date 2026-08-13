@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/menu_independent_grading_on_scaled_projectors_is_extra_2026_08_13.py
+runner_sha256: 0f724300f71aee8c82bcdc08adcbbcf3fde1ad6cd220e75d2a7c138c519b6af9
+input_fingerprint_sha256: a7ca4e25740069fb60326bf48705faea73f2dbc677a2a5cf7002e32b8481f7dd
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: current axiom wording and the parent low-arity uniqueness theorem are source-bound; no observational or fitted inputs are used
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency; Gleason is not imported
+negative_scope: only the extra matching that a menu-independent scaled-projector grade exists and is the instrument is named; August 9 is not improved and Born is not denied
+PASS: pz-definition P_z is exactly diag(1, 0)
+PASS: identity-w-rho the identity gate w_rho(Pz) equals 3/5
+PASS: identity-w-star the identity gate w_star(Pz) equals 1/2
+PASS: mutation-grades-unequal the predicate w_ρ=w_* fails at P_z
+PASS: identity-ray-agreement both grades send c I to c and send 0 to 0
+PASS: scaled-projector-split the grades remain unequal on a proper multiple of P_z
+PASS: mutation-axioms-do-not-name-w-rho the predicate axioms-name-w_ρ fails on the current axiom memo
+PASS: source-admissibility the note quotes the nearest-neighbor distribution sentence
+PASS: source-record the note quotes the lock sentence and additive Record I
+PASS: source-parent-uniqueness the parent uniqueness statement is conditional on a supplied menu-independent grade
+PASS: extra-matching-surface the note names the extra matching and displays w_ρ without adopting it
+PASS: theorem-four-and-five-boundary the note refuses August 9 improvement, Gleason-as-physics, Born denial, forced r=1/2, and L_phys
+per_element: identity gates evaluate w_rho(Pz) and w_star(Pz); scaled and identity-ray controls use exact Fraction
+per_site: both trial grades and the axiom-text comparison are one-site statements
+per_mode: no spectral-mode exhaustion is claimed
+per_block: the extra matching that such a w exists and is the instrument is the only negative block tested
+lattice_wide: checked and not executed — no lattice-wide Born no-go is claimed
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

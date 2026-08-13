@@ -1,0 +1,56 @@
+===== runner cache v1 =====
+runner: scripts/cube_threefold_pauli_triad_is_not_unital_m3_2026_08_13.py
+runner_sha256: 8c23ffa35812915f62a9473e891d59bad7ea0883b817bf330f47dc58236b5669
+input_fingerprint_sha256: bbbddcf31c150fee5cbe950b59ab111206879d413c679a2a921f153e625804b0
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+external_scientific_inputs: none; displayed Pauli triad and cycle map are theorem hypotheses
+package_local_integrity_reads: runner source, proposed source note, and live axiom memo
+measure_boundary: exact Q(i) Pauli matrices and C-linear cycle automorphism
+negative_scope: the Pauli-axis triad is not a PVM or unital M_3 factor and is not adopted as QCD
+PASS: source-lattice Lattice names proper cubic rotations about each site
+PASS: source-qubit one-site possibility algebra is M_2(C)
+PASS: pauli-reconstruction Px, Py, Pz equal (I+σ)/2 on the exact Pauli matrices
+PASS: thm1-px-proj Px is a rank-1 projection
+PASS: thm1-py-proj Py is a rank-1 projection
+PASS: thm1-pz-proj Pz is a rank-1 projection
+PASS: thm1-pairwise-distinct Px, Py, Pz are pairwise distinct
+PASS: thm2-phi-px φ(Px) = Py
+PASS: thm2-phi-py φ(Py) = Pz
+PASS: thm2-phi-pz φ(Pz) = Px
+PASS: thm2-phi-not-id φ ≠ id
+PASS: thm2-phi-cube-id φ^3 = id on the Pauli basis
+PASS: thm2-phi-star-linear φ is *-linear on the Pauli spanning set
+PASS: thm2-phi-multiplicative φ preserves the Pauli product table
+PASS: thm2-u-unitary displayed U is unitary
+PASS: thm2-u-cube-central U^3 = -I, hence U^3 is proportional to I
+PASS: thm2-ad-u-is-phi Ad_U implements the Pauli-axis cycle
+PASS: thm3-exact-sum Px+Py+Pz = (3/2)I + (σx+σy+σz)/2
+PASS: thm3-sum-not-three-halves unlike the equatorial z-orbit, the Bloch vectors do not cancel
+PASS: mutation-sum-eq-i-fails predicate Px+Py+Pz == I fails
+PASS: thm3-uniform-scale-not-povm uniform (2/3) scaling does not restore a resolution of the identity
+PASS: thm3-not-orthogonal Px Py is nonzero, so the triad is not a PVM
+PASS: thm4-pauli-basis-rank-4 I, σx, σy, σz have Q(i)-rank 4
+PASS: thm4-generated-dim-4 Q(i)-dimension of C*(Px,Py,Pz) = 4
+PASS: mutation-dim-eq-9-fails predicate dim generated == 9 fails
+PASS: thm4-not-m3 generated unital *-algebra is M_2(C), not M_3(C)
+PASS: thm5-three-not-divides-two 3 does not divide 2
+PASS: thm5-injective-dimension-obstruction an injective complex-linear map M_3 to M_2 would require 9 <= 4
+PASS: mutation-unital-m3-to-m2-fails predicate unital M_3 → M_2 exists fails
+PASS: thm6-lattice-named-not-equator this triad is the cube 3-fold Pauli-axis cycle, not the displayed z-equator
+PASS: thm6-record-and-refusals note makes the Record reading conditional and refuses QCD adoption
+PASS: machine-status-contract note carries the required leftover status and bounded-support surface
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: claim-type-and-gate bounded theorem type and a passing N1-N8 gate are source-visible
+per_element: checked exactly — each of Px, Py, Pz is a distinct rank-one projection in M_2(C)
+per_site: checked exactly — the unweighted sum is not I and the generated algebra has field-rank four
+per_mode: checked exactly — the cube 3-fold cycle map and Ad_U send Px to Py to Pz to Px
+per_block: checked exactly — the triad is not a PVM, not a unital M_3 factor, and not a uniform-scale POVM
+lattice_wide: checked and not executed — no nearest-neighbor covariance or QCD identification is claimed
+TOTAL: PASS=34 FAIL=0
+
+----- stderr -----
+

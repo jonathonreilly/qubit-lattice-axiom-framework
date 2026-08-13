@@ -1,6 +1,6 @@
 {
- "edge_count": 15600,
- "node_count": 5486,
+ "edge_count": 15602,
+ "node_count": 5487,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -2257,6 +2257,10 @@
   "cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "cl3_volume_elements_plus_minus_not_axiom_selected_bounded_theorem_note_2026-08-13": {
+   "deps_hash": "eb898ddaed75",
+   "out_degree": 2
   },
   "claude_branch_retainability_note": {
    "deps_hash": "e3b0c44298fc",

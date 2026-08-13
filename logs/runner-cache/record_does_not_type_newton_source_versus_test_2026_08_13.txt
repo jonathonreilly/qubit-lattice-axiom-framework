@@ -1,0 +1,62 @@
+===== runner cache v1 =====
+runner: scripts/record_does_not_type_newton_source_versus_test_2026_08_13.py
+runner_sha256: fde8fbd208eb5cf84b22b410020fbe5c9a8ce49464b047c9e3772c2a0e4f6282
+input_fingerprint_sha256: 3cd888b6ee19695e5420ff0474cc33405edbded91312c6c46cbed37df8855461
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.53
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/RECORD_DOES_NOT_TYPE_NEWTON_SOURCE_VERSUS_TEST_BOUNDED_THEOREM_NOTE_2026-08-13.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/NEWTON_LAW_DERIVED_NOTE.md
+cache_write: false
+two-kinds split: external_scientific_inputs versus package_local_integrity_reads
+external_scientific_inputs: current Record content-only and additivity sentences plus the Newton kernel and non-claims are source-bound; no observational or fitted inputs are used
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency; no runner cache is written
+negative_scope: only unlabeled Record data as a unique Newton source selector is rejected; a declared typing remains a live formal escape; gravity is not claimed impossible
+PASS: audit-input-paths declared audit inputs exist and match the note, axiom memo, and Newton packet
+PASS: source-record-content-only the exact current Record content-only sentence is present in the axiom memo and the note
+PASS: source-record-additivity the exact current Record additivity sentence is present in the axiom memo and the note
+PASS: source-newton-nonclaim-force the Newton packet lists F = -M_test grad(phi) as a non-claim
+PASS: source-newton-nonclaim-product the Newton packet lists the physical product law as a non-claim
+PASS: note-pins-newton-nonclaims the note records F = -M_test grad(phi) and the physical product law M_source M_test
+PASS: empty-readout I(empty)=0
+PASS: witness-collections unit-atom collections realize I(S)=2, I(T)=1, I(S union T)=3 and are disjoint
+PASS: green-kernel supplied kernel is 1/(4 pi r) and phi is source-linear
+PASS: theorem-1-derivative d phi / dr = -m/(4 pi r^2) and |grad phi| equals grad_magnitude(m, r)
+PASS: theorem-1-two-assignments |grad phi_S| = I(S)/(4 pi r^2) and |grad phi_T| = I(T)/(4 pi r^2)
+PASS: theorem-1-equal-iff-masses-equal the two Green assignments are equal iff I(S)=I(T)
+PASS: theorem-2-swap-symmetry contents, union atoms, and I(S union T) are invariant under S <-> T
+PASS: theorem-2-no-ordered-typing content-only unlabeled data are an unordered pair, not an ordered typing
+PASS: theorem-3-unequal-mass-split |grad phi_S|(1) = 1/(2 pi) and |grad phi_T|(1) = 1/(4 pi) are unequal
+PASS: theorem-3-union-readout swap leaves I(S union T)=3
+PASS: theorem-3-lumped lumped strengths with totals 2 and 1 reproduce the same Green split and union 3
+PASS: theorem-4-union-as-mass-fails using I(S union T) as M yields 3/(4 pi), which equals neither Green assignment
+PASS: theorem-4-unlabeled-cannot-select swap-invariant unlabeled data cannot equal a uniquely selected source gradient
+PASS: theorem-5-typed-maps if a typing is supplied, B_tau and F_tau are well-defined formal maps
+PASS: theorem-5-escape-not-physical the note records the typed maps as a formal escape and does not claim gravity is impossible
+PASS: mutation-union-mass-fails-split replacing grad_magnitude by a swap-invariant I(S)+I(T) rule fails 1/(2 pi) vs 1/(4 pi)
+PASS: mutation-product-fails-source-linearity replacing grad_magnitude by the product law fails source-linearity of phi = M G
+PASS: mutation-label-order-is-typing always taking the first Python tuple entry as source is a typing: swap changes grad_magnitude when masses differ
+PASS: note-contract machine-status fields, required phrases, and forbidden-word hygiene hold
+PASS: claim-type-contract the author hint uses the exact bounded-theorem enum
+PASS: note-links-parents the note links the axiom memo and the Newton packet
+PASS: newton-kernel-bound the Newton packet still states the source-linear kernel algebra
+PASS: canonical-nonmutation the typing escape is absent from the canonical axiom file
+PASS: n-gate-disposition the N-gate passes the scoped typing obstruction and refuses gravity-impossible and no-pairing claims
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_element: named collections with totals 2 and 1 have Green assignments 1/(2 pi) and 1/(4 pi) recomputed
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_site: collection-level readout and a radial kernel are checked; no composite carrier is asserted
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_mode: source-linear radial Green assignments are checked; no spectral or harmonic mode is claimed
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_block: only the typing obstruction, the unequal-mass split, and the typed formal escape are executed
+PASS: n5-length each N5 resolution line is at least 40 characters
+lattice_wide: checked and not executed — no lattice-wide pairing, force law, or Einstein equation is claimed
+TOTAL: PASS=35 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/pvm_luders_instrument_produces_born_weights_on_that_pvm_2026_08_13.py
+runner_sha256: a3c1db6ed5eb22603237ed6fe326cb63ca527058f8c12b0c1b9a34fa3d9dac6a
+input_fingerprint_sha256: 85b523a059592a1b56f6042c43408145e11ba1673c82e2be2934a382927897aa
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: current axiom wording and the 2026-08-09 frame-lift uniqueness note are source-bound; no observational or fitted inputs are used
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency; this dispatch writes no runner cache
+identity_gate_contract: Born and repeatability identities call born_pvm(sigma, P) and luders(sigma, P)
+PASS: source-admissibility the canonical memo states the nearest-neighbor determined distribution
+PASS: source-record-lock the canonical memo states that a record locks one admissible possibility
+PASS: source-record-additivity the canonical memo states finite additive scalar readout I
+PASS: source-parent the 2026-08-09 parent still states unique density-matrix trace form
+PASS: surface-status the note keeps conditional support, hypothetical axiom wording, and independent audit explicit
+PASS: quoted-axiom-sentences the note quotes the Admissibility and Record sentences used in Theorem 4
+PASS: extra-matching-sentence the note states the extra matching that the instrument is a PVM Lüders readout
+PASS: pvm-resolution Q equals I-P and the declared pair sums to the identity
+PASS: mix-entries the midpoint mix is exactly diag(11/20, 9/20)
+PASS: identity-born-star born_pvm(rho_*, P) equals 1/2 and the complementary weight completes to one
+PASS: identity-born-rho born_pvm(rho, P) equals 3/5 and born_pvm(rho, Q) equals 2/5
+PASS: identity-born-mix born_pvm(sigma_mix, P) equals 11/20 and matches the midpoint of the named weights
+PASS: identity-luders-repeatability luders(rho, P) returns P and born_pvm of that update on P is 1
+PASS: mutation-axioms-name-luders the predicate that the four axioms name Lüders fails
+PASS: mutation-constant-half replacing born_pvm(rho, P) by 1/2 disagrees with the live 3/5 identity
+PASS: nonclaim-no-adoption the note refuses axiom adoption, parent replacement, Born-false, and every-kernel claims
+per_element: exact Fraction traces and the Lüders product are checked on P, Q, and the named densities
+per_site: one complete M_2(C) site and one declared two-outcome PVM are checked; no multi-site carrier is asserted
+per_mode: only the declared computational-basis PVM is checked; no dimension-two frame reconstruction is launched
+per_block: this matching block checks Born numbers, midpoint affinity, Lüders repeatability, and the extra-matching boundary together
+lattice_wide: checked and not executed — the theorem is one-site matching algebra and makes no lattice-wide registration claim
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

@@ -1,6 +1,6 @@
 {
- "edge_count": 15600,
- "node_count": 5486,
+ "edge_count": 15603,
+ "node_count": 5487,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -2753,6 +2753,10 @@
   "cte_rconn_spatial_tensor_color_bridge_is_a_cross_domain_coincidence_narrow_no_go_note_2026-06-08": {
    "deps_hash": "825a4024d61b",
    "out_degree": 4
+  },
+  "cube_gauss_source_is_a_3_cochain_not_record_i_at_a_vertex_bounded_theorem_note_2026-08-13": {
+   "deps_hash": "2e55076cdcb9",
+   "out_degree": 3
   },
   "cubic_anisotropy_sections_so3_frame_bounded_theorem_note_2026-06-17": {
    "deps_hash": "04fc7d8812c4",

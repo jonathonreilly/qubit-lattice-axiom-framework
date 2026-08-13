@@ -1,6 +1,6 @@
 {
- "edge_count": 15600,
- "node_count": 5486,
+ "edge_count": 15601,
+ "node_count": 5487,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -2789,6 +2789,10 @@
   "cubic_orbit_reynolds_projector_narrow_theorem_note_2026-05-10": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "cubic_site_rotation_is_not_internal_ad_u_on_m2_bounded_theorem_note_2026-08-13": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "cycle332_receiver_success_cycle610_gate_adapter_bounded_theorem_note_2026-07-30": {
    "deps_hash": "c8eee4235fc9",

@@ -1,0 +1,44 @@
+===== runner cache v1 =====
+runner: scripts/three_site_cycle_is_not_unital_m3_2026_08_13.py
+runner_sha256: 4ff0423fa0826cba9703d39c72be9854760cef0ba0624bab3d56d83ec4b5f12a
+input_fingerprint_sha256: 8eb36fabb51cd2aa4430f5e22b43ad2abc987ff3f5aa8f62db4aa10ac7af82c6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: current axiom wording is source-bound; no observational or fitted inputs are used
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency; AUDIT_INPUT_PATHS binds the note and the axiom memo
+measure_boundary: the runner checks exact 0/1 permutation algebra over Fraction; it does not sample or float
+negative_scope: the site-cycle leftover is not a unital M_3 factor and is not identified with SU(3) or the Bloch triad
+PASS: source-qubit the axiom memo names the one-site algebra M_2(C)
+PASS: source-record Record locks exactly one admissible local possibility
+PASS: source-lattice Lattice supplies the cubic lattice Z^3
+PASS: u-shape U is an 8x8 matrix
+PASS: u-01-entries every entry of U is the Fraction 0 or 1
+PASS: u-permutation each row and each column of U sums to 1
+PASS: u-cycle-action U sends |q1 q2 q3> to |q2 q3 q1> on the integer basis 4 q1 + 2 q2 + q3
+PASS: u-unitary U^* = U^{-1} because U^T U = I_8
+PASS: u-order-three U^3 = I_8 and U != I_8
+PASS: generators-independent I, U, U^2 are linearly independent of exact rank 3
+PASS: cstar-commutative span{I,U,U^2} is commutative because U U^2 = U^2 U = I_8
+PASS: not-unital-m3 C*(U) has dimension 3, not 9, while M_3 is non-commutative of dimension 9
+PASS: no-unital-hom there is no unital *-hom M_3(C) -> M_8(C) because 3 does not divide 8
+PASS: mutation-u3-ne-I predicate U^3 != I fails
+PASS: mutation-dim-cstar-9 predicate dim C*(U) == 9 fails
+PASS: mutation-3-divides-8 predicate 3 | 8 fails
+PASS: machine-status-contract the source uses the required leftover and bounded-support status fields
+PASS: type-separation-surface the note keeps U distinct from the Bloch Ad_R orbit and from ad(su(3))
+PASS: leftover-surface Lattice+Qubit supply H and the displayed cycle; Record does not lock U; leftover not adopted
+PASS: claim-type-contract the author hint uses the exact bounded-theorem enum
+PASS: canonical-nonmutation the axiom memo is not rewritten with the site-cycle or a color axiom
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the declared note-and-axiom string-literal tuple
+per_element: all eight product-basis vectors are checked against the cycle index rule
+per_site: three M_2 sites are cycled as a displayed map; no one-site algebra rewrite is claimed
+per_mode: C*(U)=span{I,U,U^2} is the only generated associative algebra tested
+per_block: the unital M_3 factor and the 3|8 homomorphism obstruction are the negative block
+lattice_wide: checked and not executed — three sites are a local tensor, not a lattice-wide color law
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

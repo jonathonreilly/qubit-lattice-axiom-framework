@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/cube_gauss_source_is_a_3_cochain_not_record_i_at_a_vertex_2026_08_13.py
+runner_sha256: 396242bd247a01074ca5e58e2d6e1dea4e2218ace386b8210e090359eec3391f
+input_fingerprint_sha256: ab6a2e4a1c0f41271edb7794699524aa276f551a88506cf8e56cb7d1f529ad9e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: axiom Record wording and the Newton source-linearity non-claim are source-bound; no observational inputs
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency against AUDIT_INPUT_PATHS
+PASS: audit-inputs declared inputs are the new note, the axiom memo, and the Newton note
+PASS: face-reconstruction six faces, each a 4-edge set, cover twelve edges
+PASS: two-count each edge lies in exactly two faces
+PASS: identity-bianchi-zero identity_link_field_rho calls bianchi_sum and returns 0 on sample fields
+PASS: theorem-1-all-fields bianchi_sum(theta) is 0 for every Z2 link field, so forced rho is 0
+PASS: identity-record-I identity_vertex_I calls record_I and counts the lock domain
+PASS: theorem-2-type-split I=1 exists and is not the forced cube source rho=0
+PASS: mutation-i-equals-rho the predicate I=1 equals Gauss rho fails
+PASS: source-record Record I is quoted as content-only additive readout
+PASS: source-newton-nonclaim Newton is cited only as a source-linearity non-claim
+PASS: display-not-adopt rho is displayed and not adopted
+PASS: theorem-5-scope two-count is not a new Bianchi theorem and 4D color is not claimed
+PASS: forbidden-tokens note stays off coupling, inverse-distance, and physical-length tokens
+PASS: claim-type-contract the author hint uses the exact bounded-theorem enum
+per_element: twelve edges and six faces are reconstructed; every Z2 link field is summed
+per_site: Record I is a vertex lock-domain count on the eight cube vertices
+per_block: the only negative block is the I=1 versus rho=0 type split
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

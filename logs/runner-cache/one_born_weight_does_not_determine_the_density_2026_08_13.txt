@@ -1,0 +1,44 @@
+===== runner cache v1 =====
+runner: scripts/one_born_weight_does_not_determine_the_density_2026_08_13.py
+runner_sha256: d719b6be39250e03e51775af5286055cca49a9ef0830cae5558a1128f5ce65c9
+input_fingerprint_sha256: ead76d67c9501def8c63d4ad895e49c590806beed12f0aa3d439308b58f824ac
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: axiom wording and the August 9 parent are source-bound; no observational or fitted inputs are used
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency
+PASS: projector-idempotent P is exactly P squared
+PASS: projector-hermitian P equals its adjoint
+PASS: rho0-density rho0 is Hermitian, trace one, and positive semidefinite
+PASS: rho1-density rho1 is Hermitian, trace one, and positive semidefinite
+PASS: psd-witness-bound the off-diagonal of rho1 saturates 1/25 of the 6/25 product bound
+PASS: born-rho0 born(rho0, P) equals 3/5
+PASS: born-rho1 born(rho1, P) equals 3/5
+PASS: same-weight the two densities share one Born weight on P
+PASS: distinct-rho equal_rho(rho0, rho1) is false because the off-diagonals differ
+PASS: diagonal-entry born(rho, P) returns the (0,0) entry for this P
+PASS: not-half-trace the witness diagonal is 3/5, not 1/2
+PASS: mutation-recovers the predicate Tr(rho P) recovers rho fails on {rho0, rho1}
+PASS: source-record the axiom memo names a lock as one possibility and I as an additive count
+PASS: source-admissibility the axiom memo names a neighbor-determined possibility distribution
+PASS: source-parent the August 9 parent still states unique density after low-arity grading
+PASS: note-witness the note displays Tr(ρ0 P)=Tr(ρ1 P)=3/5 and ρ0 ≠ ρ1
+PASS: note-reconstruction the note states that one projector weight does not recover ρ
+PASS: note-types the note quotes lock/count and refuses the distribution-to-density identification
+PASS: note-negative-scope the note keeps Born, August 9, and the axiom surface unmutated
+PASS: note-no-relaunch the note does not force r=1/2 and does not launch frame uniqueness
+PASS: note-forbidden-surface the note has no adoption phrasing and cites no unmerged pull request
+PASS: canonical-nonmutation the displayed witness matrices are absent from the canonical axiom file
+PASS: claim-type-contract the author hint uses the exact bounded-theorem enum
+PASS: parent-not-overwritten the parent uniqueness sentence remains in the August 9 file
+per_element: two exact densities and one rank-one projector are checked
+per_site: the underdetermination statement is one-site algebra on M_2(C)
+per_mode: a=3/5 is the only diagonal used; r=1/2 is not forced
+per_block: the rejected block is the predicate that one weight recovers rho
+lattice_wide: checked and not executed — no lattice-wide claim is made
+TOTAL: PASS=24 FAIL=0
+
+----- stderr -----
+

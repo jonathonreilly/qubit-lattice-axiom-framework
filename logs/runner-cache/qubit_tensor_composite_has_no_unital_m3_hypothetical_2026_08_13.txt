@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/qubit_tensor_composite_has_no_unital_m3_hypothetical_2026_08_13.py
+runner_sha256: e9be5dae0d06c4d08e4301e1f26d7515b8941d9658a2fcf5dc4a5bdf0321e484
+input_fingerprint_sha256: 12ba4f059d98ee10161c8474d38c8dd9648e596b099dfe1e669967b657d04519
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: none; dimensions reconstructed from finite matrix algebras
+package_local_integrity_reads: proposed source note and live axiom memo only
+measure_boundary: exact integer remainder; no float, no QCD import
+negative_scope: unital A3 -> T_n is refused; leftover not adopted
+PASS: theorem1-dim-m2 dim_C(A2) reconstructs as 4
+PASS: theorem1-dim-m3 dim_C(A3) reconstructs as 9
+PASS: theorem1-matrix-size d_n = 2^n for n=1,2,3,4 is (2, 4, 8, 16)
+PASS: theorem1-tensor-dimension dim_C(T_n) = d_n^2 = 4^n for n=1..4
+PASS: theorem2-remainders 3 does not divide 2^n for each n in {1,2,3,4}
+PASS: theorem2-no-unital-hom no unital *-hom A3 -> T_n for n=1,2,3,4
+PASS: theorem3-n8 three_never_divides_power_of_two(8) holds
+PASS: theorem3-positive-control unital A2 -> T_n exists for n=1..8 because 2 divides 2^n
+PASS: mutation-three-divides predicate '3 divides 2^n for some n in 1..8' fails
+PASS: mutation-dim-a3-eq-4 predicate 'dim A3 = 4' fails
+PASS: machine-status-contract note carries the required leftover status and bounded-support surface
+PASS: theorem4-c2-reading note displays that 'full means local only; composites allowed' does not make color expected
+PASS: live-qubit-nonmutation live axiom memo still states one-site M_2(C) and is not rewritten
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: claim-type-and-gate bounded theorem type and N1-N8 gate are source-visible; no QCD module load
+per_element: reconstructed dims 4 and 9 and matrix sizes 2,4,8,16
+per_site: one-site A2 is M_2; A3 is a comparison algebra only
+per_block: unital A3 -> T_n is the only negative block tested
+lattice_wide: checked and not executed — no lattice-wide color claim
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

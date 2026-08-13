@@ -1,6 +1,6 @@
 {
- "edge_count": 15600,
- "node_count": 5486,
+ "edge_count": 15603,
+ "node_count": 5487,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -13105,6 +13105,10 @@
   "noether_source_current_classification_bounded_note_2026-07-08": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "nonaffine_purity_weighted_kernel_is_not_barycenter_evaluation_bounded_theorem_note_2026-08-13": {
+   "deps_hash": "ae792f44891f",
+   "out_degree": 3
   },
   "nonlabel_grown_basin_note": {
    "deps_hash": "e3b0c44298fc",

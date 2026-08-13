@@ -1,6 +1,6 @@
 {
- "edge_count": 15600,
- "node_count": 5486,
+ "edge_count": 15601,
+ "node_count": 5487,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -17616,6 +17616,10 @@
   },
   "su3_adjoint_casimir_theorem_note_2026-05-02": {
    "deps_hash": "5e93d700a831",
+   "out_degree": 1
+  },
+  "su3_adjoint_eight_in_m8_is_not_unital_m3_bounded_theorem_note_2026-08-13": {
+   "deps_hash": "c8eee4235fc9",
    "out_degree": 1
   },
   "su3_anomaly_forced_3bar_completion_theorem_note_2026-05-02": {

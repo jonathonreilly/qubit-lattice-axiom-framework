@@ -1,0 +1,41 @@
+===== runner cache v1 =====
+runner: scripts/su3_adjoint_eight_in_m8_is_not_unital_m3_2026_08_13.py
+runner_sha256: 342b00207f68915ef786930849365b83be69d6cd183fc73448dd11e87f8b0d36
+input_fingerprint_sha256: 21cab54e7905523b60387e060c43e311b33fb28a291fb26de7f5d3ed234037ac
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.18
+status: ok
+----- stdout -----
+external_scientific_inputs: none; Gell-Mann data reconstructed over Q(sqrt(3))
+package_local_integrity_reads: proposed source note and live axiom memo only
+measure_boundary: exact Fraction / Q(sqrt(3)); no QCD import
+negative_scope: adjoint-8 is not unital M_3; leftover not adopted
+PASS: theorem1-count there are eight Gell-Mann matrices
+PASS: theorem1-traceless each Gell-Mann matrix has trace 0
+PASS: theorem1-hermitian each Gell-Mann matrix is Hermitian
+PASS: theorem1-trace-form Tr(λ_a λ_b) = 2 δ_ab, so the eight are R-independent
+PASS: theorem1-eight-not-nine dim_R su(3) = 8 is not dim_C M_3 = 9
+PASS: theorem2-i-spin [λ_1, λ_2] = 2i λ_3
+PASS: theorem2-v-spin [λ_4, λ_5] = 2i (1/2 λ_3 + √3/2 λ_8)
+PASS: theorem2-u-spin [λ_6, λ_7] = 2i (-1/2 λ_3 + √3/2 λ_8)
+PASS: theorem2-f147 f_147 = 1/2, so [λ_1, λ_4] = i λ_7
+PASS: theorem2-closure-formula [λ_a, λ_b] = 2i ∑_c f_abc λ_c on a generating set
+PASS: theorem3-shape ad(λ_a) are eight 8x8 real matrices
+PASS: theorem3-independent Frobenius pairing of ad(λ_a) is 12 δ_ad, so they are independent
+PASS: theorem3-homomorphism [ad(λ_1), ad(λ_2)] = -2 ad(λ_3) in the convention ad_{bc}=2 f_abc
+PASS: theorem3-sits-in-m8 three-site H ≅ C^8 and ad(su(3)) ⊂ M_8(R) ⊂ End(C^8)
+PASS: theorem4-three-not-divide-eight 3 does not divide 8
+PASS: theorem4-no-unital-hom no unital *-hom M_3(C) -> M_8(C)
+PASS: mutation-dim-su3-eq-9 predicate dim su(3) == 9 fails
+PASS: mutation-3-divides-8 predicate 3 divides 8 fails
+PASS: mutation-ad-dependent predicate ad(λ_a) linearly dependent fails
+PASS: machine-status-contract note carries the required leftover status and bounded-support surface
+PASS: theorem5-qubit-names-m2 live axiom memo names one-site M_2(C), not su(3)
+PASS: theorem5-refusals note refuses QCD, a color axiom, C^8=M_3, Y_0, and hypercharge
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: claim-type-and-gate bounded theorem type and N1-N8 gate are source-visible; no QCD module load
+TOTAL: PASS=24 FAIL=0
+
+----- stderr -----
+

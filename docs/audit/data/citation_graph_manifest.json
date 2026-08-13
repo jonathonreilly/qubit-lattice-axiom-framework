@@ -1,6 +1,6 @@
 {
- "edge_count": 15600,
- "node_count": 5486,
+ "edge_count": 15601,
+ "node_count": 5487,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -4661,6 +4661,10 @@
   "finite_flat_link_even_car_support_census_bounded_theorem_note_2026-07-23": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "finite_one_site_product_is_not_plaquette_holonomy_law_bounded_theorem_note_2026-08-13": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "finite_proper_cubic_admission_table_discriminator_bounded_theorem_note_2026-07-23": {
    "deps_hash": "e3b0c44298fc",

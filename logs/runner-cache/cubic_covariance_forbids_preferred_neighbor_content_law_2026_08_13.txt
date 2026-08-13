@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/cubic_covariance_forbids_preferred_neighbor_content_law_2026_08_13.py
+runner_sha256: be35860a921707e7bf9aabaa9a92fca5d0e03ba57fb921729f2616223cc7fd58
+input_fingerprint_sha256: 35f42fe056cb03186a6e5f1c62553935023bac108ecd6693168df6ec5a21d562
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+external_scientific_inputs: current axiom wording only; no observational or fitted inputs
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency
+negative_scope: only preferred-axis neighbor dependence is excluded; unique covariant selection remains open
+PASS: audit-inputs declared audit inputs are the new note and the axiom memo
+PASS: source-admissibility the axiom memo states proper-cubic covariance of the rule
+PASS: source-note-theorems the note states Theorems 1 through 5 on the hostile law
+PASS: source-note-no-half the note does not force μ = 1/2
+PASS: source-note-no-adoption the note does not adopt a law
+PASS: source-note-no-selector-ban the note does not claim that no later selector exists
+PASS: theorem-1-orthogonal R^T R equals the identity with exact Fraction entries
+PASS: theorem-1-det det R equals 1
+PASS: theorem-1-cubic-shell R permutes the six nearest-neighbor directions
+PASS: theorem-1-moves-plus-e3 R sends +e3 to a different cubic direction
+PASS: identity-mu-z identity gate calls mu_z on the +e3=A witness and on a +e3=B tuple
+PASS: identity-rotate identity gate calls rotate_x90_tuple and moves the +e3 slot off A
+PASS: values-not-half the hostile values are exact 1 and 1/3, not 1/2
+PASS: theorem-2-witness there exist n and R·n with mu_z(A|n)=1 and mu_z(A|R·n)=1/3
+PASS: mutation-covariant-predicate the predicate 'μ_z is cubic-covariant' fails on the witness
+PASS: constant-tuple-invariance constant 6-tuples are invariant, so the mutation is not a broken equality
+PASS: rotate-order-four four applications of rotate_x90_tuple return the original 6-tuple
+PASS: identity-gate-source the runner source contains live calls to mu_z(n) and rotate_x90_tuple(n)
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

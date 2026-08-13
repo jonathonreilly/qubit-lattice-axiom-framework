@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/axioms_do_not_select_which_pvm_a_luders_instrument_reads_2026_08_13.py
+runner_sha256: c06aa44251bf654d44cd0fb1039f3dcffc708ba2ad70651faf0a15182e7ad439
+input_fingerprint_sha256: 652192db6f92608a967aaa9472ba50e3004f3576977a1e0601952db6011b3010
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: current axiom wording and the August 9 parent are source-bound; no observational or fitted inputs are used
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency against the declared parents
+negative_scope: only equality of the two displayed Born weights and the claim that the axioms name P_z are rejected
+PASS: identity-born-z born(rho, Pz) equals the exact weight 3/5
+PASS: identity-born-x born(rho, Px) equals the exact weight 1/2
+PASS: binary-menu-resolutions each displayed pair sums exactly to the identity
+PASS: complement-weights the complementary Born weights are 2/5 and 1/2
+PASS: mutation-equal-weights the predicate K(rho, P_z)=K(rho, P_x) fails
+PASS: polarized-state rho is a polarized density matrix with Bloch radius 1/5, not r=1/2
+PASS: source-qubit Qubit names M_2(C) and that no possibility is privileged
+PASS: source-admissibility Admissibility names a nearest-neighbor-determined distribution
+PASS: mutation-axioms-name-pz the predicate that the axioms name P_z fails
+PASS: source-parent the August 9 parent supplies the unique trace form after a supplied grading
+PASS: note-theorems the note records the two-menu disagreement, the un-named menus, and the extra declaration
+PASS: note-hygiene-theorems the note refuses August 9 replacement, Born denial, n=z selection, r=1/2, and a PVM axiom
+PASS: forbidden-closures the note avoids we adopt, a Lüders axiom, L_phys, dim-2 Gleason, and unmerged PR citations
+PASS: identity-gates-call-born the identity gates in this runner literally call born(rho, Pz) and born(rho, Px)
+PASS: claim-type-contract the author hint uses the exact bounded-theorem enum
+PASS: machine-status-contract the source uses the controlled bounded-support and negative-route-pruning fields
+PASS: no-go-gate all N1-N8 sections and the forbidden-closure rejection are source-visible
+PASS: declared-inputs-exist AUDIT_INPUT_PATHS resolve to the new note, the August 9 parent, and the axiom memo
+per_element: two rank-one projectors and one polarized density matrix are evaluated by the exact Born kernel
+per_site: the disagreement and the axiom-text check are one-site statements; no composite carrier is asserted
+per_mode: the z and x axes are checked, together with the refusal to force r=1/2; no exhaustion of Bloch directions is claimed
+per_block: only PVM declaration versus declared-menu Born evaluation is the negative block tested
+lattice_wide: checked and not executed — cubic covariance is used only to refuse a privileged axis; no lattice-wide dynamics is claimed
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

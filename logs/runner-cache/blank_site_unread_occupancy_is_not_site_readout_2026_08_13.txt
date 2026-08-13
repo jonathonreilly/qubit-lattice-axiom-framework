@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/blank_site_unread_occupancy_is_not_site_readout_2026_08_13.py
+runner_sha256: 6f77160a968bb297c0ec7c1b5307c2cdf97cfa01e7f318f18671ce6186ba0c57
+input_fingerprint_sha256: d87f8ed22cd2eedb376b00b83262e573547ebad7d499c0f48916b764910fd6b8
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+external_scientific_inputs: current axiom wording is source-bound; no observational or fitted inputs are used
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency
+PASS: source-blank-unread live Record quotes the blank-unread sentence
+PASS: source-only-records live Record says only records are readable
+PASS: source-content-alone live Record determines readout value by record content alone
+PASS: mutation-live-memo-I-empty predicate live memo contains I(empty)=0 fails on governing Record
+PASS: source-I-excluded memo states named I and I(empty)=0 are not Record axiom content
+PASS: t1-domain-occ site readout domain of sigma_occ is {x}
+PASS: t1-domain-not-W site readout domain of sigma_occ is not W
+PASS: t1-value-x site readout of sigma_occ at x is A
+PASS: mutation-readout-defined-at-y predicate site readout of sigma_occ is defined at y fails
+PASS: t2-occupancy-at-y occupancy is defined at blank y on sigma_occ with value 0
+PASS: t2-occupancy-total occupancy is a total function on W for sigma_occ
+PASS: t2-o-not-site-readout occupancy domain W is not the site-readout domain {x}
+PASS: t3-count-occ supplied-set formation count on sigma_occ is 1
+PASS: t3-count-full supplied-set formation count on sigma_full is 2
+PASS: t3-count-is-cardinality formation count equals cardinality of occupied sites in W
+PASS: t3-full-readout-domain site readout of sigma_full is defined on all of W
+PASS: t4-no-J note does not adopt J
+PASS: t4-no-restore-I note does not restore I
+PASS: t4-no-formation-rate note does not pick a formation rate
+PASS: note-quotes-blank-unread note quotes the live blank-unread sentence
+PASS: note-status note machine status is bounded-support
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the declared note and axiom memo
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

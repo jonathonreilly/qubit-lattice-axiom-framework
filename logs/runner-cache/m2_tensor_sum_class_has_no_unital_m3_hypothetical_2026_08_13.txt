@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/m2_tensor_sum_class_has_no_unital_m3_hypothetical_2026_08_13.py
+runner_sha256: 9985bbfbfc2de57bdf81a3b1c5787bbfa86361bf315aedeecd5128698a504b08
+input_fingerprint_sha256: b946e2874d68b8a9c6e539ba28d7171878bec194200f3a18c94893ebbd51bac6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: current axiom wording is source-bound; no observational or fitted inputs are used
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency
+negative_scope: unital M_3 into the generated tensor/sum class is rejected; a declared larger carrier remains a different type
+PASS: source-qubit the current Qubit sentence names M_2(C) as the one-site algebra
+PASS: identity-dims dim_C(M_2)=4 and dim_C(M_3)=9
+PASS: theorem1-tensor-witness M_2⊗M_2 has size 4 and exponents (2,)
+PASS: theorem1-sum-witnesses M_2⊕M_2 dim=8; M_4⊕M_2 dim=20
+PASS: theorem1-power-of-two-summands concatenated summand sizes (2, 4, 2, 2, 4, 2) are powers of two
+PASS: theorem2-listed-sizes 3 divides none of listed sizes (2, 4, 2, 4, 2)
+PASS: theorem2-no-unital-m3 no unital M_3 into any of the four witnesses
+PASS: theorem3-universal-division 3 divides none of 2^k for k=1..8; remainders=(2, 1, 2, 1, 2, 1, 2, 1)
+PASS: theorem3-class-form every generated witness is a sum of M_{2^{k}} with k>=1
+PASS: mutation-three-divides-power-of-two predicate '3 divides 2^k for some k=1..8' fails
+PASS: mutation-sum-not-m3 predicate 'M_2⊕M_2 ≅ M_3' fails (8!=9)
+PASS: machine-status-contract the note carries the required C2-strong and bounded-support fields
+PASS: claim-type-contract the author hint uses the exact bounded-theorem enum
+PASS: non-adoption-surface the leftover declaration is displayed and QCD is refused
+PASS: no-go-gate all N1-N8 sections and the broad-claim rejection are source-visible
+PASS: declared-inputs AUDIT_INPUT_PATHS names the new note and the axiom memo, both present
+PASS: canonical-nonmutation the generated class notation is absent from the canonical axiom file
+per_element: four witnesses and the listed summand sizes {2,4,2,4,2}
+per_site: local algebra remains M_2; no multi-site dynamics claimed
+per_mode: k=1..8 powers of two checked against division by 3
+per_block: unital M_3 into the generated tensor/sum class only
+lattice_wide: checked and not executed
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

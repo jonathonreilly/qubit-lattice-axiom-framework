@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/born_extra_under_c1_is_menu_kernel_not_occupancy_hypothetical_2026_08_13.py
+runner_sha256: 25f3e8e8ddf822a186ec9cac24df33b301aeaf0ee91f314e9fbf223005b11d59
+input_fingerprint_sha256: e87745c40d33a13811fa649c5d980841ff8b416e8ef0ded9ac71f50d4f45ba75
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+PASS: source-axioms the current axiom memo names Lattice, Qubit, Admissibility, and Record
+PASS: source-qubit-domain the one-site possibility domain is M_2(C)
+PASS: source-record-count Record supplies additive scalar readout I with empty zero
+PASS: canonical-nonmutation the axiom memo does not contain J, C1, a Born axiom, Gleason, L_phys, or a pairing
+PASS: menu-resolutions M_z and M_x are exact binary resolutions of I
+PASS: rho-normalization rho is a diagonal state with exact masses 3/5 and 2/5
+PASS: identity-o-J10A o_from_J on J10A is the occupancy (1, 0)
+PASS: identity-o-J01A o_from_J on J01A is the occupancy (0, 1)
+PASS: identity-born-Pz born(rho,Pz) equals the exact kernel 3/5
+PASS: identity-born-Px born(rho,Px) equals the exact kernel 1/2
+PASS: identity-I-J10A I_J on J10A is the unit-lock Record count 1
+PASS: identity-I-J01A I_J on J01A is the unit-lock Record count 1
+PASS: mutation-occupancy-depends-on-J predicate 'o is independent of J' fails
+PASS: mutation-menus-disagree predicate 'K(rho,P_z)=K(rho,P_x)' fails
+PASS: mutation-count-is-not-kernel predicate 'I_J equals K(rho,P_z)' fails
+PASS: machine-status-contract the note uses the required bounded-support and C1 follow-on hypothetical fields
+PASS: theorem-surface the five theorems and the (M,K) display are source-visible
+PASS: no-adoption C1 and a Born axiom remain unadopted on this surface
+PASS: audit-inputs declared audit inputs are the new note and the axiom memo only
+per_element: two unit-lock histories, two menus, two kernel values
+per_site: one M_2(C) law and a two-site window
+per_mode: checked and not executed — no spectral claim
+per_block: Born-cluster extras under displayed C1 only
+lattice_wide: checked and not executed — no lattice-wide dynamics
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

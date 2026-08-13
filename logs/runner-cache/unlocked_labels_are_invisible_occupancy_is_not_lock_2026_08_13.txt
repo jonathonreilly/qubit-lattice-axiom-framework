@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/unlocked_labels_are_invisible_occupancy_is_not_lock_2026_08_13.py
+runner_sha256: 91b06eeb0540ef87c54ca96a484532065b8782feeb51f6487f8b3568b755c832
+input_fingerprint_sha256: ced0e22676aaf1a7c4fc6be0b757d1ca55e060cac04eb3729ee46862b3c6afd2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+external_scientific_inputs: current Record content-only readout, I(empty)=0, and the state-as-records sentence are source-bound; no observational or fitted inputs are used
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency; no runner cache is written
+negative_scope: unlocked labels are invisible and are not states; occupancy-without-lock is extra; no occupancy compiler is excluded
+PASS: audit-input-paths declared audit inputs exist and match the note and the axiom memo
+PASS: source-only-records-readable the exact current readable-records sentence is present in the axiom memo
+PASS: source-record-content-only the exact current content-only readout sentence is present in the axiom memo
+PASS: source-state-configuration the exact current state-as-records sentence is present in the axiom memo
+PASS: source-i-empty the exact current Record additivity sentence with I(empty)=0 is present
+PASS: empty-readout I(empty)=0
+PASS: theorem-1-lock-counts I(L_1)=1, I(L_2)=2, I(empty)=0 by unit-strength domain count
+PASS: theorem-1-ghost-invisible I(ghost)=I(L_1)=1; the unlocked B does not change I
+PASS: theorem-1-additivity I(L_2)=I(L_1)+I(y↦B)=1+1=2 on disjoint one-site records
+PASS: theorem-2-states-are-lock-patterns is_state is true of L_1 and L_2 and false of the ghost
+PASS: theorem-3-content-only readable content of the ghost equals L_1; no readout of unlocked B exists
+PASS: theorem-4-formation-free the same content law with support {A,B} is compatible with L_1 and L_2
+PASS: theorem-4-unlocking-not-third-option forcing a lock at every occupied site turns the ghost into L_2
+PASS: theorem-5-not-selected occupancy-without-lock remains a second object; I still sees only locks
+PASS: mutation-count-unlocked-fails a predicate that I counts unlocked labels fails; ghost still I=1
+PASS: mutation-replace-L1-by-L2 replacing L_1 by L_2 changes I from 1 to 2
+PASS: mutation-ghost-is-state-fails a predicate that the ghost is a state fails Theorem 2
+PASS: note-contract machine-status fields, required phrases, and forbidden-word hygiene hold
+PASS: canonical-nonmutation unlocked labels and occupancy-without-lock are absent from the axiom memo
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_element: lock patterns L_1, L_2, empty, and the ghost occupancy are recomputed as maps on {x,y}
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_site: each star site is empty, locked, or carrying an unlocked label; I counts only locks
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_mode: menu labels {A,B} are content; unlocked B is not a value of I
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_block: only the two-site star and unit-strength readout are executed; occupancy-without-lock stays extra
+PASS: n5-length each N5 resolution line is at least 40 characters
+lattice_wide: checked and not executed — no lattice-wide occupancy compiler or formation law is claimed
+TOTAL: PASS=24 FAIL=0
+
+----- stderr -----
+

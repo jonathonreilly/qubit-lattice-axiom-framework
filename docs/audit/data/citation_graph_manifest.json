@@ -1,6 +1,6 @@
 {
- "edge_count": 15600,
- "node_count": 5486,
+ "edge_count": 15601,
+ "node_count": 5487,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -15769,6 +15769,10 @@
   "record_formation_to_kraus_isometry_bridge_2026-06-06": {
    "deps_hash": "3b37788c6bc3",
    "out_degree": 3
+  },
+  "record_frequency_is_history_not_axiom_rhalf_bounded_theorem_note_2026-08-13": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "record_function_finite_sector_algebra_2026-06-05": {
    "deps_hash": "9efb4237fec5",

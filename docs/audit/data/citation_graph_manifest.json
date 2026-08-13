@@ -1,6 +1,6 @@
 {
- "edge_count": 15600,
- "node_count": 5486,
+ "edge_count": 15604,
+ "node_count": 5487,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -14005,6 +14005,10 @@
   "plaquette_alpha_s_chain_audit_map_synthesis_meta_note_2026-05-10": {
    "deps_hash": "ff012eac938a",
    "out_degree": 15
+  },
+  "plaquette_b1_convention_independent_of_one_plaquette_mean_bounded_theorem_note_2026-08-13": {
+   "deps_hash": "335b789761d7",
+   "out_degree": 4
   },
   "plaquette_beta6_perturbative_derivation_bounded_obstruction_note_2026-05-27": {
    "deps_hash": "8921c2773a25",

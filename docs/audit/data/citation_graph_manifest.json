@@ -1,6 +1,6 @@
 {
- "edge_count": 15600,
- "node_count": 5486,
+ "edge_count": 15602,
+ "node_count": 5487,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -5021,6 +5021,10 @@
   "fm_transfer_note": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "formation_energy_dictionary_not_forced_by_record_additivity_bounded_theorem_note_2026-08-13": {
+   "deps_hash": "de66a1cebd1e",
+   "out_degree": 2
   },
   "formation_rate_law_class_reduction_bounded_note_2026-07-08": {
    "deps_hash": "e3b0c44298fc",

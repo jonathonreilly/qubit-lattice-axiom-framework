@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/record_lock_is_a_sample_born_number_is_a_law_2026_08_13.py
+runner_sha256: 6ffbc9b3e3fabe5f74153cf2bc6de607e74f12cae6b9439bec8506774d08ae26
+input_fingerprint_sha256: a9338520c3bc55dd80c3d65dcb37ec8fa523d7b0c86b3e3b49b3218d0101c3cc
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: current axiom wording and the realized-state primitive are source-bound; no observational or fitted inputs are used
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency
+negative_scope: only the identification of one Record lock with a Born number is rejected; a later compiler remains live
+PASS: source-record-lock the axiom locks exactly one admissible local possibility
+PASS: source-content-only the axiom makes readout content-only
+PASS: source-record-I the axiom supplies additive I with I(empty)=0
+PASS: source-odds-versus-pick the axiom reading note separates law-level odds from the realized pick
+PASS: source-primitive-pointwise the realized-state primitive licenses only pointwise evaluation
+PASS: laws-normalized both odds constructions are probability laws on the menu
+PASS: laws-full-support both laws have full support, so A is admissible for both
+PASS: theorem1-same-pair the pair (content, I) of the lock is independent of the law
+PASS: theorem2-born-numbers-differ the law-level numbers at the locked content differ
+PASS: theorem2-not-a-function-of-h a single pair (content, I) cannot be a function to both Born numbers
+PASS: theorem3-born-is-not-readout quoting mu2 at the lock is not the Record readout of h
+PASS: mutation-lock-determines-mu the predicate that lock A determines mu(A) fails
+PASS: source-note-mismatch the note displays the two-law mismatch and refuses adoption
+PASS: claim-type-contract the author hint uses the exact bounded-theorem enum
+PASS: machine-status-contract the source uses the controlled bounded-support and negative-route-pruning fields
+PASS: canonical-nonmutation the two-law witness is absent from the canonical axiom file
+PASS: no-go-gate all N1-N8 sections and the broad-claim rejection are source-visible
+per_element: both menu entries and both law values at the locked content are checked
+per_site: one site, one unit lock of A; no composite carrier is asserted
+per_mode: checked and not executed — no spectral mode is used
+per_block: only the lock-versus-law identification is rejected
+lattice_wide: checked and not executed — no lattice-wide frequency claim is made
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

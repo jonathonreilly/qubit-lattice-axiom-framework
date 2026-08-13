@@ -1,0 +1,49 @@
+===== runner cache v1 =====
+runner: scripts/disjoint_neighbor_support_one_site_laws_factorize_2026_08_13.py
+runner_sha256: 9a292f37185987862191e06ada0b2bad737bfb291dd26e32a8b5527d94415e3d
+input_fingerprint_sha256: 64863b08bf6ae01af3c08ad1cfccc8a089cda82882cd38cfc11e7449d22d5461
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.07
+status: ok
+----- stdout -----
+external_scientific_inputs: current Lattice and Admissibility wording are source-bound; no observational or fitted inputs
+integrity_reads: this runner, its paired note, and the axiom memo; no other repository scientific inputs
+construction: spacing-3 disjoint NN 6-tuples; one-site product versus the perfectly correlated fair joint
+negative_scope: a correlated joint is not a pair of one-site laws on those tuples; not a no-go against all distant correlation
+PASS: audit-input-paths declared audit inputs exist and match the note and axiom memo
+PASS: source-lattice the current Lattice nearest-neighbor sentence is pinned in the axiom memo and the note
+PASS: source-admissibility the current distribution sentence is pinned in the axiom memo and the note
+PASS: neighbors-type neighbors(x) returns a frozenset of integer 3-tuples of size 6
+PASS: witness-N3e1 N(3e1) matches the listing and excludes the origin
+PASS: witness-N6e1 N(6e1) matches the listing and excludes the origin
+PASS: distances d(0,3e1)=3, d(0,6e1)=6, d(3e1,6e1)=3
+PASS: theorem-1-disjoint-supports N(3e1) ∩ N(6e1) is empty, and 0 lies in neither set
+PASS: theorem-1-spacing2-contrast spacing 2 is not disjoint-support: N(0) ∩ N(2e1) = {e1}
+table: product_fair 00=1/4 01=1/4 10=1/4 11=1/4
+table: correlated 00=1/2 01=0 10=0 11=1/2
+PASS: theorem-2-product-factorization a pair of one-site laws is the product of its margins and obeys the independence identity
+PASS: theorem-2-disjoint-conditions the two executed 6-tuples live on disjoint neighbor supports
+PASS: theorem-3-correlated-not-product P_corr(00)P_corr(11)=1/4 and P_corr(01)P_corr(10)=0, so is_product fails
+PASS: theorem-3-fair-margins-do-not-imply-product the correlated witness has fair margins yet is not the fair product
+PASS: theorem-4-not-supplied-by-one-site-pair every executed one-site pair is a product; the correlated table is not
+PASS: theorem-4-residuals-not-declared path records and L_phys are recorded as extra residuals, not declared
+PASS: theorem-5-not-global-nogo the note refuses a global no-go and does not declare L_phys
+PASS: mutation-always-disjoint-fails an always-disjoint predicate is true on (0,2e1) while neighbors() is not
+PASS: mutation-product-fails-not-product replacing the correlated witness by the fair product fails the not-a-product assertion
+PASS: mutation-moore-fails-distance2 replacing neighbors by the 26-site Moore neighborhood fails blanket distance-2 origin exclusion
+PASS: note-contract machine-status fields, required phrases, and forbidden-word hygiene hold
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_element: named sites 0, 2e1, 3e1, 6e1 and the four 2x2 atoms are recomputed by integer listing
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_site: one-site Bernoulli laws at 3e1 and 6e1 are site-local maps, not a composite arena
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_mode: nearest-neighbor 6-tuples and the independence identity are checked; no spectral mode is claimed
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_block: only disjointness, product factorization, and the correlated non-product are executed
+PASS: n5-length each N5 resolution line is at least 40 characters
+lattice_wide: checked and not executed — no lattice-wide no-go against distant correlation is claimed
+TOTAL: PASS=25 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/smallest_complete_born_extra_is_occupancy_menu_kernel_triple_2026_08_13.py
+runner_sha256: ac92f0a3c63a6a4dfb7e0728002e63cc128b38ae2cf99c8986ef33a3b9f34af8
+input_fingerprint_sha256: bb6fbd1686e635b9cfcc50a27ff038410dd4e06db2ab5b7353531729925b981d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+external_scientific_inputs: current axiom wording and the August 9 parent are source-bound; no observational or fitted inputs are used
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency; no cache envelope is written
+PASS: source-admissibility the exact current distribution sentence is present
+PASS: source-record-additivity the current axiom note names additive scalar readout with empty value zero
+PASS: source-parent the parent theorem supplies the unique trace form only after menu-independent low-arity grading
+PASS: menu-resolutions the z and x projector pairs each sum exactly to the identity
+PASS: identity-born-z born(rho,Pz) computes the exact kernel value 3/5
+PASS: identity-born-x born(rho,Px) computes the exact kernel value 1/2
+PASS: identity-record record_I of each unit occupancy is 1
+PASS: theorem-1-occupancy o10 and o01 share I=1 and mu but name different formed sites
+PASS: theorem-2-menu without a menu the two kernel values are distinct
+PASS: theorem-3-kernel record count is not the kernel
+PASS: mutation-mu-I the predicate (mu,I) determines the Born number and site fails
+PASS: mutation-kernel-equality the predicate K(rho,Pz)=K(rho,Px) fails
+PASS: identity-call-surface identity gates call born(rho,Pz), born(rho,Px), and record_I
+PASS: note-theorems the source records Theorems 1-5 in the declared wording
+PASS: hygiene-forbidden-phrases the source does not adopt an axiom, name L_phys, or treat Gleason as a dependency
+PASS: claim-type-contract the author hint uses the exact bounded-theorem enum
+PASS: machine-status-contract the source uses the controlled bounded-support and negative-route-pruning trace fields
+PASS: no-go-gate all N1-N8 sections and the broad-claim rejection are source-visible
+PASS: parent-unresolved the source treats the August 9 parent as unaudited display, not a frame-function import
+per_element: two occupancies, two binary projectors, and two exact kernel values are checked
+per_site: the occupancy split is a two-site window statement; no composite carrier is asserted
+per_mode: checked and not executed — no spectral mode is claimed
+per_block: the drop-one extra block is the only negative block tested
+lattice_wide: checked and not executed — no lattice-wide dynamics or Born impossibility is claimed
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,51 @@
+===== runner cache v1 =====
+runner: scripts/product_law_does_not_force_formation_at_auxiliary_sites_2026_08_13.py
+runner_sha256: 7c2bcec3f61627311183c679a492fd3e82f06b94390cf0cb72f49d9cb4b6838a
+input_fingerprint_sha256: 1cfe70c2b1438ea8caea1d0bedbfd7f9e9708d61ac0e33c0dc10a91ba71b8df4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: current Lattice, Admissibility, and Record wording are source-bound; no observational or fitted inputs
+integrity_reads: this runner, its paired note, and the axiom memo; no other repository scientific inputs
+construction: spacing-3 disjoint NN 6-tuples; product law as a function of those tuples; H_form versus H_empty
+negative_scope: product law does not select occupancy at 3e1 and 6e1; not a no-go against all compilers
+PASS: audit-input-paths declared audit inputs exist and match the note and axiom memo
+PASS: source-lattice the current Lattice nearest-neighbor sentence is pinned in the axiom memo and the note
+PASS: source-admissibility the current distribution sentence is pinned in the axiom memo and the note
+PASS: source-formation-reading-note the Admissibility reading note on formation site/rate is pinned
+PASS: source-record-when-present the Record lock sentence When present is pinned in the axiom memo and the note
+PASS: neighbors-type neighbors(x) returns a frozenset of integer 3-tuples of size 6
+PASS: witness-N3e1 N(3e1) matches the listing, excludes the origin, and excludes itself
+PASS: witness-N6e1 N(6e1) matches the listing, excludes the origin, and excludes itself
+PASS: distances d(0,3e1)=3, d(0,6e1)=6, d(3e1,6e1)=3
+PASS: theorem-1-disjoint-supports N(3e1) ∩ N(6e1) is empty; neither set contains its own site
+PASS: theorem-1-spacing2-contrast spacing 2 is not disjoint-support: N(0) ∩ N(2e1) = {e1}
+table: product_half 00=1/4 01=1/4 10=1/4 11=1/4
+table: product_third 00=1/9 01=2/9 10=2/9 11=4/9
+PASS: theorem-2-same-function-of-6-tuples the product is the same function of the two 6-tuples at either occupancy tag
+PASS: theorem-2-content-not-occurrence occupancy of x or y is not a coordinate of either neighbor 6-tuple
+PASS: theorem-3-histories-share-law H_form and H_empty share the product law and differ in occupancy
+PASS: theorem-3-axiom-compatibility both histories are typed as compatible with conditional Admissibility and when-present Record
+PASS: theorem-4-compiler-requires-h-form a bit compiler that needs records at those sites requires H_form
+PASS: theorem-4-axioms-do-not-select the quoted axiom sentences do not select H_form over H_empty
+PASS: theorem-5-scoped-negatives the note refuses a no-compiler claim and does not edit an axiom sentence
+PASS: mutation-product-implies-formed-fails-on-h-empty the predicate product-law-implies-both-formed fails on H_empty and holds on H_form
+PASS: mutation-always-disjoint-fails an always-disjoint predicate is true on (0,2e1) while neighbors() is not
+PASS: mutation-moore-fails-distance2 replacing neighbors by the 26-site Moore neighborhood fails blanket distance-2 origin exclusion
+PASS: note-contract machine-status fields, required phrases, and forbidden-word hygiene hold
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_element: named sites 0, 2e1, 3e1, 6e1 and the four product atoms are recomputed by integer listing
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_site: one-site laws and occupancy marks at 3e1 and 6e1 are site-local, not a composite arena
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_mode: nearest-neighbor 6-tuples and occupancy tags are checked; no spectral mode is claimed
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_block: only disjointness, occupancy-independence of the product, and H_form versus H_empty are executed
+PASS: n5-length each N5 resolution line is at least 40 characters
+lattice_wide: checked and not executed — no lattice-wide no-go against compilers or formation rules is claimed
+TOTAL: PASS=27 FAIL=0
+
+----- stderr -----
+

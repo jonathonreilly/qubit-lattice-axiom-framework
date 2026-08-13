@@ -1,0 +1,59 @@
+===== runner cache v1 =====
+runner: scripts/record_additivity_does_not_select_fair_binary_margin_2026_08_13.py
+runner_sha256: 4829e8ce2465b446a6d3e194c0f1519bbc41d4e9dd0c531f1649f4287825a250
+input_fingerprint_sha256: 60fa8b9842bd74d195a45b2fb9c338e71bbd34e6e0605e3148b1fa904b219261
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: current Record additivity, content-only readout, and the Admissibility distribution sentence are source-bound; no observational or fitted inputs are used
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency; no runner cache is written
+negative_scope: only realized additive I as a fair-margin readout is rejected; a later selector for p=1/2 remains a live law-level escape; bits are not claimed unable to be fair
+PASS: audit-input-paths declared audit inputs exist and match the note and axiom memo
+PASS: source-record-additivity the exact current Record additivity sentence is present in the axiom memo
+PASS: source-record-content-only the exact current content-only sentence is present in the axiom memo
+PASS: source-admissibility-distribution the exact current Admissibility distribution sentence is present in the axiom memo
+PASS: source-reading-note-formation the interpretive reading note withholds formation site and rate
+PASS: empty-readout I(empty)=0
+PASS: theorem-1-one-bit-values I of one formed bit is in {0,1}
+PASS: theorem-1-not-half I of one formed bit cannot equal p=1/2 or p=1/3
+PASS: theorem-1-fairness-not-readout fairness p=1/2 is not a Record readout of one formed bit
+PASS: theorem-2-count-set for n=3 formed bits, I is in {0,1,2,3} regardless of p
+PASS: theorem-2-never-open-margins on n=3, I is never 1/2 and never 1/3
+PASS: I-is-integer-valued I is integer-valued on every executed 0/1 content tuple
+PASS: disjoint-additivity I of three bits equals the sum of the one-bit readouts
+PASS: theorem-3-open-support supp_I(p=1/3) = supp_I(p=1/2) = {0,1,2,3}
+PASS: theorem-3-degenerate-support p=0 has I=0 a.s. and p=1 has I=n a.s.
+PASS: theorem-3-exact-masses open-margin masses are positive and sum to 1; they are not Record readouts
+PASS: theorem-3-all-open-margins every p in (0,1) on the declared list has full I-support
+PASS: theorem-4-expectation-extra E[I]=3/2 at p=1/2 is not a realized I
+PASS: theorem-4-ratio-set I/3 is in {0,1/3,2/3,1} and 1/2 is not in that set
+PASS: theorem-4-expectation-not-readout E[I]=n p is a law-level number, not a Record readout
+PASS: theorem-5-no-record-function-is-half no Record function of realized I equals 1/2 on every n=3 realization
+PASS: theorem-5-admissibility-does-not-select possible I values do not select p=1/2 among binary laws
+PASS: note-preserves-empty the note records I(empty)=0
+PASS: note-preserves-additivity-sentence the note quotes the current Record additivity sentence
+PASS: note-preserves-content-only-sentence the note quotes the current content-only sentence
+PASS: note-preserves-admissibility-sentence the note quotes the current Admissibility distribution sentence
+PASS: note-links-axiom-memo the note links the axiom memo
+PASS: claim-type-contract the author hint uses the exact bounded-theorem enum
+PASS: machine-status-contract the source uses the controlled bounded-support fields
+PASS: note-authors-no-audit-verdict the note authors no audit verdict
+PASS: note-not-a-record-readout the note states that fairness is not a Record readout
+PASS: note-half-and-third the note records the discriminating 1/2 and 1/3 witnesses
+PASS: note-discriminating-witnesses the note exhibits I(0)=0, I(1)=1, shared open support, and E[I]=3/2
+PASS: note-does-not-forbid-fairness the note states the scoped gap and does not claim bits cannot be fair
+PASS: note-n-gate-present the note records V1-V5 and the N1-N8 scoped gate
+PASS: forbidden-rhetoric-absent the note avoids axiom-adoption, promotion, executor-name, and campaign tags
+PASS: canonical-nonmutation the fair-margin selector is absent from the canonical axiom file
+per_element: each 0/1 content atom is evaluated under I_of_bits; one-bit I is 0 or 1 and is never 1/2
+per_site: statements are one formed binary record or a finite disjoint collection of such records; no composite carrier is asserted
+per_mode: no spectral-mode exhaustion is claimed; the comparison object is a declared one-site Bernoulli parameter
+per_block: only realized additive I versus the law-level margin p=1/2 is tested on the executed n=3 family
+lattice_wide: checked and not executed — no lattice-wide fairness selector or formation process is claimed
+PASS: n5-line-length each N5 resolution line is at least 40 characters
+TOTAL: PASS=38 FAIL=0
+
+----- stderr -----
+

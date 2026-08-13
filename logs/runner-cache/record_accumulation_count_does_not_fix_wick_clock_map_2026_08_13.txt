@@ -1,0 +1,57 @@
+===== runner cache v1 =====
+runner: scripts/record_accumulation_count_does_not_fix_wick_clock_map_2026_08_13.py
+runner_sha256: d31d94282051b1bec1ac35909169b504974e64b6a2e1e481cd5d1ba4549dc19c
+input_fingerprint_sha256: f1780b7c2c15c7fa6c09d8a7e11eb15abdf3387a956f83b4c5f8c1893b3b96d9
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.26
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/RECORD_ACCUMULATION_COUNT_DOES_NOT_FIX_WICK_CLOCK_MAP_BOUNDED_THEOREM_NOTE_2026-08-13.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md
+cache_write: false
+external_scientific_inputs: axiom memo and kinetic-isotropy primitive; no observational or fitted inputs
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency; no runner cache is written
+negative_scope: Record counts and Euclidean OS0 as selectors of a are rejected; a declared continuation remains a live formal escape
+PASS: audit-input-paths declared audit inputs exist and match the note, axiom memo, and primitive
+PASS: source-primitive-ct-cs the primitive supplies the Euclidean equality c_t = c_s
+PASS: source-emergent-time the primitive states that time remains emergent and derived
+PASS: source-axiom-I-empty the axiom memo states I(empty)=0
+PASS: source-axiom-records-form the axiom memo states Records form
+PASS: source-axiom-content-only the axiom memo states readout is determined by record content alone
+PASS: source-axiom-no-time-metric Admissibility is recorded as not defining a time metric
+PASS: window-card the finite window has n=4 sites
+PASS: theorem-1-chain empty subset {0} subset {0,e1} is monotone with N=0,1,2
+PASS: theorem-1-a-blind the same chain has counts 0,1,2 for every a in {1/2,1,2}
+PASS: theorem-1-N-depends-on-a-fails predicate N_depends_on_a is false on every displayed configuration
+PASS: theorem-2-Q-E-independent Q_E = (k_4^2+k^2)/4 contains no continuation parameter a
+PASS: theorem-2-os0 Euclidean coefficients of k_4^2 and kx^2 are both 1/4, so c_t = c_s
+PASS: theorem-2-continuation substituting k_4 = i a ω into Q_E yields (-a^2 ω^2 + k^2)/4
+PASS: theorem-2-omega-coeff omega_coeff(1/2,1,2) = -1/16, -1/4, -1 equals the derived [ω^2] Q_a
+PASS: theorem-2-distinct the three Lorentzian ω^2 coefficients are pairwise distinct
+PASS: theorem-2-shared-euclidean all three continuations recover the same Q_E; sample (k4,kx)=(2,3) is 13/4
+PASS: mutation-constant-omega-fails replacing omega_coeff by a constant collapses -1/16 vs -1/4
+PASS: theorem-4-I-equals-N unit I(R)=N(R) gives 0,1,2 and I(empty)=0
+PASS: theorem-4-I-a-blind unit I is the same triple for every displayed a
+PASS: theorem-3-sources-do-not-name-a neither source writes the continuation k_4 = i a ω or omega_coeff
+PASS: mutation-primitive-forces-a-1-fails the primitive is c_t = c_s only and does not force a=1
+PASS: identity-gates-present identity gates N(R) and omega_coeff(a)=-a^2/4 are the called maps
+PASS: note-preserves-ct-cs-and-I-empty the note records c_t = c_s and I(empty)=0
+PASS: note-quotes-emergent-time the note quotes that time remains emergent and derived
+PASS: note-links-parents the note links the axiom memo and the kinetic-isotropy primitive
+PASS: claim-type-contract the author hint uses the exact bounded-theorem enum
+PASS: machine-status-contract the source uses the controlled bounded-support fields
+PASS: note-witnesses the note exhibits N=0,1,2 and omega_coeff -1/16, -1/4, -1
+PASS: note-scoped-residual the note does not install a and does not claim Lorentzian closure
+PASS: forbidden-rhetoric-absent the note avoids axiom-adoption, promotion, and executor-name rhetoric
+per_element: each a in {1/2, 1, 2} is tested against the same N-chain and the same Q_E
+per_site: locked-site cardinality on a four-site window; no composite carrier is asserted
+per_mode: quadratic TT form only; no spectral-mode exhaustion is claimed
+per_block: Record count and Euclidean OS0 versus the linear clock map a
+lattice_wide: checked and not executed — no lattice-wide Lorentzian closure is claimed
+TOTAL: PASS=31 FAIL=0
+
+----- stderr -----
+

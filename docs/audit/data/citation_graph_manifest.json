@@ -1,6 +1,6 @@
 {
- "edge_count": 15600,
- "node_count": 5486,
+ "edge_count": 15603,
+ "node_count": 5487,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -15625,6 +15625,10 @@
   "realized_state_primitive": {
    "deps_hash": "c8eee4235fc9",
    "out_degree": 1
+  },
+  "realized_state_primitive_forbids_ensemble_plaquette_as_record_i_bounded_theorem_note_2026-08-13": {
+   "deps_hash": "9f3fbc5611e3",
+   "out_degree": 3
   },
   "reconstructed_h_quasilocal_from_analytic_dispersion_microcausality_bridge_narrow_theorem_note_2026-06-06": {
    "deps_hash": "8e0303c6f18c",

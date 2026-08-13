@@ -4,7 +4,7 @@ runner_sha256: 2bc255809d712aaebd550f3fc675d5e4e7a4a3d32da7fe2378e3b78954178e1b
 input_fingerprint_sha256: 9887acf447d2f289652a995f682a4f1189399408ed3efe584d29c314948152da
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 external_scientific_inputs: current axiom wording is source-bound; no observational or fitted inputs are used

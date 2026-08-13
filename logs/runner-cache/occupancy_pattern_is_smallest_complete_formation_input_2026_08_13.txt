@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/occupancy_pattern_is_smallest_complete_formation_input_2026_08_13.py
+runner_sha256: 60913c5804c3336d68616bc6edc9f6e3777a3022922d42e98a162e255e217cde
+input_fingerprint_sha256: bb9176a8905964f7054732d05f835e927feb3116529cff2481c01456cfceb669
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: current Admissibility and Record wording are source-bound; no observational or fitted inputs
+integrity_reads: this runner, its paired note, and the axiom memo; no other repository scientific inputs
+construction: four occupancy maps on W={x,y}; shared μ; unit-lock count I; capacity-1 token slice
+negative_scope: (μ, I) does not recover o; a token misses o11; o is displayed and not adopted
+PASS: audit-input-paths declared audit inputs exist and match the note and axiom memo
+PASS: source-admissibility the current distribution sentence is pinned in the axiom memo and the note
+PASS: source-formation-reading-note the Admissibility reading note on formation site/rate is pinned
+PASS: source-record Records form, the lock sentence, uniqueness, and I(empty)=0 are pinned
+table: mu A=1/3 B=2/3 sum=1
+table: occupancy o00=00/I=0 o10=10/I=1 o01=01/I=1 o11=11/I=2
+PASS: objects-four-maps the four occupancy maps are pairwise distinct {0,1}-valued functions on W
+PASS: objects-mu the same full-support law μ has masses 1/3 and 2/3 at both sites
+PASS: objects-unit-locks I is additive, I(empty)=0, and I≤2 on this window
+PASS: theorem-1-mu-I-do-not-recover-o o10 and o01 share μ and I=1 and are different patterns
+PASS: theorem-2-token-misses-o11 the three tokens encode o10, o01, o00 and cannot represent o11
+PASS: theorem-3-o-is-complete o represents all four histories and is not a function of μ or a value of I
+PASS: theorem-4-smallest-complete every complete extra object is at least as fine as o; I and T are coarser
+PASS: theorem-5-display-not-adopt the note displays o, refuses axiom adoption, and does not treat rate as a separate target
+PASS: mutation-mu-I-recovers-o-fails the predicate (μ, I) recovers o fails on o10 versus o01 and holds on identical rows
+PASS: mutation-token-represents-every-history-fails the predicate token-represents-every-history fails on o11 and holds on the three token rows
+PASS: enumeration-matches-table cartesian {0,1}^2 reproduces the four named occupancy rows
+PASS: note-contract machine-status fields, required phrases, and forbidden-word hygiene hold
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_element: the four occupancy rows and three token values are enumerated
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_site: occupancy bits and the same μ are site-local at x and at y
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_mode: unit-lock count is checked; no spectral mode is claimed
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_block: only the declared two-site window and the token slice are executed
+PASS: n5-length each N5 resolution line is at least 40 characters
+lattice_wide: checked and not executed — no lattice-wide selection of o is claimed
+TOTAL: PASS=21 FAIL=0
+
+----- stderr -----
+

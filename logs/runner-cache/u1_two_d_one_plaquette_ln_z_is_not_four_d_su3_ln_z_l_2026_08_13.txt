@@ -1,0 +1,46 @@
+===== runner cache v1 =====
+runner: scripts/u1_two_d_one_plaquette_ln_z_is_not_four_d_su3_ln_z_l_2026_08_13.py
+runner_sha256: fbf84625bae7761fe42905aab961ee77237d3d6cc84d3110b42d811a49575ad5
+input_fingerprint_sha256: ce279c249f511f82a307eef9b02af65afc6b87a24b659d5573fde15cf40c034e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+external_scientific_inputs: June 10 three-point ln Z_L interface and torus counts are source-bound; I_0 series uses t_k only
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency; no runner cache is written
+negative_scope: I_0 is Z of 2D U(1) one-plaquette only; not 4D SU(3) ln Z_L; B1 is not retired
+PASS: audit-input-paths declared audit inputs exist and match the note, June 10 note, and axiom memo
+PASS: source-june10-three-point June 10 names certified ln Z_L enclosures at three couplings
+PASS: source-june10-counts June 10 records N_p=6L^4 and wrapping 6L^2(2L-1)
+PASS: theorem-1-terms t_0=1, t_1=β^2/4, t_2=β^4/64 match Haar moments
+PASS: theorem-1-s2-one S_2(1)=1+1/4+1/64=81/64 via i0_partial(1, 2)
+PASS: theorem-2-q-lt-one N=8 gives q<1 at β=1,2,3
+PASS: theorem-2-enclosures S_8 <= I_0 <= S_8+R_8 at β=1,2,3 with displayed rationals
+PASS: theorem-2-note-rationals the paired note displays the N=8 enclosure rationals
+PASS: theorem-2-optional-567 the same remainder law has q<1 at β=5,6,7 and stays U(1)
+PASS: theorem-3-volume N_p(L=2)=96≠1 and N_ell(L=2)=64 via plaquette_count_4d
+PASS: theorem-3-wrapping-unused June 10 wrap at L=2 is 72 and is not an input of i0_partial
+PASS: identity-i0-is-not-four-d predicate that I_0 is 4D SU(3) ln Z_L fails because N_p=96≠1
+PASS: theorem-4-disk-square Z_disk=I_0^2 obeys S^2 <= I_0^2 <= (S+R)^2 at β=1
+PASS: theorem-4-disk-not-four-d the m=2 disk product is still not 4D SU(3) Z_L
+PASS: mutation-count-forced-one replacing plaquette_count_4d(2) by 1 fails 6*16=96
+PASS: mutation-injected-numeral feeding 5934/10000 into I_0 as a coefficient is rejected; coefficients are t_k only
+PASS: mutation-q-not-less-than-one the remainder gate refuses q>=1 (β=20, N=8)
+PASS: theorem-5-note-negatives the note records the scoped negatives of Theorem 5
+PASS: note-contract machine-status fields, required phrases, and forbidden-word hygiene hold
+PASS: canonical-nonmutation the I_0 table is absent from the canonical axiom file
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_element: remainder-controlled I_0 terms t_k and the three couplings beta in {1,2,3} are the only evaluated objects
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_site: U(1) one-plaquette and the L=2 4D torus counts 96 and 72; no 4D site configuration is sampled
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_mode: the I_0 power series is checked; no 4D transfer-matrix mode or mass-gap rate is claimed
+PASS: n5-length each N5 resolution line is at least 40 characters
+per_block: only the U(1) Haar identity, the three-point I_0 table, the 96-versus-1 type split, and the disk product are executed
+PASS: n5-length each N5 resolution line is at least 40 characters
+lattice_wide: checked and not executed — no 4D SU(3) ln Z_L enclosure and no B1 retirement is claimed
+TOTAL: PASS=25 FAIL=0
+
+----- stderr -----
+

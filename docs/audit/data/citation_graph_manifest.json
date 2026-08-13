@@ -1,6 +1,6 @@
 {
- "edge_count": 15600,
- "node_count": 5486,
+ "edge_count": 15605,
+ "node_count": 5487,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -10261,6 +10261,10 @@
   "inverse_problem_note": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "involution_rank_split_selects_traceless_ratio_axioms_do_not_bounded_theorem_note_2026-08-13": {
+   "deps_hash": "f842b211d420",
+   "out_degree": 5
   },
   "irregular_directional_observable_note_2026-04-11": {
    "deps_hash": "07682cd2364f",

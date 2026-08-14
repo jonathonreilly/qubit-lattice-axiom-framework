@@ -436,3 +436,14 @@ remaining walls are physical source typing, cadence, normalization, the three
 relative `h_it` modes, physical transfer, and nonlinear completion. Reopen a
 negative gate only if these independent live families are attempted or
 excluded with current retained authority.
+
+## Block 69 Five-M2 Dilation / Record-lock Partial Narrowing
+
+| Scoped negative considered | N1--N8 outcome | Allowed result | Live routes that defeat a broad no-go |
+|---|---|---|---|
+| “A same-M2 implementation of the selected Cycle713/Block65 instrument does not exist,” or “unitarity cannot feed permanent Records” | first statement is constructively false on the inherited clean domain: a 29-gate five-M2 dilation and complete channel equality pass; second fails N1/N7 because the circuit does not exhaust direct stochastic, environment, output-site Record, head-first, sink, or registered-law routes | partial narrowing only: this explicit reversible density output plus supplied projection/trace is not itself a formed, locked, permanent Record | output-sites-as-Records with an exact parser/no-overwrite rule; adjacent `O/H` Record writes; direct Admissibility sampling; decohering environment; irreversible sink; explicit `L_phys` registration |
+
+Do not ship a universal measurement, unitarity, Record-formation, chirality,
+gravity, or axiom-necessity no-go. The same-M2 dilation question is positively
+closed only on Cycle713's supplied clean decoder domain. The live exact target
+is the Record occurrence/content/permanence law and its action/source fields.

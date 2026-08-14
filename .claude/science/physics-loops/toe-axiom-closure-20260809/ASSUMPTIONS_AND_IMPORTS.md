@@ -1149,3 +1149,35 @@ relative mixed-time flat directions remain explicit. No common-metric quotient,
 cross-orientation action, source normalization, action coefficient, nonlinear
 self-source, collision/acceleration law, axiom adoption, audit verdict,
 retention, TOE score movement, or `review-loop` is imported.
+
+## Block 69 Assumptions And Imports
+
+Block 69 imports the literal Cycle713 gate/placement interface and Blocks 56,
+65, and 66 only as conditional typed surfaces. It independently re-executes
+the 4,096 seam rows, constructs the complete five-M2 unitary, checks every
+input matrix unit and branch map, rebuilds the combined nearest-neighbour
+route, and recomputes the action-decoder ranks and 96 first-branch outcome/head
+Record-map isomorphisms. Continued histories and the 29-gate word under both
+internal actions are not tested. None of those parent claims is treated as
+retained authority.
+
+The stacked branch contains a stale pre-rewrite Record paragraph. The runner
+uses the SHA-256-pinned Record rewrite at mainline commit
+`574346c636e48217a2fe42f3b842632d34c4a3c1`, verifies that it is an ancestor of
+`origin/main`, and requires its blob hash to equal the current `origin/main`
+blob hash; the stale local scalar wording is excluded from every conclusion.
+No axiom file is edited.
+
+The clean `B,R,A` values, decoder-cut invocation, arbitrary-angle gate word,
+Manhattan route schedule, menu 0, unit hazard, projective filters, partial
+trace, and coarse label are supplied implementation/candidate-law data. “No
+new clean M2” means no new factor beyond Cycle713's supplied clean domain; it
+does not derive genesis, dirty admission, or a blank Record site. The route
+uses 42 assigned M2 but touches 507 coordinates, including 465 restored
+route-work factors; “same M2” is not a 42-site footprint or clean-bank claim.
+
+No realized draw, environment, objective collapse, density-to-unchanged-`O/H`
+content parser, target blank Record occurrence, inverse inaccessibility,
+permanent no-overwrite continuation, internal proper-cubic action, coframe
+decoder, source disposal, cadence, clock, full-Z3 law, owner adoption, audit
+verdict, retention, TOE score movement, or `review-loop` is imported.

@@ -2742,3 +2742,44 @@ The next gravity action is binary: construct/select one joint common-metric
 source/clock/transfer law, or stop gravity micro-extensions. Portfolio-wide,
 readout/register and chirality roots still have greater fanout; after Block 68,
 capacity should move there unless the joint-law object is immediately viable.
+
+## Block 69 Handoff
+
+Block 69 resolves the top post-Block68 construction question positively. On
+the literal two-cell Cycle713 right-decoder output, the existing physical
+factors `(p,r,d_u,l,d_v)` are exactly `(P,M,B,R,A)` with `B=R=A=0` on all
+4,096 seam rows. An explicit 29-gate one-/two-M2 word is unitary on all 32
+states and, on the four clean input columns, produces the menu-0 Stinespring
+isometry. Filtering `P=0` gives the no-Record branch; filtering `P=1,M+B=h`
+and tracing the named environments gives each formation branch. All 16 input
+matrix units, 64 branch outputs, Choi positivity, and trace preservation pass.
+
+The word is not merely logical: the full Cycle713 decoded prefix plus the
+dilation routes using the same 42 assigned M2 while touching 507 coordinates,
+including 465 restored route-work factors, with role coordinates recorded in
+the theorem note and zero routing failures. The physical-instrument-existence
+wall is therefore closed on the inherited clean domain. Further Stinespring,
+ancilla-count, or abstract CP searches are low leverage.
+
+The remaining root is not hidden in the unitary. Its output is coherent,
+reversible, and density-valued. The projectors and trace used to read the CP
+map are not a realized event; a ket-zero factor is not an absent Record site;
+Block65's six first `O/H` labels are non-Hermitian general M2 contents, although
+the output densities are themselves valid M2 possibilities; and no rule
+supplies the pick, unchanged-`O/H` parser, content lock, inaccessible inverse,
+or no-overwrite continuation. Only 96 first-branch outcome/head Record maps
+were checked across 24 frames—not continued histories or the circuit under
+both actions—so action/chirality remains a field of the same content law.
+
+Primary/cache is `PASS=8 FAIL=0`; eight isolated acceptance guards each fail one check; graph
+is `5,515/15,825`, out-degree five. Independent reproduction accepts the
+bounded result. Zero tracked obligation is retired and every TOE percentage
+remains fixed pending audit retention and physical-law selection.
+
+The next block should build two total local `L_phys` completions on the exact
+same output: (1) output-site Records with a binary/general-M2 parser, and (2)
+adjacent Block65 `O/H` Record sites. Each must name occurrence, site, all-frame
+action, content, absorbing arbitrary-horizon continuation, and source
+disposition without a host pick. If both satisfy current premises but disagree
+observably, stop and present that exact law/owner decision; do not reopen
+standalone action or gravity micro-scans.

@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_cycle713_five_m2_stinespring_record_lock_action_cut_2026_08_13.py
+runner_sha256: ff9df187cb6817a4bd2a19cfa2fd7714be3b4efb6733c8c882c1c3f41eb8bd09
+input_fingerprint_sha256: 81f0dc4cb535ae7493a05dfe824832837d397f3766ef16f8feb3195b009d886e
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 1.62
+status: ok
+----- stdout -----
+PASS A-origin-main-axiom-authority-and-stale-stack-firewall: pinned Record hash=93af34cf6fcf equals current origin/main hash=93af34cf6fcf, pin is a mainline/HEAD ancestor=True; stacked-local-difference=True and the local copy is never authoritative
+PASS B-literal-Cycle713-five-assigned-M2-domain: 4096 literal rows leave B,R,A clean after the right decoder and retain all P,M rows; roles={'P': 40, 'M': 6, 'B': 38, 'R': 1, 'A': 39}; no new clean M2 is asserted
+PASS C-explicit-five-M2-menu0-Stinespring-isometry: 29 one-/two-M2 gates give a 32x32 unitary and analytic 32x4 isometry; residuals=2.8e-15/5.2e-16, column supports=(1, 3, 1, 3)
+PASS D-complete-Block65-menu0-channel-equality: all 64/64 no-Record/formation matrix-unit outputs match; residual=6.8e-16, direct-sum Choi min=0.0e+00, TP=6.7e-16
+PASS E-literal-placement-nearest-neighbour-routed-word: the Cycle713 prefix plus 29-gate dilation uses 42 assigned M2 and touches 507 coordinates, including 465 restored route-work sites, with zero collision/NN/order/return failures; routed gates=9455, max distance=24, roles=((-8, -1, 1), (-10, 0, 2), (-9, -2, 1), (-6, -2, 0), (-9, -1, 0))
+PASS F-body-frame-versus-lab-action-nonselection: 96/96 first-branch outcome/head Record maps are body/lab isomorphic across 24 frames, yet 69 contents differ; continued histories and the 29-gate word under both actions are not tested; decoder nullities adjoint/trivial=1/0
+PASS G-quantum-output-versus-permanent-Record-lock-parser-boundary: the five-M2 output is reversible and density-valued, while all 6/6 unchanged Block64/65 Record labels are non-Hermitian M2 contents; densities remain valid M2 possibilities, but the branch pick, blank-site formation, density-to-label parser, lock, and permanence map are not supplied
+PASS H-N1-N8-bounded-claim-and-TOE-accounting: the source note exposes structured routes, all 15 pairwise collapsed-wall tests, hidden-import classifications, citation-by-citation residual matches, five granularity lines, partial closures, hostile steelman, and cross-cycle mechanism audit; this is a semantic-surface guard, not an audit verdict
+METRICS cycle713_rows=4096 dilation_gates=29 matrix_unit_branches=64 channel_residual=6.84e-16 routed_gates=9455 touched_M2=507 route_work_M2=465 action_first_branch_cases=96 record_parser_mismatches=6
+BOUNDARY: a literal five-M2 reversible dilation now realizes the selected menu-0 CP map on the inherited clean Cycle713 decoder domain; it does not supply the realized draw, blank Record-site formation, permanent lock/no-overwrite continuation, internal cubic action, extensional nearest-neighbour law, genesis, clock, adoption, audit retention, or TOE movement
+per_element: checked all sixteen P-M matrix units, four branch outputs, six target Record carriers, and every gate matrix in the explicit dilation
+per_site: checked the five named M2 roles and 42 assigned coordinates, disclosed all 507 touched coordinates including 465 restored route-work sites, and tested blank-versus-ket-zero semantics
+per_mode: checked 96 first-branch outcome/head Record maps across all 24 proper-cubic frames and both exact internal-action decoder constraint systems; continued histories were not tested
+per_block: checked all 4,096 literal Cycle713 seam rows, the complete 32x32 unitary, direct-sum Choi matrix, and composed physical route prefix
+lattice_wide: checked and not executed — no selected full-Z3 formation law, autonomous genesis, total multi-front process, clock, or gravity completion is claimed
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

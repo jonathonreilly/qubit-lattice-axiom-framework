@@ -2267,3 +2267,61 @@ no-go, or axiom-necessity claim is forbidden.
 
 Gate status is **FAIL — partial-narrowing**. Gravity survives; only the named
 law-selection and nonlinear walls may be reported.
+
+## Block 69 Claim Status Certificate
+
+- Literal-domain theorem: 4,096 executed Cycle713 rows establish the five
+  existing roles and inherited `B=R=A=0` clean subspace without adding an M2.
+- Dilation theorem: 29 one-/two-M2 gates give a unitary `32 x 32` word whose
+  four clean columns match the analytic menu-0 Stinespring isometry to
+  `5.2e-16`; unitarity residual is `2.8e-15`.
+- Complete-channel theorem: all 64 branch/matrix-unit outputs match Block65;
+  max residual is `6.84e-16`, the direct-sum Choi minimum is zero within
+  tolerance, and trace residual is `6.7e-16`. Matrix-unit equality supplies
+  arbitrary spectator-reference extension.
+- Physical-route theorem: the Cycle713 prefix plus dilation routes on 42
+  assigned M2 while touching 507 coordinates, including 465 restored route-work
+  M2, with zero collision, non-nearest-neighbour, operand-order, or route-return
+  failures.
+- Action discriminator: 96/96 first-branch outcome/head Record maps are exactly
+  body/lab isomorphic across 24 frames while 69 literal contents differ;
+  adjoint and trivial vector-decoder constraint nullities remain one and zero.
+  Continued histories and the circuit under both actions are not tested.
+- Record boundary: the unitary output remains coherent, reversible, and
+  density-valued; branch extraction is mathematical. All six Block65 `O/H`
+  labels are non-Hermitian M2 elements, while output densities remain valid M2
+  possibilities; ket zero is not Record absence, and no realized pick,
+  unchanged-`O/H` parser, lock, or permanent continuation is supplied.
+- Evidence: primary/cache `PASS=8 FAIL=0`; all eight isolated acceptance guards fail
+  exactly one aggregate; graph `5,515/15,825`, out-degree five. Independent
+  read-only reproduction accepts the construction boundary and reranks the
+  next seam to an executable `L_phys` tournament.
+- Scope: `bounded_theorem`, unaudited and unretained. No axiom edit, adopted
+  physical law, obligation retirement, TOE score movement, or `review-loop`.
+
+### Block 69 No-Go Discipline Checklist
+
+- N1 — seven normalized attacks are marked `ATTEMPTED` or
+  `RULED OUT BY PRIOR`; live direct stochastic, environment, output-site,
+  adjacent-site, and registered-law routes defeat a universal no-go.
+- N2 — the six collapsed walls receive all 15 pairwise implication tests;
+  content/action and permanence/no-overwrite are not double counted.
+- N3 — decoder invocation, controlled rotations, routing, filtering/trace,
+  parser, source disposal, no-overwrite, full-Z3, and adoption imports are
+  explicit.
+- N4 — every cited parent has a `file:line`, attack, residual, and match verdict;
+  downstream gravity citations are explicitly rejected as Record-lock evidence.
+- N5 — the source and cache state per-element, per-site, per-mode, per-block,
+  and lattice-wide resolution and use architecture-specific rhetoric.
+- N6 — the same-M2 unitary, complete CP map, route, and action isomorphism are
+  positive bounded subclosures despite zero retained closure.
+- N7 — the strongest output-sites-as-Records steelman remains credible and
+  forces demotion to a candidate `L_phys`, not impossibility.
+- N8 — Cycle713 opportunity, Block65 abstract instrument, Block66 decoding,
+  Blocks67--68 conditional source, Cycle883 renewal, and the Record rewrite
+  are distinguished rather than recycled.
+
+Gate status is **PASS for the narrow nonpromotion statement and FAIL/demoted
+for every broad measurement/unitarity/Record negative**. The only allowed
+negative is that this declared unitary and mathematical extraction do not by
+themselves instantiate a formed permanent Record.

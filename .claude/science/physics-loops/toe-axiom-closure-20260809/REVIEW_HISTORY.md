@@ -2927,3 +2927,35 @@ instance or Fourier census.
 - Science commit is `18753d6a1d`; stacked PR #6269 is open, mergeable, and
   `CLEAN` on exact Block67 delivery `dbb6d88029`. No axiom edit, audit verdict,
   retained status, percentage move, or `review-loop` action occurs.
+
+## Block 69 Construction And Independent Portfolio Recheck
+
+- Rechecked `origin/main` before construction. The stacked local axiom copy is
+  stale after the Record rewrite, so the runner pins and hashes the sole
+  mainline authority commit `574346c636e48217a2fe42f3b842632d34c4a3c1`
+  and requires its blob hash to match current `origin/main`.
+  The review/landing worktree and every axiom path remain untouched.
+- Reconstructed all 4,096 literal Cycle713 seam rows and identified five
+  already assigned physical M2 roles with inherited three-bit clean domain.
+- Derived and executed a 29-gate controlled-rotation/CNOT/Toffoli word. Its
+  analytic isometry residual is `5.2e-16`; the complete unitary residual is
+  `2.8e-15`.
+- Checked all 64 branch/matrix-unit outputs against Block65 menu 0, direct-sum
+  Choi positivity, trace preservation, and arbitrary-reference extension.
+- Routed the complete decoded prefix plus dilation using 42 assigned M2 while
+  touching 507 coordinates, including 465 restored route-work factors; all
+  placement, adjacency, ordered-operand, and route-return checks pass.
+- Separated quantum density output from six non-Hermitian Block65 Record
+  labels and from blank-site occurrence, realized draw, lock, inverse
+  inaccessibility, and permanent continuation.
+- Recomputed the proper-cubic action fork: 96 first-branch outcome/head Record
+  maps are isomorphic with 69 literal content differences; decoder nullities
+  are adjoint one and trivial zero. Continued histories and the word under both
+  actions were not tested. This demotes standalone action work into `L_phys`.
+- Primary/cache `PASS=8 FAIL=0`; each of eight isolated acceptance guards fails one aggregate;
+  graph `5,515/15,825`, out-degree five; N1--N8 lands in the source note.
+- An independent read-only agent reproduced 8/8 and all mutations and reranked
+  the next seam to two total inequivalent Record-lock/continuation laws. It
+  finds zero obligation retirement and zero TOE movement.
+- No audit verdict, retained status, axiom edit, score move, PR landing, or
+  `review-loop` operation is performed.

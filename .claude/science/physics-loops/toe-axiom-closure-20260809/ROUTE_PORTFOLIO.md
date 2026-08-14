@@ -928,3 +928,29 @@ Working allocation becomes `40%` readout/register, `30%` chirality/action
 decoder, `20%` the single gravity joint-law decision, and `10%` retention
 readiness. Recheck immediately after any retained result or failed extensional
 selection gate, and otherwise within three hours.
+
+## Post-Block-69 Full-Science Portfolio Recheck
+
+Block 69 closes the literal same-M2 Stinespring question on Cycle713's
+inherited clean decoder domain. It also falsifies the hope that this physical
+dilation alone selects a proper-cubic action or satisfies the Record
+predicates. The blocker has moved from instrument existence to an executable
+local occurrence/content/permanence law.
+
+There is still zero scored or retained obligation retirement. The independent
+rerank makes the Record-law seam more dominant, folds standalone action into
+its parser field, and leaves gravity as one capped alternative only after the
+local law decision.
+
+| Rank | Investment | Exact next witness | Stop condition |
+|---:|---|---|---|
+| 1 | `L_phys` Record lock/continuation tournament | build two total inequivalent laws on the exact five-M2 output: output-site Records versus adjacent Block65 `O/H` Records; each must include occurrence/site, content parser, all-24 action, absorbing arbitrary-N continuation, and source disposition | if both satisfy current premises and disagree observably, stop with an exact extensional owner/law decision; do not add another instrument |
+| 2 | end-to-end joint-law tournament | bind the surviving local law to multi-front resources, cadence/clock, source identity, and one retained-grade consequence | do not start until one local law survives or the exact decision surface is accepted |
+| 3 | one gravity common-metric decision | construct one cross-orientation 13-to-10 common-metric action/clock/transfer law consuming the same physical Record event | cap at one block; freeze if it becomes another carrier, period, TT, or coefficient scan |
+| 4 | standalone action/chirality | only a content-sensitive physical parser that breaks or extends the Block69 first-branch isomorphism through complete histories | otherwise stop; algebraic capacity and representation scans have no selection power |
+
+Working allocation becomes `65%` local `L_phys`, `20%` end-to-end composition,
+`10%` the capped gravity joint-law alternative, and at most `5%` standalone
+action/retention readiness.
+Recheck after the two-law tournament or within three hours, whichever comes
+first.

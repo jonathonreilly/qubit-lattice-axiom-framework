@@ -1799,3 +1799,37 @@ complete conditional nonlinear compact solution:
   a decisive extensional cut. After that single attempt, freeze gravity
   micro-extensions and fund the higher-fanout readout/register and chirality
   roots
+
+## Block 69 Contract And Result
+
+- portfolio-corrected contract: before another gravity or representation
+  extension, either compile Block65's selected menu-0 instrument on the same
+  literal Cycle713 M2 factors or identify the first exact physical/axiom datum
+  that prevents it from becoming a permanent Record event
+- literal domain: all 4,096 Cycle713 seam rows leave the five existing roles
+  `(P,M,B,R,A)=(p,r,d_u,l,d_v)` with `B=R=A=0` after the right decoder; no new
+  assigned or clean M2 is claimed
+- positive construction: one explicit 29-gate one-/two-M2 `32 x 32` unitary
+  has the analytic clean-subspace isometry required by menu 0; all 64 branch/
+  matrix-unit outputs, the direct-sum Choi matrix, trace preservation, and
+  arbitrary-reference extension close
+- physical route: the literal Cycle713 prefix plus dilation routes on the same
+  42 assigned M2 while touching 507 coordinates, including 465 restored
+  route-work M2; placement, nearest-neighbour, ordered-operand, and route-return
+  checks all pass
+- exact parser/law cut: the output is a reversible density-valued coherent state;
+  branch projection/trace is not a realized draw, ket zero is not an absent
+  Record, all six Block65 first Record/head labels are non-Hermitian M2
+  contents, but densities are valid M2 possibilities; the unchanged `O/H`
+  parser and permanent lock/no-overwrite continuation are unsupplied
+- action cut: 96/96 first-branch outcome/head Record maps are isomorphic across
+  all 24 proper-cubic frames while the adjoint/trivial vector-decoder nullities
+  remain one/zero; continued histories and the dilation under both actions were
+  not tested, so standalone action scans remain demoted into the parser law
+- primary/cache `PASS=8 FAIL=0`; eight isolated acceptance guards fail exactly one
+  aggregate each; graph is `5,515/15,825`, out-degree five; the N1--N8 gate
+  demotes every broad Record or unitarity no-go to partial narrowing
+- next artifact: stop Stinespring and standalone carrier searches. Construct
+  two total inequivalent `L_phys` Record-lock/continuation completions on this
+  same output—existing output sites versus adjacent Block65 `O/H` sites—and
+  test whether current premises select one or expose an exact owner law datum

@@ -1,0 +1,76 @@
+===== runner cache v1 =====
+runner: scripts/two_cube_l1_l1_ball_support_2026_08_14.py
+runner_sha256: ac608c398578f6d9491315bd5177d0629a550e904ea23085b41d06db31440c58
+input_fingerprint_sha256: 5a191d43b7f26bfdf0684144d6ec89245c792f2d6219f63b329c65d09aaa2408
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+external_scientific_inputs: none; exact occupancy arithmetic on a supplied 12-vertex patch
+package_local_integrity_reads: proposed source note and live axiom memo only
+measure_boundary: exact integers and Fraction; formation support only, no PVM traces
+claim_boundary: L1 is displayed executable data, not adopted law
+PASS: id-patch-count patch-count identity
+PASS: id-d-seed d-seed identity
+PASS: id-d-100 d-100 identity
+PASS: id-d-110 d-110 identity
+PASS: id-d-200 d-200 identity
+PASS: id-d-111 d-111 identity
+PASS: id-d-210 d-210 identity
+PASS: id-d-201 d-201 identity
+PASS: id-d-211 d-211 identity
+PASS: id-sphere-0 sphere-0 identity
+PASS: id-sphere-1-count sphere-1-count identity
+PASS: id-sphere-2-count sphere-2-count identity
+PASS: id-sphere-3-count sphere-3-count identity
+PASS: id-sphere-4-count sphere-4-count identity
+PASS: id-spheres-partition-patch spheres-partition-patch identity
+PASS: id-sphere-1-sites sphere-1-sites identity
+PASS: id-sphere-2-sites sphere-2-sites identity
+PASS: id-sphere-3-sites sphere-3-sites identity
+PASS: id-sphere-4-sites sphere-4-sites identity
+PASS: id-n-100-seed n-100-seed identity
+PASS: id-n-010-seed n-010-seed identity
+PASS: id-n-001-seed n-001-seed identity
+PASS: id-n-110-seed n-110-seed identity
+PASS: id-n-200-seed n-200-seed identity
+PASS: id-n-111-seed n-111-seed identity
+PASS: id-forming-from-seed forming-from-seed identity
+PASS: id-thm1-locks-eq-ball-1 thm1-locks-eq-ball-1 identity
+PASS: id-thm1-lock-count thm1-lock-count identity
+PASS: id-thm1-seed-stays thm1-seed-stays identity
+PASS: id-thm1-sphere1-locked thm1-sphere1-locked identity
+PASS: id-thm1-sphere2-unread thm1-sphere2-unread identity
+PASS: id-n-110-after-t1 n-110-after-t1 identity
+PASS: id-n-101-after-t1 n-101-after-t1 identity
+PASS: id-n-011-after-t1 n-011-after-t1 identity
+PASS: id-n-200-after-t1 n-200-after-t1 identity
+PASS: id-n-111-after-t1 n-111-after-t1 identity
+PASS: id-n-210-after-t1 n-210-after-t1 identity
+PASS: id-n-201-after-t1 n-201-after-t1 identity
+PASS: id-n-211-after-t1 n-211-after-t1 identity
+PASS: id-forming-at-tick-2 forming-at-tick-2 identity
+PASS: id-thm2-locks-eq-ball-2 thm2-locks-eq-ball-2 identity
+PASS: id-thm2-lock-count thm2-lock-count identity
+PASS: id-thm2-permanence thm2-permanence identity
+PASS: id-thm2-sphere2-locked thm2-sphere2-locked identity
+PASS: id-thm3-unread-eq-d-ge-3 thm3-unread-eq-d-ge-3 identity
+PASS: id-thm3-every-d3-unread thm3-every-d3-unread identity
+PASS: id-thm3-every-d4-unread thm3-every-d4-unread identity
+PASS: thm-empty-fixed the empty configuration forms no site
+PASS: mutation-not-chebyshev-ball-1 after tick 1 the locked set is not the Chebyshev ball of radius 1
+PASS: mutation-not-chebyshev-ball-2 after tick 2 the locked set is not the Chebyshev ball of radius 2
+PASS: live-parent-quotes the note quotes all four live axiom sentences without rewrite
+PASS: machine-status-contract bounded-support status and hypothetical_axiom_status: not proposed
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: note-hygiene L1 is displayed; Qubit stays M_2(C); forbidden strings absent
+per_element: n is recomputed at every unread patch site after each tick
+per_site: formation is unread and n nonzero; locked sites stay
+per_mode: support is compared to the computed ell^1 ball, not a Chebyshev ball
+per_block: locked sets after ticks 1 and 2 are the radius-1 and radius-2 balls
+lattice_wide: checked and not executed — the claim is the supplied 12-vertex patch
+TOTAL: PASS=54 FAIL=0
+
+----- stderr -----
+

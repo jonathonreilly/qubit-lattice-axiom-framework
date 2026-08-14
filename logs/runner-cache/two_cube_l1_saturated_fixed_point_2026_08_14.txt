@@ -1,0 +1,50 @@
+===== runner cache v1 =====
+runner: scripts/two_cube_l1_saturated_fixed_point_2026_08_14.py
+runner_sha256: 9fd3b65c63adf5a81688843eef03d6d9ba706973fb145a98c8b296d07b944abb
+input_fingerprint_sha256: 00384b0e09757af285e995326cbc4b561bb545c7464a7340beace8cafd6af21a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.07
+status: ok
+----- stdout -----
+After saturation L1 is the identity
+AUDIT_INPUT_PATHS:
+  docs/TWO_CUBE_L1_SATURATED_FIXED_POINT_BOUNDED_THEOREM_NOTE_2026-08-14.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+scope: supplied two-cube L1 patch; halt endpoints
+PASS: audit-input-paths-exist
+PASS: audit-input-paths-unique-relative
+PASS: audit-timeout-declared
+PASS: lattice-quote-present
+PASS: record-form-quote-present
+PASS: hygiene-avoids-'G_N'
+PASS: hygiene-avoids-'1/r'
+PASS: hygiene-avoids-'1/r^2'
+PASS: hygiene-avoids-'Lattice-named'
+PASS: hygiene-avoids-'not a TOE'
+PASS: hygiene-avoids-'exhausted'
+PASS: hygiene-avoids-'only route'
+PASS: hygiene-avoids-'we adopt'
+PASS: hygiene-avoids-'Codex'
+PASS: hygiene-avoids-'L_phys'
+PASS: note-has-no-runner-cache-path
+PASS: note-has-no-citation-manifest
+PASS: patch-has-twelve-sites
+PASS: shared-face-is-x-equals-one
+PASS: full-is-fixed
+PASS: empty-is-fixed
+PASS: t5-equals-t4-locks
+PASS: t5-equals-t4-rho
+PASS: t5-equals-t4-g
+PASS: F-unchanged
+per_element: full and empty lock sets
+per_site: no new lock on a further step
+per_mode: fixed points
+per_block: halt
+lattice_wide: checked and not executed
+TOTAL: PASS=25 FAIL=0
+
+----- stderr -----
+

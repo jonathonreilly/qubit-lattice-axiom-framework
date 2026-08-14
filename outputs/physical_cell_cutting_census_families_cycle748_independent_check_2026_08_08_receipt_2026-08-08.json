@@ -1,0 +1,131 @@
+{
+  "audit_status_authority": "independent audit lane only",
+  "checker_sha256": "6e154d817c75c91dc695aa73b9edc4e6c67a03ab7417b2225dbea1d8347c3350",
+  "claim_type": "bounded_theorem",
+  "dependency_boundary": {
+    "cycle746_and_independent_bound": true,
+    "cycle747_and_independent_bound": true,
+    "weight_eighteen_resolved": false
+  },
+  "gates": {
+    "fail": 0,
+    "named": {
+      "hostile.census": "PASS",
+      "hostile.generator": "PASS",
+      "hostile.predecessor_completeness": "PASS",
+      "hostile.predecessor_inventory": "PASS",
+      "hostile.primary_status": "PASS",
+      "hostile.shape_boundary": "PASS",
+      "hostile.twenty": "PASS",
+      "independent.all_marked": "PASS",
+      "independent.complete_census": "PASS",
+      "independent.dependencies": "PASS",
+      "independent.group": "PASS",
+      "independent.overlaps_and_twenty": "PASS",
+      "independent.population": "PASS",
+      "independent.primary_contract": "PASS",
+      "independent.symmetry_actions": "PASS",
+      "independent.targets": "PASS",
+      "independent.weight_eighteen_boundary": "PASS"
+    },
+    "pass": 17
+  },
+  "independent_reconstruction": {
+    "all_marked_weight_eight_count": 192,
+    "cuttings": 15800,
+    "cuttings_per_piece": 1975,
+    "exact_cover_pivot": "greatest uncovered sample",
+    "generated_group_order": 384,
+    "generated_piece_orbits": [
+      192
+    ],
+    "geometric_piece_orbits": [
+      48,
+      48,
+      48,
+      48
+    ],
+    "overlap_counts": {
+      "0": 14592,
+      "1": 4608,
+      "2": 6144
+    },
+    "overlap_profile_sizes": [
+      12,
+      12,
+      24,
+      36,
+      48
+    ],
+    "pieces_per_cutting": 24,
+    "support_columns": 192,
+    "weight_eighteen_maximum_all_marked_intersection": 4,
+    "weight_sixteen_census_count": 132,
+    "weight_sixteen_family_sizes": [
+      12,
+      12,
+      12,
+      24,
+      24,
+      48
+    ],
+    "weight_twenty_count": 6144,
+    "weight_twenty_family_sizes": [
+      192,
+      192,
+      192,
+      192,
+      192,
+      192,
+      192,
+      192,
+      192,
+      192,
+      192,
+      192,
+      192,
+      192,
+      192,
+      192,
+      192,
+      192,
+      192,
+      192,
+      384,
+      384,
+      384,
+      384,
+      384,
+      384
+    ]
+  },
+  "input_sha256": {
+    "docs/PHYSICAL_CELL_CUTTING_CARRIER_PARITY_LAW_CYCLE746_NOTE_2026-08-08.md": "6905e69b9785f4ab7ad90803d7a6ae6cb678b467d136feee6cdeac8e3d7049b0",
+    "docs/PHYSICAL_CELL_CUTTING_CENSUS_FAMILIES_CYCLE748_NOTE_2026-08-08.md": "2d94545b793766a0bf7d0ee0c985f38d4294954dbfeb00dcb07c934221a238f4",
+    "docs/PHYSICAL_CELL_CUTTING_FLIP_PARTNER_CARRIER_BRACKET_CYCLE747_NOTE_2026-08-08.md": "04758c85dacbe82867e2be9350b5c419c46f0e83e93cb399deda8332a4ea6c31",
+    "outputs/physical_cell_cutting_carrier_parity_law_cycle746_2026_08_08_receipt_2026-08-08.json": "07a86ef8f54037b1af8f08f48b0fb34fa77a86aad7d36c748f25a6d5eafe1a19",
+    "outputs/physical_cell_cutting_carrier_parity_law_cycle746_independent_check_2026_08_08_receipt_2026-08-08.json": "df00510850f5da875e268cfcd421d3af2d3f4e89e176dd70c26ef0c21b6a1565",
+    "outputs/physical_cell_cutting_census_families_cycle748_2026_08_08_receipt_2026-08-08.json": "24f6313beaf5a3c058d9852018bcb18c537816497ca2ad4468e204fb0fcc6cbe",
+    "outputs/physical_cell_cutting_flip_partner_carrier_bracket_cycle747_2026_08_08_receipt_2026-08-08.json": "5fe24acab251c6a39004ce5b30c166942766544c15d988e4216847f22ec9a784",
+    "outputs/physical_cell_cutting_flip_partner_carrier_bracket_cycle747_independent_check_2026_08_08_receipt_2026-08-08.json": "1e126ab27a4e81e5dbe162a2276d72d2d058d9008caddbc38809d45110ac92ec",
+    "requirements-release.txt": "e153eea331ce1b76cd99f09e14a777df2bc9efbaa06a201528ddfdc0f3f01bee",
+    "requirements.txt": "3fda988835a13d9a7236b0b508aa9bcd2f9b3f3b9a47b4875a15f86dbc77a3ad",
+    "scripts/physical_cell_cutting_carrier_parity_law_cycle746_2026_08_08.py": "8e7ade66a03b320e7c9ab54f154ac6975a407005362e686b4ebdafa76fc099af",
+    "scripts/physical_cell_cutting_carrier_parity_law_cycle746_independent_check_2026_08_08.py": "8bab69b1c6ce9471e473492936d8f2c7b93dd7fdc2940189cfc3985bc27611fd",
+    "scripts/physical_cell_cutting_census_families_cycle748_2026_08_08.py": "71c0735c257923a8f4b43168f3e8591263d391982be205f9bb78b5d197dcf91d",
+    "scripts/physical_cell_cutting_flip_partner_carrier_bracket_cycle747_2026_08_08.py": "15c11cf7d21e0a7beb067cc4343b896b36462572d446d84d305637354246d201",
+    "scripts/physical_cell_cutting_flip_partner_carrier_bracket_cycle747_independent_check_2026_08_08.py": "0bbaed8f549c937cfe61166752e6d8ee233896cf337db24f5c5d27e81057a303"
+  },
+  "no_go_discipline": {
+    "n5_execution_certificate": [
+      "per_element checked",
+      "per_site checked and not executed",
+      "per_mode checked and not executed",
+      "per_block checked",
+      "lattice_wide checked and not executed"
+    ],
+    "status": "PASS"
+  },
+  "schema": "physical-cell-cutting-census-families-cycle748-independent-v1",
+  "status": "pass"
+}

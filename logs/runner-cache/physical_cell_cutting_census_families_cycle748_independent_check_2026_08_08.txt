@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/physical_cell_cutting_census_families_cycle748_independent_check_2026_08_08.py
+runner_sha256: 6e154d817c75c91dc695aa73b9edc4e6c67a03ab7417b2225dbea1d8347c3350
+input_fingerprint_sha256: f2eaf067cb08ba4eb587fd0acb1e66bb4136e56d079653481d1da3374f480a26
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 7.46
+status: ok
+----- stdout -----
+PASS independent.population  opposite-pivot reconstruction gives 15800 rows, 192 columns, weights 24 and 1975
+PASS independent.targets  the reconstructed four target and its complement reproduce the landed target identity
+PASS independent.all_marked  exact clique enumeration reproduces all 192 landed all-marked carriers
+PASS independent.symmetry_actions  all 48 geometric maps and both extra generators preserve the incidence rows and four target
+PASS independent.group  the independently rebuilt generators close to order 384 and are transitive only with b0 and b1
+PASS independent.complete_census  transitivity and the exact eleven-carrier anchor census give all 132 carriers in six families
+PASS independent.overlaps_and_twenty  all 25344 overlaps give five profiles and 6144 distinct semantic weight-twenty carriers in 26 fam...
+PASS independent.weight_eighteen_boundary  the weight-16 lower bound and system-wide overlap cap imply only the conditional k<=4 shape bound
+PASS independent.dependencies  exact current primary and independent receipts from landed Cycles 746 and 747 are bound fail-closed
+PASS independent.primary_contract  the primary receipt equals the independent census, family, overlap, and conditional-bound derivat...
+PASS hostile.primary_status  a failing primary receipt is rejected
+PASS hostile.generator  a changed symmetry generator is rejected
+PASS hostile.census  a changed census carrier is rejected
+PASS hostile.twenty  a changed weight-twenty family digest is rejected
+PASS hostile.shape_boundary  a false weight-eighteen resolution is rejected
+PASS hostile.predecessor_inventory  a predecessor receipt reverting to the half-row inventory is rejected
+PASS hostile.predecessor_completeness  a predecessor receipt losing anchored completeness is rejected
+per_element: checked -- all 192 columns enter the independent incidence, group, census, and overlap calculations
+per_site: checked and not executed -- one supplied coordinate four-cube only
+per_mode: checked and not executed -- the finite binary object has no modes
+per_block: checked -- all 15800 rows and the exact landed anchored search are bound
+lattice_wide: checked and not executed -- no multicell or continuum claim
+RECEIPT outputs/physical_cell_cutting_census_families_cycle748_independent_check_2026_08_08_receipt_2026-08-08.json
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

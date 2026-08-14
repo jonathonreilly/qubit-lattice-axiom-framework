@@ -3,8 +3,8 @@
 The unit four-cube on sixteen corners cuts into least-volume pieces at the adjacency
 cost floor in 15800 ways, and those cuttings use 192 pieces between them. A set of
 pieces carries a reading when the cuttings it meets an odd number of times are exactly
-the ones the reading marks. Cycle 742 measured the least size for the charge called
-four: sixteen pieces, eleven of them through a fixed anchor piece.
+the ones the reading marks. The exact landed Cycle 747 evidence binds the least size
+for the charge called four: sixteen pieces, eleven of them through a fixed anchor.
 
 This runner takes that anchored handful to the whole system. The symmetries of the
 incidence table close into a group of 384 that is transitive on the pieces and permutes
@@ -29,16 +29,126 @@ could share at most four pieces with any eight-piece carrier of the all-marked r
 Class-A: integer and field-with-two-elements arithmetic on a finite explicit object, no
 solver. Every count below is measured here.
 """
+import copy
+import hashlib
 import itertools
+import json
 import math
 import resource
+import sys
 import time
+from pathlib import Path
 
 import numpy as np
 
+AUDIT_TIMEOUT_SEC = 900
+
 T0 = time.time()
 PF = [0, 0]
+GATES = []
 OUT = [0]
+
+ROOT = Path(__file__).resolve().parents[1]
+PRIMARY_PATH = (
+    "scripts/physical_cell_cutting_census_families_cycle748_2026_08_08.py"
+)
+CHECKER_PATH = (
+    "scripts/physical_cell_cutting_census_families_cycle748_"
+    "independent_check_2026_08_08.py"
+)
+NOTE_PATH = (
+    "docs/PHYSICAL_CELL_CUTTING_CENSUS_FAMILIES_CYCLE748_NOTE_2026-08-08.md"
+)
+C746_NOTE_PATH = (
+    "docs/PHYSICAL_CELL_CUTTING_CARRIER_PARITY_LAW_CYCLE746_NOTE_2026-08-08.md"
+)
+C746_PRIMARY_PATH = (
+    "scripts/physical_cell_cutting_carrier_parity_law_cycle746_2026_08_08.py"
+)
+C746_CHECKER_PATH = (
+    "scripts/physical_cell_cutting_carrier_parity_law_cycle746_"
+    "independent_check_2026_08_08.py"
+)
+C746_RECEIPT_PATH = (
+    "outputs/physical_cell_cutting_carrier_parity_law_cycle746_2026_08_08_"
+    "receipt_2026-08-08.json"
+)
+C746_INDEPENDENT_RECEIPT_PATH = (
+    "outputs/physical_cell_cutting_carrier_parity_law_cycle746_"
+    "independent_check_2026_08_08_receipt_2026-08-08.json"
+)
+C747_NOTE_PATH = (
+    "docs/PHYSICAL_CELL_CUTTING_FLIP_PARTNER_CARRIER_BRACKET_"
+    "CYCLE747_NOTE_2026-08-08.md"
+)
+C747_PRIMARY_PATH = (
+    "scripts/physical_cell_cutting_flip_partner_carrier_bracket_cycle747_2026_08_08.py"
+)
+C747_CHECKER_PATH = (
+    "scripts/physical_cell_cutting_flip_partner_carrier_bracket_cycle747_"
+    "independent_check_2026_08_08.py"
+)
+C747_RECEIPT_PATH = (
+    "outputs/physical_cell_cutting_flip_partner_carrier_bracket_cycle747_"
+    "2026_08_08_receipt_2026-08-08.json"
+)
+C747_INDEPENDENT_RECEIPT_PATH = (
+    "outputs/physical_cell_cutting_flip_partner_carrier_bracket_cycle747_"
+    "independent_check_2026_08_08_receipt_2026-08-08.json"
+)
+RECEIPT_PATH = ROOT / (
+    "outputs/physical_cell_cutting_census_families_cycle748_2026_08_08_"
+    "receipt_2026-08-08.json"
+)
+AUDIT_INPUT_PATHS = (
+    "docs/PHYSICAL_CELL_CUTTING_CENSUS_FAMILIES_CYCLE748_NOTE_2026-08-08.md",
+    "scripts/physical_cell_cutting_census_families_cycle748_independent_check_2026_08_08.py",
+    "docs/PHYSICAL_CELL_CUTTING_CARRIER_PARITY_LAW_CYCLE746_NOTE_2026-08-08.md",
+    "scripts/physical_cell_cutting_carrier_parity_law_cycle746_2026_08_08.py",
+    "scripts/physical_cell_cutting_carrier_parity_law_cycle746_independent_check_2026_08_08.py",
+    "outputs/physical_cell_cutting_carrier_parity_law_cycle746_2026_08_08_receipt_2026-08-08.json",
+    "outputs/physical_cell_cutting_carrier_parity_law_cycle746_independent_check_2026_08_08_receipt_2026-08-08.json",
+    "docs/PHYSICAL_CELL_CUTTING_FLIP_PARTNER_CARRIER_BRACKET_CYCLE747_NOTE_2026-08-08.md",
+    "scripts/physical_cell_cutting_flip_partner_carrier_bracket_cycle747_2026_08_08.py",
+    "scripts/physical_cell_cutting_flip_partner_carrier_bracket_cycle747_independent_check_2026_08_08.py",
+    "outputs/physical_cell_cutting_flip_partner_carrier_bracket_cycle747_2026_08_08_receipt_2026-08-08.json",
+    "outputs/physical_cell_cutting_flip_partner_carrier_bracket_cycle747_independent_check_2026_08_08_receipt_2026-08-08.json",
+    "requirements.txt",
+    "requirements-release.txt",
+)
+
+
+def file_sha256(path):
+    return hashlib.sha256((ROOT / path).read_bytes()).hexdigest()
+
+
+def load_receipt(path):
+    with (ROOT / path).open(encoding="utf-8") as handle:
+        return json.load(handle)
+
+
+def receipt_inputs_current(receipt):
+    recorded = receipt.get("input_sha256", {})
+    return bool(recorded) and all(
+        (ROOT / path).is_file() and recorded[path] == file_sha256(path)
+        for path in recorded
+    )
+
+
+def fail_receipt(reason):
+    RECEIPT_PATH.write_text(json.dumps({
+        "schema": "physical-cell-cutting-census-families-cycle748-v2",
+        "status": "fail",
+        "claim_type": "bounded_theorem",
+        "reason": reason,
+    }, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+
+
+fail_receipt("runner has not completed")
+C746_RECEIPT = load_receipt(C746_RECEIPT_PATH)
+C746_INDEPENDENT_RECEIPT = load_receipt(C746_INDEPENDENT_RECEIPT_PATH)
+C747_RECEIPT = load_receipt(C747_RECEIPT_PATH)
+C747_INDEPENDENT_RECEIPT = load_receipt(C747_INDEPENDENT_RECEIPT_PATH)
 
 
 def emit(s):
@@ -51,8 +161,11 @@ def emit(s):
 
 
 def gate(ok, name, detail):
-    PF[0 if ok else 1] += 1
-    emit(("PASS " if ok else "FAIL ") + name + "  " + detail)
+    passed = bool(ok)
+    PF[0 if passed else 1] += 1
+    GATES.append((name, passed))
+    compact = detail if len(detail) <= 38 else detail[:35] + "..."
+    emit(("PASS " if passed else "FAIL ") + name + "  " + compact)
 
 
 
@@ -218,8 +331,10 @@ SZG = [4]
 EA = dict((k, []) for k in SZC)
 EB = dict((k, []) for k in SZC)
 DIS = dict((k, set()) for k in SZG)
+PROCESSED_PAIR_ROWS = 0
 for lo in range(0, NS, 200):
-    hi = min(lo + 100, NS)
+    hi = min(lo + 200, NS)
+    PROCESSED_PAIR_ROWS += hi - lo
     d = LUT[np.bitwise_xor(PK[lo:hi, None, :], PK[None, :, :])].sum(axis=2, dtype=np.int16)
     for k in SZC:
         rr, cc = np.nonzero(d == 2 * k)
@@ -441,6 +556,88 @@ NTG = len(FVEC)
 TCTL = NTG - 1
 FV = np.stack(FVEC)
 TG = pack88(FV[:, EPIV])
+
+
+def cycle746_contract(primary, independent):
+    forced = primary.get("forced_block_parity", {})
+    supplied = primary.get("supplied_incidence", {})
+    reconstruction = independent.get("independent_reconstruction", {})
+    return (
+        primary.get("schema") == "physical-cell-cutting-carrier-parity-law-cycle746-v2"
+        and primary.get("status") == "pass"
+        and primary.get("gates", {}).get("fail") == 0
+        and primary.get("runner_sha256") == file_sha256(C746_PRIMARY_PATH)
+        and receipt_inputs_current(primary)
+        and supplied.get("cuttings") == 15800
+        and supplied.get("support_columns") == 192
+        and supplied.get("processed_pair_rows") == 15800
+        and forced.get("fixed_blocks") == ["total", "L", "R", "Q2", "Q3"]
+        and forced.get("free_blocks") == ["Q0", "Q1"]
+        and independent.get("schema")
+        == "physical-cell-cutting-carrier-parity-law-cycle746-independent-v1"
+        and independent.get("status") == "pass"
+        and independent.get("gates", {}).get("fail") == 0
+        and (independent.get("checker_sha256") or independent.get("runner_sha256"))
+        == file_sha256(C746_CHECKER_PATH)
+        and receipt_inputs_current(independent)
+        and reconstruction.get("cuttings") == 15800
+        and reconstruction.get("support_columns") == 192
+        and reconstruction.get("rank") == 88
+        and reconstruction.get("fixed_blocks") == ["total", "L", "R", "Q2", "Q3"]
+        and reconstruction.get("free_blocks") == ["Q0", "Q1"]
+    )
+
+
+def cycle747_contract(primary, independent):
+    supplied = primary.get("supplied_incidence", {})
+    all_one = primary.get("all_marked_weight_eight", {})
+    anchor = primary.get("anchor_completeness", {})
+    search = primary.get("exact_search_through_sixteen", {})
+    bracket = primary.get("minimum_bracket", {})
+    reconstructed = independent.get("independent_reconstruction", {})
+    boundary = independent.get("dependency_boundary", {})
+    return (
+        primary.get("schema")
+        == "physical-cell-cutting-flip-partner-carrier-bracket-cycle747-v2"
+        and primary.get("status") == "pass"
+        and primary.get("gates", {}).get("fail") == 0
+        and primary.get("runner_sha256") == file_sha256(C747_PRIMARY_PATH)
+        and receipt_inputs_current(primary)
+        and supplied.get("cuttings") == 15800
+        and supplied.get("support_columns") == 192
+        and supplied.get("processed_pair_rows") == 15800
+        and all_one.get("carrier_count") == 192
+        and all_one.get("carriers_through_each_piece") == 8
+        and anchor.get("geometric_piece_orbits") == [48, 48, 48, 48]
+        and anchor.get("generated_piece_orbits") == [192]
+        and anchor.get("all_eight_targets_transitive") is True
+        and search.get("all_sweeps_complete") is True
+        and search.get("four_counts") == [0, 0, 0, 0, 0, 0, 0, 11]
+        and search.get("four_flip_counts") == [0] * 8
+        and search.get("weight_sixteen_splits") == 2004
+        and bracket == {
+            "lower_bound": 18,
+            "upper_bound": 20,
+            "parity_forces_even": True,
+            "weight_eighteen_resolved": False,
+        }
+        and independent.get("schema")
+        == "physical-cell-cutting-flip-partner-carrier-bracket-cycle747-independent-v1"
+        and independent.get("status") == "pass"
+        and independent.get("gates", {}).get("fail") == 0
+        and (independent.get("checker_sha256") or independent.get("runner_sha256"))
+        == file_sha256(C747_CHECKER_PATH)
+        and receipt_inputs_current(independent)
+        and reconstructed.get("cuttings") == 15800
+        and reconstructed.get("support_columns") == 192
+        and reconstructed.get("all_marked_weight_eight_count") == 192
+        and reconstructed.get("anchored_four_count") == 11
+        and boundary.get("weight_eighteen_resolved") is False
+    )
+
+
+C746_OK = cycle746_contract(C746_RECEIPT, C746_INDEPENDENT_RECEIPT)
+C747_OK = cycle747_contract(C747_RECEIPT, C747_INDEPENDENT_RECEIPT)
 
 # ---- the parities a search of the pieces is forced to respect on each block ----
 LBAS = {}
@@ -1312,6 +1509,10 @@ for j in range(NP):
 EORB = sorted(SZ2.values())
 gate(len(GENS) == 50 and EORB == [192], "G10",
      "the 48 together with b0 and b1 act on the 192 pieces with one orbit, transitive")
+gate(C746_OK, "dependency.cycle746",
+     "landed Cycle 746 and its independent receipt bind all 15800 pair rows and parity")
+gate(C747_OK, "dependency.cycle747",
+     "landed Cycle 747 and its independent receipt bind the exact anchor and bracket")
 BAD = "9" + "9"
 def cshow(n):
     """a count in plain digits, or its orbit decomposition when those are barred"""
@@ -1546,6 +1747,13 @@ gate(THRU == [8] and sorted(PAIR) == [0, 1, 2, 4]
      and sum(PAIR.values()) == 192 * 191 // 2, "G20",
      "those carriers meet each piece the same number of times and meet each other in "
      "0, 1, 2 or 4 pieces, never 3")
+DEP_STARS = sorted(
+    tuple(int(value) for value in row)
+    for row in C747_RECEIPT.get("all_marked_weight_eight", {}).get("carriers", [])
+)
+gate(sorted(tuple(int(value) for value in row) for row in CLQ) == DEP_STARS,
+     "dependency.cycle747_all_marked",
+     "the rebuilt 192 all-marked carriers equal the exact landed Cycle 747 supports")
 
 CLOSED = all(any(np.array_equal(FV[i] ^ FV[j], FV[k]) for k in range(8))
              for i in range(8) for j in range(8))
@@ -1580,12 +1788,12 @@ def one_orbit(t):
 
 TRANS = [one_orbit(t) for t in range(8)]
 SFN = sorted(set(len(s) for s in SFIX))
-emit("symmetries of the table that fix a basic reading: {0}, and they carry any "
-     "piece to any other: {1}".format(
+emit("geometric symmetries fixing a basic reading: {0}; after adjoining b0 and b1, "
+     "they carry any piece to any other: {1}".format(
          SFN[0] if len(SFN) == 1 else SFN, all(TRANS)))
 gate(all(TRANS) and len(TRANS) == 8, "G22",
-     "the symmetries that fix a reading carry any piece to any other, so asking for "
-     "carriers through one fixed piece decides the question for every piece")
+     "the reading-fixing geometric maps plus b0 and b1 are transitive, so one anchor "
+     "decides the question for every piece")
 
 
 # ---- Part 4f: the anchored search below eighteen ----
@@ -1695,6 +1903,15 @@ def families(fam, G):
 
 
 C16 = RUN[16][3][2]
+DEP_C16 = sorted(
+    tuple(int(value) for value in row)
+    for row in C747_RECEIPT.get("weight_twenty_construction", {}).get(
+        "four_carriers", []
+    )
+)
+gate(sorted(tuple(int(value) for value in row) for row in C16) == DEP_C16,
+     "dependency.cycle747_anchor",
+     "the rebuilt eleven anchored four-carriers equal the landed exact supports")
 EG = closure(GENS, NP)
 NST = len(STARS)
 SSET = set(frozenset(s) for s in STARS)
@@ -1785,6 +2002,68 @@ gate(LIN and ALLOK and SUMS[0] == 26 and LEAST == 16 and CAP == 2
      "sharing five or more would give a carrier of four under sixteen, or one at "
      "sixteen breaking the cap of two")
 
+# ---- fail-closed hostile controls for stale inventories and dependency drift ----
+SKIPPED_PAIR_ROWS = sum(min(lo + 100, NS) - lo for lo in range(0, NS, 200))
+gate(PROCESSED_PAIR_ROWS == NS and SKIPPED_PAIR_ROWS == NS // 2
+     and SKIPPED_PAIR_ROWS != PROCESSED_PAIR_ROWS, "hostile.pair_inventory",
+     "the stale half-width loop is detected and all 15800 first endpoints are required")
+bad_c746 = copy.deepcopy(C746_RECEIPT)
+bad_c746.setdefault("supplied_incidence", {})["processed_pair_rows"] = NS // 2
+gate(not cycle746_contract(bad_c746, C746_INDEPENDENT_RECEIPT),
+     "hostile.cycle746_inventory",
+     "a predecessor receipt reverting to the half-row inventory is rejected")
+bad_c747 = copy.deepcopy(C747_RECEIPT)
+bad_c747["status"] = "fail"
+gate(not cycle747_contract(bad_c747, C747_INDEPENDENT_RECEIPT),
+     "hostile.cycle747_status", "a failing Cycle 747 receipt is rejected")
+bad_c747_support = copy.deepcopy(C747_RECEIPT)
+bad_c747_support["weight_twenty_construction"]["four_carriers"][0][0] ^= 1
+BAD_DEP_C16 = sorted(
+    tuple(int(value) for value in row)
+    for row in bad_c747_support["weight_twenty_construction"]["four_carriers"]
+)
+gate(BAD_DEP_C16 != sorted(tuple(int(value) for value in row) for row in C16),
+     "hostile.cycle747_anchor",
+     "a changed landed anchor support does not pass the semantic equality check")
+bad_b0 = b0.copy()
+bad_b0[[0, 1]] = bad_b0[[1, 0]]
+BAD_B0_OK, _bad_sg0 = cut_perm(bad_b0)
+gate(not BAD_B0_OK, "hostile.symmetry_action",
+     "a one-swap mutation of the extra generator no longer preserves the incidence")
+
+
+def piece_orbit_sizes(gens):
+    parent = list(range(NP))
+
+    def root(value):
+        while parent[value] != value:
+            parent[value] = parent[parent[value]]
+            value = parent[value]
+        return value
+
+    for permutation in gens:
+        for value in range(NP):
+            left, right = root(value), root(int(permutation[value]))
+            if left != right:
+                parent[left] = right
+    counts = {}
+    for value in range(NP):
+        counts[root(value)] = counts.get(root(value), 0) + 1
+    return sorted(counts.values())
+
+
+GEOMETRIC_ORBITS = piece_orbit_sizes([CP[gi] for gi in range(48)])
+gate(GEOMETRIC_ORBITS == [48, 48, 48, 48] and EORB == [192],
+     "hostile.generator_omission",
+     "omitting b0 and b1 leaves four piece orbits and cannot license completeness")
+
+
+def supports_sha256(supports):
+    rows = sorted(tuple(sorted(int(value) for value in row)) for row in supports)
+    return hashlib.sha256(
+        json.dumps(rows, separators=(",", ":")).encode("utf-8")
+    ).hexdigest()
+
 EL = time.time() - T0
 RSS = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1048576.0
 ELB, RSB = upto(EL, 100), 2500
@@ -1792,8 +2071,123 @@ emit("elapsed under {0} s peak memory under {1} MB".format(ELB, RSB))
 gate(EL < 900.0 and RSS < float(RSB), "G34",
      "the whole runner finishes under {0} seconds inside the printed {1} MB".format(
          900, 2500))
-CH = OUT[0] + 120
+CH = OUT[0] + 1000
 gate(CH < 6000, "G35", "its output stays under {0} characters".format(6000))
 
 emit("")
-print("TOTAL: PASS={0} FAIL={1}".format(PF[0], PF[1]))
+print("per_element: checked -- all 192 support columns enter the incidence, group, "
+      "carrier, overlap, and family calculations", flush=True)
+print("per_site: checked and not executed -- one supplied coordinate four-cube only; "
+      "no framework cell or site is identified", flush=True)
+print("per_mode: checked and not executed -- these finite binary targets have no field "
+      "or momentum-mode decomposition", flush=True)
+print("per_block: checked -- all 15800 cutting rows and every exact anchored search "
+      "block through weight 16 are bound", flush=True)
+print("lattice_wide: checked and not executed -- no multi-cell, arbitrary-domain, "
+      "boundary, thermodynamic, or continuum statement", flush=True)
+
+receipt = {
+    "schema": "physical-cell-cutting-census-families-cycle748-v2",
+    "status": "pass" if PF[1] == 0 else "fail",
+    "claim_type": "bounded_theorem",
+    "audit_status_authority": "independent audit lane only",
+    "runner_sha256": file_sha256(PRIMARY_PATH),
+    "input_sha256": {path: file_sha256(path) for path in AUDIT_INPUT_PATHS},
+    "direct_dependencies": {
+        "cycle746": {
+            "receipt_sha256": file_sha256(C746_RECEIPT_PATH),
+            "independent_receipt_sha256": file_sha256(
+                C746_INDEPENDENT_RECEIPT_PATH
+            ),
+            "processed_pair_rows": C746_RECEIPT.get(
+                "supplied_incidence", {}
+            ).get("processed_pair_rows"),
+        },
+        "cycle747": {
+            "receipt_sha256": file_sha256(C747_RECEIPT_PATH),
+            "independent_receipt_sha256": file_sha256(
+                C747_INDEPENDENT_RECEIPT_PATH
+            ),
+            "all_marked_carrier_count": C747_RECEIPT.get(
+                "all_marked_weight_eight", {}
+            ).get("carrier_count"),
+            "anchored_four_carrier_count": len(DEP_C16),
+            "weight_eighteen_resolved": C747_RECEIPT.get(
+                "minimum_bracket", {}
+            ).get("weight_eighteen_resolved"),
+        },
+    },
+    "supplied_incidence": {
+        "cuttings": NS,
+        "support_columns": NPO,
+        "pieces_per_cutting": int(RW[0]),
+        "cuttings_per_piece": int(CSUM[0]),
+        "processed_pair_rows": PROCESSED_PAIR_ROWS,
+    },
+    "symmetry_witness": {
+        "geometric_generator_count": 48,
+        "geometric_piece_orbits": GEOMETRIC_ORBITS,
+        "extra_generator_b0": [int(value) for value in b0],
+        "extra_generator_b1": [int(value) for value in b1],
+        "generated_group_order": len(EG),
+        "generated_piece_orbits": EORB,
+        "all_marked_family_stable": PERMS,
+    },
+    "weight_sixteen_census": {
+        "anchored_carriers": [list(row) for row in C16],
+        "anchored_count": len(C16),
+        "anchored_sweep_complete": ALLOK,
+        "complete_carriers": [sorted(int(value) for value in row) for row in CEN],
+        "complete_carrier_count": len(CEN),
+        "complete_carriers_sha256": supports_sha256(CEN),
+        "carriers_through_each_piece": min(INCC.values()),
+        "direct_recheck_failures": BADC,
+        "group_family_sizes": FAM,
+        "overlap_profile_sizes": sorted(PRC.values()),
+    },
+    "all_marked_overlap": {
+        "pair_count": len(CEN) * NST,
+        "maximum": max(OVC),
+        "counts": {str(key): OVC[key] for key in sorted(OVC)},
+        "multiplicity_per_four_carrier": sorted(TOTC)[0],
+    },
+    "weight_twenty_construction": {
+        "cap_overlap_pairs": OVC[2],
+        "distinct_carrier_count": len(TW),
+        "distinct_carriers_sha256": supports_sha256(TW),
+        "carriers_through_each_piece": min(INCT.values()),
+        "direct_recheck_failures": BADT,
+        "group_family_sizes": FAMT,
+    },
+    "weight_eighteen_shape_boundary": {
+        "existence_resolved": False,
+        "maximum_intersection_with_all_marked_weight_eight": max(OKK),
+        "four_minimum": LEAST,
+        "four_all_marked_overlap_cap": CAP,
+    },
+    "no_go_discipline": {
+        "status": "PASS",
+        "claim_scope": (
+            "exact finite size-16 four-carrier census and group-family partition; "
+            "exact XOR-generated size-20 subfamily; conditional size-18 shape bound"
+        ),
+        "n5_execution_certificate": [
+            "per_element checked",
+            "per_site checked and not executed",
+            "per_mode checked and not executed",
+            "per_block checked",
+            "lattice_wide checked and not executed",
+        ],
+    },
+    "gates": {
+        "pass": PF[0],
+        "fail": PF[1],
+        "named": {name: "PASS" if ok else "FAIL" for name, ok in GATES},
+    },
+}
+RECEIPT_PATH.write_text(
+    json.dumps(receipt, indent=2, sort_keys=True) + "\n", encoding="utf-8"
+)
+print("RECEIPT " + str(RECEIPT_PATH.relative_to(ROOT)), flush=True)
+print("TOTAL: PASS={0} FAIL={1}".format(PF[0], PF[1]), flush=True)
+sys.exit(0 if PF[1] == 0 else 1)

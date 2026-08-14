@@ -69,6 +69,12 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
         "scripts/physical_cell_cutting_flip_partner_carrier_bracket_cycle747_"
         "independent_check_2026_08_08.py",
     ],
+    # Cycle 748's sibling checker rebuilds the opposite-pivot incidence and
+    # independently rederives the group census and family partitions.
+    "physical_cell_cutting_census_families_cycle748_note_2026-08-08": [
+        "scripts/physical_cell_cutting_census_families_cycle748_"
+        "independent_check_2026_08_08.py",
+    ],
     # Cycle 738's checker independently reconstructs the cutting incidence
     # with the opposite cover pivot and uses a separate exact-weight CNF/SAT
     # encoding, so it deliberately remains outside the primary import closure.

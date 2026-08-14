@@ -200,6 +200,12 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
         "scripts/physical_cell_cutting_flip_partner_carrier_bracket_cycle747_"
         "independent_check_2026_08_08.py",
     ],
+    # Cycle 748 independently reconstructs the incidence and every
+    # load-bearing group/census/family identity without importing the primary.
+    "physical_cell_cutting_census_families_cycle748_note_2026-08-08": [
+        "scripts/physical_cell_cutting_census_families_cycle748_"
+        "independent_check_2026_08_08.py",
+    ],
     "inter_site_gate_cycle970_bounded_theorem_note_2026-08-09": [
         "scripts/frontier_cycle970_gate_independent_check_2026_08_09.py",
     ],

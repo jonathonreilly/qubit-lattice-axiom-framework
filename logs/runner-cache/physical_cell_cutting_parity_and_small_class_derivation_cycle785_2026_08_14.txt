@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/physical_cell_cutting_parity_and_small_class_derivation_cycle785_2026_08_14.py
+runner_sha256: 1ddbf2071c2b37122e0fd2d49a04127957a6444d54974855696f6a1db44adc6c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 16.74
+status: ok
+----- stdout -----
+PASS K1 cell: 2672 candidate five-corner unit-determinant pieces, 400 kept at adjacency cost floor 6, 625 generic sample points
+PASS K2 cuttings: 15800 exact covers by 24 pieces, used pieces 192, each cutting meets every chamber once, failures 0
+PASS K3 chambers 192, 8 per piece and 8 per chamber: the order-384 cell group acts freely and transitively, even-mask subgroup 24 x 8 = 192
+PASS K4 tiles: every used piece is the graph of a function, positions 12, 16 pieces each in 2 types, classes 24 of 8, value law failures 0
+PASS K5 census: 25 realized profiles in 6 orbits, per-profile count by orbit size 9368:1 944:6 160:3 24:3 20:6 16:6, weighted total 15800
+the three mask subgroups that hold the all-axes flip 15: 0,3,12,15 and 0,5,10,15 and 0,6,9,15
+PASS K6 base fact: every class offset image lies inside exactly one of those three subgroups, class split 8 8 8, classes 24
+PASS K7 blocks: affine mask subsets per class 43 = 28 pairs + 14 four-element cosets + 1 whole group, total 1032
+PASS K8 block partitions: 1224 found by exact cover with at most one block per class, every one of them a cutting, distinct 1224
+PASS K9 purity: coset-pure cuttings among the 15800 number 1224, and that set equals the block partitions in both directions
+PASS K10 class content of the 1224 coset-pure cuttings: B 72 of 72 C 120 of 120 D 96 of 96 A 144 of 480 U 792 of 9368 O 0 of 5664
+PASS K11 action: all 384 elements carry all 15800 cuttings to cuttings, the 6 profile orbits cover the 25 profiles with a constant count on each
+PASS K12 equal split: 72/3 = 24 120/6 = 20 96/6 = 16, matching the measured per-profile counts 24 20 16 of the three small classes
+PASS K13 families: per subgroup 24 24 24 cuttings whose class mask sets are all cosets of it, every one in class C, 3 x 24 = 72 of 120
+PASS K14 closed form: two-covering six-class choices 512, of which 12 admit a consistent colouring, each in 1 part, 12 x 2 = 24 = the family
+characters: dropping any one of the seven leaves the intersection unchanged, and the character-only intersection is already that space
+PASS K15 parity: kernel dimensions 12 12 12 9 9 9 9, intersection dimension 7, 128 vectors, none parity-mixed, 15800 realized inside, distinct 124
+PASS K16 rejectors: level-one alone has dimension 18, 262144 vectors, 253952 parity-mixed; purity is not universal, 1224 under 15800, 144 under 480
+TOTAL: PASS=16 FAIL=0
+resource: under 60 s of the 900 s budget, under 250 MB of the 2500 MB budget, 2382 characters
+
+----- stderr -----
+

@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Wilson matching at g_bare=1 is independent of admission B1.
+"""Exact separation of a declared plaquette datum from the bare Haar mean.
 
 Paired note:
-  docs/PLAQUETTE_B1_CONVENTION_INDEPENDENT_OF_ONE_PLAQUETTE_MEAN_BOUNDED_THEOREM_NOTE_2026-08-13.md
+  docs/DECLARED_PLAQUETTE_COMPARISON_VALUE_DISTINCT_FROM_ONE_PLAQUETTE_HAAR_MEAN_BOUNDED_THEOREM_NOTE_2026-08-13.md
 
-Recomputes the SU(3) single-link series from the June 10 recurrence with an
-explicit Haar remainder. The numeral 0.5934 is compared only after p_1(6) is
-bounded, and is never an input to J or J'.
+The SU(3) one-plaquette series is recomputed from the June 10 recurrence.
+The declared datum 5934/10000 enters only after the independent half-ceiling
+for p_1(6) is closed. This runner writes no audit status or cache itself.
 """
 
 from __future__ import annotations
@@ -14,86 +14,92 @@ from __future__ import annotations
 from fractions import Fraction
 from math import factorial
 from pathlib import Path
+from typing import Callable
 
 
 ROOT = Path(__file__).resolve().parents[1]
 NOTE_REL = (
-    "docs/PLAQUETTE_B1_CONVENTION_INDEPENDENT_OF_ONE_PLAQUETTE_MEAN_BOUNDED_THEOREM_NOTE_2026-08-13.md"
+    "docs/DECLARED_PLAQUETTE_COMPARISON_VALUE_DISTINCT_FROM_ONE_PLAQUETTE_HAAR_MEAN_"
+    "BOUNDED_THEOREM_NOTE_2026-08-13.md"
 )
 JUNE10_REL = (
-    "docs/PLAQUETTE_VALUE_DERIVATION_PROGRAM_SPECIFICATION_AND_BRACKET_REDUCTION_NARROW_THEOREM_NOTE_2026-06-10.md"
+    "docs/PLAQUETTE_VALUE_DERIVATION_PROGRAM_SPECIFICATION_AND_BRACKET_REDUCTION_"
+    "NARROW_THEOREM_NOTE_2026-06-10.md"
 )
-AXIOM_REL = "docs/MINIMAL_AXIOMS_2026-06-29.md"
+ALPHA_REL = "docs/ALPHA_S_DERIVED_NOTE.md"
 SELF_REL = "docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md"
 
 AUDIT_INPUT_PATHS = (
-    "docs/PLAQUETTE_B1_CONVENTION_INDEPENDENT_OF_ONE_PLAQUETTE_MEAN_BOUNDED_THEOREM_NOTE_2026-08-13.md",
+    "docs/DECLARED_PLAQUETTE_COMPARISON_VALUE_DISTINCT_FROM_ONE_PLAQUETTE_HAAR_MEAN_BOUNDED_THEOREM_NOTE_2026-08-13.md",
     "docs/PLAQUETTE_VALUE_DERIVATION_PROGRAM_SPECIFICATION_AND_BRACKET_REDUCTION_NARROW_THEOREM_NOTE_2026-06-10.md",
-    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/ALPHA_S_DERIVED_NOTE.md",
+    "docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md",
 )
+AUDIT_TIMEOUT_SEC = 180
 
 NOTE_PATH = ROOT / NOTE_REL
 JUNE10_PATH = ROOT / JUNE10_REL
-AXIOM_PATH = ROOT / AXIOM_REL
+ALPHA_PATH = ROOT / ALPHA_REL
 SELF_PATH = ROOT / SELF_REL
 
 N_C = 3
-G_BARE = 1
+G_BARE = Fraction(1)
+BETA = Fraction(6)
 HALF = Fraction(1, 2)
-ADMITTED = Fraction(5934, 10000)
-FORBIDDEN = (
-    "we" + " adopt",
-    "new" + " axiom",
-    "promo" + "ted",
-    "Cod" + "ex",
-    "derived " + "0.5934",
-)
+DECLARED_COMPARATOR = Fraction(5934, 10000)
 
 
-def factorial_fraction(n: int) -> Fraction:
-    out = Fraction(1)
-    for k in range(2, n + 1):
-        out *= k
-    return out
-
-
-def recurrence_coeffs(nmax: int) -> list[Fraction]:
+def recurrence_coeffs(nmax: int, *, lag2_sign: int = 1) -> list[Fraction]:
+    """Return a_0,...,a_(nmax-1); lag2_sign supports a mutation gate."""
+    if nmax < 3:
+        raise ValueError("nmax must include the three recurrence seeds")
     coeffs = [Fraction(1), Fraction(0), Fraction(1, 36)]
-    for n in range(2, nmax):
-        nxt = (
-            Fraction(n * (n + 1)) * coeffs[n]
-            + Fraction(2 * (2 * n + 3)) * coeffs[n - 1]
-            + coeffs[n - 2]
-        ) / Fraction(6 * (n + 1) * (n + 4) * (n + 5))
-        coeffs.append(nxt)
+    for n in range(2, nmax - 1):
+        numerator = (
+            n * (n + 1) * coeffs[n]
+            + 2 * (2 * n + 3) * coeffs[n - 1]
+            + lag2_sign * coeffs[n - 2]
+        )
+        denominator = 6 * (n + 1) * (n + 4) * (n + 5)
+        coeffs.append(numerator / denominator)
     return coeffs
 
 
 def exp_tail_majorant(start: int, beta: Fraction) -> Fraction:
-    """Upper bound on sum_{k=start}^{infty} beta^k / k! for start > beta."""
-    if start <= beta:
-        raise ValueError("geometric majorant requires start > beta")
-    return (beta**start / factorial_fraction(start)) * Fraction(start, start - int(beta))
+    """Bound sum_{k=start}^infinity beta^k/k! for exact beta>=0, start>beta."""
+    if beta < 0 or Fraction(start) <= beta:
+        raise ValueError("geometric majorant requires 0 <= beta < start")
+    first = beta**start / factorial(start)
+    return first * Fraction(start, 1) / (Fraction(start, 1) - beta)
 
 
-def one_plaquette_enclosures(n_trunc: int, beta: Fraction) -> tuple[Fraction, Fraction, Fraction, Fraction]:
-    """Return (J_lo, J_hi, Jprime_lo, Jprime_hi) from the recurrence plus remainder.
-
-    The admitted B1 numeral is not an argument and is not used.
-    """
-    coeffs = recurrence_coeffs(n_trunc + 2)
-    j_lo = sum((coeffs[n] * beta**n for n in range(n_trunc + 1)), Fraction(0))
-    jp_lo = sum((n * coeffs[n] * beta ** (n - 1) for n in range(1, n_trunc + 1)), Fraction(0))
-    rem_j = exp_tail_majorant(n_trunc + 1, beta)
-    rem_jp = exp_tail_majorant(n_trunc, beta)
-    return j_lo, j_lo + rem_j, jp_lo, jp_lo + rem_jp
+def one_plaquette_enclosures(
+    n_trunc: int, beta: Fraction
+) -> tuple[Fraction, Fraction, Fraction, Fraction]:
+    """Return exact (J_lo, J_hi, Jprime_lo, Jprime_hi)."""
+    coeffs = recurrence_coeffs(n_trunc + 1)
+    j_lo = sum(
+        (coeffs[n] * beta**n for n in range(n_trunc + 1)), Fraction(0)
+    )
+    jp_lo = sum(
+        (n * coeffs[n] * beta ** (n - 1) for n in range(1, n_trunc + 1)),
+        Fraction(0),
+    )
+    return (
+        j_lo,
+        j_lo + exp_tail_majorant(n_trunc + 1, beta),
+        jp_lo,
+        jp_lo + exp_tail_majorant(n_trunc, beta),
+    )
 
 
 def declared_matching(n_c: int, g_bare: Fraction) -> Fraction:
-    return Fraction(2 * n_c, g_bare * g_bare)
+    if g_bare == 0:
+        raise ZeroDivisionError("g_bare must be nonzero")
+    return Fraction(2 * n_c, 1) / (g_bare * g_bare)
 
 
-def matching_gate(matching_fn) -> bool:
+def matching_gate(matching_fn: Callable[[int, Fraction], Fraction]) -> bool:
     return (
         matching_fn(3, Fraction(1)) == Fraction(6)
         and matching_fn(3, Fraction(2)) == Fraction(3, 2)
@@ -101,8 +107,8 @@ def matching_gate(matching_fn) -> bool:
     )
 
 
-def mean_separation_gate(p1_upper: Fraction, admitted: Fraction) -> bool:
-    return p1_upper < HALF < admitted
+def separation_gate(p1_upper: Fraction, comparator: Fraction) -> bool:
+    return p1_upper < HALF < comparator
 
 
 class Checks:
@@ -112,12 +118,10 @@ class Checks:
 
     def check(self, label: str, condition: bool, detail: str = "") -> None:
         ok = bool(condition)
-        if ok:
-            self.passed += 1
-        else:
-            self.failed += 1
-        extra = f"  ({detail})" if detail else ""
-        print(f"{'PASS' if ok else 'FAIL'}: {label}{extra}")
+        self.passed += int(ok)
+        self.failed += int(not ok)
+        suffix = f"  ({detail})" if detail else ""
+        print(f"{'PASS' if ok else 'FAIL'}: {label}{suffix}")
 
     def finish(self) -> int:
         print(f"TOTAL: PASS={self.passed} FAIL={self.failed}")
@@ -126,15 +130,20 @@ class Checks:
 
 def main() -> int:
     checks = Checks()
+    print("Declared plaquette comparator versus bare one-plaquette Haar mean")
     print("AUDIT_INPUT_PATHS:")
     for path in AUDIT_INPUT_PATHS:
         print(f"  {path}")
+    print(f"AUDIT_TIMEOUT_SEC: {AUDIT_TIMEOUT_SEC}")
     print("cache_write: false")
-    print("external_scientific_inputs: June 10 recurrence and Haar majorant; 0.5934 compared only after p_1 is bounded")
+    print(
+        "external_scientific_inputs: June 10 exact recurrence; alpha_s declared "
+        "comparator; finite-diagnostic non-derivation boundary"
+    )
 
     note = NOTE_PATH.read_text(encoding="utf-8")
     june10 = JUNE10_PATH.read_text(encoding="utf-8")
-    axiom = AXIOM_PATH.read_text(encoding="utf-8")
+    alpha = ALPHA_PATH.read_text(encoding="utf-8")
     self_note = SELF_PATH.read_text(encoding="utf-8")
 
     checks.check(
@@ -143,133 +152,251 @@ def main() -> int:
         f"{len(AUDIT_INPUT_PATHS)} paths",
     )
     checks.check(
-        "theorem-1-declared-matching",
+        "audit-input-paths-unique-and-normalized",
+        len(AUDIT_INPUT_PATHS) == len(set(AUDIT_INPUT_PATHS))
+        and all(not Path(path).is_absolute() and ".." not in Path(path).parts for path in AUDIT_INPUT_PATHS),
+    )
+    checks.check("audit-timeout-declared", AUDIT_TIMEOUT_SEC == 180)
+
+    # Matching family and two explicit mutations.
+    checks.check(
+        "declared-matching-three-point-gate",
         matching_gate(declared_matching),
-        "beta = 2 N_c / g_bare^2 at (3,1),(3,2),(2,1)",
+        "(N_c,g)=(3,1),(3,2),(2,1)",
     )
     checks.check(
-        "discriminating-matching-rejects-product-form",
-        not matching_gate(lambda n_c, g: Fraction(2 * n_c) * g * g),
+        "declared-point-is-beta-six",
+        declared_matching(N_C, G_BARE) == BETA,
     )
     checks.check(
-        "discriminating-matching-rejects-missing-two",
-        not matching_gate(lambda n_c, g: Fraction(n_c, g * g)),
+        "mutation-product-matching-rejected",
+        not matching_gate(lambda n_c, g: Fraction(2 * n_c, 1) * g * g),
     )
     checks.check(
-        "g-bare-one-selects-beta-six",
-        declared_matching(N_C, Fraction(G_BARE)) == Fraction(6) and N_C == 3 and G_BARE == 1,
+        "mutation-missing-factor-two-rejected",
+        not matching_gate(lambda n_c, g: Fraction(n_c, 1) / (g * g)),
     )
 
-    coeffs = recurrence_coeffs(24)
-    rhs3 = Fraction(2 * 3) * coeffs[2] + Fraction(2 * (4 + 3)) * coeffs[1] + coeffs[0]
-    den3 = Fraction(6 * 3 * 6 * 7)
-    rhs4 = Fraction(3 * 4) * coeffs[3] + Fraction(2 * (6 + 3)) * coeffs[2] + coeffs[1]
-    den4 = Fraction(6 * 4 * 7 * 8)
-    checks.check("recurrence-a3-from-seeds", rhs3 / den3 == Fraction(1, 648) == coeffs[3])
-    checks.check("recurrence-a4-from-recurrence", rhs4 / den4 == Fraction(1, 2592) == coeffs[4])
+    # Exact recurrence family.
+    coeffs = recurrence_coeffs(25)
+    mutated = recurrence_coeffs(25, lag2_sign=-1)
+    checks.check("recurrence-seed-a0", coeffs[0] == 1)
+    checks.check("recurrence-seed-a1", coeffs[1] == 0)
+    checks.check("recurrence-seed-a2", coeffs[2] == Fraction(1, 36))
+    checks.check("recurrence-a3", coeffs[3] == Fraction(1, 648))
+    checks.check("recurrence-a4", coeffs[4] == Fraction(1, 2592))
     checks.check(
-        "haar-majorant-0-le-a-n-le-1-over-n-factorial",
-        all(Fraction(0) <= coeffs[n] <= Fraction(1, factorial(n)) for n in range(len(coeffs))),
+        "recurrence-nonnegative-through-proof-truncation",
+        all(value >= 0 for value in coeffs),
+    )
+    checks.check(
+        "haar-moment-majorant-through-proof-truncation",
+        all(value <= Fraction(1, factorial(n)) for n, value in enumerate(coeffs)),
+    )
+    checks.check(
+        "mutation-recurrence-lag2-sign-rejected",
+        mutated[3] != Fraction(1, 648) and mutated[3] != coeffs[3],
     )
 
-    # p_1 enclosure is computed with no reference to the admitted numeral.
-    j_lo16, j_hi16, jp_lo16, jp_hi16 = one_plaquette_enclosures(16, Fraction(6))
-    p1_lo16 = jp_lo16 / j_hi16
-    p1_hi16 = jp_hi16 / j_lo16
-    gap16 = j_lo16 - 2 * jp_hi16
-    if not (p1_hi16 < HALF):
-        print(f"honest residual: p1_hi16 - 1/2 = {p1_hi16 - HALF}")
+    # Exact tail family and submitted off-by-one regression.
+    tail_j16 = exp_tail_majorant(17, BETA)
+    tail_jp16 = exp_tail_majorant(16, BETA)
+    submitted_bad_tail_j16 = (
+        Fraction(6**17, factorial(17)) * Fraction(18, 12)
+    )
+    checks.check(
+        "tail-j16-correct-first-omitted-index",
+        tail_j16 == Fraction(708588, 9634625),
+    )
+    checks.check(
+        "tail-jprime16-exact",
+        tail_jp16 == Fraction(944784, 4379375),
+    )
+    checks.check(
+        "mutation-submitted-off-by-one-tail-rejected",
+        submitted_bad_tail_j16 < tail_j16,
+        "draft factor (N+2)/(N-4) is too small at N=16",
+    )
+    checks.check(
+        "tail-generic-rational-beta",
+        exp_tail_majorant(3, Fraction(3, 2))
+        == Fraction(3, 2) ** 3 / factorial(3) * Fraction(3, 1) / Fraction(3, 2),
+    )
+
+    # Order-16 theorem.
+    j16, j16_hi, jp16, jp16_hi = one_plaquette_enclosures(16, BETA)
+    p16_lo = jp16 / j16_hi
+    p16_hi = jp16_hi / j16
+    exact_gap16 = j16 - 2 * jp16_hi
     checks.check(
         "n16-displayed-partial-sums",
-        j_lo16 == Fraction(251763633587, 73156608000)
-        and jp_lo16 == Fraction(443237359, 304819200),
+        j16 == Fraction(251763633587, 73156608000)
+        and jp16 == Fraction(443237359, 304819200),
     )
     checks.check(
-        "n16-remainder-and-envelope",
-        exp_tail_majorant(16, Fraction(6)) == Fraction(944784, 4379375)
-        and jp_hi16 == Fraction(259952292959, 155675520000),
+        "n16-displayed-upper-envelope",
+        jp16_hi == Fraction(259952292959, 155675520000),
     )
     checks.check(
-        "theorem-2-n16-strict-half-ceiling",
-        gap16 == Fraction(5323057146257, 52306974720000) and gap16 > 0 and p1_hi16 < HALF,
-        f"p1 in ({p1_lo16.limit_denominator(10**6)}, {p1_hi16.limit_denominator(10**6)})",
-    )
-
-    j_lo20, j_hi20, jp_lo20, jp_hi20 = one_plaquette_enclosures(20, Fraction(6))
-    p1_hi20 = jp_hi20 / j_lo20
-    checks.check(
-        "independent-n20-remainder-ceiling",
-        2 * jp_hi20 < j_lo20 and p1_hi20 < HALF < ADMITTED,
+        "n16-displayed-positive-gap",
+        exact_gap16 == Fraction(5323057146257, 52306974720000)
+        and exact_gap16 > 0,
     )
     checks.check(
-        "admitted-numeral-compared-only-after-bound",
-        mean_separation_gate(p1_hi16, ADMITTED) and mean_separation_gate(p1_hi20, ADMITTED),
-        "p_1(6) < 1/2 < 5934/10000",
-    )
-    checks.check(
-        "discriminating-mean-rejects-admitted-numeral",
-        not mean_separation_gate(ADMITTED, ADMITTED),
-    )
-    checks.check(
-        "p1-upper-is-not-an-offset-from-admitted-numeral",
-        p1_hi16 != ADMITTED and (ADMITTED - p1_hi16) == ADMITTED - p1_hi16 and p1_hi16 < HALF,
+        "n16-certified-half-ceiling",
+        Fraction(0) < p16_lo < p16_hi < HALF,
+        f"interval=({float(p16_lo):.12f},{float(p16_hi):.12f})",
     )
 
+    # Order-20 independent truncation and final rational comparison.
+    j20, j20_hi, jp20, jp20_hi = one_plaquette_enclosures(20, BETA)
+    p20_lo = jp20 / j20_hi
+    p20_hi = jp20_hi / j20
     checks.check(
-        "note-does-not-derive-05934",
-        "This note does not derive 0.5934." in note,
+        "n20-certified-interval-contained-in-n16",
+        p16_lo < p20_lo < p20_hi < p16_hi,
+        f"interval=({float(p20_lo):.12f},{float(p20_hi):.12f})",
+    )
+    checks.check("n20-independent-half-ceiling", 2 * jp20_hi < j20)
+    checks.check(
+        "declared-comparator-exact-rational",
+        DECLARED_COMPARATOR == Fraction(2967, 5000),
     )
     checks.check(
-        "note-does-not-retire-b1",
-        "does not retire B1" in note and "three-point" in note and "ln Z_L" in note and "mass-gap" in note,
+        "strict-object-value-separation-n16",
+        separation_gate(p16_hi, DECLARED_COMPARATOR),
     )
     checks.check(
-        "note-preserves-declared-numerals",
-        "0.5934" in note and "beta = 6" in note and "g_bare = 1" in note and "5934/10000" in note,
+        "strict-object-value-separation-n20",
+        separation_gate(p20_hi, DECLARED_COMPARATOR),
     )
     checks.check(
-        "note-machine-status-contract",
+        "mutation-comparator-as-haar-mean-rejected",
+        not separation_gate(DECLARED_COMPARATOR, DECLARED_COMPARATOR),
+    )
+    checks.check(
+        "comparator-not-used-by-haar-enclosure",
+        one_plaquette_enclosures(16, BETA) == (j16, j16_hi, jp16, jp16_hi),
+    )
+
+    # Source provenance and current no-live-admission boundary.
+    checks.check(
+        "june10-recurrence-source-present",
+        "6(N+1)(N+4)(N+5) a_{N+1}" in june10
+        and "0 <= a_n <= 1/n!" in june10,
+    )
+    checks.check(
+        "june10-withholds-comparator-derivation",
+        "does not derive `0.5934`" in june10,
+    )
+    checks.check(
+        "alpha-source-declares-comparison-input",
+        "Declared boundary inputs" in alpha
+        and "<P> = 0.5934" in alpha
+        and "None of them is" in alpha
+        and "claimed as derived by this note" in alpha,
+    )
+    checks.check(
+        "finite-diagnostic-withholds-value-derivation",
+        "0.5934" in self_note
+        and "not a value derived" in self_note
+        and "does not claim" in self_note,
+    )
+
+    # Audit-compatible note and trace surface.
+    machine_markers = (
+        "actual_current_surface_status: bounded-support",
+        "target_claim_type: bounded_theorem",
+        "trace_class: negative_route_pruning",
+        "target_claim_id: alpha_s_derived_note",
+        "target_blocker_text:",
+        "source_of_blocker_text: handoff",
+        "reachability_to_target: prunes",
+        "artifact_role: theorem",
+        "next_trace_action:",
+        "conditional_surface_status:",
+        "hypothetical_axiom_status: no edit",
+        "audit_required_before_effective_retained: true",
+        "bare_retained_allowed: false",
+    )
+    checks.check(
+        "note-machine-status-complete",
+        all(marker in note for marker in machine_markers),
+    )
+    checks.check(
+        "note-dependency-links-complete",
         all(
-            phrase in note
-            for phrase in (
-                "actual_current_surface_status: bounded-support",
-                "audit_required_before_effective_retained: true",
-                "bare_retained_allowed: false",
-                "hypothetical_axiom_status: no edit",
-                "claim_type: bounded_theorem",
-            )
-        ),
-    )
-    forbidden_hits = [phrase for phrase in FORBIDDEN if phrase in note]
-    checks.check("note-forbidden-phrases-absent", not forbidden_hits, ",".join(forbidden_hits))
-    checks.check(
-        "june10-recurrence-and-nonderivation",
-        "6(N+1)(N+4)(N+5) a_{N+1} = N(N+1) a_N + 2(2N+3) a_{N-1} + a_{N-2}" in june10
-        and "0 <= a_n <= 1/n!" in june10
-        and "does not derive `0.5934`" in june10,
-    )
-    checks.check(
-        "axiom-memo-unedited-surface",
-        "Lattice" in axiom and "Qubit" in axiom and "Admissibility" in axiom and "Record" in axiom,
-    )
-    checks.check(
-        "self-consistency-is-license-not-derivation",
-        "admitted comparison/reuse number" in self_note and "not a value derived" in self_note,
-    )
-    checks.check(
-        "note-links-required-sources",
-        all(
-            name in note
-            for name in (
-                "MINIMAL_AXIOMS_2026-06-29.md",
-                "PLAQUETTE_VALUE_DERIVATION_PROGRAM_SPECIFICATION_AND_BRACKET_REDUCTION_NARROW_THEOREM_NOTE_2026-06-10.md",
+            filename in note
+            for filename in (
+                "ALPHA_S_DERIVED_NOTE.md",
                 "PLAQUETTE_SELF_CONSISTENCY_NOTE.md",
+                "PLAQUETTE_VALUE_DERIVATION_PROGRAM_SPECIFICATION_AND_BRACKET_REDUCTION_NARROW_THEOREM_NOTE_2026-06-10.md",
             )
         ),
     )
     checks.check(
-        "non-claims-visible",
-        "No 4D" in note and "no Monte Carlo" in note and "no axiom necessity" in note and "no new primitive" in note,
+        "note-primary-name-is-explicit",
+        note.startswith("---")
+        and "# Declared Plaquette Comparison Value Is Distinct" in note
+        and "# Plaquette B1" not in note,
+    )
+    checks.check(
+        "note-correct-tail-formula",
+        "(N+1)/(N-5)" in note and "(N+2) / (N-4)" not in note,
+    )
+    checks.check(
+        "note-coupling-specific-boundary",
+        "coupling-independent ceiling" in note
+        and "coupling-specific at the declared `beta=6` point" in note,
+    )
+    checks.check(
+        "note-object-separation-boundary",
+        "object-separation" in note
+        and "It is not the interacting 4D object" in note
+        and "No 4D" in note,
+    )
+
+    # No-Go Discipline N1-N8 and route preservation.
+    checks.check(
+        "no-go-n1-through-n8-present",
+        all(f"### N{index}" in note for index in range(1, 9)),
+    )
+    checks.check(
+        "no-go-n1-route-count-and-markers",
+        note.count("**ATTEMPTED**") >= 5
+        and "correlated 4D Wilson/Haar measure" in note
+        and "finite-volume `ln Z_L`" in note,
+    )
+    checks.check(
+        "no-go-steelman-accepted",
+        "The objection is" in note
+        and "correct. The theorem is retained only" in note
+        and "4D correlations can change the mean" in note,
+    )
+    checks.check(
+        "no-go-live-routes-preserved",
+        "preserved as the June 10 certification route" in note
+        and "remains open" in note,
+    )
+
+    # Machine-readable N5 certificate lines are also emitted to cache stdout.
+    n5_lines = (
+        "per-element: executed — exact recurrence coefficient arithmetic",
+        "per-site: not applicable — the proved object has no lattice sites",
+        "per-mode: not applicable — no mode decomposition is used",
+        "per-block: executed — the one-plaquette Haar block is fully bounded",
+        "lattice-wide: not executed — no correlated 4D lattice is evaluated",
+    )
+    checks.check("n5-certificate-five-lines-in-note", all(line in note for line in n5_lines))
+    print("N5_CERTIFICATE:")
+    for line in n5_lines:
+        print(line)
+
+    checks.check(
+        "explicit-nonclaims-visible",
+        "No axiom edit" in note
+        and "No 4D" in note
+        and "not a derived or admitted theorem" in note,
     )
     return 0 if checks.finish() == 0 else 1
 

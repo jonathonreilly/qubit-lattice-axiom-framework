@@ -1,279 +1,300 @@
 ---
-claim_id: plaquette_b1_convention_independent_of_one_plaquette_mean_bounded_theorem_note_2026-08-13
+claim_id: declared_plaquette_comparison_value_distinct_from_one_plaquette_haar_mean_bounded_theorem_note_2026-08-13
 claim_type: bounded_theorem
-claim_scope: "On the declared Wilson matching beta = 2 N_c / g_bare^2 with N_c = 3, the point g_bare = 1 selects beta = 6 exactly. The exact one-plaquette Haar mean p_1(6) = J'(6)/J(6) is remainder-controlled from the June 10 single-link recurrence and satisfies p_1(6) < 1/2 < 5934/10000. The rational 5934/10000 is compared only after the bound on p_1 is closed. The matching convention therefore does not select admission B1. The note does not derive 0.5934 and does not retire B1."
+claim_scope: "On the declared Wilson surface beta = 2 N_c / g_bare^2 with N_c = 3 and g_bare = 1, beta = 6 exactly. For the normalized one-plaquette SU(3) Haar integral J(b), the June 10 recurrence and an explicit exponential-tail majorant prove p_1(6) = J'(6)/J(6) < 1/2 < 5934/10000. The last rational is a declared comparison input, historically labeled B1 in the alpha_s source, and is not derived here. This theorem separates that input from the bare one-plaquette object; it does not evaluate the correlated 4D thermodynamic-limit plaquette."
 upstream_dependencies:
-  - minimal_axioms
+  - alpha_s_derived_note
+  - plaquette_self_consistency_note
   - plaquette_value_derivation_program_specification_and_bracket_reduction_narrow_theorem_note_2026-06-10
-runner: scripts/plaquette_b1_convention_independent_of_one_plaquette_mean_2026_08_13.py
+runner: scripts/declared_plaquette_comparison_value_distinct_from_one_plaquette_haar_mean_2026_08_13.py
 ---
 
-# Plaquette B1 Convention Independent of the One-Plaquette Haar Mean
+# Declared Plaquette Comparison Value Is Distinct from the Bare One-Plaquette Haar Mean
 
 **Date:** 2026-08-13
 **Type:** bounded_theorem
-**Scope:** exact Wilson matching arithmetic at `g_bare = 1`, and a
-remainder-controlled bound on the single-plaquette Haar mean at `beta = 6`.
-**Status authority:** independent audit lane only. This source note writes no
-audit verdict and predicts none.
+**Scope:** exact Wilson matching arithmetic on a declared surface and a
+remainder-controlled bound for one normalized `SU(3)` Haar integral.
+**Status authority:** independent audit lane only. This note writes no audit
+verdict and predicts none.
 **Primary runner:**
-[`scripts/plaquette_b1_convention_independent_of_one_plaquette_mean_2026_08_13.py`](../scripts/plaquette_b1_convention_independent_of_one_plaquette_mean_2026_08_13.py)
+[`scripts/declared_plaquette_comparison_value_distinct_from_one_plaquette_haar_mean_2026_08_13.py`](../scripts/declared_plaquette_comparison_value_distinct_from_one_plaquette_haar_mean_2026_08_13.py)
 
-## Result Up Front
+## Result up front
 
-Admission B1 of
-[`ALPHA_S_DERIVED_NOTE.md`](ALPHA_S_DERIVED_NOTE.md) is the numeral
-`<P>* = 0.5934`, licensed only as an admitted comparison/reuse number by
-[`PLAQUETTE_SELF_CONSISTENCY_NOTE.md`](PLAQUETTE_SELF_CONSISTENCY_NOTE.md).
-The June 10 program note
-[`PLAQUETTE_VALUE_DERIVATION_PROGRAM_SPECIFICATION_AND_BRACKET_REDUCTION_NARROW_THEOREM_NOTE_2026-06-10.md`](PLAQUETTE_VALUE_DERIVATION_PROGRAM_SPECIFICATION_AND_BRACKET_REDUCTION_NARROW_THEOREM_NOTE_2026-06-10.md)
-specified the retirement interface for that admission and did not derive the
-numeral.
+The `alpha_s` forward-computation source
+[`ALPHA_S_DERIVED_NOTE.md`](ALPHA_S_DERIVED_NOTE.md) takes
+`<P> = 0.5934` as a declared boundary input. Its historical local label for
+that input is `B1`; the label is provenance, not the primary name of this
+theorem and not a live admission class. The finite-diagnostic source
+[`PLAQUETTE_SELF_CONSISTENCY_NOTE.md`](PLAQUETTE_SELF_CONSISTENCY_NOTE.md)
+does not derive that numeral. Current premise governance supplies no live
+admission that could make the numeral an axiom consequence.
 
-This stretch answers a narrower question. The Wilson matching convention
-`beta = 2 N_c / g_bare^2` at `N_c = 3` and `g_bare = 1` selects
-`beta = 6` exactly. That coupling does **not** select the admitted B1
-numeral, because the exact one-plaquette Haar mean at `beta = 6` lies
-strictly below `1/2`, and `1/2` lies strictly below `5934/10000`.
+On the separately declared Wilson matching
+`beta = 2 N_c / g_bare^2`, the point `N_c = 3`, `g_bare = 1` selects
+`beta = 6` exactly. The normalized bare one-plaquette Haar mean at that point
+satisfies the certified separation
 
-This note does not derive 0.5934. It does not retire B1. The named remaining
-path is the June 10 three-point `ln Z_L` / mass-gap interface.
+```text
+p_1(6) = J'(6)/J(6) < 1/2 < 5934/10000.
+```
 
-## Machine Status And Trace
+Thus the matching convention plus the bare one-plaquette Haar measure does
+not reproduce the declared comparison value. This is an object-separation
+theorem. It neither derives `0.5934` nor evaluates the correlated 4D
+thermodynamic-limit plaquette `<P>*` specified by the June 10 source
+[`PLAQUETTE_VALUE_DERIVATION_PROGRAM_SPECIFICATION_AND_BRACKET_REDUCTION_NARROW_THEOREM_NOTE_2026-06-10.md`](PLAQUETTE_VALUE_DERIVATION_PROGRAM_SPECIFICATION_AND_BRACKET_REDUCTION_NARROW_THEOREM_NOTE_2026-06-10.md).
+
+## Machine status and trace
 
 ```yaml
 actual_current_surface_status: bounded-support
 target_claim_type: bounded_theorem
-claim_type_reason: "Exact matching arithmetic and a remainder-controlled one-plaquette bound are proved; 4D thermodynamic-limit <P>* and B1 retirement remain open."
-trace_class: convention_independence
+claim_type_reason: "Exact matching arithmetic and a certified one-plaquette separation are proved; the 4D thermodynamic-limit plaquette value is not evaluated."
+trace_class: negative_route_pruning
+target_claim_id: alpha_s_derived_note
+target_blocker_text: "certify the correlated 4D thermodynamic-limit Wilson plaquette value represented by the declared comparison input 5934/10000"
+source_of_blocker_text: handoff
+reachability_to_target: prunes
 artifact_role: theorem
+next_trace_action: "evaluate a certified finite-volume three-point ln Z_L bracket or another rigorous 4D Wilson/Haar route"
+conditional_surface_status: "exact only on the declared beta = 2 N_c/g_bare^2 matching and the normalized bare one-plaquette SU(3) Haar measure; no 4D value closure"
 hypothetical_axiom_status: no edit
-admitted_observation_status: "0.5934 is compared only as an admitted numeral after p_1 is bounded"
+admitted_observation_status: "no live admission class is invoked; 5934/10000 is compared only as declared data from the alpha_s source"
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
 
-## Premises (one hop)
+## Premises and provenance (one hop)
 
-- **M1 (declared matching).** Gauge group `SU(3)`, so `N_c = 3`. The Wilson
-  matching used on this surface is
-  `beta = 2 N_c / g_bare^2`. At `g_bare = 1` this is an exact rational
-  identity, not a fit. The matching is a declared convention, not an axiom
-  consequence.
-- **M2 (single-link engine; June 10).** The single-link generating function
-  is the normalized Haar integral
-  `J(b) = int_{SU(3)} exp((b/3) Re Tr U) dHaar U = sum_{n >= 0} a_n b^n`,
-  with the order-3 recurrence
-  `6(N+1)(N+4)(N+5) a_{N+1} = N(N+1) a_N + 2(2N+3) a_{N-1} + a_{N-2}`
-  and seeds `a_0 = 1`, `a_1 = 0`, `a_2 = 1/36`. Authority for the engine and
-  for the range `Re Tr U in [-3/2, 3]` is the June 10 note; the coefficients
-  used below are recomputed from the recurrence, not imported as decimals.
-- **M3 (B1 license, not a derivation).** The numeral `0.5934` enters only as
-  the admitted B1 comparison numeral
-  `5934/10000`.
-  [`PLAQUETTE_SELF_CONSISTENCY_NOTE.md`](PLAQUETTE_SELF_CONSISTENCY_NOTE.md)
-  licenses that numeral as comparison/reuse and does not derive it.
-- **M4 (axiom memo; no edit).**
-  [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) is an
-  upstream dependency. No axiom sentence is used as a hypothesis that
-  selects `0.5934`, and this note performs no axiom edit.
+- **M1 (declared matching).** `N_c = 3`, `g_bare = 1`, and
+  `beta = 2 N_c/g_bare^2` are stipulated evaluation data on this surface.
+  The matching is a convention, not an axiom consequence.
+- **M2 (exact single-link engine).** The June 10 source supplies the
+  normalized Haar integral
+  `J(b) = int_SU(3) exp((b/3) Re Tr U) dHaar U = sum_{n>=0} a_n b^n`,
+  the recurrence
 
-No Monte Carlo sample, no 4D transfer matrix, and no fitted selector enters.
+  ```text
+  6(N+1)(N+4)(N+5) a_{N+1}
+    = N(N+1) a_N + 2(2N+3) a_{N-1} + a_{N-2},
+  ```
 
-## Exact objects
+  and seeds `a_0 = 1`, `a_1 = 0`, `a_2 = 1/36`. The paired runner
+  recomputes all coefficients used here as exact rationals.
+- **M3 (declared comparison datum).** `5934/10000` is read from the
+  `alpha_s` source under the finite-diagnostic source's non-derivation
+  boundary. It is not an input to `J`, `J'`, the recurrence, or either
+  remainder bound.
 
-The one-plaquette Haar mean at coupling `b` is
+No axiom memo is a load-bearing premise. No Monte Carlo sample, fitted
+selector, 4D transfer matrix, or thermodynamic-limit assumption enters the
+proved inequality.
 
-```text
-p_1(b) := (d/db) ln J(b) = J'(b) / J(b).
-```
+## Exact objects and obligation graph
 
-This is the mean of `(1/3) Re Tr U` for a single Haar-weighted Wilson
-plaquette. It is not the 4D thermodynamic-limit object `<P>* := 1 + f'(6)`
-named by the June 10 specification.
-
-Write `a_n` for the recurrence coefficients. Then
+The bare one-plaquette mean is
 
 ```text
-J(b)  = sum_{n >= 0} a_n b^n ,
-J'(b) = sum_{n >= 1} n a_n b^{n-1}.
+p_1(b) := (d/db) ln J(b) = J'(b)/J(b).
 ```
 
-## Coefficient lemmas
+This is the mean of `(1/3) Re Tr U` under one normalized Haar measure
+reweighted by `exp((b/3) Re Tr U)`. It is not the interacting 4D object
+`<P>* := 1 + f'(6)`.
 
-**Lemma C1 (recurrence seeds).** `a_0 = 1`, `a_1 = 0`, `a_2 = 1/36` by M2.
+| obligation | input | exact check | output |
+|---|---|---|---|
+| O1 | M1 | `2*3/1^2 = 6` | declared point `beta=6` |
+| O2 | M2 | recurrence seeds and coefficients through order 20 | exact `J_N`, `J'_N` |
+| O3 | `Re Tr U in [-3/2,3]` from M2 | `0 <= a_n <= 1/n!` | exponential tail majorants |
+| O4 | O2, O3 at `N=16` | `J_16 - 2(J'_16+R'_16)>0` | `p_1(6)<1/2` |
+| O5 | O4, M3 | `1/2 < 5934/10000` | strict object-value separation |
+| O6 | object definitions | bare one-plaquette versus correlated 4D measure | scope boundary retained |
 
-**Lemma C2 (recomputed `a_3`).** The recurrence at `N = 2` reads
+The target is exactly O5. O6 prevents the target from being silently enlarged
+to a statement about every method for computing `<P>*`.
+
+## Coefficient and remainder lemmas
+
+The recurrence at `N=2` gives
 
 ```text
-6 * 3 * 6 * 7 * a_3 = 2*3*a_2 + 2*(7)*a_1 + a_0
-                    = 6*(1/36) + 0 + 1
-                    = 7/6.
+6*3*6*7*a_3 = 2*3*(1/36) + 1 = 7/6,
+a_3 = 1/648.
 ```
 
-The left coefficient is `756`, so `a_3 = (7/6)/756 = 7/4536 = 1/648`.
-
-**Lemma C3 (recomputed `a_4`).** The recurrence at `N = 3` reads
+At `N=3` it gives
 
 ```text
-6 * 4 * 7 * 8 * a_4 = 3*4*a_3 + 2*(9)*a_2 + a_1
-                    = 12/648 + 18/36
-                    = 1/54 + 1/2
-                    = 14/27.
+6*4*7*8*a_4 = 3*4*(1/648) + 2*9*(1/36) = 14/27,
+a_4 = 1/2592.
 ```
 
-The left coefficient is `1344`, so `a_4 = (14/27)/1344 = 1/(27*96) = 1/2592`.
+Every recurrence coefficient on the right is nonnegative and the denominator
+is positive, so induction gives `a_n >= 0`. Since
+`|(1/3) Re Tr U| <= 1`, the moment expansion also gives
+`a_n <= 1/n!`.
 
-**Lemma C4 (nonnegativity).** The seeds are nonnegative. For every `N >= 2`
-the recurrence denominator `6(N+1)(N+4)(N+5)` is positive and the right-hand
-side is a nonnegative combination of `a_N`, `a_{N-1}`, and `a_{N-2}`. By
-induction, `a_n >= 0` for every `n`.
-
-**Lemma C5 (Haar majorant).** June 10 records `Re Tr U in [-3/2, 3]`, so
-`|(1/3) Re Tr U| <= 1`. Expanding the exponential in the Haar integral gives
-`a_n = (1/n!) E[((1/3) Re Tr U)^n]`, hence `0 <= a_n <= 1/n!`.
-
-## Remainder calculus
-
-Fix an integer truncation `N >= 12` and set `b = 6`. Lemmas C4 and C5 give
+For integer `M>6`, successive terms in the exponential tail have ratio at
+most `6/(M+1) < 6/M`, hence
 
 ```text
-0 <= J(6)  - sum_{n=0}^{N} a_n 6^n
-   <= sum_{n=N+1}^{infty} 6^n / n! ,
-
-0 <= J'(6) - sum_{n=1}^{N} n a_n 6^{n-1}
-   <= sum_{n=N+1}^{infty} 6^{n-1} / (n-1)!
-    = sum_{k=N}^{infty} 6^k / k! .
+sum_{k=M}^infinity 6^k/k!
+  <= (6^M/M!) * sum_{j=0}^infinity (6/M)^j
+  =  (6^M/M!) * M/(M-6).
 ```
 
-The exponential tail `sum_{k=M}^{infty} 6^k / k!` with `M > 6` is at most
-the first term times the geometric majorant `M / (M-6)`:
+For a truncation at order `N`, the valid bounds are therefore
 
 ```text
-sum_{k=M}^{infty} 6^k / k!  <=  (6^M / M!) * M / (M-6).
+R_N  := (6^(N+1)/(N+1)!) * (N+1)/(N-5),
+R'_N := (6^N/N!)         * N/(N-6),
+
+0 <= J(6)-J_N   <= R_N,
+0 <= J'(6)-J'_N <= R'_N.
 ```
 
-Therefore the explicit remainder bounds
+The displayed `R_N` is deliberately indexed by its first omitted term
+`M=N+1`; this avoids the off-by-one factor present in the submitted draft.
+Positivity then gives
 
 ```text
-R_N   := (6^{N+1} / (N+1)!) * (N+2) / (N-4) ,
-R'_N  := (6^{N} / N!) * N / (N-6)
+J'_N/(J_N+R_N) <= p_1(6) <= (J'_N+R'_N)/J_N.
 ```
 
-satisfy `0 <= J(6) - J_N <= R_N` and `0 <= J'(6) - J'_N <= R'_N`, where
-`J_N` and `J'_N` are the displayed partial sums. Both `J_N` and `J'_N` are
-exact nonnegative rationals. Since `J(6) > 0` and `J'(6) > 0`,
+## Theorem — exact separation at the declared point
+
+At `N=16`, exact recurrence arithmetic gives
 
 ```text
-J'_N / (J_N + R_N)  <=  p_1(6)  <=  (J'_N + R'_N) / J_N .
+J_16  = 251763633587 / 73156608000,
+J'_16 = 443237359 / 304819200,
+R'_16 = 944784 / 4379375,
+J'_16 + R'_16 = 259952292959 / 155675520000.
 ```
 
-In particular, the exact rational comparison
+The decisive rational is
 
 ```text
-2 (J'_N + R'_N) < J_N
+J_16 - 2(J'_16 + R'_16)
+  = 5323057146257 / 52306974720000 > 0.
 ```
 
-implies the coupling-independent ceiling `p_1(6) < 1/2`.
-
-## Theorem 1 — matching selects `beta = 6`
-
-On the declared matching `beta = 2 N_c / g_bare^2` with `N_c = 3` and
-`g_bare = 1`,
+Thus `p_1(6)<1/2`. Only after this bound is closed do we compare M3:
 
 ```text
-beta = 2 * 3 / 1^2 = 6
+1/2 = 5000/10000 < 5934/10000.
 ```
 
-exactly. This is rational arithmetic on a declared convention. It is not an
-axiom necessity claim, and it does not mention the B1 numeral.
-
-## Theorem 2 — one-plaquette mean at `beta = 6` is not the B1 numeral
-
-Take the truncation `N = 16`. The recurrence produces the exact partial sums
+Consequently
 
 ```text
-J_16  = 251763633587 / 73156608000 ,
-J'_16 = 443237359 / 304819200 ,
+p_1(6) < 1/2 < 5934/10000.
 ```
 
-and the explicit remainder majorant
+The runner repeats the proof at `N=20`; its certified interval is contained
+in `(0.42245, 0.42316)`, far from both `1/2` and the declared datum. That
+second truncation is a robustness check, not a new premise.
+
+## No-Go Discipline: narrow exclusion and preserved routes
+
+This note excludes only the route “identify the declared comparison value
+with the bare one-plaquette Haar mean at the declared matching point.” It
+does not issue a general no-go for deriving `<P>*`.
+
+### N1 — materially distinct route scan
+
+| route | marker | outcome relative to this theorem |
+|---|---|---|
+| replace the matching by `2N_c g_bare^2` | **ATTEMPTED** | exact gates at `(3,1),(3,2),(2,1)` reject it as the declared matching |
+| omit the factor two in the matching | **ATTEMPTED** | the same exact gates reject it |
+| identify `5934/10000` with the bare Haar mean | **ATTEMPTED** | the certified half-ceiling rejects equality |
+| use the correlated 4D Wilson/Haar measure | **ATTEMPTED** | changes the measure and is therefore outside, but remains a live route to `<P>*` |
+| use a supplied effective plaquette environment | **ATTEMPTED** | changes the single-plaquette object and remains a live conditional route |
+| use finite-volume `ln Z_L` enclosures and a thermodynamic-limit rate | **ATTEMPTED** | outside the bare integral; preserved as the June 10 certification route |
+| use a convergent reorganization, transfer operator, or tensor method | **ATTEMPTED** | not decided by the present calculation and remains open |
+
+### N2 — wall independence
+
+No conjunction of walls is claimed. The exact rational separation is one
+object-specific wall. The finite-volume bracket, mass-gap sharpening, and
+4D evaluation tasks are alternative or composable methods, not asserted
+independent impossibility certificates.
+
+### N3 — hidden-wall scan
+
+The proof depends on the stipulated matching, normalized `SU(3)` Haar
+measure, June 10 recurrence, and exact declared comparator. It does not
+silently assume an infinite-volume limit, differentiability of `f` at six,
+a mass gap, a finite-size scaling ansatz, a chosen 4D environment, or an
+axiom-derived coupling.
+
+### N4 — residual matching
+
+The June 10 residual is certification of the correlated 4D object, while
+the present residual is explicitly the same: compute `<P>*`, not `p_1`.
+The `alpha_s` source identifies the numeral as a declared input and the
+finite diagnostic withholds its derivation. No stronger prior no-go is
+borrowed.
+
+### N5 — certificate granularity
 
 ```text
-R'_16 = 6^{16} / 16! * 16 / 10 = 944784 / 4379375 .
+per-element: executed — exact recurrence coefficient arithmetic
+per-site: not applicable — the proved object has no lattice sites
+per-mode: not applicable — no mode decomposition is used
+per-block: executed — the one-plaquette Haar block is fully bounded
+lattice-wide: not executed — no correlated 4D lattice is evaluated
 ```
 
-Adding gives the exact rational upper envelope
+### N6 — partial-closure paths
 
-```text
-J'_16 + R'_16 = 259952292959 / 155675520000 .
-```
+The June 10 three-point `ln Z_L` bracket is preserved. A stronger finite-size
+rate, a certified 4D Monte Carlo enclosure, or a rigorous transfer/tensor
+evaluation could also supply useful 4D progress without altering the present
+theorem or any axiom.
 
-The separation identity is then the exact positive rational
+### N7 — steelman
 
-```text
-J_16 - 2 (J'_16 + R'_16) = 5323057146257 / 52306974720000 > 0 ,
-```
+The strongest objection is that the bare one-plaquette measure is not the
+physical comparator: 4D correlations can change the mean, so its failure to
+equal `0.5934` says little about the full Wilson theory. The objection is
+correct. The theorem is retained only as a precise route-pruning and
+object-separation result.
 
-so `p_1(6) < 1/2`. The paired runner recomputes every displayed rational
-from the recurrence and the remainder formula; none of those rationals is
-constructed from `0.5934`.
+### N8 — cross-cycle echo
 
-Only after that ceiling is closed, compare the admitted B1 numeral as the
-rational `5934/10000`:
-
-```text
-1/2 = 5000/10000 < 5934/10000 .
-```
-
-Hence `p_1(6) < 1/2 < 5934/10000`, and the one-plaquette Haar mean at the
-matching point `beta = 6` is not the admitted B1 numeral.
-
-A second, independent truncation `N = 20` is checked in-runner by the same
-remainder calculus and yields the same strict ceiling `p_1(6) < 1/2`. The
-`N = 16` identity above is already sufficient.
-
-If the one-plaquette mean is replaced by `5934/10000`, the ceiling
-`p_1 < 1/2` fails, because `5934/10000 > 1/2`. If the matching is replaced
-by a different rational function of `(N_c, g_bare)`, the identity
-`g_bare = 1 => beta = 6` fails at some positive test point (the runner uses
-`(N_c, g_bare) in {(3,1), (3,2), (2,1)}`). Those two substitutions are the
-discriminating gates for Theorems 1 and 2.
-
-## Theorem 3 — B1 is not retired
-
-The object named by admission B1 is the 4D thermodynamic-limit plaquette
-mean `<P>*`, not the one-plaquette integral `p_1(6)`. Theorem 2 separates
-those two numbers. It does not enclose `<P>*`, does not produce a certified
-three-point `ln Z_L` bracket, and does not supply a mass-gap rate.
-
-Therefore this note does not retire B1. The June 10 three-point `ln Z_L` /
-mass-gap interface remains the named path.
+The June 10 source already distinguishes `J(6)` from `<P>*` and keeps the
+finite-volume bracket open. The finite 4D diagnostic likewise withholds an
+infinite-volume value certificate. This note agrees with those boundaries;
+it does not convert earlier one-plaquette failures into a universal closure.
 
 ## Boundaries and explicit non-claims
 
-- This note does not derive 0.5934 and does not treat `0.5934` as a target
-  to be reconstructed from `p_1`.
-- No 4D `<P>*` evaluation, no Monte Carlo, no cluster expansion at
-  `beta = 6`, and no radius claim.
-- No axiom edit, no axiom necessity, and no new primitive.
-- The matching `beta = 2 N_c / g_bare^2` is declared, not derived from the
-  axiom memo.
-- The one-plaquette mean is not a substitute for the June 10 finite-volume
-  rate `|f_L - f| <= 6 beta / L`.
+- `0.5934` is declared comparison data, not a derived or admitted theorem.
+- The result is coupling-specific at the declared `beta=6` point; it is not
+  a coupling-independent ceiling.
+- No 4D `<P>*` evaluation, Monte Carlo certificate, cluster-convergence
+  radius, mass-gap rate, or differentiability result is claimed.
+- No axiom edit, axiom necessity, or new primitive is proposed.
+- Changing the measure, action, matching, or environment defines a different
+  object and is not excluded as a route to the 4D target.
 
 ## Verification
 
 Run:
 
 ```bash
-python3 scripts/plaquette_b1_convention_independent_of_one_plaquette_mean_2026_08_13.py
+python3 scripts/declared_plaquette_comparison_value_distinct_from_one_plaquette_haar_mean_2026_08_13.py
 ```
 
-The runner uses exact `Fraction` arithmetic for the recurrence, the
-remainder majorants, the matching identities, and the comparison
-`1/2 < 5934/10000`. It does not write a cache. Expected summary:
+The runner uses exact `Fraction` arithmetic for the recurrence, tail bounds,
+matching identities, and comparator. It declares every repository file it
+reads for cache fingerprinting, includes family-specific mutation gates, and
+writes no audit verdict. Expected summary:
 
 ```text
-TOTAL: PASS>=10 FAIL=0
+TOTAL: PASS>=30 FAIL=0
 ```

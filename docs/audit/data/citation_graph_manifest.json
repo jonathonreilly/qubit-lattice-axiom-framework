@@ -1,6 +1,6 @@
 {
- "edge_count": 15609,
- "node_count": 5492,
+ "edge_count": 15610,
+ "node_count": 5493,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -2769,6 +2769,10 @@
   "cte_rconn_spatial_tensor_color_bridge_is_a_cross_domain_coincidence_narrow_no_go_note_2026-06-08": {
    "deps_hash": "825a4024d61b",
    "out_degree": 4
+  },
+  "cube_symmetric_additive_source_uniqueness_bounded_theorem_note_2026-08-14": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "cubic_anisotropy_sections_so3_frame_bounded_theorem_note_2026-06-17": {
    "deps_hash": "04fc7d8812c4",

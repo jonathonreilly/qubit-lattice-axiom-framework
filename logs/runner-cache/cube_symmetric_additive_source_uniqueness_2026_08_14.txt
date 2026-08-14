@@ -1,0 +1,41 @@
+===== runner cache v1 =====
+runner: scripts/cube_symmetric_additive_source_uniqueness_2026_08_14.py
+runner_sha256: f6293c65459541560d916507fe5034b1f691adfcae50c866ea96c01a553068f2
+input_fingerprint_sha256: 2a386d5c4a26993e6d4dccfde7b3c519cc94aa82da2e1a196376f4bc21fa4737
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+external_scientific_inputs: none; exact eight-vertex cube algebra only
+package_local_integrity_reads: proposed source note and live axiom memo only
+measure_boundary: exact Fraction coefficients; no floating-point inputs
+claim_boundary: bounded algebraic result; no physical identification is asserted
+PASS: thm1-group-order exactly 24 distinct proper signed permutation matrices
+PASS: thm1-group-laws the 24 matrices are closed, contain inverses, and include the identity
+PASS: thm1-preserves-V every proper cube rotation permutes the eight vertices
+PASS: thm1-one-orbit the eight vertices form one orbit under the cube group
+PASS: thm4-rho-generic rho is invariant on (1,0,1,0,0,1,1,0) under every cube rotation
+PASS: thm2-single-site-rho every single-site occupancy has rho = 1
+PASS: thm3-system-rank the 8-weight invariance system has exact rank 7
+PASS: thm3-kernel-span-rho the invariance kernel is one-dimensional and spans the vertex sum
+PASS: thm2-equal-basis-values an invariant linear decoder takes the same value on every e_v
+PASS: mutation-double-weight-fails weighting one vertex by 2 breaks cube-symmetry
+PASS: hygiene-forbidden-substrings the note avoids the forbidden substrings
+PASS: scope-boundary the theorem disclaims a physical source law and any axiom edit
+PASS: machine-status-contract bounded status, frontier trace, and next action are source-visible
+PASS: import-boundary-contract the supplied host and absent physical bridge are disclosed
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: claim-type-and-proof-contract the bounded type and universal proof obligation are source-visible
+PASS: live-lattice-quote the live Lattice sentences are quoted without rewrite
+PASS: live-record-quote the live Record lock and content sentences are quoted without rewrite
+PASS: qubit-unflipped the note does not rewrite the live Qubit presentation
+per_element: exact identities cover all eight vertices and all 24 rotations.
+per_site: the theorem is evaluated only on the displayed cube A=[0,1]^3.
+per_mode: linear cube-symmetric decoders are classified; nonlinear maps are out of scope.
+per_block: all 8 rational weights are constrained; the kernel is span_Q{rho}.
+lattice_wide: checked and not executed — the claim asserts no lattice-wide lift.
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

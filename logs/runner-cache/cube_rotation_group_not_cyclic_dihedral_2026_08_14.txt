@@ -1,0 +1,46 @@
+===== runner cache v1 =====
+runner: scripts/cube_rotation_group_not_cyclic_dihedral_2026_08_14.py
+runner_sha256: 39d8394de8bfbde11f610d376ffc7363b5d39e035915609a5efd0404422a1f34
+input_fingerprint_sha256: 841f77d52ff619a241a61c4dd7823959b21c2c1db155b01cb6db8485a2d8fc76
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+external_scientific_inputs: none; exact Z matrix orders only
+package_local_integrity_reads: proposed source note and live axiom memo only
+measure_boundary: integer 3x3 arithmetic; no floating-point inputs
+claim_boundary: G is not C_24 and not D_12; no SO(3) census; no M_2 action
+|G|=24
+order_counts: 1:1, 2:9, 3:8, 4:6
+max_order=4
+PASS: signed-count-48 there are 48 signed permutation matrices
+PASS: all-signed-perm every generated matrix is a signed permutation
+PASS: g-cardinality |G|=24
+PASS: g-det-plus-one every element of G has det = +1
+PASS: identity-in-g I is in G
+PASS: axis-90-in-g the displayed 90° axis matrix is in G
+PASS: axis-90-order-4 the displayed 90° axis matrix has order 4
+PASS: orders-only-1234 orders in G are a subset of {1,2,3,4}
+PASS: max-order-4 max order in G is 4
+PASS: order-4-exists G has at least one element of order 4
+PASS: no-order-12 G has no element of order 12
+PASS: no-order-24 G has no element of order 24
+PASS: not-c24 G is not cyclic of order 24
+PASS: not-d12 G is not dihedral of order 24
+PASS: note-forbidden-substrings note avoids the dispatch-forbidden substrings
+PASS: lattice-quotes Live Parent Quotes are the two Lattice sentences
+PASS: lattice-quotes-live quoted Lattice sentences are live on the axiom memo
+PASS: parents-axiom-memo-only declared parents are the axiom memo only
+PASS: note-contract machine status, theorems, and stated non-claims are source-visible
+PASS: no-qubit-rewrite the one-site algebra sentence is not rewritten
+PASS: no-cache-write this runner writes no cache path
+per_element: each of the 24 matrices has a computed finite order in {1,2,3,4}
+per_site: the statement is about one 3x3 matrix set, not a site algebra
+per_mode: only the displayed G is classified as not C_24 and not D_12
+per_block: no SO(3) classification block is executed
+lattice_wide: checked and not executed — no lattice-wide law is claimed
+TOTAL: PASS=21 FAIL=0
+
+----- stderr -----
+

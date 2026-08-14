@@ -1,6 +1,6 @@
 {
- "edge_count": 15609,
- "node_count": 5492,
+ "edge_count": 15610,
+ "node_count": 5493,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -18425,6 +18425,10 @@
   "two_site_qubit_tensor_carrier_bridge_narrow_theorem_note_2026-06-06": {
    "deps_hash": "4fb4f7ea0100",
    "out_degree": 4
+  },
+  "two_site_seed_nn_formation_bounded_theorem_note_2026-08-14": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "two_site_swap_corner_hosts_m3_with_unit_p_bounded_theorem_note_2026-08-13": {
    "deps_hash": "c8eee4235fc9",

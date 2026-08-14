@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/empty_empty_pairing_cell_is_not_a_blank_readout_2026_08_14.py
+runner_sha256: 2ef75f1166716a4b10c425d7087c4b137462bacebedf88aa655e5d067c601192
+input_fingerprint_sha256: 5536b9592cd2f416673122876d2a4626e2f18af46eeb61dcd7e3d375bed40e45
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: none; reconstructed occupancy pairings only
+package_local_integrity_reads: proposed source note and live axiom memo only
+measure_boundary: exact Fraction occupancy counts; no floating-point inputs
+claim_boundary: agreed empty-empty cell is table data, not a blank readout
+PASS: thm1-empty-pi-zero B_π(∅,∅) is the exact Fraction 0
+PASS: thm1-empty-plus-zero B_+(∅,∅) is the exact Fraction 0
+PASS: thm1-empty-cells-agree B_π(∅,∅) = B_+(∅,∅) as Fractions
+PASS: thm1-identity-gates-return-zeros identity gates return those zeros
+PASS: thm1-agreement-is-not-selection shared empty-empty cell does not select a pairing
+PASS: control-occupied-pi B_π({s},{t}) = 1
+PASS: control-occupied-plus B_+({s},{t}) = 2
+PASS: control-disagreement-not-load-bearing-cut occupied-occupied 1≠2 is a control, not this note's cut
+PASS: thm2-live-record-quote live Record unreadability sentences are quoted without rewrite
+PASS: thm2-blank-has-no-defined-readout a blank site has no defined readout value
+PASS: thm2-pairing-cell-is-table-entry-not-readout the pairing cell is a supplied table entry, not a blank readout
+PASS: thm2-cell-is-not-i-empty the pairing cell is not I(empty)
+PASS: thm3-cell-is-still-extra the agreed empty-empty cell remains extra bookkeeping
+PASS: mutation-live-memo-contains-i-empty-zero-fails predicate “live memo contains I(empty)=0” fails
+PASS: mutation-empty-empty-is-blank-readout-fails predicate “empty-empty cell is a site readout of a blank” fails
+PASS: mutation-empty-cells-disagree-fails predicate B_π(∅,∅) != B_+(∅,∅) fails
+PASS: machine-status-contract bounded status and leftover-cut trace are source-visible
+PASS: scope-exclusions no G_N, no 1/r install, no axiom edit, I is not restored
+PASS: parents-axiom-only declared parents are the live axiom memo only
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+per_element: empty-empty and occupied-occupied cells of both pairings.
+per_site: a blank site has no defined readout; occupancy is not a readout.
+per_mode: product and count-add tables are both evaluated, neither adopted.
+per_block: identity gates, mutation predicates, and Record unreadability.
+lattice_wide: checked and not executed — no lattice-wide pairing is claimed.
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

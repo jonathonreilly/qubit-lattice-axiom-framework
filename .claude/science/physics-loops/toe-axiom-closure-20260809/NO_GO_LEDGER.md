@@ -423,3 +423,16 @@ obligation, make no bootstrap head physical matter, and do not transmit signed
 `T0i` into gravity. Reopen the negative gate only with retained
 authority that closes the live route families; otherwise keep the exact matrix
 criterion and contract test at `partial-narrowing`.
+
+## Block 68 Record-stress / gravity source bridge gate
+
+| Scoped negative considered | N1--N8 outcome | Allowed result | Live routes that defeat a broad no-go |
+|---|---|---|---|
+| “The signed Record stress cannot couple consistently to the supplied gravity sector,” or “the missing future-negative labels kill gravity” | `FAIL`: the weighted ten-coordinate continuum map closes exactly; the reflected 22-edge union gives all six signed representatives; 6,528 neutral direction-mode sources pass exact Ward and complete-edge solvability on `L=3,...,8` | partial narrowing only: the original one-orientation fifteen-edge one-diagonal lift covers three signs, while the reflected carrier works conditionally and the 13-to-10 metric law remains unselected | reflected union, fixed local multiedge/refined cell, momentum-dependent lift, open/fixed-global-mode positive source, common-metric quotient, local cross-orientation action, and Record-native joint source/clock/transfer law |
+
+Do not ship a gravity no-go, source-coupling impossibility, finite-history
+nonconservation theorem, or axiom-necessity conclusion from Block 68. The exact
+remaining walls are physical source typing, cadence, normalization, the three
+relative `h_it` modes, physical transfer, and nonlinear completion. Reopen a
+negative gate only if these independent live families are attempted or
+excluded with current retained authority.

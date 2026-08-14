@@ -1192,3 +1192,30 @@ check each; citation registration is `5,512/15,802`, out-degree six. No
 canonical axiom, fixed TOE percentage, positive retention, audit verdict, or
 `review-loop` changes. Science commit is `b721146968`; delivery commit is
 `62ddb3ac63`. Landing order will place Block 66 after #6158.
+
+## Block 67
+
+PR #6266 is open, mergeable, and `CLEAN` on
+`physics-loop/toe-axiom-closure-block67-record-source-gravity-20260813`,
+stacked exactly on Block-66 delivery `52d6c9b5d1`. Its distinct review object
+is the exact sharp-current menu discriminator, existing-carrier signed Record
+packet, content-only whole-history root selector, arbitrary-horizon conserved
+head-source candidate, and orientation-even conditional TT response. Primary/
+cache is `PASS=10 FAIL=0`; ten mutations fail one aggregate. No canonical
+axiom, fixed TOE percentage, positive retention, audit verdict, or
+`review-loop` changes. Strengthened science head is `dc50e63cbd`; delivery
+receipt is `dbb6d88029`. Landing order places Block 67 after #6159.
+
+## Block 68
+
+PR #6269 is open, mergeable, and `CLEAN` on
+`physics-loop/toe-axiom-closure-block68-record-stress-block44-ir-20260813`,
+stacked exactly on Block-67 delivery `dbb6d88029`. Its distinct review object
+is the rank-ten signed Record-stress to Block44 source covector, exact
+continuum Ward and conditional Lorentzian response, full-edge nonmetric source
+Schur intertwiner, all-six reflected carrier, and 6,528 neutral full-edge
+source/mode solves on `L=3,...,8`. Primary/cache is `PASS=10 FAIL=0`; nine
+mutations fail one aggregate; citation registration is `5,514/15,819`,
+out-degree eight. No canonical axiom, fixed TOE percentage, positive
+retention, audit verdict, or `review-loop` change. Science commit is
+`18753d6a1d`. Landing order places Block 68 after #6266.

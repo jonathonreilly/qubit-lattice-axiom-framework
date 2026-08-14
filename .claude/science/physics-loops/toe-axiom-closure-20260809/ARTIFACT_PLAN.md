@@ -1773,3 +1773,29 @@ complete conditional nonlinear compact solution:
   source normalization, signature, global coupling, current-to-gravity
   reconstruction, selected transfer, nonlinear completion, adoption, audit
   retention, and all fixed TOE percentages remain open
+
+## Block 68 Contract And Result
+
+- capped contract: map the exact Block67 signed rank-one stress into the full
+  Block44 ten-coordinate source, kill convention/Ward errors, and decide
+  whether all six signs have one exact finite-frequency full-edge carrier
+- IR result: one rank-ten weighted coordinate map, exact
+  `Gamma^Tj=2gA(q.d-omega)u`, and conditional Block44 solves with ranks six
+  off-shell and four on the matched axial gravity shell
+- full-edge result: exact analytic metric/gauge intertwining plus load-bearing
+  nonmetric source Schur correction; the one-orientation carrier covers only
+  the three future-positive axes
+- reflected result: the 22-edge union covers all six; closed neutral line pairs
+  give 6,528 exact Ward/full-null/unprojected solves on `L=3,...,8`, while the
+  positive compact zero mode remains rejected
+- primary/cache `PASS=10 FAIL=0`; nine targeted mutations fail one aggregate;
+  graph `5,514/15,819`, out-degree eight; independent reproduction accepts the
+  boundary
+- decisive boundary: the 22-edge carrier still has ten common metric plus
+  three relative `h_it` flat directions; source typing, cadence, coupling,
+  common-metric law, physical transfer, and nonlinear completion are not
+  selected
+- next artifact: one joint 13-to-10 common-metric source/clock/transfer law or
+  a decisive extensional cut. After that single attempt, freeze gravity
+  micro-extensions and fund the higher-fanout readout/register and chirality
+  roots

@@ -2694,3 +2694,51 @@ matched finite-frequency edge symbol, and linear Bianchi propagation. Block53
 remains the TT-transfer feasibility control. Nonlinear completion and
 full-`Z^3` scheduling remain after that seam. Do not fund another standalone
 TT, menu, coefficient, period, precision, or Record-front fixture.
+
+## Block 68 Handoff
+
+Block 68 is published on
+`physics-loop/toe-axiom-closure-block68-record-stress-block44-ir-20260813`,
+stacked exactly on Block-67 delivery `dbb6d88029`. It leaves the independent
+review-loop axiom/landing branch untouched and treats `origin/main` as the sole
+axiom authority. Science commit is `18753d6a1d`; stacked PR #6269 is open,
+mergeable, and `CLEAN` on Block67 PR #6266.
+
+The exact Block67-to-Block44 source covector is now fixed, relative to the
+supplied coordinate/frame conventions, up to one global scalar. In Block44
+order `(xx,yy,zz,tt,xy,xz,xt,yz,yt,zt)`, a signed head step `d` gives
+`gA(dx^2,dy^2,dz^2,1,2dxdy,2dxdz,2dx,2dydz,2dy,2dz)`. The off-diagonal factor
+two and the positive mixed-time convention are both mutation-essential. The
+exact identity `Gamma(p)^T j = 2gA(q.d-omega)(d,1)` proves Ward compatibility
+on the Record worldline support, not at arbitrary gravity momentum.
+
+All six axial sources solve the conditional Block44 Lorentzian linear system:
+rank six off the gravity light cone modulo four gauge directions, and rank four
+on the matched axial light cone after the two TT compatibility conditions. The
+existing full-edge analytic map also satisfies `M C=-iG_edge`; source Schur
+elimination requires the nonmetric correction and approaches the predicted IR
+source at `O(p^2)`.
+
+The original fifteen-edge orientation contains only the three future-positive
+mixed axial labels. The existing 22-edge time-reflection union carries all six.
+Closed transversely neutral line pairs on every `L=3,...,8` torus yield 6,528
+nonzero direction-mode sources. Every source obeys the exact union-edge Ward
+identity, annihilates the complete four- or five-dimensional null space, and
+directly solves the unprojected 22-edge equations; max Ward/solve residuals are
+`7.84e-15/3.91e-11`. Neutral pairing cancels `p=0`; a lone positive line has
+residual `7.784571` and is explicitly excluded.
+
+Primary is `PASS=10 FAIL=0`; all nine targeted mutations fail exactly one
+aggregate check. An independent all-science challenge accepts this as the
+highest-leverage gravity seam and independently reproduced 6,528 signed
+source/mode solves. The no-go gate fails constructively: gravity remains live.
+
+This is significant positive conditional interface progress, but still zero
+scored TOE progress and zero obligation retirement pending independent audit
+retention. It does not select head-as-physical-source typing, cadence, the one
+global density/coupling, the 13-to-10 common-metric intertwiner, physical
+finite-frequency Lorentzian transfer, nonlinear gravity, or a joint update.
+The next gravity action is binary: construct/select one joint common-metric
+source/clock/transfer law, or stop gravity micro-extensions. Portfolio-wide,
+readout/register and chirality roots still have greater fanout; after Block 68,
+capacity should move there unless the joint-law object is immediately viable.

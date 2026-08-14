@@ -901,3 +901,30 @@ Einstein/two-TT structure is no longer the top uncertainty. Selection,
 causal composition, physical-state positivity, and Record/source semantics are.
 Further static grids, precision, projections, or Euclidean subspace scans are
 retired unless they discharge one of those higher-ranked dependencies.
+
+## Post-Block-68 Full-Science Portfolio Recheck
+
+Block 68 passes the decisive source/intertwiner gate. The conditional linear
+gravity route now has the correct all-six signed ten-coordinate source, exact
+IR Ward/Bianchi compatibility, and an exact finite-frequency Euclidean
+full-edge carrier on 6,528 declared neutral modes. Gravity is not stuck on
+`T0i`, source phase matching, signed orientation, compact zero mode, or linear
+range compatibility.
+
+This does not move a fixed TOE score: no result is independently retained and
+the joint physical law is still absent. Sunk cost is again excluded. The
+independent portfolio challenge ranks readout/register and chirality roots
+above further gravity variants by DAG fanout. Gravity gets at most one joint-law
+decision, not another carrier or TT scan.
+
+| Rank | Investment | Exact next witness | Stop condition |
+|---:|---|---|---|
+| 1 | readout/register root and same-M2 physical instrument | compile/dilate the selected sharp menu-0 `P tensor M` instrument on the same Cycle-713 physical endpoint/Record sites, with no clean-bank or host-readout substitution | stop and expose the minimal axiom/owner datum if occurrence, unreadability, register identity, or dirty disposition remains extensional |
+| 2 | chirality / action-decoder root | bind the live grading/action/decoder choice into the same physical lineage and prove one retained positive end-to-end consequence | stop standalone representation/support scans that do not attach to the joint law |
+| 3 | one gravity joint-law decision | construct one local 13-to-10 common-metric or cross-orientation law and bind it to the same Record source, clock, physical transfer, and coupling | if this cannot be done in one decisive block, freeze gravity; do not run another source, period, coefficient, TT, or carrier variant |
+| 4 | retention readiness | minimize dependencies and prepare the positive candidates for independent audit without authoring verdicts | no landing mechanics or status prose in place of a science defect |
+
+Working allocation becomes `40%` readout/register, `30%` chirality/action
+decoder, `20%` the single gravity joint-law decision, and `10%` retention
+readiness. Recheck immediately after any retained result or failed extensional
+selection gate, and otherwise within three hours.

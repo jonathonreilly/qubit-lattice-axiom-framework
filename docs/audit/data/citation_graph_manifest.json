@@ -1,6 +1,6 @@
 {
- "edge_count": 15810,
- "node_count": 5513,
+ "edge_count": 15819,
+ "node_count": 5514,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -393,6 +393,10 @@
   "admissibility_cycle713_endpoint_record_attachment_intertwiner_boundary_bounded_theorem_note_2026-08-12": {
    "deps_hash": "d01171e4fcae",
    "out_degree": 6
+  },
+  "admissibility_cycle713_record_stress_block44_ir_reflected_carrier_boundary_bounded_theorem_note_2026-08-13": {
+   "deps_hash": "dac6a64e2efb",
+   "out_degree": 8
   },
   "admissibility_cycle713_signed_record_source_causal_tt_vertical_slice_bounded_theorem_note_2026-08-13": {
    "deps_hash": "24bf525103b8",
@@ -1899,8 +1903,8 @@
    "out_degree": 11
   },
   "canonical_harness_index": {
-   "deps_hash": "7e16c0fe10ea",
-   "out_degree": 361
+   "deps_hash": "80c7d3c1bb56",
+   "out_degree": 362
   },
   "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": {
    "deps_hash": "808c1ccb6109",

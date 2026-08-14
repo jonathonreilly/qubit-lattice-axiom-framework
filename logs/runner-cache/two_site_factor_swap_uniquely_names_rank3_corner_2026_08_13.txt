@@ -1,42 +1,46 @@
 ===== runner cache v1 =====
 runner: scripts/two_site_factor_swap_uniquely_names_rank3_corner_2026_08_13.py
-runner_sha256: 089c84b65c981987c9b98f7bf3f9391b3b3ef529e5ec0a15380a472cd087b1b7
-input_fingerprint_sha256: 148c18c3c21a4639187cc52d74be8cbfb6f4036d6fd0732f4f67f256c975f412
+runner_sha256: 083243fb482fb2a4ac2ba573aea1753968165ab48115a2142a5399974bd0ae2a
+input_fingerprint_sha256: 78327d3277568031346c3636dffff5ed9b5ff6fd321e674f34beb33af51da017
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
-external_scientific_inputs: none; exact Fraction two-site swap
+external_scientific_inputs: none; exact two-site matrix algebra only
 package_local_integrity_reads: proposed source note and live axiom memo only
-measure_boundary: exact Fraction; no float, no QCD import
-negative_scope: factor-swap names p_+; leftover not adopted
+measure_boundary: exact Fraction coefficients; no floating-point inputs
+claim_boundary: bounded algebraic result; no physical identification is asserted
 PASS: thm1-hermitian F^* = F
 PASS: thm1-involution F^2 = I_4
 PASS: thm1-trace Tr(F) = 2
-PASS: thm2-ad-exchanges Ad_F(X⊗I)=I⊗X and Ad_F(I⊗X)=X⊗I on E00,E01,σx,σz
-PASS: thm3-basis-images F sends |i⟩⊗|j⟩ to |j⟩⊗|i⟩ on the four product basis vectors
-PASS: mutation-f-eq-minus-f-fails predicate F == -F fails
-PASS: thm4-minus-f-also-implements (-F)(X⊗I)(-F)=I⊗X on E00
-PASS: thm4-span-contains-pm-f intertwining span contains F and -F
-PASS: thm4-only-pm-f Hermitian involutions in the integer grid on the intertwining span are exactly ±F
+PASS: thm2-ad-exchanges Ad_F exchanges both factors on all four matrix units
+PASS: thm3-basis-images the four product-basis images are exactly the factor-swap columns
+PASS: thm4-hermitian-system-rank the 16-real-coordinate intertwining system has exact rank 15
+PASS: thm4-hermitian-kernel the full complex-Hermitian kernel is one-dimensional and spans F
+PASS: thm4-both-signs-implement both F and -F satisfy the two generator intertwining equations
+PASS: thm4-scalar-involution-roots t^2-1 factors exactly as (t-1)(t+1), so its real roots are +/-1
+PASS: mutation-two-f-involution-fails the non-root scalar mutation U=2F does not satisfy U^2=I
+PASS: mutation-f-eq-minus-f-fails F and -F are distinguished by exact trace
 PASS: thm5-pplus-proj p_+^2 = p_+ = p_+^*
 PASS: thm5-pminus-proj p_-^2 = p_- = p_-^*
 PASS: thm5-rank-pplus rank(p_+) = 3
 PASS: thm5-rank-pminus rank(p_-) = 1
-PASS: mutation-rank-pplus-eq-1-fails predicate rank(p_+) == 1 fails
-PASS: mutation-pplus-eq-i4-fails predicate p_+ == I_4 fails
-PASS: thm6-refusals note refuses SU(3), QCD, color adoption, and Qubit rewrite
-PASS: machine-status-contract note carries the required leftover status and bounded-support surface
+PASS: thm5-complementary p_+ + p_- = I_4 and p_+ p_- = 0
+PASS: mutation-rank-pplus-eq-1-fails the rank-1 mutation is rejected
+PASS: mutation-pplus-eq-i4-fails the full-unit mutation is rejected
+PASS: scope-boundary the theorem disclaims a physical interpretation and any axiom edit
+PASS: machine-status-contract bounded status, frontier trace, and next action are source-visible
+PASS: import-boundary-contract the supplied host and absent physical bridge are disclosed
 PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
-PASS: claim-type-and-gate bounded theorem type and N1-N8 gate are source-visible; no QCD module load
-PASS: live-record-unread live Record unread sentence is quoted
-per_element: F, -F, p_+, p_-, E_00, E_01
-per_site: two-site tensor T_2 ≅ M_4; no lattice-wide carrier
-per_mode: displayed factor-swap and its rank-3 spectral projection
-per_block: uniqueness of ±F among real-symmetric implementing involutions
-lattice_wide: checked and not executed
-TOTAL: PASS=20 FAIL=0
+PASS: claim-type-and-proof-contract the bounded type and universal proof obligation are source-visible
+PASS: live-record-unread the live Record unread sentence is quoted without rewrite
+per_element: exact identities cover F, -F, p_+, p_-, and all four matrix units.
+per_site: the theorem is evaluated only on the supplied two-site host H=C^2 tensor C^2.
+per_mode: both swap eigenspaces and their complementary spectral projectors are resolved exactly.
+per_block: all 16 real coordinates of a complex-Hermitian 4x4 matrix are constrained; the kernel is span_R{F}.
+lattice_wide: checked and not executed — the claim asserts no multi-site or lattice-wide lift.
+TOTAL: PASS=24 FAIL=0
 
 ----- stderr -----
 

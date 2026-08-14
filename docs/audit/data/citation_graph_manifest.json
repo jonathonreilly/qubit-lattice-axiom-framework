@@ -1,6 +1,6 @@
 {
- "edge_count": 15613,
- "node_count": 5491,
+ "edge_count": 15619,
+ "node_count": 5492,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -15917,6 +15917,10 @@
   "record_unbounded_finite_additivity_schema_2026-06-06": {
    "deps_hash": "7a055ce56f6e",
    "out_degree": 2
+  },
+  "record_visible_integrated_formation_instrument_bounded_note_2026-08-14": {
+   "deps_hash": "d8e7587596fb",
+   "out_degree": 6
   },
   "record_write_admissible_one_step_class_controlled_copy_narrow_theorem_note_2026-07-11": {
    "deps_hash": "be5222e9afb2",

@@ -1,6 +1,6 @@
 {
- "edge_count": 15619,
- "node_count": 5492,
+ "edge_count": 15623,
+ "node_count": 5493,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -12085,6 +12085,10 @@
   "literature_positioning_note": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "live_m2_conservative_archive_lock_instrument_bounded_theorem_note_2026-08-14": {
+   "deps_hash": "9e2c251b553c",
+   "out_degree": 4
   },
   "local_clock_relation_cycle869_bounded_theorem_note_2026-07-28": {
    "deps_hash": "7c59543ab5ac",

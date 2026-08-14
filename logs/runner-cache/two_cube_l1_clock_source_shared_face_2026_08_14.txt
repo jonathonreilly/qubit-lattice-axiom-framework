@@ -1,0 +1,55 @@
+===== runner cache v1 =====
+runner: scripts/two_cube_l1_clock_source_shared_face_2026_08_14.py
+runner_sha256: f89725332afc829e8273e51d54486b1abc36577418f4d0e51c8591845869a327
+input_fingerprint_sha256: 549113eb032216ae14f533b589730919ff1f94229a3d140e83cb1827783994d6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+L1 clock versus double-counted two-cube source increment
+AUDIT_INPUT_PATHS:
+  docs/TWO_CUBE_L1_CLOCK_SOURCE_SHARED_FACE_BOUNDED_THEOREM_NOTE_2026-08-14.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+scope: supplied two-cube L1 patch; shared-face identity only
+PASS: audit-input-paths-exist
+PASS: audit-input-paths-unique-relative
+PASS: audit-timeout-declared
+PASS: shared-face-is-x-equals-one  (|F*|=4)
+PASS: seed-in-A-not-B
+PASS: note-forbids-listed-substrings
+PASS: note-has-no-runner-cache-path
+PASS: note-has-no-citation-manifest
+PASS: seed-rho
+PASS: tick1-new-locks  (new1=[(0, 0, 1), (0, 1, 0), (1, 0, 0)])
+PASS: tick1-F
+PASS: tick1-S-set  (S1=[(1, 0, 0)])
+PASS: tick1-S
+PASS: tick1-delta-rho-A
+PASS: tick1-delta-rho-B
+PASS: tick1-identity
+PASS: tick1-delta-A-is-new-locks-in-A
+PASS: tick1-delta-B-is-new-locks-in-B
+PASS: tick1-F-is-not-sum-delta-rho
+PASS: tick2-new-locks  (new2=[(0, 1, 1), (1, 0, 1), (1, 1, 0), (2, 0, 0)])
+PASS: tick2-F
+PASS: tick2-S-set  (S2=[(1, 0, 1), (1, 1, 0)])
+PASS: tick2-S
+PASS: tick2-delta-rho-A
+PASS: tick2-delta-rho-B
+PASS: tick2-identity
+PASS: tick2-delta-A-is-new-locks-in-A
+PASS: tick2-delta-B-is-new-locks-in-B
+PASS: tick2-F-is-not-sum-delta-rho
+PASS: locked-sites-stay-locked
+PASS: tick1-S-unique-in-0-to-4
+PASS: tick2-S-unique-in-0-to-4
+PASS: tick1-F-equals-union-occupancy-increment
+PASS: tick2-F-equals-union-occupancy-increment
+PASS: sum-of-cube-increments-is-not-union-increment
+TOTAL: PASS=35 FAIL=0
+
+----- stderr -----
+

@@ -1,6 +1,6 @@
 {
- "edge_count": 15848,
- "node_count": 5520,
+ "edge_count": 15850,
+ "node_count": 5521,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -633,6 +633,10 @@
   "admissibility_timelike_edge_current_network_compact_homothety_regge_boundary_bounded_theorem_note_2026-08-10": {
    "deps_hash": "b431044c389f",
    "out_degree": 7
+  },
+  "admissibility_total_cubic_record_growth_gravity_debit_ward_state_axiom_decision_boundary_bounded_theorem_note_2026-08-14": {
+   "deps_hash": "66beff04dcae",
+   "out_degree": 2
   },
   "admissibility_two_cube_record_ec_overlap_gibbs_connection_boundary_bounded_theorem_note_2026-08-11": {
    "deps_hash": "9669c6781d84",

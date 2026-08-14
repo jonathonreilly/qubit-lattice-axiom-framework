@@ -477,3 +477,20 @@ from Block 79.  The exact state-wording pressure is the exhaustive sentence
 remain live and the candidate live-carrier clarification is not adopted.  No
 tracked obligation or TOE percentage moves before owner action and independent
 positive retention.
+
+## Block 80 Total-law / gravity-debit Ward / state-decision partial narrowing
+
+| Scoped negative considered | Exact evidence | Failing N1--N8 items | Demoted disposition | Live/reopen routes |
+|---|---|---|---|---|
+| conditional on identifying one declared Block79 Fourier mode's exact positive TT shadow work with a candidate scalar `T00` loss, a lone closed-carrier point source can pay that debit by lowering only its own scalar amplitude while remaining a bounded-local flat-Ward source; this does not establish a normalized total real-space point-source energy and does not imply recoil, gravity, Record-only physics, or an axiom update is impossible | total proper-cubic probability measure on all `64` occupancy conditions, including all `32` ready multi-axis cases; exact one-seed `B_3(n)` Record recurrence and `833` Records at depth eight; constant-amplitude edge transfer passes on `L=3,...,7`; the declared mode's unit-coupling vacuum TT shadow work is `0.1534514666`; changing the lone source by that candidate debit gives the same nonzero Ward zero mode, least incidence residual `W/sqrt(L^3)`, and an inverse-derivative pole; an explicit adjacent compensator restores scalar continuity with two edges; identical Record packets still admit work/output separations `0.5539882067/0.6289013524` | `N1` and `N7` defeat every broad negative because adjacent matter/reservoir carriers, open boundaries, nonlinear gravitational self-stress, pure-Record derived fields, live carriers, bounded domains, and nonlocal currents remain live; the product-versus-role ontology choice is not settled | `partial-narrowing`; ship the total local measure, exact Record recurrence, conditional closed lone-source zero-mode theorem, compensator control, and state fork only | full tensor compensator; nonlinear Bianchi/Noether self-stress; physical boundary flux; pure-Record field functional; live product or covariant-role carrier; selected action/probability law; physical clock/global draw; owner decision and audit retention |
+
+Do not ship a gravity no-go, recoil no-go, nonlinear-necessity theorem beyond
+the stated lone-source linear composition, or axiom-necessity claim from Block
+80.  The local probability totality gap is constructively repairable, and the
+adjacent compensator is an explicit local escape.  The next qualifying gravity
+work is a typed full-tensor physical compensating carrier; the nonlinear
+self-stress/connection identity is the fallback if that cheaper positive route
+leaves a tensor residual or cannot be licensed.  Another isolated linear mode
+or fixed-cost battery scan does not qualify.  No tracked obligation or TOE
+percentage moves before selection, owner action where applicable, and
+independent positive retention.

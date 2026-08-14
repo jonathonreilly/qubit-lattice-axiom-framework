@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_total_cubic_record_growth_gravity_debit_ward_state_axiom_decision_2026_08_14.py
+runner_sha256: 2d2f0541af3fb6ffeb36182359f91314597f6b3be3d1467ca9174724058a625f
+input_fingerprint_sha256: 23f2570c6f079d83ee1e435082e4611e5172c3781310b22617d7c6d788e3b358
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 18.28
+status: ok
+----- stdout -----
+[PASS] A-authority-parent-and-runtime-closure: current axioms, Block79, and the complete loaded helper closure are content-bound
+       scripts declared/loaded=50/50; helper mismatches=0
+[PASS] B-total-covariant-local-probability-measure: the repaired occupancy law supplies a normalized positive M2 measure on all 64 conditions
+       conditions/ready/axis/missing=64/56/24/0; max |n|^2=1/3
+[PASS] C-full-proper-cubic-measure-covariance: every probability atom and weight intertwines on all 24x64 rotated conditions
+       cases/failures=1536/0
+[PASS] D-unbounded-round-indexed-record-recurrence: one supplied seed grows exact L1 balls through the total local readiness rule without ov...
+       depth/Records/appended=8/833/832; failures=0
+[PASS] E-constant-amplitude-point-source-positive-control: a unit source transfer across one edge is an exact closed-torus divergence
+       sizes/failures=5/0; residual=0.000e+00
+[PASS] F-single-source-debit-zero-mode-and-locality-boundary: conditional on the one-mode-shadow-work-to-T00 identification, changing the lone source ...
+       debit/zero=0.153451/0.153451; pole growth=27.57
+[PASS] G-adjacent-compensating-carrier-positive-control: one explicit adjacent reservoir restores scalar continuity with two local edges
+       sizes/failures=4/0; debit=0.153451
+[PASS] H-positive-quadratic-vacuum-field-work-and-formal-debit: the TT field gain is exact, positive, quadratic in coupling, and canceled only by an exp...
+       unit work=0.153451; identity/scaling/debit=1.11e-16/0.00e+00/1.11e-16
+[PASS] I-current-record-state-does-not-determine-live-gravity: identical permanent Record packets admit distinct constrained TT work and outputs
+       work/output separation=0.553988/0.628901; constraint=8.10e-16
+[PASS] J-axiom-decision-and-toe-scope: the exact pure-Record/live-carrier fork is exposed without adopting an axiom or moving T...
+       pure/live/product/nonlinear/N1-N8=True/True/True/True/True
+AXIOM_AUTHORITY: origin/main=b02f50a9cfb8ca57c2dbe7026d06487947d22331 minimal-axiom blob=bc23300becfe4e4db57153c0e94cfcdf2338da71; Block79 parent=d7d4d6ecb55ce5c0f6948eba14984b2b93c4730a
+per_element: all 64 occupancy conditions, every algebraic measure atom, and each debit term are checked
+per_site: exact L1 balls through depth 8, 833 permanent Records, and closed-torus source/reservoir sites are checked
+per_mode: 1,536 cubic measure intertwiners, the Ward zero mode, the inverse-derivative pole, and one nonzero TT work mode are checked
+per_block: total law, recurrence, constant source, debit obstruction, compensator, field work, state boundary, and scope are separate
+lattice_wide: checked and not executed — no selected law, physical clock, full tensor compensator, nonlinear self-stress, live-state carrier, or audit chain is supplied
+RESULT: local probability totality and unbounded Record recurrence are constructive; conditional on identifying one declared mode's shadow work with a candidate T00 loss, the lone closed-carrier source cannot pay that debit by changing its own T00
+NEXT: test a typed full-tensor physical compensating carrier first; use nonlinear gravitational self-stress as the fallback, while the pure-Record versus live-carrier state decision remains owner-facing
+SCOPE: partial-positive construction plus partial-narrowing Ward/state boundary; no axiom adoption, retention, obligation retirement, or TOE percentage movement
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

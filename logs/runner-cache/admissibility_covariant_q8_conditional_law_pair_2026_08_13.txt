@@ -1,0 +1,53 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_covariant_q8_conditional_law_pair_2026_08_13.py
+runner_sha256: db1452a99510d4cb07ffb4b411ae5c6618ad1041009df404150763a1eee850fd
+input_fingerprint_sha256: 1c369b176bfee8cfcc72f0ff297b3f0fffcece3a359503482ee4e1bb3a158341
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.20
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_COVARIANT_Q8_CONDITIONAL_LAW_PAIR_BOUNDED_THEOREM_NOTE_2026-08-13.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+scientific_dependency: current minimal_axioms Admissibility/Qubit clauses
+declared_math: Q8 matrix embedding, proper cubic rotations, finite Borel measures
+PASS: audit-input-paths the note and current axiom memo are the complete declared source packet
+PASS: current-admissibility-clause the current source supplies a conditional local probability law
+PASS: current-covariance-clause the current source supplies the spatial covariance contract
+PASS: post-reset-record-boundary the theorem uses the current unreadable-absence boundary and no retired scalar structure
+PASS: note-contract the note states the bounded positive model-pair target
+PASS: note-dependency the only scientific authority is the current four-axiom memo
+PASS: q8-cardinality the finite support contains two central and six quaternion-axis atoms
+PASS: q8-matrix-embedding the eight displayed matrices form a unitary determinant-one subgroup of M_2(C)
+PASS: proper-cubic-group the determinant-positive signed-permutation group has 24 elements
+PASS: direction-action every proper cubic rotation permutes the six neighbor directions
+PASS: q8-action the spatial action fixes the center and permutes the six axis atoms
+PASS: probability-normalization both delta measures and the six-axis measure have exact total mass one
+PASS: mutation-probability-total adding an unbalanced axis mass is rejected by the normalization gate
+PASS: axis-cubic-invariance the uniform six-axis measure is invariant under all 24 proper cubic rotations
+PASS: central-cubic-invariance the central point masses are fixed by the spatial rotation action
+PASS: shell-parity-witnesses the two displayed shells realize both conditional branches
+PASS: parity-covariance all 64 central shells retain parity under all 24 rotations
+PASS: central-law-variation the central law changes output between even and odd shell conditions
+PASS: axis-law-variation the axis law changes output between even and odd shell conditions
+PASS: law-covariance both conditional laws obey the exact pushforward covariance equation
+PASS: laws-distinct the odd-shell outputs are different normalized measures
+PASS: internal-pi-over-four-image the rotated +x atom has two nonzero components and leaves the six-axis support
+PASS: central-full-conjugation central matrices commute with every internal SU(2) element
+PASS: mutation-first-slot-condition-breaks-covariance a direction-privileging shell rule is rejected by the rotation test
+PASS: mutation-anisotropic-axis-breaks-covariance an unequal axis weighting is rejected by the proper-cubic invariance test
+PASS: record-semantics-absent the repaired theorem restores none of the retired scalar Record semantics
+PASS: physical-boundary the exact finite pair is separated from every downstream physical selection claim
+PASS: review-record the source records why the original negative theorem was replaced
+per_element: executed — all eight Q8 support labels and the declared internal rotation image are checked exactly
+per_site: executed — one six-neighbor shell is checked under every proper cubic direction permutation
+per_mode: checked and not executed — the theorem has no spectral, momentum, or normal-mode decomposition
+per_block: executed — both central and axis conditional-law branches are normalized, varied, and compared
+lattice_wide: checked and not executed — the theorem proves a translation-reused local rule, not a global history
+TOTAL: PASS=28 FAIL=0
+
+----- stderr -----
+

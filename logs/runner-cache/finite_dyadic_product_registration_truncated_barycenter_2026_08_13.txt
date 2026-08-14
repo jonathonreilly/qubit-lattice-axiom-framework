@@ -1,19 +1,19 @@
 ===== runner cache v1 =====
-runner: scripts/record_bit_dyadic_registration_truncated_barycenter_2026_08_13.py
-runner_sha256: b6f85adf6a2a67642ceb047cf71b390489401ff481c20cc17cd69e81c6781031
-input_fingerprint_sha256: b4987b86a985425035c6e2290ea491191e02e28c438a6f1a9bf2fad59bf4cc88
+runner: scripts/finite_dyadic_product_registration_truncated_barycenter_2026_08_13.py
+runner_sha256: 7fd501fa343dd4334ca25a4fbb16c9390bee0291324a8c1061800c3bfb0ba045
+input_fingerprint_sha256: d30deee6aa79afae2cad7cb18e5d1728ab6e1e75e32d2597e4f65d03cc29d9cc
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
-external_scientific_inputs: axiom wording and the August 9 and August 10 parent notes are source-bound; no observational or fitted inputs
-integrity_reads: this runner, its paired note, the axiom memo, and the two parent notes; no other repository scientific inputs
+external_scientific_inputs: current axiom wording and the August 10/12 parent notes are source-bound; no observational or fitted inputs
+integrity_reads: this runner, its paired note, the axiom memo, and the three parent notes; no other repository scientific inputs
 construction: floor-difference registration on D×U_n; w_n is affine in μ and is not barycenter evaluation at finite n
 negative_scope: no finite n makes truncated E_0 mass equal Tr at all three declared Diracs; continuum and compilers remain live
 PASS: source-admissibility the current distribution sentence is pinned in the axiom memo and the note
-PASS: source-record the Record lock, content-only, and additivity sentences are pinned
-PASS: source-parents Aug 10 has restriction witness and partition language; Aug 9 has menu-independent Tr form
+PASS: source-record the post-reset Record lock/content/unreadable-at-absence and scalar-clause retirement boundary are pinned
+PASS: source-parents Aug 10 supplies the hostile interface and the Aug 12 parents supply barycenter evaluation and exact continuum product cells
 PASS: menu-resolutions both hostile menus are exact matrix resolutions of I by five distinct scaled projectors
 PASS: restriction-recompute atomic restriction recomputed from matrix traces is 25/142 on M_A and 2/11 on M_B with Z=509/200
 PASS: pairings-recompute declared E_0 pairings are 1/4, 3/10, 2/5, 1/2, and 0 in both menus
@@ -24,6 +24,7 @@ PASS: biased-never-dyadic floor_diff_mass at the biased Diracs is never 3/10 or 
 PASS: spectral-endpoints at δ_P(z) the truncated E_0 mass is 1/2; at δ_P(-z) the mass is 0
 PASS: finite-n-obstruction no executed finite n makes truncated E_0 mass exact at all three declared Diracs
 PASS: mixture-identity truncated pushforward of 3/5 δ_P(z)+2/5 δ_P(-z) equals the atomic mixture of floor_diff_mass
+PASS: mixture-uniform-bound finite-support pushforward differs from barycenter evaluation by less than 2^-n
 PASS: mixture-not-barycenter-at-biased endpoint mixture truncated E_0 mass is 3/10; Dirac at the barycenter is not
 PASS: disagree-restriction truncated E_0 values disagree with restriction 25/142 and 2/11
 PASS: order-independence-length reversed M_A keeps the same pairing lengths; exact E_0 truncated mass is unchanged when the increment is integral
@@ -32,11 +33,11 @@ PASS: mutation-raw-trace-would-fail replacing floor_diff_mass by raw Tr would fa
 PASS: singleton-mass-two raw singleton normalization of the z and x projective menus still forces mass two
 PASS: note-contract machine-status fields, required phrases, and forbidden-word hygiene hold
 per_element: E_0 and remaining declared menu members checked by floor-difference masses and restriction controls
-per_site: finite-n obstruction, product partition, and truncated kernel identities are one-site statements
-per_mode: prefix-sum floor bins on the declared menus; register points are typed, not compiled
+per_site: finite dyadic image exclusion, product partition, and truncated kernel identities are one-site statements
+per_mode: checked and not executed — no spectral or harmonic mode claim occurs in this one-site theorem
 per_block: only the finite-n exact-equality obstruction and the truncated-kernel identities are executed
 lattice_wide: checked and not executed — no lattice-wide dynamics, formation rate, or Record identification is claimed
-TOTAL: PASS=20 FAIL=0
+TOTAL: PASS=21 FAIL=0
 
 ----- stderr -----
 

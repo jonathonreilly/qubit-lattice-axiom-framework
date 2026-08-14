@@ -1,6 +1,6 @@
 {
- "edge_count": 15668,
- "node_count": 5513,
+ "edge_count": 15673,
+ "node_count": 5514,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1671,8 +1671,8 @@
    "out_degree": 11
   },
   "canonical_harness_index": {
-   "deps_hash": "4431df80f01f",
-   "out_degree": 354
+   "deps_hash": "cde49a1b9885",
+   "out_degree": 355
   },
   "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": {
    "deps_hash": "808c1ccb6109",
@@ -4705,6 +4705,10 @@
   "finite_cell_two_band_closed_form_bounded_theorem_note_2026-06-13": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "finite_dyadic_product_registration_truncated_barycenter_bounded_theorem_note_2026-08-13": {
+   "deps_hash": "f3a3e578ddeb",
+   "out_degree": 4
   },
   "finite_flat_link_even_car_support_census_bounded_theorem_note_2026-07-23": {
    "deps_hash": "e3b0c44298fc",

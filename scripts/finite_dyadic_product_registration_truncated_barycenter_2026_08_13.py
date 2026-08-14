@@ -19,24 +19,30 @@ ROOT = Path(__file__).resolve().parents[1]
 NOTE_PATH = (
     ROOT
     / "docs"
-    / "RECORD_BIT_DYADIC_REGISTRATION_TRUNCATED_BARYCENTER_BOUNDED_THEOREM_NOTE_2026-08-13.md"
+    / "FINITE_DYADIC_PRODUCT_REGISTRATION_TRUNCATED_BARYCENTER_BOUNDED_THEOREM_NOTE_2026-08-13.md"
 )
 AXIOM_PATH = ROOT / "docs" / "MINIMAL_AXIOMS_2026-06-29.md"
-PARENT_AUG09_PATH = (
-    ROOT
-    / "docs"
-    / "BORN_FORM_FROM_BINARY_TERNARY_SCALED_PROJECTOR_FRAME_LIFT_BOUNDED_THEOREM_NOTE_2026-08-09.md"
-)
 PARENT_AUG10_PATH = (
     ROOT
     / "docs"
     / "ADMISSIBILITY_GLOBAL_MEASURE_MENU_KERNEL_TYPE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-08-10.md"
 )
+PARENT_AUG12_BARYCENTER_PATH = (
+    ROOT
+    / "docs"
+    / "ADMISSIBILITY_BARYCENTER_EVALUATION_MENU_KERNEL_BOUNDED_THEOREM_NOTE_2026-08-12.md"
+)
+PARENT_AUG12_PARTITION_PATH = (
+    ROOT
+    / "docs"
+    / "ADMISSIBILITY_REGISTERED_PARTITION_BARYCENTER_PUSHFORWARD_BOUNDED_THEOREM_NOTE_2026-08-12.md"
+)
 
 AUDIT_INPUT_PATHS = (
-    "docs/RECORD_BIT_DYADIC_REGISTRATION_TRUNCATED_BARYCENTER_BOUNDED_THEOREM_NOTE_2026-08-13.md",
+    "docs/FINITE_DYADIC_PRODUCT_REGISTRATION_TRUNCATED_BARYCENTER_BOUNDED_THEOREM_NOTE_2026-08-13.md",
     "docs/ADMISSIBILITY_GLOBAL_MEASURE_MENU_KERNEL_TYPE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-08-10.md",
-    "docs/BORN_FORM_FROM_BINARY_TERNARY_SCALED_PROJECTOR_FRAME_LIFT_BOUNDED_THEOREM_NOTE_2026-08-09.md",
+    "docs/ADMISSIBILITY_BARYCENTER_EVALUATION_MENU_KERNEL_BOUNDED_THEOREM_NOTE_2026-08-12.md",
+    "docs/ADMISSIBILITY_REGISTERED_PARTITION_BARYCENTER_PUSHFORWARD_BOUNDED_THEOREM_NOTE_2026-08-12.md",
     "docs/MINIMAL_AXIOMS_2026-06-29.md",
 )
 
@@ -279,18 +285,19 @@ def main() -> int:
     checks = Checks()
     note = NOTE_PATH.read_text(encoding="utf-8")
     axiom = AXIOM_PATH.read_text(encoding="utf-8")
-    parent_aug09 = PARENT_AUG09_PATH.read_text(encoding="utf-8")
     parent_aug10 = PARENT_AUG10_PATH.read_text(encoding="utf-8")
+    parent_aug12_barycenter = PARENT_AUG12_BARYCENTER_PATH.read_text(encoding="utf-8")
+    parent_aug12_partition = PARENT_AUG12_PARTITION_PATH.read_text(encoding="utf-8")
     for relative in AUDIT_INPUT_PATHS:
         (ROOT / relative).read_text(encoding="utf-8")
 
     print(
-        "external_scientific_inputs: axiom wording and the August 9 and "
-        "August 10 parent notes are source-bound; no observational or fitted inputs"
+        "external_scientific_inputs: current axiom wording and the August 10/12 "
+        "parent notes are source-bound; no observational or fitted inputs"
     )
     print(
         "integrity_reads: this runner, its paired note, the axiom memo, and "
-        "the two parent notes; no other repository scientific inputs"
+        "the three parent notes; no other repository scientific inputs"
     )
     print(
         "construction: floor-difference registration on D×U_n; "
@@ -307,8 +314,10 @@ def main() -> int:
     )
     record_lock = "When present, a record locks exactly one admissible local possibility."
     record_content = "A readout value is determined by record content alone."
-    record_additivity = (
-        "For any finite collection of pairwise-disjoint records, scalar readout"
+    record_absence = "A site with no record cannot be read."
+    retired_boundary = (
+        "Finite additivity, a named scalar collection functional `I`, and an "
+        "assigned value `I(empty)=0` are not Record axiom content."
     )
     checks.check(
         "source-admissibility",
@@ -317,17 +326,19 @@ def main() -> int:
     )
     checks.check(
         "source-record",
-        "the Record lock, content-only, and additivity sentences are pinned",
+        "the post-reset Record lock/content/unreadable-at-absence and scalar-clause retirement boundary are pinned",
         record_lock in normalize(axiom)
         and record_content in normalize(axiom)
-        and record_additivity in normalize(axiom)
+        and record_absence in normalize(axiom)
+        and retired_boundary in normalize(axiom)
         and record_lock in note
         and record_content in note
-        and record_additivity in note,
+        and record_absence in note
+        and "supplies no named scalar functional, no additivity" in note,
     )
     checks.check(
         "source-parents",
-        "Aug 10 has restriction witness and partition language; Aug 9 has menu-independent Tr form",
+        "Aug 10 supplies the hostile interface and the Aug 12 parents supply barycenter evaluation and exact continuum product cells",
         all(
             phrase in parent_aug10
             for phrase in (
@@ -339,7 +350,14 @@ def main() -> int:
                 "physical construction that produces registered measurable event partitions",
             )
         )
-        and all(phrase in parent_aug09 for phrase in ("menu-independent", "Tr(")),
+        and all(
+            phrase in parent_aug12_barycenter
+            for phrase in ("barycenter evaluation", "Tr(ρ_μ E)", "3/10")
+        )
+        and all(
+            phrase in parent_aug12_partition
+            for phrase in ("D×[0,1]", "inverse-transform", "μ⊗λ", "no scalar/additivity/absence premise")
+        ),
     )
 
     n1x, n1z = Qsqrt2(Fraction(0), Fraction(4, 9)), Qsqrt2(Fraction(-7, 9))
@@ -498,6 +516,21 @@ def main() -> int:
     )
 
     checks.check(
+        "mixture-uniform-bound",
+        "finite-support pushforward differs from barycenter evaluation by less than 2^-n",
+        all(
+            abs(
+                truncated_pushforward(mixture, menu, index, depth)
+                - pairing(biased, effect).as_rational()
+            )
+            < Fraction(1, 1 << depth)
+            for menu in (menu_a, menu_b)
+            for index, effect in enumerate(menu)
+            for depth in executed_depths
+        ),
+    )
+
+    checks.check(
         "mixture-not-barycenter-at-biased",
         "endpoint mixture truncated E_0 mass is 3/10; Dirac at the barycenter is not",
         all(
@@ -589,11 +622,11 @@ def main() -> int:
                 "actual_current_surface_status: bounded-support",
                 "target_claim_type: bounded_theorem",
                 "hypothetical_axiom_status: \"no edit\"",
-                "trace_class: direct_blocker_closure",
+                "trace_class: upstream_support",
                 "target_claim_id: admissibility_distribution_to_effect_grade_bridge",
-                "reachability_to_target: partially_closes",
-                "next_trace_action: \"A physical compiler that produces independent uniform Record bits, or a continuum factor, remains open; do not adopt axiom text.\"",
-                "conditional_surface_status: \"exact for floor-difference registration on D×U_n and the finite-n obstruction at 3/10; physical bit independence/uniformity open\"",
+                "reachability_to_target: supports",
+                "next_trace_action: \"A physical compiler must derive an auxiliary atom-splitting law from the actual Admissibility law and connect event labels to Record content; this finite product theorem supplies neither bridge.\"",
+                "conditional_surface_status: \"exact for floor-difference registration on D×U_n, the uniform error bound, and the finite dyadic image exclusion at 3/10 and 2/5; the auxiliary law and every physical Record interpretation remain open\"",
                 "25/142",
                 "2/11",
                 "509/200",
@@ -601,6 +634,7 @@ def main() -> int:
                 "never dyadic",
                 "not a physical menu compiler",
                 "authors no audit verdict",
+                "The converse is not needed and is not claimed",
             )
         )
         and retained_ok
@@ -608,6 +642,9 @@ def main() -> int:
         and "promoted" not in note.lower()
         and "we adopt" not in note.lower()
         and "new axiom" not in note.lower()
+        and "scalar readout `I` is additive" not in note
+        and "I(empty)=0" not in note
+        and "if and only if the truncation is exact" not in note
         and "Codex" not in note
         and "Block 11" not in note
         and "toe-lphys" not in note,
@@ -618,12 +655,11 @@ def main() -> int:
         "floor-difference masses and restriction controls"
     )
     print(
-        "per_site: finite-n obstruction, product partition, and truncated "
+        "per_site: finite dyadic image exclusion, product partition, and truncated "
         "kernel identities are one-site statements"
     )
     print(
-        "per_mode: prefix-sum floor bins on the declared menus; register "
-        "points are typed, not compiled"
+        "per_mode: checked and not executed — no spectral or harmonic mode claim occurs in this one-site theorem"
     )
     print(
         "per_block: only the finite-n exact-equality obstruction and the "

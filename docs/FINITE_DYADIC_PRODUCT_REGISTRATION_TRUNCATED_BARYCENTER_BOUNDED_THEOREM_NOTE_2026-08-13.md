@@ -1,15 +1,16 @@
 ---
-claim_id: record_bit_dyadic_registration_truncated_barycenter_bounded_theorem_note_2026-08-13
+claim_id: finite_dyadic_product_registration_truncated_barycenter_bounded_theorem_note_2026-08-13
 claim_type: bounded_theorem
-claim_scope: "Finite floor-difference registration on D×U_n with a uniform 2^{-n} truncation bound, a never-dyadic obstruction at 3/10, and an affine-versus-barycenter split; not a physical compiler and not an axiom edit"
+claim_scope: "Finite floor-difference product registration on D×U_n with a uniform 2^{-n} truncation bound, an exact non-dyadic image exclusion at 3/10 and 2/5, and an affine-versus-barycenter split; not a physical compiler, Record readout, or axiom edit"
 upstream_dependencies:
   - minimal_axioms
   - admissibility_global_measure_menu_kernel_type_separation_bounded_theorem_note_2026-08-10
-  - born_form_from_binary_ternary_scaled_projector_frame_lift_bounded_theorem_note_2026-08-09
-runner: scripts/record_bit_dyadic_registration_truncated_barycenter_2026_08_13.py
+  - admissibility_barycenter_evaluation_menu_kernel_bounded_theorem_note_2026-08-12
+  - admissibility_registered_partition_barycenter_pushforward_bounded_theorem_note_2026-08-12
+runner: scripts/finite_dyadic_product_registration_truncated_barycenter_2026_08_13.py
 ---
 
-# Record-Bit Dyadic Registration And Truncated Barycenter On Finite Product Registers
+# Finite Dyadic Product Registration And Truncated Barycenter
 
 **Date:** 2026-08-13
 **Type:** bounded_theorem
@@ -20,16 +21,19 @@ finite resolution.
 **Audit-status authority:** independent audit lane only. This note authors no
 audit verdict and predicts none.
 **Primary runner:**
-[`scripts/record_bit_dyadic_registration_truncated_barycenter_2026_08_13.py`](../scripts/record_bit_dyadic_registration_truncated_barycenter_2026_08_13.py)
+[`scripts/finite_dyadic_product_registration_truncated_barycenter_2026_08_13.py`](../scripts/finite_dyadic_product_registration_truncated_barycenter_2026_08_13.py)
+
+**Runner cache:**
+[`logs/runner-cache/finite_dyadic_product_registration_truncated_barycenter_2026_08_13.txt`](../logs/runner-cache/finite_dyadic_product_registration_truncated_barycenter_2026_08_13.txt)
 
 ## Result Up Front
 
-The August 10 type-separation note names a sufficient interface: registered
-measurable partitions whose pushforward supplies a menu-independent effect
-grade, and leaves a physical construction of those partitions open. This note
-supplies a finite Record-typed product family `D×U_n` and a floor-difference
-kernel on that family. It is a discrete replacement for a continuum `[0,1]`
-factor, not a derivation of that factor from the four axioms.
+The August 12 registered-partition theorem gives an exact inverse-transform
+construction on the declared product `D×[0,1]`. This note gives its finite
+dyadic analogue on `D×U_n`. The finite construction is an explicit
+approximation theorem on a newly supplied mathematical product law. It does
+not derive an auxiliary register, its law, or a physical event compiler from
+the four axioms.
 
 1. **Floor-difference registration is a partition.** For each finite
    resolution `M` of `I` and each density `ρ`, the integer bins assigned by
@@ -44,19 +48,20 @@ factor, not a derivation of that factor from the four axioms.
    `ρ=diag(4/5,1/5)` the pairing `2/5` is likewise never exact. Spectral
    endpoints of `E_0` are exact: `1/2` at `δ_{P(z)}` for `n≥1`, and `0` at
    `δ_{P(-z)}`.
-3. **Finite-n obstruction (scoped negative).** There is no finite `n` such
-   that the truncated `E_0` mass equals `Tr(ρ E_0)` at every declared Dirac
-   `ρ∈{I/2, diag(3/5,2/5), diag(4/5,1/5)}` in both hostile menus. The mixed
-   state is exact for `n≥2`; the two biased states never are.
+3. **Finite dyadic image exclusion (scoped negative).** Every atomic mass of
+   uniform counting measure on `U_n` lies in `2^{-n}Z`. Hence there is no
+   finite `n` for which the truncated `E_0` mass equals `Tr(ρ E_0)` at every
+   declared Dirac `ρ∈{I/2, diag(3/5,2/5), diag(4/5,1/5)}` in both hostile
+   menus. The mixed state is exact for `n≥2`; the two biased states never are.
 4. **Affine in `μ`, not barycenter evaluation.** For
    `μ=(3/5)δ_{P(z)}+(2/5)δ_{P(-z)}`, the truncated kernel is the corresponding
    mixture of the atomic truncated masses. On `E_0` that mixture equals
    `3/10` exactly, while the single Dirac at the barycenter is not `3/10`.
    Finite-n floor registration is therefore affine in `μ` and is not a
-   function of the barycenter alone. Continuum `n→∞` recovers barycenter
-   evaluation uniformly at rate `2^{-n}`. Encoding `k∈U_n` as `n` binary
-   Record bits on `n` auxiliary sites is a declared typing, not a physical
-   menu compiler.
+   function of the barycenter alone. For every finite-support `μ`, the
+   continuum limit recovers barycenter evaluation uniformly at rate
+   `2^{-n}`. The ordinary binary encoding of `k∈U_n` is mathematical data; no
+   identification with formed records or physical readout is made.
 
 The current Admissibility sentence in
 [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) is quoted only
@@ -64,28 +69,31 @@ as a premise and is not edited:
 
 For each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions.
 
-The current Record sentences are likewise quoted only as premises:
+The current Record sentences are likewise quoted only as a semantic boundary:
 
 When present, a record locks exactly one admissible local possibility.
 
 A readout value is determined by record content alone.
 
-For any finite collection of pairwise-disjoint records, scalar readout `I` is additive, with `I(empty)=0`.
+A site with no record cannot be read.
+
+The current Record axiom supplies no named scalar functional, no additivity
+law, and no readout value at absence. None is used below.
 
 ## Machine Status And Trace
 
 ```yaml
 actual_current_surface_status: bounded-support
 target_claim_type: bounded_theorem
-claim_type_reason: "Floor-difference registration, the uniform 2^{-n} truncation bound, the 3/10 never-dyadic obstruction, and the affine-versus-barycenter split are proved by elementary floor arithmetic on declared one-site objects; physical independence and uniformity of Record bits remain open."
-trace_class: direct_blocker_closure
+claim_type_reason: "Floor-difference registration, the uniform 2^{-n} truncation bound, the 3/10 and 2/5 dyadic image exclusion, and the affine-versus-barycenter split are proved by elementary floor arithmetic on declared one-site objects; the auxiliary register law and every physical Record interpretation remain supplied or open."
+trace_class: upstream_support
 target_claim_id: admissibility_distribution_to_effect_grade_bridge
-target_blocker_text: "derive distribution-to-effect-grade identification/functionality and universal binary-and-ternary physical menu eligibility"
+target_blocker_text: "derive an atom-splitting event registration from the actual Admissibility law on X and a content-only Record bridge"
 source_of_blocker_text: handoff
-reachability_to_target: partially_closes
+reachability_to_target: supports
 artifact_role: theorem
-next_trace_action: "A physical compiler that produces independent uniform Record bits, or a continuum factor, remains open; do not adopt axiom text."
-conditional_surface_status: "exact for floor-difference registration on D×U_n and the finite-n obstruction at 3/10; physical bit independence/uniformity open"
+next_trace_action: "A physical compiler must derive an auxiliary atom-splitting law from the actual Admissibility law and connect event labels to Record content; this finite product theorem supplies neither bridge."
+conditional_surface_status: "exact for floor-difference registration on D×U_n, the uniform error bound, and the finite dyadic image exclusion at 3/10 and 2/5; the auxiliary law and every physical Record interpretation remain open"
 hypothetical_axiom_status: "no edit"
 admitted_observation_status: null
 audit_required_before_effective_retained: true
@@ -166,23 +174,27 @@ The August 10 atomic restriction witness `ν` places mass proportional to
 with difference `-9/1562`. Restriction is a hostile control in this note, not
 the constructed truncated kernel.
 
-The parent
-[`BORN_FORM_FROM_BINARY_TERNARY_SCALED_PROJECTOR_FRAME_LIFT_BOUNDED_THEOREM_NOTE_2026-08-09.md`](BORN_FORM_FROM_BINARY_TERNARY_SCALED_PROJECTOR_FRAME_LIFT_BOUNDED_THEOREM_NOTE_2026-08-09.md)
-supplies uniqueness of a trace form once a menu-independent grade exists on
-the full binary/ternary scaled family. The present note constructs a finite
-product registration and a truncated kernel on the declared menus. It does
-not rerun the frame lift.
+The barycenter-evaluation parent
+[`ADMISSIBILITY_BARYCENTER_EVALUATION_MENU_KERNEL_BOUNDED_THEOREM_NOTE_2026-08-12.md`](ADMISSIBILITY_BARYCENTER_EVALUATION_MENU_KERNEL_BOUNDED_THEOREM_NOTE_2026-08-12.md)
+supplies the exact comparison target `Tr(ρ_μE)`. The registered-partition
+parent
+[`ADMISSIBILITY_REGISTERED_PARTITION_BARYCENTER_PUSHFORWARD_BOUNDED_THEOREM_NOTE_2026-08-12.md`](ADMISSIBILITY_REGISTERED_PARTITION_BARYCENTER_PUSHFORWARD_BOUNDED_THEOREM_NOTE_2026-08-12.md)
+supplies the continuum inverse-transform construction on `D×[0,1]`. The
+present note discretizes that supplied second factor and quantifies exactly
+what is lost at finite resolution.
 
-A declared encoding of each `k∈U_n` as `n` binary Record bits on `n`
-auxiliary sites is a typing of the discrete factor, not a derivation from
-Admissibility or Record.
+Each `k∈U_n` has an ordinary `n`-bit binary encoding. This fact types the
+finite set only. A physical interpretation would additionally require formed
+auxiliary records, a selected pair of admissible contents at each site, and a
+law that supplies the independent uniform register distribution. Those are
+outside the theorem.
 
 ## Exact Target And Obligation Graph
 
 **Exact target.** On the declared one-site objects, construct a μ-independent
 finite product partition of `D×U_n` whose counting-measure pushforward
 approximates barycenter evaluation uniformly; decide for which declared Diracs
-the truncated `E_0` mass is exact; and record the finite-n obstruction and
+the truncated `E_0` mass is exact; and record the finite dyadic image exclusion and
 the affine-versus-barycenter split.
 
 | Obligation | Role | Disposition |
@@ -191,10 +203,10 @@ the affine-versus-barycenter split.
 | prove `{A_n(i|M)}` partitions `D×U_n` and `Σ_i q_i=2^n` | partition | Theorem 1 |
 | bound `|q_i/2^n-Tr(ρ E_i)|` uniformly | truncation | Theorem 2 |
 | separate exact dyadic pairings from never-exact pairings | dichotomy | Theorem 3 |
-| rule out one finite `n` exact at all three declared Diracs | scoped negative | Theorem 4 |
+| characterize the dyadic image and rule out one finite `n` exact at all three declared Diracs | scoped negative | Theorem 4 |
 | compare mixture-of-endpoints to the Dirac at the barycenter | affine split | Theorem 5 |
-| type `k∈U_n` as Record bits without claiming a compiler | residual | Theorem 6 |
-| derive independent uniform bits, or a continuum factor, from the axioms | physical compiler | open |
+| encode `k∈U_n` as an ordinary binary word without physical interpretation | finite-set typing | boundary paragraph |
+| derive an auxiliary atom-splitting register and its law from the axioms | physical compiler | open |
 | identify the event label with Record readout | content-only bridge | open; Record premises only quoted |
 
 ## Theorem 1 — Floor-Difference Registration Is A Partition
@@ -221,10 +233,13 @@ partition `{0,1,...,2^n-1}`. Empty intervals occur precisely when
 
 `Σ_i q_i(ρ)=⌊2^n S_r(ρ)⌋-⌊2^n S_0(ρ)⌋=2^n`.
 
-The product sets `A_n(i|M)` are the graphs of these integer bins over `D`.
-They are pairwise disjoint because the bins are, and their union is `D×U_n`.
+For fixed `k`, each membership condition is a finite conjunction of
+inequalities involving the continuous functions `ρ↦Tr(ρE_j)` and integer
+floors. Its preimage is Borel. Because `U_n` is finite and discrete, every
+`A_n(i|M)` is therefore a Borel subset of `D×U_n`. The product sets are
+pairwise disjoint because the integer bins are, and their union is `D×U_n`.
 The definition uses only the menu matrices, the trace pairing at `ρ`, and
-`n`. It does not mention `μ`.
+`n`; it does not mention `μ`.
 
 ## Theorem 2 — Uniform Truncation Bound
 
@@ -301,9 +316,10 @@ kernel to the three declared pairings at finite `n`. It does not address
 
 `w_n(μ, E_i | M)=(3/5) q_i(P(z))/2^n + (2/5) q_i(P(-z))/2^n`.
 
-This equals `Tr(ρ_μ E_i)` if and only if the truncation is exact at both
-atoms. For the shared effect `E_0` the endpoints `1/2` and `0` are dyadic,
-so the mixture equals `3/10` exactly. The single-Dirac value
+If the truncation is exact at both atoms, this equals `Tr(ρ_μ E_i)`.
+The converse is not needed and is not claimed: weighted truncation errors can
+in principle cancel. For the shared effect `E_0` the endpoints `1/2` and `0`
+are dyadic, so the mixture equals `3/10` exactly. The single-Dirac value
 `w_n(δ_{ρ_μ}, E_0 | M)` is not `3/10`.
 
 **Proof.** The displayed mixture identity is the definition of
@@ -322,31 +338,33 @@ because it is a mixture of the atomic truncated masses. It is not a function
 of the barycenter `ρ_μ` alone at finite `n` for non-dyadic pairings:
 `w_n(μ, E_0 | M)≠w_n(δ_{ρ_μ}, E_0 | M)`. Continuum barycenter evaluation
 `w_μ(E)=Tr(ρ_μ E)` is a function of `ρ_μ` only. Finite-n floor registration
-is therefore affine in `μ` and is not barycenter evaluation. Theorem 2
-recovers barycenter evaluation uniformly as `n→∞` at rate `2^{-n}`.
+is therefore affine in `μ` and is not barycenter evaluation. For any
+finite-support `μ=Σ_k p_kδ_{ρ_k}`, Theorem 2 and the triangle inequality give
 
-## Theorem 6 — Record Typing Residual
+`|w_n(μ,E_i|M)-Tr(ρ_μE_i)|`
+`≤Σ_k p_k|q_i(ρ_k)/2^n-Tr(ρ_kE_i)|<2^{-n}`.
 
-**Claim.** A declared encoding of each register point `k∈U_n` as `n` binary
-Record bits on `n` auxiliary sites is a typing of the discrete factor, not a
-derivation that those bits are independent of `ρ` or uniformly distributed.
+Thus the finite kernels converge uniformly to barycenter evaluation at rate
+`2^{-n}` on the declared finite menus.
+
+## Binary-Encoding Boundary
+
+Every register point `k∈U_n` has an ordinary `n`-bit binary encoding. This
+mathematical bijection does not identify those bits with formed records and
+does not supply their physical law.
 
 **Premises used (quoted only).**
 
 - "When present, a record locks exactly one admissible local possibility."
 - "A readout value is determined by record content alone."
-- "For any finite collection of pairwise-disjoint records, scalar readout `I` is additive, with `I(empty)=0`."
+- "A site with no record cannot be read."
 
-**Residual.** Content-only readout and finite additivity permit a scalar
-reading of `n` disjoint one-bit records, and the lock sentence permits each
-bit to lock one admissible local possibility. They do not force the joint
-law of those bits to be the uniform counting measure `λ_n`, and they do not
-force that law to be independent of the system density `ρ`. The current
-Admissibility sentence says that the distribution over possibilities is
-determined by nearest-neighbor conditions; if the auxiliary sites neighbor
-the system site, dependence on `ρ` is not ruled out. This note does not
-claim a physical menu compiler, does not claim that no compiler exists, and
-does not propose axiom text.
+The lock sentence allows one present record to carry one admissible local
+possibility. It does not create `n` auxiliary records, select a binary content
+pair at each one, or choose the uniform product law `λ_n`; the current Record
+surface also contains no named scalar functional or finite-additivity rule.
+This note claims no physical menu compiler, makes no claim that a compiler is
+impossible, and proposes no axiom text.
 
 ## Hostile-Menu Controls
 
@@ -380,8 +398,9 @@ unchanged.
 ## Boundary And Non-Claims
 
 - No axiom sentence is edited. The Admissibility distribution sentence and
-  the Record lock, content-only, and additivity sentences are quoted only as
-  premises.
+  the current Record lock/content-only/unreadable-at-absence sentences are
+  quoted only as a semantic boundary. No scalar readout functional,
+  additivity rule, or value at absence is imported.
 - The discrete factor `U_n` is a declared registration coordinate. It is not
   derived from the four axioms, not a new primitive of the axiom surface, and
   not an axiom edit.
@@ -398,17 +417,37 @@ unchanged.
 - Status prose is bounded-support / bounded_theorem only. No broader surface
   status is asserted.
 
+## Review Record
+
+Review-loop repair of PR #6170 made four source-level corrections before
+landing:
+
+1. removed the retired scalar Record functional, finite-additivity rule, and
+   value-at-absence premise, and renamed the package as a mathematical finite
+   product construction rather than a Record-bit theorem;
+2. rewired the construction to the landed August 12 barycenter and exact
+   continuum registered-partition parents;
+3. replaced direct-blocker-closure framing with upstream-support framing,
+   because the auxiliary-register law and the Record event bridge remain open;
+4. removed the unsupported converse that mixture equality would force atomic
+   exactness, while retaining the proved forward implication and the exact
+   `E_0` endpoint-mixture calculation.
+
+The finite partition, error bound, dyadic image exclusion, and
+affine-versus-barycenter split remain the reviewed theorem surface.
+
 ## Imports And Claim Boundary
 
 | Item | Role | Status |
 |---|---|---|
-| current four axiom sentences | exact semantic baseline | supplied; no edit |
+| current four-axiom surface | one-site possibility domain and semantic boundary | supplied; no edit; no scalar/additivity/absence-value premise |
 | August 10 type-separation note | hostile menus, restriction witness, partition interface left open | parent dependency |
-| August 9 frame-lift note | menu-independent trace-form target | parent dependency |
+| August 12 barycenter-evaluation note | exact affine grade and restriction separation | direct parent dependency |
+| August 12 registered-partition note | exact continuum inverse-transform cells on `D×[0,1]` | direct parent dependency discretized here |
 | floor arithmetic and dyadic rationals | Theorems 2--4 | definition-level mathematics |
 | product measure `μ⊗λ_n` and floor-difference bins | Theorems 1, 5 | constructed here |
 | finite-support barycenter evaluation `Tr(ρ_μ E)` | comparison target | parent kernel; not equal to `w_n` at finite `n` on non-dyadic pairings |
-| physical bit compiler | independent uniform Record bits, or a continuum factor | open |
+| physical auxiliary-register compiler | formed auxiliary records, selected binary contents, and an independent uniform law | open |
 | content-only event-label bridge | physical Record readout | open |
 | observed probabilities, frequencies, fits | none | not used |
 
@@ -416,11 +455,11 @@ unchanged.
 
 | # | Question | Answer |
 |---|---|---|
-| V1 | Named obstruction addressed? | August 10 states that the strongest missing lemma is "a physical construction that produces registered measurable event partitions" from Record and Admissibility structure, and leaves that construction open. This note supplies a finite Record-typed product family `D×U_n` together with the exact truncation bound and the never-dyadic obstruction. It does not claim that the upstream interface is unratified. |
-| V2 | New content? | Searched `origin/main` at `c45dd5ab30` by `git ls-tree` / `git grep` for dyadic registration, truncated barycenter, unit-interval ancilla, product registration, and registration coordinate. Hits: the August 10 type-separation note names the registered-partition interface and leaves construction open; the universal-QG barycentric-dyadic notes are a different object (refinement nets on `PL S^3×R`); the formation-gate "registration coordinate" is a different object (the grain `(w,1-w)`). No landed floor-difference kernel on the August 10 menus appears on that commit. Unmerged pull requests 6160–6163 construct continuum product partitions and kernels; they are not on `origin/main` and are not premises. The discrete `U_n` construction, the `3/10` never-dyadic obstruction, and the affine-but-not-barycentric split are new. |
+| V1 | Named obstruction addressed? | The August 12 registered-partition parent supplies exact continuum inverse-transform cells on `D×[0,1]` while leaving the physical auxiliary law and Record bridge open. This note supplies a finite dyadic discretization, its exact error bound, and its image exclusion. It is upstream mathematical support and does not claim to close either physical bridge. |
+| V2 | New content? | On reviewed main, the August 10 note names the interface, the barycenter parent constructs the effect grade, and the August 12 partition parent constructs exact continuum cells. None gives the finite floor-difference kernel on `D×U_n`, the `2^{-n}` bound, the `3/10`/`2/5` dyadic image exclusion, or the affine-but-not-barycentric finite-resolution split. The universal-QG barycentric-dyadic refinement nets are a different object on `PL S^3×R`. |
 | V3 | Independently checkable? | Textbook floor functions do not mention the August 10 menus, the restriction pair `25/142` versus `2/11`, or the `3/10` never-dyadic obstruction on those states. The runner recomputes menus, restriction, floor-difference masses, and the mixture split in exact `Q(√2)` arithmetic. |
 | V4 | More than a restatement? | Yes. The exact `1/4` versus `3/10` dichotomy, and the split in which the mixture of endpoints equals `3/10` while the Dirac at the barycenter does not, are not restatements of the parent type-separation or of the parent grade. |
-| V5 | One-step relabel? | No. The claim is not a corollary of August 10 (negative type-separation) or August 9 (grade granted). The closest landed wording is the August 10 hypothetical partition interface. The closest unmerged comparison is a continuum factor `D×[0,1]`; the present object is a finite discrete replacement with a new non-barycentric split. |
+| V5 | One-step relabel? | No. Discretizing the continuum inverse-transform cells introduces floor error and changes the finite kernel's factorization through the barycenter. The exact image exclusion and mixture-versus-barycenter split require new arithmetic beyond the parent identities. |
 
 ## No-Go Discipline Gate (Theorem 4 only)
 
@@ -430,22 +469,24 @@ gate does not ship a global non-derivability theorem.
 
 ### N1 — materially distinct routes
 
-| Route | Exact attack | Result | Marker |
+| Route family | Exact attack | Result | Marker |
 |---|---|---|---|
-| finite-n floor registration | require `w_n(δ_ρ,E_0\|M)=Tr(ρ E_0)` at all three declared Diracs | Theorem 4: `1/4` is exact only for `n≥2`; `3/10` and `2/5` are never dyadic | **ATTEMPTED** |
-| `n=∞` / continuum Lebesgue factor | replace `U_n` by `[0,1]` with Lebesgue measure | an escape from the finite-n claim, not a counterexample to it | **ATTEMPTED** (escape) |
-| shrink the Dirac family to dyadic pairings | keep only `I/2` and the spectral endpoints | a different claim; the declared family includes `3/10` | **ATTEMPTED** |
-| non-uniform `λ_n` | change the counting weights on `U_n` | a different measure; masses need not lie in `2^{-n}Z` | **ATTEMPTED** |
-| μ-dependent bin edges | let the partition depend on `μ` rather than only on `ρ` and `M` | a different object; Theorem 4 is about the constructed μ-independent bins | **ATTEMPTED** |
-| one-site Hermitian content as `U_n` | identify register points with on-site matrix entries | typing residual (Theorem 6), not an exact-equality repair of Theorem 4 | **ATTEMPTED** |
-| treat `3/10` as a dyadic rational | assert `2^n·3/10∈Z` for some finite `n` | forbidden by unique factorization: `5` does not divide `2^n·3` | **RULED OUT BY PRIOR** |
+| uniform-dyadic image | characterize all counting masses as `m/2^n` | `3/10` and `2/5` are outside that image for every finite `n` | **ATTEMPTED** |
+| continuum atom splitting | replace `U_n` by `[0,1]` with Lebesgue measure | exact escape supplied by the August 12 parent, but it changes the finite-register hypothesis | **ATTEMPTED** |
+| non-uniform finite weights | keep a finite register but assign atom weights with a factor of five | exact escape for selected values, but it replaces uniform `λ_n` | **ATTEMPTED** |
+| register cardinality divisible by five | replace `2^n` points by a finite register whose size is divisible by `5` | can represent `3/10` and `2/5` at suitable cardinality, but it is not the declared dyadic register | **ATTEMPTED** |
+| stochastic kernel on the original state | sample the event directly with probability `Tr(ρE)` | exact live escape, but it changes deterministic floor-bin registration into a stochastic kernel | **ATTEMPTED** |
+| mixture-level cancellation | represent a biased barycenter as a mixture of spectral endpoints | realizes `3/10` exactly for the endpoint mixture, but does not make the Dirac at that barycenter exact; this is Theorem 5's separation | **ATTEMPTED** |
+| terminating binary expansion | assert that `3/10` or `2/5` has a finite binary expansion | unique factorization rules this out because the reduced denominator contains `5` | **RULED OUT BY PRIOR** |
 
 ### N2 — wall independence
 
-Theorem 4 closes only exact finite-n equality on the declared Dirac family
-for this truncated kernel. It does not close continuum lifts, non-affine
-kernels, a physical bit compiler, or a content-only event-label bridge.
-Those walls remain independent.
+Theorem 4 claims no collection of independent walls. It proves one exact
+image exclusion under one conjunction of explicit hypotheses: finite dyadic
+register, uniform counting measure, the displayed floor bins, and the
+declared Dirac family. N2 is therefore not applicable; the alternative
+mechanisms in N1 are escapes that change a hypothesis, not walls whose count
+is being inflated.
 
 ### N3 — hidden-condition scan
 
@@ -456,16 +497,17 @@ Those walls remain independent.
 | declared Dirac family | explicit hypothesis of Theorem 4 |
 | August 10 menus | declared finite hostile family |
 | uniform `λ_n` | declared counting measure |
-| physical bit compiler | open; not assumed |
+| physical auxiliary-register compiler | open; not assumed |
 | continuum factor | live escape; not executed here |
 
 ### N4 — source residual matching
 
 | Source | Exact residual used | Match and limit |
 |---|---|---|
-| [`docs/MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) | Admissibility distribution sentence; Record lock, content-only, and additivity sentences | quoted as premises only; no edit |
+| [`docs/MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) | one-site possibility domain, Admissibility distribution sentence, and current Record boundary | exact current text; no scalar/additivity/absence-value premise and no edit |
 | August 10 type-separation note | hostile menus, restriction numbers, registered-partition interface left open | parent dependency; finite registration constructed here |
-| August 9 frame-lift note | menu-independent trace-form target | not re-proved; not a premise of Theorem 4 |
+| August 12 barycenter-evaluation note | `Tr(ρ_μE)` comparison target | exact positive target; no physical law imported |
+| August 12 registered-partition note | continuum `D×[0,1]` inverse-transform cells | exact escape and direct parent discretized here |
 
 ### N5 — resolution and rhetoric audit
 
@@ -473,7 +515,7 @@ Those walls remain independent.
 |---|---|---|
 | per element | `E_0` and the remaining declared menu members at named Diracs | no classification of every map from measures to effects |
 | per site | one `M_2(C)` density body times `U_n` | no composite theorem |
-| per mode | prefix-sum floor bins on the declared menus | no spectral/harmonic mode exhaustion |
+| per mode | not executed; no spectral or harmonic modes occur in the theorem | no mode-level no-go |
 | per block | finite-n exact-equality obstruction only | no dynamics, formation rate, or Record identification |
 | lattice-wide | checked and not executed | no lattice-wide no-go |
 
@@ -482,15 +524,15 @@ lattice-wide.
 
 ### N6 — live partial-closure paths
 
-1. The continuum limit `n→∞`, or an explicit Lebesgue factor, recovering
-   barycenter evaluation uniformly at rate `2^{-n}`.
+1. The explicit Lebesgue factor of the August 12 parent, recovering
+   barycenter evaluation exactly.
 2. Non-affine kernels outside barycenter evaluation.
-3. A physical compiler that produces independent uniform Record bits from
-   Record and Admissibility structure.
+3. A physical compiler that produces an atom-splitting auxiliary law from
+   Admissibility structure.
 4. A content-only bridge from the mathematical event label to Record
    readout.
 
-No axiom sentence is required by the finite-n obstruction. Those four paths
+No axiom sentence is required by the finite dyadic image exclusion. Those four paths
 remain live.
 
 ### N7 — hostile steelman
@@ -506,22 +548,23 @@ an approximation, is a different claim.
 
 ### N8 — cross-cycle echo
 
-August 10 Theorems 1--3 are the parent negatives (singleton mass, atomless
-restriction, contextual restriction). The present negative is a different
-residual: this truncated kernel cannot be exact at all three declared Diracs
-for any finite `n`. The positive construction does not cancel the parent
-negatives; it answers the open partition interface those negatives
-motivated, inside a finite discrete replacement.
+August 10 separates the global measure, menu kernel, and registered-event
+types. The August 12 barycenter note supplies the exact affine grade, and the
+August 12 registered-partition note supplies exact continuum atom splitting.
+The present residual is narrower: the uniform dyadic discretization of those
+cells cannot be exact at the two declared non-dyadic Diracs for any finite
+`n`. The continuum parent is an explicit escape, so no global registration
+negative is inferred.
 
-**Gate disposition.** PASS for the scoped finite-n exact-equality
-obstruction. FAIL / DO NOT SHIP for "no registration exists", "the axioms
-cannot supply bits", or "continuum is impossible".
+**Gate disposition.** PASS for the scoped uniform-dyadic image exclusion.
+FAIL / DO NOT SHIP for "no registration exists", "the axioms cannot supply an
+auxiliary register", or "continuum is impossible".
 
 ## Primary Runner
 
-[`scripts/record_bit_dyadic_registration_truncated_barycenter_2026_08_13.py`](../scripts/record_bit_dyadic_registration_truncated_barycenter_2026_08_13.py)
+[`scripts/finite_dyadic_product_registration_truncated_barycenter_2026_08_13.py`](../scripts/finite_dyadic_product_registration_truncated_barycenter_2026_08_13.py)
 recomputes the floor-difference partition, the uniform truncation bound, the
-exact-versus-never-dyadic dichotomy, the finite-n obstruction, the mixture
+exact-versus-never-dyadic dichotomy, the finite dyadic image exclusion, the mixture
 split, and the hostile-menu controls, all in exact `Q(√2)` arithmetic.
 Identity gates call `floor_diff_mass` and `truncated_pushforward`; replacing
 either by restriction `25/142` or by raw `Tr(ρ E)` must fail those checks.

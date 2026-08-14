@@ -2993,6 +2993,8 @@ instance or Fourier census.
   not to become global uniqueness. Its critical-pair enumeration shows a bare
   two-event test would make both laws hit the already known permanent-write
   wall, so the next seam is reranked to one-event environment/source closure
-  followed by reachable two-event confluence. No
+  followed by reachable two-event confluence. Science commit `1fceecb445` is
+  pushed; stacked PR #6275 is open, mergeable, and `CLEAN` on exact Block69
+  receipt `5372dc9508`. No
   audit verdict, retention, axiom edit, obligation retirement, score movement,
   PR landing, or `review-loop` operation is performed at this checkpoint.

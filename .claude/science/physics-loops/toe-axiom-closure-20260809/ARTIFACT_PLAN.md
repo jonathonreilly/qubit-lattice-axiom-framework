@@ -1866,7 +1866,8 @@ complete conditional nonlinear compact solution:
 - evidence: source/input-pinned cache is fresh at `PASS=10 FAIL=0` in 30.40
   seconds; ten named mutations fail exactly one aggregate each; independent
   reproduction accepts the repaired quotient boundary; citation graph is
-  `5,516/15,831` with out-degree five
+  `5,516/15,831` with out-degree five; science commit `1fceecb445` is pushed
+  and stacked PR #6275 is open, mergeable, and `CLEAN`
 - next artifact: close one event as a typed environment/source transition,
   leading with the inherited `adjacent_packet` and using `output_root` as the
   control; recognize actual roles, preserve or account for every output and

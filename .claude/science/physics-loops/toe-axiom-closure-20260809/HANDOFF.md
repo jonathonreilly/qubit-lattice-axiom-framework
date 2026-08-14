@@ -2824,8 +2824,9 @@ primitive unless a later constitutional proof says otherwise.
 Primary/source-input-pinned cache is fresh at `PASS=10 FAIL=0` in 30.40
 seconds. Ten isolated mutations each fail one aggregate; the independent
 read-only reproduction accepts the repaired equivalence boundary. Citation
-registration is `5,516/15,831`, out-degree five. Direct conformance gates must
-still be rerun after staging and before the science commit.
+registration is `5,516/15,831`, out-degree five. Direct conformance gates pass;
+science commit `1fceecb445` is pushed, and stacked PR #6275 is open,
+mergeable, and `CLEAN` on exact Block69 receipt `5372dc9508`.
 
 The next block must not build a third decorative parser or return to standalone
 action/gravity carriers. First close one event as a typed transition: derive

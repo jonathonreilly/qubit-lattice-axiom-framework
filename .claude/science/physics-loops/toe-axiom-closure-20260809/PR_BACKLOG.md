@@ -1234,3 +1234,17 @@ aggregate each; citation registration is `5,515/15,825`, out-degree five. No
 canonical axiom, fixed TOE percentage, positive retention, audit verdict, or
 `review-loop` change. Science commit is `96abe69ed2`. Landing order places
 Block 69 after #6269.
+
+## Block 70
+
+PR #6275 is open, mergeable, and `CLEAN` on
+`physics-loop/toe-axiom-closure-block70-lphys-record-law-tournament-20260813`,
+stacked exactly on Block-69 delivery `5372dc9508`. Its distinct review object
+is the exact four-way fine branch, two total same-weight isolated-patch Record
+laws, exact 96-packet/96-history unrestricted recoding control, and the shared-
+decoder forward-versus-transverse geometry invariant that preserves their
+physical distinction. Primary/cache is `PASS=10 FAIL=0`; ten mutations fail
+one aggregate each; citation registration is `5,516/15,831`, out-degree five.
+No canonical axiom, fixed TOE percentage, positive retention, audit verdict,
+or `review-loop` change. Science commit is `1fceecb445`. Landing order places
+Block 70 after #6274.

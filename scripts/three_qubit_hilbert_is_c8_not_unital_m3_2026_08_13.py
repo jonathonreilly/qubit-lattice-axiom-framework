@@ -122,7 +122,7 @@ def main() -> int:
     )
     checks.check(
         "theorem3-native-tensor-exists",
-        "the three-site Lattice+Qubit tensor is constructed and has dim 8",
+        "the displayed three-site tensor is constructed and has dim 8",
         h3_dim == 8 and h3_dim != m3_dim,
     )
 
@@ -162,7 +162,7 @@ def main() -> int:
             phrase in note_n
             for phrase in (
                 "different types",
-                "native tensor of sites",
+                "displayed tensor of sites",
                 "Do not identify `C^8` with Standard Model generations",
                 "Do not identify `M_3` with QCD",
             )

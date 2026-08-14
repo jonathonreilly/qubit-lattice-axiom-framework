@@ -1,7 +1,7 @@
 ---
 claim_id: three_qubit_hilbert_is_c8_not_unital_m3_bounded_theorem_note_2026-08-13
 claim_type: bounded_theorem
-claim_scope: "Lattice plus Qubit supply a three-site Hilbert space H_3 = (C^2)^{⊗3} ≅ C^8 of complex dimension 8, with B(H_3) ≅ M_8(C) of dimension 64. That object is a native site tensor. Unital M_3(C) is a different type: dim M_3 = 9 ≠ 8 = dim H_3 and 9 ≠ 64 = dim M_8, and a unital copy of M_3 does not sit in M_8 because 3 does not divide 8. The note does not identify C^8 with Standard Model generations, does not identify M_3 with QCD, and does not adopt a generation axiom."
+claim_scope: "Conditional on the explicitly displayed three-site tensor H_3=(C^2)^{⊗3}≅C^8, one has dim H_3=8 and B(H_3)≅M_8(C) of dimension 64. Lattice names sites of Z^3 and Qubit names one-site M_2(C); they do not themselves supply the multi-site Hilbert tensor. That tensor is a displayed composite. Unital M_3(C) is a different type: dim M_3=9≠8 and 9≠64, and a unital copy of M_3 does not sit in M_8 because 3 does not divide 8. No SM generation or QCD identification is supplied."
 upstream_dependencies:
   - minimal_axioms
 runner: scripts/three_qubit_hilbert_is_c8_not_unital_m3_2026_08_13.py
@@ -24,9 +24,9 @@ Parents on `origin/main`: the axiom memo
 ## Result Up Front
 
 The Qubit axiom presents one site as `M_2(C)`. The defining module of that
-presentation is `C^2`, of complex dimension `2`. Lattice supplies distinct
-sites. The three-site tensor Hilbert space therefore exists as a native
-construction:
+presentation is `C^2`, of complex dimension `2`. Lattice names distinct
+sites. This note then **displays** the standard three-site Hilbert tensor
+as a composite input. The axioms do not themselves supply that tensor.
 
 `H_3 = (C^2)^{⊗3} ≅ C^8`, `dim_C H_3 = 2^3 = 8`.
 
@@ -107,20 +107,21 @@ dimension is `8 · 8 = 64`, and `9 ≠ 64`. ∎
 
 ### Theorem 3
 
-A three-site Hilbert space is a Lattice+Qubit tensor of sites. That
-construction exists and has dimension `8`. Unital `M_3` still does not sit
-in `M_8` (`3 ∤ 8`). So a generations-as-Hilbert reading and a
-color-as-unital-algebra reading are different types: one is a native tensor
-of sites, the other is not.
+A three-site Hilbert space is a **displayed** tensor of one-site
+modules. That displayed composite has dimension `8`. Unital `M_3`
+still does not sit in `M_8` (`3 ∤ 8`). So a generations-as-Hilbert
+reading and a color-as-unital-algebra reading are different types:
+one is a displayed tensor of sites, the other is not.
 
-**Proof.** Lattice supplies distinct sites; Qubit supplies a `C^2` module at
-each site. The three-fold tensor of Theorem 1 is therefore a construction
-already named by those two axioms; its dimension is `8`. A unital
-homomorphism `M_3(C) → M_8(C)` would realize the defining `3`-dimensional
-module of `M_3` as a direct summand of `C^8`, which requires `3 | 8`. But
-`8 = 2^3` and `3` is odd, so `3 ∤ 8`. The Hilbert tensor therefore exists
-as a site tensor while unital `M_3` does not sit in the operator algebra of
-that tensor. Those are different mathematical types. ∎
+**Proof.** Lattice names distinct sites; Qubit names a `C^2` module at
+each site. The three-fold tensor of Theorem 1 is an explicit composite
+input, not a consequence of those two sentences; its dimension is `8`.
+A unital homomorphism `M_3(C) → M_8(C)` would realize the defining
+`3`-dimensional module of `M_3` as a direct summand of `C^8`, which
+requires `3 | 8`. But `8 = 2^3` and `3` is odd, so `3 ∤ 8`. The
+displayed Hilbert tensor has dimension `8` while unital `M_3` does not
+sit in the operator algebra of that tensor. Those are different
+mathematical types. ∎
 
 The line `3 ∤ 8` is the whole unital-embedding content used here. This note
 is not a restatement of a general unital-`M_3`-in-`M_{2^n}` classification.
@@ -140,11 +141,11 @@ therefore stops at the type split and does not adopt those readings. ∎
 
 ## Type Split
 
-| Object | Type | Native from Lattice+Qubit? | `dim_C` |
+| Object | Type | Named by Lattice+Qubit? | `dim_C` |
 |---|---|---|---|
 | one-site module | `C^2` | yes (Qubit `M_2(C)` defining module) | `2` |
-| three-site Hilbert `H_3` | `(C^2)^{⊗3} ≅ C^8` | yes (tensor of sites) | `8` |
-| bounded operators on `H_3` | `B(H_3) ≅ M_8(C)` | yes (endomorphisms of that tensor) | `64` |
+| three-site Hilbert `H_3` | `(C^2)^{⊗3} ≅ C^8` | no (displayed composite) | `8` |
+| bounded operators on `H_3` | `B(H_3) ≅ M_8(C)` | no (endomorphisms of that composite) | `64` |
 | unital `M_3(C)` | matrix algebra | no | `9` |
 
 The first three rows are one type family: Hilbert modules and their
@@ -162,7 +163,7 @@ the last row with QCD, is outside the claim.
   fact `3 ∤ 8` is used only to keep the unital-algebra type distinct from
   the Hilbert tensor.
 - It does not claim that no other three-dimensional structure can ever be
-  defined on some other carrier. It claims that the native three-site
+  defined on some other carrier. It claims that the displayed three-site
   Hilbert space is `C^8`, not unital `M_3`.
 
 ## Runner

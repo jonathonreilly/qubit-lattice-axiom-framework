@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/three_qubit_hilbert_is_c8_not_unital_m3_2026_08_13.py
-runner_sha256: 085f688b665f9b42f2bb9d6718dfcde7db76f44e4dbcf8e2a018ba24b990997d
-input_fingerprint_sha256: 5357ef62d73bf38268c42fb1d7a3f6778c2804dde84a021961ec206d9369f510
+runner_sha256: 0a3c01b9c7c8e597ba64f9e1197699812fbc79b1c39302da0a12cf95ff320043
+input_fingerprint_sha256: 00c52ac35c838b28bcde6d15dff89f6bc4b9dac88d8057d6428e163c3cc37fca
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 PASS: one-site-module defining module of M_2(C) is C^2
@@ -15,7 +15,7 @@ PASS: theorem2-m3-not-h3 dim M_3 != dim H_3, so M_3 is not B(H_3)
 PASS: theorem2-m8-dim dim B(H_3) = dim H_3 times dim H_3
 PASS: theorem2-m3-not-m8 dim M_3 != dim M_8
 PASS: theorem3-unital-nonembed 3 does not divide 8, so unital M_3 does not sit in M_8
-PASS: theorem3-native-tensor-exists the three-site Lattice+Qubit tensor is constructed and has dim 8
+PASS: theorem3-native-tensor-exists the displayed three-site tensor is constructed and has dim 8
 PASS: mutation-2-cubed-eq-9 predicate 2**3 == 9 fails
 PASS: mutation-3-divides-8 predicate 3 divides 8 fails
 PASS: source-qubit-m2 axiom memo names one-site M_2(C)

@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/physical_cell_cutting_twelve_frontier_cycle739_2026_08_05.py
 runner_sha256: 9fb052ebe5b58585c716d766c81882f04e16e4584482e7a5a354ff66c8510b9d
-input_fingerprint_sha256: 6cec6a3bd00ee62db7c98240b9324bf1308c148270d703b29bb3a5caacb22571
+input_fingerprint_sha256: 210bff6f472d17ebc782719427a6588adeee396a7864cb07cbcd6cd1ef6186b9
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 89.78
+elapsed_sec: 128.78
 status: ok
 ----- stdout -----
 INC 15800x192 colsum 1975 rank 88 kernel 104 rows-distinct 15800
@@ -65,7 +65,7 @@ per_site: checked -- one supplied 16-corner coordinate cell; no physical cell se
 per_mode: checked and not executed -- no field, spectral, or momentum-mode decomposition exists
 per_block: checked -- all 15800 cutting rows and every scheduled quarter/eighth split execute
 lattice_wide: checked and not executed -- no multi-cell, arbitrary-L, boundary, or continuum claim
-elapsed under 90 s peak memory under 1600 MB
+elapsed under 130 s peak memory under 1000 MB
 PASS G37  the whole runner finishes under 900 seconds
 PASS G38  its output stays under 6000 characters
 RECEIPT outputs/physical_cell_cutting_twelve_frontier_cycle739_2026_08_05_receipt_2026-08-05.json

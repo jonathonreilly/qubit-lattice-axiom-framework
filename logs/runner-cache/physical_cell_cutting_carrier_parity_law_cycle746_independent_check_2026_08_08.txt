@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/physical_cell_cutting_carrier_parity_law_cycle746_independent_check_2026_08_08.py
+runner_sha256: 8bab69b1c6ce9471e473492936d8f2c7b93dd7fdc2940189cfc3985bc27611fd
+input_fingerprint_sha256: 84b7a6e837142ced3e6f12c8c28709d9bdc1bf47cfc88e796969fa8ccd25d125
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 4.95
+status: ok
+----- stdout -----
+PASS independent.population  opposite-pivot reconstruction gives the full table
+PASS independent.dependency  Cycle 745 exact target identities and witnesses are current and semantic
+PASS independent.consistency  low-pivot augmented elimination rejects only odd-ctl
+PASS independent.kernel  last-candidate low-column RREF gives rank 88 and nullity 104
+PASS independent.fixed_free  kernel orthogonality independently gives five fixed blocks
+PASS independent.classes  seventeen realizable targets form classes 15 and 2
+PASS independent.total_parity  odd column weight independently identifies total-support parity
+PASS independent.profile_counts  direct four-loop enumeration reproduces both sequences
+PASS independent.odd_sizes  neither realizable class licenses an odd-size profile
+PASS independent.inventory  all split-target pairs through size twenty total 180625
+PASS independent.primary_contract  primary receipt pins current sources and independently reconstructed conclusions
+PASS hostile.realizable_count  promoting odd-ctl to a reading invalidates the contract
+PASS hostile.dependency_status  a failing predecessor is rejected
+PASS hostile.witness  a changed target witness fails semantic identity
+PASS hostile.incidence  one changed incidence bit invalidates the canonical identity
+per_element: checked -- all 192 columns enter opposite-pivot incidence and kernel
+per_site: checked and not executed -- one supplied coordinate four-cube only
+per_mode: checked and not executed -- no field or momentum modes are present
+per_block: checked -- seven blocks, seventeen realizable targets, one control
+lattice_wide: checked and not executed -- no multi-cell or continuum claim
+RECEIPT outputs/physical_cell_cutting_carrier_parity_law_cycle746_independent_check_2026_08_08_receipt_2026-08-08.json
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

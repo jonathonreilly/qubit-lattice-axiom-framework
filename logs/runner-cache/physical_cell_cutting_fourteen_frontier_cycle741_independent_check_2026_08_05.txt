@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/physical_cell_cutting_fourteen_frontier_cycle741_independent_check_2026_08_05.py
 runner_sha256: 842e4b276daf6d82e516bf553b2bbe6ab844a58d28dce72b2763a9918507c25d
-input_fingerprint_sha256: b51ba083dca52d4586f0625ef725a4942ea176d039c7447ff0cf36a158485782
+input_fingerprint_sha256: 24ccd0d873f8539ce330b91dfc6948af9f24d48845fbbc66baa692f78ff2b4c2
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 210.77
+elapsed_sec: 271.71
 status: ok
 ----- stdout -----
 PASS independent.population  opposite-pivot exact covers reconstruct 15800 rows on 192 used pieces

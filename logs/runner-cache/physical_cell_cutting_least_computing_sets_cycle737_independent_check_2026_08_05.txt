@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/physical_cell_cutting_least_computing_sets_cycle737_independent_check_2026_08_05.py
 runner_sha256: e452a7b00ba0fadf65949ad2fb3e7eed462905a0202bacdc494b2fe83e642c5e
-input_fingerprint_sha256: 535480af536e2382ea79ddb3f88eedeb9563da62656cc858ea57ab119b39051e
+input_fingerprint_sha256: 531ae7b02d5b09be364f31f126750b2754650c790d4b37855d2614e88ce2ba48
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 355.73
+elapsed_sec: 393.75
 status: ok
 ----- stdout -----
 PASS independent.inverse  every float-proposed inverse is accepted only after exact integer multiplication

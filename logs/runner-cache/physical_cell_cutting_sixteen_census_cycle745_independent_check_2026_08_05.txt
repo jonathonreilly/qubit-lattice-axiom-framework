@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/physical_cell_cutting_sixteen_census_cycle745_independent_check_2026_08_05.py
 runner_sha256: 7a5dad6f4f59c6498d50a0dd4a35e83a20dbd34e0c3eb89b2d743984d8b91e4f
-input_fingerprint_sha256: 3adceadf8904e3457823711223372179fd0dd8f8509f1b95dd93aa2f62abc78f
+input_fingerprint_sha256: b9b6aa6fe59fde29e8e1986ba72acf5a6fe88f5b9ff2ebb9e1ffeefa2cbd3ac4
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 174.74
+elapsed_sec: 248.34
 status: ok
 ----- stdout -----
 PASS independent.population  opposite-pivot exact covers reconstruct all 15800 rows on 192 used pieces

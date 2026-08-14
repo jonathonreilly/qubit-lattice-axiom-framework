@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/physical_cell_cutting_fourteen_frontier_cycle741_2026_08_05.py
 runner_sha256: 8abd6cc44b5701897d4e8def30dc97339d30c4243cc55e410179d7e5e09022d7
-input_fingerprint_sha256: 3543689859b745b1eed2c8f3b95d9f916cc83d62a23da741e654a9a3a79abdb3
+input_fingerprint_sha256: c4cafaaad5d4ccd24c825536914f3a82b7c3dba0d627f6ec6f212124622a3a78
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 339.21
+elapsed_sec: 432.46
 status: ok
 ----- stdout -----
 PASS D01  Cycles 737 and 739 bind the exact incidence, eight readings, and complete weight-twelve predecessor result

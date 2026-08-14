@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/physical_cell_cutting_least_computing_sets_cycle737_2026_08_05.py
 runner_sha256: 4943c2bd0d89099394c06555f065bbed93c2d536c87a8a131a483535f6b027cd
-input_fingerprint_sha256: b8130d2941178a9ecdc244ed5319d2092490ba5c18ce87608b74ed118938bbaa
+input_fingerprint_sha256: 6798045c4a7505bcb3970513ab0e594e43df70fbec8652dcfc04837f836ea023
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 357.99
+elapsed_sec: 406.35
 status: ok
 ----- stdout -----
 PASS base.cell  4368 five-subsets of the 16 corners give 2672 pieces of least volume, carrying 2736 sample points with no collision and 0 on a boundary; the cell has 48 symmetries

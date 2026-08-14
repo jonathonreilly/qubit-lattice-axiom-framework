@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/physical_cell_cutting_sixteen_census_cycle745_2026_08_05.py
 runner_sha256: c5bd4c42b97db472ba869beba47c42940c3f3ae1f9d0f883b59a49b3db456883
-input_fingerprint_sha256: 8c130f05374aa315c975be4382d1fa24ba3ee5c00d0824aa646294da9369b987
+input_fingerprint_sha256: 48bfa07fd455e4176c84a69c30987ccd9b178814daf36e68e5cac701260caa8d
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 235.72
+elapsed_sec: 331.89
 status: ok
 ----- stdout -----
 PASS D01  Cycle 737 binds this exact incidence, order, and eight readings

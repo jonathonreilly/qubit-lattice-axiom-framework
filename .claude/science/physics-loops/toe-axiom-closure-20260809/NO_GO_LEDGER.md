@@ -436,3 +436,15 @@ remaining walls are physical source typing, cadence, normalization, the three
 relative `h_it` modes, physical transfer, and nonlinear completion. Reopen a
 negative gate only if these independent live families are attempted or
 excluded with current retained authority.
+
+## Block 77 One-tick / Record-ontology partial narrowing
+
+| Scoped negative considered | Exact evidence | Failing N1--N8 items | Demoted disposition | Live/reopen routes |
+|---|---|---|---|---|
+| the displayed staggered one-tick Einstein law is not full-zone real on the declared `L=9` TT census; this does not imply gravity, local finite-depth transfer, Record encoding, or axiom amendment is impossible | exact local 33-shift operator; all `9^4` Ward/rank checks; exact symmetric source on 6,528 neutral modes; one-tick real/non-real count `176/552`; distinct depth-two TT control positive `728/728` | `N1` fails because full constrained depth two, refined/auxiliary transfer, implicit/Cayley transfer, open-boundary matter, Record/M2 encoding, and nonlinear completions remain untested and have no current retained closure; `N7` supplies a concrete first-order Record-local steelman | `partial-narrowing`; ship the positive linear carrier/source construction and the exact formulation-specific one-tick count only | full `(h,pi,lapse,shift)` depth-two source schedule and birth debit; open/infinite zero-mode sector; localized rest source; exact Record/M2 state intertwiner; coupling/work debit; nonlinear selected law |
+
+Do not ship a gravity no-go, a universal local-law/CFL no-go, an ontology
+impossibility, or an axiom-necessity conclusion from Block 77.  Reopen the
+negative gate only when the live normalized route families are attempted or
+excluded by current retained authority.  Until then the exact one-tick count
+is a formulation-specific boundary inside a partial-positive packet.

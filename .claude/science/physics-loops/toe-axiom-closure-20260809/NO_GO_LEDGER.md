@@ -534,3 +534,18 @@ mixed-Hessian integrability is not tested.  No current named route supplies
 every joint derivative and reciprocal recoil, but that census is not a
 universal absence theorem.
 No axiom is amended and no tracked obligation or TOE percentage moves.
+
+## Block 83 Component-staggered link action / localized-Ward partial narrowing
+
+| Scoped negative considered | Exact evidence | N1--N8 disposition | Demoted disposition | Live/reopen routes |
+|---|---|---|---|---|
+| the Block78 cadence cannot arise from one matter-dependent scalar action, or failure of a pointwise metric reading implies gravity/action impossibility | one component-staggered phase-space macro-link action reproduces all lapse, shift, and front-loaded stress gradients; all `13,056` signed modes arise from a `+1/-1` link pair; exact flat `P/e` equations and mixed Hessians; center-chart scalar covariance under 24 frames; conditional transverse recoil; exact stage-two rank-one minor magnitude `3`; simple adjoint averaging changes `(2,0)` to `(1,1)` and fails `11,064` modes; the 19-shift field stencil has 12 diagonal graph edges with no stabilizer-invariant single axis path | broad `N1` and `N7` defeat an action/gravity/axiom no-go because compact smooth pullback, graph-link matter, lattice matter fields, positive/open sources, nonlinear common geometry, alternate integrators, and Record compilation remain live; narrow N1--N8 passes only for the fixed same-event rank-one reading and the simple same-quadrature adjoint average in the supplied order | `partial-narrowing`; ship the positive macro-link existence construction, `P/e` integrability, and the two exact formulation-specific hostile controls only | bounded-local equivariant component pullback and adjoint site-mixing generator; raw field-plus-matter 18-edge graph Ward current; explicit stress improvement if needed; positive background/open source; boundary-term, partitioned, implicit, or extra-stage action; lattice matter field; live-carrier-to-Record compiler; nonlinear completion and audit retention |
+
+Do not ship a common point-metric identification, localized total Ward tensor,
+positive compact matter theorem, universal time-symmetry no-go, gravity no-go,
+or axiom-necessity conclusion from Block83. The prior prescribed-source wall
+is partially retired: source amplitudes now arise from `(P,e)` and the mixed
+Hessians commute. The first unexecuted gravity object is the bounded-local
+component/stage pullback satisfying the translation-chain identity. Freeze
+further coefficient/Hessian batteries unless that object is constructed; the
+macro-link itself is the steelman that defeats the former broad negative.

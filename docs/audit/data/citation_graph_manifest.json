@@ -1,6 +1,6 @@
 {
- "edge_count": 15860,
- "node_count": 5523,
+ "edge_count": 15864,
+ "node_count": 5524,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -377,6 +377,10 @@
   "admissibility_compact_regge_homogeneous_reaction_rank_kkt_boundary_bounded_theorem_note_2026-08-10": {
    "deps_hash": "d5f980b256b0",
    "out_degree": 8
+  },
+  "admissibility_component_staggered_signed_link_action_local_ward_boundary_bounded_theorem_note_2026-08-14": {
+   "deps_hash": "86855348b41d",
+   "out_degree": 4
   },
   "admissibility_curved_regge_pseudoconstraint_perfect_action_route_gate_bounded_theorem_note_2026-08-12": {
    "deps_hash": "c4f61f974a87",

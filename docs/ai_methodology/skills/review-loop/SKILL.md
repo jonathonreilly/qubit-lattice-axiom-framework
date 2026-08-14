@@ -366,41 +366,70 @@ review-only flags contradict the drain's land-end-to-end contract).
    worktree or a checkout; shared worktrees race and have destroyed findings
    in this repo's history.
 
-   **Worktree lifecycle (disk discipline — mandatory).** A full checkout of
-   this repo costs ~1.8 GB. Concurrent reviews plus per-cycle confirm trees
-   have repeatedly exhausted the host disk (ENOSPC kills in-flight reviewers
-   and workers mid-run, which is how findings get lost). Create every review
-   worktree sparse, guard on free space, and remove it on exit:
+   **Worktree lifecycle (disk discipline — mandatory).** Concurrent reviews
+   plus abandoned per-cycle confirm trees have repeatedly exhausted the host
+   disk. Guard on free space and remove each verified-clean worktree on exit:
 
    ```bash
-   # preflight: refuse to spawn when the box is nearly full
-   avail_gb=$(df -Pg / | awk 'NR==2 {print $4}')
-   [ "$avail_gb" -ge 5 ] || { echo "ENOSPC guard: ${avail_gb}G free (<5G) — not spawning"; exit 1; }
+   # POSIX df reports 1 KiB blocks here; check the filesystem that will hold WT.
+   REPO_ROOT=$(git rev-parse --show-toplevel)
+   REVIEW_TMP_ROOT=${TMPDIR:-/tmp}
+   git -C "$REPO_ROOT" worktree prune
+   avail_kb=$(df -Pk "$REVIEW_TMP_ROOT" | awk 'NR == 2 {print $4}')
+   case "$avail_kb" in
+     ''|*[!0-9]*) echo "ENOSPC guard: cannot read free space for $REVIEW_TMP_ROOT" >&2; exit 1 ;;
+   esac
+   [ "$avail_kb" -ge 5242880 ] || {
+     echo "ENOSPC guard: less than 5 GiB free on $REVIEW_TMP_ROOT — not spawning" >&2
+     exit 1
+   }
 
-   WT=$(mktemp -d /private/tmp/rev-<N>-XXXXXX)
-   trap 'git worktree remove --force "$WT" 2>/dev/null; git worktree prune' EXIT
+   WT=$(mktemp -d "$REVIEW_TMP_ROOT/rev-<N>.XXXXXX")
+   cleanup_review_wt() {
+     if [ -e "$WT" ]; then
+       if ! dirty=$(git -C "$WT" status --porcelain 2>/dev/null); then
+         echo "cleanup retained unverifiable worktree: $WT" >&2
+         return
+       fi
+       if [ -n "$dirty" ]; then
+         echo "cleanup retained dirty worktree for recovery: $WT" >&2
+         return
+       fi
+     fi
+     git -C "$REPO_ROOT" worktree remove --force "$WT" >/dev/null 2>&1 || true
+     git -C "$REPO_ROOT" worktree prune
+   }
+   trap cleanup_review_wt EXIT
+   trap 'exit 130' INT
+   trap 'exit 143' TERM
 
-   git worktree add --no-checkout -q "$WT" <branch-or-ref>
-   git -C "$WT" sparse-checkout set docs scripts logs/runner-cache outputs
-   git -C "$WT" checkout -q
+   git -C "$REPO_ROOT" worktree add -q "$WT" <branch-or-ref>
    ```
 
-   Measured on this repo (2026-08-11): full checkout 1.8 GB, sparse checkout
-   312 MB — an 83% reduction with every path a reviewer reads still present.
-   Widen the sparse set when a review genuinely needs more (`sparse-checkout
-   add <path>`); never widen it to the whole tree by default.
+   Apples-to-apples measurement from the same object store on 2026-08-14 was
+   343.6 MiB for a fresh full worktree and 326.3 MiB for the proposed sparse
+   baseline, only about 5% less. Review and pipeline inputs span every root,
+   so a sparse default adds omission risk without a material disk benefit.
+   Use a normal full worktree; the operational gain comes from prompt cleanup,
+   not from counting the shared Git object store as part of every checkout.
 
-   The `trap` is not optional: a crashed or killed reviewer otherwise leaks
-   its worktree permanently, and `git worktree list` fills with prunable
-   entries whose directories are gone. Run `git worktree prune` at the start
-   of a drain as well, to clear metadata left by earlier crashes.
+   The `trap` is not optional: it removes a verified-clean worktree on normal
+   exit and catchable INT/TERM termination. It deliberately retains a dirty or
+   unverifiable tree and prints its recovery path rather than destroying
+   findings or fixes. `git worktree prune` at the start of a drain clears
+   stale metadata whose directories are already gone. Neither mechanism can
+   catch `SIGKILL` or remove an abandoned directory that still exists, so
+   inventory such directories separately instead of claiming that the trap
+   handles every crash mode.
 3. **One reviewer process per PR at a time**, applicable lenses combined
    into a single pass (two for large diffs), findings written incrementally
-   to an untracked file in that PR's worktree, verdict line last. Freeze
-   the PR's original changed-file snapshot BEFORE creating the findings
-   file; the findings file and any reviewer scratch artifacts are named
-   scope exclusions — they never enter `files_to_review`, the changed-file
-   set, or any commit. This is
+   to `FINDINGS=$(mktemp "$REVIEW_TMP_ROOT/review-findings-pr<N>.XXXXXX")`
+   outside the disposable worktree, verdict line last. Freeze the PR's
+   original changed-file snapshot before creating that file. Remove it only
+   after its findings and verdict are recorded in the PR provenance comment;
+   if the worker fails, report its recovery path. The findings file and any
+   reviewer scratch artifacts are named scope exclusions — they never enter
+   `files_to_review`, the changed-file set, or any commit. This is
    the budget-adapted default of the Reviewer Fanout section below: under
    the shared-pool budget, cross-PR parallelism replaces per-lens
    parallelism; full per-lens fanout inside one PR remains available in a
@@ -416,8 +445,15 @@ review-only flags contradict the drain's land-end-to-end contract).
 5. **Each worker lands its own PR, end to end.** Fix Policy fixes, the
    focused confirmation round, the landing, and the close-with-provenance
    are all the final steps of that PR's own worker — never a separate
-   lander and never turn-taking. Workers land the moment their
-   confirmation passes: `origin/main`'s push atomicity is the only
+   lander and never turn-taking. After final PASS, do not create a fresh
+   landing branch or a second landing worktree. Freeze the exact reviewed
+   commit list and confirmation-base SHA, then fetch and cherry-pick those
+   commits onto the freshly fetched `origin/main` in the same worker
+   worktree. A disposable integration worktree is an exception only when
+   `main` moved and the worker tree cannot safely perform the integration;
+   it is not a new review or lander cycle, and any source conflict still
+   returns to the same worker for focused re-review. Workers land the moment
+   their confirmation passes: `origin/main`'s push atomicity is the only
    serializer, and a lost push race costs seconds (re-fetch, re-cherry-pick
    through the fail-closed loop, re-push, generated outputs restored). A
    conflict touching only `docs/audit/data/citation_graph_manifest.json`
@@ -447,7 +483,7 @@ review-only flags contradict the drain's land-end-to-end contract).
    landed=""
    for attempt in 1 2 3 4; do
      git cherry-pick --abort >/dev/null 2>&1 || true
-     if ! { git fetch -q origin && git checkout -q --detach origin/main; }; then
+     if ! { git fetch -q origin && git switch -q --detach origin/main; }; then
        sleep 3; continue
      fi
      if ! git cherry-pick "${COMMITS[@]}" >/dev/null 2>&1; then

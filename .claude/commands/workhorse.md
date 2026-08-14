@@ -68,31 +68,55 @@ regardless of executor.
    (`git show origin/main:docs/audit/data/ledger/<claim-id-prefix>/<claim-id>.json`)
    before citing anything as retained. Derive the result (algebra-before-spec, above), then
    decide the exact object, claim type, and boundary.
-2. **Worktree per PR (sparse, guarded, self-cleaning).** Never work in the
-   shared main tree; concurrent sessions race it. A full checkout costs
-   ~1.8 GB and concurrent lanes have exhausted the host disk repeatedly, so
-   spawn sparse and clean up on exit:
+2. **Worktree per PR (guarded and self-cleaning).** Never work in the shared
+   main tree; concurrent sessions race it. Concurrent lanes have exhausted the
+   host disk repeatedly, so preflight free space and clean up on exit:
 
    ```bash
-   avail_gb=$(df -Pg / | awk 'NR==2 {print $4}')
-   [ "$avail_gb" -ge 5 ] || { echo "ENOSPC guard: ${avail_gb}G free (<5G)"; exit 1; }
-   WT=/private/tmp/<name>-wt
-   trap 'git worktree remove --force "$WT" 2>/dev/null; git worktree prune' EXIT
-   git worktree add --no-checkout -q "$WT" -b <branch> origin/main
-   git -C "$WT" sparse-checkout set docs scripts logs/runner-cache outputs
-   git -C "$WT" checkout -q
+   REPO_ROOT=$(git rev-parse --show-toplevel)
+   WORK_TMP_ROOT=${TMPDIR:-/tmp}
+   avail_kb=$(df -Pk "$WORK_TMP_ROOT" | awk 'NR == 2 {print $4}')
+   case "$avail_kb" in
+     ''|*[!0-9]*) echo "ENOSPC guard: cannot read free space for $WORK_TMP_ROOT" >&2; exit 1 ;;
+   esac
+   [ "$avail_kb" -ge 5242880 ] || {
+     echo "ENOSPC guard: less than 5 GiB free on $WORK_TMP_ROOT" >&2
+     exit 1
+   }
+   WT=$(mktemp -d "$WORK_TMP_ROOT/workhorse-<name>.XXXXXX")
+   cleanup_workhorse_wt() {
+     if [ -e "$WT" ]; then
+       if ! dirty=$(git -C "$WT" status --porcelain 2>/dev/null); then
+         echo "cleanup retained unverifiable worktree: $WT" >&2
+         return
+       fi
+       if [ -n "$dirty" ]; then
+         echo "cleanup retained dirty worktree for recovery: $WT" >&2
+         return
+       fi
+     fi
+     git -C "$REPO_ROOT" worktree remove --force "$WT" >/dev/null 2>&1 || true
+     git -C "$REPO_ROOT" worktree prune
+   }
+   trap cleanup_workhorse_wt EXIT
+   trap 'exit 130' INT
+   trap 'exit 143' TERM
+   git -C "$REPO_ROOT" worktree add -q "$WT" -b <branch> origin/main
    ```
 
-   Measured 2026-08-11: full 1.8 GB vs sparse 312 MB (83% less) with every
-   path a block touches still present. Widen with `sparse-checkout add
-   <path>` only when a block genuinely needs more. Drop the `trap` only if
-   the worktree is deliberately long-lived (a reused lane worktree) — a
-   crashed one-shot worker otherwise leaks 1.8 GB permanently.
+   Apples-to-apples measurement from the same object store on 2026-08-14 was
+   343.6 MiB for a fresh full worktree and 326.3 MiB for the proposed sparse
+   baseline, only about 5% less. Specs and the mandatory pipeline can touch
+   every repository root, so the default stays full. The main disk gain is
+   prompt cleanup. Drop the `trap` only for a deliberately long-lived reused
+   lane. The trap removes only a verified-clean tree; it prints and retains a
+   dirty or unverifiable tree for recovery. It cannot handle `SIGKILL` or a
+   host crash.
 3. **Spec file (planner).** Write `/tmp/spec-<name>.md` using the template
    below. The spec is the contract — exact files, exact phrases, exact
    acceptance checks, and EVERY proper name the artifact may use.
 4. **Dispatch (parallel, background).**
-   `codex exec -s workspace-write -C /tmp/<name>-wt
+   `codex exec -s workspace-write -C "$WT"
    -o /tmp/codex-<name>-lastmsg.txt "Read the spec file at
    /tmp/spec-<name>.md and execute it exactly. Do NOT load or follow any local
    codex skills. Analysis and file edits only; no git commit/push, no network."

@@ -73,8 +73,14 @@ Mode selection:
    never land them unless the user explicitly asks for draft inspection without
    landing.
 12. End with a concise report covering imports/support status, retained/bounded
-   disposition, salvage disposition, audit-readiness, commits, checks, and
-   remaining manual science.
+    disposition, salvage disposition, audit-readiness, commits, checks, and
+    remaining manual science.
+13. After final PASS, the same worker lands the frozen reviewed commits from
+    its existing worktree. Do not create a landing branch, a second landing
+    worktree, or a separate lander cycle. Refetch `origin/main`, cherry-pick
+    the exact reviewed commit list there, push atomically, verify containment,
+    and use a disposable integration tree only if moved-main/conflict state
+    makes safe reuse of the worker tree impossible.
 
 ## Non-Negotiables
 

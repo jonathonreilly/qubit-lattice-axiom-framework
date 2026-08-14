@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/cube_threefold_pauli_triad_is_not_unital_m3_2026_08_13.py
-runner_sha256: 8c23ffa35812915f62a9473e891d59bad7ea0883b817bf330f47dc58236b5669
-input_fingerprint_sha256: bbbddcf31c150fee5cbe950b59ab111206879d413c679a2a921f153e625804b0
+runner_sha256: 7acd542b9f13cf93a48db3ad6902cb150123583c0107bc3e602800d8a04f8c41
+input_fingerprint_sha256: 42f7c08396d50db301d0976906caf455ea4e2c3ebc392839573cef6f0358b4b0
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.07
 status: ok
 ----- stdout -----
 external_scientific_inputs: none; displayed Pauli triad and cycle map are theorem hypotheses
@@ -40,7 +40,7 @@ PASS: thm4-not-m3 generated unital *-algebra is M_2(C), not M_3(C)
 PASS: thm5-three-not-divides-two 3 does not divide 2
 PASS: thm5-injective-dimension-obstruction an injective complex-linear map M_3 to M_2 would require 9 <= 4
 PASS: mutation-unital-m3-to-m2-fails predicate unital M_3 → M_2 exists fails
-PASS: thm6-lattice-named-not-equator this triad is the cube 3-fold Pauli-axis cycle, not the displayed z-equator
+PASS: thm6-supplied-action-not-equator this triad is a supplied Pauli-axis cycle, not Lattice-named and not the z-equator
 PASS: thm6-record-and-refusals note makes the Record reading conditional and refuses QCD adoption
 PASS: machine-status-contract note carries the required leftover status and bounded-support surface
 PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple

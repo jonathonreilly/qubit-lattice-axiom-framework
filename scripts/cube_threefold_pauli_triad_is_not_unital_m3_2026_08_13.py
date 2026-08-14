@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Exact Q(i) checks for the cube 3-fold Pauli-axis triad.
 
-One-site M_2(C). The Lattice-named body-diagonal 3-fold cycles the
-Pauli axes. No QCD identification, Qubit rewrite, axiom edit, or
-cache write.
+One-site M_2(C). A supplied Pauli-axis action of the body-diagonal
+3-fold cycles the Pauli axes. The action map is extra. No QCD
+identification, Qubit rewrite, or axiom edit.
 """
 
 from __future__ import annotations
@@ -410,9 +410,11 @@ def main() -> int:
     )
 
     checks.check(
-        "thm6-lattice-named-not-equator",
-        "this triad is the cube 3-fold Pauli-axis cycle, not the displayed z-equator",
-        "Lattice-named" in note
+        "thm6-supplied-action-not-equator",
+        "this triad is a supplied Pauli-axis cycle, not Lattice-named and not the z-equator",
+        "not Lattice-named" in note
+        and "supplied Pauli-axis" in note
+        and "trivial-versus-Pauli-adjoint" in note
         and "cube 3-fold" in note
         and "not the displayed z-equator" in note
         and pz[0][0] == ONE

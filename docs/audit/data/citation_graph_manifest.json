@@ -1,6 +1,6 @@
 {
- "edge_count": 15628,
- "node_count": 5499,
+ "edge_count": 15631,
+ "node_count": 5500,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1663,8 +1663,8 @@
    "out_degree": 11
   },
   "canonical_harness_index": {
-   "deps_hash": "f00b3bcb6d25",
-   "out_degree": 348
+   "deps_hash": "3b42c7a2b792",
+   "out_degree": 349
   },
   "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": {
    "deps_hash": "808c1ccb6109",
@@ -15668,6 +15668,10 @@
   },
   "reconstructed_h_quasilocal_from_analytic_dispersion_microcausality_bridge_narrow_theorem_note_2026-06-06": {
    "deps_hash": "8e0303c6f18c",
+   "out_degree": 2
+  },
+  "record_additivity_does_not_supply_newton_product_bounded_theorem_note_2026-08-13": {
+   "deps_hash": "7ea010b16c05",
    "out_degree": 2
   },
   "record_asymptotic_reset_convergence_ledger_2026-06-05": {

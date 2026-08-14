@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/stabilizer_covariant_pvm_uniqueness_2026_08_14.py
+runner_sha256: 07890692ea026d3e07472667ff52d7b0c73d9676ab72a7e29cc6065e200b6f3d
+input_fingerprint_sha256: 6c561ad495d9011337faadff3d0254b41896345895aba15692b8bea3fcb7bee0
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+external_scientific_inputs: none; exact integer Bloch algebra only
+package_local_integrity_reads: proposed source note and live axiom memo only
+measure_boundary: exact integer vectors and Fraction matrices; no floating-point inputs
+claim_boundary: bounded algebraic uniqueness; no physical menu identification is asserted
+PASS: thm1-r-ex R e_x = e_x
+PASS: thm1-powers-fix-axis R^k e_x = e_x for k=1,2,3,4
+PASS: thm1-pvm-set-stable the spectral pair is invariant under R^k for k=1,2,3
+PASS: thm1-pvm-totalize P_n + P_{-n} = I
+PASS: thm1-traces-k123 constructed traces Tr(P_n)=Tr(P_{-n})=1 persist for k=1,2,3
+PASS: thm1-projectors P_n and P_{-n} are complementary rank-1 orthogonal projectors
+PASS: thm2-ey-fails R e_y = e_z is not ± e_y
+PASS: thm3-ez-fails R e_z = -e_y is not ± e_z
+PASS: thm4-equator-fails R(0,1,1)=(0,-1,1) is not ±(0,1,1)
+PASS: thm5-plus-kernel the plus eigenspace is the line spanned by e_x
+PASS: thm5-minus-empty the minus eigenspace is {0}
+PASS: thm5-unit-survivors the only unit rational points on the plus line are ± e_x
+PASS: thm6-powers-on-survivors R^2 e_x = e_x and R^3 e_x = e_x
+PASS: thm6-r2-weaker R^2 fixes e_y and e_z up to sign, so the square is strictly weaker
+PASS: mutation-r2-only-fails replacing R by R^2 would admit the e_y axis
+PASS: r4-identity R^4 is the identity on the three axes
+PASS: live-parent-quotes Qubit and Admissibility sentences are quoted without rewrite
+PASS: forbidden-substrings the note avoids the dispatch-forbidden substrings
+PASS: no-qubit-flip the note refuses a Qubit rewrite and keeps M_2(C)
+PASS: machine-status-contract bounded status, frontier trace, and next action are source-visible
+PASS: import-boundary-contract the supplied axis, Bloch chart, and absent physical bridge are disclosed
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: claim-type-and-proof-contract the bounded type and universal proof obligation are source-visible
+per_element: exact identities cover e_x, e_y, e_z, (0,1,1), and the spectral pair P_n, P_{-n}.
+per_site: the theorem is evaluated only on one-site Bloch vectors for the supplied M_2(C) chart.
+per_mode: R, R^2, and R^3 are resolved; the 180-degree square is distinguished from the order-4 generator.
+per_block: the plus and minus eigen-conditions on all three rational coordinates are row-reduced.
+lattice_wide: checked and not executed — the claim asserts no multi-site or lattice-wide lift.
+TOTAL: PASS=23 FAIL=0
+
+----- stderr -----
+

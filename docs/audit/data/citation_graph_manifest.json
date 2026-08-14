@@ -1,6 +1,6 @@
 {
- "edge_count": 15609,
- "node_count": 5492,
+ "edge_count": 15610,
+ "node_count": 5493,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -17169,6 +17169,10 @@
   "st1_st2_same_wall_gauge_dynamics_residual_convergence_narrow_theorem_note_2026-06-08": {
    "deps_hash": "819463065356",
    "out_degree": 7
+  },
+  "stabilizer_covariant_pvm_uniqueness_bounded_theorem_note_2026-08-14": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "stable_post_record_dial_location_certificate_2026-06-06": {
    "deps_hash": "e3b0c44298fc",

@@ -1,22 +1,25 @@
 ===== runner cache v1 =====
 runner: scripts/nonaffine_purity_weighted_kernel_is_not_barycenter_evaluation_2026_08_13.py
-runner_sha256: 21e0f039eae6f87a0bc2cd2c5bb81ba524d49e71b555b9841f7f5863b62614f8
-input_fingerprint_sha256: e1fa68c8fd52738752421c7f31299e56375b59985877bd9749e725807892293f
+runner_sha256: 92c5b95c4ad6ea91434d1693ab532c8d7d365491b5272b17fdf36ba44d029470
+input_fingerprint_sha256: 4df956e1650aba8ee15499c3e4404d98bd4c4fa9fb221680c13f8a4ff41dd8b0
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.05
 status: ok
 ----- stdout -----
-external_scientific_inputs: axiom wording and the August 10 type-separation note are source-bound; no observational or fitted inputs
-integrity_reads: this runner, its paired note, the axiom memo, and the August 10 parent; no cache is written
+external_scientific_inputs: axiom wording and the August 9, August 10, and August 12 theorem boundaries are source-bound; no observations or fits
+integrity_reads: this runner, its paired note, the axiom memo, and the August 9, August 10, and August 12 parents; no cache is written
 kernel_formula: identity gates call purity_kernel(rho, E); born_kernel and restriction are hostile controls
-negative_scope: this kernel is not barycenter evaluation and is not affine in mu; Born is not declared false
-PASS: audit-input-paths declared audit inputs exist and match the note, August 10 note, and axiom memo
+negative_scope: this kernel is non-affine in mu and not barycenter evaluation; every fixed-mu grade remains pointwise trace form
+PASS: audit-input-paths declared audit inputs exist and match the note, both direct comparators, and axiom memo
 PASS: source-admissibility the current distribution sentence is pinned in the axiom memo and the note
 PASS: source-aug10 August 10 supplies E0, the 25/142 restriction control, and menu-independence
-PASS: source-aug09-citation the note cites the August 9 frame-lift uniqueness parent
-PASS: theorem-1-well-defined Tr(rho^2)>0 on mixed, biased, and pure states; K(I)=1 and K(0)=0
+PASS: source-aug09-citation the note cites August 9 as pointwise trace-form authority, not mu-affine authority
+PASS: source-aug12-affine-boundary August 12 supplies the explicit mu-affine uniqueness ansatz and leaves non-affine kernels live
+PASS: theorem-1-well-defined normalized squares are densities on mixed, biased, and pure samples; K(I)=1 and K(0)=0
+PASS: theorem-1-pointwise-trace-form sigma=rho^2/Tr(rho^2) has trace one and K(rho,E)=Tr(sigma E)
 PASS: theorem-1-positive K is nonnegative on the PSD effects E0, I, P(z), and P(-z)
+PASS: theorem-1-menu-and-endpoint-hypotheses K normalizes exact effect resolutions and preserves scaled-projector endpoints
 PASS: theorem-1-menu-independent K depends on rho only, while restriction of E0 splits as 25/142 versus 2/11
 PASS: theorem-2-mixed at I/2, Tr(rho^2)=1/2, Tr(rho^2 E0)=1/8, and K=1/4=w(E0)
 PASS: theorem-3-intermediates at diag(3/5,2/5), Tr(rho^2)=13/25 and Tr(rho^2 E0)=9/50
@@ -27,7 +30,7 @@ PASS: theorem-4-atoms pure atoms give K(P(z),E0)=1/2 and K(P(-z),E0)=0
 PASS: theorem-4-not-affine affine mix of the atoms is 3/10, not the barycenter value 9/26
 PASS: restriction-hostile restriction of E0 on M_A recomputes as 25/142, which is not K(I/2,E0)=1/4
 PASS: mutation-born-fails replacing K by Tr(rho E) yields 3/10, not 9/26
-PASS: theorem-5-scope Theorem 5 scopes August 9 uniqueness and refuses the two banned overclaims
+PASS: theorem-5-scope Theorem 5 separates August 9 pointwise trace form from August 12 mu-affinity
 PASS: note-contract machine-status fields, required phrases, and forbidden-word hygiene hold
 PASS: n5-length each N5 resolution line is at least 40 characters
 per_element: E0 at I/2 and diag(3/5,2/5) with values 1/4, 9/26, 3/10, and control 25/142
@@ -36,10 +39,10 @@ per_site: the exhibit is one M_2(C) density-body site; no composite carrier is c
 PASS: n5-length each N5 resolution line is at least 40 characters
 per_mode: the diagonal family P(z), P(-z), I/2 is checked; no spectral-mode exhaustion
 PASS: n5-length each N5 resolution line is at least 40 characters
-per_block: Theorem 5 only scopes August 9 uniqueness to affine or similarly restricted kernels
+per_block: August 9 pointwise trace form is separated from August 12 preparation affinity
 PASS: n5-length each N5 resolution line is at least 40 characters
 lattice_wide: checked and not executed — no lattice-wide Born no-go or uniqueness denial
-TOTAL: PASS=23 FAIL=0
+TOTAL: PASS=26 FAIL=0
 
 ----- stderr -----
 

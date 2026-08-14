@@ -1,15 +1,16 @@
 ---
 claim_id: nonaffine_purity_weighted_kernel_is_not_barycenter_evaluation_bounded_theorem_note_2026-08-13
 claim_type: bounded_theorem
-claim_scope: "On finite-support measures on the density body, the purity-weighted kernel K(μ,E)=Tr(ρ_μ^2 E)/Tr(ρ_μ^2) is a well-defined menu-independent positive normalized kernel. It agrees with barycenter evaluation w_μ(E)=Tr(ρ_μ E) at I/2 and disagrees at diag(3/5,2/5) by 9/26 versus 3/10; it is not affine in μ. August 9 uniqueness of Born is among affine or similarly restricted kernels. The exhibit does not say Born is false, does not say that no uniqueness theorem exists in a larger class, and is not an axiom edit."
+claim_scope: "On finite-support measures on the density body, the normalized-square state map σ_μ=ρ_μ^2/Tr(ρ_μ^2) defines the menu-independent positive normalized grade K(μ,E)=Tr(σ_μ E). It agrees with barycenter evaluation at I/2 and disagrees at diag(3/5,2/5) by 9/26 versus 3/10, so it is not affine in μ. For each fixed μ it is inside the August 9 trace-form theorem; it lies outside only the explicit μ-affine ansatz of the August 12 barycenter theorem. The exhibit does not select a physical preparation map or say Born is false."
 upstream_dependencies:
   - minimal_axioms
   - born_form_from_binary_ternary_scaled_projector_frame_lift_bounded_theorem_note_2026-08-09
   - admissibility_global_measure_menu_kernel_type_separation_bounded_theorem_note_2026-08-10
+  - admissibility_barycenter_evaluation_menu_kernel_bounded_theorem_note_2026-08-12
 runner: scripts/nonaffine_purity_weighted_kernel_is_not_barycenter_evaluation_2026_08_13.py
 ---
 
-# A Live Non-Affine Menu-Independent Kernel Is Not Barycenter Evaluation
+# Normalized-Square State Map Gives A Non-Affine Measure-To-Grade Kernel
 
 **Date:** 2026-08-13
 **Type:** bounded_theorem
@@ -45,12 +46,18 @@ is `3/10`, not the barycenter value `9/26`, so `K` is not affine in `μ`.
 
 The August 9 frame-lift
 [`BORN_FORM_FROM_BINARY_TERNARY_SCALED_PROJECTOR_FRAME_LIFT_BOUNDED_THEOREM_NOTE_2026-08-09.md`](BORN_FORM_FROM_BINARY_TERNARY_SCALED_PROJECTOR_FRAME_LIFT_BOUNDED_THEOREM_NOTE_2026-08-09.md)
-unique-ifies a menu-independent low-arity grade as `Tr(ρ E)` for one density
-`ρ`. That is uniqueness among affine, or similarly restricted, kernels. The
-present `K` is a concrete non-affine menu-independent positive normalized
-kernel that is not `Tr(ρE)` in the barycenter state. This exhibit does not
-say Born is false. This exhibit does not say that no uniqueness theorem
-exists in a larger class.
+represents every qualifying fixed grade as `Tr(σ E)` for one density `σ`.
+The present construction is fully compatible with that theorem: at each fixed
+`μ`, its representing density is
+
+`σ_μ=ρ_μ^2/Tr(ρ_μ^2)`.
+
+The relevant comparator is instead the August 12
+[`ADMISSIBILITY_BARYCENTER_EVALUATION_MENU_KERNEL_BOUNDED_THEOREM_NOTE_2026-08-12.md`](ADMISSIBILITY_BARYCENTER_EVALUATION_MENU_KERNEL_BOUNDED_THEOREM_NOTE_2026-08-12.md),
+whose finite-family uniqueness theorem explicitly assumes affine dependence on
+`μ` and the spectral endpoints. The present `K` is a concrete non-affine
+measure-to-grade kernel outside that ansatz. It does not refute the August 9
+trace-form theorem and does not install `σ_μ` as a physical preparation map.
 
 The current Admissibility sentence in
 [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) remains a
@@ -92,8 +99,10 @@ control: at `ρ=I/2` one has `K=1/4`, and `25/142≠1/4`.
 ## Exact Target And Obligation Graph
 
 **Exact target.** Exhibit one menu-independent positive normalized kernel on
-`(μ,E)` that is not barycenter evaluation, and scope August 9 uniqueness of
-Born to affine or similarly restricted kernels.
+`(μ,E)` that is not barycenter evaluation, prove that it is non-affine in
+`μ`, and thereby show that the affine hypothesis in the August 12 finite-family
+uniqueness theorem is load-bearing. Verify separately that every fixed-`μ`
+grade remains inside the August 9 trace-form theorem.
 
 | Obligation | Role | Disposition |
 |---|---|---|
@@ -101,7 +110,7 @@ Born to affine or similarly restricted kernels.
 | agreement with `w` at `I/2` | Theorem 2 | `K=1/4=w(E0)` |
 | disagreement at `diag(3/5,2/5)` | Theorem 3 | `9/26≠3/10` |
 | failure of affinity in `μ` | Theorem 4 | atom mix `3/10` versus barycenter `9/26` |
-| scope August 9 uniqueness | Theorem 5 | affine or similarly restricted class only |
+| compare the two parent theorems without conflation | Theorem 5 | inside August 9 pointwise trace form; outside August 12 μ-affine ansatz |
 | declare Born false | non-claim | not attempted |
 | deny every larger uniqueness theorem | non-claim | not attempted |
 | edit an axiom sentence | non-claim | not attempted |
@@ -110,7 +119,8 @@ Born to affine or similarly restricted kernels.
 
 **Claim.** `K` is well-defined on `D`, depends on `μ` only through `ρ_μ`,
 satisfies `K(μ,I)=1` and `K(μ,0)=0`, and obeys `K(μ,E)≥0` whenever `E` is
-positive semidefinite.
+positive semidefinite. For every finite effect resolution `Σ_i E_i=I`, it
+also satisfies `Σ_i K(μ,E_i)=1`.
 
 **Proof.** For `ρ∈D` the Hilbert--Schmidt identity `Tr(ρ^2)=‖ρ‖_HS^2` and
 the trace-one constraint give `ρ≠0`, hence `Tr(ρ^2)>0`. The ratio is
@@ -122,7 +132,11 @@ Linearity of the pairing in the second slot gives
 
 `K(μ,I)=Tr(ρ_μ^2)/Tr(ρ_μ^2)=1`, `K(μ,0)=0`.
 
-If `E≥0`, then `ρ_μ^2≥0` and `Tr(ρ_μ^2 E)≥0`, so `K(μ,E)≥0`.
+If `E≥0`, then `ρ_μ^2≥0` and
+`Tr(ρ_μ^2 E)=Tr(E^(1/2)ρ_μ^2E^(1/2))≥0`, so `K(μ,E)≥0`.
+Finally, linearity in the effect slot gives
+
+`Σ_i K(μ,E_i)=K(μ,Σ_i E_i)=K(μ,I)=1`.
 
 ## Theorem 2 — Agreement With Barycenter Evaluation At The Mixed Point
 
@@ -182,45 +196,49 @@ The affine mix of those values is
 Theorem 3 already computed `K(μ,E0)=9/26` at the barycenter of the same
 `μ`. Affinity in `μ` would force those two numbers to agree. They do not.
 
-## Theorem 5 — Scoped Uniqueness (N5)
+## Theorem 5 — The Affine Preparation Hypothesis Is Load-Bearing
 
-**Claim.** August 9 uniqueness of Born is among affine, or similarly
-restricted, kernels. The present `K` is a concrete non-affine
-menu-independent positive normalized kernel that is not `Tr(ρE)`. This
-exhibit does not say Born is false. This exhibit does not say that no
-uniqueness theorem exists in a larger class.
+**Claim.** The present `K` is inside the August 9 pointwise trace-form class
+for each fixed `μ`, but outside the August 12 ansatz that is affine in `μ`.
+It therefore witnesses that the latter affinity hypothesis cannot be dropped
+while retaining uniqueness of barycenter evaluation.
 
-**Proof.** The August 9 theorem states that a menu-independent grading on
-the scaled domain `S`, normalized on every binary and ternary nonzero
-resolution of `I`, has a unique density-matrix trace form
-`w(E)=Tr(ρ E)` on `S`. That hypothesis class is a restriction: the grade is
-a function of the effect alone, the eligible menus are the low-arity scaled
-family, and the representing state is unique. Equivalently, once a state is
-identified with a barycenter `ρ_μ`, uniqueness of `w_μ(E)=Tr(ρ_μ E)` is a
-statement about kernels affine in the Bloch coordinates of `ρ_μ`, or about
-kernels similarly restricted to a single trace pairing against that
-barycenter.
+**Proof.** For every fixed `μ`, `σ_μ=ρ_μ^2/Tr(ρ_μ^2)` is positive and has
+trace one. Hence
 
-The kernel `K` of Theorems 1--4 lies outside that class as a function of
-`μ`. It is menu-independent, positive on PSD effects, and normalized at
-`0` and `I`, yet Theorem 4 shows it is not affine in `μ`, and Theorem 3
-shows it is not barycenter evaluation. That is the executed exhibit.
+`K(μ,E)=Tr(σ_μ E)`.
 
-**Scope.** The negative is only that *this* live kernel is not barycenter
-evaluation and is not affine in `μ`, so uniqueness of Born cannot be quoted
-as if it applied to every menu-independent positive normalized kernel of
-`(μ,E)`. The negative does not say the Born trace form is false: at each
-fixed `μ` the map `E↦K(μ,E)` is still the pairing `Tr(σ_μ E)` against the
-density `σ_μ=ρ_μ^2/Tr(ρ_μ^2)`. The negative does not say that no uniqueness
-theorem exists among a larger class than the affine or similarly restricted
-kernels. No such larger theorem is claimed or denied here.
+It is therefore exactly a density-matrix trace grade of the kind classified
+by the August 9 theorem; on every effect resolution of `I`, linearity in `E`
+gives normalization. August 9 does not take a preparation measure `μ` as an
+argument and does not identify its representing density with `ρ_μ`.
 
-**Steelman.** Because `K(μ,·)` still has a trace form, one might call `K`
-Born and conclude that the exhibit is empty. That reading changes the
-variable. The comparison target is barycenter evaluation `Tr(ρ_μ E)` as a
-kernel of the preparation measure. Theorems 3 and 4 separate `K` from that
-target. They do not attack the existence of some density against which `K`
-pairs.
+The August 12 theorem does take `μ` as an argument and proves uniqueness only
+inside the displayed affine Bloch ansatz
+`K(μ,E)=a(E)+b(E)·m(μ)`, with positivity, menu normalization, and spectral
+endpoints. Theorems 3 and 4 prove that the normalized-square construction is
+not affine in `μ` and is not barycenter evaluation. It is consequently
+outside that ansatz. It retains the other named hypotheses: Theorem 1 gives
+positivity and menu normalization, while for every scaled projector `cP(n)`,
+purity gives
+
+`K(δ_{P(n)},cP(n))=c`, `K(δ_{P(-n)},cP(n))=0`.
+
+Thus the construction shows directly that affinity is load-bearing in the
+August 12 finite-family uniqueness statement.
+
+**Scope.** The negative is only that this explicit kernel is not barycenter
+evaluation and not affine in `μ`. The theorem does not call it a non-Born
+probability rule: pointwise in `μ` it is a Born trace grade for `σ_μ`. What
+remains open is the physical map from the Admissibility distribution to a
+density used for effect evaluation—identity/barycenter, normalized square, or
+some other map.
+
+**Steelman.** Because `K(μ,·)` still has a trace form, one should call it a
+Born grade at the transformed state `σ_μ`. Correct: the theorem expressly does
+so. Its narrower content is that effect-grade uniqueness does not determine
+the preparation-to-state map, and the August 12 affine uniqueness theorem
+cannot be extended by silently deleting its affinity hypothesis.
 
 ## Boundary And Non-Claims
 
@@ -228,7 +246,7 @@ The note does not:
 
 - edit an axiom sentence;
 - say Born is false;
-- say that no uniqueness theorem exists in a larger class;
+- call the normalized-square map a physically selected preparation law;
 - identify `M_2(C)` with the density body `D`;
 - register a physical menu or a Record readout;
 - exclude other non-affine kernels, or install `K` as a physical law.
@@ -241,15 +259,15 @@ is not this kernel.
 ```yaml
 actual_current_surface_status: bounded-support
 target_claim_type: bounded_theorem
-claim_type_reason: "The purity-weighted kernel is an exact finite-matrix exhibit: well-defined, menu-independent, positive, and normalized, with K=9/26 versus barycenter evaluation 3/10 at diag(3/5,2/5). Uniqueness of Born is scoped to affine or similarly restricted kernels. The exhibit does not say Born is false."
-trace_class: negative_route_pruning
+claim_type_reason: "The normalized-square state map gives an exact finite-matrix exhibit: a pointwise trace-form grade that is menu-independent, positive, and normalized, but is non-affine in the preparation measure and gives 9/26 rather than barycenter evaluation 3/10 at diag(3/5,2/5)."
+trace_class: upstream_support
 target_claim_id: nonaffine_purity_weighted_kernel_is_not_barycenter_evaluation
 target_blocker_text: "exhibit a live non-affine menu-independent kernel that is not barycenter evaluation"
 source_of_blocker_text: handoff
-reachability_to_target: prunes
+reachability_to_target: advances
 artifact_role: theorem
-next_trace_action: "Keep uniqueness claims inside the affine or similarly restricted class. Do not identify every menu-independent kernel with Tr(rho_mu E)."
-conditional_surface_status: "exact for the 9/26 versus 3/10 split and the affine-mix gap; physical registration and larger uniqueness theorems remain open"
+next_trace_action: "Derive the physical distribution-to-density preparation map and eligible-menu registration; do not confuse pointwise trace-form uniqueness with affinity in the preparation measure."
+conditional_surface_status: "exact for the normalized-square map, the 9/26 versus 3/10 split, and the affine-mix gap; physical preparation and Record registration remain open"
 hypothetical_axiom_status: "no edit"
 admitted_observation_status: null
 audit_required_before_effective_retained: true
@@ -261,10 +279,11 @@ bare_retained_allowed: false
 | Item | Role | Status |
 |---|---|---|
 | current Admissibility distribution sentence | premise | quoted; no edit |
-| August 9 frame-lift uniqueness | scoped parent | uniqueness among restricted grades |
+| August 9 frame-lift uniqueness | pointwise comparator | every fixed-`μ` grade here has its required trace form |
 | August 10 `E0` and restriction `25/142` | hostile control | recomputed from traces; not this kernel |
+| August 12 barycenter kernel | direct parent | uniqueness only inside its explicit `μ`-affine finite-family ansatz |
 | `K=Tr(ρ^2 E)/Tr(ρ^2)` and the `9/26` versus `3/10` split | Theorems 1--4 | computed here |
-| physical menu registration / Record identification | residual | open |
+| physical preparation map / menu registration / Record identification | residual | open |
 | observed frequencies or fitted kernels | none | not used |
 
 The exact advance is a finite-matrix exhibit. Independent audit is required.
@@ -274,8 +293,8 @@ This note authors no audit verdict.
 
 | # | Question | Answer |
 |---|---|---|
-| V1 | Named obstruction addressed? | August 10 leaves barycenter/evaluation live after restriction fails, and August 9 unique-ifies a menu-independent low-arity grade. This note exhibits a live non-affine kernel that is not that barycenter evaluation. |
-| V2 | New content? | Searched `origin/main` at `c45dd5ab30` for `9/26`, `purity-weighted`, and `Tr(ρ^2 E)`. No landed purity-weighted versus barycenter-evaluation split appears on that commit. |
+| V1 | Named obstruction addressed? | The August 12 barycenter theorem expressly leaves non-affine kernels live. This note supplies an exact normalized-square witness while preserving the August 9 pointwise trace-form result. |
+| V2 | New content? | Current main contains affine barycenter evaluation and finite-dyadic approximants, but no normalized-square `σ_μ`, `9/26` versus `3/10`, or exact affine-mix gap. |
 | V3 | Independently checkable? | Yes. The runner recomputes `Tr(ρ^2)`, `Tr(ρ^2 E0)`, `K`, `w`, and the restriction control `25/142` by exact `Fraction` arithmetic. Identity gates call `purity_kernel`. |
 | V4 | More than a restatement? | Yes. `9/26≠3/10` and the atom-mix gap are not restatements of August 9 uniqueness or of August 10 restriction. |
 | V5 | One-step relabel? | No. Quoting “menu-independent grade” does not by itself produce the purity-weighted ratio or the `45/130` versus `39/130` comparison. |
@@ -283,10 +302,56 @@ This note authors no audit verdict.
 ## No-Go Discipline Gate (Theorem 5)
 
 The negative claims are restricted to: this kernel is not barycenter
-evaluation; this kernel is not affine in `μ`; August 9 uniqueness is not a
-license to identify every menu-independent kernel with `Tr(ρ_μ E)`. The gate
-does not ship “Born is false” or “no uniqueness theorem exists in a larger
-class.”
+evaluation; this kernel is not affine in `μ`; and the August 12 affine
+uniqueness result cannot be widened by deleting affinity. The gate does not
+ship “Born is false,” and it expressly keeps the August 9 pointwise trace-form
+theorem intact.
+
+### N1 — materially distinct route scan
+
+| Route | Marker | Result against the narrow claim |
+|---|---|---|
+| normalized-square state map | **ATTEMPTED** | gives the explicit non-affine `9/26` versus `3/10` witness |
+| higher normalized powers `ρ↦ρ^q/Tr(ρ^q)` | **ATTEMPTED** | remain live sibling maps for `q>1`; this note classifies none of them |
+| [August 12 affine Bloch ansatz](ADMISSIBILITY_BARYCENTER_EVALUATION_MENU_KERNEL_BOUNDED_THEOREM_NOTE_2026-08-12.md) | **RULED OUT BY PRIOR** | its theorem selects barycenter evaluation only after affinity and endpoint hypotheses are imposed |
+| [August 9 fixed-grade frame lift](BORN_FORM_FROM_BINARY_TERNARY_SCALED_PROJECTOR_FRAME_LIFT_BOUNDED_THEOREM_NOTE_2026-08-09.md) | **ATTEMPTED** | succeeds pointwise with `σ_μ`; it does not constrain the map `μ↦σ_μ` |
+| physical preparation compiler | **ATTEMPTED** | could select barycenter, normalized square, or another density; no such compiler is supplied here |
+| convex-mixture operational law | **ATTEMPTED** | a law preserving randomized preparations would impose affinity and exclude this witness; it remains a live physical route |
+| [menu restriction of the August 10 atomic measure](ADMISSIBILITY_GLOBAL_MEASURE_MENU_KERNEL_TYPE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-08-10.md) | **RULED OUT BY PRIOR** | it is menu-dependent and therefore attacks a different residual |
+
+These are distinct primary mechanisms: nonlinear functional calculus, affine
+convexity, pointwise frame representation, physical preparation, operational
+mixing, and menu restriction. The theorem closes only existence of one
+non-affine mathematical witness.
+
+### N2 — wall independence and collapse
+
+For finite-support measures, affinity together with the pure-state endpoint
+map already fixes convex mixtures to barycenter evaluation. “Affinity” and
+“barycenter identification” are therefore not counted as independent walls
+inside this theorem; they collapse to one preparation-convexity obligation.
+Physical menu registration and Record identification are separate downstream
+interfaces, outside the mathematical target rather than extra no-go walls.
+
+### N3 — hidden-condition scan
+
+The density-body restriction, finite support, the barycenter `ρ_μ`, the
+normalized-square map, the effect `E0`, and the meaning of affinity in `μ` are
+all declared. “Menu-independent” refers only to dependence on the effect, not
+to physical menu registration. No observed frequency, typicality rule,
+continuity premise, Record readout, or physical preparation law is hidden.
+
+### N4 — residual matching
+
+| Source | Source residual | Residual used here | Match? |
+|---|---|---|---|
+| [August 12 barycenter theorem](ADMISSIBILITY_BARYCENTER_EVALUATION_MENU_KERNEL_BOUNDED_THEOREM_NOTE_2026-08-12.md) | non-affine kernels lie outside its explicit affine ansatz | construct one such kernel and test the affine-mix identity | yes |
+| [August 9 frame lift](BORN_FORM_FROM_BINARY_TERNARY_SCALED_PROJECTOR_FRAME_LIFT_BOUNDED_THEOREM_NOTE_2026-08-09.md) | represent one fixed qualifying effect grade by a density | verify `K(μ,·)=Tr(σ_μ·)` for each fixed `μ` | yes; compatibility, not a negative witness |
+| [August 10 restriction theorem](ADMISSIBILITY_GLOBAL_MEASURE_MENU_KERNEL_TYPE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-08-10.md) | atomic menu restriction is menu-dependent | use `25/142` only as a hostile control | yes; different residual, not uniqueness evidence |
+| [current axiom memo](MINIMAL_AXIOMS_2026-06-29.md) | no physical distribution-to-effect or preparation map | keep physical selection open | yes |
+
+No earlier no-go is cited as proving that every nonlinear preparation map
+fails or succeeds.
 
 ### N5 — resolution and rhetoric audit
 
@@ -295,12 +360,41 @@ class.”
 | per element | `E0` at `I/2` and at `diag(3/5,2/5)`, with values `1/4`, `9/26`, `3/10`, and the control `25/142` | no classification of every map `(μ,E)→R` |
 | per site | one `M_2(C)` density-body site | no composite or intervention theorem |
 | per mode | the diagonal family `P(z)`, `P(-z)`, `I/2` | no spectral-mode exhaustion |
-| per block | Theorem 5 only scopes August 9 uniqueness to affine or similarly restricted kernels | no denial of every larger uniqueness theorem |
+| per block | August 9 pointwise trace representation is separated from August 12 preparation affinity | no classification of every nonlinear state map |
 | lattice-wide | checked and not executed | no lattice-wide Born no-go |
 
-**Gate disposition.** PASS for the `9/26` versus `3/10` exhibit and the
-Theorem 5 scope. FAIL / DO NOT SHIP for “Born is false” or “no uniqueness
-theorem exists in a larger class.”
+### N6 — live partial-closure paths
+
+A derived operational rule that randomized preparations map to randomized
+states would impose affinity and retire this mathematical freedom. A physical
+compiler could instead select the normalized-square map or another nonlinear
+map. Effect-menu registration and the Record content bridge remain separate
+constructive routes. None is reclassified as requiring an axiom edit.
+
+### N7 — hostile steelman
+
+**Steelman:** This is not a non-Born kernel at all: define
+`σ_μ=ρ_μ^2/Tr(ρ_μ^2)`, and the grade is exactly `Tr(σ_μ E)`.
+
+**Answer:** Correct, and that is now part of the theorem. The contribution is
+not a counterexample to pointwise Born form. It is an exact witness that the
+pointwise trace theorem does not identify the preparation measure's barycenter
+with its representing density, and that the August 12 affinity condition is
+load-bearing for that identification.
+
+### N8 — cross-cycle echo
+
+The August 12 barycenter theorem left non-affine kernels live. The finite
+dyadic theorem later supplied affine finite-`n` approximants that differ from
+barycenter evaluation for a separate discretization reason. This note closes
+only the outstanding existence example for a genuinely non-affine map; it
+does not reuse the dyadic mechanism or promote either construction to a
+physical law.
+
+**Gate disposition.** PASS for the normalized-square exhibit, its non-affinity,
+and the narrow statement that August 12 affinity is load-bearing. FAIL / DO
+NOT SHIP for “Born is false,” “the August 9 theorem fails,” or “this map is
+physically selected.”
 
 ## Primary Runner
 

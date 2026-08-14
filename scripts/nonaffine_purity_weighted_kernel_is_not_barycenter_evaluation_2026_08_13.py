@@ -20,16 +20,28 @@ NOTE_PATH = (
     / "docs"
     / "NONAFFINE_PURITY_WEIGHTED_KERNEL_IS_NOT_BARYCENTER_EVALUATION_BOUNDED_THEOREM_NOTE_2026-08-13.md"
 )
+PARENT_AUG09_PATH = (
+    ROOT
+    / "docs"
+    / "BORN_FORM_FROM_BINARY_TERNARY_SCALED_PROJECTOR_FRAME_LIFT_BOUNDED_THEOREM_NOTE_2026-08-09.md"
+)
 PARENT_AUG10_PATH = (
     ROOT
     / "docs"
     / "ADMISSIBILITY_GLOBAL_MEASURE_MENU_KERNEL_TYPE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-08-10.md"
 )
+PARENT_AUG12_PATH = (
+    ROOT
+    / "docs"
+    / "ADMISSIBILITY_BARYCENTER_EVALUATION_MENU_KERNEL_BOUNDED_THEOREM_NOTE_2026-08-12.md"
+)
 AXIOM_PATH = ROOT / "docs" / "MINIMAL_AXIOMS_2026-06-29.md"
 
 AUDIT_INPUT_PATHS = (
     "docs/NONAFFINE_PURITY_WEIGHTED_KERNEL_IS_NOT_BARYCENTER_EVALUATION_BOUNDED_THEOREM_NOTE_2026-08-13.md",
+    "docs/BORN_FORM_FROM_BINARY_TERNARY_SCALED_PROJECTOR_FRAME_LIFT_BOUNDED_THEOREM_NOTE_2026-08-09.md",
     "docs/ADMISSIBILITY_GLOBAL_MEASURE_MENU_KERNEL_TYPE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-08-10.md",
+    "docs/ADMISSIBILITY_BARYCENTER_EVALUATION_MENU_KERNEL_BOUNDED_THEOREM_NOTE_2026-08-12.md",
     "docs/MINIMAL_AXIOMS_2026-06-29.md",
 )
 
@@ -70,18 +82,26 @@ ZERO = H2(Fraction(0), Fraction(0), Fraction(0))
 I2 = H2(Fraction(1), Fraction(0), Fraction(1))
 PZ = H2(Fraction(1), Fraction(0), Fraction(0))
 PMZ = H2(Fraction(0), Fraction(0), Fraction(1))
+PX = H2(Fraction(1, 2), Fraction(1, 2), Fraction(1, 2))
+PMX = H2(Fraction(1, 2), Fraction(-1, 2), Fraction(1, 2))
 MIXED = I2.scale(Fraction(1, 2))
 E0 = PZ.scale(Fraction(1, 2))
+EX = PX.scale(Fraction(3, 4))
 BIASED = H2(Fraction(3, 5), Fraction(0), Fraction(2, 5))
 
 
-def purity_kernel(rho: H2, effect: H2) -> Fraction:
-    """K(rho, E) := Tr(rho^2 E) / Tr(rho^2). Identity gates call this."""
+def normalized_square(rho: H2) -> H2:
+    """The density-valued map sigma(rho)=rho^2/Tr(rho^2)."""
     rho2 = rho.mul(rho)
     denom = rho2.trace()
     if denom == 0:
         raise ZeroDivisionError("Tr(rho^2) vanished")
-    return rho2.pairing(effect) / denom
+    return rho2.scale(Fraction(1, 1) / denom)
+
+
+def purity_kernel(rho: H2, effect: H2) -> Fraction:
+    """K(rho, E) := Tr(sigma(rho) E). Identity gates call this."""
+    return normalized_square(rho).pairing(effect)
 
 
 def K(rho: H2, effect: H2) -> Fraction:
@@ -123,34 +143,38 @@ def main() -> int:
     checks = Checks()
     note = NOTE_PATH.read_text(encoding="utf-8")
     axiom = AXIOM_PATH.read_text(encoding="utf-8")
+    parent_aug09 = PARENT_AUG09_PATH.read_text(encoding="utf-8")
     parent_aug10 = PARENT_AUG10_PATH.read_text(encoding="utf-8")
+    parent_aug12 = PARENT_AUG12_PATH.read_text(encoding="utf-8")
     for relative in AUDIT_INPUT_PATHS:
         (ROOT / relative).read_text(encoding="utf-8")
 
     print(
-        "external_scientific_inputs: axiom wording and the August 10 type-separation "
-        "note are source-bound; no observational or fitted inputs"
+        "external_scientific_inputs: axiom wording and the August 9, August 10, "
+        "and August 12 theorem boundaries are source-bound; no observations or fits"
     )
     print(
         "integrity_reads: this runner, its paired note, the axiom memo, and "
-        "the August 10 parent; no cache is written"
+        "the August 9, August 10, and August 12 parents; no cache is written"
     )
     print(
         "kernel_formula: identity gates call purity_kernel(rho, E); "
         "born_kernel and restriction are hostile controls"
     )
     print(
-        "negative_scope: this kernel is not barycenter evaluation and is not "
-        "affine in mu; Born is not declared false"
+        "negative_scope: this kernel is non-affine in mu and not barycenter "
+        "evaluation; every fixed-mu grade remains pointwise trace form"
     )
 
     checks.check(
         "audit-input-paths",
-        "declared audit inputs exist and match the note, August 10 note, and axiom memo",
+        "declared audit inputs exist and match the note, both direct comparators, and axiom memo",
         AUDIT_INPUT_PATHS
         == (
             "docs/NONAFFINE_PURITY_WEIGHTED_KERNEL_IS_NOT_BARYCENTER_EVALUATION_BOUNDED_THEOREM_NOTE_2026-08-13.md",
+            "docs/BORN_FORM_FROM_BINARY_TERNARY_SCALED_PROJECTOR_FRAME_LIFT_BOUNDED_THEOREM_NOTE_2026-08-09.md",
             "docs/ADMISSIBILITY_GLOBAL_MEASURE_MENU_KERNEL_TYPE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-08-10.md",
+            "docs/ADMISSIBILITY_BARYCENTER_EVALUATION_MENU_KERNEL_BOUNDED_THEOREM_NOTE_2026-08-12.md",
             "docs/MINIMAL_AXIOMS_2026-06-29.md",
         )
         and all((ROOT / path).is_file() for path in AUDIT_INPUT_PATHS)
@@ -175,10 +199,20 @@ def main() -> int:
     )
     checks.check(
         "source-aug09-citation",
-        "the note cites the August 9 frame-lift uniqueness parent",
+        "the note cites August 9 as pointwise trace-form authority, not mu-affine authority",
         "BORN_FORM_FROM_BINARY_TERNARY_SCALED_PROJECTOR_FRAME_LIFT_BOUNDED_THEOREM_NOTE_2026-08-09.md"
         in note
-        and "unique density-matrix trace form" in note,
+        and "There is a unique density matrix `rho in M_2(C)`" in parent_aug09
+        and "August 9 does not take a preparation measure `μ` as an" in note
+        and "pointwise trace-form" in note,
+    )
+    checks.check(
+        "source-aug12-affine-boundary",
+        "August 12 supplies the explicit mu-affine uniqueness ansatz and leaves non-affine kernels live",
+        "unique among affine positive normalized grades" in parent_aug12
+        and "non-affine kernels remain live" in parent_aug12
+        and "ADMISSIBILITY_BARYCENTER_EVALUATION_MENU_KERNEL_BOUNDED_THEOREM_NOTE_2026-08-12.md"
+        in note,
     )
 
     mixed_denom = MIXED.mul(MIXED).trace()
@@ -186,7 +220,7 @@ def main() -> int:
     pure_denom = PZ.mul(PZ).trace()
     checks.check(
         "theorem-1-well-defined",
-        "Tr(rho^2)>0 on mixed, biased, and pure states; K(I)=1 and K(0)=0",
+        "normalized squares are densities on mixed, biased, and pure samples; K(I)=1 and K(0)=0",
         mixed_denom == Fraction(1, 2)
         and biased_denom == Fraction(13, 25)
         and pure_denom == Fraction(1)
@@ -200,6 +234,22 @@ def main() -> int:
         residual=(mixed_denom, biased_denom, pure_denom),
     )
     checks.check(
+        "theorem-1-pointwise-trace-form",
+        "sigma=rho^2/Tr(rho^2) has trace one and K(rho,E)=Tr(sigma E)",
+        normalized_square(MIXED) == MIXED
+        and normalized_square(PZ) == PZ
+        and normalized_square(PMZ) == PMZ
+        and normalized_square(PX) == PX
+        and normalized_square(PMX) == PMX
+        and normalized_square(BIASED) == H2(Fraction(9, 13), Fraction(0), Fraction(4, 13))
+        and all(normalized_square(state).trace() == 1 for state in (MIXED, BIASED, PZ, PMZ, PX, PMX))
+        and all(
+            purity_kernel(state, effect) == normalized_square(state).pairing(effect)
+            for state in (MIXED, BIASED, PZ, PMZ)
+            for effect in (E0, I2, PZ, PMZ)
+        ),
+    )
+    checks.check(
         "theorem-1-positive",
         "K is nonnegative on the PSD effects E0, I, P(z), and P(-z)",
         all(
@@ -207,6 +257,18 @@ def main() -> int:
             for state in (MIXED, BIASED, PZ, PMZ)
             for effect in (E0, I2, PZ, PMZ)
         ),
+    )
+    checks.check(
+        "theorem-1-menu-and-endpoint-hypotheses",
+        "K normalizes exact effect resolutions and preserves scaled-projector endpoints",
+        purity_kernel(BIASED, PZ) + purity_kernel(BIASED, PMZ) == 1
+        and purity_kernel(BIASED, E0)
+        + purity_kernel(BIASED, I2 + E0.scale(Fraction(-1)))
+        == 1
+        and purity_kernel(PX, EX) == Fraction(3, 4)
+        and purity_kernel(PMX, EX) == 0
+        and PX.mul(PX) == PX
+        and PMX.mul(PMX) == PMX,
     )
     checks.check(
         "theorem-1-menu-independent",
@@ -322,11 +384,11 @@ def main() -> int:
 
     checks.check(
         "theorem-5-scope",
-        "Theorem 5 scopes August 9 uniqueness and refuses the two banned overclaims",
-        "August 9 uniqueness of Born is among affine" in note
-        and "does not say Born is false" in note
-        and "does not say that no uniqueness theorem exists in a larger class" in note
-        and "not `Tr(ρE)`" in note,
+        "Theorem 5 separates August 9 pointwise trace form from August 12 mu-affinity",
+        "inside the August 9 pointwise trace-form class" in note
+        and "outside the August 12 ansatz that is affine in `μ`" in note
+        and "say Born is false" in note
+        and "does not install `σ_μ` as a physical preparation map" in note,
     )
 
     allowed_retained = (
@@ -347,6 +409,8 @@ def main() -> int:
                 "target_claim_type: bounded_theorem",
                 'hypothetical_axiom_status: "no edit"',
                 "menu-independent",
+                "normalized-square",
+                "pointwise trace-form",
                 "Tr(",
                 "3/10",
                 "9/26",
@@ -370,7 +434,7 @@ def main() -> int:
         "per_element: E0 at I/2 and diag(3/5,2/5) with values 1/4, 9/26, 3/10, and control 25/142",
         "per_site: the exhibit is one M_2(C) density-body site; no composite carrier is claimed",
         "per_mode: the diagonal family P(z), P(-z), I/2 is checked; no spectral-mode exhaustion",
-        "per_block: Theorem 5 only scopes August 9 uniqueness to affine or similarly restricted kernels",
+        "per_block: August 9 pointwise trace form is separated from August 12 preparation affinity",
         "lattice_wide: checked and not executed — no lattice-wide Born no-go or uniqueness denial",
     )
     for line in n5_lines:

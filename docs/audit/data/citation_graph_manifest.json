@@ -1,11 +1,6 @@
 {
-<<<<<<< HEAD
- "edge_count": 15691,
- "node_count": 5520,
-=======
- "edge_count": 15684,
- "node_count": 5518,
->>>>>>> 1e1c57e810 (audit-infra: acknowledge reviewed Cycle752 graph)
+ "edge_count": 15697,
+ "node_count": 5522,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -13194,6 +13189,10 @@
   "noether_source_current_classification_bounded_note_2026-07-08": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "nonaffine_purity_weighted_kernel_is_not_barycenter_evaluation_bounded_theorem_note_2026-08-13": {
+   "deps_hash": "b64b8dc7658d",
+   "out_degree": 4
   },
   "nonlabel_grown_basin_note": {
    "deps_hash": "e3b0c44298fc",

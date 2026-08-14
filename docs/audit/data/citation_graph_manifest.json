@@ -2710,6 +2710,10 @@
    "deps_hash": "de5fccd291ab",
    "out_degree": 2
   },
+  "covariant_law_weight_compatibility_cycle974_theorem_note_2026-08-10": {
+   "deps_hash": "910bffe93fd1",
+   "out_degree": 3
+  },
   "cpt_c3_cp_squared_scalar_narrow_theorem_note_2026-05-17": {
    "deps_hash": "381c41107f12",
    "out_degree": 2

@@ -38,16 +38,22 @@ AUDIT_INPUT_PATHS = (
     "docs/MINIMAL_AXIOMS_2026-06-29.md",
 )
 EXPECTED_SHA256 = {
-    AUDIT_INPUT_PATHS[0]: "02b070dcfeda5c516452280e7d9509d5e42d3293aee3105964e9cc7815525648",
-    AUDIT_INPUT_PATHS[1]: "1e6e0e77b49e1bc8ae646419b4ea0a84045ead3362710536eb7e95d52d263ebd",
-    AUDIT_INPUT_PATHS[2]: "0b2eb35fcb0a2d68a1f968b8f6fabc0a4348fb77fb852eb89d140a020f105645",
+    AUDIT_INPUT_PATHS[0]: "a6d611f403c2e7eb325f14123ce789cf8b21ed1ec4071c5725e3adbb608a795d",
+    AUDIT_INPUT_PATHS[1]: "fa8a25f534b9061f28245aa9a8a52c2951508c70715397943e0f955471c399b0",
+    AUDIT_INPUT_PATHS[2]: "16d3ee6fc549c697f6943937f0b1f9a67dbe144e00deb30d2eb99aed4516e199",
     AUDIT_INPUT_PATHS[3]: "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
-    AUDIT_INPUT_PATHS[4]: "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
+    AUDIT_INPUT_PATHS[4]: "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
 }
 BLOCKLIST_EXECUTION = AUDIT_INPUT_PATHS[:3]
 CANDIDATE_NAMES = (
     "M1_COUNTING", "M2_PER_WORLD_UNIFORM", "M3_OCCUPATION_WEIGHTED",
     "M4_FORMATION_LIFETIME", "M5_FORMATION_MOMENT",
+)
+AXIOM_REQUIRED_NEEDLES = (
+    "Finite additivity, a named scalar collection functional `I`, and an assigned",
+    "Born weight values,",
+    "probability rules beyond the distribution clause",
+    "The 2026-08-13 owner-approved revision removed the named scalar functional",
 )
 FIXTURE_BANKS = 2
 HORIZON = 16_384
@@ -98,6 +104,7 @@ def controls() -> dict:
     }
     primary_cache = (ROOT / AUDIT_INPUT_PATHS[1]).read_text(encoding="utf-8")
     primary_receipt = json.loads((ROOT / AUDIT_INPUT_PATHS[2]).read_text(encoding="utf-8"))
+    axiom_text = (ROOT / AUDIT_INPUT_PATHS[4]).read_text(encoding="utf-8")
     ast_checks = {
         "candidate_names": tuple(literal_assignment(primary_tree, "CANDIDATE_NAMES")) == CANDIDATE_NAMES,
         "criterion_literal_present": "COMPATIBILITY_CRITERION" in {
@@ -137,11 +144,14 @@ def controls() -> dict:
         "primary_ast_checks": ast_checks,
         "primary_cache_receipt_checks": cache_checks,
         "primary_receipt": primary_receipt,
+        "current_record_boundary_needles_match": all(
+            needle in axiom_text for needle in AXIOM_REQUIRED_NEEDLES
+        ),
     }
     result["pass"] = bool(
         tuple(literal_inputs) == AUDIT_INPUT_PATHS
         and all(not Path(rel).is_absolute() and (ROOT / rel).is_file() for rel in literal_inputs)
-        and result["pins_match"] and not loaded
+        and result["pins_match"] and result["current_record_boundary_needles_match"] and not loaded
         and all(ast_checks.values()) and all(cache_checks.values())
     )
     return result
@@ -660,7 +670,7 @@ def render(receipt: dict) -> str:
     lines.append(f"R1_REFUTE_REBUILD {'PASS' if checks['R1_REFUTE_REBUILD'] else 'FAIL'} :: events={data['event_rebuild']['event_cardinality']}; candidate_digests_match={data['candidate_digests_match']}; law={compact(data['law_rebuild'])}")
     lines.append(f"R2_REFUTE_COMPATIBILITY {'PASS' if checks['R2_REFUTE_COMPATIBILITY'] else 'FAIL'} :: verdicts={compact(data['verdicts'])}; disagreement_witnesses={compact(data['disagreements'])}")
     lines.append(f"R3_ACTIVE_CORRUPTION_PROBES {'PASS' if checks['R3_ACTIVE_CORRUPTION_PROBES'] else 'FAIL'} :: rejected=negative_weight,zero_total,missing_configuration,XNOR; XNOR_witness={compact(data['corruptions']['probes']['xnor_instead_of_xor']['first_disagreement'])}")
-    lines.append(f"R4_SELECTION_BOUNDARY {'PASS' if checks['R4_SELECTION_BOUNDARY'] else 'FAIL'} :: case={selection['case']}; survivors={selection['survivor_count']}/5; excluded={selection['excluded_count']}; reduction={selection['reduction']}/5; wall_stands={selection['wall_stands']}")
+    lines.append(f"R4_CRITERION_SCOPE {'PASS' if checks['R4_CRITERION_SCOPE'] else 'FAIL'} :: case={selection['case']}; survivors={selection['survivor_count']}/5; excluded={selection['excluded_count']}; reduction={selection['reduction']}/5; multiple_survivors_under_criterion={selection['multiple_survivors_under_criterion']}")
     lines.append(f"R5_CONTROLS {'PASS' if checks['R5_CONTROLS'] else 'FAIL'} :: determinism={data['determinism']}; runtime_s={data['runtime_seconds']:.3f}<1400; stdout_bytes={data['stdout_bytes']}<6000<150000")
     lines.append("REFUTATION_OUTCOME: NO_DISCREPANCY_FOUND" if all(checks.values()) else "REFUTATION_OUTCOME: DISCREPANCY_FOUND")
     lines.append(f"TOTAL: PASS={sum(checks.values())} FAIL={len(checks)-sum(checks.values())}")
@@ -689,14 +699,14 @@ def run() -> tuple[dict, str]:
     excluded_count = sum(value == "EXCLUDED" for value in verdicts.values())
     selection_boundary = {
         "case": (
-            "RESIDUAL_FREEDOM" if survivor_count > 1
+            "MULTIPLE_SURVIVORS_UNDER_DECLARED_CRITERION" if survivor_count > 1
             else "SINGLETON_SELECTION" if survivor_count == 1
             else "NO_SURVIVOR_REFUTATION"
         ),
         "survivor_count": survivor_count,
         "excluded_count": excluded_count,
         "reduction": len(CANDIDATE_NAMES) - survivor_count,
-        "wall_stands": survivor_count > 1,
+        "multiple_survivors_under_criterion": survivor_count > 1,
     }
     corruptions = active_corruptions(rebuilt_a["vectors"]["M1_COUNTING"])
     determinism = rebuilt_a["event_digest"] == rebuilt_b["event_digest"]
@@ -723,7 +733,7 @@ def run() -> tuple[dict, str]:
         "R1_REFUTE_REBUILD": r1,
         "R2_REFUTE_COMPATIBILITY": all(verdict == "SURVIVES" for verdict in verdicts.values()) and not any(disagreements.values()),
         "R3_ACTIVE_CORRUPTION_PROBES": corruptions["all_corruptions_rejected"],
-        "R4_SELECTION_BOUNDARY": bool(
+        "R4_CRITERION_SCOPE": bool(
             tuple(verdicts) == CANDIDATE_NAMES
             and survivor_count + excluded_count == len(CANDIDATE_NAMES)
             and selection_boundary["survivor_count"]
@@ -732,8 +742,8 @@ def run() -> tuple[dict, str]:
                 == len(primary["certificates"]["C_SELECTION_STATUS"]["excluded"])
             and selection_boundary["reduction"]
                 == primary["certificates"]["C_SELECTION_STATUS"]["absolute_reduction"]
-            and selection_boundary["wall_stands"]
-                == primary["certificates"]["C_SELECTION_STATUS"]["born_wall_stands"]
+            and selection_boundary["multiple_survivors_under_criterion"]
+                == primary["certificates"]["C_SELECTION_STATUS"]["multiple_survivors_under_criterion"]
         ),
         "R5_CONTROLS": bool(control["pass"] and determinism and runtime < AUDIT_TIMEOUT_SEC),
     }

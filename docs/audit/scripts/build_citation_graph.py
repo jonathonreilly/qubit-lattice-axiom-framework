@@ -151,6 +151,12 @@ HEADING_RE = re.compile(r"^#{1,6}\s+", re.MULTILINE)
 LINK_RE = re.compile(r"\[[^\]]*\]\(([^)\s#]+\.md)(?:#[^)]*)?\)")
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    # Cycle 974's sibling checker independently replays the finite event
+    # vectors and XOR/product-extension criterion without importing the
+    # primary, so keep it in the restricted claim packet explicitly.
+    "covariant_law_weight_compatibility_cycle974_theorem_note_2026-08-10": [
+        "scripts/frontier_cycle974_compatibility_independent_check_2026_08_10.py",
+    ],
     "input_distribution_dependence_law_cycle975_bounded_theorem_note_2026-08-10": [
         "scripts/frontier_cycle975_input_distribution_independent_check_2026_08_10.py",
     ],

@@ -37,22 +37,22 @@ AUDIT_INPUT_PATHS = (
 )
 EXPECTED_INPUT_SHA256 = {
     AUDIT_INPUT_PATHS[0]:
-        "978302583fc5e58b883f1970c73a335fc4d9366984773875ea2b6dd969ad538c",
+        "068e874ff7b8424085fa80372ac344a437bbad6fff35aab0f7ad1481caad3269",
     AUDIT_INPUT_PATHS[1]:
-        "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
+        "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
     AUDIT_INPUT_PATHS[2]:
         "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
 }
 EXPECTED_INPUT_BLOBS = {
-    AUDIT_INPUT_PATHS[0]: "d2b4197f3417ec85e0fcb148db89146b742fafe3",
-    AUDIT_INPUT_PATHS[1]: "2f5fdd26898f62c17fcabc846761f7785c2eadb1",
+    AUDIT_INPUT_PATHS[0]: "6fd68fd723f988d8469d9d037c34321d5661b4bf",
+    AUDIT_INPUT_PATHS[1]: "bc23300becfe4e4db57153c0e94cfcdf2338da71",
     AUDIT_INPUT_PATHS[2]: "c123b8d681c3d76fce08ef13d7673622deac64ad",
 }
 
 PROVENANCE = (
     {
         "label": "cycle878_event_weightings",
-        "commit": "f655c945318231538ad7a5cc8956dc384115f8ea",
+        "commit": "84e62249a0c4d3b043c0698464b693f70a25cb12",
         "note_path": "docs/EVENT_SPACE_GROUNDWORK_CYCLE878_SUPPORT_NOTE_2026-07-28.md",
         "note_blob": "17c07f4d6d3dc07c81828827f25ab575dc7b722d",
         "runner_path": "scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py",
@@ -66,25 +66,27 @@ PROVENANCE = (
     },
     {
         "label": "cycle970_inter_site_gate",
-        "commit": "6fd0de0a288d212a4a6ce3fdd4dc9019f30dbbad",
+        "commit": "591b4364071e82de78ef6230dbeb00107688f9e2",
         "note_path": "docs/INTER_SITE_GATE_CYCLE970_BOUNDED_THEOREM_NOTE_2026-08-09.md",
-        "note_blob": "f7b788d8076e7864bc5dbcbb33cb9e49554e494a",
+        "note_blob": "c32f8dc4a355d43cbcf81988579202b3a1465f2e",
         "runner_path": "scripts/frontier_cycle970_inter_site_gate_2026_08_09.py",
-        "runner_blob": "4670bcb9d83cfc039f1336398c6a4aa4af014f7c",
+        "runner_blob": "bebf2def543ed701f676203d98f994dab1ebcca2",
         "note_needles": (
-            "same supplied local state `x=0`",
-            "D(y | n=0):              [1,0]",
-            "uniform marginal remains 0/10",
+            "supplied target input `x=0`",
+            "D(y | n=0) = [1,0]",
+            "`4/20` separating",
         ),
-        "runner_functions": ("point_distribution", "minimal_gate_attempt"),
+        "runner_functions": (
+            "point_distribution", "state_resolved_census", "one_cnot_witness",
+        ),
     },
     {
         "label": "cycle972_covariant_dependence_law",
-        "commit": "3826925e019c0e1966a9b85110a397db2c61d33f",
+        "commit": "621bc7521a1a314df700a2d8d09988beee1c4ad7",
         "note_path": "docs/COVARIANT_DEPENDENCE_LAW_CYCLE972_BOUNDED_THEOREM_NOTE_2026-08-09.md",
-        "note_blob": "e328562ec0ff3b80acef65c490bb5903cc3e8438",
+        "note_blob": "f20755a0d83f8bd06f606b0c0c3f7a6e58ce4c35",
         "runner_path": "scripts/frontier_cycle972_covariant_dependence_law_2026_08_09.py",
-        "runner_blob": "ab497ae52f74bc8e8c6cc6eb5888bfaf9f119f15",
+        "runner_blob": "71afd3b3e39e174d50fb9b07a79d5a715e93af1a",
         "note_needles": (
             "y = x XOR n_d",
             "61,440",
@@ -111,6 +113,12 @@ CANDIDATE_DEFINITIONS = {
     "M4_FORMATION_LIFETIME": "a(w)=boundaries-formation_moment(w)+1 if formed, else 0; uniform within world",
     "M5_FORMATION_MOMENT": "a(w)=formation_moment(w) if formed, else 0; uniform within world",
 }
+AXIOM_REQUIRED_NEEDLES = (
+    "Finite additivity, a named scalar collection functional `I`, and an assigned",
+    "Born weight values,",
+    "probability rules beyond the distribution clause",
+    "The 2026-08-13 owner-approved revision removed the named scalar functional",
+)
 COMPATIBILITY_CRITERION = (
     "existential joint-extension criterion: a normalized event weighting p_i"
     " survives iff there exists P_i(e,x,n,y) with event marginal p_i and"
@@ -280,6 +288,7 @@ def input_controls() -> dict:
         sha_rows[rel] = sha256(payload).hexdigest()
         blob_rows[rel] = git_blob(payload)
     provenance = provenance_controls()
+    axiom_text = (ROOT / AUDIT_INPUT_PATHS[1]).read_text(encoding="utf-8")
     result = {
         "literal_audit_input_paths": list(literal_paths),
         "all_inputs_worktree_relative_and_present": all(
@@ -297,12 +306,16 @@ def input_controls() -> dict:
             )
         ],
         "provenance": provenance,
+        "current_record_boundary_needles_match": all(
+            needle in axiom_text for needle in AXIOM_REQUIRED_NEEDLES
+        ),
     }
     result["pass"] = bool(
         tuple(literal_paths) == AUDIT_INPUT_PATHS
         and result["all_inputs_worktree_relative_and_present"]
         and sha_rows == EXPECTED_INPUT_SHA256
         and blob_rows == EXPECTED_INPUT_BLOBS
+        and result["current_record_boundary_needles_match"]
         and provenance["all_pins_and_text_ast_checks_match"]
         and not provenance["blocked_modules_loaded"]
     )
@@ -963,7 +976,7 @@ def selection_status(compatibility: dict) -> dict:
         "freedom_after": survivor_count,
         "absolute_reduction": len(CANDIDATE_NAMES) - survivor_count,
         "fractional_reduction": str(Fraction(len(CANDIDATE_NAMES) - survivor_count, len(CANDIDATE_NAMES))),
-        "born_wall_stands": survivor_count > 1,
+        "multiple_survivors_under_criterion": survivor_count > 1,
         "does_not_supply": (
             "a local-to-event lift", "an event-marginal selector",
             "an occurrence rule", "a Born rule",
@@ -971,7 +984,7 @@ def selection_status(compatibility: dict) -> dict:
     }
     if survivor_count > 1:
         status.update({
-            "case": "RESIDUAL_FREEDOM",
+            "case": "MULTIPLE_SURVIVORS_UNDER_DECLARED_CRITERION",
             "selected_weighting": None,
             "selection_premises": (),
             "refutation_target": None,
@@ -1026,7 +1039,7 @@ def render_stdout(receipt: dict) -> str:
         + f" excluded={compatibility['excluded_count']};"
         + f" reduction={selection['absolute_reduction']}/5"
         + f" ({20 * selection['absolute_reduction']}%);"
-        + f" wall_stands={selection['born_wall_stands']};"
+        + f" multiple_survivors_under_criterion={selection['multiple_survivors_under_criterion']};"
         + f" selected={selection['selected_weighting']};"
         + f" refutation_target={selection['refutation_target']}"
     )
@@ -1112,16 +1125,16 @@ def run() -> tuple[dict, str]:
         and selection["fractional_reduction"] == str(Fraction(selection["absolute_reduction"], len(CANDIDATE_NAMES)))
         and (
             (
-                selection["case"] == "RESIDUAL_FREEDOM"
+                selection["case"] == "MULTIPLE_SURVIVORS_UNDER_DECLARED_CRITERION"
                 and selection["freedom_after"] > 1
-                and selection["born_wall_stands"]
+                and selection["multiple_survivors_under_criterion"]
                 and selection["selected_weighting"] is None
                 and selection["refutation_target"] is None
             )
             or (
                 selection["case"] == "SINGLETON_SELECTION"
                 and selection["freedom_after"] == 1
-                and not selection["born_wall_stands"]
+                and not selection["multiple_survivors_under_criterion"]
                 and selection["selected_weighting"] == compatibility["survivors"][0]
                 and bool(selection["selection_premises"])
                 and selection["refutation_target"] is None
@@ -1129,7 +1142,7 @@ def run() -> tuple[dict, str]:
             or (
                 selection["case"] == "NO_SURVIVOR_REFUTATION"
                 and selection["freedom_after"] == 0
-                and not selection["born_wall_stands"]
+                and not selection["multiple_survivors_under_criterion"]
                 and selection["selected_weighting"] is None
                 and bool(selection["refutation_target"])
             )
@@ -1166,6 +1179,7 @@ def run() -> tuple[dict, str]:
                 "sha256": controls["sha256"],
                 "git_blobs": controls["git_blobs"],
                 "sha_pins_match": controls["sha256"] == EXPECTED_INPUT_SHA256 and controls["git_blobs"] == EXPECTED_INPUT_BLOBS,
+                "current_record_boundary_needles_match": controls["current_record_boundary_needles_match"],
                 "provenance_blocklist": controls["provenance_blocklist"],
                 "blocklist_text_ast_only": controls["provenance"]["all_pins_and_text_ast_checks_match"],
                 "blocked_modules_loaded": controls["provenance"]["blocked_modules_loaded"],

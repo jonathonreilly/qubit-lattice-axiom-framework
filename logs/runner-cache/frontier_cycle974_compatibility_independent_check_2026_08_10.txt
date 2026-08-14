@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle974_compatibility_independent_check_2026_08_10.py
-runner_sha256: fb11bcc8856d37d45c207ca0934bf0774a3b7589274aa20a4838e400bf656260
-input_fingerprint_sha256: 1647a6bf0811947a35f4d92cc0e01d39b331bb4fec29ea16485abb7c149888cc
+runner_sha256: 0097a33a8bff85735cf6525d205b934a4316939c504cca12a127cab9ade7d102
+input_fingerprint_sha256: cb3965fa50bdd1cbea027906e1ec88ab06a3fcd4cb2d20790b5c81e536e14502
 timeout_sec: 1400
 exit_code: 0
-elapsed_sec: 97.10
+elapsed_sec: 158.93
 status: ok
 ----- stdout -----
 CYCLE974_COMPATIBILITY_INDEPENDENT_CHECK
@@ -12,8 +12,8 @@ R0_PINS_BLOCKLIST_AND_AST PASS :: pins=True; text_AST_JSON_only=True; blocked_mo
 R1_REFUTE_REBUILD PASS :: events=92260; candidate_digests_match=True; law={"canonical_pair":{"D0":[1,0],"D1":[0,1],"n0":[0,0,0,0,0,0],"n1":[1,0,0,0,0,0],"x":0},"changed_edge_pairs":384,"dependent_word_input_rows":12,"family_words":20,"rotation_count":24,"rotation_failures":[],"rotation_semantic_comparisons":61440,"state_resolved_class_count":2,"translation_failures":[],"translation_semantic_comparisons":15360,"uniform_target_input_changed_pairs":0,"uniform_target_input_edge_pairs":3840,"witness_word_count":6,"word_law_class_count":1,"xor_failures":[]}
 R2_REFUTE_COMPATIBILITY PASS :: verdicts={"M1_COUNTING":"SURVIVES","M2_PER_WORLD_UNIFORM":"SURVIVES","M3_OCCUPATION_WEIGHTED":"SURVIVES","M4_FORMATION_LIFETIME":"SURVIVES","M5_FORMATION_MOMENT":"SURVIVES"}; disagreement_witnesses={"M1_COUNTING":null,"M2_PER_WORLD_UNIFORM":null,"M3_OCCUPATION_WEIGHTED":null,"M4_FORMATION_LIFETIME":null,"M5_FORMATION_MOMENT":null}
 R3_ACTIVE_CORRUPTION_PROBES PASS :: rejected=negative_weight,zero_total,missing_configuration,XNOR; XNOR_witness={"configuration":[0,[0,0,0,0,0,0],0],"expected":"1","observed":"0","quantity":"P(y|x,n)"}
-R4_SELECTION_BOUNDARY PASS :: case=RESIDUAL_FREEDOM; survivors=5/5; excluded=0; reduction=0/5; wall_stands=True
-R5_CONTROLS PASS :: determinism=True; runtime_s=96.645<1400; stdout_bytes=1528<6000<150000
+R4_CRITERION_SCOPE PASS :: case=MULTIPLE_SURVIVORS_UNDER_DECLARED_CRITERION; survivors=5/5; excluded=0; reduction=0/5; multiple_survivors_under_criterion=True
+R5_CONTROLS PASS :: determinism=True; runtime_s=157.972<1400; stdout_bytes=1576<6000<150000
 REFUTATION_OUTCOME: NO_DISCREPANCY_FOUND
 TOTAL: PASS=6 FAIL=0
 

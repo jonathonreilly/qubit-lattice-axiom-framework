@@ -1,17 +1,17 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle974_covariant_law_weight_compatibility_2026_08_10.py
-runner_sha256: 02b070dcfeda5c516452280e7d9509d5e42d3293aee3105964e9cc7815525648
-input_fingerprint_sha256: a892f46054a6a45e9f0e9f6777bcbea6c7f7a3506a05b2e340e9d6d2f55ad6c0
+runner_sha256: a6d611f403c2e7eb325f14123ce789cf8b21ed1ec4071c5725e3adbb608a795d
+input_fingerprint_sha256: 19d985fdc89ecd0269049fe44dc475a936f93329f60a76c4c1b9b9b88244fe70
 timeout_sec: 1400
 exit_code: 0
-elapsed_sec: 48.03
+elapsed_sec: 69.46
 status: ok
 ----- stdout -----
 CYCLE974_COVARIANT_LAW_WEIGHT_COMPATIBILITY
 A_REBUILD PASS :: events=92260; candidates={"M1_COUNTING":{"definition":"w(e)=1","positive":92260,"zeros":0},"M2_PER_WORLD_UNIFORM":{"definition":"world score a(w)=1; uniform within each event-bearing world","positive":92260,"zeros":0},"M3_OCCUPATION_WEIGHTED":{"definition":"a(w)=clean-dwell occupation count; uniform within world","positive":19172,"zeros":73088},"M4_FORMATION_LIFETIME":{"definition":"a(w)=boundaries-formation_moment(w)+1 if formed, else 0; uniform within world","positive":19172,"zeros":73088},"M5_FORMATION_MOMENT":{"definition":"a(w)=formation_moment(w) if formed, else 0; uniform within world","positive":16076,"zeros":76184}}; dependence={"canonical_pair":{"condition_n_d_0":[0,0,0,0,0,0],"condition_n_d_1":[1,0,0,0,0,0],"distribution_n_d_0":[1,0],"distribution_n_d_1":[0,1],"fixed_target_input":0},"changed_edge_pairs":384,"dependent_word_input_rows":12,"family_words":20,"law":"y=x XOR n_d","neighbour_conditions":64,"rotation_count":24,"rotation_failures":[],"rotation_semantic_comparisons":61440,"state_resolved_class_count":2,"translation_failures":[],"translation_semantic_comparisons":15360,"uniform_target_input_changed_pairs":0,"uniform_target_input_edge_pairs":3840,"witness_word_count":6,"word_law_class_count":1,"xor_failures":[],"xor_truth_table_comparisons":768}
 B_COMPATIBILITY_TEST PASS :: criterion=existential joint-extension criterion: a normalized event weighting p_i survives iff there exists P_i(e,x,n,y) with event marginal p_i and conditional P_i(y|x,n)=1{y=x XOR n_d} on every fixed-input radius-one configuration; mechanically use P_i=p_i(e)*q(x,n)*1{y=x XOR n_d}, q=1/128.  Exclude only on nonnegative/normalization failure, event-marginal mismatch, or a first conditional configuration mismatch.; verdicts={"M1_COUNTING":"SURVIVES","M2_PER_WORLD_UNIFORM":"SURVIVES","M3_OCCUPATION_WEIGHTED":"SURVIVES","M4_FORMATION_LIFETIME":"SURVIVES","M5_FORMATION_MOMENT":"SURVIVES"}; witness_pair={"condition_n_d_0":[0,0,0,0,0,0],"condition_n_d_1":[1,0,0,0,0,0],"distribution_n_d_0":[1,0],"distribution_n_d_1":[0,1],"fixed_target_input":0}
-C_SELECTION_STATUS PASS :: case=RESIDUAL_FREEDOM; five_to=5; excluded=0; reduction=0/5 (0%); wall_stands=True; selected=None; refutation_target=None
-D_CONTROLS PASS :: sha_pins=True; BLOCKLIST_text_AST_only=True; determinism=True; runtime_s=47.479<1400; stdout_bytes=2430<6000<150000
+C_SELECTION_STATUS PASS :: case=MULTIPLE_SURVIVORS_UNDER_DECLARED_CRITERION; five_to=5; excluded=0; reduction=0/5 (0%); multiple_survivors_under_criterion=True; selected=None; refutation_target=None
+D_CONTROLS PASS :: sha_pins=True; BLOCKLIST_text_AST_only=True; determinism=True; runtime_s=68.611<1400; stdout_bytes=2480<6000<150000
 TOTAL: PASS=4 FAIL=0
 
 ----- stderr -----

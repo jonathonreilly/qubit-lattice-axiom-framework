@@ -1,11 +1,11 @@
 {
-  "checker_source_sha256": "fb11bcc8856d37d45c207ca0934bf0774a3b7589274aa20a4838e400bf656260",
+  "checker_source_sha256": "0097a33a8bff85735cf6525d205b934a4316939c504cca12a127cab9ade7d102",
   "checks": {
     "R0_PINS_BLOCKLIST_AND_AST": true,
     "R1_REFUTE_REBUILD": true,
     "R2_REFUTE_COMPATIBILITY": true,
     "R3_ACTIVE_CORRUPTION_PROBES": true,
-    "R4_SELECTION_BOUNDARY": true,
+    "R4_CRITERION_SCOPE": true,
     "R5_CONTROLS": true
   },
   "cycle": 974,
@@ -19,6 +19,7 @@
         "outputs/covariant_law_weight_compatibility_cycle974_receipt_2026_08_10.json"
       ],
       "blocklist_text_ast_json_only": true,
+      "current_record_boundary_needles_match": true,
       "literal_inputs": [
         "scripts/frontier_cycle974_covariant_law_weight_compatibility_2026_08_10.py",
         "logs/runner-cache/frontier_cycle974_covariant_law_weight_compatibility_2026_08_10.txt",
@@ -43,11 +44,11 @@
         "total_pass": true
       },
       "sha256": {
-        "docs/MINIMAL_AXIOMS_2026-06-29.md": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
-        "logs/runner-cache/frontier_cycle974_covariant_law_weight_compatibility_2026_08_10.txt": "1e6e0e77b49e1bc8ae646419b4ea0a84045ead3362710536eb7e95d52d263ebd",
-        "outputs/covariant_law_weight_compatibility_cycle974_receipt_2026_08_10.json": "0b2eb35fcb0a2d68a1f968b8f6fabc0a4348fb77fb852eb89d140a020f105645",
+        "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+        "logs/runner-cache/frontier_cycle974_covariant_law_weight_compatibility_2026_08_10.txt": "fa8a25f534b9061f28245aa9a8a52c2951508c70715397943e0f955471c399b0",
+        "outputs/covariant_law_weight_compatibility_cycle974_receipt_2026_08_10.json": "16d3ee6fc549c697f6943937f0b1f9a67dbe144e00deb30d2eb99aed4516e199",
         "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
-        "scripts/frontier_cycle974_covariant_law_weight_compatibility_2026_08_10.py": "02b070dcfeda5c516452280e7d9509d5e42d3293aee3105964e9cc7815525648"
+        "scripts/frontier_cycle974_covariant_law_weight_compatibility_2026_08_10.py": "a6d611f403c2e7eb325f14123ce789cf8b21ed1ec4071c5725e3adbb608a795d"
       }
     },
     "corruptions": {
@@ -233,15 +234,15 @@
       "word_law_class_count": 1,
       "xor_failures": []
     },
-    "runtime_seconds": 96.64456483302638,
+    "runtime_seconds": 157.97223262500484,
     "selection_boundary": {
-      "case": "RESIDUAL_FREEDOM",
+      "case": "MULTIPLE_SURVIVORS_UNDER_DECLARED_CRITERION",
       "excluded_count": 0,
+      "multiple_survivors_under_criterion": true,
       "reduction": 0,
-      "survivor_count": 5,
-      "wall_stands": true
+      "survivor_count": 5
     },
-    "stdout_bytes": 1528,
+    "stdout_bytes": 1576,
     "verdicts": {
       "M1_COUNTING": "SURVIVES",
       "M2_PER_WORLD_UNIFORM": "SURVIVES",

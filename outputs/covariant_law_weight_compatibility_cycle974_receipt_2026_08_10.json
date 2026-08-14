@@ -131,7 +131,7 @@
               "M5_FORMATION_MOMENT"
             ],
             "candidate_names_match": true,
-            "commit": "f655c945318231538ad7a5cc8956dc384115f8ea",
+            "commit": "84e62249a0c4d3b043c0698464b693f70a25cb12",
             "label": "cycle878_event_weightings",
             "note_blob": "17c07f4d6d3dc07c81828827f25ab575dc7b722d",
             "note_path": "docs/EVENT_SPACE_GROUNDWORK_CYCLE878_SUPPORT_NOTE_2026-07-28.md",
@@ -143,26 +143,26 @@
             "text_ast_only": true
           },
           {
-            "commit": "6fd0de0a288d212a4a6ce3fdd4dc9019f30dbbad",
+            "commit": "591b4364071e82de78ef6230dbeb00107688f9e2",
             "label": "cycle970_inter_site_gate",
-            "note_blob": "f7b788d8076e7864bc5dbcbb33cb9e49554e494a",
+            "note_blob": "c32f8dc4a355d43cbcf81988579202b3a1465f2e",
             "note_path": "docs/INTER_SITE_GATE_CYCLE970_BOUNDED_THEOREM_NOTE_2026-08-09.md",
             "note_text_needles_match": true,
             "pass": true,
             "runner_ast_functions_match": true,
-            "runner_blob": "4670bcb9d83cfc039f1336398c6a4aa4af014f7c",
+            "runner_blob": "bebf2def543ed701f676203d98f994dab1ebcca2",
             "runner_path": "scripts/frontier_cycle970_inter_site_gate_2026_08_09.py",
             "text_ast_only": true
           },
           {
-            "commit": "3826925e019c0e1966a9b85110a397db2c61d33f",
+            "commit": "621bc7521a1a314df700a2d8d09988beee1c4ad7",
             "label": "cycle972_covariant_dependence_law",
-            "note_blob": "e328562ec0ff3b80acef65c490bb5903cc3e8438",
+            "note_blob": "f20755a0d83f8bd06f606b0c0c3f7a6e58ce4c35",
             "note_path": "docs/COVARIANT_DEPENDENCE_LAW_CYCLE972_BOUNDED_THEOREM_NOTE_2026-08-09.md",
             "note_text_needles_match": true,
             "pass": true,
             "runner_ast_functions_match": true,
-            "runner_blob": "ab497ae52f74bc8e8c6cc6eb5888bfaf9f119f15",
+            "runner_blob": "71afd3b3e39e174d50fb9b07a79d5a715e93af1a",
             "runner_path": "scripts/frontier_cycle972_covariant_dependence_law_2026_08_09.py",
             "text_ast_only": true
           }
@@ -526,8 +526,7 @@
     },
     "C_SELECTION_STATUS": {
       "absolute_reduction": 0,
-      "born_wall_stands": true,
-      "case": "RESIDUAL_FREEDOM",
+      "case": "MULTIPLE_SURVIVORS_UNDER_DECLARED_CRITERION",
       "does_not_supply": [
         "a local-to-event lift",
         "an event-marginal selector",
@@ -538,6 +537,7 @@
       "fractional_reduction": "0",
       "freedom_after": 5,
       "freedom_before": 5,
+      "multiple_survivors_under_criterion": true,
       "partition_count": 5,
       "refutation_target": null,
       "selected_weighting": null,
@@ -553,11 +553,12 @@
     "D_CONTROLS": {
       "blocked_modules_loaded": [],
       "blocklist_text_ast_only": true,
+      "current_record_boundary_needles_match": true,
       "determinism_replay": true,
       "full_prefix_digest": "d71745ea3f687078fdaa7b9295eebd06479d4a01824f386e8c6f998825095d88",
       "git_blobs": {
-        "docs/MINIMAL_AXIOMS_2026-06-29.md": "2f5fdd26898f62c17fcabc846761f7785c2eadb1",
-        "outputs/cycle974_cited_primary_provenance_2026_08_10.json": "d2b4197f3417ec85e0fcb148db89146b742fafe3",
+        "docs/MINIMAL_AXIOMS_2026-06-29.md": "bc23300becfe4e4db57153c0e94cfcdf2338da71",
+        "outputs/cycle974_cited_primary_provenance_2026_08_10.json": "6fd68fd723f988d8469d9d037c34321d5661b4bf",
         "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": "c123b8d681c3d76fce08ef13d7673622deac64ad"
       },
       "literal_audit_input_paths": [
@@ -566,23 +567,23 @@
         "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py"
       ],
       "provenance_blocklist": [
-        "f655c945318231538ad7a5cc8956dc384115f8ea:docs/EVENT_SPACE_GROUNDWORK_CYCLE878_SUPPORT_NOTE_2026-07-28.md (text)",
-        "f655c945318231538ad7a5cc8956dc384115f8ea:scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py (AST)",
-        "6fd0de0a288d212a4a6ce3fdd4dc9019f30dbbad:docs/INTER_SITE_GATE_CYCLE970_BOUNDED_THEOREM_NOTE_2026-08-09.md (text)",
-        "6fd0de0a288d212a4a6ce3fdd4dc9019f30dbbad:scripts/frontier_cycle970_inter_site_gate_2026_08_09.py (AST)",
-        "3826925e019c0e1966a9b85110a397db2c61d33f:docs/COVARIANT_DEPENDENCE_LAW_CYCLE972_BOUNDED_THEOREM_NOTE_2026-08-09.md (text)",
-        "3826925e019c0e1966a9b85110a397db2c61d33f:scripts/frontier_cycle972_covariant_dependence_law_2026_08_09.py (AST)"
+        "84e62249a0c4d3b043c0698464b693f70a25cb12:docs/EVENT_SPACE_GROUNDWORK_CYCLE878_SUPPORT_NOTE_2026-07-28.md (text)",
+        "84e62249a0c4d3b043c0698464b693f70a25cb12:scripts/frontier_cycle878_event_space_groundwork_2026_07_28.py (AST)",
+        "591b4364071e82de78ef6230dbeb00107688f9e2:docs/INTER_SITE_GATE_CYCLE970_BOUNDED_THEOREM_NOTE_2026-08-09.md (text)",
+        "591b4364071e82de78ef6230dbeb00107688f9e2:scripts/frontier_cycle970_inter_site_gate_2026_08_09.py (AST)",
+        "621bc7521a1a314df700a2d8d09988beee1c4ad7:docs/COVARIANT_DEPENDENCE_LAW_CYCLE972_BOUNDED_THEOREM_NOTE_2026-08-09.md (text)",
+        "621bc7521a1a314df700a2d8d09988beee1c4ad7:scripts/frontier_cycle972_covariant_dependence_law_2026_08_09.py (AST)"
       ],
       "runtime_budget_seconds": 1400,
-      "runtime_seconds": 47.47850795905106,
+      "runtime_seconds": 68.6105140830623,
       "sha256": {
-        "docs/MINIMAL_AXIOMS_2026-06-29.md": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
-        "outputs/cycle974_cited_primary_provenance_2026_08_10.json": "978302583fc5e58b883f1970c73a335fc4d9366984773875ea2b6dd969ad538c",
+        "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+        "outputs/cycle974_cited_primary_provenance_2026_08_10.json": "068e874ff7b8424085fa80372ac344a437bbad6fff35aab0f7ad1481caad3269",
         "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4"
       },
       "sha_pins_match": true,
       "short_replay_digest": "d71745ea3f687078fdaa7b9295eebd06479d4a01824f386e8c6f998825095d88",
-      "stdout_bytes": 2430,
+      "stdout_bytes": 2480,
       "stdout_limit_bytes": 6000
     }
   },
@@ -595,5 +596,5 @@
   "claim": "covariant nearest-neighbour XOR law compatibility with the five finite event weightings",
   "cycle": 974,
   "pass": true,
-  "primary_source_sha256": "02b070dcfeda5c516452280e7d9509d5e42d3293aee3105964e9cc7815525648"
+  "primary_source_sha256": "a6d611f403c2e7eb325f14123ce789cf8b21ed1ec4071c5725e3adbb608a795d"
 }

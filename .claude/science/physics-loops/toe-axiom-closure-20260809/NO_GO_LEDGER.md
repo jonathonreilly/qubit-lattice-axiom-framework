@@ -494,3 +494,21 @@ leaves a tensor residual or cannot be licensed.  Another isolated linear mode
 or fixed-cost battery scan does not qualify.  No tracked obligation or TOE
 percentage moves before selection, owner action where applicable, and
 independent positive retention.
+
+## Block 81 Matched-tensor exchange / physical-stress partial narrowing
+
+| Scoped negative considered | Exact evidence | Failing N1--N8 items | Demoted disposition | Live/reopen routes |
+|---|---|---|---|---|
+| a scalar compensator cannot lift to a proper-cubic full-tensor exchange on the declared null ray; separately, a positive future-null two-carrier split can supply noncollinear recoil, or one fixed finite carrier covers unrestricted TT work | six matched-direction abstract two-state channels commute with all ten symmetric null-tensor components and all 24 proper-cubic frames; no `Z^3`/`M_2` channel circuit is supplied; opposite share changes cancel all four source defects on 13,056 signed-ray modes; lapse-zero full-coordinate calibration spans `0.1464466094..1` but arbitrary TT momentum gives signed work reaching roughly `-30.54..30.84`; exact eight-tick shadow/share copy; exact covariant one-`M_2` share/direction codec; 384 append-only rail writes over 96 Cycle713 fronts; the positive future-null triangle-equality theorem forces collinearity | `N1` and `N7` defeat every broad gravity, recoil, energy, Record, or axiom no-go because gauge-fixed local pseudotensors, gauge-invariant quasilocal charges, a changed/common matter-geometry action, massive/rest sources, extra/non-null carriers, boundary flux, nonlinear self-stress, pure-Record fields, and live product/role carriers remain live | `partial-narrowing`; ship the matched full-tensor kinematics, four-Ward split, local midpoint-work identity, exact archive rail, narrow future-null collinearity theorem, and fixed-carrier domain boundary only | reconcile the August 12 order-`c^2` source Ward residual with a dynamical mixed Hessian; discriminate local gauge-fixed, quasilocal gauge-invariant, and changed/common-action energy branches; massive carried-source recoil; bounded lawful domain or growing reservoir; pure-Record gravity functional; live product/covariant-role carrier; owner state decision and audit retention |
+
+Do not identify the shadow ledger with physical stress-energy.  Counting it as
+an independent excitation would double count the same field gain.  The
+zero-field calibration is lapse-zero and not constraint-satisfying, so it is
+not a physical capacity theorem.  The exact next gravity target is a
+feasibility discriminator among a gauge-fixed local pseudotensor, a
+gauge-invariant quasilocal charge, and a changed/common action with a
+dynamical source mixed Hessian; it must also reconcile the August 12
+order-`c^2` Ward residual.  The null
+collinearity result does not cover massive/rest matter, non-null carriers,
+boundaries, or nonlinear gravitational self-stress.  No axiom is amended and
+no tracked obligation or TOE percentage moves.

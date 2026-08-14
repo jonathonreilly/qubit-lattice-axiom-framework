@@ -1,6 +1,6 @@
 {
- "edge_count": 15850,
- "node_count": 5521,
+ "edge_count": 15853,
+ "node_count": 5522,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -473,6 +473,10 @@
   "admissibility_m2_record_cubic_vector_decoder_sector_grading_carrier_axiom_boundary_bounded_theorem_note_2026-08-12": {
    "deps_hash": "0366382389ed",
    "out_degree": 4
+  },
+  "admissibility_matched_tensor_shadow_exchange_record_rail_boundary_bounded_theorem_note_2026-08-14": {
+   "deps_hash": "c142016de9d9",
+   "out_degree": 3
   },
   "admissibility_nonlinear_regge_extra_branch_cubic_lift_source_compatibility_boundary_bounded_theorem_note_2026-08-10": {
    "deps_hash": "2eebdd555ba7",

@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_matched_tensor_shadow_exchange_record_rail_boundary_2026_08_14.py
+runner_sha256: 4e8ccf3551c144434ac24647a743887c3a9b2b81fa673cedf4c6aba14d8e975c
+input_fingerprint_sha256: 053dd90b8bfaf0e3f2a97937416435c767dd64872edf08fa9df89da88bd44dba
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 23.22
+status: ok
+----- stdout -----
+[PASS] A-authority-parent-and-runtime-closure: current axioms, Block80, and the complete loaded helper closure are content-bound
+       scripts declared/loaded=51/51; helper mismatches=0
+[PASS] B-matched-direction-full-tensor-exchange: one bounded source/field exchange conserves all ten null-stress components and all cubic...
+       tensor commutator/covariance=0.00e+00/0.00e+00; transfer=0.226493
+[PASS] C-all-four-Ward-defect-cancellation: opposite matter/shadow share changes cancel all four source defects on the complete sign...
+       modes=13056; cancellation/individual=1.12e-15/0.400
+[PASS] D-gauge-fixed-zero-field-transfer-calibration: the lapse-zero full-coordinate diagnostic admits a bounded per-hit tensor transfer, whil...
+       work range=0.1464466..1.0000000; fixed mismatch=0.426777
+[PASS] E-local-midpoint-work-and-gauge-selection-boundary: the full-coordinate work is site-local and equals the shadow gain, but it changes with a...
+       real-space identity/support=5.45e-13/2; lapse full/TT=0.625/2.22e-16
+[PASS] F-shadow-work-debit-copy-and-domain-boundary: midpoint work exactly transfers between matter and shadow shares for eight ticks but is ...
+       unit/eight-tick copy=0.153451/5.20e-18; work range=-30.54..30.84
+[PASS] G-exact-covariant-M2-share-direction-codec: one M2 Record exactly stores two real shares and one cubic direction without aliasing th...
+       cases/failures/covariance/aliases=432/0/0/0
+[PASS] H-noninterfering-append-only-ledger-rail: a content-defined parallel rail archives one inert share Record per front cell without o...
+       cases/steps=96/384; rail/source distance=3/2
+[PASS] I-positive-null-split-collinearity-boundary: a positive future-null two-carrier split is necessarily collinear; nonzero reversed-matt...
+       axis solutions/noncollinear=6/0; reversed-matter energy=0.0
+[PASS] J-state-identification-no-go-and-TOE-scope: the tensor kinematics and Record archive remain conditional without physical energy iden...
+       candidate/energy/state/N1-N8=True/True/True/True
+AXIOM_AUTHORITY: origin/main=b02f50a9cfb8ca57c2dbe7026d06487947d22331 minimal-axiom blob=bc23300becfe4e4db57153c0e94cfcdf2338da71; Block80 parent=03c18511c296ce9b5550418e1ba5c4802c068bca
+per_element: all ten source-tensor components, six matched channels, exact M2 codec coordinates, and each share debit are checked
+per_site: 96 Cycle713 branches carry 384 inert rail Records at distance three; the abstract tensor channel has no executed Z3/M2 placement or nearest-neighbor circuit
+per_mode: all 13,056 signed-ray source modes pass four-defect cancellation and gauge-fixed zero-field calibration; arbitrary TT scaling breaks finite capacity
+per_block: tensor exchange, Ward split, work calibration, shadow ledger, Record codec/rail, null kinematics, and state scope are separate; physical channel realization is checked and not executed
+lattice_wide: checked and not executed — no fixed physical exchange law, local gravitational stress identification, positive compact mean, general massive matter, live gravity-state compiler, or audit chain is supplied
+RESULT: matched-direction tensor transfer closes the four-component kinematic debit on the declared null source, but the work-dependent selector and physical field-stress identification remain open
+NEXT: resolve the local-gauge-fixed versus quasilocal-gauge-invariant versus common-action energy trilemma, including the prior source mixed-Hessian Ward residual; do not spend another block on abstract batteries or ledgers
+SCOPE: partial-positive full-tensor kinematics plus a narrow future-null collinearity boundary; no selected law, axiom adoption, retention, obligation retirement, or TOE percentage movement
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

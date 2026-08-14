@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/l0_spectral_projectors_k2_k3_2026_08_14.py
+runner_sha256: aac41094fedb750ae2665fa656900f56b56ca6cca78ee00b77a2288d38bd9454
+input_fingerprint_sha256: 51cc21b217b9acba6353348ccbe480edfdacf3671ea9b88c8cdfe82f52fac04c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+external_scientific_inputs: none
+package_local_integrity_reads: runner, note, axiom memo
+measure_boundary: exact Q(√k) projector identities
+negative_scope: comparator measure, not Born
+PASS: thm1-k k=2 and k=3 for the two displayed directions
+PASS: thm1-h2 H^2=2I for (1,1,0)
+PASS: thm1-h3 H^2=3I for (1,1,1)
+PASS: thm2-comp2 P+P-=0 and P++P-=I for k=2
+PASS: thm2-idemp2 P±^2=P± for k=2
+PASS: thm2-comp3 P+P-=0 and P++P-=I for k=3
+PASS: thm2-idemp3 P±^2=P± for k=3
+PASS: thm3-tr2 Tr(ρP±)=(3±√2)/6
+PASS: thm3-tr3 Tr(ρP±)=(3±√3)/6
+PASS: mutation-prod-fails predicate P+P-≠0 must fail
+PASS: mutation-sum-fails predicate traces do not sum to 1 must fail
+PASS: quoted note quotes Qubit and Admissibility
+PASS: boundary not Born, not TOE, no forbidden phrases
+PASS: gates identity gates present
+per_element: checked exactly — H, P± over Q(√2) and Q(√3)
+per_site: checked exactly — two displayed occupancies
+per_mode: checked exactly — complementary PVM and Tr(ρP)
+per_block: checked exactly — measure, not a k-label
+lattice_wide: checked and not executed — not Born
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/physical_cell_cutting_diagonal_parity_cycle782_2026_08_14.py
+runner_sha256: 7896d8b357593d6741786a603958384fac34d4bd20e47442e7485cddb74a2421
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 12.53
+status: ok
+----- stdout -----
+PASS K1 object: 2672 pieces, floor 6, 400 kept, 15800 cuttings of 24, 192 used, 192 chambers, 8 per piece, 8 holders, 0 bad
+PASS K2 sign classes: each of the 8 label classes Y_w holds 24 of the 192 chambers, size failures 0 of 8
+PASS K3 local law 1 / 4 / 4 / 6 / 0 by mismatch pattern, failures 0 of 1536; classes 192 self, 144 and 48 at 4, 96 at 6, 1056 at 0, total 1536
+PASS K4 telescoping: n_w = 24 - 4 a_w - 4 c_w - 6 q_w on every cutting at every label, failures 0 of 126400
+PASS K5 q class: the 6-valued pattern holds exactly at the half-set pieces with phi = w, failures 0 of 1536; 8 fibres of phi of size 12
+PASS K6 parity transport: on the half set, axis 3 within the first 2 steps, the weight parity of phi equals that of the label, failures 0 of 96
+PASS K7 certificate shape: the five clause cells are pairwise disjoint of sizes 6, 6, 2, 4, 2, total 20 chambers, even parity yes
+PASS K8 certificate law: the parity of the certificate count on a piece equals its odd-diagonal half-set value, failures 0 of 192, support 48
+PASS K9 evenness: every cutting holds an even number of odd-diagonal half-set pieces, failures 0 of 15800
+PASS K10 theorem: A2 sums n_w over the odd labels 1, 2, 4, 7, and modulo 4 it is 2 times the odd count and is 0, failures 0 of 15800
+PASS K11 control one: dropping 1 chamber from the certificate breaks the piece parity at exactly 8 pieces, its holders, match yes
+PASS K12 control two: replacing the 6 of the local law by 4 breaks the rule at exactly 96 pairs, the q class, of the 1536
+PASS K13 naming invariance: the second of the 384 namings, 2 per piece, by complement and reversal, gives the same 192 odd values, failures 0
+PASS K14 coupling: the sum of q_w over the four odd labels equals the odd-diagonal half-set count of the cutting, failures 0 of 15800
+census: odd-diagonal half-set count over the 15800 cuttings 0:472 2:1848 4:3384 6:4392 8:3384 10:1848 12:472, sum 15800
+census: A2 over the 15800 cuttings 0:112 4:1176 8:3936 12:5352 16:3936 20:1176 24:112, sum 15800
+TOTAL: PASS=14 FAIL=0
+resource: under 60 s of the 900 s budget, under 250 MB of the 2500 MB budget, 2038 characters
+
+----- stderr -----
+

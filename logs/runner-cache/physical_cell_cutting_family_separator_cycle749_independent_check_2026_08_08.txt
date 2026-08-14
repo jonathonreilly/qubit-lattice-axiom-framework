@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/physical_cell_cutting_family_separator_cycle749_independent_check_2026_08_08.py
+runner_sha256: 88fe01f5413ce66a08bc8ff41f19019c592cf653c52237d83ae8ea1b10b16279
+input_fingerprint_sha256: c9aa346be3f12bef38bd58232b15de5090f872e2fd105ff33393a5426500d7c9
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 8.70
+status: ok
+----- stdout -----
+PASS independent.population  opposite-pivot reconstruction gives 15800 rows, 192 columns, weights 24 and 1975
+PASS independent.targets  the reconstructed four target and its complement reproduce the landed target identity
+PASS independent.all_marked  exact clique enumeration reproduces all 192 landed all-marked carriers
+PASS independent.symmetry_actions  all 48 geometric maps and both extra generators preserve the incidence rows and four target
+PASS independent.group  the independently rebuilt generators close to order 384 and are transitive only with b0 and b1
+PASS independent.complete_census  transitivity and the exact eleven-carrier anchor census give all 132 carriers in six families
+PASS independent.streaming_pair_counts  row-streamed unordered pair counts equal the independently rebuilt dense Gram matrix
+PASS independent.intrinsic_separator  five intrinsic readings form the exact 1,2,4,5,6 refinement chain and pair signatures equal group...
+PASS independent.marked_histogram  all 132 carriers meet exactly 2832 marked rows once and 2832 marked rows three times
+PASS independent.maximum_pairing  every carrier has an eight-edge maximum matching; maxima split 60/72 and the 768-set control give...
+PASS independent.carrier_overlaps  all 8646 unordered carrier pairs have exactly the declared five-value overlap distribution
+PASS independent.overlaps_and_twenty  all 25344 overlaps give five profiles and 6144 distinct semantic weight-twenty carriers in 26 fam...
+PASS independent.weight_eighteen_boundary  the weight-16 lower bound and system-wide overlap cap imply only the conditional k<=4 shape bound
+PASS independent.dependencies  exact current primary and independent receipts from landed Cycles 746 and 747 are bound fail-closed
+PASS independent.cycle748_contract  the landed Cycle 748 primary and opposite-pivot certificates match this reconstruction
+PASS independent.primary_contract  the Cycle 749 primary receipt equals the independent intrinsic-separator derivation
+PASS hostile.primary_status  a failing primary receipt is rejected
+PASS hostile.signature  a changed intrinsic signature is rejected
+PASS hostile.overlap  a reintroduced overlap-three count is rejected
+PASS hostile.cycle748  a stale Cycle 748 census is rejected
+PASS hostile.predecessor_inventory  a predecessor receipt reverting to the half-row inventory is rejected
+PASS hostile.predecessor_completeness  a predecessor receipt losing anchored completeness is rejected
+PASS hostile.predecessor_census  a predecessor Cycle 748 receipt losing one carrier is rejected
+per_element: checked -- all 192 columns enter the independent incidence and pair-signature calculations
+per_site: checked and not executed -- one supplied coordinate four-cube only
+per_mode: checked and not executed -- the finite binary object has no modes
+per_block: checked -- all 15800 cutting rows are streamed into every unordered pair count
+lattice_wide: checked and not executed -- no multicell or continuum claim
+RECEIPT outputs/physical_cell_cutting_family_separator_cycle749_independent_check_2026_08_08_receipt_2026-08-08.json
+TOTAL: PASS=23 FAIL=0
+
+----- stderr -----
+

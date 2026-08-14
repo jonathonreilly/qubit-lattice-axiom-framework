@@ -212,6 +212,12 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
         "scripts/physical_cell_cutting_census_families_cycle748_"
         "independent_check_2026_08_08.py",
     ],
+    # Cycle 749 uses an opposite-pivot row-streaming pair counter to check the
+    # primary dense-Gram intrinsic family separator.
+    "physical_cell_cutting_family_separator_cycle749_note_2026-08-08": [
+        "scripts/physical_cell_cutting_family_separator_cycle749_"
+        "independent_check_2026_08_08.py",
+    ],
     "inter_site_gate_cycle970_bounded_theorem_note_2026-08-09": [
         "scripts/frontier_cycle970_gate_independent_check_2026_08_09.py",
     ],

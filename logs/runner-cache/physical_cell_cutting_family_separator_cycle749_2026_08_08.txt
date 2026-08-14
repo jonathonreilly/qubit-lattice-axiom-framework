@@ -1,11 +1,16 @@
 ===== runner cache v1 =====
 runner: scripts/physical_cell_cutting_family_separator_cycle749_2026_08_08.py
-runner_sha256: c0a339ca541fd535d8df8e7c27a3e28f6e686c8c66f1051c121ec79c139e0e05
-timeout_sec: 400
+runner_sha256: d45b64d8eecff6da792608faf24bd2e66593155176d23e88da77a485bdf48908
+input_fingerprint_sha256: 8ca9f2c42044ec1122bf13b8990238e0cec93a1500634e7f7cafc0eedad3eb8c
+timeout_sec: 900
 exit_code: 0
-elapsed_sec: 95.16
+elapsed_sec: 114.93
 status: ok
 ----- stdout -----
+PASS dependency.cycle748  current primary and independent Cycle 748 certificates bind all 15800 rows and 132 carriers
+PASS hostile.cycle748_inventory  a predecessor receipt reverting to the half-row pair inventory is rejected
+PASS hostile.cycle748_census  a predecessor receipt losing one of the 132 carriers is rejected
+PASS hostile.cycle748_independent  a failing independent predecessor certificate is rejected
 PASS G0  the Gram matrix of the table has constant diagonal 1975
 PASS G1  all 15800 cuttings carry distinct piece supports
 PASS G2  the anchored and the two seeded colour refinements are all discrete
@@ -60,17 +65,24 @@ what each reading of a smallest carrier of four tells apart, by family size:
   the whole list of its pair counts: 6 groups, 12 | 12 | 12 | 24 | 24 | 48
 PASS G30  each reading tells apart all the one before it does and more, in groups 1,2,4,5,6
 PASS G31  no two families share a list of pair counts, so a smallest carrier of four carries its own family label
+PASS G31A  incidence automorphisms preserve pair signatures, so no larger incidence symmetry can merge the six classes
 every one of the 132 meets the 5664 marked cuttings this often: 2832,2832
 PASS G32  that reading is the same for all of them, half those cuttings met once and half met three times
 its largest pair count is reached on 8 pairs covering all 16 pieces, a pairing of the set: largest values {433:60,666:72}, evenly spaced sixteens doing the same 1 of 768
-PASS G33  each smallest carrier of four comes with one pairing of its sixteen pieces, read off the table alone, which evenly spaced sixteens rarely give
+PASS G33  each smallest carrier of four comes with one pairing of its sixteen pieces, read off the table alone; one of the declared 768 control sets has the property
 two smallest carriers share pieces, count by value: {0:4926,1:960,2:1440,4:960,8:360}
 PASS G34  they meet in 0, 1, 2, 4 or 8 pieces, never 3, 5, 6 or 7
-elapsed under 100 s peak memory under 2500 MB
+elapsed under 200 s peak memory under 2500 MB
 PASS G35  the whole runner finishes under 900 seconds inside the printed 2500 MB
-PASS G36  its output stays under 6000 characters
+PASS G36  its output including the evidence footer stays under 8000 characters
+per_element: checked -- all 192 columns enter every intrinsic pair-signature and carrier-overlap calculation
+per_site: checked and not executed -- the theorem has one supplied finite four-cube, not a site family
+per_mode: checked and not executed -- this finite binary incidence theorem contains no modal decomposition
+per_block: checked -- every one of the 15800 cutting rows enters the dense pair-count Gram matrix
+lattice_wide: checked and not executed -- no multicell, infinite-lattice, continuum, or physical claim is made
+RECEIPT outputs/physical_cell_cutting_family_separator_cycle749_2026_08_08_receipt_2026-08-08.json
 
-TOTAL: PASS=37 FAIL=0
+TOTAL: PASS=42 FAIL=0
 
 ----- stderr -----
 

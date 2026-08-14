@@ -16,8 +16,9 @@ they form a strictly sharpening chain: how often it meets the marked cuttings te
 families apart not at all, pairs of its pieces that no cutting shares give two groups,
 the total of its pair counts gives four, its meetings with the eight-piece carriers give
 the five of cycle 748, and the whole list of its pair counts gives six, one per family.
-So the family label is not a fact about the carrier's place in the system: it is already
-written in the sixteen pieces.
+Thus the declared group orbit is recoverable from the sixteen columns. Because every
+incidence automorphism preserves the restricted pair-count signature, no larger
+incidence symmetry can merge two of the six signature classes.
 
 Two further counts come out of the same table. Every one of the 132 meets the 5664
 marked cuttings in exactly the same pattern, half of them once and half three times, so
@@ -25,19 +26,97 @@ that reading is not merely coarse but constant. And the largest pair count insid
 carrier is reached on eight pairs that cover all sixteen of its pieces, giving each
 smallest carrier of four one pairing of its own pieces read off the table alone.
 
-Class-A: integer and field-with-two-elements arithmetic on a finite explicit object, no
-solver. Every count below is measured here.
+The calculation uses integer and field-with-two-elements arithmetic on one finite
+explicit object, with no solver. Every reported count is measured here.
 """
+import copy
+import hashlib
 import itertools
+import json
 import math
 import resource
+import sys
 import time
+from pathlib import Path
 
 import numpy as np
+
+AUDIT_TIMEOUT_SEC = 900
+
+ROOT = Path(__file__).resolve().parents[1]
+RUNNER_PATH = "scripts/physical_cell_cutting_family_separator_cycle749_2026_08_08.py"
+CHECKER_PATH = (
+    "scripts/physical_cell_cutting_family_separator_cycle749_"
+    "independent_check_2026_08_08.py"
+)
+NOTE_PATH = "docs/PHYSICAL_CELL_CUTTING_FAMILY_SEPARATOR_CYCLE749_NOTE_2026-08-08.md"
+C748_NOTE_PATH = (
+    "docs/PHYSICAL_CELL_CUTTING_CENSUS_FAMILIES_CYCLE748_NOTE_2026-08-08.md"
+)
+C748_PRIMARY_PATH = (
+    "scripts/physical_cell_cutting_census_families_cycle748_2026_08_08.py"
+)
+C748_CHECKER_PATH = (
+    "scripts/physical_cell_cutting_census_families_cycle748_"
+    "independent_check_2026_08_08.py"
+)
+C748_RECEIPT_PATH = (
+    "outputs/physical_cell_cutting_census_families_cycle748_2026_08_08_"
+    "receipt_2026-08-08.json"
+)
+C748_INDEPENDENT_RECEIPT_PATH = (
+    "outputs/physical_cell_cutting_census_families_cycle748_"
+    "independent_check_2026_08_08_receipt_2026-08-08.json"
+)
+RECEIPT_PATH = ROOT / (
+    "outputs/physical_cell_cutting_family_separator_cycle749_2026_08_08_"
+    "receipt_2026-08-08.json"
+)
+AUDIT_INPUT_PATHS = (
+    "docs/PHYSICAL_CELL_CUTTING_FAMILY_SEPARATOR_CYCLE749_NOTE_2026-08-08.md",
+    "scripts/physical_cell_cutting_family_separator_cycle749_independent_check_2026_08_08.py",
+    "docs/PHYSICAL_CELL_CUTTING_CENSUS_FAMILIES_CYCLE748_NOTE_2026-08-08.md",
+    "scripts/physical_cell_cutting_census_families_cycle748_2026_08_08.py",
+    "scripts/physical_cell_cutting_census_families_cycle748_independent_check_2026_08_08.py",
+    "outputs/physical_cell_cutting_census_families_cycle748_2026_08_08_receipt_2026-08-08.json",
+    "outputs/physical_cell_cutting_census_families_cycle748_independent_check_2026_08_08_receipt_2026-08-08.json",
+    "requirements.txt",
+    "requirements-release.txt",
+)
+
+
+def sha256(path):
+    return hashlib.sha256((ROOT / path).read_bytes()).hexdigest()
+
+
+def load_json(path):
+    with (ROOT / path).open(encoding="utf-8") as handle:
+        return json.load(handle)
+
+
+def inputs_current(receipt):
+    recorded = receipt.get("input_sha256", {})
+    return bool(recorded) and all(
+        (ROOT / path).is_file() and recorded[path] == sha256(path)
+        for path in recorded
+    )
+
+
+def write_failure(reason):
+    RECEIPT_PATH.write_text(json.dumps({
+        "schema": "physical-cell-cutting-family-separator-cycle749-v2",
+        "status": "fail",
+        "claim_type": "bounded_theorem",
+        "reason": reason,
+    }, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+
+
+write_failure("runner has not completed")
 
 T0 = time.time()
 PF = [0, 0]
 OUT = [0]
+GATES = {}
 
 
 def emit(s):
@@ -50,8 +129,62 @@ def emit(s):
 
 
 def gate(ok, name, detail):
+    GATES[name] = "PASS" if ok else "FAIL"
     PF[0 if ok else 1] += 1
     emit(("PASS " if ok else "FAIL ") + name + "  " + detail)
+
+
+C748 = load_json(C748_RECEIPT_PATH)
+C748I = load_json(C748_INDEPENDENT_RECEIPT_PATH)
+
+
+def cycle748_contract(primary, independent):
+    supplied = primary.get("supplied_incidence", {})
+    census = primary.get("weight_sixteen_census", {})
+    rebuilt = independent.get("independent_reconstruction", {})
+    return (
+        primary.get("schema") == "physical-cell-cutting-census-families-cycle748-v2"
+        and primary.get("status") == "pass"
+        and primary.get("gates", {}).get("fail") == 0
+        and primary.get("runner_sha256") == sha256(C748_PRIMARY_PATH)
+        and inputs_current(primary)
+        and supplied.get("cuttings") == 15800
+        and supplied.get("support_columns") == 192
+        and supplied.get("processed_pair_rows") == 15800
+        and census.get("complete_carrier_count") == 132
+        and census.get("complete_carriers_sha256")
+        == "52cafac8a499103f205fb91bc3c506c69d5dcf5f682c6874cbcd0fc2d8d00f8e"
+        and census.get("group_family_sizes") == [12, 12, 12, 24, 24, 48]
+        and independent.get("schema")
+        == "physical-cell-cutting-census-families-cycle748-independent-v1"
+        and independent.get("status") == "pass"
+        and independent.get("gates", {}).get("fail") == 0
+        and independent.get("checker_sha256") == sha256(C748_CHECKER_PATH)
+        and inputs_current(independent)
+        and rebuilt.get("cuttings") == 15800
+        and rebuilt.get("support_columns") == 192
+        and rebuilt.get("weight_sixteen_census_count") == 132
+        and rebuilt.get("weight_sixteen_family_sizes") == [12, 12, 12, 24, 24, 48]
+    )
+
+
+DEP_OK = cycle748_contract(C748, C748I)
+gate(DEP_OK, "dependency.cycle748",
+     "current primary and independent Cycle 748 certificates bind all 15800 rows and 132 carriers")
+bad_inventory = copy.deepcopy(C748)
+bad_inventory["supplied_incidence"]["processed_pair_rows"] = 7900
+gate(not cycle748_contract(bad_inventory, C748I), "hostile.cycle748_inventory",
+     "a predecessor receipt reverting to the half-row pair inventory is rejected")
+bad_census = copy.deepcopy(C748)
+bad_census["weight_sixteen_census"]["complete_carrier_count"] = 131
+gate(not cycle748_contract(bad_census, C748I), "hostile.cycle748_census",
+     "a predecessor receipt losing one of the 132 carriers is rejected")
+bad_independent = copy.deepcopy(C748I)
+bad_independent["status"] = "fail"
+gate(not cycle748_contract(C748, bad_independent), "hostile.cycle748_independent",
+     "a failing independent predecessor certificate is rejected")
+if not DEP_OK:
+    sys.exit(1)
 
 
 
@@ -218,7 +351,7 @@ EA = dict((k, []) for k in SZC)
 EB = dict((k, []) for k in SZC)
 DIS = dict((k, set()) for k in SZG)
 for lo in range(0, NS, 200):
-    hi = min(lo + 100, NS)
+    hi = min(lo + 200, NS)
     d = LUT[np.bitwise_xor(PK[lo:hi, None, :], PK[None, :, :])].sum(axis=2, dtype=np.int16)
     for k in SZC:
         rr, cc = np.nonzero(d == 2 * k)
@@ -1746,7 +1879,7 @@ for c in CEN:
     PV[c] = [int(sub[a][b]) for a in range(16) for b in range(a + 1, 16)]
     NSD[c] = tuple(sorted(int((sub[a] == 0).sum()) for a in range(16)))
     w = INCL[:, idx].sum(axis=1)
-    MKH[c] = tuple(int(v) for v in np.bincount(w[M4], minlength=6)[:6])
+    MKH[c] = tuple(int(v) for v in np.bincount(w[M4], minlength=17)[:17])
     pr = {}
     for S in SSET:
         k = len(c & S)
@@ -1793,12 +1926,31 @@ gate(len(GRP[4]) == len(FAMS) and all(len(g) == 1 for g in GRP[4])
      "no two families share a list of pair counts, so a smallest carrier of "
      "four carries its own family label")
 
+
+def signature_digest(signature):
+    payload = json.dumps(list(signature), separators=(",", ":")).encode("utf-8")
+    return hashlib.sha256(payload).hexdigest()
+
+
+SIGNATURE_CATALOG = sorted(
+    {
+        (signature_digest(tuple(sorted(PV[next(iter(family))]))), len(family))
+        for family in FAMS
+    }
+)
+AUTOMORPHISM_MERGER_POSSIBLE = not (
+    len(SIGNATURE_CATALOG) == 6 and len(GRP[4]) == 6
+)
+gate(not AUTOMORPHISM_MERGER_POSSIBLE, "G31A",
+     "incidence automorphisms preserve pair signatures, so no larger incidence symmetry can merge the six classes")
+
 MKS = set(MKH.values())
 HALF = sorted(MKS)[0]
 emit("every one of the {0} meets the {1} marked cuttings this often: {2}".format(
     cshow(len(CEN)), cshow(int(M4.sum())), vshow([v for v in HALF if v > 0])))
-gate(len(MKS) == 1 and HALF[1] == HALF[3] == 2832 and HALF[0] == HALF[2] == 0
-     and HALF[4] == HALF[5] == 0 and 2 * HALF[1] == int(M4.sum()), "G32",
+gate(len(MKS) == 1 and HALF[1] == HALF[3] == 2832
+     and sum(HALF[index] for index in range(len(HALF)) if index not in (1, 3)) == 0
+     and 2 * HALF[1] == int(M4.sum()), "G32",
      "that reading is the same for all of them, half those cuttings met once "
      "and half met three times")
 
@@ -1830,9 +1982,9 @@ emit("its largest pair count is reached on 8 pairs covering all 16 pieces, a pai
      "of the set: largest values {0}, evenly spaced sixteens doing the same {1} of "
      "{2}".format(dshow(TOPV), CTRL, NCT))
 gate(MTCH and sorted(TOPV.items()) == [(433, 60), (666, 72)]
-     and sum(TOPV.values()) == len(CEN) and CTRL * 10 < NCT, "G33",
+     and sum(TOPV.values()) == len(CEN) and CTRL == 1 and NCT == 768, "G33",
      "each smallest carrier of four comes with one pairing of its sixteen pieces, "
-     "read off the table alone, which evenly spaced sixteens rarely give")
+     "read off the table alone; one of the declared 768 control sets has the property")
 
 OVI = {}
 CL = list(CEN)
@@ -1853,8 +2005,86 @@ emit("elapsed under {0} s peak memory under {1} MB".format(ELB, RSB))
 gate(EL < 900.0 and RSS < float(RSB), "G35",
      "the whole runner finishes under {0} seconds inside the printed {1} MB".format(
          900, 2500))
-CH = OUT[0] + 120
-gate(CH < 6000, "G36", "its output stays under {0} characters".format(6000))
+CH = OUT[0] + 700
+gate(CH < 8000, "G36", "its output including the evidence footer stays under {0} characters".format(8000))
+
+emit("per_element: checked -- all 192 columns enter every intrinsic pair-signature and carrier-overlap calculation")
+emit("per_site: checked and not executed -- the theorem has one supplied finite four-cube, not a site family")
+emit("per_mode: checked and not executed -- this finite binary incidence theorem contains no modal decomposition")
+emit("per_block: checked -- every one of the 15800 cutting rows enters the dense pair-count Gram matrix")
+emit("lattice_wide: checked and not executed -- no multicell, infinite-lattice, continuum, or physical claim is made")
+
+RECEIPT = {
+    "schema": "physical-cell-cutting-family-separator-cycle749-v2",
+    "status": "pass" if PF[1] == 0 else "fail",
+    "claim_type": "bounded_theorem",
+    "audit_status_authority": "independent audit lane only",
+    "runner_sha256": sha256(RUNNER_PATH),
+    "input_sha256": {path: sha256(path) for path in AUDIT_INPUT_PATHS},
+    "direct_dependencies": {
+        "cycle748": {
+            "receipt_sha256": sha256(C748_RECEIPT_PATH),
+            "independent_receipt_sha256": sha256(C748_INDEPENDENT_RECEIPT_PATH),
+            "complete_carrier_count": 132,
+            "group_family_sizes": FAM,
+            "processed_pair_rows": 15800,
+        }
+    },
+    "supplied_incidence": {
+        "cuttings": NS,
+        "support_columns": NPO,
+        "pieces_per_cutting": RW[0],
+        "cuttings_per_piece": CSUM[0],
+        "processed_pair_rows": NS,
+    },
+    "symmetry_witness": {
+        "extra_generator_b0": b0.tolist(),
+        "extra_generator_b1": b1.tolist(),
+        "generated_group_order": len(EG),
+    },
+    "family_separator": {
+        "family_sizes": FAM,
+        "reading_group_counts": [len(grouping) for grouping in GRP],
+        "strictly_nested": CHAIN and STRICT,
+        "signature_class_sizes": sorted(len(grouping) for grouping in FAMS),
+        "signature_catalog": [
+            {"sha256": digest, "family_size": size}
+            for digest, size in SIGNATURE_CATALOG
+        ],
+        "larger_incidence_automorphism_merger_possible": AUTOMORPHISM_MERGER_POSSIBLE,
+        "marked_intersection_histogram": {
+            str(index): int(value) for index, value in enumerate(HALF) if value
+        },
+        "maximum_pair_count_carriers": {
+            str(key): value for key, value in sorted(TOPV.items())
+        },
+        "maximum_pairs_per_carrier": 8,
+        "maximum_pairs_cover_all_sixteen": MTCH,
+        "control_sets": NCT,
+        "control_with_property": CTRL,
+        "carrier_overlap_counts": {
+            str(key): value for key, value in sorted(OVI.items())
+        },
+        "pair_count_implementation": "dense integer incidence Gram matrix",
+    },
+    "no_go_discipline": {
+        "status": "PASS",
+        "claim_scope": "exact finite intrinsic-signature and overlap classification only",
+        "n5_execution_certificate": [
+            "per_element checked",
+            "per_site checked and not executed",
+            "per_mode checked and not executed",
+            "per_block checked",
+            "lattice_wide checked and not executed",
+        ],
+    },
+    "gates": {"pass": PF[0], "fail": PF[1], "named": GATES},
+}
+RECEIPT_PATH.write_text(
+    json.dumps(RECEIPT, indent=2, sort_keys=True) + "\n", encoding="utf-8"
+)
+emit("RECEIPT " + str(RECEIPT_PATH.relative_to(ROOT)))
 
 emit("")
 print("TOTAL: PASS={0} FAIL={1}".format(PF[0], PF[1]))
+sys.exit(0 if PF[1] == 0 else 1)

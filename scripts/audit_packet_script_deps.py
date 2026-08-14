@@ -75,6 +75,12 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
         "scripts/physical_cell_cutting_census_families_cycle748_"
         "independent_check_2026_08_08.py",
     ],
+    # Cycle 749's sibling checker streams all row pairs after an opposite-pivot
+    # reconstruction and imports no primary implementation symbols.
+    "physical_cell_cutting_family_separator_cycle749_note_2026-08-08": [
+        "scripts/physical_cell_cutting_family_separator_cycle749_"
+        "independent_check_2026_08_08.py",
+    ],
     # Cycle 738's checker independently reconstructs the cutting incidence
     # with the opposite cover pivot and uses a separate exact-weight CNF/SAT
     # encoding, so it deliberately remains outside the primary import closure.

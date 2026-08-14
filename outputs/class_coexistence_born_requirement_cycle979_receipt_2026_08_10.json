@@ -235,7 +235,8 @@
           "CNOT",
           "TOF"
         ],
-        "program_semantics": "one descriptor is one complete program instance",
+        "program_family": "pairwise-distinct-operand semantic quotient; TOF control order canonicalized ascending",
+        "program_semantics": "conditional on P_instance, one descriptor is one complete program instance",
         "site_menu": [
           0,
           1
@@ -2745,22 +2746,46 @@
         "uniform_neighbour_carrier_is_rotation_invariant": true
       }
     },
-    "B_REQUIREMENT_STATUS": {
+    "B_CONDITIONAL_REQUIREMENT": {
+      "axiom_implication_status": "NOT_DERIVED",
       "axiom_quote": "There is one fixed nearest-neighbor admissibility rule, covariant under lattice translations and proper cubic rotations. For each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions.",
-      "cycle978_joint_requirement_status": "OVER_STRONG",
-      "licensed_requirement": "PER_INSTANCE",
+      "conditional_requirement": "PER_INSTANCE",
+      "cross_program_joint_status": "NOT_TRIGGERED_WITHIN_DECLARED_SINGLE_WORD_INSTANCES",
+      "cross_program_probe": {
+        "common_kernel_mismatch": true,
+        "condition": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "local_input": 0,
+        "outputs": {
+          "CNOT": 1,
+          "TOF_OPPOSITE_CONTROLS": 0,
+          "TOF_PERPENDICULAR_CONTROLS": 0
+        },
+        "programs": {
+          "CNOT": "CNOT(+x->C)",
+          "TOF_OPPOSITE_CONTROLS": "TOF(+x,-x->C)",
+          "TOF_PERPENDICULAR_CONTROLS": "TOF(+x,+y->C)"
+        },
+        "scope": "direct finite cross-program fact; whether a common unindexed kernel is required is not decided by this theorem"
+      },
       "premise_id": "P_instance",
-      "premise_status": "supervisor-specified program-instance reading",
-      "reading": "Under the supervisor-specified program-instance reading, each realized program is a separate word containing at most one class. The axiom's one fixed rule applies throughout that instance, but does not require an unindexed kernel to equal truth tables of alternative programs that are never co-realized in one declared instance.",
+      "premise_status": "explicit non-axiom condition from user_goal",
+      "reading": "Conditional on P_instance, each declared program is a separate word containing at most one class, so the selected finite test is PER_INSTANCE. The current axiom text does not choose this indexing or decide the relevance of a cross-program common-kernel test.",
       "selection_rule": "multi_class_programs>0 => JOINT; otherwise => PER_INSTANCE"
     },
-    "C_BORN_STATUS_CORRECTED": {
-      "born_wall_status": "UNMOVED",
+    "C_CONDITIONAL_WEIGHT_TEST": {
+      "born_selection_status": "NOT_ADVANCED_BY_CONDITIONAL_TEST",
+      "conditional_requirement": "PER_INSTANCE",
+      "conditional_requirement_scope": "explicit P_instance condition; not derived from Admissibility",
       "criterion": "For each realized program separately, extend p_i(e) by the selected program's own deterministic kernel and normalized input/neighbour carrier.",
-      "cycle978_zero_over_5_scope": "fixed-input common-kernel JOINT surrogate; not imposed by the axiom on this alternative-program family under P_instance",
+      "cross_program_common_kernel_scope": "direct finite mismatch computed here; its relevance is not decided by this conditional theorem",
       "exclusions": [],
-      "licensed_requirement": "PER_INSTANCE",
-      "licensed_requirement_scope": "conditional on P_instance, the supervisor-specified program-instance reading",
       "neighbour_variation_at_p_one_quarter": true,
       "nonuniform_p_one_quarter_survivors_over_5": "5/5",
       "per_candidate": {
@@ -6931,7 +6956,7 @@
       ],
       "survivors_over_5": "5/5"
     },
-    "D_SURROGATE_SCOPE": {
+    "D_INPUT_SCOPE": {
       "family_declaration": "mu_p=p delta_0+(1-p) delta_1 on the target bit, held common across compared neighbour conditions; sampled at p=0,1/4,1/2,3/4,1",
       "formula": "maximum sensitive-edge TV=|2p-1| for every class representative",
       "nonuniform_test": {
@@ -7508,6 +7533,7 @@
       "active_corruption_controls": {
         "actual_census_drives_reported_requirement": true,
         "all_decisive": true,
+        "cross_program_probe_detects_mismatch": true,
         "dropping_program_breaks_family_count": true,
         "injected_coexistence_flips_requirement_to_joint": true,
         "survivor_count_is_derived_from_rows": true,
@@ -7577,10 +7603,11 @@
         "worlds_with_events": 748
       },
       "census_replay_digest": "4bdb22953055bd4bf1e4e094a4138aa04f63c6e6561e9dbf99d7d12898969771",
+      "current_record_surface_matches": true,
       "determinism_replay": true,
       "full_prefix_digest": "d71745ea3f687078fdaa7b9295eebd06479d4a01824f386e8c6f998825095d88",
       "git_blobs": {
-        "docs/MINIMAL_AXIOMS_2026-06-29.md": "2f5fdd26898f62c17fcabc846761f7785c2eadb1"
+        "docs/MINIMAL_AXIOMS_2026-06-29.md": "bc23300becfe4e4db57153c0e94cfcdf2338da71"
       },
       "literal_audit_input_paths": [
         "docs/MINIMAL_AXIOMS_2026-06-29.md"
@@ -7596,28 +7623,32 @@
         "loaded_from_immutable_git_archive": true
       },
       "prior_cycles_executed": false,
+      "record_structure_used_by_science": false,
       "runtime_budget_seconds": 1400,
-      "runtime_seconds": 46.19708950002678,
+      "runtime_seconds": 79.49852208304219,
       "sha256": {
-        "docs/MINIMAL_AXIOMS_2026-06-29.md": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39"
+        "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
       },
       "sha_pins_match": true,
       "short_replay_digest": "d71745ea3f687078fdaa7b9295eebd06479d4a01824f386e8c6f998825095d88",
-      "stdout_bytes": 1327,
-      "stdout_limit_bytes": 6000
+      "stdout_bytes": 1641,
+      "stdout_limit_bytes": 6000,
+      "tof_control_exchange_actions_equal": true,
+      "tof_control_exchange_gate_objects_equal": false,
+      "tof_control_order_is_semantic_quotient": true
     }
   },
   "checks": {
     "A_COEXISTENCE": true,
-    "B_REQUIREMENT_STATUS": true,
-    "C_BORN_STATUS_CORRECTED": true,
-    "D_SURROGATE_SCOPE": true,
+    "B_CONDITIONAL_REQUIREMENT": true,
+    "C_CONDITIONAL_WEIGHT_TEST": true,
+    "D_INPUT_SCOPE": true,
     "E_CONTROLS": true
   },
-  "claim": "class coexistence census and axiom-faithful compatibility requirement on the landed radius-one, word-length-at-most-one basis-state family",
+  "claim": "class coexistence census and conditional weighting nondiscrimination on a radius-one, word-length-at-most-one basis-state semantic quotient",
   "claim_type": "bounded_theorem",
   "constitutional_effect": "none",
   "cycle": 979,
   "pass": true,
-  "primary_source_sha256": "f75e3f95a021880f118d9a0cafabdd96013baa97a82f6fb988b8c43d9a01d9cf"
+  "primary_source_sha256": "36d087d0e28649a4477f1fd318afe4f637918edddb5bd694b2c2c1847d7fa479"
 }

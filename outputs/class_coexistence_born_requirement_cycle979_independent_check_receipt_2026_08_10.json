@@ -19,10 +19,10 @@
       "primary_pinned_cycle719_commit": "39c74017b870c27c804e3992f2a11e90336476b2",
       "primary_pinned_cycle719_commit_match": true,
       "sha256": {
-        "docs/MINIMAL_AXIOMS_2026-06-29.md": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
-        "logs/runner-cache/frontier_cycle979_class_coexistence_born_requirement_2026_08_10.txt": "b60dda5ad268c032b4682afd0b42740b723c0ea3a8ddb0df479b89bb5838560c",
-        "outputs/class_coexistence_born_requirement_cycle979_receipt_2026_08_10.json": "1b07e765e7afa527f8828b45678782b77ad4c7f225dc860680887b47211a82c1",
-        "scripts/frontier_cycle979_class_coexistence_born_requirement_2026_08_10.py": "f75e3f95a021880f118d9a0cafabdd96013baa97a82f6fb988b8c43d9a01d9cf"
+        "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+        "logs/runner-cache/frontier_cycle979_class_coexistence_born_requirement_2026_08_10.txt": "48345ed8634034665e059219aa9a61c417859132915b4f3bed595d03eb8ea7b2",
+        "outputs/class_coexistence_born_requirement_cycle979_receipt_2026_08_10.json": "848cd10a83bd06b1723508c19a5856957aeeca4c6e3b017ef764c867e1d81da7",
+        "scripts/frontier_cycle979_class_coexistence_born_requirement_2026_08_10.py": "36d087d0e28649a4477f1fd318afe4f637918edddb5bd694b2c2c1847d7fa479"
       },
       "sha_pins_match": true
     },
@@ -2750,13 +2750,35 @@
         "uniform_neighbour_carrier_is_rotation_invariant": true
       }
     },
-    "R2_REFUTE_REQUIREMENT_AND_BORN": {
-      "cycle978_joint_status": "OVER_STRONG",
+    "R2_REFUTE_CONDITIONAL_REQUIREMENT_AND_WEIGHT_TEST": {
+      "axiom_implication_status": "NOT_DERIVED",
+      "conditional_requirement": "PER_INSTANCE",
+      "cross_program_probe": {
+        "common_kernel_mismatch": true,
+        "condition": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "local_input": 0,
+        "outputs": {
+          "CNOT": 1,
+          "TOF_OPPOSITE_CONTROLS": 0,
+          "TOF_PERPENDICULAR_CONTROLS": 0
+        },
+        "programs": {
+          "CNOT": "CNOT(+x->C)",
+          "TOF_OPPOSITE_CONTROLS": "TOF(+x,-x->C)",
+          "TOF_PERPENDICULAR_CONTROLS": "TOF(+x,+y->C)"
+        }
+      },
       "exclusions": [],
-      "licensed_requirement": "PER_INSTANCE",
       "neighbour_variation_at_p_one_quarter": true,
       "premise_id": "P_instance",
-      "premise_status": "supervisor-specified program-instance reading",
+      "premise_status": "explicit non-axiom condition from user_goal",
       "proper_cubic_covariance": true,
       "survivors": [
         "M1_COUNTING",
@@ -2916,9 +2938,9 @@
       }
     },
     "R4_RECEIPT_CACHE_BINDING": {
-      "primary_cache_sha256": "b60dda5ad268c032b4682afd0b42740b723c0ea3a8ddb0df479b89bb5838560c",
-      "primary_receipt_sha256": "1b07e765e7afa527f8828b45678782b77ad4c7f225dc860680887b47211a82c1",
-      "primary_source_sha256": "f75e3f95a021880f118d9a0cafabdd96013baa97a82f6fb988b8c43d9a01d9cf",
+      "primary_cache_sha256": "48345ed8634034665e059219aa9a61c417859132915b4f3bed595d03eb8ea7b2",
+      "primary_receipt_sha256": "848cd10a83bd06b1723508c19a5856957aeeca4c6e3b017ef764c867e1d81da7",
+      "primary_source_sha256": "36d087d0e28649a4477f1fd318afe4f637918edddb5bd694b2c2c1847d7fa479",
       "semantic_headlines_bound": true
     },
     "R5_ACTIVE_CORRUPTION_PROBES": {
@@ -2930,9 +2952,9 @@
           "target": "A_COEXISTENCE"
         },
         {
-          "id": "COEXISTENCE_INJECTED_REQUIREMENT_UNCHANGED",
+          "id": "COEXISTENCE_INJECTED_CONDITIONAL_UNCHANGED",
           "mutation": "inject two classes into one program but retain PER_INSTANCE",
-          "target": "B_REQUIREMENT_STATUS"
+          "target": "B_CONDITIONAL_REQUIREMENT"
         },
         {
           "id": "CLASS_COUNT_CORRUPTED",
@@ -2942,33 +2964,33 @@
         {
           "id": "SURVIVOR_REMOVED",
           "mutation": "remove M5 from the survivor list while leaving its row SURVIVES",
-          "target": "C_BORN_STATUS_CORRECTED"
+          "target": "C_CONDITIONAL_WEIGHT_TEST"
         },
         {
           "id": "EXCLUSION_WITHOUT_WITNESS",
           "mutation": "exclude M1 without a first exclusion witness",
-          "target": "C_BORN_STATUS_CORRECTED"
+          "target": "C_CONDITIONAL_WEIGHT_TEST"
         },
         {
           "id": "SURROGATE_DEPENDENCE_FLIPPED",
-          "mutation": "claim the corrected verdict depends on fixed x",
-          "target": "D_SURROGATE_SCOPE"
+          "mutation": "claim the conditional result depends on fixed x",
+          "target": "D_INPUT_SCOPE"
         },
         {
           "id": "NONUNIFORM_TV_CORRUPTED",
           "mutation": "change the p=1/4 CNOT TV from 1/2 to 1/3",
-          "target": "D_SURROGATE_SCOPE"
+          "target": "D_INPUT_SCOPE"
         },
         {
-          "id": "CACHE_BORN_HEADLINE_CORRUPTED",
+          "id": "CACHE_WEIGHT_HEADLINE_CORRUPTED",
           "mutation": "change the cache survivor headline from 5/5 to 0/5",
           "target": "R4_RECEIPT_CACHE_BINDING"
         }
       ],
       "results": {
-        "CACHE_BORN_HEADLINE_CORRUPTED": true,
+        "CACHE_WEIGHT_HEADLINE_CORRUPTED": true,
         "CLASS_COUNT_CORRUPTED": true,
-        "COEXISTENCE_INJECTED_REQUIREMENT_UNCHANGED": true,
+        "COEXISTENCE_INJECTED_CONDITIONAL_UNCHANGED": true,
         "EXCLUSION_WITHOUT_WITNESS": true,
         "NONUNIFORM_TV_CORRUPTED": true,
         "PROGRAM_REMOVED": true,
@@ -2979,17 +3001,17 @@
     "R6_CONTROLS": {
       "determinism": true,
       "runtime_budget_seconds": 300,
-      "runtime_seconds": 0.12571141694206744,
-      "stdout_bytes": 1102,
+      "runtime_seconds": 0.26130470901262015,
+      "stdout_bytes": 1118,
       "stdout_limit_bytes": 6000
     }
   },
   "checker": "independent refutation checker",
-  "checker_source_sha256": "0d8e8af6e26b8e1841b929d97aed4c1694ba63f3430645365ab044f6069a51c6",
+  "checker_source_sha256": "70a5080c4282fbaedfc75b3cbfdccdf4582b0f6fd654374705b37e75e0b7b6ce",
   "checks": {
     "R0_PRIMARY_AST_AND_PINS": true,
     "R1_INDEPENDENT_COEXISTENCE_CENSUS": true,
-    "R2_REFUTE_REQUIREMENT_AND_BORN": true,
+    "R2_REFUTE_CONDITIONAL_REQUIREMENT_AND_WEIGHT_TEST": true,
     "R3_NONUNIFORM_INPUT": true,
     "R4_RECEIPT_CACHE_BINDING": true,
     "R5_ACTIVE_CORRUPTION_PROBES": true,

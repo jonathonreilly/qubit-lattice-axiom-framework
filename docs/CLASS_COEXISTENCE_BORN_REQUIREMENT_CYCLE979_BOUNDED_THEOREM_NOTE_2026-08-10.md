@@ -1,4 +1,4 @@
-# Class coexistence and the axiom-faithful Born requirement — Cycle 979
+# Class coexistence and conditional weighting nondiscrimination — Cycle 979
 
 Date: 2026-08-10
 
@@ -11,13 +11,13 @@ Claim type: bounded_theorem
 Actual current surface: bounded support. On the declared target-centred
 radius-one, word-length-at-most-one basis-state family, the three
 neighbour-sensitive classes are alternatives: no complete program instance
-contains witnesses from more than one class. Under the supervisor-specified
-program-instance reading, the Admissibility axiom therefore licenses
-per-instance compatibility on this family, not the Cycle-978 joint
-common-kernel requirement. All five declared finite event weightings survive
-the licensed test. This is not a Born-rule derivation, an axiom-level
-probability-law construction, or a result on the full continuous `M_2(C)`
-possibility domain.
+contains witnesses from more than one class. Conditional on the explicit
+non-axiom premise `P_instance`, this selects a per-instance test, and all five
+declared finite event weightings survive it. The Admissibility axiom does not
+choose that program indexing; the relevance of a cross-program common-kernel
+test remains open. This is a nondiscrimination result, not Born compatibility,
+a Born-rule derivation, an axiom-level probability-law construction, or a
+result on the full continuous `M_2(C)` possibility domain.
 
 Primary runner:
 
@@ -48,21 +48,27 @@ The result declares every load-bearing family:
 |---|---|
 | spatial family | one target-centred radius-one star: centre `C` and neighbours `(+x,-x,+y,-y,+z,-z)` |
 | local basis family | `{0,1}` at each of the seven sites |
-| program family | every distinct word of length zero or one over `I`, `X`, ordered `CNOT`, and unordered-control `TOF`, with distinct operands on the seven sites |
-| program-instance reading | one descriptor is one complete program instance; an identity has zero gate steps and every other program has exactly one gate step |
+| program family | the pairwise-distinct-operand semantic quotient of length-zero/one words over `I`, `X`, ordered `CNOT`, and `TOF`; TOF control order is canonicalized because the two orders have identical Boolean action although the underlying gate objects are unequal |
+| program-instance condition | conditional premise `P_instance`: one descriptor is one complete program instance; an identity has zero gate steps and every other program has exactly one gate step |
 | weighting family | `M1_COUNTING`, `M2_PER_WORLD_UNIFORM`, `M3_OCCUPATION_WEIGHTED`, `M4_FORMATION_LIFETIME`, `M5_FORMATION_MOMENT` |
 | target-input family | `mu_p=p delta_0+(1-p) delta_1`, common across compared neighbour conditions; the runner samples `p=0,1/4,1/2,3/4,1` and derives the exact `|2p-1|` law on each representative |
 | neighbour family | all `2^6=64` basis conditions; all one-edge comparisons and spectator contexts |
 
-Finite event caps are unchanged from the reconstructed Cycle-878/Cycle-978
-census: two fixture banks, source counts two through five, horizon 16,384,
+Finite event caps are inherited from the main-contained pinned Cycle-719
+snapshot: two fixture banks, source counts two through five, horizon 16,384,
 and record-register cap 64. The primary rebuilds 92,260 event atoms in 748
 worlds, including 164 formed worlds. The prior Cycle-975 and Cycle-978
 runners are neither imported nor executed.
 
-## A_COEXISTENCE — exact per-program census
+The current-main
+[`Cycle-977 witness-family note`](WITNESS_FAMILY_COMPLETENESS_CYCLE977_BOUNDED_THEOREM_NOTE_2026-08-10.md)
+already establishes this 155-member semantic quotient and the same class
+census. The present runner recomputes every row; Cycle 977 is provenance and a
+consistency comparator, not an executable premise or novelty claim.
 
-The landed constructor family is exactly
+## A_COEXISTENCE — exact per-descriptor census
+
+The declared semantic quotient is exactly
 
 ```text
 1 identity + 7 X + 42 ordered CNOT + 105 TOF = 155 complete programs.
@@ -104,14 +110,14 @@ Every other program has the empty class list. The receipt enumerates those
 identity, every `X`, every `CNOT` not directed from a neighbour into `C`, and
 every `TOF` not having two neighbours control target `C`.
 
-This settles the challenge on the declared landed family: **the three classes
-are alternative programs, not coexisting witnesses inside one program
-instance.** The census is data, not an integrity-gate expectation: the
+Thus, conditional on `P_instance`, **the three classes are alternative
+programs, not coexisting witnesses inside one program instance.** The census
+is data, not an integrity-gate expectation: the
 requirement selector would return `JOINT` if any reconstructed program row
 contained more than one class, and its injected-coexistence control confirms
 that branch.
 
-## B_REQUIREMENT_STATUS — what the axiom licenses
+## B_CONDITIONAL_REQUIREMENT — what the census selects under `P_instance`
 
 The exact Admissibility language used is:
 
@@ -119,30 +125,27 @@ The exact Admissibility language used is:
 
 > For each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions.
 
-The applied reading is the instance-local reading specified by the supervisor
-challenge: one complete descriptor is one substrate program instance, and the
-one fixed rule is fixed throughout that instance. It must apply at every site
-where that program is realized and respect translation/rotation covariance.
-But the declared
-family contains alternative complete gate words; it never places a CNOT word
-and either TOF word into the same program at different sites or steps. A
-program label is not a nearest-neighbour condition, so the axiom does not
-require one unindexed fixed-`x` kernel to equal the distinct truth tables of
-several programs that are not co-realized.
-
-Therefore, under that specified reading:
+`P_instance` is an explicit condition from the user goal, not a consequence of
+those sentences: one complete descriptor is treated as one substrate program
+instance, and the finite compatibility test is scoped within that descriptor.
+The declared family never places a CNOT word and either TOF word into the same
+program at different sites or steps. Therefore, conditional on `P_instance`:
 
 ```text
-licensed requirement: PER_INSTANCE
-Cycle-978 JOINT requirement on this family: OVER-STRONG
+conditional requirement: PER_INSTANCE
+axiom implication status: NOT_DERIVED
+cross-program JOINT trigger inside one declared instance: NOT_TRIGGERED
 ```
 
-This conclusion is bounded to the declared program family. A future landed
-family containing a complete program with more than one class would trigger
-the other branch of the same criterion: the co-realized classes would be
-tested jointly inside that program.
+The runner also computes the cross-program fact directly, without relying on
+an open PR: at `x=0` and `n=(1,0,0,0,0,0)`, `CNOT(+x->C)` outputs one while
+`TOF(+x,+y->C)` and `TOF(+x,-x->C)` output zero. Whether the one fixed
+Admissibility rule requires those alternative descriptors to share an
+unindexed kernel is not decided by the current axiom text or by this theorem.
+A future declared family containing a complete program with more than one
+class would instead select the conditional `JOINT` branch within `P_instance`.
 
-## C_BORN_STATUS_CORRECTED — survivors under the licensed requirement
+## C_CONDITIONAL_WEIGHT_TEST — five weights are not distinguished
 
 For a realized program `g`, candidate event law `p_i(e)`, target-input law
 `mu_p(x)`, uniform neighbour carrier `q(n)=1/64`, and its own landed Boolean
@@ -158,12 +161,12 @@ landed program truth tables agrees on all `2*64` configurations with a
 separately implemented Boolean descriptor evaluation. The three class sets
 are each one complete orbit of the 24 proper cubic rotations, and the uniform
 neighbour carrier is rotation-invariant. At `p=1/4`, every class also has a
-strictly positive neighbour-variation witness. An exclusion is licensed only
-by a negative event weight, a zero total, a failed event marginal, missing
+strictly positive neighbour-variation witness. The conditional test excludes
+a vector only for a negative event weight, a zero total, a failed event marginal, missing
 required neighbour variation, failed proper-cubic closure, or a concrete
 program/configuration mismatch. None occurs.
 
-| weighting | licensed per-instance verdict | first exclusion witness |
+| weighting | conditional per-instance verdict | first exclusion witness |
 |---|---|---|
 | `M1_COUNTING` | SURVIVES | none |
 | `M2_PER_WORLD_UNIFORM` | SURVIVES | none |
@@ -172,28 +175,23 @@ program/configuration mismatch. None occurs.
 | `M5_FORMATION_MOMENT` | SURVIVES | none |
 
 ```text
-corrected survivors/5: 5/5
-Born wall: UNMOVED
+conditional-test survivors/5: 5/5
+Born selection status: NOT_ADVANCED_BY_CONDITIONAL_TEST
 ```
 
-The Cycle-978 disagreement remains a correct cross-program truth-table fact:
-at `x=0` and `n=(1,0,0,0,0,0)`, `CNOT(+x->C)` outputs one while
-`TOF(+x,+y->C)` and `TOF(+x,-x->C)` output zero. It is not an exclusion
-witness under `PER_INSTANCE`, because those descriptors are three alternative
-complete programs. Cycle 978's `0/5` is therefore scoped to a joint
-common-kernel requirement that the axioms do not impose on this declared
-alternative-program family under the supervisor-specified program-instance
-reading.
+The direct cross-program disagreement is not an exclusion witness inside the
+conditional `PER_INSTANCE` test, because the descriptors are three alternative
+complete programs. The open Cycle-978 PR is context only and has no authority
+or load-bearing role here. Five survivors do not derive, prefer, or establish
+compatibility with Born weights; they say only that this factorized conditional
+test distinguishes none of the five finite event weightings. A full
+nearest-neighbour probability law, the continuous `M_2(C)` domain, and a
+local-to-event/Born lift remain open.
 
-Five survivors do not derive or prefer Born weights. The wall is “unmoved”
-because the licensed compatibility test distinguishes none of the five
-finite event weightings. A full nearest-neighbour probability law, the
-continuous `M_2(C)` domain, and a local-to-event/Born lift remain open.
+## D_INPUT_SCOPE — beyond the fixed-input representative
 
-## D_SURROGATE_SCOPE — beyond the fixed-input representative
-
-The corrected `5/5` verdict does not depend on Cycle 978's fixed `x=0`
-surrogate. The product-extension marginal identity holds for every normalized
+The conditional `5/5` result does not depend on a fixed `x=0` surrogate. The
+product-extension marginal identity holds for every normalized
 `mu_p`. The primary checks the two fixed endpoints, the uniform boundary, and
 two non-uniform interior inputs.
 
@@ -223,10 +221,22 @@ The exhaustive class results are:
 This independently reproduces the Cycle-975 family law `TV=|2p-1|` on all
 three representatives. At `p=1/2`, the output marginal is uniform and the TV
 vanishes, while compatibility remains `5/5`; input visibility and weighting
-compatibility are distinct questions. Thus C's survivor verdict is
-surrogate-independent inside the declared target-bit simplex, while the
-axiom's required visible variation selects the non-uniform portion for these
-particular XOR-form representatives.
+compatibility are distinct questions. Thus C's conditional result is
+input-independent inside the declared target-bit simplex. The selected
+non-uniform samples exhibit the Admissibility memo's required neighbour
+variation for these XOR-form representatives; they do not construct the
+axiom-level probability law.
+
+### Current Record boundary
+
+The primary pins the current post-simplification Record section: records form;
+when present, a record locks exactly one admissible local possibility; at most
+one permanent record occupies a site; only record content is readable; and an
+empty site cannot be read. It also guards that the current section does not
+contain finite additivity or `I(empty)`. No part of the science here uses
+Record, a scalar `I`, finite additivity, `I(empty)=0`, a Born weighting, or a
+readout-selection rule. The event-vector reconstruction and finite Boolean
+test are separate conditional machinery.
 
 ## Proof obligation graph
 
@@ -235,9 +245,9 @@ particular XOR-form representatives.
 | A1 enumerate every declared complete program | discharged | exact 155 rows, kind counts `1/7/42/105`, stable digest |
 | A2 attach every neighbour-sensitive class to its containing program | discharged | exhaustive truth-table edge scan; `134/6/12/3` census; three complete 24-rotation class orbits |
 | A3 decide whether any one program has multiple classes | discharged | zero multi-class rows; maximum class count one |
-| B1 quote and apply the Admissibility axiom | discharged | two exact sentences pinned from the minimal-axiom memo; outcome-neutral requirement selector |
+| B1 separate the conditional test from the Admissibility axiom | discharged | two exact sentences pinned from the current memo; `P_instance` marked non-axiom; implication status `NOT_DERIVED` |
 | C1 rebuild and validate the five event weightings | discharged | 92,260 events; every vector nonnegative and normalizable |
-| C2 apply only the licensed compatibility test | discharged | exact per-program product marginal, 155 Boolean-kernel checks, `p=1/4` variation, and proper-cubic closure; `5/5` |
+| C2 apply the conditional per-instance test | discharged | exact product marginal, 155 Boolean-kernel checks, `p=1/4` variation, and proper-cubic closure; `5/5` nondiscrimination |
 | D1 test beyond fixed input | discharged | `p=1/4`; all three classes give `TV=1/2=|2p-1|` and `5/5` |
 | M1 full axiom-level probability law and Born lift | open | not supplied by the finite program/product family |
 
@@ -254,16 +264,14 @@ that transitive bundle therefore cannot affect Cycle 979 without changing the
 Cycle-979 source pin itself. The reconstructed event-weight vectors inherit
 Cycle 719's bounded, audit-unset authority state; the Boolean program census
 itself does not depend on that event-history import. The primary deterministic
-replay agrees on the short event prefix and complete per-program census. Its
-pinned run completed in 46.197 seconds (47.93 seconds including the canonical
-cache envelope) with 1,327 stdout
-bytes:
+replay agrees on the short event prefix and complete per-program census. The
+canonical cache refresh records the exact runtime and stdout byte count.
 
 ```text
 A_COEXISTENCE PASS
-B_REQUIREMENT_STATUS PASS
-C_BORN_STATUS_CORRECTED PASS
-D_SURROGATE_SCOPE PASS
+B_CONDITIONAL_REQUIREMENT PASS
+C_CONDITIONAL_WEIGHT_TEST PASS
+D_INPUT_SCOPE PASS
 E_CONTROLS PASS
 TOTAL: PASS=5 FAIL=0
 ```
@@ -274,20 +282,20 @@ the primary cache's declared-input fingerprint. The
 checker parses the primary as AST without importing or executing it and
 imports neither Cycle 719 nor the Cycle-975/Cycle-978 runners. It reconstructs
 all Boolean descriptors, every per-program class row, all 24 proper rotations,
-the requirement implication, and the `p=1/4` TV values. Receipt and cache headlines are
+the conditional selection rule, direct cross-program mismatch, and the
+`p=1/4` TV values. Receipt and cache headlines are
 semantically bound to the canonical cache envelope's source and input pins.
 
 Its refutation specification actively corrupts eight decisive claims:
-program count, injected coexistence with an unchanged requirement, class
-count, survivor count, exclusion without a witness, surrogate dependence,
-non-uniform TV, and the cache Born headline. All eight corruptions are
-rejected. The checker completed in 0.126 seconds (0.20 seconds including the
-canonical cache envelope) with 1,102 stdout bytes:
+program count, injected coexistence with an unchanged conditional selection,
+class count, survivor count, exclusion without a witness, input dependence,
+non-uniform TV, and the cache weight-test headline. All eight corruptions are
+rejected. The canonical cache records its exact runtime and stdout byte count.
 
 ```text
 R0_PRIMARY_AST_AND_PINS PASS
 R1_INDEPENDENT_COEXISTENCE_CENSUS PASS
-R2_REFUTE_REQUIREMENT_AND_BORN PASS
+R2_REFUTE_CONDITIONAL_REQUIREMENT_AND_WEIGHT_TEST PASS
 R3_NONUNIFORM_INPUT PASS
 R4_RECEIPT_CACHE_BINDING PASS
 R5_ACTIVE_CORRUPTION_PROBES PASS
@@ -304,9 +312,9 @@ coexistence control verifies the unobserved branch.
 
 **Gate result:** a broad claim that the singular axiom can never impose a
 cross-program rule is not made. The retained disposition is the exact finite
-census plus the requirement selected under the supervisor-specified
-program-instance reading. Longer programs, simultaneous spatial embedding,
-and a global program-aggregation law remain open.
+census plus a test explicitly conditional on non-axiom premise `P_instance`.
+Longer programs, simultaneous spatial embedding, and a global
+program-aggregation law remain open.
 
 ### N1 — alternative attacks on the bounded census
 
@@ -316,14 +324,17 @@ and a global program-aggregation law remain open.
 | defect in the landed gate evaluator | `ATTEMPTED` | all 155 `2*64` truth tables match a separately implemented Boolean evaluator |
 | overlap hidden by the class predicates | `ATTEMPTED` | CNOT and TOF gate kinds are disjoint; the TOF axial-control pairs partition exactly into 12 perpendicular and 3 opposite pairs |
 | missing proper-cubic images | `ATTEMPTED` | each class is one complete orbit under all 24 proper cubic rotations |
-| longer or spatially combined programs | `ATTEMPTED` as a scope attack | those objects are absent from the declared landed family and are explicitly left open, so they defeat a global no-go but not this finite census |
+| hidden failure of the factorized event-weight route | `ATTEMPTED` | all 92,260 event atoms are explicitly marginalized for each of five normalized nonnegative vectors; all five remain indistinguishable under the conditional test |
+
+Longer programs and spatially combined programs were not executed and remain
+open; they are not counted as attempted attacks.
 
 ### N2 — wall independence
 
-There is one explicit interpretive condition, `P_instance`: the supervisor's
-reading that one complete descriptor is one substrate program instance and
-the fixed rule is fixed within that instance. No collection of independent
-walls is claimed, so there is no pairwise wall set to inflate or collapse.
+There is one explicit non-axiom condition, `P_instance`: one complete
+descriptor is treated as one substrate program instance. No collection of
+independent walls is claimed, so there is no pairwise wall set to inflate or
+collapse.
 
 ### N3 — hidden-condition scan
 
@@ -337,17 +348,20 @@ bookkeeping evidence, not scientific authority.
 
 | comparator | comparator residual | residual used here | match |
 |---|---|---|---|
-| Cycle 978 / PR #6104 | no common fixed-`x` kernel for three distinct class representatives | that same cross-program JOINT residual, retained as true but inapplicable under `P_instance` | yes |
+| direct finite cross-program probe | outputs `1,0,0` for the three representatives at the displayed `(x,n)` | recomputed in both primary and independent runners; relevance left open outside `P_instance` | yes |
+| Cycle 978 / open PR #6104 | proposed common-kernel comparison | context only; zero authority and zero load-bearing witness weight | not used |
 | Cycle 975 / PR #6084 | target-input dependence `TV=|2p-1|` | the same law, independently reproduced at `p=1/4` | yes |
+| Cycle 977 / PR #6087 | current-main 155-member quotient and `134/6/12/3` census | independently recomputed here | yes |
 | Cycle 719 bounded theorem | finite event/controller and gate semantics | event-vector and landed-gate executable import only | yes, with upstream conditionality retained |
 
 ### N5 — rhetoric and resolution
 
 The primary cache lands substantive `per_element`, `per_site`, `per_mode`,
 `per_block`, and `lattice_wide` lines. It checks five event vectors, the centre
-readout under all six neighbour positions and operand placements, and all 155
-finite programs. It does not execute continuous modes or a lattice-wide
-embedding, and no sentence promotes those unexecuted scopes to a negative.
+readout under all six neighbour positions and spectator contexts, all 155
+semantic-quotient programs, and proper-cubic orbit closure on the radius-one
+star. It does not execute continuous modes or an infinite lattice embedding,
+and no sentence promotes those unexecuted scopes to a negative.
 
 ### N6 — partial-closure paths
 
@@ -360,38 +374,29 @@ finite census and `P_instance` result remain useful without closing them.
 
 The strongest objection is that “one fixed rule” might mean one global
 unindexed substrate law shared across alternative program descriptors. Then
-the Cycle-978 disagreement is decisive unless the local state encodes a
-program selector or a covariant aggregation law is constructed. This is a
-live mechanism outside `P_instance`; it blocks any broader no-go and is why
-every requirement statement here is explicitly conditional on the
-supervisor-specified program-instance reading.
+the direct `1,0,0` cross-program disagreement is decisive unless the local
+state encodes a program selector or a covariant aggregation law is
+constructed. This remains live outside `P_instance`; it blocks any broader
+no-go and is why every requirement statement here is explicitly conditional.
 
 ### N8 — cross-cycle echo
 
-Cycle 978 supplies the global-common-kernel objection rather than a verdict
-against `P_instance`. Cycle 975 shows that fixed-input blindness is repaired
-by non-uniform inputs, not by selecting a weighting. Cycle 719 supplies only
-the bounded executable substrate. None of those earlier surfaces closes the
-longer-program or global-aggregation routes, and this note does not claim that
-they do.
+The open Cycle-978 PR echoes the global-common-kernel objection but supplies no
+authority here; the mismatch is recomputed directly. Cycle 977 already owns
+the finite witness-family census. Cycle 975 shows that fixed-input blindness
+is repaired by non-uniform inputs, not by selecting a weighting. Cycle 719
+supplies only the bounded executable substrate. None closes the longer-program
+or global-aggregation routes.
 
 ## Review record and hard landing condition
 
-Cycle 978's joint fixed-input result is kept as a true cross-program
-comparison but is dropped as the axiom-faithful exclusion criterion after the
-coexistence census. The bounded scope of this branch ends at the declared
-155-program finite family and the five reconstructed finite event vectors; no
-full-domain Born-law or longer-program conclusion is proposed.
-
-Parallel adversarial review initially identified an implicit program-instance
-premise, a live transitive-import cache gap, incomplete covariance/variation
-gates, overly broad per-site wording, and a missing Cycle-719 authority edge.
-The landed fixes bind `P_instance` in prose and machine surfaces, load the
-Cycle-719 bundle from the immutable base commit, check all 155 kernels and all
-24 proper rotations, gate on the non-uniform variation witness, narrow N5, and
-add the authority edge. Targeted re-review of only those fixes was clean in
-the computation/proof/import, physics/retention/no-go, and governance/audit
-lenses.
+The bounded scope ends at the declared 155-member semantic quotient and five
+reconstructed finite event vectors. Review made `P_instance` explicitly
+non-axiomatic, moved the cross-program mismatch into both runners, bound the
+current Record surface and its non-use, identified the already-landed
+Cycle-977 census, and narrowed the conclusion to conditional
+nondiscrimination. No full-domain Born-law or longer-program conclusion is
+proposed.
 
 The independent refutation checker is load-bearing and must be present in the
 restricted packet. The hard co-landing mapping is:
@@ -412,13 +417,18 @@ surface is part of that unit.
   supplies event/controller construction and gate semantics; its upstream
   conditionality is inherited for the five event vectors.
 - **Axiom text:** the current minimal-axiom memo supplies only the two quoted
-  Admissibility sentences.
+  Admissibility sentences and the guarded current Record boundary; Record is
+  not used by the science.
+- **Current-main provenance:** Cycle 977 owns the already-landed 155-member
+  semantic quotient and class census; every row is recomputed here.
 - **Comparator only:** Cycle 975 (PR #6084) names the `|2p-1|` input family;
-  Cycle 978 (PR #6104) names the fixed-input common-kernel comparison. Neither
-  prior runner is executed or treated as a verdict.
+  Cycle 978 (open PR #6104) names a proposed common-kernel comparison. Neither
+  prior runner is executed or treated as a verdict, and the cross-program
+  mismatch is recomputed here.
 - **Derived here:** all 155 per-program rows, the exact co-occurrence census,
-  the licensed requirement, five corrected survivors, and the non-uniform
-  input test on all three representatives.
+  the conditional selection under `P_instance`, the direct cross-program
+  mismatch, five nondiscriminated weights, and the non-uniform input test on
+  all three representatives.
 - **Open:** longer and multi-step programs, simultaneous spatial embedding of
   multiple classes, stochastic class aggregation, full continuous `M_2(C)`
   measures, and the local-to-event/Born lift.
@@ -431,15 +441,15 @@ primitive enters the proof.
 ```yaml
 trace_class: direct_blocker_closure
 target_claim_id: null
-target_blocker_text: "do the three displayed witness classes coexist inside one landed program instance, thereby licensing Cycle 978's joint common-kernel requirement?"
+target_blocker_text: "conditional on P_instance, do the three displayed witness classes coexist inside one declared one-word program, and does the resulting per-instance test distinguish any of five finite weights?"
 source_of_blocker_text: user_goal
 reachability_to_target: closes
 artifact_role: runner_certificate
-next_trace_action: "submit the bounded census and corrected compatibility verdict to independent audit; do not extrapolate to longer programs or a full Born law"
+next_trace_action: "submit the bounded conditional nondiscrimination result to independent audit; leave global indexing, longer programs, and a full Born law open"
 actual_current_surface_status: bounded-support
 target_claim_type: bounded_theorem
-claim_type_reason: "exact finite census and compatibility theorem on a declared radius-one, word-length-at-most-one basis-state program family"
-conditional_surface_status: "exact on the declared 155-program radius-one, word-length-at-most-one basis-state family and five reconstructed finite event weightings"
+claim_type_reason: "exact finite census and conditional nondiscrimination theorem on a declared radius-one, word-length-at-most-one basis-state semantic quotient"
+conditional_surface_status: "conditional on non-axiom premise P_instance; exact on the declared 155-member semantic quotient and five reconstructed finite event weightings"
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: false

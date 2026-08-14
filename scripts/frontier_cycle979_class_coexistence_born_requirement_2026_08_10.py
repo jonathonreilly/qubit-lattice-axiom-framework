@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
-"""Cycle 979: coexistence census and the axiom-faithful Born requirement.
+"""Cycle 979: coexistence census and conditional weighting nondiscrimination.
 
 The finite event vectors and the complete radius-one, word-length-at-most-one
 basis-state program family are rebuilt from the landed Cycle-719 substrate.
-Under the supervisor-specified program-instance reading, the compatibility
-requirement is selected from the reconstructed per-program class census: a
-program containing multiple classes licenses JOINT, while an alternative-
-program family licenses PER_INSTANCE. Integrity checks validate that
-implication in either direction; they do not demand either outcome.
+Under the explicit non-axiom condition P_instance, the compatibility test is
+selected from the reconstructed per-program class census: a program containing
+multiple classes selects JOINT, while an alternative-program family selects
+PER_INSTANCE.  The current axioms do not choose that program indexing.  The
+finite test therefore establishes nondiscrimination, not Born compatibility.
 """
 
 from __future__ import annotations
@@ -72,10 +72,10 @@ AUDIT_INPUT_PATHS = (
 )
 EXPECTED_INPUT_SHA256 = {
     AUDIT_INPUT_PATHS[0]:
-        "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
+        "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
 }
 EXPECTED_INPUT_BLOBS = {
-    AUDIT_INPUT_PATHS[0]: "2f5fdd26898f62c17fcabc846761f7785c2eadb1",
+    AUDIT_INPUT_PATHS[0]: "bc23300becfe4e4db57153c0e94cfcdf2338da71",
 }
 AXIOM_SENTENCES = (
     "There is one fixed nearest-neighbor admissibility rule, covariant under lattice\n"
@@ -190,6 +190,9 @@ def input_controls() -> dict:
         blob_rows[rel] = git_blob(payload)
         texts[rel] = payload.decode("utf-8")
     axiom_text = texts[AUDIT_INPUT_PATHS[0]]
+    record_surface = axiom_text.split(
+        "### Record / Fixed Reality", 1
+    )[1].split("## Qualification", 1)[0]
     pinned_core_payload = subprocess.run(
         ["git", "show", f"{PINNED_CYCLE719_COMMIT}:{PINNED_CYCLE719_CORE}"],
         cwd=ROOT,
@@ -208,6 +211,19 @@ def input_controls() -> dict:
         name for name in sys.modules
         if any(name.endswith(blocked) for blocked in BLOCKLIST_PROVENANCE_MODULES)
     )
+    tof_forward = K.A.tof(1, 2, 0)
+    tof_reversed = K.A.tof(2, 1, 0)
+    tof_actions_equal = all(
+        K.A.apply_semantic(
+            tuple((mask >> wire) & 1 for wire in range(SITE_COUNT)),
+            (tof_forward,),
+        )
+        == K.A.apply_semantic(
+            tuple((mask >> wire) & 1 for wire in range(SITE_COUNT)),
+            (tof_reversed,),
+        )
+        for mask in range(1 << SITE_COUNT)
+    )
     result = {
         "literal_source_read_count": len(literal_paths),
         "literal_audit_input_paths": list(literal_paths),
@@ -219,6 +235,19 @@ def input_controls() -> dict:
         "git_blobs": blob_rows,
         "axiom_sentences": list(AXIOM_SENTENCES),
         "axiom_sentences_match": all(row in axiom_text for row in AXIOM_SENTENCES),
+        "current_record_surface_matches": (
+            "Records form." in record_surface
+            and "a record locks exactly one admissible local possibility" in record_surface
+            and "A site with no record cannot be read." in record_surface
+            and "finite additivity" not in record_surface
+            and "I(empty)" not in record_surface
+        ),
+        "record_structure_used_by_science": False,
+        "tof_control_exchange_gate_objects_equal": tof_forward == tof_reversed,
+        "tof_control_exchange_actions_equal": tof_actions_equal,
+        "tof_control_order_is_semantic_quotient": (
+            tof_actions_equal and tof_forward != tof_reversed
+        ),
         "pinned_cycle719_certificate": {
             "commit": PINNED_CYCLE719_COMMIT,
             "core_path": PINNED_CYCLE719_CORE,
@@ -238,6 +267,9 @@ def input_controls() -> dict:
         and sha_rows == EXPECTED_INPUT_SHA256
         and blob_rows == EXPECTED_INPUT_BLOBS
         and result["axiom_sentences_match"]
+        and result["current_record_surface_matches"]
+        and result["record_structure_used_by_science"] is False
+        and result["tof_control_order_is_semantic_quotient"]
         and pinned_core_sha == PINNED_CYCLE719_CORE_SHA256
         and pinned_core_blob == PINNED_CYCLE719_CORE_BLOB
         and base_is_ancestor
@@ -752,7 +784,13 @@ def program_class_census() -> dict:
             "site_menu": [0, 1],
             "gate_menu": ["I", "X", "CNOT", "TOF"],
             "word_length": "0 or 1",
-            "program_semantics": "one descriptor is one complete program instance",
+            "program_family": (
+                "pairwise-distinct-operand semantic quotient; TOF control order "
+                "canonicalized ascending"
+            ),
+            "program_semantics": (
+                "conditional on P_instance, one descriptor is one complete program instance"
+            ),
         },
         "program_count": len(rows),
         "kind_counts": dict(sorted(Counter(row["gate_kind"] for row in rows).items())),
@@ -779,38 +817,66 @@ def requirement_from_program_rows(rows: list[dict]) -> str:
     return "JOINT" if any(len(row["classes"]) > 1 for row in rows) else "PER_INSTANCE"
 
 
+def cross_program_probe() -> dict:
+    descriptors = {
+        "CNOT": ("CNOT", 1, 0),
+        "TOF_PERPENDICULAR_CONTROLS": ("TOF", 1, 3, 0),
+        "TOF_OPPOSITE_CONTROLS": ("TOF", 1, 2, 0),
+    }
+    local_input = 0
+    condition = (1, 0, 0, 0, 0, 0)
+    outputs = {
+        class_name: output_bit(descriptor, local_input, condition)
+        for class_name, descriptor in descriptors.items()
+    }
+    return {
+        "local_input": local_input,
+        "condition": list(condition),
+        "programs": {
+            class_name: word_name(descriptor)
+            for class_name, descriptor in descriptors.items()
+        },
+        "outputs": outputs,
+        "common_kernel_mismatch": len(set(outputs.values())) > 1,
+        "scope": (
+            "direct finite cross-program fact; whether a common unindexed kernel "
+            "is required is not decided by this theorem"
+        ),
+    }
+
+
 def requirement_certificate(census: dict) -> dict:
     requirement = requirement_from_program_rows(census["per_program"])
     if requirement == "JOINT":
         reading = (
-            "Under the supervisor-specified program-instance reading, at least one "
-            "realized program contains multiple law classes, so the axiom's one fixed "
-            "rule must satisfy those co-realized classes jointly in that instance."
+            "Conditional on P_instance, at least one declared program contains "
+            "multiple classes, so the selected finite test is JOINT within that instance."
         )
-        cycle978_joint_status = "AXIOM_FAITHFUL"
+        coexistence_status = "TRIGGERED_WITHIN_P_INSTANCE"
     else:
         reading = (
-            "Under the supervisor-specified program-instance reading, each realized "
-            "program is a separate word containing at most one class. The axiom's one "
-            "fixed rule applies throughout that instance, but does not require an "
-            "unindexed kernel to equal truth tables of alternative programs that are "
-            "never co-realized in one declared instance."
+            "Conditional on P_instance, each declared program is a separate word "
+            "containing at most one class, so the selected finite test is PER_INSTANCE. "
+            "The current axiom text does not choose this indexing or decide the relevance "
+            "of a cross-program common-kernel test."
         )
-        cycle978_joint_status = "OVER_STRONG"
+        coexistence_status = "NOT_TRIGGERED_WITHIN_DECLARED_SINGLE_WORD_INSTANCES"
     return {
         "premise_id": "P_instance",
-        "premise_status": "supervisor-specified program-instance reading",
-        "licensed_requirement": requirement,
+        "premise_status": "explicit non-axiom condition from user_goal",
+        "conditional_requirement": requirement,
+        "axiom_implication_status": "NOT_DERIVED",
         "axiom_quote": " ".join(row.replace("\n", " ") for row in AXIOM_SENTENCES),
         "reading": reading,
-        "cycle978_joint_requirement_status": cycle978_joint_status,
+        "cross_program_joint_status": coexistence_status,
+        "cross_program_probe": cross_program_probe(),
         "selection_rule": (
             "multi_class_programs>0 => JOINT; otherwise => PER_INSTANCE"
         ),
     }
 
 
-# --- Axiom-faithful compatibility and input-family test. ---
+# --- Conditional compatibility and input-family test. ---
 
 
 def marginal_distribution(descriptor: tuple, p_zero: Fraction, condition: tuple) -> tuple:
@@ -958,14 +1024,14 @@ def compatibility_certificate(
         name for name, row in per_candidate.items() if row["verdict"] == "SURVIVES"
     ]
     return {
-        "licensed_requirement": requirement["licensed_requirement"],
-        "licensed_requirement_scope": (
-            "conditional on P_instance, the supervisor-specified program-instance reading"
+        "conditional_requirement": requirement["conditional_requirement"],
+        "conditional_requirement_scope": (
+            "explicit P_instance condition; not derived from Admissibility"
         ),
         "criterion": (
             "For each realized program separately, extend p_i(e) by the selected "
             "program's own deterministic kernel and normalized input/neighbour carrier."
-            if requirement["licensed_requirement"] == "PER_INSTANCE"
+            if requirement["conditional_requirement"] == "PER_INSTANCE"
             else
             "For each realized multi-class program, require one kernel compatible with "
             "every class co-realized inside that same program."
@@ -976,12 +1042,10 @@ def compatibility_certificate(
         "exclusions": exclusions,
         "neighbour_variation_at_p_one_quarter": neighbour_variation_gate,
         "proper_cubic_covariance": covariance_gate,
-        "born_wall_status": "UNMOVED" if len(survivors) == 5 else "MOVED",
-        "cycle978_zero_over_5_scope": (
-            "fixed-input common-kernel JOINT surrogate; not imposed by the axiom "
-            "on this alternative-program family under P_instance"
-            if requirement["licensed_requirement"] == "PER_INSTANCE"
-            else "axiom-faithful because at least one declared program co-realizes classes"
+        "born_selection_status": "NOT_ADVANCED_BY_CONDITIONAL_TEST",
+        "cross_program_common_kernel_scope": (
+            "direct finite mismatch computed here; its relevance is not decided by "
+            "this conditional theorem"
         ),
         "surrogate_dependence": False if len(survivors) == 5 else None,
         "nonuniform_p_one_quarter_survivors_over_5": (
@@ -1004,7 +1068,9 @@ def active_corruption_controls(
         "injected_coexistence_flips_requirement_to_joint":
             requirement_from_program_rows(injected) == "JOINT",
         "actual_census_drives_reported_requirement":
-            requirement_from_program_rows(rows) == requirement["licensed_requirement"],
+            requirement_from_program_rows(rows) == requirement["conditional_requirement"],
+        "cross_program_probe_detects_mismatch":
+            requirement["cross_program_probe"]["common_kernel_mismatch"],
         "dropping_program_breaks_family_count": len(rows[:-1]) != 155,
         "survivor_count_is_derived_from_rows": len(compatibility["survivors"])
             == sum(
@@ -1022,15 +1088,15 @@ def active_corruption_controls(
 
 def render_stdout(receipt: dict) -> str:
     census = receipt["certificates"]["A_COEXISTENCE"]
-    requirement = receipt["certificates"]["B_REQUIREMENT_STATUS"]
-    born = receipt["certificates"]["C_BORN_STATUS_CORRECTED"]
-    scope = receipt["certificates"]["D_SURROGATE_SCOPE"]
+    requirement = receipt["certificates"]["B_CONDITIONAL_REQUIREMENT"]
+    born = receipt["certificates"]["C_CONDITIONAL_WEIGHT_TEST"]
+    scope = receipt["certificates"]["D_INPUT_SCOPE"]
     controls = receipt["certificates"]["E_CONTROLS"]
     patterns = {
         "+".join(row["classes"]) if row["classes"] else "NONE": row["program_count"]
         for row in census["cooccurrence_patterns"]
     }
-    lines = ["CYCLE979_CLASS_COEXISTENCE_BORN_REQUIREMENT"]
+    lines = ["CYCLE979_CLASS_COEXISTENCE_CONDITIONAL_WEIGHT_TEST"]
     lines.append(
         "A_COEXISTENCE " + ("PASS" if receipt["checks"]["A_COEXISTENCE"] else "FAIL")
         + " :: programs=155; patterns=" + compact(patterns)
@@ -1039,18 +1105,18 @@ def render_stdout(receipt: dict) -> str:
         + f" per_program_digest={census['per_program_digest']}"
     )
     lines.append(
-        "B_REQUIREMENT_STATUS "
-        + ("PASS" if receipt["checks"]["B_REQUIREMENT_STATUS"] else "FAIL")
-        + f" :: licensed={requirement['licensed_requirement']};"
-        + " premise=P_instance(supervisor-specified);"
-        + f" cycle978_joint={requirement['cycle978_joint_requirement_status']}"
+        "B_CONDITIONAL_REQUIREMENT "
+        + ("PASS" if receipt["checks"]["B_CONDITIONAL_REQUIREMENT"] else "FAIL")
+        + f" :: conditional={requirement['conditional_requirement']};"
+        + " premise=P_instance(non-axiom); axiom_implication=NOT_DERIVED;"
+        + f" cross_program_mismatch={requirement['cross_program_probe']['common_kernel_mismatch']}"
     )
     lines.append(
-        "C_BORN_STATUS_CORRECTED "
-        + ("PASS" if receipt["checks"]["C_BORN_STATUS_CORRECTED"] else "FAIL")
+        "C_CONDITIONAL_WEIGHT_TEST "
+        + ("PASS" if receipt["checks"]["C_CONDITIONAL_WEIGHT_TEST"] else "FAIL")
         + f" :: survivors/5={born['survivors_over_5']};"
-        + " premise=P_instance(supervisor-specified);"
-        + f" born_wall={born['born_wall_status']};"
+        + " premise=P_instance(non-axiom);"
+        + f" born_selection={born['born_selection_status']};"
         + f" neighbour_variation={born['neighbour_variation_at_p_one_quarter']};"
         + f" proper_cubic={born['proper_cubic_covariance']};"
         + f" exclusions={compact(born['exclusions'])}"
@@ -1060,8 +1126,8 @@ def render_stdout(receipt: dict) -> str:
         for class_name, row in scope["nonuniform_test"]["classes"].items()
     }
     lines.append(
-        "D_SURROGATE_SCOPE "
-        + ("PASS" if receipt["checks"]["D_SURROGATE_SCOPE"] else "FAIL")
+        "D_INPUT_SCOPE "
+        + ("PASS" if receipt["checks"]["D_INPUT_SCOPE"] else "FAIL")
         + " :: depends_on_fixed_x=false; p_zero=1/4; survivors/5="
         + born["nonuniform_p_one_quarter_survivors_over_5"]
         + "; TV_by_class=" + compact(nonuniform)
@@ -1076,11 +1142,11 @@ def render_stdout(receipt: dict) -> str:
         + f" stdout_bytes={controls['stdout_bytes']}<6000"
     )
     lines.extend((
-        "per_element: checked -- all five declared finite event-weighting candidates.",
-        "per_site: checked -- centre readout under all six neighbour positions and operand placements.",
+        "per_element: checked and executed -- each of 92,260 event atoms across all five finite weight vectors was included in the normalization and marginal tests.",
+        "per_site: checked and executed -- the centre readout was evaluated under all six neighbour positions, all spectator contexts, and all declared operand placements.",
         "per_mode: checked and not executed -- basis states only; no continuous M_2(C) modes.",
-        "per_block: checked -- all 155 complete programs and all three class blocks.",
-        "lattice_wide: checked and not executed -- no extrapolation beyond the declared star.",
+        "per_block: checked and executed -- all 155 semantic-quotient programs and all three neighbour-sensitive class blocks were exhausted.",
+        "lattice_wide: checked and not executed -- proper-cubic orbit closure was checked on the radius-one star; no infinite embedding was executed.",
     ))
     passed = sum(receipt["checks"].values())
     failed = len(receipt["checks"]) - passed
@@ -1126,14 +1192,10 @@ def run() -> tuple[dict, str]:
         and census["proper_cubic_covariance"]["pass"]
     )
     b_pass = bool(
-        requirement["licensed_requirement"]
+        requirement["conditional_requirement"]
             == requirement_from_program_rows(census["per_program"])
-        and requirement["cycle978_joint_requirement_status"]
-            == (
-                "AXIOM_FAITHFUL"
-                if requirement["licensed_requirement"] == "JOINT"
-                else "OVER_STRONG"
-            )
+        and requirement["axiom_implication_status"] == "NOT_DERIVED"
+        and requirement["cross_program_probe"]["common_kernel_mismatch"]
         and controls["axiom_sentences_match"]
     )
     c_pass = bool(
@@ -1171,8 +1233,8 @@ def run() -> tuple[dict, str]:
     receipt = {
         "cycle": 979,
         "claim": (
-            "class coexistence census and axiom-faithful compatibility requirement "
-            "on the landed radius-one, word-length-at-most-one basis-state family"
+            "class coexistence census and conditional weighting nondiscrimination "
+            "on a radius-one, word-length-at-most-one basis-state semantic quotient"
         ),
         "claim_type": "bounded_theorem",
         "authority": "none",
@@ -1183,16 +1245,16 @@ def run() -> tuple[dict, str]:
         ),
         "checks": {
             "A_COEXISTENCE": a_pass,
-            "B_REQUIREMENT_STATUS": b_pass,
-            "C_BORN_STATUS_CORRECTED": c_pass,
-            "D_SURROGATE_SCOPE": d_pass,
+            "B_CONDITIONAL_REQUIREMENT": b_pass,
+            "C_CONDITIONAL_WEIGHT_TEST": c_pass,
+            "D_INPUT_SCOPE": d_pass,
             "E_CONTROLS": False,
         },
         "certificates": {
             "A_COEXISTENCE": census,
-            "B_REQUIREMENT_STATUS": requirement,
-            "C_BORN_STATUS_CORRECTED": compatibility,
-            "D_SURROGATE_SCOPE": inputs,
+            "B_CONDITIONAL_REQUIREMENT": requirement,
+            "C_CONDITIONAL_WEIGHT_TEST": compatibility,
+            "D_INPUT_SCOPE": inputs,
             "E_CONTROLS": {
                 "literal_source_read_count": controls["literal_source_read_count"],
                 "literal_audit_input_paths": controls["literal_audit_input_paths"],
@@ -1203,6 +1265,21 @@ def run() -> tuple[dict, str]:
                 "git_blobs": controls["git_blobs"],
                 "sha_pins_match": controls["pass"],
                 "axiom_sentences_match": controls["axiom_sentences_match"],
+                "current_record_surface_matches": controls[
+                    "current_record_surface_matches"
+                ],
+                "record_structure_used_by_science": controls[
+                    "record_structure_used_by_science"
+                ],
+                "tof_control_exchange_gate_objects_equal": controls[
+                    "tof_control_exchange_gate_objects_equal"
+                ],
+                "tof_control_exchange_actions_equal": controls[
+                    "tof_control_exchange_actions_equal"
+                ],
+                "tof_control_order_is_semantic_quotient": controls[
+                    "tof_control_order_is_semantic_quotient"
+                ],
                 "pinned_cycle719_certificate": controls[
                     "pinned_cycle719_certificate"
                 ],

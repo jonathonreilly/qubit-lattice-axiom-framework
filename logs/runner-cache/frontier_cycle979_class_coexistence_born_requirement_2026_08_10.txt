@@ -1,23 +1,23 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle979_class_coexistence_born_requirement_2026_08_10.py
-runner_sha256: f75e3f95a021880f118d9a0cafabdd96013baa97a82f6fb988b8c43d9a01d9cf
-input_fingerprint_sha256: db7786cde9df9554b9e925bd8927e6f129e0cdd1546e5ea349a31056104b73bb
+runner_sha256: 36d087d0e28649a4477f1fd318afe4f637918edddb5bd694b2c2c1847d7fa479
+input_fingerprint_sha256: 0508bab90e8d90e7f18431b9290c97639b302bb3816dd774ce2ca11266eb0c7e
 timeout_sec: 1400
 exit_code: 0
-elapsed_sec: 47.93
+elapsed_sec: 82.90
 status: ok
 ----- stdout -----
-CYCLE979_CLASS_COEXISTENCE_BORN_REQUIREMENT
+CYCLE979_CLASS_COEXISTENCE_CONDITIONAL_WEIGHT_TEST
 A_COEXISTENCE PASS :: programs=155; patterns={"CNOT":6,"NONE":134,"TOF_OPPOSITE_CONTROLS":3,"TOF_PERPENDICULAR_CONTROLS":12}; multi_class=0; proper_cubic=True; per_program_digest=4bdb22953055bd4bf1e4e094a4138aa04f63c6e6561e9dbf99d7d12898969771
-B_REQUIREMENT_STATUS PASS :: licensed=PER_INSTANCE; premise=P_instance(supervisor-specified); cycle978_joint=OVER_STRONG
-C_BORN_STATUS_CORRECTED PASS :: survivors/5=5/5; premise=P_instance(supervisor-specified); born_wall=UNMOVED; neighbour_variation=True; proper_cubic=True; exclusions=[]
-D_SURROGATE_SCOPE PASS :: depends_on_fixed_x=false; p_zero=1/4; survivors/5=5/5; TV_by_class={"CNOT":"1/2","TOF_OPPOSITE_CONTROLS":"1/2","TOF_PERPENDICULAR_CONTROLS":"1/2"}
-E_CONTROLS PASS :: source_reads=1<=6; pins=True; determinism=True; active_corruptions=True; runtime_s=46.197<1400; stdout_bytes=1327<6000
-per_element: checked -- all five declared finite event-weighting candidates.
-per_site: checked -- centre readout under all six neighbour positions and operand placements.
+B_CONDITIONAL_REQUIREMENT PASS :: conditional=PER_INSTANCE; premise=P_instance(non-axiom); axiom_implication=NOT_DERIVED; cross_program_mismatch=True
+C_CONDITIONAL_WEIGHT_TEST PASS :: survivors/5=5/5; premise=P_instance(non-axiom); born_selection=NOT_ADVANCED_BY_CONDITIONAL_TEST; neighbour_variation=True; proper_cubic=True; exclusions=[]
+D_INPUT_SCOPE PASS :: depends_on_fixed_x=false; p_zero=1/4; survivors/5=5/5; TV_by_class={"CNOT":"1/2","TOF_OPPOSITE_CONTROLS":"1/2","TOF_PERPENDICULAR_CONTROLS":"1/2"}
+E_CONTROLS PASS :: source_reads=1<=6; pins=True; determinism=True; active_corruptions=True; runtime_s=79.499<1400; stdout_bytes=1641<6000
+per_element: checked and executed -- each of 92,260 event atoms across all five finite weight vectors was included in the normalization and marginal tests.
+per_site: checked and executed -- the centre readout was evaluated under all six neighbour positions, all spectator contexts, and all declared operand placements.
 per_mode: checked and not executed -- basis states only; no continuous M_2(C) modes.
-per_block: checked -- all 155 complete programs and all three class blocks.
-lattice_wide: checked and not executed -- no extrapolation beyond the declared star.
+per_block: checked and executed -- all 155 semantic-quotient programs and all three neighbour-sensitive class blocks were exhausted.
+lattice_wide: checked and not executed -- proper-cubic orbit closure was checked on the radius-one star; no infinite embedding was executed.
 TOTAL: PASS=5 FAIL=0
 
 ----- stderr -----

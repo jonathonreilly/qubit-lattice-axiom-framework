@@ -1,20 +1,20 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle979_class_coexistence_independent_check_2026_08_10.py
-runner_sha256: 0d8e8af6e26b8e1841b929d97aed4c1694ba63f3430645365ab044f6069a51c6
-input_fingerprint_sha256: df3d0ff3adad6a24302d4ba0d04ee22b1349860fd7a3b052a7ed59912bf72598
+runner_sha256: 70a5080c4282fbaedfc75b3cbfdccdf4582b0f6fd654374705b37e75e0b7b6ce
+input_fingerprint_sha256: 98e2f9f0f2982b10eab6c5ea88210b06cb7dcb4e98fc00ae23ac40e83e98cb51
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.20
+elapsed_sec: 0.32
 status: ok
 ----- stdout -----
 CYCLE979_CLASS_COEXISTENCE_INDEPENDENT_CHECK
 R0_PRIMARY_AST_AND_PINS PASS :: source_reads=4<=6; pins=True; primary_imported=false
 R1_INDEPENDENT_COEXISTENCE_CENSUS PASS :: programs=155; class_counts={"CNOT":6,"TOF_OPPOSITE_CONTROLS":3,"TOF_PERPENDICULAR_CONTROLS":12}; classless=134; multi_class=0; proper_cubic=True
-R2_REFUTE_REQUIREMENT_AND_BORN PASS :: premise=P_instance(supervisor-specified); licensed=PER_INSTANCE; cycle978_joint=OVER_STRONG; survivors/5=5/5; neighbour_variation=true; proper_cubic=true; exclusions=[]
+R2_REFUTE_CONDITIONAL_REQUIREMENT_AND_WEIGHT_TEST PASS :: premise=P_instance(non-axiom); conditional=PER_INSTANCE; axiom_implication=NOT_DERIVED; survivors/5=5/5; neighbour_variation=true; proper_cubic=true; exclusions=[]
 R3_NONUNIFORM_INPUT PASS :: p_zero=1/4; TV_by_class={"CNOT":"1/2","TOF_OPPOSITE_CONTROLS":"1/2","TOF_PERPENDICULAR_CONTROLS":"1/2"}
 R4_RECEIPT_CACHE_BINDING PASS :: semantic_headlines_bound=true
-R5_ACTIVE_CORRUPTION_PROBES PASS :: rejected=8/8; ids=["CACHE_BORN_HEADLINE_CORRUPTED","CLASS_COUNT_CORRUPTED","COEXISTENCE_INJECTED_REQUIREMENT_UNCHANGED","EXCLUSION_WITHOUT_WITNESS","NONUNIFORM_TV_CORRUPTED","PROGRAM_REMOVED","SURROGATE_DEPENDENCE_FLIPPED","SURVIVOR_REMOVED"]
-R6_CONTROLS PASS :: runtime_s=0.126<300; stdout_bytes=1102<6000; determinism=True
+R5_ACTIVE_CORRUPTION_PROBES PASS :: rejected=8/8; ids=["CACHE_WEIGHT_HEADLINE_CORRUPTED","CLASS_COUNT_CORRUPTED","COEXISTENCE_INJECTED_CONDITIONAL_UNCHANGED","EXCLUSION_WITHOUT_WITNESS","NONUNIFORM_TV_CORRUPTED","PROGRAM_REMOVED","SURROGATE_DEPENDENCE_FLIPPED","SURVIVOR_REMOVED"]
+R6_CONTROLS PASS :: runtime_s=0.261<300; stdout_bytes=1118<6000; determinism=True
 TOTAL: PASS=7 FAIL=0
 
 ----- stderr -----

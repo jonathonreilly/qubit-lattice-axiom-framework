@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Independent refutation checker for the Cycle-979 coexistence theorem.
+"""Independent refutation checker for the Cycle-979 conditional theorem.
 
 This checker imports neither the primary nor the landed Cycle-719 core.  It
 reconstructs the complete 155-program Boolean family directly, derives the
@@ -32,13 +32,13 @@ AUDIT_INPUT_PATHS = (
 )
 EXPECTED_INPUT_SHA256 = {
     AUDIT_INPUT_PATHS[0]:
-        "f75e3f95a021880f118d9a0cafabdd96013baa97a82f6fb988b8c43d9a01d9cf",
+        "36d087d0e28649a4477f1fd318afe4f637918edddb5bd694b2c2c1847d7fa479",
     AUDIT_INPUT_PATHS[1]:
-        "1b07e765e7afa527f8828b45678782b77ad4c7f225dc860680887b47211a82c1",
+        "848cd10a83bd06b1723508c19a5856957aeeca4c6e3b017ef764c867e1d81da7",
     AUDIT_INPUT_PATHS[2]:
-        "b60dda5ad268c032b4682afd0b42740b723c0ea3a8ddb0df479b89bb5838560c",
+        "48345ed8634034665e059219aa9a61c417859132915b4f3bed595d03eb8ea7b2",
     AUDIT_INPUT_PATHS[3]:
-        "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
+        "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
 }
 PRIMARY_EXPECTED_FUNCTIONS = (
     "load_pinned_cycle719_core",
@@ -96,8 +96,8 @@ REFUTE_SPEC = (
         "mutation": "delete the final per-program census row",
     },
     {
-        "id": "COEXISTENCE_INJECTED_REQUIREMENT_UNCHANGED",
-        "target": "B_REQUIREMENT_STATUS",
+        "id": "COEXISTENCE_INJECTED_CONDITIONAL_UNCHANGED",
+        "target": "B_CONDITIONAL_REQUIREMENT",
         "mutation": "inject two classes into one program but retain PER_INSTANCE",
     },
     {
@@ -107,26 +107,26 @@ REFUTE_SPEC = (
     },
     {
         "id": "SURVIVOR_REMOVED",
-        "target": "C_BORN_STATUS_CORRECTED",
+        "target": "C_CONDITIONAL_WEIGHT_TEST",
         "mutation": "remove M5 from the survivor list while leaving its row SURVIVES",
     },
     {
         "id": "EXCLUSION_WITHOUT_WITNESS",
-        "target": "C_BORN_STATUS_CORRECTED",
+        "target": "C_CONDITIONAL_WEIGHT_TEST",
         "mutation": "exclude M1 without a first exclusion witness",
     },
     {
         "id": "SURROGATE_DEPENDENCE_FLIPPED",
-        "target": "D_SURROGATE_SCOPE",
-        "mutation": "claim the corrected verdict depends on fixed x",
+        "target": "D_INPUT_SCOPE",
+        "mutation": "claim the conditional result depends on fixed x",
     },
     {
         "id": "NONUNIFORM_TV_CORRUPTED",
-        "target": "D_SURROGATE_SCOPE",
+        "target": "D_INPUT_SCOPE",
         "mutation": "change the p=1/4 CNOT TV from 1/2 to 1/3",
     },
     {
-        "id": "CACHE_BORN_HEADLINE_CORRUPTED",
+        "id": "CACHE_WEIGHT_HEADLINE_CORRUPTED",
         "target": "R4_RECEIPT_CACHE_BINDING",
         "mutation": "change the cache survivor headline from 5/5 to 0/5",
     },
@@ -416,6 +416,30 @@ def derive_requirement(rows: list[dict]) -> str:
     return "JOINT" if any(len(row["classes"]) > 1 for row in rows) else "PER_INSTANCE"
 
 
+def independent_cross_program_probe() -> dict:
+    descriptors = {
+        "CNOT": ("CNOT", 1, 0),
+        "TOF_PERPENDICULAR_CONTROLS": ("TOF", 1, 3, 0),
+        "TOF_OPPOSITE_CONTROLS": ("TOF", 1, 2, 0),
+    }
+    local_input = 0
+    condition = (1, 0, 0, 0, 0, 0)
+    outputs = {
+        class_name: apply_target(descriptor, local_input, condition)
+        for class_name, descriptor in descriptors.items()
+    }
+    return {
+        "local_input": local_input,
+        "condition": list(condition),
+        "programs": {
+            class_name: word_name(descriptor)
+            for class_name, descriptor in descriptors.items()
+        },
+        "outputs": outputs,
+        "common_kernel_mismatch": len(set(outputs.values())) > 1,
+    }
+
+
 def marginal(descriptor: tuple, p_zero: Fraction, condition: tuple) -> tuple:
     masses = [Fraction(0), Fraction(0)]
     for x, mass in ((0, p_zero), (1, 1 - p_zero)):
@@ -480,16 +504,31 @@ def validate_a(receipt: dict, census: dict) -> bool:
 
 def validate_b(receipt: dict) -> bool:
     observed_a = receipt["certificates"]["A_COEXISTENCE"]
-    observed_b = receipt["certificates"]["B_REQUIREMENT_STATUS"]
+    observed_b = receipt["certificates"]["B_CONDITIONAL_REQUIREMENT"]
     derived = derive_requirement(observed_a["per_program"])
-    expected_status = "AXIOM_FAITHFUL" if derived == "JOINT" else "OVER_STRONG"
+    expected_status = (
+        "TRIGGERED_WITHIN_P_INSTANCE"
+        if derived == "JOINT"
+        else "NOT_TRIGGERED_WITHIN_DECLARED_SINGLE_WORD_INSTANCES"
+    )
+    independent_probe = independent_cross_program_probe()
     return bool(
-        observed_b["licensed_requirement"] == derived
-        and observed_b["cycle978_joint_requirement_status"] == expected_status
+        observed_b["conditional_requirement"] == derived
+        and observed_b["cross_program_joint_status"] == expected_status
+        and observed_b["axiom_implication_status"] == "NOT_DERIVED"
         and observed_b["premise_id"] == "P_instance"
         and observed_b["premise_status"]
-            == "supervisor-specified program-instance reading"
-        and "supervisor-specified program-instance reading" in observed_b["reading"]
+            == "explicit non-axiom condition from user_goal"
+        and "Conditional on P_instance" in observed_b["reading"]
+        and observed_b["cross_program_probe"]["local_input"]
+            == independent_probe["local_input"]
+        and observed_b["cross_program_probe"]["condition"]
+            == independent_probe["condition"]
+        and observed_b["cross_program_probe"]["programs"]
+            == independent_probe["programs"]
+        and observed_b["cross_program_probe"]["outputs"]
+            == independent_probe["outputs"]
+        and observed_b["cross_program_probe"]["common_kernel_mismatch"] is True
         and "There is one fixed nearest-neighbor admissibility rule" in observed_b[
             "axiom_quote"
         ]
@@ -498,7 +537,7 @@ def validate_b(receipt: dict) -> bool:
 
 
 def validate_c(receipt: dict) -> bool:
-    observed = receipt["certificates"]["C_BORN_STATUS_CORRECTED"]
+    observed = receipt["certificates"]["C_CONDITIONAL_WEIGHT_TEST"]
     event_rows = receipt["certificates"]["E_CONTROLS"][
         "candidate_event_certificate"
     ]["candidates"]
@@ -528,14 +567,14 @@ def validate_c(receipt: dict) -> bool:
         for row in observed["per_candidate"].values()
     )
     return bool(
-        observed["licensed_requirement"]
-            == receipt["certificates"]["B_REQUIREMENT_STATUS"]["licensed_requirement"]
-        and observed["licensed_requirement_scope"]
-            == "conditional on P_instance, the supervisor-specified program-instance reading"
+        observed["conditional_requirement"]
+            == receipt["certificates"]["B_CONDITIONAL_REQUIREMENT"]["conditional_requirement"]
+        and observed["conditional_requirement_scope"]
+            == "explicit P_instance condition; not derived from Admissibility"
         and observed["survivors"] == row_survivors == independently_valid
         and observed["survivors_over_5"] == f"{len(row_survivors)}/5"
-        and observed["born_wall_status"]
-            == ("UNMOVED" if len(row_survivors) == 5 else "MOVED")
+        and observed["born_selection_status"]
+            == "NOT_ADVANCED_BY_CONDITIONAL_TEST"
         and exclusions_have_witnesses
         and observed["nonuniform_p_one_quarter_survivors_over_5"]
             == observed["survivors_over_5"]
@@ -550,7 +589,7 @@ def validate_c(receipt: dict) -> bool:
 
 
 def validate_d(receipt: dict, independent_rows: list[dict]) -> bool:
-    observed = receipt["certificates"]["D_SURROGATE_SCOPE"]
+    observed = receipt["certificates"]["D_INPUT_SCOPE"]
     observed_compact = [{
         "input_label": row["input_label"],
         "p_zero": row["p_zero"],
@@ -564,7 +603,7 @@ def validate_d(receipt: dict, independent_rows: list[dict]) -> bool:
             for class_name, class_row in row["classes"].items()
         },
     } for row in observed["rows"]]
-    corrected = receipt["certificates"]["C_BORN_STATUS_CORRECTED"]
+    corrected = receipt["certificates"]["C_CONDITIONAL_WEIGHT_TEST"]
     return bool(
         observed_compact == independent_rows
         and all(
@@ -604,10 +643,10 @@ def validate_cache(receipt: dict, cache_text: str) -> bool:
         and receipt["primary_source_sha256"] == headers.get("runner_sha256")
         and "A_COEXISTENCE PASS :: programs=155" in body
         and "multi_class=0" in body
-        and "licensed=PER_INSTANCE; premise=P_instance(supervisor-specified);"
-            " cycle978_joint=OVER_STRONG" in body
-        and "survivors/5=5/5; premise=P_instance(supervisor-specified);"
-            " born_wall=UNMOVED" in body
+        and "conditional=PER_INSTANCE; premise=P_instance(non-axiom);"
+            " axiom_implication=NOT_DERIVED; cross_program_mismatch=True" in body
+        and "survivors/5=5/5; premise=P_instance(non-axiom);"
+            " born_selection=NOT_ADVANCED_BY_CONDITIONAL_TEST" in body
         and "neighbour_variation=True; proper_cubic=True; exclusions=[]" in body
         and "p_zero=1/4; survivors/5=5/5" in body
         and body.rstrip().endswith("TOTAL: PASS=5 FAIL=0")
@@ -627,44 +666,44 @@ def corruption_probes(
     mutated["certificates"]["A_COEXISTENCE"]["per_program"][0]["classes"] = [
         "CNOT", "TOF_OPPOSITE_CONTROLS"
     ]
-    results["COEXISTENCE_INJECTED_REQUIREMENT_UNCHANGED"] = not validate_b(mutated)
+    results["COEXISTENCE_INJECTED_CONDITIONAL_UNCHANGED"] = not validate_b(mutated)
 
     mutated = copy.deepcopy(receipt)
     mutated["certificates"]["A_COEXISTENCE"]["class_counts"]["CNOT"] = 5
     results["CLASS_COUNT_CORRUPTED"] = not validate_a(mutated, census)
 
     mutated = copy.deepcopy(receipt)
-    mutated["certificates"]["C_BORN_STATUS_CORRECTED"]["survivors"].pop()
+    mutated["certificates"]["C_CONDITIONAL_WEIGHT_TEST"]["survivors"].pop()
     results["SURVIVOR_REMOVED"] = not validate_c(mutated)
 
     mutated = copy.deepcopy(receipt)
-    corrected = mutated["certificates"]["C_BORN_STATUS_CORRECTED"]
+    corrected = mutated["certificates"]["C_CONDITIONAL_WEIGHT_TEST"]
     corrected["per_candidate"]["M1_COUNTING"]["verdict"] = "EXCLUDED"
     corrected["per_candidate"]["M1_COUNTING"]["first_exclusion_witness"] = None
     corrected["exclusions"] = [{"candidate": "M1_COUNTING", "witness": None}]
     corrected["survivors"] = list(CANDIDATE_NAMES[1:])
     corrected["survivors_over_5"] = "4/5"
-    corrected["born_wall_status"] = "MOVED"
+    corrected["born_selection_status"] = "CORRUPTED"
     corrected["nonuniform_p_one_quarter_survivors_over_5"] = "4/5"
     results["EXCLUSION_WITHOUT_WITNESS"] = not validate_c(mutated)
 
     mutated = copy.deepcopy(receipt)
-    mutated["certificates"]["C_BORN_STATUS_CORRECTED"]["surrogate_dependence"] = True
+    mutated["certificates"]["C_CONDITIONAL_WEIGHT_TEST"]["surrogate_dependence"] = True
     results["SURROGATE_DEPENDENCE_FLIPPED"] = not validate_d(
         mutated, input_rows
     )
 
     mutated = copy.deepcopy(receipt)
-    mutated["certificates"]["D_SURROGATE_SCOPE"]["nonuniform_test"]["classes"][
+    mutated["certificates"]["D_INPUT_SCOPE"]["nonuniform_test"]["classes"][
         "CNOT"
     ]["maximum_tv"] = "1/3"
     results["NONUNIFORM_TV_CORRUPTED"] = not validate_d(mutated, input_rows)
 
     mutated_cache = cache_text.replace(
-        "survivors/5=5/5; premise=P_instance(supervisor-specified); born_wall=UNMOVED",
-        "survivors/5=0/5; premise=P_instance(supervisor-specified); born_wall=MOVED",
+        "survivors/5=5/5; premise=P_instance(non-axiom); born_selection=NOT_ADVANCED_BY_CONDITIONAL_TEST",
+        "survivors/5=0/5; premise=P_instance(non-axiom); born_selection=CORRUPTED",
     )
-    results["CACHE_BORN_HEADLINE_CORRUPTED"] = not validate_cache(
+    results["CACHE_WEIGHT_HEADLINE_CORRUPTED"] = not validate_cache(
         receipt, mutated_cache
     )
     return {
@@ -693,10 +732,10 @@ def render_stdout(receipt: dict) -> str:
         + f" proper_cubic={census['proper_cubic_covariance']['pass']}"
     )
     lines.append(
-        "R2_REFUTE_REQUIREMENT_AND_BORN "
-        + ("PASS" if checks["R2_REFUTE_REQUIREMENT_AND_BORN"] else "FAIL")
-        + " :: premise=P_instance(supervisor-specified); licensed=PER_INSTANCE;"
-        + " cycle978_joint=OVER_STRONG; survivors/5=5/5;"
+        "R2_REFUTE_CONDITIONAL_REQUIREMENT_AND_WEIGHT_TEST "
+        + ("PASS" if checks["R2_REFUTE_CONDITIONAL_REQUIREMENT_AND_WEIGHT_TEST"] else "FAIL")
+        + " :: premise=P_instance(non-axiom); conditional=PER_INSTANCE;"
+        + " axiom_implication=NOT_DERIVED; survivors/5=5/5;"
         + " neighbour_variation=true; proper_cubic=true; exclusions=[]"
     )
     lines.append(
@@ -767,7 +806,7 @@ def run() -> tuple[dict, str]:
         "checks": {
             "R0_PRIMARY_AST_AND_PINS": r0,
             "R1_INDEPENDENT_COEXISTENCE_CENSUS": r1,
-            "R2_REFUTE_REQUIREMENT_AND_BORN": r2,
+            "R2_REFUTE_CONDITIONAL_REQUIREMENT_AND_WEIGHT_TEST": r2,
             "R3_NONUNIFORM_INPUT": r3,
             "R4_RECEIPT_CACHE_BINDING": r4,
             "R5_ACTIVE_CORRUPTION_PROBES": r5,
@@ -779,11 +818,12 @@ def run() -> tuple[dict, str]:
                 if key not in {"receipt", "cache_text"}
             },
             "R1_INDEPENDENT_COEXISTENCE_CENSUS": census,
-            "R2_REFUTE_REQUIREMENT_AND_BORN": {
+            "R2_REFUTE_CONDITIONAL_REQUIREMENT_AND_WEIGHT_TEST": {
                 "premise_id": "P_instance",
-                "premise_status": "supervisor-specified program-instance reading",
-                "licensed_requirement": derive_requirement(census["per_program"]),
-                "cycle978_joint_status": "OVER_STRONG",
+                "premise_status": "explicit non-axiom condition from user_goal",
+                "conditional_requirement": derive_requirement(census["per_program"]),
+                "axiom_implication_status": "NOT_DERIVED",
+                "cross_program_probe": independent_cross_program_probe(),
                 "survivors": list(CANDIDATE_NAMES),
                 "survivors_over_5": "5/5",
                 "neighbour_variation_at_p_one_quarter": True,

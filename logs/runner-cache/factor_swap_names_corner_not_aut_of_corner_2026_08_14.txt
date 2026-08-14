@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/factor_swap_names_corner_not_aut_of_corner_2026_08_14.py
+runner_sha256: f67a6cce81bcb7a1ee8d45ffb847292b08f0f605850decea4222e5d3235dd46d
+input_fingerprint_sha256: ec6016fb390a9602ca60a61528a40aca9fafba94f2afbecdfaa56755e39bc671
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+external_scientific_inputs: none
+explicit_bounded_inputs: H=C^2⊗C^2, factor-swap F, and the ON chart of im(p)
+framework_context: quoted live Lattice, Qubit, and Record; no axiom edit
+measure_boundary: exact Fraction matrix algebra only
+PASS: source-qubit the axiom memo names one-site M_2(C)
+PASS: source-record the axiom memo locks one admissible local possibility
+PASS: source-lattice the axiom memo names sites of Z^3
+PASS: thm-f-hermitian-involution F is a Hermitian involution of trace 2
+PASS: thm-p-projection p=(I+F)/2 is the displayed rank-3 orthogonal projection
+PASS: thm-on-sum the ON chart sums to p using the integer spanning set
+PASS: thm-corner-unit p is the unit of A=p M_4 p
+PASS: thm1-vomega-unitary Vω is a 3-cycle unitary of M_3 and V0 is the identity
+PASS: thm1-ad-disagree Ad_0(E00)=E00 while Ad_ω(E00)=E11, so Ad_0≠Ad_ω
+PASS: thm1-both-fix-p both Ad maps fix the corner unit
+PASS: control-f-fixes-im-p F fixes the spanning set of im(p), so F|im(p)=I
+PASS: control-ad-f-is-id Ad_F is the identity on the corner
+PASS: parent-corner-host the landed swap-corner parent hosts M_3 with unit p
+PASS: live-quotes-in-note the note quotes live Qubit, Record, and Lattice without rewrite
+PASS: mutation-ad-equal-fails predicate Ad_0==Ad_ω fails
+PASS: mutation-f-equals-vomega-fails predicate F|im(p) equals Vω fails
+PASS: mutation-memo-names-su3-qcd-fails predicate that the live memo names SU(3) or QCD as axiom content fails
+PASS: scope-no-adoption the note displays both Ad maps and does not adopt SU(3) or QCD
+PASS: machine-status-contract bounded-support status and propose-ratify fields are source-visible
+PASS: canonical-nonmutation the axiom memo is not edited toward a color action or two-site Aut
+PASS: no-unmerged-pr-citation the note reconstructs the carrier locally and cites no unmerged PR
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: hygiene-no-float-qcd-import the runner stays on Fraction and does not import a QCD stack
+per_element: F, p, V0, Vω, E00, and the corner units are exact Fraction matrices
+per_site: Record is quoted as a one-site lock; it is not applied to Aut(A)
+per_block: Aut is tested on the displayed two-site corner only
+TOTAL: PASS=23 FAIL=0
+
+----- stderr -----
+

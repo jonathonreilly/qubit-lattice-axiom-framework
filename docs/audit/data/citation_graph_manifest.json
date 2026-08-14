@@ -1,6 +1,6 @@
 {
- "edge_count": 15607,
- "node_count": 5490,
+ "edge_count": 15613,
+ "node_count": 5491,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -13037,6 +13037,10 @@
   "next_chunk_recommendation": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "nn_formation_selector_two_model_kill_bounded_note_2026-08-14": {
+   "deps_hash": "c675330f0b77",
+   "out_degree": 6
   },
   "nn_lattice_rescaled_c2_derivation_note_2026-05-10": {
    "deps_hash": "f8563a774007",

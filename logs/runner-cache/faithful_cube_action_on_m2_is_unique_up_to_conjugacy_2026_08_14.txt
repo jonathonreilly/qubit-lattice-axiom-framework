@@ -1,0 +1,54 @@
+===== runner cache v1 =====
+runner: scripts/faithful_cube_action_on_m2_is_unique_up_to_conjugacy_2026_08_14.py
+runner_sha256: 15d857ca1a62a5fbaf319f2f16a3bcd319fd0c1dc084e694e518016b87748552
+input_fingerprint_sha256: 1fcba796642bde01d78697317da0f2c649da1830415eb65b71e45d06c2aee2a3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.44
+status: ok
+----- stdout -----
+external_scientific_inputs: none; G, α, φ0, Sω, β are theorem data
+package_local_integrity_reads: runner source, proposed source note, and live axiom memo
+measure_boundary: exact Q(i) and integer 3x3 matrices; no adopted action
+negative_scope: φ0 is unfaithful; uniqueness is conditional on a faithful action
+PASS: identity-proper-cubic-count |G|=24 via proper_cubic_count()
+PASS: thm1-signed-perm-pool 48 signed permutation matrices before the det=+1 cut
+PASS: thm1-generators-in-G Rx, Ry, Rz, Sω lie in G
+PASS: thm1-group-closed G is closed under multiplication and transpose-inverse
+PASS: qi-i-square i^2 = -1
+PASS: pauli-involutions σx^2 = σy^2 = σz^2 = I
+PASS: pauli-hermitian each Pauli is Hermitian
+PASS: pauli-rh-triad σx σy = i σz
+PASS: identity-alpha-rx-sigmay α_Rx(σy) = σz via alpha_rx_on_sigmay()
+PASS: thm2-alpha-rx-images α_Rx(σx)=σx, α_Rx(σz)=-σy
+PASS: thm2-alpha-hom α_R ∘ α_S = α_{RS} on all of G
+PASS: identity-alpha-faithful is_faithful(α) holds
+PASS: identity-phi0-unfaithful is_faithful(φ0) fails
+PASS: mutation-phi0-injective-fails predicate φ0 is injective must fail
+PASS: mutation-alpha-rx-id-fails predicate α_Rx == id must fail
+PASS: thm4-sw-order-3 Sω^3 = I and det(Sω)=+1
+PASS: identity-conjugator conjugator_exhibits_beta() holds
+PASS: thm4-beta-rx-formula β_Rx = α_{Sω Rx Sω^{-1}} equals the conjugated action
+PASS: mutation-beta-eq-alpha-fails predicate β_Rx == α_Rx must fail
+PASS: mutation-no-conjugator-fails predicate no conjugator must fail
+PASS: thm4-beta-faithful is_faithful(β) holds
+PASS: thm4-axes axis(α_Rx)=ê_x and axis(β_Rx)=Sω ê_x=ê_y
+PASS: thm3-rx-ry-is-sw Rx Ry = Sω, so the cube 120° relation holds on the nose
+PASS: thm3-frame-of-alpha α axes are the standard right-handed frame
+PASS: mutation-memo-names-action-fails predicate live memo names the standard action as axiom content must fail
+PASS: mutation-lattice-named-fails predicate note claims Lattice-named action must fail
+PASS: thm5-quoted-lattice-qubit note quotes live Lattice and Qubit, including the Cl(3,0) non-structure sentence
+PASS: thm5-not-required note states the axioms do not require a faithful action and do not adopt α
+PASS: boundary-forbidden-phrases note omits the forbidden close-the-route and adoption phrases
+PASS: machine-status-contract note carries bounded-support status and no hypothetical axiom adoption
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: thm6-not-qcd-color QCD appears only as a negation / unused boundary
+per_element: checked exactly — each of the 24 proper cubic matrices is a det=+1 signed permutation
+per_site: checked exactly — α and β are unital *-actions on one-site M_2(C) over Q(i)
+per_mode: checked exactly — φ0 is unfaithful; α and β are faithful and conjugate
+per_block: checked exactly — uniqueness is one conjugacy class, conditional on faithfulness
+lattice_wide: checked and not executed — no action is adopted and none is required by the axioms
+TOTAL: PASS=32 FAIL=0
+
+----- stderr -----
+

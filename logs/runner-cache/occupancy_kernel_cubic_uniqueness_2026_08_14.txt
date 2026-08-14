@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/occupancy_kernel_cubic_uniqueness_2026_08_14.py
+runner_sha256: 8767d12af41249242f1a8192c2c4ab8b756d73320ca86b4b02210fae8b02a8d3
+input_fingerprint_sha256: 3bd703af71bf8a9a2e5c7df0adb60e7963fecd50e33b2c6cb775259bf1d315b2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+external_scientific_inputs: none
+package_local_integrity_reads: runner, note, axiom memo
+measure_boundary: exact Q uniqueness of the occupancy kernel
+negative_scope: linear maps on six bits, not a TOE
+PASS: thm1-n-equiv n is equivariant under 90z and 90x on all 64
+PASS: thm2-s-not s is not the standard 3
+PASS: thm3-dim equivariant Hom is 1-dimensional
+PASS: thm3-n-nonzero n is a nonzero witness
+PASS: mutation-s-fails predicate s is equivariant must fail
+PASS: mutation-dim2-fails predicate dimension is 2 must fail
+PASS: quoted note quotes Qubit and Admissibility
+PASS: boundary not TOE, no forbidden phrases
+PASS: memo-silent axioms do not name n_μ uniqueness
+PASS: gates identity gates and AUDIT_INPUT_PATHS
+per_element: checked exactly — 6 occupancy bits, 18 coefficients
+per_site: checked exactly — all 64 occupancy tuples
+per_mode: checked exactly — two 90° generators and Hom dimension
+per_block: checked exactly — uniqueness of the linear kernel
+lattice_wide: checked and not executed — not axiom text
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

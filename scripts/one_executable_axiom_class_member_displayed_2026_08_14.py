@@ -138,7 +138,7 @@ def formation_ready(occ: Occ) -> bool:
 
 
 def axis_menu(occ: Occ) -> tuple[str, Fraction, Fraction] | None:
-    """Identity gate: axis-aligned spectral menu, or None if unselected."""
+    """Axis-aligned restriction of the spectral measure (k=1)."""
     bloch = bloch_of(occ)
     nonzero = [index for index, coord in enumerate(bloch) if coord != 0]
     if len(nonzero) != 1:
@@ -148,6 +148,33 @@ def axis_menu(occ: Occ) -> tuple[str, Fraction, Fraction] | None:
     plus = (ONE + n_axis) / TWO
     minus = (ONE - n_axis) / TWO
     return (axis, plus, minus)
+
+
+def directed_k(occ: Occ) -> int:
+    bloch = bloch_of(occ)
+    coords = (bloch[0] * 3, bloch[1] * 3, bloch[2] * 3)
+    return int(coords[0] * coords[0] + coords[1] * coords[1] + coords[2] * coords[2])
+
+
+def spectral_measure(occ: Occ) -> tuple[int, Bloch] | None:
+    """Identity gate: unique covariant spectral measure, or None if n=0."""
+    if not formation_ready(occ):
+        return None
+    return (directed_k(occ), bloch_of(occ))
+
+
+def formation_prob(occ: Occ) -> Fraction:
+    """Identity gate: f=1 iff n≠0, else 0."""
+    return ONE if formation_ready(occ) else ZERO
+
+
+def record_update(occ: Occ, already_locked: bool, draw_plus: bool) -> str:
+    """Identity gate: permanence, blank, or spectral lock."""
+    if already_locked:
+        return "keep"
+    if not formation_ready(occ):
+        return "blank"
+    return "plus" if draw_plus else "minus"
 
 
 def pairing(left: Fraction | int, right: Fraction | int) -> Fraction:
@@ -290,9 +317,52 @@ def main() -> int:
         minus_x_menu == ("x", Fraction(1, 3), Fraction(2, 3)),
     )
     checks.check(
-        "thm6-two-axis-no-menu",
-        "two-axis n selects no rank-1 menu",
-        axis_menu(PLUS_X_PLUS_Y) is None and axis_menu(EMPTY) is None,
+        "thm6-two-axis-has-measure",
+        "two-axis n has a spectral measure with k=2",
+        spectral_measure(PLUS_X_PLUS_Y) is not None
+        and spectral_measure(PLUS_X_PLUS_Y)[0] == 2
+        and axis_menu(PLUS_X_PLUS_Y) is None,
+    )
+    ready = [occ for occ in all_occupancies() if formation_ready(occ)]
+    measured = [occ for occ in all_occupancies() if spectral_measure(occ) is not None]
+    zero_n = [occ for occ in all_occupancies() if not formation_ready(occ)]
+    checks.check(
+        "thm6-total-counts",
+        "64 occupancies: 8 with n=0, 56 ready, 56 spectral measures",
+        len(list(all_occupancies())) == 64
+        and len(zero_n) == 8
+        and len(ready) == 56
+        and len(measured) == 56
+        and all(spectral_measure(occ) is not None for occ in ready)
+        and all(spectral_measure(occ) is None for occ in zero_n),
+    )
+    probs_ok = True
+    for occ in ready:
+        k = directed_k(occ)
+        # p± = (3 ± sqrt(k))/6 sum to 1 and are positive because k in {1,2,3}
+        if k not in (1, 2, 3):
+            probs_ok = False
+    checks.check(
+        "thm6-spectral-probs",
+        "every ready cell has k in {1,2,3} so p±=(3±√k)/6 is a probability",
+        probs_ok,
+    )
+    checks.check(
+        "thm6b-formation-prob",
+        "f=1 on ready cells and f=0 on n=0",
+        formation_prob(PLUS_X) == ONE
+        and formation_prob(EMPTY) == ZERO
+        and formation_prob(OPP_X) == ZERO
+        and all(formation_prob(occ) == ONE for occ in ready),
+    )
+    checks.check(
+        "thm6b-record-update",
+        "draw locks; n=0 stays blank; permanence keeps an existing lock",
+        record_update(PLUS_X, False, True) == "plus"
+        and record_update(PLUS_X, False, False) == "minus"
+        and record_update(EMPTY, False, True) == "blank"
+        and record_update(PLUS_X, True, True) == "keep"
+        and record_update(PLUS_X, True, False) == "keep",
     )
     checks.check(
         "thm7-wick-a",
@@ -328,9 +398,9 @@ def main() -> int:
         not formation_ready(OPP_X),
     )
     checks.check(
-        "mutation-two-axis-menu-fails",
-        "predicate two-axis n selects a rank-1 menu must fail",
-        axis_menu(PLUS_X_PLUS_Y) is None,
+        "mutation-two-axis-no-measure-fails",
+        "predicate two-axis n has no spectral measure must fail",
+        spectral_measure(PLUS_X_PLUS_Y) is not None,
     )
     checks.check(
         "mutation-memo-names-l0-fails",
@@ -364,7 +434,11 @@ def main() -> int:
     checks.check(
         "one-member-contract",
         "note states L0 is one member and not the unique member",
-        "one member" in note and "not the unique member" in note and "not adopted" in note,
+        "one member" in note
+        and "not the unique member" in note
+        and "not adopted" in note
+        and "spectral measure" in note
+        and "disconnected" in note,
     )
     forbidden = (
         "Lattice-named",
@@ -421,7 +495,9 @@ def main() -> int:
         "runner source defines the required identity gates",
         "def bloch_of(" in self_source
         and "def formation_ready(" in self_source
-        and "def axis_menu(" in self_source
+        and "def spectral_measure(" in self_source
+        and "def formation_prob(" in self_source
+        and "def record_update(" in self_source
         and "def pairing(" in self_source
         and "def wick_a(" in self_source,
     )

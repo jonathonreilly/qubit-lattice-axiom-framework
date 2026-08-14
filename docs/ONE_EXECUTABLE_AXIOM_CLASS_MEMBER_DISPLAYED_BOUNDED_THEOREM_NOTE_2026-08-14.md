@@ -1,7 +1,7 @@
 ---
 claim_id: one_executable_axiom_class_member_displayed_bounded_theorem_note_2026-08-14
 claim_type: bounded_theorem
-claim_scope: "A displayed attached law L0 is executed on a finite plus-shaped patch. Occupancy six-tuple c_d in {0,1} determines Bloch n_μ=(c_{+μ}-c_{-μ})/3 and state ρ=(I+n·σ)/2. Empty neighborhood yields I_2/2. Formation at the center is ready iff n≠0; when n is parallel to a coordinate axis the displayed menu is the two spectral projectors of ρ with exact Tr(ρ P) probabilities. Cube covariance of n is checked on the 24 proper cubic matrices. Clock table is the single displayed tick a=1. Pairing table is ordinary multiplication on Q. L0 is one member of the axiom class, not the unique member, not axiom text, not adopted, not Born, not QCD."
+claim_scope: "A displayed local-law comparator L0 is executed on a finite plus-shaped patch. Occupancy six-tuple c_d in {0,1} determines Bloch n_μ=(c_{+μ}-c_{-μ})/3. For every n≠0 the law is the unique covariant spectral measure of ρ=(I+n·σ)/2 on its two rank-1 eigenprojectors, with formation probability 1. For n=0 the formation probability is 0 and there is no rank-1 menu. A realized draw plus permanence gives the Record update. Clock a=1 and pairing B=xy are disconnected extra tables, not this local law. L0 is an unselected comparator, not the unique member, not axiom text, not adopted, not Born, not QCD."
 upstream_dependencies:
   - minimal_axioms
 runner: scripts/one_executable_axiom_class_member_displayed_2026_08_14.py
@@ -53,16 +53,17 @@ cancels to `n = 0`. For every `c ∈ {0,1}^6` one has `|n|^2 ≤ 1/3 ≤ 1`,
 so `ρ(c)` is a density matrix. The scale `1/3` is displayed member
 data, not a uniqueness theorem.
 
-The center is formation-ready iff `n ≠ 0`. When `n` is parallel to a
-coordinate axis and nonzero, the displayed menu is the two spectral
-projectors of `ρ`, with probabilities `Tr(ρ P)`. When `n` has two or
-more nonzero components, `L0` still outputs `ρ` and does not select a
-rank-1 menu.
+The center has formation probability `f = 1` iff `n ≠ 0`, else
+`f = 0`. For every nonzero `n` the outcome measure is the unique
+spectral PVM of `ρ`: two rank-1 eigenprojectors with probabilities
+`(1 ± |n|)/2`. That includes the 32 two- and three-axis cells that
+previously had no menu. For `n = 0` there is no rank-1 menu. A
+realized draw together with permanence is the Record update.
 
-Proper cubic rotation of the occupancy six-tuple rotates `n`. The
-clock table is the single displayed value `a = 1`. The pairing table
-is ordinary multiplication on `Q`. None of these tables is axiom
-content. `L0` is not adopted.
+Proper cubic rotation of the occupancy six-tuple rotates `n` and
+the spectral measure. The clock table `a = 1` and the pairing
+`B(x,y)=xy` are disconnected extra tables. They are not this local
+law. `L0` is an unselected comparator, not a TOE, and is not adopted.
 
 ## Machine Status And Trace
 
@@ -193,63 +194,76 @@ Lone `+x` gives `p(P_{x+}) = 2/3` and `p(P_{x−}) = 1/3`. Lone `−x`
 swaps those two values. These are exact `Q` identities. They are
 the instrument of `L0`, not a derivation of Born.
 
-## Theorem 6 — two-axis `n` has no selected rank-1 menu
+## Theorem 6 — total spectral measure on every nonzero `n`
 
-For `c = (1,0,1,0,0,0)` one has `n = (1/3, 1/3, 0)`. `L0` outputs
-that state and does not select a rank-1 menu. Selecting one axis, or
-one automorphism of a reconstruction, would privilege a possibility.
-Qubit forbids writing that selector as axiom content. The leftover
-inside `L0` on this cell is named, not filled.
-
-## Theorem 7 — displayed clock table
-
-One formation event on this patch is one tick. The displayed Wick
-factor is `a = 1`. Live Admissibility and Record do not name a Wick
-factor. The approved kinetic-isotropy primitive names `c_t = c_s`
-and does not name `a`. The value `1` is member data.
-
-## Theorem 8 — displayed pairing table
-
-On `Q`, the displayed pairing is ordinary multiplication
-`B(x, y) = x y`. In particular
+Of the `64` occupancy six-tuples, eight have `n = 0` and fifty-six
+are formation-ready. Each of those fifty-six, including the
+thirty-two with two or three nonzero Bloch components, carries the
+unique spectral measure of `ρ`. For `n` with integer direction
+`(a,b,c)` and `k = a^2+b^2+c^2 ∈ {1,2,3}`,
 
 ```text
-B(0, 0) = 0,    B(1, 1) = 1,    B(2, 3) = 6,    B(−1, 4) = −4.
+p_± = (3 ± √k) / 6.
 ```
 
-This is not a source law, not a Newton force, and not a pairing on
-a site-indexed readout.
+Then `p_+ + p_- = 1` and both are positive. This is a probability
+measure on the two rank-1 eigenprojectors, not merely a density
+matrix. It does not pick a coordinate axis and does not pick an
+Aut of a reconstruction. For `n = 0` the measure is absent.
+
+## Theorem 6b — formation probability, draw, Record update
+
+Formation probability is `f(c) = 1` if `n ≠ 0` and `f(c) = 0`
+otherwise. The realized draw is a pick from `{+,−}` with law
+`(p_+, p_-)` when `f = 1`. The Record update on the center is:
+
+- if a record is already present, keep it (permanence);
+- if `f = 0`, the site stays unread;
+- if `f = 1` and the draw is `s`, lock the corresponding spectral
+  projector.
+
+A second update after a lock is the identity. That is the
+composition check for this comparator.
+
+## Theorem 7 — clock and pairing are disconnected extras
+
+The tables `a = 1` and `B(x,y)=xy` still execute, but they are
+not coupled to the local NN law of Theorems 1–6b. They are not
+an autonomous clock or gravity law. Live Admissibility and Record
+do not name them.
 
 ## Theorem 9 — the axioms do not name these tables
 
 Quoted Admissibility says the distribution is determined by, and
 varies with, nearest-neighbor conditions. Quoted Record says a
 record locks one admissible possibility. Neither sentence names the
-tables of Theorems 1–8. `L0` is one member. It is not the unique
-member. It is not adopted.
+tables of Theorems 1–7. `L0` is one member. It is not the unique
+member. It is not adopted. It is an unselected comparator, not a TOE.
 
 ## Mutations
 
 1. Predicate “`ρ(empty) == ρ(+x)`” must fail.
 2. Predicate “opposite pair is formation-ready” must fail.
-3. Predicate “two-axis `n` selects a rank-1 menu” must fail.
+3. Predicate “two-axis `n` has no spectral measure” must fail.
 4. Predicate “live memo names `L0`, Born, or Wick `a = 1` as axiom content” must fail.
 5. Predicate “note adopts `L0` as axiom text” must fail.
 6. Predicate “note claims a Lattice name for the kernel” must fail.
 
 Identity gates call `bloch_of(c)`, `formation_ready(c)`,
-`axis_menu(c)`, `pairing(x, y)`, and `wick_a()`.
+`spectral_measure(c)`, `formation_prob(c)`, `record_update(...)`,
+`pairing(x, y)`, and `wick_a()`.
 
 ## Honest-auditor / Boundary
 
 The algebra is finite: `64` occupancy tuples, `24` integer matrices,
 and `2 × 2` Pauli arithmetic over `Q`. The runner reconstructs `G`,
-evaluates `n` and `ρ` exactly, checks covariance on every pair
-`(R, c)`, and checks the mutation predicates against the live axiom
-memo rather than a working-tree paraphrase.
+evaluates `n` exactly, checks the spectral measure on all 56
+nonzero cells, checks Record update permanence, and checks the
+mutation predicates against the live axiom memo rather than a
+working-tree paraphrase.
 
 Boundary, stated positively. The theorem executes one displayed
-member. It does not classify all cube-covariant laws. It does not
+local-law comparator. Clock and pairing stay disconnected extras. It does not classify all cube-covariant laws. It does not
 select a physical algebra action. It does not rewrite Qubit. It does
 not introduce a pairing table of lattice rotations with Pauli axes.
 It does not pick an automorphism of a two-site corner. QCD is unused.
@@ -263,7 +277,7 @@ the present packet and authors no audit verdict.
 - `L0` is not adopted as axiom content and is not the unique member.
 - Qubit remains `M_2(C)`. It is not flipped to `M_3`.
 - The displayed kernel is not a Lattice name.
-- No Born rule is derived. `Tr(ρ P)` is the instrument of this member.
+- No Born rule is derived. The spectral measure is the instrument of this comparator.
 - No SWAP-corner Aut element is selected.
 - No color or QCD identification is supplied.
 - No Newton force, `G_N`, or `1/r^2` law is supplied.
@@ -273,9 +287,9 @@ the present packet and authors no audit verdict.
 
 The companion runner evaluates `n` and `ρ` on the listed configs,
 checks variation, checks cube covariance of `n` on all of `G` and
-all occupancy tuples, checks the formation predicate, checks the
-axis-aligned lock table, checks that a two-axis `n` selects no
-rank-1 menu, checks the clock and pairing tables, rejects the
+all occupancy tuples, checks that all 56 nonzero cells have a spectral measure,
+checks formation probability and Record-update permanence, checks
+that clock and pairing are marked disconnected, rejects the
 mutation predicates, and verifies the live axiom quotes used above
 are present while a Lattice name for the kernel is absent from that
 memo. Declared audit inputs are this note and the axiom memo.

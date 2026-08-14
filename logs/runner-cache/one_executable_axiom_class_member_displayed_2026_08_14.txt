@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/one_executable_axiom_class_member_displayed_2026_08_14.py
-runner_sha256: 9ca786c35be284d13c4c1f9e91bab9fb75ec31e25fa0a2d02acce57a8eb0ce3a
-input_fingerprint_sha256: 1f06c8487f6376a56e7a2eadced52dce90385f0bbc20b3d4557c88f2034561b4
+runner_sha256: 8a656ed2c5e985e100dba8e065dfeb09db6531915ab0607ea0cd84e6eec5f12b
+input_fingerprint_sha256: 852b16eafb2b3ca638760cb440cc673cb91f5bdd38e123ffbac5ed1ddee76453
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 external_scientific_inputs: none; L0 tables are displayed member data
@@ -28,12 +28,16 @@ PASS: thm4-opposite-not-ready opposite pair is not formation-ready
 PASS: thm4-two-axis-ready two-axis occupancy is formation-ready
 PASS: thm5-plus-x-menu lone +x menu is x-axis with probabilities 2/3 and 1/3
 PASS: thm5-minus-x-menu lone -x menu swaps the x-axis probabilities
-PASS: thm6-two-axis-no-menu two-axis n selects no rank-1 menu
+PASS: thm6-two-axis-has-measure two-axis n has a spectral measure with k=2
+PASS: thm6-total-counts 64 occupancies: 8 with n=0, 56 ready, 56 spectral measures
+PASS: thm6-spectral-probs every ready cell has k in {1,2,3} so p±=(3±√k)/6 is a probability
+PASS: thm6b-formation-prob f=1 on ready cells and f=0 on n=0
+PASS: thm6b-record-update draw locks; n=0 stays blank; permanence keeps an existing lock
 PASS: thm7-wick-a displayed clock table is a=1
 PASS: thm8-pairing-table displayed pairing is multiplication on the listed pairs
 PASS: mutation-empty-equals-plus-x-fails predicate ρ(empty)==ρ(+x) must fail
 PASS: mutation-opposite-ready-fails predicate opposite pair is formation-ready must fail
-PASS: mutation-two-axis-menu-fails predicate two-axis n selects a rank-1 menu must fail
+PASS: mutation-two-axis-no-measure-fails predicate two-axis n has no spectral measure must fail
 PASS: mutation-memo-names-l0-fails predicate live memo names L0 / Born / Wick a=1 as axiom content must fail
 PASS: mutation-note-adopts-fails predicate note adopts L0 as axiom text must fail
 PASS: mutation-lattice-named-fails predicate note claims Lattice-named kernel must fail
@@ -49,7 +53,7 @@ per_site: checked exactly — formation and axis menu live at the plus-shape cen
 per_mode: checked exactly — cube covariance of n on all 24 proper cubic matrices
 per_block: checked exactly — L0 tables run; uniqueness of L0 is not claimed
 lattice_wide: checked and not executed — no law is adopted as axiom text
-TOTAL: PASS=33 FAIL=0
+TOTAL: PASS=37 FAIL=0
 
 ----- stderr -----
 

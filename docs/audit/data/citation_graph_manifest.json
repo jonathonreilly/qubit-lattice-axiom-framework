@@ -1,6 +1,6 @@
 {
- "edge_count": 15623,
- "node_count": 5493,
+ "edge_count": 15625,
+ "node_count": 5494,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -12089,6 +12089,10 @@
   "live_m2_conservative_archive_lock_instrument_bounded_theorem_note_2026-08-14": {
    "deps_hash": "9e2c251b553c",
    "out_degree": 4
+  },
+  "live_m2_typed_event_critical_pair_confluence_boundary_bounded_theorem_note_2026-08-14": {
+   "deps_hash": "ac3c8d928b00",
+   "out_degree": 2
   },
   "local_clock_relation_cycle869_bounded_theorem_note_2026-07-28": {
    "deps_hash": "7c59543ab5ac",

@@ -1,19 +1,19 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle985_neighbour_dependence_record_content_independent_check_2026_08_11.py
-runner_sha256: 6ff60e2f5c3b826d59531894c6d0542fdcbad762fd40b0b0faf925ae435d646f
-input_fingerprint_sha256: a6fcc0a3a34bde0752d095670462afcca369f1a8ed7bd6462d39382a13f37b93
+runner_sha256: dd40b826a2dbc85ab6793347c025dd932ff800aed7553c756d7dd4680e7ad93b
+input_fingerprint_sha256: 83ca5c1387dbfb9a69463bfbed31e8bd0f166643dc65cd1d1e117206c43fc20e
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 CYCLE985_NEIGHBOUR_DEPENDENCE_RECORD_CONTENT_INDEPENDENT_CHECK
 R0_PRIMARY_AST_AND_PINS PASS
 R1_INDEPENDENT_CONTENT_CENSUS PASS :: classes=[['incoming CNOT', 6, 4, 1, 2], ['perpendicular-control TOF', 12, 2, 2, 4], ['opposite-control TOF', 3, 8, 0, 4]]
-R2_INDEPENDENT_READOUT_DUAL PASS :: outcome=SEPARATING_ADMISSIBLE_READOUT_EXISTS; pairs=10
+R2_INDEPENDENT_READOUT_DUAL PASS :: outcome=DECLARED_SEPARATOR_EXISTS; pairs=10
 R3_RECEIPT_CACHE_BINDING PASS
-R4_ACTIVE_CORRUPTION_PROBES PASS :: rejected=6/6
-R5_CONTROLS PASS :: source_reads=3<=6; primary_executed=False; agreement_gate=True
+R4_ACTIVE_CORRUPTION_PROBES PASS :: rejected=9/9
+R5_CONTROLS PASS :: source_reads=5<=6; primary_executed=False; agreement_gate=True
 VERDICT: PRIMARY_SURVIVES_INDEPENDENT_REFUTATION_ATTEMPT
 TOTAL: PASS=6 FAIL=0
 

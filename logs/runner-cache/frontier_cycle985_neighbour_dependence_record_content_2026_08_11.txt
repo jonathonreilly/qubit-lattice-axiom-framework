@@ -1,17 +1,17 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle985_neighbour_dependence_record_content_2026_08_11.py
-runner_sha256: 3d66b2836743808119541536bf7562212a05da84f1149b9f5d5f12f47ff7eff8
-input_fingerprint_sha256: db7786cde9df9554b9e925bd8927e6f129e0cdd1546e5ea349a31056104b73bb
+runner_sha256: d168e92247f45e325b28b5c6a0d99759fb4cf528ed65b2bf6109a8cf7a87232d
+input_fingerprint_sha256: 0508bab90e8d90e7f18431b9290c97639b302bb3816dd774ce2ca11266eb0c7e
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 CYCLE985_NEIGHBOUR_DEPENDENCE_RECORD_CONTENT
 A_LOCKED_CONTENT_CENSUS PASS :: classes=[["incoming CNOT",6,1,2],["perpendicular-control TOF",12,2,4],["opposite-control TOF",3,0,4]]; witnesses=21; separated_pairs=10
-B_READOUT_VISIBILITY PASS :: outcome=SEPARATING_ADMISSIBLE_READOUT_EXISTS; readout=I_one; visible=10/10
+B_READOUT_VISIBILITY PASS :: outcome=DECLARED_SEPARATOR_EXISTS; readout=I_one; visible=10/10
 C_SCOPE PASS :: single_site=True; full_mosaic_claimed=False; selected_readout_claimed=False
-D_CONTROLS PASS :: source_reads=1<=6; pins=True; deterministic=True; agreement_gate=True
+D_CONTROLS PASS :: source_reads=1<=6; pins=True; deterministic=True; agreement_gate=True; record_no_additivity=True
 TOTAL: PASS=4 FAIL=0
 
 ----- stderr -----

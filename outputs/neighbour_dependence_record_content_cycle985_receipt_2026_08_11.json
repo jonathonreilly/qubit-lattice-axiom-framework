@@ -1,5 +1,5 @@
 {
-  "artifact": "neighbour-dependence locked-content and readout bounded theorem primary",
+  "artifact": "conditional locked-content and declared-separator bounded theorem primary",
   "audit_status_authority": "independent audit lane only",
   "checks": {
     "A_LOCKED_CONTENT_CENSUS": true,
@@ -10,15 +10,22 @@
   "controls": {
     "all_inputs_relative_and_present": true,
     "base_is_ancestor_of_head": true,
-    "base_origin_main_commit": "ea0968c71ad46c39c6dacb39f88a18780363b71f",
+    "base_origin_main_commit": "0dfd13c0a383e2ddde5660669bcff662be0e96d2",
     "blob_pins_match": true,
     "blocked_ast_imports": [],
+    "current_record_boundary": {
+      "declared_separator_is_extra_non_axiom_structure": true,
+      "pass": true,
+      "required_sentences_present": true,
+      "retired_collection_structure_absent": true,
+      "section_found": true
+    },
     "determinism_replay": true,
     "input_git_blobs": {
-      "docs/MINIMAL_AXIOMS_2026-06-29.md": "2f5fdd26898f62c17fcabc846761f7785c2eadb1"
+      "docs/MINIMAL_AXIOMS_2026-06-29.md": "bc23300becfe4e4db57153c0e94cfcdf2338da71"
     },
     "input_sha256": {
-      "docs/MINIMAL_AXIOMS_2026-06-29.md": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39"
+      "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
     },
     "literal_audit_input_paths": [
       "docs/MINIMAL_AXIOMS_2026-06-29.md"
@@ -28,7 +35,7 @@
     "runtime_budget_met": true,
     "runtime_budget_seconds": 300,
     "sha_pins_match": true,
-    "stdout_bytes": 519,
+    "stdout_bytes": 535,
     "stdout_limit_bytes": 6000,
     "synthetic_agreement_outcome_accepted": true
   },
@@ -817,7 +824,7 @@
       "additivity_failure_count": 0,
       "analysis": {
         "nonseparation_proof": null,
-        "outcome": "SEPARATING_ADMISSIBLE_READOUT_EXISTS",
+        "outcome": "DECLARED_SEPARATOR_EXISTS",
         "pair_count": 10,
         "pairs": [
           {
@@ -1125,8 +1132,8 @@
           ]
         }
       ],
-      "blind_admissible_example": {
-        "meaning": "record count; admissible but content-blind on equal-size collections",
+      "blind_declared_example": {
+        "meaning": "declared record count; content-blind on equal-size collections",
         "singleton_values": [
           1,
           1
@@ -1213,7 +1220,7 @@
         ]
       },
       "record_content_only": true,
-      "selection_boundary": "the Record axiom permits this separating readout but does not select it or require every admissible readout to separate the contents"
+      "selection_boundary": "the scalar codomain, finite-collection extension, empty value, and additivity are explicit non-axiom structure; Record supplies no existence or physical selection of this separator"
     },
     "C_SCOPE": {
       "binary_M2C_embedding_declared_not_unique": true,
@@ -1222,10 +1229,11 @@
       "established": "in the declared P0/P1 point-mass construction, the exact changing neighbour edges change the unique supported locked content and I_one reads it",
       "formation_site_probability_or_rate_claimed": false,
       "full_mosaic_claimed": false,
-      "generic_axiom_boundary": "distribution variation alone need not force disjoint supports or a different realized draw; the positive result uses the declared P0/P1 point-mass laws",
+      "generic_axiom_boundary": "general varying distributions and their realized draws are outside the quantified domain; the result uses declared P0/P1 point-mass laws",
       "generic_axiom_only_consequence_claimed": false,
       "infinite_simultaneous_translation_uniform_law_claimed": false,
       "point_mass_distribution_constructed_at_finite_cap": true,
+      "record_collection_structure_claimed_as_axiom": false,
       "selected_physical_readout_claimed": false,
       "target_input_fixed_per_conditioned_law": true,
       "tested": "one forming target record at a time on the binary radius-one true-Z3 star, for the three finite deterministic witness classes"
@@ -1233,7 +1241,7 @@
   },
   "integrity_policy": "checks gate construction and reconciliation only; a coherent family-wide agreement outcome passes the same top-level visibility validator",
   "pass": true,
-  "primary_source_sha256": "3d66b2836743808119541536bf7562212a05da84f1149b9f5d5f12f47ff7eff8",
-  "science_digest": "7781fa723e6633f11046cef81ae8e69e45fe43b6989f2f6b47e9afb60dfeb45a",
-  "stdout_sha256": "4f684435699e3aba6a2279a5bb32f013671861cf8e446a5e5da79e5f34c800b4"
+  "primary_source_sha256": "d168e92247f45e325b28b5c6a0d99759fb4cf528ed65b2bf6109a8cf7a87232d",
+  "science_digest": "c9a80352f65b519457e94779f19c494923d7bf411edfbeb671e4b9554d45eac3",
+  "stdout_sha256": "a75514e70b263d92a97b49b49ca504df8e28538dd927a7aa868e0a30868adc4c"
 }

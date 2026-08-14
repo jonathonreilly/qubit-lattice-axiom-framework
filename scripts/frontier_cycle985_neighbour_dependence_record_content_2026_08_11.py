@@ -3,8 +3,8 @@
 
 The finite calculation is conditional on a record forming at the target.  It
 reconstructs the three basis-state target laws directly, enumerates their
-locked contents, and tests the complete additive scalar readout family on the
-binary content alphabet.  Checks gate construction and reconciliation only:
+locked contents, and tests an explicitly declared non-axiom scalar-functional
+family on the binary content alphabet.  Checks gate construction and reconciliation only:
 the same visibility validator accepts a coherent no-separator outcome.
 """
 
@@ -24,15 +24,15 @@ ROOT = Path(__file__).resolve().parents[1]
 CYCLE = 985
 AUDIT_TIMEOUT_SEC = 300
 STDOUT_LIMIT_BYTES = 6_000
-BASE_ORIGIN_MAIN_COMMIT = "ea0968c71ad46c39c6dacb39f88a18780363b71f"
+BASE_ORIGIN_MAIN_COMMIT = "0dfd13c0a383e2ddde5660669bcff662be0e96d2"
 AUDIT_INPUT_PATHS = ("docs/MINIMAL_AXIOMS_2026-06-29.md",)
 EXPECTED_INPUT_SHA256 = {
     "docs/MINIMAL_AXIOMS_2026-06-29.md":
-        "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
+        "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
 }
 EXPECTED_INPUT_BLOBS = {
     "docs/MINIMAL_AXIOMS_2026-06-29.md":
-        "2f5fdd26898f62c17fcabc846761f7785c2eadb1",
+        "bc23300becfe4e4db57153c0e94cfcdf2338da71",
 }
 BLOCKLIST_AST_FRAGMENTS = (
     "cycle977", "cycle980", "cycle982", "cycle983", "cycle984",
@@ -310,7 +310,7 @@ def analyse_visibility(content_pairs: list[dict], basis: tuple[dict, ...]) -> di
         if any(value["delta"] != 0 for value in row["basis_readout_values"])
     ]
     if pair_rows and len(visible) == len(pair_rows):
-        outcome = "SEPARATING_ADMISSIBLE_READOUT_EXISTS"
+        outcome = "DECLARED_SEPARATOR_EXISTS"
         proof = None
     elif pair_rows and not visible:
         outcome = "DECLARED_READOUT_FAMILY_AGREES_ON_ALL_COMPARED_PAIRS"
@@ -373,7 +373,7 @@ def readout_visibility(census: dict) -> dict:
         })
 
     exact_separator = None
-    if analysis["outcome"] == "SEPARATING_ADMISSIBLE_READOUT_EXISTS":
+    if analysis["outcome"] == "DECLARED_SEPARATOR_EXISTS":
         exact_separator = {
             "name": "I_one",
             "singleton_rule": "I_one({record with content c})=c",
@@ -399,13 +399,14 @@ def readout_visibility(census: dict) -> dict:
         "additivity_failure_count": additivity_failures,
         "analysis": analysis,
         "exact_separator": exact_separator,
-        "blind_admissible_example": {
+        "blind_declared_example": {
             "singleton_values": [1, 1],
-            "meaning": "record count; admissible but content-blind on equal-size collections",
+            "meaning": "declared record count; content-blind on equal-size collections",
         },
         "selection_boundary": (
-            "the Record axiom permits this separating readout but does not select it "
-            "or require every admissible readout to separate the contents"
+            "the scalar codomain, finite-collection extension, empty value, and "
+            "additivity are explicit non-axiom structure; Record supplies no "
+            "existence or physical selection of this separator"
         ),
     }
 
@@ -431,9 +432,10 @@ def scope_measurement() -> dict:
         "infinite_simultaneous_translation_uniform_law_claimed": False,
         "generic_axiom_only_consequence_claimed": False,
         "generic_axiom_boundary": (
-            "distribution variation alone need not force disjoint supports or a different "
-            "realized draw; the positive result uses the declared P0/P1 point-mass laws"
+            "general varying distributions and their realized draws are outside the "
+            "quantified domain; the result uses declared P0/P1 point-mass laws"
         ),
+        "record_collection_structure_claimed_as_axiom": False,
     }
 
 
@@ -451,7 +453,7 @@ def validate_readout_measurement(payload: dict) -> bool:
         return False
     if payload["additivity_failure_count"] != 0:
         return False
-    if analysis["outcome"] == "SEPARATING_ADMISSIBLE_READOUT_EXISTS":
+    if analysis["outcome"] == "DECLARED_SEPARATOR_EXISTS":
         separator = payload["exact_separator"]
         expected_values = []
         for pair in analysis["pairs"]:
@@ -505,6 +507,36 @@ def synthetic_agreement_visibility_control() -> bool:
     )
 
 
+def current_record_boundary(axiom_text: str) -> dict:
+    """Read only the live Record clause, excluding historical discussion."""
+    try:
+        record = axiom_text.split("### Record / Fixed Reality", 1)[1].split(
+            "## Qualification", 1
+        )[0]
+    except IndexError:
+        return {"section_found": False, "required_sentences_present": False,
+                "retired_collection_structure_absent": False, "pass": False}
+    normalized = " ".join(record.split())
+    required = (
+        "Records form.",
+        "When present, a record locks exactly one admissible local possibility.",
+        "A site never carries more than one record; records are permanent.",
+        "Only records are readable.",
+        "A readout value is determined by record content alone.",
+        "A site with no record cannot be read.",
+    )
+    forbidden = ("finite additivity", "I(empty)", "scalar functional")
+    required_present = all(sentence in normalized for sentence in required)
+    retired_absent = all(fragment.lower() not in normalized.lower() for fragment in forbidden)
+    return {
+        "section_found": True,
+        "required_sentences_present": required_present,
+        "retired_collection_structure_absent": retired_absent,
+        "declared_separator_is_extra_non_axiom_structure": True,
+        "pass": required_present and retired_absent,
+    }
+
+
 def input_controls() -> dict:
     source = (ROOT / PRIMARY_PATH).read_text(encoding="utf-8")
     tree = ast.parse(source, filename=PRIMARY_PATH)
@@ -524,6 +556,9 @@ def input_controls() -> dict:
         ["git", "merge-base", "--is-ancestor", BASE_ORIGIN_MAIN_COMMIT, "HEAD"],
         cwd=ROOT, check=False, capture_output=True,
     ).returncode == 0
+    record_boundary = current_record_boundary(
+        payloads["docs/MINIMAL_AXIOMS_2026-06-29.md"].decode()
+    )
     return {
         "literal_audit_input_paths": list(input_paths),
         "literal_source_read_count": len(input_paths),
@@ -542,6 +577,7 @@ def input_controls() -> dict:
         "prior_cycle_modules_loaded": False,
         "base_origin_main_commit": BASE_ORIGIN_MAIN_COMMIT,
         "base_is_ancestor_of_head": base_is_ancestor,
+        "current_record_boundary": record_boundary,
     }
 
 
@@ -581,7 +617,8 @@ def render_stdout(receipt: dict) -> str:
         + f" :: source_reads={receipt['controls']['literal_source_read_count']}<=6;"
         + f" pins={receipt['controls']['sha_pins_match'] and receipt['controls']['blob_pins_match']};"
         + f" deterministic={receipt['controls']['determinism_replay']};"
-        + f" agreement_gate={receipt['controls']['synthetic_agreement_outcome_accepted']}",
+        + f" agreement_gate={receipt['controls']['synthetic_agreement_outcome_accepted']};"
+        + f" record_no_additivity={receipt['controls']['current_record_boundary']['pass']}",
     ]
     passed = sum(receipt["checks"].values())
     lines.append(f"TOTAL: PASS={passed} FAIL={len(receipt['checks']) - passed}")
@@ -629,6 +666,7 @@ def run() -> tuple[dict, str]:
         and scope["formation_site_probability_or_rate_claimed"] is False
         and scope["selected_physical_readout_claimed"] is False
         and scope["generic_axiom_only_consequence_claimed"] is False
+        and scope["record_collection_structure_claimed_as_axiom"] is False
         and scope["binary_M2C_embedding_declared_not_unique"] is True
         and scope["point_mass_distribution_constructed_at_finite_cap"] is True
         and bool(scope["tested"] and scope["established"])
@@ -648,13 +686,14 @@ def run() -> tuple[dict, str]:
         and not controls["blocked_ast_imports"]
         and not controls["prior_cycle_modules_loaded"]
         and controls["base_is_ancestor_of_head"]
+        and controls["current_record_boundary"]["pass"]
         and deterministic
         and controls["synthetic_agreement_outcome_accepted"]
         and runtime_budget_met
     )
     receipt = {
         "cycle": CYCLE,
-        "artifact": "neighbour-dependence locked-content and readout bounded theorem primary",
+        "artifact": "conditional locked-content and declared-separator bounded theorem primary",
         "audit_status_authority": "independent audit lane only",
         "integrity_policy": (
             "checks gate construction and reconciliation only; a coherent family-wide "

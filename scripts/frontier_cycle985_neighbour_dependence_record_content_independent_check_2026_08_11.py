@@ -27,6 +27,10 @@ STDOUT_LIMIT_BYTES = 6_000
 PRIMARY_PATH = (
     "scripts/frontier_cycle985_neighbour_dependence_record_content_2026_08_11.py"
 )
+NOTE_PATH = (
+    "docs/NEIGHBOUR_DEPENDENCE_RECORD_CONTENT_CYCLE985_BOUNDED_THEOREM_NOTE_2026-08-11.md"
+)
+AXIOM_PATH = "docs/MINIMAL_AXIOMS_2026-06-29.md"
 PRIMARY_RECEIPT_PATH = (
     "outputs/neighbour_dependence_record_content_cycle985_receipt_2026_08_11.json"
 )
@@ -37,21 +41,25 @@ RECEIPT_PATH = (
     "outputs/neighbour_dependence_record_content_cycle985_independent_check_receipt_2026_08_11.json"
 )
 AUDIT_INPUT_PATHS = (
+    "docs/NEIGHBOUR_DEPENDENCE_RECORD_CONTENT_CYCLE985_BOUNDED_THEOREM_NOTE_2026-08-11.md",
     "scripts/frontier_cycle985_neighbour_dependence_record_content_2026_08_11.py",
     "outputs/neighbour_dependence_record_content_cycle985_receipt_2026_08_11.json",
     "logs/runner-cache/frontier_cycle985_neighbour_dependence_record_content_2026_08_11.txt",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
 )
+BASE_ORIGIN_MAIN_COMMIT = "0dfd13c0a383e2ddde5660669bcff662be0e96d2"
+EXPECTED_NOTE_SHA256 = "6e9d4c6656ebb89feef3121c14483980fde008040624df36d1813a1e8c4aa6e0"
 EXPECTED_PRIMARY_SOURCE_SHA256 = (
-    "3d66b2836743808119541536bf7562212a05da84f1149b9f5d5f12f47ff7eff8"
+    "d168e92247f45e325b28b5c6a0d99759fb4cf528ed65b2bf6109a8cf7a87232d"
 )
 EXPECTED_PRIMARY_RECEIPT_SHA256 = (
-    "570332f2bd8b491f6c39a9d4bbcec701b23304ba9a6f493f3f957b562fc00d01"
+    "73e043bfb040b63bb77331cc5d72418555932f717666831bb821d365ca93d0c6"
 )
 EXPECTED_PRIMARY_INPUT_FINGERPRINT_SHA256 = (
-    "db7786cde9df9554b9e925bd8927e6f129e0cdd1546e5ea349a31056104b73bb"
+    "0508bab90e8d90e7f18431b9290c97639b302bb3816dd774ce2ca11266eb0c7e"
 )
 EXPECTED_PRIMARY_STDOUT_SHA256 = (
-    "4f684435699e3aba6a2279a5bb32f013671861cf8e446a5e5da79e5f34c800b4"
+    "a75514e70b263d92a97b49b49ca504df8e28538dd927a7aa868e0a30868adc4c"
 )
 
 CLASS_SPECS = (
@@ -250,7 +258,7 @@ def independent_readout_result(classes: list[dict]) -> dict:
     deltas = [after - before for _, _, _, _, before, after in pairs]
     visible_count = sum(delta != 0 for delta in deltas)
     if pairs and visible_count == len(pairs):
-        outcome = "SEPARATING_ADMISSIBLE_READOUT_EXISTS"
+        outcome = "DECLARED_SEPARATOR_EXISTS"
     elif pairs and visible_count == 0:
         outcome = "DECLARED_READOUT_FAMILY_AGREES_ON_ALL_COMPARED_PAIRS"
     elif pairs:
@@ -290,10 +298,67 @@ def parse_cache(cache_text: str) -> dict:
     return {"fields": fields, "stdout": stdout}
 
 
+def current_record_boundary(axiom_text: str) -> dict:
+    try:
+        record = axiom_text.split("### Record / Fixed Reality", 1)[1].split(
+            "## Qualification", 1
+        )[0]
+    except IndexError:
+        return {"pass": False}
+    normalized = " ".join(record.split())
+    required = (
+        "Records form.",
+        "When present, a record locks exactly one admissible local possibility.",
+        "A site never carries more than one record; records are permanent.",
+        "Only records are readable.",
+        "A readout value is determined by record content alone.",
+        "A site with no record cannot be read.",
+    )
+    forbidden = ("finite additivity", "I(empty)", "scalar functional")
+    return {
+        "required_sentences_present": all(item in normalized for item in required),
+        "retired_collection_structure_absent": all(
+            item.lower() not in normalized.lower() for item in forbidden
+        ),
+        "pass": all(item in normalized for item in required) and all(
+            item.lower() not in normalized.lower() for item in forbidden
+        ),
+    }
+
+
+def note_contract(note: bytes) -> dict:
+    text = note.decode()
+    normalized = " ".join(text.split())
+    required = (
+        "# Conditional locked-content separation in declared binary point-mass laws",
+        "Those collection properties are extra declared structure, not Record axiom content.",
+        "supplies no scalar/additive collection readout",
+        "explicit non-axiom construction",
+        "assembly into the framework's one fixed, simultaneous, translation-uniform",
+        "negative_assertion_classes: []",
+    )
+    forbidden = (
+        "The axiom licenses `I_one`",
+        "content-only additive scalar readout | used directly",
+        "Record-admissible additive content-only readout",
+    )
+    return {
+        "sha256": sha256(note).hexdigest(),
+        "sha_pin_match": sha256(note).hexdigest() == EXPECTED_NOTE_SHA256,
+        "required_boundary_present": all(item in normalized for item in required),
+        "forbidden_authority_absent": all(item not in text for item in forbidden),
+    }
+
+
 def primary_ast_and_pins(payloads: dict[str, bytes]) -> dict:
     source = payloads[PRIMARY_PATH]
     tree = ast.parse(source, filename=PRIMARY_PATH)
     literal_inputs = ast_literal_assignment(tree, "AUDIT_INPUT_PATHS")
+    literal_base = ast_literal_assignment(tree, "BASE_ORIGIN_MAIN_COMMIT")
+    literal_sha = ast_literal_assignment(tree, "EXPECTED_INPUT_SHA256")
+    literal_blobs = ast_literal_assignment(tree, "EXPECTED_INPUT_BLOBS")
+    axiom = payloads[AXIOM_PATH]
+    note = note_contract(payloads[NOTE_PATH])
     return {
         "source_sha256": sha256(source).hexdigest(),
         "source_git_blob": git_blob(source),
@@ -301,6 +366,15 @@ def primary_ast_and_pins(payloads: dict[str, bytes]) -> dict:
         "primary_reads_only_axiom": literal_inputs == (
             "docs/MINIMAL_AXIOMS_2026-06-29.md",
         ),
+        "review_base_matches": literal_base == BASE_ORIGIN_MAIN_COMMIT,
+        "current_axiom_sha_pin_matches": literal_sha == {
+            AXIOM_PATH: sha256(axiom).hexdigest()
+        },
+        "current_axiom_blob_pin_matches": literal_blobs == {
+            AXIOM_PATH: git_blob(axiom)
+        },
+        "current_record_boundary": current_record_boundary(axiom.decode()),
+        "note_contract": note,
         "primary_has_main_guard": any(
             isinstance(node, ast.If)
             and isinstance(node.test, ast.Compare)
@@ -342,10 +416,13 @@ def readout_agrees(receipt: dict, independent: dict) -> bool:
         == visibility["analysis"]["pair_count"]
         and receipt_pair_signatures == independent["pair_signatures"]
         and independent["basis_agreement_iff_contents_equal"]
+        and "explicit non-axiom structure" in visibility["selection_boundary"]
+        and "Record supplies no" in visibility["selection_boundary"]
+        and "Record axiom permits" not in visibility["selection_boundary"]
     )
     if not common:
         return False
-    if independent["outcome"] == "SEPARATING_ADMISSIBLE_READOUT_EXISTS":
+    if independent["outcome"] == "DECLARED_SEPARATOR_EXISTS":
         return bool(
             separator
             and separator["name"] == "I_one"
@@ -411,10 +488,25 @@ def scope_agrees(receipt: dict) -> bool:
         and scope["continuous_M2_probability_law_claimed"] is False
         and scope["infinite_simultaneous_translation_uniform_law_claimed"] is False
         and scope["generic_axiom_only_consequence_claimed"] is False
+        and scope["record_collection_structure_claimed_as_axiom"] is False
     )
 
 
-def active_corruption_probes(receipt: dict, independent: list[dict], cache: dict) -> dict:
+def record_boundary_agrees(receipt: dict, axiom: bytes) -> bool:
+    observed = receipt["controls"]["current_record_boundary"]
+    independent = current_record_boundary(axiom.decode())
+    return bool(
+        observed["pass"]
+        and observed["required_sentences_present"]
+        and observed["retired_collection_structure_absent"]
+        and observed["declared_separator_is_extra_non_axiom_structure"]
+        and independent["pass"]
+    )
+
+
+def active_corruption_probes(
+    receipt: dict, independent: list[dict], cache: dict, payloads: dict[str, bytes]
+) -> dict:
     probes = {}
 
     mutant = deepcopy(receipt)
@@ -439,12 +531,28 @@ def active_corruption_probes(receipt: dict, independent: list[dict], cache: dict
     mutant["findings"]["C_SCOPE"]["full_mosaic_claimed"] = True
     probes["mosaic_scope"] = scope_agrees(receipt) and not scope_agrees(mutant)
 
-    source_mutant = {path: (ROOT / path).read_bytes() for path in AUDIT_INPUT_PATHS}
+    mutant = deepcopy(receipt)
+    mutant["findings"]["C_SCOPE"]["record_collection_structure_claimed_as_axiom"] = True
+    probes["record_collection_authority"] = scope_agrees(receipt) and not scope_agrees(mutant)
+
+    mutant = deepcopy(receipt)
+    mutant["controls"]["current_record_boundary"]["retired_collection_structure_absent"] = False
+    mutant["controls"]["current_record_boundary"]["pass"] = False
+    probes["current_record_boundary"] = (
+        record_boundary_agrees(receipt, payloads[AXIOM_PATH])
+        and not record_boundary_agrees(mutant, payloads[AXIOM_PATH])
+    )
+
+    source_mutant = dict(payloads)
     source_mutant[PRIMARY_PATH] += b"\n"
     probes["source_pin"] = not primary_ast_and_pins(source_mutant)["source_pin_match"]
 
+    note_mutant = dict(payloads)
+    note_mutant[NOTE_PATH] += b"\n"
+    probes["note_pin"] = not primary_ast_and_pins(note_mutant)["note_contract"]["sha_pin_match"]
+
     corrupted_stdout = cache["stdout"].replace(
-        "SEPARATING_ADMISSIBLE_READOUT_EXISTS", "DECLARED_READOUT_FAMILY_AGREES"
+        "DECLARED_SEPARATOR_EXISTS", "DECLARED_READOUT_FAMILY_AGREES"
     )
     probes["cached_headline"] = (
         sha256(corrupted_stdout.encode()).hexdigest() != EXPECTED_PRIMARY_STDOUT_SHA256
@@ -487,7 +595,7 @@ def run() -> tuple[dict, str]:
     ast_pins = primary_ast_and_pins(payloads)
     independent = independent_class_rows()
     readout = independent_readout_result(independent)
-    probes = active_corruption_probes(primary_receipt, independent, cache)
+    probes = active_corruption_probes(primary_receipt, independent, cache, payloads)
 
     cache_fields = cache["fields"]
     cache_binding = bool(
@@ -527,6 +635,13 @@ def run() -> tuple[dict, str]:
             ast_pins["source_pin_match"]
             and ast_pins["primary_reads_only_axiom"]
             and ast_pins["primary_has_main_guard"]
+            and ast_pins["review_base_matches"]
+            and ast_pins["current_axiom_sha_pin_matches"]
+            and ast_pins["current_axiom_blob_pin_matches"]
+            and ast_pins["current_record_boundary"]["pass"]
+            and ast_pins["note_contract"]["sha_pin_match"]
+            and ast_pins["note_contract"]["required_boundary_present"]
+            and ast_pins["note_contract"]["forbidden_authority_absent"]
         ),
         "R1_INDEPENDENT_CONTENT_CENSUS": bool(
             compare_receipt(primary_receipt, independent)
@@ -537,7 +652,10 @@ def run() -> tuple[dict, str]:
                 for row in independent
             )
         ),
-        "R2_INDEPENDENT_READOUT_DUAL": readout_agrees(primary_receipt, readout),
+        "R2_INDEPENDENT_READOUT_DUAL": bool(
+            readout_agrees(primary_receipt, readout)
+            and record_boundary_agrees(primary_receipt, payloads[AXIOM_PATH])
+        ),
         "R3_RECEIPT_CACHE_BINDING": cache_binding,
         "R4_ACTIVE_CORRUPTION_PROBES": all(probes.values()),
         "R5_CONTROLS": bool(

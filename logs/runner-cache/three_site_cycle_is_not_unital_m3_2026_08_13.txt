@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/three_site_cycle_is_not_unital_m3_2026_08_13.py
-runner_sha256: 4ff0423fa0826cba9703d39c72be9854760cef0ba0624bab3d56d83ec4b5f12a
-input_fingerprint_sha256: 8eb36fabb51cd2aa4430f5e22b43ad2abc987ff3f5aa8f62db4aa10ac7af82c6
+runner_sha256: 414de0a23be6045e127a8309fc4eaa33e3e3053c250bf6aa3564ef9cbef2a77d
+input_fingerprint_sha256: 366c7aefcfd9ab3f2c7a3cac136487f53026dbee2af2ee4d111d49faa6d20e7e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 external_scientific_inputs: current axiom wording is source-bound; no observational or fitted inputs are used
@@ -29,7 +29,7 @@ PASS: mutation-dim-cstar-9 predicate dim C*(U) == 9 fails
 PASS: mutation-3-divides-8 predicate 3 | 8 fails
 PASS: machine-status-contract the source uses the required leftover and bounded-support status fields
 PASS: type-separation-surface the note keeps U distinct from the Bloch Ad_R orbit and from ad(su(3))
-PASS: leftover-surface Lattice+Qubit supply H and the displayed cycle; Record does not lock U; leftover not adopted
+PASS: leftover-surface tensor and U are displayed composite inputs; Record does not lock U; leftover not adopted
 PASS: claim-type-contract the author hint uses the exact bounded-theorem enum
 PASS: canonical-nonmutation the axiom memo is not rewritten with the site-cycle or a color axiom
 PASS: audit-input-paths AUDIT_INPUT_PATHS is the declared note-and-axiom string-literal tuple

@@ -22,8 +22,12 @@ audit verdict and predicts none.
 
 ## Result Up Front
 
-Lattice plus Qubit supply three sites and therefore the composite Hilbert
-space `H = (C^2)^{⊗3} ≅ C^8`. On that space the site-cycle map
+The three-qubit tensor `H = (C^2)^{⊗3} ≅ C^8` and the site-cycle
+unitary below are displayed composite inputs, not consequences of the
+four minimal axioms. Lattice names sites of `Z^3`. Qubit names the
+one-site algebra `M_2(C)`. Neither sentence names a three-site Hilbert
+space or a cyclic permutation of tensor factors. Conditional on those
+displayed inputs, the site-cycle map
 
 `U |q1 q2 q3⟩ = |q2 q3 q1⟩`
 
@@ -202,15 +206,15 @@ commutative associative `*`-algebra. Dimension, commutativity, and category
 In particular the three-cycle on sites is not the Bloch triad on one site,
 and it is not `SU(3)`.
 
-## Theorem 5 — Axioms Supply The Map; Leftover Not Adopted
+## Theorem 5 — Inputs Are Displayed; Leftover Not Adopted
 
-Lattice plus Qubit supply three sites and therefore `H` and this
-permutation as a displayed map. Lattice supplies sites of `Z^3` and
-therefore any three distinct sites. Qubit supplies a local possibility
-domain with algebraic presentation `M_2(C)` at each site, and therefore
-the composite Hilbert space `H = (C^2)^{⊗3}` together with its product
-basis. The site-cycle permutation is then a displayed linear map on that
-basis.
+Lattice supplies sites of `Z^3`. Qubit supplies a local possibility
+domain with algebraic presentation `M_2(C)` at each site. Those
+sentences do not supply the composite Hilbert space
+`H = (C^2)^{⊗3}` or the site-cycle permutation. The three-site tensor
+and the cyclic unitary `U` are displayed composite inputs. Conditional
+on those inputs, `C*(U)` is the commutative three-dimensional algebra
+proved above.
 
 They do not name QCD, SU(3), or a color axiom. They do not
 rewrite the one-site algebra from `M_2(C)` to `M_3(C)`. Admissibility

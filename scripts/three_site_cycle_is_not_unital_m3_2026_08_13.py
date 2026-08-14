@@ -323,11 +323,11 @@ def main() -> int:
     )
     checks.check(
         "leftover-surface",
-        "Lattice+Qubit supply H and the displayed cycle; Record does not lock U; leftover not adopted",
+        "tensor and U are displayed composite inputs; Record does not lock U; leftover not adopted",
         all(
             phrase in normalized_note
             for phrase in (
-                "Lattice plus Qubit supply three sites",
+                "displayed composite inputs",
                 "They do not name QCD, SU(3), or a color axiom",
                 "Record does not lock `U`.",
                 "leftover displayed map and is not adopted",

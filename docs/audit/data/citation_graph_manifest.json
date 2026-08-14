@@ -1,6 +1,6 @@
 {
- "edge_count": 15653,
- "node_count": 5509,
+ "edge_count": 15656,
+ "node_count": 5510,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -19420,6 +19420,10 @@
   },
   "witness_family_completeness_cycle977_bounded_theorem_note_2026-08-10": {
    "deps_hash": "c3ea8bb0eb34",
+   "out_degree": 3
+  },
+  "witness_orbit_multiplicity_cycle980_bounded_theorem_note_2026-08-11": {
+   "deps_hash": "e7fb4030592e",
    "out_degree": 3
   },
   "wolfenstein_lambda_a_product_cancellation_narrow_theorem_note_2026-05-10": {

@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_incidence_adm_depth_two_sourced_constraint_record_cadence_boundary_2026_08_14.py
+runner_sha256: d5d7f3258309fe0cff1d6ab5a9e22f71753848bc4ccacfec9417b8c3910e914f
+input_fingerprint_sha256: 9d78b74ec98e3dbd36740619213d1dd7ca92c25f9a8b3dfb3057a462121c989d
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 25.42
+status: ok
+----- stdout -----
+[PASS] A-authority-and-parent-bindings: the content-addressed current foundation and Blocks 53, 67, and 77 are bound without imp...
+[PASS] B-full-linear-adm-polynomial-identities-and-cubic-covariance: the ADM complex closes exactly and is the canonical decomposition of Block 77's ten-comp...
+       modes=6065; identity/covariance=1.421e-14/1.776e-15; ranks H/M/TT={1}/{3}/{4}; Block77 bridge cases/error=12130/2.220e-15; normal...
+[PASS] C-raw-finite-range-potential-and-depth-two-macro: the staggered spatial potential and complete homogeneous macro transfer are integer-Laur...
+       potential/macro support=(19, 1, 2)/(57, 2, 3); periodicity/Hermiticity/raw covariance=6.939e-16/1.241e-16/1.332e-15
+[PASS] D-two-tt-symplectic-full-zone-positive-depth-two-transfer: all nonzero L=3 through L=12 modes have two TT pairs, exact symplecticity, unit-circle t...
+       modes/stable=6065/6065; TT/symplectic/modulus=7.105e-15/4.599e-15/2.554e-15; min shadow=0.235018
+[PASS] E-front-loaded-source-propagates-all-four-einstein-constraints: the (2,0) kick placement carries energy and momentum constraints across every signed neu...
+       modes=13056; source Ward=9.930e-16; failures=0; max constraint=1.470e-14
+[PASS] F-equal-and-late-source-placement-hostile-controls: equal and late stress splitting fail the generic sourced Hamiltonian midpoint while the ...
+       equal failures/max=11064/4.000000; late failures/max=11064/8.000000
+[PASS] G-source-weight-uniqueness-in-supplied-kick-first-order: midpoint and endpoint constraint equations derive the unique real weights (2,0) without ...
+       samples=216; rank=2; weights=[2.00000000e+00 3.76454738e-16]; residual=4.441e-15
+[PASS] H-cycle713-offset-decoder-supplies-the-incoming-source-segment: the content/frame-defined transverse offset maps Q to O_s and every later head finalizat...
+       branches=96; failures=0; induction checks=576; directions=6
+[PASS] I-cycle713-no-birth-repair-and-isolated-zero-mode-boundary: Cycle713 uses its literal incoming hop, while genuinely isolated positive compact creati...
+       rank C(0)=0; isolated birth residual=1.0; boundary acknowledged=True
+[PASS] J-record-cadence-ontology-selection-and-no-go-scope: the linear cadence result is separated from physical Record compilation, coupling/debit,...
+AXIOM_AUTHORITY: origin/main construction commit=b02f50a9cfb8ca57c2dbe7026d06487947d22331 immutable minimal-axiom blob=bc23300becfe4e4db57153c0e94cfcdf2338da71; no removed scalar-I/additivity premise is imported
+N5_CERTIFICATE: 6065 nonzero L=3..12 modes, 12130 Block77 canonical bridge cases, 24 cubic frames, 13056 signed two-transverse-axis neutral source modes, 96 Cycle713 event branches, four Einstein constraints, and both internal half steps are resolved
+per_element: every spatial field and momentum coordinate, lapse row, three shift rows, and source-weight coefficient is checked; the physical source census injects diagonal ray stress only
+per_site: translation-representative vertex stress, face momentum flux, radius-one Q-to-O_s source hop, transverse head offset, and six-step continuation are checked on local carriers
+per_mode: all 6065 nonzero L=3 through L=12 spatial modes and all 13056 declared L=3 through L=8 two-transverse-axis neutral signed-source modes include even pi corners
+per_block: current-axiom binding, Block77 canonical decomposition, ADM identities, raw locality/covariance, TT stability, source conservation, constraints, coefficient uniqueness, and Cycle713 decoding are checked separately
+lattice_wide: checked and not executed — no physical same-M2 source compiler, gravity-state Record encoder, positive-mean boundary, exchange/debit law, or nonlinear selected gravity law is supplied
+SCHEDULE: the derived kick-first weights are (2,0); all 13056 source modes propagate four constraints, while equal and late placement fail 11064 modes
+BLOCK77_BRIDGE: cases=12130 residual=2.220e-15; derived normalization Ch/Mpi/first-kick/total-impulse=[1. 2. 2. 1.]
+CYCLE713: Y_n=H_n+u_s keeps the physical source at O_s; Q->O_s is the incoming segment, so no birth impulse is needed on this conditional single front
+SCOPE: partial-positive linear cadence and source-decoder construction; no physical Record typing, coupling/debit, boundary selection, nonlinear completion, retention, obligation retirement, or TOE movement
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

@@ -448,3 +448,18 @@ impossibility, or an axiom-necessity conclusion from Block 77.  Reopen the
 negative gate only when the live normalized route families are attempted or
 excluded by current retained authority.  Until then the exact one-tick count
 is a formulation-specific boundary inside a partial-positive packet.
+
+## Block 78 Full linear cadence / Record-compiler partial narrowing
+
+| Scoped negative considered | Exact evidence | Failing N1--N8 items | Demoted disposition | Live/reopen routes |
+|---|---|---|---|---|
+| the sourced Einstein constraints cannot propagate through a positive finite-depth transfer, or the first Cycle713 gravity vertex necessarily creates its source from nothing | exact ADM polynomial complex on all 6,065 nonzero `L=3,...,12` modes; positive depth-two TT transfer `6065/6065`; all four constraints propagated on 13,056 signed neutral source modes spanning both transverse neutral axes; source weights `(2,0)` derived as the unique real solution within the supplied kick-first order; literal `Q -> O_s` incoming segment and offset continuation on all 96 signed event branches | `N1` fails because reordered, auxiliary, implicit, physical Record/M2 compiler, boundary/reservoir, nonlinear, and selected-law families remain untested by retained authority; `N7` gives concrete time-symmetric, auxiliary-carrier, and continuous-Record steelmen | `partial-narrowing`; ship the conditional positive interior cadence and Cycle713 incoming-segment repair only; no universal cadence, Record-compiler, gravity, isolated-birth, ontology, or axiom-necessity no-go | drift-first/time-symmetric source quadrature; auxiliary or implicit local transfer; same-`M2` source typing and permanent-Record gravity-state compiler; open/reservoir positive-mean sector; coupling/work debit; nonlinear Regge/Palatini/BF/teleparallel law and physical selection |
+
+The former interior half-step-schedule and conditional Cycle713
+incoming-segment geometry seams are constructively closed by this candidate,
+but no tracked obligation retires before independent retention.  Physical
+source typing and macro cadence remain open.  An actually isolated positive
+compact birth still has a unit zero-mode defect; that named boundary is not
+promoted into a general matter or gravity no-go.  Reopen any negative only
+after the live families above are attempted or excluded by current retained
+authority.

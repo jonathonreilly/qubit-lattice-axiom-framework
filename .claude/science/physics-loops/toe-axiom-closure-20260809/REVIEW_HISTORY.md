@@ -2888,3 +2888,39 @@ instance or Fourier census.
   This is significant decoded-interface progress and zero scored TOE
   progress. No canonical edit, audit verdict, retained status, or
   `review-loop` occurs.
+
+## Block 68 Construction And Independent Full-Science Recheck
+
+- Latest-PR sweep found Block67 PR #6266 still open and `CLEAN`. New PRs
+  #6267--#6268 are bounded C3/type diagnostics on `main`; they do not supply
+  a retained color/chirality selector, Record instrument, source law, or
+  gravity bridge and therefore do not alter this block's scope or base.
+- The review-loop axiom/landing branch is owned elsewhere and is untouched.
+  This worktree has no axiom or registered-primitive path change.
+- Derived the convention-relative unique rank-ten source covector and exact
+  `Gamma^Tj=2gA(q.d-omega)u`. The mixed-coordinate factor two, time-component
+  sign, worldline shell, and one global normalization are all explicit.
+- All six axial sources solve the conditional Block44 operator both at generic
+  rank-six compatible momenta and on the matched rank-four light cone. The
+  original full-edge source reduction requires the nonmetric stationary Schur
+  correction and satisfies the exact analytic metric/gauge intertwiner.
+- The original 15-edge orientation covers only three future signs. The 22-edge
+  time-reflection union covers six. Across every Fourier mode on periodic
+  `L=3,...,8`, 6,528 nonzero neutral direction-mode sources have max Ward
+  `7.84e-15`, complete-null overlap `3.53e-11`, and direct unprojected solve
+  residual `3.91e-11`; the lone compact positive line retains residual
+  `7.784571`.
+- Primary/cache is `PASS=10 FAIL=0`; nine named mutations each fail exactly
+  one aggregate check. Graph registration is `5,514/15,819`, out-degree eight.
+  Vocabulary, premise purity, model normalization, Python/YAML, cache, and
+  whitespace checks pass; strict audit lint has zero errors.
+- An independent read-only science agent reproduced all 6,528 source/mode
+  cases and accepts the exact positive boundary. It rejects a completed-gravity
+  interpretation because the reflected union still has a 13-dimensional
+  constant fiber, the common physical normalization is free, and source/clock/
+  transfer selection is absent.
+- The broad no-go gate fails. This is significant conditional linear-gravity
+  interface progress but zero scored TOE movement and zero obligation
+  retirement before independent audit. After one capped common-metric joint-law
+  decision, the portfolio shifts to higher-fanout readout/register and
+  chirality roots rather than another gravity carrier or TT variant.

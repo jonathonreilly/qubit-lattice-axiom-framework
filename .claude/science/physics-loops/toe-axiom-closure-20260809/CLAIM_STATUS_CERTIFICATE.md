@@ -2208,3 +2208,62 @@ The theorem note contains the full N1--N8 tables. The campaign disposition is:
 Gate status is **FAIL — partial-narrowing**. The failing routes are recorded in
 `NO_GO_LEDGER.md`; a universal instrument no-go, `f<1` obstruction, gravity
 no-go, or axiom-necessity claim is forbidden.
+
+## Block 68 Claim Status Certificate
+
+- Coordinate theorem: after the fixed Block67 `(t,x,y,z)` to Block44
+  `(x,y,z,t)` permutation, symmetric variational pairing uniquely gives
+  diagonal weight one and off-diagonal weight two. The map has rank ten and
+  preserves even `T00/Tij` plus odd signed `T0i` on all six axes.
+- Ward theorem: `Gamma(p)^T j=2gA(q.d-omega)(d,1)` exactly. The source is
+  compatible on its worldline support; no whole-null-cone claim is made.
+- Conditional Lorentzian response: all six sources solve Block44 at two
+  generic off-shell controls with operator rank six and at matched axial null
+  controls with rank four; maximum source/solve residual is `1.884e-15`.
+- Full-edge intertwiner: `M C=-iG_edge` holds to `4.25e-16`; the rank-six
+  stationary Schur source requires its nonmetric correction and approaches
+  the predicted mixed-edge source with an `O(p^2)` residual.
+- Reflected carrier: the original 15-edge orientation covers three future
+  axial signs; the supplied 22-edge reflection union covers all six with exact
+  common relative source shape up to the disclosed `sqrt(2)` edge-length
+  normalization.
+- Finite-frequency inventory: 6,528 nonzero neutral direction-mode sources on
+  periodic `L=3,...,8` have max Ward `7.84e-15`, complete-null overlap
+  `3.53e-11`, and unprojected solve residual `3.91e-11`. Nullities are four or
+  five. A lone positive `L=5` line retains zero-mode residual `7.784571`.
+- Hostile controls: wrong coordinate order, omitted off-diagonal factor,
+  off-shell source, flipped mixed sign, omitted nonmetric source correction,
+  original-only carrier, dropped closure edge, retained compact zero mode,
+  and broadened scope each fail exactly one aggregate check.
+- Evidence: primary/cache `PASS=10 FAIL=0`; graph registration is
+  `5,514/15,819`, out-degree eight; an independent read-only check reproduced
+  all 6,528 declared source-mode solves and accepted the exact claim boundary.
+- Scope: `bounded_theorem`, unaudited and unretained. Source typing, cadence,
+  one physical coupling, the 13-to-10 common-metric law, Lorentzian
+  finite-frequency transfer, nonlinear completion, axiom adoption, obligation
+  retirement, and TOE score movement remain open. No `review-loop` or axiom
+  branch is touched.
+
+### Block 68 No-Go Discipline Checklist
+
+- N1 — **FAIL** for every broad gravity/source negative: continuum, reflected
+  union, nonlocal, open/fixed-global-mode, common-metric, cross-orientation,
+  and Record-native joint-law routes remain live.
+- N2 — physical source typing, cadence, normalization, common metric, physical
+  transfer, nonlinear completion, and same-M2 instrument are independent.
+- N3 — uniqueness is convention-relative; finite-frequency means Euclidean
+  edge-level; the source shell is not equated with the graviton shell.
+- N4 — every direct source and line range is listed with its unimported
+  residual in the theorem note.
+- N5 — cache stdout names per-element, per-sample, per-block, lattice-wide,
+  and scope-boundary resolution explicitly.
+- N6 — continuum-only, fixed-global-mode, reflected-union, refined-cell, and
+  common-metric partial closures remain live.
+- N7 — the strongest steelman succeeds: the reflected carrier removes the
+  all-six source obstruction; a joint common-metric law could still close the
+  linear candidate.
+- N8 — earlier vertical-line, compact-zero, orientation, and signed-current
+  failures are not recycled after their constructive repairs.
+
+Gate status is **FAIL — partial-narrowing**. Gravity survives; only the named
+law-selection and nonlinear walls may be reported.

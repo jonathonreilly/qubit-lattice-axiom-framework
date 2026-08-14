@@ -1122,3 +1122,30 @@ the reversible decoder preparation. It does not compile the irreversible
 joint CP dilation or embed the abstract Record patch on the same M2 carrier.
 Full-Z3 scheduling, collisions, nonlinear gravity, law adoption, audit verdict,
 retention, TOE score movement, and `review-loop` remain open.
+
+## Block 68 Assumptions And Imports
+
+Block 68 imports Blocks 44, 47, 48, 67, the closed-helix construction, and the
+joint-law cut as conditional typed surfaces only. It recomputes the ten-source
+coordinate map, Ward contraction, conditional Lorentzian solves, analytic
+metric/gauge identity, nonmetric stationary source elimination, reflected
+direction inventory, closed-line telescoping sources, complete null overlap,
+and direct full-edge solves. None of the parents is promoted to retained law.
+
+The map is unique only after the supplied Block44 time index, future
+orientation, symmetric-coordinate pairing, and Block67 stored proper-cubic
+frame are fixed. One global source density/coupling remains free. The unit
+head cadence `u_t=1`, the diagnostic Lorentzian signature, and the identification
+of the head charge with physical stress are explicit conditional premises.
+
+The reflected finite-frequency result is Euclidean edge algebra. It does not
+import a Lorentzian Bloch-time interpretation, physical inner product, positive
+transfer, or Record clock. Neutral line pairing is a signed/background-
+subtracted compact ensemble, not a positive isolated mass. Open/infinite and
+fixed-global-mode positive-source routes remain live.
+
+The 22-edge union is not imported as one ten-component metric: its three
+relative mixed-time flat directions remain explicit. No common-metric quotient,
+cross-orientation action, source normalization, action coefficient, nonlinear
+self-source, collision/acceleration law, axiom adoption, audit verdict,
+retention, TOE score movement, or `review-loop` is imported.

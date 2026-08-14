@@ -12,7 +12,7 @@ runner: scripts/admissibility_gaussian_second_moment_quantile_decoder_effect_quo
 # Gaussian Second-Moment Density Operator And Quantile Event Partition
 
 **Date:** 2026-08-10
-**Type:** bounded theorem and constructive axiom-interface test
+**Type:** bounded_theorem
 **Scope:** one `M_2(C)` site, the declared Hermitian-neighbor-average Gaussian
 family, and supplied ordered finite effect menus.
 **Audit-status authority:** independent audit lane only. This note authors no

@@ -1,0 +1,49 @@
+===== runner cache v1 =====
+runner: scripts/two_cube_l1_horizon_equals_diameter_2026_08_14.py
+runner_sha256: f0c2e64f1a34f285ce870dedecea1a32809e29879ad3e7ec0664f9b560a81caa
+input_fingerprint_sha256: 24524969e68423041135028764491efafa8a4fce6c0b8555a8f6d82c83c4d270
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+L1 horizon equals the patch diameter
+AUDIT_INPUT_PATHS:
+  docs/TWO_CUBE_L1_HORIZON_EQUALS_DIAMETER_BOUNDED_THEOREM_NOTE_2026-08-14.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+scope: supplied two-cube L1 patch; horizon versus diameter
+PASS: audit-input-paths-exist
+PASS: audit-input-paths-unique-relative
+PASS: audit-timeout-declared
+PASS: lattice-quote-present
+PASS: record-form-quote-present
+PASS: hygiene-avoids-'G_N'
+PASS: hygiene-avoids-'1/r'
+PASS: hygiene-avoids-'1/r^2'
+PASS: hygiene-avoids-'Lattice-named'
+PASS: hygiene-avoids-'not a TOE'
+PASS: hygiene-avoids-'exhausted'
+PASS: hygiene-avoids-'only route'
+PASS: hygiene-avoids-'we adopt'
+PASS: hygiene-avoids-'Codex'
+PASS: hygiene-avoids-'L_phys'
+PASS: note-has-no-runner-cache-path
+PASS: note-has-no-citation-manifest
+PASS: patch-has-twelve-sites
+PASS: shared-face-is-x-equals-one
+PASS: diameter-is-4
+PASS: diameter-attained-at-211
+PASS: not-full-at-t3
+PASS: full-at-t4
+PASS: first-saturating-tick-equals-diameter
+per_element: 12 distances
+per_site: (2,1,1) attains diameter 4
+per_mode: horizon
+per_block: diameter
+lattice_wide: checked and not executed
+TOTAL: PASS=24 FAIL=0
+
+----- stderr -----
+

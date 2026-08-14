@@ -483,7 +483,12 @@ review-only flags contradict the drain's land-end-to-end contract).
    landed=""
    for attempt in 1 2 3 4; do
      git cherry-pick --abort >/dev/null 2>&1 || true
-     if ! { git fetch -q origin && git switch -q --detach origin/main; }; then
+     # Name the destination explicitly: isolated/partial repos may have no
+     # remote.origin.fetch refspec, in which case a plain fetch leaves the
+     # local origin/main stale and creates fake non-fast-forward "races".
+     if ! { git fetch -q origin \
+              +refs/heads/main:refs/remotes/origin/main \
+            && git switch -q --detach origin/main; }; then
        sleep 3; continue
      fi
      if ! git cherry-pick "${COMMITS[@]}" >/dev/null 2>&1; then
@@ -510,7 +515,7 @@ review-only flags contradict the drain's land-end-to-end contract).
      echo "FAILED: landing did not complete after 4 attempts" >&2
      exit 1
    fi
-   git fetch -q origin
+   git fetch -q origin +refs/heads/main:refs/remotes/origin/main
    if ! git merge-base --is-ancestor "$landed" origin/main; then
      echo "FAILED: $landed not contained in origin/main" >&2
      exit 1
@@ -658,7 +663,9 @@ science in shared files.
 For every PR before integration:
 
 ```bash
-git fetch origin main pull/<N>/head:refs/tmp/pr-<N>
+git fetch origin \
+  +refs/heads/main:refs/remotes/origin/main \
+  pull/<N>/head:refs/tmp/pr-<N>
 pr_base=$(git merge-base origin/main refs/tmp/pr-<N>)
 comm -12 \
   <(git diff --name-only "$pr_base"..origin/main | sort) \

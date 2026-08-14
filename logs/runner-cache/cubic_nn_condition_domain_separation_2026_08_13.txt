@@ -1,0 +1,50 @@
+===== runner cache v1 =====
+runner: scripts/cubic_nn_condition_domain_separation_2026_08_13.py
+runner_sha256: 76abfe9cf1be651b0bb8c91f1f472458b09da8c080d2876dd68a4b3388e88186
+input_fingerprint_sha256: 710b924cd1ae61cf08978a9a3a31837bdd49eb13873e1f9b7056b47b1a6836e7
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+external_scientific_inputs: current Lattice, Admissibility, and Record boundaries plus the August 10 and finite-dyadic parent interfaces are source-bound; no observations or fits
+integrity_reads: this runner, its note, the axiom memo, and the two declared parent notes; no other scientific inputs
+construction: exact cubic condition domains and an explicitly supplied nonconstant conditional product kernel
+negative_scope: direct coordinate omission does not itself force stochastic independence, fair margins, formation, or a physical compiler
+PASS: audit-inputs all four declared source-bound inputs exist
+PASS: source-lattice current cubic nearest-neighbor wording is pinned
+PASS: source-admissibility current local-distribution wording is pinned
+PASS: source-record-boundary current lock/content/unreadable-at-absence and scalar retirement are pinned
+PASS: source-formation-boundary formation site/probability/rate remains outside Admissibility
+PASS: source-parent-aug10 registered-partition construction remains the August 10 interface
+PASS: source-parent-dyadic finite-dyadic parent keeps the auxiliary law and physical compiler open
+PASS: neighbor-cardinality every executed open neighborhood has six integer sites
+PASS: origin-list N(0) is exactly the six axial unit sites
+PASS: adjacent-visibility the origin is a direct condition coordinate at e1
+PASS: distant-omission the origin is absent from N(2e1) and N(3e1)
+PASS: distance-values declared axial graph distances are exact
+PASS: spacing3-disjoint declared spacing-3 open neighborhoods are pairwise disjoint
+PASS: spacing3-origin-domain the three domains contain 18 sites and omit the origin and N(0)
+PASS: spacing2-contrast the axial spacing-2 pair shares exactly e1
+PASS: adjacent-open-domains adjacent open neighborhoods are disjoint, so spacing 3 is sufficient rather than minimal
+PASS: intersection-characterization within an exhaustive 5^3 box, distinct open neighborhoods intersect exactly at graph distance two
+PASS: kernel-normalization the supplied three-site Bernoulli product kernel sums exactly to one
+PASS: origin-invariance a change only at the excluded origin coordinate leaves the nonconstant product kernel unchanged
+PASS: nonvacuous-condition-use changing one used support coordinate changes the product kernel
+PASS: adjacent-not-guaranteed an allowed nonconstant kernel on N(e1) can use the visible origin coordinate
+PASS: correlated-environment distinct support coordinates can be fair yet perfectly correlated
+PASS: marginal-independence-not-forced the correlated joint differs from the product of its fair margins
+PASS: fairness-not-forced valid Bernoulli margins need not equal one half
+PASS: formation-not-derived the source-bound formation residual is not replaced by geometry
+PASS: mutation-moore a diagonal distance-two site excludes the origin under six-neighbor adjacency but includes it under Moore adjacency
+PASS: mutation-overlap replacing spacing 3 by the declared spacing-2 axis family breaks disjointness
+PASS: note-contract machine fields, semantic boundary, N1-N8, and forbidden-phrase hygiene hold
+per_element: origin visibility and omission are checked on named cubic sites and exact six-coordinate domains
+per_site: supplied local kernels are tested with nonconstant dependence on an actual nearest-neighbor coordinate
+per_mode: checked and not executed — no spectral or harmonic mode claim occurs in this finite graph theorem
+per_block: the three-site conditional product and two-site correlated-environment counterexample are executed
+lattice_wide: checked and not executed — no global independence, formation, or physical register compiler is claimed
+TOTAL: PASS=28 FAIL=0
+
+----- stderr -----
+

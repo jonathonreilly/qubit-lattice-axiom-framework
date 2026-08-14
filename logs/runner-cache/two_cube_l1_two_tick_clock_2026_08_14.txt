@@ -1,0 +1,60 @@
+===== runner cache v1 =====
+runner: scripts/two_cube_l1_two_tick_clock_2026_08_14.py
+runner_sha256: 20b9621b7fba62f307cc68e7c10fade97feed580b430337dadcfe5b404c23545
+input_fingerprint_sha256: 6df1a34b111eb6c251eec7289bb890d0d273f72d0e1b3ace5ca2a9bf49cc94ec
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+Two-cube L1 two-tick clock
+AUDIT_INPUT_PATHS:
+  docs/TWO_CUBE_L1_TWO_TICK_CLOCK_BOUNDED_THEOREM_NOTE_2026-08-14.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+scope: declared two-cube carrier and supplied one-neighborhood tick; no time metric and no rate object
+census: seed=1 t1_locks=4 t1_F=3 t1_rhoA=4 t2_locks=8 t2_F=7 t2_rhoA=7 F_tick2=4
+locks_1=((0, 0, 0), (0, 0, 1), (0, 1, 0), (1, 0, 0))
+locks_2=((0, 0, 0), (0, 0, 1), (0, 1, 0), (0, 1, 1), (1, 0, 0), (1, 0, 1), (1, 1, 0), (2, 0, 0))
+b_only_2=((2, 0, 0),)
+PASS: audit-input-paths-exist
+PASS: audit-input-paths-unique-normalized
+PASS: audit-timeout-declared
+PASS: cache-write-disabled
+PASS: source-occurrence-sentence-current
+PASS: source-lock-sentence-current
+PASS: source-permanence-and-unread-absence-current
+PASS: source-no-time-metric-or-production-process
+PASS: seed-size-one
+PASS: two-cube-carrier-census
+PASS: tick1-neighborhood-of-seed
+PASS: tick1-census  (|locks|=4 F=3 rho(A)=4)
+PASS: tick2-census  (|locks|=8 F=7 rho(A)=7)
+PASS: tick2-new-locks-are-distance-two
+PASS: corner-of-a-is-not-yet-locked
+PASS: theorem1-clock-is-lock-count-minus-seed
+PASS: theorem2-tick1-clock-is-not-rho-a
+PASS: theorem2-tick2-meeting-is-coincidence
+PASS: theorem3-two-tick-additivity  (7=3+4)
+PASS: mutation-seed-inclusive-clock-collides-with-rho-a
+PASS: mutation-dropping-b-only-breaks-tick2-meeting
+PASS: note-machine-status-complete
+PASS: note-one-hop-dependency-current
+PASS: note-states-three-theorems
+PASS: note-coincidence-not-identity
+PASS: note-tick-is-supplied-not-time-metric
+PASS: note-n5-five-line-certificate
+N5_CERTIFICATE:
+per-element: executed — every lock after each tick is enumerated
+per-site: executed — the twelve two-cube vertices are the carrier
+per-mode: not applicable — no modal or spectral decomposition is used
+per-block: executed — only the declared two-tick integrated law is checked
+lattice-wide: not executed — no full Z^3 history or rate is claimed
+PASS: note-no-go-n1-through-n8
+PASS: note-and-runner-avoid-forbidden-phrases
+PASS: note-explicit-nonclaims
+TOTAL: PASS=30 FAIL=0
+
+----- stderr -----
+

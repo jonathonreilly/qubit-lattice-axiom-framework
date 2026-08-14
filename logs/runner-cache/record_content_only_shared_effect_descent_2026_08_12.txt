@@ -1,44 +1,47 @@
 ===== runner cache v1 =====
 runner: scripts/record_content_only_shared_effect_descent_2026_08_12.py
-runner_sha256: e4f43c44d926f23e626d22d01679b42c48b2b10efe98916a755f2422d423c861
-input_fingerprint_sha256: 9fa58d89962b2ed2a9a4b0d1907e1a791ec8f3853b78a6f44cf009017ae84d64
+runner_sha256: 86679823ec3e51d734615f5270c20d3200d11f9348972c57bfb1350c2e48b9fc
+input_fingerprint_sha256: 2dcc2b4b019296cf466e54e096e16966bc3419b315b4bc16bd7cf84216df9c05
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 external_scientific_inputs: current Record wording and the Aug 10 menus/atomic masses are source-bound; no observational or fitted inputs are used
 package_local_integrity_reads: the proposed source note is read for claim-surface consistency; no runner cache is written
-negative_scope: only effect-only descent of the Aug 10 restriction kernel is rejected; menu-in-content remains a live formal escape
-PASS: audit-input-paths declared audit inputs exist and match the note, axiom memo, and Aug 10 parent
+negative_scope: only direct identification of unequal restriction values with identical effect-only content is rejected; contextual content and formation-probability interpretations remain live
+PASS: audit-input-paths declared audit inputs exist and match the note, axiom memo, Aug 10 parent, and Aug 12 barycenter parent
 PASS: source-record-content-only the exact current content-only Record sentences are present
+PASS: record-premise-simplification the current Record section has the no-record sentence and no named scalar, additivity, or absence-value rule
 PASS: source-aug10-restriction the Aug 10 parent states the shared-effect restriction witness and its masses
+PASS: source-aug12-barycenter-scope the barycenter parent keeps an exact separate effect-functional grade live and distinguishes it from restriction
 PASS: ternary-menu-a the asymmetric shared-effect menu is an exact scaled-projector resolution
 PASS: ternary-menu-b the symmetric shared-effect menu is an exact scaled-projector resolution
 PASS: shared-effect-incidence the two menus share exactly E0 and otherwise contain distinct effects
 PASS: atomic-global-normalization the five squared-trace atomic weights have exact normalization 509/200
 PASS: atomic-restriction-values normalized restriction recomputes to 25/142 on M_A and 2/11 on M_B
 PASS: atomic-restriction-separation the same effect differs across the two menus by exactly -9/1562
-PASS: effect-only-one-I I circ Phi_eff assigns one scalar to E0 in both menus
-PASS: restriction-not-effect-only the restriction kernel is not I circ Phi_eff because it assigns two scalars to E0
-PASS: menu-context-two-I I circ Phi_ctx assigns the two distinct scalars 1 and 2 to the two (M,E0) pairs
+PASS: effect-only-identical-content Phi_eff assigns the identical matrix E0 to both outcome pairs
+PASS: restriction-not-direct-effect-only-readout two unequal restriction values cannot both be direct values of one function on identical Phi_eff content
+PASS: context-tags the two context-bearing matrices have exact tags 1 and 2
 PASS: menu-context-distinct-content the menu-context records are distinct matrices in M_2(C)
-PASS: menu-context-content-only both menu-context scalars are the same function Im Tr(Phi)/2 of the stored matrix
-PASS: readout-additivity Im Tr(Phi)/2 is additive and vanishes at the zero matrix
+PASS: context-fixed-readout-values one fixed affine function of stored content returns exactly 25/142 and 2/11
 PASS: note-preserves-record-sentences the note quotes both current Record content-only sentences
 PASS: note-preserves-restriction-fractions the note records the recomputed restriction values 25/142 and 2/11
-PASS: note-links-parents the note links the axiom memo and the Aug 10 type-separation note
+PASS: note-links-parents the note links the axiom memo, Aug 10 type-separation note, and Aug 12 barycenter note
 PASS: claim-type-contract the author hint uses the exact bounded-theorem enum
 PASS: machine-status-contract the source uses the controlled bounded-support fields
+PASS: post-simplification-note-contract the note disclaims removed Record premises and preserves the direct-value hypothesis
+PASS: no-go-discipline-contract the source carries N1 through N8 and the narrow gate disposition
 PASS: forbidden-rhetoric-absent the note avoids axiom-adoption, promotion, and executor-name rhetoric
 PASS: canonical-nonmutation the menu-context encoding is absent from the canonical axiom file
 PASS: parent-objects-bound the Aug 10 parent still names the shared effect and both menus
-per_element: one shared scaled effect is evaluated under Phi_eff, restriction, and Phi_ctx
-per_site: the three maps are one-site statements; no composite carrier is asserted
-per_mode: no spectral-mode exhaustion is claimed
-per_block: only the effect-only versus restriction versus menu-in-content interface is tested
-lattice_wide: checked and not executed — no lattice-wide dynamics or Born uniqueness is claimed
-TOTAL: PASS=23 FAIL=0
+per_element: exact shared effect E0 is checked under identical Phi_eff content and distinct Phi_ctx content
+per_site: one-site same-content substitution is checked; formation probabilities remain outside the direct-readout target
+per_mode: checked and not executed — no spectral-mode or mode-exhaustion conclusion is part of the theorem
+per_block: exactly two declared menus and the direct-readout identification are tested; other content maps remain live
+lattice_wide: checked and not executed — no multi-site dynamics, formation law, or Born uniqueness is claimed
+TOTAL: PASS=26 FAIL=0
 
 ----- stderr -----
 

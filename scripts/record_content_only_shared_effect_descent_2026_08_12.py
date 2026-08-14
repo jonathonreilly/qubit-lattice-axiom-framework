@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Exact checks for Record content-only descent versus Aug 10 restriction.
 
-The runner recomputes the Aug 10 atomic masses, checks that every content-only
-readout of an effect-only record is menu-independent on the shared effect, and
-exhibits a menu-in-content map that yields two scalars. No cache is written.
+The runner recomputes the Aug 10 atomic masses, checks the narrow direct-value
+obstruction for identical effect-only content, and exhibits context-bearing
+content with one fixed readout that yields both restriction values. No cache
+is written.
 """
 
 from __future__ import annotations
@@ -19,11 +20,13 @@ ROOT = Path(__file__).resolve().parents[1]
 NOTE_PATH = ROOT / "docs" / "RECORD_CONTENT_ONLY_SHARED_EFFECT_DESCENT_BOUNDED_THEOREM_NOTE_2026-08-12.md"
 AXIOM_PATH = ROOT / "docs" / "MINIMAL_AXIOMS_2026-06-29.md"
 PARENT_PATH = ROOT / "docs" / "ADMISSIBILITY_GLOBAL_MEASURE_MENU_KERNEL_TYPE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-08-10.md"
+BARYCENTER_PARENT_PATH = ROOT / "docs" / "ADMISSIBILITY_BARYCENTER_EVALUATION_MENU_KERNEL_BOUNDED_THEOREM_NOTE_2026-08-12.md"
 
 AUDIT_INPUT_PATHS = (
     "docs/RECORD_CONTENT_ONLY_SHARED_EFFECT_DESCENT_BOUNDED_THEOREM_NOTE_2026-08-12.md",
     "docs/MINIMAL_AXIOMS_2026-06-29.md",
     "docs/ADMISSIBILITY_GLOBAL_MEASURE_MENU_KERNEL_TYPE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-08-10.md",
+    "docs/ADMISSIBILITY_BARYCENTER_EVALUATION_MENU_KERNEL_BOUNDED_THEOREM_NOTE_2026-08-12.md",
 )
 
 
@@ -128,8 +131,17 @@ def matrix_trace(matrix: Matrix) -> C:
     return matrix[0][0] + matrix[1][1]
 
 
-def content_readout(matrix: Matrix) -> Fraction:
+def context_tag(matrix: Matrix) -> Fraction:
     return matrix_trace(matrix).im / 2
+
+
+RESTRICTION_A = Fraction(25, 142)
+RESTRICTION_B = Fraction(2, 11)
+
+
+def context_readout(matrix: Matrix) -> Fraction:
+    tag = context_tag(matrix)
+    return (2 - tag) * RESTRICTION_A + (tag - 1) * RESTRICTION_B
 
 
 IDENTITY: Matrix = (
@@ -191,21 +203,24 @@ def main() -> int:
     note = NOTE_PATH.read_text(encoding="utf-8")
     axiom = AXIOM_PATH.read_text(encoding="utf-8")
     parent = PARENT_PATH.read_text(encoding="utf-8")
+    barycenter_parent = BARYCENTER_PARENT_PATH.read_text(encoding="utf-8")
     normalized_note = normalize(note).replace("> ", "")
     normalized_axiom = normalize(axiom)
     normalized_parent = normalize(parent)
+    normalized_barycenter_parent = normalize(barycenter_parent)
 
     print("external_scientific_inputs: current Record wording and the Aug 10 menus/atomic masses are source-bound; no observational or fitted inputs are used")
     print("package_local_integrity_reads: the proposed source note is read for claim-surface consistency; no runner cache is written")
-    print("negative_scope: only effect-only descent of the Aug 10 restriction kernel is rejected; menu-in-content remains a live formal escape")
+    print("negative_scope: only direct identification of unequal restriction values with identical effect-only content is rejected; contextual content and formation-probability interpretations remain live")
 
     checks.check(
         "audit-input-paths",
-        "declared audit inputs exist and match the note, axiom memo, and Aug 10 parent",
+        "declared audit inputs exist and match the note, axiom memo, Aug 10 parent, and Aug 12 barycenter parent",
         AUDIT_INPUT_PATHS == (
             "docs/RECORD_CONTENT_ONLY_SHARED_EFFECT_DESCENT_BOUNDED_THEOREM_NOTE_2026-08-12.md",
             "docs/MINIMAL_AXIOMS_2026-06-29.md",
             "docs/ADMISSIBILITY_GLOBAL_MEASURE_MENU_KERNEL_TYPE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-08-10.md",
+            "docs/ADMISSIBILITY_BARYCENTER_EVALUATION_MENU_KERNEL_BOUNDED_THEOREM_NOTE_2026-08-12.md",
         )
         and all((ROOT / path).is_file() for path in AUDIT_INPUT_PATHS),
     )
@@ -219,6 +234,13 @@ def main() -> int:
         "the exact current content-only Record sentences are present",
         all(sentence in normalized_axiom for sentence in record_sentences),
     )
+    record_section = axiom.split("### Record / Fixed Reality", 1)[1].split("## Qualification", 1)[0]
+    checks.check(
+        "record-premise-simplification",
+        "the current Record section has the no-record sentence and no named scalar, additivity, or absence-value rule",
+        "A site with no record cannot be read." in record_section
+        and all(token not in record_section for token in ("I(", "I(empty)", "additiv", "scalar")),
+    )
     checks.check(
         "source-aug10-restriction",
         "the Aug 10 parent states the shared-effect restriction witness and its masses",
@@ -228,6 +250,18 @@ def main() -> int:
                 "Z=1/4+81/100+9/25+9/16+9/16=509/200",
                 "K_nu(E_0|M_A)=(1/4)/(1/4+81/100+9/25)=25/142",
                 "K_nu(E_0|M_B)=(1/4)/(1/4+9/16+9/16)=2/11",
+            )
+        ),
+    )
+    checks.check(
+        "source-aug12-barycenter-scope",
+        "the barycenter parent keeps an exact separate effect-functional grade live and distinguishes it from restriction",
+        all(
+            phrase in normalized_barycenter_parent
+            for phrase in (
+                "barycenter evaluation",
+                "restriction is not this kernel",
+                "The kernel is not a physical Record law.",
             )
         ),
     )
@@ -291,32 +325,33 @@ def main() -> int:
         residual=conditional_a - conditional_b,
     )
 
-    i_eff_a = content_readout(phi_eff("A", E0_MATRIX))
-    i_eff_b = content_readout(phi_eff("B", E0_MATRIX))
+    content_eff_a = phi_eff("A", E0_MATRIX)
+    content_eff_b = phi_eff("B", E0_MATRIX)
     checks.check(
-        "effect-only-one-I",
-        "I circ Phi_eff assigns one scalar to E0 in both menus",
-        i_eff_a == i_eff_b == Fraction(0),
-        residual=(i_eff_a, i_eff_b),
+        "effect-only-identical-content",
+        "Phi_eff assigns the identical matrix E0 to both outcome pairs",
+        content_eff_a == content_eff_b == E0_MATRIX,
+        residual=(content_eff_a, content_eff_b),
     )
     checks.check(
-        "restriction-not-effect-only",
-        "the restriction kernel is not I circ Phi_eff because it assigns two scalars to E0",
+        "restriction-not-direct-effect-only-readout",
+        "two unequal restriction values cannot both be direct values of one function on identical Phi_eff content",
         conditional_a != conditional_b
-        and {conditional_a, conditional_b} != {i_eff_a}
-        and phi_eff("A", E0_MATRIX) == phi_eff("B", E0_MATRIX),
-        residual=(conditional_a, conditional_b, i_eff_a),
+        and content_eff_a == content_eff_b,
+        residual=(conditional_a, conditional_b),
     )
 
     phi_a = phi_ctx("A", E0_MATRIX)
     phi_b = phi_ctx("B", E0_MATRIX)
-    i_ctx_a = content_readout(phi_a)
-    i_ctx_b = content_readout(phi_b)
+    tag_a = context_tag(phi_a)
+    tag_b = context_tag(phi_b)
+    readout_a = context_readout(phi_a)
+    readout_b = context_readout(phi_b)
     checks.check(
-        "menu-context-two-I",
-        "I circ Phi_ctx assigns the two distinct scalars 1 and 2 to the two (M,E0) pairs",
-        i_ctx_a == Fraction(1) and i_ctx_b == Fraction(2) and i_ctx_a != i_ctx_b,
-        residual=(i_ctx_a, i_ctx_b),
+        "context-tags",
+        "the two context-bearing matrices have exact tags 1 and 2",
+        tag_a == Fraction(1) and tag_b == Fraction(2),
+        residual=(tag_a, tag_b),
     )
     checks.check(
         "menu-context-distinct-content",
@@ -324,15 +359,11 @@ def main() -> int:
         phi_a != phi_b and phi_a != E0_MATRIX and phi_b != E0_MATRIX,
     )
     checks.check(
-        "menu-context-content-only",
-        "both menu-context scalars are the same function Im Tr(Phi)/2 of the stored matrix",
-        content_readout(phi_a) == i_ctx_a and content_readout(phi_b) == i_ctx_b,
-    )
-    checks.check(
-        "readout-additivity",
-        "Im Tr(Phi)/2 is additive and vanishes at the zero matrix",
-        content_readout(matrix_add(phi_a, phi_b)) == i_ctx_a + i_ctx_b
-        and content_readout(((C(), C()), (C(), C()))) == 0,
+        "context-fixed-readout-values",
+        "one fixed affine function of stored content returns exactly 25/142 and 2/11",
+        readout_a == conditional_a == RESTRICTION_A
+        and readout_b == conditional_b == RESTRICTION_B,
+        residual=(readout_a, readout_b),
     )
 
     checks.check(
@@ -347,9 +378,10 @@ def main() -> int:
     )
     checks.check(
         "note-links-parents",
-        "the note links the axiom memo and the Aug 10 type-separation note",
+        "the note links the axiom memo, Aug 10 type-separation note, and Aug 12 barycenter note",
         "MINIMAL_AXIOMS_2026-06-29.md" in note
-        and "ADMISSIBILITY_GLOBAL_MEASURE_MENU_KERNEL_TYPE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-08-10.md" in note,
+        and "ADMISSIBILITY_GLOBAL_MEASURE_MENU_KERNEL_TYPE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-08-10.md" in note
+        and "ADMISSIBILITY_BARYCENTER_EVALUATION_MENU_KERNEL_BOUNDED_THEOREM_NOTE_2026-08-12.md" in note,
     )
     checks.check(
         "claim-type-contract",
@@ -366,9 +398,24 @@ def main() -> int:
                 "target_claim_type: bounded_theorem",
                 "audit_required_before_effective_retained: true",
                 "bare_retained_allowed: false",
-                "hypothetical_axiom_status: \"no edit\"",
+                "hypothetical_axiom_status: \"no edit, adoption, minimality, or necessity claim\"",
+                "next_trace_action:",
             )
         ),
+    )
+    checks.check(
+        "post-simplification-note-contract",
+        "the note disclaims removed Record premises and preserves the direct-value hypothesis",
+        "It supplies no named scalar functional, no additivity rule, and no value for absence." in normalized_note
+        and "direct readout values" in note
+        and all(token not in note for token in ("I(empty)", "I ∘")),
+    )
+    checks.check(
+        "no-go-discipline-contract",
+        "the source carries N1 through N8 and the narrow gate disposition",
+        all(f"### N{index}" in note for index in range(1, 9))
+        and "PASS for Theorems 1–3 as narrowed" in note
+        and "FAIL for the original" in note,
     )
 
     forbidden = ("new axiom", "we adopt", "promoted", "Codex")
@@ -403,11 +450,11 @@ def main() -> int:
         ),
     )
 
-    print("per_element: one shared scaled effect is evaluated under Phi_eff, restriction, and Phi_ctx")
-    print("per_site: the three maps are one-site statements; no composite carrier is asserted")
-    print("per_mode: no spectral-mode exhaustion is claimed")
-    print("per_block: only the effect-only versus restriction versus menu-in-content interface is tested")
-    print("lattice_wide: checked and not executed — no lattice-wide dynamics or Born uniqueness is claimed")
+    print("per_element: exact shared effect E0 is checked under identical Phi_eff content and distinct Phi_ctx content")
+    print("per_site: one-site same-content substitution is checked; formation probabilities remain outside the direct-readout target")
+    print("per_mode: checked and not executed — no spectral-mode or mode-exhaustion conclusion is part of the theorem")
+    print("per_block: exactly two declared menus and the direct-readout identification are tested; other content maps remain live")
+    print("lattice_wide: checked and not executed — no multi-site dynamics, formation law, or Born uniqueness is claimed")
     return checks.finish()
 
 

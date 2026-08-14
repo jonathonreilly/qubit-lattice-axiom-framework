@@ -29,7 +29,7 @@ CYCLE = 983
 AUDIT_TIMEOUT_SEC = 1400
 HOUSE_STDOUT_LIMIT_BYTES = 6_000
 STDOUT_LIMIT_BYTES = 150_000
-BASE_ORIGIN_MAIN_COMMIT = "ea0968c71ad46c39c6dacb39f88a18780363b71f"
+BASE_ORIGIN_MAIN_COMMIT = "7f76c118a2b1b55cbbbc1b6334f3ee6bb735fc84"
 PINNED_CYCLE719_COMMIT = "39c74017b870c27c804e3992f2a11e90336476b2"
 PINNED_CYCLE719_CORE = (
     "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py"
@@ -42,11 +42,11 @@ PINNED_CYCLE719_CORE_BLOB = "c123b8d681c3d76fce08ef13d7673622deac64ad"
 AUDIT_INPUT_PATHS = ("docs/MINIMAL_AXIOMS_2026-06-29.md",)
 EXPECTED_INPUT_SHA256 = {
     "docs/MINIMAL_AXIOMS_2026-06-29.md":
-        "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
+        "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
 }
 EXPECTED_INPUT_BLOBS = {
     "docs/MINIMAL_AXIOMS_2026-06-29.md":
-        "2f5fdd26898f62c17fcabc846761f7785c2eadb1",
+        "bc23300becfe4e4db57153c0e94cfcdf2338da71",
 }
 BLOCKLIST_TEXT_PATHS = (
     "docs/WITNESS_FAMILY_COMPLETENESS_CYCLE977_BOUNDED_THEOREM_NOTE_2026-08-10.md",
@@ -168,6 +168,32 @@ def declared_relative_family() -> tuple:
         for left, right in combinations(NEIGHBOUR_WIRES, 2)
     )
     return tuple(rows)
+
+
+def semantic_quotient_boundary() -> dict:
+    repeated_tof = K.A.tof(1, 1, 0)
+    matching_cnot = K.A.cn(1, 0)
+    forward_tof = K.A.tof(1, 2, 0)
+    reversed_tof = K.A.tof(2, 1, 0)
+    states = tuple(product((0, 1), repeat=7))
+    return {
+        "constructors_accept_repeated_operands": repeated_tof is not None,
+        "reversed_tof_gate_objects_equal": forward_tof == reversed_tof,
+        "reversed_tof_actions_equal": all(
+            K.A.apply_semantic(state, (forward_tof,))
+            == K.A.apply_semantic(state, (reversed_tof,))
+            for state in states
+        ),
+        "repeated_tof_matches_cnot_action": all(
+            K.A.apply_semantic(state, (repeated_tof,))
+            == K.A.apply_semantic(state, (matching_cnot,))
+            for state in states
+        ),
+        "declared_family_boundary": (
+            "pairwise-distinct semantic quotient with unordered TOF controls; "
+            "not the complete constructor-object population"
+        ),
+    }
 
 
 def relative_word_name(descriptor: tuple) -> str:
@@ -373,6 +399,7 @@ def family_declaration() -> dict:
         "target_count": len(TARGET_CENTRES),
         "site_program_instance_count": len(family) * len(TARGET_CENTRES),
         "relative_family_digest": digest(family),
+        "semantic_quotient_boundary": semantic_quotient_boundary(),
         "cap": (
             "all 23 relative descriptors at each of two targets; both target bits; "
             "all 2^6 neighbour conditions; every neighbour-bit edge comparison; no sampling"
@@ -784,6 +811,7 @@ def input_controls() -> dict:
     literal_blocklist = ast_literal_assignment(tree, "BLOCKLIST_TEXT_PATHS")
     literal_fragments = ast_literal_assignment(tree, "BLOCKLIST_AST_FRAGMENTS")
     payloads = {path: (ROOT / path).read_bytes() for path in literal_paths}
+    memo_text = " ".join(payloads[literal_paths[0]].decode().split())
     sha_rows = {path: sha256(payload).hexdigest() for path, payload in payloads.items()}
     blob_rows = {path: git_blob(payload) for path, payload in payloads.items()}
     imported_names = {
@@ -831,6 +859,17 @@ def input_controls() -> dict:
         },
         "base_origin_main_commit": BASE_ORIGIN_MAIN_COMMIT,
         "base_is_ancestor_of_head": base_is_ancestor,
+        "current_record_boundary": all(token in memo_text for token in (
+            "Records form.",
+            "When present, a record locks exactly one admissible local possibility.",
+            "A site never carries more than one record; records are permanent.",
+            "Only records are readable.",
+            "A readout value is determined by record content alone.",
+            "A site with no record cannot be read.",
+            "Finite additivity, a named scalar collection functional `I`, and an assigned",
+            "value `I(empty)=0` are not Record axiom content.",
+        )),
+        "record_properties_used": [],
     }
 
 
@@ -881,8 +920,15 @@ def render_stdout(receipt: dict) -> str:
         + f" :: source_reads={receipt['controls']['literal_source_read_count']}<=6;"
         + f" pins={receipt['controls']['sha_pins_match'] and receipt['controls']['blob_pins_match']};"
         + f" prior_ast_text={receipt['controls']['prior_cycle_text_or_ast_executed']};"
+        + f" current_record={receipt['controls']['current_record_boundary']};"
+        + f" record_used={bool(receipt['controls']['record_properties_used'])};"
         + f" determinism={receipt['controls']['determinism_replay']};"
         + f" runtime_lt_1400={receipt['controls']['runtime_budget_met']}",
+        "per_element: checked and executed -- every descriptor/input case and every witness edge comparison was exhausted at both targets.",
+        "per_site: checked and executed -- both declared target sites were tested; the ten support-only halo sites were not promoted to targets.",
+        "per_mode: checked and executed -- all 24 proper-cubic rotations and all 23 relative program modes were reconstructed.",
+        "per_block: checked and executed -- the two closed stars, their shared sites, and their one shared semantic pair were reconciled.",
+        "lattice_wide: checked and not executed -- no compatible exhaustion or infinite-lattice allocation was supplied.",
     ]
     passed = sum(receipt["checks"].values())
     lines.append(f"TOTAL: PASS={passed} FAIL={len(receipt['checks']) - passed}")
@@ -901,6 +947,7 @@ def run() -> tuple[dict, str]:
     verdict = first["D_VERDICT"]
 
     stars = construction["stars"]
+    quotient = construction["family"]["semantic_quotient_boundary"]
     a_bookkeeping = bool(
         construction["target_site_count"] == len(construction["target_sites"])
         and construction["host_support_site_count"] == len(construction["host_support_sites"])
@@ -912,6 +959,10 @@ def run() -> tuple[dict, str]:
             == construction["family"]["relative_family_size_per_target"]
                 * construction["target_site_count"]
         and construction["minimality"]["chosen_patch_attains_minimum"]
+        and quotient["constructors_accept_repeated_operands"]
+        and quotient["reversed_tof_gate_objects_equal"] is False
+        and quotient["reversed_tof_actions_equal"]
+        and quotient["repeated_tof_matches_cnot_action"]
     )
     per_site = uniformity["per_site_census"]
     b_bookkeeping = bool(
@@ -993,6 +1044,8 @@ def run() -> tuple[dict, str]:
         and controls["pinned_substrate"]["sha_pin_match"]
         and controls["pinned_substrate"]["blob_pin_match"]
         and controls["base_is_ancestor_of_head"]
+        and controls["current_record_boundary"]
+        and not controls["record_properties_used"]
         and deterministic and runtime_budget_met
     )
     receipt = {

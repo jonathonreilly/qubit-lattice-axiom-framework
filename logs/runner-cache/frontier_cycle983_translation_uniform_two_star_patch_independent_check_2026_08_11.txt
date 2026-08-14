@@ -1,18 +1,18 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle983_translation_uniform_two_star_patch_independent_check_2026_08_11.py
-runner_sha256: 4ea9204536cda9f45bbefe0e9743629fe3ecab91f405e3cda537b5d67392dbb6
-input_fingerprint_sha256: 82d5da8e2854f78d7c012859a0b7f0752c95247ab79a94bed8f475fffc643c2e
+runner_sha256: 11fadd644c7ba75df8564f22c2b8a04327503779e5c5d057789a7d68853dd892
+input_fingerprint_sha256: 3df0832b3fc00d67864c133bf2337b67a795ade784fc2e10857eb8e93195a488
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.19
 status: ok
 ----- stdout -----
 CYCLE983_TRANSLATION_UNIFORM_TWO_STAR_PATCH_INDEPENDENT_CHECK
 A_INDEPENDENT_RECONSTRUCTION PASS :: targets=2; support=12; witnesses=[21, 21]; agreement=True
-B_REFUTATION_POWER PASS :: rejected=14/14; outcome_neutral=[true,true]
+B_REFUTATION_POWER PASS :: rejected=15/15; outcome_neutral=[true,true]
 C_ARTIFACT_BINDING PASS :: pins=True; clean_bookkeeping=True
 D_PROVENANCE PASS :: primary_imported=False; cycle719_imported=False; prior_cycles_executed=False
-E_CONTROLS PASS :: source_reads=3<=6; determinism=True; runtime_lt_300=True
+E_CONTROLS PASS :: source_reads=4<=6; determinism=True; runtime_lt_300=True
 TOTAL: PASS=5 FAIL=0
 
 ----- stderr -----

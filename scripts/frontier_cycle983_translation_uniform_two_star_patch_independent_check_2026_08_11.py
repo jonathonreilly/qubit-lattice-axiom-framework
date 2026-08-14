@@ -25,7 +25,7 @@ CYCLE = 983
 AUDIT_TIMEOUT_SEC = 300
 HOUSE_STDOUT_LIMIT_BYTES = 6_000
 STDOUT_LIMIT_BYTES = 150_000
-BASE_ORIGIN_MAIN_COMMIT = "ea0968c71ad46c39c6dacb39f88a18780363b71f"
+BASE_ORIGIN_MAIN_COMMIT = "7f76c118a2b1b55cbbbc1b6334f3ee6bb735fc84"
 
 PRIMARY_PATH = (
     "scripts/frontier_cycle983_translation_uniform_two_star_patch_2026_08_11.py"
@@ -35,6 +35,9 @@ PRIMARY_RECEIPT_PATH = (
 )
 PRIMARY_CACHE_PATH = (
     "logs/runner-cache/frontier_cycle983_translation_uniform_two_star_patch_2026_08_11.txt"
+)
+NOTE_PATH = (
+    "docs/TRANSLATION_UNIFORM_TWO_STAR_PATCH_CYCLE983_BOUNDED_THEOREM_NOTE_2026-08-11.md"
 )
 CHECKER_PATH = (
     "scripts/frontier_cycle983_translation_uniform_two_star_patch_independent_check_2026_08_11.py"
@@ -46,18 +49,22 @@ AUDIT_INPUT_PATHS = (
     "scripts/frontier_cycle983_translation_uniform_two_star_patch_2026_08_11.py",
     "outputs/translation_uniform_two_star_patch_cycle983_receipt_2026_08_11.json",
     "logs/runner-cache/frontier_cycle983_translation_uniform_two_star_patch_2026_08_11.txt",
+    "docs/TRANSLATION_UNIFORM_TWO_STAR_PATCH_CYCLE983_BOUNDED_THEOREM_NOTE_2026-08-11.md",
 )
 BYTE_PINNED_INPUT_PATHS = (
     "scripts/frontier_cycle983_translation_uniform_two_star_patch_2026_08_11.py",
     "outputs/translation_uniform_two_star_patch_cycle983_receipt_2026_08_11.json",
+    "docs/TRANSLATION_UNIFORM_TWO_STAR_PATCH_CYCLE983_BOUNDED_THEOREM_NOTE_2026-08-11.md",
 )
 EXPECTED_INPUT_SHA256 = {
-    PRIMARY_PATH: "e67c13f4b6f0fc3ab29dcb94a4b08eff155faf37c090b31c2ff5e108b9dea0f3",
-    PRIMARY_RECEIPT_PATH: "e65d4b22c56ba5a5c1d4968ff3607b8c8445bf271944356ca6ea49fa86cfbb8e",
+    PRIMARY_PATH: "c1f72173db2bebc498d2269f6b566261976119e7defcf7b522538c9aff01ff2e",
+    PRIMARY_RECEIPT_PATH: "862ca5a4f6bcd7bf146a6b6306a17629f0ed2383158a2a7ff1ec8b4f2f7db84a",
+    NOTE_PATH: "8c6526b88ead4b10e179ed502887367397b9e9dd10bf3b2fe21da71739249920",
 }
 EXPECTED_INPUT_BLOBS = {
-    PRIMARY_PATH: "29b29c88da819df73537ae86d4233a87e98af2d3",
-    PRIMARY_RECEIPT_PATH: "5c6e0b4b7c66ff012c55932c8dbb5df807b60335",
+    PRIMARY_PATH: "18fcd6e8113af5baff397b1ceb6848cf3a1665a0",
+    PRIMARY_RECEIPT_PATH: "adb5e8f5b1728330b6483d7bc2c8a8c68efe755b",
+    NOTE_PATH: "1cc3f99e6fd70e5166e318a00a8dde00ac96b3bf",
 }
 FORBIDDEN_IMPORT_FRAGMENTS = (
     "frontier_cycle719_two_rail_recurrent_controller_core",
@@ -332,6 +339,16 @@ def independent_expected() -> dict:
             "relative_family_size_per_target": len(descriptors),
             "site_program_instance_count": len(descriptors) * len(CENTRES),
             "relative_family_digest": digest(descriptors),
+            "semantic_quotient_boundary": {
+                "constructors_accept_repeated_operands": True,
+                "reversed_tof_gate_objects_equal": False,
+                "reversed_tof_actions_equal": True,
+                "repeated_tof_matches_cnot_action": True,
+                "declared_family_boundary": (
+                    "pairwise-distinct semantic quotient with unordered TOF controls; "
+                    "not the complete constructor-object population"
+                ),
+            },
             "minimum_union_size": minimum_union,
             "offset_census_digest": offset_digest,
         },
@@ -510,6 +527,9 @@ def selected_primary_view(receipt: dict) -> dict:
                 "site_program_instance_count"
             ],
             "relative_family_digest": construction["family"]["relative_family_digest"],
+            "semantic_quotient_boundary": construction["family"][
+                "semantic_quotient_boundary"
+            ],
             "minimum_union_size": construction["minimality"][
                 "minimum_union_size_for_two_distinct_overlapping_closed_unit_stars"
             ],
@@ -618,6 +638,9 @@ def validate_bookkeeping(receipt: dict, cache_payload: str) -> tuple[bool, list[
         family_row["relative_family_size_per_target"] * construction["target_site_count"]
     ):
         errors.append("site_program_instances")
+    quotient = family_row.get("semantic_quotient_boundary", {})
+    if quotient != independent_expected()["construction"]["semantic_quotient_boundary"]:
+        errors.append("semantic_quotient_boundary")
     if not construction["minimality"]["chosen_patch_attains_minimum"]:
         errors.append("minimality_flag")
 
@@ -708,6 +731,11 @@ def validate_bookkeeping(receipt: dict, cache_payload: str) -> tuple[bool, list[
         errors.append("scope_exclusions")
     if not all(receipt.get("checks", {}).values()) or not receipt.get("pass"):
         errors.append("primary_checks")
+    primary_controls = receipt.get("controls", {})
+    if primary_controls.get("current_record_boundary") is not True:
+        errors.append("current_record_boundary")
+    if primary_controls.get("record_properties_used") != []:
+        errors.append("record_properties_used")
 
     cache = parse_cache(cache_payload)
     if not cache.get("valid_envelope"):
@@ -724,6 +752,15 @@ def validate_bookkeeping(receipt: dict, cache_payload: str) -> tuple[bool, list[
             errors.append("cache_stdout_pin")
         if "TOTAL: PASS=5 FAIL=0" not in cache["stdout"]:
             errors.append("cache_total")
+        for prefix in (
+            "per_element: checked and executed",
+            "per_site: checked and executed",
+            "per_mode: checked and executed",
+            "per_block: checked and executed",
+            "lattice_wide: checked and not executed",
+        ):
+            if prefix not in cache["stdout"]:
+                errors.append("cache_resolution:" + prefix.split(":", 1)[0])
     return not errors, errors
 
 
@@ -756,6 +793,13 @@ def mutation_campaign(receipt: dict, cache_payload: str) -> list[dict]:
         lambda row, cache: row["findings"]["A_PATCH_CONSTRUCTION"]["family"].__setitem__(
             "site_program_instance_count", 45
         ),
+    )
+    add_mutation(
+        "semantic_quotient_boundary",
+        lambda row, cache: row["findings"]["A_PATCH_CONSTRUCTION"]["family"]
+            ["semantic_quotient_boundary"].__setitem__(
+                "repeated_tof_matches_cnot_action", False
+            ),
     )
     add_mutation(
         "second_site_witness_count",
@@ -854,6 +898,30 @@ def coherent_outcome_probes(receipt: dict, cache_payload: str) -> list[dict]:
     return probes
 
 
+def validate_note(note: str) -> bool:
+    normalized = " ".join(note.split())
+    required = (
+        "Claim type: `bounded_theorem`",
+        "actual_current_surface_status: bounded-support",
+        "negative_assertion_classes: [bounded_with_named_walls]",
+        "pairwise-distinct semantic quotient",
+        "Cycle 980",
+        "Current Record boundary",
+        "Finite additivity, scalar `I`, and `I(empty)=0` are not used",
+        "## No-Go Discipline: N1-N8",
+        "not an infinite-lattice translation-uniformity theorem",
+        "Audit-status authority: independent audit lane only",
+    )
+    forbidden = (
+        "review_loop_disposition: pass",
+        "audit_status: retained",
+        "bare_retained_allowed: true",
+    )
+    return all(token in normalized for token in required) and not any(
+        token in normalized for token in forbidden
+    )
+
+
 def input_controls() -> dict:
     payloads = {path: (ROOT / path).read_bytes() for path in AUDIT_INPUT_PATHS}
     sha_rows = {
@@ -877,12 +945,16 @@ def input_controls() -> dict:
     )
     primary_tree = ast.parse(payloads[PRIMARY_PATH], filename=PRIMARY_PATH)
     primary_timeout = None
+    primary_base = None
     for node in primary_tree.body:
-        if isinstance(node, ast.Assign) and any(
-            isinstance(target, ast.Name) and target.id == "AUDIT_TIMEOUT_SEC"
-            for target in node.targets
-        ):
-            primary_timeout = ast.literal_eval(node.value)
+        if isinstance(node, ast.Assign):
+            names = {
+                target.id for target in node.targets if isinstance(target, ast.Name)
+            }
+            if "AUDIT_TIMEOUT_SEC" in names:
+                primary_timeout = ast.literal_eval(node.value)
+            if "BASE_ORIGIN_MAIN_COMMIT" in names:
+                primary_base = ast.literal_eval(node.value)
     return {
         "literal_audit_input_paths": list(AUDIT_INPUT_PATHS),
         "byte_pinned_input_paths": list(BYTE_PINNED_INPUT_PATHS),
@@ -900,6 +972,8 @@ def input_controls() -> dict:
         "cycle719_imported_or_executed": False,
         "prior_cycle_text_or_ast_executed": False,
         "primary_ast_timeout_seconds": primary_timeout,
+        "primary_base_origin_main_commit": primary_base,
+        "note_contract_valid": validate_note(payloads[NOTE_PATH].decode()),
     }
 
 
@@ -1017,12 +1091,14 @@ def run() -> tuple[dict, str]:
     checks["C_ARTIFACT_BINDING"] = bool(
         checks["C_ARTIFACT_BINDING"]
         and controls["sha_pins_match"] and controls["blob_pins_match"]
+        and controls["note_contract_valid"]
     )
     checks["D_PROVENANCE"] = provenance
     checks["E_CONTROLS"] = bool(
         controls["literal_source_read_count"] <= 6
         and controls["all_inputs_relative_and_present"]
         and controls["primary_ast_timeout_seconds"] == 1400
+        and controls["primary_base_origin_main_commit"] == BASE_ORIGIN_MAIN_COMMIT
         and deterministic and runtime_budget_met
     )
     receipt = {

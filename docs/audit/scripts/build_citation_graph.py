@@ -398,6 +398,12 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
     "witness_orbit_multiplicity_cycle980_bounded_theorem_note_2026-08-11": [
         "scripts/frontier_cycle980_witness_orbit_multiplicity_independent_check_2026_08_11.py",
     ],
+    # Cycle 983's sibling checker independently reconstructs the two-star
+    # geometry, semantic quotient, translated truth tables, witness classes,
+    # and overlap reconciliation without importing or executing the primary.
+    "translation_uniform_two_star_patch_cycle983_bounded_theorem_note_2026-08-11": [
+        "scripts/frontier_cycle983_translation_uniform_two_star_patch_independent_check_2026_08_11.py",
+    ],
     "general_n_census_law_cycle870_bounded_theorem_note_2026-07-28": [
         "scripts/frontier_cycle870_census_independent_check_2026_07_28.py",
     ],

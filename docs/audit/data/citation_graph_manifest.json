@@ -1,6 +1,6 @@
 {
- "edge_count": 15677,
- "node_count": 5515,
+ "edge_count": 15680,
+ "node_count": 5516,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -18449,6 +18449,10 @@
   "translation_covariance_local_op_theorem_note_2026-05-02": {
    "deps_hash": "ec6690abc5b2",
    "out_degree": 1
+  },
+  "translation_uniform_two_star_patch_cycle983_bounded_theorem_note_2026-08-11": {
+   "deps_hash": "ebb8aba5e3ed",
+   "out_degree": 3
   },
   "triple_stack_collapse_scaling_note": {
    "deps_hash": "e3b0c44298fc",

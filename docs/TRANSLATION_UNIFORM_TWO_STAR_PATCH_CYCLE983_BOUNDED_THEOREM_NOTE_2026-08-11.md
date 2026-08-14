@@ -34,26 +34,15 @@ claim_type_reason: "exact exhaustive classification of one explicitly capped rel
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 audit_status_authority: independent audit lane only
-negative_assertion_classes: []
+negative_assertion_classes: [bounded_with_named_walls]
 packet_primary_runner: scripts/frontier_cycle983_translation_uniform_two_star_patch_2026_08_11.py
 packet_helper_runner: scripts/frontier_cycle983_translation_uniform_two_star_patch_independent_check_2026_08_11.py
 packet_helper_claim_scope: cycle983_translation_uniform_two_star_patch
 ```
 
-## Review record
+## Packet binding
 
 ```yaml
-review_loop_disposition: pass
-review_loop_iterations: 2
-code_runner_reviewer: pass
-physics_claim_reviewer: bounded
-proof_obligation_reviewer: "conditional: closed for the explicitly named two-target hosted domain"
-import_support_reviewer: clean
-nature_retention_reviewer: bounded
-no_go_discipline_reviewer: not_applicable
-labeling_convention_reviewer: pass
-repo_governance_reviewer: pass
-audit_compatibility: pass
 hard_landing_packet_helper_mapping:
   translation_uniform_two_star_patch_cycle983_bounded_theorem_note_2026-08-11:
     - scripts/frontier_cycle983_translation_uniform_two_star_patch_independent_check_2026_08_11.py
@@ -62,6 +51,12 @@ hard_landing_packet_helper_mapping:
 The helper mapping is a hard landing condition: the restricted independent-
 audit packet must contain the refutation checker. This note records no audit
 verdict; audit-status authority remains with the independent audit lane.
+
+Current-main [Cycle 980](WITNESS_ORBIT_MULTIPLICITY_CYCLE980_BOUNDED_THEOREM_NOTE_2026-08-11.md)
+already owns the one-centre 21-witness `6/12/3` classification and the `J`
+separator. Cycle 983 does not claim those values as new. It independently
+reconstructs them at both translated centres and adds only the bounded
+two-star pointwise-covariance, hosting, and overlap-consistency result.
 
 ## Exact bounded theorem
 
@@ -146,6 +141,12 @@ minimizer, not a uniqueness claim.
 - Target domain: both sites of `P2x`.
 - Support for each target: its complete six-neighbour closed star in `Omega`.
 - Words: identity or one landed semantic gate.
+- Semantic boundary: the 23 rows are the pairwise-distinct semantic quotient
+  with distinct, unordered TOF controls. The linked constructors also accept
+  repeated controls, and exchanged TOF controls are distinct gate objects;
+  the runner checks that repeated-control TOF reduces to CNOT action and that
+  exchanged-control TOFs have identical Boolean action. Thus 23 is not the
+  complete constructor-object population.
 - Relative family per target: `I`, `X`, six target-local CNOTs, and fifteen
   target-local TOFs.
 - Family size: `1 + 1 + 6 + C(6,2) = 23` per target.
@@ -287,7 +288,8 @@ the asserted target domain therefore remains a separate finite-patch step.
 | item | class | load-bearing role | disposition |
 |---|---|---|---|
 | [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) | zero-input structural | supplies `Z^3` nearest-neighbour geometry, translations, and proper cubic rotations | byte and Git-blob pinned |
-| pinned Cycle-719 core | one computed lattice input | supplies landed basis-state semantics and Manhattan routing | immutable commit, SHA-256, and Git blob checked |
+| [Cycle 719 controller theorem](RECURRENT_MATTER_HISTORY_CONTROLLER_CYCLE719_BOUNDED_THEOREM_NOTE_2026-07-26.md) and pinned core | one computed lattice input | supplies landed basis-state semantics and Manhattan routing | immutable commit, SHA-256, and Git blob checked |
+| [Cycle 980 witness theorem](WITNESS_ORBIT_MULTIPLICITY_CYCLE980_BOUNDED_THEOREM_NOTE_2026-08-11.md) | current-main bounded provenance | already owns the one-centre `6/12/3` and `J` result | cited but neither imported nor executed; reconstructed here |
 | `P2x` and `Omega` | explicit finite boundary condition | fixes the two targets and twelve-site host support | declared exactly above |
 | 23-program relative family | explicit finite boundary condition | fixes the target-local alphabet and word-length cap | exhausted at both targets |
 
@@ -298,8 +300,19 @@ SHA-256
 `0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4`.
 No observed value, fit, selector, probability weight, normalization rule,
 literature value, new axiom, or new framework primitive is load-bearing.
-Earlier-cycle notes, receipts, and modules are absent from the primary's
-literal input set and are neither imported nor executed.
+The cited Cycle 719 and Cycle 980 notes are absent from the primary's literal
+input set and are neither imported nor executed; only the immutable Cycle 719
+core is loaded.
+
+### Current Record boundary
+
+The pinned current minimal-axiom memo is checked against the simplified Record
+axiom: records form; a present record locks one admissible local possibility;
+no site carries more than one record; records are permanent; only records are
+readable; readout depends on record content alone; and an unrecorded site
+cannot be read. No Record property enters the patch geometry, Boolean rule,
+router, group action, or overlap test. Finite additivity, scalar `I`, and
+`I(empty)=0` are not used and are not current Record content.
 
 ### Proof obligations
 
@@ -348,7 +361,81 @@ scope, source binding, and cached stdout. It separately constructs coherent
 synthetic `OBSTRUCTED` and `NOT_HOSTABLE` receipts; both pass the same
 bookkeeping validator. Thus an obstruction is not penalized by the controls.
 
-### Reproduction and artifacts
+## No-Go Discipline: N1-N8
+
+The negative surface is limited to the absence of an overlap obstruction on
+the declared two-star patch and the minimum twelve-site union among two
+distinct overlapping closed unit stars. It is not an infinite-lattice no-go.
+
+### N1 — alternative routes
+
+Five routes were executed. The primary performs the full relative-offset
+census for overlapping closed unit stars; the checker repeats it separately.
+Pointwise covariance is tested on all 2,944 translated descriptor/input cases,
+not inferred from equal witness counts. Both shared site bindings and the
+single shared semantic pair are reconstructed globally. A reversed-path check
+attacks routing disagreement on the shared edge. Finally, coherent synthetic
+`OBSTRUCTED` and `NOT_HOSTABLE` receipts are accepted by the same bookkeeping
+gate, so a positive outcome is not built into PASS.
+
+### N2 — wall independence
+
+The two-target wall, twelve-site hosting wall, 23-program semantic-quotient
+wall, word-by-word routing wall, and no-simultaneous-schedule wall are kept
+separate. Exhausting one does not close another. In particular, exact
+translation covariance of a supplied relative schema does not supply an
+infinite target allocation or a global update schedule.
+
+### N3 — hidden walls
+
+The selected adjacent centres, complete radius-one stars, pairwise-distinct
+controls, unordered TOF controls, Boolean site menu, one-word cap, proper
+cubic group, and centre-relative convention are explicit. Repeated operands,
+constructor-object multiplicity, longer words, larger supports, support-halo
+targets, asynchronous/simultaneous composition, and admissibility
+probabilities are outside the theorem.
+
+### N4 — residual matching
+
+The offset census supports only the stated minimum-union claim. The 2,944
+truth checks support only translation covariance between `A` and `B`. The two
+site rows and one pair row support only overlap consistency on
+`S_A intersection S_B`. Zero failures on these residuals are not used to
+exclude an obstruction on a larger patch or under simultaneous execution.
+
+### N5 — rhetoric audit
+
+The primary cache carries substantive `per_element:`, `per_site:`,
+`per_mode:`, `per_block:`, and `lattice_wide:` lines. The verdict always says
+`AT_PATCH_SCOPE`; the note names the two tested targets and ten untested halo
+sites, and explicitly says it is not an infinite-lattice
+translation-uniformity theorem.
+
+### N6 — partial-closure paths
+
+A third target with a complete hosted star can be added and checked without a
+new axiom. Finite connected patches can be exhausted in increasing size. A
+simultaneous schedule needs a separately declared composition rule. An
+infinite result would need a compatible exhaustion or an induction/locality
+theorem. These are open continuations rather than impossibility claims.
+
+### N7 — steelman
+
+A larger patch may expose a support conflict absent here; two alternative
+local words may be individually routable but not simultaneously schedulable;
+and an admissibility or probability law may fail to be translation uniform
+even though this supplied Boolean rule schema is covariant. None of those
+possibilities is excluded.
+
+### N8 — cross-cycle echo
+
+Cycle 980 remains the current-main provenance for the one-centre witness
+classes and `J`. Cycle 983 reconstructs those quantities only to test the new
+two-centre relation. It does not convert Cycle 980's finite semantic quotient
+into a lattice-wide dynamics claim or treat the current Record axiom as a
+source of translation uniformity.
+
+### Artifacts and reproduction
 
 Primary:
 

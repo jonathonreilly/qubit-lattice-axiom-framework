@@ -1,7 +1,7 @@
 {
   "artifact": "translation-uniform two-star patch independent refutation checker",
   "audit_status_authority": "independent audit lane only",
-  "checker_source_sha256": "4ea9204536cda9f45bbefe0e9743629fe3ecab91f405e3cda537b5d67392dbb6",
+  "checker_source_sha256": "11fadd644c7ba75df8564f22c2b8a04327503779e5c5d057789a7d68853dd892",
   "checks": {
     "A_INDEPENDENT_RECONSTRUCTION": true,
     "B_REFUTATION_POWER": true,
@@ -14,27 +14,33 @@
     "blob_pins_match": true,
     "byte_pinned_input_paths": [
       "scripts/frontier_cycle983_translation_uniform_two_star_patch_2026_08_11.py",
-      "outputs/translation_uniform_two_star_patch_cycle983_receipt_2026_08_11.json"
+      "outputs/translation_uniform_two_star_patch_cycle983_receipt_2026_08_11.json",
+      "docs/TRANSLATION_UNIFORM_TWO_STAR_PATCH_CYCLE983_BOUNDED_THEOREM_NOTE_2026-08-11.md"
     ],
     "cycle719_imported_or_executed": false,
     "determinism_replay": true,
     "forbidden_imports": [],
     "house_stdout_limit_bytes": 6000,
     "input_git_blobs": {
-      "outputs/translation_uniform_two_star_patch_cycle983_receipt_2026_08_11.json": "5c6e0b4b7c66ff012c55932c8dbb5df807b60335",
-      "scripts/frontier_cycle983_translation_uniform_two_star_patch_2026_08_11.py": "29b29c88da819df73537ae86d4233a87e98af2d3"
+      "docs/TRANSLATION_UNIFORM_TWO_STAR_PATCH_CYCLE983_BOUNDED_THEOREM_NOTE_2026-08-11.md": "1cc3f99e6fd70e5166e318a00a8dde00ac96b3bf",
+      "outputs/translation_uniform_two_star_patch_cycle983_receipt_2026_08_11.json": "adb5e8f5b1728330b6483d7bc2c8a8c68efe755b",
+      "scripts/frontier_cycle983_translation_uniform_two_star_patch_2026_08_11.py": "18fcd6e8113af5baff397b1ceb6848cf3a1665a0"
     },
     "input_sha256": {
-      "outputs/translation_uniform_two_star_patch_cycle983_receipt_2026_08_11.json": "e65d4b22c56ba5a5c1d4968ff3607b8c8445bf271944356ca6ea49fa86cfbb8e",
-      "scripts/frontier_cycle983_translation_uniform_two_star_patch_2026_08_11.py": "e67c13f4b6f0fc3ab29dcb94a4b08eff155faf37c090b31c2ff5e108b9dea0f3"
+      "docs/TRANSLATION_UNIFORM_TWO_STAR_PATCH_CYCLE983_BOUNDED_THEOREM_NOTE_2026-08-11.md": "8c6526b88ead4b10e179ed502887367397b9e9dd10bf3b2fe21da71739249920",
+      "outputs/translation_uniform_two_star_patch_cycle983_receipt_2026_08_11.json": "862ca5a4f6bcd7bf146a6b6306a17629f0ed2383158a2a7ff1ec8b4f2f7db84a",
+      "scripts/frontier_cycle983_translation_uniform_two_star_patch_2026_08_11.py": "c1f72173db2bebc498d2269f6b566261976119e7defcf7b522538c9aff01ff2e"
     },
     "literal_audit_input_paths": [
       "scripts/frontier_cycle983_translation_uniform_two_star_patch_2026_08_11.py",
       "outputs/translation_uniform_two_star_patch_cycle983_receipt_2026_08_11.json",
-      "logs/runner-cache/frontier_cycle983_translation_uniform_two_star_patch_2026_08_11.txt"
+      "logs/runner-cache/frontier_cycle983_translation_uniform_two_star_patch_2026_08_11.txt",
+      "docs/TRANSLATION_UNIFORM_TWO_STAR_PATCH_CYCLE983_BOUNDED_THEOREM_NOTE_2026-08-11.md"
     ],
-    "literal_source_read_count": 3,
+    "literal_source_read_count": 4,
+    "note_contract_valid": true,
     "primary_ast_timeout_seconds": 1400,
+    "primary_base_origin_main_commit": "7f76c118a2b1b55cbbbc1b6334f3ee6bb735fc84",
     "primary_imported_or_executed": false,
     "prior_cycle_text_or_ast_executed": false,
     "runtime_budget_met": true,
@@ -146,6 +152,13 @@
         "patch_name": "P2x_ADJACENT_TWO_CENTRE_CLOSED_STAR_PATCH",
         "relative_family_digest": "d7cb67193f1b63a3f08181410c320ac570cc4652002971274028d69baed7a430",
         "relative_family_size_per_target": 23,
+        "semantic_quotient_boundary": {
+          "constructors_accept_repeated_operands": true,
+          "declared_family_boundary": "pairwise-distinct semantic quotient with unordered TOF controls; not the complete constructor-object population",
+          "repeated_tof_matches_cnot_action": true,
+          "reversed_tof_actions_equal": true,
+          "reversed_tof_gate_objects_equal": false
+        },
         "site_program_instance_count": 46,
         "target_site_count": 2,
         "target_sites": [
@@ -718,6 +731,13 @@
       },
       {
         "errors": [
+          "semantic_quotient_boundary"
+        ],
+        "name": "semantic_quotient_boundary",
+        "rejected": true
+      },
+      {
+        "errors": [
           "witness_names:1",
           "witness_assignments:1",
           "orbit_sum:1",
@@ -807,6 +827,6 @@
   },
   "integrity_policy": "checks gate independent reconstruction, bookkeeping, artifact binding, mutation rejection, and outcome neutrality only; science agreement is reported data",
   "pass": true,
-  "science_digest": "aa5cc8a69fa7c2bdf69998434616830d3ba440336460d36c76e7b5e0fe8cecb6",
-  "stdout_sha256": "7d8e4b2ccb833d004070d32bff76c5c63ab070f2455c01527177377ef759c7d0"
+  "science_digest": "cc574d1864bed7aee7f82419b7440a3ced66d7b66d74f211b6cd747557f7097e",
+  "stdout_sha256": "343b7f426f0285746408cf5bf691c56e1a0cdb1d56f4e01ee3af9b5c0c11d471"
 }

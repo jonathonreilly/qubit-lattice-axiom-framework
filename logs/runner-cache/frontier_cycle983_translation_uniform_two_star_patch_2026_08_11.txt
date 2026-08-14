@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle983_translation_uniform_two_star_patch_2026_08_11.py
-runner_sha256: e67c13f4b6f0fc3ab29dcb94a4b08eff155faf37c090b31c2ff5e108b9dea0f3
-input_fingerprint_sha256: db7786cde9df9554b9e925bd8927e6f129e0cdd1546e5ea349a31056104b73bb
+runner_sha256: c1f72173db2bebc498d2269f6b566261976119e7defcf7b522538c9aff01ff2e
+input_fingerprint_sha256: 0508bab90e8d90e7f18431b9290c97639b302bb3816dd774ce2ca11266eb0c7e
 timeout_sec: 1400
 exit_code: 0
-elapsed_sec: 1.95
+elapsed_sec: 3.08
 status: ok
 ----- stdout -----
 CYCLE983_TRANSLATION_UNIFORM_TWO_STAR_PATCH
@@ -12,7 +12,12 @@ A_PATCH_CONSTRUCTION PASS :: patch=P2x_ADJACENT_TWO_CENTRE_CLOSED_STAR_PATCH; ta
 B_UNIFORMITY_TEST PASS :: result=translation_uniform_on_every_target_site_of_P2x; sites=[["A",21,[["CNOT",6,[1]],["TOF_OPPOSITE_CONTROLS",3,[0]],["TOF_PERPENDICULAR_CONTROLS",12,[2]]],true],["B",21,[["CNOT",6,[1]],["TOF_OPPOSITE_CONTROLS",3,[0]],["TOF_PERPENDICULAR_CONTROLS",12,[2]]],true]]
 C_OVERLAP_CONSISTENCY PASS :: result=exact_agreement_on_all_shared_sites_and_pairs; shared_sites=2; shared_pairs=1
 D_VERDICT PASS :: verdict=TRANSLATION_UNIFORM_AT_PATCH_SCOPE; infinite_claimed=False; obstruction=null
-E_CONTROLS PASS :: source_reads=1<=6; pins=True; prior_ast_text=False; determinism=True; runtime_lt_1400=True
+E_CONTROLS PASS :: source_reads=1<=6; pins=True; prior_ast_text=False; current_record=True; record_used=False; determinism=True; runtime_lt_1400=True
+per_element: checked and executed -- every descriptor/input case and every witness edge comparison was exhausted at both targets.
+per_site: checked and executed -- both declared target sites were tested; the ten support-only halo sites were not promoted to targets.
+per_mode: checked and executed -- all 24 proper-cubic rotations and all 23 relative program modes were reconstructed.
+per_block: checked and executed -- the two closed stars, their shared sites, and their one shared semantic pair were reconciled.
+lattice_wide: checked and not executed -- no compatible exhaustion or infinite-lattice allocation was supplied.
 TOTAL: PASS=5 FAIL=0
 
 ----- stderr -----

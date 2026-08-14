@@ -11,7 +11,7 @@
   "controls": {
     "all_inputs_relative_and_present": true,
     "base_is_ancestor_of_head": true,
-    "base_origin_main_commit": "ea0968c71ad46c39c6dacb39f88a18780363b71f",
+    "base_origin_main_commit": "7f76c118a2b1b55cbbbc1b6334f3ee6bb735fc84",
     "blob_pins_match": true,
     "blocked_ast_imports": [],
     "blocklist_ast_fragments": [
@@ -29,13 +29,14 @@
       "docs/WITNESS_ORBIT_MULTIPLICITY_CYCLE980_BOUNDED_THEOREM_NOTE_2026-08-11.md",
       "docs/Z3_ADJACENCY_DEPENDENCE_CLASSES_CYCLE982_BOUNDED_THEOREM_NOTE_2026-08-11.md"
     ],
+    "current_record_boundary": true,
     "determinism_replay": true,
     "house_stdout_limit_bytes": 6000,
     "input_git_blobs": {
-      "docs/MINIMAL_AXIOMS_2026-06-29.md": "2f5fdd26898f62c17fcabc846761f7785c2eadb1"
+      "docs/MINIMAL_AXIOMS_2026-06-29.md": "bc23300becfe4e4db57153c0e94cfcdf2338da71"
     },
     "input_sha256": {
-      "docs/MINIMAL_AXIOMS_2026-06-29.md": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39"
+      "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
     },
     "literal_audit_input_paths": [
       "docs/MINIMAL_AXIOMS_2026-06-29.md"
@@ -51,10 +52,11 @@
       "sha_pin_match": true
     },
     "prior_cycle_text_or_ast_executed": false,
+    "record_properties_used": [],
     "runtime_budget_met": true,
     "runtime_budget_seconds": 1400,
     "sha_pins_match": true,
-    "stdout_bytes": 810,
+    "stdout_bytes": 1475,
     "stdout_limit_bytes": 150000
   },
   "cycle": 983,
@@ -80,6 +82,13 @@
         "relative_family_digest": "d7cb67193f1b63a3f08181410c320ac570cc4652002971274028d69baed7a430",
         "relative_family_size_per_target": 23,
         "rule_schema": "at target t: I; X(t); CNOT(t+d->t) for every signed unit d; TOF(t+d,t+e->t) for every unordered pair of distinct signed units",
+        "semantic_quotient_boundary": {
+          "constructors_accept_repeated_operands": true,
+          "declared_family_boundary": "pairwise-distinct semantic quotient with unordered TOF controls; not the complete constructor-object population",
+          "repeated_tof_matches_cnot_action": true,
+          "reversed_tof_actions_equal": true,
+          "reversed_tof_gate_objects_equal": false
+        },
         "site_menu": [
           0,
           1
@@ -1137,7 +1146,7 @@
   },
   "integrity_policy": "checks gate construction and bookkeeping only; uniform, obstructed, and not-hostable outcomes all remain cleanly reportable",
   "pass": true,
-  "primary_source_sha256": "e67c13f4b6f0fc3ab29dcb94a4b08eff155faf37c090b31c2ff5e108b9dea0f3",
-  "science_digest": "bdf93a95030f0be7ad487696b474945f19aa23271dcfeb3cc597cc55479588d1",
-  "stdout_sha256": "0e00c3df5b06020cbdb225faea7850a2ac2a3b069a17340952e1f4788acb90b8"
+  "primary_source_sha256": "c1f72173db2bebc498d2269f6b566261976119e7defcf7b522538c9aff01ff2e",
+  "science_digest": "a1dd27b46280ea602d86ef773d6e98e33983c85ee247977b6fd6f960cbb5267e",
+  "stdout_sha256": "969e29f997c6cd365293a6ebd85494fae86b456fdedab512a8189b7b78c91fb7"
 }

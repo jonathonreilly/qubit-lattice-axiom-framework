@@ -1,0 +1,49 @@
+===== runner cache v1 =====
+runner: scripts/formation_weight_energy_dictionary_underdetermination_2026_08_13.py
+runner_sha256: ccd2c6689ab019f936308afe9bd89e314beef130c0a050f83c2ba3d8179b4a7e
+input_fingerprint_sha256: e1d357f1d2bcfe0f5ff85798b6efc56a9df69dda535e408e67399858950ea774
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: current Record boundary, July 12 declared dictionary, and August 13 formation-site residual are source-bound; no observation or fit
+integrity_reads: this runner, its note, the current axiom memo, and two declared parent notes; no other scientific inputs
+construction: conditional D_* solve plus an exact normalized affine family D_t joining inverse, equal, and declared shares
+negative_scope: positivity and total-energy normalization do not uniquely select D_*; dynamics, symmetry, calibration, and content-to-energy maps remain live
+PASS: audit-inputs all four declared inputs exist
+PASS: source-record-current lock, content-only readout, unreadable absence, and scalar retirement are pinned
+PASS: source-record-no-energy-map current Record names neither the submitted dictionaries nor the channel energies
+PASS: source-july12-declaration July 12 calls the energy bridge a declared modeling element not supplied by Record
+PASS: source-formation-residual current August 13 parent keeps formation selection and rate open
+PASS: declared-normalization D_* is positive and normalized at each comparison weight
+PASS: declared-channel channel coordinates recover E_s=3a^2 and E_d=6|b|^2
+PASS: declared-r conditional r equals (1-w)/(2w) and |b|^2/a^2
+PASS: declared-inverse w=1/(1+2r) inverts the declared image
+PASS: declared-normalization D_* is positive and normalized at each comparison weight
+PASS: declared-channel channel coordinates recover E_s=3a^2 and E_d=6|b|^2
+PASS: declared-r conditional r equals (1-w)/(2w) and |b|^2/a^2
+PASS: declared-inverse w=1/(1+2r) inverts the declared image
+PASS: declared-points D_* maps w=1/3 to r=1 and w=1/2 to r=1/2
+PASS: family-positive-normalized D_t is positive and normalized on the exact 13x11x3 rational grid
+PASS: family-endpoints D_0=D_inv, D_1/2=D_eq, and D_1=D_* on the exact grid
+PASS: dimension-comparator D_dim is positive and normalized but differs from D_* at w=1/2
+PASS: family-image-formula direct energy ratios equal the analytic affine image formula
+PASS: third-image-formula at w=1/3, r_t=(1+t)/(2(2-t))
+PASS: third-table inverse, equal, and declared shares give 1/4, 1/2, and 1 at w=1/3
+PASS: half-coalescence all exact t-grid dictionaries coalesce at shares (1/2,1/2) and r=1/2 when w=1/2
+PASS: counterfamily-distinct distinct t-grid parameters give distinct shares at w=1/3
+PASS: normalization-does-not-select D_0 and D_1 satisfy the same explicit normalization constraints but differ at w=1/3
+PASS: mutation-no-normalize using (wE_tot,wE_tot) fails total normalization away from w=1/2
+PASS: mutation-constant-half replacing r_image by constant 1/2 fails declared w=1/3
+PASS: mutation-declared-only assuming t=1 erases exact live endpoint t=0
+PASS: note-contract machine fields, current semantics, N1-N8, and retired-scalar hygiene hold
+per_element: the two channel energies, exact comparison weights, and affine-family parameters are evaluated rationally
+per_site: one declared two-channel formation coordinate is analyzed; no physical site-selection theorem is claimed
+per_mode: channel multiplicities three and six are used algebraically; no spectral-mode exhaustion is claimed
+per_block: conditional inversion, normalized counterfamily, image formula, and half-weight coalescence are executed
+lattice_wide: checked and not executed — no global formation law, energy readout, or dictionary no-go is claimed
+TOTAL: PASS=27 FAIL=0
+
+----- stderr -----
+

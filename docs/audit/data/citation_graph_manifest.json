@@ -1,6 +1,6 @@
 {
- "edge_count": 15682,
- "node_count": 5517,
+ "edge_count": 15686,
+ "node_count": 5518,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1671,8 +1671,8 @@
    "out_degree": 11
   },
   "canonical_harness_index": {
-   "deps_hash": "b3615fdcc5ca",
-   "out_degree": 356
+   "deps_hash": "f93ee77de5eb",
+   "out_degree": 357
   },
   "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": {
    "deps_hash": "808c1ccb6109",
@@ -5081,6 +5081,10 @@
   "formation_rate_law_class_reduction_bounded_note_2026-07-08": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "formation_weight_energy_dictionary_underdetermination_bounded_theorem_note_2026-08-13": {
+   "deps_hash": "35b37fce2461",
+   "out_degree": 3
   },
   "four_d_distance_width_probe_note": {
    "deps_hash": "aa2226788d79",

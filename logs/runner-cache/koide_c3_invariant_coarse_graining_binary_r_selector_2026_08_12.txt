@@ -1,34 +1,36 @@
 ===== runner cache v1 =====
 runner: scripts/koide_c3_invariant_coarse_graining_binary_r_selector_2026_08_12.py
-runner_sha256: 24491aacf9347004ed285a64d7709a06e15ff541f7638884ca20974bd3822b0b
-input_fingerprint_sha256: af03b6ecccb6c7d5e83c4ddb156f3de13406fc1b638f81847d082d8564a8cb69
+runner_sha256: 5611dd7d951c3fe5fd07195f971469019b5ea9f74894c2e79a58c17c0a8ade21
+input_fingerprint_sha256: 5d3e0b0572956133ce674ba575ab9bcfc4eb4bf46663385d05fb825880e77063
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.31
 status: ok
 ----- stdout -----
-external_scientific_inputs: axiom wording and the four parent notes are source-bound; no observational or fitted inputs
-construction: Aut(C3) involution (1 2) on Fourier labels; uniform HS power locates r=1 and r=1/2
-negative_scope: no third Aut-invariant grain; convention-freeness does not uniquely select r=1/2
-PASS: source-qualification the Qualification last sentence is pinned in the axiom memo and the note
-PASS: source-parents custody, stationary-point, July 12, and July 13 supply the open selector and both grains
-PASS: partition-count a three-element set has exactly five partitions
-PASS: aut-invariant-list exactly three partitions are Aut-invariant: one-block, three singletons, singlet-versus-doublet
-PASS: aut-is-not-identity the classifying involution is not the identity: two mixed partitions move
-PASS: three-mode-uniform three-mode HS weights are uniform iff r=1
-PASS: two-block-uniform two-block HS weights are uniform iff r=1/2
-PASS: trivial-blind the one-block grain is r-blind: its only weight is 1 at both distinguished points
-PASS: spectral-line the custody spectral line sends r=1/2 to Q=2/3 and r=1 to Q=1
-PASS: dictionary-section the July 13 dictionary sends w=1/2 to r=1/2 and w=1/3 to r=1; r=1-w is a different section
-PASS: no-third-grain no additional Aut-invariant 2+1 partition exists besides singlet-versus-doublet
-PASS: note-contract machine-status fields, required phrases, and forbidden-word hygiene hold
-PASS: hybrid-unused the hybrid-chirality no-go is named only as unused/forbidden, not as a premise
-per_element: the three Fourier labels and five partitions are enumerated
-per_site: the classification is one abstract C3 circulant, not a lattice
-per_mode: Aut(C3) acts on character labels {0,1,2}; HS weights are the Fourier powers
-per_block: only the Aut-invariant coarse-graining block is executed
-lattice_wide: checked and not executed — no lattice dynamics or sector assignment is claimed
-TOTAL: PASS=13 FAIL=0
+external_scientific_inputs: current axiom wording plus three source-bound algebra/custody parents; no fitted inputs
+construction: setwise Aut(C3) action on group-algebra coefficient labels, followed by fixed-partition Shannon uniformity
+negative_scope: no additional nontrivial invariant set partition; no broad physical-selector or arbitrary-kernel no-go
+PASS: current-axiom-boundary Qualification and the content-only/no-record Record boundary are pinned
+PASS: obsolete-record-semantics-excluded the theorem imports no named scalar, additivity, or absence value
+PASS: spectrum-parent the normalized coefficient identities and Parseval relation are source-bound
+PASS: frobenius-parent the real-isotype powers 3a^2 and 6|b|^2 are source-bound
+PASS: custody-parent the Q(r) line and open selector are source-bound
+PASS: partition-exhaustion a three-element set has exactly the five enumerated partitions
+PASS: setwise-invariant-list exactly one-block, three-singletons, and singlet/doublet survive
+PASS: definition-sensitivity stronger blockwise invariance excludes the three-singleton partition
+PASS: three-channel-iff three coefficient powers are equal if and only if r=1
+PASS: two-block-iff the trivial/doublet aggregate powers are equal if and only if r=1/2
+PASS: normalized-points the two fixed-partition uniform vectors and r-blind one-block are exact
+PASS: global-entropy-boundary the fixed-partition maxima log(3) and log(2) are not a tied binary optimum
+PASS: coefficient-is-not-spectral uniform coefficient powers need not be uniform eigenvalue/PVM powers
+PASS: dependency-boundary spectral, Frobenius, custody, and minimal-axiom inputs are load-bearing; adjacent chains are not
+PASS: note-contract bounded status, no-edit boundary, scope correction, and audit hygiene hold
+per_element: all three coefficient labels and all five set partitions are enumerated
+per_site: one abstract circulant is checked; no lattice-site statement is inferred
+per_mode: spectral eigenmodes are explicitly separated from coefficient channels
+per_block: setwise invariance and fixed-partition aggregation are checked exactly
+lattice_wide: no lattice dynamics, formation process, or sector assignment is claimed
+TOTAL: PASS=15 FAIL=0
 
 ----- stderr -----
 

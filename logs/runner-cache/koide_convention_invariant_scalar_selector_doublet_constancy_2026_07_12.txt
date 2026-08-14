@@ -1,15 +1,15 @@
 ===== runner cache v1 =====
 runner: scripts/koide_convention_invariant_scalar_selector_doublet_constancy_2026_07_12.py
-runner_sha256: 5e8afefedf6b2440e48c5558e913550c9dfe29e6d38f53a9c6e7510d5534f7ce
+runner_sha256: 41cafab34dd9487cc7dfeb9d040d3ddea7fee1a78c47d81c50ed979a940e454e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.45
+elapsed_sec: 1.13
 status: ok
 ----- stdout -----
 PASS V1.1 Qubit real-presentation clause verbatim
 PASS V1.2 no-possibility-privileged clause verbatim
 PASS V1.3 Qualification choice clause verbatim
-PASS V1.4 Record additivity clause verbatim
+PASS V1.4 current Record readout boundary verbatim
 PASS V1.5 named-primitive-content burden clause verbatim
 PASS V2.1 Pauli generators satisfy Cl(3,0)
 PASS V2.2 pseudoscalar equals iI

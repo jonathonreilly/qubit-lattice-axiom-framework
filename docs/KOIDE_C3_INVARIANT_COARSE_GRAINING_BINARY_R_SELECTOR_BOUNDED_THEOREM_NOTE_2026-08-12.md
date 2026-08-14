@@ -1,24 +1,22 @@
 ---
 claim_id: koide_c3_invariant_coarse_graining_binary_r_selector_bounded_theorem_note_2026-08-12
 claim_type: bounded_theorem
-claim_scope: "On the three Fourier modes of an abstract Hermitian circulant, the Aut(C3)-invariant partitions are exactly the trivial partition, the three singletons, and singlet-versus-doublet. Uniform power on those last two partitions is r=1 and r=1/2 respectively. Convention-freeness does not choose between them. The note does not force r universally and does not edit an axiom."
+claim_scope: "For the three group-algebra coefficient channels of an abstract Hermitian C3 circulant, exactly three setwise Aut(C3)-invariant set partitions exist. Conditional on choosing either nontrivial partition and Shannon entropy of its normalized coefficient powers, its uniform point is r=1 or r=1/2. The classification supplies neither a physical partition nor an entropy objective and is not a partition theorem for spectral PVM atoms or Record contents."
 upstream_dependencies:
   - minimal_axioms
   - charged_lepton_koide_value_full_chain_of_custody_2026-06-02
-  - flavor_r_half_is_a_stationary_point_not_forced_2026-06-02
-  - koide_convention_invariant_scalar_selector_doublet_constancy_narrow_theorem_note_2026-07-12
-  - r_half_open_backlog_formation_law_probe_batch_exact_support_note_2026-07-13
+  - koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19
+  - koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10
 runner: scripts/koide_c3_invariant_coarse_graining_binary_r_selector_2026_08_12.py
 ---
 
-# C3-Invariant Coarse-Grainings Pin A Binary Interior r Choice
+# Aut-Invariant Partitions Of Three Circulant Coefficient Channels
 
 **Date:** 2026-08-12
 **Type:** bounded_theorem
-**Scope:** abstract Hermitian circulant `H=aI+bC+b̄C²` on a three-label
-`C_3` algebra; Aut(`C_3`) acting on Fourier mode labels.
-**Audit-status authority:** independent audit lane only. This note authors no
-audit verdict and predicts none.
+**Scope:** an abstract Hermitian circulant `H=aI+bC+bbar C^2`, its three
+group-algebra coefficient channels, and setwise invariance under
+`Aut(C_3)`.
 **Primary runner:**
 [`scripts/koide_c3_invariant_coarse_graining_binary_r_selector_2026_08_12.py`](../scripts/koide_c3_invariant_coarse_graining_binary_r_selector_2026_08_12.py)
 **Runner cache:**
@@ -26,334 +24,264 @@ audit verdict and predicts none.
 
 ## Result Up Front
 
-The charged-lepton custody map
-[`CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md`](CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md)
-leaves the interior value of `r=|b|²/a²` open. On the positive-spectrum
-surface, `Q_H=1/3+(2/3)r` and `Q_H=2/3` if and only if `r=1/2`. This note
-does not close that selector. It reduces the continuous-looking hunt to a
-binary choice between the only two nontrivial Aut(`C_3`)-invariant
-coarse-grainings of the three Fourier modes.
+Let `r=|b|^2/a^2` with `a != 0`. The coefficient channels are the trivial
+line and a conjugate pair,
 
-1. **Invariant partitions.** Label the Fourier modes `{0,1,2}`, with `0`
-   the trivial character and `{1,2}` the conjugate pair. Aut(`C_3`) is the
-   involution that swaps `1` and `2`. Of the five partitions of a
-   three-element set, exactly three are Aut-invariant: the one-block
-   partition, the three singletons, and `{ {0}, {1,2} }`.
-2. **Uniform-power points.** Using the landed Hilbert–Schmidt isotype
-   weights, the three-singleton (mode) distribution is uniform exactly at
-   `r=1`. The two-block (sector) distribution is uniform exactly at
-   `r=1/2`. The trivial partition is `r`-blind.
-3. **No third invariant entropy target.** There is no other Aut-invariant
-   coarse-graining whose uniform-power point could supply a third
-   distinguished interior value.
-4. **Convention-freeness does not choose.** The parent
-   [`KOIDE_CONVENTION_INVARIANT_SCALAR_SELECTOR_DOUBLET_CONSTANCY_NARROW_THEOREM_NOTE_2026-07-12.md`](KOIDE_CONVENTION_INVARIANT_SCALAR_SELECTOR_DOUBLET_CONSTANCY_NARROW_THEOREM_NOTE_2026-07-12.md)
-   already records that the unlabeled three-atom PVM is convention-stable
-   and that ORBIT-INDEXING is not derived from Record. Both nontrivial
-   invariant partitions therefore remain live as named-content structure.
-   Maximizing Shannon entropy on one or the other is an extra choice, not
-   a theorem of the four axioms.
+`(a_0,z,zbar)=(sqrt(3)a,sqrt(3)b,sqrt(3)bbar)`.
 
-The current axioms in
-[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) are not
-edited. The Qualification burden used here is the last sentence of that
-clause:
+On their label set `{0,1,2}`, the nontrivial automorphism of `C_3` fixes `0`
+and swaps `1,2`. Exactly three of the five set partitions are invariant as
+sets of blocks:
 
-A choice not fixed by the supplied structure remains a named conditional or open dependency.
+1. `{{0,1,2}}`;
+2. `{{0},{1},{2}}`;
+3. `{{0},{1,2}}`.
 
-This stretch is lane-scoped to the abstract circulant `C_3` family. It does
-not assign any value of `r` to a physical fermion sector and does not
-re-open the hybrid-chirality no-go.
+The normalized coefficient powers are `(1,r,r)/(1+2r)`. Conditional on
+choosing the three-block partition and Shannon entropy of those powers, the
+unique uniform point is `r=1`. Conditional on choosing the two-block
+partition and aggregating the conjugate pair, the powers are
+`(1,2r)/(1+2r)` and the unique uniform point is `r=1/2`. The one-block
+partition is `r`-blind.
+
+That is the whole positive result. It is a finite classification with two
+conditional consequences, not a binary physical selector. In particular:
+
+- the coefficient channels are not the three spectral-projector atoms;
+- no current axiom chooses a coefficient partition or an entropy objective;
+- optimizing across the two partitions would favor the three-block maximum
+  `log(3)`, not leave two equal global maxima;
+- soft/stochastic coarse-grainings and other objectives lie outside the
+  theorem.
+
+The charged-lepton custody target remains open. Its identity
+`Q_H=1/3+(2/3)r` still sends `r=1/2` to `Q_H=2/3`, but this note does not
+derive that input value.
+
+The governing Qualification sentence is: A choice not fixed by the supplied
+structure remains a named conditional or open dependency.
 
 ## Machine Status And Trace
 
 ```yaml
 actual_current_surface_status: bounded-support
 target_claim_type: bounded_theorem
-claim_type_reason: "The Aut(C3) partition classification is exhaustive and finite. Uniform-power identities are exact on the landed Hilbert-Schmidt weights. Physical choice between the two nontrivial coarse-grainings, the formation-weight dictionary, and any charged-lepton assignment remain open."
-trace_class: direct_blocker_closure
+claim_type_reason: "The partition enumeration and conditional uniformity equations are exact; the physical coefficient grain and objective remain open."
+trace_class: upstream_support
 target_claim_id: charged_lepton_koide_r_half_open_selector
 target_blocker_text: "choose the physical interior value r; Q=2/3 requires r=1/2"
 source_of_blocker_text: handoff
-reachability_to_target: partially_closes
+reachability_to_target: supports
 artifact_role: theorem
-next_trace_action: "Decide which Aut(C3)-invariant coarse-graining, if either, is the physical formation/power grain; do not import r=1/2 universally; do not adopt axiom text."
-conditional_surface_status: "exact for the partition classification and the two uniform-power points; physical lane assignment open"
+next_trace_action: "Supply a physical bridge from framework content to a coefficient coarse-graining and objective; do not identify coefficient slots with spectral PVM atoms."
+conditional_surface_status: "exact partition classification and fixed-partition uniformity; physical selector open"
 hypothetical_axiom_status: "no edit"
 admitted_observation_status: null
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
 
-## Exact Objects
+## Exact Objects And Imported Algebra
 
-Let `C` be the standard 3-cycle permutation matrix, `C³=I`, `C^†=C²`. An
-abstract Hermitian circulant is
+Let `C` be the standard three-cycle matrix. Then `C^3=I`, `C^dagger=C^2`,
+and
 
-`H=aI+bC+b̄C²`, `a∈R`, `b∈C`, `a≠0`.
+`H=aI+bC+bbar C^2`, with `a` real and `b` complex.
 
-Write `r=|b|²/a²`. The landed spectral-ratio identity, used only as the
-already-assembled custody line and not re-proved here, is
+The normalized Fourier-coordinate bridge
+[`KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md`](KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md)
+gives
 
-`Q_H := Tr(H²)/(Tr H)² = 1/3+(2/3)r`.
+`a_0=sqrt(3)a`, `z=sqrt(3)b`, and `|z|^2=3|b|^2`,
 
-The Fourier mode labels are the three characters of `C_3`:
+together with Parseval
 
-`χ_0=1`, `χ_1=ω`, `χ_2=ω²`, `ω=exp(2πi/3)`.
+`lambda_0^2+lambda_1^2+lambda_2^2=a_0^2+2|z|^2`.
 
-Aut(`C_3`) is isomorphic to `Z_2` and sends `C↦C²`, equivalently
-`ω↦ω²`. It therefore fixes label `0` and swaps labels `1` and `2`.
-A partition `Π` of `{0,1,2}` is Aut-invariant when `σ(Π)=Π` as a set of
-blocks, where `σ=(1 2)`.
+This relation is a change of coordinates. The eigenvalues `lambda_j` label
+the spectral PVM atoms, whereas `(a_0,z,zbar)` label group-algebra
+coefficient channels. A partition of the latter is not thereby a partition
+of the former.
 
-The landed Hilbert–Schmidt isotype weights, matching the custody L6/L9
-normalization, are
+The real-isotype theorem
+[`KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md`](KOIDE_KAPPA_BLOCK_TOTAL_FROBENIUS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md)
+gives the canonical real split
 
-`W_0=3a²`, `W_1=3|b|²`, `W_2=3|b|²`.
+`pi_+(H)=aI`, `pi_perp(H)=bC+bbar C^2`,
 
-These are the squared Fourier-coefficient weights
-`(|a_0|²,|z|²,|z|²)` with `a_0=√3 a` and `|z|²=3|b|²`. The two-block
-aggregates are `W_{{0}}=3a²` and `W_{{1,2}}=6|b|²`.
+with powers `E_+=3a^2` and `E_perp=6|b|^2`. Splitting the conjugate
+coefficient pair before aggregation gives the three powers
 
-The two exhibited formation resolutions of
-[`R_HALF_OPEN_BACKLOG_FORMATION_LAW_PROBE_BATCH_EXACT_SUPPORT_NOTE_2026-07-13.md`](R_HALF_OPEN_BACKLOG_FORMATION_LAW_PROBE_BATCH_EXACT_SUPPORT_NOTE_2026-07-13.md)
-are written `A_carrier={s,d_1,d_2}` and `A_cell={s,d}` with uniform
-weights `w=1/3` and `w=1/2`. Their conversion to `r` uses the declared
-modeling dictionary `r=(1-w)/(2w)` and is not derived here.
+`(3a^2,3|b|^2,3|b|^2)`.
 
-## Exact Target And Obligation Graph
+Finally, the custody note
+[`CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md`](CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md)
+supplies `Q_H=1/3+(2/3)r` and explicitly leaves the physical `r` selector
+open. No observational value is used here.
 
-**Exact target.** On the abstract circulant `C_3` family, classify the
-Aut-invariant coarse-grainings of the Fourier modes, locate their
-uniform-power points on the `r` line, and decide whether convention-freeness
-or the four axioms select one of them.
+## Theorem 1 — Exact Setwise-Invariant Partition List
 
-| Obligation | Role | Disposition |
-|---|---|---|
-| pin the custody open selector | target | quoted; not closed |
-| enumerate partitions of a 3-set | Theorem 1 | five partitions |
-| impose Aut-invariance | Theorem 1 | three survivors |
-| locate uniform-power `r` | Theorem 2 | `r=1` and `r=1/2` |
-| exclude a third invariant grain | Theorem 1 | exhaustive |
-| derive which grain is physical | residual | open |
-| derive the `w↦r` dictionary | non-claim | modeling input |
-| assign a fermion sector | non-claim | not attempted |
-| re-open hybrid chirality | forbidden | not attempted |
+There are five set partitions of `{0,1,2}`:
 
-## Theorem 1 — Aut-Invariant Partitions Of Three Fourier Modes
+`{{0,1,2}}`, `{{0},{1},{2}}`, `{{0},{1,2}}`,
+`{{1},{0,2}}`, and `{{2},{0,1}}`.
 
-A three-element set has five partitions:
+The involution `sigma=(1 2)` fixes the first three as sets of blocks and
+exchanges the last two. Therefore exactly three setwise
+`Aut(C_3)`-invariant partitions exist.
 
-`{ {0,1,2} }`,
-`{ {0}, {1}, {2} }`,
-`{ {0}, {1,2} }`,
-`{ {1}, {0,2} }`,
-`{ {2}, {0,1} }`.
+Setwise invariance is essential. The three-singleton partition is fixed only
+because `sigma` permutes its two nontrivial blocks. Under the stronger
+condition that every block be fixed pointwise as a set, only the one-block
+and singlet-versus-doublet partitions remain. This note uses the stated
+setwise definition throughout.
 
-Apply `σ=(1 2)`. The last two partitions are exchanged with each other, so
-neither is Aut-invariant. The first three are fixed as sets of blocks:
+The exact negative is correspondingly narrow: there is no other nontrivial
+setwise-invariant set partition of these three coefficient labels. It is not
+a claim about arbitrary coarse-graining maps.
 
-- the one-block partition is fixed;
-- the three-singleton partition is fixed because `σ` permutes the blocks
-  `{1}` and `{2}` inside the same partition;
-- `{ {0}, {1,2} }` is fixed blockwise.
+## Theorem 2 — Conditional Uniformity Within A Fixed Partition
 
-Thus exactly three Aut-invariant partitions exist. There is no fourth. In
-particular there is no Aut-invariant 2+1 split that groups the singlet with
-exactly one doublet mode.
+Normalize the three coefficient powers:
 
-The three-singleton partition is the unlabeled mode PVM of the parent July 12
-note. The two-block partition is the K-orbit / sector grain of that note's
-sibling occupancy surface. Theorem 1 does not derive ORBIT-INDEXING and does
-not forbid the three-atom PVM. It only says these are the only invariant
-grains.
+`p_3(r)=(1,r,r)/(1+2r)`.
 
-## Theorem 2 — Uniform Power Lives At Opposite Distinguished Points
+For `r>=0`, equality of its three entries holds exactly when `r=1`. Hence
+Shannon entropy within this fixed three-block family is uniquely maximized
+at `r=1`.
 
-Normalize the Hilbert–Schmidt weights of Theorem 1's two nontrivial
-partitions.
+Aggregate the conjugate pair in the two-block partition:
 
-On the three singletons the probability vector is
+`p_2(r)=(1,2r)/(1+2r)`.
 
-`(W_0,W_1,W_2)/(W_0+W_1+W_2) = (a², |b|², |b|²)/(a²+2|b|²) = (1, r, r)/(1+2r)`.
+Equality of its two entries holds exactly when `r=1/2`. Hence Shannon
+entropy within this fixed two-block family is uniquely maximized at
+`r=1/2`. The one-block normalized vector is `(1)` for every `r`.
 
-This is uniform, `(1/3,1/3,1/3)`, if and only if `1=r`, that is `r=1`.
+These implications are conditional on a fixed partition and on Shannon
+entropy. They do not make the two partitions physically exhaustive. They
+also cannot be combined into a global binary optimization: the maxima are
+`log(3)` and `log(2)`, respectively.
 
-On the two blocks the probability vector is
+## Current Record Boundary
 
-`(W_{{0}}, W_{{1,2}})/(3a²+6|b|²) = (1, 2r)/(1+2r)`.
+The current framework wording is pinned in
+[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md). Record says
+that records form; a present record locks exactly one admissible local
+possibility; at most one is present per site; records are permanent; only
+records are readable; readout depends on record content alone; and a site
+with no record cannot be read.
 
-This is uniform, `(1/2,1/2)`, if and only if `1=2r`, that is `r=1/2`.
+Nothing in that content supplies:
 
-The one-block partition has a single weight `1` for every `r`.
+- a named scalar `I`, finite additivity, or a value at absence;
+- a map from record content to `(a_0,z,zbar)`;
+- a coefficient partition, probability normalization, entropy functional,
+  or selection rule.
 
-Shannon entropy on a finite set is uniquely maximized at the uniform
-distribution. Therefore the only entropy-maximizing points available to
-Aut-invariant coarse-grainings are:
-
-| Invariant grain | Uniform-power point | Custody name |
-|---|---|---|
-| one block | none (`r`-blind) | — |
-| three modes | `r=1` | positivity / hierarchy endpoint |
-| singlet versus doublet | `r=1/2` | two-sector balance |
-
-This is the stationary-point fact of
-[`FLAVOR_R_HALF_IS_A_STATIONARY_POINT_NOT_FORCED_2026-06-02.md`](FLAVOR_R_HALF_IS_A_STATIONARY_POINT_NOT_FORCED_2026-06-02.md),
-now equipped with an exhaustive invariant-partition classification: there is
-no third Aut-invariant entropy target on this three-mode set.
-
-The two exhibited July 13 formation resolutions match the same two grains.
-Uniform hazards on carrier members give `w=1/3`. Uniform hazards on K-orbit
-cells give `w=1/2`. The declared dictionary `r=(1-w)/(2w)` then sends those
-weights to `r=1` and `r=1/2` respectively. That dictionary is a section of
-the rectangle `{1/3,1/2}×(0,1)`, not a consequence of Theorem 1 or 2. An
-alternate dictionary such as `r=1-w` would send `w=1/2` to `r=1/2` and
-`w=1/3` to `r=2/3`, a different interior point. The axioms do not choose
-the section.
-
-## Theorem 3 — Named Content Does Not Select The Grain
-
-The July 12 parent proves two facts used here as hypotheses, not re-proved:
-
-- a convention-invariant *fixed-label scalar* selector is constant on the
-  conjugate doublet;
-- the *unlabeled* three-atom spectral PVM `{P_1,P_ω,P_{ω̄}}` is
-  convention-stable, and ORBIT-INDEXING is not derived from Record.
-
-Theorem 1's two nontrivial partitions are exactly those two objects. Both
-are compatible with named-content convention-freeness. Choosing the
-two-block entropy maximum, or the three-mode entropy maximum, is therefore
-an extra choice. It is not supplied by the Qualification clause quoted
-above, by Record content-only, or by Aut-invariance.
-
-This is the stretch outcome. The attempted one-step derivation
-"convention-free Record ⇒ two-block grain ⇒ `r=1/2`" fails for the reason
-already isolated in July 12: convention-freeness stabilizes the three-atom
-PVM as well. The new information is that the failure is binary and
-exhaustive: after Aut-invariance, the remaining selector is which of those
-two grains, if either, is the physical power or formation grain.
-
-The hybrid `γ_CL=Γ_χ` anticommutation no-go is not used and is not reopened.
+Consequently Record does not choose between Theorem 1's partitions. The
+adjacent registered-partition chain in PRs #6160--#6162 concerns density-body
+laws, effect-only readout, and supplied product lifts. It supplies none of
+the coefficient-channel objects above, so there is no load-bearing dependency
+edge to that chain.
 
 ## Boundary And Non-Claims
 
+- The physical charged-lepton value `r=1/2` remains open.
+- Coefficient channels are not called Fourier eigenmodes or PVM atoms.
+- A formation-event atom set is not identified with a coefficient partition.
+- Other entropies, objectives, soft kernels, and non-partition maps are open.
+- No fermion sector, record content, formation law, or dynamics is assigned.
 - No axiom sentence is edited.
-- `r=1/2` is not derived, not forced, and not assigned to a physical
-  charged-lepton sector.
-- The energy dictionary `r=(1-w)/(2w)` remains a modeling input.
-- Equal per-cell versus per-member hazards remain a formation-dynamics
-  residual.
-- Observational masses, NuFit, and PDG values are not used.
-- Non-circulant carriers, non-Aut-invariant grains, and non-affine kernels
-  are outside the classification.
-
-## Imports And Claim Boundary
-
-| Item | Role | Status |
-|---|---|---|
-| current four axioms and Qualification | premise | quoted; no edit |
-| custody chain `Q_H=1/3+(2/3)r` | parent identity | used, not re-proved |
-| Hilbert–Schmidt Fourier weights | parent normalization | used as declared weights |
-| July 12 convention-stable 3-PVM / no ORBIT-INDEXING | parent negative | cited |
-| July 13 two formation resolutions and dictionary | comparison | not selected |
-| physical grain choice | residual | open |
-| hybrid chirality | forbidden reopen | unused |
-
-The exact advance is an exhaustive Aut-invariant partition classification
-together with the location of the two uniform-power points. Independent
-audit remains required before any effective status may change.
 
 ## Promotion Value Gate (V1–V5)
 
 | # | Question | Answer |
 |---|---|---|
-| V1 | Named obstruction addressed? | The custody note's open selector: "choose the physical interior value `r`; `Q=2/3` requires `r=1/2`." This block reduces that hunt to a binary choice between the only two nontrivial Aut-invariant coarse-grainings. |
-| V2 | New content? | Yes: exhaustive Aut-invariance on the five partitions of `{0,1,2}`, the identification of those survivors with the two July 13 formation resolutions, and the exact uniform-power locations `r=1` and `r=1/2`. Prior-art on `origin/main` `c820f8e38f`: the stationary-point note names the two extrema; July 12 names convention-stable 3-PVM versus doublet-constant scalars; July 13 exhibits two formation weights. None classifies Aut-invariant partitions of the mode set or proves there is no third invariant grain. |
-| V3 | Textbook partition counting plus axioms? | No. The 5-partition count is finite combinatorics, but the load-bearing step is that Aut(`C_3`) is the named-content automorphism already isolated by July 12, and that the HS weights are the custody Fourier coordinates. Those are framework objects. |
-| V4 | More than a restatement? | Yes. "r=1/2 is a stationary point" does not say it is one of exactly two invariant uniform-power points. "ORBIT-INDEXING is not from Record" does not enumerate the invariant grains. |
-| V5 | One-step relabel? | No. The closest landed facts are the two extrema and the two formation weights. The missing lemma was uniqueness of the invariant partition list. |
+| V1 | Named obstruction addressed? | It supplies a small exact catalog adjacent to the custody note's open `r` selector, while leaving the physical bridge open. |
+| V2 | New content? | Yes: the five partitions are exhaustively tested under setwise `Aut(C_3)` action, and their fixed-partition coefficient-power uniformity points are stated with the coefficient/PVM boundary explicit. |
+| V3 | Textbook result plus axioms? | The finite combinatorics is elementary; the framework-specific content is the exact imported circulant coefficient decomposition and the refusal to turn it into Record or spectral-PVM semantics. |
+| V4 | More than restatement? | Yes. The parent algebra supplies coefficient powers but does not classify their setwise-invariant partitions. |
+| V5 | One-step relabel? | No. The review correction removes an invalid eigenmode identification and preserves only the exact coefficient-space theorem. |
 
 ## No-Go Discipline Gate
 
-Two scoped negatives are shipped: (i) there is no third Aut-invariant
-coarse-graining of the three modes; (ii) convention-freeness and entropy
-maximization do not uniquely select `r=1/2`. They are not a global
-non-derivability theorem for the charged-lepton value.
+The note ships one negative: no third nontrivial setwise-invariant set
+partition exists on the three coefficient labels. It does not ship a broad
+no-go for physical selectors.
 
-### N1 — materially distinct routes
+### N1 — Materially distinct routes
 
-| Route | Exact attack | Result | Marker |
-|---|---|---|---|
-| Force two-block grain from Record content-only | identify records with Aut-invariant scalar labels | July 12: unlabeled 3-PVM is convention-stable; Theorem 3 records the failure | **ATTEMPTED** |
-| Force three-mode grain from convention-freeness | treat the stable 3-PVM as selected | Theorem 3: the two-block grain is equally Aut-invariant | **ATTEMPTED** |
-| Invent a third invariant 2+1 split | group the singlet with one doublet mode | Theorem 1: those partitions are not Aut-invariant | **ATTEMPTED** |
-| Maximize 3-mode entropy | uniform Fourier weights | Theorem 2: selects `r=1`, the other distinguished point | **ATTEMPTED** |
-| Maximize 2-block entropy | uniform sector weights | Theorem 2: selects `r=1/2`, still an extra choice | **ATTEMPTED** |
-| Hybrid `γ_CL=Γ_χ` | reopen the anticommuting no-go | out of scope; not used | **RULED OUT BY PRIOR** |
-| Import observational `Q=2/3` | fit `r` | forbidden as a derivation input | **RULED OUT BY PRIOR** |
+| Route | Exact attack and outcome | Marker |
+|---|---|---|
+| Exhaust all set partitions | Bell number `B_3=5`; direct action leaves exactly the stated three | **ATTEMPTED** |
+| Require every block to be invariant | This stronger definition removes the three-singleton partition; it is a different claim, exposing definition sensitivity | **ATTEMPTED** |
+| Allow equivariant block labels | Permuted output labels can preserve additional maps, but they are not invariant set partitions in the theorem's class | **ATTEMPTED** |
+| Allow stochastic/soft coarse-grainings | A continuum of equivariant kernels exists; those are not set partitions and refute only the discarded broad claim | **ATTEMPTED** |
+| Change or jointly optimize the objective | Other objectives can select other points; the theorem asserts uniformity only for Shannon entropy within a fixed partition | **ATTEMPTED** |
+| Use spectral PVM atoms instead | The Fourier transform relates but does not identify spectral atoms and coefficient slots; this route attacks a different object | **ATTEMPTED** |
 
-### N2 — wall independence
+### N2 — Wall independence
 
-| Pair | First closes second? | Second closes first? | Disposition |
-|---|---:|---:|---|
-| no third invariant grain / grain choice | no: a classification does not pick a grain | no: picking a grain does not enumerate partitions | independent |
-| grain choice / energy dictionary | no: a power grain can exist without formation `w` | no: a `w↦r` map does not pick a grain | independent |
-| convention-stable 3-PVM / two-block grain | no: July 12 keeps both | no: Aut-invariance keeps both | independent |
+The single live physical wall is a supplied bridge from framework content to
+a coefficient coarse-graining and objective. A physical rule could choose
+both together, so the note does not inflate these into independent walls.
+The finite partition enumeration neither supplies nor requires that bridge.
 
-### N3 — hidden-condition scan
+### N3 — Hidden-condition scan
 
 | Item | Classification |
 |---|---|
-| Hilbert–Schmidt Fourier weights | declared parent normalization |
-| Aut(`C_3`) as the involution `(1 2)` | named-content automorphism from July 12 |
-| finite-support positive `a≠0` | explicit circulant chart |
-| "natural" / "standard" | not used as a load-bearing word |
-| physical charged-lepton assignment | not assumed |
+| group-algebra coefficient basis | explicit imported algebraic coordinate choice |
+| `sigma=(1 2)` | explicit nontrivial `Aut(C_3)` action |
+| setwise partition invariance | explicit theorem definition |
+| normalized coefficient powers | explicit parent Frobenius decomposition |
+| Shannon entropy within a fixed partition | explicit conditional objective |
+| physical partition/objective | not assumed; open |
 
-### N4 — residual matching
+### N4 — Residual matching
 
-The custody selector, the stationary-point residual ("which extremum/lane"),
-July 12's undischarged ORBIT-INDEXING, and July 13's unselected formation
-atom are the same binary grain choice. This note matches that residual. It
-does not re-attack singleton mass, menu restriction, or hybrid chirality.
+The spectrum bridge supplies `a_0=sqrt(3)a`, `z=sqrt(3)b` and Parseval;
+the Frobenius theorem supplies `E_+=3a^2`, `E_perp=6|b|^2`; the custody note
+supplies the open `r` target. None says coefficient labels are spectral PVM
+atoms or Record contents. The theorem matches only the missing finite
+coefficient-partition catalog and leaves the custody residual unchanged.
 
-### N5 — rhetoric audit
+### N5 — Rhetoric audit
 
-"Does not uniquely select `r=1/2`" is checked at:
+- per-element: all three coefficient labels and all five partitions are enumerated explicitly;
+- per-site: one abstract circulant is studied, with no lattice-site statement inferred;
+- per-mode: spectral eigenmodes are distinguished from coefficient channels rather than conflated;
+- per-block: setwise invariance and fixed-partition power aggregation are the only block claims;
+- lattice-wide: no lattice dynamics, formation process, or sector assignment is claimed or tested.
 
-- per-element: the three mode labels and the two nontrivial partitions;
-- per-site: one abstract `C_3` circulant, not a lattice;
-- per-mode: Fourier characters `{0,1,2}`;
-- per-block: only the Aut-invariant coarse-graining block;
-- lattice-wide: not executed.
+### N6 — Partial-closure path
 
-### N6 — partial-closure path
+A separately supplied physical rule could name a coefficient partition and
+objective without editing the four axioms. That would close the open bridge.
+This theorem does not supply or recommend such a rule.
 
-A convention that *names* ORBIT-INDEXING, or that names 3-mode entropy as
-the physical grain, would close the binary choice without enlarging the
-axiom list. Those paths remain owner-gated. This note does not take them.
+### N7 — Hostile steelman
 
-### N7 — steelman
+> The classification is scientifically irrelevant: coefficient slots are
+> not spectral outcomes, and even inside coefficient space a soft kernel or
+> another invariant functional can select values outside `{1,1/2}`.
 
-> The two-block grain is the occupancy surface already written in sibling
-> notes, so classifying partitions changes nothing: `r=1/2` is still the
-> charged-lepton point.
+**Answer.** Correct against the submitted broad physical-selector reading.
+That reading is removed. The surviving result is only the exact finite
+classification and two fixed-partition Shannon-uniformity consequences.
 
-**Answer.** Those sibling notes *supply* ORBIT-INDEXING. The Qualification
-clause forbids using a supplied occupancy partition as named axiom content.
-The classification shows why a further hunt for a third invariant grain is
-empty, and why convention-freeness cannot finish the job. That is a sharper
-wall, not a value derivation.
+### N8 — Cross-cycle echo
 
-### N8 — cross-cycle echo
-
-Frobenius isotype-weight freedom, operator-spectral no-gos, record-orbit-count
-no-gos, corner-determinant obstruction, and Dirac-mass-forces-`r=1` are
-different residuals. None enumerates Aut-invariant partitions of the three
-Fourier labels. Hybrid chirality remains closed and unused.
+Earlier spectrum/PVM work acts on eigenprojectors, while the real-isotype
+Frobenius work acts on group-algebra coefficient components. Their labels are
+Fourier-dual, not identical. The nearby formation and registered-partition
+cycles likewise use different carrier sets and maps. No cross-cycle analogy
+is made load-bearing.
 
 ## Primary Runner
 
-[`scripts/koide_c3_invariant_coarse_graining_binary_r_selector_2026_08_12.py`](../scripts/koide_c3_invariant_coarse_graining_binary_r_selector_2026_08_12.py)
-enumerates the five partitions, checks Aut-invariance, and verifies the two
-uniform-power identities in exact rational arithmetic.
+The runner enumerates all partitions, verifies the exact automorphism action,
+checks the symbolic coefficient and aggregate uniformity equations, separates
+coefficient powers from spectral eigenvalue powers by a counterexample, pins
+the current Record boundary, and checks the audit-compatible note contract.

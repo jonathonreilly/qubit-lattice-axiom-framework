@@ -195,7 +195,7 @@ for ORBIT-INDEXING or an equivalent physical identification.
 
 | check block | exact verification | result |
 |---|---|---:|
-| V1 | five whitespace-flattened current-memo clauses: Qubit real presentation, no privilege, live conditional/open choice clause, Record additivity as a boundary check, and the named-content burden | PASS (5) |
+| V1 | five whitespace-flattened current-memo clauses: Qubit real presentation, no privilege, live conditional/open choice clause, the content-only/no-record Record readout boundary, and the named-content burden | PASS (5) |
 | V2 | Pauli `Cl(3,0)` relations; `ps=+iI`, `ps^2=-I`; conjugated relations and `ps=-iI`; exact two-root center check and exchange; multiplicative and symbolic real-linear two-model witness | PASS (10) |
 | V3 | grade involution multiplicativity on all `8 x 8` basis-monomial products and `alpha(ps)=-ps` | PASS (2) |
 | V4 | projector resolution, idempotence, orthogonality, character equation, conjugation action, and fixed rank-two doublet block | PASS (8) |

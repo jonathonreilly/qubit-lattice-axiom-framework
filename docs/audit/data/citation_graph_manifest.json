@@ -1,6 +1,6 @@
 {
- "edge_count": 15620,
- "node_count": 5496,
+ "edge_count": 15625,
+ "node_count": 5497,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1663,8 +1663,8 @@
    "out_degree": 11
   },
   "canonical_harness_index": {
-   "deps_hash": "e141e894c2d1",
-   "out_degree": 347
+   "deps_hash": "f00b3bcb6d25",
+   "out_degree": 348
   },
   "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": {
    "deps_hash": "808c1ccb6109",
@@ -10733,6 +10733,10 @@
   "koide_c3_generator_rephasing_obstruction_narrow_theorem_note_2026-05-29": {
    "deps_hash": "7d702f859bcd",
    "out_degree": 2
+  },
+  "koide_c3_invariant_coarse_graining_binary_r_selector_bounded_theorem_note_2026-08-12": {
+   "deps_hash": "36103f445ebd",
+   "out_degree": 4
   },
   "koide_c3_singlet_extension_reduction_theorem_note_2026-04-20": {
    "deps_hash": "c19e8c3a8067",

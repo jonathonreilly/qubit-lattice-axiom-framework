@@ -62,14 +62,14 @@ qualification = (
     "A choice not fixed by the supplied structure remains a named "
     "conditional or open dependency."
 )
-record_additivity = (
-    "For any finite collection of pairwise-disjoint records, scalar readout "
-    "`I` is additive, with `I(empty)=0`."
+record_boundary = (
+    "Only records are readable. A readout value is determined by record "
+    "content alone. A site with no record cannot be read."
 )
 check("V1.1 Qubit real-presentation clause verbatim", real_presentation in memo_text)
 check("V1.2 no-possibility-privileged clause verbatim", no_privilege in memo_text)
 check("V1.3 Qualification choice clause verbatim", qualification in memo_text)
-check("V1.4 Record additivity clause verbatim", record_additivity in memo_text)
+check("V1.4 current Record readout boundary verbatim", record_boundary in memo_text)
 named_content = (
     "These axioms state only their named primitive content. Further physical "
     "structure requires a retained derivation or bridge, or explicit "

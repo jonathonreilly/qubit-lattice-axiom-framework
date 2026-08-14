@@ -1,6 +1,6 @@
 {
- "edge_count": 15603,
- "node_count": 5489,
+ "edge_count": 15604,
+ "node_count": 5490,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -4693,6 +4693,10 @@
   "first_order_coframe_unconditionality_no_go_theorem_note_2026-04-30": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "five_site_line_speed_bounded_theorem_note_2026-08-14": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "fixed_field_complex_grown_basin_v2_note": {
    "deps_hash": "9b334c2c3616",

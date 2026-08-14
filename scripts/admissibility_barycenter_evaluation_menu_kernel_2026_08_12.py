@@ -86,30 +86,46 @@ ONE = Qsqrt2(Fraction(1))
 
 @dataclass(frozen=True)
 class H2:
-    """Real-symmetric 2x2 matrix over Q(sqrt(2))."""
+    """Hermitian 2x2 matrix over Q(sqrt(2)) with q = q_re + i q_im."""
 
     p: Qsqrt2
-    q: Qsqrt2
+    q_re: Qsqrt2
     r: Qsqrt2
+    q_im: Qsqrt2 = ZERO
 
     def __add__(self, other: "H2") -> "H2":
-        return H2(self.p + other.p, self.q + other.q, self.r + other.r)
+        return H2(
+            self.p + other.p,
+            self.q_re + other.q_re,
+            self.r + other.r,
+            self.q_im + other.q_im,
+        )
 
     def scale(self, value: Qsqrt2 | int | Fraction) -> "H2":
-        return H2(self.p * value, self.q * value, self.r * value)
-
-    def mul(self, other: "H2") -> "H2":
         return H2(
-            self.p * other.p + self.q * other.q,
-            self.p * other.q + self.q * other.r,
-            self.q * other.q + self.r * other.r,
+            self.p * value,
+            self.q_re * value,
+            self.r * value,
+            self.q_im * value,
+        )
+
+    def square(self) -> "H2":
+        return H2(
+            self.p * self.p + self.q_re * self.q_re + self.q_im * self.q_im,
+            self.q_re * (self.p + self.r),
+            self.q_re * self.q_re + self.q_im * self.q_im + self.r * self.r,
+            self.q_im * (self.p + self.r),
         )
 
     def trace(self) -> Qsqrt2:
         return self.p + self.r
 
     def pairing(self, other: "H2") -> Qsqrt2:
-        return self.p * other.p + (self.q * other.q) * 2 + self.r * other.r
+        return (
+            self.p * other.p
+            + (self.q_re * other.q_re + self.q_im * other.q_im) * 2
+            + self.r * other.r
+        )
 
 
 I2 = H2(ONE, ZERO, ONE)
@@ -117,42 +133,57 @@ PZ = H2(ONE, ZERO, ZERO)
 PMZ = H2(ZERO, ZERO, ONE)
 PX = H2(Qsqrt2(Fraction(1, 2)), Qsqrt2(Fraction(1, 2)), Qsqrt2(Fraction(1, 2)))
 PMX = H2(Qsqrt2(Fraction(1, 2)), Qsqrt2(Fraction(-1, 2)), Qsqrt2(Fraction(1, 2)))
+PY = H2(
+    Qsqrt2(Fraction(1, 2)),
+    ZERO,
+    Qsqrt2(Fraction(1, 2)),
+    Qsqrt2(Fraction(-1, 2)),
+)
 MIXED = I2.scale(Fraction(1, 2))
 
 
-def scaled_projector(coefficient: Fraction, n_x: Qsqrt2, n_z: Qsqrt2) -> H2:
+def scaled_projector(
+    coefficient: Fraction,
+    n_x: Qsqrt2,
+    n_z: Qsqrt2,
+    *,
+    n_y: Qsqrt2 = ZERO,
+) -> H2:
     projector = H2(
         (ONE + n_z) * Fraction(1, 2),
         n_x * Fraction(1, 2),
         (ONE - n_z) * Fraction(1, 2),
+        -n_y * Fraction(1, 2),
     )
     return projector.scale(coefficient)
 
 
-def extract_direction(effect: H2) -> tuple[Fraction, Qsqrt2, Qsqrt2]:
-    """Return (c, n_x, n_z) from a real scaled projector using matrix data."""
+def extract_direction(effect: H2) -> tuple[Fraction, Qsqrt2, Qsqrt2, Qsqrt2]:
+    """Return (c, n_x, n_y, n_z) from a scaled projector using matrix data."""
     coefficient = effect.trace().as_rational()
     bloch = effect.scale(Fraction(2, coefficient))
-    shifted = H2(bloch.p - ONE, bloch.q, bloch.r - ONE)
-    # n·σ = [[n_z, n_x], [n_x, -n_z]]
+    shifted = H2(bloch.p - ONE, bloch.q_re, bloch.r - ONE, bloch.q_im)
+    # n·σ = [[n_z, n_x-i n_y], [n_x+i n_y, -n_z]]
     n_z = shifted.p
-    n_x = shifted.q
-    return coefficient, n_x, n_z
+    n_x = shifted.q_re
+    n_y = -shifted.q_im
+    return coefficient, n_x, n_y, n_z
 
 
 def is_scaled_projector(effect: H2) -> bool:
-    coefficient, n_x, n_z = extract_direction(effect)
-    projector_identity = effect.mul(effect) == effect.scale(coefficient)
-    unit = n_x * n_x + n_z * n_z == ONE
+    coefficient, n_x, n_y, n_z = extract_direction(effect)
+    projector_identity = effect.square() == effect.scale(coefficient)
+    unit = n_x * n_x + n_y * n_y + n_z * n_z == ONE
     return projector_identity and unit and coefficient > 0 and coefficient <= 1
 
 
-def affine_coefficients(effect: H2) -> tuple[Qsqrt2, Qsqrt2, Qsqrt2]:
-    """Extract a, b_x, b_z from the kernel at I/2, P(x), P(z)."""
+def affine_coefficients(effect: H2) -> tuple[Qsqrt2, Qsqrt2, Qsqrt2, Qsqrt2]:
+    """Extract a, b_x, b_y, b_z from the kernel at I/2 and Pauli eigenstates."""
     constant = kernel(MIXED, effect)
     b_x = kernel(PX, effect) - constant
+    b_y = kernel(PY, effect) - constant
     b_z = kernel(PZ, effect) - constant
-    return constant, b_x, b_z
+    return constant, b_x, b_y, b_z
 
 
 def barycenter(weights_states: tuple[tuple[Fraction, H2], ...]) -> H2:
@@ -306,21 +337,25 @@ def main() -> int:
     endpoint_ok = True
     unique_ok = True
     for effect in declared:
-        coefficient, n_x, n_z = extract_direction(effect)
-        plus = scaled_projector(Fraction(1), n_x, n_z)
-        minus = scaled_projector(Fraction(1), -n_x, -n_z)
+        coefficient, n_x, n_y, n_z = extract_direction(effect)
+        plus = scaled_projector(Fraction(1), n_x, n_z, n_y=n_y)
+        minus = scaled_projector(Fraction(1), -n_x, -n_z, n_y=-n_y)
         value_plus = kernel(plus, effect).as_rational()
         value_minus = kernel(minus, effect).as_rational()
         endpoint_ok = endpoint_ok and value_plus == coefficient and value_minus == 0
-        constant, b_x, b_z = affine_coefficients(effect)
+        constant, b_x, b_y, b_z = affine_coefficients(effect)
         target_a = Qsqrt2(coefficient / 2)
-        target_b = (n_x * (coefficient / 2), n_z * (coefficient / 2))
-        tight_norm = b_x * b_x + b_z * b_z
+        target_b = (
+            n_x * (coefficient / 2),
+            n_y * (coefficient / 2),
+            n_z * (coefficient / 2),
+        )
+        tight_norm = b_x * b_x + b_y * b_y + b_z * b_z
         # Spectral endpoints force a=c/2 and b·n=c/2; positivity kills v ⊥ n.
         unique_ok = (
             unique_ok
             and constant == target_a
-            and (b_x, b_z) == target_b
+            and (b_x, b_y, b_z) == target_b
             and tight_norm == target_a * target_a
         )
         eps = Fraction(1, 10)
@@ -328,7 +363,12 @@ def main() -> int:
         trial_bx = b_x + perp_x * eps
         trial_bz = b_z + perp_z * eps
         trial_norm = trial_bx * trial_bx + trial_bz * trial_bz
-        unique_ok = unique_ok and trial_norm == target_a * target_a + Qsqrt2(eps * eps)
+        trial_y_norm = tight_norm + Qsqrt2(eps * eps)
+        unique_ok = (
+            unique_ok
+            and trial_norm == target_a * target_a + Qsqrt2(eps * eps)
+            and trial_y_norm == target_a * target_a + Qsqrt2(eps * eps)
+        )
     checks.check(
         "spectral-endpoints",
         "each declared scaled projector saturates its matrix spectrum at the two eigenstate Diracs",
@@ -394,16 +434,25 @@ def main() -> int:
             for phrase in (
                 "actual_current_surface_status: bounded-support",
                 "target_claim_type: bounded_theorem",
-                "hypothetical_axiom_status: no edit",
+                "hypothetical_axiom_status:",
                 "menu-independent",
                 "Tr(",
                 "25/142",
                 "2/11",
                 "509/200",
-                "finite-support measures on the density body",
+                "supplied finite-support measure on the density body",
+                "real affine functional on Hermitian matrices",
+                "restriction to effects is a probability grade",
                 "not a physical Record law",
                 "not an axiom edit",
                 "not a no-go against non-affine kernels",
+                "trace_class: upstream_support",
+                "target_claim_id: admissibility_distribution_to_effect_grade_bridge",
+                "reachability_to_target: advances",
+                "artifact_role: theorem",
+                "next_trace_action:",
+                "conditional_surface_status:",
+                "admitted_observation_status: null",
             )
         )
         and retained_ok
@@ -416,7 +465,7 @@ def main() -> int:
 
     print("per_element: five declared scaled effects and the four projective binary atoms are checked by matrix traces")
     print("per_site: the kernel, restriction rejector, and singleton-mass parent argument are one-site statements")
-    print("per_mode: Bloch coefficients of each declared effect are extracted; a perpendicular extra mode is rejected by positivity")
+    print("per_mode: all three Bloch coefficients of each declared effect are extracted; in-plane and imaginary-y perpendicular extra modes are rejected by positivity")
     print("per_block: only the finite-support barycenter-evaluation block is constructed; restriction is not this kernel")
     print("lattice_wide: checked and not executed — no lattice-wide dynamics, formation rate, or Record identification is claimed")
     return checks.finish()

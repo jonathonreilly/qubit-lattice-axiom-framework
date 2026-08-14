@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_barycenter_evaluation_menu_kernel_2026_08_12.py
-runner_sha256: 75895a1294deec8ef80748638581cf32920f0e292598a4228906c0da1dfad98d
-input_fingerprint_sha256: 064aa5d24b3e6e378124c5686dfae3d87ad82869d51f66aa7f756d8cc969a8a9
+runner_sha256: a0dae2ab56c72e8d11c8f096fadcfbdd8f0a54376a08aca0a0f99c3ac0ca16bb
+input_fingerprint_sha256: 351d437c4a0ca313322fc254f995143089bb13e2506892b27f1c0c1f97e1c40d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 external_scientific_inputs: axiom wording and the two parent notes are source-bound; no observational or fitted inputs
@@ -25,7 +25,7 @@ PASS: binary-menu-kernel barycenter evaluation normalizes both projective binary
 PASS: note-contract machine-status fields, required phrases, and forbidden-word hygiene hold
 per_element: five declared scaled effects and the four projective binary atoms are checked by matrix traces
 per_site: the kernel, restriction rejector, and singleton-mass parent argument are one-site statements
-per_mode: Bloch coefficients of each declared effect are extracted; a perpendicular extra mode is rejected by positivity
+per_mode: all three Bloch coefficients of each declared effect are extracted; in-plane and imaginary-y perpendicular extra modes are rejected by positivity
 per_block: only the finite-support barycenter-evaluation block is constructed; restriction is not this kernel
 lattice_wide: checked and not executed — no lattice-wide dynamics, formation rate, or Record identification is claimed
 TOTAL: PASS=13 FAIL=0

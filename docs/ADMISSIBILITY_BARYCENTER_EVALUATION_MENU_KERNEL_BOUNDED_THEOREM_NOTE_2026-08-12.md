@@ -1,7 +1,7 @@
 ---
 claim_id: admissibility_barycenter_evaluation_menu_kernel_bounded_theorem_note_2026-08-12
 claim_type: bounded_theorem
-claim_scope: "On finite-support measures on the density body, barycenter evaluation is a well-defined menu-independent kernel, unique among affine positive normalized kernels on the declared menus. The construction is not a physical Record law, not an axiom edit, and not a no-go against non-affine kernels."
+claim_scope: "For a fixed supplied finite-support measure on the density body, barycenter evaluation is a real affine functional on Hermitian matrices whose restriction to effects is a menu-independent probability grade, unique among affine positive normalized grades on the declared effects once spectral endpoints are imposed. The construction is not a physical Record law, not an axiom edit, and not a no-go against non-affine kernels."
 upstream_dependencies:
   - minimal_axioms
   - born_form_from_binary_ternary_scaled_projector_frame_lift_bounded_theorem_note_2026-08-09
@@ -19,6 +19,8 @@ the two hostile menus of the 2026-08-10 type-separation note.
 audit verdict and predicts none.
 **Primary runner:**
 [`scripts/admissibility_barycenter_evaluation_menu_kernel_2026_08_12.py`](../scripts/admissibility_barycenter_evaluation_menu_kernel_2026_08_12.py)
+**Runner cache:**
+[`logs/runner-cache/admissibility_barycenter_evaluation_menu_kernel_2026_08_12.txt`](../logs/runner-cache/admissibility_barycenter_evaluation_menu_kernel_2026_08_12.txt)
 
 ## Result Up Front
 
@@ -28,10 +30,12 @@ and barycenter evaluation
 
 `w_μ(E)=Tr(ρ_μ E)`
 
-is a well-defined, menu-independent kernel on Hermitian matrices. It is
-normalized on every resolution of `I`, matches the spectral endpoints of
-each declared scaled projector, and on the August 10 hostile pair disagrees
-with atomic restriction. Among kernels of the affine Bloch form
+is a well-defined real affine functional on Hermitian matrices. For effects
+`0≤E≤I` it takes values in `[0,1]`, and for the same fixed supplied `μ`
+it is a menu-independent probability grade. It is normalized on every
+positive-effect resolution of `I`, matches the spectral endpoints of each
+declared scaled projector, and on the August 10 hostile pair disagrees with
+atomic restriction. Among grades of the affine Bloch form
 `K(μ,E)=a(E)+Σ_i b_i(E) m_i(μ)` that are positive on `D`, normalized on the
 declared menus, and tight at those spectral endpoints, it is the only
 solution on `{E0,A1,A2,B1,B2}`.
@@ -54,7 +58,30 @@ Write `P(n)=(I+n·σ)/2` for a unit Bloch vector `n`. The density body is
 Its Bloch chart is `ρ=(I+m·σ)/2` with `|m|≤1`. A finite-support measure on
 `D` is `μ=Σ_k p_k δ_{ρ_k}` with `p_k>0`, `Σ_k p_k=1`, and each `ρ_k∈D`.
 The barycenter `ρ_μ=Σ_k p_k ρ_k` stays in `D` by convexity. Barycenter
-evaluation is the kernel `w_μ(E)=Tr(ρ_μ E)`.
+evaluation is the functional `w_μ(E)=Tr(ρ_μ E)`, restricted to an effect
+grade whenever `0≤E≤I`.
+
+## Inputs And Dependency Roles
+
+- **Framework context:** the current Qubit and Admissibility sentences in the
+  minimal-axiom memo supply the repository's `M_2(C)` possibility-domain and
+  neighbor-dependent probability-distribution context. The density-body
+  restriction and barycenter-evaluation rule enter this theorem as separate,
+  explicitly supplied mathematical inputs.
+- **Explicit bounded mathematical input:** this theorem is conditional on a
+  supplied finite-support probability measure on `D`. The restriction from
+  the full `M_2(C)` possibility domain to `D`, and the identification of its
+  barycenter with an effect-evaluation state, are premises of the bounded
+  construction rather than conclusions of this theorem.
+- **Exact finite witness:** the August 10 note supplies provenance for the two
+  displayed menus and restriction proposal. Their matrix sums, traces, and
+  restriction values are recomputed here, so no earlier scalar Record
+  functional or empty-record value is imported.
+- **Consequence-only parent:** the August 9 frame-lift theorem states what a
+  grade on the full binary/ternary scaled family would imply. It is not used
+  to prove the construction or finite-family uniqueness below.
+- **External inputs:** no measured, fitted, observational, or numerical
+  literature values are used.
 
 The declared hostile menus are those of
 [`ADMISSIBILITY_GLOBAL_MEASURE_MENU_KERNEL_TYPE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-08-10.md`](ADMISSIBILITY_GLOBAL_MEASURE_MENU_KERNEL_TYPE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-08-10.md):
@@ -100,13 +127,16 @@ the full binary/ternary scaled family. The present note constructs one
 affine grade on the declared finite family. It does not rerun the frame
 lift.
 
-## Theorem 1 — Well-Defined Menu-Independent Kernel, Endpoints, Normalization
+## Theorem 1 — Affine Functional, Effect Positivity, Endpoints, Normalization
 
 The barycenter of a finite-support probability on `D` is a convex combination
 of densities, hence lies in `D`. The pairing `Tr(ρ_μ E)` is therefore defined
-for every Hermitian `E`. It depends on `μ` only through `ρ_μ` and on the
-effect only through the matrix `E`, so the same effect receives the same
-value in `M_A` and in `M_B`: the kernel is menu-independent.
+for every Hermitian `E`. If `0≤E≤I`, then positivity of `ρ_μ` gives
+`Tr(ρ_μ E)≥0`, and applying the same argument to `I-E` gives
+`Tr(ρ_μ E)≤1`. Thus the restriction to effects is a probability grade.
+It depends on `μ` only through `ρ_μ` and on the effect only through the
+matrix `E`, so for the same supplied `μ` the same effect receives the same
+value in `M_A` and in `M_B`: the grade is menu-independent.
 
 Linearity in `E` gives the endpoints `w_μ(0)=0` and `w_μ(I)=Tr(ρ_μ)=1`. If
 `{E_i}` is any finite resolution of `I`, then `Σ_i w_μ(E_i)=Tr(ρ_μ I)=1`.
@@ -200,23 +230,33 @@ kernels are outside the ansatz and remain live.
   current wording; this construction is not an axiom edit.
 - Finite-support measures are taken on the density body `D`, not on the full
   possibility domain `M_2(C)`. That typing is an input of the construction.
-- The kernel is not a physical Record law: it does not register a laboratory
-  menu, does not identify an event label with record content, and does not
-  supply a formation site or rate.
+- The kernel is not a physical Record law. Laboratory-menu registration,
+  event-label identification with record content, and a formation site or rate
+  remain separate physical inputs.
 - Uniqueness is only among affine positive normalized kernels on the declared
   five-effect family. It is not a no-go against non-affine kernels.
 - The August 9 frame-lift still consumes a grade on every binary and ternary
   scaled menu. The present kernel extends by the same trace formula, but
   physical coverage of that family is not claimed.
 
-## Machine Status
+## Machine Status And Trace
 
 ```yaml
 actual_current_surface_status: bounded-support
 target_claim_type: bounded_theorem
+claim_type_reason: "The affine functional, effect positivity, normalization, exact restriction disagreement, and uniqueness on the declared five-effect family follow from displayed finite-dimensional data. Restricting the physical possibility law to density matrices, selecting barycenter evaluation, registering eligible menus, and identifying outcomes with Record content remain outside the theorem."
+trace_class: upstream_support
+target_claim_id: admissibility_distribution_to_effect_grade_bridge
+target_blocker_text: "derive distribution-to-effect-grade identification/functionality and universal binary-and-ternary physical menu eligibility"
+source_of_blocker_text: handoff
+reachability_to_target: advances
+artifact_role: theorem
+next_trace_action: "derive a physical map from the current full-domain Admissibility distribution to the density-body barycenter grade, together with eligible-menu registration and the content-only Record bridge"
+conditional_surface_status: "exact for a supplied finite-support probability measure on the density body and for affine uniqueness on the declared five effects; the physical distribution-to-density restriction and outcome-registration bridge remain open"
+hypothetical_axiom_status: "no edit, adoption, minimality, or necessity claim"
+admitted_observation_status: null
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
-hypothetical_axiom_status: no edit
 ```
 
 ## Promotion Value Gate (V1–V5)
@@ -229,7 +269,7 @@ hypothetical_axiom_status: no edit
 | V4 | More than a restatement? | Yes. The parents separate types and name a sufficient grade; this note supplies the affine kernel those interfaces consume on the declared family. |
 | V5 | One-step relabel? | No. Restriction-failure and frame-lift uniqueness do not by themselves produce the barycenter kernel or the five-effect affine classification. |
 
-## No-Go Discipline
+## Negative-Claim Scope Check
 
 This is a positive construction. The only negative sentence is that
 restriction is not this kernel. No other measure-to-effect map is excluded.

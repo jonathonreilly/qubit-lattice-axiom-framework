@@ -33,11 +33,14 @@ PRIMARY_CACHE = ROOT / "logs/runner-cache/frontier_cycle973_repair_map_2026_08_0
 CHECK_RECEIPT = ROOT / "outputs/axiom_edit_repair_map_cycle973_independent_check_receipt_2026_08_09.json"
 RUNNER_REL = "scripts/frontier_cycle973_map_independent_check_2026_08_09.py"
 RECEIPT_REL = "outputs/axiom_edit_repair_map_cycle973_independent_check_receipt_2026_08_09.json"
+MINIMAL_AXIOMS_REL = "docs/MINIMAL_AXIOMS_2026-06-29.md"
+MINIMAL_AXIOMS_PATH = ROOT / MINIMAL_AXIOMS_REL
 AUDIT_INPUT_PATHS = (
     "scripts/runner_cache.py",
     "scripts/frontier_cycle973_repair_map_2026_08_09.py",
     "logs/runner-cache/frontier_cycle973_repair_map_2026_08_09.txt",
     "outputs/axiom_edit_repair_map_cycle973_receipt_2026_08_09.json",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
 )
 INDEPENDENT_BLOB_IDS = (
     "20955a2e976f7d3a1f38fed55cd0b1bdd91f82b4",
@@ -139,7 +142,7 @@ CAPS = {
     "working_tree_corpus_reads": 0,
     "delta_vocabulary_size": 4,
     "reported_finding_cap": 26,
-    "audit_input_path_cap": 4,
+    "audit_input_path_cap": 5,
 }
 
 
@@ -205,6 +208,41 @@ def independent_same_support_control() -> dict:
         "distribution_changed": left != right,
         "mu_0": left,
         "mu_1": right,
+    }
+
+
+def independent_current_axiom_boundary() -> dict[str, object]:
+    body_bytes = MINIMAL_AXIOMS_PATH.read_bytes()
+    body = body_bytes.decode("utf-8")
+    record_match = re.search(
+        r"^### Record / Fixed Reality\s*$\n(?P<body>.*?)(?=^## )",
+        body,
+        flags=re.MULTILINE | re.DOTALL,
+    )
+    if record_match is None:
+        raise AssertionError("current Record section not found")
+    record = record_match.group("body")
+    checks = {
+        "distribution_clause_present": bool(re.search(
+            r"probability distribution over the possibilities.*?varies with, "
+            r"the nearest-neighbor conditions",
+            body,
+            flags=re.DOTALL,
+        )),
+        "record_lock_clause_present": (
+            "locks exactly one admissible local possibility" in record
+        ),
+        "unreadable_absence_clause_present": (
+            "site with no record cannot be read" in record
+        ),
+        "named_scalar_I_absent_from_record": "`I`" not in record,
+        "finite_additivity_absent_from_record": "finite additivity" not in record.lower(),
+        "I_empty_absent_from_record": "I(empty)" not in record,
+    }
+    return {
+        "path": MINIMAL_AXIOMS_REL,
+        "sha256": sha256(body_bytes).hexdigest(),
+        "checks": checks,
     }
 
 
@@ -294,6 +332,7 @@ def main() -> int:
 
     path_digest = digest(independent_paths)
     independent_control = independent_same_support_control()
+    current_axiom_boundary = independent_current_axiom_boundary()
     recomputed_primary_map_digest = digest({
         "pin": primary["pinned_snapshot_commit"],
         "vocabulary": primary["delta_vocabulary"],
@@ -353,6 +392,13 @@ def main() -> int:
         "truth_table_world_cap_respected": all(len(table) <= CAPS["logical_world_cap"] for table in truth_tables.values()),
         "independent_same_support_control": all(independent_control[key] for key in ("normalized", "same_support", "distribution_changed")),
         "primary_map_digest_recomputed": recomputed_primary_map_digest == primary["map_digest"],
+        "current_axiom_boundary_independently_checked": all(
+            current_axiom_boundary["checks"].values()
+        ),
+        "primary_current_axiom_boundary_matches": (
+            primary.get("current_axiom_boundary", {}).get("sha256")
+            == current_axiom_boundary["sha256"]
+        ),
         "primary_cache_is_canonical_and_current": runner_cache.cache_status(
             "scripts/frontier_cycle973_repair_map_2026_08_09.py"
         ) == "fresh",
@@ -362,6 +408,7 @@ def main() -> int:
             "scripts/frontier_cycle973_repair_map_2026_08_09.py",
             "logs/runner-cache/frontier_cycle973_repair_map_2026_08_09.txt",
             "outputs/axiom_edit_repair_map_cycle973_receipt_2026_08_09.json",
+            MINIMAL_AXIOMS_REL,
         ),
         "delta_dispute_mutation_probe_active": (
             len(mutation_findings) == 1
@@ -386,6 +433,7 @@ def main() -> int:
         "logical_relation": "abstract S implies P; P does not imply S by the independently printed same-support control",
         "semantic_scope": "manual per-row mode oracle; abstract logical consistency attack only; row-specific physics hypotheses are not re-proved",
         "independent_same_support_control": independent_control,
+        "current_axiom_boundary": current_axiom_boundary,
         "independent_blob_ids": list(INDEPENDENT_BLOB_IDS),
         "resolved_paths_by_blob": paths_by_blob,
         "audit_input_paths": list(AUDIT_INPUT_PATHS),
@@ -444,8 +492,9 @@ def main() -> int:
         f"PASS R1_REFUTE_OLD_SEMANTIC_CONSUMPTION :: independently_matched={sum(r['old_semantic_consumption_rederived'] for r in semantic_rows)}/26; exact_primary_quotes_at_pin={sum(quote_checks.values())}/26",
         f"PASS R2_ATTACK_ABSTRACT_DELTA_CLASSES :: independent_histogram={compact(dict(sorted(histogram.items())))}; disputes={len(findings)}; findings_verbatim={json.dumps(finding_text, ensure_ascii=False)}",
         f"PASS R3_CONTROLS :: truth_table_modes={sorted(truth_tables)}; logical_worlds_per_mode={compact({key: len(value) for key, value in truth_tables.items()})}; same_support_control=True; primary_map_digest_recomputed=True; delta_dispute_mutation_probe=True; all_delta_disputes_payload_bytes={all_mutation_payload_bytes}; bearing_disputes={len(bearing_findings)}; bearing_findings_verbatim={json.dumps(bearing_finding_text, ensure_ascii=False)}; checker_digest={receipt['checker_digest']}",
+        f"PASS R4_CURRENT_AXIOM_BOUNDARY :: path={MINIMAL_AXIOMS_REL}; sha256={current_axiom_boundary['sha256']}; independently_checked=True; primary_boundary_matches=True; Record_has_no_scalar_I_finite_additivity_or_I_empty=True",
         f"VERDICT: {receipt['refutation_outcome']}",
-        "TOTAL: PASS=4 FAIL=0",
+        "TOTAL: PASS=5 FAIL=0",
     ]
     cache = "\n".join(cache_lines) + "\n"
     if len(cache.encode()) >= HOUSE_STDOUT_LIMIT_BYTES:

@@ -71,16 +71,18 @@ CYCLE970_972_WITNESS_PROVENANCE = {
 RECEIPT_PATH = ROOT / "outputs/axiom_edit_repair_map_cycle973_receipt_2026_08_09.json"
 RUNNER_REL = "scripts/frontier_cycle973_repair_map_2026_08_09.py"
 RECEIPT_REL = "outputs/axiom_edit_repair_map_cycle973_receipt_2026_08_09.json"
+MINIMAL_AXIOMS_REL = "docs/MINIMAL_AXIOMS_2026-06-29.md"
+MINIMAL_AXIOMS_PATH = ROOT / MINIMAL_AXIOMS_REL
 PINNED_SNAPSHOT_SURFACES = (
     f"{PINNED_SNAPSHOT_COMMIT}:docs/",
     f"{PINNED_SNAPSHOT_COMMIT}:scripts/",
 )
-# All corpus content is addressed through literal git objects.  The executable
-# catalog in this runner is consequently the sole tracked runtime input; the
-# canonical cache layer already hashes it as the runner and hashes it again as
-# the explicit declaration required by the audit cache contract.
+# All historical corpus content is addressed through literal Git objects.  The
+# current axiom memo is a separate tracked input so the frozen map cannot be
+# mistaken for a complete current-axiom consumer census after later edits.
 AUDIT_INPUT_PATHS = (
     "scripts/frontier_cycle973_repair_map_2026_08_09.py",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
 )
 
 DELTA_VOCABULARY = {
@@ -126,6 +128,10 @@ FAMILIES = {
     "witness_family": (
         "Cycle 970 state-resolved 1/1 and marginal 0/0 construction, proved "
         "covariant and unique by Cycle 972"
+    ),
+    "current_axiom_boundary_family": (
+        "current Admissibility distribution clause plus current Record without "
+        "a named scalar I, finite additivity, or I(empty)=0"
     ),
 }
 
@@ -496,6 +502,41 @@ def pinned_object_report() -> dict[str, str]:
     return actual
 
 
+def current_axiom_boundary_report() -> dict[str, object]:
+    body_bytes = MINIMAL_AXIOMS_PATH.read_bytes()
+    body = body_bytes.decode("utf-8")
+    admissibility = body.split("### Admissibility / Local Constraint", 1)[1].split(
+        "### Record / Fixed Reality", 1
+    )[0]
+    record = body.split("### Record / Fixed Reality", 1)[1].split("\n## ", 1)[0]
+    checks = {
+        "admissibility_distribution_clause_present": (
+            "the probability distribution over the possibilities is" in admissibility
+            and "varies with, the nearest-neighbor conditions" in admissibility
+        ),
+        "record_locks_one_admissible_possibility": (
+            "a record locks exactly one admissible local possibility" in record
+        ),
+        "record_unreadable_absence_clause_present": (
+            "A site with no record cannot be read." in record
+        ),
+        "record_section_excludes_named_scalar_I": "`I`" not in record,
+        "record_section_excludes_finite_additivity": "finite additivity" not in record.lower(),
+        "record_section_excludes_I_empty_value": "I(empty)" not in record,
+    }
+    if not all(checks.values()):
+        raise AssertionError(f"current axiom boundary mismatch: {checks}")
+    return {
+        "path": MINIMAL_AXIOMS_REL,
+        "sha256": sha256(body_bytes).hexdigest(),
+        "checks": checks,
+        "scope": (
+            "the 26-row map is frozen to the 2026-08-09 Admissibility edit; "
+            "later Record-premise effects require separate current-row review"
+        ),
+    }
+
+
 def semantic_abstraction_control() -> dict:
     left = {"up": 0.75, "down": 0.25}
     right = {"up": 0.25, "down": 0.75}
@@ -550,6 +591,7 @@ def build_rows() -> list[dict]:
 
 def main() -> int:
     objects = pinned_object_report()
+    current_axiom_boundary = current_axiom_boundary_report()
     semantic_control = semantic_abstraction_control()
     rows = build_rows()
     classes = Counter(row["delta_class"] for row in rows)
@@ -573,7 +615,12 @@ def main() -> int:
             semantic_control["converse_control_same_support"],
             semantic_control["converse_control_distribution_changed"],
         )),
-        "literal_audit_input_is_executable_catalog": tuple(AUDIT_INPUT_PATHS) == (RUNNER_REL,),
+        "literal_audit_inputs_bind_runner_and_current_axiom_boundary": (
+            tuple(AUDIT_INPUT_PATHS) == (RUNNER_REL, MINIMAL_AXIOMS_REL)
+        ),
+        "current_axiom_boundary_checked": all(
+            current_axiom_boundary["checks"].values()
+        ),
         "all_obligations_named_and_unattempted": all(
             row["minimal_discharge"]["obligation_id"].startswith("O973-")
             and not row["minimal_discharge"]["attempted_here"]
@@ -595,6 +642,7 @@ def main() -> int:
         "pinned_snapshot_surfaces": list(PINNED_SNAPSHOT_SURFACES),
         "audit_input_paths": list(AUDIT_INPUT_PATHS),
         "pinned_objects": objects,
+        "current_axiom_boundary": current_axiom_boundary,
         "cycle971_text_ast_provenance_commit": CYCLE971_PROVENANCE_COMMIT,
         "cycle971_pr_url": CYCLE971_PR_URL,
         "cycle971_text_ast_provenance": list(CYCLE971_PROVENANCE),
@@ -637,8 +685,9 @@ def main() -> int:
         f"PASS B_EXACT_ROW_SET :: rows={len(rows)}; path_digest={receipt['meaning_changed_path_digest']}; paths_sorted_unique=True",
         f"PASS C_EXACT_QUOTES_AND_OBLIGATIONS :: exact_quotes={len(rows)}; named_unattempted_obligations={len(rows)}; pinned_blob_reads={len(rows)}",
         f"PASS D_CLOSED_MAP :: delta_histogram={compact(dict(sorted(classes.items())))}; witness_counts={compact(dict(sorted(bearings.items())))}; map_digest={receipt['map_digest']}",
+        f"PASS E_CURRENT_AXIOM_BOUNDARY :: path={MINIMAL_AXIOMS_REL}; sha256={current_axiom_boundary['sha256']}; admissibility_distribution=True; record_scalar_I=False; record_finite_additivity=False; record_I_empty=False; separate_current_row_review=True",
         "VERDICT: CYCLE973_26_ROW_REPAIR_MAP_EMITTED",
-        "TOTAL: PASS=4 FAIL=0",
+        "TOTAL: PASS=5 FAIL=0",
     ]
     cache = "\n".join(cache_lines) + "\n"
     if len(cache.encode()) >= HOUSE_STDOUT_LIMIT_BYTES:

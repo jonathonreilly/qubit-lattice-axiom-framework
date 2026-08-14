@@ -1,18 +1,19 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle973_repair_map_2026_08_09.py
-runner_sha256: fa22e714e93a0abcad14728bd34fb494d98066417f0aed2722feac5f6ac6d335
-input_fingerprint_sha256: 42a8fa72dbd75575f2cced9889afe4e0af88c9d3abebcf1e98f5826c0051f242
+runner_sha256: dd3855113912284f47be48ef2d1293abe5b2d03f59d34740be1190662457e019
+input_fingerprint_sha256: fbf6706058f4c3b6e4f25d49c41913e0caa91ce5be82e3935af3e9bf9ca9a30d
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.68
+elapsed_sec: 0.64
 status: ok
 ----- stdout -----
 PASS A_PINNED_SNAPSHOT :: commit=323d7fc32d77598f74ea6cd4d30c38dda0fe5070; objects={"docs_tree":"7dbc99ea9bb07250a72fff4722d37cdc1c573daf","scripts_tree":"b74e1639fc2a2250c0de2a56ad33665533a22c81","snapshot_commit":"323d7fc32d77598f74ea6cd4d30c38dda0fe5070","snapshot_tree":"45f8bd67eedaccb34918cb6804e850e1ba7f21fb"}; working_tree_corpus_reads=0
 PASS B_EXACT_ROW_SET :: rows=26; path_digest=3241f04f3b1ffe136c5b2b20bc76ab5acdb6d3c6f9c8cb66b718f3288acfdd01; paths_sorted_unique=True
 PASS C_EXACT_QUOTES_AND_OBLIGATIONS :: exact_quotes=26; named_unattempted_obligations=26; pinned_blob_reads=26
 PASS D_CLOSED_MAP :: delta_histogram={"ORTHOGONAL_RESTATEMENT":6,"STRICTLY_STRONGER":8,"STRICTLY_WEAKER":7,"UNDERDETERMINED_BY_TEXT":5}; witness_counts={"BEARS":3,"SILENT":23}; map_digest=f863cd6edac1d2fd4ccace04596f908b1cabb204c4e3c554384a781261c7aade
+PASS E_CURRENT_AXIOM_BOUNDARY :: path=docs/MINIMAL_AXIOMS_2026-06-29.md; sha256=93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753; admissibility_distribution=True; record_scalar_I=False; record_finite_additivity=False; record_I_empty=False; separate_current_row_review=True
 VERDICT: CYCLE973_26_ROW_REPAIR_MAP_EMITTED
-TOTAL: PASS=4 FAIL=0
+TOTAL: PASS=5 FAIL=0
 
 ----- stderr -----
 

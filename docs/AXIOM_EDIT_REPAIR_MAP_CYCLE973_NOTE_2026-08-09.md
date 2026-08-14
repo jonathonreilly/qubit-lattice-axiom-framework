@@ -1,4 +1,4 @@
-# Axiom-Edit Repair Map — Cycle 973 Audit-Lane Hand-off
+# Axiom-Edit Repair Map — Cycle 973 Methodology Hand-off
 
 **Date:** 2026-08-09
 **Claim type:** `meta`
@@ -6,7 +6,7 @@
 **Trace class:** `methodology`
 **Reachability:** audit-lane hand-off only; no row is repaired or judged here
 **Snapshot:** `323d7fc32d77598f74ea6cd4d30c38dda0fe5070`
-**Status authority:** independent audit lane only
+**Audit boundary:** no verdict is authored; audit fields remain auditor-owned
 
 This block maps the 26 Cycle 971 `MEANING_CHANGED` rows into exact source
 quotes, old- and new-reading assertions, one closed-vocabulary semantic delta,
@@ -16,15 +16,15 @@ ledger, or audit status and makes no assertion that any row is right or wrong.
 
 The complete machine-readable hand-off is
 [`outputs/axiom_edit_repair_map_cycle973_receipt_2026_08_09.json`](../outputs/axiom_edit_repair_map_cycle973_receipt_2026_08_09.json).
-The producer is
+**Primary runner:**
 [`scripts/frontier_cycle973_repair_map_2026_08_09.py`](../scripts/frontier_cycle973_repair_map_2026_08_09.py),
-and the non-importing refutation checker is
+and **independent checker:**
 [`scripts/frontier_cycle973_map_independent_check_2026_08_09.py`](../scripts/frontier_cycle973_map_independent_check_2026_08_09.py).
 
 ```yaml
 actual_current_surface_status: bounded-support
 target_claim_type: meta
-target_claim_id: axiom_edit_repair_map_cycle973_bounded_handoff_2026-08-09
+target_claim_id: axiom_edit_repair_map_cycle973_note_2026-08-09
 trace_class: methodology
 target_blocker_text: "owner-operated audit lane needs an exact 26-row semantic repair map"
 source_of_blocker_text: user_goal
@@ -36,7 +36,7 @@ hypothetical_axiom_status: null
 admitted_observation_status: null
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
-claim_type_reason: "A pinned semantic-delta and obligation map is methodology metadata, not a physics theorem. The task-mandated filename is provenance and does not override claim_type."
+claim_type_reason: "A pinned semantic-delta and obligation map is methodology metadata, not a physics theorem."
 packet_helper_runner: scripts/frontier_cycle973_map_independent_check_2026_08_09.py
 ```
 
@@ -56,6 +56,16 @@ execution dependencies. Cycle 971 measured the set as
 `UNAFFECTED=1,344`, `SUPPORT_READING_SAFE=70`, `MEANING_CHANGED=26`, and
 `NEWLY_WITNESSABLE=0`; this block consumes only the 26-path class.
 
+This is a frozen 2026-08-09 map of the Admissibility availability-to-
+distribution edit, not a complete current-axiom consumer census. The current
+[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) separately
+records the 2026-08-13 Record simplification: Record supplies no named scalar
+collection functional `I`, finite additivity, or value `I(empty)=0`. Those
+removed premises are not held by this hand-off, and any affected row must be
+reviewed separately against current Record. In particular, this map's
+"all other row premises held fixed" abstraction does not certify that those
+other premises remain available on current `main`.
+
 The declared families are: pinned `docs/` and `scripts/` Git blobs; the Cycle
 971 `MEANING_CHANGED` row family; exact raw-source/AST quote spans; the four
 delta relations; named unattempted discharge obligations; and the Cycle
@@ -64,6 +74,23 @@ authoring provenance files, of which four were consumed; exactly 26 mapped
 rows and 26 pinned Git-blob reads; zero working-tree corpus reads; two snapshot
 path families; four delta labels; and two witness-bearing labels. These values
 are printed in the receipt rather than inferred from prose.
+
+## Inputs, provenance, and support boundary
+
+- There are no measured, fitted, literature, observational, normalization, or
+  boundary-condition inputs.
+- The current minimal-axiom memo is an approved axiom-premise input used only
+  to bind the present Admissibility wording and the post-2026-08-13 Record
+  boundary. It does not repair any mapped row.
+- Snapshot `323d7fc32d77598f74ea6cd4d30c38dda0fe5070` is immutable historical
+  source data contained in current `main`, not an imported physics premise.
+- The Cycle 971, 970, and 972 references are authoring provenance for the
+  task-supplied census and witness facts. They are not runtime inputs, do not
+  chain-satisfy a row, and establish no row-specific bridge.
+- The path-to-mode assignments and `BEARS` flags are declared manual hand-off
+  classifications. The independent checker attacks their abstract logical
+  consistency and exact pinned quotes; it does not independently prove the 26
+  row-specific physics readings.
 
 ## Closed delta vocabulary
 
@@ -169,7 +196,7 @@ paths and all four histogram bins agree, with zero disputed rows. A future
 disagreement is not suppressed: the checker emits each one verbatim as
 `FINDING DELTA_CLASS_DISPUTE ...` and records it in `findings_verbatim`.
 
-## Reproduction
+## Verification and reproduction
 
 ```bash
 python3 scripts/vocab_lint.py --fix \
@@ -188,14 +215,14 @@ python3 docs/audit/scripts/audit_lint.py --strict
 python3 docs/audit/scripts/check_changed_audit_evidence.py --base origin/main
 ```
 
-The full pipeline is a validation command only. On this snapshot it reaches
-stage 7 and then stops at the pre-existing dependency-policy epoch mismatch;
-all regenerated ledgers, queues, and effective-status files must be restored
-before commit. Strict audit lint exits zero with pre-existing warnings and
-notices. The repository cache layer binds each canonical envelope to its
-runner and declared-input fingerprints. The runner stdout and JSON receipts
-replay byte-identically; the canonical cache also records measured elapsed
-time and is therefore not claimed byte-identical.
+The full pipeline is a validation command only and must exit zero on the
+reviewed landing tree. All regenerated ledgers, queues, and effective-status
+files must be restored before commit. Strict audit lint must exit zero; any
+pre-existing warnings and notices remain non-authoritative. The repository
+cache layer binds each canonical envelope to its runner and declared-input
+fingerprints. The runner stdout and JSON receipts replay byte-identically; the
+canonical cache also records measured elapsed time and is therefore not
+claimed byte-identical.
 
 The pinned caches are
 [`logs/runner-cache/frontier_cycle973_repair_map_2026_08_09.txt`](../logs/runner-cache/frontier_cycle973_repair_map_2026_08_09.txt)
@@ -208,12 +235,17 @@ Integrity gates cover snapshot identity, row-set completeness, quote identity,
 schema closure, and executable controls only. No gate requires a preferred
 delta histogram, witness count, or absence of checker findings.
 
-The helper mapping required for later audit registration is:
+## Review record and hard landing conditions
+
+The helper mapping required for packet completeness is:
 
 ```json
-{"axiom_edit_repair_map_cycle973_bounded_handoff_2026-08-09":["scripts/frontier_cycle973_map_independent_check_2026_08_09.py"]}
+{"axiom_edit_repair_map_cycle973_note_2026-08-09":["scripts/frontier_cycle973_map_independent_check_2026_08_09.py"]}
 ```
 
-Registering that mapping and obtaining a clean full-pipeline exit after the
-owner-governed dependency-policy epoch is refreshed are hard landing conditions
-for audit ingestion, not changes attempted by this hand-off branch.
+The mapping must be present in
+`docs/audit/scripts/build_citation_graph.py` and
+`scripts/audit_packet_script_deps.py`, the graph row must bind the primary
+runner and this sibling checker, and the current full pipeline must exit zero.
+These are hard landing conditions for the methodology packet; none repairs or
+judges any of the 26 mapped source rows.

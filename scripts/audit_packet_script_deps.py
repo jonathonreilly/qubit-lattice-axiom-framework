@@ -45,6 +45,11 @@ sys.path.insert(0, str(REPO_ROOT / "docs" / "audit" / "scripts"))
 import ledger_io  # noqa: E402
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    # Cycle 973's sibling checker reconstructs the pinned semantic map without
+    # importing the primary, so include it explicitly in restricted packets.
+    "axiom_edit_repair_map_cycle973_note_2026-08-09": [
+        "scripts/frontier_cycle973_map_independent_check_2026_08_09.py",
+    ],
     # Cycle 745's independent checker is intentionally a sibling rather than
     # an import of the primary anchored census.
     "physical_cell_cutting_sixteen_census_cycle745_note_2026-08-05": [

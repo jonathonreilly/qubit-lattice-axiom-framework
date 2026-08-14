@@ -4,7 +4,8 @@
     "scripts/runner_cache.py",
     "scripts/frontier_cycle973_repair_map_2026_08_09.py",
     "logs/runner-cache/frontier_cycle973_repair_map_2026_08_09.txt",
-    "outputs/axiom_edit_repair_map_cycle973_receipt_2026_08_09.json"
+    "outputs/axiom_edit_repair_map_cycle973_receipt_2026_08_09.json",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md"
   ],
   "cache_contract": {
     "deterministic_stdout": true,
@@ -14,7 +15,7 @@
     "writer": "scripts/runner_cache.py"
   },
   "caps": {
-    "audit_input_path_cap": 4,
+    "audit_input_path_cap": 5,
     "delta_vocabulary_size": 4,
     "logical_world_cap": 6,
     "pinned_blob_reads_exact": 26,
@@ -23,6 +24,18 @@
     "working_tree_corpus_reads": 0
   },
   "checker_digest": "c72e29b027fe728c3f9f0c9405740d8de8ec34acb6829df437230adeeb9a9c47",
+  "current_axiom_boundary": {
+    "checks": {
+      "I_empty_absent_from_record": true,
+      "distribution_clause_present": true,
+      "finite_additivity_absent_from_record": true,
+      "named_scalar_I_absent_from_record": true,
+      "record_lock_clause_present": true,
+      "unreadable_absence_clause_present": true
+    },
+    "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+  },
   "delta_dispute_mutation_probe": {
     "active": true,
     "all_dispute_count": 26,
@@ -269,6 +282,7 @@
     "all_primary_quotes_match_pinned_blobs": true,
     "all_rows_rederive_old_semantic_consumption": true,
     "audit_input_path_cap_respected": true,
+    "current_axiom_boundary_independently_checked": true,
     "delta_dispute_mutation_probe_active": true,
     "independent_blob_catalog_has_26_unique_ids": true,
     "independent_blob_catalog_resolves_uniquely": true,
@@ -281,6 +295,7 @@
     "literal_pin_matches_primary": true,
     "primary_and_independent_path_sets_match": true,
     "primary_cache_is_canonical_and_current": true,
+    "primary_current_axiom_boundary_matches": true,
     "primary_map_digest_recomputed": true,
     "truth_table_world_cap_respected": true
   },

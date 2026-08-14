@@ -151,6 +151,12 @@ HEADING_RE = re.compile(r"^#{1,6}\s+", re.MULTILINE)
 LINK_RE = re.compile(r"\[[^\]]*\]\(([^)\s#]+\.md)(?:#[^)]*)?\)")
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    # Cycle 973's sibling checker independently reconstructs the pinned
+    # 26-blob catalog and attacks the manual semantic map without importing
+    # the primary runner.
+    "axiom_edit_repair_map_cycle973_note_2026-08-09": [
+        "scripts/frontier_cycle973_map_independent_check_2026_08_09.py",
+    ],
     # Cycle 972's checker independently reconstructs the finite Boolean family,
     # cubic rotations, translated coordinate semantics, and marginal census.
     "covariant_dependence_law_cycle972_bounded_theorem_note_2026-08-09": [

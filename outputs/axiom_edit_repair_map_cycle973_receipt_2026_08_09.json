@@ -2,7 +2,8 @@
   "actual_current_surface_status": "bounded-support",
   "artifact": "Cycle 973 bounded 26-row repair map hand-off",
   "audit_input_paths": [
-    "scripts/frontier_cycle973_repair_map_2026_08_09.py"
+    "scripts/frontier_cycle973_repair_map_2026_08_09.py",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md"
   ],
   "audit_status_authority": "independent audit lane only",
   "bearing_vocabulary": {
@@ -27,6 +28,19 @@
     "working_tree_corpus_reads": 0
   },
   "claim_type": "meta",
+  "current_axiom_boundary": {
+    "checks": {
+      "admissibility_distribution_clause_present": true,
+      "record_locks_one_admissible_possibility": true,
+      "record_section_excludes_I_empty_value": true,
+      "record_section_excludes_finite_additivity": true,
+      "record_section_excludes_named_scalar_I": true,
+      "record_unreadable_absence_clause_present": true
+    },
+    "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "scope": "the 26-row map is frozen to the 2026-08-09 Admissibility edit; later Record-premise effects require separate current-row review",
+    "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+  },
   "cycle970_972_witness_provenance": {
     "covariance_fact": "rotation failures=0/61440; translation-generator failures=0/15360",
     "cycle970_commit": "6fd0de0a288d212a4a6ce3fdd4dc9019f30dbbad",
@@ -86,6 +100,7 @@
   "external_provenance_runtime_dependency": false,
   "families": {
     "corpus_family": "tracked docs/ and scripts/ blobs at the literal snapshot pin",
+    "current_axiom_boundary_family": "current Admissibility distribution clause plus current Record without a named scalar I, finite additivity, or I(empty)=0",
     "delta_family": "the four closed-vocabulary relations in delta_vocabulary",
     "discharge_family": "one named smallest machine-checkable obligation per row; no obligation is attempted",
     "quote_family": "exact pinned source blocks or exact Python AST string constants",
@@ -97,7 +112,8 @@
     "all_quotes_nonempty_and_pinned": true,
     "closed_delta_vocabulary": true,
     "closed_witness_vocabulary": true,
-    "literal_audit_input_is_executable_catalog": true,
+    "current_axiom_boundary_checked": true,
+    "literal_audit_inputs_bind_runner_and_current_axiom_boundary": true,
     "literal_snapshot_objects_match": true,
     "row_count_is_task_contract_26": true,
     "row_paths_unique_and_sorted": true,

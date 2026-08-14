@@ -1,18 +1,19 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle973_map_independent_check_2026_08_09.py
-runner_sha256: cb5f6e045303e51bdb23d418635edcd3c8b2ed6ab09fd4e401667e104d5fef67
-input_fingerprint_sha256: 6b56db178bef55844bf99666b4e98b3435ce856484fbfb7dfd0948a539bee0b4
+runner_sha256: 194ce9a1f7ff9e1a9021d7671c6f65f2d73768646af10a11b5a586802ceec14a
+input_fingerprint_sha256: 150011cd7fb10d9a16db00328670a4d85d1a63d3e96165c8499063d61e5f2f19
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.32
+elapsed_sec: 0.37
 status: ok
 ----- stdout -----
 PASS R0_REFUTE_PIN_AND_ROW_SET :: pin=323d7fc32d77598f74ea6cd4d30c38dda0fe5070; independently_resolved_blobs=26; rows=26; path_digest=3241f04f3b1ffe136c5b2b20bc76ab5acdb6d3c6f9c8cb66b718f3288acfdd01; working_tree_corpus_reads=0
 PASS R1_REFUTE_OLD_SEMANTIC_CONSUMPTION :: independently_matched=26/26; exact_primary_quotes_at_pin=26/26
 PASS R2_ATTACK_ABSTRACT_DELTA_CLASSES :: independent_histogram={"ORTHOGONAL_RESTATEMENT":6,"STRICTLY_STRONGER":8,"STRICTLY_WEAKER":7,"UNDERDETERMINED_BY_TEXT":5}; disputes=0; findings_verbatim="none"
 PASS R3_CONTROLS :: truth_table_modes=['countermodel', 'premise', 'selector']; logical_worlds_per_mode={"countermodel":6,"premise":6,"selector":6}; same_support_control=True; primary_map_digest_recomputed=True; delta_dispute_mutation_probe=True; all_delta_disputes_payload_bytes=6889; bearing_disputes=0; bearing_findings_verbatim="none"; checker_digest=c72e29b027fe728c3f9f0c9405740d8de8ec34acb6829df437230adeeb9a9c47
+PASS R4_CURRENT_AXIOM_BOUNDARY :: path=docs/MINIMAL_AXIOMS_2026-06-29.md; sha256=93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753; independently_checked=True; primary_boundary_matches=True; Record_has_no_scalar_I_finite_additivity_or_I_empty=True
 VERDICT: PRIMARY_SURVIVES_INDEPENDENT_ABSTRACT_DELTA_ATTACK
-TOTAL: PASS=4 FAIL=0
+TOTAL: PASS=5 FAIL=0
 
 ----- stderr -----
 

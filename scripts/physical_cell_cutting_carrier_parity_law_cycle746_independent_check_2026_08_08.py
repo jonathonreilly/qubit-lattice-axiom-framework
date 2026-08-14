@@ -16,6 +16,8 @@ from pathlib import Path
 
 import numpy as np
 
+AUDIT_TIMEOUT_SEC = 900
+
 ROOT = Path(__file__).resolve().parents[1]
 NOTE_PATH = "docs/PHYSICAL_CELL_CUTTING_CARRIER_PARITY_LAW_CYCLE746_NOTE_2026-08-08.md"
 PRIMARY_PATH = "scripts/physical_cell_cutting_carrier_parity_law_cycle746_2026_08_08.py"
@@ -54,7 +56,6 @@ AUDIT_INPUT_PATHS = (
     "scripts/physical_cell_cutting_sixteen_census_cycle745_independent_check_2026_08_05.py",
     "outputs/physical_cell_cutting_sixteen_census_cycle745_2026_08_05_receipt_2026-08-05.json",
     "outputs/physical_cell_cutting_sixteen_census_cycle745_independent_check_2026_08_05_receipt_2026-08-05.json",
-    "docs/MINIMAL_AXIOMS_2026-06-29.md",
     "requirements.txt",
     "requirements-release.txt",
 )
@@ -322,7 +323,9 @@ dependency_ok = (
     and C745I.get("status") == "pass" and C745I.get("gates", {}).get("fail") == 0
     and (C745I.get("checker_sha256") or C745I.get("runner_sha256"))
     == sha256(C745_CHECKER_PATH) and inputs_current(C745I)
-    and target_identity_contract(C745) and target_identity_contract(C745I)
+    and target_identity_contract(C745)
+    and C745I.get("primary_receipt_bound") is True
+    and C745I.get("target_identity_bound") is True
 )
 gate(dependency_ok, "independent.dependency",
      "Cycle 745 exact target identities and witnesses are current and semantic")

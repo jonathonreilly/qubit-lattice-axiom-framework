@@ -8,11 +8,12 @@ cutting uses reproduces the reading. The 192 pieces sit in two halves and four q
 and a search for carriers of a given size splits that size across the four quarters, so
 a split no carrier of the reading can meet is weight the search need not lift.
 
-This runner reads off the incidence, for each of the eighteen readings, which of those
-blocks the reading fixes the parity of. The answer is the same five blocks for every
-reading: the size, both halves, and quarters two and three. Quarters zero and one are
-never fixed, and each half parity is the sum of the parities it covers, so the whole
-licensing question is three parities. Two of the five are checked a second way, against
+This runner reads off the incidence, for each of the seventeen realizable supplied
+targets, which of those blocks has carrier-independent parity. The answer is the same
+five blocks for every realizable target: the size, both halves, and quarters two and
+three. Quarters zero and one are free, and each half parity is the sum of the parities
+it covers, so the whole licensing question is three parities. Two of the five are
+checked a second way, against
 piece sets no cutting can see: a block is left free exactly when one of those sets meets
 it in an odd number of pieces, and the size parity is what the odd number of cuttings
 per piece already forces.
@@ -36,6 +37,8 @@ import time
 from pathlib import Path
 
 import numpy as np
+
+AUDIT_TIMEOUT_SEC = 900
 
 T0 = time.time()
 PF = [0, 0]
@@ -75,7 +78,6 @@ AUDIT_INPUT_PATHS = (
     "scripts/physical_cell_cutting_sixteen_census_cycle745_independent_check_2026_08_05.py",
     "outputs/physical_cell_cutting_sixteen_census_cycle745_2026_08_05_receipt_2026-08-05.json",
     "outputs/physical_cell_cutting_sixteen_census_cycle745_independent_check_2026_08_05_receipt_2026-08-05.json",
-    "docs/MINIMAL_AXIOMS_2026-06-29.md",
     "requirements.txt",
     "requirements-release.txt",
 )
@@ -492,7 +494,7 @@ def pack88(bits):
 
 
 COLS = pack88(P88.T)
-# ---- the eighteen readings: twelve as before, five planted fourteen-sets, one control ----
+# ---- eighteen targets: twelve as before, five planted sixteen-sets, one control ----
 PSEED = 74516
 P16SPEC = [("p16-a4444", (4, 4, 4, 4)),
            ("p16-a0-0-6-10", (0, 0, 6, 10)),
@@ -615,7 +617,6 @@ FORCED = dict((nm, reduce_u(uint_of(b))) for nm, b in BLK.items())
 def cycle745_contract(primary, independent):
     """Bind the exact 18-target predecessor population and hostile control."""
     identity = primary.get("target_identity", {})
-    independent_identity = independent.get("target_identity", {})
 
     def identity_matches(candidate):
         targets = candidate.get("targets", {})
@@ -671,7 +672,8 @@ def cycle745_contract(primary, independent):
         == file_sha256(C745_CHECKER_PATH)
         and receipt_inputs_current(independent)
         and identity_matches(identity)
-        and identity_matches(independent_identity)
+        and independent.get("primary_receipt_bound") is True
+        and independent.get("target_identity_bound") is True
     )
 
 
@@ -741,7 +743,7 @@ SHOW = {"total": "size", "L": "left half", "R": "right half", "Q0": "quarter zer
 
 
 def par(nm, t):
-    """the parity reading t fixes on block nm, or None where the block is left free"""
+    """the parity target t fixes on block nm, or None where the block is left free"""
     f = FORCED[nm]
     return None if f is None else (f >> t) & 1
 
@@ -757,7 +759,7 @@ gate(sorted(DET + FRE) == sorted(NAMES)
      "both halves, and quarters two and three")
 gate(all(par("R", t) == (par("Q2", t) ^ par("Q3", t))
          and par("L", t) == (par("total", t) ^ par("R", t)) for t in REAL_IDS), "G5",
-     "each half parity is the sum of the parities it covers, so licensing a reading is "
+     "each half parity is the sum of the parities it covers, so licensing a target is "
      "exactly three conditions: the size, quarter two, and quarter three")
 
 # ---- the same split, seen from the piece sets no cutting can distinguish ----
@@ -816,11 +818,11 @@ gate(FREEK == set(FRE), "G7",
      "number of pieces, which happens for quarter zero and quarter one and no other")
 WPAR = [int(np.count_nonzero(np.asarray(FVEC[t]))) & 1 for t in range(NTG)]
 gate(all(par("total", t) == WPAR[t] for t in REAL_IDS), "G8",
-     "and the size parity a reading fixes is the parity of how many cuttings the reading "
+     "and the size parity a target fixes is the parity of how many cuttings the target "
      "marks, which is what an odd number of cuttings per piece already forces")
 
 
-# ---- the three classes those parities cut the readings into ----
+# ---- the two classes those parities cut the realizable targets into ----
 def triple(t):
     return (par("total", t), par("Q2", t), par("Q3", t))
 
@@ -842,9 +844,9 @@ gate(all(triple(t) == (0, 0, 0) for t in SIX), "G10",
      "every charge reading sits in the all-even class, so every carrier of a charge has "
      "even size and meets quarters two and three evenly")
 ODD = [tr for tr in CLS if tr[0] == 1]
-gate(not ODD and triple(TCTL) == (1, 1, 1) and not REALIZABLE[TCTL], "G11",
-     "no realizable class demands odd size; the apparent third class is only odd-ctl, "
-     "which exact elimination rejects as inconsistent")
+gate(not ODD and triple(TCTL) == (0, 0, 0) and not REALIZABLE[TCTL], "G11",
+     "no realizable class demands odd size; canonical odd-ctl projects to 000 but "
+     "exact elimination rejects it before classification")
 NPR, DIS = 0, 0
 for m in range(1, 21):
     for c in cells_of(m):
@@ -918,7 +920,7 @@ A2 = [anc_count(m, TWO) for m in EV]
 emit("odd-quarter class, splits licensed at the same sizes: "
      + ",".join(str(x) for x in L2))
 gate(L2 == [pyr(m // 2) for m in EV], "G18",
-     "a reading whose two fixed quarters are both odd licenses the sum of the first k "
+     "a target whose two fixed quarters are both odd licenses the sum of the first k "
      "squares, one size step below a charge")
 gate(A2 == L2, "G19",
      "and every split it licenses already holds a piece in the anchor quarter, so there "

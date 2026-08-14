@@ -1,19 +1,23 @@
 # Block-parity licensing for seventeen supplied targets — Cycle 746
 
-Date: 2026-08-08
+Date: 2026-08-08 (revised 2026-08-14 by review-loop)
 
 Authority: none
 
 Audit: unset.
 
-Status: bounded theorem for one exact finite incidence table
+Status: proposed_retained
 
-Claim type: bounded theorem
+Claim type: bounded_theorem
 
 Runner:
 
 - [primary rebuild and parity derivation](../scripts/physical_cell_cutting_carrier_parity_law_cycle746_2026_08_08.py)
 - [independent opposite-pivot checker](../scripts/physical_cell_cutting_carrier_parity_law_cycle746_independent_check_2026_08_08.py)
+
+Both runners are co-load-bearing. The independent checker reconstructs the
+finite object with the opposite exact-cover pivot and does not import primary
+symbols, so an audit packet for this note is incomplete without it.
 
 Direct dependency:
 
@@ -21,7 +25,65 @@ Direct dependency:
 
 Constitutional effect: none. This package changes no axiom, framework
 Admissibility rule, primitive, policy, or audit status. It adds no import or
-assumption to [Minimal Axioms](MINIMAL_AXIOMS_2026-06-29.md).
+assumption to `MINIMAL_AXIOMS_2026-06-29.md`; that framework memo is context,
+not a premise of the finite result.
+
+## Trace gate
+
+```yaml
+trace_class: frontier_discovery
+target_claim_id: null
+target_blocker_text: null
+source_of_blocker_text: frontier_question
+reachability_to_target: unknown_frontier
+artifact_role: theorem
+next_trace_action: "test whether these necessary parity licenses materially reduce a later exact carrier search; no downstream consumer is yet claimed"
+```
+
+## Status fields
+
+```yaml
+actual_current_surface_status: conditional-support
+target_claim_type: bounded_theorem
+trace_class: frontier_discovery
+reachability_to_target: unknown_frontier
+conditional_surface_status: "exact finite result conditional on the Cycle 745 target-identity package and its independent dependency-chain closure"
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: "exact finite GF(2) classification and split-profile counts for one supplied incidence table and seventeen realizable supplied targets"
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+packet_helper_runner: scripts/physical_cell_cutting_carrier_parity_law_cycle746_independent_check_2026_08_08.py
+```
+
+The packet-helper declaration is a hard landing condition: the matching
+claim-scoped entry must exist in `EXPLICIT_PACKET_HELPER_RUNNER_PATHS` in both
+the citation-graph builder and packet-dependency helper before this row is sent
+to independent audit.
+
+## Inputs and provenance
+
+### Load-bearing dependency
+
+- Cycle 745 supplies the ordered target names, exact witness supports, planted
+  controls, and the inconsistent-control identity. Both Cycle 746 runners bind
+  the current primary and independent Cycle 745 receipts and recheck the target
+  semantics against an independently reconstructed incidence table. This
+  package remains conditional support unless that dependency and this row
+  independently achieve retained-grade chain closure.
+
+### Supplied finite-domain choices
+
+- the one coordinate four-cube, its corner-simplex family, the declared
+  192-column support order, the two halves and four 48-column quarters, and the
+  finite target population named above;
+- the reported profile-count range, support sizes 1 through 20, and the Q3
+  anchor condition used only for the stated split-count comparison.
+
+These are exact discrete inputs and scope choices, not measured or fitted
+physical values. No literature constant, observational comparator,
+normalization, state choice, probability value, or physical charge
+identification is imported.
 
 ## Corrected bounded result
 
@@ -45,12 +107,14 @@ Therefore every carrier of any of the six named charge readings has even
 size and meets Q2 and Q3 evenly. This is a necessary licensing condition, not
 a carrier-existence or sufficiency theorem.
 
-The submitted note incorrectly reported three realizable classes. Its third
-triple `(1,1,1)` was produced solely by `odd-ctl`, the deliberately planted
-one-hot inconsistent target from Cycle 745. Exact augmented GF(2) elimination
-proves that `odd-ctl` is not in the incidence column space. It remains in this
-package only as a hostile rejector and is not called a reading or carrier
-class.
+The submitted note incorrectly reported three realizable classes. Its alleged
+third class was produced solely by `odd-ctl`, the deliberately planted one-hot
+inconsistent target from Cycle 745. In the repaired canonical row ordering,
+that control's formal row-space projection has triple `(0,0,0)`, but this
+projection is not a carrier invariant because exact augmented GF(2)
+elimination proves that `odd-ctl` is not in the incidence column space. It
+remains in this package only as a hostile rejector and is not called a reading
+or carrier class.
 
 The repaired control puts its single bit on the lexicographically least
 packed incidence row and binds that row's hash. The submitted `row 0` form was
@@ -119,6 +183,32 @@ then reduce the five fixed parities to the three stated coordinates. Because
 every column occurs in the odd number 1,975 of rows, the total-support parity
 also equals the parity of the target's Hamming weight.
 
+## Proof contract and obligation graph
+
+**Exact target.** For every realizable target in the supplied Cycle 745
+population, classify which of the seven declared block indicators have a
+carrier-independent parity, derive the resulting three-coordinate class, and
+count the licensed split profiles on the stated finite size range.
+
+The proof has four leaves:
+
+1. Reconstruct the declared 15,800-by-192 incidence table and target identities
+   with traversal-independent hashes — discharged independently by both
+   runners.
+2. Prove the fixed/free criterion: a block parity is fixed on a nonempty affine
+   solution set exactly when its indicator is in the row space; otherwise a
+   kernel vector flips it — discharged by the row-space/annihilator identity
+   over `GF(2)` and explicit kernel bases of dimension 104.
+3. Reject inconsistent targets before classifying carrier parities — discharged
+   by two augmented eliminations with opposite pivot conventions.
+4. Count only profiles satisfying the three necessary parities — discharged by
+   direct four-variable enumeration and the closed finite sums stated below.
+
+There is no unresolved terminal lemma. Degenerate zero and constant targets are
+included when realizable; `odd-ctl` is excluded from the carrier quantifier
+because its affine solution set is empty. The proof does not cross the explicit
+boundary from necessary profile licensing to carrier existence or sufficiency.
+
 ## Finite licensed-split counts
 
 A split is a quadruple `(q0,q1,q2,q3)` of nonnegative integers summing to
@@ -164,34 +254,60 @@ stress record.
 
 ### N1 — alternative routes
 
-The fixed/free classification is derived three ways: direct row-space
-reduction, orthogonality to a full kernel basis, and an independent
-opposite-pivot reconstruction. Total parity is also derived from odd column
-weight. Split counts are checked by both the licensing predicate and a direct
-four-variable enumeration.
+Five distinct attacks were executed against the finite negative statements:
+
+1. **ATTEMPTED — direct row-space attack.** Reduce all seven block indicators
+   against the exact primary row basis; this fails to add another fixed block
+   because only `total`, `L`, `R`, `Q2`, and `Q3` reduce to zero residual.
+2. **ATTEMPTED — kernel-witness attack.** Construct the full 104-vector kernel
+   basis and seek an odd pairing with each allegedly fixed block; this fails
+   for the five fixed blocks but succeeds for Q0 and Q1, independently
+   separating fixed from free.
+3. **ATTEMPTED — traversal-independence attack.** Rebuild the table with the
+   opposite exact-cover pivot and repeat augmented elimination; this fails to
+   produce another realizable class and again rejects `odd-ctl`.
+4. **ATTEMPTED — column-weight attack.** Re-derive total-support parity from
+   the odd column weight 1,975 rather than the stored row combinations; this
+   fails to produce an odd-size realizable class.
+5. **ATTEMPTED — direct profile-enumeration attack.** Enumerate every
+   four-quarter split through size 20 without consulting the incidence
+   solver; this fails to disagree with the licensing predicate on any of the
+   180,625 split-target pairs.
 
 ### N2 — wall independence
 
-Block classification depends only on exact row space and kernel. Target-class
-membership depends on exact augmented consistency and forced RHS parities.
-The combinatorial count formulas use only the resulting parity triples. No
-carrier-search nonexistence or Cycle 745 census count is used to prove the
+There is no named external wall set, so a pairwise wall table is not
+applicable. The three internal obligations are nevertheless separated: block
+classification depends only on exact row space and kernel; target-class
+membership depends on exact augmented consistency and forced RHS parities;
+and the combinatorial count formulas use only the resulting parity triples.
+No carrier-search nonexistence or Cycle 745 census count is used to prove the
 parity law.
 
 ### N3 — hidden-wall scan
 
 The crucial hidden wall was realizability. Treating all supplied vectors as
-readings made the inconsistent `odd-ctl` look like a third class. The repaired
-runner checks `Ix=f` consistency for every target before classifying it. It
+readings let the inconsistent `odd-ctl` contaminate the class census. The
+repaired runner checks `Ix=f` consistency for every target before classifying it. It
 also distinguishes free block parity from existence of a carrier at any
 specified size.
 
+The checklist terms “canonical” and “by construction” occur only in the
+non-load-bearing sense of row-order-independent identifiers and explicitly
+seeded controls. No “we assume,” “as is standard,” “framework provides,”
+“bridge context,” “background,” “naturally,” “obviously,” “standard QFT,” or
+“registered” phrase supplies a proof step.
+
 ### N4 — residual matching
 
-For a realizable target and a block outside the row space, the kernel
-orthogonality argument constructs the residual parity flip abstractly. For a
-block inside the row space, the exact row combination fixes its parity. These
-two cases exhaust all seven block indicators. The inconsistent odd control is
+| Cited source | Residual established there | Residual used here | Match |
+|---|---|---|---|
+| [Cycle 745 target population](PHYSICAL_CELL_CUTTING_SIXTEEN_CENSUS_CYCLE745_NOTE_2026-08-05.md) | seventeen realizable named targets plus one exact inconsistent hostile control | the exact right-hand sides whose block parities are classified here | yes |
+
+No prior no-go is used. For a realizable target and a block outside the row
+space, the kernel-orthogonality argument constructs the residual parity flip.
+For a block inside the row space, the exact row combination fixes its parity.
+These cases exhaust the seven block indicators. The inconsistent control is
 separately rejected and has no carrier residual.
 
 ### N5 — resolution execution
@@ -202,12 +318,21 @@ separately rejected and has no carrier residual.
 - `per_block`: checked for all seven block indicators and all supplied targets.
 - `lattice_wide`: checked and not executed; no multi-cell or continuum claim.
 
-### N6 — rhetoric audit
-
 “Licenses” means satisfies necessary block-parity conditions. It does not mean
 that a carrier exists. “Charge” is only the inherited name of six exact
 binary targets; no physical charge interpretation is asserted. Closed forms
 are reported only on the explicitly checked finite ranges.
+
+### N6 — partial-closure path scan
+
+No new axiom, primitive, convention, or physical bridge is needed to alter the
+finite negative boundary. Another support partition, target family, or
+incidence table would be a different supplied finite problem, not a
+convention-based closure of this one. The positive continuation is explicit:
+use the necessary licenses to search for carriers and test sufficiency, without
+promoting the present classification into an existence statement. The
+primitive registry supplies no additional content relevant to this finite
+linear-algebra question.
 
 ### N7 — steelman
 
@@ -219,10 +344,32 @@ flip a row-space block. This proves target-by-target freedom and fixation.
 
 ### N8 — cross-cycle echo
 
-Cycle 745 supplies the exact target population and uses `odd-ctl` as a
-control. This package preserves that role rather than promoting the control
-to science. Cycles 742–744 are context only here: no automorphism-completeness,
-hidden-geometry, or carrier-census result is imported into the parity proof.
+Cycle 745 supplies the exact target population and uses `odd-ctl` as a control;
+this package preserves that role rather than promoting the control to science.
+The similar finite emptiness boundaries in `Cycle 741` and the exact control
+rejection in `Cycle 745` have not been retired by a convention or primitive;
+they remain scope-bounded exhaustive statements. Cycles 742–744 are context
+only here: no automorphism-completeness, hidden-geometry, or carrier-census
+result is imported into the parity proof.
+
+## Review record (review-loop, 2026-08-14)
+
+The submitted result was not landable as written. Its third alleged class came
+only from treating the inconsistent `odd-ctl` vector as though it had a
+carrier, and its pair scan skipped half of the possible first endpoints. The
+review repair rejects that target before classification, makes the control
+row-order independent, covers all 15,800 pair endpoints, adds a non-importing
+opposite-pivot checker, and narrows every surface to necessary parity licensing
+and finite profile counts. It also records the complete proof contract,
+dependency/import boundary, trace/status fields, and N1–N8 negative-claim
+discipline.
+
+Hard landing conditions are: (a) the claim-scoped packet-helper mapping for the
+independent checker exists in both supported helper registries; (b) fresh
+primary and independent receipts and canonical runner caches bind the final
+sources and declared inputs; and (c) the citation-graph manifest is regenerated
+on the actual landing tree. Independent audit remains required; this review
+record grants no verdict or effective grade.
 
 ## Boundary and honest read
 

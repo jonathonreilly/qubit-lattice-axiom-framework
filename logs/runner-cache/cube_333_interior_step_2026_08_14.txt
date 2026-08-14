@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/cube_333_interior_step_2026_08_14.py
+runner_sha256: e7e2d383e7102c8a9fe9389185808abd1e859a89a1be86c95233ed1e4d5abd82
+input_fingerprint_sha256: 208461e8bbf08cbcb41f0922e6c11c60115ca20d5a6918cd721ccad284a490ab
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+external_scientific_inputs: none
+package_local_integrity_reads: runner, note, axiom memo
+measure_boundary: exact Q 3x3x3 interior occupancy update
+negative_scope: cube comparator, not a TOE
+PASS: shell-counts 6 faces, 12 edges, 8 corners, 27 sites
+PASS: thm1-seed only center locked; faces k=1; corners n=0
+PASS: thm2-face step 1 forms the six face-centers
+PASS: thm2-edge step 2 forms the twelve edge-centers
+PASS: thm2-corn step 3 forms the eight corners
+PASS: thm2-perm step 4 is identity
+PASS: thm2-tick source/tick are 0,6,18,26,26
+PASS: thm3-empty empty cube is a fixed point
+PASS: mutation-s1-corn-fails predicate step 1 forms a corner must fail
+PASS: mutation-empty-fails predicate empty forms center must fail
+PASS: mutation-s4-source-fails predicate step 4 increments source must fail
+PASS: quoted note quotes lock, permanence, and NN distribution
+PASS: boundary comparator not TOE, no forbidden phrases
+PASS: memo-silent axioms do not name the 3x3x3 step
+PASS: gates identity gates and AUDIT_INPUT_PATHS
+per_element: checked exactly — 6-NN n on 27 sites
+per_site: checked exactly — center, faces, edges, corners, empty
+per_mode: checked exactly — one occupancy step; source=formations
+per_block: checked exactly — interior 6-NN, not a 2x2x2 corner cube
+lattice_wide: checked and not executed — no law adopted
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

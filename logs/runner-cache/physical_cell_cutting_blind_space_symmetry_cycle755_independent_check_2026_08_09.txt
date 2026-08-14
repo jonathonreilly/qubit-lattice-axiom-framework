@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/physical_cell_cutting_blind_space_symmetry_cycle755_independent_check_2026_08_09.py
 runner_sha256: c4c4c8550f70e8138b9f4f1fbfc977fb856bb867de2c6d7f7174c23997d8f21d
-input_fingerprint_sha256: 5930d2220d522f480eceefeb4570c02a8703e2dce5fa132215f2a1feb1f27c6c
+input_fingerprint_sha256: b4d5794cc05634b89170ad9105e1cea5f6392210300a8d415f2369a373bc39ec
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 141.56
+elapsed_sec: 149.29
 status: ok
 ----- stdout -----
 PASS independent.cycle754_contract  current Cycle 754 receipts bind rank 88, kernel dimension 104, and the least exchange

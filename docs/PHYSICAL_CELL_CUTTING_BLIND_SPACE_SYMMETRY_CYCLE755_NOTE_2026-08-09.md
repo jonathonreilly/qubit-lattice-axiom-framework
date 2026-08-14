@@ -55,7 +55,7 @@ complex, the cuttings, the readings, the piece sharing table and the group of
 symmetries from scratch and gates each quantity in place. Constitutional
 effect: none. This package changes no axiom, no framework Admissibility rule,
 no primitive, no policy, and no audit status, and it adds no import and no
-assumption to [MINIMAL_AXIOMS_2026-06-29.md](MINIMAL_AXIOMS_2026-06-29.md).
+assumption to the framework's `MINIMAL_AXIOMS_2026-06-29.md` baseline.
 
 ## What this answers
 

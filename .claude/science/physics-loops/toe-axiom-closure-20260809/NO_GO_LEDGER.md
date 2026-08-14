@@ -463,3 +463,17 @@ compact birth still has a unit zero-mode defect; that named boundary is not
 promoted into a general matter or gravity no-go.  Reopen any negative only
 after the live families above are attempted or excluded by current retained
 authority.
+
+## Block 79 Record-head / work-debit / archive-state partial narrowing
+
+| Scoped negative considered | Exact evidence | Failing N1--N8 items | Demoted disposition | Live/reopen routes |
+|---|---|---|---|---|
+| the existing Cycle713 endpoint lacks derived parser-compatible same-`M_2` candidate Record content or, under an explicit frontier-source identification, cannot feed one constraint-preserving ADM tick; separately, a fixed finite bounded battery or a uniformly bounded-local fresh-Record full-slice materializer cannot close the unrestricted declared state space | derived co-rotated endpoint candidate projector and covariance on 96 branches; conditional insertion preserves N4/N32 continuation, without proving contextual support or formation; 20,448 decoded head-frontier point-source candidate modes propagate all four constraints; old Records remain unchanged while finalization appends the next head; exact midpoint shadow work on 13,056 modes; two constrained states require work differing by `0.5539882067` with identical Record packets; rank-16 two-`M_2` payload codec; exact `qD_4(N)>B_3(RN+s)` threshold, first failing at `N=52` for the adjacent two-Record `R=3,s=1` packet | `N1` fails for every broad negative because alternate contextual support/formation laws, live mutable carriers, dynamical recoil, growing reservoirs, bounded state domains, sparse/event archives, trajectory codes with clocks, nonlocal/growing-radius readout, stacks/overwrite, and higher-dimensional hosts remain live; `N7` gives the joint live-carrier/recoil compiler as a concrete steelman | `partial-narrowing`; ship the endpoint-content compatibility, frontier cadence, conditional ADM/work construction, and only the fixed-battery/fixed-dilation full-slice countergates | contextual support and formation; physical next-endpoint disposition; retained source/observable identification; live reduced-gravity/source carrier; exact `-W` recoil or reservoir; bounded-domain theorem; sparse Record observable and clock; open positive-mean data; nonlinear selected law; owner state-qualification decision and audit retention |
+
+Do not ship a gravity no-go, an `M_2` capacity no-go, a universal Record
+encoding no-go, a universal qubit-energy no-go, or an axiom-necessity claim
+from Block 79.  The exact state-wording pressure is the exhaustive sentence
+“A state is a configuration of records,” but compressed Record-only routes
+remain live and the candidate live-carrier clarification is not adopted.  No
+tracked obligation or TOE percentage moves before owner action and independent
+positive retention.

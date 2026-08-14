@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/two_cube_plus_x_ray_support_2026_08_14.py
+runner_sha256: 5154fdaf2567ee595fa88b2b1761dd095baa457eca5c5b5a5cd2bdce3e4e74b6
+input_fingerprint_sha256: bcbbec95c22a9f0c210b48406b4250d8592e665bbb08509aa5a30514350b1841
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+external_scientific_inputs: none
+package_local_integrity_reads: runner, note, axiom memo
+measure_boundary: exact path count on the two-cube dual
+negative_scope: support selection, not Newton
+PASS: thm1-two exactly two simple A→ext paths
+PASS: thm2-mono only (F*,F_B) is +x monotone
+PASS: thm2-sel selected support is {F*, F_B}
+PASS: mutation-third-fails predicate a third simple path exists must fail
+PASS: mutation-fa-mono-fails predicate F_A is +x monotone must fail
+PASS: quoted note quotes Lattice, Admissibility, and Qubit
+PASS: boundary required strings, no forbidden phrases
+PASS: memo-silent axioms do not name the dual path
+PASS: gates identity gates and AUDIT_INPUT_PATHS
+per_element: checked exactly — three dual edges
+per_site: checked exactly — two A→ext paths
+per_mode: checked exactly — +x monotone selection
+per_block: checked exactly — support of the tree gauge
+lattice_wide: checked and not executed — not axiom text
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

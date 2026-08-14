@@ -1,6 +1,6 @@
 {
- "edge_count": 15638,
- "node_count": 5502,
+ "edge_count": 15640,
+ "node_count": 5503,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -13721,6 +13721,10 @@
   "physical_cell_cutting_carrier_parity_law_cycle746_note_2026-08-08": {
    "deps_hash": "56974cdc9f20",
    "out_degree": 1
+  },
+  "physical_cell_cutting_census_families_cycle748_note_2026-08-08": {
+   "deps_hash": "fd83573e4817",
+   "out_degree": 2
   },
   "physical_cell_cutting_charge_space_cycle736_note_2026-08-05": {
    "deps_hash": "4296058e250d",

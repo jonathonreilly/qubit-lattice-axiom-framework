@@ -1,6 +1,6 @@
 {
- "edge_count": 15603,
- "node_count": 5489,
+ "edge_count": 15604,
+ "node_count": 5490,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -13353,6 +13353,10 @@
   "omega_lambda_matter_bridge_theorem_note_2026-04-22": {
    "deps_hash": "f4f3f6286756",
    "out_degree": 2
+  },
+  "one_executable_axiom_class_member_displayed_bounded_theorem_note_2026-08-14": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10": {
    "deps_hash": "3ab31b07251d",

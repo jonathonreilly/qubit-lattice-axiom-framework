@@ -1,0 +1,55 @@
+===== runner cache v1 =====
+runner: scripts/one_executable_axiom_class_member_displayed_2026_08_14.py
+runner_sha256: 9ca786c35be284d13c4c1f9e91bab9fb75ec31e25fa0a2d02acce57a8eb0ce3a
+input_fingerprint_sha256: 1f06c8487f6376a56e7a2eadced52dce90385f0bbc20b3d4557c88f2034561b4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+external_scientific_inputs: none; L0 tables are displayed member data
+package_local_integrity_reads: runner source, proposed source note, and live axiom memo
+measure_boundary: exact Q/Fraction occupancy-to-Bloch tables; no adopted law
+negative_scope: L0 is one member, not the unique member, not axiom text
+PASS: gate-bloch-empty bloch_of(empty)=(0,0,0)
+PASS: gate-bloch-plus-x bloch_of(+x)=(1/3,0,0)
+PASS: gate-bloch-minus-x bloch_of(-x)=(-1/3,0,0)
+PASS: gate-bloch-plus-y bloch_of(+y)=(0,1/3,0)
+PASS: thm1-opposite-cancels opposite +x,-x pair has n=0
+PASS: thm1-two-axis +x and +y give n=(1/3,1/3,0)
+PASS: thm1-all-states-in-ball every occupancy six-tuple has |n|^2 <= 1/3
+PASS: thm2-varies-with-nn empty neighborhood disagrees with lone +x
+PASS: thm3-group-count |G|=24 and Rz lies in G
+PASS: thm3-rz-plus-x Rz sends lone +x occupancy to lone +y
+PASS: thm3-full-covariance n(R·c)=R n(c) for every R in G and every occupancy
+PASS: thm4-empty-not-ready empty neighborhood is not formation-ready
+PASS: thm4-plus-x-ready lone +x is formation-ready
+PASS: thm4-opposite-not-ready opposite pair is not formation-ready
+PASS: thm4-two-axis-ready two-axis occupancy is formation-ready
+PASS: thm5-plus-x-menu lone +x menu is x-axis with probabilities 2/3 and 1/3
+PASS: thm5-minus-x-menu lone -x menu swaps the x-axis probabilities
+PASS: thm6-two-axis-no-menu two-axis n selects no rank-1 menu
+PASS: thm7-wick-a displayed clock table is a=1
+PASS: thm8-pairing-table displayed pairing is multiplication on the listed pairs
+PASS: mutation-empty-equals-plus-x-fails predicate ρ(empty)==ρ(+x) must fail
+PASS: mutation-opposite-ready-fails predicate opposite pair is formation-ready must fail
+PASS: mutation-two-axis-menu-fails predicate two-axis n selects a rank-1 menu must fail
+PASS: mutation-memo-names-l0-fails predicate live memo names L0 / Born / Wick a=1 as axiom content must fail
+PASS: mutation-note-adopts-fails predicate note adopts L0 as axiom text must fail
+PASS: mutation-lattice-named-fails predicate note claims Lattice-named kernel must fail
+PASS: quoted-parents note quotes live Admissibility, Record, and Qubit
+PASS: one-member-contract note states L0 is one member and not the unique member
+PASS: boundary-forbidden-phrases note omits forbidden adoption and close-the-route phrases
+PASS: machine-status-contract note carries bounded-support status and no hypothetical axiom adoption
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: identity-gates-present runner source defines the required identity gates
+PASS: not-qcd QCD appears only as a negation / unused boundary
+per_element: checked exactly — each occupancy six-tuple has |n|^2 <= 1/3
+per_site: checked exactly — formation and axis menu live at the plus-shape center
+per_mode: checked exactly — cube covariance of n on all 24 proper cubic matrices
+per_block: checked exactly — L0 tables run; uniqueness of L0 is not claimed
+lattice_wide: checked and not executed — no law is adopted as axiom text
+TOTAL: PASS=33 FAIL=0
+
+----- stderr -----
+

@@ -21,8 +21,9 @@ AUDIT_TIMEOUT_SEC = 120
 ROOT = Path(__file__).resolve().parents[1]
 NOTE_PATH = ROOT / "docs" / "ADMISSIBILITY_GAUSSIAN_SECOND_MOMENT_QUANTILE_DECODER_EFFECT_QUOTIENT_BOUNDED_THEOREM_NOTE_2026-08-10.md"
 AXIOM_PATH = ROOT / "docs" / "MINIMAL_AXIOMS_2026-06-29.md"
-PARENT_PATH = ROOT / "docs" / "ADMISSIBILITY_RECORD_CONTENT_DECODER_PUSHFORWARD_EFFECT_DESCENT_INDEPENDENCE_BOUNDED_THEOREM_NOTE_2026-08-10.md"
 MENU_PARENT_PATH = ROOT / "docs" / "ADMISSIBILITY_GLOBAL_MEASURE_MENU_KERNEL_TYPE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-08-10.md"
+RECORD_BOUNDARY_PATH = ROOT / "docs" / "RECORD_CONTENT_ONLY_SHARED_EFFECT_DESCENT_BOUNDED_THEOREM_NOTE_2026-08-12.md"
+PARTITION_COMPARISON_PATH = ROOT / "docs" / "ADMISSIBILITY_REGISTERED_PARTITION_BARYCENTER_PUSHFORWARD_BOUNDED_THEOREM_NOTE_2026-08-12.md"
 EFFECT_PRIOR_PATH = ROOT / "docs" / "COVARIANT_EFFECT_MAP_NONSELECTION_AND_REPEAT_CERTAINTY_COLLAPSE_BOUNDED_THEOREM_NOTE_2026-07-11.md"
 FINITE_PROCESS_PATH = ROOT / "docs" / "work_history" / "repo" / "review_feedback" / "CONTACT_ARCHIVE_FINITE_PROCESS_HISTORY_CYCLE284_NOTE_2026-07-17.md"
 PHYSICAL_QUOTIENT_PATH = ROOT / "docs" / "work_history" / "repo" / "review_feedback" / "PHYSICAL_EFFECT_EQUIVALENCE_NORMALIZED_GRADE_CYCLE321_NOTE_2026-07-18.md"
@@ -30,8 +31,9 @@ PHYSICAL_QUOTIENT_PATH = ROOT / "docs" / "work_history" / "repo" / "review_feedb
 AUDIT_INPUT_PATHS = (
     "docs/ADMISSIBILITY_GAUSSIAN_SECOND_MOMENT_QUANTILE_DECODER_EFFECT_QUOTIENT_BOUNDED_THEOREM_NOTE_2026-08-10.md",
     "docs/MINIMAL_AXIOMS_2026-06-29.md",
-    "docs/ADMISSIBILITY_RECORD_CONTENT_DECODER_PUSHFORWARD_EFFECT_DESCENT_INDEPENDENCE_BOUNDED_THEOREM_NOTE_2026-08-10.md",
     "docs/ADMISSIBILITY_GLOBAL_MEASURE_MENU_KERNEL_TYPE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-08-10.md",
+    "docs/RECORD_CONTENT_ONLY_SHARED_EFFECT_DESCENT_BOUNDED_THEOREM_NOTE_2026-08-12.md",
+    "docs/ADMISSIBILITY_REGISTERED_PARTITION_BARYCENTER_PUSHFORWARD_BOUNDED_THEOREM_NOTE_2026-08-12.md",
     "docs/COVARIANT_EFFECT_MAP_NONSELECTION_AND_REPEAT_CERTAINTY_COLLAPSE_BOUNDED_THEOREM_NOTE_2026-07-11.md",
     "docs/work_history/repo/review_feedback/CONTACT_ARCHIVE_FINITE_PROCESS_HISTORY_CYCLE284_NOTE_2026-07-17.md",
     "docs/work_history/repo/review_feedback/PHYSICAL_EFFECT_EQUIVALENCE_NORMALIZED_GRADE_CYCLE321_NOTE_2026-07-18.md",
@@ -247,14 +249,18 @@ def main() -> int:
     checks = Checks()
     note = NOTE_PATH.read_text(encoding="utf-8")
     axiom = AXIOM_PATH.read_text(encoding="utf-8")
-    parent = PARENT_PATH.read_text(encoding="utf-8")
     menu_parent = MENU_PARENT_PATH.read_text(encoding="utf-8")
+    record_boundary = RECORD_BOUNDARY_PATH.read_text(encoding="utf-8")
+    partition_comparison = PARTITION_COMPARISON_PATH.read_text(encoding="utf-8")
     effect_prior = EFFECT_PRIOR_PATH.read_text(encoding="utf-8")
     finite_process = FINITE_PROCESS_PATH.read_text(encoding="utf-8")
     physical_quotient = PHYSICAL_QUOTIENT_PATH.read_text(encoding="utf-8")
     normalized_note = normalize(note).replace("> ", "")
+    record_section = axiom.split("### Record / Fixed Reality", 1)[1].split(
+        "## Qualification", 1
+    )[0]
 
-    print("external_scientific_inputs: the current axiom, stacked Gaussian/menu parents, and three explicit instrument/effect prior boundaries are source-bound; no observed, fitted, or target probability is read")
+    print("external_scientific_inputs: the current axiom, landed menu/Record/partition boundaries, and three explicit instrument/effect prior boundaries are source-bound; no observed, fitted, or target probability is read")
     print("package_local_integrity_reads: the proposed theorem note is checked for its construction, boundary, machine status, and N1-N8 surfaces; the cache envelope binds every declared input")
     print("analytic_boundary: Gaussian integration, the probability-integral transform, Borel measurability, and general covariance are source proofs; the runner checks exact finite parameters and independent controls")
     print("negative_scope: only the displayed isotropic compiler family and singleton-support deterministic half-half target are rejected as unique/universal routes")
@@ -265,26 +271,32 @@ def main() -> int:
     )
     canonical_readout = (
         "Only records are readable. A readout value is determined by record "
-        "content alone. For any finite collection of pairwise-disjoint records, "
-        "scalar readout `I` is additive, with `I(empty)=0`."
+        "content alone."
     )
     checks.check(
         "source-current-axiom",
-        "the exact current probability and content-only additive Record clauses are present",
+        "the exact current probability and content-only Record clauses are present without the retired scalar/additivity premise",
         canonical_probability in normalize(axiom)
-        and canonical_readout in normalize(axiom),
-    )
-    checks.check(
-        "source-parent-residual",
-        "Block 3 leaves the map to rho, physical program compiler, and operational quotient open",
-        "the map `p -> rho_p` from the current possibility measure" in parent
-        and "a physical program compiler or universal content decoder" in parent
-        and "a dynamics-derived operational-effect quotient" in parent,
+        and canonical_readout in normalize(axiom)
+        and "scalar readout `I` is additive" not in record_section
+        and "I(empty)=0" not in record_section,
     )
     checks.check(
         "source-menu-parent",
-        "the stacked menu parent supplies both exact shared-effect ternary menus",
+        "the landed menu parent supplies both exact shared-effect ternary menus",
         all(phrase in menu_parent for phrase in ("`E_0=(1/2)P(z)`", "`M_A={E_0", "`M_B={E_0")),
+    )
+    checks.check(
+        "source-record-boundary",
+        "the landed Record boundary separates program-relative event probability from direct content-only readout",
+        "supplies no named scalar functional, no additivity rule" in record_boundary
+        and "formation/event probability" in record_boundary,
+    )
+    checks.check(
+        "source-partition-comparison",
+        "the landed comparison adds an external uniform coordinate rather than the intrinsic Gaussian trace-CDF uniformizer",
+        "D×[0,1]" in partition_comparison
+        and "inverse-transform" in partition_comparison,
     )
     checks.check(
         "source-effect-prior",

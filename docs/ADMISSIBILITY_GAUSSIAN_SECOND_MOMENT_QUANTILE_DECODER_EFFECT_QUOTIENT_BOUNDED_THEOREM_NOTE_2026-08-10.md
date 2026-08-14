@@ -1,14 +1,15 @@
 ---
 claim_id: admissibility_gaussian_second_moment_quantile_decoder_effect_quotient_bounded_theorem_note_2026-08-10
 claim_type: bounded_theorem
-claim_scope: "For the explicit full-support Gaussian Admissibility family centered by the Hermitian nearest-neighbor average on one M_2(C) site, the normalized matrix second moment is a density operator. At fixed center/condition, its trace evaluation on every supplied finite effect resolution is normalized, has null/certain endpoints, and descends through effect equality. The centered real-trace Gaussian CDF is an explicit fixed-condition content uniformizer; cutting it at the cumulative effect weights gives a Borel program-relative Record decoder whose pushforward equals that effect-functional law. On the exact shared-effect ternary menus at the same condition the unregularized second moment gives the shared effect grade 3/10 in both contexts. An isotropic one-parameter density-operator-extractor family gives 2/7 at lambda=1, and a covariant atomic family blocks deterministic half-half decoding at a blank condition. The result proves a complete fixed-condition mathematical compiler exists on the displayed Gaussian completion and identifies density-operator-extractor selection, atom splitting outside that completion, and physical preparation/program registration and cross-condition equivalence as separate residuals; it proves no global axiom derivation or necessity claim."
+claim_scope: "For one explicitly supplied full-support Gaussian family on M_2(C), centered by the Hermitian nearest-neighbor average, the normalized matrix second moment is a density operator. At fixed center, its trace evaluation on every supplied finite effect resolution is normalized, has null/certain endpoints, and descends through effect equality. The centered real-trace Gaussian CDF is an intrinsic uniformizer; cutting it at cumulative effect weights gives a Borel program-relative event partition whose pushforward equals that effect-functional law. On two exact shared-effect ternary menus the raw second moment gives the common effect grade 3/10. An isotropic extractor family gives 2/7 at lambda=1, and a covariant atomic family blocks deterministic half-half decoding on singleton support. This is a supplied mathematical compiler, not a physical Record decoder: the current Record axiom supplies no scalar/additivity rule, and identifying program-relative event labels with record content or readout remains open."
 upstream_dependencies:
   - minimal_axioms
-  - admissibility_record_content_decoder_pushforward_effect_descent_independence_bounded_theorem_note_2026-08-10
+  - admissibility_global_measure_menu_kernel_type_separation_bounded_theorem_note_2026-08-10
+  - record_content_only_shared_effect_descent_bounded_theorem_note_2026-08-12
 runner: scripts/admissibility_gaussian_second_moment_quantile_decoder_effect_quotient_2026_08_10.py
 ---
 
-# Gaussian Second-Moment Density Operator And Quantile Record Decoder
+# Gaussian Second-Moment Density Operator And Quantile Event Partition
 
 **Date:** 2026-08-10
 **Type:** bounded theorem and constructive axiom-interface test
@@ -23,9 +24,9 @@ audit verdict and predicts none.
 
 ## Result Up Front
 
-Block 3 proved that a content decoder is the exact Record-facing object behind
-an outcome partition, but it left both the decoder and the effect quotient
-unselected. The present block executes a constructive escape route.
+The current type-separation surface leaves registered event partitions and an
+effect-functional grade open. The present note executes one constructive
+mathematical route on an explicitly supplied Gaussian completion.
 
 1. For the explicit Gaussian law with Hermitian center `C`,
    `E_mu[A A^dagger]=C^2+2I`. Normalizing this positive second moment gives a
@@ -35,12 +36,12 @@ unselected. The present block executes a constructive escape route.
    one normalized, endpoint-correct, menu-independent grade.
 3. The centered statistic `Re Tr(A-C)` is exactly standard normal. Its Gaussian
    CDF is therefore uniform on `(0,1)`. Cutting that scalar at cumulative menu
-   weights gives an explicit Borel program-relative content decoder whose
+   weights gives an explicit Borel program-relative event partition whose
    pushforward is exactly `w` for every supplied finite effect resolution at
    that condition.
 4. On both exact shared-effect ternary menus, the raw second-moment compiler
    assigns the shared effect `3/10`. Thus a complete fixed-condition
-   decoder/effect-quotient compiler exists on the displayed Gaussian
+   partition/effect-grade compiler exists on the displayed Gaussian
    completion.
 5. The current structure does not select that compiler. Adding an isotropic
    `lambda I` before normalization preserves every displayed structural
@@ -48,18 +49,19 @@ unselected. The present block executes a constructive escape route.
    covariant neighbor-varying atomic family admits no deterministic content
    decoder with half-half mass at its blank condition.
 
-The positive construction is exact. The negative conclusions are bounded to
-the displayed compiler family and atomic control. A physical local law could
-select the raw second moment, a different density-operator extractor, an
-atom-splitting resource, and a program encoding. No canonical axiom is edited
-here.
+The positive construction is exact. It is not a direct Record readout: at a
+fixed matrix `A`, changing the supplied program `M` can change the event label.
+The current Record sentence supplies neither a scalar/additivity rule nor a
+program-to-content bridge. A physical local law could select the raw second
+moment, a different density-operator extractor, an atom-splitting resource,
+and a content-bearing program encoding. No canonical axiom is edited here.
 
 ## Machine Status And Trace
 
 ```yaml
 actual_current_surface_status: bounded-support
 target_claim_type: bounded_theorem
-claim_type_reason: "Exact Gaussian second-moment density-operator extraction, exact quantile content-decoder pushforward, exact shared-effect descent, and exact bounded compiler nonselection/atomic controls; physical selection, program registration, occurrence, and axiom adoption remain open."
+claim_type_reason: "Exact Gaussian second-moment density-operator extraction, exact quantile event-partition pushforward, exact shared-effect descent, and exact bounded compiler nonselection/atomic controls; physical selection, Record-content registration, occurrence, and axiom adoption remain open."
 trace_class: upstream_support
 target_claim_id: admissibility_record_physical_decoder_effect_quotient_bridge
 target_blocker_text: "derive a physical program-indexed content decoder and operational-effect quotient"
@@ -68,7 +70,7 @@ reachability_to_target: advances
 artifact_role: theorem
 campaign_native_target_reachability: advances
 next_trace_action: "Test whether local contact/pointer dynamics selects the second-moment/quantile compiler or another equivalent compiler, and derive physical program occurrence and coverage without editing canonical axioms."
-conditional_surface_status: "complete fixed-condition mathematical decoder/effect-quotient compiler on the displayed Gaussian family; compiler selection and cross-condition physical preparation/program equivalence remain open"
+conditional_surface_status: "complete fixed-condition mathematical event-partition/effect-grade compiler on the displayed supplied Gaussian family; no direct Record readout, physical compiler selection, or cross-condition preparation/program equivalence is derived"
 hypothetical_axiom_status: "one explicit Gaussian compiler and a narrower selection/registration residual are mapped; no edit, adoption, minimality, or necessity claim"
 admitted_observation_status: null
 audit_required_before_effective_retained: true
@@ -77,17 +79,17 @@ bare_retained_allowed: false
 
 ## Exact Target And Obligation Graph
 
-**Exact target.** Starting from Block 3's explicit Gaussian completion, decide
-whether one can construct rather than merely postulate a content decoder whose
-pushforward is normalized and descends through effects. Then identify what
-remains before that mathematical compiler is a physical consequence of the
-four axioms.
+**Exact target.** For the explicit Gaussian completion defined below, decide
+whether one can construct rather than merely postulate an event partition
+whose pushforward is normalized and descends through effects. Then identify
+what remains before that mathematical compiler could be a physical
+consequence of the four axioms.
 
 | Obligation | Role | Disposition |
 |---|---|---|
 | derive a density-operator candidate from the current possibility law | mathematical state typing | closed on the Gaussian family by normalized second moment; physical state selection remains open |
 | derive normalized effect weights and endpoints | grade typing | closed for every supplied finite effect resolution |
-| construct content events with exactly those weights | Record decoder | closed by the centered trace-CDF quantile decoder |
+| construct measurable events with exactly those weights | registered event partition | closed by the centered trace-CDF quantile decoder |
 | enforce same-effect probabilities across supplied menus at fixed `C` | fixed-condition effect quotient | closed inside each constructed compiler because the weight is a function of `E` |
 | preserve translation, proper-cubic, and simultaneous unitary covariance | hostile control | closed for the displayed family and transported ordered programs |
 | select one compiler from current dynamics | physical selection | open; the `lambda` family disagrees |
@@ -105,8 +107,7 @@ history or frequency theorem.
 
 The canonical four-axiom source is
 [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md). The present
-construction uses the explicit compatible family already introduced in
-[`ADMISSIBILITY_RECORD_CONTENT_DECODER_PUSHFORWARD_EFFECT_DESCENT_INDEPENDENCE_BOUNDED_THEOREM_NOTE_2026-08-10.md`](ADMISSIBILITY_RECORD_CONTENT_DECODER_PUSHFORWARD_EFFECT_DESCENT_INDEPENDENCE_BOUNDED_THEOREM_NOTE_2026-08-10.md):
+construction declares the following compatible supplied family directly:
 
 `d mu_C(A)=pi^(-4) exp(-||A-C||_HS^2) d^8 A`,
 
@@ -201,17 +202,13 @@ strictly positive weight. The construction therefore covers every supplied
 binary or ternary nonzero resolution in the full scaled-projector domain, and
 in fact every supplied finite nonzero effect resolution.
 
-For a scalar label function `g`, the recordwise sum
-
-`I_(C,M,g)(F)=sum_(R in F) g(d_(C,M)(content(R)))`
-
-is content-only, additive on pairwise-disjoint finite Record collections, and
-zero on the empty collection.
-
-Here "content-only" is conditional on the fixed `C` and supplied ordered
-program: once those parameters are fixed, the decoder receives only locked
-content `A`. Encoding those parameters in a physical Record/apparatus without
-violating the canonical content-only clause remains open.
+The map `d_(C,M)` is a program-relative mathematical event label. It is not a
+Record readout: the same `A` can receive a different label when `M` changes.
+The current Record axiom contains no named scalar `I`, finite-additivity rule,
+or value for absence. This construction imports none. A physical
+identification would have to encode the program distinction in record content,
+or interpret the partition as a formation/event law rather than a value read
+directly from identical content.
 
 ### Covariance
 
@@ -234,7 +231,9 @@ At the condition `C=P_z`,
 
 `rho_(P_z)=diag(3/5,2/5)`.
 
-Use the two exact ternary menus from the stacked parents. For
+Use the following two exact ternary menus. Their unit-vector and resolution
+identities are displayed by the coordinates and independently checked by the
+runner. For
 
 `M_A={E_0,(9/10)P(n_1),(3/5)P(n_2)}`
 
@@ -255,9 +254,9 @@ Both sum to one. The quantile cuts are respectively
 `(0,3/10,17/25,1)` and `(0,3/10,13/20,1)`.
 
 The same effect `E_0` receives `3/10` in both contexts. Thus the constructed
-content decoders repair Block 3's hostile contextual example on exactly the
-same Gaussian probability space and fixed condition: their fibers differ by
-program, but their pushforward masses descend through effects. This does not
+event partitions have fibers that differ by program while their pushforward
+masses descend through effects on the same Gaussian probability space and
+fixed condition. This does not identify those labels with Record content or
 compare apparatuses that change `C`.
 
 ## Theorem 5 — Compiler Nonselection And Atomic Boundary
@@ -300,7 +299,7 @@ density-operator extractor
 `rho_nu=(integral A A^dagger d nu_C+I)/(integral Tr(A A^dagger)d nu_C+2)`.
 
 Then `rho_nu=I/2`. The binary menu `{P_z,I-P_z}` has target weights
-`(1/2,1/2)`. But every deterministic content decoder on singleton support
+`(1/2,1/2)`. But every deterministic event decoder on singleton support
 assigns the unique supported content to exactly one label, so its pushforward
 is either `(1,0)` or `(0,1)`. It cannot realize `(1/2,1/2)`.
 
@@ -316,14 +315,16 @@ by content alone.
 The construction collapses several earlier candidate clauses on the displayed
 Gaussian family at fixed condition. Once a density-operator extractor and
 uniformizer compiler are selected, normalization, endpoints, fixed-condition
-effect descent, and all finite supplied-menu decoders follow. A narrower
+effect descent, and all finite supplied-menu event partitions follow. A narrower
 sufficient interface is therefore:
 
 > For each preparation/program condition, the physical law selects a covariant
 > density-operator extractor from the Admissibility measure and a measurable
 > content uniformizer, or supplies an explicit atom-splitting resource. A registered
-> ordered program carries an operational-effect resolution. The Record label is
-> the cumulative-effect quantile of the locked content. Physical programs cover
+> ordered program carries an operational-effect resolution. Its mathematical
+> event label is the cumulative-effect quantile of the possibility. A separate
+> physical bridge identifies that label with Record content or formation.
+> Physical programs cover
 > the required binary and ternary scaled-projector resolutions. A physical
 > preparation equivalence identifies which program-dependent full conditions
 > must share one extracted density operator/effect grade.
@@ -352,13 +353,14 @@ Still open are:
 The finite process/decoder in
 [`CONTACT_ARCHIVE_FINITE_PROCESS_HISTORY_CYCLE284_NOTE_2026-07-17.md`](work_history/repo/review_feedback/CONTACT_ARCHIVE_FINITE_PROCESS_HISTORY_CYCLE284_NOTE_2026-07-17.md)
 uses a supplied finite trace/Kraus model on four declared states. The present
-construction instead begins with the current continuous `M_2(C)` possibility
+construction instead begins with a supplied continuous `M_2(C)` possibility
 measure, derives a density-operator candidate from its second moment, and
-constructs the Record fibers explicitly.
+constructs program-relative measurable fibers explicitly, without identifying
+them as Record fibers.
 
 The effect-map theorem in
 [`COVARIANT_EFFECT_MAP_NONSELECTION_AND_REPEAT_CERTAINTY_COLLAPSE_BOUNDED_THEOREM_NOTE_2026-07-11.md`](COVARIANT_EFFECT_MAP_NONSELECTION_AND_REPEAT_CERTAINTY_COLLAPSE_BOUNDED_THEOREM_NOTE_2026-07-11.md)
-shows that covariance/additivity do not select a supplied formation-effect map
+shows that covariance and its separately declared assumptions do not select a supplied formation-effect map
 and that repeat certainty closes a projective conditional surface. It does not
 map the Admissibility measure to a density operator or a content decoder.
 
@@ -386,7 +388,7 @@ No global no-go is certified.
 | atomic deterministic decoder | test the same target construction on `delta_0` | half-half weights cannot be split by a deterministic singleton-support decoder (Theorem 5 above) | **ATTEMPTED** |
 | locked-output CP instrument | derive effects from supplied rank-one Record-forming operations | the [covariant effect source](COVARIANT_EFFECT_MAP_NONSELECTION_AND_REPEAT_CERTAINTY_COLLAPSE_BOUNDED_THEOREM_NOTE_2026-07-11.md) derives unique effects only conditionally; the physical instrument/state input remains open | **ATTEMPTED** |
 | coarse-CP operational quotient | identify hidden proportional refinements physically | the [Cycle 321 source](work_history/repo/review_feedback/PHYSICAL_EFFECT_EQUIVALENCE_NORMALIZED_GRADE_CYCLE321_NOTE_2026-07-18.md) closes its finite pair, not all effect-equal programs | **ATTEMPTED** |
-| inter-site CNOT pointer | use neighbor-sensitive two-site contact as a binary program | [PR #6062](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/6062) and [PR #6069](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/6069) supply finite basis-state CNOT/XOR witnesses and covariance, but no continuous `M_2(C)` measure/compiler | **ATTEMPTED** |
+| inter-site CNOT pointer | use neighbor-sensitive two-site contact as a binary program | the landed [one-CNOT witness](INTER_SITE_GATE_CYCLE970_BOUNDED_THEOREM_NOTE_2026-08-09.md) and [covariant dependence law](COVARIANT_DEPENDENCE_LAW_CYCLE972_BOUNDED_THEOREM_NOTE_2026-08-09.md) supply finite inter-site structure, but no continuous `M_2(C)` measure/compiler | **ATTEMPTED** |
 | atom-splitting ancilla | add a continuous or finite splittable program variable | remains a viable constructive escape; the [current four axioms](MINIMAL_AXIOMS_2026-06-29.md) supply no such variable | **ATTEMPTED** |
 
 The first four routes are executed here. The remaining four are exact
@@ -417,7 +419,7 @@ and are not inflated into extra decoder walls.
 | finite second moment | proved for that Gaussian; not assumed for every current law |
 | matrix adjoint, identity, and trace | supplied algebraic structure of `M_2(C)` |
 | raw second-moment choice | explicit compiler choice; physical selection remains a wall |
-| center and ordered effect menu | supplied condition/program parameters; physical content-only encoding and preparation equivalence remain open |
+| center and ordered effect menu | supplied condition/program parameters; physical Record-content encoding and preparation equivalence remain open |
 | `Phi` and inverse CDF | elementary Gaussian functions; no observed probability is imported |
 | atomlessness | derived for the Gaussian completion, absent from the general current measure clause |
 | deterministic decoder | explicit target class; stochastic/ancilla routes remain live |
@@ -433,8 +435,9 @@ partition.
 
 | Source location | Source residual used | Residual attacked here | Closure claimed here | Match |
 |---|---|---|---|---:|
-| [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md), lines 60--70 and 82--84 | probability measure plus content-only additive Record readout | construct a density-operator candidate and decoder from one compatible measure family | bounded Gaussian construction only | yes |
-| [`Block 3 decoder source`](ADMISSIBILITY_RECORD_CONTENT_DECODER_PUSHFORWARD_EFFECT_DESCENT_INDEPENDENCE_BOUNDED_THEOREM_NOTE_2026-08-10.md), lines 289--326 | physical decoder, cross-program effect quotient, and map to `rho` remain open | execute a fixed-condition mathematical density-operator/decoder/effect compiler | closed only on the displayed Gaussian family at fixed `C` and supplied programs | yes |
+| [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) | neighbor-dependent possibility distribution plus content-only Record readout; no scalar/additivity rule | construct a density-operator candidate and event partition from one supplied compatible family | bounded Gaussian construction only; no direct Record bridge | yes |
+| [`global-measure/menu-kernel source`](ADMISSIBILITY_GLOBAL_MEASURE_MENU_KERNEL_TYPE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-08-10.md) | a global possibility measure is not automatically a menu kernel; registered partitions remain a sufficient interface | execute one fixed-condition mathematical density-operator/partition/effect compiler | closed only on the displayed Gaussian family at fixed `C` and supplied programs | yes |
+| [`content-only Record source`](RECORD_CONTENT_ONLY_SHARED_EFFECT_DESCENT_BOUNDED_THEOREM_NOTE_2026-08-12.md) | identical effect-only content cannot carry two direct readout values; formation/event interpretations remain separate | keep the program-relative partition outside direct Record readout | no content or formation bridge borrowed | yes |
 | [`finite process source`](work_history/repo/review_feedback/CONTACT_ARCHIVE_FINITE_PROCESS_HISTORY_CYCLE284_NOTE_2026-07-17.md), lines 180--204 and 240--247 | decoder closes on a supplied four-state trace/Kraus domain | compare finite supplied-trace decoding with current continuous-measure decoding | no physical/history closure borrowed | yes |
 | [`covariant effect-map source`](COVARIANT_EFFECT_MAP_NONSELECTION_AND_REPEAT_CERTAINTY_COLLAPSE_BOUNDED_THEOREM_NOTE_2026-07-11.md), lines 84--105 and 195--220 | effect-map selection and repeat certainty remain conditional | preserve physical density-operator/effect selection as an open residual | no repeat-certainty conclusion borrowed | yes |
 | [`coarse-CP quotient source`](work_history/repo/review_feedback/PHYSICAL_EFFECT_EQUIVALENCE_NORMALIZED_GRADE_CYCLE321_NOTE_2026-07-18.md), lines 145--220 | exact finite coarse-CP equivalence, broader effect quotient open | compare physical quotient with mathematical effect descent | no general physical quotient claimed | yes |
@@ -444,9 +447,9 @@ partition.
 | Statement | Per element | Per site | Per mode | Per block | Lattice-wide |
 |---|---|---|---|---|---|
 | second moment supplies a density-operator candidate | every matrix coordinate integrated analytically | one `M_2(C)` site, any declared Hermitian center | trace statistic plus full matrix second moment | Gaussian completion only | not executed; global formation law absent |
-| quantile decoder realizes the grade | every menu effect and cumulative interval | same one-site law and fixed condition | centered trace scalar exactly uniform | every supplied finite ordered effect resolution at fixed `C` | not executed; no physical program/preparation field |
+| quantile event partition realizes the grade | every menu effect and cumulative interval | same one-site law and fixed condition | centered trace scalar exactly uniform | every supplied finite ordered effect resolution at fixed `C` | not executed; no physical program/preparation field |
 | compiler is not selected | shared `E_0` differs by `1/70` | same `P_z` condition | two isotropic extractor members | displayed `lambda` family | untested and not claimed globally |
-| atomic half-half decoder fails | singleton support and two labels | blank one-site condition | deterministic content-only decoder class | one binary target menu | untested and not claimed for all atomic programs |
+| atomic half-half decoder fails | singleton support and two labels | blank one-site condition | deterministic possibility-to-event decoder class | one binary target menu | untested and not claimed for all atomic programs |
 
 The runner cache emits substantive `per_element`, `per_site`, `per_mode`,
 `per_block`, and `lattice_wide` lines.
@@ -454,7 +457,7 @@ The runner cache emits substantive `per_element`, `per_site`, `per_mode`,
 ### N6 — live partial-closure and primitive paths
 
 1. A local contact/pointer dynamics could select the raw second moment and
-   encode its quantile cuts.
+   encode its quantile cuts as formation events or content-bearing labels.
 2. A repeat-certainty derivation could select projective formation effects once
    a physical instrument is supplied.
 3. A coarse-CP or other operational quotient could identify a larger physical
@@ -474,12 +477,11 @@ The primitive-registry scan used
 sources. The scale reference supplies units only, kinetic isotropy supplies a
 kinetic-form ratio only, and the realized-state primitive supplies pointwise
 evaluation without a state, measure, probability rule, normalization, or
-selector. None supplies the compiler interfaces above. In-flight PR #6062 is a
-bounded basis-binary CNOT response witness; PR #6069 sharpens the finite
-length-zero/one word family to six covariant incoming-CNOT/XOR witnesses but
-explicitly leaves the continuous `M_2(C)` law open; PR #6066 is an
-axiom-fidelity corpus measurement. None changes the current premise surface or
-closes this target.
+selector. None supplies the compiler interfaces above. Landed finite
+basis-state CNOT/XOR witnesses do not supply the continuous `M_2(C)`
+measure-to-partition bridge. The later registered-partition construction on
+`D x [0,1]` supplies an external uniform coordinate; it does not derive the
+intrinsic Gaussian trace-CDF uniformizer proved here.
 
 ### N7 — hostile steelman
 
@@ -497,10 +499,10 @@ contact/pointer dynamics, not a stronger non-derivability claim.
 | Earlier surface | Later movement | Echo here |
 |---|---|---|
 | finite content weights left a simplex in Cycle 912 | the current axiom now supplies a continuous possibility measure | the Gaussian law plus explicit uniformizer constructs rather than postulates its decoder |
-| Cycle 284 built finite supplied-trace decoder fibers | Block 3 identified measurable content decoders as the current interface | the new compiler begins from `mu_C` and derives both a density-operator candidate and fiber masses |
+| Cycle 284 built finite supplied-trace decoder fibers | the current global-measure/menu-kernel surface identifies registered event partitions as a sufficient mathematical interface | the new compiler begins from `mu_C` and derives both a density-operator candidate and fiber masses |
 | covariant formation effects retained depolarizing freedom | repeat certainty conditionally collapsed the projective effect map | the `lambda` density-operator-extractor family similarly keeps physical selection open |
 | Cycle 321 closed one coarse-CP quotient | general physical effect equality remained open | mathematical effect descent now closes at fixed Gaussian condition, while cross-condition physical program equivalence remains separate |
-| Block 3 hostile decoders violated effect descent | this block uses effect weights as quantile lengths | the same exact menus now receive a common `3/10` shared-effect mass |
+| the August 10 hostile restriction violates effect descent | this note uses effect weights as quantile lengths | the same exact menus now receive a common `3/10` shared-effect mass |
 
 **Gate disposition:** PASS for the exact Gaussian compiler construction,
 nonselection inside the displayed `lambda` family, and the singleton-support
@@ -512,11 +514,11 @@ complete Born/Record/history theorem.
 
 | Item | Role | Status |
 |---|---|---|
-| current Admissibility/Record wording | semantic baseline | supplied; unchanged |
-| Hermitian-neighbor-average Gaussian | explicit completion | inherited from Block 3 and rederived here |
+| current Admissibility/Record wording | semantic baseline | supplied; unchanged; no scalar/additivity premise used |
+| Hermitian-neighbor-average Gaussian | explicit completion | declared and derived here; not selected by the axioms |
 | complex Gaussian second moments | density-operator-extractor computation | elementary and proved here |
 | standard-normal CDF transform | uniformizer | elementary one-dimensional proof here |
-| exact shared-effect menus | compiler test | supplied by stacked parent and independently rechecked |
+| exact shared-effect menus | compiler test | stated explicitly and independently rechecked |
 | center plus ordered menu/effect interpretation | mathematical condition/program | supplied; not physical registration or preparation equivalence |
 | `lambda` extractor family | hostile completion family | constructed here; not selected |
 | trace/Born formula | partition output identity | never assumed as physical law |
@@ -530,13 +532,8 @@ obligation has retired.
 
 ## Review Record
 
-This source is stacked on PR #6067 because it consumes Block 3's exact Gaussian
-family and decoder/effect residual. Direct self-review records a fresh
-`PASS=29 FAIL=0` primary cache, an independent symbolic recomputation, and
-eighteen process-local mutation probes reaching their intended failure
-families. The full repository pipeline reaches the current-main
-dependency-policy epoch mismatch owned by PR #6061 after completing the prior
-stages; this branch does not change that policy surface. The canonical axiom
-memo remains unchanged. Independent audit is required before any effective
-status changes. No `review-loop` was invoked in producing or directly
-self-reviewing this artifact.
+The submitted source was stacked on closed-unmerged PR #6067. Review-loop
+rebased the mathematical construction onto current main, removed that
+load-bearing provenance, and retyped the program-relative fibers as event
+partitions rather than direct Record readout. The canonical axiom memo remains
+unchanged. Independent audit is required before any effective status changes.

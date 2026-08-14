@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/two_cube_rho_increment_2026_08_14.py
+runner_sha256: 81cd72799714d96e3a6e7f28b81815e53b8fbb0c8a6d2a6e331298948fc503de
+input_fingerprint_sha256: 90013b1dd378aa1508fd525dffc9eb6289bc94cdf8ff353f23a5a6fd1298c701
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+external_scientific_inputs: none
+package_local_integrity_reads: runner, note, axiom memo
+measure_boundary: exact integers on one occupancy step
+negative_scope: increment identity, not Newton
+PASS: geom 12 verts; A x in {0,1}; B x in {1,2}
+PASS: thm-new seed forms exactly {(1,0,0),(0,1,0),(0,0,1)}
+PASS: thm-delta seed step Δρ(A)=3, Δρ(B)=1
+PASS: thm-id Δρ(C) equals |new locks ∩ C|
+PASS: thm-empty empty step Δρ=0
+PASS: mutation-dB0-fails predicate Δρ(B)=0 on the seed step must fail
+PASS: mutation-empty-rho-fails predicate empty step changes ρ must fail
+PASS: quoted note quotes lock and NN
+PASS: boundary required strings and forbidden absent
+PASS: memo-silent axioms do not name Δρ
+PASS: gates identity gates occ_step/rho/new_in
+per_element: checked exactly — Δρ(A), Δρ(B), new-lock counts
+per_site: checked exactly — seed (0,0,0) and empty
+per_mode: checked exactly — occupancy increment identity
+per_block: checked exactly — two-cube source increment
+lattice_wide: checked and not executed — not axiom text
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

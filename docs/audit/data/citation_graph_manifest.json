@@ -1,6 +1,6 @@
 {
- "edge_count": 15650,
- "node_count": 5506,
+ "edge_count": 15652,
+ "node_count": 5507,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -349,6 +349,10 @@
   "admissibility_barycenter_evaluation_menu_kernel_bounded_theorem_note_2026-08-12": {
    "deps_hash": "ae792f44891f",
    "out_degree": 3
+  },
+  "admissibility_finite_state_markov_completion_bounded_theorem_note_2026-08-14": {
+   "deps_hash": "00eede88f5ef",
+   "out_degree": 2
   },
   "admissibility_global_measure_menu_kernel_type_separation_bounded_theorem_note_2026-08-10": {
    "deps_hash": "8830c572e201",

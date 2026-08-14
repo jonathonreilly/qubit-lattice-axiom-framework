@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/s4_faithful_so3_conjugacy_2026_08_14.py
+runner_sha256: 288c47a3b392dd9f5035072bd2374b39934b9482f24ec1f4dfaf37dde5f5bee9
+input_fingerprint_sha256: 97e78495bc37028b9860832e6edbd150651f65bb1723b3d6a59210f0e29306b7
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+PASS: thm0 note exists and quotes Lattice proper rotations
+PASS: thm0 Qubit remains M_2(C) in the axiom memo
+PASS: hygiene note avoids 'G_N'
+PASS: hygiene note avoids '1/r'
+PASS: hygiene note avoids '1/r^2'
+PASS: hygiene note avoids 'Lattice-named'
+PASS: hygiene note avoids 'not a TOE'
+PASS: hygiene note avoids 'exhausted'
+PASS: hygiene note avoids 'only route'
+PASS: hygiene note avoids 'we adopt'
+PASS: hygiene note avoids 'Codex'
+PASS: hygiene note avoids 'L_phys'
+PASS: thm1 |G|=24
+PASS: thm1 G closed under product and inverse
+PASS: thm1 every signed-perm det=+1 matrix is in G
+PASS: thm2 phi hits 24 permutations
+PASS: thm2 phi is a homomorphism on the generating pair
+PASS: thm2 phi multiplicative on all of G
+PASS: thm2 ker phi = {I}
+PASS: thm3 90deg about x is a 4-cycle
+PASS: thm3 that 4-cycle is odd
+PASS: thm3 det(R)=+1 and det(-R)=-1
+PASS: thm3 120deg about 111 is even
+PASS: thm4 phi inverse is a total map on the 24 image perms
+PASS: thm4 each inner auto of S4 is conjugation by phi^{-1}(sigma)
+PASS: thm4 that conjugating element is unique in G
+PASS: thm5 transported iso lands in G
+PASS: thm5 transported iso is bijective
+PASS: thm5 transport is conjugation, not a second image group
+per_mode: inner autos of the diagonal S4 are G-conjugations
+per_block: 3' is excluded by the odd 4-cycle landing at det=-1
+lattice_wide: checked and not executed — no SO(3) classification
+TOTAL: PASS=29 FAIL=0
+
+----- stderr -----
+

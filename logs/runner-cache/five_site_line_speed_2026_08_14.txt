@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/five_site_line_speed_2026_08_14.py
+runner_sha256: d48a9ff2b0f22a9ee80690adc8a38b4733ea3bbb7b691500374fbc65b3e2de57
+input_fingerprint_sha256: 7c018a51d713dbbe0571364f3636f3e538c57c189e7b4d6a9f6c94848c410966
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+external_scientific_inputs: none
+package_local_integrity_reads: runner, note, axiom memo
+measure_boundary: exact Q 5-site speed-1 wave
+negative_scope: line comparator, not a TOE
+PASS: thm1-cone after t steps, prefix t+1 is locked
+PASS: thm2-site3-t1 at t=1 site 3 has n_x=0 and is unread
+PASS: thm2-site3-t2 at t=2 site 3 is unread with n_x≠0
+PASS: thm2-site3-t3 site 3 forms at step 3
+PASS: thm3-step5 step 5 is identity
+PASS: thm3-source source/tick are 0,1,2,3,4,4
+PASS: thm3-empty empty line is a fixed point
+PASS: mutation-early-fails predicate site 3 forms at step 2 must fail
+PASS: mutation-step5-fails predicate step 5 increments source must fail
+PASS: mutation-empty-fails predicate empty forms site 0 must fail
+PASS: quoted note quotes lock, permanence, and NN distribution
+PASS: boundary not TOE, no forbidden phrases
+PASS: memo-silent axioms do not name the 5-site wave
+PASS: gates identity gates and AUDIT_INPUT_PATHS
+per_element: checked exactly — five sites, n_x
+per_site: checked exactly — cone, site 3 delay, empty
+per_mode: checked exactly — speed-1 composition
+per_block: checked exactly — light-cone, not recoil-as-menu
+lattice_wide: checked and not executed — no law adopted
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

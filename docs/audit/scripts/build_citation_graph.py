@@ -188,6 +188,12 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
     "physical_cell_cutting_carrier_parity_law_cycle746_note_2026-08-08": [
         "scripts/physical_cell_cutting_carrier_parity_law_cycle746_independent_check_2026_08_08.py",
     ],
+    # Cycle 747 independently rebuilds the exact-cover population with the
+    # opposite pivot and rederives the all-marked census and weight-20 sums.
+    "physical_cell_cutting_flip_partner_carrier_bracket_cycle747_note_2026-08-08": [
+        "scripts/physical_cell_cutting_flip_partner_carrier_bracket_cycle747_"
+        "independent_check_2026_08_08.py",
+    ],
     "inter_site_gate_cycle970_bounded_theorem_note_2026-08-09": [
         "scripts/frontier_cycle970_gate_independent_check_2026_08_09.py",
     ],

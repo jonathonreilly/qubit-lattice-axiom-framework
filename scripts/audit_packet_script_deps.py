@@ -65,6 +65,10 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
     "physical_cell_cutting_carrier_parity_law_cycle746_note_2026-08-08": [
         "scripts/physical_cell_cutting_carrier_parity_law_cycle746_independent_check_2026_08_08.py",
     ],
+    "physical_cell_cutting_flip_partner_carrier_bracket_cycle747_note_2026-08-08": [
+        "scripts/physical_cell_cutting_flip_partner_carrier_bracket_cycle747_"
+        "independent_check_2026_08_08.py",
+    ],
     # Cycle 738's checker independently reconstructs the cutting incidence
     # with the opposite cover pivot and uses a separate exact-weight CNF/SAT
     # encoding, so it deliberately remains outside the primary import closure.

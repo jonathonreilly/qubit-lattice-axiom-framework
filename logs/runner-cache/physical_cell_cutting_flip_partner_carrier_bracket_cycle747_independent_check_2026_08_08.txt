@@ -1,0 +1,30 @@
+===== runner cache v1 =====
+runner: scripts/physical_cell_cutting_flip_partner_carrier_bracket_cycle747_independent_check_2026_08_08.py
+runner_sha256: 0bbaed8f549c937cfe61166752e6d8ee233896cf337db24f5c5d27e81057a303
+input_fingerprint_sha256: 18d2c554cff273cf1729335b44725420ddc6a28c2c02fa9eddcda793b30e50e2
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 1.82
+status: ok
+----- stdout -----
+PASS independent.population  opposite-pivot reconstruction gives 15800 rows, 192 columns, weights 24 and 1975
+PASS independent.targets  the reconstructed four target and its complement reproduce the bound target counts
+PASS independent.all_marked  the counting floor is attained by exactly 192 independently enumerated weight-eight carriers
+PASS independent.weight_twenty  the landed eleven supports and independent weight-eight census give 512 distinct weight-twenty flip carriers
+PASS independent.lower_bound  independent through-14 and weight-16 emptiness plus even parity leave 18 as the first candidate, while 20 is attained
+PASS independent.primary_contract  the final primary receipt equals the independent reconstruction and preserves the unresolved weight-18 residual
+PASS hostile.primary_status  a failing primary receipt is rejected
+PASS hostile.all_marked  a changed weight-eight carrier is rejected
+PASS hostile.overlap  a changed overlap ceiling is rejected
+PASS hostile.eighteen  a false weight-18 completion claim is rejected
+PASS hostile.lower_bound  a reverted weight-16 emptiness certificate is rejected
+per_element: checked -- all 192 columns enter the independent incidence and clique calculations
+per_site: checked and not executed -- one supplied coordinate four-cube only
+per_mode: checked and not executed -- the finite binary object has no modes
+per_block: checked -- all 15800 rows and every predecessor search block are bound
+lattice_wide: checked and not executed -- no multicell or continuum claim
+RECEIPT outputs/physical_cell_cutting_flip_partner_carrier_bracket_cycle747_independent_check_2026_08_08_receipt_2026-08-08.json
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

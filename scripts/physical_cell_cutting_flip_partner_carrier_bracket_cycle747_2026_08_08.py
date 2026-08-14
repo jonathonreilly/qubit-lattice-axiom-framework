@@ -10,7 +10,7 @@ every cutting four marks.
 
 Three things are settled here. The all-marked reading needs exactly eight pieces, and
 its eight-piece carriers are exactly the 192 sets of eight pieces that no cutting uses
-twice, one for each piece of the cube. Adding one of those to a sixteen-piece carrier
+twice; every piece belongs to eight of them. Adding one of those to a sixteen-piece carrier
 of four gives a carrier of the flip partner, and because those two never share more
 than two pieces the smallest such sum has twenty pieces. Below that, the anchored
 search finds no carrier of the flip partner at any even size up to sixteen, asked of
@@ -26,16 +26,122 @@ most twenty.
 Class-A: integer and field-with-two-elements arithmetic on a finite explicit object, no
 solver. Every count below is measured here.
 """
+import copy
+import hashlib
 import itertools
+import json
 import math
 import resource
+import sys
 import time
+from pathlib import Path
 
 import numpy as np
 
+AUDIT_TIMEOUT_SEC = 900
+
 T0 = time.time()
 PF = [0, 0]
+GATES = []
 OUT = [0]
+
+ROOT = Path(__file__).resolve().parents[1]
+PRIMARY_PATH = (
+    "scripts/physical_cell_cutting_flip_partner_carrier_bracket_cycle747_2026_08_08.py"
+)
+CHECKER_PATH = (
+    "scripts/physical_cell_cutting_flip_partner_carrier_bracket_cycle747_"
+    "independent_check_2026_08_08.py"
+)
+NOTE_PATH = (
+    "docs/PHYSICAL_CELL_CUTTING_FLIP_PARTNER_CARRIER_BRACKET_"
+    "CYCLE747_NOTE_2026-08-08.md"
+)
+C745_NOTE_PATH = "docs/PHYSICAL_CELL_CUTTING_SIXTEEN_CENSUS_CYCLE745_NOTE_2026-08-05.md"
+C745_PRIMARY_PATH = "scripts/physical_cell_cutting_sixteen_census_cycle745_2026_08_05.py"
+C745_CHECKER_PATH = (
+    "scripts/physical_cell_cutting_sixteen_census_cycle745_"
+    "independent_check_2026_08_05.py"
+)
+C745_RECEIPT_PATH = (
+    "outputs/physical_cell_cutting_sixteen_census_cycle745_2026_08_05_"
+    "receipt_2026-08-05.json"
+)
+C745_INDEPENDENT_RECEIPT_PATH = (
+    "outputs/physical_cell_cutting_sixteen_census_cycle745_"
+    "independent_check_2026_08_05_receipt_2026-08-05.json"
+)
+C746_NOTE_PATH = (
+    "docs/PHYSICAL_CELL_CUTTING_CARRIER_PARITY_LAW_CYCLE746_NOTE_2026-08-08.md"
+)
+C746_PRIMARY_PATH = (
+    "scripts/physical_cell_cutting_carrier_parity_law_cycle746_2026_08_08.py"
+)
+C746_CHECKER_PATH = (
+    "scripts/physical_cell_cutting_carrier_parity_law_cycle746_"
+    "independent_check_2026_08_08.py"
+)
+C746_RECEIPT_PATH = (
+    "outputs/physical_cell_cutting_carrier_parity_law_cycle746_2026_08_08_"
+    "receipt_2026-08-08.json"
+)
+C746_INDEPENDENT_RECEIPT_PATH = (
+    "outputs/physical_cell_cutting_carrier_parity_law_cycle746_"
+    "independent_check_2026_08_08_receipt_2026-08-08.json"
+)
+RECEIPT_PATH = ROOT / (
+    "outputs/physical_cell_cutting_flip_partner_carrier_bracket_cycle747_"
+    "2026_08_08_receipt_2026-08-08.json"
+)
+AUDIT_INPUT_PATHS = (
+    "docs/PHYSICAL_CELL_CUTTING_FLIP_PARTNER_CARRIER_BRACKET_CYCLE747_NOTE_2026-08-08.md",
+    "scripts/physical_cell_cutting_flip_partner_carrier_bracket_cycle747_independent_check_2026_08_08.py",
+    "docs/PHYSICAL_CELL_CUTTING_SIXTEEN_CENSUS_CYCLE745_NOTE_2026-08-05.md",
+    "scripts/physical_cell_cutting_sixteen_census_cycle745_2026_08_05.py",
+    "scripts/physical_cell_cutting_sixteen_census_cycle745_independent_check_2026_08_05.py",
+    "outputs/physical_cell_cutting_sixteen_census_cycle745_2026_08_05_receipt_2026-08-05.json",
+    "outputs/physical_cell_cutting_sixteen_census_cycle745_independent_check_2026_08_05_receipt_2026-08-05.json",
+    "docs/PHYSICAL_CELL_CUTTING_CARRIER_PARITY_LAW_CYCLE746_NOTE_2026-08-08.md",
+    "scripts/physical_cell_cutting_carrier_parity_law_cycle746_2026_08_08.py",
+    "scripts/physical_cell_cutting_carrier_parity_law_cycle746_independent_check_2026_08_08.py",
+    "outputs/physical_cell_cutting_carrier_parity_law_cycle746_2026_08_08_receipt_2026-08-08.json",
+    "outputs/physical_cell_cutting_carrier_parity_law_cycle746_independent_check_2026_08_08_receipt_2026-08-08.json",
+    "requirements.txt",
+    "requirements-release.txt",
+)
+
+
+def file_sha256(path):
+    return hashlib.sha256((ROOT / path).read_bytes()).hexdigest()
+
+
+def load_receipt(path):
+    with (ROOT / path).open(encoding="utf-8") as handle:
+        return json.load(handle)
+
+
+def receipt_inputs_current(receipt):
+    recorded = receipt.get("input_sha256", {})
+    return bool(recorded) and all(
+        (ROOT / path).is_file() and recorded[path] == file_sha256(path)
+        for path in recorded
+    )
+
+
+def fail_receipt(reason):
+    RECEIPT_PATH.write_text(json.dumps({
+        "schema": "physical-cell-cutting-flip-partner-carrier-bracket-cycle747-v2",
+        "status": "fail",
+        "claim_type": "bounded_theorem",
+        "reason": reason,
+    }, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+
+
+fail_receipt("runner has not completed")
+C745_RECEIPT = load_receipt(C745_RECEIPT_PATH)
+C745_INDEPENDENT_RECEIPT = load_receipt(C745_INDEPENDENT_RECEIPT_PATH)
+C746_RECEIPT = load_receipt(C746_RECEIPT_PATH)
+C746_INDEPENDENT_RECEIPT = load_receipt(C746_INDEPENDENT_RECEIPT_PATH)
 
 
 def emit(s):
@@ -48,8 +154,11 @@ def emit(s):
 
 
 def gate(ok, name, detail):
-    PF[0 if ok else 1] += 1
-    emit(("PASS " if ok else "FAIL ") + name + "  " + detail)
+    passed = bool(ok)
+    PF[0 if passed else 1] += 1
+    GATES.append((name, passed))
+    compact = detail if len(detail) <= 72 else detail[:69] + "..."
+    emit(("PASS " if passed else "FAIL ") + name + "  " + compact)
 
 
 
@@ -215,8 +324,10 @@ SZG = [4]
 EA = dict((k, []) for k in SZC)
 EB = dict((k, []) for k in SZC)
 DIS = dict((k, set()) for k in SZG)
+PROCESSED_PAIR_ROWS = 0
 for lo in range(0, NS, 200):
-    hi = min(lo + 100, NS)
+    hi = min(lo + 200, NS)
+    PROCESSED_PAIR_ROWS += hi - lo
     d = LUT[np.bitwise_xor(PK[lo:hi, None, :], PK[None, :, :])].sum(axis=2, dtype=np.int16)
     for k in SZC:
         rr, cc = np.nonzero(d == 2 * k)
@@ -438,6 +549,86 @@ NTG = len(FVEC)
 TCTL = NTG - 1
 FV = np.stack(FVEC)
 TG = pack88(FV[:, EPIV])
+
+
+def cycle745_contract(primary, independent):
+    census = primary.get("four_reading_census", {})
+    search = primary.get("complete_anchored_search_at_sixteen", {})
+    answers = independent.get("exact_anchored_weight_sixteen_answers", {})
+    counts = independent.get("exact_anchored_weight_sixteen_counts", {})
+    supports = census.get("anchored_supports", [])
+    support_semantics_ok = (
+        len(supports) == 11
+        and len({tuple(row) for row in supports}) == 11
+        and all(
+            len(row) == 16
+            and len(set(row)) == 16
+            and 144 in row
+            and all(isinstance(value, int) and 0 <= value < NPO for value in row)
+            and np.array_equal(
+                (INCL[:, row].sum(axis=1) & 1).astype(np.uint8), FV[2]
+            )
+            for row in supports
+        )
+    )
+    return (
+        primary.get("schema") == "physical-cell-cutting-sixteen-census-cycle745-v2"
+        and primary.get("status") == "pass"
+        and primary.get("gates", {}).get("fail") == 0
+        and primary.get("runner_sha256") == file_sha256(C745_PRIMARY_PATH)
+        and receipt_inputs_current(primary)
+        and census.get("anchored_count") == 11
+        and census.get("complete_count") == 132
+        and support_semantics_ok
+        and search.get("execution_inventory_exact") is True
+        and search.get("scheduled_splits") == search.get("executed_splits") == 2004
+        and search.get("counts", [])[:2] == [11, 0]
+        and independent.get("schema")
+        == "physical-cell-cutting-sixteen-census-cycle745-independent-v1"
+        and independent.get("status") == "pass"
+        and independent.get("gates", {}).get("fail") == 0
+        and (independent.get("checker_sha256") or independent.get("runner_sha256"))
+        == file_sha256(C745_CHECKER_PATH)
+        and receipt_inputs_current(independent)
+        and independent.get("primary_receipt_bound") is True
+        and independent.get("target_identity_bound") is True
+        and answers.get("four") is True
+        and answers.get("four-flip") is False
+        and counts.get("four") == 11
+        and counts.get("four-flip") == 0
+    )
+
+
+def cycle746_contract(primary, independent):
+    forced = primary.get("forced_block_parity", {})
+    target_population = primary.get("target_population", {})
+    reconstruction = independent.get("independent_reconstruction", {})
+    return (
+        primary.get("schema") == "physical-cell-cutting-carrier-parity-law-cycle746-v2"
+        and primary.get("status") == "pass"
+        and primary.get("gates", {}).get("fail") == 0
+        and primary.get("runner_sha256") == file_sha256(C746_PRIMARY_PATH)
+        and receipt_inputs_current(primary)
+        and forced.get("fixed_blocks") == ["total", "L", "R", "Q2", "Q3"]
+        and forced.get("free_blocks") == ["Q0", "Q1"]
+        and target_population.get("realizable_targets") == 17
+        and independent.get("schema")
+        == "physical-cell-cutting-carrier-parity-law-cycle746-independent-v1"
+        and independent.get("status") == "pass"
+        and independent.get("gates", {}).get("fail") == 0
+        and (independent.get("checker_sha256") or independent.get("runner_sha256"))
+        == file_sha256(C746_CHECKER_PATH)
+        and receipt_inputs_current(independent)
+        and reconstruction.get("cuttings") == 15800
+        and reconstruction.get("support_columns") == 192
+        and reconstruction.get("rank") == 88
+        and reconstruction.get("fixed_blocks") == ["total", "L", "R", "Q2", "Q3"]
+        and reconstruction.get("free_blocks") == ["Q0", "Q1"]
+    )
+
+
+C745_OK = cycle745_contract(C745_RECEIPT, C745_INDEPENDENT_RECEIPT)
+C746_OK = cycle746_contract(C746_RECEIPT, C746_INDEPENDENT_RECEIPT)
 
 # ---- the parities a search of the pieces is forced to respect on each block ----
 LBAS = {}
@@ -1185,6 +1376,12 @@ for s in range(NS):
     ROWK[tuple(map(int, np.nonzero(INC[s])[0]))] = s
 gate(len(ROWK) == NS and NS == 15800, "G1",
      "all 15800 cuttings carry distinct piece supports")
+gate(PROCESSED_PAIR_ROWS == NS, "inventory.pair_rows",
+     "the move scan processes all 15800 possible first endpoints")
+gate(C745_OK, "dependency.cycle745",
+     "the complete Cycle 745 weight-16 census and independent search receipt are bound")
+gate(C746_OK, "dependency.cycle746",
+     "the corrected Cycle 746 parity classification and opposite-pivot receipt are bound")
 
 
 def refine(colors):
@@ -1557,8 +1754,8 @@ SFIX = [[gi for gi in range(48) if np.array_equal(FV[t][PERMS[gi]], FV[t])]
         for t in range(8)]
 
 
-def one_orbit(t):
-    """whether the symmetries fixing reading t carry any piece to any other"""
+def piece_orbit_sizes(t, include_extra):
+    """piece-orbit sizes under the target-fixing generators actually supplied"""
     par = list(range(NP))
 
     def rt(a):
@@ -1567,22 +1764,32 @@ def one_orbit(t):
             a = par[a]
         return a
 
-    for p in [CP[gi] for gi in SFIX[t]] + [b0, b1]:
+    generators = [CP[gi] for gi in SFIX[t]]
+    if include_extra:
+        generators += [b0, b1]
+    for p in generators:
         for j in range(NP):
             ra, rb = rt(j), rt(int(p[j]))
             if ra != rb:
                 par[ra] = rb
-    return len(set(rt(j) for j in range(NP))) == 1
+    counts = {}
+    for j in range(NP):
+        root = rt(j)
+        counts[root] = counts.get(root, 0) + 1
+    return sorted(counts.values())
 
 
-TRANS = [one_orbit(t) for t in range(8)]
+BASE_ORBITS = [piece_orbit_sizes(t, False) for t in range(8)]
+FULL_ORBITS = [piece_orbit_sizes(t, True) for t in range(8)]
+TRANS = [sizes == [192] for sizes in FULL_ORBITS]
 SFN = sorted(set(len(s) for s in SFIX))
-emit("symmetries of the table that fix a basic reading: {0}, and they carry any "
-     "piece to any other: {1}".format(
-         SFN[0] if len(SFN) == 1 else SFN, all(TRANS)))
-gate(all(TRANS) and len(TRANS) == 8, "G22",
-     "the symmetries that fix a reading carry any piece to any other, so asking for "
-     "carriers through one fixed piece decides the question for every piece")
+emit("geometric target stabilizer size {0}, geometric piece orbits {1}; after adding "
+     "the two verified target-fixing involutions the piece orbit is {2}".format(
+         SFN[0] if len(SFN) == 1 else SFN, BASE_ORBITS[0], FULL_ORBITS[0]))
+gate(SFN == [48] and all(sizes == [48, 48, 48, 48] for sizes in BASE_ORBITS)
+     and all(TRANS) and len(TRANS) == 8, "G22",
+     "the 48 geometric target stabilizers plus b0 and b1 generate a transitive action, "
+     "so a target-empty anchored sweep decides the whole-system question")
 
 
 # ---- Part 4f: the anchored search below eighteen ----
@@ -1647,6 +1854,12 @@ gate(BADR == 0, "G26",
 
 # ---- Part 4g: the ceiling at twenty ----
 C16 = RUN[16][3][2]
+C745_ANCHORED = sorted(
+    tuple(int(value) for value in row)
+    for row in C745_RECEIPT.get("four_reading_census", {}).get("anchored_supports", [])
+)
+gate(C16 == C745_ANCHORED and len(C16) == 11, "dependency.cycle745_supports",
+     "the locally rebuilt eleven anchored four carriers equal the landed Cycle 745 supports")
 OVL = {}
 PROF = set()
 TOT = set()
@@ -1729,6 +1942,26 @@ gate(EVEN and ALLOK and [FOUND[m][3] for m in SZS] == [0, 0, 0, 0, 0, 0, 0, 0]
      "the flip partner forces an even total, carries nothing at sixteen or below, and "
      "is carried by twenty, so its least size is at least eighteen and at most twenty")
 
+SKIPPED_PAIR_ROWS = sum(min(lo + 100, NS) - lo for lo in range(0, NS, 200))
+gate(SKIPPED_PAIR_ROWS == NS // 2 and SKIPPED_PAIR_ROWS != PROCESSED_PAIR_ROWS,
+     "hostile.pair_inventory",
+     "the submitted half-width chunk loop is detected as 7900 rather than 15800 rows")
+bad_c745 = copy.deepcopy(C745_RECEIPT)
+bad_c745["status"] = "fail"
+gate(not cycle745_contract(bad_c745, C745_INDEPENDENT_RECEIPT),
+     "hostile.cycle745_status", "a failing Cycle 745 receipt is rejected")
+bad_c746 = copy.deepcopy(C746_RECEIPT)
+bad_c746["forced_block_parity"]["fixed_blocks"] = ["total"]
+gate(not cycle746_contract(bad_c746, C746_INDEPENDENT_RECEIPT),
+     "hostile.cycle746_parity", "a weakened predecessor parity identity is rejected")
+bad_supports = copy.deepcopy(C745_RECEIPT)
+bad_supports["four_reading_census"]["anchored_supports"][0][0] ^= 1
+gate(not cycle745_contract(bad_supports, C745_INDEPENDENT_RECEIPT),
+     "hostile.cycle745_support", "a changed predecessor carrier support is rejected")
+gate(all(sizes == [48, 48, 48, 48] for sizes in BASE_ORBITS)
+     and all(sizes == [192] for sizes in FULL_ORBITS), "hostile.anchor_generators",
+     "omitting b0 and b1 leaves four geometric orbits and cannot license anchoring")
+
 EL = time.time() - T0
 RSS = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1048576.0
 ELB, RSB = upto(EL, 100), 2500
@@ -1736,8 +1969,124 @@ emit("elapsed under {0} s peak memory under {1} MB".format(ELB, RSB))
 gate(EL < 900.0 and RSS < float(RSB), "G32",
      "the whole runner finishes under {0} seconds inside the printed {1} MB".format(
          900, 2500))
-CH = OUT[0] + 120
-gate(CH < 5500, "G33", "its output stays under {0} characters".format(5500))
+CH = OUT[0] + 1000
+gate(CH < 6000, "G33", "its complete output stays under {0} characters".format(6000))
 
 emit("")
-print("TOTAL: PASS={0} FAIL={1}".format(PF[0], PF[1]))
+print("per_element: checked -- all 192 support columns enter the incidence, clique, "
+      "symmetry, carrier, overlap, and search calculations", flush=True)
+print("per_site: checked and not executed -- one supplied coordinate four-cube only; "
+      "no framework cell or site is identified", flush=True)
+print("per_mode: checked and not executed -- these finite binary targets have no field "
+      "or momentum-mode decomposition", flush=True)
+print("per_block: checked -- all 15800 cutting rows, four 48-piece quarters, eight "
+      "24-piece eighths, all exact searches through weight 16, and the declared "
+      "weight-18 residue", flush=True)
+print("lattice_wide: checked and not executed -- no multi-cell, arbitrary-domain, "
+      "boundary, thermodynamic, or continuum statement", flush=True)
+
+receipt = {
+    "schema": "physical-cell-cutting-flip-partner-carrier-bracket-cycle747-v2",
+    "status": "pass" if PF[1] == 0 else "fail",
+    "claim_type": "bounded_theorem",
+    "audit_status_authority": "independent audit lane only",
+    "runner_sha256": file_sha256(PRIMARY_PATH),
+    "input_sha256": {path: file_sha256(path) for path in AUDIT_INPUT_PATHS},
+    "direct_dependencies": {
+        "cycle745": {
+            "schema": C745_RECEIPT.get("schema"),
+            "anchored_four_supports": C745_RECEIPT.get(
+                "four_reading_census", {}
+            ).get("anchored_supports"),
+            "independent_weight_sixteen_bound": C745_INDEPENDENT_RECEIPT.get(
+                "exact_anchored_weight_sixteen_answers"
+            ),
+        },
+        "cycle746": {
+            "schema": C746_RECEIPT.get("schema"),
+            "forced_block_parity": C746_RECEIPT.get("forced_block_parity"),
+            "independent_reconstruction": C746_INDEPENDENT_RECEIPT.get(
+                "independent_reconstruction"
+            ),
+        },
+    },
+    "supplied_incidence": {
+        "cuttings": NS,
+        "support_columns": NPO,
+        "pieces_per_cutting": int(RW[0]),
+        "cuttings_per_piece": int(CSUM[0]),
+        "processed_pair_rows": PROCESSED_PAIR_ROWS,
+    },
+    "all_marked_weight_eight": {
+        "minimum": 8,
+        "carriers": [list(row) for row in CLQ],
+        "carrier_count": len(CLQ),
+        "carriers_through_each_piece": THRU[0],
+        "pair_intersection_counts": {str(k): PAIR[k] for k in sorted(PAIR)},
+    },
+    "anchor_completeness": {
+        "geometric_stabilizer_size": SFN[0],
+        "geometric_piece_orbits": BASE_ORBITS[0],
+        "generated_piece_orbits": FULL_ORBITS[0],
+        "extra_target_fixing_involutions": ["b0", "b1"],
+        "all_eight_targets_transitive": all(TRANS),
+    },
+    "exact_search_through_sixteen": {
+        "sizes": list(SZS),
+        "four_counts": [FOUND[m][2] for m in SZS],
+        "four_flip_counts": [FOUND[m][3] for m in SZS],
+        "all_sweeps_complete": ALLOK,
+        "weight_sixteen_cells": RUN[16][1][3],
+        "weight_sixteen_splits": RUN[16][2],
+    },
+    "weight_twenty_construction": {
+        "four_carriers": [list(row) for row in C16],
+        "maximum_intersection": max(OVL),
+        "intersection_counts": {str(k): OVL[k] for k in sorted(OVL)},
+        "distinct_flip_carriers": [list(row) for row in TWENTY],
+        "distinct_flip_carrier_count": len(TWENTY),
+        "direct_recheck_failures": BAD20,
+    },
+    "weight_eighteen_incomplete_search": {
+        "licensed_anchor_cells": NC18,
+        "scheduled_splits": NSP18,
+        "searched_splits": NSP18 - len(BAD18),
+        "refused_splits": len(BAD18),
+        "refused_cells": len(CB),
+        "carriers_found": len(G18),
+        "complete": False,
+    },
+    "minimum_bracket": {
+        "lower_bound": 18,
+        "upper_bound": 20,
+        "parity_forces_even": EVEN,
+        "weight_eighteen_resolved": False,
+    },
+    "no_go_discipline": {
+        "status": "PASS",
+        "claim_scope": (
+            "exact finite all-marked weight-eight classification, complete anchored "
+            "emptiness through weight 16, a weight-20 four-flip construction, and an "
+            "explicitly incomplete weight-18 resource residual on one supplied "
+            "15800-by-192 incidence table"
+        ),
+        "n5_execution_certificate": [
+            "per_element checked",
+            "per_site checked and not executed",
+            "per_mode checked and not executed",
+            "per_block checked",
+            "lattice_wide checked and not executed",
+        ],
+    },
+    "gates": {
+        "pass": PF[0],
+        "fail": PF[1],
+        "named": {name: "PASS" if ok else "FAIL" for name, ok in GATES},
+    },
+}
+RECEIPT_PATH.write_text(
+    json.dumps(receipt, indent=2, sort_keys=True) + "\n", encoding="utf-8"
+)
+print("RECEIPT " + str(RECEIPT_PATH.relative_to(ROOT)), flush=True)
+print("TOTAL: PASS={0} FAIL={1}".format(PF[0], PF[1]), flush=True)
+sys.exit(0 if PF[1] == 0 else 1)

@@ -1,221 +1,393 @@
-# How few pieces can carry the flip partner of a charge — Cycle 747
+# The flip partner of four has minimum carrier size 18 or 20 — Cycle 747
 
-Date: 2026-08-08
+Date: 2026-08-08 (revised 2026-08-14 by review-loop)
 
 Authority: none
 
 Audit: unset.
 
-Status: computational identities of the finite cutting system
+Status: proposed_retained
 
-Claim type: computational identities
+Claim type: bounded_theorem
 
-Runner:
+Runners:
 
-- [paired rebuild-and-gate runner](../scripts/physical_cell_cutting_flip_partner_carrier_bracket_cycle747_2026_08_08.py)
+- [primary rebuild, construction, and bounded search](../scripts/physical_cell_cutting_flip_partner_carrier_bracket_cycle747_2026_08_08.py)
+- [independent opposite-pivot reconstruction](../scripts/physical_cell_cutting_flip_partner_carrier_bracket_cycle747_independent_check_2026_08_08.py)
 
-Scope: computational identities of the finite cutting system. Every number
-below is machine-checked by the paired runner, which rebuilds the cell
-complex, the cuttings, the readings and the block bookkeeping from scratch and
-gates each quantity in place. Constitutional effect: none. This package
-changes no axiom, no framework Admissibility rule, no primitive, no policy,
-and no audit status, and it adds no import and no assumption to
-[MINIMAL_AXIOMS_2026-06-29.md](MINIMAL_AXIOMS_2026-06-29.md).
+Both runners are co-load-bearing. The checker imports no primary symbols. It
+reconstructs the finite object with the opposite exact-cover pivot, rederives
+the all-marked carrier census, and recomputes the weight-20 construction from
+the landed Cycle 745 supports. The lower-bound certificate also binds Cycle
+745's independent weight-16 search and Cycle 746's opposite-pivot parity
+checker. An audit packet for this note is incomplete without the checker.
 
-## Headline
+Direct dependencies:
 
-Each of the eight basic readings of the cut object has a flip partner: the
-reading that marks exactly the cuttings it leaves unmarked. An earlier cycle
-measured that the charge called four needs sixteen pieces to carry it. This
-cycle asks the same question of the flip partner of four, and brackets the
-answer between eighteen and twenty.
+- [Cycle 745 exact weight-16 census and target identities](PHYSICAL_CELL_CUTTING_SIXTEEN_CENSUS_CYCLE745_NOTE_2026-08-05.md)
+- [Cycle 746 forced block-parity classification](PHYSICAL_CELL_CUTTING_CARRIER_PARITY_LAW_CYCLE746_NOTE_2026-08-08.md)
 
-The ceiling comes from a small theorem the runner proves outright. The
-all-marked reading, which marks every one of the 15800 cuttings, needs exactly
-eight pieces, and its eight-piece carriers are exactly the 192 sets of eight
-pieces that no cutting uses twice — one such set for every piece of the cut
-object. Adding one of those to a sixteen-piece carrier of four gives a carrier
-of the flip partner, and because the eleven anchored sixteen-piece carriers of
-four never share more than two pieces with one of them, the smallest sum built
-that way has twenty pieces. There are 512 distinct such sets and every one of
-them checks back against the incidence.
+Constitutional effect: none. This package changes no axiom, framework
+Admissibility rule, primitive, policy, or audit status. It adds no import or
+assumption to `MINIMAL_AXIOMS_2026-06-29.md`; that framework memo is context,
+not a premise of this finite result.
 
-The floor comes from search. Every search here is anchored, asking only for
-carriers through one fixed piece, and that costs nothing: the runner checks that
-the symmetries fixing a reading carry any piece to any other, so an empty
-anchored sweep is an empty sweep for the whole system. The anchored search finds
-no carrier of the flip partner at any even size from two up to sixteen, and at
-sixteen it is asked of exactly the cells and splits that deliver the eleven
-anchored sixteen-piece carriers of four, so the two sweeps are a matched pair at
-the same size rather than a negative result standing on its own. At eighteen
-the anchored search meets every anchored cell the flip partner licenses and
-records no carrier, but 26 of its 4796 splits are refused
-by the table guard, so eighteen is a measurement with a stated gap and not a
-proof of emptiness. The least size is therefore at least eighteen and at most
-twenty.
+## Trace gate
 
-## The rebuilt system
+```yaml
+trace_class: frontier_discovery
+target_claim_id: null
+target_blocker_text: null
+source_of_blocker_text: frontier_question
+reachability_to_target: unknown_frontier
+artifact_role: theorem
+next_trace_action: "resolve the remaining exact weight-18 carrier question without promoting the present resource-bounded sweep into an emptiness certificate"
+```
 
-The runner rebuilds the incidence table of the cutting system from scratch:
-15800 distinct cuttings on 192 pieces, each cutting using 24 pieces, each
-piece used in exactly 1975 cuttings. The two ways of counting the incidences
-agree, 24 times 15800 against 1975 times 192. A set of pieces carries a
-reading when, on every cutting, the parity of how many of its pieces that
-cutting uses is exactly what the reading asks for. The eight basic readings
-are the all-marked reading, the empty reading, the three charges four, six and
-seven, and the flip partners of those three.
+## Status fields
 
-Each reading marks a definite number of cuttings, and since every piece meets
-1975 cuttings, a carrier must have at least as many pieces as it takes for
-1975 of them to cover the marks. The all-marked reading marks all 15800, which
-forces at least eight pieces; four marks 5664, which forces at least three;
-the flip partner of four marks the remaining 10136, which forces at least six.
-Those two mark counts add to 15800, as flip partners must.
+```yaml
+actual_current_surface_status: conditional-support
+target_claim_type: bounded_theorem
+trace_class: frontier_discovery
+reachability_to_target: unknown_frontier
+conditional_surface_status: "exact finite bracket and construction conditional on the Cycle 745/746 dependency chain; independent audit remains unset"
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: "exact finite all-marked carrier classification, exhaustive lower-size search, constructive upper bound, and explicitly incomplete weight-18 residual on one supplied incidence table"
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+packet_helper_runner: scripts/physical_cell_cutting_flip_partner_carrier_bracket_cycle747_independent_check_2026_08_08.py
+```
 
-## The all-marked reading needs exactly eight pieces
+The packet-helper declaration is a hard landing condition: the matching
+claim-scoped entry must exist in both supported helper registries before this
+row is dispatched to independent audit.
 
-The counting floor of eight is attained, and the runner shows more than that:
-it identifies every eight-piece carrier. Eight pieces meet 1975 times eight,
-which is 15800, cuttings counted with multiplicity, and there are exactly
-15800 cuttings each of which must be met an odd number of times. So an
-eight-piece carrier meets every cutting exactly once, which is the same thing
-as saying no cutting uses two of its pieces.
+## Inputs and provenance
 
-Reading that condition off the incidence directly, the runner builds the
-relation "no cutting uses both of these pieces" — each piece stands in that
-relation to exactly 33 others — and enumerates every set of eight pieces that
-are pairwise in it. There are 192 such sets, and all 192 do meet every cutting
-exactly once, so the two descriptions agree exactly. Each piece lies in
-exactly 8 of them. Two of them share 0, 1, 2 or 4 pieces and never 3: the
-counts by shared size are 15072, 1920, 960 and 384, and those four counts run
-over every pair of the 192, as the runner checks.
+### Load-bearing dependencies
 
-## Why a flip partner cannot be far from its reading
+Cycle 745 supplies the exact identity of the finite incidence system and
+targets, the eleven anchored weight-16 carriers of `four`, the complete
+weight-16 emptiness certificate for `four-flip`, and a dependency-bound
+through-14 search. Its primary and independent receipts are both current and
+are checked semantically, not merely named.
 
-The eight basic readings close into an addition group of order 8 under
-parity addition, and in that group each flip partner is its reading plus the
-all-marked reading. Adding carriers adds readings, and the sum of two carriers
-has at most the sum of their sizes, so the least size of a reading and the
-least size of its flip partner differ by at most eight, which is the least
-size of the all-marked reading. The subgroup reachable from four and the
-all-marked reading is a four-element group, so this cycle's bracket speaks for
-four and its flip partner and says nothing about six or seven.
+Cycle 746 supplies the exact even-total parity law for all six named
+nonconstant readings, including `four-flip`. Its primary and independent
+receipts are likewise current and bound. The lower bound here uses the
+Cycle-745 search only at weights through 16 and the Cycle-746 even-parity
+result only to exclude odd weights.
 
-## The ceiling at twenty
+### Supplied finite-domain choices
 
-The eleven anchored sixteen-piece carriers of four are checked against all 192
-eight-piece carriers of the all-marked reading. Every pair of one of the eleven
-with one of the 192 shares 0, 1 or 2 pieces, with counts 1216, 384 and 512, and
-each of the eleven meets the 192 in 128 pieces counted with multiplicity, which
-is 8 times its own size, exactly as the fact that each piece lies in 8 of them
-requires. Five distinct overlap profiles occur among the eleven.
+- the one coordinate four-cube, its corner-simplex family, the declared
+  192-column support order, and the exact 15,800-row cutting incidence;
+- the names `one`, `four`, and `four-flip` for three exact binary target
+  vectors;
+- the anchor column 144, used only with a verified target-fixing transitive
+  action;
+- the weight-18 table guard of 30,000,000 intermediate rows.
 
-Since the largest overlap is 2, the smallest sum of one of the eleven and an
-eight-piece carrier of the all-marked reading has 16 plus 8 less twice 2, that
-is 20, pieces. There are 512 distinct such sets, every one of
-them has exactly 20 pieces, and every one of them recomputes to the flip
-partner of four when checked back against the incidence. So the least size for
-the flip partner is at most twenty.
+These are finite scope choices. No physical charge identification, measured
+constant, state, probability value, dynamics, readout, source, or continuum
+interpretation is imported.
 
-This also rules the two shortest routes to eighteen out on their own terms. An
-eighteen-piece sum built from one of the eleven would need an overlap of 3, and
-the measured largest overlap is 2. A sum built from a ten-piece carrier of the
-all-marked reading would need one to exist, and the search at ten finds none
-anywhere in the system.
+## Corrected bounded result
 
-## Why one fixed piece is enough
+Write the incidence matrix as
 
-Every sweep in this cycle is anchored: it asks only for carriers that contain
-one fixed piece. That is a saving, not a restriction. The symmetries of the
-incidence table that fix a reading carry any piece to any other, and the runner
-checks that separately for each of the eight basic readings, finding in each
-case that all 48 cube symmetries fix the reading. So if any set of pieces
-anywhere in the system carried a reading at some size, a symmetry fixing
-that reading would carry one of its pieces onto the anchor, giving a carrier of
-the same reading at the same size through the anchor. An anchored sweep that
-comes back empty at a size is therefore empty for the whole system at that
-size, which is what the floor below rests on. Counts are a different matter and
-this note reports them anchored, as measured.
+\[
+I\in\mathbb F_2^{15800\times192}.
+\]
 
-## Nothing below eighteen
+A support vector `x` carries a target `f` exactly when `Ix=f`. Let `1` be the
+all-marked target and let `f_4` be `four`. Its flip partner is
 
-The anchored search sweeps the even sizes 2, 4, 6, 8, 10, 12, 14 and 16, asking
-for carriers of four and of its flip partner. Odd sizes need no search: both
-readings force an even total. The flip partner has no carrier at any even size
-swept. Four has none below sixteen and eleven at sixteen.
+\[
+f_{4\mathrm f}=f_4+\mathbf 1.
+\]
 
-Two things make that emptiness meaningful rather than blind. First, at sizes
-8 and 10 the search also asks for the all-marked reading, and it returns
-exactly the eight-piece carriers of it that pass through the anchor piece —
-each of them one of the 192 already identified above, and there are 8 of them
-because each piece lies in 8 — and nothing at ten. A search that finds what is
-known to be there is a search whose silence carries information. Second, at
-sixteen the two questions are asked in the same pass:
-the same 204 licensed cells, the same 2004 splits. Four comes back with
-eleven, the flip partner with none. The negative sits at the same size, over
-the same work, as the positive.
+On the supplied finite system:
 
-Every carrier the search recorded — 19 of them across all sizes — is checked
-back against the incidence directly rather than trusted from the bookkeeping
-of the search, and none fails.
+1. the minimum carrier weight of `one` is exactly 8;
+2. there are exactly 192 weight-8 carriers of `one`, and each support column
+   lies in exactly 8 of them;
+3. the eleven landed anchored weight-16 carriers of `four` meet those 192
+   carriers in at most two columns;
+4. their XOR sums at overlap two give 512 distinct weight-20 carriers of
+   `four-flip`;
+5. no carrier of `four-flip` exists at any even weight through 16;
+6. every carrier of `four-flip` has even weight.
 
-## Eighteen, measured with a stated gap
+Therefore the minimum carrier weight of `four-flip` is either 18 or 20:
 
-Eighteen is the size the bracket turns on, and it is reported here exactly as
-it measured.
+\[
+18\le d(f_{4\mathrm f})\le20,
+\qquad d(f_{4\mathrm f})\in2\mathbb Z.
+\]
 
-The flip partner forces an even total size, so eighteen is the only even size
-between the emptiness at sixteen and the carriers at twenty. The anchored
-search at eighteen meets all 285 anchored cells the flip partner licenses
-there, an independent recount of them agreeing with what the sweep met, and
-processes 4796 splits. It records no carrier.
+The weight-18 primary sweep is incomplete and is not used to prove the lower
+bound. It searches 4,770 of 4,796 scheduled splits, refuses 26 over the
+declared table guard, and finds no carrier. Weight 18 remains open.
 
-But 4770 of those splits were searched and 26 were refused. Each refusal is a
-join whose intermediate table would need more rows than the guard allows: the
-guard sits at 30 million rows, and the refused joins asked for between 31 and
-21766 million, the largest more than 700 times the guard. The refusals sit in
-11 of the 285 cells. That residue is 26 splits out of 4796, and it is not
-reachable by relaxing the guard — the largest refused join is far beyond what
-the machine can hold.
+## Why the all-marked minimum is exactly eight
 
-So the eighteen result is that a complete pass over every licensed cell, with
-26 of its 4796 splits refused, found nothing. That is evidence, carefully
-bounded, and it is not an emptiness certificate. The least size that can carry
-the flip partner of four is at least eighteen and at most twenty.
+Every support column occurs in 1,975 cutting rows. If `k` columns carry the
+all-marked target, every one of the 15,800 rows must be met a positive odd
+number of times, so
+
+\[
+1975k\ge15800,
+\]
+
+and `k≥8`. At `k=8` the two sides are equal. Consequently every cutting must
+meet the support exactly once. This is equivalent to saying that no cutting
+contains two selected columns.
+
+The primary and checker independently form the column-pair relation “no
+cutting contains both” and enumerate every eight-clique. Both obtain 192
+supports, all of which directly reproduce the all-marked target. Each column
+lies in eight of them. Across the `C(192,2)=18,336` unordered pairs, their
+intersection sizes have counts
+
+| intersection size | pair count |
+|---:|---:|
+| 0 | 15,072 |
+| 1 | 1,920 |
+| 2 | 960 |
+| 4 | 384 |
+
+No bijection between pieces and carriers is claimed; the equality of their
+two counts is accompanied by the measured eight-to-eight incidence
+regularity above.
+
+## The constructive ceiling at twenty
+
+If `x` is a weight-16 carrier of `four` and `y` is a weight-8 carrier of
+`one`, then
+
+\[
+I(x+y)=f_4+\mathbf 1=f_{4\mathrm f},
+\]
+
+and
+
+\[
+|x+y|=16+8-2|\operatorname{supp}(x)\cap\operatorname{supp}(y)|.
+\]
+
+The eleven Cycle-745 anchored carriers are rebound and directly rechecked in
+both Cycle-747 executables. Against the 192 all-marked carriers, their overlap
+counts are `1,216`, `384`, and `512` at overlaps 0, 1, and 2. The 512
+overlap-two pairs yield 512 distinct supports of weight 20, and every support
+directly reproduces `four-flip`. This is an existence theorem at weight 20,
+not a census of all weight-20 carriers.
+
+## Why the anchored searches decide the stated whole-system question
+
+The submitted note attributed transitivity to the 48 geometric symmetries.
+That was false: those symmetries fix each basic target but have four piece
+orbits of size 48. The repaired proof uses the actual verified generator set.
+
+Two additional order-two incidence automorphisms, `b0` and `b1`, are rebuilt
+and checked to fix every one of the eight basic targets. Together with the 48
+geometric target stabilizers they generate a transitive action on all 192
+support columns. Thus any nonempty carrier has a target-preserving image
+through column 144. Empty anchored searches are therefore global emptiness
+certificates at the searched weight. The checker separately binds Cycle 745's
+independent semantic verification of the same transitive group and exact
+weight-16 target search.
+
+## Exhaustive lower-size boundary
+
+Cycle 745's independent checker exhausts all 2,004 anchored weight-16 splits
+for `four-flip`, obtains zero, and binds the through-14 predecessor search.
+The repaired Cycle-747 primary also searches every even weight 2 through 16;
+its locally reconstructed result is
+
+| weight | `four` anchored count | `four-flip` anchored count |
+|---:|---:|---:|
+| 2 | 0 | 0 |
+| 4 | 0 | 0 |
+| 6 | 0 | 0 |
+| 8 | 0 | 0 |
+| 10 | 0 | 0 |
+| 12 | 0 | 0 |
+| 14 | 0 | 0 |
+| 16 | 11 | 0 |
+
+At weight 16 the two targets use the same 204 licensed anchored cells and
+the same exact 2,004-split inventory. The eleven positive `four` answers
+equal the Cycle-745 supports byte-for-byte. The Cycle-746 parity law excludes
+odd weights. Hence no `four-flip` carrier exists below 18.
+
+## Weight eighteen: explicit resource residual
+
+The weight-18 primary sweep visits every one of the 285 licensed anchored
+cells. Its split inventory has 4,796 entries. It searches 4,770 and refuses
+26 joins in 11 cells because their predicted intermediate tables exceed the
+30,000,000-row guard; the predicted sizes range from 31 million to 21,766
+million rows. No searched split returns a carrier.
+
+This is a bounded computational observation with a named residual. It is not
+an emptiness theorem, a solver timeout verdict, or evidence against an
+unsearched support. Because even parity leaves only 18 between the exact
+lower-size boundary and the weight-20 construction, the honest result is the
+two-value bracket `{18,20}`.
+
+## Proof contract and obligation graph
+
+**Exact target.** Determine a rigorous finite bracket for the minimum support
+weight carrying `four-flip`, while keeping any resource-limited weight-18
+observation outside the certified lower bound.
+
+The proof has five leaves:
+
+1. Reconstruct the 15,800-by-192 incidence and exact target identities —
+   discharged by the primary and the opposite-pivot checker.
+2. Prove and enumerate the weight-8 all-marked carriers — discharged by the
+   incidence-count lower bound and exhaustive noncooccurrence clique census.
+3. Prove a weight-20 `four-flip` construction — discharged by direct GF(2)
+   addition, the exact overlap census, and 512 direct incidence checks.
+4. Exclude all weights through 16 — discharged by the current Cycle-745
+   primary/independent receipts, the locally rebuilt matched search, and the
+   verified target-fixing transitive action.
+5. Exclude odd weights — discharged by the current Cycle-746
+   primary/independent parity receipts.
+
+There is no unresolved leaf in the bracket proof. The exact weight-18 value is
+a separate open continuation, not a hidden obligation in either inequality.
+
+## No-Go Discipline: N1–N8
+
+The package asserts exact finite nonexistence through weight 16 and names a
+resource wall at weight 18, so the complete stress record is required.
+
+### N1 — alternative routes
+
+1. **ATTEMPTED — direct primary search.** Exhaust every licensed anchored
+   split at each even weight through 16; `four-flip` remains empty while
+   `four` returns the eleven known controls at 16.
+2. **ATTEMPTED — independent predecessor search.** Bind Cycle 745's
+   opposite-pivot syndrome-DP/MITM checker, which independently exhausts the
+   weight-16 inventory and verifies the target-fixing group.
+3. **ATTEMPTED — unanchored escape.** Rebuild all target-fixing generators.
+   The 48 geometric symmetries alone fail transitivity, while adjoining the
+   two verified involutions gives one 192-column orbit.
+4. **ATTEMPTED — constructive attack.** Enumerate every all-marked weight-8
+   carrier and XOR it with every landed anchored `four` carrier. This finds
+   512 weight-20 witnesses but no weight-18 witness because the maximum
+   overlap is two.
+5. **ATTEMPTED — independent all-marked reconstruction.** Choose the greatest
+   uncovered exact-cover pivot, rebuild the relation, and enumerate all
+   eight-cliques without primary imports; the same 192 carriers and 512
+   weight-20 sums result.
+6. **ATTEMPTED — weight-18 bounded search.** Search all cells and all joins
+   below the guard; 26 joins remain explicitly unexecuted, so this route is
+   recorded as incomplete and supplies no negative conclusion.
+
+### N2 — wall independence
+
+The exact lower bound has two independent ingredients: finite emptiness
+through weight 16 and even total parity. The constructive upper bound uses
+neither. The weight-18 table guard is not used in the lower bound at all; it
+governs only the separately labelled incomplete continuation. Target identity,
+anchor completeness, and split execution are distinct obligations rather than
+multiple names for one wall.
+
+### N3 — hidden-wall scan
+
+The review found two hidden conditions in the submission: a 200-row stride
+processed only 100 rows, and the claimed 48-symmetry transitivity silently
+used `b0` and `b1`. The repair covers all 15,800 first endpoints, preserves
+the skipped-half loop as a hostile rejector, and names/tests the two extra
+target-fixing generators. “Guard,” “anchor,” and “supplied” now identify
+explicit finite inputs rather than standing in for completeness.
+
+### N4 — residual matching
+
+| Cited source | Residual established there | Residual used here | Match |
+|---|---|---|---|
+| [Cycle 745 census](PHYSICAL_CELL_CUTTING_SIXTEEN_CENSUS_CYCLE745_NOTE_2026-08-05.md) | exact target identities, eleven anchored `four` carriers, and no `four-flip` carrier through weight 16 | lower-size boundary and constructive inputs | yes |
+| [Cycle 746 parity](PHYSICAL_CELL_CUTTING_CARRIER_PARITY_LAW_CYCLE746_NOTE_2026-08-08.md) | every carrier of the six nonconstant targets has even total weight | exclusion of odd weights | yes |
+
+The weight-18 residual is exactly the 26 unexecuted joins. It is not matched to
+or disguised as either predecessor result.
+
+### N5 — resolution execution
+
+- `per_element`: checked for all 192 support columns.
+- `per_site`: checked and not executed; no framework site is identified.
+- `per_mode`: checked and not executed; no field or momentum modes occur.
+- `per_block`: checked for all 15,800 rows, every exact split through weight
+  16, and the complete declared weight-18 split inventory.
+- `lattice_wide`: checked and not executed; no multicell or continuum claim.
+
+Both executables print these five resolution lines in their live evidence.
+
+### N6 — partial-closure path scan
+
+Weight 18 can be settled by an exact finite certificate, a different exact
+join organization, or a proof-level replacement. None requires a new axiom,
+primitive, physical interpretation, or convention. Other targets, incidence
+tables, noncorner pieces, or multicell systems are different supplied
+problems. The primitive registry adds no content to this finite GF(2)
+question.
+
+### N7 — steelman
+
+The strongest objection is that a hidden carrier sits outside the anchor or
+inside one of the refused weight-18 joins. The first possibility is excluded
+by the semantically verified target-fixing transitive action and independent
+Cycle-745 search. The second is not excluded and is therefore preserved as
+the exact open candidate. A second objection is that the all-marked count is
+only a heuristic clique search; the multiplicity equality proves the clique
+characterization, and the checker reconstructs and enumerates it independently.
+
+### N8 — cross-cycle echo
+
+Cycle 745 teaches that anchored emptiness is global only after exact target
+identity, complete split inventory, and transitive target-fixing action are
+all verified. Cycle 746 teaches that the earlier half-width pair scan must be
+rejected and that inconsistent targets must be separated before parity use.
+This package imports those exact lessons and receipts; it does not echo their
+finite claims into another system or promote weight 18 to a theorem.
+
+## Review record (review-loop, 2026-08-14)
+
+The submitted package was not landable as written. It reused the predecessor's
+7,900-of-15,800 pair-inventory bug, attributed transitivity to a 48-element
+geometric subgroup that actually has four piece orbits, carried stale
+backticked dependencies, lacked a valid claim/status packet and N1–N8 record,
+had no independent checker, and exited zero even if a gate failed.
+
+The repair covers the full pair inventory, names the actual transitive
+generator set, binds the current Cycle-745/746 primary and independent
+receipts, adds a non-importing opposite-pivot checker, preserves hostile
+mutations for each load-bearing family, writes fail-first receipts, and exits
+nonzero on any failed gate. The scientific result is narrowed to the exact
+bracket and construction; the weight-18 search remains explicitly incomplete.
+
+Hard landing conditions are: (a) the claim-scoped packet-helper mapping exists
+in both supported registries; (b) fresh primary and independent receipts and
+canonical runner caches bind the final sources and declared inputs; and (c)
+the citation-graph manifest is generated on the actual landing tree.
+Independent audit remains required; this review record grants no audit verdict
+or effective grade.
 
 ## Boundary and honest read
 
-- Every statement here is about the finite cutting system. No physical reading
-  of the readings, the carriers or the bracket is claimed.
-- The bracket is {18, 20}, not a single value. The eighteen sweep found
-  nothing but did not search 26 of its 4796 splits, so this note does not
-  assert that eighteen is empty.
-- The searches at every size are anchored, and this note checks in place that
-  the symmetries fixing a reading carry any piece to any other, so an empty
-  anchored sweep at a size is empty for the whole system at that size. The
-  bracket is a whole-system statement, not an anchored-only one.
-- The eight-piece characterization of the all-marked reading's carriers is
-  complete and is a theorem, not a search result: the counting floor and the
-  converse both hold outright, and the enumeration of the 192 covers every set
-  of eight pieces that the relation admits, with none left out.
-- The ceiling of twenty is exact for sums of one of the eleven anchored
-  sixteen-piece carriers of four with an eight-piece carrier of the all-marked
-  reading, and the overlap cap of two is measured on those eleven. It does not
-  claim that every twenty-piece carrier of the flip partner arises that way.
-- The reachable subgroup from four and the all-marked reading has four
-  elements, so nothing here bounds the least size for six, for seven, or for
-  either of their flip partners.
-- Counting arguments were tried against eighteen and did not settle it. A
-  carrier of the flip partner can meet an eight-piece carrier of the all-marked
-  reading in at most four pieces, but the resulting total over the 192 of them
-  is consistent with a carrier of eighteen pieces existing, so that bound does
-  not decide the question; and the 192 sets do not form a balanced pair design,
-  so the second-moment step is unavailable. Only the search speaks to eighteen,
-  and its residue is stated above.
-- Earlier-cycle artifacts are named in backticks because their packages are in
-  flight, and nothing here links to them:
-  `PHYSICAL_CELL_CUTTING_SIXTEEN_ATTAINED_CYCLE742_NOTE_2026-08-05.md`,
-  `PHYSICAL_CELL_CUTTING_HIDDEN_THREE_BIT_GEOMETRY_CYCLE743_NOTE_2026-08-05.md`,
-  `PHYSICAL_CELL_CUTTING_FULL_SYMMETRY_CERTIFIED_CYCLE744_NOTE_2026-08-05.md`,
-  `PHYSICAL_CELL_CUTTING_SIXTEEN_CENSUS_CYCLE745_NOTE_2026-08-05.md`,
-  `PHYSICAL_CELL_CUTTING_CARRIER_PARITY_LAW_CYCLE746_NOTE_2026-08-08.md`.
+- Exact: one supplied 15,800-by-192 incidence table, one declared column order,
+  and the exact `one`, `four`, and `four-flip` targets.
+- Exact: all weight-8 `one` carriers, the eleven dependency-bound anchored
+  weight-16 `four` carriers, 512 constructed weight-20 `four-flip` carriers,
+  and no `four-flip` carrier below weight 18.
+- Open: whether weight 18 is attained. The 26 refused joins are named evidence
+  residue, not an emptiness certificate.
+- Not claimed: a complete weight-20 census, minima for `six`, `seven`, or their
+  flip partners, physical charge, arbitrary incidence systems, noncorner or
+  nonsimplicial pieces, multicell compatibility, framework Admissibility,
+  dynamics, boundaries, thermodynamic limits, or continuum physics.
+- Audit remains unset; an independent audit is still required.

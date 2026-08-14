@@ -1,0 +1,78 @@
+{
+  "audit_status_authority": "independent audit lane only",
+  "checker_sha256": "0bbaed8f549c937cfe61166752e6d8ee233896cf337db24f5c5d27e81057a303",
+  "claim_type": "bounded_theorem",
+  "dependency_boundary": {
+    "cycle745_and_independent_bound": true,
+    "cycle746_and_independent_bound": true,
+    "weight_eighteen_resolved": false
+  },
+  "gates": {
+    "fail": 0,
+    "named": {
+      "hostile.all_marked": "PASS",
+      "hostile.eighteen": "PASS",
+      "hostile.lower_bound": "PASS",
+      "hostile.overlap": "PASS",
+      "hostile.primary_status": "PASS",
+      "independent.all_marked": "PASS",
+      "independent.lower_bound": "PASS",
+      "independent.population": "PASS",
+      "independent.primary_contract": "PASS",
+      "independent.targets": "PASS",
+      "independent.weight_twenty": "PASS"
+    },
+    "pass": 11
+  },
+  "independent_reconstruction": {
+    "all_marked_pair_intersection_counts": {
+      "0": 15072,
+      "1": 1920,
+      "2": 960,
+      "4": 384
+    },
+    "all_marked_through_each_piece": 8,
+    "all_marked_weight_eight_count": 192,
+    "anchored_four_count": 11,
+    "cuttings": 15800,
+    "cuttings_per_piece": 1975,
+    "exact_cover_pivot": "greatest uncovered sample",
+    "four_all_marked_overlap_counts": {
+      "0": 1216,
+      "1": 384,
+      "2": 512
+    },
+    "pieces_per_cutting": 24,
+    "support_columns": 192,
+    "weight_twenty_flip_carrier_count": 512
+  },
+  "input_sha256": {
+    "docs/PHYSICAL_CELL_CUTTING_CARRIER_PARITY_LAW_CYCLE746_NOTE_2026-08-08.md": "6905e69b9785f4ab7ad90803d7a6ae6cb678b467d136feee6cdeac8e3d7049b0",
+    "docs/PHYSICAL_CELL_CUTTING_FLIP_PARTNER_CARRIER_BRACKET_CYCLE747_NOTE_2026-08-08.md": "04758c85dacbe82867e2be9350b5c419c46f0e83e93cb399deda8332a4ea6c31",
+    "docs/PHYSICAL_CELL_CUTTING_SIXTEEN_CENSUS_CYCLE745_NOTE_2026-08-05.md": "03b00756f5db8c12e45644ba955e460a80b8c122fcc59005bbf60efbf30fbaf3",
+    "outputs/physical_cell_cutting_carrier_parity_law_cycle746_2026_08_08_receipt_2026-08-08.json": "07a86ef8f54037b1af8f08f48b0fb34fa77a86aad7d36c748f25a6d5eafe1a19",
+    "outputs/physical_cell_cutting_carrier_parity_law_cycle746_independent_check_2026_08_08_receipt_2026-08-08.json": "df00510850f5da875e268cfcd421d3af2d3f4e89e176dd70c26ef0c21b6a1565",
+    "outputs/physical_cell_cutting_flip_partner_carrier_bracket_cycle747_2026_08_08_receipt_2026-08-08.json": "5fe24acab251c6a39004ce5b30c166942766544c15d988e4216847f22ec9a784",
+    "outputs/physical_cell_cutting_sixteen_census_cycle745_2026_08_05_receipt_2026-08-05.json": "7e373c4c3b7f0c0ce9f2e68b5adda144371bbf8ac8592814f5ab134774fcbabc",
+    "outputs/physical_cell_cutting_sixteen_census_cycle745_independent_check_2026_08_05_receipt_2026-08-05.json": "b1f18102a2e0ca37dc41dcf54d1d70c49b0a056e2ebff258f2a047a533be8dff",
+    "requirements-release.txt": "e153eea331ce1b76cd99f09e14a777df2bc9efbaa06a201528ddfdc0f3f01bee",
+    "requirements.txt": "3fda988835a13d9a7236b0b508aa9bcd2f9b3f3b9a47b4875a15f86dbc77a3ad",
+    "scripts/physical_cell_cutting_carrier_parity_law_cycle746_2026_08_08.py": "8e7ade66a03b320e7c9ab54f154ac6975a407005362e686b4ebdafa76fc099af",
+    "scripts/physical_cell_cutting_carrier_parity_law_cycle746_independent_check_2026_08_08.py": "8bab69b1c6ce9471e473492936d8f2c7b93dd7fdc2940189cfc3985bc27611fd",
+    "scripts/physical_cell_cutting_flip_partner_carrier_bracket_cycle747_2026_08_08.py": "15c11cf7d21e0a7beb067cc4343b896b36462572d446d84d305637354246d201",
+    "scripts/physical_cell_cutting_sixteen_census_cycle745_2026_08_05.py": "c5bd4c42b97db472ba869beba47c42940c3f3ae1f9d0f883b59a49b3db456883",
+    "scripts/physical_cell_cutting_sixteen_census_cycle745_independent_check_2026_08_05.py": "7a5dad6f4f59c6498d50a0dd4a35e83a20dbd34e0c3eb89b2d743984d8b91e4f"
+  },
+  "no_go_discipline": {
+    "n5_execution_certificate": [
+      "per_element checked",
+      "per_site checked and not executed",
+      "per_mode checked and not executed",
+      "per_block checked",
+      "lattice_wide checked and not executed"
+    ],
+    "status": "PASS"
+  },
+  "schema": "physical-cell-cutting-flip-partner-carrier-bracket-cycle747-independent-v1",
+  "status": "pass"
+}

@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/physical_cell_cutting_trace_law_completion_cycle784_2026_08_14.py
+runner_sha256: 4fd6e2407adc34d20f4884ad041eab7d6abafa6448dc251231c45ec829859b26
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 16.60
+status: ok
+----- stdout -----
+PASS K1 object: 2672 candidates, floor 6, 400 kept, 625 points, 15800 cuttings by 24, 192 pieces, 192 chambers, incidence 8 and 8, bad 0
+namings: 384 walks from the 16 corners, 2 per piece, and the minimal naming starts at the corner below its opposite
+PASS K2 labels: naming sign times corner weight sign; label sum census -8:120 -4:2832 0:9896 4:2832 8:120, total 15800
+PASS K3 positions from the incidence: 12 distinct, 8 axis orders each, 16 pieces each, every one of the 24 axis orders in exactly 4
+PASS K4 family: 96 pieces use the last axis within the first 2 steps, halves 48 and 48, every position meets H in 8 and H+ in 4
+PASS K5 constant trace: the family meets each of the 15800 cuttings in exactly 12 pieces, failures 0
+PASS K6 affine law: the label sum equals 4 times (p - 6) with p the size of the trace in H+, failures 0 of 15800
+PASS K7 corollaries: label-positive count 2 p, p from 4 to 8, size 8 exactly when p is 4 or 8, failures 0 of 15800
+PASS K8 p census over the cuttings: 4:120 5:2832 6:9896 7:2832 8:120, total 15800, and the affine law carries it to the label sum census
+PASS K9 mirror: the first-axis reflection is a bijection of the 192 pieces, keeps H, sends the 48 of H+ onto the 48 of H-, negations 0
+mirror layer: 24 of the 192 sign-minus elements keep H and swap its halves; trace failures 0 and 0 of 6152, p goes to 12 - p
+PASS K10 trace layer: 6152 distinct traces, completion counts 1:2688 2:1536 3:816 4:384 5:96 7:168 8:96 9:48 10:320, none at 6, weighted 15800
+PASS K11 per-p trace counts 4:120 5:1488 6:2936 7:1488 8:120; p 4 and p 8 pure at 1; p 5 and p 7 equal entry by entry; p 6 takes 1 2 3 4 7 10
+layers p 5 and p 7: 1:816 2:480 3:72 5:48 8:48 9:24, each of 1488 traces over 2832 cuttings
+layer p 6: 1:816 2:576 3:672 4:384 7:168 10:320, 2936 traces over 9896 cuttings
+PASS K12 extremes: all 240 cuttings of label sum size 8 are the unique completion of their trace, and those traces are the p 4 and p 8 layers
+PASS K13 refutation: the completion count is not constant on the p 5, p 6, p 7 classes, taking 6, 6 and 6 values there
+witness one: a p 6 trace of completion count 1, family members 0 1 11 26 27 30 33 35 42 43 45 48
+witness two: a p 6 trace of completion count 10, family members 2 3 6 7 10 11 12 13 14 15 16 17
+PASS K14 rejector: swapping the least family piece for the least outsider breaks the constant trace on 3390 cuttings and the affine law on 1975
+census: label sum over the 15800 cuttings -8:120 -4:2832 0:9896 4:2832 8:120
+TOTAL: PASS=14 FAIL=0
+resource: under 60 s of the 900 s budget, under 250 MB of the 2500 MB budget, 2512 characters
+
+----- stderr -----
+

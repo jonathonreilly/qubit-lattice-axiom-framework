@@ -1,31 +1,52 @@
 ===== runner cache v1 =====
 runner: scripts/two_cube_l1_tick4_last_site_2026_08_14.py
-runner_sha256: 31e41ceb1638abb010e96176535e57fe90099ae094437bdbc1d6bbc994a80323
-input_fingerprint_sha256: eccb2f5e3d1779dc9fc5f3e8ac3e065b9a574bf2f7ff9adb67f0a0db87742de0
+runner_sha256: dc6a5f1b93758ebfa2152d7d36d3adfbba993f49ad333c2756923ce9d07842a7
+input_fingerprint_sha256: 95606c7f49744299106bb35c1db56adeebad8fcb51c32fdb373b9448f0439f13
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.07
 status: ok
 ----- stdout -----
-PASS: thm0 Lattice quote present
-PASS: hygiene avoids 'G_N'
-PASS: hygiene avoids '1/r'
-PASS: hygiene avoids '1/r^2'
-PASS: hygiene avoids 'Lattice-named'
-PASS: hygiene avoids 'not a TOE'
-PASS: hygiene avoids 'exhausted'
-PASS: hygiene avoids 'only route'
-PASS: hygiene avoids 'we adopt'
-PASS: hygiene avoids 'Codex'
-PASS: hygiene avoids 'L_phys'
-PASS: thm1 (2,1,1) unread at t=3
-PASS: thm1 (2,1,1) locked at t=4
-PASS: thm2 tick4 forms only that site
-PASS: thm2 k=3
+L1 tick 4 forms the last site
+AUDIT_INPUT_PATHS:
+  docs/TWO_CUBE_L1_TICK4_LAST_SITE_BOUNDED_THEOREM_NOTE_2026-08-14.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+scope: supplied two-cube L1 patch; last-site tick 4 only
+PASS: audit-input-paths-exist
+PASS: audit-input-paths-unique-relative
+PASS: audit-timeout-declared
+PASS: lattice-quote-present
+PASS: record-form-quote-present
+PASS: hygiene-avoids-'G_N'
+PASS: hygiene-avoids-'1/r'
+PASS: hygiene-avoids-'1/r^2'
+PASS: hygiene-avoids-'Lattice-named'
+PASS: hygiene-avoids-'not a TOE'
+PASS: hygiene-avoids-'exhausted'
+PASS: hygiene-avoids-'only route'
+PASS: hygiene-avoids-'we adopt'
+PASS: hygiene-avoids-'Codex'
+PASS: hygiene-avoids-'L_phys'
+PASS: note-has-no-runner-cache-path
+PASS: note-has-no-citation-manifest
+PASS: patch-has-twelve-sites
+PASS: shared-face-is-x-equals-one
+PASS: unread-at-t0
+PASS: unread-at-t1
+PASS: unread-at-t2
+PASS: unread-at-t3
+PASS: locked-at-t4
+PASS: tick4-forms-only-last-site
+PASS: k-equals-3
+PASS: 3n-equals-minus-ones
+per_element: last site (2,1,1)
+per_site: unread t=0,1,2,3 locked t=4
 per_mode: last site
 per_block: tick 4
 lattice_wide: checked and not executed
-TOTAL: PASS=15 FAIL=0
+TOTAL: PASS=27 FAIL=0
 
 ----- stderr -----
 

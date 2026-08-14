@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/two_cube_l1_tree_gauge_two_tick_2026_08_14.py
+runner_sha256: 8fb353e335db875fd60ce3330031c7b4920496a24f7f4aaef223913c9c4af6e6
+input_fingerprint_sha256: efccd8336a2f221ca2a329d856118dc6abc2398416de5213ea22b2d3dcf28d12
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+external_scientific_inputs: none; no observational, fitted, literature, scale, or normalization value is used
+explicit_bounded_inputs: the two-site two-face incidence, tree-gauge decoder, and displayed L1 ticks (4,1) then (7,4)
+framework_context: Lattice names Z^3 sites only; the incidence, decoder, and ticks are not attributed to the axioms
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency
+measure_boundary: exact integer incidence algebra only
+negative_scope: only a third-face or -x-ray reading is refused; no broader gravity identification no-go is asserted
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the declared note-plus-axiom tuple
+PASS: source-lattice the axiom memo names cubic-lattice sites and does not name this decoder
+PASS: note-incidence the note displays the two-site incidence
+PASS: note-tree-gauge the note displays the tree-gauge assignment
+PASS: thm1-identity tree gauge solves g=ρ for every sampled integer pair
+PASS: thm2-tick1 after tick 1, φ=(4,5) and g=ρ=(4,1)
+PASS: thm2-tick2 after tick 2, φ=(7,11) and g=ρ=(7,4)
+PASS: thm2-composition the same decoder is reapplied; frozen tick-1 flux fails at tick 2
+PASS: thm3-invertible the 2x2 incidence has determinant 1 and inverse equal to the tree gauge
+PASS: n1-wrong-sign dropping the minus on F* fails tick 1
+PASS: n1-swapped-gauge swapping the tree assignment fails tick 1
+PASS: two-face-domain the decoder domain is exactly the two faces F* and F_B
+PASS: not-two-cube-clone the tested object names no third face and no -x ray
+PASS: forbidden-strings note and runner omit the forbidden gravity and slogan strings
+PASS: machine-status-contract the source uses the required bounded-support, trace, and propose-ratify status fields
+PASS: note-negative-scope the note separates the two-tick identity from physical-identification non-claims
+PASS: canonical-nonmutation the axiom memo does not contain the tree incidence or the displayed ticks
+PASS: no-go-gate the exact local boundary carries a complete source-visible N1-N8 disposition
+PASS: no-cache-no-manifest this cycle declares that it writes no runner cache and no citation manifest
+per_element: entries of M, M^{-1}, and the two decoded flux pairs are evaluated exactly
+per_site: the supplied object is the two displayed sites A and B, not a lattice-wide source law
+per_mode: the two faces F* and F_B are resolved; no third face or -x ray is introduced
+per_block: one two-site tree after two L1 ticks is tested; no physical identification is inferred
+lattice_wide: checked and not executed — the theorem supplies no lattice-wide decoder
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/l0_all_56_spectral_measure_2026_08_14.py
+runner_sha256: a3898a183f1b0e1d567b84bdae70612fd78291658bdb658b5855f6ac8604dbd9
+input_fingerprint_sha256: b56074cab558d800072f36d70ca8765eb91b9f7a670b4ace3523eec5a2380278
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+external_scientific_inputs: none
+package_local_integrity_reads: runner, note, axiom memo
+measure_boundary: exact Q(√k) PVM on all 56 nonzero cells
+negative_scope: comparator measure, not Born
+PASS: thm1-census 64 cells, 8 zero, 24+24+8 nonzero
+PASS: thm2-comp P++P-=I and P+P-=0 on all 56
+PASS: thm3-tr traces sum to 1 on all 56
+PASS: thm3-sample sample traces are (3±√k)/6
+PASS: mutation-count-fails predicate nonzero count is not 56 must fail
+PASS: mutation-prod-fails predicate some cell has P+P-≠0 must fail
+PASS: quoted note quotes Qubit and NN distribution
+PASS: boundary not Born, not TOE, no forbidden phrases
+PASS: memo-silent axioms do not name the 56-cell measure
+PASS: gates identity gates present
+per_element: checked exactly — 56 complementary PVMs
+per_site: checked exactly — 6-NN occupancy cells
+per_mode: checked exactly — k=1,2,3 census
+per_block: checked exactly — all cells, not two directions
+lattice_wide: checked and not executed — not Born
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

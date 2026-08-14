@@ -512,3 +512,25 @@ order-`c^2` Ward residual.  The null
 collinearity result does not cover massive/rest matter, non-null carriers,
 boundaries, or nonlinear gravitational self-stress.  No axiom is amended and
 no tracked obligation or TOE percentage moves.
+
+## Block 82 Local energy / lapse / translation / joint-action partial narrowing
+
+| Scoped negative considered | Exact evidence | Failing N1--N8 items | Demoted disposition | Live/reopen routes |
+|---|---|---|---|---|
+| the Block79 shadow Hamiltonian has no bounded-local energy density or proper-cubic-covariant continuity triplet; separately, Block81's matched `q=dW` tensor is already the declared centered-nearest-neighbor field charge on the minimum-norm source census, or a third independent `+W` field rail can be added without surplus | raw staggered potential has exactly 19 shifts, coordinate radius one, and Manhattan radius two; seeded `L=7` local/Fourier sum error `2.27e-13` and point/Green/base-continuity residuals `1.07e-14/5.68e-14/9.77e-15`; the abstract all-shortest routing rule covaries in 432 cases but the full base triplet has only `C3` stabilizer and fails 21 of 24 frames; an eight-`H R`-coset Reynolds average of `(e0,e1,q0,t)` agrees with the 24-frame average within `1.07e-14`, has continuity residual `8.88e-15`, preserves the global sum below `1.2e-13`, and passes all 24 frames below `3e-14`; all nonzero `L=3,...,12` modes satisfy `CGC†`, `PGC†`, `PS`, and `CG+DM/2` below `7e-14`; sourced lapse variation direct/analytic/source forms agree at `0.8270556216`; zero of 13,056 minimum-norm source representatives matches the declared centered charge to `dW`, with a clean `W=0.75`, declared field increment `q=0`, `dW=(-0.75,0,0)` fixture; exact two-stage type-I prescribed-source action closes below `3e-15`; the worldline Hilbert response closes below `3e-16`, but dynamic mixed-Hessian integrability is not tested; adding independent `F` leaves a `+W` surplus | `N1` fails for every broad negative because dynamic common-action, gauge-fixed local, quasilocal, interaction/improvement, nonlinear/global, positive compact-source, and live-carrier routes remain untested; `N7` supplies a concrete one-action worldline steelman with derived three-source variations, mixed Hessians, recoil, total Ward identity, and Record locking | `partial-narrowing`; ship the local energy column, covariant Reynolds continuity triplet, sourced-lapse identity, declared centered-charge mismatch, no-double-counting result, prescribed-source variational bridge, and worldline-response comparator only | one time-boxed dynamic matter/worldline action whose lapse/shift/metric derivatives yield `rho,j,tau`, whose mixed Hessians and matter Euler--Lagrange equations supply recoil, and whose localized symmetry gives the total Ward tensor; separately preserve quasilocal and interaction-stress routes, live Record/carrier state resolution, nonlinear completion, owner decision, and audit retention |
+
+The broad verdict remains `FAIL — partial-narrowing`.  The energy-column
+construction does not provide a full symmetric physical stress tensor.  The
+sourced lapse result identifies the missing cancellation with matter and
+interaction variation; it does not invalidate the field update.  The
+translation census rejects only the declared centered-nearest-neighbor
+field-charge identification on one minimum-norm representative per source.
+The Reynolds average changes the pointwise source density while preserving
+global work; its current is a unit-cell bond flux, not a physical face/subsite
+flux.  Full shortest-path averaging is a compression-friendly seed choice,
+not necessary physical data.  The exact external-source action is positive
+but contains prescribed source data rather than dynamic matter, and
+mixed-Hessian integrability is not tested.  No current named route supplies
+every joint derivative and reciprocal recoil, but that census is not a
+universal absence theorem.
+No axiom is amended and no tracked obligation or TOE percentage moves.

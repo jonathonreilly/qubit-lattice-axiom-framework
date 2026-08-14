@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_local_shadow_energy_flux_lapse_translation_joint_action_boundary_2026_08_14.py
+runner_sha256: a1e0f898aa3d50da5fc22fe5ca0f006518237c2ba63562e58a809e5b1ef27dbf
+input_fingerprint_sha256: 42d926d6c43ee5045d8d5977a9317d78c82441421b59f0903a98a8ba315645e9
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 14.79
+status: ok
+----- stdout -----
+[PASS] A-authority-parent-and-runtime-closure: current axioms, Block81, comparators, and the loaded helper closure are content-bound
+       scripts declared/loaded=52/52; frozen mismatches=0
+[PASS] B-raw-staggered-local-shadow-energy: the Block79 shadow Hamiltonian is a nineteen-shift bounded-local energy column
+       support/radii=19/1/2; local/Fourier error=2.27e-13
+[PASS] C-pointwise-energy-flux-and-cubic-path-orbit: a finite Reynolds average makes the exact local continuity triplet proper-cubic covariant
+       continuity/base-bad/averaged-bad=8.88e-15/21/0; cosets/compression=8/1.07e-14
+[PASS] D-sourced-lapse-and-shift-discriminator: field-only shadow energy is shift invariant and vacuum-lapse invariant but changes on a ...
+       operator CGC/PGC/PS/CG+DM=6.4e-14/3.6e-14/1.2e-14/1.8e-15; lapse=0.827056; work shift=-0.625
+[PASS] E-declared-centered-field-charge-versus-matched-recoil: the declared centered field charge disagrees with the Block81 matched recoil on the mini...
+       modes/matches=13056/0; residual=0.003139..1.000000; fixture W=0.75
+[PASS] F-two-stage-type-I-external-source-action: one discrete type-I action exactly reproduces both Block78 forced substeps and constraints
+       D2/Legendre/glue=7.71e-16/4.34e-16/7.71e-16; schedule=2.81e-15
+[PASS] G-prescribed-source-gradients-and-dynamic-target: the comparator fixes source-gradient signs while dynamic integrability and recoil remain...
+       source-gradient/metric-derivative/Hilbert-stress=0.00e+00/1.11e-16/2.22e-16; directions=6
+[PASS] H-no-independent-F-energy-double-counting: Block81 F may encode the field current but cannot add a third independent positive energ...
+       W/two-sector residual/three-sector surplus=0.75/0.0e+00/0.75
+[PASS] I-named-current-action-route-census: five named repository routes each leave at least one joint-action ingredient open
+       routes=5; external/supplied/translation/coframe/Regge=True/True/True/True/True
+[PASS] J-no-go-axiom-and-TOE-scope: the energy-column closure and two narrow kills do not imply gravity failure, axiom adopt...
+       energy/stress/narrow/N1-N8/axiom/TOE=True/True/True/True/True/True
+AXIOM_AUTHORITY: origin/main=621bc7521a1a314df700a2d8d09988beee1c4ad7 minimal-axiom blob=bc23300becfe4e4db57153c0e94cfcdf2338da71; Block81 parent=5d2bc91220dfb1249fcc18da9f1f6048c430694f
+per_element: checked — the local shadow density, source gradients, lapse identity, centered field generator, and worldline metric response are derived rather than fitted
+per_site: checked — the base 19-shift density and unit-cell bond flux satisfy continuity; the eight-coset Reynolds triplet is bounded-local and all-24-frame covariant
+per_mode: checked — 13,056 minimum-norm source representatives reject identification of the declared centered field-charge increment with dW
+per_block: checked and not executed — the external-source action closes, but no dynamic L_m, mixed-Hessian integrability test, matter recoil, or localized total Ward identity is supplied
+lattice_wide: checked and not executed — no common dynamic action, total physical stress, nonlinear/global positive compact source, physical readout, axiom adoption, or retained audit chain
+RESULT: an exact bounded-local energy column, covariant Reynolds continuity triplet, and external-source variational bridge survive; the declared centered field charge is not Block81's matched recoil
+NEXT: construct the smallest dynamic matter/worldline action whose metric derivatives yield rho,j,tau and whose matter equation supplies recoil, then derive the total Ward tensor
+SCOPE: positive energy-column partial closure plus narrow sourced-lapse and matched-recoil discrimination; no axiom update, obligation retirement, or TOE percentage movement
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

@@ -1,6 +1,6 @@
 {
- "edge_count": 15853,
- "node_count": 5522,
+ "edge_count": 15860,
+ "node_count": 5523,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -465,6 +465,10 @@
   "admissibility_local_geometry_record_bond_transfer_reflection_response_connection_boundary_bounded_theorem_note_2026-08-11": {
    "deps_hash": "aeab719a894c",
    "out_degree": 4
+  },
+  "admissibility_local_shadow_energy_flux_lapse_translation_joint_action_boundary_bounded_theorem_note_2026-08-14": {
+   "deps_hash": "3091ee2393c1",
+   "out_degree": 7
   },
   "admissibility_m2_effect_label_record_carrier_atomic_born_law_factorization_bounded_theorem_note_2026-08-10": {
    "deps_hash": "c12edc090f3d",

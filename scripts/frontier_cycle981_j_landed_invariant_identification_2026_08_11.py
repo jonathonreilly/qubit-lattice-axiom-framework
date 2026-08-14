@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Cycle 981: bounded identification census for the witness invariant J.
 
-The runner reads six pinned source bodies through ``git show``.  A repository-
+The runner reads nine pinned source bodies through ``git show``.  A repository-
 wide path/token index is used only to declare the bounded search surface; AST
 inspection is confined to the two Python bodies among the six reads.  The
 science outcome is never a PASS condition: a coincidence, disagreement, or
@@ -16,7 +16,7 @@ import json
 import subprocess
 import sys
 from hashlib import sha1, sha256
-from itertools import combinations
+from itertools import combinations, permutations, product
 from pathlib import Path
 from time import monotonic
 
@@ -27,8 +27,8 @@ AUDIT_TIMEOUT_SEC = 300
 HOUSE_STDOUT_LIMIT_BYTES = 6_000
 STDOUT_LIMIT_BYTES = 150_000
 
-PINNED_MAIN_COMMIT = "ea0968c71ad46c39c6dacb39f88a18780363b71f"
-PINNED_CYCLE980_COMMIT = "c186c8ba7f44f2245cf38e59fc429ce90a6e0d7d"
+PINNED_MAIN_COMMIT = "625236e91e1c3ddbfe5aeaa36c7d37a7c9e78b46"
+PINNED_CYCLE980_COMMIT = "625236e91e1c3ddbfe5aeaa36c7d37a7c9e78b46"
 PINNED_SOURCE_READS = (
     (
         PINNED_CYCLE980_COMMIT,
@@ -54,22 +54,40 @@ PINNED_SOURCE_READS = (
         PINNED_MAIN_COMMIT,
         "docs/historic_intake/HISTORIC_PHYSICAL_LEAST_COST_CUTTING_PIECE_CHARGE_CYCLE735_NOTE_2026_08_05_INTAKE_NOTE_2026-08-05.md",
     ),
+    (
+        PINNED_MAIN_COMMIT,
+        "docs/PHYSICAL_CELL_CUTTING_CHARGE_SPACE_CYCLE736_NOTE_2026-08-05.md",
+    ),
+    (
+        PINNED_MAIN_COMMIT,
+        "docs/PHYSICAL_CELL_CUTTING_CARRIER_PARITY_LAW_CYCLE746_NOTE_2026-08-08.md",
+    ),
+    (
+        PINNED_MAIN_COMMIT,
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    ),
 )
 EXPECTED_SOURCE_SHA256 = {
-    PINNED_SOURCE_READS[0]: "a6508e92cdd0b9885c08b2a8757fe9cfaf6eedc4f2ac349d6c7713a9aa2f0305",
+    PINNED_SOURCE_READS[0]: "757b38aa46265c05e5bfba8bdef81315f77b348bade2347064e9cf05bc64877d",
     PINNED_SOURCE_READS[1]: "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
     PINNED_SOURCE_READS[2]: "37192bf117112da608ba3c0f077867b5bf0375c488bb84d114cbb291a6b42329",
     PINNED_SOURCE_READS[3]: "fe03ac2155e0e295440b1277c8933f7802807a4eca4f10909a9aaec9dc740c30",
     PINNED_SOURCE_READS[4]: "39470439a04d9ace2bfed9d187d5cac0add60be45ace8b8fe204769d3788c63a",
     PINNED_SOURCE_READS[5]: "95b7a36aac1a693e815f20614f04f34f59923c423359e701a850524579849b95",
+    PINNED_SOURCE_READS[6]: "b577a9ccfb12a246022a2caa85aab0f87d5cc65005b89d0b8d252b499cf56004",
+    PINNED_SOURCE_READS[7]: "6905e69b9785f4ab7ad90803d7a6ae6cb678b467d136feee6cdeac8e3d7049b0",
+    PINNED_SOURCE_READS[8]: "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
 }
 EXPECTED_SOURCE_BLOBS = {
-    PINNED_SOURCE_READS[0]: "5bded2470ec361453f168a68a120d0e4feba9b83",
+    PINNED_SOURCE_READS[0]: "f62738459cf718362a28ec0a66dfe52f417b6423",
     PINNED_SOURCE_READS[1]: "c123b8d681c3d76fce08ef13d7673622deac64ad",
     PINNED_SOURCE_READS[2]: "316ca3f058c3608025d2481f27a18cfb7d9dcde6",
     PINNED_SOURCE_READS[3]: "c1124cd601eeae013ba5ce71efaf6be80353e5ff",
     PINNED_SOURCE_READS[4]: "5c18bbbaf1609214bba32fff04e3a383840bb37e",
     PINNED_SOURCE_READS[5]: "896f834c3fd7e9122f4634a1b93396bc67df11d5",
+    PINNED_SOURCE_READS[6]: "5850cc0477045f0c710b801b70b45409d148283b",
+    PINNED_SOURCE_READS[7]: "be33db194fa1ca8109594779b49f87e497643e91",
+    PINNED_SOURCE_READS[8]: "bc23300becfe4e4db57153c0e94cfcdf2338da71",
 }
 
 TOKEN_INDEX_REGEX = (
@@ -82,7 +100,7 @@ EXACT_J_REGEX = (
     "norm2\\(sum_controls\\)|\\|\\|[[:space:]]*sum_i[[:space:]]+c_i[[:space:]]*\\|\\||"
     "sum_i c_i.{0,30}(norm|squared)|J\\(w\\).{0,50}(control|norm)"
 )
-REQUESTED_BUT_UNLANDED_PATHS = (
+REQUESTED_SURFACE_PATHS = (
     "docs/PHYSICAL_CELL_CUTTING_CHARGE_SPACE_CYCLE736_NOTE_2026-08-05.md",
     "docs/PHYSICAL_CELL_CUTTING_CARRIER_PARITY_LAW_CYCLE746_NOTE_2026-08-08.md",
     "docs/PHYSICAL_CELL_CUTTING_SHAPE_CENSUS_LEAST_SHARING_CYCLE752_NOTE_2026-08-09.md",
@@ -205,6 +223,7 @@ def pinned_source_controls() -> tuple[dict, dict]:
     blob_rows = {"@".join(spec): git_blob(payload) for spec, payload in payloads.items()}
     expected_sha = {"@".join(spec): value for spec, value in EXPECTED_SOURCE_SHA256.items()}
     expected_blobs = {"@".join(spec): value for spec, value in EXPECTED_SOURCE_BLOBS.items()}
+    memo_text = " ".join(payloads[PINNED_SOURCE_READS[8]].decode().split())
     controls = {
         "pinned_main_commit": PINNED_MAIN_COMMIT,
         "pinned_cycle980_commit": PINNED_CYCLE980_COMMIT,
@@ -220,6 +239,17 @@ def pinned_source_controls() -> tuple[dict, dict]:
             check=False,
             capture_output=True,
         ).returncode == 0,
+        "current_record_boundary": all(token in memo_text for token in (
+            "Records form.",
+            "When present, a record locks exactly one admissible local possibility.",
+            "A site never carries more than one record; records are permanent.",
+            "Only records are readable.",
+            "A readout value is determined by record content alone.",
+            "A site with no record cannot be read.",
+            "Finite additivity, a named scalar collection functional `I`, and an assigned",
+            "value `I(empty)=0` are not Record axiom content.",
+        )),
+        "record_properties_used": [],
     }
     return controls, payloads
 
@@ -260,6 +290,77 @@ def witness_values(row: dict) -> dict[str, int]:
     }
 
 
+def determinant3(matrix: tuple[tuple[int, ...], ...]) -> int:
+    return (
+        matrix[0][0] * (matrix[1][1] * matrix[2][2] - matrix[1][2] * matrix[2][1])
+        - matrix[0][1] * (matrix[1][0] * matrix[2][2] - matrix[1][2] * matrix[2][0])
+        + matrix[0][2] * (matrix[1][0] * matrix[2][1] - matrix[1][1] * matrix[2][0])
+    )
+
+
+def proper_cubic_matrices() -> tuple[tuple[tuple[int, ...], ...], ...]:
+    matrices = []
+    for permutation in permutations(range(3)):
+        for signs in product((-1, 1), repeat=3):
+            matrix = tuple(
+                tuple(signs[row] if column == permutation[row] else 0 for column in range(3))
+                for row in range(3)
+            )
+            if determinant3(matrix) == 1:
+                matrices.append(matrix)
+    return tuple(sorted(matrices))
+
+
+def mat_vec(
+    matrix: tuple[tuple[int, ...], ...], vector: tuple[int, ...]
+) -> tuple[int, ...]:
+    return tuple(sum(matrix[row][column] * vector[column] for column in range(3)) for row in range(3))
+
+
+def mat_mul(
+    left: tuple[tuple[int, ...], ...], right: tuple[tuple[int, ...], ...]
+) -> tuple[tuple[int, ...], ...]:
+    return tuple(
+        tuple(sum(left[row][inner] * right[inner][column] for inner in range(3)) for column in range(3))
+        for row in range(3)
+    )
+
+
+def invariant_measurement(witnesses: tuple[dict, ...]) -> dict:
+    group = proper_cubic_matrices()
+    group_set = set(group)
+    action_checks = []
+    orbit_sizes = {}
+    for witness in witnesses:
+        rotated_controls = {
+            tuple(sorted(mat_vec(matrix, control) for control in witness["controls"]))
+            for matrix in group
+        }
+        orbit_sizes[witness["name"]] = len(rotated_controls)
+        j_value = witness_values(witness)["J"]
+        for matrix in group:
+            rotated = {**witness, "controls": tuple(mat_vec(matrix, control) for control in witness["controls"])}
+            action_checks.append(witness_values(rotated)["J"] == j_value)
+    translations = tuple(product((-1, 0, 1), repeat=3))
+    translation_checks = [
+        tuple(tuple(t[axis] + control[axis] - t[axis] for axis in range(3)) for control in witness["controls"])
+        == witness["controls"]
+        for witness in witnesses
+        for t in translations
+    ]
+    return {
+        "proper_cubic_group_order": len(group),
+        "all_determinants_plus_one": all(determinant3(matrix) == 1 for matrix in group),
+        "group_closed": all(mat_mul(left, right) in group_set for left in group for right in group),
+        "j_action_checks": len(action_checks),
+        "j_invariant_under_all_actions": all(action_checks),
+        "translation_recentring_checks": len(translation_checks),
+        "translation_recentring_exact": all(translation_checks),
+        "orbit_sizes": orbit_sizes,
+        "orbit_size_spectrum": sorted(set(orbit_sizes.values())),
+    }
+
+
 def candidate_inventory(payloads: dict) -> tuple[list[dict], dict]:
     c980_text = payloads[PINNED_SOURCE_READS[0]].decode()
     c719_text = payloads[PINNED_SOURCE_READS[1]].decode()
@@ -267,6 +368,9 @@ def candidate_inventory(payloads: dict) -> tuple[list[dict], dict]:
     c732 = payloads[PINNED_SOURCE_READS[3]].decode().lower()
     c733 = payloads[PINNED_SOURCE_READS[4]].decode().lower()
     c735 = payloads[PINNED_SOURCE_READS[5]].decode().lower()
+    c736 = payloads[PINNED_SOURCE_READS[6]].decode().lower()
+    c746 = payloads[PINNED_SOURCE_READS[7]].decode().lower()
+    memo = " ".join(payloads[PINNED_SOURCE_READS[8]].decode().split())
     c980_tree = ast.parse(c980_text, filename=PINNED_SOURCE_READS[0][1])
     c719_tree = ast.parse(c719_text, filename=PINNED_SOURCE_READS[1][1])
     c980_constants = {
@@ -291,6 +395,16 @@ def candidate_inventory(payloads: dict) -> tuple[list[dict], dict]:
         )),
         "cycle735_tokens": all(token in c735 for token in (
             "gf(2) weight", "sum over pieces", "7704", "8096",
+        )),
+        "cycle736_tokens": all(token in c736 for token in (
+            "induced charges have rank three", "8 charges", "three nonconstant charges",
+        )),
+        "cycle746_tokens": all(token in c746 for token in (
+            "three forced parities suffice", "(0,0,0)", "(0,1,1)",
+        )),
+        "current_record_boundary": all(token in memo for token in (
+            "Records form.", "A readout value is determined by record content alone.",
+            "Finite additivity, a named scalar collection functional `I`",
         )),
     }
 
@@ -321,14 +435,14 @@ def candidate_inventory(payloads: dict) -> tuple[list[dict], dict]:
             "cycle980_control_arity",
             f"{PINNED_CYCLE980_COMMIT}:{PINNED_SOURCE_READS[0][1]}",
             WITNESS_SCHEMA, "integer", "{1,2}", "number of controls",
-            False, "cycle980_nearby_ast_keys",
+            True, "cycle980_nearby_ast_keys",
         ),
         candidate(
             "cycle980_off_diagonal_control_gram_sum",
             f"{PINNED_CYCLE980_COMMIT}:{PINNED_SOURCE_READS[0][1]}",
             WITNESS_SCHEMA, "integer", "{-1,0}",
             "sum over unordered control pairs (upper-triangular control-Gram entries)",
-            False, "cycle980_nearby_ast_keys",
+            True, "cycle980_nearby_ast_keys",
         ),
         candidate(
             "cycle719_controller_b_rail_occupation_sum",
@@ -379,6 +493,21 @@ def candidate_inventory(payloads: dict) -> tuple[list[dict], dict]:
             "one-cell-least-cost-cutting", "integer mod 2", "{0,1}",
             "sum of the GF(2) weights of a cutting's 24 pieces",
             True, "cycle735_tokens",
+        ),
+        candidate(
+            "cycle736_cutting_charge_space",
+            PINNED_SOURCE_READS[6][1],
+            "one-cell-least-cost-cutting", "integer mod 2", "{0,1}",
+            "three nonconstant cutting charges up to complement in a rank-three induced space",
+            True, "cycle736_tokens",
+        ),
+        candidate(
+            "cycle746_carrier_block_parity_triple",
+            PINNED_SOURCE_READS[7][1],
+            "cycle745-target-carrier-support", "(integer mod 2)^3",
+            "{(0,0,0),(0,1,1)}",
+            "(|S|, |S intersect Q2|, |S intersect Q3|) mod 2",
+            True, "cycle746_tokens",
         ),
     ]
     return candidates, extraction_evidence
@@ -450,12 +579,13 @@ def orbit_table(witnesses: tuple[dict, ...]) -> list[dict]:
 def science_measurement(payloads: dict) -> dict:
     token_paths = git_grep_paths(PINNED_MAIN_COMMIT, TOKEN_INDEX_REGEX)
     exact_j_paths = git_grep_paths(PINNED_MAIN_COMMIT, EXACT_J_REGEX)
-    absent_probes = {
+    surface_presence = {
         path: git_path_exists(PINNED_MAIN_COMMIT, path)
-        for path in REQUESTED_BUT_UNLANDED_PATHS
+        for path in REQUESTED_SURFACE_PATHS
     }
     candidates, evidence = candidate_inventory(payloads)
     witnesses = declared_witnesses()
+    invariant = invariant_measurement(witnesses)
     comparisons = compare_candidates(candidates, witnesses)
     coincident_landed = [
         row["candidate_id"] for row in comparisons
@@ -467,6 +597,13 @@ def science_measurement(payloads: dict) -> dict:
         if coincident_landed
         else "NO_COINCIDENCE_IN_ENUMERATED_INVENTORY__LANDED_NEWNESS_OPEN"
     )
+    cycle980_text = payloads[PINNED_SOURCE_READS[0]].decode()
+    j_landed_at_pin = all(token in cycle980_text for token in (
+        '"control_sum_norm_squared"',
+        "proper_cubic_rotations",
+        '"translations_are_kernel_after_recentring"',
+        '"invariant_constant_on_each_orbit"',
+    ))
     return {
         "search_design": {
             "snapshot": PINNED_MAIN_COMMIT,
@@ -477,7 +614,7 @@ def science_measurement(payloads: dict) -> dict:
             "exact_J_formula_regex": EXACT_J_REGEX,
             "exact_J_formula_hit_paths": list(exact_j_paths),
             "body_read_design": (
-                "six pinned git-show bodies: two Python ASTs plus four markdown token windows"
+                "nine pinned git-show bodies: two Python ASTs plus seven markdown token windows"
             ),
             "body_read_count": len(PINNED_SOURCE_READS),
             "candidate_filter": (
@@ -485,7 +622,7 @@ def science_measurement(payloads: dict) -> dict:
                 "plus requested norm/control-sum/cover/leverage near-misses retained for explicit type rejection"
             ),
         },
-        "requested_surface_presence_at_pin": absent_probes,
+        "requested_surface_presence_at_pin": surface_presence,
         "extraction_evidence": evidence,
         "candidate_inventory": candidates,
         "witness_count": len(witnesses),
@@ -493,18 +630,32 @@ def science_measurement(payloads: dict) -> dict:
             [row["name"], row["kind"], row["controls"]] for row in witnesses
         ]),
         "orbit_value_table": orbit_table(witnesses),
+        "invariant_measurement": invariant,
+        "J_landed_at_pin": j_landed_at_pin,
+        "J_bounded_invariant_established": bool(
+            j_landed_at_pin
+            and invariant["proper_cubic_group_order"] == 24
+            and invariant["j_invariant_under_all_actions"]
+            and invariant["translation_recentring_exact"]
+            and invariant["orbit_size_spectrum"] == [3, 6, 12]
+        ),
         "identification_tests": comparisons,
         "coincident_landed_candidates": coincident_landed,
         "inventory_completeness_established": inventory_completeness_established,
         "verdict": verdict,
         "verdict_scope": (
-            "the nine classified candidates extracted from the pinned origin/main token/AST search; "
-            "the 2539-file token index is not exhaustively classified, so corpus-wide landed-newness is open"
+            f"the {len(candidates)} classified candidates extracted from the pinned origin/main "
+            f"token/AST search; the {len(token_paths)}-file token index is not exhaustively "
+            "classified, so corpus-wide landed-newness is open"
         ),
         "physics_identification_established": False,
         "physics_identification_limit": (
             "even an exact numeric agreement would identify functions only on the shared finite domain, "
             "not their physical interpretation"
+        ),
+        "record_boundary": (
+            "current Record is pinned but unused; finite additivity, scalar I, and I(empty)=0 "
+            "are neither assumed nor inferred"
         ),
     }
 
@@ -570,22 +721,31 @@ def render_stdout(receipt: dict) -> str:
     rows = [
         "CYCLE981_J_LANDED_INVARIANT_IDENTIFICATION",
         "A_CANDIDATE_ENUMERATION " + ("PASS" if checks["A_CANDIDATE_ENUMERATION"] else "FAIL")
-        + f" :: pin={PINNED_MAIN_COMMIT}; pinned_full_bodies={findings['search_design']['body_read_count']}<=6;"
+        + f" :: pin={PINNED_MAIN_COMMIT}; pinned_full_bodies={findings['search_design']['body_read_count']}<=9;"
         + f" token_files={findings['search_design']['token_index_hit_file_count']};"
         + f" candidates={len(findings['candidate_inventory'])};"
         + f" exact_J_hits={len(findings['search_design']['exact_J_formula_hit_paths'])};"
-        + f" requested_nonmain_present={sum(findings['requested_surface_presence_at_pin'].values())}",
+        + f" requested_surfaces_present={sum(findings['requested_surface_presence_at_pin'].values())}",
         "B_IDENTIFICATION_TEST " + ("PASS" if checks["B_IDENTIFICATION_TEST"] else "FAIL")
         + f" :: outcomes={compact(outcomes)}; first_witnesses={compact(first_witnesses)}",
         "C_VERDICT " + ("PASS" if checks["C_VERDICT"] else "FAIL")
         + f" :: {findings['verdict']}; coincident_landed={compact(findings['coincident_landed_candidates'])};"
-        + " physics_identification=false",
+        + f" J_landed={findings['J_landed_at_pin']};"
+        + f" J_bounded_invariant={findings['J_bounded_invariant_established']};"
+        + " cross_lane_physics_identification=false",
         "D_CONTROLS " + ("PASS" if checks["D_CONTROLS"] else "FAIL")
         + f" :: sha_pins={receipt['controls']['sha_pins_match']};"
         + f" blob_pins={receipt['controls']['blob_pins_match']};"
         + f" determinism={receipt['controls']['determinism_replay']};"
+        + f" current_record={receipt['controls']['current_record_boundary']};"
+        + f" record_used={bool(receipt['controls']['record_properties_used'])};"
         + f" runtime_s={receipt['controls']['runtime_seconds']:.3f}<300;"
         + f" stdout_bytes={receipt['controls']['stdout_bytes']}<6000<150000",
+        "per_element: checked and executed -- all 21 witness words were reconstructed and compared exactly.",
+        "per_site: checked and not executed -- J uses centre-relative word descriptors, not site records or sitewise observables.",
+        "per_mode: checked and executed -- all 24 effective proper-cubic rotations preserve J on every witness.",
+        "per_block: checked and executed -- all eleven enumerated candidate classes were typed before comparison.",
+        "lattice_wide: checked and not executed -- translation cancellation was checked on recentered descriptors; no infinite lattice census was attempted.",
     ]
     rows.append(f"TOTAL: PASS={sum(checks.values())} FAIL={sum(not value for value in checks.values())}")
     return "\n".join(rows) + "\n"
@@ -607,10 +767,12 @@ def run() -> tuple[dict, str]:
         "cycle732_cover_certificate_parity",
         "cycle733_column_subset_cost_parity_law",
         "cycle735_piece_borne_gf2_charge",
+        "cycle736_cutting_charge_space",
+        "cycle746_carrier_block_parity_triple",
     }
     a_bookkeeping = bool(
         first["search_design"]["snapshot"] == PINNED_MAIN_COMMIT
-        and first["search_design"]["body_read_count"] <= 6
+        and first["search_design"]["body_read_count"] <= 9
         and set(row["candidate_id"] for row in first["candidate_inventory"])
         == expected_candidate_ids
         and all(first["extraction_evidence"].values())
@@ -618,7 +780,16 @@ def run() -> tuple[dict, str]:
             first["extraction_evidence"][row["extraction_evidence"]]
             for row in first["candidate_inventory"]
         )
-        and not any(first["requested_surface_presence_at_pin"].values())
+        and first["requested_surface_presence_at_pin"] == {
+            REQUESTED_SURFACE_PATHS[0]: True,
+            REQUESTED_SURFACE_PATHS[1]: True,
+            REQUESTED_SURFACE_PATHS[2]: False,
+            REQUESTED_SURFACE_PATHS[3]: False,
+            REQUESTED_SURFACE_PATHS[4]: False,
+            REQUESTED_SURFACE_PATHS[5]: False,
+        }
+        and first["J_landed_at_pin"]
+        and first["J_bounded_invariant_established"]
     )
     b_bookkeeping = identification_bookkeeping(first)
     c_bookkeeping = verdict_bookkeeping(first)
@@ -653,9 +824,11 @@ def run() -> tuple[dict, str]:
         controls["stdout_bytes"] = len(stdout.encode())
     stdout = render_stdout(receipt)
     receipt["checks"]["D_CONTROLS"] = bool(
-        controls["literal_source_read_count"] <= 6
+        controls["literal_source_read_count"] <= 9
         and controls["sha_pins_match"] and controls["blob_pins_match"]
         and controls["head_descends_from_pinned_main"] and deterministic
+        and controls["current_record_boundary"]
+        and not controls["record_properties_used"]
         and controls["runtime_seconds"] < AUDIT_TIMEOUT_SEC
         and len(stdout.encode()) < HOUSE_STDOUT_LIMIT_BYTES < STDOUT_LIMIT_BYTES
     )

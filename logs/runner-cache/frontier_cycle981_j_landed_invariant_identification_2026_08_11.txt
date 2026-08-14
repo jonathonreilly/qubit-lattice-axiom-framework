@@ -1,16 +1,21 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle981_j_landed_invariant_identification_2026_08_11.py
-runner_sha256: 9df68d87fb8cae804c0108f8c88f73122d9357cc221715254e7485b977f39857
+runner_sha256: 4863e65179fa085ce17416a8ff5ceface37757ad394cd8889aef8960479e0089
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 10.73
+elapsed_sec: 16.59
 status: ok
 ----- stdout -----
 CYCLE981_J_LANDED_INVARIANT_IDENTIFICATION
-A_CANDIDATE_ENUMERATION PASS :: pin=ea0968c71ad46c39c6dacb39f88a18780363b71f; pinned_full_bodies=6<=6; token_files=2539; candidates=9; exact_J_hits=0; requested_nonmain_present=0
-B_IDENTIFICATION_TEST PASS :: outcomes={"COINCIDES":0,"DISAGREES":2,"NOT_COMPARABLE":7}; first_witnesses={"cycle980_control_arity":{"J":0,"candidate":2,"word":"TOF(+x,-x->C)"},"cycle980_off_diagonal_control_gram_sum":{"J":1,"candidate":0,"word":"CNOT(+x->C)"}}
-C_VERDICT PASS :: NO_COINCIDENCE_IN_ENUMERATED_INVENTORY__LANDED_NEWNESS_OPEN; coincident_landed=[]; physics_identification=false
-D_CONTROLS PASS :: sha_pins=True; blob_pins=True; determinism=True; runtime_s=10.637<300; stdout_bytes=753<6000<150000
+A_CANDIDATE_ENUMERATION PASS :: pin=625236e91e1c3ddbfe5aeaa36c7d37a7c9e78b46; pinned_full_bodies=9<=9; token_files=2655; candidates=11; exact_J_hits=3; requested_surfaces_present=2
+B_IDENTIFICATION_TEST PASS :: outcomes={"COINCIDES":0,"DISAGREES":2,"NOT_COMPARABLE":9}; first_witnesses={"cycle980_control_arity":{"J":0,"candidate":2,"word":"TOF(+x,-x->C)"},"cycle980_off_diagonal_control_gram_sum":{"J":1,"candidate":0,"word":"CNOT(+x->C)"}}
+C_VERDICT PASS :: NO_COINCIDENCE_IN_ENUMERATED_INVENTORY__LANDED_NEWNESS_OPEN; coincident_landed=[]; J_landed=True; J_bounded_invariant=True; cross_lane_physics_identification=false
+D_CONTROLS PASS :: sha_pins=True; blob_pins=True; determinism=True; current_record=True; record_used=False; runtime_s=16.536<300; stdout_bytes=1424<6000<150000
+per_element: checked and executed -- all 21 witness words were reconstructed and compared exactly.
+per_site: checked and not executed -- J uses centre-relative word descriptors, not site records or sitewise observables.
+per_mode: checked and executed -- all 24 effective proper-cubic rotations preserve J on every witness.
+per_block: checked and executed -- all eleven enumerated candidate classes were typed before comparison.
+lattice_wide: checked and not executed -- translation cancellation was checked on recentered descriptors; no infinite lattice census was attempted.
 TOTAL: PASS=4 FAIL=0
 
 ----- stderr -----

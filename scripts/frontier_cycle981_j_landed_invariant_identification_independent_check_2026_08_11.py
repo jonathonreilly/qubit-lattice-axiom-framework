@@ -14,7 +14,7 @@ import copy
 import json
 import sys
 from hashlib import sha256
-from itertools import combinations
+from itertools import combinations, permutations, product
 from pathlib import Path
 from time import monotonic
 
@@ -31,11 +31,11 @@ AUDIT_INPUT_PATHS = (
     "docs/J_LANDED_INVARIANT_IDENTIFICATION_CYCLE981_BOUNDED_THEOREM_NOTE_2026-08-11.md",
 )
 EXPECTED_INPUT_SHA256 = {
-    AUDIT_INPUT_PATHS[0]: "9df68d87fb8cae804c0108f8c88f73122d9357cc221715254e7485b977f39857",
-    AUDIT_INPUT_PATHS[3]: "e3d95207cbb3519c5d931fb1049524b6cf238f5fba8b50be4f84cef52473d96d",
+    AUDIT_INPUT_PATHS[0]: "4863e65179fa085ce17416a8ff5ceface37757ad394cd8889aef8960479e0089",
+    AUDIT_INPUT_PATHS[3]: "36d1f0cefcf5f6734db124719e3a9a27187abcf6aa40c1e6989d9179bcc19173",
 }
-EXPECTED_MAIN_PIN = "ea0968c71ad46c39c6dacb39f88a18780363b71f"
-EXPECTED_CYCLE980_PIN = "c186c8ba7f44f2245cf38e59fc429ce90a6e0d7d"
+EXPECTED_MAIN_PIN = "625236e91e1c3ddbfe5aeaa36c7d37a7c9e78b46"
+EXPECTED_CYCLE980_PIN = EXPECTED_MAIN_PIN
 EXPECTED_CANDIDATE_IDS = (
     "cycle980_control_arity",
     "cycle980_off_diagonal_control_gram_sum",
@@ -46,8 +46,10 @@ EXPECTED_CANDIDATE_IDS = (
     "cycle732_cover_certificate_parity",
     "cycle733_column_subset_cost_parity_law",
     "cycle735_piece_borne_gf2_charge",
+    "cycle736_cutting_charge_space",
+    "cycle746_carrier_block_parity_triple",
 )
-EXPECTED_CANDIDATE_INVENTORY_DIGEST = "3b50b16e52cac7c0055e7ccd15756a6ae982968e7570adb1d7626b81b14cf5e8"
+EXPECTED_CANDIDATE_INVENTORY_DIGEST = "701810e1c57fd133d969c6a4e4260b29d1acc2f24798407d271921a7115cb87b"
 EXPECTED_PRIMARY_FUNCTIONS = (
     "pinned_source_controls",
     "declared_witnesses",
@@ -72,7 +74,9 @@ REFUTE_SPEC = (
     {"id": "LANDED_FLAG_FLIPPED", "target": "A", "mutation": "mark a main candidate non-landed"},
     {"id": "FIRST_WITNESS_CORRUPTED", "target": "B", "mutation": "replace the first arity disagreement"},
     {"id": "NOT_COMPARABLE_PROMOTED", "target": "B", "mutation": "promote a domain mismatch to coincidence"},
-    {"id": "ABSENT_SURFACE_FLIPPED", "target": "A", "mutation": "claim an absent Cycle-736 path is present"},
+    {"id": "SURFACE_PRESENCE_FLIPPED", "target": "A", "mutation": "flip one requested-surface presence result"},
+    {"id": "J_LANDED_FLAG_FLIPPED", "target": "C", "mutation": "deny that the pinned Cycle-980 source lands J"},
+    {"id": "J_INVARIANCE_FLIPPED", "target": "C", "mutation": "deny the independently checked proper-cubic invariance"},
     {"id": "EXACT_J_CACHE_COUNT_MISMATCH", "target": "R3", "mutation": "change exact-formula hits without updating the cache count"},
     {"id": "COMPLETENESS_PROMOTED", "target": "C", "mutation": "promote the fixed inventory to corpus-complete"},
     {"id": "VERDICT_FLIPPED", "target": "C", "mutation": "replace open fixed-inventory verdict by coincidence"},
@@ -154,6 +158,54 @@ def independent_orbit_table() -> list[dict]:
         {"class": labels[key], "member_count": grouped[key]["count"], **grouped[key]["values"]}
         for key in sorted(grouped, key=lambda item: (item[0], -item[1]))
     ]
+
+
+def permutation_sign(permutation: tuple[int, ...]) -> int:
+    inversions = sum(
+        permutation[left] > permutation[right]
+        for left in range(3) for right in range(left + 1, 3)
+    )
+    return -1 if inversions % 2 else 1
+
+
+def independent_rotations() -> tuple[tuple[tuple[int, ...], tuple[int, ...]], ...]:
+    return tuple(
+        (permutation, signs)
+        for permutation in permutations(range(3))
+        for signs in product((-1, 1), repeat=3)
+        if permutation_sign(permutation) * signs[0] * signs[1] * signs[2] == 1
+    )
+
+
+def rotate_control(
+    control: tuple[int, int], rotation: tuple[tuple[int, ...], tuple[int, ...]]
+) -> tuple[int, int]:
+    axis, sign = control
+    permutation, signs = rotation
+    output = tuple(signs[row] * (sign if permutation[row] == axis else 0) for row in range(3))
+    output_axis = next(row for row, value in enumerate(output) if value)
+    return output_axis, output[output_axis]
+
+
+def independent_invariant_measurement() -> dict:
+    rotations = independent_rotations()
+    checks = []
+    orbit_sizes = {}
+    for witness in independent_words():
+        original_j = independent_values(witness)["J"]
+        rotated_controls = set()
+        for rotation in rotations:
+            controls = tuple(rotate_control(control, rotation) for control in witness["controls"])
+            rotated_controls.add(tuple(sorted(controls)))
+            checks.append(independent_values({**witness, "controls": controls})["J"] == original_j)
+        orbit_sizes[witness["name"]] = len(rotated_controls)
+    return {
+        "proper_cubic_group_order": len(rotations),
+        "j_action_checks": len(checks),
+        "j_invariant_under_all_actions": all(checks),
+        "orbit_sizes": orbit_sizes,
+        "orbit_size_spectrum": sorted(set(orbit_sizes.values())),
+    }
 
 
 def independent_tests(primary_candidates: list[dict]) -> list[dict]:
@@ -246,7 +298,7 @@ def source_controls() -> dict:
         "primary_source_read_count": len(
             ast_assignment_node(primary_tree, "PINNED_SOURCE_READS").elts
         ),
-        "primary_requested_absent_paths": ast_literal_assignment(primary_tree, "REQUESTED_BUT_UNLANDED_PATHS"),
+        "primary_requested_surface_paths": ast_literal_assignment(primary_tree, "REQUESTED_SURFACE_PATHS"),
         "primary_imports": sorted(imports),
         "primary_imported_or_executed": False,
     }
@@ -273,18 +325,25 @@ def validate_primary(receipt: dict) -> bool:
         and receipt.get("science_digest") == digest(findings)
         and receipt.get("pass") is True and all(receipt.get("checks", {}).values())
         and findings.get("search_design", {}).get("snapshot") == EXPECTED_MAIN_PIN
-        and findings.get("search_design", {}).get("body_read_count") == 6
+        and findings.get("search_design", {}).get("body_read_count") == 9
         and tuple(row.get("candidate_id") for row in candidates) == EXPECTED_CANDIDATE_IDS
         and digest(candidates) == EXPECTED_CANDIDATE_INVENTORY_DIGEST
         and len(tests) == len(EXPECTED_CANDIDATE_IDS)
         and tests == independent
         and findings.get("witness_count") == 21
         and findings.get("orbit_value_table") == independent_orbit_table()
-        and not any(findings.get("requested_surface_presence_at_pin", {}).values())
+        and list(findings.get("requested_surface_presence_at_pin", {}).values())
+        == [True, True, False, False, False, False]
+        and findings.get("J_landed_at_pin") is True
+        and findings.get("J_bounded_invariant_established") is True
+        and findings.get("invariant_measurement", {}).get("proper_cubic_group_order") == 24
+        and findings.get("invariant_measurement", {}).get("j_invariant_under_all_actions") is True
         and findings.get("coincident_landed_candidates") == coincidences
         and findings.get("inventory_completeness_established") is False
         and findings.get("verdict") == expected_verdict
         and findings.get("physics_identification_established") is False
+        and receipt.get("controls", {}).get("current_record_boundary") is True
+        and receipt.get("controls", {}).get("record_properties_used") == []
     )
 
 
@@ -312,25 +371,39 @@ def validate_cache(cache: str, receipt: dict) -> bool:
         and f"outcomes={expected_outcomes}" in body
         and f"exact_J_hits={expected_exact_j_hits}" in body
         and expected_verdict in body
+        and "per_element: checked and executed" in body
+        and "per_site: checked and not executed" in body
+        and "per_mode: checked and executed" in body
+        and "per_block: checked and executed" in body
+        and "lattice_wide: checked and not executed" in body
         and body.rstrip().endswith("TOTAL: PASS=4 FAIL=0")
     )
 
 
 def validate_note(note: str) -> bool:
+    normalized = " ".join(note.split())
     required = (
         "Claim type: `bounded_theorem`",
         "actual_current_surface_status: bounded-support",
-        "inventory completeness false",
+        "Inventory completeness is false",
         "TOF(+x,-x->C)",
         "CNOT(+x->C)",
         "`NOT_COMPARABLE`",
         EXPECTED_MAIN_PIN,
         EXPECTED_CYCLE980_PIN,
+        "`J` is landed at the pinned current-main snapshot",
+        "proper-cubic invariant on the declared 21-word family",
+        "Cycle 736 and Cycle 746 are now landed",
+        "Finite additivity, scalar `I`, and `I(empty)=0` are not used",
+        "negative_assertion_classes: [bounded_with_named_walls]",
+        "## No-Go Discipline: N1-N8",
         "identify two functions on this finite shared domain only",
         "Audit-status authority: independent audit lane only",
     )
     forbidden = ("audited_clean", "audit_status: retained", "bare_retained_allowed: true")
-    return all(token in note for token in required) and not any(token in note for token in forbidden)
+    return all(token in normalized for token in required) and not any(
+        token in normalized for token in forbidden
+    )
 
 
 def corruption_probes(receipt: dict, cache: str) -> dict:
@@ -367,8 +440,16 @@ def corruption_probes(receipt: dict, cache: str) -> dict:
 
     mutated = copy.deepcopy(receipt)
     first_path = next(iter(mutated["findings"]["requested_surface_presence_at_pin"]))
-    mutated["findings"]["requested_surface_presence_at_pin"][first_path] = True
-    results["ABSENT_SURFACE_FLIPPED"] = rejected(mutated)
+    mutated["findings"]["requested_surface_presence_at_pin"][first_path] = not mutated["findings"]["requested_surface_presence_at_pin"][first_path]
+    results["SURFACE_PRESENCE_FLIPPED"] = rejected(mutated)
+
+    mutated = copy.deepcopy(receipt)
+    mutated["findings"]["J_landed_at_pin"] = False
+    results["J_LANDED_FLAG_FLIPPED"] = rejected(mutated)
+
+    mutated = copy.deepcopy(receipt)
+    mutated["findings"]["J_bounded_invariant_established"] = False
+    results["J_INVARIANCE_FLIPPED"] = rejected(mutated)
 
     mutated = copy.deepcopy(receipt)
     mutated["findings"]["search_design"]["exact_J_formula_hit_paths"] = ["docs/GENUINE_HIT.md"]
@@ -415,10 +496,12 @@ def render_stdout(receipt: dict) -> str:
     rows = [
         "CYCLE981_J_LANDED_INVARIANT_IDENTIFICATION_INDEPENDENT_CHECK",
         "R0_PRIMARY_AST_TEXT_AND_PINS " + ("PASS" if checks["R0_PRIMARY_AST_TEXT_AND_PINS"] else "FAIL")
-        + f" :: reads={receipt['controls']['literal_source_read_count']}<=6;"
+        + f" :: reads={receipt['controls']['literal_source_read_count']}<=9;"
         + f" sha_pins={receipt['controls']['sha_pins_match']}; primary_executed=false",
         "R1_INDEPENDENT_SHARED_INPUTS " + ("PASS" if checks["R1_INDEPENDENT_SHARED_INPUTS"] else "FAIL")
-        + f" :: witnesses={independent['witness_count']}; orbit_table={compact(independent['orbit_value_table'])}",
+        + f" :: witnesses={independent['witness_count']}; orbit_table={compact(independent['orbit_value_table'])};"
+        + f" rotations={independent['invariant_measurement']['proper_cubic_group_order']};"
+        + f" J_invariant={independent['invariant_measurement']['j_invariant_under_all_actions']}",
         "R2_CANDIDATE_OUTCOMES " + ("PASS" if checks["R2_CANDIDATE_OUTCOMES"] else "FAIL")
         + f" :: outcomes={compact(independent['outcome_counts'])}; verdict={independent['verdict']}",
         "R3_RECEIPT_CACHE_NOTE_BINDING " + ("PASS" if checks["R3_RECEIPT_CACHE_NOTE_BINDING"] else "FAIL")
@@ -446,6 +529,7 @@ def run() -> tuple[dict, str]:
         return {
             "witness_count": len(independent_words()),
             "orbit_value_table": independent_orbit_table(),
+            "invariant_measurement": independent_invariant_measurement(),
             "identification_tests": tests,
             "outcome_counts": {
                 outcome: sum(row["outcome"] == outcome for row in tests)
@@ -467,13 +551,17 @@ def run() -> tuple[dict, str]:
         and controls["primary_functions_present"]
         and controls["primary_main_pin"] == EXPECTED_MAIN_PIN
         and controls["primary_cycle980_pin"] == EXPECTED_CYCLE980_PIN
-        and controls["primary_source_read_count"] == 6
-        and len(controls["primary_requested_absent_paths"]) == 6
+        and controls["primary_source_read_count"] == 9
+        and len(controls["primary_requested_surface_paths"]) == 6
         and controls["primary_imported_or_executed"] is False
     )
     r1 = bool(
         first["witness_count"] == 21
         and [row["member_count"] for row in first["orbit_value_table"]] == [6, 12, 3]
+        and first["invariant_measurement"]["proper_cubic_group_order"] == 24
+        and first["invariant_measurement"]["j_action_checks"] == 504
+        and first["invariant_measurement"]["j_invariant_under_all_actions"]
+        and first["invariant_measurement"]["orbit_size_spectrum"] == [3, 6, 12]
     )
     r2 = validate_primary(primary_receipt)
     r3 = bool(

@@ -1,19 +1,19 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle981_j_landed_invariant_identification_independent_check_2026_08_11.py
-runner_sha256: 096b39909c98fe111b403d7536c11298c5fb92a97d3da31f809ba142a831681b
-input_fingerprint_sha256: 5e47da0a758623be695944225f2249811ce4179d034ad3bf4807f6a3cdd49a68
+runner_sha256: 38dd63259c7705ff9fddc838467e3a06f8e808c2a6a2db45b5279f463c28be06
+input_fingerprint_sha256: 04dc61bdf7399a93251b5b18e28e385746d5cd380b6d2ef4a253f36df013ce86
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 CYCLE981_J_LANDED_INVARIANT_IDENTIFICATION_INDEPENDENT_CHECK
-R0_PRIMARY_AST_TEXT_AND_PINS PASS :: reads=4<=6; sha_pins=True; primary_executed=false
-R1_INDEPENDENT_SHARED_INPUTS PASS :: witnesses=21; orbit_table=[{"J":1,"class":"CNOT","control_arity":1,"member_count":6,"off_diagonal_control_gram_sum":0},{"J":2,"class":"TOF_PERPENDICULAR_CONTROLS","control_arity":2,"member_count":12,"off_diagonal_control_gram_sum":0},{"J":0,"class":"TOF_OPPOSITE_CONTROLS","control_arity":2,"member_count":3,"off_diagonal_control_gram_sum":-1}]
-R2_CANDIDATE_OUTCOMES PASS :: outcomes={"COINCIDES":0,"DISAGREES":2,"NOT_COMPARABLE":7}; verdict=NO_COINCIDENCE_IN_ENUMERATED_INVENTORY__LANDED_NEWNESS_OPEN
+R0_PRIMARY_AST_TEXT_AND_PINS PASS :: reads=4<=9; sha_pins=True; primary_executed=false
+R1_INDEPENDENT_SHARED_INPUTS PASS :: witnesses=21; orbit_table=[{"J":1,"class":"CNOT","control_arity":1,"member_count":6,"off_diagonal_control_gram_sum":0},{"J":2,"class":"TOF_PERPENDICULAR_CONTROLS","control_arity":2,"member_count":12,"off_diagonal_control_gram_sum":0},{"J":0,"class":"TOF_OPPOSITE_CONTROLS","control_arity":2,"member_count":3,"off_diagonal_control_gram_sum":-1}]; rotations=24; J_invariant=True
+R2_CANDIDATE_OUTCOMES PASS :: outcomes={"COINCIDES":0,"DISAGREES":2,"NOT_COMPARABLE":9}; verdict=NO_COINCIDENCE_IN_ENUMERATED_INVENTORY__LANDED_NEWNESS_OPEN
 R3_RECEIPT_CACHE_NOTE_BINDING PASS :: bound=True
-R4_ACTIVE_CORRUPTION_PROBES PASS :: rejected=11/11
-R5_CONTROLS PASS :: determinism=True; runtime_s=0.007<300; stdout_bytes=896<6000<150000
+R4_ACTIVE_CORRUPTION_PROBES PASS :: rejected=13/13
+R5_CONTROLS PASS :: determinism=True; runtime_s=0.015<300; stdout_bytes=928<6000<150000
 TOTAL: PASS=6 FAIL=0
 
 ----- stderr -----

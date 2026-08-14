@@ -9,62 +9,84 @@
   },
   "controls": {
     "blob_pins_match": true,
+    "current_record_boundary": true,
     "determinism_replay": true,
     "head_descends_from_pinned_main": true,
     "house_stdout_limit_bytes": 6000,
     "input_git_blobs": {
-      "c186c8ba7f44f2245cf38e59fc429ce90a6e0d7d@scripts/frontier_cycle980_witness_orbit_multiplicity_2026_08_11.py": "5bded2470ec361453f168a68a120d0e4feba9b83",
-      "ea0968c71ad46c39c6dacb39f88a18780363b71f@docs/OH_SEVEN_SITE_STAR_SHELL_LEVERAGE_POSITIVE_THEOREM_NOTE_2026-06-10.md": "316ca3f058c3608025d2481f27a18cfb7d9dcde6",
-      "ea0968c71ad46c39c6dacb39f88a18780363b71f@docs/historic_intake/HISTORIC_PHYSICAL_COLUMN_FAMILY_PARITY_LAW_FORCED_ORBITS_CYCLE733_NOTE_2026_08_04_INTAKE_NOTE_2026-08-05.md": "5c18bbbaf1609214bba32fff04e3a383840bb37e",
-      "ea0968c71ad46c39c6dacb39f88a18780363b71f@docs/historic_intake/HISTORIC_PHYSICAL_LEAST_COST_CUTTING_PIECE_CHARGE_CYCLE735_NOTE_2026_08_05_INTAKE_NOTE_2026-08-05.md": "896f834c3fd7e9122f4634a1b93396bc67df11d5",
-      "ea0968c71ad46c39c6dacb39f88a18780363b71f@docs/historic_intake/HISTORIC_PHYSICAL_PARITY_CERTIFICATE_COST_SPECTRUM_CYCLE732_NOTE_2026_08_04_INTAKE_NOTE_2026-08-05.md": "c1124cd601eeae013ba5ce71efaf6be80353e5ff",
-      "ea0968c71ad46c39c6dacb39f88a18780363b71f@scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": "c123b8d681c3d76fce08ef13d7673622deac64ad"
+      "625236e91e1c3ddbfe5aeaa36c7d37a7c9e78b46@docs/MINIMAL_AXIOMS_2026-06-29.md": "bc23300becfe4e4db57153c0e94cfcdf2338da71",
+      "625236e91e1c3ddbfe5aeaa36c7d37a7c9e78b46@docs/OH_SEVEN_SITE_STAR_SHELL_LEVERAGE_POSITIVE_THEOREM_NOTE_2026-06-10.md": "316ca3f058c3608025d2481f27a18cfb7d9dcde6",
+      "625236e91e1c3ddbfe5aeaa36c7d37a7c9e78b46@docs/PHYSICAL_CELL_CUTTING_CARRIER_PARITY_LAW_CYCLE746_NOTE_2026-08-08.md": "be33db194fa1ca8109594779b49f87e497643e91",
+      "625236e91e1c3ddbfe5aeaa36c7d37a7c9e78b46@docs/PHYSICAL_CELL_CUTTING_CHARGE_SPACE_CYCLE736_NOTE_2026-08-05.md": "5850cc0477045f0c710b801b70b45409d148283b",
+      "625236e91e1c3ddbfe5aeaa36c7d37a7c9e78b46@docs/historic_intake/HISTORIC_PHYSICAL_COLUMN_FAMILY_PARITY_LAW_FORCED_ORBITS_CYCLE733_NOTE_2026_08_04_INTAKE_NOTE_2026-08-05.md": "5c18bbbaf1609214bba32fff04e3a383840bb37e",
+      "625236e91e1c3ddbfe5aeaa36c7d37a7c9e78b46@docs/historic_intake/HISTORIC_PHYSICAL_LEAST_COST_CUTTING_PIECE_CHARGE_CYCLE735_NOTE_2026_08_05_INTAKE_NOTE_2026-08-05.md": "896f834c3fd7e9122f4634a1b93396bc67df11d5",
+      "625236e91e1c3ddbfe5aeaa36c7d37a7c9e78b46@docs/historic_intake/HISTORIC_PHYSICAL_PARITY_CERTIFICATE_COST_SPECTRUM_CYCLE732_NOTE_2026_08_04_INTAKE_NOTE_2026-08-05.md": "c1124cd601eeae013ba5ce71efaf6be80353e5ff",
+      "625236e91e1c3ddbfe5aeaa36c7d37a7c9e78b46@scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": "c123b8d681c3d76fce08ef13d7673622deac64ad",
+      "625236e91e1c3ddbfe5aeaa36c7d37a7c9e78b46@scripts/frontier_cycle980_witness_orbit_multiplicity_2026_08_11.py": "f62738459cf718362a28ec0a66dfe52f417b6423"
     },
     "input_sha256": {
-      "c186c8ba7f44f2245cf38e59fc429ce90a6e0d7d@scripts/frontier_cycle980_witness_orbit_multiplicity_2026_08_11.py": "a6508e92cdd0b9885c08b2a8757fe9cfaf6eedc4f2ac349d6c7713a9aa2f0305",
-      "ea0968c71ad46c39c6dacb39f88a18780363b71f@docs/OH_SEVEN_SITE_STAR_SHELL_LEVERAGE_POSITIVE_THEOREM_NOTE_2026-06-10.md": "37192bf117112da608ba3c0f077867b5bf0375c488bb84d114cbb291a6b42329",
-      "ea0968c71ad46c39c6dacb39f88a18780363b71f@docs/historic_intake/HISTORIC_PHYSICAL_COLUMN_FAMILY_PARITY_LAW_FORCED_ORBITS_CYCLE733_NOTE_2026_08_04_INTAKE_NOTE_2026-08-05.md": "39470439a04d9ace2bfed9d187d5cac0add60be45ace8b8fe204769d3788c63a",
-      "ea0968c71ad46c39c6dacb39f88a18780363b71f@docs/historic_intake/HISTORIC_PHYSICAL_LEAST_COST_CUTTING_PIECE_CHARGE_CYCLE735_NOTE_2026_08_05_INTAKE_NOTE_2026-08-05.md": "95b7a36aac1a693e815f20614f04f34f59923c423359e701a850524579849b95",
-      "ea0968c71ad46c39c6dacb39f88a18780363b71f@docs/historic_intake/HISTORIC_PHYSICAL_PARITY_CERTIFICATE_COST_SPECTRUM_CYCLE732_NOTE_2026_08_04_INTAKE_NOTE_2026-08-05.md": "fe03ac2155e0e295440b1277c8933f7802807a4eca4f10909a9aaec9dc740c30",
-      "ea0968c71ad46c39c6dacb39f88a18780363b71f@scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4"
+      "625236e91e1c3ddbfe5aeaa36c7d37a7c9e78b46@docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "625236e91e1c3ddbfe5aeaa36c7d37a7c9e78b46@docs/OH_SEVEN_SITE_STAR_SHELL_LEVERAGE_POSITIVE_THEOREM_NOTE_2026-06-10.md": "37192bf117112da608ba3c0f077867b5bf0375c488bb84d114cbb291a6b42329",
+      "625236e91e1c3ddbfe5aeaa36c7d37a7c9e78b46@docs/PHYSICAL_CELL_CUTTING_CARRIER_PARITY_LAW_CYCLE746_NOTE_2026-08-08.md": "6905e69b9785f4ab7ad90803d7a6ae6cb678b467d136feee6cdeac8e3d7049b0",
+      "625236e91e1c3ddbfe5aeaa36c7d37a7c9e78b46@docs/PHYSICAL_CELL_CUTTING_CHARGE_SPACE_CYCLE736_NOTE_2026-08-05.md": "b577a9ccfb12a246022a2caa85aab0f87d5cc65005b89d0b8d252b499cf56004",
+      "625236e91e1c3ddbfe5aeaa36c7d37a7c9e78b46@docs/historic_intake/HISTORIC_PHYSICAL_COLUMN_FAMILY_PARITY_LAW_FORCED_ORBITS_CYCLE733_NOTE_2026_08_04_INTAKE_NOTE_2026-08-05.md": "39470439a04d9ace2bfed9d187d5cac0add60be45ace8b8fe204769d3788c63a",
+      "625236e91e1c3ddbfe5aeaa36c7d37a7c9e78b46@docs/historic_intake/HISTORIC_PHYSICAL_LEAST_COST_CUTTING_PIECE_CHARGE_CYCLE735_NOTE_2026_08_05_INTAKE_NOTE_2026-08-05.md": "95b7a36aac1a693e815f20614f04f34f59923c423359e701a850524579849b95",
+      "625236e91e1c3ddbfe5aeaa36c7d37a7c9e78b46@docs/historic_intake/HISTORIC_PHYSICAL_PARITY_CERTIFICATE_COST_SPECTRUM_CYCLE732_NOTE_2026_08_04_INTAKE_NOTE_2026-08-05.md": "fe03ac2155e0e295440b1277c8933f7802807a4eca4f10909a9aaec9dc740c30",
+      "625236e91e1c3ddbfe5aeaa36c7d37a7c9e78b46@scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
+      "625236e91e1c3ddbfe5aeaa36c7d37a7c9e78b46@scripts/frontier_cycle980_witness_orbit_multiplicity_2026_08_11.py": "757b38aa46265c05e5bfba8bdef81315f77b348bade2347064e9cf05bc64877d"
     },
-    "literal_source_read_count": 6,
+    "literal_source_read_count": 9,
     "literal_source_reads": [
       [
-        "c186c8ba7f44f2245cf38e59fc429ce90a6e0d7d",
+        "625236e91e1c3ddbfe5aeaa36c7d37a7c9e78b46",
         "scripts/frontier_cycle980_witness_orbit_multiplicity_2026_08_11.py"
       ],
       [
-        "ea0968c71ad46c39c6dacb39f88a18780363b71f",
+        "625236e91e1c3ddbfe5aeaa36c7d37a7c9e78b46",
         "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py"
       ],
       [
-        "ea0968c71ad46c39c6dacb39f88a18780363b71f",
+        "625236e91e1c3ddbfe5aeaa36c7d37a7c9e78b46",
         "docs/OH_SEVEN_SITE_STAR_SHELL_LEVERAGE_POSITIVE_THEOREM_NOTE_2026-06-10.md"
       ],
       [
-        "ea0968c71ad46c39c6dacb39f88a18780363b71f",
+        "625236e91e1c3ddbfe5aeaa36c7d37a7c9e78b46",
         "docs/historic_intake/HISTORIC_PHYSICAL_PARITY_CERTIFICATE_COST_SPECTRUM_CYCLE732_NOTE_2026_08_04_INTAKE_NOTE_2026-08-05.md"
       ],
       [
-        "ea0968c71ad46c39c6dacb39f88a18780363b71f",
+        "625236e91e1c3ddbfe5aeaa36c7d37a7c9e78b46",
         "docs/historic_intake/HISTORIC_PHYSICAL_COLUMN_FAMILY_PARITY_LAW_FORCED_ORBITS_CYCLE733_NOTE_2026_08_04_INTAKE_NOTE_2026-08-05.md"
       ],
       [
-        "ea0968c71ad46c39c6dacb39f88a18780363b71f",
+        "625236e91e1c3ddbfe5aeaa36c7d37a7c9e78b46",
         "docs/historic_intake/HISTORIC_PHYSICAL_LEAST_COST_CUTTING_PIECE_CHARGE_CYCLE735_NOTE_2026_08_05_INTAKE_NOTE_2026-08-05.md"
+      ],
+      [
+        "625236e91e1c3ddbfe5aeaa36c7d37a7c9e78b46",
+        "docs/PHYSICAL_CELL_CUTTING_CHARGE_SPACE_CYCLE736_NOTE_2026-08-05.md"
+      ],
+      [
+        "625236e91e1c3ddbfe5aeaa36c7d37a7c9e78b46",
+        "docs/PHYSICAL_CELL_CUTTING_CARRIER_PARITY_LAW_CYCLE746_NOTE_2026-08-08.md"
+      ],
+      [
+        "625236e91e1c3ddbfe5aeaa36c7d37a7c9e78b46",
+        "docs/MINIMAL_AXIOMS_2026-06-29.md"
       ]
     ],
-    "pinned_cycle980_commit": "c186c8ba7f44f2245cf38e59fc429ce90a6e0d7d",
-    "pinned_main_commit": "ea0968c71ad46c39c6dacb39f88a18780363b71f",
+    "pinned_cycle980_commit": "625236e91e1c3ddbfe5aeaa36c7d37a7c9e78b46",
+    "pinned_main_commit": "625236e91e1c3ddbfe5aeaa36c7d37a7c9e78b46",
+    "record_properties_used": [],
     "runtime_budget_seconds": 300,
-    "runtime_seconds": 10.637446208973415,
+    "runtime_seconds": 16.53564049990382,
     "sha_pins_match": true,
-    "stdout_bytes": 753,
+    "stdout_bytes": 1424,
     "stdout_limit_bytes": 150000
   },
   "cycle": 981,
   "findings": {
+    "J_bounded_invariant_established": true,
+    "J_landed_at_pin": true,
     "candidate_inventory": [
       {
         "candidate_id": "cycle980_control_arity",
@@ -72,10 +94,10 @@
         "domain_schema": "target-centred-radius-one-gate-word",
         "extraction_evidence": "cycle980_nearby_ast_keys",
         "formula_or_definition": "number of controls",
-        "landed_at_pinned_main": false,
+        "landed_at_pinned_main": true,
         "normalization": "source-native; no affine rescaling or relabeling",
         "small_spectrum": "{1,2}",
-        "source": "c186c8ba7f44f2245cf38e59fc429ce90a6e0d7d:scripts/frontier_cycle980_witness_orbit_multiplicity_2026_08_11.py"
+        "source": "625236e91e1c3ddbfe5aeaa36c7d37a7c9e78b46:scripts/frontier_cycle980_witness_orbit_multiplicity_2026_08_11.py"
       },
       {
         "candidate_id": "cycle980_off_diagonal_control_gram_sum",
@@ -83,10 +105,10 @@
         "domain_schema": "target-centred-radius-one-gate-word",
         "extraction_evidence": "cycle980_nearby_ast_keys",
         "formula_or_definition": "sum over unordered control pairs (upper-triangular control-Gram entries)",
-        "landed_at_pinned_main": false,
+        "landed_at_pinned_main": true,
         "normalization": "source-native; no affine rescaling or relabeling",
         "small_spectrum": "{-1,0}",
-        "source": "c186c8ba7f44f2245cf38e59fc429ce90a6e0d7d:scripts/frontier_cycle980_witness_orbit_multiplicity_2026_08_11.py"
+        "source": "625236e91e1c3ddbfe5aeaa36c7d37a7c9e78b46:scripts/frontier_cycle980_witness_orbit_multiplicity_2026_08_11.py"
       },
       {
         "candidate_id": "cycle719_controller_b_rail_occupation_sum",
@@ -164,15 +186,40 @@
         "normalization": "source-native; no affine rescaling or relabeling",
         "small_spectrum": "{0,1}",
         "source": "docs/historic_intake/HISTORIC_PHYSICAL_LEAST_COST_CUTTING_PIECE_CHARGE_CYCLE735_NOTE_2026_08_05_INTAKE_NOTE_2026-08-05.md"
+      },
+      {
+        "candidate_id": "cycle736_cutting_charge_space",
+        "codomain": "integer mod 2",
+        "domain_schema": "one-cell-least-cost-cutting",
+        "extraction_evidence": "cycle736_tokens",
+        "formula_or_definition": "three nonconstant cutting charges up to complement in a rank-three induced space",
+        "landed_at_pinned_main": true,
+        "normalization": "source-native; no affine rescaling or relabeling",
+        "small_spectrum": "{0,1}",
+        "source": "docs/PHYSICAL_CELL_CUTTING_CHARGE_SPACE_CYCLE736_NOTE_2026-08-05.md"
+      },
+      {
+        "candidate_id": "cycle746_carrier_block_parity_triple",
+        "codomain": "(integer mod 2)^3",
+        "domain_schema": "cycle745-target-carrier-support",
+        "extraction_evidence": "cycle746_tokens",
+        "formula_or_definition": "(|S|, |S intersect Q2|, |S intersect Q3|) mod 2",
+        "landed_at_pinned_main": true,
+        "normalization": "source-native; no affine rescaling or relabeling",
+        "small_spectrum": "{(0,0,0),(0,1,1)}",
+        "source": "docs/PHYSICAL_CELL_CUTTING_CARRIER_PARITY_LAW_CYCLE746_NOTE_2026-08-08.md"
       }
     ],
     "coincident_landed_candidates": [],
     "extraction_evidence": {
+      "current_record_boundary": true,
       "cycle719_sum_b_ast": true,
       "cycle719_two_rail_sum_ast": true,
       "cycle732_tokens": true,
       "cycle733_tokens": true,
       "cycle735_tokens": true,
+      "cycle736_tokens": true,
+      "cycle746_tokens": true,
       "cycle980_nearby_ast_keys": true,
       "oh_leverage_tokens": true
     },
@@ -188,7 +235,7 @@
           "candidate": 2,
           "word": "TOF(+x,-x->C)"
         },
-        "landed_at_pinned_main": false,
+        "landed_at_pinned_main": true,
         "normalization": "source-native; no affine rescaling or relabeling",
         "outcome": "DISAGREES",
         "shared_input_count": 21
@@ -204,7 +251,7 @@
           "candidate": 0,
           "word": "CNOT(+x->C)"
         },
-        "landed_at_pinned_main": false,
+        "landed_at_pinned_main": true,
         "normalization": "source-native; no affine rescaling or relabeling",
         "outcome": "DISAGREES",
         "shared_input_count": 21
@@ -278,8 +325,65 @@
         "outcome": "NOT_COMPARABLE",
         "reason": "domain/type mismatch: one-cell-least-cost-cutting -> integer mod 2, not target-centred-radius-one-gate-word -> integer",
         "shared_input_count": 0
+      },
+      {
+        "J_domain_schema": "target-centred-radius-one-gate-word",
+        "candidate_domain_schema": "one-cell-least-cost-cutting",
+        "candidate_id": "cycle736_cutting_charge_space",
+        "landed_at_pinned_main": true,
+        "normalization": "source-native; no affine rescaling or relabeling",
+        "outcome": "NOT_COMPARABLE",
+        "reason": "domain/type mismatch: one-cell-least-cost-cutting -> integer mod 2, not target-centred-radius-one-gate-word -> integer",
+        "shared_input_count": 0
+      },
+      {
+        "J_domain_schema": "target-centred-radius-one-gate-word",
+        "candidate_domain_schema": "cycle745-target-carrier-support",
+        "candidate_id": "cycle746_carrier_block_parity_triple",
+        "landed_at_pinned_main": true,
+        "normalization": "source-native; no affine rescaling or relabeling",
+        "outcome": "NOT_COMPARABLE",
+        "reason": "domain/type mismatch: cycle745-target-carrier-support -> (integer mod 2)^3, not target-centred-radius-one-gate-word -> integer",
+        "shared_input_count": 0
       }
     ],
+    "invariant_measurement": {
+      "all_determinants_plus_one": true,
+      "group_closed": true,
+      "j_action_checks": 504,
+      "j_invariant_under_all_actions": true,
+      "orbit_size_spectrum": [
+        3,
+        6,
+        12
+      ],
+      "orbit_sizes": {
+        "CNOT(+x->C)": 6,
+        "CNOT(+y->C)": 6,
+        "CNOT(+z->C)": 6,
+        "CNOT(-x->C)": 6,
+        "CNOT(-y->C)": 6,
+        "CNOT(-z->C)": 6,
+        "TOF(+x,+y->C)": 12,
+        "TOF(+x,+z->C)": 12,
+        "TOF(+x,-x->C)": 3,
+        "TOF(+x,-y->C)": 12,
+        "TOF(+x,-z->C)": 12,
+        "TOF(+y,+z->C)": 12,
+        "TOF(+y,-y->C)": 3,
+        "TOF(+y,-z->C)": 12,
+        "TOF(+z,-z->C)": 3,
+        "TOF(-x,+y->C)": 12,
+        "TOF(-x,+z->C)": 12,
+        "TOF(-x,-y->C)": 12,
+        "TOF(-x,-z->C)": 12,
+        "TOF(-y,+z->C)": 12,
+        "TOF(-y,-z->C)": 12
+      },
+      "proper_cubic_group_order": 24,
+      "translation_recentring_checks": 567,
+      "translation_recentring_exact": true
+    },
     "inventory_completeness_established": false,
     "orbit_value_table": [
       {
@@ -306,37 +410,42 @@
     ],
     "physics_identification_established": false,
     "physics_identification_limit": "even an exact numeric agreement would identify functions only on the shared finite domain, not their physical interpretation",
+    "record_boundary": "current Record is pinned but unused; finite additivity, scalar I, and I(empty)=0 are neither assumed nor inferred",
     "requested_surface_presence_at_pin": {
-      "docs/PHYSICAL_CELL_CUTTING_CARRIER_PARITY_LAW_CYCLE746_NOTE_2026-08-08.md": false,
-      "docs/PHYSICAL_CELL_CUTTING_CHARGE_SPACE_CYCLE736_NOTE_2026-08-05.md": false,
+      "docs/PHYSICAL_CELL_CUTTING_CARRIER_PARITY_LAW_CYCLE746_NOTE_2026-08-08.md": true,
+      "docs/PHYSICAL_CELL_CUTTING_CHARGE_SPACE_CYCLE736_NOTE_2026-08-05.md": true,
       "docs/PHYSICAL_CELL_CUTTING_COVER_GRAM_SPECTRUM_CYCLE761_NOTE_2026-08-10.md": false,
       "docs/PHYSICAL_CELL_CUTTING_SHADOW_RANK_UNSEEN_SWAP_CYCLE754_NOTE_2026-08-09.md": false,
       "docs/PHYSICAL_CELL_CUTTING_SHAPE_CENSUS_LEAST_SHARING_CYCLE752_NOTE_2026-08-09.md": false,
       "docs/PHYSICAL_CELL_CUTTING_SHARED_COUNT_VARIANCE_LAW_CYCLE753_NOTE_2026-08-09.md": false
     },
     "search_design": {
-      "body_read_count": 6,
-      "body_read_design": "six pinned git-show bodies: two Python ASTs plus four markdown token windows",
+      "body_read_count": 9,
+      "body_read_design": "nine pinned git-show bodies: two Python ASTs plus seven markdown token windows",
       "candidate_filter": "named integer/small-spectrum local-word or local-configuration quantities, plus requested norm/control-sum/cover/leverage near-misses retained for explicit type rejection",
-      "exact_J_formula_hit_paths": [],
+      "exact_J_formula_hit_paths": [
+        "docs/WITNESS_ORBIT_MULTIPLICITY_CYCLE980_BOUNDED_THEOREM_NOTE_2026-08-11.md",
+        "scripts/frontier_cycle980_witness_orbit_multiplicity_2026_08_11.py",
+        "scripts/frontier_cycle980_witness_orbit_multiplicity_independent_check_2026_08_11.py"
+      ],
       "exact_J_formula_regex": "control_sum_norm_squared|centre-relative control displacement|norm2\\(sum_controls\\)|\\|\\|[[:space:]]*sum_i[[:space:]]+c_i[[:space:]]*\\|\\||sum_i c_i.{0,30}(norm|squared)|J\\(w\\).{0,50}(control|norm)",
       "path_scope": [
         "docs/**/*.md",
         "scripts/**/*.py"
       ],
-      "snapshot": "ea0968c71ad46c39c6dacb39f88a18780363b71f",
-      "token_index_hit_digest": "40f6672e0a8ea65a1677e944cea9070f2b5d43e1feb13bc2f62e56d6e3de82b7",
-      "token_index_hit_file_count": 2539,
+      "snapshot": "625236e91e1c3ddbfe5aeaa36c7d37a7c9e78b46",
+      "token_index_hit_digest": "644d709d22c185285f750f9ca5575c1b5b38ee4b7d1e57a5e28930455685c350",
+      "token_index_hit_file_count": 2655,
       "token_index_regex": "charge[- ]space|three[- ]parity|parity law|control[-_ ]sum|control.{0,40}sum|squared[- ]norm|norm[- ]squared|cell[- ]cut|least-cost cutting|cover|leverage|local word|local configuration"
     },
     "verdict": "NO_COINCIDENCE_IN_ENUMERATED_INVENTORY__LANDED_NEWNESS_OPEN",
-    "verdict_scope": "the nine classified candidates extracted from the pinned origin/main token/AST search; the 2539-file token index is not exhaustively classified, so corpus-wide landed-newness is open",
+    "verdict_scope": "the 11 classified candidates extracted from the pinned origin/main token/AST search; the 2655-file token index is not exhaustively classified, so corpus-wide landed-newness is open",
     "witness_count": 21,
     "witness_digest": "79f110bbad8059c4668f6ed26afa90fc1ecc53933743c1ba49a295722f1b6d2a"
   },
   "integrity_policy": "checks gate source identity, extraction, comparison, and verdict reconciliation only; COINCIDES, DISAGREES, and NOT_COMPARABLE are equally reportable",
   "pass": true,
-  "primary_source_sha256": "9df68d87fb8cae804c0108f8c88f73122d9357cc221715254e7485b977f39857",
-  "science_digest": "9dcd282f4d913b009cb6f76764b8f22a36ecfe75a1d84cf3cb636d04e287a7c1",
-  "stdout_sha256": "ba1f382fdfd9a1b2c36b21c3e01aa939392fa7082efefcf97b9684fa6e15aed2"
+  "primary_source_sha256": "4863e65179fa085ce17416a8ff5ceface37757ad394cd8889aef8960479e0089",
+  "science_digest": "b35770556df9a8984b5dbe0eb6bf080b2d22715f4fb133f78333197e30e17cd5",
+  "stdout_sha256": "170779f42d7fe955e62e64f28d83de7245492a97ebf8247541705936061803de"
 }

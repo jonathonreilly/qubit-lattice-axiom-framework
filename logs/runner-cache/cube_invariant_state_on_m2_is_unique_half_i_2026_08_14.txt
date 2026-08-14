@@ -1,0 +1,41 @@
+===== runner cache v1 =====
+runner: scripts/cube_invariant_state_on_m2_is_unique_half_i_2026_08_14.py
+runner_sha256: 2550ad08cd7c6cc030130dce8c309117b87889b36d5562a5ec629bae107ca12f
+input_fingerprint_sha256: 5714ab1edf9d6f3de433277fd9dbf32b3bc4877a1fd8ca241481c006f4546db3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+external_scientific_inputs: none; G and α are displayed theorem data
+package_local_integrity_reads: runner source, proposed source note, and live axiom memo
+measure_boundary: exact Q(i) and integer 3x3 matrices; no Born weights
+negative_scope: uniqueness of the G-invariant state, not a kernel or menu law
+PASS: qi-i-squared i^2 = -1
+PASS: pauli-squares σx^2 = σy^2 = σz^2 = I
+PASS: pauli-xyz σx σy = i σz
+PASS: rx-formula Rx sends (x,y,z) to (x,-z,y)
+PASS: rz-formula Rz sends (c,0,0) to (0,c,0)
+PASS: group-order-det G has 24 elements, each with det +1, and contains Rx, Rz
+PASS: group-closed G is closed under multiplication
+PASS: alpha-on-rho α_R(ρ(n)) = ρ(R n) on a coordinate axis
+PASS: faithful-action α_R = id iff R = I
+PASS: thm1-zero-fixed n = 0 is fixed by every R in G
+PASS: thm1-rho-zero-is-half-i ρ(0) = I_2/2
+PASS: thm2-rx-witness if n_y or n_z is nonzero then Rx n ≠ n
+PASS: thm2-only-zero-invariant the only invariant Bloch vector is 0
+PASS: thm3-unique-and-conjugate I_2/2 is the unique α-invariant state, and conjugate actions still fix only 0
+PASS: thm5-control-disagrees ρ(ê_z) disagrees with I_2/2 and is not invariant
+PASS: mutation-rho-z-invariant-fails predicate ρ(ê_z) is G-invariant fails
+PASS: mutation-nonzero-fixed-fails predicate a nonzero n is fixed by all of G fails
+PASS: mutation-half-i-ne-rho0-fails predicate I_2/2 != ρ(0) fails
+PASS: mutation-memo-axiom-content-fails predicate live memo names I/2 or Born as axiom content fails
+PASS: mutation-note-adopts-born-fails predicate note adopts I/2 as Born fails
+PASS: forbidden-absent note omits the banned phrases
+PASS: machine-status-contract note carries bounded-support status and no hypothetical axiom adoption
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: identity-gates identity gates call the three named functions
+TOTAL: PASS=24 FAIL=0
+
+----- stderr -----
+

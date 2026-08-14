@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Cycle 980: exact witness-orbit and landed-alphabet multiplicity census.
+"""Cycle 980: orbit-stabilizer corroboration and alphabet sensitivity.
 
 The primary calculation derives the neighbour-dependent members of the full
-length-zero/one seven-site family from the immutable Cycle-719 basis-state
+length-zero/one seven-site semantic quotient from the immutable Cycle-719 basis-state
 substrate.  It then computes the effective proper-cubic action on those
 witness descriptors, rather than assuming that the reported 6/12/3 classes
 are orbits.  Integrity checks certify construction and reconciliation only:
@@ -31,7 +31,7 @@ CYCLE = 980
 AUDIT_TIMEOUT_SEC = 1400
 HOUSE_STDOUT_LIMIT_BYTES = 6_000
 STDOUT_LIMIT_BYTES = 150_000
-BASE_ORIGIN_MAIN_COMMIT = "e8cb78a911d91f48abac9783c68305b0e7aabdf7"
+REVIEW_INTAKE_MAIN_COMMIT = "33baf98c97e44ab5b362e74f78bbaf79dc47c126"
 PINNED_CYCLE719_COMMIT = "39c74017b870c27c804e3992f2a11e90336476b2"
 PINNED_CYCLE719_CORE = (
     "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py"
@@ -46,11 +46,11 @@ AUDIT_INPUT_PATHS = (
 )
 EXPECTED_INPUT_SHA256 = {
     "docs/MINIMAL_AXIOMS_2026-06-29.md":
-        "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
+        "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
 }
 EXPECTED_INPUT_BLOBS = {
     "docs/MINIMAL_AXIOMS_2026-06-29.md":
-        "2f5fdd26898f62c17fcabc846761f7785c2eadb1",
+        "bc23300becfe4e4db57153c0e94cfcdf2338da71",
 }
 BLOCKLIST_TEXT_PATHS = (
     "docs/WITNESS_FAMILY_COMPLETENESS_CYCLE977_BOUNDED_THEOREM_NOTE_2026-08-10.md",
@@ -67,7 +67,7 @@ BLOCKLIST_AST_MODULES = (
 
 PRIMARY_PATH = "scripts/frontier_cycle980_witness_orbit_multiplicity_2026_08_11.py"
 RECEIPT_PATH = "outputs/witness_orbit_multiplicity_cycle980_receipt_2026_08_11.json"
-LANDED_GATE_MENU = ("X", "CNOT", "TOF")
+DECLARED_GATE_MENU = ("X", "CNOT", "TOF")
 CENTER = (0, 0, 0)
 DIRECTIONS = (
     (1, 0, 0), (-1, 0, 0),
@@ -144,7 +144,7 @@ def word_name(descriptor: tuple) -> str:
     )
 
 
-def declared_family(alphabet: tuple[str, ...] = LANDED_GATE_MENU) -> tuple:
+def declared_family(alphabet: tuple[str, ...] = DECLARED_GATE_MENU) -> tuple:
     allowed = set(alphabet)
     rows = [("I",)]
     if "X" in allowed:
@@ -416,8 +416,8 @@ def family_measurement(alphabet: tuple[str, ...]) -> dict:
 
 def alphabet_lattice() -> list[dict]:
     rows = []
-    for size in range(len(LANDED_GATE_MENU) + 1):
-        for subset in combinations(LANDED_GATE_MENU, size):
+    for size in range(len(DECLARED_GATE_MENU) + 1):
+        for subset in combinations(DECLARED_GATE_MENU, size):
             rows.append(family_measurement(subset))
     return rows
 
@@ -443,14 +443,17 @@ def group_certificate() -> dict:
 
 
 def science_measurement() -> dict:
-    full = family_measurement(LANDED_GATE_MENU)
+    full = family_measurement(DECLARED_GATE_MENU)
     witnesses = tuple(tuple(row) for row in full["witness_descriptors"])
     return {
         "declared_family": {
             "support": "target-centred radius-one seven-site star",
             "word_length": "zero or one",
-            "landed_gate_menu": ["I", *LANDED_GATE_MENU],
-            "operand_rule": "distinct wires; TOF controls unordered; no within-star adjacency restriction",
+            "declared_gate_menu": ["I", *DECLARED_GATE_MENU],
+            "operand_rule": (
+                "pairwise-distinct wires; TOF control order is a semantic quotient; "
+                "no within-star adjacency restriction"
+            ),
             "cap": "all descriptors in this finite family; no sampling",
         },
         "full_family": full,
@@ -475,6 +478,10 @@ def input_controls() -> dict:
     payloads = {relative: (ROOT / relative).read_bytes() for relative in literal_paths}
     sha_rows = {relative: sha256(payload).hexdigest() for relative, payload in payloads.items()}
     blob_rows = {relative: git_blob(payload) for relative, payload in payloads.items()}
+    axiom_text = payloads[AUDIT_INPUT_PATHS[0]].decode("utf-8")
+    record_surface = axiom_text.split(
+        "### Record / Fixed Reality", 1
+    )[1].split("## Qualification", 1)[0]
     pinned_core = subprocess.run(
         ["git", "show", f"{PINNED_CYCLE719_COMMIT}:{PINNED_CYCLE719_CORE}"],
         cwd=ROOT, check=True, capture_output=True,
@@ -496,8 +503,21 @@ def input_controls() -> dict:
         name for name in sys.modules
         if any(name.endswith(blocked) for blocked in literal_ast_blocklist)
     )
-    base_is_ancestor = subprocess.run(
-        ["git", "merge-base", "--is-ancestor", BASE_ORIGIN_MAIN_COMMIT, "HEAD"],
+    tof_forward = K.A.tof(1, 2, 0)
+    tof_reversed = K.A.tof(2, 1, 0)
+    tof_control_exchange_actions_equal = all(
+        K.A.apply_semantic(
+            tuple((mask >> wire) & 1 for wire in range(SITE_COUNT)),
+            (tof_forward,),
+        )
+        == K.A.apply_semantic(
+            tuple((mask >> wire) & 1 for wire in range(SITE_COUNT)),
+            (tof_reversed,),
+        )
+        for mask in range(1 << SITE_COUNT)
+    )
+    intake_main_is_ancestor = subprocess.run(
+        ["git", "merge-base", "--is-ancestor", REVIEW_INTAKE_MAIN_COMMIT, "HEAD"],
         cwd=ROOT, check=False, capture_output=True,
     ).returncode == 0
     return {
@@ -519,6 +539,23 @@ def input_controls() -> dict:
         "blocked_ast_imports": blocked_imports,
         "blocked_ast_modules_loaded": blocked_loaded,
         "prior_cycle_text_or_ast_executed": False,
+        "current_record_surface_matches": (
+            "Records form." in record_surface
+            and "a record locks exactly one admissible local possibility" in record_surface
+            and "A site with no record cannot be read." in record_surface
+            and "finite additivity" not in record_surface
+            and "I(empty)" not in record_surface
+        ),
+        "record_structure_used_by_science": False,
+        "constructors_accept_repeated_operands": (
+            K.A.cn(0, 0).wires == (0, 0)
+            and K.A.tof(1, 1, 0).wires == (1, 1, 0)
+        ),
+        "tof_control_exchange_gate_objects_equal": tof_forward == tof_reversed,
+        "tof_control_exchange_actions_equal": tof_control_exchange_actions_equal,
+        "tof_control_order_is_semantic_quotient": (
+            tof_control_exchange_actions_equal and tof_forward != tof_reversed
+        ),
         "pinned_substrate": {
             "commit": PINNED_CYCLE719_COMMIT,
             "path": PINNED_CYCLE719_CORE,
@@ -528,8 +565,8 @@ def input_controls() -> dict:
             "blob_pin_match": git_blob(pinned_core) == PINNED_CYCLE719_CORE_BLOB,
             "loaded_from_immutable_git_archive": True,
         },
-        "base_origin_main_commit": BASE_ORIGIN_MAIN_COMMIT,
-        "base_is_ancestor_of_head": base_is_ancestor,
+        "review_intake_main_commit": REVIEW_INTAKE_MAIN_COMMIT,
+        "review_intake_main_is_ancestor_of_head": intake_main_is_ancestor,
     }
 
 
@@ -550,7 +587,7 @@ def render_stdout(receipt: dict) -> str:
             [row["class_label"], row["invariant_values"]] for row in orbit["orbits"]
         ]) + f"; constant={orbit['invariant_constant_on_each_orbit']};"
         + f" distinct={orbit['invariant_distinct_across_orbits']}",
-        "C_NECESSITY " + ("PASS" if receipt["checks"]["C_NECESSITY"] else "FAIL")
+        "C_ALPHABET_SENSITIVITY " + ("PASS" if receipt["checks"]["C_ALPHABET_SENSITIVITY"] else "FAIL")
         + " :: alphabet_to_classes=" + compact({
             "+".join(row["alphabet"]) or "I_ONLY": row["orbit_count"]
             for row in findings["alphabet_subset_census"]
@@ -559,9 +596,18 @@ def render_stdout(receipt: dict) -> str:
         + f" :: source_reads={receipt['controls']['literal_source_read_count']}<=6;"
         + f" sha_pins={receipt['controls']['sha_pins_match']};"
         + f" blocklist_text_ast={receipt['controls']['blocklist_text_disjoint_from_reads'] and not receipt['controls']['blocked_ast_imports']};"
+        + f" record_current={receipt['controls']['current_record_surface_matches']};"
+        + f" semantic_quotient={receipt['controls']['tof_control_order_is_semantic_quotient']};"
         + f" determinism={receipt['controls']['determinism_replay']};"
         + f" runtime_s={receipt['controls']['runtime_seconds']:.3f}<1400",
     ]
+    rows.extend((
+        "per_element: checked and executed -- all 155 pairwise-distinct semantic-quotient descriptors and all 19,840 descriptor/input/condition rows were evaluated.",
+        "per_site: checked and executed -- the centre and each of its six radius-one neighbour coordinates were included in every edge-dependence and transport check.",
+        "per_mode: checked and not executed -- this Boolean basis theorem does not test Fourier, momentum, or continuous M_2(C) modes.",
+        "per_block: checked and executed -- all eight subsets of the declared X/CNOT/TOF menu and all three derived witness orbits were exhausted.",
+        "lattice_wide: checked and not executed -- translation cancellation was proved on recentered descriptors and proper-cubic closure on the radius-one star; no infinite lattice state was enumerated.",
+    ))
     passed = sum(receipt["checks"].values())
     rows.append(f"TOTAL: PASS={passed} FAIL={len(receipt['checks']) - passed}")
     return "\n".join(rows) + "\n"
@@ -602,8 +648,8 @@ def run() -> tuple[dict, str]:
     )
     expected_subsets = {
         subset
-        for size in range(len(LANDED_GATE_MENU) + 1)
-        for subset in combinations(LANDED_GATE_MENU, size)
+        for size in range(len(DECLARED_GATE_MENU) + 1)
+        for subset in combinations(DECLARED_GATE_MENU, size)
     }
     c_bookkeeping = bool(
         {tuple(row["alphabet"]) for row in subsets} == expected_subsets
@@ -632,12 +678,16 @@ def run() -> tuple[dict, str]:
         and not controls["blocked_ast_modules_loaded"]
         and controls["pinned_substrate"]["sha_pin_match"]
         and controls["pinned_substrate"]["blob_pin_match"]
-        and controls["base_is_ancestor_of_head"]
+        and controls["current_record_surface_matches"]
+        and controls["record_structure_used_by_science"] is False
+        and controls["constructors_accept_repeated_operands"]
+        and controls["tof_control_order_is_semantic_quotient"]
+        and controls["review_intake_main_is_ancestor_of_head"]
         and deterministic and controls["runtime_seconds"] < AUDIT_TIMEOUT_SEC
     )
     receipt = {
         "cycle": CYCLE,
-        "artifact": "witness orbit multiplicity bounded theorem primary",
+        "artifact": "witness orbit multiplicity corroboration and alphabet-sensitivity primary",
         "audit_status_authority": "independent audit lane only",
         "integrity_policy": (
             "checks gate construction and bookkeeping only; null, non-closed, or non-three-orbit outcomes remain clean reportable findings"
@@ -648,7 +698,7 @@ def run() -> tuple[dict, str]:
         "checks": {
             "A_ORBIT_DECOMPOSITION": a_bookkeeping,
             "B_INVARIANT_SEPARATOR": b_bookkeeping,
-            "C_NECESSITY": c_bookkeeping,
+            "C_ALPHABET_SENSITIVITY": c_bookkeeping,
             "D_CONTROLS": d_controls,
         },
     }

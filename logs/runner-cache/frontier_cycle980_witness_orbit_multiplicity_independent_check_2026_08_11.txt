@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle980_witness_orbit_multiplicity_independent_check_2026_08_11.py
-runner_sha256: f5c34fef3342834a6c7d8fd7c151d288def44447a19157f1fc3e4cedd4e7fa1e
-input_fingerprint_sha256: 5aac87f094a2bc1711532190df114caa28d77be40cdd3d068b369b560774658e
+runner_sha256: 57649ba0ff51ac34fe739158a2f0f02a5f1ed0f4371f052dbb0e283778454780
+input_fingerprint_sha256: ec8b3b801f6c8b0667320eed38fedf1a3b193a47d95bd735f174ad5d1ba48022
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.38
+elapsed_sec: 0.83
 status: ok
 ----- stdout -----
 CYCLE980_WITNESS_ORBIT_MULTIPLICITY_INDEPENDENT_CHECK
@@ -12,8 +12,8 @@ R0_PRIMARY_AST_TEXT_AND_PINS PASS :: source_reads=4<=6; sha_pins=True; primary_e
 R1_INDEPENDENT_ORBIT_CENSUS PASS :: orbit_size_stabilizer=[[6,4],[12,2],[3,8]]; witnesses=21
 R2_INVARIANT_AND_ALPHABET PASS :: J_constant=True; J_distinct=True; alphabet_classes={"CNOT":1,"CNOT+TOF":3,"I_ONLY":0,"TOF":2,"X":0,"X+CNOT":1,"X+CNOT+TOF":3,"X+TOF":2}
 R3_RECEIPT_CACHE_BINDING PASS :: primary_source_receipt_cache_bound=True
-R4_ACTIVE_CORRUPTION_PROBES PASS :: rejected=8/8
-R5_CONTROLS PASS :: determinism=True; runtime_s=0.307<300; stdout_bytes=642<6000<150000
+R4_ACTIVE_CORRUPTION_PROBES PASS :: rejected=10/10
+R5_CONTROLS PASS :: determinism=True; runtime_s=0.766<300; stdout_bytes=644<6000<150000
 TOTAL: PASS=6 FAIL=0
 
 ----- stderr -----

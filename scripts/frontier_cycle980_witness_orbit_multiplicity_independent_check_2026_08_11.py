@@ -32,9 +32,9 @@ AUDIT_INPUT_PATHS = (
 )
 EXPECTED_INPUT_SHA256 = {
     AUDIT_INPUT_PATHS[0]:
-        "a6508e92cdd0b9885c08b2a8757fe9cfaf6eedc4f2ac349d6c7713a9aa2f0305",
+        "757b38aa46265c05e5bfba8bdef81315f77b348bade2347064e9cf05bc64877d",
     AUDIT_INPUT_PATHS[3]:
-        "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
+        "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
 }
 EXPECTED_PRIMARY_BLOCKLIST_TEXT_PATHS = (
     "docs/WITNESS_FAMILY_COMPLETENESS_CYCLE977_BOUNDED_THEOREM_NOTE_2026-08-10.md",
@@ -68,7 +68,7 @@ CHECKER_PATH = (
 RECEIPT_PATH = (
     "outputs/witness_orbit_multiplicity_cycle980_independent_check_receipt_2026_08_11.json"
 )
-LANDED_GATE_MENU = ("X", "CNOT", "TOF")
+DECLARED_GATE_MENU = ("X", "CNOT", "TOF")
 CENTER = (0, 0, 0)
 DIRECTIONS = (
     (1, 0, 0), (-1, 0, 0),
@@ -88,6 +88,8 @@ REFUTE_SPEC = (
     {"id": "INVARIANT_DISTINCT_FLIPPED", "target": "B", "mutation": "flip the separator outcome"},
     {"id": "TOF_ALPHABET_CLASS_COUNT_CORRUPTED", "target": "C", "mutation": "replace TOF-only two orbits by three"},
     {"id": "TRANSLATION_KERNEL_FLIPPED", "target": "A", "mutation": "claim translations are not the recentered kernel"},
+    {"id": "RECORD_USE_FLIPPED", "target": "D", "mutation": "claim the finite science uses Record structure"},
+    {"id": "SEMANTIC_QUOTIENT_FLIPPED", "target": "D", "mutation": "deny the TOF control-order semantic quotient"},
     {"id": "CACHE_ORBIT_HEADLINE_CORRUPTED", "target": "R3", "mutation": "replace the 6/12/3 cache headline"},
 )
 
@@ -378,19 +380,22 @@ def independent_family_measurement(alphabet: tuple[str, ...]) -> dict:
 
 
 def independent_measurement() -> dict:
-    full = independent_family_measurement(LANDED_GATE_MENU)
+    full = independent_family_measurement(DECLARED_GATE_MENU)
     witnesses = tuple(tuple(row) for row in full["witness_descriptors"])
     orbit = independent_orbits(witnesses)
     subsets = [
         independent_family_measurement(subset)
-        for size in range(4) for subset in combinations(LANDED_GATE_MENU, size)
+        for size in range(4) for subset in combinations(DECLARED_GATE_MENU, size)
     ]
     return {
         "declared_family": {
             "support": "target-centred radius-one seven-site star",
             "word_length": "zero or one",
-            "landed_gate_menu": ["I", *LANDED_GATE_MENU],
-            "operand_rule": "distinct wires; TOF controls unordered; no within-star adjacency restriction",
+            "declared_gate_menu": ["I", *DECLARED_GATE_MENU],
+            "operand_rule": (
+                "pairwise-distinct wires; TOF control order is a semantic quotient; "
+                "no within-star adjacency restriction"
+            ),
             "cap": "all descriptors in this finite family; no sampling",
         },
         "full_family": full,
@@ -447,6 +452,10 @@ def source_controls() -> dict:
     literal_paths = ast_literal_assignment(own_tree, "AUDIT_INPUT_PATHS")
     payloads = {relative: (ROOT / relative).read_bytes() for relative in literal_paths}
     sha_rows = {relative: sha256(payload).hexdigest() for relative, payload in payloads.items()}
+    axiom_text = payloads[AUDIT_INPUT_PATHS[3]].decode()
+    record_surface = axiom_text.split(
+        "### Record / Fixed Reality", 1
+    )[1].split("## Qualification", 1)[0]
     primary_source = payloads[AUDIT_INPUT_PATHS[0]].decode()
     primary_tree = ast.parse(primary_source, filename=AUDIT_INPUT_PATHS[0])
     primary_functions = {
@@ -472,6 +481,13 @@ def source_controls() -> dict:
         "sha_pins_match": all(
             sha_rows.get(relative) == expected
             for relative, expected in EXPECTED_INPUT_SHA256.items()
+        ),
+        "current_record_surface_matches": (
+            "Records form." in record_surface
+            and "a record locks exactly one admissible local possibility" in record_surface
+            and "A site with no record cannot be read." in record_surface
+            and "finite additivity" not in record_surface
+            and "I(empty)" not in record_surface
         ),
         "primary_receipt_sha256": sha_rows[AUDIT_INPUT_PATHS[1]],
         "primary_cache_sha256": sha_rows[AUDIT_INPUT_PATHS[2]],
@@ -531,6 +547,11 @@ def validate_cache(controls: dict, expected: dict) -> bool:
         and f"constant={orbit['invariant_constant_on_each_orbit']}" in body
         and f"distinct={orbit['invariant_distinct_across_orbits']}" in body
         and f"alphabet_to_classes={expected_alphabets}" in body
+        and "record_current=True; semantic_quotient=True" in body
+        and all(
+            f"{prefix}: checked and " in body
+            for prefix in ("per_element", "per_site", "per_mode", "per_block", "lattice_wide")
+        )
         and body.rstrip().endswith("TOTAL: PASS=4 FAIL=0")
     )
 
@@ -542,6 +563,10 @@ def validate_primary(receipt: dict, expected: dict) -> bool:
         and receipt.get("pass") is True
         and all(receipt.get("checks", {}).values())
         and receipt.get("primary_source_sha256") == EXPECTED_INPUT_SHA256[AUDIT_INPUT_PATHS[0]]
+        and receipt.get("controls", {}).get("current_record_surface_matches") is True
+        and receipt.get("controls", {}).get("record_structure_used_by_science") is False
+        and receipt.get("controls", {}).get("constructors_accept_repeated_operands") is True
+        and receipt.get("controls", {}).get("tof_control_order_is_semantic_quotient") is True
     )
 
 
@@ -580,6 +605,12 @@ def corruption_probes(receipt: dict, cache: str, expected: dict, controls: dict)
     mutated = copy.deepcopy(receipt)
     mutated["findings"]["translation_kernel"]["translations_are_kernel_after_recentring"] = False
     results["TRANSLATION_KERNEL_FLIPPED"] = receipt_rejected(mutated)
+    mutated = copy.deepcopy(receipt)
+    mutated["controls"]["record_structure_used_by_science"] = True
+    results["RECORD_USE_FLIPPED"] = receipt_rejected(mutated)
+    mutated = copy.deepcopy(receipt)
+    mutated["controls"]["tof_control_order_is_semantic_quotient"] = False
+    results["SEMANTIC_QUOTIENT_FLIPPED"] = receipt_rejected(mutated)
     orbit_rows = expected["orbit_decomposition"]["orbits"]
     original_orbits = compact([
         [row["class_label"], row["member_count"], row["effective_stabilizer_order"]]
@@ -653,6 +684,7 @@ def run() -> tuple[dict, str]:
     r0 = bool(
         controls["literal_source_read_count"] <= 6
         and controls["all_inputs_relative_and_present"] and controls["sha_pins_match"]
+        and controls["current_record_surface_matches"]
         and controls["primary_expected_functions_present"]
         and len(controls["primary_audit_input_paths"]) <= 6
         and tuple(controls["primary_blocklist_text_paths"]) == EXPECTED_PRIMARY_BLOCKLIST_TEXT_PATHS

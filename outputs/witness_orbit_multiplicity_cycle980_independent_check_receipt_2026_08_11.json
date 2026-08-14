@@ -38,6 +38,16 @@
         "target": "A"
       },
       {
+        "id": "RECORD_USE_FLIPPED",
+        "mutation": "claim the finite science uses Record structure",
+        "target": "D"
+      },
+      {
+        "id": "SEMANTIC_QUOTIENT_FLIPPED",
+        "mutation": "deny the TOF control-order semantic quotient",
+        "target": "D"
+      },
+      {
         "id": "CACHE_ORBIT_HEADLINE_CORRUPTED",
         "mutation": "replace the 6/12/3 cache headline",
         "target": "R3"
@@ -48,6 +58,8 @@
       "INVARIANT_DISTINCT_FLIPPED": true,
       "INVARIANT_VALUE_CORRUPTED": true,
       "ORBIT_MEMBER_REMOVED": true,
+      "RECORD_USE_FLIPPED": true,
+      "SEMANTIC_QUOTIENT_FLIPPED": true,
       "STABILIZER_CORRUPTED": true,
       "TOF_ALPHABET_CLASS_COUNT_CORRUPTED": true,
       "TRANSLATION_KERNEL_FLIPPED": true,
@@ -55,7 +67,7 @@
     }
   },
   "checker": "independent refutation checker",
-  "checker_source_sha256": "f5c34fef3342834a6c7d8fd7c151d288def44447a19157f1fc3e4cedd4e7fa1e",
+  "checker_source_sha256": "57649ba0ff51ac34fe739158a2f0f02a5f1ed0f4371f052dbb0e283778454780",
   "checks": {
     "R0_PRIMARY_AST_TEXT_AND_PINS": true,
     "R1_INDEPENDENT_ORBIT_CENSUS": true,
@@ -67,13 +79,14 @@
   "controls": {
     "all_inputs_relative_and_present": true,
     "blocked_primary_imports": [],
+    "current_record_surface_matches": true,
     "determinism_replay": true,
     "house_stdout_limit_bytes": 6000,
     "input_sha256": {
-      "docs/MINIMAL_AXIOMS_2026-06-29.md": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
-      "logs/runner-cache/frontier_cycle980_witness_orbit_multiplicity_2026_08_11.txt": "450a53e2b32a8d263f43c831d2b8cd4ff10f9ddfe26228cf00eab2481e968a57",
-      "outputs/witness_orbit_multiplicity_cycle980_receipt_2026_08_11.json": "2567e34c0b20271abc1e74a76cfbf792440b0d62a5698f376ffc8c8dff8524c8",
-      "scripts/frontier_cycle980_witness_orbit_multiplicity_2026_08_11.py": "a6508e92cdd0b9885c08b2a8757fe9cfaf6eedc4f2ac349d6c7713a9aa2f0305"
+      "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "logs/runner-cache/frontier_cycle980_witness_orbit_multiplicity_2026_08_11.txt": "9c18bba11ee27c44fc763dbf5c75f0c80fb572caf9a927d8f14172cf061b8610",
+      "outputs/witness_orbit_multiplicity_cycle980_receipt_2026_08_11.json": "254cf371039aafb3196796ca4a12bd99a77bc7f20e5169cd6c587284bf56fc0c",
+      "scripts/frontier_cycle980_witness_orbit_multiplicity_2026_08_11.py": "757b38aa46265c05e5bfba8bdef81315f77b348bade2347064e9cf05bc64877d"
     },
     "literal_audit_input_paths": [
       "scripts/frontier_cycle980_witness_orbit_multiplicity_2026_08_11.py",
@@ -97,16 +110,16 @@
       "outputs/witness_family_completeness_cycle977_receipt_2026_08_10.json",
       "outputs/class_coexistence_born_requirement_cycle979_receipt_2026_08_10.json"
     ],
-    "primary_cache_sha256": "450a53e2b32a8d263f43c831d2b8cd4ff10f9ddfe26228cf00eab2481e968a57",
+    "primary_cache_sha256": "9c18bba11ee27c44fc763dbf5c75f0c80fb572caf9a927d8f14172cf061b8610",
     "primary_expected_functions_present": true,
     "primary_imported_or_executed": false,
     "primary_pinned_commit": "39c74017b870c27c804e3992f2a11e90336476b2",
     "primary_pinned_core_sha256": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
-    "primary_receipt_sha256": "2567e34c0b20271abc1e74a76cfbf792440b0d62a5698f376ffc8c8dff8524c8",
+    "primary_receipt_sha256": "254cf371039aafb3196796ca4a12bd99a77bc7f20e5169cd6c587284bf56fc0c",
     "runtime_budget_seconds": 300,
-    "runtime_seconds": 0.306600832962431,
+    "runtime_seconds": 0.7658513750648126,
     "sha_pins_match": true,
-    "stdout_bytes": 642,
+    "stdout_bytes": 644,
     "stdout_limit_bytes": 150000
   },
   "cycle": 980,
@@ -850,13 +863,13 @@
     ],
     "declared_family": {
       "cap": "all descriptors in this finite family; no sampling",
-      "landed_gate_menu": [
+      "declared_gate_menu": [
         "I",
         "X",
         "CNOT",
         "TOF"
       ],
-      "operand_rule": "distinct wires; TOF controls unordered; no within-star adjacency restriction",
+      "operand_rule": "pairwise-distinct wires; TOF control order is a semantic quotient; no within-star adjacency restriction",
       "support": "target-centred radius-one seven-site star",
       "word_length": "zero or one"
     },
@@ -1142,5 +1155,5 @@
   },
   "pass": true,
   "primary_imported_or_executed": false,
-  "stdout_sha256": "6b875d48ebe9719b00ddce7a49cc1106a526ddc2fec829b60d4800cac09a9e84"
+  "stdout_sha256": "7ab5197a88e7621ead1a875894414d73a09ce2eb229bf24f40cc862d8998cfe0"
 }

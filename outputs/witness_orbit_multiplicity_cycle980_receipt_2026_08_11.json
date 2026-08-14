@@ -1,16 +1,14 @@
 {
-  "artifact": "witness orbit multiplicity bounded theorem primary",
+  "artifact": "witness orbit multiplicity corroboration and alphabet-sensitivity primary",
   "audit_status_authority": "independent audit lane only",
   "checks": {
     "A_ORBIT_DECOMPOSITION": true,
     "B_INVARIANT_SEPARATOR": true,
-    "C_NECESSITY": true,
+    "C_ALPHABET_SENSITIVITY": true,
     "D_CONTROLS": true
   },
   "controls": {
     "all_inputs_relative_and_present": true,
-    "base_is_ancestor_of_head": true,
-    "base_origin_main_commit": "e8cb78a911d91f48abac9783c68305b0e7aabdf7",
     "blob_pins_match": true,
     "blocked_ast_imports": [],
     "blocked_ast_modules_loaded": [],
@@ -27,13 +25,15 @@
       "outputs/witness_family_completeness_cycle977_receipt_2026_08_10.json",
       "outputs/class_coexistence_born_requirement_cycle979_receipt_2026_08_10.json"
     ],
+    "constructors_accept_repeated_operands": true,
+    "current_record_surface_matches": true,
     "determinism_replay": true,
     "house_stdout_limit_bytes": 6000,
     "input_git_blobs": {
-      "docs/MINIMAL_AXIOMS_2026-06-29.md": "2f5fdd26898f62c17fcabc846761f7785c2eadb1"
+      "docs/MINIMAL_AXIOMS_2026-06-29.md": "bc23300becfe4e4db57153c0e94cfcdf2338da71"
     },
     "input_sha256": {
-      "docs/MINIMAL_AXIOMS_2026-06-29.md": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39"
+      "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
     },
     "literal_audit_input_paths": [
       "docs/MINIMAL_AXIOMS_2026-06-29.md"
@@ -49,11 +49,17 @@
       "sha_pin_match": true
     },
     "prior_cycle_text_or_ast_executed": false,
+    "record_structure_used_by_science": false,
+    "review_intake_main_commit": "33baf98c97e44ab5b362e74f78bbaf79dc47c126",
+    "review_intake_main_is_ancestor_of_head": true,
     "runtime_budget_seconds": 1400,
-    "runtime_seconds": 0.8894458339782432,
+    "runtime_seconds": 1.9889658340252936,
     "sha_pins_match": true,
-    "stdout_bytes": 882,
-    "stdout_limit_bytes": 150000
+    "stdout_bytes": 1711,
+    "stdout_limit_bytes": 150000,
+    "tof_control_exchange_actions_equal": true,
+    "tof_control_exchange_gate_objects_equal": false,
+    "tof_control_order_is_semantic_quotient": true
   },
   "cycle": 980,
   "findings": {
@@ -812,13 +818,13 @@
     ],
     "declared_family": {
       "cap": "all descriptors in this finite family; no sampling",
-      "landed_gate_menu": [
+      "declared_gate_menu": [
         "I",
         "X",
         "CNOT",
         "TOF"
       ],
-      "operand_rule": "distinct wires; TOF controls unordered; no within-star adjacency restriction",
+      "operand_rule": "pairwise-distinct wires; TOF control order is a semantic quotient; no within-star adjacency restriction",
       "support": "target-centred radius-one seven-site star",
       "word_length": "zero or one"
     },
@@ -1106,7 +1112,7 @@
   },
   "integrity_policy": "checks gate construction and bookkeeping only; null, non-closed, or non-three-orbit outcomes remain clean reportable findings",
   "pass": true,
-  "primary_source_sha256": "a6508e92cdd0b9885c08b2a8757fe9cfaf6eedc4f2ac349d6c7713a9aa2f0305",
-  "science_digest": "0dcf7e29750f903c693137322323d5575cd3d33bb6bc5cc4f88fd2aa0aabeb0a",
-  "stdout_sha256": "53e66feee6e5286a67b59229751b8bb20b7d97342ae2ee668cd626e4bd653cd4"
+  "primary_source_sha256": "757b38aa46265c05e5bfba8bdef81315f77b348bade2347064e9cf05bc64877d",
+  "science_digest": "f700ab2cb79a501c210ef2c19edf7e21d4babcbb503dfbaf38646e2c3d3a7c46",
+  "stdout_sha256": "7e3f658ced50125245c1d770ee664e171aaff733b9be0aa5271a3e7d8df37131"
 }

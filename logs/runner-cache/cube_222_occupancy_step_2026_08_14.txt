@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/cube_222_occupancy_step_2026_08_14.py
+runner_sha256: 726e32d246510288f5ba7fe59a4b8e2253a3d741e20e852a4b90c532f3479ecf
+input_fingerprint_sha256: a8c5169cb5ddd2da3c122890cc6ae61e103fe6313d1c8ea5a7e4b712ee273e85
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+external_scientific_inputs: none
+package_local_integrity_reads: runner, note, axiom memo
+measure_boundary: exact Q 2x2x2 occupancy update
+negative_scope: cube comparator, not a TOE
+PASS: thm1-seed only origin locked; axis k=1; opposite n=0
+PASS: thm2-axis step 1 forms the three axis sites
+PASS: thm3-face step 2 forms the three face-diagonals
+PASS: thm3-opp step 3 forms the opposite corner
+PASS: thm3-perm step 4 is identity
+PASS: thm3-tick source/tick are 0,3,6,7,7
+PASS: thm4-empty empty cube is a fixed point
+PASS: mutation-s1-opp-fails predicate step 1 forms (1,1,1) must fail
+PASS: mutation-empty-fails predicate empty forms origin must fail
+PASS: mutation-s4-source-fails predicate step 4 increments source must fail
+PASS: quoted note quotes lock, permanence, and NN distribution
+PASS: boundary comparator not TOE, no forbidden phrases
+PASS: memo-silent axioms do not name the cube step
+PASS: gates identity gates and AUDIT_INPUT_PATHS
+per_element: checked exactly — 6-NN n on eight sites
+per_site: checked exactly — seed, axis, face, opposite, empty
+per_mode: checked exactly — one occupancy step; source=formations
+per_block: checked exactly — cube adjacency, not a line
+lattice_wide: checked and not executed — no law adopted
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

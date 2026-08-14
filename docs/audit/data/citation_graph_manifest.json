@@ -1,6 +1,6 @@
 {
- "edge_count": 15830,
- "node_count": 5516,
+ "edge_count": 15835,
+ "node_count": 5517,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -401,6 +401,10 @@
   "admissibility_cycle713_signed_record_source_causal_tt_vertical_slice_bounded_theorem_note_2026-08-13": {
    "deps_hash": "24bf525103b8",
    "out_degree": 7
+  },
+  "admissibility_dirac_signature_gravity_replacement_shortest_route_gate_boundary_bounded_theorem_note_2026-08-14": {
+   "deps_hash": "0f2a2c502553",
+   "out_degree": 5
   },
   "admissibility_endogenous_geometry_joint_record_rn_local_covariant_contact_selection_boundary_bounded_theorem_note_2026-08-10": {
    "deps_hash": "908bca83f8ca",

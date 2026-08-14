@@ -1,5 +1,5 @@
 {
- "edge_count": 15645,
+ "edge_count": 15646,
  "node_count": 5506,
  "nodes": {
   "3d_correction_master_note": {
@@ -18447,8 +18447,8 @@
    "out_degree": 1
   },
   "two_cube_l1_saturates_at_tick4_bounded_theorem_note_2026-08-14": {
-   "deps_hash": "e3b0c44298fc",
-   "out_degree": 0
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05": {
    "deps_hash": "bd71c5f30cb7",

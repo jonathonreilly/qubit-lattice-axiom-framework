@@ -1,100 +1,179 @@
+#!/usr/bin/env python3
+"""Exact checks for L1 Saturates The Two-Cube At Tick 4.
+
+Reconstructs the displayed L1 occupancy kernel on the twelve-site two-cube
+patch. Writes no cache and no governance surface.
+"""
+
 from __future__ import annotations
-NOTE_NAME = "TWO_CUBE_L1_SATURATES_AT_TICK4_BOUNDED_THEOREM_NOTE_2026-08-14.md"
 
 from fractions import Fraction
 from pathlib import Path
 
+
 AUDIT_TIMEOUT_SEC = 120
+
 ROOT = Path(__file__).resolve().parents[1]
-AXIOM_PATH = ROOT / "docs" / "MINIMAL_AXIOMS_2026-06-29.md"
-NOTE_PATH = ROOT / "docs" / NOTE_NAME
-AUDIT_INPUT_PATHS = ("docs/TWO_CUBE_L1_SATURATES_AT_TICK4_BOUNDED_THEOREM_NOTE_2026-08-14.md", "docs/MINIMAL_AXIOMS_2026-06-29.md")
-FORBIDDEN = ("G_N", "1/r", "1/r^2", "Lattice-named", "not a TOE", "exhausted", "only route", "we adopt", "Codex", "L_phys")
-AXES = ((1, 0, 0), (0, 1, 0), (0, 0, 1))
-SEED = (0, 0, 0)
+AUDIT_INPUT_PATHS = (
+    "docs/TWO_CUBE_L1_SATURATES_AT_TICK4_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+)
 
-def verts():
-    return tuple((x, y, z) for x in (0, 1, 2) for y in (0, 1) for z in (0, 1))
+NOTE_PATH = ROOT / AUDIT_INPUT_PATHS[0]
+AXIOM_PATH = ROOT / AUDIT_INPUT_PATHS[1]
 
-def in_A(v):
-    return v[0] in (0, 1)
+Vec = tuple[int, int, int]
+AXES: tuple[Vec, ...] = ((1, 0, 0), (0, 1, 0), (0, 0, 1))
 
-def in_B(v):
-    return v[0] in (1, 2)
+CUBE_A = frozenset((x, y, z) for x in (0, 1) for y in (0, 1) for z in (0, 1))
+CUBE_B = frozenset((x, y, z) for x in (1, 2) for y in (0, 1) for z in (0, 1))
+PATCH = CUBE_A | CUBE_B
+SHARED_FACE = frozenset(site for site in PATCH if site[0] == 1)
+SEED: Vec = (0, 0, 0)
 
-def occ(v, locks):
-    return 1 if v in locks else 0
+FORBIDDEN_NOTE_SUBSTRINGS = (
+    "G_N",
+    "1/r",
+    "1/r^2",
+    "Lattice-named",
+    "not a TOE",
+    "exhausted",
+    "only route",
+    "we adopt",
+    "Codex",
+    "L_phys",
+)
 
-def nvec(site, locks):
-    V = set(verts())
-    out = []
-    for ax in AXES:
-        plus = (site[0] + ax[0], site[1] + ax[1], site[2] + ax[2])
-        minus = (site[0] - ax[0], site[1] - ax[1], site[2] - ax[2])
-        op = occ(plus, locks) if plus in V else 0
-        om = occ(minus, locks) if minus in V else 0
-        out.append(Fraction(op - om, 3))
-    return tuple(out)
 
-def k_of(n):
-    return int(sum((3 * c) ** 2 for c in n))
+def plus(site: Vec, step: Vec) -> Vec:
+    return (site[0] + step[0], site[1] + step[1], site[2] + step[2])
 
-def step(locks):
-    new = set(locks)
-    formed = set()
-    for v in verts():
-        if v not in locks and any(c != 0 for c in nvec(v, locks)):
-            new.add(v)
-            formed.add(v)
-    return frozenset(new), frozenset(formed)
 
-def evolve(ticks):
-    locks = frozenset({SEED})
-    hist = [locks]
-    formed = [frozenset()]
+def minus(site: Vec, step: Vec) -> Vec:
+    return (site[0] - step[0], site[1] - step[1], site[2] - step[2])
+
+
+def occupancy(site: Vec, locks: frozenset[Vec]) -> int:
+    return 1 if site in locks else 0
+
+
+def n_vector(site: Vec, locks: frozenset[Vec]) -> tuple[Fraction, Fraction, Fraction]:
+    return tuple(
+        Fraction(
+            occupancy(plus(site, axis), locks) - occupancy(minus(site, axis), locks),
+            3,
+        )
+        for axis in AXES
+    )
+
+
+def k_of(n: tuple[Fraction, Fraction, Fraction]) -> int:
+    return int(sum((3 * component) ** 2 for component in n))
+
+
+def rho(cube: frozenset[Vec], locks: frozenset[Vec]) -> int:
+    return sum(occupancy(site, locks) for site in cube)
+
+
+def unread_with_nonzero_n(locks: frozenset[Vec]) -> frozenset[Vec]:
+    forming: set[Vec] = set()
+    for site in PATCH:
+        if site in locks:
+            continue
+        if any(component != 0 for component in n_vector(site, locks)):
+            forming.add(site)
+    return frozenset(forming)
+
+
+def step(locks: frozenset[Vec]) -> tuple[frozenset[Vec], frozenset[Vec], int]:
+    new_locks = unread_with_nonzero_n(locks)
+    return locks | new_locks, new_locks, len(new_locks)
+
+
+def evolve(ticks: int) -> tuple[list[frozenset[Vec]], list[frozenset[Vec]]]:
+    hist = [frozenset({SEED})]
+    formed: list[frozenset[Vec]] = [frozenset()]
+    locks = hist[0]
     for _ in range(ticks):
-        locks, fr = step(locks)
+        locks, new, _ = step(locks)
         hist.append(locks)
-        formed.append(fr)
+        formed.append(new)
     return hist, formed
 
-def rho(locks):
-    a = sum(1 for v in locks if in_A(v))
-    b = sum(1 for v in locks if in_B(v))
-    return a, b
+
+def tree_phi(locks: frozenset[Vec]) -> tuple[int, int, int, int]:
+    ra, rb = rho(CUBE_A, locks), rho(CUBE_B, locks)
+    phi_star, phi_b = ra, ra + rb
+    g_a, g_b = phi_star, -phi_star + phi_b
+    return ra, rb, g_a, g_b
+
 
 class Checks:
-    def __init__(self):
+    def __init__(self) -> None:
         self.passed = 0
         self.failed = 0
-    def check(self, label, statement, cond):
-        self.passed += int(bool(cond))
-        self.failed += int(not cond)
-        print(f"{'PASS' if cond else 'FAIL'}: {label} {statement}")
-    def finish(self):
+
+    def check(self, label: str, condition: bool, detail: str = "") -> None:
+        ok = bool(condition)
+        self.passed += int(ok)
+        self.failed += int(not ok)
+        suffix = f"  ({detail})" if detail else ""
+        print(f"{'PASS' if ok else 'FAIL'}: {label}{suffix}")
+
+    def finish(self) -> int:
         print(f"TOTAL: PASS={self.passed} FAIL={self.failed}")
         return self.failed
 
-def hygiene(checks):
+
+def hygiene(checks: Checks, note: str, axiom: str) -> None:
+    checks.check("audit-input-paths-exist", all((ROOT / p).is_file() for p in AUDIT_INPUT_PATHS))
+    checks.check(
+        "audit-input-paths-unique-relative",
+        len(AUDIT_INPUT_PATHS) == len(set(AUDIT_INPUT_PATHS))
+        and all(not Path(p).is_absolute() and ".." not in Path(p).parts for p in AUDIT_INPUT_PATHS),
+    )
+    checks.check("audit-timeout-declared", AUDIT_TIMEOUT_SEC == 120)
+    checks.check("lattice-quote-present", "proper cubic rotations" in axiom)
+    checks.check("record-form-quote-present", "Records form" in axiom)
+    for token in FORBIDDEN_NOTE_SUBSTRINGS:
+        checks.check(f"hygiene-avoids-{token!r}", token not in note)
+    checks.check("note-has-no-runner-cache-path", "runner-cache" not in note)
+    checks.check("note-has-no-citation-manifest", "citation_manifest" not in note)
+    checks.check("patch-has-twelve-sites", len(PATCH) == 12)
+    checks.check("shared-face-is-x-equals-one", SHARED_FACE == CUBE_A & CUBE_B)
+
+
+def main() -> int:
+    checks = Checks()
     note = NOTE_PATH.read_text(encoding="utf-8")
     axiom = AXIOM_PATH.read_text(encoding="utf-8")
-    checks.check("thm0", "Lattice quote present", "proper cubic rotations" in axiom)
-    for s in FORBIDDEN:
-        checks.check("hygiene", f"avoids {s!r}", s not in note)
-
-
-def main():
-    checks = Checks()
-    hygiene(checks)
+    print("L1 saturates the two-cube at tick 4")
+    print("AUDIT_INPUT_PATHS:")
+    for path in AUDIT_INPUT_PATHS:
+        print(f"  {path}")
+    print(f"AUDIT_TIMEOUT_SEC: {AUDIT_TIMEOUT_SEC}")
+    print("cache_write: false")
+    print("scope: supplied two-cube L1 patch; tick-4 saturation census")
+    hygiene(checks, note, axiom)
     hist, _ = evolve(4)
-    checks.check("thm1", "12 locks at t=4", len(hist[4]) == 12)
-    checks.check("thm1", "all patch vertices locked", set(hist[4]) == set(verts()))
-    ra, rb = rho(hist[4])
-    checks.check("thm2", "rho A=8 B=8", (ra, rb) == (8, 8))
-    checks.check("thm2", "F=11", len(hist[4]) - 1 == 11)
+    locks = hist[4]
+    ra, rb, ga, gb = tree_phi(locks)
+    checks.check("twelve-locks-at-t4", len(locks) == 12)
+    checks.check("all-patch-vertices-locked", locks == PATCH)
+    checks.check("rho-A-8", ra == 8)
+    checks.check("rho-B-8", rb == 8)
+    checks.check("F-11", len(locks) - 1 == 11)
+    checks.check("phi-star-8", ra == 8)
+    checks.check("phi-B-16", ra + rb == 16)
+    checks.check("g-equals-rho", (ga, gb) == (ra, rb))
+    print("per_element: 12 vertices")
+    print("per_site: lock set equals patch")
     print("per_mode: saturation")
     print("per_block: tick 4")
     print("lattice_wide: checked and not executed")
     return checks.finish()
+
+
+
 if __name__ == "__main__":
     raise SystemExit(main())

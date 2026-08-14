@@ -1,6 +1,6 @@
 {
- "edge_count": 15651,
- "node_count": 5508,
+ "edge_count": 15653,
+ "node_count": 5509,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1667,8 +1667,8 @@
    "out_degree": 11
   },
   "canonical_harness_index": {
-   "deps_hash": "d05570d8ee7e",
-   "out_degree": 352
+   "deps_hash": "3e3c4a7a73c4",
+   "out_degree": 353
   },
   "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": {
    "deps_hash": "808c1ccb6109",
@@ -12113,6 +12113,10 @@
   "linear_response_true_kubo_note": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "linear_temporal_reparameterization_isotropic_quadratic_form_bounded_theorem_note_2026-08-13": {
+   "deps_hash": "5448168ecbe8",
+   "out_degree": 1
   },
   "link_local_first_variation_selector_bridge_narrow_theorem_note_2026-05-10": {
    "deps_hash": "e3b0c44298fc",

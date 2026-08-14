@@ -1,6 +1,6 @@
 {
- "edge_count": 15603,
- "node_count": 5489,
+ "edge_count": 15605,
+ "node_count": 5490,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -4593,6 +4593,10 @@
   "f_wedge_f_top_form_forces_d_four_narrow_theorem_note_2026-05-26": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "factor_swap_names_corner_not_aut_of_corner_bounded_theorem_note_2026-08-14": {
+   "deps_hash": "cc9d15532210",
+   "out_degree": 2
   },
   "factorization_object_api_support_note_2026-07-28": {
    "deps_hash": "759285fc1e81",

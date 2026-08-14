@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/physical_cell_cutting_shadow_rank_unseen_swap_cycle754_independent_check_2026_08_09.py
+runner_sha256: 468d0528b6e7c44b41605cbee3a2e5f771cb455345cd47ef98795ea5aaa5f9c6
+input_fingerprint_sha256: 2ead3d31addbfa7e92f852e624d649b8ec37888818f7e737c8795c33a25d6288
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 150.36
+status: ok
+----- stdout -----
+PASS independent.cycle753_contract  current Cycle 753 primary and helper bind the complete forced-mean finite-object boundary
+PASS independent.cycle753_live_replay  the independent Cycle 753 reconstruction completes live with all thirteen gates
+PASS independent.incidence  the replayed 15800-by-192 incidence has row weight 24 and column weight 1975
+PASS independent.rational_shadow  SymPy gives 104 exact balanced kernel vectors and two modular minors give rank 88
+PASS independent.free_basis_profile  the independent exact free-column basis reproduces the reported basis-dependent support profile
+PASS independent.small_exchanges  fixed modular signatures cover every pair and triple; exact checks find no 2-for-2 or 3-for-3 exchange
+PASS independent.four_exchange  the direct four-for-four witness is exact, has orbit 96, and all 384 symmetries preserve the Gram table
+PASS independent.carrier_collisions  the 132 minimum carriers give 108 exact vectors and 24 disjoint colliding pairs
+PASS independent.q4_collisions  all 59736 Q4 shapes give 53632 vectors; every repeated SHA-512 bucket is checked exactly
+PASS independent.binary_shadow  independent packed elimination gives GF(2) row/column rank 88 and reaches all eight readings
+PASS independent.localization  both local routes agree on all 132 carriers; none reaches baseline and the minimum is 19640
+PASS independent.primary_contract  the Cycle 754 primary receipt matches the independent shadow and collision reconstruction
+PASS hostile.primary_rank  a one-unit reversion of the primary rational rank is rejected
+PASS hostile.primary_boundary  a reversion that turns rank-route failure into a two-cover verdict is rejected
+PASS hostile.cycle753_status  a failed direct predecessor certificate is rejected
+per_element: checked -- all 192 piece columns enter the independent exact shadow checks
+per_site: checked and not executed -- the theorem concerns one supplied coordinate four-cube only
+per_mode: checked and not executed -- this finite binary incidence object has no modal decomposition
+per_block: checked -- all 15800 cutting rows enter the independent rank and collision reconstruction
+lattice_wide: checked and not executed -- no multicell, infinite-lattice, causal, or continuum claim
+RECEIPT outputs/physical_cell_cutting_shadow_rank_unseen_swap_cycle754_independent_check_2026_08_09_receipt_2026-08-09.json
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

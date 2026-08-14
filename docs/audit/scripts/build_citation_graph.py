@@ -242,6 +242,12 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
         "scripts/physical_cell_cutting_shared_count_variance_law_cycle753_"
         "independent_check_2026_08_09.py",
     ],
+    # Cycle 754 replays the Cycle 753 helper and changes the rank, signature,
+    # and collision-counting implementations without importing primary symbols.
+    "physical_cell_cutting_shadow_rank_unseen_swap_cycle754_note_2026-08-09": [
+        "scripts/physical_cell_cutting_shadow_rank_unseen_swap_cycle754_"
+        "independent_check_2026_08_09.py",
+    ],
     "inter_site_gate_cycle970_bounded_theorem_note_2026-08-09": [
         "scripts/frontier_cycle970_gate_independent_check_2026_08_09.py",
     ],

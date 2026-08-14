@@ -1,11 +1,14 @@
 ===== runner cache v1 =====
 runner: scripts/physical_cell_cutting_shadow_rank_unseen_swap_cycle754_2026_08_09.py
-runner_sha256: 132fc2568655ece15580abda2f37982e8bd89a9d48b0a515820e14b169b96178
-timeout_sec: 500
+runner_sha256: 715b61ab21fc82eedd3be1f262f210a0a1cf2f88833dd4bf27c2cfbe211744df
+input_fingerprint_sha256: c11a95c5c5b08773104d6536dbcd3fdaad6cc4d27e0f8b0038dbcca120b6643e
+timeout_sec: 900
 exit_code: 0
-elapsed_sec: 219.20
+elapsed_sec: 244.18
 status: ok
 ----- stdout -----
+PASS dependency.cycle753  current Cycle 753 primary and independent receipts bind the forced-mean boundary
+PASS dependency.hostile_cycle753  a changed Cycle 753 carrier minimum is rejected before the reconstruction
 PASS G0  the Gram matrix of the table has constant diagonal 1975
 PASS G1  all 15800 cuttings carry distinct piece supports
 PASS G2  the anchored and the two seeded colour refinements are all discrete
@@ -58,19 +61,26 @@ PASS G32  exact rank 88, blind dimension 104, together 192, all 104 checked exac
 PASS G33  the cuttings sum to 1975 times all-ones, so every blind vector sums to zero
 PASS G34  blind entries minus one to one, supports 8 12 14 16 18 20, counts 38 30 14 13 3 6
 PASS G35  all 384 symmetries fix the sharing table and carry the blind space into itself
-PASS G36  no dependent pair or triple, no two-for-two or three-for-three, ties 0, exact 0
-PASS G37  four for four unseen: 4 5 10 11 against 1 3 7 9, orbit 96, moments tie
+PASS G36a  exact Gram minors exclude every linear dependence supported on two or three columns
+PASS G36b  exact signatures are injective on all pairs and triples, excluding 2-for-2 and 3-for-3
+PASS G37  explicit four-for-four unseen: 4 5 10 11 against 1 3 7 9, orbit 96, moments tie
 PASS G38  the 132 carriers in families 12 12 12 24 24 48 give only 108 multiplicity vectors
 PASS G39  24 tied pairs, each disjoint, difference 32, one family, difference in the span
 PASS G40  tied members share the ranked total, while the 132 show 4 distinct totals
 PASS G41  59736 four-cube shapes give 53632 multiplicity vectors, 6104 fewer than sets
 PASS G42  field of two: rank 88 again, blind sets dimension 104, all 8 readings reached
-PASS G43  all 132: shortfalls twice the excess, two routes, none all zero, least 19640
+PASS G43  all 132: local sums match twice the excess over the universal baseline; least 19640
+per_element: checked -- all 192 piece columns enter the exact rank, kernel, and exchange checks
+per_site: checked and not executed -- the theorem concerns one supplied coordinate four-cube only
+per_mode: checked and not executed -- this finite binary incidence object has no modal decomposition
+per_block: checked -- every one of the 15800 cutting rows enters the shadow and collision checks
+lattice_wide: checked and not executed -- no multicell, infinite-lattice, causal, or continuum claim
 elapsed under 300 s peak memory under 2500 MB
 PASS G44  inside its time and memory allowance
-PASS G45  its output stays under 6000 characters
+PASS G45  its output stays under 10000 characters
 
-TOTAL: PASS=45 FAIL=0
+RECEIPT outputs/physical_cell_cutting_shadow_rank_unseen_swap_cycle754_2026_08_09_receipt_2026-08-09.json
+TOTAL: PASS=48 FAIL=0
 
 ----- stderr -----
 

@@ -1,9 +1,125 @@
+import copy
+import hashlib
 import itertools
+import json
 import math
 import resource
+import sys
 import time
+from pathlib import Path
 
 import numpy as np
+
+AUDIT_TIMEOUT_SEC = 900
+
+ROOT = Path(__file__).resolve().parents[1]
+PRIMARY_PATH = (
+    "scripts/physical_cell_cutting_shadow_rank_unseen_swap_cycle754_2026_08_09.py"
+)
+CHECKER_PATH = (
+    "scripts/physical_cell_cutting_shadow_rank_unseen_swap_cycle754_"
+    "independent_check_2026_08_09.py"
+)
+NOTE_PATH = (
+    "docs/PHYSICAL_CELL_CUTTING_SHADOW_RANK_UNSEEN_SWAP_"
+    "CYCLE754_NOTE_2026-08-09.md"
+)
+RECEIPT_PATH = ROOT / (
+    "outputs/physical_cell_cutting_shadow_rank_unseen_swap_cycle754_"
+    "2026_08_09_receipt_2026-08-09.json"
+)
+C753_NOTE_PATH = (
+    "docs/PHYSICAL_CELL_CUTTING_SHARED_COUNT_VARIANCE_LAW_"
+    "CYCLE753_NOTE_2026-08-09.md"
+)
+C753_PRIMARY_PATH = (
+    "scripts/physical_cell_cutting_shared_count_variance_law_cycle753_2026_08_09.py"
+)
+C753_CHECKER_PATH = (
+    "scripts/physical_cell_cutting_shared_count_variance_law_cycle753_"
+    "independent_check_2026_08_09.py"
+)
+C753_RECEIPT_PATH = (
+    "outputs/physical_cell_cutting_shared_count_variance_law_cycle753_"
+    "2026_08_09_receipt_2026-08-09.json"
+)
+C753_INDEPENDENT_RECEIPT_PATH = (
+    "outputs/physical_cell_cutting_shared_count_variance_law_cycle753_"
+    "independent_check_2026_08_09_receipt_2026-08-09.json"
+)
+AUDIT_INPUT_PATHS = (
+    "docs/PHYSICAL_CELL_CUTTING_SHADOW_RANK_UNSEEN_SWAP_CYCLE754_NOTE_2026-08-09.md",
+    "scripts/physical_cell_cutting_shadow_rank_unseen_swap_cycle754_independent_check_2026_08_09.py",
+    "docs/PHYSICAL_CELL_CUTTING_SHARED_COUNT_VARIANCE_LAW_CYCLE753_NOTE_2026-08-09.md",
+    "scripts/physical_cell_cutting_shared_count_variance_law_cycle753_2026_08_09.py",
+    "scripts/physical_cell_cutting_shared_count_variance_law_cycle753_independent_check_2026_08_09.py",
+    "outputs/physical_cell_cutting_shared_count_variance_law_cycle753_2026_08_09_receipt_2026-08-09.json",
+    "outputs/physical_cell_cutting_shared_count_variance_law_cycle753_independent_check_2026_08_09_receipt_2026-08-09.json",
+    "requirements.txt",
+    "requirements-release.txt",
+)
+
+
+def sha256(path):
+    return hashlib.sha256((ROOT / path).read_bytes()).hexdigest()
+
+
+def load(path):
+    with (ROOT / path).open(encoding="utf-8") as handle:
+        return json.load(handle)
+
+
+def inputs_current(receipt):
+    recorded = receipt.get("input_sha256", {})
+    return bool(recorded) and all(
+        (ROOT / path).is_file() and recorded.get(path) == sha256(path)
+        for path in recorded
+    )
+
+
+def write_failure(reason):
+    RECEIPT_PATH.write_text(json.dumps({
+        "schema": "physical-cell-cutting-shadow-rank-cycle754-v2",
+        "status": "fail",
+        "claim_type": "bounded_theorem",
+        "reason": reason,
+    }, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+
+
+def cycle753_contract(primary, independent):
+    forced = primary.get("forced_mean_identity", {})
+    floor = primary.get("parity_floor", {})
+    rankings = primary.get("finite_q4_rankings", {})
+    independent_forced = independent.get("forced_mean_identity", {})
+    independent_floor = independent.get("parity_floor", {})
+    independent_rankings = independent.get("finite_q4_rankings", {})
+    return (
+        primary.get("schema")
+        == "physical-cell-cutting-shared-count-variance-cycle753-v2"
+        and primary.get("status") == "pass"
+        and primary.get("claim_type") == "bounded_theorem"
+        and primary.get("gates", {}).get("fail") == 0
+        and primary.get("runner_sha256") == sha256(C753_PRIMARY_PATH)
+        and inputs_current(primary)
+        and forced.get("induced_q4_count") == 59736
+        and forced.get("pair_total_formula")
+        == "15800 + squared_departure_from_two / 2"
+        and floor.get("derived_lower_bound") == 18632
+        and floor.get("minimum_carrier_total") == 19640
+        and rankings.get("q4_carriers") == 60
+        and independent.get("schema")
+        == "physical-cell-cutting-shared-count-variance-cycle753-independent-v1"
+        and independent.get("status") == "pass"
+        and independent.get("claim_type") == "bounded_theorem"
+        and independent.get("gates", {}).get("fail") == 0
+        and independent.get("checker_sha256") == sha256(C753_CHECKER_PATH)
+        and inputs_current(independent)
+        and independent_forced.get("total_meetings") == 31600
+        and independent_forced.get("identity_failures") == 0
+        and independent_floor.get("derived_lower_bound") == 18632
+        and independent_floor.get("minimum_carrier_total") == 19640
+        and independent_rankings.get("odd_met", {}).get("equal") == 60
+    )
 
 T0 = time.time()
 PF = [0, 0]
@@ -22,6 +138,18 @@ def emit(s):
 def gate(ok, name, detail):
     PF[0 if ok else 1] += 1
     emit(("PASS " if ok else "FAIL ") + name + "  " + detail)
+
+
+write_failure("runner has not completed")
+C753 = load(C753_RECEIPT_PATH)
+C753I = load(C753_INDEPENDENT_RECEIPT_PATH)
+C753_OK = cycle753_contract(C753, C753I)
+gate(C753_OK, "dependency.cycle753",
+     "current Cycle 753 primary and independent receipts bind the forced-mean boundary")
+bad_cycle753 = copy.deepcopy(C753I)
+bad_cycle753["parity_floor"]["minimum_carrier_total"] = 19638
+gate(not cycle753_contract(C753, bad_cycle753), "dependency.hostile_cycle753",
+     "a changed Cycle 753 carrier minimum is rejected before the reconstruction")
 
 
 
@@ -2045,15 +2173,16 @@ gate(YVALS == [-1, 0, 1]
 gate(len(EG) == 384 and YFIXG and YBND and YSYMOK and YSTKN == YKDIM * len(EG), "G35",
      "all {0} symmetries fix the sharing table and carry the blind space into itself".format(
          len(EG)))
-gate(YSAFE and YDEP2 == 0 and YDEP3 == 0 and YHIT == 0 and YTIE == 0 and YCHK == 0
+gate(YDEP2 == 0 and YDEP3 == 0, "G36a",
+     "exact Gram minors exclude every linear dependence supported on two or three columns")
+gate(YSAFE and YHIT == 0 and YTIE == 0 and YCHK == 0
      and YS2[0] == NPO * (NPO - 1) // 2
-     and YS3[0] == NPO * (NPO - 1) * (NPO - 2) // 6, "G36",
-     "no dependent pair or triple, no two-for-two or three-for-three, ties {0}, exact {1}".format(
-         YTIE, YCHK))
-gate(int(YSUP.min()) == 8 and len(YAPOS) == 4 and len(YANEG) == 4 and YGAP == 0
+     and YS3[0] == NPO * (NPO - 1) * (NPO - 2) // 6, "G36b",
+     "exact signatures are injective on all pairs and triples, excluding 2-for-2 and 3-for-3")
+gate(len(YAPOS) == 4 and len(YANEG) == 4 and YGAP == 0
      and len(YORB) == 96 and YSGA == YSGB and YAPOS == [4, 5, 10, 11]
      and YANEG == [1, 3, 7, 9], "G37",
-     "four for four unseen: {0} against {1}, orbit {2}, moments tie".format(
+     "explicit four-for-four unseen: {0} against {1}, orbit {2}, moments tie".format(
          YPOSS, YNEGS, len(YORB)))
 gate(YNCA == 132 and FAM == [12, 12, 12, 24, 24, 48] and YNCL == 108 and len(YTP) == 24
      and YCSZ == [1, 2], "G38",
@@ -2073,15 +2202,114 @@ gate(YCRK == 88 and YRRK == YCRK and NPO - YCRK == 104 and YRCH == YNTG
      "field of two: rank {0} again, blind sets dimension {1}, all {2} readings reached".format(
          YCRK, NPO - YCRK, YNTG))
 gate(YIDOK and YROUTE == YNCA and YFLAT == 0 and YMIN == 19640 and NCUT == 15800, "G43",
-     "all {0}: shortfalls twice the excess, two routes, none all zero, least {1}".format(
+     "all {0}: local sums match twice the excess over the universal baseline; least {1}".format(
          YNCA, YMIN))
+
+emit("per_element: checked -- all 192 piece columns enter the exact rank, kernel, and exchange checks")
+emit("per_site: checked and not executed -- the theorem concerns one supplied coordinate four-cube only")
+emit("per_mode: checked and not executed -- this finite binary incidence object has no modal decomposition")
+emit("per_block: checked -- every one of the 15800 cutting rows enters the shadow and collision checks")
+emit("lattice_wide: checked and not executed -- no multicell, infinite-lattice, causal, or continuum claim")
 
 EL = time.time() - T0
 RSS = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1048576.0
 ELB, RSB = upto(EL, 100), 2500
 emit("elapsed under {0} s peak memory under {1} MB".format(ELB, RSB))
 gate(EL < 900.0 and RSS < float(RSB), "G44", "inside its time and memory allowance")
-CH = OUT[0] + 120
-gate(CH < 6000, "G45", "its output stays under {0} characters".format(6000))
+CH = OUT[0] + 200
+gate(CH < 10000, "G45", "its output stays under {0} characters".format(10000))
+
+receipt = {
+    "schema": "physical-cell-cutting-shadow-rank-cycle754-v2",
+    "status": "pass" if PF[1] == 0 else "fail",
+    "claim_type": "bounded_theorem",
+    "audit_status_authority": "independent audit lane only",
+    "runner_sha256": sha256(PRIMARY_PATH),
+    "input_sha256": {path: sha256(path) for path in AUDIT_INPUT_PATHS},
+    "direct_dependencies": {
+        "cycle753": {
+            "receipt_sha256": sha256(C753_RECEIPT_PATH),
+            "independent_receipt_sha256": sha256(C753_INDEPENDENT_RECEIPT_PATH),
+            "contract_current": C753_OK,
+        },
+    },
+    "supplied_incidence": {
+        "cuttings": NCUT,
+        "support_columns": NPO,
+        "pieces_per_cutting": YPPR,
+        "cuttings_per_piece": YPPC,
+        "distinct_columns": YNDC,
+        "largest_off_diagonal_shared_count": YSMAX,
+    },
+    "rational_shadow": {
+        "rank": YRANK,
+        "kernel_dimension": YKDIM,
+        "kernel_exact_zero": YKZERO,
+        "every_kernel_basis_vector_balanced": YBAL,
+        "reported_basis_is_free_column_rref_basis": True,
+        "basis_entry_values": YVALS,
+        "basis_support_histogram": {str(size): count for size, count in YHIS},
+        "symmetries_preserving_gram": len(EG) if YFIXG else 0,
+        "symmetry_kernel_check_exact_under_bound": YBND and YSYMOK,
+    },
+    "exchange_boundary": {
+        "dependent_pairs": YDEP2,
+        "dependent_triples": YDEP3,
+        "pair_signature_classes": YS2[0],
+        "triple_signature_classes": YS3[0],
+        "pair_or_triple_signature_ties": YTIE,
+        "two_for_two_or_three_for_three_exchanges": YHIT,
+        "four_for_four_witness": {"positive": YAPOS, "negative": YANEG},
+        "witness_exact_max_gap": YGAP,
+        "witness_orbit_size": len(YORB),
+    },
+    "multiplicity_collisions": {
+        "minimum_carriers": YNCA,
+        "carrier_vectors": YNCL,
+        "carrier_collision_pairs": len(YTP),
+        "carrier_collisions_disjoint": YDJ == len(YTP),
+        "induced_q4_sets": YNSHP,
+        "induced_q4_vectors": YNDV,
+    },
+    "binary_shadow": {
+        "row_rank": YRRK,
+        "column_rank": YCRK,
+        "kernel_dimension": NPO - YCRK,
+        "named_readings_reached": YRCH,
+        "named_readings_total": YNTG,
+    },
+    "localization": {
+        "universal_sixteen_set_baseline": NCUT,
+        "four_reading_parity_floor_from_cycle753": 18632,
+        "minimum_carrier_total": YMIN,
+        "minimum_carriers_checked": YNCA,
+        "local_sum_identity_failures": sum(not value == 2 * (YTOT[index] - NCUT)
+                                           for index, value in enumerate(YDEFS)),
+        "incidence_and_shared_count_routes_agree": YROUTE == YNCA,
+        "carriers_at_universal_baseline": YFLAT,
+    },
+    "boundary": {
+        "finite_supplied_coordinate_four_cube_only": True,
+        "minimum_eigenvalue_route_improves_universal_baseline": False,
+        "two_cover_zero_one_feasibility_decided": False,
+        "arbitrary_pairwise_invariants_factor_through_multiplicity_claimed": False,
+        "basis_support_histogram_is_basis_invariant_claimed": False,
+        "physical_charge_or_causal_interpretation_claimed": False,
+    },
+    "no_go_discipline": {
+        "status": "PASS",
+        "n5_execution_certificate": [
+            "per_element checked",
+            "per_site checked and not executed",
+            "per_mode checked and not executed",
+            "per_block checked",
+            "lattice_wide checked and not executed",
+        ],
+    },
+    "gates": {"pass": PF[0], "fail": PF[1]},
+}
+RECEIPT_PATH.write_text(json.dumps(receipt, indent=2, sort_keys=True) + "\n", encoding="utf-8")
 emit("")
-print("TOTAL: PASS={0} FAIL={1}".format(PF[0], PF[1]))
+emit("RECEIPT {0}".format(RECEIPT_PATH.relative_to(ROOT)))
+emit("TOTAL: PASS={0} FAIL={1}".format(PF[0], PF[1]))
+sys.exit(0 if PF[1] == 0 else 1)

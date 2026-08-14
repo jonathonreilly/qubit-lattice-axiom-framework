@@ -7,25 +7,17 @@
     "named_readings_total": 8,
     "row_rank": 88
   },
-  "boundary": {
-    "arbitrary_pairwise_invariants_factor_through_multiplicity_claimed": false,
-    "basis_support_histogram_is_basis_invariant_claimed": false,
-    "finite_supplied_coordinate_four_cube_only": true,
-    "minimum_eigenvalue_route_improves_universal_baseline": false,
-    "physical_charge_or_causal_interpretation_claimed": false,
-    "two_cover_zero_one_feasibility_decided": false
-  },
+  "checker_sha256": "468d0528b6e7c44b41605cbee3a2e5f771cb455345cd47ef98795ea5aaa5f9c6",
   "claim_type": "bounded_theorem",
   "direct_dependencies": {
     "cycle753": {
       "contract_current": true,
       "independent_receipt_sha256": "cc128b092a7fc428596c421b653ab2c5245f2ccedd5c36907ab07c01be98f73a",
+      "live_replay_passed": true,
       "receipt_sha256": "7c9d77b80f7ebaad1294eeeb08a9f853570c135bb2f4be35a37dd7a83792668e"
     }
   },
   "exchange_boundary": {
-    "dependent_pairs": 0,
-    "dependent_triples": 0,
     "four_for_four_witness": {
       "negative": [
         1,
@@ -40,41 +32,67 @@
         11
       ]
     },
-    "pair_or_triple_signature_ties": 0,
-    "pair_signature_classes": 18336,
-    "triple_signature_classes": 1161280,
-    "two_for_two_or_three_for_three_exchanges": 0,
+    "pair_exact_exchanges": 0,
+    "pair_subsets_checked": 18336,
+    "triple_exact_exchanges": 0,
+    "triple_subsets_checked": 1161280,
     "witness_exact_max_gap": 0,
     "witness_orbit_size": 96
   },
   "gates": {
     "fail": 0,
-    "pass": 48
+    "named": {
+      "hostile.cycle753_status": "PASS",
+      "hostile.primary_boundary": "PASS",
+      "hostile.primary_rank": "PASS",
+      "independent.binary_shadow": "PASS",
+      "independent.carrier_collisions": "PASS",
+      "independent.cycle753_contract": "PASS",
+      "independent.cycle753_live_replay": "PASS",
+      "independent.four_exchange": "PASS",
+      "independent.free_basis_profile": "PASS",
+      "independent.incidence": "PASS",
+      "independent.localization": "PASS",
+      "independent.primary_contract": "PASS",
+      "independent.q4_collisions": "PASS",
+      "independent.rational_shadow": "PASS",
+      "independent.small_exchanges": "PASS"
+    },
+    "pass": 15
+  },
+  "independent_reconstruction": {
+    "cuttings": 15800,
+    "induced_q4_sets": 59736,
+    "method": "Cycle753 helper replay; SymPy nullspace; modular signatures; exact SHA-512 buckets",
+    "minimum_carriers": 132,
+    "support_columns": 192
   },
   "input_sha256": {
     "docs/PHYSICAL_CELL_CUTTING_SHADOW_RANK_UNSEEN_SWAP_CYCLE754_NOTE_2026-08-09.md": "39fd37b2acc5bbbcfc452cfac18a2e6c7be0d128a2f1cdd3e3fbba9f51b58d88",
     "docs/PHYSICAL_CELL_CUTTING_SHARED_COUNT_VARIANCE_LAW_CYCLE753_NOTE_2026-08-09.md": "ac0590881ab42c4c6eaa7afe6e71fafc75df76ec77b622ab62fe0fba1459cc8c",
+    "outputs/physical_cell_cutting_shadow_rank_unseen_swap_cycle754_2026_08_09_receipt_2026-08-09.json": "20a32cb4f3c8c82da5129c1bbcd1bd9b31cc6e049a782d17308058ad1440a1b5",
     "outputs/physical_cell_cutting_shared_count_variance_law_cycle753_2026_08_09_receipt_2026-08-09.json": "7c9d77b80f7ebaad1294eeeb08a9f853570c135bb2f4be35a37dd7a83792668e",
     "outputs/physical_cell_cutting_shared_count_variance_law_cycle753_independent_check_2026_08_09_receipt_2026-08-09.json": "cc128b092a7fc428596c421b653ab2c5245f2ccedd5c36907ab07c01be98f73a",
     "requirements-release.txt": "e153eea331ce1b76cd99f09e14a777df2bc9efbaa06a201528ddfdc0f3f01bee",
     "requirements.txt": "3fda988835a13d9a7236b0b508aa9bcd2f9b3f3b9a47b4875a15f86dbc77a3ad",
-    "scripts/physical_cell_cutting_shadow_rank_unseen_swap_cycle754_independent_check_2026_08_09.py": "468d0528b6e7c44b41605cbee3a2e5f771cb455345cd47ef98795ea5aaa5f9c6",
+    "scripts/physical_cell_cutting_shadow_rank_unseen_swap_cycle754_2026_08_09.py": "715b61ab21fc82eedd3be1f262f210a0a1cf2f88833dd4bf27c2cfbe211744df",
     "scripts/physical_cell_cutting_shared_count_variance_law_cycle753_2026_08_09.py": "9c5ce5daaacc28d95714c9eb9dd1cc11da2c6d93c6ba2040f69408d77b423ae9",
     "scripts/physical_cell_cutting_shared_count_variance_law_cycle753_independent_check_2026_08_09.py": "77b2ba18de6045a5680bcf4f516b71927ac88e5773b41e5ba896681562011ca1"
   },
   "localization": {
     "carriers_at_universal_baseline": 0,
     "four_reading_parity_floor_from_cycle753": 18632,
-    "incidence_and_shared_count_routes_agree": true,
     "local_sum_identity_failures": 0,
     "minimum_carrier_total": 19640,
     "minimum_carriers_checked": 132,
+    "route_failures": 0,
     "universal_sixteen_set_baseline": 15800
   },
   "multiplicity_collisions": {
     "carrier_collision_pairs": 24,
     "carrier_collisions_disjoint": true,
     "carrier_vectors": 108,
+    "digest_collisions_checked_exactly": 6104,
     "induced_q4_sets": 59736,
     "induced_q4_vectors": 53632,
     "minimum_carriers": 132
@@ -106,20 +124,10 @@
     "every_kernel_basis_vector_balanced": true,
     "kernel_dimension": 104,
     "kernel_exact_zero": true,
+    "kernel_rank": 104,
     "rank": 88,
-    "reported_basis_is_free_column_rref_basis": true,
-    "symmetries_preserving_gram": 384,
-    "symmetry_kernel_check_exact_under_bound": true
+    "second_modular_rank": 88
   },
-  "runner_sha256": "715b61ab21fc82eedd3be1f262f210a0a1cf2f88833dd4bf27c2cfbe211744df",
-  "schema": "physical-cell-cutting-shadow-rank-cycle754-v2",
-  "status": "pass",
-  "supplied_incidence": {
-    "cuttings": 15800,
-    "cuttings_per_piece": 1975,
-    "distinct_columns": 192,
-    "largest_off_diagonal_shared_count": 1266,
-    "pieces_per_cutting": 24,
-    "support_columns": 192
-  }
+  "schema": "physical-cell-cutting-shadow-rank-cycle754-independent-v1",
+  "status": "pass"
 }

@@ -105,6 +105,12 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
         "scripts/physical_cell_cutting_shared_count_variance_law_cycle753_"
         "independent_check_2026_08_09.py",
     ],
+    # Cycle 754's sibling checker live-replays only the independently rebuilt
+    # predecessor and uses different exact shadow/exchange machinery.
+    "physical_cell_cutting_shadow_rank_unseen_swap_cycle754_note_2026-08-09": [
+        "scripts/physical_cell_cutting_shadow_rank_unseen_swap_cycle754_"
+        "independent_check_2026_08_09.py",
+    ],
     # Cycle 738's checker independently reconstructs the cutting incidence
     # with the opposite cover pivot and uses a separate exact-weight CNF/SAT
     # encoding, so it deliberately remains outside the primary import closure.

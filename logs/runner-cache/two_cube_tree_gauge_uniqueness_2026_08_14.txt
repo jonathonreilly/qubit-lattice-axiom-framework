@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/two_cube_tree_gauge_uniqueness_2026_08_14.py
+runner_sha256: 1ae9af705e80d57c20837530c54c40d4650008622da96c2aed65c091b5c5ccfe
+input_fingerprint_sha256: f3686a140f688757fcdd6833bb573db0e428fc174f207b7570f128adc72e5948
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+external_scientific_inputs: none
+package_local_integrity_reads: runner, note, axiom memo
+measure_boundary: exact uniqueness of 2-face source-complete flux
+negative_scope: gauge-fix uniqueness, not Newton
+PASS: thm1-unique-seed seed 2-face flux is unique (1,1)
+PASS: thm1-no-other no other 2-face pair solves g=ρ on the seed
+PASS: thm2-family 3-face solutions exist for five t values
+PASS: thm3-step after occupancy step unique 2-face flux is (4,5)
+PASS: mutation-second-fails predicate a second 2-face seed solution exists must fail
+PASS: mutation-family-point-fails predicate 3-face family is a point must fail
+PASS: quoted note quotes lock, Admissibility, and Qubit
+PASS: boundary no forbidden phrases; required status strings
+PASS: memo-silent axioms do not name the tree gauge
+PASS: gates identity gates and AUDIT_INPUT_PATHS
+per_element: checked exactly — 2-face vs 3-face flux
+per_site: checked exactly — seed and one occupancy step
+per_mode: checked exactly — uniqueness of support-restricted gauge
+per_block: checked exactly — tree gauge, not Newton
+lattice_wide: checked and not executed — not axiom text
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

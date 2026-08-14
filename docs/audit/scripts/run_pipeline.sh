@@ -13,7 +13,7 @@
 # scripts/apply_audit.py.
 #
 # Run order:
-#   1. build_citation_graph.py       -> data/citation_graph.json
+#   1. run_citation_graph_build.py   -> data/citation_graph.json
 #  1c. compute_load_bearing.py       -> refreshes topology criticality before
 #                                       the ledger seeder consumes it
 #   2. seed_audit_ledger.py          -> data/audit_ledger.json (preserves
@@ -94,8 +94,8 @@ echo "==> 0a/18 audit_model_family_normalization_guard.py (guard: model/family p
 python3 scripts/audit_model_family_normalization_guard.py
 
 if [[ "${PIPELINE_MODE}" == "full" ]]; then
-  echo "==> 1/18 build_citation_graph.py"
-  python3 docs/audit/scripts/build_citation_graph.py
+  echo "==> 1/18 run_citation_graph_build.py (serialized graph build)"
+  python3 docs/audit/scripts/run_citation_graph_build.py
 
   echo "==> 1b/18 write_citation_graph_manifest.py (tracked graph-topology acknowledgment)"
   python3 docs/audit/scripts/write_citation_graph_manifest.py

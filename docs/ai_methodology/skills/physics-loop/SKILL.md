@@ -202,7 +202,7 @@ spec section 8).
 
 ```bash
 # Only when the block's commits add/remove a graph node or rewire an edge:
-python3 docs/audit/scripts/build_citation_graph.py
+python3 docs/audit/scripts/run_citation_graph_build.py
 python3 docs/audit/scripts/write_citation_graph_manifest.py
 git add docs/audit/data/citation_graph_manifest.json
 # Second line of defense: the staged set must be exactly the intended source

@@ -301,7 +301,10 @@ def main() -> int:
 
     if not GRAPH_PATH.exists():
         subprocess.run(
-            [sys.executable, str(Path(__file__).with_name("build_citation_graph.py"))],
+            [
+                sys.executable,
+                str(Path(__file__).with_name("run_citation_graph_build.py")),
+            ],
             cwd=REPO_ROOT,
             check=True,
         )

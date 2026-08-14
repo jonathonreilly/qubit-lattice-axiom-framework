@@ -494,7 +494,7 @@ carry the grade.
 ### Mechanical phase (cron-able)
 
 ```bash
-python3 docs/audit/scripts/build_citation_graph.py
+python3 docs/audit/scripts/run_citation_graph_build.py
 python3 docs/audit/scripts/seed_audit_ledger.py
 python3 docs/audit/scripts/classify_runner_passes.py   # optional, slow
 python3 docs/audit/scripts/compute_effective_status.py

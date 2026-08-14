@@ -40,7 +40,7 @@ fi
 echo "[pre-commit] audit-lane check"
 
 python3 docs/audit/scripts/ledger_io.py --materialize >/dev/null
-python3 docs/audit/scripts/build_citation_graph.py >/dev/null
+python3 docs/audit/scripts/run_citation_graph_build.py >/dev/null
 python3 docs/audit/scripts/seed_audit_ledger.py >/dev/null
 
 if ! python3 docs/audit/scripts/audit_lint.py; then

@@ -498,7 +498,7 @@ review-only flags contradict the drain's land-end-to-end contract).
          echo "FAILED: source conflict; return the PR to its worker" >&2
          exit 1
        fi
-       if ! { python3 docs/audit/scripts/build_citation_graph.py >/dev/null \
+       if ! { python3 docs/audit/scripts/run_citation_graph_build.py >/dev/null \
               && python3 docs/audit/scripts/write_citation_graph_manifest.py >/dev/null \
               && git add docs/audit/data/citation_graph_manifest.json \
               && GIT_EDITOR=true git cherry-pick --continue >/dev/null; }; then
@@ -1279,7 +1279,7 @@ git restore --source=HEAD --staged --worktree -- \
     docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md
 git clean -fd -- docs/audit/data/
 # Only when the landed commits add/remove a graph node or rewire an edge:
-python3 docs/audit/scripts/build_citation_graph.py
+python3 docs/audit/scripts/run_citation_graph_build.py
 python3 docs/audit/scripts/write_citation_graph_manifest.py
 git add docs/audit/data/citation_graph_manifest.json
 git status --porcelain   # second line of defense: exactly the intended paths

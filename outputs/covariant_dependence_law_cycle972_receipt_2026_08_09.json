@@ -19,7 +19,7 @@
    "pass": true
   },
   "E_CONTROLS_AND_PROVENANCE": {
-   "finding": "sha_pins={\"docs/MINIMAL_AXIOMS_2026-06-29.md\":\"53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39\",\"scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py\":\"0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4\"}; cycle970_provenance_commit=6fd0de0a288d212a4a6ce3fdd4dc9019f30dbbad; runner_read=AST_only; note_read=text_only; provenance_pins_match=True; determinism_replay=True; runtime_s=1.206511<timeout_s=300; stdout_upper_bound_bytes=3868<6000<150000; timeout_s=300<1400",
+   "finding": "sha_pins={\"docs/MINIMAL_AXIOMS_2026-06-29.md\":\"93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753\",\"scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py\":\"0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4\"}; cycle970_provenance_commit=6fd0de0a288d212a4a6ce3fdd4dc9019f30dbbad; runner_read=AST_only; note_read=text_only; provenance_pins_match=True; determinism_replay=True; runtime_s=15.706915<timeout_s=300; stdout_upper_bound_bytes=3868<6000<150000; timeout_s=300<1400",
    "pass": true
   }
  },
@@ -30,6 +30,7 @@
    "docs/MINIMAL_AXIOMS_2026-06-29.md"
   ],
   "blocklist_text_only": true,
+  "current_record_boundary_matches": true,
   "cycle970_text_ast_provenance": {
    "note": {
     "declares_full_covariant_law_open": true,
@@ -54,10 +55,10 @@
    "docs/MINIMAL_AXIOMS_2026-06-29.md",
    "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py"
   ],
-  "primary_source_sha256": "d027afa1d04ff3f70257d0f32e361d3c9d325bbd937b49a81fd939a1c90795cb",
+  "primary_source_sha256": "f8cbaeec821d28a60dfec89680552980afc48b81a8d97b05729fbf665f0cde36",
   "provenance_pins_match": true,
   "sha256": {
-   "docs/MINIMAL_AXIOMS_2026-06-29.md": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
+   "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
    "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4"
   }
  },
@@ -1246,8 +1247,8 @@
  },
  "law_formula": "for W_d=CNOT(a+d->a), target output y=x XOR n_d",
  "reachability_to_target": "closes",
- "runtime_sec": 1.2065112079726532,
+ "runtime_sec": 15.706914916983806,
  "science_digest": "a74ea5871fe738500391fd6cbb4d49926933677b8357cc1f1216a7e3cdd04ab0",
- "stdout_bytes": 2932,
+ "stdout_bytes": 2933,
  "trace_class": "direct_blocker_closure"
 }

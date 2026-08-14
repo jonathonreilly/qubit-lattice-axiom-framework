@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle972_law_independent_check_2026_08_09.py
 runner_sha256: 78dee2fb0aaef94cf7d67273a851bcab553f807755b1b1d55af6fb2303fcb9ff
-input_fingerprint_sha256: 5e2e7e505af071b0545f94a06a39523be7c4dfe1462bdf71c4f76ddd8981f12f
+input_fingerprint_sha256: 1de59eff523b00008bb30f6194231359cb725ce974eb0afc6954eccaa67c85d0
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.97
+elapsed_sec: 1.69
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -15,7 +15,7 @@ PASS R1_REFUTE_FULL_WITNESS_CENSUS :: independent_family=20; witnesses=6/20 ['CN
 PASS R2_REFUTE_COVARIANCE_AND_CLASSES :: independent_rotations=24; verdict=COVARIANT; non_covariant=[]; word_law_classes=1; state_classes=2; orbit_sizes=[6, 6]; stabilizers=[4, 4]; transported_rotation_failures=0/61440; translation_failures=0/15360
 PASS R3_REFUTE_MARGINAL_GAP :: independent_marginal_changed_words=0/20; changed_edge_pairs=0/3840; identity=(1/2)sum_x indicator[y=x XOR n]=1/2 because XOR by fixed n permutes x
 PASS R4_ACTIVE_CORRUPTION_PROBES :: refutation_corruption_probes={"class_count_plus_one":true,"covariance_flip":true,"marginal_count_plus_one":true,"witness_count_plus_one":true,"xor_to_xnor_truth_table":true}; primary_and_cache_match_independent=True
-PASS R5_CONTROLS :: determinism_replay=True; runtime_s=0.921062<timeout_s=300; stdout_upper_bound_bytes=3788<6000<150000; timeout_s=300<1400
+PASS R5_CONTROLS :: determinism_replay=True; runtime_s=1.610679<timeout_s=300; stdout_upper_bound_bytes=3788<6000<150000; timeout_s=300<1400
 VERDICT: PRIMARY_SURVIVES_INDEPENDENT_REFUTATION_ATTEMPT
 TOTAL: PASS=6 FAIL=0
 

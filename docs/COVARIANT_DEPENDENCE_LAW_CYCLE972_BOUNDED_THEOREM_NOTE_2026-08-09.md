@@ -32,8 +32,36 @@ Receipts:
 - [`covariant_dependence_law_cycle972_receipt_2026_08_09.json`](../outputs/covariant_dependence_law_cycle972_receipt_2026_08_09.json)
 - [`covariant_dependence_law_cycle972_independent_check_receipt_2026_08_09.json`](../outputs/covariant_dependence_law_cycle972_independent_check_receipt_2026_08_09.json)
 
-Constitutional effect: none. No axiom, primitive, registry, policy, audit
-result, or effective-status surface is edited.
+Constitutional effect: none. No axiom, primitive, premise registry, policy,
+audit result, or effective-status surface is edited. The claim-scoped helper
+packet map is extended only so the declared independent checker reaches the
+restricted audit packet.
+
+## Exact target, premises, and obligation graph
+
+The exact target is to classify neighbour-dependent target maps, prove their
+translation/proper-cubic-rotation covariance and orbit counts, and evaluate the
+explicit uniform-target-input marginal for every word in the declared 20-word
+basis-state family below. The obligation graph has four leaves: exhaustive
+family and truth-table enumeration; covariance under the stated spatial group;
+orbit/stabilizer reconciliation; and the two-point marginal identity. The
+primary and independent checker discharge those four finite leaves. No terminal
+lemma stronger than the target is imported.
+
+The load-bearing inputs are the current Lattice geometry in the
+[`minimal axioms`](MINIMAL_AXIOMS_2026-06-29.md), the landed Cycle-719 Boolean
+gate semantics, the declared word/gate/basis caps below, and—only for the
+marginal subclaim—the explicitly chosen equal weights `1/2,1/2`. That uniform
+weighting is a mathematical diagnostic, not a probability distribution supplied
+by Admissibility or Record. Cycle 970 is provenance only, not a premise.
+
+The current Record axiom contributes no step here. In particular, this result
+uses no named scalar collection functional `I`, finite additivity,
+`I(empty)=0`, scalar value for an absent record, readout-context selection, or
+record-formation rule. The Qubit axiom identifies the wider one-site algebraic
+domain only to state the boundary: the continuous-domain probability law,
+longer words, other gate kinds, nonuniform marginals, and physical formation or
+selection remain outside this theorem.
 
 ## Exact family, caps, and horizon
 
@@ -235,6 +263,21 @@ bind the primary receipt/cache to the current primary source and live landed
 inputs, and remain under the stricter 6 KB stdout ceiling. Receipts are written
 only after the actual stdout-size gate passes.
 
+## Review record and hard landing condition
+
+The sibling checker is load-bearing review evidence but is not imported by the
+primary. Its restricted audit packet therefore requires the exact claim-scoped
+mapping
+
+```text
+covariant_dependence_law_cycle972_bounded_theorem_note_2026-08-09
+  -> scripts/frontier_cycle972_law_independent_check_2026_08_09.py
+```
+
+in `EXPLICIT_PACKET_HELPER_RUNNER_PATHS` in
+`docs/audit/scripts/build_citation_graph.py`. Landing without that mapping would
+leave the independent checker outside the audit packet and is forbidden.
+
 ## Trace gate
 
 ```yaml
@@ -251,11 +294,14 @@ next_trace_action: "independently audit the bounded covariance and orbit claims;
 
 ```yaml
 actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
 trace_class: direct_blocker_closure
 reachability_to_target: closes
 conditional_surface_status: "exact on the declared 20-word, radius-one, basis-state family"
 hypothetical_axiom_status: null
 admitted_observation_status: null
+claim_type_reason: "finite exact theorem conditional on the declared gate, word-length, basis-menu, and uniform-marginal choices"
+packet_helper_runner: scripts/frontier_cycle972_law_independent_check_2026_08_09.py
 proposal_allowed: false
 proposal_allowed_reason: "finite basis menu and word-length cap; no full continuous M_2(C) probability law"
 audit_required_before_effective_retained: true

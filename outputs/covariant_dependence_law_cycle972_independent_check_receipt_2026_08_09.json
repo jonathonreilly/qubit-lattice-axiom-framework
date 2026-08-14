@@ -44,7 +44,7 @@
    "pass": true
   },
   "R5_CONTROLS": {
-   "finding": "determinism_replay=True; runtime_s=0.921062<timeout_s=300; stdout_upper_bound_bytes=3788<6000<150000; timeout_s=300<1400",
+   "finding": "determinism_replay=True; runtime_s=1.610679<timeout_s=300; stdout_upper_bound_bytes=3788<6000<150000; timeout_s=300<1400",
    "pass": true
   }
  },
@@ -580,13 +580,13 @@
   "word_local_input_rows": 40,
   "xor_law_failures": []
  },
- "runtime_sec": 0.9210620829835534,
+ "runtime_sec": 1.6106791669735685,
  "sha256": {
-  "docs/MINIMAL_AXIOMS_2026-06-29.md": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
-  "logs/runner-cache/frontier_cycle972_covariant_dependence_law_2026_08_09.txt": "8497e730b65bd6606cf6ec2776a27b095ba5421c3fdf51585d229a5b97580a49",
-  "outputs/covariant_dependence_law_cycle972_receipt_2026_08_09.json": "245bb7001aec024163f62ed28f8434d2a215751219b516cff0aa3ad75c6c2625",
+  "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+  "logs/runner-cache/frontier_cycle972_covariant_dependence_law_2026_08_09.txt": "2cd90db8a2e8ad755ba8710b264d06257e0f5d2a64139a65800899048e8a4740",
+  "outputs/covariant_dependence_law_cycle972_receipt_2026_08_09.json": "39829f50500c1ebebb358ef1326018e2bbdb3f6de9a541eef976f823485e9110",
   "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
-  "scripts/frontier_cycle972_covariant_dependence_law_2026_08_09.py": "d027afa1d04ff3f70257d0f32e361d3c9d325bbd937b49a81fd939a1c90795cb"
+  "scripts/frontier_cycle972_covariant_dependence_law_2026_08_09.py": "f8cbaeec821d28a60dfec89680552980afc48b81a8d97b05729fbf665f0cde36"
  },
  "stdout_bytes": 1898
 }

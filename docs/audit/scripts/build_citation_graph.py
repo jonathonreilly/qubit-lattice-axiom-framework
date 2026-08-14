@@ -151,6 +151,11 @@ HEADING_RE = re.compile(r"^#{1,6}\s+", re.MULTILINE)
 LINK_RE = re.compile(r"\[[^\]]*\]\(([^)\s#]+\.md)(?:#[^)]*)?\)")
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    # Cycle 972's checker independently reconstructs the finite Boolean family,
+    # cubic rotations, translated coordinate semantics, and marginal census.
+    "covariant_dependence_law_cycle972_bounded_theorem_note_2026-08-09": [
+        "scripts/frontier_cycle972_law_independent_check_2026_08_09.py",
+    ],
     # Cycle 971's semantic checker independently rebuilds the Git-object
     # census and binds the separately reviewed adjudication manifest.
     "axiom_fidelity_reread_cycle971_bounded_theorem_note_2026-08-09": [

@@ -602,6 +602,11 @@ def input_controls() -> dict:
         "For each site, the probability distribution over the possibilities is\n"
         "determined by, and varies with, the nearest-neighbor conditions."
     )
+    record_boundary_needles = (
+        "Finite additivity, a named scalar collection functional `I`, and an assigned",
+        "value `I(empty)=0` are not Record axiom content.",
+        "A site with no record cannot be read.",
+    )
     provenance = provenance_controls()
     return {
         "literal_audit_input_paths": list(AUDIT_INPUT_PATHS),
@@ -612,6 +617,9 @@ def input_controls() -> dict:
         "blocklist_text_only": all(not path.endswith(".py") for path in BLOCKLIST_CITED_PRIMARIES),
         "executable_substrate": EXECUTABLE_SUBSTRATE,
         "landed_axiom_needle_matches": needle in axiom_text,
+        "current_record_boundary_matches": all(
+            value in axiom_text for value in record_boundary_needles
+        ),
         "cycle970_text_ast_provenance": provenance,
         "provenance_pins_match": all(row["expected_blob"] == row["observed_blob"] for row in provenance.values()),
     }
@@ -727,6 +735,7 @@ def main() -> int:
         controls["all_inputs_exist_worktree_relative"]
         and controls["blocklist_text_only"]
         and controls["landed_axiom_needle_matches"]
+        and controls["current_record_boundary_matches"]
         and controls["provenance_pins_match"]
         and provenance["runner"]["has_declared_family_function"]
         and provenance["runner"]["has_state_resolved_census_function"]

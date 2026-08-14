@@ -1,6 +1,6 @@
 {
- "edge_count": 15825,
- "node_count": 5515,
+ "edge_count": 15831,
+ "node_count": 5516,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -396,6 +396,10 @@
   },
   "admissibility_cycle713_five_m2_stinespring_record_lock_action_cut_bounded_theorem_note_2026-08-13": {
    "deps_hash": "06d141169b95",
+   "out_degree": 5
+  },
+  "admissibility_cycle713_lphys_record_law_tournament_bounded_theorem_note_2026-08-13": {
+   "deps_hash": "b6075a74a54e",
    "out_degree": 5
   },
   "admissibility_cycle713_record_stress_block44_ir_reflected_carrier_boundary_bounded_theorem_note_2026-08-13": {
@@ -1907,8 +1911,8 @@
    "out_degree": 11
   },
   "canonical_harness_index": {
-   "deps_hash": "c4bc34b81625",
-   "out_degree": 363
+   "deps_hash": "9210787ec322",
+   "out_degree": 364
   },
   "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": {
    "deps_hash": "808c1ccb6109",

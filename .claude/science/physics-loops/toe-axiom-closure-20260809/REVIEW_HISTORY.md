@@ -2959,3 +2959,42 @@ instance or Fourier census.
   finds zero obligation retirement and zero TOE movement.
 - No audit verdict, retained status, axiom edit, score move, PR landing, or
   `review-loop` operation is performed.
+
+## Block 70 Two-Law Tournament And Portfolio Recheck
+
+- Refined Block69 into four nonzero `(outcome,sign)` physical branches and
+  independently checked all 80 direct-sum matrix-unit outputs, exact
+  coarse-graining, Choi positivity, and trace preservation.
+- Built four canonical sign/law NN role layouts: 112 SWAPs over 54 sites, no
+  clean bank or Record-target traversal, exact reverse labels, and explicit
+  forward background displacement.
+- Constructed two total same-weight laws: an injective output-`R` root and the
+  adjacent unchanged `O/H` packet. Invalid context/output/density, occupied
+  target, spent replay, and invalid realized member all refuse and preserve.
+- Executed 4,608 proper-cubic compositions, eight canonical `N=32` histories
+  lifted to 192 all-frame cases, eight full-scan controls, eight `N=128`
+  controls, and both whole-history decoders.
+- Independent challenge constructed exact unrestricted lookup bijections for
+  all 96 packets and all 96 `N=4` histories, with zero forward/inverse
+  conflicts and equal selected histories, so raw matrix inequality was
+  demoted. The repaired load-bearing witness is the common-decoder/lattice
+  geometry signature: `(1,1,0)` for all output-root packets versus `(1,0,1)`
+  for all adjacent packets. The initial head remains permanent and uniquely
+  nearest among five decoded heads at `N=4`, preserving exact forward versus
+  transverse incidence. The attempted head-only compression has only 72
+  distinct carriers, while the explicit tag has 96.
+- Primary/source-input-pinned cache is fresh at `PASS=10 FAIL=0` in 30.40
+  seconds; ten named mutations each fail exactly one aggregate. N1--N8 passes
+  only the narrow interface-nonselection claim. Citation registration is
+  `5,516/15,831`, out-degree five.
+- Independent read-only challenge reproduced the exact contract and exposed
+  the raw-inequality quotient defect; its geometry-invariant repair is applied.
+  It also corrected W1 to remain supplied and direct-text axiom nonselection
+  not to become global uniqueness. Its critical-pair enumeration shows a bare
+  two-event test would make both laws hit the already known permanent-write
+  wall, so the next seam is reranked to one-event environment/source closure
+  followed by reachable two-event confluence. Science commit `1fceecb445` is
+  pushed; stacked PR #6275 is open, mergeable, and `CLEAN` on exact Block69
+  receipt `5372dc9508`. No
+  audit verdict, retention, axiom edit, obligation retirement, score movement,
+  PR landing, or `review-loop` operation is performed at this checkpoint.

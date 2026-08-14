@@ -447,3 +447,17 @@ Do not ship a universal measurement, unitarity, Record-formation, chirality,
 gravity, or axiom-necessity no-go. The same-M2 dilation question is positively
 closed only on Cycle713's supplied clean decoder domain. The live exact target
 is the Record occurrence/content/permanence law and its action/source fields.
+
+## Block 70 Two-Law Interface Nonselection
+
+| Scoped negative considered | N1--N8 outcome | Allowed result | Live routes that defeat a broad no-go |
+|---|---|---|---|
+| “The exact current isolated-ready-patch interface uniquely selects one Record law,” “these are the only two laws,” or “an axiom amendment is necessary” | narrow first statement fails constructively: two same-weight, total, covariant, permanent, source-decodable laws survive and separate under a common-decoder geometry invariant even though exact unrestricted lookups biject all 96 packet and `N=4` history encodings; broad/exhaustive and axiom claims fail N1/N7 because no two-event confluence or homogeneous full-Z3 classification exists | current executable isolated-interface nonselection only; exact downstream owner datum and head-only parser falsifier | translated two-event critical-pair tournament, local-condition recognizer, collision/resource arbitration, environment/source conservation, retained gravity constraint, approved downstream law, and a third parser/law |
+
+Do not ship full-Z3 model non-entailment, exhaustive two-law classification,
+global Record-law impossibility, or axiom necessity from Block 70. The strongest
+next attack is constructive: first close one event's role readiness,
+environment disposition, and typed source/cadence without reset/copy/erasure;
+then enumerate only reachable translated two-event overlaps, require
+confluence or a normalized state-derived collision law, and only then attempt
+the homogeneous global lift.

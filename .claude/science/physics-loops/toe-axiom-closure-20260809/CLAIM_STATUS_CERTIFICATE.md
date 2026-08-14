@@ -2325,3 +2325,73 @@ Gate status is **PASS for the narrow nonpromotion statement and FAIL/demoted
 for every broad measurement/unitarity/Record negative**. The only allowed
 negative is that this declared unitary and mathematical extraction do not by
 themselves instantiate a formed permanent Record.
+
+## Block 70 Claim Status Certificate
+
+- Fine-channel theorem: the four nonzero `(h,s)` filters plus no-formation
+  match all 80 five-M2 matrix-unit outputs, coarse-grain exactly to Block69/65,
+  have maximum residual `6.84e-16`, Choi minimum zero, and TP residual
+  `6.7e-16`.
+- Physical-location theorem: four canonical sign/law role gatherings use 112
+  NN SWAPs over 54 sites, avoid Record targets, reverse exactly as token
+  permutations, and use no clean bank; 103 summed background displacements
+  and branch-conditioned invocation remain explicit.
+- Total-law theorem: two same-weight laws are total on the isolated ready-patch
+  contract. Forty-eight valid distributions, 240 invalid/non-density/occupied
+  refusals, 48 invalid-realized refusals, and 240 spent replays preserve
+  Records and never overwrite.
+- Action theorem: both complete first-write maps intertwine on 4,608/4,608
+  proper-cubic group compositions with 4,416 nontrivial content changes.
+- Permanence theorem: eight canonical `N=32` histories lift to 192 all-frame
+  cases with `3N+2` Records; eight full-scanner controls, eight `N=128`
+  controls, the inherited arbitrary-index induction, and two new root-
+  separation cases pass.
+- Decoder theorem: 192 all-frame initial packets and eight canonical `N=16`
+  whole histories recover the output-root density/outcome/sign/coframe or the
+  adjacent-packet source hop/outcome/signed frame.
+- Selection boundary: exact unrestricted lookups biject all 96 raw packet
+  encodings and all 96 `N=4` histories with zero forward/inverse conflicts and
+  equal selected histories, so raw matrix inequality is not load-bearing.
+  Under a Record-faithful quotient preserving lattice geometry and the shared
+  Block64 head decoder, all 96 output-root packets have root/head signature
+  `(1,1,0)` while all adjacent packets have `(1,0,1)`. At `N=4`, the initial
+  head remains the unique nearest of five decoded heads in every history and
+  preserves the exact forward-versus-transverse incidence. Head-only tagging
+  is only 72/96 injective; output-root tags are 96/96. This proves current
+  executable interface nonselection, not a full-Z3 model theorem, exhaustive
+  classification, or axiom necessity.
+- Evidence: primary/source-input-pinned cache is fresh at `PASS=10 FAIL=0` in
+  30.40 seconds; ten isolated mutations fail exactly one aggregate each. The
+  independent read-only challenge reproduced the weights,
+  totality, covariance, exact 96-to-96 recodings, and the decoder-preserving
+  geometry obstruction; its raw-inequality defect is repaired here. No
+  obligation is retired and the TOE map is unchanged.
+- Scope: `bounded_theorem`, unaudited and unretained. No axiom edit, approved
+  primitive, global law, gravity completion, audit verdict, or `review-loop`.
+
+### Block 70 No-Go Discipline Checklist
+
+- N1 — seven normalized attacks on the narrow interface statement are closed
+  by the exact channel/totality/equivalence/action/routing/permanence tests or
+  approved direct-text authority. Environment, reachable confluence, and a
+  third law are moved to the N7 live routes for the demoted broader claims.
+- N2 — six walls receive all 15 pairwise separation tests; local totality,
+  parser, action, permanence, source, and global scheduling are not collapsed.
+- N3 — randomness, projection/trace, blankness, scheduling, clean workspace,
+  reset, gravity, and status phrase families are classified explicitly.
+- N4 — every direct citation has `file:line`, imported result, mechanism,
+  residual, and retirement verdict.
+- N5 — per-element, per-site, per-mode, per-block, and lattice-wide resolution
+  is explicit; no model or axiom rhetoric exceeds the tested patch.
+- N6 — fine branch, two parser, injectivity, physical layout, action,
+  permanence, and source subclosures remain useful despite zero score movement.
+- N7 — the strongest steelman first closes one event's actual-role readiness,
+  environment disposition, and typed source/cadence, then tests only reachable
+  translated critical pairs for confluence or a normalized state-derived
+  collision law; it may select one, both, a third, or neither.
+- N8 — Blocks63--69, Cycle883, and Block44 echoes are matched without recycling
+  repaired single-front or sign walls as global closure.
+
+Gate status is **PASS for narrow isolated-interface nonselection and
+FAIL/demoted for axiom necessity, universal Record-law no-go, or exhaustive
+binary classification**.

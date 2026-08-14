@@ -1,0 +1,49 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_m2_effect_label_record_carrier_atomic_born_law_factorization_2026_08_10.py
+runner_sha256: a199c4f949092585394c4d655b639efd68bcc1deaa8ee33fd737887e72bc333f
+input_fingerprint_sha256: ad8747464c028b975afb87afc9cab2300a3f9e9fd04896e814514b06d439ce6b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+external_scientific_inputs: the current axiom and reviewed current-main imaginary-trace, context-tag, Gaussian-compiler, and fixed-kernel boundaries are source-bound; no closed-unmerged source, literature theorem, observed probability, fitted parameter, or external PR artifact is imported
+package_local_integrity_reads: the proposed theorem note is checked for its carrier, atomic law, exact fixtures, trace status, and N1-N8 surfaces; the cache envelope binds every declared input
+analytic_boundary: Gaussian integration, the common-uniform probability transform, general positive-functional normalization, and all-unitary covariance are proved in the source; exact rational carrier, menu, weight, and conjugation fixtures are executed here
+negative_scope: Record content/readout selection, autonomous law selection, program/preparation registration, occurrence, histories, and axiom adoption remain open; no global Born, Record, Admissibility, contact, or axiom no-go is claimed
+PASS: source-current-axiom the current M2 possibility, neighborhood-distribution, and content-only Record clauses are present without a scalar or additivity premise
+PASS: source-imaginary-trace-prior the current-main prior proves the Hermitian kernel and central anti-Hermitian right inverse but no physical readout
+PASS: source-content-map-prior the current-main prior uses one formal E+i-alpha-I context tag while leaving formation and readout selection open
+PASS: source-compiler-parent the current-main Gaussian compiler supplies exact second-moment weights while leaving physical program encoding open
+PASS: source-uniformizer-parent the current-main fixed-kernel theorem supplies the common Gaussian uniformizer and indexed-threshold escape
+PASS: carrier-dimension-capacity M2 has eight real coordinates; a Hermitian effect plus one real label uses five and leaves three
+PASS: carrier-left-inverse Hermitian-part and half-imaginary-trace projections recover every displayed effect-label pair exactly
+PASS: carrier-injectivity the five distinct displayed effect-label pairs produce five codewords with exactly one shared effect-label atom
+PASS: carrier-covariance Pauli-X and phase conjugations commute exactly with effect-label encoding
+PASS: projection-covariance projected effect co-transports and projected label is invariant under both conjugations
+PASS: optional-finite-label-aggregate the separately declared label sum is zero on empty and additive on concatenated finite codeword collections
+PASS: exact-effect-resolutions both rational ternary menus are positive semidefinite resolutions of the identity
+PASS: shared-effect-incidence the two rational programs share only E0 before encoding
+PASS: exact-menu-a-weights the rational menu A has exact weights (3/10,19/50,8/25)
+PASS: exact-menu-b-weights the rational menu B has exact weights (3/10,7/20,7/20)
+PASS: atomic-law-normalization both exact atomic laws have strictly positive masses summing to one
+PASS: shared-effect-atomic-descent the identical shared codeword has mass 3/10 in both supplied programs
+PASS: exact-quantile-cuts the atomic-law cuts are (0,3/10,17/25,1) and (0,3/10,13/20,1)
+PASS: quantile-pushforward every interval length equals its exact atomic mass
+PASS: sampler-projection-composition midpoint samples from every interval produce a codeword projected to the intended effect and label
+PASS: condition-varying-fixed-atom the same E0/label-one codeword has masses 1/4, 3/10, and 3/8 at t=0,1,2
+PASS: compiler-nonselection-control the same carrier accepts lambda zero and one while their shared-atom masses remain separated by 1/70
+PASS: construction-source-surface the source states the carrier, fixed algebraic projections, atomic law, pushforward, and exact menu outputs
+PASS: boundary-source-surface the source preserves the algebraic-type, Record-boundary, hypothetical-update, global-negative, governance, and score limits
+PASS: machine-status-contract the source carries the complete bounded upstream-support trace contract
+PASS: canonical-nonmutation the effect-label carrier and atomic Born-law wording are absent from the canonical axiom memo
+PASS: no-go-gate all N1-N8 sections, source matching, primitive scan, steelman acceptance, and global-negative rejection are visible
+per_element: five distinct rational effects, five encoded effect-label pairs, exact inverse maps, and every quantile interval are checked
+per_site: one M_2(C) output site carries one effect plus one real label with fixed algebraic projections and an exact finite atomic distribution; no Record content/readout selection or formation event is asserted
+per_mode: identity, Pauli-X, phase conjugation, two program menus, three preparation centers, and two isotropic extractor members are separated exactly
+per_block: the M2 carrier-to-algebraic-projection-to-atomic-effect-weight-to-Gaussian-quantile factorization is checked through the Record- and local-law-selection residuals
+lattice_wide: checked and not executed — translation/proper-cubic covariance follows for a co-transported supplied program, while physical Record content/readout, program registration, occurrence, causal order, and histories remain absent
+TOTAL: PASS=27 FAIL=0
+
+----- stderr -----
+

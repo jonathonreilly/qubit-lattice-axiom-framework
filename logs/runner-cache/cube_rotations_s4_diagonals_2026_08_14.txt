@@ -1,0 +1,44 @@
+===== runner cache v1 =====
+runner: scripts/cube_rotations_s4_diagonals_2026_08_14.py
+runner_sha256: eccfe907e410b5abe036417d9350970092bc28cdff0b57eb84b3e0c5b5a1ae41
+input_fingerprint_sha256: b8afc2442f1391c48ca25e6e54fb7d772ff6d6b5880b192478092d28ce6a5572
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+external_scientific_inputs: none; exact integer signed-permutation algebra only
+package_local_integrity_reads: proposed source note and live axiom memo only
+measure_boundary: exact Z coefficients; no floating-point inputs
+claim_boundary: constructed isomorphism G -> S_4; no axiom edit is asserted
+PASS: thm1-order |G| = 24 by enumeration
+PASS: thm1-distinct the 24 enumerated matrices are distinct
+PASS: thm1-sign-rule 3! axis permutations times 4 admissible sign patterns equal 24
+PASS: thm1-s4-count |S_4| = 24 by enumerating permutations of four labels
+PASS: thm1-membership every enumerated matrix is a det=+1 signed permutation with R^T R = I
+PASS: mutation-minus-i-not-in-G -I has det=-1 and is absent from G
+PASS: diag-partition the eight vertices partition into the four listed space diagonals
+PASS: gen-in-G the 90-about-x and 120-about-(1,1,1) matrices lie in G
+PASS: gen-orders those generators have orders 4 and 3
+PASS: gen-generate the pair generates all 24 elements of G
+PASS: phi-id phi(I) is the identity permutation
+PASS: thm3-ker ker phi = {I}
+PASS: thm4-surjective im phi has 24 distinct permutations, hence equals S_4
+PASS: thm2-gen-pair phi is multiplicative on the generating pair
+PASS: thm2-all-pairs phi(RS)=phi(R) o phi(S) for every pair in G
+PASS: note-forbidden-substrings the note contains none of the dispatch-forbidden substrings
+PASS: live-lattice-quote the live Lattice proper-cubic-rotations sentence is quoted without rewrite
+PASS: live-qubit-unflipped the live Qubit M_2(C) sentence is quoted without rewrite
+PASS: scope-boundary the note disclaims Aut(M_2) adoption, axiom text, and inverse-square
+PASS: machine-status-contract bounded-support status and not-proposed axiom status are source-visible
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: parents-axiom-only the note names the live axiom memo as its only parent
+per_element: each of the 24 matrices is tested for membership, kernel, and image.
+per_site: not executed — the claim is the onsite rotation group, not a multi-site law.
+per_mode: the four space diagonals are the only labels of phi.
+per_block: multiplicativity is checked on the generating pair and on all 24x24 products.
+lattice_wide: checked and not executed — no lattice-wide lift is asserted.
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

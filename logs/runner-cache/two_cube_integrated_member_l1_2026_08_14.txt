@@ -1,0 +1,65 @@
+===== runner cache v1 =====
+runner: scripts/two_cube_integrated_member_l1_2026_08_14.py
+runner_sha256: b79d286c5e99393aedae0d02fc32dc2b91b5d1be284ebf80ce5597eb2db31746
+input_fingerprint_sha256: b5246067e9f36f2fd99e4605f06c4bd08e428aca41b0d92e4c22831763657829
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: none; exact occupancy arithmetic on a supplied 12-vertex patch
+package_local_integrity_reads: proposed source note and live axiom memo only
+measure_boundary: exact integers and Fraction; PVM traces restricted to k=1
+claim_boundary: L1 is displayed executable data, not adopted law
+PASS: id-patch-count patch-count identity
+PASS: id-cube-a-count cube-a-count identity
+PASS: id-cube-b-count cube-b-count identity
+PASS: id-shared-face-count shared-face-count identity
+PASS: id-first-wave-on-patch first-wave-on-patch identity
+PASS: id-off-patch-occupancy off-patch-occupancy identity
+PASS: id-seed-occupancy seed-occupancy identity
+PASS: id-unread-occupancy unread-occupancy identity
+PASS: id-empty-clock empty-clock identity
+PASS: id-n-at-100 n-at-100 identity
+PASS: id-n-at-010 n-at-010 identity
+PASS: id-n-at-001 n-at-001 identity
+PASS: id-k-at-100 k-at-100 identity
+PASS: id-k-at-010 k-at-010 identity
+PASS: id-k-at-001 k-at-001 identity
+PASS: id-n-at-011-unread n-at-011-unread identity
+PASS: id-n-at-200-unread n-at-200-unread identity
+PASS: id-n-at-seed-locked n-at-seed-locked identity
+PASS: id-forming-set forming-set identity
+PASS: id-tick tick identity
+PASS: id-clock-0-to-3 clock-0-to-3 identity
+PASS: id-clock-1-to-4 clock-1-to-4 identity
+PASS: id-trace-plus trace-plus identity
+PASS: id-trace-minus trace-minus identity
+PASS: id-traces-sum traces-sum identity
+PASS: id-step-locks step-locks identity
+PASS: id-step-clock-from-0 step-clock-from-0 identity
+PASS: id-step-lock-count step-lock-count identity
+PASS: id-rho-a rho-a identity
+PASS: id-rho-b rho-b identity
+PASS: id-phi-star phi-star identity
+PASS: id-phi-outer phi-outer identity
+PASS: id-phi-star-is-rho-a phi-star-is-rho-a identity
+PASS: id-phi-outer-is-sum phi-outer-is-sum identity
+PASS: thm-first-wave-pvm each first-wave lock has k=1 and traces 2/3, 1/3
+PASS: thm-locked-stay the seed remains occupied after the step
+PASS: thm-empty-forms-none the empty configuration has n=0 at every patch site
+PASS: mutation-face-occupancy-is-not-phi phi is the rho assignment, not occupancy summed on the faces
+PASS: mutation-clock-tick-not-lock-count the tick is the new-lock count 3, distinct from seed-inclusive 4
+PASS: live-parent-quotes the note quotes all four live axiom sentences without rewrite
+PASS: machine-status-contract bounded-support status and hypothetical_axiom_status: not proposed
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: note-hygiene L1 is displayed; Qubit stays M_2(C); rho/phi are occupancy functions; forbidden strings absent
+per_element: occupancy, n, k, and k=1 traces are recomputed at each first-wave site
+per_site: formation is unread and n nonzero; locked sites stay
+per_mode: PVM traces are the two spectral weights at k=1
+per_block: rho/phi are evaluated on A, B, F*, and F_B after one step
+lattice_wide: checked and not executed — the claim is the supplied 12-vertex patch
+TOTAL: PASS=43 FAIL=0
+
+----- stderr -----
+

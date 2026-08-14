@@ -1,6 +1,6 @@
 {
- "edge_count": 15609,
- "node_count": 5492,
+ "edge_count": 15613,
+ "node_count": 5493,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1655,8 +1655,8 @@
    "out_degree": 11
   },
   "canonical_harness_index": {
-   "deps_hash": "843d0221d9c5",
-   "out_degree": 345
+   "deps_hash": "8f69ac2666b6",
+   "out_degree": 346
   },
   "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": {
    "deps_hash": "808c1ccb6109",
@@ -15697,6 +15697,10 @@
   "record_conditional_law_three_point_period_series_bounded_theorem_note_2026-06-11": {
    "deps_hash": "7dab68b99d29",
    "out_degree": 1
+  },
+  "record_content_only_shared_effect_descent_bounded_theorem_note_2026-08-12": {
+   "deps_hash": "aa1402df23ce",
+   "out_degree": 3
   },
   "record_content_readout_license_split_registration_unreachability_theorem_note_2026-07-02": {
    "deps_hash": "c228186e4577",

@@ -316,6 +316,77 @@ def apply_intmat(matrix: IntMat, vector: tuple[int, int, int]) -> tuple[int, int
     )
 
 
+DIAGONALS: tuple[tuple[int, int, int], ...] = (
+    (1, 1, 1),
+    (1, 1, -1),
+    (1, -1, 1),
+    (1, -1, -1),
+)
+
+
+def canon_diag(vector: tuple[int, int, int]) -> tuple[int, int, int]:
+    for entry in vector:
+        if entry != 0:
+            return vector if entry > 0 else (-vector[0], -vector[1], -vector[2])
+    return vector
+
+
+def diagonal_perm(rotation: IntMat) -> tuple[int, int, int, int]:
+    images = []
+    for diag in DIAGONALS:
+        mapped = canon_diag(apply_intmat(rotation, diag))
+        images.append(DIAGONALS.index(mapped))
+    return (images[0], images[1], images[2], images[3])
+
+
+def perm_sign(perm: tuple[int, int, int, int]) -> int:
+    inversions = 0
+    for i in range(4):
+        for j in range(i + 1, 4):
+            if perm[i] > perm[j]:
+                inversions += 1
+    return 1 if inversions % 2 == 0 else -1
+
+
+def element_order(matrix: IntMat) -> int:
+    acc = identity3()
+    for order in range(1, 25):
+        acc = mat3_mul(acc, matrix)
+        if acc == identity3():
+            return order
+    return 0
+
+
+def g_iso_s4_via_diagonals() -> bool:
+    perms = [diagonal_perm(rotation) for rotation in proper_cubic_group()]
+    return len(set(perms)) == 24 and all(sorted(perm) == [0, 1, 2, 3] for perm in perms)
+
+
+def order3_count() -> int:
+    return sum(1 for rotation in proper_cubic_group() if element_order(rotation) == 3)
+
+
+def all_g_conjugates_faithful() -> bool:
+    for conjugator in proper_cubic_group():
+        inverse = mat3_transpose(conjugator)
+
+        def conjugate_action(
+            rotation: IntMat, conjugator: IntMat = conjugator, inverse: IntMat = inverse
+        ) -> Auto:
+            return alpha_on(mat3_mul(conjugator, mat3_mul(rotation, inverse)))
+
+        if not is_faithful(conjugate_action):
+            return False
+        for rotation in proper_cubic_group():
+            conjugated = compose_auto(
+                alpha_on(conjugator),
+                compose_auto(alpha_on(rotation), alpha_on(inverse)),
+            )
+            if conjugated != conjugate_action(rotation):
+                return False
+    return True
+
+
 class Checks:
     def __init__(self) -> None:
         self.passed = 0
@@ -487,6 +558,36 @@ def main() -> int:
         plus_one_axis(RX) == (1, 0, 0)
         and plus_one_axis(RY) == (0, 1, 0)
         and plus_one_axis(RZ) == (0, 0, 1),
+    )
+    checks.check(
+        "thm3-g-iso-s4",
+        "G ≅ S_4 via the four space diagonals",
+        g_iso_s4_via_diagonals(),
+    )
+    checks.check(
+        "thm3-eight-order-3",
+        "G has eight order-3 elements, so it is not C_24 or D_12",
+        order3_count() == 8,
+    )
+    rz_perm = diagonal_perm(RZ)
+    checks.check(
+        "thm3b-rz-odd-det-plus",
+        "Rz is an odd permutation of the diagonals with det=+1, so 3⊗sgn misses SO(3)",
+        perm_sign(rz_perm) == -1
+        and det3(RZ) == 1
+        and len(set(rz_perm)) == 4,
+    )
+    checks.check(
+        "thm3c-all-g-conjugates",
+        "every G-conjugate of α is faithful and conjugate by α_S",
+        all_g_conjugates_faithful(),
+    )
+    checks.check(
+        "thm3-no-false-census",
+        "note does not claim octahedral groups are the only order-24 subgroups of SO(3)",
+        "The only order-`24` groups" not in note
+        and "dihedral" in note
+        and "isomorphic to `S_4`" in note,
     )
 
     memo_names_standard_action = (

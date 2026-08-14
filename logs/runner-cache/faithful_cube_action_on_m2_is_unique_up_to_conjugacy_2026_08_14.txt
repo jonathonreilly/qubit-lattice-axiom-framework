@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/faithful_cube_action_on_m2_is_unique_up_to_conjugacy_2026_08_14.py
-runner_sha256: 15d857ca1a62a5fbaf319f2f16a3bcd319fd0c1dc084e694e518016b87748552
-input_fingerprint_sha256: 1fcba796642bde01d78697317da0f2c649da1830415eb65b71e45d06c2aee2a3
+runner_sha256: a970ed055059ce313dee77b22fb91d323702815668ca438875409c72245f3f69
+input_fingerprint_sha256: ebb7a9ca97ba27e054284dab9f9822444372ad874e571341053acf7c3914c06b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.44
+elapsed_sec: 1.12
 status: ok
 ----- stdout -----
 external_scientific_inputs: none; G, α, φ0, Sω, β are theorem data
@@ -35,6 +35,11 @@ PASS: thm4-beta-faithful is_faithful(β) holds
 PASS: thm4-axes axis(α_Rx)=ê_x and axis(β_Rx)=Sω ê_x=ê_y
 PASS: thm3-rx-ry-is-sw Rx Ry = Sω, so the cube 120° relation holds on the nose
 PASS: thm3-frame-of-alpha α axes are the standard right-handed frame
+PASS: thm3-g-iso-s4 G ≅ S_4 via the four space diagonals
+PASS: thm3-eight-order-3 G has eight order-3 elements, so it is not C_24 or D_12
+PASS: thm3b-rz-odd-det-plus Rz is an odd permutation of the diagonals with det=+1, so 3⊗sgn misses SO(3)
+PASS: thm3c-all-g-conjugates every G-conjugate of α is faithful and conjugate by α_S
+PASS: thm3-no-false-census note does not claim octahedral groups are the only order-24 subgroups of SO(3)
 PASS: mutation-memo-names-action-fails predicate live memo names the standard action as axiom content must fail
 PASS: mutation-lattice-named-fails predicate note claims Lattice-named action must fail
 PASS: thm5-quoted-lattice-qubit note quotes live Lattice and Qubit, including the Cl(3,0) non-structure sentence
@@ -48,7 +53,7 @@ per_site: checked exactly — α and β are unital *-actions on one-site M_2(C) 
 per_mode: checked exactly — φ0 is unfaithful; α and β are faithful and conjugate
 per_block: checked exactly — uniqueness is one conjugacy class, conditional on faithfulness
 lattice_wide: checked and not executed — no action is adopted and none is required by the axioms
-TOTAL: PASS=32 FAIL=0
+TOTAL: PASS=37 FAIL=0
 
 ----- stderr -----
 

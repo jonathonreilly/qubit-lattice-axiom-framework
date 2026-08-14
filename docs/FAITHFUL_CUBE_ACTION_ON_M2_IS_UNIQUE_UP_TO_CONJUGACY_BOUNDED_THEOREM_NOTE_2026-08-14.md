@@ -1,7 +1,7 @@
 ---
 claim_id: faithful_cube_action_on_m2_is_unique_up_to_conjugacy_bounded_theorem_note_2026-08-14
 claim_type: bounded_theorem
-claim_scope: "Conditional on requiring a faithful unital *-action of the concrete proper cubic group G (|G|=24) on one-site M_2(C), those actions form one conjugacy class. The trivial action φ0 is not faithful. The displayed standard Bloch action α is faithful. A displayed conjugate β = α_Sω ∘ α ∘ α_Sω^{-1} is faithful, distinct from α on Rx, and conjugate to α. Live Lattice and Qubit do not require a faithful action and do not privilege a frame. α is displayed, not adopted. No SWAP-corner Aut, QCD, or Qubit rewrite is supplied."
+claim_scope: "Conditional on requiring a faithful unital *-action of the concrete proper cubic group G (|G|=24) on one-site M_2(C), those actions form one conjugacy class. G is isomorphic to S_4 via its action on the four space diagonals. A faithful image is therefore S_4, not C_24 or D_12 (G has eight order-3 elements). The only 3-dimensional real irrep of S_4 that lands in Aut(M_2)≅SO(3) is the standard 3, not 3⊗sgn. The runner conjugates α by every element of G. Live Lattice and Qubit do not require a faithful action and do not privilege a frame. α is displayed, not adopted."
 upstream_dependencies:
   - minimal_axioms
 runner: scripts/faithful_cube_action_on_m2_is_unique_up_to_conjugacy_2026_08_14.py
@@ -48,12 +48,18 @@ Two displayed actions and one excluded action:
   `120°` cycle `Sω = ((0,0,1),(1,0,0),(0,1,0)) ∈ G`. Faithful, conjugate
   to `α`, and `β_{Rx} ≠ α_{Rx}`.
 
-Finite subgroups of `SO(3)` of order `24` are octahedral and form one
-conjugacy class. Identifying `Aut(M_2) ≅ SO(3)` by the Bloch action,
-every faithful unital `*`-action of `G` on `M_2` is therefore conjugate
-to `α`. That is **one conjugacy class**. The leftover inside the class
-is a Bloch frame. This note does not pick a representative and does not
-adopt `α`.
+`G` is isomorphic to `S_4` by permuting the four space diagonals.
+A faithful unital `*`-action is an injective hom `G → Aut(M_2) ≅ SO(3)`,
+so its image is isomorphic to `S_4`. Cyclic `C_{24}` and dihedral
+`D_{12}` are order-`24` subgroups of `SO(3)` and are **not** isomorphic
+to `S_4` (`G` has eight order-3 elements; those groups have two).
+The only 3-dimensional real irrep of `S_4` that lands in `SO(3)` is
+the standard `3`; `3 ⊗ sgn` sends some cube rotations to determinant
+`-1`. Therefore every faithful action is equivalent to the standard
+inclusion `α`, and the leftover inside the class is a Bloch frame.
+This note does not pick a representative and does not adopt `α`.
+The runner conjugates `α` by every element of `G`, not by one
+displayed `Sω`.
 
 ## Machine Status And Trace
 
@@ -155,29 +161,57 @@ not injective.
 Bloch action of the concrete matrix `R`, `α_R = id` if and only if
 `R = I_3`. Hence `α` is injective: `is_faithful(α)` holds.
 
-## Theorem 3 — faithful actions form one conjugacy class
+## Theorem 3 — `G ≅ S_4`; faithful images cannot be cyclic or dihedral
 
-Identify `Aut(M_2)` with `SO(3)` by the Bloch action: every unital
-`*`-automorphism is inner, and inner automorphisms act as orientation-preserving
-rotations of the Bloch ball. Under that identification, a faithful unital
-`*`-action of `G` on `M_2` is an injective hom `G → SO(3)`.
+The four space diagonals of the unit cube are the lines through
 
-Finite subgroups of `SO(3)` are cyclic, dihedral, tetrahedral, octahedral,
-or icosahedral. The only order-`24` groups in that list are octahedral
-(`≅ S_4`). Those subgroups form one conjugacy class in `SO(3)`. Therefore
-every injective hom `G → Aut(M_2)` is conjugate to the standard inclusion,
-which is exactly `α`. That is one conjugacy class.
+```text
+(1,1,1),   (1,1,−1),   (1,−1,1),   (1,−1,−1).
+```
 
-Constructively: for a faithful action `ρ`, the image `ρ(Rx)` is a `90°`
-Bloch rotation about a unique axis `n_x`, and cyclic for `Ry`, `Rz`. The
-cube relations force `(n_x, n_y, n_z)` to be a right-handed orthonormal
-frame. There is a unique `S ∈ SO(3)` with `S ê_i = n_i`. Then
-`ρ(R) = α_S ∘ α_R ∘ α_S^{-1}` on the generators, hence on `G`.
+Each `R ∈ G` permutes these four lines (a vertex and its opposite
+label the same line). The resulting map `G → S_4` is a group
+isomorphism: the runner lists 24 distinct permutations.
+
+Consequently a faithful hom `G → Aut(M_2)` has image isomorphic to
+`S_4`. That already excludes the order-`24` subgroups `C_{24}` and
+`D_{12}` of `SO(3)`. Independently, `G` has exactly eight elements
+of order 3 (the 3-cycles of `S_4`). Cyclic and dihedral groups of
+order 24 have two. A census that treats octahedral groups as the
+sole order-24 finite subgroups of `SO(3)` is false, and is not used.
+
+## Theorem 3b — only the standard `3` lands in `SO(3)`
+
+`S_4` has two 3-dimensional real irreps, `3` and `3 ⊗ sgn`. Inner
+automorphisms of `M_2` act as orientation-preserving Bloch rotations,
+so `Aut(M_2) ≅ SO(3)` and every image matrix has determinant `+1`.
+
+The standard inclusion `α` is the irrep `3`. For `3 ⊗ sgn`, an odd
+permutation of the diagonals would flip the determinant. The runner
+checks that `R_z` induces a 4-cycle on the diagonals (odd), while
+`det(R_z) = +1`. Therefore `3 ⊗ sgn` does not land in `SO(3)`.
+The only remaining 3-dimensional irrep is `3`, which is `α`.
+
+Constructively, the same uniqueness is the right-handed frame of
+`90°` axes: `ρ(R_x)`, `ρ(R_y)`, `ρ(R_z)` determine a unique
+`S ∈ SO(3)` with `ρ = Ad_S ∘ α ∘ Ad_S^{-1}`.
 
 Qubit says no possibility is privileged and the `Cl(3,0)` parenthetical
 adds no further primitive structure. Those sentences forbid reading the
 standard frame as axiom content. They do not create a second conjugacy
 class.
+
+## Theorem 3c — every `G`-conjugate of `α` is faithful and conjugate
+
+For every `S ∈ G` the conjugate action
+
+```text
+β^S_R = α_S ∘ α_R ∘ α_S^{-1} = α_{S R S^{-1}}
+```
+
+is faithful, and the conjugator is `α_S`. That is the full discrete
+orbit of frames named by `G` itself. Combined with Theorem 3b, every
+faithful unital `*`-action lies in this one conjugacy class.
 
 ## Theorem 4 — a displayed distinct conjugate
 
@@ -223,9 +257,10 @@ Identity gates call `proper_cubic_count()`, `is_faithful(phi)`,
 ## Honest-auditor / Boundary
 
 The algebra is finite: `24` integer matrices and four `2 × 2` matrices
-over `Q(i)`. The runner enumerates `G`, reconstructs `α` from the Bloch
-formula, reconstructs `β` from `Sω`, and checks the mutation predicates
-against the live axiom memo rather than a working-tree paraphrase.
+over `Q(i)`. The runner enumerates `G`, proves `G ≅ S_4` on the four
+space diagonals, counts eight order-3 elements, checks that `3 ⊗ sgn`
+cannot land in `SO(3)`, and conjugates `α` by every element of `G`.
+It does not import a census of all order-24 subgroups of `SO(3)`.
 
 Boundary, stated positively. The theorem classifies faithful unital
 `*`-actions of this concrete `G` on one-site `M_2` up to conjugacy. It

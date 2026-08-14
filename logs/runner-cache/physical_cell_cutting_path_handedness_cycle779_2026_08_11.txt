@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/physical_cell_cutting_path_handedness_cycle779_2026_08_11.py
+runner_sha256: 4137dd13771f64fcb45b2f44e7c7763396d1b134a81ad883b54b003fb47f5b4e
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 20.98
+status: ok
+----- stdout -----
+PASS L0 cell: 2672 unit pieces, cost floor 6, 400 at floor, 15800 cuttings of 24, 192 pieces each in 1975, 379200 slots, 192 covers of 8, 384 maps
+PASS L1 floor profiles: (1,1,1,1,4) 16, (1,1,1,2,3) 192, (1,1,2,2,2) 192, sum 400 of 400; all 2672 pieces show 9 profiles, so the floor restricts
+PASS L2 the 192 used pieces are exactly the 192 staircase paths, both differences empty; the other 208 floor pieces occur in 0 cuttings
+PASS L3 namings: 16 start corners times 24 axis orders = 384, every path named exactly 2 times, 384 // 2 = 192 paths, matching the 192 used pieces
+PASS L4 simple transitivity: from one fixed naming each of the 384 namings is reached by exactly 1 of the 384 maps; namings whose count is not 1: 0
+PASS L5 each of the 192 paths is held by a group of order exactly 2 whose second map swaps its two namings; paths failing: 0
+PASS L6 swap determinants at n = 1 to 6: -1,-1,1,1,-1,-1; fixers 2,2,2,2,2,2; (-1)^(n(n+1)/2) agrees: yes; n = 4 flip weights 0:48 2:96 4:48, even
+PASS L7 all 192 path holders have determinant +1, so in the proper half of order 192; the 192 cover holders are single axis flips of determinant -1
+PASS L8 under the proper half of order 192 the paths fall into 2 orbits of 96 and the covers into 1 orbit of 192 with holder of order 1
+PASS L9 law checked on all 384 times 192 = 73728 pairs: label of image = label times determinant of map; failures 0
+PASS L10 axis order sign times (-1)^popcount of start corner: single valued on 192 of 192 paths, equals the orbit label on 192 of 192, plus count 96
+PASS L11 of the 192 proper maps, those keeping the axis order sign alone: 96; the start corner parity alone: 96; the product: 192
+PASS L12 every one of the 192 covers splits 4 and 4 by label, and each piece sits in 8 covers, so 192 times 4 = 768 = 96 times 8 forces the 4
+PASS L13 left count census 8:120 10:2832 12:9896 14:2832 16:120, sum 15800, left slots 189600 = 96 times 1975, mean 12, odd 0, range 8 to 16
+PASS L14 cutting orbits 74 under 384 and 119 under proper 192, generators closed; sizes 8:1 24:4 32:1 48:7 64:1 96:11 192:24 384:25; unbalanced 25
+PASS L15 the 240 extremal cuttings form 14 proper orbits of sizes 12:8 24:6, all far below order 192, so one sided cuttings are the most symmetric
+PASS L16 swap lowest piece for lowest missing: odd left count in 200 of 200 sampled and 7900 of 15800 overall, so the even law belongs to cuttings
+PASS L17 closure orders 4,24,192,1920 at n = 2,3,4,5, dets all +1; paths 4,24,192,1920; orbits 4:1 12:2 96:2 1920:1; label exists at n = 3 and 4
+PASS L18 at chance against the label: corner weight parity 96, corner index sum parity 96, sorted corner determinant sign 96, each of 192
+resource: under 60 s of the 900 s budget, under 250 MB of the 2500 MB budget, 2682 gate characters
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

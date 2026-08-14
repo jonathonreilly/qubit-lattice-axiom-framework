@@ -23,6 +23,7 @@ AXIOM_PATH = ROOT / "docs" / "MINIMAL_AXIOMS_2026-06-29.md"
 PARENT_PATH = ROOT / "docs" / "ADMISSIBILITY_GAUSSIAN_SECOND_MOMENT_QUANTILE_DECODER_EFFECT_QUOTIENT_BOUNDED_THEOREM_NOTE_2026-08-10.md"
 INSTRUMENT_PATH = ROOT / "docs" / "RECORD_INSTRUMENT_KERNEL_INTERFACE_2026-06-05.md"
 PROCESS_PATH = ROOT / "docs" / "work_history" / "repo" / "review_feedback" / "PRETERMINAL_CONTEXT_QUANTUM_PROCESS_CYCLE189_NOTE_2026-07-16.md"
+COVARIANT_PATH = ROOT / "docs" / "COVARIANT_DEPENDENCE_LAW_CYCLE972_BOUNDED_THEOREM_NOTE_2026-08-09.md"
 
 AUDIT_INPUT_PATHS = (
     "docs/ADMISSIBILITY_CNOT_CONTACT_GAUSSIAN_EXTRACTOR_TYPE_ORDER_BOUNDED_THEOREM_NOTE_2026-08-10.md",
@@ -30,6 +31,7 @@ AUDIT_INPUT_PATHS = (
     "docs/ADMISSIBILITY_GAUSSIAN_SECOND_MOMENT_QUANTILE_DECODER_EFFECT_QUOTIENT_BOUNDED_THEOREM_NOTE_2026-08-10.md",
     "docs/RECORD_INSTRUMENT_KERNEL_INTERFACE_2026-06-05.md",
     "docs/work_history/repo/review_feedback/PRETERMINAL_CONTEXT_QUANTUM_PROCESS_CYCLE189_NOTE_2026-07-16.md",
+    "docs/COVARIANT_DEPENDENCE_LAW_CYCLE972_BOUNDED_THEOREM_NOTE_2026-08-09.md",
 )
 
 
@@ -161,10 +163,11 @@ def main() -> int:
     parent = PARENT_PATH.read_text(encoding="utf-8")
     instrument = INSTRUMENT_PATH.read_text(encoding="utf-8")
     process_note = PROCESS_PATH.read_text(encoding="utf-8")
+    covariant_note = COVARIANT_PATH.read_text(encoding="utf-8")
     note_flat = " ".join(note.split())
     axiom_flat = " ".join(axiom.split())
 
-    print("external_scientific_inputs: the current axiom, stacked Gaussian compiler, and two tracked conditional process boundaries are source-bound; PR 6069 is prior-art context only and is not executed or imported")
+    print("external_scientific_inputs: the current axiom, reviewed current-main Gaussian compiler, landed Cycle 972 finite contact theorem, and two tracked conditional process boundaries are source-bound")
     print("package_local_integrity_reads: the proposed theorem note is checked for construction, boundary, trace status, and N1-N8 surfaces; the cache envelope binds every declared input")
     print("analytic_boundary: the Gaussian density-set measure-zero proof, general conjugation pushforward, and all-lambda formulas are proved in the source; exact rational fixtures are executed here")
     print("negative_scope: only direct sample typing and the declared fixed-input/conditioned-CNOT selection route are bounded; randomized controls, larger instruments, and local process laws remain live")
@@ -183,10 +186,18 @@ def main() -> int:
     )
     checks.check(
         "source-parent-residual",
-        "Block 4 leaves physical extractor selection and preparation/program registration open",
+        "the current-main Gaussian compiler leaves physical extractor selection and preparation/program registration open",
         "why the physical law selects the raw second moment" in parent
         and "how contact/pointer dynamics encodes the ordered effect program" in parent
         and "preparation equivalence is held fixed" in parent,
+    )
+    checks.check(
+        "source-finite-contact",
+        "the landed Cycle 972 source supplies exactly the bounded six-witness XOR class and uniform-target marginal",
+        "Exactly six of the 20 words induce state-resolved neighbour dependence" in covariant_note
+        and "y = x XOR n_d" in covariant_note
+        and "zero of the 20 declared words" in covariant_note
+        and "continuous `M_2(C)` distributions are outside the declared horizon" in covariant_note,
     )
     checks.check(
         "source-instrument-type-order",
@@ -396,6 +407,7 @@ def main() -> int:
         "does not select the control weight",
         "not the same-effect quotient",
         "no canonical axiom is edited",
+        "supplies no scalar collection functional `I`, finite additivity, direct readout compiler",
     )
     checks.check(
         "boundary-source-surface",
@@ -444,7 +456,7 @@ def main() -> int:
     print("per_site: one target plus one basis-control neighbour is executed at blank, Pz, and X-transported conditions; no autonomous site/program selection is asserted")
     print("per_mode: conditioned conjugation, spectrum preservation, random-control reduction, and fixed-versus-transported effect modes are checked exactly")
     print("per_block: the Gaussian extractor/CNOT carrier chain is checked through state typing, contact equivariance, supplied mixing, and the preparation-quotient boundary")
-    print("lattice_wide: checked and not executed — PR 6069 supplies a finite covariant direction orbit, while this theorem rederives one-edge algebra and claims no global continuous compiler")
+    print("lattice_wide: checked and not executed — the landed Cycle 972 theorem supplies a finite covariant direction orbit, while this theorem rederives one-edge algebra and claims no global continuous compiler")
     return checks.finish()
 
 

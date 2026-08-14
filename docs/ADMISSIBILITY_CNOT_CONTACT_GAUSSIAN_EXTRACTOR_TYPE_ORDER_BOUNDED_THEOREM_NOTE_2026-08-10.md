@@ -5,13 +5,14 @@ claim_scope: "For the explicit full-support Gaussian Admissibility family and th
 upstream_dependencies:
   - minimal_axioms
   - admissibility_gaussian_second_moment_quantile_decoder_effect_quotient_bounded_theorem_note_2026-08-10
+  - covariant_dependence_law_cycle972_bounded_theorem_note_2026-08-09
 runner: scripts/admissibility_cnot_contact_gaussian_extractor_type_order_2026_08_10.py
 ---
 
 # CNOT Contact, Gaussian Extractor Equivariance, And Type Order
 
 **Date:** 2026-08-10
-**Type:** bounded theorem and constructive physical-compiler interface test
+**Type:** bounded_theorem
 **Scope:** one `M_2(C)` target, one basis-control neighbor, the explicit
 Gaussian law, and the displayed isotropic extractor family.
 **Audit-status authority:** independent audit lane only. This note authors no
@@ -23,20 +24,20 @@ audit verdict and predicts none.
 
 ## Result Up Front
 
-Block 4 constructed a complete fixed-condition mathematical
+The reviewed current-main Gaussian compiler theorem constructs a complete fixed-condition mathematical
 measure-to-density-operator-to-quantile-decoder compiler on one explicit
 Gaussian completion, but physical selection and program registration remained
-open. The new finite contact seed in PR #6069 supplies exact covariant
-incoming-CNOT/XOR dependence on basis states. This block tests that seed
-against the continuous compiler without importing the PR's branch artifacts.
+open. The landed Cycle 972 finite contact theorem supplies exact covariant
+incoming-CNOT/XOR dependence on basis states. This theorem tests that seed
+against the continuous compiler using only reviewed current-main sources.
 
 The exact result has six parts.
 
 1. The current raw possibility content is an arbitrary element of `M_2(C)`.
    The density-operator set `D_2` has real dimension three inside the
    eight-real-dimensional content space. The full-support Gaussian law is
-   absolutely continuous, so `mu_C(D_2)=0`. A generic locked possibility is
-   therefore not already a density operator.
+   absolutely continuous, so `mu_C(D_2)=0`. Gaussian-almost every locked
+   possibility is therefore not already a density operator.
 2. With a basis control `n`, incoming CNOT acts on a typed target operator by
    `T_n(B)=X^n B X^n`. The same formula is a valid algebra automorphism on raw
    matrix content. It pushes the Gaussian center `C` to `X^n C X^n` and
@@ -54,7 +55,7 @@ The exact result has six parts.
    not select the control weight.
 6. With a fixed pure control, the target update is unitary conjugation and
    preserves its spectrum. It cannot turn one common blank target into the
-   Block 4 family whose spectrum changes between `C=0` and `C=P_z`. Mixing or
+   Gaussian compiler family whose spectrum changes between `C=0` and `C=P_z`. Mixing or
    erasing a control can change the spectrum only by importing the control law,
    blank, and reduction interface.
 
@@ -88,7 +89,7 @@ bare_retained_allowed: false
 ## Exact Target And Obligation Graph
 
 **Exact target.** Decide whether the finite covariant incoming-CNOT contact
-mechanism can select and physically register Block 4's Gaussian
+mechanism can select and physically register the current-main Gaussian
 density-operator/decoder compiler, rather than merely act on an already typed
 and prepared target.
 
@@ -118,6 +119,12 @@ one-site possibility domain to be `M_2(C)` and supplies a probability measure
 on that entire domain. It does not identify each possibility with a quantum
 density operator.
 
+The current Record axiom supplies no scalar collection functional `I`, finite
+additivity, direct readout compiler, record-formation probability or rate, or
+control-selection rule used by this theorem. Record contributes only the open
+occurrence/content boundary: any eventual physical compiler must still explain
+how the selected program and outcome form and are locked as record content.
+
 Let
 
 `D_2={rho in M_2(C):rho=rho^dagger, rho>=0, Tr(rho)=1}`.
@@ -126,7 +133,7 @@ Hermitian `2x2` matrices have four real coordinates. The trace-one condition
 removes one, and positivity selects a full-dimensional convex body within that
 three-dimensional affine space. Thus `D_2` has real dimension three, while
 `M_2(C)` has real dimension eight. It has eight-dimensional Lebesgue measure
-zero. The Block 3/4 Gaussian `mu_C` has a strictly positive Lebesgue density,
+zero. The current-main Gaussian compiler's `mu_C` has a strictly positive Lebesgue density,
 so
 
 `mu_C(D_2)=0`.
@@ -192,7 +199,7 @@ load-bearing inputs.
 
 ## Theorem 3 — Fixed Effect And Transported Effect Separate
 
-At `C=P_z`, Block 4 gives
+At `C=P_z`, the current-main Gaussian compiler gives
 
 `rho_0^(lambda)=diag(lambda+3,lambda+2)/(2lambda+5)`.
 
@@ -267,7 +274,9 @@ the target input has one-weight `p`, then
 
 with response gap `|1-2p|`. Fixed target input gives maximal dependence and
 point outputs. Uniform `p=1/2` supplies half-half splitting but erases neighbor
-dependence exactly, as PR #6069 reports on its finite family. Nontrivial
+dependence exactly, as the
+[`landed Cycle 972 theorem`](COVARIANT_DEPENDENCE_LAW_CYCLE972_BOUNDED_THEOREM_NOTE_2026-08-09.md)
+reports on its finite family. Nontrivial
 mixing plus nonzero dependence is possible for other `p`, but its value remains
 supplied.
 
@@ -325,11 +334,12 @@ and a fixed process, but explicitly imports preparation, intervention, Born
 pairing, and process category. It is a live record-derived route, not a current-
 axiom selection theorem.
 
-PR [#6069](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/6069)
-is non-load-bearing prior-art context. Its branch theorem exhausts the declared
-20-word basis family and reports six covariant incoming-CNOT/XOR witnesses,
-while explicitly leaving the continuous `M_2(C)` law open. All load-bearing
-CNOT and continuous calculations are rederived here.
+The landed
+[`Cycle 972 covariant-dependence theorem`](COVARIANT_DEPENDENCE_LAW_CYCLE972_BOUNDED_THEOREM_NOTE_2026-08-09.md)
+exhausts the declared 20-word basis family and reports six covariant
+incoming-CNOT/XOR witnesses while explicitly leaving the continuous `M_2(C)`
+law open. Its bounded finite-family statement is source-bound here; all
+continuous calculations are rederived in this theorem.
 
 ## No-Go Discipline Gate
 
@@ -358,7 +368,7 @@ selection by the declared contact/covariance structure alone.
 
 The direct-sample type issue collapses into density-functional selection, and
 random-control weighting collapses into selection plus splitting. The same
-three walls from Block 4 remain.
+three walls from the current-main Gaussian compiler theorem remain.
 
 | Pair | First closes second? | Second closes first? | Disposition |
 |---|---:|---:|---|
@@ -373,7 +383,7 @@ as a fourth independent wall.
 
 | Item | Classification |
 |---|---|
-| full-support Gaussian | explicit constructed completion from the stacked parent; not selected by current axioms |
+| full-support Gaussian | explicit constructed completion from the current-main Gaussian compiler theorem; not selected by current axioms |
 | density-operator set dimension | elementary finite-dimensional geometry proved here |
 | Pauli `X` and CNOT basis | supplied program convention for the tested route; not a preferred current-axiom basis |
 | density operator as CNOT input | used only in the conditional typed-channel branch; never inferred from raw content |
@@ -396,10 +406,11 @@ in as a current premise.
 | [`Gaussian compiler source`](ADMISSIBILITY_GAUSSIAN_SECOND_MOMENT_QUANTILE_DECODER_EFFECT_QUOTIENT_BOUNDED_THEOREM_NOTE_2026-08-10.md), lines 122--163 and 263--329 | extractor exists mathematically; selection and cross-condition preparation quotient remain open | test conditioned CNOT against selection and quotient | exact one-edge equivariance/fixed-effect boundary only | yes |
 | [`Record instrument interface`](RECORD_INSTRUMENT_KERNEL_INTERFACE_2026-06-05.md), lines 28--64 and 100--108 | instrument kernels start after supplied `rho` and `{K_r}` | audit contact/state type order | no reverse derivation borrowed | yes |
 | [`Cycle 189 process source`](work_history/repo/review_feedback/PRETERMINAL_CONTEXT_QUANTUM_PROCESS_CYCLE189_NOTE_2026-07-16.md), lines 88--99 and 505--527 | density calculator reconstructs after supplied finite process fields | keep record-derived process route live | no current-axiom process closure borrowed | yes |
+| [`Cycle 972 covariant-dependence theorem`](COVARIANT_DEPENDENCE_LAW_CYCLE972_BOUNDED_THEOREM_NOTE_2026-08-09.md), finite family and marginal sections | six incoming-CNOT/XOR witnesses form one bounded spatial class; uniform target input erases the displayed marginal | bind the finite contact seed and its exact scope | no continuous-domain or physical-selection closure borrowed | yes |
 
-PR #6069 is a live external collision/provenance check rather than a
-load-bearing citation. Its continuous-boundary statement is re-established by
-the calculations here.
+Cycle 972 is a reviewed current-main source for the finite contact statement.
+Its continuous-domain boundary is independently respected and re-established
+by the calculations here.
 
 ### N5 — resolution and rhetoric audit
 
@@ -435,11 +446,10 @@ kinetic-form ratio only, and the realized-state primitive supplies pointwise
 evaluation without a density functional, instrument, control law, probability
 selector, or program quotient. None closes the interfaces above.
 
-PR #6069 materially improves the finite contact layer: six incoming-CNOT/XOR
-witnesses form one covariant spatial law class. Its own boundary leaves the
-continuous `M_2(C)` probability law open, and its exact uniform-target
-marginal shows why supplied mixing is not selection. PR #6066 changes no
-premise, and PR #6068 is unrelated cell-cutting rank science.
+The landed Cycle 972 theorem supplies six incoming-CNOT/XOR witnesses in one
+covariant spatial law class. Its own boundary leaves the continuous `M_2(C)`
+probability law open, and its exact uniform-target marginal shows why supplied
+mixing is not selection. No unlanded branch is used as premise or evidence.
 
 ### N7 — hostile steelman
 
@@ -459,10 +469,10 @@ them. That is the next exact target.
 | Earlier surface | Later movement | Echo here |
 |---|---|---|
 | raw possibility/effect identification failed in Block 2 | Block 3 replaced points by decoder fibers | direct sample/state typing now fails for the same whole-domain reason |
-| Block 3 found decoder nonselection | Block 4 constructed one exact Gaussian compiler | CNOT transports the constructed compiler but preserves its extractor freedom |
+| the decoder-fiber result found decoder nonselection | the current-main Gaussian theorem constructed one exact compiler | CNOT transports the constructed compiler but preserves its extractor freedom |
 | Cycle 189 reconstructed a density calculator from records | its process fields remained supplied | record reconstruction remains a positive alternative after local process derivation |
 | Cycle 321 closed a finite coarse-CP quotient | general physical effect equality remained open | fixed versus transported effects now separate the exact one-edge quotient choices |
-| PR #6069 closes finite CNOT covariance | continuous `M_2(C)` remains explicitly open | the algebraic extension closes covariance but not typing or selector choice |
+| Cycle 972 closes bounded finite-family CNOT covariance | continuous `M_2(C)` remains explicitly open | the algebraic extension closes covariance but not typing or selector choice |
 
 **Gate disposition:** PASS for the Gaussian density-set type boundary,
 conditioned-CNOT extractor equivariance, fixed-versus-transported effect split,
@@ -475,12 +485,12 @@ preparation equivalence, occurrence, or Born/history closure.
 | Item | Role | Status |
 |---|---|---|
 | current `M_2(C)` possibility measure and Record wording | semantic baseline | supplied; unchanged |
-| explicit Gaussian law and isotropic extractor family | tested compiler family | inherited from stacked parent; not physically selected |
+| explicit Gaussian law and isotropic extractor family | tested compiler family | inherited from the reviewed current-main parent theorem; not physically selected |
 | Pauli `X` and conditioned CNOT conjugation | one-edge contact model | elementary finite quantum algebra rederived here |
 | density-operator subset geometry | raw-content type test | elementary dimension/measure argument |
 | fixed `E_0=(1/2)P_z` | quotient probe | exact parent fixture; mathematical effect only |
 | random/coherent control and restriction | positive preparation escape | conditional operation; weight, blank, and occurrence not derived |
-| PR #6069 | prior-art/collision context | external live PR; not a declared runner input |
+| Cycle 972 covariant-dependence theorem | finite contact source | reviewed current-main runner input; bounded to its declared family |
 | canonical axiom edit | governance action | forbidden absent owner authority; not performed |
 
 The exact advance is a type-ordered factorization of what the finite contact
@@ -490,9 +500,10 @@ open current-axiom obligations.
 
 ## Review Record
 
-This source is stacked on PR #6070 because it consumes the explicit Gaussian
-compiler and its exact physical-selection residual. PR #6069 is checked as
-adjacent prior art but no branch-local artifact is imported. The canonical
+The submission was originally stacked, but review-loop replayed its science on
+reviewed current main. It consumes the landed Gaussian compiler and Cycle 972
+finite contact theorem; no branch-local artifact is imported. The canonical
 axiom memo remains unchanged. Independent audit is required before any
-effective status changes. No `review-loop` was invoked in producing or
-directly self-reviewing this artifact.
+effective status changes. The authoring claim that no self-review occurred is
+preserved only as submission history; this repaired candidate has undergone
+repo-native review-loop review.

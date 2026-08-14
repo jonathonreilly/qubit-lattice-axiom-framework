@@ -1,6 +1,6 @@
 {
- "edge_count": 15864,
- "node_count": 5524,
+ "edge_count": 15869,
+ "node_count": 5525,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -379,8 +379,8 @@
    "out_degree": 8
   },
   "admissibility_component_staggered_signed_link_action_local_ward_boundary_bounded_theorem_note_2026-08-14": {
-   "deps_hash": "86855348b41d",
-   "out_degree": 4
+   "deps_hash": "b0f2ed17a016",
+   "out_degree": 5
   },
   "admissibility_curved_regge_pseudoconstraint_perfect_action_route_gate_bounded_theorem_note_2026-08-12": {
    "deps_hash": "c4f61f974a87",
@@ -549,6 +549,10 @@
   "admissibility_proper_cubic_spatial_plaquette_record_coframe_palatini_curvature_boundary_bounded_theorem_note_2026-08-11": {
    "deps_hash": "022d3c76d3f4",
    "out_degree": 3
+  },
+  "admissibility_raw_graph_ward_compact_pullback_translation_generator_boundary_bounded_theorem_note_2026-08-14": {
+   "deps_hash": "35e0d0d4cede",
+   "out_degree": 4
   },
   "admissibility_record_content_decoder_pushforward_effect_descent_independence_bounded_theorem_note_2026-08-10": {
    "deps_hash": "3897af505edd",

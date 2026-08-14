@@ -1,6 +1,6 @@
 {
- "edge_count": 15645,
- "node_count": 5505,
+ "edge_count": 15646,
+ "node_count": 5506,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -18444,6 +18444,10 @@
   },
   "two_band_orbital_response_closed_form_bounded_theorem_note_2026-06-12": {
    "deps_hash": "10b6ffe3f823",
+   "out_degree": 1
+  },
+  "two_cube_l1_two_tick_composition_bounded_theorem_note_2026-08-14": {
+   "deps_hash": "c8eee4235fc9",
    "out_degree": 1
   },
   "two_endpoint_gauss_law_invariance_profile_bounded_theorem_note_2026-06-05": {

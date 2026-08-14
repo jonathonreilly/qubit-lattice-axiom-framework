@@ -1,0 +1,56 @@
+===== runner cache v1 =====
+runner: scripts/two_cube_l1_two_tick_composition_2026_08_14.py
+runner_sha256: 4d82816cc000073fa6b43b7754185a9d910c032988aae61753887229863c83a0
+input_fingerprint_sha256: 56da4bd95cee8e7c9aa624613fa059d43bea613d2c01ff28e61e242fbd75d743
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+external_scientific_inputs: none; exact two-tick occupancy arithmetic on a supplied 12-vertex patch
+package_local_integrity_reads: proposed source note and live axiom memo only
+measure_boundary: exact integers and Fraction; tick-2 k=2 sites are k-checked only
+claim_boundary: two-tick composition of displayed L1, not adopted law
+PASS: id-patch-count patch-count identity
+PASS: id-off-patch-occupancy off-patch-occupancy identity
+PASS: id-seed-occupancy seed-occupancy identity
+PASS: thm-empty-fixed-point empty is a fixed point of step_L1
+PASS: id-empty-second-tick empty-second-tick identity
+PASS: id-tick1-new-locks tick1-new-locks identity
+PASS: id-tick1-locks tick1-locks identity
+PASS: id-tick1-clock tick1-clock identity
+PASS: id-tick1-rho-a tick1-rho-a identity
+PASS: id-tick1-rho-b tick1-rho-b identity
+PASS: id-tick1-phi-star tick1-phi-star identity
+PASS: id-tick1-phi-outer tick1-phi-outer identity
+PASS: tick1-pvm-traces tick 1 is k=1 so traces are 2/3 and 1/3
+PASS: id-tick2-forming-set tick2-forming-set identity
+PASS: id-tick2-new-count tick2-new-count identity
+PASS: id-tick2-k-at-110 tick2-k-at-110 identity
+PASS: id-tick2-k-at-101 tick2-k-at-101 identity
+PASS: id-tick2-k-at-011 tick2-k-at-011 identity
+PASS: id-tick2-k-at-200 tick2-k-at-200 identity
+PASS: id-tick2-clock tick2-clock identity
+PASS: id-tick2-lock-count tick2-lock-count identity
+PASS: id-tick2-rho-a tick2-rho-a identity
+PASS: id-tick2-rho-b tick2-rho-b identity
+PASS: id-tick2-phi-star tick2-phi-star identity
+PASS: id-tick2-phi-outer tick2-phi-outer identity
+PASS: tick2-k-only tick 2 records k and does not force k=2 traces into Q
+PASS: thm-permanence every tick-1 lock is still locked after tick 2
+PASS: thm-clock-additivity F_2 = F_1 + |new_2|
+PASS: thm-tree-gauge-both-ticks phi(F*)=rho(A) and phi(F_B)=rho(A)+rho(B) after both ticks
+PASS: mutation-face-occupancy-is-not-phi after two ticks, face occupancy sums are not the tree-gauge fluxes
+PASS: mutation-clock-not-lock-count F_2 is 7, not the seed-inclusive lock count identity at tick 1
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: machine-status-contract bounded-support status and no axiom edit
+PASS: note-hygiene forbidden strings and radical symbol are absent; L1 is displayed
+per_element: occupancy, n, and k are recomputed at each forming site
+per_site: locked sites stay; unread sites form iff n is nonzero
+per_mode: tick-1 traces stay in Q; tick-2 k=2 sites are k-checked only
+per_block: rho/phi tree gauge is evaluated after each tick
+lattice_wide: checked and not executed — the claim is the supplied 12-vertex patch
+TOTAL: PASS=34 FAIL=0
+
+----- stderr -----
+

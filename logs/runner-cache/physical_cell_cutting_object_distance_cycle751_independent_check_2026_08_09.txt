@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/physical_cell_cutting_object_distance_cycle751_independent_check_2026_08_09.py
+runner_sha256: 21910ecf377619411d5961c05835d0795575c09d2915744cba39b01e4a44118f
+input_fingerprint_sha256: 0ed33403983a77f474bcb7631ac3c7e32beb6b5bac88dd152454fc63ba50725e
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 9.22
+status: ok
+----- stdout -----
+PASS independent.cycle749_contract  current Cycle 749 primary and independent certificates bind all rows and 132 carriers
+PASS independent.cycle750_contract  current Cycle 750 primary and independent certificates bind both carrier graph types
+PASS independent.predecessor_live_replay  the landed streamed-pair predecessor replays live with every named gate passing
+PASS independent.ambient_graph  streamed co-incidence and Floyd--Warshall give the exact regular graph and distance census
+PASS independent.distance_partition_profiles  rooted neighbor-count profiles vary within each declared ambient distance layer
+PASS independent.carrier_embedding  every carrier-component pair through distance three is preserved, including all 2496 nontrivial triples
+PASS independent.embedding_boundaries  all Q4 antipodes shorten and every split-component cross pair gets the exact declared ambient distance
+PASS independent.declared_controls  the independent metric calculation reproduces all declared cyclic control outcomes
+PASS independent.count_distance_boundary  exactly three shared-cutting count classes are ambiguous on exactly 1632 ambient pairs
+PASS independent.primary_contract  the Cycle 751 primary receipt equals the independent streamed-pair and Floyd reconstruction
+PASS hostile.primary_status  a failing primary receipt is rejected
+PASS hostile.ambient_distance  a changed ambient distance layer is rejected
+PASS hostile.embedding  a changed through-three preservation total is rejected
+PASS hostile.antipode  a claimed unshortened Q4 antipode is rejected
+PASS hostile.count_boundary  a removed ambiguous count class is rejected
+PASS hostile.cycle750  a failing direct Cycle 750 independent certificate is rejected
+per_element: checked -- all 192 pieces enter the streamed ambient graph and Floyd distance calculation
+per_site: checked and not executed -- the theorem concerns one supplied coordinate four-cube only
+per_mode: checked and not executed -- this finite binary incidence object has no modal decomposition
+per_block: checked -- every one of the 15800 cutting rows enters the streamed co-incidence matrix
+lattice_wide: checked and not executed -- no multicell, infinite-lattice, continuum, or physical-metric claim
+RECEIPT outputs/physical_cell_cutting_object_distance_cycle751_independent_check_2026_08_09_receipt_2026-08-09.json
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

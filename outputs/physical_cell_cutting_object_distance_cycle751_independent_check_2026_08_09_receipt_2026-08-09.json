@@ -1,9 +1,8 @@
 {
   "ambient_never_sharing_graph": {
-    "bfs_boolean_power_agreement_pairs": 18336,
-    "connected": true,
-    "degree": 33,
-    "diameter": 3,
+    "degree_values": [
+      33
+    ],
     "distance_distribution": {
       "1": 3168,
       "2": 12576,
@@ -14,26 +13,16 @@
       "2": 45,
       "3": 10
     },
-    "distance_regular": false,
     "edges": 3168,
-    "symmetries_preserving_adjacency": 384,
-    "vertices": 192
+    "symmetries_preserving_adjacency": 384
   },
   "audit_status_authority": "independent audit lane only",
-  "boundary": {
-    "control_is_rarity_theorem": false,
-    "finite_supplied_coordinate_four_cube_only": true,
-    "four_cube_embedding_is_globally_isometric": false,
-    "isometry_claim_limited_to_within_component_distance_at_most_three": true,
-    "physical_metric_claimed": false,
-    "split_carrier_components_remain_disconnected_ambiently": false
-  },
   "carrier_embedding": {
+    "distance_three_pairs": 2496,
+    "distance_three_pairs_preserved": 2496,
     "four_cube_antipodal_pairs": 480,
-    "four_cube_antipodal_pairs_at_global_distance_four": 0,
-    "four_cube_antipodal_pairs_at_global_distance_three": 480,
-    "intrinsic_distance_three_pairs": 2496,
-    "intrinsic_distance_three_pairs_preserving_distance": 2496,
+    "four_cube_antipodal_pairs_at_global_four": 0,
+    "four_cube_antipodal_pairs_at_global_three": 480,
     "shape_counts": {
       "four_cube": 60,
       "two_three_cubes": 72,
@@ -43,14 +32,14 @@
       "2": 4032,
       "3": 576
     },
-    "within_component_pairs_at_intrinsic_distance_at_most_three": 10752,
-    "within_component_pairs_preserving_distance": 10752
+    "within_component_pairs_preserved": 10752,
+    "within_component_pairs_through_three": 10752
   },
+  "checker_sha256": "21910ecf377619411d5961c05835d0795575c09d2915744cba39b01e4a44118f",
   "claim_type": "bounded_theorem",
   "declared_controls": {
-    "all_sixteen_piece_sets_classified": false,
-    "cyclic_sixteen_piece_sets": 768,
-    "sets_with_a_connected_induced_pair_shortened_ambiently": 730
+    "sets": 768,
+    "sets_with_shortening": 730
   },
   "direct_dependencies": {
     "cycle749": {
@@ -66,7 +55,33 @@
   },
   "gates": {
     "fail": 0,
-    "pass": 49
+    "named": {
+      "hostile.ambient_distance": "PASS",
+      "hostile.antipode": "PASS",
+      "hostile.count_boundary": "PASS",
+      "hostile.cycle750": "PASS",
+      "hostile.embedding": "PASS",
+      "hostile.primary_status": "PASS",
+      "independent.ambient_graph": "PASS",
+      "independent.carrier_embedding": "PASS",
+      "independent.count_distance_boundary": "PASS",
+      "independent.cycle749_contract": "PASS",
+      "independent.cycle750_contract": "PASS",
+      "independent.declared_controls": "PASS",
+      "independent.distance_partition_profiles": "PASS",
+      "independent.embedding_boundaries": "PASS",
+      "independent.predecessor_live_replay": "PASS",
+      "independent.primary_contract": "PASS"
+    },
+    "pass": 16
+  },
+  "independent_reconstruction": {
+    "ambient_metric": "Floyd--Warshall min-plus dynamic programming",
+    "complete_carrier_count": 132,
+    "cuttings": 15800,
+    "pair_counter": "Cycle 750 row-streamed unordered pairs",
+    "processed_pair_rows": 15800,
+    "support_columns": 192
   },
   "input_sha256": {
     "docs/PHYSICAL_CELL_CUTTING_CARRIER_CUBE_METRIC_CYCLE750_NOTE_2026-08-09.md": "4678ccebabf4a6cfbd2c8a7d63445c8f750e99930f419dfabfb5c001cc23a9fb",
@@ -76,13 +91,14 @@
     "outputs/physical_cell_cutting_carrier_cube_metric_cycle750_independent_check_2026_08_09_receipt_2026-08-09.json": "e51310f5baf425493bf28234922286b7b48cd217d2041fbc6cd28a42c138fac8",
     "outputs/physical_cell_cutting_family_separator_cycle749_2026_08_08_receipt_2026-08-08.json": "d724389f54452f2099c35669e94bd9a969a19da5f3e6fbe4bd20d86f7d2ee218",
     "outputs/physical_cell_cutting_family_separator_cycle749_independent_check_2026_08_08_receipt_2026-08-08.json": "642f705db9108e6a85730b08fc71c28a18b47b6803df95205a2f59a9e12bc7cb",
+    "outputs/physical_cell_cutting_object_distance_cycle751_2026_08_09_receipt_2026-08-09.json": "cd5c2ae761c072183a527a25710ffd81ed170869e0b9b26aa9dd7f19f84a14dd",
     "requirements-release.txt": "e153eea331ce1b76cd99f09e14a777df2bc9efbaa06a201528ddfdc0f3f01bee",
     "requirements.txt": "3fda988835a13d9a7236b0b508aa9bcd2f9b3f3b9a47b4875a15f86dbc77a3ad",
     "scripts/physical_cell_cutting_carrier_cube_metric_cycle750_2026_08_09.py": "b733a3622f536c27d1671147c804a8183d9503f0c0e2c4137799ffda9c7df031",
     "scripts/physical_cell_cutting_carrier_cube_metric_cycle750_independent_check_2026_08_09.py": "c45a77f8b8fde6ea6d9d48626c184a65b6a561a49ea0ec6587fa328db6c7ad9a",
     "scripts/physical_cell_cutting_family_separator_cycle749_2026_08_08.py": "d45b64d8eecff6da792608faf24bd2e66593155176d23e88da77a485bdf48908",
     "scripts/physical_cell_cutting_family_separator_cycle749_independent_check_2026_08_08.py": "88fe01f5413ce66a08bc8ff41f19019c592cf653c52237d83ae8ea1b10b16279",
-    "scripts/physical_cell_cutting_object_distance_cycle751_independent_check_2026_08_09.py": "21910ecf377619411d5961c05835d0795575c09d2915744cba39b01e4a44118f"
+    "scripts/physical_cell_cutting_object_distance_cycle751_2026_08_09.py": "fab4468120920151b85bb3dfff6b8248b90b91399ce957d07346c9932d688a1b"
   },
   "no_go_discipline": {
     "n5_execution_certificate": [
@@ -94,24 +110,15 @@
     ],
     "status": "PASS"
   },
-  "runner_sha256": "fab4468120920151b85bb3dfff6b8248b90b91399ce957d07346c9932d688a1b",
-  "schema": "physical-cell-cutting-object-distance-cycle751-v2",
+  "schema": "physical-cell-cutting-object-distance-cycle751-independent-v1",
   "shared_cutting_count_global_boundary": {
     "ambiguous_count_values": [
       202,
       212,
       250
     ],
-    "count_values_determining_distance": 44,
     "count_values_occurring": 47,
     "pairs_in_ambiguous_count_classes": 1632
   },
-  "status": "pass",
-  "supplied_incidence": {
-    "cuttings": 15800,
-    "cuttings_per_piece": 1975,
-    "pieces_per_cutting": 24,
-    "processed_pair_rows": 15800,
-    "support_columns": 192
-  }
+  "status": "pass"
 }

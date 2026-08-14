@@ -224,6 +224,12 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
         "scripts/physical_cell_cutting_carrier_cube_metric_cycle750_"
         "independent_check_2026_08_09.py",
     ],
+    # Cycle 751 replays the streamed-pair predecessor and computes ambient
+    # distances by min-plus dynamic programming rather than primary BFS.
+    "physical_cell_cutting_object_distance_cycle751_note_2026-08-09": [
+        "scripts/physical_cell_cutting_object_distance_cycle751_"
+        "independent_check_2026_08_09.py",
+    ],
     "inter_site_gate_cycle970_bounded_theorem_note_2026-08-09": [
         "scripts/frontier_cycle970_gate_independent_check_2026_08_09.py",
     ],

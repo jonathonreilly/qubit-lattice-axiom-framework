@@ -1,11 +1,18 @@
 ===== runner cache v1 =====
 runner: scripts/physical_cell_cutting_object_distance_cycle751_2026_08_09.py
-runner_sha256: 9038f08727f80b3425c397fb2a5e9ceaa053d43164347fb7875416d1beeac247
-timeout_sec: 300
+runner_sha256: fab4468120920151b85bb3dfff6b8248b90b91399ce957d07346c9932d688a1b
+input_fingerprint_sha256: 184938c12bd4f4c84150e5a0f5368b5eee03276808fc2478bbfa34f24df0e8fe
+timeout_sec: 900
 exit_code: 0
-elapsed_sec: 93.66
+elapsed_sec: 106.87
 status: ok
 ----- stdout -----
+PASS dependency.cycle749  current primary and independent Cycle 749 certificates bind all rows and 132 carriers
+PASS dependency.cycle750  current primary and independent Cycle 750 certificates bind both carrier graph types
+PASS hostile.cycle749_census  a changed predecessor family census is rejected
+PASS hostile.cycle749_independent  a failing Cycle 749 independent certificate is rejected
+PASS hostile.cycle750_shape  a changed predecessor carrier-shape census is rejected
+PASS hostile.cycle750_independent  a failing Cycle 750 independent certificate is rejected
 PASS G0  the Gram matrix of the table has constant diagonal 1975
 PASS G1  all 15800 cuttings carry distinct piece supports
 PASS G2  the anchored and the two seeded colour refinements are all discrete
@@ -56,20 +63,26 @@ the never-sharing joins over all the pieces at once, not one carrier at a time:
 PASS G30  33 joins at every piece, 3168 in all, and all 384 symmetries carry joins to joins
 PASS G31  no two pieces stand more than three steps apart: 3168,12576,2592
 PASS G32  walking outward and multiplying the join table agree on all 18336 pairs
-PASS G33  the object is not evenly built: common-joiner counts take 9 shapes at one step, 10 at three
+PASS G33  the graph is not distance-regular: rooted neighbor-count profiles take 9, 45, 10 values at distances one, two, three
 PASS G34  every smallest carrier of four takes one of two shapes: 60 four-cubes, 72 pairs of three-cubes
 PASS G35  a carrier pair one, two or three steps apart in its shape is that far in the whole object: 10752 of 10752, 2496 of them not fixed by construction
-PASS G36  the eight far corners of a four-cube fold to three steps, since nothing stands farther: 480 pairs, 0 at four
+PASS G36  the eight far corners of a four-cube fold to three steps, since nothing stands farther: 480 pairs, all at three and 0 at four
 PASS G37  the two three-cubes interleave, not apart: 4032 pairs across at two steps, 576 at three
 PASS G38  sixteen pieces taken evenly spaced instead: 730 of 768 are brought closer from outside
 PASS G39  the relabelling search takes a four-cube and refuses one with two joins moved, every corner still at 4
 PASS G40  over the whole object the count fixes the step for 44 of 47, failing at 202,212,250 on 1632 pairs
-so a carrier's shape is the object's own distance, not something made by looking at sixteen alone
-elapsed under 100 s peak memory under 2500 MB
+so carrier component distances through three survive ambient embedding, while the four-cube antipodes shorten from four to three
+elapsed under 200 s peak memory under 2500 MB
 PASS G41  the whole runner finishes under 900 seconds inside the printed 2500 MB
-PASS G42  its output stays under 6000 characters
+PASS G42  its output including the evidence footer stays under 8000 characters
 
-TOTAL: PASS=43 FAIL=0
+per_element: checked -- all 192 pieces enter the global graph and distance-layer calculations
+per_site: checked and not executed -- the theorem concerns one supplied coordinate four-cube only
+per_mode: checked and not executed -- this finite binary incidence object has no modal decomposition
+per_block: checked -- every one of the 15800 cutting rows contributes to the dense co-incidence matrix
+lattice_wide: checked and not executed -- no multicell, infinite-lattice, continuum, or physical-metric claim
+RECEIPT outputs/physical_cell_cutting_object_distance_cycle751_2026_08_09_receipt_2026-08-09.json
+TOTAL: PASS=49 FAIL=0
 
 ----- stderr -----
 

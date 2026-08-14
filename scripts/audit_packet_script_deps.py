@@ -87,6 +87,12 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
         "scripts/physical_cell_cutting_carrier_cube_metric_cycle750_"
         "independent_check_2026_08_09.py",
     ],
+    # Cycle 751's sibling checker reuses only authenticated streamed pair data
+    # and computes the ambient metric by a distinct min-plus implementation.
+    "physical_cell_cutting_object_distance_cycle751_note_2026-08-09": [
+        "scripts/physical_cell_cutting_object_distance_cycle751_"
+        "independent_check_2026_08_09.py",
+    ],
     # Cycle 738's checker independently reconstructs the cutting incidence
     # with the opposite cover pivot and uses a separate exact-weight CNF/SAT
     # encoding, so it deliberately remains outside the primary import closure.

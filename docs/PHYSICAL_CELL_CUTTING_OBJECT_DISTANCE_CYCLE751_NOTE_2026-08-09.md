@@ -1,145 +1,293 @@
-# The shape inside a smallest carrier is the object's own distance — Cycle 751
+# Ambient preservation of carrier distances through three — Cycle 751
 
 Date: 2026-08-09
 
-Authority: none
+Authority: none; proposed for independent audit.
 
 Audit: unset.
 
-Status: computational identities of the finite cutting system
+Status: proposed_retained
 
-Claim type: computational identities
+Claim type: bounded_theorem
 
-Runner:
+Primary runner:
 
-- [paired rebuild-and-gate runner](../scripts/physical_cell_cutting_object_distance_cycle751_2026_08_09.py)
+- [dense ambient-graph runner](../scripts/physical_cell_cutting_object_distance_cycle751_2026_08_09.py)
 
-Scope: computational identities of the finite cutting system. Every number
-below is machine-checked by the paired runner, which rebuilds the cell
-complex, the cuttings, the readings and the block bookkeeping from scratch and
-gates each quantity in place. Constitutional effect: none. This package
-changes no axiom, no framework Admissibility rule, no primitive, no policy,
-and no audit status, and it adds no import and no assumption to
-[MINIMAL_AXIOMS_2026-06-29.md](MINIMAL_AXIOMS_2026-06-29.md).
+Independent checker:
 
-## Headline
+- [streamed-pair ambient-graph checker](../scripts/physical_cell_cutting_object_distance_cycle751_independent_check_2026_08_09.py)
 
-The unit four-cube cuts into least-volume pieces at the adjacency cost floor
-in 15800 ways, and those cuttings use 192 pieces between them, 24 to a cutting
-and 1975 cuttings through each piece. The charge called four is marked on 5664
-of the cuttings, needs sixteen pieces to carry it, and the system holds
-exactly 132 such smallest carriers, each piece lying on 11 of them.
+Direct scientific dependencies:
 
-A preceding cycle joined two pieces of one carrier whenever no cutting used
-both, threw the rest of the system away, and got one of exactly two shapes:
-the corners and edges of a four-cube on 60 of the 132, two separate
-three-cubes on the other 72. Throwing the rest of the system away is the
-weakness of that result. Sixteen pieces looked at alone can be made to look
-like anything; the question is whether the shape survives putting the rest of
-the system back.
+- [Cycle 749 intrinsic family separator](PHYSICAL_CELL_CUTTING_FAMILY_SEPARATOR_CYCLE749_NOTE_2026-08-08.md)
+- [Cycle 750 intrinsic cube graphs and pair-count distance layers](PHYSICAL_CELL_CUTTING_CARRIER_CUBE_METRIC_CYCLE750_NOTE_2026-08-09.md)
 
-It does, and that is this cycle's claim. Join every one of the 192 pieces to
-every other piece that shares no cutting with it. The result is a single
-object, the same 33 joins at every piece, 3168 joins in all, carried to itself
-by all 384 symmetries of the table, and with no two pieces standing more than
-three steps apart:
+```text
+actual_current_surface_status: conditional-support
+target_claim_type: bounded_theorem
+trace_class: frontier_discovery
+target_claim_id: physical_cell_cutting_object_distance_cycle751_note_2026-08-09
+target_blocker_text: compare each carrier component's intrinsic never-sharing distance with distance in the complete 192-vertex never-sharing graph
+source_of_blocker_text: frontier_question
+reachability_to_target: direct finite exhaustive computation on the supplied coordinate four-cube
+artifact_role: bounded finite incidence theorem candidate
+next_trace_action: independent audit of the landed primary and helper evidence
+conditional_surface_status: direct Cycle 749 and Cycle 750 dependencies remain subject to independent audit
+hypothetical_axiom_status: none
+admitted_observation_status: none
+claim_type_reason: an exhaustive theorem on one supplied finite incidence object, with no physical or multicell extension
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+packet_helper_runner: scripts/physical_cell_cutting_object_distance_cycle751_independent_check_2026_08_09.py
+```
 
-| steps apart in the whole object | pairs of pieces |
-| --- | --- |
-| 1 | 3168 |
-| 2 | 12576 |
-| 3 | 2592 |
+## Exact target and terminology
 
-Two independent computations of those steps, walking outward from each piece
-and multiplying the join table by itself, agree on all 18336 pairs.
+On the supplied 15,800 by 192 cutting-piece incidence table, join two of the
+192 pieces exactly when no cutting row contains both. Call the resulting graph
+`G`. For each of the 132 Cycle 749 minimum carriers of the declared four
+reading, compare distance within each connected component of its induced graph
+with distance in `G`.
 
-Now put a carrier back into it. Every pair inside a smallest carrier of four
-that the carrier's own shape puts one, two or three steps apart stands exactly
-that far in the whole object: 10752 of 10752. The shape is not a picture drawn
-by isolating sixteen pieces. It is the distance the object already had.
+Every use of “distance” below means unweighted graph distance in this declared
+never-sharing graph. It is not physical length, causal distance, an ambient
+Euclidean metric, or a continuum observable.
 
-## What is automatic and what is not
+## Inputs and provenance
 
-Two of the three rows are forced and are stated here as forced, not sold as
-findings.
+The current primary and independent Cycle 749 certificates bind all 15,800
+rows, the 192 supported pieces, the complete 132-member carrier census, and
+the six intrinsic families. The current primary and independent Cycle 750
+certificates bind the induced carrier graphs: 60 copies of `Q_4` and 72 copies
+of `Q_3 disjoint-union Q_3`, together with their intrinsic distance layers.
 
-A pair joined in the shape is joined in the object, because it is the same
-relation restricted; so one step agrees by construction. A pair two steps
-apart in the shape has a piece of the carrier joined to both, so the object
-cannot need more than two, and it cannot need fewer, because a pair not joined
-in the shape is not joined in the object either; so two steps agrees by
-construction as well.
+Both Cycle 751 executables authenticate the source and receipt bytes of both
+dependencies and reject failed or changed certificates. The primary also
+rebuilds the finite object directly and forms the co-incidence matrix by a
+dense integer Gram product. The helper replays Cycle 750's independent
+row-streamed pair counter and constructive cube labelling without importing
+Cycle 751 primary symbols.
 
-Three steps is the row with content. Here the object is free to be shorter
-than the shape, by routing through a piece the carrier does not contain, and
-nothing forbids it. There are 2496 such pairs, and the object
-takes the shortcut in none of them.
+The coordinate four-cube, declared four reading, and cyclic order used for the
+controls are supplied finite data. No measured, fitted, literature,
+normalization, boundary-condition, framework-primitive, or axiom value enters
+the theorem.
 
-| pairs inside a carrier | count | forced? |
-| --- | --- | --- |
-| at one, two or three steps in the shape, same in the object | 10752 of 10752 | rows one and two only |
-| of those, at three steps | 2496 | no |
-| far corners of a four-cube, four steps in the shape | 480 | folds to three |
+## Complete ambient graph census
 
-The last row is the single place a carrier bends, and it bends for a stated
-reason rather than an interesting one: nothing in the whole object stands more
-than three steps from anything else, so the eight far corners of each
-four-cube have nowhere to be. All 480 of them sit at three steps and 0 at
-four. A four-cube carrier is therefore isometric in its first three rows and
-folded at its antipode, which is the most any sixteen pieces could be.
+The graph `G` has 192 vertices, degree 33 at every vertex, and 3,168 edges.
+All 384 supplied table symmetries preserve its adjacency. It is connected with
+diameter three, and its unordered-pair distance distribution is exact:
 
-For the 72 carriers made of two three-cubes, the two cubes are not held apart
-in the object. Of the pairs taken across them, 4032 stand two steps apart and
-576 stand three; the cubes interleave rather than separate.
+| distance in `G` | unordered pairs |
+| ---: | ---: |
+| 1 | 3,168 |
+| 2 | 12,576 |
+| 3 | 2,592 |
+| total | 18,336 |
 
-## The control, and the negative that matters
+Breadth-first search and Boolean adjacency powers agree on all 18,336 pairs.
+This is an arithmetic cross-check of one graph, not two independent
+reconstructions of the incidence object.
 
-Sixteen pieces taken evenly spaced through the table's own ordering, in four
-spacings, give 768 control sets. In 730 of the 768 a pair is brought closer by
-a piece outside the set. Carriers of the charge do this in 0 pairs of the
-10752. Being isometrically placed is not what sixteen pieces do; it is what
-carrying the charge makes them do.
+`G` is not distance-regular: the neighbor-count triples relative to a rooted
+distance partition take 9 distinct values at distance one, 45 at distance two,
+and 10 at distance three. This is the narrow graph-theoretic
+inhomogeneity established here.
 
-That reading survives only because the surrounding object is uneven, and the
-runner measures the unevenness rather than assuming it. Count, for a pair of
-pieces, how many pieces are joined to both. If the object were evenly built
-that count would depend on the number of steps and nothing else. It does not:
-the counts take 9 shapes at one step and 10 at three. So the four-cube inside
-a carrier is not a fragment of a homogeneous surround that any sixteen pieces
-would inherit. It is produced by carrying the charge.
+## Carrier embedding result
 
-The same unevenness bounds the preceding cycle's other result. Inside a
-carrier, the number of cuttings a pair shares settles how many steps apart the
-pair is. Across the whole object that fails: of the 47 counts that occur, 44
-settle the step and three do not, at 202, 212 and 250, on 1632 pairs. The
-count-to-distance law is a property of a carrier, not of the system, and this
-note does not extend it.
+For each carrier, restrict attention to pairs in the same connected component
+of its Cycle 750 induced graph. Every such pair at intrinsic distance one, two,
+or three has the same distance in `G`:
 
-## Boundary and honest read
+| carrier-component comparison | pair occurrences | preserved in `G` |
+| --- | ---: | ---: |
+| intrinsic distance 1, 2, or 3 | 10,752 | 10,752 |
+| intrinsic distance 3 only | 2,496 | 2,496 |
 
-The one-step and two-step agreements are consequences of restricting a
-relation and are labelled as such in the runner's own gate. Anyone reading
-10752 of 10752 as one measurement is reading it wrong; the measurement is
-2496.
+The first row counts a pair once for each carrier in which it occurs. Distance
+one is definitional because carrier adjacency is the restriction of ambient
+adjacency. Distance two is also automatic: a carrier path supplies an ambient
+path, while a non-edge cannot become an ambient edge. The 2,496
+distance-three pair occurrences are the nontrivial content: none acquires a
+length-two path through a vertex outside its carrier.
 
-The far-corner fold is likewise forced by the object having no fourth step. It
-is reported because leaving it out would make the isometry look total when it
-is not.
+The embedding is not globally isometric. Every one of the 480 `Q_4`
+antipodal pair occurrences shortens from intrinsic distance four to ambient
+distance three. In each `Q_3 disjoint-union Q_3` carrier, pairs across the two
+components have no finite intrinsic graph distance, but in `G` 4,032 such pair
+occurrences have distance two and 576 have distance three.
 
-The relabelling search that fits a carrier's joins onto a four-cube reads the
-0/1 join table alone and never how many cuttings a pair shares, and it is
-given a four-cube with two joins moved that keeps every corner at 4 joins,
-which it refuses. Nothing in the distance result can have been arranged by the
-search.
+Thus the exact positive statement is preservation of within-component graph
+distance through three. The submitted headline that the carrier shape “is the
+object's own distance” is withdrawn because it suppresses both explicit
+failure modes.
 
-A control is not a proof of rarity. That 730 of 768 evenly spaced sets are
-shortened from outside is evidence that isometric placement tracks the charge;
-it is not a theorem that no other sixteen pieces can be placed isometrically.
+## Declared controls and count boundary
 
-Nothing here shows that a carrier of some other charge must behave this way,
-and nothing here derives the shape from the 384 symmetries; the shapes are
-measured on all 132 carriers, one at a time.
+Four cyclic spacings at each of 192 starts give 768 declared sixteen-piece
+control sets. In 730 sets, at least one pair connected in the induced subgraph
+has a shorter distance in `G`. The carrier comparison above has no shortening
+among its 10,752 tested within-component pairs through distance three. These
+controls are not an exhaustive classification of sixteen-piece subsets and do
+not establish rarity or causation by the charge.
 
-Nothing here moves the bracket on an eighteen-piece carrier of the flip
-partner of four, and nothing here bears on the axioms, on Admissibility, or on
-any primitive.
+Across all unordered pairs in `G`, 47 shared-cutting counts occur. Forty-four
+counts determine ambient graph distance. The three values `202`, `212`, and
+`250` occur at more than one ambient distance, and 1,632 unordered pairs lie
+in those ambiguous count classes. Therefore Cycle 750's carrier-local
+count-to-distance function does not extend to this complete 192-vertex graph.
+No claim is made about a different finite incidence object.
+
+## Proof-obligation graph
+
+The obligation graph is acyclic:
+
+1. current Cycle 749 receipts authenticate the full row inventory and complete
+   carrier census;
+2. current Cycle 750 receipts authenticate both induced carrier graph types
+   and their intrinsic distance layers;
+3. each Cycle 751 implementation reconstructs the complete pair-count matrix
+   through a different arithmetic path;
+4. each constructs `G` from exactly the zero co-incidence entries and computes
+   all-pairs distance through a separate traversal implementation;
+5. every carrier pair is then compared exhaustively, with antipodal and
+   cross-component cases recorded separately rather than discarded;
+6. exact equality, total-count, dependency, and hostile-mutation gates
+   discharge the finite claim.
+
+The strongest unproved extension is a classification of all sixteen-piece
+subsets or any other reading, cell, or lattice. It is strictly stronger than
+the target and is not claimed.
+
+## No-Go Discipline Gate
+
+The negative boundaries are narrow: this particular `G` is not
+distance-regular, three exact count values are ambiguous on this graph, 730
+declared controls exhibit a shortening, and the full carrier embedding is not
+isometric. No universal physical or multicell no-go is asserted.
+
+### N1 — alternative attacks
+
+1. **Population route — ATTEMPTED.** Rebuild all cutting rows and carriers
+   through the primary exact-cover route, then replay the opposite-pivot
+   Cycle 749/750 helper route. Both bind all 15,800 rows and 132 carriers.
+2. **Pair-arithmetic route — ATTEMPTED.** Replace the dense Gram product by
+   row-streamed unordered-pair increments. The complete 192 by 192
+   co-incidence matrix and zero-entry graph agree.
+3. **Distance-algorithm route — ATTEMPTED.** Replace breadth-first all-pairs
+   traversal by Boolean adjacency powers in the primary and an independent
+   queue traversal in the helper. The 18,336 distances agree.
+4. **Carrier-coordinate route — ATTEMPTED.** Compare the primary backtracking
+   cube relabelling with Cycle 750's constructive breadth-first bit labels,
+   then test every same-component pair occurrence. Both recover the exact
+   preservation and antipodal/cross-component exceptions.
+5. **Hostile/control route — ATTEMPTED.** Mutate dependency status, family and
+   shape counts, ambient distance layers, preservation totals, antipodal
+   layers, and ambiguous count values; also scan all 768 declared cyclic
+   controls. The fail-closed contracts or exact gates reject each mutation.
+
+These routes differ in primary object and terminal obligation: population,
+pair arithmetic, path metric, local coordinate recognition, and adversarial
+falsification.
+
+### N2 — wall independence
+
+No walls or open conditions are claimed as independent closure inputs. There
+are two ordered data dependencies: Cycle 749 supplies the census and Cycle 750
+supplies the intrinsic carrier graphs. Cycle 750 itself binds Cycle 749, but
+Cycle 751 authenticates both directly so a stale intermediate certificate
+cannot silently pass. No inflated wall count is advertised.
+
+### N3 — hidden-wall scan
+
+“By construction” applies only to the automatic distance-one and distance-two
+comparisons and is stated explicitly. The supplied coordinate object, reading,
+and cyclic controls are named finite inputs. No “standard”, “canonical”,
+“registered”, background, or framework-provided physics premise is used.
+
+### N4 — residual matching
+
+Cycle 749 is cited only for the complete carrier census and family evidence.
+Cycle 750 is cited only for the induced carrier graph types and intrinsic
+distances. Neither is cited as evidence for the new ambient graph or embedding
+comparison; both Cycle 751 implementations recompute those quantities.
+
+### N5 — rhetoric and resolution
+
+- `per_element`: all 192 pieces enter the ambient graph and distance census;
+- `per_site`: one supplied coordinate four-cube only; no site family tested;
+- `per_mode`: no modal decomposition exists for this finite binary object;
+- `per_block`: every one of 15,800 cutting rows enters the pair counts;
+- `lattice_wide`: no multicell, infinite-lattice, continuum, or physical
+  metric conclusion is tested or claimed.
+
+Both canonical caches must carry the corresponding five-line execution
+certificate.
+
+### N6 — partial closure and primitive scan
+
+No new axiom or framework primitive is proposed or needed. The registered
+premises are irrelevant to this finite graph theorem. A convention cannot
+turn 768 controls into an exhaustive subset classification or repair the 480
+explicit antipodal shortenings; those would require a different theorem or
+object, not relabelling.
+
+### N7 — steelman
+
+A hostile reviewer can correctly object that “the carrier's shape is the
+object's own distance” is false under the usual isometric-embedding meaning:
+all 480 `Q_4` antipodes shorten, and the two components of every split carrier
+interleave at finite ambient distance. That counterargument defeats the
+submitted headline. This note therefore demotes the result to the exact
+through-three, within-component preservation theorem and reports both failure
+classes quantitatively.
+
+### N8 — cross-cycle echo
+
+Cycle 750 retired a similarly broad “not an ambient relabelling” phrase after
+one tested corner statistic could not exclude every ambient interpretation.
+The retirement mechanism was exact scoping, not a new axiom. Cycle 751 applies
+the same mechanism: it replaces a total-isometry slogan with the exact tested
+distance range and preserves the stronger counterexamples as boundaries.
+
+No failure condition remains after the N7 demotion. Gate status: `PASS` for
+the narrowed finite negatives above.
+
+## Review record and hard landing conditions
+
+Review-loop replaced the submitted half-row predecessor scan by the full
+15,800-row inventory, added nonzero failure exits and fail-first receipts,
+bound current Cycle 749 and Cycle 750 primary and independent certificates,
+added a structurally independent helper, removed the raw cold-output artifact,
+and narrowed the total-isometry and causal-charge wording to the exact finite
+graph theorem.
+
+Hard landing conditions:
+
+- both runners and both input-bound receipts land with canonical cache
+  envelopes;
+- the primary and helper each fail nonzero on a load-bearing mutation;
+- the helper mapping for claim id
+  `physical_cell_cutting_object_distance_cycle751_note_2026-08-09` lands in
+  both citation dependency maps;
+- the citation-graph manifest is regenerated from the final proposed tree;
+- generated ledger, queue, effective-status, and front-door outputs do not
+  land;
+- no audit verdict is applied by review-loop.
+
+## Honest boundary
+
+- The theorem is exact only for one supplied finite coordinate four-cube and
+  the declared four reading.
+- Cycles 749 and 750 are direct scientific dependencies and are not silently
+  promoted by this note.
+- Distance one and two preservation are automatic; the new measurement is the
+  2,496 preserved distance-three pair occurrences.
+- The 768 controls are declared controls, not an exhaustive rarity theorem.
+- Full carrier isometry is explicitly false.
+- No physical length, causal distance, continuum metric, another-charge
+  classification, or multicell extension follows.
+- Audit status remains unset until the independent audit lane acts.

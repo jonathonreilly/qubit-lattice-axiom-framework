@@ -230,6 +230,12 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
         "scripts/physical_cell_cutting_object_distance_cycle751_"
         "independent_check_2026_08_09.py",
     ],
+    # Cycle 752 replays the all-row streamed-pair predecessor and enumerates
+    # each induced Q4 once by least-vertex coordinate completion.
+    "physical_cell_cutting_shape_census_least_sharing_cycle752_note_2026-08-09": [
+        "scripts/physical_cell_cutting_shape_census_least_sharing_cycle752_"
+        "independent_check_2026_08_09.py",
+    ],
     "inter_site_gate_cycle970_bounded_theorem_note_2026-08-09": [
         "scripts/frontier_cycle970_gate_independent_check_2026_08_09.py",
     ],

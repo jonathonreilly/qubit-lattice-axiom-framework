@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/physical_cell_cutting_shape_census_least_sharing_cycle752_independent_check_2026_08_09.py
+runner_sha256: bbda3c2f6300ac2f056cadb085925d09528bf56022c5cf81d0fed273e0bcddf8
+input_fingerprint_sha256: 38cda286c76003077a3eb8be1d9c38d13f76595bbe96528e4dc984261d124924
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 63.23
+status: ok
+----- stdout -----
+PASS independent.cycle750_contract  current Cycle 750 primary and independent certificates bind the 60 Q4 carriers
+PASS independent.cycle751_contract  current Cycle 751 primary and independent certificates bind the complete ambient graph
+PASS independent.predecessor_live_replay  the all-row Cycle 751 dependency replays live with every named gate passing
+PASS independent.all_rows  all 15800 cutting rows and all 192 pieces enter the streamed pair-count graph
+PASS independent.q4_census  least-vertex coordinate completion gives 59736 induced Q4s and 4978 through every piece
+PASS independent.symmetry_closure  all 384 supplied incidence symmetries preserve the complete induced-Q4 set
+PASS independent.reading_partition  59676 induced Q4s realize none of the eight declared readings and 60 realize four
+PASS independent.pair_total_separation  pair total exactly separates the 60 four-reading Q4s from the 59676 no-reading Q4s
+PASS independent.local_separation  at every piece the five least pair-total Q4s are its carriers, with minimum next-step 538
+PASS independent.weaker_tests  the two/three separation is exact while the three/four and antipodal tests admit 1488 and 672
+PASS independent.carrier_distance_bands  all Q4-carrier pair-count bands reproduce the current Cycle 750 certificate
+PASS independent.parity_floor  discrete-convex marginal costs independently derive the 18632 parity floor
+PASS independent.minimum_histogram  one minimum Q4 carrier is 1008 above the floor and all 132 carriers have four totals
+PASS independent.primary_contract  the Cycle 752 primary receipt equals the independent all-row reconstruction
+PASS hostile.primary_status  a failing primary receipt is rejected
+PASS hostile.q4_census  a changed induced-Q4 census is rejected
+PASS hostile.pair_total  a changed pair-total boundary is rejected
+PASS hostile.cycle750  a failing direct Cycle 750 independent certificate is rejected
+PASS hostile.cycle751  a stale total-isometry predecessor claim is rejected
+per_element: checked -- all 192 pieces enter the complete induced-Q4 and pair-total census
+per_site: checked and not executed -- the theorem concerns one supplied coordinate four-cube only
+per_mode: checked and not executed -- this finite binary incidence object has no modal decomposition
+per_block: checked -- every one of the 15800 cutting rows enters the streamed co-incidence matrix
+lattice_wide: checked and not executed -- no multicell, infinite-lattice, causal, or continuum claim
+RECEIPT outputs/physical_cell_cutting_shape_census_least_sharing_cycle752_independent_check_2026_08_09_receipt_2026-08-09.json
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

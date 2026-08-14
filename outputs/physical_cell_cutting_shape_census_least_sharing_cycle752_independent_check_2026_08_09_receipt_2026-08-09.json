@@ -1,13 +1,6 @@
 {
   "audit_status_authority": "independent audit lane only",
-  "boundary": {
-    "all_sixteen_piece_sets_classified": false,
-    "finite_supplied_coordinate_four_cube_only": true,
-    "pair_total_distinguishes_four_from_other_present_readings": false,
-    "pair_total_is_causal_charge_mechanism": false,
-    "physical_metric_or_multicell_claimed": false,
-    "q4_shape_sufficient_for_declared_reading": false
-  },
+  "checker_sha256": "bbda3c2f6300ac2f056cadb085925d09528bf56022c5cf81d0fed273e0bcddf8",
   "claim_type": "bounded_theorem",
   "direct_dependencies": {
     "cycle750": {
@@ -23,19 +16,45 @@
   },
   "gates": {
     "fail": 0,
-    "pass": 48
+    "named": {
+      "hostile.cycle750": "PASS",
+      "hostile.cycle751": "PASS",
+      "hostile.pair_total": "PASS",
+      "hostile.primary_status": "PASS",
+      "hostile.q4_census": "PASS",
+      "independent.all_rows": "PASS",
+      "independent.carrier_distance_bands": "PASS",
+      "independent.cycle750_contract": "PASS",
+      "independent.cycle751_contract": "PASS",
+      "independent.local_separation": "PASS",
+      "independent.minimum_histogram": "PASS",
+      "independent.pair_total_separation": "PASS",
+      "independent.parity_floor": "PASS",
+      "independent.predecessor_live_replay": "PASS",
+      "independent.primary_contract": "PASS",
+      "independent.q4_census": "PASS",
+      "independent.reading_partition": "PASS",
+      "independent.symmetry_closure": "PASS",
+      "independent.weaker_tests": "PASS"
+    },
+    "pass": 19
+  },
+  "independent_reconstruction": {
+    "complete_carrier_count": 132,
+    "cuttings": 15800,
+    "pair_counter": "Cycle 751 row-streamed unordered pairs",
+    "processed_pair_rows": 15800,
+    "q4_enumerator": "least-vertex coordinate completion",
+    "support_columns": 192
   },
   "induced_q4_census": {
-    "checked_generators_preserving_set": 50,
     "declared_reading_counts": {
       "four": 60,
       "none": 59676
     },
-    "generated_symmetry_group_size": 384,
     "induced_q4_count": 59736,
-    "never_sharing_degree": 33,
-    "through_each_piece": 4978,
-    "vertices": 192
+    "symmetries_preserving_set": 384,
+    "through_each_piece": 4978
   },
   "input_sha256": {
     "docs/PHYSICAL_CELL_CUTTING_CARRIER_CUBE_METRIC_CYCLE750_NOTE_2026-08-09.md": "4678ccebabf4a6cfbd2c8a7d63445c8f750e99930f419dfabfb5c001cc23a9fb",
@@ -45,13 +64,14 @@
     "outputs/physical_cell_cutting_carrier_cube_metric_cycle750_independent_check_2026_08_09_receipt_2026-08-09.json": "e51310f5baf425493bf28234922286b7b48cd217d2041fbc6cd28a42c138fac8",
     "outputs/physical_cell_cutting_object_distance_cycle751_2026_08_09_receipt_2026-08-09.json": "cd5c2ae761c072183a527a25710ffd81ed170869e0b9b26aa9dd7f19f84a14dd",
     "outputs/physical_cell_cutting_object_distance_cycle751_independent_check_2026_08_09_receipt_2026-08-09.json": "72f89bf46124082b0e36afe075e7f36211d2fa218f2dc7100fbadb080d2413fd",
+    "outputs/physical_cell_cutting_shape_census_least_sharing_cycle752_2026_08_09_receipt_2026-08-09.json": "4571ebc1ff8e24bfe1faee7ec690227971d5a03551bcb7c001682f4eec16ea37",
     "requirements-release.txt": "e153eea331ce1b76cd99f09e14a777df2bc9efbaa06a201528ddfdc0f3f01bee",
     "requirements.txt": "3fda988835a13d9a7236b0b508aa9bcd2f9b3f3b9a47b4875a15f86dbc77a3ad",
     "scripts/physical_cell_cutting_carrier_cube_metric_cycle750_2026_08_09.py": "b733a3622f536c27d1671147c804a8183d9503f0c0e2c4137799ffda9c7df031",
     "scripts/physical_cell_cutting_carrier_cube_metric_cycle750_independent_check_2026_08_09.py": "c45a77f8b8fde6ea6d9d48626c184a65b6a561a49ea0ec6587fa328db6c7ad9a",
     "scripts/physical_cell_cutting_object_distance_cycle751_2026_08_09.py": "fab4468120920151b85bb3dfff6b8248b90b91399ce957d07346c9932d688a1b",
     "scripts/physical_cell_cutting_object_distance_cycle751_independent_check_2026_08_09.py": "21910ecf377619411d5961c05835d0795575c09d2915744cba39b01e4a44118f",
-    "scripts/physical_cell_cutting_shape_census_least_sharing_cycle752_independent_check_2026_08_09.py": "bbda3c2f6300ac2f056cadb085925d09528bf56022c5cf81d0fed273e0bcddf8"
+    "scripts/physical_cell_cutting_shape_census_least_sharing_cycle752_2026_08_09.py": "f2e5ee038b9fe472a754355c75271a9124baa2dbc88c411cf5ae08f8be4458fa"
   },
   "no_go_discipline": {
     "n5_execution_certificate": [
@@ -65,18 +85,8 @@
   },
   "pair_total_separation": {
     "all_antipodes_433_count": 672,
-    "carrier_antipodal_count": 433,
-    "carrier_three_step_band": [
-      240,
-      250
-    ],
-    "carrier_two_step_band": [
-      170,
-      184
-    ],
     "minimum_local_next_step": 538,
     "other_q4_minimum": 20338,
-    "pairs_per_q4": 120,
     "pieces_with_exact_local_five": 192,
     "q4_carrier_maximum": 19800,
     "q4_carrier_minimum": 19640,
@@ -102,17 +112,8 @@
     "minimum_over_floor": 1008,
     "minimum_q4_carrier_total": 19640,
     "odd_rows": 5664,
-    "pair_increments_needed": 12968,
     "total_meetings": 31600
   },
-  "runner_sha256": "f2e5ee038b9fe472a754355c75271a9124baa2dbc88c411cf5ae08f8be4458fa",
-  "schema": "physical-cell-cutting-shape-census-cycle752-v2",
-  "status": "pass",
-  "supplied_incidence": {
-    "cuttings": 15800,
-    "cuttings_per_piece": 1975,
-    "pieces_per_cutting": 24,
-    "processed_pair_rows": 15800,
-    "support_columns": 192
-  }
+  "schema": "physical-cell-cutting-shape-census-cycle752-independent-v1",
+  "status": "pass"
 }

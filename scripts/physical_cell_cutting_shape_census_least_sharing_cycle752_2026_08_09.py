@@ -1,42 +1,138 @@
-"""Cycle 752: the four-cube shape is common, and the sharing counts are the charge.
+"""Cycle 752: complete induced-Q4 census and pair-total separation.
 
-The unit four-cube on sixteen corners cuts into least-volume pieces at the adjacency
-cost floor in 15800 ways, and those cuttings use 192 pieces between them, 24 to a
-cutting and 1975 cuttings through each piece. The charge called four is marked on 5664
-of the cuttings and needs sixteen pieces to carry it; the system holds 132 such smallest
-carriers. Cycle 750 joined two pieces of one carrier whenever no cutting used both and
-found the corners and edges of a four-cube on 60 of the 132; cycle 751 put the other 176
-pieces back and found that shape to be the distance the whole object already had.
+Cycle 750 found induced Q4 graphs on 60 of the 132 minimum carriers of the
+declared four reading. Cycle 751 formed the ambient 192-piece graph and found
+that component distances through three survive, while every Q4 antipode
+shortens from four to three.
 
-That leaves the plain question this runner answers. Is the four-cube shape rare? It is
-not. Join every one of the 192 pieces to every other sharing no cutting, then count
-every sixteen pieces joined exactly like the corners of a four-cube: 4978 through every
-single piece, 59736 in all, and 59676 of them carrying none of the eight readings. The
-shape by itself says nothing about the charge.
+This runner enumerates every induced Q4 in that supplied finite graph: 4978
+through every piece and 59736 in all. Exactly 60 realize one of the eight
+declared readings, always four; the remaining 59676 realize none. Thus induced
+Q4 shape is not sufficient for a declared reading on this one finite object.
 
-What does say something is a single number with no reading anywhere in it. Add up, over
-the 120 pairs of a shape, how many cuttings each pair shares, and rank the 59736 shapes
-by that total. The 60 lightest are exactly the 60 four-cube carriers of four. The
-ranking steps clear across the boundary: every carrier at 19800 or below, every other
-shape at 20338 or above, and the same holds piece by piece at all 192 pieces.
+A reading-blind pair total separates the two classes within this enumerated Q4
+population. Add over a shape's 120 unordered pairs the number of cuttings each
+pair shares. The 60 smallest totals are exactly the 60 four-reading Q4s: each
+is at most 19800 and every other Q4 is at least 20338. This is an exact finite
+classification, not a causal or charge-specific mechanism.
 
-There is a reason underneath. A sixteen-piece set meets the 15800 cuttings 31600 times
-in all, and carrying four means meeting exactly the 5664 marked cuttings an odd number
-of times. Spreading 31600 meetings over 15800 cuttings as evenly as that parity permits
-costs 15800 plus half of 5664, which is 18632 shared cuttings, at the very least. The
-carriers come within 1008 of that floor. The floor is derived; that 19640 is where the
-carriers actually sit is measured, not derived.
-
-Class-A: integer and field-with-two-elements arithmetic on a finite explicit object, no
-solver. Every count below is measured here.
+A discrete-convex parity argument gives a 18632 lower bound for any sixteen-
+piece realization of the declared four target. Minimum-total Q4 carriers are
+1008 above that floor. The floor is derived; 19640 is measured for the minimum
+class, not derived or shared by every carrier.
 """
 
+import copy
+import hashlib
 import itertools
+import json
 import math
 import resource
+import sys
 import time
+from pathlib import Path
 
 import numpy as np
+
+AUDIT_TIMEOUT_SEC = 900
+
+ROOT = Path(__file__).resolve().parents[1]
+PRIMARY_PATH = (
+    "scripts/physical_cell_cutting_shape_census_least_sharing_cycle752_2026_08_09.py"
+)
+CHECKER_PATH = (
+    "scripts/physical_cell_cutting_shape_census_least_sharing_cycle752_"
+    "independent_check_2026_08_09.py"
+)
+NOTE_PATH = (
+    "docs/PHYSICAL_CELL_CUTTING_SHAPE_CENSUS_LEAST_SHARING_"
+    "CYCLE752_NOTE_2026-08-09.md"
+)
+RECEIPT_PATH = ROOT / (
+    "outputs/physical_cell_cutting_shape_census_least_sharing_cycle752_"
+    "2026_08_09_receipt_2026-08-09.json"
+)
+C750_NOTE_PATH = (
+    "docs/PHYSICAL_CELL_CUTTING_CARRIER_CUBE_METRIC_CYCLE750_NOTE_2026-08-09.md"
+)
+C750_PRIMARY_PATH = (
+    "scripts/physical_cell_cutting_carrier_cube_metric_cycle750_2026_08_09.py"
+)
+C750_CHECKER_PATH = (
+    "scripts/physical_cell_cutting_carrier_cube_metric_cycle750_"
+    "independent_check_2026_08_09.py"
+)
+C750_RECEIPT_PATH = (
+    "outputs/physical_cell_cutting_carrier_cube_metric_cycle750_2026_08_09_"
+    "receipt_2026-08-09.json"
+)
+C750_INDEPENDENT_RECEIPT_PATH = (
+    "outputs/physical_cell_cutting_carrier_cube_metric_cycle750_"
+    "independent_check_2026_08_09_receipt_2026-08-09.json"
+)
+C751_NOTE_PATH = "docs/PHYSICAL_CELL_CUTTING_OBJECT_DISTANCE_CYCLE751_NOTE_2026-08-09.md"
+C751_PRIMARY_PATH = "scripts/physical_cell_cutting_object_distance_cycle751_2026_08_09.py"
+C751_CHECKER_PATH = (
+    "scripts/physical_cell_cutting_object_distance_cycle751_"
+    "independent_check_2026_08_09.py"
+)
+C751_RECEIPT_PATH = (
+    "outputs/physical_cell_cutting_object_distance_cycle751_2026_08_09_"
+    "receipt_2026-08-09.json"
+)
+C751_INDEPENDENT_RECEIPT_PATH = (
+    "outputs/physical_cell_cutting_object_distance_cycle751_"
+    "independent_check_2026_08_09_receipt_2026-08-09.json"
+)
+AUDIT_INPUT_PATHS = (
+    "docs/PHYSICAL_CELL_CUTTING_SHAPE_CENSUS_LEAST_SHARING_CYCLE752_NOTE_2026-08-09.md",
+    "scripts/physical_cell_cutting_shape_census_least_sharing_cycle752_independent_check_2026_08_09.py",
+    "docs/PHYSICAL_CELL_CUTTING_CARRIER_CUBE_METRIC_CYCLE750_NOTE_2026-08-09.md",
+    "scripts/physical_cell_cutting_carrier_cube_metric_cycle750_2026_08_09.py",
+    "scripts/physical_cell_cutting_carrier_cube_metric_cycle750_independent_check_2026_08_09.py",
+    "outputs/physical_cell_cutting_carrier_cube_metric_cycle750_2026_08_09_receipt_2026-08-09.json",
+    "outputs/physical_cell_cutting_carrier_cube_metric_cycle750_independent_check_2026_08_09_receipt_2026-08-09.json",
+    "docs/PHYSICAL_CELL_CUTTING_OBJECT_DISTANCE_CYCLE751_NOTE_2026-08-09.md",
+    "scripts/physical_cell_cutting_object_distance_cycle751_2026_08_09.py",
+    "scripts/physical_cell_cutting_object_distance_cycle751_independent_check_2026_08_09.py",
+    "outputs/physical_cell_cutting_object_distance_cycle751_2026_08_09_receipt_2026-08-09.json",
+    "outputs/physical_cell_cutting_object_distance_cycle751_independent_check_2026_08_09_receipt_2026-08-09.json",
+    "requirements.txt",
+    "requirements-release.txt",
+)
+
+
+def sha256(path):
+    return hashlib.sha256((ROOT / path).read_bytes()).hexdigest()
+
+
+def load(path):
+    with (ROOT / path).open(encoding="utf-8") as handle:
+        return json.load(handle)
+
+
+def inputs_current(receipt):
+    recorded = receipt.get("input_sha256", {})
+    return bool(recorded) and all(
+        (ROOT / path).is_file() and recorded[path] == sha256(path)
+        for path in recorded
+    )
+
+
+def write_failure(reason):
+    RECEIPT_PATH.write_text(json.dumps({
+        "schema": "physical-cell-cutting-shape-census-cycle752-v2",
+        "status": "fail",
+        "claim_type": "bounded_theorem",
+        "reason": reason,
+    }, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+
+
+write_failure("runner has not completed")
+C750 = load(C750_RECEIPT_PATH)
+C750I = load(C750_INDEPENDENT_RECEIPT_PATH)
+C751 = load(C751_RECEIPT_PATH)
+C751I = load(C751_INDEPENDENT_RECEIPT_PATH)
 
 T0 = time.time()
 PF = [0, 0]
@@ -55,6 +151,78 @@ def emit(s):
 def gate(ok, name, detail):
     PF[0 if ok else 1] += 1
     emit(("PASS " if ok else "FAIL ") + name + "  " + detail)
+
+
+def cycle750_contract(primary, independent):
+    metric = primary.get("carrier_cube_metric", {})
+    reconstruction = independent.get("independent_reconstruction", {})
+    return (
+        primary.get("schema") == "physical-cell-cutting-carrier-cube-metric-cycle750-v2"
+        and primary.get("status") == "pass"
+        and primary.get("claim_type") == "bounded_theorem"
+        and primary.get("gates", {}).get("fail") == 0
+        and primary.get("runner_sha256") == sha256(C750_PRIMARY_PATH)
+        and inputs_current(primary)
+        and primary.get("supplied_incidence", {}).get("processed_pair_rows") == 15800
+        and metric.get("shape_counts") == {"four_cube": 60, "two_three_cubes": 72}
+        and metric.get("four_cube_distance_counts", {}).get("4") == [433]
+        and independent.get("schema")
+        == "physical-cell-cutting-carrier-cube-metric-cycle750-independent-v1"
+        and independent.get("status") == "pass"
+        and independent.get("gates", {}).get("fail") == 0
+        and independent.get("checker_sha256") == sha256(C750_CHECKER_PATH)
+        and inputs_current(independent)
+        and reconstruction.get("processed_pair_rows") == 15800
+        and reconstruction.get("complete_carrier_count") == 132
+        and independent.get("carrier_cube_metric", {}).get("shape_counts")
+        == {"four_cube": 60, "two_three_cubes": 72}
+    )
+
+
+def cycle751_contract(primary, independent):
+    ambient = primary.get("ambient_never_sharing_graph", {})
+    embedding = primary.get("carrier_embedding", {})
+    reconstruction = independent.get("independent_reconstruction", {})
+    return (
+        primary.get("schema") == "physical-cell-cutting-object-distance-cycle751-v2"
+        and primary.get("status") == "pass"
+        and primary.get("claim_type") == "bounded_theorem"
+        and primary.get("gates", {}).get("fail") == 0
+        and primary.get("runner_sha256") == sha256(C751_PRIMARY_PATH)
+        and inputs_current(primary)
+        and primary.get("supplied_incidence", {}).get("processed_pair_rows") == 15800
+        and ambient.get("vertices") == 192
+        and ambient.get("degree") == 33
+        and ambient.get("diameter") == 3
+        and embedding.get("shape_counts")
+        == {"four_cube": 60, "two_three_cubes": 72, "unclassified": 0}
+        and embedding.get("four_cube_antipodal_pairs_at_global_distance_three") == 480
+        and embedding.get("four_cube_antipodal_pairs_at_global_distance_four") == 0
+        and independent.get("schema")
+        == "physical-cell-cutting-object-distance-cycle751-independent-v1"
+        and independent.get("status") == "pass"
+        and independent.get("gates", {}).get("fail") == 0
+        and independent.get("checker_sha256") == sha256(C751_CHECKER_PATH)
+        and inputs_current(independent)
+        and reconstruction.get("processed_pair_rows") == 15800
+        and reconstruction.get("complete_carrier_count") == 132
+    )
+
+
+C750_OK = cycle750_contract(C750, C750I)
+C751_OK = cycle751_contract(C751, C751I)
+gate(C750_OK, "dependency.cycle750",
+     "current primary and independent Cycle 750 certificates bind the 60 Q4 carriers")
+gate(C751_OK, "dependency.cycle751",
+     "current primary and independent Cycle 751 certificates bind the ambient graph")
+bad_c750 = copy.deepcopy(C750I)
+bad_c750["status"] = "fail"
+gate(not cycle750_contract(C750, bad_c750), "hostile.cycle750_independent",
+     "a failing Cycle 750 independent certificate is rejected")
+bad_c751 = copy.deepcopy(C751)
+bad_c751["carrier_embedding"]["four_cube_antipodal_pairs_at_global_distance_four"] = 1
+gate(not cycle751_contract(bad_c751, C751I), "hostile.cycle751_isometry",
+     "a stale total-isometry predecessor claim is rejected")
 
 
 
@@ -221,7 +389,7 @@ EA = dict((k, []) for k in SZC)
 EB = dict((k, []) for k in SZC)
 DIS = dict((k, set()) for k in SZG)
 for lo in range(0, NS, 200):
-    hi = min(lo + 100, NS)
+    hi = min(lo + 200, NS)
     d = LUT[np.bitwise_xor(PK[lo:hi, None, :], PK[None, :, :])].sum(axis=2, dtype=np.int16)
     for k in SZC:
         rr, cc = np.nonzero(d == 2 * k)
@@ -1733,7 +1901,7 @@ gate(FAM == [12, 12, 12, 24, 24, 48] and sum(FAM) == len(CEN)
      and len(FIX) == len(CEN), "G29",
      "the symmetries do not carry every smallest carrier of four onto every "
      "other: six families")
-# ---- Part 4i: the shape is common, the sharing counts are what carry the charge ----
+# ---- Part 4i: complete induced-Q4 census and pair-total separation ----
 from itertools import combinations as CMB
 
 FA = INCL.astype(np.float64)
@@ -1867,6 +2035,13 @@ S4 = int(np.count_nonzero(np.asarray(TGTv[2])))
 PPC = int(IB[:, 0].sum())
 MEET = 16 * PPC
 FLOOR = NCUT + S4 // 2
+NEED = (MEET - S4) // 2
+MARGINAL = []
+for parity in np.asarray(TGTv[2], dtype=np.uint8):
+    MARGINAL.extend(2 * multiplicity + 1
+                    for multiplicity in range(int(parity), 16, 2))
+MARGINAL.sort()
+FLOOR_MARGINAL = sum(MARGINAL[:NEED])
 ALLC = [tsum(tuple(sorted(c))) for c in CEN]
 CMIN, CTOP = min(ALLC), max(ALLC)
 best = RANK[0]
@@ -1881,7 +2056,7 @@ gate(len(set(PER)) == 1 and PER[0] == 4978 and NSHP == 59736, "G31",
      "sixteen pieces joined like the corners of a four-cube: {0} through every one of "
      "the {1} pieces, {2} in all".format(PER[0], NPO, NSHP))
 gate(BADG == 0, "G32",
-     "all {0} generating symmetries carry every one of those shapes to a shape".format(len(GENS)))
+     "all {0} checked generators preserve the complete induced-Q4 set".format(len(GENS)))
 gate(NONE == 59676 and NFOUR == 60 and set(READ.values()) == set(["four"]), "G33",
      "of the {0} shapes {1} carry none of the eight readings and {2} carry four".format(
          NSHP, NONE, NFOUR))
@@ -1903,9 +2078,10 @@ gate(len(SEP34) == 1488 and len(FAR) == 672, "G38",
 gate(B2 == (170, 184) and B3 == (240, 250), "G39",
      "inside a carrier two steps give {0} to {1}, three steps {2} to {3}, the far corner "
      "433 every time".format(B2[0], B2[1], B3[0], B3[1]))
-gate(MEET == 31600 and FLOOR == 18632 and min(ALLC) >= FLOOR, "G40",
-     "a sixteen-piece set meets the {0} cuttings {1} times, so carrying four needs {2} "
-     "odd meetings and costs {3} at least".format(NCUT, MEET, S4, FLOOR))
+gate(MEET == 31600 and NEED == 12968 and FLOOR == FLOOR_MARGINAL == 18632
+     and min(ALLC) >= FLOOR, "G40",
+     "the cheapest parity-preserving multiplicity increments prove that a sixteen-piece "
+     "four realization costs at least {0}".format(FLOOR))
 gate(REBUILD == MEET and COST == CMIN and OVER == 1008 and SPR[0] == 252
      and SPR[4] == 252 and EDGE == 504, "G41",
      "the lightest carrier sits at {0}, which is {1} over that floor: {2} cuttings missed "
@@ -1913,14 +2089,106 @@ gate(REBUILD == MEET and COST == CMIN and OVER == 1008 and SPR[0] == 252
 gate(len(set(ALLC)) == 4 and CMIN == 19640 and CTOP == 24216, "G42",
      "over all {0} carriers the total takes {1} values, least {2} and most {3}".format(
          len(ALLC), len(set(ALLC)), CMIN, CTOP))
-emit("so the shape is common and the sharing counts carry the charge")
+emit("so pair total separates four-reading from no-reading Q4s on this supplied object")
 
 EL = time.time() - T0
 RSS = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1048576.0
 ELB, RSB = upto(EL, 100), 2500
 emit("elapsed under {0} s peak memory under {1} MB".format(ELB, RSB))
 gate(EL < 900.0 and RSS < float(RSB), "G43", "inside its time and memory allowance")
-CH = OUT[0] + 120
-gate(CH < 6000, "G44", "its output stays under {0} characters".format(6000))
+CH = OUT[0] + 700
+gate(CH < 10000, "G44",
+     "its output including the evidence footer stays under {0} characters".format(10000))
 emit("")
-print("TOTAL: PASS={0} FAIL={1}".format(PF[0], PF[1]))
+print("per_element: checked -- all 192 pieces enter the complete induced-Q4 and pair-total census", flush=True)
+print("per_site: checked and not executed -- the theorem concerns one supplied coordinate four-cube only", flush=True)
+print("per_mode: checked and not executed -- this finite binary incidence object has no modal decomposition", flush=True)
+print("per_block: checked -- every one of the 15800 cutting rows enters the dense co-incidence matrix", flush=True)
+print("lattice_wide: checked and not executed -- no multicell, infinite-lattice, causal, or continuum claim", flush=True)
+
+receipt = {
+    "schema": "physical-cell-cutting-shape-census-cycle752-v2",
+    "status": "pass" if PF[1] == 0 else "fail",
+    "claim_type": "bounded_theorem",
+    "audit_status_authority": "independent audit lane only",
+    "runner_sha256": sha256(PRIMARY_PATH),
+    "input_sha256": {path: sha256(path) for path in AUDIT_INPUT_PATHS},
+    "supplied_incidence": {
+        "cuttings": NS,
+        "support_columns": NPO,
+        "pieces_per_cutting": RW[0] if len(RW) == 1 else RW,
+        "cuttings_per_piece": CSUM[0] if len(CSUM) == 1 else CSUM,
+        "processed_pair_rows": NS,
+    },
+    "direct_dependencies": {
+        "cycle750": {
+            "receipt_sha256": sha256(C750_RECEIPT_PATH),
+            "independent_receipt_sha256": sha256(C750_INDEPENDENT_RECEIPT_PATH),
+            "contract_current": C750_OK,
+        },
+        "cycle751": {
+            "receipt_sha256": sha256(C751_RECEIPT_PATH),
+            "independent_receipt_sha256": sha256(C751_INDEPENDENT_RECEIPT_PATH),
+            "contract_current": C751_OK,
+        },
+    },
+    "induced_q4_census": {
+        "vertices": NPO,
+        "never_sharing_degree": len(AJN[0]),
+        "induced_q4_count": NSHP,
+        "through_each_piece": PER[0] if len(set(PER)) == 1 else PER,
+        "checked_generators_preserving_set": len(GENS) - BADG,
+        "generated_symmetry_group_size": len(EG),
+        "declared_reading_counts": {"four": NFOUR, "none": NONE},
+    },
+    "pair_total_separation": {
+        "pairs_per_q4": 120,
+        "q4_carriers": NCAR,
+        "q4_carrier_minimum": min(TOTS[shape] for shape in CFC),
+        "q4_carrier_maximum": CMAX,
+        "other_q4_minimum": OMIN,
+        "pieces_with_exact_local_five": PIECE,
+        "minimum_local_next_step": min(STEP),
+        "two_three_separation_count": len(SEP23),
+        "three_four_separation_count": len(SEP34),
+        "all_antipodes_433_count": len(FAR),
+        "carrier_two_step_band": list(B2),
+        "carrier_three_step_band": list(B3),
+        "carrier_antipodal_count": 433,
+    },
+    "parity_floor": {
+        "odd_rows": S4,
+        "total_meetings": MEET,
+        "pair_increments_needed": NEED,
+        "derived_lower_bound": FLOOR_MARGINAL,
+        "minimum_q4_carrier_total": CMIN,
+        "minimum_over_floor": OVER,
+        "minimum_multiplicity_histogram": {
+            str(index): value for index, value in enumerate(SPR) if value
+        },
+        "all_carrier_totals": sorted(set(ALLC)),
+    },
+    "boundary": {
+        "finite_supplied_coordinate_four_cube_only": True,
+        "q4_shape_sufficient_for_declared_reading": False,
+        "pair_total_is_causal_charge_mechanism": False,
+        "pair_total_distinguishes_four_from_other_present_readings": False,
+        "all_sixteen_piece_sets_classified": False,
+        "physical_metric_or_multicell_claimed": False,
+    },
+    "no_go_discipline": {
+        "status": "PASS",
+        "n5_execution_certificate": [
+            "per_element checked",
+            "per_site checked and not executed",
+            "per_mode checked and not executed",
+            "per_block checked",
+            "lattice_wide checked and not executed",
+        ],
+    },
+    "gates": {"pass": PF[0], "fail": PF[1]},
+}
+RECEIPT_PATH.write_text(json.dumps(receipt, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+print("RECEIPT " + str(RECEIPT_PATH.relative_to(ROOT)), flush=True)
+print("TOTAL: PASS={0} FAIL={1}".format(PF[0], PF[1]), flush=True)
+sys.exit(0 if PF[1] == 0 else 1)

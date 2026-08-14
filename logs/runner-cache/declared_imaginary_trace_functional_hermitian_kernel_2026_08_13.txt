@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/declared_imaginary_trace_functional_hermitian_kernel_2026_08_13.py
+runner_sha256: 612ffbb0b8af28a30b4733d72075a0db1ee7b1f3f8eaace67f9763c3e1c5f7e2
+input_fingerprint_sha256: b2cf233b4edf52bffe39dc1eafd5f095d4cc1800ee467c9dfc50a3e5c23a5a13
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+external_scientific_inputs: none; J and the Hermitian restriction are declared mathematical conditions
+framework_role: current Qubit supplies M_2(C); current Record supplies no scalar functional or additivity
+negative_scope: only maps into the Hermitian subspace under fixed J are excluded; five formal or physical route families remain live
+PASS: audit-input-paths declared inputs are exactly the new note and current minimal-axiom memo
+PASS: current-qubit-domain the extracted current Qubit section supplies the full one-site M_2(C) presentation
+PASS: current-record-section the current Record block is isolated rather than mixed with historical removal prose
+PASS: retired-record-semantics-absent the current Record block supplies no named scalar, additivity, or value at absence
+PASS: universal-hermitian-form the four-parameter constructor is Hermitian and has real trace p+s
+PASS: hermitian-basis-kernel J vanishes on the real Pauli basis spanning the Hermitian subspace
+PASS: hermitian-sample-kernel J vanishes on every exact four-parameter Hermitian control
+PASS: antihermitian-right-inverse J(iu 1)=u exactly on the rational discriminator sample
+PASS: antihermitian-domain-split iu 1 is Hermitian only at zero and anti-Hermitian for every sampled nonzero u
+PASS: right-inverse-injective distinct sampled u values give distinct matrices and distinct J values
+PASS: hermitian-shift for Hermitian E0, J(E0+iu 1)=u and every nonzero shift is non-Hermitian
+PASS: fixed-J-hermitian-obstruction the natural Hermitian encoding u 1 remains invisible to fixed J
+PASS: alternative-functional-escape Re Tr/2 reads u from Hermitian u 1, proving the negative does not cover other functionals
+PASS: normalization-mutation dropping the factor 1/2 changes the anti-Hermitian recovery from u to 2u
+PASS: nonhermitian-not-sufficient-mutation a traceless anti-Hermitian matrix has J=0, so non-Hermiticity alone is not claimed sufficient
+PASS: pairing-discriminator the two-argument trace pairing gives 1/4 and 3/10 while J of both densities is zero
+PASS: real-linearity J is additive and real-homogeneous on exact matrix controls
+PASS: note-current-record-boundary the note explicitly denies that current Record supplies J, additivity, or a value at absence
+PASS: note-proof-contract the note states the universal kernel, fixed-J corollary, and explicit anti-Hermitian escape
+PASS: note-no-go-packet the committed note carries complete N1 through N8 headings and a narrow PASS disposition
+PASS: note-machine-trace the source carries complete bounded machine status without an audit verdict
+PASS: note-dependency-contract the only external scientific authority is the current minimal-axiom memo
+PASS: note-nonclaims the note keeps physical readout, writing, formation, and framework-wide no-go outside scope
+N5_CERTIFICATE:
+per_element: checked — the proof covers every Hermitian 2x2 matrix, with exact rational mutation controls
+per_site: checked — the theorem is exactly one-site M_2(C) algebra and asserts no composite-site lift
+per_mode: checked and not executed — no spectral-mode, eigenmode, or momentum decomposition is claimed
+per_block: checked — the Hermitian subspace and central anti-Hermitian line are separated explicitly
+lattice_wide: checked and not executed — no lattice history, writing process, or global no-go is claimed
+TOTAL: PASS=23 FAIL=0
+
+----- stderr -----
+

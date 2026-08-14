@@ -1,6 +1,6 @@
 {
- "edge_count": 15640,
- "node_count": 5503,
+ "edge_count": 15642,
+ "node_count": 5504,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -365,6 +365,10 @@
   "admissibility_rule_covariance_extension_classification_openness_achiral_oriented_frame_minimal_chiral_channel_bounded_theorem_note_2026-07-03": {
    "deps_hash": "d69dd5ba8c7f",
    "out_degree": 4
+  },
+  "admissibility_support_constrains_content_not_formation_site_bounded_theorem_note_2026-08-13": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "admitted_event_interbank_allocator_handoff_cycle717_bounded_theorem_note_2026-07-26": {
    "deps_hash": "17377b1eecff",
@@ -1663,8 +1667,8 @@
    "out_degree": 11
   },
   "canonical_harness_index": {
-   "deps_hash": "9dfbdb1eda8d",
-   "out_degree": 350
+   "deps_hash": "8fe97f64bd5f",
+   "out_degree": 351
   },
   "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": {
    "deps_hash": "808c1ccb6109",

@@ -4,7 +4,7 @@ runner_sha256: 05ce792fb5b49eb7713aebe2873394672439424b2d8f91c50086d28b07a5b2e2
 input_fingerprint_sha256: 2de0a859af02aa8dfb69b43985c8b653f1df2a4d974eefb9a67a51a825e8b084
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 external_scientific_inputs: none

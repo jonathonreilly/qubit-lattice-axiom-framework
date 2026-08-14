@@ -1,0 +1,58 @@
+===== runner cache v1 =====
+runner: scripts/trivial_vs_pauli_adjoint_cube_action_is_extra_2026_08_14.py
+runner_sha256: eeb826b73f23d27cb3f4243f6e31ae05b22167edbfb8e0436e46e370fd979bb6
+input_fingerprint_sha256: 11bfddfea2e21251ec9ae5d8317627b27d45da28dd68683157dd5d1e1efc2746
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+external_scientific_inputs: none; displayed φ0, φAd, and U are theorem objects
+package_local_integrity_reads: runner source, proposed source note, and live axiom memo
+measure_boundary: exact Q(i); no fitted, QCD, or G_N input
+negative_scope: the two displayed maps disagree on σx; neither is axiom-named
+PASS: field-i-square i^2 = -1
+PASS: pauli-x-formula σx = ((0,1),(1,0))
+PASS: pauli-y-formula σy = ((0,-i),(i,0))
+PASS: pauli-z-formula σz = ((1,0),(0,-1))
+PASS: pauli-x-square σx^2 = I
+PASS: pauli-y-square σy^2 = I
+PASS: pauli-z-square σz^2 = I
+PASS: pauli-basis-rank-4 {I,σx,σy,σz} has Q(i)-rank 4
+PASS: star-x σx* = σx
+PASS: star-y σy* = σy
+PASS: star-z σz* = σz
+PASS: phi0-x φ0(σx) = σx
+PASS: phi0-y φ0(σy) = σy
+PASS: phi0-z φ0(σz) = σz
+PASS: phi0-unital φ0(I) = I
+PASS: phiad-x φAd(σx) = σy
+PASS: phiad-y φAd(σy) = σz
+PASS: phiad-z φAd(σz) = σx
+PASS: phiad-unital φAd(I) = I
+PASS: phiad-star-x φAd(σx)* = φAd(σx*)
+PASS: thm1-disagreement φ0(σx) = σx ≠ σy = φAd(σx)
+PASS: mutation-images-equal-fails predicate φ0(σx) == φAd(σx) fails
+PASS: control-phiad-order-three φAd³ = id on {I,σx,σy,σz}
+PASS: control-phiad-not-id φAd ≠ id
+PASS: control-phi0-order-three φ0³ = id
+PASS: control-twice-not-id φAd² ≠ id (disagreement is the image, not the order)
+PASS: exhibit-u-unitary U* U = I
+PASS: exhibit-ad-x Ad_U(σx) = σy
+PASS: exhibit-ad-y Ad_U(σy) = σz
+PASS: exhibit-ad-z Ad_U(σz) = σx
+PASS: exhibit-matches-phiad Ad_U agrees with φAd on the Pauli basis
+PASS: thm2-live-lattice-quote live Lattice names proper cubic rotations about each site
+PASS: thm2-live-qubit-quote live Qubit names one-site M_2(C)
+PASS: thm2-note-quotes-parents note quotes the live Lattice and Qubit sentences
+PASS: mutation-memo-names-adu-or-pauli-adjoint-fails predicate live memo names Ad_U or Pauli-adjoint fails
+PASS: mutation-memo-lattice-named-fails predicate live memo contains Lattice-named fails
+PASS: thm3-both-extras-displayed note displays both maps as extras and does not adopt φAd
+PASS: boundary-no-qubit-flip note does not flip Qubit to M_3
+PASS: boundary-no-unmerged-pr note reconstructs locally and does not cite #6268
+PASS: machine-status-contract note carries bounded-support status and no axiom adoption
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+TOTAL: PASS=41 FAIL=0
+
+----- stderr -----
+

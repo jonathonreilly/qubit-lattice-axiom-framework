@@ -4,10 +4,10 @@ runner_sha256: 4f98e8a72a5c81805d9aedb5cf071598e5d94bc7de7928a686c0cc5eac42a999
 input_fingerprint_sha256: ab506acf720fac6eb4c35dd834d80375b2e24d9677107a3e24c86e37db0857e7
 timeout_sec: 180
 exit_code: 0
-elapsed_sec: 1.62
+elapsed_sec: 1.53
 status: ok
 ----- stdout -----
-PASS A-current-axiom-and-exact-parent-authority: origin/main=0d2cb078eb, axiom=93af34cf6fcf; Block71/72/73 receipts are ancestors
+PASS A-current-axiom-and-exact-parent-authority: origin/main=ac6fa63d89, axiom=93af34cf6fcf; Block71/72/73 receipts are ancestors
 PASS B-Block71-archive-lock-and-Block72-compiler-receipt: archive rank=32/32, Gram=1.5e-15, lock=4.4e-16, packet failures=0
 PASS C-one-six-outcome-CPTP-instrument-without-host-branch: rank-2 readiness, six Kraus outcomes/rank 6, completeness=1.1e-15; 64 basis and 45 coherent rows
 PASS D-arbitrary-target-reference-preserving-archive-and-exact-lock: branch ranks=(8, 8, 8, 8), combined=32/32, Gram=3.8e-15, lock=7.8e-16

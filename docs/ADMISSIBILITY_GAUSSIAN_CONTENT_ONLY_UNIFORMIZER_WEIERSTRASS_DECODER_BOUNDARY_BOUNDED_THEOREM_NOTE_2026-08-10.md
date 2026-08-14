@@ -4,7 +4,7 @@ claim_type: bounded_theorem
 claim_scope: "For the explicit full-support Gaussian Admissibility family with Hermitian center C, the fixed content statistic Im Tr A is standard normal for every C and invariant under simultaneous unitary conjugation. Hence U(A)=Phi(Im Tr A) is one center-independent content-only uniform variable, improving the prior fixed-condition uniformizer and closing the splitting resource on this displayed family. Along C=tP_z, however, the probability produced by any one fixed bounded measurable content-only readout kernel is an entire function of complexified t, while the half-P_z grade of every finite isotropic extractor member is (t^2+2+lambda)/(2(t^2+4+2lambda)) and has nonremovable finite complex poles. No such fixed kernel can reproduce that varying grade on any nonempty open t interval. A condition-indexed threshold of the common uniformizer realizes the grade exactly, so the result isolates physical condition/program tagging rather than randomness as the residual. The boundary is only the displayed Gaussian translation family, one fixed effect, finite lambda, and a fixed bounded kernel; it proves no global content-decoder or Record no-go, no axiom necessity, and no autonomous occurrence/history claim."
 upstream_dependencies:
   - minimal_axioms
-  - admissibility_record_content_decoder_pushforward_effect_descent_independence_bounded_theorem_note_2026-08-10
+  - declared_imaginary_trace_functional_hermitian_kernel_bounded_theorem_note_2026-08-13
   - admissibility_gaussian_second_moment_quantile_decoder_effect_quotient_bounded_theorem_note_2026-08-10
   - admissibility_cnot_contact_gaussian_extractor_type_order_bounded_theorem_note_2026-08-10
 runner: scripts/admissibility_gaussian_content_only_uniformizer_weierstrass_decoder_boundary_2026_08_10.py
@@ -13,7 +13,7 @@ runner: scripts/admissibility_gaussian_content_only_uniformizer_weierstrass_deco
 # Gaussian Content-Only Uniformizer And Weierstrass Decoder Boundary
 
 **Date:** 2026-08-10
-**Type:** bounded theorem
+**Type:** bounded_theorem
 **Construction:** positive common-uniformizer plus bounded fixed-decoder test
 **Scope:** the displayed Gaussian family on one `M_2(C)` site, Hermitian
 centers, the slice `C=tP_z`, one fixed half-projector effect, finite isotropic
@@ -27,14 +27,15 @@ audit verdict and predicts none.
 
 ## Result Up Front
 
-Block 4 constructed a Gaussian quantile compiler using
-`Phi(Re Tr(A-C))`, explicitly conditional on a fixed center `C`. Block 5
-accepted the steelman that a physical comparator could drive a CNOT control,
-but left the comparator threshold, eigenbasis, program registration, and
-occurrence open.
+The reviewed current-main Gaussian compiler constructed a quantile compiler
+using `Phi(Re Tr(A-C))`, explicitly conditional on a fixed center `C`. The
+reviewed current-main CNOT theorem accepted the steelman that a physical
+comparator could drive a CNOT control, but left the comparator threshold,
+eigenbasis, program registration, and occurrence open.
 
-The Gaussian family contains a stronger positive object that removes one of
-those inputs. Every center `C` is Hermitian, so `Im Tr C=0`. The two diagonal
+The supplied Gaussian family contains a stronger positive object that removes
+one of those inputs. By construction its centers `C` are restricted to be
+Hermitian, so `Im Tr C=0`. The two diagonal
 imaginary noise coordinates have variance `1/2` each. Therefore
 
 `S(A)=Im Tr A`
@@ -47,12 +48,12 @@ is a single content-only uniform variable shared by the whole Gaussian
 family. Trace invariance makes it simultaneously unitary-conjugation
 invariant. No center subtraction, neighbor lookup, or center-indexed
 uniformizer is needed. On this displayed family the mathematical splitting
-resource is closed across conditions.
+and event-partition resource is closed across conditions.
 
-That does not make one fixed Record decoder reproduce the varying extracted
-effect grade. Let `r(A) in [0,1]` be any fixed bounded measurable readout
-kernel for one label. Along `C=tP_z`, its Gaussian expectation `P_r(t)` extends
-to an entire function of complex `t`. For the fixed effect
+That does not make one fixed candidate content decoder reproduce the varying
+extracted effect grade. Let `r(A) in [0,1]` be any fixed bounded measurable
+readout kernel for one label. Along `C=tP_z`, its Gaussian expectation
+`P_r(t)` extends to an entire function of complex `t`. For the fixed effect
 `E_0=(1/2)P_z`, every finite isotropic extractor member instead gives
 
 `w_lambda(t)=(t^2+2+lambda)/(2(t^2+4+2lambda))`.
@@ -120,9 +121,17 @@ fixed function of the raw locked matrix. The successful threshold decoder is
 then explicitly indexed by a condition-derived target value. The index is not
 silently called record content.
 
+The current Record axiom supplies only that, when a record is present, a
+readout value is determined by its content. It supplies no scalar collection
+functional `I`, finite additivity, decoder map, operational-effect quotient,
+record-formation probability or rate, or rule that writes a condition tag.
+The class `r:M_2(C)->[0,1]` is therefore a conditional candidate decoder class
+being tested here, not machinery imported from Record.
+
 ## Gaussian Coordinates
 
-Use the explicit family inherited from Blocks 3--5:
+Use the explicit supplied family from the reviewed current-main Gaussian
+compiler:
 
 `d mu_C(A)=pi^(-4) exp(-||A-C||_HS^2)d^8A`,
 
@@ -155,9 +164,9 @@ content alone. For every unitary `V`,
 `Im Tr(V A V^dagger)=Im Tr A`,
 
 so `U` is invariant under all simultaneous unitary conjugations, including the
-finite contact conjugations used in Block 5. It is also insensitive to proper-
-cubic rotation of the Hermitian center because trace is invariant under the
-corresponding conjugation.
+finite contact conjugations used in the current-main CNOT theorem. It is also
+insensitive to proper-cubic rotation of the Hermitian center because trace is
+invariant under the corresponding conjugation.
 
 This strictly improves the earlier centered real-trace uniformizer. The latter
 was content-only only after fixing `C`; this one is the same function across
@@ -175,6 +184,12 @@ cover deterministic label decoders; general `[0,1]` values cover stochastic
 readout kernels. Define
 
 `P_r(t)=integral r(A)dmu_(tP_z)(A)`.
+
+The `[0,1]` kernel class is a mathematical enlargement of the deterministic
+content-decoder class. Current Record does not license fresh readout
+randomness; a stochastic kernel would require its realized random input to be
+stored in content or otherwise supplied. Proving the mismatch for this larger
+class therefore does not import stochastic readout as an axiom premise.
 
 Only the real coordinate `x=Re A_00` shifts with `t`. Integrating the other
 seven coordinates first gives a Borel `g:R->[0,1]` such that
@@ -309,12 +324,13 @@ supply a neighborhood-varying possibility measure and say that readout is
 determined by Record content alone. They do not select a distribution form,
 decoder, condition tag, or operational-effect quotient.
 
-The
-[`decoder-independence source`](ADMISSIBILITY_RECORD_CONTENT_DECODER_PUSHFORWARD_EFFECT_DESCENT_INDEPENDENCE_BOUNDED_THEOREM_NOTE_2026-08-10.md),
-lines 174--248 and 342--470, proves that content-only additivity does not select
-one decoder and that decoder pushforward does not force effect descent. This
-note asks a different question: whether one fixed decoder can at least realize
-the already constructed varying Gaussian target.
+The current-main
+[`declared imaginary-trace functional theorem`](DECLARED_IMAGINARY_TRACE_FUNCTIONAL_HERMITIAN_KERNEL_BOUNDED_THEOREM_NOTE_2026-08-13.md)
+already proves that `Im Tr C=0` for every Hermitian `C` and exhibits a
+non-Hermitian right inverse for that separately declared functional. It does
+not study Gaussian noise about `C`, the probability-integral transform, fixed
+kernel responses, or the pole mismatch. This theorem rederives the Hermitian
+kernel fact and extends it in those distinct probabilistic/analytic directions.
 
 The
 [`Gaussian compiler source`](ADMISSIBILITY_GAUSSIAN_SECOND_MOMENT_QUANTILE_DECODER_EFFECT_QUOTIENT_BOUNDED_THEOREM_NOTE_2026-08-10.md),
@@ -356,7 +372,7 @@ Gaussian route reaches the analytic contradiction.
 ### N2 — wall independence and collapse
 
 The common uniformizer closes splitting on the displayed Gaussian family, so
-it is removed from this block's wall count. Three walls remain.
+it is removed from this theorem's wall count. Three walls remain.
 
 | Pair | First closes second? | Second closes first? | Disposition |
 |---|---:|---:|---|
@@ -365,18 +381,18 @@ it is removed from this block's wall count. Three walls remain.
 | condition-program tag and effect quotient / occurrence-history law | no: a registered decoder need not occur | no: Records forming do not identify preparation or effect equivalence | independent |
 
 For general current-compatible atomic laws, splitting remains a separate
-global-law issue inherited from Block 4. It is closed only inside the displayed
-Gaussian completion here.
+global-law issue. It is closed only inside the displayed Gaussian completion
+here.
 
 ### N3 — hidden-condition scan
 
 | Item | Classification |
 |---|---|
-| full-support Gaussian form | constructed stacked completion; not selected by current axioms |
-| Hermitian center | follows from the displayed neighbor-average construction |
+| full-support Gaussian form | explicit current-main supplied completion; not selected by current axioms |
+| Hermitian center | explicit condition of the supplied Gaussian family; not automatic for arbitrary `M_2(C)` neighbor content |
 | `C=tP_z` continuum | explicit preparation slice; realizable by equal Hermitian neighbor contents |
 | standard-normal CDF | elementary analytic function; no observed distribution imported |
-| bounded Borel kernel | covers every deterministic/stochastic probability readout for one label |
+| bounded Borel kernel | mathematical enlargement covering every deterministic decoder and supplied stochastic kernel for one label; current Record supplies no fresh readout randomness |
 | fixed kernel across `t` | exact current content-only route under test; indexed escape stated separately |
 | fixed half-projector effect | supplied mathematical probe; no physical effect registration inferred |
 | finite `lambda` | declared extractor-family scope; infinite-offset constant boundary is not claimed |
@@ -393,7 +409,7 @@ surface.
 | Source location | Source residual used | Residual attacked here | Closure claimed here | Match |
 |---|---|---|---|---:|
 | [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md), lines 45--73 and 79--84 | varying whole-domain measure plus content-only Record readout | ask what one fixed readout can realize across conditions | bounded Gaussian fixed-kernel result only | yes |
-| [`decoder source`](ADMISSIBILITY_RECORD_CONTENT_DECODER_PUSHFORWARD_EFFECT_DESCENT_INDEPENDENCE_BOUNDED_THEOREM_NOTE_2026-08-10.md), lines 174--248 and 342--470 | decoder selection and effect descent remain independent | hold the decoder fixed and test an already selected target | entire-response classification only | yes |
+| [`declared imaginary-trace theorem`](DECLARED_IMAGINARY_TRACE_FUNCTIONAL_HERMITIAN_KERNEL_BOUNDED_THEOREM_NOTE_2026-08-13.md), Hermitian-kernel and right-inverse sections | `Im Tr C=0` on Hermitian matrices; no physical readout or writing rule follows | add Gaussian noise, uniformization, and a fixed-kernel response test | only the Hermitian-kernel fact is reused and independently rederived | yes |
 | [`compiler source`](ADMISSIBILITY_GAUSSIAN_SECOND_MOMENT_QUANTILE_DECODER_EFFECT_QUOTIENT_BOUNDED_THEOREM_NOTE_2026-08-10.md), lines 193--215 and 302--332 | uniformizer works only after fixing `C`; physical encoding open | remove `C` from the uniformizer and isolate threshold indexing | common uniformizer plus indexed-threshold residual | yes |
 | [`contact source`](ADMISSIBILITY_CNOT_CONTACT_GAUSSIAN_EXTRACTOR_TYPE_ORDER_BOUNDED_THEOREM_NOTE_2026-08-10.md), lines 242--306 and 443--458 | CNOT carries supplied weight; direct comparator remains live | determine whether the comparator can be one fixed content readout | fixed-kernel rejected; indexed comparator succeeds | yes |
 
@@ -451,10 +467,9 @@ the current local rule, or expose it as the narrow axiom-side addition.
 
 | Earlier surface | Later movement | Echo here |
 |---|---|---|
-| Block 2 rejected raw singleton probability | Block 3 introduced decoder fibers | the whole content event, not a point mass, is still the correct object |
-| Block 3 found content-decoder nonselection | Block 4 built an explicit indexed decoder | the present theorem asks whether the index can be removed and answers only for this Gaussian target |
-| Block 4 needed center subtraction for its uniformizer | the imaginary-trace coordinate is center-free | one prior wall is genuinely retired on the displayed family |
-| Block 5 found CNOT carries but does not select `q` | the common uniformizer supplies randomness | the missing `q` is now localized to a program tag rather than a stochastic resource |
+| current-main global-measure/menu separation distinguishes whole-domain measure from a menu kernel | the Gaussian compiler builds program-relative events rather than direct Record readout | the present theorem tests whether one fixed content event can remove the program index |
+| the Gaussian compiler needed center subtraction for its uniformizer | the imaginary-trace coordinate is center-free | one prior wall is genuinely retired on the displayed family |
+| the current-main CNOT theorem finds that CNOT carries but does not select `q` | the common uniformizer supplies randomness | the missing `q` is now localized to a program tag rather than a stochastic resource |
 | Cycle 189 reconstructed process fields from records | local implementation remained open | tag reconstruction remains viable after an occurrence/process law is derived |
 
 **Gate disposition:** PASS for the common Gaussian content-only uniformizer,
@@ -468,6 +483,7 @@ tag compiler, occurrence, or Born/history closure.
 | Item | Role | Status |
 |---|---|---|
 | current possibility measure and content-only Record clauses | semantic baseline | supplied; unchanged |
+| declared imaginary-trace Hermitian-kernel theorem | current-main overlap/prior surface | Hermitian-kernel fact rederived; Gaussian uniformizer and entire-response result are new here |
 | displayed Gaussian family and Hermitian center | tested completion | inherited; not selected by current axioms |
 | imaginary-trace normal law and CDF transform | common uniformizer | elementary calculation proved here |
 | bounded Borel readout kernel | full fixed-decoder class | explicit theorem quantifier |
@@ -484,9 +500,11 @@ retired.
 
 ## Review Record
 
-This source is stacked on PR #6071 because it consumes the explicit Gaussian
-compiler, its conditioned-contact factorization, and the accepted comparator
-steelman. All load-bearing mathematics is rederived in this source and runner.
-The canonical axiom memo remains unchanged. Independent audit is required
-before any effective status changes. No `review-loop` was invoked in producing
-or directly self-reviewing this artifact.
+The submission was originally stacked, but review-loop replayed its science on
+reviewed current main. It consumes the landed Gaussian compiler and CNOT
+theorem; no branch-local or closed-unmerged source is imported. All
+load-bearing mathematics is rederived in this source and runner. The canonical
+axiom memo remains unchanged. Independent audit is required before any
+effective status changes. The authoring claim that no self-review occurred is
+preserved only as submission history; this repaired candidate has undergone
+repo-native review-loop review.

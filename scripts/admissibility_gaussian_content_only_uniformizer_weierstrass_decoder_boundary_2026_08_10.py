@@ -20,14 +20,14 @@ AUDIT_TIMEOUT_SEC = 120
 ROOT = Path(__file__).resolve().parents[1]
 NOTE_PATH = ROOT / "docs" / "ADMISSIBILITY_GAUSSIAN_CONTENT_ONLY_UNIFORMIZER_WEIERSTRASS_DECODER_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md"
 AXIOM_PATH = ROOT / "docs" / "MINIMAL_AXIOMS_2026-06-29.md"
-DECODER_PARENT_PATH = ROOT / "docs" / "ADMISSIBILITY_RECORD_CONTENT_DECODER_PUSHFORWARD_EFFECT_DESCENT_INDEPENDENCE_BOUNDED_THEOREM_NOTE_2026-08-10.md"
+IMAGINARY_TRACE_PRIOR_PATH = ROOT / "docs" / "DECLARED_IMAGINARY_TRACE_FUNCTIONAL_HERMITIAN_KERNEL_BOUNDED_THEOREM_NOTE_2026-08-13.md"
 COMPILER_PARENT_PATH = ROOT / "docs" / "ADMISSIBILITY_GAUSSIAN_SECOND_MOMENT_QUANTILE_DECODER_EFFECT_QUOTIENT_BOUNDED_THEOREM_NOTE_2026-08-10.md"
 CONTACT_PARENT_PATH = ROOT / "docs" / "ADMISSIBILITY_CNOT_CONTACT_GAUSSIAN_EXTRACTOR_TYPE_ORDER_BOUNDED_THEOREM_NOTE_2026-08-10.md"
 
 AUDIT_INPUT_PATHS = (
     "docs/ADMISSIBILITY_GAUSSIAN_CONTENT_ONLY_UNIFORMIZER_WEIERSTRASS_DECODER_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md",
     "docs/MINIMAL_AXIOMS_2026-06-29.md",
-    "docs/ADMISSIBILITY_RECORD_CONTENT_DECODER_PUSHFORWARD_EFFECT_DESCENT_INDEPENDENCE_BOUNDED_THEOREM_NOTE_2026-08-10.md",
+    "docs/DECLARED_IMAGINARY_TRACE_FUNCTIONAL_HERMITIAN_KERNEL_BOUNDED_THEOREM_NOTE_2026-08-13.md",
     "docs/ADMISSIBILITY_GAUSSIAN_SECOND_MOMENT_QUANTILE_DECODER_EFFECT_QUOTIENT_BOUNDED_THEOREM_NOTE_2026-08-10.md",
     "docs/ADMISSIBILITY_CNOT_CONTACT_GAUSSIAN_EXTRACTOR_TYPE_ORDER_BOUNDED_THEOREM_NOTE_2026-08-10.md",
 )
@@ -82,23 +82,23 @@ def hermitian_fixture(a: int, b: int, off_real: int, off_imag: int) -> Matrix:
     )
 
 
-def effect_weight(t: int, offset: int = 0) -> Fraction:
+def effect_weight(t: int, offset: int | Fraction = 0) -> Fraction:
     """Half-P_z grade for the lambda-offset extractor at C=t P_z."""
 
     return Fraction(t * t + 2 + offset, 2 * (t * t + 4 + 2 * offset))
 
 
-def pole_squared(offset: int) -> int:
+def pole_squared(offset: int | Fraction) -> Fraction:
     """The squared complex pole location z^2 for finite lambda=offset."""
 
     return -(4 + 2 * offset)
 
 
-def numerator_at_pole(offset: int) -> int:
+def numerator_at_pole(offset: int | Fraction) -> Fraction:
     return pole_squared(offset) + 2 + offset
 
 
-def indexed_threshold_probability(t: int, offset: int = 0) -> Fraction:
+def indexed_threshold_probability(t: int, offset: int | Fraction = 0) -> Fraction:
     """Uniform U thresholded at the condition-indexed target weight."""
 
     return effect_weight(t, offset)
@@ -130,13 +130,13 @@ def main() -> int:
     checks = Checks()
     note = NOTE_PATH.read_text(encoding="utf-8")
     axiom = AXIOM_PATH.read_text(encoding="utf-8")
-    decoder_parent = DECODER_PARENT_PATH.read_text(encoding="utf-8")
+    imaginary_trace_prior = IMAGINARY_TRACE_PRIOR_PATH.read_text(encoding="utf-8")
     compiler_parent = COMPILER_PARENT_PATH.read_text(encoding="utf-8")
     contact_parent = CONTACT_PARENT_PATH.read_text(encoding="utf-8")
     note_flat = " ".join(note.split())
     axiom_flat = " ".join(axiom.split())
 
-    print("external_scientific_inputs: the current axiom and three stacked decoder/compiler/contact boundaries are source-bound; no literature theorem, observed probability, fitted parameter, or external PR artifact is imported")
+    print("external_scientific_inputs: the current axiom and reviewed current-main imaginary-trace prior, Gaussian compiler, and CNOT boundary are source-bound; no closed-unmerged source, literature theorem, observed probability, fitted parameter, or external PR artifact is imported")
     print("package_local_integrity_reads: the proposed theorem note is checked for construction, boundary, trace status, and N1-N8 surfaces; the cache envelope binds every declared input")
     print("analytic_boundary: Gaussian factorization, entire continuation by dominated differentiation, and the identity-theorem contradiction are proved in the source; exact variances, weights, poles, and finite fixtures are executed here")
     print("negative_scope: only one fixed bounded content-only readout kernel on the displayed Gaussian translation family and one fixed half-projector effect are bounded; indexed decoders, tagged records, changed laws, finite center sets, and physical processes remain live")
@@ -154,21 +154,29 @@ def main() -> int:
         ),
     )
     checks.check(
-        "source-decoder-parent",
-        "Block 3 leaves physical decoder selection and effect descent independent",
-        "decoder registration and measure pushforward do not imply same-effect descent" in decoder_parent
-        and "derive a physical decoder and equivalence quotient from current dynamics" in decoder_parent,
+        "source-imaginary-trace-prior",
+        "the current-main overlap proves the Hermitian kernel but leaves every physical readout and Gaussian extension open",
+        "`H_2` is contained in `ker J`" in imaginary_trace_prior
+        and "physical readout, writing process, formation site/rate" in imaginary_trace_prior
+        and all(
+            phrase not in imaginary_trace_prior
+            for phrase in (
+                "U(A)=Phi(Im Tr A)",
+                "`P_r(z)` is entire",
+                "w_lambda(t)",
+            )
+        ),
     )
     checks.check(
         "source-compiler-parent",
-        "Block 4's uniformizer is explicitly conditional on fixed C and a supplied program",
-        'Here "content-only" is conditional on the fixed `C`' in compiler_parent
-        and "Encoding those parameters in a physical Record/apparatus" in compiler_parent
-        and "center and ordered effect menu" in compiler_parent,
+        "the current-main Gaussian uniformizer is explicitly conditional on fixed C and a supplied program",
+        "Define the centered real-trace statistic" in compiler_parent
+        and "The map `d_(C,M)` is a program-relative mathematical event label" in compiler_parent
+        and "would have to encode the program distinction in record content" in compiler_parent,
     )
     checks.check(
         "source-contact-parent",
-        "Block 5 accepts a local quantile comparator while leaving its threshold and registration open",
+        "the current-main CNOT theorem accepts a local quantile comparator while leaving its threshold and registration open",
         "The Gaussian law already provides an exact uniform scalar" in contact_parent
         and "derive the comparator, `q_C`, eigenbasis, restriction" in contact_parent
         and "That is the next exact target" in contact_parent,
@@ -264,6 +272,22 @@ def main() -> int:
             for offset in range(8)
         ),
     )
+    fractional_offsets = (
+        Fraction(1, 7),
+        Fraction(1, 2),
+        Fraction(3, 2),
+        Fraction(17, 3),
+    )
+    checks.check(
+        "noninteger-finite-offset-pole",
+        "the pole and nonzero residual identities also hold at exact noninteger finite lambda fixtures",
+        all(
+            pole_squared(offset) + 4 + 2 * offset == 0
+            and numerator_at_pole(offset) == -(offset + 2)
+            and numerator_at_pole(offset) != 0
+            for offset in fractional_offsets
+        ),
+    )
     checks.check(
         "entire-identity-contradiction-fixture",
         "the entire cross-multiplied identity evaluates to a nonzero lambda+2 residual at each denominator root",
@@ -298,6 +322,8 @@ def main() -> int:
         "tagged or condition-indexed decoder remains live",
         "No global content-decoder or Record no-go is claimed",
         "no canonical axiom is edited",
+        "supplies no scalar collection functional `I`, finite additivity, decoder map",
+        "mathematical enlargement of the deterministic content-decoder class",
     )
     checks.check(
         "boundary-source-surface",

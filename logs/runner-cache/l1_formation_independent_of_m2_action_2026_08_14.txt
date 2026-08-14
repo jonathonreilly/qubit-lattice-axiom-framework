@@ -1,0 +1,50 @@
+===== runner cache v1 =====
+runner: scripts/l1_formation_independent_of_m2_action_2026_08_14.py
+runner_sha256: 74093b82340352e137cd43d695e4f8dd7ae92bcd85dded3c032712d38e3f3ede
+input_fingerprint_sha256: 34e6528669a985d4519e50ce2a79de847e28b0aa7f12d093265e5f4e26805b37
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+L1 formation does not use an M2 action
+AUDIT_INPUT_PATHS:
+  docs/L1_FORMATION_INDEPENDENT_OF_M2_ACTION_BOUNDED_THEOREM_NOTE_2026-08-14.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+scope: supplied two-cube L1 member; content tables do not feed n
+PASS: audit-input-paths-exist
+PASS: audit-input-paths-unique-relative
+PASS: audit-timeout-declared
+PASS: lattice-quote-present
+PASS: record-form-quote-present
+PASS: hygiene-avoids-'G_N'
+PASS: hygiene-avoids-'1/r'
+PASS: hygiene-avoids-'1/r^2'
+PASS: hygiene-avoids-'Lattice-named'
+PASS: hygiene-avoids-'not a TOE'
+PASS: hygiene-avoids-'exhausted'
+PASS: hygiene-avoids-'only route'
+PASS: hygiene-avoids-'we adopt'
+PASS: hygiene-avoids-'Codex'
+PASS: hygiene-avoids-'L_phys'
+PASS: note-has-no-runner-cache-path
+PASS: note-has-no-citation-manifest
+PASS: patch-has-twelve-sites
+PASS: shared-face-is-x-equals-one
+PASS: first-wave-three-sites
+PASS: labels-differ
+PASS: occupancy-same
+PASS: tick2-formation-from-occupancy  (formed=[(0, 1, 1), (1, 0, 1), (1, 1, 0), (2, 0, 0)])
+PASS: recompute-without-labels-matches
+PASS: labels-do-not-enter-n
+per_element: two content tables
+per_site: first-wave locks
+per_mode: content versus occupancy
+per_block: formation support
+lattice_wide: checked and not executed
+TOTAL: PASS=25 FAIL=0
+
+----- stderr -----
+

@@ -1,6 +1,6 @@
 {
- "edge_count": 15686,
- "node_count": 5518,
+ "edge_count": 15690,
+ "node_count": 5519,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1449,6 +1449,10 @@
   "born_acceptance_harness_support_note_2026-07-28": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "born_compatibility_z3_adjacency_cycle984_note_2026-08-11": {
+   "deps_hash": "dc1635dd8fe4",
+   "out_degree": 4
   },
   "born_form_effect_menu_sitewise_forcing_and_product_menu_boundary_bounded_theorem_note_2026-07-17": {
    "deps_hash": "c8eee4235fc9",

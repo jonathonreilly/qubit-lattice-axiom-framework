@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
-"""Independent refutation checker for Cycle 984.
+"""Independent refutation checker for the narrowed Cycle-984 corollary.
 
 The checker parses but never imports or executes the primary.  It does not
 load Cycle 719 or any earlier cycle runner.  It independently reconstructs
 the finite Z3 Boolean instance, re-evaluates the five weighting formulas from
 the primary receipt's per-world sufficient statistics, recomputes the
-per-instance verdict, and actively rejects corruptions of decisive fields.
+per-instance nondiscrimination result, and actively rejects corruptions of
+decisive fields.  It does not treat that product-extension result as physical
+or Born compatibility.
 """
 
 from __future__ import annotations
@@ -15,16 +17,22 @@ import copy
 import json
 from collections import Counter
 from fractions import Fraction
-from hashlib import sha256
+from hashlib import sha1, sha256
 from itertools import combinations, permutations, product
 from math import gcd
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-PRIMARY_PATH = ROOT / "scripts/frontier_cycle984_born_compatibility_z3_adjacency_2026_08_11.py"
-PRIMARY_RECEIPT_PATH = ROOT / "outputs/born_compatibility_z3_adjacency_cycle984_receipt_2026_08_11.json"
-PRIMARY_CACHE_PATH = ROOT / "logs/runner-cache/frontier_cycle984_born_compatibility_z3_adjacency_2026_08_11.txt"
+BASE_ORIGIN_MAIN_COMMIT = "0d2cb078ebe27fbd502c2d1ce544b513e7423503"
+PRIMARY_REL = "scripts/frontier_cycle984_born_compatibility_z3_adjacency_2026_08_11.py"
+PRIMARY_RECEIPT_REL = "outputs/born_compatibility_z3_adjacency_cycle984_receipt_2026_08_11.json"
+PRIMARY_CACHE_REL = "logs/runner-cache/frontier_cycle984_born_compatibility_z3_adjacency_2026_08_11.txt"
+NOTE_REL = "docs/BORN_COMPATIBILITY_Z3_ADJACENCY_CYCLE984_NOTE_2026-08-11.md"
+PRIMARY_PATH = ROOT / PRIMARY_REL
+PRIMARY_RECEIPT_PATH = ROOT / PRIMARY_RECEIPT_REL
+PRIMARY_CACHE_PATH = ROOT / PRIMARY_CACHE_REL
+NOTE_PATH = ROOT / NOTE_REL
 RECEIPT_PATH = ROOT / "outputs/born_compatibility_z3_adjacency_cycle984_independent_check_receipt_2026_08_11.json"
 
 AUDIT_TIMEOUT_SEC = 300
@@ -33,16 +41,34 @@ AUDIT_INPUT_PATHS = (
     "scripts/frontier_cycle984_born_compatibility_z3_adjacency_2026_08_11.py",
     "outputs/born_compatibility_z3_adjacency_cycle984_receipt_2026_08_11.json",
     "logs/runner-cache/frontier_cycle984_born_compatibility_z3_adjacency_2026_08_11.txt",
+    "docs/BORN_COMPATIBILITY_Z3_ADJACENCY_CYCLE984_NOTE_2026-08-11.md",
+)
+BYTE_PINNED_INPUT_PATHS = (
+    "scripts/frontier_cycle984_born_compatibility_z3_adjacency_2026_08_11.py",
+    "outputs/born_compatibility_z3_adjacency_cycle984_receipt_2026_08_11.json",
+    "docs/BORN_COMPATIBILITY_Z3_ADJACENCY_CYCLE984_NOTE_2026-08-11.md",
 )
 
-EXPECTED_PRIMARY_SHA256 = "45a5bfd7ae9a67a5b4c600ab8226b166ece0e442683374c0bef17625cda5cebc"
-EXPECTED_PRIMARY_RECEIPT_SHA256 = "1632d90a128371aa69814d9eabb5a6cdcd0ea97ff220e25e26bfba796f5d32ed"
-EXPECTED_PRIMARY_CACHE_INPUT_FINGERPRINT = "b47fb7d88de539c8233152d8acee62b360b8aac23720d0621be787565054b63a"
+EXPECTED_INPUT_SHA256 = {
+    PRIMARY_REL: "5870e4d241e9fb30a601607706d4cfa72d85fa2a200d5d2a51de6c3957d69ef6",
+    PRIMARY_RECEIPT_REL: "425fca6212dcb885eb355d2a908a1700d0dba6ad31254f877065a9fc4da79416",
+    NOTE_REL: "cf5a30ffd0811120dedb0442062e98e4d07ef012630f3821fa287af8850b98d3",
+}
+EXPECTED_INPUT_BLOBS = {
+    PRIMARY_REL: "e33ea314cfc7cebb6fcefc78e44046ff0f32fce5",
+    PRIMARY_RECEIPT_REL: "816c598bf2baf0f7718b070b289f310613811e5d",
+    NOTE_REL: "c44ac28da91bddfbf9a38f61ef802ef0eff94a5b",
+}
+EXPECTED_PRIMARY_CACHE_INPUT_FINGERPRINT = "0508bab90e8d90e7f18431b9290c97639b302bb3816dd774ce2ca11266eb0c7e"
 
 EXPECTED_CRITERION = (
     "An exclusion is licensed only by a negative event weight, a zero total, "
     "a failed event marginal, missing required neighbour variation, failed "
     "proper-cubic closure, or a concrete program/configuration mismatch."
+)
+EXPECTED_CRITERION_ADAPTATION = (
+    "logical criterion unchanged; declared program domain narrowed from the "
+    "Cycle-979 155-member semantic quotient to its 23 target-local members"
 )
 NAMES = ("+x", "-x", "+y", "-y", "+z", "-z")
 COORDINATES = {
@@ -63,10 +89,70 @@ CLASS_NAMES = (
     "TOF_PERPENDICULAR_CONTROLS",
     "TOF_OPPOSITE_CONTROLS",
 )
+FORBIDDEN_IMPORT_FRAGMENTS = (
+    "frontier_cycle719_two_rail_recurrent_controller_core",
+    "frontier_cycle984_born_compatibility_z3_adjacency_2026_08_11",
+    "cycle974",
+    "cycle979",
+)
 
 
 def file_sha256(path: Path) -> str:
     return sha256(path.read_bytes()).hexdigest()
+
+
+def git_blob(payload: bytes) -> str:
+    return sha1(f"blob {len(payload)}\0".encode() + payload).hexdigest()
+
+
+def input_pins() -> dict:
+    sha_rows = {}
+    blob_rows = {}
+    for rel in BYTE_PINNED_INPUT_PATHS:
+        payload = (ROOT / rel).read_bytes()
+        sha_rows[rel] = sha256(payload).hexdigest()
+        blob_rows[rel] = git_blob(payload)
+    return {
+        "sha_rows": sha_rows,
+        "blob_rows": blob_rows,
+        "sha_pins_match": sha_rows == EXPECTED_INPUT_SHA256,
+        "blob_pins_match": blob_rows == EXPECTED_INPUT_BLOBS,
+    }
+
+
+def validate_note(text: str) -> bool:
+    normalized = " ".join(text.split())
+    required = (
+        "Claim type: `bounded_theorem`",
+        "negative_assertion_classes: [bounded_with_named_walls]",
+        "conditional finite-weight nondiscrimination",
+        "not physical or Born compatibility",
+        "explicit non-axiom condition `P_instance`",
+        "Current Record boundary",
+        "Finite additivity, scalar `I`, and `I(empty)=0` are not used",
+        "No-Go Discipline: N1-N8",
+        "N1",
+        "N2",
+        "N3",
+        "N4",
+        "N5",
+        "N6",
+        "N7",
+        "N8",
+        "CLASS_COEXISTENCE_BORN_REQUIREMENT_CYCLE979_BOUNDED_THEOREM_NOTE_2026-08-10.md",
+        "RECURRENT_MATTER_HISTORY_CONTROLLER_CYCLE719_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+        "MINIMAL_AXIOMS_2026-06-29.md",
+        "independent audit lane only",
+    )
+    forbidden = (
+        "PASS WITH BOUNDED CLAIMS",
+        "review_loop_disposition: pass",
+        "target_audit_status: audited_clean",
+        "effective_status: retained",
+    )
+    return all(needle in normalized for needle in required) and not any(
+        needle in normalized for needle in forbidden
+    )
 
 
 def canonical_digest(value: object) -> str:
@@ -88,6 +174,21 @@ def literal_assignments(path: Path) -> dict:
             except (ValueError, TypeError):
                 pass
     return result
+
+
+def forbidden_imports(path: Path) -> tuple[str, ...]:
+    tree = ast.parse(path.read_text(encoding="utf-8"), filename=str(path))
+    found = []
+    for node in ast.walk(tree):
+        names = []
+        if isinstance(node, ast.Import):
+            names = [alias.name for alias in node.names]
+        elif isinstance(node, ast.ImportFrom):
+            names = [node.module or ""]
+        for name in names:
+            if any(fragment in name.lower() for fragment in FORBIDDEN_IMPORT_FRAGMENTS):
+                found.append(name)
+    return tuple(sorted(set(found)))
 
 
 def independent_programs() -> tuple:
@@ -394,10 +495,14 @@ def independent_candidate_results(weighting: dict, orbits: dict, p_zero: Fractio
 def independent_transfer(results: dict) -> dict:
     excluded = [name for name in WEIGHT_NAMES if results["candidates"][name]["verdict"] == "EXCLUDED"]
     if not excluded:
-        return {"verdict": "TRANSFERS", "first_weighting_lost": None, "witness": None}
+        return {
+            "verdict": "DECLARED_TEST_TRANSFERS",
+            "first_weighting_lost": None,
+            "witness": None,
+        }
     first = excluded[0]
     return {
-        "verdict": "FAILS_TO_TRANSFER",
+        "verdict": "DECLARED_TEST_FAILS_TO_TRANSFER",
         "first_weighting_lost": first,
         "witness": results["candidates"][first]["first_exclusion_witness"],
     }
@@ -440,7 +545,12 @@ def validate_receipt(receipt: dict, cache: dict) -> tuple[bool, dict]:
     expected_robustness = independent_robustness()
     comparisons = {
         "criterion": receipt.get("criterion_verbatim") == EXPECTED_CRITERION,
-        "no_adaptation": receipt.get("criterion_adaptation", "").startswith("none;"),
+        "domain_narrowing_declared": (
+            receipt.get("criterion_adaptation") == EXPECTED_CRITERION_ADAPTATION
+        ),
+        "review_intake_base": (
+            receipt.get("base_origin_main_commit") == BASE_ORIGIN_MAIN_COMMIT
+        ),
         "no_verdict_imports": receipt.get("verdict_imports_used") == [],
         "z3_instance": receipt.get("z3_instance") == expected_z3,
         "orbits": receipt.get("orbits") == expected_orbits,
@@ -448,17 +558,37 @@ def validate_receipt(receipt: dict, cache: dict) -> tuple[bool, dict]:
         "requirement": receipt.get("requirement") == {
             "selected": "PER_INSTANCE",
             "injected_coexistence_selected": "JOINT",
+            "premise": "P_instance",
+            "premise_status": "explicit_non_axiom_condition",
+            "premise_text": (
+                "one declared descriptor is treated as one complete substrate "
+                "program instance; this is an explicit non-axiom condition"
+            ),
         },
+        "current_record_boundary": bool(
+            receipt.get("controls", {}).get("current_axiom_memo", {}).get("pass")
+            and receipt.get("controls", {}).get("record_properties_used") == []
+        ),
         "per_instance": receipt.get("per_instance_test") == expected_results,
         "transfer": receipt.get("transfer") == expected_transfer,
         "robustness": receipt.get("input_robustness") == expected_robustness,
-        "cache_runner_pin": cache["header"].get("runner_sha256") == EXPECTED_PRIMARY_SHA256,
+        "cache_runner_pin": (
+            cache["header"].get("runner_sha256")
+            == EXPECTED_INPUT_SHA256[PRIMARY_REL]
+        ),
         "cache_input_pin": cache["header"].get("input_fingerprint_sha256") == EXPECTED_PRIMARY_CACHE_INPUT_FINGERPRINT,
         "cache_status": cache["header"].get("exit_code") == "0" and cache["header"].get("status") == "ok",
         "cache_semantics": (
             "SURVIVORS/5: 5/5" in cache["stdout"]
-            and "TRANSFER_VERDICT: TRANSFERS; weighting=none; witness=none" in cache["stdout"]
+            and "DECLARED_TEST_TRANSFER_VERDICT: DECLARED_TEST_TRANSFERS; weighting=none; witness=none" in cache["stdout"]
             and "NONUNIFORM_P=1/4: CNOT: TV=1/2" in cache["stdout"]
+            and "P_INSTANCE_STATUS: explicit_non_axiom_condition" in cache["stdout"]
+            and "CURRENT_RECORD_BOUNDARY: exact current memo pinned" in cache["stdout"]
+            and "per_element: checked and executed" in cache["stdout"]
+            and "per_site: checked and executed" in cache["stdout"]
+            and "per_mode: checked and not executed" in cache["stdout"]
+            and "per_block: checked and executed" in cache["stdout"]
+            and "lattice_wide: checked and not executed" in cache["stdout"]
             and cache["stdout"].rstrip().endswith("TOTAL: PASS=5 FAIL=0")
         ),
     }
@@ -498,7 +628,7 @@ def active_corruption_probes(receipt: dict, cache: dict) -> dict:
     probes["exclusion_without_witness"] = rejected(mutated)
 
     mutated = copy.deepcopy(receipt)
-    mutated["transfer"]["verdict"] = "FAILS_TO_TRANSFER"
+    mutated["transfer"]["verdict"] = "DECLARED_TEST_FAILS_TO_TRANSFER"
     probes["transfer_headline"] = rejected(mutated)
 
     mutated = copy.deepcopy(receipt)
@@ -518,6 +648,9 @@ def active_corruption_probes(receipt: dict, cache: dict) -> dict:
 def main() -> int:
     source_sha = file_sha256(PRIMARY_PATH)
     receipt_sha = file_sha256(PRIMARY_RECEIPT_PATH)
+    pins = input_pins()
+    note_contract = validate_note(NOTE_PATH.read_text(encoding="utf-8"))
+    forbidden = forbidden_imports(Path(__file__))
     assignments = literal_assignments(PRIMARY_PATH)
     primary_receipt = json.loads(PRIMARY_RECEIPT_PATH.read_text(encoding="utf-8"))
     primary_cache = parse_cache(PRIMARY_CACHE_PATH)
@@ -525,30 +658,50 @@ def main() -> int:
     validated, comparisons = validate_receipt(primary_receipt, primary_cache)
     corruptions = active_corruption_probes(primary_receipt, primary_cache)
     ast_and_pins = bool(
-        source_sha == EXPECTED_PRIMARY_SHA256
-        and receipt_sha == EXPECTED_PRIMARY_RECEIPT_SHA256
+        source_sha == EXPECTED_INPUT_SHA256[PRIMARY_REL]
+        and receipt_sha == EXPECTED_INPUT_SHA256[PRIMARY_RECEIPT_REL]
+        and pins["sha_pins_match"]
+        and pins["blob_pins_match"]
         and assignments.get("P_INSTANCE_CRITERION_VERBATIM") == EXPECTED_CRITERION
+        and assignments.get("CRITERION_ADAPTATION") == EXPECTED_CRITERION_ADAPTATION
+        and assignments.get("BASE_ORIGIN_MAIN_COMMIT") == BASE_ORIGIN_MAIN_COMMIT
         and tuple(assignments.get("CANDIDATE_NAMES", ())) == WEIGHT_NAMES
         and assignments.get("AUDIT_INPUT_PATHS") == (
-            "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+            "docs/MINIMAL_AXIOMS_2026-06-29.md",
         )
+        and forbidden == ()
     )
     checks = {
         "R0_PRIMARY_AST_AND_PINS": ast_and_pins,
         "R1_INDEPENDENT_Z3_AND_ORBITS": all(comparisons[key] for key in ("z3_instance", "orbits")),
         "R2_INDEPENDENT_WEIGHTINGS": comparisons["weightings"],
-        "R3_PER_INSTANCE_AND_TRANSFER": all(comparisons[key] for key in ("criterion", "no_adaptation", "no_verdict_imports", "requirement", "per_instance", "transfer")),
+        "R3_PER_INSTANCE_AND_TRANSFER": all(
+            comparisons[key]
+            for key in (
+                "criterion",
+                "domain_narrowing_declared",
+                "review_intake_base",
+                "no_verdict_imports",
+                "requirement",
+                "per_instance",
+                "transfer",
+                "current_record_boundary",
+            )
+        ),
         "R4_NONUNIFORM_INPUT": comparisons["robustness"],
         "R5_RECEIPT_CACHE_BINDING": validated and all(comparisons[key] for key in ("cache_runner_pin", "cache_input_pin", "cache_status", "cache_semantics")),
         "R6_ACTIVE_CORRUPTION_PROBES": all(corruptions.values()),
-        "R7_CONTROLS": len(AUDIT_INPUT_PATHS) == 3,
+        "R7_CONTROLS": len(AUDIT_INPUT_PATHS) == 4 and note_contract,
     }
     receipt = {
         "claim_id": "cycle984_born_compatibility_z3_adjacency_independent_check",
         "primary_imported_or_executed": False,
         "cycle719_imported_or_executed": False,
+        "forbidden_imports": list(forbidden),
         "primary_source_sha256": source_sha,
         "primary_receipt_sha256": receipt_sha,
+        "input_pins": pins,
+        "note_contract_valid": note_contract,
         "comparisons": comparisons,
         "active_corruption_probes": corruptions,
         "checks": checks,
@@ -560,7 +713,7 @@ def main() -> int:
     print(f"INDEPENDENT_Z3: sites=7 edges=6 programs=23 witnesses=21 rotations=24")
     print("INDEPENDENT_WEIGHTINGS: names=5 events=92260 formulas_recomputed_from_world_statistics=true")
     print(f"INDEPENDENT_PER_INSTANCE: survivors={len(primary_receipt['per_instance_test']['survivors'])}/5")
-    print(f"INDEPENDENT_TRANSFER: {primary_receipt['transfer']['verdict']}")
+    print(f"INDEPENDENT_DECLARED_TEST_TRANSFER: {primary_receipt['transfer']['verdict']}")
     print("INDEPENDENT_NONUNIFORM_P=1/4: TV=1/2 for CNOT, perpendicular TOF, opposite TOF")
     print(f"ACTIVE_CORRUPTIONS: rejected={sum(corruptions.values())}/{len(corruptions)}")
     for name, passed in checks.items():

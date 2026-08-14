@@ -1,16 +1,16 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle984_born_compatibility_z3_adjacency_independent_check_2026_08_11.py
-runner_sha256: 4a12193583a61dd4ca631aec7c5029eaadb93545ff16bed13664b3ee4e612205
-input_fingerprint_sha256: d112bc9f46aeca0ca5e49aa41109224179c05fd8d0e183996a12a437b1b6df62
+runner_sha256: 1d73f458ab01821b240a683e71be25d52f81590466d7cb7a69d3df1e4e9457e0
+input_fingerprint_sha256: ef863f85412445aecf24c1d0c6453f7d216767b02ff059ddcb2f5ee7e65e1149
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.26
 status: ok
 ----- stdout -----
 INDEPENDENT_Z3: sites=7 edges=6 programs=23 witnesses=21 rotations=24
 INDEPENDENT_WEIGHTINGS: names=5 events=92260 formulas_recomputed_from_world_statistics=true
 INDEPENDENT_PER_INSTANCE: survivors=5/5
-INDEPENDENT_TRANSFER: TRANSFERS
+INDEPENDENT_DECLARED_TEST_TRANSFER: DECLARED_TEST_TRANSFERS
 INDEPENDENT_NONUNIFORM_P=1/4: TV=1/2 for CNOT, perpendicular TOF, opposite TOF
 ACTIVE_CORRUPTIONS: rejected=10/10
 R0_PRIMARY_AST_AND_PINS PASS

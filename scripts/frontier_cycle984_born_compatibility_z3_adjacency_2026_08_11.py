@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
-"""Cycle 984: Born compatibility on the finite true-Z3 star instance.
+"""Cycle 984: conditional finite-weight nondiscrimination on a true-Z3 star.
 
 This runner independently reconstructs the target-local seven-site Z3 star,
 its 23 word-length-at-most-one Boolean programs, and the five finite event
-weightings.  It does not import a prior verdict.  The per-instance criterion
-is evaluated outcome-neutrally: every exclusion must carry its first exact
-witness, and an all-survivor result receives no privileged integrity path.
+weightings.  It does not import a prior verdict.  The explicit non-axiom
+``P_instance`` product-extension criterion is evaluated outcome-neutrally:
+every exclusion must carry its first exact witness, and an all-survivor result
+receives no privileged integrity path.  Passing that criterion is a finite
+nondiscrimination result, not physical or Born compatibility.
 """
 
 from __future__ import annotations
@@ -19,7 +21,7 @@ import tarfile
 import tempfile
 from collections import Counter
 from fractions import Fraction
-from hashlib import sha256
+from hashlib import sha1, sha256
 from itertools import combinations, permutations, product
 from math import gcd
 from pathlib import Path
@@ -30,9 +32,18 @@ RECEIPT_PATH = ROOT / "outputs/born_compatibility_z3_adjacency_cycle984_receipt_
 
 AUDIT_TIMEOUT_SEC = 1400
 STDOUT_LIMIT_BYTES = 6000
+BASE_ORIGIN_MAIN_COMMIT = "0d2cb078ebe27fbd502c2d1ce544b513e7423503"
 AUDIT_INPUT_PATHS = (
-    "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
 )
+EXPECTED_INPUT_SHA256 = {
+    "docs/MINIMAL_AXIOMS_2026-06-29.md":
+        "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+}
+EXPECTED_INPUT_BLOBS = {
+    "docs/MINIMAL_AXIOMS_2026-06-29.md":
+        "bc23300becfe4e4db57153c0e94cfcdf2338da71",
+}
 
 PINNED_CYCLE719_COMMIT = "39c74017b870c27c804e3992f2a11e90336476b2"
 PINNED_CYCLE719_CORE = "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py"
@@ -43,6 +54,14 @@ P_INSTANCE_CRITERION_VERBATIM = (
     "An exclusion is licensed only by a negative event weight, a zero total, "
     "a failed event marginal, missing required neighbour variation, failed "
     "proper-cubic closure, or a concrete program/configuration mismatch."
+)
+P_INSTANCE_PREMISE = (
+    "one declared descriptor is treated as one complete substrate program "
+    "instance; this is an explicit non-axiom condition"
+)
+CRITERION_ADAPTATION = (
+    "logical criterion unchanged; declared program domain narrowed from the "
+    "Cycle-979 155-member semantic quotient to its 23 target-local members"
 )
 
 CENTER_NAME = "C"
@@ -99,6 +118,51 @@ def lcm(left: int, right: int) -> int:
 
 def file_sha256(path: Path) -> str:
     return sha256(path.read_bytes()).hexdigest()
+
+
+def git_blob(payload: bytes) -> str:
+    return sha1(f"blob {len(payload)}\0".encode() + payload).hexdigest()
+
+
+def current_axiom_controls() -> dict:
+    path = ROOT / "docs/MINIMAL_AXIOMS_2026-06-29.md"
+    payload = path.read_bytes()
+    text = payload.decode("utf-8")
+    normalized = " ".join(text.split())
+    record_needles = (
+        "### Record / Fixed Reality",
+        "Records form.",
+        "a record locks exactly one admissible local possibility",
+        "A site never carries more than one record",
+        "records are permanent",
+        "Only records are readable",
+        "A readout value is determined by record content alone",
+        "A site with no record cannot be read",
+    )
+    exact_bytes = {
+        "sha256": sha256(payload).hexdigest(),
+        "blob": git_blob(payload),
+    }
+    return {
+        "exact_bytes": exact_bytes,
+        "expected_sha256": EXPECTED_INPUT_SHA256[str(path.relative_to(ROOT))],
+        "expected_blob": EXPECTED_INPUT_BLOBS[str(path.relative_to(ROOT))],
+        "record_clause_current": all(needle in normalized for needle in record_needles),
+        "removed_record_structures_absent_from_axiom": all(
+            needle in normalized
+            for needle in (
+                "Finite additivity, a named scalar collection functional `I`, and an assigned value `I(empty)=0` are not Record axiom content.",
+                "Born weights",
+            )
+        ),
+        "record_properties_used": [],
+        "pass": bool(
+            exact_bytes["sha256"] == EXPECTED_INPUT_SHA256[str(path.relative_to(ROOT))]
+            and exact_bytes["blob"] == EXPECTED_INPUT_BLOBS[str(path.relative_to(ROOT))]
+            and all(needle in normalized for needle in record_needles)
+            and "Finite additivity, a named scalar collection functional `I`, and an assigned value `I(empty)=0` are not Record axiom content." in normalized
+        ),
+    }
 
 
 def load_pinned_cycle719_core():
@@ -711,11 +775,15 @@ def transfer_verdict(candidate_results: dict) -> dict:
     if excluded:
         first = excluded[0]
         return {
-            "verdict": "FAILS_TO_TRANSFER",
+            "verdict": "DECLARED_TEST_FAILS_TO_TRANSFER",
             "first_weighting_lost": first,
             "witness": candidate_results["candidates"][first]["first_exclusion_witness"],
         }
-    return {"verdict": "TRANSFERS", "first_weighting_lost": None, "witness": None}
+    return {
+        "verdict": "DECLARED_TEST_TRANSFERS",
+        "first_weighting_lost": None,
+        "witness": None,
+    }
 
 
 def robustness_family(instance: dict, census: dict) -> dict:
@@ -766,7 +834,7 @@ def mutation_controls(summary: dict) -> dict:
     probes["survivor_count"] = not bookkeeping_validator(corrupted)
 
     corrupted = json.loads(json.dumps(summary))
-    corrupted["transfer"]["verdict"] = "FAILS_TO_TRANSFER"
+    corrupted["transfer"]["verdict"] = "DECLARED_TEST_FAILS_TO_TRANSFER"
     probes["transfer_headline"] = not bookkeeping_validator(corrupted)
 
     synthetic = json.loads(json.dumps(summary))
@@ -793,6 +861,11 @@ def provenance_controls() -> dict:
         cwd=ROOT,
         check=False,
     ).returncode == 0
+    base_ancestry = subprocess.run(
+        ["git", "merge-base", "--is-ancestor", BASE_ORIGIN_MAIN_COMMIT, "HEAD"],
+        cwd=ROOT,
+        check=False,
+    ).returncode == 0
     blocked_loaded = sorted(
         name for name in sys.modules
         if any(fragment in name.lower() for fragment in BLOCKED_VERDICT_MODULE_FRAGMENTS)
@@ -804,11 +877,13 @@ def provenance_controls() -> dict:
         "pinned_core_blob": blob,
         "expected_pinned_core_blob": PINNED_CYCLE719_CORE_BLOB,
         "pinned_commit_is_ancestor": ancestry,
+        "review_intake_base_is_ancestor": base_ancestry,
         "prior_verdict_modules_loaded": blocked_loaded,
         "pass": bool(
             source_sha == PINNED_CYCLE719_CORE_SHA256
             and blob == PINNED_CYCLE719_CORE_BLOB
             and ancestry
+            and base_ancestry
             and not blocked_loaded
         ),
     }
@@ -835,6 +910,7 @@ def main() -> int:
     summary = {"candidate_results": candidate_results, "transfer": transfer}
     mutations = mutation_controls(summary)
     provenance = provenance_controls()
+    axiom_controls = current_axiom_controls()
 
     site_map = {name: coordinates for name, coordinates in instance["sites"]}
     program_rows = [
@@ -850,9 +926,10 @@ def main() -> int:
         "claim_id": "cycle984_born_compatibility_z3_adjacency",
         "claim_type": "bounded_theorem",
         "audit_status_authority": "independent audit lane only",
+        "base_origin_main_commit": BASE_ORIGIN_MAIN_COMMIT,
         "verdict_imports_used": [],
         "criterion_verbatim": P_INSTANCE_CRITERION_VERBATIM,
-        "criterion_adaptation": "none; only the declared program domain is the 23 target-local true-Z3 descriptors",
+        "criterion_adaptation": CRITERION_ADAPTATION,
         "z3_instance": {
             "sites": site_map,
             "edges": [list(edge) for edge in instance["edges"]],
@@ -869,6 +946,9 @@ def main() -> int:
         "requirement": {
             "selected": requirement,
             "injected_coexistence_selected": injected_requirement,
+            "premise": "P_instance",
+            "premise_status": "explicit_non_axiom_condition",
+            "premise_text": P_INSTANCE_PREMISE,
         },
         "per_instance_test": candidate_results,
         "transfer": transfer,
@@ -878,6 +958,8 @@ def main() -> int:
             "short_event_count": len(short_a["events"]),
             "mutation_probes": mutations,
             "provenance": provenance,
+            "current_axiom_memo": axiom_controls,
+            "record_properties_used": [],
         },
     }
 
@@ -910,13 +992,15 @@ def main() -> int:
         and set(candidates["candidates"]) == set(CANDIDATE_NAMES)
         and all(mutations.values())
         and provenance["pass"]
+        and axiom_controls["pass"]
+        and axiom_controls["record_properties_used"] == []
         and short_a == short_b
     )
 
     receipt["checks"] = {
         "A_REBUILD_ON_Z3": a_pass,
         "B_PER_INSTANCE_TEST": b_pass,
-        "C_TRANSFER_VERDICT": c_pass,
+        "C_DECLARED_TEST_TRANSFER_VERDICT": c_pass,
         "D_INPUT_ROBUSTNESS": d_pass,
         "E_CONTROLS": e_pass,
     }
@@ -946,11 +1030,12 @@ def main() -> int:
     )
     print(f"WEIGHTINGS(5): {weights_text}")
     print(f"CRITERION_VERBATIM: {P_INSTANCE_CRITERION_VERBATIM}")
-    print("CRITERION_ADAPTATION: none; domain declaration is the 23 target-local true-Z3 programs")
+    print(f"CRITERION_ADAPTATION: {CRITERION_ADAPTATION}")
+    print(f"P_INSTANCE_STATUS: explicit_non_axiom_condition; {P_INSTANCE_PREMISE}")
     print(f"PER_INSTANCE_RESULTS: {verdict_text}")
     print(f"SURVIVORS/5: {len(candidate_results['survivors'])}/5")
     print(
-        f"TRANSFER_VERDICT: {transfer['verdict']}; "
+        f"DECLARED_TEST_TRANSFER_VERDICT: {transfer['verdict']}; "
         f"weighting={transfer['first_weighting_lost'] or 'none'}; witness={transfer['witness'] or 'none'}"
     )
     print(
@@ -966,6 +1051,11 @@ def main() -> int:
     print("per_mode: checked and not executed -- no Fourier or continuous M_2(C) mode claim is made")
     print("per_block: checked and executed -- all 23 programs, 2944 truth rows, three orbits, and five candidate blocks were checked")
     print("lattice_wide: checked and not executed -- the theorem is one finite radius-one star, not an infinite-lattice realization")
+    print(
+        "CURRENT_RECORD_BOUNDARY: exact current memo pinned; "
+        "finite_additivity=false; scalar_I=false; I_empty_zero=false; "
+        f"record_properties_used={axiom_controls['record_properties_used']}"
+    )
     for name, passed in receipt["checks"].items():
         print(f"{name} {'PASS' if passed else 'FAIL'}")
     pass_count = sum(receipt["checks"].values())

@@ -1,15 +1,28 @@
 {
   "audit_status_authority": "independent audit lane only",
+  "base_origin_main_commit": "0d2cb078ebe27fbd502c2d1ce544b513e7423503",
   "checks": {
     "A_REBUILD_ON_Z3": true,
     "B_PER_INSTANCE_TEST": true,
-    "C_TRANSFER_VERDICT": true,
+    "C_DECLARED_TEST_TRANSFER_VERDICT": true,
     "D_INPUT_ROBUSTNESS": true,
     "E_CONTROLS": true
   },
   "claim_id": "cycle984_born_compatibility_z3_adjacency",
   "claim_type": "bounded_theorem",
   "controls": {
+    "current_axiom_memo": {
+      "exact_bytes": {
+        "blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+      },
+      "expected_blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71",
+      "expected_sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "pass": true,
+      "record_clause_current": true,
+      "record_properties_used": [],
+      "removed_record_structures_absent_from_axiom": true
+    },
     "mutation_probes": {
       "coherent_one_excluded_accepted": true,
       "exclusion_without_witness": true,
@@ -23,12 +36,14 @@
       "pinned_commit_is_ancestor": true,
       "pinned_core_blob": "c123b8d681c3d76fce08ef13d7673622deac64ad",
       "pinned_core_sha256": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
-      "prior_verdict_modules_loaded": []
+      "prior_verdict_modules_loaded": [],
+      "review_intake_base_is_ancestor": true
     },
+    "record_properties_used": [],
     "short_event_count": 25705,
     "short_replay_deterministic": true
   },
-  "criterion_adaptation": "none; only the declared program domain is the 23 target-local true-Z3 descriptors",
+  "criterion_adaptation": "logical criterion unchanged; declared program domain narrowed from the Cycle-979 155-member semantic quotient to its 23 target-local members",
   "criterion_verbatim": "An exclusion is licensed only by a negative event weight, a zero total, a failed event marginal, missing required neighbour variation, failed proper-cubic closure, or a concrete program/configuration mismatch.",
   "input_robustness": {
     "0": {
@@ -338,14 +353,17 @@
       "p_zero": "1/4"
     }
   },
-  "receipt_sha256_without_self": "3be6cf637ce78c8b67ded4d1591faa6095cd9eafa2d0ea7bc130be06926f58d8",
+  "receipt_sha256_without_self": "b6d8f3a0d0f05627d4c0806a3aa6d51daa58f650577225054e3b92263e372919",
   "requirement": {
     "injected_coexistence_selected": "JOINT",
+    "premise": "P_instance",
+    "premise_status": "explicit_non_axiom_condition",
+    "premise_text": "one declared descriptor is treated as one complete substrate program instance; this is an explicit non-axiom condition",
     "selected": "PER_INSTANCE"
   },
   "transfer": {
     "first_weighting_lost": null,
-    "verdict": "TRANSFERS",
+    "verdict": "DECLARED_TEST_TRANSFERS",
     "witness": null
   },
   "verdict_imports_used": [],

@@ -28,19 +28,37 @@
     "cache_semantics": true,
     "cache_status": true,
     "criterion": true,
-    "no_adaptation": true,
+    "current_record_boundary": true,
+    "domain_narrowing_declared": true,
     "no_verdict_imports": true,
     "orbits": true,
     "per_instance": true,
     "requirement": true,
+    "review_intake_base": true,
     "robustness": true,
     "transfer": true,
     "weightings": true,
     "z3_instance": true
   },
   "cycle719_imported_or_executed": false,
+  "forbidden_imports": [],
+  "input_pins": {
+    "blob_pins_match": true,
+    "blob_rows": {
+      "docs/BORN_COMPATIBILITY_Z3_ADJACENCY_CYCLE984_NOTE_2026-08-11.md": "c44ac28da91bddfbf9a38f61ef802ef0eff94a5b",
+      "outputs/born_compatibility_z3_adjacency_cycle984_receipt_2026_08_11.json": "816c598bf2baf0f7718b070b289f310613811e5d",
+      "scripts/frontier_cycle984_born_compatibility_z3_adjacency_2026_08_11.py": "e33ea314cfc7cebb6fcefc78e44046ff0f32fce5"
+    },
+    "sha_pins_match": true,
+    "sha_rows": {
+      "docs/BORN_COMPATIBILITY_Z3_ADJACENCY_CYCLE984_NOTE_2026-08-11.md": "cf5a30ffd0811120dedb0442062e98e4d07ef012630f3821fa287af8850b98d3",
+      "outputs/born_compatibility_z3_adjacency_cycle984_receipt_2026_08_11.json": "425fca6212dcb885eb355d2a908a1700d0dba6ad31254f877065a9fc4da79416",
+      "scripts/frontier_cycle984_born_compatibility_z3_adjacency_2026_08_11.py": "5870e4d241e9fb30a601607706d4cfa72d85fa2a200d5d2a51de6c3957d69ef6"
+    }
+  },
+  "note_contract_valid": true,
   "primary_imported_or_executed": false,
-  "primary_receipt_sha256": "1632d90a128371aa69814d9eabb5a6cdcd0ea97ff220e25e26bfba796f5d32ed",
-  "primary_source_sha256": "45a5bfd7ae9a67a5b4c600ab8226b166ece0e442683374c0bef17625cda5cebc",
-  "receipt_sha256_without_self": "adef8bb49e8903e3535eea73c4b2d74ff90599e7633446aa87aa4a7cfbe57d0b"
+  "primary_receipt_sha256": "425fca6212dcb885eb355d2a908a1700d0dba6ad31254f877065a9fc4da79416",
+  "primary_source_sha256": "5870e4d241e9fb30a601607706d4cfa72d85fa2a200d5d2a51de6c3957d69ef6",
+  "receipt_sha256_without_self": "1029a86a033ce99431be22a026680e5cfb384db33625fd1b35b90e3ea30b7fbb"
 }

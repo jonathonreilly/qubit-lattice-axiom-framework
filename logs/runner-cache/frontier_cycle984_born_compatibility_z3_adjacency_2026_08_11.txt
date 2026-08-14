@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle984_born_compatibility_z3_adjacency_2026_08_11.py
-runner_sha256: 45a5bfd7ae9a67a5b4c600ab8226b166ece0e442683374c0bef17625cda5cebc
-input_fingerprint_sha256: b47fb7d88de539c8233152d8acee62b360b8aac23720d0621be787565054b63a
+runner_sha256: 5870e4d241e9fb30a601607706d4cfa72d85fa2a200d5d2a51de6c3957d69ef6
+input_fingerprint_sha256: 0508bab90e8d90e7f18431b9290c97639b302bb3816dd774ce2ca11266eb0c7e
 timeout_sec: 1400
 exit_code: 0
-elapsed_sec: 48.24
+elapsed_sec: 71.69
 status: ok
 ----- stdout -----
 Z3_STAR_SITES(7): C=(0, 0, 0); +x=(1, 0, 0); -x=(-1, 0, 0); +y=(0, 1, 0); -y=(0, -1, 0); +z=(0, 0, 1); -z=(0, 0, -1)
@@ -13,19 +13,21 @@ Z3_PROGRAMS(23): I; X(C); CNOT(+x->C); CNOT(-x->C); CNOT(+y->C); CNOT(-y->C); CN
 WEIGHTING_REBUILD: events=92260; worlds=748; formed=164; tags={'B0': 47872, 'B1': 44224, 'F': 164}
 WEIGHTINGS(5): M1_COUNTING: w(e)=1; total=92260; zero=0; digest=09d378b03591 | M2_PER_WORLD_UNIFORM: world score a(w)=1; uniform within each event-bearing world; total=802813440; zero=0; digest=a48f74b6d20a | M3_OCCUPATION_WEIGHTED: a(w)=clean-dwell occupation count; uniform within world; total=897595870080; zero=73088; digest=5779f8decc9e | M4_FORMATION_LIFETIME: a(w)=boundaries-formation_moment(w)+1 if formed, else 0; uniform within world; total=29530480287360; zero=73088; digest=9ad27d71be67 | M5_FORMATION_MOMENT: a(w)=formation_moment(w) if formed, else 0; uniform within world; total=2192349344640; zero=76184; digest=ed90e224161c
 CRITERION_VERBATIM: An exclusion is licensed only by a negative event weight, a zero total, a failed event marginal, missing required neighbour variation, failed proper-cubic closure, or a concrete program/configuration mismatch.
-CRITERION_ADAPTATION: none; domain declaration is the 23 target-local true-Z3 programs
+CRITERION_ADAPTATION: logical criterion unchanged; declared program domain narrowed from the Cycle-979 155-member semantic quotient to its 23 target-local members
+P_INSTANCE_STATUS: explicit_non_axiom_condition; one declared descriptor is treated as one complete substrate program instance; this is an explicit non-axiom condition
 PER_INSTANCE_RESULTS: M1_COUNTING=SURVIVES; witness=none | M2_PER_WORLD_UNIFORM=SURVIVES; witness=none | M3_OCCUPATION_WEIGHTED=SURVIVES; witness=none | M4_FORMATION_LIFETIME=SURVIVES; witness=none | M5_FORMATION_MOMENT=SURVIVES; witness=none
 SURVIVORS/5: 5/5
-TRANSFER_VERDICT: TRANSFERS; weighting=none; witness=none
+DECLARED_TEST_TRANSFER_VERDICT: DECLARED_TEST_TRANSFERS; weighting=none; witness=none
 NONUNIFORM_P=1/4: CNOT: TV=1/2; TOF_PERPENDICULAR_CONTROLS: TV=1/2; TOF_OPPOSITE_CONTROLS: TV=1/2; survivors=5/5
 per_element: checked and executed -- all five finite event laws and every event-bearing world were rebuilt
 per_site: checked and executed -- centre plus all six true-Z3 nearest neighbours were enumerated
 per_mode: checked and not executed -- no Fourier or continuous M_2(C) mode claim is made
 per_block: checked and executed -- all 23 programs, 2944 truth rows, three orbits, and five candidate blocks were checked
 lattice_wide: checked and not executed -- the theorem is one finite radius-one star, not an infinite-lattice realization
+CURRENT_RECORD_BOUNDARY: exact current memo pinned; finite_additivity=false; scalar_I=false; I_empty_zero=false; record_properties_used=[]
 A_REBUILD_ON_Z3 PASS
 B_PER_INSTANCE_TEST PASS
-C_TRANSFER_VERDICT PASS
+C_DECLARED_TEST_TRANSFER_VERDICT PASS
 D_INPUT_ROBUSTNESS PASS
 E_CONTROLS PASS
 TOTAL: PASS=5 FAIL=0

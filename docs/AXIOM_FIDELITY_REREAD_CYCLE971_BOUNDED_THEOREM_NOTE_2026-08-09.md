@@ -158,9 +158,11 @@ dependence is physically absent.
 | Neighbor-keyed lookup tables or `match`/dispatch encodings without literal branch returns | `ATTEMPTED` | These use a different control/data formulation outside the declared branch-return grammar and remain open. |
 | Empirical tables or cached comparison summaries | `ATTEMPTED` | They cannot alter the literal AST count; they remain possible evidence for a different measurement. |
 
-All five routes were scanned over the same pinned path set recorded in the
-primary receipt. The last three defeat a broad physics absence claim, which is
-why that claim is not made.
+The literal-dictionary route was exhaustively executed over the pinned path
+set. The other four were exercised as exclusion/counterexample families
+against the declared grammar and remain explicitly open for any broader
+measurement. They defeat a broad corpus or physics absence claim, which is why
+that claim is not made.
 
 ### N2 — Wall independence
 

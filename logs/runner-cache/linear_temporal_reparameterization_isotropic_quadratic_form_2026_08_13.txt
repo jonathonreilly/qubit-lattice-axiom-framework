@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/linear_temporal_reparameterization_isotropic_quadratic_form_2026_08_13.py
+runner_sha256: f38eb75a803698cca666a07930afb7babf5b6121b5283ce514acc10ddbf2225f
+input_fingerprint_sha256: 70f945f76b11b85569a70a2e979c80347bbfb42fa274201e4c22bbea1f298c2d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.38
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/LINEAR_TEMPORAL_REPARAMETERIZATION_ISOTROPIC_QUADRATIC_FORM_BOUNDED_THEOREM_NOTE_2026-08-13.md
+  docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md
+cache_write: false
+external_scientific_inputs: none; c, a, b, and the linear substitution are declared mathematical inputs
+framework_role: kinetic isotropy supplies only the Euclidean equal-coefficient context c_t=c_s
+claim_scope: positive coordinate-equivalence algebra; no physical clock-selection or Record no-go
+PASS: audit-input-paths declared inputs are exactly the source note and kinetic-isotropy primitive
+PASS: primitive-equal-form the primitive supplies c_t = c_s and calls it kinetic-form isotropy
+PASS: primitive-no-dynamics the primitive expressly supplies no dynamics or Lorentz-closure theorem
+PASS: continued-form Q_E(i a omega,k)=c(-a^2 omega^2+|k|^2)
+PASS: coefficient-ratio the temporal-to-spatial quadratic coefficient ratio is a^2 and c cancels
+PASS: pairwise-equivalence Q_b((a/b)omega,k)=Q_a(omega,k) for all positive a,b
+PASS: inverse-map the b-to-a and a-to-b frequency rescalings are mutual inverses
+PASS: composition-law the a-to-b and b-to-d maps compose to the direct a-to-d map
+PASS: normalized-coordinate Omega=a omega removes the coordinate parameter from the form
+PASS: representative-coefficients at c=1/4 the raw temporal coefficients are 1/16, 1/4, and 1
+PASS: representative-ratios the temporal-to-spatial ratios are 1/4, 1, and 4
+PASS: finite-pair-census all nine ordered pairs in the representative set satisfy the exact equivalence
+PASS: wrong-direction-mutation reversing a/b to b/a is not an identity for generic positive a,b
+PASS: singular-zero-mutation a=0 removes the temporal term and has no inverse frequency map
+PASS: anisotropic-mutation unequal Euclidean coefficients are outside the represented isotropic family
+PASS: note-contract the note states the exact equivalence and bounded non-physical scope
+PASS: note-dependency the note links only the kinetic-isotropy primitive as scientific authority
+PASS: retired-record-semantics-absent the note does not restore scalar Record additivity or a value at absence
+PASS: no-physical-selector-rhetoric the theorem does not label a raw coefficient as a physical discriminator
+PASS: review-record the source records why the original negative framing was removed
+per_element: checked — every positive parameter pair obeys the symbolic reparameterization identity exactly
+per_site: checked and not executed — the theorem is a momentum-coordinate identity with no site carrier
+per_mode: checked — arbitrary symbolic frequency and spatial momentum variables are retained throughout
+per_block: checked — Euclidean and continued quadratic blocks are compared coefficient by coefficient
+lattice_wide: checked and not executed — no lattice dynamics, reconstruction, or physical clock is claimed
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

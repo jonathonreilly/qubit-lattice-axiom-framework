@@ -1,19 +1,20 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_gaussian_second_moment_quantile_decoder_effect_quotient_2026_08_10.py
-runner_sha256: c098602459dd6739bda76e8f4ffd2dffd24dda7fe97bbc6a8e9e93ea54744d70
-input_fingerprint_sha256: 879c3c9cc3d9de309825bcea6fa49130f851c61e88ab6b5c986af99b49bcf2d6
+runner_sha256: 3b3dce601a66e36db27ecee0118d1d5907be1fe836fcdcfc1db044f8674263c6
+input_fingerprint_sha256: bb651f45e0c8cfae7bb6da107fc344de102e65e7d3915efb847ad91d62d918cb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
-external_scientific_inputs: the current axiom, stacked Gaussian/menu parents, and three explicit instrument/effect prior boundaries are source-bound; no observed, fitted, or target probability is read
+external_scientific_inputs: the current axiom, landed menu/Record/partition boundaries, and three explicit instrument/effect prior boundaries are source-bound; no observed, fitted, or target probability is read
 package_local_integrity_reads: the proposed theorem note is checked for its construction, boundary, machine status, and N1-N8 surfaces; the cache envelope binds every declared input
 analytic_boundary: Gaussian integration, the probability-integral transform, Borel measurability, and general covariance are source proofs; the runner checks exact finite parameters and independent controls
 negative_scope: only the displayed isotropic compiler family and singleton-support deterministic half-half target are rejected as unique/universal routes
-PASS: source-current-axiom the exact current probability and content-only additive Record clauses are present
-PASS: source-parent-residual Block 3 leaves the map to rho, physical program compiler, and operational quotient open
-PASS: source-menu-parent the stacked menu parent supplies both exact shared-effect ternary menus
+PASS: source-current-axiom the exact current probability and content-only Record clauses are present without the retired scalar/additivity premise
+PASS: source-menu-parent the landed menu parent supplies both exact shared-effect ternary menus
+PASS: source-record-boundary the landed Record boundary separates program-relative event probability from direct content-only readout
+PASS: source-partition-comparison the landed comparison adds an external uniform coordinate rather than the intrinsic Gaussian trace-CDF uniformizer
 PASS: source-effect-prior the covariant effect prior leaves effect selection conditional on repeat certainty
 PASS: source-finite-process-prior the prior finite decoder uses a supplied trace/Kraus four-state domain
 PASS: source-physical-quotient-prior the prior physical quotient does not derive a general effect-only quotient
@@ -45,7 +46,7 @@ per_site: one M_2(C) site is executed at blank and all-Pz neighbor conditions; n
 per_mode: the centered trace uniformizer and an exact simultaneous Pauli-X conjugation control are checked; no spectral-mode exhaustion is claimed
 per_block: the fixed-condition measure-to-density-operator-to-quantile-decoder-to-effect-grade chain is checked on two ternary programs and one atomic binary control
 lattice_wide: checked and not executed — translation/proper-cubic covariance is analytic for the center rule, while global program dynamics and histories remain absent
-TOTAL: PASS=29 FAIL=0
+TOTAL: PASS=30 FAIL=0
 
 ----- stderr -----
 

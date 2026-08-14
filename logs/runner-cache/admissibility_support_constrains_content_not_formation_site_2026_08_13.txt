@@ -1,32 +1,68 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_support_constrains_content_not_formation_site_2026_08_13.py
-runner_sha256: da4c725c32d4ab9d2373570cda01a0c264775a86b6d6021711e5dc683c938c8e
-input_fingerprint_sha256: 496f54e40c4f7a7387c0e5ca88b7db8f7fe0b602a0ac04a380260b63e18aa2f5
-timeout_sec: 180
+runner_sha256: 20e6c321b240a036f0b038d069b13ebc30d4d4c9edfc313016bb88261c082b71
+input_fingerprint_sha256: 20bb3fe0c9ea05fe125c155bbe8d92aeffa1679ce9ef8e04dc6cf5b6128fcf9e
+timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.05
 status: ok
 ----- stdout -----
-external_scientific_inputs: current axiom wording is source-bound; no observational or fitted inputs are used
-finite_menu: masses 1/3, 2/3, 0 on {A,B,C}; support and occupancy counts are computed, not sampled
-negative_scope: C is not lockable under this mu; site and rate remain unfixed; other content laws remain live
-PASS: source-admissibility the current distribution sentence and nearest-neighbor conditions are pinned
-PASS: source-record Records form. and the lock sentence are pinned in the axiom memo and the note
-PASS: source-support finite-menu support is identified with nonzero probability in the axiom memo
-PASS: source-conditional the axiom memo states that the distribution does not supply site or rate
-PASS: measure-normalized declared masses 1/3, 2/3, 0 form a probability on the three-point menu
-PASS: support-computed support computed from positive mass is {A,B}, so C is not admissible
-PASS: theorem1-cannot-lock-C a forming record may lock only the computed support, hence cannot lock C
-PASS: theorem2-site-patterns two 2-site-star patterns share mu and differ in which site forms
-PASS: theorem3-unfixed-rate two lawful patterns with the same content law have formation counts 1 and 2
-PASS: lawful-reject-C an occupancy that locks C is rejected by the computed support, while A and B pass
-PASS: note-contract machine-status fields, required phrases, and forbidden-word hygiene hold
-per_element: the three-point menu {A,B,C} and support {A,B} are read from the masses
-per_site: occupancy is a per-site 0/1 mark; mu is the same at x and at y
-per_mode: locked content is a label on the finite menu; C is excluded by zero mass
-per_block: only the declared 2-site star fragment is exhibited
-lattice_wide: checked and not executed — no lattice-wide formation process or rate law is claimed
-TOTAL: PASS=11 FAIL=0
+Finite conditional-content / formation-extension separation
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_SUPPORT_CONSTRAINS_CONTENT_NOT_FORMATION_SITE_BOUNDED_THEOREM_NOTE_2026-08-13.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+scope: supplied finite menu and abstract two-label extension fiber; no full Z^3 history and no rate object
+PASS: audit-input-paths-exist
+PASS: audit-input-paths-unique-normalized
+PASS: audit-timeout-declared
+PASS: source-distribution-sentence-current
+PASS: source-occurrence-sentence-current
+PASS: source-lock-sentence-current
+PASS: source-conditional-content-typing-current
+PASS: source-finite-support-reading-current
+PASS: post-reset-record-has-unreadable-absence
+PASS: post-reset-record-has-no-scalar-or-additivity-clause
+PASS: finite-law-normalized
+PASS: finite-law-exact-masses
+PASS: theorem1-support-is-a-b
+PASS: theorem1-c-is-not-lockable
+PASS: theorem1-a-and-b-are-lockable
+PASS: mutation-positive-c-defeats-exclusion
+PASS: mutation-zero-a-removes-a-from-support
+PASS: extension-x-well-typed
+PASS: extension-y-well-typed
+PASS: extension-xy-well-typed
+PASS: theorem2-site-distinct-extensions
+PASS: theorem2-same-content-projection
+PASS: theorem3-multiplicity-distinct-extensions
+PASS: theorem3-same-content-projection
+PASS: complete-fiber-has-eight-extensions
+PASS: complete-fiber-site-sets-and-multiplicities
+PASS: mutation-empty-extension-rejected
+PASS: mutation-zero-mass-lock-rejected
+PASS: mutation-lock-domain-mismatch-rejected
+PASS: mutation-duplicate-site-lock-rejected
+PASS: note-machine-status-complete
+PASS: note-one-hop-dependency-current
+PASS: note-does-not-claim-two-vertex-z3-fragment
+PASS: note-distinguishes-multiplicity-from-rate
+PASS: note-post-reset-absence-boundary
+PASS: note-no-go-n1-through-n8
+PASS: note-no-go-route-enumeration
+PASS: note-steelman-accepts-full-rule-route
+PASS: note-live-partial-closure-routes
+PASS: note-n5-five-line-certificate
+N5_CERTIFICATE:
+per-element: executed — support and every displayed lock are checked
+per-site: executed — the two abstract labels x and y are enumerated
+per-mode: not applicable — no modal or spectral decomposition is used
+per-block: executed — only the declared two-label extension fiber is checked
+lattice-wide: not executed — no Z^3 history or formation process is claimed
+PASS: note-explicit-nonclaims
+PASS: note-does-not-upgrade-finite-scope
+TOTAL: PASS=42 FAIL=0
 
 ----- stderr -----
 

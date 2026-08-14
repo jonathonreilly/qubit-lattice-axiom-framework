@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/two_cube_record_gauss_flux_step_2026_08_14.py
+runner_sha256: 0c42b81932a53cfb46e77267c9e486421fee95abed403de49c4ba3775a6e8330
+input_fingerprint_sha256: 42dba1323b8a8e37a9aa369d87910b6e35affd62d7b344660adc2d0bacfbcb61
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+external_scientific_inputs: none
+package_local_integrity_reads: proposed source note and live axiom memo
+measure_boundary: exact Z/Q; displayed rho and tree-gauge flux
+PASS: thm1-listing twelve vertices, two cubes, eleven faces; F* listed once
+PASS: thm2-seed-table seed rho=(1,0), phi(F*)=1, phi(F_B)=1
+PASS: thm3-occ-step seed step forms exactly (1,0,0), (0,1,0), (0,0,1)
+PASS: thm4-tick1-table after step rho=(4,1), phi(F*)=4, phi(F_B)=5, Gauss holds
+PASS: thm4-recoil shared-face flux changes 1 -> 4
+PASS: thm5-empty empty seed is a fixed point with zero source and flux
+PASS: thm6-rho-not-site-I tick-1 rho(A)=4 is not a single-vertex I in {0,1}
+PASS: permanence occupied sites stay occupied
+PASS: mutation-rho-eq-site-I-fails predicate tick-1 rho(A) equals a single-vertex I fails
+PASS: mutation-phi-unchanged-fails predicate phi(F*) is unchanged by the occupancy step fails
+PASS: mutation-empty-forms-fails predicate empty seed forms a site or a nonzero flux fails
+PASS: mutation-adopts-newton-fails predicate note adopts Newton / G_N / 1/r / axiom text fails
+PASS: mutation-lattice-named-flux-fails predicate note claims Lattice-named flux or a unique L fails
+PASS: thm7-live-quotes note quotes live Record, Admissibility, and Qubit without rewrite
+PASS: machine-status-contract bounded-support status and gravity-update blocker are source-visible
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: identity-gates-bound identity gates call rho, flux, gauss_holds, occ_step, seed
+PASS: construction-not-nogo note is a construction and authors no N-gate no-go
+PASS: v-sections V1-V5 are present and origin/main is not given an unmerged parent
+per_element: twelve vertices and eleven faces checked
+per_site: seed and empty occupancy steps checked
+per_mode: displayed tree gauge on F* and F_B checked
+per_block: two-cube Gauss identity checked
+lattice_wide: checked and not executed
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

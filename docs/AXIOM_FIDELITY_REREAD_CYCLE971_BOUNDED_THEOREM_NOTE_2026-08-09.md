@@ -1,7 +1,7 @@
 # Axiom-Fidelity Re-read — Bounded Measurement Note
 
 **Date:** 2026-08-09
-**Claim type:** `meta`
+**Claim type:** `bounded_theorem`
 **Actual current-surface status:** bounded-support
 **Trace class:** methodology
 **Reachability:** none; this measurement reads a pinned corpus and repairs no row
@@ -16,19 +16,19 @@
 
 ```yaml
 actual_current_surface_status: bounded-support
-target_claim_type: meta
+target_claim_type: bounded_theorem
 target_claim_id: axiom_fidelity_reread_cycle971_bounded_theorem_note_2026-08-09
 trace_class: methodology
-target_blocker_text: null
+target_blocker_text: independent_audit_required
 source_of_blocker_text: user_goal
 reachability_to_target: none
 artifact_role: runner_certificate
-next_trace_action: "Independent audit may assess this measurement after the helper-registry policy debt is resolved."
+next_trace_action: "Independent audit may assess this pinned bounded measurement."
 packet_helper_runner: scripts/frontier_cycle971_fidelity_independent_check_2026_08_09.py
 conditional_surface_status: null
 hypothetical_axiom_status: null
 admitted_observation_status: null
-claim_type_reason: "Pinned corpus census plus an explicit, provenance-aware classification convention; not a physics theorem."
+claim_type_reason: "Exact finite census on a named Git snapshot plus an explicit, provenance-aware semantic routing convention."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
@@ -42,6 +42,14 @@ available possibilities, vary with nearest-neighbor conditions, and identifies
 availability with the distribution's support. Consequently
 `supp(mu(condition))` remains determined by the condition, but the axiom no
 longer forces that support to vary nontrivially.
+
+This snapshot predates the owner-approved 2026-08-13 Record simplification.
+The present measurement addresses only the 2026-08-05 Admissibility change. It
+does **not** classify current consumers of the later Record change and must not
+be cited as doing so. In current framework authority, Record supplies no named
+scalar collection functional `I`, no finite additivity, and no value
+`I(empty)=0`; any row requiring those structures needs a separate retained
+authority or remains conditional/open.
 
 The primary enumerates the tracked `docs/` and `scripts/` paths with
 `git ls-tree`, uses deliberately broad commit-scoped `git grep` anchors, and
@@ -144,10 +152,10 @@ dependence is physically absent.
 
 | Route | Disposition | Why it does not refute the bounded count |
 |---|---|---|
-| Marginal-named, neighbor-branched numeric dictionaries | `ATTEMPTED` | Exhaustive pinned Python-AST traversal returns zero; see C and R3 above. |
-| Uniform-self-input-named distribution functions | `ATTEMPTED` | The same traversal includes this alternate name family and returns zero. |
+| Literal neighbor-branched numeric dictionaries under either marginal or uniform-self-input names | `ATTEMPTED` | Exhaustive pinned Python-AST traversal returns zero; see C and R3 above. |
 | Array- or tuple-valued marginal distributions | `ATTEMPTED` | Located syntax would be outside the declared numeric-dictionary grammar; the note makes no claim about it. |
 | Indirect helper calls or dynamically constructed distributions | `ATTEMPTED` | Such encodings are outside the literal-return grammar and are explicitly left open. |
+| Neighbor-keyed lookup tables or `match`/dispatch encodings without literal branch returns | `ATTEMPTED` | These use a different control/data formulation outside the declared branch-return grammar and remain open. |
 | Empirical tables or cached comparison summaries | `ATTEMPTED` | They cannot alter the literal AST count; they remain possible evidence for a different measurement. |
 
 All five routes were scanned over the same pinned path set recorded in the
@@ -228,11 +236,11 @@ The audit packet also requires this helper mapping:
 {"axiom_fidelity_reread_cycle971_bounded_theorem_note_2026-08-09":["scripts/frontier_cycle971_fidelity_independent_check_2026_08_09.py"]}
 ```
 
-That explicit registry is currently blocked by the owner-governed
-dependency-policy epoch debt already recorded in `docs/repo/ACTIVE_REVIEW_QUEUE.md`.
-This measurement package does not refresh that epoch or author an audit
-verdict. Co-landing the mapping, rebuilding/seeding the ledger, and a full
-pipeline exit 0 are hard landing conditions.
+The dependency-policy repair on current `main` permits this claim-scoped
+mapping without exempting any other builder byte from the policy epoch. The
+mapping co-lands with this packet. Rebuilding/seeding the ledger and a full
+pipeline exit 0 remain hard landing conditions; this packet authors no audit
+verdict.
 
 No axiom, primitive, landed corpus row, or audit verdict is edited, and no
 rewrite is proposed.

@@ -30,11 +30,11 @@
    "pass": true
   },
   "D_CONTROLS": {
-   "finding": "object_pins={\"axiom_blob\":\"2f5fdd26898f62c17fcabc846761f7785c2eadb1\",\"docs_tree\":\"7dbc99ea9bb07250a72fff4722d37cdc1c573daf\",\"registry_blob\":\"f01d3be864f682584d50eede8b3abe6671bb4719\",\"scripts_tree\":\"b74e1639fc2a2250c0de2a56ad33665533a22c81\",\"snapshot_commit\":\"323d7fc32d77598f74ea6cd4d30c38dda0fe5070\",\"snapshot_tree\":\"45f8bd67eedaccb34918cb6804e850e1ba7f21fb\"}; authority_checks={\"availability_support_in_axiom\":true,\"new_sentence_in_axiom\":true,\"provenance_date_in_axiom\":true,\"registry_has_new_sentence\":true,\"registry_has_support_note\":true}; BLOCKLIST=['323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/**', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:scripts/**'] execution=False; determinism_replay=True; runtime_s=158.651143<timeout_s=300<=300; stdout_upper_bound_bytes=4407<6000<150000; literal_AUDIT_INPUT_PATHS=['docs/MINIMAL_AXIOMS_2026-06-29.md', 'docs/audit/data/axiom_premise_nodes.json']; pinned_snapshot_surfaces=['323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:scripts/', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/MINIMAL_AXIOMS_2026-06-29.md', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/audit/data/axiom_premise_nodes.json']",
+   "finding": "object_pins={\"axiom_blob\":\"2f5fdd26898f62c17fcabc846761f7785c2eadb1\",\"docs_tree\":\"7dbc99ea9bb07250a72fff4722d37cdc1c573daf\",\"registry_blob\":\"f01d3be864f682584d50eede8b3abe6671bb4719\",\"scripts_tree\":\"b74e1639fc2a2250c0de2a56ad33665533a22c81\",\"snapshot_commit\":\"323d7fc32d77598f74ea6cd4d30c38dda0fe5070\",\"snapshot_tree\":\"45f8bd67eedaccb34918cb6804e850e1ba7f21fb\"}; authority_checks={\"availability_support_in_axiom\":true,\"new_sentence_in_axiom\":true,\"provenance_date_in_axiom\":true,\"registry_has_new_sentence\":true,\"registry_has_support_note\":true}; BLOCKLIST=['323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/**', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:scripts/**'] execution=False; determinism_replay=True; runtime_s=156.440922<timeout_s=300<=300; stdout_upper_bound_bytes=4407<6000<150000; literal_AUDIT_INPUT_PATHS=['docs/MINIMAL_AXIOMS_2026-06-29.md', 'docs/audit/data/axiom_premise_nodes.json']; pinned_snapshot_surfaces=['323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:scripts/', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/MINIMAL_AXIOMS_2026-06-29.md', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/audit/data/axiom_premise_nodes.json']",
    "pass": true
   }
  },
- "claim_type": "meta",
+ "claim_type": "bounded_theorem",
  "determinism_replay": true,
  "measurement": {
   "class_counts": {
@@ -21744,7 +21744,7 @@
  ],
  "reachability_to_target": "none",
  "rewrite_proposals": [],
- "runtime_sec": 158.65114333399106,
+ "runtime_sec": 156.440921625006,
  "science_digest": "315a5231ab95899e90d8ff9ff1ef3c8126fe431d2a9e391fe90f2d8bbcf64fdc",
  "stdout_bytes": 3999,
  "trace_class": "methodology"

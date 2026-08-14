@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle971_axiom_fidelity_reread_2026_08_09.py
-runner_sha256: 6def914db02ae5cd6c4187a0fc20b11bd640bbb223cfce73ba2df7f675f4be63
-input_fingerprint_sha256: 6d1eead474f76cbccc125b9b0911cf48a69865819a6b5930adb3069028136670
+runner_sha256: 8986dd3b60aa29cb58c8f2ed29d0a4727b1f5ad47715167f5cb954115c82cf18
+input_fingerprint_sha256: 5cfdd8bb1d4881265ed31da9742f847b9fb51193bb085fc88f0bc513d5be4ed0
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 158.74
+elapsed_sec: 156.63
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -13,7 +13,7 @@ AXIOM-FIDELITY RE-READ (PINNED MEASUREMENT)
 PASS A_CONSUMER_CENSUS :: pinned_snapshot=323d7fc32d77598f74ea6cd4d30c38dda0fe5070; tracked_files=15205; consumer_files=1440; selector_anchor_complete=True; token_totals={"admissible_possibility":240,"availability":2788,"nearest_neighbor_conditions":94,"vary_with":193}; file_to_token_counts=receipt.consumer_rows; row_digest=a24d1a30308acae64c6836a5e8804e433a16185085cebef704661193b772186f
 PASS B_DELTA_CLASSIFICATION :: class_counts={"MEANING_CHANGED":26,"NEWLY_WITNESSABLE":0,"SUPPORT_READING_SAFE":70,"UNAFFECTED":1344}; complete_disjoint=True; full_file_lists=receipt.classes; classification is measurement-only
 PASS C_VACUITY_PROBE :: literal_state_resolved_witness_runners=1; literal_state_resolved_branch_pairs=1; literal_marginal_witness_runners=0; literal_marginal_branch_pairs=0; state_paths=['scripts/audit_companion_minimal_axioms_clean_base_exact.py']; marginal_paths=[]; pinned_python_files_scanned=5646; a marginal-independence row would not refute state-resolved dependence
-PASS D_CONTROLS :: object_pins={"axiom_blob":"2f5fdd26898f62c17fcabc846761f7785c2eadb1","docs_tree":"7dbc99ea9bb07250a72fff4722d37cdc1c573daf","registry_blob":"f01d3be864f682584d50eede8b3abe6671bb4719","scripts_tree":"b74e1639fc2a2250c0de2a56ad33665533a22c81","snapshot_commit":"323d7fc32d77598f74ea6cd4d30c38dda0fe5070","snapshot_tree":"45f8bd67eedaccb34918cb6804e850e1ba7f21fb"}; authority_checks={"availability_support_in_axiom":true,"new_sentence_in_axiom":true,"provenance_date_in_axiom":true,"registry_has_new_sentence":true,"registry_has_support_note":true}; BLOCKLIST=['323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/**', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:scripts/**'] execution=False; determinism_replay=True; runtime_s=158.651143<timeout_s=300<=300; stdout_upper_bound_bytes=4407<6000<150000; literal_AUDIT_INPUT_PATHS=['docs/MINIMAL_AXIOMS_2026-06-29.md', 'docs/audit/data/axiom_premise_nodes.json']; pinned_snapshot_surfaces=['323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:scripts/', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/MINIMAL_AXIOMS_2026-06-29.md', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/audit/data/axiom_premise_nodes.json']
+PASS D_CONTROLS :: object_pins={"axiom_blob":"2f5fdd26898f62c17fcabc846761f7785c2eadb1","docs_tree":"7dbc99ea9bb07250a72fff4722d37cdc1c573daf","registry_blob":"f01d3be864f682584d50eede8b3abe6671bb4719","scripts_tree":"b74e1639fc2a2250c0de2a56ad33665533a22c81","snapshot_commit":"323d7fc32d77598f74ea6cd4d30c38dda0fe5070","snapshot_tree":"45f8bd67eedaccb34918cb6804e850e1ba7f21fb"}; authority_checks={"availability_support_in_axiom":true,"new_sentence_in_axiom":true,"provenance_date_in_axiom":true,"registry_has_new_sentence":true,"registry_has_support_note":true}; BLOCKLIST=['323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/**', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:scripts/**'] execution=False; determinism_replay=True; runtime_s=156.440922<timeout_s=300<=300; stdout_upper_bound_bytes=4407<6000<150000; literal_AUDIT_INPUT_PATHS=['docs/MINIMAL_AXIOMS_2026-06-29.md', 'docs/audit/data/axiom_premise_nodes.json']; pinned_snapshot_surfaces=['323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:scripts/', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/MINIMAL_AXIOMS_2026-06-29.md', '323d7fc32d77598f74ea6cd4d30c38dda0fe5070:docs/audit/data/axiom_premise_nodes.json']
 N5_EXECUTION_CERTIFICATE:
 per_element: checked and not executed — the literal AST grammar does not resolve element-level probability comparisons
 per_site: checked — one neighbor-conditioned local-distribution branch pair is present in the pinned Python corpus

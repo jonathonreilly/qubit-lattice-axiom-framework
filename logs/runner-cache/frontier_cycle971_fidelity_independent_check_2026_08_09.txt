@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle971_fidelity_independent_check_2026_08_09.py
-runner_sha256: 47e8aa4a123f68680c761a30bfc4251b28ec6bd4fb5c2b4af5a07356be027a31
-input_fingerprint_sha256: e61a61faa82eef3c5e0258452c6c74dc5724868f320dab0831b61b6b636bf9fd
+runner_sha256: a55f5e1f789eda353ca0c0a05cc6486def4cd31e0a9d187f7fb7959ead1590c2
+input_fingerprint_sha256: 78c14a6e2b45a53c0eba090526c374555f9c35af80792c0306ffbdb2d2e39d0d
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 148.98
+elapsed_sec: 144.07
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -15,7 +15,7 @@ PASS R1_REFUTE_CONSUMER_CENSUS :: independent_tracked/consumers=15205/1440; toke
 PASS R2_REFUTE_DELTA_CLASSIFICATION :: independent_class_counts={"MEANING_CHANGED":26,"NEWLY_WITNESSABLE":0,"SUPPORT_READING_SAFE":70,"UNAFFECTED":1344}; adjudication_manifest_valid=True; adjudication_manifest_sha256=e2b5195b9fd140d30eb551a3906c67dee1e603718b1ea6913d7410923716b68c; full_lists_match=True; classes_digest=389004fadd21329b142498f9af6042ad74d66b63561da88bdfb37750b67b9c59
 PASS R3_REFUTE_VACUITY_PROBE :: independent_state_resolved_runners/branch_pairs=1/1; independent_marginal_runners/branch_pairs=0/0; pinned_python_files_scanned=5646; state_paths=['scripts/audit_companion_minimal_axioms_clean_base_exact.py']; marginal_paths=[]
 PASS R4_REFUTE_AXIOM_PROVENANCE :: independent_authority_checks={"new_distribution_sentence":true,"owner_date":true,"registry_support":true,"support_provenance":true}
-PASS R5_CONTROLS :: determinism_replay=True; runtime_s=148.924364<timeout_s=300<=300; stdout_upper_bound_bytes=5104<6000<150000; literal_AUDIT_INPUT_PATHS=['scripts/frontier_cycle971_axiom_fidelity_reread_2026_08_09.py', 'logs/runner-cache/frontier_cycle971_axiom_fidelity_reread_2026_08_09.txt', 'outputs/axiom_fidelity_reread_cycle971_receipt_2026_08_09.json', 'outputs/axiom_fidelity_reread_cycle971_independent_semantic_adjudications_2026_08_09.json']
+PASS R5_CONTROLS :: determinism_replay=True; runtime_s=143.969269<timeout_s=300<=300; stdout_upper_bound_bytes=5104<6000<150000; literal_AUDIT_INPUT_PATHS=['scripts/frontier_cycle971_axiom_fidelity_reread_2026_08_09.py', 'logs/runner-cache/frontier_cycle971_axiom_fidelity_reread_2026_08_09.txt', 'outputs/axiom_fidelity_reread_cycle971_receipt_2026_08_09.json', 'outputs/axiom_fidelity_reread_cycle971_independent_semantic_adjudications_2026_08_09.json']
 VERDICT: PRIMARY_SURVIVES_INDEPENDENT_REFUTATION_ATTEMPT
 TOTAL: PASS=6 FAIL=0
 

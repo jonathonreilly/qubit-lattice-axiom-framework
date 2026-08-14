@@ -40,7 +40,7 @@ from time import monotonic
 ROOT = Path(__file__).resolve().parents[1]
 PRIMARY_PATH, PRIMARY_CACHE, PRIMARY_RECEIPT, ADJUDICATION_PATH = AUDIT_INPUT_PATHS
 EXPECTED_SHA256 = {
-    PRIMARY_PATH: "6def914db02ae5cd6c4187a0fc20b11bd640bbb223cfce73ba2df7f675f4be63",
+    PRIMARY_PATH: "8986dd3b60aa29cb58c8f2ed29d0a4727b1f5ad47715167f5cb954115c82cf18",
     ADJUDICATION_PATH: "e2b5195b9fd140d30eb551a3906c67dee1e603718b1ea6913d7410923716b68c",
 }
 EXPECTED_PRIMARY_SCIENCE_DIGEST = (
@@ -577,7 +577,7 @@ def main() -> int:
     receipt = {
         "role": "independent_checker",
         "specified_to": "REFUTE",
-        "claim_type": "meta",
+        "claim_type": "bounded_theorem",
         "pinned_snapshot_commit": PINNED_SNAPSHOT_COMMIT,
         "pins": pin_rows,
         "blocklist": list(BLOCKLIST_CITED_PRIMARIES),

@@ -716,7 +716,7 @@ def main() -> int:
     )
     all_pass = all(ok for _, ok, _ in certificates)
     report = {
-        "claim_type": "meta",
+        "claim_type": "bounded_theorem",
         "actual_current_surface_status": "bounded-support",
         "trace_class": "methodology",
         "reachability_to_target": "none",

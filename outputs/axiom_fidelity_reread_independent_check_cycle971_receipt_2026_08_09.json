@@ -36,11 +36,11 @@
    "pass": true
   },
   "R5_CONTROLS": {
-   "finding": "determinism_replay=True; runtime_s=148.924364<timeout_s=300<=300; stdout_upper_bound_bytes=5104<6000<150000; literal_AUDIT_INPUT_PATHS=['scripts/frontier_cycle971_axiom_fidelity_reread_2026_08_09.py', 'logs/runner-cache/frontier_cycle971_axiom_fidelity_reread_2026_08_09.txt', 'outputs/axiom_fidelity_reread_cycle971_receipt_2026_08_09.json', 'outputs/axiom_fidelity_reread_cycle971_independent_semantic_adjudications_2026_08_09.json']",
+   "finding": "determinism_replay=True; runtime_s=143.969269<timeout_s=300<=300; stdout_upper_bound_bytes=5104<6000<150000; literal_AUDIT_INPUT_PATHS=['scripts/frontier_cycle971_axiom_fidelity_reread_2026_08_09.py', 'logs/runner-cache/frontier_cycle971_axiom_fidelity_reread_2026_08_09.txt', 'outputs/axiom_fidelity_reread_cycle971_receipt_2026_08_09.json', 'outputs/axiom_fidelity_reread_cycle971_independent_semantic_adjudications_2026_08_09.json']",
    "pass": true
   }
  },
- "claim_type": "meta",
+ "claim_type": "bounded_theorem",
  "determinism_replay": true,
  "independent_summary": {
   "adjudication_manifest_sha256": "e2b5195b9fd140d30eb551a3906c67dee1e603718b1ea6913d7410923716b68c",
@@ -73,23 +73,23 @@
  "pins": [
   {
    "exists": true,
-   "expected": "6def914db02ae5cd6c4187a0fc20b11bd640bbb223cfce73ba2df7f675f4be63",
+   "expected": "8986dd3b60aa29cb58c8f2ed29d0a4727b1f5ad47715167f5cb954115c82cf18",
    "match": true,
-   "observed": "6def914db02ae5cd6c4187a0fc20b11bd640bbb223cfce73ba2df7f675f4be63",
+   "observed": "8986dd3b60aa29cb58c8f2ed29d0a4727b1f5ad47715167f5cb954115c82cf18",
    "path": "scripts/frontier_cycle971_axiom_fidelity_reread_2026_08_09.py"
   },
   {
    "exists": true,
    "expected": "stable science digest checked after parse",
    "match": true,
-   "observed": "512b43397217d5604500343d75b791d188206d2c324e3d816840a8020083c525",
+   "observed": "d81ff9a627be083055812e4dd1a21f9bba745ae40af405eae6a8a08428b7f7ad",
    "path": "logs/runner-cache/frontier_cycle971_axiom_fidelity_reread_2026_08_09.txt"
   },
   {
    "exists": true,
    "expected": "stable science digest checked after parse",
    "match": true,
-   "observed": "c3c25de48b46f4aecf32b0e56a1a07275beec932bbb16eb3e16308d4fc7b8455",
+   "observed": "44af3e00bc65a748cae2a9968d9e5822d0b933b5dee401020fcd2f143aeb8452",
    "path": "outputs/axiom_fidelity_reread_cycle971_receipt_2026_08_09.json"
   },
   {
@@ -134,7 +134,7 @@
   "working_tree_corpus_reads": false
  },
  "role": "independent_checker",
- "runtime_sec": 148.92436395795085,
+ "runtime_sec": 143.9692687910283,
  "specified_to": "REFUTE",
  "stdout_bytes": 2544,
  "verdict": "PRIMARY_SURVIVES_INDEPENDENT_REFUTATION_ATTEMPT"

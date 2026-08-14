@@ -1,0 +1,55 @@
+===== runner cache v1 =====
+runner: scripts/two_cube_l1_second_wave_k_2026_08_14.py
+runner_sha256: 732102ac02abde16c78e78441d435ae0aefbad3ea8e47027ae57226f45591721
+input_fingerprint_sha256: e18b285def6728dbde41100b78304b12e1fca2cf691189741bb4c0f679586da4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+external_scientific_inputs: none; exact Z occupancy arithmetic on a supplied 12-vertex patch
+package_local_integrity_reads: proposed source note and live axiom memo only
+measure_boundary: exact integers; k = |3n|^2 stays in Z
+claim_boundary: L1 is displayed executable data, not adopted law
+PASS: id-patch-count patch-count identity
+PASS: id-cube-a-count cube-a-count identity
+PASS: id-cube-b-count cube-b-count identity
+PASS: id-off-patch-occupancy off-patch-occupancy identity
+PASS: id-seed-occupancy seed-occupancy identity
+PASS: id-tick1-locks-from-seed tick1-locks-from-seed identity
+PASS: id-tick1-lock-count tick1-lock-count identity
+PASS: id-3n-at-110 3n-at-110 identity
+PASS: id-k-at-110 k-at-110 identity
+PASS: 3n-in-Z-110 3n at (1, 1, 0) is an integer triple
+PASS: id-3n-at-101 3n-at-101 identity
+PASS: id-k-at-101 k-at-101 identity
+PASS: 3n-in-Z-101 3n at (1, 0, 1) is an integer triple
+PASS: id-3n-at-011 3n-at-011 identity
+PASS: id-k-at-011 k-at-011 identity
+PASS: 3n-in-Z-011 3n at (0, 1, 1) is an integer triple
+PASS: id-3n-at-200 3n-at-200 identity
+PASS: id-k-at-200 k-at-200 identity
+PASS: 3n-in-Z-200 3n at (2, 0, 0) is an integer triple
+PASS: id-forming-set forming-set identity
+PASS: id-forming-count forming-count identity
+PASS: id-other-unread other-unread identity
+PASS: thm-no-other-unread-n every other unread patch site has 3n = 0
+PASS: thm-second-wave-table the four forming sites have the displayed 3n and k
+PASS: thm-k-in-1-2 second-wave k values are exactly {1, 2}
+PASS: thm-locked-stay tick-1 locks remain locked and do not re-form
+PASS: k-from-3n-squares k is the sum of squares of the integer components of 3n
+PASS: mutation-k-not-uniform-1 second-wave k is not uniformly 1
+PASS: mutation-k-is-not-a-trace k is |3n|^2 in Z, distinct from any one-site trace value
+PASS: live-parent-quotes the note quotes all four live axiom sentences without rewrite
+PASS: machine-status-contract bounded-support status and hypothetical_axiom_status: not proposed
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: note-hygiene L1 is displayed; Qubit stays M_2(C); k stays in Z; forbidden strings absent
+per_element: 3n and k = |3n|^2 are recomputed at each unread patch site
+per_site: formation is unread and n nonzero; locked sites stay
+per_mode: k is the integer |3n|^2; no traces at k=2
+per_block: tick-2 formation set is the four-site table
+lattice_wide: checked and not executed — the claim is the supplied 12-vertex patch
+TOTAL: PASS=33 FAIL=0
+
+----- stderr -----
+

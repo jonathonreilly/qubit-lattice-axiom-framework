@@ -65,6 +65,11 @@ import runner_cache
 DIRECTIONS = ("+x", "-x", "+y", "-y", "+z", "-z")
 OTHER_CONTEXTS = tuple(product((0, 1), repeat=5))
 REPRESENTATIVES = (Fraction(0), Fraction(1, 4), Fraction(1, 2), Fraction(3, 4), Fraction(1))
+RECORD_NO_ADDITIVITY_NEEDLES = (
+    "Finite additivity, a named scalar collection functional `I`, and an assigned\n"
+    "value `I(empty)=0` are not Record axiom content.",
+    "probability rules beyond the distribution clause",
+)
 
 
 def compact(value: object) -> str:
@@ -337,6 +342,10 @@ def main() -> int:
     expected = independent_reconstruction()
     primary_payload = receipt.get("checker_payload", {})
     receipt_controls = receipt.get("controls", {})
+    axiom_text = safe_repo_path(AXIOM_PATH).read_text(encoding="utf-8")
+    record_no_additivity_boundary = all(
+        needle in axiom_text for needle in RECORD_NO_ADDITIVITY_NEEDLES
+    )
     current_input_pins = {
         rel: digest_bytes(safe_repo_path(rel))
         for rel in receipt_controls.get("literal_audit_input_paths", [])
@@ -400,6 +409,8 @@ def main() -> int:
         and cache_header.get("runner_sha256") == source_sha
         and primary_cache_fresh
         and input_pins_match
+        and record_no_additivity_boundary
+        and receipt_controls.get("record_no_additivity_boundary_matches") is True
         and cache_payload == primary_payload
         and receipt.get("all_certificates_pass")
         and all(receipt_certificates.get(name, {}).get("pass") for name in (
@@ -412,7 +423,8 @@ def main() -> int:
     r5_finding = (
         f"source_sha_match={receipt.get('primary_source_sha256') == source_sha}; canonical_cache_fresh="
         f"{primary_cache_fresh}; cache_payload_match={cache_payload == primary_payload}; live_input_pins_match="
-        f"{input_pins_match}; primary_certificates={len(receipt_certificates)}; "
+        f"{input_pins_match}; Record_no_additivity_boundary={record_no_additivity_boundary}; "
+        f"primary_certificates={len(receipt_certificates)}; "
         f"determinism={receipt.get('determinism_replay')}; runtime_s={elapsed:.6f}"
     )
 

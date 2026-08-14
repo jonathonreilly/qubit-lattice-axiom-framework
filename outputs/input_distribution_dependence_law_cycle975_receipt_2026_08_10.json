@@ -19,7 +19,7 @@
    "pass": true
   },
   "D_CONTROLS": {
-   "finding": "sha_pins={\"docs/MINIMAL_AXIOMS_2026-06-29.md\":\"53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39\",\"scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py\":\"0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4\"}; provenance_blobs={\"cycle970_note\":\"f7b788d8076e7864bc5dbcbb33cb9e49554e494a\",\"cycle970_runner\":\"4670bcb9d83cfc039f1336398c6a4aa4af014f7c\",\"cycle972_note\":\"e328562ec0ff3b80acef65c490bb5903cc3e8438\",\"cycle972_runner\":\"ab497ae52f74bc8e8c6cc6eb5888bfaf9f119f15\"}; reads=6 explicit source files (970/972 runner+note, Cycle-719 core, axiom memo); provenance=AST/text only; determinism_replay=True; runtime_s=0.561721<timeout_s=300; stdout_upper_bound=3487<6000<150000",
+   "finding": "sha_pins={\"docs/MINIMAL_AXIOMS_2026-06-29.md\":\"93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753\",\"scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py\":\"0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4\"}; provenance_blobs={\"cycle970_note\":\"c32f8dc4a355d43cbcf81988579202b3a1465f2e\",\"cycle970_runner\":\"bebf2def543ed701f676203d98f994dab1ebcca2\",\"cycle972_note\":\"e328562ec0ff3b80acef65c490bb5903cc3e8438\",\"cycle972_runner\":\"ab497ae52f74bc8e8c6cc6eb5888bfaf9f119f15\"}; reads=6 explicit source files (970/972 runner+note, Cycle-719 core, axiom memo); provenance=AST/text only; Record_no_additivity_boundary=True; determinism_replay=True; runtime_s=0.928957<timeout_s=300; stdout_upper_bound=3487<6000<150000",
    "pass": true
   }
  },
@@ -104,36 +104,37 @@
    "docs/MINIMAL_AXIOMS_2026-06-29.md",
    "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py"
   ],
-  "primary_source_sha256": "9ccfcf9fcbe50244f96ab04407cad0aa44491bb5f3720281bc213f0c8a29b6fb",
+  "primary_source_sha256": "e768008585663482ab482b8bf63d01a0fbdd1fc16e7380d2ca19c29b7ccf747e",
   "provenance_never_executed": true,
   "provenance_pins_match": true,
+  "record_no_additivity_boundary_matches": true,
   "sha256": {
-   "docs/MINIMAL_AXIOMS_2026-06-29.md": "53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39",
+   "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
    "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4"
   },
   "text_ast_provenance": {
    "cycle970_note": {
     "bounded_scope_present": true,
-    "commit": "6fd0de0a288d212a4a6ce3fdd4dc9019f30dbbad",
-    "expected_blob": "f7b788d8076e7864bc5dbcbb33cb9e49554e494a",
+    "commit": "591b4364071e82de78ef6230dbeb00107688f9e2",
+    "expected_blob": "c32f8dc4a355d43cbcf81988579202b3a1465f2e",
     "mentions_fixed_input_or_xor": true,
-    "observed_blob": "f7b788d8076e7864bc5dbcbb33cb9e49554e494a",
+    "observed_blob": "c32f8dc4a355d43cbcf81988579202b3a1465f2e",
     "path": "docs/INTER_SITE_GATE_CYCLE970_BOUNDED_THEOREM_NOTE_2026-08-09.md",
     "read_mode": "text only"
    },
    "cycle970_runner": {
-    "commit": "6fd0de0a288d212a4a6ce3fdd4dc9019f30dbbad",
+    "commit": "591b4364071e82de78ef6230dbeb00107688f9e2",
     "declares_family": true,
-    "declares_marginal_census": true,
+    "declares_marginal_census": false,
     "declares_resolved_census": true,
-    "expected_blob": "4670bcb9d83cfc039f1336398c6a4aa4af014f7c",
-    "observed_blob": "4670bcb9d83cfc039f1336398c6a4aa4af014f7c",
+    "expected_blob": "bebf2def543ed701f676203d98f994dab1ebcca2",
+    "observed_blob": "bebf2def543ed701f676203d98f994dab1ebcca2",
     "path": "scripts/frontier_cycle970_inter_site_gate_2026_08_09.py",
     "read_mode": "AST only; never executed"
    },
    "cycle972_note": {
     "bounded_scope_present": true,
-    "commit": "3826925e019c0e1966a9b85110a397db2c61d33f",
+    "commit": "84da60ec113bb4d23583f0c7a4921784dad55b2c",
     "expected_blob": "e328562ec0ff3b80acef65c490bb5903cc3e8438",
     "mentions_fixed_input_or_xor": true,
     "observed_blob": "e328562ec0ff3b80acef65c490bb5903cc3e8438",
@@ -141,7 +142,7 @@
     "read_mode": "text only"
    },
    "cycle972_runner": {
-    "commit": "3826925e019c0e1966a9b85110a397db2c61d33f",
+    "commit": "84da60ec113bb4d23583f0c7a4921784dad55b2c",
     "declares_family": true,
     "declares_marginal_census": true,
     "declares_resolved_census": true,
@@ -907,11 +908,11 @@
  "hypothetical_axiom_status": null,
  "law_formula": "for W_d=CNOT(a+d->a), y=x XOR n_d",
  "marginal_identity": "P_p(y=0|n_d=0)=p, P_p(y=0|n_d=1)=1-p; TV(P_p(.|0),P_p(.|1))=|2p-1|",
- "primary_source_sha256": "9ccfcf9fcbe50244f96ab04407cad0aa44491bb5f3720281bc213f0c8a29b6fb",
+ "primary_source_sha256": "e768008585663482ab482b8bf63d01a0fbdd1fc16e7380d2ca19c29b7ccf747e",
  "reachability_to_target": "closes",
- "runtime_sec": 0.5617205000016838,
+ "runtime_sec": 0.9289574170252308,
  "science_digest": "aaed6bacc407cac135187bb68d077acc3baa7458e0d01ded392194872d6487b5",
- "stdout_bytes": 3403,
+ "stdout_bytes": 3439,
  "target_claim_type": "bounded_theorem",
  "trace_class": "direct_blocker_closure"
 }

@@ -30,30 +30,35 @@ BLOCKLIST_CITED_PRIMARIES = (AUDIT_INPUT_PATHS[0],)
 EXECUTABLE_SUBSTRATE = AUDIT_INPUT_PATHS[1]
 PROVENANCE = {
     "cycle970_runner": (
-        "6fd0de0a288d212a4a6ce3fdd4dc9019f30dbbad",
+        "591b4364071e82de78ef6230dbeb00107688f9e2",
         "scripts/frontier_cycle970_inter_site_gate_2026_08_09.py",
-        "4670bcb9d83cfc039f1336398c6a4aa4af014f7c",
+        "bebf2def543ed701f676203d98f994dab1ebcca2",
         "ast",
     ),
     "cycle970_note": (
-        "6fd0de0a288d212a4a6ce3fdd4dc9019f30dbbad",
+        "591b4364071e82de78ef6230dbeb00107688f9e2",
         "docs/INTER_SITE_GATE_CYCLE970_BOUNDED_THEOREM_NOTE_2026-08-09.md",
-        "f7b788d8076e7864bc5dbcbb33cb9e49554e494a",
+        "c32f8dc4a355d43cbcf81988579202b3a1465f2e",
         "text",
     ),
     "cycle972_runner": (
-        "3826925e019c0e1966a9b85110a397db2c61d33f",
+        "84da60ec113bb4d23583f0c7a4921784dad55b2c",
         "scripts/frontier_cycle972_covariant_dependence_law_2026_08_09.py",
         "ab497ae52f74bc8e8c6cc6eb5888bfaf9f119f15",
         "ast",
     ),
     "cycle972_note": (
-        "3826925e019c0e1966a9b85110a397db2c61d33f",
+        "84da60ec113bb4d23583f0c7a4921784dad55b2c",
         "docs/COVARIANT_DEPENDENCE_LAW_CYCLE972_BOUNDED_THEOREM_NOTE_2026-08-09.md",
         "e328562ec0ff3b80acef65c490bb5903cc3e8438",
         "text",
     ),
 }
+RECORD_NO_ADDITIVITY_NEEDLES = (
+    "Finite additivity, a named scalar collection functional `I`, and an assigned\n"
+    "value `I(empty)=0` are not Record axiom content.",
+    "probability rules beyond the distribution clause",
+)
 
 import argparse
 import ast
@@ -429,6 +434,9 @@ def input_controls() -> dict:
         "axiom_distribution_needle_matches": (
             "probability distribution over the possibilities is\ndetermined by, and varies with, the nearest-neighbor conditions" in axiom
         ),
+        "record_no_additivity_boundary_matches": all(
+            needle in axiom for needle in RECORD_NO_ADDITIVITY_NEEDLES
+        ),
         "text_ast_provenance": provenance,
         "provenance_pins_match": all(row["expected_blob"] == row["observed_blob"] for row in provenance.values()),
         "provenance_never_executed": all("never executed" in row["read_mode"] or row["read_mode"] == "text only" for row in provenance.values()),
@@ -526,6 +534,7 @@ def main() -> int:
         controls["all_inputs_exist_worktree_relative"]
         and controls["blocklist_text_only"]
         and controls["axiom_distribution_needle_matches"]
+        and controls["record_no_additivity_boundary_matches"]
         and controls["provenance_pins_match"]
         and controls["provenance_never_executed"]
         and all(row.get("declares_family", True) for row in provenance.values())
@@ -538,7 +547,8 @@ def main() -> int:
         f"sha_pins={compact(controls['sha256'])}; provenance_blobs="
         f"{compact({key: row['observed_blob'] for key, row in provenance.items()})}; "
         f"reads=6 explicit source files (970/972 runner+note, Cycle-719 core, axiom memo); "
-        f"provenance=AST/text only; determinism_replay={deterministic}; runtime_s={elapsed:.6f}<"
+        f"provenance=AST/text only; Record_no_additivity_boundary="
+        f"{controls['record_no_additivity_boundary_matches']}; determinism_replay={deterministic}; runtime_s={elapsed:.6f}<"
         f"timeout_s={AUDIT_TIMEOUT_SEC}; stdout_upper_bound={output_upper_bound}<"
         f"{HOUSE_STDOUT_LIMIT_BYTES}<{STDOUT_LIMIT_BYTES}"
     )

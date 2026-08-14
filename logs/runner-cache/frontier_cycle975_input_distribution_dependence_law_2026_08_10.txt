@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle975_input_distribution_dependence_law_2026_08_10.py
-runner_sha256: 9ccfcf9fcbe50244f96ab04407cad0aa44491bb5f3720281bc213f0c8a29b6fb
-input_fingerprint_sha256: 873beb966b5f5764c825d6c10142cac4ea9c3c47322087ea075249380cfd0d17
+runner_sha256: e768008585663482ab482b8bf63d01a0fbdd1fc16e7380d2ca19c29b7ccf747e
+input_fingerprint_sha256: e2b45875394a2adfd3a2d1332c70f6db056a9619b88996e4155000690b656816
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 1.01
+elapsed_sec: 1.87
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -13,7 +13,7 @@ INPUT-DISTRIBUTION DEPENDENCE LAW
 PASS A_INPUT_FAMILY :: input_family=mu_p=p delta_0+(1-p) delta_1 for every real p in [0,1]; exact_cells=5; family_words=20; full_state_resolved=12/40 rows,384/7680 edge_pairs; cell_counts=[('p=0', 'marginal 6/20 words and 192/3840 edge pairs'), ('0<p<1/2', 'marginal 6/20 words and 192/3840 edge pairs'), ('p=1/2', 'marginal 0/20 words and 0/3840 edge pairs'), ('1/2<p<1', 'marginal 6/20 words and 192/3840 edge pairs'), ('p=1', 'marginal 6/20 words and 192/3840 edge pairs')]
 PASS B_BOUNDARY :: proof=exhaustive finite Boolean truth rows plus exact affine-polynomial elimination; identity=P_p(y=0|n_d=0)=p, P_p(y=0|n_d=1)=1-p; TV(P_p(.|0),P_p(.|1))=|2p-1|; zero_set=['1/2']; boundary_empty=False; marginal_visible_set=[0,1] minus {1/2}; nonzero_affine_pairs=192/3840
 PASS C_PREMISE_PRICE :: x=0 is sufficient, not necessary, and merely convenient; fixed_inputs_with_nonzero_witness=2/2; exact_970_ordered_pair_inputs=[0]; maximal_strength_inputs=[0, 1]; marginal_visible_laws=p!=1/2; delta(new gate,coupling,axiom,primitive,fixed-input premise)=0/0/0/0/0
-PASS D_CONTROLS :: sha_pins={"docs/MINIMAL_AXIOMS_2026-06-29.md":"53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39","scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py":"0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4"}; provenance_blobs={"cycle970_note":"f7b788d8076e7864bc5dbcbb33cb9e49554e494a","cycle970_runner":"4670bcb9d83cfc039f1336398c6a4aa4af014f7c","cycle972_note":"e328562ec0ff3b80acef65c490bb5903cc3e8438","cycle972_runner":"ab497ae52f74bc8e8c6cc6eb5888bfaf9f119f15"}; reads=6 explicit source files (970/972 runner+note, Cycle-719 core, axiom memo); provenance=AST/text only; determinism_replay=True; runtime_s=0.561721<timeout_s=300; stdout_upper_bound=3487<6000<150000
+PASS D_CONTROLS :: sha_pins={"docs/MINIMAL_AXIOMS_2026-06-29.md":"93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753","scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py":"0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4"}; provenance_blobs={"cycle970_note":"c32f8dc4a355d43cbcf81988579202b3a1465f2e","cycle970_runner":"bebf2def543ed701f676203d98f994dab1ebcca2","cycle972_note":"e328562ec0ff3b80acef65c490bb5903cc3e8438","cycle972_runner":"ab497ae52f74bc8e8c6cc6eb5888bfaf9f119f15"}; reads=6 explicit source files (970/972 runner+note, Cycle-719 core, axiom memo); provenance=AST/text only; Record_no_additivity_boundary=True; determinism_replay=True; runtime_s=0.928957<timeout_s=300; stdout_upper_bound=3487<6000<150000
 CHECKER_PAYLOAD: {"boundary_empty":false,"coefficient_patterns":[[["-1","2"],["1","-2"]]],"exact_970_ordered_pair_inputs":[0],"family_words":20,"fixed_inputs_with_witness":2,"input_cell_definitions":["p=0","0<p<1/2","p=1/2","1/2<p<1","p=1"],"input_cells":5,"input_family":"mu_p=p delta_0+(1-p) delta_1 for every real p in [0,1]","marginal_counts_by_representative":{"0":[6,192,"1"],"1":[6,192,"1"],"1/2":[0,0,"0"],"1/4":[6,192,"1/2"],"3/4":[6,192,"1/2"]},"science_digest":"aaed6bacc407cac135187bb68d077acc3baa7458e0d01ded392194872d6487b5","state_changed_edge_pairs":384,"state_dependent_rows":12,"state_edge_pairs":7680,"state_rows":40,"symbolic_edge_pairs":3840,"symbolic_nonzero_edge_pairs":192,"x0_classification":"sufficient, not necessary, and merely convenient","zero_set":["1/2"]}
 VERDICT: BOUNDED_GENERAL_INPUT_LAW_CHARACTERIZED
 per_element: checked and executed -- both target basis inputs and outcomes were enumerated for every declared word

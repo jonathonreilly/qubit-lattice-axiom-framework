@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle975_input_distribution_independent_check_2026_08_10.py
-runner_sha256: 239ea53e1f5616d989b0683df0fa4336b28bdde62baf3ab3afda62a548bc0408
-input_fingerprint_sha256: 47bdf64d29afeb95c16a6ef009e82aa5944e24d4188cafa9ab7bc8398af31ed7
+runner_sha256: 8eb672fb935e09c0f202cd476e3bdb3c7dac8e8f1aeafd1d9ce7abed89de85a5
+input_fingerprint_sha256: ea03ee4a5c79cdbc18087f4aa35b51580065bef0250a0eb784013bbf94a04e4b
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.31
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -15,8 +15,8 @@ PASS R1_REFUTE_INPUT_FAMILY :: family=20 words; input_cells=5; state_resolved=12
 PASS R2_REFUTE_BOUNDARY_AND_STRENGTH :: independent_affine_patterns=[[['-1', '2'], ['1', '-2']]]; zero_set=['1/2']; boundary_empty=False; representative_counts={"0":[6,192,"1"],"1":[6,192,"1"],"1/2":[0,0,"0"],"1/4":[6,192,"1/2"],"3/4":[6,192,"1/2"]}
 PASS R3_REFUTE_PREMISE_PRICE :: x0=sufficient, not necessary, and merely convenient; fixed_inputs_with_witness=2/2; exact_ordered_pair=[0]
 PASS R4_ACTIVE_CORRUPTION_PROBES :: active_corruptions=7; false_acceptances=0; mutations={"corrupt_count":false,"duplicate_and_omit_input_cell":false,"erase_affine_signal":false,"erase_boundary":false,"make_uniform_visible":false,"make_x0_necessary":false,"stale_declared_input_digest":false}
-PASS R5_CONTROLS :: source_sha_match=True; canonical_cache_fresh=True; cache_payload_match=True; live_input_pins_match=True; primary_certificates=4; determinism=True; runtime_s=0.077165
-CHECKER_PAYLOAD: {"active_corruption_probes":{"false_acceptances":0,"mutations":{"corrupt_count":false,"duplicate_and_omit_input_cell":false,"erase_affine_signal":false,"erase_boundary":false,"make_uniform_visible":false,"make_x0_necessary":false,"stale_declared_input_digest":false},"probe_count":7},"independent_expected":{"boundary_empty":false,"coefficient_patterns":[[["-1","2"],["1","-2"]]],"exact_970_ordered_pair_inputs":[0],"family_words":20,"fixed_inputs_with_witness":2,"input_cell_definitions":["p=0","0<p<1/2","p=1/2","1/2<p<1","p=1"],"input_cells":5,"input_family":"mu_p=p delta_0+(1-p) delta_1 for every real p in [0,1]","marginal_counts_by_representative":{"0":[6,192,"1"],"1":[6,192,"1"],"1/2":[0,0,"0"],"1/4":[6,192,"1/2"],"3/4":[6,192,"1/2"]},"state_changed_edge_pairs":384,"state_dependent_rows":12,"state_edge_pairs":7680,"state_rows":40,"symbolic_edge_pairs":3840,"symbolic_nonzero_edge_pairs":192,"x0_classification":"sufficient, not necessary, and merely convenient","zero_set":["1/2"]},"primary_cache_sha256":"01a2dc5631b69be72a833dac0c650dfc39955bb21f36586ed0e54f23c67c732c","primary_payload_matches":true,"primary_source_sha256":"9ccfcf9fcbe50244f96ab04407cad0aa44491bb5f3720281bc213f0c8a29b6fb","refute_spec_count":4}
+PASS R5_CONTROLS :: source_sha_match=True; canonical_cache_fresh=True; cache_payload_match=True; live_input_pins_match=True; Record_no_additivity_boundary=True; primary_certificates=4; determinism=True; runtime_s=0.185761
+CHECKER_PAYLOAD: {"active_corruption_probes":{"false_acceptances":0,"mutations":{"corrupt_count":false,"duplicate_and_omit_input_cell":false,"erase_affine_signal":false,"erase_boundary":false,"make_uniform_visible":false,"make_x0_necessary":false,"stale_declared_input_digest":false},"probe_count":7},"independent_expected":{"boundary_empty":false,"coefficient_patterns":[[["-1","2"],["1","-2"]]],"exact_970_ordered_pair_inputs":[0],"family_words":20,"fixed_inputs_with_witness":2,"input_cell_definitions":["p=0","0<p<1/2","p=1/2","1/2<p<1","p=1"],"input_cells":5,"input_family":"mu_p=p delta_0+(1-p) delta_1 for every real p in [0,1]","marginal_counts_by_representative":{"0":[6,192,"1"],"1":[6,192,"1"],"1/2":[0,0,"0"],"1/4":[6,192,"1/2"],"3/4":[6,192,"1/2"]},"state_changed_edge_pairs":384,"state_dependent_rows":12,"state_edge_pairs":7680,"state_rows":40,"symbolic_edge_pairs":3840,"symbolic_nonzero_edge_pairs":192,"x0_classification":"sufficient, not necessary, and merely convenient","zero_set":["1/2"]},"primary_cache_sha256":"9077f015d4ca3ff59a898634820b02a86c6cd2199903abbb34c04543dcbbf7fc","primary_payload_matches":true,"primary_source_sha256":"e768008585663482ab482b8bf63d01a0fbdd1fc16e7380d2ca19c29b7ccf747e","refute_spec_count":4}
 VERDICT: PRIMARY_SURVIVES_INDEPENDENT_REFUTATION_ATTEMPT
 per_element: checked and executed -- the independent Boolean reconstruction enumerated both target inputs and outcomes
 per_site: checked and executed -- all six target-neighbour directions on the declared star were enumerated

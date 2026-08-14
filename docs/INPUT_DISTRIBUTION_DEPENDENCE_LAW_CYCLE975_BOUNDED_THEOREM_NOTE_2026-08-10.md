@@ -66,6 +66,13 @@ audit result, or effective-status surface is edited. The sole control-plane
 edit is the claim-scoped packet-helper mapping required to expose the
 independent checker to the restricted audit packet.
 
+Record-boundary effect: none. The current Record axiom supplies no named
+scalar collection functional `I`, finite additivity, or value `I(empty)=0`,
+and this theorem uses none of them. The normalization of the explicitly
+declared finite input probability law `mu_p` is ordinary probability-measure
+structure within the theorem's boundary condition (and is compatible with
+the Admissibility reading note); it is not scalar Record-readout additivity.
+
 ## Exact gate family, input family, and caps
 
 Fix a target `a` in `Z^3` and its six neighbours `a+d`, where
@@ -206,9 +213,9 @@ Cycle-719 core is the sole executable science substrate. The
 authority. The explicit source/provenance read ledger contains exactly six
 files:
 
-1. Cycle-970 primary runner at commit `6fd0de0a288d212a4a6ce3fdd4dc9019f30dbbad`;
+1. Cycle-970 primary runner at main-contained commit `591b4364071e82de78ef6230dbeb00107688f9e2`;
 2. Cycle-970 theorem note at the same commit;
-3. Cycle-972 primary runner at commit `3826925e019c0e1966a9b85110a397db2c61d33f`;
+3. Cycle-972 primary runner at main-contained commit `84da60ec113bb4d23583f0c7a4921784dad55b2c`;
 4. Cycle-972 theorem note at the same commit;
 5. landed Cycle-719 two-rail recurrent controller core;
 6. current minimal-axiom memo.
@@ -222,9 +229,10 @@ independently pins the primary source and declared-input fingerprint.
 The independent checker imports neither primary nor core. It parses the
 primary as AST, reconstructs the 20 Boolean maps and every affine comparison,
 validates the source/cache/receipt bindings, and carries an explicit falsifier
-for every requested certificate. Five active corruptions—erased boundary,
-erased affine signal, false uniform visibility, false necessity of `x=0`, and
-a changed symbolic count—were all rejected.
+for every requested certificate. Seven active corruptions—erased boundary,
+erased affine signal, false uniform visibility, false necessity of `x=0`, a
+changed symbolic count, a duplicated/omitted input cell, and a stale declared
+input digest—were all rejected.
 
 ## Assumptions and imports
 
@@ -237,6 +245,7 @@ a changed symbolic count—were all rejected.
 | Cycle-972 XOR/covariance result | Historical residual and family choice | support-only provenance | pinned runner AST and note text | no | no | re-derived from Cycle 719 | not executed |
 | Common target law `mu_p` on compared branches | Controlled intervention family | explicit normalization/boundary condition | exact family declaration in this note | yes | yes | enlarge to condition-dependent joint inputs in a separate theorem | scoped explicitly |
 | Continuous `M_2(C)` probability law | Full Admissibility target | unsupported import if extrapolated | absent | no for bounded theorem | yes for Nature-grade closure | derive a full-domain covariant measure-valued law | remains open |
+| Record scalar `I`, finite additivity, or `I(empty)=0` | Record-readout structure | unsupported import if asserted | absent from current Record axiom and unused here | no | no | cite a separate retained authority if ever needed | excluded explicitly |
 
 No observational values, fitted selectors, literature values, or registered
 primitive edits enter the proof.
@@ -280,8 +289,8 @@ gate words, larger gate kinds, or the full possibility domain.
 
 | Cited provenance | Residual attacked there | Current residual | Match? | Disposition |
 |---|---|---|---|---|
-| `6fd0de0a:docs/INTER_SITE_GATE_CYCLE970_BOUNDED_THEOREM_NOTE_2026-08-09.md:99,120` | existence of a fixed-`x=0` state-resolved witness | boundary over every common `mu_p` | no | provenance only; zero witness weight |
-| `3826925e:docs/COVARIANT_DEPENDENCE_LAW_CYCLE972_BOUNDED_THEOREM_NOTE_2026-08-09.md:99,171-189` | covariance/uniqueness of XOR and the uniform `p=1/2` marginal | full one-parameter zero set and strength | partial only at `p=1/2` | provenance only; zero witness weight for the general law |
+| `591b4364:docs/INTER_SITE_GATE_CYCLE970_BOUNDED_THEOREM_NOTE_2026-08-09.md:99,120` | existence of a fixed-`x=0` state-resolved witness | boundary over every common `mu_p` | no | provenance only; zero witness weight |
+| `84da60ec:docs/COVARIANT_DEPENDENCE_LAW_CYCLE972_BOUNDED_THEOREM_NOTE_2026-08-09.md:99,171-189` | covariance/uniqueness of XOR and the uniform `p=1/2` marginal | full one-parameter zero set and strength | partial only at `p=1/2` | provenance only; zero witness weight for the general law |
 
   The current boundary therefore stands on its new exhaustive affine check,
   not on residual-mismatched prior conclusions.

@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/cube_step_rotation_covariance_2026_08_14.py
+runner_sha256: fb6cf5fa0a9fa7ed025039268cd11f690d22d50dfbc538020cedee12267f8424
+input_fingerprint_sha256: c1efbc9e7d86fcc2e41a54454144860654615fe3d22972e23ca5a5ecc088169d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+external_scientific_inputs: none
+package_local_integrity_reads: runner, note, axiom memo
+measure_boundary: exact Q cube-step covariance
+negative_scope: update covariance, not a TOE
+PASS: thm1-perm R is a 4-cycle on the z=0 face and permutes the cube
+PASS: thm2-256 R(step(s))=step(R(s)) on all 256 configs
+PASS: thm3-seed R sends seed (0,0,0) to (1,0,0)
+PASS: thm3-pattern rotated step-1 equals step of rotated seed
+PASS: thm4-empty empty cube is fixed by R and step
+PASS: mutation-cov-fails predicate some config fails covariance must fail
+PASS: mutation-seed-stay-fails predicate seed stays at origin under R must fail
+PASS: quoted note quotes lock, permanence, and NN distribution
+PASS: boundary not TOE, no forbidden phrases
+PASS: memo-silent axioms do not name the covariance
+PASS: gates identity gates present
+per_element: checked exactly — 256 occupancy configs
+per_site: checked exactly — 8 cube sites
+per_mode: checked exactly — one 90° generator
+per_block: checked exactly — covariance of step, not of n
+lattice_wide: checked and not executed — not a TOE
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/two_cube_l1_saturates_at_tick4_2026_08_14.py
+runner_sha256: 3f6e0f62d7cbe08027b475626ec9626ec8fb17e98d02451e32c9319e17bcd3d0
+input_fingerprint_sha256: e2668e0a7c935f3f429ed638bf94c882f349c00c804f93158bb0fab7f64b5145
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.07
+status: ok
+----- stdout -----
+PASS: thm0 Lattice quote present
+PASS: hygiene avoids 'G_N'
+PASS: hygiene avoids '1/r'
+PASS: hygiene avoids '1/r^2'
+PASS: hygiene avoids 'Lattice-named'
+PASS: hygiene avoids 'not a TOE'
+PASS: hygiene avoids 'exhausted'
+PASS: hygiene avoids 'only route'
+PASS: hygiene avoids 'we adopt'
+PASS: hygiene avoids 'Codex'
+PASS: hygiene avoids 'L_phys'
+PASS: thm1 12 locks at t=4
+PASS: thm1 all patch vertices locked
+PASS: thm2 rho A=8 B=8
+PASS: thm2 F=11
+per_mode: saturation
+per_block: tick 4
+lattice_wide: checked and not executed
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

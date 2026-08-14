@@ -373,7 +373,7 @@ physical impossibility claim and remains unresolved here.
 | Earlier surface | Rechecked lesson |
 |---|---|
 | Aug 10 type separation | a menu restriction kernel must not be silently retyped as an effect-only global value |
-| Aug 12 barycenter evaluation | a different exact menu kernel can arise from a menu-dependent barycenter and a fixed effect functional |
+| Aug 12 barycenter evaluation | a different exact menu kernel can arise from a fixed supplied barycenter and effect evaluation |
 | current Aug 13 Record simplification | content determines a readout value, while no named scalar functional, additivity rule, or value for absence is supplied |
 
 **Gate disposition:** PASS for Theorems 1–3 as narrowed. FAIL for the original

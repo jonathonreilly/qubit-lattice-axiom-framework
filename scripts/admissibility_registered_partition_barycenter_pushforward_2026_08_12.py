@@ -21,21 +21,27 @@ NOTE_PATH = (
     / "ADMISSIBILITY_REGISTERED_PARTITION_BARYCENTER_PUSHFORWARD_BOUNDED_THEOREM_NOTE_2026-08-12.md"
 )
 AXIOM_PATH = ROOT / "docs" / "MINIMAL_AXIOMS_2026-06-29.md"
-PARENT_AUG09_PATH = (
+PARENT_BARYCENTER_PATH = (
     ROOT
     / "docs"
-    / "BORN_FORM_FROM_BINARY_TERNARY_SCALED_PROJECTOR_FRAME_LIFT_BOUNDED_THEOREM_NOTE_2026-08-09.md"
+    / "ADMISSIBILITY_BARYCENTER_EVALUATION_MENU_KERNEL_BOUNDED_THEOREM_NOTE_2026-08-12.md"
 )
 PARENT_AUG10_PATH = (
     ROOT
     / "docs"
     / "ADMISSIBILITY_GLOBAL_MEASURE_MENU_KERNEL_TYPE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-08-10.md"
 )
+PARENT_RECORD_PATH = (
+    ROOT
+    / "docs"
+    / "RECORD_CONTENT_ONLY_SHARED_EFFECT_DESCENT_BOUNDED_THEOREM_NOTE_2026-08-12.md"
+)
 
 AUDIT_INPUT_PATHS = (
     "docs/ADMISSIBILITY_REGISTERED_PARTITION_BARYCENTER_PUSHFORWARD_BOUNDED_THEOREM_NOTE_2026-08-12.md",
     "docs/ADMISSIBILITY_GLOBAL_MEASURE_MENU_KERNEL_TYPE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-08-10.md",
-    "docs/BORN_FORM_FROM_BINARY_TERNARY_SCALED_PROJECTOR_FRAME_LIFT_BOUNDED_THEOREM_NOTE_2026-08-09.md",
+    "docs/ADMISSIBILITY_BARYCENTER_EVALUATION_MENU_KERNEL_BOUNDED_THEOREM_NOTE_2026-08-12.md",
+    "docs/RECORD_CONTENT_ONLY_SHARED_EFFECT_DESCENT_BOUNDED_THEOREM_NOTE_2026-08-12.md",
     "docs/MINIMAL_AXIOMS_2026-06-29.md",
 )
 
@@ -184,6 +190,21 @@ def prefix_sums(state: H2, menu: tuple[H2, ...]) -> tuple[Fraction, ...]:
     return tuple(totals)
 
 
+def assigned_cell(
+    state: H2, menu: tuple[H2, ...], t: Fraction
+) -> int | None:
+    """Exact cell index for the half-open cells with t=1 in the last cell."""
+    if t < 0 or t > 1:
+        return None
+    prefixes = prefix_sums(state, menu)
+    last = len(menu) - 1
+    for index in range(len(menu)):
+        left, right = prefixes[index], prefixes[index + 1]
+        if left <= t and (t < right or (index == last and t <= right)):
+            return index
+    return None
+
+
 def pushforward(
     weights_states: tuple[tuple[Fraction, H2], ...],
     menu: tuple[H2, ...],
@@ -240,13 +261,14 @@ def main() -> int:
     checks = Checks()
     note = NOTE_PATH.read_text(encoding="utf-8")
     axiom = AXIOM_PATH.read_text(encoding="utf-8")
-    parent_aug09 = PARENT_AUG09_PATH.read_text(encoding="utf-8")
+    parent_barycenter = PARENT_BARYCENTER_PATH.read_text(encoding="utf-8")
     parent_aug10 = PARENT_AUG10_PATH.read_text(encoding="utf-8")
+    parent_record = PARENT_RECORD_PATH.read_text(encoding="utf-8")
     for relative in AUDIT_INPUT_PATHS:
         (ROOT / relative).read_text(encoding="utf-8")
 
     print(
-        "external_scientific_inputs: axiom wording and the two parent notes "
+        "external_scientific_inputs: axiom wording and the three parent notes "
         "are source-bound; no observational or fitted inputs"
     )
     print(
@@ -255,7 +277,21 @@ def main() -> int:
     )
     print(
         "negative_scope: Dirac pushforwards on D or X are {0,1}-valued; "
-        "product lifts remain live"
+        "stochastic kernels, atomless laws, and product lifts remain live"
+    )
+
+    checks.check(
+        "audit-input-paths",
+        "declared inputs bind the note, current axioms, and all three direct parents",
+        AUDIT_INPUT_PATHS
+        == (
+            "docs/ADMISSIBILITY_REGISTERED_PARTITION_BARYCENTER_PUSHFORWARD_BOUNDED_THEOREM_NOTE_2026-08-12.md",
+            "docs/ADMISSIBILITY_GLOBAL_MEASURE_MENU_KERNEL_TYPE_SEPARATION_BOUNDED_THEOREM_NOTE_2026-08-10.md",
+            "docs/ADMISSIBILITY_BARYCENTER_EVALUATION_MENU_KERNEL_BOUNDED_THEOREM_NOTE_2026-08-12.md",
+            "docs/RECORD_CONTENT_ONLY_SHARED_EFFECT_DESCENT_BOUNDED_THEOREM_NOTE_2026-08-12.md",
+            "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        )
+        and all((ROOT / relative).is_file() for relative in AUDIT_INPUT_PATHS),
     )
 
     canonical_sentence = (
@@ -267,9 +303,24 @@ def main() -> int:
         "the current distribution sentence is pinned in the axiom memo and the note",
         canonical_sentence in normalize(axiom) and canonical_sentence in note,
     )
+    record_section = axiom.split("### Record / Fixed Reality", 1)[1].split(
+        "## Qualification", 1
+    )[0]
+    normalized_record_section = normalize(record_section)
+    checks.check(
+        "source-record-simplification",
+        "Record supplies content determination and no named scalar, additivity, or absence-value rule",
+        "A readout value is determined by record content alone."
+        in normalized_record_section
+        and "A site with no record cannot be read." in normalized_record_section
+        and all(
+            token not in record_section
+            for token in ("I(", "I(empty)", "additiv", "scalar")
+        ),
+    )
     checks.check(
         "source-parents",
-        "Aug 10 has restriction witness and partition language; Aug 9 has menu-independent Tr form",
+        "Aug 10 supplies the partition residual, barycenter parent the grade, and Record parent the event/readout boundary",
         all(
             phrase in parent_aug10
             for phrase in (
@@ -280,7 +331,14 @@ def main() -> int:
                 "partition",
             )
         )
-        and all(phrase in parent_aug09 for phrase in ("menu-independent", "Tr(")),
+        and all(
+            phrase in parent_barycenter
+            for phrase in ("menu-independent", "Tr(", "restriction is not this kernel")
+        )
+        and all(
+            phrase in parent_record
+            for phrase in ("formation/event probability", "direct readout values")
+        ),
     )
 
     n1x, n1z = Qsqrt2(Fraction(0), Fraction(4, 9)), Qsqrt2(Fraction(-7, 9))
@@ -341,11 +399,23 @@ def main() -> int:
         if any(prefixes[i] > prefixes[i + 1] for i in range(len(prefixes) - 1)):
             return False
         lengths = [interval_length(state, menu, i) for i in range(len(menu))]
-        return sum(lengths) == 1 and all(length >= 0 for length in lengths)
+        if sum(lengths) != 1 or any(length < 0 for length in lengths):
+            return False
+        boundary_cells = [assigned_cell(state, menu, point) for point in prefixes]
+        midpoint_cells = [
+            assigned_cell(state, menu, (prefixes[i] + prefixes[i + 1]) / 2)
+            for i in range(len(menu))
+        ]
+        return (
+            boundary_cells[0] == 0
+            and boundary_cells[-1] == len(menu) - 1
+            and boundary_cells[1:-1] == list(range(1, len(menu)))
+            and midpoint_cells == list(range(len(menu)))
+        )
 
     checks.check(
         "partition-cover",
-        "prefix sums start at 0, end at 1, are nondecreasing; interval lengths sum to 1 on both menus",
+        "all cells including t=1 give an exact disjoint cover and interval lengths sum to 1 on both menus",
         all(
             cover_ok(state, menu)
             for state in (MIXED, biased, biased2)
@@ -478,7 +548,7 @@ def main() -> int:
             for phrase in (
                 "actual_current_surface_status: bounded-support",
                 "target_claim_type: bounded_theorem",
-                "hypothetical_axiom_status: \"no edit\"",
+                "hypothetical_axiom_status: \"no edit, adoption, minimality, or necessity claim\"",
                 "trace_class: direct_blocker_closure",
                 "target_claim_id: admissibility_distribution_to_effect_grade_bridge",
                 "reachability_to_target: partially_closes",
@@ -489,8 +559,10 @@ def main() -> int:
                 "509/200",
                 "Dirac obstruction",
                 "product registration",
+                "Borel",
+                "newly supplied mathematical input",
                 "not a physical menu compiler",
-                "not a Record-content identification",
+                "not a Record-content identification or direct readout law",
                 "Non-affine kernels remain live",
                 "authors no audit verdict",
             )
@@ -502,6 +574,23 @@ def main() -> int:
         and "new axiom" not in note.lower()
         and "Codex" not in note,
     )
+    checks.check(
+        "no-go-discipline-contract",
+        "the source carries N1 through N8, distinct live routes, and the narrowed gate disposition",
+        all(f"### N{index}" in note for index in range(1, 9))
+        and all(
+            phrase in note
+            for phrase in (
+                "stochastic/Markov readout kernel",
+                "non-atomic auxiliary coordinate",
+                "fixed non-atomic law",
+                "operator-valued or Naimark event model",
+                "There is one wall",
+                "PASS for the scoped Dirac obstruction",
+                "FAIL / DO NOT SHIP",
+            )
+        ),
+    )
 
     print(
         "per_element: E_0 and remaining declared menu members checked by fiber "
@@ -512,8 +601,8 @@ def main() -> int:
         "are one-site statements"
     )
     print(
-        "per_mode: prefix-sum fibers on the declared menus; optional embedding "
-        "uses an imag-multiple-of-I coordinate"
+        "per_mode: checked and not executed — no spectral-mode or harmonic-mode "
+        "exhaustion claim is part of the theorem"
     )
     print(
         "per_block: only the atomic-support partition obstruction and the product "

@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/record_content_only_shared_effect_descent_2026_08_12.py
 runner_sha256: 86679823ec3e51d734615f5270c20d3200d11f9348972c57bfb1350c2e48b9fc
-input_fingerprint_sha256: 2dcc2b4b019296cf466e54e096e16966bc3419b315b4bc16bd7cf84216df9c05
+input_fingerprint_sha256: 6a17d1fe13d4cbb58066b68254cd75223ad818462cec31fc573f2d10ea67eded
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 external_scientific_inputs: current Record wording and the Aug 10 menus/atomic masses are source-bound; no observational or fitted inputs are used

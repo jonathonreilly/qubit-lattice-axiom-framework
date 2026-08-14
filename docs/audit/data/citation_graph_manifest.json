@@ -1,6 +1,6 @@
 {
- "edge_count": 15835,
- "node_count": 5517,
+ "edge_count": 15840,
+ "node_count": 5518,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -436,6 +436,10 @@
   },
   "admissibility_global_measure_menu_kernel_type_separation_bounded_theorem_note_2026-08-10": {
    "deps_hash": "7026e4c03122",
+   "out_degree": 5
+  },
+  "admissibility_incidence_fierz_pauli_signed_record_source_full_tensor_cadence_boundary_bounded_theorem_note_2026-08-14": {
+   "deps_hash": "602588cd2a6d",
    "out_degree": 5
   },
   "admissibility_interacting_record_spatial_gluing_phase_response_selection_boundary_bounded_theorem_note_2026-08-10": {

@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/physical_cell_cutting_proper_rotation_half_cycle778_2026_08_11.py
+runner_sha256: 5970ea5dde6b962b951d467f6803b286671737f19967f9b05519ae4117702ab3
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 15.60
+status: ok
+----- stdout -----
+PASS J0 rebuilt: 2672 unimodular pieces, floor 6 with 400 there, 15800 cuttings of 24, 192 pieces in 1975 each, 192 covers, group 384
+PASS J1 cofactor determinant equals axis-move sign times minus one to the flip count on 384 of 384 maps; parity-dropped form misses 192
+PASS J2 the plus-one half is closed of order 192 and index 2, normal under all 384 conjugations; cover holder -1, piece holder 1
+PASS J3 under the half: covers 1 orbit of 192 with holder order 1; pieces 2 orbits of 96 with holder order 2
+PASS J4 cross rules both wrong: piece rule on covers says 2 against 1 seen, cover rule on pieces says 1 against 2 seen; own rules right
+PASS J5 the pair action is free: 192 orbit tables, every orbit of size 192, 36864 entries summing to the all-ones table
+PASS J6 row degree 1 and nonzero column degree 2 measured; row sum 8 over 1 wants 8 labels once, column sum 8 over 2 wants 4 labels twice
+PASS J7 tables split 96 and 96 by target orbit with 2 hits per own-orbit piece; 4 plus 4 unions are 8-regular; 3321960 squared = 11035418241600
+PASS J8 the cover incidence meets exactly 8 of the 192 tables, each met table lies wholly inside it, and the 8 sum back to it
+PASS J9 row census 192, one member for each of the 192 covers, and every member draws 4 tables from each of the two groups
+PASS J10 column census 16 on each piece orbit and 256 in product; each comes from one of the 16 piece columns the piece holder leaves alone
+PASS J11 the row census and the column census cross in exactly 2 members; the cover incidence is in the row census and in the crossing
+PASS J12 equivariant cover maps 192; piece maps 128 = 64 orbit-preserving plus 64 orbit-swapping, gated on 192 maps; orbits alike
+PASS J13 24576 candidate pairs, exactly 2 intertwining, each winner the pair of actions of one of the 2 central maps of the group
+PASS J14 class 12 unsplit, centraliser 32 outside the half, normalizer 16, index 8, fixes 16 pieces as 8+8 and 0 covers; flip 96/0/48
+PASS J15 none constant on an orbit: det sign -1/1 and -1/1, even corners 2/3 and 2/3, index parity 0/1 and 0/1, coordinate parity 0/1 and 0/1
+PASS J16 760 single-table swaps inside the same group tested and 760 rejected by the row census test
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

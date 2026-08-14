@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/two_cube_l1_tick4_last_site_2026_08_14.py
+runner_sha256: 31e41ceb1638abb010e96176535e57fe90099ae094437bdbc1d6bbc994a80323
+input_fingerprint_sha256: eccb2f5e3d1779dc9fc5f3e8ac3e065b9a574bf2f7ff9adb67f0a0db87742de0
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+PASS: thm0 Lattice quote present
+PASS: hygiene avoids 'G_N'
+PASS: hygiene avoids '1/r'
+PASS: hygiene avoids '1/r^2'
+PASS: hygiene avoids 'Lattice-named'
+PASS: hygiene avoids 'not a TOE'
+PASS: hygiene avoids 'exhausted'
+PASS: hygiene avoids 'only route'
+PASS: hygiene avoids 'we adopt'
+PASS: hygiene avoids 'Codex'
+PASS: hygiene avoids 'L_phys'
+PASS: thm1 (2,1,1) unread at t=3
+PASS: thm1 (2,1,1) locked at t=4
+PASS: thm2 tick4 forms only that site
+PASS: thm2 k=3
+per_mode: last site
+per_block: tick 4
+lattice_wide: checked and not executed
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

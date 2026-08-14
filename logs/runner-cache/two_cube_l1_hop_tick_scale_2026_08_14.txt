@@ -1,0 +1,46 @@
+===== runner cache v1 =====
+runner: scripts/two_cube_l1_hop_tick_scale_2026_08_14.py
+runner_sha256: a965d34bef625ef23ebba3147b91e28309354dfc3c2916a76ab83bf8b54703da
+input_fingerprint_sha256: f5941633b30b4eca02da76a322292ad352f150db9a09bcd879c3104719c1ceaa
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+Two-cube L1 hop-to-tick scale
+AUDIT_INPUT_PATHS:
+  docs/TWO_CUBE_L1_HOP_TICK_SCALE_BOUNDED_THEOREM_NOTE_2026-08-14.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+scope: supplied two-cube and saturated nearest-neighbor causal front; no physical clock metric
+computed_first_lock_axis: (1, 0, 0)->1, (2, 0, 0)->2
+fitting_scales_in_(1, 2, 3): (1,)
+PASS: audit-input-paths-exist
+PASS: audit-input-paths-unique-normalized
+PASS: audit-timeout-declared
+PASS: two-cube-has-twelve-sites  (|S|=12)
+PASS: axis-l1-distances  (d((1, 0, 0))=1, d((2, 0, 0))=2)
+PASS: axis-are-nearest-neighbor-hops
+PASS: theorem1-p1-unread-at-0-locked-at-1  (rho0=0 rho1=1 phi=1)
+PASS: theorem2-p2-unread-before-2-locked-at-2  (phi=2)
+PASS: theorem3-a1-fits-both-axis-sites
+PASS: theorem3-a2-would-lock-p1-at-tick-2
+PASS: theorem3-unique-a-in-1-2-3-is-1  (fitting=(1,))
+PASS: never-earlier-than-l1
+PASS: rho-and-phi-are-history-not-line
+PASS: not-single-snapshot-leftover
+PASS: source-lattice-sentence-current
+PASS: source-record-unread-lock-current
+PASS: note-machine-status-complete
+PASS: import-boundary-and-no-axiom-edit
+PASS: forbidden-phrases-absent  (hits=[])
+per_element: checked — occupancy and first-lock time are evaluated at every two-cube site through tick 2
+per_site: checked — seed, (1,0,0), and (2,0,0) are resolved on S
+per_mode: not applicable — no spectral decomposition is used
+per_block: checked — only the supplied two-cube and a in {1,2,3} are enumerated
+lattice_wide: checked and not executed — no Z^3 formation kernel or physical clock is claimed
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

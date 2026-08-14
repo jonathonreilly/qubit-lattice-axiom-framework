@@ -1,52 +1,52 @@
 ===== runner cache v1 =====
 runner: scripts/record_additivity_does_not_supply_newton_product_2026_08_13.py
-runner_sha256: dad5756f9fb2355213e7a1f3a1699c34d62c78e6f1482dbd08427720c2a04255
-input_fingerprint_sha256: 8f997a9a8e0e64db6027a8c0da726534f3a2aa05259df23d9bf8dffbd01def24
+runner_sha256: 25f4d39b92355cbad127d6c8739af93fc7030c61c2a72958f5a5e7b7f97d9ba2
+input_fingerprint_sha256: bbfdc4ede3d7740f3919001ff934799aa3469579e876b5f7481fb0de568c261d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.24
+elapsed_sec: 0.26
 status: ok
 ----- stdout -----
-external_scientific_inputs: current Record additivity and the Newton kernel/non-claims are source-bound; no observational or fitted inputs are used
-package_local_integrity_reads: the proposed source note is read for claim-surface consistency; no runner cache is written
-negative_scope: only I-on-the-union as a product law is rejected; a two-argument pairing remains a live formal escape; gravity is not claimed impossible
-PASS: audit-input-paths declared audit inputs exist and match the note, axiom memo, and Newton packet
-PASS: source-record-additivity the exact current Record additivity sentence is present in the axiom memo
-PASS: source-newton-nonclaim-product the Newton packet lists the physical product law as a non-claim
-PASS: source-newton-nonclaim-force the Newton packet lists F = -M_test grad(phi) as a non-claim
-PASS: empty-readout I(empty)=0
-PASS: disjoint-additivity I(A union B)=I(A)+I(B) on disjoint unit-atom collections
-PASS: overlap-rejected union is refused when labels are not disjoint
-PASS: rejector-disjoint each rejector pair is pairwise disjoint
-PASS: rejector-disjoint each rejector pair is pairwise disjoint
-PASS: rejector-disjoint each rejector pair is pairwise disjoint
-PASS: union-sum-only I(S union T) equals the sum m_s+m_t on the three rejector pairs
-PASS: union-cannot-distinguish I(S union T) cannot distinguish (2,0), (1,1), (0,2)
-PASS: product-from-factors m_s m_t recomputed from the two readouts is 0, 1, 0
-PASS: product-distinguishes m_s m_t distinguishes (1,1) from (2,0) and from (0,2)
-PASS: no-function-of-the-sum no function of the single scalar I(S union T) can equal the three products
-PASS: trial-maps-fail identity, constant-1, and sigma(sigma-2) all miss the product triple
-PASS: lumped-and-rational lumped (2,0),(1,1),(0,2),(3/2,1/2) keep union sum 2 and products 0,1,0,3/4
-PASS: green-kernel supplied kernel is 1/(4 pi r) and phi is source-linear
-PASS: green-gradient-source-only d phi / dr = -m_s/(4 pi r^2) with no m_t factor
-PASS: green-misses-product Green |grad phi| coefficients are 2,1,0; product-law coefficients are 0,1,0
-PASS: pairing-is-bilinear B(S,T)=I(S)I(T) returns the product triple and is not I on the union
-PASS: note-preserves-empty the note records I(empty)=0
-PASS: note-preserves-force-and-product the note records F = -M_test and M_source M_test
-PASS: note-preserves-additivity-sentence the note quotes the current Record additivity sentence
-PASS: note-links-parents the note links the axiom memo and the Newton packet
-PASS: claim-type-contract the author hint uses the exact bounded-theorem enum
-PASS: machine-status-contract the source uses the controlled bounded-support fields
-PASS: note-three-pair-rejector the note exhibits (2,0), (1,1), (0,2) and I(S∪T)
-PASS: note-does-not-forbid-gravity the note states the scoped gap and does not claim gravity is impossible
-PASS: forbidden-rhetoric-absent the note avoids axiom-adoption, promotion, executor-name, and Einstein-derived rhetoric
-PASS: canonical-nonmutation the pairing escape is absent from the canonical axiom file
-PASS: newton-kernel-bound the Newton packet still states the source-linear kernel algebra
-per_element: each rejector pair is evaluated under I(union) and under I(S)I(T)
-per_site: the statements are collection-level; no composite carrier is asserted
-per_mode: no spectral-mode exhaustion is claimed
-per_block: only additivity-versus-product versus the Green pairing is tested
-lattice_wide: checked and not executed — no lattice-wide gravity or Einstein equation is claimed
+external_scientific_inputs: the current Record boundary and bounded Newton kernel/non-claims are source-bound; the finite-additive functional is an explicit conditional model; no observation or fit is used
+package_local_integrity_reads: the note, current minimal axiom, and Newton parent are read; no cache or governance surface is written
+negative_scope: only recovery of a two-body product from one pooled scalar is rejected on the stated free model; separate evaluation and response-law composition remain live
+PASS: audit-input-paths declared inputs are exactly the note, current axiom, and Newton parent
+PASS: current-record-boundary the approved authority states content-only readability and unreadability at absence
+PASS: finite-additivity-excluded the authority explicitly excludes finite additivity, named I, and I(empty)=0
+PASS: removed-record-premise-absent the superseded finite-additivity sentence is absent
+PASS: newton-nonclaims the Newton parent leaves both test response and the physical product open
+PASS: conditional-empty the supplied model has I(empty)=0
+PASS: conditional-additivity the weighted model is finite-additive on disjoint collections
+PASS: disjoint-domain the constructed union refuses overlapping labels
+PASS: pooled-collision (2,0), (1,1), and (0,2) all expose pooled value 2
+PASS: product-separation their separately evaluated products are 0, 1, 0
+PASS: arbitrary-function-rejector one function of the common pooled input cannot return both 0 and 1
+PASS: named-pooled-trials identity, constant, and nonlinear pooled trials each miss the product triple
+PASS: diagonal-escape on m_s=m_t the product is (sigma/2)^2
+PASS: diagonal-escape on m_s=m_t the product is (sigma/2)^2
+PASS: diagonal-escape on m_s=m_t the product is (sigma/2)^2
+PASS: fixed-test-escape with externally fixed m_t, the product is m_t(sigma-m_t)
+PASS: fixed-test-escape with externally fixed m_t, the product is m_t(sigma-m_t)
+PASS: fixed-test-escape with externally fixed m_t, the product is m_t(sigma-m_t)
+PASS: second-statistic-escape sigma and delta recover the product as (sigma^2-delta^2)/4
+PASS: second-statistic-escape sigma and delta recover the product as (sigma^2-delta^2)/4
+PASS: second-statistic-escape sigma and delta recover the product as (sigma^2-delta^2)/4
+PASS: separate-product-definition separate evaluation gives B_I(S,T)=I(S)I(T)
+PASS: separate-additivity-source B_I is additive in the source argument
+PASS: separate-additivity-test B_I is additive in the test argument
+PASS: source-linear-kernel the parent kernel gives |grad phi|=m_source/(4 pi r^2)
+PASS: conditional-test-response supplying test response produces the two-mass product
+PASS: note-claim-contract the note states the conditional theorem, escape, and physical residual
+PASS: note-dependency-contract frontmatter names only the current axiom boundary and Newton parent
+PASS: note-machine-contract the note uses controlled bounded-support fields
+PASS: note-no-go-contract the note records all eight stress-test sections
+PASS: forbidden-broad-rhetoric the source avoids the rejected broad claims
+PASS: newton-parent-contract the cited parent retains its exact source-linear algebra
+per_element: checked — each atom weight and every rejector scalar is evaluated exactly over the rationals
+per_site: checked and not executed — the conditional collection model carries labels but asserts no site-local physical readout
+per_mode: checked and not executed — no spectral or Fourier decomposition is used or excluded
+per_block: checked — pooled and separately accessible two-collection interfaces are evaluated independently
+lattice_wide: checked and not executed — no lattice dynamics, two-body response, or gravity closure is claimed
 TOTAL: PASS=32 FAIL=0
 
 ----- stderr -----

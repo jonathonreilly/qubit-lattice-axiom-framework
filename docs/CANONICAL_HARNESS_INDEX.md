@@ -7,6 +7,7 @@ Use this file to find the current canonical note/runner pair on `main`.
 | lane | authority | primary runner |
 |---|---|---|
 | weak-field gravity | [SELF_CONSISTENCY_FORCES_POISSON_NOTE.md](SELF_CONSISTENCY_FORCES_POISSON_NOTE.md), [POISSON_EXHAUSTIVE_UNIQUENESS_NOTE.md](POISSON_EXHAUSTIVE_UNIQUENESS_NOTE.md), [NEWTON_LAW_DERIVED_NOTE.md](NEWTON_LAW_DERIVED_NOTE.md) | `frontier_self_consistent_field_equation.py`, `frontier_poisson_exhaustive_uniqueness.py`, `frontier_newton_derived.py` |
+| conditional pooled finite-additive readout / two-body-product non-identifiability | [RECORD_ADDITIVITY_DOES_NOT_SUPPLY_NEWTON_PRODUCT_BOUNDED_THEOREM_NOTE_2026-08-13.md](RECORD_ADDITIVITY_DOES_NOT_SUPPLY_NEWTON_PRODUCT_BOUNDED_THEOREM_NOTE_2026-08-13.md) | `record_additivity_does_not_supply_newton_product_2026_08_13.py` |
 | restricted strong-field gravity | [RESTRICTED_STRONG_FIELD_CLOSURE_NOTE.md](RESTRICTED_STRONG_FIELD_CLOSURE_NOTE.md) | `frontier_oh_static_constraint_lift.py`, `frontier_oh_schur_boundary_action.py`, `frontier_star_supported_bridge_class.py` |
 | exact native `SU(2)` | [NATIVE_GAUGE_CLOSURE_NOTE.md](NATIVE_GAUGE_CLOSURE_NOTE.md) | `frontier_non_abelian_gauge.py` |
 | graph-first structural `SU(3)` | [GRAPH_FIRST_SU3_INTEGRATION_NOTE.md](GRAPH_FIRST_SU3_INTEGRATION_NOTE.md) | `frontier_graph_first_su3_integration.py` |

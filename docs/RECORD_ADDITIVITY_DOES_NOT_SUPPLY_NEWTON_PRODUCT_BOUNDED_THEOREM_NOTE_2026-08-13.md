@@ -1,288 +1,330 @@
 ---
 claim_id: record_additivity_does_not_supply_newton_product_bounded_theorem_note_2026-08-13
 claim_type: bounded_theorem
-claim_scope: "Scalar Record additivity supplies I(S∪T)=I(S)+I(T) on disjoint finite collections, a function of the sum only. That single scalar cannot separate (m_s,m_t)=(2,0) from (1,1) from (0,2), so it cannot equal the product m_s m_t. The Newton kernel Green pairing remains source-linear and does not produce a test-mass factor. A declared pairing π(S,T)=I(S)I(T) would be a second object; this note does not install that pairing, edit an axiom, or claim gravity is impossible."
+claim_scope: "Conditional on a separately supplied finite-additive scalar functional I with I(empty)=0, the pooled value I(S disjoint-union T) does not in general identify I(S)I(T): the free count model realizes (2,0), (1,1), and (0,2) at the same pooled value with different products. Separate evaluation of I on an ordered source/test pair does canonically define the product by ordinary scalar multiplication, so no abstract pairing is missing. The physical Newton residual is instead the source/test typing, mass-readout identification, and test-body response law. Current Record supplies none of the finite-additive scalar premise."
 upstream_dependencies:
   - minimal_axioms
   - newton_law_derived_note
 runner: scripts/record_additivity_does_not_supply_newton_product_2026_08_13.py
 ---
 
-# Record Additivity Does Not Supply The Newton Product
+# Pooled Finite-Additive Readout Does Not Identify A Two-Body Product
 
 **Date:** 2026-08-13
 **Type:** bounded_theorem
-**Scope:** finite exact algebra of scalar Record additivity versus the
-bilinear product `m_s m_t` used by a Newton test-mass factor.
-**Audit-status authority:** independent audit lane only. This note authors no
-audit verdict and predicts none.
+**Scope:** exact conditional algebra for a separately supplied finite-additive
+scalar functional, plus the boundary to the current Record axiom and the
+Newton potential-kernel packet.
 **Primary runner:**
 [`scripts/record_additivity_does_not_supply_newton_product_2026_08_13.py`](../scripts/record_additivity_does_not_supply_newton_product_2026_08_13.py)
+**Runner cache:**
+[`logs/runner-cache/record_additivity_does_not_supply_newton_product_2026_08_13.txt`](../logs/runner-cache/record_additivity_does_not_supply_newton_product_2026_08_13.txt)
 
 ## Result Up Front
 
-The current Record axiom in
-[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) supplies a
-single additive scalar on finite pairwise-disjoint record collections:
+The current Record axiom does **not** contain a named scalar collection
+functional `I`, finite additivity, or `I(empty)=0`. The current authority
+[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) instead says
+that only records are readable, a readout value is determined by record
+content alone, and a site with no record cannot be read. Therefore every
+result below is conditional on a separately supplied mathematical input:
 
-> For any finite collection of pairwise-disjoint records, scalar readout
-> `I` is additive, with `I(empty)=0`.
+> **Finite-additive scalar hypothesis.** On a supplied class of finite record
+> collections, `I` is scalar-valued, `I(empty)=0`, and
+> `I(A disjoint-union B)=I(A)+I(B)` for disjoint `A,B`.
 
-Let `S` and `T` be finite pairwise-disjoint record collections, and write
-`I(S)=m_s`, `I(T)=m_t` for formal integers or rationals. Additivity forces
+Under this hypothesis, the pooled statistic
 
-`I(S∪T)=I(S)+I(T)=m_s+m_t`.
+`sigma := I(S disjoint-union T)=I(S)+I(T)`
 
-Any function of that one scalar is a function of the sum only. It cannot
-separate the three pairs `(m_s,m_t)=(2,0)`, `(1,1)`, `(0,2)`, which share
-the same union readout `2`. The products of those pairs are `0`, `1`, `0`.
-Therefore no function of `I(S∪T)` equals `m_s m_t` on those three inputs.
+does not in general determine the product `I(S)I(T)`. In the free count model,
+the ordered pairs `(2,0)`, `(1,1)`, and `(0,2)` all have `sigma=2`, while
+their products are `0,1,0`. Thus no single-valued `f(sigma)` equals the
+product on all three pairs.
 
-The Newton potential-kernel packet
-[`NEWTON_LAW_DERIVED_NOTE.md`](NEWTON_LAW_DERIVED_NOTE.md) already records
-the source-linear Green pairing
+That narrow result does **not** mean the functional `I` lacks a product on
+separately accessible inputs. Given an ordered pair `(S,T)`, ordinary scalar
+multiplication canonically defines
 
-`G(r)=1/(4 pi r)`, `phi=m_s G`, `|grad phi|=m_s/(4 pi r^2)`.
+`B_I(S,T):=I(S)I(T)`.
 
-That gradient still carries no test-mass factor. Multiplying by `m_t` is an
-extra bilinear map `B(S,T)=I(S)I(T)`, which is not determined by `I` on the
-union. The same packet lists both `F = -M_test grad(phi)` and the physical
-product law `M_source M_test` among its non-claims.
+Finite additivity makes `B_I` separately additive in each collection
+argument. No new abstract bilinear pairing rule is needed. What remains open
+for Newton physics is the bridge that identifies separately accessible record
+content as source mass and test mass, supplies their physical source/test
+roles, and derives the response rule `F=-M_test grad(phi)`.
 
-If a second readout of `T`, or a declared pairing `π(S,T)`, is supplied,
-then `B=I(S)I(T)` is well-defined as a two-argument map. That pairing is
-the missing object. It is not `I` on `S∪T`, is not installed here, and is
-not claimed to be physical.
+The Newton packet
+[`NEWTON_LAW_DERIVED_NOTE.md`](NEWTON_LAW_DERIVED_NOTE.md) supplies only the
+source-linear potential-kernel algebra. It already lists both the test-body
+response rule and the physical two-mass product law as non-claims. This note
+does not close either one and does not say gravity is impossible.
 
-This is a scoped algebraic gap. It does not say gravity is impossible.
-
-## Machine Status
+## Machine Status And Trace
 
 ```yaml
 actual_current_surface_status: bounded-support
 target_claim_type: bounded_theorem
-claim_type_reason: "I on a disjoint union is the sum, and the three-pair rejector shows that sum cannot equal the product. The Newton Green pairing remains source-linear. A two-argument pairing would supply B=I(S)I(T) but is not Record additivity."
+claim_type_reason: "The free finite-additive count model proves exact pooled-statistic non-identifiability, while separate evaluation canonically supplies the scalar product. The finite-additive functional and every physical source/test bridge remain explicit conditions."
 trace_class: negative_route_pruning
-target_claim_id: record_additivity_does_not_supply_newton_product
-target_blocker_text: "decide whether scalar Record additivity yields the Newton product M_source M_test"
+target_claim_id: newton_law_derived_note
+target_blocker_text: "derive a physical test-body response and the two-mass product law from framework content"
 source_of_blocker_text: handoff
-reachability_to_target: advances
+reachability_to_target: prunes
 artifact_role: theorem
-conditional_surface_status: "exact for the three-pair rejector, source-linear Green pairing, and the displayed two-argument escape; physical pairing remains open"
-hypothetical_axiom_status: no edit
+next_trace_action: "Derive source/test typing, mass-readout identification, and the test-body response law; do not seek the scalar product in a pooled union value."
+conditional_surface_status: "exact in the supplied finite-additive free-count model; no current-Record or physical Newton closure"
+hypothetical_axiom_status: "no edit"
 admitted_observation_status: null
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
 
-## Exact Objects
+## Exact Conditional Objects
 
-Work with finite record collections in the sense of the Record axiom. A
-**collection** is a finite family of pairwise-disjoint records, each carrying
-a formal rational strength. Scalar readout `I` is the sum of those
-strengths. The empty collection has `I(empty)=0`. If `A` and `B` are
-disjoint, additivity is
+Let `C` be the free commutative monoid of finite labeled atoms. Supply a
+scalar-valued functional `I:C -> Q` satisfying
 
-`I(A∪B)=I(A)+I(B)`.
+`I(empty)=0`,
 
-Fix two disjoint collections `S` and `T` and write
+`I(A disjoint-union B)=I(A)+I(B)` for disjoint `A,B`.
 
-`m_s := I(S)`, `m_t := I(T)`.
+This is a conditional mathematical structure, not current Record content.
+The count model `I(A)=|A|` realizes the hypothesis. Weighted rational atoms
+give a second model in which `I` is the sum of atom weights.
 
-The three rejector pairs below are realized by unit-strength atoms, and
-again by lumped rational strengths with the same totals. In every
-realization the only Record datum on the disjoint union is the one scalar
-`I(S∪T)`.
+For an ordered disjoint pair `(S,T)`, write
 
-| pair `(m_s,m_t)` | unit-atom realization | `I(S∪T)` | `m_s m_t` |
-|---|---|---|---|
-| `(2,0)` | `S={s1,s2}`, `T=empty` | `2` | `0` |
-| `(1,1)` | `S={s1}`, `T={t1}` | `2` | `1` |
-| `(0,2)` | `S=empty`, `T={t1,t2}` | `2` | `0` |
+`m_s=I(S)`, `m_t=I(T)`, and `sigma=I(S disjoint-union T)`.
 
-The same sums and products are obtained from lumped strengths
-`S` of total `2` with `T` empty, `S` of total `1` with `T` of total `1`,
-and `S` empty with `T` of total `2`. An extra rational witness with the
-same union sum is `(m_s,m_t)=(3/2,1/2)`, which has `I(S∪T)=2` and
-product `3/4`.
+The **pooled interface** exposes only `sigma`. The **separate interface**
+exposes the ordered pair `(I(S),I(T))`. Keeping these interfaces distinct is
+load-bearing.
 
-A **function of the union scalar** is any map of the form
-`f(I(S∪T))`. A **bilinear pairing** of the two collections is any map
-`B(S,T)` that is separately linear in `I(S)` and in `I(T)`. The product
-pairing used by a Newton test-mass factor is
+## Theorem 1 — Pooled Non-Identifiability
 
-`B(S,T)=I(S)I(T)=m_s m_t`.
+In the count model, choose disjoint collections realizing
 
-The Newton packet supplies the radial Green kernel and its source-linear
-potential, not that pairing. Its in-scope algebra, with source coefficient
-written `m_s`, is
+| `(m_s,m_t)` | `sigma=m_s+m_t` | `m_s m_t` |
+|---|---:|---:|
+| `(2,0)` | `2` | `0` |
+| `(1,1)` | `2` | `1` |
+| `(0,2)` | `2` | `0` |
 
-```text
-G(r) = 1/(4 pi r),
-phi(r) = m_s G(r) = m_s/(4 pi r),
-|grad phi| = m_s/(4 pi r^2).
-```
+Suppose one function `f:Q->Q` recovered the product from the pooled value on
+all three pairs. The first pair would require `f(2)=0`, while the second would
+require `f(2)=1`, a contradiction. Therefore no such `f` exists on this
+model and domain.
 
-The 2026-05-29 scope repair of that packet removed the force/source
-coupling `F = -M_test grad(phi)` from the load-bearing claim. The
-source-side mass-linearity lemma
-[`G_NEWTON_MASS_LINEAR_POISSON_COMPOSITION_BOUNDED_THEOREM_NOTE_2026-05-10.md`](G_NEWTON_MASS_LINEAR_POISSON_COMPOSITION_BOUNDED_THEOREM_NOTE_2026-05-10.md)
-is likewise only linearity in the source mass.
+More generally, if a finite-additive model contains two ordered pairs with
+the same sum and different products, its pooled statistic cannot identify the
+product. Finite additivity alone does not exclude such models, so it does not
+entail a universal pooled recovery rule.
 
-## Exact Target And Obligation Graph
+The domain qualifier matters. On a restricted diagonal `m_s=m_t`, the
+product is `(sigma/2)^2`; if `m_t` is externally fixed, it is
+`m_t(sigma-m_t)`. Those are additional restrictions, not counterexamples to
+the stated free-model theorem.
 
-**Exact target.** Decide whether the single additive scalar `I` on a
-disjoint union can equal the Newton product `m_s m_t`, and whether the
-already-recorded Green pairing produces a test-mass factor.
+## Theorem 2 — Separate Evaluation Already Supplies The Scalar Product
 
-| Obligation | Role | Disposition |
-|---|---|---|
-| pin `I(empty)=0` and disjoint additivity | premise | quoted from the axiom memo |
-| pin Newton non-claim of `F = -M_test` and `M_source M_test` | premise | quoted from the Newton packet |
-| show `I(S∪T)` is the sum only | Theorem 1 | additivity |
-| rejector `(2,0)`, `(1,1)`, `(0,2)` | Theorem 1 | common sum `2`, products `0,1,0` |
-| show the Green gradient has no `m_t` | Theorem 2 | `|grad phi|=m_s/(4 pi r^2)` |
-| exhibit `B=I(S)I(T)` as a two-argument map | Theorem 3 | declared pairing; not physical |
-| derive a physical pairing or force law | autonomous closure | open |
-| claim gravity is impossible | non-claim | not attempted |
+At the separate interface define
 
-## Theorem 1 — A Function Of `I(S∪T)` Cannot Equal The Product
+`B_I(S,T)=I(S)I(T)`.
 
-Let `S` and `T` be disjoint. Record additivity and `I(empty)=0` give
+This uses only the supplied functional twice and ordinary multiplication in
+its scalar codomain. If `S_1,S_2,T` are pairwise disjoint, then
 
-`I(S∪T)=I(S)+I(T)=m_s+m_t`,
+`B_I(S_1 disjoint-union S_2,T)`
 
-and `I(S∪empty)=I(S)`, `I(empty∪T)=I(T)`. The value `I(S∪T)` is therefore
-exactly the sum. Any function of that one scalar is constant on the level
-set `m_s+m_t=σ`.
+`=(I(S_1)+I(S_2))I(T)`
 
-On the three rejector pairs the sum is the same:
+`=B_I(S_1,T)+B_I(S_2,T)`.
 
-`(2,0): I(S∪T)=2`,
-`(1,1): I(S∪T)=2`,
-`(0,2): I(S∪T)=2`.
+The same calculation holds in the second argument. Hence `B_I` is separately
+additive. It returns `0,1,0` on the three pairs above.
 
-The products are not the same:
+This corrects the submitted broad reading. A second abstract pairing is not
+the algebraic residual. The separately accessible ordered pair is additional
+interface structure relative to the pooled value, but once it exists the
+scalar product follows canonically.
 
-`(2,0): m_s m_t=0`,
-`(1,1): m_s m_t=1`,
-`(0,2): m_s m_t=0`.
+## Theorem 3 — The Newton Kernel Is Source-Linear Only
 
-Suppose there existed a function `f` of one scalar such that
-`f(I(S∪T))=m_s m_t` on those three inputs. Then `f(2)=0` from `(2,0)` and
-`f(2)=1` from `(1,1)`, which is impossible. The same collision occurs for
-every other pair of distinct products with a common sum, including the
-rational witness `(3/2,1/2)` with product `3/4`.
+The cited Newton packet gives, for `r>0`,
 
-Explicit one-variable trial maps fail in the same way. The identity
-`f(σ)=σ` returns `2,2,2`. The constant `f(σ)=1` matches only `(1,1)`. The
-quadratic `f(σ)=σ(σ-2)` returns `0,0,0` and matches the two vanishing
-products but not `(1,1)`. No choice of `f` hits `0,1,0` at a single
-argument `2`.
+`G(r)=1/(4 pi r)`,
 
-Thus `I` on the disjoint union cannot distinguish `(2,0)`, `(1,1)`, and
-`(0,2)`, while `m_s m_t` can. Scalar Record additivity does not yield the
-product law.
+`phi(r)=m_s G(r)`,
 
-## Theorem 2 — The Newton Green Pairing Still Has No Test-Mass Factor
+`|grad phi|=m_s/(4 pi r^2)`.
 
-The Newton packet's in-scope algebra is the radial kernel `G(r)=1/(4 pi r)`
-and the source-linear potential `phi=m_s G`. Differentiating in `r>0` gives
+The displayed gradient contains no `m_t`. Composing it with the separate
+test-body response rule
 
-`d phi/dr = -m_s/(4 pi r^2)`, `|grad phi|=m_s/(4 pi r^2)`.
+`F=-m_t grad(phi)`
 
-The right-hand side does not depend on `m_t`. On the three rejector pairs,
-at any common `r>0`, the gradient magnitudes are
+would give the two-mass product, but that response rule is exactly a non-claim
+of the Newton packet. The scalar multiplication needed after the response
+rule is elementary; the physical response rule and the interpretation of the
+two scalars as masses are not.
 
-`(2,0): 2/(4 pi r^2)`,
-`(1,1): 1/(4 pi r^2)`,
-`(0,2): 0`.
+## Proof-Obligation Boundary
 
-The would-be product-law magnitudes `m_s m_t/(4 pi r^2)` are instead
+| Obligation | Disposition |
+|---|---|
+| current Record excludes finite-additive `I` and a value at absence | source-bound boundary |
+| explicit finite-additive scalar functional | separately supplied condition |
+| free count model and three-pair collision | proved here |
+| arbitrary pooled post-processing cannot resolve the collision | proved here |
+| separate evaluation gives `I(S)I(T)` | proved here |
+| source/test typing of record content | open physical bridge |
+| identification of the two scalar readouts with physical masses | open physical bridge |
+| test-body response `F=-M_test grad(phi)` | open Newton bridge |
+| full Newton force law or gravity closure | not claimed |
 
-`(2,0): 0`,
-`(1,1): 1/(4 pi r^2)`,
-`(0,2): 0`.
-
-The pair `(2,0)` is the witness: the Green gradient sees source strength
-`2` and is not the vanishing product. The pair `(1,1)` agrees only because
-`m_t=1`, which is not a derivation of a test-mass factor. Multiplying
-`|grad phi|` by `m_t` is exactly the extra bilinear map
-
-`B(S,T)=I(S)I(T)`,
-
-which Theorem 1 showed is not a function of `I(S∪T)`. Source-side
-linearity of the Poisson potential, as in the G-Newton mass-linear lemma,
-likewise scales only with `m_s`.
-
-The Newton packet already lists the test-mass force/source response rule
-`F = -M_test grad(phi)` and the physical product law `M_source M_test` as
-non-claims. Theorem 2 is the matching algebraic reason: the kernel algebra
-never produces the second factor.
-
-## Theorem 3 — A Declared Pairing Supplies `B`, And Is A Second Object
-
-Suppose a second readout of `T` is available separately from the readout of
-`S`, or a pairing `π(S,T)` of the two collections is declared. Then the
-product
-
-`B(S,T) := I(S)I(T)`
-
-is well-defined. On the three rejector pairs it returns `0`, `1`, `0`, so
-it does distinguish `(1,1)` from `(2,0)` and from `(0,2)`. It is a
-function of two scalars, not of their sum.
-
-This pairing is the missing object for a product law. It is not Record
-additivity. It is not `I(S∪T)`. The four axioms do not name `π`. This note
-does not install `π`, does not argue that an axiom update is required, and
-does not claim that forming records physically carry a source/test split.
-
-The discriminating gate is only this: a bilinear pairing on two disjoint
-additively-read collections can produce an `M_s M_t` number; `I` alone on
-the disjoint union cannot. Both sides are exhibited.
-
-## Boundary And Non-Claims
-
-The note does not:
-
-- edit an axiom, or argue that an axiom update is necessary;
-- claim that gravity is impossible, or that a Newton force law cannot be
-  reached by some later bridge;
-- identify `B(S,T)=I(S)I(T)` with a physical Record law;
-- restore `F = -M_test grad(phi)` as a derived response rule;
-- derive the physical product law `M_source M_test`;
-- close gravitational coupling normalization, `G_N`, or a continuum
-  Einstein equation;
-- exhaust other two-collection maps.
-
-The scope is the exact gap: scalar Record additivity does not yield the
-product law.
+The proof boundary is **CONDITIONAL**: the exact algebra closes under the
+stated finite-additive input, while the target-equivalent physical response
+and interpretation remain open.
 
 ## Imports And Claim Boundary
 
 | Item | Role | Status |
 |---|---|---|
-| current Record additivity sentence and `I(empty)=0` | premise | quoted; no edit |
-| Newton kernel `G(r)=1/(4 pi r)` and source-linear `phi` | common objects | restated from the Newton packet |
-| Newton non-claim of `F = -M_test` and `M_source M_test` | scope pin | quoted; not reversed |
-| three-pair rejector and `B=I(S)I(T)` | declared algebra | computed here |
-| physical source/test pairing | escape route | live, not derived |
+| current Record wording | exclusion boundary | approved `minimal_axioms`; supplies no `I` |
+| finite-additive scalar `I`, `I(empty)=0` | mathematical input | separately supplied; no current retained supplier asserted |
+| free count/weighted-atom models | countermodels | constructed here |
+| Newton kernel and source-linear potential | parent algebra | bounded parent, not promoted here |
+| source/test record typing | physical input | open |
+| mass/readout identification | physical input | open |
+| test-body response rule | physical input | open |
+| observational data | input | none |
 
-The exact advance is a finite additivity-versus-product theorem. Independent
-audit remains required before any effective status may change.
+## Boundary And Non-Claims
+
+- The note does not restore finite additivity or `I(empty)=0` to Record.
+- It assigns no readout value to a site with no record.
+- It does not identify record collections with physical masses.
+- It does not claim that finite additivity prevents a product at the separate
+  interface; Theorem 2 proves the opposite.
+- It does not derive the test-body response rule or a Newton force law.
+- It does not exhaust restricted domains, extra statistics, dynamics, or
+  two-body actions.
+- It does not edit an axiom or install a framework primitive.
 
 ## Value Gate (V1–V5)
 
 | # | Question | Answer |
 |---|---|---|
-| V1 | Named obstruction addressed? | The Newton packet removed the test-mass product from its claim. This note proves the matching algebraic gap on Record additivity. |
-| V2 | New content? | Yes: the three-pair rejector, the explicit mismatch of `|grad phi|` with `m_s m_t/(4 pi r^2)`, and the two-argument pairing as a second object. |
-| V3 | Independently checkable? | Yes. The runner recomputes `I` from collections, the products from `m_s m_t`, and the Green derivative from `G`. |
-| V4 | More than a restatement? | Yes. The Newton non-claim is a scope sentence; this note supplies the additivity-versus-bilinear witness. |
-| V5 | One-step relabel? | No. Quoting additivity and quoting the Newton non-claim does not by itself exhibit the `(2,0),(1,1),(0,2)` collision. |
+| V1 | Named obstruction addressed? | It isolates why a pooled additive statistic cannot by itself encode the two-body product used downstream of a test-body response. |
+| V2 | New content? | The durable content is the explicit interface split: pooled non-identifiability versus canonical product from separate evaluation. |
+| V3 | Independently checkable? | Yes. The count model, collision, separate-additivity identities, and Green derivative are exact. |
+| V4 | More than a restatement? | Yes. The Newton packet names a non-claim; this theorem distinguishes an irrelevant pooled route from the real physical response residual. |
+| V5 | One-step relabel? | No. The review correction changes the proof-obligation graph by removing the false claim that an abstract pairing is missing. |
+
+## No-Go Discipline Gate
+
+The only negative shipped is: on the stated free finite-additive model, no
+function of the pooled scalar alone recovers the two-body product on all three
+rejector pairs. No global non-derivability or gravity no-go is claimed.
+
+### N1 — Materially distinct routes
+
+| Route | Attempt and outcome | Marker |
+|---|---|---|
+| Arbitrary pooled post-processing | Let `f` be completely arbitrary; the common input `2` would need outputs `0` and `1`, so the collision survives | **ATTEMPTED** |
+| Polynomial/nonlinear pooled map | Identity, constant, quadratic, rational, or discontinuous choices remain single-valued at `2`; functional complexity cannot split one input | **ATTEMPTED** |
+| Restrict the domain | On `m_s=m_t` or externally fixed `m_t`, the product is a function of `sigma`; this evades the theorem by adding a domain condition | **ATTEMPTED** |
+| Evaluate `I` separately | The ordered pair `(I(S),I(T))` gives the product immediately; this defeats the submitted broad claim and is incorporated as Theorem 2 | **ATTEMPTED** |
+| Add a second pooled statistic | Supplying `delta=m_s-m_t` gives `m_s m_t=(sigma^2-delta^2)/4`; the added statistic is outside the one-scalar interface | **ATTEMPTED** |
+| Compose source and test-response linearities | A derived response `F=-m_t grad(phi)` yields the product without pooled recovery; this is the live Newton route, not ruled out | **ATTEMPTED** |
+
+### N2 — Wall independence
+
+For physical use, the collapsed open set is:
+
+- `W1`: a scalar mass/readout functional, including its finite-additive form
+  if that form is intended;
+- `W2`: physical source/test typing with separate accessibility;
+- `W3`: the test-body response law.
+
+| Pair | First closes second? | Second closes first? | Independent? |
+|---|---:|---:|---:|
+| `W1/W2` | no | no | yes |
+| `W1/W3` | no | no | yes |
+| `W2/W3` | no | no | yes |
+
+There is no fourth “abstract pairing” wall: `W1+W2` and scalar
+multiplication already define the numerical product.
+
+### N3 — Hidden-condition scan
+
+| Phrase/object | Classification |
+|---|---|
+| finite-additive `I` and `I(empty)=0` | explicit separately supplied condition |
+| free count model | explicit constructed countermodel |
+| range values `0,1,2` | realized in that model, not claimed for every `I` |
+| ordered source/test pair | explicit extra interface structure |
+| ordinary scalar multiplication | textbook codomain operation, not a physical bridge |
+| Newton kernel | cited bounded parent algebra |
+| physical mass interpretation/response | explicit open walls |
+
+### N4 — Residual matching
+
+| Witness | Witness residual | Current residual | Match? |
+|---|---|---|---:|
+| `docs/MINIMAL_AXIOMS_2026-06-29.md:140-149` | finite additivity, named `I`, and `I(empty)=0` are absent from current Record | classify the scalar premise as conditional | yes |
+| `docs/NEWTON_LAW_DERIVED_NOTE.md:90-99` | test-body response and two-mass product are non-claims | identify the live physical residual after pooled-route pruning | yes |
+
+No earlier product-law companion is used as a no-go witness.
+
+### N5 — Rhetoric audit
+
+- per-element: atom weights and scalar values are evaluated in the explicit free model;
+- per-site: no assertion is made that one site supplies a collection functional or mass;
+- per-mode: no spectral or Fourier decomposition is used or excluded by the theorem;
+- per-block: pooled versus separately accessible two-collection interfaces are distinguished exactly;
+- lattice-wide: no lattice dynamics, two-body response, or gravity closure is claimed or tested.
+
+### N6 — Partial-closure path
+
+`docs/G_NEWTON_WEAK_FIELD_RESPONSE_BOUNDED_CLOSURE_NOTE_2026-05-10_gnewtonG3.md`
+is currently unaudited and conditionally studies a test-body response after a
+canonical coupling is supplied. `docs/EMERGENT_PRODUCT_LAW_NOTE.md` is also
+currently unaudited and exhibits a product on a supplied cross-field Poisson
+model through source and test-response linearities. Either shape confirms
+that the residual is a bridge/response problem, not a demand for a new axiom
+or abstract scalar pairing. Neither is imported as authority here.
+
+### N7 — Hostile steelman
+
+> An additive functional is not merely its value on the union. It can be
+> evaluated on `S` and `T` separately, after which ordinary multiplication
+> gives `I(S)I(T)`. Moreover, the standard Newton mechanism composes source
+> linearity with test-body response linearity. The proposed “missing pairing”
+> is artificial and cannot support a Newton obstruction.
+
+**Answer.** Correct against the submitted broad framing. That framing is
+removed. The surviving theorem concerns only non-identifiability from the
+pooled scalar and explicitly preserves separate evaluation and response-law
+composition as live closure paths.
+
+### N8 — Cross-cycle echo
+
+The older `docs/AXIOM_REDUCTION_NOTE.md` (meta) and
+`docs/EMERGENT_PRODUCT_LAW_NOTE.md` (currently unaudited bounded theorem)
+describe the same two-linearity escape: source response supplies one mass
+factor and test-body response supplies the other. That analogous wall was
+handled by an explicit conditional model rather than by a pooled additive
+readout. The same mechanism remains applicable here, so no broad no-go or
+new-axiom requirement is shipped.
+
+**No-Go Discipline status: PASS** for the narrowed pooled-interface claim.
 
 ## Primary Runner
 
-[`scripts/record_additivity_does_not_supply_newton_product_2026_08_13.py`](../scripts/record_additivity_does_not_supply_newton_product_2026_08_13.py)
-recomputes disjoint additivity, the three-pair rejector, the Green
-gradient, and the two-argument pairing in exact arithmetic.
+The runner verifies the current Record exclusion boundary, constructs the
+finite-additive free and weighted models, checks pooled collisions and
+restricted-domain escapes, derives separate additivity of `B_I`, differentiates
+the source-linear Newton kernel, and emits the five-resolution execution
+certificate required for later independent audit.

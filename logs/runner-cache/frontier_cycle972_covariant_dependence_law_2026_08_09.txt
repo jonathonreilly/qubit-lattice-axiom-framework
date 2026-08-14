@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle972_covariant_dependence_law_2026_08_09.py
-runner_sha256: f8cbaeec821d28a60dfec89680552980afc48b81a8d97b05729fbf665f0cde36
-input_fingerprint_sha256: e2b45875394a2adfd3a2d1332c70f6db056a9619b88996e4155000690b656816
+runner_sha256: 1856edabed6d923b00bbe1fcf5cad0cd45088a720e47d5e6f8a096c52ecae67b
+input_fingerprint_sha256: 4e1c5dda14566a6ae0acc5cc1d8abe2a027157f318fe509b527131cde41a3857
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 16.53
+elapsed_sec: 3.04
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -14,7 +14,7 @@ PASS A_FULL_WITNESS_CENSUS :: family_words=20=1_identity+7_X+12_oriented_CNOT; n
 PASS B_COVARIANCE_MEASUREMENT :: group=Z3_semidirect_Oplus_cubic; rotations=24; rotation_checks=61440; landed_coordinate_bridge_failures=0/2560; translation_generator_checks=15360; covariance_verdict=COVARIANT; non_covariant_witnesses=[]
 PASS C_ORBIT_PARTITION :: word_law_classes=1; state_resolved_classes=2; state_representatives=[('CNOT(-x->C)', 0), ('CNOT(-x->C)', 1)]; local_orbit_sizes=[6, 6]; stabilizers=[4, 4]
 PASS D_MARGINAL_MEASUREMENT :: uniform_target_input_changed_words=0/20; changed_edge_pairs=0/3840; identity=(1/2) sum_{x in {0,1}} 1{y=x XOR n_d}=1/2 for each y,n_d; any_break=False; scope=declared_length_zero/one_family
-PASS E_CONTROLS_AND_PROVENANCE :: sha_pins={"docs/MINIMAL_AXIOMS_2026-06-29.md":"93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753","scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py":"0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4"}; cycle970_provenance_commit=6fd0de0a288d212a4a6ce3fdd4dc9019f30dbbad; runner_read=AST_only; note_read=text_only; provenance_pins_match=True; determinism_replay=True; runtime_s=15.706915<timeout_s=300; stdout_upper_bound_bytes=3868<6000<150000; timeout_s=300<1400
+PASS E_CONTROLS_AND_PROVENANCE :: sha_pins={"docs/INTER_SITE_GATE_CYCLE970_BOUNDED_THEOREM_NOTE_2026-08-09.md":"dc3cfec357c057c5cd181562f28d4baf4349cc2d0065af0183e665aa3a2f3e47","docs/MINIMAL_AXIOMS_2026-06-29.md":"93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753","scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py":"0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4","scripts/frontier_cycle970_inter_site_gate_2026_08_09.py":"d744fa093cbc3639cdf06acf5382825ed677892b88c45cd3334a2ac055facb4c"}; cycle970_provenance=current_landed_files; runner_read=AST_only; note_read=text_only; determinism_replay=True; runtime_s=1.648803<timeout_s=300; stdout_upper_bound_bytes=3868<6000<150000; timeout_s=300<1400
 CHECKER_PAYLOAD: {"changed_edge_pair_comparisons":384,"control_preservation_failures":[],"covariant":true,"dependent_word_local_input_rows":12,"edge_pair_comparisons":7680,"family_words":20,"landed_coordinate_bridge_comparisons":2560,"landed_coordinate_bridge_failure_count":0,"law_truth_table_comparisons":768,"marginal_changed_edge_pairs":0,"marginal_changed_words":0,"marginal_edge_pairs":3840,"marginal_word_rows":20,"non_covariant_witnesses":[],"proper_rotation_count":24,"rotation_semantic_comparisons":61440,"rotation_semantic_failure_count":0,"science_digest":"a74ea5871fe738500391fd6cbb4d49926933677b8357cc1f1216a7e3cdd04ab0","state_orbit_sizes":[6,6],"state_resolved_class_count":2,"state_stabilizer_sizes":[4,4],"translation_semantic_comparisons":15360,"translation_semantic_failure_count":0,"witness_structures_digest":"7bb28fd319c77d3201afad7e9f6de331f1b1b4b025e682c1afdc78988c38c049","witness_word_count":6,"witness_word_names":["CNOT(+x->C)","CNOT(-x->C)","CNOT(+y->C)","CNOT(-y->C)","CNOT(+z->C)","CNOT(-z->C)"],"word_law_class_count":1,"word_local_input_rows":40,"xor_law_failures":[]}
 VERDICT: BOUNDED_COVARIANT_DEPENDENCE_LAW_CHARACTERIZED
 TOTAL: PASS=5 FAIL=0

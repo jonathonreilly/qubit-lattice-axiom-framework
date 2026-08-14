@@ -5,7 +5,7 @@ The primary runner, its cache, the axiom text, and the landed controller core
 are blocklisted from execution.  This checker parses Python only as AST,
 reconstructs the 20-word family with a separate Boolean interpreter, builds
 proper rotations from oriented orthonormal frames (not signed permutations),
-and tries four receipt corruptions against its comparison predicate.
+and tries five payload/truth-table corruptions against its comparison predicate.
 
 PASS means the primary survived these refutation attempts.  No gate requires
 a positive witness count, covariance, a particular class count, or a zero
@@ -23,8 +23,14 @@ AUDIT_INPUT_PATHS = (
     "outputs/covariant_dependence_law_cycle972_receipt_2026_08_09.json",
     "docs/MINIMAL_AXIOMS_2026-06-29.md",
     "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+    "scripts/frontier_cycle970_inter_site_gate_2026_08_09.py",
+    "docs/INTER_SITE_GATE_CYCLE970_BOUNDED_THEOREM_NOTE_2026-08-09.md",
 )
 BLOCKLIST_EXECUTION = AUDIT_INPUT_PATHS
+AUDIT_INPUT_ROLES = {
+    "package_local_integrity": AUDIT_INPUT_PATHS[:3],
+    "ancestral_scientific_or_provenance": AUDIT_INPUT_PATHS[3:],
+}
 
 import ast
 from copy import deepcopy
@@ -37,7 +43,8 @@ import sys
 from time import monotonic
 
 ROOT = Path(__file__).resolve().parents[1]
-PRIMARY_PATH, PRIMARY_CACHE_PATH, PRIMARY_RECEIPT_PATH, AXIOM_PATH, CORE_PATH = AUDIT_INPUT_PATHS
+(PRIMARY_PATH, PRIMARY_CACHE_PATH, PRIMARY_RECEIPT_PATH, AXIOM_PATH, CORE_PATH,
+ CYCLE970_RUNNER_PATH, CYCLE970_NOTE_PATH) = AUDIT_INPUT_PATHS
 DIRECTIONS = (
     (1, 0, 0), (-1, 0, 0),
     (0, 1, 0), (0, -1, 0),
@@ -484,8 +491,15 @@ def main() -> int:
 
     live_input_pins_match = (
         primary_controls["primary_source_sha256"] == pins[PRIMARY_PATH]
-        and primary_controls["sha256"][AXIOM_PATH] == pins[AXIOM_PATH]
-        and primary_controls["sha256"][CORE_PATH] == pins[CORE_PATH]
+        and all(
+            primary_controls["sha256"].get(path) == pins.get(path)
+            for path in primary_controls["literal_audit_input_paths"]
+        )
+        and primary_controls["cycle970_live_text_ast_provenance"]["runner"]["has_declared_family_function"]
+        and primary_controls["cycle970_live_text_ast_provenance"]["runner"]["has_state_resolved_census_function"]
+        and primary_controls["cycle970_live_text_ast_provenance"]["note"]["declares_finite_family_scope"]
+        and primary_controls["cycle970_live_text_ast_provenance"]["note"]["reports_five_word_family"]
+        and primary_controls["cycle970_live_text_ast_provenance"]["note"]["reports_four_of_twenty"]
         and digest(primary_receipt["findings"]) == primary_receipt["science_digest"]
         and cached_payload["science_digest"] == primary_receipt["science_digest"]
     )
@@ -613,6 +627,9 @@ def main() -> int:
         "checker_role": "independent_refutation_attempt",
         "blocklist_execution": list(BLOCKLIST_EXECUTION),
         "audit_input_paths": list(AUDIT_INPUT_PATHS),
+        "audit_input_roles": {
+            role: list(paths) for role, paths in AUDIT_INPUT_ROLES.items()
+        },
         "sha256": pins,
         "ast_controls": ast_result,
         "independent_measurement": independent,

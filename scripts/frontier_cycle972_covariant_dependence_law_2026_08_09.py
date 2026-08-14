@@ -27,20 +27,15 @@ HOUSE_STDOUT_LIMIT_BYTES = 6_000
 AUDIT_INPUT_PATHS = (
     "docs/MINIMAL_AXIOMS_2026-06-29.md",
     "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+    "scripts/frontier_cycle970_inter_site_gate_2026_08_09.py",
+    "docs/INTER_SITE_GATE_CYCLE970_BOUNDED_THEOREM_NOTE_2026-08-09.md",
 )
+SCIENTIFIC_INPUT_PATHS = AUDIT_INPUT_PATHS[:2]
+PROVENANCE_INTEGRITY_PATHS = AUDIT_INPUT_PATHS[2:]
 BLOCKLIST_CITED_PRIMARIES = (AUDIT_INPUT_PATHS[0],)
 EXECUTABLE_SUBSTRATE = AUDIT_INPUT_PATHS[1]
-PROVENANCE_COMMIT = "6fd0de0a288d212a4a6ce3fdd4dc9019f30dbbad"
-PROVENANCE_OBJECTS = {
-    "runner": (
-        "scripts/frontier_cycle970_inter_site_gate_2026_08_09.py",
-        "4670bcb9d83cfc039f1336398c6a4aa4af014f7c",
-    ),
-    "note": (
-        "docs/INTER_SITE_GATE_CYCLE970_BOUNDED_THEOREM_NOTE_2026-08-09.md",
-        "f7b788d8076e7864bc5dbcbb33cb9e49554e494a",
-    ),
-}
+PROVENANCE_RUNNER = AUDIT_INPUT_PATHS[2]
+PROVENANCE_NOTE = AUDIT_INPUT_PATHS[3]
 
 import ast
 from fractions import Fraction
@@ -48,7 +43,6 @@ from hashlib import sha256
 from itertools import permutations, product
 import json
 from pathlib import Path
-import subprocess
 import sys
 from time import monotonic
 
@@ -561,32 +555,32 @@ def covariance_and_orbits(resolved: dict) -> dict:
 
 
 def provenance_controls() -> dict:
-    observations = {}
-    for label, (path, expected_blob) in PROVENANCE_OBJECTS.items():
-        spec = f"{PROVENANCE_COMMIT}:{path}"
-        observed_blob = subprocess.check_output(("git", "rev-parse", spec), cwd=ROOT, text=True).strip()
-        body = subprocess.check_output(("git", "show", spec), cwd=ROOT)
-        if label == "runner":
-            tree = ast.parse(body.decode("utf-8"), filename=spec)
-            observations[label] = {
-                "path": path,
-                "expected_blob": expected_blob,
-                "observed_blob": observed_blob,
-                "read_mode": "AST only; never executed",
-                "has_declared_family_function": any(isinstance(node, ast.FunctionDef) and node.name == "declared_family" for node in ast.walk(tree)),
-                "has_state_resolved_census_function": any(isinstance(node, ast.FunctionDef) and node.name == "state_resolved_census" for node in ast.walk(tree)),
-            }
-        else:
-            text = body.decode("utf-8")
-            observations[label] = {
-                "path": path,
-                "expected_blob": expected_blob,
-                "observed_blob": observed_blob,
-                "read_mode": "text only",
-                "declares_full_covariant_law_open": "full covariant M_2(C) law remains open" in text,
-                "reports_four_of_twenty": "four of the 20" in text,
-            }
-    return observations
+    runner_text = (ROOT / PROVENANCE_RUNNER).read_text(encoding="utf-8")
+    runner_tree = ast.parse(runner_text, filename=PROVENANCE_RUNNER)
+    note_text = (ROOT / PROVENANCE_NOTE).read_text(encoding="utf-8")
+    return {
+        "runner": {
+            "path": PROVENANCE_RUNNER,
+            "read_mode": "current landed file; AST only; never executed",
+            "has_declared_family_function": any(
+                isinstance(node, ast.FunctionDef) and node.name == "declared_family"
+                for node in ast.walk(runner_tree)
+            ),
+            "has_state_resolved_census_function": any(
+                isinstance(node, ast.FunctionDef) and node.name == "state_resolved_census"
+                for node in ast.walk(runner_tree)
+            ),
+        },
+        "note": {
+            "path": PROVENANCE_NOTE,
+            "read_mode": "current landed file; text only",
+            "declares_finite_family_scope": (
+                "The bounded claim is precisely this finite-family census" in note_text
+            ),
+            "reports_five_word_family": "family_words: 5" in note_text,
+            "reports_four_of_twenty": "`4/20`" in note_text,
+        },
+    }
 
 
 def input_controls() -> dict:
@@ -610,6 +604,8 @@ def input_controls() -> dict:
     provenance = provenance_controls()
     return {
         "literal_audit_input_paths": list(AUDIT_INPUT_PATHS),
+        "scientific_input_paths": list(SCIENTIFIC_INPUT_PATHS),
+        "provenance_integrity_paths": list(PROVENANCE_INTEGRITY_PATHS),
         "all_inputs_exist_worktree_relative": existing,
         "sha256": pins,
         "primary_source_sha256": sha256(Path(__file__).read_bytes()).hexdigest(),
@@ -620,8 +616,7 @@ def input_controls() -> dict:
         "current_record_boundary_matches": all(
             value in axiom_text for value in record_boundary_needles
         ),
-        "cycle970_text_ast_provenance": provenance,
-        "provenance_pins_match": all(row["expected_blob"] == row["observed_blob"] for row in provenance.values()),
+        "cycle970_live_text_ast_provenance": provenance,
     }
 
 
@@ -729,17 +724,17 @@ def main() -> int:
     )
 
     elapsed = monotonic() - started
-    provenance = controls["cycle970_text_ast_provenance"]
+    provenance = controls["cycle970_live_text_ast_provenance"]
     output_upper_bound = sum(map(len, (a_finding, b_finding, c_finding, d_finding))) + 3_000
     e_ok = (
         controls["all_inputs_exist_worktree_relative"]
         and controls["blocklist_text_only"]
         and controls["landed_axiom_needle_matches"]
         and controls["current_record_boundary_matches"]
-        and controls["provenance_pins_match"]
         and provenance["runner"]["has_declared_family_function"]
         and provenance["runner"]["has_state_resolved_census_function"]
-        and provenance["note"]["declares_full_covariant_law_open"]
+        and provenance["note"]["declares_finite_family_scope"]
+        and provenance["note"]["reports_five_word_family"]
         and provenance["note"]["reports_four_of_twenty"]
         and deterministic
         and all(controls["sha256"].values())
@@ -748,9 +743,8 @@ def main() -> int:
         and output_upper_bound < HOUSE_STDOUT_LIMIT_BYTES < STDOUT_LIMIT_BYTES
     )
     e_finding = (
-        f"sha_pins={compact(controls['sha256'])}; cycle970_provenance_commit={PROVENANCE_COMMIT}; "
-        f"runner_read=AST_only; note_read=text_only; provenance_pins_match="
-        f"{controls['provenance_pins_match']}; determinism_replay={deterministic}; "
+        f"sha_pins={compact(controls['sha256'])}; cycle970_provenance=current_landed_files; "
+        f"runner_read=AST_only; note_read=text_only; determinism_replay={deterministic}; "
         f"runtime_s={elapsed:.6f}<timeout_s={AUDIT_TIMEOUT_SEC}; stdout_upper_bound_bytes="
         f"{output_upper_bound}<{HOUSE_STDOUT_LIMIT_BYTES}<{STDOUT_LIMIT_BYTES}; timeout_s={AUDIT_TIMEOUT_SEC}<1400"
     )

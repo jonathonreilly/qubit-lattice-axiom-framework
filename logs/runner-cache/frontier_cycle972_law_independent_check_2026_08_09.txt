@@ -1,21 +1,21 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle972_law_independent_check_2026_08_09.py
-runner_sha256: 78dee2fb0aaef94cf7d67273a851bcab553f807755b1b1d55af6fb2303fcb9ff
-input_fingerprint_sha256: 1de59eff523b00008bb30f6194231359cb725ce974eb0afc6954eccaa67c85d0
+runner_sha256: 7f1b73f13260cfbd03aac1279abea18e17bd64adec5ebba8da0e35a59e0997f7
+input_fingerprint_sha256: 4a6353e875ae0a87177a57d32b32daf65309f33481d6a6a736e24523ec41dc25
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 1.69
+elapsed_sec: 1.41
 status: ok
 ----- stdout -----
 ==============================================================================
 CYCLE 972 -- INDEPENDENT LAW REFUTATION ATTEMPT
 ==============================================================================
-PASS R0_PINS_BLOCKLIST_AND_AST :: live_primary_and_input_pins_match=True; hashed_inputs=5/5; BLOCKLIST_AST_text_only=['scripts/frontier_cycle972_covariant_dependence_law_2026_08_09.py', 'logs/runner-cache/frontier_cycle972_covariant_dependence_law_2026_08_09.txt', 'outputs/covariant_dependence_law_cycle972_receipt_2026_08_09.json', 'docs/MINIMAL_AXIOMS_2026-06-29.md', 'scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py']; blocked_modules_loaded=False; primary_calls_real_apply_semantic=True
+PASS R0_PINS_BLOCKLIST_AND_AST :: live_primary_and_input_pins_match=True; hashed_inputs=7/7; BLOCKLIST_AST_text_only=['scripts/frontier_cycle972_covariant_dependence_law_2026_08_09.py', 'logs/runner-cache/frontier_cycle972_covariant_dependence_law_2026_08_09.txt', 'outputs/covariant_dependence_law_cycle972_receipt_2026_08_09.json', 'docs/MINIMAL_AXIOMS_2026-06-29.md', 'scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py', 'scripts/frontier_cycle970_inter_site_gate_2026_08_09.py', 'docs/INTER_SITE_GATE_CYCLE970_BOUNDED_THEOREM_NOTE_2026-08-09.md']; blocked_modules_loaded=False; primary_calls_real_apply_semantic=True
 PASS R1_REFUTE_FULL_WITNESS_CENSUS :: independent_family=20; witnesses=6/20 ['CNOT(+x->C)', 'CNOT(-x->C)', 'CNOT(+y->C)', 'CNOT(-y->C)', 'CNOT(+z->C)', 'CNOT(-z->C)']; dependent_word_x_rows=12/40; changed_edge_pairs=384/7680; exact_xor_failures=0/768; control_failures=0/768
 PASS R2_REFUTE_COVARIANCE_AND_CLASSES :: independent_rotations=24; verdict=COVARIANT; non_covariant=[]; word_law_classes=1; state_classes=2; orbit_sizes=[6, 6]; stabilizers=[4, 4]; transported_rotation_failures=0/61440; translation_failures=0/15360
 PASS R3_REFUTE_MARGINAL_GAP :: independent_marginal_changed_words=0/20; changed_edge_pairs=0/3840; identity=(1/2)sum_x indicator[y=x XOR n]=1/2 because XOR by fixed n permutes x
 PASS R4_ACTIVE_CORRUPTION_PROBES :: refutation_corruption_probes={"class_count_plus_one":true,"covariance_flip":true,"marginal_count_plus_one":true,"witness_count_plus_one":true,"xor_to_xnor_truth_table":true}; primary_and_cache_match_independent=True
-PASS R5_CONTROLS :: determinism_replay=True; runtime_s=1.610679<timeout_s=300; stdout_upper_bound_bytes=3788<6000<150000; timeout_s=300<1400
+PASS R5_CONTROLS :: determinism_replay=True; runtime_s=1.365937<timeout_s=300; stdout_upper_bound_bytes=3915<6000<150000; timeout_s=300<1400
 VERDICT: PRIMARY_SURVIVES_INDEPENDENT_REFUTATION_ATTEMPT
 TOTAL: PASS=6 FAIL=0
 

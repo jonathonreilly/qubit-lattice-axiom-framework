@@ -55,6 +55,15 @@ marginal subclaim—the explicitly chosen equal weights `1/2,1/2`. That uniform
 weighting is a mathematical diagnostic, not a probability distribution supplied
 by Admissibility or Record. Cycle 970 is provenance only, not a premise.
 
+### Import and support inventory
+
+There are no measured, fitted, observational, literature, or external numeric
+inputs. The equal `1/2,1/2` weighting is an explicit diagnostic definition. The
+Cycle-719 program is the bounded executable substrate being classified, not an
+asserted continuum physics bridge. The current minimal-axiom memo supplies only
+the lattice names and the wider Admissibility/Qubit boundary; it does not supply
+the finite gate family or promote this result.
+
 The current Record axiom contributes no step here. In particular, this result
 uses no named scalar collection functional `I`, finite additivity,
 `I(empty)=0`, scalar value for an absent record, readout-context selection, or
@@ -227,7 +236,7 @@ result.
 
 ## Independent refutation outcome
 
-The checker imports neither primary nor core. It blocklists all five cited
+The checker imports neither primary nor core. It blocklists all seven declared
 inputs from execution, parses the Python inputs as AST, independently
 reconstructs the gate family with Boolean semantics, and constructs the 24
 rotations from oriented orthonormal frames rather than signed permutations.
@@ -251,17 +260,22 @@ TOTAL: PASS=6 FAIL=0
 
 ## Provenance and controls
 
-Cycle 970 is consumed only as provenance at pinned commit
-`6fd0de0a288d212a4a6ce3fdd4dc9019f30dbbad`: its runner blob
-`4670bcb9d83cfc039f1336398c6a4aa4af014f7c` is parsed as AST and never
-executed, while its note blob `f7b788d8076e7864bc5dbcbb33cb9e49554e494a`
-is read as text. The primary confirms the earlier five-word family and its
-declared open covariant residual before extending the orientation horizon.
-The landed axiom and Cycle-719 core are SHA-pinned in the receipt. Both
+Cycle 970 is consumed only as provenance from its current landed runner and
+note. The runner is parsed as AST and never executed; the note is read as text.
+The primary confirms the earlier five-word family and its `4/20` finite census
+before extending the orientation horizon. Cycle 972 itself poses the bounded
+covariance/orbit question. The landed axiom, Cycle-719 core, and current
+Cycle-970 provenance files are SHA-pinned in the receipt. Both
 runners replay deterministically, declare and enforce 300-second timeouts,
 bind the primary receipt/cache to the current primary source and live landed
 inputs, and remain under the stricter 6 KB stdout ceiling. Receipts are written
 only after the actual stdout-size gate passes.
+
+The primary receipt separates the minimal-axiom/core scientific inputs from
+the two Cycle-970 provenance-integrity reads. The independent receipt likewise
+separates its package-local primary/cache/receipt reads from ancestral
+scientific or provenance files; neither runner describes integrity reads as
+absent.
 
 ## Review record and hard landing condition
 

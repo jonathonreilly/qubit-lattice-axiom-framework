@@ -1,6 +1,6 @@
 {
- "edge_count": 15625,
- "node_count": 5497,
+ "edge_count": 15626,
+ "node_count": 5498,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -10237,6 +10237,10 @@
   "inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20": {
    "deps_hash": "13a354b49fb5",
    "out_degree": 2
+  },
+  "input_distribution_dependence_law_cycle975_bounded_theorem_note_2026-08-10": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "instanton_4d_action_8pi2_over_g2_external_narrow_theorem_note_2026-05-16": {
    "deps_hash": "4af4136b6493",

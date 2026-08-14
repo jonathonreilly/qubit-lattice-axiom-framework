@@ -1,11 +1,5 @@
 {
   "audit_status_authority": "independent audit lane only",
-  "boundary": {
-    "all_possible_sixteen_piece_controls_classified": false,
-    "finite_supplied_coordinate_four_cube_only": true,
-    "physical_metric_claimed": false,
-    "shared_cell_corner_count_is_not_a_converse_for_joining": true
-  },
   "carrier_cube_metric": {
     "control_sets": 768,
     "control_with_either_shape": 0,
@@ -85,12 +79,10 @@
     "joined_pair_corner_intersections": [
       2
     ],
-    "one_step_is_definitional": true,
     "shape_counts": {
       "four_cube": 60,
       "two_three_cubes": 72
     },
-    "shape_recognizer": "direct backtracking graph isomorphism",
     "three_cube_distance_counts": {
       "1": [
         0
@@ -106,35 +98,60 @@
       ]
     }
   },
+  "checker_sha256": "c45a77f8b8fde6ea6d9d48626c184a65b6a561a49ea0ec6587fa328db6c7ad9a",
   "claim_type": "bounded_theorem",
   "direct_dependencies": {
     "cycle749": {
-      "complete_carrier_count": 132,
       "contract_current": true,
-      "family_sizes": [
-        12,
-        12,
-        12,
-        24,
-        24,
-        48
-      ],
       "independent_receipt_sha256": "642f705db9108e6a85730b08fc71c28a18b47b6803df95205a2f59a9e12bc7cb",
       "receipt_sha256": "d724389f54452f2099c35669e94bd9a969a19da5f3e6fbe4bd20d86f7d2ee218"
     }
   },
   "gates": {
     "fail": 0,
-    "pass": 42
+    "named": {
+      "hostile.cross_layer": "PASS",
+      "hostile.cycle749": "PASS",
+      "hostile.distance_layer": "PASS",
+      "hostile.primary_status": "PASS",
+      "hostile.shape_count": "PASS",
+      "independent.control": "PASS",
+      "independent.corner_incidence_boundary": "PASS",
+      "independent.cycle749_contract": "PASS",
+      "independent.family_shape_constancy": "PASS",
+      "independent.four_cube_metric": "PASS",
+      "independent.predecessor_live_replay": "PASS",
+      "independent.primary_contract": "PASS",
+      "independent.shape_census": "PASS",
+      "independent.two_three_cube_metric": "PASS"
+    },
+    "pass": 14
+  },
+  "independent_reconstruction": {
+    "complete_carrier_count": 132,
+    "cube_recognizer": "constructive breadth-first bit labeling",
+    "cuttings": 15800,
+    "exact_cover_pivot": "greatest uncovered sample through Cycle 749 checker",
+    "family_sizes": [
+      12,
+      12,
+      12,
+      24,
+      24,
+      48
+    ],
+    "processed_pair_rows": 15800,
+    "support_columns": 192
   },
   "input_sha256": {
     "docs/PHYSICAL_CELL_CUTTING_CARRIER_CUBE_METRIC_CYCLE750_NOTE_2026-08-09.md": "4678ccebabf4a6cfbd2c8a7d63445c8f750e99930f419dfabfb5c001cc23a9fb",
     "docs/PHYSICAL_CELL_CUTTING_FAMILY_SEPARATOR_CYCLE749_NOTE_2026-08-08.md": "defbb45012e00dde2d6401c94a1952fdeae0a792bf8ac7888613e112bba920da",
+    "outputs/physical_cell_cutting_carrier_cube_metric_cycle750_2026_08_09_receipt_2026-08-09.json": "a7cd73da1fe8c578c03c68e65bc983baca33ad88e42fa1505378f774574748e9",
     "outputs/physical_cell_cutting_family_separator_cycle749_2026_08_08_receipt_2026-08-08.json": "d724389f54452f2099c35669e94bd9a969a19da5f3e6fbe4bd20d86f7d2ee218",
     "outputs/physical_cell_cutting_family_separator_cycle749_independent_check_2026_08_08_receipt_2026-08-08.json": "642f705db9108e6a85730b08fc71c28a18b47b6803df95205a2f59a9e12bc7cb",
     "requirements-release.txt": "e153eea331ce1b76cd99f09e14a777df2bc9efbaa06a201528ddfdc0f3f01bee",
     "requirements.txt": "3fda988835a13d9a7236b0b508aa9bcd2f9b3f3b9a47b4875a15f86dbc77a3ad",
-    "scripts/physical_cell_cutting_carrier_cube_metric_cycle750_independent_check_2026_08_09.py": "c45a77f8b8fde6ea6d9d48626c184a65b6a561a49ea0ec6587fa328db6c7ad9a",
+    "scripts/physical_cell_cutting_carrier_cube_metric_cycle750_2026_08_09.py": "4680e613c4ff7eabd9e09cd848708f8ce52df7dcc0d4542778a857c70480eacf",
     "scripts/physical_cell_cutting_family_separator_cycle749_2026_08_08.py": "d45b64d8eecff6da792608faf24bd2e66593155176d23e88da77a485bdf48908",
     "scripts/physical_cell_cutting_family_separator_cycle749_independent_check_2026_08_08.py": "88fe01f5413ce66a08bc8ff41f19019c592cf653c52237d83ae8ea1b10b16279"
   },
@@ -148,14 +165,6 @@
     ],
     "status": "PASS"
   },
-  "runner_sha256": "4680e613c4ff7eabd9e09cd848708f8ce52df7dcc0d4542778a857c70480eacf",
-  "schema": "physical-cell-cutting-carrier-cube-metric-cycle750-v2",
-  "status": "pass",
-  "supplied_incidence": {
-    "cuttings": 15800,
-    "cuttings_per_piece": 1975,
-    "pieces_per_cutting": 24,
-    "processed_pair_rows": 15800,
-    "support_columns": 192
-  }
+  "schema": "physical-cell-cutting-carrier-cube-metric-cycle750-independent-v1",
+  "status": "pass"
 }

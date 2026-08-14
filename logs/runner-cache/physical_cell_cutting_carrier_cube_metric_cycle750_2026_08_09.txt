@@ -1,11 +1,15 @@
 ===== runner cache v1 =====
 runner: scripts/physical_cell_cutting_carrier_cube_metric_cycle750_2026_08_09.py
-runner_sha256: 71df0dd9f7e7da8ffd886cffadcdb17bf118df86271e9ce584fc8324043e7f45
-timeout_sec: 300
+runner_sha256: 4680e613c4ff7eabd9e09cd848708f8ce52df7dcc0d4542778a857c70480eacf
+input_fingerprint_sha256: 6893d3c0ec2db9c32dc6495393d4ac3a0696e35a318e449659ea21d060f54384
+timeout_sec: 900
 exit_code: 0
-elapsed_sec: 94.80
+elapsed_sec: 109.27
 status: ok
 ----- stdout -----
+PASS dependency.cycle749  current primary and independent Cycle 749 certificates bind all 15800 rows, 132 carriers, and six intrinsic families
+PASS hostile.cycle749_family_census  a predecessor certificate changing the exact family census is rejected
+PASS hostile.cycle749_independent  a failing independent predecessor certificate is rejected
 PASS G0  the Gram matrix of the table has constant diagonal 1975
 PASS G1  all 15800 cuttings carry distinct piece supports
 PASS G2  the anchored and the two seeded colour refinements are all discrete
@@ -62,12 +66,18 @@ two three-cubes, inside: 1 gives 0, 2 gives 170..174, 3 gives 250; across 202..6
 PASS G34  inside a three-cube the far corner also gives one value, and the counts across the cubes differ from those inside
 a four-cube carrier's 5-corner cells cover all 16 corners; joined pieces meet in 2, and 2016 farther pairs do too; evenly spaced sixteens of either shape 0 of 768
 PASS G35  no evenly spaced sixteen of the 768 gives either shape
-PASS G36  the joins sit on the object as shared edges of two corners, and meeting in two corners does not by itself make a join
-elapsed under 100 s peak memory under 2500 MB
+PASS G36  joined cells share two ambient corners, but that cell-corner statistic is not a converse because 2016 farther pairs share two as well
+elapsed under 200 s peak memory under 2500 MB
 PASS G37  the whole runner finishes under 900 seconds inside the printed 2500 MB
-PASS G38  its output stays under 6000 characters
+PASS G38  its output including the evidence footer stays under 8000 characters
 
-TOTAL: PASS=39 FAIL=0
+per_element: checked -- all 192 pieces enter the dense pair-count and carrier-graph calculations
+per_site: checked and not executed -- the theorem concerns one supplied coordinate four-cube only
+per_mode: checked and not executed -- this finite binary incidence object has no modal decomposition
+per_block: checked -- every one of the 15800 cutting rows contributes to the dense pair-count matrix
+lattice_wide: checked and not executed -- no multicell, infinite-lattice, continuum, or physical-metric claim
+RECEIPT outputs/physical_cell_cutting_carrier_cube_metric_cycle750_2026_08_09_receipt_2026-08-09.json
+TOTAL: PASS=42 FAIL=0
 
 ----- stderr -----
 

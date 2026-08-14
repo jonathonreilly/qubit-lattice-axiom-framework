@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/physical_cell_cutting_carrier_cube_metric_cycle750_independent_check_2026_08_09.py
+runner_sha256: c45a77f8b8fde6ea6d9d48626c184a65b6a561a49ea0ec6587fa328db6c7ad9a
+input_fingerprint_sha256: 22641fd2df743ff461baf684a76862dfe391db54f04bdbed0a02232d1b2e257f
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 9.26
+status: ok
+----- stdout -----
+PASS independent.cycle749_contract  current Cycle 749 primary and opposite-pivot certificates bind all rows and 132 carriers
+PASS independent.predecessor_live_replay  the landed opposite-pivot predecessor replays live with all 23 gates passing
+PASS independent.shape_census  constructive bit labels recognize exactly 60 four-cubes and 72 pairs of three-cubes
+PASS independent.family_shape_constancy  the independently reconstructed Cycle 749 families carry the exact declared shape split
+PASS independent.four_cube_metric  all four-cube pair-count values reproduce the exact disjoint distance layers
+PASS independent.two_three_cube_metric  inside and cross-component count layers are exact, disjoint, and all 576 maxima cross
+PASS independent.control  all 768 declared cyclic control sets are rejected by the constructive recognizer
+PASS independent.corner_incidence_boundary  shared cell-corner count is necessary on joins but fails as their converse on 2016 farther pairs
+PASS independent.primary_contract  the Cycle 750 primary receipt equals the independent graph and metric reconstruction
+PASS hostile.primary_status  a failing primary receipt is rejected
+PASS hostile.shape_count  a changed four-cube count is rejected
+PASS hostile.distance_layer  a changed antipodal count is rejected
+PASS hostile.cross_layer  a cross/inside layer collision is rejected
+PASS hostile.cycle749  a changed predecessor family census is rejected
+per_element: checked -- all 192 pieces enter the independent streamed pair-count and graph calculations
+per_site: checked and not executed -- the theorem concerns one supplied coordinate four-cube only
+per_mode: checked and not executed -- this finite binary incidence object has no modal decomposition
+per_block: checked -- every one of the 15800 cutting rows contributes to the streamed pair-count matrix
+lattice_wide: checked and not executed -- no multicell, infinite-lattice, continuum, or physical-metric claim
+RECEIPT outputs/physical_cell_cutting_carrier_cube_metric_cycle750_independent_check_2026_08_09_receipt_2026-08-09.json
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

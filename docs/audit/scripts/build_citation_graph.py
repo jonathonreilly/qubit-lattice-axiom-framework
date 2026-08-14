@@ -218,6 +218,12 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
         "scripts/physical_cell_cutting_family_separator_cycle749_"
         "independent_check_2026_08_08.py",
     ],
+    # Cycle 750 reconstructs the predecessor population with the opposite
+    # exact-cover pivot and recognizes cubes by constructive bit labels.
+    "physical_cell_cutting_carrier_cube_metric_cycle750_note_2026-08-09": [
+        "scripts/physical_cell_cutting_carrier_cube_metric_cycle750_"
+        "independent_check_2026_08_09.py",
+    ],
     "inter_site_gate_cycle970_bounded_theorem_note_2026-08-09": [
         "scripts/frontier_cycle970_gate_independent_check_2026_08_09.py",
     ],

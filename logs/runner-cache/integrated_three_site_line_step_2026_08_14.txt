@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/integrated_three_site_line_step_2026_08_14.py
+runner_sha256: 01bda3e2fd842f02c36a1ce567379f1f45dfa0cd072c4ac948e224cc2b8a5640
+input_fingerprint_sha256: 1d51b7d8e5912024bfdc30874c77e238c2ff63c984eda2b760751e7e4705c45a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+external_scientific_inputs: none
+package_local_integrity_reads: runner, note, axiom memo
+measure_boundary: exact Q 3-site line update
+negative_scope: one comparator step, not a TOE
+PASS: thm1-seed seed is (−,·,·) with source 0
+PASS: thm1-nx-c at seed, C has n_x=-1/3 and R has n_x=0
+PASS: thm2-step1 step 1 is (−,−,·) and forms 1
+PASS: thm3-step2 step 2 is (−,−,−) because C is now occupied
+PASS: thm3-recoil-nx after step 1, R has n_x=-1/3
+PASS: thm4-step3 step 3 is identity and forms 0
+PASS: thm5-tick source/tick are 0,1,2,2
+PASS: thm5-one-function step is the only update; source is formed() of that step
+PASS: mutation-empty-fails predicate empty seed forms C must fail
+PASS: mutation-step2-no-R-fails predicate step 2 does not form R must fail
+PASS: mutation-step3-source-fails predicate step 3 increments source must fail
+PASS: quoted note quotes lock, permanence, and NN distribution
+PASS: boundary comparator not TOE, no forbidden phrases
+PASS: memo-silent axioms do not name the line update
+PASS: audit-paths AUDIT_INPUT_PATHS tuple
+per_element: checked exactly — L,C,R occupancy and n_x
+per_site: checked exactly — seed, C form, R form, permanence
+per_mode: checked exactly — one step function; source=tick=formations
+per_block: checked exactly — line recoil, not Newton
+lattice_wide: checked and not executed — no law adopted
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

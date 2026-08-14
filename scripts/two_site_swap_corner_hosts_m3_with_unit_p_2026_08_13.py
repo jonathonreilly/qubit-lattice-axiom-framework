@@ -170,7 +170,7 @@ def swap_matrix() -> Matrix:
 
 
 def phi(matrix3: Matrix, wide: tuple[tuple[Fraction, ...], ...], gram_inv: Matrix) -> Matrix:
-    """Fraction *-iso M_3 → p M_4 p given by φ(X) = W G^{-1} X W*."""
+    """Fraction algebra isomorphism M_3 → p M_4 p: φ(X)=W G^{-1} X W*."""
     return mul_rect(wide, mul_rect(gram_inv, mul_rect(matrix3, transpose(wide))))
 
 
@@ -198,16 +198,19 @@ def main() -> int:
     axiom = AXIOM_PATH.read_text(encoding="utf-8")
     normalized_note = normalize(note).replace("> ", "")
 
-    print("external_scientific_inputs: current axiom wording is source-bound; no observational or fitted inputs are used")
+    print("external_scientific_inputs: none; no observational, fitted, literature, scale, or normalization value is used")
+    print("explicit_bounded_inputs: the standard two-factor tensor algebra and displayed swap are supplied mathematical objects")
+    print("framework_context: Qubit supplies only one-site M_2(C); the composite rule is not attributed to the axioms")
     print("package_local_integrity_reads: the proposed source note is read for claim-surface consistency")
     print("measure_boundary: exact integer/Fraction matrix algebra only")
-    print("negative_scope: only the displayed swap corner is identified; SU(3), QCD, a Qubit rewrite, and a color axiom are not installed")
+    print("negative_scope: only the displayed corner inclusion is non-unital; no broader embedding or physical-identification no-go is asserted")
 
     identity3 = eye(3)
     identity4 = eye(4)
     swap = swap_matrix()
     projector = scale(Fraction(1, 2), add(identity4, swap))
     opposite = sub(identity4, projector)
+    antisymmetric: Vector = (Fraction(0), Fraction(1), Fraction(-1), Fraction(0))
 
     displayed_projector = (
         (Fraction(1), Fraction(0), Fraction(0), Fraction(0)),
@@ -231,6 +234,7 @@ def main() -> int:
     corner_dim = rank(stack_rows(compressed_units))
 
     phi_id = phi(identity3, wide, gram_inv)
+    phi_units = [phi(e_unit(3, row, col), wide, gram_inv) for row in range(3) for col in range(3)]
     e12 = e_unit(3, 0, 1)
     e21 = e_unit(3, 1, 0)
     e11 = e_unit(3, 0, 0)
@@ -244,7 +248,7 @@ def main() -> int:
     )
     checks.check(
         "dim-two-site",
-        "T_2 = M_2 ⊗ M_2 has complex dimension 16, matching M_4",
+        "the explicitly supplied T_2 = M_2 ⊗ M_2 has complex dimension 16, matching M_4",
         dim_mn(2) * dim_mn(2) == 16 and dim_mn(4) == 16,
     )
     checks.check(
@@ -288,7 +292,7 @@ def main() -> int:
         matvec(projector, w1) == w1
         and matvec(projector, w2) == w2
         and matvec(projector, w3) == w3
-        and matvec(projector, (Fraction(0), Fraction(1), Fraction(-1), Fraction(0)))
+        and matvec(projector, antisymmetric)
         == (Fraction(0), Fraction(0), Fraction(0), Fraction(0)),
     )
     checks.check(
@@ -304,14 +308,14 @@ def main() -> int:
     )
     checks.check(
         "thm3-iso-unit",
-        "the Fraction *-iso and the ON projector sum both send I_3 to p",
+        "the Fraction algebra isomorphism and the ON projector sum both send I_3 to p",
         phi_id == projector and on_sum == projector,
     )
     basis = (w1, w2, w3)
     unnorm_units = [[ketbra(basis[i], basis[j]) for j in range(3)] for i in range(3)]
     checks.check(
         "thm3-iso-hom",
-        "phi is a Q-linear algebra map, and the ON units of im(p) multiply as matrix units",
+        "phi is a Q-linear algebra map, and the unnormalized image basis obeys its exact Gram-weighted table",
         phi(sample, wide, gram_inv) == add(scale(Fraction(2), phi(e12, wide, gram_inv)), scale(Fraction(-3), phi_id))
         and phi(mul(e12, e21), wide, gram_inv) == mul(phi(e12, wide, gram_inv), phi(e21, wide, gram_inv))
         and mul(phi(e12, wide, gram_inv), phi(e21, wide, gram_inv)) == phi(e11, wide, gram_inv)
@@ -327,8 +331,13 @@ def main() -> int:
     )
     checks.check(
         "thm3-iso-injective",
-        "phi has trivial kernel on the nine matrix units",
-        all(phi(e_unit(3, row, col), wide, gram_inv) != zero(4) for row in range(3) for col in range(3)),
+        "the nine images under phi are linearly independent, so phi has trivial kernel",
+        rank(stack_rows(phi_units)) == 9,
+    )
+    checks.check(
+        "thm3-phi-not-star",
+        "the Fraction algebra map phi is not mislabeled as the ON-basis star isomorphism psi",
+        adj(phi(e12, wide, gram_inv)) != phi(e21, wide, gram_inv),
     )
     checks.check(
         "thm3-on-table",
@@ -343,14 +352,47 @@ def main() -> int:
     )
     checks.check(
         "thm4-inclusion-not-unital",
-        "the inclusion C into M_4 is not unital",
+        "the displayed inclusion C into M_4 is not unital",
         projector != identity4 and phi_id != identity4,
     )
     checks.check(
-        "thm5-qubit-untouched",
-        "Qubit still names one-site M_2(C) and is not rewritten to M_3",
+        "n1-entry-witness",
+        "entry comparison separates p from I_4",
+        projector[1][1] == Fraction(1, 2) and identity4[1][1] == Fraction(1),
+    )
+    checks.check(
+        "n1-rank-witness",
+        "rank comparison separates p from I_4",
+        rank(projector) == 3 and rank(identity4) == 4,
+    )
+    checks.check(
+        "n1-trace-witness",
+        "trace comparison separates p from I_4",
+        trace(projector) == 3 and trace(identity4) == 4,
+    )
+    checks.check(
+        "n1-vector-witness",
+        "the antisymmetric vector is killed by p but fixed by I_4",
+        matvec(projector, antisymmetric) == (Fraction(0),) * 4
+        and matvec(identity4, antisymmetric) == antisymmetric,
+    )
+    checks.check(
+        "n1-complement-witness",
+        "the complementary rank-one projection is nonzero and orthogonal to p",
+        rank(opposite) == 1 and opposite != zero(4) and mul(projector, opposite) == zero(4),
+    )
+    checks.check(
+        "n1-corner-membership-witness",
+        "the ambient unit fails the corner identity X=pXp",
+        mul(mul(projector, identity4), projector) == projector
+        and mul(mul(projector, identity4), projector) != identity4,
+    )
+    checks.check(
+        "scope-qubit-unchanged",
+        "Qubit still names one-site M_2(C), while the note marks the two-factor composite as an explicit bounded input",
         "The full one-site possibility domain has algebraic presentation `M_2(C)`." in axiom
-        and "rewritten to `M_3`" not in axiom,
+        and "Explicit bounded mathematical input" in note
+        and "not attributed to the four axioms" in note,
     )
     unital_predicate = projector == identity4
     rank_predicate = rank(projector) == 4
@@ -372,12 +414,15 @@ def main() -> int:
     )
     checks.check(
         "machine-status-contract",
-        "the source uses the required bounded-support and color-as-corner leftover status lines",
+        "the source uses the required bounded-support, trace, and propose-ratify status fields",
         all(
             phrase in note
             for phrase in (
                 "actual_current_surface_status: bounded-support",
-                'hypothetical_axiom_status: "color-as-corner leftover: p M_4 p ≅ M_3 with unit p; not adopted as QCD"',
+                "trace_class: frontier_discovery",
+                "target_claim_id: null",
+                "next_trace_action:",
+                "hypothetical_axiom_status: null",
                 "**Type:** bounded_theorem",
                 "audit_required_before_effective_retained: true",
                 "bare_retained_allowed: false",
@@ -386,14 +431,15 @@ def main() -> int:
     )
     checks.check(
         "note-negative-scope",
-        "the note refuses SU(3) installation, QCD naming, Qubit rewrite, and color selection",
+        "the note separates the local non-unitality theorem from physical-identification non-claims",
         all(
             phrase in normalized_note
             for phrase in (
-                "does not install `SU(3)`",
-                "does not name QCD",
-                "does not flip Qubit to `M_3`",
-                "does not select color",
+                "supplies no `SU(3)` action",
+                "QCD identification",
+                "Qubit rewrite to `M_3(C)`",
+                "color-selection map",
+                "no universal no-go",
             )
         ),
     )
@@ -413,10 +459,13 @@ def main() -> int:
     )
     checks.check(
         "no-go-gate",
-        "N1-N8 and the broad-claim rejection are source-visible",
+        "the exact local negative boundary carries a complete source-visible N1-N8 disposition",
         all(f"### N{index}" in note for index in range(1, 9))
-        and "FAIL / DO NOT SHIP" in note
-        and "color is selected by the two-site swap" in note,
+        and note.count("**ATTEMPTED**") >= 5
+        and "Collapsed obstruction set: `{p ≠ I_4}`" in note
+        and "Steelman disposition: **CLOSED**" in note
+        and "N1–N8 disposition: **PASS**" in note
+        and "## Excluded Broader Claims" in note,
     )
     checks.check(
         "audit-input-paths",
@@ -430,11 +479,11 @@ def main() -> int:
         and AXIOM_PATH.is_file(),
     )
 
-    print("per_element: F, p, I_3, I_4, and the matrix units of im(p) are evaluated")
-    print("per_site: the statement is the two-site tensor T_2 ≅ M_4; no lattice-wide carrier is asserted")
-    print("per_mode: the displayed two-site swap and its +1 corner are the tested maps")
-    print("per_block: only the corner host with unit p is identified; unital factorhood and color selection are refused")
-    print("lattice_wide: checked and not executed")
+    print("per_element: entries of F, p, I_4, and the corner matrix units are evaluated exactly")
+    print("per_site: the supplied object is one explicit two-factor tensor algebra, not a framework-wide composite rule")
+    print("per_mode: the displayed swap's +1 and -1 eigenspaces are both resolved by exact ranks and vectors")
+    print("per_block: the displayed corner and its inclusion in one M_4(C) block are tested; no physical identification is inferred")
+    print("lattice_wide: checked and not executed — the theorem supplies no lattice-wide carrier or universal composite claim")
     return checks.finish()
 
 

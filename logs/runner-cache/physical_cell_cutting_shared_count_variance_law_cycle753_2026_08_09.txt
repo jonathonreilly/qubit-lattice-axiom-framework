@@ -1,11 +1,14 @@
 ===== runner cache v1 =====
 runner: scripts/physical_cell_cutting_shared_count_variance_law_cycle753_2026_08_09.py
-runner_sha256: a1019c730ea5cc948fa794887b3115fab18be00c6a803c097fabf52eb2f21be3
-timeout_sec: 600
+runner_sha256: 9c5ce5daaacc28d95714c9eb9dd1cc11da2c6d93c6ba2040f69408d77b423ae9
+input_fingerprint_sha256: c9f46920d306d588f10e2fe01e5fed75fa7b98ae6ddaa0bc13e65c7af29e7c13
+timeout_sec: 900
 exit_code: 0
-elapsed_sec: 210.15
+elapsed_sec: 230.72
 status: ok
 ----- stdout -----
+PASS dependency.cycle752  current Cycle 752 primary and independent receipts bind the complete induced-Q4 census
+PASS dependency.hostile_cycle752  a changed Cycle 752 induced-Q4 census is rejected before the long reconstruction
 PASS G0  the Gram matrix of the table has constant diagonal 1975
 PASS G1  all 15800 cuttings carry distinct piece supports
 PASS G2  the anchored and the two seeded colour refinements are all discrete
@@ -64,11 +67,17 @@ PASS G37  ranked by odd meetings they sit 57973th to 58032th, 57972 shapes above
 PASS G38  the largest multiplicity reached is 8 and 42192 shapes pass four
 PASS G39  the linear form in odd count and twice-met holds on 17544, exactly those capped at four
 PASS G40  over all 132 carriers the squared spread runs 7680 to 16832 and takes 4 values
+per_element: checked -- all 192 pieces enter the complete induced-Q4 multiplicity-profile census
+per_site: checked and not executed -- the theorem concerns one supplied coordinate four-cube only
+per_mode: checked and not executed -- this finite binary incidence object has no modal decomposition
+per_block: checked -- every one of the 15800 cutting rows enters the forced-mean and ranking checks
+lattice_wide: checked and not executed -- no multicell, infinite-lattice, causal, or continuum claim
 elapsed under 300 s peak memory under 2500 MB
 PASS G41  inside its time and memory allowance
-PASS G42  its output stays under 6000 characters
+PASS G42  its output stays under 10000 characters
 
-TOTAL: PASS=42 FAIL=0
+RECEIPT outputs/physical_cell_cutting_shared_count_variance_law_cycle753_2026_08_09_receipt_2026-08-09.json
+TOTAL: PASS=44 FAIL=0
 
 ----- stderr -----
 

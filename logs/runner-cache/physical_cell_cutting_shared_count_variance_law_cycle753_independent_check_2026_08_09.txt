@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/physical_cell_cutting_shared_count_variance_law_cycle753_independent_check_2026_08_09.py
+runner_sha256: 77b2ba18de6045a5680bcf4f516b71927ac88e5773b41e5ba896681562011ca1
+input_fingerprint_sha256: c45d501d35ea2a83f080392d7e0a21e6623bf8d6d7d029b9525cac11d1d6390f
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 74.55
+status: ok
+----- stdout -----
+PASS independent.cycle752_contract  current Cycle 752 primary and helper receipts bind the complete induced-Q4 population
+PASS independent.cycle752_live_replay  the structurally independent Cycle 752 checker completes live with all 19 gates
+PASS independent.complete_profiles  all 59736 profiles contain 15800 rows, weight 31600, and multiplicity at most eight
+PASS independent.forced_mean_identity  row-blocked profiles independently give T = 15800 + squared spread/2 for every Q4
+PASS independent.parity_floor  parity plus the forced mean independently gives floor 18632 and the unique equality profile
+PASS independent.minimum_profile  the minimum Q4 carrier is 1008 over the floor with the independently rebuilt five-bin profile
+PASS independent.twice_met_ranking  the 60 largest twice-met counts are exactly the Q4 carriers with the 9616/8688 boundary
+PASS independent.odd_met_ranking  odd-count equality also classifies the carriers, while descending rank places 57972 shapes above them
+PASS independent.cap_four_linear_form  the odd/twice linear form holds exactly on the 17544 Q4s capped at multiplicity four
+PASS independent.all_carrier_spreads  all 132 minimum carriers independently have exactly four squared-spread values
+PASS independent.primary_contract  the Cycle 753 primary receipt matches the independent forced-mean and ranking reconstruction
+PASS hostile.primary_odd_classifier  a reversion that hides the odd-count equality classifier is rejected
+PASS hostile.cycle752_status  a failing direct Cycle 752 independent certificate is rejected
+per_element: checked -- all 192 pieces enter the independently replayed Q4 multiplicity census
+per_site: checked and not executed -- the theorem concerns one supplied coordinate four-cube only
+per_mode: checked and not executed -- this finite binary incidence object has no modal decomposition
+per_block: checked -- every one of the 15800 cutting rows enters the row-blocked profile reconstruction
+lattice_wide: checked and not executed -- no multicell, infinite-lattice, causal, or continuum claim
+RECEIPT outputs/physical_cell_cutting_shared_count_variance_law_cycle753_independent_check_2026_08_09_receipt_2026-08-09.json
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

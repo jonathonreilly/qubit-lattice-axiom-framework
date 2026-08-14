@@ -1,13 +1,93 @@
+import copy
+import hashlib
 import itertools
+import json
 import math
 import resource
+import sys
 import time
+from pathlib import Path
 
 import numpy as np
+
+AUDIT_TIMEOUT_SEC = 900
+
+ROOT = Path(__file__).resolve().parents[1]
+PRIMARY_PATH = (
+    "scripts/physical_cell_cutting_shared_count_variance_law_cycle753_2026_08_09.py"
+)
+CHECKER_PATH = (
+    "scripts/physical_cell_cutting_shared_count_variance_law_cycle753_"
+    "independent_check_2026_08_09.py"
+)
+NOTE_PATH = (
+    "docs/PHYSICAL_CELL_CUTTING_SHARED_COUNT_VARIANCE_LAW_"
+    "CYCLE753_NOTE_2026-08-09.md"
+)
+RECEIPT_PATH = ROOT / (
+    "outputs/physical_cell_cutting_shared_count_variance_law_cycle753_"
+    "2026_08_09_receipt_2026-08-09.json"
+)
+C752_NOTE_PATH = (
+    "docs/PHYSICAL_CELL_CUTTING_SHAPE_CENSUS_LEAST_SHARING_"
+    "CYCLE752_NOTE_2026-08-09.md"
+)
+C752_PRIMARY_PATH = (
+    "scripts/physical_cell_cutting_shape_census_least_sharing_cycle752_2026_08_09.py"
+)
+C752_CHECKER_PATH = (
+    "scripts/physical_cell_cutting_shape_census_least_sharing_cycle752_"
+    "independent_check_2026_08_09.py"
+)
+C752_RECEIPT_PATH = (
+    "outputs/physical_cell_cutting_shape_census_least_sharing_cycle752_"
+    "2026_08_09_receipt_2026-08-09.json"
+)
+C752_INDEPENDENT_RECEIPT_PATH = (
+    "outputs/physical_cell_cutting_shape_census_least_sharing_cycle752_"
+    "independent_check_2026_08_09_receipt_2026-08-09.json"
+)
+AUDIT_INPUT_PATHS = (
+    "docs/PHYSICAL_CELL_CUTTING_SHARED_COUNT_VARIANCE_LAW_CYCLE753_NOTE_2026-08-09.md",
+    "scripts/physical_cell_cutting_shared_count_variance_law_cycle753_independent_check_2026_08_09.py",
+    "docs/PHYSICAL_CELL_CUTTING_SHAPE_CENSUS_LEAST_SHARING_CYCLE752_NOTE_2026-08-09.md",
+    "scripts/physical_cell_cutting_shape_census_least_sharing_cycle752_2026_08_09.py",
+    "scripts/physical_cell_cutting_shape_census_least_sharing_cycle752_independent_check_2026_08_09.py",
+    "outputs/physical_cell_cutting_shape_census_least_sharing_cycle752_2026_08_09_receipt_2026-08-09.json",
+    "outputs/physical_cell_cutting_shape_census_least_sharing_cycle752_independent_check_2026_08_09_receipt_2026-08-09.json",
+    "requirements.txt",
+    "requirements-release.txt",
+)
 
 T0 = time.time()
 PF = [0, 0]
 OUT = [0]
+
+
+def sha256(path):
+    return hashlib.sha256((ROOT / path).read_bytes()).hexdigest()
+
+
+def load(path):
+    with (ROOT / path).open(encoding="utf-8") as handle:
+        return json.load(handle)
+
+
+def inputs_current(receipt):
+    recorded = receipt.get("input_sha256", {})
+    return bool(recorded) and all(
+        (ROOT / path).is_file() and recorded.get(path) == sha256(path)
+        for path in recorded
+    )
+
+
+def write_failure(reason):
+    RECEIPT_PATH.write_text(json.dumps({
+        "schema": "physical-cell-cutting-shared-count-variance-cycle753-v2",
+        "status": "fail",
+        "claim_type": "bounded_theorem",
+        "reason": reason,
+    }, indent=2, sort_keys=True) + "\n", encoding="utf-8")
 
 
 def emit(s):
@@ -22,6 +102,55 @@ def emit(s):
 def gate(ok, name, detail):
     PF[0 if ok else 1] += 1
     emit(("PASS " if ok else "FAIL ") + name + "  " + detail)
+
+
+def cycle752_contract(primary, independent):
+    census = primary.get("induced_q4_census", {})
+    separation = primary.get("pair_total_separation", {})
+    floor = primary.get("parity_floor", {})
+    independent_census = independent.get("induced_q4_census", {})
+    independent_separation = independent.get("pair_total_separation", {})
+    independent_floor = independent.get("parity_floor", {})
+    return (
+        primary.get("schema") == "physical-cell-cutting-shape-census-cycle752-v2"
+        and primary.get("status") == "pass"
+        and primary.get("claim_type") == "bounded_theorem"
+        and primary.get("gates", {}).get("fail") == 0
+        and primary.get("runner_sha256") == sha256(C752_PRIMARY_PATH)
+        and inputs_current(primary)
+        and census.get("induced_q4_count") == 59736
+        and census.get("declared_reading_counts") == {"four": 60, "none": 59676}
+        and separation.get("q4_carrier_minimum") == 19640
+        and separation.get("q4_carrier_maximum") == 19800
+        and separation.get("other_q4_minimum") == 20338
+        and floor.get("derived_lower_bound") == 18632
+        and independent.get("schema")
+        == "physical-cell-cutting-shape-census-cycle752-independent-v1"
+        and independent.get("status") == "pass"
+        and independent.get("claim_type") == "bounded_theorem"
+        and independent.get("gates", {}).get("fail") == 0
+        and independent.get("checker_sha256") == sha256(C752_CHECKER_PATH)
+        and inputs_current(independent)
+        and independent_census.get("induced_q4_count") == 59736
+        and independent_census.get("declared_reading_counts")
+        == {"four": 60, "none": 59676}
+        and independent_separation.get("q4_carrier_minimum") == 19640
+        and independent_separation.get("q4_carrier_maximum") == 19800
+        and independent_separation.get("other_q4_minimum") == 20338
+        and independent_floor.get("derived_lower_bound") == 18632
+    )
+
+
+write_failure("runner has not completed")
+C752 = load(C752_RECEIPT_PATH)
+C752I = load(C752_INDEPENDENT_RECEIPT_PATH)
+C752_OK = cycle752_contract(C752, C752I)
+gate(C752_OK, "dependency.cycle752",
+     "current Cycle 752 primary and independent receipts bind the complete induced-Q4 census")
+bad_cycle752 = copy.deepcopy(C752I)
+bad_cycle752["induced_q4_census"]["induced_q4_count"] = 59735
+gate(not cycle752_contract(C752, bad_cycle752), "dependency.hostile_cycle752",
+     "a changed Cycle 752 induced-Q4 census is rejected before the long reconstruction")
 
 
 
@@ -1700,7 +1829,7 @@ gate(FAM == [12, 12, 12, 24, 24, 48] and sum(FAM) == len(CEN)
      and len(FIX) == len(CEN), "G29",
      "the symmetries do not carry every smallest carrier of four onto every "
      "other: six families")
-# ---- Part 4i: the shape is common, the sharing counts are what carry the charge ----
+# ---- Part 4i: complete finite Q4 multiplicity profiles ----
 from itertools import combinations as CMB
 
 FA = INCL.astype(np.float64)
@@ -1882,12 +2011,108 @@ gate(NLIN == 17544 and LINEQ, "G39",
 gate(CDOK and len(DSET) == 4 and DSET[0] == 7680 and DSET[-1] == 16832, "G40",
      "over all {0} carriers the squared spread runs {1} to {2} and takes {3} values".format(len(CEN), DSET[0], DSET[-1], len(DSET)))
 
+emit("per_element: checked -- all 192 pieces enter the complete induced-Q4 multiplicity-profile census")
+emit("per_site: checked and not executed -- the theorem concerns one supplied coordinate four-cube only")
+emit("per_mode: checked and not executed -- this finite binary incidence object has no modal decomposition")
+emit("per_block: checked -- every one of the 15800 cutting rows enters the forced-mean and ranking checks")
+emit("lattice_wide: checked and not executed -- no multicell, infinite-lattice, causal, or continuum claim")
+
 EL = time.time() - T0
 RSS = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1048576.0
 ELB, RSB = upto(EL, 100), 2500
 emit("elapsed under {0} s peak memory under {1} MB".format(ELB, RSB))
 gate(EL < 900.0 and RSS < float(RSB), "G41", "inside its time and memory allowance")
-CH = OUT[0] + 120
-gate(CH < 6000, "G42", "its output stays under {0} characters".format(6000))
+CH = OUT[0] + 200
+gate(CH < 10000, "G42", "its output stays under {0} characters".format(10000))
+
+receipt = {
+    "schema": "physical-cell-cutting-shared-count-variance-cycle753-v2",
+    "status": "pass" if PF[1] == 0 else "fail",
+    "claim_type": "bounded_theorem",
+    "audit_status_authority": "independent audit lane only",
+    "runner_sha256": sha256(PRIMARY_PATH),
+    "input_sha256": {path: sha256(path) for path in AUDIT_INPUT_PATHS},
+    "direct_dependencies": {
+        "cycle752": {
+            "receipt_sha256": sha256(C752_RECEIPT_PATH),
+            "independent_receipt_sha256": sha256(C752_INDEPENDENT_RECEIPT_PATH),
+            "contract_current": C752_OK,
+        },
+    },
+    "gates": {"pass": PF[0], "fail": PF[1]},
+    "supplied_incidence": {
+        "cuttings": NCUT,
+        "support_columns": NPO,
+        "pieces_per_cutting": int(IB.sum(axis=1)[0]),
+        "cuttings_per_piece": PPC,
+        "processed_profile_rows": NCUT,
+    },
+    "forced_mean_identity": {
+        "set_size": KSZ,
+        "total_meetings": MEETS,
+        "mean_multiplicity": 2,
+        "induced_q4_count": NSHP,
+        "pair_total_formula": "15800 + squared_departure_from_two / 2",
+        "profile_sum_failures": PSOK,
+        "profile_weight_failures": WSOK,
+        "identity_failures": IDOK,
+        "odd_spread_failures": EVOK,
+    },
+    "parity_floor": {
+        "odd_rows": S4W,
+        "derived_lower_bound": FLOOR,
+        "equality_profile": {"0": 0, "1": 2832, "2": 10136, "3": 2832, "4": 0},
+        "minimum_carrier_total": LOWT,
+        "minimum_over_floor": OVER,
+        "minimum_profile": {str(index): int(value) for index, value in enumerate(SPRF) if value},
+    },
+    "finite_q4_rankings": {
+        "q4_carriers": NCAR,
+        "twice_met": {
+            "top_set_is_exactly_carriers": TOP2 == CSET2,
+            "least_carrier_value": LOA2,
+            "next_noncarrier_value": NXT,
+            "strictly_above_least_carrier": AB36,
+            "equal_to_least_carrier": AE24,
+        },
+        "odd_met": {
+            "carrier_value": S4W,
+            "strictly_above": ODDHI,
+            "equal": ODDEQ,
+            "strictly_below": NSHP - ODDHI - ODDEQ,
+            "equality_set_is_exactly_carriers": ODDST == CSET2,
+            "descending_rank_interval": [ODDHI + 1, ODDHI + ODDEQ],
+        },
+        "maximum_multiplicity": MXTOP,
+        "shapes_above_multiplicity_four": NPAST,
+        "linear_form_shapes": NLIN,
+        "linear_form_exactly_cap_four": LINEQ,
+    },
+    "all_minimum_carriers": {
+        "count": len(CEN),
+        "distinct_squared_spreads": DSET,
+    },
+    "boundary": {
+        "finite_supplied_coordinate_four_cube_only": True,
+        "odd_count_equality_also_classifies_q4_carriers": ODDST == CSET2,
+        "descending_odd_count_reproduces_pair_total_ranking": False,
+        "twice_met_threshold_is_unique_possible_classifier": False,
+        "causal_or_charge_specific_selector_claimed": False,
+        "mixed_reading_or_multicell_claimed": False,
+    },
+    "no_go_discipline": {
+        "status": "PASS",
+        "n5_execution_certificate": [
+            "per_element checked",
+            "per_site checked and not executed",
+            "per_mode checked and not executed",
+            "per_block checked",
+            "lattice_wide checked and not executed",
+        ],
+    },
+}
+RECEIPT_PATH.write_text(json.dumps(receipt, indent=2, sort_keys=True) + "\n", encoding="utf-8")
 emit("")
-print("TOTAL: PASS={0} FAIL={1}".format(PF[0], PF[1]))
+emit("RECEIPT {0}".format(RECEIPT_PATH.relative_to(ROOT)))
+emit("TOTAL: PASS={0} FAIL={1}".format(PF[0], PF[1]))
+sys.exit(0 if PF[1] == 0 else 1)

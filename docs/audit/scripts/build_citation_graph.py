@@ -236,6 +236,12 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
         "scripts/physical_cell_cutting_shape_census_least_sharing_cycle752_"
         "independent_check_2026_08_09.py",
     ],
+    # Cycle 753 replays Cycle 752's least-vertex/streamed-pair checker and
+    # rebuilds every new multiplicity profile in cutting-row blocks.
+    "physical_cell_cutting_shared_count_variance_law_cycle753_note_2026-08-09": [
+        "scripts/physical_cell_cutting_shared_count_variance_law_cycle753_"
+        "independent_check_2026_08_09.py",
+    ],
     "inter_site_gate_cycle970_bounded_theorem_note_2026-08-09": [
         "scripts/frontier_cycle970_gate_independent_check_2026_08_09.py",
     ],

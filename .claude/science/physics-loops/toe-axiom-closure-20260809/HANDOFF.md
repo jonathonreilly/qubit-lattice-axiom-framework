@@ -2697,11 +2697,12 @@ TT, menu, coefficient, period, precision, or Record-front fixture.
 
 ## Block 68 Handoff
 
-Block 68 is being packaged on
+Block 68 is published on
 `physics-loop/toe-axiom-closure-block68-record-stress-block44-ir-20260813`,
 stacked exactly on Block-67 delivery `dbb6d88029`. It leaves the independent
 review-loop axiom/landing branch untouched and treats `origin/main` as the sole
-axiom authority.
+axiom authority. Science commit is `18753d6a1d`; stacked PR #6269 is open,
+mergeable, and `CLEAN` on Block67 PR #6266.
 
 The exact Block67-to-Block44 source covector is now fixed, relative to the
 supplied coordinate/frame conventions, up to one global scalar. In Block44

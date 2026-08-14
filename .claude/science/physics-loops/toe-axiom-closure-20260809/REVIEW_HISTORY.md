@@ -2924,3 +2924,6 @@ instance or Fourier census.
   retirement before independent audit. After one capped common-metric joint-law
   decision, the portfolio shifts to higher-fanout readout/register and
   chirality roots rather than another gravity carrier or TT variant.
+- Science commit is `18753d6a1d`; stacked PR #6269 is open, mergeable, and
+  `CLEAN` on exact Block67 delivery `dbb6d88029`. No axiom edit, audit verdict,
+  retained status, percentage move, or `review-loop` action occurs.

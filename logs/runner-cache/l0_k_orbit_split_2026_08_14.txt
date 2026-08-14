@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/l0_k_orbit_split_2026_08_14.py
+runner_sha256: b11660d67361d884956ae995bb9d8a7c44cb4c79eb733990a016dd2eb8b4c264
+input_fingerprint_sha256: f6a5af60db08e9593a67585d78fe602636400bbafa55157cef96069f3ac15bf3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+external_scientific_inputs: none
+package_local_integrity_reads: runner, note, axiom memo
+measure_boundary: exact orbit split of the 56 cells
+negative_scope: k is not a cubic type, not a TOE
+PASS: thm1-counts k=0,1,2,3 counts are 8,24,24,8
+PASS: thm2-k1-split k=1 is more than one orbit
+PASS: thm3-k3-one k=3 is one orbit of 8
+PASS: thm2-k2-sum k=2 orbits cover 24 cells
+PASS: mutation-k1-one-fails predicate k=1 is one orbit must fail
+PASS: mutation-k3-two-fails predicate k=3 has two orbits must fail
+PASS: mutation-64-fails predicate nonzero count is 64 must fail
+PASS: quoted note quotes Qubit and Admissibility
+PASS: boundary not TOE, no forbidden phrases
+PASS: memo-silent axioms do not name k-orbits
+PASS: gates identity gates and AUDIT_INPUT_PATHS
+per_element: checked exactly — 6 occupancy bits, two 90° generators
+per_site: checked exactly — 64 occupancy cells
+per_mode: checked exactly — orbit decomposition per k
+per_block: checked exactly — k is a union of orbits
+lattice_wide: checked and not executed — not axiom text
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

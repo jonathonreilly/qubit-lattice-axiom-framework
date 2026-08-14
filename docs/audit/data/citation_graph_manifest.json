@@ -1,6 +1,6 @@
 {
- "edge_count": 15697,
- "node_count": 5522,
+ "edge_count": 15706,
+ "node_count": 5523,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -353,6 +353,10 @@
   "admissibility_covariant_q8_conditional_law_pair_bounded_theorem_note_2026-08-13": {
    "deps_hash": "c8eee4235fc9",
    "out_degree": 1
+  },
+  "admissibility_gaussian_second_moment_quantile_decoder_effect_quotient_bounded_theorem_note_2026-08-10": {
+   "deps_hash": "49eee57bc821",
+   "out_degree": 8
   },
   "admissibility_global_measure_menu_kernel_type_separation_bounded_theorem_note_2026-08-10": {
    "deps_hash": "8830c572e201",
@@ -1675,8 +1679,8 @@
    "out_degree": 11
   },
   "canonical_harness_index": {
-   "deps_hash": "f93ee77de5eb",
-   "out_degree": 357
+   "deps_hash": "c1de301d630e",
+   "out_degree": 358
   },
   "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": {
    "deps_hash": "808c1ccb6109",

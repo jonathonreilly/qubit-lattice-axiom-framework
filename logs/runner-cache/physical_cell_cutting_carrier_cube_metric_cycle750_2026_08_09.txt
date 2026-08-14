@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/physical_cell_cutting_carrier_cube_metric_cycle750_2026_08_09.py
-runner_sha256: 4680e613c4ff7eabd9e09cd848708f8ce52df7dcc0d4542778a857c70480eacf
+runner_sha256: b733a3622f536c27d1671147c804a8183d9503f0c0e2c4137799ffda9c7df031
 input_fingerprint_sha256: 6893d3c0ec2db9c32dc6495393d4ac3a0696e35a318e449659ea21d060f54384
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 109.27
+elapsed_sec: 107.01
 status: ok
 ----- stdout -----
 PASS dependency.cycle749  current primary and independent Cycle 749 certificates bind all 15800 rows, 132 carriers, and six intrinsic families

@@ -22,8 +22,9 @@ is how the shape was made and says nothing on its own. Nothing made the rest. Tw
 give 170 to 184, three steps give 240 to 250, and the far corner gives 433 every time:
 three bands that do not meet and that rise with the distance. So the count of shared
 cuttings settles the distance outright: each of the twelve counts that occur belongs to
-one distance and no other, so the distance is a function of the count. Counting, with no
-coordinates anywhere in the computation, produces a distance on the sixteen pieces.
+one distance and no other, so the distance is a function of the count. After the supplied
+coordinate incidence object is built, its intrinsic pair counts recover a distance on the
+sixteen pieces without using their coordinate labels in that metric calculation.
 
 Class-A: integer and field-with-two-elements arithmetic on a finite explicit object, no
 solver. Every count below is measured here.

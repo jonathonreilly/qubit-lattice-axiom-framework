@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/physical_cell_cutting_carrier_cube_metric_cycle750_independent_check_2026_08_09.py
 runner_sha256: c45a77f8b8fde6ea6d9d48626c184a65b6a561a49ea0ec6587fa328db6c7ad9a
-input_fingerprint_sha256: 22641fd2df743ff461baf684a76862dfe391db54f04bdbed0a02232d1b2e257f
+input_fingerprint_sha256: 5078a61fbd86fb1c0cbbb76f680a31d2685f64c48ee34b45d464a2fcecd6b310
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 9.26
+elapsed_sec: 8.60
 status: ok
 ----- stdout -----
 PASS independent.cycle749_contract  current Cycle 749 primary and opposite-pivot certificates bind all rows and 132 carriers

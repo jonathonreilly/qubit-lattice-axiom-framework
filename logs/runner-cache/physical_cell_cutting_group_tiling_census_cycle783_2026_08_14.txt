@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/physical_cell_cutting_group_tiling_census_cycle783_2026_08_14.py
+runner_sha256: 9e2daea208fb27568d2fc9839e254c72bd2ea94559f772d0d7f8673ecbfe6e4c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 21.84
+status: ok
+----- stdout -----
+PASS K1 object: 2672 candidates, floor 6, 400 kept, 625 points, 15800 cuttings of 24, 192 pieces, 192 chambers, incidence 8 and 8, bad 0
+namings: 384 walk namings, 2 per piece, and the minimal one starts at the corner below its opposite
+PASS K2 symmetry group: 384 elements permute 192 chambers and 192 pieces, distinct maps 384, sign minus on 192, covariance failures 0 of 73728
+PASS K3 relabelling: the even-mask subgroup of 192 elements, from 8 masks, hits each of 192 chambers once; product failures 0, dictionary 0 of 36864
+tile zero: 0123:0 0132:12 0231:12 0321:12 1230:12 1320:12 2310:12 3210:15
+tile one: 0123:0 0132:12 0231:12 0321:12 1023:0 1032:12 2013:0 3012:0
+stabilizers: tile zero fixed by 3210:15, tile one by 1032:12, both permutation signs plus, orbit 96 times stabilizer 2 is 192
+PASS K4 tiles: bases 9 and 73 among the 8 at the base chamber, types 96 and 96, 192 translates 96 and 96, 2 carriers each, degree 8, bad 0
+PASS K5 label theorem: L of a translate w X equals the sign of the permutation part of w, failures 0 of 192, both base labels plus
+PASS K6 model-only recount: the abstract search over 192 elements and 192 tiles finds 15800 tilings, census -8:120 -4:2832 0:9896 4:2832 8:120
+PASS K7 bijection: the 15800 tilings and the 15800 cuttings match as sets, and the tile sum equals the label sum on each, failures 0
+PASS K8 positions: 12 shadows of size 8, every permutation in 4 of them, 16 pieces each and 8 per type, label failures 0, types opposite yes
+PASS K9 profiles: 125 abstract solutions, 8 odd 27 even 90 parity-mixed; 25 realized, 6 odd 19 even, mixed realized 0; kernel dimension 6 of 12
+PASS K10 orbits: 6 orbits of the 25 realized profiles, sizes 1 6 3 3 6 6, counts 9368 944 160 24 20 16, weighted total 15800, action failures 0
+profile census: U size 1 count 9368 -8:24 0:9320 8:24; O size 6 count 944 -4:472 4:472
+profile census: A size 3 count 160 -8:8 0:144 8:8; B size 3 count 24 -8:12 8:12
+profile census: C size 6 count 20 -8:6 0:8 8:6; D size 6 count 16 0:16
+PASS K11 halving: each of the 25 profiles has a sign-minus stabilizer, per-profile censuses all sign symmetric, class O pure at 4 and class B at 8
+PASS K12 assembly: 2832 = 6 times 472; 120 = (48 + 3 times 16 + 3 times 24 + 6 times 12) halved; 9896 = 15800 - 5664 - 240
+PASS K13 extremes: the 240 cuttings at size 8 fall into 7 orbits, 4 of size 24 by stabilizer 16 and 3 of size 48 by 8, each product 384
+PASS K14 rejector one: moving one tile element to another even mask gives 288 distinct translates of which 96 are pieces, short of 192
+PASS K15 rejector two: negating the labels of one tile type changes the census at 3 values, the count at minus 8 moving from 120 to 108
+PASS K16 rejector three: the parity-mixed abstract solution 4 0 4 0 3 1 0 0 1 4 3 4 is realized by 0 of the 15800 tilings
+census: label sum over the 15800 cuttings -8:120 -4:2832 0:9896 4:2832 8:120
+TOTAL: PASS=16 FAIL=0
+resource: under 60 s of the 900 s budget, under 250 MB of the 2500 MB budget, 2910 characters
+
+----- stderr -----
+

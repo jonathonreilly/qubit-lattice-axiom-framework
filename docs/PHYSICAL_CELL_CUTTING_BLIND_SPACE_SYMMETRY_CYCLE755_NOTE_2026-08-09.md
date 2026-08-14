@@ -1,18 +1,53 @@
-# The space the cuttings cannot see is not built from whole symmetry blocks — Cycle 755
+# The cutting-kernel overlaps the seen module in isotypic multiplicity — Cycle 755
 
-Date: 2026-08-09
+Date: 2026-08-09 (revised 2026-08-14 by review-loop)
 
-Authority: none
+Authority: none; proposed for independent audit.
 
 Audit: unset.
 
-Status: computational identities of the finite cutting system
+Status: proposed_retained
 
-Claim type: computational identities
+Claim type: bounded_theorem
 
-Runner:
+Primary runner:
 
 - [paired rebuild-and-gate runner](../scripts/physical_cell_cutting_blind_space_symmetry_cycle755_2026_08_09.py)
+
+Independent checker:
+
+- [character/orbital independent checker](../scripts/physical_cell_cutting_blind_space_symmetry_cycle755_independent_check_2026_08_09.py)
+
+Both executables are co-load-bearing. The checker imports no Cycle 755
+primary symbols. It live-replays the current Cycle 754 helper and reconstructs
+the new character, orbital-residual, and signed-exchange calculations with
+separate exact and modular implementations.
+
+Direct scientific dependency:
+
+- [Cycle 754 exact incidence shadow and least unseen exchange](PHYSICAL_CELL_CUTTING_SHADOW_RANK_UNSEEN_SWAP_CYCLE754_NOTE_2026-08-09.md)
+
+Both Cycle 755 executables authenticate the current Cycle 754 primary and
+independent receipts, including their source and declared-input hashes.
+
+```text
+actual_current_surface_status: conditional-support
+target_claim_type: bounded_theorem
+trace_class: frontier_discovery
+target_claim_id: physical_cell_cutting_blind_space_symmetry_cycle755_note_2026-08-09
+target_blocker_text: determine whether the finite symmetry representation isolates the rank-88 seen subspace and identify how much of the kernel one least exchange orbit generates
+source_of_blocker_text: Cycle 754 exact rank/kernel and four-for-four exchange boundary
+reachability_to_target: exact finite representation theory and exhaustive computation on the supplied coordinate four-cube
+artifact_role: bounded finite representation-theory theorem candidate
+next_trace_action: independent audit of the landed primary and helper evidence
+conditional_surface_status: direct Cycle 754 dependency remains subject to independent audit
+hypothetical_axiom_status: none
+admitted_observation_status: none
+claim_type_reason: exact finite character, commutant, and exchange-orbit identities without a physical or multicell lift
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+packet_helper_runner: scripts/physical_cell_cutting_blind_space_symmetry_cycle755_independent_check_2026_08_09.py
+```
 
 Scope: computational identities of the finite cutting system. Every number
 below is machine-checked by the paired runner, which rebuilds the cell
@@ -34,28 +69,31 @@ lies in the image of that table, and blind if the table sends it to zero —
 blind meaning that every one of the 15800 cuttings, totalled piece by piece
 against the weighting, comes out zero.
 
-The preceding cycle measured the exact rational rank of the sharing table as
+The [preceding cycle](PHYSICAL_CELL_CUTTING_SHADOW_RANK_UNSEEN_SWAP_CYCLE754_NOTE_2026-08-09.md) measured the exact rational rank of the sharing table as
 88, so the blind space has dimension 104 and the two add back to 192. That
 cycle recorded the rank as a measurement and said in as many words that it did
 not derive it. This cycle asks the next question: does the group of 384
 symmetries of the whole system — the piece permutations that carry cuttings to
-cuttings — single the blind space out on its own? Is the blind space a
-symmetry object? The answer is no, and the obstruction is measured twice, by
-two routes sharing no machinery, both returning 21.
+cuttings — single the blind space out as a complete isotypic summand? The
+answer is no, and the obstruction is measured by two different calculations
+on the same finite object, both returning 21. The kernel itself is nevertheless
+invariant under all 384 symmetries.
 
 ## Two results against interest, first
 
-**The blind space is not a symmetry object, so the route this cycle was opened
-to walk does not go through.** The plan was to derive 88 from the group: if
-the blind space were a sum of whole same-type blocks of the 384 symmetries,
+**The blind space is invariant but is not a sum of complete isotypic
+components, so the named character route does not go through.** The plan was
+to derive 88 from the group: if the blind space were a sum of complete
+isotypic components of the 384-symmetry representation,
 its dimension would be fixed by the trace counts of the group alone, and 88
-would follow as the complement. A subspace of a permutation module is a sum of
-whole same-type blocks exactly when no same-type block appears both in it and
-in its complement — exactly when the averaged product of the two trace counts
-is zero. Here that averaged product is 21. Twenty-one same-type parts, counted
-with multiplicity, are shared between the seen space and the blind space. So
-the blind space is not a sum of whole blocks, and the trace counts of the 384
-symmetries do not pick it out.
+would follow as the complement. For the invariant orthogonal splitting used
+here, the kernel is a sum of complete isotypic components exactly when no
+irreducible type appears in both it and the seen row space — exactly when the
+character inner product is zero. Here that inner product is 21. In character
+notation this is `sum_lambda m_blind(lambda) m_seen(lambda)=21`; it is a
+multiplicity-weighted overlap, not a count of 21 distinct irreducible types.
+So the fixed-point character together with this splitting does not derive
+rank 88.
 
 **The failure count of the natural basis overstated the obstruction.** The
 maps commuting with every symmetry have the pair-orbit matrices as a basis. Of
@@ -111,13 +149,13 @@ gives three numbers: seen with seen 29, seen with blind 21, blind with blind
 that the splitting of the 192 weightings into seen and blind is fully
 accounted for, with no part of the module missing from the two sides.
 
-The lead result is the middle number. 21 is not zero, so some same-type block
-appears in both the seen space and the blind space, and the blind space is
-therefore not a sum of whole same-type blocks of the 384 symmetries. The exact
-consequence, and nothing past it: the splitting of the 192 weightings into
-same-type blocks under the group is coarser than the seen/blind splitting; the
-group data alone leaves the choice inside the 21 shared parts open; and so the
-rank 88 is not fixed by the trace counts of the group. This is not a statement
+The lead result is the middle number. 21 is not zero, so at least one
+irreducible type appears in both the seen space and the blind space, and the
+blind space is therefore not a sum of complete isotypic components of the
+384-symmetry representation. The exact consequence, and nothing past it: the
+isotypic splitting of the 192 weightings is coarser than the seen/blind
+splitting; the fixed-point character alone leaves the multiplicity-space
+choice open; and so this character route does not fix rank 88. This is not a statement
 that the group forbids a blind space of dimension 104 — the group plainly
 permits this one, which exists and is carried into itself by every symmetry.
 It is a statement that the group does not single this one out.
@@ -160,9 +198,9 @@ preserving dimension, so this route meets the count from the other side.
 
 The agreement is what discriminates here. One route averages products of trace
 counts over 384 symmetries; the other does elimination on residual matrices in
-a different arithmetic, and the two share none of their machinery. Either one
-alone could be a coding error and still look clean. Both landing on 21 is the
-check that neither is.
+a different arithmetic. They share the supplied finite incidence object and
+group action but not the new calculation. Their agreement is a cross-check,
+not statistical evidence that coding error is impossible.
 
 ## One least exchange orbit reaches 60 of the 104 blind dimensions
 
@@ -188,8 +226,10 @@ class fall short of generating blindness, is not made here.
 
 ## What the runner gates
 
-32 gates, `TOTAL: PASS=32 FAIL=0`, in under 100 s and under 2500 MB, with
-output under 6000 characters. What is checked, and how:
+The repaired primary has source/input-bound receipts, hostile predecessor and
+boundary mutations, fail-closed nonzero exit behavior, and the five-line N5
+resolution certificate. Its exact gate count and elapsed resources are in the
+current canonical cache rather than frozen into this note. It checks:
 
 - the group is rebuilt from scratch and its order 384 gated, along with its
   one orbit on the 192 pieces;
@@ -207,14 +247,17 @@ output under 6000 characters. What is checked, and how:
 
 ## Boundary and honest read
 
-**Derived, and holding for this system:** the four-block splitting of the
+**Derived, and holding for finite characteristic-zero representations with the
+invariant orthogonal splitting used here:** the four-block splitting of the
 commuting algebra along the blind-plus-seen splitting, and hence the 83; the
 equivalence between a commuting map carrying the blind space into itself and
 the vanishing of its blind-to-seen block; the trace identity that reads one
-basis entry per row; and the fact that a subspace of a permutation module is a
-sum of whole same-type blocks exactly when the averaged product of its trace
-count with its complement's is zero. These are the general parts, and they are
-what the measured numbers are fed into.
+basis entry per row; and the fact that this invariant subspace is a sum of
+complete isotypic components exactly when its character inner product with the
+invariant orthogonal complement is zero. These are the general parts, and they
+are what the measured numbers are fed into. The kernel itself remains a genuine
+invariant subrepresentation; only the stronger complete-isotypic-summand
+property fails.
 
 **Measured on this object, and not claimed beyond it:** the group order 384;
 the rank 88 and the blind dimension 104; the averaged products 29, 21 and
@@ -236,6 +279,125 @@ supports is far past what this runner would carry. What generates the 44 blind
 dimensions the least exchanges do not reach is open. And nothing here derives
 88 from anything — this cycle narrows where such a derivation could come from,
 and that is the whole of what it does.
+
+## Proof-obligation graph
+
+1. Current Cycle 754 primary and helper receipts bind the supplied incidence
+   object, rational rank 88, 104-dimensional kernel, symmetry group, and least
+   four-for-four exchange.
+2. The Cycle 755 primary rebuilds the finite object; the helper live-replays
+   the independent predecessor and imports no Cycle 755 primary symbols.
+3. Exact kernel invariance makes the blind and seen spaces representations of
+   the 384-element group, so their characters and character inner products are
+   defined.
+4. The exact character inner products 29, 21, and 33 prove multiplicity
+   overlap and rebuild the 104-dimensional commutant.
+5. Ordered-pair orbitals independently span that commutant; the residual map
+   `A -> Gram A kernel^T` has rank 21 over two primes, hence the preserving
+   subspace has dimension 83 when combined with the exact character upper
+   bound.
+6. Exact and modular ranks of all 192 signed images of one least exchange give
+   span dimension 60, leaving a 44-dimensional complement in the kernel.
+7. Source/input-bound receipts, hostile mutations, nonzero failure exits, and
+   independent helper contracts close the process obligations.
+
+There is no unresolved leaf in these finite identities. A structural
+derivation of rank 88, a classification of all support-eight kernel vectors,
+generators for the remaining 44 dimensions, and any physical or multicell
+interpretation remain open.
+
+## No-Go Discipline Gate
+
+The negative conclusions are deliberately narrow: one fixed-point-character
+route does not isolate the measured kernel as a complete isotypic summand, and
+one signed least-exchange orbit does not generate the whole kernel. No claim is
+made that every symmetry, incidence, spectral, coding, or combinatorial route
+to rank 88 fails.
+
+### N1 — alternative routes
+
+1. **ATTEMPTED — exact kernel route.** Exact rational elimination and direct
+   incidence multiplication establish the 104-dimensional kernel and its
+   invariance, preventing the rhetoric from denying that it is a symmetry
+   subrepresentation.
+2. **ATTEMPTED — character-orthogonality route.** Exact character inner
+   products give seen/blind overlap 21, which rules out only a decomposition
+   into complete isotypic components.
+3. **ATTEMPTED — orbital-commutant route.** Ordered-pair orbitals and the
+   residual map independently give rank 21 and preserving dimension 83; the
+   primary and helper use distinct arithmetic implementations.
+4. **ATTEMPTED — Burnside/stabilizer route.** Fixed-point averaging, direct
+   ordered-pair orbits, and the order-two point stabilizer independently give
+   commutant dimension 104, closing the ambient dimension used by route 3.
+5. **ATTEMPTED — least-exchange generation route.** All 192 signed images of
+   the Cycle 754 witness are checked and span only 60 kernel dimensions,
+   leaving 44; this says nothing about other exchange or incidence generators.
+6. **ATTEMPTED — hostile-boundary route.** Both receipts reject a mutation
+   that widens the named character obstruction into a universal no-route
+   claim, so stale broad rhetoric cannot remain green.
+
+### N2 — wall independence
+
+No multiple-wall theorem is asserted. The three open questions — a structural
+rank derivation, classification of all support-eight kernel vectors, and
+generation of the remaining 44 dimensions — are an inventory, not an
+independence claim or wall count.
+
+### N3 — hidden-wall scan
+
+The load-bearing inputs are the supplied finite incidence object and current
+Cycle 754 rank/kernel/exchange certificate. Standard finite-group character
+orthogonality is used transparently. No framework primitive, physical bridge,
+continuum limit, probability rule, or empirical input is hidden in the claim.
+
+### N4 — residual matching
+
+The direct predecessor is Cycle 754: it supplies rank 88, kernel dimension 104,
+the 384 exact symmetries, and the explicit four-for-four exchange. Cycle 755
+tests exactly the next residuals — complete-isotypic isolation and orbit-span
+generation. It does not cite Cycle 754 as having already answered either one.
+
+### N5 — rhetoric and resolution
+
+- `per_element`: all 192 piece coordinates are exercised.
+- `per_site`: one supplied coordinate four-cube is exercised; no multi-site
+  or translated-lattice claim is made.
+- `per_mode`: exact characters test irreducible multiplicity overlap.
+- `per_block`: blind, seen, exchange-orbit, and complementary blocks are
+  exercised.
+- `lattice_wide`: not exercised; no infinite-lattice or continuum conclusion
+  is made.
+
+Accordingly, the earlier phrase “not a symmetry object” is rejected. The
+kernel is invariant. The landed claim is only failure of the stronger
+complete-isotypic-summand property and of one named exchange-orbit generator.
+
+### N6 — partial-closure paths
+
+No new axiom, primitive, convention, or physical import is required for these
+finite identities. The open rank route could still close through the incidence
+algebra, a finer group-module invariant, an exact design identity, coding
+theory, or a different combinatorial generator. Those are research paths, not
+walls promoted into premises.
+
+### N7 — steelman
+
+A hostile reviewer should insist that character overlap 21 only defeats the
+complete-isotypic-summand shortcut. The full labeled incidence algebra contains
+far more information than the fixed-point character, and another canonical
+invariant could still force rank 88. Likewise, a single least-exchange orbit
+spanning 60 dimensions says nothing about other support-eight or larger
+generators. This steelman is correct and is built into the narrowed claim; it
+would defeat any universal symmetry or exchange no-go.
+
+### N8 — cross-cycle echo
+
+Cycle 754 already distinguished failure of two proposed rank/lower-bound
+routes from a universal impossibility result. The same mechanism applies here:
+record the exact failed route and preserve the broader target as open. No prior
+wall-retirement mechanism is foreclosed or relabeled as requiring a new axiom.
+
+No-Go Discipline result: **PASS for the narrowed finite negative boundary.**
 
 ## Next
 

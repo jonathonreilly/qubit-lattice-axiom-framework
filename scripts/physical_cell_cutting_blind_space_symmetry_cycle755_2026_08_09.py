@@ -1,5 +1,5 @@
-"""Rebuild the cutting system of the unit four-cube and ask whether the space the
-cuttings cannot see is a symmetry object.
+"""Rebuild the cutting system of the unit four-cube and test whether its
+invariant cutting-kernel is a sum of complete isotypic components.
 
 Every count below is measured here. The runner builds the cell complex, the least
 volume pieces, the cuttings at the adjacency cost floor, the piece sharing table,
@@ -8,12 +8,121 @@ system to itself, the trace of each symmetry on the blind space, the maps
 commuting with every symmetry, and the images of the least exchange, gating each
 quantity in place.
 """
+import copy
+import hashlib
 import itertools
+import json
 import math
 import resource
+import sys
 import time
+from pathlib import Path
 
 import numpy as np
+
+AUDIT_TIMEOUT_SEC = 900
+
+ROOT = Path(__file__).resolve().parents[1]
+PRIMARY_PATH = (
+    "scripts/physical_cell_cutting_blind_space_symmetry_cycle755_2026_08_09.py"
+)
+CHECKER_PATH = (
+    "scripts/physical_cell_cutting_blind_space_symmetry_cycle755_"
+    "independent_check_2026_08_09.py"
+)
+NOTE_PATH = (
+    "docs/PHYSICAL_CELL_CUTTING_BLIND_SPACE_SYMMETRY_"
+    "CYCLE755_NOTE_2026-08-09.md"
+)
+RECEIPT_PATH = ROOT / (
+    "outputs/physical_cell_cutting_blind_space_symmetry_cycle755_"
+    "2026_08_09_receipt_2026-08-09.json"
+)
+C754_NOTE_PATH = (
+    "docs/PHYSICAL_CELL_CUTTING_SHADOW_RANK_UNSEEN_SWAP_"
+    "CYCLE754_NOTE_2026-08-09.md"
+)
+C754_PRIMARY_PATH = (
+    "scripts/physical_cell_cutting_shadow_rank_unseen_swap_cycle754_2026_08_09.py"
+)
+C754_CHECKER_PATH = (
+    "scripts/physical_cell_cutting_shadow_rank_unseen_swap_cycle754_"
+    "independent_check_2026_08_09.py"
+)
+C754_RECEIPT_PATH = (
+    "outputs/physical_cell_cutting_shadow_rank_unseen_swap_cycle754_"
+    "2026_08_09_receipt_2026-08-09.json"
+)
+C754_INDEPENDENT_RECEIPT_PATH = (
+    "outputs/physical_cell_cutting_shadow_rank_unseen_swap_cycle754_"
+    "independent_check_2026_08_09_receipt_2026-08-09.json"
+)
+AUDIT_INPUT_PATHS = (
+    "docs/PHYSICAL_CELL_CUTTING_BLIND_SPACE_SYMMETRY_CYCLE755_NOTE_2026-08-09.md",
+    "scripts/physical_cell_cutting_blind_space_symmetry_cycle755_independent_check_2026_08_09.py",
+    "docs/PHYSICAL_CELL_CUTTING_SHADOW_RANK_UNSEEN_SWAP_CYCLE754_NOTE_2026-08-09.md",
+    "scripts/physical_cell_cutting_shadow_rank_unseen_swap_cycle754_2026_08_09.py",
+    "scripts/physical_cell_cutting_shadow_rank_unseen_swap_cycle754_independent_check_2026_08_09.py",
+    "outputs/physical_cell_cutting_shadow_rank_unseen_swap_cycle754_2026_08_09_receipt_2026-08-09.json",
+    "outputs/physical_cell_cutting_shadow_rank_unseen_swap_cycle754_independent_check_2026_08_09_receipt_2026-08-09.json",
+    "requirements.txt",
+    "requirements-release.txt",
+)
+
+
+def sha256(path):
+    return hashlib.sha256((ROOT / path).read_bytes()).hexdigest()
+
+
+def load(path):
+    with (ROOT / path).open(encoding="utf-8") as handle:
+        return json.load(handle)
+
+
+def inputs_current(receipt):
+    recorded = receipt.get("input_sha256", {})
+    return bool(recorded) and all(
+        (ROOT / path).is_file() and recorded.get(path) == sha256(path)
+        for path in recorded
+    )
+
+
+def write_failure(reason):
+    RECEIPT_PATH.write_text(json.dumps({
+        "schema": "physical-cell-cutting-isotypic-overlap-cycle755-v2",
+        "status": "fail",
+        "claim_type": "bounded_theorem",
+        "reason": reason,
+    }, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+
+
+def cycle754_contract(primary, independent):
+    rational = primary.get("rational_shadow", {})
+    exchange = primary.get("exchange_boundary", {})
+    independent_rational = independent.get("rational_shadow", {})
+    independent_exchange = independent.get("exchange_boundary", {})
+    return (
+        primary.get("schema") == "physical-cell-cutting-shadow-rank-cycle754-v2"
+        and primary.get("status") == "pass"
+        and primary.get("claim_type") == "bounded_theorem"
+        and primary.get("gates", {}).get("fail") == 0
+        and primary.get("runner_sha256") == sha256(C754_PRIMARY_PATH)
+        and inputs_current(primary)
+        and rational.get("rank") == 88
+        and rational.get("kernel_dimension") == 104
+        and exchange.get("four_for_four_witness")
+        == {"positive": [4, 5, 10, 11], "negative": [1, 3, 7, 9]}
+        and independent.get("schema")
+        == "physical-cell-cutting-shadow-rank-cycle754-independent-v1"
+        and independent.get("status") == "pass"
+        and independent.get("claim_type") == "bounded_theorem"
+        and independent.get("gates", {}).get("fail") == 0
+        and independent.get("checker_sha256") == sha256(C754_CHECKER_PATH)
+        and inputs_current(independent)
+        and independent_rational.get("rank") == 88
+        and independent_rational.get("kernel_dimension") == 104
+        and independent_exchange.get("witness_orbit_size") == 96
+    )
 
 T0 = time.time()
 PF = [0, 0]
@@ -32,6 +141,18 @@ def emit(s):
 def gate(ok, name, detail):
     PF[0 if ok else 1] += 1
     emit(("PASS " if ok else "FAIL ") + name + "  " + detail)
+
+
+write_failure("runner has not completed")
+C754 = load(C754_RECEIPT_PATH)
+C754I = load(C754_INDEPENDENT_RECEIPT_PATH)
+C754_OK = cycle754_contract(C754, C754I)
+gate(C754_OK, "dependency.cycle754",
+     "current Cycle 754 primary and helper bind rank 88, kernel 104, and the least exchange")
+bad_cycle754 = copy.deepcopy(C754I)
+bad_cycle754.setdefault("rational_shadow", {})["rank"] = 87
+gate(not cycle754_contract(C754, bad_cycle754), "hostile.cycle754_rank",
+     "a one-unit reversion of the direct predecessor rank is rejected")
 
 
 
@@ -1630,9 +1751,9 @@ gate(ZRR + 2 * ZRK + ZKK == ZFF and ZRR == 29 and ZKK == 33, "G23",
      "the three rebuild the pair-orbit count {0}, so the split of the {1} weightings "
      "into seen and blind is accounted for".format(ZFF, NPO))
 gate(ZRK == 21 and ZRK > 0, "G24",
-     "the seen and the blind space share {0} parts counted with multiplicity, so the "
-     "blind space is not a sum of whole same-type blocks and the symmetry trace "
-     "counts alone do not pick it out".format(ZRK))
+     "the seen/blind irreducible multiplicities have inner product {0}, so the "
+     "invariant blind space is not a sum of complete isotypic components"
+     .format(ZRK))
 
 
 # ---- Part 6d: the maps commuting with every symmetry, and what they see ----
@@ -1691,8 +1812,8 @@ gate(ZRNK == ZRK and ZRNK == 21 and ZDIM == 83 and ZDIM == ZNOR - ZRK
      and ZBIG < (1 << 62), "G25",
      "the maps commuting with every symmetry span {0} dimensions and exactly {1} of "
      "them carry the blind space into itself, a prime-field rank of that condition "
-     "returning the same {2} the trace count gave, by a route sharing none of its "
-     "machinery".format(ZNOR, ZDIM, ZRK))
+     "returning the same {2} the trace count gave, using a distinct calculation on "
+     "the same finite object".format(ZNOR, ZDIM, ZRK))
 gate(len(ZKEEP) == 2 and ZPOK and ZNOR - len(ZKEEP) == 102 and ZMAXR == 12738, "G26",
      "yet of the {0} pair-orbit maps spanning them, {1} do so on their own and both "
      "are symmetries in the group already, the other {2} missing by as much as {3}"
@@ -1748,6 +1869,12 @@ gate(ZMM + 2 * ZMX + ZQQ == ZKK, "G29",
      "premise, the measured content being that every average came out a whole "
      "number, as a wrong trace would not".format(ZKK))
 
+emit("per_element: checked -- all 192 piece coordinates enter the exact invariant-kernel and character checks")
+emit("per_site: checked and not executed -- the theorem concerns one supplied coordinate four-cube only")
+emit("per_mode: checked -- exact characters resolve multiplicity overlap between the seen and blind modules")
+emit("per_block: checked -- blind, seen, exchange-orbit, and complementary blocks are tested explicitly")
+emit("lattice_wide: checked and not executed -- no multicell, infinite-lattice, causal, or continuum claim")
+
 
 # ---- Part 6f: allowances ----
 
@@ -1760,4 +1887,70 @@ gate(EL < 900.0 and RSS < float(RSB), "G30", "inside its time and memory allowan
 CH = OUT[0] + 120
 gate(CH < 6000, "G31", "its output stays under {0} characters".format(6000))
 emit("")
-print("TOTAL: PASS={0} FAIL={1}".format(PF[0], PF[1]))
+receipt = {
+    "schema": "physical-cell-cutting-isotypic-overlap-cycle755-v2",
+    "status": "pass" if PF[1] == 0 else "fail",
+    "claim_type": "bounded_theorem",
+    "audit_status_authority": "independent audit lane only",
+    "runner_sha256": sha256(PRIMARY_PATH),
+    "input_sha256": {path: sha256(path) for path in AUDIT_INPUT_PATHS},
+    "direct_dependencies": {
+        "cycle754": {
+            "receipt_sha256": sha256(C754_RECEIPT_PATH),
+            "independent_receipt_sha256": sha256(C754_INDEPENDENT_RECEIPT_PATH),
+            "contract_current": C754_OK,
+        },
+    },
+    "finite_object": {
+        "cuttings": NCUT,
+        "piece_coordinates": NPO,
+        "group_order": ZNG,
+        "sharing_rank": YRANK,
+        "blind_dimension": ZKD,
+        "blind_invariant_under_group": ZSYM,
+    },
+    "character_overlap": {
+        "seen_seen": ZRR,
+        "seen_blind": ZRK,
+        "blind_blind": ZKK,
+        "endomorphism_dimension": ZFF,
+        "blind_is_sum_of_complete_isotypic_components": ZRK == 0,
+        "rank_88_derived_from_group_fixed_point_characters": False,
+    },
+    "commutant": {
+        "ordered_pair_orbits": ZNOR,
+        "residual_rank_mod_prime": ZRNK,
+        "blind_preserving_dimension": ZDIM,
+        "individual_orbital_matrices_preserving_blind": len(ZKEEP),
+        "largest_nonzero_residual_entry": ZMAXR,
+    },
+    "least_exchange_orbit": {
+        "signed_images": len(ZORB),
+        "span_dimension": ZSPN,
+        "blind_complement_dimension": ZGAP,
+    },
+    "boundary": {
+        "finite_supplied_coordinate_four_cube_only": True,
+        "blind_space_is_group_invariant": True,
+        "group_fixed_point_characters_alone_determine_rank_claimed": False,
+        "all_symmetry_or_incidence_routes_to_rank_excluded": False,
+        "all_support_eight_blind_vectors_classified": False,
+        "remaining_44_dimensions_generated": False,
+        "physical_or_multicell_interpretation_claimed": False,
+    },
+    "no_go_discipline": {
+        "status": "PASS",
+        "n5_execution_certificate": [
+            "per_element checked",
+            "per_site checked and not executed",
+            "per_mode checked",
+            "per_block checked",
+            "lattice_wide checked and not executed",
+        ],
+    },
+    "gates": {"pass": PF[0], "fail": PF[1]},
+}
+RECEIPT_PATH.write_text(json.dumps(receipt, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+emit("RECEIPT {0}".format(RECEIPT_PATH.relative_to(ROOT)))
+emit("TOTAL: PASS={0} FAIL={1}".format(PF[0], PF[1]))
+sys.exit(0 if PF[1] == 0 else 1)

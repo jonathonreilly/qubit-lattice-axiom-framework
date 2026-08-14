@@ -1,11 +1,14 @@
 ===== runner cache v1 =====
 runner: scripts/physical_cell_cutting_blind_space_symmetry_cycle755_2026_08_09.py
-runner_sha256: b8c482a421daed3cbbc2e0f8f5bca05ea40a1546cdcf966eda430290e2c7ff39
-timeout_sec: 300
+runner_sha256: c4df16beaaf7818478385a41e2448a23c71bf2daf31e81f3c0a61db14b124dcd
+input_fingerprint_sha256: 70dad67fe008bc24d2e1a3c21b1fbf65a03ea0adfba73a8aa85a7f197bae52b9
+timeout_sec: 900
 exit_code: 0
-elapsed_sec: 18.90
+elapsed_sec: 23.15
 status: ok
 ----- stdout -----
+PASS dependency.cycle754  current Cycle 754 primary and helper bind rank 88, kernel 104, and the least exchange
+PASS hostile.cycle754_rank  a one-unit reversion of the direct predecessor rank is rejected
 PASS G0  the Gram matrix of the table has constant diagonal 1975
 PASS G1  all 15800 cuttings carry distinct piece supports
 PASS G2  the anchored and the two seeded colour refinements are all discrete
@@ -42,19 +45,25 @@ PASS G22  the symmetries have 104 orbits on ordered pairs, by the averaged squar
 
 averaged squares: seen with seen 29, seen with blind 21, blind with blind 33
 PASS G23  the three rebuild the pair-orbit count 104, so the split of the 192 weightings into seen and blind is accounted for
-PASS G24  the seen and the blind space share 21 parts counted with multiplicity, so the blind space is not a sum of whole same-type blocks and the symmetry trace counts alone do not pick it out
-PASS G25  the maps commuting with every symmetry span 104 dimensions and exactly 83 of them carry the blind space into itself, a prime-field rank of that condition returning the same 21 the trace count gave, by a route sharing none of its machinery
+PASS G24  the seen/blind irreducible multiplicities have inner product 21, so the invariant blind space is not a sum of complete isotypic components
+PASS G25  the maps commuting with every symmetry span 104 dimensions and exactly 83 of them carry the blind space into itself, a prime-field rank of that condition returning the same 21 the trace count gave, using a distinct calculation on the same finite object
 PASS G26  yet of the 104 pair-orbit maps spanning them, 2 do so on their own and both are symmetries in the group already, the other 102 missing by as much as 12738
 PASS G27  a four-for-four exchange has 192 signed images, every one blind against all 15800 cuttings, and they span 60 of the 104 blind dimensions, leaving 44
 PASS G28  those images span a part of the blind space that every symmetry carries into itself, of dimension 60, holding no constant weighting
 a least exchange reaches 60 of the 104 blind dimensions; averaged squares for that part 13, for the rest 8, across 6, with the seen space 11
 PASS G29  the part and the rest rebuild the blind count 33, which follows from its premise, the measured content being that every average came out a whole number, as a wrong trace would not
+per_element: checked -- all 192 piece coordinates enter the exact invariant-kernel and character checks
+per_site: checked and not executed -- the theorem concerns one supplied coordinate four-cube only
+per_mode: checked -- exact characters resolve multiplicity overlap between the seen and blind modules
+per_block: checked -- blind, seen, exchange-orbit, and complementary blocks are tested explicitly
+lattice_wide: checked and not executed -- no multicell, infinite-lattice, causal, or continuum claim
 
 elapsed under 100 s peak memory under 2500 MB
 PASS G30  inside its time and memory allowance
 PASS G31  its output stays under 6000 characters
 
-TOTAL: PASS=32 FAIL=0
+RECEIPT outputs/physical_cell_cutting_blind_space_symmetry_cycle755_2026_08_09_receipt_2026-08-09.json
+TOTAL: PASS=34 FAIL=0
 
 ----- stderr -----
 

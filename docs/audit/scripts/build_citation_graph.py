@@ -248,6 +248,12 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
         "scripts/physical_cell_cutting_shadow_rank_unseen_swap_cycle754_"
         "independent_check_2026_08_09.py",
     ],
+    # Cycle 755 replays the Cycle 754 helper and independently reconstructs
+    # characters, ordered-pair orbitals, residual ranks, and the signed orbit.
+    "physical_cell_cutting_blind_space_symmetry_cycle755_note_2026-08-09": [
+        "scripts/physical_cell_cutting_blind_space_symmetry_cycle755_"
+        "independent_check_2026_08_09.py",
+    ],
     "inter_site_gate_cycle970_bounded_theorem_note_2026-08-09": [
         "scripts/frontier_cycle970_gate_independent_check_2026_08_09.py",
     ],

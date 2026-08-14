@@ -1,64 +1,76 @@
 {
   "audit_status_authority": "independent audit lane only",
   "boundary": {
-    "all_support_eight_blind_vectors_classified": false,
     "all_symmetry_or_incidence_routes_to_rank_excluded": false,
     "blind_space_is_group_invariant": true,
-    "finite_supplied_coordinate_four_cube_only": true,
-    "group_fixed_point_characters_alone_determine_rank_claimed": false,
-    "physical_or_multicell_interpretation_claimed": false,
+    "blind_space_is_sum_of_complete_isotypic_components": false,
     "remaining_44_dimensions_generated": false
   },
   "character_overlap": {
     "blind_blind": 33,
-    "blind_is_sum_of_complete_isotypic_components": false,
     "endomorphism_dimension": 104,
-    "rank_88_derived_from_group_fixed_point_characters": false,
     "seen_blind": 21,
     "seen_seen": 29
   },
+  "checker_sha256": "c4c4c8550f70e8138b9f4f1fbfc977fb856bb867de2c6d7f7174c23997d8f21d",
   "claim_type": "bounded_theorem",
   "commutant": {
     "blind_preserving_dimension": 83,
     "individual_orbital_matrices_preserving_blind": 2,
     "largest_nonzero_residual_entry": 12738,
     "ordered_pair_orbits": 104,
-    "residual_rank_mod_prime": 21
+    "residual_rank_prime_1": 21,
+    "residual_rank_prime_2": 21
   },
   "direct_dependencies": {
     "cycle754": {
       "contract_current": true,
       "independent_receipt_sha256": "6c9e2c0df814495a9c35d997f583e676fb412dceecb060e7f0773a20b740ecab",
+      "live_replay_passed": true,
       "receipt_sha256": "20a32cb4f3c8c82da5129c1bbcd1bd9b31cc6e049a782d17308058ad1440a1b5"
     }
   },
-  "finite_object": {
-    "blind_dimension": 104,
-    "blind_invariant_under_group": true,
-    "cuttings": 15800,
-    "group_order": 384,
-    "piece_coordinates": 192,
-    "sharing_rank": 88
-  },
   "gates": {
     "fail": 0,
-    "pass": 34
+    "named": {
+      "hostile.cycle754_status": "PASS",
+      "hostile.primary_boundary": "PASS",
+      "hostile.primary_overlap": "PASS",
+      "independent.characters": "PASS",
+      "independent.cycle754_contract": "PASS",
+      "independent.cycle754_live_replay": "PASS",
+      "independent.exchange_orbit": "PASS",
+      "independent.orbital_residual": "PASS",
+      "independent.primary_contract": "PASS",
+      "independent.reconstruction": "PASS"
+    },
+    "pass": 10
+  },
+  "independent_reconstruction": {
+    "cuttings": 15800,
+    "group_order": 384,
+    "kernel_dimension": 104,
+    "method": "Cycle754 helper replay; exact characters; ordered-pair orbitals; dual modular ranks; SymPy orbit rank",
+    "piece_coordinates": 192
   },
   "input_sha256": {
     "docs/PHYSICAL_CELL_CUTTING_BLIND_SPACE_SYMMETRY_CYCLE755_NOTE_2026-08-09.md": "68be98a2eab43240176d2aaa13dea34da50fa9989354f0db94bf70ed3844bd5e",
     "docs/PHYSICAL_CELL_CUTTING_SHADOW_RANK_UNSEEN_SWAP_CYCLE754_NOTE_2026-08-09.md": "39fd37b2acc5bbbcfc452cfac18a2e6c7be0d128a2f1cdd3e3fbba9f51b58d88",
+    "outputs/physical_cell_cutting_blind_space_symmetry_cycle755_2026_08_09_receipt_2026-08-09.json": "6d6f1f09441cabf80907a69e0880c718776616c5fb79bf0b019657ac04aad6bc",
     "outputs/physical_cell_cutting_shadow_rank_unseen_swap_cycle754_2026_08_09_receipt_2026-08-09.json": "20a32cb4f3c8c82da5129c1bbcd1bd9b31cc6e049a782d17308058ad1440a1b5",
     "outputs/physical_cell_cutting_shadow_rank_unseen_swap_cycle754_independent_check_2026_08_09_receipt_2026-08-09.json": "6c9e2c0df814495a9c35d997f583e676fb412dceecb060e7f0773a20b740ecab",
     "requirements-release.txt": "e153eea331ce1b76cd99f09e14a777df2bc9efbaa06a201528ddfdc0f3f01bee",
     "requirements.txt": "3fda988835a13d9a7236b0b508aa9bcd2f9b3f3b9a47b4875a15f86dbc77a3ad",
-    "scripts/physical_cell_cutting_blind_space_symmetry_cycle755_independent_check_2026_08_09.py": "c4c4c8550f70e8138b9f4f1fbfc977fb856bb867de2c6d7f7174c23997d8f21d",
+    "scripts/physical_cell_cutting_blind_space_symmetry_cycle755_2026_08_09.py": "c4df16beaaf7818478385a41e2448a23c71bf2daf31e81f3c0a61db14b124dcd",
     "scripts/physical_cell_cutting_shadow_rank_unseen_swap_cycle754_2026_08_09.py": "715b61ab21fc82eedd3be1f262f210a0a1cf2f88833dd4bf27c2cfbe211744df",
     "scripts/physical_cell_cutting_shadow_rank_unseen_swap_cycle754_independent_check_2026_08_09.py": "468d0528b6e7c44b41605cbee3a2e5f771cb455345cd47ef98795ea5aaa5f9c6"
   },
   "least_exchange_orbit": {
     "blind_complement_dimension": 44,
     "signed_images": 192,
-    "span_dimension": 60
+    "span_rank_exact": 60,
+    "span_rank_prime_1": 60,
+    "span_rank_prime_2": 60
   },
   "no_go_discipline": {
     "n5_execution_certificate": [
@@ -70,7 +82,6 @@
     ],
     "status": "PASS"
   },
-  "runner_sha256": "c4df16beaaf7818478385a41e2448a23c71bf2daf31e81f3c0a61db14b124dcd",
-  "schema": "physical-cell-cutting-isotypic-overlap-cycle755-v2",
+  "schema": "physical-cell-cutting-isotypic-overlap-cycle755-independent-v1",
   "status": "pass"
 }

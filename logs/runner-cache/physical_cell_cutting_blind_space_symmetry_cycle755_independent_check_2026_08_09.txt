@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/physical_cell_cutting_blind_space_symmetry_cycle755_independent_check_2026_08_09.py
+runner_sha256: c4c4c8550f70e8138b9f4f1fbfc977fb856bb867de2c6d7f7174c23997d8f21d
+input_fingerprint_sha256: 5930d2220d522f480eceefeb4570c02a8703e2dce5fa132215f2a1feb1f27c6c
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 141.56
+status: ok
+----- stdout -----
+PASS independent.cycle754_contract  current Cycle 754 receipts bind rank 88, kernel dimension 104, and the least exchange
+PASS independent.cycle754_live_replay  the independent Cycle 754 reconstruction completes live with all fifteen gates
+PASS independent.reconstruction  the predecessor supplies the exact incidence, 104-row free-column kernel basis, and 384 symmetries
+PASS independent.characters  exact character inner products are 29, 21, 33 and rebuild the 104-dimensional endomorphism algebra
+PASS independent.orbital_residual  104 ordered-pair orbitals give residual rank 21 twice; 2 individual orbitals preserve the kernel
+PASS independent.exchange_orbit  the signed four-for-four orbit has 192 exact blind vectors and exact/modular span dimension 60
+PASS independent.primary_contract  the Cycle 755 primary receipt matches the independent character, commutant, and exchange calculations
+PASS hostile.primary_overlap  a one-unit reversion of the isotypic multiplicity overlap is rejected
+PASS hostile.primary_boundary  a reversion from the named character-route result to a universal rank no-go is rejected
+PASS hostile.cycle754_status  a failed direct-predecessor helper receipt is rejected
+per_element: checked -- all 192 piece coordinates enter the independent exact kernel and orbital checks
+per_site: checked and not executed -- the theorem concerns one supplied coordinate four-cube only
+per_mode: checked -- exact character inner products resolve seen/blind irreducible multiplicity overlap
+per_block: checked -- the blind, seen, orbital-residual, and signed-exchange blocks are reconstructed
+lattice_wide: checked and not executed -- no multicell, infinite-lattice, causal, or continuum claim
+RECEIPT outputs/physical_cell_cutting_blind_space_symmetry_cycle755_independent_check_2026_08_09_receipt_2026-08-09.json
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

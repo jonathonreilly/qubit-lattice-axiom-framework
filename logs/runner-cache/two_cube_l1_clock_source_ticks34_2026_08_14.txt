@@ -1,0 +1,60 @@
+===== runner cache v1 =====
+runner: scripts/two_cube_l1_clock_source_ticks34_2026_08_14.py
+runner_sha256: e99c44189b09faf2e936faf070d640ca60b31e1e62d47df0c2d5465616c76c55
+input_fingerprint_sha256: 1d9dc2e6d921812a11d51176e3a4b264cf6399c6d79cf593efc4eec681620c44
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+Shared-face clock-source identity at ticks 3 and 4
+AUDIT_INPUT_PATHS:
+  docs/TWO_CUBE_L1_CLOCK_SOURCE_TICKS34_BOUNDED_THEOREM_NOTE_2026-08-14.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+scope: supplied two-cube L1 patch; ticks 3 and 4 only
+PASS: audit-input-paths-exist
+PASS: audit-input-paths-unique-relative
+PASS: audit-timeout-declared
+PASS: lattice-quote-present
+PASS: record-form-quote-present
+PASS: hygiene-avoids-'G_N'
+PASS: hygiene-avoids-'1/r'
+PASS: hygiene-avoids-'1/r^2'
+PASS: hygiene-avoids-'Lattice-named'
+PASS: hygiene-avoids-'not a TOE'
+PASS: hygiene-avoids-'exhausted'
+PASS: hygiene-avoids-'only route'
+PASS: hygiene-avoids-'we adopt'
+PASS: hygiene-avoids-'Codex'
+PASS: hygiene-avoids-'L_phys'
+PASS: note-has-no-runner-cache-path
+PASS: note-has-no-citation-manifest
+PASS: patch-has-twelve-sites
+PASS: shared-face-is-x-equals-one
+PASS: t3-new-locks  (new=[(1, 1, 1), (2, 0, 1), (2, 1, 0)])
+PASS: t3-F
+PASS: t3-S
+PASS: t3-dA
+PASS: t3-dB
+PASS: t3-identity
+PASS: t3-dA-is-new-in-A
+PASS: t3-dB-is-new-in-B
+PASS: t4-new-locks  (new=[(2, 1, 1)])
+PASS: t4-F
+PASS: t4-S
+PASS: t4-dA
+PASS: t4-dB
+PASS: t4-identity
+PASS: t4-dA-is-new-in-A
+PASS: t4-dB-is-new-in-B
+per_element: ticks 3 and 4
+per_site: shared face versus B-only
+per_mode: shared-face identity
+per_block: ticks 3-4
+lattice_wide: checked and not executed
+TOTAL: PASS=35 FAIL=0
+
+----- stderr -----
+

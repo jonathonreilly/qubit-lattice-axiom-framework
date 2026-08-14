@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_cnot_contact_gaussian_extractor_type_order_2026_08_10.py
-runner_sha256: f21049b56ce0f5eb490e12f4bcff63fdf4cf77132a7cea8b7febbd24f9309702
+runner_sha256: 1cfaf9ec2084678921b5fd7239b77f7dbc2337aeeae8dd2c0310000aca066624
 input_fingerprint_sha256: 554851a0177121c18151e3cb51ce6582876334fab68619444712f1a51049d623
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 external_scientific_inputs: the current axiom, reviewed current-main Gaussian compiler, landed Cycle 972 finite contact theorem, and two tracked conditional process boundaries are source-bound
@@ -21,7 +21,8 @@ PASS: cnot-xor-law the conditioned target law is exactly y=x XOR n on all four b
 PASS: conditioned-conjugation control zero is identity while control one swaps the two target basis projectors
 PASS: conjugation-involution two incoming-X conjugations return every exact matrix fixture
 PASS: gaussian-extractor-fixtures the displayed family gives I/2 at blank, diag(3/5,2/5), and diag(4/7,3/7)
-PASS: extractor-contact-equivariance X-transporting the center transports every tested extractor member by X conjugation
+PASS: extractor-contact-equivariance X-transporting Hermitian and nonnormal real centers transports every tested extractor member by X conjugation
+PASS: extractor-center-gram-not-square the nonnormal control fixture uses C C^T and actively rejects the invalid C-squared shortcut
 PASS: pure-control-spectrum-preservation conditioned conjugation preserves trace and determinant on both nontrivial extractor fixtures
 PASS: common-blank-spectrum-boundary the common Gaussian blank is maximally mixed while the Pz extractor has a different determinant
 PASS: fixed-effect-lambda-zero the fixed half-Pz effect changes from 3/10 to 1/5 under incoming control, a gap of 1/10
@@ -45,7 +46,7 @@ per_site: one target plus one basis-control neighbour is executed at blank, Pz, 
 per_mode: conditioned conjugation, spectrum preservation, random-control reduction, and fixed-versus-transported effect modes are checked exactly
 per_block: the Gaussian extractor/CNOT carrier chain is checked through state typing, contact equivariance, supplied mixing, and the preparation-quotient boundary
 lattice_wide: checked and not executed — the landed Cycle 972 theorem supplies a finite covariant direction orbit, while this theorem rederives one-edge algebra and claims no global continuous compiler
-TOTAL: PASS=29 FAIL=0
+TOTAL: PASS=30 FAIL=0
 
 ----- stderr -----
 

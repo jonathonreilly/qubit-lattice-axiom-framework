@@ -61,6 +61,10 @@ E_ZERO: Matrix = (
     (Fraction(1, 2), Fraction(0)),
     (Fraction(0), Fraction(0)),
 )
+NONNORMAL_REAL_CENTER: Matrix = (
+    (Fraction(1), Fraction(1)),
+    (Fraction(0), Fraction(1)),
+)
 
 
 def matrix_add(left: Matrix, right: Matrix) -> Matrix:
@@ -87,6 +91,13 @@ def matrix_multiply(left: Matrix, right: Matrix) -> Matrix:
     )  # type: ignore[return-value]
 
 
+def matrix_transpose(matrix: Matrix) -> Matrix:
+    return tuple(
+        tuple(matrix[column][row] for column in range(2))
+        for row in range(2)
+    )  # type: ignore[return-value]
+
+
 def matrix_trace(matrix: Matrix) -> Fraction:
     return matrix[0][0] + matrix[1][1]
 
@@ -108,9 +119,12 @@ def conjugate_by_x(matrix: Matrix) -> Matrix:
 
 
 def gaussian_extractor(center: Matrix, offset: Fraction = Fraction(0)) -> Matrix:
-    center_squared = matrix_multiply(center, center)
+    # These executable fixtures are real, so C C^dagger is C C^T.  Keeping
+    # the transpose explicit prevents an accidental C^2 substitution from
+    # passing merely because the displayed P_z center is Hermitian.
+    center_gram = matrix_multiply(center, matrix_transpose(center))
     unnormalized = matrix_add(
-        center_squared,
+        center_gram,
         matrix_scale(Fraction(2) + offset, IDENTITY),
     )
     return matrix_scale(Fraction(1, matrix_trace(unnormalized)), unnormalized)
@@ -264,11 +278,26 @@ def main() -> int:
     )
     checks.check(
         "extractor-contact-equivariance",
-        "X-transporting the center transports every tested extractor member by X conjugation",
+        "X-transporting Hermitian and nonnormal real centers transports every tested extractor member by X conjugation",
         all(
-            gaussian_extractor(conjugate_by_x(P_ZERO), offset)
-            == conjugate_by_x(gaussian_extractor(P_ZERO, offset))
+            gaussian_extractor(conjugate_by_x(center), offset)
+            == conjugate_by_x(gaussian_extractor(center, offset))
+            for center in (P_ZERO, NONNORMAL_REAL_CENTER)
             for offset in (Fraction(0), Fraction(1), Fraction(2), Fraction(5))
+        ),
+    )
+    checks.check(
+        "extractor-center-gram-not-square",
+        "the nonnormal control fixture uses C C^T and actively rejects the invalid C-squared shortcut",
+        gaussian_extractor(NONNORMAL_REAL_CENTER)
+        == (
+            (Fraction(4, 7), Fraction(1, 7)),
+            (Fraction(1, 7), Fraction(3, 7)),
+        )
+        and matrix_multiply(NONNORMAL_REAL_CENTER, NONNORMAL_REAL_CENTER)
+        != matrix_multiply(
+            NONNORMAL_REAL_CENTER,
+            matrix_transpose(NONNORMAL_REAL_CENTER),
         ),
     )
     checks.check(

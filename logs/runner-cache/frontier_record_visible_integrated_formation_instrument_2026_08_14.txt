@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_record_visible_integrated_formation_instrument_2026_08_14.py
-runner_sha256: c958679b1d414712c55ec8501f0881047ed075e0b99f9b827989dd5cae9c9e96
-input_fingerprint_sha256: 406a671a81ee90f0c139e1e705fc3dd2916b80a2742e6d3a48b294bbf84373aa
+runner_sha256: 4a8dbbd8414c28a4969b896653cf4e199a6d097b25527e5dd5f144e723a58bc6
+input_fingerprint_sha256: ac8b50b79f4c88865b5167f21299aadce8008e545fe30e179754784be2b45ba3
 timeout_sec: 180
 exit_code: 0
-elapsed_sec: 26.33
+elapsed_sec: 25.75
 status: ok
 ----- stdout -----
 PASS A-current-main-axiom-and-Block72-authority: origin/main=8f114ef8ff; current Record/Admissibility text and Block72 are the only scientific inputs

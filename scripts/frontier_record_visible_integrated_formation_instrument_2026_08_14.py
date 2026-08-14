@@ -1143,6 +1143,12 @@ def authority_certificate(stale: bool = False) -> dict[str, object]:
 
 def boundary_surface_ok(law_claim: bool = False) -> bool:
     note = NOTE_PATH.read_text(encoding="utf-8")
+    n2 = note.split("### N2 — Wall-independence audit", 1)[1].split(
+        "### N3 — Hidden-wall scan", 1
+    )[0]
+    wall_pair_rows = sum(
+        line.startswith("| W") and "/W" in line for line in n2.splitlines()
+    )
     needles = (
         "### N1 — Alternative-route enumeration and normalization",
         "### N2 — Wall-independence audit",
@@ -1164,9 +1170,9 @@ def boundary_surface_ok(law_claim: bool = False) -> bool:
         "928 of 8,192",
         "five-Record contextual",
         "six-outcome completeness",
-        "minimum payload",
+        "sufficient end-to-end payload / modular residual set",
     )
-    return not law_claim and all(needle in note for needle in needles)
+    return not law_claim and wall_pair_rows == 55 and all(needle in note for needle in needles)
 
 
 def main() -> int:

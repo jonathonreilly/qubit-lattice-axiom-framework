@@ -321,10 +321,12 @@ sector. For `q=1/3`, the runner checks the six-outcome completeness relation at
 residual below `4e-16`, eight basis-state probability rows, and twelve coherent
 input rows. It gives `q p(b|m)` on a live basis input and
 `q rho_mm p(b|m)` on coherent matter input. This proves that normalization is
-not the live-m obstruction. But this comparator reads unrecorded M2 state,
-assumes four clean inputs and the 73-primitive routed packet word, and still
-lacks operation and Record-locking authority. It is an explicit open escape,
-not a law supplied by the current Record-state ontology.
+not the live-m obstruction. `K_ref=I-Gamma` is itself a supplied readiness
+measurement and does not preserve coherences between `Gamma` and its
+complement. This comparator also reads unrecorded M2 state, assumes four clean
+inputs and the 73-primitive routed packet word, and still lacks operation and
+Record-locking authority. It is an explicit open escape, not a law supplied by
+the current Record-state ontology.
 
 ## 7. Exact axiom/downstream-law decision
 
@@ -332,15 +334,15 @@ No contradiction forces a change to Lattice, Qubit, Admissibility, or Record.
 The construction demonstrates a compatible route. The model pair simultaneously
 demonstrates that compatibility cannot select the physical law.
 
-The minimum owner decision is one of:
+Two sufficient owner decision paths are:
 
 1. approve a **downstream formation primitive** containing the controller
    domain, exact one-site values, normalized joint/no-event instrument, hazard,
    atomic membership update, resource provenance, and scheduler; or
 2. amend the axioms so those same extensional data are actual primitive content.
 
-If the intended route is specifically an axiom update for the *live* Block71
-task, its minimum payload is now exact:
+If the intended route is specifically a single axiom update for the *live*
+Block71 task, the following is a **sufficient end-to-end payload / modular residual set**:
 
 1. enlarge or qualify the state domain so a formation instrument may depend on
    unrecorded live substrate, rather than only the current configuration of
@@ -352,9 +354,12 @@ task, its minimum payload is now exact:
 5. supply controller/clean-input genesis and blank-capacity provenance; and
 6. supply overlap arbitration plus a global process/reachability law.
 
-Listing those clauses is not approval. The present construction does not
-license silently changing `MINIMAL_AXIOMS_2026-06-29.md`, and no score moves
-until an adopted clause closes and survives the retention process.
+This is not a proof that every item must live in the axioms. Controller genesis
+and blank renewal can instead be initial-condition or downstream resource
+laws; the scheduler/global process and instrument can be modular approved
+primitives. Listing the residual set is not approval. The present construction
+does not license silently changing `MINIMAL_AXIOMS_2026-06-29.md`, and no score
+moves until adopted content closes a named obligation and survives retention.
 
 A type-correct candidate registry statement, not adopted here, is:
 
@@ -411,59 +416,98 @@ Routes are normalized by `(object, mechanism, terminal obligation)`.
 | R4 smaller guard | same motifs / radius-one exclusion / reduce blank-resource debit | executed; 6,432 dangerous alignments survive | **ATTEMPTED — CLOSED negatively** |
 | R5 contextual/shaped decoding | adjacent events / require surviving controller tags or eight diagonal blanks / compositional readout | contextual decoder is 0/8,192; shaped guard is 0/5,120, but both are pair-level refinements and not provenance | **ATTEMPTED — PARTIAL** |
 | R6 live-M2 readout | unrecorded Block71 matter / six-Kraus comparator using exact `U` / preserve original input task | completeness and 20 probability rows pass; operation, clean resources, and Record locking are not authorized | **ATTEMPTED — OPEN at authority** |
-| R7 asynchronous process | all lattice matches / Poisson clocks or local causal QCA / remove global snapshot | not executed; could replace the synchronous step but adds clock/rate content | **SEARCHED — OPEN** |
-| R8 unique selector | Models A/B and seam controls / derive `alpha0,q` from current axioms / identify actual law | executed counterpair survives, so the displayed premises do not select | **ATTEMPTED — CLOSED as nonselection** |
-| R9 approved primitive | complete candidate package / owner registration / make values load-bearing | no approval is present; this remains the shortest constitutional escape | **SEARCHED — OPEN** |
+| R7 unique selector | Models A/B and seam controls / derive `alpha0,q` from current axioms / identify actual law | executed counterpair survives, so the displayed premises do not select | **ATTEMPTED — CLOSED as nonselection** |
 
 R1 and R6 defeat a universal mathematical formation or live-input-normalization
-impossibility. R5, R7, and R9 remain live. The negative is only that the stated
-interface admits at least two models and does not supply global provenance or
-sequential scheduling.
+impossibility. The asynchronous/global-process and owner-approved-primitive
+escapes remain open in N6-N7, but are not mislabeled as attempted routes here.
+The negative is only that the stated interface admits at least two models and
+does not supply global provenance or sequential scheduling.
 
 ### N2 — Wall-independence audit
 
-The corrected terminal surfaces are:
+The terminal formation residuals are atomized rather than bundled:
 
 ```text
-W1 = controller/genesis and sparse Record-capacity resource
-W2 = extensional one-site Admissibility values
-W3 = normalized atomic joint instrument and permanence/refusal
-W4 = opportunity hazard, physical clock, and realized draw
-W5 = decoding/provenance, overlap arbitration, infinite-Z3 existence, and increasing-region control
-W6 = live-M2-to-Record bridge for the Block71 task
-W7 = physical source/clock/common-metric/transfer gravity law
+W1  = controller-Record genesis
+W2  = blank-capacity genesis and renewal
+W3  = extensional one-site Admissibility values
+W4  = atomic joint append/refusal/locking map
+W5  = formation-site rule and per-step hazard
+W6  = physical clock and realized stochastic draw
+W7  = decoder/reachable-state provenance
+W8  = overlap scheduler and sequential confluence
+W9  = infinite-Z3/global-process existence
+W10 = live-M2 state-domain bridge
+W11 = operation and clean-resource authorization
 ```
 
-All 21 pairs are checked:
+Gravity is the next portfolio lane, not a wall smuggled into this formation
+claim. All 55 formation-wall pairs are checked below. “Neither” means closing
+either member does not close the other; each witness states both directions.
 
-| pair | W_i closes W_j? | W_j closes W_i? | witness | result |
-|---|---|---|---|---|
-| W1/W2 | no | no | a supplied motif does not choose probability values; values do not generate the motif | independent |
-| W1/W3 | no | no | controller Records do not authorize atomic append; an instrument need not create its controller | independent |
-| W1/W4 | no | no | sparse capacity supplies no cadence; a clock does not create tags or blanks | independent |
-| W1/W5 | no | no | one guarded motif does not construct an infinite process; a scheduler need not supply genesis | independent |
-| W1/W6 | no | no | a readable root bypasses live M2; a live bridge need not create this motif | independent |
-| W1/W7 | no | no | Record capacity is not stress-energy; gravity does not generate this controller | independent |
-| W2/W3 | no | no | one-site marginals do not determine their joint; an atomic kernel can have different marginals | independent |
-| W2/W4 | no | no | conditional content odds do not set occurrence; hazard does not select content values | independent |
-| W2/W5 | no | no | local values do not arbitrate matches; arbitration can host another value rule | independent |
-| W2/W6 | no | no | exact Record marginals do not read live M2; a bridge does not select those marginals | independent |
-| W2/W7 | no | no | Admissibility values are not a metric/source law; gravity does not choose them | independent |
-| W3/W4 | no | no | an atomic instrument can run at any rate; a rate can drive sequential updates | independent |
-| W3/W5 | no | no | one-event atomicity does not prove a global process; global scheduling does not pick the joint output | independent |
-| W3/W6 | no | no | a Record-only append does not couple unrecorded matter; a live bridge need not be atomic | independent |
-| W3/W7 | no | no | membership append is not physical source transfer; a gravity law need not define Record formation | independent |
-| W4/W5 | no | no | a scalar hazard does not settle overlaps; a scheduler does not fix physical duration/rate | independent |
-| W4/W6 | no | no | a clock does not expose `m`; a live controller supplies no cadence | independent |
-| W4/W7 | no | no | event cadence is not source normalization/common metric; gravity does not select `q` | independent |
-| W5/W6 | no | no | global Record scheduling does not bridge live M2; a local live bridge does not prove global existence | independent |
-| W5/W7 | no | no | confluence does not type stress/metric transfer; gravity does not construct an update scheduler | independent |
-| W6/W7 | no | no | reading live M2 does not derive stress/common metric; a gravity response does not define the readout instrument | independent |
+| pair | implication | direct counterexample / argument |
+|---|---|---|
+| W1/W2 | neither | controller tags may be supplied once with no renewed blanks; a blank sea generates no tags |
+| W1/W3 | neither | a supplied motif chooses no probability values; a value table generates no controller |
+| W1/W4 | neither | tags do not authorize atomic locking; an append map can be defined on externally supplied motifs |
+| W1/W5 | neither | controller existence fixes no opportunity/hazard; a hazard can be declared on another controller domain |
+| W1/W6 | neither | tags provide no duration or draw; a clocked stochastic law need not generate these tags |
+| W1/W7 | neither | controller existence does not prove event provenance; a decoder can be defined for externally supplied packets |
+| W1/W8 | neither | one motif supplies no overlap scheduler; a scheduler can act on a different motif family |
+| W1/W9 | neither | finite controller genesis proves no infinite process; an infinite process can assume another initial controller field |
+| W1/W10 | neither | Recorded controllers do not admit unrecorded substrate; a live-state domain does not create Record controllers |
+| W1/W11 | neither | controller Records do not authorize operations; authorized operations can act on supplied noncontroller inputs |
+| W2/W3 | neither | blank capacity chooses no kernel values; normalized values do not renew capacity |
+| W2/W4 | neither | empty targets do not specify a joint append; an append map does not create its future empty targets |
+| W2/W5 | neither | spare sites fix neither event sites nor hazard; a site/hazard rule does not replenish space |
+| W2/W6 | neither | blank renewal gives no physical time/draw; a clock/draw can run until a finite capacity is exhausted |
+| W2/W7 | neither | blankness does not make packets provenance-unique; a decoder does not generate blank sites |
+| W2/W8 | neither | capacity does not arbitrate simultaneous matches; arbitration does not renew capacity |
+| W2/W9 | neither | an infinite blank initial condition is not a global transition law; a global process can consume finite local capacity |
+| W2/W10 | neither | Record-free sites do not expose live M2; enlarging the state domain does not provide blanks |
+| W2/W11 | neither | capacity is not clean-state/operation authority; an authorized instrument can still lack renewable targets |
+| W3/W4 | neither | one-site marginals leave their atomic joint free; a joint instrument may have different marginals |
+| W3/W5 | neither | conditional content odds do not set occurrence; a hazard does not choose output values |
+| W3/W6 | neither | a kernel has no seconds or realized draw; a clocked draw can sample another kernel |
+| W3/W7 | neither | local probabilities do not prove historical identity; provenance rules can decode another value law |
+| W3/W8 | neither | values do not settle competing matches; a scheduler can host another value table |
+| W3/W9 | neither | a local kernel does not construct an infinite process; a global process can use another local kernel |
+| W3/W10 | neither | Record-conditioned values do not admit live substrate; a live domain does not select those values |
+| W3/W11 | neither | numerical values do not authorize their implementation; operation authority does not select values |
+| W4/W5 | neither | an atomic map can run at any hazard/site set; an activation rule does not specify the joint output |
+| W4/W6 | neither | atomicity supplies no physical duration/draw; a clocked draw does not authorize locking |
+| W4/W7 | neither | one-event output syntax does not prove global provenance; a decoder can recognize a different instrument's packets |
+| W4/W8 | neither | one-event atomicity does not give sequential confluence; a scheduler does not determine output contents |
+| W4/W9 | neither | a finite atomic map does not prove infinite existence; an infinite process may use a different local map |
+| W4/W10 | neither | a Record-only append does not admit live M2; a live domain does not supply an atomic Record map |
+| W4/W11 | neither | a formal map is not operation/resource authority; authorized dynamics need not implement this map |
+| W5/W6 | neither | `q` per ordinal step supplies no seconds or realized sample; a clock/draw does not select `q` or sites |
+| W5/W7 | neither | occurrence statistics do not prevent packet aliases; provenance does not set occurrence |
+| W5/W8 | neither | a hazard does not arbitrate overlaps; a scheduler can run at another hazard |
+| W5/W9 | neither | a local activation rule does not construct an infinite law; a global law can use another activation rule |
+| W5/W10 | neither | site/hazard selection does not expose live M2; a live domain does not pick formation opportunities |
+| W5/W11 | neither | activation probabilities are not execution authority; authorized operations can use another cadence |
+| W6/W7 | neither | physical timing/draw does not identify packet ancestry; provenance does not supply a clock |
+| W6/W8 | neither | a clock does not resolve simultaneous conflicts; a scheduler does not calibrate time or realize draws |
+| W6/W9 | neither | a finite clocked process does not prove infinite-volume existence; a global measure need not carry physical time |
+| W6/W10 | neither | time/draw does not enlarge the readable state domain; a live domain supplies no clock |
+| W6/W11 | neither | a stochastic clock does not authorize the operation; authorized gates do not provide a physical draw law |
+| W7/W8 | neither | unique contextual recognition does not make sequential updates commute; confluence does not prove historical provenance |
+| W7/W9 | neither | pair-level provenance does not prove arbitrary/infinite reachability; a global process can have an ambiguous observable |
+| W7/W10 | neither | Record provenance does not admit unrecorded input; live-state admission does not give a decoder invariant |
+| W7/W11 | neither | a decoder is not operation/locking authority; authorized writes can remain historically ambiguous |
+| W8/W9 | neither | a finite scheduler does not prove an infinite process; an infinite construction can use another arbitration law |
+| W8/W10 | neither | scheduling does not bridge state ontology; a live-M2 domain does not settle overlap order |
+| W8/W11 | neither | confluence does not authorize clean resources/operations; an authorized operation may still be order-dependent |
+| W9/W10 | neither | infinite Record dynamics need not admit live substrate; a live local domain does not prove global existence |
+| W9/W11 | neither | global mathematical existence is not physical execution authority; authorized finite operations do not give an infinite law |
+| W10/W11 | neither | allowing live M2 does not authorize its measurement; authorized clean operations need not enlarge the Record-only state type |
 
-This block constructs candidate representatives for W2-W4, two pair-level W5
-repairs, and an exact unapproved W6 comparator; it makes W1 explicit. It does
-not select those candidates, close W5/W6 physically, or touch W7. No pair may
-be collapsed into a false TOE advance.
+This block gives candidate representatives for W3-W5, pair-level partial
+repairs for W7, a frozen finite representative for W8, and an exact but
+unapproved comparator touching W10-W11. W1-W2, W6, full W7-W11, and physical
+selection remain open. No pair is collapsed into a false TOE advance.
 
 ### N3 — Hidden-wall scan
 

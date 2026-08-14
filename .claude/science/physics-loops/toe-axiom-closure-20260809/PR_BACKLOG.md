@@ -1219,3 +1219,18 @@ mutations fail one aggregate; citation registration is `5,514/15,819`,
 out-degree eight. No canonical axiom, fixed TOE percentage, positive
 retention, audit verdict, or `review-loop` change. Science commit is
 `18753d6a1d`. Landing order places Block 68 after #6266.
+
+## Block 69
+
+PR #6274 is open, mergeable, and `CLEAN` on
+`physics-loop/toe-axiom-closure-block69-cycle713-same-m2-record-cut-20260813`,
+stacked exactly on Block-68 delivery `eb0ea60817`. Its distinct review object is
+the explicit 29-gate same-five-M2 Cycle713 Stinespring word, complete 64-case
+matrix-unit channel equality, routed footprint of 42 assigned and 507 touched
+M2 including 465 restored route-work sites, exact first-branch action
+discriminator, and the localized Record occurrence/parser/permanence boundary.
+Primary/cache is `PASS=8 FAIL=0`; eight isolated acceptance guards fail one
+aggregate each; citation registration is `5,515/15,825`, out-degree five. No
+canonical axiom, fixed TOE percentage, positive retention, audit verdict, or
+`review-loop` change. Science commit is `96abe69ed2`. Landing order places
+Block 69 after #6269.

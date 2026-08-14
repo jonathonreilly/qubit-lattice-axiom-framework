@@ -23,7 +23,7 @@
    "pass": true
   },
   "R3_PRIMARY_RECEIPT_CACHE_BINDING": {
-   "finding": "primary_source_receipt_cache_bound=True; primary_sha256=28f1fbd9b800e0dbb2f250d7bd9d7e412b6cd478c19fa80b3ae6c42653682cd4; primary_science_digest=bc684f5218ce1e593f1d63676bd66a89a2340f11a33a611ec31eec3455d36929",
+   "finding": "primary_source_receipt_cache_bound=True; canonical_cache_header=True; primary_sha256=1422b48e9c5088dc205200d4dc1ba4982b823457542fb5352641640c1c5ff8a7; primary_science_digest=bc684f5218ce1e593f1d63676bd66a89a2340f11a33a611ec31eec3455d36929",
    "pass": true
   },
   "R4_ACTIVE_CORRUPTION_PROBES": {
@@ -31,7 +31,7 @@
    "pass": true
   },
   "R5_CONTROLS": {
-   "finding": "literal_reads=3<=6; input_sha256={\"logs/runner-cache/frontier_cycle977_witness_family_completeness_2026_08_10.txt\":\"5f0ba8800c9c36275bf669c9fa5e54a60c839dc1052f9e58fbc289a021037d1b\",\"outputs/witness_family_completeness_cycle977_receipt_2026_08_10.json\":\"8335aebe6cc1d5d7e86515883bb293cff84ba8d22a5baaa0691045e67de4499d\",\"scripts/frontier_cycle977_witness_family_completeness_2026_08_10.py\":\"28f1fbd9b800e0dbb2f250d7bd9d7e412b6cd478c19fa80b3ae6c42653682cd4\"}; determinism_replay=True; runtime_s=13.594234<timeout_s=300; stdout_upper_bound=3385<6000<150000",
+   "finding": "literal_reads=3<=6; input_sha256={\"logs/runner-cache/frontier_cycle977_witness_family_completeness_2026_08_10.txt\":\"8da5ab8c20a3fe2b7e14eb8ac1e7166fa8668a865bb8f5f62b972fa4dbd70a79\",\"outputs/witness_family_completeness_cycle977_receipt_2026_08_10.json\":\"3647438738d6bd0f4fa5e0f623fa2275d0c0cdf13856fdef800285ae1e21b9ef\",\"scripts/frontier_cycle977_witness_family_completeness_2026_08_10.py\":\"1422b48e9c5088dc205200d4dc1ba4982b823457542fb5352641640c1c5ff8a7\"}; determinism_replay=True; runtime_s=19.010755<timeout_s=300; stdout_upper_bound=3414<6000<150000",
    "pass": true
   }
  },
@@ -151,9 +151,9 @@
   "translation_failure_count": 0
  },
  "input_sha256": {
-  "logs/runner-cache/frontier_cycle977_witness_family_completeness_2026_08_10.txt": "5f0ba8800c9c36275bf669c9fa5e54a60c839dc1052f9e58fbc289a021037d1b",
-  "outputs/witness_family_completeness_cycle977_receipt_2026_08_10.json": "8335aebe6cc1d5d7e86515883bb293cff84ba8d22a5baaa0691045e67de4499d",
-  "scripts/frontier_cycle977_witness_family_completeness_2026_08_10.py": "28f1fbd9b800e0dbb2f250d7bd9d7e412b6cd478c19fa80b3ae6c42653682cd4"
+  "logs/runner-cache/frontier_cycle977_witness_family_completeness_2026_08_10.txt": "8da5ab8c20a3fe2b7e14eb8ac1e7166fa8668a865bb8f5f62b972fa4dbd70a79",
+  "outputs/witness_family_completeness_cycle977_receipt_2026_08_10.json": "3647438738d6bd0f4fa5e0f623fa2275d0c0cdf13856fdef800285ae1e21b9ef",
+  "scripts/frontier_cycle977_witness_family_completeness_2026_08_10.py": "1422b48e9c5088dc205200d4dc1ba4982b823457542fb5352641640c1c5ff8a7"
  },
  "literal_input_paths": [
   "scripts/frontier_cycle977_witness_family_completeness_2026_08_10.py",
@@ -161,7 +161,7 @@
   "logs/runner-cache/frontier_cycle977_witness_family_completeness_2026_08_10.txt"
  ],
  "primary_science_digest": "bc684f5218ce1e593f1d63676bd66a89a2340f11a33a611ec31eec3455d36929",
- "primary_source_sha256": "28f1fbd9b800e0dbb2f250d7bd9d7e412b6cd478c19fa80b3ae6c42653682cd4",
+ "primary_source_sha256": "1422b48e9c5088dc205200d4dc1ba4982b823457542fb5352641640c1c5ff8a7",
  "refutation_spec": {
   "R0": "independently generate bounded family and rotations; block primary/core execution",
   "R1": "recompute every Boolean witness signature and legacy/enlarged reconciliation",
@@ -170,6 +170,6 @@
   "R4": "reject active corruptions in family, census, laws, classes, covariance, and undercount cause",
   "R5": "enforce deterministic replay, read cap, runtime, and stdout controls"
  },
- "runtime_sec": 13.594233709038235,
- "stdout_bytes": 1937
+ "runtime_sec": 19.010754500050098,
+ "stdout_bytes": 1966
 }

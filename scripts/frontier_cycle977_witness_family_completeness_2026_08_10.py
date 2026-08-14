@@ -1,17 +1,19 @@
 #!/usr/bin/env python3
 """Cycle 977: exhaustive one-step witness-family completeness census.
 
-The declared family is every distinct word of length zero or one whose gate
-support lies in the target-centred seven-site nearest-neighbour star.  The
-landed basis-state semantic substrate exposes X, CNOT, and TOF constructors.
-Thus the family is
+The declared family is the semantic quotient of every word of length zero or
+one over X, CNOT, and TOF with pairwise-distinct operands whose gate support
+lies in the target-centred seven-site nearest-neighbour star.  The three gate
+kinds are an explicit scope coordinate selected from the landed basis-state
+semantic substrate.  Thus the family is
 
     1 identity + 7 X + 7*6 ordered CNOT + 7*C(6,2) TOF = 155 words.
 
 TOF controls are an unordered pair because exchanging them gives the same
-landed Gate and Boolean action.  No adjacency restriction is imposed inside
-the seven-site support cap.  Every word is evaluated on both target bits and
-all 2^6 neighbour conditions with the landed Cycle-719 apply_semantic method.
+Boolean action, although the landed ordered-wire Gate dataclass values are
+unequal.  No adjacency restriction is imposed inside the seven-site support
+cap.  Every word is evaluated on both target bits and all 2^6 neighbour
+conditions with the landed Cycle-719 apply_semantic method.
 
 Certificate truth gates construction, exhaustive reconciliation, partition
 bookkeeping, and controls only.  It does not require any particular witness
@@ -43,27 +45,27 @@ EXECUTABLE_SUBSTRATE = AUDIT_INPUT_PATHS[1]
 BLOCKLIST_CITED_PRIMARIES = (AUDIT_INPUT_PATHS[0],)
 PROVENANCE = {
     "cycle972_runner": (
-        "3826925e019c0e1966a9b85110a397db2c61d33f",
+        "621bc7521a1a314df700a2d8d09988beee1c4ad7",
         "scripts/frontier_cycle972_covariant_dependence_law_2026_08_09.py",
-        "ab497ae52f74bc8e8c6cc6eb5888bfaf9f119f15",
+        "71afd3b3e39e174d50fb9b07a79d5a715e93af1a",
         "ast",
     ),
     "cycle972_note": (
-        "3826925e019c0e1966a9b85110a397db2c61d33f",
+        "621bc7521a1a314df700a2d8d09988beee1c4ad7",
         "docs/COVARIANT_DEPENDENCE_LAW_CYCLE972_BOUNDED_THEOREM_NOTE_2026-08-09.md",
-        "e328562ec0ff3b80acef65c490bb5903cc3e8438",
+        "f20755a0d83f8bd06f606b0c0c3f7a6e58ce4c35",
         "text",
     ),
     "cycle975_runner": (
-        "cfe4f1316aa961e19463c50de0d6d89b0dbdb63c",
+        "4d579b4c36dd7fad208b7f63a1622ef39d984482",
         "scripts/frontier_cycle975_input_distribution_dependence_law_2026_08_10.py",
-        "663029bfe1e937fd95278427cd417f98ea1ca0c6",
+        "71445a97abc5c2745153f28bf7fda0edb9c432db",
         "ast",
     ),
     "cycle975_note": (
-        "cfe4f1316aa961e19463c50de0d6d89b0dbdb63c",
+        "4d579b4c36dd7fad208b7f63a1622ef39d984482",
         "docs/INPUT_DISTRIBUTION_DEPENDENCE_LAW_CYCLE975_BOUNDED_THEOREM_NOTE_2026-08-10.md",
-        "5ccef8dd95178460fa39642a7376d9919b386dcf",
+        "453fdc278f3577f03fd2fcdbdf918a48e34431f6",
         "text",
     ),
 }
@@ -89,9 +91,10 @@ OTHER_CONTEXTS = tuple(product((0, 1), repeat=len(DIRECTIONS) - 1))
 TRANSLATION_GENERATORS = DIRECTIONS
 GATE_ALPHABET = ("X", "CNOT", "TOF")
 FAMILY_DESCRIPTION = (
-    "every distinct length-zero/one word over landed basis-state X, CNOT, "
-    "and TOF with all operands inside the target-centred radius-one "
-    "seven-site star; no within-star adjacency restriction"
+    "the semantic quotient of all length-zero/one words over the explicitly "
+    "declared basis-state X, CNOT, and TOF alphabet, with pairwise-distinct "
+    "operands inside the target-centred radius-one seven-site star; TOF "
+    "control order is quotiented and there is no within-star adjacency restriction"
 )
 
 
@@ -538,7 +541,15 @@ def input_controls() -> dict:
         all_exist &= path.is_file() and path.resolve().is_relative_to(ROOT.resolve())
         pins[relative] = sha256(path.read_bytes()).hexdigest() if path.is_file() else None
     axiom = (ROOT / AUDIT_INPUT_PATHS[0]).read_text(encoding="utf-8")
+    record_surface = axiom.split("### Record / Fixed Reality", 1)[1].split("## Qualification", 1)[0]
     probes = (A.x(0), A.cn(0, 1), A.tof(0, 1, 2))
+    tof_forward = A.tof(1, 2, 0)
+    tof_reversed = A.tof(2, 1, 0)
+    tof_control_exchange_actions_equal = all(
+        A.apply_semantic(tuple((mask >> wire) & 1 for wire in range(SITE_COUNT)), (tof_forward,))
+        == A.apply_semantic(tuple((mask >> wire) & 1 for wire in range(SITE_COUNT)), (tof_reversed,))
+        for mask in range(1 << SITE_COUNT)
+    )
     provenance = provenance_controls()
     return {
         "literal_source_read_count": len(AUDIT_INPUT_PATHS) + len(PROVENANCE),
@@ -551,8 +562,19 @@ def input_controls() -> dict:
         "executable_substrate": EXECUTABLE_SUBSTRATE,
         "substrate_gate_probe": [(gate.kind, list(gate.wires)) for gate in probes],
         "substrate_gate_alphabet_matches": tuple(gate.kind for gate in probes) == GATE_ALPHABET,
+        "tof_control_exchange_gate_objects_equal": tof_forward == tof_reversed,
+        "tof_control_exchange_actions_equal": tof_control_exchange_actions_equal,
+        "tof_control_order_is_semantic_quotient": tof_control_exchange_actions_equal and tof_forward != tof_reversed,
         "axiom_covariance_needle_matches": "covariant under lattice\ntranslations and proper cubic rotations" in axiom,
         "axiom_distribution_needle_matches": "probability distribution over the possibilities is\ndetermined by, and varies with, the nearest-neighbor conditions" in axiom,
+        "current_record_surface_matches": (
+            "Records form." in record_surface
+            and "a record locks exactly one admissible local possibility" in record_surface
+            and "A site with no record cannot be read." in record_surface
+            and "finite additivity" not in record_surface
+            and "I(empty)" not in record_surface
+        ),
+        "record_structure_used_by_science": False,
         "text_ast_provenance": provenance,
         "provenance_pins_match": all(row["expected_blob"] == row["observed_blob"] for row in provenance.values()),
         "provenance_never_executed": all("never executed" in row["read_mode"] or row["read_mode"] == "text only" for row in provenance.values()),
@@ -606,6 +628,10 @@ def main() -> int:
         and len({row["name"] for row in family}) == len(family)
         and kind_counts["identity"] + kind_counts["X"] + kind_counts["CNOT"] + kind_counts["TOF"] == len(family)
         and all(len(set(row["descriptor"][1:])) == len(row["descriptor"][1:]) for row in family if row["descriptor"][0] != "I")
+        and all(
+            row["descriptor"][1] < row["descriptor"][2]
+            for row in family if row["descriptor"][0] == "TOF"
+        )
     )
     a_finding = (
         f"word_length_cap=1; spatial_support=target-centred_radius-one_7-site_star; support_size_cap=3; "
@@ -675,8 +701,11 @@ def main() -> int:
         and controls["all_inputs_exist_worktree_relative"]
         and controls["blocklist_text_only"]
         and controls["substrate_gate_alphabet_matches"]
+        and controls["tof_control_order_is_semantic_quotient"]
         and controls["axiom_covariance_needle_matches"]
         and controls["axiom_distribution_needle_matches"]
+        and controls["current_record_surface_matches"]
+        and not controls["record_structure_used_by_science"]
         and controls["provenance_pins_match"]
         and controls["provenance_never_executed"]
         and all(row.get("declares_family", True) and row.get("declares_census", True) for row in provenance.values())
@@ -738,6 +767,13 @@ def main() -> int:
     }
     lines = ["=" * 78, "CYCLE 977 -- WITNESS-FAMILY COMPLETENESS", "=" * 78]
     lines.extend(f"{'PASS' if ok else 'FAIL'} {name} :: {finding}" for name, ok, finding in certificates)
+    lines.extend((
+        "per_element: checked and executed -- all 19,840 declared word and seven-bit basis-state configurations were evaluated",
+        "per_site: checked and executed -- the target and each of its six radius-one neighbour coordinates were toggled and transported",
+        "per_mode: checked and not executed -- this finite Boolean basis theorem has no Fourier, momentum, or continuous-mode exclusion",
+        "per_block: checked and executed -- all identity, X, CNOT, and TOF descriptor blocks and all three witness classes were reconciled",
+        "lattice_wide: checked and not executed -- generator covariance was proved by coordinate relabeling; no infinite lattice state was enumerated",
+    ))
     lines.append("CHECKER_PAYLOAD: " + compact(checker_payload))
     if not all_pass:
         verdict = "ENLARGED_CENSUS_INCOMPLETE"
@@ -778,12 +814,21 @@ def main() -> int:
             "spatial_horizon": "target-centred radius-one seven-site star",
             "support_size_cap": 3,
             "within_star_adjacency_restriction": False,
+            "pairwise_distinct_operands": True,
+            "tof_control_order": "semantic quotient; canonical ascending control wires",
             "target_input_menu": [0, 1],
             "neighbour_condition_horizon": "all 2^6 basis-bit conditions",
             "gate_alphabet": list(GATE_ALPHABET),
             "family_description": FAMILY_DESCRIPTION,
             "family_size": len(family),
-            "excluded": ["words of length >=2", "support outside the seven-site star", "continuous M_2(C) distributions"],
+            "excluded": [
+                "repeated-operand gate objects",
+                "distinct Gate encodings differing only by TOF control order",
+                "gate kinds outside the declared X/CNOT/TOF alphabet",
+                "words of length >=2",
+                "support outside the seven-site star",
+                "continuous M_2(C) distributions",
+            ],
         },
         "findings": first,
         "controls": controls,

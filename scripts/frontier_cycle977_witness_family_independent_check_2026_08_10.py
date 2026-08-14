@@ -487,15 +487,23 @@ def main() -> int:
 
     source_sha = file_sha256(inputs[PRIMARY_PATH])
     input_pins = {relative: file_sha256(path) for relative, path in inputs.items()}
+    primary_cache_header_ok = (
+        primary_cache.startswith("===== runner cache v1 =====\n")
+        and f"runner: {PRIMARY_PATH}\n" in primary_cache
+        and f"runner_sha256: {source_sha}\n" in primary_cache
+        and "status: ok\n" in primary_cache
+    )
     r3_ok = (
         primary_payload == cache_payload
         and primary_receipt["primary_source_sha256"] == source_sha
         and primary_receipt["controls"]["primary_source_sha256"] == source_sha
         and primary_receipt["all_certificates_pass"]
-        and primary_cache.endswith("TOTAL: PASS=4 FAIL=0\n")
+        and primary_cache_header_ok
+        and primary_cache.splitlines().count("TOTAL: PASS=4 FAIL=0") == 1
     )
     r3_finding = (
-        f"primary_source_receipt_cache_bound=True; primary_sha256={source_sha}; "
+        f"primary_source_receipt_cache_bound=True; canonical_cache_header={primary_cache_header_ok}; "
+        f"primary_sha256={source_sha}; "
         f"primary_science_digest={primary_receipt['science_digest']}"
     )
 

@@ -151,6 +151,12 @@ HEADING_RE = re.compile(r"^#{1,6}\s+", re.MULTILINE)
 LINK_RE = re.compile(r"\[[^\]]*\]\(([^)\s#]+\.md)(?:#[^)]*)?\)")
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    # Cycle 977's sibling checker reconstructs the semantic-quotient family,
+    # witness census, cubic classes, and covariance comparisons without
+    # importing either the primary or the landed core.
+    "witness_family_completeness_cycle977_bounded_theorem_note_2026-08-10": [
+        "scripts/frontier_cycle977_witness_family_independent_check_2026_08_10.py",
+    ],
     # Cycle 974's sibling checker independently replays the finite event
     # vectors and XOR/product-extension criterion without importing the
     # primary, so keep it in the restricted claim packet explicitly.

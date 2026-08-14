@@ -1,10 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle977_witness_family_completeness_2026_08_10.py
+runner_sha256: 1422b48e9c5088dc205200d4dc1ba4982b823457542fb5352641640c1c5ff8a7
+input_fingerprint_sha256: e2b45875394a2adfd3a2d1332c70f6db056a9619b88996e4155000690b656816
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 20.86
+status: ok
+----- stdout -----
 ==============================================================================
 CYCLE 977 -- WITNESS-FAMILY COMPLETENESS
 ==============================================================================
 PASS A_ENLARGED_FAMILY :: word_length_cap=1; spatial_support=target-centred_radius-one_7-site_star; support_size_cap=3; gate_alphabet=['X', 'CNOT', 'TOF']; family_words=155=1I+7X+42CNOT+105TOF
 PASS B_WITNESS_CENSUS :: witness_words=21/155; dependent_word_input_rows=42/310; changed_edge_pairs=1344/59520; conditioned_configurations=19840; witnesses=['CNOT(+x->C)', 'CNOT(-x->C)', 'CNOT(+y->C)', 'CNOT(-y->C)', 'CNOT(+z->C)', 'CNOT(-z->C)', 'TOF(+x,-x->C)', 'TOF(+x,+y->C)', 'TOF(+x,-y->C)', 'TOF(+x,+z->C)', 'TOF(+x,-z->C)', 'TOF(-x,+y->C)', 'TOF(-x,-y->C)', 'TOF(-x,+z->C)', 'TOF(-x,-z->C)', 'TOF(+y,-y->C)', 'TOF(+y,+z->C)', 'TOF(+y,-z->C)', 'TOF(-y,+z->C)', 'TOF(-y,-z->C)', 'TOF(+z,-z->C)']
 PASS C_CLASS_STRUCTURE :: induced_law_classes=3; representatives=[('CNOT(+x->C)', 'x XOR n_+x', 6), ('TOF(+x,+y->C)', 'x XOR n_+x AND n_+y', 12), ('TOF(+x,-x->C)', 'x XOR n_+x AND n_-x', 3)]; rotation_checks=476160; translation_checks=119040; bridge_checks=19840; covariance_verdict=COVARIANT; non_covariant_witnesses=[]
-PASS D_CONTROLS :: legacy=6/20; added=15/135; added_words_by_kind={'X': 0, 'CNOT': 30, 'TOF': 105}; added_witnesses_by_kind={'X': 0, 'CNOT': 0, 'TOF': 15}; source_reads=6<=6; sha_pins={"docs/MINIMAL_AXIOMS_2026-06-29.md":"53175250f0458168330160ad6a39c8ec708316f338efd69c49e8eb09e3267b39","scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py":"0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4"}; provenance_pins_match=True; determinism_replay=True; runtime_s=14.139728<timeout_s=300; stdout_upper_bound=3936<6000<150000
+PASS D_CONTROLS :: legacy=6/20; added=15/135; added_words_by_kind={'X': 0, 'CNOT': 30, 'TOF': 105}; added_witnesses_by_kind={'X': 0, 'CNOT': 0, 'TOF': 15}; source_reads=6<=6; sha_pins={"docs/MINIMAL_AXIOMS_2026-06-29.md":"93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753","scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py":"0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4"}; provenance_pins_match=True; determinism_replay=True; runtime_s=20.035386<timeout_s=300; stdout_upper_bound=3936<6000<150000
+per_element: checked and executed -- all 19,840 declared word and seven-bit basis-state configurations were evaluated
+per_site: checked and executed -- the target and each of its six radius-one neighbour coordinates were toggled and transported
+per_mode: checked and not executed -- this finite Boolean basis theorem has no Fourier, momentum, or continuous-mode exclusion
+per_block: checked and executed -- all identity, X, CNOT, and TOF descriptor blocks and all three witness classes were reconciled
+lattice_wide: checked and not executed -- generator covariance was proved by coordinate relabeling; no infinite lattice state was enumerated
 CHECKER_PAYLOAD: {"added_witness_count":15,"added_witnesses_by_kind":{"CNOT":0,"TOF":15,"X":0},"bridge_checks":19840,"bridge_failure_count":0,"changed_edge_pairs":1344,"class_count":3,"classes":[{"covariant":true,"law":"x XOR n_+x","member_count":6,"members":["CNOT(+x->C)","CNOT(+y->C)","CNOT(+z->C)","CNOT(-x->C)","CNOT(-y->C)","CNOT(-z->C)"],"representative":"CNOT(+x->C)"},{"covariant":true,"law":"x XOR n_+x AND n_+y","member_count":12,"members":["TOF(+x,+y->C)","TOF(+x,+z->C)","TOF(+x,-y->C)","TOF(+x,-z->C)","TOF(+y,+z->C)","TOF(+y,-z->C)","TOF(-x,+y->C)","TOF(-x,+z->C)","TOF(-x,-y->C)","TOF(-x,-z->C)","TOF(-y,+z->C)","TOF(-y,-z->C)"],"representative":"TOF(+x,+y->C)"},{"covariant":true,"law":"x XOR n_+x AND n_-x","member_count":3,"members":["TOF(+x,-x->C)","TOF(+y,-y->C)","TOF(+z,-z->C)"],"representative":"TOF(+x,-x->C)"}],"conditioned_configurations":19840,"dependent_word_input_rows":42,"edge_pair_comparisons":59520,"family_covariant":true,"family_descriptor_digest":"fe29ad310ab15bfa4057ff2eba264df53521e581481a4f9e035c829502758497","family_kind_counts":{"CNOT":42,"TOF":105,"X":7,"identity":1},"family_size":155,"legacy_witness_count":6,"non_covariant_witnesses":[],"rotation_checks":476160,"rotation_failure_count":0,"science_digest":"bc684f5218ce1e593f1d63676bd66a89a2340f11a33a611ec31eec3455d36929","translation_checks":119040,"translation_failure_count":0,"witness_count":21,"witness_names":["CNOT(+x->C)","CNOT(-x->C)","CNOT(+y->C)","CNOT(-y->C)","CNOT(+z->C)","CNOT(-z->C)","TOF(+x,-x->C)","TOF(+x,+y->C)","TOF(+x,-y->C)","TOF(+x,+z->C)","TOF(+x,-z->C)","TOF(-x,+y->C)","TOF(-x,-y->C)","TOF(-x,+z->C)","TOF(-x,-z->C)","TOF(+y,-y->C)","TOF(+y,+z->C)","TOF(+y,-z->C)","TOF(-y,+z->C)","TOF(-y,-z->C)","TOF(+z,-z->C)"],"witness_signature_digest":"1cceceaa1e1b2ca574ab39c7dcb9f3eba0729ddf4e38628461bc5276abadca97","word_input_rows":310}
 VERDICT: LEGACY_FAMILY_UNDERCOUNTED_WITNESSES
 TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

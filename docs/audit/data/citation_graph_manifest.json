@@ -1,6 +1,6 @@
 {
  "edge_count": 15752,
- "node_count": 5558,
+ "node_count": 5559,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -13875,6 +13875,10 @@
    "out_degree": 0
   },
   "physical_cell_cutting_crossing_automorphism_cycle777_note_2026-08-11": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "physical_cell_cutting_diagonal_parity_cycle782_note_2026-08-14": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

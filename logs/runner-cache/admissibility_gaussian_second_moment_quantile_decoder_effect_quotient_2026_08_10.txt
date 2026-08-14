@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_gaussian_second_moment_quantile_decoder_effect_quotient_2026_08_10.py
 runner_sha256: 3b3dce601a66e36db27ecee0118d1d5907be1fe836fcdcfc1db044f8674263c6
-input_fingerprint_sha256: bb651f45e0c8cfae7bb6da107fc344de102e65e7d3915efb847ad91d62d918cb
+input_fingerprint_sha256: c554387f51258af3ca31dfbe4bfab7cc1426df157e36044732d11a6506b99311
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 external_scientific_inputs: the current axiom, landed menu/Record/partition boundaries, and three explicit instrument/effect prior boundaries are source-bound; no observed, fitted, or target probability is read

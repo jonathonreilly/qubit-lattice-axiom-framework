@@ -1181,3 +1181,39 @@ content parser, target blank Record occurrence, inverse inaccessibility,
 permanent no-overwrite continuation, internal proper-cubic action, coframe
 decoder, source disposal, cadence, clock, full-Z3 law, owner adoption, audit
 verdict, retention, TOE score movement, or `review-loop` is imported.
+
+## Block 70 Assumptions And Imports
+
+Block 70 imports Block69's exact receipt, five-M2 isometry, and literal role
+sites; Block65's menu-0 effects; Block67's signed successor frame and adjacent
+root decoder; and Block64's local single-front rule. Every parent remains a
+conditional, unretained science surface. The runner independently rechecks the
+fine physical channel, exact law weights, routes, total refusal semantics,
+4,608 action compositions, continuation controls, decoders, and two-law
+inequivalence.
+
+The mainline axiom blob and exact Block69 runner/note hashes are pinned. The
+stale branch-local axiom copy, removed scalar readout, and every review/landing
+surface are excluded. No axiom, approved primitive, audit verdict, or
+`review-loop` operation is imported or edited.
+
+The supplied realized member is not a random generator. `context_valid` and
+`output_valid` declare an isolated Cycle713-ready patch; density validity is
+checked from `omega`, and invalid/non-density/occupied/spent cases refuse.
+The canonical gathering word is branch/law-conditioned. Its background M2
+labels need not be clean and remain displaced in the forward layout. No
+branch-neutral microscopic router, simultaneous-front scheduler, global
+resource bound, environment erasure/reset, re-encoding, or autonomous
+invocation is imported.
+
+Both candidate laws use the Pauli-adjoint action as common test data. This does
+not select that action. The output-root codes and adjacent `O/H` dictionary are
+candidate extensional values, not axioms. Single-front arbitrary-N permanence
+does not import a total full-Z3 law, physical source/stress identity, cadence,
+gravity coupling, nonlinear completion, adoption, retention, or TOE movement.
+An unrestricted finite lookup exactly recodes the 96 packet and 96 `N=4`
+history families; it is an adversarial encoding control, not a physical
+equivalence premise. The physical discriminator additionally preserves
+lattice support and the unchanged Block64 head decoder. No two-event
+confluence, collision priority, environment conservation law, or locality lift
+is imported from the single-front result.

@@ -1833,3 +1833,44 @@ complete conditional nonlinear compact solution:
   two total inequivalent `L_phys` Record-lock/continuation completions on this
   same output—existing output sites versus adjacent Block65 `O/H` sites—and
   test whether current premises select one or expose an exact owner law datum
+
+## Block 70 Contract And Result
+
+- contract: instantiate the two Block69 target/parser completions with the
+  same exact physical branch law, then test totality, action, permanence,
+  source retention, and observable inequivalence before any axiom language
+- physical refinement: all 80 no-formation/four-fine-formation matrix-unit
+  outputs match the five-M2 dilation; fine maps coarse-grain exactly, with
+  Choi minimum zero and maximum residual `6.84e-16`
+- location: four canonical sign/law layouts use 112 NN SWAPs over 54 sites,
+  avoid both Record targets, require no clean bank, and reveal 103 summed
+  background displacements; the route is branch-conditioned and not global
+- laws: `output_root` locks the prepared `R` density with an injective
+  outcome/sign/coframe tag; `adjacent_packet` writes the unchanged Block65/67
+  outcome/head packet; both use the same five exact weights and adjoint action
+- totality: 48 valid distributions, 240 invalid/non-density/occupied refusals,
+  48 invalid-realized refusals, and 240 spent replays preserve Records and
+  never overwrite
+- action/history: 4,608 group compositions pass; eight canonical `N=32`
+  histories lift exactly to 192 all-frame cases, eight full-scan controls and
+  eight `N=128` controls pass, and both whole-history root decoders succeed
+- discriminator: exact unrestricted lookups biject all 96 packet encodings
+  and all 96 `N=4` histories with zero conflicts, so raw inequality is not
+  load-bearing; under the common-decoder geometry quotient every output-root
+  packet/history has forward-root incidence and every adjacent packet/history
+  has transverse-root incidence; head-only compression has 72/96 unique
+  carriers while the explicit tag has 96/96
+- boundary: current executable isolated-patch interface does not select the
+  law, but this is not full-Z3 non-entailment or axiom necessity; zero retained
+  obligation and zero TOE percentage movement
+- evidence: source/input-pinned cache is fresh at `PASS=10 FAIL=0` in 30.40
+  seconds; ten named mutations fail exactly one aggregate each; independent
+  reproduction accepts the repaired quotient boundary; citation graph is
+  `5,516/15,831` with out-degree five
+- next artifact: close one event as a typed environment/source transition,
+  leading with the inherited `adjacent_packet` and using `output_root` as the
+  control; recognize actual roles, preserve or account for every output and
+  route-background carrier, and forbid silent reset/copy/erasure. Only then
+  enumerate reachable two-event critical pairs; one failing pair can eliminate
+  a candidate, while finite overlap closure becomes the base lemma for a later
+  full-configuration lift

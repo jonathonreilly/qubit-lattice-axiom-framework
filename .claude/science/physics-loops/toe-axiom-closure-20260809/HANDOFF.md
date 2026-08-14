@@ -2783,3 +2783,57 @@ action, content, absorbing arbitrary-horizon continuation, and source
 disposition without a host pick. If both satisfy current premises but disagree
 observably, stop and present that exact law/owner decision; do not reopen
 standalone action or gravity micro-scans.
+
+## Block 70 Handoff
+
+Block 70 executes that tournament. The literal five-M2 channel has four
+nonzero sign/outcome formation maps. All 80 fine branch/matrix-unit cases,
+coarse-graining, Choi positivity, and trace preservation pass. Canonical
+physical gathering for both signs and both laws uses 112 NN SWAPs over 54
+sites, no clean bank, no Record-target traversal, and exact reverse token
+return; the forward layouts explicitly displace background labels.
+
+`output_root` locks the prepared `R` density at the literal output site with
+an injective four-code outcome/sign plus coframe tag. `adjacent_packet` leaves
+the output factors quantum and writes the unchanged Block65/67 outcome/head
+packet at adjacent blank sites. Both laws share the same five exact weights,
+the same adjoint action, preserving refusal on invalid/non-density/occupied/
+spent inputs, two-Record formation, and unchanged Block64 continuation.
+
+All 4,608 proper-cubic compositions pass. Eight canonical `N=32` histories
+lift to all 192 frame/branch/law cases; eight full-scanner controls, eight
+`N=128` controls, arbitrary-index root separation, and whole-history decoders
+pass. Exact unrestricted lookup tables biject all 96 raw packet encodings and
+all 96 `N=4` histories with zero forward/inverse conflict and equal selected
+histories, so raw matrix inequality is not the discriminator. The Record-
+faithful geometry signature preserving the common head decoder is `(1,1,0)`
+for all 96 output-root packets and `(1,0,1)` for all 96 adjacent packets. At
+`N=4`, the initial carrier is permanent and the unique nearest of five heads
+in every history, preserving exact forward versus transverse incidence. A
+head-only shortcut is falsified by a 96-to-72 carrier collision; the explicit
+output tag is 96/96.
+
+This materially advances the local law seam but retires no scored or retained
+obligation. The result is current executable interface nonselection only. A
+global homogeneous law can still select one candidate through local input
+recognition, branch-neutral occurrence, routing/collision/resource semantics,
+or environment/source conservation. Multiple local candidates do not justify
+an axiom edit; the next owner is a downstream physical `L_phys` law or approved
+primitive unless a later constitutional proof says otherwise.
+
+Primary/source-input-pinned cache is fresh at `PASS=10 FAIL=0` in 30.40
+seconds. Ten isolated mutations each fail one aggregate; the independent
+read-only reproduction accepts the repaired equivalence boundary. Citation
+registration is `5,516/15,831`, out-degree five. Direct conformance gates must
+still be rerun after staging and before the science commit.
+
+The next block must not build a third decorative parser or return to standalone
+action/gravity carriers. First close one event as a typed transition: derive
+readiness from actual roles, account injectively or conservatively for all five
+outputs and displaced background carriers, forbid silent reset/copy/erasure,
+and emit source/cadence. Lead with the inherited `adjacent_packet`; retain
+`output_root` as an adversarial control. Only then enumerate reachable
+translated two-event critical pairs and require order-independent updates or a
+normalized state-derived collision rule. One exact failing pair may eliminate
+a candidate; finite overlap closure is the base lemma for the later full-
+configuration lift. Only a survivor should feed the next gravity kill test.

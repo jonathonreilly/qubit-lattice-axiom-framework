@@ -954,3 +954,30 @@ Working allocation becomes `65%` local `L_phys`, `20%` end-to-end composition,
 action/retention readiness.
 Recheck after the two-law tournament or within three hours, whichever comes
 first.
+
+## Post-Block-70 Full-Science Portfolio Recheck
+
+Block 70 closes the local-construction half of the Block69 owner contract but
+does not select a unique law. Two physically and observably distinct local
+Record completions survive the same exact branch weights, action, total
+refusal, arbitrary single-front permanence, and source-decoder tests. Another
+carrier or standalone action scan now has still lower expected value.
+
+The uncertainty has moved to global physical composition. This is the one
+place where locality, background/resource conflicts, environment conservation,
+source identity, and cadence can genuinely eliminate a survivor or identify a
+minimal downstream/axiom datum. Gravity remains downstream of that typed
+source; its conditional carrier algebra is not the current blocker.
+
+| Rank | Investment | Exact next witness | Stop condition |
+|---:|---|---|---|
+| 1 | one-event environment/source closure | derive readiness from actual Cycle713 roles; account injectively or conservatively for `P/M/B/R/A` and every displaced route carrier; forbid silent reset/copy/erasure; emit typed source/cadence | lead with inherited `adjacent_packet`, use `output_root` as control, and stop at the first exact role/environment deficit |
+| 2 | reachable two-event `L_phys` confluence tournament | only after rank 1 closes, enumerate translated reachable pairs whose ready, route, or Record footprints overlap; compare both orders and simultaneous visibility; require equality or a normalized collision rule decoded from local state | one nonconfluent pair falsifies a scheduler-free candidate; do not count naive supplied-ready overlaps as positive selection |
+| 3 | finite critical-pair to homogeneous lift | prove termination/local confluence across the closed finite overlap classes | no full-Z3 language from a two-event sample alone |
+| 4 | end-to-end source/gravity composition | consume only an exact surviving root/environment transition in one common-metric constraint/Bianchi/nonlinear kill test | do not use a placeholder source or run another TT/carrier scan |
+| 5 | constitutional/adoption and audit readiness | prefer an approved downstream `L_phys` primitive after E0/E1; consider axiom text only after a proof that the interface must be constitutional | no prose-only collapse/formation amendment or standalone action work |
+
+Working allocation is `40%` one-event environment/source closure, `25%`
+reachable two-event confluence, `20%` conditional finite-critical-pair locality
+lift, `10%` contingent source-to-gravity composition, and `5%` adoption/audit
+readiness. Recheck at each E0/E1 stop condition or within three hours.

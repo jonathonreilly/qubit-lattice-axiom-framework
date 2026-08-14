@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/physical_cell_cutting_chamber_cover_mod_four_cycle780_2026_08_14.py
+runner_sha256: ba306aaf46cbd76e7eae4c61221ccec5d10082aa89fa9b471f5a4a3259b7e730
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 13.08
+status: ok
+----- stdout -----
+PASS K1 cell: 2672 unit pieces, cost floor 6, 400 at floor, 15800 cuttings of 24, 192 used pieces each in 1975, 379200 slots, 384 namings 2 per piece
+PASS K2 label: product form L = (1 - 2 q1)(1 - 2 q2) on 192 of 192 pieces; both namings agree on L and on (q1, q2) for 192; q1 ones 96, q2 ones 96
+PASS K3 chambers: 12 walls, 24 orders times 8 signs = 192 chambers, 8 per piece either naming, 8 pieces per chamber, 192 sign patterns, 0 on a wall
+PASS K4 local formula L = sign(b) s1 s3 eta_b2 eta_b4 on all 192 times 8 = 1536 incident piece and chamber pairs, failures 0
+PASS K5 geometry: 192 exact sample points, offsets 8/20 6/20 4/20 2/20 from the centre, each strictly inside exactly 8 of 192 pieces, mismatches 0
+PASS K6 partition at a point: on all 192 times 15800 = 3033600 chamber and cutting pairs the meeting is exactly 1 piece, exceptions 0
+PASS K7 the eight-piece clique enumeration returns 192 covers of 8; the sorted cover sets equal the 192 distinct chamber piece-sets: yes
+PASS K8 claim one: for each of the 192 pieces the sum of g1 over its 8 chambers equals q2 modulo 2, failures 0
+PASS K9 claim two: for each of the 192 pieces the sum of g4 over its 8 chambers equals q1 modulo 2, for each of the 4 axes, 768 checks, failures 0
+PASS K10 totals over the 192 chambers: g1 weight 96, g4 weight 24 24 24 24 by axis, all even, so each telescoped sum is even
+PASS K11 per cutting on all 15800: identity S = 24 - 2 A1 - 2 A2 + 4 A12 holds with 0 failures, cuttings of odd A1 0, of odd A2 0
+PASS K12 S divisible by 4 on 15800 of 15800 cuttings, exceptions 0; census -8:120 -4:2832 0:9896 4:2832 8:120, sum 15800
+PASS K13 flipping g1 at one chamber breaks claim one at exactly 8 pieces, its holders; negating one piece label breaks the identity at 1975 cuttings
+PASS K14 boundary: 8 diagonals, largest |D_w| 4, census of the sum of |D_w| 0:9320 4:6096 8:384, largest 8 = largest |S|, A2 divisible by 4 on 15800
+resource: under 60 s of the 900 s budget, under 250 MB of the 2500 MB budget, 1920 gate characters
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

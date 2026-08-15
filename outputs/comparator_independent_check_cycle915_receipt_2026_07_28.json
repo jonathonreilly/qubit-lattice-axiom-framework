@@ -1,0 +1,360 @@
+{
+ "boundary_sentences": [
+  "Not basis-neutral: the ZZ bond and the declared Z pointer privilege the Z basis, by construction.",
+  "No formation rule.",
+  "Sets no audit status."
+ ],
+ "cycle": 915,
+ "date": "2026-07-28",
+ "findings": [
+  {
+   "check": "pins",
+   "detail": "independent sha256 of every declared input matches its landed byte",
+   "survives": true
+  },
+  {
+   "check": "fragment-partition",
+   "detail": "the memo's six literal fragment lists agree with the memo's own tie-break algorithm, cover 26 sites, and are pairwise disjoint",
+   "survives": true
+  },
+  {
+   "check": "sector-dimension",
+   "detail": "MAX-canonical independent orbit sector has dimension 5605504 (memo-declared 5605504)",
+   "survives": true
+  },
+  {
+   "check": "low-field-rows",
+   "detail": "independent MAX-canonical / shifted-Chebyshev recomputation of all 13 executed rows reproduces the primary's lambda = 0.02 first hit (Jt = 0.6, R_ind = 6, subset of 6), every per-delta first hit, and the W_full membership; max row deviation 1.442e-12 bits",
+   "survives": true
+  },
+  {
+   "check": "late-time-rows",
+   "detail": "independent recomputation of ALL 4 executed late rows (Jt in [1.5, 2.0] at lambda in [0.05, 0.1]) reproduces the primary's per-row certification outcome and R_ind ledger; max deviation 9.327e-13 bits.  The agreed reading of these rows is 'not certified at these tested samples' -- no decay, limit or indicator claim is checked because none is made",
+   "survives": true
+  },
+  {
+   "check": "restriction-gates",
+   "detail": "the Cycle 914 headline rows the primary gates on are re-read from the 914 receipt and match value-for-value; the primary's own gate flag is True",
+   "survives": true
+  },
+  {
+   "check": "determinism",
+   "detail": "the primary requested one grid time twice in a single Chebyshev expansion; the two propagated states and their observable scalars are reported bitwise equal",
+   "survives": true
+  },
+  {
+   "check": "falsifier-visibility",
+   "detail": "the primary's gate machinery fires on a planted early row and refuses three near-miss rows; this checker re-tests the same property with its own r_ind in the teeth",
+   "survives": true
+  }
+ ],
+ "independent_late_time_recomputation": {
+  "coverage": "ALL executed late rows (4 of 4)",
+  "max_abs_dev": 9.32698362987594e-13,
+  "per_lambda": {
+   "0.05": {
+    "primary_sampled_label": "NOT-CERTIFIED-AT-ANY-TESTED-SAMPLE",
+    "propagator": {
+     "centre": 2.0,
+     "degree": 173,
+     "half_width": 57.35,
+     "matvecs": 173
+    },
+    "rows": {
+     "1.5": {
+      "checker_certified": false,
+      "checker_r_ind": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "checker_theta": 0.055368416249304664,
+      "max_abs_dev": {
+       "H_Z": 2.5368596112684827e-13,
+       "chi_closed_five": 9.81020820134404e-14,
+       "chi_wedge_four": 7.915890165577366e-14,
+       "theta": 9.092726571680032e-14
+      },
+      "primary_certified": false,
+      "primary_r_ind": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "row_agrees": true
+     },
+     "2.0": {
+      "checker_certified": false,
+      "checker_r_ind": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "checker_theta": 0.49776829171144676,
+      "max_abs_dev": {
+       "H_Z": 1.8673951274195133e-13,
+       "chi_closed_five": 3.8413716652030416e-14,
+       "chi_wedge_four": 1.6475709685437323e-13,
+       "theta": 4.0523140398818214e-14
+      },
+      "primary_certified": false,
+      "primary_r_ind": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "row_agrees": true
+     }
+    }
+   },
+   "0.1": {
+    "primary_sampled_label": "NOT-CERTIFIED-AT-ANY-TESTED-SAMPLE",
+    "propagator": {
+     "centre": 2.0,
+     "degree": 176,
+     "half_width": 58.7,
+     "matvecs": 176
+    },
+    "rows": {
+     "1.5": {
+      "checker_certified": false,
+      "checker_r_ind": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "checker_theta": 0.07679935076414468,
+      "max_abs_dev": {
+       "H_Z": 7.616129948928574e-13,
+       "chi_closed_five": 8.112954752448331e-14,
+       "chi_wedge_four": 5.981326545168031e-14,
+       "theta": 2.3880897259687117e-13
+      },
+      "primary_certified": false,
+      "primary_r_ind": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "row_agrees": true
+     },
+     "2.0": {
+      "checker_certified": false,
+      "checker_r_ind": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "checker_theta": 0.5119308113646936,
+      "max_abs_dev": {
+       "H_Z": 5.621059173677168e-13,
+       "chi_closed_five": 4.3087755585702325e-13,
+       "chi_wedge_four": 9.32698362987594e-13,
+       "theta": 2.3647750424515834e-13
+      },
+      "primary_certified": false,
+      "primary_r_ind": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "row_agrees": true
+     }
+    }
+   }
+  },
+  "rows_checked": 4,
+  "rows_expected": 4
+ },
+ "independent_low_field_recomputation": {
+  "checker_first_hit": {
+   "jt": 0.6,
+   "max_pair": 0.0011326954132324777,
+   "r_ind": 6,
+   "run": 4,
+   "subset": [
+    "+x",
+    "-x",
+    "+y",
+    "-y",
+    "+z",
+    "-z"
+   ],
+   "theta": 0.5001041579430644
+  },
+  "checker_lambda002_in_W_full": true,
+  "energy_conservation": {
+   "E0": -24.140000000000015,
+   "E_tmax": -24.140000000000036,
+   "abs_dev": 2.1316282072803006e-14
+  },
+  "jt_match": true,
+  "max_pair_abs_dev": 3.77866141154648e-15,
+  "per_delta_checker": {
+   "0.05": {
+    "jt": 0.7,
+    "r_ind": 6,
+    "run": 3
+   },
+   "0.1": {
+    "jt": 0.6,
+    "r_ind": 6,
+    "run": 4
+   },
+   "0.2": {
+    "jt": 0.6,
+    "r_ind": 6,
+    "run": 5
+   }
+  },
+  "primary_first_hit": {
+   "Q_quiet": 0.00012396560297500692,
+   "X_face": 0.03171434549180441,
+   "by_deadline": true,
+   "drift": 2.778335624187278e-05,
+   "jt": 0.6,
+   "max_pair": 0.0011326954132362564,
+   "pair_values": {
+    "minus-x-orthogonal": 0.0011326954132353084,
+    "opposite-44": 0.00016797639787379515,
+    "opposite-55": 0.0005174889596740555,
+    "plus-x-orthogonal": 0.0011326954132362564,
+    "transverse-orthogonal": 0.0010158916886128843
+   },
+   "r_ind": 6,
+   "run": 4,
+   "subset": [
+    "+x",
+    "-x",
+    "+y",
+    "-y",
+    "+z",
+    "-z"
+   ],
+   "theta": 0.5001041579430632
+  },
+  "primary_lambda002_in_W_full": true,
+  "propagator": {
+   "centre": 2.0,
+   "degree": 116,
+   "half_width": 56.54,
+   "matvecs": 116
+  },
+  "r_ind_match": true,
+  "r_ind_mismatches": [],
+  "row_max_abs_dev": {
+   "H_Z": 8.22675261247241e-14,
+   "chi_closed_five": 1.367711499611346e-12,
+   "chi_wedge_four": 1.4419299088075377e-12,
+   "pair_opposite_55": 1.7961977391567352e-14,
+   "theta": 2.531308496145357e-14
+  },
+  "rows_compared": 13,
+  "run_match": true,
+  "subset_match": true,
+  "theta_abs_dev": 1.2212453270876722e-15
+ },
+ "independent_machinery": {
+  "approach": "MAX-canonical orbit sector + shifted Chebyshev (non-zero spectral centre) + expand-table marginals -- structurally distinct from the primary's MIN-canonical / centred expansion",
+  "names": [
+   "CHK",
+   "CubeSector",
+   "Marginal",
+   "S_bits",
+   "_tab",
+   "chi_bits",
+   "cmi_bits",
+   "energy_expectation",
+   "expand_table",
+   "memo_fragments",
+   "r_ind",
+   "rotations24",
+   "shifted_chebyshev",
+   "tiebreak",
+   "tr1"
+  ],
+  "source": "scripts/frontier_cycle914_d3_bar_independent_check_2026_07_28.py",
+  "source_sha256": "1735d665b327ab8f821160daa122686576dac678da865945aaff129816136358"
+ },
+ "numerics": {
+  "basis_wall_s": 23.163537624990568,
+  "low_field_wall_s": 214.84460220788606,
+  "numpy": "2.4.1",
+  "peak_rss_gib": 5.1018829345703125,
+  "python": "3.12.8",
+  "sector_dim": 5605504,
+  "wall_s": 527.8969631195068
+ },
+ "pins": {
+  "all_match": true,
+  "digests": {
+   "docs/D3_BAR_LOCATION_DESIGN_SCOUT_2026-07-10.md": "c3e0b9162170f5e87e486f9d34068114d1d56b2f80db5c57df7ff7536820a93e",
+   "docs/D3_BAR_WINDOW_BOUNDED_NOTE_2026-07-11.md": "74a0a4c0e40e78ec042824ba706389e53e8bde22443964388987557a1819552c",
+   "docs/D3_BAR_WINDOW_DESIGN_DELTA_2026-07-11.md": "9373dd8a9c8275b2b86e075a84d0ebe8621d3e39f52895f0b9ef406ee3d082ad",
+   "logs/runner-cache/d3_bar_window_checkpoints/lam_0p02_observables.jsonl": "9bf9282d477daf43635d29647ea0757fefb6105b755519c515539b3e28be3177",
+   "outputs/d3_bar_commission_cycle914_receipt_2026_07_28.json": "2dddb1e145fb5854f1f303f8d417c4d8e62e84a64c1f8f3451bcf65ec2550e86",
+   "scripts/frontier_cycle914_d3_bar_commission_2026_07_28.py": "0cfab8fde089be2252f47a710d5822bc5a3458f6e15b37784855716979eb9dd4",
+   "scripts/frontier_cycle914_d3_bar_independent_check_2026_07_28.py": "1735d665b327ab8f821160daa122686576dac678da865945aaff129816136358"
+  }
+ },
+ "primary_runner_sha256": "4782ada39187b9ddf5d129059c168abc94631f97199fcf6df39738e0373afa7b",
+ "result_table_sha256": "93c4376b5c59cf602ece84ae083a5ff5da9334326370f907441d1012df30af1b",
+ "runner": "scripts/frontier_cycle915_comparator_independent_check_2026_07_28.py",
+ "schema": "frontier-cycle915-independent-check-v1",
+ "teeth": [
+  {
+   "detail": "single-byte flip in the parent memo changes its sha256 -> pin verification fails",
+   "detected": true,
+   "exit": "BIT-FLIPPED",
+   "tooth": "tampered-pin"
+  },
+  {
+   "detail": "perturbing the primary's theta* by 1e-6 is caught by the independent theta recomputation at tolerance 1e-9 (true |dev| = 1.221e-15)",
+   "detected": true,
+   "exit": "BIT-FLIPPED",
+   "tooth": "hardcoded-certification"
+  },
+  {
+   "detail": "R_ind is derived from the checker's own chi/C_ab: zeroing chi(+x) drops R_ind from 6 to 5",
+   "detected": true,
+   "exit": "BIT-FLIPPED",
+   "tooth": "leaked-verdict"
+  },
+  {
+   "detail": "every one of the 13 frozen executed subgrid points is present in BOTH the primary's rows and this checker's independent rows (missing: checker [], primary [])",
+   "detected": true,
+   "exit": "BIT-FLIPPED",
+   "tooth": "skipped-grid-point"
+  },
+  {
+   "detail": "a fabricated all-fragment row planted at the gate returns R_ind=6 through the same routine that returns no certification at Jt <= 0.3 in the measured data -- the routine is not blind to an early hit, the physics simply has none",
+   "detected": true,
+   "exit": "BIT-FLIPPED",
+   "tooth": "planted-early-certification-blindness"
+  },
+  {
+   "detail": "a 1e-6 perturbation of the committed 2026-07-11 lambda=0.02 reference chi would be caught at 1e-9 (true max |dev| = 3.416e-12 over 13 rows)",
+   "detected": true,
+   "exit": "BIT-FLIPPED",
+   "tooth": "tampered-committed-stream"
+  }
+ ],
+ "verdict": {
+  "exit_code": 0,
+  "exit_contract": "fail-closed: exit 0 only if pins hold, no finding is refuted, and all teeth fire",
+  "pins_ok": true,
+  "refuted_checks": [],
+  "surviving_checks": [
+   "pins",
+   "fragment-partition",
+   "sector-dimension",
+   "low-field-rows",
+   "late-time-rows",
+   "restriction-gates",
+   "determinism",
+   "falsifier-visibility"
+  ],
+  "teeth_detected": 6,
+  "teeth_total": 6
+ }
+}

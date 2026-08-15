@@ -1,0 +1,16 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle915_comparator_independent_check_2026_07_28.py
+runner_sha256: d19aa41de6d6ac010d4749bd6697ca0af8500fab62937e8d2395fd86abd76d9e
+input_fingerprint_sha256: 76c88b3ccf3fb9a4022be86c396d77b2f945ccc5d3159eb758096c153e4b260e
+timeout_sec: 1200
+exit_code: 0
+elapsed_sec: 528.23
+status: ok
+----- stdout -----
+LOW-FIELD-RECOMPUTE[lambda=0.02]=SURVIVES first-sampled-hit=0.6 theta=0.5001041579430644 R_ind=6 sampled-window-member=True(primary True) rows=13 max-dev=1.442e-12 r_ind-mismatches=0 energy-dev=2.132e-14 | Not basis-neutral: the ZZ bond and the declared Z pointer privilege the Z basis, by construction. | No formation rule. | Sets no audit status.
+LATE-TIME-RECOMPUTE[[1.5, 2.0]]=SURVIVES rows=4/4 max-dev=9.327e-13 per-lambda={"0.05": "NOT-CERTIFIED-AT-ANY-TESTED-SAMPLE", "0.1": "NOT-CERTIFIED-AT-ANY-TESTED-SAMPLE"} | Not basis-neutral: the ZZ bond and the declared Z pointer privilege the Z basis, by construction. | No formation rule. | Sets no audit status.
+TEETH 6/6 detected: tampered-pin=BIT-FLIPPED; hardcoded-certification=BIT-FLIPPED; leaked-verdict=BIT-FLIPPED; skipped-grid-point=BIT-FLIPPED; planted-early-certification-blindness=BIT-FLIPPED; tampered-committed-stream=BIT-FLIPPED | Not basis-neutral: the ZZ bond and the declared Z pointer privilege the Z basis, by construction. | No formation rule. | Sets no audit status.
+TOTAL INDEPENDENT-CHECK-COMPLETE surviving=['pins', 'fragment-partition', 'sector-dimension', 'low-field-rows', 'late-time-rows', 'restriction-gates', 'determinism', 'falsifier-visibility'] refuted=[] teeth=6/6 pins=True exit=0(fail-closed) digest=93c4376b5c59cf60 wall=527.9s rss=5.10GiB | Not basis-neutral: the ZZ bond and the declared Z pointer privilege the Z basis, by construction. | No formation rule. | Sets no audit status.
+
+----- stderr -----
+

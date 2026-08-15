@@ -167,6 +167,12 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
     "source_action_bridge_pricing_cycle871_bounded_theorem_note_2026-07-28": [
         "scripts/frontier_cycle871_bridge_independent_check_2026_07_28.py",
     ],
+    # Cycle 915's sibling checker independently recomputes every executed row
+    # without importing the primary, so keep it in the restricted packet
+    # through a claim-scoped helper edge.
+    "comparator_recovered_theta_misattributed_cycle915_bounded_theorem_note_2026-07-28": [
+        "scripts/frontier_cycle915_comparator_independent_check_2026_07_28.py",
+    ],
     # Cycle 977's sibling checker reconstructs the semantic-quotient family,
     # witness census, cubic classes, and covariance comparisons without
     # importing either the primary or the landed core.

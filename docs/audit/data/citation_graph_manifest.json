@@ -1,6 +1,6 @@
 {
- "edge_count": 15731,
- "node_count": 5531,
+ "edge_count": 15736,
+ "node_count": 5532,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1691,8 +1691,8 @@
    "out_degree": 11
   },
   "canonical_harness_index": {
-   "deps_hash": "6a3a2886a6ff",
-   "out_degree": 362
+   "deps_hash": "7e5d69d55645",
+   "out_degree": 363
   },
   "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": {
    "deps_hash": "808c1ccb6109",
@@ -2545,6 +2545,10 @@
   "companion_gauge_work_center_controllability_cycle797_bounded_theorem_note_2026-07-30": {
    "deps_hash": "27100503e5e0",
    "out_degree": 3
+  },
+  "comparator_recovered_theta_misattributed_cycle915_bounded_theorem_note_2026-07-28": {
+   "deps_hash": "12b6f44ac94c",
+   "out_degree": 4
   },
   "complement_mechanism_krun_law_cycle891_bounded_theorem_note_2026-07-28": {
    "deps_hash": "e3b0c44298fc",

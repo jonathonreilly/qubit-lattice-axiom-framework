@@ -1,0 +1,24 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle915_comparator_recovery_2026_07_28.py
+runner_sha256: 4782ada39187b9ddf5d129059c168abc94631f97199fcf6df39738e0373afa7b
+input_fingerprint_sha256: 199df4923b4bf1cd5588fa4b78741a9a2c631a8c29f17e6ed6957a51eb643eda
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 523.65
+status: ok
+----- stdout -----
+SETUP cycle=915 pins=6 durable-input-closure=origin/main | Not basis-neutral: the ZZ bond and the declared Z pointer privilege the Z basis, by construction. | No formation rule. | Sets no audit status.
+LOW-FIELD[lambda=0.02] first-sampled-hit=0.6 theta*=0.5001041579430632 R_ind=6 subset=['+x', '-x', '+y', '-y', '+z', '-z'] run=4 max-pair=0.0011326954132362564 per-delta={'0.05': {'jt': 0.7, 'by_deadline': True, 'r_ind': 6, 'run': 3, 'theta': 0.5001924313642354}, '0.1': {'jt': 0.6, 'by_deadline': True, 'r_ind': 6, 'run': 4, 'theta': 0.5001041579430632}, '0.2': {'jt': 0.6, 'by_deadline': True, 'r_ind': 6, 'run': 5, 'theta': 0.5001041579430632}} sampled-window-member=True repro-vs-committed=True(rows=13,dev={'theta': '1.18e-13', 'chi_closed_five': '2.05e-12', 'chi_wedge_four': '1.71e-12', 'H_Z': '7.85e-14', 'pair_opposite_55': '1.61e-13'}) | Not basis-neutral: the ZZ bond and the declared Z pointer privilege the Z basis, by construction. | No formation rule. | Sets no audit status.
+LATE-TIME[executed=[1.5, 2.0]] lambda=0.05:NOT-CERTIFIED-AT-ANY-TESTED-SAMPLE({"1.5": false, "2.0": false}); lambda=0.1:NOT-CERTIFIED-AT-ANY-TESTED-SAMPLE({"1.5": false, "2.0": false}) | Not basis-neutral: the ZZ bond and the declared Z pointer privilege the Z basis, by construction. | No formation rule. | Sets no audit status.
+GATES landed-914-restrictions=True theta*={"0.05": 0.5007515272813331, "0.1": 0.5047307768675429, "0.2": null} labels={"0.05": "above-unverified-imported-floor", "0.1": "above-unverified-imported-floor", "0.2": null} bracket=True sampled-window[914]=[0.05, 0.1] C55[lam=0.20,Jt=0.7]=0.060394807359658895 panel-spot=True ordering=True | Not basis-neutral: the ZZ bond and the declared Z pointer privilege the Z basis, by construction. | No formation rule. | Sets no audit status.
+CHECKS+MACHINERY CHECK-01=True CHECK-02=True CHECK-03[lam=0.02]=True CHECK-05[window=[0.02, 0.05, 0.1] bracket-above=[0.1, 0.2] bracket-below=None field-factor=1.009251311 threshold-test-performed=False]=True falsifier=True determinism=True MACHINERY=ok({'norm': '3.77e-15', 'hermiticity': '6.56e-14', 'negativity': '3.34e-21', 'entropy_bound': '0', 'symmetry': '3.28e-12', 't0_anchor': '0', 'cheby_tail': '1.15e-17'}, cheby-tail-gate=1e-12) | Not basis-neutral: the ZZ bond and the declared Z pointer privilege the Z basis, by construction. | No formation rule. | Sets no audit status.
+RESOLUTION-CERTIFICATE (granularity of every statement this run makes) | Not basis-neutral: the ZZ bond and the declared Z pointer privilege the Z basis, by construction. | No formation rule. | Sets no audit status.
+per_element: each of the six declared fragments is evaluated separately at every executed grid time against the three imported certification conditions, and the certifying subset is recorded fragment by fragment.
+per_site: single-site Holevo values and their excesses are resolved for the face, edge and corner site classes inside each fragment, giving the shell-resolved crossing order reported in CHECK-03.
+per_mode: checked and not executed -- the frozen comparator declares one pointer observable (Z) with an X control basis and no normal-mode decomposition, so no per-mode resolution is defined and none is claimed.
+per_block: the five declared fragment-pair classes are resolved as blocks through the conditional-mutual-information gate at every row where two or more fragments clear the singleton gates; skipped rows carry their reason.
+lattice_wide: checked and not executed -- every number here is a finite, sampled, fixed-partition observation on the open 3x3x3 cube at the executed grid; no lattice-wide, continuum, all-times or limiting statement is made.
+TOTAL LOW-FIELD-CERTIFIED low-field=SAMPLED-WINDOW-INCLUDES-0.02(lambda=0.02 in the sampled window) late-time={"0.05": "NOT-CERTIFIED-AT-ANY-TESTED-SAMPLE", "0.1": "NOT-CERTIFIED-AT-ANY-TESTED-SAMPLE"} theta*[0.02]=0.5001041579430632 sampled-window=[0.02, 0.05, 0.1] digest=614762c1a43ab9b6 wall=523.4s rss=5.37GiB | Not basis-neutral: the ZZ bond and the declared Z pointer privilege the Z basis, by construction. | No formation rule. | Sets no audit status.
+
+----- stderr -----
+

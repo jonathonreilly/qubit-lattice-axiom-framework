@@ -1,0 +1,2015 @@
+{
+ "ast_extraction": {
+  "extracted_source_sha256": "770a06e70b1390833e435cdd3e5fa61f541825b3bf62fae26c0dffdd3276d0b4",
+  "names": [
+   "CH",
+   "Sector",
+   "_bitperm_tables",
+   "build_descriptor",
+   "centered_frobenius_panel",
+   "chebyshev",
+   "chi_holevo",
+   "cond_mi",
+   "conditional_blocks",
+   "cube_sites",
+   "ent_bits",
+   "parse_memo_fragments",
+   "proper_rotations",
+   "ptrace_keep_one",
+   "ptrace_split",
+   "purity",
+   "r_ind",
+   "tiebreak_fragments"
+  ],
+  "source_file": "scripts/frontier_cycle914_d3_bar_commission_2026_07_28.py",
+  "source_sha256": "0cfab8fde089be2252f47a710d5822bc5a3458f6e15b37784855716979eb9dd4"
+ },
+ "boundary_sentences": [
+  "Not basis-neutral: the ZZ bond and the declared Z pointer privilege the Z basis, by construction.",
+  "No formation rule.",
+  "Sets no audit status."
+ ],
+ "checks": {
+  "CHECK-01": {
+   "ok": true,
+   "stationary_control": {
+    "event_counts": [
+     0,
+     0,
+     0
+    ],
+    "ok": true
+   },
+   "t0_anchor_max_bits": 0.0
+  },
+  "CHECK-02": {
+   "commutator_ordering": true,
+   "drift": true,
+   "ok": true,
+   "panel": {
+    "center": {
+     "X": 5.753874358018091e-05,
+     "Y": 5.754066150633535e-05,
+     "Z": 4.6980187404094865e-07,
+     "degree": 6
+    },
+    "corner": {
+     "X": 4.068603576649985e-05,
+     "Y": 4.06887480784769e-05,
+     "Z": 4.6980187404094865e-07,
+     "degree": 3
+    },
+    "edge": {
+     "X": 4.698018740409486e-05,
+     "Y": 4.698253635474276e-05,
+     "Z": 4.6980187404094865e-07,
+     "degree": 4
+    },
+    "face": {
+     "X": 5.252544631561775e-05,
+     "Y": 5.25275472914517e-05,
+     "Z": 4.6980187404094865e-07,
+     "degree": 5
+    }
+   },
+   "x_pointer_control": true
+  },
+  "CHECK-03": {
+   "lam002_first_hit_by_deadline": true,
+   "lam002_persistence_samples": 4,
+   "lam002_persists": true,
+   "locality": true,
+   "ok": true,
+   "shell_crossings": {
+    "corner": null,
+    "edge": null,
+    "face": 0.1
+   }
+  },
+  "CHECK-05": {
+   "W_full": [
+    0.02,
+    0.05,
+    0.1
+   ],
+   "boundary_bracket_above": [
+    0.1,
+    0.2
+   ],
+   "boundary_bracket_below": null,
+   "categorical_labels_emitted": false,
+   "field_factor": 1.0092513106539827,
+   "field_stability_ok": true,
+   "imported_theta_convention_type": "unverified_imported_comparator_convention",
+   "imported_theta_convention_value": 0.2,
+   "noncontiguous_window": false,
+   "theta_convention_role": "disclosure only; not used as a threshold",
+   "theta_floor_citation": "the landed Cycle 914 row types 0.20 as an unverified imported comparator convention; this package preserves that typing and performs no threshold test",
+   "theta_star": {
+    "0.02": 0.5001041579430632,
+    "0.05": 0.5007515272813331,
+    "0.1": 0.5047307768675429,
+    "0.2": null
+   },
+   "threshold_test_performed": false,
+   "why_no_labels": "the 0.20 value is an unverified imported comparator convention. This package reports theta values but does not use that convention as a threshold, so it performs no threshold test and assigns no inside/outside label. Any physical interpretation or baseline reconciliation remains outside this finite-sample result",
+   "window_size_ok": true
+  }
+ },
+ "cycle": 915,
+ "date": "2026-07-28",
+ "determinism": {
+  "duplicate_time_requested": 0.6,
+  "observable_scalars_bitwise_equal": true,
+  "ok": true,
+  "pair_classes_bitwise_equal": true,
+  "propagated_state_bitwise_equal": true
+ },
+ "deviations": [
+  "EXECUTED-SCOPE-LOW-FIELD: lambda = 0.02 executed on the frozen certification subgrid restricted to Jt in {0.0, ..., 1.2} (13 of the 17 T_C points).  The frozen main state grid Jt = 0:0.1:10 is NOT executed.  Identical restriction to Cycle 914's EXECUTED-GRID deviation, and for the same reason: the 900 s runtime cap against a frozen schedule that projects 7.1 h.  The deadline gate (Jt <= 1) and the three-consecutive-sample persistence gate both live entirely inside the executed window, so no CHECK-03 outcome depends on the omission.",
+  "EXECUTED-SCOPE-LATE-TIME: the frozen late certification samples are {1.5, 2.0, 5.0, 10.0}.  This run executes {1.5, 2.0} at both sampled certified lambdas {0.05, 0.10} -- four rows; {5.0, 10.0} are NOT executed at either lambda.  Reason: the Chebyshev degree scales with A * t_max (A = 54 + 27 lambda), so t_max = 10 costs M = 662 matrix-vector products per lambda against M = 169 for t_max = 2.0 -- roughly 491 s versus 125 s per lambda, which does not fit beside the low-field run under the 900 s cap.  Consequence for the claim: the four executed rows are the ENTIRE late-time evidence.  Nothing is asserted about Jt = 5, 10, about intermediate times, or about the certification predicate as a function of time; the honest reading of the four rows is 'not certified at these tested samples'.",
+  "LAZY-Z-PAIRS: inherited from Cycle 914.  The frozen design evaluates the five pair classes at every T_C time; this run applies the design's own lazy rule (declared there for the X control) to Z as well, skipping pair evaluation at rows where fewer than two fragments pass the singleton gates at every delta.  Such rows cannot reach R_ind >= 2, so no first-hit time can change; skipped rows carry the reason 'fewer-than-two-singleton-passes' and are never read as independence.",
+  "GROUND-DOUBLET: inherited from Cycle 914.  The two-state invariant-sector Lanczos baseline is NOT executed under the runtime cap.  The frozen memo assigns the doublet a control-and-diagnostic-only role and FORBIDS it as a gate baseline, so no gate depends on it.  A repeated-observable stationary control anchored at its own first row is substituted and reported.",
+  "DT-HALVING: inherited from Cycle 914.  This runner evaluates exp(-iHt) directly at each requested t by a single Chebyshev expansion of the sector Hamiltonian, so no dt exists to halve.  Substituted diagnostics: the rigorous Chebyshev truncation tail bound, state-norm conservation, and the duplicate-time propagation determinism gate.",
+  "MACHINERY-REUSE: the sector reduction, propagator, marginal, certification and commutator routines are AST-extracted from the LANDED Cycle 914 primary rather than reimplemented.  This is deliberate: it makes the low-field and late-time runs a scope extension of a landed, verified implementation rather than a second implementation with its own error surface.  The INDEPENDENT recomputation lives in the paired checker, which reimplements the certification arithmetic from the memos."
+ ],
+ "falsifier_visibility": {
+  "below_content_r_ind": 0,
+  "below_content_rejected": true,
+  "correlated_pairs_rejected": true,
+  "correlated_r_ind": 1,
+  "correlated_raw_singletons": 6,
+  "meaning": "the gate machinery fires on a planted early row and refuses three distinct near-miss rows, so a genuine early certification at lambda = 0.02 could not have been missed by construction",
+  "ok": true,
+  "planted_early_certification_detected": true,
+  "planted_r_ind": 6,
+  "planted_subset": [
+   "+x",
+   "-x",
+   "+y",
+   "-y",
+   "+z",
+   "-z"
+  ],
+  "zero_excess_r_ind": 0,
+  "zero_excess_rejected": true
+ },
+ "late_time_probe": {
+  "results": {
+   "0.05": {
+    "certified_at_late_samples": {
+     "1.5": false,
+     "2.0": false
+    },
+    "early_first_hit_jt_from_914": 0.6,
+    "executed_times": [
+     0.0,
+     1.5,
+     2.0
+    ],
+    "late_rows": [
+     {
+      "H_Z": 0.9999997793673869,
+      "Q_quiet": 0.001640438016936363,
+      "X_face": -0.8291600239295246,
+      "chi_closed_five": 0.04139732703559189,
+      "chi_wedge_four": 0.03714260524955294,
+      "drift": 0.00027652399721189713,
+      "excess_closed_five": 0.04139732703559189,
+      "jt": 1.5,
+      "pair_classes": null,
+      "pair_reason": "fewer-than-two-singleton-passes",
+      "r_ind": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "r_raw": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "singleton_passes": {
+       "0.05": [],
+       "0.1": [],
+       "0.2": []
+      },
+      "theta": 0.05536841624921374
+     },
+     {
+      "H_Z": 0.9999999294009783,
+      "Q_quiet": 0.0026691722171103827,
+      "X_face": 0.6198839821999576,
+      "chi_closed_five": 0.650422036460144,
+      "chi_wedge_four": 0.6304184460823733,
+      "drift": 0.00015642193162113127,
+      "excess_closed_five": 0.650422036460144,
+      "jt": 2.0,
+      "pair_classes": null,
+      "pair_reason": "fewer-than-two-singleton-passes",
+      "r_ind": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "r_raw": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "singleton_passes": {
+       "0.05": [],
+       "0.1": [],
+       "0.2": []
+      },
+      "theta": 0.49776829171140624
+     }
+    ],
+    "propagator": {
+     "degree": 166,
+     "matvecs": 166,
+     "tail_bound": 1.0080823851948336e-17
+    },
+    "sampled_label": "NOT-CERTIFIED-AT-ANY-TESTED-SAMPLE",
+    "sampled_label_meaning": "a statement about the 2 executed row(s) at this lambda only; the untested times {5.0, 10.0} and every unsampled time are outside it"
+   },
+   "0.1": {
+    "certified_at_late_samples": {
+     "1.5": false,
+     "2.0": false
+    },
+    "early_first_hit_jt_from_914": 0.7,
+    "executed_times": [
+     0.0,
+     1.5,
+     2.0
+    ],
+    "late_rows": [
+     {
+      "H_Z": 0.999996645138274,
+      "Q_quiet": 0.006395729560937147,
+      "X_face": -0.8109680064880249,
+      "chi_closed_five": 0.03593152250948645,
+      "chi_wedge_four": 0.029062958076822826,
+      "drift": 0.0010782883834246082,
+      "excess_closed_five": 0.03593152250948645,
+      "jt": 1.5,
+      "pair_classes": null,
+      "pair_reason": "fewer-than-two-singleton-passes",
+      "r_ind": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "r_raw": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "singleton_passes": {
+       "0.05": [],
+       "0.1": [],
+       "0.2": []
+      },
+      "theta": 0.07679935076390587
+     },
+     {
+      "H_Z": 0.999998741106186,
+      "Q_quiet": 0.010376272407757958,
+      "X_face": 0.6015823051199556,
+      "chi_closed_five": 0.6165531033348172,
+      "chi_wedge_four": 0.5620043042769088,
+      "drift": 0.0006605296481249079,
+      "excess_closed_five": 0.6165531033348172,
+      "jt": 2.0,
+      "pair_classes": null,
+      "pair_reason": "fewer-than-two-singleton-passes",
+      "r_ind": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "r_raw": {
+       "0.05": 0,
+       "0.1": 0,
+       "0.2": 0
+      },
+      "singleton_passes": {
+       "0.05": [],
+       "0.1": [],
+       "0.2": []
+      },
+      "theta": 0.5119308113644572
+     }
+    ],
+    "propagator": {
+     "degree": 169,
+     "matvecs": 169,
+     "tail_bound": 1.1523122379121578e-17
+    },
+    "sampled_label": "NOT-CERTIFIED-AT-ANY-TESTED-SAMPLE",
+    "sampled_label_meaning": "a statement about the 2 executed row(s) at this lambda only; the untested times {5.0, 10.0} and every unsampled time are outside it"
+   }
+  },
+  "scope": {
+   "design_semantics": "the frozen memo classes all four late certification samples as recurrence diagnostics that do not rescue CHECK-03; these labels are finite-sample flags",
+   "executed_lambdas": [
+    0.05,
+    0.1
+   ],
+   "executed_row_count": 4,
+   "executed_times": [
+    1.5,
+    2.0
+   ],
+   "not_executed_times": [
+    5.0,
+    10.0
+   ],
+   "reading": "the four executed rows support exactly one sentence: the imported certification predicate does not hold at these tested samples.  No decay, no limit, no monotonicity and no statement about theta as an indicator follows from them."
+  }
+ },
+ "low_field_certification": {
+  "W_full_after": [
+   0.02,
+   0.05,
+   0.1
+  ],
+  "all_deltas_by_deadline": true,
+  "boundary_bracket_above": [
+   0.1,
+   0.2
+  ],
+  "boundary_bracket_below": null,
+  "first_hit": {
+   "Q_quiet": 0.00012396560297500692,
+   "X_face": 0.03171434549180441,
+   "by_deadline": true,
+   "drift": 2.778335624187278e-05,
+   "jt": 0.6,
+   "max_pair": 0.0011326954132362564,
+   "pair_values": {
+    "minus-x-orthogonal": 0.0011326954132353084,
+    "opposite-44": 0.00016797639787379515,
+    "opposite-55": 0.0005174889596740555,
+    "plus-x-orthogonal": 0.0011326954132362564,
+    "transverse-orthogonal": 0.0010158916886128843
+   },
+   "r_ind": 6,
+   "run": 4,
+   "subset": [
+    "+x",
+    "-x",
+    "+y",
+    "-y",
+    "+z",
+    "-z"
+   ],
+   "theta": 0.5001041579430632
+  },
+  "headline_persists_3_samples": true,
+  "in_W_full": true,
+  "lambda": 0.02,
+  "outcome": "SAMPLED-WINDOW-INCLUDES-0.02",
+  "per_delta_first_hits": {
+   "0.05": {
+    "by_deadline": true,
+    "jt": 0.7,
+    "r_ind": 6,
+    "run": 3,
+    "theta": 0.5001924313642354
+   },
+   "0.1": {
+    "by_deadline": true,
+    "jt": 0.6,
+    "r_ind": 6,
+    "run": 4,
+    "theta": 0.5001041579430632
+   },
+   "0.2": {
+    "by_deadline": true,
+    "jt": 0.6,
+    "r_ind": 6,
+    "run": 5,
+    "theta": 0.5001041579430632
+   }
+  },
+  "reading": "at lambda = 0.02, on the sampled subgrid and under the imported cuts, the certification predicate first holds by Jt <= 1 at every commissioned tolerance and persists for the required number of consecutive samples, reproducing the ALREADY-COMMITTED 2026-07-11 lambda = 0.02 stream.  This is a reproduction of landed bounded support at one more field value, not a new boundary result: nothing is claimed at unsampled fields or unsampled times"
+ },
+ "low_field_reproduction_vs_committed_2026_07_11": {
+  "committed_targets": {
+   "first_hit_jt_headline": 0.6,
+   "max_pair_at_hit": 0.0011326954132860711,
+   "r_ind_headline": 6,
+   "subset_headline": [
+    "+x",
+    "-x",
+    "+y",
+    "-y",
+    "+z",
+    "-z"
+   ],
+   "theta_star_headline": 0.5001041579430463
+  },
+  "max_abs_dev": {
+   "H_Z": 7.849276784099857e-14,
+   "chi_closed_five": 2.047834124496717e-12,
+   "chi_wedge_four": 1.7126577933623821e-12,
+   "pair_opposite_55": 1.60530117844504e-13,
+   "theta": 1.1757261830780408e-13
+  },
+  "measured_first_hit_jt": 0.6,
+  "measured_max_pair": 0.0011326954132362564,
+  "measured_r_ind": 6,
+  "measured_theta_star": 0.5001041579430632,
+  "ok": true,
+  "r_ind_agrees": true,
+  "rows_compared": 13
+ },
+ "low_field_rows": [
+  {
+   "H_Z": 0.9999999999999999,
+   "Q_quiet": -2.220446049250313e-16,
+   "X_face": 1.0000000000000002,
+   "bloch": {
+    "corner": [
+     0.0,
+     -0.0,
+     1.0000000000000002
+    ],
+    "edge": [
+     0.0,
+     -0.0,
+     1.0000000000000002
+    ],
+    "face": [
+     1.0000000000000002,
+     -0.0,
+     0.0
+    ]
+   },
+   "capacity_gain": {
+    "closed-five": 0.0,
+    "wedge-four": 0.0
+   },
+   "certifying_subsets": {
+    "0.05": [],
+    "0.1": [],
+    "0.2": []
+   },
+   "chi_closed_five": -0.0,
+   "chi_wedge_four": -0.0,
+   "excess_closed_five": 0.0,
+   "excess_wedge_four": 0.0,
+   "jt": 0.0,
+   "lam": 0.02,
+   "one_site_chi": {
+    "corner": 0.0,
+    "edge": 0.0,
+    "face": 0.0
+   },
+   "one_site_excess": {
+    "corner": 0.0,
+    "edge": 0.0,
+    "face": 0.0
+   },
+   "p_z": [
+    0.5000000000000001,
+    0.5000000000000001
+   ],
+   "pair_classes": null,
+   "pair_reason": "fewer-than-two-singleton-passes",
+   "pointer_tv_drift": 1.1102230246251565e-16,
+   "r_ind": {
+    "0.05": 0,
+    "0.1": 0,
+    "0.2": 0
+   },
+   "r_raw": {
+    "0.05": 0,
+    "0.1": 0,
+    "0.2": 0
+   },
+   "removed_pointer_coherence": 0.25000000000000006,
+   "singleton_passes": {
+    "0.05": [],
+    "0.1": [],
+    "0.2": []
+   },
+   "state_norm_err": 2.220446049250313e-16,
+   "sum_delta_chi": 0.0,
+   "symmetry_max": 0.0,
+   "theta": 0.0,
+   "x_control": {
+    "H_X": -0.0,
+    "chi": [
+     -0.0,
+     -0.0
+    ],
+    "p_x": [
+     1.0,
+     0.0
+    ],
+    "pair_reason": "fewer-than-two-X-singletons-pass",
+    "r_ind_ge2_possible": false,
+    "singleton_passes": {
+     "0.05": 0,
+     "0.1": 0,
+     "0.2": 0
+    }
+   }
+  },
+  {
+   "H_Z": 0.9999999999997586,
+   "Q_quiet": 7.802643969156975e-06,
+   "X_face": 0.6828206895792134,
+   "bloch": {
+    "corner": [
+     0.0011644231069475723,
+     0.0037642740520687445,
+     0.9999922371480441
+    ],
+    "edge": [
+     0.0007743506265512512,
+     0.0038436479258763235,
+     0.9999921575640176
+    ],
+    "face": [
+     0.6828206895792134,
+     -0.7030531625817926,
+     0.0015016062129007413
+    ]
+   },
+   "capacity_gain": {
+    "closed-five": 2.7452180842990614e-06,
+    "wedge-four": 6.394818448524076e-07
+   },
+   "certifying_subsets": {
+    "0.05": [],
+    "0.1": [],
+    "0.2": []
+   },
+   "chi_closed_five": 0.08057193665106735,
+   "chi_wedge_four": 0.08056983091478172,
+   "excess_closed_five": 0.08057193665106735,
+   "excess_wedge_four": 0.08056983091478172,
+   "jt": 0.1,
+   "lam": 0.02,
+   "one_site_chi": {
+    "corner": -8.025782443013462e-17,
+    "edge": 1.1531230703405607e-12,
+    "face": 0.08056919143298305
+   },
+   "one_site_excess": {
+    "corner": -8.025782443013462e-17,
+    "edge": 1.1531230703405607e-12,
+    "face": 0.08056919143298305
+   },
+   "p_z": [
+    0.5000002926944892,
+    0.49999970730549764
+   ],
+   "pair_classes": null,
+   "pair_reason": "fewer-than-two-singleton-passes",
+   "pointer_tv_drift": 2.926944892012173e-07,
+   "r_ind": {
+    "0.05": 0,
+    "0.1": 0,
+    "0.2": 0
+   },
+   "r_raw": {
+    "0.05": 0,
+    "0.1": 0,
+    "0.2": 0
+   },
+   "removed_pointer_coherence": 0.22639297854966253,
+   "singleton_passes": {
+    "0.05": [],
+    "0.1": [],
+    "0.2": []
+   },
+   "state_norm_err": 6.661338147750939e-16,
+   "sum_delta_chi": 0.48342319696126157,
+   "symmetry_max": 4.618527782440651e-14,
+   "theta": 0.09118579278321315,
+   "x_control": {
+    "H_X": 0.315006117721697,
+    "chi": [
+     0.037659026740718554,
+     0.0376582332819184
+    ],
+    "p_x": [
+     0.9431019784426414,
+     0.056898021557318185
+    ],
+    "pair_reason": "fewer-than-two-X-singletons-pass",
+    "r_ind_ge2_possible": false,
+    "singleton_passes": {
+     "0.05": 0,
+     "0.1": 0,
+     "0.2": 0
+    }
+   }
+  },
+  {
+   "H_Z": 0.9999999999628738,
+   "Q_quiet": 2.8965829686478095e-05,
+   "X_face": -0.026874415091182352,
+   "bloch": {
+    "corner": [
+     0.004250862573606264,
+     0.0062135551684252225,
+     0.9999716604514958
+    ],
+    "edge": [
+     0.002809769243052644,
+     0.006832711166393751,
+     0.9999704078891313
+    ],
+    "face": [
+     -0.026874415091182352,
+     -0.9206526968498507,
+     0.004957725935113622
+    ]
+   },
+   "capacity_gain": {
+    "closed-five": 3.727674274231485e-05,
+    "wedge-four": 8.675993858203723e-06
+   },
+   "certifying_subsets": {
+    "0.05": [],
+    "0.1": [],
+    "0.2": []
+   },
+   "chi_closed_five": 0.23984704389044248,
+   "chi_wedge_four": 0.2398184431416448,
+   "excess_closed_five": 0.23984704389044248,
+   "excess_wedge_four": 0.2398184431416448,
+   "jt": 0.2,
+   "lam": 0.02,
+   "one_site_chi": {
+    "corner": -1.5959281940185744e-16,
+    "edge": 1.487781112492268e-10,
+    "face": 0.23980976714770016
+   },
+   "one_site_excess": {
+    "corner": -1.5959281940185744e-16,
+    "edge": 1.487781112492268e-10,
+    "face": 0.23980976714770016
+   },
+   "p_z": [
+    0.5000035910292835,
+    0.4999964089705303
+   ],
+   "pair_classes": null,
+   "pair_reason": "fewer-than-two-singleton-passes",
+   "pointer_tv_drift": 3.591029283489533e-06,
+   "r_ind": {
+    "0.05": 0,
+    "0.1": 0,
+    "0.2": 0
+   },
+   "r_raw": {
+    "0.05": 0,
+    "0.1": 0,
+    "0.2": 0
+   },
+   "removed_pointer_coherence": 0.1665360670996567,
+   "singleton_passes": {
+    "0.05": [],
+    "0.1": [],
+    "0.2": []
+   },
+   "state_norm_err": 0.0,
+   "sum_delta_chi": 1.4389678603474643,
+   "symmetry_max": 8.643086246706844e-14,
+   "theta": 0.28028689355019165,
+   "x_control": {
+    "H_X": 0.7112380382906087,
+    "chi": [
+     0.056857117886749575,
+     0.056850296131965294
+    ],
+    "p_x": [
+     0.8052817222894967,
+     0.19471827771042957
+    ],
+    "pair_reason": "fewer-than-two-X-singletons-pass",
+    "r_ind_ge2_possible": false,
+    "singleton_passes": {
+     "0.05": 0,
+     "0.1": 0,
+     "0.2": 0
+    }
+   }
+  },
+  {
+   "H_Z": 0.9999999995989268,
+   "Q_quiet": 5.761859238151423e-05,
+   "X_face": -0.6085386256192765,
+   "bloch": {
+    "corner": [
+     0.008181004608682334,
+     0.006492344003187241,
+     0.9999454578848224
+    ],
+    "edge": [
+     0.005382746879552336,
+     0.008484661971401181,
+     0.9999393049304145
+    ],
+    "face": [
+     -0.6085386256192765,
+     -0.5574735849252145,
+     0.008070553848019912
+    ]
+   },
+   "capacity_gain": {
+    "closed-five": 0.00016222699008877628,
+    "wedge-four": 3.790938300385349e-05
+   },
+   "certifying_subsets": {
+    "0.05": [],
+    "0.1": [],
+    "0.2": []
+   },
+   "chi_closed_five": 0.4274599192457325,
+   "chi_wedge_four": 0.4273356016389857,
+   "excess_closed_five": 0.4274599192457325,
+   "excess_wedge_four": 0.4273356016389857,
+   "jt": 0.3,
+   "lam": 0.02,
+   "one_site_chi": {
+    "corner": 2.2779354326949935e-16,
+    "edge": 1.405664494402866e-09,
+    "face": 0.42729769225564374
+   },
+   "one_site_excess": {
+    "corner": 2.2779354326949935e-16,
+    "edge": 1.405664494402866e-09,
+    "face": 0.42729769225564374
+   },
+   "p_z": [
+    0.5000117902432399,
+    0.49998820975670466
+   ],
+   "pair_classes": null,
+   "pair_reason": "fewer-than-two-singleton-passes",
+   "pointer_tv_drift": 1.1790243239939713e-05,
+   "r_ind": {
+    "0.05": 0,
+    "0.1": 0,
+    "0.2": 0
+   },
+   "r_raw": {
+    "0.05": 0,
+    "0.1": 0,
+    "0.2": 0
+   },
+   "removed_pointer_coherence": 0.09650678700818574,
+   "singleton_passes": {
+    "0.05": [],
+    "0.1": [],
+    "0.2": []
+   },
+   "state_norm_err": 4.440892098500626e-16,
+   "sum_delta_chi": 2.564262245047408,
+   "symmetry_max": 3.381184221495914e-13,
+   "theta": 0.4266750376802517,
+   "x_control": {
+    "H_X": 0.9266924893452924,
+    "chi": [
+     0.035248675281984554,
+     0.035233465742519676
+    ],
+    "p_x": [
+     0.6580288419591118,
+     0.3419711580408812
+    ],
+    "pair_reason": "fewer-than-two-X-singletons-pass",
+    "r_ind_ge2_possible": false,
+    "singleton_passes": {
+     "0.05": 0,
+     "0.1": 0,
+     "0.2": 0
+    }
+   }
+  },
+  {
+   "H_Z": 0.9999999987342867,
+   "Q_quiet": 8.648860032955952e-05,
+   "X_face": -0.6954394690271375,
+   "bloch": {
+    "corner": [
+     0.011581873618150036,
+     0.004503528398061481,
+     0.9999227819311227
+    ],
+    "edge": [
+     0.0076824228699829585,
+     0.008869714629886897,
+     0.9999042408682183
+    ],
+    "face": [
+     -0.6954394690271375,
+     0.04064029486326909,
+     0.009098524532616059
+    ]
+   },
+   "capacity_gain": {
+    "closed-five": 0.00043585425855174886,
+    "wedge-four": 0.0001023142631851881
+   },
+   "certifying_subsets": {
+    "0.05": [],
+    "0.1": [],
+    "0.2": []
+   },
+   "chi_closed_five": 0.6138153267516919,
+   "chi_wedge_four": 0.613481786756492,
+   "excess_closed_five": 0.6138153267516919,
+   "excess_wedge_four": 0.613481786756492,
+   "jt": 0.4,
+   "lam": 0.02,
+   "one_site_chi": {
+    "corner": 1.196437048934129e-15,
+    "edge": 3.3354566139298073e-09,
+    "face": 0.6133794724931402
+   },
+   "one_site_excess": {
+    "corner": 1.196437048934129e-15,
+    "edge": 3.3354566139298073e-09,
+    "face": 0.6133794724931402
+   },
+   "p_z": [
+    0.5000209444718663,
+    0.4999790555280809
+   ],
+   "pair_classes": null,
+   "pair_reason": "fewer-than-two-singleton-passes",
+   "pointer_tv_drift": 2.0944471866291003e-05,
+   "r_ind": {
+    "0.05": 0,
+    "0.1": 0,
+    "0.2": 0
+   },
+   "r_raw": {
+    "0.05": 0,
+    "0.1": 0,
+    "0.2": 0
+   },
+   "removed_pointer_coherence": 0.042130505772109916,
+   "singleton_passes": {
+    "0.05": [],
+    "0.1": [],
+    "0.2": []
+   },
+   "state_norm_err": 3.3306690738754696e-16,
+   "sum_delta_chi": 3.681557800529352,
+   "symmetry_max": 1.66644475996236e-13,
+   "theta": 0.48655390341754234,
+   "x_control": {
+    "H_X": 0.9905495695593882,
+    "chi": [
+     0.01009206734785073,
+     0.010077541770404985
+    ],
+    "p_x": [
+     0.5571674010496711,
+     0.4428325989502979
+    ],
+    "pair_reason": "fewer-than-two-X-singletons-pass",
+    "r_ind_ge2_possible": false,
+    "singleton_passes": {
+     "0.05": 0,
+     "0.1": 0,
+     "0.2": 0
+    }
+   }
+  },
+  {
+   "H_Z": 0.9999999980082972,
+   "Q_quiet": 0.000109546372406788,
+   "X_face": -0.3531151120849289,
+   "bloch": {
+    "corner": [
+     0.013265576577490449,
+     0.0009422373960494412,
+     0.9999115517767636
+    ],
+    "edge": [
+     0.009184972137930155,
+     0.008502303923329953,
+     0.9998693554784227
+    ],
+    "face": [
+     -0.3531151120849289,
+     0.4088355960882373,
+     0.008066111699916001
+    ]
+   },
+   "capacity_gain": {
+    "closed-five": 0.0008866199576823552,
+    "wedge-four": 0.00020881883901013865
+   },
+   "certifying_subsets": {
+    "0.05": [],
+    "0.1": [],
+    "0.2": []
+   },
+   "chi_closed_five": 0.777463209188084,
+   "chi_wedge_four": 0.776785408069447,
+   "excess_closed_five": 0.777463209188084,
+   "excess_wedge_four": 0.776785408069447,
+   "jt": 0.5,
+   "lam": 0.02,
+   "one_site_chi": {
+    "corner": 9.299275089999872e-15,
+    "edge": 2.3282714097747634e-09,
+    "face": 0.7765765892304016
+   },
+   "one_site_excess": {
+    "corner": 9.299275089999872e-15,
+    "edge": 2.3282714097747634e-09,
+    "face": 0.7765765892304016
+   },
+   "p_z": [
+    0.5000262731600404,
+    0.49997372683991165
+   ],
+   "pair_classes": null,
+   "pair_reason": "fewer-than-two-singleton-passes",
+   "pointer_tv_drift": 2.627316004044644e-05,
+   "r_ind": {
+    "0.05": 0,
+    "0.1": 0,
+    "0.2": 0
+   },
+   "r_raw": {
+    "0.05": 0,
+    "0.1": 0,
+    "0.2": 0
+   },
+   "removed_pointer_coherence": 0.013071203739272844,
+   "singleton_passes": {
+    "0.05": [],
+    "0.1": [],
+    "0.2": []
+   },
+   "state_norm_err": 2.1094237467877974e-15,
+   "sum_delta_chi": 4.662068050653955,
+   "symmetry_max": 3.519406988061746e-14,
+   "theta": 0.49900803871285837,
+   "x_control": {
+    "H_X": 0.9995546906327945,
+    "chi": [
+     0.0010919804570846958,
+     0.0010861580487442346
+    ],
+    "p_x": [
+     0.5124224227313795,
+     0.4875775772685988
+    ],
+    "pair_reason": "fewer-than-two-X-singletons-pass",
+    "r_ind_ge2_possible": false,
+    "singleton_passes": {
+     "0.05": 0,
+     "0.1": 0,
+     "0.2": 0
+    }
+   }
+  },
+  {
+   "H_Z": 0.9999999977727471,
+   "Q_quiet": 0.00012396560297500692,
+   "X_face": 0.03171434549180441,
+   "bloch": {
+    "corner": [
+     0.012644303977873311,
+     -0.0029471250442029834,
+     0.9999156867700744
+    ],
+    "edge": [
+     0.009843074233214226,
+     0.008006109424443911,
+     0.9998363820239757
+    ],
+    "face": [
+     0.03171434549180441,
+     0.36091530429575003,
+     0.006402572710899113
+    ]
+   },
+   "capacity_gain": {
+    "closed-five": 0.0014936708858163117,
+    "wedge-four": 0.0003524116228492691
+   },
+   "certifying_subsets": {
+    "0.05": [],
+    "0.1": [
+     "+x",
+     "-x",
+     "+y",
+     "-y",
+     "+z",
+     "-z"
+    ],
+    "0.2": [
+     "+x",
+     "-x",
+     "+y",
+     "-y",
+     "+z",
+     "-z"
+    ]
+   },
+   "chi_closed_five": 0.9025997644731673,
+   "chi_wedge_four": 0.9014585052102235,
+   "excess_closed_five": 0.9025997644731673,
+   "excess_wedge_four": 0.9014585052102235,
+   "jt": 0.6,
+   "lam": 0.02,
+   "one_site_chi": {
+    "corner": 3.0377418349544864e-14,
+    "edge": 8.481117819213006e-10,
+    "face": 0.9011060935873509
+   },
+   "one_site_excess": {
+    "corner": 3.0377418349544864e-14,
+    "edge": 8.481117819213006e-10,
+    "face": 0.9011060935873509
+   },
+   "p_z": [
+    0.5000277833562419,
+    0.4999722166437069
+   ],
+   "pair_classes": {
+    "minus-x-orthogonal": 0.0011326954132353084,
+    "opposite-44": 0.00016797639787379515,
+    "opposite-55": 0.0005174889596740555,
+    "plus-x-orthogonal": 0.0011326954132362564,
+    "transverse-orthogonal": 0.0010158916886128843
+   },
+   "pair_reason": null,
+   "pointer_tv_drift": 2.778335624187278e-05,
+   "r_ind": {
+    "0.05": 0,
+    "0.1": 6,
+    "0.2": 6
+   },
+   "r_raw": {
+    "0.05": 0,
+    "0.1": 6,
+    "0.2": 6
+   },
+   "removed_pointer_coherence": 0.0035368130026971487,
+   "singleton_passes": {
+    "0.05": [],
+    "0.1": [
+     "+x",
+     "-x",
+     "+y",
+     "-y",
+     "+z",
+     "-z"
+    ],
+    "0.2": [
+     "+x",
+     "-x",
+     "+y",
+     "-y",
+     "+z",
+     "-z"
+    ]
+   },
+   "state_norm_err": 2.220446049250313e-16,
+   "sum_delta_chi": 5.411033549787229,
+   "symmetry_max": 2.3314683517128287e-14,
+   "theta": 0.5001041579430632,
+   "x_control": {
+    "H_X": 0.99999639871397,
+    "chi": [
+     2.545385473284867e-05,
+     2.4720234478636804e-05
+    ],
+    "p_x": [
+     0.5011171882520514,
+     0.49888281174788324
+    ],
+    "pair_reason": "fewer-than-two-X-singletons-pass",
+    "r_ind_ge2_possible": false,
+    "singleton_passes": {
+     "0.05": 0,
+     "0.1": 0,
+     "0.2": 0
+    }
+   }
+  },
+  {
+   "H_Z": 0.9999999977491685,
+   "Q_quiet": 0.0001306537173429989,
+   "X_face": 0.1318507905310755,
+   "bloch": {
+    "corner": [
+     0.009935599264546348,
+     -0.00580571078501437,
+     0.9999337376906522
+    ],
+    "edge": [
+     0.00998204285426664,
+     0.007759211451926021,
+     0.9998049548746618
+    ],
+    "face": [
+     0.1318507905310755,
+     0.10727895344501626,
+     0.0054602452626748565
+    ]
+   },
+   "capacity_gain": {
+    "closed-five": 0.0021858465835674634,
+    "wedge-four": 0.0005159399471823534
+   },
+   "certifying_subsets": {
+    "0.05": [
+     "+x",
+     "-x",
+     "+y",
+     "-y",
+     "+z",
+     "-z"
+    ],
+    "0.1": [
+     "+x",
+     "-x",
+     "+y",
+     "-y",
+     "+z",
+     "-z"
+    ],
+    "0.2": [
+     "+x",
+     "-x",
+     "+y",
+     "-y",
+     "+z",
+     "-z"
+    ]
+   },
+   "chi_closed_five": 0.9783127003135862,
+   "chi_wedge_four": 0.9766427936777553,
+   "excess_closed_five": 0.9783127003135862,
+   "excess_wedge_four": 0.9766427936777553,
+   "jt": 0.7,
+   "lam": 0.02,
+   "one_site_chi": {
+    "corner": 5.882704820935186e-14,
+    "edge": 3.810210995346987e-09,
+    "face": 0.9761268537300187
+   },
+   "one_site_excess": {
+    "corner": 5.882704820935186e-14,
+    "edge": 3.810210995346987e-09,
+    "face": 0.9761268537300187
+   },
+   "p_z": [
+    0.5000279302261751,
+    0.49997206977370273
+   ],
+   "pair_classes": {
+    "minus-x-orthogonal": 0.0017119975731083002,
+    "opposite-44": 0.0002905560480642292,
+    "opposite-55": 0.0008437685903525341,
+    "plus-x-orthogonal": 0.0017119975731323446,
+    "transverse-orthogonal": 0.0015228236223931858
+   },
+   "pair_reason": null,
+   "pointer_tv_drift": 2.7930226175088002e-05,
+   "r_ind": {
+    "0.05": 6,
+    "0.1": 6,
+    "0.2": 6
+   },
+   "r_raw": {
+    "0.05": 6,
+    "0.1": 6,
+    "0.2": 6
+   },
+   "removed_pointer_coherence": 0.002314440573137582,
+   "singleton_passes": {
+    "0.05": [
+     "+x",
+     "-x",
+     "+y",
+     "-y",
+     "+z",
+     "-z"
+    ],
+    "0.1": [
+     "+x",
+     "-x",
+     "+y",
+     "-y",
+     "+z",
+     "-z"
+    ],
+    "0.2": [
+     "+x",
+     "-x",
+     "+y",
+     "-y",
+     "+z",
+     "-z"
+    ]
+   },
+   "state_norm_err": 1.3322676295501878e-15,
+   "sum_delta_chi": 5.863196575338193,
+   "symmetry_max": 5.542233338928781e-13,
+   "theta": 0.5001924313642354,
+   "x_control": {
+    "H_X": 0.9999999999968258,
+    "chi": [
+     5.520970092209865e-08,
+     2.981493973930327e-08
+    ],
+    "p_x": [
+     0.5000010488667305,
+     0.49999895113311965
+    ],
+    "pair_reason": "fewer-than-two-X-singletons-pass",
+    "r_ind_ge2_possible": false,
+    "singleton_passes": {
+     "0.05": 0,
+     "0.1": 0,
+     "0.2": 0
+    }
+   }
+  },
+  {
+   "H_Z": 0.9999999977493881,
+   "Q_quiet": 0.0001333090975381701,
+   "X_face": -0.028890651097476447,
+   "bloch": {
+    "corner": [
+     0.006086234363040905,
+     -0.0066349641640616915,
+     0.9999593937791134
+    ],
+    "edge": [
+     0.009982432802044371,
+     0.007743123450169828,
+     0.9997739880258103
+    ],
+    "face": [
+     -0.028890651097476447,
+     0.0033402836382834256,
+     0.005333295332790033
+    ]
+   },
+   "capacity_gain": {
+    "closed-five": 0.0028627530258563683,
+    "wedge-four": 0.0006752346154935696
+   },
+   "certifying_subsets": {
+    "0.05": [
+     "+x",
+     "-x",
+     "+y",
+     "-y",
+     "+z",
+     "-z"
+    ],
+    "0.1": [
+     "+x",
+     "-x",
+     "+y",
+     "-y",
+     "+z",
+     "-z"
+    ],
+    "0.2": [
+     "+x",
+     "-x",
+     "+y",
+     "-y",
+     "+z",
+     "-z"
+    ]
+   },
+   "chi_closed_five": 0.9983585723174266,
+   "chi_wedge_four": 0.9961710539078863,
+   "excess_closed_five": 0.9983585723174266,
+   "excess_wedge_four": 0.9961710539078863,
+   "jt": 0.8,
+   "lam": 0.02,
+   "one_site_chi": {
+    "corner": 7.716406452609043e-14,
+    "edge": 5.220269291979999e-09,
+    "face": 0.9954958192915703
+   },
+   "one_site_excess": {
+    "corner": 7.716406452609043e-14,
+    "edge": 5.220269291979999e-09,
+    "face": 0.9954958192915703
+   },
+   "p_z": [
+    0.5000279289027321,
+    0.4999720710971312
+   ],
+   "pair_classes": {
+    "minus-x-orthogonal": 0.002346311179928619,
+    "opposite-44": 0.000443775920704287,
+    "opposite-55": 0.001225832667302221,
+    "plus-x-orthogonal": 0.002346311179941305,
+    "transverse-orthogonal": 0.002074832453993273
+   },
+   "pair_reason": null,
+   "pointer_tv_drift": 2.7928902732066163e-05,
+   "r_ind": {
+    "0.05": 6,
+    "0.1": 6,
+    "0.2": 6
+   },
+   "r_raw": {
+    "0.05": 6,
+    "0.1": 6,
+    "0.2": 6
+   },
+   "removed_pointer_coherence": 0.0024875035511464894,
+   "singleton_passes": {
+    "0.05": [
+     "+x",
+     "-x",
+     "+y",
+     "-y",
+     "+z",
+     "-z"
+    ],
+    "0.1": [
+     "+x",
+     "-x",
+     "+y",
+     "-y",
+     "+z",
+     "-z"
+    ],
+    "0.2": [
+     "+x",
+     "-x",
+     "+y",
+     "-y",
+     "+z",
+     "-z"
+    ]
+   },
+   "state_norm_err": 6.661338147750939e-16,
+   "sum_delta_chi": 5.981401360266398,
+   "symmetry_max": 8.22453216642316e-13,
+   "theta": 0.5002693996527035,
+   "x_control": {
+    "H_X": 0.9999999997670433,
+    "chi": [
+     4.4169367940938287e-08,
+     1.650216674420335e-08
+    ],
+    "p_x": [
+     0.5000089853557402,
+     0.49999101464416984
+    ],
+    "pair_reason": "fewer-than-two-X-singletons-pass",
+    "r_ind_ge2_possible": false,
+    "singleton_passes": {
+     "0.05": 0,
+     "0.1": 0,
+     "0.2": 0
+    }
+   }
+  },
+  {
+   "H_Z": 0.9999999977508033,
+   "Q_quiet": 0.00013661832759259696,
+   "X_face": -0.13811334174938422,
+   "bloch": {
+    "corner": [
+     0.002441346954573307,
+     -0.005145415744268843,
+     0.9999836880800167
+    ],
+    "edge": [
+     0.009970141809713506,
+     0.007680036214919033,
+     0.9997430752647982
+    ],
+    "face": [
+     -0.13811334174938422,
+     0.18007834904426806,
+     0.005041156788861689
+    ]
+   },
+   "capacity_gain": {
+    "closed-five": 0.003428162440377358,
+    "wedge-four": 0.0008070895737476436
+   },
+   "certifying_subsets": {
+    "0.05": [
+     "+x",
+     "-x",
+     "+y",
+     "-y",
+     "+z",
+     "-z"
+    ],
+    "0.1": [
+     "+x",
+     "-x",
+     "+y",
+     "-y",
+     "+z",
+     "-z"
+    ],
+    "0.2": [
+     "+x",
+     "-x",
+     "+y",
+     "-y",
+     "+z",
+     "-z"
+    ]
+   },
+   "chi_closed_five": 0.961122034832193,
+   "chi_wedge_four": 0.958500961966533,
+   "excess_closed_five": 0.961122034832193,
+   "excess_wedge_four": 0.958500961966533,
+   "jt": 0.9,
+   "lam": 0.02,
+   "one_site_chi": {
+    "corner": 8.075511131619363e-14,
+    "edge": 2.493929805724715e-09,
+    "face": 0.9576938723918157
+   },
+   "one_site_excess": {
+    "corner": 8.075511131619363e-14,
+    "edge": 2.493929805724715e-09,
+    "face": 0.9576938723918157
+   },
+   "p_z": [
+    0.5000279199896517,
+    0.49997208001025945
+   ],
+   "pair_classes": {
+    "minus-x-orthogonal": 0.002974139535290475,
+    "opposite-44": 0.0006072924606873107,
+    "opposite-55": 0.001618790633324266,
+    "plus-x-orthogonal": 0.0029741395352947345,
+    "transverse-orthogonal": 0.002620177564151985
+   },
+   "pair_reason": null,
+   "pointer_tv_drift": 2.79199896516813e-05,
+   "r_ind": {
+    "0.05": 6,
+    "0.1": 6,
+    "0.2": 6
+   },
+   "r_raw": {
+    "0.05": 6,
+    "0.1": 6,
+    "0.2": 6
+   },
+   "removed_pointer_coherence": 0.0027085114141260722,
+   "singleton_passes": {
+    "0.05": [
+     "+x",
+     "-x",
+     "+y",
+     "-y",
+     "+z",
+     "-z"
+    ],
+    "0.1": [
+     "+x",
+     "-x",
+     "+y",
+     "-y",
+     "+z",
+     "-z"
+    ],
+    "0.2": [
+     "+x",
+     "-x",
+     "+y",
+     "-y",
+     "+z",
+     "-z"
+    ]
+   },
+   "state_norm_err": 2.220446049250313e-16,
+   "sum_delta_chi": 5.756247917530518,
+   "symmetry_max": 9.696687897076117e-13,
+   "theta": 0.500348202985109,
+   "x_control": {
+    "H_X": 0.9999999624747692,
+    "chi": [
+     3.17782217984508e-07,
+     2.0005426182301278e-07
+    ],
+    "p_x": [
+     0.5001140405798066,
+     0.4998859594200567
+    ],
+    "pair_reason": "fewer-than-two-X-singletons-pass",
+    "r_ind_ge2_possible": false,
+    "singleton_passes": {
+     "0.05": 0,
+     "0.1": 0,
+     "0.2": 0
+    }
+   }
+  },
+  {
+   "H_Z": 0.9999999977830555,
+   "Q_quiet": 0.00014447313288101782,
+   "X_face": 0.0604154621762944,
+   "bloch": {
+    "corner": [
+     0.0002744608567766492,
+     -0.0018577154497681477,
+     0.9999981304253127
+    ],
+    "edge": [
+     0.009721151426060424,
+     0.007347130309825254,
+     0.9997129233089252
+    ],
+    "face": [
+     0.0604154621762944,
+     0.4112962145322707,
+     0.0038134921501041252
+    ]
+   },
+   "capacity_gain": {
+    "closed-five": 0.0038168681993373532,
+    "wedge-four": 0.0008957087131384878
+   },
+   "certifying_subsets": {
+    "0.05": [],
+    "0.1": [],
+    "0.2": [
+     "+x",
+     "-x",
+     "+y",
+     "-y",
+     "+z",
+     "-z"
+    ]
+   },
+   "chi_closed_five": 0.8696196496907606,
+   "chi_wedge_four": 0.8666984902050981,
+   "excess_closed_five": 0.8696196496907606,
+   "excess_wedge_four": 0.8666984902050981,
+   "jt": 1.0,
+   "lam": 0.02,
+   "one_site_chi": {
+    "corner": 7.853283239352458e-14,
+    "edge": 5.599299124836241e-09,
+    "face": 0.8658027814914232
+   },
+   "one_site_excess": {
+    "corner": 7.853283239352458e-14,
+    "edge": 5.599299124836241e-09,
+    "face": 0.8658027814914232
+   },
+   "p_z": [
+    0.5000277191060112,
+    0.49997228089389484
+   ],
+   "pair_classes": {
+    "minus-x-orthogonal": 0.003539592618839954,
+    "opposite-44": 0.000756103272532797,
+    "opposite-55": 0.0019754517251929617,
+    "plus-x-orthogonal": 0.003539592618854675,
+    "transverse-orthogonal": 0.003112205635318243
+   },
+   "pair_reason": null,
+   "pointer_tv_drift": 2.7719106011181438e-05,
+   "r_ind": {
+    "0.05": 0,
+    "0.1": 0,
+    "0.2": 6
+   },
+   "r_raw": {
+    "0.05": 0,
+    "0.1": 0,
+    "0.2": 6
+   },
+   "removed_pointer_coherence": 0.00565967215080268,
+   "singleton_passes": {
+    "0.05": [],
+    "0.1": [],
+    "0.2": [
+     "+x",
+     "-x",
+     "+y",
+     "-y",
+     "+z",
+     "-z"
+    ]
+   },
+   "state_norm_err": 1.1102230246251565e-15,
+   "sum_delta_chi": 5.206033260201914,
+   "symmetry_max": 5.364597654988756e-13,
+   "theta": 0.5003464533555986,
+   "x_control": {
+    "H_X": 0.9999793456403875,
+    "chi": [
+     9.488977341187699e-05,
+     9.070130388733055e-05
+    ],
+    "p_x": [
+     0.5026754852653436,
+     0.49732451473454914
+    ],
+    "pair_reason": "fewer-than-two-X-singletons-pass",
+    "r_ind_ge2_possible": false,
+    "singleton_passes": {
+     "0.05": 0,
+     "0.1": 0,
+     "0.2": 0
+    }
+   }
+  },
+  {
+   "H_Z": 0.999999998015837,
+   "Q_quiet": 0.00015889412999636754,
+   "X_face": 0.47677528718322404,
+   "bloch": {
+    "corner": [
+     0.0003425788509952037,
+     0.002079359493230475,
+     0.9999976734522322
+    ],
+    "edge": [
+     0.00883712163706361,
+     0.006847745147488914,
+     0.999684538287775
+    ],
+    "face": [
+     0.47677528718322404,
+     0.34389169623271715,
+     0.0021612608209800044
+    ]
+   },
+   "capacity_gain": {
+    "closed-five": 0.004000376008245099,
+    "wedge-four": 0.0009341884421445457
+   },
+   "certifying_subsets": {
+    "0.05": [],
+    "0.1": [],
+    "0.2": []
+   },
+   "chi_closed_five": 0.7315089032538382,
+   "chi_wedge_four": 0.7284427156884461,
+   "excess_closed_five": 0.7315089032538382,
+   "excess_wedge_four": 0.7284427156884461,
+   "jt": 1.1,
+   "lam": 0.02,
+   "one_site_chi": {
+    "corner": 6.733647709331704e-14,
+    "edge": 1.3334542112966759e-08,
+    "face": 0.7275085272455931
+   },
+   "one_site_excess": {
+    "corner": 6.733647709331704e-14,
+    "edge": 1.3334542112966759e-08,
+    "face": 0.7275085272455931
+   },
+   "p_z": [
+    0.5000262235478541,
+    0.4999737764520417
+   ],
+   "pair_classes": null,
+   "pair_reason": "fewer-than-two-singleton-passes",
+   "pointer_tv_drift": 2.6223547854087315e-05,
+   "r_ind": {
+    "0.05": 0,
+    "0.1": 0,
+    "0.2": 0
+   },
+   "r_raw": {
+    "0.05": 0,
+    "0.1": 0,
+    "0.2": 0
+   },
+   "removed_pointer_coherence": 0.02005394848260735,
+   "singleton_passes": {
+    "0.05": [],
+    "0.1": [],
+    "0.2": []
+   },
+   "state_norm_err": 2.220446049250313e-15,
+   "sum_delta_chi": 4.376788669261461,
+   "symmetry_max": 7.084333120133124e-13,
+   "theta": 0.498003339769864
+  },
+  {
+   "H_Z": 0.9999999988240527,
+   "Q_quiet": 0.00017989391934802867,
+   "X_face": 0.7252627644784457,
+   "bloch": {
+    "corner": [
+     0.0026217690594204836,
+     0.005290329146537234,
+     0.9999824754707736
+    ],
+    "edge": [
+     0.00707423795843808,
+     0.006657616174131591,
+     0.9996577366905304
+    ],
+    "face": [
+     0.7252627644784457,
+     -0.12839139164621277,
+     0.001622483362258731
+    ]
+   },
+   "capacity_gain": {
+    "closed-five": 0.003969459911162487,
+    "wedge-four": 0.000920396679309543
+   },
+   "certifying_subsets": {
+    "0.05": [],
+    "0.1": [],
+    "0.2": []
+   },
+   "chi_closed_five": 0.5591535139103672,
+   "chi_wedge_four": 0.5561044506790562,
+   "excess_closed_five": 0.5591535139103672,
+   "excess_wedge_four": 0.5561044506790562,
+   "jt": 1.2,
+   "lam": 0.02,
+   "one_site_chi": {
+    "corner": 4.1179804279363886e-14,
+    "edge": 1.273127529864259e-08,
+    "face": 0.5551840539992047
+   },
+   "one_site_excess": {
+    "corner": 4.1179804279363886e-14,
+    "edge": 1.273127529864259e-08,
+    "face": 0.5551840539992047
+   },
+   "p_z": [
+    0.5000201882817851,
+    0.49997981171812084
+   ],
+   "pair_classes": null,
+   "pair_reason": "fewer-than-two-singleton-passes",
+   "pointer_tv_drift": 2.0188281785071815e-05,
+   "r_ind": {
+    "0.05": 0,
+    "0.1": 0,
+    "0.2": 0
+   },
+   "r_raw": {
+    "0.05": 0,
+    "0.1": 0,
+    "0.2": 0
+   },
+   "removed_pointer_coherence": 0.05675744657508421,
+   "singleton_passes": {
+    "0.05": [],
+    "0.1": [],
+    "0.2": []
+   },
+   "state_norm_err": 1.9984014443252818e-15,
+   "sum_delta_chi": 3.3427248305369592,
+   "symmetry_max": 5.420108806220014e-13,
+   "theta": 0.47680636727532344
+  }
+ ],
+ "numerics": {
+  "basis_checksum": "af6551ee1921ce45e6d4f9d4d1827609d8f1e643fb3a21bbc762edd1abd586d5",
+  "basis_wall_s": 10.965595582965761,
+  "cheby_tail_bound_gate": 1e-12,
+  "chebyshev": {
+   "low_field": {
+    "degree": 116,
+    "half_width": 54.54,
+    "matvecs": 116,
+    "tail_bound": 1.3239949523426164e-18,
+    "tail_bound_definition": "2*sum_{k>M}|J_k(A t)| + sum of in-range |coef| skipped by the 1e-18 cutoff; operator-norm bound on the omitted series, max over the requested times",
+    "tail_bound_dropped_in_range": 1.3239779652126358e-18,
+    "tail_bound_post_degree": 9.72645391005593e-20
+   }
+  },
+  "late_time_wall_s": 292.6307890419848,
+  "layout_wall_s": 3.16338508320041,
+  "low_field_wall_s": 216.5807086660061,
+  "machinery": {
+   "cheby_tail": 1.1523122379121578e-17,
+   "entropy_bound": 0.0,
+   "hermiticity": 6.558642517973112e-14,
+   "negativity": 3.3381651702128138e-21,
+   "norm": 3.774758283725532e-15,
+   "symmetry": 3.2822633500018128e-12,
+   "t0_anchor": 0.0
+  },
+  "machinery_ok": true,
+  "numpy": "2.4.1",
+  "peak_rss_gib": 5.3709716796875,
+  "python": "3.12.8",
+  "result_table_sha256": "614762c1a43ab9b67afc44f234cfc8abfa9ecf14f07e79db72004c9fcade3bc9",
+  "route": "exact proper-cubic invariant-sector reduction (orbit basis) + Chebyshev expansion of exp(-iHt); float64/complex128 (machinery AST-extracted from the LANDED Cycle 914 primary, including its corrected operator-norm truncation bound)",
+  "sector_dimension": 5605504,
+  "wall_s": 523.4226179122925
+ },
+ "pins": {
+  "docs/D3_BAR_LOCATION_DESIGN_SCOUT_2026-07-10.md": {
+   "bytes": 49165,
+   "git_blob": "5dff1d8b1692099cd86b53959834b6bcb5865a71",
+   "sha256": "c3e0b9162170f5e87e486f9d34068114d1d56b2f80db5c57df7ff7536820a93e"
+  },
+  "docs/D3_BAR_WINDOW_BOUNDED_NOTE_2026-07-11.md": {
+   "bytes": 6705,
+   "git_blob": "5f056aa69d1cc06dbfa2dc9ed6804df40c7b39fe",
+   "sha256": "74a0a4c0e40e78ec042824ba706389e53e8bde22443964388987557a1819552c"
+  },
+  "docs/D3_BAR_WINDOW_DESIGN_DELTA_2026-07-11.md": {
+   "bytes": 9340,
+   "git_blob": "d5b36708949d06bf619b2452e8f2897468e51194",
+   "sha256": "9373dd8a9c8275b2b86e075a84d0ebe8621d3e39f52895f0b9ef406ee3d082ad"
+  },
+  "logs/runner-cache/d3_bar_window_checkpoints/lam_0p02_observables.jsonl": {
+   "bytes": 1731398,
+   "git_blob": "6a3588d9a99efd6e704a1bff0127815995aa1fb4",
+   "sha256": "9bf9282d477daf43635d29647ea0757fefb6105b755519c515539b3e28be3177"
+  },
+  "outputs/d3_bar_commission_cycle914_receipt_2026_07_28.json": {
+   "bytes": 114364,
+   "git_blob": "15214b5f0b6e66855b41103da508f7a7bf09029f",
+   "sha256": "2dddb1e145fb5854f1f303f8d417c4d8e62e84a64c1f8f3451bcf65ec2550e86"
+  },
+  "scripts/frontier_cycle914_d3_bar_commission_2026_07_28.py": {
+   "bytes": 61413,
+   "git_blob": "3d4c38794466d85047831efd099a9de313b5f343",
+   "sha256": "0cfab8fde089be2252f47a710d5822bc5a3458f6e15b37784855716979eb9dd4"
+  }
+ },
+ "protocol": {
+  "H": "-sum_<ij> Z_i Z_j - lambda sum_i X_i",
+  "J": 1,
+  "N": 27,
+  "T_C_frozen": [
+   0.0,
+   0.1,
+   0.2,
+   0.3,
+   0.4,
+   0.5,
+   0.6,
+   0.7,
+   0.8,
+   0.9,
+   1.0,
+   1.1,
+   1.2,
+   1.5,
+   2.0,
+   5.0,
+   10.0
+  ],
+  "deadline_jt": 1.0,
+  "delta_memo_lambdas": [
+   0.02,
+   0.05,
+   0.1,
+   0.2
+  ],
+  "delta_protocol_hash": "9373dd8a9c8275b2b86e075a84d0ebe8621d3e39f52895f0b9ef406ee3d082ad",
+  "deltas": [
+   0.05,
+   0.1,
+   0.2
+  ],
+  "fragment_descriptor_checksum": "02f954b71af4a834af11e66818989c14699a03ff4e52a4c07b3a7e5edf7588b5",
+  "geometry": "open-3x3x3",
+  "headline_delta": 0.1,
+  "pair_class_equivalence": "orbit equivalence under the partition-preserving proper rotations only (4 of 24); the declared partition is NOT closed under the full proper cubic group and no such closure is claimed",
+  "parent_protocol_hash": "c3e0b9162170f5e87e486f9d34068114d1d56b2f80db5c57df7ff7536820a93e",
+  "partition_preserving_proper_rotations": 4,
+  "theta_convention_import": {
+   "interpretation_status": "outside this finite-sample result",
+   "role": "disclosure only; no threshold test is performed against it",
+   "type": "unverified_imported_comparator_convention",
+   "value": 0.2
+  }
+ },
+ "protocol_input_roles": {
+  "content_excess_independence_gates": "imported declared scope inputs: the 0.05 content, 0.02 excess and 0.02 conditional-independence cuts",
+  "deadline_jt": "imported declared scope input: the Jt <= 1 certification deadline",
+  "deltas": "imported declared scope input (frozen parent memo): the three tolerance cuts 0.05/0.10/0.20; not derived or fitted here",
+  "drift_max": "imported declared scope input: the 0.10 pointer-drift cut",
+  "field_factor_max": "imported declared scope input: the 1.5 cross-field factor cut",
+  "headline_delta": "imported declared scope input: which tolerance the memo designates as headline",
+  "lambda_and_time_grids": "imported declared scope inputs (frozen delta memo commissions the four lambdas; the frozen parent memo fixes the certification subgrid); the executed subset is disclosed in DEVIATIONS",
+  "persistence_count": "imported declared scope input: three consecutive sampled certifications",
+  "t0_anchor_tol_mach_tol_cheby_tail_max": "declared HERE as numerical tolerances of this run's own machinery gates; not physics",
+  "theta_floor": "IMPORTED COMPARATOR CONVENTION, UNVERIFIED.  The 0.20 value is supplied to the frozen d = 3 protocol rather than derived here. It is reported for disclosure only. This runner performs NO threshold test against it and emits NO categorical inside/outside label; any interpretation of that convention is outside this finite-sample result."
+ },
+ "restriction_gates_vs_landed_cycle914": {
+  "W_sampled_914": [
+   0.05,
+   0.1
+  ],
+  "W_sampled_value_for_value": true,
+  "boundary_bracket_value_for_value": true,
+  "check02_ordering_holds": true,
+  "check02_panel_recomputed": {
+   "0.05/center": {
+    "X": 5.750856553853949e-05,
+    "Y": 5.752054524193755e-05,
+    "Z": 1.1738886784068887e-06
+   },
+   "0.05/corner": {
+    "X": 4.0664696668612267e-05,
+    "Y": 4.068163676377264e-05,
+    "Z": 1.1738886784068887e-06
+   },
+   "0.05/edge": {
+    "X": 4.695554713627554e-05,
+    "Y": 4.697021845272052e-05,
+    "Z": 1.1738886784068887e-06
+   },
+   "0.05/face": {
+    "X": 5.2497897658703855e-05,
+    "Y": 5.251102049296924e-05,
+    "Z": 1.1738886784068887e-06
+   },
+   "0.1/center": {
+    "X": 5.740117316557602e-05,
+    "Y": 5.7448987562176285e-05,
+    "Z": 2.343393081546658e-06
+   },
+   "0.1/corner": {
+    "X": 4.058875879344209e-05,
+    "Y": 4.065635044524856e-05,
+    "Z": 2.343393081546658e-06
+   },
+   "0.1/edge": {
+    "X": 4.6867861630933164e-05,
+    "Y": 4.692640988815294e-05,
+    "Z": 2.343393081546658e-06
+   },
+   "0.1/face": {
+    "X": 5.239986228341036e-05,
+    "Y": 5.2452235971929854e-05,
+    "Z": 2.343393081546658e-06
+   },
+   "0.2/center": {
+    "X": 5.697754248160847e-05,
+    "Y": 5.716715213207484e-05,
+    "Z": 4.6521968625897585e-06
+   },
+   "0.2/corner": {
+    "X": 4.0289206664089935e-05,
+    "Y": 4.055691197897146e-05,
+    "Z": 4.6521968625897585e-06
+   },
+   "0.2/edge": {
+    "X": 4.652196862589758e-05,
+    "Y": 4.67539998339959e-05,
+    "Z": 4.6521968625897585e-06
+   },
+   "0.2/face": {
+    "X": 5.2013142147309736e-05,
+    "Y": 5.222078026690657e-05,
+    "Z": 4.6521968625897585e-06
+   }
+  },
+  "check02_panel_spot_verified": true,
+  "event_jt_observed": {
+   "0.05": 0.6,
+   "0.1": 0.7,
+   "0.2": null
+  },
+  "event_jt_value_for_value": true,
+  "labels_value_for_value": true,
+  "lam020_C55_above_gate": true,
+  "lam020_C55_observed": 0.060394807359658895,
+  "lam020_C55_value_for_value": true,
+  "median_value_for_value": true,
+  "ok": true,
+  "theta_star_value_for_value": true,
+  "verdicts_value_for_value": true
+ },
+ "runner": "scripts/frontier_cycle915_comparator_recovery_2026_07_28.py",
+ "schema": "frontier-cycle915-comparator-recovery-v1",
+ "verdict": {
+  "late_time_sampled_labels": {
+   "0.05": "NOT-CERTIFIED-AT-ANY-TESTED-SAMPLE",
+   "0.1": "NOT-CERTIFIED-AT-ANY-TESTED-SAMPLE"
+  },
+  "low_field_outcome": "SAMPLED-WINDOW-INCLUDES-0.02",
+  "low_field_sampled_result": "LOW-FIELD-CERTIFIED",
+  "note": "outcome-neutral wiring: the low-field run lands certified-or-not and the late-time rows land certified-or-not AT THE TESTED SAMPLES; neither is a machinery condition and neither states anything about untested samples"
+ }
+}

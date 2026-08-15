@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_l1_f0_four_site_miss_set_2026_08_15.py
+runner_sha256: bc64ec09e8dd4f46a9353ddd5d5ff726aaf96876324657cb5ae0b5dad0e6dbd0
+input_fingerprint_sha256: d658a6ee04ad41ec666cacf7c72408c4658019370c7974b0779d43ddd87a5e4a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_L1_F0_FOUR_SITE_MISS_SET_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+external_scientific_inputs: current Lattice, Admissibility, and Record boundaries; no observations or fits
+integrity_reads: this runner, its note, and the axiom memo; no other scientific inputs
+construction: exhaustive four-site lock-step census under f_L1 and f0; set cardinals only
+negative_scope: |M_f0|, |M_L1 ∩ M_f0|, and the equality bit are displayed; no seed is listed and no map is adopted
+cache_write: false
+PASS: audit-inputs the two declared source-bound inputs exist as static literals
+PASS: source-lattice current cubic nearest-neighbor wording is pinned
+PASS: source-admissibility current local-distribution wording is pinned
+PASS: source-record-boundary current lock/content/unreadable-at-absence wording is pinned
+PASS: source-formation-boundary formation site/probability/rate remains outside Admissibility
+PASS: two-cube-cardinality the two-cube is exactly the twelve sites {0,1,2} x {0,1} x {0,1}
+PASS: four-seed-count there are C(12,4)=495 unordered four-site seeds
+census: |M_L1|=6 |M_f0|=36 |intersection|=4 equality_bit=0 cov4(L1)=489 cov4(f0)=459 cov4(f1)=495
+PASS: theorem-1-reconfirm-m-l1 |M_L1|=6 and cov4(L1)=489 among the 495 four-site seeds
+PASS: theorem-1-abs-m-f0 |M_f0|=36 and cov4(f0)=459 among the 495 four-site seeds
+PASS: theorem-1-f1-fills-all f1 fills every four-site seed, so the f0 misses are exactly mixed3-required seeds
+PASS: theorem-2-intersection |M_L1 ∩ M_f0|=4
+PASS: theorem-2-sets-unequal M_L1 is not equal to M_f0
+PASS: identity-l1-not-hamming opp2 has Hamming weight 2 but n_unbalanced=0, so f_L1 does not fire
+PASS: identity-f0-not-hamming mixed3 has Hamming weight 3, so Hamming fires it and f0 refuses it
+PASS: l1-remaining-tuple n!=0 is exactly the remaining tuple (1,0,1,1,1)
+PASS: theorem-3-equality-bit the note displays equality bit 0 and does not adopt a map
+PASS: theorem-3-no-seed-list the note and this runner do not list four-site seeds
+PASS: not-n-orb-not-leftover the claimed object is the miss-set comparison, not N_orb and not a leftover table
+PASS: forbidden-phrases the note and runner avoid the dispatch-forbidden phrases
+PASS: claim-scope the YAML claim_scope states the miss-set inequality
+PASS: off-patch-zero off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

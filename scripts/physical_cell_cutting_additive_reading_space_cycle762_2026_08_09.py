@@ -179,6 +179,8 @@ for (v0, Ci, rows) in BARY:
                     idx += 1
     MASK.append(bits)
 
+MASK_POPS = [popc(m) for m in MASK]
+MINMASK = min(MASK_POPS)
 UNIV = (1 << NPTS) - 1
 
 # ------------------------------------------------------------------
@@ -600,7 +602,7 @@ for a in range(NCOV):
     for b in range(NCOV):
         C11ALL.add(len(COVSET[a] & COVSET[b]))
 C11ALL = sorted(C11ALL)
-C11_OK = (len(C11) > 1 and C11 == C11ALL)
+C11_OK = (C11 == [0, 1, 2, 4, 8] and C11 == C11ALL)
 
 C12A = rank_fwd([list(v) for v in KERA], NPI)
 C12B = rank_fwd([list(v) for v in KERB], NPI)
@@ -611,7 +613,7 @@ B2RS = sorted(set(sum(r) for r in B2ROW))
 B2CS = sorted(set(sum(B2ROW[k][i] for k in range(NCOV)) for i in range(NPI)))
 RB2 = rank_fwd([list(map(FR, r)) for r in B2ROW], NPI)
 J13 = rank_fwd([list(map(FR, r)) for r in B2ROW] + S105, NPI)
-C13_OK = (RB2 == RB and B2RS == BRS and B2CS == BCS and J13 > D105)
+C13_OK = (RB2 == RB and B2RS == BRS and B2CS == BCS and J13 == 191)
 
 # corner sharing: how many pieces of one cutting hold a given corner
 NCORN = len(CORN)
@@ -648,18 +650,20 @@ RSSMB = RSS / 1048576.0 if RSS > 10000000 else RSS / 1024.0
 # ------------------------------------------------------------------
 
 gate(NCAND == 2672 and FLOOR == 6 and NKEPT == 400 and GENERIC and NPTS == 625
-     and DIV == 80 and NS == 15800 and SIZES == [24] and NPI == 192
+     and MINMASK == 5 and DIV == 80 and NS == 15800 and SIZES == [24] and NPI == 192
      and sorted(set(PCN)) == [1975] and NCOV == 192 and BRS == [8] and BCS == [8],
      "OBJECT",
-     "{0} determinant-one pieces; {1} at cost {2}; {3} size-{4} cuttings on {5} divisor-{9} points; {6} used; {8} covers".format(
-         NCAND, NKEPT, FLOOR, NS, SIZES[0], NPTS, NPI, PCN[0], NCOV, DIV))
+     "{0} determinant-one pieces; {1} at cost {2}; {3} size-{4} cuttings; "
+     "{5} divisor-{9} points; min piece population {10}; {6} used; {8} covers".format(
+         NCAND, NKEPT, FLOOR, NS, SIZES[0], NPTS, NPI, PCN[0], NCOV, DIV, MINMASK))
 
-gate(DISJ_OK and NPAIR == NFAC + NDIM and COVEXACT and ACS == [1975],
+gate(DISJ_OK and NPAIR == 15168 and NFAC == 13632 and NDIM == 1536
+     and NPAIR == NFAC + NDIM and COVEXACT and ACS == [1975],
      "TILING",
      "each cutting tiles: {0} volume-1/24 pieces; all {1} co-occurring pairs interior-disjoint; {2} by facet".format(
          SIZES[0], NPAIR, NFAC))
 
-gate(OMAX > 1 and SLOTS == 120 and NCORN == 16 and SLOTS > NCORN,
+gate(OMIN == 4 and OMAX == 24 and SLOTS == 120 and NCORN == 16 and SLOTS > NCORN,
      "CORNER-INCIDENCE",
      "each cutting uses {0} corner incidences on {1} corners; multiplicities range {2} to {3}".format(
          SLOTS, NCORN, OMIN, OMAX))

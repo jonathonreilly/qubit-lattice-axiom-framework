@@ -1,12 +1,12 @@
 ===== runner cache v1 =====
 runner: scripts/physical_cell_cutting_additive_reading_space_cycle762_2026_08_09.py
-runner_sha256: c19c14ea6018c57e9c03e3e1306596ca9e77ac065099d0f558b7b84cec28353a
+runner_sha256: 539a08c144c8c6e8752953892553ea305f07c7ec106aaa26d2914811c95949dd
 timeout_sec: 400
 exit_code: 0
-elapsed_sec: 50.01
+elapsed_sec: 26.85
 status: ok
 ----- stdout -----
-PASS OBJECT  2672 determinant-one pieces; 400 at cost 6; 15800 size-24 cuttings on 625 divisor-80 points; 192 used; 192 covers
+PASS OBJECT  2672 determinant-one pieces; 400 at cost 6; 15800 size-24 cuttings; 625 divisor-80 points; min piece population 5; 192 used; 192 covers
 PASS TILING  each cutting tiles: 24 volume-1/24 pieces; all 15168 co-occurring pairs interior-disjoint; 13632 by facet
 PASS CORNER-INCIDENCE  each cutting uses 120 corner incidences on 16 corners; multiplicities range 4 to 24
 PASS GRAM-RANK  two 192-square product builds agree; its kernel annihilates all cutting rows; 400-row and 800-row ranks are 88
@@ -23,7 +23,7 @@ PASS SHIFT-CONTROL  cyclic shift keeps rank 105 and marginal sums 8; joint rank 
 PASS DIMENSION-CHECK  105=192-88+1; 88=192-105+1; 88+105=192+1
 PASS SOURCE-HYGIENE  no per-cent character or long dash; every source character is plain ASCII
 PASS RESOURCE-BOUND  elapsed under 300 seconds and peak resident memory under 1500 MB
-stdout characters: 1888
+stdout characters: 1910
 TOTAL: PASS=17 FAIL=0
 
 ----- stderr -----

@@ -14,7 +14,7 @@ target_blocker_text: null
 source_of_blocker_text: frontier_question
 reachability_to_target: unknown_frontier
 artifact_role: theorem
-next_trace_action: "independently audit the exact finite-cell row-space theorem; any physical use must separately construct a cutting-independent map from pieces to pairwise-disjoint Record content"
+next_trace_action: "independently audit the exact finite-cell row-space theorem; any physical use must separately supply both a cutting-independent piece-to-Record-content map and a scalar finitely additive readout"
 ```
 
 ## Status fields
@@ -24,10 +24,10 @@ actual_current_surface_status: bounded-support
 target_claim_type: bounded_theorem
 trace_class: frontier_discovery
 reachability_to_target: unknown_frontier
-conditional_surface_status: "open: physical Record interpretation awaits a supplied piece-to-Record-content map"
+conditional_surface_status: "open: physical interpretation awaits both a supplied piece-to-Record-content map and a scalar finitely additive readout"
 hypothetical_axiom_status: null
 admitted_observation_status: null
-claim_type_reason: "the runner certifies exact equalities for one stipulated finite cell, while the physical Record bridge and any multi-cell extension remain open"
+claim_type_reason: "the runner certifies exact equalities for one stipulated finite cell, while the Record-content map, scalar finite-additivity premise, and any multi-cell extension remain open"
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
@@ -42,22 +42,83 @@ bare_retained_allowed: false
 - The preceding cycle's projector identity is provenance context rather than a
   proof input: this runner rebuilds the object and rechecks both row-space
   equalities directly.
-- The Record/additivity wording in
-  `docs/MINIMAL_AXIOMS_2026-06-29.md` is non-load-bearing physical context. Its
-  use requires the open bridge stated below.
+- The current [Record / Fixed Reality](MINIMAL_AXIOMS_2026-06-29.md) wording is
+  non-load-bearing context for the finite theorem. It supplies neither a
+  scalar readout functional nor finite additivity. Those structures and the
+  piece-to-Record-content map are separate open premises for any physical use.
 - The runner reads its own source for an integrity check. That package-local
   read is not an external scientific input.
 
-## Review record (review loop iteration 1, 2026-08-09)
+## Review record (review loop repair iteration 1, 2026-08-15)
 
 Review preserved the exact finite-cell theorem and narrowed the physical
-interpretation. Interior-disjoint pieces were not shown to be pairwise-disjoint
-Records, so the required piece-to-Record-content map is now stated explicitly as
-open. The measured corner-incidence counts remain; conclusions about untested
-allocation constructions were removed. The runner was made fail-closed, given an
-explicit timeout, and its ambiguous letter-number gate labels were replaced by
-domain-explicit names. No hard landing condition remains beyond the checks named
-in this note.
+interpretation. The piece-to-Record-content map and the scalar finitely additive
+readout are both stated explicitly as open. The runner now binds sample visibility,
+the exact tiling census, the exact corner range, and both exact control values.
+The obligation graph below records every finite proof leaf. The canonical index
+and dependency manifest are part of this repair; no audit status is changed.
+
+## Exact target and obligation graph
+
+Let `A` be the `15800 x 192` cutting-by-piece incidence matrix and `B` the
+`192 x 192` cover-by-piece incidence matrix constructed by the runner. The
+assignment field is `Q`, and the domain is `Q^192`. Define
+
+- `E_A = {x in Q^192 : A x is constant across all cuttings}`;
+- `E_B = {x in Q^192 : B x is constant across all covers}`.
+
+The exact finite target is the conjunction of these four numbered claims:
+
+1. `E_A = row(B)`, and both spaces have dimension 105.
+2. `E_B = row(A)`, and both spaces have dimension 88.
+3. `row(A) + row(B) = Q^192`, while
+   `row(A) intersection row(B) = span{1}`.
+4. The common `A`-reading on `E_A` is `sum(x)/8`, and the common `B`-reading
+   on `E_B` is `sum(x)/24`.
+
+The acyclic obligation graph is as follows. Every finite leaf is proved here;
+none is imported from the preceding cycle.
+
+- `P0` [proved here by explicit construction]: fix the labelled cube,
+  assignment field, simplex and cost rules, cutting and cover rules, and the
+  orientations of `A` and `B`.
+- `P1` [proved here; depends on `P0`]: enumerate the determinant-one pieces,
+  their volume, the cost floor, and the 400 kept pieces (`OBJECT`).
+- `P2` [proved here; depends on `P1`]: certify facet avoidance and nonempty
+  visibility of every kept piece, exhaust the sample exact-cover search, and
+  bind the cutting, used-piece, and multiplicity censuses (`OBJECT`).
+- `P3` [proved here; depends on `P1`, `P2`]: certify all 15168 co-occurring
+  pairs, including the 1536 boundary-intersection cases, and conclude that each
+  24-piece cutting tiles the cube (`TILING`).
+- `P4` [proved here; depends on `P2`]: exhaust the size-eight noncooccurrence
+  cliques and verify that every one meets every cutting exactly once (`TILING`).
+- `P5` [proved here; depends on `P2`, `P4`]: validate the Gram substitution,
+  kernels, ranks 88 and 105, and nullities 104 and 87 (`GRAM-RANK`,
+  `TABLE-RANKS`).
+- `P6` [proved here; depends on `P5`]: adjoin the nonkernel constant direction
+  to each kernel and obtain the equal-reading dimensions (`CONSTANT-DIRECTION`,
+  `READING-DIMENSIONS`).
+- `P7` [proved here; depends on `P5`, `P6`]: verify both row-space containments
+  independently and close Claims 1 and 2 by exact joint ranks
+  (`CUTTING-READINGS`, `COVER-READINGS`).
+- `P8` [proved here; depends on `P5`, `P7`]: bind joint rank 192 and constant
+  column sums, then close Claim 3 by the dimension formula
+  (`SPAN-INTERSECTION`).
+- `P9` [proved here; depends on `P2`, `P4`, `P7`]: use both column-regularity
+  identities, with nonzero-sum witnesses, to close Claim 4 (`COMMON-TOTALS`).
+- `P10` [proved here; depends on `P2`, `P4`, `P5`]: bind the exact overlap set,
+  zero-target dimensions, shifted joint rank, corner range, source hygiene, and
+  resource envelope (the three control gates and the remaining runner gates).
+- `P11` [open; outside the finite target]: construct a physical Record-content
+  map and separately supply a scalar finitely additive readout.
+
+Degenerate determinant-zero simplices are outside the piece definition. Facet
+contacts are allowed and handled by exact relative-interior checks; empty sample
+masks are rejected by `OBJECT`. The zero assignment and the constant direction
+are included explicitly, and the exact positive cutting and cover counts exclude
+empty-family edge cases. After `P1` through `P10` close, the strongest missing
+lemma for the four finite claims is none. `P11` remains open and cannot be used to
+promote those finite claims to a physical reading theorem.
 
 ## What this is
 
@@ -103,22 +164,20 @@ What this cycle contributes is therefore not the algebra. It is the statement in
 reading language rather than in projector language; an independent rebuild of the
 whole cell from scratch over the rationals, which re-measures every input number
 instead of citing it; three discriminating controls showing which structural
-features carry the match; and the contact with the additivity clause of the
-fixed-reality axiom, together with a plain account of where that contact stays
-open.
+features carry the match; and a separation between current Record wording and
+the additional map and scalar-additivity premises needed for a physical use.
 
 ## The object
 
 The runner builds the cell from scratch. Of the five-corner sub-simplices of the
 four-cube, 2672 have determinant of absolute value 1; the adjacency cost floor
 among them is 6, attained by 400 of them. Cuttings are found as exact covers of 625
-sample points of divisor 80, chosen so that no sample point lies on a facet plane
-of any kept piece; `OBJECT` checks that genericity condition directly rather than
-assuming it. Genericity is what makes the sample search complete: with no sample
-point on a facet plane, a genuine tiling of the cell covers each sample point
-exactly once, so no tiling escapes the search over exact covers, and the search
-over exact covers is itself complete. `TILING` then certifies the other direction,
-that what the search returns really is a tiling. The search returns 15800 cuttings,
+sample points of divisor 80. `OBJECT` checks both that no sample point lies on a
+facet plane of any kept piece and that every kept piece contains at least five
+sample points. Thus every piece of a genuine tiling is visible, while facet
+avoidance makes its masks pairwise disjoint; the tiling therefore occurs in the
+exhaustive exact-cover search. `TILING` then certifies the other direction, that
+what the search returns really is a tiling. The search returns 15800 cuttings,
 each of 24 pieces. Exactly 192 of the 400 floor pieces occur in a cutting at all,
 and each of those 192 lies in 1975 cuttings. There are 192 covers, and the cover
 table has every row sum and every column sum equal to 8.
@@ -196,31 +255,36 @@ piece 8 times, giving 8 times the sum; summing the constant over 192 covers give
 
 ## The axiom contact
 
-The fixed-reality axiom in `docs/MINIMAL_AXIOMS_2026-06-29.md`
-says, verbatim:
+The current [Record / Fixed Reality](MINIMAL_AXIOMS_2026-06-29.md) text says:
 
 > Only records are readable. A readout value is determined by record content
-> alone. For any finite collection of pairwise-disjoint records, scalar readout
-> `I` is additive, with `I(empty)=0`.
+> alone. A site with no record cannot be read.
 
-That clause supplies arithmetic only after its Record-level hypotheses are met.
+This supplies content determination and unreadability in the absence of a
+Record. It does not supply a scalar readout functional, finite additivity, or an
+empty-set normalization. The word "reading" in Claims 1 through 4 denotes only
+the stipulated finite sums that define `A x` and `B x`.
+
 `TILING` certifies that each cutting's 24 geometric simplices have pairwise-disjoint
 interiors and fill the cell, but geometric interior-disjointness is not itself
-pairwise disjointness of Records. A physical use therefore needs a
-cutting-independent map from every piece to Record content such that the 24 images
-in every cutting are pairwise-disjoint finite Record collections and have the same
-whole-cell union. No such map is supplied here. If a future construction supplies
-one, additivity makes every cutting return the same total, which is exactly the
-condition characterized by the cover-table row space.
+pairwise disjointness of Records. A physical use therefore needs two separately
+supplied structures: a cutting-independent map from every piece to Record content
+whose 24 images in every cutting are pairwise-disjoint finite Record collections
+with the same whole-cell union, and a scalar functional on those contents that is
+finitely additive on those collections. Neither is supplied here. The finite
+theorem never evaluates an empty collection, so it neither needs nor imports an
+empty-set normalization; any extension that does use one must supply it separately.
+Only conditional on both open structures would the equal-cutting condition acquire
+the proposed physical reading.
 
 `CORNER-INCIDENCE` records that the 24 pieces of each cutting use 120
 simplex-corner incidences on 16 corners, with multiplicities from 4 through 24.
 This is a finite incidence statement. Raw simplex-corner incidence has overlaps;
 the gate neither tests nor classifies alternative ownership or allocation maps.
 
-The piece-to-Record-content map is a named open bridge, not a result of this
-cycle. The four finite claims stand on their own as exact statements about the
-constructed cell and do not depend on that bridge.
+The piece-to-Record-content map and scalar finite additivity are named open
+premises, not results of this cycle. The four finite claims stand on their own as
+exact statements about the constructed cell and do not depend on either premise.
 
 ## Controls
 
@@ -250,12 +314,12 @@ output. All ranks, kernels and joint ranks are computed exactly over the rationa
 
 ## Boundary
 
-- The piece-to-Record-content map is open. Claims 1 through 4 are computational
-  identities about this cell and are independent of that bridge; the axiom contact
-  is conditional on it.
+- The piece-to-Record-content map and the scalar finitely additive readout are
+  both open. Claims 1 through 4 are computational identities about this cell and
+  are independent of both premises; physical contact is conditional on both.
 - Raw simplex-corner incidence uses 120 slots on 16 corners, with multiplicities
   from 4 through 24. A Record-level application needs a separate ownership or
-  allocation map satisfying the axiom's disjointness premise; none is tested here.
+  allocation map and a scalar-additivity supplier; neither is tested here.
 - The ranks 88 and 105 are measured by the complete search over this one cell. A
   structural derivation predicting those ranks from four-cube geometry remains an
   open question.

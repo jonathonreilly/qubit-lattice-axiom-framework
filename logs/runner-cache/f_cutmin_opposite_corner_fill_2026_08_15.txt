@@ -1,0 +1,57 @@
+===== runner cache v1 =====
+runner: scripts/f_cutmin_opposite_corner_fill_2026_08_15.py
+runner_sha256: e60a516402fe463e5fa49268beef541d42b1dee92681e4cf2c8a257e1bd83992
+input_fingerprint_sha256: 78d99219a87d8aa2ee400c8bca368b26a1d8b4405f1ba6ee32b0c1989f7b6aa7
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUTMIN_OPPOSITE_CORNER_FILL_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+n_rotations=24
+n_orbits=10
+N_free=5
+|F_cut|=32
+f_cutmin_bits=(1, 0, 1, 0, 0) supp=36
+f_cutmin_locks=10 halt=2 history=(2, 8, 10) fills=False
+f_cutmin_stuck=[(0, 1, 1), (2, 0, 0)]
+f_L1_bits=(1, 0, 1, 1, 1) supp=56 locks=12 history=(2, 8, 12) fills=True
+f_min_bits=(1, 0, 1, 1, 0) in_F_cut=False locks=10 history=(2, 8, 10) fills=False
+f_min_stuck=[(1, 0, 1), (1, 1, 0)]
+f_hamming_bits=(1, 0, 0, 1, 1) locks=10 history=(2, 8, 10)
+PASS: audit-input-paths — AUDIT_INPUT_PATHS is the required note-plus-axiom string-literal tuple
+PASS: thm1-twenty-four-rotations — exactly 24 proper cube rotations
+PASS: thm1-ten-orbits — exactly 10 orbits partition the 64 cells of {0,1}^6
+PASS: thm1-f-cut-cardinality — F_cut has five free bits and size 32
+PASS: thm1-two-cube-and-seed — the two-cube has twelve vertices and contains the opposite-corner seed
+PASS: thm1-f-L1-is-unbalanced-axis — f_L1 is 1 iff some axis has c_+ != c_- (n != 0)
+PASS: thm1-f-L1-not-hamming — f_L1 is not Hamming |c|_1 mod 2
+PASS: thm1-f-L1-fills-from-S-star — f_L1 fills from S* with lock history (2, 8, 12)
+PASS: thm1-f-min-does-not-fill — f_min does not fill from S*
+PASS: thm2-unique-support-36 — f_cutmin is the unique support-36 F_cut 1-site filler tuple (1,0,1,0,0)
+PASS: thm2-f-cutmin-does-not-fill — f_cutmin does not fill: |locks_halt|=10, T=2, history (2, 8, 10)
+PASS: thm3-displayed-not-adopted — the comparison is displayed; f_cutmin is not adopted
+PASS: thm3-histories-compared — f_cutmin, f_L1, and f_min first waves coincide and then split
+PASS: lattice-and-admissibility-parents — the live axiom memo supplies Z^3, proper cubic rotations, and a covariant nearest-neighbor rule
+PASS: forbidden-phrases-absent — the note and runner omit the dispatch-forbidden phrases
+PASS: l1-definition-in-note — the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: f-cutmin-definition-in-note — the note names f_cutmin as the remaining-bit tuple (1, 0, 1, 0, 0)
+PASS: claim-type-and-gate — bounded theorem type and a passing N1-N8 gate are source-visible
+PASS: claim-scope-and-history — claim_scope reports that the support-36 F_cut 1-site filler does not fill
+PASS: not-leftover-6421-or-6417 — the residual is this map on S*, not leftover-character of #6421 or #6417
+PASS: off-patch-zero — off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: no-cache-write — this run did not emit a runner cache file
+PASS: no-axiom-edit — the theorem proposes no axiom change
+per_element: checked exactly — each of the 64 neighbor 6-tuples is assigned its axis-type orbit
+per_site: checked exactly — each of the 12 two-cube vertices is a lock site under o=0
+per_mode: checked exactly — f_cutmin, f_L1, and f_min are run from the opposite-corner seed
+per_block: checked exactly — f_cutmin is run to a fixed point from S*; it does not fill
+lattice_wide: checked and not executed — no Z^3-wide formation law or Admissibility rewrite is claimed
+TOTAL: PASS=23 FAIL=0
+
+----- stderr -----
+

@@ -6,7 +6,7 @@ Authority: none
 
 Audit: unset.
 
-Status: derived reduction, complete census of the covariant band, and the residual named part by part
+Status: proposed_retained
 
 Claim type: bounded_theorem
 

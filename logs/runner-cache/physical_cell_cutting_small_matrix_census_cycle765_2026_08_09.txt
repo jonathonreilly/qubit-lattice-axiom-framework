@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/physical_cell_cutting_small_matrix_census_cycle765_2026_08_09.py
-runner_sha256: cb0b657c0417768da59207fb37ca31849c9443cf4121d875261484e997a4c562
-timeout_sec: 400
+runner_sha256: 4ed9ab96dde425f045ec1252b338b67950169a593662ed3514db8301905571b7
+timeout_sec: 900
 exit_code: 0
-elapsed_sec: 185.16
+elapsed_sec: 149.22
 status: ok
 ----- stdout -----
 all numbers below are exact computational identities; no floating point enters any gate
@@ -34,7 +34,7 @@ PASS C23 third candidate: corner-parity label agrees on 96 of 192 pieces, ordere
 PASS C24 the determinant tracks the product character: with corners kept in source order it matches on all 73728 element-piece pairs, 0 misses
 PASS C25 re-sorted reading: with each image piece in its own sorted order the match fails on 36864 of 73728 pairs, holding for 4 of 384 elements
 PASS C26 source hygiene: pure ASCII yes, no tab yes, no remainder character yes, no long dash yes, 38 barred strings absent yes
-PASS C27 budget: 169 seconds of wall time under 900, peak resident 165 MB under 2500, stdout characters counted below
+PASS C27 budget: 133 seconds of wall time under 900, peak resident 249 MB under 2500, stdout characters counted below
 PASS C28 part table rebuilt at 1000003 (764's own, so bookkeeping) and at 1000033 matches cycle 764 row for row; both clean by trial division
 PASS C29 small matrices: 20 of 20 parts pass all five conditions; 5 have no cover multiplicity and so no matrix
 PASS C30 96 cell orbit coefficients to twenty matrices: stacked width 96, rank 96 mod p, so the map is one-to-one and onto
@@ -48,7 +48,7 @@ PASS C37 cross-check at 1000033: matrices rebuilt from scratch, 200000 of 200000
 PASS C38 exact rational rank: 0/2/12/14 gives 24, 0/1/2/7 gives 144, the cover table's own 0/1/2/3 gives 105, each the census value
 C39 scope: census ranks are mod 1000003 and can only fall, so at-or-below counts are upper bounds and 511872 a lower bound; 3 extremes exact
 PASS C40 hygiene: 3 further barred strings absent, no doubled nine, the one bare word only inside a barred pair
-PASS C41 budget: 184 seconds of wall time under 900, peak resident 407 MB under 2500, stdout characters below
+PASS C41 budget: 149 seconds of wall time under 900, peak resident 580 MB under 2500, stdout characters below
 stdout characters: 5114
 TOTAL: PASS=41 FAIL=0
 

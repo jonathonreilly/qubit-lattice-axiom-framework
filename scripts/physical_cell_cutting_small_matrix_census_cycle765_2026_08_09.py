@@ -32,6 +32,8 @@ from fractions import Fraction as FR
 import numpy as np
 from numpy.random import default_rng
 
+AUDIT_TIMEOUT_SEC = 900
+
 PRIME = 1000003
 SEED = 3
 
@@ -2373,3 +2375,5 @@ gate(ELAPSED2 < 900 and RSSMB2 < 2500, "C41",
 
 emit("stdout characters: {0}".format(OUT[0]))
 emit("TOTAL: PASS={0} FAIL={1}".format(STAT[0], STAT[1]))
+if STAT[1]:
+    raise SystemExit(1)

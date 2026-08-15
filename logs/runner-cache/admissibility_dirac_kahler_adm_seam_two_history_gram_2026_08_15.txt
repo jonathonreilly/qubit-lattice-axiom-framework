@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_adm_seam_two_history_gram_2026_08_15.py
+runner_sha256: 91c675749bec324d52aafc16f5d3a97e966d916763920f60dd62c896eb256a74
+input_fingerprint_sha256: 0988bf30adb736a0d10fae07aab74c1ee8c8d4de4756afaa9196f948cc72c6d0
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 5.24
+status: ok
+----- stdout -----
+[PASS] A-current-authority-and-Block106-parent: current axioms, registries, ancestry, and the Block106 parent triple are content-bound
+       registry origin/main=b93959cca4f7e26c673cdccbe601e50c3cb93daa; worktree=f01d3be864f682584d50eede8b3abe6671bb4719
+[PASS] B-flat-torus-foundation: the normalized flat antiperiodic torus has the exact positive Gram and a periodic counte...
+       eight leading minors positive; periodic w^H K w=-713858800/1216449
+[PASS] C-flat-chain-calibration: both spatial eigenlines converge entrywise to the exact Block104 z=1/4 Gram
+       max half-24 exact error=1801439850948211/633825300114114700748351602690; bound=1/10^9
+[PASS] D-reflection-channel-theorem: offset time reflection sends the shear into the degree-changing channel with exact defec...
+       max |P conj(H_ov) P-H_ov|=65/576
+[PASS] E-derived-seam-data: theta_anchor has two fixed anchors whose reflection-antisymmetric shear is forced exactl...
+       fixed points=[-1, 3]; zero anchors=[-1, 3]
+[PASS] F-two-history-gram-walls: constant, raw-seam, two-seam, GH-step, and A02 histories have the exact ordered non-Herm...
+       all defects are computed from exact rational matrices
+GRAM_DEFECTS_EXACT: const=14956538493029334947329841745598883128206218860908000/126263516440889155637290868049543261980212777042759973 step=1968254788609376403972598115871411702171024000/61391349876435377016600254323619839508354485363 GH-step=600408841462666509271168734717902126086733375/61391349876435377016600254323619839508354485363 A02=4073726618187763151174731250983212188681424000/61391349876435377016600254323619839508354485363 raw-seam=1342438679572477804936967400/62286254865651184482779882357
+GRAM_DEFECTS_DISPLAY: const=0.11845495 step=0.032060784 GH-step=0.0097800235 A02=0.066356687
+[PASS] G-local-dressing-space-and-certificate: the diagonal class is empty on the seam while the local GL solve has an eight-dimensiona...
+       rank=24 nullity=8; pinned dressing: equation/invertible/PD all exact
+[PASS] H-positivity-structure: flat antiperiodic positivity is exact; the step claim stops at certified non-Hermiticity
+       no PSD or non-PSD assertion is made for the step-profile symmetrized Gram
+[PASS] I-scope: the bounded note preserves the N1--N8, W1/W2, N5, ADM, gravity, audit, and TOE walls
+       note scope is guarded against absence; no curved-OS or transporter completion is inferred
+AXIOM_AUTHORITY: origin/main=9714c638b6be7c730e35552a2497b71107b9d8cd axiom=bc23300becfe4e4db57153c0e94cfcdf2338da71 registry=b93959cca4f7e26c673cdccbe601e50c3cb93daa; Block106 parent=22d6d90ec2279e5868c9c825149b2a20beea3797
+per_element: exact calibration, reflection channel, seam constraint, Gram-defect, and local dressing-space identities are checked
+per_site: one Grassmann mode is retained per fine site on the antiperiodic reflection torus
+per_mode: both spatial eigenline signs are calibrated exactly against the Block 104 Gram
+per_block: the straddling anchors are exactly flat and the shear channel reflects into the degree-changing channel
+lattice_wide: checked and not executed — the transfer-derived seam transporter, curved OS positivity, the actual ADM/history transporter completion, joint gravity, the gravity constraint quotient, Records, audit retention, and TOE closure remain open
+RESULT: framework calibration and seam-channel identities are exact; the raw two-history pairing has a certified non-Hermiticity obstruction while the displayed eight-dimensional local dressing space contains an exact positive-definite repair candidate
+DECISION_CUT: advance the involution admissibility and transfer-derived selection of the displayed local dressing space; reject undressed and diagonal-class seam pairings
+TOE: zero obligation retirement, retained-positive end-to-end theory count remains zero, and no TOE percentage moves
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

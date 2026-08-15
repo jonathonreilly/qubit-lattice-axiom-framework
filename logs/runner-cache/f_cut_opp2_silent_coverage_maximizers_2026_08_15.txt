@@ -1,0 +1,66 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_opp2_silent_coverage_maximizers_2026_08_15.py
+runner_sha256: de14d5a4edf3f100bc73acd8c3bdf2f09ba4a2c24702b47dfe83dfeadfa5300a
+input_fingerprint_sha256: ece6eaf486eb9dfb351adf1bfc91e5b9cec43a2b6cc58cb708e0c21a0b567724
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_OPP2_SILENT_COVERAGE_MAXIMIZERS_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+n_rotations=24
+n_orbits=10
+orbit_types_and_sizes=(0, 0, 3):1,(0, 1, 2):3,(0, 2, 1):3,(0, 3, 0):1,(1, 0, 2):6,(1, 1, 1):12,(1, 2, 0):6,(2, 0, 1):12,(2, 1, 0):12,(3, 0, 0):8
+remaining_labels=('wt1', 'opp2', 'adj2', 'vertex3', 'mixed3')
+N_free=5
+|F_cut|=32
+|F0|=16
+n_two_site_seeds=66
+cov_f_L1=62
+m0=62
+N0=2
+maximizer_remaining=[(1, 0, 1, 1, 0), (1, 0, 1, 1, 1)]
+f_L1_bits=(0, 0, 0, 0, 1, 1, 1, 1, 1, 1)
+f_L1_remaining=(1, 0, 1, 1, 1)
+f_hamming_bits=(0, 0, 0, 0, 1, 1, 1, 0, 0, 1)
+f_hamming_remaining=(1, 0, 0, 1, 1)
+f_hamming_cov=16
+displayed_remaining=(1, 0, 1, 1, 0)
+displayed_cov=62
+other_remaining=(1, 0, 1, 1, 1)
+other_cov=62
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required note-plus-axiom string-literal tuple
+PASS: thm1-twenty-four-rotations exactly 24 proper cube rotations
+PASS: thm1-ten-orbits exactly 10 orbits partition the 64 cells of {0,1}^6
+PASS: thm1-orbit-sizes orbit sizes are the axis-type class sizes
+PASS: thm1-f-cut-cardinality F_cut has five free bits and size 32
+PASS: thm1-f-L1-is-unbalanced-axis f_L1 is 1 iff some axis has c_+ != c_-
+PASS: thm1-f-L1-not-hamming f_L1 is not Hamming |c|_1 mod 2
+PASS: thm1-two-cube-and-sixty-six-seeds the two-cube has twelve vertices and C(12,2)=66 two-site seeds
+PASS: thm1-reconfirm-f0-ranking reconfirm |F0|=16, m0=62, N0=2, and cov(f_L1)=62
+PASS: thm2-named-two-map-set the two F0 maximizers are remaining-bit tuples (1, 0, 1, 1, 0) and (1, 0, 1, 1, 1)
+PASS: thm2-10111-is-f-L1 remaining-bit tuple (1, 0, 1, 1, 1) is f_L1
+PASS: thm3-display-both-not-adopted both F0 maximizers are displayed and neither is adopted
+PASS: lattice-and-admissibility-parents the live axiom memo supplies Z^3, proper cubic rotations, and a covariant nearest-neighbor rule
+PASS: note-contract bounded theorem, displayed-not-adopted two-map F0 set, and machine status
+PASS: claim-type-and-gate N1-N8 and a passing no-go disposition are source-visible
+PASS: forbidden-phrases-absent the note and runner omit the dispatch-forbidden phrases
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: note-reports-two-map-set the note names both F0 maximizers by remaining-bit tuple
+PASS: no-axiom-edit the theorem proposes no axiom change
+PASS: off-patch-zero off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: not-leftover-f0-ranking the residual is the two-map F0 set, not leftover-character of the F0 ranking
+PASS: claim-scope-two-map-set claim_scope identifies the two F0 maximizers by remaining-bit tuples
+per_element: checked exactly — each of the 64 neighbor 6-tuples is assigned its axis-type orbit
+per_site: checked exactly — each of the twelve two-cube vertices uses the same six-direction stencil
+per_mode: checked exactly — every F0 map is scored, then the two maximizers are named by remaining-bit tuple
+per_block: checked exactly — the two-map F0 set is the named pair of remaining-bit tuples that attain m0
+lattice_wide: checked and not executed — no Z^3-wide formation law or physical Admissibility selector is claimed
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/f_min_line_seed_fill_2026_08_15.py
+runner_sha256: 712baf7fdd35b5b6ccd3c41e7f19e50ddd78d045c2f65d1d2e7c120c4968d20c
+input_fingerprint_sha256: 8e94bef2d6f352183801223eb59e0df871d03622394c86a63d24e5a13f5934b3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: current Lattice, Admissibility, and Record boundaries; no observations or fits
+integrity_reads: this runner, its note, and the live axiom memo; no other scientific inputs
+construction: displayed cube-covariant occupancy-to-lock maps on the twelve-vertex two-cube
+negative_scope: f_min is displayed, not adopted, and is not written into Admissibility
+PASS: audit-inputs declared source-bound inputs exist as static literals
+PASS: source-lattice current cubic nearest-neighbor wording is pinned
+PASS: source-admissibility current local-distribution wording is pinned
+PASS: source-formation-boundary formation site, probability, and rate remain outside Admissibility
+PASS: source-record-and-non-dynamics Record lock wording and the non-dynamics Admissibility boundary are pinned
+PASS: two-cube-cardinality the two-cube has exactly twelve vertices
+PASS: line-seed S is the three-site long-axis seed
+PASS: off-patch-zero every off-patch neighbor contributes occupancy 0
+PASS: axis-type-reps declared orbit representatives have the stated (n_unbalanced, n_both, n_empty) types
+PASS: f-min-rule f_min is 1 exactly on nonempty n_both=0 configurations
+PASS: f-l1-is-n-unbalanced f_L1 is the n≠0 (some-axis-unbalanced) map, not Hamming parity
+PASS: maps-distinct f_min and f_L1 disagree on mixed3, so they are distinct maps
+PASS: f-min-support f_min has support 26 on {0,1}^6
+PASS: theorem-1-l1-line-fill f_L1 fills from S with history (3, 9, 12)
+f_min_line_seed: T=2 locks_halt=12 history=(3, 9, 12) fills=True
+PASS: theorem-2-halt-locks f_min from S reaches a fixed point with reported halt locks
+PASS: theorem-2-history f_min lock history from S is (3, 9, 12) and T=2
+PASS: theorem-2-fills f_min does fill from the 3-site long-axis seed
+PASS: first-wave the first f_min wave from S is the six long-axis y/z neighbors
+PASS: no-mixed3-on-this-seed mixed3 never appears as an unlocking config from S, so the maps agree on the executed path
+PASS: mutation-one-site-seed the 1-site f_L1 history is (1, 4, 8, 11, 12), so this line-seed map is not that leftover
+PASS: theorem-3-comparison the note displays the f_min versus f_L1 comparison without adopting f_min
+PASS: note-contract machine fields, fill statement, and forbidden-phrase hygiene hold
+per_element: axis-type representatives and off-patch occupancy 0 are enumerated
+per_site: each two-cube vertex is tested against the displayed lock predicate
+per_mode: checked and not executed — no spectral claim occurs
+per_block: the twelve-vertex two-cube is executed from the long-axis seed
+lattice_wide: checked and not executed — f_min is not adopted as an admissibility rule
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

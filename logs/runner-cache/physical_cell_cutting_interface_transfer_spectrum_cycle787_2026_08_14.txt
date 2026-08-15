@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/physical_cell_cutting_interface_transfer_spectrum_cycle787_2026_08_14.py
+runner_sha256: 021ed984e906a0ec0607e0a6ac55802e36a87cedce223d033ef5a99cbe562b0d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 14.94
+status: ok
+----- stdout -----
+PASS G1 the cell has 2672 unit-determinant five-corner pieces, cost floor 6, 400 kept, 15800 cuttings of 24, 192 used, group order 384
+PASS G2 the facet alphabet has 16 letters, the same 16 on all 8 slots, with slot multiplicity census {862: 12, 1364: 4}
+PASS G3 axis equality T_0 = T_1 = T_2 = T_3 entry for entry, 4 axes over all 256 entries, 0 misses
+PASS G4 the transfer operator is symmetric, T[k][j] = T[j][k] on all 256 entries, 0 misses
+PASS G5 every row sum is that letter's multiplicity, census {862: 12, 1364: 4}, and 12 x 862 + 4 x 1364 = 15800
+PASS G6 entry census {18: 24, 36: 48, 50: 48, 52: 48, 90: 12, 92: 48, 100: 12, 104: 12, 200: 4}, least entry 18, strictly positive
+PASS G7 trace 2000 with all 16 diagonal entries even, so the trace is 2 x 1000
+PASS G8 the 48 letter maps of the facet holder form a group; letters follow the cuttings on 15800 cuttings x 48 maps x 2 sides, 0 misses
+PASS G9 commutation 0 misses; 12 pair orbits, sizes [4,12,12,12,12,12,24,24,24,24,48,48], entries [200,18,18,90,100,104,50,50,92,92,36,52]
+PASS G10 class block: light rows (578, 284), heavy rows (852, 512); block trace 1090, block determinant 53968
+PASS G11 the factored characteristic polynomial matches det(t I - T) at all 17 points t = 0 to 16, an identity in degree 16
+PASS G12 kernel dimensions 2, 2, 3, 1 at 50, 42, 10, -54 and 2, 6 at the two quadratics, summing to 16
+PASS G13 the minimal polynomial has degree 8 and annihilates T, and each of the 6 single-factor drops leaves a nonzero matrix
+PASS G14 1090^2 - 4 x 53968 = 972228 = 4 x 243057 = 4 x 3 x 81019, 81019 prime; 250^2 - 4 x 7728 = 31588 = 4 x 7897 = 4 x 53 x 149
+PASS G15 the vector (284, w - 33) with w x w = 243057 is exact for the class block at eigenvalue 545 + w; positive since 1089 < 243057
+PASS G16 493^2 = 243049 < 243057 < 244036 = 494^2 and 88^2 = 7744 < 7897 < 7921 = 89^2, so 125 + sqrt 7897 < 214 < 1038 < 545 + w < 1039
+PASS G17 heavy over-weighting 862^2 x 243057 = 180602045508 > 172907935684 = 415822^2 with 415822 = 284 x 1364 + 33 x 862
+PASS G18 closed strip counts for n = 1 to 6: 2000, 1233040, 1148284352, 1167237515200, 1206389522378240, 1251135002657559808
+PASS G19 the power-sum recurrence from the expanded characteristic polynomial reproduces all 6 strip counts, 0 misses
+PASS G20 invariant factors: eleven 2s, 210, 420, 19320, 96600, 17594917200 = 2^4 x 3^4 x 5^2 x 7 x 23 x 3373; det -5931574826283246551040000000
+PASS G21 all 256 entries even; the axis-zero flip fixes 0 cuttings, swaps sides; free pairings {0: 48, 1: 156, 2: 48, 4: 4} on 208 fibers
+PASS G22 the 48 fibers with no free pairing are exactly the entry-36 orbit, and 0 of them admit any of the 96 holding maps with even orbits
+resource: under 60 s, under 250 MB
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

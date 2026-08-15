@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_local_dual_patch_descent_2026_08_15.py
+runner_sha256: 6a16b60c262e04cf62d93a9f1a182beba15595d64e67d015f2f11acbef8bf226
+input_fingerprint_sha256: 160ba0594203b5169234e44008963f726778347ee1e2984ee0ee0601a1f4c84f
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 1.58
+status: ok
+----- stdout -----
+[PASS] A-current-authority-and-Block105-parent: current axioms, registries, ancestry, and the Block105 parent triple are content-bound
+       registry origin/main=b93959cca4f7e26c673cdccbe601e50c3cb93daa; worktree=f01d3be864f682584d50eede8b3abe6671bb4719
+[PASS] B-exact-staggered-differential-and-same-action: the exact real raising complex, Wick phase, Hermitian matter operator, and Block104 symb...
+       B1 nilpotence/grade/range, B2 Hermiticity, and B3 all four coarse momenta
+[PASS] C-exact-patch-isometry-and-local-dual: the all-anchor analysis has a rank-16 projector and a strictly patch-local exact dual
+       A entries are 0 or 1/2; each fine site occurs in exactly four patch rows
+[PASS] D-descended-complex-exact: the geometry-free descended complex is nilpotent, graded, intertwined, compressed, and r...
+       maximum wrap-L1 anchor-block distance=3
+[PASS] E-onsite-patch-geometry-is-overlap-Hodge: anchor-onsite patch geometry pulls back to the independently recomputed positive overlap...
+       all sixteen exact leading principal minors are positive
+[PASS] F-same-action-pullback: the curved overlap-Hodge action and the flat staggered action are exact pullbacks
+       symbolic positive mass; no fitted normalization
+[PASS] G-weighted-conjugate-corollary: blockwise Hodge conjugation preserves the exact dual, nilpotence, grade, and intertwiner
+       C=H_patch exactly; C=H_patch^(1/2) gives the literal E_g/L_g reading
+[PASS] H-signed-shift-lifts-and-shear-parity: signed lifts intertwine the staggered action and move temporal shear by the exact parity...
+       Ut^2=Tt^2 and Ux^2=Tx^2 are two-step plain coarse translations, NOT identity; unflipped rank=28
+[PASS] I-canonical-grade-boundary-and-scope: the rank-12 canonical-grade defect is closed by descended grade; co-transforming degree ...
+       canonical-grade defect rank=12; note scope guarded against absence
+AXIOM_AUTHORITY: origin/main=43ba5587944ffe0f43df10864c8348a99c17517b axiom=bc23300becfe4e4db57153c0e94cfcdf2338da71; Block105 parent=d06066c2b908aaca0779625d831dfb10620cf34d
+per_element: exact dual, descent, grading, pullback, lift, and shear-parity identities are checked symbolically in the mass
+per_site: every fine site lies in exactly four patches and keeps one physical Grassmann mode; no anchor copy is added
+per_mode: the blocked staggered symbol matches Block 104 momentum-by-momentum, including both zero and pi coarse lines
+per_block: d_ext has anchor-block range three, H_patch is exactly anchor-onsite, and the signed/plain lift mismatch is a displayed sign field
+lattice_wide: checked and not executed — the ADM/history transporter, reflection positivity/OS on the patch carrier, joint gravity, the gravity constraint quotient, Records, selection, audit retention, and TOE closure remain open
+RESULT: the all-anchor patch carrier admits an exact patch-local dual and nilpotent graded descent whose pullback is the overlap-Hodge action; the dense-inverse obstruction is bypassed
+DECISION_CUT: advance the descended patch complex to the ADM/history reflection-link test; reject dense-inverse descent routes
+TOE: zero obligation retirement, zero retained-positive end-to-end theories, and no percentage movement
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

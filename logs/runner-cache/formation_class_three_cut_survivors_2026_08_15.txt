@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/formation_class_three_cut_survivors_2026_08_15.py
+runner_sha256: 4408314d0f67e3182da08a6d0115b7006a0f841f90637660497a02679c431462
+input_fingerprint_sha256: 23510e246acea02cf8e2496949986b5a51a3701e3f1dbbd73c7d0a57e5750234
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+external_scientific_inputs: current Lattice/Admissibility/Record boundary only; no observation or fit
+integrity_reads: this runner, its note, and the current axiom memo; no other scientific inputs
+construction: 24 proper cube rotations on 64 six-ray cells; orbit partition under complement; free-bit count for three cuts
+negative_scope: the three displayed cuts do not uniquely select f_L1; another extra remains; no member is adopted
+PASS: audit-inputs declared inputs are the required two static string literals and exist
+PASS: source-lattice-admissibility Lattice rotations and Admissibility covariance are pinned
+PASS: source-record-boundary Record lock, content-only readout, unreadable absence, and formation residual are pinned
+PASS: rotation-group-order exactly 24 distinct proper cube rotations of the six rays
+PASS: rotation-group-laws the 24 maps are a group under composition
+PASS: cell-count the host has exactly 64 cells
+PASS: orbit-count N_orb equals 10 and the orbits partition the 64 cells
+PASS: orbit-covariance every rotation sends each cell into its own orbit
+PASS: complement-permutes-cells c maps to 1-c is an involution of the 64 cells
+PASS: complement-permutes-orbits complement sends orbits to orbits
+PASS: theorem-1-empty-full empty and full are distinct singleton orbits exchanged by complement
+PASS: theorem-1-partition the 10 orbits split as 1 empty + 1 full + 2 complement-fixed + 3 complement-pairs
+PASS: geometric-orbit-types geometric types recover the ten orbits and their sizes
+PASS: geometric-complement-pairs complement pairs are wt1/wt5, adj2/adj4, and opp2/opp4; vertex3 and mixed3 are fixed
+PASS: theorem-2-free-bits N_free is 5 and |F_cut| is 32
+PASS: raw-class-size the raw cube-covariant class has size 1024 and is not the three-cut residual
+PASS: theorem-3-l1-in-fcut f_L1 is cube-covariant, vanishes on empty and full, and is complement-even
+PASS: theorem-3-not-unique |F_cut| > 1 so f_L1 is not the unique survivor; another extra remains
+PASS: claim-scope claim_scope displays the 2^{N_free} subclass and does not adopt L1
+PASS: note-contract machine fields, three theorems, and forbidden-phrase hygiene hold
+PASS: script-hygiene the runner states that it does not adopt a member
+PASS: axiom-unedited the axiom memo still carries the four named premises and no three-cut class
+per_element: each of the 64 cells is classified by orbit and complement
+per_site: the six-ray star at one origin is the declared finite host
+per_mode: checked and not executed — no spectral claim occurs
+per_block: the ten-orbit partition and the 2^5 survivor count are executed
+lattice_wide: checked and not executed — no physical formation law or member adoption is claimed
+counts: N_orb=10 n_empty=1 n_full=1 n_fixed=2 n_pairs=3 N_free=5 |F_cut|=32
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

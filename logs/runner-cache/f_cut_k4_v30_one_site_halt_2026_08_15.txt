@@ -1,0 +1,58 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_k4_v30_one_site_halt_2026_08_15.py
+runner_sha256: e768a65f90a4f12647fb1281f5809e82c6b46cbeb3f90d801462645f85d34f25
+input_fingerprint_sha256: 6acbbb1b38228cec01fe5fa26d1aee62417298fc1330449ad3f841b21bc20f41
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_K4_V30_ONE_SITE_HALT_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+n_rotations=24
+n_orbits=10
+N_free=5
+|F_cut|=32
+n_long_axis_seeds=4
+f_bits=(1, 1, 1, 0, 0) supp=42 k=4 cov=36
+f_locks=12 halt=5 history=(1, 4, 8, 10, 11, 12)
+f_L1_bits=(1, 0, 1, 1, 1) locks=12 history=(1, 4, 8, 11, 12)
+histories_equal=False
+f_hamming_bits=(1, 0, 0, 1, 1) locks=9 history=(1, 4, 5, 7, 9)
+k4_members=[(1, 1, 1, 0, 0), (1, 1, 1, 1, 0), (1, 1, 1, 0, 1), (1, 1, 1, 1, 1)]
+maximizer_cov={(1, 1, 1, 1, 0): 66, (1, 1, 1, 1, 1): 66}
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required note-plus-axiom string-literal tuple
+PASS: thm1-twenty-four-rotations exactly 24 proper cube rotations
+PASS: thm1-ten-orbits exactly 10 orbits partition the 64 cells of {0,1}^6
+PASS: thm1-f-cut-cardinality F_cut has five free bits and size 32
+PASS: thm1-two-cube-twelve the two-cube has twelve vertices and contains the seed
+PASS: thm1-four-long-axis-seeds exactly four long-axis 2-site seeds of the form ((0,y,z),(2,y,z))
+PASS: thm1-f-fills-long-axis f=(1,1,1,0,0) fills all four long-axis 2-site seeds
+PASS: thm1-not-cov66-maximizer f is not a cov=66 maximizer: vertex3=0 and cov(f)=36
+PASS: thm2-f-from-origin-fills f fills from (0,0,0): |locks_halt|=12 with reported T and history
+PASS: thm2-f-L1-is-unbalanced-axis f_L1 is 1 iff some axis has c_+ != c_- (n != 0)
+PASS: thm2-f-L1-not-hamming f_L1 is not Hamming |c|_1 mod 2
+PASS: thm2-f-L1-history f_L1 fills with history (1,4,8,11,12)
+PASS: thm3-histories-unequal f lock history does not equal the L1 history on this seed
+PASS: thm3-displayed-not-adopted the named k=4 map and f_L1 are displayed, not adopted
+PASS: lattice-and-admissibility-parents the live axiom memo supplies Z^3, proper cubic rotations, and a covariant nearest-neighbor rule
+PASS: forbidden-phrases-absent the note and runner omit the dispatch-forbidden phrases
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: f-definition-in-note the note names f as the remaining-bit tuple (1, 1, 1, 0, 0)
+PASS: claim-type-and-gate bounded theorem type and a passing N1-N8 gate are source-visible
+PASS: claim-scope-and-history claim_scope reports the lock history and does not adopt f
+PASS: not-leftover-6443 the residual is the 1-site halt history, not leftover-character of #6443
+PASS: off-patch-zero off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: no-cache-write this run did not emit a runner cache file
+per_element: checked exactly — each of the 64 neighbor 6-tuples is assigned its axis-type orbit
+per_site: checked exactly — each of the 12 two-cube vertices is a lock site under o=0
+per_mode: checked exactly — the named F_cut map is run from the 1-site seed and the long-axis four
+per_block: checked exactly — named k=4 non-maximizer is run to a fixed point from the 1-site seed
+lattice_wide: checked and not executed — no Z^3-wide formation law or Admissibility rewrite is claimed
+TOTAL: PASS=23 FAIL=0
+
+----- stderr -----
+

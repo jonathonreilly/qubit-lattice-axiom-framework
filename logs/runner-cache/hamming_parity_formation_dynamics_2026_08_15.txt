@@ -1,0 +1,80 @@
+===== runner cache v1 =====
+runner: scripts/hamming_parity_formation_dynamics_2026_08_15.py
+runner_sha256: 5ad0fd336fb54c09dffc6c9e28823a522be997ae430e19a835b761776a42712f
+input_fingerprint_sha256: 947734dda8f3825ad12812d401d9e4f5c792b694bb962628b06e80cfd0e2affc
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+Hamming-parity formation dynamics on the two-cube
+AUDIT_INPUT_PATHS:
+  docs/HAMMING_PARITY_FORMATION_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+scope: supplied two-cube Hamming-parity patch; 1-site seed halt census
+PASS: audit-input-paths-exist
+PASS: audit-input-paths-unique-relative
+PASS: audit-timeout-declared
+PASS: lattice-quote-present
+PASS: record-form-quote-present
+PASS: hygiene-avoids-'G_N'
+PASS: hygiene-avoids-'1/r'
+PASS: hygiene-avoids-'1/r^2'
+PASS: hygiene-avoids-'Lattice-named'
+PASS: hygiene-avoids-'not a TOE'
+PASS: hygiene-avoids-'exhausted'
+PASS: hygiene-avoids-'only route'
+PASS: hygiene-avoids-'we adopt'
+PASS: hygiene-avoids-'Codex'
+PASS: hygiene-avoids-'L_phys'
+PASS: note-has-no-runner-cache-path
+PASS: note-has-no-citation-manifest
+PASS: note-does-not-call-hamming-f-L1
+PASS: note-does-not-identify-hamming-with-L1
+PASS: patch-has-twelve-sites
+PASS: seed-is-origin
+PASS: seed-on-patch
+PASS: off-patch-occupancy-is-zero
+PASS: identity-f-H-on-weight-1  (c=(0, 1, 0, 0, 0, 0))
+PASS: weight-1-tuple-is-odd
+PASS: identity-f-H-on-weight-2-even
+PASS: displayed-f-L1-on-weight-2-unbalanced
+PASS: f-H-is-not-f-L1
+PASS: identity-f-H-empty-zero
+PASS: identity-f-H-full-zero
+PASS: theorem-1-first-wave-three-axis-sites
+PASS: theorem-1-first-wave-weight-1-odd
+PASS: theorem-2-halt-within-twelve
+PASS: theorem-2-halt-is-fixed-point
+PASS: seed-permanent-in-halt
+PASS: locks-monotone
+PASS: halt-tick-is-last-growth
+PASS: theorem-3-halt-tick  (T=4)
+PASS: theorem-3-lock-count  (|locks|=9)
+PASS: theorem-3-patch-does-not-fill
+PASS: unlocked-sites-have-even-hamming
+PASS: displayed-L1-fills-horizon-4
+PASS: hamming-and-L1-same-first-wave
+PASS: hamming-and-L1-different-halt-locks
+PASS: note-reports-halt-tick-four
+PASS: note-reports-nine-locks
+PASS: note-reports-does-not-fill
+PASS: note-displays-L1-horizon-four
+PASS: note-displayed-not-adopted
+first_wave: [(0, 0, 1), (0, 1, 0), (1, 0, 0)]
+halt_tick: 4
+lock_count: 9
+fills_patch: False
+displayed_L1_halt: 4
+displayed_L1_locks: 12
+per_element: 12 vertices
+per_site: occupancy lock
+per_mode: f_H Hamming parity
+per_block: halt census
+lattice_wide: checked and not executed
+TOTAL: PASS=49 FAIL=0
+
+----- stderr -----
+

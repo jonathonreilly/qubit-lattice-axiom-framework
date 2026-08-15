@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_boundary_dressed_joint_stage_homogeneous_zero_mode_2026_08_14.py
+runner_sha256: bf3e2ec4208a6b27a79250df1c43fe3d94eb5697d769ab4cab065e20bb2e265e
+input_fingerprint_sha256: 2ede916c975df4e5a4fa68910b0a3f92d8f5b098f50d62ae2976cc841b88e6c7
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 3.08
+status: ok
+----- stdout -----
+[PASS] A-current-axiom-and-Block95-parent-authority: origin/main, current axioms, and the complete Block95 parent theorem/runner are content-...
+       origin/main=eee6ab5874; child missing/loaded=0/0; parent mismatch/loaded=0/0
+[PASS] B-dynamic-boundary-generator-and-reciprocal-matter-dressing: one endpoint boundary scalar converts the full prepoint stress into two half impulses an...
+       probes=48; action/geometry/mixed=<3e-10/<3e-10/<3e-10; recoil=6.26
+[PASS] C-endpoint-dressed-map-is-the-Block78-front-trajectory: the half-source initial kick plus terminal dressing is exactly conjugate to every front-...
+       modes=6354; per-size={3: 66, 4: 360, 5: 276, 6: 2226, 7: 630, 8: 2796}; map=<3e-10
+[PASS] D-front-and-dressed-current-constraints: undressed momenta retain outgoing Block78 constraints while dressed endpoint momenta car...
+       source/front/dressed=<3e-10/<3e-10/<3e-10
+[PASS] E-bounded-local-proper-cubic-boundary-dressing: the generator reuses the actual finite Block95 stress vertex and adds no inverse inciden...
+       support=(33, 2, 2, 1, 2, 4); terms=36; frame probes/error=288/<3e-10
+[PASS] F-positive-homogeneous-density-zero-mode-has-a-nonlinear-gravity-branch: one homogeneous-reduced densitized ADM phase-space action balances positive scalar energ...
+       cases/branches=512/{-1: 256, 1: 256}; C/EL/p-const/Friedmann=<3e-10/<3e-10/<3e-10/<3e-10; rho=1 H^2=0.333333
+[PASS] G-fixed-equation-coefficient-valuation-and-square-root-comparator: the fixed homogeneous constraint has an uncancelled integer-power order-epsilon coeffici...
+       sqrt error/slope=<3e-10/0.500000; polynomial cases/coefficient error/order=96/<3e-10/2; ranks=0/1
+[PASS] H-first-order-stage-homogeneous-nonlinear-and-TOE-scope: the two positive constructions do not claim inhomogeneous nonlinear, Record, law-selecti...
+[PASS] I-no-go-discipline-demotes-the-flat-series-negative: N1 and N7 fail, so the exact coefficient valuation remains an observation and every grav...
+       ATTEMPTED=2; out-of-contract=6; N1/N7/overall fail=True/True/True
+AXIOM_AUTHORITY: origin/main=eee6ab5874e2fc207db5526dc82d9f71ae550c7c axiom=bc23300becfe4e4db57153c0e94cfcdf2338da71; Block95 parent=08357978a895b18a8832023e6e2f2fee652bb15e
+per_element: checked — six actual scalar-stress coordinates, both endpoint impulses, reciprocal matter derivatives, and the homogeneous lapse constraint
+per_site: checked — the 33-support Block95 boundary generator and two endpoint dressings; the zero-mode action is homogeneous-reduced, not a full sitewise lattice realization
+per_mode: checked — all 6,354 exact massless-shell L=3..8 transfers, their source Ward equations, and front/dressed current constraints
+per_block: checked — boundary-action equivalence, canonical map conjugacy, constraint propagation, and the exact homogeneous nonlinear scalar-gravity action
+lattice_wide: checked and not executed — inhomogeneous nonlinear Ward closure, inter-sector gluing, full-Z3 control, Record compilation, law selection, and retention remain open
+RESULT: the front-loaded source cadence has a bounded-local dynamic endpoint-dressed variational chart, and positive compact homogeneous density has an exact nonlinear gravity constraint branch
+PORTFOLIO: stop treating the flat q=0 residual as a gravity failure; next couple the homogeneous trace pair to inhomogeneous Block95/78 modes and execute the order-h-phi^2 Ward algebra
+SCOPE: no full nonlinear lattice gravity, Record compiler, selected physical law, axiom amendment, audit verdict, obligation retirement, retained end-to-end theory, or TOE percentage movement
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

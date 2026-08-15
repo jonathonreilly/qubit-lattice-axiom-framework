@@ -1,0 +1,67 @@
+===== runner cache v1 =====
+runner: scripts/f_two_three_site_seed_fill_2026_08_15.py
+runner_sha256: 3daf33bca0c156dd64417c7ec8ff33f53f814873ad5c2a877c21a0c798090a48
+input_fingerprint_sha256: 5cf0be0a5aa364b9436800d631d60baf0a57de6e0d2784df407e00ea4287e605
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+f_two three-site seed fill on the two-cube
+AUDIT_INPUT_PATHS:
+  docs/F_TWO_THREE_SITE_SEED_FILL_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+scope: supplied two-cube f_two patch; 3-site seed halt census
+PASS: audit-input-paths-exist
+PASS: audit-input-paths-unique-relative
+PASS: audit-timeout-declared
+PASS: lattice-quote-present
+PASS: record-form-quote-present
+PASS: hygiene-avoids-'G_N'
+PASS: hygiene-avoids-'1/r'
+PASS: hygiene-avoids-'1/r^2'
+PASS: hygiene-avoids-'Lattice-named'
+PASS: hygiene-avoids-'not a TOE'
+PASS: hygiene-avoids-'exhausted'
+PASS: hygiene-avoids-'only route'
+PASS: hygiene-avoids-'we adopt'
+PASS: hygiene-avoids-'Codex'
+PASS: hygiene-avoids-'L_phys'
+PASS: hygiene-avoids-'PVM'
+PASS: note-has-no-runner-cache-path
+PASS: note-has-no-citation-manifest
+PASS: patch-has-twelve-sites
+PASS: seed-is-axis-triple
+PASS: seed-sites-on-patch
+PASS: off-patch-occupancy-is-zero
+PASS: theorem-1-first-wave-nonempty
+PASS: origin-ready-at-seed
+PASS: first-wave-computed-set
+PASS: theorem-2-halt-within-twelve
+PASS: theorem-2-halt-is-fixed-point
+PASS: seed-permanent-in-halt
+PASS: locks-monotone
+PASS: halt-tick-is-first-fixed-point
+PASS: theorem-3-halt-tick  (T=2)
+PASS: theorem-3-lock-count  (|locks|=8)
+PASS: theorem-3-patch-does-not-fill
+PASS: halt-locks-equal-cube-a
+PASS: x-equals-two-sites-unlocked
+PASS: unlocked-sites-have-u-less-than-two
+PASS: note-reports-halt-tick-two
+PASS: note-reports-eight-locks
+PASS: note-reports-does-not-fill
+halt_tick: 2
+lock_count: 8
+fills_patch: False
+per_element: 12 vertices
+per_site: occupancy lock
+per_mode: f_two u>=2
+per_block: halt census
+lattice_wide: checked and not executed
+TOTAL: PASS=39 FAIL=0
+
+----- stderr -----
+

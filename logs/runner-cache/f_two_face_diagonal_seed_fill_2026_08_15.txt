@@ -1,0 +1,52 @@
+===== runner cache v1 =====
+runner: scripts/f_two_face_diagonal_seed_fill_2026_08_15.py
+runner_sha256: 3a9ca521bee6aff2585f0e74384bef20552cb2bef02be1f934b7bb620ed4ed0f
+input_fingerprint_sha256: 180f44c7392a6ed50aa4479a949ba8b119bb171dbfee5cba9372feabc8bd52cc
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: none; seed and f_two are displayed extra structure
+package_local_integrity_reads: runner source, proposed source note, and live axiom memo
+measure_boundary: exact integer lock counts on the twelve-vertex two-cube
+negative_scope: this displayed seed does not fill the twelve-vertex patch
+computed_T=1
+computed_locks=4
+computed_first_wave=((0, 1, 0), (1, 0, 0))
+computed_fill=0
+displayed_three_site_T=2
+displayed_three_site_locks=8
+PASS: patch-twelve two-cube union has twelve vertices
+PASS: two-cubes-share-face cubes A and B have eight vertices each and share four
+PASS: seed-face-diagonal S0 is the displayed on-patch face-diagonal pair
+PASS: f-two-is-u-ge-2 f_two is u>=2, so a one-axis cell is 0 and the first-wave cell is 1
+PASS: f-two-not-f-l1 f_L1 is n!=0 / one unbalanced axis, not f_two
+PASS: f-two-not-hamming Hamming |c|_1 mod 2 is a different predicate on the first-wave cell
+PASS: thm1-nonempty first wave is nonempty
+PASS: thm1-expected-sites first wave is exactly (1,0,0) and (0,1,0)
+PASS: thm1-two-occupied-axes each first-wave site sees two occupied nearest neighbors on different axes
+PASS: thm2-bounded halt tick T is at most 12
+PASS: thm2-halt-pair fixed point is reached with computed (T, |locks|)
+PASS: thm2-permanence seed locks remain locked at the fixed point
+PASS: thm2-face-square final locks are the z=0 face of cube A
+PASS: thm3-no-fill fill boolean is false: |locks_T| != 12
+PASS: thm3-three-site-displayed displayed 3-site contrast recomputes as T=2, 8 locks, no fill
+PASS: contrast-not-same-residual face-diagonal halt pair differs from the displayed 3-site pair
+PASS: mutation-l1-wave-differs f_L1 first wave from the same seed is strictly larger
+PASS: empty-fixed-point the empty occupancy is a fixed point of f_two
+PASS: note-reports-computed-pair source note reports the computed halt pair
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: live-parent-quotes note quotes Lattice, Admissibility, and Record without rewriting them
+PASS: machine-status-contract note is displayed bounded-support and does not adopt f_two
+PASS: claim-type-and-gate bounded theorem type and a passing N1-N8 gate are source-visible
+PASS: forbidden-substrings note and runner omit the forbidden gravity and slogan tokens
+per_element: checked exactly — each first-wave 6-tuple has two unbalanced axes
+per_site: checked exactly — twelve vertices, seed pair, and four final locks
+per_mode: checked exactly — one displayed f_two seed; f_L1 and Hamming are contrasts
+per_block: checked exactly — halt pair (T, |locks|) and the fill boolean
+lattice_wide: checked and not executed — no Z^3-wide formation law is claimed
+TOTAL: PASS=24 FAIL=0
+
+----- stderr -----
+

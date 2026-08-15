@@ -120,6 +120,13 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
         "scripts/physical_cell_cutting_blind_space_symmetry_cycle755_"
         "independent_check_2026_08_09.py",
     ],
+    # Cycle 756's sibling checker shares only the declared finite-fixture
+    # construction, then replaces carrier enumeration and modular elimination
+    # with NetworkX maximal cliques and exact SymPy domain-matrix ranks.
+    "physical_cell_cutting_blind_space_carrier_span_cycle756_note_2026-08-09": [
+        "scripts/physical_cell_cutting_blind_space_carrier_span_cycle756_"
+        "independent_check_2026_08_09.py",
+    ],
     # Cycle 738's checker independently reconstructs the cutting incidence
     # with the opposite cover pivot and uses a separate exact-weight CNF/SAT
     # encoding, so it deliberately remains outside the primary import closure.

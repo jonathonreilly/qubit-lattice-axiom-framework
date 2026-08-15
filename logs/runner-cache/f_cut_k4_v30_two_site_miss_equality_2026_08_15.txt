@@ -1,0 +1,66 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_k4_v30_two_site_miss_equality_2026_08_15.py
+runner_sha256: 0d0406ae0962b0538000c7eefb082c42859536d7edf776aa24a8f98537fc7065
+input_fingerprint_sha256: f77bb0bffc1221ffd23741e40b0f749b4640a07d9a20768f1fc624007f5afec3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_K4_V30_TWO_SITE_MISS_EQUALITY_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+n_rotations=24
+n_orbits=10
+remaining_labels=('wt1', 'opp2', 'adj2', 'vertex3', 'mixed3')
+n_two_site_seeds=66
+n_long_axis_seeds=4
+f00_remaining=(1, 1, 1, 0, 0)
+f01_remaining=(1, 1, 1, 0, 1)
+k_f00=4
+k_f01=4
+cov_f00=36
+cov_f01=36
+miss_card_f00=30
+miss_card_f01=30
+intersection=30
+symmetric_difference=0
+miss_sets_equal=1
+mixed3_free_on_fill_set=1
+f_L1_remaining=(1, 0, 1, 1, 1)
+missed_seeds_listed=0
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required note-plus-axiom string-literal tuple
+PASS: thm1-twenty-four-rotations exactly 24 proper cube rotations
+PASS: thm1-ten-orbits exactly 10 orbits partition the 64 cells of {0,1}^6
+PASS: thm1-orbit-sizes orbit sizes are the axis-type class sizes
+PASS: thm1-f-cut-cardinality F_cut has five free bits and size 32
+PASS: thm1-f-L1-is-unbalanced-axis f_L1 is 1 iff some axis has c_+ != c_-
+PASS: thm1-f-L1-not-hamming f_L1 is not Hamming |c|_1 mod 2
+PASS: thm1-two-cube-and-sixty-six-seeds the two-cube has twelve vertices and C(12,2)=66 two-site seeds
+PASS: thm1-k4-vertex3-zero-pair both maps have (wt1,opp2,adj2)=(1,1,1), vertex3=0, and k=4
+PASS: thm1-cov-thirty-six each vertex3=0 k=4 map has cov=36 among the 66 two-site seeds
+PASS: thm2-miss-cardinalities each miss set has cardinality 30
+PASS: thm2-intersection-and-symdiff intersection has size 30 and symmetric difference has size 0
+PASS: thm3-equality-bit the two miss sets are equal; mixed3 is free on this fill set
+PASS: thm3-do-not-adopt-mixed3 mixed3 is displayed, not adopted
+PASS: lattice-and-admissibility-parents the live axiom memo supplies Z^3, proper cubic rotations, and a covariant nearest-neighbor rule
+PASS: note-contract bounded theorem, displayed equality, and machine status
+PASS: claim-type-and-gate N1-N8 and a passing no-go disposition are source-visible
+PASS: forbidden-phrases-absent the note and runner omit the dispatch-forbidden phrases
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: no-axiom-edit the theorem proposes no axiom change
+PASS: off-patch-zero off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: seeds-not-listed the 30 missed seeds are not listed in the note or runner output
+PASS: not-leftover-6446 the residual is miss-set equality, not leftover-character of #6446
+PASS: claim-scope-equality claim_scope states the two miss sets are equal and displayed, not adopted
+per_element: checked exactly — each of the 64 neighbor 6-tuples is assigned its axis-type orbit
+per_site: checked exactly — each of the twelve two-cube vertices uses the same six-direction stencil
+per_mode: checked exactly — both vertex3=0 k=4 maps are scored on the same 66 two-site seeds
+per_block: checked exactly — miss-set equality is the intersection/symmetric-difference pair on this patch
+lattice_wide: checked and not executed — no Z^3-wide formation law or physical Admissibility selector is claimed
+TOTAL: PASS=24 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,52 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_fillers_opp2_silent_2026_08_15.py
+runner_sha256: 641b9717279863760dc81d432f652344bda0adcd1c9766ae1b1451ce6416cde1
+input_fingerprint_sha256: a712c6b0862346a66e511d5ad9d45aad65822d8c51b2e15fb7cfbcb16839be23
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_FILLERS_OPP2_SILENT_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+n_rotations=24
+n_orbits=10
+|F_cut|=32
+N_fill=8
+opp2_type=(0, 1, 2) size=3
+f_L1_bits=(0, 0, 0, 0, 1, 1, 1, 1, 1, 1)
+f_L1_opp2=0
+f_L1_locks=12 halt=4 history=(1, 4, 8, 11, 12)
+f_hamming_opp2=0 locks=9
+f_diamond_opp2=0
+f_diamond_locks=12 halt=5 history=(1, 4, 8, 10, 11, 12)
+N_opp0=4
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required note-plus-axiom string-literal tuple
+PASS: thm1-class-reconstruction 24 rotations, 10 orbits, |F_cut|=32, and exactly 8 1-site fillers
+PASS: thm1-opp2-orbit opp2 is the size-3 orbit of one fully occupied axis and four empty slots
+PASS: thm1-f-L1-is-unbalanced-axis f_L1 is 1 iff some axis has c_+ != c_-
+PASS: thm1-f-L1-not-hamming f_L1 is not Hamming |c|_1 mod 2
+PASS: thm1-f-L1-opp2-silent-and-fills f_L1(opp2)=0 and f_L1 is one of the eight F_cut fillers
+PASS: thm2-n-opp0 N_opp0 = 4 exactly
+PASS: thm3-not-unique N_opp0 > 1; f_L1 is not unique among opp2-silent fillers
+PASS: thm3-displayed-other displayed f_diamond is a second filler with f(opp2)=0
+PASS: hamming-silent-but-not-filler Hamming parity also has f(opp2)=0 but is not among the eight fillers
+PASS: lattice-and-admissibility-parents the live axiom memo supplies Z^3, proper cubic rotations, and a covariant nearest-neighbor rule
+PASS: note-contract bounded theorem, displayed-not-adopted non-uniqueness, and machine status
+PASS: claim-type-and-gate N1-N8 and a passing no-go disposition are source-visible
+PASS: forbidden-phrases-absent the note and runner omit the dispatch-forbidden phrases
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: claim-scope-and-leftover claim_scope reports N_opp0 and refuses leftover-character of the eight-count
+PASS: no-axiom-edit the theorem proposes no axiom change
+per_element: checked exactly — each of the 64 neighbor 6-tuples is assigned its axis-type orbit
+per_site: checked exactly — each of the twelve two-cube vertices uses the same six-direction stencil
+per_mode: checked exactly — every F_cut map is run to a fixed point and scored on opp2
+per_block: checked exactly — N_opp0 is the silent-opp2 cardinality among the eight fillers
+lattice_wide: checked and not executed — no Z^3-wide formation law or physical Admissibility selector is claimed
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

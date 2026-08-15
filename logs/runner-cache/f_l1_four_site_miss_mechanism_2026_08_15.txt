@@ -1,0 +1,67 @@
+===== runner cache v1 =====
+runner: scripts/f_l1_four_site_miss_mechanism_2026_08_15.py
+runner_sha256: 00a1355b6f2a39c32096020cb1a5b538b968b896a61acccc55d0aeddc9428e04
+input_fingerprint_sha256: 19956943dfbb029d8cf5143e185056c3487089849992575513c90ecefe07db5d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_L1_FOUR_SITE_MISS_MECHANISM_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+construction: independent occupancy-to-lock runs from each f_L1 4-site miss
+negative_scope: opp2 is displayed, not adopted or written into Admissibility
+n_rotations=24
+n_orbits=10
+orbit_types_and_sizes=(0, 0, 3):1,(0, 1, 2):3,(0, 2, 1):3,(0, 3, 0):1,(1, 0, 2):6,(1, 1, 1):12,(1, 2, 0):6,(2, 0, 1):12,(2, 1, 0):12,(3, 0, 0):8
+remaining_labels=('wt1', 'opp2', 'adj2', 'vertex3', 'mixed3')
+n_four_site_seeds=495
+cov_f_L1=489
+cov_f1=495
+f_L1_remaining=(1, 0, 1, 1, 1)
+f1_remaining=(1, 1, 1, 1, 1)
+n_l1_miss=6
+miss_seeds_lex={(0,0,0),(0,0,1),(2,0,0),(2,0,1)}, {(0,0,0),(0,1,0),(2,0,0),(2,1,0)}, {(0,0,0),(0,1,1),(2,0,0),(2,1,1)}, {(0,0,1),(0,1,0),(2,0,1),(2,1,0)}, {(0,0,1),(0,1,1),(2,0,1),(2,1,1)}, {(0,1,0),(0,1,1),(2,1,0),(2,1,1)}
+  {(0,0,0),(0,0,1),(2,0,0),(2,0,1)} hist_L1=(4, 8) fill_L1=False hist_f1=(4, 10, 12) fill_f1=True first=t=1 x=(1, 0, 0) type=opp2(0, 1, 2)
+  {(0,0,0),(0,1,0),(2,0,0),(2,1,0)} hist_L1=(4, 8) fill_L1=False hist_f1=(4, 10, 12) fill_f1=True first=t=1 x=(1, 0, 0) type=opp2(0, 1, 2)
+  {(0,0,0),(0,1,1),(2,0,0),(2,1,1)} hist_L1=(4, 8) fill_L1=False hist_f1=(4, 10, 12) fill_f1=True first=t=1 x=(1, 0, 0) type=opp2(0, 1, 2)
+  {(0,0,1),(0,1,0),(2,0,1),(2,1,0)} hist_L1=(4, 8) fill_L1=False hist_f1=(4, 10, 12) fill_f1=True first=t=1 x=(1, 0, 1) type=opp2(0, 1, 2)
+  {(0,0,1),(0,1,1),(2,0,1),(2,1,1)} hist_L1=(4, 8) fill_L1=False hist_f1=(4, 10, 12) fill_f1=True first=t=1 x=(1, 0, 1) type=opp2(0, 1, 2)
+  {(0,1,0),(0,1,1),(2,1,0),(2,1,1)} hist_L1=(4, 8) fill_L1=False hist_f1=(4, 10, 12) fill_f1=True first=t=1 x=(1, 1, 0) type=opp2(0, 1, 2)
+lex_first_refusal=t=1 x=(1, 0, 0) type=opp2(0, 1, 2) cfg=(1, 1, 0, 0, 0, 0)
+other_five_first_axis_types=['opp2', 'opp2', 'opp2', 'opp2', 'opp2']
+same_extra_as_two_site_long_axis_miss=True
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required note-plus-axiom string-literal tuple
+PASS: thm1-twenty-four-rotations exactly 24 proper cube rotations
+PASS: thm1-ten-orbits exactly 10 orbits partition the 64 cells of {0,1}^6
+PASS: thm1-orbit-sizes orbit sizes are the axis-type class sizes
+PASS: thm1-f-L1-is-unbalanced-axis f_L1 is 1 iff some axis has c_+ != c_-
+PASS: thm1-f-L1-not-hamming f_L1 is not Hamming |c|_1 mod 2
+PASS: thm1-two-cube-and-four-ninety-five-seeds the two-cube has twelve vertices and C(12,4)=495 four-site seeds
+PASS: thm1-six-misses-and-f1-fills exactly six 4-site seeds miss under f_L1, and f1 fills each independently
+PASS: thm2-lex-first-refusal lex-first miss first refusal is t=1, site (1,0,0), axis type opp2
+PASS: thm3-other-five-same-axis-type the other five miss seeds have the same first axis type opp2
+PASS: thm3-display-not-adopt-opp2 opp2 is displayed and is not adopted or written into Admissibility
+PASS: lattice-and-admissibility-parents the live axiom memo supplies Z^3, proper cubic rotations, and a covariant nearest-neighbor rule
+PASS: note-contract bounded theorem, displayed-not-adopted first refusal, and machine status
+PASS: claim-type-and-gate N1-N8 and a passing no-go disposition are source-visible
+PASS: forbidden-phrases-absent the note and runner omit the dispatch-forbidden phrases
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: note-reports-first-refusal the note reports the six misses, f1 fill, and the lex-first (t, x, axis type)
+PASS: no-axiom-edit the theorem proposes no axiom change
+PASS: off-patch-zero off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: new-mechanism-not-leftover-count the residual is the first refused neighborhood, not leftover of the 6-count
+PASS: claim-scope claim_scope reports the first refused neighborhood on the lex-first 4-site miss
+PASS: source-formation-boundary formation site/probability/rate remains outside Admissibility
+per_element: checked exactly — each of the 64 neighbor 6-tuples is assigned its axis-type orbit
+per_site: checked exactly — each of the twelve two-cube vertices uses the same six-direction stencil
+per_mode: checked exactly — f_L1 and f1 are run independently from each of the six miss seeds
+per_block: checked exactly — the first refused neighborhood is named by tick, site, and axis type
+lattice_wide: checked and not executed — no Z^3-wide formation law or physical Admissibility selector is claimed
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

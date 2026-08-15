@@ -1,0 +1,66 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_coverage_complement_duality_2026_08_15.py
+runner_sha256: 5e7068bb0162a9c81236105335a2f2901925d5be644674a8739292120476439a
+input_fingerprint_sha256: 9819390c34552837e251127c3db0d506dd7908d15105add7224ed0349e520f39
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.55
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_COVERAGE_COMPLEMENT_DUALITY_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+n_rotations=24
+n_orbits=10
+remaining_labels=('wt1', 'opp2', 'adj2', 'vertex3', 'mixed3')
+N_free=5
+|F_cut|=32
+cited_6465_pairs={1: (12, 4), 2: (66, 2), 3: (220, 2), 4: (495, 1), 5: (792, 2), 7: (792, 2), 8: (495, 1), 9: (220, 4), 10: (66, 4), 11: (12, 8)}
+recomputed_pairs={1: (12, 4), 2: (66, 2), 3: (220, 2), 4: (495, 1), 5: (792, 2), 7: (792, 2), 8: (495, 1), 9: (220, 4), 10: (66, 4), 11: (12, 8)}
+equality_5_tuple=(0, 0, 0, 1, 1)
+Max(1)=[(1, 0, 1, 1, 0), (1, 0, 1, 1, 1), (1, 1, 1, 1, 0), (1, 1, 1, 1, 1)]
+Max(11)=[(0, 0, 1, 1, 0), (0, 0, 1, 1, 1), (0, 1, 1, 1, 0), (0, 1, 1, 1, 1), (1, 0, 1, 1, 0), (1, 0, 1, 1, 1), (1, 1, 1, 1, 0), (1, 1, 1, 1, 1)]
+Max(2)=[(1, 1, 1, 1, 0), (1, 1, 1, 1, 1)]
+Max(10)=[(0, 0, 1, 1, 1), (0, 1, 1, 1, 1), (1, 0, 1, 1, 1), (1, 1, 1, 1, 1)]
+Max(3)=[(1, 0, 1, 1, 1), (1, 1, 1, 1, 1)]
+Max(9)=[(0, 0, 1, 1, 1), (0, 1, 1, 1, 1), (1, 0, 1, 1, 1), (1, 1, 1, 1, 1)]
+Max(4)=[(1, 1, 1, 1, 1)]
+Max(8)=[(1, 1, 1, 1, 1)]
+Max(5)=[(1, 0, 1, 1, 1), (1, 1, 1, 1, 1)]
+Max(7)=[(1, 0, 1, 1, 1), (1, 1, 1, 1, 1)]
+f_L1_remaining=(1, 0, 1, 1, 1)
+f_L1_bits=(0, 0, 0, 0, 1, 1, 1, 1, 1, 1)
+f_hamming_bits=(0, 0, 0, 0, 1, 1, 1, 0, 0, 1)
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required note-plus-axiom string-literal tuple
+PASS: thm1-twenty-four-rotations exactly 24 proper cube rotations
+PASS: thm1-ten-orbits exactly 10 orbits partition the 64 cells of {0,1}^6
+PASS: thm1-orbit-sizes orbit sizes are the axis-type class sizes
+PASS: thm1-f-cut-cardinality F_cut has five free bits and size 32
+PASS: thm1-f-L1-is-unbalanced-axis f_L1 is 1 iff some axis has c_+ != c_-
+PASS: thm1-f-L1-not-hamming f_L1 is not Hamming |c|_1 mod 2
+PASS: thm1-two-cube-and-binomial-seeds the two-cube has twelve vertices and C(12,k) k-site seeds
+PASS: thm1-cite-6465-pairs recomputed (m_k, N_max_k) match the cited #6465 pairs
+PASS: thm1-set-equality-bits Max(k)=Max(12-k) only for k=4 and k=5 among k=1..5
+PASS: thm2-equality-5-tuple the displayed equality 5-tuple is (0, 0, 0, 1, 1)
+PASS: thm3-display-not-adopt-duality the equality bits are displayed and no duality is adopted
+PASS: lattice-and-admissibility-parents the live axiom memo supplies Z^3, proper cubic rotations, and a covariant nearest-neighbor rule
+PASS: note-contract bounded theorem, displayed-not-adopted equality bits, and machine status
+PASS: claim-type-and-gate N1-N8 and a passing no-go disposition are source-visible
+PASS: forbidden-phrases-absent the note and runner omit the dispatch-forbidden phrases
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: note-reports-sets-and-tuple the note reports Max(k) versus Max(12-k) and the equality 5-tuple
+PASS: no-axiom-edit the theorem proposes no axiom change
+PASS: off-patch-zero off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: not-leftover-6465 the residual is set equality, not leftover-character of the #6465 counts
+PASS: claim-scope-duality claim_scope states set equality or not for each k=1..5
+per_element: checked exactly — each of the 64 neighbor 6-tuples is assigned its axis-type orbit
+per_site: checked exactly — each of the twelve two-cube vertices uses the same six-direction stencil
+per_mode: checked exactly — every F_cut map is scored at each seed size k=1..11, then Max(k) is named
+per_block: checked exactly — the equality 5-tuple is Max(k)=Max(12-k) for each k=1..5
+lattice_wide: checked and not executed — no Z^3-wide formation law or physical Admissibility selector is claimed
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,65 @@
+===== runner cache v1 =====
+runner: scripts/sparsest_filler_identity_2026_08_15.py
+runner_sha256: 46a2f525df8e3fd21ef62053d9232e34cbfe809566a195e1509a9f086f24825c
+input_fingerprint_sha256: 707d2fe985e21a7e7d3ff5e5adcf854ab72b51a2f845c9ab3dc1f4decc8222a4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/SPARSEST_FILLER_IDENTITY_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+external_scientific_inputs: none; exact two-cube occupancy census only
+package_local_integrity_reads: proposed source note and live axiom memo only
+n_rotations=24
+n_orbits=10
+n_maps_empty0=512
+N_fill=96
+m=26
+N_min=1
+supp_f_L1=56
+f_min_named={'wt1': 1, 'opp2': 0, 'adj2': 1, 'vertex3': 1, 'mixed3': 0}
+f_min_all={'empty': 0, 'wt1': 1, 'opp2': 0, 'adj2': 1, 'vertex3': 1, 'mixed3': 0, 'wt5': 0, 'opp4': 0, 'adj4': 0, 'full': 0}
+f_min_in_F_cut=0
+f_L1_named={'wt1': 1, 'opp2': 0, 'adj2': 1, 'vertex3': 1, 'mixed3': 1}
+f_L1_locks=12 halt=4 history=(1, 4, 8, 11, 12)
+f_min_locks=12 halt=4 history=(1, 4, 8, 11, 12)
+hamming_locks=9
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required note-plus-axiom string-literal tuple
+PASS: thm1-twenty-four-rotations exactly 24 proper cube rotations
+PASS: thm1-ten-orbits exactly 10 axis-type orbits partition the 64 cells
+PASS: thm1-named-orbit-types wt1/opp2/adj2/vertex3/mixed3 are the listed axis-type orbits
+PASS: thm1-five-hundred-twelve-maps cube-covariant maps with f(empty)=0 number 512
+PASS: thm1-two-cube-twelve the two-cube has twelve vertices and contains the seed
+PASS: thm1-f-L1-is-unbalanced-axis f_L1 is 1 iff some axis has c_+ != c_- (n != 0)
+PASS: thm1-f-L1-not-hamming f_L1 is not Hamming |c|_1 mod 2
+PASS: thm1-n-fill-and-l1-fills N_fill=96 and f_L1 is one of the 96 fillers
+PASS: thm1-supp-l1 supp(f_L1) = 56
+PASS: thm1-unique-min-not-l1 min supp is m=26 with N_min=1, and that filler is not f_L1
+PASS: thm2-f-min-named-tuple f_min on (wt1,opp2,adj2,vertex3,mixed3) is (1,0,1,1,0)
+PASS: thm2-f-min-all-orbits f_min bits on every axis-type orbit are the nonempty n_both=0 assignment
+PASS: thm2-f-min-closed-form f_min(c)=1 iff n_both=0 and some axis is unbalanced
+PASS: thm2-f-min-not-in-f-cut f_min is not in F_cut: complement-even fails on wt1 vs wt5
+PASS: thm3-displayed-rival the unique support-26 map is displayed as a named rival and is not adopted
+PASS: lattice-and-admissibility-parents the live axiom memo supplies Z^3, proper cubic rotations, and a covariant nearest-neighbor rule
+PASS: note-contract bounded theorem, displayed-not-adopted identity, and machine status
+PASS: claim-type-and-gate N1-N8 and a passing no-go disposition are source-visible
+PASS: forbidden-phrases-absent the note and runner omit the dispatch-forbidden phrases
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: no-axiom-edit the identified map is not written into Admissibility
+PASS: not-leftover-6400 the residual is the identity of the unique minimizer, not leftover-character of #6400
+PASS: off-patch-zero off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: claim-scope-identity claim_scope identifies the unique support-26 map by orbit bits and F_cut membership
+PASS: mutation-l1-and-hamming f_L1 and Hamming are rejected as the unique support-26 filler
+per_element: checked exactly — each of the 64 neighbor 6-tuples is assigned its axis-type orbit
+per_site: checked exactly — each of the twelve two-cube vertices uses the same six-direction stencil
+per_mode: checked exactly — every cube-covariant f(empty)=0 map is classified as filler or not
+per_block: checked exactly — the unique support-26 filler is named by orbit bits and F_cut membership
+lattice_wide: checked and not executed — no Z^3-wide formation law or Admissibility rewrite is claimed
+TOTAL: PASS=26 FAIL=0
+
+----- stderr -----
+

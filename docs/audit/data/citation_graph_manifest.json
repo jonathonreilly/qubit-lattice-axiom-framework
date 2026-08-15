@@ -1,6 +1,6 @@
 {
- "edge_count": 15731,
- "node_count": 5530,
+ "edge_count": 15732,
+ "node_count": 5531,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -4655,6 +4655,10 @@
    "out_degree": 1
   },
   "extensional_nearest_neighbor_rule_deep_probe_2026-07-13": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
+  },
+  "f_min_l1_first_disagreeing_neighborhood_bounded_theorem_note_2026-08-15": {
    "deps_hash": "c8eee4235fc9",
    "out_degree": 1
   },

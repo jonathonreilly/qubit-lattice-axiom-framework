@@ -1,0 +1,46 @@
+===== runner cache v1 =====
+runner: scripts/f_min_l1_first_disagreeing_neighborhood_2026_08_15.py
+runner_sha256: cef7a790810e1615bc36228eba154d1ada13dac745c9e6d091eb15db60442e3b
+input_fingerprint_sha256: 1d0c7aaf5f6b6aa62ea6ed40215c4c500a3c049644baafdde4e5638e39f11886
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.07
+status: ok
+----- stdout -----
+external_scientific_inputs: current Lattice, Admissibility, and Record boundaries; no observations or fits
+integrity_reads: this runner, its note, and the live axiom memo; no other scientific inputs
+construction: two independent occupancy-to-lock runs from the displayed seed S*
+negative_scope: neither map nor the disagreeing stencil is adopted or written into Admissibility
+cache_write: false
+PASS: audit-inputs declared source-bound inputs exist as static literals
+PASS: source-lattice current cubic nearest-neighbor wording is pinned
+PASS: source-admissibility current local-distribution wording is pinned
+PASS: source-formation-boundary formation site, probability, and rate remain outside Admissibility
+PASS: source-record-and-non-dynamics Record lock wording and the non-dynamics Admissibility boundary are pinned
+PASS: two-cube-and-seed the two-cube has twelve lexicographic vertices and the displayed seed S*
+PASS: off-patch-zero every off-patch neighbor contributes occupancy 0
+PASS: axis-type-reps declared orbit representatives have the stated axis types
+PASS: f-min-rule f_min is 1 exactly when n_both=0 and some axis is unbalanced
+PASS: f-l1-is-n-unbalanced f_L1 is the n!=0 (some-axis-unbalanced) map, not Hamming parity
+PASS: maps-disagree-where-n-both-and-unbalanced the maps disagree on mixed3 and on type (2,1,0), and agree on opp2
+run_L1: history=(2, 8, 12) fill=True halt_tick=2
+run_min: history=(2, 8, 10) fill=False halt_tick=2
+first_disagreeing_neighborhood_L1_run: t=2 x=(1, 0, 1) axis_type=(2, 1, 0) stencil=(1, 1, 1, 0, 0, 1) f_L1=1 f_min=0
+first_disagreeing_neighborhood_min_run: t=2 x=(1, 0, 1) axis_type=(2, 1, 0) stencil=(1, 1, 1, 0, 0, 1) f_L1=1 f_min=0
+PASS: theorem-1-reconfirm-fill from S* f_L1 fills with history (2, 8, 12) and f_min does not fill
+PASS: theorem-2-first-disagreeing-neighborhood the first disagreeing neighborhood is t=2, x=(1,0,1), type (2,1,0)
+PASS: both-runs-same-first-split the two independent runs share the locked set through the first split
+PASS: theorem-3-display-stencil the first disagreeing stencil is the displayed 6-tuple (1,1,1,0,0,1)
+PASS: no-split-before-tick-2 no unlocked site disagrees at tick 1; the first wave is shared wt1
+PASS: note-contract machine fields, first-neighborhood statement, and forbidden-phrase hygiene hold
+PASS: not-leftover-or-clone the claim is a new neighborhood object, not leftover seed-naming of #6417
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+per_element: axis-type representatives and off-patch occupancy 0 are enumerated
+per_site: each unlocked two-cube vertex is tested against both displayed lock predicates
+per_mode: checked and not executed — no spectral claim occurs
+per_block: both independent runs from S* are executed tick by tick to a fixed point
+lattice_wide: checked and not executed — neither map nor the stencil is adopted
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

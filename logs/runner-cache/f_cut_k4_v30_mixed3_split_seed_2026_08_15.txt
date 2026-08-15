@@ -1,0 +1,60 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_k4_v30_mixed3_split_seed_2026_08_15.py
+runner_sha256: f52a511ee8caf6e39eaf3b3f5a38916a4c3d234b6dc2a9f15f3e2f70242e3406
+input_fingerprint_sha256: 1446bb527ba576f06eec93e39dda66fa1a152212f596efa94d1e4e917aaa9e45
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_K4_V30_MIXED3_SPLIT_SEED_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+external_scientific_inputs: current Lattice, Admissibility, and Record wording; no observations or fits
+integrity_reads: this runner, its note, and the axiom memo
+construction: independent occupancy-to-lock runs of F_cut maps (1,1,1,0,0) and (1,1,1,0,1) on the two-cube, off-patch occupancy 0, from (0,0,0) and from S={(0,0,0),(0,0,1),(2,0,0)}
+negative_scope: displayed equality bit only; mixed3 is not adopted
+PASS: audit-inputs declared inputs are the required two static string literals and exist
+PASS: source-lattice-admissibility Lattice rotations and Admissibility covariance are pinned
+PASS: source-local-distribution current local-distribution wording is pinned
+PASS: source-record-boundary Record lock, content-only readout, unreadable absence, and formation residual are pinned
+PASS: vertex-count two-cube has twelve vertices and S is the displayed three-site seed
+PASS: orbit-partition proper-cube action on six-tuples has ten orbits with derived sizes
+PASS: complement-action complement pairs empty/full, wt1/wt5, opp2/opp4, adj2/adj4 and fixes vertex3, mixed3
+PASS: thm1-f-L1-is-unbalanced-axis f_L1 is 1 iff some axis is unbalanced, and evaluates to (1,0,1,1,1)
+PASS: thm1-f-L1-not-hamming f_L1 is not Hamming |c|_1 mod 2
+PASS: thm1-one-site-agree both vertex3=0 k=4 maps fill from (0,0,0) with history (1, 4, 8, 10, 11, 12)
+PASS: thm1-S-splits-mix0-L1 S splits mix0/L1: L1 fills with (3, 8, 11, 12) and mix0 halts unfilled at (3, 8, 10)
+f00_one_site_history=(1, 4, 8, 10, 11, 12)
+f01_one_site_history=(1, 4, 8, 10, 11, 12)
+mix0_S_history=(3, 8, 10) fill=False
+L1_S_history=(3, 8, 11, 12) fill=True
+f00_S_history=(3, 9, 11, 12) fill=True
+f01_S_history=(3, 9, 12) fill=True
+equality_bit=0
+PASS: thm2-f00-from-S f00=(1,1,1,0,0) fills from S with history (3, 9, 11, 12)
+PASS: thm2-f01-from-S f01=(1,1,1,0,1) fills from S with history (3, 9, 12)
+PASS: thm3-histories-differ the two S-histories differ; equality bit is 0, not a seed census
+PASS: note-reports-histories the note reports both S-histories, both fill bits, and equality bit 0
+PASS: claim-scope claim_scope states the failed history equality and does not adopt mixed3
+PASS: lattice-and-admissibility-parents the live axiom memo supplies Z^3, proper cubic rotations, and a covariant nearest-neighbor rule
+PASS: note-contract bounded theorem, displayed-not-adopted uniqueness, and machine status
+PASS: claim-type-and-gate N1-N8 and a passing no-go disposition are source-visible
+PASS: forbidden-phrases-absent the note and runner omit the dispatch-forbidden phrases
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: off-patch-zero off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: not-leftover-6449-6437 the residual is a new uniqueness on this pair and seed, not leftover of #6449 or #6437
+PASS: no-axiom-edit the theorem proposes no axiom change and does not adopt mixed3
+PASS: note-hygiene machine retained fields are the only retained lines; no cache or citation surface
+PASS: axiom-unedited the axiom memo still carries the four named premises and no F_cut class
+per_element: checked exactly — each of the 64 neighbor 6-tuples is assigned its axis-type orbit
+per_site: checked exactly — each of the twelve two-cube vertices uses the same six-direction stencil
+per_mode: checked exactly — independent runs of the two maps from (0,0,0) and from S
+per_block: checked exactly — the displayed equality bit compares the two lock histories on this seed
+lattice_wide: checked and not executed — no Z^3-wide formation law or physical Admissibility selector is claimed
+TOTAL: PASS=26 FAIL=0
+
+----- stderr -----
+

@@ -151,6 +151,12 @@ HEADING_RE = re.compile(r"^#{1,6}\s+", re.MULTILINE)
 LINK_RE = re.compile(r"\[[^\]]*\]\(([^)\s#]+\.md)(?:#[^)]*)?\)")
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    # Cycle 906's sibling checker independently rebuilds the orbit-constant
+    # mass dimensions and finite representative sweep without importing the
+    # primary runner.
+    "orbit_constant_mass_dimension_cycle906_support_note_2026-08-09": [
+        "scripts/frontier_cycle906_orbit_constant_mass_dimension_independent_check_2026_08_09.py",
+    ],
     # Cycle 924's sibling checker independently verifies the exact ratio,
     # cyclic-patch nullity, group equality, and conditional menu-line claims.
     "occurrence_rate_route_arithmetic_cycle924_bounded_theorem_note_2026-07-28": [

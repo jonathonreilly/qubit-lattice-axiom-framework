@@ -373,7 +373,7 @@ review-only flags contradict the drain's land-end-to-end contract).
    because PRs, worktrees, disk, and the shared process pool move independently.
 
    The helper's `ready` label means only `baseRefName == main` with no detected
-   existing checkout. It never launches a worker and grants no review,
+   existing checkout or PR-scoped recovery artifact. It never launches a worker and grants no review,
    science, merge, audit, or landing readiness. Its topology is limited to
    declared GitHub base edges: still perform the cumulative-history,
    merge-base, and independent delta checks here, and still run every lens and

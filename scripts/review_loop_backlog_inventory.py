@@ -198,7 +198,10 @@ def analyze_topology(raw_prs: Iterable[dict], limit: int = DEFAULT_LIMIT) -> dic
         row["number"]
         for row in prs
         if row["topology_state"] == "declared_main_root"
-        and row["headRefName"] not in duplicate_heads
+        and (
+            bool(row.get("isCrossRepository"))
+            or row["headRefName"] not in duplicate_heads
+        )
     ]
     return {
         "query_limit": limit,
@@ -268,7 +271,13 @@ def collect_worktrees(repo_root: Path, runner: Run = run) -> list[dict]:
             continue
         try:
             status = runner(
-                ["git", "status", "--porcelain=v1", "--untracked-files=all"],
+                [
+                    "git",
+                    "--no-optional-locks",
+                    "status",
+                    "--porcelain=v1",
+                    "--untracked-files=all",
+                ],
                 path,
             )
         except InventoryError as exc:
@@ -338,10 +347,12 @@ def scan_tmp_root(tmp_root: Path, registered_paths: set[Path]) -> dict:
                 {"path": str(entry), "pr": int(finding_match.group(1)), "bytes": size}
             )
             continue
-        if _REVIEW_WORKTREE_RE.match(name) and entry.resolve() not in registered:
+        worktree_match = _REVIEW_WORKTREE_RE.match(name)
+        if worktree_match and entry.resolve() not in registered:
             unregistered_worktrees.append(
                 {
                     "path": str(entry),
+                    "pr": int(worktree_match.group(1)),
                     "has_git_marker": (entry / ".git").exists() if entry.is_dir() else False,
                 }
             )
@@ -470,22 +481,35 @@ def plan_slots(
         for number in worktree.get("matched_open_prs", []):
             trees_by_pr[number].append(worktree)
     findings_by_pr: dict[int, list[str]] = defaultdict(list)
-    for item in tmp_scan["findings_files"]:
+    for item in tmp_scan.get("findings_files", []):
         findings_by_pr[item["pr"]].append(item["path"])
+    unregistered_by_pr: dict[int, list[dict]] = defaultdict(list)
+    for item in tmp_scan.get("unregistered_review_paths", []):
+        unregistered_by_pr[item["pr"]].append(item)
 
     recovery_actions: list[dict] = []
     new_candidates: list[dict] = []
     for number in topology["declared_main_ready_prs"]:
         row = by_pr[number]
         trees = trees_by_pr.get(number, [])
-        if trees:
+        findings = findings_by_pr.get(number, [])
+        unregistered = unregistered_by_pr.get(number, [])
+        if trees or findings or unregistered:
             recovery_actions.append(
                 {
                     "pr": number,
                     "head": row["headRefName"],
                     "worktrees": [tree["path"] for tree in trees],
-                    "states": [tree["recovery_state"] for tree in trees],
-                    "action": "inspect_existing_worktree_before_dispatch",
+                    "unregistered_review_paths": [
+                        item["path"] for item in unregistered
+                    ],
+                    "external_findings": findings,
+                    "states": (
+                        [tree["recovery_state"] for tree in trees]
+                        + ["unregistered_review_path"] * len(unregistered)
+                        + ["external_findings_file"] * len(findings)
+                    ),
+                    "action": "inspect_recovery_artifacts_before_dispatch",
                 }
             )
             continue
@@ -499,9 +523,18 @@ def plan_slots(
         )
 
     new_candidates.sort(key=lambda item: item["pr"])
+    suppression_reasons = []
     if topology["limit_reached"]:
+        suppression_reasons.append(
+            "GitHub query limit reached; topology may be incomplete"
+        )
+    if tmp_scan.get("scan_error"):
+        suppression_reasons.append(
+            "temporary-root recovery scan failed; recovery state is unknown"
+        )
+    if suppression_reasons:
         slot_count = 0
-        suppression = "GitHub query limit reached; topology may be incomplete"
+        suppression = "; ".join(suppression_reasons)
     else:
         slot_count = min(
             len(new_candidates),
@@ -524,8 +557,9 @@ def plan_slots(
         )
     return {
         "readiness_definition": (
-            "declared main base + no detected existing checkout; scheduling only, "
-            "not review, science, merge, audit, or landing readiness"
+            "declared main base + no detected registered/unregistered checkout or "
+            "external findings artifact; scheduling only, not review, science, "
+            "merge, audit, or landing readiness"
         ),
         "ordering": "deterministic ascending PR number; no scientific priority implied",
         "recovery_actions": recovery_actions,
@@ -633,6 +667,11 @@ def render(snapshot: dict, max_items: int) -> str:
     ]
     if topology["limit_reached"]:
         lines.append("  BLOCKED: GitHub query limit reached; rerun with a higher --limit.")
+    if recovery.get("scan_error"):
+        lines.append(
+            "  BLOCKED: temporary-root recovery scan failed; no new worktree "
+            f"slots scheduled ({_short(recovery['scan_error'])})."
+        )
     if topology["duplicate_head_branches"]:
         lines.append(
             f"  AMBIGUOUS: {len(topology['duplicate_head_branches'])} duplicate head branches."
@@ -645,9 +684,14 @@ def render(snapshot: dict, max_items: int) -> str:
     if schedule["recovery_actions"]:
         lines.append("Recovery actions (inspect ownership; never launch a duplicate):")
         for item in schedule["recovery_actions"][:max_items]:
+            paths = (
+                item["worktrees"]
+                + item["unregistered_review_paths"]
+                + item["external_findings"]
+            )
             lines.append(
                 f"  #{item['pr']} {item['head']} — {', '.join(item['states'])} — "
-                f"{', '.join(item['worktrees'])}"
+                f"{', '.join(paths)}"
             )
     if schedule["ready_slots"]:
         lines.append("Candidate slots (ascending PR number only):")

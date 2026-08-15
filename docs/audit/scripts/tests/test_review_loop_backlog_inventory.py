@@ -54,22 +54,31 @@ class GithubEnumerationTest(unittest.TestCase):
     def test_snapshot_uses_only_read_only_commands(self):
         calls = []
 
-        def fake_run(cmd, cwd):
-            calls.append(cmd)
-            if cmd[:3] == ["gh", "pr", "list"]:
-                return json.dumps([_pr(1, "root")])
-            if cmd[:3] == ["git", "worktree", "list"]:
-                return ""
-            if cmd[:2] == ["ps", "-axo"]:
-                return ""
-            self.fail(f"unexpected command: {cmd}")
-
         with tempfile.TemporaryDirectory() as tmp:
+            def fake_run(cmd, cwd):
+                calls.append(cmd)
+                if cmd[:3] == ["gh", "pr", "list"]:
+                    return json.dumps([_pr(1, "root")])
+                if cmd[:3] == ["git", "worktree", "list"]:
+                    return (
+                        f"worktree {tmp}\0HEAD oid-main\0"
+                        "branch refs/heads/main\0\0"
+                    )
+                if cmd[:3] == ["git", "--no-optional-locks", "status"]:
+                    return ""
+                if cmd[:2] == ["ps", "-axo"]:
+                    return ""
+                self.fail(f"unexpected command: {cmd}")
+
             snapshot = inventory.collect_snapshot(
                 Path(tmp), Path(tmp), limit=100, max_processes=8, runner=fake_run
             )
         self.assertTrue(snapshot["read_only"])
         self.assertEqual(sum(cmd[:3] == ["gh", "pr", "list"] for cmd in calls), 1)
+        self.assertEqual(
+            sum(cmd[:3] == ["git", "--no-optional-locks", "status"] for cmd in calls),
+            1,
+        )
         forbidden = {"fetch", "prune", "remove", "add", "push", "merge", "close"}
         self.assertFalse(any(forbidden & set(cmd) for cmd in calls), calls)
 
@@ -119,8 +128,17 @@ class DeclaredTopologyTest(unittest.TestCase):
         fork["isCrossRepository"] = True
         result = inventory.analyze_topology([fork, _pr(2, "child", "same-name")])
         rows = {row["number"]: row for row in result["prs"]}
+        self.assertEqual(result["declared_main_ready_prs"], [1])
         self.assertEqual(rows[2]["topology_state"], "unresolved_non_main_base")
         self.assertIsNone(rows[2]["parent_pr"])
+
+        fork_collision = _pr(3, "duplicate")
+        fork_collision["isCrossRepository"] = True
+        collision = inventory.analyze_topology(
+            [fork_collision, _pr(4, "duplicate"), _pr(5, "duplicate")]
+        )
+        self.assertEqual(collision["duplicate_head_branches"], {"duplicate": [4, 5]})
+        self.assertEqual(collision["declared_main_ready_prs"], [3])
 
 
 class WorktreeRecoveryTest(unittest.TestCase):
@@ -140,6 +158,13 @@ class WorktreeRecoveryTest(unittest.TestCase):
         self.assertEqual(worktrees[0]["matched_open_prs"], [])
         self.assertEqual(worktrees[1]["matched_open_prs"], [2])
         self.assertEqual(worktrees[2]["matched_open_prs"], [5])
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_root = Path(tmp)
+            (tmp_root / "rev-5.recovery").mkdir()
+            (tmp_root / "review-findings-pr2.recovery").touch()
+            scan = inventory.scan_tmp_root(tmp_root, set())
+        self.assertEqual(scan["unregistered_review_paths"][0]["pr"], 5)
+        self.assertEqual(scan["findings_files"][0]["pr"], 2)
 
 
 class ProcessAndCapacityTest(unittest.TestCase):
@@ -187,13 +212,14 @@ class ProcessAndCapacityTest(unittest.TestCase):
 
 
 class SlotPlanTest(unittest.TestCase):
-    def test_stacked_pr_is_never_scheduled_and_existing_tree_is_recovery(self):
+    def test_stacked_pr_is_never_scheduled_and_recovery_blocks_duplicates(self):
         topology = inventory.analyze_topology(
             [
                 _pr(1, "root-a"),
                 _pr(2, "child", "root-a"),
                 _pr(3, "root-b"),
                 _pr(4, "root-c"),
+                _pr(5, "root-d"),
             ]
         )
         worktrees = [
@@ -205,18 +231,29 @@ class SlotPlanTest(unittest.TestCase):
         ]
         tmp_scan = {
             "findings_files": [{"path": "/tmp/review-findings-pr3.X", "pr": 3}],
+            "unregistered_review_paths": [
+                {"path": "/tmp/rev-4.X", "pr": 4, "has_git_marker": True}
+            ],
         }
         capacity = {
             "review_process_slots": 2,
             "conservative_new_worktree_slots": 1,
         }
         plan = inventory.plan_slots(topology, worktrees, tmp_scan, capacity)
-        self.assertEqual([row["pr"] for row in plan["recovery_actions"]], [1])
-        self.assertEqual([row["pr"] for row in plan["ready_slots"]], [3])
+        self.assertEqual(
+            [row["pr"] for row in plan["recovery_actions"]],
+            [1, 3, 4],
+        )
+        self.assertEqual([row["pr"] for row in plan["ready_slots"]], [5])
         self.assertNotIn(2, [row["pr"] for row in plan["ready_slots"]])
-        self.assertEqual(plan["ready_slots"][0]["external_findings"], [
-            "/tmp/review-findings-pr3.X"
-        ])
+        self.assertEqual(
+            plan["recovery_actions"][1]["external_findings"],
+            ["/tmp/review-findings-pr3.X"],
+        )
+        self.assertEqual(
+            plan["recovery_actions"][2]["unregistered_review_paths"],
+            ["/tmp/rev-4.X"],
+        )
         self.assertEqual(
             plan["ready_slots"][0]["required_before_dispatch"],
             ["cumulative_history_check", "merge_base_delta_check"],
@@ -232,6 +269,18 @@ class SlotPlanTest(unittest.TestCase):
         )
         self.assertEqual(plan["ready_slots"], [])
         self.assertIn("limit", plan["slot_suppression_reason"])
+        scan_failed = inventory.plan_slots(
+            inventory.analyze_topology([_pr(1, "root")], limit=100),
+            [],
+            {
+                "findings_files": [],
+                "unregistered_review_paths": [],
+                "scan_error": "permission denied",
+            },
+            {"review_process_slots": 10, "conservative_new_worktree_slots": 10},
+        )
+        self.assertEqual(scan_failed["ready_slots"], [])
+        self.assertIn("recovery scan failed", scan_failed["slot_suppression_reason"])
 
 
 if __name__ == "__main__":

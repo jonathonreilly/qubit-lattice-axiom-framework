@@ -1,0 +1,53 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_fillers_l1_bit_and_2026_08_15.py
+runner_sha256: 97bb193d013f49ebaa69542ba6db7b1394894be74bfe5becbbea8a1a86c280e1
+input_fingerprint_sha256: 5f488b635c3f233af7575eb5d1643473a13b78bb49b31a76846f17b1f5e48037
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_FILLERS_L1_BIT_AND_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+n_rotations=24
+n_orbits=10
+|F_cut|=32
+N_fill=8
+L1_tuple={'wt1': 1, 'opp2': 0, 'adj2': 1, 'vertex3': 1, 'mixed3': 1}
+N_and=1
+f_L1_locks=12 halt=4 history=(1, 4, 8, 11, 12)
+hamming_locks=9
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required note-plus-axiom string-literal tuple
+PASS: thm1-twenty-four-rotations exactly 24 proper cube rotations
+PASS: thm1-ten-orbits exactly 10 axis-type orbits partition the 64 cells
+PASS: thm1-named-orbit-types wt1/opp2/adj2/vertex3/mixed3 are the listed axis-type orbits
+PASS: thm1-f-L1-is-unbalanced-axis f_L1 is 1 iff some axis has c_+ != c_- (n != 0)
+PASS: thm1-f-L1-not-hamming f_L1 is not Hamming |c|_1 mod 2
+PASS: thm1-f-L1-in-eight-and-tuple f_L1 is in the 8 fillers and matches (wt1,opp2,adj2,vertex3,mixed3)=(1,0,1,1,1)
+PASS: thm1-eight-fillers exactly eight F_cut maps fill the twelve-vertex two-cube
+PASS: thm1-complement-even-fixed wt5/adj4/opp4 equal wt1/adj2/opp2 by complement-even
+PASS: thm1-wt1-required-for-wave every 1-site filler has wt1=1; wt1=0 empties the first wave
+PASS: thm2-n-and N_and = 1 is the number of fillers matching L1's remaining bits
+PASS: thm3-unique-no-second-match N_and=1; no second filler matches the tuple
+PASS: thm1-two-cube-twelve the two-cube has twelve vertices and contains the seed
+PASS: lattice-and-admissibility-parents the live axiom memo supplies Z^3, proper cubic rotations, and a covariant nearest-neighbor rule
+PASS: note-contract bounded theorem, displayed-not-adopted bit AND, and machine status
+PASS: claim-type-and-gate N1-N8 and a passing no-go disposition are source-visible
+PASS: forbidden-phrases-absent the note and runner omit the dispatch-forbidden phrases
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: no-axiom-edit the bit tuple is not written into Admissibility
+PASS: not-leftover-6399 the residual is N_and, not leftover-character of the eight-filler census
+PASS: off-patch-zero off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: claim-scope-and-n-and claim_scope reports N_and among the 8 and does not adopt the tuple
+per_element: checked exactly — each of the 64 neighbor 6-tuples is assigned its axis-type orbit
+per_site: checked exactly — each of the twelve two-cube vertices uses the same six-direction stencil
+per_mode: checked exactly — every F_cut map is classified as filler or not, then filtered by the bit tuple
+per_block: checked exactly — N_and is the AND cardinality inside the eight-filler set
+lattice_wide: checked and not executed — no Z^3-wide formation law or Admissibility rewrite is claimed
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

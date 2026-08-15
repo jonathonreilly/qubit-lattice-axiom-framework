@@ -1,0 +1,92 @@
+===== runner cache v1 =====
+runner: scripts/blank_block_one_site_fill_count_2026_08_15.py
+runner_sha256: aa92d7e23e825368da65ba0819db986816be96e63ee2b2f23bc453c8527e156f
+input_fingerprint_sha256: 01fbddc1cb66895c3a698de7d564213674941466b415cde61c949c5a7cd87db2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+Blank-block one-site fill count on the two-cube
+AUDIT_INPUT_PATHS:
+  docs/BLANK_BLOCK_ONE_SITE_FILL_COUNT_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+scope: twelve-vertex two-cube; 1024 cube-covariant f; blank-block; 1-site seed
+PASS: audit-input-paths-exist
+PASS: audit-input-paths-unique-relative
+PASS: audit-timeout-declared
+PASS: lattice-quote-present
+PASS: record-form-quote-present
+PASS: record-unreadability-present
+PASS: hygiene-avoids-'G_N'
+PASS: hygiene-avoids-'1/r'
+PASS: hygiene-avoids-'1/r^2'
+PASS: hygiene-avoids-'Lattice-named'
+PASS: hygiene-avoids-'not a TOE'
+PASS: hygiene-avoids-'exhausted'
+PASS: hygiene-avoids-'only route'
+PASS: hygiene-avoids-'we adopt'
+PASS: hygiene-avoids-'Codex'
+PASS: hygiene-avoids-'L_phys'
+PASS: note-has-no-runner-cache-path
+PASS: note-has-no-citation-manifest
+PASS: note-writes-no-cache
+PASS: note-claim-scope-exact
+PASS: patch-has-twelve-sites
+PASS: seed-on-patch
+PASS: twenty-four-proper-rotations
+PASS: twenty-four-slot-permutations
+PASS: ten-orbits
+PASS: orbit-sizes  (sizes=[1, 6, 3, 12, 8, 12, 3, 12, 6, 1])
+PASS: orbits-partition-sixty-four
+PASS: empty-orbit-singleton
+PASS: f-L1-orbit-constant
+PASS: hamming-orbit-constant
+PASS: f-L1-not-hamming  (L1=(0, 1, 0, 1, 1, 1, 0, 1, 1, 0) ham=(0, 1, 0, 0, 1, 1, 0, 0, 1, 0))
+PASS: f-L1-empty-is-zero
+PASS: f-L1-is-unbalanced-axis
+PASS: adjacent-pair-separates-L1-from-hamming
+PASS: note-L1-is-unbalanced-axis-never-hamming
+PASS: one-thousand-twenty-four-maps
+PASS: every-site-has-off-patch-neighbor
+PASS: theorem-1-first-wave-empty-for-every-f  (empty=1024)
+PASS: theorem-2-halt-seed-only-for-every-f  (seed_only=1024)
+PASS: theorem-2-n-fill-zero  (N_fill=0)
+PASS: theorem-2-n-fill-on-f-empty-zero-subclass
+PASS: f-empty-zero-subclass-size
+PASS: displayed-L1-is-one-of-the-maps
+PASS: displayed-L1-blank-first-wave-empty
+PASS: displayed-L1-blank-halt-is-seed
+PASS: discriminator-o0-L1-first-wave-nonempty  (W=[(0, 0, 1), (0, 1, 0), (1, 0, 0)])
+PASS: discriminator-o0-L1-first-wave-is-axis-sites
+PASS: discriminator-o0-L1-fills  (|locks|=12 T=4)
+PASS: discriminator-hamming-is-not-used-as-L1
+PASS: discriminator-o0-hamming-need-not-match-L1-halt  (ham_T=4 ham_|locks|=9 ham_W=[(0, 0, 1), (0, 1, 0), (1, 0, 0)])
+PASS: theorem-3-vacuum-required-to-fill
+PASS: note-machine-status-complete
+PASS: note-one-hop-dependency
+PASS: note-no-go-n1-through-n8
+PASS: note-no-go-route-enumeration
+PASS: note-steelman-present
+PASS: note-halt-census-not-first-wave-only
+PASS: axiom-file-unedited-in-this-dispatch
+per_element: executed — each of the 1024 cube-covariant occupancy maps is counted at halt
+per_site: executed — blank-block readiness is tested at every unlocked on-patch site
+per_mode: executed — displayed L1 is the unbalanced-axis n!=0 map, never Hamming |c|_1 mod 2
+per_block: executed — only the supplied two-cube, 1-site seed, and blank-block encoding are run
+lattice_wide: checked and not executed — no full Z^3 history or adopted formation law is claimed
+PASS: note-n5-five-line-certificate
+N_maps: 1024
+N_fill: 0
+N_empty_wave: 1024
+N_seed_only: 1024
+N_empty_zero_subclass: 512
+N_fill_empty_zero_subclass: 0
+o0_L1_halt_tick: 4
+o0_L1_lock_count: 12
+TOTAL: PASS=59 FAIL=0
+
+----- stderr -----
+

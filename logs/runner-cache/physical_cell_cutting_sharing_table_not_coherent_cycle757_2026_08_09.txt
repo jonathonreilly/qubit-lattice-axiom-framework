@@ -1,14 +1,14 @@
 ===== runner cache v1 =====
 runner: scripts/physical_cell_cutting_sharing_table_not_coherent_cycle757_2026_08_09.py
-runner_sha256: ac6e74e6432642a48495cc7cd50b8d17e87e7a788e995b025319acade889934e
+runner_sha256: 50c78ff9abd1f82779d4fa072f98e5af2c86c5f8d2b3b6dd588144eed3eb0375
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 2.74
+elapsed_sec: 2.65
 status: ok
 ----- stdout -----
 Every count below is measured here.
 the object: 15800 cuttings and 192 pieces, 24 pieces to a cutting, 1975 cuttings through a piece
-PASS C0  all incidence degrees, exact simplex inverses, and the 24 by 2 declared action match
+PASS C0  the cell sample is collision- and boundary-free; incidence degrees, exact inverses, and the declared action match
 the 192 free eight-piece sets meet each of the 15800 cuttings between 1 and 1 times
 PASS C1  each of the 192 sets is an exact cover: the table sends it to the all ones column over all 15800 cuttings
 the cover by piece table has row sums 8 to 8 and column sums 8 to 8

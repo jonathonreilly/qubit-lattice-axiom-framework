@@ -311,9 +311,12 @@ emit("the object: {0} cuttings and {1} pieces, {2} pieces to a cutting, "
      "{3} cuttings through a piece".format(NS, NPO, int(RW.min()), int(CS.min())))
 gate(NS == 15800 and NPO == 192 and int(RW.min()) == int(RW.max()) == 24
      and int(CS.min()) == int(CS.max()) == 1975 and int(RW.sum()) == int(CS.sum())
+     and len(SUB) == 4368 and NPIECE == 2672 and LO == 6 and NQ == 2736
+     and coll == 0 and face == 0 and CB == 3 and SB == 12810
+     and FULL == {24} and len(KEYMAP) == NS
      and INV_OK and len(ROT) == 24 and len(G) == 48,
-     "C0", "all incidence degrees, exact simplex inverses, and the 24 by 2 "
-     "declared action match")
+     "C0", "the cell sample is collision- and boundary-free; incidence degrees, "
+     "exact inverses, and the declared action match")
 
 emit("the {0} free eight-piece sets meet each of the {1} cuttings "
      "between {2} and {3} times".format(NC, NS, int(COV.min()), int(COV.max())))

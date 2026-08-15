@@ -75,7 +75,11 @@ axiom document.
 The runner begins with the 16 corners of the labelled unit four-cube. It
 enumerates five-corner simplices, keeps unit normalized-volume pieces, and
 then enumerates cuttings at the declared adjacency-cost floor. Independent
-row and column sums of the resulting incidence matrix give
+reconstruction guards gate 4,368 five-corner subsets, 2,672 unit-volume
+simplices, cost floor 6, and 2,736 orbit-generated sample points with zero
+label collisions and zero sample points on a simplex boundary. Every completed
+cover has 24 pieces. Independent row and column sums of the resulting incidence
+matrix then give
 
 | finite quantity | exact value |
 |---|---:|
@@ -175,7 +179,7 @@ runner also checks each orbit rank against its orbit-size ceiling.
 
 | obligation | discharge |
 |---|---|
-| reconstruct the finite object | exhaustive coordinate enumeration in the runner |
+| reconstruct the finite object | exhaustive coordinate enumeration plus gated subset, simplex, cost-floor, sample-point, collision, boundary, and cover-size invariants |
 | justify the eight-piece count | incidence inequality above plus independently gated exact-cover columns |
 | establish regular sharing profiles | all rows and complete off-diagonal multisets are gated |
 | establish product witnesses | exact integer products and explicit same-relation/ordered-product entries |

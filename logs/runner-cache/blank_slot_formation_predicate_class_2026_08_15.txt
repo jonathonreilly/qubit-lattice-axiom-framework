@@ -1,0 +1,48 @@
+===== runner cache v1 =====
+runner: scripts/blank_slot_formation_predicate_class_2026_08_15.py
+runner_sha256: 74a41c5b3f8a4a54e33b748d7fa27c77abf9d119a9f97555caffd4c5be545faf
+input_fingerprint_sha256: f3f2016a763db9d72be78007c4ad3e8818276d7bcaeeaff8c88c83a342a2ce6a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.23
+status: ok
+----- stdout -----
+external_scientific_inputs: current Lattice, Admissibility, and Record boundaries are source-bound; no observation or fit
+integrity_reads: this runner, its note, and the current axiom memo; no other scientific inputs
+construction: 24 proper cube rotations acting on six nearest-neighbor slots; alphabet {0,1,blank}; boolean G-covariant predicates
+negative_scope: the counted class is displayed, not adopted as a formation law, site selector, or Record compiler
+PASS: audit-inputs declared source-bound inputs exist as the required two-path literal
+PASS: source-lattice current cubic nearest-neighbor and proper-rotation wording is pinned
+PASS: source-admissibility current covariant nearest-neighbor wording is pinned
+PASS: source-record-boundary current lock, content-only readout, and unreadable absence are pinned
+PASS: source-formation-boundary Admissibility still withholds formation site, probability, and rate
+PASS: thm1-group-order |G|=24 distinct proper rotations of the six slots
+PASS: thm1-domain-size |A|=3 and |A^6|=729
+N_orb_perp=57
+N_orb_binary=10
+|F_perp|=2^57=144115188075855872
+|F_G|=2^10=1024
+blank_bearing_orbits=47
+PASS: thm1-orbit-enumeration N_orb_perp from 729 cells and 24 rotations equals the Burnside count
+PASS: thm1-boolean-class-size |F_perp| equals 2 to the orbit count
+PASS: thm1-note-reports-count note displays the computed orbit count and boolean class size
+PASS: thm1-blank-stays-blank rotations permute slots and send blank only to blank
+PASS: thm2-binary-orbits {0,1}^6 has exactly 10 G-orbits by the same enumeration
+PASS: thm2-binary-invariant {0,1}^6 is G-invariant, and so is the blank-bearing complement
+PASS: thm2-restriction-surjective zero-on-blank extension realizes every covariant predicate on {0,1}^6
+PASS: thm2-restriction-map restriction F_perp -> F_G is well-defined because {0,1}^6 is G-invariant
+PASS: thm3-strict-enlargement N_orb_perp > 10 so |F_perp| > |F_G|
+PASS: thm3-blank-not-relabel blank is new orbit content: letter counts are G-invariants
+PASS: claim-scope-displayed claim_scope states the counted class, the inequality, onto restriction, and display-only status
+PASS: displayed-not-adopted note refuses to adopt a member of the class as a formation law
+PASS: forbidden-phrases-absent note and runner avoid the dispatch-forbidden phrases
+PASS: machine-status-contract note carries bounded-support status and the N1-N8 gate
+per_element: checked exactly — each of the 729 cells is assigned its G-orbit representative
+per_site: checked exactly — six nearest-neighbor slots at one displayed site
+per_mode: checked exactly — boolean G-covariant predicates; ternary ready/blocked/no maps are uncounted
+per_block: checked exactly — restriction onto the 10-orbit binary class by zero extension
+lattice_wide: checked and not executed — no physical formation predicate or lattice-wide ready law is claimed
+TOTAL: PASS=21 FAIL=0
+
+----- stderr -----
+

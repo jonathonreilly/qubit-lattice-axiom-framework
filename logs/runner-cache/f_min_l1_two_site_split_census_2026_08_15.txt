@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/f_min_l1_two_site_split_census_2026_08_15.py
+runner_sha256: d6ac1fd1d402e38bfb6af3272e4198f4e9e2996ef2f5ac0dc0d26271d9f52893
+input_fingerprint_sha256: 6ceca2936cf2532488687c998cc1adb420d145b153e729ea756bd2ab5ed22790
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+external_scientific_inputs: current Lattice, Admissibility, and Record boundaries; no observations or fits
+integrity_reads: this runner, its note, and the axiom memo; no other scientific inputs
+construction: exhaustive two-site lock-step census on the twelve-vertex two-cube with off-patch occupancy 0
+negative_scope: N_split is displayed; no seed is adopted and no selector is written into Admissibility
+PASS: audit-inputs the two declared source-bound inputs exist
+PASS: source-lattice current cubic nearest-neighbor wording is pinned
+PASS: source-admissibility current local-distribution wording is pinned
+PASS: source-record-boundary current lock/content/unreadable-at-absence wording is pinned
+PASS: source-formation-boundary formation site/probability/rate remains outside Admissibility
+PASS: two-cube-cardinality the two-cube is exactly the twelve sites {0,1,2} x {0,1} x {0,1}
+PASS: pair-count there are C(12,2)=66 unordered two-site seeds
+PASS: theorem-1-face-diagonal the face-diagonal seed fills under both maps with history (2, 7, 11, 12)
+PASS: theorem-1-distinguisher the seed {(0,0,0),(2,1,1)} splits fill or lock history
+census: N_split=4 N_fill_L1=62 N_fill_min=58 N_fill_both=58 N_history_only=0 N_fill_bit_only=0
+PASS: theorem-2-census-range the four census integers lie in 0..66 and N_fill_both <= min(N_fill_L1, N_fill_min)
+PASS: theorem-2-split-positive at least the displayed distinguisher contributes to N_split
+PASS: theorem-3-display the note displays the computed N_split and does not adopt a seed
+PASS: theorem-3-fill-counts the note reports the three fill counts
+PASS: identity-l1-not-hamming opp2 has Hamming weight 2 but n_unbalanced=0, so f_L1 does not fire
+PASS: identity-min-nboth-zero f_min fires on nonempty n_both=0 and refuses mixed3
+PASS: forbidden-phrases the note avoids the dispatch-forbidden phrases
+PASS: no-admissibility-selector the note does not write a seed selector into Admissibility
+PASS: claim-scope the YAML claim_scope states the 66-seed display
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,54 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_k4_one_site_coverage_2026_08_15.py
+runner_sha256: 36e25282f378852dcc63f2afd989457cf970458ccfa04294821a15fe5dad0b97
+input_fingerprint_sha256: 71485a6a8953a98f6faffed58e7bf84faaa00d10e19b5fb247c33b41f78eb6cf
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_K4_ONE_SITE_COVERAGE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+n_rotations=24
+n_orbits=10
+orbit_types_and_sizes=(0, 0, 3):1,(0, 1, 2):3,(0, 2, 1):3,(0, 3, 0):1,(1, 0, 2):6,(1, 1, 1):12,(1, 2, 0):6,(2, 0, 1):12,(2, 1, 0):12,(3, 0, 0):8
+remaining_labels=('wt1', 'opp2', 'adj2', 'vertex3', 'mixed3')
+k4cov=[(1, 1, 1, 0, 0), (1, 1, 1, 0, 1), (1, 1, 1, 1, 0), (1, 1, 1, 1, 1)]
+n_one_site_seeds=12
+cov1(1, 1, 1, 0, 0)=8 missed=((1, 0, 0), (1, 0, 1), (1, 1, 0), (1, 1, 1))
+cov1(1, 1, 1, 0, 1)=8 missed=((1, 0, 0), (1, 0, 1), (1, 1, 0), (1, 1, 1))
+cov1(1, 1, 1, 1, 0)=12 missed=()
+cov1(1, 1, 1, 1, 1)=12 missed=()
+f_L1_remaining=(1, 0, 1, 1, 1)
+f_L1_in_k4cov=False
+cov1_eq_12_iff_vertex3=True
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required note-plus-axiom string-literal tuple
+PASS: thm1-twenty-four-rotations exactly 24 proper cube rotations
+PASS: thm1-ten-orbits exactly 10 orbits partition the 64 cells of {0,1}^6
+PASS: thm1-f-L1-not-hamming f_L1 is unbalanced-axis and is not Hamming |c|_1 mod 2
+PASS: thm1-two-cube-and-twelve-seeds the two-cube has twelve vertices and twelve one-site seeds
+PASS: thm1-k4cov-in-f-cut the four k=4 remaining-bit tuples are F_cut maps with (wt1,opp2,adj2)=(1,1,1)
+PASS: thm1-vertex3-one-cov1-twelve cov1((1,1,1,1,0))=12 and cov1((1,1,1,1,1))=12
+PASS: thm2-vertex3-zero-cov1-eight cov1((1,1,1,0,0))=8 and cov1((1,1,1,0,1))=8
+PASS: thm3-cov1-twelve-iff-vertex3 inside k4cov, cov1=12 iff vertex3=1
+PASS: lattice-and-admissibility-parents the live axiom memo supplies Z^3, proper cubic rotations, and a covariant nearest-neighbor rule
+PASS: note-contract bounded theorem, displayed-not-adopted vertex3 equivalence, and machine status
+PASS: claim-type-and-gate N1-N8 and a passing no-go disposition are source-visible
+PASS: forbidden-phrases-absent the note and runner omit the dispatch-forbidden phrases
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: no-axiom-edit the theorem proposes no axiom change and does not adopt vertex3
+PASS: off-patch-zero off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: not-leftover-6435-or-6443 the residual is k=4 1-site coverage, not leftover-character of #6435 or #6443
+PASS: claim-scope-equivalence claim_scope states cov1=12 iff vertex3=1 inside the four k=4 maps
+per_element: checked exactly — each of the 64 neighbor 6-tuples is assigned its axis-type orbit
+per_site: checked exactly — each of the twelve two-cube vertices uses the same six-direction stencil
+per_mode: checked exactly — each of the four k=4 maps is scored on the 12 one-site seeds
+per_block: checked exactly — inside k4cov, cov1=12 iff vertex3=1
+lattice_wide: checked and not executed — no Z^3-wide formation law or physical Admissibility selector is claimed
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

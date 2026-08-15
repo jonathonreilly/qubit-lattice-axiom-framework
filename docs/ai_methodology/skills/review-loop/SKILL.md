@@ -362,6 +362,24 @@ review-only flags contradict the drain's land-end-to-end contract).
    scope per the draft rule below). Detect stacks and cumulative-tower
    branches first; stacked PRs review and land bottom-up as deltas, never in
    parallel with each other.
+
+   Before allocating a reviewer wave, run
+   `python3 scripts/review_loop_backlog_inventory.py` (use `--json` for the
+   complete machine-readable snapshot). It amortizes the GitHub enumeration
+   into one read-only `gh pr list` invocation and reports declared-base stack
+   order, unresolved bases, registered worktrees and unregistered `rev-*`
+   recovery candidates, external findings files, disk and observed worker-CLI
+   headroom, and capacity-bounded candidate slots. Re-run it before each wave
+   because PRs, worktrees, disk, and the shared process pool move independently.
+
+   The helper's `ready` label means only `baseRefName == main` with no detected
+   existing checkout. It never launches a worker and grants no review,
+   science, merge, audit, or landing readiness. Its topology is limited to
+   declared GitHub base edges: still perform the cumulative-history,
+   merge-base, and independent delta checks here, and still run every lens and
+   gate below. Inspect every reported existing worktree/findings path for
+   ownership and recovery before creating a duplicate; the helper never
+   prunes, removes, or modifies one.
 2. **One isolated worktree per PR.** Parallel reviews never share a
    worktree or a checkout; shared worktrees race and have destroyed findings
    in this repo's history.

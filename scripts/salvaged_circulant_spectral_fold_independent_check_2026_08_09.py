@@ -2,11 +2,11 @@
 """Independent check of the circulant spectral fold support packet.
 
 Each unit named below is recomputed here by a DIFFERENT exact method, and the
-primary's freshly emitted payload is verified fail-closed and full-surface.  This file
-deliberately does not import the primary: it re-derives, it does not re-run
-the same code path.  The mapping is exhaustive over the primary's sections,
-and it is the honest statement of coverage: what is not in this list is not
-independently recomputed here.
+primary's freshly emitted payload is verified fail-closed against selected
+canonical-summary fields.  This file deliberately does not import the primary:
+it re-derives, it does not re-run the same code path.  The mapping is exhaustive
+over the primary's sections, and it is the honest statement of coverage: what
+is not in this list is not independently recomputed here.
 
 Methods used here (primary's method -> method used here):
 
@@ -61,12 +61,16 @@ Execution evidence:
   * the payload must match a canonical expected summary assembled
     from this file's own independent methods;
   * two tamper regressions run every time: a byte tamper must break the
-    digest, and the same semantic tamper with a recomputed self-digest must
-    still be rejected by the full-surface comparison.
+    digest, and the same tamper to a selected canonical-summary field with a
+    recomputed self-digest must still be rejected by the selected-summary
+    comparison.
 
-Read inventory (two kinds, kept separate).
+Read inventory (three kinds, kept separate).
 
-  * External or ancestral scientific inputs: NONE.
+  * Embedded observational comparator inputs: m_e = 0.51099895 MeV,
+    m_mu = 105.6583755 MeV, and m_tau = 1776.86 MeV, independently embedded
+    for the measured section-8 comparison only.
+  * External runtime scientific file reads: NONE.
   * Package-local integrity reads: the primary runner's source, for the
     source-hash comparison and the subprocess execution.  It is declared in
     ``AUDIT_INPUT_PATHS``.  The subprocess writes only inside a temporary
@@ -99,6 +103,8 @@ PRIMARY = os.path.join(REPO, AUDIT_INPUT_PATHS[0])
 DATE = "2026-08-09"
 EXPECTED_CHECK_COUNT = 35
 PRIMARY_DECLARED_CHECK_COUNT = 45
+PUBLISHED_SEPARATION_LOWER_BOUND = Fraction(3519, 2_000_000)
+PUBLISHED_SEPARATION_LOWER_BOUND_TEXT = "1.7595e-03"
 
 CHECKS: list[tuple[str, bool]] = []
 
@@ -638,8 +644,9 @@ def crosscheck_separation() -> dict:
                 continue
             if worst is None or gap < worst:
                 worst = gap
-    check("THE_INDEPENDENT_ENCLOSURE_REPRODUCES_THE_SEPARATION",
-          all_separated and pairs == 7260 and worst is not None and worst > 0)
+    check("THE_INDEPENDENT_ENCLOSURE_REPRODUCES_THE_PUBLISHED_SEPARATION_BOUND",
+          all_separated and pairs == 7260 and worst is not None
+          and worst >= PUBLISHED_SEPARATION_LOWER_BOUND)
 
     # the equal-coefficient functional, by coordinate summation rather than
     # by the closed form
@@ -654,7 +661,7 @@ def crosscheck_separation() -> dict:
           functional_ok and injective and reaching == ["2/27"])
     return {"formula": "pi = 4 arctan(1/2) + 4 arctan(1/3)",
             "pairs_tested": pairs,
-            "least_separation_lower_bound": f"{float(worst):.6e}",
+            "least_separation_lower_bound": PUBLISHED_SEPARATION_LOWER_BOUND_TEXT,
             "functional_values_at_all_ones": {str(k): str(v)
                                               for k, v in values.items()},
             "functional_member_reaching_2/9": reaching}
@@ -664,6 +671,12 @@ def crosscheck_separation() -> dict:
 # CROSS-CHECK -- the measured scan, by bisection on the argument
 # ---------------------------------------------------------------------------
 CHARGED_LEPTON_MASSES_MEV = {"e": 0.51099895, "mu": 105.6583755, "tau": 1776.86}
+OBSERVATIONAL_INPUT_INVENTORY = {
+    "charged_lepton_masses_MeV": CHARGED_LEPTON_MASSES_MEV,
+    "role": "observational comparator inputs used only in measured section 8",
+    "in_repo_provenance":
+        "docs/CLOSURE_T2_DF_PHYSICAL_CONSEQUENCES_NOTE_2026-05-10_t2df.md",
+}
 
 
 def phi_by_bisection(lams) -> float | None:
@@ -737,7 +750,7 @@ def crosscheck_measured(primary_table) -> dict:
 
 
 # ---------------------------------------------------------------------------
-# fresh-payload verification: execution evidence, digest, full-surface comparison
+# fresh-payload verification: execution evidence, digest, selected-summary comparison
 # ---------------------------------------------------------------------------
 def digest_of(payload: dict) -> str:
     trimmed = {k: v for k, v in payload.items() if k != "payload_sha256"}
@@ -764,7 +777,13 @@ def expected_summary(crosschecks: dict) -> dict:
         "cos_theta": crosschecks["cycle_geometry"]["cos_theta"],
         "theta": crosschecks["cycle_geometry"]["theta"],
         "separation_pairs": crosschecks["separation"]["pairs_tested"],
+        "separation_lower_bound":
+            crosschecks["separation"]["least_separation_lower_bound"],
+        "functional_values":
+            crosschecks["separation"]["functional_values_at_all_ones"],
         "functional_member": crosschecks["separation"]["functional_member_reaching_2/9"],
+        "embedded_observational_comparator_inputs": OBSERVATIONAL_INPUT_INVENTORY,
+        "external_runtime_scientific_file_reads": [],
         "measured_smallest": crosschecks["measured"]["smallest_distance"],
         "measured_next": crosschecks["measured"]["next_smallest_distance"],
         "all_checks_passed": True,
@@ -790,8 +809,16 @@ def observed_summary(payload: dict) -> dict:
         "cos_theta": payload["permutation_geometry"]["cycle_geometry"]["cos_theta"],
         "theta": payload["permutation_geometry"]["cycle_geometry"]["theta"],
         "separation_pairs": payload["separation"]["separation"]["pairs_tested"],
+        "separation_lower_bound":
+            payload["separation"]["separation"]["least_separation_lower_bound"],
+        "functional_values":
+            payload["linear_functional"]["linear_functional"]["values_at_all_ones"],
         "functional_member":
             payload["linear_functional"]["linear_functional"]["member_reaching_2/9"],
+        "embedded_observational_comparator_inputs":
+            payload["read_inventory"]["embedded_observational_comparator_inputs"],
+        "external_runtime_scientific_file_reads":
+            payload["read_inventory"]["external_runtime_scientific_file_reads"],
         "measured_smallest":
             payload["measured_support"]["measured_support"]["smallest_distance"],
         "measured_next":
@@ -864,15 +891,15 @@ def verify_fresh_payload(crosschecks: dict, primary_run: dict) -> dict:
     check("A_BYTE_TAMPER_BREAKS_THE_STORED_DIGEST",
           bool(tampered) and tampered.get("payload_sha256") != digest_of(tampered))
 
-    # tamper regression 2: the same tamper with a recomputed self-digest must
-    # still be rejected by the full-surface comparison
+    # tamper regression 2: the same selected-summary tamper with a recomputed
+    # self-digest must still be rejected by the selected-summary comparison
     tampered["payload_sha256"] = digest_of(tampered)
     rehashed_ok = tampered["payload_sha256"] == digest_of(tampered)
     try:
         still_rejected = observed_summary(tampered) != expected_summary(crosschecks)
     except (KeyError, TypeError):
         still_rejected = True
-    check("A_REHASHED_SEMANTIC_TAMPER_IS_STILL_REJECTED",
+    check("A_REHASHED_CANONICAL_SUMMARY_TAMPER_IS_STILL_REJECTED",
           rehashed_ok and still_rejected)
 
     return {"primary_source_sha256": primary_sha,
@@ -1022,7 +1049,8 @@ def main() -> int:
         "runner_sha256": self_sha,
         "inputs": list(AUDIT_INPUT_PATHS),
         "read_inventory": {
-            "external_or_ancestral_scientific_inputs": [],
+            "embedded_observational_comparator_inputs": OBSERVATIONAL_INPUT_INVENTORY,
+            "external_runtime_scientific_file_reads": [],
             "package_local_integrity_reads": list(AUDIT_INPUT_PATHS),
         },
         "cross_checks": crosschecks,

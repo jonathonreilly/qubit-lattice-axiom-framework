@@ -31,7 +31,7 @@ Runners:
 
 - [`salvaged_circulant_spectral_fold_2026_08_09.py`](../scripts/salvaged_circulant_spectral_fold_2026_08_09.py)
   (primary; 45 computed checks, fail-closed, exit 0 only on full PASS;
-  no declared inputs and no generated output on a normal run)
+  no declared file inputs and no generated output on a normal run)
 - [`salvaged_circulant_spectral_fold_independent_check_2026_08_09.py`](../scripts/salvaged_circulant_spectral_fold_independent_check_2026_08_09.py)
   (independent check; 35 computed checks; each unit listed in its docstring
   is recomputed by a different exact method, and that list is the honest
@@ -40,11 +40,11 @@ Runners:
   digest, compares the fresh payload against a
   canonical summary assembled from its own methods, and runs two tamper
   regressions every time — a byte tamper must break the digest, and the same
-  semantic tamper with a recomputed self-digest must still be rejected by the
-  full-payload comparison)
+  tamper to a selected canonical-summary field with a recomputed self-digest
+  must still be rejected by the selected-summary comparison)
 
 Constitutional effect: none. This package changes no axiom, foundation,
-primitive, registry, policy, queue, audit result, or audit status.
+primitive, dependency policy, queue, audit result, or audit status.
 
 Reproduction: both runners are self-contained Python 3 standard-library
 programs. `python3 scripts/salvaged_circulant_spectral_fold_2026_08_09.py`
@@ -226,10 +226,10 @@ angle. It is a property of a 3-by-3 permutation matrix.
 ## 6. The equal-coefficient linear functional
 
 Exact results: `I_alpha(1, 1, 1) = 3 alpha`; the value is injective in
-`alpha`; and among the tested rational family exactly one member,
-`alpha = 2/27`, reaches the stipulated comparator `2/9`. The checker
-recomputes all three by coordinate summation rather than from the closed
-form.
+`alpha`; and in the tested rational family
+`{0, 1/9, 1/3, 1, 2/27, -5/4}` exactly one member, `alpha = 2/27`, reaches
+the stipulated comparator `2/9`. The checker recomputes all three by
+coordinate summation rather than from the closed form.
 
 Not established: any identification of `I_alpha` with a readout, any
 statement about the full set of constraints such a functional might
@@ -241,7 +241,7 @@ expression that reaches a value selects nothing.
 Exact result on a declared finite family: for every rational `q = m/d`
 with `1 <= d <= 60` and `|m| <= 60` — 7260 pairs — the number `2/9` is
 separated from `2 pi q`, with a verified separation of at least
-`1.76e-03`. The verification uses a rational enclosure of `pi` computed
+`1.7595e-03`. The verification uses a rational enclosure of `pi` computed
 in-file from an alternating arctangent series with its own tail bound
 (Machin's formula in the primary, `pi = 4 arctan(1/2) + 4 arctan(1/3)`
 in the checker, with the two enclosures required to overlap).
@@ -339,8 +339,28 @@ packet_helper_runner: scripts/salvaged_circulant_spectral_fold_independent_check
 The `packet_helper_runner` line declares the independent checker
 claim-scoped and co-load-bearing: it does not import the primary, so the
 packet builder cannot reach it by transitive imports, and no audit
-packet for this note is complete without it. The matching registry entry
-is included with this package.
+packet for this note is complete without it. The matching entries must be
+present in both packet consumers, as recorded below.
+
+## Review record
+
+This is a self-contained salvage. Closed, unlanded PR #5995 and its
+ancestors grant no authority to this packet; their broad reclassification
+and negative claims were dropped and are not inherited here. The retained
+scope ends at the stipulated-object exact results in sections 1 to 7 and
+the explicitly measured, comparator-only scan in section 8. No audit verdict
+is applied by this record.
+
+Hard landing condition: the following exact claim-scoped entry must remain
+present, identically, in `EXPLICIT_PACKET_HELPER_RUNNER_PATHS` in both
+`docs/audit/scripts/build_citation_graph.py` and
+`scripts/audit_packet_script_deps.py`:
+
+```python
+"circulant_spectral_fold_exact_algebra_support_note_2026-08-09": [
+    "scripts/salvaged_circulant_spectral_fold_independent_check_2026_08_09.py",
+],
+```
 
 ## Scope discipline, and what is mechanically scanned
 

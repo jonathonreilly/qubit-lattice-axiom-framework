@@ -11,11 +11,15 @@ Sections 1-7 are exact rational/integer arithmetic; section 8 is a
 floating-point measurement against imported charged-lepton masses and is
 labelled as such at every surface it touches.
 
-Read inventory (two kinds, kept separate).
+Read inventory (three kinds, kept separate).
 
-  * External or ancestral scientific inputs: NONE.  This runner reads no
-    note, no receipt, no ledger, no git object, and no other runner.  It
-    declares no ``AUDIT_INPUT_PATHS``.
+  * Embedded observational comparator inputs: m_e = 0.51099895 MeV,
+    m_mu = 105.6583755 MeV, and m_tau = 1776.86 MeV, used only in the
+    measured section 8 with the provenance and non-derivational role stated
+    there.
+  * External runtime scientific file reads: NONE.  This runner reads no note,
+    receipt, ledger, git object, or other runner.  It declares no
+    ``AUDIT_INPUT_PATHS``.
   * Package-local integrity reads: exactly one -- this runner reads its own
     source file, both to bind its emitted payload and to scan that source
     text in section 9.
@@ -89,6 +93,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(HERE)
 DATE = "2026-08-09"
 EXPECTED_CHECK_COUNT = 45
+PUBLISHED_SEPARATION_LOWER_BOUND = Fraction(3519, 2_000_000)
+PUBLISHED_SEPARATION_LOWER_BOUND_TEXT = "1.7595e-03"
 
 CHECKS: list[tuple[str, bool]] = []
 
@@ -900,14 +906,15 @@ def section_separation() -> dict:
             separated += 1
             if worst is None or gap < worst:
                 worst = gap
-    check("EVERY_RATIONAL_IN_THE_DECLARED_FAMILY_IS_SEPARATED_FROM_TWO_NINTHS",
-          all_separated and separated == total and worst is not None and worst > 0)
+    check("EVERY_RATIONAL_IN_THE_DECLARED_FAMILY_MEETS_THE_PUBLISHED_SEPARATION_BOUND",
+          all_separated and separated == total and worst is not None
+          and worst >= PUBLISHED_SEPARATION_LOWER_BOUND)
     out["separation"] = {
         "pi_enclosure_width_upper_bound": "1e-30",
         "declared_family": f"q = m/d with 1 <= d <= {denom_cap} and "
                            f"|m| <= {numer_cap}",
         "pairs_tested": total,
-        "least_separation_lower_bound": f"{float(worst):.6e}",
+        "least_separation_lower_bound": PUBLISHED_SEPARATION_LOWER_BOUND_TEXT,
         "general_fact": "for every rational q, 2/9 differs from 2*pi*q, because "
                         "pi is irrational (Lambert 1761) and 2/9 is nonzero; the "
                         "runner verifies only the declared finite family",
@@ -919,6 +926,12 @@ def section_separation() -> dict:
 # SECTION 8 -- MEASURED SUPPORT ONLY: the signed-root scan
 # ---------------------------------------------------------------------------
 CHARGED_LEPTON_MASSES_MEV = {"e": 0.51099895, "mu": 105.6583755, "tau": 1776.86}
+OBSERVATIONAL_INPUT_INVENTORY = {
+    "charged_lepton_masses_MeV": CHARGED_LEPTON_MASSES_MEV,
+    "role": "observational comparator inputs used only in measured section 8",
+    "in_repo_provenance":
+        "docs/CLOSURE_T2_DF_PHYSICAL_CONSEQUENCES_NOTE_2026-05-10_t2df.md",
+}
 
 
 def phi_from_spectrum(lams) -> float | None:
@@ -1165,7 +1178,8 @@ def main() -> int:
     payload["runner_sha256"] = self_sha
     payload["inputs"] = []
     payload["read_inventory"] = {
-        "external_or_ancestral_scientific_inputs": [],
+        "embedded_observational_comparator_inputs": OBSERVATIONAL_INPUT_INVENTORY,
+        "external_runtime_scientific_file_reads": [],
         "package_local_integrity_reads": [
             "scripts/salvaged_circulant_spectral_fold_2026_08_09.py "
             "(this runner's own source, for the self-hash above and for the "

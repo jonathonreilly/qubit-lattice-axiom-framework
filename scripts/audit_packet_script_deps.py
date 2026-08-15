@@ -45,6 +45,11 @@ sys.path.insert(0, str(REPO_ROOT / "docs" / "audit" / "scripts"))
 import ledger_io  # noqa: E402
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    # This sibling checker independently recomputes every listed exact-algebra
+    # unit and fresh-executes the primary before validating its emitted payload.
+    "circulant_spectral_fold_exact_algebra_support_note_2026-08-09": [
+        "scripts/salvaged_circulant_spectral_fold_independent_check_2026_08_09.py",
+    ],
     # Cycle 973's sibling checker reconstructs the pinned semantic map without
     # importing the primary, so include it explicitly in restricted packets.
     "axiom_edit_repair_map_cycle973_note_2026-08-09": [

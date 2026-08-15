@@ -1,0 +1,50 @@
+===== runner cache v1 =====
+runner: scripts/f_min_two_site_fill_2026_08_15.py
+runner_sha256: 4d7c1244b627323e6cb647bc929fee2b0794fc9b38e77e96a50723b6fe7b677c
+input_fingerprint_sha256: 4f93ac0beb1605c919bdbc84b82f8de68275f46c048837c4920012fbbb01c5f8
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: current Lattice, Admissibility, and Record boundaries only; no observations or fits
+integrity_reads: this runner, its note, and the live axiom memo
+construction: two-cube lock dynamics from a displayed face-diagonal 2-site seed
+negative_scope: f_min is displayed, not adopted, and is not written into Admissibility
+PASS: audit-inputs the required two source-bound inputs exist
+PASS: audit-input-literal AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: source-lattice current cubic nearest-neighbor wording is pinned
+PASS: source-admissibility current local-distribution wording is pinned
+PASS: source-record-boundary current lock/content/unreadable-at-absence wording is pinned
+PASS: source-formation-boundary formation site/probability/rate remains outside Admissibility
+PASS: source-no-dynamics Admissibility remains not a dynamics axiom
+PASS: two-cube-cardinality the two-cube is the twelve-site set {0,1,2}x{0,1}x{0,1}
+PASS: face-seed the seed is the displayed face-diagonal pair
+PASS: f-min-definition f_min is 1 iff n_both=0 and some axis is unbalanced
+PASS: f-l1-definition f_L1 is the n≠0 map: 1 iff some axis is unbalanced
+PASS: f-min-not-f-cut f_min is not complement-even, so it is not in F_cut
+PASS: f-l1-not-hamming f_L1 is n≠0 and is not Hamming parity
+PASS: engine-one-site the lock engine recovers the displayed 1-site L1 history
+PASS: engine-line the lock engine recovers the displayed 3-site line L1 history
+f_L1 face-diagonal: T=3 halt_locks=12 history=(2, 7, 11, 12) fills=True
+f_min face-diagonal: T=3 halt_locks=12 history=(2, 7, 11, 12) fills=True
+PASS: thm1-l1-fills f_L1 fills the two-cube from the face-diagonal seed
+PASS: thm1-l1-history f_L1 halt tick and lock history are reported
+PASS: thm2-fmin-fills f_min fills the two-cube from the face-diagonal seed
+PASS: thm2-fmin-history f_min halt locks, T, and lock history are reported
+PASS: thm3-comparison the two maps have the same face-diagonal history; comparison is displayed
+PASS: thm3-not-adopted f_min is displayed and is not written into Admissibility
+PASS: mutation-f-two the u≥2 map from the same seed does not fill
+PASS: mutation-hamming Hamming parity from the same seed does not match either history
+PASS: mutation-off-patch off-patch occupancy 1 changes the f_min run
+PASS: note-contract machine fields, display-only scope, N1-N8, and forbidden-phrase hygiene hold
+PASS: claim-scope claim_scope states that f_min does fill from the face-diagonal seed
+per_element: axis-type words and six-neighbor occupancy bits are enumerated exactly
+per_site: lock readiness is evaluated at each of the twelve two-cube sites
+per_mode: checked and not executed — no spectral claim occurs
+per_block: the face-diagonal seed run of f_min and f_L1 is executed to halt
+lattice_wide: checked and not executed — no infinite-lattice or axiom edit is claimed
+TOTAL: PASS=26 FAIL=0
+
+----- stderr -----
+

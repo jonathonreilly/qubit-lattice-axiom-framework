@@ -1,0 +1,63 @@
+===== runner cache v1 =====
+runner: scripts/unread_neighbor_not_occupancy_zero_2026_08_15.py
+runner_sha256: 98b6fe8e1bf0914f7a5c88940ef27c1d5d288124e4b0cc6b11e38e3be9e6c611
+input_fingerprint_sha256: 85071582fba33d95ff973f8585587244fcd0ea733df380f24098f76a0c571d22
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+Unread neighbor is not occupancy zero
+AUDIT_INPUT_PATHS:
+  docs/UNREAD_NEIGHBOR_NOT_OCCUPANCY_ZERO_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+scope: supplied twelve-vertex two-cube; displayed L1 versus blank-blocked readiness; no adopted law and no axiom edit
+PASS: audit-input-paths-exist
+PASS: audit-input-paths-unique-normalized
+PASS: audit-timeout-declared
+PASS: cache-write-disabled
+PASS: two-cube-has-twelve-sites  (|P|=12)
+PASS: two-cube-factorization
+PASS: seed-on-patch
+PASS: six-neighbor-star
+PASS: seed-on-patch-neighbors-are-axis-sites  (on-patch N(s)=[(0, 0, 1), (0, 1, 0), (1, 0, 0)])
+PASS: seed-occupancy-one-others-zero
+PASS: off-patch-letter-is-blank-not-zero
+PASS: theorem1-l1-first-wave-is-axis-sites  (W=[(0, 0, 1), (0, 1, 0), (1, 0, 0)])
+PASS: theorem1-axis-n-nonzero  (n={(1, 0, 0): 1, (0, 0, 1): 1, (0, 1, 0): 1})
+PASS: theorem1-nonaxis-unformed-n-zero  (count=8)
+PASS: theorem2-each-axis-site-has-off-patch-neighbor  (off={(1, 0, 0): [(1, -1, 0), (1, 0, -1)], (0, 0, 1): [(-1, 0, 1), (0, -1, 1), (0, 0, 2)], (0, 1, 0): [(-1, 1, 0), (0, 1, -1), (0, 2, 0)]})
+PASS: theorem2-n-undefined-on-axis-sites
+PASS: theorem2-blank-blocked-first-wave-empty  (blocked=[])
+PASS: theorem2-no-unformed-site-has-closed-star
+PASS: theorem3-members-disagree-on-first-wave
+PASS: theorem3-o-zero-default-is-load-bearing
+PASS: source-unreadability-current
+PASS: source-record-does-not-assign-occupancy-zero
+PASS: source-occurrence-sentence-current
+PASS: note-does-not-write-unread-equals-zero-as-axiom
+PASS: note-claim-scope-exact
+PASS: note-l1-displayed-not-adopted
+PASS: note-not-leftover-character-or-new-patch
+PASS: note-not-a-vacuum-axiom
+PASS: note-machine-status-complete
+PASS: note-one-hop-dependency-current
+PASS: note-forbidden-tokens-absent
+PASS: note-no-go-n1-through-n8
+PASS: note-no-go-route-enumeration
+PASS: note-steelman-rejects-automatic-zero-fill
+PASS: note-n5-five-line-certificate
+N5_CERTIFICATE:
+per-element: executed — each of the twelve vertices is enumerated
+per-site: executed — n and readiness are computed at every unformed site
+per-mode: not applicable — no modal or spectral decomposition is used
+per-block: executed — only the supplied two-cube and seed are checked
+lattice-wide: not executed — no full Z^3 history or adopted formation law is claimed
+PASS: note-explicit-nonclaims
+PASS: axiom-file-unedited-in-this-dispatch
+TOTAL: PASS=37 FAIL=0
+
+----- stderr -----
+

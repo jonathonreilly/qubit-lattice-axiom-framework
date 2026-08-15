@@ -1,0 +1,62 @@
+===== runner cache v1 =====
+runner: scripts/f_two_minimal_seed_2026_08_15.py
+runner_sha256: 6ad88d3ee0edf76fc5a65af238965ad19824611a705750589b4acf287e555dee
+input_fingerprint_sha256: 75a1de073e1ff1f7d1f2af9204009e5b74de56c6dfe1159fd2cfbdfeeb365664
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+Minimal occupancy seed for an f_two first wave
+AUDIT_INPUT_PATHS:
+  docs/F_TWO_MINIMAL_SEED_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+scope: displayed f_two first-wave seed census on the two-cube; not adopted
+PASS: audit-input-paths-exist
+PASS: audit-input-paths-literal
+PASS: audit-timeout-declared
+PASS: source-lattice-current
+PASS: source-one-fixed-covariant-rule-current
+PASS: source-formation-open-current
+PASS: source-records-form-current
+PASS: note-no-axiom-edit
+PASS: two-cube-has-twelve-sites
+PASS: off-patch-default-is-zero
+PASS: thm1-all-one-site-empty  (n=12)
+PASS: thm1-neighbors-u-leq-1  (max_u=1)
+pair_count=66
+nonempty_pair_count=22
+face_diagonal_count=22
+PASS: pair-count-66
+PASS: thm2-face-diagonal-count-22  (count=22)
+PASS: thm2-nonempty-equals-face-diagonals  (nonempty=22)
+PASS: thm2-non-face-diagonals-empty
+PASS: mutation-all-pairs-empty-fails
+explicit_pair=((0, 0, 0), (1, 1, 0))
+explicit_pair_wave=[(0, 1, 0), (1, 0, 0)]
+PASS: thm2-explicit-pair-wave
+explicit_triple=((1, 0, 0), (0, 1, 0), (0, 0, 1))
+explicit_triple_wave=[(0, 0, 0), (0, 1, 1), (1, 0, 1), (1, 1, 0)]
+PASS: thm3-explicit-triple-nonempty
+PASS: thm3-triple-is-axis-neighbors-of-corner
+PASS: minimal-cardinality-is-2
+PASS: l1-one-site-contrast-nonempty
+PASS: not-l1-identity
+PASS: note-reports-pair-census
+PASS: note-reports-explicit-triple
+PASS: note-claim-scope-displayed-not-adopted
+PASS: note-does-not-claim-all-pairs-empty
+PASS: note-records-failed-all-pairs-empty
+PASS: forbidden-phrase-hygiene
+PASS: no-runner-cache-or-citation-manifest
+per_element: checked exactly — u and readiness at each unlocked site
+per_site: checked exactly — all twelve vertices as one-site seeds
+per_mode: checked exactly — all 66 pairs and the explicit triple
+per_block: checked exactly — face-diagonal census versus first-wave emptiness
+lattice_wide: checked and not executed — no physical formation law is selected
+TOTAL: PASS=30 FAIL=0
+
+----- stderr -----
+

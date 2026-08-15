@@ -1,0 +1,66 @@
+===== runner cache v1 =====
+runner: scripts/two_axis_unbalanced_formation_member_2026_08_15.py
+runner_sha256: e308740d2c5944123520b5cf70a6d2ee9a1e12d321fe4700016da13d1b4e67f3
+input_fingerprint_sha256: 1f412c4ebb820d739438d0ef3778a76e016c6d5d2a2066638e8351e0dfd9e763
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+Two-axis unbalanced formation member versus L1
+AUDIT_INPUT_PATHS:
+  docs/TWO_AXIS_UNBALANCED_FORMATION_MEMBER_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+scope: displayed f_two on 64 cells and the two-cube first wave; not adopted
+PASS: audit-input-paths-exist
+PASS: audit-input-paths-unique-normalized
+PASS: audit-timeout-declared
+PASS: source-lattice-current
+PASS: source-one-fixed-covariant-rule-current
+PASS: source-formation-open-current
+PASS: source-records-form-current
+PASS: note-no-axiom-edit
+PASS: cell-count-64
+PASS: cells-are-binary-6-tuples
+PASS: rotation-count-24
+PASS: rotations-include-identity
+PASS: rotations-exclude-inversion
+PASS: rotation-determinants-plus-one
+PASS: slot-permutations-24-distinct
+PASS: slot-permutations-are-bijections
+PASS: u-range-is-0-to-3
+PASS: u-invariant-under-rotations
+PASS: f_two-cube-covariant
+PASS: f_L1-cube-covariant
+PASS: f_L1-is-n-nonzero
+PASS: f_two-is-not-n-nonzero
+disagree_count=24
+one_unbalanced_count=24
+combo_count=24
+PASS: disagreement-is-exactly-one-unbalanced-axis  (disagree=24)
+PASS: disagreement-count-matches-axis-combo  (count=24)
+PASS: disagreement-at-least-one
+PASS: split-cells-are-L1-form-and-f_two-absent
+PASS: f_two-not-linear-over-GF2
+two_cube_sites=12
+L1_first_wave=[(0, 0, 1), (0, 1, 0), (1, 0, 0)]
+f_two_first_wave=[]
+axis_u={(1, 0, 0): 1, (0, 0, 1): 1, (0, 1, 0): 1}
+PASS: two-cube-has-twelve-sites
+PASS: seed-is-on-patch
+PASS: L1-first-wave-is-three-axis-sites
+PASS: axis-sites-have-u-one
+PASS: f_two-first-wave-empty
+PASS: members-inequivalent-as-occupancy-lock-steps
+PASS: note-reports-disagreement-count
+PASS: note-reports-combo-identity
+PASS: note-claim-scope-displayed-not-adopted
+PASS: note-does-not-adopt-the-member
+PASS: forbidden-phrase-hygiene
+PASS: no-runner-cache-or-citation-manifest
+TOTAL: PASS=39 FAIL=0
+
+----- stderr -----
+

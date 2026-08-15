@@ -141,7 +141,7 @@ regardless of executor.
    intended landing path, then build, write, and stage the manifest BEFORE the
    full validation pipeline:
    `git add <all-intended-landing-paths> &&
-   python3 docs/audit/scripts/build_citation_graph.py &&
+   python3 docs/audit/scripts/run_citation_graph_build.py &&
    python3 docs/audit/scripts/write_citation_graph_manifest.py &&
    git add docs/audit/data/citation_graph_manifest.json`.
    Then run `docs/audit/scripts/run_pipeline.sh`, strict audit lint, and

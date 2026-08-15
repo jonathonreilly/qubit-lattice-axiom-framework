@@ -500,6 +500,9 @@ review-only flags contradict the drain's land-end-to-end contract).
    manifest. Stage the regenerated manifest and amend the newest cherry-picked
    commit when its bytes changed. This generated-only integration repair needs
    no new reviewer round; every source conflict still returns to the reviewer.
+   The landing loop refuses any tracked staged or unstaged residue at entry.
+   Between retries it may restore only the generated manifest to the current
+   `HEAD`, clearing a failed regeneration without discarding reviewed source.
    Generated-output restoration is a
    COMMIT-time rule (see the audit-compatibility gate), not a landing-time
    step: the commits being landed are already clean. The fail-closed
@@ -515,9 +518,22 @@ review-only flags contradict the drain's land-end-to-end contract).
        break
      fi
    done
+   if ! git diff --quiet || ! git diff --cached --quiet; then
+     echo "FAILED: landing worktree has tracked residue before integration" >&2
+     exit 1
+   fi
    landed=""
    for attempt in 1 2 3 4; do
      git cherry-pick --abort >/dev/null 2>&1 || true
+     # A failed generator/write/add/amend may leave only the generated
+     # manifest dirty after a completed cherry-pick. Restore exactly that path
+     # to the current HEAD before retrying; never reset arbitrary reviewed work.
+     if [ "$refresh_manifest" = 1 ] \
+        && ! git restore --source=HEAD --staged --worktree -- \
+             docs/audit/data/citation_graph_manifest.json; then
+       echo "FAILED: could not clear generated manifest retry residue" >&2
+       exit 1
+     fi
      # Name the destination explicitly: isolated/partial repos may have no
      # remote.origin.fetch refspec, in which case a plain fetch leaves the
      # local origin/main stale and creates fake non-fast-forward "races".
@@ -565,7 +581,11 @@ review-only flags contradict the drain's land-end-to-end contract).
      echo "FAILED: landing did not complete after 4 attempts" >&2
      exit 1
    fi
-   git fetch -q origin +refs/heads/main:refs/remotes/origin/main
+   if ! git fetch -q origin \
+          +refs/heads/main:refs/remotes/origin/main; then
+     echo "FAILED: could not refresh origin/main for containment verification" >&2
+     exit 1
+   fi
    if ! git merge-base --is-ancestor "$landed" origin/main; then
      echo "FAILED: $landed not contained in origin/main" >&2
      exit 1

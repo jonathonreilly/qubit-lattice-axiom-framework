@@ -15,6 +15,7 @@ import subprocess
 import sys
 import tempfile
 from pathlib import Path
+from urllib.parse import unquote, urlsplit
 
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
@@ -30,29 +31,130 @@ _GITHUB_REPOSITORY_ALIASES = {
         "jonathonreilly/qubit-lattice-axiom-framework"
     ),
 }
-_GITHUB_REMOTE_PATTERNS = (
-    re.compile(
-        r"^(?:https?|git)://github\.com/([^/]+)/([^/]+?)(?:\.git)?/?$",
-        re.IGNORECASE,
-    ),
-    re.compile(
-        r"^(?:ssh://)?git@github\.com[:/]([^/]+)/([^/]+?)(?:\.git)?/?$",
-        re.IGNORECASE,
-    ),
+_GITHUB_SCP_REMOTE = re.compile(
+    r"^(?:[^/@:]+@)?github\.com:(?P<path>[^?#]+)$",
+    re.IGNORECASE,
 )
+_GITHUB_DEFAULT_PORTS = {
+    "http": 80,
+    "https": 443,
+    "git": 9418,
+    "ssh": 22,
+}
 
 
-def _canonical_remote_identity(remote: str) -> str:
-    """Normalize equivalent GitHub transports and the known repo rename."""
+def _checkout_identity(repo_root: Path) -> str:
+    """Return a worktree-stable discriminator without consulting a remote."""
+    common_dir = subprocess.run(
+        ["git", "rev-parse", "--git-common-dir"],
+        cwd=repo_root,
+        capture_output=True,
+        text=True,
+    )
+    common = (common_dir.stdout or "").strip()
+    if common_dir.returncode == 0 and common:
+        path = Path(common)
+        if not path.is_absolute():
+            path = repo_root / path
+        return f"common-dir:{path.resolve()}"
+    return f"checkout:{repo_root.resolve()}"
+
+
+def _github_slug(remote: str) -> str | None:
+    """Return a normalized GitHub slug for supported transports and ports."""
     stripped = remote.strip().rstrip("/")
-    for pattern in _GITHUB_REMOTE_PATTERNS:
-        match = pattern.fullmatch(stripped)
-        if match is None:
-            continue
-        slug = f"{match.group(1)}/{match.group(2)}".casefold()
-        slug = _GITHUB_REPOSITORY_ALIASES.get(slug, slug)
+    scp_match = _GITHUB_SCP_REMOTE.fullmatch(stripped)
+    if scp_match is not None:
+        path = scp_match.group("path").rstrip("/")
+    else:
+        parsed = urlsplit(stripped)
+        scheme = parsed.scheme.casefold()
+        if scheme not in _GITHUB_DEFAULT_PORTS:
+            return None
+        try:
+            hostname = (parsed.hostname or "").casefold()
+            port = parsed.port
+        except ValueError:
+            return None
+        if hostname != "github.com":
+            return None
+        if port not in (None, _GITHUB_DEFAULT_PORTS[scheme]):
+            return None
+        if parsed.query or parsed.fragment:
+            return None
+        path = parsed.path.strip("/")
+
+    parts = path.split("/")
+    if len(parts) != 2 or not all(parts):
+        return None
+    owner, repository = (part.casefold() for part in parts)
+    if repository.endswith(".git"):
+        repository = repository[:-4]
+    if not repository:
+        return None
+    slug = f"{owner}/{repository}"
+    return _GITHUB_REPOSITORY_ALIASES.get(slug, slug)
+
+
+def _local_remote_target(remote: str, repo_root: Path) -> Path | None:
+    """Resolve a local Git origin with the same cwd-relative rule Git uses."""
+    parsed = urlsplit(remote)
+    if parsed.scheme.casefold() == "file":
+        if parsed.query or parsed.fragment:
+            return None
+        if parsed.netloc not in ("", "localhost"):
+            path = Path(f"//{parsed.netloc}{unquote(parsed.path)}")
+        else:
+            path = Path(unquote(parsed.path))
+    elif parsed.scheme:
+        return None
+    elif re.match(r"^(?:[^/@:]+@)?[^/:]+:", remote):
+        return None
+    else:
+        path = Path(remote).expanduser()
+
+    if not path.is_absolute():
+        path = repo_root / path
+    return path.resolve()
+
+
+def _opaque_remote_without_credentials(remote: str) -> str:
+    """Remove URL userinfo before an opaque remote contributes to a lock key."""
+    parsed = urlsplit(remote)
+    if parsed.scheme and parsed.hostname:
+        try:
+            port = parsed.port
+        except ValueError:
+            port = None
+        authority = parsed.hostname.casefold()
+        if port is not None:
+            authority = f"{authority}:{port}"
+        return f"{parsed.scheme.casefold()}://{authority}{parsed.path}"
+
+    scp_match = re.fullmatch(r"(?:[^/@:]+@)?([^/:]+):(.+)", remote)
+    if scp_match is not None:
+        return f"{scp_match.group(1).casefold()}:{scp_match.group(2)}"
+    return remote
+
+
+def _canonical_remote_identity(
+    remote: str,
+    *,
+    repo_root: Path | None = None,
+) -> str:
+    """Normalize the known rename without aliasing unrelated repositories."""
+    root = repo_root or REPO_ROOT
+    stripped = remote.strip().rstrip("/")
+    slug = _github_slug(stripped)
+    if slug is not None:
         return f"github:{slug}"
-    return f"origin:{stripped}"
+
+    local_target = _local_remote_target(stripped, root)
+    if local_target is not None:
+        return f"local-origin:{local_target}"
+
+    opaque = _opaque_remote_without_credentials(stripped)
+    return f"opaque-origin:{opaque}|{_checkout_identity(root)}"
 
 
 def _repository_identity() -> str:
@@ -65,21 +167,9 @@ def _repository_identity() -> str:
     )
     remote = (origin.stdout or "").strip()
     if origin.returncode == 0 and remote:
-        return _canonical_remote_identity(remote)
+        return _canonical_remote_identity(remote, repo_root=REPO_ROOT)
 
-    common_dir = subprocess.run(
-        ["git", "rev-parse", "--git-common-dir"],
-        cwd=REPO_ROOT,
-        capture_output=True,
-        text=True,
-    )
-    common = (common_dir.stdout or "").strip()
-    if common_dir.returncode == 0 and common:
-        path = Path(common)
-        if not path.is_absolute():
-            path = REPO_ROOT / path
-        return f"common-dir:{path.resolve()}"
-    return f"checkout:{REPO_ROOT.resolve()}"
+    return _checkout_identity(REPO_ROOT)
 
 
 def citation_graph_lock_path() -> Path:

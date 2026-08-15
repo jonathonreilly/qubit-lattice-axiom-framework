@@ -1,0 +1,47 @@
+===== runner cache v1 =====
+runner: scripts/lock_content_without_m2_action_2026_08_15.py
+runner_sha256: 4e629c1415adcaf3bf6976c764fc83cef99447aa10ddc5bd564a3e75678cf003
+input_fingerprint_sha256: 20c2b1f66494bdbc4d1f74de05a3bfcebb75ba1b4a50afeacb7e32355c8f7965
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/LOCK_CONTENT_WITHOUT_M2_ACTION_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+external_scientific_inputs: none; occupancy bits, n, S, k, and the displayed pairing are declared
+framework_role: axioms supply Z^3, M_2(C), and Record lock-one; no Aut-pick
+claim_scope: Occupancy determines (S,k) without Aut(M_2). Spectral projectors of a Bloch image require an axis–Pauli pairing, which is extra. Displayed, not adopted. No Aut-pick.
+PASS: audit-input-paths declared inputs are exactly the source note and the live axiom memo
+PASS: occupancy-census the directed cube has exactly 64 occupancy patterns
+PASS: n-range every n_mu is an unscaled integer in {-1,0,1}
+PASS: k-equals-n-squared k = |n|^2 on every occupancy
+PASS: k-equals-S-cardinality k = |S| because each nonzero n_mu squares to 1
+PASS: k-equals-L1-scaled-norm k = |3 n_L1|^2 for the displayed L1 coordinate n/3
+PASS: k-class-census the occupancy k-classes are 8,24,24,8 for k=0,1,2,3
+PASS: later-lock-label-swap (S,k) is unchanged under every later-lock two-label permutation
+PASS: opposite-occupancy-cancels c_+mu = c_-mu, including double occupancy, gives n_mu = 0
+PASS: sk-independent-of-pairing (S,k) is the same for the identity pairing and the displayed x-y fork
+PASS: S1-fork-changes-direction the displayed x-y Pauli swap moves every |S|=1 triple supported on x or y
+PASS: no-occupancy-only-global-map no occupancy-only map can equal both displayed projector families for all c
+PASS: fork-exists-whenever-S-nonempty every |S|>=1 occupancy is moved by some two-Pauli swap, except the totally symmetric n already recorded
+PASS: displayed-projector-idempotent P_id = (I+sigma_x)/2 is a rank-1 projector: P^2=P and Tr P=1
+PASS: fork-projector-idempotent P_fork = (I+sigma_y)/2 is a rank-1 projector: P^2=P and Tr P=1
+PASS: displayed-fork-changes-P the displayed #6272 x-y fork sends the n=(1,0,0) projector to a different matrix
+PASS: opposite-label-complement later-lock label swap on the displayed axis sends P to I-P, not to P
+PASS: symmetric-n-does-not-erase-pairing n=(1,1,1) is axis-permutation invariant, yet |S|=1 still requires the pairing
+PASS: note-contract the note states the occupancy/projector split and the no-Aut-pick boundary
+PASS: forbidden-rhetoric-absent the note avoids the dispatch-forbidden rhetoric tokens
+PASS: axiom-unedited-content the live axiom memo still states the four named axioms and lock-one
+PASS: cache-write-disabled the source note has no runner-cache section and the runner prints cache_write false
+per_element: checked — every occupancy in {0,1}^6 is classified by (S,k)
+per_site: checked and not executed — no physical site history is formed
+per_mode: checked — identity pairing versus the displayed Pauli-axis fork
+per_block: checked — occupancy block versus projector block
+lattice_wide: checked and not executed — no adopted cube action or Aut-pick
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,47 @@
+===== runner cache v1 =====
+runner: scripts/f_l1_two_site_miss_seeds_2026_08_15.py
+runner_sha256: ca04152d846fca1a1b2183d14650f7aa0fe9ef550052f40b2b3520b512d78c27
+input_fingerprint_sha256: 24e938b9258e04728e7074ee2c1d0f1db100f0ccc8d7ebb0e0b3eafa25991fba
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+external_scientific_inputs: current Lattice, Admissibility, and Record boundaries; no observations or fits
+integrity_reads: this runner, its note, and the axiom memo; no other scientific inputs
+construction: exhaustive two-site lock-step census under f_L1; the four miss seeds are listed in lex order
+negative_scope: the four miss seeds are displayed; no seed is adopted or written into Admissibility
+cache_write: false
+PASS: audit-inputs the two declared source-bound inputs exist as static literals
+PASS: source-lattice current cubic nearest-neighbor wording is pinned
+PASS: source-admissibility current local-distribution wording is pinned
+PASS: source-record-boundary current lock/content/unreadable-at-absence wording is pinned
+PASS: source-formation-boundary formation site/probability/rate remains outside Admissibility
+PASS: two-cube-cardinality the two-cube is exactly the twelve sites {0,1,2} x {0,1} x {0,1}
+PASS: pair-count there are C(12,2)=66 unordered two-site seeds
+census: cov(f_L1)=62 n_miss=4 n_pairs=66
+four_miss_seeds_lex: {(0,0,0),(2,0,0)}, {(0,0,1),(2,0,1)}, {(0,1,0),(2,1,0)}, {(0,1,1),(2,1,1)}
+  {(0,0,0),(2,0,0)} hist_L1=(2, 6, 8) halt=8 fill=False
+  {(0,0,1),(2,0,1)} hist_L1=(2, 6, 8) halt=8 fill=False
+  {(0,1,0),(2,1,0)} hist_L1=(2, 6, 8) halt=8 fill=False
+  {(0,1,1),(2,1,1)} hist_L1=(2, 6, 8) halt=8 fill=False
+opp_corner_seeds_are_fills:
+  {(0,0,0),(2,1,1)} hist_L1=(2, 8, 12) halt=12 fill=True
+  {(0,0,1),(2,1,0)} hist_L1=(2, 8, 12) halt=12 fill=True
+  {(0,1,0),(2,0,1)} hist_L1=(2, 8, 12) halt=12 fill=True
+  {(0,1,1),(2,0,0)} hist_L1=(2, 8, 12) halt=12 fill=True
+PASS: theorem-1-cov-sixty-two cov(f_L1)=62 among the 66 two-site seeds
+PASS: theorem-1-opp-corner-fills the four opposite-corner seeds of #6423 fill under f_L1 and are not misses
+PASS: theorem-2-lex-list the four miss seeds are listed in lexicographic site-pair order
+PASS: theorem-2-histories each miss seed has halt lock-count 8 and history (2, 6, 8)
+PASS: theorem-3-display the note displays the four computed miss seeds in lex order and does not adopt a seed
+PASS: identity-l1-not-hamming opp2 has Hamming weight 2 but n_unbalanced=0, so f_L1 does not fire
+PASS: forbidden-phrases the note and runner avoid the dispatch-forbidden phrases
+PASS: no-admissibility-selector the note does not write a seed selector into Admissibility
+PASS: claim-scope the YAML claim_scope states the four miss-seed display
+PASS: not-leftover-6422 the four misses are a new object, not leftover character of the opposite-corner split four
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

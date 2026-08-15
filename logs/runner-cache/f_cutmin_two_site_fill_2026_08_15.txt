@@ -1,0 +1,56 @@
+===== runner cache v1 =====
+runner: scripts/f_cutmin_two_site_fill_2026_08_15.py
+runner_sha256: d3448e7322d6e0594bc7056c2aeaf1a9b24a74ba56b2c7dbea68166c006794bb
+input_fingerprint_sha256: dd1a3428f2a670a76af32b0022f61e355e4300a777d3313b6195df86244614f1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUTMIN_TWO_SITE_FILL_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+n_rotations=24
+n_orbits=10
+N_free=5
+|F_cut|=32
+N_cut2=4
+filler_family=[(1, 0, 1, 1, 0), (1, 0, 1, 1, 1), (1, 1, 1, 1, 0), (1, 1, 1, 1, 1)]
+f_cutmin_bits=(1, 0, 1, 0, 0) supp=36 in_family=False
+f_cutmin_locks=11 halt=4 history=(2, 7, 9, 10, 11) fills=False
+f_cutmin_stuck=[(0, 1, 1)]
+f_L1_bits=(1, 0, 1, 1, 1) supp=56 locks=12 history=(2, 7, 11, 12)
+f_hamming_bits=(1, 0, 0, 1, 1) locks=9 history=(2, 5, 6, 8, 9)
+PASS: audit-input-paths — AUDIT_INPUT_PATHS is the required note-plus-axiom string-literal tuple
+PASS: thm1-twenty-four-rotations — exactly 24 proper cube rotations
+PASS: thm1-ten-orbits — exactly 10 orbits partition the 64 cells of {0,1}^6
+PASS: thm1-f-cut-cardinality — F_cut has five free bits and size 32
+PASS: thm1-two-cube-and-seed — the two-cube has twelve vertices and contains the face-diagonal seed
+PASS: thm1-f-L1-is-unbalanced-axis — f_L1 is 1 iff some axis has c_+ != c_- (n != 0)
+PASS: thm1-f-L1-not-hamming — f_L1 is not Hamming |c|_1 mod 2
+PASS: thm1-f-L1-fills-and-is-one-of-four — f_L1 fills from S and is one of the four #6415 F_cut 2-site fillers
+PASS: thm1-f-cutmin-not-among-four — f_cutmin's remaining-bit tuple is not among the four #6415 fillers
+PASS: thm2-unique-support-36 — f_cutmin is the unique support-36 F_cut 1-site filler tuple (1,0,1,0,0)
+PASS: thm2-f-cutmin-does-not-fill — f_cutmin does not fill: |locks_halt|=11, T=4, history (2, 7, 9, 10, 11)
+PASS: thm3-displayed-not-adopted — the non-fill is displayed; f_cutmin is not adopted
+PASS: lattice-and-admissibility-parents — the live axiom memo supplies Z^3, proper cubic rotations, and a covariant nearest-neighbor rule
+PASS: forbidden-phrases-absent — the note and runner omit the dispatch-forbidden phrases
+PASS: l1-definition-in-note — the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: f-cutmin-definition-in-note — the note names f_cutmin as the remaining-bit tuple (1, 0, 1, 0, 0)
+PASS: claim-type-and-gate — bounded theorem type and a passing N1-N8 gate are source-visible
+PASS: claim-scope-and-history — claim_scope reports that the support-36 F_cut 1-site filler does not fill
+PASS: not-leftover-6415-or-6418 — the residual is this map on this seed, not leftover-character of #6415 or #6418
+PASS: off-patch-zero — off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: no-cache-write — this run did not emit a runner cache file
+PASS: no-axiom-edit — the theorem proposes no axiom change
+per_element: checked exactly — each of the 64 neighbor 6-tuples is assigned its axis-type orbit
+per_site: checked exactly — each of the 12 two-cube vertices is a lock site under o=0
+per_mode: checked exactly — every F_cut map is run from the face-diagonal 2-site seed
+per_block: checked exactly — f_cutmin is run to a fixed point from S; it does not fill
+lattice_wide: checked and not executed — no Z^3-wide formation law or Admissibility rewrite is claimed
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

@@ -13826,6 +13826,10 @@
    "deps_hash": "4296058e250d",
    "out_degree": 3
   },
+  "physical_cell_cutting_cover_spectrum_cycle761_note_2026-08-09": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "physical_cell_cutting_cover_table_rank_cycle758_note_2026-08-09": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0

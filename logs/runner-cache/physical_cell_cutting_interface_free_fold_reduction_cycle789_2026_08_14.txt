@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/physical_cell_cutting_interface_free_fold_reduction_cycle789_2026_08_14.py
+runner_sha256: a19abaa0bb6ccb4cf9f5bb77bdc42b515e14bb6f8b794fcd95bcac9db84f6ea9
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 22.90
+status: ok
+----- stdout -----
+PASS G1 2672 five-corner unit-volume pieces, cost floor 6, 400 kept, 15800 cuttings of 24, 192 used, cell group 384, slot subgroup 96
+PASS G2 16 letters on each of 8 slots, multiplicity census {862: 12, 1364: 4}, trace 2000, 48 entries at 36, 48 fibers of 36 cuttings
+PASS G3 all 384 maps permute the 15800 cuttings, 0 defects; setwise fiber stabilizer census {2: 48}, all inside the 96, side-swapping 48 of 48
+PASS G4 corner cycle types {(2, 8): 48} at 0 fixed corners; fixed kept pieces {0: 48}; 200 kept and 96 used two-orbits, used set closed 48 of 48
+PASS G5 each fold fixes 14 of its 36 cuttings and pairs the rest, 36 = 14 + 2 x 11; census {14: 48}; 672 folded cuttings, all distinct
+PASS G6 each of the 672 folded cuttings splits into 12 swapped piece-pairs with no fixed piece: censuses {0: 672} and {12: 672}
+PASS G7 each fiber is held setwise by 2 of the 384 maps and no more; fibers carrying a fold with no fixed cutting: 0 of 48
+PASS G8 on the sample fiber 2 of the 384 maps hold the 14 folded cuttings and both act as the identity on them; support 80, common part 0
+PASS G9 exchange distances over the 91 folded pairs: 8:11 12:1 16:10 20:5 24:4 28:14 32:4 36:14 40:10 44:6 48:12
+G9 detail: the one distance-12 pair shares 18 pieces and 9 of 12 swapped pairs; 12 pairs fully apart; 40 swapped pairs of 96
+PASS G10 in all 48 fibers 14 joint frame classes of sizes [1,1,1,2,2,2,2,2,2,3,3,5,5,5], 8 of them odd, split (4, 4, 2, 4)
+G10 detail: folded cuttings per class {0: 8, 1: 1, 2: 2, 3: 3}; the class map is well defined in 48 fibers, each folded cutting in a held class
+PASS G11 49 shared-count rules on the 14 folded cuttings all pass 0 of 48 fibers; the at-least-zero rule passes 48 of 48 at degree 13
+G11 detail: the at-least-zero rule is the complete graph, tautological and excluded; the best other rule makes 10 of 14 degrees odd
+PASS G12 incidence 16 by 24, row sums 6, column sums 4, rank 10 over two elements, kernel dimension 6, 64 functionals, 10 letter types
+G12 detail: types 0+9 2+4 3+14 5+10 7+12 11+13 and singletons [1,6,8,15], exactly the 4 letters of multiplicity 1364
+PASS G13 all 48 folds hold the kernel and induce 6 distinct letter maps; orbit census {1: 2, 3: 2, 4: 2, 6: 2, 12: 3}, 11 orbits, 2 held pointwise
+PASS G14 12 pair orbits under the 48 side-preserving letter maps, the 48 wall entries one orbit; 7 distinct kernel signatures
+G14 detail: the wall signature is shared with the entry-52 orbit and entry-90 matches entry-100, so the wall is not singled out
+resource: under 60 s, under 250 MB
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

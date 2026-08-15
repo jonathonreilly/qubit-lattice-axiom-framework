@@ -1,0 +1,55 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_l1_f0_six_site_miss_set_2026_08_15.py
+runner_sha256: 2e290f23246f336f78793f5fb4daf65dba5d0d656601634a4e072a77105d8a90
+input_fingerprint_sha256: e7203f88c8fe358650b740042831590f8eb7a9abdbf8f6d0688cd4e776cbfd17
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_L1_F0_SIX_SITE_MISS_SET_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+n_rotations=24
+n_two_cube_sites=12
+|S|=924
+remaining_labels=('wt1', 'opp2', 'adj2', 'vertex3', 'mixed3')
+f_L1_remaining=(1, 0, 1, 1, 1)
+f0_remaining=(1, 1, 1, 1, 0)
+cov6_f_L1=920
+cov6_f0=904
+|M_L1|=4
+|M_f0|=20
+|M_L1 ∩ M_f0|=0
+equality_bit=0
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required note-plus-axiom string-literal tuple
+PASS: thm1-twenty-four-rotations exactly 24 proper cube rotations
+PASS: thm1-f-L1-is-unbalanced-axis f_L1 is 1 iff some axis has c_+ != c_-
+PASS: thm1-f-L1-not-hamming f_L1 is not Hamming |c|_1 mod 2
+PASS: thm1-f0-remaining-bits f0 is the displayed F_cut map with remaining bits (1, 1, 1, 1, 0)
+PASS: thm1-six-site-seed-count the two-cube has twelve vertices and |S|=C(12,6)=924 six-site seeds
+PASS: thm1-reconfirm-M-L1 reconfirm |M_L1|=4 and cov6(f_L1)=920
+PASS: thm1-M-f0-cardinality Theorem 1: |M_f0| is the computed six-site miss count of f0
+PASS: thm2-intersection Theorem 2: |M_L1 ∩ M_f0| and the sets are not equal
+PASS: thm3-equality-bit-displayed Theorem 3: the equality bit is displayed and is 0
+PASS: lattice-and-admissibility-parents the live axiom memo supplies Z^3, proper cubic rotations, and a covariant nearest-neighbor rule
+PASS: note-contract bounded theorem, displayed-not-adopted miss-set comparison, and machine status
+PASS: claim-type-and-gate N1-N8 and a passing no-go disposition are source-visible
+PASS: forbidden-phrases-absent the note and runner omit the dispatch-forbidden phrases
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: no-axiom-edit the theorem proposes no axiom change
+PASS: off-patch-zero off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: seeds-not-listed the six-site miss seeds are not listed and no map is adopted
+PASS: new-six-site-object the residual is the 6-site miss-set comparison, not a 4-site leftover
+PASS: claim-scope-miss-sets claim_scope reports the 6-site miss sets are not equal
+per_element: checked exactly — each of the 64 neighbor 6-tuples is assigned its axis-type value under both maps
+per_site: checked exactly — each of the twelve two-cube vertices uses the same six-direction stencil
+per_mode: checked exactly — f_L1 and f0 are scored on every unordered 6-site seed
+per_block: checked exactly — |M_f0|, |M_L1 ∩ M_f0|, and the equality bit are the compared objects
+lattice_wide: checked and not executed — no Z^3-wide formation law or physical Admissibility selector is claimed
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

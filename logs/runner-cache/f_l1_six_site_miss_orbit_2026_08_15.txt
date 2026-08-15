@@ -1,0 +1,49 @@
+===== runner cache v1 =====
+runner: scripts/f_l1_six_site_miss_orbit_2026_08_15.py
+runner_sha256: c6b4bbfe2320e33a8400c7320021b5c45b230d3a39dc262404538e5a4c4c3bb3
+input_fingerprint_sha256: e446446fe493ac5622811f842f1868742732bbd8e99509abfa1dd96f5038252c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_L1_SIX_SITE_MISS_ORBIT_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+external_scientific_inputs: current Lattice, Admissibility, and Record boundaries; no observations or fits
+integrity_reads: this runner, its note, and the axiom memo; no other scientific inputs
+construction: exhaustive six-site lock-step census under f_L1; miss orbits under two-cube-preserving rotations
+negative_scope: N_orb and the lex representative are displayed; no seed is adopted or written into Admissibility
+cache_write: false
+PASS: audit-inputs the two declared source-bound inputs exist as static literals
+PASS: source-lattice current cubic nearest-neighbor wording is pinned
+PASS: source-admissibility current local-distribution wording is pinned
+PASS: source-record-boundary current lock/content/unreadable-at-absence wording is pinned
+PASS: source-formation-boundary formation site/probability/rate remains outside Admissibility
+PASS: two-cube-cardinality the two-cube is exactly the twelve sites {0,1,2} x {0,1} x {0,1}
+PASS: six-seed-count there are C(12,6)=924 unordered six-site seeds
+census: cov6(f_L1)=920 n_miss=4 n_seeds=924
+  miss {(0,0,0), (0,0,1), (0,1,0), (2,0,0), (2,0,1), (2,1,0)} hist_L1=(6, 8) halt=8 fill=False
+  miss {(0,0,0), (0,0,1), (0,1,1), (2,0,0), (2,0,1), (2,1,1)} hist_L1=(6, 8) halt=8 fill=False
+  miss {(0,0,0), (0,1,0), (0,1,1), (2,0,0), (2,1,0), (2,1,1)} hist_L1=(6, 8) halt=8 fill=False
+  miss {(0,0,1), (0,1,0), (0,1,1), (2,0,1), (2,1,0), (2,1,1)} hist_L1=(6, 8) halt=8 fill=False
+PASS: theorem-1-abs-m |M|=4 and cov6(L1)=920 among the 924 six-site seeds
+PASS: theorem-1-common-halt each miss seed has history (6, 8) and locks only the eight end-face sites
+PASS: preserving-rotation-count exactly eight proper cubic rotations preserve the two-cube
+N_orb=1 orbit_sizes=(4,)
+  lexrep {(0,0,0), (0,0,1), (0,1,0), (2,0,0), (2,0,1), (2,1,0)} size=4
+PASS: theorem-2-n-orb N_orb=1 with orbit size 4
+PASS: theorem-2-lex-reps the lex representative is the three-of-four long-axis edge type
+PASS: theorem-2-not-identity-action the identity-only action has four orbits and is not the claimed type
+PASS: identity-l1-not-hamming opp2 has Hamming weight 2 but n_unbalanced=0, so f_L1 does not fire
+PASS: theorem-3-display the note displays N_orb and the lex representative and does not adopt a seed
+PASS: not-four-row-leftover-table the claimed object is the orbit type, not a 4-row leftover table
+PASS: forbidden-phrases the note and runner avoid the dispatch-forbidden phrases
+PASS: claim-scope the YAML claim_scope states the N_orb display
+PASS: off-patch-zero off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

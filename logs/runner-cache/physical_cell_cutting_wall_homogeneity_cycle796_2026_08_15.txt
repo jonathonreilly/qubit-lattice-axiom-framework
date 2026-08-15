@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/physical_cell_cutting_wall_homogeneity_cycle796_2026_08_15.py
+runner_sha256: 2959e15c50fcc82cbcd8dd61e98b3a42ef30f59367e70db3c7a5b1defe903483
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 14.93
+status: ok
+----- stdout -----
+PASS G1 2672 pieces, floor 6, 400 kept, 15800 cuttings of 24, 192 used, cell group 384, 16 letters, trace 2000, 48 entries at 36
+PASS G2 exactly 96 of the 384 cell maps induce a well-defined map on the 48 wall entries: every map fixing the first axis acts, 288 fail
+G2 detail: 0 first-axis maps fail and 0 maps moving the first axis act; the identity induces the identity
+G2 detail: one ordering holds, em[g after h] = em[g] after em[h], at 9216 of 9216 pairs, all of them acting maps; the other ordering holds at 1920
+PASS G3 the acting maps carry the 48 wall entries in one orbit of size 48: every entry is carried to every other entry
+PASS G4 within the acting 96 every entry has a stabilizer of order exactly 2, census {2: 48}, so 48 x 2 = 96
+PASS G5 at 48 of 48 entries the unique nontrivial stabilizer element equals that entry's fold from the separate per-fiber search
+G5 detail: that search holds each fiber setwise under exactly 2 of the 384 cell maps and returns 6 distinct folds, all involutions
+G5 detail: each entry carries 36 cuttings, 14 of them held by its fold, each a union of 12 of the 40 rows over 200 two-orbits
+PASS G6 fold transport holds at 4608 of 4608 pairs: the fold of the image entry is the conjugate of the fold by the acting map, over 96 x 48
+G6 detail: each acting map's inverse is found by search over the 384 cell maps, never assumed
+PASS G7 the 6 distinct folds are one conjugacy class inside the acting 96, and each serves 8 fibers: census [8, 8, 8, 8, 8, 8], 48 = 6 x 8
+PASS G8 searched transport out of the light entry with letter pair (2, 12): the first acting map reaching each of the other two classes carries
+G8 detail: ((0, 1, 2, 3), 2) takes the 14 held cuttings onto those of entry (0, 4), broken 2 union 50 -> 100, broken (0, 4, 6) 100 -> 100
+G8 detail: ((0, 1, 2, 3), 6) takes the 14 held cuttings onto those of entry (12, 13), broken 2 union 50 -> 175, broken (0, 4, 6) 100 -> 100
+G8 detail: for both maps the conjugate of the source fold is the target fold, in either ordering of the acting map and its inverse
+PASS G9 the 48 entries split by the sorted four-tuple of exchange union sizes into 8 light, 32 middle and 8 heavy
+G9 detail: light letter pairs [(2, 12), (4, 14), (5, 13), (7, 11)]; heavy letter pairs [(2, 3), (4, 7), (10, 11), (12, 13)], each on 2 entries
+G9 detail: the broken 0, 4 and 6 exchanges have union 100 at all 48 entries; the broken 2 exchange has union 50, 100, 175
+G9 detail: every union size is a multiple of 25: 50 = 2 x 25, 100 = 4 x 25, 175 = 7 x 25
+PASS G10 second generic frame, per-axis offsets (3, 5, 6, 7) in place of (1, 2, 4, 8): 0 of the 15800 cuttings fail to cover the 625 points once
+G10 detail: at all 48 fibers the kernel dimension is 8 and there are exactly 4 equal-union exchanges, and the exchange supports
+G10 detail: and their half-splits are identical to the first frame at 48 of 48 fibers; the class split is identical, 8 / 32 / 8
+G10 detail: and the broken-count and union-size table matches the first frame at 48 of 48 fibers, class by class
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

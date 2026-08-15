@@ -271,6 +271,9 @@ second reverted mutation run, changing the expected corpus size from 748 to
 source was restored byte-for-byte afterward and the canonical cache remained
 fresh for runner SHA-256
 `bfe57814d23bef038b8df11cc9821a5f4d5fc494f508c9227dd9817278ab0623`.
+The confirmation also renamed the source note so its generated claim ID names
+the finite controller census rather than preserving the withdrawn
+`time_from_records` interpretation.
 
 ## Reproduction
 

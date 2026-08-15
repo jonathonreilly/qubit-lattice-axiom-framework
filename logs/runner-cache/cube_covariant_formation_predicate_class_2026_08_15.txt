@@ -1,0 +1,65 @@
+===== runner cache v1 =====
+runner: scripts/cube_covariant_formation_predicate_class_2026_08_15.py
+runner_sha256: 9a3c04d674419d7e3d7830caf226bf16b82f603d186d2e108afc9eee4588e093
+input_fingerprint_sha256: b975b5fc76eb52b3ad8a5245f7f63579c1ff050b9d948e2e09a92c738918dd61
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+Cube-covariant formation predicate class on occupancy 6-tuples
+AUDIT_INPUT_PATHS:
+  docs/CUBE_COVARIANT_FORMATION_PREDICATE_CLASS_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+scope: boolean maps on the 64 occupancy 6-tuples; no member adopted
+PASS: audit-input-paths-exist
+PASS: audit-input-paths-unique-normalized
+PASS: audit-timeout-declared
+PASS: source-lattice-current
+PASS: source-one-fixed-covariant-rule-current
+PASS: source-formation-open-current
+PASS: source-records-form-current
+PASS: note-no-axiom-edit
+PASS: cell-count-64
+PASS: cells-are-binary-6-tuples
+PASS: rotation-count-24
+PASS: rotations-include-identity
+PASS: rotations-exclude-inversion
+PASS: rotation-group-closed
+PASS: rotation-inverses-present
+PASS: rotation-determinants-plus-one
+PASS: slot-permutations-24-distinct
+PASS: slot-permutations-are-bijections
+N_orb=10
+|F_G|=1024
+orbit_sizes=[1, 1, 3, 3, 6, 6, 8, 12, 12, 12]
+burnside_orbits=10
+PASS: orbits-partition-C
+PASS: orbit-count-is-positive-int
+PASS: burnside-agrees-exact-int  (sum=240)
+PASS: class-size-is-two-to-N_orb
+PASS: covariant-maps-are-orbit-constant
+PASS: f_L1-cube-covariant
+PASS: f_empty-cube-covariant
+PASS: f_any-cube-covariant
+PASS: f_full-cube-covariant
+PASS: f_two-cube-covariant
+PASS: f_L1-is-n-nonzero
+PASS: named-predicates-distinct-from-f_L1
+PASS: named-predicates-pairwise-distinct
+f_L1_f_two_disagree=24
+PASS: class-split-is-exactly-one-unbalanced-axis  (disagree=24)
+PASS: split-cells-are-L1-form-and-f_two-absent
+PASS: note-reports-N_orb
+PASS: note-reports-class-size
+PASS: note-reports-disagreement
+PASS: note-claim-scope-class-not-law
+PASS: note-does-not-adopt-a-member
+PASS: forbidden-phrase-hygiene
+PASS: no-runner-cache-or-citation-manifest
+TOTAL: PASS=40 FAIL=0
+
+----- stderr -----
+

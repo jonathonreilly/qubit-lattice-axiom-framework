@@ -1,0 +1,44 @@
+===== runner cache v1 =====
+runner: scripts/occupancy_lock_label_pairs_2026_08_15.py
+runner_sha256: f55d6b584cc0b597352fe168ad874d901259636d084b668467959764e05b8f44
+input_fingerprint_sha256: 2a4e31f6f4612fbc535ccc0b42501ba2991ab9c86294b307639614009212e4d2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/OCCUPANCY_LOCK_LABEL_PAIRS_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+scope: occupancy-only labels on the declared 64-cell carrier; displayed, not adopted; no Aut(M_2) and no projector pairing
+PASS: audit-input-paths declared inputs are exactly the note and the current axiom memo
+PASS: audit-timeout-declared audit timeout is the standing 120-second bound
+PASS: source-lock-sentence current Record locks exactly one admissible local possibility
+PASS: source-content-readout current Record determines a readout by record content alone
+PASS: cell-count-64 the occupancy carrier is exactly the 64 binary six-tuples
+PASS: k-determined-by-S the displayed integer k equals |S| on every cell
+PASS: theorem-1-image-size-8 the image of lambda has size 8
+PASS: theorem-1-binomial-split the eight labels split as 1+3+3+1 empty and nonempty subsets
+PASS: theorem-2-k0-axis-balanced cells with k=0 are exactly the 8 axis-balanced 6-tuples
+PASS: theorem-2-nonempty-S-realized every nonempty S occurs as an occupancy label
+PASS: theorem-2-eight-cells-per-label every occupancy label has exactly eight indistinguishable cells
+PASS: theorem-2-k-census the occupancy census is 8,24,24,8 by k
+PASS: theorem-3-balanced-swap swapping the two bits on any balanced axis leaves lambda fixed
+PASS: theorem-3-unbalanced-joint-flip flipping both bits on an unbalanced axis leaves S unchanged
+PASS: occupancy-only-indistinguishability two distinct cells can share a label and are then occupancy-indistinguishable
+PASS: not-rank-1-projector lambda is a discrete pair-valued map, not a rank-1 projector
+PASS: note-contract claim scope, machine fields, and displayed-not-adopted wording hold
+PASS: forbidden-hygiene the note avoids the standing forbidden tokens
+PASS: theorem-statement-hygiene the theorem block names no Bloch sphere, no PVM, and no generator symbol
+PASS: negative-check-may-name-pvm the negative check may refuse a projector-valued reading
+per_element: every one of the 64 occupancy cells is labeled
+per_site: only the three cubic axes enter S
+per_mode: checked and not executed — no spectral pairing is claimed
+per_block: image, fibers, invariances, and projector refusal are executed
+lattice_wide: checked and not executed — no formation law is claimed
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

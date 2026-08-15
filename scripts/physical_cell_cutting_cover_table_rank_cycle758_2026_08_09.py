@@ -1,24 +1,22 @@
-"""Measure the exact rank of the cover by piece table of the cut unit four-cube and
-the whole number part of the spectrum of its two sharing tables.
+"""Rebuild and gate exact cover-table identities for a cut unit four-cube.
 
 Every count below is measured here. The runner rebuilds the cell complex, the least
 volume pieces, the cuttings at the adjacency cost floor, the incidence table, the
 eight-piece sets that meet every cutting exactly once, and the cover by piece table.
-It then shows the all ones piece vector lying in the row space of that table and
-carried by the cutting table to a nonzero constant, hence outside the space the
-cuttings cannot see; the table having rank one above its cover differences; and both
-sharing tables carrying the one exact whole number spectrum. Two controls, one fixed
-in advance and one perturbed, show the spectrum scan reads what is there.
+It then gates the 104-dimensional cover-difference subspace, its all-ones complement,
+the exact table ranks, and the rational part of both Gram spectra. Two controls, one
+fixed in advance and one perturbed, exercise the same spectrum scan.
 """
 import itertools
 import math
 import resource
+import sys
 import time
 
 import numpy as np
 
-AUDIT_TIMEOUT_SEC = 300
-AUDIT_INPUT_PATHS = ()
+AUDIT_TIMEOUT_SEC = 600
+MEMORY_LIMIT_MB = 2500
 
 T0 = time.monotonic()
 PF = [0, 0]
@@ -94,6 +92,9 @@ LO = int(C4.min())
 MINP = [i for i in range(NPIECE) if int(C4[i]) == LO]
 MM = np.stack([(V[p[1:]] - V[p[0]]).T for p in UNI])
 IV = np.rint(np.linalg.inv(MM.astype(float))).astype(np.int64)
+I4 = np.eye(4, dtype=np.int64)
+I4S = np.broadcast_to(I4, MM.shape)
+INV_OK = np.array_equal(MM @ IV, I4S) and np.array_equal(IV @ MM, I4S)
 
 ROT = []
 for perm in itertools.permutations(range(3)):
@@ -288,13 +289,18 @@ COV = INCL @ W.T
 
 # ------------------------------------------ Part 2: the sharing tables of the covers
 
+emit("external or ancestral scientific repository reads: none")
+emit("package local integrity reads: none; the labelled finite object is declared in this source")
 emit("Every count below is measured here.")
 emit("the object: {0} cuttings and {1} pieces, {2} pieces to a cutting, "
      "{3} cuttings through a piece".format(NS, NPO, int(RW.min()), int(CS.min())))
-gate(NS == 15800 and NPO == 192 and int(RW.min()) == int(RW.max()) == 24
+gate(len(SUB) == 4368 and NPIECE == 2672 and LO == 6 and len(MINP) == 400
+     and INV_OK and len(ROT) == 24 and len(G) == 48 and coll == 0 and face == 0
+     and NQ == 2736 and FULL == set([24]) and CPOK
+     and NS == 15800 and NPO == 192 and int(RW.min()) == int(RW.max()) == 24
      and int(CS.min()) == int(CS.max()) == 1975 and int(RW.sum()) == int(CS.sum()),
-     "C0", "the pieces per cutting and the cuttings through a piece are each the "
-     "same number for every one of them")
+     "C0", "the finite reconstruction and exact inverse checks pass before the "
+     "regular cutting incidence is used")
 
 emit("the {0} eight piece sets no cutting uses twice meet each of the {1} cuttings "
      "between {2} and {3} times".format(NC, NS, int(COV.min()), int(COV.max())))
@@ -427,8 +433,8 @@ emit("adding up all {0} rows of the cover by piece table gives {1} at every one 
      "the {2} pieces".format(NC, int(CSUM.min()), M.shape[1]))
 gate(int(CSUM.min()) == int(CSUM.max()) == 8 and M.shape[1] == 192
      and len(CSUM) == 192, "C3",
-     "the all ones piece vector is the sum of all the cover rows, so it sits in the "
-     "row space of the cover by piece table")
+     "the sum of all cover rows is eight times the all ones piece vector, so one "
+     "eighth of that sum lies in the row space")
 
 IMG = INCL @ ONES
 IVAL = sorted(set(int(x) for x in np.unique(IMG)))
@@ -534,12 +540,14 @@ gate(PSPEC != CSPEC and PTOT < CTOT and PTOT < 16
      "count, so the scan is not returning a canned answer")
 
 ELAP = time.monotonic() - T0
-RSS = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1048576.0
+RSS_RAW = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
+RSS = RSS_RAW / (1048576.0 if sys.platform == "darwin" else 1024.0)
 EBD = 300 * (int(ELAP // 300) + 1)
 RBD = 500 * (int(RSS // 500) + 1)
 emit("elapsed under {0} s and peak memory under {1} MB, both measured in this "
      "run".format(EBD, RBD))
-gate(ELAP < 900.0 and RSS < 2500.0 and EBD <= 900 and RBD <= 2500, "C14",
+gate(ELAP < AUDIT_TIMEOUT_SEC and RSS < MEMORY_LIMIT_MB
+     and EBD <= AUDIT_TIMEOUT_SEC and RBD <= MEMORY_LIMIT_MB, "C14",
      "inside its time and memory allowance")
 
 emit("TOTAL: PASS={0} FAIL={1}".format(PF[0], PF[1]))

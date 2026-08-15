@@ -1,8 +1,8 @@
-# Why the cuttings are blind in 104 directions: it is the rank of the cover table, less the all-ones direction — Cycle 758
+# Cover-difference rank and rational Gram spectrum for a finite cutting incidence — Cycle 758
 
 Date: 2026-08-09
 
-Authority: none
+Authority: none; proposed for independent audit.
 
 Audit: unset.
 
@@ -10,247 +10,188 @@ Status: proposed_retained
 
 Claim type: bounded_theorem
 
-Runner:
+Primary runner:
 
-- [paired rebuild-and-gate runner](../scripts/physical_cell_cutting_cover_table_rank_cycle758_2026_08_09.py)
+- [finite rebuild-and-gate runner](../scripts/physical_cell_cutting_cover_table_rank_cycle758_2026_08_09.py)
 
-Scope: computational identities of the finite cutting system. Every number
-below is machine-checked by the paired runner, which rebuilds the cell
-complex, the least-volume pieces, the cuttings at the adjacency cost floor,
-the eight-piece exact covers, the cover-by-piece table, its exact rational
-rank and nullity, the exact ranks of the two products of that table with its
-transpose, and the exact whole-number part of the spectrum of those products,
-gating each quantity in place. Two of the gates are controls whose job is to
-show the spectrum scan is neither vacuous nor canned. Constitutional effect:
-none. This package changes no axiom, no framework Admissibility rule, no
-primitive, no policy, and no audit status, and it adds no import and no
-assumption to `MINIMAL_AXIOMS_2026-06-29.md`.
+Direct scientific dependencies: none. The runner reconstructs its finite
+labelled object from the coordinates and rules declared in its source.
 
-## What this answers
+```yaml
+actual_current_surface_status: exact-support
+target_claim_type: bounded_theorem
+trace_class: upstream_support
+target_claim_id: null
+target_blocker_text: "No downstream framework claim is identified; this packet records finite incidence identities only."
+source_of_blocker_text: frontier_question
+reachability_to_target: supports
+artifact_role: runner_certificate
+next_trace_action: "independent audit of the finite reconstruction, exact arithmetic, and stated boundary"
+conditional_surface_status: "bounded to the supplied labelled unit-four-cube construction and declared cost and cover rules"
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: "an exhaustive theorem on one explicitly reconstructed finite incidence object, with no physical or multicell extension"
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```
 
-The object is the unit four-cube on sixteen corners, cut into least-volume
-pieces at the adjacency cost floor. There are 15800 such cuttings; between
-them they draw on 192 pieces, 24 pieces to a cutting, and each piece lies on
-1975 cuttings. A vector on the pieces is *blind* to the cuttings when every
-cutting sums it to zero. Two cycles back the blind space was measured at
-exactly 104 dimensions and identified with the span of the differences of the
-192 eight-piece exact covers; since then, three separate attempts to explain
-that 104 through the symmetries of the cube have each fallen short, the last
-of them finding that no symmetry orbit reaches across it at all. The
-preceding cycle left the question open in its own words: why the covers
-differ inside exactly 104 dimensions.
+## Exact target
 
-This cycle answers it, in the sense that a question is answered when it is
-reduced to a smaller one. **104 is not an independent number.** It is the
-rank of the 192 by 192 cover-by-piece table, less one, and the one is the
-all-ones direction on the pieces. Both steps are derived below from gated
-inputs, not measured; what is measured is the rank, 105, and every input the
-derivations use. The question "why 104" is now the question "why 105", asked
-of a 192 by 192 table instead of a 15800 by 192 one.
+For the finite incidence object reconstructed by the runner, let `A` be the
+15,800 by 192 cutting-by-piece matrix and let `M` be the 192 by 192
+cover-by-piece matrix. Certify the following identities over the rationals:
 
-The second half of the cycle takes the sharing table apart spectrally, since
-that is where a rank of 105 would have to come from. The whole-number part of
-the spectrum is settled exactly: ten eigenvalues with exact multiplicities,
-accounting for 136 of the 192, with the remaining 56 not rational.
+1. `A M^T` is the all-ones matrix, and `M` is 8-regular on both sides.
+2. If `H` is the zero-sum subspace of cover coefficients and
+   `B = M^T H`, then `B` is a 104-dimensional subspace of `ker(A)`.
+3. The row space of `M` is the direct sum of `B` and the all-ones piece
+   direction. Consequently `rank(M) = 105`.
+4. The cover-side and piece-side Gram matrices `S = M M^T` and
+   `N = M^T M` both have rank 105. Their rational eigenvalues, with exact
+   multiplicities, are
+   `0:87, 2:8, 4:8, 8:3, 10:8, 12:6, 16:2, 20:10, 24:3, 64:1`.
+   The other 56 eigenvalues are not rational.
 
-## The blind space is the cover table applied to the zero-sum covers
+These are finite combinatorial statements. They carry no framework-premise
+weight and no physical interpretation.
 
-Write M for the cover-by-piece table: 192 rows, one per exact cover, 192
-columns, one per piece, a one where the cover uses the piece. The runner
-gates that M is 8-regular on both sides, row sums and column sums alike (C2).
+## Inputs and primitive-registry result
 
-**Derived here, from gated inputs.** Every cover meets every cutting exactly
-once (C1), so the difference of two covers is summed to zero by every cutting:
-the differences are blind. A general element of their span is a combination
-of covers whose coefficients add to zero, so the span is exactly the image of
-the zero-sum coefficient vectors under M transposed. Its dimension is
-therefore 191 less the dimension of the part of the kernel of M transposed
-that lies among the zero-sum vectors.
+The supplied mathematical object consists of the labelled unit-four-cube
+coordinates, normalized-volume simplex rule, adjacency-cost function,
+least-cost restriction, exact-cover rule, and the declared finite action used
+during reconstruction. These choices are not derived from the framework; they
+are the explicit conditional surface that bounds this theorem.
 
-**That kernel lies wholly among the zero-sum vectors, by row-regularity.**
-If a combination of covers is annihilated by M transposed, add up its 192
-piece entries: each cover contributes its coefficient once for each of the 8
-pieces it holds, so the total is 8 times the sum of the coefficients, and it
-is zero. Hence the sum of the coefficients is zero. The runner gates this in
-its dual form (C6): stacking one all-ones cover row onto M transposed leaves
-the rank at 105, so that row already sits in the row space, and every kernel
-vector is orthogonal to it.
+There are no measured, fitted, observational, literature, normalization, or
+framework-science inputs. Python and NumPy are computational machinery. The
+runner reads no repository science file and declares no `AUDIT_INPUT_PATHS`.
+Its canonical cache is generated only by the validation and independent-audit
+machinery, rather than treated as a scientific premise.
 
-The dimension of the blind space is then 191 less the whole nullity of M
-transposed, with nothing to subtract off. The runner measures that nullity as
-87 (C7), and 191 less 87 is 104 — the same 104 the preceding cycles measured
-two other ways. Equivalently, since the nullity is 192 less the rank,
+The primitive-registry check is therefore **not applicable** to the proof
+surface: no registered axiom or primitive is consumed, added, or modified.
+No minimal-axiom dependency edge is asserted.
 
-> dimension of the blind space = rank of the cover-by-piece table, less one.
+## Finite reconstruction
 
-## The one extra dimension is the all-ones piece direction
+The runner begins with the 16 corners of the labelled unit four-cube. It
+enumerates the 4,368 five-corner subsets and retains 2,672 unit
+normalized-volume simplices. The adjacency-cost floor is 6, with 400 pieces
+at that floor. The declared 48-element action generates 2,736 labelled sample
+points with no label collision and no point on a simplex boundary. Exhaustive
+exact-cover recursion then gives 15,800 cuttings, each containing 24 pieces.
+Exactly 192 pieces occur, each in 1,975 cuttings.
 
-The step above leaves one dimension unexplained: the row space of M has 105
-dimensions and the blind space, which sits inside it, has 104. What is the
-extra one?
+Among those supported pieces the runner enumerates 192 free sets of size
+eight. Each meets every cutting exactly once, so each is an exact cover. Their
+incidence rows form `M`; its row and column sums are both eight.
 
-**Derived here, from gated inputs.** Adding up all 192 rows of M gives 8 at
-every piece (C3), because each piece lies in 8 covers — itself a forced count
-from the preceding cycle, where 192 equals 24 times 8. So the all-ones piece
-vector is one eighth of a combination of covers, and lies in the row space.
-It is not blind: the cutting table sends it to the single value 24 at every
-one of the 15800 cuttings (C4), and 24 is not zero. So the row space of M is
-the blind space together with the all-ones piece direction, and the two meet
-only at the origin:
+The runner gates the subset, simplex, cost-floor, action, sample-point,
+collision, boundary, and cover-size invariants before using the reconstructed
+object in the rank or spectrum claims. It also checks both sides of every
+rounded candidate inverse against the exact integer identity matrix before
+using those inverses to classify sample points.
 
-> 105 = 104 + 1.
+## The 104-dimensional blind subspace
 
-The two steps use opposite regularities, which is worth recording. The first
-uses row-regularity, that each cover holds 8 pieces. The second uses
-column-regularity, that each piece lies in 8 covers — the count the preceding
-cycle showed to be forced rather than accidental. The blind space is bounded
-above by the covers and pinned from below by the all-ones direction, one
-regularity at each end.
+Let
 
-## The rational part of the sharing spectrum, exactly
+`H = {c in Q^192 : 1^T c = 0}`
 
-Write S for the cover-side sharing table, M times M transposed, whose entry
-counts the pieces two covers share, and N for the piece-side table, M
-transposed times M. The runner gates that M, S and N all have exact rational
-rank 105 (C5, C8), so the rank question can be asked of a symmetric table.
+and define `B = M^T H`. Since every exact cover meets every cutting once,
 
-Three facts make the whole-number part of the spectrum of S exactly
-determinable in finite work, and the runner states each in place before using
-it (C9):
+`A M^T = J`.
 
-- S is an integer table times its own transpose, so no eigenvalue is below 0.
-- The largest row sum of S is 64, so no eigenvalue is above 64.
-- A rational eigenvalue of an integer symmetric table is a root of a monic
-  integer polynomial, hence an algebraic integer, hence a whole number.
+For `c` in `H`, this gives `A M^T c = J c = 0`, hence
 
-So a scan of the whole numbers 0 to 64 settles the rational part in full: it
-is a complete test, not a sample of one. The scan is made cheap by a fourth
-fact, also stated in place: the rank over the prime field 1000003 never exceeds the rank over the
-rationals, so a whole number with zero nullity over that field is ruled out
-with no exact work at all. Every whole number that survives the cheap pass is
-then confirmed by fraction-free integer elimination, and only the exact
-multiplicity is reported. The prime field rules candidates out; it never
-rules one in.
+`B subset ker(A)`.
 
-The result:
+It remains to compute the dimension of `B`. If `M^T c = 0`, then row
+regularity gives
+
+`0 = 1^T M^T c = (M 1)^T c = 8 (1^T c)`.
+
+Thus `ker(M^T)` is contained in `H`. Fraction-free elimination gives
+`rank(M^T) = 105`, so its nullity is 87. Rank-nullity on the restricted map
+`M^T : H -> Q^192` therefore yields
+
+`dim(B) = dim(H) - dim(ker(M^T)) = 191 - 87 = 104`.
+
+This proves a 104-dimensional subspace of cutting-blind piece weights. It does
+not identify the full kernel of `A`. Equality `B = ker(A)` would additionally
+require an independent lower bound `rank(A) >= 88`; that statement is outside
+this packet.
+
+## The all-ones complement
+
+Column regularity gives `M^T 1 = 8 1`, so the all-ones piece vector belongs
+to the row space of `M`. It does not belong to `B`: every cutting contains 24
+supported pieces, hence `A 1 = 24 1`, whereas `A B = 0`.
+
+Every cover-coefficient vector is the sum of a zero-sum vector and a multiple
+of the all-ones cover vector. Applying `M^T` gives
+
+`row(M) = B direct-sum span{1}`.
+
+The two summands have dimensions 104 and 1, agreeing with the independently
+computed exact rank `rank(M) = 105`.
+
+## Exact rational Gram spectrum
+
+The runner forms the symmetric integer matrices `S = M M^T` and
+`N = M^T M`. Fraction-free elimination gives rank 105 for `M`, `S`, and `N`.
+
+For `S`, positive semidefiniteness puts every eigenvalue at or above zero and
+the constant row sum 64 bounds the spectrum above by 64. A rational
+eigenvalue of an integer matrix is a rational algebraic integer and therefore
+an integer. It is consequently enough to test the integers from 0 through 64.
+
+The runner first rejects candidates with full rank modulo the prime 1,000,003.
+Such a modular full-rank result forces full rank over the rationals. Every
+survivor is then checked by fraction-free integer elimination, so the reported
+nullities and multiplicities are exact. The result is:
 
 | eigenvalue | 0 | 2 | 4 | 8 | 10 | 12 | 16 | 20 | 24 | 64 |
-|---|---|---|---|---|---|---|---|---|---|---|
+|---|---|---|---|---|---|---|---|---|---|---|---|
 | multiplicity | 87 | 8 | 8 | 3 | 8 | 6 | 2 | 10 | 3 | 1 |
 
-Counted with multiplicity these are 136 of the 192 eigenvalues, so **56 of
-them are not rational**. The 0 with multiplicity 87 is the nullity used
-above; the 64 with multiplicity 1 is the largest row sum, taken once.
+These account for 136 dimensions. The other 56 eigenvalues are not rational.
+The trace identities `tr(S) = 1536` and `tr(S^2) = 36096` provide aggregate
+bookkeeping checks: the rational eigenvalues contribute 592 and 12,352,
+respectively. These moments are not presented as an independent uniqueness or
+completeness proof for the spectral list.
 
-Two independent totals confirm the list rather than restate it. The trace of
-S is 1536: each diagonal entry counts the pieces a cover shares with itself,
-which is 8, over 192 covers, and the whole-number eigenvalues supply 592 of
-that, leaving 944. The trace of the square is 36096, of which the whole
-numbers supply 12352, leaving 23744. Both leftovers are strictly positive, as
-they must be when eigenvalues that are not rational are present, and neither
-total is reached by the whole numbers alone (C11). A list that had missed an
-eigenvalue or inflated a multiplicity would have to miss these two totals in
-a coordinated way.
+Because `M` is square, `M M^T` and `M^T M` have the same nonzero spectrum and
+the same nullity. The runner's matching scan for `N` is therefore a consistency
+check, not a separate structural claim. No claim about permutation similarity
+or the discriminatory power of spectral data is made here.
 
-The scan itself is controlled on both sides (C12, C13). On the positive side
-it is run against the sixteen corners of the four-cube joined when they differ
-in one coordinate, whose spectrum is fixed before any measurement is taken:
-eigenvalue 4 once, 2 four times, 0 six times, -2 four times, -4 once, all 16
-whole. The scan recovers exactly that. On the negative side, adding 1 at one
-symmetric pair of that control changes the whole-number spectrum and drops the
-count of whole eigenvalues to 8 of the 16; the gate requires only that the
-spectrum change and the count fall, hard-coding no perturbed answer. So the
-scan is not returning a canned list, and it is sharp enough to notice a
-single-pair change.
+The scan has two small controls. It exactly recovers the known spectrum of the
+four-cube adjacency matrix, then detects a symmetric one-pair perturbation and
+a reduced count of rational eigenvalues.
 
-## The two sharing tables have one spectrum, and the spectrum cannot see the difference
+## Proof-obligation ledger
 
-The piece-side table N returns the same whole-number spectrum as S, entry for
-entry and multiplicity for multiplicity (C10). This is forced, not found: a
-table times its transpose and the transpose times the table share their
-nonzero spectrum, and both are 192 by 192 here, so the multiplicity at 0
-agrees as well. The gate is a consistency check on the machinery.
+| obligation | discharge |
+|---|---|
+| reconstruct the finite object | exhaustive coordinate enumeration plus gated subset, simplex, cost-floor, action, sample-point, collision, boundary, and cover-size invariants |
+| establish exact covers and regularity | full incidence multiplication and complete row and column sums |
+| prove `B subset ker(A)` | `A M^T = J` followed by restriction to zero-sum coefficients |
+| compute `dim(B)` | `ker(M^T) subset H`, exact rank 105, and rank-nullity on the restricted map |
+| identify the row-space complement | `M^T 1 = 8 1`, `A 1 = 24 1`, and coefficient-space decomposition |
+| bind exact ranks | fraction-free integer elimination, with independent review-time modular checks |
+| bind the rational spectrum | finite integer scan with modular rejection and exact rational nullities |
+| exercise the spectrum scan | fixed four-cube spectrum plus a symmetric perturbation control |
 
-Its content is the contrast. The preceding cycle proved that S and N are *not*
-related by any relabelling of the 192 covers onto the 192 pieces, by exhibiting
-off-diagonal multisets that differ. So the two tables are cospectral and not
-permutation-similar. **The spectrum is blind to exactly the asymmetry that the
-sharing counts detect.** Anything built on the spectrum alone — including any
-future account of the rank 105 built that way — will not distinguish the cover
-side from the piece side, and must not be read as having done so.
+## Machine evidence and boundary
 
-## Runner
+The runner has 15 contiguous gates and exits nonzero if any gate fails. The
+machine-readable timeout is 600 seconds and the measured memory ceiling is
+2,500 MB. Validation generates its canonical cache before the changed-evidence
+check; generated audit outputs are not source authority.
 
-`physical_cell_cutting_cover_table_rank_cycle758_2026_08_09.py` rebuilds the
-object from the four-cube and gates 15 quantities. The construction is the
-preceding cycle's, byte for byte, through the exact covers; everything after
-is new.
-
-- C0, C1, C2 — the object: pieces per cutting and cuttings per piece each
-  constant; each of the 192 sets meets every cutting exactly once; the
-  cover-by-piece table 8-regular on both sides.
-- C3, C4 — the inputs to the second derivation: all 192 rows add to 8 at every
-  piece, so the all-ones piece vector is in the row space; the cutting table
-  sends it to the single nonzero value 24.
-- C5 — exact rational rank of the cover-by-piece table 105, of its 191 cover
-  differences 104, difference exactly 1.
-- C6, C7 — the input to the first derivation: the all-ones cover row raises no
-  rank when stacked on the transposed table; exact nullity 87, and 191 less 87
-  is 104.
-- C8 — exact rank 105 for the cover-side and piece-side sharing tables alike.
-- C9, C10 — the whole-number spectrum of both sharing tables, by a complete
-  scan over 0 to 64 with prime-field rejection and exact confirmation; 136 of
-  192 whole, 56 not rational.
-- C11 — the trace 1536 splitting as 592 plus 944 and the trace of the square
-  36096 splitting as 12352 plus 23744, with both leftovers positive.
-- C12, C13 — positive and negative controls on the scan.
-- C14 — time and memory inside allowance, both measured in the run.
-
-`TOTAL: PASS=15 FAIL=0`.
-
-## Boundary
-
-- **The rank 105 is measured, not derived.** This cycle reduces 104 to it and
-  supplies the one-dimensional gap exactly; it does not say why the table has
-  that rank. Read the result as a reduction, not an explanation.
-- **The two derivations are done in this note, not by the runner.** The runner
-  gates their inputs — the two regularities, the row-space memberships, the
-  nullity, the nonzero image — and the counting step from those inputs to
-  "104 equals rank less one" is prose here. The prose is short and the inputs
-  are each gated in place, but the arithmetic itself is not machine-checked.
-- **Cospectrality of the two sharing tables is forced,** and is gated only as
-  a consistency check on the machinery. It is not evidence about the object.
-- **The 56 eigenvalues that are not rational are not identified here.** Their
-  count and their contribution to the two totals are exact; their values,
-  their fields, and their multiplicities individually are untouched.
-- The whole-number scan settles the *rational* part of the spectrum only, and
-  its completeness rests on the three stated facts, each of which is a
-  property of this table rather than a general one.
-- Nothing here bears on any physical claim. The object is a finite
-  combinatorial one and every statement about it is a count.
-
-## Next
-
-The rank question is now sharper than it was, and smaller in three ways.
-
-It lives on a 192 by 192 table rather than a 15800 by 192 one. It can be asked
-of a symmetric table, since the cover-by-piece table and both sharing tables
-carry the one rank. And it is entirely a question about the kernel: the rank
-is 192 less the multiplicity of 0, that multiplicity is exactly 87, and the 56
-eigenvalues that are not rational are therefore all nonzero and play no part
-in it. **Why is 0 an eigenvalue of the sharing table exactly 87 times?** —
-that single question now carries the whole of the 104.
-
-Two structural leads sit next to it. The whole-number eigenvalues come with
-multiplicities 8, 8, 3, 8, 6, 2, 10, 3 and 1 away from the kernel, and a
-decomposition of the cover space that explains those multiplicities would very
-likely name the kernel too. Separately, the preceding cycle found the closed
-refinement of the sharing classes with the fewest parts; whether the products
-of that refinement carry the 104-dimensional span is still open, and it is the
-natural place to look for the decomposition, since the sharing classes
-themselves are known not to close under multiplication while that refinement
-does.
-
-Also still open from the preceding cycles: the combinatorial symmetry group of
-the sharing structure, and whether it exceeds the cube symmetries that have now
-been shown three separate ways to be too coarse for this rank.
+Outside scope: equality of `B` with the full kernel of `A`, a structural
+derivation of rank 105 or nullity 87, individual identification of the 56
+non-rational eigenvalues, physical-cell identification, framework primitives,
+and any multicell or continuum extension.

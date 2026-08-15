@@ -1,0 +1,63 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_one_site_coverage_2026_08_15.py
+runner_sha256: a55b271c7913dfa9470c9998a5a510bc9cd9c44c717d3ad041d045418a27ad0e
+input_fingerprint_sha256: d00dfbb29294d9bd079a6c2c8b2acf18904651a34fae607cd3640331f58fc10c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_ONE_SITE_COVERAGE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+n_rotations=24
+n_orbits=10
+orbit_types_and_sizes=(0, 0, 3):1,(0, 1, 2):3,(0, 2, 1):3,(0, 3, 0):1,(1, 0, 2):6,(1, 1, 1):12,(1, 2, 0):6,(2, 0, 1):12,(2, 1, 0):12,(3, 0, 0):8
+remaining_labels=('wt1', 'opp2', 'adj2', 'vertex3', 'mixed3')
+N_free=5
+|F_cut|=32
+n_one_site_seeds=12
+cov1_f_L1=12
+f_L1_fills_origin=True
+m1=12
+N1=4
+maximizer_remaining=[(1, 0, 1, 1, 0), (1, 0, 1, 1, 1), (1, 1, 1, 1, 0), (1, 1, 1, 1, 1)]
+f_L1_bits=(0, 0, 0, 0, 1, 1, 1, 1, 1, 1)
+f_L1_remaining=(1, 0, 1, 1, 1)
+f_hamming_bits=(0, 0, 0, 0, 1, 1, 1, 0, 0, 1)
+f_hamming_cov1=0
+displayed_remaining=(1, 1, 1, 1, 0)
+displayed_cov1=12
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required note-plus-axiom string-literal tuple
+PASS: thm1-twenty-four-rotations exactly 24 proper cube rotations
+PASS: thm1-ten-orbits exactly 10 orbits partition the 64 cells of {0,1}^6
+PASS: thm1-orbit-sizes orbit sizes are the axis-type class sizes
+PASS: thm1-f-cut-cardinality F_cut has five free bits and size 32
+PASS: thm1-f-L1-is-unbalanced-axis f_L1 is 1 iff some axis has c_+ != c_-
+PASS: thm1-f-L1-not-hamming f_L1 is not Hamming |c|_1 mod 2
+PASS: thm1-two-cube-and-twelve-seeds the two-cube has twelve vertices and twelve one-site seeds
+PASS: thm1-cov1-L1-twelve-and-origin cov1(f_L1)=12 and f_L1 fills from (0,0,0)
+PASS: thm2-m1-and-n1 max 1-site coverage is m1=12 attained by N1=4 maps
+PASS: thm3-not-unique-maximizer N1>1 so f_L1 is a maximizer but not the unique maximizer
+PASS: thm3-displayed-other-maximizer displayed remaining-bit tuple (1, 1, 1, 1, 0) attains m1 and is not f_L1
+PASS: lattice-and-admissibility-parents the live axiom memo supplies Z^3, proper cubic rotations, and a covariant nearest-neighbor rule
+PASS: note-contract bounded theorem, displayed-not-adopted uniqueness failure, and machine status
+PASS: claim-type-and-gate N1-N8 and a passing no-go disposition are source-visible
+PASS: forbidden-phrases-absent the note and runner omit the dispatch-forbidden phrases
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: note-reports-ranking the note reports m1, N1, cov1(f_L1), origin fill, and a displayed maximizer tuple
+PASS: no-axiom-edit the theorem proposes no axiom change
+PASS: off-patch-zero off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: not-leftover-6429-or-fmin the residual is the F_cut 1-site coverage ranking, not leftover-character of #6429 or a seed-table of f_min
+PASS: claim-scope-ranking claim_scope states m1, N1, and that f_L1 is not the unique maximizer
+per_element: checked exactly — each of the 64 neighbor 6-tuples is assigned its axis-type orbit
+per_site: checked exactly — each of the twelve two-cube vertices uses the same six-direction stencil
+per_mode: checked exactly — every F_cut map is scored by how many of the 12 one-site seeds it fills
+per_block: checked exactly — m1 and N1 are the F_cut 1-site coverage-ranking pair on this patch
+lattice_wide: checked and not executed — no Z^3-wide formation law or physical Admissibility selector is claimed
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

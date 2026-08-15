@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/physical_cell_cutting_facet_alphabet_heavy_parity_cycle786_2026_08_14.py
+runner_sha256: 1fec7d760d4265edfd339b1161b749263da44b31bd95636f332921360a7502c3
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 12.17
+status: ok
+----- stdout -----
+PASS K1 the cell has 2672 unit-determinant five-corner pieces, adjacency cost floor 6, 400 kept, 15800 cuttings of 24, 192 used pieces
+PASS K2 all 192 used pieces cut exactly 2 facet faces, on distinct axes, and all 384 faces are among the 24 boundary tetrahedra
+PASS K2 the 192 pieces spread over exactly 24 slot-pairs with 8 pieces each, and 24 times 8 = 192
+PASS K3 every one of the 15800 cuttings cuts 6 pieces and 6 distinct tetrahedra on each of the 8 facets, 126400 slots, 0 misses
+PASS K4 the facet alphabet has exactly 16 dissections and the same 16 letters occur on every one of the 8 slots
+PASS K5 the letters use 24 tetrahedra, each holding exactly 1 antipodal corner pair, with 6 tetrahedra on each of the 4 main diagonals
+PASS K5 4 single-diagonal letters, bijection {1: 2, 6: 3, 8: 1, 15: 0} to the diagonals; other 12 split (3, 3), 2 per diagonal pair
+PASS K6 the 16 letters are closed under the order-48 signed maps of the boundary three-cube, 0 failures, and split into orbits [12, 4]
+PASS K6 the slot holder inside the order-384 cell group has 48 maps inducing all 48 signed maps of the boundary three-cube, 0 strays
+PASS K7 the slot multiplicity census is {862: 12, 1364: 4} on every one of the 8 slots, and 12 times 862 plus 4 times 1364 is 15800
+PASS K7 the heavy keys, defined as the keys of slot multiplicity 1364, are [1, 6, 8, 15] and are exactly the single-diagonal letters
+PASS K8 the reflection of a coordinate sends all 15800 cuttings to cuttings and swaps the two letters of its own axis, 4 axes, 0 misses
+PASS K8 interface matrix symmetric on all 4 axes; entry census {18: 24, 36: 48, 50: 48, 52: 48, 90: 12, 92: 48, 100: 12, 104: 12, 200: 4}
+PASS K8 trace 2000 is 12 times 100 plus 4 times 200; every heavy row is 200 plus 3 times 104 plus 6 times 92 plus 6 times 50, giving 1364
+PASS K8 the gluing relation has 16358512 pairs on every axis, with the row-sum census {862: 10344, 1364: 5456} over cuttings
+PASS K9 self-matching holds for 2000 cuttings on each axis, with weight census {0: 9504, 1: 4672, 2: 1584, 4: 40}, and weight 3 never occurs
+PASS K9 singleton 1168 on each axis and 264 on each of the 6 axis pairs; weight 2 gives HH 384 HL 768 LL 432, weight 1 H 1600 L 3072
+PASS K10 the heavy-slot census over all cuttings is {0: 1200, 2: 7872, 4: 6240, 6: 480, 8: 8}, so no cutting shows an odd number of heavy letters
+PASS K10 letter system rank 10, consistent, solution dim 14, pivots [0, 1, 2, 3, 4, 6, 8, 12, 14, 18], psi support [0, 2, 3, 4, 8, 12, 14, 18]
+PASS K10 psi verifies all 16 letter equations and the face-multiset identity holds on all 15800 cuttings with 0 violations
+PASS K10 the mismatch set has 88 pieces and meets every cutting evenly, 0 odd; the cutting matrix has rank 88 over GF(2), left 104
+PASS K10 letters plus 15800 cutting rows keep rank 10, consistent; the 192 per-piece rows, 2 of them trivial, 190 not, give rank 23 inconsistent
+PASS K11 exactly 40 cuttings match on all 4 axes; two orbits of sizes [8, 32] with holder orders [48, 12], and 8 times 48 is 384
+PASS K11 the size 8 orbit is all-heavy HHHH and equals the 8 cuttings of heavy count 8; the size 32 orbit is HLLL throughout
+PASS K12 one witness per orbit, letters [15, 8, 8, 8] and [14, 10, 8, 0], matching on both sides of all 4 axes; each has period one
+resource: under 60 s, under 250 MB
+TOTAL: PASS=25 FAIL=0
+
+----- stderr -----
+

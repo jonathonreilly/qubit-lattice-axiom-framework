@@ -1,0 +1,71 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_k_site_uniqueness_2026_08_15.py
+runner_sha256: 3499529389adae0659eb48a75682824a733a0be572223bddaf96e014ce1630a6
+input_fingerprint_sha256: 6ecaa4c7fab233082ebdd0c5806fa0ff2b170cfa8d5ba5a7e0faa3a334c1e5dc
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.50
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_K_SITE_UNIQUENESS_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+n_rotations=24
+n_orbits=10
+orbit_types_and_sizes=(0, 0, 3):1,(0, 1, 2):3,(0, 2, 1):3,(0, 3, 0):1,(1, 0, 2):6,(1, 1, 1):12,(1, 2, 0):6,(2, 0, 1):12,(2, 1, 0):12,(3, 0, 0):8
+remaining_labels=('wt1', 'opp2', 'adj2', 'vertex3', 'mixed3')
+N_free=5
+|F_cut|=32
+census_ks=(1, 5, 6, 7, 8, 9, 10, 11)
+k=1 n_seeds=12 m_1=12 N_max_1=4 cov_L1=12 cov_f1=12
+k=5 n_seeds=792 m_5=792 N_max_5=2 cov_L1=792 cov_f1=792
+k=6 n_seeds=924 m_6=924 N_max_6=1 cov_L1=920 cov_f1=924
+unique_maximizer_6=f1 remaining=(1, 1, 1, 1, 1)
+k=7 n_seeds=792 m_7=792 N_max_7=2 cov_L1=792 cov_f1=792
+k=8 n_seeds=495 m_8=495 N_max_8=1 cov_L1=494 cov_f1=495
+unique_maximizer_8=f1 remaining=(1, 1, 1, 1, 1)
+k=9 n_seeds=220 m_9=220 N_max_9=4 cov_L1=220 cov_f1=220
+k=10 n_seeds=66 m_10=66 N_max_10=4 cov_L1=66 cov_f1=66
+k=11 n_seeds=12 m_11=12 N_max_11=8 cov_L1=12 cov_f1=12
+cited_N_max={2: 2, 3: 2, 4: 1}
+K_unique=[4, 6, 8]
+unique_names={4: 'f1', 6: 'f1', 8: 'f1'}
+f_L1_bits=(0, 0, 0, 0, 1, 1, 1, 1, 1, 1)
+f_L1_remaining=(1, 0, 1, 1, 1)
+f1_bits=(0, 1, 1, 0, 1, 1, 1, 1, 1, 1)
+f1_remaining=(1, 1, 1, 1, 1)
+f_hamming_bits=(0, 0, 0, 0, 1, 1, 1, 0, 0, 1)
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required note-plus-axiom string-literal tuple
+PASS: thm1-twenty-four-rotations exactly 24 proper cube rotations
+PASS: thm1-ten-orbits exactly 10 orbits partition the 64 cells of {0,1}^6
+PASS: thm1-orbit-sizes orbit sizes are the axis-type class sizes
+PASS: thm1-f-cut-cardinality F_cut has five free bits and size 32
+PASS: thm1-f-L1-is-unbalanced-axis f_L1 is 1 iff some axis has c_+ != c_-
+PASS: thm1-f-L1-not-hamming f_L1 is not Hamming |c|_1 mod 2
+PASS: thm1-two-cube-and-census-seeds the two-cube has twelve vertices and the eight census k-site seed counts
+PASS: thm1-m-and-n-max-census each census k reports its computed (m_k, N_max_k) pair
+PASS: thm2-k-unique-set K_unique is the seed sizes in 1..11 with N_max_k=1
+PASS: thm2-cites-without-recensus k=2,3,4 enter K_unique only as cited N_max values, not a recensus
+PASS: thm3-unique-maximizers-are-f1 for each k in K_unique the unique maximizer is f1, not f_L1
+PASS: lattice-and-admissibility-parents the live axiom memo supplies Z^3, proper cubic rotations, and a covariant nearest-neighbor rule
+PASS: note-contract bounded theorem, displayed-not-adopted uniqueness set, and machine status
+PASS: claim-type-and-gate N1-N8 and a passing no-go disposition are source-visible
+PASS: forbidden-phrases-absent the note and runner omit the dispatch-forbidden phrases
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: note-reports-ranking the note reports every census pair, K_unique, and names f1 not f_L1
+PASS: no-axiom-edit the theorem proposes no axiom change
+PASS: off-patch-zero off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: not-leftover-one-k the residual is the multi-k uniqueness set, not leftover-character of one k
+PASS: claim-scope-ranking claim_scope reports unique-maximizer seed sizes and names f_L1 or f1
+PASS: seeds-not-listed the note does not list k-site seeds and does not recensus 2,3,4
+per_element: checked exactly — each of the 64 neighbor 6-tuples is assigned its axis-type orbit
+per_site: checked exactly — each of the twelve two-cube vertices uses the same six-direction stencil
+per_mode: checked exactly — every F_cut map is scored on each census seed size
+per_block: checked exactly — K_unique is the set of k in 1..11 with a unique coverage maximizer
+lattice_wide: checked and not executed — no Z^3-wide formation law or physical Admissibility selector is claimed
+TOTAL: PASS=23 FAIL=0
+
+----- stderr -----
+

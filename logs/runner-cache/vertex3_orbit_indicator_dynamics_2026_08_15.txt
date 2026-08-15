@@ -1,0 +1,82 @@
+===== runner cache v1 =====
+runner: scripts/vertex3_orbit_indicator_dynamics_2026_08_15.py
+runner_sha256: 65b5c7e5444509a2b7c7f8259768f22903ed60782ab5f1f05011f7b69ab3bfed
+input_fingerprint_sha256: c95a752bebb8569b7d2848bc2a457372eed85e297fc037cb66c4c110b5e4dd19
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+vertex3-orbit indicator dynamics on the two-cube
+AUDIT_INPUT_PATHS:
+  docs/VERTEX3_ORBIT_INDICATOR_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+scope: twelve-vertex two-cube; 1-site seed; off-patch o=0; f_v3 = indicator of the complement-fixed vertex3 orbit
+negative_scope: displayed, not adopted; not leftover-char static membership; not L1; f_L1 is n≠0, not Hamming parity
+PASS: audit-input-paths-static-literals
+PASS: audit-input-paths-exist
+PASS: audit-input-paths-unique-relative
+PASS: lattice-quote-present
+PASS: record-form-quote-present
+PASS: hygiene-avoids-'G_N'
+PASS: hygiene-avoids-'1/r'
+PASS: hygiene-avoids-'1/r^2'
+PASS: hygiene-avoids-'Lattice-named'
+PASS: hygiene-avoids-'not a TOE'
+PASS: hygiene-avoids-'exhausted'
+PASS: hygiene-avoids-'only route'
+PASS: hygiene-avoids-'we adopt'
+PASS: hygiene-avoids-'Codex'
+PASS: hygiene-avoids-'L_phys'
+PASS: note-has-no-runner-cache-path
+PASS: note-has-no-citation-manifest
+PASS: patch-has-twelve-sites
+PASS: seed-is-origin
+PASS: off-patch-occupancy-is-zero
+PASS: rotation-group-order
+PASS: orbit-count  (N_orb=10)
+PASS: vertex3-size-eight
+PASS: vertex3-is-one-per-axis
+PASS: vertex3-complement-fixed
+PASS: mixed3-is-distinct
+PASS: weight-1-not-in-vertex3
+PASS: f-v3-exactly-the-orbit
+PASS: theorem-1-first-wave-empty
+PASS: theorem-2-halt-is-zero-or-one  (T=0)
+PASS: theorem-2-locks-are-seed-only
+PASS: theorem-2-lock-count  (|locks|=1)
+PASS: theorem-2-halt-is-fixed-point
+PASS: theorem-2-one-tick-adds-nothing
+PASS: theorem-3-does-not-fill
+PASS: locks-monotone
+PASS: displayed-f-l1-is-unbalanced-axis-not-hamming
+PASS: hamming-first-wave-nonempty
+PASS: l1-first-wave-nonempty
+PASS: l1-displayed-fills-at-horizon-4  (L1 T=4 |locks|=12)
+PASS: f-v3-distinct-from-l1-and-hamming
+PASS: claim-scope
+PASS: note-reports-empty-first-wave
+PASS: note-reports-seed-only-locks
+PASS: note-reports-does-not-fill
+PASS: note-displays-not-adopted
+PASS: note-not-leftover-char
+PASS: note-authors-no-audit-verdict
+PASS: script-hygiene
+PASS: axiom-unedited
+halt_tick: 0
+lock_count: 1
+fills_patch: False
+first_wave_size: 0
+hamming_first_wave_size: 3
+l1_halt_tick: 4
+per_element: 12 vertices
+per_site: occupancy lock
+per_mode: f_v3 vertex3-orbit indicator
+per_block: first wave, halt, fill
+lattice_wide: checked and not executed
+TOTAL: PASS=50 FAIL=0
+
+----- stderr -----
+

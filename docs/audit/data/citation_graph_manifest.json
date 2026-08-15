@@ -1,6 +1,6 @@
 {
- "edge_count": 15728,
- "node_count": 5530,
+ "edge_count": 15729,
+ "node_count": 5531,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -13472,6 +13472,10 @@
   },
   "one_parameter_reduced_shell_law_note": {
    "deps_hash": "03d023bc9c3c",
+   "out_degree": 1
+  },
+  "one_site_fillers_mixed3_bounded_theorem_note_2026-08-15": {
+   "deps_hash": "c8eee4235fc9",
    "out_degree": 1
   },
   "one_time_dimension_dt1_reduces_to_emergent_dynamics_gate_open_gate_note_2026-06-17": {

@@ -296,6 +296,16 @@
     },
     "LARGE_DECLARED_INSTANCES": {
       "certificate": "LARGE_DECLARED_INSTANCES",
+      "declared_instance_names": [
+        "twelve_orbits_of_eleven_uniform_fibres",
+        "twelve_orbits_of_eleven_mixed_fibres_partial_orbit_cut"
+      ],
+      "declared_instance_set_is_exact": true,
+      "expected_instance_names": [
+        "twelve_orbits_of_eleven_uniform_fibres",
+        "twelve_orbits_of_eleven_mixed_fibres_partial_orbit_cut"
+      ],
+      "instances_checked": 2,
       "pass": true,
       "routes_not_run_here_and_why": "the fibre-level rank routes -- the dense fraction-free nullspace rank, the row-space support certificate and the two-sided normalized-dimension bounds -- are NOT run on these two instances: exact elimination over more than two thousand columns is outside this runner's declared budget.  What these two rows establish is therefore the arithmetic evaluation of laws proved in the note and verified by those routes on the exhaustive family, together with the base-level rank, the basis verification and the representative verification performed here",
       "rows": [
@@ -388,6 +398,7 @@
         "extreme_points",
         "group_structure",
         "large_instances",
+        "output_discipline",
         "representatives",
         "route_inventory",
         "signed_witness",
@@ -547,10 +558,22 @@
           "check_family": "large_instances",
           "detail": "dimension moves to 1398 from 1409",
           "tooth": "large_instance_fibre_rule_altered"
+        },
+        {
+          "bites": true,
+          "check_family": "large_instances",
+          "detail": "the separately declared expected-name tuple rejects the shortened specification list",
+          "tooth": "delete_one_of_the_two_declared_large_instances"
+        },
+        {
+          "bites": true,
+          "check_family": "output_discipline",
+          "detail": "the bounded renderer rejected both malformed transcripts",
+          "tooth": "stdout_budget_or_terminal_total_removed"
         }
       ],
-      "teeth_biting": 20,
-      "teeth_total": 20
+      "teeth_biting": 22,
+      "teeth_total": 22
     },
     "NON_NEGATIVE_WITNESSES": {
       "certificate": "NON_NEGATIVE_WITNESSES",
@@ -685,7 +708,7 @@
         ]
       },
       "repository_modules_imported": [],
-      "self_sha256": "696cc7bfee4adbe1ba4dd96a319764b3dc91ab89aaff3188e377d9cc17d3848a"
+      "self_sha256": "8de1545a325a64f9e7c68714d672a334b5ba4dec25a0b6a51a598656a4134f14"
     },
     "SUPPORT_CONTAINMENT": {
       "base_points_certified_outside_the_disjoint_orbits": 46510,
@@ -723,6 +746,7 @@
     ]
   },
   "family": {
+    "base_point_counts": "one through five",
     "extreme_point_enumeration_max_fibre_points": 6,
     "fibre_alphabet_at_five_base_points": [
       1,
@@ -735,6 +759,7 @@
     ],
     "instances": 14374,
     "max_base_points": 5,
+    "orbit_partitions": "one canonical contiguous representative of every orbit-size partition; all relevant decorated cases up to relabeling",
     "required_zero_subsets": "every subset of base points"
   },
   "fraction_label": "bookkeeping fraction, not probability",
@@ -746,6 +771,6 @@
     "pushforward_dimension": "the space of admissible pushforward masses has dimension exactly the number of orbits disjoint from the required-zero subset; where that number is one, every admissible pushforward mass is therefore a rational multiple of one fixed admissible mass",
     "scope": "conditional on the declared finite structure only; this runner reads no repository census, no symmetry claim, no interface condition and no axiom surface, and asserts nothing about any of them",
     "signed_solution_off_the_disjoint_orbits": "whenever a base point lies outside the required-zero subset, lies in an orbit that meets it, and carries at least two fibre points, the difference of two of its fibre weights is a solution supported strictly outside every disjoint orbit; that hypothesis holds at 6268 of the 14374 swept instances and a witness is exhibited at every one of them, so support containment is a consequence of non-negativity and not of the two linear conditions alone",
-    "verification_scope": "the laws above are proved in the note for all finite instances; this runner verifies them on 14374 exhaustively enumerated instances, the extreme-point statement by brute-force enumeration on the 1757 of them with at most 6 fibre points and a disjoint orbit, and evaluates the laws at two declared larger instances where the fibre-level rank routes are not run"
+    "verification_scope": "the laws above are proved in the note for all finite instances; this runner verifies them on 14374 exhaustively enumerated canonical representatives of the declared decorated family, the extreme-point statement by brute-force enumeration on the 1757 of them with at most 6 fibre points and a disjoint orbit, and evaluates the laws at the 2 declared larger instances where the fibre-level rank routes are not run"
   }
 }

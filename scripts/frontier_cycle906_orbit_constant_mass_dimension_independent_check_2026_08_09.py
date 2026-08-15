@@ -13,11 +13,11 @@ in-file rebuild; it never takes a value from the receipt and re-prints it.
 The rebuild differs from the primary's implementation path at every level
 that matters:
 
-  * base points are laid out in the reverse orbit order, fibre points are
-    indexed in reverse base order, and the orbit-constancy rows are
-    CONSECUTIVE differences around each orbit rather than differences
-    against a fixed orbit head, so the constraint matrix is a different
-    matrix with the same solution space;
+  * fibre points are indexed in reverse base order, constraint rows visit the
+    canonical orbit blocks in reverse order, and the orbit-constancy rows are
+    CONSECUTIVE differences around each orbit rather than differences against
+    a fixed orbit head, so the constraint matrix is a different matrix with
+    the same solution space;
   * the dimension is obtained by MODULAR rank over three large primes
     (integer arithmetic mod p) instead of the primary's fraction-free
     integer elimination;
@@ -33,7 +33,10 @@ that matters:
     rank test, and the control at base points inside a disjoint orbit is an
     exhibited solution with nonzero mass there rather than a second rank;
   * the extreme points are re-enumerated by brute force over all supports in
-    the checker's own layout.
+    the checker's own layout;
+  * the two declared larger examples are checked against the checker's own
+    complete name-and-parameter transcription before any receipt row is
+    rebuilt, so deleting or redefining one cannot shrink the promised scope.
 
 SENTENCES ARE CHECKED, NOT COPIED.  The checker holds its own transcription
 of the dimension laws, of the phrases they are rendered with, and of the
@@ -68,6 +71,7 @@ from pathlib import Path
 import sys
 
 AUDIT_TIMEOUT_SEC = 600
+HOUSE_STDOUT_LIMIT_BYTES = 6_000
 
 # Both declared inputs are files of THIS landing delta, reviewed here: the
 # primary runner's source and the receipt that run emitted.  Nothing else --
@@ -87,13 +91,13 @@ RECEIPT_PATH = ("outputs/orbit_constant_mass_dimension_independent_check"
 
 EXPECTED_SHA256 = {
     PRIMARY_PATH:
-        "696cc7bfee4adbe1ba4dd96a319764b3dc91ab89aaff3188e377d9cc17d3848a",
+        "8de1545a325a64f9e7c68714d672a334b5ba4dec25a0b6a51a598656a4134f14",
     PRIMARY_RECEIPT:
-        "0032e0feac893abe73e1dd0923c6a661e6fda1e20f0a6dcef20c9ac039543525",
+        "dff19f32acd95642ff1da57d89047604312a57e8622f8720bd1054164f719395",
 }
 EXPECTED_GIT_BLOBS = {
-    PRIMARY_PATH: "20db861618bd7b41b44bfd91275079abbf63606c",
-    PRIMARY_RECEIPT: "5b7419fbb455ef20d5fcc6091418e97a1399a45a",
+    PRIMARY_PATH: "b76e9a7e8b9555adf2d72a567b180f8e21db8fe9",
+    PRIMARY_RECEIPT: "f7ffab4a24f3b2bda8da84a347d77d411524a851",
 }
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -107,6 +111,33 @@ CHECK_FIBRE_ALPHABET_SMALL = (1, 2, 3)
 CHECK_FIBRE_ALPHABET_WIDE = (1, 2)
 CHECK_WIDE_ALPHABET_FROM = 5
 CHECK_VERTEX_MAX_FIBRE_POINTS = 6
+
+# Independent transcription of both promised scale examples.  The checker
+# never lets the primary receipt redefine their number, names, or parameters.
+CHECK_LARGE_INSTANCES = (
+    {
+        "name": "twelve_orbits_of_eleven_uniform_fibres",
+        "declared_parameters": {
+            "orbit_sizes": [11] * 12,
+            "fibre_rule": "every base point carries 129 fibre points",
+            "required_zero_rule": "every base point of the first eleven orbits",
+        },
+    },
+    {
+        "name": "twelve_orbits_of_eleven_mixed_fibres_partial_orbit_cut",
+        "declared_parameters": {
+            "orbit_sizes": [11] * 12,
+            "fibre_rule": (
+                "the last orbit's base points carry 129 fibre points;"
+                " every other base point carries 7"
+            ),
+            "required_zero_rule": (
+                "every base point of the first ten orbits, plus the"
+                " first base point of the eleventh orbit"
+            ),
+        },
+    },
+)
 
 # The checker's OWN transcription of the dimension laws and of the prose the
 # primary renders them with.  Nothing here is read from the receipt.
@@ -166,10 +197,26 @@ def disagree(gate: str, detail: str, expected: object, observed: object) -> None
                           "receipt_says": expected, "checker_finds": observed})
 
 
+OUTPUT_LINES: list[str] = []
+
+
 def emit(name: str, payload: dict) -> bool:
     ok = bool(payload.get("pass"))
-    print(f"CERTIFICATE {name} {'PASS' if ok else 'FAIL'} {compact(payload)}")
+    OUTPUT_LINES.append(
+        f"CERTIFICATE {name} {'PASS' if ok else 'FAIL'} "
+        f"canonical_json_sha256={digest(payload)}"
+    )
     return ok
+
+
+def bounded_stdout(lines: list[str]) -> str:
+    """Render stdout and fail closed on the repository execution contract."""
+    if not lines or not lines[-1].startswith("TOTAL: PASS="):
+        raise ValueError("runner stdout must end with TOTAL: PASS=<n> FAIL=<n>")
+    rendered = "\n".join(lines) + "\n"
+    if len(rendered.encode("utf-8")) >= HOUSE_STDOUT_LIMIT_BYTES:
+        raise ValueError("runner stdout exceeds the 6000-byte house limit")
+    return rendered
 
 
 # ---------------------------------------------------------------------------
@@ -243,13 +290,16 @@ def rendered_theorem(instances: int, hypothesis_instances: int,
             "the laws above are proved in the note for all finite instances;"
             " this runner verifies them on "
             + str(instances)
-            + " exhaustively enumerated instances, the extreme-point"
+            + " exhaustively enumerated canonical representatives of the"
+              " declared decorated family, the extreme-point"
               " statement by brute-force enumeration on the "
             + str(enumerated_instances)
             + " of them with at most "
             + str(CHECK_VERTEX_MAX_FIBRE_POINTS)
             + " fibre points and a disjoint orbit, and evaluates the laws at"
-              " two declared larger instances where the fibre-level rank"
+              " the "
+            + str(len(CHECK_LARGE_INSTANCES))
+            + " declared larger instances where the fibre-level rank"
               " routes are not run"),
         "scope": (
             "conditional on the declared finite structure only; this runner"
@@ -1258,33 +1308,69 @@ def gate_witnesses(receipt: dict) -> dict:
 
 
 def gate_large_instances(receipt: dict) -> dict:
-    claimed_rows = (receipt.get("certificates", {})
-                    .get("LARGE_DECLARED_INSTANCES", {}).get("rows", []))
+    claimed_certificate = (receipt.get("certificates", {})
+                           .get("LARGE_DECLARED_INSTANCES", {}))
+    claimed_rows = claimed_certificate.get("rows", [])
+    expected_names = tuple(spec["name"] for spec in CHECK_LARGE_INSTANCES)
+    claimed_names = tuple(spec.get("name") for spec in claimed_rows)
+    exact_specs = (
+        claimed_names == expected_names
+        and all(
+            claimed.get("declared_parameters")
+            == expected["declared_parameters"]
+            for claimed, expected in zip(claimed_rows, CHECK_LARGE_INSTANCES)
+        )
+    )
+    primary_declares_exact = (
+        claimed_certificate.get("expected_instance_names")
+        == list(expected_names)
+        and claimed_certificate.get("declared_instance_names")
+        == list(expected_names)
+        and claimed_certificate.get("declared_instance_set_is_exact") is True
+        and claimed_certificate.get("instances_checked")
+        == len(CHECK_LARGE_INSTANCES)
+    )
+    if not exact_specs:
+        disagree("large_instances", "declared large-instance specifications",
+                 list(CHECK_LARGE_INSTANCES), claimed_rows)
+    if not primary_declares_exact:
+        disagree("large_instances", "primary large-instance coverage fields",
+                 {"names": list(expected_names),
+                  "instances_checked": len(CHECK_LARGE_INSTANCES)},
+                 {"names": claimed_certificate.get("declared_instance_names"),
+                  "instances_checked":
+                      claimed_certificate.get("instances_checked")})
     rows = []
-    ok = bool(claimed_rows)
-    for spec in claimed_rows:
-        computed = computed_large(spec)
+    ok = exact_specs and primary_declares_exact
+    for expected, claimed in zip(CHECK_LARGE_INSTANCES, claimed_rows):
+        computed = computed_large(expected)
         own = computed["values"]
         representative_ok = computed["representative_ok"]
-        agree = {k: (spec.get(k) == v) for k, v in own.items()}
+        agree = {k: (claimed.get(k) == v) for k, v in own.items()}
         for k, matched in agree.items():
             if not matched:
-                disagree("large_instances", f"{spec.get('name')}:{k}",
-                         spec.get(k), own[k])
+                disagree("large_instances", f"{expected['name']}:{k}",
+                         claimed.get(k), own[k])
         if not representative_ok:
             disagree("large_instances",
-                     f"{spec.get('name')}:representative", True, False)
+                     f"{expected['name']}:representative", True, False)
         ok = ok and all(agree.values()) and representative_ok
-        rows.append({"name": spec.get("name"), "checker_values": own,
+        rows.append({"name": expected["name"], "checker_values": own,
                      "agrees": agree,
                      "representative_verified": representative_ok})
     payload = {
         "certificate": "LARGE_INSTANCES_REBUILT",
-        "statement": ("each declared larger instance is rebuilt from the"
-                      " receipt's declared parameters alone and every"
-                      " advertised number is recomputed by the checker's"
+        "statement": ("the checker requires the primary's two declared"
+                      " large-instance names and complete parameter records"
+                      " to equal its own independent transcription, then"
+                      " rebuilds each one; every advertised number is"
+                      " recomputed by the checker's"
                       " rank-nullity split, its own base-level modular rank"
                       " and its own representative"),
+        "expected_instance_names": list(expected_names),
+        "receipt_instance_names": list(claimed_names),
+        "specifications_match_exactly": exact_specs,
+        "primary_coverage_fields_match": primary_declares_exact,
         "rows": rows,
     }
     payload["pass"] = bool(ok)
@@ -1364,9 +1450,12 @@ def gate_receipt_consistency(receipt: dict) -> dict:
     timeout = receipt.get("AUDIT_TIMEOUT_SEC")
     teeth = certificates.get("MUTATION_TEETH", {})
     teeth_all_bite = (teeth.get("teeth_total") == teeth.get("teeth_biting")
-                      and (teeth.get("teeth_total") or 0) >= 18)
+                      and (teeth.get("teeth_total") or 0) >= 22)
     families = teeth.get("check_families_covered") or []
-    families_covered = len(families) >= 8
+    families_covered = (
+        len(families) >= 12 and "output_discipline" in families
+        and "large_instances" in families
+    )
     self_containment = certificates.get("SELF_CONTAINMENT", {})
     no_external_reads = (
         self_containment.get("read_inventory", {})
@@ -1386,7 +1475,8 @@ def gate_receipt_consistency(receipt: dict) -> dict:
     if not families_covered:
         disagree("receipt_consistency",
                  "planted mutations do not cover every check family",
-                 8, len(families))
+                 "at least 12 including output_discipline and large_instances",
+                 families)
     if not no_external_reads:
         disagree("receipt_consistency",
                  "the primary reports an external scientific read", [], "some")
@@ -1475,6 +1565,9 @@ def run_teeth(receipt: dict) -> dict:
          lambda r: r["certificates"]["LARGE_DECLARED_INSTANCES"]["rows"][0]
          .__setitem__("non_negative_normalized_dimension", 0),
          gate_large_instances)
+    bite("delete_one_of_the_two_declared_large_instances", "large_instances",
+         lambda r: r["certificates"]["LARGE_DECLARED_INSTANCES"]["rows"].pop(),
+         gate_large_instances)
     bite("replace_a_theorem_sentence_with_a_false_one", "theorem_text",
          lambda r: r["theorem"].__setitem__(
              "pushforward_dimension",
@@ -1505,6 +1598,21 @@ def run_teeth(receipt: dict) -> dict:
              "check_families_covered", ["basis"]),
          gate_receipt_consistency)
 
+    output_mutations_rejected = 0
+    for bad_lines in (
+        ["x" * HOUSE_STDOUT_LIMIT_BYTES, "TOTAL: PASS=1 FAIL=0"],
+        ["VERDICT CORROBORATES"],
+    ):
+        try:
+            bounded_stdout(bad_lines)
+        except ValueError:
+            output_mutations_rejected += 1
+    teeth.append({
+        "tooth": "stdout_budget_or_terminal_total_removed",
+        "check_family": "output_discipline",
+        "bites": output_mutations_rejected == 2,
+    })
+
     payload = {
         "certificate": "TEETH",
         "statement": ("planted receipt corruptions, at least one per gate,"
@@ -1520,13 +1628,22 @@ def run_teeth(receipt: dict) -> dict:
 
 
 def main() -> int:
-    print("CYCLE906_INDEPENDENT_CHECK_SPECIFIED_TO_REFUTE")
-    print("EVERY_EMITTED_FRACTION_IS_A_BOOKKEEPING_FRACTION_NOT_A_PROBABILITY")
+    OUTPUT_LINES.clear()
+    OUTPUT_LINES.extend((
+        "CYCLE906_INDEPENDENT_CHECK_SPECIFIED_TO_REFUTE",
+        "EVERY_EMITTED_FRACTION_IS_A_BOOKKEEPING_FRACTION_NOT_A_PROBABILITY",
+    ))
 
     pins, receipt = gate_pins()
     ok = emit("PINS", pins)
     if not ok:
-        print("VERDICT DISAGREES (declared inputs did not verify)")
+        OUTPUT_LINES.append("VERDICT DISAGREES (declared inputs did not verify)")
+        OUTPUT_LINES.append("TOTAL: PASS=0 FAIL=1")
+        try:
+            sys.stdout.write(bounded_stdout(OUTPUT_LINES))
+        except ValueError as exc:
+            sys.stderr.write(f"OUTPUT_DISCIPLINE_FAILED: {exc}\n")
+            sys.stdout.write("OUTPUT_DISCIPLINE FAIL\nTOTAL: PASS=0 FAIL=1\n")
         return 1
 
     order: list[str] = []
@@ -1577,8 +1694,23 @@ def main() -> int:
     (ROOT / RECEIPT_PATH).write_text(
         json.dumps(out, indent=2, sort_keys=True, default=str) + "\n",
         encoding="utf-8")
-    print(f"RECEIPT {RECEIPT_PATH} sha256={digest(out)[:16]}")
-    print(f"VERDICT {verdict}")
+    OUTPUT_LINES.append(
+        f"RECEIPT {RECEIPT_PATH} "
+        f"canonical_json_sha256={digest(out)[:16]}"
+    )
+    OUTPUT_LINES.append(f"VERDICT {verdict}")
+    passed = sum(bool(payload.get("pass"))
+                 for payload in certificates.values()) + int(summary["pass"])
+    failed = sum(not bool(payload.get("pass"))
+                 for payload in certificates.values()) + int(not summary["pass"])
+    OUTPUT_LINES.append(f"TOTAL: PASS={passed} FAIL={failed}")
+    try:
+        stdout = bounded_stdout(OUTPUT_LINES)
+    except ValueError as exc:
+        sys.stderr.write(f"OUTPUT_DISCIPLINE_FAILED: {exc}\n")
+        sys.stdout.write("OUTPUT_DISCIPLINE FAIL\nTOTAL: PASS=0 FAIL=1\n")
+        return 1
+    sys.stdout.write(stdout)
     return 0 if (ok and not DISAGREEMENTS) else 1
 
 

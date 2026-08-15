@@ -53,7 +53,16 @@
     },
     "LARGE_INSTANCES_REBUILT": {
       "certificate": "LARGE_INSTANCES_REBUILT",
+      "expected_instance_names": [
+        "twelve_orbits_of_eleven_uniform_fibres",
+        "twelve_orbits_of_eleven_mixed_fibres_partial_orbit_cut"
+      ],
       "pass": true,
+      "primary_coverage_fields_match": true,
+      "receipt_instance_names": [
+        "twelve_orbits_of_eleven_uniform_fibres",
+        "twelve_orbits_of_eleven_mixed_fibres_partial_orbit_cut"
+      ],
       "rows": [
         {
           "agrees": {
@@ -100,7 +109,8 @@
           "representative_verified": true
         }
       ],
-      "statement": "each declared larger instance is rebuilt from the receipt's declared parameters alone and every advertised number is recomputed by the checker's rank-nullity split, its own base-level modular rank and its own representative"
+      "specifications_match_exactly": true,
+      "statement": "the checker requires the primary's two declared large-instance names and complete parameter records to equal its own independent transcription, then rebuilds each one; every advertised number is recomputed by the checker's rank-nullity split, its own base-level modular rank and its own representative"
     },
     "PINS": {
       "both_declared_inputs_are_files_of_this_landing_delta": true,
@@ -110,8 +120,8 @@
         "outputs/orbit_constant_mass_dimension_cycle906_receipt_2026_08_09.json"
       ],
       "git_blobs": {
-        "outputs/orbit_constant_mass_dimension_cycle906_receipt_2026_08_09.json": "5b7419fbb455ef20d5fcc6091418e97a1399a45a",
-        "scripts/frontier_cycle906_orbit_constant_mass_dimension_2026_08_09.py": "20db861618bd7b41b44bfd91275079abbf63606c"
+        "outputs/orbit_constant_mass_dimension_cycle906_receipt_2026_08_09.json": "f7ffab4a24f3b2bda8da84a347d77d411524a851",
+        "scripts/frontier_cycle906_orbit_constant_mass_dimension_2026_08_09.py": "b76e9a7e8b9555adf2d72a567b180f8e21db8fe9"
       },
       "git_blobs_all_match": true,
       "import_firewall_hits": [],
@@ -124,8 +134,8 @@
       "primary_family_matches_independent_transcription": true,
       "primary_laws_match_independent_transcription": true,
       "sha256": {
-        "outputs/orbit_constant_mass_dimension_cycle906_receipt_2026_08_09.json": "0032e0feac893abe73e1dd0923c6a661e6fda1e20f0a6dcef20c9ac039543525",
-        "scripts/frontier_cycle906_orbit_constant_mass_dimension_2026_08_09.py": "696cc7bfee4adbe1ba4dd96a319764b3dc91ab89aaff3188e377d9cc17d3848a"
+        "outputs/orbit_constant_mass_dimension_cycle906_receipt_2026_08_09.json": "dff19f32acd95642ff1da57d89047604312a57e8622f8720bd1054164f719395",
+        "scripts/frontier_cycle906_orbit_constant_mass_dimension_2026_08_09.py": "8de1545a325a64f9e7c68714d672a334b5ba4dec25a0b6a51a598656a4134f14"
       },
       "sha256_all_match": true
     },
@@ -147,6 +157,7 @@
         "extreme_points",
         "group_structure",
         "large_instances",
+        "output_discipline",
         "representatives",
         "route_inventory",
         "signed_witness",
@@ -182,6 +193,7 @@
         "dimension_table",
         "extreme_points",
         "large_instances",
+        "output_discipline",
         "receipt_consistency",
         "support_containment",
         "theorem_text",
@@ -252,6 +264,11 @@
         },
         {
           "bites": true,
+          "check_family": "large_instances",
+          "tooth": "delete_one_of_the_two_declared_large_instances"
+        },
+        {
+          "bites": true,
           "check_family": "theorem_text",
           "tooth": "replace_a_theorem_sentence_with_a_false_one"
         },
@@ -279,10 +296,15 @@
           "bites": true,
           "check_family": "receipt_consistency",
           "tooth": "drop_the_primary_mutation_families"
+        },
+        {
+          "bites": true,
+          "check_family": "output_discipline",
+          "tooth": "stdout_budget_or_terminal_total_removed"
         }
       ],
-      "teeth_biting": 18,
-      "teeth_total": 18
+      "teeth_biting": 20,
+      "teeth_total": 20
     },
     "THEOREM_TEXT_REBUILT": {
       "certificate": "THEOREM_TEXT_REBUILT",

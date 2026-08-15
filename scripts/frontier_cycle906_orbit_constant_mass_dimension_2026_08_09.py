@@ -8,8 +8,8 @@ SELF-CONTAINED.  Read inventory, stated in the two kinds the repo requires:
     module is imported, no ancestor source, receipt, note or axiom file is
     read, and nothing outside this file supplies a number used in any
     certificate.
-  * package-local integrity reads: this file reads ITS OWN source, once, to
-    publish its content hash and to confirm by AST that the declared
+  * package-local integrity reads: this file reads only ITS OWN source path,
+    to publish its content hash and to confirm by AST that the declared
     ``AUDIT_INPUT_PATHS`` is exactly ``(this file,)``.  That single path is
     the whole declared closure; a literally empty tuple is rejected as
     invalid by the cache envelope and the evidence-readiness gate, so the
@@ -81,12 +81,15 @@ instance, and a declared list of WRONG coefficient sets must each be
 refuted by an exhibited instance.  A wrong sentence therefore cannot pass:
 it either fails the rendering comparison or fails the evaluation.
 
-The enumerated family is every instance with at most five base points, every
-orbit partition of those base points, fibre sizes drawn from the declared
-alphabet, and EVERY subset of base points as the required-zero subset.  Two
-larger declared instances are carried for scale, where the fibre-level rank
-routes are deliberately not run (stated, with the reason and with exactly
-what is established there instead).
+The enumerated family has one through five base points and one canonical
+contiguous representative for every orbit-size partition, with every
+fibre-size assignment from the declared alphabet and EVERY required-zero
+subset on that representative.  Since the conditions are invariant under a
+simultaneous relabeling, this is every relevant decorated case up to
+relabeling, not every labeled set partition.  Two larger declared instances
+are carried for scale, where the fibre-level rank routes are deliberately not
+run (stated, with the reason and with exactly what is established there
+instead).
 
 Exact integer and rational arithmetic throughout; no floating point enters
 any verdict.  Every fraction emitted is a BOOKKEEPING FRACTION, NOT A
@@ -110,6 +113,7 @@ from pathlib import Path
 import sys
 
 AUDIT_TIMEOUT_SEC = 600
+HOUSE_STDOUT_LIMIT_BYTES = 6_000
 
 # The declared evidence closure contains exactly ONE path: this runner's own
 # source.  That is the whole of what the run depends on.  There is no
@@ -131,9 +135,11 @@ RECEIPT_PATH = "outputs/orbit_constant_mass_dimension_cycle906_receipt_2026_08_0
 FRACTION_LABEL = "bookkeeping fraction, not probability"
 
 # ---- the declared enumerated family ---------------------------------------
-# Every instance with at most MAX_BASE_POINTS base points, every orbit
-# partition, every fibre-size assignment from the declared alphabet, and
-# every subset of base points as the required-zero subset.
+# Base counts 1..MAX_BASE_POINTS, one canonical contiguous representative of
+# every orbit-size partition, every fibre-size assignment from the declared
+# alphabet, and every required-zero subset.  This covers the decorated cases
+# up to simultaneous relabeling; it is not literal labeled-set-partition
+# enumeration.
 MAX_BASE_POINTS = 5
 FIBRE_ALPHABET_SMALL = (1, 2, 3)   # used when base points <= 4
 FIBRE_ALPHABET_WIDE = (1, 2)       # used at 5 base points, to bound the sweep
@@ -228,6 +234,14 @@ LARGE_INSTANCES = (
     },
 )
 
+# Kept separately from LARGE_INSTANCES so deleting one declared example cannot
+# silently change the promised coverage.  The independent checker carries its
+# own full transcription of the two specifications.
+EXPECTED_LARGE_INSTANCE_NAMES = (
+    "twelve_orbits_of_eleven_uniform_fibres",
+    "twelve_orbits_of_eleven_mixed_fibres_partial_orbit_cut",
+)
+
 
 # ---------------------------------------------------------------------------
 # import firewall: nothing from this repository may be imported
@@ -263,10 +277,28 @@ def fr(value: Fraction) -> str:
     return f"{value.numerator}/{value.denominator}"
 
 
+OUTPUT_LINES: list[str] = []
+
+
 def emit(name: str, payload: dict) -> bool:
     ok = bool(payload.get("pass"))
-    print(f"CERTIFICATE {name} {'PASS' if ok else 'FAIL'} {compact(payload)}")
+    # The complete certificate stays in the receipt.  Stdout carries a stable
+    # digest so the audit cache remains compact enough to inspect in full.
+    OUTPUT_LINES.append(
+        f"CERTIFICATE {name} {'PASS' if ok else 'FAIL'} "
+        f"canonical_json_sha256={digest(payload)}"
+    )
     return ok
+
+
+def bounded_stdout(lines: list[str]) -> str:
+    """Render stdout and fail closed on the repository execution contract."""
+    if not lines or not lines[-1].startswith("TOTAL: PASS="):
+        raise ValueError("runner stdout must end with TOTAL: PASS=<n> FAIL=<n>")
+    rendered = "\n".join(lines) + "\n"
+    if len(rendered.encode("utf-8")) >= HOUSE_STDOUT_LIMIT_BYTES:
+        raise ValueError("runner stdout exceeds the 6000-byte house limit")
+    return rendered
 
 
 # ---------------------------------------------------------------------------
@@ -1336,7 +1368,9 @@ def certificate_nonnegative_witnesses(instances: list[Instance]) -> dict:
 
 def certificate_large_instances() -> dict:
     rows = []
-    ok = True
+    declared_names = tuple(spec.get("name") for spec in LARGE_INSTANCES)
+    declared_set_is_exact = declared_names == EXPECTED_LARGE_INSTANCE_NAMES
+    ok = declared_set_is_exact
     for spec in LARGE_INSTANCES:
         inst = build_large_instance(spec)
         closed_form = inst.route_count()
@@ -1413,9 +1447,15 @@ def certificate_large_instances() -> dict:
             " exhaustive family, together with the base-level rank, the"
             " basis verification and the representative verification"
             " performed here"),
+        "expected_instance_names": list(EXPECTED_LARGE_INSTANCE_NAMES),
+        "declared_instance_names": list(declared_names),
+        "declared_instance_set_is_exact": declared_set_is_exact,
+        "instances_checked": len(rows),
         "rows": rows,
     }
-    payload["pass"] = ok
+    payload["pass"] = bool(
+        ok and len(rows) == len(EXPECTED_LARGE_INSTANCE_NAMES)
+    )
     return payload
 
 
@@ -1502,7 +1542,7 @@ def certificate_route_inventory() -> dict:
 
 
 def build_theorem(dimension_laws: dict, witnesses: dict,
-                  extreme_points: dict) -> dict:
+                  extreme_points: dict, large_instances: dict) -> dict:
     """The theorem, with every formula sentence RENDERED from the verified
     coefficients and every count taken from the certificate that computed
     it.  There is no free-text theorem field."""
@@ -1547,13 +1587,16 @@ def build_theorem(dimension_laws: dict, witnesses: dict,
             "the laws above are proved in the note for all finite instances;"
             " this runner verifies them on "
             + str(dimension_laws["instances"])
-            + " exhaustively enumerated instances, the extreme-point"
+            + " exhaustively enumerated canonical representatives of the"
+              " declared decorated family, the extreme-point"
               " statement by brute-force enumeration on the "
             + str(extreme_points["instances_enumerated"])
             + " of them with at most "
             + str(VERTEX_ENUMERATION_MAX_FIBRE_POINTS)
             + " fibre points and a disjoint orbit, and evaluates the laws at"
-              " two declared larger instances where the fibre-level rank"
+              " the "
+            + str(large_instances["instances_checked"])
+            + " declared larger instances where the fibre-level rank"
               " routes are not run"),
         "scope": (
             "conditional on the declared finite structure only; this runner"
@@ -1789,6 +1832,29 @@ def certificate_mutation_teeth(instances: list[Instance], theorem: dict,
           f"dimension moves to {mutant.route_count()} from"
           f" {build_large_instance(mutant_spec).route_count()}")
 
+    # 21. large-instance family: deleting a promised row must not silently
+    # redefine the expected coverage.
+    tooth("delete_one_of_the_two_declared_large_instances", "large_instances",
+          tuple(spec["name"] for spec in LARGE_INSTANCES[:-1])
+          != EXPECTED_LARGE_INSTANCE_NAMES,
+          "the separately declared expected-name tuple rejects the shortened"
+          " specification list")
+
+    # 22. output-discipline family: the renderer rejects both an oversized
+    # transcript and a transcript without the mandatory terminal TOTAL line.
+    output_mutations_rejected = 0
+    for bad_lines in (
+        ["x" * HOUSE_STDOUT_LIMIT_BYTES, "TOTAL: PASS=1 FAIL=0"],
+        ["VERDICT ALL_CERTIFICATES_PASS"],
+    ):
+        try:
+            bounded_stdout(bad_lines)
+        except ValueError:
+            output_mutations_rejected += 1
+    tooth("stdout_budget_or_terminal_total_removed", "output_discipline",
+          output_mutations_rejected == 2,
+          "the bounded renderer rejected both malformed transcripts")
+
     families = sorted({t["check_family"] for t in teeth})
     payload = {
         "certificate": "MUTATION_TEETH",
@@ -1809,9 +1875,12 @@ def certificate_mutation_teeth(instances: list[Instance], theorem: dict,
 # ---------------------------------------------------------------------------
 
 def main() -> int:
-    print("CYCLE906_ORBIT_CONSTANT_MASS_DIMENSION_SUPPORT_RUNNER")
-    print("SELF_CONTAINED_NO_EXTERNAL_SCIENTIFIC_INPUT_IS_READ")
-    print("EVERY_EMITTED_FRACTION_IS_A_BOOKKEEPING_FRACTION_NOT_A_PROBABILITY")
+    OUTPUT_LINES.clear()
+    OUTPUT_LINES.extend((
+        "CYCLE906_ORBIT_CONSTANT_MASS_DIMENSION_SUPPORT_RUNNER",
+        "SELF_CONTAINED_NO_EXTERNAL_SCIENTIFIC_INPUT_IS_READ",
+        "EVERY_EMITTED_FRACTION_IS_A_BOOKKEEPING_FRACTION_NOT_A_PROBABILITY",
+    ))
 
     instances = enumerate_family()
     rows = sweep(instances)
@@ -1837,7 +1906,8 @@ def main() -> int:
 
     theorem = build_theorem(certificates["DIMENSION_LAWS"],
                             certificates["NON_NEGATIVE_WITNESSES"],
-                            certificates["EXTREME_POINTS"])
+                            certificates["EXTREME_POINTS"],
+                            certificates["LARGE_DECLARED_INSTANCES"])
     ok &= record(certificate_mutation_teeth(instances, theorem, certificates))
     # CLAIM_TEXT is emitted last so that its refuted-sentence scan covers
     # every other certificate this run emits.
@@ -1852,6 +1922,11 @@ def main() -> int:
             "normalized_dimension": list(NORMALIZED_DIMENSION_LAW),
         },
         "family": {
+            "base_point_counts": "one through five",
+            "orbit_partitions": (
+                "one canonical contiguous representative of every orbit-size"
+                " partition; all relevant decorated cases up to relabeling"
+            ),
             "max_base_points": MAX_BASE_POINTS,
             "fibre_alphabet_up_to_four_base_points": list(FIBRE_ALPHABET_SMALL),
             "fibre_alphabet_at_five_base_points": list(FIBRE_ALPHABET_WIDE),
@@ -1884,8 +1959,25 @@ def main() -> int:
     (ROOT / RECEIPT_PATH).write_text(
         json.dumps(receipt, indent=2, sort_keys=True, default=str) + "\n",
         encoding="utf-8")
-    print(f"RECEIPT {RECEIPT_PATH} sha256={digest(receipt)[:16]}")
-    print(f"VERDICT {'ALL_CERTIFICATES_PASS' if ok else 'CERTIFICATE_FAILED'}")
+    OUTPUT_LINES.append(
+        f"RECEIPT {RECEIPT_PATH} "
+        f"canonical_json_sha256={digest(receipt)[:16]}"
+    )
+    OUTPUT_LINES.append(
+        f"VERDICT {'ALL_CERTIFICATES_PASS' if ok else 'CERTIFICATE_FAILED'}"
+    )
+    passed = sum(bool(payload.get("pass"))
+                 for payload in certificates.values()) + int(bool(ok))
+    failed = sum(not bool(payload.get("pass"))
+                 for payload in certificates.values()) + int(not ok)
+    OUTPUT_LINES.append(f"TOTAL: PASS={passed} FAIL={failed}")
+    try:
+        stdout = bounded_stdout(OUTPUT_LINES)
+    except ValueError as exc:
+        sys.stderr.write(f"OUTPUT_DISCIPLINE_FAILED: {exc}\n")
+        sys.stdout.write("OUTPUT_DISCIPLINE FAIL\nTOTAL: PASS=0 FAIL=1\n")
+        return 1
+    sys.stdout.write(stdout)
     return 0 if ok else 1
 
 

@@ -21,8 +21,10 @@ Receipt:
 - [`orbit_constant_mass_dimension_independent_check_cycle906_receipt_2026_08_09.json`](../outputs/orbit_constant_mass_dimension_independent_check_cycle906_receipt_2026_08_09.json)
 
 Constitutional effect: none. This package changes no axiom, foundation,
-Qualification, primitive, registry, policy, queue, audit result, or audit
-status.
+Qualification, primitive, dependency policy, queue, audit result, or audit
+status. Its landing adds one claim-scoped helper-runner registry entry and the
+required one-node citation-graph manifest acknowledgment; neither grants
+scientific authority.
 
 Worker disclosure: rebuilt by the review-loop fix pass on 2026-08-09 after
 the submitted Cycle-906 package was reviewed FIX_THEN_PROCEED, and rebuilt
@@ -38,14 +40,14 @@ declares is a file of this same landing delta, reviewed here.
 
 The primary's declared evidence closure is exactly ONE path: its own
 source. It reads no ancestor source, receipt or note, reads no axiom
-surface, imports no repository module, and scans no directory; the single
-read it performs is of its own bytes, for a content hash, for an
-abstract-syntax read that the declared closure really is self-only, and for
-the syntax-tree recomputation of its own route helper sets. A literally
+surface, imports no repository module, and scans no directory; the only path
+it reads is its own source, for a content hash, for abstract-syntax checks
+that the declared closure really is self-only, and for the syntax-tree
+recomputation of its own route helper sets. A literally
 empty declaration would not have said this correctly — the cache envelope
 and the evidence-readiness gate both read an empty `AUDIT_INPUT_PATHS` as an
-INVALID one — so the honest input-free shape is the single package-local
-integrity read that actually happens. The independent checker declares
+INVALID one — so the honest input-free shape is the one package-local
+integrity path that is actually read. The independent checker declares
 exactly two paths, the primary's source and the receipt that run emitted,
 pinned by sha256 and git blob and verified hard-fail before any comparison.
 
@@ -184,10 +186,14 @@ would break if the statement were false is named beside it.
    the exhibited representative, and by the checker's independent rebuild
    from the declared parameters alone.
 
-The sweep is EXHAUSTIVE over its declared family: every instance with at
-most five base points, every orbit partition of them, fibre sizes from the
-declared alphabet (1–3 up to four base points, 1–2 at five), and EVERY
-subset of base points as the required-zero subset — 14,374 instances.
+The sweep is EXHAUSTIVE over its declared representative family: base counts
+one through five; one canonical contiguous representative of every
+orbit-size partition; every fibre-size assignment from the declared alphabet
+(1–3 up to four base points, 1–2 at five); and EVERY required-zero subset on
+that representative — 14,374 instances. The two conditions and every counted
+quantity are invariant under simultaneous relabeling, so this covers every
+relevant decorated case up to relabeling; it is not a literal enumeration of
+every labeled set partition.
 
 ## How the sentences themselves are gated
 
@@ -231,12 +237,13 @@ can be advertised as more independent than it is:
   the nullspace route, and no structural helper. It is the independent
   confirmation of the pushforward dimension.
 
-The independent checker rebuilds every instance in a reverse base-point
-layout with consecutive-difference orbit rows, so it solves a different
-matrix with the same solution space, and it obtains the dimension three
-further ways: modular rank over three large primes, a rank-nullity split
-that never touches the fibre-level matrix, and a rational reduced row
-echelon form whose free-variable basis is re-verified vector by vector. Its
+The independent checker indexes fibre points in reverse base-point order,
+visits the canonical orbit blocks in reverse order, and uses
+consecutive-difference orbit rows, so it solves a different matrix with the
+same solution space. It obtains the dimension three further ways: modular
+rank over three large primes, a rank-nullity split that never touches the
+fibre-level matrix, and a rational reduced row echelon form whose
+free-variable basis is re-verified vector by vector. Its
 modular-rank and split routes do share the modular rank routine at base
 level; that is disclosed rather than denied. It re-derives every advertised
 number from its own rebuild and compares — it never reprints a receipt
@@ -244,11 +251,14 @@ value — including a digest over the full per-instance dimension table, the
 support-containment tallies, the extreme-point enumeration, the witness
 tallies, and every theorem sentence.
 
-Both runners are fail-closed. The primary plants twenty mutations covering
-eleven check families and the checker plants eighteen covering eight gates;
+Both runners are fail-closed. The primary plants twenty-two mutations
+covering twelve check families and the checker plants twenty covering nine
+gates/check families;
 each must be caught by the gate that owns it, and any that does not bite
 fails the run. Both exit nonzero on any failed certificate; the checker
-exits nonzero on any disagreement.
+exits nonzero on any disagreement. Their complete certificates live in the
+receipts; stdout carries compact certificate digests, is hard-limited below
+6,000 bytes, and ends with `TOTAL: PASS=<n> FAIL=<n>`.
 
 ## Proof obligations
 
@@ -371,7 +381,11 @@ appears in the exhaustive sweep. The action enters only through its orbit
 partition, which the sweep therefore ranges over directly, and which the
 primary certifies against the generated group on every instance.
 
-**Boundary NOT covered.** Statements 4 and 5 are stated only for instances
+**Boundary NOT covered by the finite sweep.** The zero-base instance is not
+one of the 14,374 computational representatives; it is covered directly by
+the proof (the solution and pushforward spaces are both zero-dimensional),
+and statements 4 and 5 do not apply because no disjoint orbit exists.
+Statements 4 and 5 are stated only for instances
 with at least one disjoint orbit; instances without one lie outside their
 declared domain, and the runner marks them with a sentinel rather than
 asserting anything about them. Infinite base sets, infinite fibres,
@@ -408,7 +422,7 @@ conditional_surface_status: "conditional on the declared abstract structure only
 hypothetical_axiom_status: null
 admitted_observation_status: null
 packet_helper_runner: scripts/frontier_cycle906_orbit_constant_mass_dimension_independent_check_2026_08_09.py
-claim_type_reason: "a general proof recorded in this note for all finite instances, with an explicit basis, verified on an exhaustively enumerated declared family by routes that do not share the formula's implementation path, with every declared wrong coefficient set refuted by an exhibited instance and thirty-eight planted mutations all caught; the structure is stipulated in-file, so the result is bounded by its declared hypotheses rather than global"
+claim_type_reason: "a general proof recorded in this note for all finite instances, with an explicit basis, verified on an exhaustive family of canonical representatives for base counts one through five by routes that do not share the formula's implementation path, with every declared wrong coefficient set refuted by an exhibited instance and forty-two planted mutations all caught; the structure is stipulated in-file, so the result is bounded by its declared hypotheses rather than global"
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
@@ -524,6 +538,18 @@ this note or from the withdrawn package:
   The withdrawn note is not on `origin/main`, so nothing is removed; the
   landing adds one node and no deletion.
 
+**Repaired after the fresh current-main review.** The next adversarial pass
+found one decisive runner-coverage bug and two stale/overbroad descriptions,
+without finding a mathematical counterexample. The two larger examples are
+now bound to an independent expected-name/specification transcription in the
+checker; deleting either row fails both runners. The 14,374-case sweep is now
+described as base counts one through five and canonical representatives up to
+relabeling, which is what the generators enumerate. The helper-registry stop
+below now reflects the resolved current-main carve-out, and both runners now
+enforce the repository's compact-stdout and terminal-`TOTAL` contract. The
+primary's integrity inventory also says one source *path*, rather than falsely
+implying only one filesystem read of that path.
+
 **Per-finding disposition of the first review.** Self-containment (both
 closures required rejected or unlanded ancestor blobs): cured by reducing
 both closures to delta-local files — the primary declares only its own
@@ -549,7 +575,7 @@ a canonical harness.
 
 **Mutation record.** One load-bearing mutation per check family, each
 applied on a scratch copy at `origin/main` plus this delta and reverted
-immediately. Twenty are planted inside the primary and eighteen inside the
+immediately. Twenty-two are planted inside the primary and twenty inside the
 checker, and every run refuses to pass unless all of them bite. The
 mutations run by hand against the whole package in this repair, and their
 results:
@@ -561,6 +587,8 @@ results:
 | the solution-dimension coefficients shifted from (1, 1, 0) to (1, 1, 1) | primary exits 1; the law disagrees with the exact nullspace rank on all 14,374 instances |
 | the support-containment control inverted, so a certificate is claimed at base points inside a disjoint orbit | primary exits 1 on 17,344 control defects |
 | the witness sweep restored to skipping instances with no disjoint orbit | primary exits 1: the sweep tally 2,298 disagrees with the independent recount 6,268 |
+| one of the two declared larger-instance specifications and receipt rows deleted, with pins refreshed | primary exits 1 because the declared name set is incomplete; checker exits 1 against its own two-specification transcription |
+| stdout expanded to the 6,000-byte bound, or its terminal `TOTAL: PASS=<n> FAIL=<n>` line removed | each runner exits 1 through its bounded-output renderer |
 
 **No-Go Discipline.** The N-gate obligation is discharged by WITHDRAWAL,
 not by a packet. Every universal negative and route-foreclosure sentence of
@@ -574,8 +602,7 @@ this note, in both runner docstrings, in every emitted certificate string,
 in both receipts and in the closing verdict — is a positive statement about
 the declared finite structure or an exhibited witness on it.
 
-**Hard landing conditions.** All three must be satisfied at landing; none is
-performed on this branch.
+**Hard landing conditions.** All three must be satisfied by the landing set.
 
 - The independent checker is claim-scoped and co-load-bearing: it is
   deliberately not imported by the primary, so import discovery cannot see
@@ -593,26 +620,25 @@ performed on this branch.
 
   The claim id was verified against
   `build_citation_graph.claim_id_from_path` for this note's path.
-- That registry edit is NOT yet an ordinary landing step, and this is its
-  governed stop. At `origin/main = 323d7fc32d77598f74ea6cd4d30c38dda0fe5070`
-  (checked 2026-08-09) `docs/audit/scripts/build_citation_graph.py` is still
-  inside `DEPENDENCY_POLICY_SOURCES` in
-  `docs/audit/scripts/audit_science_fingerprint.py`, so the dependency-policy
-  impact gate applies and the epoch is already in mismatch. The mapping must
-  therefore WAIT for the owner resolution recorded as queue item
-  `2026-08-08-dependency-policy-epoch-debt-helper-registry`, or for the
-  owner-approved amendment that scopes the claim-scoped helper registry out
-  of the governed bytes, to land first. Landing the mapping before either
-  requires the full impact gate — the pipeline's invalidation set inspected
-  and a fresh scientific audit for every mismatching fingerprint. This
-  branch must not edit audit tooling on its own authority, and does not.
+- Current main has resolved queue item
+  `2026-08-08-dependency-policy-epoch-debt-helper-registry` through reviewed
+  PR #6061. `build_citation_graph.py` remains a governed policy source, but
+  `audit_science_fingerprint.py` now hashes a location-bound normalization
+  that excludes only the contents of the strictly literal
+  `EXPLICIT_PACKET_HELPER_RUNNER_PATHS` assignment. The exact mapping above is
+  therefore an ordinary claim-scoped landing condition: it does not change
+  the repository-wide dependency-policy epoch, while the helper's source and
+  declared inputs remain bound in this claim's own science fingerprint. The
+  landing pipeline must still verify that normalized policy hash and the
+  affected claim row fail closed on any drift.
 - This note adds one citation-graph node and removes none — the withdrawn
   note is not on `origin/main`, and a cold cherry-pick of this delta onto
   `origin/main` produces seven additions and no deletion. The landing set
   must therefore still carry a regenerated
   `docs/audit/data/citation_graph_manifest.json` acknowledgment, produced on
   the landing tree, because a node addition alone requires it. It is
-  deliberately absent from this branch-local package.
+  regenerated on the current-main landing tree and included with this
+  package.
 
 **Honest summary of what survives.** A proved lemma of finite linear
 algebra: one dimension formula with its explicit basis, one statement about

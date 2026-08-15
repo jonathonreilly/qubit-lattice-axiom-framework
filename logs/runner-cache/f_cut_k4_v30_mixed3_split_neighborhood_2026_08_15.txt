@@ -1,0 +1,54 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_k4_v30_mixed3_split_neighborhood_2026_08_15.py
+runner_sha256: 273240a3fab4aeb3fdcc89ceec576098df7d8253da0b689eec8909404c6408a7
+input_fingerprint_sha256: fc8fa088698fda995aaea36860a49e7e35079079ff287b828e756918026a4b1d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_K4_V30_MIXED3_SPLIT_NEIGHBORHOOD_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+external_scientific_inputs: current Lattice, Admissibility, and Record wording; no observations or fits
+integrity_reads: this runner, its note, and the axiom memo
+construction: independent occupancy-to-lock runs of F_cut maps (1,1,1,0,0) and (1,1,1,0,1) on the two-cube, off-patch occupancy 0, from S={(0,0,0),(0,0,1),(2,0,0)}
+negative_scope: displayed first neighborhood only; mixed3 is not adopted
+PASS: audit-inputs declared inputs are the required two static string literals and exist
+PASS: source-lattice-admissibility Lattice rotations and Admissibility covariance are pinned
+PASS: source-local-distribution current local-distribution wording is pinned
+PASS: source-record-boundary Record lock, content-only readout, unreadable absence, and formation residual are pinned
+PASS: two-cube-and-seed two-cube has twelve lexicographic vertices and S is the displayed three-site seed
+PASS: orbit-partition proper-cube action on six-tuples has ten orbits with derived sizes
+PASS: thm1-f-L1-is-unbalanced-axis f_L1 is 1 iff some axis is unbalanced, and evaluates to (1,0,1,1,1)
+PASS: thm1-f-L1-not-hamming f_L1 is not Hamming |c|_1 mod 2
+PASS: off-patch-zero every off-patch neighbor contributes occupancy 0
+f00_S_history=(3, 9, 11, 12) fill=True
+f01_S_history=(3, 9, 12) fill=True
+first_disagreeing_neighborhood_f00_run: t=2 x=(1, 1, 0) axis_type=(1, 1, 1) orbit=mixed3 stencil=(1, 1, 0, 1, 0, 0) f00=0 f01=1
+first_disagreeing_neighborhood_f01_run: t=2 x=(1, 1, 0) axis_type=(1, 1, 1) orbit=mixed3 stencil=(1, 1, 0, 1, 0, 0) f00=0 f01=1
+PASS: theorem-1-reconfirm-histories from S, f00 fills with (3, 9, 11, 12) and f01 fills with (3, 9, 12)
+PASS: theorem-2-first-disagreeing-neighborhood the first disagreeing neighborhood is t=2, x=(1,1,0), type (1,1,1)
+PASS: both-runs-same-first-split the two independent runs share the locked set through the first split
+PASS: theorem-3-display-stencil the first disagreeing stencil is the displayed 6-tuple (1,1,0,1,0,0)
+PASS: no-split-before-tick-2 no unlocked site disagrees at tick 1; the first wave is shared
+PASS: claim-scope claim_scope states the displayed first neighborhood and does not adopt mixed3
+PASS: note-contract bounded theorem, displayed-not-adopted uniqueness, and machine status
+PASS: claim-type-and-gate N1-N8 and a passing no-go disposition are source-visible
+PASS: forbidden-phrases-absent the note and runner omit the dispatch-forbidden phrases
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: not-leftover-6452-6441 the residual is a new neighborhood object, not leftover of #6452 or #6441
+PASS: no-axiom-edit the theorem proposes no axiom change and does not adopt mixed3
+PASS: note-hygiene machine retained fields are the only retained lines; no cache or citation surface
+PASS: axiom-unedited the axiom memo still carries the four named premises and no F_cut class
+per_element: checked exactly — each of the 64 neighbor 6-tuples is assigned its axis-type orbit
+per_site: checked exactly — each unlocked two-cube vertex is tested against both displayed lock predicates
+per_mode: checked and not executed — no spectral claim occurs
+per_block: checked exactly — both independent runs from S are executed tick by tick to a fixed point
+lattice_wide: checked and not executed — no Z^3-wide formation law or physical Admissibility selector is claimed
+TOTAL: PASS=23 FAIL=0
+
+----- stderr -----
+

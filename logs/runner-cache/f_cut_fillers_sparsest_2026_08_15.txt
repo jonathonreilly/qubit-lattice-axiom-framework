@@ -1,0 +1,62 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_fillers_sparsest_2026_08_15.py
+runner_sha256: 3e19eef145a63102eebd86c70d81cfa276cd0ae5ec6669e0826574e194d641a2
+input_fingerprint_sha256: efd8ce7d4e883640c0157ab3ff378899b909e31ac735282c485d7842ab954e8c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+external_scientific_inputs: none; two-cube patch, seed, and off-patch o=0 are theorem hypotheses
+package_local_integrity_reads: runner source, proposed source note, and live axiom memo
+measure_boundary: exact finite census on 64 cells, 32 F_cut maps, and 12 vertices; no physical selector
+negative_scope: sparsity among the eight F_cut 1-site fillers does not select f_L1
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_FILLERS_SPARSEST_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+n_rotations=24
+n_orbits=10
+N_free=5
+|F_cut|=32
+N_fill_cut=8
+f_L1_bits=(1, 0, 1, 1, 1) supp=56 locks=12 history=(1, 4, 8, 11, 12)
+f_hamming_bits=(1, 0, 0, 1, 1) locks=9 history=(1, 4, 5, 7, 9)
+global_min_bits=(1, 0, 1, 1, 0) in_F_cut=False
+fillers=(1, 0, 1, 0, 0):36,(1, 1, 1, 0, 0):42,(1, 0, 1, 1, 0):44,(1, 1, 1, 1, 0):50,(1, 0, 1, 0, 1):48,(1, 1, 1, 0, 1):54,(1, 0, 1, 1, 1):56,(1, 1, 1, 1, 1):62
+m_cut=36
+N_min_cut=1
+displayed_minimizer=(1, 0, 1, 0, 0)
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required note-plus-axiom string-literal tuple
+PASS: thm1-twenty-four-rotations exactly 24 proper cube rotations
+PASS: thm1-ten-orbits exactly 10 orbits partition the 64 cells of {0,1}^6
+PASS: thm1-f-cut-cardinality F_cut has five free bits and size 32
+PASS: thm1-eight-fillers exactly eight F_cut maps fill from the 1-site seed
+PASS: thm1-l1-in-f-cut-and-fills f_L1 lies in F_cut, fills, and is one of the eight
+PASS: thm1-l1-support-56 supp(f_L1)=56, equivalently 64 minus the 8 fully balanced cells
+PASS: thm1-l1-not-hamming f_L1 is n!=0 / unbalanced-axis, not Hamming |c|_1 mod 2
+PASS: thm1-two-cube-twelve the two-cube has twelve vertices and contains the seed
+PASS: thm2-m-cut m_cut = min supp over the eight equals 36
+PASS: thm2-n-min-cut N_min_cut = 1: exactly one of the eight attains m_cut
+PASS: thm3-unique-is-not-l1 the unique F_cut support-minimizer is not f_L1
+PASS: thm3-displayed-tuple the displayed minimizer is the remaining-bit tuple (1, 0, 1, 0, 0)
+PASS: mutation-global-min-outside-f-cut the unique support-26 filler among the 96 is outside F_cut
+PASS: mutation-hamming-nine-locks Hamming parity is in F_cut but is not a filler
+PASS: lattice-and-admissibility-parents the live axiom memo supplies Z^3, proper cubic rotations, and a covariant nearest-neighbor rule
+PASS: forbidden-phrases-absent the note and runner omit the dispatch-forbidden phrases
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: displayed-not-adopted the F_cut minimizer and f_L1 are displayed, not adopted
+PASS: claim-type-and-gate bounded theorem type and a passing N1-N8 gate are source-visible
+PASS: claim-scope-minimum claim_scope reports m_cut=36, N_min_cut=1, and that f_L1 is not the unique minimizer
+PASS: not-leftover-of-ninetysix the residual is F_cut sparsity, not the 96-map support minimum
+PASS: no-cache-write this run did not emit a runner cache file
+per_element: checked exactly — each of the 64 cells is assigned by orbit and counted in supp(f)
+per_site: checked exactly — each of the 12 two-cube vertices is a lock site under o=0
+per_mode: checked exactly — every F_cut map is run; the eight fillers are the support domain
+per_block: checked exactly — unique F_cut support minimum 36 is not attained by f_L1
+lattice_wide: checked and not executed — no infinite-lattice fill or adopted occupancy axiom is claimed
+TOTAL: PASS=23 FAIL=0
+
+----- stderr -----
+

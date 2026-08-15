@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/f_min_l1_split_seed_orbit_2026_08_15.py
+runner_sha256: fe83288e3caee0b659127aa07e074942ee4cca28605893c70b1ac66e5ace0981
+input_fingerprint_sha256: 3db59c8d8997c3fd78d82dea2946ab55837d7123aab189fdba5c9e0bb989c1a0
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+external_scientific_inputs: current Lattice, Admissibility, and Record boundaries; no observations or fits
+integrity_reads: this runner, its note, and the axiom memo; no other scientific inputs
+construction: four split seeds recomputed; G-orbits under two-cube-preserving proper cube rotations
+negative_scope: N_orb is displayed; no seed is adopted and no orbit is written into Admissibility
+PASS: audit-inputs the two declared source-bound inputs exist
+PASS: source-lattice current cubic nearest-neighbor wording is pinned
+PASS: source-admissibility current local-distribution wording is pinned
+PASS: source-record-boundary current lock/content/unreadable-at-absence wording is pinned
+PASS: source-formation-boundary formation site/probability/rate remains outside Admissibility
+orbit: N_split=4 N_ambient=24 |G|=8 N_orb=1
+split_seeds: ((0, 0, 0), (2, 1, 1)); ((0, 0, 1), (2, 1, 0)); ((0, 1, 0), (2, 0, 1)); ((0, 1, 1), (2, 0, 0))
+PASS: two-cube-and-ambient the two-cube has twelve sites and the ambient proper cubic group has 24 matrices
+PASS: group-preserves-twelve only site-permutations of the two-cube induced by proper cube rotations are used
+PASS: unused-non-permutations rotations that do not permute the twelve sites are discarded
+PASS: theorem-1-four-split-seeds recomputed N_split=4 with f_L1 history (2,8,12) and f_min halt (2,8,10)
+PASS: theorem-1-n-orb N_orb is the number of G-orbits among the four seeds
+PASS: theorem-2-geometric-type N_orb=1: the note reports one geometric type (opposite corners of the long box)
+PASS: theorem-3-display the note displays the computed N_orb and does not adopt a seed or orbit
+PASS: identity-l1-not-hamming opp2 has Hamming weight 2 but n_unbalanced=0, so f_L1 does not fire
+PASS: identity-min-nboth-zero f_min fires on nonempty n_both=0 and refuses mixed3
+PASS: forbidden-phrases the note avoids the dispatch-forbidden phrases
+PASS: no-admissibility-orbit the note does not write an orbit into Admissibility
+PASS: claim-scope the YAML claim_scope states the orbit-count display
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

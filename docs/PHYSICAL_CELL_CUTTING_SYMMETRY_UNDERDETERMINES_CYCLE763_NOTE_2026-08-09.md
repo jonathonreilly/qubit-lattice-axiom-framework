@@ -1,9 +1,41 @@
 # Covariance Under The Cell's Symmetry Does Not Determine The Cover Table's Dimension
 
-**Date:** 2026-08-09
-**Type:** science
-**Runner:** [scripts/physical_cell_cutting_symmetry_underdetermines_cycle763_2026_08_09.py](../scripts/physical_cell_cutting_symmetry_underdetermines_cycle763_2026_08_09.py)
-Audit: unset.
+Date: 2026-08-09
+
+Authority: none
+
+Status: proposed_retained
+
+Claim type: no_go
+
+Runner:
+
+- [self-contained rebuild-and-gate runner](../scripts/physical_cell_cutting_symmetry_underdetermines_cycle763_2026_08_09.py)
+
+## Trace gate
+
+```yaml
+trace_class: negative_route_pruning
+target_claim_id: null
+target_blocker_text: "test what the finite four-cube coordinate-relabeling symmetry fixes about the cutting and cover incidence spaces"
+source_of_blocker_text: frontier_question
+reachability_to_target: none
+artifact_role: runner_certificate
+next_trace_action: "identify an additional retained structure, if any, that selects the measured cover-table row space inside the covariant family"
+```
+
+## Status fields
+
+```yaml
+actual_current_surface_status: no-go
+target_claim_type: no_go
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: "finite counterexamples and a sampled rank census are offered to delimit what the explicitly rebuilt coordinate-relabeling symmetry fixes"
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```
 
 ## What this is
 

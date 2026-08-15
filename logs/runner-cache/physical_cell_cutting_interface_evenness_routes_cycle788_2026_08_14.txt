@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/physical_cell_cutting_interface_evenness_routes_cycle788_2026_08_14.py
+runner_sha256: cc55a37c36abd8a61b655353b5c55d157ab61787abb9040d5d3f6687ab23abae
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 12.32
+status: ok
+----- stdout -----
+PASS G1 2672 five-corner unit-determinant pieces, floor 6, 400 kept, 15800 cuttings of 24, 192 used, cell group 384, slot subgroup 96
+PASS G2 16 letters, the same set on all 8 slots, multiplicity census {862: 12, 1364: 4}, and 12 x 862 + 4 x 1364 = 15800
+PASS G3 T equal on 4 axes, symmetric, trace 2000, all 256 even, 48 at 36 and 208 not; 18:24 36:48 50:48 52:48 90:12 92:48 100:12 104:12 200:4
+PASS G4 24 tetra, same set both sides, producer supports disjoint, 5-corner pieces give disjoint sides, census {(6, 6): 15800}
+PASS G5 incidence A is 16 by 24, every row sum 6, every column sum 4, and 16 x 6 = 96 = 24 x 4
+PASS G6 N = A-transpose T A on all 576 entries, 0 misses, all 576 even; 862:168 872:48 894:48 904:168 1270:24 1280:48 1322:48 1332:24
+PASS G7 GF(2) ranks: A has rank 10 with kernel dimension 6; tetra span with all-ones 10 on both sides; used columns with all-ones 88
+PASS G8 0 of 16 letters in the tetra span and 0 of 16 in the used-column span on side 0; 0 and 0 of 16 on side 1
+PASS G9 all 48 entry-36 pairs have pair stabilizer of order two inside the 96 slot-preserving maps, census {2: 48}
+PASS G10 48 of 48 stubborn fibers held by the second stabilizer element, 48 of 48 with an odd cycle, so no subgroup pairs any
+PASS G11 all 192 used-piece columns have odd support; 48 of 48 tetra functionals have even support, 24 tetra on each of both sides
+PASS G12 1024 side-zero frames, 1024 side-one frames, 6184 joint frames; 0 frames carry two letters, 0 joint frames carry two pairs
+PASS G13 3368 of 6184 joint classes odd, 856 of 1024 side-zero odd; inside 48 and 48 of the 48 fibers frames and profiles leave an odd class
+PASS G14 19 even values [8,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,48]; least 8, [10,46] absent, d = 48 - 2t, shared [1,19] absent
+PASS G15 all-odd degrees: 0 of 256 fibers at every value and every cutoff below 48; at cutoff 48, 256 of 256, tautological complete graph
+PASS G16 first entry-36 fiber: least-distance census {8: 36}, 28 members with a tied minimizer, 20 not paired back, so no involution
+resource: under 60 s, under 250 MB
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

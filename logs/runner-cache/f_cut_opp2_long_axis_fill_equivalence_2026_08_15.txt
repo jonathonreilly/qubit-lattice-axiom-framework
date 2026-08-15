@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_opp2_long_axis_fill_equivalence_2026_08_15.py
+runner_sha256: 6e4acf0953fe4ef4fe1cc9bd0a85a4dc60bf400690697476d043688f9f3599f6
+input_fingerprint_sha256: e9cbe9db6ca3894920f562fc1bde5d264b1114df4e90bef4a436591d74c8e76b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+external_scientific_inputs: current Lattice, Admissibility, and Record wording; no observations or fits
+integrity_reads: this runner, its note, and the axiom memo
+construction: 32 cube-covariant complement-even predicates on the two-cube, off-patch occupancy 0
+negative_scope: displayed selector only; opp2 is not written into Admissibility
+PASS: audit-inputs declared source-bound pair exists
+PASS: source-lattice current cubic nearest-neighbor wording is pinned
+PASS: source-admissibility current local-distribution wording is pinned
+PASS: source-record-boundary current lock/content/unreadable-at-absence wording is pinned
+PASS: source-formation-boundary formation site/probability/rate remains outside Admissibility
+PASS: vertex-count two-cube has twelve vertices
+PASS: orbit-partition proper-cube action on six-tuples has ten orbits with derived sizes
+PASS: complement-action complement pairs empty/full, wt1/wt5, opp2/opp4, adj2/adj4 and fixes vertex3, mixed3
+PASS: f-cut-cardinality five free remaining bits give 32 F_cut maps
+PASS: l1-bits n≠0 evaluates to remaining-bit tuple (1,0,1,1,1) and lies in F_cut
+PASS: l1-not-hamming Hamming parity is a different F_cut tuple
+PASS: theorem1-opp2 f_L1(opp2)=0
+PASS: theorem1-k f_L1 has k=0 and halt lock-count 8 on each long-axis seed
+PASS: l1-onesite-control same predicate fills from a 1-site seed
+k_eq_4_iff_f_opp2: False
+k_eq_0_iff_f_opp2_silent: False
+lex_counterexample_tuple: (0, 1, 0, 0, 0) k=0
+k_spectrum: {0: 28, 4: 4}
+k4_maps: [(1, 1, 1, 0, 0), (1, 1, 1, 0, 1), (1, 1, 1, 1, 0), (1, 1, 1, 1, 1)]
+PASS: theorem2-iff-k4 k(f)=4 is not equivalent to f(opp2)=1
+PASS: theorem2-iff-k0 k(f)=0 is not equivalent to f(opp2)=0
+PASS: theorem2-counterexample lex-first counterexample is (0,1,0,0,0) with k=0 and f(opp2)=1
+PASS: silent-one-way every silent-opp2 map still has k=0 (one direction holds)
+PASS: k4-characterization k=4 exactly on the four maps with (wt1,opp2,adj2)=(1,1,1)
+PASS: mutation-zero-and-fullbits zero map has k=0; remaining-bit (1,1,1,1,1) has k=4
+PASS: note-scope note reports the failed equivalence, displays a counterexample, and does not adopt opp2
+TOTAL: PASS=21 FAIL=0
+
+----- stderr -----
+

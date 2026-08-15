@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/physical_cell_cutting_clean_exchange_symmetry_cycle794_2026_08_15.py
+runner_sha256: 0b9f0c43d15762054bac7abea5f4f97d52bb98a5629732db57d0b4e5fb7b5978
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 15.53
+status: ok
+----- stdout -----
+PASS G1 2672 pieces, floor 6, 400 kept, 15800 cuttings of 24, 192 used, cell group 384, 16 letters, trace 2000, 48 entries at 36
+PASS G2 at all 48 fibers: 200 two-orbits, 14 held cuttings each a union of 12 rows, 40 rows occur, rank 32, kernel dimension 8
+G2 detail: all 256 kernel vectors have even weight, all 256 coset members solve the all ones system, and each of the 672 held
+G2 detail: cuttings covers every one of the 625 sample points exactly once; the fold of each fiber is one of 2 cell maps
+G2 detail: the pairwise shared-row census over the 91 pairs takes 1 distinct value over the 48 fibers, and reads
+G2 detail: {0: 12, 1: 6, 2: 10, 3: 14, 4: 4, 5: 14, 6: 4, 7: 5, 8: 10, 9: 1, 10: 11}
+PASS G3 minimal exchanges, the pairs sharing 10 of their 12 rows, form a graph with 11 edges at every one of the 48 fibers
+G3 detail: degree census {0: 1, 1: 4, 2: 9}, five components of sizes [1, 2, 3, 4, 4], and both components of size 4 are closed cycles of 4 edges
+PASS G4 every pair difference lies in the kernel; the 11 edge differences have weight 4 and take 4 distinct values, census {1: 1, 2: 2, 6: 1}
+G4 detail: those 4 values are exactly the 4 kernel vectors of weight 4, and the unique pair sharing 9 rows differs by
+G4 detail: the unique kernel vector of weight 6; all of this holds at 48 of 48 fibers
+G4 detail: the multiplicity census of all distinct differences over the 91 pairs takes 1 distinct value over the 48 fibers,
+G4 detail: and reads {1: 25, 2: 30, 6: 1}
+PASS G5 over the 40 rows there are exactly 4 equal-union exchanges at 48 of 48 fibers, and the union-size census over the fibers is anchored
+G5 detail: the 4 supports are exactly the 4 kernel vectors of weight 4 and each half is a disjoint pair of rows with equal
+G5 detail: union, at 48 of 48 fibers; the four union sizes read 50 100 100 100 at 8; 100 100 100 100 at 32; 100 100 100 175 at 8
+G5 detail: the two three-row remainders of the pair sharing 9 rows have equal point union at 48 of 48 fibers,
+G5 detail: of sizes 120 at 8; 150 at 32; 205 at 8
+PASS G6 for all 4 exchanges every held cutting meeting a full half toggles to another held cutting, 0 images outside, at 48 fibers
+G6 detail: the moved census is {2: 1, 4: 2, 12: 1} and the broken census is {0: 1, 2: 1, 4: 1, 6: 1}, each 1 distinct value over the 48 fibers
+G6 detail: inside(d) equals 2 times the multiplicity of d for every distinct pair difference, and the multiplicity 6
+G6 detail: exchange meets all 14 held cuttings, none disjoint from its 4 rows
+PASS G7 exactly 1 of the 4 exchanges is clean, with broken count 0; it has multiplicity 2 and moves 4 cuttings, at 48 of 48 fibers
+PASS G8 both half-pairings of the clean exchange carry the 14 held cuttings, the 256 kernel vectors and the 256 coset members onto themselves
+G8 detail: each is a product of two transpositions of the 40 coordinates, and the induced block permutation fixes 10 blocks
+G8 detail: identically as sets and has 2 two-cycles, the same permutation for either pairing, at 48 of 48 fibers
+PASS G9 the complete block-level self-equivalence search returns exactly 2 at 48 of 48 fibers, and the nontrivial one is the clean toggle
+PASS G10 over all 255 nonzero kernel vectors inside(d) is even and equals 2 times the multiplicity of d, at 48 of 48 fibers
+G10 detail: the maximum multiplicity is 6, attained by exactly 1 kernel vector, and 0 vector attains 7 or more
+G10 detail: so the evaders at the maximum number 2, exactly the dominant exchange's broken pair, of graph degrees [0, 1]
+G10 detail: the two exceptional cuttings share 8 rows, 1 distinct value over the 48 fibers; 14 = 6 pairs + 2
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

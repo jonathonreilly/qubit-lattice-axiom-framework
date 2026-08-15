@@ -1,0 +1,52 @@
+===== runner cache v1 =====
+runner: scripts/sparsest_one_site_filler_2026_08_15.py
+runner_sha256: 3c4ef50479ce9cca5cb10f3cc6432b67da257f0b02ff2104798e8646f9ff9374
+input_fingerprint_sha256: e5e6d6a4f544f452e955a12eaea4f710810085dcc6d9965b1cbe826ae6faecce
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+external_scientific_inputs: none; two-cube patch, seed, and off-patch o=0 are theorem hypotheses
+package_local_integrity_reads: runner source, proposed source note, and live axiom memo
+measure_boundary: exact finite census on 64 cells and 12 vertices; no physical selector
+negative_scope: sparsity among 1-site fillers does not select f_L1
+PASS: rotations-24 exactly 24 distinct proper cube rotations
+PASS: rotations-det-plus every listed rotation has determinant +1
+PASS: orbits-10 exactly 10 orbits on the 64 cells
+PASS: empty-full-orbits empty and full are singleton orbits
+PASS: patch-12 the two-cube patch has twelve vertices
+PASS: l1-covariant f_L1 is constant on every proper-cube orbit
+PASS: min-covariant the displayed minimizer is cube-covariant
+PASS: l1-empty-zero f_L1(empty)=0
+PASS: l1-not-hamming f_L1 is not Hamming |c|_1 mod 2
+PASS: l1-support-56 supp(f_L1)=56, equivalently 64 minus the 8 fully balanced cells
+PASS: min-support-26 the displayed minimizer has support 3^3-1=26
+PASS: min-strict-subset-l1 the displayed minimizer is a strict subset of f_L1
+PASS: maps-512 f(empty)=0 leaves 2^9=512 cube-covariant maps
+PASS: thm1-n-fill-96 N_fill=96 among the 512 maps
+PASS: thm1-l1-fills f_L1 fills the twelve-vertex two-cube from the 1-site seed
+PASS: thm2-minimum-26 m = min supp(f) over fillers equals 26
+PASS: thm2-n-min-1 exactly one filler attains the minimum support
+PASS: thm3-unique-is-not-l1 the unique support-minimizer is not f_L1
+PASS: thm3-min-fills the displayed unique minimizer fills, with the same lock counts as f_L1
+PASS: mutation-hamming-nine-locks Hamming parity is covariant but does not fill (9 locks)
+PASS: mutation-weight-one-only the weight-1 orbit alone is not a filler
+PASS: support-histogram-unique-tail the support histogram has a unique minimum bin at 26
+PASS: forbidden-phrases-absent note avoids the forbidden phrase list
+PASS: l1-definition-unbalanced-axis the note defines f_L1 by an unbalanced axis / n≠0, not Hamming parity
+PASS: displayed-not-adopted the minimizer and f_L1 are displayed, not adopted
+PASS: axiom-quotes Lattice nearest-neighbor / proper-cubic and Record lock sentences are quoted live
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: claim-type-and-gate bounded theorem type and a passing N1-N8 gate are source-visible
+PASS: claim-scope-minimum claim_scope reports m=26, N_min=1, and that f_L1 is not the unique minimizer
+PASS: no-cache-write this run did not emit a runner cache file
+per_element: checked exactly — each of the 64 cells is assigned by orbit and counted in supp(f)
+per_site: checked exactly — each of the 12 two-cube vertices is a lock site under o=0
+per_mode: checked exactly — the 512 empty-vanishing cube-covariant maps and the 96 fillers
+per_block: checked exactly — unique support minimum 26 is attained by the axis-transversal filler, not f_L1
+lattice_wide: checked and not executed — no infinite-lattice fill or adopted occupancy axiom is claimed
+TOTAL: PASS=30 FAIL=0
+
+----- stderr -----
+

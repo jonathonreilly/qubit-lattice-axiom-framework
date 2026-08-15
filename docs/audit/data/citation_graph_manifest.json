@@ -1,6 +1,6 @@
 {
- "edge_count": 15736,
- "node_count": 5532,
+ "edge_count": 15737,
+ "node_count": 5533,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -2001,6 +2001,10 @@
   "circulant_response_master_identity_narrow_theorem_note_2026-05-02": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "circulant_spectral_fold_exact_algebra_support_note_2026-08-09": {
+   "deps_hash": "0b438bf3437e",
+   "out_degree": 1
   },
   "ckm_a_squared_below_w2_y_quantum_closure_theorem_note_2026-04-25": {
    "deps_hash": "38ddd97e9f9b",

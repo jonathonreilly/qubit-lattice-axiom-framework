@@ -157,6 +157,11 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
     "orbit_constant_mass_dimension_cycle906_support_note_2026-08-09": [
         "scripts/frontier_cycle906_orbit_constant_mass_dimension_independent_check_2026_08_09.py",
     ],
+    # This sibling checker independently recomputes every listed exact-algebra
+    # unit and fresh-executes the primary before validating its emitted payload.
+    "circulant_spectral_fold_exact_algebra_support_note_2026-08-09": [
+        "scripts/salvaged_circulant_spectral_fold_independent_check_2026_08_09.py",
+    ],
     # Cycle 924's sibling checker independently verifies the exact ratio,
     # cyclic-patch nullity, group equality, and conditional menu-line claims.
     "occurrence_rate_route_arithmetic_cycle924_bounded_theorem_note_2026-07-28": [

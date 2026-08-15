@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/physical_cell_cutting_letter_action_orbit_census_cycle797_2026_08_15.py
+runner_sha256: 81b68b8b92f0b50237c6b83e3d39ca708e6e978f2147460ca2084dbcd9f0e822
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 16.43
+status: ok
+----- stdout -----
+PASS G1 of the 384 cell maps exactly 96 induce a letter map, each with one flag value, and the other 288 induce none for either flag
+G1 detail: declared cell: 2672 candidates, floor 6, 400 kept, 15800 cuttings of 24, 192 used, 16 letters, trace 2000
+PASS G2 the flag is bit zero of the flip mask at all 96 acting maps, the 96 letter maps are pairwise distinct, and the kernel has size 2
+G2 detail: the kernel is the identity with flag 0 and the pure first-axis flip with flag 1, so the permutation image has order 48
+PASS G3 at all 9216 ordered pairs of acting maps the letter permutation composes in the order the maps are applied and the flags add
+PASS G4 the interface matrix is symmetric at all 256 entries and equivariant under all 96 acting maps, with slots swapped when the flag is set
+PASS G5 the 16 letters fall into exactly 2 orbits of sizes 12 and 4, and the size 12 orbit is exactly the set of letters of the wall
+G5 detail: row sums are 862 on the 12 wall letters [0, 2, 3, 4, 5, 7, 9, 10, 11, 12, 13, 14] and 1364 on the others [1, 6, 8, 15]
+G5 detail: diagonal entries are 100 on the wall letters and 200 on the others, and the trace is 2000
+PASS G6 the 256 ordered letter pairs fall into exactly 10 orbits, the matrix is constant on each, and its 256 entries sum to 15800
+G6 detail: orbit sizes with their values [(4, 200), (12, 18), (12, 18), (12, 90), (12, 100), (12, 104), (48, 36), (48, 50), (48, 52), (48, 92)]
+G6 detail: the value 18 alone carries 2 orbits, each held by the transpose, giving 6 unordered pairs each
+G6 detail: the first orbit at that value is [(0, 7), (2, 13), (3, 5), (4, 11), (9, 12), (10, 14)]
+G6 detail: the second orbit at that value is [(0, 12), (2, 11), (3, 10), (4, 13), (5, 14), (7, 9)]
+G6 detail: the value census over the 256 entries is {18: 24, 36: 48, 50: 48, 52: 48, 90: 12, 92: 48, 100: 12, 104: 12, 200: 4}
+PASS G7 the 48 wall entries at value 36 are exactly one orbit, and the letter pair formula gives the induced entry map at all 4608 pairs
+G7 detail: unordered the wall is 24 edges on the 12 wall letters, and every one of those letters has degree exactly 4
+PASS G8 every one of the 400 kept pieces has a point count of exactly 5 times its unit, and the unit spectrum [1, 3, 7, 14] sums to 25
+G8 detail: the unit census over the kept pieces is {1: 24, 3: 176, 7: 176, 14: 24} and over the 192 used pieces is {1: 8, 3: 88, 7: 88, 14: 8}
+G8 detail: all 15800 cuttings carry one and the same profile, 1 piece of unit 1, 11 of unit 3, 11 of unit 7, 1 of unit 14
+G8 detail: that profile totals 125 units, that is 625 points, the whole sample grid
+PASS G9 over the 40 rows of every one of the 48 fibers, the half unit profiles of all 192 equal-union exchanges follow the union size
+G9 detail: union 50 gives halves (1, 3, 3, 3), union 100 gives (3, 3, 7, 7), union 175 gives (7, 7, 7, 14), with 0 exceptions
+G9 detail: each fiber has exactly 1 exchange of broken count 2, and its union size census over the 48 fibers is {50: 8, 100: 32, 175: 8}
+G9 detail: that census matches the light, middle and heavy letter pair lists of the previous cycle at 48 of 48 fibers
+PASS G10 over all 6 axis pairs no exchange union factorizes as a base times the full 25 point square: 0 of 1152 unions factorize
+G10 detail: and no single row support factorizes either, 0 of 11520 tested, so the union sizes are piece-size accounting
+G10 detail: the same test on the whole sample grid returns a factorization on all 6 of 6 axis pairs, so the test can succeed
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

@@ -151,6 +151,12 @@ HEADING_RE = re.compile(r"^#{1,6}\s+", re.MULTILINE)
 LINK_RE = re.compile(r"\[[^\]]*\]\(([^)\s#]+\.md)(?:#[^)]*)?\)")
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    # Cycle 756's sibling checker shares only the declared finite-fixture
+    # construction, then replaces carrier enumeration and modular elimination
+    # with NetworkX maximal cliques and exact SymPy domain-matrix ranks.
+    "physical_cell_cutting_blind_space_carrier_span_cycle756_note_2026-08-09": [
+        "scripts/physical_cell_cutting_blind_space_carrier_span_cycle756_independent_check_2026_08_09.py",
+    ],
     # Cycle 906's sibling checker independently rebuilds the orbit-constant
     # mass dimensions and finite representative sweep without importing the
     # primary runner.

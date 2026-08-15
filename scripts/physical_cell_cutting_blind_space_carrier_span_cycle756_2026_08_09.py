@@ -1,18 +1,20 @@
-"""Rebuild the cutting system of the unit four-cube and ask where the space the
-cuttings cannot see comes from.
+"""Prove a bounded rank/span theorem for one supplied finite incidence fixture.
 
-Every count below is measured here. The runner builds the cell complex, the least
-volume pieces, the cuttings at the adjacency cost floor, the piece sharing table,
-the eight-piece carriers that meet every cutting exactly once, the span of their
-differences, the sharing classes of carrier pairs, and a complete sweep of the
-small supports a blind weighting could have, gating each quantity in place.
+The fixture is the coordinate four-cube with the determinant-one, minimum-cost
+piece and row selection specified below.  The runner constructs its eight-piece
+exact covers and proves over characteristic zero that their differences span the
+incidence kernel.  It also records positive finite overlap and support witnesses.
 """
 import itertools
-import math
 import resource
+import sys
 import time
 
 import numpy as np
+
+AUDIT_TIMEOUT_SEC = 900
+MEMORY_LIMIT_MIB = 2500.0
+OUTPUT_LIMIT_CHARS = 6000
 
 T0 = time.time()
 PF = [0, 0]
@@ -34,7 +36,29 @@ def gate(ok, name, detail):
 
 
 
-# ---------------------------------------------------------------- Part 1: machinery
+# ------------------------------------------------------- Part 1: exact machinery
+
+
+def det3(A):
+    """Exact determinant of one integer 3-by-3 matrix."""
+    return int(
+        A[0, 0] * (A[1, 1] * A[2, 2] - A[1, 2] * A[2, 1])
+        - A[0, 1] * (A[1, 0] * A[2, 2] - A[1, 2] * A[2, 0])
+        + A[0, 2] * (A[1, 0] * A[2, 1] - A[1, 1] * A[2, 0])
+    )
+
+
+def inverse_unimodular4(A):
+    """Return the exact integer inverse of a determinant-one 4-by-4 matrix."""
+    cof = np.zeros((4, 4), dtype=np.int64)
+    for i in range(4):
+        for j in range(4):
+            minor = np.delete(np.delete(A, i, axis=0), j, axis=1)
+            cof[i, j] = (-1 if (i + j) % 2 else 1) * det3(minor)
+    determinant = int(sum(int(A[0, j]) * int(cof[0, j]) for j in range(4)))
+    if abs(determinant) != 1:
+        raise ValueError("expected a unimodular four-coordinate simplex matrix")
+    return cof.T * determinant
 
 
 def det4(A):
@@ -71,7 +95,13 @@ C4 = cost(UNI, [0, 1, 2, 3])
 LO = int(C4.min())
 MINP = [i for i in range(NPIECE) if int(C4[i]) == LO]
 MM = np.stack([(V[p[1:]] - V[p[0]]).T for p in UNI])
-IV = np.rint(np.linalg.inv(MM.astype(float))).astype(np.int64)
+IV = np.stack([inverse_unimodular4(matrix) for matrix in MM])
+IDENTITY4 = np.eye(4, dtype=np.int64)
+INVERSES_EXACT = all(
+    np.array_equal(MM[i] @ IV[i], IDENTITY4)
+    and np.array_equal(IV[i] @ MM[i], IDENTITY4)
+    for i in range(len(MM))
+)
 
 ROT = []
 for perm in itertools.permutations(range(3)):
@@ -79,7 +109,7 @@ for perm in itertools.permutations(range(3)):
         R = np.zeros((3, 3), dtype=np.int64)
         for i, j in enumerate(perm):
             R[i, j] = sg[i]
-        if int(round(np.linalg.det(R.astype(float)))) == 1:
+        if det3(R) == 1:
             ROT.append(R)
 CEN = np.array([1, 1, 1], dtype=np.int64)
 G = []
@@ -107,7 +137,6 @@ for i in range(NPIECE):
     for (_, _, g) in G:
         LAB[posp[tuple(sorted(int(g[c]) for c in UNI[i]))]] = o
 REPS = np.array(REPS, dtype=np.int64)
-NORB = len(REPS)
 
 OFF = np.array([0, 1, 7, 49, 343], dtype=np.int64)
 L = np.einsum("nij,nmj->nmi", IV, V[None, :, :] - V[UNI[:, 0]][:, None, :])
@@ -171,58 +200,12 @@ USED = sorted(set(i for s in SOL for i in s))
 NPO = len(USED)
 P2I = dict((p, a) for a, p in enumerate(USED))
 
-CM = np.zeros(NPIECE, dtype=np.int64)
-for i in range(NPIECE):
-    b = 0
-    for t in UNI[i]:
-        b |= 1 << int(t)
-    CM[i] = b
-
 INC = np.zeros((NS, NPO), dtype=np.uint8)
-BITS = [0] * NS
 for i, s in enumerate(SOL):
-    v = 0
     for p in s:
         a = P2I[p]
         INC[i, a] = 1
-        v |= 1 << a
-    BITS[i] = v
 INCL = INC.astype(np.int64)
-PMS = []
-M2I = dict((int(CM[i]), i) for i in range(NPIECE))
-for (_, _, g) in G:
-    arr = np.zeros(NPIECE, dtype=np.int32)
-    for i in range(NPIECE):
-        w = 0
-        for c in range(16):
-            if (int(CM[i]) >> c) & 1:
-                w |= 1 << int(g[c])
-        arr[i] = M2I[w]
-    PMS.append(arr)
-SOLARR = np.array(SOL, dtype=np.int32)
-KEYMAP = dict((np.sort(SOLARR[i]).tobytes(), i) for i in range(NS))
-PERMS = []
-for arr in PMS:
-    img = np.sort(arr[SOLARR], axis=1)
-    PERMS.append(np.array([KEYMAP[img[i].tobytes()] for i in range(NS)], dtype=np.int64))
-
-
-# ---- column permutations and column orbits ----
-CP = []
-CPOK = True
-for gi in range(48):
-    cp = np.array([P2I[int(PMS[gi][USED[a]])] for a in range(NPO)], dtype=np.int64)
-    CPOK = CPOK and len(set(cp.tolist())) == NPO
-    CPOK = CPOK and np.array_equal(INC[PERMS[gi]][:, cp], INC)
-    CP.append(cp)
-lab = -np.ones(NPO, dtype=np.int64)
-NORB = 0
-for a in range(NPO):
-    if lab[a] < 0:
-        for cp in CP:
-            lab[int(cp[a])] = NORB
-        NORB += 1
-OSZ = sorted(int((lab == j).sum()) for j in range(NORB))
 
 
 # ------------------------------------------------- Part 2: the object and its carriers
@@ -232,12 +215,23 @@ GR = (INT.T @ INT).astype(np.int64)
 RW = INC.sum(axis=1).astype(np.int64)
 CS = INC.sum(axis=0).astype(np.int64)
 emit("")
-emit("the object: {0} cuttings and {1} pieces, {2} pieces to a cutting, "
-     "{3} cuttings through a piece".format(NS, NPO, int(RW[0]), int(CS[0])))
+emit("the supplied incidence fixture: {0} rows and {1} columns, {2} columns per "
+     "row, {3} rows per column".format(NS, NPO, int(RW[0]), int(CS[0])))
+gate(
+    INVERSES_EXACT
+    and coll == 0
+    and face == 0
+    and len(ROT) == 24
+    and len(G) == 48,
+    "C0",
+    "all 2672 simplex inverses are exact in both orders, the interior-point "
+    "encoder is collision-free and off every face, and the named subgroup is "
+    "24 proper spatial cubic rotations times an optional fourth-coordinate reflection",
+)
 gate(NS == 15800 and NPO == 192 and int(RW.min()) == int(RW.max()) == 24
      and int(CS.min()) == int(CS.max()) == 1975 and int(RW.sum()) == int(CS.sum()),
-     "C0", "every cutting uses the same number of pieces, every piece sits in the "
-     "same number of cuttings, and the two counts of the incidences agree")
+     "C1", "every row has the same size, every column has the same incidence "
+     "count, and the two incidence totals agree")
 
 NSH = (GR == 0)
 np.fill_diagonal(NSH, False)
@@ -269,11 +263,11 @@ for i, s in enumerate(CLQ):
     for p in s:
         W[i, int(p)] = 1
 COV = INCL @ W.T
-emit("eight pieces no cutting uses twice: {0}, each meeting every cutting "
-     "between {1} and {2} times".format(NC, int(COV.min()), int(COV.max())))
-gate(NC == 192 and int(COV.min()) == 1 and int(COV.max()) == 1, "C1",
-     "each of the 192 carriers meets every one of the 15800 cuttings exactly once, "
-     "so the table sends every carrier to the same all-ones column")
+emit("eight-column row-intersection-at-most-one sets: {0}; row intersections "
+     "range from {1} to {2}".format(NC, int(COV.min()), int(COV.max())))
+gate(NC == 192 and int(COV.min()) == 1 and int(COV.max()) == 1, "C2",
+     "each of the 192 carriers meets every one of the 15800 rows exactly once, "
+     "so the incidence matrix sends every carrier to the all-ones column")
 
 SH = (W @ W.T).astype(np.int64)
 np.fill_diagonal(SH, -1)
@@ -283,9 +277,11 @@ for v in (0, 1, 2, 4):
 TOTP = NC * (NC - 1) // 2
 emit("carrier pairs by shared pieces: " + " ".join(
     "{0}:{1}".format(v, HIS[v]) for v in (0, 1, 2, 4)))
-gate(sum(HIS.values()) == TOTP and TOTP == 18336 and HIS[4] == 384, "C2",
-     "the shared count of two carriers is 0, 1, 2 or 4, never 3, over all "
-     "18336 pairs, and the least sharing pair count is 384")
+gate(sum(HIS.values()) == TOTP
+     and TOTP == 18336
+     and HIS == {0: 15072, 1: 1920, 2: 960, 4: 384}, "C3",
+     "all 18336 carrier pairs have the exact overlap profile "
+     "0:15072, 1:1920, 2:960, 4:384")
 
 PR4 = [(i, j) for i in range(NC) for j in range(i + 1, NC) if int(SH[i, j]) == 4]
 D4 = W[[i for i, j in PR4]] - W[[j for i, j in PR4]]
@@ -297,9 +293,8 @@ emit("supports of the differences by shared pieces: " + " ".join(
     "{0}:{1}".format(v, SUPP[v]) for v in (0, 1, 2, 4)))
 gate(len(PR4) == 384 and int(np.abs(Z4).max()) == 0
      and int(np.abs(D4).sum(axis=1).min()) == 8
-     and int(np.abs(D4).sum(axis=1).max()) == 8, "C3",
-     "a carrier difference is blind because both carriers give the same all-ones "
-     "column, and the 384 least exchanges are the differences of support 8")
+     and int(np.abs(D4).sum(axis=1).max()) == 8, "C4",
+     "the 384 overlap-four pairs give signed integer kernel vectors of support 8")
 
 
 def rank_mod(M, p, cap=None):
@@ -340,13 +335,12 @@ RI1 = rank_mod(INCL, BIGP)
 RI2 = rank_mod(INCL, SMLP)
 emit("bounded arithmetic ranks: carriers {0} and {1}, table {2} and {3}".format(
     RW1, RW2, RI1, RI2))
-gate(RW1 == RW2 == 105 and RI1 == RI2 == 88, "C4",
-     "two different bounded arithmetics agree, and a bounded rank never exceeds "
-     "the exact rank, so the carriers span at least 105 and the table at least 88")
-gate(RW1 == 105 and RI1 == 88 and 192 - RI1 == 104, "C5",
-     "the table rank being at least 88 leaves the blind space at most 104, while "
-     "the carriers spanning at least 105 puts at least 104 independent differences "
-     "inside it, so both are exact: rank 88, blind space 104")
+gate(RW1 == RW2 == 105 and RI1 == RI2 == 88, "C5",
+     "the same elimination routine gives carrier rank 105 and incidence rank 88 "
+     "over each of two prime fields")
+gate(RW1 == 105 and RI1 == 88 and 192 - RI1 == 104, "C6",
+     "containment and the dimension squeeze establish characteristic-zero "
+     "incidence rank 88 and kernel dimension 104")
 
 DALL = []
 for v in (0, 1, 2, 4):
@@ -356,188 +350,38 @@ for v in (0, 1, 2, 4):
     DALL.append((v, len(idx), rv))
 emit("each sharing class alone spans: " + " ".join(
     "{0}:{1}".format(v, r) for v, n, r in DALL))
-gate(all(r == 104 for v, n, r in DALL), "C6",
-     "the differences at each single sharing class already span the whole blind "
-     "space, so no one class of exchange is the source and the least ones suffice")
+gate(all(r == 104 for v, n, r in DALL), "C7",
+     "each populated overlap class of carrier differences has rank 104 and spans "
+     "the characteristic-zero incidence kernel")
 
-
-# ------------------------------------------- Part 3: how small a blind support can be
-
-MASK = [0] * NPO
-for p in range(NPO):
-    m = 0
-    for c in np.flatnonzero(INC[:, p]):
-        m |= 1 << int(c)
-    MASK[p] = m
-AB4 = np.abs(D4)
-MEETS = INCL @ AB4.T
-MEET = sorted(set(int(x) for x in np.unique(MEETS)))
-CARR = sorted(set(int(x) for x in np.unique(COV)))
-emit("cuttings meet a blind support this often: " + " ".join(str(x) for x in MEET)
-     + " ; they meet a carrier this often: " + " ".join(str(x) for x in CARR))
-gate(MEET == [0, 2] and CARR == [1], "C7",
-     "a blind weighting cannot have a cutting meeting its support just once, since "
-     "that lone piece would then carry no weight, and the two readings separate: "
-     "all 384 least exchanges meet every cutting 0 or 2 times while a carrier, "
-     "which is not blind, meets every cutting exactly once")
-
-ANCH = []
-for j in range(NORB):
-    ANCH.append(int(np.flatnonzero(lab == j)[0]))
-gate(CPOK and NORB == 4 and sorted(OSZ) == [48, 48, 48, 48] and len(ANCH) == 4,
-     "C8", "each of the 48 proper cube symmetries carries the table to itself by a "
-     "piece relabelling paired with a cutting relabelling, and they leave 4 kinds "
-     "of piece, 48 of each, so a support of any size is the same up to symmetry as "
-     "one holding a piece of one of those 4 kinds")
-
-
-def shut(s):
-    """true when every cutting through a member of s meets a second member"""
-    for p in s:
-        u = 0
-        for q in s:
-            if q != p:
-                u |= MASK[q]
-        if MASK[p] & ~u:
-            return False
-    return True
-
-
-S8 = tuple(int(x) for x in np.flatnonzero(AB4[0]))
-SC = tuple(int(x) for x in CLQ[0])
-gate(len(S8) == 8 and len(SC) == 8 and shut(S8) and not shut(SC), "C9",
-     "the test the sweep applies says yes on the 8 pieces a least exchange touches "
-     "and no on the 8 pieces of a carrier, so it is a test that separates and not "
-     "one that refuses every candidate")
-
-
-def sweep(anchor, top):
-    """all minimal covers of one piece's cuttings up to size top, then every
-    support up to size top + 1 built on them, tested by the full condition"""
-    uni = [int(c) for c in np.flatnonzero(INC[:, anchor])]
-    pos = dict((c, i) for i, c in enumerate(uni))
-    nu = len(uni)
-    sets = [0] * NPO
-    for q in range(NPO):
-        if q == anchor:
-            continue
-        b = 0
-        for c in np.flatnonzero(INC[:, q]):
-            i = pos.get(int(c))
-            if i is not None:
-                b |= 1 << i
-        sets[q] = b
-    full = (1 << nu) - 1
-    mx = max(bin(s).count("1") for s in sets)
-    by = [[] for _ in range(nu)]
-    for q in range(NPO):
-        x = sets[q]
-        while x:
-            low = x & -x
-            by[low.bit_length() - 1].append(q)
-            x ^= low
-    cores = set()
-
-    def rec(cov, chosen):
-        if cov == full:
-            cores.add(tuple(sorted(chosen)))
-            return
-        slots = top - len(chosen)
-        if slots == 0:
-            return
-        rem = full & ~cov
-        if mx * slots < bin(rem).count("1"):
-            return
-        e = (rem & -rem).bit_length() - 1
-        for q in by[e]:
-            if q in chosen:
-                continue
-            rec(cov | sets[q], chosen + [q])
-
-    rec(0, [])
-    bysz = {}
-    for c in cores:
-        bysz.setdefault(len(c), []).append(c)
-    oth = [q for q in range(NPO) if q != anchor]
-    tried = 0
-    passed = 0
-    hits = 0
-    for k in range(5, top + 2):
-        seen = set()
-        for sz in sorted(bysz):
-            extra = k - 1 - sz
-            if extra < 0:
-                continue
-            for cc in bysz[sz]:
-                rest = [q for q in oth if q not in cc]
-                for add in itertools.combinations(rest, extra):
-                    t = tuple(sorted(cc + add))
-                    if t in seen:
-                        continue
-                    seen.add(t)
-                    tried += 1
-                    s = (anchor,) + t
-                    bad = False
-                    for p in s:
-                        tot = 0
-                        for q in s:
-                            if q != p:
-                                tot += int(GR[p, q])
-                        if tot < 1975:
-                            bad = True
-                            break
-                    if bad:
-                        continue
-                    passed += 1
-                    good = True
-                    for p in s:
-                        u = 0
-                        for q in s:
-                            if q != p:
-                                u |= MASK[q]
-                        if MASK[p] & ~u:
-                            good = False
-                            break
-                    if good:
-                        hits += 1
-        seen = None
-    return min(bysz), sorted(bysz), tried, passed, hits
-
-
-LEAST = []
-TRIED = 0
-PASSED = 0
-HITS = 0
-SIZES = None
-for a in ANCH:
-    lo, szs, tr, pa, hi = sweep(a, 6)
-    LEAST.append(lo)
-    if a == ANCH[0]:
-        SIZES = szs
-    TRIED += tr
-    PASSED += pa
-    HITS += hi
-emit("least other pieces covering one piece's cuttings, by piece kind: " + " ".join(
-    str(x) for x in LEAST))
-gate(LEAST == [4, 4, 4, 4], "C10",
-     "the 1975 cuttings through a piece are not covered by 2 or by 3 other pieces "
-     "but are covered by 4, so a blind support holding that piece holds at least "
-     "4 more and no support of size 2, 3 or 4 can be blind")
-emit("candidate supports of size 5, 6 and 7 built and tested: {0}, of those "
-     "passing the count bound: {1}".format(TRIED, PASSED))
-gate(HITS == 0 and TRIED > 0 and PASSED > 0, "C11",
-     "every support of size 5, 6 or 7 was built from a least cover of its anchor "
-     "piece and tested by the full condition, and none of them is blind")
-gate(LEAST == [4, 4, 4, 4] and HITS == 0 and int(np.abs(D4).sum(axis=1).max()) == 8,
-     "C12", "so no blind weighting of the cutting table touches fewer than 8 "
-     "pieces, and 8 is reached, by the least exchanges: the smallest blind "
-     "support has exactly the size of a carrier")
 
 ELAP = time.time() - T0
-RSS = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1048576.0
+RAW_RSS = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
+RSS_MIB = RAW_RSS / (1024.0 * 1024.0) if sys.platform == "darwin" else RAW_RSS / 1024.0
 emit("")
-emit("elapsed under 900 s peak memory under 2500 MB")
-gate(ELAP < 900.0 and RSS < 2500.0, "C13", "inside its time and memory allowance")
-gate(OUT[0] < 6000, "C14", "its output stays under 6000 characters")
+emit("runtime contract: under {0} s; memory contract: under {1:.0f} MiB".format(
+    AUDIT_TIMEOUT_SEC, MEMORY_LIMIT_MIB))
+gate(
+    ELAP < AUDIT_TIMEOUT_SEC and RSS_MIB < MEMORY_LIMIT_MIB,
+    "C8",
+    "measured runtime and normalized peak resident memory satisfy the contracts",
+)
+
+OUTPUT_DETAIL = "complete deterministic stdout stays under {0} characters".format(
+    OUTPUT_LIMIT_CHARS)
+GATE_LINE_CHARS = max(
+    len("PASS C9  " + OUTPUT_DETAIL),
+    len("FAIL C9  " + OUTPUT_DETAIL),
+) + 1
+TOTAL_CANDIDATES = (
+    "TOTAL: PASS={0} FAIL={1}".format(PF[0] + 1, PF[1]),
+    "TOTAL: PASS={0} FAIL={1}".format(PF[0], PF[1] + 1),
+)
+PROJECTED_COMPLETE_CHARS = OUT[0] + GATE_LINE_CHARS + 1 + max(
+    len(line) for line in TOTAL_CANDIDATES
+) + 1
+gate(PROJECTED_COMPLETE_CHARS < OUTPUT_LIMIT_CHARS, "C9", OUTPUT_DETAIL)
 emit("")
 emit("TOTAL: PASS={0} FAIL={1}".format(PF[0], PF[1]))
+if PF[1]:
+    raise SystemExit(1)

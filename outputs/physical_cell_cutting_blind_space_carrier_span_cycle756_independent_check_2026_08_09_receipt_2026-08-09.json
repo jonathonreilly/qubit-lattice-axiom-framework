@@ -1,0 +1,67 @@
+{
+  "audit_status_authority": "independent audit lane only",
+  "checker_sha256": "a557f49bbf244991622cc19a6e63c67bc3633a170e0131f7b65afd157705e384",
+  "claim_type": "bounded_theorem",
+  "exact_ranks": {
+    "carrier_differences": 104,
+    "carriers": 105,
+    "incidence": 88,
+    "overlap_classes": {
+      "0": 104,
+      "1": 104,
+      "2": 104,
+      "4": 104
+    }
+  },
+  "finite_object": {
+    "four_coordinate_determinant_profile": {
+      "-1": 24,
+      "1": 24
+    },
+    "group_order": 48,
+    "incidence_shape": [
+      15800,
+      192
+    ],
+    "maximal_cliques": 768,
+    "overlap_counts": {
+      "0": 15072,
+      "1": 1920,
+      "2": 960,
+      "4": 384
+    },
+    "size_eight_carriers": 192,
+    "support_eight_kernel_witnesses": 384
+  },
+  "gates": {
+    "fail": 0,
+    "named": {
+      "hostile.receipt_input": "PASS",
+      "hostile.receipt_rank": "PASS",
+      "independent.carrier_images": "PASS",
+      "independent.exact_ranks": "PASS",
+      "independent.fixture_integrity": "PASS",
+      "independent.incidence_census": "PASS",
+      "independent.maximal_cliques": "PASS",
+      "independent.modular_arithmetic_contract": "PASS",
+      "independent.overlap_classes": "PASS",
+      "independent.primary_live_replay": "PASS",
+      "independent.runtime_contract": "PASS",
+      "receipt.current_contract": "PASS"
+    },
+    "pass": 12
+  },
+  "input_sha256": {
+    "docs/PHYSICAL_CELL_CUTTING_BLIND_SPACE_CARRIER_SPAN_CYCLE756_NOTE_2026-08-09.md": "910dd326e8f773c23092494fcf38b5cceff68ce4bce03479cd7eabc933cc1bc7",
+    "requirements-release.txt": "e153eea331ce1b76cd99f09e14a777df2bc9efbaa06a201528ddfdc0f3f01bee",
+    "requirements.txt": "3fda988835a13d9a7236b0b508aa9bcd2f9b3f3b9a47b4875a15f86dbc77a3ad",
+    "scripts/physical_cell_cutting_blind_space_carrier_span_cycle756_2026_08_09.py": "cc4489c469200fe7e389d65a446984390af55a2fe62f14589f6adbbd4ac9c8ab"
+  },
+  "method": {
+    "carrier_enumeration": "NetworkX maximal-clique enumeration",
+    "fixture": "shared live primary construction",
+    "rank": "SymPy exact DomainMatrix rank of integer Gram matrices"
+  },
+  "schema": "physical-cell-cutting-carrier-span-cycle756-independent-v1",
+  "status": "pass"
+}

@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/physical_cell_cutting_blind_space_carrier_span_cycle756_independent_check_2026_08_09.py
+runner_sha256: a557f49bbf244991622cc19a6e63c67bc3633a170e0131f7b65afd157705e384
+input_fingerprint_sha256: 37d15d5115514f27b439066c251a186d3d48882a59de6803b9e9f863e8cdebed
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 8.83
+status: ok
+----- stdout -----
+PASS independent.primary_live_replay  the primary rebuild executes live with ten gates and fail-closed status
+PASS independent.fixture_integrity  exact inverses, encoder integrity, and the precisely named 48-element action agree
+PASS independent.incidence_census  the rebuilt integer incidence object has the declared complete census
+PASS independent.maximal_cliques  NetworkX independently enumerates exactly the same 192 size-eight maximal cliques
+PASS independent.carrier_images  direct integer multiplication verifies every carrier image and 384 support-eight kernel witnesses
+PASS independent.exact_ranks  SymPy domain matrices give exact characteristic-zero ranks 88, 105, and 104
+PASS independent.overlap_classes  exact elimination verifies the full overlap profile and rank 104 for every populated class
+PASS independent.modular_arithmetic_contract  both declared moduli are prime and the elimination dot products fit signed int64
+PASS receipt.current_contract  the receipt schema, exact results, checker digest, and all declared inputs are current
+PASS hostile.receipt_rank  the receipt contract detects an altered exact incidence rank
+PASS hostile.receipt_input  the receipt contract detects an altered primary-source digest
+PASS independent.runtime_contract  the complete live replay and independent checks satisfy the 900-second contract
+RECEIPT outputs/physical_cell_cutting_blind_space_carrier_span_cycle756_independent_check_2026_08_09_receipt_2026-08-09.json
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

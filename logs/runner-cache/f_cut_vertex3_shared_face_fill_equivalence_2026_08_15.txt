@@ -1,0 +1,66 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_vertex3_shared_face_fill_equivalence_2026_08_15.py
+runner_sha256: 452fc657a592980ccf64ef194bc37d736807adb4b4a86d100fa8b279424913a0
+input_fingerprint_sha256: 9682655acf7cce43b026ee00218d2c3f5a4127731950d9923dbc178b94860d15
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_VERTEX3_SHARED_FACE_FILL_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+external_scientific_inputs: current Lattice, Admissibility, and Record wording; no observations or fits
+integrity_reads: this runner, its note, and the axiom memo
+construction: 32 cube-covariant complement-even predicates on the two-cube, off-patch occupancy 0, seed (1,0,0)
+negative_scope: displayed selector only; vertex3 is not adopted
+PASS: audit-inputs declared inputs are the required two static string literals and exist
+PASS: source-lattice-admissibility Lattice rotations and Admissibility covariance are pinned
+PASS: source-local-distribution current local-distribution wording is pinned
+PASS: source-record-boundary Record lock, content-only readout, unreadable absence, and formation residual are pinned
+PASS: vertex-count two-cube has twelve vertices and the seed is the shared-face site (1,0,0)
+PASS: orbit-partition proper-cube action on six-tuples has ten orbits with derived sizes
+PASS: complement-action complement pairs empty/full, wt1/wt5, opp2/opp4, adj2/adj4 and fixes vertex3, mixed3
+PASS: f-cut-cardinality five free remaining bits give 32 F_cut maps
+PASS: thm1-f-L1-is-unbalanced-axis f_L1 is 1 iff some axis is unbalanced, and evaluates to (1,0,1,1,1)
+PASS: thm1-f-L1-not-hamming f_L1 is not Hamming |c|_1 mod 2
+PASS: thm1-vertex3 f_L1 has vertex3=1
+PASS: thm1-fill f_L1 fills from (1,0,0) with history (1, 5, 10, 12)
+N_fill=4
+N_v3=16
+N_both=4
+equivalent=False
+lex_counterexample_tuple=(0, 0, 0, 1, 0)
+fillers=[(1, 0, 1, 1, 0), (1, 0, 1, 1, 1), (1, 1, 1, 1, 0), (1, 1, 1, 1, 1)]
+first_neighborhoods=['empty', 'wt1']
+f_L1_remaining=(1, 0, 1, 1, 1)
+f_L1_history=(1, 5, 10, 12)
+PASS: thm2-counts N_fill=4, N_v3=16, N_both=4
+PASS: thm2-not-equivalent fill-from-(1,0,0) is not equivalent to f(vertex3)=1
+PASS: thm2-counterexample lex-first counterexample is (0,0,0,1,0) with fill=0 and vertex3=1
+PASS: thm2-one-way every silent-vertex3 map still has fill=0; all four fillers have vertex3=1
+PASS: thm2-first-neighborhoods first neighborhoods of (1,0,0) are only wt1 or empty, so vertex3 alone cannot grow
+PASS: thm2-conjunction fill detects wt1=adj2=vertex3=1, not the single vertex3 bit
+PASS: note-reports-counts the note reports N_fill, N_v3, N_both, and the counterexample tuple
+PASS: claim-scope claim_scope states the failed equivalence and does not adopt vertex3
+PASS: lattice-and-admissibility-parents the live axiom memo supplies Z^3, proper cubic rotations, and a covariant nearest-neighbor rule
+PASS: note-contract bounded theorem, displayed-not-adopted uniqueness failure, and machine status
+PASS: claim-type-and-gate N1-N8 and a passing no-go disposition are source-visible
+PASS: forbidden-phrases-absent the note and runner omit the dispatch-forbidden phrases
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: off-patch-zero off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: not-leftover-6448 the residual is the 32-map selector, not leftover-character of #6448
+PASS: no-axiom-edit the theorem proposes no axiom change and does not adopt vertex3
+PASS: note-hygiene machine retained fields are the only retained lines; no cache or citation surface
+PASS: axiom-unedited the axiom memo still carries the four named premises and no F_cut class
+per_element: checked exactly — each of the 64 neighbor 6-tuples is assigned its axis-type orbit
+per_site: checked exactly — each of the twelve two-cube vertices uses the same six-direction stencil
+per_mode: checked exactly — every F_cut map is scored on the shared-face seed (1,0,0)
+per_block: checked exactly — N_fill, N_v3, and N_both are the 32-map census on this patch
+lattice_wide: checked and not executed — no Z^3-wide formation law or physical Admissibility selector is claimed
+TOTAL: PASS=30 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,41 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_involution_seam_dressing_locality_2026_08_15.py
+runner_sha256: 73d2c4a52323610eb2785ee4f8c736b6cb89be1090cb0a758bc30f9045aa2ffd
+input_fingerprint_sha256: aba4cd27f418838c8b94a41a46542e9485978ba20b3a87f44a8d642313b6ccf8
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 5.13
+status: ok
+----- stdout -----
+[PASS] A-authority-and-Block107-parent: current axioms, registries, ancestry, and the Block107 parent triple are content-bound
+       parent=d41a05e153d4cb77eee125b82fc0b0bd767bf32e; origin/main=5f081b997f5eb682082a373e9c49a944bf80e14e
+[PASS] B-convention-and-block107-embedding: left placement embeds Block107 R*K exactly while transpose placement is undressed
+       K_A=conj((A_ext G)[pos,P pos]); G A_ext leaves the central Gram exactly unchanged
+[PASS] C-involution-reduction: the 128-parameter reality ansatz has a free 64-parameter form and (A P conj)^2=A^2
+       A=B+P conj(B) P is checked entrywise symbolically; theta'^2=1 iff A^2=I
+[PASS] D-homogeneous-window-structure: the homogeneous joint system has dimension four; the flat affine control has dimension t...
+       homogeneous rank/dim=124/4; flat rank/dim=118/10
+[PASS] E-seam-local-emptiness: twenty-four parameter-free far-block rows make every W4-supported dressing exactly infea...
+       obstruction rows=24; rank[M|b]=60|61; far rows equal undressed rows for any W4 support
+[PASS] F-second-fixture: the c=3/5 fixture has the same exact twenty-four-row rank obstruction and pinned witness
+       rank[M|b]=60|61; D[8,9]=-946372553273520360000/274776247965351513030373
+[PASS] G-nondecay-of-the-obstruction: the exact far defect exceeds the Block107 near defect, so the obstruction does not decay
+       far > near > cross: 2100468154772736499016437760573154473873400000/61391349876435377016600254323619839508354485363 > 1968254788609376403972598115871411702171024000/61391349876435377016600...
+DEFECT_BLOCKS_EXACT: near=1968254788609376403972598115871411702171024000/61391349876435377016600254323619839508354485363 far=2100468154772736499016437760573154473873400000/61391349876435377016600254323619839508354485363 cross=1036997884347443982746007575550009873134760000/61391349876435377016600254323619839508354485363
+[PASS] H-central-repair-context: the exact Block107 central positive repair stands, but no W4-supported extension exists
+       R107*K is Hermitian with eight positive leading minors; the central repair is essentially maximal for seam-local dressings
+[PASS] I-scope: the bounded note preserves involution, locality, N1--N8, W1, N5, ADM, gravity, audit, an...
+       note scope is guarded against absence; no curved-OS, global transporter, or TOE completion is inferred
+AXIOM_AUTHORITY: origin/main=5f081b997f5eb682082a373e9c49a944bf80e14e axiom=bc23300becfe4e4db57153c0e94cfcdf2338da71 registry=b93959cca4f7e26c673cdccbe601e50c3cb93daa; Block107 parent=d41a05e153d4cb77eee125b82fc0b0bd767bf32e
+per_element: exact convention, involution-reduction, dimension, infeasibility, and non-decay identities are checked
+per_site: one Grassmann mode per fine site on the antiperiodic reflection torus
+per_mode: the Block 107 central certificate is embedded and re-verified exactly
+per_block: twenty-four parameter-free far-block obstruction rows certify seam-local emptiness at both fixtures
+lattice_wide: checked and not executed — the globally supported transfer/modular seam dressing, curved OS positivity, the actual ADM/history transporter completion, joint gravity, the gravity constraint quotient, Records, audit retention, and TOE closure remain open
+RESULT: the involution reduction and convention are exact and the two-history Hermiticity obstruction is global — every seam-local dressing class on the displayed window is exactly empty while the central-window repair stands
+DECISION_CUT: advance the globally supported transfer/modular dressing as the only surviving seam mechanism; reject finite-window dressing routes
+TOE: zero obligation retirement, retained-positive end-to-end theory count remains zero, and no TOE percentage moves
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

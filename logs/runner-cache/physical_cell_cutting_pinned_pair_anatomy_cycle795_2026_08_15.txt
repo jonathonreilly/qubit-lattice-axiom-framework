@@ -1,0 +1,41 @@
+===== runner cache v1 =====
+runner: scripts/physical_cell_cutting_pinned_pair_anatomy_cycle795_2026_08_15.py
+runner_sha256: a04127bbc7b2eac2c82d8d2c71080913b73a8806af150d138ff06d698221b340
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 13.97
+status: ok
+----- stdout -----
+PASS G1 2672 pieces, floor 6, 400 kept, 15800 cuttings of 24, 192 used, cell group 384, 16 letters, trace 2000, 48 entries at 36
+PASS G2 at all 48 fibers: 200 two-orbits, 14 held cuttings each a union of 12 of 40 rows, rank 32, kernel dimension 8
+G2 detail: all 256 kernel vectors have even weight and each of the 672 held cuttings covers every one of the 625 points once
+PASS G3 the kernel weight census takes 1 distinct value over the 48 fibers, with 17 weights totalling 256
+G3 detail: {0: 1, 4: 4, 6: 1, 8: 9, 10: 5, 12: 13, 14: 16, 16: 17, 18: 30, 20: 31, 22: 44, 24: 40, 26: 24, 28: 12, 30: 7, 32: 1, 34: 1}
+PASS G4 among the 6 pairs of the 4 weight 4 kernel vectors exactly 1 pair overlaps, in exactly 1 row, at all 48 fibers
+G4 detail: overlap census {0: 5, 1: 1} and pair difference weight census {6: 1, 8: 5}, each 1 distinct value over the 48 fibers
+G4 detail: the overlapping pair differs by the unique weight 6 kernel vector; the light span of those 5 vectors has 16 members
+PASS G5 each of the 9 weight 8 kernel vectors is classed by its multiplicity over the 91 held pairs and its light span membership
+G5 detail: the profile census by (multiplicity, membership) is {(0,1): 3, (1,0): 2, (2,0): 2, (2,1): 2}, with 1 meaning inside, at 48 of 48 fibers
+G5 detail: so 5 of the 9 lie inside the light span and 4 outside, and every multiplicity 0 weight 8 vector is inside
+PASS G6 the minimal exchange graph, the pairs sharing 10 of their 12 rows, has degree census {0: 1, 1: 4, 2: 9} at all 48 fibers
+G6 detail: the dominant difference, of multiplicity 6, breaks exactly 2 held cuttings, of graph degrees 0 and 1
+G6 detail: their difference has weight 8 and multiplicity 1, realized by that pair alone; the other multiplicity 1 weight 8
+G6 detail: vector is realized by exactly 1 pair, joining the degree 0 cutting to a degree 2 one; both lie outside the light span
+PASS G7 the complete block-level self-equivalence search returns exactly 2 elements at 48 of 48 fibers
+G7 detail: the nontrivial one fixes each of the 2 exceptional cuttings, and its cycle structure on the 14 held cuttings is
+G7 detail: 10 fixed points and 2 two-cycles, 1 distinct value over the 48 fibers
+PASS G8 on the 40 row coordinates the nontrivial self-equivalence fixes as vectors all 7 anchored kernel directions, at 48 of 48 fibers
+G8 detail: the 4 weight 4 vectors, the weight 6 vector, the dominant difference, and the exceptional pair difference of weight 8
+PASS G9 the dominant difference pairs the 12 non-exceptional held cuttings into 6 pairs at all 48 fibers
+G9 detail: the nontrivial self-equivalence fixes 4 of those pairs as sets and exchanges the other 2 with each other, and its 4
+G9 detail: moved cuttings are exactly the union of the 2 exchanged pairs
+PASS G10 the union size class of a fiber takes 3 values over the 48 fibers, and the per fold class census multiset is anchored
+G10 detail: the four union sizes read 50 100 100 100 at 8; 100 100 100 100 at 32; 100 100 100 175 at 8
+G10 detail: classes are numbered 0 light, 1 middle, 2 heavy by union size; the per fold census multiset reads
+G10 detail: {0: 2, 1: 4, 2: 2} at 2; {0: 4, 2: 4} at 1; {1: 8} at 3
+G10 detail: the 48 wall entries are closed under the letter swap, with 0 diagonal entries, and so is each extreme class
+G10 detail: light letter pairs (2,12) (4,14) (5,13) (7,11); heavy letter pairs (2,3) (4,7) (10,11) (12,13)
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

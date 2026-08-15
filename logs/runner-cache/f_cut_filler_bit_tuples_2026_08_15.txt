@@ -1,0 +1,58 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_filler_bit_tuples_2026_08_15.py
+runner_sha256: f5796346ef97f56518e078979430ac7e3d763bb600332e58dcf0121d19ba712f
+input_fingerprint_sha256: df9085c183cc4b69a8feeb5d195c8cc446ae8855e16cd3ac49ef712c8b9264df
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_FILLER_BIT_TUPLES_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+n_rotations=24
+n_orbits=10
+|F_cut|=32
+N_fill=8
+L1_tuple={'wt1': 1, 'opp2': 0, 'adj2': 1, 'vertex3': 1, 'mixed3': 1}
+eight_tuples=(1, 0, 1, 0, 0),(1, 0, 1, 0, 1),(1, 0, 1, 1, 0),(1, 0, 1, 1, 1),(1, 1, 1, 0, 0),(1, 1, 1, 0, 1),(1, 1, 1, 1, 0),(1, 1, 1, 1, 1)
+N_distinct=8
+adj2_all_one=True
+n_l1_rows=1
+f_L1_locks=12 halt=4 history=(1, 4, 8, 11, 12)
+hamming_locks=9
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required note-plus-axiom string-literal tuple
+PASS: thm1-twenty-four-rotations exactly 24 proper cube rotations
+PASS: thm1-ten-orbits exactly 10 axis-type orbits partition the 64 cells
+PASS: thm1-named-orbit-types wt1/opp2/adj2/vertex3/mixed3 are the listed axis-type orbits
+PASS: thm1-f-L1-is-unbalanced-axis f_L1 is 1 iff some axis has c_+ != c_- (n != 0)
+PASS: thm1-f-L1-not-hamming f_L1 is not Hamming |c|_1 mod 2
+PASS: thm1-f-L1-in-eight-and-tuple f_L1 is one of the eight and its tuple is (1,0,1,1,1)
+PASS: thm1-eight-fillers exactly eight F_cut maps fill the twelve-vertex two-cube
+PASS: thm1-complement-even-fixed wt5/adj4/opp4 equal wt1/adj2/opp2 by complement-even
+PASS: thm1-two-cube-twelve the two-cube has twelve vertices and contains the seed
+PASS: thm2-eight-tuples-listed the note lists each reconstructed remaining-bit tuple once
+PASS: thm2-n-distinct N_distinct = 8 is the number of distinct remaining-bit tuples
+PASS: thm2-adj2-all-one adj2=1 for all eight F_cut 1-site fillers
+PASS: thm2-exactly-one-l1-row exactly one of the eight rows is (1,0,1,1,1)
+PASS: thm3-displayed-not-adopted the eight tuples are displayed rival members and none is adopted
+PASS: lattice-and-admissibility-parents the live axiom memo supplies Z^3, proper cubic rotations, and a covariant nearest-neighbor rule
+PASS: note-contract bounded theorem, displayed-not-adopted taxonomy, and machine status
+PASS: claim-type-and-gate N1-N8 and a passing no-go disposition are source-visible
+PASS: forbidden-phrases-absent the note and runner omit the dispatch-forbidden phrases
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: no-axiom-edit the eight-tuple table is not written into Admissibility
+PASS: not-leftover-single-bit the residual is the eight-member taxonomy, not a second count of one bit
+PASS: off-patch-zero off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: claim-scope-taxonomy claim_scope classifies the eight fillers by remaining-bit tuples
+per_element: checked exactly — each of the 64 neighbor 6-tuples is assigned its axis-type orbit
+per_site: checked exactly — each of the twelve two-cube vertices uses the same six-direction stencil
+per_mode: checked exactly — every F_cut map is classified as filler or not, then named by its remaining-bit tuple
+per_block: checked exactly — N_distinct, adj2-universality, and the unique L1 row are properties of the eight-tuple table
+lattice_wide: checked and not executed — no Z^3-wide formation law or Admissibility rewrite is claimed
+TOTAL: PASS=24 FAIL=0
+
+----- stderr -----
+

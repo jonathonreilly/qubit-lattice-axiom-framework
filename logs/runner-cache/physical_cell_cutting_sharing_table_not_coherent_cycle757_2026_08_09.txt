@@ -1,0 +1,46 @@
+===== runner cache v1 =====
+runner: scripts/physical_cell_cutting_sharing_table_not_coherent_cycle757_2026_08_09.py
+runner_sha256: ac6e74e6432642a48495cc7cd50b8d17e87e7a788e995b025319acade889934e
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 2.74
+status: ok
+----- stdout -----
+Every count below is measured here.
+the object: 15800 cuttings and 192 pieces, 24 pieces to a cutting, 1975 cuttings through a piece
+PASS C0  all incidence degrees, exact simplex inverses, and the 24 by 2 declared action match
+the 192 free eight-piece sets meet each of the 15800 cuttings between 1 and 1 times
+PASS C1  each of the 192 sets is an exact cover: the table sends it to the all ones column over all 15800 cuttings
+the cover by piece table has row sums 8 to 8 and column sums 8 to 8
+PASS C2  the zero one table is 8 regular on both sides
+cover side sharing values 0 1 2 4 with per cover counts 157 20 10 4, the same for every one of the 192 covers
+PASS C3  the complete distinct-cover profile is 0 1 2 4, with the same counts in every row
+piece side sharing values 0 1 2 3 4 with per piece counts 158 18 10 2 3, the same for every one of the 192 pieces
+PASS C4  the complete distinct-piece profile is 0 1 2 3 4, with the same counts in every row
+cover side off diagonal multiset 0:30144 1:3840 2:1920 4:768
+piece side off diagonal multiset 0:30336 1:3456 2:1920 3:384 4:576
+PASS C5  the cover-side and piece-side off-diagonal multisets are distinct
+the classes AI A0 A1 A2 A4 have valencies 1 157 20 10 4
+PASS C6  the 5 zero one classes are symmetric, disjoint, add up to the all ones matrix, and the share 8 class is the identity
+A0 . A0 takes 11 values on the class A0: 122 124 125 126 127 128 129 130 131 132 134
+pair (0,20) and pair (0,21) both share 0 pieces yet carry 134 and 132
+PASS C7  two entries of the zero-sharing relation carry distinct squared-product values
+A0 . A1 and A1 . A0 differ at entry (0,6): 16 against 15
+PASS C8  the two ordered relation products have distinct entries
+control on the 16 corners of the four cube by differing coordinates: 25 products, one number D1 . D1 on D0 = 4
+PASS C9  the same test finds all 25 products of the control constant on all 5 of its classes
+control with the symmetric pair (0,3) moved from the d 2 class to the d 1 class: product (1,1) takes 3 values on class 1
+PASS C10  the moved-pair control remains a symmetric partition and reports multiple product values
+declared pair-colour refinement, classes by round: 5 76 120 120
+final classes 120 with sizes 192:48 384:72; the five relations split as 1 100 10 6 3
+PASS C11  the declared refinement stabilizes at 120 classes with the gated split profile
+all 48 declared spatial-rotation/time-flip maps send covers to covers; orbits: 5 of sizes 24 24 48 48 48
+PASS C12  every one of the 48 action elements permutes the 192 covers, producing 5 orbits of covers
+cover differences inside each orbit, orbit size then exact rank: 24:23 48:47 24:23 48:35 48:29; all 192 covers together: 104
+PASS C13  the 192-cover difference rank is 104; each action-orbit rank is smaller
+elapsed under 30 s and peak memory under 500 MB, both measured in this run
+PASS C14  inside its time and memory allowance
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

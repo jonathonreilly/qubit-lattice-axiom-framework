@@ -1,0 +1,47 @@
+===== runner cache v1 =====
+runner: scripts/physical_cell_cutting_piece_taxonomy_count_law_cycle798_2026_08_15.py
+runner_sha256: cfc33a97f8c0ddbfeb97ad7c12cf4366d694bf65d5456d8f4a08855ab2ed978d
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 13.22
+status: ok
+----- stdout -----
+PASS G1 the declared cell rebuilds from the corner list alone: 2672 candidate pieces, 400 kept at the floor, 15800 cuttings of 24 pieces
+G1 detail: declared cell: 2672 candidates, floor 6, 400 kept, 15800 cuttings of 24, 192 used, 16 letters, trace 2000
+PASS G2 each of the 400 kept pieces has exactly 4 corner-adjacency edges on its 5 corners and is connected, so each is a tree
+G2 detail: the degree multisets are exactly three: chain 192, three-arm 192, hub 16
+G2 detail: the independent constructions give 384 bit-flip walks with 192 distinct chains, 16 hubs, and 192 three-arm sets
+G2 detail: the constructed families equal the degree families as sets, and all 400 constructed sets are kept pieces
+PASS G3 the 192 used pieces are exactly the chain family, 192 of 192: a kept piece occurs in a cutting if and only if its tree is a path
+PASS G4 the 384 cell maps carry the 400 kept pieces in exactly 3 orbits, of sizes [16, 192, 192], and those orbits are the three degree families
+G4 detail: unit census on the chain orbit {1: 8, 3: 88, 7: 88, 14: 8}, on the hub orbit {1: 2, 3: 6, 7: 6, 14: 2}
+G4 detail: unit census on the three-arm orbit {1: 14, 3: 82, 7: 82, 14: 14}
+G4 detail: every orbit carries all four units, so the unit is constant on no orbit and is not an invariant of the cell group
+PASS G5 the inequality description read off the tree agrees with the barycentric membership at all 625 grid points, 400 of 400 pieces
+G5 detail: the oriented coordinate is the point value or 80 minus it; a chain is a strict decrease along its walk between 0 and 80
+G5 detail: a hub is a sum of four oriented coordinates below 80; a three-arm is a sum of three below 80 with one ordered pair
+G5 detail: the description route never reads the barycentric inverse matrices, so the two routes share no code
+PASS G6 every one of the 192 chains has point count comb(8 - s, 4) for its ascent count s, and that count is 5 times its unit
+G6 detail: the ascent census over the chains is {0: 8, 1: 88, 2: 88, 3: 8}
+G6 detail: comb(5, 4) = 5, comb(6, 4) = 15, comb(7, 4) = 35, comb(8, 4) = 70, that is 5 times [1, 3, 7, 14]
+PASS G7 every one of the 16 hubs has point count comb(8 - w, 4) for the three-axis weight w of its hub corner, 16 of 16
+G7 detail: the hub-corner weight census is {0: 2, 1: 6, 2: 6, 3: 2}, and the axis of offset 8 is invisible: its two directions share one offset
+PASS G8 all 192 three-arm pieces have point count 5 times a unit of the spectrum [1, 3, 7, 14], but the hub-corner weight does not fix the unit
+G8 detail: the three-arm unit census is {1: 14, 3: 82, 7: 82, 14: 14}, and no closed form for this family is given here
+G8 detail: witness at hub weight 0: the piece (0, 1, 2, 4, 9) has unit 7 while the piece (0, 1, 2, 8, 12) has unit 14
+PASS G9 the 192 chain words are pairwise distinct and fall into exactly 96 mirror classes of 2, and every cutting carries 24 distinct ones
+G9 detail: the fourth-axis flip pairs the two chains of every class, fixes 0 of the 192 chains, and permutes the 15800 cuttings with 0 fixed
+G9 detail: the ascent census inside a cutting is {0: 1, 1: 11, 2: 11, 3: 1} at all 15800 cuttings, so the count law re-derives the one unit profile
+G9 detail: the 15800 cuttings carry only 4116 distinct class sets, so the class set of a cutting is not the cutting
+G9 detail: the class-set multiplicity census is {2: 2636, 4: 936, 8: 336, 16: 192, 64: 16}
+G9 detail: the 15800 word sets are instead pairwise distinct, so the word set does determine the cutting and only the class set loses it
+PASS G10 the 24 unordered wall edges on the 12 wall letters fall into exactly 2 components of 6, and that splits the 12 pairs at 18
+G10 detail: the components are [0, 4, 7, 10, 11, 14] and [2, 3, 5, 9, 12, 13]
+G10 detail: inside a component every letter has exactly 1 non-neighbour, giving 3 non-adjacent pairs per component
+G10 detail: the 6 within-component pairs at that value are [(0, 7), (2, 13), (3, 5), (4, 11), (9, 12), (10, 14)], each with 4 common neighbours
+G10 detail: the 6 cross-component pairs are [(0, 12), (2, 11), (3, 10), (4, 13), (5, 14), (7, 9)], a perfect matching of all 12 wall letters
+G10 detail: the value census over all 36 cross-component letter pairs is {18: 6, 52: 24, 90: 6}
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

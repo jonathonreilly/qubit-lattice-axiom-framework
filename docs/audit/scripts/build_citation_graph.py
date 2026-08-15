@@ -151,6 +151,16 @@ HEADING_RE = re.compile(r"^#{1,6}\s+", re.MULTILINE)
 LINK_RE = re.compile(r"\[[^\]]*\]\(([^)\s#]+\.md)(?:#[^)]*)?\)")
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    # Cycle 924's sibling checker independently verifies the exact ratio,
+    # cyclic-patch nullity, group equality, and conditional menu-line claims.
+    "occurrence_rate_route_arithmetic_cycle924_bounded_theorem_note_2026-07-28": [
+        "scripts/frontier_cycle924_occurrence_rate_independent_check_2026_07_28.py",
+    ],
+    # Cycle 871's sibling checker independently recomputes the finite-map,
+    # stabilizer, obligation-model, and quote-replay claims.
+    "source_action_bridge_pricing_cycle871_bounded_theorem_note_2026-07-28": [
+        "scripts/frontier_cycle871_bridge_independent_check_2026_07_28.py",
+    ],
     # Cycle 977's sibling checker reconstructs the semantic-quotient family,
     # witness census, cubic classes, and covariance comparisons without
     # importing either the primary or the landed core.

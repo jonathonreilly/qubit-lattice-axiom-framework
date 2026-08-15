@@ -1,5 +1,5 @@
 {
- "edge_count": 15728,
+ "edge_count": 15731,
  "node_count": 5530,
  "nodes": {
   "3d_correction_master_note": {
@@ -17047,8 +17047,8 @@
    "out_degree": 6
   },
   "source_action_bridge_pricing_cycle871_bounded_theorem_note_2026-07-28": {
-   "deps_hash": "46b48790e32b",
-   "out_degree": 5
+   "deps_hash": "d753f7778016",
+   "out_degree": 8
   },
   "source_driven_field_recovery_h025_pocket_note": {
    "deps_hash": "e3b0c44298fc",

@@ -8,12 +8,13 @@ Authority: none
 
 Audit: unset
 
-Status: bounded worked result, SELF-CONTAINED after review. Exact
-arithmetic on stipulated recorded values and a small recomputed
-cyclic-patch theorem; every imported value is explicitly conditional
-and its sources are named with their (unaudited) ledger status. The
-occurrence-to-threefold-readout route (historically "route 3" of the
-charged-lepton cycle-angle obligation) is OPEN.
+Status: proposed_retained
+
+This is a self-contained bounded worked result after review: exact arithmetic
+on stipulated recorded values and a small recomputed cyclic-patch theorem.
+Every imported value is explicitly conditional and its sources are named with
+their unaudited ledger status. The occurrence-to-threefold-readout route
+(historically "route 3" of the charged-lepton cycle-angle obligation) is OPEN.
 
 Claim type: bounded_theorem (conditional on stipulations and named
 unaudited imports)
@@ -23,10 +24,8 @@ Runners:
 - [`frontier_cycle924_occurrence_rate_route_2026_07_28.py`](../scripts/frontier_cycle924_occurrence_rate_route_2026_07_28.py)
 - [`frontier_cycle924_occurrence_rate_independent_check_2026_07_28.py`](../scripts/frontier_cycle924_occurrence_rate_independent_check_2026_07_28.py)
 
-Receipt:
-
-- [`occurrence_rate_route_cycle924_receipt_2026_07_28.json`](../outputs/occurrence_rate_route_cycle924_receipt_2026_07_28.json)
-- [`occurrence_rate_route_independent_check_cycle924_receipt_2026_07_28.json`](../outputs/occurrence_rate_route_independent_check_cycle924_receipt_2026_07_28.json)
+The checker executes the primary once from pinned source bytes. Neither runner
+writes a tracked receipt or relies on a runner-cache artifact.
 
 Constitutional effect: none. This package changes no axiom, foundation,
 Qualification, primitive, registry, policy, queue, audit result, or audit
@@ -148,6 +147,16 @@ admitted_observation_status: null
 claim_type_reason: "exact Fraction and integer arithmetic; the nullity recomputed by two structurally different routes; group equality verified as permutation sets; menu membership by direct substitution; imports explicitly labeled with unaudited status"
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
+packet_helper_runner: scripts/frontier_cycle924_occurrence_rate_independent_check_2026_07_28.py
+```
+
+Hard landing condition: the citation topology must contain this exact
+claim-scoped helper edge and the generated ledger row must expose the same
+helper path:
+
+```yaml
+occurrence_rate_route_arithmetic_cycle924_bounded_theorem_note_2026-07-28:
+  - scripts/frontier_cycle924_occurrence_rate_independent_check_2026_07_28.py
 ```
 
 ## Imports, stipulated definitions, open

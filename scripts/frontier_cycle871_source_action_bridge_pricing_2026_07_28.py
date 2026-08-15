@@ -7,39 +7,38 @@ runner prices that bridge instead of attempting it.
 
 Four sections, all findings computed rather than declared:
 
-(A) QUOTE.  Every line in a declared, SHA-pinned scope of landed notes that
+(QUOTE REPLAY).  Every line in a declared, SHA-pinned scope of landed notes that
     names the bridge (or one of its aliased forms) is extracted verbatim with
     its file, sha256, git blob and line number.  The extraction rule is fixed
     in advance and the quotes are byte-recovered from the pinned payloads.
 
-(B) FORCED vs FREE, AT A DECLARED ANSATZ.  A candidate source-to-action map
-    on a finite lattice patch is a function A from admissible source
-    configurations to action values.  Three linear constraint families are
-    DECLARED for A: empty-record vanishing (REC0), disjoint finite additivity
-    (REC1), and translation invariance (LAT).  These clauses are MODELED ON
-    the Record axiom's sentences about the scalar readout I and on the
-    Lattice axiom; the canonical axiom text supplies additivity for the
-    readout I only, and the identification of the action functional A with
-    the readout I (or any readout-to-action / source-action bridge) is NOT
-    supplied by the axioms and is NOT proved here -- it is an OPEN bridge and
-    the results of this section are conditional on the declared clauses.
+(FINITE-MAP DIMENSION, AT A DECLARED ANSATZ).  A candidate source-to-action map
+    on a finite periodic lattice patch is a function A from the Boolean
+    subsets of sites to rational values.  That domain and three linear
+    constraint families are DECLARED: empty-set vanishing, additivity for two
+    nonempty disjoint subsets, and translation invariance.  The current
+    canonical axioms do not supply this scalar domain, empty-set vanishing,
+    finite additivity, or an action functional.  The physical source-action
+    bridge therefore remains OPEN, and every result in this section is
+    conditional on the independent model stipulations.
     The exact dimension of the surviving solution space is computed by two
     independent routes (sparse exact Gaussian elimination over Q, and a
     triangular forward-substitution route that never enumerates the
     configuration space).  An ablation ladder then prices each declared
     clause by how many free parameters it removes.
 
-(C) NARROWEST SUB-GAP.  The landed Gate B interface note observes that in the
+(PRODUCT STABILIZER).  The landed Gate B interface note observes that in the
     linear form L(1 - lambda*strength/(r+eps)) a rescaling of lambda against
     strength with fixed product leaves the action identical, and concludes the
     normalization is "still a runner convention".  The landed runner checks
     that at one float point with a 1e-15 tolerance.  Here the whole stabilizer
-    is determined in exact rational arithmetic over a declared grid: which
-    (a, b) rescalings act trivially, whether that set is a group, and whether
-    any finite difference or ratio of in-scope action values separates the two
-    factors.  That decides the size of the bridge's normalization debt.
+    is determined algebraically: over nonzero rationals the product-one
+    rescalings form a group.  A declared finite grid checks classification of
+    sampled pairs but is not itself called a group.  The runner also asks
+    whether any finite difference or ratio of in-scope action values separates
+    the two factors.
 
-(D) OBLIGATION MAP (MODELED DIMENSIONS ONLY).  Every remaining clause quoted
+(OBLIGATION MODELS, MODELED DIMENSIONS ONLY).  Every remaining clause quoted
     in (A) is given an explicit unknowns/constraints model chosen by the
     author, its free dimension is computed by the same solver, and its
     modeled dimension is compared with the bridge model's by a pure function
@@ -55,7 +54,7 @@ with their narrow role, not as derived content.
 from __future__ import annotations
 
 AUDIT_TIMEOUT_SEC = 1400
-STDOUT_LIMIT_BYTES = 150_000
+STDOUT_LIMIT_BYTES = 6_000
 AUDIT_INPUT_PATHS = (
     "docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md",
     "docs/SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md",
@@ -218,8 +217,8 @@ ALIAS_PATTERNS = {
 BLOCKER_PATTERN = re.compile(
     r"(?:not\s+retained|not\s+derived|un-?derived|until\s+derived|"
     r"unless\s+a|does\s+not\s+(?:\w+\s+){0,3}(?:derive|supply|close|discharge)|"
-    r"open[\s_]gate|open\s+(?:gate|obligation|derivation)|obligation|"
-    r"conditional|still\s+supplied|remains?\s+supplied|remain\s+supplied|"
+    r"open[-\s_]gate|open\s+(?:gate|obligation|derivation)|obligation|"
+    r"still\s+supplied|remains?\s+supplied|remain\s+supplied|"
     r"must\s+provide|runner\s+convention|new\s+source-action\s+premise|"
     r"not\s+a\s+derived\s+constant|supplies?\s+no)", re.I)
 SENTENCE_SPLIT = re.compile(r"(?<=[.;:])\s+")
@@ -293,7 +292,7 @@ def section_a_quotes(prov: dict) -> dict:
                 rows2.append((path, idx + 1, line.rstrip("\r")))
     deterministic = replay == rows2
     all_recovered = all(r["byte_recovered"] for r in rows)
-    certify("CERT-A/quote-integrity", all_recovered and deterministic,
+    certify("CERT-QUOTE/integrity", all_recovered and deterministic,
             f"rows={len(rows)} byte_recovered={sum(r['byte_recovered'] for r in rows)}"
             f" deterministic={deterministic}")
     lanes: dict[str, int] = {}
@@ -349,7 +348,7 @@ def nullspace(n: int, pivots: dict[int, dict[int, Fraction]]) -> list[list[Fract
 
 
 # ==========================================================================
-# (B) forced vs free, from the four axioms only
+# (B) forced vs free, conditional on a declared finite model
 # ==========================================================================
 FULL_ROUTE_MAX_SITES = 6
 STRUCT_VERIFY_MAX_MASKS = 1 << 14
@@ -452,22 +451,14 @@ def dim_struct_route(dims: tuple[int, ...]) -> dict:
     }
 
 
-AXIOM_CLAUSES = {
-    "REC0": "DECLARED action clause (modeled on the Record axiom's "
-            "empty-record readout sentence, which speaks about the readout I, "
-            "not about any action): A(empty) = 0.",
-    "REC1": "DECLARED action clause (modeled on the Record axiom's count-once "
-            "readout additivity for I; the readout-to-action identification "
-            "is an OPEN bridge, not supplied by the axioms): disjointly "
-            "supported sources compose additively under A.",
-    "LAT": "DECLARED action clause (modeled on the Lattice axiom): the patch "
-           "translation group leaves A invariant.",
-    "QUBIT": "Qubit axiom: the per-site source alphabet is two-valued, so the "
-             "configuration domain is the subset lattice (encoded in the model "
-             "domain, contributing no separate row).",
-    "ADM": "Admissibility axiom: A is single-valued and finite on admissible "
-           "configurations (well-posedness of the model; contributes no linear "
-           "row and is reported as such).",
+MODEL_CLAUSES = {
+    "DOMAIN": "DECLARED model domain: Boolean subsets of sites on a finite "
+              "periodic patch; this is not supplied as a source-action domain "
+              "by the axioms.",
+    "REC0": "DECLARED action clause: A(empty) = 0.",
+    "REC1": "DECLARED action clause: two nonempty disjoint subsets compose "
+            "additively under A.",
+    "LAT": "DECLARED action clause: patch translations leave A invariant.",
 }
 
 
@@ -498,12 +489,12 @@ def section_b_forced_free() -> dict:
         n = len(patch_sites(dims))
         base = {"REC0", "REC1", "LAT"}
         for label, use in (
-            ("all-four-axioms", base),
+            ("all-declared-clauses", base),
             ("drop-LAT", base - {"LAT"}),
             ("drop-REC1", base - {"REC1"}),
             ("drop-REC0", base - {"REC0"}),
             ("drop-REC1-and-LAT", {"REC0"}),
-            ("no-axiom-content", set()),
+            ("no-declared-clauses", set()),
         ):
             dim, rank, _ = dim_full_route(dims, use)
             ablation.append({"dims": list(dims), "sites": n, "clauses": sorted(use),
@@ -516,28 +507,86 @@ def section_b_forced_free() -> dict:
                if a["dims"] == list(dims)}
         priced.append({
             "dims": list(dims),
-            "REC0_removes": got["drop-REC0"] - got["all-four-axioms"],
-            "REC1_removes": got["drop-REC1"] - got["all-four-axioms"],
-            "LAT_removes": got["drop-LAT"] - got["all-four-axioms"],
-            "residual_free_dim": got["all-four-axioms"],
+            "REC0_removes": got["drop-REC0"] - got["all-declared-clauses"],
+            "REC1_removes": got["drop-REC1"] - got["all-declared-clauses"],
+            "LAT_removes": got["drop-LAT"] - got["all-declared-clauses"],
+            "residual_free_dim": got["all-declared-clauses"],
         })
 
     agree = [e for e in per_patch if e["routes_agree"] is not None]
-    routes_ok = all(e["routes_agree"] for e in agree)
+    expected_patch_ids = [list(dims) for dims in PATCHES]
+    patch_identity_ok = [e["dims"] for e in per_patch] == expected_patch_ids
+    structural_ok = all(
+        e["struct"]["triangular_ok"]
+        and e["struct"]["singleton_orbits"] == 1
+        and e["struct"]["dim"] == 1
+        for e in per_patch
+    )
+    full_route_ok = (
+        len(agree) == 7
+        and all(
+            e["routes_agree"]
+            and e["full"] is not None
+            and e["full"]["dim"] == 1
+            and e["full"]["generator_is_popcount"]
+            for e in agree
+        )
+        and all(e["full"] is None and e["routes_agree"] is None
+                for e in per_patch if e["sites"] > FULL_ROUTE_MAX_SITES)
+    )
+    expected_ablation = {
+        ((3,), "all-declared-clauses"): 1,
+        ((3,), "drop-LAT"): 3,
+        ((3,), "drop-REC1"): 3,
+        ((3,), "drop-REC0"): 2,
+        ((3,), "drop-REC1-and-LAT"): 7,
+        ((3,), "no-declared-clauses"): 8,
+        ((4,), "all-declared-clauses"): 1,
+        ((4,), "drop-LAT"): 4,
+        ((4,), "drop-REC1"): 5,
+        ((4,), "drop-REC0"): 2,
+        ((4,), "drop-REC1-and-LAT"): 15,
+        ((4,), "no-declared-clauses"): 16,
+        ((2, 2), "all-declared-clauses"): 1,
+        ((2, 2), "drop-LAT"): 4,
+        ((2, 2), "drop-REC1"): 6,
+        ((2, 2), "drop-REC0"): 2,
+        ((2, 2), "drop-REC1-and-LAT"): 15,
+        ((2, 2), "no-declared-clauses"): 16,
+    }
+    observed_ablation = {
+        (tuple(a["dims"]), a["ablation"]): a["free_dim"] for a in ablation
+    }
+    ablation_exact = observed_ablation == expected_ablation
+    expected_prices = [
+        ((3,), 1, 2, 2, 1),
+        ((4,), 1, 4, 3, 1),
+        ((2, 2), 1, 5, 3, 1),
+    ]
+    observed_prices = [
+        (tuple(p["dims"]), p["REC0_removes"], p["REC1_removes"],
+         p["LAT_removes"], p["residual_free_dim"])
+        for p in priced
+    ]
+    prices_exact = observed_prices == expected_prices
     monotone_ok = all(
         a["free_dim"] >= next(x["free_dim"] for x in ablation
                               if x["dims"] == a["dims"]
-                              and x["ablation"] == "all-four-axioms")
+                              and x["ablation"] == "all-declared-clauses")
         for a in ablation)
-    certify("CERT-B/route-agreement", routes_ok and monotone_ok,
-            f"cross_checked_patches={len(agree)} routes_agree={routes_ok} "
-            f"ablation_monotone={monotone_ok}")
+    exact_contract = (patch_identity_ok and structural_ok and full_route_ok
+                      and ablation_exact and prices_exact and monotone_ok)
+    certify("CERT-FINITE-MAP/exact-contract", exact_contract,
+            f"patches={len(per_patch)}/16 identities={patch_identity_ok} "
+            f"structural={structural_ok} full_routes={len(agree)}/7 "
+            f"full_ok={full_route_ok} ablation={ablation_exact} "
+            f"prices={prices_exact} monotone={monotone_ok}")
     dims_seen = sorted({e["struct"]["dim"] for e in per_patch})
     return {
-        "axiom_clauses": AXIOM_CLAUSES,
+        "model_clauses": MODEL_CLAUSES,
         "per_patch": per_patch,
         "ablation": ablation,
-        "axiom_price": priced,
+        "clause_price": priced,
         "free_dims_observed": dims_seen,
         "bridge_free_dim": max(dims_seen),
         "stream_sha256": digest([per_patch, ablation, priced]),
@@ -565,7 +614,7 @@ def action_vector(lam: Fraction, sig: Fraction) -> tuple[Fraction, ...]:
     return tuple(action(L, lam, sig, r) for L in GRID_L for r in GRID_R)
 
 
-def section_c_subgap(section_b: dict) -> dict:
+def section_c_subgap() -> dict:
     invariant, moving = [], []
     for a, b in product(GRID_SCALE, repeat=2):
         same = all(action_vector(a * lam, b * sig) == action_vector(lam, sig)
@@ -573,16 +622,6 @@ def section_c_subgap(section_b: dict) -> dict:
         (invariant if same else moving).append((a, b))
     inv_set = {(a, b) for a, b in invariant}
     product_one = {(a, b) for a, b in product(GRID_SCALE, repeat=2) if a * b == 1}
-    # structural check: the invariant set is closed under the group operations
-    # it inherits, restricted to pairs whose composite stays on the grid
-    closed = True
-    for (a1, b1) in inv_set:
-        for (a2, b2) in inv_set:
-            if a1 * a2 in GRID_SCALE and b1 * b2 in GRID_SCALE:
-                closed &= (a1 * a2, b1 * b2) in inv_set
-    has_identity = (Fraction(1), Fraction(1)) in inv_set
-    inverses = all((1 / a in GRID_SCALE and 1 / b in GRID_SCALE)
-                   <= ((1 / a, 1 / b) in inv_set) for a, b in inv_set)
 
     # operational half: can any in-scope observable separate the two factors?
     base = [action_vector(lam, sig) for lam in GRID_LAM for sig in GRID_SIG]
@@ -602,22 +641,22 @@ def section_c_subgap(section_b: dict) -> dict:
                     separating.append((str(t), str(lam), str(sig)))
 
     every_pair_classified = len(invariant) + len(moving) == len(GRID_SCALE) ** 2
-    certify("CERT-C/stabilizer-determined",
-            every_pair_classified and closed and has_identity and inverses,
+    sampled_classification_exact = inv_set == product_one
+    certify("CERT-PRODUCT/stabilizer-determined",
+            every_pair_classified and sampled_classification_exact,
             f"grid_pairs={len(GRID_SCALE)**2} invariant={len(inv_set)} "
-            f"moving={len(moving)} closed={closed} identity={has_identity} "
-            f"inverses={inverses}")
+            f"moving={len(moving)} "
+            f"sampled_product_one_exact={sampled_classification_exact}; "
+            "full Q* group follows algebraically from t -> (t, 1/t)")
     return {
         "grid_pairs": len(GRID_SCALE) ** 2,
         "invariant_pairs": len(inv_set),
-        "invariant_equals_product_one": inv_set == product_one,
-        "stabilizer_is_group_on_grid": bool(closed and has_identity and inverses),
+        "sampled_invariant_equals_product_one": sampled_classification_exact,
+        "full_stabilizer_group": "{(t, 1/t): t in Q*}",
         "separating_observables_found": len(separating),
         "separating_examples": separating[:5],
         "base_action_vectors": len(base),
-        "shape_free_dim_after_scale_quotient":
-            section_b["bridge_free_dim"] - 1,
-        "scale_free_dim": 1 if inv_set == product_one else None,
+        "scale_free_dim": 1 if sampled_classification_exact else None,
         "stream_sha256": digest([sorted(map(str, inv_set)), len(separating)]),
     }
 
@@ -697,7 +736,7 @@ def _dim_signed_term() -> tuple[int, int, int]:
     return 1, len(signs), residual_sign_choices
 
 
-def section_d_map(section_b: dict, section_c: dict) -> dict:
+def section_d_map(section_b: dict) -> dict:
     bridge_dim = section_b["bridge_free_dim"]
     kernel_lat = _dim_kernel(False)
     kernel_lat_refl = _dim_kernel(True)
@@ -710,7 +749,7 @@ def section_d_map(section_b: dict, section_c: dict) -> dict:
         {"clause": "GB-S1a linear test-action shape",
          "source": AUDIT_INPUT_PATHS[0], "model": "REC0+REC1+LAT on the config map, "
          "quotiented by the overall scale",
-         "free_dim": section_c["shape_free_dim_after_scale_quotient"],
+         "free_dim": bridge_dim - 1,
          "generator": "none"},
         {"clause": "GB-S1b source-strength normalization (absorbs 1/(4 pi) and "
                    "any unit conversion)",
@@ -768,7 +807,7 @@ def section_d_map(section_b: dict, section_c: dict) -> dict:
         c["role_if_free"] = (
             "forced within this declared finite model; no import at the model "
             "level" if c["free_dim"] == 0 else
-            "modeled import: one real normalization constant in this declared "
+            "modeled import: one scalar normalization parameter in this declared "
             "finite model (equal modeled dimension is NOT mutual implication)"
             if c["modeled_dim_vs_bridge"] == "equal-model-dim" else
             f"modeled import: {c['free_dim']} free parameters in this declared "
@@ -777,7 +816,7 @@ def section_d_map(section_b: dict, section_c: dict) -> dict:
     replay = [classify(c["free_dim"], c["generator"]) for c in clauses]
     pure = replay == [c["modeled_dim_vs_bridge"] for c in clauses]
     modelled = all(isinstance(c["free_dim"], int) for c in clauses)
-    certify("CERT-D/classification-is-computed", pure and modelled,
+    certify("CERT-OBLIGATION-MODELS/computed", pure and modelled,
             f"clauses={len(clauses)} pure_function_replay={pure} "
             f"all_dims_computed={modelled}")
     tally: dict[str, int] = {}
@@ -804,10 +843,10 @@ def section_ast(prov: dict) -> dict:
     floats = sorted({n.value for n in ast.walk(tree)
                      if isinstance(n, ast.Constant) and isinstance(n.value, float)})
     ok = "gate_b_action" in funcs and "gate_b_phi" in funcs
-    certify("CERT-AST/landed-form-present", ok,
+    certify("CERT-AST/name-presence-only", ok,
             f"functions={len(funcs)} gate_b_action={'gate_b_action' in funcs} "
             f"gate_b_phi={'gate_b_phi' in funcs}")
-    return {"path": path, "functions": funcs,
+    return {"path": path, "functions": funcs, "name_presence_only": True,
             "float_literals_in_landed_runner": len(floats),
             "primary_arithmetic_here": "exact Fraction"}
 
@@ -819,180 +858,79 @@ def main() -> int:
     prov = provenance()
     sec_a = section_a_quotes(prov)
     sec_b = section_b_forced_free()
-    sec_c = section_c_subgap(sec_b)
-    sec_d = section_d_map(sec_b, sec_c)
+    sec_c = section_c_subgap()
+    sec_d = section_d_map(sec_b)
     sec_ast = section_ast(prov)
 
     global RECORDING
     RECORDING = False
     random.seed(871)
     replay_b = section_b_forced_free()
-    replay_c = section_c_subgap(replay_b)
+    replay_c = section_c_subgap()
     replay_a = section_a_quotes(prov)
-    replay_d = section_d_map(replay_b, replay_c)
+    replay_d = section_d_map(replay_b)
     RECORDING = True
     det = (replay_b["stream_sha256"] == sec_b["stream_sha256"]
            and replay_c["stream_sha256"] == sec_c["stream_sha256"]
            and replay_a["stream_sha256"] == sec_a["stream_sha256"]
            and replay_d["stream_sha256"] == sec_d["stream_sha256"])
-    certify("CERT-E/determinism", det,
+    certify("CERT-DETERMINISM/section-replay", det,
             f"sections_replayed=4 all_stream_sha_stable={det}")
     elapsed = monotonic() - t0
-    certify("CERT-F/runtime-budget", elapsed < AUDIT_TIMEOUT_SEC,
+    certify("CERT-RUNTIME/budget", elapsed < AUDIT_TIMEOUT_SEC,
             f"elapsed_s={elapsed:.1f} budget_s={AUDIT_TIMEOUT_SEC}")
 
     out: list[str] = []
     w = out.append
-    w("=" * 78)
-    w("CYCLE 871 -- SOURCE-ACTION BRIDGE PRICING AT A DECLARED ANSATZ "
-      "(CONDITIONAL)")
-    w("=" * 78)
-    w("")
-    w("SCOPE NOTE: no artifact named 'retention map' exists on this branch.")
-    w("The bridge is therefore priced against the landed gravity/mass/readout")
-    w("primaries pinned below, and no retention-map row is quoted or invented.")
-    w("")
-    w("-- provenance -----------------------------------------------------------")
-    for r in prov["rows"]:
-        w(f"  [{r['lane']:>7}] {r['path']}")
-        w(f"            sha256={r['sha256'][:16]} exact={r['sha256_exact']} "
-          f"blob={r['git_blob'][:12]} exact={r['git_blob_exact']} "
-          f"access={r['access']}")
-    w(f"  BLOCKLIST={prov['blocklist']} leaks={prov['blocklist_leaks']}")
-    w("")
-    w("-- (A) QUOTED ROWS THAT NAME THE BRIDGE ---------------------------------")
-    w(f"  alias-matching lines: {sec_a['row_count']}   of which name a blocker: "
-      f"{sec_a['blocker_row_count']}")
-    w(f"  blocker rows by lane: {sec_a['blocker_rows_by_lane']}")
-    w("")
-    for r in sec_a["rows"]:
-        if not r["names_blocker"]:
-            continue
-        w(f"  {r['path']}:{r['line_no']}  [{r['lane']}] "
-          f"sha256={r['sha256'][:12]} classes={','.join(r['alias_classes'])}")
-        w(f"    VERBATIM LINE | {r['line_verbatim']}")
-        w(f"    SENTENCE      | {r['sentence']}")
-        w(f"    byte_recovered={r['byte_recovered']}")
-    w("")
-    w("  non-blocker alias lines (context only, not obligations):")
+    w("CYCLE 871 — CONDITIONAL SOURCE-ACTION FINITE MODEL")
+    w(f"PROVENANCE paths={len(prov['rows'])} blocklist_leaks={prov['blocklist_leaks']}")
+    w(f"QUOTE_REPLAY blockers={sec_a['blocker_row_count']} lanes={compact(sec_a['blocker_rows_by_lane'])}")
     for r in sec_a["rows"]:
         if r["names_blocker"]:
-            continue
-        w(f"    {r['path']}:{r['line_no']} | {r['line_verbatim'][:110]}")
-    w("")
-    w("-- (B) DECLARED ACTION ANSATZ: FORCED vs FREE (conditional) -------------")
-    w("  NOTE: the additivity/empty/translation clauses below are DECLARED for")
-    w("  the action functional A, modeled on the Record axiom's readout-I")
-    w("  sentences.  The readout-to-action identification is an OPEN bridge;")
-    w("  every dimension below is conditional on the declared clauses.")
-    for k, v in sec_b["axiom_clauses"].items():
-        w(f"  {k}: {v}")
-    w("")
-    w("  free dimension of the source-to-action map, per patch:")
-    w(f"  {'patch':<12}{'sites':>6}{'unknowns':>10}{'rank':>8}"
-      f"{'full':>6}{'struct':>8}{'agree':>7}")
+            w(f"  {r['path']}:{r['line_no']} [{r['lane']}] sha256={r['sha256'][:12]}")
+            w(f"    VERBATIM LINE | {r['line_verbatim']}")
+    w("MODEL clauses=empty-set-vanishing,nonempty-disjoint-additivity,translation-invariance")
+    w("PATCH_ROWS patch sites unknowns rank full_dim structural_dim agree")
     for e in sec_b["per_patch"]:
-        f = e["full"]
-        w(f"  {str(tuple(e['dims'])):<12}{e['sites']:>6}"
-          f"{(f['unknowns'] if f else 0):>10}{(f['rank'] if f else 0):>8}"
-          f"{(f['dim'] if f else -1):>6}{e['struct']['dim']:>8}"
-          f"{str(e['routes_agree']):>7}")
-    w(f"  free dimensions observed across all patches: "
-      f"{sec_b['free_dims_observed']}")
-    w("")
-    w("  axiom ablation ladder (free parameters removed by each clause):")
-    w(f"  {'patch':<10}{'ablation':<22}{'unknowns':>10}{'rank':>8}{'free_dim':>10}")
-    for a in sec_b["ablation"]:
-        w(f"  {str(tuple(a['dims'])):<10}{a['ablation']:<22}{a['unknowns']:>10}"
-          f"{a['rank']:>8}{a['free_dim']:>10}")
-    w("")
-    w("  price of each axiom clause (free parameters it removes):")
-    for p in sec_b["axiom_price"]:
-        w(f"    patch {tuple(p['dims'])}: REC0 removes {p['REC0_removes']}, "
-          f"REC1 removes {p['REC1_removes']}, LAT removes {p['LAT_removes']}, "
-          f"residual free dim {p['residual_free_dim']}")
-    w("")
-    w("-- (C) NARROWEST SUB-GAP CLOSED ----------------------------------------")
-    w("  Target: the Gate B normalization residual, upgraded from a single")
-    w("  float point-check at 1e-15 to an exact determination of the whole")
-    w("  rescaling stabilizer of L(1 - lambda*sigma/(r+eps)).")
-    w(f"  grid pairs tested (exact rationals): {sec_c['grid_pairs']}")
-    w(f"  pairs acting trivially on every in-scope action value: "
-      f"{sec_c['invariant_pairs']}")
-    w(f"  invariant set equals {{(a,b): a*b = 1}}: "
-      f"{sec_c['invariant_equals_product_one']}")
-    w(f"  invariant set is a group on the grid: "
-      f"{sec_c['stabilizer_is_group_on_grid']}")
-    w(f"  in-scope observables (values, pairwise differences, pairwise ratios) "
-      f"separating lambda from sigma: {sec_c['separating_observables_found']}")
-    w(f"  free dimension of the shape after quotienting the scale: "
-      f"{sec_c['shape_free_dim_after_scale_quotient']}")
-    w(f"  free dimension of the scale itself: {sec_c['scale_free_dim']}")
-    w("")
-    w("-- (D) OBLIGATION MAP FOR THE REST (modeled dimensions only) ------------")
-    w("  Each row is an author-declared finite model; equal or larger modeled")
-    w("  dimension is NOT an implication or logical-strength claim.")
-    w(f"  bridge free dimension used as the yardstick: {sec_d['bridge_free_dim']}")
-    w(f"  {'free_dim':>9}  {'model_dim_vs_bridge':<19} clause")
+        full = e["full"]
+        w(f"  {tuple(e['dims'])} {e['sites']} "
+          f"{full['unknowns'] if full else 0} {full['rank'] if full else 0} "
+          f"{full['dim'] if full else -1} {e['struct']['dim']} "
+          f"{e['routes_agree']}")
+    for p in sec_b["clause_price"]:
+        w(f"MARGINAL patch={tuple(p['dims'])} empty={p['REC0_removes']} "
+          f"nonempty_disjoint={p['REC1_removes']} translation={p['LAT_removes']} "
+          f"residual={p['residual_free_dim']}")
+    w(f"grid pairs tested: {sec_c['grid_pairs']}")
+    w(f"pairs acting trivially: {sec_c['invariant_pairs']}")
+    w(f"separating lambda from sigma: {sec_c['separating_observables_found']}")
+    w(f"free dimension of the scale itself: {sec_c['scale_free_dim']}")
+    w(f"PRODUCT_STABILIZER full={sec_c['full_stabilizer_group']} sampled_exact="
+      f"{sec_c['sampled_invariant_equals_product_one']}")
+    w("OBLIGATION_ROWS free_dim model_dim_vs_bridge clause")
     for c in sec_d["clauses"]:
-        w(f"  {c['free_dim']:>9}  {c['modeled_dim_vs_bridge']:<19} {c['clause']}")
-        w(f"             model : {c['model']}")
-        w(f"             source: {c['source']}")
-        w(f"             role  : {c['role_if_free']}")
-    w(f"  tally: {sec_d['tally']}")
-    w("")
-    w("-- AST evidence on the cited landed runner ------------------------------")
-    w(f"  {sec_ast['path']}")
-    w(f"  functions={len(sec_ast['functions'])} "
-      f"float_literals={sec_ast['float_literals_in_landed_runner']} "
-      f"arithmetic_here={sec_ast['primary_arithmetic_here']}")
-    w("")
-    w("-- FINDINGS (generated from the computed values above) ------------------")
-    fnd = []
-    fnd.append(f"F1 the alias scope carries {sec_a['blocker_row_count']} lines "
-               f"that name the bridge as an open obligation, across lanes "
-               f"{sorted(sec_a['blocker_rows_by_lane'])}.")
-    fnd.append(f"F2 on every one of the {len(sec_b['per_patch'])} patches tested "
-               f"(up to {max(e['sites'] for e in sec_b['per_patch'])} sites, 1D/2D/3D) "
-               f"the DECLARED action clauses leave the source-to-action map "
-               f"with free dimension {sec_b['free_dims_observed']}; two "
-               f"independent routes agree wherever both ran (conditional on "
-               f"the declared ansatz; the readout-to-action bridge is open).")
-    p0 = sec_b["axiom_price"][1]
-    fnd.append(f"F3 on patch {tuple(p0['dims'])} the count-once clause removes "
-               f"{p0['REC1_removes']} free parameters, translation covariance "
-               f"removes {p0['LAT_removes']}, the empty-record clause removes "
-               f"{p0['REC0_removes']}, leaving {p0['residual_free_dim']}.")
-    fnd.append(f"F4 the rescaling stabilizer is exactly the product-one "
-               f"one-parameter family (equal={sec_c['invariant_equals_product_one']}, "
-               f"group={sec_c['stabilizer_is_group_on_grid']}) and "
-               f"{sec_c['separating_observables_found']} in-scope observables "
-               f"separate the two factors.")
-    fnd.append(f"F5 WITHIN the declared ansatz the bridge model's import is "
-               f"{sec_b['bridge_free_dim']} real scalar; its shape content has "
-               f"free dimension {sec_c['shape_free_dim_after_scale_quotient']} "
-               f"there.  This is conditional finite algebra: it does NOT show "
-               f"that the axioms force the physical source-action map's "
-               f"additivity, locality or shape.")
-    fnd.append(f"F6 obligation-map tally over {len(sec_d['clauses'])} clauses "
-               f"(modeled dimension counts, not logical strength): "
-               f"{sec_d['tally']}.")
-    for line in fnd:
-        w("  " + line)
-    w("")
-    w("-- CERTIFICATES --------------------------------------------------------")
+        w(f"  {c['free_dim']} {c['modeled_dim_vs_bridge']} {c['clause']}")
+    w(f"OBLIGATION_TALLY {compact(sec_d['tally'])}")
+    w(f"AST_NAME_PRESENCE path={sec_ast['path']} only=True functions="
+      f"{len(sec_ast['functions'])}")
+    w("RESULT finite-map dimension=1 on 16 declared nonempty transitive patches")
+    w("RESULT product-one stabilizer exact; parameter spaces are not identified")
+    w("RESULT physical source-action bridge remains open")
     for name, ok, detail in CERTS:
-        w(f"  {'PASS' if ok else 'FAIL'}  {name:<34} {detail}")
+        w(f"{'PASS' if ok else 'FAIL'} {name} {detail}")
     npass = sum(1 for _, ok, _ in CERTS if ok)
     nfail = len(CERTS) - npass
     w("")
     w(f"TOTAL: PASS={npass} FAIL={nfail}")
     w(f"VERDICT: {'PASS' if nfail == 0 else 'FAIL'}")
-    text = "\n".join(out)
-    sys.stdout.write(text + "\n")
-    if len(text.encode()) > STDOUT_LIMIT_BYTES:
-        sys.stderr.write("stdout budget exceeded\n")
+    text = "\n".join(out) + "\n"
+    if len(text.encode()) >= STDOUT_LIMIT_BYTES:
+        sys.stderr.write(
+            f"stdout budget exceeded: {len(text.encode())}>="
+            f"{STDOUT_LIMIT_BYTES}\n"
+        )
         return 1
+    sys.stdout.write(text)
     return 0 if nfail == 0 else 1
 
 

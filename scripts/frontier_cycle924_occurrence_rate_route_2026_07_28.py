@@ -20,22 +20,22 @@ The route-closure claims are WITHDRAWN: the occurrence-rate route is OPEN.
 
 This revised runner is SELF-CONTAINED and certifies only:
 
-Q1  EXACT RATIO ARITHMETIC on stipulated recorded values:
+EXACT RATIO ARITHMETIC on stipulated recorded values:
     84/164 = 21/41;  2/3 - 21/41 = 19/123;  16/24 = 2/3.
 
-Q2  CYCLIC-PATCH NULLITY: on Z/m (m = 2..6), the declared clauses
+CYCLIC-PATCH NULLITY: on Z/m (m = 2..6), the declared clauses
     (empty-configuration vanishing, disjoint additivity, cyclic
     translation invariance) leave a solution space of dimension exactly
     1, spanned by the record-count functional -- by exact subset-form
     elimination.
 
-Q3  GROUP EQUALITY: the three-element cyclic rotation group and the Z/3
+GROUP EQUALITY: the three-element cyclic rotation group and the Z/3
     translation group are EQUAL AS PERMUTATION SETS (not merely
     isomorphic).
 
-Q4  THE MENU LINE AND THE IMPORTED NORMALIZATION: the five imported
+THE MENU LINE AND THE IMPORTED NORMALIZATION: the five imported
     alpha-menu values {0, 1/9, 1/3, 1, 2/27} are points on the
-    one-dimensional solution line of Q2; modulo positive rescaling the
+    one-dimensional cyclic-patch solution line; modulo positive rescaling the
     nonzero members are one projective point; imposing the IMPORTED
     inhomogeneous normalization A(full Z/3 configuration) = 2/9 selects
     alpha = 2/27 uniquely (ablation: without it, the whole line
@@ -50,17 +50,14 @@ Fail-closed: every certificate binds `pass` to the predicate it names.
 from __future__ import annotations
 
 AUDIT_TIMEOUT_SEC = 300
-STDOUT_LIMIT_BYTES = 150_000
+STDOUT_LIMIT_BYTES = 6_000
 
 from fractions import Fraction
 from hashlib import sha256
 from itertools import product
 import json
-from pathlib import Path
 import sys
 from time import monotonic
-
-ROOT = Path(__file__).resolve().parents[1]
 
 # ---------------------------------------------------------------------------
 # IMPORTED VALUES (explicitly conditional; sources landed but UNAUDITED on
@@ -99,14 +96,14 @@ def digest(value: object) -> str:
     return sha256(compact(value).encode()).hexdigest()
 
 
-def q1_ratios() -> dict:
+def exact_ratios() -> dict:
     share = Fraction(*RECORDED_SPLIT)
     miss = PHI_TARGET - share
     period_ratio = Fraction(*RECORDED_PERIOD_PAIR)
     ok = (share == Fraction(21, 41)
           and miss == Fraction(19, 123)
           and period_ratio == PHI_TARGET)
-    check("Q1_EXACT_RATIOS", ok,
+    check("EXACT_RATIOS", ok,
           f"84/164={share} 2/3-21/41={miss} 16/24={period_ratio}")
     return {"share": str(share), "miss": str(miss),
             "period_ratio": str(period_ratio)}
@@ -172,20 +169,20 @@ def echelon_dim(m: int) -> tuple[int, bool]:
     return dim, popcount_ok
 
 
-def q2_nullity() -> dict:
+def cyclic_patch_nullity() -> dict:
     patches, ok = [], True
     for m in range(2, 7):
         dim, popcount_ok = echelon_dim(m)
         patches.append({"patch": f"Z/{m}", "free_dim": dim,
                         "spanned_by_record_count": popcount_ok})
         ok &= dim == 1 and popcount_ok
-    check("Q2_CYCLIC_PATCH_NULLITY", ok,
+    check("CYCLIC_PATCH_NULLITY", ok,
           f"patches={[(p['patch'], p['free_dim']) for p in patches]} "
           f"all_dim_1_spanned_by_count={ok}")
     return {"patches": patches}
 
 
-def q3_group_equality() -> dict:
+def group_equality() -> dict:
     rot = tuple((i + 1) % 3 for i in range(3))
     c3 = {tuple(range(3))}
     cur = rot
@@ -196,13 +193,13 @@ def q3_group_equality() -> dict:
     for t in range(3):
         translations.add(tuple((i + t) % 3 for i in range(3)))
     equal = c3 == translations
-    check("Q3_GROUP_EQUALITY", equal,
+    check("GROUP_EQUALITY", equal,
           f"C3_rotations={sorted(c3)} Z3_translations={sorted(translations)} "
           f"equal_as_permutation_sets={equal}")
     return {"equal_as_permutation_sets": equal}
 
 
-def q4_menu_line() -> dict:
+def menu_line_normalization() -> dict:
     # every alpha gives the solution alpha * count on Z/3; verify the
     # declared clauses directly for each menu member
     m = 3
@@ -239,7 +236,7 @@ def q4_menu_line() -> dict:
           and forced_alpha == Fraction(2, 27)
           and survivors == ["alpha_2_27"]
           and len(ablation_survivors) == 5)
-    check("Q4_MENU_LINE_AND_NORMALIZATION", ok,
+    check("MENU_LINE_AND_NORMALIZATION", ok,
           f"all_menu_members_on_the_line={all_solutions} "
           f"nonzero_members_one_projective_point={one_projective_point} "
           f"imported_normalization_forces_alpha={forced_alpha} "
@@ -250,11 +247,11 @@ def q4_menu_line() -> dict:
 
 
 def run_all() -> dict:
-    a = q1_ratios()
-    b = q2_nullity()
-    c = q3_group_equality()
-    d = q4_menu_line()
-    return {"q1": a, "q2": b, "q3": c, "q4": d,
+    a = exact_ratios()
+    b = cyclic_patch_nullity()
+    c = group_equality()
+    d = menu_line_normalization()
+    return {"exact_ratios": a, "cyclic_patch": b, "group": c, "menu": d,
             "science_digest": digest([a, b, c, d,
                                       {k: str(v) for k, v
                                        in ALPHA_MENU.items()}])}
@@ -269,9 +266,9 @@ def main() -> int:
     CERTS.clear()
     CERTS.extend(saved)
     det = first["science_digest"] == second["science_digest"]
-    check("Q5_DETERMINISM", det, f"double_run_digest_equal={det}")
+    check("DETERMINISM", det, f"double_run_digest_equal={det}")
     elapsed = monotonic() - t0
-    check("Q6_RUNTIME", elapsed < AUDIT_TIMEOUT_SEC,
+    check("RUNTIME", elapsed < AUDIT_TIMEOUT_SEC,
           f"elapsed_s={elapsed:.1f} budget_s={AUDIT_TIMEOUT_SEC}")
 
     out: list[str] = []
@@ -284,17 +281,17 @@ def main() -> int:
     w("SCOPE: self-contained.  The occurrence-to-threefold-readout route is")
     w("OPEN -- no route-closure, terminality, or sole-remaining-route claim")
     w("is made.  The imported values 2/3, 2/9 and the alpha menu come from")
-    w("UNAUDITED sources and every Q4 statement is conditional on them.")
+    w("UNAUDITED sources and every menu-line statement is conditional on them.")
     w("")
     w("CLAIMS_JSON: " + compact({
-        "share": first["q1"]["share"],
-        "miss": first["q1"]["miss"],
-        "period_ratio": first["q1"]["period_ratio"],
+        "share": first["exact_ratios"]["share"],
+        "miss": first["exact_ratios"]["miss"],
+        "period_ratio": first["exact_ratios"]["period_ratio"],
         "patch_dims": [(p["patch"], p["free_dim"])
-                       for p in first["q2"]["patches"]],
-        "group_equality": first["q3"]["equal_as_permutation_sets"],
-        "forced_alpha": first["q4"]["forced_alpha"],
-        "survivors": first["q4"]["survivors_under_imported_normalization"],
+                       for p in first["cyclic_patch"]["patches"]],
+        "group_equality": first["group"]["equal_as_permutation_sets"],
+        "forced_alpha": first["menu"]["forced_alpha"],
+        "survivors": first["menu"]["survivors_under_imported_normalization"],
         "science_digest": first["science_digest"],
     }))
     w("")
@@ -306,63 +303,14 @@ def main() -> int:
     w("")
     w(f"TOTAL: PASS={npass} FAIL={nfail}")
     w(f"VERDICT: {'PASS' if nfail == 0 else 'FAIL'}")
-    text = "\n".join(out)
-    sys.stdout.write(text + "\n")
-
-    receipt = {
-        "cycle": 924,
-        "claim_type": "bounded_theorem",
-        "headline": ("occurrence-rate-route arithmetic: 84/164 = 21/41 "
-                     "misses the imported 2/3 target by exactly 19/123; the "
-                     "declared clause family on cyclic patches Z/2..Z/6 has "
-                     "free dimension 1 spanned by the record count; the "
-                     "three-element rotation and translation groups are "
-                     "equal as permutation sets; the five imported "
-                     "alpha-menu values lie on that one line and the "
-                     "imported normalization 2/9 selects 2/27.  The "
-                     "occurrence route itself is OPEN; no closure claim"),
-        "imported_values": {
-            "phi_target": str(PHI_TARGET),
-            "fixed_locus_normalization": str(L_FIXED_LOCUS),
-            "alpha_menu": {k: str(v) for k, v in ALPHA_MENU.items()},
-            "status": ("imported from landed but UNAUDITED sources (the "
-                       "fixed-locus theorem note and the two July no-go "
-                       "notes); explicitly conditional; not retained, not "
-                       "Nature-grade"),
-        },
-        "stipulated_scope_inputs": {
-            "recorded_split": list(RECORDED_SPLIT),
-            "recorded_period_pair": list(RECORDED_PERIOD_PAIR),
-            "status": "recorded history from uncertified sibling "
-                      "computations; arithmetic only",
-        },
-        "route_status": ("the occurrence-to-threefold-readout route is "
-                         "OPEN.  Withdrawn: referent-gap, arity-mismatch "
-                         "and terminality closure claims (review findings; "
-                         "vocabulary scans and binary local menus do not "
-                         "exclude derivable maps or aggregates)"),
-        "results": first,
-        "certificates": {n: {"pass": ok, "detail": d} for n, ok, d in CERTS},
-        "all_certificates_pass": nfail == 0,
-        "review_loop": {
-            "iteration": 1,
-            "disposition": "FIX_THEN_PROCEED",
-            "reviewer": "Sol",
-            "date": "2026-08-08",
-            "fix": ("self-contained rewrite: route-closure claims "
-                    "withdrawn; false-PASS checks replaced by fail-closed "
-                    "predicates; legacy monolith-loading gate removed; "
-                    "imports marked unaudited-conditional"),
-        },
-        "science_digest": first["science_digest"],
-    }
-    (ROOT / "outputs" /
-     "occurrence_rate_route_cycle924_receipt_2026_07_28.json").write_text(
-        json.dumps(receipt, indent=1, sort_keys=True) + "\n")
-
-    if len(text.encode()) > STDOUT_LIMIT_BYTES:
-        sys.stderr.write("stdout budget exceeded\n")
+    text = "\n".join(out) + "\n"
+    if len(text.encode()) >= STDOUT_LIMIT_BYTES:
+        sys.stderr.write(
+            f"stdout budget exceeded: {len(text.encode())}>="
+            f"{STDOUT_LIMIT_BYTES}\n"
+        )
         return 1
+    sys.stdout.write(text)
     return 0 if nfail == 0 else 1
 
 

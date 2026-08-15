@@ -1,51 +1,26 @@
 #!/usr/bin/env python3
 """Independent adversarial checker for the Cycle-871 source-action pricing.
 
-This checker is specified to REFUTE.  Every hunt below is written to succeed
-when the primary is WRONG; the checker passes only when all of them come back
-empty.  Six refutation targets:
+This checker is specified to REFUTE. It independently attacks the finite-map
+dimension and cardinality form, the normalization stabilizer, all eight
+obligation-model dimensions, exact quote replay, and deterministic execution.
+Every advertised primary row and scalar headline is required exactly once.
+Missing, duplicate, unchecked, or corrupted claims are refutations.
 
-R1  the free dimension.  The primary solved a sparse rational system by
-    Gaussian elimination.  This checker never solves anything: it enumerates
-    EVERY map from configurations to F_p by brute force and counts how many
-    satisfy the axiom constraints.  A solution space of dimension d must have
-    exactly p**d members.  Any other count refutes the primary's dimension.
-
-R2  the forced form.  Among those brute-forced solutions, any map that is not
-    a constant multiple of the record count refutes the claim that the axioms
-    force the additive uniform shape.
-
-R3  the normalization stabilizer.  The primary tested a fixed 10x10 rational
-    grid.  This checker draws random rationals from a seeded PRNG on a much
-    wider range and hunts in both directions: a rescaling with product not one
-    that nevertheless leaves the action fixed, and a rescaling with product one
-    that moves it.  It also builds a different observable family from the
-    primary's -- squares, pairwise products and four-point cross ratios -- and
-    hunts for one that separates the two factors.
-
-R4  the obligation-map dimensions.  Recomputed by union-find orbit counting
-    instead of elimination.  Any disagreement with the numbers parsed out of
-    the primary's pinned stdout refutes the map.
-
-R5  the quotes.  Every "VERBATIM LINE" the primary printed is re-read from the
-    SHA-pinned source at the line number the primary claimed.  A mismatch
-    refutes the quoting.
-
-R6  determinism of this checker's own hunts.
-
-Nothing from the primary lineage is executed: the primary runner, its pinned
-stdout and the eight sources it cited are SHA-pinned text evidence behind a
-meta-path import firewall.  The arithmetic route is independent as well --
-integers modulo small primes and union-find here, exact rationals and Gaussian
-elimination there -- so a bug in one cannot reproduce itself in the other.
+The SHA-pinned primary is executed once in a subprocess so the checker tests
+fresh output; it is never imported.  The cited sources remain SHA-pinned text
+evidence behind a meta-path import firewall.  The arithmetic route is
+independent -- integers modulo small primes and union-find here, exact
+rationals and Gaussian elimination there -- so a bug in one route cannot
+reproduce itself in the other.  Eight hostile controls must be killed before a
+clean run can pass.
 """
 from __future__ import annotations
 
 AUDIT_TIMEOUT_SEC = 1400
-STDOUT_LIMIT_BYTES = 150_000
+STDOUT_LIMIT_BYTES = 6_000
 AUDIT_INPUT_PATHS = (
     "scripts/frontier_cycle871_source_action_bridge_pricing_2026_07_28.py",
-    "logs/runner-cache/frontier_cycle871_source_action_bridge_pricing_2026_07_28.txt",
     "docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md",
     "docs/SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md",
     "docs/SIGNED_GRAVITY_APS_WALD_GAUSS_BRIDGE_AUDIT_NOTE.md",
@@ -55,6 +30,7 @@ AUDIT_INPUT_PATHS = (
     "docs/AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md",
 )
 
+from collections import Counter
 from fractions import Fraction
 from hashlib import sha1, sha256
 import importlib.abc
@@ -63,50 +39,48 @@ import json
 from pathlib import Path
 import random
 import re
+import subprocess
 import sys
 from time import monotonic
 
 ROOT = Path(__file__).resolve().parents[1]
-PRIMARY_PATH, PRIMARY_CACHE = AUDIT_INPUT_PATHS[0], AUDIT_INPUT_PATHS[1]
+PRIMARY_PATH = AUDIT_INPUT_PATHS[0]
 PYTHON_PATHS = tuple(p for p in AUDIT_INPUT_PATHS if p.endswith(".py"))
 BLOCKLISTED_MODULES = tuple(Path(p).stem for p in PYTHON_PATHS)
 EXPECTED_SHA256 = {
     AUDIT_INPUT_PATHS[0]:
-        "230cdeac9390f2e7dc67d3dd44b5c7fe3bdf90c8dcad83d9654871aa15b44b0f",
+        "f3434775f604ff6a2a3ed4aa099f0f2b32238f162b9b35b1ed047b005efb54e8",
     AUDIT_INPUT_PATHS[1]:
-        "5fa8607c740ab7895819e9ff6e8f4b0fcd078323f7e2c3ecb519dd48719fec90",
-    AUDIT_INPUT_PATHS[2]:
         "e246730a808174752f2bb1e113a89bccdf691db81b76bc1e2f6347ab027b0116",
-    AUDIT_INPUT_PATHS[3]:
+    AUDIT_INPUT_PATHS[2]:
         "af7bbdfda8831df1c86ec7ca9cf62b6cbdd920f4dca1a4cb03e7f389c73e386a",
-    AUDIT_INPUT_PATHS[4]:
+    AUDIT_INPUT_PATHS[3]:
         "cb19cb3441136c4a3948cdd12cb5d4d9b82478988ad1047294230501039184cd",
-    AUDIT_INPUT_PATHS[5]:
+    AUDIT_INPUT_PATHS[4]:
         "5de15beb514fc3eab952992932907a159fa33232caef1d135d14e07f46c6a508",
-    AUDIT_INPUT_PATHS[6]:
+    AUDIT_INPUT_PATHS[5]:
         "c03409f79768b8f59b8a07b4a2571a1ea554d4cb40fd16bcbee4b14b02fd4d69",
-    AUDIT_INPUT_PATHS[7]:
+    AUDIT_INPUT_PATHS[6]:
         "ef5e0280ab8bc7ae132f609635b893e208628650720eade6f27d164290a053d1",
-    AUDIT_INPUT_PATHS[8]:
+    AUDIT_INPUT_PATHS[7]:
         "4d742bcc68a1e7cdb154b366e671f576e9b719b3206445b97666c812a790e58c",
 }
 EXPECTED_GIT_BLOBS = {
-    AUDIT_INPUT_PATHS[0]: "fd6381d91b48cca1c3fd2fdddeefc3f1172c8a44",
-    AUDIT_INPUT_PATHS[1]: "c2132438570907f6f6900003bed692353f34be45",
-    AUDIT_INPUT_PATHS[2]: "2c9e1d0c75ea801f25fa0f9cfa92c67553770b4c",
-    AUDIT_INPUT_PATHS[3]: "36c2b9dd0b799f7102c7685db5e4fc5121b933ce",
-    AUDIT_INPUT_PATHS[4]: "f2256fe7c1bfd5099e462688cc56cd48c7956a63",
-    AUDIT_INPUT_PATHS[5]: "ecfa17055c67820fd426e7b60367787bc9d45c93",
-    AUDIT_INPUT_PATHS[6]: "b4d3526079afd729319f236c3b246365007daff9",
-    AUDIT_INPUT_PATHS[7]: "b9f089eef2395145f54c85103a770ed7d096ea48",
-    AUDIT_INPUT_PATHS[8]: "9a449956422a5687b5b1346f428c9e4e35489038",
+    AUDIT_INPUT_PATHS[0]: "3e6684727548ed987054b0d1d8795ac90b247557",
+    AUDIT_INPUT_PATHS[1]: "2c9e1d0c75ea801f25fa0f9cfa92c67553770b4c",
+    AUDIT_INPUT_PATHS[2]: "36c2b9dd0b799f7102c7685db5e4fc5121b933ce",
+    AUDIT_INPUT_PATHS[3]: "f2256fe7c1bfd5099e462688cc56cd48c7956a63",
+    AUDIT_INPUT_PATHS[4]: "ecfa17055c67820fd426e7b60367787bc9d45c93",
+    AUDIT_INPUT_PATHS[5]: "b4d3526079afd729319f236c3b246365007daff9",
+    AUDIT_INPUT_PATHS[6]: "b9f089eef2395145f54c85103a770ed7d096ea48",
+    AUDIT_INPUT_PATHS[7]: "9a449956422a5687b5b1346f428c9e4e35489038",
 }
 PRIMARY_REQUIRED_MARKERS = (
     "section_a_quotes",
     "section_b_forced_free",
     "section_c_subgap",
     "section_d_map",
-    "AXIOM_CLAUSES",
+    "MODEL_CLAUSES",
     "ALIAS_PATTERNS",
 )
 
@@ -189,6 +163,37 @@ QUOTE_HEAD = re.compile(r"^\s+(\S+\.md):(\d+)\s+\[(\w+)\]\s+sha256=([0-9a-f]{12}
 QUOTE_LINE = re.compile(r"^\s{4}VERBATIM LINE \| (.*)$")
 NUM_AFTER = re.compile(r":\s*(-?\d+)\s*$")
 
+EXPECTED_PATCH_DIMS = (
+    (2,), (3,), (4,), (5,), (6,), (2, 2), (2, 3), (7,), (8,), (10,),
+    (12,), (3, 3), (2, 2, 2), (2, 2, 3), (4, 4), (3, 3, 3),
+)
+EXPECTED_MAP = {
+    "GB-S1a linear test-action shape": (0, "smaller-model-dim"),
+    "GB-S1b source-strength normalization (absorbs 1/(4 pi) and any unit conversion)":
+        (1, "equal-model-dim"),
+    "physical Newton constant / SI normalization": (1, "equal-model-dim"),
+    "finite-core scalar 1/(r+0.1) vs the exact periodic graph-Laplacian Green solution":
+        (5, "larger-model-dim"),
+    "GB-S2 phase-propagation kernel and detector-window readout":
+        (8, "larger-model-dim"),
+    "GB-S3 label/offset generated-connectivity family":
+        (4, "larger-model-dim"),
+    "signed-gravity locked source-action term (scale plus locked orientation)":
+        (1, "equal-model-dim"),
+    "h-class/h-unit density-to-angle readout identity":
+        (2, "larger-model-dim"),
+}
+EXPECTED_QUOTES = {
+    ("docs/GATE_B_WEAK_FIELD_SOURCE_ACTION_INTERFACE_NOTE_2026-06-16.md", 104),
+    ("docs/SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md", 247),
+    ("docs/SIGNED_GRAVITY_APS_LOCKED_SOURCE_ACTION_PROPOSAL_NOTE.md", 527),
+    ("docs/SIGNED_GRAVITY_APS_WALD_GAUSS_BRIDGE_AUDIT_NOTE.md", 205),
+    ("docs/SIGNED_GRAVITY_RESPONSE_BACKLOG_2026-04-25.md", 92),
+    ("docs/SIGNED_GRAVITY_RESPONSE_BACKLOG_2026-04-25.md", 472),
+    ("docs/YT_LSP_SOURCE_SCALE_BOUNDARY_AND_STRICT_RESPONSE_CONTRACT_NOTE_2026-05-26.md", 96),
+    ("docs/AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md", 21),
+}
+
 
 def parse_primary(cache_text: str) -> dict:
     lines = cache_text.split("\n")
@@ -235,13 +240,85 @@ def parse_primary(cache_text: str) -> dict:
         "grid_pairs": find_num("grid pairs tested"),
         "separating": find_num("separating lambda from sigma"),
         "scale_free_dim": find_num("free dimension of the scale itself"),
-        "shape_free_dim": find_num("after quotienting the scale"),
         "verdict_pass": "VERDICT: PASS" in cache_text,
     }
 
 
+def validate_primary_contract(claims: dict) -> list[str]:
+    """Bind every advertised primary row and scalar headline fail closed."""
+    bad: list[str] = []
+    expected_patch_keys = [str(d).replace(" ", "") for d in EXPECTED_PATCH_DIMS]
+    patch_keys = [r["patch"].replace(" ", "") for r in claims["patches"]]
+    if Counter(patch_keys) != Counter(expected_patch_keys):
+        bad.append("finite-map patch identities/count are not exact and unique")
+    for row in claims["patches"]:
+        key = row["patch"].replace(" ", "")
+        if key not in expected_patch_keys:
+            continue
+        dims = EXPECTED_PATCH_DIMS[expected_patch_keys.index(key)]
+        sites = 1
+        for d in dims:
+            sites *= d
+        small = sites <= 6
+        expected = {
+            "sites": sites,
+            "unknowns": (1 << sites) if small else 0,
+            "rank": ((1 << sites) - 1) if small else 0,
+            "full_dim": 1 if small else -1,
+            "struct_dim": 1,
+            "agree": "True" if small else "None",
+        }
+        if any(row[name] != value for name, value in expected.items()):
+            bad.append(f"finite-map row corrupted: {key}")
+
+    map_keys = [r["clause"] for r in claims["map"]]
+    if Counter(map_keys) != Counter(EXPECTED_MAP.keys()):
+        bad.append("obligation-model identities/count are not exact and unique")
+    for row in claims["map"]:
+        expected = EXPECTED_MAP.get(row["clause"])
+        if expected and (row["free_dim"], row["strength"]) != expected:
+            bad.append(f"obligation-model row corrupted: {row['clause']}")
+
+    quote_keys = [(q["path"], q["line_no"]) for q in claims["quotes"]]
+    if Counter(quote_keys) != Counter(EXPECTED_QUOTES):
+        bad.append("quote identities/count are not exact and unique")
+    expected_scalars = {
+        "grid_pairs": 100,
+        "invariant_pairs": 10,
+        "separating": 0,
+        "scale_free_dim": 1,
+    }
+    for name, expected in expected_scalars.items():
+        if claims.get(name) != expected:
+            bad.append(f"stabilizer headline corrupted: {name}")
+    if not claims["verdict_pass"]:
+        bad.append("primary verdict is not PASS")
+    return bad
+
+
+def run_primary() -> str:
+    proc = subprocess.run(
+        [sys.executable, str(ROOT / PRIMARY_PATH)],
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+        timeout=AUDIT_TIMEOUT_SEC,
+        check=False,
+    )
+    stdout_bytes = len(proc.stdout.encode())
+    ok = (proc.returncode == 0 and "VERDICT: PASS" in proc.stdout
+          and stdout_bytes <= STDOUT_LIMIT_BYTES)
+    certify(
+        "CERT-PRIMARY/fresh-execution",
+        ok,
+        f"returncode={proc.returncode} stdout_bytes={stdout_bytes} "
+        f"stderr_bytes={len(proc.stderr.encode())}",
+    )
+    return proc.stdout
+
+
 # ==========================================================================
-# R1 / R2 -- brute-force solution counting over F_p
+# Independent finite-map dimension and cardinality-form checks
 # ==========================================================================
 BRUTE = (((2,), 2), ((2,), 3), ((2,), 5), ((2,), 7),
          ((3,), 2), ((3,), 3),
@@ -298,7 +375,30 @@ def brute_force_count(dims, p):
     return solutions, off_shape
 
 
-def hunt_r1_r2(claims: dict) -> dict:
+def singleton_translation_orbits(dims) -> int:
+    sites = sites_of(dims)
+    parent = list(range(len(sites)))
+    index = {site: i for i, site in enumerate(sites)}
+
+    def find(i):
+        while parent[i] != i:
+            parent[i] = parent[parent[i]]
+            i = parent[i]
+        return i
+
+    for axis in range(len(dims)):
+        for site in sites:
+            moved = tuple(
+                (site[k] + (1 if k == axis else 0)) % dims[k]
+                for k in range(len(dims))
+            )
+            a, b = find(index[site]), find(index[moved])
+            if a != b:
+                parent[a] = b
+    return len({find(i) for i in range(len(sites))})
+
+
+def hunt_finite_map(claims: dict) -> dict:
     claimed = {}
     for row in claims["patches"]:
         claimed[row["patch"].replace(" ", "")] = row["struct_dim"]
@@ -318,16 +418,29 @@ def hunt_r1_r2(claims: dict) -> dict:
                "implied_dim": implied, "primary_dim": want,
                "off_shape_solutions": len(off)}
         if want is not None and implied != want:
-            refutations.append(f"R1 dim mismatch {dims} mod {p}: brute "
+            refutations.append(f"finite-map dimension mismatch {dims} mod {p}: brute "
                                f"count={count} implies {implied}, primary {want}")
         if off:
-            refutations.append(f"R2 non-uniform solution found on {dims} mod {p}")
+            refutations.append(f"non-cardinality solution found on {dims} mod {p}")
         results.append(row)
-    return {"rows": results, "refutations": refutations}
+    structural = []
+    for dims in EXPECTED_PATCH_DIMS:
+        key = str(dims).replace(" ", "")
+        mine = singleton_translation_orbits(dims)
+        theirs = claimed.get(key)
+        structural.append({"dims": list(dims), "independent": mine,
+                           "primary": theirs})
+        if theirs != mine:
+            refutations.append(
+                f"singleton-orbit dimension mismatch {dims}: "
+                f"independent={mine} primary={theirs}"
+            )
+    return {"rows": results, "structural_rows": structural,
+            "refutations": refutations}
 
 
 # ==========================================================================
-# R3 -- randomized wide-grid stabilizer hunt with a different observable family
+# Randomized wide-grid product-stabilizer hunt
 # ==========================================================================
 EPS = Fraction(1, 10)
 
@@ -336,8 +449,8 @@ def act(L, lam, sig, r):
     return L * (1 - lam * sig / (r + EPS))
 
 
-def vec(L, lam, sig, rs):
-    return tuple(act(L, lam, sig, r) for r in rs)
+def vec(L, lam, sig, rs, action_fn=act):
+    return tuple(action_fn(L, lam, sig, r) for r in rs)
 
 
 def rand_frac(rng, lo=-9, hi=9, nonzero=True):
@@ -359,7 +472,7 @@ def alt_observables(v):
     return tuple(obs)
 
 
-def hunt_r3(trials: int = 4000) -> dict:
+def hunt_product_stabilizer(trials: int = 4000, action_fn=act) -> dict:
     rng = random.Random(0x871C3)
     bigger, broken, separating = [], [], []
     for _ in range(trials):
@@ -367,21 +480,21 @@ def hunt_r3(trials: int = 4000) -> dict:
         L = rand_frac(rng, 1, 9)
         lam, sig = rand_frac(rng), rand_frac(rng)
         a, b = rand_frac(rng), rand_frac(rng)
-        base = vec(L, lam, sig, rs)
-        if vec(L, a * lam, b * sig, rs) == base and a * b != 1:
+        base = vec(L, lam, sig, rs, action_fn)
+        if vec(L, a * lam, b * sig, rs, action_fn) == base and a * b != 1:
             bigger.append((str(a), str(b)))
         t = rand_frac(rng)
-        if vec(L, t * lam, sig / t, rs) != base:
+        if vec(L, t * lam, sig / t, rs, action_fn) != base:
             broken.append((str(t), str(lam), str(sig)))
-        if alt_observables(vec(L, t * lam, sig / t, rs)) != alt_observables(base):
+        if alt_observables(vec(L, t * lam, sig / t, rs, action_fn)) != alt_observables(base):
             separating.append((str(t), str(lam), str(sig)))
     refutations = []
     if bigger:
-        refutations.append(f"R3 stabilizer larger than product-one: {bigger[:3]}")
+        refutations.append(f"stabilizer larger than product-one: {bigger[:3]}")
     if broken:
-        refutations.append(f"R3 product-one rescaling moved the action: {broken[:3]}")
+        refutations.append(f"product-one rescaling moved the action: {broken[:3]}")
     if separating:
-        refutations.append(f"R3 an observable separates the factors: "
+        refutations.append(f"an observable separates the factors: "
                            f"{separating[:3]}")
     return {"trials": trials, "larger_stabilizer_hits": len(bigger),
             "broken_invariance_hits": len(broken),
@@ -390,8 +503,30 @@ def hunt_r3(trials: int = 4000) -> dict:
             "stream_sha256": digest([len(bigger), len(broken), len(separating)])}
 
 
+def check_stabilizer_headlines(claims: dict) -> dict:
+    scales = (
+        Fraction(-2), Fraction(-1), Fraction(-1, 2), Fraction(1, 3),
+        Fraction(1, 2), Fraction(2, 3), Fraction(1), Fraction(3, 2),
+        Fraction(2), Fraction(3),
+    )
+    grid_pairs = len(scales) ** 2
+    invariant_pairs = sum(a * b == 1 for a, b in product(scales, repeat=2))
+    expected = {
+        "grid_pairs": grid_pairs,
+        "invariant_pairs": invariant_pairs,
+        "separating": 0,
+        "scale_free_dim": 1,
+    }
+    bad = [
+        f"stabilizer headline mismatch {name}: independent={value} "
+        f"primary={claims.get(name)}"
+        for name, value in expected.items() if claims.get(name) != value
+    ]
+    return {"independent": expected, "refutations": bad}
+
+
 # ==========================================================================
-# R4 -- obligation-map dimensions by union-find orbit counting
+# Obligation-model dimensions by union-find orbit counting
 # ==========================================================================
 MAP_PATCH = (3, 3)
 
@@ -414,7 +549,7 @@ def orbits(items, movers) -> int:
     return len({find(x) for x in items})
 
 
-def hunt_r4(claims: dict) -> dict:
+def hunt_obligation_models(claims: dict) -> dict:
     d = MAP_PATCH
     sites = sites_of(d)
     tr = [lambda pr, i=i: (
@@ -440,77 +575,168 @@ def hunt_r4(claims: dict) -> dict:
                   for s in sites})
 
     by_clause = {c["clause"]: c["free_dim"] for c in claims["map"]}
+    independent = {
+        "GB-S1a linear test-action shape": 0,
+        "GB-S1b source-strength normalization (absorbs 1/(4 pi) and any unit conversion)": 1,
+        "physical Newton constant / SI normalization": 1,
+        "finite-core scalar 1/(r+0.1) vs the exact periodic graph-Laplacian Green solution":
+            kernel_refl,
+        "GB-S2 phase-propagation kernel and detector-window readout":
+            kernel_refl + window,
+        "GB-S3 label/offset generated-connectivity family": conn,
+        "signed-gravity locked source-action term (scale plus locked orientation)": 1,
+        "h-class/h-unit density-to-angle readout identity": 2,
+    }
     checks, refutations = [], []
-    for label, mine, needle in (
-        ("kernel (translation+reflection)", kernel_refl, "finite-core scalar"),
-        ("kernel+window", kernel_refl + window, "GB-S2 phase-propagation"),
-        ("connectivity", conn, "GB-S3 label/offset"),
-    ):
-        theirs = next((v for k, v in by_clause.items() if needle in k), None)
+    for label, mine in independent.items():
+        theirs = by_clause.get(label)
         checks.append({"model": label, "independent": mine, "primary": theirs})
-        if theirs is not None and theirs != mine:
-            refutations.append(f"R4 {label}: union-find gives {mine}, "
-                               f"primary printed {theirs}")
+        if theirs != mine:
+            refutations.append(f"obligation-model mismatch {label}: "
+                               f"independent={mine} primary={theirs}")
     return {"kernel_translation_only": kernel_lat, "checks": checks,
             "window_classes": window, "refutations": refutations}
 
 
 # ==========================================================================
-# R5 -- re-read every quoted line from the pinned source
+# Re-read every required quote from pinned source bytes
 # ==========================================================================
-def hunt_r5(claims: dict, ev: dict) -> dict:
+def hunt_quote_replay(claims: dict, ev: dict) -> dict:
     bad, checked = [], 0
     for q in claims["quotes"]:
         payload = ev["payloads"].get(q["path"])
         if payload is None:
-            bad.append(f"R5 quoted path not in pinned evidence: {q['path']}")
+            bad.append(f"quoted path not in pinned evidence: {q['path']}")
             continue
         lines = payload.decode("utf-8").split("\n")
         idx = q["line_no"] - 1
         checked += 1
         if not (0 <= idx < len(lines)):
-            bad.append(f"R5 line {q['line_no']} out of range in {q['path']}")
+            bad.append(f"quoted line {q['line_no']} out of range in {q['path']}")
             continue
         if lines[idx].rstrip("\r") != q["line_verbatim"]:
-            bad.append(f"R5 mismatch {q['path']}:{q['line_no']}")
+            bad.append(f"quoted-byte mismatch {q['path']}:{q['line_no']}")
         if not sha256(payload).hexdigest().startswith(q["sha12"]):
-            bad.append(f"R5 sha prefix mismatch for {q['path']}")
+            bad.append(f"quote SHA prefix mismatch for {q['path']}")
     return {"quotes_checked": checked, "refutations": bad}
+
+
+# ==========================================================================
+# Hostile controls -- each mutation must trigger the corresponding hunt
+# ==========================================================================
+def hostile_mutation_controls(claims: dict, ev: dict) -> dict:
+    controls = []
+
+    dim_claims = json.loads(json.dumps(claims))
+    dim_claims["patches"][0]["struct_dim"] += 1
+    controls.append((
+        "claimed-dimension-off-by-one",
+        bool(validate_primary_contract(dim_claims)
+             or hunt_finite_map(dim_claims)["refutations"]),
+    ))
+
+    map_claims = json.loads(json.dumps(claims))
+    target = next(
+        row for row in map_claims["map"]
+        if "GB-S2 phase-propagation" in row["clause"]
+    )
+    target["free_dim"] += 1
+    controls.append((
+        "obligation-model-count-off-by-one",
+        bool(validate_primary_contract(map_claims)
+             or hunt_obligation_models(map_claims)["refutations"]),
+    ))
+
+    quote_claims = json.loads(json.dumps(claims))
+    quote_claims["quotes"][0]["line_verbatim"] += "!"
+    controls.append((
+        "quoted-byte-changed",
+        bool(hunt_quote_replay(quote_claims, ev)["refutations"]),
+    ))
+
+    def additive_instead_of_product(L, lam, sig, r):
+        return L * (1 - (lam + sig) / (r + EPS))
+
+    controls.append((
+        "action-product-dependence-changed",
+        bool(hunt_product_stabilizer(256, additive_instead_of_product)["refutations"]),
+    ))
+
+    omitted = json.loads(json.dumps(claims))
+    omitted["patches"].pop()
+    controls.append(("required-row-omitted", bool(validate_primary_contract(omitted))))
+
+    duplicated = json.loads(json.dumps(claims))
+    duplicated["map"].append(dict(duplicated["map"][0]))
+    controls.append(("duplicate-row", bool(validate_primary_contract(duplicated))))
+
+    large_patch = json.loads(json.dumps(claims))
+    target_patch = next(
+        row for row in large_patch["patches"]
+        if row["patch"].replace(" ", "") == "(12,)"
+    )
+    target_patch["struct_dim"] = 99
+    controls.append((
+        "large-patch-claim-corrupted",
+        bool(validate_primary_contract(large_patch)
+             or hunt_finite_map(large_patch)["refutations"]),
+    ))
+
+    stabilizer = json.loads(json.dumps(claims))
+    stabilizer["invariant_pairs"] = 999
+    controls.append((
+        "stabilizer-headline-corrupted",
+        bool(validate_primary_contract(stabilizer)),
+    ))
+
+    killed = sum(ok for _, ok in controls)
+    certify(
+        "CERT-MUTATION/hostile-controls",
+        killed == len(controls),
+        f"killed={killed}/{len(controls)} names={[name for name, _ in controls]}",
+    )
+    return {"controls": controls, "killed": killed, "total": len(controls)}
 
 
 # ==========================================================================
 def main() -> int:
     t0 = monotonic()
     ev = evidence()
-    claims = parse_primary(ev["payloads"][PRIMARY_CACHE].decode("utf-8"))
+    primary_stdout = run_primary()
+    claims = parse_primary(primary_stdout)
 
-    r12 = hunt_r1_r2(claims)
-    r3 = hunt_r3()
-    r4 = hunt_r4(claims)
-    r5 = hunt_r5(claims, ev)
-    replay = hunt_r3()
-    det = replay["stream_sha256"] == r3["stream_sha256"]
+    contract_refutations = validate_primary_contract(claims)
+    finite_map = hunt_finite_map(claims)
+    stabilizer = hunt_product_stabilizer()
+    stabilizer_claims = check_stabilizer_headlines(claims)
+    obligation_models = hunt_obligation_models(claims)
+    quote_replay = hunt_quote_replay(claims, ev)
+    replay = hunt_product_stabilizer()
+    det = replay["stream_sha256"] == stabilizer["stream_sha256"]
+    mutations = hostile_mutation_controls(claims, ev)
 
-    parsed_ok = (len(claims["patches"]) >= 8 and len(claims["map"]) >= 5
-                 and len(claims["quotes"]) >= 1
-                 and claims["scale_free_dim"] is not None)
-    certify("CERT-PARSE/claims-extracted", parsed_ok,
-            f"patch_rows={len(claims['patches'])} map_rows={len(claims['map'])} "
-            f"quotes={len(claims['quotes'])} "
-            f"scale_free_dim={claims['scale_free_dim']}")
-    certify("CERT-R1R2/brute-force-dimension", not r12["refutations"],
-            f"models={len(r12['rows'])} refutations={len(r12['refutations'])}")
-    certify("CERT-R3/stabilizer-hunt", not r3["refutations"],
-            f"trials={r3['trials']} larger={r3['larger_stabilizer_hits']} "
-            f"broken={r3['broken_invariance_hits']} "
-            f"separating={r3['separating_observable_hits']}")
-    certify("CERT-R4/orbit-recount", not r4["refutations"],
-            f"models={len(r4['checks'])} refutations={len(r4['refutations'])}")
-    certify("CERT-R5/quote-reread", not r5["refutations"],
-            f"quotes_checked={r5['quotes_checked']} "
-            f"refutations={len(r5['refutations'])}")
-    certify("CERT-R6/determinism", det,
-            f"hunt_sha_first={r3['stream_sha256'][:16]} "
+    certify("CERT-PRIMARY-CONTRACT/exact", not contract_refutations,
+            f"patches={len(claims['patches'])}/16 maps={len(claims['map'])}/8 "
+            f"quotes={len(claims['quotes'])}/8 refutations={len(contract_refutations)}")
+    certify("CERT-FINITE-MAP/independent", not finite_map["refutations"],
+            f"brute_models={len(finite_map['rows'])} "
+            f"structural_models={len(finite_map['structural_rows'])} "
+            f"refutations={len(finite_map['refutations'])}")
+    certify("CERT-PRODUCT-STABILIZER/randomized", not stabilizer["refutations"],
+            f"trials={stabilizer['trials']} larger={stabilizer['larger_stabilizer_hits']} "
+            f"broken={stabilizer['broken_invariance_hits']} "
+            f"separating={stabilizer['separating_observable_hits']}")
+    certify("CERT-STABILIZER-HEADLINES/exact", not stabilizer_claims["refutations"],
+            f"independent={compact(stabilizer_claims['independent'])}")
+    certify("CERT-OBLIGATION-MODELS/orbit-recount",
+            not obligation_models["refutations"],
+            f"models={len(obligation_models['checks'])} "
+            f"refutations={len(obligation_models['refutations'])}")
+    certify("CERT-QUOTE-REPLAY/exact", not quote_replay["refutations"],
+            f"quotes_checked={quote_replay['quotes_checked']} "
+            f"refutations={len(quote_replay['refutations'])}")
+    certify("CERT-DETERMINISM/hunt-replay", det,
+            f"hunt_sha_first={stabilizer['stream_sha256'][:16]} "
             f"hunt_sha_second={replay['stream_sha256'][:16]}")
     elapsed = monotonic() - t0
     certify("CERT-RUNTIME/budget", elapsed < AUDIT_TIMEOUT_SEC,
@@ -518,77 +744,58 @@ def main() -> int:
 
     out: list[str] = []
     w = out.append
-    w("=" * 78)
-    w("CYCLE 871 -- INDEPENDENT CHECKER, SPECIFIED TO REFUTE")
-    w("=" * 78)
-    w("")
-    w("-- pinned evidence (text/AST only, primary never imported) --------------")
-    for r in ev["rows"]:
-        w(f"  {r['path']}")
-        w(f"      sha256={r['sha256'][:16]} exact={r['sha256_exact']} "
-          f"blob_exact={r['git_blob_exact']} access={r['access']}")
-    w(f"  BLOCKLIST={list(BLOCKLISTED_MODULES)} leaks={ev['blocklist_leaks']}")
-    w("")
-    w("-- claims parsed out of the primary's pinned stdout ---------------------")
-    w(f"  patch rows={len(claims['patches'])} obligation rows={len(claims['map'])} "
-      f"quoted lines={len(claims['quotes'])}")
-    w(f"  primary says: grid_pairs={claims['grid_pairs']} "
-      f"invariant_pairs={claims['invariant_pairs']} "
-      f"separating_observables={claims['separating']} "
-      f"scale_free_dim={claims['scale_free_dim']} "
-      f"shape_free_dim={claims['shape_free_dim']}")
-    w("")
-    w("-- R1/R2 brute-force solution counting over F_p -------------------------")
-    w(f"  {'patch':<10}{'p':>3}{'solutions':>12}{'implied_dim':>13}"
-      f"{'primary_dim':>13}{'off_shape':>11}")
-    for row in r12["rows"]:
-        w(f"  {str(tuple(row['dims'])):<10}{row['p']:>3}{row['solutions']:>12}"
-          f"{str(row['implied_dim']):>13}{str(row['primary_dim']):>13}"
-          f"{row['off_shape_solutions']:>11}")
-    w("")
-    w("-- R3 randomized wide-grid stabilizer hunt ------------------------------")
-    w(f"  trials={r3['trials']}")
-    w(f"  rescalings with product != 1 that left the action fixed: "
-      f"{r3['larger_stabilizer_hits']}")
-    w(f"  rescalings with product == 1 that moved the action:      "
-      f"{r3['broken_invariance_hits']}")
-    w(f"  observables (values, squares, products, cross ratios) separating "
-      f"the two factors: {r3['separating_observable_hits']}")
-    w("")
-    w("-- R4 obligation-map dimensions recomputed by union-find ----------------")
-    w(f"  kernel with translation only: {r4['kernel_translation_only']}   "
-      f"window classes: {r4['window_classes']}")
-    for c in r4["checks"]:
-        w(f"  {c['model']:<34} independent={c['independent']} "
-          f"primary={c['primary']}")
-    w("")
-    w("-- R5 quote re-read from the pinned sources -----------------------------")
-    w(f"  quoted lines re-read at their claimed line numbers: "
-      f"{r5['quotes_checked']}")
-    w("")
-    w("-- REFUTATIONS ---------------------------------------------------------")
-    allref = (r12["refutations"] + r3["refutations"] + r4["refutations"]
-              + r5["refutations"])
+    w("CYCLE 871 — INDEPENDENT REFUTATION CHECKER")
+    w(f"EVIDENCE paths={len(ev['rows'])} primary_executions=1 "
+      f"blocklist_leaks={ev['blocklist_leaks']}")
+    w(f"PRIMARY_CONTRACT patches={len(claims['patches'])} maps={len(claims['map'])} "
+      f"quotes={len(claims['quotes'])} scalars="
+      f"{claims['grid_pairs']},{claims['invariant_pairs']},"
+      f"{claims['separating']},{claims['scale_free_dim']}")
+    w("FINITE_MAP_BRUTE dims p solutions implied primary off_shape")
+    for row in finite_map["rows"]:
+        w(f"  {tuple(row['dims'])} {row['p']} {row['solutions']} "
+          f"{row['implied_dim']} {row['primary_dim']} "
+          f"{row['off_shape_solutions']}")
+    w(f"FINITE_MAP_STRUCTURAL rows={len(finite_map['structural_rows'])} "
+      f"refutations={len(finite_map['refutations'])}")
+    w(f"PRODUCT_STABILIZER trials={stabilizer['trials']} "
+      f"larger={stabilizer['larger_stabilizer_hits']} "
+      f"broken={stabilizer['broken_invariance_hits']} "
+      f"separating={stabilizer['separating_observable_hits']}")
+    w(f"STABILIZER_HEADLINES {compact(stabilizer_claims['independent'])}")
+    w("OBLIGATION_MODELS independent primary clause")
+    for row in obligation_models["checks"]:
+        w(f"  {row['independent']} {row['primary']} {row['model']}")
+    w(f"QUOTE_REPLAY checked={quote_replay['quotes_checked']} "
+      f"refutations={len(quote_replay['refutations'])}")
+    w("HOSTILE_MUTATIONS")
+    for name, killed in mutations["controls"]:
+        w(f"  {'KILLED' if killed else 'SURVIVED'} {name}")
+    w(f"MUTATION_KILLS {mutations['killed']}/{mutations['total']}")
+    allref = (contract_refutations + finite_map["refutations"]
+              + stabilizer["refutations"] + stabilizer_claims["refutations"]
+              + obligation_models["refutations"] + quote_replay["refutations"])
     if allref:
         for r in allref:
-            w(f"  REFUTED: {r}")
+            w(f"REFUTED {r}")
     else:
-        w("  none: every refutation hunt came back empty")
-    w("")
-    w("-- CERTIFICATES --------------------------------------------------------")
+        w("REFUTATIONS none")
     for name, ok, detail in CERTS:
-        w(f"  {'PASS' if ok else 'FAIL'}  {name:<34} {detail}")
+        w(f"{'PASS' if ok else 'FAIL'} {name} {detail}")
     npass = sum(1 for _, ok, _ in CERTS if ok)
     nfail = len(CERTS) - npass
     w("")
     w(f"REFUTATIONS FOUND: {len(allref)}")
     w(f"TOTAL: PASS={npass} FAIL={nfail}")
     w(f"VERDICT: {'PASS' if nfail == 0 else 'FAIL'}")
-    text = "\n".join(out)
-    sys.stdout.write(text + "\n")
-    if len(text.encode()) > STDOUT_LIMIT_BYTES:
-        sys.stderr.write("stdout budget exceeded\n")
+    text = "\n".join(out) + "\n"
+    if len(text.encode()) >= STDOUT_LIMIT_BYTES:
+        sys.stderr.write(
+            f"stdout budget exceeded: {len(text.encode())}>="
+            f"{STDOUT_LIMIT_BYTES}\n"
+        )
         return 1
+    sys.stdout.write(text)
     return 0 if nfail == 0 else 1
 
 

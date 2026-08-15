@@ -10,47 +10,44 @@ input closure is removed.
 
 Independent routes:
 
-R1  the exact ratios by cross-multiplication over the integers (no
+EXACT RATIOS by cross-multiplication over the integers (no
     Fraction reduction): 84*41 == 21*164; (2*123 - 3*57)... expanded
     integer identities for the 19/123 miss; 16*3 == 2*24;
-R2  the cyclic-patch nullity by the STRUCTURAL route (additivity forces
+CYCLIC-PATCH NULLITY by the structural route (additivity forces
     determination by singletons; cyclic invariance identifies all
     singletons; hence dimension 1), cross-checked by explicit singleton
     orbit counting -- never by the primary's echelon elimination;
-R3  the group equality by direct set construction;
-R4  the menu line and imported-normalization collapse by direct
+GROUP EQUALITY by direct set construction;
+MENU LINE and imported-normalization collapse by direct
     substitution with integer arithmetic;
-R5  the CLAIMS_JSON line parsed from the primary's pinned cache must match
-    field for field;
-R6  an overclaim scan on the primary's emitted output: withdrawn wording
+FRESH CLAIM PARSING from one primary subprocess execution must match field for
+    field;
+OVERCLAIM SCAN on the primary's emitted output: withdrawn wording
     ("priced shut", "blocked BY THEOREM", "sole remaining", "TERMINAL")
     must not be asserted.
 """
 from __future__ import annotations
 
 AUDIT_TIMEOUT_SEC = 300
-STDOUT_LIMIT_BYTES = 150_000
+STDOUT_LIMIT_BYTES = 6_000
 AUDIT_INPUT_PATHS = (
     "scripts/frontier_cycle924_occurrence_rate_route_2026_07_28.py",
-    "logs/runner-cache/frontier_cycle924_occurrence_rate_route_2026_07_28.txt",
 )
 
 from hashlib import sha256
 import json
 from pathlib import Path
+import subprocess
 import sys
 from time import monotonic
 
 ROOT = Path(__file__).resolve().parents[1]
-PRIMARY_PATH, PRIMARY_CACHE = AUDIT_INPUT_PATHS
+PRIMARY_PATH = AUDIT_INPUT_PATHS[0]
 
-# re-pinned by the review-loop fix pass whenever the primary or its cache
-# changes; a mismatch is a hard refutation.
+# Re-pinned whenever the primary changes; a mismatch is a hard refutation.
 EXPECTED_SHA256 = {
     PRIMARY_PATH:
-        "06f460a07d247ea2449546850af2270aba9d825b95c646900fb1134b933191ed",
-    PRIMARY_CACHE:
-        "dd885311cd193387b2d19937b8f214b29eed7c8678b453c0fcc948bb2b4c2e8d",
+        "98a8ba289b699f44524ad4ce49875afca1c0ea744d1df0abdf3f0f0b4e0d16bf",
 }
 
 WITHDRAWN_WORDING = ("priced shut", "blocked BY THEOREM", "sole remaining",
@@ -74,19 +71,33 @@ def main() -> int:
         match = sha256(data).hexdigest() == EXPECTED_SHA256[path]
         pins_ok &= bool(data) and match
         details.append(f"{path}:{'MATCH' if match else 'MISMATCH'}")
-    check("R0_PINNED_EVIDENCE", pins_ok, "; ".join(details))
+    check("PINNED_EVIDENCE", pins_ok, "; ".join(details))
+
+    proc = subprocess.run(
+        [sys.executable, str(ROOT / PRIMARY_PATH)],
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+        timeout=AUDIT_TIMEOUT_SEC,
+        check=False,
+    )
+    primary_text = proc.stdout
+    fresh_ok = (proc.returncode == 0 and "VERDICT: PASS" in primary_text
+                and len(primary_text.encode()) < STDOUT_LIMIT_BYTES)
+    check("FRESH_PRIMARY_EXECUTION", fresh_ok,
+          f"returncode={proc.returncode} stdout_bytes={len(primary_text.encode())} "
+          f"stderr_bytes={len(proc.stderr.encode())}")
 
     claims = None
-    for line in payloads[PRIMARY_CACHE].decode(
-            "utf-8", errors="replace").splitlines():
+    for line in primary_text.splitlines():
         if line.startswith("CLAIMS_JSON: "):
             claims = json.loads(line[len("CLAIMS_JSON: "):])
-    check("R0b_CLAIMS_PARSED", claims is not None,
+    check("CLAIMS_PARSED", claims is not None,
           f"claims_line_found={claims is not None}")
     if claims is None:
         claims = {}
 
-    # R1 integer cross-multiplication
+    # Exact-ratio integer cross-multiplication
     #   84/164 == 21/41  <=>  84*41 == 21*164
     #   2/3 - 21/41 == 19/123  <=>  (2*41 - 3*21) == 19 and 3*41 == 123
     #   16/24 == 2/3  <=>  16*3 == 2*24
@@ -96,11 +107,11 @@ def main() -> int:
            and claims.get("share") == "21/41"
            and claims.get("miss") == "19/123"
            and claims.get("period_ratio") == "2/3")
-    check("R1_RATIOS_CROSS_MULTIPLIED", ok1,
+    check("RATIOS_CROSS_MULTIPLIED", ok1,
           f"84*41={84*41}==21*164={21*164}; 2*41-3*21={2*41-3*21}; "
           f"16*3={16*3}==2*24={2*24}")
 
-    # R2 structural nullity: additivity determines A by singleton values
+    # Structural nullity: additivity determines A by singleton values
     # (every configuration is the disjoint union of its singletons);
     # cyclic invariance identifies all singletons into one orbit.
     ok2 = True
@@ -124,17 +135,17 @@ def main() -> int:
         ok2 &= orbits == 1
     primary_dims = [tuple(x) for x in claims.get("patch_dims", [])]
     ok2 &= primary_dims == dims
-    check("R2_NULLITY_STRUCTURAL", ok2,
+    check("NULLITY_STRUCTURAL", ok2,
           f"singleton_orbits={dims} primary={primary_dims}")
 
-    # R3 group equality by direct construction
+    # Group equality by direct construction
     rotations = {tuple((i + k) % 3 for i in range(3)) for k in range(3)}
     translations = {tuple((i + t) % 3 for i in range(3)) for t in range(3)}
     ok3 = rotations == translations and claims.get("group_equality") is True
-    check("R3_GROUP_EQUALITY_DIRECT", ok3,
+    check("GROUP_EQUALITY_DIRECT", ok3,
           f"equal={rotations == translations}")
 
-    # R4 menu line + normalization by integer substitution
+    # Menu line plus normalization by integer substitution
     # alpha * count(full) = 2/9 with count(full)=3  =>  alpha = 2/27
     # integer check: alpha = 2/27 satisfies 27 * alpha * 3 == 2 * 3 / ... :
     # 3 * (2/27) == 2/9  <=>  3 * 2 * 9 == 2 * 27
@@ -145,23 +156,22 @@ def main() -> int:
            and survivors == ["alpha_2_27"]
            and claims.get("forced_alpha") == "2/27"
            and claims.get("survivors") == ["alpha_2_27"])
-    check("R4_NORMALIZATION_COLLAPSE", ok4,
+    check("NORMALIZATION_COLLAPSE", ok4,
           f"3*(2/27)==2/9 by integers: {3 * 2 * 9}=={2 * 27}; "
           f"survivors={survivors}")
 
-    # R6 overclaim scan on the primary's emitted output
-    cache = payloads[PRIMARY_CACHE].decode("utf-8", errors="replace")
+    # Overclaim scan on the fresh primary output
     hits = []
     for term in WITHDRAWN_WORDING:
-        for i, ln in enumerate(cache.splitlines(), 1):
+        for i, ln in enumerate(primary_text.splitlines(), 1):
             if term in ln and "withdrawn" not in ln.lower() \
                     and "Withdrawn:" not in ln:
-                hits.append(f"cache:{i}:{term}")
+                hits.append(f"fresh-output:{i}:{term}")
     ok6 = not hits
-    check("R5_OVERCLAIM_SCAN", ok6, f"hits={hits if hits else 'none'}")
+    check("OVERCLAIM_SCAN", ok6, f"hits={hits if hits else 'none'}")
 
     elapsed = monotonic() - t0
-    check("R6_RUNTIME", elapsed < AUDIT_TIMEOUT_SEC,
+    check("RUNTIME", elapsed < AUDIT_TIMEOUT_SEC,
           f"elapsed_s={elapsed:.1f} budget_s={AUDIT_TIMEOUT_SEC}")
 
     out: list[str] = []
@@ -179,33 +189,14 @@ def main() -> int:
     verdict = ("PRIMARY_SURVIVES_THIS_CHECK" if nfail == 0
                else "PRIMARY_REFUTED_ON_THIS_CHECK")
     w(f"VERDICT: {verdict}")
-    text = "\n".join(out)
-    sys.stdout.write(text + "\n")
-
-    receipt = {
-        "cycle": 924,
-        "role": "independent_checker",
-        "claim_type": "bounded_theorem",
-        "verdict": verdict,
-        "certificates": {n: {"pass": ok, "detail": d} for n, ok, d in CERTS},
-        "all_certificates_pass": nfail == 0,
-        "review_loop": {
-            "iteration": 1,
-            "disposition": "FIX_THEN_PROCEED",
-            "reviewer": "Sol",
-            "date": "2026-08-08",
-            "fix": ("literal-True hidden-import check removed; all "
-                    "certificates bind to predicates; fail-closed exit; "
-                    "unlanded/generated closure removed"),
-        },
-    }
-    (ROOT / "outputs" /
-     "occurrence_rate_route_independent_check_cycle924_receipt_2026_07_28"
-     ".json").write_text(json.dumps(receipt, indent=1, sort_keys=True) + "\n")
-
-    if len(text.encode()) > STDOUT_LIMIT_BYTES:
-        sys.stderr.write("stdout budget exceeded\n")
+    text = "\n".join(out) + "\n"
+    if len(text.encode()) >= STDOUT_LIMIT_BYTES:
+        sys.stderr.write(
+            f"stdout budget exceeded: {len(text.encode())}>="
+            f"{STDOUT_LIMIT_BYTES}\n"
+        )
         return 1
+    sys.stdout.write(text)
     return 0 if nfail == 0 else 1
 
 

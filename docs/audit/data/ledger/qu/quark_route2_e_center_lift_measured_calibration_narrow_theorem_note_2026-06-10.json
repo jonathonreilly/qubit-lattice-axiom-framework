@@ -34,7 +34,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 13.931,
+  "load_bearing_score": 13.954,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -55,6 +55,6 @@
   },
   "runner_path": "scripts/frontier_quark_route2_e_center_lift_measured_calibration_2026_06_10.py",
   "title": "The Route-2 E-Center Lift: the Stack's Own Measured Shell-Response Calibration Matches the 21/4 Target Chain Within Finite-Box Tolerances, and the Pin Reformulates Exactly as One Cross-Channel Covariance \u2014 a Sharpening of the Open Gate, Not a Derivation",
-  "transitive_descendants": 60,
+  "transitive_descendants": 61,
   "verdict_rationale": null
 }

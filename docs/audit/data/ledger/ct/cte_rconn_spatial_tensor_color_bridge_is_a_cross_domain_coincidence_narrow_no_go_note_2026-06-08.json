@@ -34,7 +34,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 9.672,
+  "load_bearing_score": 9.7,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -55,6 +55,6 @@
   },
   "runner_path": "scripts/frontier_cte_rconn_bridge_cross_domain_no_go.py",
   "title": "The Route-2 c_TE = \u2212R_conn Spatial-Tensor\u2194Color Bridge Is a Cross-Domain Coincidence",
-  "transitive_descendants": 50,
+  "transitive_descendants": 51,
   "verdict_rationale": null
 }

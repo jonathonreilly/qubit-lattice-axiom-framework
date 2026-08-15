@@ -19,7 +19,7 @@
   "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
-  "criticality": "leaf",
+  "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
@@ -27,7 +27,7 @@
     "physical_cell_cutting_fourteen_frontier_cycle741_note_2026-08-05",
     "physical_cell_cutting_least_computing_sets_cycle737_note_2026-08-05"
   ],
-  "direct_in_degree": 0,
+  "direct_in_degree": 2,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
@@ -35,7 +35,7 @@
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 0.0,
+  "load_bearing_score": 4.585,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -56,6 +56,6 @@
   },
   "runner_path": "scripts/physical_cell_cutting_sixteen_census_cycle745_2026_08_05.py",
   "title": "Bounded sixteen-piece census for the supplied cutting system \u2014 Cycle 745",
-  "transitive_descendants": 0,
+  "transitive_descendants": 11,
   "verdict_rationale": null
 }

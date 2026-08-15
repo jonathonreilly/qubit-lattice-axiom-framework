@@ -36,7 +36,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 12.524,
+  "load_bearing_score": 12.555,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -57,6 +57,6 @@
   },
   "runner_path": "scripts/frontier_quark_route2_qe_kappa_squared_covariance_sharper_no_go_2026_06_10.py",
   "title": "The Route-2 q_E Pin, Sharper No-Go: 9/4 = \u03ba\u00b2 Is the Same-Domain O_h Shell-Leverage Squared (\u03ba=3/2 Derived); the Remaining Open Datum Is the Covariance Bridge \u03bb = q_E/q_T = \u03ba\u00b2, Which Equivariance Does Not Supply",
-  "transitive_descendants": 45,
+  "transitive_descendants": 46,
   "verdict_rationale": null
 }

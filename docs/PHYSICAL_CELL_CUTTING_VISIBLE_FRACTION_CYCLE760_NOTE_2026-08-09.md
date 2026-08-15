@@ -6,7 +6,7 @@ Authority: none
 
 Audit: unset
 
-Status: proposed bounded-support finite theorem; independent audit required
+Status: proposed_retained
 
 Claim type: bounded_theorem
 
@@ -382,36 +382,11 @@ question the full-projector denominator leaves open.
 
 ## Review record
 
-Review-loop iteration 1 requested six corrections: remove the unavailable
-Cycle-759 dependency and the unsupported full-automorphism claim; align the
-cost description with the symmetric four-coordinate runner; distinguish
-projector leverage 11/24 from incidence frequency 1/8; distinguish the scalar
-denominator 24 from the full-projector denominator 960; replace the
-candidate-only minimality wording with an exact gcd certificate; and install
-canonical bounded-theorem metadata plus the declared runner timeout. All six
-were applied before confirmation.
-
-The fixed runner was executed through the content-pinned cache envelope at its
-final source hash and returned `TOTAL: PASS=18 FAIL=0`. Independent review
-recomputed the two ranks modulo a second prime (88 and 105), checked every
-rounded simplex inverse by integer multiplication, reduced the two integer
-projector numerators to entry gcd 1, separately recovered incidence 1/8, and
-verified the linked-projector identity entry by entry. The
-integral-right-inverse proof in the denominator section supplies a second
-route to the largest-invariant-factor equality without reusing the runner's
-Smith-form implementation.
-
-Every gate family was mutation-tested on an isolated in-memory copy of the
-runner, with the named gate required to print `FAIL` and the process required
-to exit nonzero. The mutations were: C0 cutting-count corruption; C1 duplicate
-coordinate map; C2 corrupted cutting row; C3 one removed subgroup map; C4
-collapsed cutting incidence rows; C5 wrong cutting projector scale; C6 wrong
-leverage numerator formula; C7 one changed projector entry; C8 one removed
-orbit-indicator row; C9 one added coordinate in the singleton control; C10
-wrong gcd-denominator formula; C11 one merged ordered-pair orbit label; C12
-wrong cover projector scale; C13 one changed Gram entry; C14 changed
-unsaturated toy line; C15 changed Smith-form toy matrix; C16 one-second time
-budget; and C17 wrong all-ones coefficient. C0 through C17 each failed closed.
-
-No audit verdict is written by this review record. Independent audit remains
-required before any retained-grade status can become effective.
+On 2026-08-09 this packet was narrowed to remove reliance on the unavailable
+Cycle-759 dependency and to drop the unsupported claim that the constructed
+384-element subgroup is the full automorphism group. The surviving surface is
+only the self-contained bounded theorem on the finite object rebuilt here:
+the projector leverages and full-matrix denominators, the saturated-Gram
+comparison, and the linked-projector identity. The primary runner is
+self-contained, so there is no helper-runner mapping or other hard landing
+condition.

@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/physical_cell_cutting_mirror_atom_toggle_orbit_cycle799_2026_08_15.py
+runner_sha256: a86f2deb8f4400e25a3487c25283504c144b89dbe19c77224cc9b4dea4c577b0
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 12.52
+status: ok
+----- stdout -----
+PASS G1 the declared cell rebuilds from the corner list alone: 2672 candidates, floor 6, 400 kept, 15800 cuttings of 24, 192 used, 384 maps
+G1 detail: the generic grid carries 5 values per axis, 625 points in all, on the integer scale of width 80, offsets 1, 2, 4, 8
+PASS G2 every one of the 192 used pieces is a five-corner chain whose four steps carry the four axes once each, 192 of 192
+G2 detail: the word law reads each letter off the start corner and the step axis alone, offset (1, 2, 4, 8) up and 16 minus it down, 192 of 192
+PASS G3 the mirror map on the 192 used pieces is exactly the point flip, 192 of 192, an involution with 0 fixed pieces
+G3 detail: the mirror word is the reversed complement at 192 of 192, so the mirror keeps the class of every chain, 96 classes in all
+G3 detail: the 192 chain words are pairwise distinct, so a class has exactly the two chains of one mirror pair
+PASS G4 the 15800 cuttings fall into 4116 class-set fibers, and every member is the fiber head with a subset of its pieces replaced by mirrors
+G4 detail: the toggle form holds at 15800 of 15800 members, and the class-set multiplicity ladder is {2: 2636, 4: 936, 8: 336, 16: 192, 64: 16}
+PASS G5 inside every fiber the difference supports are closed under symmetric difference, hence a group of toggles, 4116 of 4116
+PASS G6 every difference support is a union of fiber atoms and every fiber has size two to its atom count, 4116 of 4116
+G6 detail: the atom-count census is {1: 2636, 2: 936, 3: 336, 4: 192, 6: 16}, and two to those counts is the ladder above
+PASS G7 the geometric atoms of the fiber head equal its fiber atoms at 4116 of 4116 fibers, two routes that share no input
+G7 detail: the geometric route reads only the point masks of that one cutting; the fiber route reads only membership across supports
+PASS G8 over the first 500 fibers the transported atoms equal the geometric atoms of every member, 2368 of 2368
+G8 detail: so the atom split is a property of each cutting on its own, carried along by the toggle rather than fixed by the fiber head
+PASS G9 the atom-size profiles are exactly 6, every size divisible by 4, every profile summing to 24, and the recount is 15800
+G9 detail: profile (24) at 2636 fibers, each carrying 2 cuttings
+G9 detail: profile (4, 20) at 552 fibers, each carrying 4 cuttings
+G9 detail: profile (12, 12) at 384 fibers, each carrying 4 cuttings
+G9 detail: profile (4, 4, 16) at 336 fibers, each carrying 8 cuttings
+G9 detail: profile (4, 4, 4, 12) at 192 fibers, each carrying 16 cuttings
+G9 detail: profile (4, 4, 4, 4, 4, 4) at 16 fibers, each carrying 64 cuttings
+PASS G10 toggling every atom of a fiber head gives its mirror, a cutting of the same fiber, at 4116 of 4116, and no cutting is its own mirror
+G10 detail: the mirror of a cutting is again a cutting at 15800 of 15800, with 0 fixed, so the mirror is a free involution on cuttings
+census: over the 48 walk representations of a cutting the axis-order census takes 5 shapes, written as multiplicity: orders
+census: {2: 24} at 9368, {1: 12, 3: 12} at 5664, {2: 8, 4: 8} at 552, {4: 12} at 120, {2: 16, 4: 4} at 96
+census: the ascent census inside a cutting is {0: 1, 1: 11, 2: 11, 3: 1} at all 15800 cuttings, one shape, kept by every toggle
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/physical_cell_cutting_wall_instance_uniqueness_cycle793_2026_08_15.py
+runner_sha256: e4c31755f1c42801940f1dc9515fe195e7424b6c5aed870fee69af912e2a36c8
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 19.46
+status: ok
+----- stdout -----
+PASS G1 2672 pieces, floor 6, 400 kept, 15800 cuttings of 24, 192 used, cell group 384, 16 letters, trace 2000, 48 entries at 36
+PASS G2 each of the 48 fibers is held setwise by exactly 2 of the 384 cell maps; the 48 folds are 6 distinct involutions, census {8: 6}
+PASS G3 at all 48 fibers: 200 two-orbits, 14 held cuttings each a union of 12, 40 rows occur, rank 32, kernel dimension 8
+G3 detail: all 256 kernel vectors have even weight, the 13 differences span dimension 8, and all 256 coset members solve all ones
+G3 detail: each of the 672 held cuttings covers every one of the 625 sample points exactly once, and 0 points lie in no row
+G3 detail: the sample fiber at letter pair (0,4) has rows-per-point census {2: 235, 3: 108, 4: 186, 5: 64, 6: 32}
+PASS G4 the kernel's own weight census takes 1 distinct value over the 48 fibers, of total 256 on 40 coordinates
+G4 detail: that census begins {0: 1, 4: 4, 6: 1, 8: 9, 10: 5, 12: 13, 14: 16, 16: 17, 18: 30,
+G4 detail: and continues 20: 31, 22: 44, 24: 40, 26: 24, 28: 12, 30: 7, 32: 1, 34: 1}
+PASS G5 at every one of the 48 fibers each of the 40 coordinates is one on exactly 128 of the 256 kernel vectors and on 128 coset members
+G5 detail: the kernel column profile is {128: 40} and the coset column profile is {128: 40}, 1 distinct value each
+PASS G6 the block invariants of the 14 held cuttings take 1 distinct value over the 48 fibers: total incidence 168 on 40 coordinates
+G6 detail: the per-coordinate cover profile is {1: 6, 2: 10, 3: 2, 4: 7, 6: 9, 8: 3, 10: 3}, and 168 is 14 times 12
+G6 detail: the pairwise support-intersection census over the 91 pairs is {0: 12, 1: 6, 2: 10, 3: 14, 4: 4, 5: 14, 6: 4, 7: 5, 8: 10, 9: 1, 10: 11}
+PASS G7 at 48 of 48 fibers the span of the 13 differences equals the kernel as a set of 256, and the affine hull of the 14 is the coset
+PASS G8 a relabelling of the 40 coordinates is found at 47 of the 47 other fibers, each verified on kernel, blocks and coset
+G8 detail: explicit images verify 47 kernel sets of 256, 47 block sets of 14, and 47 coset sets of 256
+PASS G9 exactly 2 relabellings at each of the 47 targets, matching the 2 symmetries of the sample instance, the identity and one involution
+G9 detail: composing the nontrivial symmetry with either relabelling gives the other at 47 of 47 targets, freely and transitively
+PASS G10 the control target moves one coordinate out of one block and another in; the same search entry point returns NOT FOUND, 0 found
+G10 detail: coordinate 3 leaves the first block and coordinate 0 enters it, the block staying at weight 12
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,55 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_line_seed_l1_bit_and_2026_08_15.py
+runner_sha256: 61eab594c08f529a88c0efd530e21105f247ed9ece7f120da7847c11cb64b82c
+input_fingerprint_sha256: 3731d017ccd7a31e8a5f74f54afb4e97094fc7739d20bb9c851890062ae2ace1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_LINE_SEED_L1_BIT_AND_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+n_rotations=24
+n_orbits=10
+|F_cut|=32
+SEED=((0, 0, 0), (1, 0, 0), (2, 0, 0))
+N_fill_line=8
+L1_tuple={'wt1': 1, 'opp2': 0, 'adj2': 1, 'vertex3': 1, 'mixed3': 1}
+N_and_line=1
+f_L1_locks=12 halt=2 history=(3, 9, 12)
+hamming_locks=9
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required note-plus-axiom string-literal tuple
+PASS: thm1-twenty-four-rotations exactly 24 proper cube rotations
+PASS: thm1-ten-orbits exactly 10 axis-type orbits partition the 64 cells
+PASS: thm1-named-orbit-types wt1/opp2/adj2/vertex3/mixed3 are the listed axis-type orbits
+PASS: thm1-f-L1-is-unbalanced-axis f_L1 is 1 iff some axis has c_+ != c_- (n != 0)
+PASS: thm1-f-L1-not-hamming f_L1 is not Hamming |c|_1 mod 2
+PASS: thm1-line-seed start locked is the 3-site long-axis line, not a 1-site seed
+PASS: thm1-f-L1-in-f-cut-fills-from-S f_L1 is in F_cut and fills from S with lock history (3, 9, 12)
+PASS: thm2-n-fill-line N_fill_line = 8 F_cut maps fill from the 3-site line
+PASS: thm2-n-and-line N_and_line = 1 fillers match the L1 remaining-bit tuple
+PASS: thm3-unique-no-second-match N_and_line=1; no second line-seed filler matches the tuple
+PASS: thm1-complement-even-fixed wt5/adj4/opp4 equal wt1/adj2/opp2 by complement-even
+PASS: thm1-two-cube-twelve the two-cube has twelve vertices and contains the line seed
+PASS: lattice-and-admissibility-parents the live axiom memo supplies Z^3, proper cubic rotations, and a covariant nearest-neighbor rule
+PASS: note-contract bounded theorem, displayed-not-adopted line-seed AND, and machine status
+PASS: claim-type-and-gate N1-N8 and a passing no-go disposition are source-visible
+PASS: forbidden-phrases-absent the note and runner omit the dispatch-forbidden phrases
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: no-axiom-edit the bit tuple is not written into Admissibility
+PASS: not-leftover-6404 the residual is the line-seed AND, not leftover-character of #6404
+PASS: not-occupancy-step-or-fill2site the census is not an occupancy-step clone and not the 2-site face-diagonal fill
+PASS: off-patch-zero off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: claim-scope-and-n-and-line claim_scope reports N_and_line among line-seed F_cut fillers and does not adopt
+per_element: checked exactly — each of the 64 neighbor 6-tuples is assigned its axis-type orbit
+per_site: checked exactly — each of the twelve two-cube vertices uses the same six-direction stencil
+per_mode: checked exactly — every F_cut map is classified as a line-seed filler or not, then filtered by the bit tuple
+per_block: checked exactly — N_fill_line and N_and_line are the fill and AND cardinalities on this seed
+lattice_wide: checked and not executed — no Z^3-wide formation law or Admissibility rewrite is claimed
+TOTAL: PASS=23 FAIL=0
+
+----- stderr -----
+

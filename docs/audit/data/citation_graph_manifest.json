@@ -1,6 +1,6 @@
 {
- "edge_count": 15631,
- "node_count": 5497,
+ "edge_count": 15636,
+ "node_count": 5498,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -12101,6 +12101,10 @@
   "live_m2_pair_aware_swapback_collision_repair_bounded_theorem_note_2026-08-14": {
    "deps_hash": "f287d519ee26",
    "out_degree": 2
+  },
+  "live_m2_record_sufficient_joint_law_state_ontology_fork_bounded_theorem_note_2026-08-14": {
+   "deps_hash": "5b2ff36594fd",
+   "out_degree": 5
   },
   "live_m2_typed_event_critical_pair_confluence_boundary_bounded_theorem_note_2026-08-14": {
    "deps_hash": "ac3c8d928b00",

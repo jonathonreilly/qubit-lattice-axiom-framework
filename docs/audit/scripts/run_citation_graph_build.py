@@ -10,6 +10,7 @@ from __future__ import annotations
 import fcntl
 import hashlib
 import os
+import re
 import subprocess
 import sys
 import tempfile
@@ -18,6 +19,40 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
 BUILDER_PATH = Path(__file__).with_name("build_citation_graph.py")
+
+# GitHub redirects the former repository slug to the current one, but local
+# checkout configuration retains whichever spelling was cloned.  Locking on
+# the literal URL therefore split one repository into two serialization
+# domains.  Keep this alias explicit and offline: lock acquisition must not
+# depend on GitHub availability or credentials.
+_GITHUB_REPOSITORY_ALIASES = {
+    "jonathonreilly/cl3-lattice-framework": (
+        "jonathonreilly/qubit-lattice-axiom-framework"
+    ),
+}
+_GITHUB_REMOTE_PATTERNS = (
+    re.compile(
+        r"^(?:https?|git)://github\.com/([^/]+)/([^/]+?)(?:\.git)?/?$",
+        re.IGNORECASE,
+    ),
+    re.compile(
+        r"^(?:ssh://)?git@github\.com[:/]([^/]+)/([^/]+?)(?:\.git)?/?$",
+        re.IGNORECASE,
+    ),
+)
+
+
+def _canonical_remote_identity(remote: str) -> str:
+    """Normalize equivalent GitHub transports and the known repo rename."""
+    stripped = remote.strip().rstrip("/")
+    for pattern in _GITHUB_REMOTE_PATTERNS:
+        match = pattern.fullmatch(stripped)
+        if match is None:
+            continue
+        slug = f"{match.group(1)}/{match.group(2)}".casefold()
+        slug = _GITHUB_REPOSITORY_ALIASES.get(slug, slug)
+        return f"github:{slug}"
+    return f"origin:{stripped}"
 
 
 def _repository_identity() -> str:
@@ -30,7 +65,7 @@ def _repository_identity() -> str:
     )
     remote = (origin.stdout or "").strip()
     if origin.returncode == 0 and remote:
-        return f"origin:{remote.rstrip('/')}"
+        return _canonical_remote_identity(remote)
 
     common_dir = subprocess.run(
         ["git", "rev-parse", "--git-common-dir"],

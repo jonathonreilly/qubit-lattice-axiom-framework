@@ -1,4 +1,4 @@
-"""Cross-checkout serialization tests for the citation-graph launcher."""
+"""Citation-graph serialization and review-loop landing-contract tests."""
 from __future__ import annotations
 
 import fcntl
@@ -14,6 +14,28 @@ from unittest import mock
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 import run_citation_graph_build as launcher
+
+
+class ReviewLoopLandingManifestContractTest(unittest.TestCase):
+    def test_integrated_manifest_regeneration_precedes_every_push(self):
+        repo_root = Path(__file__).resolve().parents[4]
+        skill = (
+            repo_root / "docs" / "ai_methodology" / "skills" /
+            "review-loop" / "SKILL.md"
+        ).read_text(encoding="utf-8")
+        loop = skill.split(
+            "COMMITS=(<oldest-sha> ... <newest-sha>)", 1
+        )[1].split("```", 1)[0]
+
+        carry_check = loop.index('refresh_manifest=""')
+        cherry_pick = loop.index('git cherry-pick "${COMMITS[@]}"')
+        integrated_rebuild = loop.index('if [ "$refresh_manifest" = 1 ]')
+        amend = loop.index("git commit --amend --no-edit")
+        push = loop.index("git push -q origin HEAD:main")
+        self.assertLess(carry_check, cherry_pick)
+        self.assertLess(cherry_pick, integrated_rebuild)
+        self.assertLess(integrated_rebuild, amend)
+        self.assertLess(amend, push)
 
 
 class CitationGraphBuildSerializationTest(unittest.TestCase):
@@ -93,6 +115,9 @@ raise SystemExit(int(os.environ.get("CITATION_GRAPH_TEST_EXIT", "0")))
         with mock.patch.object(launcher, "REPO_ROOT", checkout):
             return launcher.citation_graph_lock_path()
 
+    def _set_origin(self, checkout: Path, url: str) -> None:
+        self._git("remote", "set-url", "origin", url, cwd=checkout)
+
     def _launch(
         self,
         checkout: Path,
@@ -116,6 +141,53 @@ raise SystemExit(int(os.environ.get("CITATION_GRAPH_TEST_EXIT", "0")))
         expected = self._lock_path(self.clone_a)
         self.assertEqual(expected, self._lock_path(self.clone_b))
         self.assertEqual(expected, self._lock_path(self.worktree))
+
+    def test_renamed_github_remotes_share_lock_and_serialize(self):
+        marker = Path(self.temporary.name) / "renamed-acquired"
+        self._set_origin(
+            self.clone_a,
+            "git@github.com:jonathonreilly/cl3-lattice-framework.git",
+        )
+        self._set_origin(
+            self.clone_b,
+            "https://github.com/jonathonreilly/qubit-lattice-axiom-framework.git",
+        )
+
+        lock_path = self._lock_path(self.clone_a)
+        self.assertEqual(lock_path, self._lock_path(self.clone_b))
+        self.assertEqual(lock_path, self._lock_path(self.worktree))
+        with lock_path.open("a+", encoding="utf-8") as owner:
+            fcntl.flock(owner.fileno(), fcntl.LOCK_EX)
+            child = self._launch(
+                self.clone_b,
+                extra_env={"CITATION_GRAPH_TEST_MARKER": str(marker)},
+            )
+            try:
+                with self.assertRaises(subprocess.TimeoutExpired):
+                    child.wait(timeout=0.2)
+                self.assertFalse(marker.exists())
+            except BaseException:
+                child.kill()
+                child.wait(timeout=5)
+                raise
+        stdout, stderr = child.communicate(timeout=5)
+        self.assertEqual(child.returncode, 0, (stdout, stderr))
+        self.assertEqual(marker.read_text(encoding="utf-8"), "started")
+        self.assertIn("Waiting for serialized citation-graph build lock", stderr)
+
+    def test_unrelated_github_repository_keeps_a_distinct_lock(self):
+        self._set_origin(
+            self.clone_a,
+            "https://github.com/jonathonreilly/cl3-lattice-framework.git",
+        )
+        self._set_origin(
+            self.clone_b,
+            "https://github.com/jonathonreilly/unrelated-repository.git",
+        )
+        self.assertNotEqual(
+            self._lock_path(self.clone_a),
+            self._lock_path(self.clone_b),
+        )
 
     def test_independent_clone_waits_for_owner(self):
         marker = Path(self.temporary.name) / "acquired"

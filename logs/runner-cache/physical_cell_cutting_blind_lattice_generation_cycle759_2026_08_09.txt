@@ -1,50 +1,50 @@
 ===== runner cache v1 =====
 runner: scripts/physical_cell_cutting_blind_lattice_generation_cycle759_2026_08_09.py
-runner_sha256: 2d9a610604cb03df621738211204ed74cacd11b6e875933cc1a0f028a9c5f19a
+runner_sha256: 23a49430ea8d61130c7f702e1716a1a5b55ed0bb1b6957bdda5988acaf164d6a
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 10.97
+elapsed_sec: 12.00
 status: ok
 ----- stdout -----
 Every count below is measured here.
 the object: 15800 cuttings and 192 pieces, 24 pieces to a cutting, 1975 cuttings through a piece
-PASS C0  the pieces per cutting and the cuttings through a piece are each the same number for every one of them
+PASS C0  the cell sample is collision- and boundary-free; incidence degrees, exact inverses, and the declared action match
 the 192 eight piece sets no cutting uses twice meet each of the 15800 cuttings between 1 and 1 times
 PASS C1  each of the 192 sets is an exact cover: the table sends it to the all ones column over all 15800 cuttings
 the cover by piece table has row sums 8 to 8 and column sums 8 to 8
 PASS C2  the zero one table is 8 regular on both sides
 two covers share 0:30144 1:3840 2:1920 4:768 off the diagonal and 8 on it, so per cover 157 20 10 4 of the other covers
 PASS C3  the sharing counts are the same for every cover and take in all 191 of the others
-largest sharing 4 gives the smallest exchange, moving 8 pieces: 384 such pairs, moved counts 8, entry values -1 0 1
-PASS C4  the largest sharing gives the smallest difference, since two covers sharing s pieces differ in twice the number they do not share
-the cutting table sends every one of the 384 smallest exchanges to zero: the image is 15800 by 384 with largest absolute value 0
+maximum sharing 4 gives support-8 exchanges: 384 such pairs, moved counts 8, entry values -1 0 1
+PASS C4  exhaustive sharing values give difference support twice eight minus sharing
+the cutting table sends all 384 support-eight exchanges to zero: the image is 15800 by 384 with largest absolute value 0
 PASS C5  a cutting meets each cover exactly once, so it meets a difference of two covers zero times
-exact rank over the rationals: cutting table 88, cover table 105, smallest exchanges 104, and 88 plus 104 is 192
-PASS C6  a matrix and its product with its transpose share a kernel, so the smallest exchanges span the whole blind space over the rationals
+exact rank over the rationals: cutting table 88, cover table 105, support-eight exchanges 104, and 88 plus 104 is 192
+PASS C6  a matrix and its product with its transpose share a kernel, so the support-eight exchanges span the full rational kernel
 two 88 by 88 minors of the cutting table, from opposite column orders, have absolute values 1 1 and greatest common divisor 1
 PASS C7  every invariant factor is one, so the cutting table has rank 88 in every characteristic and a quotient free of rank 104
 two 105 by 105 minors of the cover table have absolute values 1 1 and greatest common divisor 1
 PASS C8  every invariant factor is one, so the cover table has rank 105 in every characteristic and a quotient free of rank 87
-two 104 by 104 minors of the smallest exchanges have absolute values 1 1 and greatest common divisor 1, so their row lattice is saturated
-PASS C9  104 smallest exchanges are an integer basis of the blind lattice: every integer blind vector is an integer combination of them
+two 104 by 104 minors of the support-eight exchanges have absolute values 1 1 and greatest common divisor 1, so their row lattice is saturated
+PASS C9  the 384 support-eight exchanges generate the integer kernel and contain a 104-row determinant-one basis
 the 191 differences from a single cover have exact rank 104, two minors of absolute value 1 1 and greatest common divisor 1
-PASS C10  one cover with its differences to the rest already gives an integer basis of the same blind lattice
+PASS C10  the 191 fixed-cover differences generate the integer kernel and contain a 104-row determinant-one basis
 controls fixed in advance: determinants 0, 144 and 1, and the witness on a fixed diagonal gives 144 from minors 144 144
 PASS C11  the witness reports a value other than one when the invariant factors are not all one, so a report of one is information
 over 13 primes the cutting table holds rank 88 and the cover table 105; a scalar second routine gives 105; the fixed control drops to 0 1 3
 PASS C12  C7 forces this at every prime: a determinant one minor stays invertible, and prime field rank never exceeds rational rank
-the measured lattice and the blind lattice glue with index 2^114 x 3 x 5^30, agreeing three ways and from both choices of basis
-PASS C13  orthogonal complements over the rationals, each saturated, yet their sum has this index: an integer piece labelling does not split
-one finite group of piece labels modulo the two lattices from the 88 by 88 measured, the 104 by 104 blind and the 192 by 192 stacked
+the row lattice plus its integer kernel has quotient index 2^114 x 3 x 5^30, agreeing three ways and from two certified basis pairs
+PASS C13  unit-minor certificates make both selected row sets integer bases, and the stacked determinant gives the quotient index
+one finite group of piece labels modulo the two lattices from the 88 by 88 row, the 104 by 104 kernel and the 192 by 192 stacked matrices
 it has 42 cyclic parts, of order:count 2:12 10:8 20:2 40:2 80:8 160:8 320:1 960:1
-PASS C14  three matrices of three different sizes give the same finite group, so it belongs to the pair of lattices and not to one measurement
+PASS C14  the two Gram presentations and the stacked presentation have the same nontrivial invariant factors
 the parts divide one another in turn and multiply to the index above, so the largest is the exponent: 960, which is 5 times the 192 pieces
-PASS C15  the smallest whole number that carries every integer piece labelling into an integer measured part plus an integer blind part
+PASS C15  the largest invariant factor is the exponent of the finite quotient
 controls fixed in advance: the chains 2 and 2 6 12 are their own diagonals, while 1 6 and 2 12 are not the diagonals 2 3 and 4 6 they came from
 PASS C16  the routine returns the true chain and not the entries it was handed, so a chain of ones is information
 control in the integer plane: stacked determinant 2, and the two inner product determinants 2 and 2
-PASS C17  an index known by hand to be 2, so the measurement returns something other than one when the gluing is not trivial
-elapsed under 300 s and peak memory under 500 MB, both measured in this run
+PASS C17  the hand-computed index-two example exercises all three index presentations
+elapsed under 30 s and peak memory under 1000 MB, both measured in this run
 PASS C18  inside its time and memory allowance
 TOTAL: PASS=19 FAIL=0
 

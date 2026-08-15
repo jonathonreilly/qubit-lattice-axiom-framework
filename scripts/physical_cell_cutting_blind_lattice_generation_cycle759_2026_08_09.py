@@ -1,27 +1,21 @@
-"""Measure the integer structure of what the cuttings of the unit four-cube cannot see.
+"""Rebuild and gate finite integer-lattice identities of a four-cube cutting system.
 
-Every count below is measured here. The runner rebuilds the cell complex, the least
-volume pieces, the cuttings at the adjacency cost floor, the incidence table, the eight
-piece sets that meet every cutting exactly once, and the cover by piece table. It then
-measures how many pieces two covers share, takes the differences of the nearest pairs,
-and shows those smallest four for four exchanges span the whole blind space and, by an
-exact determinant of one, generate it over the integers rather than merely over the
-rationals. Determinants of one for the cutting table and the cover table give the same
-conclusion for those, so the blind dimension is the same in every characteristic. The
-last measurement is the counterweight: the lattice the cuttings measure and the lattice
-they cannot see do not glue to the whole integer lattice. The index is reported with its
-prime factors, and the finite group it counts is measured from three matrices of three
-different sizes, confirmed from two independent choices of basis. Controls fixed in
-advance, including one on which the determinant test must and does report a value other
-than one, and two diagonals whose invariant factors are not their own entries, show the
-tests read what is there.
+The runner constructs the finite cell complex, its minimum-cost cuttings, the
+cutting-by-piece incidence matrix, and the eight-piece exact covers. It then
+computes exact ranks, determinant-one saturation witnesses, a generating family
+for the integer kernel, certified integer bases, and three Smith presentations of
+one finite quotient. Fixed controls exercise the determinant, rank, index, and
+Smith-form routines.
 """
 import itertools
 import math
 import resource
+import sys
 import time
 
 import numpy as np
+
+AUDIT_TIMEOUT_SEC = 300
 
 T0 = time.monotonic()
 PF = [0, 0]
@@ -97,6 +91,28 @@ LO = int(C4.min())
 MINP = [i for i in range(NPIECE) if int(C4[i]) == LO]
 MM = np.stack([(V[p[1:]] - V[p[0]]).T for p in UNI])
 IV = np.rint(np.linalg.inv(MM.astype(float))).astype(np.int64)
+I4 = np.eye(4, dtype=np.int64)
+INV_OK = (
+    np.array_equal(
+        np.einsum("nij,njk->nik", MM, IV),
+        np.broadcast_to(I4, MM.shape),
+    )
+    and np.array_equal(
+        np.einsum("nij,njk->nik", IV, MM),
+        np.broadcast_to(I4, MM.shape),
+    )
+)
+
+
+def permutation_sign(perm):
+    """Exact sign of a finite permutation."""
+    inversions = sum(
+        1
+        for i in range(len(perm))
+        for j in range(i + 1, len(perm))
+        if perm[i] > perm[j]
+    )
+    return -1 if inversions % 2 else 1
 
 ROT = []
 for perm in itertools.permutations(range(3)):
@@ -104,7 +120,7 @@ for perm in itertools.permutations(range(3)):
         R = np.zeros((3, 3), dtype=np.int64)
         for i, j in enumerate(perm):
             R[i, j] = sg[i]
-        if int(round(np.linalg.det(R.astype(float)))) == 1:
+        if permutation_sign(perm) * math.prod(sg) == 1:
             ROT.append(R)
 CEN = np.array([1, 1, 1], dtype=np.int64)
 G = []
@@ -295,9 +311,14 @@ emit("Every count below is measured here.")
 emit("the object: {0} cuttings and {1} pieces, {2} pieces to a cutting, "
      "{3} cuttings through a piece".format(NS, NPO, int(RW.min()), int(CS.min())))
 gate(NS == 15800 and NPO == 192 and int(RW.min()) == int(RW.max()) == 24
-     and int(CS.min()) == int(CS.max()) == 1975 and int(RW.sum()) == int(CS.sum()),
-     "C0", "the pieces per cutting and the cuttings through a piece are each the "
-     "same number for every one of them")
+     and int(CS.min()) == int(CS.max()) == 1975 and int(RW.sum()) == int(CS.sum())
+     and len(SUB) == 4368 and NPIECE == 2672 and LO == 6 and NQ == 2736
+     and coll == 0 and face == 0 and CB == 3 and SB == 12810
+     and FULL == {24} and len(KEYMAP) == NS and INV_OK
+     and len(ROT) == 24 and len(G) == 48 and len(PMS) == len(PERMS) == 48
+     and len(CP) == 48 and CPOK and sum(OSZ) == NPO,
+     "C0", "the cell sample is collision- and boundary-free; incidence degrees, "
+     "exact inverses, and the declared action match")
 
 emit("the {0} eight piece sets no cutting uses twice meet each of the {1} cuttings "
      "between {2} and {3} times".format(NC, NS, int(COV.min()), int(COV.max())))
@@ -528,31 +549,14 @@ def rank_mod_np(A, p):
     return r
 
 
-def basis_rows(A, p, roworder):
-    """indices of rows forming a basis of the row space over the field with p"""
-    W = np.mod(A, p).astype(np.int64)
-    n, m = W.shape
-    order = list(range(n)) if roworder is None else list(roworder)
-    rowsel = []
-    used = [False] * n
-    for c in range(m):
-        colv = W[:, c].tolist()
-        i = -1
-        for r in order:
-            if not used[r] and colv[r]:
-                i = r
-                break
-        if i < 0:
-            continue
-        used[i] = True
-        rowsel.append(i)
-        inv = pow(int(W[i, c]), p - 2, p)
-        W[i] = np.mod(W[i] * inv, p)
-        hit = np.nonzero(W[:, c])[0]
-        hit = hit[hit != i]
-        if hit.size:
-            W[hit] = np.mod(W[hit] - np.outer(W[hit, c], W[i]), p)
-    return rowsel
+def certified_basis(A, r, order):
+    """Select rows certified as an integer-lattice basis by a unit minor."""
+    rs, cs = sub_full(A, PMOD, order)
+    if len(rs) != r or len(cs) != r:
+        return np.empty((0, A.shape[1]), dtype=np.int64), 0
+    basis = A[rs]
+    certificate = abs(det_exact(basis[:, cs].tolist()))
+    return basis, certificate
 
 
 def least_spot(wk, t, nr, nc):
@@ -634,17 +638,22 @@ def parts(fs):
     return sorted(out.items())
 
 
-# ------------------------------- Part 5: sharing, smallest exchanges and the lattices
+# -------------------------- Part 5: sharing, support-eight exchanges and the lattices
 
 S = M @ M.T
-OFFD = S[~np.eye(NC, dtype=bool)]
+OFFMASK = ~np.eye(NC, dtype=bool)
+OFFD = S[OFFMASK]
 SHARE = mset(OFFD)
 DIAG = sorted(set(int(x) for x in np.diag(S)))
-PER = [SHARE[k] // NC for k in sorted(SHARE)]
+SVAL = sorted(SHARE)
+SCNT = dict((v, ((S == v) & OFFMASK).sum(axis=1)) for v in SVAL)
+SFIX = all(int(SCNT[v].min()) == int(SCNT[v].max()) for v in SVAL)
+PER = [int(SCNT[v][0]) for v in SVAL]
 emit("two covers share " + msets(SHARE) + " off the diagonal and " + joins(DIAG)
      + " on it, so per cover " + joins(PER) + " of the other covers")
 gate(SHARE == {0: 30144, 1: 3840, 2: 1920, 4: 768} and DIAG == [8]
-     and PER == [157, 20, 10, 4] and sum(PER) == NC - 1, "C3",
+     and SVAL == [0, 1, 2, 4] and SFIX and PER == [157, 20, 10, 4]
+     and sum(PER) == NC - 1, "C3",
      "the sharing counts are the same for every cover and take in all {0} of the "
      "others".format(NC - 1))
 
@@ -654,16 +663,15 @@ PAIRS = [(i, j) for i in range(NC) for j in range(i + 1, NC) if int(S[i, j]) == 
 D = np.array([M[i] - M[j] for i, j in PAIRS], dtype=np.int64)
 NZC = sorted(set(int(x) for x in (D != 0).sum(axis=1)))
 DVAL = sorted(set(int(x) for x in np.unique(D)))
-emit("largest sharing {0} gives the smallest exchange, moving {1} pieces: {2} such "
+emit("maximum sharing {0} gives support-{1} exchanges: {2} such "
      "pairs, moved counts {3}, entry values {4}".format(SMAX, SUPP, len(PAIRS),
                                                         joins(NZC), joins(DVAL)))
 gate(SMAX == 4 and SUPP == 8 and len(PAIRS) == 384 and NZC == [SUPP]
      and DVAL == [-1, 0, 1], "C4",
-     "the largest sharing gives the smallest difference, since two covers sharing s "
-     "pieces differ in twice the number they do not share")
+     "exhaustive sharing values give difference support twice eight minus sharing")
 
 BLIND = INCL @ D.T
-emit("the cutting table sends every one of the {0} smallest exchanges to zero: the "
+emit("the cutting table sends all {0} support-eight exchanges to zero: the "
      "image is {1} by {2} with largest absolute value {3}".format(
          len(PAIRS), BLIND.shape[0], BLIND.shape[1], int(np.abs(BLIND).max())))
 gate(BLIND.shape == (NS, len(PAIRS)) and int(np.abs(BLIND).max()) == 0, "C5",
@@ -673,11 +681,11 @@ gate(BLIND.shape == (NS, len(PAIRS)) and int(np.abs(BLIND).max()) == 0, "C5",
 RKI = rank_exact((INCL.T @ INCL).tolist())
 RKM = rank_exact((M.T @ M).tolist())
 RKD = rank_exact((D.T @ D).tolist())
-emit("exact rank over the rationals: cutting table {0}, cover table {1}, smallest "
+emit("exact rank over the rationals: cutting table {0}, cover table {1}, support-eight "
      "exchanges {2}, and {0} plus {2} is {3}".format(RKI, RKM, RKD, RKI + RKD))
 gate(RKI == 88 and RKM == 105 and RKD == 104 and RKI + RKD == NPO, "C6",
-     "a matrix and its product with its transpose share a kernel, so the smallest "
-     "exchanges span the whole blind space over the rationals")
+     "a matrix and its product with its transpose share a kernel, so the support-eight "
+     "exchanges span the full rational kernel")
 
 GI, DI = divisor_witness(INCL, RKI)
 emit("two {0} by {0} minors of the cutting table, from opposite column orders, have "
@@ -694,12 +702,12 @@ gate(GM == 1 and DM == [1, 1], "C8",
      "characteristic and a quotient free of rank {1}".format(RKM, NPO - RKM))
 
 GD, DD = divisor_witness(D, RKD)
-emit("two {0} by {0} minors of the smallest exchanges have absolute values {1} and "
+emit("two {0} by {0} minors of the support-eight exchanges have absolute values {1} and "
      "greatest common divisor {2}, so their row lattice is saturated".format(
          RKD, joins(DD), GD))
 gate(GD == 1 and DD == [1, 1], "C9",
-     "{0} smallest exchanges are an integer basis of the blind lattice: every integer "
-     "blind vector is an integer combination of them".format(RKD))
+     "the 384 support-eight exchanges generate the integer kernel and contain a "
+     "{0}-row determinant-one basis".format(RKD))
 
 ALL = np.array([M[0] - M[j] for j in range(1, NC)], dtype=np.int64)
 RKA = rank_exact((ALL.T @ ALL).tolist())
@@ -708,8 +716,8 @@ emit("the {0} differences from a single cover have exact rank {1}, two minors of
      "absolute value {2} and greatest common divisor {3}".format(
          len(ALL), RKA, joins(DA), GA))
 gate(RKA == 104 and GA == 1 and DA == [1, 1], "C10",
-     "one cover with its differences to the rest already gives an integer basis of the "
-     "same blind lattice")
+     "the 191 fixed-cover differences generate the integer kernel and contain a "
+     "104-row determinant-one basis")
 
 DGV = [2, 6, 12]
 CTLM = np.diag(np.array(DGV, dtype=np.int64))
@@ -737,26 +745,24 @@ gate(RI == [88] and RM == [105] and RSC == 105 and CTL == CTLE
      "C7 forces this at every prime: a determinant one minor stays invertible, and "
      "prime field rank never exceeds rational rank")
 
-FACS, OKS, RKS, BAS = [], [], [], []
-for ordL, ordK in ((None, None),
-                   (range(NS - 1, -1, -1), range(len(PAIRS) - 1, -1, -1))):
-    rL = basis_rows(INCL, PMOD, ordL)
-    rK = basis_rows(D, PMOD, ordK)
-    AL = INCL[rL]
-    BK = D[rK]
+FACS, OKS, RKS, CERTS, BAS = [], [], [], [], []
+for order in (range(NPO), range(NPO - 1, -1, -1)):
+    AL, certL = certified_basis(INCL, RKI, order)
+    BK, certK = certified_basis(D, RKD, order)
     IDX = abs(det_exact(np.vstack([AL, BK]).tolist()))
     GL = abs(det_exact((AL @ AL.T).tolist()))
     GK = abs(det_exact((BK @ BK.T).tolist()))
-    RKS.append((len(rL), len(rK)))
+    RKS.append((len(AL), len(BK)))
+    CERTS.append((certL, certK))
     OKS.append(IDX == GL and GL == GK and IDX > 1)
     FACS.append(pfac(IDX))
     BAS.append((AL, BK))
-emit("the measured lattice and the blind lattice glue with index {0}, agreeing three "
-     "ways and from both choices of basis".format(fshow(FACS[0])))
+emit("the row lattice plus its integer kernel has quotient index {0}, agreeing three "
+     "ways and from two certified basis pairs".format(fshow(FACS[0])))
 gate(all(OKS) and len(OKS) == 2 and FACS[0] == FACS[1] and len(FACS[0]) > 0
-     and RKS == [(RKI, RKD), (RKI, RKD)], "C13",
-     "orthogonal complements over the rationals, each saturated, yet their sum has "
-     "this index: an integer piece labelling does not split")
+     and RKS == [(RKI, RKD), (RKI, RKD)] and CERTS == [(1, 1), (1, 1)], "C13",
+     "unit-minor certificates make both selected row sets integer bases, and the "
+     "stacked determinant gives the quotient index")
 
 FGL = invfac((BAS[0][0] @ BAS[0][0].T).tolist())
 FGK = invfac((BAS[0][1] @ BAS[0][1].T).tolist())
@@ -765,12 +771,13 @@ PGL, PGK, PST = parts(FGL), parts(FGK), parts(FST)
 NCY = sum(c for _, c in PST)
 BIG = max(FST)
 emit("one finite group of piece labels modulo the two lattices from the {0} by {0} "
-     "measured, the {1} by {1} blind and the {2} by {2} stacked".format(RKI, RKD, NPO))
+     "row, the {1} by {1} kernel and the {2} by {2} stacked matrices".format(
+         RKI, RKD, NPO))
 emit("it has {0} cyclic parts, of order:count {1}".format(NCY, msets(dict(PST))))
 gate(PGL == PGK and PGK == PST and NCY == 42 and len(FGL) == RKI
      and len(FGK) == RKD and len(FST) == NPO, "C14",
-     "three matrices of three different sizes give the same finite group, so it belongs "
-     "to the pair of lattices and not to one measurement")
+     "the two Gram presentations and the stacked presentation have the same "
+     "nontrivial invariant factors")
 
 PRD = 1
 for d in FST:
@@ -781,8 +788,7 @@ emit("the parts divide one another in turn and multiply to the index above, so t
      .format(BIG, BIG // NPO, NPO))
 gate(CHN and pfac(PRD) == FACS[0] and BIG == 5 * NPO
      and BIG == max(d for d, _ in PST), "C15",
-     "the smallest whole number that carries every integer piece labelling into an "
-     "integer measured part plus an integer blind part")
+     "the largest invariant factor is the exponent of the finite quotient")
 
 KA = invfac([[2]])
 KB = invfac([[2, 0, 0], [0, 6, 0], [0, 0, 12]])
@@ -803,18 +809,18 @@ GKC = abs(det_exact((BCT @ BCT.T).tolist()))
 emit("control in the integer plane: stacked determinant {0}, and the two inner product "
      "determinants {1} and {2}".format(IC, GLC, GKC))
 gate(IC == 2 and GLC == 2 and GKC == 2, "C17",
-     "an index known by hand to be 2, so the measurement returns something other than "
-     "one when the gluing is not trivial")
+     "the hand-computed index-two example exercises all three index presentations")
 
 ELAP = time.monotonic() - T0
-RSS = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1048576.0
-EBD = 300 * (int(ELAP // 300) + 1)
+RAW_RSS = float(resource.getrusage(resource.RUSAGE_SELF).ru_maxrss)
+RSS = RAW_RSS / (1024.0 * 1024.0) if sys.platform == "darwin" else RAW_RSS / 1024.0
+EBD = 30 * (int(ELAP // 30) + 1)
 RBD = 500 * (int(RSS // 500) + 1)
 emit("elapsed under {0} s and peak memory under {1} MB, both measured in this "
      "run".format(EBD, RBD))
-gate(ELAP < 900.0 and RSS < 2500.0 and EBD <= 900 and RBD <= 2500, "C18",
+gate(ELAP < AUDIT_TIMEOUT_SEC and RSS < 2500.0
+     and EBD <= AUDIT_TIMEOUT_SEC and RBD <= 2500, "C18",
      "inside its time and memory allowance")
 
 emit("TOTAL: PASS={0} FAIL={1}".format(PF[0], PF[1]))
-if PF[1]:
-    raise SystemExit(1)
+raise SystemExit(1 if PF[1] else 0)

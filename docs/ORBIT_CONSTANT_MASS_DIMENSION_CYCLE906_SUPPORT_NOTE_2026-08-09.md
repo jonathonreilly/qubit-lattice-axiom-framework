@@ -139,11 +139,12 @@ would break if the statement were false is named beside it.
    enumerated set must equal the claimed set exactly.
 
 5. **Two exhibited representatives.** Wherever a disjoint orbit exists, the
-   **fibre-uniform** weighting (equal value on every fibre point of one
-   disjoint orbit) and the **concentrated** weighting (a base point's whole
-   share on its first fibre point) are both non-negative, normalized
-   solutions with the SAME pushforward mass. On 5,547 of the 14,374 swept
-   instances they are distinct, and they are distinct exactly when their
+   **fibre-uniform** weighting (uniform within each fibre, with equal total
+   mass at each base point of one disjoint orbit) and the **concentrated**
+   weighting (a base point's whole share on its first fibre point) are both
+   non-negative, normalized solutions with the SAME pushforward mass. On
+   5,547 of the 14,374 swept instances they are distinct, and they are
+   distinct exactly when their
    zero counts differ. A zero count is therefore a property of an exhibited
    representative, not of the solution set.
 

@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/physical_cell_cutting_fold_invariant_global_census_cycle790_2026_08_15.py
+runner_sha256: 14ba90e3017708511877a343c11bc67a720406680ee14d256902271860087f14
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 23.87
+status: ok
+----- stdout -----
+PASS G1 2672 pieces, floor 6, 400 kept, 15800 cuttings of 24, 192 used, cell group 384, slot subgroup 96, 20 composition pairs clean
+PASS G2 16 letters on each of 8 slots, multiplicity census {862: 12, 1364: 4}, trace 2000, 48 entries at 36, 48 fibers of 36 cuttings
+PASS G3 the 48 fiber folds are 6 distinct maps, census {8: 6}; each holds axis 0, swaps two of axes 1 2 3, 2 masks per swap, all side-swapping
+G3 detail: the folds are (0,1,3,2)/3 (0,1,3,2)/15 (0,2,1,3)/9 (0,2,1,3)/15 (0,3,2,1)/5 (0,3,2,1)/15
+PASS G4 the sample fold holds 336 of the 15800 cuttings, entry census {36: 112, 100: 92, 104: 36, 200: 96}, spread over 16 letter pairs
+G4 detail: per-pair count census {10: 2, 14: 8, 18: 2, 36: 2, 48: 2}; the 8 fibers this fold serves hold 14 each, 112 in all
+PASS G5 all 6 folds hold 336 cuttings with the same entry census {36: 112, 100: 92, 104: 36, 200: 96}
+PASS G6 outside the 8 wall fibers the fold holds 224 cuttings on 8 letter pairs, every per-pair count even
+G6 detail: entry 200 pairs (1,1) and (15,15) hold 48 each; entry 100 pairs (3,3) and (14,14) hold 36, (5,5) and (10,10) hold 10
+G6 detail: entry 104 pairs (6,8) and (8,6) hold 18 each, so the remainder splits as 96 plus 72 plus 20 plus 36
+PASS G7 the centralizer of the sample fold has order 32, closed under composition, 16 members hold axis 0, all 32 hold the 336 cuttings
+PASS G8 the centralizer has 31 orbits on the 336 held cuttings, size census {4: 4, 8: 14, 16: 13}
+PASS G9 the axis-0 side flip commutes with all 6 folds and pairs the 336 held cuttings with no fixed member, cycle census {2: 168}
+G9 detail: 12 of the 32 centralizer members hold no cutting of the 336 and 4 of those are pure two-cycles, so the global count is even
+PASS G10 only 2 centralizer members hold the sample fiber's 14 cuttings; the 16 axis-0 members hit each of the 8 fibers 2 times
+G10 detail: the side flip pairs the fibers (0,4)-(4,0) (2,9)-(9,2) (7,11)-(11,7) (12,13)-(13,12), holding none of the 8
+G10 detail: 6 of the 16 letter pairs are held by the side flip, (1,1) (3,3) (5,5) (10,10) (14,14) (15,15), each with an even count and none fixed
+PASS G11 the 400 kept pieces give 200 two-orbits, no singleton and no overlap; the cover of the 625 sample points has 336 solutions of 12
+G11 detail: the 336 quotient solutions are exactly the 336 cuttings the fold holds, as sets of pieces
+PASS G12 the 336 quotient solutions carry the same 16 letter pairs with count census {10: 2, 14: 8, 18: 2, 36: 2, 48: 2}
+resource: under 60 s, under 250 MB
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

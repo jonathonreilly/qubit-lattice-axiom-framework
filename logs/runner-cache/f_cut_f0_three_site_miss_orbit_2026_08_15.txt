@@ -1,0 +1,47 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_f0_three_site_miss_orbit_2026_08_15.py
+runner_sha256: 626cc9780cdf711fd9fd8fbf5142ce2931c535eab7d14324d53c2bda8048e41e
+input_fingerprint_sha256: 3470e4c8eb6e6eaf3881628117a8d3cc2c26b13c9b1ab4443e1db4216401e2c9
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+external_scientific_inputs: none; two-cube occupancy and cut-map bits only
+package_local_integrity_reads: proposed source note and live axiom memo only
+measure_boundary: exact integer lock counts; no floating-point inputs
+claim_boundary: displayed orbit type; f0 is not adopted
+PASS: geometry-two-cube the two-cube has 12 sites
+PASS: geometry-three-site-count there are exactly 220 three-site seeds
+PASS: group-from-proper-cube G is the two-cube-preserving subset of the 24 proper cube rotations
+PASS: group-contains-identity the identity is two-cube-preserving
+PASS: thm1-cov3-reconfirm cov3(f0) = 212
+PASS: thm1-miss-count |M| = 8
+PASS: thm1-complement 220 - cov3(f0) equals |M|
+PASS: control-l1-and-f1-fill-all f_L1 and f1 fill all 220 three-site seeds
+PASS: thm2-orbit-count N_orb = 1
+PASS: thm2-orbit-size the single orbit contains all eight missed seeds
+PASS: thm2-lex-representative the lex representative is {(0,0,0),(1,0,1),(2,0,0)}
+PASS: thm2-rep-unfilled f0 does not fill the representative (halt history (3, 8, 10))
+N_orb=1
+lex_representatives=(((0, 0, 0), (1, 0, 1), (2, 0, 0)),)
+PASS: thm3-f0-not-l1 f0 is not f_L1; L1 is n!=0 (some axis unbalanced)
+PASS: thm3-f0-not-hamming f0 is not Hamming parity of the six neighbor bits
+PASS: mutation-eight-orbits-fails the leftover 8-row reading N_orb=8 is rejected
+PASS: mutation-rep-is-not-all-of-M one representative is displayed; M is not republished as eight types
+PASS: forbidden-substrings the note omits the dispatch-forbidden phrases
+PASS: display-not-adopt the note displays N_orb and refuses adoption of f0
+PASS: no-eight-row-claim-table the claim surface does not publish an 8-row leftover table
+PASS: live-parent-quotes Lattice, Admissibility, and Record sentences are quoted without rewrite
+PASS: machine-status-contract bounded-support status and no axiom adoption are source-visible
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: scope-not-nogo the note is a bounded display, not a no-go
+per_element: each missed 3-site seed is tested by the lock evolution of f0
+per_site: occupancy is the two-cube with off-patch o=0; no other patch is used
+per_mode: G is the two-cube-preserving subset of the 24 proper cube rotations
+per_block: N_orb and one lex representative are the displayed claim
+lattice_wide: checked and not executed — no Z^3-wide selector or adoption
+TOTAL: PASS=23 FAIL=0
+
+----- stderr -----
+

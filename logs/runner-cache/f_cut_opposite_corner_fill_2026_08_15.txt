@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_opposite_corner_fill_2026_08_15.py
+runner_sha256: 7a4d17cf504e60f9929e0de3a2a107492f039c89e0df65de3533272a54f2139a
+input_fingerprint_sha256: 37068120083bbad53c95335e4c9f16e1c6468ad72840ddf2768b68455ecf1896
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: none; S-star, F_cut, and o=0 are displayed
+package_local_integrity_reads: runner source, proposed source note, live axiom memo
+measure_boundary: exact finite occupancy locks on twelve sites
+negative_scope: no Admissibility rewrite and no unique-filler claim
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: two-cube-and-seed twelve-site two-cube and opposite-corner seed S-star
+PASS: orbit-census-10 ten directed-axis orbits partition the 64 cells
+PASS: f-cut-cardinality-32 F_cut has 32 complement-even empty-full-silent maps
+PASS: thm1-fl1-in-fcut f_L1 is the F_cut bit-tuple (1, 0, 1, 1, 1)
+PASS: thm1-fl1-is-n-neq-0 f_L1 fires exactly on cells with at least one unbalanced axis
+PASS: thm1-fl1-not-hamming f_L1 is n != 0 and is not Hamming parity
+PASS: thm1-history-2-8-12 f_L1 fills from S-star with lock history (2, 8, 12)
+PASS: thm2-n-cutopp N_cutopp equals 4
+PASS: thm3-not-unique f_L1 is not the unique S-star filler in F_cut
+PASS: thm3-display-other-tuple another filler is the remaining-bit tuple (1, 0, 1, 1, 0)
+PASS: seed-contrast-one-and-face same 32 maps give eight 1-site fillers and four face-diagonal fillers
+PASS: fmin-does-not-fill-sstar the support-26 n_both=0 rival does not fill from S-star
+PASS: hamming-one-site-nine Hamming parity is in F_cut and reaches nine locks from 1-site
+PASS: mutation-unique-fails predicate N_cutopp == 1 fails
+PASS: displayed-not-adopted note displays the census and refuses adoption
+PASS: axiom-boundary-quotes Lattice covariance and Record lock sentences are quoted, not rewritten
+PASS: machine-status-contract note carries the bounded-support status and no hypothetical axiom adoption
+PASS: claim-type-and-gate bounded theorem type and a passing N1-N8 gate are source-visible
+PASS: forbidden-phrases-absent note omits the five forbidden phrases
+per_element: checked exactly — each of the 32 F_cut maps is run from S-star
+per_site: checked exactly — lock counts are on the twelve two-cube sites
+per_mode: checked exactly — one occupancy predicate class and one opposite-corner seed
+per_block: checked exactly — N_cutopp=4 and f_L1 is not unique among those four
+lattice_wide: checked and not executed — no Z^3-wide law or Admissibility rewrite is claimed
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

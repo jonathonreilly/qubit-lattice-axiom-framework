@@ -1,0 +1,66 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_cov66_three_site_first_split_2026_08_15.py
+runner_sha256: f80e82d20515588c742f2489f9303671f282c42891240c2fd582a8f101beac9a
+input_fingerprint_sha256: d58f208c5d4ba4a0a68e3ceb0cb8c7f2d944b836540d7e02a18ddabbd8360d89
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_COV66_THREE_SITE_FIRST_SPLIT_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+n_rotations=24
+n_orbits=10
+remaining_labels=('wt1', 'opp2', 'adj2', 'vertex3', 'mixed3')
+n_two_site_seeds=66
+n_three_site_seeds=220
+f0_remaining=(1, 1, 1, 1, 0)
+f1_remaining=(1, 1, 1, 1, 1)
+f_L1_remaining=(1, 0, 1, 1, 1)
+cov_f0=66
+cov_f1=66
+two_site_fill_agreement=True
+first_three_site_split=[(0, 0, 0), (1, 0, 1), (2, 0, 0)]
+f0_history=(3, 8, 10) fill=False
+f1_history=(3, 9, 12) fill=True
+one_site_f0_history=(1, 4, 8, 11, 12) fill=True
+one_site_f1_history=(1, 4, 8, 11, 12) fill=True
+one_site_f_L1_history=(1, 4, 8, 11, 12) fill=True
+display_site=(1, 0, 0)
+display_neighborhood=(1, 1, 0, 0, 1, 0)
+display_axis_type=(1, 1, 1)
+f0_on_display=0
+f1_on_display=1
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required note-plus-axiom string-literal tuple
+PASS: thm1-twenty-four-rotations exactly 24 proper cube rotations
+PASS: thm1-ten-orbits exactly 10 orbits partition the 64 cells of {0,1}^6
+PASS: thm1-remaining-bits-and-f-cut f0 and f1 are the named F_cut remaining-bit tuples
+PASS: thm1-f-L1-not-hamming f_L1 is unbalanced-axis / n != 0, not Hamming |c|_1 mod 2
+PASS: thm1-two-cube-seed-counts the two-cube has twelve vertices, 66 two-site seeds, and 220 three-site seeds
+PASS: thm1-cov66-and-two-site-agreement both maps have two-site cov=66 and agree on every 2-site fill
+PASS: thm1-first-three-site-split the first 3-site fill disagreement is {(0,0,0),(1,0,1),(2,0,0)}
+PASS: thm2-lock-histories on S* the lock histories are f0:(3,8,10) unfilled and f1:(3,9,12) filled
+PASS: thm2-one-site-agrees-with-l1 1-site halt of either maximizer agrees with f_L1 history (1,4,8,11,12)
+PASS: thm3-mixed3-display-neighborhood the first-wave neighborhood of (1,0,0) on S* is mixed3; f0=0, f1=1
+PASS: thm3-display-not-adopted the first-split seed and both maps are displayed and not adopted
+PASS: lattice-and-admissibility-parents the live axiom memo supplies Z^3, proper cubic rotations, and a covariant nearest-neighbor rule
+PASS: note-contract bounded theorem, displayed-not-adopted first split, and machine status
+PASS: claim-type-and-gate N1-N8 and a passing no-go disposition are source-visible
+PASS: forbidden-phrases-absent the note and runner omit the dispatch-forbidden phrases
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: not-an-s-census-or-leftover-ten the residual is the first fill-split seed, not an |S| census and not leftover-character of #6427
+PASS: off-patch-zero off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: claim-scope-first-split claim_scope names the first 3-site seed and the two fill verdicts
+PASS: no-axiom-edit the theorem proposes no axiom change
+per_element: checked exactly — each of the 64 neighbor 6-tuples is assigned its axis-type orbit
+per_site: checked exactly — each of the twelve two-cube vertices uses the same six-direction stencil
+per_mode: checked exactly — both cov=66 maximizers are scored on every 2-site seed and walked in combinations order on 3-site seeds until the first fill disagreement
+per_block: checked exactly — the first-split seed, the two lock histories, and the mixed3 neighborhood of (1,0,0) are displayed
+lattice_wide: checked and not executed — no Z^3-wide formation law or physical Admissibility selector is claimed
+TOTAL: PASS=21 FAIL=0
+
+----- stderr -----
+

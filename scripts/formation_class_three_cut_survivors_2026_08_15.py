@@ -95,8 +95,16 @@ def l1_weight(mask: int) -> int:
     return mask.bit_count()
 
 
-def f_l1(mask: int) -> int:
+def f_parity(mask: int) -> int:
     return l1_weight(mask) % 2
+
+
+def f_l1(mask: int) -> int:
+    # L1 form iff n≠0: at least one axis is unbalanced.
+    for plus, minus in ((0, 1), (2, 3), (4, 5)):
+        if ((mask >> plus) & 1) != ((mask >> minus) & 1):
+            return 1
+    return 0
 
 
 def orbit_of(mask: int, rotations: tuple[tuple[int, ...], ...]) -> frozenset[int]:
@@ -449,6 +457,11 @@ def main() -> int:
         f_l1(mask) == f_l1(apply_perm(mask, rot))
         for mask in cells
         for rot in rotations
+    )
+    checks.check(
+        "theorem-3-l1-is-not-hamming-parity",
+        "displayed f_L1 is n≠0, not Hamming parity",
+        any(f_l1(mask) != f_parity(mask) for mask in cells),
     )
     checks.check(
         "theorem-3-l1-in-fcut",

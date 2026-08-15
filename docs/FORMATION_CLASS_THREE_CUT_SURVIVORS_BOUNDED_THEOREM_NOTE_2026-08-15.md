@@ -54,11 +54,12 @@ non-empty/non-full complement-fixed orbit. Hence
 
 `N_free = 5`, `|F_cut| = 32 = 2^{N_free}`.
 
-**Theorem 3.** The displayed L1-parity predicate
+**Theorem 3.** The displayed L1 predicate
 
-`f_L1(c) = |c|_1 mod 2`
+`f_L1(c) = 1` iff at least one axis is unbalanced (`c_{+μ} ≠ c_{-μ}`)
 
-lies in `F_cut`. Because `|F_cut| > 1`, it is not unique. L1 still needs
+lies in `F_cut`. Hamming parity `|c|_1 mod 2` is a different element of
+`F_cut`. Because `|F_cut| = 32 > 1`, `f_L1` is not unique. L1 still needs
 another extra. Do not adopt a member.
 
 ## Current Premise Boundary
@@ -135,9 +136,11 @@ Two cells lie in the same orbit when a proper rotation carries one to the
 other. Cube-covariant predicates are arbitrary `{0,1}` assignments to the
 `N_orb` orbits. That is the raw class `F_G`.
 
-The displayed L1 member is the parity of Hamming weight,
+The displayed L1 member is the occupancy kernel threshold
 
-`f_L1(c) = |c|_1 mod 2`.
+`f_L1(c) = 1` iff `c_{+μ} ≠ c_{-μ}` for some axis `μ`.
+
+Hamming parity `|c|_1 mod 2` is a different cube-covariant predicate.
 
 It is a function of the L1 count alone. It is displayed comparison data,
 not axiom content and not a selected law.
@@ -218,23 +221,17 @@ cuts.
 
 ## Theorem 3 — `f_L1` Lies In `F_cut` And Is Not Unique
 
-Hamming weight is rotation-invariant, so `f_L1` is cube-covariant. Empty
-and full have even weight, so `f_L1(empty)=f_L1(full)=0`. Complement
-sends weight `w` to `6-w`. Because 6 is even,
-
-`|1-c|_1 ≡ |c|_1 (mod 2)`,
-
-so `f_L1` is complement-even. Therefore `f_L1 ∈ F_cut`. Its five free
-bits are `(1,0,0,1,1)` on the ordered list
-
-`({wt1,wt5},{opp2,opp4},{adj2,adj4},vertex3,mixed3)`.
-
-`|F_cut| = 32 > 1`, so `f_L1` is not unique. An explicit second survivor
-is the indicator of the `vertex3` orbit, which vanishes on empty and full,
-is complement-even because that orbit is complement-fixed, and disagrees
-with `f_L1` on `wt1` and on `mixed3`. L1 still needs another extra. The
-three displayed cuts do not select a unique member. Do not adopt `f_L1`.
-Do not adopt the `vertex3` indicator. Do not adopt any other survivor.
+Unbalanced-axis count is rotation-invariant, so `f_L1` is cube-covariant.
+Empty and full are axis-balanced, so `f_L1(empty)=f_L1(full)=0`. Complement
+sends `c_{+μ}-c_{-μ}` to its negative, so `n≠0` is complement-even.
+Therefore `f_L1 ∈ F_cut`. Hamming parity `|c|_1 mod 2` is a different
+element of `F_cut`. `|F_cut| = 32 > 1`, so `f_L1` is not unique. An
+explicit second survivor is the indicator of the `vertex3` orbit, which
+vanishes on empty and full, is complement-even because that orbit is
+complement-fixed, and disagrees with `f_L1` on `wt1`. L1 still needs
+another extra. The three displayed cuts do not select a unique member.
+Do not adopt `f_L1`. Do not adopt Hamming parity. Do not adopt the
+`vertex3` indicator.
 
 ## Exact Target And Obligation Graph
 
@@ -289,7 +286,7 @@ No global impossibility of a later extra is claimed.
 |---|---|---|
 | raw class `F_G` | assign a free bit to each of 10 orbits | size 1024; leftover-char inventory, not the residual |
 | three displayed cuts | vanish on empty and full, force `f(c)=f(1-c)` | size 32; executed |
-| `f_L1` | Hamming parity of the six-ray occupation | one displayed survivor; not unique |
+| `f_L1` | form iff at least one axis is unbalanced | one displayed survivor; not unique |
 | `vertex3` indicator | fire only on the complement-fixed corner orbit | second displayed survivor |
 | further symmetry extra | impose another independent invariance | live route; not executed |
 | Record or Admissibility selector | derive a unique member from current axioms | not supplied by the quoted sentences |

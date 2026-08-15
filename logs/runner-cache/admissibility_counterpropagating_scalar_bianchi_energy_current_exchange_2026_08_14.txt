@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_counterpropagating_scalar_bianchi_energy_current_exchange_2026_08_14.py
+runner_sha256: cf0aba9d2b9dee4832d818579e4b579a6a48d258d298f6bf623b0f9d2421d65e
+input_fingerprint_sha256: dc30be1c7a4137ce30b4d27a4da3ccd88bd2d17e1a18118d645dc7f1381ecea3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.43
+status: ok
+----- stdout -----
+[PASS] A-current-axiom-and-Block96-parent-authority: origin/main, current axioms, and the complete Block96 theorem/runner chain are content-b...
+       origin/main=eee6ab5874; child missing/loaded=0/0; parent loaded=0
+[PASS] B-exact-free-scalar-local-energy-current-cochain: one nearest-neighbour site energy and bond current obey the off-shell local identity and...
+       random=48; local/global=<3e-10/<3e-10; shell=247 {3: 13, 4: 28, 5: 25, 6: 68, 7: 37, 8: 76}; T match=<3e-10
+[PASS] C-full-L5-counterpropagating-source-including-interference: the exact two-wave source retains q=0 and both compulsory q=plus/minus 4pi/5 density com...
+       keys=[(0, 0, 0, 0), (2, 0, 0, 0), (3, 0, 0, 0)]; source/Hermitian/Ward=<3e-10/<3e-10/<3e-10; min rho=0.345492; charge/improvement=<3e-10/0.690983
+[PASS] D-q0-trace-shear-and-qnonzero-constraint-embedding: the actual DeWitt map gives the trace/shear kinetic form, one axisymmetric shear resolve...
+       rho=1.809017; decomposition/DeWitt/inhom=<3e-10/<3e-10/<3e-10; trace-only miss=1.477056
+[PASS] E-common-reduced-Hamiltonian-jet-and-dynamic-exchange: the Block95 interaction gradient supplies one trace/shear Hamiltonian whose exact constr...
+       cases/branches=64/{-1: 32, 1: 32}; jet/flow/C/kick=<3e-10/<3e-10/<3e-10/<3e-10; chart gap=0.1545
+[PASS] F-leading-front-step-exchange-defect-cancels: the same matter-energy jet cancels the complete order-A^3 frozen-source residual on both...
+       cases=128; formula/cancel=<3e-10/<3e-10/<3e-10; orders frozen/joint=(3.0061918672056467, 2.9936397273478184)/(3.999999999961728, 4.000000000177623)
+[PASS] G-partial-coupled-exchange-and-TOE-scope: the positive bridge does not claim the quartic action, full Ward identity, total Noether...
+[PASS] H-no-go-discipline-demotes-every-gravity-negative: N1 and N7 fail; the quartic remainder is a construction target and rejects neither bound...
+AXIOM_AUTHORITY: origin/main=eee6ab5874e2fc207db5526dc82d9f71ae550c7c axiom=bc23300becfe4e4db57153c0e94cfcdf2338da71; Block96 parent=75ee8bdaccb28bb4d5689dd656a1c15dd00a3188
+per_element: checked — exact site energy, bond flux, q=0 trace/shear projections, and both volume-momentum branches
+per_site: checked — the free scalar local balance and bounded L=5 standing-source support; the nonlinear joint action remains unconstructed
+per_mode: checked — all 247 exact shell modes L=3..8 plus q=0 and both compulsory standing-wave interference transfers
+per_block: checked — common reduced Hamiltonian flow and one-front-step defect improvement from order A^3 to order A^4
+lattice_wide: checked and not executed — full order-h-phi^2 Ward closure, joint discrete Noether law, full-Z3 control, Record compilation, law selection, and retention remain open
+RESULT: on diagonal plane-wave/q=0 coefficients Block95 Ttt/Tti equal the exact free-scalar energy/current cochain; the L=5 source requires trace plus one shear and two inhomogeneous density modes, and reciprocal q=0 matter work removes the leading frozen-source defect
+PORTFOLIO: the next gravity calculation must solve the order-A^4 seagull/cubic/interference coefficient system from one common bounded-local action; a comparator-only result triggers a seam pivot
+SCOPE: standing-wave local energy/source improvement matching, full nonlinear lattice gravity, total discrete Noether energy, Record compilation, selected law, axiom amendment, audit verdict, obligation retirement, retention, and TOE movement remain open
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

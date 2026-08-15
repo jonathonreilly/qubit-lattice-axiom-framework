@@ -1,6 +1,6 @@
 {
- "edge_count": 15875,
- "node_count": 5527,
+ "edge_count": 15880,
+ "node_count": 5528,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -384,6 +384,10 @@
   },
   "admissibility_component_staggered_signed_link_action_local_ward_boundary_bounded_theorem_note_2026-08-14": {
    "deps_hash": "b0f2ed17a016",
+   "out_degree": 5
+  },
+  "admissibility_counterpropagating_scalar_bianchi_trace_shear_energy_current_exchange_boundary_bounded_theorem_note_2026-08-14": {
+   "deps_hash": "a002afe2d954",
    "out_degree": 5
   },
   "admissibility_curved_regge_pseudoconstraint_perfect_action_route_gate_bounded_theorem_note_2026-08-12": {

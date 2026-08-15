@@ -1,0 +1,50 @@
+===== runner cache v1 =====
+runner: scripts/f_mix0_l1_first_disagreeing_neighborhood_2026_08_15.py
+runner_sha256: 80f9a9abcd0cfd9e80a3b4601bc176603831e835afe8616bd10bcdc2ed51e9ca
+input_fingerprint_sha256: d6e8e28e187c633ba61961c7825b31b51245d9ff31e37f1ce9bcfee308dfc9d6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+external_scientific_inputs: current Lattice, Admissibility, and Record boundaries; no observations or fits
+integrity_reads: this runner, its note, and the live axiom memo; no other scientific inputs
+construction: two independent occupancy-to-lock runs from the displayed seed S
+negative_scope: neither map, mixed3, nor the disagreeing stencil is adopted or written into Admissibility
+cache_write: false
+AUDIT_INPUT_PATHS:
+  docs/F_MIX0_L1_FIRST_DISAGREEING_NEIGHBORHOOD_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+PASS: audit-inputs declared source-bound inputs exist as static literals
+PASS: source-lattice current cubic nearest-neighbor wording is pinned
+PASS: source-admissibility current local-distribution wording is pinned
+PASS: source-formation-boundary formation site, probability, and rate remain outside Admissibility
+PASS: source-record-and-non-dynamics Record lock wording and the non-dynamics Admissibility boundary are pinned
+PASS: two-cube-and-seed the two-cube has twelve lexicographic vertices and the displayed seed S
+PASS: off-patch-zero every off-patch neighbor contributes occupancy 0
+PASS: axis-type-reps declared orbit representatives have the stated axis types
+PASS: f-mix0-rule f_mix0 is L1 with mixed3=0: remaining bits (1,0,1,1,0)
+PASS: f-l1-is-n-unbalanced f_L1 is the n!=0 (some-axis-unbalanced) map, not Hamming parity
+PASS: maps-disagree-only-on-mixed3 the maps disagree on mixed3 and agree on wt1, opp2, adj2, vertex3, type210
+run_L1: history=(3, 8, 11, 12) fill=True halt_tick=3
+run_mix0: history=(3, 8, 10) fill=False halt_tick=2
+first_disagreeing_neighborhood_L1_run: t=2 x=(1, 0, 0) axis_type=(1, 1, 1) stencil=(1, 1, 0, 0, 1, 0) f_L1=1 f_mix0=0
+first_disagreeing_neighborhood_mix0_run: t=2 x=(1, 0, 0) axis_type=(1, 1, 1) stencil=(1, 1, 0, 0, 1, 0) f_L1=1 f_mix0=0
+PASS: theorem-1-reconfirm-fill from S f_L1 fills with history (3, 8, 11, 12) and f_mix0 does not fill with (3, 8, 10)
+PASS: theorem-2-first-disagreeing-neighborhood the first disagreeing neighborhood is t=2, x=(1,0,0), type (1,1,1)
+PASS: both-runs-same-first-split the two independent runs share the locked set through the first split
+PASS: theorem-3-display-stencil the first disagreeing stencil is the displayed 6-tuple (1,1,0,0,1,0)
+PASS: no-split-before-tick-2 no unlocked site disagrees at tick 1; the first wave is shared wt1
+PASS: note-contract machine fields, first-neighborhood statement, and forbidden-phrase hygiene hold
+PASS: not-leftover-or-clone the claim is a new neighborhood object, not leftover seed-naming of #6437 or #6439
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+per_element: axis-type representatives and off-patch occupancy 0 are enumerated
+per_site: each unlocked two-cube vertex is tested against both displayed lock predicates
+per_mode: checked and not executed — no spectral claim occurs
+per_block: both independent runs from S are executed tick by tick to a fixed point
+lattice_wide: checked and not executed — neither map, mixed3, nor the stencil is adopted
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

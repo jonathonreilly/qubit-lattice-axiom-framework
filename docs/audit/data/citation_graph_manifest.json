@@ -1,6 +1,6 @@
 {
- "edge_count": 15653,
- "node_count": 5507,
+ "edge_count": 15656,
+ "node_count": 5508,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -369,6 +369,10 @@
   "admissibility_rule_covariance_extension_classification_openness_achiral_oriented_frame_minimal_chiral_channel_bounded_theorem_note_2026-07-03": {
    "deps_hash": "d69dd5ba8c7f",
    "out_degree": 4
+  },
+  "admissibility_six_neighbor_affine_cq_channel_solder_support_boundary_bounded_theorem_note_2026-08-14": {
+   "deps_hash": "29905bc38241",
+   "out_degree": 3
   },
   "admissibility_support_constrains_content_not_formation_site_bounded_theorem_note_2026-08-13": {
    "deps_hash": "c8eee4235fc9",

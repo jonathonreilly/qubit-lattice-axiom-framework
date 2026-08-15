@@ -1,5 +1,5 @@
 {
- "edge_count": 15742,
+ "edge_count": 15741,
  "node_count": 5541,
  "nodes": {
   "3d_correction_master_note": {
@@ -13846,6 +13846,10 @@
    "deps_hash": "bca611691dd8",
    "out_degree": 1
   },
+  "physical_cell_cutting_finite_orbit_ranks_cycle763_bounded_theorem_note_2026-08-09": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "physical_cell_cutting_flip_partner_carrier_bracket_cycle747_note_2026-08-08": {
    "deps_hash": "58892f7fde6e",
    "out_degree": 2
@@ -13900,10 +13904,6 @@
   },
   "physical_cell_cutting_size_ten_frontier_cycle738_note_2026-08-05": {
    "deps_hash": "96e9ee21819d",
-   "out_degree": 1
-  },
-  "physical_cell_cutting_symmetry_underdetermines_cycle763_note_2026-08-09": {
-   "deps_hash": "c8eee4235fc9",
    "out_degree": 1
   },
   "physical_cell_cutting_twelve_frontier_cycle739_note_2026-08-05": {

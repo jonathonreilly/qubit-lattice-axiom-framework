@@ -1,23 +1,18 @@
-"""The cell's coordinate symmetry does not pin the cutting-side reading space.
+"""Rebuild and gate finite orbit-table rank identities on a unit four-cube.
 
-Self-contained exact runner. It builds the cell object from scratch: the sixteen
-corners of the unit four-cube, the unit-determinant five-corner pieces at the
-adjacency-cost floor, the exact cuttings of the cell by those pieces, the pieces
-that actually occur, and the eight-piece covers that meet every cutting once.
+The runner constructs the sixteen corners, the unit-determinant five-corner
+pieces at the adjacency-cost floor, every certified cutting by those pieces,
+the supported pieces, and the eight-piece covers that meet every cutting once.
+It then constructs the 384 coordinate relabelings and their actions on pieces,
+covers, ordered pairs, and cover-piece cells.
 
-It then builds the maps got by permuting the four coordinates and flipping any of
-them, and measures two things. First, what the symmetry does force: both row
-spaces are carried to themselves, and their dimensions add to the whole space
-while they meet in the constants alone. Second, what it does not force: a matrix
-that commutes with the whole action but carries the cutting row space somewhere
-else, so a second stable subspace of the same dimension exists.
+The certified target is finite and positive: the cover table is a union of four
+cover-piece orbit indicators with exact integer rank 105, while an explicit
+four-orbit union of the same binary row-and-column shape has exact integer rank
+144. Stabilizer splits, orbital-basis preservation counts, and modular ranks are
+reported as separately labelled finite diagnostics.
 
-Two controls are built to come out negative and one comparison is carried out on
-the cover side as a check on the piece side. Everything is done over the integers
-and the rationals; no floating point enters any gate, no constant is fitted, and
-no quantity is computed from the quantity it is compared with.
-
-Output: one line per gate, then the stdout character count, then the total line.
+Output is one line per gate, followed by the stdout character count and total.
 """
 
 import itertools
@@ -27,12 +22,11 @@ import time
 import resource
 from fractions import Fraction as FR
 import numpy as np
-from numpy.random import default_rng
-
 PRIME = 1000003
-SEED = 3
+AUDIT_TIMEOUT_SEC = 600
+MEMORY_LIMIT_MB = 2500
 
-T0 = time.time()
+T0 = time.monotonic()
 OUT = [0]
 
 
@@ -740,7 +734,7 @@ DEGSUM = sum(d * c for d, c in CENSUS)
 DEGCNT = sum(c for d, c in CENSUS)
 
 # ------------------------------------------------------------------
-# 10. the negative
+# 10. canonical orbital-basis preservation counts
 # ------------------------------------------------------------------
 
 
@@ -854,7 +848,7 @@ for g in GENS:
         MU_STABLE = False
 
 # ------------------------------------------------------------------
-# 13. pass-down to the axiom's covariance group
+# 13. determinant-one coordinate subgroups
 # ------------------------------------------------------------------
 
 
@@ -1050,10 +1044,10 @@ SAME_ACTION = (CHI == CCHI)
 PIECE_YES = (NORB == NKA)
 COVER_YES = (NPOC == NKB)
 ONE_SIDED = (PIECE_YES != COVER_YES)
-SAME_OK = ((not SAME_ACTION) or (NORB == NPOC))
+SAME_OK = ((not SAME_ACTION) and NORB != NPOC)
 
 # ------------------------------------------------------------------
-# 16. the symmetry does not fix the cover-side dimension either
+# 16. cover-piece orbit tables
 # ------------------------------------------------------------------
 
 
@@ -1224,7 +1218,7 @@ HAND_OK = (PROD >= 0 and ROOT_I * ROOT_I <= PROD
            and (ROOT_I + 1) * (ROOT_I + 1) > PROD and WIT >= BOUND)
 
 # ------------------------------------------------------------------
-# 17. the cover table as a sum of whole orbits, and sampled comparisons
+# 17. the cover table and a same-shape orbit-union witness
 # ------------------------------------------------------------------
 
 SZH = {}
@@ -1266,20 +1260,13 @@ for j in MSET:
     RUN.append(rank_modp(ACC, PRIME))
 RUN_OK = (len(RUN) == NEEDED and RUN[-1] == RANKB)
 
-NSAMP = 1500
-RNG = default_rng(SEED)
-SVALS = []
-for s in range(NSAMP):
-    sel = RNG.choice(NCP, size=NEEDED, replace=False)
-    SVALS.append(rank_modp(np.isin(CPL, sel).astype(np.int64), PRIME))
-NUSED = len(SVALS)
-SS = sorted(SVALS)
-SLOW = SS[0]
-SHIGH = SS[-1]
-HW = NUSED // 2
-MED = FR(SS[HW - 1] + SS[HW], 2) if divmod(NUSED, 2)[1] == 0 else FR(SS[HW])
-NBELOW = sum(1 for v in SVALS if v <= RANKB)
-SAMP_OK = (SHIGH > RANKB and MED > RANKB and NUSED == NSAMP)
+WITSEL = (6, 11, 28, 39)
+WITMAT = np.isin(CPL, WITSEL).astype(np.int64)
+WIT_ROWS = sorted(set(int(x) for x in WITMAT.sum(axis=1)))
+WIT_COLS = sorted(set(int(x) for x in WITMAT.sum(axis=0)))
+WIT_LABELS_OK = (len(set(WITSEL)) == NEEDED
+                 and all(0 <= j < NCP for j in WITSEL))
+WIT_SHAPE = (WIT_ROWS == BROWS and WIT_COLS == BCS)
 
 
 def rank_exact(rows):
@@ -1321,6 +1308,9 @@ RX_B = rank_exact(BROW)
 RX_DUP = rank_exact(BROW + BROW)
 DUP_OK = (RX_DUP == RX_B)
 EXACT_OK = (RX_B == RANKB_P)
+RX_WIT = rank_exact(WITMAT)
+WITNESS_OK = (WIT_LABELS_OK and WIT_SHAPE and RX_WIT == 144
+              and RX_B == 105 and RX_WIT != RX_B)
 
 # ------------------------------------------------------------------
 # 18. source hygiene and budget
@@ -1351,16 +1341,26 @@ for a, b in BAN:
     if (a + b).lower() in LOWSRC:
         BAN_OK = False
 
-ELAPSED = int(time.time() - T0)
+def rss_megabytes(raw, platform):
+    divisor = 1048576.0 if platform == "darwin" else 1024.0
+    return float(raw) / divisor
+
+
+RESOURCE_UNIT_CONTROL = (
+    rss_megabytes((MEMORY_LIMIT_MB - 1) * 1024, "linux") < MEMORY_LIMIT_MB
+    and rss_megabytes((MEMORY_LIMIT_MB + 1) * 1024, "linux") > MEMORY_LIMIT_MB
+    and rss_megabytes((MEMORY_LIMIT_MB - 1) * 1048576, "darwin") < MEMORY_LIMIT_MB
+    and rss_megabytes((MEMORY_LIMIT_MB + 1) * 1048576, "darwin") > MEMORY_LIMIT_MB
+)
+ELAPSED = time.monotonic() - T0
 RSS = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
-RSSMB = RSS // 1048576 if RSS > 10000000 else RSS // 1024
+RSSMB = rss_megabytes(RSS, sys.platform)
 
 # ------------------------------------------------------------------
 # gates
 # ------------------------------------------------------------------
 
-emit("all numbers below are exact computational identities;"
-     " no floating point enters any gate")
+emit("finite-object claims use integer or rational arithmetic; the final resource gate uses measured bounds")
 
 gate(NCAND == 2672 and FLOOR == 6 and NKEPT == 400 and GENERIC and NPTS == 625
      and DIV == 80 and NS == 15800 and SIZES == [24] and NPI == 192
@@ -1427,29 +1427,29 @@ gate(PARTITION and min(CLS) > 0 and len(CLS) == NORB,
      "the {0} labels cut all {1} entries into classes of sizes {2} to {3}, so their matrices span the commuters".format(
          NORB, NPI * NPI, min(CLS), max(CLS)))
 
-gate(0 < NKEEP_A < NORB,
+gate(NKEEP_A == 2,
      "G12",
-     "the negative: only {0} of the {1} commuting matrices carry the cutting row space into itself".format(
+     "exactly {0} of {1} canonical orbital basis matrices individually preserve the cutting row space".format(
          NKEEP_A, NORB))
 
-gate(0 < NKEEP_B < NORB,
+gate(NKEEP_B == 2,
      "G13",
-     "the same on the cover side: only {0} of the {1} carry the cover row space into itself".format(
+     "exactly {0} of {1} canonical orbital basis matrices individually preserve the cover row space".format(
          NKEEP_B, NORB))
 
 gate(CTRL_A,
      "G14",
-     "control: the constants times each of the {0} commuting matrices stays a multiple, so the negative has content".format(
+     "control: the constants times each of the {0} orbital basis matrices stays a multiple of the constants".format(
          NORB))
 
 gate((not SHIFT_IN) and (not SHIFT_KEEPS),
      "G15",
-     "control: the cyclic shift of the {0} pieces is not one of the {1} and does not keep the cutting table".format(
+     "control: the cyclic shift on {0} pieces lies outside the {1}-element action and changes the cutting table".format(
          NPI, NGRP))
 
 gate(RANKU == NPI and RANKMU == RANKA and NOUT == len(MU),
      "G16",
-     "the first failing matrix, out-degree {0}, with the identity has rank {1}; its {2} moved rows have rank {2}, all outside".format(
+     "the first basis matrix outside the preserving set has degree {0}; with identity rank {1}, moved-row rank {2}".format(
          DEG_KSTAR, RANKU, RANKMU))
 
 gate(GEN_OK and MU_STABLE and len(GENS) == 2,
@@ -1477,8 +1477,8 @@ gate(EIG_SUM and NTWO == 12 and ONE_PLUS,
      "its non-identity element has plus and minus dimensions {0} and {1} by two independent exact ranks, sum {2}".format(
          DPLUS, DMINUS, NPI))
 
-emit("recorded agreement, not a derivation: {0} matches the cutting kernel {1}, {2} matches the rank {3}; neither derived".format(
-    DPLUS, yn(EIG_KER), DMINUS, yn(EIG_RANK)))
+emit("separately computed agreements: plus dimension {0} equals cutting kernel {1}; minus dimension {2} equals rank {3}".format(
+    DPLUS, NKA, DMINUS, RANKA))
 
 gate(SPLIT_A and SPLIT_B,
      "G22",
@@ -1497,8 +1497,8 @@ gate(ALLSIX and NTWO == 12,
 
 gate(DEMOTE_OK,
      "G25",
-     "demotion: cutting rows meet the minus part in dimension {0}; equal to the rank {1}: {2}; inside the {3} span: {4}".format(
-         AMI, RANKA, yn(MEET_IS_RANK), DSPAN, yn(INSIDE)))
+     "space comparison: cutting-minus intersection dimension {0}, cutting rank {1}, augmented-minus span dimension {2}".format(
+         AMI, RANKA, DSPAN))
 
 gate(COV_OK and COV_BIJ and COV_TRANS,
      "G26",
@@ -1517,20 +1517,20 @@ gate(NSTABC == 2 and CSTAB_SIMPLE and CSTAB_ORB,
 
 gate(SAME_OK,
      "G29",
-     "the two fixed-point counts agree element by element: {0}; equal counts would force equal orbit counts, {1} not {2}".format(
-         yn(SAME_ACTION), NORB, NPOC))
+     "piece and cover fixed-point lists differ: {0}; their ordered-pair orbit counts are {1} and {2}".format(
+         yn(not SAME_ACTION), NORB, NPOC))
 
-emit("cover-side control: pair orbits match the kernel dimension, piece {0}, cover {1}; one-sided {2}, so not a feature".format(
-    yn(PIECE_YES), yn(COVER_YES), yn(ONE_SIDED)))
+emit("pair-orbit and kernel counts: piece {0} and {1}; cover {2} and {3}; equality occurs on one side".format(
+    NORB, NKA, NPOC, NKB))
 
 gate(SUB_OK and SUB_BIGGER and SUB_SIZE == [24, 24, 24, 24],
      "G30",
-     "four rotation subgroups of order {0}, closed and inside the {1}: piece orbits {2}, pair orbits {3}, above {4}".format(
+     "four determinant-one coordinate subgroups of order {0}: piece orbits {2}, pair orbits {3}, full-action count {4}".format(
          SUB_SIZE[0], NGRP, sorted(set(SUB_PIECE)), sorted(set(SUB_PAIR)), NORB))
 
 gate(NORB == NKA,
      "G31",
-     "pair-orbit count and cutting kernel are both {0} by unrelated routes: recorded agreement, not evidence".format(
+     "pair-orbit count and cutting kernel are both {0}, computed by separate routes".format(
          NORB))
 
 gate(CP_FULL and PP_FULL and PP_AGREE and BEQUI,
@@ -1545,17 +1545,17 @@ gate(PAIR_DIV and PAIR_PP and PAIR_CP and PAIR_CC,
 
 gate(CTL_OK and GOOD_PRIME and WIT > 0 and len(RKHIST) == 1,
      "G34",
-     "single-orbit dimensions, value to count: {0}; largest {1}; the control that must reach {2} gives {3}".format(
-         RKHIST, WIT, NPI, CTL))
+     "single-orbit mod-{0} ranks, value to count: {1}; ordered-pair control reaches {2}".format(
+         PRIME, RKHIST, CTL))
 
 gate(BEATS,
      "G35",
-     "one orbit matrix beats the cover rank {0} by {1}; pieces minus that dimension plus one is {2}".format(
+     "single-orbit modular rank exceeds exact cover rank {0} by {1}; the associated count is {2}".format(
          RANKB, GAIN, TIEVAL))
 
 gate(CYC_OK,
      "G36",
-     "cycle rule: {0} of {1} orbits differ from the predicted dimension; cycle types {2}".format(
+     "cycle rule: {0} of {1} orbit checks differ from the predicted rank; cycle types {2}".format(
          CYCBAD, NCP, CYCLIST))
 
 gate(HAND_OK,
@@ -1575,13 +1575,13 @@ gate(COUNT_OK and REB_OK,
 
 gate(BORD_OK and RUN_OK,
      "G40",
-     "each of those {0} orbits alone has dimension {1}, the largest; running dimensions {2} end at the cover rank {3}".format(
+     "the {0} selected cover orbits each have mod-p rank {1}; modular prefix ranks {2}, exact cover rank {3}".format(
          NEEDED, BORD_RK[0], RUN, RANKB))
 
-gate(SAMP_OK,
+gate(WITNESS_OK,
      "G41",
-     "{0} sampled sums of {1} orbits: least {2}, middle {3}, greatest {4}; at or below the cover rank {5}: {6}".format(
-         NUSED, NEEDED, SLOW, MED, SHIGH, RANKB, NBELOW))
+     "orbit union {0} has row and column sum {1}, exact rank {2}; cover exact rank {3}".format(
+         WITSEL, WIT_ROWS[0], RX_WIT, RX_B))
 
 gate(ID_OK,
      "D8",
@@ -1595,7 +1595,7 @@ gate(DUP_OK,
 
 gate(EXACT_OK,
      "D10",
-     "exact dimension of the cover table over the integers, no modulus: {0}; agrees with the modular count: {1}".format(
+     "exact dimension of the cover table over the integers: {0}; agrees with the modular count: {1}".format(
          RX_B, yn(EXACT_OK)))
 
 gate(NO_PC and NO_TAB and NO_EM and ASCII_OK and BAN_OK and NBAN == len(BAN),
@@ -1603,9 +1603,10 @@ gate(NO_PC and NO_TAB and NO_EM and ASCII_OK and BAN_OK and NBAN == len(BAN),
      "source hygiene: plain ASCII, no per-cent character, no tab, no long dash, all {0} barred strings absent".format(
          NBAN))
 
-gate(ELAPSED < 600 and RSSMB < 2500,
+gate(RESOURCE_UNIT_CONTROL and ELAPSED < AUDIT_TIMEOUT_SEC and RSSMB < MEMORY_LIMIT_MB,
      "G43",
-     "budget: elapsed under 600 seconds and peak memory under 2500 MB; both vary by machine so neither is printed")
+     "budget: elapsed under {0} seconds, peak memory under {1} MB, Darwin/Linux unit controls pass".format(
+         AUDIT_TIMEOUT_SEC, MEMORY_LIMIT_MB))
 
 TAIL = "TOTAL: PASS={0} FAIL={1}".format(STAT[0], STAT[1])
 BASE = OUT[0]
@@ -1622,3 +1623,5 @@ if OUT[0] != n:
     raise ValueError("character accounting did not close")
 if OUT[0] >= 6000:
     raise ValueError("stdout over the ceiling")
+if STAT[1] != 0:
+    raise SystemExit(1)

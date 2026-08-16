@@ -1,0 +1,57 @@
+===== runner cache v1 =====
+runner: scripts/skew_three_seed_lock_tick_stab_pair_2026_08_15.py
+runner_sha256: f3cf39fe3f515691189ac9c694b40d277af2e9c533ba5ee77876d9ff45b51a1d
+input_fingerprint_sha256: f257be46d49c8e77f5c7615dea3c06d72afe7260227efc8b0a4dfbd8d565e54b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.07
+status: ok
+----- stdout -----
+lock-tick stabilizer vs July-3 pair members
+AUDIT_INPUT_PATHS:
+  docs/SKEW_THREE_SEED_LOCK_TICK_STAB_PAIR_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+U_card=62
+v_in_U=False
+sigma=(1, 0, 1, 1, 0, 1)
+ticks=(2,·,2,2,·,2)
+occupied_ticks=+x=2,+y=2,−y=2,−z=2
+G_plus=24
+stab_order=2
+stab_tick_order=2
+swapper_survives=True
+N_pair=48
+N_pair_support=4
+support_members=(1, 0, 1, 2, 0, 2),(1, 0, 2, 1, 0, 2),(2, 0, 1, 2, 0, 1),(2, 0, 2, 1, 0, 1)
+support_members_letters=(+,0,+,−,0,−),(+,0,−,+,0,−),(−,0,+,−,0,+),(−,0,−,+,0,+)
+N_tick_ok=0
+PASS: audit-input-paths | AUDIT_INPUT_PATHS is the required static two-string literal tuple
+PASS: source-lattice
+PASS: source-admissibility
+PASS: source-unread-qubit
+PASS: g-plus-order | proper=24
+PASS: center-unread
+PASS: u-geometry
+PASS: occupancy-sigma | sigma=(1, 0, 1, 1, 0, 1)
+PASS: theorem-1-ticks | ticks=(2,·,2,2,·,2)
+PASS: theorem-1-stab | stab=2 stab_tick=2 swapper=True
+PASS: theorem-2-tick-ok | N_tick_ok=0 N_pair_support=4
+PASS: swapper-forces-y-bicolor-obstruction
+PASS: claim-scope
+PASS: displayed-not-adopted
+PASS: l1-not-attached
+PASS: not-leftover-prior
+PASS: admissibility-unedited
+PASS: forbidden-phrases
+PASS: no-axiom-edit
+per_element: |Stab(σ)|, |Stab(σ,t)|, N_tick_ok are exact integers
+per_site: only the unread star center v is scored
+per_mode: no spectral calculation
+per_block: the six-neighbor star at v only
+lattice_wide: checked and not executed
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

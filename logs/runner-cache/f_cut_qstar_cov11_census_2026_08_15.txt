@@ -1,0 +1,71 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_qstar_cov11_census_2026_08_15.py
+runner_sha256: 4231028ec4d394ba4cb6533b6e4872ee8f26012e9f4fb5b2354639ab4886b459
+input_fingerprint_sha256: e9c21a905697afccf3084f57908947e7f54e27124e39f47fe9dc673e527bcabd
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_QSTAR_COV11_CENSUS_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+n_rotations=24
+n_orbits=10
+orbit_types_and_sizes=(0, 0, 3):1,(0, 1, 2):3,(0, 2, 1):3,(0, 3, 0):1,(1, 0, 2):6,(1, 1, 1):12,(1, 2, 0):6,(2, 0, 1):12,(2, 1, 0):12,(3, 0, 0):8
+remaining_labels=('wt1', 'opp2', 'adj2', 'vertex3', 'mixed3')
+N_free=5
+|F_cut|=32
+|Q_*|=8
+n_eleven_site_seeds=12
+n_end_sites=8
+n_mid_sites=4
+m11=12
+remaining=(1, 0, 1, 0, 0) cov11=4 pos11=1
+remaining=(1, 0, 1, 0, 1) cov11=4 pos11=1
+remaining=(1, 0, 1, 1, 0) cov11=12 pos11=1
+remaining=(1, 0, 1, 1, 1) cov11=12 pos11=1
+remaining=(1, 1, 1, 0, 0) cov11=4 pos11=1
+remaining=(1, 1, 1, 0, 1) cov11=4 pos11=1
+remaining=(1, 1, 1, 1, 0) cov11=12 pos11=1
+remaining=(1, 1, 1, 1, 1) cov11=12 pos11=1
+N_pos11=8
+pos11_constant=True
+pos11_restricted=False
+closed_form_4_plus_8_vertex3=True
+f_L1_remaining=(1, 0, 1, 1, 1)
+cov11_f_L1=12
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required note-plus-axiom string-literal tuple
+PASS: thm1-twenty-four-rotations exactly 24 proper cube rotations
+PASS: thm1-ten-orbits exactly 10 orbits partition the 64 cells of {0,1}^6
+PASS: thm1-orbit-sizes orbit sizes are the axis-type class sizes
+PASS: thm1-f-cut-cardinality F_cut has five free bits and size 32
+PASS: thm1-qstar-eight-lex Q_* is the eight remaining-bit tuples with wt1=1 and adj2=1 in lex order
+PASS: thm1-f-L1-is-unbalanced-axis f_L1 is 1 iff some axis has c_+ != c_-
+PASS: thm1-f-L1-not-hamming f_L1 is not Hamming |c|_1 mod 2
+PASS: thm1-two-cube-and-eleven-site-seeds the two-cube has twelve vertices and C(12,11)=12 eleven-site seeds
+PASS: thm1-end-mid-split eight end vertices omit type (3,0,0) and four mid vertices omit type (2,1,0)
+PASS: thm1-cov11-census-lex cov11 of each of the eight Q_* maps is reported in remaining-bit lex order
+PASS: thm2-pos11-constant-all-eight cov11>0 holds for all eight Q_* maps and is not a remaining-bit restriction
+PASS: thm3-displayed-not-adopted the census is displayed and no remaining bit is adopted
+PASS: lattice-and-admissibility-parents the live axiom memo supplies Z^3, proper cubic rotations, and a covariant nearest-neighbor rule
+PASS: note-contract bounded theorem, displayed-not-adopted census, and machine status
+PASS: claim-type-and-gate N1-N8 and a passing no-go disposition are source-visible
+PASS: forbidden-phrases-absent the note and runner omit the dispatch-forbidden phrases
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: note-reports-census the note reports the eight cov11 values, the constant verdict, and Q_*
+PASS: no-axiom-edit the theorem proposes no axiom change
+PASS: off-patch-zero off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: not-leftover-cov1-or-duality the residual is the Q_* cov11 census, not leftover cov1>0 as Q_*
+PASS: claim-scope-census claim_scope states the eight-map cov11 census and the constant-or-restricted report
+per_element: checked exactly — each of the 64 neighbor 6-tuples is assigned its axis-type orbit
+per_site: checked exactly — each of the twelve two-cube vertices uses the same six-direction stencil
+per_mode: checked exactly — each of the eight Q_* maps is scored by how many of the 12 eleven-site seeds it fills
+per_block: checked exactly — cov11>0 is the Q_* eleven-site positivity test, constant on all eight
+lattice_wide: checked and not executed — no Z^3-wide formation law or physical Admissibility selector is claimed
+TOTAL: PASS=23 FAIL=0
+
+----- stderr -----
+

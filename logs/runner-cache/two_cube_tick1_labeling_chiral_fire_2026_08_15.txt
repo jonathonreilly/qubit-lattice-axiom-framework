@@ -1,0 +1,64 @@
+===== runner cache v1 =====
+runner: scripts/two_cube_tick1_labeling_chiral_fire_2026_08_15.py
+runner_sha256: 8199283e7fcd97d0e8736cfa2de62212352b3afa88ebf52f42102f5f139aad4a
+input_fingerprint_sha256: ea35cb2645328b5ebfa6b6c8a46904edb7320524c05d9c34a7e0be7a271a7885
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+two-cube tick-1 labeling chiral-fire census (displayed, not adopted)
+AUDIT_INPUT_PATHS:
+  docs/TWO_CUBE_TICK1_LABELING_CHIRAL_FIRE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+construction: same twelve-vertex two-cube; no 4x4x4 or other new patch
+PASS: audit-input-paths-exact-literals  (declared=('docs/TWO_CUBE_TICK1_LABELING_CHIRAL_FIRE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: note-claim-scope
+PASS: source-admissibility
+PASS: source-formation-boundary
+PASS: source-record
+PASS: note-f-L1-is-n-nonzero-not-hamming
+PASS: note-displayed-not-adopted
+PASS: note-does-not-attach-L1
+PASS: note-does-not-write-labeling-rule-into-admissibility
+PASS: note-same-two-cube-no-new-patch
+PASS: note-not-leftover-wav2run
+PASS: note-no-forbidden-phrases
+PASS: patch-twelve-vertices
+PASS: off-patch-occupancy-zero
+PASS: tick1-new-locks  (new=[(0, 0, 1), (0, 1, 0), (1, 0, 0)])
+PASS: tick1-not-hamming
+tick1_axis_order=(1,0,0),(0,1,0),(0,0,1)
+labeling +++ N_new=0 new=()
+labeling ++− N_new=0 new=()
+labeling +−+ N_new=0 new=()
+labeling +−− N_new=0 new=()
+labeling −++ N_new=0 new=()
+labeling −+− N_new=0 new=()
+labeling −−+ N_new=0 new=()
+labeling −−− N_new=0 new=()
+any_fire=False
+N_fire=0
+lex_first_firing=none
+theorem1: none of the 8 labelings has N_new>0
+PASS: july3-unique-k3-pair
+PASS: theorem1-eight-labelings  (count=8)
+PASS: theorem1-N-new-all-zero  (N_new=(0, 0, 0, 0, 0, 0, 0, 0))
+PASS: theorem1-none-report
+PASS: theorem2-N-fire  (N_fire=0)
+PASS: theorem2-among-firers-P-odd-empty-domain
+PASS: unread-at-most-two-locked-neighbors  (max_locked=2)
+PASS: tick2-does-not-overwrite
+PASS: wav2run-sign-n-mu-is-one-of-eight
+PASS: mutation-hamming-is-not-f-L1
+PASS: mutation-occupancy-tick2-is-not-this-census
+PASS: note-reports-census
+PASS: theorem3-displayed-not-adopted
+TOTAL: PASS=31 FAIL=0
+
+----- stderr -----
+

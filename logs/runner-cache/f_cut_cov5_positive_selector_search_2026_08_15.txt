@@ -1,0 +1,74 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_cov5_positive_selector_search_2026_08_15.py
+runner_sha256: e3406fd796b12d974e8e2dc95fac403abfe01cb246f357214573495b2c4d9035
+input_fingerprint_sha256: 8c1fd06f44d33cd36dfdd08dedd92b48477bdf8cfa14ae8a50894d4a88582428
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.19
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_COV5_POSITIVE_SELECTOR_SEARCH_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+external_scientific_inputs: current Lattice/Admissibility/Record boundary only; no observation or fit
+negative_scope: displayed remaining-bit candidates versus cov5>0; does not adopt a bit
+n_rotations=24
+n_orbits=10
+remaining_labels=('wt1', 'opp2', 'adj2', 'vertex3', 'mixed3')
+|F_cut|=32
+n_five_site_seeds=792
+N_pos=21
+N_Q4=24
+N_Q6=28
+N_both_Q4=21
+N_both_Q6=21
+cov5(f_L1)=792
+matching_candidates=[]
+lex_first_Q4=(1, 0, 0, 0, 0)
+lex_first_Q6=(0, 0, 0, 1, 0)
+candidate wt1: equiv=0 N_Q=16 N_both=13 fp=3 fn=8 lex=(0, 0, 1, 0, 0)
+candidate opp2: equiv=0 N_Q=16 N_both=11 fp=5 fn=10 lex=(0, 0, 1, 0, 0)
+candidate adj2: equiv=0 N_Q=16 N_both=16 fp=0 fn=5 lex=(1, 0, 0, 1, 0)
+candidate vertex3: equiv=0 N_Q=16 N_both=12 fp=4 fn=9 lex=(0, 0, 0, 1, 0)
+candidate mixed3: equiv=0 N_Q=16 N_both=11 fp=5 fn=10 lex=(0, 0, 0, 0, 1)
+candidate wt1 OR opp2: equiv=0 N_Q=24 N_both=17 fp=7 fn=4 lex=(0, 0, 1, 0, 0)
+candidate wt1 OR adj2: equiv=0 N_Q=24 N_both=21 fp=3 fn=0 lex=(1, 0, 0, 0, 0)
+candidate wt1 OR vertex3: equiv=0 N_Q=24 N_both=17 fp=7 fn=4 lex=(0, 0, 0, 1, 0)
+candidate wt1 OR mixed3: equiv=0 N_Q=24 N_both=17 fp=7 fn=4 lex=(0, 0, 0, 0, 1)
+candidate opp2 OR adj2: equiv=0 N_Q=24 N_both=19 fp=5 fn=2 lex=(0, 1, 0, 0, 0)
+candidate opp2 OR vertex3: equiv=0 N_Q=24 N_both=17 fp=7 fn=4 lex=(0, 0, 0, 1, 0)
+candidate opp2 OR mixed3: equiv=0 N_Q=24 N_both=16 fp=8 fn=5 lex=(0, 0, 0, 0, 1)
+candidate adj2 OR vertex3: equiv=0 N_Q=24 N_both=20 fp=4 fn=1 lex=(0, 0, 0, 1, 0)
+candidate adj2 OR mixed3: equiv=0 N_Q=24 N_both=19 fp=5 fn=2 lex=(0, 0, 0, 0, 1)
+candidate vertex3 OR mixed3: equiv=0 N_Q=24 N_both=17 fp=7 fn=4 lex=(0, 0, 0, 0, 1)
+candidate Q4: equiv=0 N_Q=24 N_both=21 fp=3 fn=0 lex=(1, 0, 0, 0, 0)
+candidate Q6: equiv=0 N_Q=28 N_both=21 fp=7 fn=0 lex=(0, 0, 0, 1, 0)
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required note-plus-axiom string-literal tuple
+PASS: thm1-host 24 rotations, 10 orbits, 32 F_cut maps, 792 five-site seeds
+PASS: thm1-f-L1-is-unbalanced-axis f_L1 is 1 iff some axis has c_+ != c_-
+PASS: thm1-f-L1-not-hamming f_L1 is n!=0, not Hamming |c|_1 mod 2
+PASS: thm1-q4-not-equivalent cov5>0 is not equivalent to Q4 among the 32 F_cut maps
+PASS: thm1-q6-not-equivalent cov5>0 is not equivalent to Q6 among the 32 F_cut maps
+PASS: thm1-one-bit-and-two-bit-or-fail no displayed 1-bit or 2-bit OR equals cov5>0
+PASS: thm1-lex-first-miss-of-each one lex-first remaining-bit miss is reported for each displayed Q
+PASS: thm2-counts N_pos=21 and each displayed Q reports N_Q and N_both
+PASS: thm3-display-not-adopt the menu is displayed and no bit is adopted as an Admissibility selector
+PASS: source-lattice-admissibility Lattice rotations and Admissibility covariance are pinned
+PASS: source-record-boundary Record lock, content-only readout, unreadable absence, and formation residual are pinned
+PASS: claim-scope claim_scope reports the remaining-bit search and does not adopt a bit
+PASS: note-contract machine fields, three theorems, and forbidden-phrase hygiene hold
+PASS: no-axiom-edit the axiom memo is unedited and the theorem proposes no axiom change
+PASS: off-patch-zero off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: not-leftover-6518-6531-6476 the residual is 5-site positivity versus displayed Q, not leftover-character of #6518, #6531, or #6476
+per_element: checked exactly — each of the 64 neighbor 6-tuples is assigned its axis-type orbit
+per_site: checked exactly — each of the twelve two-cube vertices uses the same six-direction stencil
+per_mode: checked exactly — every F_cut map is scored on 792 five-site seeds against the displayed candidate menu
+per_block: checked exactly — N_pos and each (N_Q, N_both) are the F_cut positivity-versus-Q counts on this patch
+lattice_wide: checked and not executed — no Z^3-wide formation law or physical Admissibility selector is claimed
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

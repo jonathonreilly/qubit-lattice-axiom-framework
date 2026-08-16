@@ -1,0 +1,53 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_cov11_q10_selector_test_2026_08_15.py
+runner_sha256: 5c9b800c4f00cf0e17bdadc4f96fb61d9e5d005bda17e9185f7d053dac2ad3ca
+input_fingerprint_sha256: a36fd54709003ac3dca25cb3d3e075734aeea148ef7b8d60a10abef6ce6b7335
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_COV11_Q10_SELECTOR_TEST_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+external_scientific_inputs: current Lattice/Admissibility/Record boundary only; no observation or fit
+negative_scope: displayed cov11>0 versus Q10 on all 32 F_cut maps; does not adopt Q10
+n_rotations=24
+n_orbits=10
+remaining_labels=('wt1', 'opp2', 'adj2', 'vertex3', 'mixed3')
+|F_cut|=32
+n_eleven_site_seeds=12
+N_pos=24
+N_Q10=28
+N_both=24
+cov11>0_iff_Q10=0
+lex_first_miss=(0, 0, 0, 0, 1)
+cov11(f_L1)=12
+cov11=0=((0, 0, 0, 0, 0), (0, 0, 0, 0, 1), (0, 1, 0, 0, 0), (0, 1, 0, 0, 1), (1, 0, 0, 0, 0), (1, 0, 0, 0, 1), (1, 1, 0, 0, 0), (1, 1, 0, 0, 1))
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required note-plus-axiom string-literal tuple
+PASS: thm1-host 24 rotations, 10 orbits, 32 F_cut maps, 12 eleven-site seeds
+PASS: thm1-f-L1-is-unbalanced-axis f_L1 is 1 iff some axis has c_+ != c_-
+PASS: thm1-f-L1-not-hamming f_L1 is n!=0, not Hamming |c|_1 mod 2
+PASS: thm1-q10-is-three-bit-or Q10 is adj2 or vertex3 or mixed3
+PASS: thm1-not-equivalent among all 32 F_cut maps, cov11>0 is not equivalent to Q10
+PASS: thm2-census N_pos = 24, N_Q10 = 28, N_both = 24
+PASS: thm3-display-not-adopted the identity is displayed and Q10 is not adopted
+PASS: source-lattice-admissibility Lattice rotations and Admissibility covariance are pinned
+PASS: source-record-boundary Record lock, content-only readout, unreadable absence, and formation residual are pinned
+PASS: claim-scope claim_scope reports the cov11>0 versus Q10 identity and does not adopt Q10
+PASS: note-contract machine fields, three theorems, and forbidden-phrase hygiene hold
+PASS: no-axiom-edit the axiom memo is unedited and the theorem proposes no axiom change
+PASS: off-patch-zero off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: not-leftover-c11sel-c10bit3 the residual is a new k for the named 3-bit OR
+per_element: checked exactly — each of the 64 neighbor 6-tuples is assigned its axis-type orbit
+per_site: checked exactly — each of the twelve two-cube vertices uses the same six-direction stencil
+per_mode: checked exactly — every F_cut map is scored on 12 eleven-site seeds against Q10
+per_block: checked exactly — N_pos, N_Q10, N_both are the F_cut positivity-versus-Q10 counts on this patch
+lattice_wide: checked and not executed — no Z^3-wide formation law or physical Admissibility selector is claimed
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

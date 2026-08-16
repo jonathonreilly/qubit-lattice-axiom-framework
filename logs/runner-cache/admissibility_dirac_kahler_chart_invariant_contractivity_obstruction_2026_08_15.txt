@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_chart_invariant_contractivity_obstruction_2026_08_15.py
+runner_sha256: 2bd2141eae95d55c8151d04eadbd1acf5003a70e4a3b06e2fa1b2d18383b8605
+input_fingerprint_sha256: 0e465424a209f532f32a51f5c70024b335c75eeed95d4048b242806fe6f93202
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 17.90
+status: ok
+----- stdout -----
+[PASS] A-authority: Block 115 parent note/runner/cache and ancestors 114--103 are exact content-bound authorities
+[PASS] B-the-plateau-point: the pinned denominator-200 point has A^2=I, reflection reality, Gram Hermiticity, sixteen positive minors, and rank(A_plateau-A_witness)=16
+[PASS] C-chart-invariance: the chart varies only the paired blocks while the self-blocks are frozen, so f_0 and f_2 are invariants of the entire 32-dimensional chart
+[PASS] D-the-obstruction-root: f_0(1) is exactly negative and its unremovable upper root is isolated in (1117550/10^6,1117551/10^6), so no transfer-contractive point exists on the entire chart
+[PASS] E-the-plateau-profile: at the plateau f_k(1) signs are (-,+,-,+), the profile is (1,0,1,0), and both roots in each odd sector are isolated below one
+[PASS] F-two-step-non-semigroup: the witness {0,1}->{2,3} window has signs (-,+,-,-), profile (1,2,1,1), both k=1 roots above one, and its k=0 primitive is not the squared-roots transform
+[PASS] G-consequences: contractivity on the positive variety requires self-block variation beyond the displayed chart or the action-derived pairing; the note makes no variety-wide no-go claim
+[PASS] H-scope: the note preserves the chart-only obstruction, both profiles, non-semigroup result, N1--N8, W1, five N5 resolutions, OS, axiom, ADM, gravity, and TOE firewalls
+PLATEAU: D=200; rank(Ap-Aw)=16; sector_difference_ranks=(0, 4, 0, 4); PD_minors=16
+F0_OBSTRUCTION: coefficients=(240551220040889870812178294535809284844643543367917958, -291801878443785401379820600522977512484145379126480301, 25674305116199140209012757725867816390883233973960300); f0(1)=-25576353286696390358629548261300411248618601784602043; upper_root=(1117550/1000000,1117551/1000000)
+ROOT_ISOLATIONS: plateau k1=(142698/1000000,142699/1000000),(985094/1000000,985095/1000000); k3=(588287/1000000,588288/1000000),(902037/1000000,902038/1000000); window k1=(1019740/1000000,1019741/1000000),(15884778/1000000,15884779/1000000)
+PROFILES: plateau signs=(-1, 1, -1, 1) above_one=(1, 0, 1, 0); window signs=(-1, 1, -1, -1) above_one=(1, 2, 1, 1); k0_window_coefficients=(247930031518545454339980740529607322063826834613872026782399364041241587791125, -943174322604288957200306328033832930345548160666695339716971417013923733443327, 66317219474813773877705299317310893232393268017190639583287202161756453496100); k0_squared_roots_coefficients=(57864889463160616620695740751253144733828515763827814718981460853640524048604158646556048292254011818889764, -72796365424514183380930557656340009144384975239247958069728308017548667895245867567622197956398227042915801, 659169943199689346430154766803878852641795665637025426309614176299991887275030265351391703898465976090000)
+RUNTIME_SECONDS: 17.682
+N5: per_element: exact plateau, freeze, root-isolation, and non-semigroup identities are checked
+per_site: one Grassmann mode per fine site on the antiperiodic reflection torus
+per_mode: the even sectors are frozen chart invariants while the odd sectors contract below one at the plateau
+per_block: the unremovable obstruction root is exactly isolated and the two-step window is not the square of the one-step transfer
+lattice_wide: checked and not executed — self-block-varying positive charts, the action-derived/modular pairing, the actual ADM/history transporter completion, joint gravity, the gravity constraint quotient, Records, audit retention, and TOE closure remain open
+RESULT: the contractivity obstruction is a chart invariant — the even Gram sectors are frozen across the entire displayed positive chart, so the finite OS package requires self-block variation or the action-derived pairing
+DECISION_CUT: advance self-block-varying charts and the modular pairing; reject further paired-block searches on the displayed chart
+TOE: zero obligation retirement, retained-positive end-to-end theory count remains zero, and no TOE percentage moves
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

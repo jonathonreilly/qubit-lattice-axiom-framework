@@ -1,0 +1,70 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_cov10_positive_selector_search_2026_08_15.py
+runner_sha256: 7706a4a7baee1664d8f7b80028524e6caaeb905598435b3357eec8bde2601ccf
+input_fingerprint_sha256: ca070e88e6c4c6cd28a5c9032afb843d78d8a7f5030a14035a6b06285a6fc3db
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_COV10_POSITIVE_SELECTOR_SEARCH_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+external_scientific_inputs: current Lattice/Admissibility/Record boundary only; no observation or fit
+negative_scope: displayed remaining-bit family versus cov10>0; does not adopt a bit
+n_rotations=24
+n_orbits=10
+remaining_labels=('wt1', 'opp2', 'adj2', 'vertex3', 'mixed3')
+|F_cut|=32
+n_ten_site_seeds=66
+N_pos=28
+n_displayed=17
+n_equal=0
+cov10(f_L1)=66
+cov10=0=((0, 0, 0, 0, 0), (0, 1, 0, 0, 0), (1, 0, 0, 0, 0), (1, 1, 0, 0, 0))
+P N_Q=14 N_both=14 equal=0 lex_miss=(0, 0, 0, 0, 1)
+Q4 N_Q=24 N_both=22 equal=0 lex_miss=(0, 0, 0, 0, 1)
+bit:wt1 N_Q=16 N_both=14 equal=0 lex_miss=(0, 0, 0, 0, 1)
+bit:opp2 N_Q=16 N_both=14 equal=0 lex_miss=(0, 0, 0, 0, 1)
+bit:adj2 N_Q=16 N_both=16 equal=0 lex_miss=(0, 0, 0, 0, 1)
+bit:vertex3 N_Q=16 N_both=16 equal=0 lex_miss=(0, 0, 0, 0, 1)
+bit:mixed3 N_Q=16 N_both=16 equal=0 lex_miss=(0, 0, 0, 1, 0)
+wt1|opp2 N_Q=24 N_both=21 equal=0 lex_miss=(0, 0, 0, 0, 1)
+wt1|adj2 N_Q=24 N_both=22 equal=0 lex_miss=(0, 0, 0, 0, 1)
+wt1|vertex3 N_Q=24 N_both=22 equal=0 lex_miss=(0, 0, 0, 0, 1)
+wt1|mixed3 N_Q=24 N_both=22 equal=0 lex_miss=(0, 0, 0, 1, 0)
+opp2|adj2 N_Q=24 N_both=22 equal=0 lex_miss=(0, 0, 0, 0, 1)
+opp2|vertex3 N_Q=24 N_both=22 equal=0 lex_miss=(0, 0, 0, 0, 1)
+opp2|mixed3 N_Q=24 N_both=22 equal=0 lex_miss=(0, 0, 0, 1, 0)
+adj2|vertex3 N_Q=24 N_both=24 equal=0 lex_miss=(0, 0, 0, 0, 1)
+adj2|mixed3 N_Q=24 N_both=24 equal=0 lex_miss=(0, 0, 0, 1, 0)
+vertex3|mixed3 N_Q=24 N_both=24 equal=0 lex_miss=(0, 0, 1, 0, 0)
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required note-plus-axiom string-literal tuple
+PASS: thm1-host 24 rotations, 10 orbits, 32 F_cut maps, 66 ten-site seeds
+PASS: thm1-f-L1-is-unbalanced-axis f_L1 is 1 iff some axis has c_+ != c_-
+PASS: thm1-f-L1-not-hamming f_L1 is n!=0, not Hamming |c|_1 mod 2
+PASS: thm1-none-equal no displayed remaining-bit Q equals cov10>0
+PASS: thm1-lex-first-misses the note names the lex-first miss of each displayed Q
+PASS: thm2-n-pos-and-per-q N_pos=28 and each displayed Q reports N_Q and N_both
+PASS: thm3-display-not-adopt the displayed family is displayed and no bit is adopted
+PASS: source-lattice-admissibility Lattice rotations and Admissibility covariance are pinned
+PASS: source-record-boundary Record lock, content-only readout, unreadable absence, and formation residual are pinned
+PASS: claim-scope claim_scope reports the remaining-bit search against cov10>0 and does not adopt a bit
+PASS: note-contract machine fields, three theorems, and forbidden-phrase hygiene hold
+PASS: no-axiom-edit the axiom memo is unedited and the theorem proposes no axiom change
+PASS: off-patch-zero off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: not-leftover-6494-6476 the residual is a new k-selector search; duality is not assumed
+PASS: displayed-family-shape displayed Q are P, Q4, the 5 one-bits, and 10 two-bit ORs
+PASS: independent-k-ten cov10 is scored on the 66 ten-site seeds; Max duality is not used
+per_element: checked exactly — each of the 64 neighbor 6-tuples is assigned its axis-type orbit
+per_site: checked exactly — each of the twelve two-cube vertices uses the same six-direction stencil
+per_mode: checked exactly — every F_cut map is scored on 66 ten-site seeds against the displayed remaining-bit family
+per_block: checked exactly — N_pos and per-Q N_Q, N_both are the F_cut positivity-versus-displayed-Q counts on this patch
+lattice_wide: checked and not executed — no Z^3-wide formation law or physical Admissibility selector is claimed
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

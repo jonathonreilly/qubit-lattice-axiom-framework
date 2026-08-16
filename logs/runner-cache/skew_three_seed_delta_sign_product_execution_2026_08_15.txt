@@ -1,0 +1,41 @@
+===== runner cache v1 =====
+runner: scripts/skew_three_seed_delta_sign_product_execution_2026_08_15.py
+runner_sha256: 2543b3a187ac8d23b1281f7208f4285c7b80437dfc8d9dbd186212f130bc5d88
+input_fingerprint_sha256: 68f3cad47266d835be0a647e13e47416fee2d52230f1128c393139ba6bc30152
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: current Lattice, Admissibility, and Record boundaries are source-bound; the July-3 k=3 pair is reconstructed from the proper-cube action on 3-letter 6-tuples; no observation or fit is used
+package_local_integrity_reads: the note and current minimal axiom are read; no cache or governance surface is written
+negative_scope: only the locked three-ball union and the six-neighbor star at unread v are scored; the 6-tuple is displayed, not adopted
+PASS: audit-input-paths declared inputs are exactly the note and current axiom
+PASS: source-lattice current cubic nearest-neighbor wording is pinned
+PASS: source-admissibility current local-distribution wording is pinned
+PASS: source-record-boundary current lock, permanence, and unreadable-absence wording is pinned
+PASS: source-formation-boundary formation site remains outside Admissibility
+PASS: v-unread v is outside every radius-2 seed ball, so it is unread
+PASS: star-occupancy the six-neighbor occupancy of U at v is exactly the support of c
+PASS: pair-census the reconstructed July-3 k=3 pair has 48 members
+PASS: c-is-member the displayed 6-tuple (+,0,+,-,0,-) is a pair member
+PASS: n-new the pair fires at unread v and yields N_new=1
+PASS: new-lock-is-v the unique new lock is v
+PASS: u-permanence every previously locked site remains locked
+PASS: empty-tuple-silent the all-empty 6-tuple does not form at v
+PASS: same-mask-nonmember-silent a same-support non-member 6-tuple does not fire
+PASS: already-locked-silent a second step at the same site adds no lock
+PASS: claim-scope the note reports the displayed execution scope and does not adopt it
+PASS: note-contract machine fields, execution report, and display-only hygiene hold
+PASS: axiom-unedited the live axiom memo does not contain the displayed 6-tuple or product rule
+PASS: no-l1-attachment the note refuses L1 attachment and a fourth seed ball
+PASS: forbidden-tokens note and runner omit the forbidden gravity and slogan tokens
+per_element: v and its six neighbors are scored against the three seed balls
+per_site: one unread center is tested for pair membership and permanence
+per_mode: checked and not executed — no spectral claim occurs
+per_block: the displayed 6-tuple is executed once on this union
+lattice_wide: checked and not executed — only U and the star at v are scored
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,94 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_cov3_five_bit_selector_search_2026_08_15.py
+runner_sha256: d7552c2a78eaf04a1defb926a42302109f2d15d23392974efa21136e56d64741
+input_fingerprint_sha256: 6be5476c3e065c33d017082b10f3f5048d020f1401cef2621b798892e824cbc8
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.15
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_COV3_FIVE_BIT_SELECTOR_SEARCH_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+remaining=(0, 0, 0, 0, 0) cov3=0 pos=0
+remaining=(0, 0, 0, 0, 1) cov3=0 pos=0
+remaining=(0, 0, 0, 1, 0) cov3=0 pos=0
+remaining=(0, 0, 0, 1, 1) cov3=0 pos=0
+remaining=(0, 0, 1, 0, 0) cov3=0 pos=0
+remaining=(0, 0, 1, 0, 1) cov3=0 pos=0
+remaining=(0, 0, 1, 1, 0) cov3=24 pos=1
+remaining=(0, 0, 1, 1, 1) cov3=24 pos=1
+remaining=(0, 1, 0, 0, 0) cov3=0 pos=0
+remaining=(0, 1, 0, 0, 1) cov3=0 pos=0
+remaining=(0, 1, 0, 1, 0) cov3=0 pos=0
+remaining=(0, 1, 0, 1, 1) cov3=0 pos=0
+remaining=(0, 1, 1, 0, 0) cov3=16 pos=1
+remaining=(0, 1, 1, 0, 1) cov3=16 pos=1
+remaining=(0, 1, 1, 1, 0) cov3=44 pos=1
+remaining=(0, 1, 1, 1, 1) cov3=44 pos=1
+remaining=(1, 0, 0, 0, 0) cov3=0 pos=0
+remaining=(1, 0, 0, 0, 1) cov3=0 pos=0
+remaining=(1, 0, 0, 1, 0) cov3=56 pos=1
+remaining=(1, 0, 0, 1, 1) cov3=72 pos=1
+remaining=(1, 0, 1, 0, 0) cov3=80 pos=1
+remaining=(1, 0, 1, 0, 1) cov3=96 pos=1
+remaining=(1, 0, 1, 1, 0) cov3=188 pos=1
+remaining=(1, 0, 1, 1, 1) cov3=220 pos=1
+remaining=(1, 1, 0, 0, 0) cov3=4 pos=1
+remaining=(1, 1, 0, 0, 1) cov3=4 pos=1
+remaining=(1, 1, 0, 1, 0) cov3=68 pos=1
+remaining=(1, 1, 0, 1, 1) cov3=84 pos=1
+remaining=(1, 1, 1, 0, 0) cov3=96 pos=1
+remaining=(1, 1, 1, 0, 1) cov3=96 pos=1
+remaining=(1, 1, 1, 1, 0) cov3=212 pos=1
+remaining=(1, 1, 1, 1, 1) cov3=220 pos=1
+n_rotations=24
+n_orbits=10
+remaining_labels=('wt1', 'opp2', 'adj2', 'vertex3', 'mixed3')
+N_free=5
+|F_cut|=32
+n_three_site_seeds=220
+N_pos=20
+N_P=14
+N_both_P=13
+P_iff_pos=False
+f_L1_remaining=(1, 0, 1, 1, 1)
+cov3_f_L1=220
+n_candidates=2
+Q=Q_and5 N_Q=1 N_pos=20 N_both=1 iff=False
+Q=Q_or5 N_Q=31 N_pos=20 N_both=20 iff=False
+matching_Q=[]
+leftover_p3bit4_matches=[]
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required note-plus-axiom string-literal tuple
+PASS: thm1-twenty-four-rotations exactly 24 proper cube rotations
+PASS: thm1-ten-orbits exactly 10 orbits partition the 64 cells of {0,1}^6
+PASS: thm1-orbit-sizes orbit sizes are the axis-type class sizes
+PASS: thm1-f-cut-cardinality F_cut has five free bits and size 32
+PASS: thm1-f-L1-is-unbalanced-axis f_L1 is 1 iff some axis has c_+ != c_-
+PASS: thm1-f-L1-not-hamming f_L1 is not Hamming |c|_1 mod 2
+PASS: thm1-two-cube-and-three-site-seeds the two-cube has twelve vertices and C(12,3)=220 three-site seeds
+PASS: thm1-each-candidate-iff for Q_and5 and Q_or5, cov3>0 iff Q is decided and both fail
+PASS: thm1-reconfirm-p3bit4-four-bit-menu reconfirm p3bit4: no 4-bit remaining-bit AND or OR equals cov3>0
+PASS: thm2-counts-and-none each displayed Q reports N_Q, N_pos, N_both, and none match
+PASS: thm3-displayed-not-adopted the search is displayed and no remaining bit is adopted
+PASS: lattice-and-admissibility-parents the live axiom memo supplies Z^3, proper cubic rotations, and a covariant nearest-neighbor rule
+PASS: note-contract bounded theorem, displayed-not-adopted selector search, and machine status
+PASS: claim-type-and-gate N1-N8 and a passing no-go disposition are source-visible
+PASS: forbidden-phrases-absent the note and runner omit the dispatch-forbidden phrases
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: note-reports-search the note reports Q_and5, Q_or5, N_pos=20, and the none verdict
+PASS: no-axiom-edit the theorem proposes no axiom change
+PASS: off-patch-zero off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: last-remaining-bit-width-not-max3 the residual is the last remaining-bit width for cov3>0, not a Max(3) rename
+PASS: claim-scope-search claim_scope reports whether the 5-bit remaining-bit AND or OR equals cov3>0
+per_element: checked exactly — each of the 64 neighbor 6-tuples is assigned its axis-type orbit
+per_site: checked exactly — each of the twelve two-cube vertices uses the same six-direction stencil
+per_mode: checked exactly — every F_cut map is scored by whether any of the 220 three-site seeds fills
+per_block: checked exactly — Q_and5 and Q_or5 are each tested for cov3>0 iff Q
+lattice_wide: checked and not executed — no Z^3-wide formation law or physical Admissibility selector is claimed
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

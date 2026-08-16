@@ -1,0 +1,62 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_c00_c10_first_split_2026_08_15.py
+runner_sha256: 1fc46645e35a8fd93314dd603df1872b640da40de0781439ba9caa98c7245d4f
+input_fingerprint_sha256: 4d786422adb172196d7cb84e0b3d234ff5c964a595dec08bc70cab767e252a93
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.15
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_C00_C10_FIRST_SPLIT_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+external_scientific_inputs: none; two-cube occupancy ticks only
+explicit_bounded_inputs: the twelve-vertex two-cube, off-patch occupancy 0
+framework_context: Lattice supplies Z^3 nearest-neighbor adjacency; Record supplies permanence of a formed lock; no map is written into Admissibility
+package_local_integrity_reads: proposed source note and live axiom memo only
+measure_boundary: exact integer occupancy, lock counts, and coverage
+claim_boundary: displayed first fill split; opp2 is not adopted
+negative_scope: the first split seed is displayed and is not adopted
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: source-lattice the axiom memo names Z^3 sites with nearest-neighbor adjacency
+PASS: source-record the axiom memo states that a formed record locks one admissible possibility
+PASS: ten-orbits the 24 proper cube rotations partition the 64 cells into 10 orbits
+PASS: l1-is-n-neq-0 f_L1 equals some-axis-unbalanced and is not Hamming parity
+PASS: pair-in-fcut both remaining-bit tuples are F_cut maps and differ only on opp2
+PASS: thm1-both-cov2-zero both maps have two-site coverage 0
+PASS: thm2-lex-first-split the lex-first |S|<=3 fill disagreement is {(0,0,0),(1,1,1),(2,0,0)}
+PASS: thm3-who-fills f10 fills the displayed seed and f00 does not
+PASS: thm3-opp2-midpoint the leftover site (1,0,0) sees the opp2 cell; f00=0 and f10=1
+PASS: mutation-same-map-has-no-split a map does not disagree with itself on any |S|<=3 seed
+PASS: mutation-hamming-is-not-l1 Hamming parity is a different remaining-bit tuple from n!=0
+PASS: mutation-swap-who-fills-fails the swapped fill-bit claim is rejected by the recomputed histories
+PASS: claim-scope the note reports the lex-first |S|<=3 split and does not adopt it
+PASS: machine-status-contract bounded status, frontier trace, and next action are source-visible
+PASS: import-boundary-contract the supplied patch and absent physical bridge are disclosed
+PASS: live-parent-quotes the live Lattice and Record unread sentences are quoted without rewrite
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: claim-type-and-forbidden the bounded type is declared and forbidden phrases are absent
+PASS: no-axiom-edit the theorem proposes no axiom change
+PASS: off-patch-zero off-patch occupancy is the explicit 0 default
+n_rotations=24
+n_orbits=10
+n_two_site_seeds=66
+n_three_site_seeds=220
+f00_remaining=(1, 0, 0, 0, 0)
+f10_remaining=(1, 1, 0, 0, 0)
+f_L1_remaining=(1, 0, 1, 1, 1)
+cov2_f00=0
+cov2_f10=0
+cov2_f_L1=62
+cov3_f00=0
+cov3_f10=4
+first_split=((0, 0, 0), (1, 1, 1), (2, 0, 0))
+f00_history=(3, 11) fill=False
+f10_history=(3, 12) fill=True
+midpoint_cell=(1, 1, 0, 0, 0, 0) kind=opp2
+TOTAL: PASS=21 FAIL=0
+
+----- stderr -----
+

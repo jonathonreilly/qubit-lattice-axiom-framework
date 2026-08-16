@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/two_seed_l1_ball_occupied_nn_2026_08_15.py
+runner_sha256: 6b7149e0c583fdada4564eca6c0b39440a3d23176fec9262437f2ed503466fc4
+input_fingerprint_sha256: fedd8e6f224f02c68c9a2d20bc89a1858c7b9c9dc261401c494300ffb6810857
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+external_scientific_inputs: current Lattice nearest-neighbor wording is source-bound; the two-ball sets are constructed here; no observation or fit is used
+package_local_integrity_reads: the note and current minimal axiom memo are read; no cache, citation manifest, or governance surface is written
+negative_scope: two-seed geometry is scored and displayed, not written into Admissibility and not attached to L1
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: source-lattice current cubic nearest-neighbor wording is pinned
+PASS: census-cardinality the declared (p,r,s) family has exactly 36 unions
+PASS: one-ball-control a single ℓ¹ ball of radius 0, 1, or 2 has unread occupied-NN max 1, 2, 3
+PASS: unique-four exactly one declared union reaches occupied-NN count 4
+PASS: lex-first-witness the lex-first unread site with occupied-NN ≥ 4 is (1,-1,-1)
+PASS: occupied-nn-list that witness has occupied neighbors (2,-1,-1), (0,-1,-1), (1,0,-1), (1,-1,0)
+PASS: four-site-orbit exactly the four unread sites (1,±1,±1) reach count 4 on that union
+PASS: witness-unread the lex-first witness lies outside both radius-2 balls and inside the box
+PASS: other-separations-stay-below-four the other 35 declared unions have unread occupied-NN max ≤ 3
+PASS: theorem1-matrices computed per-separation max matrices match the note display
+PASS: theorem2-note-witness the note reports the lex-first unread witness and its occupied-NN list
+PASS: claim-scope frontmatter reports the two-ball 4-NN question as displayed, not adopted
+PASS: displayed-not-adopted Theorem 3 keeps the census displayed and refuses an Admissibility or L1 write
+PASS: axiom-unedited the current axiom memo does not contain two-seed ball geometry
+PASS: machine-status-contract the note uses controlled bounded-support fields and no-edit status
+PASS: forbidden-phrases the note avoids the dispatch-forbidden phrases
+PASS: not-need6-or-pairsupp the note scores two-ball unread 6-NN and refuses leftover-character of one-center or pair-census work
+per_element: each unread site in the box is scored by an exact six-neighbor count
+per_site: the lex-first unread witness and its four occupied neighbors are listed
+per_mode: checked and not executed — no spectral or harmonic claim is used
+per_block: each of the 36 declared two-ball unions is scored independently
+lattice_wide: checked and not executed — no lattice-wide occupancy member or axiom write is claimed
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

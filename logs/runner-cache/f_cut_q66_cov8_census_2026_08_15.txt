@@ -1,0 +1,55 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_q66_cov8_census_2026_08_15.py
+runner_sha256: 29cba6013667d32d77e9522f3668f5af21825a9759ff7b12636d1814364ac79e
+input_fingerprint_sha256: 23f24904f6dd70c61404ad386088165cee2c9b90549318610104d547992bed9e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_Q66_COV8_CENSUS_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+external_scientific_inputs: current Lattice/Admissibility/Record boundary only; no observation or fit
+negative_scope: displayed tot pair versus cov8; does not adopt a map
+n_rotations=24
+n_orbits=10
+remaining_labels=('wt1', 'opp2', 'adj2', 'vertex3', 'mixed3')
+|F_cut|=32
+n_eight_site_seeds=495
+Q66_maps=((1, 1, 1, 1, 0), (1, 1, 1, 1, 1))
+cov8(f0)=471
+cov8(f1)=495
+cov8(f_L1)=494
+both_equal_495=0
+difference=24
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required note-plus-axiom string-literal tuple
+PASS: thm1-host 24 rotations, 10 orbits, 32 F_cut maps, 495 eight-site seeds
+PASS: thm1-q66-pair the Q66 maps are exactly f0=(1,1,1,1,0) and f1=(1,1,1,1,1)
+PASS: thm1-cov8-pair cov8(f0)=471 and cov8(f1)=495
+PASS: thm1-f-L1-is-unbalanced-axis f_L1 is 1 iff some axis has c_+ != c_-
+PASS: thm1-f-L1-not-hamming f_L1 is n!=0, not Hamming |c|_1 mod 2
+PASS: thm2-not-both-495 the two scores are not both 495
+PASS: thm2-difference cov8(f1)-cov8(f0)=24
+PASS: thm3-display-not-adopt the pair is displayed and is not adopted as an Admissibility selector
+PASS: source-lattice-admissibility Lattice rotations and Admissibility covariance are pinned
+PASS: source-record-boundary Record lock, content-only readout, unreadable absence, and formation residual are pinned
+PASS: claim-scope claim_scope reports the two-map 8-site census and does not adopt a map
+PASS: note-contract machine fields, three theorems, and forbidden-phrase hygiene hold
+PASS: no-axiom-edit the axiom memo is unedited and the theorem proposes no axiom change
+PASS: off-patch-zero off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: not-leftover-6548 the residual is 8-site coverage of the tot pair, not leftover-character of #6548
+PASS: not-max8-rename the residual is not a Max(8) rename of the unique f1 maximizer
+PASS: q66-definition-and-l1-outside Q66 is wt1=adj2=opp2=vertex3=1 and f_L1 is outside the pair
+per_element: checked exactly — each of the 64 neighbor 6-tuples is assigned its axis-type orbit
+per_site: checked exactly — each of the twelve two-cube vertices uses the same six-direction stencil
+per_mode: checked exactly — the two Q66 maps are scored on 495 eight-site seeds
+per_block: checked exactly — cov8(f0), cov8(f1), and the difference are the tot-pair 8-site census on this patch
+lattice_wide: checked and not executed — no Z^3-wide formation law or physical Admissibility selector is claimed
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

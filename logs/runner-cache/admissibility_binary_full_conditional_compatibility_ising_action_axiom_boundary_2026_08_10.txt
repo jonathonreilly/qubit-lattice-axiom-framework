@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_binary_full_conditional_compatibility_ising_action_axiom_boundary_2026_08_10.py
+runner_sha256: 0acac10e09f64c743087323549dfd8b160c6caf28898212d92e29bc5adc25537
+input_fingerprint_sha256: b1c43985aabd0eedb30bb854717ed17b5172d89212a2f151831737809671534d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: empty; all finite compatibility and action calculations are derived with exact rational arithmetic
+analytic_scope: finite nonempty-site strictly positive binary full-conditionals; count-only dependence for the cubic classification
+PASS: source-current-axiom the current source retains the nearest-neighbor one-site distribution
+PASS: general-square-necessity all 24 distinct square contexts close for an independent positive four-site weight
+PASS: general-path-reconstruction every monotone path reconstructs the original weights up to one common scale
+PASS: general-normalized-uniqueness normalization recovers the unique positive joint law
+PASS: general-full-conditionals the recovered joint law reproduces every supplied one-site conditional
+PASS: single-odds-mutation one exact odds mutation creates square curl and path disagreement
+PASS: cubic-count-constraint-rank the exact count system has rank five and nullity two
+PASS: cubic-count-affine-basis constant and neighbor-count vectors form an independent null-space basis
+PASS: compatible-cubic-rule the exact fixture has geometric positive odds and genuine count dependence
+PASS: compatible-code-swap-symmetry the fixture obeys q(6-k)=1-q(k) and A B^3=1
+PASS: proper-cubic-group the exact determinant-one matrices form all 24 proper cubic rotations
+PASS: proper-orientation-mutation-control the determinant-minus-one signed-permutation family fails the properness certificate
+PASS: count-rule-covariance all 64 neighbor patterns preserve occupied count under all 24 proper rotations
+PASS: finite-action-conditionals the action recovers all 144 endpoint conditionals across 36 exterior-count pairs
+PASS: finite-action-normalization all 36 two-site boundary-count laws are positive and normalized
+PASS: source-theorem-surface the note states both exact equivalences and the finite action formula
+PASS: source-governance-surface the note carries the controlled claim, status, trace, and audit-boundary fields
+PASS: source-salvage-boundary the durable source limits itself to the independently verified static theorem
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

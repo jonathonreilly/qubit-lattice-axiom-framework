@@ -1,6 +1,6 @@
 {
- "edge_count": 15743,
- "node_count": 5545,
+ "edge_count": 15745,
+ "node_count": 5546,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -349,6 +349,10 @@
   "admissibility_barycenter_evaluation_menu_kernel_bounded_theorem_note_2026-08-12": {
    "deps_hash": "ae792f44891f",
    "out_degree": 3
+  },
+  "admissibility_binary_full_conditional_compatibility_ising_action_axiom_boundary_bounded_theorem_note_2026-08-10": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "admissibility_cnot_contact_gaussian_extractor_type_order_bounded_theorem_note_2026-08-10": {
    "deps_hash": "24fee4bcd54c",
@@ -1691,8 +1695,8 @@
    "out_degree": 11
   },
   "canonical_harness_index": {
-   "deps_hash": "fecc020f82c3",
-   "out_degree": 367
+   "deps_hash": "1ff8a80ae690",
+   "out_degree": 368
   },
   "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": {
    "deps_hash": "808c1ccb6109",

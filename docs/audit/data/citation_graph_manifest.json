@@ -1,6 +1,6 @@
 {
- "edge_count": 15743,
- "node_count": 5544,
+ "edge_count": 15745,
+ "node_count": 5545,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -16657,6 +16657,10 @@
   "sector_summed_companion_channel_cycle733_bounded_theorem_note_2026-07-28": {
    "deps_hash": "7299ef75081c",
    "out_degree": 1
+  },
+  "seed_grown_front_chiral_pair_support_bounded_theorem_note_2026-08-15": {
+   "deps_hash": "8fe1555943b9",
+   "out_degree": 2
   },
   "self_consistency_forces_poisson_note": {
    "deps_hash": "0c72e54e8637",

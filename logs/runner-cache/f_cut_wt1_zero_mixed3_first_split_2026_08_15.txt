@@ -1,0 +1,61 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_wt1_zero_mixed3_first_split_2026_08_15.py
+runner_sha256: 0342bd299c35834aa7457da9c165127ecf20a713b9d2e4b24b8649c442e69213
+input_fingerprint_sha256: 08a0cb5041914ed5b09fb2bc344c997dcee02ecde60004f6fad0fed9c2eeb3ee
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_WT1_ZERO_MIXED3_FIRST_SPLIT_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+n_rotations=24
+n_orbits=10
+remaining_labels=('wt1', 'opp2', 'adj2', 'vertex3', 'mixed3')
+N_free=5
+|F_cut|=32
+n_two_cube=12
+n_three_site_seeds=220
+n_bounded_seeds=299
+f0_remaining=(0, 1, 1, 1, 0)
+f1_remaining=(0, 1, 1, 1, 1)
+cov3_f0=44
+cov3_f1=44
+same_three_site_fill_set=True
+n_fill_size_lt_3_f0=0
+n_fill_size_lt_3_f1=0
+n_bounded_agree=299
+first_split=None
+f_L1_remaining=(1, 0, 1, 1, 1)
+f_hamming_remaining=(1, 0, 0, 1, 1)
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required note-plus-axiom string-literal tuple
+PASS: thm1-twenty-four-rotations exactly 24 proper cube rotations
+PASS: thm1-ten-orbits exactly 10 orbits partition the 64 cells of {0,1}^6
+PASS: thm1-orbit-sizes orbit sizes are the axis-type class sizes
+PASS: thm1-pair-in-f-cut-wt1-zero both remaining-bit tuples are wt1=0 members of F_cut and differ only on mixed3
+PASS: thm1-both-cov3-44 both maps attain cov3=44 on the 220 three-site seeds
+PASS: thm1-f-L1-not-hamming f_L1 is the unbalanced-axis map, not Hamming |c|_1 mod 2
+PASS: thm2-lex-bounded-seed-census lex |S|<=3 is the 299-seed prefix empty through all C(12,3) triples
+PASS: thm2-no-fill-split no |S|<=3 seed is a fill disagreement of the mixed3 pair
+PASS: thm3-which-fills-empty-split there is no unique filler of a first |S|<=3 split because there is no split
+PASS: lattice-and-admissibility-parents the live axiom memo supplies Z^3, proper cubic rotations, and a covariant nearest-neighbor rule
+PASS: note-contract bounded theorem, displayed-not-adopted, and machine status
+PASS: claim-type-and-gate N1-N8 and a passing no-go disposition are source-visible
+PASS: forbidden-phrases-absent the note and runner omit the dispatch-forbidden phrases
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: no-axiom-edit the theorem proposes no axiom change
+PASS: off-patch-zero off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: claim-scope-first-split claim_scope reports the lex-first |S|<=3 fill disagreement of the displayed pair
+PASS: new-pair-not-opp2-leftover the residual is the mixed3 pair, not leftover of the opp2=0 vs 1 split
+per_element: checked exactly — each of the 64 neighbor 6-tuples is assigned its axis-type orbit
+per_site: checked exactly — each of the twelve two-cube vertices uses the same six-direction stencil
+per_mode: checked exactly — both displayed F_cut maps are scored on every |S|<=3 seed
+per_block: checked exactly — the first |S|<=3 fill disagreement of this mixed3 pair is empty
+lattice_wide: checked and not executed — no Z^3-wide formation law or physical Admissibility selector is claimed
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

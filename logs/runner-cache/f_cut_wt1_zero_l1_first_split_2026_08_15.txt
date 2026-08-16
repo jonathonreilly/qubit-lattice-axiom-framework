@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_wt1_zero_l1_first_split_2026_08_15.py
+runner_sha256: 869e12b6e090defd23323d1e9db8e42e8cbf2ba34607e13ef1da8f7ac05fe8a3
+input_fingerprint_sha256: 0afd8ee13fff52feee8c690a5e88b0b17f887d392ec82baa023ee0cdcab11f4a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+external_scientific_inputs: none; no observational, fitted, literature, scale, or normalization value is used
+explicit_bounded_inputs: the twelve-vertex two-cube, off-patch occupancy 0, and the 32 complement-even F_cut maps are supplied finite data
+framework_context: Lattice supplies Z^3 nearest-neighbor adjacency; Record supplies permanence of a formed lock; no map is written into Admissibility
+package_local_integrity_reads: the proposed source note and current axiom memo are read; no cache or governance surface is written
+measure_boundary: exact finite occupancy dynamics on 12 sites and 64 neighborhood cells
+negative_scope: the first split seed is displayed and is not adopted; wt1 is not proposed as axiom content
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the static pair (note, current axiom memo)
+PASS: source-lattice the axiom memo names Z^3 sites with nearest-neighbor adjacency
+PASS: source-record the axiom memo states that a formed record locks one admissible possibility
+PASS: ten-orbits the 24 proper cube rotations partition the 64 cells into 10 orbits
+PASS: f-cut-count complement-even maps vanishing on empty and full number 32
+PASS: l1-is-n-neq-0 f_L1 equals some-axis-unbalanced and is not Hamming parity
+PASS: f0wt-bits the displayed sibling is L1 with remaining bit wt1 flipped to 0
+PASS: l1-one-site-history L1 from (0,0,0) has lock counts (1, 4, 8, 11, 12)
+PASS: f0wt-one-site-halt F_cut (0,0,1,1,1) from (0,0,0) halts at the seed
+PASS: theorem-1-l1-covers-220 L1 fills all 220 three-site seeds
+PASS: theorem-1-f0wt-not-max3 F_cut (0,0,1,1,1) is not a 3-site maximizer
+PASS: theorem-2-first-seed the lex-first |S|<=3 split seed is the one-site seed {(0,0,0)}
+PASS: theorem-3-histories independent histories from that seed are (1,4,8,11,12) and (1)
+PASS: claim-scope the note reports the lex-first |S|<=3 split and does not adopt it
+PASS: note-reports-split the note records both lock histories and the tick-1 split
+PASS: not-adopted the note does not write wt1 or the sibling map into Admissibility
+PASS: forbidden-tokens note and runner omit the forbidden phrases
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

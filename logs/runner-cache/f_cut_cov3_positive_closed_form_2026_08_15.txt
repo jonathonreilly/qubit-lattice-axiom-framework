@@ -1,0 +1,61 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_cov3_positive_closed_form_2026_08_15.py
+runner_sha256: 070a154301850709db304ed5219be6d819ad9f67d63d762b9a10fdec6d0fa538
+input_fingerprint_sha256: 1f6b6fcf44f25f212344805b846e552c0a7fcbcdbbcb4e15370a58a707aaba4f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.20
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_COV3_POSITIVE_CLOSED_FORM_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+external_scientific_inputs: current Lattice, Admissibility, and Record wording; no observations or fits
+construction: 32 F_cut maps on the two-cube, off-patch occupancy 0, 3-site seeds
+negative_scope: displayed selector only; P is not written into Admissibility
+PASS: audit-inputs declared source-bound pair exists
+PASS: source-lattice current cubic nearest-neighbor wording is pinned
+PASS: source-admissibility current local-distribution wording is pinned
+PASS: source-record-boundary current lock/content/unreadable-at-absence wording is pinned
+PASS: source-formation-boundary formation site/probability/rate remains outside Admissibility
+PASS: vertex-count two-cube has twelve vertices
+PASS: orbit-partition six-tuples partition into ten orbits with derived sizes
+PASS: complement-action complement pairs empty/full, wt1/wt5, opp2/opp4, adj2/adj4 and fixes vertex3, mixed3
+PASS: f-cut-cardinality five free remaining bits give 32 F_cut maps
+PASS: three-site-seeds C(12,3)=220 unordered three-site seeds
+PASS: two-site-seeds-control C(12,2)=66 two-site seeds for the #6494 control
+PASS: l1-bits n≠0 evaluates to remaining-bit tuple (1,0,1,1,1) and lies in F_cut
+PASS: l1-not-hamming Hamming parity is a different F_cut tuple
+N_P=14
+N_pos=20
+N_both=13
+equivalent=False
+lex_counterexample_tuple: (0, 0, 1, 1, 0) cov3=24 P=0
+n_counterexamples=8
+cov2_iff_P=True N_pos2=14 N_both2=14
+f_L1 remaining=(1, 0, 1, 1, 1) cov2=62 cov3=220 P=1
+PASS: p-cardinality P holds on exactly 14 maps: wt1=1 and (adj2,vertex3,mixed3)!=(0,0,0)
+PASS: control-6494 on the same 32 maps, cov2>0 iff P (investment #6494)
+PASS: theorem1-not-equivalent cov3>0 is not equivalent to P among the 32
+PASS: theorem1-counterexample lex-first counterexample is (0, 0, 1, 1, 0) with cov3=24 and P=0
+PASS: theorem2-counts N_P=14, N_pos=20, N_both=13
+PASS: l1-positive-control f_L1 has P=1 and fills every 3-site seed
+PASS: note-scope note reports the failed equivalence, displays a counterexample, and does not adopt P
+PASS: claim-scope claim_scope states the failed cov3>0 versus P equivalence
+PASS: not-leftover new k, new selector, not leftover of #6494 and not a Max(3) rename
+PASS: no-axiom-edit the theorem proposes no axiom change and does not adopt P
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: off-patch-zero off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: claim-type-and-gate N1-N8 and a passing no-go disposition are source-visible
+PASS: forbidden-phrases-absent the note and runner omit the dispatch-forbidden phrases
+per_element: checked exactly — each of the 32 remaining-bit tuples is scored
+per_site: checked exactly — each of the twelve two-cube vertices uses the same six-direction stencil
+per_mode: checked exactly — cov3>0 is compared with P on every F_cut map
+per_block: checked exactly — N_P, N_pos, N_both are the F_cut selector-census triple on this patch
+lattice_wide: checked and not executed — no Z^3-wide formation law or physical Admissibility selector is claimed
+TOTAL: PASS=27 FAIL=0
+
+----- stderr -----
+

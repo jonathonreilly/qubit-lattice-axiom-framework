@@ -1,0 +1,57 @@
+===== runner cache v1 =====
+runner: scripts/unequal_radius_lock_tick_stab_2026_08_15.py
+runner_sha256: b105299fb8239bc9583b812469c0b4309c379cf4489db7d41760a72512e3fda6
+input_fingerprint_sha256: db7f386bacf21b3ab3bc0fc47248e4e0c7929fd263447cd646404fa2c3d69931
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.86
+status: ok
+----- stdout -----
+unequal-radius lock-tick occupancy Stab
+AUDIT_INPUT_PATHS:
+  docs/UNEQUAL_RADIUS_LOCK_TICK_STAB_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+seed_box_card=125
+v_box_card=729
+radii_card=24
+G_plus=24
+N_prefix=2000
+N_uneq_prefix=1413
+exists_breaker=True
+first_star=(((-2, -2, -2), (-2, -2, -1), (-2, -2, 0)), (2, 1, 2), (-3, -3, -1))
+first_sigma=(1, 0, 1, 0, 1, 1)
+first_ticks=(1, None, 1, None, 2, 2)
+first_breaker=(((-2, -2, -2), (-2, -2, -1), (-2, -2, 1)), (2, 1, 3), (-3, -3, -1))
+first_breaker_detail=((1, 0, 1, 0, 1, 1), (1, None, 1, None, 3, 2), 2, 1)
+N_pair=48
+N_pair_support=4
+N_tick_ok=4
+support_members=(1, 0, 2, 0, 1, 2),(1, 0, 2, 0, 2, 1),(2, 0, 1, 0, 1, 2),(2, 0, 1, 0, 2, 1)
+PASS: audit-input-paths | AUDIT_INPUT_PATHS is the required static two-string literal tuple
+PASS: source-lattice
+PASS: source-admissibility
+PASS: source-unread-qubit
+PASS: g-plus-order | proper=24
+PASS: theorem-1-prefix | N_prefix=2000 N_uneq_prefix=1413
+PASS: theorem-1-existence | breaker=(((-2, -2, -2), (-2, -2, -1), (-2, -2, 1)), (2, 1, 3), (-3, -3, -1)) detail=((1, 0, 1, 0, 1, 1), (1, None, 1, None, 3, 2), 2, 1)
+PASS: theorem-1-swapper-breaks-ticks
+PASS: theorem-2-tick-ok | N_tick_ok=4 N_pair_support=4
+PASS: unequal-radii-not-all-equal
+PASS: claim-scope
+PASS: displayed-not-adopted
+PASS: l1-not-attached
+PASS: not-leftover-tickhost
+PASS: admissibility-unedited
+PASS: forbidden-phrases
+PASS: no-axiom-edit
+per_element: |Stab(σ)|, |Stab(σ,t)|, N_prefix, N_uneq_prefix, N_tick_ok are exact integers
+per_site: unread weight-4 unequal-radius 3-ball stars in the declared box
+per_mode: no spectral calculation
+per_block: 3-ball stars only
+lattice_wide: checked and not executed
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

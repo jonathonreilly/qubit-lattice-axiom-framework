@@ -5,15 +5,15 @@ corners of the unit four-cube, the unit-determinant five-corner pieces at the co
 floor, the cuttings by them, the pieces that occur, and the eight-piece covers.
 
 Permuting the four coordinates and flipping any of them splits the piece labelling
-space into parts the group cannot mix. The parts are read off the centre of the
+space into invariant parts. The parts are read off the centre of the
 algebra of matrices commuting with the action, found exactly and certified against
 every one of its defining constraints. A table of the cover table's shape is an
 equivariant map, so inside each part its rank is at most the smaller of the two
 multiplicities times the part's degree and its blind dimension is at least the
 difference. Summing gives a ceiling of 144 and a floor of 48; the cover table's
-own rank is 105 and its blind space is 87, so it sits 39 inside both, and that 39
-is the blindness the symmetry does not force. An equivariant integer matrix of
-exact rational rank 144 shows the ceiling is attained.
+own rank is 105 and its blind space is 87, so its eight weighted cover-block
+drops sum to 39. An equivariant integer matrix of exact rational rank 144 shows
+the ceiling is attained.
 
 The even subgroup splits the pieces into two classes of 96 and every cover meets
 each class four times. Six finite label diagnostics record related identities
@@ -772,7 +772,7 @@ DEGSUM = sum(d * c for d, c in CENSUS)
 DEGCNT = sum(c for d, c in CENSUS)
 
 # ------------------------------------------------------------------
-# 10. the negative
+# 10. finite label calculations
 # ------------------------------------------------------------------
 
 
@@ -1085,7 +1085,7 @@ ONE_SIDED = (PIECE_YES != COVER_YES)
 SAME_OK = ((not SAME_ACTION) or (NORB == NPOC))
 
 # ------------------------------------------------------------------
-# 16. the symmetry does not fix the cover-side dimension either
+# 16. cover-side orbit controls
 # ------------------------------------------------------------------
 
 

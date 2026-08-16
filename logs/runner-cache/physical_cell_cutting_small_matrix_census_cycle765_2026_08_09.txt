@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/physical_cell_cutting_small_matrix_census_cycle765_2026_08_09.py
-runner_sha256: fb5aec126213dbca8a3a817514969170475cdf2b6d3923738ff73f95c120502d
+runner_sha256: c47fc726701d2fb28d43245c2653caf327aa83995f30301024645987a59d529c
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 150.60
+elapsed_sec: 152.17
 status: ok
 ----- stdout -----
 all numbers below are exact computational identities; no floating point enters any gate
@@ -36,7 +36,7 @@ PASS C23 label diagnostic: corner parity agrees on 96 of 192 pieces, ordered det
 PASS C24 the determinant tracks the product character: with corners kept in source order it matches on all 73728 element-piece pairs, 0 misses
 PASS C25 sorted-order diagnostic: unequal on 36864 of 73728 pairs, equal throughout for 4 of 384 elements
 PASS C26 source hygiene: pure ASCII yes, no tab yes, no remainder character yes, no long dash yes, 38 barred strings absent yes
-PASS C27 budget: 133 seconds of wall time under 900, peak resident 260 MB under 2500, stdout characters counted below
+PASS C27 budget: 135 seconds of wall time under 900, peak resident 262 MB under 2500, stdout characters counted below
 PASS C28 same-code rebuilds at 1000003/1000033: baseline rows and all five conditions agree; separated central values yes/yes
 PASS C29 small matrices: 20 of 20 parts pass all five conditions; 5 have no cover multiplicity and so no matrix
 PASS C30 96 coefficients to blocks: widths 96/96, ranks 96/96 at the two primes
@@ -58,7 +58,7 @@ PASS C37 same-implementation check at 1000033: every 16th subset in the first 3.
 PASS C38 exact rational rank: 0/2/12/14 gives 24, 0/1/2/7 gives 144, the cover table's own 0/1/2/3 gives 105, each the census value
 C39 scope: mod 1000003; <= and < counts bound rational above, top-bin 511872 below; both extrema and cover reference exact
 PASS C40 hygiene: 3 further barred strings absent, no doubled nine, the one bare word only inside a barred pair
-PASS C41 budget: 150 seconds of wall time under 900, peak resident 577 MB under 2500, pre-trailer characters below
+PASS C41 budget: 152 seconds of wall time under 900, peak resident 567 MB under 2500, pre-trailer characters below
 stdout characters before trailer: 5725
 TOTAL: PASS=43 FAIL=0
 

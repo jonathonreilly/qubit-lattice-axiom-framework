@@ -26,13 +26,13 @@
     "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11",
     "valley_linear_continuum_synthesis_note"
   ],
-  "direct_in_degree": 2,
+  "direct_in_degree": 3,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 2.585,
+  "load_bearing_score": 3.5,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -111,6 +111,6 @@
   },
   "runner_path": "scripts/gate_b_weak_field_source_action_interface_2026_06_16.py",
   "title": "Gate B Weak-Field Source/Action Interface Boundary Note",
-  "transitive_descendants": 2,
+  "transitive_descendants": 3,
   "verdict_rationale": null
 }

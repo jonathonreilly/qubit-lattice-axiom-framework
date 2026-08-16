@@ -32,7 +32,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 4.585,
+  "load_bearing_score": 4.807,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -256,6 +256,6 @@
   },
   "runner_path": "scripts/cl3_primitive_p_lh_2026_05_10_pPlh.py",
   "title": "P-LH-Content Open Gate \u2014 Three Candidate Substrate-Side Selectors of SM LH/RH Content over Pati-Salam (pPlh)",
-  "transitive_descendants": 5,
+  "transitive_descendants": 6,
   "verdict_rationale": null
 }

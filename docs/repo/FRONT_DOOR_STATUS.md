@@ -31,7 +31,7 @@ Owner-approval history for axioms and primitives:
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 4867 |
+| Ledger rows | 4882 |
 | Applied audit verdicts | 0 |
 | Retained-grade rows, including boxed decorations | 0 |
 | Retained positive theorems | 0 |
@@ -39,7 +39,7 @@ Owner-approval history for axioms and primitives:
 | Retained bounded rows | 0 |
 | Boxed decorations under retained parents | 0 |
 | Open gates | 0 |
-| Unaudited rows | 4415 |
+| Unaudited rows | 4430 |
 | Retained-pending-chain rows | 0 |
 | Audited conditional rows | 0 |
 | Audited renaming rows | 0 |
@@ -54,13 +54,13 @@ Full audit-ratified row list: [`docs/repo/RETAINED_BACKBONE.md`](RETAINED_BACKBO
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 4415 |
-| Ready rows | 1569 |
+| Total pending rows | 4430 |
+| Ready rows | 1581 |
 | Cycle-break targets | 60 |
 | Critical pending | 736 |
 | High pending | 452 |
-| Medium pending | 1045 |
-| Leaf pending | 2182 |
+| Medium pending | 1053 |
+| Leaf pending | 2189 |
 
 Next ready rows by queue order:
 
@@ -429,19 +429,19 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 5529 |
+| Citation-graph nodes | 5544 |
 | Critical nodes | 767 |
 | High nodes | 487 |
-| Medium nodes | 1246 |
-| Leaf nodes | 3029 |
+| Medium nodes | 1254 |
+| Leaf nodes | 3036 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 2317 descendants; score 314.679
-- `three_generation_observable_theorem_note` - critical; 1325 descendants; score 62.373
+- `minimal_axioms` - critical; 2321 descendants; score 315.681
+- `three_generation_observable_theorem_note` - critical; 1326 descendants; score 62.374
 - `observable_principle_from_axiom_note` - critical; 1155 descendants; score 61.675
 - `quark_route2_exact_readout_map_note_2026-04-19` - critical; 199 descendants; score 61.644
-- `graph_first_su3_integration_note` - critical; 1722 descendants; score 60.251
-- `plaquette_self_consistency_note` - critical; 1298 descendants; score 49.843
-- `kinetic_isotropy_primitive` - critical; 955 descendants; score 46.901
-- `key_terminology` - critical; 1347 descendants; score 44.897
+- `graph_first_su3_integration_note` - critical; 1723 descendants; score 60.252
+- `plaquette_self_consistency_note` - critical; 1299 descendants; score 49.844
+- `kinetic_isotropy_primitive` - critical; 956 descendants; score 46.902
+- `key_terminology` - critical; 1348 descendants; score 44.898

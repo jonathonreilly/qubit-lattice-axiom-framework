@@ -30,7 +30,9 @@
   "direct_in_degree": 0,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
-  "helper_runner_paths": [],
+  "helper_runner_paths": [
+    "scripts/frontier_cycle924_occurrence_rate_independent_check_2026_07_28.py"
+  ],
   "independence": null,
   "intrinsic_status": "unaudited",
   "load_bearing_score": 0.0,
@@ -38,7 +40,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "16de35991ce120b9d07527722e1aa216707353190ad2a49f35a8f217f1ec539b",
+  "note_hash": "eb6c4036bac1e727432a83acbc9d0803a8ae0808d9816ac7d4a0640c00c7b057",
   "note_path": "docs/OCCURRENCE_RATE_ROUTE_ARITHMETIC_CYCLE924_BOUNDED_THEOREM_NOTE_2026-07-28.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

@@ -27,12 +27,17 @@
     "signed_gravity_aps_wald_gauss_bridge_audit_note",
     "signed_gravity_aps_locked_source_action_proposal_note",
     "yt_lsp_source_scale_boundary_and_strict_response_contract_note_2026-05-26",
-    "ac_reta_hclass_hunit_readout_derivation_obligation"
+    "ac_reta_hclass_hunit_readout_derivation_obligation",
+    "gate_b_weak_field_source_action_interface_note_2026-06-16",
+    "signed_gravity_response_backlog_2026-04-25",
+    "signed_gravity_response_lane_status_note_2026-04-26"
   ],
   "direct_in_degree": 0,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
-  "helper_runner_paths": [],
+  "helper_runner_paths": [
+    "scripts/frontier_cycle871_bridge_independent_check_2026_07_28.py"
+  ],
   "independence": null,
   "intrinsic_status": "unaudited",
   "load_bearing_score": 0.0,
@@ -40,7 +45,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "16ddd9dae90a4d07f825ed3f2dc2465f5410e7886a34109739c253e425abcc76",
+  "note_hash": "5dea06e1a68e0490de04824224e501af97b430d09c95f9bdd990e11feb82ac4d",
   "note_path": "docs/SOURCE_ACTION_BRIDGE_PRICING_CYCLE871_BOUNDED_THEOREM_NOTE_2026-07-28.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

@@ -1,0 +1,53 @@
+===== runner cache v1 =====
+runner: scripts/two_ball_positive_site_chiral_execution_2026_08_15.py
+runner_sha256: 532e245cd31fbe46acf63298a5c2866774c1720238b8a6c92896523362a3fa7e
+input_fingerprint_sha256: 11ef5c3063afbb289c6bffeb3cb203253cd8165fae7dbd55cfe1334b11f9efd9
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+external_scientific_inputs: current Lattice, Qubit, Admissibility, and Record sentences plus the July-3 pair construction reconstructed locally
+integrity_reads: this runner, its note, and the current axiom memo; no cache written
+construction: U=B_2(0)∪B_2((2,0,0)), unread v=(1,−1,1), 6-tuple (+,−,−,0,0,+)
+negative_scope: displayed rival execution only; not adopted; L1 not attached
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: source-lattice current cubic nearest-neighbor wording is pinned
+PASS: source-admissibility current local-distribution wording is pinned
+PASS: source-formation-boundary formation site/probability/rate remains outside Admissibility
+PASS: source-qubit Qubit remains M_2(C)
+PASS: source-record lock, permanence, content-only readout, and unreadability at absence are pinned
+U_card=43
+v_in_U=False
+occupancy_mask=(1, 1, 1, 0, 0, 1)
+displayed_c=(+,−,−,0,0,+)
+unique_axis_fragment=(*,*,−,0,0,+)
+N_pair=48
+c_is_pair_member=True
+N_new=1
+new_lock=(1, -1, 1)
+U_persists=True
+PASS: center-unread the star center v is not already in U
+PASS: u-cardinality the two radius-two balls union to 43 locked sites
+PASS: occupancy-mask occupied nearest neighbors of v are exactly +x,−x,+y,−z
+PASS: unique-axis-fragment unique-axis labels are ambiguous, ambiguous, −, 0, 0, +
+PASS: theorem-1-agreement c agrees with every unambiguous occupied unique-axis label
+PASS: pair-census the reconstructed July-3 k=3 pair has 48 members in one chiral pair
+PASS: theorem-2-member c is a pair member
+PASS: theorem-2-fire the pair fires at v with N_new=1 and new lock v
+PASS: theorem-1-permanence every lock in U persists after the displayed tick
+PASS: claim-scope the note reports the declared displayed claim_scope
+PASS: displayed-not-adopted the note keeps the execution displayed and not adopted
+PASS: l1-not-attached the note does not attach L1
+PASS: not-all4-census the note is an execution at v, not a leftover all-site census
+PASS: forbidden-absent the note avoids the dispatch-forbidden phrases
+PASS: canonical-nonmutation the axiom memo does not contain the displayed 6-tuple or pair as axiom text
+per_element: unique-axis signs, pair membership, and N_new are exact integers
+per_site: only the unread star center v is executed
+per_mode: no spectral calculation
+per_block: U and the six-neighbor star at v only
+lattice_wide: checked and not executed
+TOTAL: PASS=21 FAIL=0
+
+----- stderr -----
+

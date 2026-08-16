@@ -4,12 +4,29 @@ Date: 2026-08-09
 
 Authority: none
 
-Audit: unset.
-
-Status: derived complementation identity on the sub-sum lattice, with a
-corner-overlap stratification of the cell orbits measured against it
+Status: proposed_retained
 
 Claim type: bounded_theorem
+
+Machine status:
+
+```yaml
+actual_current_surface_status: candidate-retained-grade
+target_claim_type: bounded_theorem
+trace_class: frontier_discovery
+target_claim_id: null
+target_blocker_text: null
+source_of_blocker_text: frontier_question
+reachability_to_target: unknown_frontier
+artifact_role: theorem
+next_trace_action: "Send the self-contained finite theorem and measured strata to independent audit; no downstream consumer is yet known."
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: "The note proves one exact finite complementary-rank identity and reports exhaustive measurements on the declared unit-four-cube object."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```
 
 Runner:
 

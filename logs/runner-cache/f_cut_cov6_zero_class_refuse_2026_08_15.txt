@@ -1,0 +1,73 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_cov6_zero_class_refuse_2026_08_15.py
+runner_sha256: 701136a27af7a9c3b7ac538740782e499dbf36f22f06e400bb8afe14768f079a
+input_fingerprint_sha256: 07d668f0ebe0dbfd82adcc3b6fd1d4b73a0ed9908da318ce453a23814214ffb5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_COV6_ZERO_CLASS_REFUSE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+construction: first remaining-bit refuse of each Q4-false vertex3=0 map from S
+negative_scope: adj2 is displayed, not adopted or written into Admissibility
+n_rotations=24
+n_orbits=10
+orbit_types_and_sizes=(0, 0, 3):1,(0, 1, 2):3,(0, 2, 1):3,(0, 3, 0):1,(1, 0, 2):6,(1, 1, 1):12,(1, 2, 0):6,(2, 0, 1):12,(2, 1, 0):12,(3, 0, 0):8
+remaining_labels=('wt1', 'opp2', 'adj2', 'vertex3', 'mixed3')
+N_free=5
+|F_cut|=32
+N_Q4_false=8
+N_cov6_zero_class=4
+cov6_zero_class=[(0, 0, 0, 0, 0), (0, 0, 0, 0, 1), (0, 1, 0, 0, 0), (0, 1, 0, 0, 1)]
+f_z_remaining=(0, 0, 0, 0, 0)
+f1_remaining=(1, 1, 1, 1, 1)
+f_L1_remaining=(1, 0, 1, 1, 1)
+S={(0,0,0),(0,0,1),(0,1,0),(0,1,1),(1,0,0),(1,0,1)}
+f1_fills_S=True hist_f1=(6, 10, 12)
+f_z_fills_S=False hist_fz=(6,)
+f_L1_fills_S=True hist_L1=(6, 10, 12)
+cov6 (0, 0, 0, 0, 0)=0
+cov6 (0, 0, 0, 0, 1)=0
+cov6 (0, 1, 0, 0, 0)=0
+cov6 (0, 1, 0, 0, 1)=0
+class_refuse f=(0, 0, 0, 0, 0) N_refuse=4 t=1 x=(1, 1, 0) type=adj2(2, 0, 1) cfg=(0, 1, 0, 1, 0, 0) hist=(6,)
+class_refuse f=(0, 0, 0, 0, 1) N_refuse=4 t=1 x=(1, 1, 0) type=adj2(2, 0, 1) cfg=(0, 1, 0, 1, 0, 0) hist=(6,)
+class_refuse f=(0, 1, 0, 0, 0) N_refuse=4 t=1 x=(1, 1, 0) type=adj2(2, 0, 1) cfg=(0, 1, 0, 1, 0, 0) hist=(6,)
+class_refuse f=(0, 1, 0, 0, 1) N_refuse=4 t=1 x=(1, 1, 0) type=adj2(2, 0, 1) cfg=(0, 1, 0, 1, 0, 0) hist=(6,)
+all_first_refuse_adj2=True
+lex_first_counterexample=None
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required note-plus-axiom string-literal tuple
+PASS: thm1-twenty-four-rotations exactly 24 proper cube rotations
+PASS: thm1-ten-orbits exactly 10 orbits partition the 64 cells of {0,1}^6
+PASS: thm1-orbit-sizes orbit sizes are the axis-type class sizes
+PASS: thm1-f-cut-cardinality F_cut has five free bits and size 32
+PASS: thm1-f-L1-is-unbalanced-axis f_L1 is 1 iff some axis has c_+ != c_-
+PASS: thm1-f-L1-not-hamming f_L1 is n!=0, not Hamming |c|_1 mod 2
+PASS: thm1-two-cube-and-s-filled-by-f1 the two-cube has twelve vertices and f1 fills the lex-first 6-site seed S
+PASS: thm1-four-q4-false-vertex3-zero-maps the four Q4-false vertex3=0 remaining-bit maps are the cov6=0 class
+PASS: thm1-class-first-refuse-types each of the four maps has a first remaining-bit refuse from S
+PASS: thm1-cov6-zero each of the four Q4-false vertex3=0 maps has cov6=0
+PASS: thm2-every-first-refuse-is-adj2 every first refuse is type adj2; no lex-first counterexample
+PASS: thm3-display-not-adopt the class first-refuse type is displayed and is not adopted
+PASS: source-lattice-admissibility Lattice rotations and Admissibility covariance are pinned
+PASS: source-record-boundary Record lock, content-only readout, unreadable absence, and formation residual are pinned
+PASS: claim-scope claim_scope reports whether every Q4-false vertex3=0 map first refuses adj2 from S
+PASS: note-contract machine fields, three theorems, and forbidden-phrase hygiene hold
+PASS: no-axiom-edit the axiom memo is unedited and the theorem proposes no axiom change
+PASS: off-patch-zero off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: note-reports-class-refuse the note reports the four tuples, S, and first-refuse type adj2
+PASS: not-leftover-q6zero the residual is class uniqueness, not leftover of the single-map refuse
+per_element: checked exactly — each of the 64 neighbor 6-tuples is assigned its axis-type orbit
+per_site: checked exactly — each of the twelve two-cube vertices uses the same six-direction stencil
+per_mode: checked exactly — all four Q4-false vertex3=0 remaining-bit maps are scored from S
+per_block: checked exactly — each first remaining-bit refuse type is named, or N_refuse=0
+lattice_wide: checked and not executed — no Z^3-wide formation law or physical Admissibility selector is claimed
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/cube_covariant_nn_hop_cost_minkowski_mismatch_2026_08_15.py
+runner_sha256: cd710d90d9a621e38de336f1731971781ecf6c0efb2f08582e88a90881f8b8c6
+input_fingerprint_sha256: bc3f4ae5c0222edb082ca8b2e6beb2c9e8cbfda6dc621a36c478d1b22ed6df5b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.15
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/CUBE_COVARIANT_NN_HOP_COST_MINKOWSKI_MISMATCH_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+external_scientific_inputs: current Lattice and Admissibility wording are source-bound; Minkowski light is a displayed comparator
+construction: G+ orbit of the six NN directions, cube-covariant hop-costs, shortest-path first arrival
+negative_scope: displayed t proportional to ell^1 fails isotropic c and the discrete ell^2 null cone; no axiom edit
+PASS: audit-inputs declared inputs are exactly the source note and the axiom memo
+PASS: source-lattice current cubic nearest-neighbor and proper-cube wording is pinned
+PASS: source-admissibility current covariance and local-condition wording is pinned
+PASS: source-no-minkowski-in-axioms the axiom memo does not name Minkowski, a boost, or a Wick map
+PASS: group-order the proper cube group has 24 matrices of determinant +1
+PASS: single-orbit the six axis directions are one G+ orbit of e_1
+PASS: covariant-constant every constant hop-cost is cube-covariant and the unequal mutation is not
+PASS: first-arrival-form shortest-path arrival equals w_0 |v|_1 on the radius-4 ball
+PASS: ratio-witnesses (1,0,0) gives w_0^2 and (1,1,0) gives 2 w_0^2 for every tested w_0
+PASS: ratio-not-constant t^2 / |v|_2^2 is not constant on the nonzero radius-4 ball
+PASS: discrete-null-subset discrete null t^2 = |v|_2^2 is a proper subset; (1,1,0) is the witness
+N_ball=128 N_null_w1=24 N_null_w2=0
+PASS: no-minkowski-match no cube-covariant 6-NN unit-orbit member matches both displayed light tests
+PASS: identity-rotations the named 90-degree generators sit in G+ and move e_1 onto the other axes
+PASS: note-contract machine fields, displayed-not-adopted boundary, N1-N8, and forbidden-phrase hygiene hold
+per_element: six axis directions, G+ orbit, and the two named witnesses are executed
+per_site: first arrival is shortest-path cost from the origin on Z^3
+per_mode: checked and not executed — no spectral claim occurs
+per_block: the radius-4 integer ball is the comparison domain
+lattice_wide: checked and not executed — no occupancy step and no axiom edit
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

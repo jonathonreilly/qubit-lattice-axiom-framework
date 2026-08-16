@@ -1,0 +1,72 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_qstar_cov6_max_selector_2026_08_15.py
+runner_sha256: b38dd4e1eedd96a3baaf80d0dc467e12489fad246c5e40d73301d737163ebac9
+input_fingerprint_sha256: 0331811e3bc44777e68c7179cc845afd9c073e3c6be440b6db938142fdbb5044
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_QSTAR_COV6_MAX_SELECTOR_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+n_rotations=24
+n_orbits=10
+orbit_types_and_sizes=(0, 0, 3):1,(0, 1, 2):3,(0, 2, 1):3,(0, 3, 0):1,(1, 0, 2):6,(1, 1, 1):12,(1, 2, 0):6,(2, 0, 1):12,(2, 1, 0):12,(3, 0, 0):8
+remaining_labels=('wt1', 'opp2', 'adj2', 'vertex3', 'mixed3')
+N_free=5
+|F_cut|=32
+|Q_*|=8
+n_six_site_seeds=924
+m6=924
+max_cov6=924
+remaining=(1, 0, 1, 0, 0) cov6=418 max6=0 Q=0
+remaining=(1, 0, 1, 0, 1) cov6=470 max6=0 Q=0
+remaining=(1, 0, 1, 1, 0) cov6=844 max6=0 Q=0
+remaining=(1, 0, 1, 1, 1) cov6=920 max6=0 Q=1
+remaining=(1, 1, 1, 0, 0) cov6=454 max6=0 Q=0
+remaining=(1, 1, 1, 0, 1) cov6=474 max6=0 Q=0
+remaining=(1, 1, 1, 1, 0) cov6=904 max6=0 Q=0
+remaining=(1, 1, 1, 1, 1) cov6=924 max6=1 Q=1
+N_max=1
+N_Q=2
+N_both=1
+max_iff_Q=False
+max_maps=[(1, 1, 1, 1, 1)]
+Q_maps=[(1, 0, 1, 1, 1), (1, 1, 1, 1, 1)]
+lex_first_miss=(1, 0, 1, 1, 1)
+f_L1_remaining=(1, 0, 1, 1, 1)
+cov6_f_L1=920
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required note-plus-axiom string-literal tuple
+PASS: thm1-twenty-four-rotations exactly 24 proper cube rotations
+PASS: thm1-ten-orbits exactly 10 orbits partition the 64 cells of {0,1}^6
+PASS: thm1-orbit-sizes orbit sizes are the axis-type class sizes
+PASS: thm1-f-cut-cardinality F_cut has five free bits and size 32
+PASS: thm1-qstar-eight-lex Q_* is the eight remaining-bit tuples with wt1=1 and adj2=1 in lex order
+PASS: thm1-f-L1-is-unbalanced-axis f_L1 is 1 iff some axis has c_+ != c_-
+PASS: thm1-f-L1-not-hamming f_L1 is not Hamming |c|_1 mod 2
+PASS: thm1-two-cube-and-six-site-seeds the two-cube has twelve vertices and C(12,6)=924 six-site seeds
+PASS: thm1-max-iff-Q maximal cov6 is not equivalent to vertex3=mixed3=1 among the eight Q_* maps
+PASS: thm2-counts N_max, N_Q, and N_both are the three Q_* counts and the lex-first miss is named
+PASS: thm3-displayed-not-adopted the iff report is displayed and no remaining bit is adopted
+PASS: lattice-and-admissibility-parents the live axiom memo supplies Z^3, proper cubic rotations, and a covariant nearest-neighbor rule
+PASS: note-contract bounded theorem, displayed-not-adopted selector, and machine status
+PASS: claim-type-and-gate N1-N8 and a passing no-go disposition are source-visible
+PASS: forbidden-phrases-absent the note and runner omit the dispatch-forbidden phrases
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: note-reports-selector the note reports Q_*, Q := vertex3 and mixed3, the census, and the miss
+PASS: no-axiom-edit the theorem proposes no axiom change
+PASS: off-patch-zero off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: not-leftover-totality-k the residual is the new-k max-cov6 test, not leftover tot3/tot5/tot7/tot10 iff Q
+PASS: claim-scope-selector claim_scope states the restricted Q_* max-cov6-iff-Q report
+per_element: checked exactly — each of the 64 neighbor 6-tuples is assigned its axis-type orbit
+per_site: checked exactly — each of the twelve two-cube vertices uses the same six-direction stencil
+per_mode: checked exactly — each of the eight Q_* maps is scored by how many of the 924 six-site seeds it fills
+per_block: checked exactly — maximal cov6 iff Q is the Q_* six-site max test against vertex3 and mixed3
+lattice_wide: checked and not executed — no Z^3-wide formation law or physical Admissibility selector is claimed
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

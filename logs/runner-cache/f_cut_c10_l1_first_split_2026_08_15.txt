@@ -1,0 +1,47 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_c10_l1_first_split_2026_08_15.py
+runner_sha256: e4e4809c860562ea7cd6e73de2c8237b98ab46b270b4c80fd089f59d211f8c1f
+input_fingerprint_sha256: 0c52ef36b46d7de9969c783846162d0a89accf4a6e624e0b4a8c7df5582e6898
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: current Lattice, Admissibility, and Record boundaries; no observations or fits
+integrity_reads: this runner, its note, and the live axiom memo; no other scientific inputs
+construction: displayed cube-covariant occupancy-to-lock maps; seed census on the twelve-vertex two-cube
+negative_scope: neither map nor the distinguishing seed is adopted or written into Admissibility
+cache_write: false
+PASS: audit-inputs declared source-bound inputs exist as static literals
+PASS: source-lattice current cubic nearest-neighbor wording is pinned
+PASS: source-admissibility current local-distribution wording is pinned
+PASS: source-formation-boundary formation site, probability, and rate remain outside Admissibility
+PASS: source-record-and-non-dynamics Record lock wording and the non-dynamics Admissibility boundary are pinned
+PASS: two-cube-and-lex-order the two-cube has twelve lexicographically ordered vertices
+PASS: census-cardinality nonempty seeds of size at most 3 number 12+66+220=298
+PASS: off-patch-zero every off-patch neighbor contributes occupancy 0
+PASS: axis-type-reps declared orbit representatives have the stated axis types
+PASS: f10-remaining-bits f10 is the F_cut remaining-bit tuple (1,1,0,0,0)
+PASS: f-l1-is-n-unbalanced f_L1 is the n!=0 (some-axis-unbalanced) map, not Hamming parity
+PASS: maps-distinct-on-opp2-and-adj2 f10 and f_L1 disagree on opp2 and on adj2, so they are distinct maps
+census: n_total=298 n_l1_fill=294 n_f10_fill=4 cov2_L1=62 cov2_f10=0
+first_fill_split_seed=((0, 0, 0),) hist_L1=(1, 4, 8, 11, 12) fill_L1=True hist_f10=(1, 4, 5, 7) fill_f10=False
+PASS: theorem-1-cov2 L1 has cov2=62 (#6490) and f10 has cov2=0
+PASS: theorem-2-first-seed the first L1-fill / f10-miss is the lex 1-site seed {(0,0,0)}
+PASS: theorem-3-histories-and-fill on that seed f_L1 history (1, 4, 8, 11, 12) fills and f10 history (1, 4, 5, 7) does not
+PASS: split-mechanism the maps share the first wave and split on adj2; opp2 does not appear
+PASS: theorem-3-display-not-adopt the note displays the seed and refuses adoption of f10
+PASS: note-contract machine fields, first-seed statement, and forbidden-phrase hygiene hold
+PASS: not-leftover-or-clone the claim is a new fill-split, not leftover wt1=0 character
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: off-patch-declared off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: claim-scope the note reports the lex-first |S|<=3 split and does not adopt it
+per_element: axis-type representatives and off-patch occupancy 0 are enumerated
+per_site: each two-cube vertex is tested against both displayed lock predicates
+per_mode: checked and not executed — no spectral claim occurs
+per_block: all 298 seeds of size at most 3 are executed to a fixed point
+lattice_wide: checked and not executed — neither map nor the seed is adopted
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

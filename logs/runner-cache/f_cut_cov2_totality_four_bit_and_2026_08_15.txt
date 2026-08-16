@@ -1,0 +1,53 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_cov2_totality_four_bit_and_2026_08_15.py
+runner_sha256: 8777b3a96933014ba106b90d84a6d188daa5f828c820bcef65166699044bd6f2
+input_fingerprint_sha256: ca19be1b6dbe99439e0d285710dfc4a5feca6c86d835a8b645fd4cc529648af2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_COV2_TOTALITY_FOUR_BIT_AND_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+external_scientific_inputs: current Lattice/Admissibility/Record boundary only; no observation or fit
+negative_scope: displayed cov2=66 versus Q66 on all 32 F_cut maps; does not adopt a bit
+n_rotations=24
+n_orbits=10
+remaining_labels=('wt1', 'opp2', 'adj2', 'vertex3', 'mixed3')
+|F_cut|=32
+n_two_site_seeds=66
+N_Q66=2
+N_tot2=2
+N_both=2
+cov2=66_iff_Q66=1
+lex_first_counterexample=None
+cov2(f_L1)=62
+Q66-or-tot2 (1, 1, 1, 1, 0) cov2=66 Q66=1 total=1
+Q66-or-tot2 (1, 1, 1, 1, 1) cov2=66 Q66=1 total=1
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required note-plus-axiom string-literal tuple
+PASS: thm1-host 24 rotations, 10 orbits, 32 F_cut maps, 66 two-site seeds
+PASS: thm1-f-L1-is-unbalanced-axis f_L1 is 1 iff some axis has c_+ != c_-
+PASS: thm1-f-L1-not-hamming f_L1 is n!=0, not Hamming |c|_1 mod 2
+PASS: thm1-q66-is-four-bit-and Q66 is wt1 and adj2 and opp2 and vertex3, mixed3 free
+PASS: thm1-equivalence among all 32 F_cut maps, cov2=66 is equivalent to Q66
+PASS: thm2-census N_Q66 = 2, N_tot2 = 2, N_both = 2
+PASS: thm3-display-not-adopted the identity is displayed and no bit is adopted
+PASS: source-lattice-admissibility Lattice rotations and Admissibility covariance are pinned
+PASS: source-record-boundary Record lock, content-only readout, unreadable absence, and formation residual are pinned
+PASS: claim-scope claim_scope reports the global two-site totality identity and does not adopt a bit
+PASS: note-contract machine fields, three theorems, and forbidden-phrase hygiene hold
+PASS: no-axiom-edit the axiom memo is unedited and the theorem proposes no axiom change
+PASS: off-patch-zero off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+per_element: checked exactly — each of the 64 neighbor 6-tuples is assigned its axis-type orbit
+per_site: checked exactly — each of the twelve two-cube vertices uses the same six-direction stencil
+per_mode: checked exactly — every F_cut map is scored on sixty-six two-site seeds
+per_block: checked exactly — cov2=66 iff Q66 is named, holds, and is not adopted
+lattice_wide: checked and not executed — no Z^3-wide formation law or physical Admissibility selector is claimed
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

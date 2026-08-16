@@ -1,0 +1,52 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_mix1_two_site_fill_orbit_2026_08_15.py
+runner_sha256: 92b05a6b706a04bea1a091df3f41abbd22133099fd008ba39d28456e1aa6481b
+input_fingerprint_sha256: c49e8f9bbb25a7f9ffa5e0deac41a7ef52d3fc741e5eb0f79c15462013e1380f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: current Lattice, Admissibility, and Record boundaries; no observations or fits
+integrity_reads: this runner, its note, and the live axiom memo; no other scientific inputs
+construction: displayed F_cut occupancy-to-lock map; G-orbits of the two-site fill set on the twelve-vertex two-cube
+negative_scope: neither the map nor the fill-set orbit type is adopted or written into Admissibility
+cache_write: false
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_MIX1_TWO_SITE_FILL_ORBIT_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+PASS: audit-inputs declared source-bound inputs exist as static literals
+PASS: source-lattice current cubic nearest-neighbor wording is pinned
+PASS: source-admissibility current local-distribution wording is pinned
+PASS: source-formation-boundary formation site, probability, and rate remain outside Admissibility
+PASS: source-record-and-non-dynamics Record lock wording and the non-dynamics Admissibility boundary are pinned
+PASS: two-cube-and-lex-order the two-cube has twelve lexicographically ordered vertices
+PASS: census-cardinality two-site seed count is C(12,2)=66
+PASS: off-patch-zero every off-patch neighbor contributes occupancy 0
+PASS: axis-type-reps declared orbit representatives have the stated axis types
+PASS: f-mix1-remaining-bits f_mix1 is the F_cut remaining-bit tuple (1,0,0,0,1)
+PASS: f-l1-is-n-unbalanced f_L1 is the n!=0 (some-axis-unbalanced) map, not Hamming parity
+|M|=8 n_two=66
+seed_in_M=True history=(2, 6, 8, 10, 12) T=4
+orbit: N_ambient=24 |G|=8 N_orb=1 sizes=(8,) lex=(((0, 0, 0), (0, 0, 1)),)
+PASS: theorem-1-fill-set |M|=8 among the 66 two-site seeds and the #6519 seed is in M
+PASS: group-preserves-twelve only site-permutations of the two-cube induced by proper cube rotations are used
+PASS: theorem-2-n-orb N_orb=1 with one lex representative per orbit
+PASS: theorem-3-display-not-list the note displays N_orb and does not list all eight
+PASS: claim-scope claim_scope reports the fill-set orbit type and does not adopt it
+PASS: note-contract machine fields, orbit statement, and forbidden-phrase hygiene hold
+PASS: not-leftover-6519 the residual is the fill-set orbit type, not leftover #6519 first-fill or scoring
+PASS: not-miss-set-orbit the residual is new fill-set geometry, not N_orb of a miss set
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: off-patch-declared off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: axiom-unedited the axiom memo still carries the four named premises and no F_cut map
+per_element: axis-type representatives and off-patch occupancy 0 are enumerated
+per_site: each two-cube vertex is tested against the displayed lock predicate
+per_mode: checked and not executed — no spectral claim occurs
+per_block: all 66 two-site seeds and the G-action on M are executed
+lattice_wide: checked and not executed — neither the map nor the orbit is adopted
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,71 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_qstar_cov9_max_selector_2026_08_15.py
+runner_sha256: 4df1867652f771e10f4f5d273925133c59a17783c33a19aca8b9d5f846870fa2
+input_fingerprint_sha256: b5c64658ade150f92fbbf62b749d0645cd7b351f4c4ab14dc50745c9f384c6c7
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_QSTAR_COV9_MAX_SELECTOR_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+external_scientific_inputs: current Lattice/Admissibility/Record boundary only; no observation or fit
+negative_scope: displayed Max(9) versus Q among the eight Q_* maps; does not adopt a bit
+n_rotations=24
+n_orbits=10
+remaining_labels=('wt1', 'opp2', 'adj2', 'vertex3', 'mixed3')
+N_free=5
+|F_cut|=32
+|Q_*|=8
+n_nine_site_seeds=220
+m9=220
+remaining=(1, 0, 1, 0, 0) cov9=68 max=0 Q=0
+remaining=(1, 0, 1, 0, 1) cov9=72 max=0 Q=0
+remaining=(1, 0, 1, 1, 0) cov9=200 max=0 Q=0
+remaining=(1, 0, 1, 1, 1) cov9=220 max=1 Q=1
+remaining=(1, 1, 1, 0, 0) cov9=72 max=0 Q=0
+remaining=(1, 1, 1, 0, 1) cov9=72 max=0 Q=0
+remaining=(1, 1, 1, 1, 0) cov9=204 max=0 Q=0
+remaining=(1, 1, 1, 1, 1) cov9=220 max=1 Q=1
+N_max=2
+N_Q=2
+N_both=2
+max_cov9_iff_Q=1
+max_maps=[(1, 0, 1, 1, 1), (1, 1, 1, 1, 1)]
+Q_maps=[(1, 0, 1, 1, 1), (1, 1, 1, 1, 1)]
+lex_first_miss=None
+f_L1_remaining=(1, 0, 1, 1, 1)
+cov9_f_L1=220
+cov9_f1=220
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required note-plus-axiom string-literal tuple
+PASS: thm1-twenty-four-rotations exactly 24 proper cube rotations
+PASS: thm1-ten-orbits exactly 10 orbits partition the 64 cells of {0,1}^6
+PASS: thm1-orbit-sizes orbit sizes are the axis-type class sizes
+PASS: thm1-f-cut-cardinality F_cut has five free bits and size 32
+PASS: thm1-qstar-eight-lex Q_* is the eight remaining-bit tuples with wt1=1 and adj2=1 in lex order
+PASS: thm1-f-L1-is-unbalanced-axis f_L1 is 1 iff some axis has c_+ != c_-
+PASS: thm1-f-L1-not-hamming f_L1 is n!=0, not Hamming |c|_1 mod 2
+PASS: thm1-two-cube-and-nine-site-seeds the two-cube has twelve vertices and C(12,9)=220 nine-site seeds
+PASS: thm1-max-cov9-iff-Q among the eight Q_* maps, maximal cov9 equals vertex3=mixed3=1
+PASS: thm2-census N_max = 2, N_Q = 2, N_both = 2 and there is no miss
+PASS: thm3-display-not-adopted the identity is displayed and no remaining bit is adopted
+PASS: source-lattice-admissibility Lattice rotations and Admissibility covariance are pinned
+PASS: source-record-boundary Record lock, content-only readout, unreadable absence, and formation residual are pinned
+PASS: claim-scope claim_scope reports the Max(9) versus Q identity and does not adopt a bit
+PASS: note-contract machine fields, three theorems, and forbidden-phrase hygiene hold
+PASS: no-axiom-edit the axiom memo is unedited and the theorem proposes no axiom change
+PASS: off-patch-zero off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: not-leftover-prior-k the residual is a new odd k inside Q_*, not leftover of tot3/5/7/10 or Max(4/6/8)
+per_element: checked exactly — each of the 64 neighbor 6-tuples is assigned its axis-type orbit
+per_site: checked exactly — each of the twelve two-cube vertices uses the same six-direction stencil
+per_mode: checked exactly — each of the eight Q_* maps is scored on 220 nine-site seeds against Q
+per_block: checked exactly — N_max, N_Q, N_both are the Q_* Max(9)-versus-Q counts on this patch
+lattice_wide: checked and not executed — no Z^3-wide formation law or physical Admissibility selector is claimed
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

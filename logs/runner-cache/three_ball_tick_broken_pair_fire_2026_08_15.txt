@@ -1,0 +1,59 @@
+===== runner cache v1 =====
+runner: scripts/three_ball_tick_broken_pair_fire_2026_08_15.py
+runner_sha256: 8c2cd614d7e5e97348b8750534e1ad2caeb3674437d2dd0ea2c9ae38b665223e
+input_fingerprint_sha256: 86f8509999b2ba7abe684af899ce75b5ead1b6014e4d2764fcecf6869db77c07
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.60
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/THREE_BALL_TICK_BROKEN_PAIR_FIRE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+external_scientific_inputs: current Lattice, Qubit, Admissibility, and Record sentences; July-3 k=3 pair rebuilt from the proper-cube action on 3-letter 6-tuples
+construction: 3-ball unions with distinct centers in [-2,2]^3; unread weight-4 stars with |v|_∞≤3
+negative_scope: lex-first breaker fire census only; displayed, not adopted; L1 not attached; no 4th equal-radius ball
+n_centers=125
+n_triples=317750
+n_v=343
+N_w4=763608
+N_uneq=0
+N_bad_tick=0
+lex_first_breaker=none
+S_card=0
+N_tick_ok=0
+N_fire=0
+N_pair=48
+known_hit=True
+known_sigma=(1, 0, 1, 1, 0, 1)
+known_ticks=(2, None, 2, 2, None, 2)
+known_stab=2
+known_stab_t=2
+PASS: audit-input-paths | AUDIT_INPUT_PATHS is the required static two-string literal tuple
+PASS: source-lattice
+PASS: source-admissibility
+PASS: source-unread-qubit-record
+PASS: g-plus-order | proper=24 pair=48
+PASS: box-census | triples=317750 prefix=2000
+PASS: lipschitz-occupied-ticks | N_bad_tick=0
+PASS: known-equal-tick-membership | displayed equal-tick U is in the box and is not a breaker
+PASS: theorem-1-no-breaker | N_uneq=0 |S|=0
+PASS: theorem-2-n-fire | N_fire=0
+PASS: claim-scope
+PASS: displayed-not-adopted
+PASS: l1-not-attached
+PASS: not-leftover-prior
+PASS: admissibility-unedited
+PASS: forbidden-phrases
+PASS: no-axiom-edit
+per_element: N_uneq, |S|, and N_fire are exact integers
+per_site: lex-first breaker star only, or none
+per_mode: no spectral calculation
+per_block: 3-ball weight-4 unread stars in the declared box
+lattice_wide: checked and not executed
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

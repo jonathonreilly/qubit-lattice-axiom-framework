@@ -1,0 +1,52 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_c00_c10_four_site_share_2026_08_15.py
+runner_sha256: 2188334f1f8dd50eed843100dd8d0963e9a10183cb896768b1e54f09a8c70e6c
+input_fingerprint_sha256: 4bbc860fe5fdd9076733b1e9caf5b92978cfdb128fe3ab13b41806b10a772fcb
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.07
+status: ok
+----- stdout -----
+external_scientific_inputs: current Lattice, Admissibility, and Record boundaries; no observations or fits
+integrity_reads: this runner, its note, and the live axiom memo; no other scientific inputs
+construction: displayed F_cut occupancy-to-lock maps; four-site fill-set share on the twelve-vertex two-cube
+negative_scope: neither map nor remaining bit is adopted or written into Admissibility
+cache_write: false
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_C00_C10_FOUR_SITE_SHARE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+PASS: audit-inputs declared source-bound inputs exist as static literals
+PASS: source-lattice current cubic nearest-neighbor wording is pinned
+PASS: source-admissibility current local-distribution wording is pinned
+PASS: source-formation-boundary formation site, probability, and rate remain outside Admissibility
+PASS: source-record-and-non-dynamics Record lock wording and the non-dynamics Admissibility boundary are pinned
+PASS: two-cube-and-lex-order the two-cube has twelve lexicographically ordered vertices
+PASS: census-cardinality four-site seed count is C(12,4)=495
+PASS: off-patch-zero every off-patch neighbor contributes occupancy 0
+PASS: axis-type-reps declared orbit representatives have the stated axis types
+PASS: f00-and-f10-remaining-bits f00 is (1,0,0,0,0) and f10 is (1,1,0,0,0)
+PASS: f-l1-is-n-unbalanced f_L1 is the n!=0 (some-axis-unbalanced) map, not Hamming parity
+PASS: maps-distinct-on-opp2 f00 and f10 disagree on opp2, so set equality is not map identity
+|M00|=7 |M10|=7 n_four=495
+|M00 ∩ M10|=7 equality_bit=1
+face_in_M00=True face_in_M10=True hist00=(4, 8, 12) hist10=(4, 8, 12)
+PASS: theorem-1-fill-sets |M00|=|M10|=7 among the 495 four-site seeds
+PASS: theorem-2-intersection-and-equality |M00 ∩ M10|=7 and M00=M10
+PASS: theorem-3-display-not-adopt the note displays the share and refuses adoption of a bit
+PASS: theorem-3-no-full-list the note does not list all seven four-site fills
+PASS: claim-scope claim_scope reports whether the two 7-sets are equal and does not adopt it
+PASS: note-contract machine fields, share statement, and forbidden-phrase hygiene hold
+PASS: not-leftover-l1-f0-share the residual is the exception-pair share at k=4, not leftover of the L1/f0 share
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: off-patch-declared off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: axiom-unedited the axiom memo still carries the four named premises and no F_cut map
+per_element: axis-type representatives and off-patch occupancy 0 are enumerated
+per_site: each two-cube vertex is tested against both displayed lock predicates
+per_mode: checked and not executed — no spectral claim occurs
+per_block: all 495 four-site seeds are executed under both maps
+lattice_wide: checked and not executed — neither map nor bit is adopted
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

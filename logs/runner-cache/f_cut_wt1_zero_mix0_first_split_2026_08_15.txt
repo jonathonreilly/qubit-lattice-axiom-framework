@@ -1,0 +1,64 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_wt1_zero_mix0_first_split_2026_08_15.py
+runner_sha256: a250f9f1278e1cafd80ec238f46b7a9dfdaa5ea18fe7fb0f10b050d3f3df1769
+input_fingerprint_sha256: b296ba1cb01e3bb271f81ff7765d91231da55e82b90ce912046084b77c81a921
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_WT1_ZERO_MIX0_FIRST_SPLIT_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+external_scientific_inputs: none; two-cube occupancy and cut-map bits only
+package_local_integrity_reads: proposed source note and live axiom memo only
+measure_boundary: exact integer lock counts; no floating-point inputs
+claim_boundary: displayed first-split seed; wt1 is not adopted
+PASS: geometry-two-cube the two-cube has 12 sites
+PASS: geometry-one-site-count there are exactly 12 one-site seeds
+PASS: geometry-seed-counts there are 66 two-site seeds and 220 three-site seeds
+m1=12
+N_max1=4
+Max1=((1, 0, 1, 1, 0), (1, 0, 1, 1, 1), (1, 1, 1, 1, 0), (1, 1, 1, 1, 1))
+cov1_mix0=12
+cov1_fwt=0
+PASS: thm1-m1-twelve maximum one-site coverage is m1=12 attained by four maps
+PASS: thm1-mix0-in-max1 f_mix0=(1,0,1,1,0) is in Max(1)
+PASS: thm1-fwt-not-in-max1 fwt=(0,0,1,1,0) is not in Max(1)
+PASS: thm1-f-L1-is-unbalanced-axis f_L1 remaining bits fire every type with n_unbalanced>=1
+PASS: thm1-f-L1-not-hamming f_L1 is n!=0, not Hamming parity of the six neighbor bits
+S=((0, 0, 0),)
+hist_mix0=(1, 4, 8, 11, 12)
+hist_fwt=(1,)
+fill_mix0=True
+fill_fwt=False
+PASS: thm2-first-seed-is-origin the lex-first |S|<=3 split is the one-site seed {(0,0,0)}
+PASS: thm2-direction f_mix0 fills S and fwt does not
+PASS: thm2-no-earlier-split no earlier nonempty |S|<=3 seed splits in that direction
+PASS: thm3-histories lock-count histories are (1,4,8,11,12) and (1)
+PASS: thm3-first-wave-is-wt1 the first mix0 wave from S is the three wt1 neighbors; fwt is silent
+PASS: mutation-not-l1-or-hamming f_mix0 is not f_L1 and neither displayed map is Hamming
+PASS: mutation-not-6437-three-site the first split is not the mix0/L1 three-site splitter
+PASS: mutation-pair-differs-only-on-wt1 the displayed pair differs only on the remaining bit wt1
+PASS: forbidden-substrings the note and runner omit the dispatch-forbidden phrases
+PASS: display-not-adopt the note displays S and refuses adoption of wt1
+PASS: live-parent-quotes Lattice, Admissibility, and Record sentences are quoted without rewrite
+PASS: machine-status-contract bounded-support status and no axiom adoption are source-visible
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: claim-scope-first-split claim_scope states the lex-first |S|<=3 mix0-fills / fwt-misses seed
+PASS: not-leftover-6476-or-6437 the residual is a new pair seed, not leftover-character of #6476 or #6437
+PASS: off-patch-zero off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: no-axiom-edit the theorem proposes no axiom change
+PASS: scope-not-nogo the note is a bounded display, not a no-go
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+per_element: each F_cut remaining-bit tuple is scored by one-site fill
+per_site: occupancy is the two-cube with off-patch o=0; no other patch is used
+per_mode: nonempty seeds of size at most 3 are searched in lex order
+per_block: the first mix0-fills / fwt-misses seed and both histories are the claim
+lattice_wide: checked and not executed — no Z^3-wide selector or adoption
+TOTAL: PASS=27 FAIL=0
+
+----- stderr -----
+

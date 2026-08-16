@@ -1,0 +1,58 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_q8_mixed3_cov8_equal_pair_2026_08_15.py
+runner_sha256: 764bd63281a53e6e2becac4b307b6cc1215542ecefe2c60ce7d212dcaf1e860f
+input_fingerprint_sha256: 17fbc60ca9ebc8122c12da8e54b22ba4336fc3ba4cf754c2cfb0c4d1a1825146
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.15
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_Q8_MIXED3_COV8_EQUAL_PAIR_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+external_scientific_inputs: current Lattice/Admissibility/Record boundary only; no observation or fit
+negative_scope: unique Q8-true mixed3-pair with equal cov8; does not adopt the pair
+n_rotations=24
+n_orbits=10
+remaining_labels=('wt1', 'opp2', 'adj2', 'vertex3', 'mixed3')
+N_free=5
+|F_cut|=32
+n_eight_site_seeds=495
+N_Q8=30
+N_Q8_false=2
+N_pairs=15
+N_eq=1
+N_diff=14
+equal_pairs=[((0, 1, 0, 0, 0), (0, 1, 0, 0, 1), 1, 1)]
+lex_first_diff=(0, 0, 0, 1, 0) cov8=44; (0, 0, 0, 1, 1) cov8=132
+f_L1_remaining=(1, 0, 1, 1, 1)
+f_L1_prefix=(1, 0, 1, 1) cov8=494 partner_cov8=446
+f_hamming_bits=(0, 0, 0, 0, 1, 1, 1, 0, 0, 1)
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required note-plus-axiom string-literal tuple
+PASS: thm1-host 24 rotations, 10 orbits, 32 F_cut maps, 495 eight-site seeds
+PASS: thm1-f-L1-is-unbalanced-axis f_L1 is 1 iff some axis has c_+ != c_-
+PASS: thm1-f-L1-not-hamming f_L1 is n!=0, not Hamming |c|_1 mod 2
+PASS: thm1-fifteen-q8-true-pairs Q8 is true on exactly 30 maps, grouped as 15 mixed3-pairs
+PASS: thm1-unique-equal-pair unique equal pair is (0,1,0,0,0) cov8=1 and (0,1,0,0,1) cov8=1
+PASS: thm2-n-eq-one-no-other N_eq=1 and no other of the 15 pairs has equal cov8
+PASS: thm3-display-not-adopt the unique pair is displayed and is not adopted
+PASS: source-lattice-admissibility Lattice rotations and Admissibility covariance are pinned
+PASS: source-record-boundary Record lock, content-only readout, unreadable absence, and formation residual are pinned
+PASS: claim-scope claim_scope reports the unique equal-cov8 pair among the 15 pairs
+PASS: note-contract machine fields, three theorems, and forbidden-phrase hygiene hold
+PASS: no-axiom-edit the axiom memo is unedited and the theorem proposes no axiom change
+PASS: off-patch-zero off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: not-leftover-mix3c8-mix3sel the residual is the newly named N_eq=1 pair, not leftover mix3c8 or mix3sel
+PASS: claim-type-and-gate N1-N8 and a passing no-go disposition are source-visible
+per_element: checked exactly — each of the 64 neighbor 6-tuples is assigned its axis-type orbit
+per_site: checked exactly — each of the twelve two-cube vertices uses the same six-direction stencil
+per_mode: checked exactly — every Q8-true F_cut map is scored by how many of the 495 eight-site seeds it fills
+per_block: checked exactly — the unique equal-cov8 mixed3-pair is named among the 15 Q8-true pairs
+lattice_wide: checked and not executed — no Z^3-wide formation law or physical Admissibility selector is claimed
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

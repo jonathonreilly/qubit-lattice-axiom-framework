@@ -1,0 +1,65 @@
+===== runner cache v1 =====
+runner: scripts/skew_three_seed_claim_axis_label_2026_08_15.py
+runner_sha256: 6536c79124b9fbb2803aa8206f1770471a3eda98fc109fec077ee737b41cea14
+input_fingerprint_sha256: 29ec6c43f5fd9ba9ca90b001fe5cf32e53eef39b5d05e65ae635233e32979cf1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/SKEW_THREE_SEED_CLAIM_AXIS_LABEL_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+external_scientific_inputs: current Lattice, Qubit, Admissibility, and Record sentences plus the July-3 pair reconstructed locally
+construction: U=B_2(0)∪B_2((2,0,0))∪B_2((1,2,1)), unread v=(-1,1,1)
+negative_scope: displayed claim-axis labels only; not adopted; L1 not attached; no 4th equal-radius ball
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required static two-string literal tuple
+PASS: source-lattice current cubic nearest-neighbor wording is pinned
+PASS: source-admissibility current local-distribution wording is pinned
+PASS: source-formation-boundary formation site/probability/rate remains outside Admissibility
+PASS: source-qubit Qubit remains M_2(C)
+PASS: source-record lock, permanence, content-only readout, and unreadability at absence are pinned
+U_card=62
+v_in_U=False
+occupancy_mask=(1, 0, 1, 1, 0, 1)
+claim_axis_6tuple=(tied,0,+,tied,0,tied)
+every_occupied_labeled=False
+N_claim_broke=0
+neighbor dir=(1, 0, 0) w=(0, 1, 1) s*=(0, 0, 0) occ_hist=(0, 0, 0, 1, 0, 1) n_hist=(0,-1/3,-1/3) hist-tied delta=(0, 1, 1) label=tied
+neighbor dir=(0, 1, 0) w=(-1, 2, 1) s*=(1, 2, 1) occ_hist=(1, 0, 0, 0, 0, 0) n_hist=(1/3,0,0) unique-axis delta=(-2, 0, 0) label=+
+neighbor dir=(0, -1, 0) w=(-1, 0, 1) s*=(0, 0, 0) occ_hist=(1, 0, 0, 0, 0, 1) n_hist=(1/3,0,-1/3) hist-tied delta=(-1, 0, 1) label=tied
+neighbor dir=(0, 0, -1) w=(-1, 1, 0) s*=(0, 0, 0) occ_hist=(1, 0, 0, 1, 0, 0) n_hist=(1/3,-1/3,0) hist-tied delta=(-1, 1, 0) label=tied
+N_tied=3
+N_comp=8
+completions=(+,0,+,+,0,+),(+,0,+,+,0,−),(+,0,+,−,0,+),(+,0,+,−,0,−),(−,0,+,+,0,+),(−,0,+,+,0,−),(−,0,+,−,0,+),(−,0,+,−,0,−)
+N_pair=48
+N_fire=2
+fire=(+,0,+,−,0,−),(−,0,+,−,0,+)
+PASS: g-plus-order finite G+ is exactly the 24 proper cube rotations
+PASS: center-unread the star center v is not already in U
+PASS: u-geometry U is the union of three radius-2 ℓ¹ balls and has 62 sites
+PASS: theorem-1-mask occupancy mask at v is (1,0,1,1,0,1)
+PASS: theorem-1-nearest-seeds nearest seeds are lex-first among least ℓ¹ distance
+PASS: theorem-1-hist-kernels history kernels use only occupancy in each neighbor's nearest-seed ball
+PASS: theorem-1-claim-axis claim-axis vectors are w minus the claiming seed; none of the three hist-ties are unique-axis
+PASS: theorem-1-completed-tuple the claim-axis 6-tuple remains (tied,0,+,tied,0,tied) and is not fully labeled
+PASS: pair-census the reconstructed July-3 k=3 pair has 48 members in one chiral pair
+PASS: theorem-2-n-fire exactly two of the eight remaining completions are pair members
+PASS: claim-scope the note reports the declared displayed claim_scope
+PASS: displayed-not-adopted claim-axis labels are displayed and are not written into Admissibility
+PASS: l1-not-attached the note does not attach L1 and records the failed-bar against a fourth ball
+PASS: not-leftover-histlab the note is not leftover-char of histlab unique-axis labeling
+PASS: admissibility-unedited claim-axis and the off-axis triple are not written into Admissibility
+PASS: forbidden-phrases the forbidden rhetoric strings are absent from the note and runner
+PASS: no-axiom-edit the only axiom authority is the current memo; no cache or axiom rewrite
+per_element: claim-axis signs, remaining completions, and N_fire are exact
+per_site: only the unread star center v is scored
+per_mode: no spectral calculation
+per_block: U and the six-neighbor star at v only
+lattice_wide: checked and not executed
+TOTAL: PASS=23 FAIL=0
+
+----- stderr -----
+

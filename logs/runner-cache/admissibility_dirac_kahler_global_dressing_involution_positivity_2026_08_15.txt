@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_global_dressing_involution_positivity_2026_08_15.py
+runner_sha256: de5668e1043e8cc76c376131d622f72b91cd6309fb4abecc4db95bef6f315a31
+input_fingerprint_sha256: abe09cb7dedab6fcb6ee861ab99a8bca500fe36bc236166ecc029046385b399a
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 64.78
+status: ok
+----- stdout -----
+[PASS] A-authority-and-Block108-parent: current axioms, registries, ancestry, and the Block108 parent triple are content-bound
+[PASS] B-global-feasibility: the fixed-point-free reality permutation gives rank 256 and both fixtures give rank 380
+       reality/H/joint/dim=256/124/380/132 at c=5/13 and c=3/5
+[PASS] C-undressed-exclusion: A=I obeys reality but its pinned Block108 defect excludes it from the joint space
+[PASS] D-exact-involution-A-star: A* is an exact real dressed reflection with Hermitian Gram and inertia (8,8,0)
+       Delta1=-33333963283450197824471164187210075293672388640/61391349876435377016600254323619839508354485363; inertia=(8, 8, 0); sign changes=8
+[PASS] E-anti-diagonal-classification: the 64-real anti-diagonal class is lambda A* with variety {+A*,-A*}, both indefinite
+       rank/dim=63/1; Groebner=(lambda**2 - 1,); both fixtures and branches have inertia (8,8,0)
+[PASS] F-positive-fiber: K_A=I16 has exact rank 184 and a 72-dimensional real fiber with a pinned non-involution
+       rank[M]=rank[M|b]=184; dim=72; rank(A^2-I)=32
+[PASS] G-window-invisibility: A* has zero central {0,1} window block, the zero Block107 homogeneous solution
+[PASS] H-structure-and-support: A* occupies all eight anti-diagonal slice-blocks at magnitude one with x-parity structure
+[PASS] I-scope: the note preserves the bounded joint-variety, N1--N8, W1, N5, ADM, gravity, audit, and T...
+EXACT_WITNESSES: undressed_defect=2100468154772736499016437760573154473873400000/61391349876435377016600254323619839508354485363; primary_Delta1=-33333963283450197824471164187210075293672388640/61391349876435377016600254323619839508354485363; second_K88=-30292616102306685544040740640984160/68872508036021339265532585819028911
+AXIOM_AUTHORITY: origin/main=b8d9f4c40125e45415d6dd240a7ef806e773a278 axiom=bc23300becfe4e4db57153c0e94cfcdf2338da71 registry=b93959cca4f7e26c673cdccbe601e50c3cb93daa; Block108 parent=8afe8dff5ccf531208238af0aaaec1f547d73874
+per_element: exact feasibility, involution, classification, fiber, and invisibility identities are checked
+per_site: one Grassmann mode per fine site on the antiperiodic reflection torus
+per_mode: both shear fixtures certify the same dimensions, variety, and inertia
+per_block: the exact involution occupies every slice at magnitude one while its central window block vanishes
+lattice_wide: checked and not executed — the joint involution-positivity variety on the full 132-dimensional space, curved OS positivity, the actual ADM/history transporter completion, joint gravity, the gravity constraint quotient, Records, audit retention, and TOE closure remain open
+RESULT: the global dressing space is richly feasible and contains an exact window-invisible dressed-reflection involution and a positive fiber, but on the anti-diagonal class involution and positivity are exactly disjoint
+DECISION_CUT: advance the joint variety on the full global space and the modular selection; reject undressed, seam-local, and anti-diagonal-only routes
+TOE: zero obligation retirement, retained-positive end-to-end theory count remains zero, and no TOE percentage moves
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

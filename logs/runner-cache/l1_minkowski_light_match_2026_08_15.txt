@@ -1,0 +1,50 @@
+===== runner cache v1 =====
+runner: scripts/l1_minkowski_light_match_2026_08_15.py
+runner_sha256: 774a1e38837b9ef0d276260ad9463787a0c641cabfd4fb4a27d10ca56a3c10b8
+input_fingerprint_sha256: f116407bd50d6adf429fb19c062196c36bfcb7cfce6fc7b425e274fa5dc2c22e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/L1_MINKOWSKI_LIGHT_MATCH_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+external_scientific_inputs: displayed t=l1 is scored as already displayed; Euclidean-isotropic c, discrete l2 null, and boosts are external comparison objects; no observation or fit is used
+package_local_integrity_reads: the note and current minimal axiom are read; no cache or governance surface is written
+claim_scope: Whether displayed L1 arrival t=l1 on the radius-4 integer ball matches Euclidean-isotropic c and the discrete l2 null cone is reported. Displayed, not adopted.
+PASS: audit-input-paths declared inputs are exactly the source note and current axiom memo
+PASS: lattice-axiom the authority supplies Z^3, nearest-neighbor adjacency, and proper cubic rotations
+PASS: admissibility-axiom Admissibility is a nearest-neighbor rule covariant under those rotations
+PASS: axioms-unedited the axiom memo contains no Minkowski, boost, Wick, or attached L1 arrival
+PASS: integer-ball-census the nonzero radius-4 l1 ball has N_ball=128 distinct integer vectors
+PASS: l1-sphere-formula the l1 spheres have sizes 6, 18, 38, 66, matching 4 r^2 + 2
+PASS: theorem1-axis-witness (1,0,0) gives t^2 / |v|_2^2 = 1/1 = 1
+PASS: theorem1-face-witness (1,1,0) gives t^2 / |v|_2^2 = 4/2 = 2
+PASS: theorem1-not-constant t^2 / |v|_2^2 is not constant on the scored ball
+PASS: constant-rescale-fails a common positive rescaling of t cannot equalize the two witness ratios
+PASS: theorem2-census N_ball=128, N_null=24, N_both=24
+PASS: theorem2-proper-subset the discrete null set on the ball is a proper subset; (1,1,0) is the witness
+PASS: theorem2-axis-characterization null vectors on the ball are exactly the 24 axis points, and no off-axis point is null
+PASS: arrival-not-hamming displayed arrival is taxicab l1, not Hamming / support count
+PASS: cube-rotation-order there are exactly 24 proper cube rotations
+PASS: theorem3-l1-spheres every proper cube rotation preserves every l1 sphere and every |v|_2^2
+PASS: theorem3-no-time-mix cube rotations act on space only and leave the arrival value unmixed
+PASS: observed-boost-mixes the comparison boost (gamma=5/4, beta=3/5) mixes t with x
+PASS: note-claim-contract the note states the three theorems, census, and displayed-not-adopted scope
+PASS: note-dependency-contract frontmatter names only the current axiom boundary
+PASS: note-no-go-contract the note records all eight stress-test sections
+PASS: note-quotes-axioms the note quotes the Lattice and Admissibility sentences it uses
+PASS: note-reports-census the note reports the independently computed census integers
+PASS: forbidden-rhetoric note and runner avoid the forbidden phrases and rejected broad claims
+PASS: no-occupancy-rerun the source refuses a new occupancy step and a new spatial patch
+per_element: checked — every nonzero integer vector with |v|_1 <= 4 is enumerated exactly
+per_site: checked and not executed — only the origin-seed displayed arrival is scored; no new site law is claimed
+per_mode: checked and not executed — no spectral decomposition is used
+per_block: checked — the radius-4 integer ball is the only comparison block
+lattice_wide: checked and not executed — no occupancy growth and no adopted Minkowski law is claimed
+TOTAL: PASS=25 FAIL=0
+
+----- stderr -----
+

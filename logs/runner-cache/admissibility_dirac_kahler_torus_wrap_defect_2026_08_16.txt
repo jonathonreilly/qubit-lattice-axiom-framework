@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_torus_wrap_defect_2026_08_16.py
+runner_sha256: 50ec97f236550b21d18c1fc476d274c83dc7a56e11b1ddeeac1c70b43795e687
+input_fingerprint_sha256: c8a2f395c389457882b79fab23822c92567352cf477e67dfb1afb048f9d229c9
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 235.08
+status: ok
+----- stdout -----
+[PASS] A-authority: Block 119 blobs and ancestors 118--103 are pinned
+[PASS] B-theta-fails-on-the-torus: theta(t)=-1-t gives non-Hermitian Z8 Grams with residual rank 4; inertia is undefined
+[PASS] C-the-keystone-split: K_torus=K_half+D entrywise; R_AP=-U[n,0](I+M^2)^-1U[4,j+1]e/C_j; all residual lies in D
+[PASS] D-the-vanishing-pencil: both half-window determinants and both cross coefficients vanish; f_torus(1)=W_f(1)!=0
+[PASS] E-the-finite-size-law: T=M^2 has root a in (0,1); B_N=P_s/(1+a^N)+P_u/(1+a^-N), c_N=a^N/(1+a^N), N=1,2,3
+[PASS] F-the-unstable-saturation: B_N T^N=c_N P_s+(1-c_N)P_u tends to rank-one P_u; D_1 and D_infinity are exact and nonzero
+[PASS] G-the-corrected-completion: Theta(K_torus-D)=y y^H has inertia (1,0,3); double-period factor a^2=(rho_F^2)^2=rho_F^4
+[PASS] H-scope: required wrap/no-go/N1--N8/W1/N5 firewalls and runtime bound are present
+TORUS c=5/13: residual_ranks=(4, 4, 4, 4); a_even/odd=((32190095809, 32190095810), (404644318, 404644319))/10^12; no inertia
+TORUS c=3/5: residual_ranks=(4, 4, 4, 4); a_even/odd=((36167865356, 36167865357), (191977555, 191977556))/10^12; no inertia
+SATURATION: c_1=a/(1+a), c_2=a^2/(1+a^2), c_3=a^3/(1+a^3); D_1=c_1 D_s+(1-c_1)D_u; D_infinity=D_u=-Theta R[(G_open+B_-1)+G(P_u T^-1)]_+ from the rank-one P_u channel
+CORRECTED c=5/13: per_k=((1,0,3),)*4; a^2_even/odd=((1036202268192599364481, 1036202268256979556100), (163737024089685124, 163737024898973761))/10^24; runtime=234.650s
+CORRECTED c=3/5: per_k=((1,0,3),)*4; a^2_even/odd=((1308114484409745006736, 1308114484482080737449), (36855381623778025, 36855382007733136))/10^24; runtime=234.650s
+N5: per_element: exact torus/half-space split, anti-Hermitian residual rank, all-non-Hermiticity-in-D, zero-pencil, projector, subtraction, Hermiticity, inertia, and quotient identities are checked
+per_site: one Grassmann mode per fine site on the antiperiodic reflection torus
+per_mode: all four fixed momenta at c=5/13 and c=3/5 have rank(K-K*)=4 before subtraction and corrected inertia (1,0,3) after exact defect subtraction
+per_block: the literal Z8 torus pairing splits as K_T=K_H+D; D carries all dressed non-Hermiticity, while K_T-D=K_H=y_+y_+^H has quotient beta=a^2 in (0,1)
+lattice_wide: checked and not executed — torus completion without the displayed subtraction, naturality classification, curved OS positivity, the actual ADM/history transporter completion, joint gravity, the gravity constraint quotient, Records, audit retention, and TOE closure remain open
+RESULT: the literal torus rejects the completion exactly through the antiperiodic wrap — whose stable channel decays geometrically while its rank-one unstable channel saturates — and subtracting the displayed defect restores the positive contractive package
+DECISION_CUT: pose OS on the half-space or large-torus carrier; classify naturality; then the curved carrier and the gravity constraint quotient
+TOE: zero obligation retirement, retained-positive end-to-end theory count remains zero, and no TOE percentage moves
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

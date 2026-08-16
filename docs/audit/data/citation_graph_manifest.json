@@ -1,6 +1,6 @@
 {
- "edge_count": 15962,
- "node_count": 5548,
+ "edge_count": 15966,
+ "node_count": 5549,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -477,6 +477,10 @@
   "admissibility_dirac_kahler_shifted_origin_frame_gauge_nonuniform_hodge_overlap_bounded_theorem_note_2026-08-14": {
    "deps_hash": "abb470ff102c",
    "out_degree": 3
+  },
+  "admissibility_dirac_kahler_torus_wrap_defect_bounded_theorem_note_2026-08-16": {
+   "deps_hash": "baa2b2baa792",
+   "out_degree": 4
   },
   "admissibility_dirac_kahler_transfer_spectrum_selection_gap_bounded_theorem_note_2026-08-15": {
    "deps_hash": "0a55a158674e",

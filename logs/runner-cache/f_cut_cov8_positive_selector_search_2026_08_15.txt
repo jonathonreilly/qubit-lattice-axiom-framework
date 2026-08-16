@@ -1,0 +1,73 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_cov8_positive_selector_search_2026_08_15.py
+runner_sha256: 9de995c2fd609e56fb4f4248297ff429e736e17eeab4817dcafdca054c66628d
+input_fingerprint_sha256: 5805000b76f0d77b412edcb26507ba5a43258d1a3b882d3b175a6c024a8c6a0b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.15
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_COV8_POSITIVE_SELECTOR_SEARCH_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+external_scientific_inputs: current Lattice/Admissibility/Record boundary only; no observation or fit
+negative_scope: displayed remaining-bit family versus cov8>0; does not adopt a bit
+n_rotations=24
+n_orbits=10
+remaining_labels=('wt1', 'opp2', 'adj2', 'vertex3', 'mixed3')
+|F_cut|=32
+n_eight_site_seeds=495
+N_pos=30
+n_displayed=20
+n_equal=0
+cov8(f_L1)=494
+cov8=0=((0, 0, 0, 0, 0), (0, 0, 0, 0, 1))
+Q4-false extras=((0, 0, 0, 1, 0), (0, 0, 0, 1, 1), (0, 1, 0, 0, 0), (0, 1, 0, 0, 1), (0, 1, 0, 1, 0), (0, 1, 0, 1, 1))
+bit:wt1 N_Q=16 N_both=16 equal=0 lex_miss=(0, 0, 0, 1, 0)
+bit:opp2 N_Q=16 N_both=16 equal=0 lex_miss=(0, 0, 0, 1, 0)
+bit:adj2 N_Q=16 N_both=16 equal=0 lex_miss=(0, 0, 0, 1, 0)
+bit:vertex3 N_Q=16 N_both=16 equal=0 lex_miss=(0, 0, 1, 0, 0)
+bit:mixed3 N_Q=16 N_both=15 equal=0 lex_miss=(0, 0, 0, 0, 1)
+wt1&opp2 N_Q=8 N_both=8 equal=0 lex_miss=(0, 0, 0, 1, 0)
+wt1&adj2 N_Q=8 N_both=8 equal=0 lex_miss=(0, 0, 0, 1, 0)
+wt1&vertex3 N_Q=8 N_both=8 equal=0 lex_miss=(0, 0, 0, 1, 0)
+wt1&mixed3 N_Q=8 N_both=8 equal=0 lex_miss=(0, 0, 0, 1, 0)
+Q4|vertex3 N_Q=28 N_both=28 equal=0 lex_miss=(0, 1, 0, 0, 0)
+wt1|opp2 N_Q=24 N_both=24 equal=0 lex_miss=(0, 0, 0, 1, 0)
+wt1|adj2 N_Q=24 N_both=24 equal=0 lex_miss=(0, 0, 0, 1, 0)
+wt1|vertex3 N_Q=24 N_both=24 equal=0 lex_miss=(0, 0, 1, 0, 0)
+wt1|mixed3 N_Q=24 N_both=23 equal=0 lex_miss=(0, 0, 0, 0, 1)
+opp2|adj2 N_Q=24 N_both=24 equal=0 lex_miss=(0, 0, 0, 1, 0)
+opp2|vertex3 N_Q=24 N_both=24 equal=0 lex_miss=(0, 0, 1, 0, 0)
+opp2|mixed3 N_Q=24 N_both=23 equal=0 lex_miss=(0, 0, 0, 0, 1)
+adj2|vertex3 N_Q=24 N_both=24 equal=0 lex_miss=(0, 1, 0, 0, 0)
+adj2|mixed3 N_Q=24 N_both=23 equal=0 lex_miss=(0, 0, 0, 0, 1)
+vertex3|mixed3 N_Q=24 N_both=23 equal=0 lex_miss=(0, 0, 0, 0, 1)
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required note-plus-axiom string-literal tuple
+PASS: thm1-host 24 rotations, 10 orbits, 32 F_cut maps, 495 eight-site seeds
+PASS: thm1-f-L1-is-unbalanced-axis f_L1 is 1 iff some axis has c_+ != c_-
+PASS: thm1-f-L1-not-hamming f_L1 is n!=0, not Hamming |c|_1 mod 2
+PASS: thm1-none-equal no displayed remaining-bit Q equals cov8>0
+PASS: thm1-lex-first-misses the note names the lex-first miss of each displayed Q
+PASS: thm2-n-pos-and-per-q N_pos=30 and each displayed Q reports N_Q and N_both
+PASS: thm3-display-not-adopt the displayed family is displayed and no bit is adopted
+PASS: source-lattice-admissibility Lattice rotations and Admissibility covariance are pinned
+PASS: source-record-boundary Record lock, content-only readout, unreadable absence, and formation residual are pinned
+PASS: claim-scope claim_scope reports the remaining-bit search against cov8>0 and does not adopt a bit
+PASS: note-contract machine fields, three theorems, and forbidden-phrase hygiene hold
+PASS: no-axiom-edit the axiom memo is unedited and the theorem proposes no axiom change
+PASS: off-patch-zero off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: not-leftover-6527 the residual is a new k-selector search after Q4 failed at k=8
+PASS: displayed-family-shape displayed Q are the 5 one-bits, 4 wt1-AND-bits, Q4|vertex3, and 10 two-bit ORs
+per_element: checked exactly — each of the 64 neighbor 6-tuples is assigned its axis-type orbit
+per_site: checked exactly — each of the twelve two-cube vertices uses the same six-direction stencil
+per_mode: checked exactly — every F_cut map is scored on 495 eight-site seeds against the displayed remaining-bit family
+per_block: checked exactly — N_pos and per-Q N_Q, N_both are the F_cut positivity-versus-displayed-Q counts on this patch
+lattice_wide: checked and not executed — no Z^3-wide formation law or physical Admissibility selector is claimed
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

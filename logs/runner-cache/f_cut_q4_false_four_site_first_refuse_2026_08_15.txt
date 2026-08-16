@@ -1,0 +1,66 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_q4_false_four_site_first_refuse_2026_08_15.py
+runner_sha256: 7c37668fe7c7c46ecfa315a7f952d9e9e3176adf017af769ab21f053b96928e0
+input_fingerprint_sha256: 4ee4944e822da6a0ee9d50d91ffb768472263b1fc9b65b09bf9e537bad140aa6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_Q4_FALSE_FOUR_SITE_FIRST_REFUSE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+construction: occupancy-to-lock from lex-first 4-site seed f1 fills
+negative_scope: Q4 is displayed, not adopted or written into Admissibility
+n_rotations=24
+n_orbits=10
+orbit_types_and_sizes=(0, 0, 3):1,(0, 1, 2):3,(0, 2, 1):3,(0, 3, 0):1,(1, 0, 2):6,(1, 1, 1):12,(1, 2, 0):6,(2, 0, 1):12,(2, 1, 0):12,(3, 0, 0):8
+remaining_labels=('wt1', 'opp2', 'adj2', 'vertex3', 'mixed3')
+N_free=5
+|F_cut|=32
+n_four_site_seeds=495
+f_q0_remaining=(0, 0, 0, 0, 0)
+Q4_f_q0=0
+cov4_f_q0=0
+f1_remaining=(1, 1, 1, 1, 1)
+f_L1_remaining=(1, 0, 1, 1, 1)
+S={(0,0,0),(0,0,1),(0,1,0),(0,1,1)}
+f1_fills_S=True hist_f1=(4, 8, 12)
+f_q0_fills_S=False hist_q0=(4,)
+f_L1_fills_S=True hist_L1=(4, 8, 12)
+first_remaining_refuse=t=1 x=(1, 0, 0) type=wt1(1, 0, 2) cfg=(0, 1, 0, 0, 0, 0)
+N_refuse=4
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required note-plus-axiom string-literal tuple
+PASS: thm1-twenty-four-rotations exactly 24 proper cube rotations
+PASS: thm1-ten-orbits exactly 10 orbits partition the 64 cells of {0,1}^6
+PASS: thm1-orbit-sizes orbit sizes are the axis-type class sizes
+PASS: thm1-f-cut-cardinality F_cut has five free bits and size 32
+PASS: thm1-f-L1-is-unbalanced-axis f_L1 is 1 iff some axis has c_+ != c_-
+PASS: thm1-f-L1-not-hamming f_L1 is not Hamming |c|_1 mod 2
+PASS: thm1-two-cube-and-four-ninety-five-seeds the two-cube has twelve vertices and C(12,4)=495 four-site seeds
+PASS: thm1-name-fq0-q4-false-cov4-zero f_q0 is the lex-first Q4-false map and has Q4=0 and cov4=0
+PASS: thm1-f1-fills-S f1 fills the lex-first 4-site seed S
+PASS: thm2-first-remaining-bit-refuse first remaining-bit refuse is t=1, site (1,0,0), type wt1; N_refuse=4
+PASS: thm3-display-not-adopt-q4 the first remaining-bit refuse is displayed and Q4 is not adopted
+PASS: lattice-and-admissibility-parents the live axiom memo supplies Z^3, proper cubic rotations, and a covariant nearest-neighbor rule
+PASS: note-contract bounded theorem, displayed-not-adopted first refuse, and machine status
+PASS: claim-type-and-gate N1-N8 and a passing no-go disposition are source-visible
+PASS: forbidden-phrases-absent the note and runner omit the dispatch-forbidden phrases
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: note-reports-first-refuse the note reports f_q0, S, the first remaining-bit refuse, and N_refuse
+PASS: no-axiom-edit the theorem proposes no axiom change
+PASS: off-patch-zero off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: not-leftover-6518 the residual is the first remaining-bit refuse, not leftover-character of #6518
+PASS: claim-scope claim_scope reports the first refused neighborhood of the lex-first Q4-false map
+PASS: source-formation-boundary formation site/probability/rate remains outside Admissibility
+per_element: checked exactly — each of the 64 neighbor 6-tuples is assigned its axis-type orbit
+per_site: checked exactly — each of the twelve two-cube vertices uses the same six-direction stencil
+per_mode: checked exactly — f_q0 is scored on all 495 four-site seeds and from S against f1
+per_block: checked exactly — the first remaining-bit refuse is named by tick, site, and type
+lattice_wide: checked and not executed — no Z^3-wide formation law or physical Admissibility selector is claimed
+TOTAL: PASS=23 FAIL=0
+
+----- stderr -----
+

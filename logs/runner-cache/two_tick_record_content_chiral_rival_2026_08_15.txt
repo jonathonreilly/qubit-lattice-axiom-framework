@@ -1,0 +1,47 @@
+===== runner cache v1 =====
+runner: scripts/two_tick_record_content_chiral_rival_2026_08_15.py
+runner_sha256: 1f958f6379a81ca3e5a10642b6c2fb182a230dee9af56b0afdac110b0d3f8c70
+input_fingerprint_sha256: 20375f0ea9fc633e289bc7ec5d4aa3004bee1ea817914ebb161ce6c738eb77ff
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+two-tick Record-content chiral rival (displayed, not adopted)
+AUDIT_INPUT_PATHS:
+  docs/TWO_TICK_RECORD_CONTENT_CHIRAL_RIVAL_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+construction: exact six-direction colorings; no 20-site spatial patch
+PASS: audit-input-paths-exact-literals  (declared=('docs/TWO_TICK_RECORD_CONTENT_CHIRAL_RIVAL_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: note-claim-scope
+PASS: source-admissibility-rule
+PASS: source-distribution-sentence
+PASS: source-formation-boundary
+PASS: source-record-readable-content
+PASS: note-f-L1-is-n-nonzero-not-hamming
+PASS: note-displayed-not-adopted
+PASS: note-does-not-attach-L1
+PASS: note-does-not-write-pair-into-admissibility
+PASS: note-does-not-reopen-born-compiler-or-color-unital-m3
+PASS: note-no-forbidden-phrases
+PASS: note-no-spatial-patch
+PASS: alphabets-exact  (3^6=729; 2^6=64; |G|=48)
+PASS: p-central-swap
+PASS: july3-unique-k3-pair  (Burnside 57/56; orbit sizes 24/24)
+PASS: representative-fully-mixed  (rep=('0', '+', '0', '−', '+', '−'))
+PASS: theorem1-N-form-N-P-form-N-both  (N_form=24, N_P_form=24, N_both=0)
+PASS: theorem1-f-not-P-invariant
+PASS: note-reports-N-counts
+PASS: theorem2-occupancy-projection-P-invariant  (|S_π|=12)
+PASS: theorem2-every-two-letter-projection-P-invariant
+PASS: tick1-f-L1-n-nonzero
+PASS: tick1-cannot-carry-P-odd-grade
+PASS: rival-not-identified-with-L1
+TOTAL: PASS=27 FAIL=0
+
+----- stderr -----
+

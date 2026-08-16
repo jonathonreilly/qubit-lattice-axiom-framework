@@ -1,0 +1,60 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_q4_false_six_site_zero_refuse_2026_08_15.py
+runner_sha256: 807573f2e2e209a89b575b5b607d37a5f64ad1ef6f068d3a3d0e64f368778713
+input_fingerprint_sha256: 7d712a463a1d744cb91c02c6267d9acd74ad93e19cc16e20faf5665b2adba8aa
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_Q4_FALSE_SIX_SITE_ZERO_REFUSE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+external_scientific_inputs: current Lattice/Admissibility/Record boundary only; no observation or fit
+negative_scope: displayed first remaining-bit refuse; does not adopt a bit
+n_rotations=24
+n_orbits=10
+remaining_labels=('wt1', 'opp2', 'adj2', 'vertex3', 'mixed3')
+|F_cut|=32
+n_six_site_seeds=924
+n_f1_fill=924
+S=((0, 0, 0), (0, 0, 1), (0, 1, 0), (0, 1, 1), (1, 0, 0), (1, 0, 1))
+f1_fills_S=1
+f_z_fills_S=0
+first_tick=1
+first_site=(1, 1, 0)
+first_type=adj2
+first_kind=(2, 0, 1)
+N_refuse=4
+refuse_sites=((1, 1, 0), (1, 1, 1), (2, 0, 0), (2, 0, 1))
+f_z_identically_zero=1
+f_L1_remaining=(1, 0, 1, 1, 1)
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required note-plus-axiom string-literal tuple
+PASS: thm1-host 24 rotations, 10 orbits, 32 F_cut maps, 924 six-site seeds
+PASS: thm1-name-S S is the lex-first 6-site seed that f1 fills
+PASS: thm1-f1-fills-S f1 fills S and f_z does not
+PASS: thm1-first-refuse first remaining-bit refuse is tick 1, site (1, 1, 0), type adj2
+PASS: thm1-f-L1-is-unbalanced-axis f_L1 is 1 iff some axis has c_+ != c_-
+PASS: thm1-f-L1-not-hamming f_L1 is n!=0, not Hamming |c|_1 mod 2
+PASS: thm2-n-refuse N_refuse=4 on the first tick
+PASS: thm2-zero-mechanism f_z is the zero map and locks no new site from S
+PASS: thm3-display-not-adopt the refuse is displayed and is not adopted as an Admissibility selector
+PASS: source-lattice-admissibility Lattice rotations and Admissibility covariance are pinned
+PASS: source-record-boundary Record lock, content-only readout, unreadable absence, and formation residual are pinned
+PASS: claim-scope claim_scope reports the first remaining-bit refuse and does not adopt a bit
+PASS: note-contract machine fields, three theorems, and forbidden-phrase hygiene hold
+PASS: no-axiom-edit the axiom memo is unedited and the theorem proposes no axiom change
+PASS: off-patch-zero off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: not-leftover-6526 the residual is the first remaining-bit refuse, not leftover-character of #6526
+per_element: checked exactly — each of the 64 neighbor 6-tuples is assigned its axis-type orbit
+per_site: checked exactly — each of the twelve two-cube vertices uses the same six-direction stencil
+per_mode: checked exactly — f_z is scored on the lex-first 6-site f1 fill
+per_block: checked exactly — first refuse and N_refuse are the remaining-bit refuse facts on this patch
+lattice_wide: checked and not executed — no Z^3-wide formation law or physical Admissibility selector is claimed
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

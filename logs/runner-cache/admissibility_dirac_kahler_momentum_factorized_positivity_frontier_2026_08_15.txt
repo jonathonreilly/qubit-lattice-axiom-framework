@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_momentum_factorized_positivity_frontier_2026_08_15.py
+runner_sha256: 53636804b2ec326048db13004b398a50d15221d0f43cfb43e24d0dc7a80dcdb9
+input_fingerprint_sha256: e2622df5a1b0ce6e6639b06f109beb7125fa594d385417876dfed8e326473148
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 206.38
+status: ok
+----- stdout -----
+[PASS] A-authority-and-Block110-parent: current axioms, registries, ancestry, and the Block110 parent triple are content-bound
+[PASS] B-momentum-factorization: the 256-complex-parameter circulant class factorizes as 48+96+48=192 and inertia adds
+[PASS] C-class-decomposition: the Block109 joint space is exactly the direct sum V_circ(128)+V_S1(4), with C^2 indepen...
+[PASS] D-near-positive-certificate: both exact all-plus file points are involutions with Hermitian Gram, inertia (15,1,0), a...
+[PASS] E-determinant-refutation: the tau=(1,-6,-6) block refutes fixed determinant and index parity; eight assemblies rea...
+[PASS] F-paired-sector-parity-boundary: paired-sector parity is odd here: a GERM-LOCAL observation, NOT a proven global invarian...
+[PASS] G-even-subclass-closures: inside the 16-dimensional B^2=-I reduction, skew/normal, slice-circulant, and anti-diago...
+[PASS] H-mixture-nonpinning: M tensor S1 is A*, while the K=I circulant mixture is pinned by neither grading sign
+[PASS] I-scope: the note preserves the momentum frontier, direct sum, N1--N8, W1, N5, ADM, gravity, audi...
+EXACT_WITNESSES: file det(c=5/13)=-22587914946796100913232597839984240582388071145243885605301222533035481806226984181235069002701724960944686160307784067753080021142564592253570115602281364327937096706336974818147634017173646999912445807026402325155761685947728519192856758022663565033971248327953928004414484907180938809490260863641155355249891887533535057078558696098479128881856566984517440790603488065257618870834810252300707006238150490688309252269050442907964394886553313820531798291781535155304712977971917719219221028057201515855315492184444010839573977466517886812806842581136601218408142396511718666566649467923933220235049882968490716084010731065482939726642937940818636426026269351341642587206556507546820849347385984550303464811036100477125803185490144107455006059469557599648782396574003408497905219456470068233591337453198601187977511467068625404506931200000000000000000000000000000000/155310249826709504253786492245151781281139162288267315131270569989246699333051389567807453813738592345778883237610219349949393741621987564335708022990925951900089586005197688758437724692650946012410491113483713128764610489622867145361597540246066577354442408652583922899716744873776712867007739135051440551989482618191904380367079180768855106677006204114719673594441427807915200267286762402664727881488142991689218044014910545220222089605142750234793404632106312952471079818463453249858783610075898715584073457878721527967516489111618060965665639999436419205145647217051155167437311325680906355958032413949601736252290183630064826026760918618467619129930580255636782276642288105967140337816163861369339270596131695289418894189332430453640410811492017267488071473382516107152895171007705102241825708480087742607432637764218139358808003220687349301614094249629769660575527; tau witness det=-952483819446288555393408748681387763238904565727822844475274893721600000000000/50541872451803201688403110994090831298117817049759327949912224801699937566860497; mixture[0,0]=66667926566900395648942328374420150587344777280/61391349876435377016600254323619839508354485363
+AXIOM_AUTHORITY: origin/main=795e851254e689a66fa9e3fe619823835d4d8661 axiom=bc23300becfe4e4db57153c0e94cfcdf2338da71 registry=b93959cca4f7e26c673cdccbe601e50c3cb93daa; Block110 parent=d6761278fca9cac617200792473a8f4da3a6cfff
+per_element: exact momentum-projector, dimension-additivity, involution, determinant, inertia, parity, emptiness, and grading-split identities are checked
+per_site: one Grassmann mode per fine site on the antiperiodic reflection torus
+per_mode: the self-conjugate k=0 and k=2 branches and the conjugate k=1,3 pair factorize exactly and assemble blockwise
+per_block: all eight sign assemblies and the determinant-changing k=0 branch witness are checked exactly, while the paired-sector parity decision remains global
+lattice_wide: checked and not executed — the global paired-sector parity decision, mixed circulant-plus-A-star dressing variety, curved OS positivity, the actual ADM/history transporter completion, joint gravity, the gravity constraint quotient, Records, audit retention, and TOE closure remain open
+RESULT: the momentum-factorized positivity frontier is one parity decision away — no fixed determinant or index obstruction survives on the circulant involution class, whose best displayed inertias are (15,1,0) and (14,2,0)
+DECISION_CUT: advance the global paired-sector parity decision and the mixed variety; reject fixed-parity readings of the near-miss chart
+TOE: zero obligation retirement, retained-positive end-to-end theory count remains zero, and no TOE percentage moves
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

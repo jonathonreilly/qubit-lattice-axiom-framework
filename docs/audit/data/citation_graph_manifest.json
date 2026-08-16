@@ -1,6 +1,6 @@
 {
- "edge_count": 15743,
- "node_count": 5544,
+ "edge_count": 15745,
+ "node_count": 5545,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -12293,6 +12293,10 @@
   "luders_sequential_product_conditional_bridge_narrow_theorem_note_2026-05-22": {
    "deps_hash": "241e6574e8d2",
    "out_degree": 3
+  },
+  "m2_record_seed_grown_front_chiral_support_bounded_theorem_note_2026-08-15": {
+   "deps_hash": "8fe1555943b9",
+   "out_degree": 2
   },
   "m2_tensor_d4_dimension_256_bounded_note_2026-05-26": {
    "deps_hash": "e3b0c44298fc",

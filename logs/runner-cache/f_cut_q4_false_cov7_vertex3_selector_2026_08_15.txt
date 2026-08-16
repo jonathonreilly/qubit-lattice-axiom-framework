@@ -1,0 +1,55 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_q4_false_cov7_vertex3_selector_2026_08_15.py
+runner_sha256: c4a80e8c8d9570c9a7645d781d8397be88eabcfa77f231266587824f58ea6113
+input_fingerprint_sha256: 00ad4b33a48fef5e045cfe752ef8d2458a5da9455ac61f88311e2ee9f9b14cc6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_Q4_FALSE_COV7_VERTEX3_SELECTOR_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+external_scientific_inputs: current Lattice/Admissibility/Record boundary only; no observation or fit
+negative_scope: displayed Q versus cov7>0 on the eight Q4-false maps; does not adopt a bit
+n_rotations=24
+n_orbits=10
+remaining_labels=('wt1', 'opp2', 'adj2', 'vertex3', 'mixed3')
+|F_cut|=32
+n_q4_false=8
+n_7_site_seeds=792
+N_pos=4
+N_Q=4
+N_both=4
+N_mismatch=0
+lex_first_miss=None
+equiv=1
+slice_cov7=[((0, 0, 0, 0, 0), 0), ((0, 0, 0, 0, 1), 0), ((0, 0, 0, 1, 0), 16), ((0, 0, 0, 1, 1), 80), ((0, 1, 0, 0, 0), 0), ((0, 1, 0, 0, 1), 0), ((0, 1, 0, 1, 0), 40), ((0, 1, 0, 1, 1), 108)]
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required note-plus-axiom string-literal tuple
+PASS: thm1-host 24 rotations, 10 orbits, 32 F_cut maps, eight Q4-false maps, 792 7-site seeds
+PASS: thm1-f-L1-is-unbalanced-axis f_L1 is 1 iff some axis has c_+ != c_-
+PASS: thm1-f-L1-not-hamming f_L1 is n!=0, not Hamming |c|_1 mod 2
+PASS: thm1-eight-q4-false the eight maps with wt1=0 and adj2=0 are exactly the Q4-false class
+PASS: thm1-iff-vertex3 cov7>0 equals vertex3=1 among the eight Q4-false maps; no miss
+PASS: thm2-counts N_pos=4, N_Q=4, N_both=4
+PASS: thm2-four-positives the four positives are exactly (0, *, 0, 1, *) and match the scored cov7 values
+PASS: thm3-display-not-adopt Q is displayed vertex3=1 and is not adopted as an Admissibility selector
+PASS: source-lattice-admissibility Lattice rotations and Admissibility covariance are pinned
+PASS: source-record-boundary Record lock, content-only readout, unreadable absence, and formation residual are pinned
+PASS: claim-scope claim_scope reports the eight-map positivity-versus-vertex3 comparison and does not adopt a bit
+PASS: note-contract machine fields, three theorems, and forbidden-phrase hygiene hold
+PASS: no-axiom-edit the axiom memo is unedited and the theorem proposes no axiom change
+PASS: off-patch-zero off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: names-imply-fail-residual the note names the imply-fail residual and refuses leftover-character of c7q4 and of Q4=cov4>0
+per_element: checked exactly — each of the 64 neighbor 6-tuples is assigned its axis-type orbit
+per_site: checked exactly — each of the twelve two-cube vertices uses the same six-direction stencil
+per_mode: checked exactly — the eight Q4-false F_cut maps are scored on 792 7-site seeds against displayed Q
+per_block: checked exactly — N_pos, N_Q, and N_both are the eight-map positivity-versus-vertex3 counts on this patch
+lattice_wide: checked and not executed — no Z^3-wide formation law or physical Admissibility selector is claimed
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

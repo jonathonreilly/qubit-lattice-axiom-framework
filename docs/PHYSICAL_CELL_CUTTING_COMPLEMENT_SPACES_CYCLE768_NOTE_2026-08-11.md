@@ -1,271 +1,276 @@
-# Complementary sets of cell orbits are blind to the same directions, and the 96 cell orbits are the partner pairs of a single cover — Cycle 768
+# Complement kernels, cover partner pairs, and modular pair/triple ranks
 
 Date: 2026-08-11
 
-Authority: none
+Authority: none; self-contained finite construction proposed for independent audit.
 
 Audit: unset.
 
-Status: two derived structure theorems on the cell-orbit lattice, with the
-complete rank spectrum at the four smallest set sizes and, by the first
-theorem, at the four largest
+Status: proposed_retained
 
 Claim type: bounded_theorem
 
-Runner:
+Primary runner:
 
-- [`physical_cell_cutting_complement_spaces_cycle768_2026_08_11.py`](../scripts/physical_cell_cutting_complement_spaces_cycle768_2026_08_11.py)
+- [complement-space and finite-census runner](../scripts/physical_cell_cutting_complement_spaces_cycle768_2026_08_11.py)
 
-Axioms:
+Direct scientific dependencies: none.
 
-- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)
+Constitutional effect: none. This note changes zero axioms, primitives,
+registries, policy rules, audit verdicts, effective statuses, or framework
+claims.
 
-Constitutional effect: none. This note changes no axiom, primitive, registry,
-policy, audit verdict, effective status, or framework claim.
+## Trace and status fields
 
-## 1. What this responds to
+```yaml
+actual_current_surface_status: conditional-support
+target_claim_type: bounded_theorem
+trace_class: frontier_discovery
+target_claim_id: physical_cell_cutting_complement_spaces_cycle768_note_2026-08-11
+target_blocker_text: "classify complement spaces, cover partner pairs, and pair/triple ranks on the rebuilt finite cell object"
+source_of_blocker_text: frontier_question
+reachability_to_target: "direct finite construction plus exact and finite-field linear algebra"
+artifact_role: "bounded finite incidence theorem candidate"
+next_trace_action: "independent audit of the landed note and invocation-bound runner evidence"
+conditional_surface_status: "the target domain is the declared finite incidence object"
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: "two finite structure theorems plus exhaustive modular pair/triple rank censuses on one declared object"
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```
 
-Cycles 764 to 766 mapped the rank band of the cover table: a ceiling of 144, a
-floor of 48 on the blind space, a measured rank of 105 with an 87-dimensional
-blind space, and therefore an excess of 39 that is pure cancellation, born on
-pairs of cell orbits rather than on any single one. Cycle 767 added that a set
-of cell orbits and its complement carry equal rank, and cut the 96 orbits into
-25 corner strata.
+## Exact target
 
-Two questions were left standing. First, whether that equality of rank is an
-accident of counting — two subspaces that happen to have the same dimension —
-or an equality of the subspaces themselves. Second, what the 96 cell orbits
-actually are as objects, rather than as indices into a table.
+On the finite object reconstructed below:
 
-Both are answered here, and neither answer needed a new axiom or a new input.
-The runner prints every check as one of a list of computational identities,
-with no floating point entering any gate.
+1. Every proper, nonempty set `S` of the `96` cover-piece orbit tables has,
+   over `Q`, the same right kernel, left kernel, image, and rank as its
+   complement.
+2. For each of the `192` covers, its order-two stabilizer partitions the `192`
+   supported pieces into `96` partner pairs, and the `96` cover-piece orbits
+   map bijectively to those pairs.
+3. Over `F_1000003`, all `4,560` two-orbit sums and all `142,880` three-orbit
+   sums have the rank distributions recorded below. The pair vector is also
+   recomputed over `F_1000033` with identical entries.
 
-## 2. The setting
+The theorem domain is finite combinatorics. Physical interpretation, a Record
+map, continuum or multicell extension, and framework-level consequences are
+separate open targets.
 
-The object is the one inherited from cycle 764 and unchanged since. Inside the
-unit four-cube there are 2672 candidate pieces, of which 400 sit at the
-adjacency-cost floor of 6; there are 15800 cuttings of 24; 192 of the pieces
-are used, and they assemble into 192 covers. A cover is 8 pieces that meet
-every cutting exactly once.
+## Inputs, imports, and provenance
 
-A group of 384 maps acts on this object. It is one orbit on the 192 pieces and
-one orbit on the 192 covers, and it acts freely on the 36864 cover-piece cells,
-so those cells fall into exactly 96 orbits. Each cell orbit is a 192 by 192
-zero-one table, and the cover table — the one whose rank is 105 — is the sum of
-4 of these 96.
+| item | classification | role and provenance |
+| --- | --- | --- |
+| labelled corners `{0,1}^4` | declared finite-model data | Defines the unit four-cube used by this packet. |
+| five-corner simplices with determinant magnitude one | declared selection rule | Enumerated directly from the `16` labelled corners. |
+| minimum adjacency cost | declared selection rule | Cost counts non-edge corner pairs; the minimum and all minimizers are recomputed. |
+| shifted `5^4` rational grid | enumeration nuisance | Certifies interiors and drives the exact-cover search; every mask, cutting, and volume condition is checked. |
+| cutting and cover definitions | declared finite-model data | A cutting is a disjoint full mask cover; a cover is an eight-piece set meeting every cutting once. |
+| signed-coordinate action | declared symmetry data | All `4! * 2^4 = 384` maps are constructed, checked distinct and closed, and applied to pieces, covers, and cells. |
+| Maschke decomposition and finite-dimensional rank identities | standard mathematical import | Used over primes with `gcd(p,384)=1`; the concrete isotypic splitting and map factorizations are rebuilt and checked. |
+| `p=1000003`, `q=1000033`, seed `3` | computational nuisances | The first prime defines the exhaustive modular claims; the second independently rebuilds the pair vector. The seed selects reproducible controls only. |
+| Python integer/Fraction arithmetic and NumPy `int64` arrays | implementation import | Exact rational paths use `Fraction`; modular products are bounded below `192 p^2 < 2e14`, far below signed 64-bit capacity. |
+| runner source text | integrity input | The runner reads only its own source for hygiene checks. External scientific data files form the empty set. |
+| physical, Record, probability-law, continuum, and multicell bridges | open bridge inventory | These belong outside the declared theorem domain and supply zero premise here. |
 
-Two facts about the 96 tables, both already gated in the runner, carry
-everything below. Each of the 96 has exactly two ones in every row and in every
-column, which is 384 ones per table. And the 96 add entrywise to the all-ones
-table, which has rank 1.
+Every numeric object count and every theorem input used below is reconstructed
+inside the runner. Branch ancestry and campaign numbering supply zero scientific
+premise.
 
-## 3. The same blind space, not merely the same dimension
+## Declared finite object
 
-**Theorem A.** Let `S` be any set of cell orbits with `1 <= |S| <= 95`, let
-`T_S` be the entrywise sum of the orbit tables in `S`, and let `S^c` be the
-complement of `S` among the 96. Then `T_S` and `T_{S^c}` have the same right
-kernel, the same left kernel, and the same image.
+The runner enumerates `2,672` determinant-one five-corner candidates, finds
+adjacency-cost floor `6`, and keeps all `400` minimizers. Its shifted grid avoids
+every kept facet plane. The exact-cover search returns `15,800` distinct
+cuttings, each containing `24` unit-volume pieces with disjoint interiors and
+full-cell union. Exactly `192` pieces occur. The clique construction returns
+`192` distinct covers; every cover has eight pieces, every piece lies in eight
+covers, and every cover meets each cutting once.
 
-The proof is short enough to give in words. Because each orbit table has two
-ones in every row and every column, `T_S` has every row sum and every column
-sum equal to twice the size of `S`. Because the 96 add to the all-ones table,
-`T_S + T_{S^c}` is the all-ones table. Now take a vector `v` in the right
-kernel of `T_S`. Add up the entries of `T_S v`: the total is twice the size of
-`S` times the sum of the entries of `v`, and it is zero. Since the size of `S`
-is between 1 and 95, that factor is not zero, so the entries of `v` sum to
-zero, so the all-ones table kills `v` as well. Then
-`T_{S^c} v = (all-ones) v - T_S v = 0`. The argument runs the same way starting
-from `S^c`, so the two right kernels are equal. Repeating on the transposes
-gives the same left kernel, and equal kernels on a square table give equal
-rank, so the images agree too.
+Permuting coordinates and independently flipping them gives `384` distinct
+maps. The runner checks all `147,456` products for closure and verifies
+transitivity on pieces and covers. The action on the `192 x 192` cover-piece
+cells has `96` orbits. Write `O_0,...,O_95` for their binary indicator tables.
+Each `O_i` has two ones in every row and column, and
 
-The step that carries the weight — every blind vector sums to zero — has an
-exact linear-algebra form as well: the all-ones vector lies in the row space of
-`T_S` and in its column space. The runner checks that form in exact rational
-arithmetic, by comparing the rank of `T_S` with the rank of `T_S` with the
-all-ones row appended, and likewise on the transpose. Across 16 test sets there
-were 0 misses, and the largest exact rank seen among them was 144, the ceiling.
+`O_0 + ... + O_95 = J`,
 
-The subspace equality itself is checked directly, over a prime field, by
-building kernel bases for `T_S` and for `T_{S^c}` and comparing the span of
-each with the span of the two stacked together. Across the same 16 sets there
-were 0 kernel mismatches and 0 image mismatches, and in all 16 the two tables
-genuinely differ from one another, so the equality is not the trivial one. A
-deliberately corrupted table — one zero entry lifted to a one — was fed through
-the same comparison and was rejected, which is what makes the check a check.
+where `J` is the all-ones table. The reconstructed cover table has exact
+rational rank `105`, kernel dimension `87`, and equals the sum of four
+distinguished incidence-orbit tables.
 
-The 16 sets are the four incidence orbits, a single orbit, the six incidence
-pairs, and eight further sets drawn by the runner's own pseudo-random
-recurrence, the largest of them 64 orbits.
+The object certificates are load-bearing gates: mask visibility, search
+uniqueness and coverage, simplex volumes, pairwise interior disjointness, cover
+uniqueness, `8 x 8` cover regularity, exact Gram reconstruction, explicit
+kernel annihilation, independent kernel ranks, and selected-row certificates.
 
-Stated plainly: the cover table's 87-dimensional blind space is literally the
-same subspace as the blind space of the 92 orbits the cover table leaves out.
-The same directions, not merely as many of them. Whatever the cover table
-cannot see, the complementary 92 orbits cannot see either.
+## Complement-kernel and image theorem over `Q`
 
-## 4. The 96 cell orbits are one cover's partner pairs
+**Complement-kernel and image theorem over `Q`.** For every `S` with
+`1 <= |S| <= 95`, let `T_S = sum_{i in S} O_i` and let `S^c` be its complement.
+Over `Q`, the tables `T_S` and `T_{S^c}` have equal right kernels, equal left
+kernels, equal images, and equal ranks.
 
-**Theorem B.** Fix any cover `c`. The subgroup fixing `c` has order 2, and its
-non-identity element acts on the 192 pieces without fixed points, so it splits
-them into 96 partner pairs. The map sending a cell orbit to the partner pair it
-meets in row `c` is a bijection from the 96 cell orbits onto those 96 partner
-pairs.
+Each row and column sum of `T_S` is `2|S|`, while
+`T_S + T_{S^c} = J`. If `T_S v = 0`, summing the coordinates of that equation
+gives
 
-Again the proof is short. The group is transitive on the 192 covers and has
-order 384, so the subgroup fixing a cover has order 384 divided by 192, which
-is 2. The group acts freely on cells, so the non-identity element of that
-subgroup cannot fix any piece — fixing a piece would fix the cell in row `c` —
-and being an involution without fixed points, it pairs the 192 pieces into 96
-partners. A cell orbit meets row `c` in exactly two cells, because every orbit
-table has exactly two ones in every row; those two cells are swapped by the
-element, so they are a partner pair. Counting both ways, 96 orbits onto 96
-pairs, gives the bijection.
+`2|S| sum_j v_j = 0`.
 
-The runner measures this on all 192 covers, not on one. Every cover has a
-stabiliser of order exactly 2; the non-identity element fixes 0 pieces in every
-case, is an involution in every case, and the orbit labelling of the cover's
-row is constant on partners with 0 misses; every cover's row splits into
-exactly 96 fibres of size two. As a discriminator, the 96 labels appearing in a
-cover's row are all distinct, and a row whose labels were deliberately swapped
-between two different orbits was put through the same fibre test and rejected.
+The scalar is nonzero in `Q`, hence `sum_j v_j=0` and `Jv=0`. Therefore
+`T_{S^c}v=0`. Applying the same argument to `S^c` proves equality of right
+kernels. Transposition proves equality of left kernels. For a finite-dimensional
+linear map over a field, its image is the annihilator of its left kernel;
+equality of left kernels therefore gives equality of images. Equal ranks follow.
 
-The corollary needs one more line. The four orbits summing to the cover table
-are exactly the cells where a cover meets its own pieces, so inside cover `c`'s
-own row they are carried by its 8 blocks. Those 8 blocks therefore carry 4
-labels, two blocks each, and the runner confirms that those 4 labels are
-exactly the four incidence orbits. So both counts that this whole line of work
-runs on — the 96 cell orbits and the 4 incidence orbits — are read off a single
-cover: 96 partner pairs among its 192 pieces, and 4 partner pairs among its 8
-blocks.
+The same proof applies set by set over a field whenever both `2|S|` and
+`2(96-|S|)` are nonzero. In particular, it applies simultaneously to every
+proper nonempty `S` over both census primes. It also explains the necessary
+scalar boundary: over `F_5`, prefix sets of sizes `5` and `91` give complement
+rank pairs `143/144` and `144/143`; over `F_7`, sizes `7` and `89` give the
+same inequality pattern. Integral image lattices lie outside this theorem.
 
-## 5. The complete spectrum at sizes two and three, and where that leaves the small sizes
+The runner checks exact all-ones row/column membership on `16` selected sets
+and directly compares right and left kernels over `F_1000003`. A spoiled table
+is rejected by the same predicate.
 
-Every pair of cell orbits was ranked. There are 4560 of them. The spectrum has
-13 distinct values running from 48 to 144: 960 pairs sit at the ceiling of 144,
-and 1104 sit at or below 105, the cover table's own rank.
+## Cover-stabilizer partner-pair theorem
 
-Every triple was ranked as well, all 142880 of them. That spectrum has 18
-distinct values running from 64 to 144, with 60960 at the ceiling and 1472 at
-or below 105.
+**Cover-stabilizer partner-pair theorem.** Fix a cover `c`. Its stabilizer in
+the `384`-element action has order two. The non-identity element is a
+fixed-point-free involution on the `192` pieces, hence gives `96` partner pairs.
+Mapping a cover-piece orbit to the pair it meets in row `c` is a bijection from
+the `96` cell orbits to those `96` partner pairs.
 
-Three independent anchors hold these censuses down. The six incidence pairs
-come out 72, 93, 117, 129, 144, 144 and the four incidence triples come out
-114, 130, 142, 142, matching the exact rational ranks carried forward from
-cycle 767 with 0 discrepancies. A sample of 25 pairs and 15 triples was
-re-ranked from the full 192 by 192 tables rather than through the small-matrix
-reduction, and every one agreed. The entire pair census was recomputed at a
-second prime, 1000033 against 1000003, with 0 values off.
+Orbit-stabilizer gives stabilizer order `384/192=2`. Freeness on cover-piece
+cells makes the non-identity element fixed-point-free on pieces in row `c`.
+Each orbit table has two entries in that row, and group invariance places those
+entries in one partner pair. There are `96` orbit labels and `96` partner
+pairs, so the map is bijective.
 
-Theorem A carries each census to the opposite size at no cost, because equal
-kernels give equal rank. The complete spectrum at size two is simultaneously
-the complete spectrum at size 94, and the complete spectrum at size three is
-simultaneously the complete spectrum at size 93.
+The runner checks the statement on all `192` covers: stabilizer size, unique
+non-identity involution, fixed-point count, partner-label equality, `96`
+two-element fibres, and distinct labels. Swapping two labels in a scratch row
+is rejected. On one cover, its eight member pieces carry exactly the four
+incidence labels, twice each; a separate mutation corrupts one label and is
+rejected.
 
-Sizes one and four were settled before this cycle, and Theorem A carries them
-across as well, so the four smallest set sizes and the four largest are all
-complete. Cycle 763 derived the size-one spectrum rather than measuring it.
-Read as a bipartite graph on covers and pieces, each of the 96 orbit tables is
-a disjoint union of 48 cycles through 4 covers each; a cycle of even length
-contributes one less than its length to the rank, over any field; so every
-single orbit has rank exactly 144, the ceiling, with no exception among the 96
-and no dependence on the modulus. This runner re-checks it, holding the cycle
-rule, the prime-field elimination and the ceiling read off the parts against
-one another. Cycle 765 ranked every four-subset of the 96 — the whole census,
-not a sample — and that spectrum also runs up to 144.
+## Certified small-block rank bridge
 
-That reading puts the two numbers of cycle 764 into a single picture at size
-one. A single orbit sits at the ceiling of 144, so its blind space has
-dimension 192 less 144, which is 48, the floor exactly; and the cycle rule says
-where those 48 directions live, one for each of the 48 cycles. Why the ceiling
-and the floor should add to 192 in the first place is not derived here.
+Let `V` be the piece permutation module and `W` the cover permutation module
+over `F_p`, for either declared prime. Since `gcd(p,384)=1`, Maschke's theorem
+makes both modules semisimple. On an isotypic part of irreducible degree `d_i`,
+an equivariant map `V -> W` has the form `I_{d_i} tensor M_i` after multiplicity
+bases are chosen. Consequently,
 
-One number in the pair spectrum deserves its own line. The least pair rank over
-all 4560 pairs is 48, well below the least incidence-pair rank of 72. So the
-four orbits that build the cover table are not the extreme cancellers:
-somewhere among the 96 there are two orbits that lose far more rank together
-than any two of those four. Which two, and why, is not settled here. The
-theorem of cycle 764 puts a floor of 48 on the blind space and no floor at all
-on the rank, so nothing forces the least pair rank to be any particular value,
-and the coincidence of the two numbers is not claimed to mean anything. It
-should not be confused with the 48 of the paragraph above, which counts the
-cycles in a single orbit and equals the floor by the arithmetic given there.
+`rank(T) = sum_i d_i rank(M_i)`.
 
-## 6. The cancellation degree, and one prediction tested
+The runner constructs the full commutant, computes its center with exact
+rational elimination, and finds dimension `20`. An integral central element
+has `20` distinct eigenvalues modulo each declared prime, so its kernels isolate
+all `20` isotypic parts. For each part, the runner verifies the dimensions
+`d_i`, source multiplicity `m_i`, and cover multiplicity `mc_i`; constructs
+left inverses and pure-vector bases; checks every restriction and reconstruction
+residual; and obtains the `96` orbit coefficient matrices. The global sums
+recover the dimensions of the commutants and modules. At both primes the
+coefficient map has width and rank `96`, the active parts agree, and every
+five-condition factorization gate passes. These facts establish the displayed
+rank formula for every orbit-table sum used by the censuses.
 
-Define the degree of a cell orbit as the number of partners with which it forms
-a pair of rank strictly below the ceiling of 144 — the number of ways it takes
-part in cancellation. Read off the pair census, the degree is 75 for every one
-of the 96 orbits: 1 distinct value, minimum 75, maximum 75. The four incidence
-orbits are 75, 75, 75, 75.
+As controls, the formula matches direct `192 x 192` elimination on `62` tables,
+including the cover table; on `25` selected pairs; and on `15` selected triples.
+All `15` nonempty incidence subsets also receive exact rational ranks.
 
-That the degree is the same for every orbit is measured, not derived; nothing
-here explains why 75 and not another number. It does mean the question the
-degree was built to ask — do the four incidence orbits stand out in the
-cancellation order? — has a degenerate answer. They sit at the top, but so do
-all 96, and no weight should be put on that flag. As an independent check that
-the degree really is what it says, one orbit's degree was recomputed from
-scratch by ranking all 95 of its pairs on the full 192 by 192 tables, and it
-agreed.
+## Exhaustive modular censuses
 
-Cycle 767 found that the corner-overlap stratum cuts out the incidence set
-exactly but does not decide which orbit repairs the rank. The natural next
-question is whether the *pair* of strata determines the pair rank. It does not.
-Of the 325 stratum pairs realised among the 4560 pairs, 313 carry more than one
-rank value, and the worst single stratum pair carries 13 distinct values. The
-prediction going in was that the stratum pair would not determine the rank, and
-that prediction held. The corner strata classify the orbits, but they do not
-classify what happens when two orbits are added together.
+Over `F_1000003`, the complete pair vector has `4,560` entries, `13` distinct
+ranks, range `48..144`, `960` entries at `144`, and `1,104` entries at or below
+`105`. Rebuilding every pair at `F_1000033` gives zero entrywise differences.
+The complement theorem transfers this same modular vector to size `94`.
 
-## 7. Boundary
+Over `F_1000003`, the complete triple vector has `142,880` entries, `18`
+distinct ranks, range `64..144`, `60,960` entries at `144`, and `1,472` entries
+at or below `105`. The complement theorem transfers this modular vector to size
+`93`.
 
-This note touches no axiom, no primitive, and no framework claim. Nothing here
-derives a physical quantity, and nothing here is a step toward one on its own.
+The exact rational incidence ranks are:
 
-It does not decide the rank of the cover table beyond what cycles 764 to 766
-already measured: 105, with an 87-dimensional blind space and an excess of 39
-below the ceiling of 144. Theorem A explains why a complementary set has the
-same rank, but it does not say what that rank is.
+- four singletons: `144,144,144,144`;
+- six pairs: `72,93,117,129,144,144`;
+- four triples: `114,130,142,142`;
+- the incidence quartet: `105`.
 
-It says nothing about the set sizes between the four smallest and the four
-largest. Sizes one, two, three and four are complete, and so are 92, 93, 94 and
-95 — the first four from cycle 763, cycle 765 and this cycle's two censuses,
-the last four by Theorem A. The sizes in between are not, and the number of
-subsets there is far past what a complete census can reach.
+Each singleton orbit table is a disjoint union of `48` bipartite cycles of
+length four on each side. The elementary cycle-matrix calculation gives exact
+rank `3` per block and exact singleton rank `144`.
 
-Two of the runner's readings are redundant rather than discriminating, and no
-claim above leans on them. The first is the degree-order flag discussed in
-section 6: with all 96 degrees equal it cannot come out any other way. The
-second is the relationship between the exact all-ones test and the prime-field
-subspace test — they are two proofs of the same theorem rather than evidence
-for two different facts, so passing both is one result checked twice, not two
-results.
+From the modular pair vector, all `96` vertices have below-ceiling degree `75`.
+Among `325` realized stratum-pair fibres, `313` contain more than one
+`F_1000003` rank, with maximum fibre diversity `13`. These are positive finite
+census statements at the declared prime.
 
-## 8. Honest auditor read
+## Mutation and independent-check ledger
 
-Here is what I would push on if I were reading this cold. The subspace equality
-in section 3 is decided over a prime field, not in exact arithmetic: what is
-exact is the all-ones membership test, run through rational forward
-elimination at all 16 sets, and the incidence-set ranks inherited from cycle
-767; what is modular is the kernel and image comparison and both censuses.
-The theorem itself is an argument on the integers and does not depend on the
-prime, but the direct verification of it does. The size-one spectrum is the one
-rank statement here that escapes the prime entirely, and it is not new work:
-the cycle rule settles it in any characteristic, cycle 763 derived it, and this
-runner only re-checks it against the elimination and against the parts. Second,
-the triple census rests
-on the small-matrix reduction, which is cross-checked against the full 192 by
-192 table on 15 triples out of 142880 and against the second prime not at all;
-the pair census is the better-anchored of the two, having both the full-table
-sample of 25 and a complete recomputation at the second prime. Third, each of
-the two rejectors is a single corrupted object, so they show the checks are not
-vacuous but do not survey the space of ways to be wrong. Fourth, the degree
-result is a flat spectrum, and a flat spectrum is exactly the shape a bug that
-overwrote a computation with a constant would produce — the independent
-recomputation of one degree from the full tables is what rules that out, and it
-covers one orbit, not 96. Finally, two conditions I had expected to hold came
-out false and were removed rather than accommodated: I had assumed the least
-pair rank over all 4560 pairs would be the least incidence-pair rank of 72, and
-that the least triple rank would be the least incidence-triple rank of 114.
-The measured minima are 48 and 64. The incidence sets are not extremal in the
-lattice, and section 5 says so.
+Every scratch mutation is in memory and leaves the scientific object unchanged:
+
+| family | mutation | required response |
+| --- | --- | --- |
+| object constructor | zero one kept-piece mask | full-cover certificate rejects |
+| group | duplicate one signed-coordinate map | distinct-map certificate rejects |
+| orbit basis | replace one orbit table by zero | row/column/sum certificate rejects |
+| small-block bridge | alter one irreducible degree | block/full rank equality rejects |
+| second-prime rebuild | alter one part row | two-prime certificate rejects |
+| incidence corollary | replace one cover-block label | four-label/twice-each predicate rejects |
+| exact all-ones route | supply the zero table | row/column membership predicate rejects |
+| singleton cycle route | delete one orbit cell | two-regular cycle predicate rejects |
+| pair census | set one rank above the ceiling | pinned pair summary rejects |
+| triple census | set one rank above the ceiling | pinned triple summary rejects |
+| degree/stratum aggregation | lift one below-ceiling pair to the ceiling | pinned aggregation rejects |
+
+The partner-fibre and complement-kernel families retain their dedicated
+swapped-label and spoiled-entry mutations. Independent review additionally
+used a determinant-minors rank algorithm on every pair and triple and found
+zero elementwise differences; a separate exact-rational library matched all
+incidence-subset ranks.
+
+## Proof-obligation graph
+
+The obligation graph is acyclic:
+
+1. `declared corners/rules -> finite object` - proved here by exhaustive
+   construction and object certificates.
+2. `finite object + signed-coordinate maps -> group action/orbit tables` -
+   proved here by closure, bijection, transitivity, equivariance, and orbit
+   certificates.
+3. `two-regular orbit tables + sum O_i=J -> complement theorem over Q` - proved
+   here; scalar conditions are explicit above.
+4. `group action + free cover-piece action -> partner-pair theorem` - proved
+   here and checked on all covers.
+5. `Maschke + reconstructed isotypic factorizations -> small-block rank formula`
+   - standard theorem plus concrete hypotheses and factorization certificates
+   proved here.
+6. `rank formula + exhaustive subset enumeration -> pair/triple modular vectors`
+   - proved here at `F_1000003`; pairs independently rebuilt at `F_1000033`.
+7. `modular vectors -> rational vectors for every pair/triple` - open. The
+   current claim preserves the modular field label.
+
+The strongest open lemma is item 7: equality of every modular census rank with
+its rational rank.
+
+## Edge-case and scope ledger
+
+| case | disposition |
+| --- | --- |
+| `S` empty or all `96` labels | excluded from the complement theorem; the two ranks are `0` and `1` |
+| characteristic dividing `2|S|` or `2(96-|S|)` | excluded from the proof; explicit `F_5` and `F_7` rank inequalities record the boundary |
+| census primes | both exceed `96` and satisfy `gcd(p,384)=1` |
+| integral image lattice equality | outside scope |
+| rational interpretation of all pair/triple census entries | open lemma |
+| size-four and size-92 exhaustive spectra | outside this packet |
+| physical quantity, Record readout, probability law, continuum, multicell lattice | outside the declared finite domain |
+| audit status | unset pending independent audit; this note sets zero verdict |
+
+The landed artifact is the note, runner, canonical cache, harness registration,
+and required citation manifest only. Generated audit rows and audit verdicts are
+outside this review-lane change.

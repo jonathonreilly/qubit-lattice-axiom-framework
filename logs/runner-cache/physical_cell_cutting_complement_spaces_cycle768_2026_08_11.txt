@@ -1,55 +1,55 @@
 ===== runner cache v1 =====
 runner: scripts/physical_cell_cutting_complement_spaces_cycle768_2026_08_11.py
-runner_sha256: 9ba625faf29890abbffaddc8cf1aa94a8095377fcb773c1d23bb4e45fea9f951
-timeout_sec: 400
+runner_sha256: 2e42ef28661fda6b5ecb6c4a569e381aaea63e142ccaddbacf417ff9c996aeee
+timeout_sec: 900
 exit_code: 0
-elapsed_sec: 237.79
+elapsed_sec: 194.10
 status: ok
 ----- stdout -----
 all numbers below are exact computational identities; no floating point enters any gate
-PASS C0 object: 2672 pieces, 400 at cost floor 6, 15800 cuttings of 24, 192 used, 192 covers
-PASS C1 group: 384 maps distinct, 147456 products closed, bijective yes, piece orbit yes, cover orbit yes
-PASS C2 orbits: 104 ordered piece pairs, 120 ordered cover pairs, 96 cells, sweep agrees yes
-PASS C3 exact ranks: cutting table 88 kernel 104, cover table 105 kernel 87, prime path yes
-PASS C4 orbit matrices: 104 piece-pair, 96 cell; 40 equivariance checks yes; cover table sums 4 cell orbits yes
-PASS C5 structure constants: max 2, labels all represented yes, 7 product pairs agree yes, below 2**40 yes
-PASS C6 centre: 84 of 10816 rows, prime rank 84 exact 84, dim 20, all 10816 met yes, top 2, guard yes
-PASS C7 central element: trial 2, bound 6009, 20 integer values of nullity one yes, 3 products yes
-PASS C8 certificates: dimensions 192 = 192, m squared 104 = 104, m times mc 96 = 96
-PASS C9 certificates: mc squared 120 = 120, d times mc 192 = 192, blind 87 = 87
+PASS C0 object/certs 2672/400/15800/192; constructor checks yes
+PASS C1 group 384; products 147456; bijective/transitive yes
+PASS C2 orbit counts piece/cover/cell 104/120/96; sweep yes
+PASS C3 ranks/kernels cutting 88/104, cover 105/87; certificates yes
+PASS C4 orbit bases 104/96; equivariance 40; cover-orbit sum 4
+PASS C5 structure constants max 2; representatives/products/guard yes
+PASS C6 centre rank 84 exact; dimension 20; 10816 constraints; guard yes
+PASS C7 central separator trial 2; 20 simple parts; 3 product checks
+PASS C8 dimension sums module/commutant/map 192/104/96
+PASS C9 dual dimension sums 120/192/87
 PASS C10 20 parts, dims sorted: 1,1,1,1,3,3,3,3,4,4,8,8,8,8,12,12,24,24,32,32
-PASS C11 theorem: ceiling 144 on the rank, floor 48 on the blind space, 144 plus 48 = 192
-PASS C12 measured: cover rank 105 blind 87, ceiling minus rank 39 equals blind minus floor 39
-PASS C13 exact witness: an equivariant integer matrix of exact rank 144 meets the ceiling, 192 minus it is 48
-PASS C14 excess: 12 parts none, 8 some; of those 6 have mc at least m, 2 not; all 5 with mc zero have none yes
+PASS C11 rank/blind bounds 144/48; sum 192
+PASS C12 cover rank/blind 105/87; bound gaps 39/39
+PASS C13 exact equivariant witness rank 144; blind 48
+PASS C14 block excess zero/positive 12/8; mc>=m split 6/2; mc0 checks yes
 PASS C15 excess d/m/mc/blind/forced 1 to 4: 2/2/2/2/0 4/2/3/4/0 6/2/3/6/0 8/4/6/8/0
 PASS C16 excess d/m/mc/blind/forced 5 to 8: 6/4/3/12/6 6/2/3/6/0 6/4/3/12/6 1/1/1/1/0
-PASS C17 even subgroup: order 192, index 2, piece classes 96 and 96, cover classes 96 and 96
-PASS C18 class labelling: all 192 cover sums [0], block split [(4, 192)]
-PASS C19 self-dual: piece [(4, 192)], cover [(4, 192)], totals 768 and 768, both 96 times 8
-PASS C20 first candidate: the element fixing cover 0: sign 1, fixes 0 of 8 blocks, cycles [2, 2, 2, 2], class kept yes
-PASS C21 contrast: that element has flip parity -1, product with the permutation sign -1, both blind
-PASS C22 second candidate: the mean carries nothing; all 9 splits a give 96a + 96(8 - a) = 768, 768 over 192 is 4
-PASS C23 third candidate: corner-parity agrees on 96 of 192, ordered determinant 96 of 192, values [-1, 1]
-PASS C24 determinant tracks the product character: source-order corners match all 73728, 0 misses
-PASS C25 re-sorted: each image piece in its own order fails on 36864 of 73728, for 4 of 384
-PASS C26 source hygiene: ASCII yes, no tab yes, no remainder yes, no long dash yes, 38 barred absent yes
-PASS C27 budget: 168 s wall under 900, peak resident 152 MB under 2500, stdout counted below
-PASS C28 part table at 1000003 and 1000033 matches cycle 764 row for row, both prime
-PASS C29 small matrices: 20 of 20 parts pass five conditions; 5 have no cover multiplicity, no matrix
-PASS C30 96 orbit coefficients to twenty matrices: width 96, rank 96 mod p, one-to-one onto
-PASS C31 the reduction matches the direct rank on 62 of 62 tables; cover table 105 blind 87
-PASS C32 drop parts d/m/mc/rank/drop: 2/2/2/1/2 4/2/3/1/4 6/2/3/1/6 8/4/6/3/8 6/4/3/2/6 6/2/3/1/6 6/4/3/2/6 1/1/1/0/1
-PASS C33 those 8 are the cycle 764 excess parts, drops sum to 39, blind = d(m - rank) on all 20
-PASS C34 each of the 4 incidence orbits alone has exact rank 144, the ceiling; mod p agrees
-PASS C35 part by part: 60 single-orbit small matrices meet min(m, mc), 0 short
+PASS C17 even subgroup 192, index 2; piece/cover classes 96+96
+PASS C18 class sums [0]; cover profile [(4, 192)]
+PASS C19 self-dual profiles [(4, 192)]/[(4, 192)]; totals 768/768
+PASS C20 cover stabilizer sign/fixes/cycles 1/0/[2, 2, 2, 2]; class kept
+PASS C21 sign diagnostic: flip parity -1, product character -1
+PASS C22 split-count identity: 9 cases give 768; mean 4
+PASS C23 label diagnostics parity/determinant 96/96; values [-1, 1]
+PASS C24 product-character checks 73728; misses 0
+PASS C25 sorted-order diagnostic unequal/equal-elements 36864/4
+PASS C26 source hygiene ASCII/tab/remainder/dash/barred checks clean
+PASS C27 resource envelope: wall under declared timeout and peak resident under 2500 MB
+PASS C28 two-prime block rebuilds: rows/separation/factors/active/coefficient map yes
+PASS C29 small-block five-condition passes 20/20; zero cover multiplicity 5
+PASS C30 orbit coefficient maps: widths 96/96, ranks 96/96 at the two primes
+PASS C31 block/full rank checks 62/62; cover rank/blind 105/87
+PASS C32 8 drop blocks have unique ordinal/value/hash ids; hashes ad9 9 9 91a,8a2a0644,54a6d07a,5b08ea4b,9c5db65b,31e2a61b,6a2e89a5,5feceb66
+PASS C33 internal block accounting: 8 drops sum to 39; blind = d(m-rank) on all 20
+PASS C34 incidence singleton ranks: 4 copies of exact 144; modular agrees
+PASS C35 singleton block checks 60; short count 0
 PASS C36 pairs 72,93,117,129,144,144; triples 114,130,142,142; four give 105, below every triple
-PASS C37 all 8 rank-losing parts go short first on a pair, not on a single orbit; 0 at size one
-PASS C38 not monotone: 3 more parts go short on a pair yet meet min(m, mc) on all four; 3/1/3 4/2/1 8/4/2
-PASS C39 other prime, same size on every part: 15 compared, 0 differ, 30 short sub-sums
-PASS C40 one-swap: 368 substitutions, 72 to 144, 53 at the ceiling, 1 at 105, 9 lower
-PASS C41 one exchange, slot 0 taking orbit 5, lifts the four-orbit exact rank 105 to 144
-PASS C42 blind spaces meet in 12, span 123, nested no; four plus one gives rank 144
+PASS C37 first-short level pair for 8 blocks; singleton short count 0
+PASS C38 recoverable blocks: 3 short on a pair and full on the incidence quartet; 3/1/3 4/2/1 8/4/2
+PASS C39 second-prime level checks 15; differences 0; short sub-sums 30
+PASS C40 one-swap 368: range 72..144, ceiling 53, rank-105 1, lower 9
+PASS C41 exchange slot/orbit 0/5; exact rank 105->144
+PASS C42 blind meet/span 12/123; four-plus-one rank 144
 PASS C43 96 sum to J rank 1
 PASS C44 96 ok 0 off 384 ones
 PASS C45 cmpl 105 144 72,93,117,129,144,144
@@ -58,25 +58,26 @@ PASS C47 192 of 5 corners top 4
 PASS C48 36864 cells 0 vary
 PASS C49 25 strata 2:12 4:7 6:4 8:1 12:1
 PASS C50 B 83 vals finer 1975 on 4
-PASS C51 top 143 not 144 blind 49 inc 105
+PASS C51 stratum max/ceiling/min-blind/incidence 143/144/49/105
 PASS C52 19 lift slot 0 orb 5 str 23
 PASS C53 0 all 10 none 15 mixed
 PASS C54 stab 2 fix 0 4 pairs
 PASS C55 partners 2 2 2 2
 PASS C56 least pair 2 2 rank 72
-PASS C57 row pairs: 192 covers, stab 2, fix 0, label miss 0, 96 pairs each, rejector 1
-PASS C58 the 8 blocks of one cover carry 4 labels, exactly the incidence orbits, two blocks each
-PASS C59 same blind and same seen space at 16 sets, 0+0 off, tables differ 16, rejector 1, blind 87, range 1 to 95, first set 4 against 92
-PASS C60 all-ones in row and column space at 16 sets exactly, 0 off, top rank 144, so every blind vector sums to zero
-PASS C61 size one: 48 cycles of 4 covers in every orbit, one type, so all 96 have exact rank 144 by the cycle rule; 0 off the prediction
-PASS C62 4560 pairs: 13 values 48 to 144, 960 at the ceiling, 1104 at or below 105; 25 by full table, 0 off at the second prime; same at 94
-PASS C63 142880 triples: 18 values 64 to 144, 60960 at the ceiling, 1472 at or below 105; 15 by full table; same at 93
-PASS C64 degree 75 to 75, 1 values; incidence 75 75 75 75 top yes, 96 tied; 1 by full table; stratum fixes rank no, 313 of 325 mixed, max 13
-PASS C65 gate labels: one strict sequence of 66, no gap, no repeat
-PASS C66 closing source check: 3 further barred pairs absent, no barred digit pair, single-word use out
-PASS C67 budget: wall time, peak resident memory, stdout all inside their limits
-stdout characters: 5889
-TOTAL: PASS=68 FAIL=0
+PASS C57 row-pair checks covers/fixed/misses/pairs/reject 192/0/0/96/1
+PASS C58 one cover: 8 blocks, 4 incidence labels, multiplicity two
+PASS C59 complement spaces sets/right/left/different/reject/blind 16/0/0/16/1/87
+PASS C60 exact all-ones row/column checks 16; misses 0; top rank 144
+PASS C61 singleton cycle/rank: 48x4, orbits 96, rank 144, misses 0
+PASS C62 F_1000003 pairs: 4560, 13 values 48..144, ceiling 960, <=105 1104; 25 full-table checks, second-prime misses 0; complements size 94
+PASS C63 F_1000003 triples: 142880, 18 values 64..144, ceiling 60960, <=105 1472; 15 full-table checks; complements size 93
+PASS C64 F_1000003 pair aggregation: degree 75 on all 96; 313 of 325 stratum fibres contain multiple ranks, maximum 13
+PASS C65 mutations 11/11 reject: object/group/orbit/block/p2/incidence/exact/cycle/pair/triple/degree
+PASS C66 gate labels sequential: 67
+PASS C67 closing source checks clean: 3
+PASS C68 budget: declared wall/RSS limits and prospective complete stdout under 6000
+stdout characters before trailer: 4545
+TOTAL: PASS=69 FAIL=0
 
 ----- stderr -----
 

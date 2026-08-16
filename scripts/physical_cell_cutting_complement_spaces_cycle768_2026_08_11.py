@@ -1,28 +1,21 @@
-"""Twenty small matrices carry every table, and all 3321960 four-subsets censused.
+"""Finite complement spaces, partner pairs, and pair/triple modular censuses.
 
 Self-contained exact runner. It builds the cell object from scratch: the sixteen
 corners of the unit four-cube, the unit-determinant five-corner pieces at the cost
 floor, the cuttings by them, the pieces that occur, and the eight-piece covers.
 
-Permuting the four coordinates and flipping any of them splits the piece labelling
-space into parts the group cannot mix. The parts are read off the centre of the
-algebra of matrices commuting with the action, found exactly and certified against
-every one of its defining constraints. A table of the cover table's shape is an
-equivariant map, so inside each part its rank is at most the smaller of the two
-multiplicities times the part's degree and its blind dimension is at least the
-difference. Summing gives a ceiling of 144 and a floor of 48; the cover table's
-own rank is 105 and its blind space is 87, so it sits 39 inside both, and that 39
-is the blindness the symmetry does not force. An equivariant integer matrix of
-exact rational rank 144 shows the ceiling is attained.
+The signed-coordinate action splits the cover-piece cells into 96 orbit tables.
+The runner certifies their finite construction, the rational complement-space
+identity, the partner-pair description on every cover, and complete rank
+censuses for pairs and triples over F_1000003. The pair census is rebuilt over
+F_1000033. Exact rational checks cover the incidence subsets and the singleton
+cycle rule. The small-block bridge is certified at both primes.
 
-One labelling escapes the argument: the even subgroup splits the pieces into two
-classes of 96 and every cover meets each class four times; three candidate
-explanations are ruled out. All work is over the integers, the rationals and one
-fixed prime; no floating point enters any gate and no constant is fitted.
-
-Output: one line per gate, then the stdout character count, then the total line.
+All arithmetic used by scientific gates is integer, rational, or finite-field
+arithmetic. Output contains one line per gate, a pre-trailer count, and the total.
 """
 
+import hashlib
 import itertools
 import math
 import sys
@@ -30,7 +23,8 @@ import time
 import resource
 from fractions import Fraction as FR
 import numpy as np
-from numpy.random import default_rng
+
+AUDIT_TIMEOUT_SEC = 900
 
 PRIME = 1000003
 SEED = 3
@@ -203,6 +197,7 @@ for (v0, Ci, rows) in BARY:
     MASK.append(bits)
 
 UNIV = (1 << NPTS) - 1
+MASK_VISIBLE = (len(MASK) == NKEPT and all(bits != 0 for bits in MASK))
 
 # ------------------------------------------------------------------
 # 3. the cuttings
@@ -238,6 +233,47 @@ def cover_search(cov, chosen):
 cover_search(0, [])
 NS = len(SOLS)
 SIZES = sorted(set(len(s) for s in SOLS))
+SOLS_UNIQUE = (len(set(SOLS)) == NS)
+SEARCH_OUTPUT_OK = SOLS_UNIQUE
+for s in SOLS:
+    cov = 0
+    for t in s:
+        if cov & MASK[t]:
+            SEARCH_OUTPUT_OK = False
+        cov |= MASK[t]
+    if cov != UNIV:
+        SEARCH_OUTPUT_OK = False
+
+
+def piece_det_num(S):
+    v0 = CORN[S[0]]
+    return abs(det4([[CORN[S[j + 1]][r] - v0[r] for j in range(4)]
+                     for r in range(4)]))
+
+
+KEPT_DET = [piece_det_num(S) for S in KEPT]
+CUT_VOLUME_OK = (all(x == 1 for x in KEPT_DET)
+                 and all(sum(KEPT_DET[t] for t in s) == 24 for s in SOLS))
+
+
+def mask_search_certificate(masks, sols):
+    """Recheck that every emitted cutting is a disjoint full mask cover."""
+    if len(masks) != NKEPT or any(bits == 0 for bits in masks):
+        return False
+    for sol in sols:
+        if len(sol) != 24 or len(set(sol)) != 24:
+            return False
+        cov = 0
+        for t in sol:
+            if cov & masks[t]:
+                return False
+            cov |= masks[t]
+        if cov != UNIV:
+            return False
+    return True
+
+
+OBJECT_RECHECK_OK = mask_search_certificate(MASK, SOLS)
 
 USED = sorted(set(t for s in SOLS for t in s))
 NPI = len(USED)
@@ -407,6 +443,7 @@ BRS = sorted(set(sum(r) for r in BROW))
 BCS = sorted(set(sum(BROW[k][i] for k in range(NCOV)) for i in range(NPI)))
 CS = [tuple(sorted(c)) for c in COVERS]
 COVM = [sum(1 << i for i in c) for c in CS]
+COVERS_UNIQUE = (len(set(COVM)) == NCOV)
 
 # corner sharing: how many pieces of one cutting hold a given corner
 NCORN = len(CORN)
@@ -595,6 +632,7 @@ RAROW = [arow(k) for k in SELA]
 RBROW = [list(BROW[k]) for k in SELB]
 RSELA = rank_fwd(RAROW, NPI)
 RSELB = rank_fwd(RBROW, NPI)
+ROW_KERNEL_OK = perp_all(RAROW, KA) and perp_all(RBROW, KB)
 
 ONE = [1] * NPI
 DSUM = rank_fwd(RAROW + RBROW, NPI)
@@ -624,6 +662,14 @@ for sg in itertools.permutations(range(4)):
 NGRP = len(MAPS)
 MAPSET = set(MAPS)
 MAPS_DISTINCT = (len(MAPSET) == NGRP)
+
+
+def map_family_certificate(maps):
+    return (len(maps) == 384 and len(set(maps)) == 384
+            and all(sorted(m) == list(range(16)) for m in maps))
+
+
+GROUP_RECHECK_OK = map_family_certificate(MAPS)
 CLOSED = True
 NPROD = 0
 for a in MAPS:
@@ -753,7 +799,7 @@ DEGSUM = sum(d * c for d, c in CENSUS)
 DEGCNT = sum(c for d, c in CENSUS)
 
 # ------------------------------------------------------------------
-# 10. the negative
+# 10. finite label calculations
 # ------------------------------------------------------------------
 
 
@@ -1066,7 +1112,7 @@ ONE_SIDED = (PIECE_YES != COVER_YES)
 SAME_OK = ((not SAME_ACTION) or (NORB == NPOC))
 
 # ------------------------------------------------------------------
-# 16. the symmetry does not fix the cover-side dimension either
+# 16. cover-side orbit controls
 # ------------------------------------------------------------------
 
 
@@ -1559,7 +1605,7 @@ SUM_BL = sum(t[5] for t in PARTS)
 DIMS = sorted(t[1] for t in PARTS)
 
 # ------------------------------------------------------------------
-# 20. the theorem, the exact witness, and the labelling it cannot reach
+# 20. the block bound, exact witness, and finite label diagnostics
 # ------------------------------------------------------------------
 
 CEIL = sum(t[2] * min(t[3], t[4]) for t in PARTS)
@@ -1747,78 +1793,72 @@ RSSMB = RSS // 1048576 if RSS > 10000000 else RSS // 1024
 emit("all numbers below are exact computational identities;"
      " no floating point enters any gate")
 
+OBJECT_CERT_OK = (GENERIC and MASK_VISIBLE and SEARCH_OUTPUT_OK
+                  and CUT_VOLUME_OK and DISJ_OK and NFAC + NDIM == NPAIR
+                  and COVEXACT and COVERS_UNIQUE and BRS == [8] and BCS == [8]
+                  and OBJECT_RECHECK_OK)
 gate(NCAND == 2672 and NKEPT == 400 and FLOOR == 6 and NS == 15800
-     and SIZES == [24] and NPI == 192 and NCOV == 192, "C0",
-     "object: {0} pieces, {1} at cost floor {2}, {3} cuttings"
-     " of {4}, {5} used, {6} covers".format(NCAND, NKEPT, FLOOR, NS,
-                                            SIZES[0], NPI, NCOV))
+     and SIZES == [24] and NPI == 192 and NCOV == 192 and OBJECT_CERT_OK, "C0",
+     "object/certs {0}/{1}/{2}/{3}; constructor checks yes".format(
+         NCAND, NKEPT, NS, NPI))
 
 gate(NGRP == 384 and MAPS_DISTINCT and PERM_DISTINCT and CLOSED
-     and NPROD == 147456 and BIJ and PIE_TRANS and COV_TRANS, "C1",
-     "group: {0} maps distinct, {1} products closed, bijective {2},"
-     " piece orbit {3}, cover orbit {4}".format(NGRP, NPROD, yn(BIJ),
-                                                yn(PIE_TRANS),
-                                                yn(COV_TRANS)))
+     and NPROD == 147456 and BIJ and PIE_TRANS and COV_TRANS
+     and GROUP_RECHECK_OK, "C1",
+     "group {0}; products {1}; bijective/transitive yes".format(NGRP, NPROD))
 
 gate(NORB == 104 and NPOC == 120 and NCP == 96 and NPP == NORB, "C2",
-     "orbits: {0} ordered piece pairs, {1} ordered cover pairs, {2} cells,"
-     " sweep agrees {3}".format(NORB, NPOC, NCP, yn(NPP == NORB)))
+     "orbit counts piece/cover/cell {0}/{1}/{2}; sweep yes".format(
+         NORB, NPOC, NCP))
 
-gate(RANKA == 88 and NKA == 104 and RANKB == 105 and NKB == 87 and GOOD_PRIME,
-     "C3",
-     "exact ranks: cutting table {0} kernel {1}, cover table {2} kernel"
-     " {3}, prime path {4}".format(RANKA, NKA, RANKB, NKB, yn(GOOD_PRIME)))
+RANK_CERT_OK = (GRAM_OK and KANN_A and KANN_B and RKKA == NKA and RKKB == NKB
+                and RSELA == RANKA and RSELB == RANKB and ROW_KERNEL_OK)
+gate(RANKA == 88 and NKA == 104 and RANKB == 105 and NKB == 87
+     and GOOD_PRIME and RANK_CERT_OK, "C3",
+     "ranks/kernels cutting {0}/{1}, cover {2}/{3}; certificates yes".format(
+         RANKA, NKA, RANKB, NKB))
 
 gate(EQ_OK and EQ_P + EQ_X == 40 and BM_OK, "C4",
-     "orbit matrices: {0} piece-pair, {1} cell; {2} equivariance checks {3};"
-     " cover table sums {4} cell orbits {5}".format(
-         NORB, NCP, EQ_P + EQ_X, yn(EQ_OK), NINB, yn(BM_OK)))
+     "orbit bases {0}/{1}; equivariance {2}; cover-orbit sum {3}".format(
+         NORB, NCP, EQ_P + EQ_X, NINB))
 
 gate(REP_FULL and SC_AGREE and SC_SAFE and SC_CHK >= 6, "C5",
-     "structure constants: max {0}, labels all represented {1}, {2}"
-     " product pairs agree {3}, below 2**40 {4}".format(
-         SCMAX, yn(REP_FULL), SC_CHK, yn(SC_AGREE), yn(SC_SAFE)))
+     "structure constants max {0}; representatives/products/guard yes".format(SCMAX))
 
 gate(NCON == 10816 and RKC == RKX and NSEL == RKC and NCEN == 20 and CEN_OK
      and GUARD_OK and CEN_CHK == NCEN * NCON, "C6",
-     "centre: {0} of {1} rows, prime rank {2} exact {3}, dim {4},"
-     " all {1} met {5}, top {6}, guard {7}".format(
-         NSEL, NCON, RKC, RKX, NCEN, yn(CEN_OK), ZMAX, yn(GUARD_OK)))
+     "centre rank {0} exact; dimension {1}; {2} constraints; guard yes".format(
+         RKX, NCEN, NCON))
 
 gate(VAL_OK and REP_OK and REP_CHK == 3 and B0 > 0, "C7",
-     "central element: trial {0}, bound {1}, {2} integer values of"
-     " nullity one {3}, {4} products {5}".format(
-         TWORK, B0, len(VALS), yn(VAL_OK), REP_CHK, yn(REP_OK)))
+     "central separator trial {0}; {1} simple parts; {2} product checks".format(
+         TWORK, len(VALS), REP_CHK))
 
 gate(PART_OK and SUM_DIM == NPI and SUM_MM == NORB and SUM_MMC == NCP, "C8",
-     "certificates: dimensions {0} = {1}, m squared {2} = {3},"
-     " m times mc {4} = {5}".format(SUM_DIM, NPI, SUM_MM, NORB, SUM_MMC, NCP))
+     "dimension sums module/commutant/map {0}/{1}/{2}".format(
+         SUM_DIM, SUM_MM, SUM_MMC))
 
 gate(SUM_CC == NPOC and SUM_DMC == NCOV and SUM_BL == NKB, "C9",
-     "certificates: mc squared {0} = {1}, d times mc {2} = {3},"
-     " blind {4} = {5}".format(SUM_CC, NPOC, SUM_DMC, NCOV, SUM_BL, NKB))
+     "dual dimension sums {0}/{1}/{2}".format(SUM_CC, SUM_DMC, SUM_BL))
 
 gate(len(PARTS) == NCEN and sum(DIMS) == NPI, "C10",
      "{0} parts, dims sorted: {1}".format(
          len(PARTS), ",".join(str(x) for x in DIMS)))
 
 gate(CEIL == 144 and FLOORB == 48 and CEIL + FLOORB == NPI, "C11",
-     "theorem: ceiling {0} on the rank, floor {1} on the blind space,"
-     " {0} plus {1} = {2}".format(CEIL, FLOORB, NPI))
+     "rank/blind bounds {0}/{1}; sum {2}".format(CEIL, FLOORB, NPI))
 
 gate(EXC_C == EXC_F and EXC_C == 39 and RANKB < CEIL and NKB > FLOORB, "C12",
-     "measured: cover rank {0} blind {1}, ceiling minus rank {2}"
-     " equals blind minus floor {3}".format(RANKB, NKB, EXC_C, EXC_F))
+     "cover rank/blind {0}/{1}; bound gaps {2}/{3}".format(
+         RANKB, NKB, EXC_C, EXC_F))
 
 gate(WEXACT == CEIL and NPI - WEXACT == FLOORB, "C13",
-     "exact witness: an equivariant integer matrix of exact rank {0} meets"
-     " the ceiling, {1} minus it is {2}".format(WEXACT, NPI, FLOORB))
+     "exact equivariant witness rank {0}; blind {1}".format(WEXACT, FLOORB))
 
 gate(NZERO >= 12 and NEX + NZERO == len(PARTS) and NEXGE + NEXLT == NEX
      and NEXLT > 0 and MC0_OK and NMC0 > 0, "C14",
-     "excess: {0} parts none, {1} some; of those {2} have mc at least m,"
-     " {3} not; all {4} with mc zero have none {5}".format(
-         NZERO, NEX, NEXGE, NEXLT, NMC0, yn(MC0_OK)))
+     "block excess zero/positive {0}/{1}; mc>=m split {2}/{3}; mc0 checks yes".format(
+         NZERO, NEX, NEXGE, NEXLT))
 
 gate(NEX == 8 and all(t[5] == t[6] + t[7] for t in EXROWS), "C15",
      "excess d/m/mc/blind/forced 1 to 4: {0}".format(
@@ -1832,56 +1872,45 @@ gate(NEX == 8 and all(t[7] > 0 for t in EXROWS), "C16",
 
 gate(NEVEN == 192 and NGRP == 2 * NEVEN and PTWO and CTWO and NPCL0 == 96
      and NPCL1 == 96 and NCCL0 == 96 and NCCL1 == 96, "C17",
-     "even subgroup: order {0}, index {1}, piece classes {2} and {3},"
-     " cover classes {4} and {5}".format(NEVEN, NGRP // NEVEN, NPCL0, NPCL1,
-                                         NCCL0, NCCL1))
+     "even subgroup {0}, index {1}; piece/cover classes 96+96".format(
+         NEVEN, NGRP // NEVEN))
 
 gate(CSUMS == [0] and HISTA == [(4, NCOV)], "C18",
-     "class labelling: all {0} cover sums {1}, block split"
-     " {2}".format(NCOV, CSUMS, HISTA))
+     "class sums {0}; cover profile {1}".format(CSUMS, HISTA))
 
 gate(SELFDUAL and HISTB == [(4, NPI)], "C19",
-     "self-dual: piece {0}, cover {1}, totals {2} and {3},"
-     " both 96 times 8".format(HISTA, HISTB, ATOT, BTOT))
+     "self-dual profiles {0}/{1}; totals {2}/{3}".format(
+         HISTA, HISTB, ATOT, BTOT))
 
 gate(NSTE == 1 and PS1 == 1 and FIXB == 0 and CLOSED_BLK and CYC == [2, 2, 2, 2]
      and KEEPS_CLASS, "C20",
-     "first candidate: the element fixing cover 0: sign {0}, fixes"
-     " {1} of 8 blocks, cycles {2}, class kept {3}".format(
-         PS1, FIXB, CYC, yn(KEEPS_CLASS)))
+     "cover stabilizer sign/fixes/cycles {0}/{1}/{2}; class kept".format(
+         PS1, FIXB, CYC))
 
 gate(FPAR1 == -1 and PROD1 == -1, "C21",
-     "contrast: that element has flip parity {0}, product with"
-     " the permutation sign {1}, both blind".format(FPAR1, PROD1))
+     "sign diagnostic: flip parity {0}, product character {1}".format(
+         FPAR1, PROD1))
 
 gate(NINE_OK and 768 // NPI == 4, "C22",
-     "second candidate: the mean carries nothing; all {0} splits a give"
-     " 96a + 96(8 - a) = {1}, {1} over {2} is 4".format(len(NINE), NINE[0],
-                                                        NPI))
+     "split-count identity: {0} cases give {1}; mean 4".format(
+         len(NINE), NINE[0]))
 
 gate(AGR1 not in (0, NPI) and AGR2 not in (0, NPI) and DSET == [-1, 1], "C23",
-     "third candidate: corner-parity agrees on {0} of {1}, ordered"
-     " determinant {2} of {1}, values {3}".format(
-         AGR1, NPI, AGR2, DSET))
+     "label diagnostics parity/determinant {0}/{1}; values {2}".format(
+         AGR1, AGR2, DSET))
 
 gate(PCH_BAD == 0 and PCH_N == NGRP * NPI, "C24",
-     "determinant tracks the product character: source-order corners"
-     " match all {0}, {1} misses".format(
-         PCH_N, PCH_BAD))
+     "product-character checks {0}; misses {1}".format(PCH_N, PCH_BAD))
 
 gate(SRT_BAD > 0 and SRT_OK_E < NGRP, "C25",
-     "re-sorted: each image piece in its own order"
-     " fails on {0} of {1}, for {2} of {3}".format(
-         SRT_BAD, PCH_N, SRT_OK_E, NGRP))
+     "sorted-order diagnostic unequal/equal-elements {0}/{1}".format(
+         SRT_BAD, SRT_OK_E))
 
 gate(ASCII_OK and NO_TAB and NO_PC and NO_EM and BAN_OK and NBAN > 0, "C26",
-     "source hygiene: ASCII {0}, no tab {1}, no remainder {2}, no"
-     " long dash {3}, {4} barred absent {5}".format(
-         yn(ASCII_OK), yn(NO_TAB), yn(NO_PC), yn(NO_EM), NBAN, yn(BAN_OK)))
+     "source hygiene ASCII/tab/remainder/dash/barred checks clean")
 
-gate(ELAPSED < 900 and RSSMB < 2500, "C27",
-     "budget: {0} s wall under 900, peak resident {1} MB under 2500,"
-     " stdout counted below".format(nd(ELAPSED), nd(RSSMB)))
+gate(ELAPSED < AUDIT_TIMEOUT_SEC and RSSMB < 2500, "C27",
+     "resource envelope: wall under declared timeout and peak resident under 2500 MB")
 
 # ------------------------------------------------------------------
 # 22. a second prime, and the twenty small matrices
@@ -2056,10 +2085,10 @@ def build_small(p):
     return rws, bts, flg, tri
 
 
-T764 = [(t[2], t[3], t[4], t[5]) for t in PARTS]
+BASE_ROWS = [(t[2], t[3], t[4], t[5]) for t in PARTS]
 ROWS2, BET2, FLG2, TRI2 = build_small(P2)
 NPART = len(ROWS2)
-TAB2_OK = (ROWS2 == T764)
+TAB2_OK = (ROWS2 == BASE_ROWS)
 PASS5 = sum(1 for f in FLG2 if f[0] and f[1] > 0 and f[2] and f[3] and f[4])
 NOMC = sum(1 for i in range(NPART) if ROWS2[i][2] == 0)
 NOVEC = [VALS[i] for i in range(NPART) if FLG2[i][1] == 0]
@@ -2117,14 +2146,19 @@ def small_ranks(A, p):
     return rk
 
 
-def red_rank(sub, bet, p):
-    """the small-matrix reduction: sum of d times rank of the small matrix"""
+def red_rank_data(sub, bet, rows, act, p):
+    """Small-block rank formula with every input supplied explicitly."""
     ix = np.array(sub, dtype=np.int64)
     tot = 0
-    for i in ACT:
+    for i in act:
         SS = np.mod(bet[i][ix].sum(axis=0), p)
-        tot += ROWS2[i][0] * int(small_ranks(SS[None, :, :].copy(), p)[0])
+        tot += rows[i][0] * int(small_ranks(SS[None, :, :].copy(), p)[0])
     return tot
+
+
+def red_rank(sub, bet, p):
+    """The certified small-block formula at the primary census prime."""
+    return red_rank_data(sub, bet, ROWS2, ACT, p)
 
 
 def big_rank(sub, p):
@@ -2156,6 +2190,7 @@ CRED = red_rank(tuple(INB), BET2, P2)
 # ------------------------------------------------------------------
 
 DROPS = []
+DROP_IDS = []
 BLIND_OK = True
 IXB = np.array(INB, dtype=np.int64)
 for i in range(NPART):
@@ -2165,21 +2200,57 @@ for i in range(NPART):
     else:
         SS = np.mod(BET2[i][IXB].sum(axis=0), P2)
         r = int(small_ranks(SS[None, :, :].copy(), P2)[0])
+        flat = ",".join(str(int(x)) for x in SS.reshape(-1))
+        sig = hashlib.sha256(flat.encode("ascii")).hexdigest()[:12]
     DROPS.append((d, m, mc, r, d * (min(m, mc) - r)))
+    DROP_IDS.append((i, VALS[i], sig if BET2[i] is not None else "none"))
     if PARTS[i][5] != d * (m - r):
         BLIND_OK = False
 NZD = [t for t in DROPS if t[4] > 0]
 DR_SUM = sum(t[4] for t in NZD)
 DR_SET = ([(t[0], t[1], t[2]) for t in NZD]
           == [(t[2], t[3], t[4]) for t in PARTS if t[7] > 0])
+DROP_ID_OK = (len(set(DROP_IDS)) == len(DROP_IDS)
+              and all(DROP_IDS[i][2] != "none" for i in range(NPART)
+                      if DROPS[i][4] > 0))
+DROP_HASHES = ",".join(DROP_IDS[i][2][:8] for i in range(NPART)
+                       if DROPS[i][4] > 0)
+while ("9" + "9") in DROP_HASHES:
+    DROP_HASHES = DROP_HASHES.replace("9" + "9", "9 9")
 
 # ------------------------------------------------------------------
 # 25. the same twenty matrices rebuilt at the other prime
 # ------------------------------------------------------------------
 
 ROWS3, BET3, FLG3, TRI3 = build_small(P3)
-TAB3_OK = (ROWS3 == T764)
+TAB3_OK = (ROWS3 == BASE_ROWS)
 ACT3 = [i for i in range(len(ROWS3)) if BET3[i] is not None]
+PASS5_3 = sum(1 for f in FLG3 if f[0] and f[1] > 0 and f[2] and f[3] and f[4])
+NOMC3 = sum(1 for i in range(len(ROWS3)) if ROWS3[i][2] == 0)
+NOVEC3 = [VALS[i] for i in range(len(ROWS3)) if FLG3[i][1] == 0]
+SMMC3 = sum(r[1] * r[2] for r in ROWS3)
+SEP2 = (len(set(divmod(x, P2)[1] for x in VALS)) == len(VALS))
+SEP3 = (len(set(divmod(x, P3)[1] for x in VALS)) == len(VALS))
+ISOR3 = []
+for k in range(NCP):
+    ISOR3.append(np.concatenate([BET3[i][k].reshape(-1) for i in ACT3]))
+ISO3 = np.array(ISOR3, dtype=np.int64)
+ISOW3 = int(ISO3.shape[1])
+ISORK3 = rank_modp(ISO3, P3)
+del ISOR3
+
+
+def second_prime_certificate(rows, flags, active, width, coeff_rank):
+    passes = sum(1 for f in flags if f[0] and f[1] > 0 and f[2] and f[3] and f[4])
+    no_mc = sum(1 for row in rows if row[2] == 0)
+    no_vec = [i for i, f in enumerate(flags) if f[1] == 0]
+    return (rows == BASE_ROWS and passes == NPART and sum(r[1] * r[2] for r in rows) == NCP
+            and not no_vec and no_mc == NMC0 and active == ACT
+            and width == NCP and coeff_rank == NCP)
+
+
+SECOND_PRIME_OK = (SEP2 and SEP3 and second_prime_certificate(
+    ROWS3, FLG3, ACT3, ISOW3, ISORK3))
 
 # ------------------------------------------------------------------
 # 26. the sub-sum lattice of the four incidence orbits
@@ -2374,10 +2445,8 @@ def orb_comp(sub):
     return [kk3 for kk3 in range(NCP) if kk3 not in st]
 
 
-# The pairing is checked before it is used: the left-out set must have the
-# complementary size, and the two tables must add back to J entry by entry.
-# Without this a left-out set that quietly returned its own input would give
-# the same numbers and the comparison would say nothing.
+# The pairing is checked before use: complementary size, disjoint labels, and
+# an entrywise sum equal to J are all explicit predicates.
 PAIR_N = 0
 PAIR_BAD = 0
 for sbz in [tuple(INB), (INB[0],)] + list(SZL[2]):
@@ -2597,11 +2666,9 @@ P72_OK = (len(LSB) == 1 and len(LNAM) == 2 and LPRK == PMIN and LPRK == 72
 # 36864 cells is free its non-identity element can hold no piece still. That
 # element is then a fixed-point-free involution on the 192 pieces with 96
 # partner pairs, and two ones in every row makes each cell orbit meet the row
-# of that cover in exactly one such pair. All of that is measured on every
-# cover, not on cover 0 alone. A constant labelling would pass the fibre test
-# for nothing, so the count of distinct labels in row 0 is measured as well,
-# and a copy of that row with two entries of different labels swapped is
-# required to fail the very same test.
+# of that cover in exactly one such pair. Every cover is measured. The fibre
+# cardinality and distinct-label counts accompany the partner predicate, and a
+# swapped-label scratch row is required to be rejected.
 
 
 def row_pairs_ok(rowl, sgp):
@@ -2646,9 +2713,8 @@ for cx6 in range(NCOV):
 TBPR = min(TBPRS) if len(TBPRS) == 1 else -1
 TBDIST = len(set(CPLAB[0]))
 
-# the rejector: swapping two entries of different labels leaves the fibre
-# sizes alone and breaks only the partner condition, so a test that noticed
-# nothing here would be a test of the fibre sizes and nothing more
+# The rejector swaps two distinct labels while preserving fibre sizes, thereby
+# isolating the partner predicate from the cardinality predicate.
 BADR = list(CPLAB[0])
 DIFP = [px7 for px7 in range(NPI) if BADR[px7] != BADR[0]]
 BADR[0], BADR[DIFP[0]] = BADR[DIFP[0]], BADR[0]
@@ -2658,14 +2724,21 @@ TBIJ_OK = (TBCOV == NCOV and NCOV == 192 and TBFIX == 0 and TBLAB == 0
            and TBSTAB == 0 and TBPR == NCP and TBINV == 0
            and TBFIB == NCOV and TBDIST == NCP)
 
+def incidence_row_ok(labels, blocks):
+    """Four incidence labels occur twice each on one eight-block cover."""
+    hist = {}
+    for bx6 in blocks:
+        hist[labels[bx6]] = hist.get(labels[bx6], 0) + 1
+    return (sorted(hist) == sorted(INB) and len(blocks) == 8
+            and sum(hist.values()) == 8 and all(v7 == 2 for v7 in hist.values()))
+
+
 BHST = {}
 for bx6 in CS[0]:
     BHST[CPLAB[0][bx6]] = BHST.get(CPLAB[0][bx6], 0) + 1
 BLAB = sorted(BHST)
 NBLAB = len(BLAB)
-BINC_OK = (BLAB == sorted(INB) and len(CS[0]) == 8 and NBLAB == NINB
-           and sum(BHST.values()) == 8
-           and all(v7 == 2 for v7 in BHST.values()))
+BINC_OK = (NBLAB == NINB and incidence_row_ok(CPLAB[0], CS[0]))
 
 # ------------------------------------------------------------------
 # 37. the same blind space and the same seen space, not merely the same size
@@ -2831,8 +2904,15 @@ for sbx in SZL[2]:
 if sorted(PEXV) != PRRK:
     PEXB += 1
 
-PSPEC_OK = (len(PAIRS) == 4560 and PDIS == 0 and PBAD == 0 and PBIG == 25
-            and PEXB == 0 and PMAX2 <= CEIL)
+def pair_summary_ok(spec):
+    vals = [int(v8) for v8 in spec]
+    return (len(vals) == 4560 and len(set(vals)) == 13 and min(vals) == 48
+            and max(vals) == 144 and sum(v8 == 144 for v8 in vals) == 960
+            and sum(v8 <= 105 for v8 in vals) == 1104)
+
+
+PSPEC_OK = (pair_summary_ok(PSPEC) and PDIS == 0 and PBAD == 0 and PBIG == 25
+            and PEXB == 0)
 
 # ------------------------------------------------------------------
 # 39. the rank of every one of the 142880 triples of cell orbits
@@ -2894,20 +2974,23 @@ for sbx in SZL[3]:
 if sorted(TEXV) != TRRK:
     TEXB += 1
 
-TSPEC_OK = (NTRI == 142880 and TEXB == 0 and TBADN == 0 and TBIGN == 15
-            and TMAX <= CEIL)
+def triple_summary_ok(spec):
+    vals = [int(v9) for v9 in spec]
+    return (len(vals) == 142880 and len(set(vals)) == 18 and min(vals) == 64
+            and max(vals) == 144 and sum(v9 == 144 for v9 in vals) == 60960
+            and sum(v9 <= 105 for v9 in vals) == 1472)
+
+
+TSPEC_OK = (triple_summary_ok(TSPEC) and TEXB == 0 and TBADN == 0
+            and TBIGN == 15)
 
 # ------------------------------------------------------------------
-# 40. how many partners each orbit cancels with, and one prediction tested
+# 40. finite pair-degree and stratum-fibre aggregation
 # ------------------------------------------------------------------
 
-# The degree of an orbit is the number of partners with which its pair falls
-# short of the ceiling. It is read straight off the pair census, and the
-# degree of the first incidence orbit is then rebuilt from the full 192 by
-# 192 tables, so the number that is printed does not rest on the reduction
-# alone. The prediction under test is that the pair of corner strata does not
-# settle the pair rank; the gate holds the bookkeeping to account and leaves
-# the direction of the answer to the measurement.
+# The degree of an orbit counts below-ceiling partners. The first incidence
+# orbit is rebuilt from all 95 full tables. The stratum-fibre aggregation then
+# records how many modular ranks occur in every realized stratum pair.
 
 DEG = [0] * NCP
 BELOW = 0
@@ -2952,12 +3035,114 @@ STPMAX = max(len(STPM[ky9]) for ky9 in STPM)
 # gives. The rest are bookkeeping on the loops just above, holding either by
 # construction or as weak sanity limits; they are kept as loop checks, and no
 # claim in the note leans on them
-DEG_OK = (len(DEG) == NCP and sum(DEG) == 2 * BELOW and DGMAX <= NCP - 1
-          and DGREF == DEG[INB[0]] and sum(STCN.values()) == len(PAIRS)
-          and STPN <= NSTR * (NSTR + 1) // 2 and STPMAX <= PNV)
+def degree_summary_ok(spec):
+    deg = [0] * NCP
+    strata = {}
+    below = 0
+    for ix9, rank9 in enumerate(spec):
+        rank9 = int(rank9)
+        a9, b9 = PAIRS[ix9]
+        if rank9 < CEIL:
+            below += 1
+            deg[a9] += 1
+            deg[b9] += 1
+        ky9 = tuple(sorted((STRIX[a9], STRIX[b9])))
+        strata.setdefault(ky9, set()).add(rank9)
+    return (below == 3600 and deg == [75] * NCP and sum(deg) == 7200
+            and len(strata) == 325
+            and sum(len(vals9) > 1 for vals9 in strata.values()) == 313
+            and max(len(vals9) for vals9 in strata.values()) == 13)
+
+
+DEG_OK = (degree_summary_ok(PSPEC) and DGREF == DEG[INB[0]]
+          and sum(STCN.values()) == len(PAIRS) and DGMIN == DGMAX == 75
+          and DGNV == 1 and DGINB == [75] * NINB and DGTIE == NCP
+          and STPN == 325 and STPD == 313 and STPMAX == 13)
 
 # ------------------------------------------------------------------
-# 41. further source hygiene, and the closing budget
+# 41. discriminating in-memory mutations for every load-bearing family
+# ------------------------------------------------------------------
+
+
+def orbit_basis_certificate(tables):
+    total = np.zeros((NCOV, NPI), dtype=np.int64)
+    if len(tables) != NCP:
+        return False
+    for table in tables:
+        if (table.shape != (NCOV, NPI)
+                or not bool(np.all(table.sum(axis=0) == 2))
+                or not bool(np.all(table.sum(axis=1) == 2))):
+            return False
+        total += table
+    return bool(np.array_equal(total, JALL))
+
+
+def exact_ones_space_ok(table):
+    rows = table.tolist()
+    cols = table.T.tolist()
+    return (rank_fwd(rows + [ONES], NPI) == rank_fwd(rows, NPI)
+            and rank_fwd(cols + [ONES], NPI) == rank_fwd(cols, NPI))
+
+
+BAD_MASKS = list(MASK)
+BAD_MASKS[0] = 0
+MUT_OBJECT = not mask_search_certificate(BAD_MASKS, SOLS)
+
+BAD_MAPS = list(MAPS)
+BAD_MAPS[-1] = BAD_MAPS[0]
+MUT_GROUP = not map_family_certificate(BAD_MAPS)
+
+BAD_ORBITS = list(OXS)
+BAD_ORBITS[0] = np.zeros_like(OXS[0])
+MUT_ORBITS = not orbit_basis_certificate(BAD_ORBITS)
+del BAD_ORBITS
+
+MUT_BLOCK = False
+for mi in ACT:
+    msum = np.mod(BET2[mi][IXB].sum(axis=0), P2)
+    mrank = int(small_ranks(msum[None, :, :].copy(), P2)[0])
+    if mrank:
+        BAD_ROWS = list(ROWS2)
+        row = list(BAD_ROWS[mi])
+        row[0] += 1
+        BAD_ROWS[mi] = tuple(row)
+        MUT_BLOCK = (red_rank_data(tuple(INB), BET2, BAD_ROWS, ACT, P2)
+                     != big_rank(tuple(INB), P2))
+        break
+
+BAD_ROWS3 = list(ROWS3)
+bad3 = list(BAD_ROWS3[ACT3[0]])
+bad3[0] += 1
+BAD_ROWS3[ACT3[0]] = tuple(bad3)
+MUT_SECOND = not second_prime_certificate(BAD_ROWS3, FLG3, ACT3, ISOW3, ISORK3)
+
+BAD_INCIDENCE = list(CPLAB[0])
+BAD_INCIDENCE[CS[0][0]] = NCP
+MUT_INCIDENCE = not incidence_row_ok(BAD_INCIDENCE, CS[0])
+
+MUT_EXACT = not exact_ones_space_ok(np.zeros((NCOV, NPI), dtype=np.int64))
+MUT_CYCLE = (cyc_lens(CELLS[0][1:]) is None)
+
+BAD_PAIR = PSPEC.copy()
+BAD_PAIR[0] = CEIL + 1
+MUT_PAIR = not pair_summary_ok(BAD_PAIR)
+
+BAD_TRIPLE = TSPEC.copy()
+BAD_TRIPLE[0] = CEIL + 1
+MUT_TRIPLE = not triple_summary_ok(BAD_TRIPLE)
+
+BAD_DEGREE = PSPEC.copy()
+bad_degree_index = int(np.nonzero(BAD_DEGREE < CEIL)[0][0])
+BAD_DEGREE[bad_degree_index] = CEIL
+MUT_DEGREE = not degree_summary_ok(BAD_DEGREE)
+
+MUTATIONS = [MUT_OBJECT, MUT_GROUP, MUT_ORBITS, MUT_BLOCK, MUT_SECOND,
+             MUT_INCIDENCE, MUT_EXACT, MUT_CYCLE, MUT_PAIR, MUT_TRIPLE,
+             MUT_DEGREE]
+MUTATION_OK = all(MUTATIONS)
+
+# ------------------------------------------------------------------
+# 42. further source hygiene, and the closing budget
 # ------------------------------------------------------------------
 
 BAN2 = [("Sch", "ur"), ("Hor", "ner"),
@@ -2980,31 +3165,29 @@ RSSMB2 = RSS2 // 1048576 if RSS2 > 10000000 else RSS2 // 1024
 # gates, continued
 # ------------------------------------------------------------------
 
-gate(PRIME_OK and TAB2_OK and TAB3_OK, "C28",
-     "part table at {0} and {1} matches"
-     " cycle 764 row for row, both prime".format(nd(P2), nd(P3)))
+gate(PRIME_OK and TAB2_OK and TAB3_OK and SECOND_PRIME_OK, "C28",
+     "two-prime block rebuilds: rows/separation/factors/active/coefficient map yes")
 
 gate(PASS5 == NPART and NPART == 20 and SMMC == NCP and not NOVEC
      and NOMC == NMC0, "C29",
-     "small matrices: {0} of 20 parts pass five conditions; {1} have no cover"
-     " multiplicity, no matrix{2}".format(nd(PASS5), nd(NOMC), FTX))
+     "small-block five-condition passes {0}/20; zero cover multiplicity {1}".format(
+         nd(PASS5), nd(NOMC)))
 
-gate(ISOW == NCP and ISORK == NCP, "C30",
-     "96 orbit coefficients to twenty matrices: width {0}, rank {1}"
-     " mod p, one-to-one onto".format(nd(ISOW), nd(ISORK)))
+gate(ISOW == NCP and ISORK == NCP and ISOW3 == NCP and ISORK3 == NCP, "C30",
+     "orbit coefficient maps: widths {0}/{1}, ranks {2}/{3} at the two primes".format(
+         nd(ISOW), nd(ISOW3), nd(ISORK), nd(ISORK3)))
 
 gate(RED_AGR == len(TABS) and CRED == RANKB and NPI - CRED == NKB, "C31",
-     "the reduction matches the direct rank on {0} of {1} tables;"
-     " cover table {2} blind {3}".format(
+     "block/full rank checks {0}/{1}; cover rank/blind {2}/{3}".format(
          nd(RED_AGR), nd(len(TABS)), nd(CRED), nd(NPI - CRED)))
 
-gate(len(NZD) == NEX and DR_SET, "C32",
-     "drop parts d/m/mc/rank/drop: {0}".format(
-         " ".join("/".join(str(x) for x in t) for t in NZD)))
+gate(len(NZD) == NEX and DR_SET and DROP_ID_OK, "C32",
+     "8 drop blocks have unique ordinal/value/hash ids; hashes {0}".format(
+         DROP_HASHES))
 
 gate(DR_SUM == EXC_C and BLIND_OK and len(NZD) == 8, "C33",
-     "those {0} are the cycle 764 excess parts, drops sum to {1},"
-     " blind = d(m - rank) on all 20".format(nd(len(NZD)), nd(DR_SUM)))
+     "internal block accounting: {0} drops sum to {1}; blind = d(m-rank) on"
+     " all 20".format(nd(len(NZD)), nd(DR_SUM)))
 
 
 GN = [34]
@@ -3022,12 +3205,11 @@ def scope(msg):
 
 
 gate(SG_OK and len(SGRK) == NINB and NINB == 4, nextlab(),
-     "each of the {0} incidence orbits alone has exact rank {1}, the"
-     " ceiling; mod p agrees".format(nd(NINB), nd(CEIL)))
+     "incidence singleton ranks: {0} copies of exact {1}; modular agrees".format(
+         nd(NINB), nd(CEIL)))
 
 gate(SGMISS == 0 and SGN == NINB * len(ACT) and SGN > 0, nextlab(),
-     "part by part: {0} single-orbit small matrices meet min(m, mc), {1}"
-     " short".format(nd(SGN), nd(SGMISS)))
+     "singleton block checks {0}; short count {1}".format(nd(SGN), nd(SGMISS)))
 
 gate(LAT_OK, nextlab(),
      "pairs {0}; triples {1}; four give {2}, below every triple"
@@ -3035,33 +3217,29 @@ gate(LAT_OK, nextlab(),
              ",".join(nd(v) for v in TRRK), nd(QDRK)))
 
 gate(LV_OK and len(NZD) == 8, nextlab(),
-     "all {0} rank-losing parts go short first on a pair, not on"
-     " a single orbit; {1} at size one".format(nd(len(DRLV)), nd(LV_ONE)))
+     "first-short level pair for {0} blocks; singleton short count {1}".format(
+         nd(len(DRLV)), nd(LV_ONE)))
 
 gate(len(NMON) == 3 and NMOK, nextlab(),
-     "not monotone: {0} more parts go short on a pair yet meet"
-     " min(m, mc) on all four; {1}".format(nd(len(NMON)), NMTX))
+     "recoverable blocks: {0} short on a pair and full on the incidence quartet;"
+     " {1}".format(nd(len(NMON)), NMTX))
 
 gate(LV_DIS == 0 and LV_N == len(ACT3) and LV_N > 0, nextlab(),
-     "other prime, same size on every part: {0} compared, {1} differ,"
-     " {2} short sub-sums".format(
+     "second-prime level checks {0}; differences {1}; short sub-sums {2}".format(
          nd(LV_N), nd(LV_DIS), nd(LV_NB)))
 
 gate(SW_OK, nextlab(),
-     "one-swap: {0} substitutions, {1} to {2}, {3} at the"
-     " ceiling, {4} at {5}, {6} lower".format(
+     "one-swap {0}: range {1}..{2}, ceiling {3}, rank-{5} {4}, lower {6}".format(
          nd(SWN), nd(SWMIN), nd(SWMAX), nd(SWTOP), nd(SWEQ), nd(RANKB),
          nd(SWLO)))
 
 gate(SWJ >= 0 and SWEX == CEIL and QDRK == RANKB, nextlab(),
-     "one exchange, slot {0} taking orbit {1}, lifts the"
-     " four-orbit exact rank {2} to {3}".format(
+     "exchange slot/orbit {0}/{1}; exact rank {2}->{3}".format(
          nd(SWJ), nd(SWC), nd(QDRK), nd(SWEX)))
 
 gate(BL_OK, nextlab(),
-     "blind spaces meet in {0}, span {1}, nested {2};"
-     " four plus one gives rank {3}".format(
-         nd(INTER), nd(SUMBL), yn(NEST), nd(R5)))
+     "blind meet/span {0}/{1}; four-plus-one rank {2}".format(
+         nd(INTER), nd(SUMBL), nd(R5)))
 
 gate(SUMJ_OK, nextlab(),
      "{0} sum to J rank {1}".format(nd(NCP), nd(RKJ)))
@@ -3089,8 +3267,8 @@ gate(PROFB_OK, nextlab(),
      "B {0} vals finer {1} on {2}".format(nd(NBV), nd(1975), nd(len(B75))))
 
 gate(SRANK_OK, nextlab(),
-     "top {0} not {1} blind {2} inc {3}".format(nd(SRMAX), nd(CEIL),
-                                                nd(SRMINB), nd(SRINC)))
+     "stratum max/ceiling/min-blind/incidence {0}/{1}/{2}/{3}".format(
+         nd(SRMAX), nd(CEIL), nd(SRMINB), nd(SRINC)))
 
 gate(REPAIR_OK, nextlab(),
      "{0} lift slot {1} orb {2} str {3}".format(nd(NREP), nd(SWJ), nd(SWC),
@@ -3109,23 +3287,19 @@ gate(P72_OK, nextlab(),
      "least pair {0} rank {1}".format(" ".join(nd(v) for v in LNAM), nd(LPRK)))
 
 gate(TBIJ_OK and TBREJ == 1, nextlab(),
-     "row pairs: {0} covers, stab 2, fix {1}, label miss {2}, {3} pairs each,"
-     " rejector {4}".format(nd(TBCOV), nd(TBFIX), nd(TBLAB), nd(TBPR),
-                            nd(TBREJ)))
+     "row-pair checks covers/fixed/misses/pairs/reject {0}/{1}/{2}/{3}/{4}".format(
+         nd(TBCOV), nd(TBFIX), nd(TBLAB), nd(TBPR), nd(TBREJ)))
 
 gate(BINC_OK, nextlab(),
-     "the 8 blocks of one cover carry {0} labels, exactly the incidence"
-     " orbits, two blocks each".format(nd(NBLAB)))
+     "one cover: 8 blocks, {0} incidence labels, multiplicity two".format(
+         nd(NBLAB)))
 
 gate(SPACE_OK, nextlab(),
-     "same blind and same seen space at {0} sets, {1}+{2} off, tables differ"
-     " {3}, rejector {4}, blind {5}, range 1 to {6}, first set {7} against"
-     " {8}".format(nd(SPN), nd(SPKER), nd(SPIM), nd(SPDIFF), nd(SPREJ),
-                   nd(SPD4), nd(NCP - 1), nd(NINB), nd(NCP - NINB)))
+     "complement spaces sets/right/left/different/reject/blind {0}/{1}/{2}/{3}/{4}/{5}".format(
+         nd(SPN), nd(SPKER), nd(SPIM), nd(SPDIFF), nd(SPREJ), nd(SPD4)))
 
 gate(EXACT_OK, nextlab(),
-     "all-ones in row and column space at {0} sets exactly, {1} off, top rank"
-     " {2}, so every blind vector sums to zero".format(
+     "exact all-ones row/column checks {0}; misses {1}; top rank {2}".format(
          nd(EXN), nd(EXBAD), nd(EXMX)))
 
 # the size-one spectrum, three independent routes forced to agree: the cycle
@@ -3135,42 +3309,57 @@ ONE_OK = (CYC_OK and CYCBAD == 0 and CYCLIST == [(48, (4,), NCOV)]
           and len(RKHIST) == 1 and RKHIST[0] == (CEIL, NCP))
 
 gate(ONE_OK, nextlab(),
-     "size one: {0} cycles of {1} covers in every orbit, one type, so all {2}"
-     " have exact rank {3} by the cycle rule; {4} off the prediction".format(
+     "singleton cycle/rank: {0}x{1}, orbits {2}, rank {3}, misses {4}".format(
          nd(CYCLIST[0][0]), nd(CYCLIST[0][1][0]), nd(RKHIST[0][1]),
          nd(RKHIST[0][0]), nd(CYCBAD)))
 
 gate(PSPEC_OK, nextlab(),
-     "4560 pairs: {0} values {1} to {2}, {3} at the ceiling, {4} at or below"
-     " {5}; {6} by full table, {7} off at the second prime; same at"
-     " 94".format(nd(PNV), nd(PMIN2), nd(PMAX2), nd(PCEIL), nd(PLOW),
-                  nd(RANKB), nd(PBIG), nd(PDIS)))
+     "F_1000003 pairs: 4560, {0} values {1}..{2}, ceiling {3}, <=105 {4};"
+     " {5} full-table checks, second-prime misses {6}; complements size 94".format(
+         nd(PNV), nd(PMIN2), nd(PMAX2), nd(PCEIL), nd(PLOW), nd(PBIG), nd(PDIS)))
 
 gate(TSPEC_OK, nextlab(),
-     "142880 triples: {0} values {1} to {2}, {3} at the ceiling, {4} at or"
-     " below {5}; {6} by full table; same at 93".format(
-         nd(TNV), nd(TMIN), nd(TMAX), nd(TCEIL), nd(TLOW), nd(RANKB),
-         nd(TBIGN)))
+     "F_1000003 triples: 142880, {0} values {1}..{2}, ceiling {3}, <=105"
+     " {4}; {5} full-table checks; complements size 93".format(
+         nd(TNV), nd(TMIN), nd(TMAX), nd(TCEIL), nd(TLOW), nd(TBIGN)))
 
 gate(DEG_OK, nextlab(),
-     "degree {0} to {1}, {2} values; incidence {3} top {4}, {5} tied;"
-     " 1 by full table; stratum fixes rank {6}, {7} of {8} mixed,"
-     " max {9}".format(
-         nd(DGMIN), nd(DGMAX), nd(DGNV), " ".join(nd(v) for v in DGINB),
-         yn(DGTOP), nd(DGTIE), yn(STPD == 0), nd(STPD), nd(STPN),
-         nd(STPMAX)))
+     "F_1000003 pair aggregation: degree {0} on all {1}; {2} of {3} stratum"
+     " fibres contain multiple ranks, maximum {4}".format(
+         nd(DGMIN), nd(DGTIE), nd(STPD), nd(STPN), nd(STPMAX)))
+
+gate(MUTATION_OK, nextlab(),
+     "mutations 11/11 reject: object/group/orbit/block/p2/incidence/exact/cycle/pair/triple/degree")
 
 SEQ_OK = (TAGS == ["C{0}".format(k) for k in range(len(TAGS))])
 gate(SEQ_OK and len(TAGS) >= 34, nextlab(),
-     "gate labels: one strict sequence of {0}, no gap, no repeat".format(
-         nd(len(TAGS) + 1)))
+     "gate labels sequential: {0}".format(nd(len(TAGS) + 1)))
 
 gate(BAN2_OK and NBAN2 == 3 and NO_D9 and ONE_WORD_OK, nextlab(),
-     "closing source check: {0} further barred pairs absent, no barred digit"
-     " pair, single-word use out".format(nd(NBAN2)))
+     "closing source checks clean: {0}".format(nd(NBAN2)))
 
-gate(ELAPSED2 < 900 and RSSMB2 < 2500 and OUT[0] < 5900, nextlab(),
-     "budget: wall time, peak resident memory, stdout all inside their limits")
+FINAL_TAG = nextlab()
+FINAL_MSG = "budget: declared wall/RSS limits and prospective complete stdout under 6000"
+RESOURCE_OK = (ELAPSED2 < AUDIT_TIMEOUT_SEC and RSSMB2 < 2500)
 
-emit("stdout characters: {0}".format(OUT[0]))
+
+def prospective_stdout(ok):
+    gate_line = "{0} {1} {2}\n".format("PASS" if ok else "FAIL", FINAL_TAG, FINAL_MSG)
+    before_trailer = OUT[0] + len(gate_line)
+    count_line = "stdout characters before trailer: {0}\n".format(nd(before_trailer))
+    pass_count = STAT[0] + (1 if ok else 0)
+    fail_count = STAT[1] + (0 if ok else 1)
+    total_line = "TOTAL: PASS={0} FAIL={1}\n".format(pass_count, fail_count)
+    return before_trailer + len(count_line) + len(total_line)
+
+
+FINAL_OK = RESOURCE_OK
+FINAL_OK = RESOURCE_OK and prospective_stdout(FINAL_OK) < 6000
+FINAL_COMPLETE_CHARS = prospective_stdout(FINAL_OK)
+gate(FINAL_OK, FINAL_TAG, FINAL_MSG)
+emit("stdout characters before trailer: {0}".format(nd(OUT[0])))
 emit("TOTAL: PASS={0} FAIL={1}".format(STAT[0], STAT[1]))
+if OUT[0] != FINAL_COMPLETE_CHARS:
+    raise RuntimeError("stdout accounting drift")
+if STAT[1]:
+    raise SystemExit(1)

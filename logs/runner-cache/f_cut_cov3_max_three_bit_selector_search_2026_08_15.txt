@@ -1,0 +1,104 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_cov3_max_three_bit_selector_search_2026_08_15.py
+runner_sha256: 29d813ff9f43953908658591e8f867d9f737810cb2ac8ab3bdd7a40290e32019
+input_fingerprint_sha256: 5512602dee7de39984ca710240449c79aa3c1e25f80530205731c80d18a7372a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.15
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_COV3_MAX_THREE_BIT_SELECTOR_SEARCH_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+external_scientific_inputs: current Lattice/Admissibility/Record boundary only; no observation or fit
+negative_scope: displayed 3-bit remaining-bit candidates versus cov3=220; does not adopt a bit
+remaining=(0, 0, 0, 0, 0) cov3=0 max=0
+remaining=(0, 0, 0, 0, 1) cov3=0 max=0
+remaining=(0, 0, 0, 1, 0) cov3=0 max=0
+remaining=(0, 0, 0, 1, 1) cov3=0 max=0
+remaining=(0, 0, 1, 0, 0) cov3=0 max=0
+remaining=(0, 0, 1, 0, 1) cov3=0 max=0
+remaining=(0, 0, 1, 1, 0) cov3=24 max=0
+remaining=(0, 0, 1, 1, 1) cov3=24 max=0
+remaining=(0, 1, 0, 0, 0) cov3=0 max=0
+remaining=(0, 1, 0, 0, 1) cov3=0 max=0
+remaining=(0, 1, 0, 1, 0) cov3=0 max=0
+remaining=(0, 1, 0, 1, 1) cov3=0 max=0
+remaining=(0, 1, 1, 0, 0) cov3=16 max=0
+remaining=(0, 1, 1, 0, 1) cov3=16 max=0
+remaining=(0, 1, 1, 1, 0) cov3=44 max=0
+remaining=(0, 1, 1, 1, 1) cov3=44 max=0
+remaining=(1, 0, 0, 0, 0) cov3=0 max=0
+remaining=(1, 0, 0, 0, 1) cov3=0 max=0
+remaining=(1, 0, 0, 1, 0) cov3=56 max=0
+remaining=(1, 0, 0, 1, 1) cov3=72 max=0
+remaining=(1, 0, 1, 0, 0) cov3=80 max=0
+remaining=(1, 0, 1, 0, 1) cov3=96 max=0
+remaining=(1, 0, 1, 1, 0) cov3=188 max=0
+remaining=(1, 0, 1, 1, 1) cov3=220 max=1
+remaining=(1, 1, 0, 0, 0) cov3=4 max=0
+remaining=(1, 1, 0, 0, 1) cov3=4 max=0
+remaining=(1, 1, 0, 1, 0) cov3=68 max=0
+remaining=(1, 1, 0, 1, 1) cov3=84 max=0
+remaining=(1, 1, 1, 0, 0) cov3=96 max=0
+remaining=(1, 1, 1, 0, 1) cov3=96 max=0
+remaining=(1, 1, 1, 1, 0) cov3=212 max=0
+remaining=(1, 1, 1, 1, 1) cov3=220 max=1
+n_rotations=24
+n_orbits=10
+remaining_labels=('wt1', 'opp2', 'adj2', 'vertex3', 'mixed3')
+|F_cut|=32
+n_three_site_seeds=220
+N_max=2
+maximizers=[(1, 0, 1, 1, 1), (1, 1, 1, 1, 1)]
+cov3(f_L1)=220
+cov3(f1)=220
+n_candidates=20
+matching_candidates=[]
+candidate wt1 AND opp2 AND adj2: equiv=0 N_Q=4 N_both=1 fp=3 fn=1 lex=(1, 0, 1, 1, 1)
+candidate wt1 AND opp2 AND vertex3: equiv=0 N_Q=4 N_both=1 fp=3 fn=1 lex=(1, 0, 1, 1, 1)
+candidate wt1 AND opp2 AND mixed3: equiv=0 N_Q=4 N_both=1 fp=3 fn=1 lex=(1, 0, 1, 1, 1)
+candidate wt1 AND adj2 AND vertex3: equiv=0 N_Q=4 N_both=2 fp=2 fn=0 lex=(1, 0, 1, 1, 0)
+candidate wt1 AND adj2 AND mixed3: equiv=0 N_Q=4 N_both=2 fp=2 fn=0 lex=(1, 0, 1, 0, 1)
+candidate wt1 AND vertex3 AND mixed3: equiv=0 N_Q=4 N_both=2 fp=2 fn=0 lex=(1, 0, 0, 1, 1)
+candidate opp2 AND adj2 AND vertex3: equiv=0 N_Q=4 N_both=1 fp=3 fn=1 lex=(0, 1, 1, 1, 0)
+candidate opp2 AND adj2 AND mixed3: equiv=0 N_Q=4 N_both=1 fp=3 fn=1 lex=(0, 1, 1, 0, 1)
+candidate opp2 AND vertex3 AND mixed3: equiv=0 N_Q=4 N_both=1 fp=3 fn=1 lex=(0, 1, 0, 1, 1)
+candidate adj2 AND vertex3 AND mixed3: equiv=0 N_Q=4 N_both=2 fp=2 fn=0 lex=(0, 0, 1, 1, 1)
+candidate wt1 OR opp2 OR adj2: equiv=0 N_Q=28 N_both=2 fp=26 fn=0 lex=(0, 0, 1, 0, 0)
+candidate wt1 OR opp2 OR vertex3: equiv=0 N_Q=28 N_both=2 fp=26 fn=0 lex=(0, 0, 0, 1, 0)
+candidate wt1 OR opp2 OR mixed3: equiv=0 N_Q=28 N_both=2 fp=26 fn=0 lex=(0, 0, 0, 0, 1)
+candidate wt1 OR adj2 OR vertex3: equiv=0 N_Q=28 N_both=2 fp=26 fn=0 lex=(0, 0, 0, 1, 0)
+candidate wt1 OR adj2 OR mixed3: equiv=0 N_Q=28 N_both=2 fp=26 fn=0 lex=(0, 0, 0, 0, 1)
+candidate wt1 OR vertex3 OR mixed3: equiv=0 N_Q=28 N_both=2 fp=26 fn=0 lex=(0, 0, 0, 0, 1)
+candidate opp2 OR adj2 OR vertex3: equiv=0 N_Q=28 N_both=2 fp=26 fn=0 lex=(0, 0, 0, 1, 0)
+candidate opp2 OR adj2 OR mixed3: equiv=0 N_Q=28 N_both=2 fp=26 fn=0 lex=(0, 0, 0, 0, 1)
+candidate opp2 OR vertex3 OR mixed3: equiv=0 N_Q=28 N_both=2 fp=26 fn=0 lex=(0, 0, 0, 0, 1)
+candidate adj2 OR vertex3 OR mixed3: equiv=0 N_Q=28 N_both=2 fp=26 fn=0 lex=(0, 0, 0, 0, 1)
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required note-plus-axiom string-literal tuple
+PASS: thm1-host 24 rotations, 10 orbits, 32 F_cut maps, 220 three-site seeds
+PASS: thm1-f-L1-is-unbalanced-axis f_L1 is 1 iff some axis has c_+ != c_-
+PASS: thm1-f-L1-not-hamming f_L1 is n!=0, not Hamming |c|_1 mod 2
+PASS: thm1-three-bit-and-or-fail no displayed 3-bit AND or 3-bit OR equals cov3=220
+PASS: thm1-lex-first-miss-of-each one lex-first remaining-bit miss is reported for each displayed Q
+PASS: thm2-counts N_max=2 and each displayed Q reports N_Q and N_both
+PASS: thm3-display-not-adopt the menu is displayed and no bit is adopted as an Admissibility selector
+PASS: source-lattice-admissibility Lattice rotations and Admissibility covariance are pinned
+PASS: source-record-boundary Record lock, content-only readout, unreadable absence, and formation residual are pinned
+PASS: claim-scope claim_scope reports the 3-bit remaining-bit search and does not adopt a bit
+PASS: note-contract machine fields, three theorems, and forbidden-phrase hygiene hold
+PASS: no-axiom-edit the axiom memo is unedited and the theorem proposes no axiom change
+PASS: off-patch-zero off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: not-leftover-first-max3-menu the residual is the next-width 3-bit menu after the first failed Max(3) menu
+per_element: checked exactly — each of the 64 neighbor 6-tuples is assigned its axis-type orbit
+per_site: checked exactly — each of the twelve two-cube vertices uses the same six-direction stencil
+per_mode: checked exactly — every F_cut map is scored on 220 three-site seeds against the displayed 3-bit menu
+per_block: checked exactly — N_max and each (N_Q, N_both) are the F_cut Max(3)-versus-Q counts on this patch
+lattice_wide: checked and not executed — no Z^3-wide formation law or physical Admissibility selector is claimed
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

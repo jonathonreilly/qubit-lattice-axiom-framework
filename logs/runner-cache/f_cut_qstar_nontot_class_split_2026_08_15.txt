@@ -1,0 +1,57 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_qstar_nontot_class_split_2026_08_15.py
+runner_sha256: 1ee734fc94cffdbdce6615bcdc36362a472f6f901f7082915d91cd7ca9732fb7
+input_fingerprint_sha256: ccad3a9b6f204754f47f30afb0d154060e2cc8e0c3e1887f126728db0937617c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_QSTAR_NONTOT_CLASS_SPLIT_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+n_rotations=24
+n_orbits=10
+remaining_labels=('wt1', 'opp2', 'adj2', 'vertex3', 'mixed3')
+|F_cut|=32
+|Q_*|=8
+S=[(1, 0, 0)]
+N_fill_v3=4
+N_fill_nontot=0
+every_vertex3_0_misses_S=1
+lex_first_counterexample=None
+fills_S(f_L1)=1
+fills_S(f_nt)=0
+Q_* (1, 0, 1, 0, 0) vertex3=0 fills_S=0
+Q_* (1, 0, 1, 0, 1) vertex3=0 fills_S=0
+Q_* (1, 0, 1, 1, 0) vertex3=1 fills_S=1
+Q_* (1, 0, 1, 1, 1) vertex3=1 fills_S=1
+Q_* (1, 1, 1, 0, 0) vertex3=0 fills_S=0
+Q_* (1, 1, 1, 0, 1) vertex3=0 fills_S=0
+Q_* (1, 1, 1, 1, 0) vertex3=1 fills_S=1
+Q_* (1, 1, 1, 1, 1) vertex3=1 fills_S=1
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required note-plus-axiom string-literal tuple
+PASS: thm1-host 24 rotations, 10 orbits, 32 F_cut maps, 8 Q_* maps, seed S={(1,0,0)}
+PASS: thm1-f-L1-is-unbalanced-axis f_L1 is 1 iff some axis has c_+ != c_-
+PASS: thm1-f-L1-not-hamming f_L1 is n!=0, not Hamming |c|_1 mod 2
+PASS: thm1-vertex3-1-fill-count among the 4 Q_* maps with vertex3=1, 4 fill S
+PASS: thm1-vertex3-0-fill-count among the 4 Q_* maps with vertex3=0, 0 fill S
+PASS: thm2-every-nontot-misses every vertex3=0 Q_* map misses S; no counterexample tuple
+PASS: thm3-display-not-adopted the class split is displayed and no bit is adopted
+PASS: source-lattice-admissibility Lattice rotations and Admissibility covariance are pinned
+PASS: source-record-boundary Record lock, content-only readout, unreadable absence, and formation residual are pinned
+PASS: claim-scope claim_scope reports the non-tot class miss of S and does not adopt a bit
+PASS: note-contract machine fields, three theorems, and forbidden-phrase hygiene hold
+PASS: no-axiom-edit the axiom memo is unedited and the theorem proposes no axiom change
+PASS: off-patch-zero off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: not-named-pair-leftover the residual is the class miss, not a second-seed test of the named pair
+per_element: checked exactly — each of the 64 neighbor 6-tuples is assigned its axis-type orbit
+per_site: checked exactly — each of the twelve two-cube vertices uses the same six-direction stencil
+per_mode: checked exactly — every Q_* map is scored on S={(1, 0, 0)}
+per_block: checked exactly — every vertex3=0 Q_* map misses S and no bit is adopted
+lattice_wide: checked and not executed — no Z^3-wide formation law or physical Admissibility selector is claimed
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

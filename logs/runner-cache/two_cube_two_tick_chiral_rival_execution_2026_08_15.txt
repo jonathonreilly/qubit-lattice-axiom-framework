@@ -1,0 +1,54 @@
+===== runner cache v1 =====
+runner: scripts/two_cube_two_tick_chiral_rival_execution_2026_08_15.py
+runner_sha256: 8a1191681fe06d41483ef37406c52705bdaeac018ce5bf93a4492acea82ef9a8
+input_fingerprint_sha256: ad46bdbf3b0d94d66ed946fae4823763a79c140de465b9ec501d7dc113aa7e7d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+two-cube two-tick chiral rival execution (displayed, not adopted)
+AUDIT_INPUT_PATHS:
+  docs/TWO_CUBE_TWO_TICK_CHIRAL_RIVAL_EXECUTION_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+construction: same twelve-vertex two-cube; no 4x4x4 or other new patch
+PASS: audit-input-paths-exact-literals  (declared=('docs/TWO_CUBE_TWO_TICK_CHIRAL_RIVAL_EXECUTION_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: note-claim-scope
+PASS: source-admissibility
+PASS: source-formation-boundary
+PASS: source-record
+PASS: note-f-L1-is-n-nonzero-not-hamming
+PASS: note-displayed-not-adopted
+PASS: note-does-not-attach-L1
+PASS: note-does-not-write-pair-into-admissibility
+PASS: note-same-two-cube-no-new-patch
+PASS: note-no-forbidden-phrases
+PASS: patch-twelve-vertices
+PASS: off-patch-occupancy-zero
+PASS: empty-occupancy-fixed-point
+PASS: tick1-new-locks  (new=[(0, 0, 1), (0, 1, 0), (1, 0, 0)])
+PASS: tick1-labels-from-sign-n-mu  (labels={(0, 0, 0): '+', (1, 0, 0): '−', (0, 0, 1): '−', (0, 1, 0): '−'})
+PASS: tick1-not-hamming
+PASS: theorem1-tick1-lock-set-P-even
+N_new=0
+tick2_lock_set=((0, 0, 0), (0, 0, 1), (0, 1, 0), (1, 0, 0))
+P_of_tick2_lock_set=((-1, 0, 0), (0, -1, 0), (0, 0, -1), (0, 0, 0))
+tick2_lock_set_P_odd=True
+PASS: july3-unique-k3-pair
+PASS: theorem2-N-new  (N_new=0)
+PASS: theorem2-lock-set-and-P-of-set  (P_odd=True)
+PASS: theorem2-pair-does-not-fire
+PASS: theorem1-permanence
+PASS: tick2-does-not-overwrite
+PASS: note-reports-N-new-and-P-odd-pair
+PASS: theorem3-displayed-rival
+PASS: mutation-hamming-is-not-f-L1
+PASS: mutation-L1-occupancy-tick2-is-not-this-execution
+TOTAL: PASS=30 FAIL=0
+
+----- stderr -----
+

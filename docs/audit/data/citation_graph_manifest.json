@@ -1,6 +1,6 @@
 {
- "edge_count": 15940,
- "node_count": 5542,
+ "edge_count": 15945,
+ "node_count": 5543,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -449,6 +449,10 @@
   "admissibility_dirac_kahler_paired_floor_refutation_mixed_circle_bounded_theorem_note_2026-08-15": {
    "deps_hash": "26cdf7e4282e",
    "out_degree": 4
+  },
+  "admissibility_dirac_kahler_positive_dressed_reflection_bounded_theorem_note_2026-08-15": {
+   "deps_hash": "e380eb905745",
+   "out_degree": 5
   },
   "admissibility_dirac_kahler_seam_dressing_sector_signature_bounded_theorem_note_2026-08-15": {
    "deps_hash": "8e68e06c11b5",

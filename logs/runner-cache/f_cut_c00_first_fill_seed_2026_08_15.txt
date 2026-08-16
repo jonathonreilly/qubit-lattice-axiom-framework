@@ -1,0 +1,57 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_c00_first_fill_seed_2026_08_15.py
+runner_sha256: 84290cb396c2ce656a39517dd02510e72d76946c7a78d23c7e8dd78471a4431c
+input_fingerprint_sha256: c62bd78955366e44277d1fcd6ac4709c9d4c13cf7111aae507c3301ef518c744
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+external_scientific_inputs: current Lattice, Admissibility, and Record boundaries; no observations or fits
+integrity_reads: this runner, its note, and the live axiom memo; no other scientific inputs
+construction: displayed F_cut occupancy-to-lock map; lex first-fill seed on the twelve-vertex two-cube
+negative_scope: neither the map nor the first-fill seed is adopted or written into Admissibility
+cache_write: false
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_C00_FIRST_FILL_SEED_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+PASS: audit-inputs declared source-bound inputs exist as static literals
+PASS: source-lattice current cubic nearest-neighbor wording is pinned
+PASS: source-admissibility current local-distribution wording is pinned
+PASS: source-formation-boundary formation site, probability, and rate remain outside Admissibility
+PASS: source-record-and-non-dynamics Record lock wording and the non-dynamics Admissibility boundary are pinned
+PASS: two-cube-and-lex-order the two-cube has twelve lexicographically ordered vertices
+PASS: census-cardinality seed counts are C(12,k) for k=2..6
+PASS: off-patch-zero every off-patch neighbor contributes occupancy 0
+PASS: axis-type-reps declared orbit representatives have the stated axis types
+PASS: f00-remaining-bits f00 is the F_cut remaining-bit tuple (1,0,0,0,0)
+PASS: f-l1-is-n-unbalanced f_L1 is the n!=0 (some-axis-unbalanced) map, not Hamming parity
+cov2(f00)=0 n_two=66
+size 3: n=220 nfill=0 first=None
+size 4: n=495 nfill=7 first=((0, 0, 0), (0, 0, 1), (0, 1, 0), (0, 1, 1))
+size 5: n=792 nfill=0 first=None
+size 6: n=924 nfill=4 first=((0, 0, 0), (0, 0, 1), (1, 0, 0), (1, 0, 1), (2, 0, 0), (2, 0, 1))
+lex_first_fill=((0, 0, 0), (0, 0, 1), (0, 1, 0), (0, 1, 1))
+PASS: theorem-1-cov2-zero cov2(f00)=0 among the 66 two-site seeds
+PASS: theorem-2-none-through-size-3 no three-site seed fills, so the first fill has |S|>=4
+PASS: theorem-2-lex-first-seed the lex-first fill is the size-4 face {(0,0,0),(0,0,1),(0,1,0),(0,1,1)}
+history=(4, 8, 12) T=2 fill=True
+PASS: theorem-3-history from that S the lock history is (4, 8, 12) and the run fills
+PASS: fill-mechanism-waves the x=0 face locks the x=1 slice then the x=2 face, each as wt1
+PASS: theorem-3-display-not-adopt the note displays the seed and refuses adoption
+PASS: claim-scope claim_scope reports the lex-first f00 fill seed and does not adopt it
+PASS: note-contract machine fields, first-fill statement, and forbidden-phrase hygiene hold
+PASS: not-leftover-6490 the residual is the first-fill seed, not leftover cov2 scoring of #6490
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: off-patch-declared off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: axiom-unedited the axiom memo still carries the four named premises and no F_cut map
+per_element: axis-type representatives and off-patch occupancy 0 are enumerated
+per_site: each two-cube vertex is tested against the displayed lock predicate
+per_mode: checked and not executed — no spectral claim occurs
+per_block: all seeds of size 2 through 6 are executed to a fixed point
+lattice_wide: checked and not executed — neither the map nor the seed is adopted
+TOTAL: PASS=23 FAIL=0
+
+----- stderr -----
+

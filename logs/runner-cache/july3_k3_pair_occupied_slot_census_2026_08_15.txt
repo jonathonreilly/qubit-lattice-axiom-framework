@@ -1,0 +1,51 @@
+===== runner cache v1 =====
+runner: scripts/july3_k3_pair_occupied_slot_census_2026_08_15.py
+runner_sha256: 310b4f78401f9a4b4dcbb02ebd13aeb9eae566d192705e828726ce7d9954575e
+input_fingerprint_sha256: 680241715702a9404b2854c2ac85e0720e097c9736d47f5a31463f21b9b07878
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+July-3 k=3 chiral-pair occupied-slot census
+AUDIT_INPUT_PATHS:
+  docs/JULY3_K3_PAIR_OCCUPIED_SLOT_CENSUS_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+N_pair: 48
+orbit_sizes: [24, 24]
+lex_reps: ((0, 1, 0, 2, 1, 2), (0, 1, 0, 2, 2, 1))
+occupied_min: 4
+occupied_max: 4
+occupied_histogram: {4: 48}
+occ_front_max: 3
+min_occupied_ge_4: True
+front_site_can_match_pair_member: False
+PASS: audit-input-paths-exist
+PASS: audit-input-paths-static-literals
+PASS: audit-timeout-declared
+PASS: source-lattice
+PASS: source-admissibility
+PASS: source-unread
+PASS: source-july3-unique-pair
+PASS: proper-group-order | full=48 proper=24
+PASS: unique-chiral-pair | orbits=57 chiral_ids=[28, 29]
+PASS: n-pair | N_pair=48 sizes=[24, 24]
+PASS: lex-first-representatives | lex_reps=((0, 1, 0, 2, 1, 2), (0, 1, 0, 2, 2, 1))
+PASS: pair-fully-mixed
+PASS: occupied-min-max | min=4 max=4
+PASS: occupied-histogram | histogram={4: 48}
+PASS: min-occupied-ge-4 | min=4
+PASS: front-cannot-match | min=4 front_max=3
+PASS: claim-scope-pinned
+PASS: note-census-numbers
+PASS: displayed-not-adopted
+PASS: not-attached-to-l1
+PASS: not-leftover-char-or-need6
+PASS: no-forbidden-phrases
+PASS: no-axiom-edit
+TOTAL: PASS=23 FAIL=0
+
+----- stderr -----
+

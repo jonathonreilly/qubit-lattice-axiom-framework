@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_even_parity_paired_branch_2026_08_15.py
+runner_sha256: d6e7b7f4028ba32c3513c117922c6931c22f7948a4266d8c05664194ad48a05b
+input_fingerprint_sha256: a0dc4844b02c72a0bae8286d5aafe6c6d5c62d23f7efe2f885427fcfe151face
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 51.36
+status: ok
+----- stdout -----
+[PASS] A-authority: current authority and the Block111 parent triple plus ancestors 110--103 are content-bound
+[PASS] B-even-parity-witness: A1^2=A3^2=I, reality, +---/++-- Hermitian blocks, and paired sum two hold exactly
+[PASS] C-assembly: the ++++/++++ self blocks are PSD and the exact momentum assembly has inertia (14,2,0)
+[PASS] D-orientation-refutation: sign(det X1 det X3)=(-1)^(n1+n3) and flips from the odd base point to the even witness
+[PASS] E-second-fixture: at c=3/5 the same Q has +-++/---+, split (2,2), and exact assembly inertia (12,4,0)
+[PASS] F-attained-sums-and-the-gap: exact sums are {1,2,3,4}; sum-0 existence is the named open gate, NOT decided here
+[PASS] G-mixed-slices: both exact mixed-slice coefficient systems have only axes; the x-parity joint space has ...
+[PASS] H-scope: the note preserves even/paired/floor, N1--N8, W1, N5, ADM, gravity, audit, and TOE walls
+EXACT_PAIRED_CHART: c=5/13 signs=(+---,++--) split=(1, 1); c=3/5 split=(2, 2)
+ATTAINED_PAIRED_SUMS: [1, 2, 3, 4]; definite-half split=(0, 3); sum 0 unobserved
+AXIOM_AUTHORITY: origin/main=4e566b14a6352a9a62590252a9755c7a103c1b9e axiom=bc23300becfe4e4db57153c0e94cfcdf2338da71 registry=b93959cca4f7e26c673cdccbe601e50c3cb93daa; Block111 parent=b04e7c8747b09734711cfcd2bfab961bd12e81ad
+RUNTIME_SECONDS: 51.102
+per_element: exact witness, coupling, minor-sign, assembly, and orientation identities are checked
+per_site: one Grassmann mode per fine site on the antiperiodic reflection torus
+per_mode: the even paired branch exists at both displayed shear fixtures with even sums two and four
+per_block: the displayed attained paired sums include one and two and a definite-half point while zero remains unobserved
+lattice_wide: checked and not executed — the paired zero-sum decision, the paired floor, the mixed dressing variety, curved OS positivity, the actual ADM/history transporter completion, joint gravity, the gravity constraint quotient, Records, audit retention, and TOE closure remain open
+RESULT: the paired-sector parity is not globally odd — an exact even branch assembles to (14,2,0) — and the positivity frontier now rests on whether a zero-negative paired branch exists
+DECISION_CUT: advance the paired zero-sum/floor decision and the mixed variety; reject parity- and orientation-invariant readings of the paired sector
+TOE: zero obligation retirement, retained-positive end-to-end theory count remains zero, and no TOE percentage moves
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

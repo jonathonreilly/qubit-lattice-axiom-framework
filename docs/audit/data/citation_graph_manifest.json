@@ -1,6 +1,6 @@
 {
- "edge_count": 15932,
- "node_count": 5540,
+ "edge_count": 15936,
+ "node_count": 5541,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -425,6 +425,10 @@
   "admissibility_dirac_kahler_cochain_hodge_quadratic_ward_shell_locality_os_reentry_bounded_theorem_note_2026-08-14": {
    "deps_hash": "e20317fe93b4",
    "out_degree": 6
+  },
+  "admissibility_dirac_kahler_even_parity_paired_branch_bounded_theorem_note_2026-08-15": {
+   "deps_hash": "7fd8a533f9c6",
+   "out_degree": 4
   },
   "admissibility_dirac_kahler_global_dressing_involution_positivity_bounded_theorem_note_2026-08-15": {
    "deps_hash": "767fbba8a59e",

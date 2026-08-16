@@ -1,6 +1,6 @@
 {
- "edge_count": 15924,
- "node_count": 5538,
+ "edge_count": 15928,
+ "node_count": 5539,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -437,6 +437,10 @@
   "admissibility_dirac_kahler_local_dual_patch_descent_bounded_theorem_note_2026-08-15": {
    "deps_hash": "9f8d49b5e359",
    "out_degree": 3
+  },
+  "admissibility_dirac_kahler_seam_dressing_sector_signature_bounded_theorem_note_2026-08-15": {
+   "deps_hash": "8e68e06c11b5",
+   "out_degree": 4
   },
   "admissibility_dirac_kahler_shifted_origin_frame_gauge_nonuniform_hodge_overlap_bounded_theorem_note_2026-08-14": {
    "deps_hash": "abb470ff102c",

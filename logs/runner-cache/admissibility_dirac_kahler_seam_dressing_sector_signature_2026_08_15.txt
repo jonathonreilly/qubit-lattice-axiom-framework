@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_seam_dressing_sector_signature_2026_08_15.py
+runner_sha256: 1dd2328b94b9a9879b5ae28c2b0a82e287d05bb6be48356b14f112e5260d2850
+input_fingerprint_sha256: d1472b931a4fd46137cbf696eec260c2e48e955a082842577122eab4d5843a07
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 31.34
+status: ok
+----- stdout -----
+[PASS] A-authority-and-Block109-parent: current axioms, registries, ancestry, and the Block109 parent triple are content-bound
+[PASS] B-sector-split: C-conjugation splits the 132-dimensional joint space into even dimension 128 and odd dim...
+[PASS] C-odd-sector-signature-theorem: shift covariance makes every odd-sector Gram negation-symmetric with signature exactly zero
+[PASS] D-anticommutant-structure: the 16-dimensional slice-diagonal anticommutant is exactly span{I4 tensor C,I4 tensor C^3}
+[PASS] E-even-sector-sparse-emptiness: F-1/F-2/F+1/F+2 are exactly empty and p=32107654 has nullity one with Groebner basis {1}
+[PASS] F-scope-inheritance: the shift obstruction is odd-sector-only while K=I16 and the Block108 A=I exclusion rema...
+[PASS] G-momentum-factorization: the even structures and translation-invariant fixture data split exactly into four momen...
+[PASS] H-scope: the note preserves the sector theorem, sparse boundary, N1--N8, W1, N5, ADM, gravity, au...
+EXACT_WITNESSES: even/odd ranks=256/124; anticommutant rank/dim=14/2; p=32107654 rank/nullity=47/1; Groebner={1}; inertia(A*)=(8,8,0)
+AXIOM_AUTHORITY: origin/main=795e851254e689a66fa9e3fe619823835d4d8661 axiom=bc23300becfe4e4db57153c0e94cfcdf2338da71 registry=b93959cca4f7e26c673cdccbe601e50c3cb93daa; Block109 parent=ad84cfcc857a65285389ba93b47cd7b718589be5
+per_element: exact grading, Gram covariance, signature, anticommutant, characteristic-polynomial, sparse-rank, and Groebner identities are checked
+per_site: one Grassmann mode per fine site on the antiperiodic reflection torus
+per_mode: both shear fixtures certify the same sector dimensions, signature theorem, sparse obstructions, and momentum factorization
+per_block: the odd x-parity structure reverses sign while the identity and symmetric/antisymmetric shifts are preserved and Fourier diagonal
+lattice_wide: checked and not executed — the even-sector involution variety, curved OS positivity, the actual ADM/history transporter completion, joint gravity, the gravity constraint quotient, Records, audit retention, and TOE closure remain open
+RESULT: signature zero is a sector theorem — every odd-sector dressing is exactly signature-pinned, so seam positivity must come from the even sector, whose displayed sparse truncations are exactly empty
+DECISION_CUT: advance the momentum-factorized even-sector involution variety; reject odd-sector and sparse-truncation routes
+TOE: zero obligation retirement, retained-positive end-to-end theory count remains zero, and no TOE percentage moves
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

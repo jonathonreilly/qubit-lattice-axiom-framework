@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/tied_kernel_stabilizer_forbids_equivariant_fire_2026_08_15.py
+runner_sha256: f8f9b8aaafa3c39a71e04bd2e3fb505a13715548eaed487f946983f31f3d1d27
+input_fingerprint_sha256: 63f1a340aa5325fcf7f855ba34b823ead1d24bd89c659f52b1fb9a10010f5b4c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/TIED_KERNEL_STABILIZER_FORBIDS_EQUIVARIANT_FIRE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+scientific_dependency: current minimal_axioms Lattice covariance clause
+declared_math: finite G+ in the 3-vector representation; tied kernels n1, n2
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required static two-string literal tuple
+PASS: g-plus-order finite G+ is exactly the 24 proper cube rotations
+PASS: declared-kernels n1 and n2 are the declared tied occupancy kernels
+stab_n1_order: 2
+stab_n2_order: 2
+stab_n1_has_tied_swap: True
+stab_n2_has_tied_swap: True
+PASS: theorem-1-stab-orders |Stab(n1)| = |Stab(n2)| = 2
+PASS: theorem-1-tied-swap exactly one non-identity stabilizer element swaps +x with -x at both sites
+PASS: swapper-action the common swapper is x -> -x, y -> -z, z -> -y
+PASS: theorem-2-same-letter every Stab-invariant labeling gives +x and -x the same letter, so none fire
+PASS: slot-odd-not-equivariant a slot-odd opposite-x labeling fires and is not stabilizer-invariant
+PASS: lattice-clause the current Lattice wording supplies finite proper cubic rotations
+PASS: admissibility-unedited Stab is displayed and is not written into Admissibility
+PASS: displayed-not-adopted the note reports the stabilizer obstruction without adopting it or attaching L1
+PASS: forbidden-phrases the forbidden rhetoric strings are absent from the note and runner
+PASS: claim-scope claim_scope and machine status match the displayed-not-adopted residual
+PASS: no-axiom-edit the only axiom authority is the current memo; no cache or axiom rewrite
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

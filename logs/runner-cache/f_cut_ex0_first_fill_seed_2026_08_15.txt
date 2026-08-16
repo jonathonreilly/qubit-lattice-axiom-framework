@@ -1,0 +1,59 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_ex0_first_fill_seed_2026_08_15.py
+runner_sha256: 4d3fa3d1a8440aff4a77dfed359aab87e88cce0b631eeb0cac0eacf789351859
+input_fingerprint_sha256: 57e1ff109130cfa0b1f1db3383ef1a0bb69d60b834efef372606df1e08e39adf
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_EX0_FIRST_FILL_SEED_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+n_rotations=24
+n_two_cube=12
+remaining_labels=('wt1', 'opp2', 'adj2', 'vertex3', 'mixed3')
+f_ex0_remaining=(0, 0, 1, 1, 0)
+f_L1_remaining=(1, 0, 1, 1, 1)
+origin_history_sizes=[1]
+origin_halt=[(0, 0, 0)]
+P=0
+cov2=0
+cov3=24
+lex_first_k=3
+lex_first_seed=((0, 0, 0), (1, 0, 1), (2, 1, 0))
+lex_hist_sizes=[3, 5, 7, 10, 12]
+  t0=[(0, 0, 0), (1, 0, 1), (2, 1, 0)]
+  t1=[(0, 0, 0), (0, 0, 1), (1, 0, 0), (1, 0, 1), (2, 1, 0)]
+  t2=[(0, 0, 0), (0, 0, 1), (1, 0, 0), (1, 0, 1), (1, 1, 0), (2, 0, 0), (2, 1, 0)]
+  t3=[(0, 0, 0), (0, 0, 1), (0, 1, 0), (1, 0, 0), (1, 0, 1), (1, 1, 0), (1, 1, 1), (2, 0, 0), (2, 0, 1), (2, 1, 0)]
+  t4=[(0, 0, 0), (0, 0, 1), (0, 1, 0), (0, 1, 1), (1, 0, 0), (1, 0, 1), (1, 1, 0), (1, 1, 1), (2, 0, 0), (2, 0, 1), (2, 1, 0), (2, 1, 1)]
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required note-plus-axiom string-literal tuple
+PASS: thm1-twenty-four-rotations-and-two-cube exactly 24 proper cube rotations and twelve two-cube vertices
+PASS: thm1-f-ex0-remaining-bits f_ex0 is F_cut remaining bits (0,0,1,1,0) and not f_L1
+PASS: thm1-f-L1-not-hamming f_L1 is unbalanced-axis n_mu != 0 and is not Hamming parity
+PASS: thm1-P-zero-origin-history P=0: origin seed dies at history (1)
+PASS: thm1-cov2-and-cov3 cov2(f_ex0)=0 and cov3(f_ex0)=24
+PASS: thm2-lex-first-size-and-sites lex-first filling seed has size 3 and sites ((0,0,0),(1,0,1),(2,1,0))
+PASS: thm2-no-smaller-fill no 1-site or 2-site seed fills, so the size-3 seed is first
+PASS: thm3-displayed-history the displayed seed fills in four ticks along the reported history
+PASS: lattice-and-admissibility-parents the live axiom memo supplies Z^3, proper cubic rotations, and a covariant nearest-neighbor rule
+PASS: note-contract bounded theorem, displayed-not-adopted seed, and machine status
+PASS: claim-type-and-gate N1-N8 and a passing no-go disposition are source-visible
+PASS: forbidden-phrases-absent the note and runner omit the dispatch-forbidden phrases
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: claim-scope-first-fill claim_scope states the lex-first seed that F_cut (0,0,1,1,0) fills
+PASS: no-axiom-edit the theorem proposes no axiom change
+PASS: off-patch-zero off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: new-first-fill-not-leftover-coverage the residual is the first fill of the newly named map, not leftover of the coverage counts
+per_element: checked exactly — each neighbor 6-tuple is scored by the remaining-bit assignment of f_ex0
+per_site: checked exactly — each of the twelve two-cube vertices uses the same six-direction stencil
+per_mode: checked exactly — P, cov2, cov3, and the lex-first filling seed of this one F_cut map
+per_block: checked exactly — the displayed size-3 seed fills and no smaller seed does
+lattice_wide: checked and not executed — no Z^3-wide formation law or physical Admissibility selector is claimed
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

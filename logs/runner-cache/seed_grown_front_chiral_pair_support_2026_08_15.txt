@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/seed_grown_front_chiral_pair_support_2026_08_15.py
+runner_sha256: 00f4c136cf29f7b0ab0769033a15900094d9c689fec8afc6d57f67bfd56234d3
+input_fingerprint_sha256: c18f0490ccb5781cb9a2f4638ab2554c0a8222fa8e5ae518518bd18b44814150
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/SEED_GROWN_FRONT_CHIRAL_PAIR_SUPPORT_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+scientific_dependency: current Lattice/Admissibility/Record sentences; July-3 pair used only as six-neighbor support
+declared_math: seed-grown ℓ¹ balls B_t and six-neighbor occupancy of S_{t+1}
+PASS: audit-input-paths declared inputs are exactly the source note and current axiom memo
+PASS: audit-input-literals AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: source-lattice current cubic nearest-neighbor wording is pinned
+PASS: source-admissibility current local-distribution wording is pinned
+PASS: source-record-unread current unread/lock/content boundary is pinned and formation stays outside
+t=0 N_shell=6 max_occ_nn=1 N_with_6=0
+t=1 N_shell=18 max_occ_nn=2 N_with_6=0
+t=2 N_shell=38 max_occ_nn=3 N_with_6=0
+t=3 N_shell=66 max_occ_nn=3 N_with_6=0
+t=4 N_shell=102 max_occ_nn=3 N_with_6=0
+PASS: theorem-1-max-lt-6 for each t in 0..4 the max occupied six-neighbor count on S_{t+1} is < 6
+PASS: theorem-2-n-with-6 N_with_6 = 0 on every scored next shell
+PASS: identity-occ-equals-nnz occupied six-neighbor count equals the number of nonzero coordinates
+PASS: shell-cardinality enumerated |S_{t+1}| equals the ℓ¹ shell formula 4 r^2 + 2
+PASS: t0-axis-occupancy the t=0 next shell is the six axis sites, each with one occupied neighbor
+PASS: interior-contrast the already-occupied origin at t>=1 has six occupied neighbors and is not a next-shell site
+PASS: note-table the note reports the computed N_shell, max_occ_nn, and N_with_6 for each t
+PASS: note-claim-scope claim_scope is the dispatched displayed-not-adopted occupancy-support sentence
+PASS: displayed-not-adopted Theorem 3 is displayed, not adopted, and Admissibility is not edited
+PASS: note-contract machine fields, required phrases, and forbidden-rhetoric hygiene hold
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

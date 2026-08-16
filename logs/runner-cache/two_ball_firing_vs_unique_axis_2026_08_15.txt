@@ -1,0 +1,53 @@
+===== runner cache v1 =====
+runner: scripts/two_ball_firing_vs_unique_axis_2026_08_15.py
+runner_sha256: b188a1510d541d90ef0b3f5fbafe1e9adb7bd12e23509ec2a9e649ed371c37d8
+input_fingerprint_sha256: 7a2099347c5bddcef8daa211a2e9d42dc610965c323537a632715e9128e218cd
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+Two-ball firing 6-tuples versus unique-axis +y=+ and +z=+
+AUDIT_INPUT_PATHS:
+  docs/TWO_BALL_FIRING_VS_UNIQUE_AXIS_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+derived_mask: (1, 1, 1, 0, 1, 0)
+occupied_neighbors: ((2, -1, -1), (0, -1, -1), (1, 0, -1), (1, -1, 0))
+empty_neighbors: ((1, -2, -1), (1, -1, -2))
+N_pair: 48
+N_fire: 4
+firing: ['(+, -, +, 0, -, 0)', '(+, -, -, 0, +, 0)', '(-, +, +, 0, -, 0)', '(-, +, -, 0, +, 0)']
+unique_axis_plus_y: +
+unique_axis_plus_z: +
+N_agree: 0
+agreeing: []
+unique_axis_excludes_every_firing: True
+PASS: audit-input-paths-exist
+PASS: audit-input-paths-static-literals
+PASS: audit-timeout-declared
+PASS: source-lattice
+PASS: source-admissibility
+PASS: source-unread
+PASS: source-july3-unique-pair
+PASS: two-ball-mask-derived | mask=(1, 1, 1, 0, 1, 0)
+PASS: proper-group-order | full=48 proper=24
+PASS: unique-chiral-pair | orbits=57 chiral_ids=[28, 29]
+PASS: n-pair | N_pair=48
+PASS: four-firing-six-tuples | firing=['(+, -, +, 0, -, 0)', '(+, -, -, 0, +, 0)', '(-, +, +, 0, -, 0)', '(-, +, -, 0, +, 0)']
+PASS: unique-axis-fragment-plus-y-plus-z | +y=+ +z=+
+PASS: n-agree | N_agree=0
+PASS: unique-axis-excludes-every-firing
+PASS: claim-scope-pinned
+PASS: note-report-numbers
+PASS: displayed-not-adopted
+PASS: not-attached-to-l1
+PASS: not-leftover-char
+PASS: same-six-tuple-census-only
+PASS: no-forbidden-phrases
+PASS: no-axiom-edit
+TOTAL: PASS=23 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_self_chart_emptiness_stationarity_2026_08_16.py
+runner_sha256: ae2382cd89ccd418050fa827c19755dff6239990a5e9fbe216cd3aeba6136118
+input_fingerprint_sha256: 987e4d76f214b9a6e4db5b9392711a672e4a0455a97211bcd9cb1abd7e7f44a8
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 1.72
+status: ok
+----- stdout -----
+[PASS] A-authority: Block 116 parent note/runner/cache and ancestors 115--103 are exact content-bound authorities
+[PASS] B-the-window-identity: for a fully symbolic Hermitian 3x3 window, f(1)=(Y00-Y11)(Y11-Y22)-|Y01-Y12|^2 exactly
+[PASS] C-equal-middle-diagonals: both symbolic self sectors have Y11-Y22=0, hence f_k(1)=-|Y01-Y12|^2 identically
+[PASS] D-the-perfect-square-constants: f_0(1) and f_2(1) are the pinned negative rational squares at four exact points including non-PD points; a=det(Y|{0,1}) is the second minor and cancels in a+b+c, so every PD pair of roots strictly straddles one and both contractive regions are exactly empty
+[PASS] E-family-closures: the opposite-sign families invert odd Sylvester minors, show profile (-,+,-,+) at the displayed witness, and share the even transfer pencil so the negative square transports to any of their positive points; each reverse family is affine in one parameter with determinant degree <=4 and seven displayed zeros, hence det Y=0 identically
+[PASS] F-second-fixture: at c=3/5 both exact f_k(1) values are the pinned negative squares and the same all-PD root-straddling argument makes both contractive regions empty
+[PASS] G-stationarity-diagnosis: the obstruction is minus the squared window non-stationarity Y01-Y12; contractivity requires Y01=Y12, the Toeplitz stationarity supplied by the action-derived/modular pairing construction
+[PASS] H-scope: the note carries the exact identity, stationarity, chart-only OS, N1--N8, W1, five N5 resolutions, axiom, ADM, gravity, and TOE firewalls
+PRIMARY_SQUARES: f0(1)=-(355348797912000/1026791823428467)^2; f2(1)=-(228512035080000/1026791823428467)^2; points=((-6, -6, -6), (0, 0, 0), (1, -2, 3), (7, -11, 13)); non_PD_counts=(3, 3)
+SECOND_FIXTURE: c=3/5; f0(1)=-(86496072000/250649423107)^2; f2(1)=-(35364504000/250649423107)^2
+FAMILY_CLOSURES: opposite_sign=(-,+,-,+); reverse_degree<=4; reverse_zero_points=(-3, -2, -1, 0, 1, 2, 3); detY=0
+RUNTIME_SECONDS: 1.481
+N5: per_element: exact window, equal-diagonal, negative-square, Sylvester, and singular-family identities are checked
+per_site: one Grassmann mode per fine site on the antiperiodic reflection torus
+per_mode: every positive point of the displayed main and opposite-sign branches has transfer roots strictly straddling one, and the reversed triangular family has no positive point
+per_block: the displayed self charts are empty by closed form and the stationary action-derived pairing remains live
+lattice_wide: checked and not executed — the stationary action-derived/modular pairing, curved OS positivity beyond the displayed carrier, the actual ADM/history transporter completion, joint gravity, the gravity constraint quotient, Records, audit retention, and TOE closure remain open
+RESULT: the self-chart contractive regions are exactly empty by a closed-form identity — the obstruction is the pairing's non-stationarity, so the finite OS package requires the action-derived pairing
+DECISION_CUT: advance the stationary/modular pairing construction; reject further dressing-side searches on the displayed charts
+TOE: zero obligation retirement, retained-positive end-to-end theory count remains zero, and no TOE percentage moves
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

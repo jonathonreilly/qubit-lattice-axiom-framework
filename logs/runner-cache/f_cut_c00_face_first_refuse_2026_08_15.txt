@@ -1,0 +1,57 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_c00_face_first_refuse_2026_08_15.py
+runner_sha256: 2d4d8acebb6c77b377a8ab6b8f23929c32e898057b160b3dae32072f735f6ca1
+input_fingerprint_sha256: 0a2a6b8bd2cdf48252e317a73a3ae016c852c3165eabdbb263606ff996975d4a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: current Lattice, Admissibility, and Record boundaries; no observations or fits
+integrity_reads: this runner, its note, and the live axiom memo; no other scientific inputs
+construction: displayed F_cut occupancy-to-lock map; first remaining-bit refuse on the #6493 face
+negative_scope: neither the map nor any remaining bit is adopted or written into Admissibility
+cache_write: false
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_C00_FACE_FIRST_REFUSE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+PASS: audit-inputs declared source-bound inputs exist as static literals
+PASS: source-lattice current cubic nearest-neighbor wording is pinned
+PASS: source-admissibility current local-distribution wording is pinned
+PASS: source-formation-boundary formation site, probability, and rate remain outside Admissibility
+PASS: source-record-and-non-dynamics Record lock wording and the non-dynamics Admissibility boundary are pinned
+PASS: two-cube-and-lex-order the two-cube has twelve lexicographically ordered vertices
+PASS: off-patch-zero every off-patch neighbor contributes occupancy 0
+PASS: axis-type-reps declared orbit representatives have the stated axis types
+PASS: f00-remaining-bits f00 is the F_cut remaining-bit tuple (1,0,0,0,0)
+PASS: f-l1-is-n-unbalanced f_L1 is the n!=0 (some-axis-unbalanced) map, not Hamming parity
+seed={(0,0,0),(0,0,1),(0,1,0),(0,1,1)}
+history=(4, 8, 12) T=2 fill=True
+wave1=[(1, 0, 0), (1, 0, 1), (1, 1, 0), (1, 1, 1)]
+wave2=[(2, 0, 0), (2, 0, 1), (2, 1, 0), (2, 1, 1)]
+appeared_remaining=('wt1', 'wt1', 'wt1', 'wt1', 'wt1', 'wt1', 'wt1', 'wt1')
+N_refuse=0
+first_remaining_refuse=None
+empty_refuses_n=4 sites=((2, 0, 0), (2, 0, 1), (2, 1, 0), (2, 1, 1))
+PASS: theorem-1-f00-fills-face f00 fills the #6493 face S with history (4, 8, 12)
+PASS: fill-mechanism-waves the x=0 face locks the x=1 slice then the x=2 face, each as wt1
+PASS: theorem-2-n-refuse-zero every remaining-bit orbit that appears is accepted; N_refuse=0
+PASS: theorem-2-note-reports-n-refuse the note reports N_refuse=0 and that only wt1 appears as a remaining bit
+PASS: empty-cut-is-not-remaining-bit empty appears on the far face at tick 0 and is the F_cut empty cut, not a remaining bit
+PASS: theorem-3-display-not-adopt the note displays the refuse census and refuses adoption of a bit
+PASS: claim-scope claim_scope reports the first refused neighborhood or that the run refuses none
+PASS: note-contract machine fields, refuse census, and forbidden-phrase hygiene hold
+PASS: not-leftover-6493-or-l1-miss-why the residual is the refuse census on the face, not leftover of #6493 or L1-miss-why
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: off-patch-declared off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: axiom-unedited the axiom memo still carries the four named premises and no F_cut map
+per_element: axis-type representatives and off-patch occupancy 0 are enumerated
+per_site: each two-cube vertex is tested against the displayed lock predicate
+per_mode: checked and not executed — no spectral claim occurs
+per_block: the #6493 face run is executed to a fixed point and remaining-bit refuses are counted
+lattice_wide: checked and not executed — neither the map nor a remaining bit is adopted
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

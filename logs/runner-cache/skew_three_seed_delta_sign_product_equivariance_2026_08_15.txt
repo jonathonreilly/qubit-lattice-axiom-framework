@@ -1,0 +1,62 @@
+===== runner cache v1 =====
+runner: scripts/skew_three_seed_delta_sign_product_equivariance_2026_08_15.py
+runner_sha256: 172181ee1c58b174b20a3eb0d070bc0b8c167f6070710e20f4614b96e7d8e9c2
+input_fingerprint_sha256: 63833dd25889c53b5419d23a302850f1dca0acbe58bc02acca3f91e16d9459f5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/SKEW_THREE_SEED_DELTA_SIGN_PRODUCT_EQUIVARIANCE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+external_scientific_inputs: current Lattice, Qubit, Admissibility, and Record sentences; G+ rebuilt as the 24 proper cube rotations
+construction: U=B_2(0)∪B_2((2,0,0))∪B_2((1,2,1)), unread v=(-1,1,1)
+negative_scope: displayed claim-delta sign-product rule only; not adopted; L1 not attached; no 4th equal-radius ball
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required static two-string literal tuple
+PASS: source-lattice current cubic nearest-neighbor wording is pinned
+PASS: source-admissibility current local-distribution wording is pinned
+PASS: source-covariance Admissibility still requires one proper-cubic covariant rule
+PASS: source-formation-boundary formation site/probability/rate remains outside Admissibility
+PASS: source-qubit Qubit remains M_2(C)
+PASS: source-record lock, permanence, content-only readout, and unreadability at absence are pinned
+U_card=62
+v_in_U=False
+occupancy_mask=(1, 0, 1, 1, 0, 1)
+displayed_c=(+,0,+,−,0,−)
+slot dir=(1, 0, 0) w=(0, 1, 1) s*=(0, 0, 0) n_hist=(0,-1/3,-1/3) hist-tied delta=(0, 1, 1) label=+
+slot dir=(-1, 0, 0) w=(-2, 1, 1) s*=None n_hist=empty empty delta=None label=0
+slot dir=(0, 1, 0) w=(-1, 2, 1) s*=(1, 2, 1) n_hist=(1/3,0,0) unique-axis delta=(-2, 0, 0) label=+
+slot dir=(0, -1, 0) w=(-1, 0, 1) s*=(0, 0, 0) n_hist=(1/3,0,-1/3) hist-tied delta=(-1, 0, 1) label=−
+slot dir=(0, 0, 1) w=(-1, 1, 2) s*=None n_hist=empty empty delta=None label=0
+slot dir=(0, 0, -1) w=(-1, 1, 0) s*=(0, 0, 0) n_hist=(1/3,-1/3,0) hist-tied delta=(-1, 1, 0) label=−
+G_plus=24
+N_commute=3
+N_commute_over_24=3/24
+identity_commutes=True
+commuting_rotations=((1, 0, 0), (0, 1, 0), (0, 0, 1)),((0, 1, 0), (0, 0, 1), (1, 0, 0)),((0, 0, 1), (1, 0, 0), (0, 1, 0))
+PASS: g-plus-order finite G+ is exactly the 24 proper cube rotations
+PASS: center-unread the star center v is not already in U
+PASS: u-geometry U is the union of three radius-2 ℓ¹ balls and has 62 sites
+PASS: occupancy-mask occupied nearest neighbors of v are exactly +x,+y,−y,−z
+PASS: theorem-1-product-tuple the product rule rebuilds c=(+,0,+,−,0,−) on this star
+PASS: theorem-1-commute N_commute among the 24 proper rotations is computed and reported
+PASS: theorem-2-covariance whether N_commute=24 is reported as cube-covariance of the history tag
+PASS: claim-scope the note reports the declared displayed claim_scope
+PASS: displayed-not-adopted the product is displayed and is not written into Admissibility
+PASS: l1-not-attached the note does not attach L1 and does not add a fourth ball
+PASS: not-leftover-prior the note is not leftover-char of delsgn membership or skeweq
+PASS: admissibility-unedited the product rule is not written into Admissibility
+PASS: forbidden-phrases the forbidden rhetoric strings are absent from the note and runner
+PASS: no-axiom-edit the only axiom authority is the current memo; no cache or axiom rewrite
+per_element: product labels and N_commute are exact integers
+per_site: only the unread star center v is scored
+per_mode: no spectral calculation
+per_block: the six-neighbor star at v only
+lattice_wide: checked and not executed
+TOTAL: PASS=21 FAIL=0
+
+----- stderr -----
+

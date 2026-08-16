@@ -1,0 +1,47 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_wt1_two_site_fillable_equivalence_2026_08_15.py
+runner_sha256: bc60c7098ec5ab92b622fda10799fdabf2106830e52d8fa64daaa6c85dccea97
+input_fingerprint_sha256: fd19191039d7cddb495033db0108dbef7c46ce79cf2ea98c1dd50e9f525d484f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+external_scientific_inputs: current Lattice, Admissibility, and Record wording; no observations or fits
+integrity_reads: this runner, its note, and the axiom memo
+construction: 32 cube-covariant complement-even predicates on the two-cube, off-patch occupancy 0
+negative_scope: displayed selector only; wt1 is not written into Admissibility
+PASS: audit-inputs declared source-bound pair exists
+PASS: source-lattice current cubic nearest-neighbor wording is pinned
+PASS: source-admissibility current local-distribution wording is pinned
+PASS: source-record-boundary current lock/content/unreadable-at-absence wording is pinned
+PASS: source-formation-boundary formation site/probability/rate remains outside Admissibility
+PASS: vertex-count two-cube has twelve vertices
+PASS: orbit-partition proper-cube action on six-tuples has ten orbits with derived sizes
+PASS: complement-action complement pairs empty/full, wt1/wt5, opp2/opp4, adj2/adj4 and fixes vertex3, mixed3
+PASS: f-cut-cardinality five free remaining bits give 32 F_cut maps
+PASS: two-site-seeds C(12,2)=66 unordered two-site seeds
+PASS: l1-bits n≠0 evaluates to remaining-bit tuple (1,0,1,1,1) and lies in F_cut
+PASS: l1-not-hamming Hamming parity is a different F_cut tuple
+N_wt1=16
+N_pos=14
+N_both=14
+equivalent=False
+lex_counterexample_tuple: (1, 0, 0, 0, 0) cov2=0
+wt1_cov2_spectrum: {0: 2, 8: 4, 16: 2, 32: 2, 36: 2, 62: 2, 66: 2}
+counterexamples: [((1, 0, 0, 0, 0), 0), ((1, 1, 0, 0, 0), 0)]
+PASS: theorem1-wt1-zero every wt1=0 map has cov2=0
+PASS: theorem2-counts N_wt1=16, N_pos=14, N_both=14
+PASS: theorem2-not-equivalent positive 2-site coverage is not equivalent to f(wt1)=1
+PASS: theorem2-counterexample lex-first counterexample is (1, 0, 0, 0, 0) with cov2=0 and f(wt1)=1
+PASS: l1-positive-control f_L1 has wt1=1 and cov2=62
+PASS: cex-stalls lex-first counterexample never reaches halt lock-count 12; max halt is 10
+PASS: note-scope note reports the failed equivalence, displays a counterexample, and does not adopt wt1
+PASS: claim-scope claim_scope states the failed cov2>0 versus wt1 equivalence
+PASS: not-leftover new selector, not leftover of #6482 or #6429
+PASS: no-axiom-edit the theorem proposes no axiom change and does not adopt wt1
+PASS: forbidden-phrases-absent the note and runner omit the dispatch-forbidden phrases
+TOTAL: PASS=23 FAIL=0
+
+----- stderr -----
+

@@ -1,6 +1,6 @@
 {
- "edge_count": 15954,
- "node_count": 5546,
+ "edge_count": 15958,
+ "node_count": 5547,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -432,6 +432,10 @@
   },
   "admissibility_dirac_kahler_even_parity_paired_branch_bounded_theorem_note_2026-08-15": {
    "deps_hash": "7fd8a533f9c6",
+   "out_degree": 4
+  },
+  "admissibility_dirac_kahler_floquet_monodromy_action_pairing_bounded_theorem_note_2026-08-16": {
+   "deps_hash": "666669959202",
    "out_degree": 4
   },
   "admissibility_dirac_kahler_global_dressing_involution_positivity_bounded_theorem_note_2026-08-15": {

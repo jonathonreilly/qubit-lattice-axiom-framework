@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_floquet_monodromy_action_pairing_2026_08_16.py
+runner_sha256: ed87b597fa2a7954e8610c4e5eddb0a9078c0f499a4a24f9807a101dd43aa8de
+input_fingerprint_sha256: b4102afc51a76bf1630d7e5965804707c421ff33b631a61f5f882e4639ce61ea
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 47.30
+status: ok
+----- stdout -----
+[PASS] A-authority: Block 117 blobs and ancestors 116--103 are pinned
+[PASS] B-the-floquet-structure: exact alternating band, varying companions, and four-step Z8 closure
+[PASS] C-the-monodromy: det T=1, local determinants telescope, tau<-2, and eight magnitude intervals are pinned
+[PASS] D-the-reproduction-and-stationarity-ledger: K[n,j] gives Q_k^-1 and ranks D1/D4/D8 are 8/8/0
+[PASS] E-the-gauge-obstruction: a complex fourth root exists but z^4=r<0 has no real solution
+[PASS] F-the-degenerations: exact torus and geometric-Hankel ranks, zero pencil, and four pinned rho^2 intervals
+[PASS] G-the-dressed-micro-motion-identity: parameter-free dressed identity and common-denominator additive splits
+[PASS] H-scope: all required note phrases, firewalls, and runtime bound
+FLOQUET c=5/13: local_traces(k0)=(106942281/39529825, 64819935681/22611182600, 106942281/39529825, 64819935681/22611182600); tau(k0/2,k1/3)=(-3962371610825721602827025599106/127417091906251505055019140625, -238964531421974037129547858425706/96695624036307976527392578125); |eigenvalues|=k0/2=(32190095809/1000000000000,32190095810/1000000000000),(31065455844352/1000000000000,31065455844353/1000000000000);k1/3=(404644318/1000000000000,404644319/1000000000000),(2471306170017694/1000000000000,2471306170017695/1000000000000)
+FLOQUET c=3/5: tau(k0/2,k1/3)=(-234369399320455883852546/8465566947515869140625, -1098683146867769276340242/210922496818387890625); |eigenvalues|=k0/2=(36167865356/1000000000000,36167865357/1000000000000),(27648853205704/1000000000000,27648853205705/1000000000000);k1/3=(191977555/1000000000000,191977556/1000000000000),(5208942255796407/1000000000000,5208942255796408/1000000000000)
+STATIONARITY c=5/13: D1=(8, 8, 8, 8), D1[0,0]=-21117345408000/1026791823428467; D4=(8, 8, 8, 8), D4[0,1]=238394787508800/1026791823428467; D8=(0, 0, 0, 0)
+STATIONARITY c=3/5: D1=(8, 8, 8, 8), D1[0,0]=-11700495360/250649423107; D4=(8, 8, 8, 8), D4[0,1]=94899211200/250649423107; D8=(0, 0, 0, 0)
+GAUGE: the complex fourth-root criterion holds; x^4+a>0 for real x and exact a>0, excluding a reflection-real quarter-turn root
+PAIRING c=5/13: M=(8,16), blocks=(2,4); H00=(1,2), geometric-Hankel, pencil=0; beta=rho^2 in k0/2=(1036202268192599364481/1000000000000000000000000,10362022682569795561/10000000000000000000000);k1/3=(40934256022421281/250000000000000000000000,163737024898973761/1000000000000000000000000) subset (0,1)
+PAIRING c=3/5: M=(8,16), blocks=(2,4); H00=(1,2), geometric-Hankel, pencil=0; beta=rho^2 in k0/2=(81757155275609062921/62500000000000000000000,1308114484482080737449/1000000000000000000000000);k1/3=(1474215264951121/40000000000000000000000,2303461375483321/62500000000000000000000) subset (0,1)
+IDENTITY: c=5/13:k0=293040926496000/1026791823428467+(62307871416000/1026791823428467)=355348797912000/1026791823428467;k2=293040926496000/1026791823428467+(-64528891416000/1026791823428467)=228512035080000/1026791823428467; c=3/5:k0=62924832000/250649423107+(23571240000/250649423107)=86496072000/250649423107;k2=62924832000/250649423107+(-27560328000/250649423107)=35364504000/250649423107; shared-denominator fingerprint=(1026791823428467,250649423107); runtime=47.039s
+N5: per_element: exact pentadiagonal, companion, monodromy, inverse, stationarity-residual, dressed-identity, rank, and root-isolation identities are checked
+per_site: one Grassmann mode per fine site on the antiperiodic reflection torus
+per_mode: all four fixed momenta at c=5/13 and c=3/5 have determinant-one negative Floquet spectra, with exact inverse and degeneration ledgers
+per_block: no reflection-real one-step-stationary gauge exists for this action, while the one-dimensional moment quotient has beta=rho^2 in (0,1) without a positive OS form
+lattice_wide: checked and not executed — the reflection intertwiner, positive OS Hilbert space, curved OS positivity, the actual ADM/history transporter completion, joint gravity, the gravity constraint quotient, Records, audit retention, and TOE closure remain open
+RESULT: the action's transfer is a determinant-one floquet monodromy with strictly negative eigenvalues — the stationary pairing exists only at the full-torus shift, the naive pairings degenerate exactly, and the contractive root rho^2 lives on a quotient that lacks a positive pairing
+DECISION_CUT: construct the reflection intertwiner completing the geometric-hankel pairing to a positive OS package; reject further one-step-window constructions
+TOE: zero obligation retirement, retained-positive end-to-end theory count remains zero, and no TOE percentage moves
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

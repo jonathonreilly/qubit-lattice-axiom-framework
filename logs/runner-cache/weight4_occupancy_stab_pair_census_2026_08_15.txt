@@ -1,0 +1,62 @@
+===== runner cache v1 =====
+runner: scripts/weight4_occupancy_stab_pair_census_2026_08_15.py
+runner_sha256: 5dcdbe1d29256cd05d9ff316c8c23baff8a4d2222392195e2c9875a342d81268
+input_fingerprint_sha256: a23af0cf4af693e5b26a19560891ca1ac78d65fd229738c4fc0a68aff76e606a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+weight-4 occupancy stabilizer vs July-3 pair members
+AUDIT_INPUT_PATHS:
+  docs/WEIGHT4_OCCUPANCY_STAB_PAIR_CENSUS_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+G_plus=24
+N_pair=48
+N_masks=15
+sigma |Stab| N_pair_support N_stab_ok
+(0, 0, 1, 1, 1, 1) 8 0 0
+(0, 1, 0, 1, 1, 1) 2 4 0
+(0, 1, 1, 0, 1, 1) 2 4 0
+(0, 1, 1, 1, 0, 1) 2 4 0
+(0, 1, 1, 1, 1, 0) 2 4 0
+(1, 0, 0, 1, 1, 1) 2 4 0
+(1, 0, 1, 0, 1, 1) 2 4 0
+(1, 0, 1, 1, 0, 1) 2 4 0
+(1, 0, 1, 1, 1, 0) 2 4 0
+(1, 1, 0, 0, 1, 1) 8 0 0
+(1, 1, 0, 1, 0, 1) 2 4 0
+(1, 1, 0, 1, 1, 0) 2 4 0
+(1, 1, 1, 0, 0, 1) 2 4 0
+(1, 1, 1, 0, 1, 0) 2 4 0
+(1, 1, 1, 1, 0, 0) 8 0 0
+N_ok_masks=0
+lex_first=None
+N_pair_support_sum=48
+PASS: audit-input-paths | AUDIT_INPUT_PATHS is the required static two-string literal tuple
+PASS: source-lattice
+PASS: source-admissibility
+PASS: source-unread-qubit
+PASS: g-plus-order | proper=24
+PASS: weight-4-mask-count | N_masks=15
+PASS: theorem-1-table | N_ok_masks=0
+PASS: theorem-2-n-ok-masks | N_ok_masks=0
+PASS: claim-scope
+PASS: displayed-not-adopted
+PASS: l1-not-attached
+PASS: not-leftover-prior
+PASS: admissibility-unedited
+PASS: forbidden-phrases
+PASS: no-axiom-edit
+PASS: masks-only-scope
+per_element: |Stab|, N_pair_support, N_stab_ok are exact integers
+per_site: occupancy masks only
+per_mode: no spectral calculation
+per_block: the 15 weight-4 6-bit occupancy masks
+lattice_wide: checked and not executed
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

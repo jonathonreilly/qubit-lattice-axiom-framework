@@ -1,0 +1,58 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_cov4_q10_selector_test_2026_08_15.py
+runner_sha256: 46eaf3ac31a423b56fbce3f6e13018ed26bc34af0ebc19ea39accdf66f6be4fb
+input_fingerprint_sha256: 87e54ae398542fc20d68cdff95adad7db88d23d5e06dfb3cfb85bddd1af780b8
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_COV4_Q10_SELECTOR_TEST_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+external_scientific_inputs: current Lattice/Admissibility/Record boundary only; no observation or fit
+negative_scope: displayed Q10 versus cov4>0; does not adopt Q10; duality is not assumed
+n_rotations=24
+n_orbits=10
+remaining_labels=('wt1', 'opp2', 'adj2', 'vertex3', 'mixed3')
+|F_cut|=32
+n_four_site_seeds=495
+N_pos=24
+N_Q10=28
+N_both=22
+N_Q4=24
+N_both_Q4=24
+n_mismatch=8
+lex_first_miss=(0, 0, 0, 0, 1)
+lex_first_cov4=0
+lex_first_Q10=1
+cov4(f_L1)=489
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required note-plus-axiom string-literal tuple
+PASS: thm1-host 24 rotations, 10 orbits, 32 F_cut maps, 495 four-site seeds
+PASS: thm1-f-L1-is-unbalanced-axis f_L1 is 1 iff some axis has c_+ != c_-
+PASS: thm1-f-L1-not-hamming f_L1 is n!=0, not Hamming |c|_1 mod 2
+PASS: thm1-not-equivalent cov4>0 is not equivalent to Q10 among the 32 F_cut maps
+PASS: thm1-lex-first-miss lex-first miss remaining-bit tuple is (0, 0, 0, 0, 1)
+PASS: thm2-counts N_pos=24, N_Q10=28, N_both=22
+PASS: thm2-q4-control on the same scoring, cov4>0 equals Q4 and is not Q10
+PASS: thm3-display-not-adopted Q10 is displayed and is not adopted
+PASS: source-lattice-admissibility Lattice rotations and Admissibility covariance are pinned
+PASS: source-record-boundary Record lock, content-only readout, unreadable absence, and formation residual are pinned
+PASS: claim-scope claim_scope reports whether cov4>0 equals Q10 and does not adopt Q10
+PASS: note-contract machine fields, three theorems, and forbidden-phrase hygiene hold
+PASS: no-axiom-edit the axiom memo is unedited and the theorem proposes no axiom change
+PASS: off-patch-zero off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: duality-not-assumed Max duality at k=4,5 is not used to transfer positivity
+PASS: not-leftover-c10bit3-6518 the residual is cov4 versus Q10, not leftover-character of c10bit3 or #6518
+per_element: checked exactly — each of the 64 neighbor 6-tuples is assigned its axis-type orbit
+per_site: checked exactly — each of the twelve two-cube vertices uses the same six-direction stencil
+per_mode: checked exactly — every F_cut map is scored on 495 four-site seeds against displayed Q10
+per_block: checked exactly — N_pos, N_Q10, and N_both are the F_cut positivity-versus-Q10 counts on this patch
+lattice_wide: checked and not executed — no Z^3-wide formation law or physical Admissibility selector is claimed
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

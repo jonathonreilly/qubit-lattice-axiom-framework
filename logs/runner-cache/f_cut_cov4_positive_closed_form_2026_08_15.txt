@@ -1,0 +1,67 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_cov4_positive_closed_form_2026_08_15.py
+runner_sha256: ebec3754b53773feedf60c43a5d027e02d9f5fbd872e34aaac42ccd841f37c83
+input_fingerprint_sha256: 0cb5fdccc00cd16ebff2a97ad8a05f04ceab9d1bd61cfb3726f83d600bf43c74
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.30
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_COV4_POSITIVE_CLOSED_FORM_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+n_rotations=24
+n_orbits=10
+orbit_types_and_sizes=(0, 0, 3):1,(0, 1, 2):3,(0, 2, 1):3,(0, 3, 0):1,(1, 0, 2):6,(1, 1, 1):12,(1, 2, 0):6,(2, 0, 1):12,(2, 1, 0):12,(3, 0, 0):8
+remaining_labels=('wt1', 'opp2', 'adj2', 'vertex3', 'mixed3')
+N_free=5
+|F_cut|=32
+n_four_site_seeds=495
+N_P=14
+N_pos=24
+N_both=14
+n_mismatch=10
+lex_first_counterexample=(0, 0, 1, 0, 0)
+lex_first_cov4=52
+lex_first_P=0
+cov4_f_L1=489
+f_L1_bits=(0, 0, 0, 0, 1, 1, 1, 1, 1, 1)
+f_L1_remaining=(1, 0, 1, 1, 1)
+f_hamming_bits=(0, 0, 0, 0, 1, 1, 1, 0, 0, 1)
+f_hamming_cov4=273
+P_of_f_L1=1
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required note-plus-axiom string-literal tuple
+PASS: thm1-twenty-four-rotations exactly 24 proper cube rotations
+PASS: thm1-ten-orbits exactly 10 orbits partition the 64 cells of {0,1}^6
+PASS: thm1-orbit-sizes orbit sizes are the axis-type class sizes
+PASS: thm1-f-cut-cardinality F_cut has five free bits and size 32
+PASS: thm1-f-L1-is-unbalanced-axis f_L1 is 1 iff some axis has c_+ != c_-
+PASS: thm1-f-L1-not-hamming f_L1 is not Hamming |c|_1 mod 2
+PASS: thm1-two-cube-and-four-site-seeds the two-cube has twelve vertices and C(12,4)=495 four-site seeds
+PASS: thm1-not-equivalent cov4>0 is not equivalent to P among the 32 F_cut maps
+PASS: thm1-lex-first-counterexample lex-first counterexample remaining-bit tuple is (0, 0, 1, 0, 0)
+PASS: thm2-counts N_P=14, N_pos=24, N_both=14
+PASS: thm2-p-implies-positive every P-true map has cov4>0; ten P-false maps have cov4>0
+PASS: thm3-display-not-adopt P is displayed and is not adopted as an Admissibility selector
+PASS: lattice-and-admissibility-parents the live axiom memo supplies Z^3, proper cubic rotations, and a covariant nearest-neighbor rule
+PASS: note-contract bounded theorem, displayed-not-adopted P, and machine status
+PASS: claim-type-and-gate N1-N8 and a passing no-go disposition are source-visible
+PASS: forbidden-phrases-absent the note and runner omit the dispatch-forbidden phrases
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: note-reports-equivalence-failure the note reports the failed equivalence, the lex-first witness, and the three counts
+PASS: no-axiom-edit the theorem proposes no axiom change
+PASS: off-patch-zero off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: not-leftover-6494-6502-6503 the residual is 4-site positivity versus P, not leftover-character of #6494, #6502, or #6503
+PASS: claim-scope-closed-form claim_scope reports whether positive 4-site coverage is equivalent to P
+PASS: p-definition-and-l1-in-class P is the remaining-bit predicate on F_cut and f_L1 satisfies P
+per_element: checked exactly — each of the 64 neighbor 6-tuples is assigned its axis-type orbit
+per_site: checked exactly — each of the twelve two-cube vertices uses the same six-direction stencil
+per_mode: checked exactly — every F_cut map is scored by whether any of the 495 four-site seeds fills
+per_block: checked exactly — N_P, N_pos, and N_both are the F_cut positivity-versus-P counts on this patch
+lattice_wide: checked and not executed — no Z^3-wide formation law or physical Admissibility selector is claimed
+TOTAL: PASS=24 FAIL=0
+
+----- stderr -----
+

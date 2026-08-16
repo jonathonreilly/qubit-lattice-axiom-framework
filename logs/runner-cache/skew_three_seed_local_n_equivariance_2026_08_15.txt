@@ -1,0 +1,63 @@
+===== runner cache v1 =====
+runner: scripts/skew_three_seed_local_n_equivariance_2026_08_15.py
+runner_sha256: 22101edee0369979fcc9c3e5d08effe9e3a87ecf32fa11021ac9570ff29db585
+input_fingerprint_sha256: 3ecc09facd299b52674794f56f070ba5bce3b12934b41388b7f71cc05d3a348e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/SKEW_THREE_SEED_LOCAL_N_EQUIVARIANCE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+external_scientific_inputs: current Lattice, Qubit, Admissibility, and Record sentences; G+ rebuilt as the 24 proper cube rotations
+construction: U=B_2(0)∪B_2((2,0,0))∪B_2((1,2,1)), unread v=(-1,1,1)
+negative_scope: displayed local-in-n map only; not adopted; L1 not attached
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required static two-string literal tuple
+PASS: source-lattice current cubic nearest-neighbor wording is pinned
+PASS: source-admissibility current local-distribution wording is pinned
+PASS: source-covariance Admissibility still requires one proper-cubic covariant rule
+PASS: source-formation-boundary formation site/probability/rate remains outside Admissibility
+PASS: source-qubit Qubit remains M_2(C)
+PASS: source-record lock, permanence, content-only readout, and unreadability at absence are pinned
+U_card=62
+v_in_U=False
+occupancy_mask=(1, 0, 1, 1, 0, 1)
+displayed_c=(−,0,+,−,0,+)
+slot dir=(1, 0, 0) w=(0, 1, 1) n=(1/3,0,-1/3) label=−
+slot dir=(-1, 0, 0) w=(-2, 1, 1) n=empty label=0
+slot dir=(0, 1, 0) w=(-1, 2, 1) n=(1/3,0,0) label=+
+slot dir=(0, -1, 0) w=(-1, 0, 1) n=(1/3,0,-1/3) label=−
+slot dir=(0, 0, 1) w=(-1, 1, 2) n=empty label=0
+slot dir=(0, 0, -1) w=(-1, 1, 0) n=(1/3,-1/3,0) label=+
+G_plus=24
+N_commute=1
+N_defined=1
+N_commute_over_24=1/24
+shared_other_same_orbit=True
+identity_commutes=True
+PASS: g-plus-order finite G+ is exactly the 24 proper cube rotations
+PASS: center-unread the star center v is not already in U
+PASS: u-geometry U is the union of three radius-2 ℓ¹ balls and has 62 sites
+PASS: occupancy-mask occupied nearest neighbors of v are exactly +x,+y,−y,−z
+PASS: theorem-1-map the displayed local-in-n map reproduces c=(−,0,+,−,0,+)
+PASS: theorem-1-commute N_commute among the 24 proper rotations is computed and reported
+PASS: theorem-2-not-equivariant N_commute is not 24, so the map is not cube-covariant
+PASS: claim-scope the note reports the declared displayed claim_scope
+PASS: displayed-not-adopted the map is displayed and is not written into Admissibility
+PASS: l1-not-attached the note does not attach L1 and does not add a fourth ball
+PASS: not-leftover-prior the note is not leftover-char of skewrun execution or slotn
+PASS: admissibility-unedited the firing local-in-n map is not written into Admissibility
+PASS: forbidden-phrases the forbidden rhetoric strings are absent from the note and runner
+PASS: no-axiom-edit the only axiom authority is the current memo; no cache or axiom rewrite
+per_element: local-in-n letters and N_commute are exact integers
+per_site: only the unread star center v is scored
+per_mode: no spectral calculation
+per_block: the six-neighbor star at v only
+lattice_wide: checked and not executed
+TOTAL: PASS=21 FAIL=0
+
+----- stderr -----
+

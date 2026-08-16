@@ -1,0 +1,51 @@
+===== runner cache v1 =====
+runner: scripts/skew_three_seed_tied_n_break_2026_08_15.py
+runner_sha256: b600274832e0ca00063ae4601311bda0232ad39e9158303c58092e076905659a
+input_fingerprint_sha256: b89eb59223a41df4d0e488c32529b8d6199dfe309a5c30ac38fd2d91b2065828
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/SKEW_THREE_SEED_TIED_N_BREAK_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+scientific_dependency: current minimal_axioms Lattice covariance clause
+declared_math: U occupancy; n = d/3; finite G+ in the 3-vector representation
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required static two-string literal tuple
+PASS: g-plus-order finite G+ is exactly the 24 proper cube rotations
+U_size: 62
+ball_sizes: [25, 25, 25]
+pairwise_overlaps: [7, 4, 4]
+triple_overlap: 2
+PASS: u-geometry U is the union of three radius-2 ℓ¹ balls and lies inside the box
+N_4: 7
+N_uneq: 4
+N_noswap: 0
+site (-1, 1, 1) uneq=True noswap=False amb=[+x:(1/3, 0, -1/3), -y:(1/3, 0, -1/3), -z:(1/3, -1/3, 0)] tied=[]
+site (0, 1, 2) uneq=True noswap=False amb=[+x:(0, 1/3, -1/3), +y:(1/3, 0, -1/3), -z:(1/3, 0, -1/3)] tied=[]
+site (1, -1, -1) uneq=False noswap=False amb=[+x:(0, 1/3, 1/3), -x:(0, 1/3, 1/3)] tied=[+x/-x n=(0, 1/3, 1/3) |Stab|=2 swap=True]
+site (1, -1, 1) uneq=False noswap=False amb=[+x:(0, 1/3, -1/3), -x:(0, 1/3, -1/3), +y:(0, 1/3, -1/3)] tied=[+x/-x n=(0, 1/3, -1/3) |Stab|=2 swap=True]
+site (1, 0, 2) uneq=False noswap=False amb=[+y:(0, 1/3, -1/3), -z:(0, 1/3, -1/3)] tied=[]
+site (2, 1, 2) uneq=True noswap=False amb=[-x:(0, 1/3, -1/3), +y:(-1/3, 0, -1/3), -z:(-1/3, 0, -1/3)] tied=[]
+site (3, 1, 1) uneq=True noswap=False amb=[-x:(-1/3, 0, -1/3), -y:(-1/3, 0, -1/3), -z:(-1/3, -1/3, 0)] tied=[]
+PASS: theorem-1-n4 unread 4-occupied-NN count is N_4 = 7
+PASS: theorem-1-n-uneq four census sites have unequal ambiguous n; N_uneq = 4
+PASS: theorem-1-n-noswap no tied pair lacks a slot-swap in Stab(n); N_noswap = 0
+lex_first_breaker: (-1, 1, 1)
+PASS: theorem-2-lex-first lex-first breaker is the unread site (−1, 1, 1)
+PASS: theorem-2-opposite-labels at the lex-first breaker, opposite labels are equivariance-allowed
+PASS: theorem-1-site-list the seven census sites and four unequal-n witnesses match the note
+PASS: off-axis-is-load-bearing replacing the third center by (0,2,0) restores N_uneq = N_noswap = 0
+PASS: lattice-clause the current Lattice wording supplies finite proper cubic rotations
+PASS: admissibility-unedited the off-axis triple is displayed and is not written into Admissibility
+PASS: displayed-not-adopted the note reports the U census without adopting it, attaching L1, or cloning a 4th ball
+PASS: forbidden-phrases the forbidden rhetoric strings are absent from the note and runner
+PASS: claim-scope claim_scope and machine status match the displayed-not-adopted residual
+PASS: no-axiom-edit the only axiom authority is the current memo; no cache or axiom rewrite
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

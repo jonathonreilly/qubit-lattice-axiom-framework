@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/two_ball_slot_odd_tie_label_2026_08_15.py
+runner_sha256: 040b6801de717467d1dcb894eac7feaa81b36ec41d34a25eab6714a8113e78a3
+input_fingerprint_sha256: 539d6d8d3d47868e3bf32e2106944e49e7d2c99c5b7ff844884c431e80a6a492
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/TWO_BALL_SLOT_ODD_TIE_LABEL_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+U: B_2(0) ∪ B_2((2,0,0)); |U| computed by ℓ¹ membership only
+v1=(1, -1, 1) mask=(1, 1, 1, 0, 0, 1) complete=('+', '-', '-', '0', '0', '+') fire=1
+v2=(1, 1, -1) mask=(1, 1, 0, 1, 1, 0) complete=('+', '-', '0', '+', '-', '0') fire=1
+N_pair=48 commute_v1=3/24 commute_v2=3/24
+PASS: audit-input-paths declared inputs are exactly the note and the current axiom memo
+PASS: lattice-clause Lattice supplies Z^3, six-neighbor adjacency, and proper cubic rotations
+PASS: admissibility-covariance-clause Admissibility requires one covariant nearest-neighbor rule
+PASS: U-two-ball |U|=43; both positive sites unread
+PASS: v1-mask-and-equal-n v1 mask (1,1,1,0,0,1); tied n=(0,1/3,-1/3); unique-axis −,+ on +y,−z
+PASS: v2-mask-and-equal-n v2 mask (1,1,0,1,1,0); tied n=(0,-1/3,1/3); unique-axis +,- on −y,+z
+PASS: theorem1-completed-tuples slot-odd completions (+,−,−,0,0,+) and (+,−,0,+,−,0)
+PASS: july3-pair-census unique k=3 pair has 48 fully-mixed axis-bicolored 6-tuples and contains both completions
+PASS: theorem1-N-fire N_fire=1 at each positive unread site
+PASS: theorem2-not-cube-equivariant full completion commutes for 3/24 and 3/24 proper rotations
+PASS: theorem3-displayed-not-adopted the note displays the tie-break and refuses adoption into Admissibility
+PASS: claim-scope front matter carries the dispatch claim_scope verbatim
+PASS: forbidden-phrases the note omits the dispatch-forbidden tokens
+PASS: no-axiom-edit the axiom memo is unread for edit and does not contain the displayed rule
+PASS: note-contract bounded-support note states the three theorems and the current axiom memo
+per_star: occupancy kernel n=d/3, unique-axis sign, and slot-odd completion are evaluated only at v1 and v2 on U
+lattice_wide: checked and not executed — no further unread site or grown occupancy is scored
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

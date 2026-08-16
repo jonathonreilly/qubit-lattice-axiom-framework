@@ -1,0 +1,63 @@
+===== runner cache v1 =====
+runner: scripts/equal_radius_lock_tick_lipschitz_2026_08_15.py
+runner_sha256: 3a937851d46bd2acf08d230cca2114443c9ee123576c2012fdbca168117c0083
+input_fingerprint_sha256: 13d942942a62a8bed6b4aeb24828c70acd7890f16e76b7ada9017f40cc08e97b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.01
+status: ok
+----- stdout -----
+equal-radius lock-tick Lipschitz identity
+AUDIT_INPUT_PATHS:
+  docs/EQUAL_RADIUS_LOCK_TICK_LIPSCHITZ_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+external_scientific_inputs: current Lattice, Qubit, Admissibility, and Record sentences; July-3 k=3 pair rebuilt from the proper-cube action on 3-letter 6-tuples
+construction: finite equal-radius l1 unions, any r>=1; score the identity only
+negative_scope: identity only; displayed, not adopted; L1 not attached; no 4th equal-radius ball
+G_plus=24
+N_pair=48
+N_lip_fail=0
+N_floor_fail=0
+N_tick_fail=0
+N_stab_fail=0
+N_unread=4090
+N_occupied_slots=709
+N_weight4_samples=22
+N_ok_masks=0
+N_stab_ok_total=0
+N_tick_ok_total=0
+known_in_union=False
+known_t_v=3
+known_sigma=(1, 0, 1, 1, 0, 1)
+known_ticks=(2, None, 2, 2, None, 2)
+known_stab=2
+known_stab_t=2
+PASS: audit-input-paths | AUDIT_INPUT_PATHS is the required static two-string literal tuple
+PASS: source-lattice
+PASS: source-admissibility
+PASS: source-unread-qubit
+PASS: g-plus-order | proper=24
+PASS: theorem-1-lipschitz | N_lip_fail=0 N_pair_pts=3188646
+PASS: theorem-1-unread-floor | N_floor_fail=0 known_t_v=3
+PASS: theorem-1-occupied-tick-equals-r | N_tick_fail=0 occupied=709
+PASS: theorem-2-stab-identity | N_stab_fail=0 known_stab=2
+PASS: theorem-2-n-tick-ok | N_tick_ok_total=0 N_pair=48
+PASS: theorem-2-weight4-zero | N_ok_masks=0
+PASS: claim-scope
+PASS: displayed-not-adopted
+PASS: l1-not-attached
+PASS: not-leftover-tickhost
+PASS: admissibility-unedited
+PASS: forbidden-phrases
+PASS: no-axiom-edit
+per_element: t, Stab(σ), Stab(σ,t), N_tick_ok, N_stab_ok are exact integers
+per_site: unread stars of equal-radius unions; identity only
+per_mode: no spectral calculation
+per_block: equal-radius unions only
+lattice_wide: checked and not executed
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

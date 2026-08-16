@@ -1,0 +1,56 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_ex0_three_site_fill_orbit_2026_08_15.py
+runner_sha256: 808b3b9c9e171cedb3024ea1bfec601ac3902a24d8a17aed56335cb3a19726fe
+input_fingerprint_sha256: f0c6e78d53586124f7d3c9c32d6689119b6acc16287adf83dea0a504f4d7c158
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_EX0_THREE_SITE_FILL_ORBIT_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+n_rotations=24
+n_preserving=8
+n_config_orbits=10
+|F_cut|_free_check=32
+n_three_site_seeds=220
+f_ex0_remaining=(0, 0, 1, 1, 0)
+f_L1_remaining=(1, 0, 1, 1, 1)
+|M|=24
+seed_6517_in_M=True
+N_orb=4
+lex_reps=[((0, 0, 0), (1, 0, 1), (2, 1, 0)), ((0, 0, 0), (1, 0, 1), (2, 1, 1)), ((0, 0, 0), (1, 1, 0), (2, 0, 1)), ((0, 0, 0), (1, 1, 0), (2, 1, 1))]
+orbit_sizes=(8, 4, 8, 4)
+M_closed_under_G=True
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required note-plus-axiom string-literal tuple
+PASS: thm1-twenty-four-rotations exactly 24 proper cube rotations
+PASS: thm1-ten-orbits exactly 10 orbits partition the 64 cells of {0,1}^6
+PASS: thm1-f-cut-and-f-ex0 F_cut has size 32 and f_ex0=(0,0,1,1,0) is a member
+PASS: thm1-f-L1-not-hamming f_L1 is unbalanced-axis n_mu != 0, not Hamming |c|_1 mod 2
+PASS: thm1-two-cube-and-220-seeds the two-cube has twelve vertices and C(12,3)=220 three-site seeds
+PASS: thm1-fill-count-and-6517 |M|=24 and the #6517 seed is in M
+PASS: thm2-preserving-group two-cube-preserving proper rotations about the box center form a group of order 8
+PASS: thm2-n-orb-and-lex-reps N_orb=4 with one lex representative per orbit
+PASS: thm3-display-not-list-twenty-four the note displays N_orb and does not list all 24 seeds
+PASS: lattice-and-admissibility-parents the live axiom memo supplies Z^3, proper cubic rotations, and a covariant nearest-neighbor rule
+PASS: note-contract bounded theorem, displayed-not-adopted orbit type, and machine status
+PASS: claim-type-and-gate N1-N8 and a passing no-go disposition are source-visible
+PASS: forbidden-phrases-absent the note and runner omit the dispatch-forbidden phrases
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: no-axiom-edit the theorem proposes no axiom change
+PASS: off-patch-zero off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: not-leftover-count the residual is the orbit type of the counted fill set, not leftover of the cov3=24 count
+PASS: claim-scope-orbit claim_scope states the 24 three-site fills of f_ex0 form N_orb orbits
+PASS: cache-and-timeout audit timeout is 120s and no runner cache is written
+per_element: checked exactly — each of the 64 neighbor 6-tuples is assigned its axis-type orbit
+per_site: checked exactly — each of the twelve two-cube vertices uses the same six-direction stencil
+per_mode: checked exactly — f_ex0 is scored on all 220 three-site seeds; G acts on M
+per_block: checked exactly — N_orb is the orbit count of the 24-element fill set
+lattice_wide: checked and not executed — no Z^3-wide formation law or physical Admissibility selector is claimed
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

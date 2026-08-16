@@ -1,0 +1,60 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_cov9_q8_selector_test_2026_08_15.py
+runner_sha256: d8eb9ae1deca5314e9e6d854cbdae0f4023dafad01495d789036fb535e13dd20
+input_fingerprint_sha256: 0ef945080415ffe0c297988882fa6de9e93f3d4d545098ad38c292d6ee6def5f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_COV9_Q8_SELECTOR_TEST_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+external_scientific_inputs: current Lattice/Admissibility/Record boundary only; no observation or fit
+negative_scope: displayed Q8 versus cov9>0; does not adopt Q8
+n_rotations=24
+n_orbits=10
+remaining_labels=('wt1', 'opp2', 'adj2', 'vertex3', 'mixed3')
+|F_cut|=32
+n_nine_site_seeds=220
+N_pos=26
+N_Q8=30
+N_both=26
+N_mismatch=4
+cov9(f_L1)=220
+lex_first_miss=(0, 1, 0, 0, 0)
+lex_first_cov9=0
+lex_first_Q8=1
+equiv=0
+pos_implies_Q8=1
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required note-plus-axiom string-literal tuple
+PASS: thm1-host 24 rotations, 10 orbits, 32 F_cut maps, 220 nine-site seeds
+PASS: thm1-f-L1-is-unbalanced-axis f_L1 is 1 iff some axis has c_+ != c_-
+PASS: thm1-f-L1-not-hamming f_L1 is n!=0, not Hamming |c|_1 mod 2
+PASS: thm1-q8-is-four-bit-or Q8 is wt1 or adj2 or opp2 or vertex3
+PASS: thm1-not-equivalent cov9>0 is not equivalent to Q8 among the 32 F_cut maps
+PASS: thm1-lex-first-miss one lex-first remaining-bit miss is (0, 1, 0, 0, 0)
+PASS: thm1-pos-implies-q8 positivity implies Q8; the unique Q6-false positive is Q8-true
+PASS: thm2-counts N_pos=26, N_Q8=30, N_both=26
+PASS: thm2-split four Q8-true maps have cov9=0 and no Q8-false map has cov9>0
+PASS: thm3-display-not-adopt Q8 is displayed and is not adopted as an Admissibility selector
+PASS: source-lattice-admissibility Lattice rotations and Admissibility covariance are pinned
+PASS: source-record-boundary Record lock, content-only readout, unreadable absence, and formation residual are pinned
+PASS: claim-scope claim_scope reports the 9-site positivity-versus-Q8 comparison and does not adopt Q8
+PASS: note-contract machine fields, three theorems, and forbidden-phrase hygiene hold
+PASS: no-axiom-edit the axiom memo is unedited and the theorem proposes no axiom change
+PASS: off-patch-zero off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: not-leftover-c9q6-or-c9sel the residual is new k for Q8, not leftover of c9q6 or c9sel
+PASS: q8-covers-q6-false-positive the unique Q6-false positive (0, 1, 0, 0, 1) is Q8-true
+per_element: checked exactly — each of the 64 neighbor 6-tuples is assigned its axis-type orbit
+per_site: checked exactly — each of the twelve two-cube vertices uses the same six-direction stencil
+per_mode: checked exactly — every F_cut map is scored on 220 nine-site seeds against displayed Q8
+per_block: checked exactly — N_pos, N_Q8, and N_both are the F_cut positivity-versus-Q8 counts on this patch
+lattice_wide: checked and not executed — no Z^3-wide formation law or physical Admissibility selector is claimed
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

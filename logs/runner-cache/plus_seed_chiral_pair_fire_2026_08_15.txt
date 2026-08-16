@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/plus_seed_chiral_pair_fire_2026_08_15.py
+runner_sha256: e1ca25aa93a0d571cba09abf293680d7680e86b0b1217a8151df977bacdf877a
+input_fingerprint_sha256: 2fb220adf68c496b36ac9e7ba7b718c87cba965f8cad5af65b79ecb2d5bd234e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: none; no observational, fitted, literature, scale, or normalization value is used
+explicit_bounded_inputs: the same 6-NN star, the July-3 k=3 pair, and the 64 plus-labelings
+framework_context: Qubit remains one-site M_2(C); no plus-seed is written into Admissibility
+negative_scope: displayed counts only; L1 is not attached
+representative=(0, 1, 0, 2, 1, 2)
+chiral_pair_size=48
+N_new=1
+N_plus=64
+N_fire=0
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the declared note-plus-axiom tuple
+PASS: source-qubit-m2 the axiom memo still names one-site M_2(C)
+PASS: source-admissibility the axiom memo still names one fixed nearest-neighbor rule
+PASS: source-unread the axiom memo still says a site with no record cannot be read
+PASS: july3-unique-pair the July-3 parent names exactly one chiral pair at k=3
+PASS: rep-lex-first the re-earned representative is the July-3 lex-first handed fully-mixed 6-tuple
+PASS: rep-fully-mixed the representative is axis-bicolored with letter counts 2/2/2
+PASS: thm1-fires the fully-mixed representative fires at the unread center
+PASS: thm2-sixty-four there are exactly 64 {+,−} plus-labelings and empty is forbidden
+PASS: thm2-n-fire none of the 64 plus-labelings fire the k=3 pair
+PASS: pair-size the unique pair contains 48 colorings in two proper orbits of 24
+PASS: claim-scope the note reports the required claim_scope
+PASS: displayed-not-adopted the note displays the counts and refuses a plus-seed axiom and L1
+PASS: same-star-only the note stays on the same 6-NN star and does not grow a new patch
+PASS: machine-status-contract the source uses the required bounded-support status fields
+PASS: forbidden-phrases the note omits the forbidden phrases
+PASS: axiom-unedited the axiom memo does not contain a plus-seed or L1 formation rule
+PASS: mutation-rep-silent predicate N_new == 0 on the representative fails
+PASS: mutation-all-fire predicate N_fire == 64 fails
+PASS: mutation-n-fire-zero predicate N_fire == 0 holds
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

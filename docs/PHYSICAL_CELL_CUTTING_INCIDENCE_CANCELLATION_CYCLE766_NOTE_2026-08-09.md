@@ -1,4 +1,4 @@
-# Finite incidence-orbit cancellation begins on pairs — Cycle 766
+# Finite incidence-orbit cancellation begins on pairs
 
 Date: 2026-08-09
 
@@ -122,25 +122,27 @@ orbits, and the cover table is exactly where the non-monotonicity bites: the
 fourth incidence orbit destroys rank that the first three already had. The 39
 acquires a location, not just a size.
 
-Part by part, every one of the 8 rank-losing parts first goes short on a **pair**,
-never on a single orbit, with 0 at size one. So the loss is born at the smallest
-size where cancellation is possible at all.
+At both declared primes, every one of the 8 parts that is short for the full
+four-orbit modular reduction first appears short on a **pair**, never on a single
+orbit, with 0 at size one. Because reduction modulo a prime can lower rank, level
+2 is a lower bound on any corresponding exact first-shortage level; this does not
+by itself prove exact partwise shortage on a pair.
 
-## Rank loss is not monotone, part by part either
+## Modular per-part non-monotonicity diagnostic
 
 The design for this cycle predicted that a part goes short on a proper sub-sum if
 and only if it is one of the eight drop parts. That prediction is false, and the
 runner reports the measurement rather than the prediction.
 
-**3 further parts go short on a pair yet meet `min(m, mc)` on all four**, with
-`d/m/mc` equal to 3/1/3, 4/2/1 and 8/4/2. These parts lose rank on a pair and get
-it back when the remaining orbits are added. Their recovery is not inferred from
-the drop bookkeeping; the second prime rebuilds their four-orbit matrices from
-scratch and confirms that each meets its allowance there too.
+**3 further parts are modularly short on a pair yet meet `min(m, mc)` modulo both
+primes on all four**, with `d/m/mc` equal to 3/1/3, 4/2/1 and 8/4/2. The second
+prime rebuilds the diagnostic from scratch. This is evidence of modular
+non-monotonicity only: no exact loss or recovery for an individual part is
+inferred.
 
-So non-monotone behaviour is not a curiosity of the top of the lattice. It occurs
-on individual parts, in both directions, and any account of the 39 that treats
-rank as accumulating monotonically along a chain of orbits is wrong.
+The exact full-matrix sub-sum ranks above already establish non-monotonicity on
+the finite lattice. These three partwise rows are a finer modular diagnostic and
+are not used to strengthen that exact statement.
 
 The whole level computation is reproduced at the second prime: 15 active parts
 compared, 0 differ, 30 short sub-sums found at those sizes. The primes are
@@ -149,10 +151,11 @@ compared, 0 differ, 30 short sub-sums found at those sizes. The primes are
 ## The cover table in its own neighbourhood
 
 Replace one of the four incidence orbits by any other cell orbit: 368
-substitutions. By the small-matrix reduction their values run from 72 to 144,
-with 53 at the ceiling, 1 equal to 105, and 9 lower. So of the 368 one-exchange
-neighbours, 53 are already maximal and just 9 are worse than the cover table
-itself: the cover table sits near the bottom of its own neighbourhood.
+substitutions. Modulo 1,000,003, the small-matrix reduction gives ranks from 72
+to 144, with 53 at 144, 1 at 105, and 9 below 105. The ceiling theorem makes the
+53 modular-rank-144 neighbours exact-rank-144 witnesses. The other counts remain
+one-sided: only the combined 10 neighbours at or below modular rank 105 bounds
+the number whose exact rank is at or below 105.
 
 A named exact witness: **slot 0 taking orbit 5** lifts the exact rational rank of
 the four-orbit table from 105 to 144. That substitution was found by search over
@@ -244,16 +247,19 @@ contracts explicit. Independent scientific review remains required.
   triple and quadruple values, the singleton value 144, the witness rank 144, the
   five-orbit rank 144, and the intersection dimension 12 are all exact.
 - The per-part levels and the neighbourhood values are modular ranks, and a
-  modular rank can only fall. So a measured level is a lower bound on the true
-  level, the count of 53 neighbours at the ceiling is a lower bound, and the
-  counts of 1 equal to 105 and 9 below it are upper bounds. The second prime
-  agreeing on all 15
-  active parts is an independent-construction control, not a proof.
+  modular rank can only fall. Thus a modular first-shortage level is a lower
+  bound on the corresponding exact level. The 53 neighbours at modular rank 144
+  have exact rank 144 because 144 is the exact ceiling. Any neighbour of exact
+  rank at most 105 must have modular rank at most 105, so the combined count 10
+  (1 at 105 and 9 below) is an upper bound on the exact count at or below 105;
+  the two modular sub-counts have no separate exact interpretation. The second
+  prime agreeing on all 15 active parts is an independent-construction control,
+  not an exact partwise proof.
 - That a table at rank 144 has every part at its own allowance is forced
   arithmetic once the ceiling theorem is in hand, not evidence. It is used here
   only as a consistency check on the witness.
-- The three non-monotone parts are reported exactly as measured, against the
-  cycle's own prior expectation.
+- The three modularly non-monotone parts are reported only as a two-prime
+  diagnostic, against the construction's prior expectation.
 - Nothing here says which geometric feature distinguishes the incidence orbits
   from the orbit that repairs them. That stratification of the 96 cell orbits, and
   the question of which pairs are responsible for the deficiency, are the next

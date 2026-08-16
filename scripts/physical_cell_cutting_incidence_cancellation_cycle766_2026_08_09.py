@@ -1740,33 +1740,39 @@ RSSMB = rss_megabytes(RSS, sys.platform)
 # gates
 # ------------------------------------------------------------------
 
-emit("all numbers below are exact computational identities;"
-     " no floating point enters any gate")
+emit("scientific rank identities use integer or rational arithmetic;"
+     " resource gates use measured floating-point bounds")
 
 gate(NCAND == 2672 and NKEPT == 400 and FLOOR == 6 and NS == 15800
-     and SIZES == [24] and NPI == 192 and NCOV == 192, "C0",
+     and SIZES == [24] and NPI == 192 and NCOV == 192
+     and GENERIC and DISJ_OK and COVEXACT, "C0",
      "object: {0} candidate pieces, {1} at adjacency-cost floor {2}, {3} cuttings"
      " of {4}, {5} pieces used, {6} covers".format(NCAND, NKEPT, FLOOR, NS,
                                                    SIZES[0], NPI, NCOV))
 
 gate(NGRP == 384 and MAPS_DISTINCT and PERM_DISTINCT and CLOSED
-     and NPROD == 147456 and BIJ and PIE_TRANS and COV_TRANS, "C1",
+     and NPROD == 147456 and BIJ and PIE_TRANS and COV_OK and COV_BIJ
+     and COV_TRANS, "C1",
      "group: {0} maps, all distinct, closed over {1} products, bijective {2},"
      " one piece orbit {3}, one cover orbit {4}".format(NGRP, NPROD, yn(BIJ),
                                                         yn(PIE_TRANS),
                                                         yn(COV_TRANS)))
 
-gate(NORB == 104 and NPOC == 120 and NCP == 96 and NPP == NORB, "C2",
+gate(NORB == 104 and NPOC == 120 and NCP == 96 and NPP == NORB
+     and SUMSQ_OK and CSUMSQ_OK and PARTITION and LAB_INV and DEG_CONST
+     and CP_FULL and PP_FULL and PP_AGREE and PAIR_DIV and PAIR_PP
+     and PAIR_CP and PAIR_CC, "C2",
      "orbits: {0} on ordered piece pairs, {1} on ordered cover pairs, {2} on"
      " cover-piece cells, sweep agrees {3}".format(NORB, NPOC, NCP,
                                                    yn(NPP == NORB)))
 
-gate(RANKA == 88 and NKA == 104 and RANKB == 105 and NKB == 87 and GOOD_PRIME,
-     "C3",
+gate(RANKA == 88 and NKA == 104 and RANKB == 105 and NKB == 87 and GOOD_PRIME
+     and GRAM_OK and KANN_A and KANN_B and RSELA == RANKA and RSELB == RANKB
+     and RKKA == NKA and RKKB == NKB, "C3",
      "exact rational ranks: cutting table {0} kernel {1}, cover table {2} kernel"
      " {3}, prime path agrees {4}".format(RANKA, NKA, RANKB, NKB, yn(GOOD_PRIME)))
 
-gate(EQ_OK and EQ_P + EQ_X == 40 and BM_OK, "C4",
+gate(EQ_OK and EQ_P + EQ_X == 40 and BEQUI and BM_OK, "C4",
      "orbit matrices: {0} piece-pair, {1} cell; {2} equivariance checks hold {3};"
      " cover table is the sum of {4} whole cell orbits {5}".format(
          NORB, NCP, EQ_P + EQ_X, yn(EQ_OK), NINB, yn(BM_OK)))
@@ -2226,12 +2232,12 @@ LAT_OK = (len(PRRK) == 6 and len(TRRK) == 4 and QDRK == RANKB
           and max(PRRK + TRRK) <= CEIL and QDRK < min(TRRK))
 
 # ------------------------------------------------------------------
-# 27. the first level at which a part loses rank
+# 27. modular first-shortage diagnostics, at two primes
 # ------------------------------------------------------------------
 
 
 def lev_scan(bet, rws, act, p):
-    """least sub-sum size at which a part drops under its allowance"""
+    """least sub-sum size whose rank modulo p is below its allowance"""
     out = {}
     for i in act:
         if bet[i] is None:
@@ -2268,8 +2274,8 @@ LV_ONE = sum(1 for i in ACT if LV2[i][0] == 1)
 LV_DR2 = sum(1 for i in ACT if DROPS[i][4] > 0 and LV2[i][0] == 2)
 LV_OK = (LV_ONE == 0 and LV_DR2 == 8 and len(DRLV) == 8)
 
-# parts short on some proper sub-sum yet whole on all four: the second prime
-# rebuilds their four-orbit matrices from scratch and confirms the recovery
+# Parts modularly short on a proper sub-sum yet at allowance on all four.
+# The second prime independently rebuilds the same modular diagnostic.
 NMON = [i for i in ACT if LV2[i][0] > 0 and DROPS[i][4] == 0]
 NMOK = True
 for i in NMON:
@@ -2408,36 +2414,42 @@ gate(SGMISS == 0 and SGN == NINB * len(ACT) and SGN > 0, nextlab(),
      " this is one orbit at the ceiling read part by part".format(
          nd(SGN), nd(SGMISS)))
 
-gate(LAT_OK, nextlab(),
+gate(LAT_OK and PRRK == [72, 93, 117, 129, 144, 144]
+     and TRRK == [114, 130, 142, 142] and QDRK == 105, nextlab(),
      "pairs {0}; triples {1}; all four give {2}, which is below every triple"
      .format(",".join(nd(v) for v in PRRK),
              ",".join(nd(v) for v in TRRK), nd(QDRK)))
 
 gate(LV_OK and len(NZD) == 8, nextlab(),
-     "every one of the {0} rank-losing parts first goes short on a pair, never on"
-     " a single orbit; {1} at size one".format(nd(len(DRLV)), nd(LV_ONE)))
+     "modular diagnostic: all {0} four-orbit-short parts first go short on a pair;"
+     " {1} at size one".format(nd(len(DRLV)), nd(LV_ONE)))
 
-gate(len(NMON) == 3 and NMOK, nextlab(),
-     "rank loss is not monotone: {0} further parts go short on a pair yet meet"
-     " min(m, mc) on all four; d/m/mc {1}".format(nd(len(NMON)), NMTX))
+gate(len(NMON) == 3 and NMOK
+     and [(ROWS2[i][0], ROWS2[i][1], ROWS2[i][2]) for i in NMON]
+     == [(3, 1, 3), (4, 2, 1), (8, 4, 2)], nextlab(),
+     "modular diagnostic: {0} further parts are short on a pair but full on all"
+     " four; d/m/mc {1}".format(nd(len(NMON)), NMTX))
 
-gate(LV_DIS == 0 and LV_N == len(ACT3) and LV_N > 0, nextlab(),
-     "the other prime gives the same size on every part: {0} compared, {1} differ,"
-     " {2} short sub-sums at those sizes".format(
+gate(LV_DIS == 0 and LV_N == 15 and len(ACT3) == 15 and LV_NB == 30, nextlab(),
+     "the other prime gives the same modular level on all {0} parts: {1} differ,"
+     " {2} short sub-sums at those levels".format(
          nd(LV_N), nd(LV_DIS), nd(LV_NB)))
 
-gate(SW_OK, nextlab(),
-     "one-swap neighbourhood: {0} substitutions, values {1} to {2}, {3} at the"
-     " ceiling, {4} at {5}, {6} lower".format(
+gate(SW_OK and SWN == 368 and SWMIN == 72 and SWMAX == 144 and SWTOP == 53
+     and SWEQ == 1 and SWLO == 9, nextlab(),
+     "one-swap modular ranks: {0} substitutions, {1} to {2}, {3} at 144, {4} at"
+     " {5}, {6} below".format(
          nd(SWN), nd(SWMIN), nd(SWMAX), nd(SWTOP), nd(SWEQ), nd(RANKB),
          nd(SWLO)))
 
-gate(SWJ >= 0 and SWEX == CEIL and QDRK == RANKB, nextlab(),
+gate(SWJ == 0 and SWC == 5 and SWSUB == (1, 2, 3, 5)
+     and SWEX == 144 and QDRK == 105, nextlab(),
      "one exchange, slot {0} taking orbit {1}, lifts the exact rational rank of the"
      " four-orbit table from {2} to {3}".format(
          nd(SWJ), nd(SWC), nd(QDRK), nd(SWEX)))
 
-gate(BL_OK, nextlab(),
+gate(BL_OK and INTER == 12 and INTER2 == 12 and SUMBL == 123
+     and not NEST and R5 == 144, nextlab(),
      "blind spaces meet in dimension {0} and span {1}; smaller inside larger {2};"
      " adding one orbit to the four gives exact rank {3}".format(
          nd(INTER), nd(SUMBL), yn(NEST), nd(R5)))

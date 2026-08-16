@@ -1,0 +1,54 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_wt1_zero_f0_first_split_2026_08_15.py
+runner_sha256: 1ef586ae93778141958bf36fbb3658fd4808b96022e764f2622b3d9e9521c096
+input_fingerprint_sha256: 9692eb339a2b5258f17e734eccac24ad462ea9151d09c645436aaff500c6e63d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.15
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_WT1_ZERO_F0_FIRST_SPLIT_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+n_rotations=24
+n_orbits=10
+remaining_labels=('wt1', 'opp2', 'adj2', 'vertex3', 'mixed3')
+|F_cut|=32
+n_sites=12
+Max(1): m=12 N_max=4 maximizers=[(1, 0, 1, 1, 0), (1, 0, 1, 1, 1), (1, 1, 1, 1, 0), (1, 1, 1, 1, 1)]
+Max(2): m=66 N_max=2 maximizers=[(1, 1, 1, 1, 0), (1, 1, 1, 1, 1)]
+cov1_f0=12 cov1_fwt=0
+cov2_f0=66 cov2_fwt=0
+cov11_f0=12 cov11_fwt=12
+|S|=1 S=((0, 0, 0),)
+f0_history=[((0, 0, 0),), ((0, 0, 0), (0, 0, 1), (0, 1, 0), (1, 0, 0)), ((0, 0, 0), (0, 0, 1), (0, 1, 0), (0, 1, 1), (1, 0, 0), (1, 0, 1), (1, 1, 0), (2, 0, 0)), ((0, 0, 0), (0, 0, 1), (0, 1, 0), (0, 1, 1), (1, 0, 0), (1, 0, 1), (1, 1, 0), (1, 1, 1), (2, 0, 0), (2, 0, 1), (2, 1, 0)), ((0, 0, 0), (0, 0, 1), (0, 1, 0), (0, 1, 1), (1, 0, 0), (1, 0, 1), (1, 1, 0), (1, 1, 1), (2, 0, 0), (2, 0, 1), (2, 1, 0), (2, 1, 1))]
+fwt_history=[((0, 0, 0),)]
+f0_fills=True fwt_fills=False
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required note-plus-axiom string-literal tuple
+PASS: thm1-twenty-four-rotations exactly 24 proper cube rotations
+PASS: thm1-ten-orbits exactly 10 orbits partition the 64 cells of {0,1}^6
+PASS: thm1-f-L1-not-hamming f_L1 is n != 0 on an axis and is not Hamming parity
+PASS: thm1-f0-in-max1-and-max2 f0=(1,1,1,1,0) attains Max(1) and Max(2)
+PASS: thm1-fwt-in-neither fwt=(0,1,1,1,0) is in neither Max(1) nor Max(2)
+PASS: thm2-lex-first-seed the lex-first |S|<=3 split seed is the singleton {(0, 0, 0)}
+PASS: thm2-f0-fills-fwt-misses on that seed f0 fills and fwt does not
+PASS: thm3-histories histories from S are computed and displayed; wt1 is not adopted
+PASS: lattice-and-admissibility-parents the live axiom memo supplies Z^3, proper cubic rotations, and a covariant nearest-neighbor rule
+PASS: note-contract bounded theorem, displayed-not-adopted first split, and machine status
+PASS: claim-type-and-gate N1-N8 and a passing no-go disposition are source-visible
+PASS: forbidden-phrases-absent the note and runner omit the dispatch-forbidden phrases
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: claim-scope-first-split claim_scope reports the lex-first |S|<=3 f0-versus-fwt split
+PASS: no-axiom-edit the theorem proposes no axiom change and does not adopt wt1
+PASS: not-leftover-max11-listing the residual is the first split seed, not leftover-character of the Max(11) listing
+per_element: checked exactly — each neighbor 6-tuple is scored by axis type
+per_site: checked exactly — each of the twelve two-cube vertices uses the same stencil
+per_mode: checked exactly — Max(1) and Max(2) are scored over all 32 F_cut maps
+per_block: checked exactly — lex search of |S|<=3 seeds reports the first split
+lattice_wide: checked and not executed — no Z^3-wide formation law is claimed
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

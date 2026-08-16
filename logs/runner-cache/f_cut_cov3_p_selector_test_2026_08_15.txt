@@ -1,0 +1,59 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_cov3_p_selector_test_2026_08_15.py
+runner_sha256: 90dc9795856a605299e05a2393f0e1e9138633f2d39b83c9282e1e5bd5e90ef1
+input_fingerprint_sha256: 54451d2bf1eda8e020e9140ba53f778f4cf54fdfaf84bcf5b5c0ece406fff318
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_COV3_P_SELECTOR_TEST_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+external_scientific_inputs: current Lattice/Admissibility/Record boundary only; no observation or fit
+negative_scope: displayed P versus cov3>0; does not adopt P
+n_rotations=24
+n_orbits=10
+remaining_labels=('wt1', 'opp2', 'adj2', 'vertex3', 'mixed3')
+|F_cut|=32
+n_three_site_seeds=220
+N_pos=20
+N_P=14
+N_both=13
+N_mismatch=8
+cov3(f_L1)=220
+lex_first_miss=(0, 0, 1, 1, 0)
+lex_first_cov3=24
+lex_first_P=0
+equiv=0
+pos_implies_P=0
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required note-plus-axiom string-literal tuple
+PASS: thm1-host 24 rotations, 10 orbits, 32 F_cut maps, 220 three-site seeds
+PASS: thm1-f-L1-is-unbalanced-axis f_L1 is 1 iff some axis has c_+ != c_-
+PASS: thm1-f-L1-not-hamming f_L1 is n!=0, not Hamming |c|_1 mod 2
+PASS: thm1-not-equivalent cov3>0 is not equivalent to P among the 32 F_cut maps
+PASS: thm1-lex-first-miss one lex-first remaining-bit miss is (0, 0, 1, 1, 0)
+PASS: thm1-pos-not-imply-p positivity does not imply P; witness is (0, 0, 1, 1, 0)
+PASS: thm2-counts N_pos=20, N_P=14, N_both=13
+PASS: thm2-split one P-true map has cov3=0 and seven P-false maps have cov3>0
+PASS: thm3-display-not-adopt P is displayed and is not adopted as an Admissibility selector
+PASS: source-lattice-admissibility Lattice rotations and Admissibility covariance are pinned
+PASS: source-record-boundary Record lock, content-only readout, unreadable absence, and formation residual are pinned
+PASS: claim-scope claim_scope reports the 3-site positivity-versus-P comparison and does not adopt P
+PASS: note-contract machine fields, three theorems, and forbidden-phrase hygiene hold
+PASS: no-axiom-edit the axiom memo is unedited and the theorem proposes no axiom change
+PASS: off-patch-zero off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: not-leftover-bit-menu-or-q10 P is not leftover of the 1-5-bit AND/OR menu; test is at the Q10-imply k
+PASS: p-definition-and-l1-in-class P is wt1 and (adj2,vertex3,mixed3)!=(0,0,0) and f_L1 satisfies P
+per_element: checked exactly — each of the 64 neighbor 6-tuples is assigned its axis-type orbit
+per_site: checked exactly — each of the twelve two-cube vertices uses the same six-direction stencil
+per_mode: checked exactly — every F_cut map is scored on 220 three-site seeds against displayed P
+per_block: checked exactly — N_pos, N_P, and N_both are the F_cut positivity-versus-P counts on this patch
+lattice_wide: checked and not executed — no Z^3-wide formation law or physical Admissibility selector is claimed
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

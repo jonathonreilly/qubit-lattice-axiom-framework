@@ -1,0 +1,57 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_qstar_nontot_cov2_split_refuse_2026_08_15.py
+runner_sha256: 581d15a2d3e035d23380cddb7eee156e4352f5607874abc18da64dec97d15cef
+input_fingerprint_sha256: a83f26334348447896908deff188a2ae2fb8906e116636f112a2867f9cc7593e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_QSTAR_NONTOT_COV2_SPLIT_REFUSE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+external_scientific_inputs: current Lattice/Admissibility/Record boundary only; no observation or fit
+negative_scope: displayed first remaining-bit refuse of non-tot Q_* f_lo from S; does not adopt a bit
+n_rotations=24
+n_orbits=10
+remaining_labels=('wt1', 'opp2', 'adj2', 'vertex3', 'mixed3')
+|F_cut|=32
+n_two_site_seeds=66
+|Q_*|=8
+|non-tot Q_*|=4
+f_lo=(1, 0, 1, 0, 0) cov2=32 vertex3=0 qstar=1
+f_hi=(1, 1, 1, 0, 0) cov2=36 vertex3=0 qstar=1
+f_L1_remaining=(1, 0, 1, 1, 1)
+hist_hi=(2, 7, 9, 10, 12) fill_hi=1
+hist_lo=(2, 6, 8) fill_lo=0
+halt_lo=[(0, 0, 0), (0, 0, 1), (0, 1, 0), (0, 1, 1), (2, 0, 0), (2, 0, 1), (2, 1, 0), (2, 1, 1)] halt_size=8
+first_refuse=(1, (1, 0, 0), (1, 1, 0, 0, 0, 0), (0, 1, 2), 'opp2', 1)
+middle_from_S=(1, 1, 0, 0, 0, 0) axis=(0, 1, 2)
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required note-plus-axiom string-literal tuple
+PASS: thm1-host 24 rotations, 10 orbits, 32 F_cut maps, 66 two-site seeds, 8 Q_* maps
+PASS: thm1-f-L1-is-unbalanced-axis f_L1 is 1 iff some axis has c_+ != c_-
+PASS: thm1-f-L1-not-hamming f_L1 is n!=0, not Hamming |c|_1 mod 2
+PASS: thm1-f-lo-nontot-qstar f_lo is Q_* with vertex3=0; cov2 is 32 versus 36
+PASS: thm1-first-refuse-tick-site-type first remaining-bit refuse of f_lo from S is tick 1, site (1,0,0), type opp2
+PASS: thm1-first-refused-neighborhood lex-first refused remaining-bit neighborhood is (1,1,0,0,0,0) at (1,0,0)
+PASS: thm2-n-refuse-first-tick N_refuse on the first refuse tick is 1
+PASS: thm2-opp2-is-32-vs-36-mechanism from S the middle site (1,0,0) is opp2, so only f_hi locks it at tick 1
+PASS: thm3-display-not-adopted the refuse is displayed and no bit is adopted
+PASS: source-lattice-admissibility Lattice rotations and Admissibility covariance are pinned
+PASS: source-record-boundary Record lock, content-only readout, unreadable absence, and formation residual are pinned
+PASS: claim-scope claim_scope reports the first remaining-bit refuse of f_lo from S and does not adopt a bit
+PASS: note-contract machine fields, three theorems, and forbidden-phrase hygiene hold
+PASS: no-axiom-edit the axiom memo is unedited and the theorem proposes no axiom change
+PASS: off-patch-zero off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+per_element: checked exactly — each of the 64 neighbor 6-tuples is assigned its axis-type orbit
+per_site: checked exactly — each of the twelve two-cube vertices uses the same six-direction stencil
+per_mode: checked exactly — f_lo is evolved from S; f_hi is displayed contrast only
+per_block: checked exactly — first remaining-bit refuse and N_refuse are named and not adopted
+lattice_wide: checked and not executed — no Z^3-wide formation law or physical Admissibility selector is claimed
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

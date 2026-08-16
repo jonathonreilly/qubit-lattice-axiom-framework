@@ -1,0 +1,56 @@
+===== runner cache v1 =====
+runner: scripts/two_ball_ambiguous_slot_local_pick_2026_08_15.py
+runner_sha256: f01f8465c70a6bb6327b5f51fe921b403b846208e37f06763b003619e1c2a0d7
+input_fingerprint_sha256: 65059b67fbb70bf5e3b1e5d298b4b539d2b21a825dd4380de3f115adc510319a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+external_scientific_inputs: current Lattice, Qubit, Admissibility, and Record sentences plus the July-3 pair construction reconstructed locally
+integrity_reads: this runner, its note, and the current axiom memo; no cache written
+construction: U=B_2(0)∪B_2((2,0,0)), unread v=(1,−1,1), two ambiguous slots
+negative_scope: displayed local pick only; not adopted; L1 not attached
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: source-lattice current cubic nearest-neighbor wording is pinned
+PASS: source-admissibility current local-distribution wording is pinned
+PASS: source-formation-boundary formation site/probability/rate remains outside Admissibility
+PASS: source-qubit Qubit remains M_2(C)
+PASS: source-record lock, permanence, content-only readout, and unreadability at absence are pinned
+U_card=43
+v_in_U=False
+occupancy_mask=(1, 1, 1, 0, 0, 1)
+unique_axis_fragment=(*,*,−,0,0,+)
+completions=(+,+,−,0,0,+),(+,−,−,0,0,+),(−,+,−,0,0,+),(−,−,−,0,0,+)
+N_pair=48
+N_fire=2
+firing=(+,−,−,0,0,+),(−,+,−,0,0,+)
+c_lex=(+,+,−,0,0,+)
+lex_is_firing=False
+ambiguous w=(2, -1, 1) n=(0,1/3,-1/3) lex_axis=y lex_sign=+ pair_signs=(+,−)
+ambiguous w=(0, -1, 1) n=(0,1/3,-1/3) lex_axis=y lex_sign=+ pair_signs=(+,−)
+PASS: center-unread the star center v is not already in U
+PASS: u-cardinality the two radius-two balls union to 43 locked sites
+PASS: occupancy-mask occupied nearest neighbors of v are exactly +x,−x,+y,−z
+PASS: unique-axis-fragment unique-axis labels are ambiguous, ambiguous, −, 0, 0, +
+PASS: pair-census the reconstructed July-3 k=3 pair has 48 members in one chiral pair
+PASS: theorem-1-four there are exactly four unique-axis-respecting completions
+PASS: theorem-1-n-fire exactly two of the four completions are pair members
+PASS: theorem-1-firing-list the firing completions are (+,−,−,0,0,+) and (−,+,−,0,0,+)
+PASS: theorem-2-lex-local both ambiguous neighbors have n=(0,1/3,−1/3) with lex-first axis y and sign +
+PASS: theorem-2-lex-not-fire the lex-first-nonzero-axis completion is not a firing completion
+PASS: claim-scope the note reports the declared displayed claim_scope
+PASS: displayed-not-adopted the note keeps the local pick displayed and not adopted
+PASS: l1-not-attached the note does not attach L1
+PASS: not-leftover-posrun the note is the four-completion census, not leftover-char of one chosen c
+PASS: forbidden-absent the note avoids the dispatch-forbidden phrases
+PASS: canonical-nonmutation the axiom memo does not contain the displayed local pick as axiom text
+per_element: unique-axis signs, four completions, and N_fire are exact integers
+per_site: only the unread star center v is scored
+per_mode: no spectral calculation
+per_block: U and the six-neighbor star at v only
+lattice_wide: checked and not executed
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

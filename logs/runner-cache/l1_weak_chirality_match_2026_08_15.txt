@@ -1,0 +1,55 @@
+===== runner cache v1 =====
+runner: scripts/l1_weak_chirality_match_2026_08_15.py
+runner_sha256: ab21a1e5e759343586c8dfb9b2ef803348c91eb37281869517269e844248b5c9
+input_fingerprint_sha256: 0031fb12cc4201c5d17d57e98ad8f63ade4b4278fbd953a098211d6e3df0994d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: none; occupancy alphabet and n=d/3 are displayed
+package_local_integrity_reads: runner source, proposed source note, live axiom memo
+measure_boundary: exact Fraction on the 64 occupancy tuples; no spatial patch
+negative_scope: displayed L1 formation is automatically achiral and does not produce V-A
+PASS: alphabet-two-letter occupancy alphabet is {0,1}
+PASS: star-cardinality six-neighbor occupancy star has 64 tuples
+PASS: cubic-group-size full signed-permutation group has 48 elements
+PASS: proper-group-size proper cubic rotations number 24
+PASS: thm1-n-empty-zero n(empty) = 0
+PASS: thm1-n-full-zero n(full) = 0
+PASS: thm1-n-axis-one-third n(+x occupied) = (1/3, 0, 0)
+PASS: thm1-forms-is-n-nonzero forms iff n ≠ 0 on the three witnesses
+PASS: thm2-n-zero exactly 8 occupancy tuples have n = 0
+PASS: thm2-n-form N_form = 56
+PASS: thm2-n-p-form N_P_form = 56
+PASS: thm2-n-both N_both = 56
+PASS: thm1-p-sends-n-to-minus-n n(P(c)) = -n(c) on all 64 tuples
+PASS: thm1-formation-set-p-invariant {c : n(c) ≠ 0} is P-invariant
+PASS: thm1-proper-covariant n≠0 is invariant under the 24 proper cubic rotations
+PASS: thm1-july3-t2-local every 2-letter coloring is proper-equivalent to its P-image
+PASS: thm1-lock-labels-do-not-feed-n distinct lock labels on the same occupancy give the same n
+PASS: mutation-lock-labels-feed-n-fails predicate 'lock labels feed n' fails
+PASS: thm2-not-hamming f_L1 is n≠0, not Hamming-nonzero
+PASS: mutation-hamming-equals-forms-fails predicate Hamming-nonzero == n≠0 fails
+PASS: thm2-alphabet-not-three neighbor occupancy alphabet has 2 letters, not 3
+PASS: thm3-chi-is-p-odd displayed comparison grade n_x is P-odd
+PASS: thm3-formation-is-p-even formation indicator is P-even
+PASS: thm3-even-cannot-equal-odd P-even formation cannot equal the P-odd grade except at 0
+PASS: thm3-mismatch-displayed automatically achiral L1 formation does not produce the P-odd grade
+PASS: claim-scope note reports the displayed claim_scope verbatim
+PASS: no-attachment note refuses L1 attachment and Admissibility rewrite
+PASS: axiom-boundary Admissibility is proper-covariant and does not supply formation
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: forbidden-phrases-absent forbidden phrases are absent from note and runner
+PASS: no-new-spatial-patch runner never steps occupancy on a new spatial patch
+PASS: claim-type-and-gate bounded theorem type and a passing N1-N8 gate are source-visible
+PASS: machine-status-contract note carries the bounded-support status and no hypothetical axiom adoption
+per_element: checked exactly — each of the 64 occupancy tuples has n=d/3 and forms iff n≠0
+per_site: checked exactly — one six-neighbor star; lock labels do not feed n
+per_mode: checked exactly — two-letter openness versus a displayed P-odd comparison grade
+per_block: checked exactly — N_form=N_P_form=N_both=56; Hamming-nonzero is a different set
+lattice_wide: checked and not executed — no occupancy step on a new spatial patch
+TOTAL: PASS=33 FAIL=0
+
+----- stderr -----
+

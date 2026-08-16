@@ -1,0 +1,64 @@
+===== runner cache v1 =====
+runner: scripts/skew_three_seed_local_n_chiral_execution_2026_08_15.py
+runner_sha256: 2594a8c4f03e20561e3a22fdbe5c038acac0c50f9c152bd65c1286876fdce134
+input_fingerprint_sha256: 11a8f0f06ea097418863980c3a7ecd09dfe0cebf52a942befd27c0214bc107f6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/SKEW_THREE_SEED_LOCAL_N_CHIRAL_EXECUTION_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+external_scientific_inputs: current Lattice, Qubit, Admissibility, and Record sentences plus the July-3 pair reconstructed locally
+construction: U=B_2(0)∪B_2((2,0,0))∪B_2((1,2,1)), unread v=(-1,1,1)
+negative_scope: displayed rival execution only; not adopted; L1 not attached
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required static two-string literal tuple
+PASS: source-lattice current cubic nearest-neighbor wording is pinned
+PASS: source-admissibility current local-distribution wording is pinned
+PASS: source-formation-boundary formation site/probability/rate remains outside Admissibility
+PASS: source-qubit Qubit remains M_2(C)
+PASS: source-record lock, permanence, content-only readout, and unreadability at absence are pinned
+U_card=62
+v_in_U=False
+occupancy_mask=(1, 0, 1, 1, 0, 1)
+displayed_c=(−,0,+,−,0,+)
+unique_axis_fragment=(*,0,+,*,0,*)
+neighbor dir=(1, 0, 0) w=(0, 1, 1) occ=(1, 0, 1, 1, 0, 1) n=(1/3,0,-1/3) ambiguous
+neighbor dir=(0, 1, 0) w=(-1, 2, 1) occ=(1, 0, 0, 0, 0, 0) n=(1/3,0,0) unique-axis
+neighbor dir=(0, -1, 0) w=(-1, 0, 1) occ=(1, 0, 0, 0, 0, 1) n=(1/3,0,-1/3) ambiguous
+neighbor dir=(0, 0, -1) w=(-1, 1, 0) occ=(1, 0, 0, 1, 0, 0) n=(1/3,-1/3,0) ambiguous
+N_pair=48
+c_is_pair_member=True
+unique_axis_agrees=True
+N_new=1
+new_lock=(-1, 1, 1)
+U_persists=True
+PASS: g-plus-order finite G+ is exactly the 24 proper cube rotations
+PASS: center-unread the star center v is not already in U
+PASS: u-geometry U is the union of three radius-2 ℓ¹ balls and has 62 sites
+PASS: occupancy-mask occupied nearest neighbors of v are exactly +x,+y,−y,−z
+PASS: theorem-1-fragment unique-axis fragment is (*,0,+,*,0,*) and agrees with c
+PASS: theorem-1-kernels occupied-neighbor kernels and unique-axis labels match the note
+PASS: theorem-1-permanence every lock in U persists after the displayed tick
+PASS: pair-census the reconstructed July-3 k=3 pair has 48 members in one chiral pair
+PASS: theorem-2-member c is a pair member
+PASS: theorem-2-fire the pair fires at v with N_new=1 and new lock v
+PASS: claim-scope the note reports the declared displayed claim_scope
+PASS: displayed-not-adopted the execution is displayed and is not written into Admissibility
+PASS: l1-not-attached the note does not attach L1 and does not add a fourth ball
+PASS: not-leftover-skewlab the note is not leftover-char of the skewlab membership census
+PASS: admissibility-unedited the 6-tuple c is not written into Admissibility
+PASS: forbidden-phrases the forbidden rhetoric strings are absent from the note and runner
+PASS: no-axiom-edit the only axiom authority is the current memo; no cache or axiom rewrite
+per_element: unique-axis signs, pair membership, and N_new are exact integers
+per_site: only the unread star center v is executed
+per_mode: no spectral calculation
+per_block: U and the six-neighbor star at v only
+lattice_wide: checked and not executed
+TOTAL: PASS=23 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,59 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_cov7_q4_selector_test_2026_08_15.py
+runner_sha256: 788daff40440126dc2f28e6ebda59c661c6e56cc3c790120d3854a907f01cea6
+input_fingerprint_sha256: fd5b7708b50e95c58a34f791fbefa430431ebcfa13bd535368b801201da2f7b4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.67
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_COV7_Q4_SELECTOR_TEST_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+external_scientific_inputs: current Lattice/Admissibility/Record boundary only; no observation or fit
+negative_scope: displayed Q4 versus cov7>0; does not adopt Q4
+n_rotations=24
+n_orbits=10
+remaining_labels=('wt1', 'opp2', 'adj2', 'vertex3', 'mixed3')
+|F_cut|=32
+n_7_site_seeds=792
+N_pos=24
+N_Q4=24
+N_both=20
+N_mismatch=8
+cov7(f_L1)=792
+lex_first_miss=(0, 0, 0, 1, 0)
+lex_first_cov7=16
+lex_first_Q4=0
+equiv=0
+pos_implies_Q4=0
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required note-plus-axiom string-literal tuple
+PASS: thm1-host 24 rotations, 10 orbits, 32 F_cut maps, 220 7-site seeds
+PASS: thm1-f-L1-is-unbalanced-axis f_L1 is 1 iff some axis has c_+ != c_-
+PASS: thm1-f-L1-not-hamming f_L1 is n!=0, not Hamming |c|_1 mod 2
+PASS: thm1-not-equivalent cov7>0 is not equivalent to Q4 among the 32 F_cut maps
+PASS: thm1-lex-first-miss one lex-first remaining-bit miss is (0, 0, 1, 0, 0)
+PASS: thm1-pos-implies-q4 positivity implies Q4; the Q10-false positive (1, 1, 0, 0, 0) satisfies Q4
+PASS: thm2-counts N_pos=24, N_Q4=24, N_both=20
+PASS: thm2-split four Q4-true maps have cov7=0 and no Q4-false map has cov7>0
+PASS: thm3-display-not-adopt Q4 is displayed and is not adopted as an Admissibility selector
+PASS: source-lattice-admissibility Lattice rotations and Admissibility covariance are pinned
+PASS: source-record-boundary Record lock, content-only readout, unreadable absence, and formation residual are pinned
+PASS: claim-scope claim_scope reports the 3-site positivity-versus-Q4 comparison and does not adopt Q4
+PASS: note-contract machine fields, three theorems, and forbidden-phrase hygiene hold
+PASS: no-axiom-edit the axiom memo is unedited and the theorem proposes no axiom change
+PASS: off-patch-zero off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: not-leftover-q10-or-k4 the residual is the named 2-bit OR at the k where Q10-imply failed
+PASS: q4-definition-and-l1-in-class Q4 is (wt1=1) or (adj2=1) and f_L1 satisfies Q4
+per_element: checked exactly — each of the 64 neighbor 6-tuples is assigned its axis-type orbit
+per_site: checked exactly — each of the twelve two-cube vertices uses the same six-direction stencil
+per_mode: checked exactly — every F_cut map is scored on 220 7-site seeds against displayed Q4
+per_block: checked exactly — N_pos, N_Q4, and N_both are the F_cut positivity-versus-Q4 counts on this patch
+lattice_wide: checked and not executed — no Z^3-wide formation law or physical Admissibility selector is claimed
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

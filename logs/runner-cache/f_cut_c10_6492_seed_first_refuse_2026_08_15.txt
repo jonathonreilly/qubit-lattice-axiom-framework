@@ -1,0 +1,55 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_c10_6492_seed_first_refuse_2026_08_15.py
+runner_sha256: 7b39456cbf09a08e5e16a40149cd42cebfde8149106b5307ff1df37279435f2b
+input_fingerprint_sha256: c2bf008e9b60033aaa6fff727f5b109f8a4f8ad77375af9ebaae07bf57a4e1df
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_C10_6492_SEED_FIRST_REFUSE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+external_scientific_inputs: none; two-cube occupancy ticks only
+explicit_bounded_inputs: the twelve-vertex two-cube, off-patch occupancy 0
+framework_context: Lattice supplies Z^3 nearest-neighbor adjacency; Record supplies permanence of a formed lock; no map is written into Admissibility
+package_local_integrity_reads: proposed source note and live axiom memo only
+measure_boundary: exact integer occupancy, lock counts, and refuse events
+claim_boundary: displayed first refuse or N_refuse=0; no bit is adopted
+negative_scope: neither the map nor any remaining bit is adopted
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: source-lattice the axiom memo names Z^3 sites with nearest-neighbor adjacency
+PASS: source-record the axiom memo states that a formed record locks one admissible possibility
+PASS: ten-orbits the 24 proper cube rotations partition the 64 cells into 10 orbits
+PASS: l1-is-n-neq-0 f_L1 equals some-axis-unbalanced and is not Hamming parity
+PASS: f10-remaining-bits f10 is the F_cut remaining-bit tuple (1,1,0,0,0)
+PASS: thm1-f10-fills f10 fills the #6492 seed with history (3, 12) and locks_halt=12
+PASS: thm2-n-refuse-zero no remaining-bit neighborhood is refused, so N_refuse=0
+PASS: thm2-appearing-accepted every remaining-bit orbit that appears is accepted
+PASS: thm3-display-not-adopt the note displays the empty refuse list and refuses adoption
+PASS: mutation-hamming-is-not-l1 Hamming parity is a different remaining-bit tuple from n!=0 and from f10
+PASS: mutation-f00-does-refuse the opp2-silent sibling from the same seed has a nonempty refuse list
+PASS: mutation-opp2-not-refused-by-f10 the claim that f10 refuses opp2 on this run is false
+PASS: claim-scope the note reports the first refuse or that the run refuses none
+PASS: machine-status-contract bounded status, frontier trace, and next action are source-visible
+PASS: import-boundary-contract the supplied patch and absent physical bridge are disclosed
+PASS: live-parent-quotes the live Lattice and Record unread sentences are quoted without rewrite
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: claim-type-and-forbidden the bounded type is declared and forbidden phrases are absent
+PASS: no-axiom-edit the theorem proposes no axiom change
+PASS: off-patch-zero off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: not-leftover-6492 the residual is the first refuse, not leftover fill-bit of #6492
+n_rotations=24
+n_orbits=10
+f10_remaining=(1, 1, 0, 0, 0)
+seed=((0, 0, 0), (1, 1, 1), (2, 0, 0))
+f10_history=(3, 12) fill=True
+appearing_families=('wt1', 'opp2')
+N_refuse=0
+tick0_unlocked=[((0, 0, 1), 'wt1', 1), ((0, 1, 0), 'wt1', 1), ((0, 1, 1), 'wt1', 1), ((1, 0, 0), 'opp2', 1), ((1, 0, 1), 'wt1', 1), ((1, 1, 0), 'wt1', 1), ((2, 0, 1), 'wt1', 1), ((2, 1, 0), 'wt1', 1), ((2, 1, 1), 'wt1', 1)]
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

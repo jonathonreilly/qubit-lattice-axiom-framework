@@ -1,24 +1,16 @@
-"""Twenty small matrices carry every table, and all 3321960 four-subsets censused.
+"""Certify complement ranks and corner-overlap strata on a unit four-cube.
 
 Self-contained exact runner. It builds the cell object from scratch: the sixteen
 corners of the unit four-cube, the unit-determinant five-corner pieces at the cost
 floor, the cuttings by them, the pieces that occur, and the eight-piece covers.
 
-Permuting the four coordinates and flipping any of them splits the piece labelling
-space into parts the group cannot mix. The parts are read off the centre of the
-algebra of matrices commuting with the action, found exactly and certified against
-every one of its defining constraints. A table of the cover table's shape is an
-equivariant map, so inside each part its rank is at most the smaller of the two
-multiplicities times the part's degree and its blind dimension is at least the
-difference. Summing gives a ceiling of 144 and a floor of 48; the cover table's
-own rank is 105 and its blind space is 87, so it sits 39 inside both, and that 39
-is the blindness the symmetry does not force. An equivariant integer matrix of
-exact rational rank 144 shows the ceiling is attained.
-
-One labelling escapes the argument: the even subgroup splits the pieces into two
-classes of 96 and every cover meets each class four times; three candidate
-explanations are ruled out. All work is over the integers, the rationals and one
-fixed prime; no floating point enters any gate and no constant is fitted.
+The runner reconstructs all 96 regular cell-orbit tables. It proves their sum is
+the all-ones table and checks the complementary-rank identity on the incidence
+quartet, an incidence singleton, and all six incidence pairs using independent
+exact rational ranks. It then certifies the 25 corner-overlap profile fibres, the
+83 body-overlap refinements, every fibre rank, and the intrinsic cover-stabilizer
+description of the four incidence orbits. Supporting modular computations are
+cross-checks only. Resource measurements alone use floating point.
 
 Output: one line per gate, then the stdout character count, then the total line.
 """
@@ -34,8 +26,11 @@ from numpy.random import default_rng
 
 PRIME = 1000003
 SEED = 3
+AUDIT_TIMEOUT_SEC = 600
+RUNTIME_LIMIT_SEC = 480
+MEMORY_LIMIT_MB = 2500
 
-T0 = time.time()
+T0 = time.monotonic()
 OUT = [0]
 
 
@@ -1728,41 +1723,59 @@ for a, b in BAN:
     if (a + b).lower() in LOWSRC:
         BAN_OK = False
 
-ELAPSED = int(time.time() - T0)
+def rss_megabytes(raw, platform):
+    """Normalize ru_maxrss units on Linux and macOS."""
+    divisor = 1048576.0 if platform == "darwin" else 1024.0
+    return float(raw) / divisor
+
+
+RESOURCE_UNIT_CONTROL = (
+    rss_megabytes((MEMORY_LIMIT_MB - 1) * 1024, "linux") < MEMORY_LIMIT_MB
+    and rss_megabytes((MEMORY_LIMIT_MB + 1) * 1024, "linux") > MEMORY_LIMIT_MB
+    and rss_megabytes((MEMORY_LIMIT_MB - 1) * 1048576, "darwin") < MEMORY_LIMIT_MB
+    and rss_megabytes((MEMORY_LIMIT_MB + 1) * 1048576, "darwin") > MEMORY_LIMIT_MB
+)
+ELAPSED = time.monotonic() - T0
 RSS = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
-RSSMB = RSS // 1048576 if RSS > 10000000 else RSS // 1024
+RSSMB = rss_megabytes(RSS, sys.platform)
 
 # ------------------------------------------------------------------
 # gates
 # ------------------------------------------------------------------
 
-emit("all numbers below are exact computational identities;"
-     " no floating point enters any gate")
+emit("scientific ranks use integer or rational arithmetic;"
+     " resource gates use measured floating-point bounds")
 
 gate(NCAND == 2672 and NKEPT == 400 and FLOOR == 6 and NS == 15800
-     and SIZES == [24] and NPI == 192 and NCOV == 192, "C0",
+     and SIZES == [24] and NPI == 192 and NCOV == 192
+     and GENERIC and DISJ_OK and COVEXACT, "C0",
      "object: {0} candidate pieces, {1} at adjacency-cost floor {2}, {3} cuttings"
      " of {4}, {5} pieces used, {6} covers".format(NCAND, NKEPT, FLOOR, NS,
                                                    SIZES[0], NPI, NCOV))
 
 gate(NGRP == 384 and MAPS_DISTINCT and PERM_DISTINCT and CLOSED
-     and NPROD == 147456 and BIJ and PIE_TRANS and COV_TRANS, "C1",
+     and NPROD == 147456 and BIJ and PIE_TRANS and COV_OK and COV_BIJ
+     and COV_TRANS, "C1",
      "group: {0} maps, all distinct, closed over {1} products, bijective {2},"
      " one piece orbit {3}, one cover orbit {4}".format(NGRP, NPROD, yn(BIJ),
                                                         yn(PIE_TRANS),
                                                         yn(COV_TRANS)))
 
-gate(NORB == 104 and NPOC == 120 and NCP == 96 and NPP == NORB, "C2",
+gate(NORB == 104 and NPOC == 120 and NCP == 96 and NPP == NORB
+     and SUMSQ_OK and CSUMSQ_OK and PARTITION and LAB_INV and DEG_CONST
+     and CP_FULL and PP_FULL and PP_AGREE and PAIR_DIV and PAIR_PP
+     and PAIR_CP and PAIR_CC, "C2",
      "orbits: {0} on ordered piece pairs, {1} on ordered cover pairs, {2} on"
      " cover-piece cells, sweep agrees {3}".format(NORB, NPOC, NCP,
                                                    yn(NPP == NORB)))
 
-gate(RANKA == 88 and NKA == 104 and RANKB == 105 and NKB == 87 and GOOD_PRIME,
-     "C3",
+gate(RANKA == 88 and NKA == 104 and RANKB == 105 and NKB == 87 and GOOD_PRIME
+     and GRAM_OK and KANN_A and KANN_B and RSELA == RANKA and RSELB == RANKB
+     and RKKA == NKA and RKKB == NKB, "C3",
      "exact rational ranks: cutting table {0} kernel {1}, cover table {2} kernel"
      " {3}, prime path agrees {4}".format(RANKA, NKA, RANKB, NKB, yn(GOOD_PRIME)))
 
-gate(EQ_OK and EQ_P + EQ_X == 40 and BM_OK, "C4",
+gate(EQ_OK and EQ_P + EQ_X == 40 and BEQUI and BM_OK, "C4",
      "orbit matrices: {0} piece-pair, {1} cell; {2} equivariance checks hold {3};"
      " cover table is the sum of {4} whole cell orbits {5}".format(
          NORB, NCP, EQ_P + EQ_X, yn(EQ_OK), NINB, yn(BM_OK)))
@@ -1796,16 +1809,16 @@ gate(len(PARTS) == NCEN and sum(DIMS) == NPI, "C10",
          len(PARTS), ",".join(str(x) for x in DIMS)))
 
 gate(CEIL == 144 and FLOORB == 48 and CEIL + FLOORB == NPI, "C11",
-     "theorem: ceiling {0} on the cover table rank, floor {1} on its blind space,"
-     " and {0} plus {1} = {2}".format(CEIL, FLOORB, NPI))
+     "component diagnostic: rank allowance {0}, complementary nullity {1},"
+     " total {2}".format(CEIL, FLOORB, NPI))
 
 gate(EXC_C == EXC_F and EXC_C == 39 and RANKB < CEIL and NKB > FLOORB, "C12",
-     "measured: cover table rank {0} and blind space {1}, so ceiling minus rank {2}"
-     " equals blind minus floor {3}".format(RANKB, NKB, EXC_C, EXC_F))
+     "cover diagnostic: exact rank {0}, nullity {1}, and two component differences"
+     " both {2}".format(RANKB, NKB, EXC_C))
 
 gate(WEXACT == CEIL and NPI - WEXACT == FLOORB, "C13",
-     "exact witness: an equivariant integer matrix of exact rational rank {0} meets"
-     " the ceiling, and {1} minus it is the floor {2}".format(WEXACT, NPI, FLOORB))
+     "matrix diagnostic: constructed integer table has exact rank {0} and"
+     " nullity {1}".format(WEXACT, NPI - WEXACT))
 
 gate(NZERO >= 12 and NEX + NZERO == len(PARTS) and NEXGE + NEXLT == NEX
      and NEXLT > 0 and MC0_OK and NMC0 > 0, "C14",
@@ -1839,21 +1852,21 @@ gate(SELFDUAL and HISTB == [(4, NPI)], "C19",
 
 gate(NSTE == 1 and PS1 == 1 and FIXB == 0 and CLOSED_BLK and CYC == [2, 2, 2, 2]
      and KEEPS_CLASS, "C20",
-     "first candidate: the non-identity element fixing cover 0 has sign {0}, fixes"
-     " {1} of 8 blocks, cycles {2}, keeps the class {3}".format(
+     "label diagnostic: the nonidentity element fixing cover 0 has sign {0}, fixes"
+     " {1} of 8 blocks, cycle sizes {2}, keeps the class {3}".format(
          PS1, FIXB, CYC, yn(KEEPS_CLASS)))
 
 gate(FPAR1 == -1 and PROD1 == -1, "C21",
-     "contrast: on that element the flip-count parity is {0} and its product with"
-     " the permutation sign is {1}, so both are forced blind".format(FPAR1, PROD1))
+     "label diagnostic: flip-count parity {0}, product with permutation sign {1}"
+     .format(FPAR1, PROD1))
 
 gate(NINE_OK and 768 // NPI == 4, "C22",
-     "second candidate: the mean carries nothing; all {0} split values a give"
+     "label diagnostic: all {0} split values a give"
      " 96a + 96(8 - a) = {1}, and {1} over {2} is 4".format(len(NINE), NINE[0],
                                                             NPI))
 
 gate(AGR1 not in (0, NPI) and AGR2 not in (0, NPI) and DSET == [-1, 1], "C23",
-     "third candidate: corner-parity label agrees on {0} of {1} pieces, ordered"
+     "label diagnostic: corner-parity agrees on {0} of {1} pieces, ordered"
      " determinant label on {2} of {1}, determinant values {3}".format(
          AGR1, NPI, AGR2, DSET))
 
@@ -1872,9 +1885,9 @@ gate(ASCII_OK and NO_TAB and NO_PC and NO_EM and BAN_OK and NBAN > 0, "C26",
      " long dash {3}, {4} barred strings absent {5}".format(
          yn(ASCII_OK), yn(NO_TAB), yn(NO_PC), yn(NO_EM), NBAN, yn(BAN_OK)))
 
-gate(ELAPSED < 900 and RSSMB < 2500, "C27",
-     "budget: {0} seconds of wall time under 900, peak resident {1} MB under 2500,"
-     " stdout characters counted below".format(ELAPSED, RSSMB))
+gate(RESOURCE_UNIT_CONTROL and ELAPSED < RUNTIME_LIMIT_SEC
+     and RSSMB < MEMORY_LIMIT_MB, "C27",
+     "intermediate resource measurements are inside declared limits")
 
 # ------------------------------------------------------------------
 # 22. a second prime, and the twenty small matrices
@@ -2057,10 +2070,10 @@ def build_small(p):
     return rws, bts, flg, tri
 
 
-T764 = [(t[2], t[3], t[4], t[5]) for t in PARTS]
+EXACT_PART_ROWS = [(t[2], t[3], t[4], t[5]) for t in PARTS]
 ROWS2, BET2, FLG2, TRI2 = build_small(P2)
 NPART = len(ROWS2)
-TAB2_OK = (ROWS2 == T764)
+TAB2_OK = (ROWS2 == EXACT_PART_ROWS)
 PASS5 = sum(1 for f in FLG2 if f[0] and f[1] > 0 and f[2] and f[3] and f[4])
 NOMC = sum(1 for i in range(NPART) if ROWS2[i][2] == 0)
 NOVEC = [VALS[i] for i in range(NPART) if FLG2[i][1] == 0]
@@ -2179,7 +2192,7 @@ DR_SET = ([(t[0], t[1], t[2]) for t in NZD]
 # ------------------------------------------------------------------
 
 ROWS3, BET3, FLG3, TRI3 = build_small(P3)
-TAB3_OK = (ROWS3 == T764)
+TAB3_OK = (ROWS3 == EXACT_PART_ROWS)
 ACT3 = [i for i in range(len(ROWS3)) if BET3[i] is not None]
 
 # ------------------------------------------------------------------
@@ -2202,7 +2215,8 @@ for sz, sb in SUBL:
     SUBRK[sb] = rank_fwd(TS.tolist(), NPI)
 
 SGRK = [SUBRK[(c,)] for c in INB]
-SG_OK = all(SGRK[j] == CEIL and SGRK[j] == CPRK[INB[j]] for j in range(NINB))
+SG_OK = (SGRK == [144, 144, 144, 144]
+         and all(SGRK[j] == CPRK[INB[j]] for j in range(NINB)))
 
 SGN = 0
 SGMISS = 0
@@ -2216,8 +2230,9 @@ for c in INB:
 PRRK = sorted(SUBRK[sb] for sb in SZL[2])
 TRRK = sorted(SUBRK[sb] for sb in SZL[3])
 QDRK = SUBRK[SZL[4][0]]
-LAT_OK = (len(PRRK) == 6 and len(TRRK) == 4 and QDRK == RANKB
-          and max(PRRK + TRRK) <= CEIL and QDRK < min(TRRK))
+LAT_OK = (PRRK == [72, 93, 117, 129, 144, 144]
+          and TRRK == [114, 130, 142, 142]
+          and QDRK == 105 and QDRK == RANKB)
 
 # ------------------------------------------------------------------
 # 27. the first level at which a part loses rank
@@ -2276,60 +2291,7 @@ for i in NMON:
 NMTX = " ".join("/".join(nd(x) for x in ROWS2[i][:3]) for i in NMON)
 
 # ------------------------------------------------------------------
-# 28. the one-swap neighbourhood of the cover table
-# ------------------------------------------------------------------
-
-SWV = []
-SWHIT = None
-for jj in range(NINB):
-    for cc in range(NCP):
-        if cc in INB:
-            continue
-        sb = tuple(sorted([INB[t] for t in range(NINB) if t != jj] + [cc]))
-        v = red_rank(sb, BET2, P2)
-        SWV.append(v)
-        if v == CEIL and SWHIT is None:
-            SWHIT = (jj, cc, sb)
-SWN = len(SWV)
-SWMIN = min(SWV)
-SWMAX = max(SWV)
-SWTOP = sum(1 for v in SWV if v == CEIL)
-SWEQ = sum(1 for v in SWV if v == RANKB)
-SWLO = sum(1 for v in SWV if v < RANKB)
-SWJ = -1 if SWHIT is None else SWHIT[0]
-SWC = -1 if SWHIT is None else SWHIT[1]
-SWSUB = tuple(INB) if SWHIT is None else SWHIT[2]
-
-MSB = np.zeros((NCOV, NPI), dtype=np.int64)
-for k in SWSUB:
-    MSB = MSB + OXS[k]
-SWEX = rank_fwd(MSB.tolist(), NPI)
-SW_OK = (SWN == NINB * (NCP - NINB) and SWMAX <= CEIL and SWTOP > 0
-         and SWTOP > SWEQ + SWLO)
-
-# ------------------------------------------------------------------
-# 29. the two blind spaces compared, exactly
-# ------------------------------------------------------------------
-
-MSA = np.zeros((NCOV, NPI), dtype=np.int64)
-for k in INB:
-    MSA = MSA + OXS[k]
-RSTK = rank_fwd(np.concatenate([MSA, MSB], axis=0).tolist(), NPI)
-INTER = NPI - RSTK
-KBI = [clear_den(v) for v in KERB]
-MBL = MSB.tolist()
-IMR = [[sum(a * b for a, b in zip(row, kv)) for row in MBL] for kv in KBI]
-RIMG = rank_fwd(IMR, NCOV)
-INTER2 = NKB - RIMG
-SUMBL = NKB + (NPI - CEIL) - INTER
-NEST = (INTER == NPI - CEIL)
-M5 = MSA if SWC < 0 else MSA + OXS[SWC]
-R5 = rank_fwd(M5.tolist(), NPI)
-BL_OK = (INTER == INTER2 and NPI - RANKB == NKB and NPI - CEIL == FLOORB
-         and R5 == CEIL and SWJ >= 0)
-
-# ------------------------------------------------------------------
-# 31. the all-ones sum and the complementary-rank identity
+# 28. the all-ones sum and the complementary-rank identity
 # ------------------------------------------------------------------
 
 # Each of the 36864 cells lies in exactly one of the 96 cell orbits, so the
@@ -2394,8 +2356,10 @@ CPRS = []
 for sbx in SZL[2]:
     CPRS.append((SUBRK[sbx], rank_fwd(orb_tab(orb_comp(sbx)).tolist(), NPI)))
 CPR6 = sorted(x2[1] for x2 in CPRS)
-CMPL_OK = (RC92 == QDRK and QDRK == RANKB and RC95 == SGRK[0]
-           and SGRK[0] == CEIL and len(CPRS) == 6 and CPR6 == PRRK
+CMPL_OK = (RC92 == 105 and QDRK == 105 and RANKB == 105
+           and RC95 == 144 and SGRK[0] == 144
+           and len(CPRS) == 6 and CPR6 == [72, 93, 117, 129, 144, 144]
+           and PRRK == [72, 93, 117, 129, 144, 144]
            and PAIR_N == 8 and PAIR_BAD == 0
            and all(oa == ob for oa, ob in CPRS))
 RKE = rank_fwd(np.zeros((NCOV, NPI), dtype=np.int64).tolist(), NPI)
@@ -2494,57 +2458,12 @@ for qx in SKEYS:
 SRMAX = max(SRK)
 SRMINB = min(NPI - rr2 for rr2 in SRK)
 SRINC = SRK[SKEYS.index(PROFA[INB[0]])]
-SRANK_OK = (len(SRK) == NSTR and max(SRK) <= CEIL and SRMAX == 143
-            and SRMAX < CEIL and SRMINB >= FLOORB and SRMINB == NPI - SRMAX
-            and SRINC == RANKB)
+SRANK_OK = (len(SRK) == NSTR and SRMAX == 143
+            and SRMINB == NPI - SRMAX and SRMINB == 49
+            and SRINC == RANKB and SRINC == 105)
 
 # ------------------------------------------------------------------
-# 33. which cell orbits lift the first slot of the cover table
-# ------------------------------------------------------------------
-
-# Cycle 766 measured the whole one-exchange neighbourhood of the four
-# incidence orbits: 368 substitutions, some of them reaching the ceiling
-# 144. Here the first slot alone is taken apart. Its 92 values are rebuilt
-# from the small-matrix reduction and matched against the stored row, one
-# member of the lifting set is confirmed by an exact rational rank and one
-# non-member likewise, and the lifting set is then compared with the profile
-# A strata to see whether lifting is a property of the stratum. What comes
-# back is a measurement: a stratum may lift wholly, not at all, or in part.
-
-NONI = [cx for cx in range(NCP) if cx not in INB]
-RSL0 = []
-for cx in NONI:
-    sbx = tuple(sorted([INB[t2] for t2 in range(NINB) if t2 != 0] + [cx]))
-    RSL0.append(int(red_rank(sbx, BET2, P2)))
-SWROW = [int(vx) for vx in SWV[0:len(NONI)]]
-REP0 = [NONI[t3] for t3 in range(len(NONI)) if RSL0[t3] == CEIL]
-RSET = set(REP0)
-NREP = len(REP0)
-NRC = [cx for cx in NONI if cx not in RSET][0]
-EXNR = rank_fwd(orb_tab(tuple(sorted(
-    [INB[t2] for t2 in range(NINB) if t2 != 0] + [NRC]))).tolist(), NPI)
-S5 = SKEYS.index(PROFA[SWC])
-REPAIR_OK = (len(NONI) == NCP - NINB and RSL0 == SWROW and NREP == 19
-             and NREP > 0 and SWC in RSET and SWJ == 0 and SWEX == CEIL
-             and SWC == 5 and S5 == 23 and 0 <= S5 < NSTR
-             and EXNR == RSL0[NONI.index(NRC)] and EXNR < CEIL)
-
-RSW = 0
-RSN = 0
-RSM = 0
-for qx in SKEYS:
-    memx = [kx for kx in STRA[qx] if kx not in INB]
-    hh = sum(1 for kx in memx if kx in RSET)
-    if memx and hh == len(memx):
-        RSW += 1
-    elif hh == 0:
-        RSN += 1
-    else:
-        RSM += 1
-RSTRAT_OK = (RSW + RSN + RSM == NSTR and RSW == 0 and RSN == 10 and RSM == 15)
-
-# ------------------------------------------------------------------
-# 34. the incidence quartet inside a single cover
+# 30. the incidence quartet inside a single cover
 # ------------------------------------------------------------------
 
 # The group has order 384 and moves the 192 covers in one orbit, so the
@@ -2583,14 +2502,18 @@ PARTN_OK = (PCH == NINB and len(POVL) == NINB and sorted(POVL) == sorted(INB)
 
 PMIN = min(PRRK)
 LSB = [sbx for sbx in SZL[2] if SUBRK[sbx] == PMIN]
-LPRK = rank_fwd(orb_tab(LSB[0]).tolist(), NPI)
 NXT = sorted(PRRK)[1]
-LNAM = [POVL[cx] for cx in LSB[0]]
+if len(LSB) == 1:
+    LPRK = rank_fwd(orb_tab(LSB[0]).tolist(), NPI)
+    LNAM = [POVL[cx] for cx in LSB[0]]
+else:
+    LPRK = -1
+    LNAM = []
 P72_OK = (len(LSB) == 1 and len(LNAM) == 2 and LPRK == PMIN and LPRK == 72
           and NXT > LPRK and NXT == 93 and all(LPRK <= vx for vx in PRRK))
 
 # ------------------------------------------------------------------
-# 35. further source hygiene, and the closing budget
+# 31. further source hygiene, and the closing budget
 # ------------------------------------------------------------------
 
 BAN2 = [("Sch", "ur"), ("Hor", "ner"),
@@ -2605,17 +2528,17 @@ NO_D9 = (("9" + "9") not in SRC)
 ONE_WORD_OK = (LOWSRC.count("assoc" + "iation")
                == LOWSRC.count("assoc" + "iation sch"))
 
-ELAPSED2 = int(time.time() - T0)
+ELAPSED2 = time.monotonic() - T0
 RSS2 = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
-RSSMB2 = RSS2 // 1048576 if RSS2 > 10000000 else RSS2 // 1024
+RSSMB2 = rss_megabytes(RSS2, sys.platform)
 
 # ------------------------------------------------------------------
 # gates, continued
 # ------------------------------------------------------------------
 
 gate(PRIME_OK and TAB2_OK and TAB3_OK, "C28",
-     "part table rebuilt at {0} (764's own, so bookkeeping) and at {1} matches"
-     " cycle 764 row for row; both clean by trial division".format(nd(P2), nd(P3)))
+     "locally derived part table rebuilt at {0} and {1}; both agree exactly and"
+     " both primes pass trial division".format(nd(P2), nd(P3)))
 
 gate(PASS5 == NPART and NPART == 20 and SMMC == NCP and not NOVEC
      and NOMC == NMC0, "C29",
@@ -2636,8 +2559,8 @@ gate(len(NZD) == NEX and DR_SET, "C32",
          " ".join("/".join(str(x) for x in t) for t in NZD)))
 
 gate(DR_SUM == EXC_C and BLIND_OK and len(NZD) == 8, "C33",
-     "those {0} are exactly the cycle 764 excess parts, their drops sum to {1}, and"
-     " blind = d(m - rank) on all 20 parts".format(nd(len(NZD)), nd(DR_SUM)))
+     "the {0} locally identified drop parts sum to {1}, and"
+     " nullity = d(m - rank) on all 20 parts".format(nd(len(NZD)), nd(DR_SUM)))
 
 
 GN = [34]
@@ -2654,93 +2577,77 @@ def scope(msg):
     emit("{0} {1}".format(TAGS[-1], msg))
 
 
-gate(SG_OK and len(SGRK) == NINB and NINB == 4, nextlab(),
-     "each of the {0} incidence orbits alone has exact rational rank {1}, the"
-     " ceiling, and its mod p rank agrees".format(nd(NINB), nd(CEIL)))
+gate(SG_OK and SGRK == [144, 144, 144, 144] and NINB == 4, nextlab(),
+     "the {0} incidence orbits separately have exact rank 144 and matching"
+     " modular rank".format(nd(NINB)))
 
 gate(SGMISS == 0 and SGN == NINB * len(ACT) and SGN > 0, nextlab(),
-     "part by part: {0} single-orbit small matrices meet min(m, mc), {1} short;"
-     " this is one orbit at the ceiling read part by part".format(
-         nd(SGN), nd(SGMISS)))
+     "component diagnostic: {0} single-orbit matrices meet their local"
+     " allowance; short count {1}".format(nd(SGN), nd(SGMISS)))
 
 gate(LAT_OK, nextlab(),
-     "pairs {0}; triples {1}; all four give {2}, which is below every triple"
+     "incidence-subset exact ranks: pairs {0}; triples {1}; quartet {2}"
      .format(",".join(nd(v) for v in PRRK),
              ",".join(nd(v) for v in TRRK), nd(QDRK)))
 
 gate(LV_OK and len(NZD) == 8, nextlab(),
-     "every one of the {0} rank-losing parts first goes short on a pair, never on"
-     " a single orbit; {1} at size one".format(nd(len(DRLV)), nd(LV_ONE)))
+     "component diagnostic: {0} drop parts have least short subset size 2;"
+     " size-1 count {1}".format(nd(len(DRLV)), nd(LV_ONE)))
 
 gate(len(NMON) == 3 and NMOK, nextlab(),
-     "rank loss is not monotone: {0} further parts go short on a pair yet meet"
-     " min(m, mc) on all four; d/m/mc {1}".format(nd(len(NMON)), NMTX))
+     "component diagnostic: {0} additional parts have least short subset size 2"
+     " and quartet allowance; d/m/mc {1}".format(nd(len(NMON)), NMTX))
 
 gate(LV_DIS == 0 and LV_N == len(ACT3) and LV_N > 0, nextlab(),
      "the other prime gives the same size on every part: {0} compared, {1} differ,"
      " {2} short sub-sums at those sizes".format(
          nd(LV_N), nd(LV_DIS), nd(LV_NB)))
 
-gate(SW_OK, nextlab(),
-     "one-swap neighbourhood: {0} substitutions, values {1} to {2}, {3} at the"
-     " ceiling, {4} at {5}, {6} lower".format(
-         nd(SWN), nd(SWMIN), nd(SWMAX), nd(SWTOP), nd(SWEQ), nd(RANKB),
-         nd(SWLO)))
-
-gate(SWJ >= 0 and SWEX == CEIL and QDRK == RANKB, nextlab(),
-     "one exchange, slot {0} taking orbit {1}, lifts the exact rational rank of the"
-     " four-orbit table from {2} to {3}".format(
-         nd(SWJ), nd(SWC), nd(QDRK), nd(SWEX)))
-
-gate(BL_OK, nextlab(),
-     "blind spaces meet in dimension {0} and span {1}; smaller inside larger {2};"
-     " adding one orbit to the four gives exact rank {3}".format(
-         nd(INTER), nd(SUMBL), yn(NEST), nd(R5)))
-
 gate(SUMJ_OK, nextlab(),
-     "{0} sum to J rank {1}".format(nd(NCP), nd(RKJ)))
+     "all {0} orbit tables sum entrywise to the all-ones matrix of rank {1}"
+     .format(nd(NCP), nd(RKJ)))
 
 gate(REG2_OK, nextlab(),
-     "{0} ok {1} off {2} ones".format(nd(REG2_N), nd(REG2_BAD), nd(2 * NCOV)))
+     "all {0} orbit tables have two ones per row and column; exceptions {1}"
+     .format(nd(REG2_N), nd(REG2_BAD)))
 
 gate(CMPL_OK, nextlab(),
-     "cmpl {0} {1} {2}".format(nd(RC92), nd(RC95),
-                               ",".join(nd(v) for v in CPR6)))
+     "complement exact ranks: quartet {0}, singleton {1}, pairs {2}"
+     .format(nd(RC92), nd(RC95), ",".join(nd(v) for v in CPR6)))
 
 gate(ENDP_OK, nextlab(),
-     "empty {0} full {1}".format(nd(RKE), nd(RKJ)))
+     "endpoint exact ranks: empty {0}, full {1}".format(nd(RKE), nd(RKJ)))
 
 gate(PIECE_OK, nextlab(),
-     "{0} of {1} corners top {2}".format(nd(NC5), nd(5), nd(OFFMAX)))
+     "all {0} used pieces have five corners; distinct-pair overlap maximum {1}"
+     .format(nd(NC5), nd(OFFMAX)))
 
 gate(PROFA_OK, nextlab(),
-     "{0} cells {1} vary".format(nd(NCELL), nd(PABAD)))
+     "corner profile recomputed on {0} cells; varying orbit count {1}"
+     .format(nd(NCELL), nd(PABAD)))
 
 gate(STRAT_OK, nextlab(),
-     "{0} strata {1}".format(nd(NSTR), SZTX))
+     "corner profile has {0} strata with size histogram {1}".format(nd(NSTR), SZTX))
 
 gate(PROFB_OK, nextlab(),
-     "B {0} vals finer {1} on {2}".format(nd(NBV), nd(1975), nd(len(B75))))
+     "body profile has {0} values, refines corner profile, and marks {1} incidences"
+     .format(nd(NBV), nd(len(B75))))
 
 gate(SRANK_OK, nextlab(),
-     "top {0} not {1} blind {2} inc {3}".format(nd(SRMAX), nd(CEIL),
-                                                nd(SRMINB), nd(SRINC)))
-
-gate(REPAIR_OK, nextlab(),
-     "{0} lift slot {1} orb {2} str {3}".format(nd(NREP), nd(SWJ), nd(SWC),
-                                                nd(S5)))
-
-gate(RSTRAT_OK, nextlab(),
-     "{0} all {1} none {2} mixed".format(nd(RSW), nd(RSN), nd(RSM)))
+     "the 25 exact stratum ranks have maximum {0}; incidence stratum rank {1}"
+     .format(nd(SRMAX), nd(SRINC)))
 
 gate(STAB_OK, nextlab(),
-     "stab {0} fix {1} {2} pairs".format(nd(NST0), nd(FIX0), nd(len(PRS))))
+     "cover stabilizer order {0}, fixed blocks {1}, partner pairs {2}"
+     .format(nd(NST0), nd(FIX0), nd(len(PRS))))
 
 gate(PARTN_OK, nextlab(),
-     "partners {0}".format(" ".join(nd(v) for v in OVL)))
+     "the four partner-pair corner overlaps are {0}"
+     .format(" ".join(nd(v) for v in OVL)))
 
 gate(P72_OK, nextlab(),
-     "least pair {0} rank {1}".format(" ".join(nd(v) for v in LNAM), nd(LPRK)))
+     "unique least incidence-pair exact rank {0}; next exact rank {1}"
+     .format(nd(LPRK), nd(NXT)))
 
 SEQ_OK = (TAGS == ["C{0}".format(k) for k in range(len(TAGS))])
 gate(SEQ_OK and len(TAGS) >= 34, nextlab(),
@@ -2751,8 +2658,24 @@ gate(BAN2_OK and NBAN2 == 3 and NO_D9 and ONE_WORD_OK, nextlab(),
      "closing source check: {0} further barred pairs absent, no barred digit pair,"
      " the single-word use kept out".format(nd(NBAN2)))
 
-gate(ELAPSED2 < 900 and RSSMB2 < 2500, nextlab(),
-     "budget: wall time and peak resident memory both inside their limits")
+gate(RESOURCE_UNIT_CONTROL and ELAPSED2 < RUNTIME_LIMIT_SEC
+     and RSSMB2 < MEMORY_LIMIT_MB, nextlab(),
+     "closing resource measurements are inside declared limits")
 
-emit("stdout characters: {0}".format(OUT[0]))
-emit("TOTAL: PASS={0} FAIL={1}".format(STAT[0], STAT[1]))
+TAIL = "TOTAL: PASS={0} FAIL={1}".format(STAT[0], STAT[1])
+BASE = OUT[0]
+n = BASE
+for _ in range(30):
+    line = "stdout characters: {0}".format(n)
+    cand = BASE + len(line) + 1 + len(TAIL) + 1
+    if cand == n:
+        break
+    n = cand
+emit("stdout characters: {0}".format(n))
+emit(TAIL)
+if OUT[0] != n:
+    raise ValueError("character accounting did not close")
+if OUT[0] >= 6000:
+    raise ValueError("stdout over the ceiling")
+if STAT[1] != 0:
+    raise SystemExit(1)

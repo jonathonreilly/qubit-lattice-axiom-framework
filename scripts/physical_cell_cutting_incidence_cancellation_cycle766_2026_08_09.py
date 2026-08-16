@@ -1,24 +1,16 @@
-"""Twenty small matrices carry every table, and all 3321960 four-subsets censused.
+"""Locate finite incidence-orbit rank cancellation on a unit four-cube.
 
 Self-contained exact runner. It builds the cell object from scratch: the sixteen
 corners of the unit four-cube, the unit-determinant five-corner pieces at the cost
 floor, the cuttings by them, the pieces that occur, and the eight-piece covers.
 
-Permuting the four coordinates and flipping any of them splits the piece labelling
-space into parts the group cannot mix. The parts are read off the centre of the
-algebra of matrices commuting with the action, found exactly and certified against
-every one of its defining constraints. A table of the cover table's shape is an
-equivariant map, so inside each part its rank is at most the smaller of the two
-multiplicities times the part's degree and its blind dimension is at least the
-difference. Summing gives a ceiling of 144 and a floor of 48; the cover table's
-own rank is 105 and its blind space is 87, so it sits 39 inside both, and that 39
-is the blindness the symmetry does not force. An equivariant integer matrix of
-exact rational rank 144 shows the ceiling is attained.
-
-One labelling escapes the argument: the even subgroup splits the pieces into two
-classes of 96 and every cover meets each class four times; three candidate
-explanations are ruled out. All work is over the integers, the rationals and one
-fixed prime; no floating point enters any gate and no constant is fitted.
+Permuting the four coordinates and flipping any of them splits the piece-labelling
+space into finite parts. The runner reconstructs the relevant algebra, its centre,
+the twenty-part reduction, and both advertised exact-rank tables without reading a
+prior cycle artifact. It then computes all fifteen nonempty subsums of the four
+incidence orbits exactly, checks per-part modular diagnostics at two declared
+primes, finds an exact one-exchange witness of rank 144, and compares the two blind
+spaces by exact rational ranks.
 
 Output: one line per gate, then the stdout character count, then the total line.
 """
@@ -30,12 +22,13 @@ import time
 import resource
 from fractions import Fraction as FR
 import numpy as np
-from numpy.random import default_rng
 
 PRIME = 1000003
 SEED = 3
+AUDIT_TIMEOUT_SEC = 600
+MEMORY_LIMIT_MB = 2500
 
-T0 = time.time()
+T0 = time.monotonic()
 OUT = [0]
 
 
@@ -745,7 +738,7 @@ DEGSUM = sum(d * c for d, c in CENSUS)
 DEGCNT = sum(c for d, c in CENSUS)
 
 # ------------------------------------------------------------------
-# 10. the negative
+# 10. finite label-space comparison
 # ------------------------------------------------------------------
 
 
@@ -859,7 +852,7 @@ for g in GENS:
         MU_STABLE = False
 
 # ------------------------------------------------------------------
-# 13. pass-down to the axiom's covariance group
+# 13. finite coordinate subgroups
 # ------------------------------------------------------------------
 
 
@@ -1728,9 +1721,20 @@ for a, b in BAN:
     if (a + b).lower() in LOWSRC:
         BAN_OK = False
 
-ELAPSED = int(time.time() - T0)
+def rss_megabytes(raw, platform):
+    divisor = 1048576.0 if platform == "darwin" else 1024.0
+    return float(raw) / divisor
+
+
+RESOURCE_UNIT_CONTROL = (
+    rss_megabytes((MEMORY_LIMIT_MB - 1) * 1024, "linux") < MEMORY_LIMIT_MB
+    and rss_megabytes((MEMORY_LIMIT_MB + 1) * 1024, "linux") > MEMORY_LIMIT_MB
+    and rss_megabytes((MEMORY_LIMIT_MB - 1) * 1048576, "darwin") < MEMORY_LIMIT_MB
+    and rss_megabytes((MEMORY_LIMIT_MB + 1) * 1048576, "darwin") > MEMORY_LIMIT_MB
+)
+ELAPSED = time.monotonic() - T0
 RSS = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
-RSSMB = RSS // 1048576 if RSS > 10000000 else RSS // 1024
+RSSMB = rss_megabytes(RSS, sys.platform)
 
 # ------------------------------------------------------------------
 # gates
@@ -1872,9 +1876,11 @@ gate(ASCII_OK and NO_TAB and NO_PC and NO_EM and BAN_OK and NBAN > 0, "C26",
      " long dash {3}, {4} barred strings absent {5}".format(
          yn(ASCII_OK), yn(NO_TAB), yn(NO_PC), yn(NO_EM), NBAN, yn(BAN_OK)))
 
-gate(ELAPSED < 900 and RSSMB < 2500, "C27",
-     "budget: {0} seconds of wall time under 900, peak resident {1} MB under 2500,"
-     " stdout characters counted below".format(ELAPSED, RSSMB))
+gate(RESOURCE_UNIT_CONTROL and ELAPSED < AUDIT_TIMEOUT_SEC and RSSMB < MEMORY_LIMIT_MB,
+     "C27",
+     "budget: {0} seconds under {1}, peak resident {2:.1f} MB under {3}, platform"
+     " unit controls pass".format(int(ELAPSED), AUDIT_TIMEOUT_SEC, RSSMB,
+                                  MEMORY_LIMIT_MB))
 
 # ------------------------------------------------------------------
 # 22. a second prime, and the twenty small matrices
@@ -2057,10 +2063,10 @@ def build_small(p):
     return rws, bts, flg, tri
 
 
-T764 = [(t[2], t[3], t[4], t[5]) for t in PARTS]
+LOCAL_PART_TABLE = [(t[2], t[3], t[4], t[5]) for t in PARTS]
 ROWS2, BET2, FLG2, TRI2 = build_small(P2)
 NPART = len(ROWS2)
-TAB2_OK = (ROWS2 == T764)
+TAB2_OK = (ROWS2 == LOCAL_PART_TABLE)
 PASS5 = sum(1 for f in FLG2 if f[0] and f[1] > 0 and f[2] and f[3] and f[4])
 NOMC = sum(1 for i in range(NPART) if ROWS2[i][2] == 0)
 NOVEC = [VALS[i] for i in range(NPART) if FLG2[i][1] == 0]
@@ -2179,7 +2185,7 @@ DR_SET = ([(t[0], t[1], t[2]) for t in NZD]
 # ------------------------------------------------------------------
 
 ROWS3, BET3, FLG3, TRI3 = build_small(P3)
-TAB3_OK = (ROWS3 == T764)
+TAB3_OK = (ROWS3 == LOCAL_PART_TABLE)
 ACT3 = [i for i in range(len(ROWS3)) if BET3[i] is not None]
 
 # ------------------------------------------------------------------
@@ -2344,17 +2350,17 @@ NO_D9 = (("9" + "9") not in SRC)
 ONE_WORD_OK = (LOWSRC.count("assoc" + "iation")
                == LOWSRC.count("assoc" + "iation sch"))
 
-ELAPSED2 = int(time.time() - T0)
+ELAPSED2 = time.monotonic() - T0
 RSS2 = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
-RSSMB2 = RSS2 // 1048576 if RSS2 > 10000000 else RSS2 // 1024
+RSSMB2 = rss_megabytes(RSS2, sys.platform)
 
 # ------------------------------------------------------------------
 # gates, continued
 # ------------------------------------------------------------------
 
 gate(PRIME_OK and TAB2_OK and TAB3_OK, "C28",
-     "part table rebuilt at {0} (764's own, so bookkeeping) and at {1} matches"
-     " cycle 764 row for row; both clean by trial division".format(nd(P2), nd(P3)))
+     "the locally derived part table rebuilt at {0} and independently at {1}"
+     " matches row for row; both primes pass trial division".format(nd(P2), nd(P3)))
 
 gate(PASS5 == NPART and NPART == 20 and SMMC == NCP and not NOVEC
      and NOMC == NMC0, "C29",
@@ -2375,7 +2381,7 @@ gate(len(NZD) == NEX and DR_SET, "C32",
          " ".join("/".join(str(x) for x in t) for t in NZD)))
 
 gate(DR_SUM == EXC_C and BLIND_OK and len(NZD) == 8, "C33",
-     "those {0} are exactly the cycle 764 excess parts, their drops sum to {1}, and"
+     "those {0} are exactly the locally identified excess parts, their drops sum to {1}, and"
      " blind = d(m - rank) on all 20 parts".format(nd(len(NZD)), nd(DR_SUM)))
 
 
@@ -2445,8 +2451,24 @@ gate(BAN2_OK and NBAN2 == 3 and NO_D9 and ONE_WORD_OK, nextlab(),
      "closing source check: {0} further barred pairs absent, no barred digit pair,"
      " the single-word use kept out".format(nd(NBAN2)))
 
-gate(ELAPSED2 < 900 and RSSMB2 < 2500, nextlab(),
-     "budget: wall time and peak resident memory both inside their limits")
+gate(RESOURCE_UNIT_CONTROL and ELAPSED2 < AUDIT_TIMEOUT_SEC
+     and RSSMB2 < MEMORY_LIMIT_MB, nextlab(),
+     "closing budget: wall time and peak resident memory inside declared limits")
 
-emit("stdout characters: {0}".format(OUT[0]))
-emit("TOTAL: PASS={0} FAIL={1}".format(STAT[0], STAT[1]))
+TAIL = "TOTAL: PASS={0} FAIL={1}".format(STAT[0], STAT[1])
+BASE = OUT[0]
+n = BASE
+for _ in range(30):
+    line = "stdout characters: {0}".format(n)
+    cand = BASE + len(line) + 1 + len(TAIL) + 1
+    if cand == n:
+        break
+    n = cand
+emit("stdout characters: {0}".format(n))
+emit(TAIL)
+if OUT[0] != n:
+    raise ValueError("character accounting did not close")
+if OUT[0] >= 6000:
+    raise ValueError("stdout over the ceiling")
+if STAT[1] != 0:
+    raise SystemExit(1)

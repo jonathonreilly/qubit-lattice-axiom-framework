@@ -1,34 +1,65 @@
-# Every incidence orbit is individually maximal, so the 39 is pure cancellation, and it is born on pairs — Cycle 766
+# Finite incidence-orbit cancellation begins on pairs — Cycle 766
 
 Date: 2026-08-09
 
-Authority: none
+Authority: none; self-contained finite construction proposed for independent audit.
 
-Audit: unset.
-
-Status: derived location of the missing rank on the sub-sum lattice, with the non-monotonicity measured and one exchange to the ceiling
+Status: proposed_retained
 
 Claim type: bounded_theorem
 
-Runner:
+Primary runner:
 
 - [`physical_cell_cutting_incidence_cancellation_cycle766_2026_08_09.py`](../scripts/physical_cell_cutting_incidence_cancellation_cycle766_2026_08_09.py)
 
-Axioms:
-
-- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)
+Direct scientific dependencies: none.
 
 Constitutional effect: none. This note changes no axiom, primitive, registry,
 policy, audit verdict, effective status, or framework claim.
 
-## What this responds to
+## Trace and status fields
 
-Cycle 764 derived a ceiling of 144 on the rank of any table covariant under the
-cell's own symmetry and a floor of 48 on its blind space, and showed the ceiling
-attained. Cycle 765 reduced any such table to a list of twenty small matrices and
-named the missing 39 as eight per-part rank drops. Both cycles could say how much
-rank is missing and on which parts, but neither could say *where in the cover
-table's own construction* the loss happens.
+```yaml
+actual_current_surface_status: conditional-support
+target_claim_type: bounded_theorem
+trace_class: frontier_discovery
+target_claim_id: physical_cell_cutting_incidence_cancellation_cycle766_note_2026-08-09
+target_blocker_text: "locate the finite rank loss among subsums of the four reconstructed incidence orbits"
+source_of_blocker_text: frontier_question
+reachability_to_target: "direct finite exhaustive construction"
+artifact_role: "bounded finite incidence theorem candidate"
+next_trace_action: "independent audit of the landed source and runner evidence"
+conditional_surface_status: "the target domain is the declared finite incidence object"
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: "exact rank theorem for explicitly reconstructed finite integer matrices"
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```
+
+## Exact target
+
+On the finite object defined below, the four cover-piece orbit indicators whose
+sum is the reconstructed cover table each have exact rational rank `144`. The
+exact ranks of their fifteen nonempty subsums are the singleton, pair, triple,
+and quadruple lists displayed below. Replacing incidence-orbit slot `0` by orbit
+`5` gives exact rational rank `144`, as does adding orbit `5` to all four. The
+blind spaces of the cover table and the replacement witness meet in dimension
+`12` and span dimension `123`.
+
+The theorem's domain is this labelled finite incidence object. The modular
+per-part levels and one-swap neighbourhood census are diagnostics with the
+one-sided interpretation stated in the Boundary section; they are not promoted
+to exact-rank census claims.
+
+## Historical motivation and self-containment
+
+Earlier cycle branches motivated the question of where the rank difference `39`
+appears, but they are not authority or dependencies for this note. The primary
+runner rebuilds the pieces, cuttings, covers, symmetry action, central
+decomposition, twenty-part reduction, ceiling, floor, and every target matrix
+from the definitions in this packet. It reads no earlier-cycle source, data, or
+result.
 
 The cover table is the sum of 4 whole cell orbits. That makes the question finite
 and sharp: is each of those four orbits already deficient, or are they
@@ -51,8 +82,8 @@ covers and 96 on the cells of the cover-by-piece square. By exact rational
 arithmetic the cutting table has rank 88 with kernel 104, and the cover table has
 rank 105 with kernel 87.
 
-The reduction kept from cycle 765: a covariant table acts on part `i` as one
-`mc_i` by `m_i` matrix tensored with an identity, so its rank is
+The locally reconstructed reduction shows that a covariant table acts on part
+`i` as one `mc_i` by `m_i` matrix tensored with an identity, so its rank is
 `sum_i d_i rank(beta_i)`; the coefficient map from the 96 cell orbits to the
 twenty small matrices is one-to-one and onto (stacked width 96, rank 96). Five of
 the twenty parts carry no matrix at all, so 15 parts are active.
@@ -65,10 +96,9 @@ by part, all 60 single-orbit small matrices meet their own allowance
 `min(m, mc)`, with 0 short.
 
 This settles the dichotomy the cycle opened with, and it settles it the strong
-way. **No incidence orbit is deficient anywhere.** Every one of the eight rank
-drops that make up the 39 is therefore pure cancellation: rank that each summand
-has and that the sum destroys. The 39 is not a property of any single orbit; it
-exists only in the addition.
+way. **None of these four finite incidence-orbit matrices is individually below
+rank 144.** Every one of the eight per-part drops that make up the `39` therefore
+appears only in a sum of orbit matrices; it is absent from each singleton.
 
 ## Where the loss is born: the sub-sum lattice
 
@@ -149,29 +179,64 @@ blind to plus a little more. The two blind spaces are largely transverse: the
 cover table sees things a ceiling table misses, and is blind to a great deal that
 a ceiling table sees.
 
-## A corollary that is not gated
-
-The width-96, rank-96 isomorphism of cycle 765 gives one further exact integer
-per part for free. Fix a part `i` and a non-zero vector `v` in `C^{m_i}`. The map
-sending a table's coefficient vector to `beta_i v` is onto `C^{mc_i}`, because the
-coefficient map is onto the full matrix space. Hence the covariant tables blind to
-`v` on part `i` form a subspace of codimension exactly `mc_i` inside the 96
-available coefficients.
-
-This is stated as a corollary and deliberately not gated in the runner: it follows
-from an isomorphism the runner already establishes, so a gate for it would hold by
-construction and would be evidence of nothing.
-
 ## Runner
 
-`physical_cell_cutting_incidence_cancellation_cycle766_2026_08_09.py`, 46 gates,
-0 failures, 5512 characters of output, 174 seconds of wall time and 156 MB peak
-resident memory. Every number above is printed by a gate of that run. Group
+`physical_cell_cutting_incidence_cancellation_cycle766_2026_08_09.py` has 46
+fail-closed gates. Every target number above is printed by a gate. Group
 construction, orbit decomposition, the central decomposition into twenty parts,
-the ceiling and floor, and the small-matrix reduction are the kept prefix from
-cycles 763 to 765 and are re-derived from the pieces on every run, not read from a
-file. The sub-sum lattice, the per-part levels, the neighbourhood scan and the
-blind-space comparison are this cycle's work.
+the ceiling and floor, and the small-matrix reduction are re-derived from the
+pieces on every run, not read from a file. The sub-sum lattice, per-part levels,
+neighbourhood scan, and blind-space comparison are computed in the same process.
+
+## Inputs, imports, and primitive-registry result
+
+| input | class and provenance | role and sensitivity |
+| --- | --- | --- |
+| labelled unit four-cube, determinant-one simplex rule, adjacency cost, cutting and cover definitions | declared finite-model data in this note and runner | define the theorem's object; changing one defines another object |
+| coordinate permutations and flips | declared finite action | defines the orbit partition used by the target |
+| cell-orbit labels selected by the reconstructed cover table | deterministic outputs of the finite construction | define the four target summands; the runner checks their reconstruction of the cover table |
+| replacement label `5` and slot `0` | deterministic witness found by the declared exhaustive one-swap scan | define the advertised replacement and five-orbit witnesses; exact ranks are recomputed independently of the modular scan |
+| primes `1,000,003` and `1,000,033` | computational diagnostics | support only the explicitly modular per-part and neighbourhood measurements |
+| Python integer/rational arithmetic and NumPy integer arrays | implementation substrate | exact recomputation, cross-prime controls, and independent review cover load-bearing operations |
+
+The primitive-registry check defined by
+`docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md` returns an empty
+premise dependency set for this target. The axiom and approved-primitive
+registries contribute no numerical or structural input. The runner declares no
+`AUDIT_INPUT_PATHS` because it reads no data file; its own source bytes are bound
+by the runner-cache execution identity.
+
+## Proof-obligation graph
+
+The exact target closes through this acyclic graph:
+
+1. the declared corner, determinant, cost, cutting, and cover definitions fix the finite search domain;
+2. C0-C3 reconstruct the pieces, cuttings, cover table, group action, and exact primary ranks;
+3. C4-C10 reconstruct the orbit algebra and its twenty-part decomposition, while C11-C13 establish the rank ceiling `144`, blind-space floor `48`, measured difference `39`, and an exact ceiling witness;
+4. C28-C33 rebuild the local part table at two primes and verify that the small-matrix reduction reproduces direct table ranks on deterministic controls;
+5. C34-C36 compute all fifteen subsum ranks exactly and prove that every singleton has rank `144` while the four-orbit sum has rank `105`;
+6. C40-C41 identify the replacement witness and recompute its exact rational rank `144`;
+7. C42 recomputes the blind-space intersection and span dimensions exactly and checks the five-orbit rank `144`.
+
+The per-part first-loss levels and one-swap census are modular diagnostics. The
+second prime is an independent-construction control for those diagnostics, not an
+exact-rank proof.
+
+## Controls and execution contract
+
+The runner declares `AUDIT_TIMEOUT_SEC = 600` and `MEMORY_LIMIT_MB = 2500`,
+uses a monotonic clock, and converts `ru_maxrss` by platform convention. Synthetic
+values immediately below and above the memory limit exercise both Linux KiB and
+Darwin byte conversions. Every failed gate contributes to the final `FAIL` count
+and causes a nonzero process exit after closed stdout accounting.
+
+## Review-preparation record
+
+The self-contained salvage excludes the unlanded ancestor manifest and uses no
+earlier-cycle artifact as authority. It removes an ungated side corollary from the
+target surface, labels modular counts as one-sided diagnostics, inventories the
+finite and computational inputs, and makes the runner's resource and failure
+contracts explicit. Independent scientific review remains required.
 
 ## Boundary
 
@@ -194,9 +259,8 @@ blind-space comparison are this cycle's work.
   the question of which pairs are responsible for the deficiency, are the next
   units and are named here so the boundary is honest about what was left.
 - The symmetry used throughout is the full symmetry of the four-cube, which
-  permutes the four coordinates and flips any of them. It is larger than the
-  proper cubic rotations the admissibility axiom names, so none of this is a
-  statement about that axiom's own covariance. It is a statement about a finite
-  combinatorial object the axiom's adjacency rule picks out.
+  permutes the four coordinates and flips any of them. Its use here has no
+  premise edge to a framework covariance claim; it acts only on the finite
+  combinatorial object declared in this note.
 - No axiom, primitive, registry entry, effective status or framework claim changes
   here. This is finite exact linear algebra on a fixed finite object.

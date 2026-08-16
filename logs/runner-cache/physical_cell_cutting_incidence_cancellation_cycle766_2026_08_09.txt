@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/physical_cell_cutting_incidence_cancellation_cycle766_2026_08_09.py
-runner_sha256: f2a8a9a261acf32145481bfb389809ddc389d2cec4ed4cb7c348099293708bdd
+runner_sha256: 352aab1267d6fd6316ff3791307ac9530ce9cc2c8655b8867d3cd60fc595fe40
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 180.43
+elapsed_sec: 144.60
 status: ok
 ----- stdout -----
 all numbers below are exact computational identities; no floating point enters any gate
@@ -34,13 +34,13 @@ PASS C23 third candidate: corner-parity label agrees on 96 of 192 pieces, ordere
 PASS C24 the determinant tracks the product character: with corners kept in source order it matches on all 73728 element-piece pairs, 0 misses
 PASS C25 re-sorted reading: with each image piece in its own sorted order the match fails on 36864 of 73728 pairs, holding for 4 of 384 elements
 PASS C26 source hygiene: pure ASCII yes, no tab yes, no remainder character yes, no long dash yes, 38 barred strings absent yes
-PASS C27 budget: 174 seconds of wall time under 900, peak resident 156 MB under 2500, stdout characters counted below
-PASS C28 part table rebuilt at 1000003 (764's own, so bookkeeping) and at 1000033 matches cycle 764 row for row; both clean by trial division
+PASS C27 budget: 138 seconds under 600, peak resident 269.0 MB under 2500, platform unit controls pass
+PASS C28 the locally derived part table rebuilt at 1000003 and independently at 1000033 matches row for row; both primes pass trial division
 PASS C29 small matrices: 20 of 20 parts pass all five conditions; 5 have no cover multiplicity and so no matrix
 PASS C30 96 cell orbit coefficients to twenty matrices: stacked width 96, rank 96 mod p, so the map is one-to-one and onto
 PASS C31 the small-matrix reduction matches the direct rank on 62 of 62 tables; on the cover table it gives 105 and blind 87
 PASS C32 the drop parts d/m/mc/rank/drop: 2/2/2/1/2 4/2/3/1/4 6/2/3/1/6 8/4/6/3/8 6/4/3/2/6 6/2/3/1/6 6/4/3/2/6 1/1/1/0/1
-PASS C33 those 8 are exactly the cycle 764 excess parts, their drops sum to 39, and blind = d(m - rank) on all 20 parts
+PASS C33 those 8 are exactly the locally identified excess parts, their drops sum to 39, and blind = d(m - rank) on all 20 parts
 PASS C34 each of the 4 incidence orbits alone has exact rational rank 144, the ceiling, and its mod p rank agrees
 PASS C35 part by part: 60 single-orbit small matrices meet min(m, mc), 0 short; this is one orbit at the ceiling read part by part
 PASS C36 pairs 72,93,117,129,144,144; triples 114,130,142,142; all four give 105, which is below every triple
@@ -52,8 +52,8 @@ PASS C41 one exchange, slot 0 taking orbit 5, lifts the exact rational rank of t
 PASS C42 blind spaces meet in dimension 12 and span 123; smaller inside larger no; adding one orbit to the four gives exact rank 144
 PASS C43 gate labels form one strict sequence of 44 with no gap and no repeat
 PASS C44 closing source check: 3 further barred pairs absent, no barred digit pair, the single-word use kept out
-PASS C45 budget: wall time and peak resident memory both inside their limits
-stdout characters: 5512
+PASS C45 closing budget: wall time and peak resident memory inside declared limits
+stdout characters: 5557
 TOTAL: PASS=46 FAIL=0
 
 ----- stderr -----

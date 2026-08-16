@@ -1,0 +1,66 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_cov1_positive_selector_search_2026_08_15.py
+runner_sha256: 8901d6919049c2b8e96943b15b67e8993c7765f81bd9444785b511615560d8a6
+input_fingerprint_sha256: 1e4927a2989b82906d2f5a2411c81d818af40f3f0c8ad21808ca018f4cab6d0f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_COV1_POSITIVE_SELECTOR_SEARCH_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+external_scientific_inputs: current Lattice/Admissibility/Record boundary only; no observation or fit
+negative_scope: displayed remaining-bit candidates versus cov1>0; does not adopt a bit
+n_rotations=24
+n_orbits=10
+remaining_labels=('wt1', 'opp2', 'adj2', 'vertex3', 'mixed3')
+|F_cut|=32
+n_one_site_seeds=12
+N_pos=8
+N_P=14
+N_P_not_pos=6
+N_pos_not_P=0
+cov1(f_L1)=12
+matching_candidates=['wt1 AND adj2']
+candidate wt1: equiv=0 tp=8 tn=16 fp=8 fn=0
+candidate opp2: equiv=0 tp=4 tn=12 fp=12 fn=4
+candidate adj2: equiv=0 tp=8 tn=16 fp=8 fn=0
+candidate vertex3: equiv=0 tp=4 tn=12 fp=12 fn=4
+candidate mixed3: equiv=0 tp=4 tn=12 fp=12 fn=4
+candidate wt1 AND opp2: equiv=0 tp=4 tn=20 fp=4 fn=4
+candidate wt1 AND adj2: equiv=1 tp=8 tn=24 fp=0 fn=0
+candidate wt1 AND vertex3: equiv=0 tp=4 tn=20 fp=4 fn=4
+candidate wt1 AND mixed3: equiv=0 tp=4 tn=20 fp=4 fn=4
+candidate P: equiv=0 tp=8 tn=18 fp=6 fn=0
+candidate (adj2,vertex3,mixed3)=111: equiv=0 tp=2 tn=22 fp=2 fn=6
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required note-plus-axiom string-literal tuple
+PASS: thm1-host 24 rotations, 10 orbits, 32 F_cut maps, 12 one-site seeds
+PASS: thm1-f-L1-is-unbalanced-axis f_L1 is 1 iff some axis has c_+ != c_-
+PASS: thm1-f-L1-not-hamming f_L1 is n!=0, not Hamming |c|_1 mod 2
+PASS: thm1-positivity-census exactly eight maps have cov1>0 and every positive map has P
+PASS: thm1-standalone-bits-fail no standalone remaining bit equals cov1>0
+PASS: thm1-wt1-and-other-bits among wt1 AND each other bit, only wt1 AND adj2 matches
+PASS: thm1-P-reconfirm-fail P fails: six P-true maps have cov1=0 and no positive map lacks P
+PASS: thm1-triple-all-one-fails (adj2, vertex3, mixed3) all 1 is not cov1>0
+PASS: thm2-unique-match the unique matching candidate is wt1 AND adj2
+PASS: thm2-not-max1-rename Q_* has eight maps; Max(1) has four; this is not a Max(1) rename
+PASS: thm3-display-not-adopted the matching formula is displayed and no bit is adopted
+PASS: source-lattice-admissibility Lattice rotations and Admissibility covariance are pinned
+PASS: source-record-boundary Record lock, content-only readout, unreadable absence, and formation residual are pinned
+PASS: claim-scope claim_scope reports the remaining-bit search and does not adopt a bit
+PASS: note-contract machine fields, three theorems, and forbidden-phrase hygiene hold
+PASS: no-axiom-edit the axiom memo is unedited and the theorem proposes no axiom change
+PASS: off-patch-zero off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+per_element: checked exactly — each of the 64 neighbor 6-tuples is assigned its axis-type orbit
+per_site: checked exactly — each of the twelve two-cube vertices uses the same six-direction stencil
+per_mode: checked exactly — every F_cut map is scored on twelve one-site seeds against the displayed candidate menu
+per_block: checked exactly — the unique matching remaining-bit formula is named and not adopted
+lattice_wide: checked and not executed — no Z^3-wide formation law or physical Admissibility selector is claimed
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

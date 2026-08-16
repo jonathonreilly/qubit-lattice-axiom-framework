@@ -1,16 +1,18 @@
 ===== runner cache v1 =====
 runner: scripts/physical_cell_cutting_small_matrix_census_cycle765_2026_08_09.py
-runner_sha256: 4ed9ab96dde425f045ec1252b338b67950169a593662ed3514db8301905571b7
+runner_sha256: fb5aec126213dbca8a3a817514969170475cdf2b6d3923738ff73f95c120502d
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 149.22
+elapsed_sec: 150.60
 status: ok
 ----- stdout -----
 all numbers below are exact computational identities; no floating point enters any gate
 PASS C0 object: 2672 candidate pieces, 400 at adjacency-cost floor 6, 15800 cuttings of 24, 192 pieces used, 192 covers
+PASS C0A object certs: generic yes, visible yes, search yes, volume yes, disjoint yes, covers 8/8 yes
 PASS C1 group: 384 maps, all distinct, closed over 147456 products, bijective yes, one piece orbit yes, one cover orbit yes
 PASS C2 orbits: 104 on ordered piece pairs, 120 on ordered cover pairs, 96 on cover-piece cells, sweep agrees yes
 PASS C3 exact rational ranks: cutting table 88 kernel 104, cover table 105 kernel 87, prime path agrees yes
+PASS C3A rank certs: Gram yes, annihilation yes/yes, kernel ranks 104/87, direct rows 88/105, row kernels yes
 PASS C4 orbit matrices: 104 piece-pair, 96 cell; 40 equivariance checks hold yes; cover table is the sum of 4 whole cell orbits yes
 PASS C5 structure constants: max 2, every label has a representative yes, 7 pairs checked by direct product agree yes, below 2**40 yes
 PASS C6 centre: 84 of 10816 rows picked, prime rank 84 exact 84, dimension 20, each vector meets all 10816 rows yes, top 2, guard yes
@@ -27,30 +29,38 @@ PASS C16 excess rows d/m/mc/blind/forced 5 to 8: 6/4/3/12/6 6/2/3/6/0 6/4/3/12/6
 PASS C17 even subgroup: order 192, index 2, two piece classes of 96 and 96, two cover classes of 96 and 96
 PASS C18 the class labelling: all 192 cover sums are [0], block split histogram [(4, 192)]
 PASS C19 self-dual: piece side [(4, 192)], cover side [(4, 192)], incidence totals 768 and 768 both equal 96 times 8
-PASS C20 first candidate: the non-identity element fixing cover 0 has sign 1, fixes 0 of 8 blocks, cycles [2, 2, 2, 2], keeps the class yes
-PASS C21 contrast: on that element the flip-count parity is -1 and its product with the permutation sign is -1, so both are forced blind
-PASS C22 second candidate: the mean carries nothing; all 9 split values a give 96a + 96(8 - a) = 768, and 768 over 192 is 4
-PASS C23 third candidate: corner-parity label agrees on 96 of 192 pieces, ordered determinant label on 96 of 192, determinant values [-1, 1]
+PASS C20 cover-stabilizer diagnostic: the non-identity element has sign 1, fixes 0 of 8 blocks, cycles [2, 2, 2, 2], keeps the class yes
+PASS C21 sign diagnostic: flip-count parity -1, product with permutation sign -1
+PASS C22 split-count identity: all 9 values a give 96a + 96(8 - a) = 768, and 768 over 192 is 4
+PASS C23 label diagnostic: corner parity agrees on 96 of 192 pieces, ordered determinant label on 96 of 192, determinant values [-1, 1]
 PASS C24 the determinant tracks the product character: with corners kept in source order it matches on all 73728 element-piece pairs, 0 misses
-PASS C25 re-sorted reading: with each image piece in its own sorted order the match fails on 36864 of 73728 pairs, holding for 4 of 384 elements
+PASS C25 sorted-order diagnostic: unequal on 36864 of 73728 pairs, equal throughout for 4 of 384 elements
 PASS C26 source hygiene: pure ASCII yes, no tab yes, no remainder character yes, no long dash yes, 38 barred strings absent yes
-PASS C27 budget: 133 seconds of wall time under 900, peak resident 249 MB under 2500, stdout characters counted below
-PASS C28 part table rebuilt at 1000003 (764's own, so bookkeeping) and at 1000033 matches cycle 764 row for row; both clean by trial division
+PASS C27 budget: 133 seconds of wall time under 900, peak resident 260 MB under 2500, stdout characters counted below
+PASS C28 same-code rebuilds at 1000003/1000033: baseline rows and all five conditions agree; separated central values yes/yes
 PASS C29 small matrices: 20 of 20 parts pass all five conditions; 5 have no cover multiplicity and so no matrix
-PASS C30 96 cell orbit coefficients to twenty matrices: stacked width 96, rank 96 mod p, so the map is one-to-one and onto
+PASS C30 96 coefficients to blocks: widths 96/96, ranks 96/96 at the two primes
 PASS C31 the small-matrix reduction matches the direct rank on 62 of 62 tables; on the cover table it gives 105 and blind 87
-PASS C32 the drop parts d/m/mc/rank/drop: 2/2/2/1/2 4/2/3/1/4 6/2/3/1/6 8/4/6/3/8 6/4/3/2/6 6/2/3/1/6 6/4/3/2/6 1/1/1/0/1
-PASS C33 those 8 are exactly the cycle 764 excess parts, their drops sum to 39, and blind = d(m - rank) on all 20 parts
+C32 detail i/lambda/d/m/mc/rank/drop/hash: 5/-289/2/2/2/1/2/a d 9 9 9 9 1 a 9 9 4 9
+C32 detail i/lambda/d/m/mc/rank/drop/hash: 7/-143/4/2/3/1/4/8 a 2 a 0 6 4 4 9 1 e b
+C32 detail i/lambda/d/m/mc/rank/drop/hash: 8/-141/6/2/3/1/6/5 4 a 6 d 0 7 a 2 5 b f
+C32 detail i/lambda/d/m/mc/rank/drop/hash: 11/-17/8/4/6/3/8/5 b 0 8 e a 4 b 3 9 b 9
+C32 detail i/lambda/d/m/mc/rank/drop/hash: 12/7/6/4/3/2/6/9 c 5 d b 6 5 b 2 4 1 e
+C32 detail i/lambda/d/m/mc/rank/drop/hash: 13/19/6/2/3/1/6/3 1 e 2 a 6 1 b 7 a 1 6
+C32 detail i/lambda/d/m/mc/rank/drop/hash: 15/159/6/4/3/2/6/6 a 2 e 8 9 a 5 e 0 8 7
+C32 detail i/lambda/d/m/mc/rank/drop/hash: 18/635/1/1/1/0/1/5 f e c e b 6 6 f f c 8
+PASS C32 8 positive-drop blocks have unique ordinal/eigenvalue/matrix-hash identifiers
+PASS C33 internal part accounting: 8 drops sum to 39; blind = d(m - rank) on all 20 parts
 PASS C34 two 1x1 parts: 48 plus 48 minus, 1272384 of 3321960 blind, = C(48,2)C(48,2); and 96 plus 0 minus, 0 blind
 PASS C35 census of all 3321960 four-subsets: 79 distinct ranks, least 24, greatest 144 = the ceiling, 511872 attain it
 PASS C36 at or below 105: 106536; equal 105: 24768; below 105: 81768; at the least: 72
-PASS C37 cross-check at 1000033: matrices rebuilt from scratch, 200000 of 200000 sampled four-subsets give the census rank
+PASS C37 same-implementation check at 1000033: every 16th subset in the first 3.2m; 200000 of 200000 modular ranks agree
 PASS C38 exact rational rank: 0/2/12/14 gives 24, 0/1/2/7 gives 144, the cover table's own 0/1/2/3 gives 105, each the census value
-C39 scope: census ranks are mod 1000003 and can only fall, so at-or-below counts are upper bounds and 511872 a lower bound; 3 extremes exact
+C39 scope: mod 1000003; <= and < counts bound rational above, top-bin 511872 below; both extrema and cover reference exact
 PASS C40 hygiene: 3 further barred strings absent, no doubled nine, the one bare word only inside a barred pair
-PASS C41 budget: 149 seconds of wall time under 900, peak resident 580 MB under 2500, stdout characters below
-stdout characters: 5114
-TOTAL: PASS=41 FAIL=0
+PASS C41 budget: 150 seconds of wall time under 900, peak resident 577 MB under 2500, pre-trailer characters below
+stdout characters before trailer: 5725
+TOTAL: PASS=43 FAIL=0
 
 ----- stderr -----
 

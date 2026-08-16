@@ -1,8 +1,9 @@
-# Twenty small matrices carry every covariant table, and the 39 resolves into eight named rank drops — Cycle 765
+# Finite small-block decomposition and Hamming-weight-four rank census
 
 Date: 2026-08-09
 
-Authority: none
+Authority: none; self-contained finite construction proposed for independent
+audit.
 
 Audit: unset.
 
@@ -10,188 +11,333 @@ Status: proposed_retained
 
 Claim type: bounded_theorem
 
-Runner:
+Primary runner:
 
-- [`physical_cell_cutting_small_matrix_census_cycle765_2026_08_09.py`](../scripts/physical_cell_cutting_small_matrix_census_cycle765_2026_08_09.py)
+- [finite small-block census runner](../scripts/physical_cell_cutting_small_matrix_census_cycle765_2026_08_09.py)
 
-Axioms:
+Direct scientific dependencies: none.
 
-- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)
+Boundary authority only:
+
+- [minimal axioms](MINIMAL_AXIOMS_2026-06-29.md), cited only to distinguish the
+  framework's proper-cubic and Record vocabulary from this declared finite
+  full-four-cube action. It supplies no premise of the finite theorem.
 
 Constitutional effect: none. This note changes no axiom, primitive, registry,
 policy, audit verdict, effective status, or framework claim.
 
-## What this responds to
+## Trace and status fields
 
-Cycle 764 derived a ceiling of 144 on the rank of any table covariant under the
-cell's own symmetry, a floor of 48 on its blind space, and showed the ceiling
-attained by an exact rational witness. The cover table sits at rank 105 with
-blind space 87, so 39 of the available rank goes unused. Cycle 764 could say
-which twenty parts the room is distributed over, but not where the 39 goes, and
-it ended by naming that as a finite and small question: which small matrices lose
-rank, and by how much.
+```yaml
+actual_current_surface_status: conditional-support
+target_claim_type: bounded_theorem
+trace_class: frontier_discovery
+target_claim_id: finite_small_block_hamming_weight_four_rank_census_2026-08-09
+target_blocker_text: "decompose the declared finite covariant-table space and census its binary Hamming-weight-four family"
+source_of_blocker_text: frontier_question
+reachability_to_target: "direct exact finite construction and exhaustive enumeration"
+artifact_role: "bounded finite representation-and-census theorem candidate"
+next_trace_action: "independent audit of the landed source and runner evidence"
+conditional_surface_status: "bounded to the declared labelled unit-four-cube object, full 384-map action, and stated coefficient fields"
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: "exact finite decomposition, rank, and exhaustive modular-census identities on one declared object"
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```
 
-This cycle answers that question, and then measures the whole band the ceiling
-bounds.
+## Exact target
 
-## The object
+Let `G` be the `384`-element signed-coordinate-permutation group acting on the
+declared `192` supported pieces and `192` covers below. Over the rationals, the
+piece and cover permutation modules split into twenty common central parts. On
+part `i`, every `G`-equivariant cover-to-piece table has the form
+`identity(d_i) tensor M_i`, with `M_i` an `mc_i` by `m_i` rational matrix.
+Consequently its rank is
 
-The unit four-cube on sixteen corners, cut into least-volume pieces at the
-adjacency-cost floor: 2672 candidate pieces of determinant one, 400 of them at
-cost floor 6, 15800 cuttings of 24 pieces, 192 pieces actually used and 192
+```text
+sum_i d_i rank(M_i),
+```
+
+and is at most `144`. The reconstructed cover table has exact rational rank
+`105`; its eight non-full cover blocks have weighted rank drops summing to `39`.
+An explicit equivariant integer table has exact rational rank `144`.
+
+Over `F_1000003`, exhaustively enumerate the `C(96,4) = 3,321,960` binary
+coefficient vectors of Hamming weight four in the cell-orbit basis. Their modular
+ranks take `79` distinct values, with minimum `24`, maximum `144`, and the pinned
+bin counts stated below. Exact rational elimination separately gives rank `24`
+and `144` for explicit members of this finite family and rank `105` for the cover
+reference table. Thus the rational minimum and maximum over this same binary
+family are exactly `24` and `144`; the remaining histogram is explicitly a
+modular histogram.
+
+The theorem is finite combinatorics and finite representation theory. It is not a
+selection rule for general covariant tables, a probability law, a proper-cubic
+framework theorem, a physical piece-to-Record map, dynamics, or a continuum
+claim.
+
+## Declared finite object
+
+Start with the sixteen binary corners of the unit four-cube. A candidate piece is
+a five-corner simplex whose four edge vectors from its first corner have
+determinant of absolute value one. Keep the candidates at the minimum declared
+adjacency cost. A cutting is a set of kept pieces with pairwise disjoint interiors
+that fills the cell. A cover is an eight-piece set that meets every cutting once.
+
+The runner rebuilds the object from those definitions. It obtains `2,672`
+unit-determinant candidates, adjacency-cost floor `6`, `400` candidates at that
+floor, `15,800` cuttings of `24` pieces, `192` supported pieces, and `192`
 eight-piece covers.
 
-The symmetry permutes the four coordinates and flips any of them: 384 maps,
-closed over all 147456 products, acting transitively on the 192 pieces and on the
-192 covers. It has 104 orbits on ordered pairs of pieces, 120 on ordered pairs of
-covers and 96 on the cells of the cover-by-piece square. By exact rational
-arithmetic the cutting table has rank 88 with kernel 104, and the cover table has
-rank 105 with kernel 87.
+The `5^4 = 625` shifted rational sample points avoid every facet plane, and every
+one of the `400` kept pieces contains a sample point. The exact-cover recursion
+branches on every kept piece containing the first uncovered point. It then checks
+that the output is unique and that every returned mask family is disjoint and
+covers all sample points. Exact facet/intersection tests certify every pair that
+co-occurs, and twenty-four determinant-one simplices give normalized volume
+`24/24`. The cover search is also unique; every cover meets every cutting exactly
+once, and the cover-by-piece table has constant row and column sums `8`.
 
-## The reduction
+Let `A` be the cutting-by-piece table and `B` the cover-by-piece table. Exact
+rational elimination gives:
 
-The twenty parts of cycle 764 are the eigenspaces of one central element acting
-on the 192 piece directions. Each part carries a degree d, a piece-side
-multiplicity m and a cover-side multiplicity mc. Written out, the piece side is a
-sum over parts of a degree-d space times an m-dimensional multiplicity space, and
-the cover side is the same sum with mc in place of m. A covariant table therefore
-acts on each part as the identity on the degree-d space times a single mc by m
-matrix. Its rank is the sum over parts of d times the rank of that small matrix,
-and its blind space the sum of d times m minus that rank.
+| table | rank | kernel dimension |
+| --- | ---: | ---: |
+| `A` | 88 | 104 |
+| `B` | 105 | 87 |
 
-The runner builds those matrices rather than assuming them. Restricted to a part,
-the commuting basis acts through m by m matrices; a deterministic small-integer
-combination of them has a minimal polynomial of degree at most m, whose roots are
-found by scanning every residue of the prime 1000003 with nested evaluation. A
-root whose eigenspace has dimension exactly d picks out a one-dimensional line in
-the multiplicity space, so every vector of that eigenspace is a pure tensor and
-the multiplicity coordinates can be read off directly. All 20 of 20 parts pass
-all five of the runner's conditions on this construction. Five of the twenty
-matrices are empty, because those five parts have no cover-side copy at all.
+The runner binds the Gram identity used for `A`, direct annihilation of both
+integer kernel bases, their independent ranks, and direct selected-row rank
+controls. These are gates, not report-only diagnostics.
 
-The correspondence runs both ways. The 96 cell-orbit coefficients stack into a
-matrix of width 96 whose rank is 96, so a covariant table is exactly one list of
-twenty small matrices and every list is a covariant table. The reduction is
-checked against the direct rank on 62 of 62 tables, and on the cover table itself
-it returns rank 105 with blind space 87 — the same values the exact rational
-computation gives.
+## Field bridge and twenty-block form
 
-## Where the 39 goes
+The fields have distinct roles. Exact incidence ranks and the advertised rank
+ceiling are over `Q`. The exhaustive histogram and explicit small-block
+coordinates are over `F_1000003`; `F_1000033` supplies a same-implementation
+cross-prime check.
 
-Eight of the twenty small matrices fail to have full rank. Their rows, as degree,
-piece-side multiplicity, cover-side multiplicity, rank of the small matrix, and
-the rank the part gives up:
+The representation bridge is the following standard finite-group theorem, with
+its hypotheses exposed here. Maschke's theorem makes `Q[G]` semisimple. Moreover,
+`G` is the signed permutation group `C2 wr S4`. Its rational irreducibles are the
+absolutely irreducible bipartition modules constructed by inducing tensor products
+of rational Specht modules and the two rational characters of `C2`; hence `Q` is
+a splitting field for this action. The double-centralizer decomposition therefore
+writes each common simple part as a degree-`d` rational irreducible tensored with
+its multiplicity space, and every equivariant map is identity on that irreducible
+factor tensored with one multiplicity-space matrix.
 
-    2/2/2/1/2   4/2/3/1/4   6/2/3/1/6   8/4/6/3/8
-    6/4/3/2/6   6/2/3/1/6   6/4/3/2/6   1/1/1/0/1
+The runner does not infer applicability from a name alone. The `104` disjoint
+piece-pair orbit matrices are a rational basis of the piece commutant. Exact
+commutator elimination gives a `20`-dimensional center, and exact multiplication
+by one central element has twenty distinct integer eigenvalues, each simple in
+the center. The corresponding central operator is checked against the orbital
+representation. This identifies the twenty rational central parts.
 
-The last entry of each row is d times min(m, mc) minus d times the rank: the
-rank that part forgoes against the ceiling's own per-part allowance. Those eight
-numbers sum to exactly 39.
+Both primes are distinct, do not divide `|G| = 384`, and keep the twenty central
+values distinct. On each prime, the runner directly obtains the part dimensions
+and the `m`, `mc` multiplicities. Their certified sums are
 
-They are exactly cycle 764's eight excess parts, reached here by an independent
-route. Cycle 764 identified them as the parts whose blind space exceeds what the
-multiplicities force; this cycle identifies them as the parts whose small matrix
-is rank-deficient, and the two lists agree. On all twenty parts the blind space
-equals d times m minus the rank, so the cover table's blind space of 87 is now
-accounted for part by part rather than in aggregate.
+```text
+sum dim = 192,  sum m^2 = 104,  sum m mc = 96,
+sum mc^2 = 120,  sum d mc = 192.
+```
 
-One entry deserves separate mention. The row 1/1/1/0/1 is a 1 by 1 matrix that is
-simply zero — the class label cycle 764 showed to be blind, now visible as a
-vanishing matrix entry rather than as a refuted candidate.
+For distinct values `lambda_i`, the rational central projectors are the Lagrange
+polynomials
+`e_i = product_(j != i) (Z0-lambda_j I)/(lambda_i-lambda_j)`. Separation modulo
+each prime makes every displayed denominator a prime-field unit, so these same
+orthogonal projectors reduce without collision. Reduction cannot increase the
+rank of the integer orbit-coordinate matrices. The displayed component sums
+equal the exact orbit-basis dimensions, leaving no lost dimension to redistribute;
+thus the reduced projector, commutant, and cross-map component dimensions recover
+the same `d`, `m`, and `mc` as the split rational modules. This is the
+computation-specific lift used here. The `96`
+cell-orbit indicators are already a rational basis for `Hom_G` because they have
+disjoint supports and exhaust its orbits. Their block-coordinate maps have rank
+`96` at both primes. Thus the rational tensor form follows from the split-module
+theorem and the orbit basis, while the finite-field coordinates are separately
+certified at each stated prime.
 
-There are two parts whose small matrix is 1 by 1. One of them assigns plus to 48
-of the 96 cell orbits and minus to the other 48, so a four-subset of cell orbits
-is blind to it exactly when two of its signs are plus and two minus: 1272384 of
-3321960, matching C(48,2) times C(48,2) in closed form. The other assigns plus to
-all 96 and minus to 0, so no four-subset can cancel and 0 are blind to it.
+## Cover-block accounting
 
-## The band the ceiling bounds
+For the cover table, eight of the twenty modular small matrices are not full
+rank. Each is identified by its zero-based ordinal in increasing central
+eigenvalue order, the central eigenvalue, `(d,m,mc,rank,drop)`, and the first
+twelve hexadecimal digits of SHA-256 applied to its canonical comma-separated
+row-major entries modulo `1,000,003`.
 
-With the reduction in hand, the rank of a covariant table is cheap, so the runner
-censuses every four-subset of the 96 cell orbits — all 3321960 of them, not a
-sample. There are 79 distinct ranks. The least is 24. The greatest is 144, the
-ceiling itself, and 511872 four-subsets attain it.
+| part | eigenvalue | `d/m/mc/rank/drop` | matrix SHA-256 prefix |
+| ---: | ---: | --- | --- |
+| 5 | -289 | `2/2/2/1/2` | `ad99991a9949` |
+| 7 | -143 | `4/2/3/1/4` | `8a2a064491eb` |
+| 8 | -141 | `6/2/3/1/6` | `54a6d07a25bf` |
+| 11 | -17 | `8/4/6/3/8` | `5b08ea4b39b9` |
+| 12 | 7 | `6/4/3/2/6` | `9c5db65b241e` |
+| 13 | 19 | `6/2/3/1/6` | `31e2a61b7a16` |
+| 15 | 159 | `6/4/3/2/6` | `6a2e89a5e087` |
+| 18 | 635 | `1/1/1/0/1` | `5feceb66ffc8` |
 
-Against that band the cover table is low, not typical. At or below its rank of
-105 sit 106536 four-subsets: 24768 equal to 105 and 81768 strictly below, with 72
-at the least. Far more four-subsets reach the ceiling than sit at or below 105.
+The weighted drops add to `39`. The modular block ranks add to `105`, equal to
+the exact rational rank of `B`. Since each modular block rank is no larger than
+its corresponding rational block rank and the totals agree, equality holds
+part-by-part for this table. The eight displayed losses therefore also account
+for the rational cover-table shortfall from the `144` ceiling.
 
-Three points of the band are pinned exactly, by rational arithmetic with no
-modulus: the four-subset 0/2/12/14 has rank 24, the four-subset 0/1/2/7 has rank
-144, and the cover table's own 0/1/2/3 has rank 105, each agreeing with its
-census value. The extremes of the band are therefore exact, and the greatest one
-meets the derived ceiling.
+Two blocks are `1` by `1`. In one, the `96` orbit coefficients consist of `48`
+plus and `48` minus values, so exactly
+`C(48,2) C(48,2) = 1,272,384` binary four-orbit subsets give zero on that block.
+In the other, all `96` values have the same sign, so none does. The closed-form
+counts agree with the exhaustive enumeration.
 
-As an independent rebuild, all twenty small matrices are constructed again from
-scratch at the second prime 1000033, and reproduce the census rank on 200000 of
-200000 sampled four-subsets.
+## Hamming-weight-four modular census
 
-## Runner
+The enumerated population is exactly the uniformly counted binary
+Hamming-weight-four coefficient vectors in the `96`-element cell-orbit basis. It
+is not the set of arbitrary covariant tables with unrestricted coefficients.
 
-`physical_cell_cutting_small_matrix_census_cycle765_2026_08_09.py`, 41 gates,
-`TOTAL: PASS=41 FAIL=0`. Every gate number is an exact integer computation and no
-floating point enters any gate; the numbers are computational identities. The run
-finishes well inside its budget of 900 seconds of wall time and 2500 MB of peak
-resident memory, both checked by the run itself.
+At `p = 1,000,003`, all `3,321,960` subsets are visited exactly once. The modular
+histogram has `79` distinct ranks. Its minimum is `24`; its maximum is `144`, and
+`511,872` subsets occupy the maximum bin. Relative to the exact cover reference
+rank `105`, the modular counts are:
 
-Controls carried inside the run: the stacked coefficient matrix having full rank
-96, which is what makes the reduction a correspondence rather than a one-way map;
-the reduction matched against the direct rank on 62 of 62 tables; the closed-form
-count 1272384 matched against the brute count from the census; the whole
-construction repeated from scratch at a second prime; exact rational ranks at
-three named four-subsets; and the requirement that all 20 of 20 parts pass all
-five construction conditions, so a non-generic choice fails its gate rather than
-passing quietly.
+| modular condition | count |
+| --- | ---: |
+| rank at most 105 | 106,536 |
+| rank exactly 105 | 24,768 |
+| rank below 105 | 81,768 |
+| rank 24 | 72 |
 
-## Boundary
+Gate C36 pins all four values and the partition identity
+`106,536 = 24,768 + 81,768`; a corruption of any displayed count fails the run.
 
-Every census rank is computed modulo 1000003, and a modular rank can only fall
-below the true rank, never rise above it. What follows from that, precisely:
+The field boundary is directional:
 
-- The greatest census rank, 144, meets the ceiling cycle 764 derived, so the
-  maximum over the band is exactly 144 and nothing modular is being trusted for
-  it.
-- The least, 24, is confirmed by an exact rational rank at 0/2/12/14, so the
-  minimum is exact as well.
-- The counts at or below 105 — 106536, 24768, 81768 and 72 — are upper bounds,
-  and the 511872 attaining the ceiling is a lower bound. Both bounds run in the
-  direction that supports the reading above, but they are bounds.
-- The 79 distinct ranks is neither an upper nor a lower bound on the number of
-  distinct true ranks: modular reduction can merge two true values or separate
-  two tables of equal true rank. It is a count of distinct modular values.
+- the modular at-most-`105` and below-`105` counts are upper bounds on the
+  corresponding rational counts;
+- the modular exact-`105` count has no one-sided implication for the rational
+  exact-`105` count;
+- because `24` is the exact rational minimum, the modular rank-`24` bin is an
+  upper bound on the rational minimum bin;
+- because `144` is the exact rational ceiling, the modular rank-`144` bin is a
+  lower bound on the rational maximum bin; and
+- `79` is the number of distinct modular ranks and has no one-sided implication
+  for the number of distinct rational ranks.
 
-Two lines in the runner are bookkeeping rather than evidence, and are named as
-such here. The part table is rebuilt at 1000003 and at 1000033 and matched
-against cycle 764 row for row; the 1000003 rebuild uses the same prime cycle 764
-used, so that half is bookkeeping and only the 1000033 rebuild is independent.
-And the at-or-below line reporting 106536, 24768, 81768 and 72 partitions a
-census that is checked elsewhere; its own conditions are weak, so it should be
-read as a report of the census, not as a test of it.
+Exact rational elimination gives rank `24` for orbit subset `0/2/12/14`, rank
+`144` for `0/1/2/7`, and rank `105` for the cover reference subset `0/1/2/3`.
+These certify both extrema and one non-extremal reference point.
 
-The cover table's rank of 105 remains measured, not derived. The ceiling above it
-and the floor below it are derived; the value in between is not, and this cycle
-does not change that. What it changes is the shape of the residual: the 39 is no
-longer a single unexplained number but eight named rank drops on eight named
-parts, and the census says that a covariant table at or below 105 is uncommon
-while one at the ceiling is not. Both sharpen the question rather than dissolving
-it — we now know which eight small matrices lose rank and by how much, but not
-why those eight, at those ranks.
+The second-prime check uses the same implementation and the already constructed
+integer object; it is not an independent implementation. At `1,000,033`, all
+twenty blocks pass the same five construction conditions, the coordinate map
+again has rank `96`, and ranks agree for `200,000` deterministically selected
+subsets. The selection is every sixteenth iterator position among the first
+`3.2` million subsets.
 
-The weights inside the construction are arbitrary deterministic choices carrying
-no meaning. Their only role is to be generic, and each is gated by requiring the
-eigenspace dimension to come out exactly d, so a choice that failed to be generic
-would fail its gate rather than pass quietly.
+## Finite label diagnostics
 
-The symmetry used throughout is the full symmetry of the four-cube, which is
-larger than the proper cubic rotations the admissibility axiom names. A ceiling
-derived from a larger group is still a ceiling, but the smaller group would give
-a weaker one, so nothing here should be read as a statement about the axiom's own
-covariance.
+The even subgroup has order `192`. It gives two `96`-piece classes and two
+`96`-cover classes, and every cover meets each piece class four times. Gates
+C20-C25 report six additional stabilizer, sign, split-count, and ordered-label
+identities. They are diagnostic leaves and carry no inference about an excluded
+explanation or unavailable construction.
 
-What remains is to say why the incidence relation of the cover-by-piece square
-lands where it does. The census supplies a concrete handle the earlier cycles did
-not have: the four-subset 0/1/2/7 reaches the ceiling of 144 while the cover
-table's own 0/1/2/3 gives 105, sharing three of their four cell orbits and
-differing in one. Naming the linear relations that the swap creates or destroys
-is the next step opened by this cycle.
+## Inputs, imports, and provenance
+
+| input | class and provenance | role and sensitivity |
+| --- | --- | --- |
+| labelled unit four-cube, determinant-one simplex rule, adjacency cost, cutting and cover rules | declared finite-model data in this note and runner | define the theorem object; changing one defines another object |
+| shifted `5^4` rational grid | deterministic enumeration device | exact facet, visibility, search-output, disjointness, and volume gates bind its use |
+| full coordinate permutations and independent flips | declared finite action | defines `G`; it is not imported from the framework's proper-cubic covariance |
+| Maschke, rational bipartition modules for `C2 wr S4`, and double centralizer | standard finite representation theorem | load-bearing rational field bridge; hypotheses and use are stated above |
+| primes `1,000,003` and `1,000,033` | insensitive computational nuisances | first supplies the histogram; second is a same-code cross-prime check |
+| deterministic central and pure-vector coefficients | insensitive computational nuisances | carry no selector meaning; success and dimension conditions are gated |
+| LCG seed `3` and sixty four-subsets | insensitive computational nuisance | direct-versus-reduced rank spot checks only |
+| deterministic stride sample of `200,000` subsets | insensitive computational nuisance | same-code second-prime comparison only; selection rule disclosed above |
+| uniform counting on binary Hamming-weight-four vectors | explicit finite counting measure | defines the census population and no wider probability law |
+| Python exact integers/fractions and NumPy integer arrays | implementation substrate | no floating point enters a gate; bounds keep products inside signed 64-bit range |
+| exact cover rank and all prior finite-object counts | recomputed here | no earlier campaign artifact or open pull request is imported |
+| [minimal axioms](MINIMAL_AXIOMS_2026-06-29.md) | framework boundary authority only | distinguishes proper-cubic/Record scope; contributes no theorem premise |
+| piece-to-Record map, dynamics, continuum, observation, fitted value | absent/support-only | outside this target |
+
+The primitive-registry check returns an empty premise dependency set for the
+finite target. The runner declares no external input path because it reads no
+scientific data file; its own source bytes are bound by the canonical cache.
+
+## Proof-obligation graph
+
+The target closes through this acyclic graph:
+
+1. P0 defines the corners, determinant/cost rule, cutting/cover rule, fields,
+   matrix orientations, counting measure, and the full `384`-map action.
+2. P1, depending on P0, enumerates the candidates and binds facet avoidance,
+   visibility of every kept piece, exact-cover output, disjointness, and volume.
+3. P2, depending on P1, reconstructs the unique regular cover table and exact
+   rational cutting/cover ranks with Gram, kernel, and direct-rank controls.
+4. P3, depending on P1-P2, constructs `G`, checks closure and incidence
+   equivariance, and enumerates the `104/120/96` orbit bases.
+5. P4, depending on P3, computes the exact rational commutant center and a
+   separating central element.
+6. P5, depending on P3-P4 and the declared split-module theorem, establishes the
+   rational twenty-part tensor form; the rank-sum and separated-value checks bind
+   its reduction at both primes.
+7. P6, depending on P5, constructs the twenty small matrices and proves both
+   prime-field coefficient maps have rank `96`.
+8. P7, depending on P2 and P6, identifies the eight cover blocks and proves their
+   weighted drops sum to `39`, with stable ordinal/eigenvalue/hash identities.
+9. P8, depending on P6, exhausts all binary Hamming-weight-four subsets and pins
+   the modular histogram counts; same-code second-prime checks are controls.
+10. P9, depending on P5 and P8, combines the rational ceiling with exact rational
+    witnesses to prove minimum `24` and maximum `144` for the finite binary family.
+11. P7-P9 discharge the field-qualified target. The finite label diagnostics are
+    leaves and have no load-bearing edge.
+
+## Degenerate and boundary-case ledger
+
+- Determinant-zero and non-cost-floor simplices lie outside the declared object.
+- Facet contacts between pieces are permitted; sample points avoid facets, while
+  exact pair tests certify that co-occurring interiors do not overlap.
+- Empty search or census families are excluded by the exact positive cardinality
+  gates and `C(96,4)` enumeration total.
+- Five parts have `mc = 0`; the implementation represents their cover block by
+  `None` and gates their count. They contribute zero cover rank.
+- One active `1` by `1` cover block is the zero matrix and is included in the
+  eight-drop table.
+- The primes are distinct, do not divide `384`, and preserve all twenty central
+  eigenvalues; a bad-characteristic or collided-value calculation is outside the
+  claim and fails the stated gates.
+- Modular rank may fall below rational rank. Every inference from the histogram
+  uses only the directions listed above.
+- Arbitrary field coefficients, other Hamming weights, smaller symmetry groups,
+  multicell geometries, physical readings, and continuum limits are outside the
+  target rather than counterexamples to it.
+
+## Runner and review record
+
+The runner has `43` fail-closed gates and declares `AUDIT_TIMEOUT_SEC = 900`.
+It checks a `2,500 MB` peak-resident budget, source hygiene, and a pre-trailer
+stdout character count. Any failed gate increments the final `FAIL` count and
+causes a nonzero process exit. The canonical cache binds the source hash, timeout,
+exit status, stdout, and stderr.
+
+The first combined review independently rebuilt the full second-prime census,
+recomputed the three exact rational ranks, and reproduced the finite rank core.
+It then required twelve repairs. This revision:
+
+- binds all object/tiling and Gram/kernel/direct-rank certificates;
+- makes every displayed census count fail closed;
+- states the rational split-module and finite-field bridge explicitly;
+- keeps six label checks as positive diagnostics rather than negative claims;
+- adds the complete trace/status/import/proof/boundary contract;
+- removes campaign ancestry as scientific authority;
+- adds canonical harness routing and requires integrated-tree manifest generation;
+- gates all second-prime construction flags and coordinate rank while accurately
+  calling the path same-implementation and partial-domain;
+- names the exact Hamming-weight-four population and counting measure;
+- identifies every drop by ordinal, eigenvalue, and stable matrix hash; and
+- labels stdout accounting as pre-trailer.
+
+This record is review provenance, not an audit verdict. Effective retained status
+still requires the repository's separate audit process.

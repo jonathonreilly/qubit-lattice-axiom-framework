@@ -1,4 +1,4 @@
-"""Twenty small matrices carry every table, and all 3321960 four-subsets censused.
+"""Finite small-block reduction and a census of all 3321960 four-subsets.
 
 Self-contained exact runner. It builds the cell object from scratch: the sixteen
 corners of the unit four-cube, the unit-determinant five-corner pieces at the cost
@@ -15,14 +15,17 @@ own rank is 105 and its blind space is 87, so it sits 39 inside both, and that 3
 is the blindness the symmetry does not force. An equivariant integer matrix of
 exact rational rank 144 shows the ceiling is attained.
 
-One labelling escapes the argument: the even subgroup splits the pieces into two
-classes of 96 and every cover meets each class four times; three candidate
-explanations are ruled out. All work is over the integers, the rationals and one
-fixed prime; no floating point enters any gate and no constant is fitted.
+The even subgroup splits the pieces into two classes of 96 and every cover meets
+each class four times. Six finite label diagnostics record related identities
+without assigning them interpretive force. Work is over the integers, the
+rationals and two fixed primes; no floating point enters any gate and no constant
+is fitted.
 
-Output: one line per gate, then the stdout character count, then the total line.
+Output: one line per gate, detail lines, the pre-trailer character count, and the
+total line.
 """
 
+import hashlib
 import itertools
 import math
 import sys
@@ -195,6 +198,7 @@ for (v0, Ci, rows) in BARY:
     MASK.append(bits)
 
 UNIV = (1 << NPTS) - 1
+MASK_VISIBLE = (len(MASK) == NKEPT and all(bits != 0 for bits in MASK))
 
 # ------------------------------------------------------------------
 # 3. the cuttings
@@ -230,6 +234,27 @@ def cover_search(cov, chosen):
 cover_search(0, [])
 NS = len(SOLS)
 SIZES = sorted(set(len(s) for s in SOLS))
+SOLS_UNIQUE = (len(set(SOLS)) == NS)
+SEARCH_OUTPUT_OK = SOLS_UNIQUE
+for s in SOLS:
+    cov = 0
+    for t in s:
+        if cov & MASK[t]:
+            SEARCH_OUTPUT_OK = False
+        cov |= MASK[t]
+    if cov != UNIV:
+        SEARCH_OUTPUT_OK = False
+
+
+def piece_det_num(S):
+    v0 = CORN[S[0]]
+    return abs(det4([[CORN[S[j + 1]][r] - v0[r] for j in range(4)]
+                     for r in range(4)]))
+
+
+KEPT_DET = [piece_det_num(S) for S in KEPT]
+CUT_VOLUME_OK = (all(x == 1 for x in KEPT_DET)
+                 and all(sum(KEPT_DET[t] for t in s) == 24 for s in SOLS))
 
 USED = sorted(set(t for s in SOLS for t in s))
 NPI = len(USED)
@@ -399,6 +424,7 @@ BRS = sorted(set(sum(r) for r in BROW))
 BCS = sorted(set(sum(BROW[k][i] for k in range(NCOV)) for i in range(NPI)))
 CS = [tuple(sorted(c)) for c in COVERS]
 COVM = [sum(1 << i for i in c) for c in CS]
+COVERS_UNIQUE = (len(set(COVM)) == NCOV)
 
 # corner sharing: how many pieces of one cutting hold a given corner
 NCORN = len(CORN)
@@ -587,6 +613,7 @@ RAROW = [arow(k) for k in SELA]
 RBROW = [list(BROW[k]) for k in SELB]
 RSELA = rank_fwd(RAROW, NPI)
 RSELB = rank_fwd(RBROW, NPI)
+ROW_KERNEL_OK = perp_all(RAROW, KA) and perp_all(RBROW, KB)
 
 ONE = [1] * NPI
 DSUM = rank_fwd(RAROW + RBROW, NPI)
@@ -1551,7 +1578,7 @@ SUM_BL = sum(t[5] for t in PARTS)
 DIMS = sorted(t[1] for t in PARTS)
 
 # ------------------------------------------------------------------
-# 20. the theorem, the exact witness, and the labelling it cannot reach
+# 20. the block bound, exact witness, and finite label diagnostics
 # ------------------------------------------------------------------
 
 CEIL = sum(t[2] * min(t[3], t[4]) for t in PARTS)
@@ -1745,6 +1772,14 @@ gate(NCAND == 2672 and NKEPT == 400 and FLOOR == 6 and NS == 15800
      " of {4}, {5} pieces used, {6} covers".format(NCAND, NKEPT, FLOOR, NS,
                                                    SIZES[0], NPI, NCOV))
 
+gate(GENERIC and MASK_VISIBLE and SEARCH_OUTPUT_OK and CUT_VOLUME_OK and DISJ_OK
+     and NFAC + NDIM == NPAIR and COVEXACT and COVERS_UNIQUE
+     and BRS == [8] and BCS == [8], "C0A",
+     "object certs: generic {0}, visible {1}, search {2}, volume {3}, disjoint {4},"
+     " covers 8/8 {5}".format(
+         yn(GENERIC), yn(MASK_VISIBLE), yn(SEARCH_OUTPUT_OK), yn(CUT_VOLUME_OK),
+         yn(DISJ_OK), yn(BRS == [8] and BCS == [8])))
+
 gate(NGRP == 384 and MAPS_DISTINCT and PERM_DISTINCT and CLOSED
      and NPROD == 147456 and BIJ and PIE_TRANS and COV_TRANS, "C1",
      "group: {0} maps, all distinct, closed over {1} products, bijective {2},"
@@ -1761,6 +1796,13 @@ gate(RANKA == 88 and NKA == 104 and RANKB == 105 and NKB == 87 and GOOD_PRIME,
      "C3",
      "exact rational ranks: cutting table {0} kernel {1}, cover table {2} kernel"
      " {3}, prime path agrees {4}".format(RANKA, NKA, RANKB, NKB, yn(GOOD_PRIME)))
+
+gate(GRAM_OK and KANN_A and KANN_B and RKKA == NKA and RKKB == NKB
+     and RSELA == RANKA and RSELB == RANKB and ROW_KERNEL_OK, "C3A",
+     "rank certs: Gram {0}, annihilation {1}/{2}, kernel ranks {3}/{4}, direct rows"
+     " {5}/{6}, row kernels {7}".format(
+         yn(GRAM_OK), yn(KANN_A), yn(KANN_B), RKKA, RKKB, RSELA, RSELB,
+         yn(ROW_KERNEL_OK)))
 
 gate(EQ_OK and EQ_P + EQ_X == 40 and BM_OK, "C4",
      "orbit matrices: {0} piece-pair, {1} cell; {2} equivariance checks hold {3};"
@@ -1839,21 +1881,21 @@ gate(SELFDUAL and HISTB == [(4, NPI)], "C19",
 
 gate(NSTE == 1 and PS1 == 1 and FIXB == 0 and CLOSED_BLK and CYC == [2, 2, 2, 2]
      and KEEPS_CLASS, "C20",
-     "first candidate: the non-identity element fixing cover 0 has sign {0}, fixes"
+     "cover-stabilizer diagnostic: the non-identity element has sign {0}, fixes"
      " {1} of 8 blocks, cycles {2}, keeps the class {3}".format(
          PS1, FIXB, CYC, yn(KEEPS_CLASS)))
 
 gate(FPAR1 == -1 and PROD1 == -1, "C21",
-     "contrast: on that element the flip-count parity is {0} and its product with"
-     " the permutation sign is {1}, so both are forced blind".format(FPAR1, PROD1))
+     "sign diagnostic: flip-count parity {0}, product with permutation sign {1}".format(
+         FPAR1, PROD1))
 
 gate(NINE_OK and 768 // NPI == 4, "C22",
-     "second candidate: the mean carries nothing; all {0} split values a give"
+     "split-count identity: all {0} values a give"
      " 96a + 96(8 - a) = {1}, and {1} over {2} is 4".format(len(NINE), NINE[0],
                                                             NPI))
 
 gate(AGR1 not in (0, NPI) and AGR2 not in (0, NPI) and DSET == [-1, 1], "C23",
-     "third candidate: corner-parity label agrees on {0} of {1} pieces, ordered"
+     "label diagnostic: corner parity agrees on {0} of {1} pieces, ordered"
      " determinant label on {2} of {1}, determinant values {3}".format(
          AGR1, NPI, AGR2, DSET))
 
@@ -1863,8 +1905,8 @@ gate(PCH_BAD == 0 and PCH_N == NGRP * NPI, "C24",
          PCH_N, PCH_BAD))
 
 gate(SRT_BAD > 0 and SRT_OK_E < NGRP, "C25",
-     "re-sorted reading: with each image piece in its own sorted order the match"
-     " fails on {0} of {1} pairs, holding for {2} of {3} elements".format(
+     "sorted-order diagnostic: unequal on {0} of {1} pairs, equal throughout for"
+     " {2} of {3} elements".format(
          SRT_BAD, PCH_N, SRT_OK_E, NGRP))
 
 gate(ASCII_OK and NO_TAB and NO_PC and NO_EM and BAN_OK and NBAN > 0, "C26",
@@ -2057,10 +2099,10 @@ def build_small(p):
     return rws, bts, flg, tri
 
 
-T764 = [(t[2], t[3], t[4], t[5]) for t in PARTS]
+BASE_ROWS = [(t[2], t[3], t[4], t[5]) for t in PARTS]
 ROWS2, BET2, FLG2, TRI2 = build_small(P2)
 NPART = len(ROWS2)
-TAB2_OK = (ROWS2 == T764)
+TAB2_OK = (ROWS2 == BASE_ROWS)
 PASS5 = sum(1 for f in FLG2 if f[0] and f[1] > 0 and f[2] and f[3] and f[4])
 NOMC = sum(1 for i in range(NPART) if ROWS2[i][2] == 0)
 NOVEC = [VALS[i] for i in range(NPART) if FLG2[i][1] == 0]
@@ -2166,13 +2208,20 @@ for i in range(NPART):
     else:
         SS = np.mod(BET2[i][IXB].sum(axis=0), P2)
         r = int(small_ranks(SS[None, :, :].copy(), P2)[0])
-    DROPS.append((d, m, mc, r, d * (min(m, mc) - r)))
+    if BET2[i] is None:
+        sig = "none"
+    else:
+        flat = ",".join(str(int(x)) for x in SS.reshape(-1))
+        sig = hashlib.sha256(flat.encode("ascii")).hexdigest()[:12]
+    DROPS.append((i, VALS[i], d, m, mc, r, d * (min(m, mc) - r), sig))
     if PARTS[i][5] != d * (m - r):
         BLIND_OK = False
-NZD = [t for t in DROPS if t[4] > 0]
-DR_SUM = sum(t[4] for t in NZD)
-DR_SET = ([(t[0], t[1], t[2]) for t in NZD]
+NZD = [t for t in DROPS if t[6] > 0]
+DR_SUM = sum(t[6] for t in NZD)
+DR_SET = ([(t[2], t[3], t[4]) for t in NZD]
           == [(t[2], t[3], t[4]) for t in PARTS if t[7] > 0])
+DROP_ID_OK = (len(set((t[0], t[1], t[7]) for t in DROPS)) == len(DROPS)
+              and all(t[7] != "none" for t in NZD))
 
 # ------------------------------------------------------------------
 # 25. the census of all four-subsets of cell orbits
@@ -2259,8 +2308,21 @@ else:
 # ------------------------------------------------------------------
 
 ROWS3, BET3, FLG3, TRI3 = build_small(P3)
-TAB3_OK = (ROWS3 == T764)
+TAB3_OK = (ROWS3 == BASE_ROWS)
 ACT3 = [i for i in range(len(ROWS3)) if BET3[i] is not None]
+PASS5_3 = sum(1 for f in FLG3 if f[0] and f[1] > 0 and f[2] and f[3] and f[4])
+NOMC3 = sum(1 for i in range(len(ROWS3)) if ROWS3[i][2] == 0)
+NOVEC3 = [VALS[i] for i in range(len(ROWS3)) if FLG3[i][1] == 0]
+SMMC3 = sum(r[1] * r[2] for r in ROWS3)
+SEP2 = (len(set(divmod(x, P2)[1] for x in VALS)) == len(VALS))
+SEP3 = (len(set(divmod(x, P3)[1] for x in VALS)) == len(VALS))
+ISOR3 = []
+for k in range(NCP):
+    ISOR3.append(np.concatenate([BET3[i][k].reshape(-1) for i in ACT3]))
+ISO3 = np.array(ISOR3, dtype=np.int64)
+ISOW3 = int(ISO3.shape[1])
+ISORK3 = rank_modp(ISO3, P3)
+del ISOR3
 RK3 = np.zeros(SMPS.shape[0], dtype=np.int64)
 if ACT3 == ACT:
     for j, i in enumerate(ACT):
@@ -2314,31 +2376,37 @@ RSSMB2 = RSS2 // 1048576 if RSS2 > 10000000 else RSS2 // 1024
 # gates, continued
 # ------------------------------------------------------------------
 
-gate(PRIME_OK and TAB2_OK and TAB3_OK, "C28",
-     "part table rebuilt at {0} (764's own, so bookkeeping) and at {1} matches"
-     " cycle 764 row for row; both clean by trial division".format(nd(P2), nd(P3)))
+gate(PRIME_OK and TAB2_OK and TAB3_OK and SEP2 and SEP3
+     and PASS5_3 == NPART and SMMC3 == NCP and not NOVEC3 and NOMC3 == NMC0,
+     "C28",
+     "same-code rebuilds at {0}/{1}: baseline rows and all five conditions agree;"
+     " separated central values {2}/{3}".format(nd(P2), nd(P3), yn(SEP2), yn(SEP3)))
 
 gate(PASS5 == NPART and NPART == 20 and SMMC == NCP and not NOVEC
      and NOMC == NMC0, "C29",
      "small matrices: {0} of 20 parts pass all five conditions; {1} have no cover"
      " multiplicity and so no matrix{2}".format(nd(PASS5), nd(NOMC), FTX))
 
-gate(ISOW == NCP and ISORK == NCP, "C30",
-     "96 cell orbit coefficients to twenty matrices: stacked width {0}, rank {1}"
-     " mod p, so the map is one-to-one and onto".format(nd(ISOW), nd(ISORK)))
+gate(ISOW == NCP and ISORK == NCP and ISOW3 == NCP and ISORK3 == NCP, "C30",
+     "96 coefficients to blocks: widths {0}/{1}, ranks {2}/{3} at the two primes".format(
+         nd(ISOW), nd(ISOW3), nd(ISORK), nd(ISORK3)))
 
 gate(RED_AGR == len(TABS) and CRED == RANKB and NPI - CRED == NKB, "C31",
      "the small-matrix reduction matches the direct rank on {0} of {1} tables; on"
      " the cover table it gives {2} and blind {3}".format(
          nd(RED_AGR), nd(len(TABS)), nd(CRED), nd(NPI - CRED)))
 
-gate(len(NZD) == NEX and DR_SET, "C32",
-     "the drop parts d/m/mc/rank/drop: {0}".format(
-         " ".join("/".join(str(x) for x in t) for t in NZD)))
+for t in NZD:
+    emit("C32 detail i/lambda/d/m/mc/rank/drop/hash: {0}".format(
+        "/".join(nd(x) for x in t[:7]) + "/" + " ".join(t[7])))
+
+gate(len(NZD) == NEX and DR_SET and DROP_ID_OK, "C32",
+     "{0} positive-drop blocks have unique ordinal/eigenvalue/matrix-hash identifiers".format(
+         nd(len(NZD))))
 
 gate(DR_SUM == EXC_C and BLIND_OK and len(NZD) == 8, "C33",
-     "those {0} are exactly the cycle 764 excess parts, their drops sum to {1}, and"
-     " blind = d(m - rank) on all 20 parts".format(nd(len(NZD)), nd(DR_SUM)))
+     "internal part accounting: {0} drops sum to {1}; blind = d(m - rank) on all"
+     " 20 parts".format(nd(len(NZD)), nd(DR_SUM)))
 
 gate(ONE_OK and len(ONEI) == 2, "C34", ONEMSG)
 
@@ -2347,13 +2415,14 @@ gate(NSEEN == NTOT and HIV[0] == CEIL and NTOP > 0, "C35",
      " the ceiling, {4} attain it".format(nd(NTOT), nd(NDIST), nd(LOV[0]),
                                           nd(HIV[0]), nd(NTOP)))
 
-gate(NEQB > 0 and NLT > 0 and NLEQ < NTOT, "C36",
+gate(NLEQ == 106536 and NEQB == 24768 and NLT == 81768 and NBOT == 72
+     and NLEQ == NEQB + NLT, "C36",
      "at or below {0}: {1}; equal {0}: {2}; below {0}: {3}; at the least: {4}".format(
          nd(RANKB), nd(NLEQ), nd(NEQB), nd(NLT), nd(NBOT)))
 
 gate(AGR3 == NSMP and NSMP == 200000 and ACT3 == ACT, "C37",
-     "cross-check at {0}: matrices rebuilt from scratch, {1} of {1} sampled"
-     " four-subsets give the census rank".format(nd(P3), nd(NSMP)))
+     "same-implementation check at {0}: every 16th subset in the first 3.2m;"
+     " {1} of {1} modular ranks agree".format(nd(P3), nd(NSMP)))
 
 gate(EX_OK, "C38",
      "exact rational rank: {0} gives {1}, {2} gives {3}, the cover table's own {4}"
@@ -2361,8 +2430,8 @@ gate(EX_OK, "C38",
          subtxt(EXS[0]), nd(EXV[0]), subtxt(EXS[1]), nd(EXV[1]), subtxt(EXS[2]),
          nd(EXV[2])))
 
-emit("C39 scope: census ranks are mod {0} and can only fall, so at-or-below counts"
-     " are upper bounds and {1} a lower bound; 3 extremes exact".format(
+emit("C39 scope: mod {0}; <= and < counts bound rational above, top-bin {1} below;"
+     " both extrema and cover reference exact".format(
          nd(P2), nd(NTOP)))
 
 gate(BAN2_OK and NBAN2 == 3 and NO_D9 and ONE_WORD_OK, "C40",
@@ -2371,9 +2440,9 @@ gate(BAN2_OK and NBAN2 == 3 and NO_D9 and ONE_WORD_OK, "C40",
 
 gate(ELAPSED2 < 900 and RSSMB2 < 2500, "C41",
      "budget: {0} seconds of wall time under 900, peak resident {1} MB under 2500,"
-     " stdout characters below".format(nd(ELAPSED2), nd(RSSMB2)))
+     " pre-trailer characters below".format(nd(ELAPSED2), nd(RSSMB2)))
 
-emit("stdout characters: {0}".format(OUT[0]))
+emit("stdout characters before trailer: {0}".format(OUT[0]))
 emit("TOTAL: PASS={0} FAIL={1}".format(STAT[0], STAT[1]))
 if STAT[1]:
     raise SystemExit(1)

@@ -1,0 +1,59 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_q6_q8_coverage_inclusion_2026_08_15.py
+runner_sha256: 159583be84ed2308e1d8bb167dedfad5df0115c2f246870d18551da9ada86ff6
+input_fingerprint_sha256: f137d29b00fd73e08a02a3dafef1498874e9c468b1d1726d557fa0162a59a642
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.26
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_Q6_Q8_COVERAGE_INCLUSION_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+external_scientific_inputs: current Lattice/Admissibility/Record boundary only; no observation or fit
+negative_scope: Q6-implies-Q8 and the two coverage-inclusion facts; does not adopt Q6 or Q8
+n_rotations=24
+n_orbits=10
+remaining_labels=('wt1', 'opp2', 'adj2', 'vertex3', 'mixed3')
+|F_cut|=32
+n_six_site_seeds=924
+n_eight_site_seeds=495
+N_Q6=28
+N_Q8=30
+N_both=28
+Q6_implies_Q8=1
+every_Q8_false_has_cov6_0=1
+every_Q6_false_has_cov8_0=0
+Q8_false=[(0, 0, 0, 0, 0), (0, 0, 0, 0, 1)]
+Q6_false_with_cov8>0=[(0, 1, 0, 0, 0), (0, 1, 0, 0, 1)]
+extra_cov6={(0, 1, 0, 0, 0): 0, (0, 1, 0, 0, 1): 0}
+extra_cov8={(0, 1, 0, 0, 0): 1, (0, 1, 0, 0, 1): 1}
+cov6(f_L1)=920
+cov8(f_L1)=494
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required note-plus-axiom string-literal tuple
+PASS: thm1-host 24 rotations, 10 orbits, 32 F_cut maps, 924 six-site and 495 eight-site seeds
+PASS: thm1-f-L1-is-unbalanced-axis f_L1 is 1 iff some axis has c_+ != c_-
+PASS: thm1-f-L1-not-hamming f_L1 is n!=0, not Hamming |c|_1 mod 2
+PASS: thm1-counts-and-implies N_Q6=28, N_Q8=30, N_both=28, and Q6 implies Q8
+PASS: thm2-coverage-inclusions every Q8-false map has cov6=0; not every Q6-false map has cov8=0
+PASS: thm3-display-not-adopt Q6 and Q8 are displayed and neither is adopted as an Admissibility selector
+PASS: source-lattice-admissibility Lattice rotations and Admissibility covariance are pinned
+PASS: source-record-boundary Record lock, content-only readout, unreadable absence, and formation residual are pinned
+PASS: claim-scope claim_scope reports Q6-implies-Q8 and the two coverage-inclusion facts
+PASS: note-contract machine fields, three theorems, and forbidden-phrase hygiene hold
+PASS: no-axiom-edit the axiom memo is unedited and the theorem proposes no axiom change
+PASS: off-patch-zero off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: not-leftover the residual is the Q6/Q8 relation, not leftover of the single-k equivalences
+PASS: q6-q8-definitions Q6 is wt1 or adj2 or vertex3; Q8 adjoins opp2; f_L1 satisfies both
+per_element: checked exactly — each of the 64 neighbor 6-tuples is assigned its axis-type orbit
+per_site: checked exactly — each of the twelve two-cube vertices uses the same six-direction stencil
+per_mode: checked exactly — every F_cut map is scored on 924 six-site and 495 eight-site seeds against displayed Q6 and Q8
+per_block: checked exactly — N_Q6, N_Q8, N_both and the two coverage-inclusion facts are the F_cut relation on this patch
+lattice_wide: checked and not executed — no Z^3-wide formation law or physical Admissibility selector is claimed
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

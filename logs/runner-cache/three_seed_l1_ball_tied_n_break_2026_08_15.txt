@@ -1,0 +1,47 @@
+===== runner cache v1 =====
+runner: scripts/three_seed_l1_ball_tied_n_break_2026_08_15.py
+runner_sha256: 3b6b99de373061deb49668d5151e3dd2bf63696d34f411962b00f9cfe72f1908
+input_fingerprint_sha256: aad20761befe35394d266f2d78814ff8405905423a133ed4e8d4dc970e787883
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/THREE_SEED_L1_BALL_TIED_N_BREAK_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+scientific_dependency: current minimal_axioms Lattice covariance clause
+declared_math: U3 occupancy; n = d/3; finite G+ in the 3-vector representation
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required static two-string literal tuple
+PASS: g-plus-order finite G+ is exactly the 24 proper cube rotations
+U3_size: 60
+ball_sizes: [25, 25, 25]
+pairwise_overlaps: [7, 7, 3]
+triple_overlap: 2
+PASS: u3-geometry U3 is the union of three radius-2 ℓ¹ balls and lies inside the box
+N_4: 4
+N_uneq: 0
+N_noswap: 0
+site (-1, 1, -1) amb=[+y:(1/3, 0, 1/3), -y:(1/3, 0, 1/3)] tied=[+y/-y n=(1/3, 0, 1/3) |Stab|=2 swap=True]
+site (-1, 1, 1) amb=[+y:(1/3, 0, -1/3), -y:(1/3, 0, -1/3)] tied=[+y/-y n=(1/3, 0, -1/3) |Stab|=2 swap=True]
+site (1, -1, -1) amb=[+x:(0, 1/3, 1/3), -x:(0, 1/3, 1/3)] tied=[+x/-x n=(0, 1/3, 1/3) |Stab|=2 swap=True]
+site (1, -1, 1) amb=[+x:(0, 1/3, -1/3), -x:(0, 1/3, -1/3)] tied=[+x/-x n=(0, 1/3, -1/3) |Stab|=2 swap=True]
+PASS: theorem-1-n4 unread 4-occupied-NN count is N_4 = 4
+PASS: theorem-1-n-uneq no census site has unequal ambiguous n; N_uneq = 0
+PASS: theorem-1-n-noswap every tied pair has a slot-swap in Stab(n); N_noswap = 0
+PASS: theorem-2-no-break N_uneq + N_noswap = 0, so the third seed does not break the obstruction
+PASS: theorem-2-sites-and-labels the four census sites match and opposite labels are not equivariance-allowed
+PASS: occupancy-kernels tied kernels are n = d/3 from U3 occupancy at the four sites
+PASS: swapper-actions each tied kernel has an explicit G+ swapper of the tied slots
+PASS: lattice-clause the current Lattice wording supplies finite proper cubic rotations
+PASS: admissibility-unedited three-seed geometry is displayed and is not written into Admissibility
+PASS: displayed-not-adopted the note reports the U3 census without adopting it, attaching L1, or reusing nstab
+PASS: forbidden-phrases the forbidden rhetoric strings are absent from the note and runner
+PASS: claim-scope claim_scope and machine status match the displayed-not-adopted residual
+PASS: no-axiom-edit the only axiom authority is the current memo; no cache or axiom rewrite
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

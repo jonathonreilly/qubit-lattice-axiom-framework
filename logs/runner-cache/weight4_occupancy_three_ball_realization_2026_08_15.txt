@@ -1,0 +1,65 @@
+===== runner cache v1 =====
+runner: scripts/weight4_occupancy_three_ball_realization_2026_08_15.py
+runner_sha256: 65e44e165fa202f8cb25c3a3a0a01b5fab0309db251d353cd0840ec2a25d1533
+input_fingerprint_sha256: 265e78536f8347e658d2ffc553e1c4eff33f6a61baae20e8fa5c60253ee5377e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.07
+status: ok
+----- stdout -----
+weight-4 occupancy 3-ball realization
+AUDIT_INPUT_PATHS:
+  docs/WEIGHT4_OCCUPANCY_THREE_BALL_REALIZATION_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+G_plus=24
+N_pair=48
+N_orbits=57
+N_chiral_orbits=2
+N_weight4=15
+census_rows: sigma |Stab| N_pair_support N_stab_ok
+  (0, 0, 1, 1, 1, 1) 8 0 0
+  (0, 1, 0, 1, 1, 1) 2 4 0
+  (0, 1, 1, 0, 1, 1) 2 4 0
+  (0, 1, 1, 1, 0, 1) 2 4 0
+  (0, 1, 1, 1, 1, 0) 2 4 0
+  (1, 0, 0, 1, 1, 1) 2 4 0
+  (1, 0, 1, 0, 1, 1) 2 4 0
+  (1, 0, 1, 1, 0, 1) 2 4 0
+  (1, 0, 1, 1, 1, 0) 2 4 0
+  (1, 1, 0, 0, 1, 1) 8 0 0
+  (1, 1, 0, 1, 0, 1) 2 4 0
+  (1, 1, 0, 1, 1, 0) 2 4 0
+  (1, 1, 1, 0, 0, 1) 2 4 0
+  (1, 1, 1, 0, 1, 0) 2 4 0
+  (1, 1, 1, 1, 0, 0) 8 0 0
+N_ok_masks=0
+search_ran=False
+N_real=0
+lex_first_realizing=None
+PASS: audit-input-paths | AUDIT_INPUT_PATHS is the required static two-string literal tuple
+PASS: source-lattice
+PASS: source-admissibility
+PASS: source-unread-qubit
+PASS: g-plus-order | proper=24 pair=48
+PASS: weight4-mask-count | N_weight4=15
+PASS: theorem-1-n-ok-masks | N_ok_masks=0
+PASS: theorem-1-stop-search
+PASS: theorem-2-n-real | N_real=0
+PASS: claim-scope
+PASS: displayed-not-adopted
+PASS: l1-not-attached
+PASS: not-leftover-prior
+PASS: admissibility-unedited
+PASS: forbidden-phrases
+PASS: no-axiom-edit
+per_element: N_ok_masks and N_real are exact integers
+per_site: 3-ball unions and unread stars only
+per_mode: no spectral calculation
+per_block: weight-4 6-NN occupancy masks and 3-ball stars
+lattice_wide: checked and not executed
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

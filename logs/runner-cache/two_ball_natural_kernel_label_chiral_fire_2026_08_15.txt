@@ -1,0 +1,56 @@
+===== runner cache v1 =====
+runner: scripts/two_ball_natural_kernel_label_chiral_fire_2026_08_15.py
+runner_sha256: 198825fbb333acfa01ff401df7b44a60ac8554bd579f9bbb060fb85f8544378d
+input_fingerprint_sha256: 4c00b5ed0ffa0632a6e996157db6f7809b7412334cdc096239fab55fbcebc936
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+Natural occupancy-kernel labels versus July-3 k=3 pair
+AUDIT_INPUT_PATHS:
+  docs/TWO_BALL_NATURAL_KERNEL_LABEL_CHIRAL_FIRE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+|U|: 43
+derived_mask: (1, 1, 1, 0, 1, 0)
+occupied_neighbors: ((2, -1, -1), (0, -1, -1), (1, 0, -1), (1, -1, 0))
+empty_neighbors: ((1, -2, -1), (1, -1, -2))
+neighbor_bits: [(0, 0, 1, 0, 1, 0), (0, 0, 1, 0, 1, 0), (1, 1, 0, 0, 1, 0), None, (1, 1, 1, 0, 0, 0), None]
+neighbor_dipoles: [(0, 1, 1), (0, 1, 1), (0, 0, 1), None, (0, 1, 0), None]
+neighbor_kernels: [(Fraction(0, 1), Fraction(1, 3), Fraction(1, 3)), (Fraction(0, 1), Fraction(1, 3), Fraction(1, 3)), (Fraction(0, 1), Fraction(0, 1), Fraction(1, 3)), None, (Fraction(0, 1), Fraction(1, 3), Fraction(0, 1)), None]
+natural_c: (*, *, +, 0, +, 0)
+every_occupied_neighbor_has_unique_axis: False
+N_pair: 48
+pair_fires: False
+lex_first_firing: (+, -, +, 0, -, 0)
+hamming_to_lex_first: 3
+PASS: audit-input-paths-exist
+PASS: audit-input-paths-static-literals
+PASS: audit-timeout-declared
+PASS: source-lattice
+PASS: source-admissibility
+PASS: source-unread
+PASS: source-july3-unique-pair
+PASS: two-ball-star-derived | mask=(1, 1, 1, 0, 1, 0) |U|=43
+PASS: occupancy-kernel-n-equals-d-over-3
+PASS: natural-six-tuple | (*, *, +, 0, +, 0)
+PASS: not-every-occupied-neighbor-unique-axis
+PASS: proper-group-order | full=48 proper=24
+PASS: unique-chiral-pair | orbits=57 chiral_ids=[28, 29]
+PASS: n-pair | N_pair=48
+PASS: pair-does-not-fire
+PASS: hamming-to-lex-first | lex_first=(+, -, +, 0, -, 0) ham=3
+PASS: claim-scope-pinned
+PASS: note-report-numbers
+PASS: displayed-not-adopted
+PASS: not-attached-to-l1
+PASS: not-leftover-char
+PASS: score-only-u-and-star
+PASS: no-forbidden-phrases
+PASS: no-axiom-edit
+TOTAL: PASS=24 FAIL=0
+
+----- stderr -----
+

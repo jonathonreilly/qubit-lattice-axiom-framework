@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/m2_record_seed_grown_front_chiral_support_2026_08_15.py
+runner_sha256: 07bfdb3dd255c20033cd1a7ee2d3523c9d7651309d215a653e8b031018855eea
+input_fingerprint_sha256: 0285a9fc1bcdd61329befa305030ea79bf6521837d2af1a47937d8fd30937026
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+PASS: audit-input-paths — AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: axiom-m2-presentation — live Qubit sentence is M_2(C)
+PASS: axiom-record-lock-one — Record locks one admissible local possibility
+PASS: alphabet-k3 — two lock-contents plus unread/empty give k=3
+PASS: cubic-direction-action — 48 signed permutations, 24 proper, inversion outside proper
+PASS: july3-thm2-k2-achiral — k=2 Burnside proper=full and zero chiral pairs
+PASS: july3-thm3-unique-pair — k=3 has exactly one chiral pair
+PASS: july3-thm3-fully-mixed — unique pair is handed fully-mixed on six slots
+PASS: pair-needs-six-occupied-neighbors — fully-mixed pair is a 6-NN occupancy member
+PASS: front-occ-equals-nonzero — on S_{t+1} occupied NN equals nonzero coordinates for t=0..4
+PASS: front-max-occupied-le-3 — max occupied NN on those fronts is at most 3
+PASS: n-with-6-zero — N_with_6=0 on S_{t+1} for t=0..4
+PASS: front-empty-count-vs-fully-mixed — front unread count is at least 3, so 2/2/2 empty multiplicity fails
+PASS: pair-support-empty — unique k=3 pair has empty support on those fronts
+PASS: forbidden-tokens-absent — note and runner omit the dispatch-forbidden tokens
+PASS: note-theorems-and-scope — note states Theorems 1–3, claim_scope, and displayed-not-adopted
+PASS: refusals — Qubit stays M_2; V−A and L1 are not attached
+PASS: no-new-occupancy-patch — only already-displayed B_t / S_{t+1} are scored
+census: t=0:|S|=6:maxN=1:N6=0, t=1:|S|=18:maxN=2:N6=0, t=2:|S|=38:maxN=3:N6=0, t=3:|S|=66:maxN=3:N6=0, t=4:|S|=102:maxN=3:N6=0
+alphabet: lock=2 empty=1 k=3; k2_pairs=0 k3_pairs=1 k3_burnside=57/56 rep=(0, 1, 0, 2, 1, 2)
+per_element: checked exactly — each S_{t+1} site has occupied NN equal to its nonzero-coordinate count
+per_site: checked exactly — one M_2 record plus unread/empty is k=3
+per_mode: checked exactly — unique k=3 pair is the handed fully-mixed 6-slot coloring
+per_block: checked exactly — N_with_6=0 on each front t=0..4
+lattice_wide: checked and not executed — no non-seed-grown occupancy is claimed
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

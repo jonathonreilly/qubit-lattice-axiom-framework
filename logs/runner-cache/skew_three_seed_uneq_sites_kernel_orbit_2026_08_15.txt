@@ -1,0 +1,47 @@
+===== runner cache v1 =====
+runner: scripts/skew_three_seed_uneq_sites_kernel_orbit_2026_08_15.py
+runner_sha256: 8c395f1b7e5ff38e555c6e49baa27a2626447b828f1ebcd9f892e352a67577f0
+input_fingerprint_sha256: a9dceb324aa950df5cd9277954eb612869e7f66bc375eea5accb7b5970a8a378
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/SKEW_THREE_SEED_UNEQ_SITES_KERNEL_ORBIT_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+scientific_dependency: current minimal_axioms Lattice covariance clause
+declared_math: U occupancy; n = d/3; finite G+ acting on kernels
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required static two-string literal tuple
+PASS: g-plus-order finite G+ is exactly the 24 proper cube rotations
+U_size: 62
+ball_sizes: [25, 25, 25]
+pairwise_overlaps: [7, 4, 4]
+triple_overlap: 2
+PASS: u-geometry U is the union of three radius-2 ℓ¹ balls and lies inside the box
+N_uneq: 4
+N_same_orb: 4
+N_split: 0
+site (-1, 1, 1) same_orb=True distinct=[(1/3, 0, -1/3), (1/3, -1/3, 0)] g=(x, y, z) ↦ (x, z, −y)
+site (0, 1, 2) same_orb=True distinct=[(0, 1/3, -1/3), (1/3, 0, -1/3)] g=(x, y, z) ↦ (y, −x, z)
+site (2, 1, 2) same_orb=True distinct=[(0, 1/3, -1/3), (-1/3, 0, -1/3)] g=(x, y, z) ↦ (−y, x, z)
+site (3, 1, 1) same_orb=True distinct=[(-1/3, 0, -1/3), (-1/3, -1/3, 0)] g=(x, y, z) ↦ (x, z, −y)
+PASS: theorem-1-uneq-sites the four unequal-n unread 4-NN sites and distinct n match the note
+PASS: theorem-1-n-same-orb every unequal-n site has G+-equivalent kernels; N_same_orb = 4
+PASS: theorem-1-n-split no unequal-n site has kernels in different G+ orbits; N_split = 0
+PASS: theorem-1-explicit-rotations each displayed connecting rotation is a proper cube rotation
+PASS: theorem-2-orbit-tied N_split = 0 so any G+-equivariant f(n) is constant on those kernels
+PASS: unique-axis-filter-load-bearing including unique-axis n would mix 1-support and 2-support orbits
+PASS: lattice-clause the current Lattice wording supplies finite proper cubic rotations
+PASS: admissibility-unedited orbits are displayed and are not written into Admissibility
+PASS: displayed-not-adopted the note reports the orbit census without adopting it, attaching L1, or cloning a 4th ball
+PASS: forbidden-phrases the forbidden rhetoric strings are absent from the note and runner
+PASS: claim-scope claim_scope and machine status match the displayed-not-adopted residual
+PASS: no-axiom-edit the only axiom authority is the current memo; no cache or axiom rewrite
+PASS: not-leftover-skeweq the residual is the four-site orbit census, not leftover-char of skeweq
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

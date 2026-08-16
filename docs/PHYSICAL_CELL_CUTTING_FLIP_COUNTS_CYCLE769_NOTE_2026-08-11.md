@@ -24,6 +24,26 @@ Axioms:
 Constitutional effect: none. This note changes no axiom, primitive, registry,
 policy, audit verdict, effective status, or framework claim.
 
+## Machine status and trace
+
+```yaml
+actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
+claim_type_reason: "The exact integer fixed-point and orbit counts are self-contained for one finite four-cube cutting system; the part-table multiplicities are computed over a declared prime and no physical interpretation is claimed."
+trace_class: frontier_discovery
+target_claim_id: null
+target_blocker_text: null
+source_of_blocker_text: frontier_question
+reachability_to_target: unknown_frontier
+artifact_role: theorem
+next_trace_action: "seek a characteristic-zero derivation of the full part table and a structural explanation of the values 8 and 48"
+conditional_surface_status: "exact finite combinatorics for the fixed-point and orbit-count half; the part-table multiplicities remain a declared-prime computation"
+hypothetical_axiom_status: null
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```
+
 ## 1. What this responds to
 
 The object is the unit four-cube with its 16 corners. Among the corner simplices of

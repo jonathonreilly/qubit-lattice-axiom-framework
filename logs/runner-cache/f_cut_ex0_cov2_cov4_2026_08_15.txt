@@ -1,0 +1,58 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_ex0_cov2_cov4_2026_08_15.py
+runner_sha256: f196d377c540278b4c9f633b962248bc582f4f553a86cd4d7e4f9032b71ce956
+input_fingerprint_sha256: 09036345b7e2abcfc56076c24fca6d16c138705469d1649f7bb32f0d4b81c055
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_EX0_COV2_COV4_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+n_rotations=24
+n_orbits=10
+remaining_labels=('wt1', 'opp2', 'adj2', 'vertex3', 'mixed3')
+N_free=5
+|F_cut|=32
+n_two_site_seeds=66
+n_three_site_seeds=220
+n_four_site_seeds=495
+f_ex0_remaining=(0, 0, 1, 1, 0)
+f_L1_remaining=(1, 0, 1, 1, 1)
+P_f_ex0=0
+cov2_f_ex0=0
+cov3_f_ex0=24
+cov4_f_ex0=232
+n_P_false_with_cov2_positive=0
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required note-plus-axiom string-literal tuple
+PASS: thm1-twenty-four-rotations exactly 24 proper cube rotations
+PASS: thm1-f-cut-and-two-cube F_cut has five free bits and size 32; two-cube has 12 vertices
+PASS: thm1-f-ex0-remaining-bits f_ex0 is the F_cut remaining-bit tuple (0,0,1,1,0)
+PASS: thm1-p-false P(f_ex0)=0 because wt1=0
+PASS: thm1-cov2-zero cov2(f_ex0)=0 on all 66 two-site seeds
+PASS: thm1-p-implies-cov2-zero P=0 implies cov2=0, and f_ex0 matches that implication
+PASS: thm1-investment-cov3 reconfirm #6511 scores P=0 and cov3(f_ex0)=24
+PASS: thm2-cov4 cov4(f_ex0)=232 among the 495 four-site seeds
+PASS: thm3-display-not-adopt the note displays the scores and refuses adoption of a bit
+PASS: thm1-f-L1-not-hamming f_L1 is n!=0 (some-axis-unbalanced), not Hamming parity
+PASS: lattice-and-admissibility-parents the live axiom memo supplies Z^3, proper cubic rotations, and a covariant nearest-neighbor rule
+PASS: note-contract bounded theorem, machine status, and N1-N8 are source-visible
+PASS: forbidden-phrases-absent the note and runner omit the dispatch-forbidden phrases
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: off-patch-zero off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: not-leftover-6511-6509 the residual is the (cov2,cov4) pair of this named map, not leftover of #6511 or #6509
+PASS: claim-scope claim_scope reports 2-site and 4-site coverage of F_cut (0,0,1,1,0)
+PASS: no-axiom-edit the theorem proposes no axiom change
+PASS: seeds-not-listed the note does not list two-site or four-site seeds
+per_element: checked exactly — each of the 64 neighbor 6-tuples is assigned its axis-type orbit
+per_site: checked exactly — each of the twelve two-cube vertices uses the same six-direction stencil
+per_mode: checked exactly — f_ex0 is scored by 2-site and 4-site fill coverage
+per_block: checked exactly — (cov2,cov4)=(0,232) is the displayed pair for remaining bits (0,0,1,1,0)
+lattice_wide: checked and not executed — no Z^3-wide formation law or physical Admissibility selector is claimed
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

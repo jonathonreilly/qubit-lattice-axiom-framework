@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_transfer_spectrum_selection_gap_2026_08_15.py
+runner_sha256: 35c6ea3d3cc7a99143028cb207711eaf0f4ea40fdb0965e65f76e4b82964e0c1
+input_fingerprint_sha256: 02bc1f09f28d7b9306f9a06aecab5d49d70780adacaf40d6c0a10215d689ddd7
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 81.65
+status: ok
+----- stdout -----
+[PASS] A-authority: Block 114 parent note/runner/cache and ancestors 113--103 are exact content-bound authorities
+[PASS] B-hilbert-space: the Block 114 K+ is exactly Hermitian with sixteen positive leading minors, so its positive-span Hilbert space exists
+[PASS] C-transfer-windows: the 16x16 K+ is spatial-Fourier resolved into four 4x4 K_k indexed by slice; source=K_k[{0,1},{0,1}] and shifted=K_k[{1,2},{1,2}] are Hermitian-PD 2x2 windows for every k
+[PASS] D-transfer-spectrum: all four primitive f_k have a>0,b<0,c>0,disc>0 and f_k(1)<0; the eight positive real roots split momentum-uniformly as [(1,1)x4], hence K+ transfer is positive but uniformly non-contractive
+[PASS] E-second-fixture: at c=3/5 all exact Hermitian-PD windows again give real positive quadratic roots, four f_k(1)<0, and the same momentum-uniform (4,4) split
+[PASS] F-commutant-zero: the commutator has rank 132 on the 132-dimensional joint space, leaving dimension zero; equivalently reality+Hermiticity+commutation has rank 256/256
+[PASS] G-selection-gap: rank([A+,Q])=28 at both fixtures, while I_slices tensor X^2 commutes with Q but has Gram-Hermiticity residual rank 16: the natural candidates fail complementarily
+[PASS] H-scope: the note preserves the Hilbert/non-contraction/selection boundaries, N1--N8, W1, five N5 resolutions, ADM, gravity, axiom, and TOE firewalls
+PRIMARY_TRANSFER: factor_ids=('cf8e2ef46ead65d6', '57434be5912dc3a6', 'b55e0c664be70bbb', '5ab3dc8370c3caf1'); f2_coefficients=(5175261142208185330195747399956023340238344517047759, -6033804201790765437297938355001793292322654475638139, 536815344990418589208178945880770658322516674278000); split=((1, 1), (1, 1), (1, 1), (1, 1))
+SECOND_TRANSFER: c=3/5 split=((1, 1), (1, 1), (1, 1), (1, 1)); all four exact f_k(1)<0
+COMMUTANT: joint_dim=132; restricted_rank=132; dimension=0; combined_rank=256/256
+SELECTION_GAP: rank([A+,Q])=(28,28); rank(K_x2-K_x2^H)=16
+RUNTIME_SECONDS: 81.347
+N5: per_element: exact window, quadratic-certificate, commutant-rank, and commutator identities are checked
+per_site: one Grassmann mode per fine site on the antiperiodic reflection torus
+per_mode: every momentum factor carries exactly one transfer root below one and one above one at both fixtures
+per_block: the commutant cut of the joint space is exactly zero-dimensional and the positive witness has commutator rank twenty-eight
+lattice_wide: checked and not executed — a transfer-contractive point of the positive variety, the transfer-window normalization question, the modular selection, the actual ADM/history transporter completion, joint gravity, the gravity constraint quotient, Records, audit retention, and TOE closure remain open
+RESULT: the positive pairing carries a Hilbert space whose one-slice transfer is positive but uniformly non-contractive, and the action's commutant selects nothing — the OS package and the selection are one shared open gate
+DECISION_CUT: advance the transfer-contractive search on the positive variety and the modular selection; reject blockwise repairs and commutant selection
+TOE: zero obligation retirement, retained-positive end-to-end theory count remains zero, and no TOE percentage moves
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

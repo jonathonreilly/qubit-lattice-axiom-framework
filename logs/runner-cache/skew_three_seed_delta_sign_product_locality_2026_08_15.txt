@@ -1,0 +1,56 @@
+===== runner cache v1 =====
+runner: scripts/skew_three_seed_delta_sign_product_locality_2026_08_15.py
+runner_sha256: 3cc691013f8565e493841d1e38f69ec5868f92b26cede199b2cfbbda0bcda10b
+input_fingerprint_sha256: b822fc0a77109ed048bb87dcf1670b6ee86382c8247de68610a6809742387ecd
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.04
+status: ok
+----- stdout -----
+Skew three-seed claim-delta sign-product locality
+AUDIT_INPUT_PATHS:
+  docs/SKEW_THREE_SEED_DELTA_SIGN_PRODUCT_LOCALITY_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+scope: stars at unread v=(-1,1,1) only; displayed, not adopted
+PASS: audit-input-paths-static-literals
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: source-distribution-sentence-current
+PASS: source-unread-site-sentence-current
+PASS: note-quotes-admissibility-nn-law
+PASS: theorem1-v-unread-on-u0
+PASS: theorem1-sigma-u0  ((1, 0, 1, 1, 0, 1))
+PASS: theorem1-c-u0  ((1, 1, 1, 1, 1, 1))
+PASS: theorem1-sstar-not-always-neighbor  ((-2, 0, 0))
+PASS: theorem1-u0-has-three-centers
+PASS: theorem1-empty-product-is-plus-one
+PASS: theorem2-u1-distinct
+PASS: theorem2-v-unread-on-u1
+PASS: theorem2-same-sigma
+PASS: theorem2-c-disagrees  ((1, 1, 1, 1, -1, 1))
+PASS: theorem2-centers-in-box
+PASS: theorem2-disagreement-from-distant-seed  ((-1, 2, 2))
+PASS: theorem2-box-census-finds-disagreement  (same_sigma>=2545 disagreements>=391)
+PASS: product-not-nn-determined
+PASS: note-claim-scope
+PASS: theorem3-displayed-not-adopted
+PASS: theorem3-not-written-into-admissibility
+PASS: theorem3-l1-not-attached
+PASS: no-fourth-ball
+PASS: stars-scored-at-v-only
+PASS: not-leftover-char-or-skeweq
+PASS: forbidden-phrases-absent
+PASS: hypothetical-axiom-no-edit
+PASS: note-reports-computed-tuples
+PASS: axiom-file-unedited-marker
+per_element: six neighbors of unread v and their lex-first nearest sites
+per_site: stars scored at v only
+per_mode: checked and not executed
+per_block: three-seed unions U0 and U1; no fourth ball
+lattice_wide: checked and not executed — product displayed, not adopted
+TOTAL: PASS=31 FAIL=0
+
+----- stderr -----
+

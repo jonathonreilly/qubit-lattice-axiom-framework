@@ -1,0 +1,55 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_q8_true_cov6_inclusion_2026_08_15.py
+runner_sha256: cf04492d290eec3224b558c9a3609cc39050629374af56464bd84a287c57e26e
+input_fingerprint_sha256: 5e6b8e48e536e2d13fd3b70369f75fe82a44fecc0e6ce1b076b412e07686eaf1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.20
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/F_CUT_Q8_TRUE_COV6_INCLUSION_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+external_scientific_inputs: current Lattice/Admissibility/Record boundary only; no observation or fit
+negative_scope: displayed Q8 versus cov6>0 inclusion; does not adopt Q8
+n_rotations=24
+n_orbits=10
+remaining_labels=('wt1', 'opp2', 'adj2', 'vertex3', 'mixed3')
+|F_cut|=32
+n_six_site_seeds=924
+N_Q8=30
+N_cov6=28
+N_both=28
+inclusion=0
+extras=((0, 1, 0, 0, 0), (0, 1, 0, 0, 1))
+lex_first_q8_true_cov6_zero=(0, 1, 0, 0, 0)
+cov6(f_L1)=920
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required note-plus-axiom string-literal tuple
+PASS: thm1-host 24 rotations, 10 orbits, 32 F_cut maps, 924 six-site seeds
+PASS: thm1-f-L1-is-unbalanced-axis f_L1 is 1 iff some axis has c_+ != c_-
+PASS: thm1-f-L1-not-hamming f_L1 is n!=0, not Hamming |c|_1 mod 2
+PASS: thm1-inclusion-fails not every Q8-true map has cov6>0
+PASS: thm1-lex-first-extra lex-first Q8-true map with cov6=0 is (0, 1, 0, 0, 0)
+PASS: thm1-two-extras the two Q8-true cov6=0 remaining-bit tuples are (0, 1, 0, 0, 0) and (0, 1, 0, 0, 1)
+PASS: thm2-counts N_Q8=30, N_cov6=28, N_both=28
+PASS: thm3-display-not-adopt Q8 is displayed and is not adopted as an Admissibility selector
+PASS: source-lattice-admissibility Lattice rotations and Admissibility covariance are pinned
+PASS: source-record-boundary Record lock, content-only readout, unreadable absence, and formation residual are pinned
+PASS: claim-scope claim_scope reports the Q8-true versus cov6>0 inclusion and does not adopt Q8
+PASS: note-contract machine fields, three theorems, and forbidden-phrase hygiene hold
+PASS: no-axiom-edit the axiom memo is unedited and the theorem proposes no axiom change
+PASS: off-patch-zero off-patch occupancy is the explicit 0 default, not a blank-block
+PASS: l1-definition-in-note the note defines f_L1 as unbalanced-axis / n != 0 and rejects Hamming
+PASS: not-leftover-6539-6531 the residual is Q8-true versus cov6>0 inclusion, not leftover-character of #6539 or #6531
+PASS: q8-definition-and-l1-in-class Q8 is wt1 or adj2 or opp2 or vertex3, and f_L1 satisfies Q8
+per_element: checked exactly — each of the 64 neighbor 6-tuples is assigned its axis-type orbit
+per_site: checked exactly — each of the twelve two-cube vertices uses the same six-direction stencil
+per_mode: checked exactly — every F_cut map is scored on 924 six-site seeds against displayed Q8
+per_block: checked exactly — N_Q8, N_cov6, and N_both are the F_cut Q8-versus-cov6 counts on this patch
+lattice_wide: checked and not executed — no Z^3-wide formation law or physical Admissibility selector is claimed
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

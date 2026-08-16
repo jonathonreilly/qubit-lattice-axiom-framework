@@ -1,0 +1,52 @@
+===== runner cache v1 =====
+runner: scripts/two_ball_all_4nn_unique_axis_agree_2026_08_15.py
+runner_sha256: 382f6f472e88987c2d574beeb2c29f94edb8609bc6712fa20feaafcd2f3b4db4
+input_fingerprint_sha256: 05e4fe9e22aff777ce5b5e8a94580ea8e17efe33fba94a8966c6c639647e947d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+All 4-NN unread sites of two-ball U versus unique-axis agreement
+AUDIT_INPUT_PATHS:
+  docs/TWO_BALL_ALL_4NN_UNIQUE_AXIS_AGREE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+|U|: 43
+box: |x|,|y|,|z|<=6
+N_pair: 48
+N_4: 4
+site=(1, -1, -1) mask=(1, 1, 1, 0, 1, 0) labels=(*, *, +, 0, +, 0) N_fire=4 N_unique_axis=2 N_agree=0
+site=(1, -1, 1) mask=(1, 1, 1, 0, 0, 1) labels=(*, *, -, 0, 0, +) N_fire=4 N_unique_axis=2 N_agree=2
+site=(1, 1, -1) mask=(1, 1, 0, 1, 1, 0) labels=(*, *, 0, +, -, 0) N_fire=4 N_unique_axis=2 N_agree=2
+site=(1, 1, 1) mask=(1, 1, 0, 1, 0, 1) labels=(*, *, 0, -, 0, -) N_fire=4 N_unique_axis=2 N_agree=0
+N_pos: 2
+lex_first_4nn: (1, -1, -1)
+lex_first_positive: (1, -1, 1)
+one_agreeing: (+, -, -, 0, 0, +)
+unique_axis_forbids_every_4nn: False
+PASS: audit-input-paths-exist
+PASS: audit-input-paths-static-literals
+PASS: audit-timeout-declared
+PASS: source-lattice
+PASS: source-admissibility
+PASS: source-unread
+PASS: source-july3-unique-pair
+PASS: score-radius-6-box-only
+PASS: proper-group-order | full=48 proper=24
+PASS: unique-chiral-pair | orbits=57 N_pair=48
+PASS: theorem-1-four-unread-4nn | N_4=4 sites=[(1, -1, -1), (1, -1, 1), (1, 1, -1), (1, 1, 1)]
+PASS: lex-first-4nn-n-agree-zero
+PASS: theorem-2-n-pos | N_pos=2 v=(1, -1, 1) c=(+, -, -, 0, 0, +)
+PASS: claim-scope-pinned
+PASS: note-report-numbers
+PASS: displayed-not-adopted
+PASS: not-attached-to-l1
+PASS: not-leftover-char-one-witness
+PASS: no-forbidden-phrases
+PASS: no-axiom-edit
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

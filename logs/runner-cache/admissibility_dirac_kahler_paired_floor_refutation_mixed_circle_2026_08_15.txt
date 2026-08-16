@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_paired_floor_refutation_mixed_circle_2026_08_15.py
+runner_sha256: 9d2f0575c45a4ab86df4ed8a69d31e55a34013f7e7ad0e26156a3325b81170d0
+input_fingerprint_sha256: ee9f568c73a4d76edbefe2da0429f88827625a020dfb635232b549f66842ab8e
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 32.38
+status: ok
+----- stdout -----
+[PASS] A-authority: current authority and the Block112 parent triple plus ancestors 111--103 are content-bound
+[PASS] B-sum-one-branch: four exact involutions give ++++/++++/++++/----, paired sum one, and inertia (15,1,0)
+[PASS] C-the-circulant-square-root: C commutes with x-shift, C^2=I, all 1024 anticommutator entries vanish, and C is joint
+[PASS] D-the-pythagorean-circle: real-linearity gives (tC+sA*)^2=(t^2+s^2)I and three exact (8,8,0) circle points
+[PASS] E-endpoint-degeneracy: pure C has exact rank twelve and (6,6,4), while pure A* re-verifies (8,8,0)
+[PASS] F-second-fixture: at c=3/5 the exact circle point is (8,8,0) and the pure-C endpoint is rank twelve
+[PASS] G-zero-sum-scope: displayed sums include one; sum zero is neither attained nor excluded by displayed compu...
+[PASS] H-scope: the note preserves sum-one/circle/floor, N1--N8, W1, N5, ADM, gravity, and TOE walls
+SUM_ONE_BRANCH: signs=('++++', '++++', '++++', '----') inertias=((4, 0, 0), (4, 0, 0), (4, 0, 0), (3, 1, 0)) paired_sum=1 full=(15, 1, 0)
+MIXED_CIRCLE: points=((3/5, 4/5), (5/13, 12/13), (8/17, 15/17)) inertias=((8, 8, 0), (8, 8, 0), (8, 8, 0))
+ENDPOINTS: primary_C=rank12/(6, 6, 4) Astar=(8, 8, 0); second_C=rank12/(6, 6, 4)
+ATTAINED_PAIRED_SUMS: [1, 2, 3, 4]; sum 0 neither attained nor excluded
+AXIOM_AUTHORITY: origin/main=4e566b14a6352a9a62590252a9755c7a103c1b9e axiom=bc23300becfe4e4db57153c0e94cfcdf2338da71 registry=b93959cca4f7e26c673cdccbe601e50c3cb93daa; Block112 parent=385a6ba5b1594f20e5d4eebba9da68d8e72abc10
+RUNTIME_SECONDS: 32.105
+per_element: exact branch, square-root, anticommutator, circle, and endpoint identities are checked
+per_site: one Grassmann mode per fine site on the antiperiodic reflection torus
+per_mode: the paired sum-one branch and the mixed circle verify at both displayed shear fixtures
+per_block: the interior circle points are pinned at eight-eight while the pure-circulant endpoint degenerates to rank twelve
+lattice_wide: checked and not executed — the mixed-circle inertia mechanism, the paired zero-sum decision, curved OS positivity, the actual ADM/history transporter completion, joint gravity, the gravity constraint quotient, Records, audit retention, and TOE closure remain open
+RESULT: the paired floor is refuted at sum one and the first exact mixed involutions form a Pythagorean circle with pinned interior inertia
+DECISION_CUT: advance the mixed-circle mechanism and the zero-sum decision; reject floor-two and orientation readings of the paired sector
+TOE: zero obligation retirement, retained-positive end-to-end theory count remains zero, and no TOE percentage moves
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

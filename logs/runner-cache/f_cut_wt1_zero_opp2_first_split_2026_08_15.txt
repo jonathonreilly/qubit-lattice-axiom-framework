@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/f_cut_wt1_zero_opp2_first_split_2026_08_15.py
+runner_sha256: e1ea92b2cb1575e345bc54c1ba0de0895a118b29b6b456e981c38b0903d62e2e
+input_fingerprint_sha256: 3624d79230aa841ae21c6e8c32710e882a3e2f256ffad1fa50fc61845588620b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+external_scientific_inputs: none; two-cube occupancy ticks only
+package_local_integrity_reads: proposed source note and live axiom memo only
+measure_boundary: exact integer occupancy, lock counts, and coverage
+claim_boundary: displayed first fill split; opp2 is not adopted
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: two-cube-order the two-cube is the lex-ordered 12-site patch {0,1,2}x{0,1}x{0,1}
+PASS: orbit-partition the ten cube-rotation orbit types partition the 64 cells
+PASS: l1-is-n-neq-0 f_L1 is the n=/=0 predicate and is not Hamming parity
+PASS: pair-in-fcut both remaining-bit tuples are F_cut maps and differ only on opp2
+PASS: thm1-max11 both maps attain the Max(11) coverage 12
+PASS: thm1-not-max1 neither map is in Max(1)
+PASS: thm1-extras the pair sits in the four-element Max(11) minus Max(1) set
+PASS: thm2-small-seeds-agree every seed of size at most 2 has the same fill bit on both maps
+PASS: thm2-lex-first-split the lex-first |S|<=3 fill disagreement is the displayed 3-site seed
+PASS: thm3-who-fills f10 fills the displayed seed and f00 does not
+PASS: mutation-same-map-has-no-split a map does not disagree with itself on any |S|<=3 seed
+PASS: mutation-hamming-is-not-l1 Hamming parity is a different remaining-bit tuple from n=/=0
+PASS: mutation-swap-who-fills-fails the swapped fill-bit claim is rejected by the recomputed histories
+PASS: scope-boundary the note displays the split and does not adopt opp2
+PASS: machine-status-contract bounded status, frontier trace, and next action are source-visible
+PASS: import-boundary-contract the supplied patch and absent physical bridge are disclosed
+PASS: live-record-unread the live Record unread sentence is quoted without rewrite
+PASS: claim-type-and-forbidden the bounded type is declared and forbidden phrases are absent
+PASS: claim-scope-literal the note claim_scope reports the lex-first fill disagreement
+displayed_seed: ((0, 0, 0), (0, 1, 1), (2, 0, 0))
+f00_history: (3, 5) fill=False
+f10_history: (3, 6, 8, 11, 12) fill=True
+max1_value: 12 max1_count: 4
+max11_value: 12 max11_count: 8
+max11_minus_max1: ((0, 0, 1, 1, 0), (0, 1, 1, 1, 0), (0, 0, 1, 1, 1), (0, 1, 1, 1, 1))
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

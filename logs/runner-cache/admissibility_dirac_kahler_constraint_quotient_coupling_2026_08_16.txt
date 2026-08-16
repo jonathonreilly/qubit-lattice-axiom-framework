@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_constraint_quotient_coupling_2026_08_16.py
+runner_sha256: 511b5b43ce30cc318c0ee3d53e1a1421664bd39e35844679bbf6db61526867e2
+input_fingerprint_sha256: 0b9bcd5e1b3f254acdc1a513e7a7f3288e9b419d5adfc7a746a8115cb0ccbe6c
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 5.06
+status: ok
+----- stdout -----
+[PASS] A-authority: Block 120 blobs and ancestors 119--103 are pinned
+[PASS] B-the-noether-identity: both routings give div(J,S)=[E_z,Q] at 128 fixture/site cases; their difference is an exact curl and the AP seam is signed
+[PASS] C-the-onshell-vanishing: barphi[E_z,Q]psi=(barphi E_z)(Qpsi)-(barphi Q)(E_z psi) lies in the Q row/column ideal
+[PASS] D-the-constraint-count: C_k=(1,kappa_k)^T has (rank,ker,coker)=(1,0,1) at every k; k=0 keeps the trace row and zero TT
+[PASS] E-the-gauss-intertwiner: Gamma_(t+1)=Gamma_t-(Delta_t rho+B4 S), so preservation iff continuity; the DK source obeys it on shell
+[PASS] F-the-closed-carrier-obstruction: sum_z E_z=I; im(B4)=zero-sum, while pinned Block 114/119 positivity makes total U(1) charge ||psi||^2, so only zero populates the closed source
+[PASS] G-the-r-blindness-and-density: the r-weighted TT block is empty; every [E_z,Q] is nonzero (at most 16 entries), but [I,Q]=0 is contentless
+[PASS] H-scope: required coupling/no-go/N1--N8/W1/N5 firewalls and runtime bound are present
+ROUTING: t-first and x-first are distinct; (J_x-S_x)=(Delta_x^- K,-Delta_t^- K), hence divergence zero exactly
+SEAM witness z=(0,0), entry (0,28): Q_5/13=601/1152, Q_3/5=73/128; both routed divergences equal [E_(0,0),Q] with the AP sign
+ONSHELL FACTORIZATION: barphi[E_z,Q]psi=(barphi E_z)(Q psi)-(barphi Q)(E_z psi)=0 when Q psi=0=barphi Q
+CONSTRAINT: kappa_k=(0, sqrt(2), 2, -sqrt(2)); per_k=(rank,ker,coker)=(1,0,1); at k=0 C_0=(1,0)^T, so the trace row survives and TT count remains zero
+INTERTWINER: [B4,0,-I,-B4]=[B4,-I,0,0]-[0,-I,I,B4]; 128 routed DK continuity forms are Q-ideal commutators
+CARRIER: rank(B4)=3, coker(B4)=span{(1,1,1,1)}; Gauss requires zero total charge, but Q_U1=I4 gives ||psi||^2>0 for nonzero positive-package states
+DENSITY/VACUITY: nnz([E_z,Q]) by t mod 4=(14, 12, 16, 10) (max 16), whereas [I,Q]=0; zero TT makes the coupling r-blind
+N5: per_element: exact routed-current, commutator-identity, constraint-count, intertwiner, zero-sum, and density certificates are checked
+per_site: one Grassmann mode per fine site on the antiperiodic reflection torus
+per_mode: every spatial momentum has zero tt coordinates and the constraint sector couples to the matter current only through the exact continuity identity
+per_block: the certified positive package cannot source the closed-carrier gauss quotient because its total charge is a norm, while the density-level coupling is exact and routing-independent
+lattice_wide: checked and not executed — the ward/transfer-covariance of the current bilinears, the populated sourced quotient on an open or background carrier, the naturality classification, curved OS positivity, the actual ADM/history transporter completion, joint gravity, the gravity constraint quotient on a populated carrier, Records, audit retention, and TOE closure remain open
+RESULT: the matter package couples to the d=2 gravity constraint sector through an exact routing-independent noether identity and the gauss intertwiner, but the closed carrier's sourced quotient is unpopulated because positive-definite matter has norm total charge — the density-level ward question is the genuine next gate;
+DECISION_CUT: prove or refute ward/transfer-covariance of the current bilinears on the OS quotient; pose the populated quotient on the open carrier; reject total-charge-level coupling claims
+TOE: zero obligation retirement, retained-positive end-to-end theory count remains zero, and no TOE percentage moves
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

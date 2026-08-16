@@ -1,0 +1,52 @@
+===== runner cache v1 =====
+runner: scripts/two_ball_witness_chiral_mask_2026_08_15.py
+runner_sha256: dc1736194f5391a8418ca34be9ee64abd102127f96ca7f09e1da59e73c4341cd
+input_fingerprint_sha256: 40293623e18f649ba0839f591da1cf2aa0b413aeea5ac29ba8596752814934ba
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+Two-ball witness occupancy mask versus July-3 k=3 pair
+AUDIT_INPUT_PATHS:
+  docs/TWO_BALL_WITNESS_CHIRAL_MASK_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+derived_mask: (1, 1, 1, 0, 1, 0)
+occupied_neighbors: ((2, -1, -1), (0, -1, -1), (1, 0, -1), (1, -1, 0))
+empty_neighbors: ((1, -2, -1), (1, -1, -2))
+N_pair: 48
+orbit_sizes: [24, 24]
+lex_reps: ('(0, +, 0, -, +, -)', '(0, +, 0, -, -, +)')
+N_mask: 4
+N_fire: 4
+lex_first_firing: (+, -, +, 0, -, 0)
+firing: ['(+, -, +, 0, -, 0)', '(+, -, -, 0, +, 0)', '(-, +, +, 0, -, 0)', '(-, +, -, 0, +, 0)']
+PASS: audit-input-paths-exist
+PASS: audit-input-paths-static-literals
+PASS: audit-timeout-declared
+PASS: source-lattice
+PASS: source-admissibility
+PASS: source-unread
+PASS: source-july3-unique-pair
+PASS: two-ball-mask-derived | mask=(1, 1, 1, 0, 1, 0)
+PASS: proper-group-order | full=48 proper=24
+PASS: unique-chiral-pair | orbits=57 chiral_ids=[28, 29]
+PASS: n-pair | N_pair=48 sizes=[24, 24]
+PASS: pair-two-empties
+PASS: n-mask | N_mask=4
+PASS: sixteen-fillings | n_fillings=16
+PASS: n-fire | N_fire=4
+PASS: lex-first-firing | lex_first=(+, -, +, 0, -, 0)
+PASS: claim-scope-pinned
+PASS: note-report-numbers
+PASS: displayed-not-adopted
+PASS: not-attached-to-l1
+PASS: not-leftover-char
+PASS: no-forbidden-phrases
+PASS: no-axiom-edit
+TOTAL: PASS=23 FAIL=0
+
+----- stderr -----
+

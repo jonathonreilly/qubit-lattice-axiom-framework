@@ -1,0 +1,72 @@
+===== runner cache v1 =====
+runner: scripts/weight4_full_axis_one_bit_extra_2026_08_15.py
+runner_sha256: f30a57fecfd21a324971855aae2b1d8e71bcd56b7453e91e2b1878a0dc5068a7
+input_fingerprint_sha256: 53579b4e05ab3733f2c8e38e0d29aef26a0a5a5c728e4e13646e81361e049672
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.07
+status: ok
+----- stdout -----
+weight-4 occupancy unique full axis one-bit extra
+AUDIT_INPUT_PATHS:
+  docs/WEIGHT4_FULL_AXIS_ONE_BIT_EXTRA_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+G_plus=24
+N_masks=15
+N_perp=12
+N_axis=3
+N_pair=48
+uneq_unread=True
+uneq_sigma=(1, 0, 1, 0, 1, 1)
+uneq_ticks=(1, None, 1, None, 3, 2)
+uneq_full_axis=z
+uneq_b=1
+|Stab(uneq)|=2
+|Stab(uneq,b)|=1
+swapper_excluded=True
+perp_rows:
+  (0, 1, 0, 1, 1, 1) full=z |Stab|=2 Nps=4
+  (0, 1, 1, 0, 1, 1) full=z |Stab|=2 Nps=4
+  (0, 1, 1, 1, 0, 1) full=y |Stab|=2 Nps=4
+  (0, 1, 1, 1, 1, 0) full=y |Stab|=2 Nps=4
+  (1, 0, 0, 1, 1, 1) full=z |Stab|=2 Nps=4
+  (1, 0, 1, 0, 1, 1) full=z |Stab|=2 Nps=4
+  (1, 0, 1, 1, 0, 1) full=y |Stab|=2 Nps=4
+  (1, 0, 1, 1, 1, 0) full=y |Stab|=2 Nps=4
+  (1, 1, 0, 1, 0, 1) full=x |Stab|=2 Nps=4
+  (1, 1, 0, 1, 1, 0) full=x |Stab|=2 Nps=4
+  (1, 1, 1, 0, 0, 1) full=x |Stab|=2 Nps=4
+  (1, 1, 1, 0, 1, 0) full=x |Stab|=2 Nps=4
+axis_rows:
+  (0, 0, 1, 1, 1, 1) |Stab|=8 Nps=0
+  (1, 1, 0, 0, 1, 1) |Stab|=8 Nps=0
+  (1, 1, 1, 1, 0, 0) |Stab|=8 Nps=0
+PASS: audit-input-paths | AUDIT_INPUT_PATHS is the required static two-string literal tuple
+PASS: source-lattice
+PASS: source-admissibility
+PASS: source-unread-qubit
+PASS: g-plus-order | proper=24
+PASS: theorem-1-split | N_perp=12 N_axis=3
+PASS: theorem-1-unique-full-axis
+PASS: theorem-1-axis-no-pair-support | N_pair=48
+PASS: theorem-2-bit-kills-swapper
+PASS: theorem-2-uneqrad-mask | sigma=(1, 0, 1, 0, 1, 1) axis=2 b=1
+PASS: theorem-2-uneqrad-swapper | swap_bit=0
+PASS: claim-scope
+PASS: displayed-not-adopted
+PASS: l1-not-attached
+PASS: not-leftover-uneqbit
+PASS: admissibility-unedited
+PASS: forbidden-phrases
+PASS: no-axiom-edit
+per_element: N_perp, N_axis, |Stab(σ)|, |Stab(σ,b)| are exact integers
+per_site: 15 weight-4 occupancy masks; uneqrad mask named only
+per_mode: no spectral calculation
+per_block: 6-NN star masks only
+lattice_wide: checked and not executed
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

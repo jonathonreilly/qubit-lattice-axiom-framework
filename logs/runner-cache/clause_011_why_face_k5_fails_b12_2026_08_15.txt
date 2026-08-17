@@ -1,0 +1,63 @@
+===== runner cache v1 =====
+runner: scripts/clause_011_why_face_k5_fails_b12_2026_08_15.py
+runner_sha256: 7b2ad4cd75ff057edaadef1e5824c5639fa99bce214484aa0c59fd1ec797572b
+input_fingerprint_sha256: c7eb1122546ebdbd6a63d91598d895c73f0b9fa182f6553260a05f056679b83e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/CLAUSE_011_WHY_FACE_K5_FAILS_B12_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+dijkstra_count_budget: 1
+claim_scope: Lex-first shortest paths to (10,0,0) and (5,5,0) under the named (0,1,1) hop-cost on B_12(0) are named. Displayed, not adopted.
+external_scientific_inputs: current Lattice and Admissibility wording; no observations or fits
+integrity_reads: this runner, its note, and the axiom memo; no other scientific inputs
+construction: named (0,1,1) hop-cost on B_12(0) with one origin Dijkstra
+negative_scope: displayed, not adopted; not written into Admissibility; L1 not attached
+PASS: audit-inputs declared source-bound inputs exist as the required string-literal tuple
+PASS: audit-input-literals AUDIT_INPUT_PATHS is a static two-string literal in this runner
+PASS: source-lattice current cubic nearest-neighbor wording is pinned
+PASS: source-admissibility current one-fixed-rule wording is pinned
+PASS: source-record-boundary current lock/content/unreadable-at-absence wording is pinned
+PASS: source-formation-boundary formation site/probability/rate remains outside Admissibility
+PASS: ball-cardinality B_12(0) has exactly 2625 integer sites
+PASS: targets-inside both scored sites lie in B_12(0) and (12,1,0) does not
+PASS: clause-identity seed-exit is cheap and axis-one and support-drop cost 3
+PASS: one-dijkstra exactly one Dijkstra computation is used
+PASS: finite-times both in-ball targets are reached by a finite path
+lex_first_axis_path: (0,0,0) → (0,-1,0) → (1,-1,0) → (2,-1,0) → (3,-1,0) → (4,-1,0) → (5,-1,0) → (6,-1,0) → (7,-1,0) → (8,-1,0) → (9,-1,0) → (10,-1,0) → (10,0,0)
+lex_first_axis_costs: (1,1,1,1,1,1,1,1,1,1,1,3) sum=14
+lex_first_face_path: (0,0,0) → (0,1,0) → (1,1,0) → (1,2,0) → (1,3,0) → (1,4,0) → (1,5,0) → (2,5,0) → (3,5,0) → (4,5,0) → (5,5,0)
+lex_first_face_costs: (1,1,1,1,1,1,1,1,1,1) sum=10
+t(10, 0, 0)=14  t^2/|v|_2^2=196/100
+t(5, 5, 0)=10  t^2/|v|_2^2=100/50
+PASS: arrival-axis computed t(10,0,0) equals 14 and the reconstructed hop-cost sum
+PASS: arrival-face computed t(5,5,0) equals 10 and the reconstructed hop-cost sum
+PASS: axis-path-endpoints the axis reconstruction starts at the origin and ends at (10,0,0)
+PASS: face-path-endpoints the face reconstruction starts at the origin and ends at (5,5,0)
+PASS: note-axis-walk the note exhibits the computed axis walk and hop-cost list
+PASS: note-face-walk the note exhibits the computed face walk and hop-cost list
+PASS: not-leftover the hop-cost lists are longer than a two-point leftover of the no bit
+PASS: reverse-fails t(10,0,0)^2/100 > t(5,5,0)^2/50 fails and is written
+PASS: cheap-seed-exit both lex-first walks open with a cost-1 seed-exit
+PASS: axis-only-not-shortest the axis-only competitor is strictly more expensive than t(10,0,0)
+PASS: uniqueness-not-required other shortest walks exist and uniqueness is not claimed
+PASS: graph-length-contrast uniform graph-length is a different pair of arrivals and is not attached
+PASS: mutation-seed-exit charging seed-exit 3 changes the opening hop of both named walks
+PASS: note-contract machine fields, exhibition wording, N1-N8, and forbidden-phrase hygiene hold
+PASS: claim-scope front matter keeps the dispatch claim_scope
+PASS: not-in-admissibility (0,1,1) is not written into Admissibility
+PASS: forbidden-phrases forbidden phrases are absent from the note and from runner prose
+PASS: axiom-untouched the axiom memo is an input only
+per_element: inward-weight clauses and hop-costs are evaluated on named directed nearest-neighbor edges
+per_site: lex-first reconstructions are executed at (10,0,0) and (5,5,0) inside B_12(0)
+per_mode: reverse is the exact integer comparison t(10,0,0)^2/100 > t(5,5,0)^2/50
+per_block: one Dijkstra on B_12(0) and the named (0,1,1) hop-cost
+lattice_wide: checked and not executed — no Admissibility edit and L1 is not attached
+TOTAL: PASS=29 FAIL=0
+
+----- stderr -----
+

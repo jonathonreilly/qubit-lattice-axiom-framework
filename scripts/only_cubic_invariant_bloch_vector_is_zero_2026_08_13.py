@@ -28,6 +28,7 @@ C = tuple[Fraction, Fraction]
 HMat = tuple[tuple[C, C], tuple[C, C]]
 
 ZERO: Vec = (Fraction(0), Fraction(0), Fraction(0))
+UNIT_X: Vec = (Fraction(1), Fraction(0), Fraction(0))
 THREE_FIFTHS: Vec = (Fraction(3, 5), Fraction(0), Fraction(0))
 SIX_FIFTHS: Vec = (Fraction(6, 5), Fraction(0), Fraction(0))
 
@@ -453,8 +454,19 @@ def main() -> int:
         all(
             h_determinant(density(vector))
             == ((Fraction(1) - norm_squared(vector)) / 4, Fraction(0))
-            for vector in (ZERO, THREE_FIFTHS, SIX_FIFTHS, symbol)
+            for vector in (ZERO, UNIT_X, THREE_FIFTHS, SIX_FIFTHS, symbol)
         ),
+    )
+    unit_density = density(UNIT_X)
+    checks.check(
+        "density-body-boundary",
+        "the norm-one control is in the Bloch body and is a determinant-zero rank-one density",
+        norm_squared(UNIT_X) == 1
+        and is_bloch_body(UNIT_X)
+        and is_density_matrix(unit_density)
+        and h_determinant(unit_density) == (Fraction(0), Fraction(0))
+        and unit_density != zero2()
+        and h_mul(unit_density, unit_density) == unit_density,
     )
     checks.check(
         "density-body-interior",
@@ -522,6 +534,29 @@ def main() -> int:
         and "6-tuple" not in note
         and "Born" not in note
         and "vacuum" not in note,
+    )
+    proof_boundary = section_text(note, "## Proof boundary")
+    review_record = section_text(note, "## Review record")
+    checks.check(
+        "proof-boundary",
+        "the proof boundary states covered edge cases, excluded domains, and missing-lemma status",
+        "`r=0`" in proof_boundary
+        and "`0 < ||r||^2 < 1`" in proof_boundary
+        and "`||r||^2 = 1`" in proof_boundary
+        and "`||r||^2 > 1`" in proof_boundary
+        and "outside `Q^3`" in proof_boundary
+        and "physical\ncovariance interpretation" in proof_boundary
+        and "No lemma in `P0`--`P6`\nremains open" in proof_boundary,
+    )
+    checks.check(
+        "review-record",
+        "the narrowing record distinguishes withdrawal from refutation and fixes the preserved scope",
+        "withdraws rather\nthan refutes" in review_record
+        and "minimal-axiom import" in review_record
+        and "physical covariance corollary" in review_record
+        and "six-component neighborhood tuple" in review_record
+        and "scope ends at the self-contained finite-group" in review_record
+        and "independent audit remains a separate lane" in review_record,
     )
 
     return checks.finish()

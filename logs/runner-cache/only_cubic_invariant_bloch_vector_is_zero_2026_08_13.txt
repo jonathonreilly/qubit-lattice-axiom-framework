@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/only_cubic_invariant_bloch_vector_is_zero_2026_08_13.py
-runner_sha256: 4f2af1eaa81209686ba0bf5816602317e43ccce06b67108aa8fd98b3d8995042
-input_fingerprint_sha256: 8c8fef5b9338d94d1dad060641c47c61f90a27dbf6a971d8eb8029060a17af5c
+runner_sha256: 7f71ca967d810262711f40d7af20b1ae5c79541967b3efd55ff15f9be38ae41a
+input_fingerprint_sha256: d8b4635c8113d1daacd1aaf45426ce4cb4327931440bad2af5b4f4092a331b50
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 external_scientific_inputs: none; all objects are declared in the source note
@@ -24,6 +24,7 @@ PASS: pauli-quarter-turn-intertwining independent unitary conjugation implements
 PASS: pauli-fixed-space zero is the unique coordinate compatible with the rank-three fixed equations
 PASS: density-exact-formula rho(r) is Hermitian, trace one, and has the exact Bloch determinant
 PASS: density-determinant-scale det rho(r) equals (1-|r|^2)/4 on independent rational samples
+PASS: density-body-boundary the norm-one control is in the Bloch body and is a determinant-zero rank-one density
 PASS: density-body-interior the 3/5 control is inside the Bloch body and has determinant 4/25
 PASS: density-body-exterior the 6/5 mutation is outside the Bloch body and fails positive semidefiniteness
 PASS: density-group-action all group elements preserve the exact Bloch norm
@@ -32,7 +33,9 @@ PASS: section-bound-conclusions each displayed theorem section contains its exac
 PASS: canonical-claim-block the executable claim block exactly matches all computed theorem outputs
 PASS: self-contained-authority the note declares no upstream dependency or physical bridge
 PASS: claim-surface-trim the superseded physical and negative-evidence sections are absent
-TOTAL: PASS=22 FAIL=0
+PASS: proof-boundary the proof boundary states covered edge cases, excluded domains, and missing-lemma status
+PASS: review-record the narrowing record distinguishes withdrawal from refutation and fixes the preserved scope
+TOTAL: PASS=25 FAIL=0
 
 ----- stderr -----
 

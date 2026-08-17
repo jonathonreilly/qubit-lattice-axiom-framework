@@ -47,17 +47,13 @@ admitted_observation_status: null
 ## Exact target
 
 Let `G` be the group generated over `Q^3` by the two matrices `R_z` and `R_x`
-displayed below. Prove that `G` is the `24`-element determinant-`+1`
-signed-permutation group, its representation on `Q^3` is irreducible, and
-`Fix_G(Q^3) = {0}`. Transport the action through the `Q`-linear Pauli map and
-prove that the fixed traceless Hermitian subspace is `{0}`. Finally, on
-
-```text
-B_Q = { (x,y,z) in Q^3 : x^2 + y^2 + z^2 <= 1 },
-```
-
-prove that `rho(r) = (I + r·sigma)/2` is a density matrix and that its unique
-`G`-fixed member is `I/2`.
+displayed below; prove that `G` is the `24`-element determinant-`+1`
+signed-permutation group, that its representation on `Q^3` is irreducible
+with `Fix_G(Q^3) = {0}`, that the transported `Q`-linear Pauli action has
+fixed traceless Hermitian subspace `{0}`, and that on
+`B_Q = {(x,y,z) in Q^3 : x^2+y^2+z^2 <= 1}` the matrix
+`rho(r) = (I+r·sigma)/2` is a density matrix whose unique `G`-fixed member is
+`I/2`.
 
 ## Imports and authority
 
@@ -70,16 +66,18 @@ No observational value or framework premise enters the proof.
 
 The proof is acyclic and closes through the following nodes.
 
-1. `P0`: declare `R_z`, `R_x`, and the generated group `G`.
-2. `P1`: enumerate `G` and identify its `24` determinant-`+1`
+1. `P0` (proved here): declare `R_z`, `R_x`, and the generated group `G`.
+2. `P1` (proved here): enumerate `G` and identify its `24` determinant-`+1`
    signed-permutation matrices.
-3. `P2`: prove irreducibility of the `G`-representation on `Q^3`.
-4. `P3`: solve the generator fixed equations and obtain `Fix_G(Q^3) = {0}`.
-5. `P4`: define the rational-Pauli Hermitian space and prove the Pauli map is
-   a `Q`-linear isomorphism intertwining the declared actions.
-6. `P5`: characterize `B_Q` exactly by Hermiticity, trace one, and positive
-   semidefiniteness of `rho(r)`.
-7. `P6`: combine `P3`--`P5` to identify the unique fixed density.
+3. `P2` (proved here): prove irreducibility of the `G`-representation on
+   `Q^3`.
+4. `P3` (proved here): solve the generator fixed equations and obtain
+   `Fix_G(Q^3) = {0}`.
+5. `P4` (proved here): define the rational-Pauli Hermitian space and prove the
+   Pauli map is a `Q`-linear isomorphism intertwining the declared actions.
+6. `P5` (proved here): characterize `B_Q` exactly by Hermiticity, trace one,
+   and positive semidefiniteness of `rho(r)`.
+7. `P6` (proved here): combine `P3`--`P5` to identify the unique fixed density.
 
 The primary runner checks each node with exact rational arithmetic. The
 strongest supported scope is precisely `P0`--`P6`.
@@ -171,9 +169,11 @@ when its determinant is nonnegative. Thus `rho(r)` is a density exactly on
 `B_Q`. The group preserves `x^2+y^2+z^2`, so it acts on this body. Theorem 2
 then makes `r=0` the unique fixed coordinate, giving `rho(0)=I/2`.
 
-For exact interior and exterior controls, `(3/5,0,0)` has determinant `4/25`
-and belongs to `B_Q`, while `(6/5,0,0)` has determinant `-11/100` and lies in
-the affine Hermitian trace-one space outside `B_Q`.
+For exact boundary, interior, and exterior controls, `(1,0,0)` belongs to
+`B_Q` and gives a determinant-zero rank-one density, `(3/5,0,0)` has
+determinant `4/25` and lies in the interior of `B_Q`, and `(6/5,0,0)` has
+determinant `-11/100` and lies in the affine Hermitian trace-one space outside
+`B_Q`.
 
 ## Executable claim block
 
@@ -193,6 +193,22 @@ unique_fixed_density: I/2
 
 ## Proof boundary
 
-The retained object is the self-contained finite-group representation theorem
-and its rational Bloch-body corollary. The definitions in this note supply all
-premises used by the proof and runner.
+The theorem proposed here is the self-contained finite-group representation
+theorem and its rational Bloch-body corollary. Covered cases include `r=0`,
+the full-rank interior `0 < ||r||^2 < 1`, the singular positive-semidefinite
+unit sphere `||r||^2 = 1`, and affine Hermitian trace-one exterior controls
+with `||r||^2 > 1`. Vectors outside `Q^3` and every lattice or physical
+covariance interpretation are outside this target. No lemma in `P0`--`P6`
+remains open; any physical application would be a separate target with its
+own premises.
+
+## Review record
+
+This revision narrows the earlier draft to `P0`--`P6`. It withdraws rather
+than refutes the minimal-axiom import, physical covariance corollary,
+six-component neighborhood tuple, and negative-claim framing. The preserved
+scope ends at the self-contained finite-group, Pauli-coordinate, and rational
+Bloch-body theorem. Hard landing conditions are a fresh exact-boundary
+runner/cache pair, a current zero-dependency citation-manifest entry, and
+passing repository pipeline, strict-lint, and changed-evidence gates;
+independent audit remains a separate lane.

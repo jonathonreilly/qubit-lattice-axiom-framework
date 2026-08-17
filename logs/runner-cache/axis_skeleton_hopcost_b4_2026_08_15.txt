@@ -1,0 +1,59 @@
+===== runner cache v1 =====
+runner: scripts/axis_skeleton_hopcost_b4_2026_08_15.py
+runner_sha256: f1e99c38a9555b1fa15b64fd6acb0322624b92995ea2d622b833281b49d47003
+input_fingerprint_sha256: 3511b273473fe92006fdf83cade8d214c256eda59d0793b5e18dfe89f4b861e7
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: none; B_4(0), G+, and the named axis-skeleton hop-cost are theorem hypotheses
+package_local_integrity_reads: runner source, proposed source note, and live axiom memo
+measure_boundary: exact integer path costs and |v|_2/t(v) on the radius-4 ball
+negative_scope: displayed two-end costs are not written into Admissibility
+orbit_weights_b4: ((0, 1), (1, 0), (1, 1), (1, 2), (2, 1), (2, 2), (2, 3), (3, 2), (3, 3))
+n_b4_sites: 129
+n_b4_edges: 528
+t_alpha(3,0,0): 7
+t_alpha(1,1,1): 5
+t_alpha(4,0,0): 10
+t_rho(3,0,0): 9
+t_rho(1,1,1): 5
+t_rho(4,0,0): 12
+type_times_alpha: (3, 4, 5, 6, 5, 6, 6, 7, 6, 10)
+type_times_rho: (3, 4, 5, 6, 7, 8, 10, 9, 10, 12)
+b3_pair_reverses: False
+var_alpha: 0.003970882499881050381933428475607742373745345217328109139426882687694257036578135
+var_rho: 0.00035024862900926336984188979868593113574796042066947669842645487810610887706087318
+var_l1: 0.017710351241771545001390082642902462991396702168940717157746837023228578641267290
+(4,1,0)_in_b4: False
+PASS: gplus-order proper cubic rotations number 24
+PASS: ball-size B_4(0) has 129 sites
+PASS: nonzero-sites the scored set B_4(0)\{0} has 128 sites
+PASS: dijkstra-cap both named Dijkstras are capped at the 129-site ball
+PASS: thm1-weight-pairs B_4 inward occupancy pairs realize the nine weight pairs including (3,3)
+PASS: thm1-alpha-vs-rho-pairs alpha cheapens equal-weight pairs of weight greater than 1 that rho costs 3
+PASS: thm1-times alpha realizes t(3,0,0)=7, t(1,1,1)=5, t(4,0,0)=10
+PASS: thm1-b3-pair the B_3 pair does not reverse under alpha: 3*49=147 is not greater than 9*25=225
+PASS: thm1-note-times the note exhibits t_alpha of (3,0,0), (1,1,1), (4,0,0) and reports no reverse
+PASS: thm2-type-times G+ type arrival times under alpha are (3,4,5,6,5,6,6,7,6,10)
+PASS: thm2-vars-computed computed alpha, rho, and ell^1 variances match the displayed digits
+PASS: thm2-order var_rho < var_alpha < var_l1 on the same 128 sites
+PASS: thm2-note-vars the note reports all three population variances and the order
+PASS: thm2-not-leftover-b6 the note states the B_4 score is not a leftover of B_6 times
+PASS: thm3-displayed-not-adopted the note reports the named rule as displayed, not adopted
+PASS: thm3-no-l1-law the note does not attach an ell^1 path-length law
+PASS: claim-scope claim_scope reports the B_4 axis-skeleton score only
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: forbidden-strings note, runner, and axiom avoid the dispatch-forbidden phrases
+PASS: no-axiom-cost the live axiom memo does not host a two-end occupancy hop cost
+PASS: claim-type-and-gate bounded theorem type and a passing N1-N8 gate are source-visible
+per_element: checked exactly — each directed B_4(0) edge carries alpha and, separately, rho
+per_site: checked exactly — |v|_2/t(v) is scored on each of the 128 nonzero sites
+per_mode: checked exactly — the named axis-skeleton rule, rho, and ell^1 on the same ball
+per_block: checked exactly — B_3 pair order and population variance on B_4(0)\{0}
+lattice_wide: checked and not executed — no Admissibility cost and no path-length law are adopted
+TOTAL: PASS=21 FAIL=0
+
+----- stderr -----
+

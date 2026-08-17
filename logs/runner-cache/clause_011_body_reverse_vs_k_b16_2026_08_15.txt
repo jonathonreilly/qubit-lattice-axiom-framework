@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/clause_011_body_reverse_vs_k_b16_2026_08_15.py
+runner_sha256: 0c6e087888380afdb894b65cbfa5d2115855668c5c4078186d364a25671ef146
+input_fingerprint_sha256: 8deb3cb7fb32049b45f963d7818358fe1a6117f44326255969a134c5d56ba492
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+external_scientific_inputs: none; hop-costs are the named (0,1,1) rule on the finite 16-hop neighborhood B_16(0)
+package_local_integrity_reads: the note and current minimal axiom are read; no cache or governance surface is written
+negative_scope: the named rule is displayed, not adopted; it is not written into Admissibility and is not attached as an L1 hop-cost
+claim_scope: Body-diagonal reverse versus integer scale k under the named (0,1,1) hop-cost on B_16(0) is reported for k=1..5. Displayed, not adopted.
+cache_write: false
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required static literal pair and both files exist
+PASS: ball-b16-only B_16(0) is the 16-hop neighborhood of the origin and contains every named target
+PASS: clause-011-local seed-exit costs 1; axis 1-skeleton and support-drop cost 3; else 1
+dijkstra_count=1
+k 1 t(2,0,0)=4 t(1,1,1)=3 12 t(2k,0,0)^2=192 16 t(k,k,k)^2=144 reverse=True
+PASS: theorem-1-k1 t(2,0,0)=4 and t(1,1,1)=3
+PASS: theorem-2-k1 12 t(2,0,0)^2 > 16 t(1,1,1)^2 is True
+k 2 t(4,0,0)=8 t(2,2,2)=6 12 t(2k,0,0)^2=768 16 t(k,k,k)^2=576 reverse=True
+PASS: theorem-1-k2 t(4,0,0)=8 and t(2,2,2)=6
+PASS: theorem-2-k2 12 t(4,0,0)^2 > 16 t(2,2,2)^2 is True
+k 3 t(6,0,0)=10 t(3,3,3)=9 12 t(2k,0,0)^2=1200 16 t(k,k,k)^2=1296 reverse=False
+PASS: theorem-1-k3 t(6,0,0)=10 and t(3,3,3)=9
+PASS: theorem-2-k3 12 t(6,0,0)^2 > 16 t(3,3,3)^2 is False
+k 4 t(8,0,0)=12 t(4,4,4)=12 12 t(2k,0,0)^2=1728 16 t(k,k,k)^2=2304 reverse=False
+PASS: theorem-1-k4 t(8,0,0)=12 and t(4,4,4)=12
+PASS: theorem-2-k4 12 t(8,0,0)^2 > 16 t(4,4,4)^2 is False
+k 5 t(10,0,0)=14 t(5,5,5)=15 12 t(2k,0,0)^2=2352 16 t(k,k,k)^2=3600 reverse=False
+PASS: theorem-1-k5 t(10,0,0)=14 and t(5,5,5)=15
+PASS: theorem-2-k5 12 t(10,0,0)^2 > 16 t(5,5,5)^2 is False
+PASS: one-dijkstra exactly one origin Dijkstra assigned a finite time to every ball site
+PASS: reverse-bits-match computed reverse bits match the five-scale census yes,yes,no,no,no
+PASS: note-reports-times the note reports the ten computed times and the five displayed comparisons
+PASS: displayed-not-adopted the note displays the (0,1,1) scores and does not adopt them
+PASS: admissibility-unedited the current axiom memo still names Admissibility and does not contain the hop-cost rule
+PASS: claim-scope the note states the required claim_scope
+PASS: forbidden-tokens the note avoids the forbidden tokens
+PASS: uniqueness-not-required the note does not claim uniqueness of the named rule
+TOTAL: PASS=21 FAIL=0
+
+----- stderr -----
+

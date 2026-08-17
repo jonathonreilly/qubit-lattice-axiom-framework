@@ -1,0 +1,51 @@
+===== runner cache v1 =====
+runner: scripts/support_drop_why_face_k4_fails_b16_2026_08_15.py
+runner_sha256: dca496dbd6f5db21e8b58c4cfdc61f1f15c7f639c4287ea71c1df443a82f8ee5
+input_fingerprint_sha256: 0fcc8e531ec3bb6134f7f403a6dec2cfd512520cae6170b29cf8a2ee0fcf6ff2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/SUPPORT_DROP_WHY_FACE_K4_FAILS_B16_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+dijkstra_count_budget: 1
+claim_scope: Lex-first shortest paths to (8,0,0) and (4,4,0) under the named support-drop hop-cost on B_16(0) are named. Displayed, not adopted.
+PASS: audit-input-paths declared inputs are exactly the source note and the axiom memo
+PASS: audit-input-literals AUDIT_INPUT_PATHS is a static two-string literal in this runner
+PASS: ball-cardinality B_16(0) has 6017 sites and 6016 nonzero sites
+PASS: one-dijkstra exactly one Dijkstra computation is used
+PASS: finite-times both targets are reached by a finite path
+t(8,0,0)=14
+t(4,4,0)=10
+lex_first_(8,0,0): 0\to(0,-1,0)\to(1,-1,0)\to(2,-1,0)\to(3,-1,0)\to(4,-1,0)\to(5,-1,0)\to(6,-1,0)\to(7,-1,0)\to(8,-1,0)\to(8,0,0)
+hop_costs_(8,0,0): 3,1,1,1,1,1,1,1,1,3
+running_(8,0,0): 3,4,5,6,7,8,9,10,11,14
+lex_first_(4,4,0): 0\to(0,1,0)\to(1,1,0)\to(1,2,0)\to(1,3,0)\to(1,4,0)\to(2,4,0)\to(3,4,0)\to(4,4,0)
+hop_costs_(4,4,0): 3,1,1,1,1,1,1,1
+running_(4,4,0): 3,4,5,6,7,8,9,10
+last_hop_(8,0,0): (8,-1,0)->(8,0,0) nu=3 support 2->1
+last_hop_(4,4,0): (3,4,0)->(4,4,0) nu=1 support 2->2
+reverse_compare: t(8,0,0)^2/64=196/64 > t(4,4,0)^2/32=100/32 -> False; fail=True
+PASS: time-800 computed t(8,0,0)=14 is written in the note
+PASS: time-440 computed t(4,4,0)=10 is written in the note
+PASS: still-fourteen t(8,0,0) is still 14 on B_16(0)
+PASS: lex-path-800 lex-first shortest path to (8,0,0) is written in the note
+PASS: lex-path-440 lex-first shortest path to (4,4,0) is written in the note
+PASS: displayed-fail t(8,0,0)^2/64 > t(4,4,0)^2/32 fails and is written as the fail
+PASS: fail-survives-larger-ball the k=4 face fail survives the larger ball
+PASS: not-b12-leftover the named B_16(0) paths are not leftover of the named B_12 paths
+PASS: source-lattice Lattice nearest-neighbor wording is pinned in the axiom memo and the note
+PASS: source-admissibility Admissibility distribution wording and non-dynamics clause are pinned
+PASS: nu-not-admissibility the note refuses to write nu into Admissibility
+PASS: not-attach-l1 the displayed rule is not attached to L1
+PASS: displayed-not-adopted claim_scope and displayed-not-adopted wording are present
+PASS: uniqueness-not-required shortest-path uniqueness is not required and is not claimed
+PASS: forbidden-phrases forbidden phrases are absent from the note and from runner prose
+PASS: axiom-untouched the axiom memo is an input only
+TOTAL: PASS=21 FAIL=0
+
+----- stderr -----
+

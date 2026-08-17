@@ -1,0 +1,56 @@
+===== runner cache v1 =====
+runner: scripts/unequal_radius_one_bit_tick_stab_2026_08_15.py
+runner_sha256: 8911e0d67548623bfb2905304c6a5612bd4b32008e9792bd6337cb0d6af66f98
+input_fingerprint_sha256: f932693b17d11caf948dea414a33fa03597dc6381397831f53d6213929368532
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+unequal-radius one-bit lock-tick occupancy Stab
+AUDIT_INPUT_PATHS:
+  docs/UNEQUAL_RADIUS_ONE_BIT_TICK_STAB_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+G_plus=24
+uneq_unread=True
+uneq_sigma=(1, 0, 1, 0, 1, 1)
+uneq_ticks=(1, None, 1, None, 3, 2)
+b=1
+|Stab(sigma)|=2
+|Stab(sigma,t)|=1
+|Stab(sigma,b)|=1
+swapper_excluded=True
+first_breaker=(((-2, -2, -2), (-2, -2, -1), (-2, -2, 1)), (2, 1, 3), (-3, -3, -1))
+N_pair=48
+N_pair_support=4
+N_bit_ok=4
+N_ord_ok=4
+support_members=(1, 0, 2, 0, 1, 2),(1, 0, 2, 0, 2, 1),(2, 0, 1, 0, 1, 2),(2, 0, 1, 0, 2, 1)
+PASS: audit-input-paths | AUDIT_INPUT_PATHS is the required static two-string literal tuple
+PASS: source-lattice
+PASS: source-admissibility
+PASS: source-unread-qubit
+PASS: g-plus-order | proper=24
+PASS: theorem-1-lex-first-breaker | sigma=(1, 0, 1, 0, 1, 1) ticks=(1, None, 1, None, 3, 2)
+PASS: theorem-1-bit | b=1
+PASS: theorem-1-stab-orders | stab=2 bit=1
+PASS: theorem-1-swapper-excluded | swap_bit=0
+PASS: theorem-2-bit-ok | N_bit_ok=4 N_ord_ok=4
+PASS: claim-scope
+PASS: displayed-not-adopted
+PASS: l1-not-attached
+PASS: not-leftover-uneqord
+PASS: admissibility-unedited
+PASS: forbidden-phrases
+PASS: no-axiom-edit
+per_element: |Stab(σ)|, |Stab(σ,b)|, b, N_bit_ok are exact integers
+per_site: uneqrad lex-first unequal-radius breaker only
+per_mode: no spectral calculation
+per_block: 3-ball star only
+lattice_wide: checked and not executed
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

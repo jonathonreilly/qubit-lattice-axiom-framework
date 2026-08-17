@@ -1,0 +1,54 @@
+===== runner cache v1 =====
+runner: scripts/three_clause_toggle_reverse_var_b6_2026_08_15.py
+runner_sha256: 76533ed6551249e4db25b2a60cfcbfad766813c0a18f9bd2425db038cbc26533
+input_fingerprint_sha256: a3c9b326f556f9bd64daf48db7217f80808b8366a3a6cd1f7403ab5fdc838e59
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/THREE_CLAUSE_TOGGLE_REVERSE_VAR_B6_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+external_scientific_inputs: none; eight named clause toggles on B_6(0)
+framework_role: Lattice supplies Z^3 6-NN adjacency; no axiom edit
+claim_scope: Among 8 named three-clause toggles on B_6(0), reversers and the lex-first variance-minimizing reverser are reported. Displayed, not adopted.
+n_sites=377 n_nonzero=376
+dijkstra_count=8
+N_rev=2
+triple=(0, 0, 0) t_axis=4 t_diag=6 reverse=0 var=0.013502037619
+triple=(0, 0, 1) t_axis=4 t_diag=6 reverse=0 var=0.013502037619
+triple=(0, 1, 0) t_axis=6 t_diag=6 reverse=0 var=0.008260868141
+triple=(0, 1, 1) t_axis=8 t_diag=6 reverse=1 var=0.010622504917
+triple=(1, 0, 0) t_axis=6 t_diag=8 reverse=0 var=0.007375183432
+triple=(1, 0, 1) t_axis=6 t_diag=8 reverse=0 var=0.007375183432
+triple=(1, 1, 0) t_axis=8 t_diag=8 reverse=0 var=0.005489876321
+triple=(1, 1, 1) t_axis=10 t_diag=8 reverse=1 var=0.005905639029
+lex_first_min_var_reverser=(1, 1, 1) var=0.005905639029 l1_var=0.013502037619
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: eight-named-toggles the eight clause triples are exactly {0,1}^3 in lex order
+PASS: eight-dijkstras exactly eight Dijkstras ran on B_6(0)
+PASS: b6-cardinality B_6(0) is the 377-site l1 ball of radius 6
+PASS: thm1-n-rev N_rev equals 2
+PASS: thm1-reversing-triples the reversing triples are (0,1,1) at (8,6) and (1,1,1) at (10,8)
+PASS: thm1-reverse-predicate both reversers satisfy 12 t_axis^2 > 16 t_diag^2 and the others fail
+PASS: thm2-minimizer the lex-first variance-minimizing reverser is nu=(1,1,1)
+PASS: thm2-variances reported population variances match the eight-toggle census
+PASS: l1-is-zero-triple the disabled triple is the unit-cost law and is not a reverser
+PASS: note-reports-census the note reports N_rev, both reversing pairs, the minimizer, and both vars
+PASS: displayed-not-adopted triples are displayed, not written into Admissibility, and L1 is not attached
+PASS: scope-and-forbidden the bounded claim_scope is present and forbidden phrases are absent
+PASS: import-boundary-contract the import boundary and live unread sentence are source-visible
+PASS: not-leftover-of-nu-alone all eight named toggles are scored, so the census is not nu alone
+PASS: mutation-wrong-reverse the non-reverse mutation 12 t_axis^2 >= 16 t_diag^2 is rejected for (1,1,0)
+PASS: mutation-other-reverser-not-min the other reverser is not the variance minimizer
+per_element: each of the eight clause triples received one Dijkstra.
+per_site: variance uses every nonzero site of B_6(0); origin is excluded.
+per_mode: reverse is the exact integer test 12 t(4,0,0)^2 > 16 t(2,2,2)^2.
+per_block: lex order on (seed-exit, both-weights-1, support-drop) breaks var ties.
+lattice_wide: checked and not executed — only B_6(0) is scored.
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

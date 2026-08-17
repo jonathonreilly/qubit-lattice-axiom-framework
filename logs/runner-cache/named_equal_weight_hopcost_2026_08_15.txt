@@ -1,0 +1,55 @@
+===== runner cache v1 =====
+runner: scripts/named_equal_weight_hopcost_2026_08_15.py
+runner_sha256: ced39bd631cdf02c5db1ed9cebfb6e45412b5170d07cc478a0c76531b73baa25
+input_fingerprint_sha256: 7a95173977396db202442bbd59f87b8ec83b7eb3389857f997d3959f87324bf3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+external_scientific_inputs: none; B_4(0), G+, and the named weight rule are theorem hypotheses
+package_local_integrity_reads: runner source, proposed source note, and live axiom memo
+measure_boundary: exact integer path costs on the radius-4 nearest-neighbor ball
+negative_scope: the named rule is displayed, not written into Admissibility
+orbit_weights_b3: ((0, 1), (1, 0), (1, 1), (1, 2), (2, 1), (2, 2), (2, 3), (3, 2))
+named8: (3, 1, 3, 1, 1, 3, 1, 1)
+rho(3,3): 3
+extra_b4_orbit_weights: ((3, 3),)
+n_b4_sites: 129
+n_new_orbit_edges: 48
+t(4,0,0): 12
+t(3,0,0): 9
+t(1,1,1): 5
+diamond_reverses: True
+PASS: gplus-order proper cubic rotations number 24
+PASS: ball-size B_4(0) has 129 sites
+PASS: thm1-eight-orbits B_3 endpoint occupancy pairs form the eight inward-weight orbits
+PASS: thm1-reproduces-minkbest rho reproduces the minkbest 8-tuple (3,1,3,1,1,3,1,1)
+PASS: thm1-rho-33 rho names the new B_4 orbit by rho(3,3)=3
+PASS: thm1-new-orbit-edges B_4 realizes the (3,3) orbit on 48 directed edges and nine orbits total
+PASS: thm1-note-tuple the note exhibits the named rule, the 8-tuple, and rho(3,3)=3
+PASS: thm2-t400 the named filling realizes t(4,0,0)=12 on B_4(0)
+PASS: thm2-diamond diamond still reverses on (3,0,0) versus (1,1,1): times 9 and 5
+PASS: thm2-omit-equals-rho filling (3,3) by rho(3,3)=3 matches omitting that orbit
+PASS: thm2-any-cost-ge-3 any (3,3) cost at least 3 yields the same B_4 arrival table
+PASS: thm2-ge3-sharp costs 1 and 2 on (3,3) change the arrival table, so the bound 3 is sharp
+PASS: thm2-note-times the note reports t(4,0,0)=12 and the still-reversing diamond pair
+PASS: thm2-note-same-table the note states omit and any cost >=3 share the arrival table
+PASS: thm2-not-leftover the named rule is a member clause, not a per-radius leftover
+PASS: thm3-displayed-not-adopted the note reports the named rule as displayed, not adopted
+PASS: thm3-no-uniqueness uniqueness of rho is not claimed
+PASS: thm3-no-l1-law the note does not attach an ell^1 path-length law
+PASS: claim-scope claim_scope reports the named equal-weight rule versus the 8-tuple
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: forbidden-strings note, runner, and axiom avoid the dispatch-forbidden phrases
+PASS: no-axiom-cost the live axiom memo does not host a two-end occupancy hop cost
+PASS: claim-type-and-gate bounded theorem type and a passing N1-N8 gate are source-visible
+per_element: checked exactly — each directed B_4(0) edge is an 8-orbit hop or the named (3,3) orbit
+per_site: checked exactly — occupancy is the 6-bit inward front at that site
+per_mode: checked exactly — the named weight rule on the eight orbits and the new (3,3) orbit
+per_block: checked exactly — t(4,0,0) and diamond order on (3,0,0) versus (1,1,1)
+lattice_wide: checked and not executed — no Admissibility cost and no path-length law are adopted
+TOTAL: PASS=23 FAIL=0
+
+----- stderr -----
+

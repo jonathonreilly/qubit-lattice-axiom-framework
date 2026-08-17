@@ -8,13 +8,14 @@ coordinates and flipping any of them; it acts freely on the 36864 pairs made of 
 piece and one cover, giving 96 orbits of size 384, each read as a zero and one table
 over covers by pieces.
 
-This cycle asks what those 96 tables have in common. Each table splits into 48
+The finite question is what those 96 tables have in common. Each table splits into 48
 cycles of length eight whose alternating vectors span its kernel. Reducing the 96
 kernels to canonical form leaves exactly two subspaces of dimension 48, so the 96
 tables carry a two-valued colour. The two kernels span 84 and meet in the 12
 dimensional sign-anti-invariant space of the sixteen pure flips, which every table
-kills. Each kernel is a submodule for the whole group, so stacking all 48 tables of
-one colour keeps rank 144 while every cross-colour stack jumps to 180.
+kills. Over the primary field each kernel is a submodule for the whole group, so
+stacking all 48 tables of one colour keeps rank 144 while every cross-colour stack
+jumps to 180.
 
 The colour then gets a closed form: each cover has a unique non-identity fixer, a
 single flip naming one axis; each piece names the two axes whose corner counts are
@@ -23,8 +24,10 @@ the piece pair. The two colour sums are constant on a 4 by 6 grid of blocks and 
 rank 4. The cover incidence table is the entrywise sum of four orbits, three of one
 colour and one of the other, and its rank is 105.
 
-All work is exact over the integers and two fixed primes; no floating point enters
-any gate and no constant is fitted. Eight checks are rejectors or honest negatives.
+Integer identities are checked directly. Modular row-space and rank claims use the
+primary field of order 1000003; the field of order 1000033 is a replication control
+for the explicitly named gates. No floating point enters any gate and no constant is
+fitted. Reverted in-memory mutations exercise every load-bearing check family.
 
 Output: one line per gate, two summary lines, then the total line."""
 
@@ -37,6 +40,7 @@ import numpy as np
 
 PRIME = 1000003
 PRIME2 = 1000033
+AUDIT_TIMEOUT_SEC = 300
 
 T0 = time.time()
 OUT = [0]
@@ -246,6 +250,40 @@ USED = sorted(set(t for s in SOLS for t in s))
 NPI = len(USED)
 POS = dict((t, i) for i, t in enumerate(USED))
 CUT = [tuple(sorted(POS[t] for t in s)) for s in SOLS]
+
+# The generic sample makes the cover search exhaustive inside the declared candidate
+# class.  This independent exact certificate establishes that every selected cover is
+# a genuine cutting.  Every co-occurring pair of full-dimensional simplices is weakly
+# separated by an integer normal in {-1,0,1}^4, hence their strict interiors are
+# disjoint.  Each of the 24 simplices has normalized volume one and is contained in the
+# cube, so their normalized volumes sum to the cube's normalized volume 24.
+CO_PAIRS = sorted(set(pair for cutting in CUT
+                      for pair in itertools.combinations(cutting, 2)))
+SEP_NORMALS = np.array(
+    [a for a in itertools.product((-1, 0, 1), repeat=4) if any(a)],
+    dtype=np.int64,
+)
+SEP_DOTS = np.dot(np.array(CORN, dtype=np.int64), SEP_NORMALS.T)
+PIECE_VERTICES = np.array([KEPT[USED[i]] for i in range(NPI)], dtype=np.int64)
+SEP_LO = SEP_DOTS[PIECE_VERTICES].min(axis=1)
+SEP_HI = SEP_DOTS[PIECE_VERTICES].max(axis=1)
+
+
+def vertex_sets_separated(a, b):
+    """Whether one of the 80 exact integer normals weakly separates two simplices."""
+    av = SEP_DOTS[np.array(a, dtype=np.int64)]
+    bv = SEP_DOTS[np.array(b, dtype=np.int64)]
+    return bool(np.any((av.max(axis=0) <= bv.min(axis=0))
+                       | (bv.max(axis=0) <= av.min(axis=0))))
+
+
+PAIR_SEPARATED = all(
+    bool(np.any((SEP_HI[i] <= SEP_LO[j]) | (SEP_HI[j] <= SEP_LO[i])))
+    for i, j in CO_PAIRS
+)
+VOLUME_CLOSED = (SIZES == [24] and all(abs(det4(
+    [[CORN[KEPT[USED[i]][j + 1]][r] - CORN[KEPT[USED[i]][0]][r]
+      for j in range(4)] for r in range(4)])) == 1 for i in range(NPI)))
 
 # cuttings through each piece, as a bit set over cuttings
 PC = [0] * NPI
@@ -665,6 +703,11 @@ gate(NCAND == 2672 and NKEPT == 400 and FLOOR == 6 and NS == 15800
          nd(NCAND), nd(NKEPT), nd(FLOOR), nd(NS), nd(SIZES[0]), nd(NPI),
          nd(PCSET[0]), nd(SIZES[0] * NS), nd(NPI * PCSET[0])))
 
+gate(len(CO_PAIRS) == 15168 and len(SEP_NORMALS) == 80 and PAIR_SEPARATED
+     and VOLUME_CLOSED, "C0X",
+     "exact geometry: {0} co-pairs separated by {1} integer normals; each cutting has normalized volume {2}".format(
+         nd(len(CO_PAIRS)), nd(len(SEP_NORMALS)), nd(SIZES[0])))
+
 gate(NCOV == 192 and BRS == [8] and COVEXACT and BRS[0] * PCSET[0] == NS
      and len(set(CS)) == NCOV, "C1",
      "covers {0}, each of {1} pieces, each meeting every cutting exactly once, {1} x {2} = {3}".format(
@@ -716,7 +759,7 @@ SIN = all(rrank(np.vstack([KER[k], SV]), PRIME) == KDIM[0] for k in range(NORB))
 SKILL = all(not TAB[k].dot(SV.T).any() for k in range(NORB))
 gate(len(FLP) == 16 and FLPFREE and len(REPF) == 12 and SANTI and SVR == 12
      and SIN and SKILL, "C7",
-     "the {0} flips act freely with {1} piece orbits; the anti-invariant space has rank {2}, lies in every kernel, dies on all {3}".format(
+     "{0} flips act freely with {1} piece orbits; primary-field sign rank {2}, inside every kernel; killed over Z by all {3}".format(
          nd(len(FLP)), nd(len(REPF)), nd(SVR), nd(NORB)))
 
 TVR = rrank(TV, PRIME)
@@ -761,7 +804,7 @@ for kk in (I0, I1):
             if not in_span(RR, PV, v[pg], PRIME):
                 SOUT += 1
 gate(len(CUR) == NGRP and NGEN == 7 and SCHK == 672 and SOUT == 0, "C9",
-     "{0} maps generate all {1}; all {2} generator images of the {3} kernel basis vectors stay inside, {4} outside".format(
+     "{0} maps generate all {1}; at the primary prime {2} images of {3} kernel vectors stay inside, {4} outside".format(
          nd(NGEN), nd(NGRP), nd(SCHK), nd(2 * KDIM[0]), nd(SOUT)))
 
 KDROP = KER[I0][1:]
@@ -784,7 +827,7 @@ ST0 = rrank(S0, PRIME)
 ST1 = rrank(S1, PRIME)
 SING = sorted(set(rrank(TAB[k], PRIME) for k in range(NORB)))
 gate(S0.shape[0] == 9216 and ST0 == 144 and ST1 == 144 and SING == [144], "C11",
-     "stacking either colour gives {0} rows of rank {1}, the rank of every one of the {2} single tables".format(
+     "at the primary prime, either colour stacks to {0} rows of rank {1}, equal to all {2} single-table ranks".format(
          nd(S0.shape[0]), nd(ST0), nd(NORB)))
 
 XR = set()
@@ -802,7 +845,7 @@ for IXC in (IX0, IX1):
             SR.add(rrank(np.vstack([TAB[IXC[u]], TAB[IXC[w]]]), PRIME))
 gate(XR == set([180]) and NX == 2304 and NPI - 180 == MT
      and SR == set([144]) and NSP == 2256, "C12",
-     "all {0} cross-colour stacks have rank {1} = {2} - {3}, while all {4} same-colour pairs stay at {5}".format(
+     "at the primary prime, {0} cross stacks rank {1} = {2} - {3}; {4} same-colour pairs stay at {5}".format(
          nd(NX), nd(180), nd(NPI), nd(MT), nd(NSP), nd(144)))
 
 JALL = np.ones((NCOV, NPI), dtype=np.int64)
@@ -833,10 +876,11 @@ gate(COVB == 0 and CBAD == 382, "C14",
 
 RA = [rrank(A, q) for q in (PRIME, PRIME2)]
 RB = [rrank(B, q) for q in (PRIME, PRIME2)]
-RAB = rrank(np.vstack([A, B]), PRIME)
-gate(RA == [4, 4] and RB == [4, 4] and NPI - RA[0] == 188 and RAB == 4, "C15",
+RAB = [rrank(np.vstack([A, B]), q) for q in (PRIME, PRIME2)]
+gate(RA == [4, 4] and RB == [4, 4] and NPI - RA[0] == 188
+     and RAB == [4, 4], "C15",
      "rank A = rank B = {0} at both primes, nullity {1}, and A stacked on B still measures {2}".format(
-         nd(RA[0]), nd(NPI - RA[0]), nd(RAB)))
+         nd(RA[0]), nd(NPI - RA[0]), nd(RAB[0])))
 
 AK = all(not X.dot(KER[k].T).any() for X in (A, B) for k in (I0, I1))
 CMISS = sorted(set(int((CTRL.dot(KER[k].T) != 0).any(axis=0).sum()) for k in (I0, I1)))
@@ -887,9 +931,11 @@ PCM = sorted(set(int(v) for v in PATA.sum(axis=0))
              | set(int(v) for v in PATB.sum(axis=0)))
 PRK = sorted(set([rank_modp(PATA, PRIME), rank_modp(PATB, PRIME),
                   rank_modp(PATA, PRIME2), rank_modp(PATB, PRIME2)]))
+PATDET = abs(det4(PATA[:, :4].tolist()))
 gate(PONE == [12] and PRS == [3] and PCM == [2] and PRK == [4]
+     and PATDET == 2
      and np.array_equal(PATA + PATB, np.ones((4, 6), dtype=np.int64)), "C18",
-     "each {0} by {1} pattern has {2} ones of {3}, row sums {4}, column sums {5}, rank {6} at both primes, and the two are complementary".format(
+     "each {0} by {1} pattern has {2}/{3} ones, row sums {4}, column sums {5}, exact rank {6} from a determinant-2 minor".format(
          nd(PATA.shape[0]), nd(PATA.shape[1]), nd(PONE[0]),
          nd(PATA.shape[0] * PATA.shape[1]), nd(PRS[0]), nd(PCM[0]), nd(PRK[0])))
 
@@ -961,7 +1007,7 @@ for i in range(NPI):
     LB2.add(tuple(sorted(bin(DESC[e][1]).count("1")
                          for e in range(NGRP) if e != IDG and PERM[e][i] == i)))
 gate(len(LB1) == 1 and len(LB2) == 3, "C24",
-     "honest negative: the adjacent-corner count gives {0} label and the piece fixer weight gives {1}, short of the {2} classes".format(
+     "bounded fibres: the adjacent-corner statistic is constant and fixer weight has {1} fibres; the geometric label has {2}".format(
          nd(len(LB1)), nd(len(LB2)), nd(len(PPRP))))
 
 EF1 = sum(1 for e in range(NGRP) for j in range(NCOV)
@@ -1001,7 +1047,7 @@ gate(len(IORB) == 4 and np.array_equal(INC, ISUM)
 IST = rrank(np.vstack([TAB[k] for k in IORB]), PRIME)
 IR = [rrank(INC, q) for q in (PRIME, PRIME2)]
 gate(IST == 180 and IR == [105, 105] and NPI - IR[0] == 87, "C29",
-     "the stack of those {0} has rank {1} while their sum has rank {2} at both primes, and {3} - {2} = {4}".format(
+     "at the primary prime their stack ranks {1}; their sum ranks {2} at both primes, and {3} - {2} = {4}".format(
          nd(len(IORB)), nd(IST), nd(IR[0]), nd(NPI), nd(NPI - IR[0])))
 
 PROF = {}
@@ -1013,8 +1059,115 @@ for j in range(NCOV):
         PROF.setdefault(pf, set()).add(GCOL[WHICH[i * NCOV + j]])
 BOTH = sum(1 for v in PROF.values() if len(v) == 2)
 gate(len(PROF) == 25 and BOTH == 21, "C30",
-     "honest negative: the shared-corner profile takes {0} values, {1} of them carrying both colours, so it cannot fix the colour".format(
+     "bounded fibres: the shared-corner profile takes {0} values and {1} fibres contain both observed colours".format(
          nd(len(PROF)), nd(BOTH)))
+
+# ------------------------------------------------------------------
+# 6. reverted in-memory mutations for each load-bearing family
+# ------------------------------------------------------------------
+
+# Geometry: the generic sample misses this exact overlap.  The point is strictly
+# interior to both simplices, and the exact separator predicate rejects the pair.
+BAD_GEO_A = KDX[(0, 1, 2, 4, 8)]
+BAD_GEO_B = KDX[(0, 1, 3, 7, 15)]
+BAD_POINT = (FR(4, 11), FR(3, 11), FR(2, 11), FR(1, 11))
+
+
+def strict_inside(t, point):
+    return all(sum(FR(a[k]) * point[k] for k in range(4)) + FR(b) > 0
+               for a, b in BARY[t][2])
+
+
+BAD_SAMPLE_DISJOINT = not (MASK[BAD_GEO_A] & MASK[BAD_GEO_B])
+BAD_INTERIOR_OVERLAP = strict_inside(BAD_GEO_A, BAD_POINT) \
+    and strict_inside(BAD_GEO_B, BAD_POINT)
+GEOMETRY_MUT_REJECT = (PAIR_SEPARATED and BAD_SAMPLE_DISJOINT
+                       and BAD_INTERIOR_OVERLAP
+                       and not vertex_sets_separated(KEPT[BAD_GEO_A],
+                                                     KEPT[BAD_GEO_B]))
+
+# Group/stabilizer: duplicate one image of a copied non-identity stabilizer.
+def action_gate(p):
+    return (sorted(p) == list(range(NPI)) and p[0] == 0
+            and all(p[p[i]] == i for i in range(NPI)))
+
+
+BAD_ACTION = list(PERM[EPP])
+BAD_ACTION[1] = BAD_ACTION[2]
+GROUP_MUT_REJECT = action_gate(PERM[EPP]) and not action_gate(BAD_ACTION)
+
+# Cycle/kernel: change one nonzero coordinate of a copied alternating basis.
+def kernel_gate(k, basis):
+    return (basis.shape == (48, NPI) and not TAB[k].dot(basis.T).any()
+            and rrank(basis, PRIME) == 48)
+
+
+BAD_KERNEL = KER[I0].copy()
+BAD_KERNEL[0, int(np.nonzero(BAD_KERNEL[0])[0][0])] += 1
+KERNEL_MUT_REJECT = kernel_gate(I0, KER[I0]) and not kernel_gate(I0, BAD_KERNEL)
+
+# Meet/submodule and stack: independently corrupt copied sign and stack data.
+BAD_SIGN = SV.copy()
+BAD_SIGN[0, int(np.nonzero(BAD_SIGN[0])[0][0])] += 1
+MEET_MUT_REJECT = (SKILL and not all(not TAB[k].dot(BAD_SIGN.T).any()
+                                     for k in range(NORB)))
+
+GOOD_MODULE_IMAGE = KER[I0][0][list(PERM[GENS[0]])]
+BAD_MODULE_IMAGE = GOOD_MODULE_IMAGE.copy()
+BAD_MODULE_IMAGE[int(np.nonzero(BAD_MODULE_IMAGE)[0][0])] += 1
+MODULE_MUT_REJECT = (in_span(RK1[I0][0], RK1[I0][1], GOOD_MODULE_IMAGE,
+                             PRIME)
+                     and not in_span(RK1[I0][0], RK1[I0][1],
+                                     BAD_MODULE_IMAGE, PRIME))
+
+BAD_STACK = S0.copy()
+BAD_STACK[0, 0] = 1 - BAD_STACK[0, 0]
+STACK_MUT_REJECT = (not S0.dot(KER[I0].T).any()
+                    and bool(BAD_STACK.dot(KER[I0].T).any()))
+
+# Block/axis/pair label: move one copied piece to a shifted pair and rerun the
+# class-size, block, and equivariance predicates.
+def label_gate(pairs):
+    cls = {}
+    for i, pair in enumerate(pairs):
+        cls.setdefault(pair, []).append(i)
+    if len(cls) != 6 or sorted(len(v) for v in cls.values()) != [32] * 6:
+        return False
+    if set(tuple(v) for v in cls.values()) != CLSET:
+        return False
+    return all(pairs[PERM[e][i]] == tuple(sorted(AXM[e][a] for a in pairs[i]))
+               for e in range(NGRP) for i in range(NPI))
+
+
+BAD_LABEL = list(PPR)
+BAD_LABEL[0] = tuple(sorted(((a + 1) & 3) for a in BAD_LABEL[0]))
+LABEL_MUT_REJECT = label_gate(PPR) and not label_gate(BAD_LABEL)
+
+# Incidence/rank family: flip one copied incidence entry and rerun the exact
+# orbit-decomposition and regularity predicate used before the modular rank read.
+def incidence_gate(X):
+    return (np.array_equal(X, ISUM)
+            and sorted(set(int(v) for v in X.sum(axis=0))) == [8]
+            and sorted(set(int(v) for v in X.sum(axis=1))) == [8])
+
+
+BAD_INCIDENCE = INC.copy()
+BAD_INCIDENCE[0, 0] = 1 - BAD_INCIDENCE[0, 0]
+INCIDENCE_MUT_REJECT = (incidence_gate(INC)
+                        and not incidence_gate(BAD_INCIDENCE))
+
+gate(GEOMETRY_MUT_REJECT, "M0",
+     "geometry mutation: a sample-disjoint pair sharing (4,3,2,1)/11 is rejected by exact separation")
+gate(GROUP_MUT_REJECT, "M1",
+     "group mutation: a copied stabilizer with one duplicate image fails bijection and involution")
+gate(KERNEL_MUT_REJECT, "M2",
+     "kernel mutation: one changed copied cycle-vector entry fails integer annihilation")
+gate(MEET_MUT_REJECT and MODULE_MUT_REJECT and STACK_MUT_REJECT, "M3",
+     "meet, module, and stack mutations: copied sign, image, and table corruptions all fail their predicates")
+gate(LABEL_MUT_REJECT, "M4",
+     "label mutation: one shifted copied piece label fails block size and equivariance")
+gate(INCIDENCE_MUT_REJECT, "M5",
+     "incidence mutation: one flipped copied entry fails orbit decomposition and regularity")
 
 emit("two kernels of dim {0} meeting in {1}, join {2}, either colour stack rank {3}, colour sums rank {4}, incidence rank {5}".format(
     nd(KDIM[0]), nd(MT), nd(JN[0]), nd(ST0), nd(RA[0]), nd(IR[0])))

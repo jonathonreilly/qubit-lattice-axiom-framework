@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_time_dressing_adjointness_wall_2026_08_17.py
+runner_sha256: 18f5e27fc1e40141d0c1be8bb49710f18996eab621d46e2471b7b20bdbce0a8d
+input_fingerprint_sha256: 6ca1ac2414d3884d8845021addf12e74416d46708a4db94825527bd01562cb91
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 175.01
+status: ok
+----- stdout -----
+[PASS] A-authority: Block 125 note/runner/cache and ancestors 124--103 are pinned
+[PASS] B-the-visibility: both time families are genuinely distinct; family A has span rank 8 per momentum
+[PASS] C-family-a-descent-empty: the family-A leakage map has rank 8 and kernel zero at every momentum in both fixtures
+[PASS] D-the-descending-member: family B at k=0 has rank 7, a one-dimensional nonzero descending kernel, and nonzero quotient compression
+[PASS] E-the-adjointness-wall: O* has a nonzero K_Theta residual and the joint solve is empty in A, B, their union span, and the nine-dimensional two-time class
+[PASS] F-the-footing-correction: leakage injectivity is false as a class claim; k=0 ranks are lift-dependent 8 versus 7, so the wall rests on adjointness alone
+[PASS] G-the-isolation-statement: descent and nonzero compression are achieved while their conjunction with adjointness is empty: adjointness is the single displayed blocker
+[PASS] H-scope: bounded dual-family/correction/isolation/N1--N8/W1/N5 firewalls and runtime bound are present
+FAMILY A: M=C S_AP C^T on the eight cut modes, M^8=-I; J_A(k) is the t-first routed temporal density at (slice 7,x=0); A_k=(M^m J_A(k) M^-m)_{m=0..3} plus (Theta_k M^m J_A(k) M^-m Theta_k)_{m=0..3}.
+FAMILY B: SHIFT is the isolated one-super-step mode lift; J_B(k) is the t-first routed temporal density at (slice 2,x=0); B_k=(SHIFT_k^m J_B(k) SHIFT_k^-m)_{m=0..3} plus (Theta_k SHIFT_k^m J_B(k) SHIFT_k^-m Theta_k)_{m=0..3}.
+RANKS: A leakage(k=0..3)=((8, 8, 8, 8), (8, 8, 8, 8)); B leakage(k=0..3)=((7, 7, 7, 7), (7, 7, 7, 7)).
+O* c=5/13: weights=f[7]=1,all_nonzero=True,sha=dd7bc2dbbea0c842; nonzero=True; leakage_zero=True; quotient_compression=nonzero=True,sha=6bcf801b74a2fa10.
+O* c=3/5: weights=f[7]=1,all_nonzero=True,sha=8748faa48d81fbb6; nonzero=True; leakage_zero=True; quotient_compression=nonzero=True,sha=df9dc97fda6c8819.
+ADJOINTNESS RESIDUAL c=5/13: R[7,0] nonzero; sha=933cfc4b4b1a0d08.
+ADJOINTNESS RESIDUAL c=3/5: R[7,0] nonzero; sha=efe0291b6783be38.
+EXHAUSTION: aggregate joint ranks A/B/union/two-time=((8, 8, 16, 9), (8, 8, 16, 9)); constraint sha=2cb1feddafe43222.
+N5: per_element: time-visibility, monodromy-rank-eight, shift-rank-seven, descending-kernel, zero-leakage, nonzero-compression, adjointness-residual, joint-emptiness, and footing-correction certificates are checked
+per_site: one Grassmann mode per fine site on the antiperiodic reflection torus
+per_mode: at zero momentum the shift-conjugated rank-seven leakage map has a one-dimensional kernel with identically vanishing leakage and nonzero quotient compression, but its reflection-adjointness residual is nonzero
+per_block: both displayed time-conjugation families are quotient-visible; the monodromy family has empty descent, the shift family has one genuine descending member, and no nonzero-compression member satisfies descent and reflection-adjointness jointly in either family, their union, or the displayed two-time class
+lattice_wide: checked and not executed — reflection-compatible observable classes, Q-modification, the naturality classification, the curved-carrier dependency, the actual ADM/history transporter completion, joint gravity, the gravity constraint quotient beyond the displayed carrier, Records, audit retention, and TOE closure remain open
+RESULT: the time direction is visible and descent is achievable — a current-derived operator reaches the quotient for the first time — but reflection-adjointness blocks every displayed member, so the observable wall is exactly the reflection structure
+DECISION_CUT: pose reflection-compatible observable classes and the naturality/curved work; reject further smearing constructions
+TOE: zero obligation retirement, retained-positive end-to-end theory count remains zero, and no TOE percentage moves
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

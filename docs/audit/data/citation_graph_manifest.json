@@ -1,6 +1,6 @@
 {
- "edge_count": 15985,
- "node_count": 5554,
+ "edge_count": 15989,
+ "node_count": 5555,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -496,6 +496,10 @@
   },
   "admissibility_dirac_kahler_spatial_dressing_invisibility_bounded_theorem_note_2026-08-17": {
    "deps_hash": "4f42ef355ca6",
+   "out_degree": 4
+  },
+  "admissibility_dirac_kahler_time_dressing_adjointness_wall_bounded_theorem_note_2026-08-17": {
+   "deps_hash": "4741c3dcff39",
    "out_degree": 4
   },
   "admissibility_dirac_kahler_torus_wrap_defect_bounded_theorem_note_2026-08-16": {

@@ -1,0 +1,50 @@
+===== runner cache v1 =====
+runner: scripts/support_drop_t6axis_path_b8_2026_08_15.py
+runner_sha256: e29308ac9ef0b6a02ee93b6423913e1284e5ceb2caace26d25b32e3a60c1fe9e
+input_fingerprint_sha256: 95b75189b9c607e9eae426297ac4cca7ef1534d882e0c54291b6db7406786f6a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/SUPPORT_DROP_T6AXIS_PATH_B8_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+claim_scope: A shortest 0→(6,0,0) path under the named support-drop hop-cost on B_8(0) is exhibited and sums to 12. Displayed, not adopted.
+PASS: audit-input-paths declared inputs are the source note and the current axiom memo
+PASS: audit-input-literal AUDIT_INPUT_PATHS is a static string-literal tuple
+PASS: claim-scope note claim_scope matches the exhibited-path statement
+PASS: displayed-not-adopted the rule is displayed, not adopted
+PASS: not-in-admissibility ν is not written into Admissibility
+PASS: not-attach-l1 the displayed rule is not attached to L1
+PASS: uniqueness-not-claimed uniqueness among hop-costs is not claimed
+PASS: no-axiom-edit note records hypothetical axiom status no edit
+PASS: forbidden-absent forbidden phrases are absent from the source note
+n_sites_b8 833
+n_sites_b6 377
+t_b8(6,0,0) 12
+t_b6(6,0,0) 14
+lex_first_path (0,0,0) → (0,-1,0) → (1,-1,0) → (2,-1,0) → (3,-1,0) → (4,-1,0) → (5,-1,0) → (6,-1,0) → (6,0,0)
+hop_costs 3, 1, 1, 1, 1, 1, 1, 3
+hop_sum 12
+max_l1 7
+dijkstra_calls 2
+PASS: ball-sizes B_8(0) has 833 sites and B_6(0) has 377 sites
+PASS: t-b8 t(6,0,0) on B_8(0) equals 12
+PASS: t-b6 t(6,0,0) on B_6(0) equals 14
+PASS: valid-walk the exhibited walk is a nearest-neighbor walk in B_8(0) from 0 to (6,0,0)
+PASS: hop-costs-match recorded hop-costs equal ν on successive sites and sum to 12
+PASS: shortest the walk cost equals the Dijkstra arrival, so the walk is shortest
+PASS: leaves-b6 some site of the walk has |v|_1 > 6
+PASS: lex-first-beats-later-shortest a later cost-12 walk exists and is strictly lex-later
+PASS: lex-smaller-is-not-shortest a lex-smaller walk that starts toward -x costs more than 12
+PASS: note-records-path note records the lex-first sites and hop-costs
+PASS: note-records-arrivals note records t=12 on B_8(0) and displayed t=14 on B_6(0)
+PASS: not-leftover-arrival the walk is not leftover of the arrival number
+PASS: seed-and-axis-clauses seed-exit and both-weights-1 cost 3; support increase costs 1
+PASS: axiom-untouched the axiom memo is an input only and still names the four axioms
+TOTAL: PASS=23 FAIL=0
+
+----- stderr -----
+

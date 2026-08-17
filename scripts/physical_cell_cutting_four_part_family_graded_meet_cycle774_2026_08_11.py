@@ -1,4 +1,4 @@
-"""The four-part family of the cell cutting, and how much of its graded meet is free.
+"""A bounded four-part family and its sign-character kernel measurements.
 
 Standalone exact runner. It rebuilds the unit four-cube cell object from scratch:
 the sixteen corners, the five-corner unit-determinant pieces at the adjacency cost
@@ -8,21 +8,16 @@ coordinates and flipping any of them; it acts freely on the 36864 pairs made of 
 piece and one cover, giving 96 orbits of size 384, each read as a zero and one table
 over covers by pieces.
 
-The sixteen pure flips form a subgroup that acts freely on the 192 pieces with 12
-orbits, so each of the 16 sign patterns of the four axes carries a block of dimension
-12, and the 16 blocks fill all 192 piece coordinates. When the kernel of a table is
-held by the flips, its rank is the sum of its 16 per-block ranks. This cycle 774 run
-uses that identity to ask how much of the agreement between two kernels of the same
-dimension is free. The 96 tables are pairwise disjoint and sum to the all-ones table,
-so every 4-subset of them is a zero-one 8-regular member of a family of 3321960, and
-the cover incidence is one member. Every table annihilates the whole all-signs block,
-so 12 of the 33 shared kernel dimensions cost nothing; the per-block meet is 3, 0, 3,
-0, 12 by pattern weight, and the two kernels are transverse at the odd weights. A
-sample of 460 members shows that this transversality is common, and that the graded
-kernel at weight three does not pin the cover incidence inside the family.
+The sixteen pure flips act freely on the pieces, producing sixteen integral character
+blocks of dimension twelve. Over the two named odd prime fields the incidence member
+and the lexicographically selected comparison member have nullity 87, meet dimension
+33, and per-weight meet profile 3, 0, 3, 0, 12. The all-signs block is annihilated by
+every orbit table as an exact integer identity. A declared deterministic 460-member
+sample supplies selected-weight-3 kernel multiplicities and transversality counts.
 
-All work is exact over the integers and two fixed primes; no floating point enters any
-gate and no constant is fitted. Three checks are rejectors and six are honest negatives.
+All scientific gates use integer, rational, or named finite-field arithmetic. The
+shifted grid is used only to enumerate candidates; exact simplex volumes and exact
+integer separating hyperplanes certify the resulting continuous cuttings.
 
 Output: one line per gate, one summary line, a resource line, then the total line."""
 
@@ -35,6 +30,7 @@ import numpy as np
 
 PRIME = 1000003
 PRIME2 = 1000033
+AUDIT_TIMEOUT_SEC = 300
 
 T0 = time.time()
 OUT = [0]
@@ -77,6 +73,23 @@ def popc(x):
 
 def yn(b):
     return "yes" if b else "no"
+
+
+def is_prime(n):
+    """Deterministic trial-division certificate for the two small field moduli."""
+    if n < 2 or n % 2 == 0:
+        return n == 2
+    d = 3
+    while d * d <= n:
+        if n % d == 0:
+            return False
+        d += 2
+    return True
+
+
+FIELDS_OK = PRIME != PRIME2 and is_prime(PRIME) and is_prime(PRIME2)
+if not FIELDS_OK:
+    raise ValueError("field moduli must be distinct primes")
 
 
 # ------------------------------------------------------------------
@@ -204,6 +217,7 @@ for (v0, Ci, rows) in BARY:
     MASK.append(bits)
 
 UNIV = (1 << NPTS) - 1
+MASK_VISIBLE = len(MASK) == NKEPT and all(bits != 0 for bits in MASK)
 
 # ------------------------------------------------------------------
 # 1c. the cuttings
@@ -239,11 +253,73 @@ def cover_search(cov, chosen):
 cover_search(0, [])
 NS = len(SOLS)
 SIZES = sorted(set(len(s) for s in SOLS))
+SOLS_UNIQUE = len(set(SOLS)) == NS
+
+
+def mask_search_certificate(masks, sols):
+    """Every emitted candidate is a unique, disjoint full shifted-mask cover."""
+    if len(masks) != NKEPT or any(bits == 0 for bits in masks):
+        return False
+    if len(sols) != 15800 or len(set(sols)) != len(sols):
+        return False
+    for sol in sols:
+        if len(sol) != 24 or len(set(sol)) != 24:
+            return False
+        cov = 0
+        for t in sol:
+            if t < 0 or t >= len(masks) or cov & masks[t]:
+                return False
+            cov |= masks[t]
+        if cov != UNIV:
+            return False
+    return True
+
+
+MASK_SEARCH_OK = mask_search_certificate(MASK, SOLS)
 
 USED = sorted(set(t for s in SOLS for t in s))
 NPI = len(USED)
 POS = dict((t, i) for i, t in enumerate(USED))
 CUT = [tuple(sorted(POS[t] for t in s)) for s in SOLS]
+
+
+def piece_det_num(S):
+    v0 = CORN[S[0]]
+    return abs(det4([[CORN[S[j + 1]][r] - v0[r] for j in range(4)]
+                     for r in range(4)]))
+
+
+KEPT_DET = [piece_det_num(S) for S in KEPT]
+VOLUME_OK = (all(x == 1 for x in KEPT_DET)
+             and all(sum(KEPT_DET[t] for t in sol) == 24 for sol in SOLS))
+
+# Exact continuous certificate.  Each pair of full-dimensional simplices that
+# co-occurs in a selected cutting is weakly separated by a nonzero normal from
+# {-1,0,1}^4.  Their interiors are therefore disjoint.  The 24 normalized unit
+# volumes equal the normalized volume 24 of [0,1]^4, so their union is the cube.
+CO_PAIRS = sorted(set(pair for cutting in CUT
+                      for pair in itertools.combinations(cutting, 2)))
+SEP_NORMALS = np.array(
+    [a for a in itertools.product((-1, 0, 1), repeat=4) if any(a)],
+    dtype=np.int64,
+)
+SEP_DOTS = np.dot(np.array(CORN, dtype=np.int64), SEP_NORMALS.T)
+PIECE_VERTICES = np.array([KEPT[USED[i]] for i in range(NPI)], dtype=np.int64)
+SEP_LO = SEP_DOTS[PIECE_VERTICES].min(axis=1)
+SEP_HI = SEP_DOTS[PIECE_VERTICES].max(axis=1)
+PAIR_SEPARATED = all(
+    bool(np.any((SEP_HI[i] <= SEP_LO[j]) | (SEP_HI[j] <= SEP_LO[i])))
+    for i, j in CO_PAIRS
+)
+
+
+def continuous_cut_certificate(detnums, separated):
+    return (len(detnums) == NKEPT and all(x == 1 for x in detnums)
+            and all(sum(detnums[t] for t in sol) == 24 for sol in SOLS)
+            and len(CO_PAIRS) == 15168 and len(SEP_NORMALS) == 80 and separated)
+
+
+CONTINUOUS_CUT_OK = continuous_cut_certificate(KEPT_DET, PAIR_SEPARATED)
 
 # cuttings through each piece, as a bit set over cuttings
 PC = [0] * NPI
@@ -670,6 +746,15 @@ def blockbasis(s, p):
     return BBC[key]
 
 
+def blockbasis_int(s):
+    """The same character basis over the integers, with literal signs."""
+    B = np.zeros((len(REPF), NPI), dtype=np.int64)
+    for t, i0 in enumerate(REPF):
+        for u in range(NFL):
+            B[t, PERM[FLIPS[u]][i0]] = 1 if (popc(s & FW[u]) & 1) == 0 else -1
+    return B
+
+
 def blockrank(X, s, p):
     """Rank of X restricted to the block of s, as the rank of the product of X
     with the transpose of the block basis."""
@@ -850,11 +935,17 @@ TCV = sum(1 for j in range(NCOV)
 ALLS = [s for s in range(16) if WT[s] == 4][0]
 ASD = rrank(blockbasis(ALLS, PRIME), PRIME)
 TABK = sorted(set(blockker(TAB[k], ALLS, PRIME).shape[0] for k in range(NORB)))
+ALLSB_INT = blockbasis_int(ALLS)
+ALLS_INTEGER_OK = all(not TAB[k].dot(ALLSB_INT.T).any() for k in range(NORB))
 
 HOLDI = all(np.array_equal(INC[list(CPERM[e])][:, list(PERM[e])], INC)
             for e in FLIPS)
 HOLDT = all(np.array_equal(TWIN[list(CPERM[e])][:, list(PERM[e])], TWIN)
             for e in FLIPS)
+HOLDFULLI = all(np.array_equal(INC[list(CPERM[e])][:, list(PERM[e])], INC)
+                for e in range(NGRP))
+HOLDFULLT = all(np.array_equal(TWIN[list(CPERM[e])][:, list(PERM[e])], TWIN)
+                for e in range(NGRP))
 
 BKI = {}
 BKT = {}
@@ -955,6 +1046,11 @@ def quotient(X):
 
 QI = quotient(INC)
 QT = quotient(TWIN)
+QUOTIENT_INPUT_OK = (QI.shape == (24, 12) and QT.shape == (24, 12)
+                     and entset(QI) == [0, 2] and entset(QT) == [0, 2]
+                     and not np.any(QI % 2) and not np.any(QT % 2))
+if not QUOTIENT_INPUT_OK:
+    raise ValueError("quotient entries must be exactly even before halving")
 ROWI = [tuple(int(v) for v in QI[a]) for a in range(QI.shape[0])]
 ROWT = [tuple(int(v) for v in QT[a]) for a in range(QT.shape[0])]
 MULI = sorted(set(ROWI.count(r) for r in ROWI))
@@ -972,6 +1068,8 @@ KSUP = [sorted(i for i, x in enumerate(v) if x) for v in KBI]
 KFLAT = [i for s in KSUP for i in s]
 KZERO = all(all(sum(int(HI[rr][c]) * v[c] for c in range(HI.shape[1])) == 0
                 for rr in range(HI.shape[0])) for v in KBI)
+KZERO_T = all(all(sum(int(HT[rr][c]) * v[c] for c in range(HT.shape[1])) == 0
+                  for rr in range(HT.shape[0])) for v in KBI)
 PM2 = sorted(set((v.count(1), v.count(-1)) for v in KBI))
 
 NKI = nullbasis(HI, PRIME)
@@ -1068,6 +1166,100 @@ MAXM = max(CAN.values())
 INCR = CAN.get(CI3, 0)
 TWNR = CAN.get(CT3, 0)
 
+
+# ------------------------------------------------------------------
+# 6b. production predicates and targeted one-fault mutations
+# ------------------------------------------------------------------
+
+
+def orbit_table_certificate(tables):
+    if len(tables) != 96:
+        return False
+    if any(entset(M) != [0, 1] or rowset(M) != [2] or colset(M) != [2]
+           for M in tables):
+        return False
+    return np.array_equal(sum(tables), ONES)
+
+
+def allsign_certificate(tables, basis):
+    return all(not M.dot(basis.T).any() for M in tables)
+
+
+def rank_meet_certificate(X, Y):
+    for q in (PRIME, PRIME2):
+        kx = nullbasis(X, q)
+        ky = nullbasis(Y, q)
+        if kx.shape[0] != 87 or ky.shape[0] != 87 or meetdim(kx, ky, q) != 33:
+            return False
+    return True
+
+
+def quotient_certificate(Q):
+    if Q.shape != (24, 12) or entset(Q) != [0, 2] or np.any(Q % 2):
+        return False
+    rows = [tuple(int(v) for v in Q[a]) for a in range(Q.shape[0])]
+    uniq = sorted(set(rows))
+    if len(uniq) != 12 or sorted(set(rows.count(r) for r in rows)) != [2]:
+        return False
+    half = np.array([[v // 2 for v in r] for r in uniq], dtype=np.int64)
+    return entset(half) == [0, 1] and rowset(half) == [4] and colset(half) == [4]
+
+
+def selector_certificate(sel):
+    return (sel == [k for k in range(NORB) if k not in IORB][:4]
+            and len(sel) == len(set(sel)) == 4 and not set(sel) & set(IORB))
+
+
+def sample_certificate(raw, unique, canon):
+    dup = sorted((m, n) for m, n in
+                 ((m, raw.count(m)) for m in sorted(set(raw))) if n > 1)
+    return (len(raw) == 461 and len(unique) == 460
+            and dup == [(tuple(TWINI), 2)]
+            and len(canon) == 130 and max(canon.values()) == 27
+            and canon.get(CI3, 0) == 13 and canon.get(CT3, 0) == 2)
+
+
+OBJECT_CERT_OK = (MASK_VISIBLE and SOLS_UNIQUE and MASK_SEARCH_OK and VOLUME_OK
+                  and CONTINUOUS_CUT_OK)
+ORBIT_TABLE_OK = orbit_table_certificate(TAB)
+RANK_MEET_OK = rank_meet_certificate(INC, TWIN)
+QUOTIENT_OK = quotient_certificate(QI) and quotient_certificate(QT)
+SELECTOR_OK = selector_certificate(TWINI)
+SAMPLE_OK = sample_certificate([tuple(sorted(m)) for m in SAMP], UNIQ, CAN)
+
+BAD_MASKS = list(MASK)
+BAD_MASKS[0] = 0
+MUT_MASK = not mask_search_certificate(BAD_MASKS, SOLS)
+BAD_DETS = list(KEPT_DET)
+BAD_DETS[0] = 2
+MUT_GEOMETRY = not continuous_cut_certificate(BAD_DETS, PAIR_SEPARATED)
+BAD_TABLES = list(TAB)
+BAD_TABLES[0] = TAB[0].copy()
+BAD_TABLES[0][0, 0] ^= 1
+MUT_ORBIT = not orbit_table_certificate(BAD_TABLES)
+BAD_ALLS = ALLSB_INT.copy()
+BAD_ALLS[0, 0] *= -1
+MUT_ALLSIGN = not allsign_certificate(TAB, BAD_ALLS)
+BAD_INC = INC.copy()
+BAD_INC[0, 0] ^= 1
+MUT_RANK_MEET = not rank_meet_certificate(BAD_INC, TWIN)
+BAD_QT = QT.copy()
+BAD_QT[0, 0] = 1
+MUT_QUOTIENT = not quotient_certificate(BAD_QT)
+MUT_SELECTOR = not selector_certificate(OUTI[1:5])
+BAD_SAMPLE = [tuple(sorted(m)) for m in SAMP] + [tuple(TWINI)]
+MUT_SAMPLE_DUP = not sample_certificate(BAD_SAMPLE, UNIQ, CAN)
+BAD_CAN = dict(CAN)
+BAD_CAN[CI3] = BAD_CAN[CI3] + 1
+MUT_SAMPLE_CANON = not sample_certificate([tuple(sorted(m)) for m in SAMP], UNIQ, BAD_CAN)
+MUT_PRIME = not is_prime(PRIME + 2)
+MUT_REPEAT = not (entset(RPT) == [0, 1] and rowset(RPT) == [8] and colset(RPT) == [8])
+MUT_FIFTH = not (entset(FIVE) == [0, 1] and rowset(FIVE) == [8] and colset(FIVE) == [8])
+MUT_BLOCK = HOLDN != NFL or SWB != SWK
+MUTATIONS = [MUT_MASK, MUT_GEOMETRY, MUT_ORBIT, MUT_ALLSIGN, MUT_RANK_MEET,
+             MUT_QUOTIENT, MUT_SELECTOR, MUT_SAMPLE_DUP, MUT_SAMPLE_CANON,
+             MUT_PRIME, MUT_REPEAT, MUT_FIFTH, MUT_BLOCK]
+
 # ------------------------------------------------------------------
 # 7. the gates
 # ------------------------------------------------------------------
@@ -1076,10 +1268,14 @@ NSLOT = NS * SIZES[0]
 NSLOT2 = NPI * PCSET[0]
 gate(NCAND == 2672 and NKEPT == 400 and FLOOR == 6 and NS == 15800
      and SIZES == [24] and NPI == 192 and PCSET == [1975] and GENERIC
-     and NSLOT == 379200 and NSLOT2 == 379200, "E0",
+     and NSLOT == 379200 and NSLOT2 == 379200 and MASK_SEARCH_OK, "E0",
      "the cell has {0} unit-determinant subsets, {1} at cost floor {2}, {3} cuttings of {4}, {5} pieces in {6} each, {7} slots both ways".format(
          nd(NCAND), nd(NKEPT), nd(FLOOR), nd(NS), nd(SIZES[0]), nd(NPI),
          nd(PCSET[0]), nd(NSLOT)))
+
+gate(OBJECT_CERT_OK and len(CO_PAIRS) == 15168 and len(SEP_NORMALS) == 80,
+     "E0G", "exact masks, 24 unit volumes, and {0} co-occurring pairs with {1} integer normals certify continuous cuttings".format(
+         nd(len(CO_PAIRS)), nd(len(SEP_NORMALS))))
 
 gate(NCOV == 192 and BRS == [8] and COVEXACT
      and BRS[0] * PCSET[0] == NS, "E1",
@@ -1097,7 +1293,7 @@ BDIM = sorted(set(rrank(blockbasis(s, q), q)
                   for s in range(16) for q in (PRIME, PRIME2)))
 BSTK = [rrank(np.vstack([blockbasis(s, q) for s in range(16)]), q)
         for q in (PRIME, PRIME2)]
-gate(NFL == 16 and FSUB and FLPFREE and AXOK and len(REPF) == 12
+gate(FIELDS_OK and NFL == 16 and FSUB and FLPFREE and AXOK and len(REPF) == 12
      and sorted(set(len(o) for o in ORBF)) == [16] and BDIM == [12]
      and BSTK == [192, 192], "E3",
      ("the {0} flips form a subgroup free on the {1} pieces with {2} orbits; "
@@ -1105,54 +1301,58 @@ gate(NFL == 16 and FSUB and FLPFREE and AXOK and len(REPF) == 12
          nd(NFL), nd(NPI), nd(len(REPF))))
 
 gate(TNZ == [384] and OVLP == 0 and np.array_equal(TSUM, ONES)
-     and FILL == NCOV * NPI and FILL == 36864, "E4",
-     "each of the {0} tables carries {1} entries, no two of them share one, and the {0} sum to the all-ones table: {0} times {1} is {2}".format(
-         nd(NORB), nd(TNZ[0]), nd(FILL)))
+     and FILL == NCOV * NPI and FILL == 36864 and TRS == {2} and TCS == {2}
+     and ORBIT_TABLE_OK, "E4",
+     "the {0} disjoint orbit tables partition all pairs and each has row/column fibres {1}; every table has {2} entries".format(
+         nd(NORB), nd(sorted(TRS)), nd(TNZ[0])))
 
 gate(IENT == [0, 1] and TWEN == [0, 1] and IRS == [8] and TWRS == [8]
      and ICS == [8] and TWCS == [8] and NFAM == 3321960 and len(IORB) == 4
      and len(TWINI) == 4 and np.array_equal(INC, ISUM4)
-     and np.array_equal(ISUM, ISUM4), "E5",
+     and np.array_equal(ISUM, ISUM4) and SELECTOR_OK, "E5",
      "incidence and twin, each a sum of {0} tables, have entry set {1}, row sums {2} and column sums {3}; the family has {4} members".format(
          nd(len(IORB)), nd(IENT), nd(IRS[0]), nd(ICS[0]), nd(NFAM)))
 
 gate(2 in RPE and RPE != [0, 1] and RPR == [8] and len(RPE) == 3, "E6",
-     "rejector: a four part sum that repeats one table has entry set {0} and row sums {1}, so zero-one comes from disjointness, not from {2}".format(
+     "mutation witness: repeating one of {2} selected tables changes the entry set to {0} while row sums remain {1}".format(
          nd(RPE), nd(RPR[0]), nd(len(IORB))))
 
 gate(F5E == [0, 1] and F5R == [10] and F5R != IRS and len(FIVEI) == 5
      and len(set(FIVEI)) == 5, "E7",
-     ("rejector: the sum of {0} distinct tables is zero-one but its row sums "
-      "are {1}, not {2}, so it is the count {3} that gives {2} regularity").format(
+     ("mutation witness: a sum of {0} distinct tables stays binary and changes "
+      "the row sum from {2} to {1}; four-table selection fixes regularity").format(
          nd(len(FIVEI)), nd(F5R[0]), nd(IRS[0]), nd(len(IORB))))
 
 gate(ICV == NCOV and TCV == 0 and TWEN == [0, 1] and TWRS == [8], "E8",
-     "honest negative: all {0} incidence rows are covers, but {1} of the twin's {0} rows is, though the twin is zero-one and {2} regular".format(
+     "cover-row census in the two binary {2}-regular members: incidence {0} of {0}, comparison {1} of {0}".format(
          nd(NCOV), nd(TCV), nd(TWRS[0])))
 
-gate(TABK == [12] and ASD == 12 and TABK[0] == ASD and len(TABK) == 1, "E9",
+gate(TABK == [12] and ASD == 12 and TABK[0] == ASD and len(TABK) == 1
+     and ALLS_INTEGER_OK and allsign_certificate(TAB, ALLSB_INT), "E9",
      ("every one of the {0} tables annihilates the whole all-signs block: the "
       "per-table kernel dimensions there are {1}, the block dimension {2}").format(
          nd(NORB), nd(TABK), nd(ASD)))
 
 gate(MEET4 == 12 and MEETF == 33 and EARN == 21 and MEET4 + EARN == MEETF
      and KIF.shape[0] == 87 and KTF.shape[0] == 87, "E10",
-     "honest negative: {0} of the {1} shared kernel dimensions are the automatic all-signs block, so only {2} of the {1} are earned".format(
-         nd(MEET4), nd(MEETF), nd(EARN)))
+     "over F_{3}, the {0}-dimensional integer all-signs block lies in the {1}-dimensional meet; the complementary contribution is {2}".format(
+         nd(MEET4), nd(MEETF), nd(EARN), nd(PRIME)))
 
-gate(HOLDI and HOLDT and KP1[PRIME] == [3, 3, 6, 6, 12]
+gate(HOLDI and HOLDT and HOLDFULLI and HOLDFULLT
+     and KP1[PRIME] == [3, 3, 6, 6, 12]
      and KP1[PRIME2] == [3, 3, 6, 6, 12] and KP2[PRIME] == [3, 3, 6, 6, 12]
      and KP2[PRIME2] == [3, 3, 6, 6, 12] and KC1[PRIME] and KC1[PRIME2]
      and KC2[PRIME] and KC2[PRIME2]
      and [wsum(KP1[q]) for q in (PRIME, PRIME2)] == [87, 87]
      and [wsum(KP2[q]) for q in (PRIME, PRIME2)] == [87, 87], "E11",
-     "both are held by all {0} flips, so both kernels split: dimensions {1} by weight, class-constant, recomposing to {2}, both primes".format(
+     "both members are held by all signed coordinate maps; odd-field character dimensions {1} recompose to {2} at both primes".format(
          nd(NFL), nd(KP1[PRIME]), nd(wsum(KP1[PRIME]))))
 
 gate(MP[PRIME] == [3, 0, 3, 0, 12] and MP[PRIME2] == [3, 0, 3, 0, 12]
      and MC[PRIME] and MC[PRIME2] and MT[PRIME] == 33 and MT[PRIME2] == 33
-     and FULLM[PRIME] == MT[PRIME] and FULLM[PRIME2] == MT[PRIME2], "E12",
-     "the per-block meet is {0} by weight, class-constant, recomposing to {1}, the meet in the full {2} dimensions, both primes".format(
+     and FULLM[PRIME] == MT[PRIME] and FULLM[PRIME2] == MT[PRIME2]
+     and RANK_MEET_OK, "E12",
+     "the meet profile is {0} by character weight and recomposes to full-space meet {1} over both named prime fields".format(
          nd(MP[PRIME]), nd(MT[PRIME]), nd(NPI)))
 
 gate(OP == [0, 3, 3, 6, 0] and OC and OT == 54
@@ -1161,9 +1361,9 @@ gate(OP == [0, 3, 3, 6, 0] and OC and OT == 54
          nd(OP), nd(OT), nd(MT[PRIME]), nd(OT + MT[PRIME])))
 
 gate(len(S3A) == 4 and len(W3P) == 4 and S3T == [(6, 6, 0, 12, 12)]
-     and len(S3T) == 1 and HOLDI and HOLDT, "E14",
-     ("at all {0} weight-{1} patterns the two kernels are {2} and {2} with meet {3}, "
-      "stacking to {4} of {5}; being flip-held, these {0} are one fact, not {0}").format(
+     and len(S3T) == 1 and HOLDFULLI and HOLDFULLT, "E14",
+     ("all {0} weight-{1} blocks have kernel pair {2}/{2}, meet {3}, stack rank "
+      "{4} of {5}; coordinate permutations carry the weight class").format(
          nd(len(S3A)), nd(3), nd(S3T[0][0]), nd(S3T[0][2]), nd(S3T[0][3]),
          nd(S3T[0][4])))
 
@@ -1176,8 +1376,8 @@ gate(S1T == [(3, 3, 0, 6, 12)] and S2T == [(6, 6, 3, 9, 12)]
 
 gate(HOLDN == 1 and SWB != SWK and INCB == INCK and INCK == 87
      and SWK == 87, "E16",
-     ("rejector: a piece swap leaves {0} of {1} flips holding it, and its "
-      "blocks then sum to {2}, not its kernel {3}; the incidence gives {4} and {5}").format(
+     ("mutation witness: a piece swap leaves {0} of {1} flips holding it; its "
+      "block sum {2} differs from full kernel {3}, while incidence gives {4}/{5}").format(
          nd(HOLDN), nd(NFL), nd(SWB), nd(SWK), nd(INCB), nd(INCK)))
 
 gate(CSTB == [2] and len(CORB2) == 24 and COSZ == [8] and len(ORBF) == 12
@@ -1187,7 +1387,7 @@ gate(CSTB == [2] and len(CORB2) == 24 and COSZ == [8] and len(ORBF) == 12
          nd(CSTB[0]), nd(len(CORB2)), nd(COSZ[0]), nd(len(ORBF)), nd(POSZ[0]),
          nd(NCOV)))
 
-gate(QI.shape == (24, 12) and entset(QI) == [0, 2] and rowset(QI) == [8]
+gate(QUOTIENT_INPUT_OK and QI.shape == (24, 12) and entset(QI) == [0, 2] and rowset(QI) == [8]
      and colset(QI) == [16] and len(UNI) == 12 and MULI == [2], "E18",
      "the orbit quotient is {0} by {1} with entry set {2}, row sums {3}, column sums {4}, and {1} distinct rows each occurring {5} times".format(
          nd(QI.shape[0]), nd(QI.shape[1]), nd(entset(QI)), nd(rowset(QI)[0]),
@@ -1200,22 +1400,23 @@ gate(HI.shape == (12, 12) and entset(HI) == [0, 1] and rowset(HI) == [4]
 
 gate(len(KBI) == 3 and KENT == [-1, 0, 1] and [len(s) for s in KSUP] == [4, 4, 4]
      and len(KFLAT) == len(set(KFLAT)) and sorted(KFLAT) == list(range(12))
-     and PM2 == [(2, 2)] and KZERO, "E20",
-     ("its integer kernel is {0} vectors, entries {1}, supports of size {2}, "
-      "disjoint, partitioning the {3} piece orbits, each {4} up and {4} down").format(
+     and PM2 == [(2, 2)] and KZERO and KZERO_T, "E20",
+     ("{0} integer vectors, entries {1}, disjoint size-{2} supports, partition "
+      "{3} piece orbits and annihilate both halved quotients").format(
          nd(len(KBI)), nd(KENT), nd(len(KSUP[0])), nd(len(KFLAT)),
          nd(PM2[0][0])))
 
 gate(len(UNT) == 12 and MULT == [2] and entset(HT) == [0, 1]
      and rowset(HT) == [4] and RKT == [9, 9] and HT.shape[1] - RKT[0] == 3
-     and NKI.shape[0] == 3 and NKT.shape[0] == 3 and NMEET == 3, "E21",
+     and NKI.shape[0] == 3 and NKT.shape[0] == 3 and NMEET == 3
+     and QUOTIENT_OK, "E21",
      "the twin reduces the same way, halved rank {0} and corank {1}, and the two null spaces of dimension {1} meet in {1}, so they are equal".format(
          nd(RKT[0]), nd(HT.shape[1] - RKT[0])))
 
 gate(not np.array_equal(HI24, HT24) and AGR == 0 and MSI != MST
      and not np.array_equal(HI, HT) and NMEET == 3, "E22",
-     ("honest negative: the two halved quotients differ, {0} of the {1} rows "
-      "agree in place and the row multisets differ, yet they share a null space").format(
+     ("the halved quotients are distinct with {0} of {1} rows equal in place and "
+      "different row multisets; their named-field null spaces coincide").format(
          nd(AGR), nd(len(CORB2))))
 
 gate(SHR == [0] and len(SHR) == 1, "E23",
@@ -1237,32 +1438,35 @@ gate(NMEM == 368 and len(SWEEP) == 185 and min(KTOT) == 48 and max(KTOT) == 120
          nd(NMEM), nd(len(SWEEP)), nd(min(KTOT)), nd(max(KTOT)),
          nd(sorted(MAS)[0])))
 
-gate(min(MTOT) == 12 and max(MTOT) == 59 and 87 not in MTOT
-     and max(MTOT) < KIF.shape[0] and NMEM < NFAM, "E27",
-     "honest negative: those meets run {0} to {1} and none reaches {2}; the sweep covers {3} of the {4} members, a probe, not a census".format(
+gate(min(MTOT) == 12 and max(MTOT) == 59 and NMEM == 368 and NFAM == 3321960, "E27",
+     "the declared {3}-member one-swap sweep has meet totals {0} through {1}; full family size is {4}".format(
          nd(min(MTOT)), nd(max(MTOT)), nd(KIF.shape[0]), nd(NMEM), nd(NFAM)))
 
 gate(NSAMP == 460 and NSWAP == 368 and NDISJ == 23 and NSUB == 70
      and HDIM == [6, 7, 9, 12] and HCNT == [366, 55, 37, 2] and SIX == 366
-     and TRANS == 169, "E28",
-     ("honest negative: {0} of the {1} members at weight-{2} dimension {3} are "
-      "transverse to the incidence: transversality is common, not a marker").format(
+     and TRANS == 169 and SAMPLE_OK, "E28",
+     ("in the declared sample, {0} of {1} dimension-{3} kernels at selected "
+      "weight-{2} block are transverse to the incidence kernel").format(
          nd(TRANS), nd(SIX), nd(3), nd(HDIM[0])))
 
 gate(NDIS == 130 and NDS6 == 103 and MAXM == 27 and NDIS < NSAMP
      and NDS6 < SIX and MAXM > 1, "E29",
-     ("the {0} members ({1} swaps, {2} quadruples, {3} subsets) realise {4} "
-      "distinct weight-{5} kernels, not {0}, {6} of dimension {7}, commonest {8}").format(
+     ("the {0}-member sample realises {4} selected weight-{5} kernels; "
+      "{6} have dimension {7}, maximum multiplicity {8}").format(
          nd(NSAMP), nd(NSWAP), nd(NDISJ), nd(NSUB), nd(NDIS), nd(3), nd(NDS6),
          nd(HDIM[0]), nd(MAXM)))
 
 gate(INCR == 13 and TWNR == 2 and CI3 != CT3 and INCR > 1 and TWNR > 1
      and INCR < NSAMP, "E30",
-     ("honest negative: the incidence weight-{0} kernel is shared by {1} of "
-      "the {2} members and the twin's by {3}: the graded kernel does not pin it").format(
+     ("selected weight-{0} kernel multiplicities in the {2}-member sample are "
+      "incidence {1} and comparison {3}; the two kernels are distinct").format(
          nd(3), nd(INCR), nd(NSAMP), nd(TWNR)))
 
-emit("the {0} tables partition the all-ones table into {1} four-part sums; {2} of the {3} shared kernel dimensions are free, meet {4}".format(
+gate(len(MUTATIONS) == 13 and all(MUTATIONS), "E31",
+     "all {0} targeted mutations are rejected: masks, geometry, orbit fibres, signs, ranks, quotient, selectors, sample, fields, and family".format(
+         nd(len(MUTATIONS))))
+
+emit("the {0} tables give {1} four-part sums; the named-field meet {3} contains the {2}-dimensional integer all-signs block, profile {4}".format(
     nd(NORB), nd(NFAM), nd(MEET4), nd(MEETF), nd(MP[PRIME])))
 RSS = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
 MBS = RSS / (1024.0 * 1024.0) if sys.platform == "darwin" else RSS / 1024.0

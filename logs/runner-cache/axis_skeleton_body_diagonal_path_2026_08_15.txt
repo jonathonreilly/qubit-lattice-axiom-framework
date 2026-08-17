@@ -1,0 +1,41 @@
+===== runner cache v1 =====
+runner: scripts/axis_skeleton_body_diagonal_path_2026_08_15.py
+runner_sha256: 2362409b15fb063ec9805cd7db47c041b8218909914aa929b29d545abfd8a6e6
+input_fingerprint_sha256: 56de7047919e1637fbf74881d6bce1ccf7fb9eeab94468c1ae9753d99cfccbbf
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: none; exact six-neighbor hop-cost algebra
+package_local_integrity_reads: proposed source note and live axiom memo
+claim_boundary: displayed named hop-cost; no admissibility edit
+lex_first_path: ((0, 0, 0), (0, 0, 1), (0, 1, 1), (0, 1, 2), (0, 2, 2), (1, 2, 2), (2, 2, 2))
+hop_pairs: [(0, 1), (1, 2), (2, 2), (2, 2), (2, 3), (3, 3)]
+hop_clauses: ['seed-exit', 'neither', 'neither', 'neither', 'neither', 'neither']
+hop_costs: (3, 1, 1, 1, 1, 1)
+orbit_cost_sum: 8
+shortest_path_count: 72
+common_multiset: (1, 1, 1, 1, 1, 3)
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: one-seed-b6-domain the search domain is the 377-site radius-6 ball about one seed
+PASS: inward-weights seed weight is 0 and the body-diagonal weight is 3
+PASS: thm1-lex-path the lex-first shortest path is the displayed six-step site list
+PASS: thm1-six-hops that path has six nearest-neighbor hops
+PASS: thm1-hop-costs the six computed hop costs are 3,1,1,1,1,1
+PASS: thm1-orbit-cost-sum the orbit-cost sum equals the Dijkstra arrival and equals 8
+PASS: thm1-seed-exit-only-expensive the path uses one seed-exit and five ordinary hops
+PASS: thm2-common-multiset every shortest path has hop-cost multiset {1,1,1,1,1,3}
+PASS: thm2-lex-is-shortest the displayed path is among the enumerated shortest paths and is lex-first
+PASS: mutation-unit-costs-fail replacing every hop by cost 1 does not recover the orbit-cost sum 8
+PASS: mutation-axis-stay-fails the axis-extension word costs 10 and is not shortest
+PASS: axiom-unedited the live Admissibility sentences are present and the named rule is absent
+PASS: thm3-not-written-into-admissibility the note refuses to write the named rule into Admissibility
+PASS: no-l1-attachment the note refuses to attach L1
+PASS: claim-scope-contract the declared claim_scope matches the exhibited-path statement
+PASS: forbidden-phrases the note omits the dispatch-forbidden phrases
+PASS: note-contains-path-and-costs the note records the lex path, the six costs, the sum, and the common multiset
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

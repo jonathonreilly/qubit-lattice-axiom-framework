@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/physical_cell_cutting_sign_pattern_blocks_cycle773_2026_08_11.py
-runner_sha256: c10b763a2ca087c3faed42dc001589ea3b37d3f2268d4bdb04af101791f9265d
+runner_sha256: 662880b3576f20884b775ab1d7f1f328402adf1d02970f3785296e34d48dc980
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 14.03
+elapsed_sec: 12.49
 status: ok
 ----- stdout -----
 PASS D0 the cell has 2672 unit-determinant subsets, 400 at cost floor 6, 15800 cuttings of 24, 192 pieces in 1975 each, 379200 slots both ways
@@ -35,7 +35,7 @@ PASS D25 the stack of those 4 parts has rank 180 at both primes, which is 192 - 
 PASS D26 honest negative: the 96 tables hold 2 kernels of dimension 48, 48 each, but both give per-block [0, 0, 2, 6, 12], which cannot separate them
 PASS D27 all 96 tables carry the same vector of 16 per-block ranks, 1 distinct in all, so the split is uniform across the family
 16 blocks of 12: one table 144, incidence 105, drop 39 in the blocks of weight at most 2, kernel 87 splitting 12 and 75
-elapsed 13 s, peak resident 105 MB
+elapsed 12 s, peak resident 124 MB
 TOTAL: PASS=28 FAIL=0
 
 ----- stderr -----

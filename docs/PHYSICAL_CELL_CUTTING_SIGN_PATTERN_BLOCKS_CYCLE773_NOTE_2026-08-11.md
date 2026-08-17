@@ -3,7 +3,31 @@
 Date: 2026-08-11
 Authority: none
 Audit: unset.
+
+Status: proposed_retained
+
 Claim type: bounded_theorem
+
+Machine status:
+
+```yaml
+actual_current_surface_status: candidate-retained-grade
+target_claim_type: bounded_theorem
+trace_class: frontier_discovery
+target_claim_id: null
+target_blocker_text: null
+source_of_blocker_text: frontier_question
+reachability_to_target: unknown_frontier
+artifact_role: theorem
+next_trace_action: "Send the self-contained finite theorem and runner to independent audit; no downstream consumer is yet known."
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: "Exact finite theorem for flip-character block decompositions, orbit-table ranks, incidence ranks, and kernel-dimension censuses on one declared unit-four-cube object."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```
+
 Constitutional effect: none.
 
 ## 1. What is measured

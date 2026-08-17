@@ -31,6 +31,7 @@ import numpy as np
 
 PRIME = 1000003
 PRIME2 = 1000033
+AUDIT_TIMEOUT_SEC = 300
 
 T0 = time.time()
 OUT = [0]

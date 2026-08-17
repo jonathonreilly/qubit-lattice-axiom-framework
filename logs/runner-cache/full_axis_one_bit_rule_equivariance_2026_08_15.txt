@@ -1,0 +1,62 @@
+===== runner cache v1 =====
+runner: scripts/full_axis_one_bit_rule_equivariance_2026_08_15.py
+runner_sha256: 1f5fa9171b204c3ca1ba4268da76824aacd2dbca6627b08e99df3ac6ec138c7e
+input_fingerprint_sha256: a3c755cdb9c5eb10edabe75290318c82234919fe4b5435a4bb04cc228a698107
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+occupancy-named-axis one-bit pair labeling G+ equivariance
+AUDIT_INPUT_PATHS:
+  docs/FULL_AXIS_ONE_BIT_RULE_EQUIVARIANCE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+G_plus=24
+N_perp=12
+N_pair=48
+N_denom=576
+N_commute=144
+N_commute_over_denom=144/576
+N_commute_eq_576=False
+f_independent_of_b=True
+perp_rows:
+  (0, 1, 0, 1, 1, 1) full=z f=(0, 1, 0, 2, 1, 2) commute=12/48
+  (0, 1, 1, 0, 1, 1) full=z f=(0, 1, 2, 0, 1, 2) commute=12/48
+  (0, 1, 1, 1, 0, 1) full=y f=(0, 1, 1, 2, 0, 2) commute=12/48
+  (0, 1, 1, 1, 1, 0) full=y f=(0, 1, 1, 2, 2, 0) commute=12/48
+  (1, 0, 0, 1, 1, 1) full=z f=(1, 0, 0, 2, 1, 2) commute=12/48
+  (1, 0, 1, 0, 1, 1) full=z f=(1, 0, 2, 0, 1, 2) commute=12/48
+  (1, 0, 1, 1, 0, 1) full=y f=(1, 0, 1, 2, 0, 2) commute=12/48
+  (1, 0, 1, 1, 1, 0) full=y f=(1, 0, 1, 2, 2, 0) commute=12/48
+  (1, 1, 0, 1, 0, 1) full=x f=(1, 2, 0, 1, 0, 2) commute=12/48
+  (1, 1, 0, 1, 1, 0) full=x f=(1, 2, 0, 1, 2, 0) commute=12/48
+  (1, 1, 1, 0, 0, 1) full=x f=(1, 2, 1, 0, 0, 2) commute=12/48
+  (1, 1, 1, 0, 1, 0) full=x f=(1, 2, 1, 0, 2, 0) commute=12/48
+PASS: audit-input-paths | AUDIT_INPUT_PATHS is the required static two-string literal tuple
+PASS: source-lattice
+PASS: source-admissibility
+PASS: source-unread-qubit
+PASS: g-plus-order | proper=24
+PASS: twelve-perp-masks | N_perp=12
+PASS: stab-ok-and-f-defined
+PASS: theorem-1-n-commute | N_commute=144/576
+PASS: theorem-2-not-full-576 | eq576=False
+PASS: fail-witness | lhs=(1, 0, 0, 2, 1, 2) rhs=(1, 0, 0, 2, 2, 1)
+PASS: claim-scope
+PASS: displayed-not-adopted
+PASS: l1-not-attached
+PASS: not-leftover-uneqlaw-uneqaxis
+PASS: admissibility-unedited
+PASS: forbidden-phrases
+PASS: no-axiom-edit
+per_element: N_commute, |Stab(σ,b)|, and f(σ,b) are exact
+per_site: 12 perpendicular weight-4 occupancy masks scored
+per_mode: no spectral calculation
+per_block: 6-NN star masks and G+ only
+lattice_wide: checked and not executed
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

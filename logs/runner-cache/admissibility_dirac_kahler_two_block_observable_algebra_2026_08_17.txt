@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_two_block_observable_algebra_2026_08_17.py
+runner_sha256: 8fc559630a710555660f7ecbb1385f4518bdb0c47208c41b442429b45851f4b9
+input_fingerprint_sha256: 54d80483b8df9da4bd406dc8180af8714d40732eedb1d08e17e81dc67f58fd1a
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 57.34
+status: ok
+----- stdout -----
+[PASS] A-authority: Block 131 blobs, ancestors 130--103, and landed Block 119 runner/cache are pinned
+[PASS] B-the-second-degeneracy: tau_0=tau_2, the stable root is shared, and T_02=rho_0^2 I_2 at both fixtures
+[PASS] C-the-per-sector-reality: y_0 and y_2 are individually real and unequal, with exact pinned positive g_02 at both fixtures
+[PASS] D-the-gauge-law: sectorwise reality forces real scales, g'=(a_2/a_0)^2 g_02, and g'=1 is attainable in the extension
+[PASS] E-the-field-caveat: the rational u-discriminant test excludes sqrt(g_02) from Q(rho), while real extension normalization preserves the classification
+[PASS] F-the-02-observable-space: after g=1 normalization the per-sector-real adjoint space is exactly Sym_2(R), dimension 3 and non-commuting
+[PASS] G-the-two-block-algebra: Sym_2(R)_02 direct-sum Sym_2(R)_13 has dimension 6, scalar center dimension 2, exact rate exclusion, and nonzero mixer commutators
+[PASS] H-scope: two regimes, field caveat, six-dimensional center/cross-pair packet, N1--N8/W1/N5, and TOE firewalls are present
+AUTHORITY: parent=d3a666f62c87b3b8178289024087090c91ced327; Block131 blobs=(84dbb6f3a1490793b18b11bcdb5b7073227d6512,730ac81558f6a9b7d406803566e9a6e435ae5750,b00ce7aa207ca5e7b5c8ff94cfc32836b8c36d83); Block119=(952494a18ba13b7d25fb144b8569687813d9bddc,f7a9b09538c8787ed88885c04cdea3e5cff70104)
+FIXTURES: c=(5/13,3/5); tau_0=tau_2 and T_02=rho_0^2 I_2; y_0,y_2 are individually real, nonzero, and unequal at both
+G02 c=5/13: g_02=11895243298682992699172683613451774615271671819816203178568317099619776398210520749184915377127151534024413868507424468656250*rho/241659553525405405992244153822553924313190112753243276784966559561703714179067935568657266929625106143222847593242664924686729 + 233478378673517694154739807496511501274055200686460510647170083958224634261221249284470645246596670440043572836228403331530479/241659553525405405992244153822553924313190112753243276784966559561703714179067935568657266929625106143222847593242664924686729 (computed and pinned exactly)
+GAUGE: at y_k[0]=1, conj((a_r+i a_i)y)-(a_r+i a_i)y=-2*I*a_i, so a_i=0; g'=(a_2/a_0)^2 g_02 and a_2=a_0/sqrt(g_02) gives g'=1
+FIELD: u^2(tau^2-4)-u(2b tau+4a)+b^2=0 has a rational nonsquare discriminant at both fixtures; sqrt(g_02) is not in Q(rho); S=diag(1,1/sqrt(g)) gives G'=I, J'^2=I, positivity, and a field-independent classification
+OBSERVABLES: normalized (0,2)=Sym_2(R), dimension=3; [sigma_x,sigma_z]=[[0, -2], [2, 0]]
+ALGEBRA: Sym_2(R)_02 direct-sum Sym_2(R)_13, dimension=6, center dimension=2; T X T^-1=(rho_even/rho_odd)^2 X excludes cross-pair blocks; [X_02,diag(0,2)]=[[0, 2], [-2, 0]]; [X_13,diag(1,3)]=[[0, 2], [-2, 0]]
+N5: per_element: exact second-degeneracy, per-sector-reality, gauge-law, field-caveat, classification, and cross-pair-exclusion certificates are checked
+per_site: one Grassmann mode per fine site on the antiperiodic reflection torus
+per_mode: both momentum pairs are degenerate with scalar transfers — the conjugate-coupled pair has invariant unit gram and the per-sector-real pair has gauge gram normalizable in a quadratic extension
+per_block: the complete admissible observable structure is the six-dimensional two-block symmetric algebra with two-dimensional center, cross-pair blocks excluded by the even-odd rate split, and momentum commutators nonzero exactly on pair mixers
+lattice_wide: checked and not executed — states and dynamics on the two-block algebra, the flip work order, the common nilpotent differential, the actual ADM/history transporter completion, joint gravity, the gravity constraint quotient beyond the displayed carrier, Records, audit retention, and TOE closure remain open
+RESULT: the observable picture completes — one mechanism in two regimes opens both degenerate pairs, the two-block six-dimensional symmetric algebra is the full admissible structure, and the only subtlety is an honest quadratic field extension for the second block's normalized frame
+DECISION_CUT: build states and dynamics on the algebra; hand the flip work order across; advance the differential
+TOE: zero obligation retirement; no TOE percentage moves; retained-positive end-to-end theory count remains zero; gravity constraint quotient remains unexecuted; actual ADM/history transporter remains open
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,60 @@
+===== runner cache v1 =====
+runner: scripts/unequal_radius_tick_not_l1_neighbor_datum_2026_08_15.py
+runner_sha256: 737af173afdd5fc62c82afb5d68d75fbe9eb89207d3f324e7f62c22f4297ce63
+input_fingerprint_sha256: 5e479c41ec4e92f1606bd860cfd5d87616c007a462e293eaf6ee60a6b2fbc7ad
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+unequal-radius tick not L1 neighbor datum
+AUDIT_INPUT_PATHS:
+  docs/UNEQUAL_RADIUS_TICK_NOT_L1_NEIGHBOR_DATUM_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+seeds=((-2, -2, -2), (-2, -2, -1), (-2, -2, 1))
+radii=(2, 1, 3)
+v=(-3, -3, -1)
+unread=True
+sigma=(1, 0, 1, 0, 1, 1)
+ticks=(1, None, 1, None, 3, 2)
+occupied_sites=((-2, -3, -1), (-3, -2, -1), (-3, -3, 0), (-3, -3, -2))
+t_occ=(1, 1, 3, 2)
+sigma_occ=(1, 1, 1, 1)
+n_dipole=((0, 1, 0), (1, 0, 0), (1, 1, 1), (1, 1, 0))
+n_frac=(((0, 1), (1, 3), (0, 1)), ((1, 3), (0, 1), (0, 1)), ((1, 3), (1, 3), (1, 3)), ((1, 3), (1, 3), (0, 1)))
+k_occ=(3, 3, 3, 2)
+bloch_I2_over_2=((0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0))
+bloch_occupancy_map=(1, 1, 1, 1)
+formation_count=81
+any_displayed_list_equals_t=False
+t_is_theorem_of_displayed_L1=False
+PASS: audit-input-paths | AUDIT_INPUT_PATHS is the required static two-string literal tuple
+PASS: source-lattice
+PASS: source-admissibility
+PASS: source-record-qubit
+PASS: host-lex-first-breaker | sigma=(1, 0, 1, 0, 1, 1) ticks=(1, None, 1, None, 3, 2)
+PASS: theorem-1-t-not-occupancy-bits | sigma_occ=(1, 1, 1, 1)
+PASS: theorem-1-t-not-n-from-six-star | n_dipole=((0, 1, 0), (1, 0, 0), (1, 1, 1), (1, 1, 0))
+PASS: theorem-1-t-not-bloch-from-occupancy | bloch_i2=((0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0)) bloch_occ_map=(1, 1, 1, 1)
+PASS: theorem-1-t-not-k | k_occ=(3, 3, 3, 2)
+PASS: theorem-1-t-not-formation-count | formation_count=81
+PASS: theorem-1-t-not-equal-any-four-site-l1-list
+PASS: theorem-2-not-theorem-of-displayed-l1
+PASS: claim-scope
+PASS: displayed-not-adopted
+PASS: l1-not-attached
+PASS: not-leftover-uneqrec
+PASS: admissibility-record-unedited
+PASS: forbidden-phrases
+PASS: no-axiom-edit
+per_element: scored occupancy bits, n, Bloch from occupancy, k, and formation-count against t_occ
+per_site: scored only the uneqrad lex-first star at v
+per_mode: no spectral calculation; displayed L1 lists only
+per_block: 3-ball unequal-radius host only; no fourth ball
+lattice_wide: checked and not executed — one finite 6-star, not a lattice-wide rule
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

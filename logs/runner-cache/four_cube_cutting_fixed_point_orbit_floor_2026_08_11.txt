@@ -1,12 +1,12 @@
 ===== runner cache v1 =====
-runner: scripts/physical_cell_cutting_flip_counts_cycle769_2026_08_11.py
-runner_sha256: 8f7f483902bab9c4c9713d46827f008f685484cb250a5756ad6a2b9ae861bb44
+runner: scripts/four_cube_cutting_fixed_point_orbit_floor_2026_08_11.py
+runner_sha256: 8207a89007475bcd6e7025be718600d77c1280231bb9d4a6604d0e8b7e922144
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 106.79
+elapsed_sec: 90.38
 status: ok
 ----- stdout -----
-all numbers below are exact computational identities; no floating point enters any gate
+all scientific counts and algebraic gates below use exact arithmetic; C34 reports environment-dependent resource observations
 PASS C0 object: 2672 pieces, 400 at cost floor 6, 15800 cuttings of 24, 192 used, 192 covers
 PASS C1 each piece lies in 1975 cuttings, 8 times 1975 is 15800; each cover has 8 pieces and meets every cutting once
 PASS C2 group: 384 coordinate maps, all distinct, closed under composition, every one carries pieces to pieces
@@ -26,7 +26,7 @@ PASS C15 perturbed cover action: all 6 transpositions tried break at least one o
 PASS C16 the true action breaks 0 of the four while every perturbation breaks at least 3, so the agreement is not automatic
 PASS C17 no non-identity element fixes any of the 36864 cells; the cover stabiliser moves all 192 pieces
 PASS C18 for each of the 192 covers the stabiliser's other element fixes no piece, so cover and piece stabilisers meet in the identity
-PASS C19 free action: 36864 = 384 times 96, and 96 = 384 over 2 times 2
+PASS C19 free action: 36864 = 384 times 96, and 96 = 384 over (2 times 2)
 PASS C20 part table: 20 rows, dimensions 1,1,1,1,3,3,3,3,4,4,8,8,8,8,12,12,24,24,32,32
 PASS C21 the 104 orbit matrices multiply by the structure constants on 7 sampled pairs; the centre has dimension 20
 PASS C22 sum of d times m is 192, sum of d times mc is 192
@@ -41,9 +41,15 @@ PASS C30 one cell orbit alone has rank 144 at both primes and blind dimension 48
 PASS C31 wrong-count rejector: 8 of 8 altered fixed-point tuples break at least one identity
 PASS C32 wrong-row rejector: 40 of 40 altered rows fail the row test, which turns on the dimension being d times m
 PASS C33 source hygiene: ASCII yes, no tab yes, no remainder sign yes, no long dash yes, 41 barred strings absent yes
-PASS C34 budget: 106 s under 900, 127 MB under 2500, stdout under 5200 with 1418 to spare
-characters printed before this line: 3672
-TOTAL: PASS=35 FAIL=0
+PASS C34 budget: 90 s under 900, 215 MB under 2500, stdout under 5200 with 578 to spare
+PASS C35 exact geometry: 15168 co-pairs in 59 symmetry classes are interior-disjoint; the sample false negative has margin 1/11
+PASS C36 direct corner-set action bypasses stored permutations and gives fixed sets 16, 0, 0, 48
+PASS C37 group mutation: duplicating one stabiliser image is rejected as a non-bijection while the accepted stabiliser passes
+PASS C38 freeness mutation: changing the zero non-identity cell-fixed count to one is rejected
+PASS C39 part-table mutation: increasing one multiplicity is rejected by the row-and-bridge validator
+PASS C40 floor mutation: increasing one floor term is rejected by the rowwise ceiling-plus-floor identity
+characters printed before this line: 4364
+TOTAL: PASS=41 FAIL=0
 
 ----- stderr -----
 

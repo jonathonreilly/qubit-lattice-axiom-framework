@@ -1,4 +1,4 @@
-"""Four fixed-point counts force the cell-orbit count and a positive blind floor.
+"""Four-cube cutting fixed-point counts, cell freeness, and a modular floor.
 
 Standalone exact runner. It rebuilds the unit four-cube cell object from scratch:
 the sixteen corners, the five-corner unit-determinant pieces at the adjacency cost
@@ -6,14 +6,12 @@ floor, the cuttings by them, the pieces that occur, and the eight-piece covers.
 The symmetry group of order 384 is built by permuting the four coordinates and
 flipping any of them, and it is transitive on the pieces and on the covers.
 
-The subject of this cycle is four integers: how many pieces and how many covers
-are fixed by the non-identity element of one piece stabiliser and of one cover
-stabiliser. Each of the three orbit counts on ordered pairs is obtained twice,
-once by direct orbit enumeration on the permutations and once from a two-element
-stabiliser's fixed-point count. A perturbed copy of the action breaks the tie, so
-the tie is not automatic. The four counts then force the cell-orbit count and a
-strictly positive blind floor, and they show that the ceiling and the floor add to
-the piece count for a reason rather than by accident.
+The load-bearing data are four integers: how many pieces and covers are fixed by
+the non-identity elements of one piece stabiliser and one cover stabiliser. Exact
+rational intersection checks turn the sample-enumerated candidates into genuine
+geometric cuttings. The four fixed counts force the cell-orbit count and cell
+freeness. Over one explicitly declared prime, the part table has a positive blind
+floor and its ceiling plus floor equals the piece count.
 
 All work is over the integers, the rationals and two fixed primes; no floating
 point enters any gate and no constant is fitted.
@@ -33,6 +31,7 @@ import numpy as np
 PRIME = 1000003
 PRIME2 = 1000033
 SEED = 3
+AUDIT_TIMEOUT_SEC = 300
 
 T0 = time.time()
 OUT = [0]
@@ -393,6 +392,83 @@ while frc:
             frc.append(y)
 COV_TRANS = (len(orbc) == NCOV)
 
+# The generic sample is an enumeration device, not a proof of geometric
+# compatibility.  Check every co-occurring pair type exactly.  Coordinate-map
+# orbits are safe compression because the maps are affine cube bijections.
+CO_PAIRS = set()
+for cut in CUT:
+    CO_PAIRS.update(itertools.combinations(cut, 2))
+NCO_PAIR = len(CO_PAIRS)
+
+PAIR_ORBIT = {}
+PAIR_REPS = []
+PAIR_CLOSED = True
+for pair in sorted(CO_PAIRS):
+    if pair in PAIR_ORBIT:
+        continue
+    oid = len(PAIR_REPS)
+    orbit = set(tuple(sorted((p[pair[0]], p[pair[1]]))) for p in PERM)
+    if not orbit.issubset(CO_PAIRS):
+        PAIR_CLOSED = False
+    for q in orbit:
+        old = PAIR_ORBIT.get(q)
+        if old is not None and old != oid:
+            PAIR_CLOSED = False
+        PAIR_ORBIT[q] = oid
+    PAIR_REPS.append(pair)
+PAIR_CLOSED = (PAIR_CLOSED and set(PAIR_ORBIT) == CO_PAIRS)
+NPAIR_REP = len(PAIR_REPS)
+
+
+def solve_five(rows):
+    """solve five exact affine equations in five unknowns, or return None"""
+    M = [[FR(x) for x in row] for row in rows]
+    for c in range(5):
+        piv = next((r for r in range(c, 5) if M[r][c] != 0), -1)
+        if piv < 0:
+            return None
+        M[c], M[piv] = M[piv], M[c]
+        pv = M[c][c]
+        M[c] = [x / pv for x in M[c]]
+        for r in range(5):
+            if r != c and M[r][c] != 0:
+                f = M[r][c]
+                M[r] = [M[r][k] - f * M[c][k] for k in range(6)]
+    return tuple(M[i][5] for i in range(5))
+
+
+def interior_margin_raw(aidx, bidx):
+    """maximum common strict-barycentric margin of two kept simplices"""
+    cons = list(BARY[aidx][2]) + list(BARY[bidx][2])
+    best = None
+    for active in itertools.combinations(range(10), 5):
+        rows = []
+        for q in active:
+            a, b = cons[q]
+            rows.append(list(a) + [-1, -b])
+        sol = solve_five(rows)
+        if sol is None:
+            continue
+        x = sol[:4]
+        margin = sol[4]
+        if all(sum(FR(a[k]) * x[k] for k in range(4)) + FR(b) >= margin
+               for a, b in cons):
+            if best is None or margin > best:
+                best = margin
+    return best
+
+
+PAIR_MARGINS = [interior_margin_raw(USED[i], USED[j]) for i, j in PAIR_REPS]
+GEOM_EXACT = (PAIR_CLOSED and all(v is not None and v <= 0 for v in PAIR_MARGINS))
+
+# Deliberate sample-grid false negative: both simplices contain
+# (4,3,2,1)/11 in their strict interiors although their masks are disjoint.
+BAD_GEO_A = KDX[(0, 1, 2, 4, 8)]
+BAD_GEO_B = KDX[(0, 1, 3, 7, 15)]
+BAD_SAMPLE_DISJOINT = ((MASK[BAD_GEO_A] & MASK[BAD_GEO_B]) == 0)
+BAD_GEO_MARGIN = interior_margin_raw(BAD_GEO_A, BAD_GEO_B)
+GEOM_MUT_REJECT = (BAD_SAMPLE_DISJOINT and BAD_GEO_MARGIN == FR(1, 11))
+
 # two elements generate the whole group; orbits may then be walked from them
 GEN_DESC = [((1, 2, 3, 0), 0), ((1, 0, 2, 3), 1)]
 GIDX = [DESC.index(d) for d in GEN_DESC]
@@ -514,6 +590,41 @@ FPP = sum(1 for i in range(NPI) if PERM[EP][i] == i)
 FCP = sum(1 for i in range(NCOV) if CPERM[EP][i] == i)
 FPC = sum(1 for i in range(NPI) if PERM[EC][i] == i)
 FCC = sum(1 for i in range(NCOV) if CPERM[EC][i] == i)
+
+# Recompute fixed sets directly from corner sets.  This bypasses the stored
+# PERM/CPERM action tables used by the sweep, walk, and fixed-point average.
+RAW_PIECES = [frozenset(KEPT[t]) for t in USED]
+RAW_COVERS = [frozenset(RAW_PIECES[i] for i in cover) for cover in CS]
+
+
+def direct_corner(desc, c):
+    sg, fl = desc
+    old = CORN[c]
+    new = [0, 0, 0, 0]
+    for i in range(4):
+        new[sg[i]] = old[i] ^ ((fl >> i) & 1)
+    return sum(new[k] << k for k in range(4))
+
+
+def direct_piece(desc, piece):
+    return frozenset(direct_corner(desc, c) for c in piece)
+
+
+def direct_fixed_sets(e):
+    desc = DESC[e]
+    fp = sum(1 for piece in RAW_PIECES if direct_piece(desc, piece) == piece)
+    fc = 0
+    for cover in RAW_COVERS:
+        moved = frozenset(direct_piece(desc, piece) for piece in cover)
+        if moved == cover:
+            fc += 1
+    return fp, fc
+
+
+DIRECT_P = direct_fixed_sets(EP)
+DIRECT_C = direct_fixed_sets(EC)
+DIRECT_FIXED_OK = (DIRECT_P == (16, 0) and DIRECT_C == (0, 48)
+                   and DIRECT_P == (FPP, FCP) and DIRECT_C == (FPC, FCC))
 
 
 def breaks(npp, npoc, ncp, fpp, fcc, fpc, fcp):
@@ -1075,6 +1186,46 @@ NREJR = sum(1 for w in WRONGR if not row_ok(w[0], w[1], w[2], w[3]))
 REJR_OK = (NREJR == len(WRONGR))
 
 # ------------------------------------------------------------------
+# 11b. reverted in-memory mutations for each load-bearing family
+# ------------------------------------------------------------------
+
+BAD_STAB = list(SP)
+BAD_STAB[0] = BAD_STAB[1]
+ACTION_TRUE_OK = (sorted(SP) == list(range(NPI)) and SP[0] == 0 and SQ_P)
+ACTION_BAD_OK = (sorted(BAD_STAB) == list(range(NPI)) and BAD_STAB[0] == 0)
+ACTION_MUT_REJECT = (ACTION_TRUE_OK and not ACTION_BAD_OK)
+
+
+def free_summary_ok(fixed_cells, cell_r, cell_avg):
+    return (fixed_cells == 0 and cell_r == 0 and cell_avg == NCP
+            and NCELL == NGRP * NCP)
+
+
+FREE_MUT_REJECT = (free_summary_ok(FIXED_CELLS, CELL_R, CELL_AVG)
+                   and not free_summary_ok(FIXED_CELLS + 1, CELL_R, CELL_AVG))
+
+
+def table_bridge_gate(parts):
+    return (len(parts) == 20
+            and all(row_ok(t[0], t[1], t[2], t[3]) for t in parts)
+            and sum(t[2] * t[2] for t in parts) == NORB
+            and sum(t[3] * t[3] for t in parts) == NPOC
+            and sum(t[2] * t[3] for t in parts) == NCP)
+
+
+BAD_PARTS = list(PARTS)
+u = BAD_PARTS[0]
+BAD_PARTS[0] = (u[0], u[1], u[2] + 1, u[3], u[4])
+PART_MUT_REJECT = (table_bridge_gate(PARTS) and not table_bridge_gate(BAD_PARTS))
+
+CEIL_TERMS = [t[1] * min(t[2], t[3]) for t in PARTS]
+FLOOR_TERMS = [t[1] * max(0, t[2] - t[3]) for t in PARTS]
+BAD_FLOOR_TERMS = list(FLOOR_TERMS)
+BAD_FLOOR_TERMS[0] += 1
+FLOOR_MUT_REJECT = (sum(CEIL_TERMS) + sum(FLOOR_TERMS) == SUM_DM
+                    and sum(CEIL_TERMS) + sum(BAD_FLOOR_TERMS) != SUM_DM)
+
+# ------------------------------------------------------------------
 # 12. source hygiene
 # ------------------------------------------------------------------
 
@@ -1116,8 +1267,8 @@ RSSMB = RSS // 1048576 if RSS > 10000000 else RSS // 1024
 # gates
 # ------------------------------------------------------------------
 
-emit("all numbers below are exact computational identities;"
-     " no floating point enters any gate")
+emit("all scientific counts and algebraic gates below use exact arithmetic;"
+     " C34 reports environment-dependent resource observations")
 
 gate(NCAND == 2672 and NKEPT == 400 and FLOOR == 6 and NS == 15800
      and SIZES == [24] and NPI == 192 and NCOV == 192 and GENERIC, "C0",
@@ -1206,7 +1357,7 @@ gate(IMPL_OK and NCHK == NCOV, "C18",
      .format(NCHK))
 
 gate(FREE_OK, "C19",
-     "free action: {0} = {1} times {2}, and {2} = {1} over {3} times {4}"
+     "free action: {0} = {1} times {2}, and {2} = {1} over ({3} times {4})"
      .format(NCELL, NGRP, NCP, NSP, NSC))
 
 gate(PART_OK and NPART == 20 and NCEN == 20 and SUM_DIM == NPI, "C20",
@@ -1268,9 +1419,36 @@ gate(ASCII_OK and NO_PC and NO_TAB and NO_EM and NO_D9 and BAN_OK, "C33",
      " dash {3}, {4} barred strings absent {5}"
      .format(yn(ASCII_OK), yn(NO_TAB), yn(NO_PC), yn(NO_EM), NBAN, yn(BAN_OK)))
 
-gate(ELAPSED < 900 and RSSMB < 2500 and OUT[0] + 200 < 5200, "C34",
+gate(ELAPSED < 900 and RSSMB < 2500 and OUT[0] + 1000 < 5200, "C34",
      "budget: {0} s under 900, {1} MB under 2500, stdout under 5200 with"
-     " {2} to spare".format(nd(ELAPSED), nd(RSSMB), nd(5200 - 200 - OUT[0])))
+     " {2} to spare".format(nd(ELAPSED), nd(RSSMB), nd(5200 - 1000 - OUT[0])))
+
+gate(NCO_PAIR == 15168 and GEOM_EXACT and GEOM_MUT_REJECT, "C35",
+     "exact geometry: {0} co-pairs in {1} symmetry classes are interior-disjoint;"
+     " the sample false negative has margin 1/11".format(NCO_PAIR, NPAIR_REP))
+
+gate(DIRECT_FIXED_OK, "C36",
+     "direct corner-set action bypasses stored permutations and gives fixed sets"
+     " {0}, {1}, {2}, {3}".format(DIRECT_P[0], DIRECT_P[1], DIRECT_C[0],
+                                  DIRECT_C[1]))
+
+gate(ACTION_MUT_REJECT, "C37",
+     "group mutation: duplicating one stabiliser image is rejected as a"
+     " non-bijection while the accepted stabiliser passes")
+
+gate(FREE_MUT_REJECT, "C38",
+     "freeness mutation: changing the zero non-identity cell-fixed count to one"
+     " is rejected")
+
+gate(PART_MUT_REJECT, "C39",
+     "part-table mutation: increasing one multiplicity is rejected by the"
+     " row-and-bridge validator")
+
+gate(FLOOR_MUT_REJECT, "C40",
+     "floor mutation: increasing one floor term is rejected by the rowwise"
+     " ceiling-plus-floor identity")
 
 emit("characters printed before this line: {0}".format(nd(OUT[0])))
 emit("TOTAL: PASS={0} FAIL={1}".format(STAT[0], STAT[1]))
+if STAT[1]:
+    raise SystemExit(1)

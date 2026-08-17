@@ -24,6 +24,8 @@ import resource
 from fractions import Fraction as FR
 import numpy as np
 
+AUDIT_TIMEOUT_SEC = 300
+
 PRIME = 1000003
 PRIME2 = 1000033
 

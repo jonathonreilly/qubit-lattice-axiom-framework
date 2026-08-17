@@ -3,8 +3,32 @@
 Date: 2026-08-11
 Authority: none
 Audit: unset.
+Status: proposed_retained
 Claim type: bounded_theorem
 Constitutional effect: none.
+
+## Trace gate
+
+- `trace_class: frontier_discovery`
+- `target_claim_id: null`
+- `target_blocker_text: null`
+- `source_of_blocker_text: frontier_question`
+- `reachability_to_target: unknown_frontier`
+- `artifact_role: theorem`
+- `next_trace_action: identify whether the finite normalizer-rigidity theorem has a canonical downstream consumer; none is claimed here`
+
+## Status contract
+
+- `actual_current_surface_status: bounded-support`
+- `target_claim_type: bounded_theorem`
+- `trace_class: frontier_discovery`
+- `reachability_to_target: unknown_frontier`
+- `conditional_surface_status: null`
+- `hypothetical_axiom_status: null`
+- `admitted_observation_status: null`
+- `claim_type_reason: exact finite combinatorial and group-action identities for the declared unit four-cube object; no broader physical or lattice-wide identification`
+- `audit_required_before_effective_retained: true`
+- `bare_retained_allowed: false`
 
 **One combinatorial condition collapses the family from 3321960 to 48, and the 48 is a group index.** Cycles 771 to 775 found the cover incidence sitting inside a family of 3321960 four-table sums that no linear instrument separates: the family shares its rank, its kernel, its regularity, its block-rank profile, and after the finest label of `cycle 775` there were still 30720 candidates. This cycle imposes instead a condition that is part of the object's own definition — every row of the member must be a cover of the cell, not merely some 8-element set of pieces — and 48 members survive. That 48 is not a measurement. A family member is a union of orbits of the diagonal action, so if its rows are the covers under a bijection then that bijection commutes with the whole group; the group is transitive on the 192 covers with a point stabiliser of order 2, so the commuting bijections are the right multiplications by the normalizer of that stabiliser, and there are exactly as many as the index 96 over 2.
 

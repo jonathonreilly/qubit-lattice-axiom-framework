@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/physical_cell_cutting_normalizer_rigidity_cycle776_2026_08_11.py
-runner_sha256: 92f3d7a3b10c6f7cd85549e8ded28bfdcc70d27759fe72fd8879490387b1a688
+runner_sha256: 1ba7250a5b67c3d2923859fcadc946d94885e6aecce4c8a7daadbc87803956dd
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 18.83
+elapsed_sec: 14.42
 status: ok
 ----- stdout -----
 PASS G0 2672 unit-determinant subsets, 400 at cost floor 6, 15800 cuttings of 24, 192 pieces in 1975 each, 379200 slots, 192 covers of 8
@@ -32,7 +32,7 @@ PASS G22 the partner image of the incidence is the incidence with its pieces mov
 PASS G23 the 48 relabellings close under composition, all 2304 composites, and carry the incidence to 48 distinct members: simply transitive
 PASS G24 the ladder: 3321960 members, 30720 carrying the label multiset, 48 with every row a cover, 4 carrying both, 2 whose row map is itself a map
 PASS G25 honest negative: 48 not 2 from rows alone; no rank separates them; 46 need a map outside the group; the pair agrees on all ranks and labels
-elapsed 18 s, peak resident 212 MB
+elapsed 14 s, peak resident 254 MB
 TOTAL: PASS=26 FAIL=0
 
 ----- stderr -----

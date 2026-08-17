@@ -1,6 +1,6 @@
 {
- "edge_count": 15992,
- "node_count": 5556,
+ "edge_count": 15995,
+ "node_count": 5557,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -433,6 +433,10 @@
   "admissibility_dirac_kahler_constraint_quotient_coupling_bounded_theorem_note_2026-08-16": {
    "deps_hash": "2f625303199c",
    "out_degree": 4
+  },
+  "admissibility_dirac_kahler_curved_carrier_dependency_bounded_theorem_note_2026-08-17": {
+   "deps_hash": "d58da1da5269",
+   "out_degree": 3
   },
   "admissibility_dirac_kahler_even_parity_paired_branch_bounded_theorem_note_2026-08-15": {
    "deps_hash": "7fd8a533f9c6",

@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_curved_carrier_dependency_2026_08_17.py
+runner_sha256: c4879d203f67c79d1d227420cbd4d8254e7afab8502e8adcee4a5e967aa20889
+input_fingerprint_sha256: 0ce7c933b9d5c20e4a3695d0735cacbf6fa902d0c06b45d157eb16b2ef935b7b
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 3.56
+status: ok
+----- stdout -----
+[PASS] A-authority: Block 127, ancestors 126--103, and Block 105 curved-fixture blobs are pinned
+[PASS] B-no-global-curved-action: Block 105 supplies Hodge only; two inequivalent exact chart completions remain pentadiagonal
+[PASS] C-translation-breakdown: rank[Q_curved,U_x]=32 in both displayed shifted-chart completions
+[PASS] D-the-companion-obstruction: both directions have rank-3 step-1/3 coefficients with kernel (0,1,0,0)
+[PASS] E-the-consequence-logic: next-state solves are non-unique along the kernel, which survives rebracketing
+[PASS] F-the-pipeline-census: bands pass; companions and momentum fail; downstream stages are undefined
+[PASS] G-the-dependency-statement: B--F plus Block 105 section 12 item 1 make the common differential the live dependency
+[PASS] H-scope: curved/Schur/dependency/N1--N8/W1/N5 and no-go/TOE firewalls are present
+AUTHORITY: parent=ca6792464f60598013a3700f99c02a467af64b7a; Block105=d06066c2b908aaca0779625d831dfb10620cf34d; axiom=bc23300becfe4e4db57153c0e94cfcdf2338da71
+CURVED_ACTIONS: origins=((1,0),(1,1)); Q_(1,1)[10,11]-Q_(1,0)[10,11]=-89/140; time bands=(-2,-1,0,1,2)
+TRANSLATION: rank[Q, U_x]=(32, 32); the momentum decomposition fails at full rank
+SCHUR: directions=(+2,-2); singular steps=(1,3); ranks=3; kernel=(0,1,0,0) in both displayed completions
+CONSEQUENCE: the next state has the exact family x+lambda(0,1,0,0); both adjacent two-slice bracketings contain the same coefficient
+PIPELINE: band structure=OK; companions=FAIL; momentum=FAIL; monodromy/stable-split/completion=UNDEFINED
+N5: per_element: shifted-chart completions are pairwise inequivalent with exact first difference -89/140, every completion remains pentadiagonal, and every spatial-shift commutator has full rank 32
+per_site: one Grassmann mode per fine site on the certified curved carrier
+per_mode: checked and not defined — the displayed completions admit no spatial-momentum decomposition
+per_block: every displayed completion in both directions has singular two-slice Schur forward coefficients at the displayed steps with fixed coordinate kernel (0,1,0,0), and that kernel survives every displayed regrouping
+lattice_wide: checked and not executed — the common nilpotent patch/frame differential, scalar-quotient theorem block, cross-lane facet-charge bridge, actual ADM/history transporter completion, joint gravity, gravity constraint quotient beyond the displayed carrier, Records, audit retention, and TOE closure remain open
+RESULT: the curved carrier admits no global action, no momentum decomposition, and no companion construction in every displayed chart completion — the dependency on the Block 105 common differential is a theorem, not a suspicion
+DECISION_CUT: construct the common differential; run the scalar-quotient block and the cross-lane bridge; reject curved-OS attempts that bypass item 1
+TOE: zero obligation retirement; no TOE percentage moves; retained-positive end-to-end theory count remains zero; gravity constraint quotient remains unexecuted; actual ADM/history transporter remains open
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

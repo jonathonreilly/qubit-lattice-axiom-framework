@@ -1,0 +1,62 @@
+===== runner cache v1 =====
+runner: scripts/support_drop_scale_ratios_b8_2026_08_15.py
+runner_sha256: d15d52ccf905e63fd08f24152dd6f871ddfe5047e04d227a84ad61b5c224212c
+input_fingerprint_sha256: 7c55c7dcd13886cb990b8821e0df7abb4744bdf3066469e96441f7afd88136f2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/SUPPORT_DROP_SCALE_RATIOS_B8_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+claim_scope: Axis and body-diagonal arrival ratios under the named support-drop hop-cost on B_8(0) are reported for k=1..4. Displayed, not adopted.
+PASS: audit-input-paths declared inputs are the source note and the current axiom memo
+PASS: audit-input-literal AUDIT_INPUT_PATHS is a static string-literal tuple
+PASS: claim-scope note claim_scope matches the displayed scoring statement
+PASS: displayed-not-adopted the rule is displayed, not adopted
+PASS: not-in-admissibility ν is not written into Admissibility
+PASS: not-attach-l1 the displayed rule is not attached to L1
+PASS: uniqueness-not-claimed uniqueness among hop-costs is not claimed
+PASS: no-axiom-edit note records hypothetical axiom status no edit
+PASS: forbidden-absent forbidden phrases are absent from the source note
+n_sites 833
+t(1,0,0) 3
+t(1,1,1) 5
+axis_ratio_sq[1] 9
+diag_ratio_sq[1] 25/3
+reverse[1] True
+t(2,0,0) 6
+t(2,2,2) 8
+axis_ratio_sq[2] 9
+diag_ratio_sq[2] 16/3
+reverse[2] True
+t(3,0,0) 9
+t(3,3,3) None
+axis_ratio_sq[3] 9
+diag_ratio_sq[3] None
+reverse[3] None
+t(4,0,0) 10
+t(4,4,4) None
+axis_ratio_sq[4] 25/4
+diag_ratio_sq[4] None
+reverse[4] None
+dijkstra_calls 1
+PASS: one-dijkstra exactly one Dijkstra ran
+PASS: ball-b8 B_8(0) has 833 sites and 832 nonzero sites
+PASS: reachable every site of B_8(0) is reached
+PASS: axis-arrivals t(k,0,0) is 3,6,9,10 for k=1,2,3,4
+PASS: diag-arrivals t(k,k,k) is 5,8 for k=1,2 and omitted for k=3,4
+PASS: reverse-k1 t(1,0,0)^2 / 1^2 > t(1,1,1)^2 / 3
+PASS: reverse-k2 t(2,0,0)^2 / 4 > t(2,2,2)^2 / 12
+PASS: gap-open the same-k ratio gap stays open at both available scales
+PASS: note-records-times note records the computed arrivals and omitted sites
+PASS: note-records-reverse note records both same-k reverse inequalities
+PASS: not-leftover-of-one-pair the table is not leftover of the mixed-scale pair
+PASS: seed-and-axis-clauses seed-exit and both-weights-1 cost 3; support increase costs 1
+PASS: axiom-untouched the axiom memo is an input only and still names the four axioms
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

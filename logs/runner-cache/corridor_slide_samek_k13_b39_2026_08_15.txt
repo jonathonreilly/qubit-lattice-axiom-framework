@@ -1,0 +1,51 @@
+===== runner cache v1 =====
+runner: scripts/corridor_slide_samek_k13_b39_2026_08_15.py
+runner_sha256: 53affb6848ef79c3d5b598b343e2fce774daf3ca479e7030764ccc641f4c11d1
+input_fingerprint_sha256: 767d4cdea13ca3746b39f60c33f8283c38ea91dd6c650a50c920ede579ac781e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.47
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/CORRIDOR_SLIDE_SAMEK_K13_B39_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+claim_scope: Same-k reverse at k=13 under the named corridor-slide hop-cost on B_39(0) is reported. Displayed, not adopted.
+PASS: audit-input-paths declared inputs are the source note and the current axiom memo
+PASS: audit-input-literal AUDIT_INPUT_PATHS is a static string-literal tuple
+PASS: claim-scope note claim_scope matches the displayed scoring statement
+PASS: displayed-not-adopted the rule is displayed, not adopted
+PASS: not-in-admissibility μ is not written into Admissibility
+PASS: not-attach-l1 the displayed rule is not attached to L1
+PASS: uniqueness-not-claimed uniqueness among hop-costs is not claimed
+PASS: no-axiom-edit note records hypothetical axiom status no edit
+PASS: forbidden-absent forbidden phrases are absent from the source note
+n_sites 82239
+t(13,0,0) 23
+t(13,13,13) 41
+t(13,0,0)^2/169 529/169
+t(13,13,13)^2/507 1681/507
+3t_axis^2 1587
+t_body^2 1681
+reverse False
+t(39,0,0) 53
+t(36,0,0) 46
+dijkstra_calls 1
+witness_mu_costs [3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3, 3]
+witness_mu_sum 23
+PASS: t-13000-131313 t(13,0,0)=23 and t(13,13,13)=41
+PASS: reverse-k13 t(13,0,0)^2/169 > t(13,13,13)^2/507 does not hold
+PASS: one-dijkstra exactly one Dijkstra ran
+PASS: ball-b39 B_39(0) has 82239 sites and 82238 nonzero sites
+PASS: reachable every site of B_39(0) is reached
+PASS: note-records-times note records the two computed arrivals
+PASS: note-records-reverse-products note records the integer reverse products
+PASS: not-leftover-of-nu μ prices the corridor-slide hop at 3 while ν prices it at 1
+PASS: not-leftover-of-b36 (13,13,13) lies outside B_36(0) and the note says so
+PASS: seed-and-corridor-clauses seed-exit, both-weights-1, support-drop, and corridor-slide cost 3; other hops cost 1
+PASS: axiom-untouched the axiom memo is an input only and still names the four axioms
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

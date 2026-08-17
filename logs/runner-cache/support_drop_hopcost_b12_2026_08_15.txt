@@ -1,0 +1,61 @@
+===== runner cache v1 =====
+runner: scripts/support_drop_hopcost_b12_2026_08_15.py
+runner_sha256: 2e442c9d0a727b28356e1028242cfc3ee9a096f1b534f36fe5465151c7f332db
+input_fingerprint_sha256: 6ac986dcb09e46c130462c25f495b58101f0020f24e59461da11a69aed046ee5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/SUPPORT_DROP_HOPCOST_B12_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+claim_scope: On B_12(0), the named support-drop hop-cost is scored for diamond reverse and for var(|v|_2/t) vs ℓ¹. Displayed, not adopted.
+PASS: audit-input-paths declared inputs are the source note and the current axiom memo
+PASS: audit-input-literal AUDIT_INPUT_PATHS is a static string-literal tuple
+PASS: claim-scope note claim_scope matches the displayed scoring statement
+PASS: displayed-not-adopted the rule is displayed, not adopted
+PASS: not-in-admissibility ν is not written into Admissibility
+PASS: not-attach-l1 the displayed rule is not attached to L1
+PASS: uniqueness-not-claimed uniqueness among hop-costs is not claimed
+PASS: no-axiom-edit note records hypothetical axiom status no edit
+PASS: forbidden-absent forbidden phrases are absent from the source note
+n_sites 2625
+t(4,0,0) 10
+t(8,0,0) 14
+t(12,0,0) 20
+t(2,2,2) 8
+t(4,4,4) 14
+12 t(4,0,0)^2 1200
+16 t(2,2,2)^2 1024
+12 t(8,0,0)^2 2352
+16 t(4,4,4)^2 3136
+diamond_reverse True
+double_diamond_reverse False
+var_nu 0.00666073807018
+var_l1 0.00944742571906
+dijkstra_calls 1
+PASS: one-dijkstra exactly one Dijkstra ran
+PASS: ball-b12 B_12(0) has 2625 sites and 2624 nonzero sites
+PASS: reachable every site of B_12(0) is reached
+PASS: t-400 t(4,0,0) = 10
+PASS: t-800 t(8,0,0) = 14
+PASS: t-1200 t(12,0,0) = 20
+PASS: t-222 t(2,2,2) = 8
+PASS: t-444 t(4,4,4) = 14
+PASS: diamond-reverse 12 t(4,0,0)^2 > 16 t(2,2,2)^2
+PASS: double-diamond-not-reverse 12 t(8,0,0)^2 > 16 t(4,4,4)^2 fails
+PASS: note-records-times note records the computed arrivals and both product pairs
+PASS: var-nu population variance under ν matches the reported value
+PASS: var-l1 population variance under ℓ¹ matches the reported value
+PASS: var-nu-smaller var(|v|_2/t) is strictly smaller under ν than under ℓ¹
+PASS: note-records-variances note records both variances and the comparison
+PASS: not-leftover-of-b8 t(8,0,0) on B_12(0) is 14, not the B_8 leftover 16
+PASS: seed-and-axis-clauses seed-exit and both-weights-1 cost 3; support increase costs 1
+PASS: axis-boundary-last-step (12,0,0) has only the axis in-ball neighbor (11,0,0)
+PASS: axiom-untouched the axiom memo is an input only and still names the four axioms
+TOTAL: PASS=28 FAIL=0
+
+----- stderr -----
+

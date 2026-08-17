@@ -1,6 +1,6 @@
 {
- "edge_count": 15743,
- "node_count": 5545,
+ "edge_count": 15744,
+ "node_count": 5546,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -4489,6 +4489,10 @@
   "equal_channel_energy_reduces_to_equipartition_surface_dictionary_residual_bounded_note_2026-07-02": {
    "deps_hash": "202f0e621242",
    "out_degree": 4
+  },
+  "equal_weight_hopcost_b16_bounded_theorem_note_2026-08-15": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "equivalence_principle_harness_note": {
    "deps_hash": "e3b0c44298fc",

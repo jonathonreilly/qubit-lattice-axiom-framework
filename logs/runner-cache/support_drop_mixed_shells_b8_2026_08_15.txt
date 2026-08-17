@@ -1,0 +1,55 @@
+===== runner cache v1 =====
+runner: scripts/support_drop_mixed_shells_b8_2026_08_15.py
+runner_sha256: 8c908c6ad6997410cfd7997c213127a3aa3b7ff92228a16dab27d9f033b0c94d
+input_fingerprint_sha256: 2017b1ad56448ce37150d6d255ccc66f5e832b23a61d372fffcee277268eedd4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/SUPPORT_DROP_MIXED_SHELLS_B8_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+dijkstra_count: 1
+external_scientific_inputs: none; the named support-drop hop-cost is a declared displayed rule on B_8(0)
+claim_scope: Mixed t=const shells under the named support-drop hop-cost on B_8(0) are named. Displayed, not adopted.
+PASS: audit-input-paths declared inputs are exactly the source note and current axiom memo
+PASS: ball-cardinality B_8(0) is the closed ℓ¹ ball of radius 8 and has 833 sites
+PASS: one-dijkstra-complete the single Dijkstra reaches every site of B_8(0)
+PASS: origin-time-zero t(0,0,0) = 0 and the origin is excluded from the mixed-shell census
+arrival_values=[3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 16]
+n_arrival_values=12
+single_radius_t=[3, 4, 11, 12, 13, 16]
+mixed_t=[5, 6, 7, 8, 9, 10]
+mixed t=5 sites=32 n_|v|_2^2=2 radii=[3, 5]
+mixed t=6 sites=66 n_|v|_2^2=4 radii=[4, 6, 8, 10]
+mixed t=7 sites=96 n_|v|_2^2=4 radii=[9, 11, 13, 17]
+mixed t=8 sites=140 n_|v|_2^2=5 radii=[12, 14, 18, 20, 26]
+mixed t=9 sites=198 n_|v|_2^2=8 radii=[9, 17, 19, 21, 25, 27, 29, 37]
+mixed t=10 sites=258 n_|v|_2^2=10 radii=[16, 22, 24, 26, 30, 32, 34, 38, 40, 50]
+reverse_critical_t=8 sites=140 n_|v|_2^2=5 mixed=True
+PASS: twelve-arrival-values B_8(0)\{0} carries exactly twelve distinct arrival values
+PASS: six-of-twelve-mixed exactly six of those twelve arrival values mix Euclidean radii
+PASS: named-mixed-shells each mixed t is named with its site count and distinct |v|_2^2 count
+PASS: mixed-t5 t=5 has 32 sites and 2 distinct |v|_2^2 [3, 5]
+PASS: mixed-t6 t=6 has 66 sites and 4 distinct |v|_2^2 [4, 6, 8, 10]
+PASS: mixed-t7 t=7 has 96 sites and 4 distinct |v|_2^2 [9, 11, 13, 17]
+PASS: mixed-t8 t=8 has 140 sites and 5 distinct |v|_2^2 [12, 14, 18, 20, 26]
+PASS: mixed-t9 t=9 has 198 sites and 8 distinct |v|_2^2 [9, 17, 19, 21, 25, 27, 29, 37]
+PASS: mixed-t10 t=10 has 258 sites and 10 distinct |v|_2^2 [16, 22, 24, 26, 30, 32, 34, 38, 40, 50]
+PASS: t8-present-and-mixed the reverse-critical t=8 shell is present and mixes five Euclidean radii
+PASS: t8-contains-body-diagonal t(2,2,2)=8, so the reverse-critical body-diagonal type sits in the mixed t=8 shell
+PASS: not-leftover-mixed-bit the census is the six named mixed arrivals with radii counts, not a leftover six-mix bit
+PASS: named-cost-clauses ν is 3 on seed-exit, both-weights-1, and support-drop, else 1
+PASS: forbidden-tokens the note avoids the forbidden tokens
+PASS: displayed-not-adopted the mixed shells are displayed, not adopted
+PASS: nu-not-admissibility the note refuses to write ν into Admissibility, and the axiom memo is untouched by this claim
+PASS: l1-not-attached L1 is not attached as a hop-cost, comparator, or leftover
+PASS: claim-scope-text the note states the declared mixed-shell claim_scope
+PASS: note-names-mixed-arrivals the note names each mixed t with its distinct-radius count and site count
+PASS: note-records-t8-mixed the note displays the reverse-critical t=8 shell as mixed, not adopted
+TOTAL: PASS=24 FAIL=0
+
+----- stderr -----
+

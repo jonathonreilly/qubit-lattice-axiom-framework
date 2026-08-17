@@ -1,0 +1,55 @@
+===== runner cache v1 =====
+runner: scripts/unequal_radius_tick_from_neighbor_record_2026_08_15.py
+runner_sha256: 9f35031f3d8c451d95247a93cdb7e31ed474d90af68935312e50affe84c2c80f
+input_fingerprint_sha256: 90e817aadc75d34cab9652b79d50eb7e06ec912294a7c56584c08cb376d2f86b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+unequal-radius tick from neighbor Record
+AUDIT_INPUT_PATHS:
+  docs/UNEQUAL_RADIUS_TICK_FROM_NEIGHBOR_RECORD_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+seeds=((-2, -2, -2), (-2, -2, -1), (-2, -2, 1))
+radii=(2, 1, 3)
+v=(-3, -3, -1)
+unread=True
+sigma=(1, 0, 1, 0, 1, 1)
+ticks=(1, None, 1, None, 3, 2)
+record_6tuple=((1, 1), (0, None), (1, 1), (0, None), (1, 3), (1, 2))
+equals_sigma_t=True
+occupancy_alone=False
+occupied_clocks=(1, 1, 3, 2)
+common_projector=((1, 0), (0, 0))
+common_bloch=(0, 0, 1)
+l1_bloch_occupancy=(1, 0, 1, 0, 1, 1)
+clocks_not_function_of_M2=True
+Record_as_M2_supplies_t=False
+PASS: audit-input-paths | AUDIT_INPUT_PATHS is the required static two-string literal tuple
+PASS: source-lattice
+PASS: source-admissibility
+PASS: source-record-qubit
+PASS: host-lex-first-breaker | sigma=(1, 0, 1, 0, 1, 1) ticks=(1, None, 1, None, 3, 2)
+PASS: theorem-1-six-tuple-equals-sigma-t | rho=((1, 1), (0, None), (1, 1), (0, None), (1, 3), (1, 2))
+PASS: theorem-1-not-occupancy-alone | occupied_clocks=(1, 1, 3, 2)
+PASS: theorem-2-clocks-not-m2-function | bloch=(0, 0, 1) bloch_occ=(1, 0, 1, 0, 1, 1)
+PASS: theorem-2-record-as-m2-does-not-supply-t
+PASS: claim-scope
+PASS: displayed-not-adopted
+PASS: l1-not-attached
+PASS: not-leftover-delloc-uneqext
+PASS: admissibility-record-unedited
+PASS: forbidden-phrases
+PASS: no-axiom-edit
+per_element: scored the displayed (occupied?, clock-or-none) 6-tuple against (σ,t) and against one common M_2 lock
+per_site: scored only the uneqrad lex-first star at v
+per_mode: no spectral calculation; occupancy, ticks, and M_2 lock only
+per_block: 3-ball unequal-radius host only; no fourth ball
+lattice_wide: checked and not executed — one finite 6-star, not a lattice-wide rule
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

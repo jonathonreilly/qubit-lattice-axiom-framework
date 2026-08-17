@@ -1,0 +1,57 @@
+===== runner cache v1 =====
+runner: scripts/cost3_reversal_minkowski_fit_2026_08_15.py
+runner_sha256: d49f6b9dac86fb37bb48056857082acfa7ff01fe760c080b24ba0c5ffec64b79
+input_fingerprint_sha256: e3028f982dc74a18ac9d80c27c7928904dbaa3288d5560e0db487ef23bbe7d1d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.44
+status: ok
+----- stdout -----
+external_scientific_inputs: none; B_3(0), G+, and {1,2,3} are theorem hypotheses
+package_local_integrity_reads: runner source, proposed source note, and live axiom memo
+measure_boundary: exact integer path costs and |v|_2/t(v) on the radius-3 ball
+negative_scope: displayed two-end costs are not written into Admissibility
+orbit_weights: ((0, 1), (1, 0), (1, 1), (1, 2), (2, 1), (2, 2), (2, 3), (3, 2))
+n_rev: 405
+var_l1: 0.020739455141549752323752040186790329037465628894204248843537510712996300295163074
+var_lex: 0.022275669698478935399941429012461698890711551762434583008984468877075181255727571
+lex_first_reversal: (1, 1, 3, 1, 1, 1, 1, 1)
+lex_first_reversal_times: (7, 3)
+best_c: (3, 1, 3, 1, 1, 3, 1, 1)
+best_times: (9, 5)
+best_var: 0.00017588571745760096138718838683272819756816364739082495726561276123916240347871252
+best_type_times: (3, 6, 4, 9, 7, 5)
+n_tied_at_best: 27
+PASS: gplus-order proper cubic rotations number 24
+PASS: ball-size B_3(0) has 63 sites
+PASS: nonzero-sites the scored set B_3(0)\{0} has 62 sites
+PASS: thm1-orbit-count endpoint occupancy pairs form 8 G+ orbits
+PASS: thm1-reverse-count exactly 405 of the 6561 assignments reverse the diamond order
+PASS: thm1-lex-reversal the lex-first reversing filling is (1,1,3,1,1,1,1,1) with times (7, 3)
+PASS: thm1-var-l1-note the note reports the ell^1 population variance on the 62 sites
+PASS: thm1-var-lex-note the note reports the lex-first reversal population variance
+PASS: thm1-vars-computed computed ell^1 and lex-first-reversal variances match the displayed digits
+PASS: thm2-lex-first-minimizer the lex-first variance minimizer is (3,1,3,1,1,3,1,1)
+PASS: thm2-arrival-times that filling realizes t(3,0,0)=9 and t(1,1,1)=5
+PASS: thm2-note-tuple the note exhibits the lex-first minimizer and those arrival times
+PASS: thm2-var-best-note the note reports the minimizer population variance
+PASS: thm2-var-best-computed computed minimizer variance matches the displayed digits and beats both baselines
+PASS: thm2-type-times orbit arrival times on the minimizer are (3,6,4,9,7,5)
+PASS: thm2-degeneracy exactly 27 reversing fillings share the minimizing arrival table
+PASS: thm2-not-mink3-leftover the note states the variance minimizer is not a leftover of existence or of one map
+PASS: thm3-displayed-not-adopted the note reports the minimizer as displayed, not adopted
+PASS: thm3-no-l1-law the note does not attach an ell^1 path-length law
+PASS: claim-scope claim_scope reports the 405-map variance minimizer only
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: forbidden-strings note, runner, and axiom avoid the dispatch-forbidden phrases
+PASS: no-axiom-cost the live axiom memo does not host a two-end occupancy hop cost
+PASS: claim-type-and-gate bounded theorem type and a passing N1-N8 gate are source-visible
+per_element: checked exactly — each directed B_3(0) edge carries one inward occupancy pair
+per_site: checked exactly — |v|_2/t(v) is scored on each of the 62 nonzero sites
+per_mode: checked exactly — all 405 reversing {1,2,3} fillings
+per_block: checked exactly — population variance of |v|_2/t(v) on B_3(0)\{0}
+lattice_wide: checked and not executed — no Admissibility cost and no path-length law are adopted
+TOTAL: PASS=24 FAIL=0
+
+----- stderr -----
+

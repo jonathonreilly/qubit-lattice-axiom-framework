@@ -1,0 +1,71 @@
+===== runner cache v1 =====
+runner: scripts/perp_mask_three_ball_realization_2026_08_15.py
+runner_sha256: 680047c0f9bd4954a70014cc6ec8a2d048ede57e17da7828c4e7fa66dfebc91d
+input_fingerprint_sha256: 444da377349d27e6f77e63e50cfaa003202b029088b8ec114b6a2ee1c7280fa1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.62
+status: ok
+----- stdout -----
+perp-mask 3-ball realization
+AUDIT_INPUT_PATHS:
+  docs/PERP_MASK_THREE_BALL_REALIZATION_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+seed_box_card=125
+v_box_card=729
+radii_card=24
+N_perp=12
+N_prefix=2000
+N_prefix_real=12
+N_real=12
+first_star=(((-2, -2, -2), (-2, -2, -1), (-2, -2, 0)), (2, 1, 2), (-3, -3, -1), (1, 0, 1, 0, 1, 1))
+lex_first_hosts:
+  (0, 1, 0, 1, 1, 1) (((-2, -2, -2), (-2, -2, -1), (-2, -2, 0)), (2, 1, 2), (-1, -1, -1))
+  (0, 1, 1, 0, 1, 1) (((-2, -2, -2), (-2, -2, -1), (-2, -2, 0)), (2, 1, 2), (-1, -3, -1))
+  (0, 1, 1, 1, 0, 1) (((-2, -2, -2), (-2, -2, -1), (-2, 0, -2)), (1, 1, 2), (-1, -1, -1))
+  (0, 1, 1, 1, 1, 0) (((-2, -2, -2), (-2, -2, -1), (-2, 0, -2)), (1, 2, 1), (-1, -1, -2))
+  (1, 0, 0, 1, 1, 1) (((-2, -2, -2), (-2, -2, -1), (-2, -2, 0)), (2, 1, 2), (-3, -1, -1))
+  (1, 0, 1, 0, 1, 1) (((-2, -2, -2), (-2, -2, -1), (-2, -2, 0)), (2, 1, 2), (-3, -3, -1))
+  (1, 0, 1, 1, 0, 1) (((-2, -2, -2), (-2, -2, -1), (-2, 0, -2)), (1, 1, 2), (-3, -1, -1))
+  (1, 0, 1, 1, 1, 0) (((-2, -2, -2), (-2, -2, -1), (-2, 0, -2)), (1, 2, 1), (-3, -1, -2))
+  (1, 1, 0, 1, 0, 1) (((-2, -2, -2), (-2, -2, -1), (0, -2, -2)), (1, 1, 2), (-1, -1, -1))
+  (1, 1, 0, 1, 1, 0) (((-2, -2, -2), (-2, -2, -1), (0, -2, -2)), (1, 2, 1), (-1, -1, -2))
+  (1, 1, 1, 0, 0, 1) (((-2, -2, -2), (-2, -2, -1), (0, -2, -2)), (1, 1, 2), (-1, -3, -1))
+  (1, 1, 1, 0, 1, 0) (((-2, -2, -2), (-2, -2, -1), (0, -2, -2)), (1, 2, 1), (-1, -3, -2))
+PASS: audit-input-paths | AUDIT_INPUT_PATHS is the required static two-string literal tuple
+PASS: source-lattice
+PASS: source-admissibility
+PASS: source-unread-qubit
+PASS: perp-mask-count | N_perp=12
+PASS: theorem-1-n-real | N_real=12
+PASS: prefix-2000 | N_prefix=2000 N_prefix_real=12
+PASS: exists-mask-(0, 1, 0, 1, 1, 1) | (((-2, -2, -2), (-2, -2, -1), (-2, -2, 0)), (2, 1, 2), (-1, -1, -1))
+PASS: exists-mask-(0, 1, 1, 0, 1, 1) | (((-2, -2, -2), (-2, -2, -1), (-2, -2, 0)), (2, 1, 2), (-1, -3, -1))
+PASS: exists-mask-(0, 1, 1, 1, 0, 1) | (((-2, -2, -2), (-2, -2, -1), (-2, 0, -2)), (1, 1, 2), (-1, -1, -1))
+PASS: exists-mask-(0, 1, 1, 1, 1, 0) | (((-2, -2, -2), (-2, -2, -1), (-2, 0, -2)), (1, 2, 1), (-1, -1, -2))
+PASS: exists-mask-(1, 0, 0, 1, 1, 1) | (((-2, -2, -2), (-2, -2, -1), (-2, -2, 0)), (2, 1, 2), (-3, -1, -1))
+PASS: exists-mask-(1, 0, 1, 0, 1, 1) | (((-2, -2, -2), (-2, -2, -1), (-2, -2, 0)), (2, 1, 2), (-3, -3, -1))
+PASS: exists-mask-(1, 0, 1, 1, 0, 1) | (((-2, -2, -2), (-2, -2, -1), (-2, 0, -2)), (1, 1, 2), (-3, -1, -1))
+PASS: exists-mask-(1, 0, 1, 1, 1, 0) | (((-2, -2, -2), (-2, -2, -1), (-2, 0, -2)), (1, 2, 1), (-3, -1, -2))
+PASS: exists-mask-(1, 1, 0, 1, 0, 1) | (((-2, -2, -2), (-2, -2, -1), (0, -2, -2)), (1, 1, 2), (-1, -1, -1))
+PASS: exists-mask-(1, 1, 0, 1, 1, 0) | (((-2, -2, -2), (-2, -2, -1), (0, -2, -2)), (1, 2, 1), (-1, -1, -2))
+PASS: exists-mask-(1, 1, 1, 0, 0, 1) | (((-2, -2, -2), (-2, -2, -1), (0, -2, -2)), (1, 1, 2), (-1, -3, -1))
+PASS: exists-mask-(1, 1, 1, 0, 1, 0) | (((-2, -2, -2), (-2, -2, -1), (0, -2, -2)), (1, 2, 1), (-1, -3, -2))
+PASS: claim-scope
+PASS: displayed-not-adopted
+PASS: l1-not-attached
+PASS: not-leftover-uneqrad
+PASS: admissibility-unedited
+PASS: forbidden-phrases
+PASS: no-axiom-edit
+per_element: N_real, N_prefix, and N_prefix_real are exact integers
+per_site: unread weight-4 uneqrad 3-ball stars in the declared box
+per_mode: no spectral calculation
+per_block: 12 perp masks and 3-ball stars
+lattice_wide: checked and not executed
+TOTAL: PASS=26 FAIL=0
+
+----- stderr -----
+

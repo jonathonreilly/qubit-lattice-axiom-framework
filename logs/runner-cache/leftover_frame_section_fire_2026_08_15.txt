@@ -1,0 +1,64 @@
+===== runner cache v1 =====
+runner: scripts/leftover_frame_section_fire_2026_08_15.py
+runner_sha256: 12e045a34a8b4b6b2883451f1828f7db23d48ff2a35b564c2a8c2101c0021bd6
+input_fingerprint_sha256: 39d6306bfca7190f16844b1e324310df0f4c99ed6304adec8dcc9958f4d4b887
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/LEFTOVER_FRAME_SECTION_FIRE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+external_scientific_inputs: current Lattice, Qubit, Admissibility, and Record sentences; leftover-frame-positive section rebuilt from the July-3 pair; uneqrad lex-first breaker
+construction: U=B_2((-2,-2,-2))∪B_1((-2,-2,-1))∪B_3((-2,-2,1)), unread v=(-3,-3,-1), b=[t(-z)<t(+z)], f leftover-frame-positive
+negative_scope: uneqrad star only; displayed, not adopted; L1 not attached; f not written into Admissibility
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required static two-string literal tuple
+PASS: source-lattice current cubic nearest-neighbor wording is pinned
+PASS: source-admissibility current local-distribution wording is pinned
+PASS: source-covariance Admissibility still requires one proper-cubic covariant rule
+PASS: source-formation-boundary formation site/probability/rate remains outside Admissibility
+PASS: source-qubit Qubit remains M_2(C)
+PASS: source-record lock, permanence, content-only readout, and unreadability at absence are pinned
+U_card=81
+v_in_U=False
+occupancy_mask=(1, 0, 1, 0, 1, 1)
+lock_ticks=(1, None, 1, None, 3, 2)
+unique_full_axis=2
+b=1
+N_pair=48
+N_completions=2
+completions=(+, 0, −, 0, +, −),(−, 0, +, 0, +, −)
+f=(+, 0, −, 0, +, −)
+leftover_frame_sign=1
+f_in_pair=True
+N_new=1
+U_persists=True
+fires=True
+N_fire=1
+score: uneqrad star only
+PASS: g-plus-order finite G+ is exactly the 24 proper cube rotations
+PASS: center-unread the star center v is not already in U
+PASS: u-geometry U is the uneqrad lex-first unequal-radius 3-ball union
+PASS: occupancy-and-ticks σ, t, unique full axis, and b=[t(−z)<t(+z)] match the uneqrad star
+PASS: theorem-1-rebuild-f f(σ,b) is rebuilt as the leftover-frame-positive July-3 pair member
+PASS: theorem-2-fire N_new=1 and U persists, or N_new=0
+PASS: claim-scope the note reports the declared displayed claim_scope
+PASS: displayed-not-adopted the section and fire report are displayed and not written into Admissibility
+PASS: l1-not-attached the note does not attach L1
+PASS: not-leftover-uneqrun the note is not leftover of 10→uneqrun; those 4 were not this f
+PASS: score-uneqrad-star-only stars are not displayed for each of the 12 masks; uneqrad star only
+PASS: admissibility-unedited f is not written into Admissibility
+PASS: forbidden-phrases the forbidden rhetoric strings are absent from the note and runner
+PASS: no-axiom-edit the only axiom authority is the current memo; no cache or axiom rewrite
+per_element: f(σ,b), N_new, and U persistence are exact
+per_site: only the unread star center v is scored
+per_mode: no spectral calculation
+per_block: the six-neighbor star at v only
+lattice_wide: checked and not executed
+TOTAL: PASS=21 FAIL=0
+
+----- stderr -----
+

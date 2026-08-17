@@ -1,6 +1,6 @@
 {
- "edge_count": 15743,
- "node_count": 5545,
+ "edge_count": 15744,
+ "node_count": 5546,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -18617,6 +18617,10 @@
   "two_seam_forest_gauge_polyakov_holonomy_preservation_bounded_theorem_note_2026-07-12": {
    "deps_hash": "5fc9a31251f2",
    "out_degree": 3
+  },
+  "two_seed_named_hopcost_meet_bounded_theorem_note_2026-08-15": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "two_sign_comparison_note_2026-04-10": {
    "deps_hash": "e3b0c44298fc",

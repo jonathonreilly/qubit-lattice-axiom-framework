@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/named_hopcost_face_diagonal_b6_2026_08_15.py
+runner_sha256: 56a55c110d763230bfb99fad413524638bb0c17fb22185dfb8bcf38900424fc5
+input_fingerprint_sha256: 0dd11717eeba29868d34c284398c04d346374c4bcd92462ee9fc6702774e0250
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/NAMED_HOPCOST_FACE_DIAGONAL_B6_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+external_scientific_inputs: none; ρ is a displayed named hop-cost
+claim_scope: Face-diagonal versus axis arrival order under the named hop-cost on B_6(0) is reported. Displayed, not adopted.
+PASS: audit-input-paths declared inputs are exactly the source note and minimal axioms
+PASS: ball-cardinality B_6(0) has 377 sites
+PASS: rho-eight-tuple ρ recovers the eight-tuple (3,1,3,1,1,3,1,1)
+PASS: rho-equal-three equal inward weight (3,3) has cost 3
+PASS: t-400 t(4, 0, 0)=12
+PASS: t-600 t(6, 0, 0)=18
+PASS: t-330 t(3, 3, 0)=16
+PASS: t-420 t(4, 2, 0)=16
+PASS: t-222 t(2, 2, 2)=14
+PASS: pair-400-330 ((4,0,0),(3,3,0)) does not reverse: 128/9 > 9
+PASS: pair-400-420 ((4,0,0),(4,2,0)) does not reverse: 64/5 > 9
+PASS: pair-600-330 ((6,0,0),(3,3,0)) does not reverse: 128/9 > 9
+PASS: no-face-reverse none of the three face-versus-axis pairs reverses diamond order
+PASS: note-contract the note reports the times, non-reversals, and bounded scope
+PASS: note-no-forbidden the note avoids the forbidden phrases
+PASS: axiom-names the axiom memo names Lattice, Qubit, Admissibility, and Record
+PASS: axis-unit-cost-contrast unit six-neighbor arrival is |v|_1, so t_unit(3,3,0)=6 is not t_ρ=16
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

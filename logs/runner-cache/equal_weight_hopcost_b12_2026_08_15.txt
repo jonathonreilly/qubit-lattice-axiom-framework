@@ -1,0 +1,59 @@
+===== runner cache v1 =====
+runner: scripts/equal_weight_hopcost_b12_2026_08_15.py
+runner_sha256: 2569f364d2a73cfcc84d70691c66ccfdacabb01a7835797cf453c1710d8ce36e
+input_fingerprint_sha256: 9a493633e9bc18f54e7a96a434e6df5f99410be893929190478616c1d7cb158d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/EQUAL_WEIGHT_HOPCOST_B12_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+claim_scope: On B_12(0), the named equal-weight hop-cost is scored for diamond reverse and for var vs ν. Displayed, not adopted.
+PASS: audit-input-paths declared inputs are the source note and the current axiom memo
+PASS: audit-input-literal AUDIT_INPUT_PATHS is a static string-literal tuple
+PASS: claim-scope note claim_scope matches the displayed scoring statement
+PASS: displayed-not-adopted the rule is displayed, not adopted
+PASS: not-in-admissibility ρ and ν are not written into Admissibility
+PASS: not-attach-l1 the displayed rules are not attached to L1
+PASS: uniqueness-not-claimed uniqueness among hop-costs is not claimed
+PASS: no-axiom-edit note records hypothetical axiom status no edit
+PASS: forbidden-absent forbidden phrases are absent from the source note and runner
+n_sites 2625
+t_rho(4,0,0) 12
+t_rho(2,2,2) 14
+t_rho(8,0,0) 24
+t_rho(4,4,4) 32
+12 t_rho(4,0,0)^2 1728
+16 t_rho(2,2,2)^2 3136
+diamond_reverse False
+var_rho 0.00094819117290
+var_nu 0.00666073807018
+dijkstra_calls 2
+PASS: two-dijkstras exactly two Dijkstras ran, one for ρ and one for ν
+PASS: ball-b12 B_12(0) has 2625 sites and 2624 nonzero sites
+PASS: reachable every site of B_12(0) is reached under both costs
+PASS: t-400 t_ρ(4,0,0) = 12
+PASS: t-222 t_ρ(2,2,2) = 14
+PASS: t-800 t_ρ(8,0,0) = 24
+PASS: t-444 t_ρ(4,4,4) = 32
+PASS: diamond-not-reverse 12 t_ρ(4,0,0)^2 > 16 t_ρ(2,2,2)^2 fails
+PASS: note-records-times note records the computed ρ arrivals and the reverse products
+PASS: var-rho population variance under ρ matches the reported value
+PASS: var-nu population variance under ν matches the reported value
+PASS: var-rho-smaller var(|v|_2/t) is strictly smaller under ρ than under ν
+PASS: note-records-variances note records both variances and which is smaller
+PASS: rho-named-clauses ρ costs 3 on seed-exit and equal inward weight, else 1
+PASS: nu-named-clauses ν costs 3 on seed-exit, both-weights-1, or support drop, else 1
+PASS: axiom-untouched the axiom memo is an input only and still names the four axioms
+per_element: checked exactly — each directed B_12(0) edge carries the named equal-weight hop-cost
+per_site: checked exactly — |v|_2/t(v) is scored on each of the 2624 nonzero sites
+per_mode: checked exactly — the two named rules, with two Dijkstras and no uniqueness claim
+per_block: checked exactly — diamond order and population variance on B_12(0)\{0}
+lattice_wide: checked and not executed — no Admissibility cost and no L1 attachment
+TOTAL: PASS=25 FAIL=0
+
+----- stderr -----
+

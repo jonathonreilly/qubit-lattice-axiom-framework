@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_spatial_dressing_invisibility_2026_08_17.py
+runner_sha256: 96c0ad1fa0b1e50dd8332fd39b16351f6ce95f276c7cfdc263f51adba5fc5e9c
+input_fingerprint_sha256: 4638bc4e63a2c0fea11a0e08a847eac3f0b135bc9caf5f6a17914f216b48b72d
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 284.41
+status: ok
+----- stdout -----
+[PASS] A-authority: Block 124 note/runner/cache and ancestors 123--103 are pinned
+[PASS] B-the-invisibility-lemma: [U_x]kk=i^k I8, so conjugation cancels for every operator; w=1,2,3 is entrywise invisible for every routed density and momentum
+[PASS] C-the-family-collapse: the eight weights factor exactly through the plain and Theta-conjugated weight sums, giving two effective parameters
+[PASS] D-the-wall-extension: rank=2 and ker=the six zero-sum directions; every descended weight vector has identically zero momentum blocks and zero quotient compression
+[PASS] E-the-admissible-spaces: descent has rank 7 and dim_F 57; adjointness adds one real condition to rank 14, giving dim_real 113; P_y proves non-conflation with x->y intertwiners
+[PASS] F-the-scope-split: spatial smearing is structurally powerless, while every tested T J T^-1 diagonal block differs from J; time-smeared dressings remain live and counterterms are only an inference
+[PASS] G-the-catch-record: the naive full-eight-weight diagonal-block constraint matrix has rank 2, not the refuted rank 8, and kernel dimension 6
+[PASS] H-scope: required invisibility/collapse/wall/non-conflation/time-live/catch/N1--N8/W1/N5 firewalls and runtime bound are present
+LEMMA: [U_x]_{kk}=i^k I_8, hence (i^k I_8)^w A (i^k I_8)^(-w)=A for every operator A and every integer w.
+FAMILY: 16 routed momentum cases factor through two weight-sums; descent rank=2, kernel dimension=6, zero-block compression; constraint sha=a5a801b0f0f5da83.
+ADMISSIBLE SPACES: every k in both fixtures has ranks 7/14/15 and dimensions 57 complex, 114 before adjoint reality, 113 real after it; P_y is the separating witness.
+TIME VISIBILITY: T J T^-1 differs entrywise from J on every tested momentum-diagonal block; the time-smeared class is live.
+N5: per_element: scalar-phase cancellation, diagonal-block equality, family-factorization, corrected-rank-two, zero-sum-kernel, zero-compression, admissible-space-dimension, time-visibility, and catch certificates are checked
+per_site: one Grassmann mode per fine site on the antiperiodic reflection torus
+per_mode: at fixed momentum every spatial shift is a scalar phase that cancels under conjugation, so all spatial translates have the same momentum-diagonal block
+per_block: the displayed eight-weight smeared-and-conjugated family collapses to two effective weight-sums whose descent kernel is exactly the zero-sum subspace compressing to the zero observable; no nonzero-compression member descends
+lattice_wide: checked and not executed — time-smeared and transfer-conjugated dressings for the observable wall, the naturality classification, curved OS positivity, the actual ADM/history transporter completion, joint gravity, the gravity constraint quotient beyond the displayed carrier, Records, audit retention, and TOE closure remain open
+RESULT: spatial dressing cannot pierce the observable wall because the quotient is blind to it — the family collapses to two parameters compressing to zero — while the time direction is provably visible, making time-smeared dressings the live route
+DECISION_CUT: advance time-smeared/transfer-conjugated dressings and the naturality classification; reject further spatial-smearing constructions
+TOE: zero obligation retirement, retained-positive end-to-end theory count remains zero, and no TOE percentage moves
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

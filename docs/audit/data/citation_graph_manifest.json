@@ -1,6 +1,6 @@
 {
- "edge_count": 15981,
- "node_count": 5553,
+ "edge_count": 15985,
+ "node_count": 5554,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -492,6 +492,10 @@
   },
   "admissibility_dirac_kahler_sourced_quotient_execution_bounded_theorem_note_2026-08-17": {
    "deps_hash": "7d2c967c528b",
+   "out_degree": 4
+  },
+  "admissibility_dirac_kahler_spatial_dressing_invisibility_bounded_theorem_note_2026-08-17": {
+   "deps_hash": "4f42ef355ca6",
    "out_degree": 4
   },
   "admissibility_dirac_kahler_torus_wrap_defect_bounded_theorem_note_2026-08-16": {

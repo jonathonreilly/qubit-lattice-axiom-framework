@@ -1,0 +1,67 @@
+===== runner cache v1 =====
+runner: scripts/full_axis_completion_section_equivariance_2026_08_15.py
+runner_sha256: 9b080e6fd4a95b612b1974d7081066f3e0dad2592f144e50a92a2af59ba4bb22
+input_fingerprint_sha256: e30944b86374ff69ab03175852dcd2beccbe6f70d322c6092228eb1582b130fc
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+full-axis completion section G+ equivariance
+AUDIT_INPUT_PATHS:
+  docs/FULL_AXIS_COMPLETION_SECTION_EQUIVARIANCE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+G_plus=24
+N_perp=12
+N_pair=48
+N_completions=48
+N_orbits=2
+N_section=2
+section_fiber_one=True
+section_covers_all=True
+N_denom=576
+N_commute=576
+N_commute_over_denom=576/576
+N_commute_eq_576=True
+N_lex_commute=288
+N_lex_diff=12
+perp_rows:
+  (0, 1, 0, 1, 1, 1) full=z n_comp=2,2 f0=(0, −, 0, +, −, +) f1=(0, +, 0, −, +, −) commute=48/48
+  (0, 1, 1, 0, 1, 1) full=z n_comp=2,2 f0=(0, +, −, 0, −, +) f1=(0, −, +, 0, +, −) commute=48/48
+  (0, 1, 1, 1, 0, 1) full=y n_comp=2,2 f0=(0, +, −, +, 0, −) f1=(0, −, +, −, 0, +) commute=48/48
+  (0, 1, 1, 1, 1, 0) full=y n_comp=2,2 f0=(0, −, −, +, +, 0) f1=(0, +, +, −, −, 0) commute=48/48
+  (1, 0, 0, 1, 1, 1) full=z n_comp=2,2 f0=(+, 0, 0, −, −, +) f1=(−, 0, 0, +, +, −) commute=48/48
+  (1, 0, 1, 0, 1, 1) full=z n_comp=2,2 f0=(−, 0, +, 0, −, +) f1=(+, 0, −, 0, +, −) commute=48/48
+  (1, 0, 1, 1, 0, 1) full=y n_comp=2,2 f0=(−, 0, −, +, 0, +) f1=(+, 0, +, −, 0, −) commute=48/48
+  (1, 0, 1, 1, 1, 0) full=y n_comp=2,2 f0=(+, 0, −, +, −, 0) f1=(−, 0, +, −, +, 0) commute=48/48
+  (1, 1, 0, 1, 0, 1) full=x n_comp=2,2 f0=(−, +, 0, −, 0, +) f1=(+, −, 0, +, 0, −) commute=48/48
+  (1, 1, 0, 1, 1, 0) full=x n_comp=2,2 f0=(−, +, 0, +, −, 0) f1=(+, −, 0, −, +, 0) commute=48/48
+  (1, 1, 1, 0, 0, 1) full=x n_comp=2,2 f0=(−, +, +, 0, 0, −) f1=(+, −, −, 0, 0, +) commute=48/48
+  (1, 1, 1, 0, 1, 0) full=x n_comp=2,2 f0=(−, +, −, 0, +, 0) f1=(+, −, +, 0, −, 0) commute=48/48
+PASS: audit-input-paths | AUDIT_INPUT_PATHS is the required static two-string literal tuple
+PASS: source-lattice
+PASS: source-admissibility
+PASS: source-unread-qubit
+PASS: g-plus-order | proper=24
+PASS: twelve-perp-masks | N_perp=12 N_completions=48
+PASS: theorem-1-n-orbits | N_orbits=2 N_section=2
+PASS: theorem-2-n-commute | N_commute=576/576 lex=288 diff=12
+PASS: section-witness | lhs=(1, 0, 0, 2, 2, 1) rhs=(1, 0, 0, 2, 2, 1)
+PASS: claim-scope
+PASS: displayed-not-adopted
+PASS: l1-not-attached
+PASS: not-leftover-bitenc
+PASS: admissibility-unedited
+PASS: forbidden-phrases
+PASS: no-axiom-edit
+per_element: N_orbits, N_section, N_commute, and f(σ,b) are exact
+per_site: 12 perpendicular weight-4 occupancy masks scored
+per_mode: no spectral calculation
+per_block: 6-NN star masks and G+ only
+lattice_wide: checked and not executed
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

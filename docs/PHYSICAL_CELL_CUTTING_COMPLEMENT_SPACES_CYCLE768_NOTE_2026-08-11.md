@@ -29,8 +29,8 @@ trace_class: frontier_discovery
 target_claim_id: physical_cell_cutting_complement_spaces_cycle768_note_2026-08-11
 target_blocker_text: "classify complement spaces, cover partner pairs, and pair/triple ranks on the rebuilt finite cell object"
 source_of_blocker_text: frontier_question
-reachability_to_target: "direct finite construction plus exact and finite-field linear algebra"
-artifact_role: "bounded finite incidence theorem candidate"
+reachability_to_target: unknown_frontier
+artifact_role: theorem
 next_trace_action: "independent audit of the landed note and invocation-bound runner evidence"
 conditional_surface_status: "the target domain is the declared finite incidence object"
 hypothetical_axiom_status: null
@@ -219,7 +219,9 @@ Every scratch mutation is in memory and leaves the scientific object unchanged:
 | object constructor | zero one kept-piece mask | full-cover certificate rejects |
 | group | duplicate one signed-coordinate map | distinct-map certificate rejects |
 | orbit basis | replace one orbit table by zero | row/column/sum certificate rejects |
+| exact rank/kernel certificate | delete one copied exact kernel vector | rank/kernel certificate rejects |
 | small-block bridge | alter one irreducible degree | block/full rank equality rejects |
+| drop-block identities | duplicate one ordinal/eigenvalue/matrix-hash identity | identity certificate rejects |
 | second-prime rebuild | alter one part row | two-prime certificate rejects |
 | incidence corollary | replace one cover-block label | four-label/twice-each predicate rejects |
 | exact all-ones route | supply the zero table | row/column membership predicate rejects |

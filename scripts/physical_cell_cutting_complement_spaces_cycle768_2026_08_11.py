@@ -592,6 +592,8 @@ RANKA, KERA, BASA = rref(GM, NPI, True)
 RANKB, KERB, BASB = rref(BROW, NPI, True)
 KA = [clear_den(v) for v in KERA]
 KB = [clear_den(v) for v in KERB]
+EXACT_KA = KA
+EXACT_KB = KB
 NKA = len(KA)
 NKB = len(KB)
 
@@ -633,6 +635,16 @@ RBROW = [list(BROW[k]) for k in SELB]
 RSELA = rank_fwd(RAROW, NPI)
 RSELB = rank_fwd(RBROW, NPI)
 ROW_KERNEL_OK = perp_all(RAROW, KA) and perp_all(RBROW, KB)
+
+
+def exact_rank_certificate(gram_ok, kann_a, kann_b, ka, kb, rows_a, rows_b,
+                           rkka, rkkb, rsela, rselb, row_kernel_ok):
+    """Check the complete exact rank/kernel packet on supplied data."""
+    return (gram_ok and kann_a and kann_b
+            and len(ka) == NKA and len(kb) == NKB
+            and len(rows_a) == RANKA and len(rows_b) == RANKB
+            and rkka == NKA and rkkb == NKB
+            and rsela == RANKA and rselb == RANKB and row_kernel_ok)
 
 ONE = [1] * NPI
 DSUM = rank_fwd(RAROW + RBROW, NPI)
@@ -1811,8 +1823,9 @@ gate(NORB == 104 and NPOC == 120 and NCP == 96 and NPP == NORB, "C2",
      "orbit counts piece/cover/cell {0}/{1}/{2}; sweep yes".format(
          NORB, NPOC, NCP))
 
-RANK_CERT_OK = (GRAM_OK and KANN_A and KANN_B and RKKA == NKA and RKKB == NKB
-                and RSELA == RANKA and RSELB == RANKB and ROW_KERNEL_OK)
+RANK_CERT_OK = exact_rank_certificate(
+    GRAM_OK, KANN_A, KANN_B, EXACT_KA, EXACT_KB, RAROW, RBROW,
+    RKKA, RKKB, RSELA, RSELB, ROW_KERNEL_OK)
 gate(RANKA == 88 and NKA == 104 and RANKB == 105 and NKB == 87
      and GOOD_PRIME and RANK_CERT_OK, "C3",
      "ranks/kernels cutting {0}/{1}, cover {2}/{3}; certificates yes".format(
@@ -2210,9 +2223,15 @@ NZD = [t for t in DROPS if t[4] > 0]
 DR_SUM = sum(t[4] for t in NZD)
 DR_SET = ([(t[0], t[1], t[2]) for t in NZD]
           == [(t[2], t[3], t[4]) for t in PARTS if t[7] > 0])
-DROP_ID_OK = (len(set(DROP_IDS)) == len(DROP_IDS)
-              and all(DROP_IDS[i][2] != "none" for i in range(NPART)
-                      if DROPS[i][4] > 0))
+def drop_identity_certificate(drop_ids, drops):
+    """Require unique identities and concrete hashes on every dropping part."""
+    return (len(drop_ids) == NPART and len(drops) == NPART
+            and len(set(drop_ids)) == len(drop_ids)
+            and all(drop_ids[i][2] != "none" for i in range(NPART)
+                    if drops[i][4] > 0))
+
+
+DROP_ID_OK = drop_identity_certificate(DROP_IDS, DROPS)
 DROP_HASHES = ",".join(DROP_IDS[i][2][:8] for i in range(NPART)
                        if DROPS[i][4] > 0)
 while ("9" + "9") in DROP_HASHES:
@@ -3097,6 +3116,11 @@ BAD_ORBITS[0] = np.zeros_like(OXS[0])
 MUT_ORBITS = not orbit_basis_certificate(BAD_ORBITS)
 del BAD_ORBITS
 
+BAD_KA = [list(v) for v in EXACT_KA[:-1]]
+MUT_RANK_CERT = not exact_rank_certificate(
+    GRAM_OK, KANN_A, KANN_B, BAD_KA, EXACT_KB, RAROW, RBROW,
+    RKKA, RKKB, RSELA, RSELB, ROW_KERNEL_OK)
+
 MUT_BLOCK = False
 for mi in ACT:
     msum = np.mod(BET2[mi][IXB].sum(axis=0), P2)
@@ -3109,6 +3133,10 @@ for mi in ACT:
         MUT_BLOCK = (red_rank_data(tuple(INB), BET2, BAD_ROWS, ACT, P2)
                      != big_rank(tuple(INB), P2))
         break
+
+BAD_DROP_IDS = list(DROP_IDS)
+BAD_DROP_IDS[-1] = BAD_DROP_IDS[0]
+MUT_DROP_ID = not drop_identity_certificate(BAD_DROP_IDS, DROPS)
 
 BAD_ROWS3 = list(ROWS3)
 bad3 = list(BAD_ROWS3[ACT3[0]])
@@ -3136,9 +3164,9 @@ bad_degree_index = int(np.nonzero(BAD_DEGREE < CEIL)[0][0])
 BAD_DEGREE[bad_degree_index] = CEIL
 MUT_DEGREE = not degree_summary_ok(BAD_DEGREE)
 
-MUTATIONS = [MUT_OBJECT, MUT_GROUP, MUT_ORBITS, MUT_BLOCK, MUT_SECOND,
-             MUT_INCIDENCE, MUT_EXACT, MUT_CYCLE, MUT_PAIR, MUT_TRIPLE,
-             MUT_DEGREE]
+MUTATIONS = [MUT_OBJECT, MUT_GROUP, MUT_ORBITS, MUT_RANK_CERT, MUT_BLOCK,
+             MUT_DROP_ID, MUT_SECOND, MUT_INCIDENCE, MUT_EXACT, MUT_CYCLE,
+             MUT_PAIR, MUT_TRIPLE, MUT_DEGREE]
 MUTATION_OK = all(MUTATIONS)
 
 # ------------------------------------------------------------------
@@ -3329,7 +3357,7 @@ gate(DEG_OK, nextlab(),
          nd(DGMIN), nd(DGTIE), nd(STPD), nd(STPN), nd(STPMAX)))
 
 gate(MUTATION_OK, nextlab(),
-     "mutations 11/11 reject: object/group/orbit/block/p2/incidence/exact/cycle/pair/triple/degree")
+     "mutations 13/13 reject: object/group/orbit/rank/block/drop/p2/incidence/exact/cycle/pair/triple/degree")
 
 SEQ_OK = (TAGS == ["C{0}".format(k) for k in range(len(TAGS))])
 gate(SEQ_OK and len(TAGS) >= 34, nextlab(),

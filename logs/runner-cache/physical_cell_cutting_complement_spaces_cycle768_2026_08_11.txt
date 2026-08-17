@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/physical_cell_cutting_complement_spaces_cycle768_2026_08_11.py
-runner_sha256: 2e42ef28661fda6b5ecb6c4a569e381aaea63e142ccaddbacf417ff9c996aeee
+runner_sha256: 74380ce5092163ec039fdb7aa9e53e0a6c3be69539c0cee4734a470db45509db
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 194.10
+elapsed_sec: 192.02
 status: ok
 ----- stdout -----
 all numbers below are exact computational identities; no floating point enters any gate
@@ -72,11 +72,11 @@ PASS C61 singleton cycle/rank: 48x4, orbits 96, rank 144, misses 0
 PASS C62 F_1000003 pairs: 4560, 13 values 48..144, ceiling 960, <=105 1104; 25 full-table checks, second-prime misses 0; complements size 94
 PASS C63 F_1000003 triples: 142880, 18 values 64..144, ceiling 60960, <=105 1472; 15 full-table checks; complements size 93
 PASS C64 F_1000003 pair aggregation: degree 75 on all 96; 313 of 325 stratum fibres contain multiple ranks, maximum 13
-PASS C65 mutations 11/11 reject: object/group/orbit/block/p2/incidence/exact/cycle/pair/triple/degree
+PASS C65 mutations 13/13 reject: object/group/orbit/rank/block/drop/p2/incidence/exact/cycle/pair/triple/degree
 PASS C66 gate labels sequential: 67
 PASS C67 closing source checks clean: 3
 PASS C68 budget: declared wall/RSS limits and prospective complete stdout under 6000
-stdout characters before trailer: 4545
+stdout characters before trailer: 4555
 TOTAL: PASS=69 FAIL=0
 
 ----- stderr -----

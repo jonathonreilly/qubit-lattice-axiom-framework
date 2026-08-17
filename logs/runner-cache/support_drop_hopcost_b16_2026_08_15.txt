@@ -1,0 +1,70 @@
+===== runner cache v1 =====
+runner: scripts/support_drop_hopcost_b16_2026_08_15.py
+runner_sha256: c85baa5333313d67f20acb04948a491f445b59b9633099a5615346c1f12620ed
+input_fingerprint_sha256: cc7ac99552f48dda5c2d6f525376312c9b26ef580a5cec79b961a9dc0dd1bd5e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.07
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/SUPPORT_DROP_HOPCOST_B16_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+claim_scope: On B_16(0), the named support-drop hop-cost is scored for same-k, doubled, and k=5 face reverse. Displayed, not adopted.
+PASS: audit-input-paths declared inputs are the source note and the current axiom memo
+PASS: audit-input-literal AUDIT_INPUT_PATHS is a static string-literal tuple
+PASS: claim-scope note claim_scope matches the displayed scoring statement
+PASS: displayed-not-adopted the rule is displayed, not adopted
+PASS: not-in-admissibility ν is not written into Admissibility
+PASS: not-attach-l1 the displayed rule is not attached to L1
+PASS: uniqueness-not-claimed uniqueness among hop-costs is not claimed
+PASS: no-axiom-edit note records hypothetical axiom status no edit
+PASS: forbidden-absent forbidden phrases are absent from the source note
+n_sites 6017
+t(4,0,0) 10
+t(8,0,0) 14
+t(4,4,4) 14
+t(2,2,2) 8
+t(10,0,0) 16
+t(5,5,0) 12
+t(k,0,0) 10
+t(k,k,k) 14
+t(16,0,0) 24
+12 t(4,0,0)^2 1200
+16 t(2,2,2)^2 1024
+12 t(8,0,0)^2 2352
+16 t(4,4,4)^2 3136
+t(4,0,0)^2/16 100/16
+t(4,4,4)^2/48 196/48
+t(10,0,0)^2/100 256/100
+t(5,5,0)^2/50 144/50
+diamond_reverse True
+double_diamond_reverse False
+same_k4_reverse True
+face_k5_reverse False
+dijkstra_calls 1
+PASS: one-dijkstra exactly one Dijkstra ran
+PASS: ball-b16 B_16(0) has 6017 sites and 6016 nonzero sites
+PASS: reachable every site of B_16(0) is reached
+PASS: t-400 t(4,0,0) = 10
+PASS: t-800 t(8,0,0) = 14
+PASS: t-444 t(4,4,4) = 14
+PASS: t-222 t(2,2,2) = 8
+PASS: t-1000 t(10,0,0) = 16
+PASS: t-550 t(5,5,0) = 12
+PASS: t-k4-axis-body t(k,0,0) and t(k,k,k) for k=4 are 10 and 14
+PASS: diamond-reverse 12 t(4,0,0)^2 > 16 t(2,2,2)^2
+PASS: double-diamond-not-reverse 12 t(8,0,0)^2 > 16 t(4,4,4)^2 fails
+PASS: same-k4-reverse t(4,0,0)^2/16 > t(4,4,4)^2/48
+PASS: face-k5-not-reverse t(10,0,0)^2/100 > t(5,5,0)^2/50 fails
+PASS: note-records-times note records the computed arrivals
+PASS: note-records-comparisons note records all four product pairs
+PASS: not-leftover-of-b12 the B_16(0) table is not leftover of the B_12(0) times
+PASS: seed-and-axis-clauses seed-exit and both-weights-1 cost 3; support increase costs 1
+PASS: axis-boundary-last-step (16,0,0) has only the axis in-ball neighbor (15,0,0)
+PASS: axiom-untouched the axiom memo is an input only and still names the four axioms
+TOTAL: PASS=29 FAIL=0
+
+----- stderr -----
+

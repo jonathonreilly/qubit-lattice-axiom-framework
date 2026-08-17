@@ -1,0 +1,59 @@
+===== runner cache v1 =====
+runner: scripts/cost3_best_reversal_b4_2026_08_15.py
+runner_sha256: 779e0d747f2d224a5f91bda699905e7d0f7aff6539203de1ab4e86ec3d50d47f
+input_fingerprint_sha256: 17d8c6614cfc36696dcc64c910cee052d95de5ccbb93ed34afc09cb954cec983
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+external_scientific_inputs: none; B_4(0), G+, and the displayed 8-tuple are theorem hypotheses
+package_local_integrity_reads: runner source, proposed source note, and live axiom memo
+measure_boundary: exact integer path costs and |v|_2/t(v) on the radius-4 ball
+negative_scope: displayed two-end costs are not written into Admissibility
+orbit_weights_b3: ((0, 1), (1, 0), (1, 1), (1, 2), (2, 1), (2, 2), (2, 3), (3, 2))
+extra_b4_orbit_weights: ((3, 3),)
+n_b4_sites: 129
+n_b4_edges: 528
+n_new_orbit_edges: 48
+filling: (3, 1, 3, 1, 1, 3, 1, 1)
+t(4,0,0): 12
+t(2,2,2)_in_ball: False
+t(3,0,0): 9
+t(1,1,1): 5
+type_times: (3, 4, 5, 6, 7, 8, 10, 9, 10, 12)
+var_fill: 0.00035024862900926336984188979868593113574796042066947669842645487810610887706087318
+var_l1: 0.017710351241771545001390082642902462991396702168940717157746837023228578641267290
+PASS: gplus-order proper cubic rotations number 24
+PASS: ball-size B_4(0) has 129 sites
+PASS: nonzero-sites the scored set B_4(0)\{0} has 128 sites
+PASS: bfs-cap Dijkstra is capped at the 129-site ball
+PASS: thm1-orbit-count the B_3 endpoint occupancy pairs remain eight G+ orbits
+PASS: thm1-new-orbit B_4 adds one unused (3,3) occupancy-pair orbit on 48 edges
+PASS: thm1-t400 the displayed filling realizes t(4,0,0)=12 on B_4(0)
+PASS: thm1-222-absent (2,2,2) is not a site of the 129-site ball
+PASS: thm1-b3-pair the B_3 axis/diagonal pair still reverses: t(3,0,0)=9, t(1,1,1)=5
+PASS: thm1-new-orbit-unused assigning cost 3 to the new orbit does not change any B_4 arrival time
+PASS: thm1-note-times the note exhibits t(4,0,0)=12 and the still-reversing B_3 pair
+PASS: thm2-type-times G+ type arrival times on B_4(0) are (3,4,5,6,7,8,10,9,10,12)
+PASS: thm2-vars-computed computed filling and ell^1 variances match the displayed digits
+PASS: thm2-fill-below-l1 var(|v|_2/t) on the filling is strictly below ell^1 on the same 128 sites
+PASS: thm2-note-vars the note reports both population variances and which is smaller
+PASS: thm2-not-leftover-b3 the note states the B_4 score is not a leftover of the B_3 minimum
+PASS: thm3-displayed-not-adopted the note reports the filling as displayed, not adopted
+PASS: thm3-no-l1-law the note does not attach an ell^1 path-length law
+PASS: no-rescan the runner does not rescan the 6561 fillings
+PASS: claim-scope claim_scope reports the B_4 score of the B_3 minimizer only
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: forbidden-strings note, runner, and axiom avoid the dispatch-forbidden phrases
+PASS: no-axiom-cost the live axiom memo does not host a two-end occupancy hop cost
+PASS: claim-type-and-gate bounded theorem type and a passing N1-N8 gate are source-visible
+per_element: checked exactly — each directed B_4(0) edge is an 8-orbit hop or the unused (3,3) orbit
+per_site: checked exactly — |v|_2/t(v) is scored on each of the 128 nonzero sites
+per_mode: checked exactly — the single displayed filling, with no 6561 rescan
+per_block: checked exactly — diamond order and population variance on B_4(0)\{0}
+lattice_wide: checked and not executed — no Admissibility cost and no path-length law are adopted
+TOTAL: PASS=24 FAIL=0
+
+----- stderr -----
+

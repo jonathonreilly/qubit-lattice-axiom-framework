@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_quotient_observable_obstruction_2026_08_16.py
+runner_sha256: 83c67283b8558081137bbc32bb263a87e513d95f7e9944b6d8ec1140bb462e5c
+input_fingerprint_sha256: cc104d316982cc45a9f8c33941c983bd6bd1073c62bdff000fb1ddaa6c322f21
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 241.33
+status: ok
+----- stdout -----
+[PASS] A-authority: Block 121 note/runner/cache and ancestors 120--103 are pinned
+[PASS] B-the-compression: LEMMA: (P_k F^H E_(i,x) F P_k^H)=(1/4)e_i e_i^T independently of x; every K_Theta density compression is nonzero
+[PASS] C-the-residue-closed-form: moment-form structure gives rho_k^(2m)(A+B rho_k); every exact A,B residue is digest-pinned live
+[PASS] D-the-flux-conventions: full routed and same-slice x-hop masks are recomputed; their exact cross-slice/range-two difference changes masks, not divergence
+[PASS] E-the-microscopic-ward-failure: the rho^2-translated site residual equals the K_Theta compression of dressed [E_z,Q] and is nonzero at all 32 sites per k
+[PASS] F-the-descent-obstruction: density maps the OS null space out of itself and K_Theta reflection-adjointness has 0/32 density or flux components per k
+[PASS] G-the-structural-classification: all local routed currents differ by divergence-free rerouting and retain the Block 121 commutator pin; only that local routed class is exhausted
+[PASS] H-scope: required obstruction/N1--N8/W1/N5 firewalls and runtime bound are present
+LEMMA: for every k,i,x, the momentum-k diagonal block of E_(i,x) is (1/4)e_i e_i^T, independent of x; quotient compression is therefore spatially uniform.
+RESIDUES/CLOSED FORM: j_k(m,a,x),s_k(m,a,x)=rho_k^(2m)(A+B rho_k) from the moment form; c=5/13 {'J': ('19e4a95126aa7d05', '4a7cd5a411384ac7', 'b74b954e6e3c1da2', '7f3388a11f16bc96'), 'S': ('29856de469aaa778', '0504d5b22ccf77f3', 'f197586c480a5341', '8508949b08472780')}; c=3/5 {'J': ('0f6a6b90843f3b84', '370f8fd243a9a858', 'f031bebabd1e4305', '20b7f257007efafb'), 'S': ('cf221cabf3abd176', 'aa3ccfe695257acc', '74f1bbd4d761c5b1', '54100ebe9d928dd3')}.
+FLUX CONVENTIONS: full routed masks=('11111111', '11110111', '11111111', '11110111'); same-slice oriented x-hop masks=('11111111', '00000000', '11111111', '00000000'); their difference is exactly the cross-slice/range-two hop contribution, so masks are convention-dependent while div(J,S)=[E_z,Q] is invariant.
+MICROSCOPIC WARD: residual zeros/32 per k are (0, 0, 0, 0) and (0, 0, 0, 0); exact commutator sha=('8d566f391d075188', '0cc6a0d11b849c0f', 'febe824efdab23ea', '2ef1fb8a117f20ef'),('dfb1b19f307eadc7', 'ec074662236ec6d2', 'f7c4ca4ba8027dd2', '62b64e805b826194').
+DESCENT/ADJOINTNESS: density null-space descent L/R=(0, 0, 0, 0)/(0, 0, 0, 0) per k; K_Theta reflection-adjoint density/flux=(0, 0, 0, 0)/(0, 0, 0, 0); both fixtures agree.
+STRUCTURAL CLASSIFICATION: the second routing differs by an exact discrete curl and has the same nonzero quotient residual pinned by Block 121's [E_z,Q] certificate; every local routed current therefore fails, while non-local dressing or Q modification remains live; the whole-cell rho^2 recurrence is 0 = 0 by construction.
+N5: per_element: exact compression, projector-lemma, residue, dual-convention flux, residual-identity, descent, and adjointness certificates are checked
+per_site: one Grassmann mode per fine site on the antiperiodic reflection torus
+per_mode: every momentum's compressed current is rho^(2m) times an exact affine residue while the site-resolved ward recursion fails at every site with residual the compressed commutator
+per_block: no local routed u(1) current descends to a conserved observable on the certified quotient — the obstruction is structural in the routing class and the whole-cell recursion is contentless
+lattice_wide: checked and not executed — the stress-tensor source, non-local current dressings, the populated open/background-carrier quotient, the naturality classification, curved OS positivity, the actual ADM/history transporter completion, joint gravity, the gravity constraint quotient on a populated carrier, Records, audit retention, and TOE closure remain open
+RESULT: the u(1) current is exactly conserved off-shell but has no observable on the certified OS quotient — every local routed current is pinned by the compressed commutator, fails descent and adjointness, and the only surviving whole-cell recursion is vacuous;
+DECISION_CUT: pose the stress-tensor source and non-local dressings on the open carrier; reject further local routed U(1) constructions
+TOE: zero obligation retirement, retained-positive end-to-end theory count remains zero, and no TOE percentage moves
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

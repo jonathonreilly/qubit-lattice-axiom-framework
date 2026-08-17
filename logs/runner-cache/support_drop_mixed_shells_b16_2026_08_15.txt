@@ -1,0 +1,62 @@
+===== runner cache v1 =====
+runner: scripts/support_drop_mixed_shells_b16_2026_08_15.py
+runner_sha256: 61a19650b1b6002b66b581edbcb108940dc22f4902a21fa0874fea717547b97c
+input_fingerprint_sha256: 7ea007f8ae01456f1cca8f7a6fb0612749fd3117fad2b361549dc9285f182b7a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/SUPPORT_DROP_MIXED_SHELLS_B16_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+claim_scope: Mixed t=const shells under the named support-drop hop-cost on B_16(0) are named. Displayed, not adopted.
+PASS: audit-input-paths declared inputs are the source note and the current axiom memo
+PASS: audit-input-literal AUDIT_INPUT_PATHS is a static string-literal tuple
+PASS: claim-scope note claim_scope matches the mixed-shell naming statement
+PASS: displayed-not-adopted the census is displayed, not adopted
+PASS: not-in-admissibility ν is not written into Admissibility
+PASS: not-attach-l1 the displayed rule is not attached to L1
+PASS: uniqueness-not-claimed uniqueness among hop-costs is not claimed
+PASS: no-axiom-edit note records hypothetical axiom status no edit
+PASS: forbidden-absent forbidden phrases are absent from the source note
+n_sites 6017
+n_mixed 14
+mixed t=5 n_radii=2 n_sites=32 radii=[3, 5]
+mixed t=6 n_radii=4 n_sites=66 radii=[4, 6, 8, 10]
+mixed t=7 n_radii=4 n_sites=96 radii=[9, 11, 13, 17]
+mixed t=8 n_radii=5 n_sites=140 radii=[12, 14, 18, 20, 26]
+mixed t=9 n_radii=8 n_sites=198 radii=[9, 17, 19, 21, 25, 27, 29, 37]
+mixed t=10 n_radii=10 n_sites=258 radii=[16, 22, 24, 26, 30, 32, 34, 38, 40, 50]
+mixed t=11 n_radii=10 n_sites=326 radii=[25, 27, 29, 33, 35, 41, 45, 51, 53, 65]
+mixed t=12 n_radii=13 n_sites=402 radii=[34, 36, 38, 42, 44, 46, 50, 52, 54, 58, 66, 68, 82]
+mixed t=13 n_radii=15 n_sites=486 radii=[41, 43, 45, 49, 51, 53, 57, 59, 61, 65, 69, 73, 83, 85, 101]
+mixed t=14 n_radii=15 n_sites=578 radii=[48, 50, 54, 56, 62, 64, 66, 72, 74, 80, 86, 90, 102, 104, 122]
+mixed t=15 n_radii=19 n_sites=678 radii=[57, 59, 61, 65, 67, 69, 73, 75, 77, 81, 85, 89, 91, 97, 105, 109, 123, 125, 145]
+mixed t=16 n_radii=22 n_sites=786 radii=[66, 68, 70, 74, 76, 78, 82, 84, 86, 90, 94, 98, 100, 106, 108, 110, 116, 126, 130, 146, 148, 170]
+mixed t=17 n_radii=21 n_sites=902 radii=[75, 77, 81, 83, 89, 93, 99, 101, 107, 113, 117, 121, 125, 129, 131, 137, 149, 153, 171, 173, 197]
+mixed t=18 n_radii=29 n_sites=1026 radii=[86, 88, 90, 94, 96, 98, 102, 104, 106, 110, 114, 118, 120, 126, 128, 130, 134, 136, 138, 144, 146, 152, 154, 160, 174, 178, 198, 200, 226]
+t(2,2,2) 8
+t(4,4,4) 14
+t(16,0,0) 24
+t8_mixed True
+t14_mixed True
+dijkstra_calls 1
+PASS: one-dijkstra exactly one Dijkstra ran
+PASS: ball-b16 B_16(0) has 6017 sites and 6016 nonzero sites
+PASS: reachable every site of B_16(0) is reached
+PASS: mixed-list fourteen mixed arrivals with the named radius and site counts
+PASS: t-8-mixed t=8 stays mixed with five squared radii
+PASS: t-14-mixed t=14 stays mixed with fifteen squared radii
+PASS: t-222-mixed t(2,2,2)=8 sits in a mixed shell
+PASS: t-444-mixed t(4,4,4)=14 sits in a mixed shell
+PASS: not-leftover-of-b12 B_16 mixed list adds t=15,16,17,18 beyond the B_12 ten
+PASS: note-records-mixed-list note records every mixed t with radius count and site count
+PASS: note-records-t8-t14 note records that t=8 and t=14 stay mixed
+PASS: seed-and-axis-clauses seed-exit and both-weights-1 cost 3; support increase costs 1
+PASS: axiom-untouched the axiom memo is an input only and still names the four axioms
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

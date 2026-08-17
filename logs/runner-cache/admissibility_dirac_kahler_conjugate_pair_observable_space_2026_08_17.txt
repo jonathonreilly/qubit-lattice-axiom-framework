@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_conjugate_pair_observable_space_2026_08_17.py
+runner_sha256: 36093d9f9f7a4d1a90aac6e229ce3b3c67e0d85a2c2c67ba8bfb87c8d5205bc1
+input_fingerprint_sha256: c14dc98cb312eebc36a5c54d554bbb9d5d2a3c607ee19e3e2604584ea44e0765
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 57.71
+status: ok
+----- stdout -----
+[PASS] A-authority: Block 130 blobs, ancestors 129--103, and landed Block 119 runner/cache are pinned
+[PASS] B-the-shared-polynomial: k=1 and k=3 have one exact polynomial and one isolated stable root at both fixtures
+[PASS] C-the-conjugation-theorem: h00_3=conj(h00_1) and y_3=conj(y_1) entrywise in the shared root field
+[PASS] D-the-invariant-g: g=||y_3||^2/||y_1||^2=1 and a/conj(a) rescaling cancels symbolically
+[PASS] E-the-observable-space: R-covariance plus G-adjointness is exactly Sym_2(R), dimension 3, Jordan-closed and non-commuting
+[PASS] F-the-transfer-covariance: rho_1^2 I_2 gives covariance for free; the (0,1) non-degeneracy contrast holds and the (0,2) pair is itself degenerate
+[PASS] G-the-ward-content: [sigma_x,P]=-2[[0,1],[-1,0]] is nonzero while [sigma_z,P]=0
+[PASS] H-scope: conjugation/g/observable/Jordan/degeneracy/Ward/N1--N8/W1/N5 and TOE firewalls are present
+AUTHORITY: parent=db394d1536a8243c2b01b3e45413813e45f8abdd; Block130 blobs=(1c4ea156b30c745b3afcea205ec314345ed71f6d,1d3aadb6b72d6d95960a0c3b60c3db21c00cb568,ed203e829f0cc5aca9b24fe1b178fcad8991f1cd); Block119=(952494a18ba13b7d25fb144b8569687813d9bddc,f7a9b09538c8787ed88885c04cdea3e5cff70104)
+PAIR c=5/13: shared polynomial/root=True; h00/x/y entrywise conj=True; y residuals=(0, 0, 0, 0, 0, 0, 0, 0); g=1; scaled g=1
+PAIR c=3/5: shared polynomial/root=True; h00/x/y entrywise conj=True; y residuals=(0, 0, 0, 0, 0, 0, 0, 0); g=1; scaled g=1
+OBSERVABLES: conjugate-basis conditions are a,d real, d=a, c=conj(b); the unitary reality-fixed basis gives Sym_2(R), dimension=3; [sigma_x,sigma_z]=[[0, -2], [2, 0]]
+TRANSFER: (1,3)=rho_1^2 I_2 and all observable commutators vanish; imported (0,2) monodromies/polynomials/isolations are equal, so [sigma_x,T_02]=[[0, 0], [0, 0]]; the exact available (0,1) contrast passes=True
+WARD: P_pair=diag(1,-1) (units pi/2); [sigma_x,P]=[[0, -2], [2, 0]]; [sigma_z,P]=[[0, 0], [0, 0]]
+N5: per_element: exact input-pin, conjugation, shared-polynomial, shared-root, Gram, rescaling, classification, covariance-contrast, and commutator certificates are checked
+per_site: one Grassmann mode per fine site on the antiperiodic reflection torus
+per_mode: at both rational shear fixtures the paired momenta are exact entrywise conjugates with a shared characteristic polynomial and stable root, and y_3 = conj(y_1) entrywise
+per_block: the paired quotient Gram is diag(1, g) with g = 1 invariantly, and the reality-fixed reflection-adjoint observable space is Sym_2(R), dimension 3, transfer-covariant exactly because rho_1 = rho_3
+lattice_wide: checked and not executed — the pair's observable dynamics and states, the flip work order, the common differential, the actual ADM/history transporter completion, joint gravity, the gravity constraint quotient beyond the displayed carrier, Records, audit retention, and TOE closure remain open
+RESULT: the program's first genuine non-scalar observable space exists — the conjugate-pair theorem makes the paired gram the identity exactly and invariantly, opening the three-dimensional symmetric algebra on the same two dimensions that carry the sourced gravity quotient
+DECISION_CUT: develop the pair's observable dynamics and states; hand the flip work order across; advance the differential
+TOE: zero obligation retirement; no TOE percentage moves; retained-positive end-to-end theory count remains zero; gravity constraint quotient remains unexecuted; actual ADM/history transporter remains open
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

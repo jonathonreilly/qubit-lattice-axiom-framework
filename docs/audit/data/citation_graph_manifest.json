@@ -1,6 +1,6 @@
 {
- "edge_count": 16005,
- "node_count": 5559,
+ "edge_count": 16011,
+ "node_count": 5560,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -428,6 +428,10 @@
   },
   "admissibility_dirac_kahler_cochain_hodge_quadratic_ward_shell_locality_os_reentry_bounded_theorem_note_2026-08-14": {
    "deps_hash": "e20317fe93b4",
+   "out_degree": 6
+  },
+  "admissibility_dirac_kahler_conjugate_pair_observable_space_bounded_theorem_note_2026-08-17": {
+   "deps_hash": "be5cdf7f5699",
    "out_degree": 6
   },
   "admissibility_dirac_kahler_constraint_quotient_coupling_bounded_theorem_note_2026-08-16": {

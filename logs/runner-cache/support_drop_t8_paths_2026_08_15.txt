@@ -1,0 +1,58 @@
+===== runner cache v1 =====
+runner: scripts/support_drop_t8_paths_2026_08_15.py
+runner_sha256: af9a0ae6755afa59c1cc5320411a7ac776a12e5387800fc5455ff8d0c97a83b5
+input_fingerprint_sha256: ba48f6c6b815fed191183777bd6e11d603d87c955a9db8af398aeada1ac4aed1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+construction: one Dijkstra for named support-drop hop-cost nu on B_6(0)
+negative_scope: nu is displayed, not written into Admissibility; L1 is not attached
+claim_scope: A shortest path under the named support-drop hop-cost is exhibited to each t=8 G+ representative on B_6(0). Displayed, not adopted.
+cache_write: false
+PASS: audit-inputs — AUDIT_INPUT_PATHS is the required string-literal pair and both files exist
+PASS: audit-input-literal — AUDIT_INPUT_PATHS is a static string-literal tuple
+PASS: ball-census — B_6(0) has 377 integer sites and 376 nonzero sites
+PASS: rotation-group — the proper cubic group used for types has 24 elements
+PASS: one-dijkstra-total — exactly one Dijkstra ran and every site of B_6(0) receives a finite arrival
+PASS: named-nu-clauses — nu is 3 on seed-exit, both-weight-1, and support drop, else 1
+PASS: seven-t8-reps — the lex-sorted t=8 G+ representatives are the seven named types
+path (2,2,2): (0,0,0) → (0,0,1) → (0,1,1) → (0,1,2) → (0,2,2) → (1,2,2) → (2,2,2)
+  hop_costs=(3, 1, 1, 1, 1, 1) sum=8 first_clause=seed-exit
+path (3,1,2): (0,0,0) → (0,0,1) → (0,1,1) → (0,1,2) → (1,1,2) → (2,1,2) → (3,1,2)
+  hop_costs=(3, 1, 1, 1, 1, 1) sum=8 first_clause=seed-exit
+path (3,2,1): (0,0,0) → (0,0,1) → (0,1,1) → (0,2,1) → (1,2,1) → (2,2,1) → (3,2,1)
+  hop_costs=(3, 1, 1, 1, 1, 1) sum=8 first_clause=seed-exit
+path (3,3,0): (0,0,0) → (0,1,0) → (1,1,0) → (1,2,0) → (1,3,0) → (2,3,0) → (3,3,0)
+  hop_costs=(3, 1, 1, 1, 1, 1) sum=8 first_clause=seed-exit
+path (4,1,1): (0,0,0) → (0,0,1) → (0,1,1) → (1,1,1) → (2,1,1) → (3,1,1) → (4,1,1)
+  hop_costs=(3, 1, 1, 1, 1, 1) sum=8 first_clause=seed-exit
+path (4,2,0): (0,0,0) → (0,1,0) → (1,1,0) → (1,2,0) → (2,2,0) → (3,2,0) → (4,2,0)
+  hop_costs=(3, 1, 1, 1, 1, 1) sum=8 first_clause=seed-exit
+path (5,1,0): (0,0,0) → (0,1,0) → (1,1,0) → (2,1,0) → (3,1,0) → (4,1,0) → (5,1,0)
+  hop_costs=(3, 1, 1, 1, 1, 1) sum=8 first_clause=seed-exit
+PASS: thm1-lex-paths — the computed lex-first shortest path matches the displayed walk at each representative
+PASS: thm1-hop-cost-lists — each hop-cost list is 3,1,1,1,1,1 and sums to 8
+PASS: thm1-sum-is-arrival — each hop-cost sum equals the Dijkstra arrival t=8
+PASS: thm1-note-table — the note displays each representative, lex-first path, hop-cost list, and multiset
+PASS: thm1-not-leftover — the note treats the path exhibition as not leftover of the type list
+PASS: thm2-seed-exit — every exhibited lex-first path starts with a cost-3 seed-exit
+PASS: thm2-displayed — the seed-exit statement is displayed, not adopted
+PASS: source-lattice — current Lattice wording is pinned in the axiom memo and the note
+PASS: source-admissibility — current Admissibility wording is pinned and nu is not written into it
+PASS: thm3-no-l1 — the note refuses to attach L1 and treats the list as displayed, not adopted
+PASS: claim-scope — front matter carries the declared claim_scope
+PASS: forbidden-phrases — the note avoids the dispatch-forbidden phrases
+PASS: record-unused — Record is quoted only as an unused boundary
+PASS: axiom-untouched — the axiom memo is an input only and still names the four axioms
+PASS: b6-only — every executed hop and every named type stays inside B_6(0)
+per_element: checked exactly — each t=8 G+ representative and its lex-first path
+per_site: checked exactly — first-arrival on the 377-site ball
+per_mode: not used
+per_block: checked exactly — seven hop-cost lists each summing to 8
+lattice_wide: checked and not executed — no law outside B_6(0) is claimed
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

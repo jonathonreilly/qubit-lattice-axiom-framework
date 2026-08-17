@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_scalar_quotient_theorem_2026_08_17.py
+runner_sha256: 84c2a5266c1bb8bbc7cfcf9f78e9218bc034d60029f3682ed28eae6fc8b846ac
+input_fingerprint_sha256: ee83478f0a5c337ecb4f6b3d06495ea6df33a07a4184d1096cc352af1cb8d0c7
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 143.73
+status: ok
+----- stdout -----
+[PASS] A-authority: Block 128 note/runner/cache and ancestors 127--103 are pinned
+[PASS] B-the-eigen-relation: the rebuilt family-B O* obeys y^H O*=lambda y^H with lambda nonzero in both fixtures
+[PASS] C-the-scalar-quotient-theorem: one positive direction makes all eight-basis compressions scalar, O*=lambda I, and every quotient commutator zero
+[PASS] D-the-reduction: R(O*)=mu[lambda y-(Theta' O* Theta')^H y]y^H and mu cancels to one vector equation
+[PASS] E-the-universal-gate: the completion-independent 4x3 gate has rank 3 and forces mu=mu^-1=0 in both fixtures
+[PASS] F-the-minimal-slice: B'=0,A'=I has generic leakage rank 7; exact mu=1,2,3 samples pass and the coordinate gcd is mu^2
+[PASS] G-the-forward-count: two positive directions support noncommuting Hermitian quotient operators; no richer-carrier positivity is claimed
+[PASS] H-scope: scalar-quotient/dimension-count/moduli/N1--N8/W1/N5 and no-go/TOE firewalls are present
+AUTHORITY: parent=f6b0cf59e2cc588ebd3e34b96e730574cb485db2; Block128 blobs=(194cf07ad9a0b7269defe6bdba8750fc6fe95640,90f9b53b2ef499367f2f65fd8314a13137af203b,d61e03774a11c5d983e52c779a42458983a2af52); axiom=bc23300becfe4e4db57153c0e94cfcdf2338da71
+EIGEN: fixtures=(5/13, 3/5); y^H O*=lambda y^H exactly; lambda!=0 in both
+QUOTIENT: imported momentum inertias=(((1, 0, 7), (1, 0, 7), (1, 0, 7), (1, 0, 7)), ((1, 0, 7), (1, 0, 7), (1, 0, 7), (1, 0, 7))); live Block124 momentum-zero inertia=(1, 0, 3); dim End(Q_+)=1; nonscalar dim=0; compression(O)=y^H O y/(y^H y) in Q(i,rho)
+REDUCTION: R(O*)=mu[lambda y-(Theta' O* Theta')^H y]y^H; mu>0 cancels; Theta' is linear in the displayed (mu,mu^-1) targets
+UNIVERSAL: gate shapes/ranks=(((4, 3), 3), ((4, 3), 3)); 32 symbolic A'/B' complement parameters absent; only (alpha,mu,mu^-1)=(0,0,0)
+SLICE: B'=0,A'=I; leakage ranks at mu=(1,2,3)=((7, 7, 7), (7, 7, 7)); generic rank=7; charts=1; adjointness gcd=mu**2; positive roots=0; general self-consistent case=UNCLASSIFIED
+FORWARD: sigma_x and sigma_z are Hermitian on C^2 and rank[sigma_x,sigma_z]=2; this is an existence count, not an OS-positivity construction
+N5: per_element: the quotient has exactly one positive direction per momentum at both rational shear fixtures, every quotient observable is a scalar multiple of the identity, and every commutator vanishes
+per_site: one Grassmann mode per fine site in the certified flat package
+per_mode: the descending member satisfies y^H O* = lambda y^H with nonzero lambda and therefore acts as lambda times the identity on the quotient, so any single-operator Ward statement is automatic and carries no information
+per_block: the fixed-member adjointness equation is completion-independent after the overall mu cancels: its (mu, mu^{-1}) target gate has exact rank 3, the genuine 21-point hunt finds no witness at either fixture, and the minimal self-consistent slice remains empty with rank 7 and gcd mu^2; the general self-consistent case is unclassified
+lattice_wide: checked and not executed — carriers with at least two positive directions per momentum, the paired-momentum-degeneracy observable question, richer-carrier OS positivity, cross-lane facet-charge bridge, common nilpotent differential construction, actual ADM/history transporter completion, joint gravity, gravity constraint quotient beyond the displayed carrier, Records, audit retention, and TOE closure remain open
+RESULT: the observable wall dissolves into a dimension count — the rank-one quotient carries only scalars, so no completion choice could ever have produced a local observable, and the forward program is carriers with at least two positive directions per momentum
+DECISION_CUT: pose the richer-carrier construction and the cross-lane bridge; reject single-operator observable claims on rank-one quotients
+TOE: zero obligation retirement; no TOE percentage moves; retained-positive end-to-end theory count remains zero; gravity constraint quotient remains unexecuted; actual ADM/history transporter remains open
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

@@ -1,6 +1,6 @@
 {
- "edge_count": 15746,
- "node_count": 5547,
+ "edge_count": 15747,
+ "node_count": 5548,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -2333,6 +2333,10 @@
   "claude_complex_action_grown_companion_note_2026-05-10": {
    "deps_hash": "7bfe3c0f70cf",
    "out_degree": 6
+  },
+  "clause_011_body_reverse_vs_k_b16_bounded_theorem_note_2026-08-15": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "clifford_bimodule_ray_saturation_future_target_note_2026-04-19": {
    "deps_hash": "e3b0c44298fc",

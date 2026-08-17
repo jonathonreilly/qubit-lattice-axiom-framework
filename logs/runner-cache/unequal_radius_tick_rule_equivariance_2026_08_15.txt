@@ -1,0 +1,57 @@
+===== runner cache v1 =====
+runner: scripts/unequal_radius_tick_rule_equivariance_2026_08_15.py
+runner_sha256: 9a374f49e0d2885c2d75fa158a6134a8c5bfbe0824f9eb3c86e49d8049d1fc8b
+input_fingerprint_sha256: d923af68ebb7862cbe397bc35e66da7b9bdf30ee00c188df6d842e37dc0f6b3d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+unequal-radius tick-rule cube-equivariance
+AUDIT_INPUT_PATHS:
+  docs/UNEQUAL_RADIUS_TICK_RULE_EQUIVARIANCE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+G_plus=24
+seeds=((-2, -2, -2), (-2, -2, -1), (-2, -2, 1))
+radii=(2, 1, 3)
+v=(-3, -3, -1)
+sigma=(1, 0, 1, 0, 1, 1)
+ticks=(1, None, 1, None, 3, 2)
+stab_sigma=2
+stab_sigma_t=1
+N_tick_ok=4
+lex_first_c=(1, 0, 2, 0, 1, 2)
+N_unread=24
+N_weight4=24
+N_breaker=24
+N_box=24
+N_commute=24
+N_commute_over_24=24/24
+N_commute_eq_24=True
+PASS: audit-input-paths | AUDIT_INPUT_PATHS is the required static two-string literal tuple
+PASS: source-lattice
+PASS: source-admissibility
+PASS: source-unread-qubit
+PASS: g-plus-order | proper=24
+PASS: host-lex-first-breaker | sigma=(1, 0, 1, 0, 1, 1) ticks=(1, None, 1, None, 3, 2) stab=(2,1)
+PASS: lex-first-tick-ok | c=(1, 0, 2, 0, 1, 2) N_tick_ok=4
+PASS: theorem-1-n-commute | N_commute=24
+PASS: theorem-2-commute-is-24 | eq24=True
+PASS: claim-scope
+PASS: displayed-not-adopted
+PASS: l1-not-attached
+PASS: not-leftover-uneqrad-deleq
+PASS: admissibility-unedited
+PASS: forbidden-phrases
+PASS: no-axiom-edit
+per_element: N_commute is the exact count of the 24 proper cube rotations whose image is a weight-4 unread star containing g·c
+per_site: scored only the G+ orbit of the uneqrad lex-first unequal-radius breaker at v
+per_mode: no spectral calculation; occupancy and lock-ticks only
+per_block: 3-ball unequal-radius host orbit only; no fourth ball
+lattice_wide: checked and not executed — one finite G+ orbit, not a lattice-wide rule
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

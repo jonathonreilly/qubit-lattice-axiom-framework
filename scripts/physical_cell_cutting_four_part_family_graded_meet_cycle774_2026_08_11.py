@@ -1357,28 +1357,28 @@ gate(MP[PRIME] == [3, 0, 3, 0, 12] and MP[PRIME2] == [3, 0, 3, 0, 12]
 
 gate(OP == [0, 3, 3, 6, 0] and OC and OT == 54
      and OT + MT[PRIME] == KIF.shape[0], "E13",
-     "the incidence-only directions are the per-block kernel less the meet: {0} by weight, recomposing to {1}, and {1} plus {2} is {3}".format(
-         nd(OP), nd(OT), nd(MT[PRIME]), nd(OT + MT[PRIME])))
+     "over F_{4}, incidence-only block dimensions are {0}, totaling {1}; with meet {2}, {1}+{2}={3}".format(
+         nd(OP), nd(OT), nd(MT[PRIME]), nd(OT + MT[PRIME]), nd(PRIME)))
 
 gate(len(S3A) == 4 and len(W3P) == 4 and S3T == [(6, 6, 0, 12, 12)]
      and len(S3T) == 1 and HOLDFULLI and HOLDFULLT, "E14",
-     ("all {0} weight-{1} blocks have kernel pair {2}/{2}, meet {3}, stack rank "
-      "{4} of {5}; coordinate permutations carry the weight class").format(
+     ("over F_{6}, all {0} weight-{1} blocks have kernel pair {2}/{2}, meet {3}, stack rank "
+      "{4}/{5}; coordinate permutations carry the class").format(
          nd(len(S3A)), nd(3), nd(S3T[0][0]), nd(S3T[0][2]), nd(S3T[0][3]),
-         nd(S3T[0][4])))
+         nd(S3T[0][4]), nd(PRIME)))
 
 gate(S1T == [(3, 3, 0, 6, 12)] and S2T == [(6, 6, 3, 9, 12)]
      and len(S1T) == 1 and len(S2T) == 1, "E15",
-     ("at weight {0} the two stack to rank {1} of the {2} available with "
-      "meet {3}; at weight {4} they share {5} of {6}: the separation is at odd weight").format(
+     ("over F_{7}: weight-{0} stack rank {1}/{2}, meet {3}; weight-{4} meet "
+      "{5}/{6}; separation is at odd weight").format(
          nd(1), nd(S1T[0][3]), nd(S1T[0][4]), nd(S1T[0][2]), nd(2),
-         nd(S2T[0][2]), nd(S2T[0][0])))
+         nd(S2T[0][2]), nd(S2T[0][0]), nd(PRIME)))
 
 gate(HOLDN == 1 and SWB != SWK and INCB == INCK and INCK == 87
      and SWK == 87, "E16",
-     ("mutation witness: a piece swap leaves {0} of {1} flips holding it; its "
-      "block sum {2} differs from full kernel {3}, while incidence gives {4}/{5}").format(
-         nd(HOLDN), nd(NFL), nd(SWB), nd(SWK), nd(INCB), nd(INCK)))
+     ("over F_{6}, swap mutation holds {0}/{1} flips, block sum {2} differs from kernel "
+      "{3}; incidence block/full {4}/{5}").format(
+         nd(HOLDN), nd(NFL), nd(SWB), nd(SWK), nd(INCB), nd(INCK), nd(PRIME)))
 
 gate(CSTB == [2] and len(CORB2) == 24 and COSZ == [8] and len(ORBF) == 12
      and POSZ == [16] and len(CORB2) * COSZ[0] == NCOV
@@ -1410,8 +1410,8 @@ gate(len(UNT) == 12 and MULT == [2] and entset(HT) == [0, 1]
      and rowset(HT) == [4] and RKT == [9, 9] and HT.shape[1] - RKT[0] == 3
      and NKI.shape[0] == 3 and NKT.shape[0] == 3 and NMEET == 3
      and QUOTIENT_OK, "E21",
-     "the twin reduces the same way, halved rank {0} and corank {1}, and the two null spaces of dimension {1} meet in {1}, so they are equal".format(
-         nd(RKT[0]), nd(HT.shape[1] - RKT[0])))
+     "over F_{2}, twin halved rank/corank {0}/{1}; its and incidence's {1}-nullspaces meet in dimension {1} and coincide".format(
+         nd(RKT[0]), nd(HT.shape[1] - RKT[0]), nd(PRIME)))
 
 gate(not np.array_equal(HI24, HT24) and AGR == 0 and MSI != MST
      and not np.array_equal(HI, HT) and NMEET == 3, "E22",
@@ -1429,38 +1429,38 @@ gate(DE == [-1, 0, 1] and DNZ == 3072 and DNZ == NCOV * 16 and DPR == 16, "E24",
 
 gate(DPF == [6, 9, 6, 6, 0] and DCON and wsum(DPF) == 102 and DTOT == 102
      and DPF[4] == 0, "E25",
-     "the per-block rank of the difference is {0} by weight, class-constant, recomposing to {1}; it vanishes on the all-signs block".format(
-         nd(DPF), nd(wsum(DPF))))
+     "over F_{2}, difference ranks by weight are {0}, class-constant, total {1}, zero on the all-signs block".format(
+         nd(DPF), nd(wsum(DPF)), nd(PRIME)))
 
 gate(NMEM == 368 and len(SWEEP) == 185 and min(KTOT) == 48 and max(KTOT) == 120
      and MCONS == set([True]) and MAS == set([12]), "E26",
-     "the one swap sweep has {0} members and {1} signatures; kernel totals run {2} to {3}, every meet is graded with all-signs entry {4}".format(
+     "over F_{5}, the {0}-member one-swap sweep has {1} signatures, kernel totals {2}..{3}, all-signs meet entry {4}".format(
          nd(NMEM), nd(len(SWEEP)), nd(min(KTOT)), nd(max(KTOT)),
-         nd(sorted(MAS)[0])))
+         nd(sorted(MAS)[0]), nd(PRIME)))
 
 gate(min(MTOT) == 12 and max(MTOT) == 59 and NMEM == 368 and NFAM == 3321960, "E27",
-     "the declared {3}-member one-swap sweep has meet totals {0} through {1}; full family size is {4}".format(
-         nd(min(MTOT)), nd(max(MTOT)), nd(KIF.shape[0]), nd(NMEM), nd(NFAM)))
+     "over F_{5}, the declared {3}-member one-swap sweep has meet totals {0}..{1}; full family size {4}".format(
+         nd(min(MTOT)), nd(max(MTOT)), nd(KIF.shape[0]), nd(NMEM), nd(NFAM), nd(PRIME)))
 
 gate(NSAMP == 460 and NSWAP == 368 and NDISJ == 23 and NSUB == 70
      and HDIM == [6, 7, 9, 12] and HCNT == [366, 55, 37, 2] and SIX == 366
      and TRANS == 169 and SAMPLE_OK, "E28",
-     ("in the declared sample, {0} of {1} dimension-{3} kernels at selected "
-      "weight-{2} block are transverse to the incidence kernel").format(
-         nd(TRANS), nd(SIX), nd(3), nd(HDIM[0])))
+     ("over F_{4}, the sample has {0}/{1} dimension-{3} selected weight-{2} kernels "
+      "transverse to incidence").format(
+         nd(TRANS), nd(SIX), nd(3), nd(HDIM[0]), nd(PRIME)))
 
 gate(NDIS == 130 and NDS6 == 103 and MAXM == 27 and NDIS < NSAMP
      and NDS6 < SIX and MAXM > 1, "E29",
-     ("the {0}-member sample realises {4} selected weight-{5} kernels; "
+     ("over F_{9}, the {0}-member sample realises {4} selected weight-{5} kernels; "
       "{6} have dimension {7}, maximum multiplicity {8}").format(
          nd(NSAMP), nd(NSWAP), nd(NDISJ), nd(NSUB), nd(NDIS), nd(3), nd(NDS6),
-         nd(HDIM[0]), nd(MAXM)))
+         nd(HDIM[0]), nd(MAXM), nd(PRIME)))
 
 gate(INCR == 13 and TWNR == 2 and CI3 != CT3 and INCR > 1 and TWNR > 1
      and INCR < NSAMP, "E30",
-     ("selected weight-{0} kernel multiplicities in the {2}-member sample are "
-      "incidence {1} and comparison {3}; the two kernels are distinct").format(
-         nd(3), nd(INCR), nd(NSAMP), nd(TWNR)))
+     ("over F_{4}, selected weight-{0} kernel multiplicities in the {2}-member sample: "
+      "incidence {1}, comparison {3}; kernels distinct").format(
+         nd(3), nd(INCR), nd(NSAMP), nd(TWNR), nd(PRIME)))
 
 gate(len(MUTATIONS) == 13 and all(MUTATIONS), "E31",
      "all {0} targeted mutations are rejected: masks, geometry, orbit fibres, signs, ranks, quotient, selectors, sample, fields, and family".format(

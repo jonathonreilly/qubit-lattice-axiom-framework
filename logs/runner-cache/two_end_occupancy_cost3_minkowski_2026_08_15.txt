@@ -1,0 +1,54 @@
+===== runner cache v1 =====
+runner: scripts/two_end_occupancy_cost3_minkowski_2026_08_15.py
+runner_sha256: bc645c78c78d8e44b84df24265e3e0328ad7c89c0025f1891d0ce8dc13c24480
+input_fingerprint_sha256: cc99bd10e6ceff07d725db340314e0f4beaf1cabd78e597a58a5bac9266354ef
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.32
+status: ok
+----- stdout -----
+external_scientific_inputs: none; B_3(0), G+, and {1,2,3} are theorem hypotheses
+package_local_integrity_reads: runner source, proposed source note, and live axiom memo
+measure_boundary: exact integer path costs on the radius-3 nearest-neighbor ball
+negative_scope: displayed two-end costs are not written into Admissibility
+orbit_weights: ((0, 1), (1, 0), (1, 1), (1, 2), (2, 1), (2, 2), (2, 3), (3, 2))
+n_maps: 6561
+reverse_count: 405
+lex_first_c: (1, 1, 3, 1, 1, 1, 1, 1)
+lex_first_times: (7, 3)
+worst_axis_best_diag: (9, 5)
+orbit_indices: seed=0 axis_ext=2 turn12=3 turn23=6
+PASS: gplus-order proper cubic rotations number 24
+PASS: ball-size B_3(0) has 63 sites
+PASS: directed-edges B_3(0) has 228 directed nearest-neighbor edges
+PASS: thm1-orbit-count endpoint occupancy pairs form 8 G+ orbits
+PASS: thm1-orbit-weights the eight orbits are the inward-weight pairs listed in the note
+PASS: thm1-first-hop-one-orbit the six seed-exit pairs occupy one G+ orbit
+PASS: thm1-axis-extensions-one-orbit both axis extensions lie in the same-weight (1,1) orbit
+PASS: thm1-diag-turns the body-diagonal shortest path uses orbits (0,1), (1,2), (2,3)
+PASS: thm1-axis-leaf (3,0,0) has a unique in-ball neighbor
+PASS: thm2-assignment-count G+-equivariant {1,2,3} costs number 6561
+PASS: thm2-reversal-count exactly 405 of the 6561 assignments reverse the diamond order
+PASS: thm2-lex-first the lex-first reversing filling is (1,1,3,1,1,1,1,1) on the eight orbits
+PASS: thm2-lex-first-note the note exhibits that lex-first reversing filling and arrival pair
+PASS: thm2-lex-first-inequality the lex-first pair obeys 3*49 = 147 > 9*9 = 81
+PASS: thm2-seed-exit-does-not-block the binary seed-exit bound does not block every {1,2,3} filling
+PASS: thm2-reverse-count-in-note the note reports the 405 reversing fillings
+PASS: thm2-unit-costs unit costs give t(3,0,0)=t(1,1,1)=3 and stay diamond
+PASS: thm2-all-three constant-3 costs give t(3,0,0)=t(1,1,1)=9 and stay diamond
+PASS: thm2-not-binary-leftover the note states the ternary census is not a leftover of the binary filling
+PASS: thm3-displayed-not-adopted the note reports the family as displayed, not adopted
+PASS: claim-scope claim_scope reports the B_3(0) diamond-order question only
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: forbidden-strings note, runner, and axiom avoid the dispatch-forbidden phrases
+PASS: no-axiom-cost the live axiom memo does not host a two-end occupancy hop cost
+PASS: claim-type-and-gate bounded theorem type and a passing N1-N8 gate are source-visible
+per_element: checked exactly — each directed B_3(0) edge carries one inward occupancy pair
+per_site: checked exactly — occupancy is the 6-bit inward front at that site
+per_mode: checked exactly — eight G+ pair-orbits and all 6561 {1,2,3} fillings
+per_block: checked exactly — t(3,0,0)^2/9 ?<= t(1,1,1)^2/3 on every filling
+lattice_wide: checked and not executed — no Admissibility cost and no path-length law are adopted
+TOTAL: PASS=25 FAIL=0
+
+----- stderr -----
+

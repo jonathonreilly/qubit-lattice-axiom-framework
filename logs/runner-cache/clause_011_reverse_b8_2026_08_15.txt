@@ -1,0 +1,71 @@
+===== runner cache v1 =====
+runner: scripts/clause_011_reverse_b8_2026_08_15.py
+runner_sha256: 74836931d67a0c90b7ea8a07653bdd2cc53af5a11f7552b53e8e99354625e998
+input_fingerprint_sha256: fa6ad7c37bad12662131c2e61664ab6c968a72807aa18c5501c9d23ff41de152
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/CLAUSE_011_REVERSE_B8_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+dijkstra_count_budget: 1
+claim_scope: Body and face reverse under the named (0,1,1) hop-cost on B_8(0) are reported. Displayed, not adopted.
+external_scientific_inputs: current Lattice and Admissibility wording; no observations or fits
+integrity_reads: this runner, its note, and the axiom memo; no other scientific inputs
+construction: named (0,1,1) hop-cost on B_8(0) with one origin Dijkstra
+negative_scope: displayed, not adopted; not written into Admissibility; L1 not attached
+PASS: audit-inputs declared source-bound inputs exist as the required string-literal tuple
+PASS: audit-input-literals AUDIT_INPUT_PATHS is a static two-string literal in this runner
+PASS: source-lattice current cubic nearest-neighbor wording is pinned
+PASS: source-admissibility current one-fixed-rule wording is pinned
+PASS: source-record-boundary current lock/content/unreadable-at-absence wording is pinned
+PASS: source-formation-boundary formation site/probability/rate remains outside Admissibility
+PASS: ball-cardinality B_8(0) has exactly 833 integer sites
+PASS: targets-inside the six in-ball scored sites lie in B_8(0) and (4,4,4) does not
+PASS: clause-identity seed-exit is cheap and axis-one and support-drop cost 3
+PASS: one-dijkstra exactly one Dijkstra computation is used
+PASS: finite-times every in-ball target is reached by a finite path
+arrival_times:
+  t(4, 0, 0)=8  t^2/|v|_2^2=64/16
+  t(6, 0, 0)=10  t^2/|v|_2^2=100/36
+  t(8, 0, 0)=14  t^2/|v|_2^2=196/64
+  t(2, 2, 2)=6  t^2/|v|_2^2=36/12
+  t(3, 3, 0)=6  t^2/|v|_2^2=36/18
+  t(4, 4, 0)=8  t^2/|v|_2^2=64/32
+  t(4, 4, 4)=absent  |v|_1=12
+PASS: time-400 computed t(4,0,0)=8 is written in the note
+PASS: time-600 computed t(6,0,0)=10 is written in the note
+PASS: time-800 computed t(8,0,0)=14 is written in the note
+PASS: time-222 computed t(2,2,2)=6 is written in the note
+PASS: time-330 computed t(3,3,0)=6 is written in the note
+PASS: time-440 computed t(4,4,0)=8 is written in the note
+reverse_bits:
+  body (4,0,0) vs (2,2,2): True 12 t(4,0,0)^2=768 16 t(2,2,2)^2=576
+  body (8,0,0) vs (4,4,4): not a B_8(0) comparison; (4,4,4) is outside the ball
+  face (4,0,0) vs (3,3,0): True 16 t(3,3,0)^2=576 18 t(4,0,0)^2=1152
+  face (8,0,0) vs (4,4,0): True 64 t(4,4,0)^2=4096 32 t(8,0,0)^2=6272
+PASS: body-400-222 12 t(4,0,0)^2 > 16 t(2,2,2)^2 holds and is written
+PASS: body-800-444-absent (4,4,4) is outside B_8(0), so the large body comparison is not scored
+PASS: face-400-330 ((4,0,0),(3,3,0)) has smaller t^2/|v|_2^2 on the more-diagonal site
+PASS: face-800-440 ((8,0,0),(4,4,0)) has smaller t^2/|v|_2^2 on the more-diagonal site
+PASS: witnessing-paths named in-ball walks realize the four displayed arrivals used in reverse bits
+PASS: not-b6-leftover t(6,0,0)=10 on B_8(0) is not the B_6(0) leftover 12
+PASS: graph-length-contrast uniform graph-length does not reverse the in-ball body pair and is not attached
+PASS: mutation-seed-exit charging seed-exit 3 changes the opening hop of the axis witness
+PASS: note-contract machine fields, exhibition wording, N1-N8, and forbidden-phrase hygiene hold
+PASS: claim-scope front matter keeps the dispatch claim_scope
+PASS: not-in-admissibility (0,1,1) is not written into Admissibility
+PASS: forbidden-phrases forbidden phrases are absent from the source note
+PASS: axiom-untouched the axiom memo is an input only
+per_element: inward-weight clauses and hop-costs are evaluated on named directed nearest-neighbor edges
+per_site: arrivals are read at the six in-ball targets; (4,4,4) is outside B_8(0)
+per_mode: reverse is the exact integer comparison on body and face pairs
+per_block: one Dijkstra on B_8(0) and the named (0,1,1) hop-cost
+lattice_wide: checked and not executed — no Admissibility edit and L1 is not attached
+TOTAL: PASS=30 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,63 @@
+===== runner cache v1 =====
+runner: scripts/full_axis_age_bit_encoding_equivariance_2026_08_15.py
+runner_sha256: db249859c9569d34233c572c3cdd352f0d460c0c73ca9006cf4fce730836812b
+input_fingerprint_sha256: 6aac4cdb88e163e568c82b9c38bbe5765e979c9e9783bb6fb3867a4bd3e3d9a2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+full-axis age-bit encoding G+ equivariance
+AUDIT_INPUT_PATHS:
+  docs/FULL_AXIS_AGE_BIT_ENCODING_EQUIVARIANCE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+G_plus=24
+N_perp=12
+N_pair=48
+N_complete=24
+N_complete_over_24=24/24
+N_denom=576
+N_commute=288
+N_commute_over_denom=288/576
+N_commute_eq_576=False
+f_independent_of_b=False
+perp_rows:
+  (0, 1, 0, 1, 1, 1) full=z both=True n_comp=2,2 f0=(0, +, 0, −, −, +) f1=(0, +, 0, −, +, −) commute=24/48
+  (0, 1, 1, 0, 1, 1) full=z both=True n_comp=2,2 f0=(0, +, −, 0, −, +) f1=(0, +, −, 0, +, −) commute=24/48
+  (0, 1, 1, 1, 0, 1) full=y both=True n_comp=2,2 f0=(0, +, −, +, 0, −) f1=(0, +, +, −, 0, −) commute=24/48
+  (0, 1, 1, 1, 1, 0) full=y both=True n_comp=2,2 f0=(0, +, −, +, −, 0) f1=(0, +, +, −, −, 0) commute=24/48
+  (1, 0, 0, 1, 1, 1) full=z both=True n_comp=2,2 f0=(+, 0, 0, −, −, +) f1=(+, 0, 0, −, +, −) commute=24/48
+  (1, 0, 1, 0, 1, 1) full=z both=True n_comp=2,2 f0=(+, 0, −, 0, −, +) f1=(+, 0, −, 0, +, −) commute=24/48
+  (1, 0, 1, 1, 0, 1) full=y both=True n_comp=2,2 f0=(+, 0, −, +, 0, −) f1=(+, 0, +, −, 0, −) commute=24/48
+  (1, 0, 1, 1, 1, 0) full=y both=True n_comp=2,2 f0=(+, 0, −, +, −, 0) f1=(+, 0, +, −, −, 0) commute=24/48
+  (1, 1, 0, 1, 0, 1) full=x both=True n_comp=2,2 f0=(−, +, 0, +, 0, −) f1=(+, −, 0, +, 0, −) commute=24/48
+  (1, 1, 0, 1, 1, 0) full=x both=True n_comp=2,2 f0=(−, +, 0, +, −, 0) f1=(+, −, 0, +, −, 0) commute=24/48
+  (1, 1, 1, 0, 0, 1) full=x both=True n_comp=2,2 f0=(−, +, +, 0, 0, −) f1=(+, −, +, 0, 0, −) commute=24/48
+  (1, 1, 1, 0, 1, 0) full=x both=True n_comp=2,2 f0=(−, +, +, 0, −, 0) f1=(+, −, +, 0, −, 0) commute=24/48
+PASS: audit-input-paths | AUDIT_INPUT_PATHS is the required static two-string literal tuple
+PASS: source-lattice
+PASS: source-admissibility
+PASS: source-unread-qubit
+PASS: g-plus-order | proper=24
+PASS: twelve-perp-masks | N_perp=12
+PASS: theorem-1-n-complete | N_complete=24/24
+PASS: theorem-2-n-commute | N_commute=288/576
+PASS: fail-witness | lhs=(1, 0, 0, 2, 2, 1) rhs=(2, 0, 0, 1, 2, 1)
+PASS: claim-scope
+PASS: displayed-not-adopted
+PASS: l1-not-attached
+PASS: not-leftover-bitlaw
+PASS: admissibility-unedited
+PASS: forbidden-phrases
+PASS: no-axiom-edit
+per_element: N_complete, N_commute, and f(σ,b) are exact
+per_site: 12 perpendicular weight-4 occupancy masks scored
+per_mode: no spectral calculation
+per_block: 6-NN star masks and G+ only
+lattice_wide: checked and not executed
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

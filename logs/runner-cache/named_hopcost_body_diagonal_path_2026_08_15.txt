@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/named_hopcost_body_diagonal_path_2026_08_15.py
+runner_sha256: b54790c5ca9505d9796cfa61ec87a2298d39dcf65a2687f029c10a92476baa6a
+input_fingerprint_sha256: 528d6779cd8ed2939024f8a38831ebbce6d8c656a66a8c2773ee2a7063b31f4b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: none; exact six-neighbor hop-cost algebra
+package_local_integrity_reads: proposed source note and live axiom memo
+claim_boundary: displayed named hop-cost; no admissibility edit
+lex_first_path: ((0, 0, 0), (0, 0, 1), (0, 0, 2), (0, 1, 2), (0, 2, 2), (1, 2, 2), (2, 2, 2))
+hop_pairs: [(0, 1), (1, 1), (1, 2), (2, 2), (2, 3), (3, 3)]
+hop_clauses: ['seed-exit', 'equal-weight', 'neither', 'equal-weight', 'neither', 'equal-weight']
+hop_costs: (3, 3, 1, 3, 1, 3)
+orbit_cost_sum: 14
+shortest_path_count: 90
+common_multiset: (1, 1, 3, 3, 3, 3)
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: one-seed-b6-domain the search domain is the 377-site radius-6 ball about one seed
+PASS: inward-weights seed weight is 0 and the body-diagonal weight is 3
+PASS: thm1-lex-path the lex-first shortest path is the displayed six-step site list
+PASS: thm1-six-hops that path has six nearest-neighbor hops
+PASS: thm1-hop-costs the six computed hop costs are 3,3,1,3,1,3
+PASS: thm1-orbit-cost-sum the orbit-cost sum equals the Dijkstra arrival and equals 14
+PASS: thm1-seed-exit-and-equal-weight the path uses one seed-exit, three equal-weight hops, and two ordinary hops
+PASS: thm2-common-multiset every shortest path has hop-cost multiset {1,1,3,3,3,3}
+PASS: thm2-cost3-present every shortest path has at least one cost-3 equal-weight or seed-exit hop
+PASS: thm2-lex-is-shortest the displayed path is among the enumerated shortest paths and is lex-first
+PASS: mutation-unit-costs-fail replacing every hop by cost 1 does not recover the orbit-cost sum 14
+PASS: mutation-drop-seed-exit-fail dropping the seed-exit cost leaves sum 12, not 14
+PASS: axiom-unedited the live Admissibility sentences are present and the named rule is absent
+PASS: thm3-not-written-into-admissibility the note refuses to write the named rule into Admissibility
+PASS: path-type-is-residual the note treats the path type as the residual, not a leftover of the arrival number
+PASS: claim-scope-contract the declared claim_scope matches the exhibited path-sum statement
+PASS: forbidden-phrases the note omits the dispatch-forbidden phrases
+PASS: note-contains-path-and-costs the note records the lex path, the six costs, and the common multiset
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

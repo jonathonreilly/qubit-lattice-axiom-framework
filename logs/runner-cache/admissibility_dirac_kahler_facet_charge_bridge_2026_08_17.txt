@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_facet_charge_bridge_2026_08_17.py
+runner_sha256: 4bb6021b75118e021b0b823191cd361befb7f5d85830c7b94de84f8af6faa0b1
+input_fingerprint_sha256: 88d66c7babb50b1457928cfab9456bb7f29337edde1aa5d26682dfb4d9a36754
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 0.47
+status: ok
+----- stdout -----
+[PASS] A-authority: Block 129 note/runner/cache, ancestors 128--103, and the cycle-767 content blob are pinned
+[PASS] B-the-input-record: three literal facet-charge points and the cycle-734 interior-cost histogram are exact; det=-28
+[PASS] C-the-difference-lattice: L=Zd1+Zd2 equals 7x+y=0 mod 28 both ways; (4,0),(0,28) and both signs are certified
+[PASS] D-the-no-conserved-total: 5a-7b=0 and a-7b=0 give 4a=0, then a=b=0; the affine constant remains free
+[PASS] E-the-cone-lattice-split: the directed cone is pointed and one-sided; only the lattice is negation-closed, and reversibility is conditional
+[PASS] F-the-dead-echo: 2^4 on eight points versus 4^1 on four has neither a bijection nor a generator-order match
+[PASS] G-the-work-order: the histogram is interior-cost-only; flip pre/post charges and cost-class reversibility remain required
+[PASS] H-scope: facet/lattice/cone/conditional/echo/work-order/N1--N8/W1/N5 and no-go/TOE firewalls are present
+AUTHORITY: parent=30fd2722a10a02f87c235e2ee592d140f8bb7df5; Block129 blobs=(58ce6cb586f7a7a3d59e1f0d2080e33a08a87718,3b811c2329bca16cbe44dcb6a9e266b37b63052e,1da860ae5041fa9630bee671edf67e9593569104); cycle767=82dcb69e9e47ce0211552d4f5e9ac595246e6c25
+INPUT: points=((36, 55), (41, 48), (37, 48)); interior-cost histogram=((1, 192), (2, 96)); pairwise distinct=True; det=-28
+LATTICE: d1=(5, -7); d2=(1, -7); L={(x,y):7x+y=0 mod 28}; fundamental points=28; witnesses=(4, 0),(0, 28) and negatives
+SOLVE: [[5,-7],[1,-7]](a,b)^T=0; subtracting rows gives 4a=0, hence a=b=0; affine c is unrestricted
+CONE: alpha*d1+beta*d2=(5alpha+beta,-7(alpha+beta)); alpha,beta>=0 gives x>=0,y<=0 with y=0 only at the origin; reversibility-in-cost-class=UNMEASURED
+ECHO/WORK: cycle types=(2, 2, 2, 2) vs (4,); orders=2 vs 4; flip facet-deltas=UNMEASURED
+N5: per_element: exact input-pin, lattice-equality, witness, conserved-solve, cone, and echo certificates are checked
+per_site: one Grassmann mode per fine site on the antiperiodic reflection torus
+per_mode: the three displayed dissection charge points are noncollinear with signed-difference lattice 7x + y = 0 mod 28, sign-indefinite in both components
+per_block: the facet charges admit no conserved affine total and the momentum-like reading of their increments is a labeled conditional on cost-class reversibility — on displayed data only the one-sided cone is proven
+lattice_wide: checked and not executed — the flip-enumeration work order, the paired-degeneracy observable question, the common nilpotent differential, the actual ADM/history transporter completion, joint gravity, the gravity constraint quotient beyond the displayed carrier, Records, audit retention, and TOE closure remain open
+RESULT: the first cross-lane theorem stands on exact arithmetic — no conserved facet total, an indefinite difference lattice, a one-sided displayed cone, and a dead naive echo — with the momentum-like bridge conditional on reversibility and the flip enumeration named as the deciding computation
+DECISION_CUT: hand the flip work order to the cell-cutting lane; advance the paired-degeneracy question; reject unconditional momentum-like claims
+TOE: zero obligation retirement; no TOE percentage moves; retained-positive end-to-end theory count remains zero; gravity constraint quotient remains unexecuted; actual ADM/history transporter remains open
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

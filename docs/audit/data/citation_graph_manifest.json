@@ -1,6 +1,6 @@
 {
- "edge_count": 16002,
- "node_count": 5558,
+ "edge_count": 16005,
+ "node_count": 5559,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -441,6 +441,10 @@
   "admissibility_dirac_kahler_even_parity_paired_branch_bounded_theorem_note_2026-08-15": {
    "deps_hash": "7fd8a533f9c6",
    "out_degree": 4
+  },
+  "admissibility_dirac_kahler_facet_charge_bridge_bounded_theorem_note_2026-08-17": {
+   "deps_hash": "0e19da153048",
+   "out_degree": 3
   },
   "admissibility_dirac_kahler_floquet_monodromy_action_pairing_bounded_theorem_note_2026-08-16": {
    "deps_hash": "666669959202",

@@ -1,0 +1,69 @@
+===== runner cache v1 =====
+runner: scripts/displayed_member_agebit_bestcost_2026_08_15.py
+runner_sha256: a9aaf6925c6775aec00d9e0b54e380652cb6474e85509f5e8fab053eb0cd8d1b
+input_fingerprint_sha256: 2dd464822db7f7cae6d25f3ea16498b343fd8c358fa2c52fe9cd00230a6693af
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/DISPLAYED_MEMBER_AGEBIT_BESTCOST_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+external_scientific_inputs: current Lattice, Qubit, Admissibility, and Record sentences; leftover-frame-positive section rebuilt from the July-3 pair; uneqrad lex-first breaker; B_3(0) hop-cost host
+construction: M=(f,c) with f leftover-frame-positive and c=(3,1,3,1,1,3,1,1); hosts are the uneqrad star and B_3(0)
+negative_scope: displayed, not adopted; uniqueness of M is not claimed; L1 not attached; neither extra written into Admissibility
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required static two-string literal tuple
+PASS: source-lattice current cubic nearest-neighbor wording is pinned
+PASS: source-admissibility current local-distribution wording is pinned
+PASS: source-covariance Admissibility still requires one proper-cubic covariant rule
+PASS: source-formation-boundary formation site/probability/rate remains outside Admissibility
+PASS: source-unread-qubit Qubit remains M_2(C) and unread sites cannot be read
+PASS: source-record lock, permanence, content-only readout, and unreadability at absence are pinned
+U_card=81
+v=(-3, -3, -1)
+occupancy_mask=(1, 0, 1, 0, 1, 1)
+lock_ticks=(1, None, 1, None, 3, 2)
+unique_full_axis=2
+b=1
+N_pair=48
+f=(+, 0, −, 0, +, −)
+leftover_frame_sign=1
+N_new=1
+U_persists=True
+fires=True
+orbit_weights=((0, 1), (1, 0), (1, 1), (1, 2), (2, 1), (2, 2), (2, 3), (3, 2))
+c=(3, 1, 3, 1, 1, 3, 1, 1)
+best_times=(9, 5)
+best_type_times=(3, 6, 4, 9, 7, 5)
+diamond_reverses=True
+var_best=0.00017588571745760096138718838683272819756816364739082495726561276123916240347871252
+var_l1=0.020739455141549752323752040186790329037465628894204248843537510712996300295163074
+score: uneqrad star and B_3(0) only
+PASS: g-plus-order finite G+ is exactly the 24 proper cube rotations
+PASS: finite-hosts both our-physics hosts are finite and named in the note
+PASS: u-geometry U is the uneqrad lex-first unequal-radius 3-ball union
+PASS: occupancy-and-ticks σ, t, unique full axis, and b=[t(−z)<t(+z)] match the uneqrad star
+PASS: theorem-1-fire on the uneqrad lex-first breaker, f still fires N_new=1
+PASS: theorem-2-hop-cost on B_3(0), c realizes t(3,0,0)=9, t(1,1,1)=5, diamond reverses, and variance beats ell^1
+PASS: member-pairing the note displays M=(f,c) as one member scored on both hosts
+PASS: claim-scope the note reports the declared displayed claim_scope
+PASS: displayed-not-adopted the pairing is displayed and neither extra is written into Admissibility
+PASS: uniqueness-not-claimed uniqueness of M is not claimed and is not required
+PASS: l1-not-attached the note does not attach L1
+PASS: not-leftover-either-probe the pairing is not leftover of either probe alone
+PASS: admissibility-unedited neither extra is written into Admissibility
+PASS: forbidden-phrases the forbidden rhetoric strings are absent from the note and runner
+PASS: no-axiom-edit the only axiom authority is the current memo; no cache or axiom rewrite
+PASS: claim-type-and-gate bounded theorem type and a passing N1-N8 gate are source-visible
+per_element: f(σ,b), N_new, and each directed B_3(0) edge are exact
+per_site: unread star center v and the 62 nonzero ball sites
+per_mode: one leftover-frame section and one hop-cost 8-tuple
+per_block: fire report plus population variance of |v|_2/t on B_3(0)
+lattice_wide: checked and not executed
+TOTAL: PASS=23 FAIL=0
+
+----- stderr -----
+

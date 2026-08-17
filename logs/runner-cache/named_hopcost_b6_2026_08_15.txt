@@ -1,0 +1,57 @@
+===== runner cache v1 =====
+runner: scripts/named_hopcost_b6_2026_08_15.py
+runner_sha256: 604f830b4a55eae1c51492576dca581217fa03184902cc955a28aeb384eb842a
+input_fingerprint_sha256: 2f1aa10e9bb32ead3830f950eae506f88759e0e839fec2a8e85ee29cb34a9de4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+external_scientific_inputs: none; B_6(0), G+, and the named hop-cost are theorem hypotheses
+package_local_integrity_reads: runner source, proposed source note, and live axiom memo
+measure_boundary: exact integer path costs and |v|_2/t(v) on the radius-6 ball
+negative_scope: displayed two-end costs are not written into Admissibility
+orbit_weights_b6: ((0, 1), (1, 0), (1, 1), (1, 2), (2, 1), (2, 2), (2, 3), (3, 2), (3, 3))
+n_b6_sites: 377
+n_b6_edges: 1752
+t(4,0,0): 12
+t(6,0,0): 18
+t(2,2,2): 14
+t(3,0,0): 9
+t(1,1,1): 5
+type_times: (3, 4, 5, 6, 7, 8, 10, 11, 14, 9, 10, 11, 13, 14, 16, 12, 13, 14, 16, 15, 16, 18)
+diamond_spec_reverse: False
+diamond_b3_order_reverse: False
+var_rho: 0.00067960829822208246407407595810321516843827431543681422753506520559981143994638769
+var_l1: 0.013502037619189685715111160448540921258737937159205231622759066199133158218733037
+PASS: gplus-order proper cubic rotations number 24
+PASS: ball-size B_6(0) has 377 sites
+PASS: nonzero-sites the scored set B_6(0)\{0} has 376 sites
+PASS: one-dijkstra one Dijkstra is capped at the 377-site ball
+PASS: thm1-weight-pairs B_6 inward occupancy pairs realize the nine weight pairs including (3,3)
+PASS: thm1-times the named rule realizes t(4,0,0)=12, t(6,0,0)=18, t(2,2,2)=14
+PASS: thm1-diamond-spec the scale test 3 t(4,0,0)^2 > 16 t(2,2,2)^2 fails: 432 vs 3136
+PASS: thm1-diamond-b3-order the B_3 axis/body-diagonal order on (4,0,0) vs (2,2,2) also fails to reverse
+PASS: thm1-note-times the note exhibits t(4,0,0), t(6,0,0), t(2,2,2) and reports no reverse
+PASS: thm2-type-times selected G+ type arrival times include axis 3k and body-diagonal 14
+PASS: thm2-vars-computed computed named-rule and ell^1 variances match the displayed digits
+PASS: thm2-rho-below-l1 var(|v|_2/t) on the named rule is strictly below ell^1 on the same 376 sites
+PASS: thm2-note-vars the note reports both population variances and which is smaller
+PASS: thm2-not-leftover-b4 the note states the B_6 score is not a leftover of the B_4 score
+PASS: thm3-displayed-not-adopted the note reports the named rule as displayed, not adopted
+PASS: thm3-no-l1-law the note does not attach an ell^1 path-length law
+PASS: no-rescan the runner does not rescan the 6561 fillings
+PASS: claim-scope claim_scope reports the B_6 named-rule score only
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: forbidden-strings note, runner, and axiom avoid the dispatch-forbidden phrases
+PASS: no-axiom-cost the live axiom memo does not host a two-end occupancy hop cost
+PASS: claim-type-and-gate bounded theorem type and a passing N1-N8 gate are source-visible
+per_element: checked exactly — each directed B_6(0) edge carries the named equal-weight hop-cost
+per_site: checked exactly — |v|_2/t(v) is scored on each of the 376 nonzero sites
+per_mode: checked exactly — the single named rule, with one Dijkstra and no 6561 rescan
+per_block: checked exactly — diamond order and population variance on B_6(0)\{0}
+lattice_wide: checked and not executed — no Admissibility cost and no path-length law are adopted
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

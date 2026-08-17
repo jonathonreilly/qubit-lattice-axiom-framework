@@ -1,6 +1,6 @@
 {
- "edge_count": 15743,
- "node_count": 5545,
+ "edge_count": 15744,
+ "node_count": 5546,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -17969,6 +17969,10 @@
   "supplied_three_label_target_apportionment_comparator_bounded_theorem_note_2026-07-30": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "support_drop_hopcost_b12_bounded_theorem_note_2026-08-15": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "susceptibility_density_vanishes_identically_1d_ibp_bounded_theorem_note_2026-06-12": {
    "deps_hash": "e3b0c44298fc",

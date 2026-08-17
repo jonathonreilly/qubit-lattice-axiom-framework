@@ -28,7 +28,7 @@ trace_class: frontier_discovery
 target_claim_id: physical_cell_cutting_cell_orbit_cycles_cycle771_note_2026-08-11
 target_blocker_text: "explain the uniform singleton-orbit cycle length and rank on the declared finite cell object"
 source_of_blocker_text: frontier_question
-reachability_to_target: direct
+reachability_to_target: unknown_frontier
 artifact_role: theorem
 next_trace_action: "independent audit of the landed note and invocation-bound runner evidence"
 conditional_surface_status: "the target domain is the declared finite unit-four-cube object"

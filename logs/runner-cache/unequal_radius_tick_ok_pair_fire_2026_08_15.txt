@@ -1,0 +1,62 @@
+===== runner cache v1 =====
+runner: scripts/unequal_radius_tick_ok_pair_fire_2026_08_15.py
+runner_sha256: b2e7ac3197b501d738b65b2ba74623b37e411862bdc2d31b89d428192a4a027c
+input_fingerprint_sha256: 70d322041d720ac78e27b0ab63995e2a6e0deadd916a5df7dc0f046cfa59f188
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/UNEQUAL_RADIUS_TICK_OK_PAIR_FIRE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+external_scientific_inputs: current Lattice, Qubit, Admissibility, and Record sentences; July-3 k=3 pair rebuilt from the proper-cube action on 3-letter 6-tuples
+construction: U=B_2((-2,-2,-2))∪B_1((-2,-2,-1))∪B_3((-2,-2,1)), unread v=(-3,-3,-1)
+negative_scope: tick-ok fire census only; displayed, not adopted; L1 not attached; radii not written into Admissibility
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required static two-string literal tuple
+PASS: source-lattice current cubic nearest-neighbor wording is pinned
+PASS: source-admissibility current local-distribution wording is pinned
+PASS: source-covariance Admissibility still requires one proper-cubic covariant rule
+PASS: source-formation-boundary formation site/probability/rate remains outside Admissibility
+PASS: source-qubit Qubit remains M_2(C)
+PASS: source-record lock, permanence, content-only readout, and unreadability at absence are pinned
+U_card=81
+v_in_U=False
+occupancy_mask=(1, 0, 1, 0, 1, 1)
+lock_ticks=(1, None, 1, None, 3, 2)
+N_pair=48
+N_pair_support=4
+support_members=(+,0,−,0,+,−),(+,0,−,0,−,+),(−,0,+,0,+,−),(−,0,+,0,−,+)
+Stab_sigma_order=2
+Stab_sigma_t_order=1
+Stab_sigma_t_matrices=((1, 0, 0), (0, 1, 0), (0, 0, 1))
+S_card=4
+lex_first=(+,0,−,0,+,−)
+N_tick_ok=4
+N_fire=4
+fires=(+,0,−,0,+,−),(+,0,−,0,−,+),(−,0,+,0,+,−),(−,0,+,0,−,+)
+PASS: g-plus-order finite G+ is exactly the 24 proper cube rotations
+PASS: center-unread the star center v is not already in U
+PASS: u-geometry U is the displayed unequal-radius 3-ball union and has 81 sites
+PASS: occupancy-mask occupied nearest neighbors of v are exactly +x,+y,+z,−z
+PASS: lock-ticks occupied lock ticks are t(+x)=t(+y)=1, t(+z)=3, t(−z)=2
+PASS: theorem-1-rebuild-s S is rebuilt; |S|=4 and the lex-first member are reported
+PASS: theorem-2-n-fire N_fire counts tick-invariant pair members that form exactly v with U persisting
+PASS: claim-scope the note reports the declared displayed claim_scope
+PASS: displayed-not-adopted the fire census is displayed and is not written into Admissibility
+PASS: l1-not-attached the note does not attach L1
+PASS: not-leftover-prior the note is not leftover of uneqrad census or tickfire equal r
+PASS: admissibility-unedited no firing 6-tuple or radii are written into Admissibility
+PASS: forbidden-phrases the forbidden rhetoric strings are absent from the note and runner
+PASS: no-axiom-edit the only axiom authority is the current memo; no cache or axiom rewrite
+per_element: |S| and N_fire are exact integers
+per_site: only the unread star center v is scored
+per_mode: no spectral calculation
+per_block: the six-neighbor star at v only
+lattice_wide: checked and not executed
+TOTAL: PASS=21 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,74 @@
+===== runner cache v1 =====
+runner: scripts/perp_mask_leftover_frame_fire_census_2026_08_15.py
+runner_sha256: 3a96c7c0156f5b7a99533a92cbfc24d871cc92e52a234be4a5a251dcd3eb232e
+input_fingerprint_sha256: 66e1088f2a6f5a80b2e6cbac444e0c30dfe0dca92a809a4d017a8285160f7009
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.49
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/PERP_MASK_LEFTOVER_FRAME_FIRE_CENSUS_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+external_scientific_inputs: current Lattice, Qubit, Admissibility, and Record sentences; leftover-frame-positive section rebuilt from the July-3 pair; bitreal Theorem 2 lex-first hosts
+construction: 12 lex-first realizing 3-ball hosts; t=min_i ||w-s_i||_1; b from the unique full axis; f leftover-frame-positive
+negative_scope: 12 lex-first hosts only; displayed, not adopted; L1 not attached; f not written into Admissibility
+N_perp=12
+N_pair=48
+host (0, 1, 0, 1, 1, 1) axis=z t=(·, 1, ·, 1, 2, 2) b=0 f=(0, −, 0, +, −, +) N_new=1 U_persists=True fires=True
+host (0, 1, 1, 0, 1, 1) axis=z t=(·, 1, 1, ·, 2, 2) b=0 f=(0, +, −, 0, −, +) N_new=1 U_persists=True fires=True
+host (0, 1, 1, 1, 0, 1) axis=y t=(·, 1, 2, 1, ·, 2) b=1 f=(0, −, +, −, 0, +) N_new=1 U_persists=True fires=True
+host (0, 1, 1, 1, 1, 0) axis=y t=(·, 1, 1, 1, 2, ·) b=0 f=(0, −, −, +, +, 0) N_new=1 U_persists=True fires=True
+host (1, 0, 0, 1, 1, 1) axis=z t=(1, ·, ·, 1, 2, 2) b=0 f=(+, 0, 0, −, −, +) N_new=1 U_persists=True fires=True
+host (1, 0, 1, 0, 1, 1) axis=z t=(1, ·, 1, ·, 2, 2) b=0 f=(−, 0, +, 0, −, +) N_new=1 U_persists=True fires=True
+host (1, 0, 1, 1, 0, 1) axis=y t=(1, ·, 2, 1, ·, 2) b=1 f=(+, 0, +, −, 0, −) N_new=1 U_persists=True fires=True
+host (1, 0, 1, 1, 1, 0) axis=y t=(1, ·, 1, 1, 2, ·) b=0 f=(+, 0, −, +, −, 0) N_new=1 U_persists=True fires=True
+host (1, 1, 0, 1, 0, 1) axis=x t=(2, 1, ·, 1, ·, 2) b=1 f=(+, −, 0, +, 0, −) N_new=1 U_persists=True fires=True
+host (1, 1, 0, 1, 1, 0) axis=x t=(1, 1, ·, 1, 2, ·) b=0 f=(−, +, 0, +, −, 0) N_new=1 U_persists=True fires=True
+host (1, 1, 1, 0, 0, 1) axis=x t=(2, 1, 1, ·, ·, 2) b=1 f=(+, −, −, 0, 0, +) N_new=1 U_persists=True fires=True
+host (1, 1, 1, 0, 1, 0) axis=x t=(1, 1, 1, ·, 2, ·) b=0 f=(−, +, −, 0, +, 0) N_new=1 U_persists=True fires=True
+N_rebuild=12
+N_fire=12
+lex_first_failure=None
+score: 12 lex-first hosts only
+PASS: audit-input-paths | AUDIT_INPUT_PATHS is the required static two-string literal tuple
+PASS: source-lattice
+PASS: source-admissibility
+PASS: source-covariance
+PASS: source-formation-boundary
+PASS: source-qubit
+PASS: source-record
+PASS: g-plus-order | N_G+=24 N_pair=48
+PASS: theorem-1-n-rebuild | N_rebuild=12
+PASS: theorem-2-n-fire | N_fire=12
+PASS: host-(0, 1, 0, 1, 1, 1) | b=0 f=(0, −, 0, +, −, +)
+PASS: host-(0, 1, 1, 0, 1, 1) | b=0 f=(0, +, −, 0, −, +)
+PASS: host-(0, 1, 1, 1, 0, 1) | b=1 f=(0, −, +, −, 0, +)
+PASS: host-(0, 1, 1, 1, 1, 0) | b=0 f=(0, −, −, +, +, 0)
+PASS: host-(1, 0, 0, 1, 1, 1) | b=0 f=(+, 0, 0, −, −, +)
+PASS: host-(1, 0, 1, 0, 1, 1) | b=0 f=(−, 0, +, 0, −, +)
+PASS: host-(1, 0, 1, 1, 0, 1) | b=1 f=(+, 0, +, −, 0, −)
+PASS: host-(1, 0, 1, 1, 1, 0) | b=0 f=(+, 0, −, +, −, 0)
+PASS: host-(1, 1, 0, 1, 0, 1) | b=1 f=(+, −, 0, +, 0, −)
+PASS: host-(1, 1, 0, 1, 1, 0) | b=0 f=(−, +, 0, +, −, 0)
+PASS: host-(1, 1, 1, 0, 0, 1) | b=1 f=(+, −, −, 0, 0, +)
+PASS: host-(1, 1, 1, 0, 1, 0) | b=0 f=(−, +, −, 0, +, 0)
+PASS: claim-scope
+PASS: displayed-not-adopted
+PASS: l1-not-attached
+PASS: not-leftover-bitfire
+PASS: score-lex-first-hosts-only
+PASS: admissibility-unedited
+PASS: forbidden-phrases
+PASS: no-axiom-edit
+per_element: N_rebuild and N_fire are exact integers
+per_site: the 12 lex-first unread realizing hosts only
+per_mode: no spectral calculation
+per_block: 12 perp-mask hosts
+lattice_wide: checked and not executed
+TOTAL: PASS=30 FAIL=0
+
+----- stderr -----
+

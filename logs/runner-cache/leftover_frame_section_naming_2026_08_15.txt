@@ -1,0 +1,69 @@
+===== runner cache v1 =====
+runner: scripts/leftover_frame_section_naming_2026_08_15.py
+runner_sha256: 86eeac1ef1415a3236bbf2d463573966dd968d3213df902d776d5bd215f6550c
+input_fingerprint_sha256: c5b4c225c5d2523342e374291ac7e9b3b9c5f3bd5f735e7b5872baa7bdf2eb37
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+leftover-frame section naming
+AUDIT_INPUT_PATHS:
+  docs/LEFTOVER_FRAME_SECTION_NAMING_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+G_plus=24
+N_perp=12
+N_pair=48
+N_completions=48
+N_orbits=2
+N_name=12
+occupancy_only=True
+leftover_independent_of_bit=True
+named_unique=True
+named_matches_section=True
+frames_proper=True
+signs_split=True
+only_leftover_swap=True
+sign_is_orbit_invariant=True
+no_second_gplus_invariant=True
+no_second_occupancy_independent_bit=True
+perp_rows:
+  (0, 1, 0, 1, 1, 1) full=z leftover=(−x, −y) f0=(0, −, 0, +, −, +) f1=(0, +, 0, −, +, −) frame0=(−y, −x, −z) sign0=1 named=1
+  (0, 1, 1, 0, 1, 1) full=z leftover=(−x, +y) f0=(0, +, −, 0, −, +) f1=(0, −, +, 0, +, −) frame0=(−x, +y, −z) sign0=1 named=1
+  (0, 1, 1, 1, 0, 1) full=y leftover=(−x, −z) f0=(0, +, −, +, 0, −) f1=(0, −, +, −, 0, +) frame0=(−x, −z, −y) sign0=1 named=1
+  (0, 1, 1, 1, 1, 0) full=y leftover=(−x, +z) f0=(0, −, −, +, +, 0) f1=(0, +, +, −, −, 0) frame0=(+z, −x, −y) sign0=1 named=1
+  (1, 0, 0, 1, 1, 1) full=z leftover=(+x, −y) f0=(+, 0, 0, −, −, +) f1=(−, 0, 0, +, +, −) frame0=(+x, −y, −z) sign0=1 named=1
+  (1, 0, 1, 0, 1, 1) full=z leftover=(+x, +y) f0=(−, 0, +, 0, −, +) f1=(+, 0, −, 0, +, −) frame0=(+y, +x, −z) sign0=1 named=1
+  (1, 0, 1, 1, 0, 1) full=y leftover=(+x, −z) f0=(−, 0, −, +, 0, +) f1=(+, 0, +, −, 0, −) frame0=(−z, +x, −y) sign0=1 named=1
+  (1, 0, 1, 1, 1, 0) full=y leftover=(+x, +z) f0=(+, 0, −, +, −, 0) f1=(−, 0, +, −, +, 0) frame0=(+x, +z, −y) sign0=1 named=1
+  (1, 1, 0, 1, 0, 1) full=x leftover=(−y, −z) f0=(−, +, 0, −, 0, +) f1=(+, −, 0, +, 0, −) frame0=(−z, −y, −x) sign0=1 named=1
+  (1, 1, 0, 1, 1, 0) full=x leftover=(−y, +z) f0=(−, +, 0, +, −, 0) f1=(+, −, 0, −, +, 0) frame0=(−y, +z, −x) sign0=1 named=1
+  (1, 1, 1, 0, 0, 1) full=x leftover=(+y, −z) f0=(−, +, +, 0, 0, −) f1=(+, −, −, 0, 0, +) frame0=(+y, −z, −x) sign0=1 named=1
+  (1, 1, 1, 0, 1, 0) full=x leftover=(+y, +z) f0=(−, +, −, 0, +, 0) f1=(+, −, +, 0, −, 0) frame0=(+z, +y, −x) sign0=1 named=1
+PASS: audit-input-paths | AUDIT_INPUT_PATHS is the required static two-string literal tuple
+PASS: source-lattice
+PASS: source-admissibility
+PASS: source-unread-qubit
+PASS: g-plus-order | proper=24
+PASS: twelve-perp-masks | N_perp=12 N_completions=48
+PASS: theorem-1-occupancy-named | leftover slots and full axis are functions of occupancy alone
+PASS: theorem-2-n-name | N_name=12
+PASS: same-f-as-bitsec
+PASS: claim-scope
+PASS: displayed-not-adopted
+PASS: l1-not-attached
+PASS: not-leftover-bitsec
+PASS: admissibility-unedited
+PASS: forbidden-phrases
+PASS: no-axiom-edit
+per_element: leftover slots, full axis, frame sign, and N_name are exact
+per_site: 12 perpendicular weight-4 occupancy masks scored
+per_mode: no spectral calculation
+per_block: 6-NN star masks and G+ only
+lattice_wide: checked and not executed
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

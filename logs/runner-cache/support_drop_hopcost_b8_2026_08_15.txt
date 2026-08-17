@@ -1,0 +1,55 @@
+===== runner cache v1 =====
+runner: scripts/support_drop_hopcost_b8_2026_08_15.py
+runner_sha256: 8aaf8532e5d6336970c6e31e5972a1f2ea4958fbd2557136f54a5e82ed8a1474
+input_fingerprint_sha256: 5db3e612d3cdeb2dca5077ae510d629adf68739b6bb406c4ee8b30486e722c3f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/SUPPORT_DROP_HOPCOST_B8_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+claim_scope: On B_8(0), the named support-drop hop-cost is scored for diamond reverse and for var(|v|_2/t) vs ℓ¹. Displayed, not adopted.
+PASS: audit-input-paths declared inputs are the source note and the current axiom memo
+PASS: audit-input-literal AUDIT_INPUT_PATHS is a static string-literal tuple
+PASS: claim-scope note claim_scope matches the displayed scoring statement
+PASS: displayed-not-adopted the rule is displayed, not adopted
+PASS: not-in-admissibility ν is not written into Admissibility
+PASS: not-attach-l1 the displayed rule is not attached to L1
+PASS: uniqueness-not-claimed uniqueness among hop-costs is not claimed
+PASS: no-axiom-edit note records hypothetical axiom status no edit
+PASS: forbidden-absent forbidden phrases are absent from the source note
+n_sites 833
+t(4,0,0) 10
+t(6,0,0) 12
+t(8,0,0) 16
+t(2,2,2) 8
+12 t(4,0,0)^2 1200
+16 t(2,2,2)^2 1024
+diamond_reverse True
+var_nu 0.00634967516547
+var_l1 0.01133940495651
+dijkstra_calls 1
+PASS: one-dijkstra exactly one Dijkstra ran
+PASS: ball-b8 B_8(0) has 833 sites and 832 nonzero sites
+PASS: reachable every site of B_8(0) is reached
+PASS: t-400 t(4,0,0) = 10
+PASS: t-600 t(6,0,0) = 12
+PASS: t-800 t(8,0,0) = 16
+PASS: t-222 t(2,2,2) = 8
+PASS: diamond-reverse 12 t(4,0,0)^2 > 16 t(2,2,2)^2
+PASS: note-records-times note records the computed arrivals and the reverse products
+PASS: var-nu population variance under ν matches the reported value
+PASS: var-l1 population variance under ℓ¹ matches the reported value
+PASS: var-nu-smaller var(|v|_2/t) is strictly smaller under ν than under ℓ¹
+PASS: note-records-variances note records both variances and the comparison
+PASS: not-leftover-of-b6 t(6,0,0) on B_8(0) is 12, not the B_6 leftover 14
+PASS: seed-and-axis-clauses seed-exit and both-weights-1 cost 3; support increase costs 1
+PASS: axis-boundary-last-step (8,0,0) has only the axis in-ball neighbor (7,0,0)
+PASS: axiom-untouched the axiom memo is an input only and still names the four axioms
+TOTAL: PASS=26 FAIL=0
+
+----- stderr -----
+

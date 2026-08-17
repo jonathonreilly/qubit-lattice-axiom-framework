@@ -1,267 +1,386 @@
 ---
 claim_id: proper_cubic_group_is_24_and_contains_no_boost_bounded_theorem_note_2026-08-13
 claim_type: bounded_theorem
-claim_scope: "The Lattice named symmetry on Z^3 is the 24-element group G of 3x3 monomial signed-permutation matrices with det=+1. Enumeration gives |G|=24. Every R in G satisfies R^T R = I_3 and preserves x1^2+x2^2+x3^2, hence is orthogonal for diag(1,1,1) and not for diag(1,1,-1). A 1+1 boost prototype L=[[2,1],[1,2]], and its 3D block embedding diag(L,1), is not a proper cubic matrix. Lattice and the kinetic-isotropy primitive name Euclidean cubic rotations and one Euclidean tick c_t=c_s; neither sentence names a boost. A Lorentzian boost would require a fourth direction plus a (3,1) form; those extras are displayed and not adopted. The note does not claim Lorentz closure is impossible, does not install a=1, and does not identify G with SO(3)."
+claim_scope: "For the standard linear point action on the six nearest-neighbor displacements of Z^3, the orientation-preserving stabilizer G is exactly the 24 signed-permutation matrices with determinant +1. It is a group, every element preserves the Euclidean form, and exactly 8 of its elements also preserve diag(1,1,-1). Under the explicitly displayed 3+1 comparison iota(R)=diag(1,R), every element fixes the time axis and hence none is a nontrivial time-space-mixing boost. The exact rational boost with 1+1 block [[5/3,4/3],[4/3,5/3]] supplies a correctly typed contrast. The 3+1 comparison is not adopted as framework structure, and no Lorentz-closure claim is made."
 upstream_dependencies:
   - minimal_axioms
-  - kinetic_isotropy_primitive
 runner: scripts/proper_cubic_group_is_24_and_contains_no_boost_2026_08_13.py
 ---
 
-# Proper Cubic Group Is 24 Matrices In SO(3); None Is A Boost
+# The Proper Cubic Point Group Has Order 24; Its Canonical Spacetime Embedding Has No Nontrivial Boost
 
 > **Key terms used in this doc** are indexed A-Z at `docs/KEY_TERMINOLOGY.md`;
 > each row points to the canonical source-of-truth doc.
 
 **Date:** 2026-08-13
 **Type:** bounded_theorem
-**Scope:** exact integer 3×3 named-symmetry algebra of the Lattice proper
-cubic rotations. No Wick parameter, no fourth-direction form, and no
-axiom edit.
+**Scope:** exact finite linear algebra on the nearest-neighbor displacement
+set of the supplied cubic lattice, followed by one explicitly displayed 3+1
+comparison. No spacetime metric or time direction is added to the framework.
 **Audit-status authority:** independent audit lane only. This note authors no
 audit verdict and predicts none.
 **Primary runner:**
 [`scripts/proper_cubic_group_is_24_and_contains_no_boost_2026_08_13.py`](../scripts/proper_cubic_group_is_24_and_contains_no_boost_2026_08_13.py)
 
-Parents on `origin/main`:
+Framework input:
 
-- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) — current axiom memo
-- [`KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md`](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md)
+- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) supplies
+  the cubic lattice `Z^3`, nearest-neighbor adjacency, translations, and
+  proper cubic rotations about each site.
+
+Everything after that quoted input is defined and proved here. In particular,
+this note does not import a boost matrix, a Lorentz metric, or a continuous
+symmetry theorem from another science note.
 
 ## Result Up Front
 
-Lattice supplies a finite named symmetry: the proper cubic rotations of the
-spatial lattice `Z^3`. That named object is a set `G` of exact integer 3×3
-matrices. It is not a Lorentz boost, and it is not the continuous group
-`SO(3)`.
+Fix a site `a in Z^3` and write
 
-Five exact statements locate the object.
+```text
+N = {+e1, -e1, +e2, -e2, +e3, -e3}
+```
 
-1. There are `3! × 2^3 = 48` signed-permutation matrices. Exactly half have
-   `det = +1`, so `|G| = 24`.
-2. Every `R ∈ G` preserves the Euclidean form: `R^T R = I_3`, and
-   `x ↦ R x` preserves `x_1^2 + x_2^2 + x_3^2`. In particular every `R` is
-   orthogonal with respect to `diag(1,1,1)`, not `diag(1,1,-1)`.
-3. A 1+1 boost prototype `L = [[2,1],[1,2]]` is not a 3×3 cubic matrix. Its
-   block embedding `diag(L,1)` fails the monomial ±1 test.
-4. The axiom memo names “standard translations, and proper cubic rotations
-   about each site.” Kinetic isotropy supplies one Euclidean tick
-   `c_t = c_s`, not a Lorentz theorem. Neither sentence names a boost.
-5. The extra object for a Lorentzian boost is a fourth direction plus a
-   `(3,1)` form. That extra is displayed below and is not adopted. This note
-   does not claim Lorentz closure is impossible, does not install `a = 1`,
-   and does not say that the cubic 24 is `SO(3)`.
+for its six nearest-neighbor displacement vectors. A linear point symmetry
+acts on sites by
+
+```text
+x |-> a + R(x-a).
+```
+
+Define
+
+```text
+G = {R in GL(3,Z) : R N = N and det(R)=+1}.
+```
+
+Then:
+
+1. `R N=N` is equivalent to `R` being a signed-permutation matrix.
+2. `G` is a group and has exactly `3! 2^2 = 24` elements.
+3. Every `R in G` satisfies `R^T R=I_3`. The full group does not preserve
+   `D=diag(1,1,-1)`: exactly 8 elements do and 16 do not.
+4. In the displayed 3+1 comparison on columns `(t,x1,x2,x3)`, with
+   `eta=diag(1,-1,-1,-1)`, put `iota(R)=diag(1,R)`. Every `iota(R)`
+   preserves `eta` but has zero time-space mixing, so none is a
+   **nontrivial boost** in the declared sense below.
+5. The exact rational block
+   `B_2=[[5/3,4/3],[4/3,5/3]]` really is Lorentzian:
+   `B_2^T diag(1,-1) B_2=diag(1,-1)`, `det(B_2)=1`, and its positive
+   time-time entry is `5/3`. Its 3+1 extension mixes time and space and is
+   not in `iota(G)`.
+
+The point group `G` is not the infinite affine symmetry group. Adding the
+supplied translations gives the orientation-preserving space group
+`Z^3 semidirect G`; the order-24 statement concerns the fixed-site point
+stabilizer only.
 
 ## Machine Status And Trace
 
 ```yaml
 actual_current_surface_status: bounded-support
 target_claim_type: bounded_theorem
-claim_type_reason: "The 24-element count, Euclidean orthogonality, and non-membership of the boost prototype are proved on declared integer 3x3 matrices. A fourth direction, a (3,1) form, Lorentz closure, and identification of G with SO(3) remain outside the claim."
-trace_class: named_symmetry_localization
-target_claim_id: proper_cubic_named_symmetry_is_24_euclidean_matrices
-target_blocker_text: "name the Lattice cubic symmetry as a finite Euclidean rotation group and separate it from a Lorentz boost"
+claim_type_reason: "Exact nearest-neighbor point-group characterization, finite group proof, metric census, and canonical-embedding boost separation are proved; adoption of spacetime structure and Lorentz closure remain outside the claim."
+trace_class: frontier_discovery
+target_claim_id: null
+target_blocker_text: "separate the finite proper-cubic point action from a nontrivial time-space-mixing boost under one explicit comparison"
 source_of_blocker_text: handoff
 reachability_to_target: advances
+next_trace_action: "Use this result only as a finite point-group/type-separation lemma; any dynamical Lorentz-restoration claim needs its own carrier and proof."
 artifact_role: theorem
-conditional_surface_status: "exact for |G|=24, Euclidean preservation, and non-membership of diag(L,1); Lorentzian extras remain displayed-only"
-hypothetical_axiom_status: "no edit, adoption, minimality, or necessity claim"
+conditional_surface_status: "exact on the declared point action and displayed canonical 3+1 comparison"
+hypothetical_axiom_status: "no axiom or primitive is edited or proposed"
 admitted_observation_status: null
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
 
-## Exact Objects
+## Exact Objects And Conventions
 
-A **signed-permutation matrix** of size 3 is a 3×3 integer matrix with
-exactly one nonzero entry in each row and each column, and with every
-nonzero entry in `{+1, −1}`.
+Matrices act on column vectors. A 3 by 3 **signed-permutation matrix** has
+one nonzero entry in every row and column, with each nonzero entry in
+`{+1,-1}`.
 
-A **proper cubic matrix** is a signed-permutation matrix with `det = +1`.
-Write `G` for the set of all proper cubic matrices. Identity gates in the
-runner call `proper_cubic_count()` and `is_proper_cubic(M)` on these objects.
-
-The Euclidean spatial form is
+The phrase **proper cubic point group** in this note means the standard
+orientation-preserving linear stabilizer of `N` at a fixed site:
 
 ```text
-q_E(x) = x_1^2 + x_2^2 + x_3^2,
+G = {R in GL(3,Z) : R N=N, det(R)=+1}.
 ```
 
-equivalently the matrix `diag(1,1,1)`. The Minkowski 2-form used only as a
-rejector contrast is `η_2 = diag(1,−1)`. The 3×3 contrast form that `G` does
-not preserve as its defining form is `diag(1,1,−1)`.
-
-The 1+1 boost prototype is the integer matrix
+For the displayed comparison only, set
 
 ```text
-L = [[2, 1],
-     [1, 2]].
+eta = diag(1,-1,-1,-1),       iota(R) = diag(1,R).
 ```
 
-Its 3-dimensional block embedding is
+A **nontrivial boost** in this bounded note means a proper, time-oriented
+Lorentz matrix `Lambda` satisfying
 
 ```text
-diag(L, 1) = [[2, 1, 0],
-              [1, 2, 0],
-              [0, 0, 1]].
+Lambda^T eta Lambda = eta,    det(Lambda)=1,    Lambda_00 > 0,
 ```
 
-## Theorem 1 — `|G| = 24`
+with at least one nonzero time-space entry `Lambda_0i` or `Lambda_i0` for
+`i=1,2,3`. This convention excludes the identity/zero-rapidity overlap and
+is sufficient for the finite membership question. It does not claim that
+every Lorentz transformation with mixing is a pure boost rather than a
+boost-rotation composition.
 
-Every signed-permutation matrix is uniquely a pair `(σ, s)` with `σ ∈ S_3`
-and `s ∈ {±1}^3`: the unique nonzero in column `j` sits in row `σ(j)` and
-equals `s_j`. There are `3! = 6` permutations and `2^3 = 8` sign patterns,
-hence `48` signed-permutation matrices.
+## Theorem 1 — The Fixed-Site Linear Stabilizer Is Signed-Permutation
 
-The determinant of that matrix is
+If `R N=N`, each column `R ej` is one of the six vectors `+/- ek`. Since
+`R` is invertible, distinct columns cannot lie on the same coordinate axis.
+Thus the three columns are signed, distinctly permuted standard-basis
+vectors: `R` is a signed-permutation matrix.
+
+Conversely, every signed-permutation matrix permutes `N`, has integer inverse
+`R^T`, and therefore lies in `GL(3,Z)`. Imposing `det(R)=+1` selects exactly
+the orientation-preserving point stabilizer. The affine map about an
+arbitrary site `a` is `x |-> a+R(x-a)`; this is what “about each site” means
+in the supplied Lattice sentence.
+
+## Theorem 2 — `G` Is A Group Of Order 24
+
+A signed-permutation matrix is uniquely specified by a permutation
+`sigma in S_3` and three signs `s1,s2,s3`. Hence there are
+`3! 2^3=48` such matrices and
 
 ```text
-det = sign(σ) · s_1 s_2 s_3 ∈ {±1}.
+det(R) = sign(sigma) s1 s2 s3.
 ```
 
-Flipping one sign sends the determinant to its opposite and is a bijection of
-the 48-element set onto itself. Exactly half the signed-permutation matrices
-therefore have `det = +1`, so
+For every fixed permutation, exactly four sign triples give determinant
+`+1`. Therefore `|G|=3! 2^2=24`.
+
+The identity is in `G`. Products of signed-permutation matrices are
+signed-permutation matrices, and determinants multiply, so `G` is closed.
+For every `R in G`, the inverse is `R^T`, again a signed-permutation matrix
+with determinant `+1`. Thus the counted set is a group, not merely a
+24-element list. The runner checks identity, all `24^2` products, and all
+24 transpose inverses exactly.
+
+## Theorem 3 — Euclidean Preservation And The Indefinite Intersection
+
+The columns of a signed-permutation matrix are an orthonormal Euclidean
+basis, so for every `R in G`,
 
 ```text
-|G| = 48 / 2 = 24.
+R^T R = I_3.
 ```
 
-The runner enumerates the 48 matrices over exact integers and counts the
-`det = +1` subset by `proper_cubic_count()`. A predicate `|G| ≠ 24` fails.
-
-## Theorem 2 — every `R ∈ G` preserves the Euclidean form
-
-Let `R` be a proper cubic matrix. Each column is a signed standard-basis
-vector, the three columns are pairwise orthogonal as integer vectors, and
-each has Euclidean length squared `1`. Hence
+This does **not** imply that each `R` fails to preserve every indefinite
+form. For
 
 ```text
-R^T R = I_3
+D = diag(1,1,-1),
 ```
 
-as an exact integer matrix identity. For every integer (or real) column
-`x = (x_1, x_2, x_3)`,
+the identity and the rotations that keep the distinguished third axis setwise
+do preserve `D`. Exact enumeration gives
 
 ```text
-q_E(R x) = (R x)^T (R x) = x^T (R^T R) x = x^T x = q_E(x).
+|G intersect O(D)| = 8.
 ```
 
-The same matrices are therefore orthogonal for `diag(1,1,1)`. They are not
-defined as the orthogonal group of `diag(1,1,−1)`: that form has signature
-`(2,1)`, while every `R ∈ G` is a Euclidean rotation matrix (an element of
-the compact group `SO(3)`, not a parametrization of that whole group).
-
-## Theorem 3 — a boost prototype is not a proper cubic matrix
-
-The prototype `L = [[2,1],[1,2]]` fails to be a proper cubic matrix for three
-independent reasons, each already visible before any continuum Lorentz
-discussion:
-
-1. `L` is 2×2, not 3×3.
-2. `L` is not monomial with entries in `{±1}` only: the entry `2` is not
-   `±1`.
-3. `L` does not preserve the Euclidean plane form. On `(1,0)` one has
-   `L(1,0) = (2,1)` and `2^2 + 1^2 = 5 ≠ 1`.
-
-Embed the same prototype as a 3×3 block `M = diag(L, 1)`. The `(1,2)` entry
-is `1`, but the first row is `(2, 1, 0)` and therefore contains two nonzero
-entries. So `M` is not a signed-permutation matrix, and
-`is_proper_cubic(M)` is false. A predicate “`diag(L, 1)` is a proper cubic
-matrix” fails.
-
-The same rejection applies to any integer 2×2 matrix that preserves
-`η_2 = diag(1,−1)` other than the Euclidean-type elements `±I` and the
-swap-with-signs that remain in `O(1,1)` of Euclidean type: those matrices
-are still 2×2, and a nontrivial boost-like integer block still fails the
-3×3 monomial ±1 test after `diag(·, 1)` embedding.
-
-## Theorem 4 — the parent sentences name no boost
-
-The current axiom memo states the Lattice named symmetry as:
-
-> standard translations, and proper cubic rotations about each site.
-
-That is a 3-dimensional cubic rotation statement on `Z^3`. It does not name
-a boost, a fourth axis, or a `(3,1)` form.
-
-The kinetic-isotropy primitive supplies one structural graining equality
+The other 16 do not preserve `D`. For example,
 
 ```text
-c_t = c_s,
+Ry = [[ 0, 0, 1],
+      [ 0, 1, 0],
+      [-1, 0, 0]]
 ```
 
-one Euclidean tick equal in form to one spatial edge. It is a regulator
-normalization on a Euclidean block, not a Lorentz theorem. The primitive
-states that full Lorentz restoration remains a separate claim and is not
-supplied by the declaration. Neither parent sentence names a boost.
+has determinant `+1` and lies in `G`, but
 
-## Theorem 5 — extra Lorentzian object, displayed only
+```text
+Ry^T D Ry = diag(-1,1,1) != D.
+```
 
-A Lorentzian boost is not an element of `G`. The extra object that would
-make a boost well-typed is:
+The honest conclusion is that `G` is a subgroup of Euclidean `SO(3)`, while
+the full `G` is not a subgroup of `O(2,1)` for this displayed `D`. The
+8-element intersection is stated rather than erased.
 
-- a **fourth direction**, so that linear maps act on a 4-component
-  `(t, x_1, x_2, x_3)` rather than on the three Lattice coordinates;
-- a **`(3,1)` form**, for example `η = diag(1,1,1,−1)` or
-  `η = diag(−1,1,1,1)`, whose preservation — not preservation of
-  `x_1^2+x_2^2+x_3^2` — would define the boost.
+## Theorem 4 — Canonical 3+1 Embeddings Fix Time
 
-Those two extras are displayed so the type gap is explicit. They are not
-adopted. No fourth lattice direction is added to Lattice. No `(3,1)` form
-is installed. No Wick parameter is chosen. In particular this note does not
-install `a = 1`.
+For every `R in G`, define
 
-The 24 matrices of `G` sit inside `SO(3)` as exact rotation matrices. This
-note does not say that the cubic 24 is `SO(3)`. The continuous group
-`SO(3)` is larger than `G`.
+```text
+iota(R) = [[1, 0],
+           [0, R]].
+```
 
-This note does not claim that Lorentz closure is impossible. A later
-construction may introduce a fourth direction and a `(3,1)` form by a
-separate theorem. That construction is outside the present named-symmetry
-count.
+Because `R^T R=I_3` and `det(R)=1`,
+
+```text
+iota(R)^T eta iota(R) = eta,    det(iota(R))=1.
+```
+
+Moreover `iota(R)` fixes the time basis vector and has zero time-space row
+and column. It therefore fails the declared nontrivial-mixing predicate for
+every one of the 24 elements. The matrices are spatial rotations inside the
+displayed Lorentz group, not nontrivial boosts. The identity may be called a
+zero-rapidity boost in another convention; that is why “nontrivial” and the
+mixing predicate are part of this note's exact claim.
+
+## Theorem 5 — A Correctly Typed Exact Boost Contrast
+
+Let
+
+```text
+B2 = [[5/3, 4/3],
+      [4/3, 5/3]],              eta2 = diag(1,-1).
+```
+
+Exact rational multiplication gives
+
+```text
+B2^T eta2 B2 = eta2,    det(B2)=25/9-16/9=1,    (B2)_00=5/3>0.
+```
+
+Its 3+1 extension on `(t,x1,x2,x3)` is
+
+```text
+B4 = [[5/3, 4/3, 0, 0],
+      [4/3, 5/3, 0, 0],
+      [  0,   0,  1, 0],
+      [  0,   0,  0, 1]].
+```
+
+It preserves `eta`, is proper and time-oriented, and has nonzero time-space
+entries. Thus it satisfies the declared nontrivial-boost predicate. It cannot
+equal `iota(R)` for any `R in G`, since every `iota(R)` has zero time-space
+entries. This is a type-correct contrast; no conclusion depends on rejecting
+an arbitrary non-Lorentz matrix.
+
+## No-Go Discipline Gate
+
+The negative statement gated here is only:
+
+> Under the displayed canonical embedding `iota(R)=diag(1,R)`, no element of
+> the finite point group `G` is a nontrivial time-space-mixing boost.
+
+It is not a no-go for Lorentz emergence, noncanonical embeddings, continuum
+limits, or later dynamics.
+
+### N1 — Alternative routes
+
+| Route | Status | Attempt and disposition |
+|---|---|---|
+| fixed-time-axis block test | ATTEMPTED | Inspect the time row and column of all `iota(R)`; each is `(1,0,0,0)`, so the required mixing is absent. |
+| finite-order/eigenvalue test | ATTEMPTED | Every `iota(R)` has finite order because `G` is finite, whereas a nonzero-rapidity pure boost has real reciprocal eigenvalues `exp(+chi),exp(-chi)` and infinite order. |
+| Euclidean-versus-boost action test | ATTEMPTED | `iota(R)` fixes the unit time vector; a nontrivial boost sends it to a vector with nonzero spatial component. |
+| exhaustive declared-predicate test | ATTEMPTED | The runner constructs all 24 embeddings, verifies their Lorentz identities, and finds zero with time-space mixing. |
+| exact boost-witness intersection test | ATTEMPTED | The rational `B4` satisfies the boost predicate but cannot equal any `iota(R)` because its time-space block is nonzero. |
+| 2+1 indefinite-intersection test | ATTEMPTED | Eight matrices preserve `D=diag(1,1,-1)`, but those preservers keep the unique negative axis setwise; the time-oriented subset has no mixing of that axis with the positive plane. |
+
+These are distinct structural, spectral, vector-action, finite-census,
+witness, and alternate-signature attacks. Each is closed by an exact proof
+above and a corresponding runner gate; no prior negative result is used as
+authority.
+
+### N2 — Wall independence
+
+There is no multi-wall impossibility claim. The fixed 3+1 carrier, its
+signature, the canonical embedding, and the nontrivial-mixing predicate are
+one declared comparison contract, not four independently claimed physical
+walls. The earlier phrasing that separated a “fourth direction” from a
+`(3,1)` form is collapsed here: a `(3,1)` form already specifies a
+four-dimensional carrier.
+
+### N3 — Hidden-wall scan
+
+The load-bearing conditions are explicit: fixed site, column action,
+nearest-neighbor set `N`, determinant orientation, 3+1 coordinate order,
+metric signature, canonical embedding, time orientation, and nonzero mixing.
+“Standard linear action” names the definition displayed in this note; it is
+not an unspoken theorem. No framework time axis, spacetime metric, continuum
+limit, dynamics, or Lorentz-restoration premise is used.
+
+### N4 — Residual matching
+
+No prior no-go, wall, or campaign is cited as a witness. The minimal-axiom
+source supplies only the lattice sentence; it does not supply the matrix
+classification or the boost exclusion. Those residuals are closed directly
+here, so there is no borrowed residual to mismatch.
+
+### N5 — Rhetoric audit
+
+The runner and note resolve the following exact granularities:
+
+```text
+per_element: all 24 proper-cubic matrices and their canonical spacetime embeddings are checked exactly
+per_site: the point action is proved at one arbitrary fixed lattice site and transported by the supplied translations
+per_mode: every canonical embedding fixes the displayed time axis, while no momentum or dynamical mode is asserted
+per_block: one exact rational boost block is Lorentzian and lies outside the zero-mixing embedded point group
+lattice_wide: checked and not executed — no lattice-wide dynamics, continuum limit, or Lorentz restoration is claimed
+```
+
+The negative conclusion is per element and per canonical block. It is not
+upgraded to a lattice-wide dynamical or continuum statement.
+
+### N6 — Partial-closure paths
+
+No new axiom is required for this finite type separation: making the
+comparison convention explicit closes it. A later theory may choose a
+different spacetime carrier, a noncanonical embedding, or emergent Lorentz
+dynamics. Those are live construction paths, not forbidden escapes and not
+premises of this theorem.
+
+### N7 — Steelman
+
+The strongest counterargument is to conjugate `iota(G)` by a Lorentz matrix.
+The conjugated finite subgroup can have nonzero time-space entries in the
+original coordinates, so the visual zero-block argument is not invariant
+under changing the embedding. In addition, identity is a zero-rapidity boost
+under a permissive convention, and a 2+1 comparison has an 8-element
+indefinite-metric intersection. These points defeat any embedding-free claim.
+They do not defeat the stated result, which fixes the canonical embedding,
+excludes zero rapidity through the mixing predicate, and reports the 2+1
+intersection explicitly. A noncanonical or embedding-free theorem remains
+open.
+
+### N8 — Cross-cycle echo
+
+A targeted current-main search found similar discrete-versus-continuous
+boundaries in `LORENTZ_BOOST_COVARIANCE_2D_THEOREM_NOTE.md`,
+`LORENTZ_BOOST_COVARIANCE_3PLUS1D_THEOREM_NOTE.md`, and
+`EMERGENT_LORENTZ_INVARIANCE_NOTE.md`. They reinforce the need to distinguish
+microscopic cubic symmetry from a continuum boost, but they are not imported
+as proof here. No previously retired wall is being revived: this note closes
+only a finite canonical-embedding membership question and leaves Lorentz
+restoration open.
+
+**Gate result:** the narrowly stated finite negative passes N1-N8. This is a
+source-side scope check, not an audit verdict.
 
 ## What This Does Not Claim
 
-- It does not edit Lattice, Qubit, Admissibility, or Record.
-- It does not add a primitive, and it does not adopt the displayed
-  fourth-direction or `(3,1)` extras.
-- It does not install `a = 1` or any other Wick parameter.
-- It does not identify `G` with `SO(3)`.
-- It does not claim that Lorentz closure is impossible.
-- It does not derive kinetic isotropy, and it does not promote
-  `c_t = c_s` to a Lorentz theorem.
-- It does not cite unmerged work.
-
-## No-Go Gate
-
-Shipping any of the following would be a failure of this note:
-
-- asserting `|G| ≠ 24` after the enumeration above;
-- asserting that `diag(L, 1)` is a proper cubic matrix;
-- asserting that the Lattice cubic rotations are boosts;
-- asserting that the cubic 24 is `SO(3)`;
-- installing `a = 1`;
-- claiming Lorentz closure is impossible;
-- editing an axiom or adopting the displayed `(3,1)` extra.
+- It does not identify the 24-element group with continuous `SO(3)`.
+- It does not claim that `G` has empty intersection with every indefinite
+  orthogonal group; the displayed 8-element intersection is explicit.
+- It does not claim that identity is excluded from zero-rapidity terminology;
+  it excludes only nontrivial time-space mixing.
+- It does not adopt `eta`, a time axis, a 3+1 carrier, or a boost as framework
+  structure.
+- It does not claim that Lorentz symmetry cannot emerge or that Lorentz
+  closure is impossible.
+- It does not edit Lattice, Qubit, Admissibility, Record, or any primitive.
+- It does not use observational, fitted, or literature values.
 
 ## Exact Target And Obligation Graph
 
-**Exact target.** Name the Lattice proper cubic symmetry as the 24-element
-integer matrix group `G`, prove Euclidean preservation, and reject the
-boost prototype as a member of `G`, without closing or forbidding a later
-Lorentzian construction.
+| Obligation | Disposition |
+|---|---|
+| bind “about each site” to the fixed-site affine action | proved from the displayed action |
+| characterize the linear stabilizer of six neighbors | proved in Theorem 1 |
+| prove the determinant-positive subset is a group | identity, closure, and inverses proved in Theorem 2 |
+| count the proper point group | proved `|G|=24` in Theorem 2 |
+| preserve the Euclidean form | proved for all 24 in Theorem 3 |
+| state the indefinite intersection honestly | exactly 8 preserve `D`; explicit nonpreserver given |
+| define the common 3+1 action and boost predicate | declared before Theorem 4 |
+| exclude all 24 canonical embeddings | proved by the zero-mixing block in Theorem 4 |
+| supply a genuine boost contrast | exact rational Lorentz identity in Theorem 5 |
+| protect the negative boundary | committed N1-N8 record above |
 
-| Obligation | Role | Disposition |
-|---|---|---|
-| count signed-permutation matrices | Theorem 1 | proved: `3! × 2^3 = 48` |
-| split by `det = +1` | Theorem 1 | proved: `|G| = 24` |
-| Euclidean form preservation | Theorem 2 | proved: `R^T R = I_3` |
-| reject `diag(1,1,−1)` as the defining form | Theorem 2 | proved as signature contrast |
-| reject `L` and `diag(L,1)` | Theorem 3 | proved by size, entries, and monomial test |
-| quote Lattice and kinetic isotropy | Theorem 4 | quoted; neither names a boost |
-| display fourth direction and `(3,1)` form | Theorem 5 | displayed, not adopted |
-
-The runner identity gates call `proper_cubic_count()` and
-`is_proper_cubic(M)`. Those functions, not a hardcoded banner, decide the
-order and membership checks.
+The runner recomputes every finite census and matrix identity. It does not
+treat source-text presence as mathematical proof.

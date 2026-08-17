@@ -1,42 +1,45 @@
 ===== runner cache v1 =====
 runner: scripts/proper_cubic_group_is_24_and_contains_no_boost_2026_08_13.py
-runner_sha256: 84a6efd423779dbad7a03c1fec4c143889c73a2b7a3154896eaf36e6a960e6fe
-input_fingerprint_sha256: dad69337ace03998821abfbe2f907f57aee931a35ff1b8837ee3b80e467f3ede
+runner_sha256: f737df7f441c8575a0381d33c57796b9792c14b94b52ddd4a346eb149285a1c3
+input_fingerprint_sha256: 8a7e69fef8236dc806e795ab61d0356f0c2778820984e92445f032732641caaa
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
-external_scientific_inputs: current axiom wording and the kinetic-isotropy primitive are source-bound; no observational or fitted inputs are used
-package_local_integrity_reads: the proposed source note is read for claim-surface consistency
-measure_boundary: the runner checks exact integer 3x3 algebra; it does not install a Wick parameter or a (3,1) form
-negative_scope: only |G|!=24 and membership of diag(L,1) are rejected; Lorentz closure remains live
-PASS: source-lattice the axiom memo names translations and proper cubic rotations
-PASS: source-kinetic-tick kinetic isotropy supplies the Euclidean equality c_t = c_s
-PASS: source-kinetic-not-lorentz kinetic isotropy leaves full Lorentz restoration as a separate claim
-PASS: source-note-quotes the note quotes Lattice and states one Euclidean tick, not a Lorentz theorem
-PASS: signed-permutation-census there are exactly 3! x 2^3 = 48 signed-permutation matrices
-PASS: identity-count-gate identity gate calls proper_cubic_count() and obtains 24
-PASS: proper-det every counted matrix has det=+1 and passes is_proper_cubic
-PASS: half-split exactly half of the 48 signed-permutation matrices have det=+1
-PASS: euclidean-form every R in G satisfies R^T R = I_3
-PASS: euclidean-quadratic x |-> R x preserves x1^2+x2^2+x3^2 on the first basis vector
-PASS: not-minkowski-3 the note distinguishes diag(1,1,1) from diag(1,1,-1)
-PASS: identity-membership-gate identity gate calls is_proper_cubic on I_3 and a proper rotation
-PASS: boost-prototype-not-cubic L is 2x2, has entry 2, and does not preserve x^2+y^2
-PASS: embedded-boost-not-cubic diag(L,1) has two nonzeros in the first row and fails is_proper_cubic
-PASS: mutation-order predicate |G|!=24 fails
-PASS: mutation-embedded-boost predicate diag(L,1) is a proper cubic matrix fails
-PASS: extra-object-displayed a fourth direction and a (3,1) form are displayed and not adopted
-PASS: boundary-phrases the note does not claim Lorentz impossibility, a=1, G=SO(3), or axiom adoption
-PASS: claim-type-contract the author hint uses the exact bounded-theorem enum
-PASS: canonical-nonmutation the axiom memo is not edited by this block
-per_element: all 48 signed-permutation matrices and the 24 det=+1 subset are counted exactly
-per_site: named symmetry is the Lattice site rotation; no composite carrier is asserted
-per_mode: Euclidean q_E is checked; the (3,1) form is displayed only
-per_block: the boost prototype and its 3D embedding are the only rejected block
-lattice_wide: checked and not executed — no lattice-wide dynamics or Lorentz no-go is claimed
-TOTAL: PASS=20 FAIL=0
+external_scientific_inputs: only the current minimal-axiom Lattice sentence is source-bound; no fitted, observational, or literature values are used
+package_local_integrity_reads: the proposed note is read only for claim, trace, and no-go-discipline consistency
+measure_boundary: exact integer and rational finite-dimensional linear algebra only
+negative_scope: only canonical diag(1,R) embeddings are excluded from the declared nontrivial time-space-mixing boost class
+PASS: source-lattice current minimal axioms supply the cubic fixed-site symmetry sentence
+PASS: source-scope the note fixes a site, displacement action, and affine action about that site
+PASS: signed-census the signed-permutation enumeration has 48 unique matrices
+PASS: neighbor-characterization every enumerated signed permutation preserves the six-neighbor set
+PASS: proper-count the determinant-plus-one point group has order 24
+PASS: group-identity the identity is in the proper point group
+PASS: group-closure all 24 squared products remain in the group
+PASS: group-inverses every transpose is an in-group two-sided inverse
+PASS: euclidean-form every proper cubic matrix satisfies R^T R=I_3
+PASS: indefinite-intersection exactly 8 elements preserve diag(1,1,-1) and 16 do not
+PASS: indefinite-witnesses identity preserves D while the displayed proper y-rotation does not
+PASS: embedded-lorentz all canonical embeddings preserve eta and have determinant one
+PASS: embedded-time-axis all canonical embeddings fix time and have zero time-space mixing
+PASS: universal-no-boost none of the 24 canonical embeddings is a nontrivial declared boost
+PASS: boost2-lorentz the exact rational 1+1 block preserves diag(1,-1)
+PASS: boost2-proper-time-oriented the exact rational block has determinant one and positive time component
+PASS: boost4-classification the 3+1 extension is a nontrivial boost under the declared predicate
+PASS: boost-outside-point-group the exact boost lies outside all zero-mixing canonical embeddings
+PASS: no-go-packet the landed note contains the complete N1-N8 discipline record
+PASS: n5-certificate-source the note carries the exact five forensic resolution lines
+PASS: trace-contract the machine trace uses frontier discovery, null target, and a next action
+PASS: claim-boundary the note excludes an embedding-free or dynamical Lorentz no-go
+PASS: claim-type the source uses the bounded-theorem claim type without authoring an audit verdict
+per_element: all 24 proper-cubic matrices and their canonical spacetime embeddings are checked exactly
+per_site: the point action is proved at one arbitrary fixed lattice site and transported by the supplied translations
+per_mode: every canonical embedding fixes the displayed time axis, while no momentum or dynamical mode is asserted
+per_block: one exact rational boost block is Lorentzian and lies outside the zero-mixing embedded point group
+lattice_wide: checked and not executed — no lattice-wide dynamics, continuum limit, or Lorentz restoration is claimed
+TOTAL: PASS=23 FAIL=0
 
 ----- stderr -----
 

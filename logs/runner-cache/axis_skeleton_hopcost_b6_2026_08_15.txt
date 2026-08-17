@@ -1,0 +1,41 @@
+===== runner cache v1 =====
+runner: scripts/axis_skeleton_hopcost_b6_2026_08_15.py
+runner_sha256: 93cfe5c27f1a8beb3494f22b56adc7c01133e109cc313192dac55ca14b11a29d
+input_fingerprint_sha256: 6d8ecc91cf28caf3bd636ae25d349cea96cbc9cc2b5b79d889d9c716d15df247
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: current Lattice nearest-neighbor graph and Admissibility non-adoption boundary are source-bound; no observation or fit
+integrity_reads: this runner, its note, and the current axiom memo; no cache or governance surface is written
+construction: one Dijkstra for the named axis-skeleton hop-cost on B_6(0)
+negative_scope: displayed score only; alpha is not adopted, not written into Admissibility, and does not attach L1
+PASS: audit-input-paths declared inputs are exactly the note and the current axiom memo
+PASS: source-lattice the cubic nearest-neighbor graph is the current Lattice premise
+PASS: source-admissibility-unedited the axiom still names one fixed nearest-neighbor admissibility rule
+PASS: axiom-has-no-alpha the axiom memo does not contain the named hop-cost
+PASS: source-record-unused lock, content-only readout, and unreadability at absence are quoted as unused
+PASS: claim-scope the note carries the declared displayed claim_scope
+PASS: displayed-not-adopted the note states displayed, not adopted, and uniqueness is not claimed
+PASS: no-l1-attachment the note refuses L1 attachment
+PASS: forbidden-phrases the note omits the forbidden tokens
+PASS: alpha-seed-exit seed exit costs 3
+PASS: alpha-axis-skeleton both-weight-one hops cost 3
+PASS: alpha-off-skeleton leaving the axis 1-skeleton costs 1
+PASS: one-dijkstra exactly one Dijkstra run covers B_6(0)
+PASS: theorem-1-times t(4,0,0)=8 and t(2,2,2)=8
+PASS: theorem-1-reverse 12 t(4,0,0)^2 > 16 t(2,2,2)^2 is false
+PASS: face-split (1,1,0) and (2,2,0) split, and (2,2),(3,3) are cheaper than 3 |v|_1
+PASS: theorem-2-variance var_α is smaller than var_ℓ¹ on B_6(0)\{0}
+PASS: note-reports-score the note reports the computed times, reverse integers, and variances
+PASS: ball-membership (4,0,0) and (2,2,2) lie in the declared graph ball and not beyond it
+t(4,0,0)=8
+t(2,2,2)=8
+reverse_left=768 reverse_right=1024 reverse=False
+var_alpha=0.005489876321 var_l1=0.013502037619
+sites=377 nonzero=376 dijkstra_runs=1
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

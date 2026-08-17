@@ -1,0 +1,59 @@
+===== runner cache v1 =====
+runner: scripts/support_drop_why_face_k6_returns_b12_2026_08_15.py
+runner_sha256: 49192570e711eb61d5450bb8c83565b1c0089da4636d2bbddecd4badbdc9b417
+input_fingerprint_sha256: 83e1d74966474ef66bece7573665e07431dbe67202cd48940e26d34a9ec21767
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/SUPPORT_DROP_WHY_FACE_K6_RETURNS_B12_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+claim_scope: Lex-first shortest paths to (12,0,0) and (6,6,0) under the named support-drop hop-cost on B_12(0) are named. Displayed, not adopted.
+PASS: audit-input-paths declared inputs are the source note and the current axiom memo
+PASS: audit-input-literal AUDIT_INPUT_PATHS is a static string-literal tuple
+PASS: claim-scope note claim_scope matches the named-paths statement
+PASS: displayed-not-adopted the rule is displayed, not adopted
+PASS: not-in-admissibility ν is not written into Admissibility
+PASS: not-attach-l1 the displayed rule is not attached to L1
+PASS: uniqueness-not-claimed uniqueness among hop-costs is not claimed
+PASS: no-axiom-edit note records hypothetical axiom status no edit
+PASS: forbidden-absent forbidden phrases are absent from the source note
+n_sites 2625
+t(12,0,0) 20
+t(6,6,0) 14
+lex_first_1200 (0,0,0) → (0,-1,0) → (1,-1,0) → (2,-1,0) → (3,-1,0) → (4,-1,0) → (5,-1,0) → (6,-1,0) → (7,-1,0) → (8,-1,0) → (9,-1,0) → (10,-1,0) → (11,-1,0) → (11,0,0) → (12,0,0)
+hop_costs_1200 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3, 3
+running_1200 [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 17, 20]
+last_hop_1200 (11, 0, 0) -> (12, 0, 0) cost 3
+penult_hop_1200 (11, -1, 0) -> (11, 0, 0) cost 3
+lex_first_660 (0,0,0) → (0,1,0) → (1,1,0) → (1,2,0) → (1,3,0) → (1,4,0) → (1,5,0) → (1,6,0) → (2,6,0) → (3,6,0) → (4,6,0) → (5,6,0) → (6,6,0)
+hop_costs_660 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
+running_660 [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+last_hop_660 (5, 6, 0) -> (6, 6, 0) cost 1
+k6_reverse 400/144 > 196/72 is True
+dijkstra_calls 1
+PASS: one-dijkstra exactly one Dijkstra ran
+PASS: ball-b12 B_12(0) has 2625 sites
+PASS: t-1200 t(12,0,0) on B_12(0) equals 20
+PASS: t-660 t(6,6,0) on B_12(0) equals 14
+PASS: valid-walk-1200 the axis walk is a nearest-neighbor walk in B_12(0) from 0 to (12,0,0)
+PASS: valid-walk-660 the face walk is a nearest-neighbor walk in B_12(0) from 0 to (6,6,0)
+PASS: lex-first-path-1200 the Dijkstra reconstruction is the named lex-first walk to (12,0,0)
+PASS: lex-first-path-660 the Dijkstra reconstruction is the named lex-first walk to (6,6,0)
+PASS: hop-costs-1200 axis hop-costs equal ν on successive sites and sum to 20
+PASS: hop-costs-660 face hop-costs equal ν on successive sites and sum to 14
+PASS: last-hops-make-t last hops are support-drop then axis cost 3+3 versus face cost 1
+PASS: axis-boundary-last-step (12,0,0) has only the axis in-ball neighbor (11,0,0)
+PASS: face-boundary-last-step (6,6,0) has in-ball neighbors (5,6,0) and (6,5,0), both cost 1
+PASS: k6-reverse-displayed t(12,0,0)^2 / 144 > t(6,6,0)^2 / 72 holds as a displayed bit
+PASS: lex-first-beats-later-shortest later cost-matching walks exist and are strictly lex-later
+PASS: note-records-paths note records both lex-first sites, hop-costs, running costs, and last hops
+PASS: not-leftover-of-the-yes-bit the walks are not leftover of the yes bit
+PASS: axiom-untouched the axiom memo is an input only and still names the four axioms
+TOTAL: PASS=27 FAIL=0
+
+----- stderr -----
+

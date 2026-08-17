@@ -1,24 +1,30 @@
-"""The sign patterns of the sixteen flips split every rank in the cell cutting family.
+"""Finite-field sign-pattern block ranks for a unit-four-cube dissection family.
 
 Standalone exact runner. It rebuilds the unit four-cube cell object from scratch:
 the sixteen corners, the five-corner unit-determinant pieces at the adjacency cost
-floor, the cuttings by them, the 192 pieces that occur, and the 192 eight-piece
+floor, the dissections by them, the 192 pieces that occur, and the 192 eight-piece
 covers. The group of 384 signed coordinate maps is built by permuting the four
 coordinates and flipping any of them; it acts freely on the 36864 pairs made of one
 piece and one cover, giving 96 orbits of size 384, each read as a zero and one table
 over covers by pieces.
 
+Exact rational pair-intersection tests certify disjoint simplex interiors for every
+co-occurring pair. Together with 24 unit-determinant simplex volumes, this upgrades
+the sample enumeration to geometric dissections while allowing lower-dimensional
+boundary contacts.
+
 The sixteen pure flips form a subgroup that acts freely on the 192 pieces with 12
 orbits, so each of the 16 sign patterns of the four axes carries a block of dimension
 12, and the 16 blocks fill all 192 piece coordinates. When the kernel of a table is
 held by the flips, its rank is the sum of its 16 per-block ranks. This cycle uses that
-identity to split every rank in the family: one orbit table splits as 12, 12, 10, 6, 0
+identity to split the ranks measured over F_1000003: one orbit table splits as
+12, 12, 10, 6, 0
 by pattern weight, the cover incidence as 9, 9, 6, 6, 0, and the drop of 39 between
 them sits entirely in the blocks of weight at most two. The nullity 48 of one table is
 recovered without linear algebra from the axis pair that holds each of its 48 cycles.
 
-All work is exact over the integers and two fixed primes; no floating point enters any
-gate and no constant is fitted. Three checks are rejectors and three are honest negatives.
+All mathematical work uses exact integers, rationals, and declared finite fields.
+F_2 is reported as a separate comparator. Every constant is a declared construction value.
 
 Output: one line per gate, one summary line, a resource line, then the total line."""
 
@@ -252,7 +258,104 @@ FULLC = (1 << NS) - 1
 PCSET = sorted(set(PCN))
 
 # ------------------------------------------------------------------
-# 1d. the covers: eight pieces, pairwise never in a common cutting
+# 1d. exact interior disjointness for every co-occurring pair
+# ------------------------------------------------------------------
+
+
+def solve4(rows):
+    n = 4
+    M = [[FR(x) for x in r] for r in rows]
+    for c in range(n):
+        p = -1
+        for r in range(c, n):
+            if M[r][c] != 0:
+                p = r
+                break
+        if p < 0:
+            return None
+        M[c], M[p] = M[p], M[c]
+        pv = M[c][c]
+        M[c] = [x / pv for x in M[c]]
+        for r in range(n):
+            if r != c and M[r][c] != 0:
+                f = M[r][c]
+                M[r] = [M[r][k] - f * M[c][k] for k in range(n + 1)]
+    return [M[r][n] for r in range(n)]
+
+
+def afrank(pts):
+    if not pts:
+        return -1
+    base = pts[0]
+    rows = [[FR(p[r]) - FR(base[r]) for r in range(4)] for p in pts[1:]]
+    rk = 0
+    for c in range(4):
+        p = -1
+        for i in range(rk, len(rows)):
+            if rows[i][c] != 0:
+                p = i
+                break
+        if p < 0:
+            continue
+        rows[rk], rows[p] = rows[p], rows[rk]
+        pv = rows[rk][c]
+        for i in range(rk + 1, len(rows)):
+            if rows[i][c] != 0:
+                f = rows[i][c] / pv
+                rows[i] = [rows[i][k] - f * rows[rk][k] for k in range(4)]
+        rk += 1
+    return rk
+
+
+def side(a, b, x):
+    return sum(a[r] * x[r] for r in range(4)) + b
+
+
+def sep_facet(r1, p1, r2, p2):
+    for a, b in r1:
+        if max(side(a, b, x) for x in p2) <= 0:
+            return True
+    for a, b in r2:
+        if max(side(a, b, x) for x in p1) <= 0:
+            return True
+    return False
+
+
+def inter_dim(r1, r2):
+    con = list(r1) + list(r2)
+    pts = []
+    for idx in itertools.combinations(range(10), 4):
+        rows = [list(con[i][0]) + [-con[i][1]] for i in idx]
+        x = solve4(rows)
+        if x is None:
+            continue
+        if all(side(a, b, x) >= 0 for a, b in con):
+            tx = tuple(x)
+            if tx not in pts:
+                pts.append(tx)
+    return afrank(pts)
+
+
+CO_PAIRS = [(i, j) for i in range(NPI) for j in range(i + 1, NPI)
+            if PC[i] & PC[j]]
+NCO_PAIR = len(CO_PAIRS)
+NFAC = 0
+NDIM = {}
+DISJ_OK = True
+PTS = [tuple(CORN[c] for c in S) for S in KEPT]
+for i, j in CO_PAIRS:
+    r1 = BARY[USED[i]][2]
+    r2 = BARY[USED[j]][2]
+    if sep_facet(r1, PTS[USED[i]], r2, PTS[USED[j]]):
+        NFAC += 1
+        continue
+    dim = inter_dim(r1, r2)
+    NDIM[dim] = NDIM.get(dim, 0) + 1
+    if dim >= 4:
+        DISJ_OK = False
+
+# ------------------------------------------------------------------
+# 1e. the covers: eight pieces, pairwise never in a common dissection
 # ------------------------------------------------------------------
 
 NONCO = [0] * NPI
@@ -832,12 +935,14 @@ def byweight(v):
 
 NSLOT = NS * SIZES[0]
 NSLOT2 = NPI * PCSET[0]
+emit("rank/profile contract: F_1000003 unless a gate names both fields; F_2 is a comparator")
 gate(NCAND == 2672 and NKEPT == 400 and FLOOR == 6 and NS == 15800
      and SIZES == [24] and NPI == 192 and PCSET == [1975] and GENERIC
-     and NSLOT == 379200 and NSLOT2 == 379200, "D0",
-     "the cell has {0} unit-determinant subsets, {1} at cost floor {2}, {3} cuttings of {4}, {5} pieces in {6} each, {7} slots both ways".format(
-         nd(NCAND), nd(NKEPT), nd(FLOOR), nd(NS), nd(SIZES[0]), nd(NPI),
-         nd(PCSET[0]), nd(NSLOT)))
+     and NSLOT == 379200 and NSLOT2 == 379200 and NCO_PAIR == 15168
+     and NFAC == 13632 and NDIM == {0: 864, 1: 672} and DISJ_OK, "D0",
+     "cell: {0} unit subsets, {1} at cost {2}, {3} dissections; exact pair census {4}+{5}+{6}".format(
+         nd(NCAND), nd(NKEPT), nd(FLOOR), nd(NS), nd(NFAC),
+         nd(NDIM.get(0, 0)), nd(NDIM.get(1, 0))))
 
 gate(NCOV == 192 and BRS == [8] and COVEXACT
      and BRS[0] * PCSET[0] == NS, "D1",
@@ -880,7 +985,7 @@ SPF, SCON, STOT = profile(SLICE, PRIME)
 SRK = rrank(SLICE, PRIME)
 gate(SPF == [12, 12, 12, 12, 12] and SCON and STOT == 192 and SRK == 48
      and STOT != SRK, "D5",
-     "rejector: a {0} row coordinate slice has per-block rank {1} in every block and is constant by weight, yet recomposes to {2}, not its rank {3}".format(
+     "control: a {0}-row coordinate slice has block rank {1}, recomposition {2}, and actual rank {3}".format(
          nd(len(SLR)), nd(SPF[0]), nd(STOT), nd(SRK)))
 
 HOLD0 = all(np.array_equal(INC[list(CPERM[e])][:, list(PERM[e])], INC)
@@ -894,7 +999,7 @@ HBRK = sum(1 for e in FLIPS
 SWP, SWC, SWT = profile(MSW, PRIME)
 SWR = rrank(MSW, PRIME)
 gate(HOLD0 and HBRK > 0 and SWR == 105 and SWT != 105, "D6",
-     "rejector: swapping two pieces of the incidence breaks the hold of {0} of the {1} flips; the rank is still {2} but the total recomposes to {3}".format(
+     "control: a two-column swap changes {0} of {1} flip holds; rank {2}, recomposition {3}".format(
          nd(HBRK), nd(NFL), nd(SWR), nd(SWT)))
 
 gate(TRS == set([2]) and TCS == set([2]) and CYLEN == [8] and CYN == [48]
@@ -906,7 +1011,7 @@ gate(TRS == set([2]) and TCS == set([2]) and CYLEN == [8] and CYN == [48]
 
 gate(HSZ == set([4]) and HPBAD == 0 and STBAD == 0 and CLPBAD == 0
      and EQF == 0 and NEQ == 18432, "D8",
-     "each cycle is held by {0} flips, those of an axis pair, simply transitive on its {0} pieces; the pair label survives {1} maps, {2} of {3} fail".format(
+     "each cycle is held by {0} axis-pair flips, simply transitive on its {0} pieces; all {3} map-cycle checks agree".format(
          nd(sorted(HSZ)[0]), nd(NGRP), nd(EQF), nd(NEQ)))
 
 gate(len(PIMG) == 6 and NPRS == set([6]) and FIB == set([2])
@@ -929,7 +1034,7 @@ RJPF, RJCON = byweight(RJV[0])
 RJTOT = wsum(RJPF)
 gate(RJPF == [0, 6, 10, 12, 12] and RJTOT == 144 and RJTOT != NUL[0]
      and all(RJV[k] != [12 - x for x in BV[k]] for k in range(NORB)), "D11",
-     "rejector: asking only that the pattern meet the pair gives {0}, a nullity of {1}, not the measured {2}, on every table".format(
+     "control: the pair-meets-pattern rule gives {0} and nullity {1}; the contained-pair rule gives {2}".format(
          nd(RJPF), nd(RJTOT), nd(NUL[0])))
 
 TPF, TCON, TTOT = profile(TAB[K0], PRIME)
@@ -943,7 +1048,7 @@ B2 = sorted(set(rrank(np.vstack([blockbasis(s, 2) for s in range(16)]), 2)
                 for s in range(1)))
 R2 = sorted(set(rank_modp(TAB[k], 2) for k in range(NORB)))
 gate(B2 == [12] and R2 == [144], "D13",
-     "honest negative: at characteristic {0} the {1} blocks collapse to rank {2}, so the route is silent; measured directly each table has rank {3}".format(
+     "F_{0} comparator: the stacked character bases have rank {2}; each enumerated table has rank {3}".format(
          nd(2), nd(16), nd(B2[0]), nd(R2[0])))
 
 MPF = {}
@@ -1003,7 +1108,7 @@ WTU = wsum(DTU)
 WUM = wsum(DUM)
 gate(DTU == [2, 2, 2, 2, 0] and WTU == 30 and DUM == [1, 1, 2, -2, 0]
      and WUM == 9 and WTU + WUM == DTW and DUM[3] < 0, "D19",
-     "two steps: {0} weighting {1}, then {2} weighting {3}, together {4}; the weight {5} entry rises, so it is not monotone".format(
+     "two steps: {0} weighting {1}, then {2} weighting {3}, together {4}; weight {5} rises by 2".format(
          nd(DTU), nd(WTU), nd(DUM), nd(WUM), nd(WTU + WUM), nd(3)))
 
 OUTI = [k for k in range(NORB) if k not in IORB]
@@ -1031,7 +1136,7 @@ gate(len(RA) == 4 and not set(RA) & set(IORB) and RCN[0]
      and TWCV == 0 and TWEN == [0, 1] and TWRS == [8] and TWCS == [8]
      and RRK[0] == 105 and RDR[0] == [3, 3, 4, 0, 0]
      and wsum(RDR[0]) == 39, "D20",
-     "honest negative: the next {0} tables sum to a zero-one table with {1} of {2} rows a cover, yet rank {3}, drop {4}, weight {5}".format(
+     "the specified {0}-table comparator is zero-one with {1} cover rows; rank {3}, drop {4}, weight {5}".format(
          nd(len(RA)), nd(TWCV), nd(NCOV), nd(RRK[0]), nd(RDR[0]),
          nd(wsum(RDR[0]))))
 
@@ -1057,24 +1162,17 @@ PF22 = sum(int(np.count_nonzero(np.mod(np.dot(TAB[k], BAS.T), PRIME)))
            for k in IORB)
 gate(MF22 == 0 and PF22 == 0 and SANTI and IDS
      and rrank(BAS, PRIME) == 12, "D23",
-     "that common kernel is the all-axes block, the space where every flip acts by its sign; the incidence kills all {0} of it, {1} failures".format(
+     "the common kernel is the all-axes sign block; incidence and all four parts kill its {0} dimensions, residual entries {1}".format(
          nd(rrank(BAS, PRIME)), nd(MF22)))
 
-KM = nullbasis(INC, PRIME)
-KMOK = not np.mod(np.dot(INC, KM.T), PRIME).any()
-CUR = BAS
-EXT = []
-for a in range(KM.shape[0]):
-    if rrank(np.vstack([CUR, KM[a:a + 1]]), PRIME) > CUR.shape[0]:
-        CUR = np.vstack([CUR, KM[a:a + 1]])
-        EXT.append(KM[a])
-EXA = np.array(EXT, dtype=np.int64)
-KILL4 = sum(1 for a in range(EXA.shape[0])
-            if any(not np.mod(np.dot(TAB[k], EXA[a]), PRIME).any() for k in IORB))
-gate(KM.shape[0] == 87 and KMOK and EXA.shape[0] == 75 and KILL4 == 0
-     and rrank(CUR, PRIME) == 87 and KM.shape[0] - CKD == EXA.shape[0], "D24",
-     "the remaining {0} = {1} - {2} kernel dimensions are killed by the sum and by no single part: {3} of {0} are killed by even one of the {4}".format(
-         nd(EXA.shape[0]), nd(KM.shape[0]), nd(CKD), nd(KILL4), nd(len(IORB))))
+KMIT = {}
+for q in (PRIME, PRIME2):
+    KMIT[q] = [NPI - rrank(np.vstack([INC, TAB[k]]), q) for k in IORB]
+KEX = [x - CKD for x in KMIT[PRIME]]
+gate(KMIT[PRIME] == [12, 12, 12, 20]
+     and KMIT[PRIME2] == [12, 12, 12, 20] and KEX == [0, 0, 0, 8], "D24",
+     "incidence-kernel meets with the four part kernels are {0}; beyond the common {1}: {2}, both fields".format(
+         nd(KMIT[PRIME]), nd(CKD), nd(KEX)))
 
 gate(SR4 == [180, 180] and NPI - SR4[0] == CKD and SR4[0] == CTOT, "D25",
      "the stack of those {0} parts has rank {1} at both primes, which is {2} - {3}".format(
@@ -1085,7 +1183,7 @@ KP0 = [12 - x for x in byweight(BV[I0])[0]]
 KP1 = [12 - x for x in byweight(BV[I1])[0]]
 gate(len(CSZ) == 2 and CSZ == [48, 48] and KDIM == [48] and KDIM2 == [48]
      and SAMESPLIT and KSEP and KP0 == KP1 and KP0 == [0, 0, 2, 6, 12], "D26",
-     "honest negative: the {0} tables hold {1} kernels of dimension {2}, {3} each, but both give per-block {4}, which cannot separate them".format(
+     "the {0} tables form {1} kernel-subspace classes of dimension {2}, {3} each; both carry per-block profile {4}".format(
          nd(NORB), nd(len(CSZ)), nd(KDIM[0]), nd(CSZ[0]), nd(KP0)))
 
 NDIST = len(set(tuple(v) for v in BV))
@@ -1093,11 +1191,17 @@ gate(NDIST == 1 and TSAME and TPF == [12, 12, 10, 6, 0], "D27",
      "all {0} tables carry the same vector of {1} per-block ranks, {2} distinct in all, so the split is uniform across the family".format(
          nd(NORB), nd(16), nd(NDIST)))
 
-emit("{0} blocks of {1}: one table {2}, incidence {3}, drop {4} in the blocks of weight at most {5}, kernel {6} splitting {7} and {8}".format(
-    nd(16), nd(len(REPF)), nd(TTOT), nd(MTOT[PRIME]), nd(DTW), nd(2),
-    nd(MKER), nd(CKD), nd(EXA.shape[0])))
+ELAPSED = int(time.time() - T0)
 RSS = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
 MBS = RSS / (1024.0 * 1024.0) if sys.platform == "darwin" else RSS / 1024.0
-emit("elapsed {0} s, peak resident {1} MB".format(nd(int(time.time() - T0)), nd(int(MBS))))
+gate(ELAPSED < AUDIT_TIMEOUT_SEC and MBS < 2500 and OUT[0] < 6000, "D28",
+     "support budget: {0} seconds under {1}, peak {2} MB under {3}, output {4} bytes under {5}".format(
+         nd(ELAPSED), nd(AUDIT_TIMEOUT_SEC), nd(int(MBS)), nd(2500), nd(OUT[0]),
+         nd(6000)))
+
+emit("{0} blocks of {1}: one table {2}, incidence {3}, drop {4} in weights at most {5}; common kernel {6}; part meets {7}".format(
+    nd(16), nd(len(REPF)), nd(TTOT), nd(MTOT[PRIME]), nd(DTW), nd(2),
+    nd(CKD), nd(KMIT[PRIME])))
+emit("elapsed {0} s, peak resident {1} MB".format(nd(ELAPSED), nd(int(MBS))))
 emit("TOTAL: PASS={0} FAIL={1}".format(nd(STAT[0]), nd(STAT[1])))
 sys.exit(0 if STAT[1] == 0 else 1)

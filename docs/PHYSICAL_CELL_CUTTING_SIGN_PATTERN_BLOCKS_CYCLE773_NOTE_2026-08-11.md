@@ -1,7 +1,9 @@
-# Physical cell cutting: the sign-pattern blocks split every rank, and locate the 39 (cycle 773)
+# Finite-field sign-pattern block ranks for the unit-four-cube dissection family (cycle 773)
 
 Date: 2026-08-11
+
 Authority: none
+
 Audit: unset.
 
 Status: proposed_retained
@@ -23,162 +25,198 @@ next_trace_action: "Send the self-contained finite theorem and runner to indepen
 conditional_surface_status: null
 hypothetical_axiom_status: null
 admitted_observation_status: null
-claim_type_reason: "Exact finite theorem for flip-character block decompositions, orbit-table ranks, incidence ranks, and kernel-dimension censuses on one declared unit-four-cube object."
+claim_type_reason: "Exact rational dissection certificate and finite-field block-rank, kernel-intersection, and comparator censuses on one declared unit-four-cube object."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
 
-Constitutional effect: none.
+Runner:
 
-## 1. What is measured
+- [physical_cell_cutting_sign_pattern_blocks_cycle773_2026_08_11.py](../scripts/physical_cell_cutting_sign_pattern_blocks_cycle773_2026_08_11.py)
 
-The object is the cell cutting family of the unit four-cube: its 16 corners, the 2672
-five-corner subsets of unit determinant, the 400 of those at the adjacency cost floor 6,
-the 15800 cuttings of the cell by 24 such pieces, the 192 pieces that actually occur (each
-in 1975 cuttings, so 379200 piece slots counted either way), and the 192 covers of 8
-pieces each that meet every cutting exactly once. The paired runner
-[scripts/physical_cell_cutting_sign_pattern_blocks_cycle773_2026_08_11.py](../scripts/physical_cell_cutting_sign_pattern_blocks_cycle773_2026_08_11.py)
-builds every one of those objects in-run from the corners upward; it reads no cached data
-and no input file, works exactly over the integers and two fixed primes, and prints one
-line per gate. Every one of those gate lines passes; 3 of them are labelled rejectors and
-3 are labelled honest negatives. The honest negatives carry the sharpest content in this
-note and are stated in section 8, not softened away.
+Framework premise edges: 0.
 
-## 2. Sixteen blocks of dimension twelve
+This finite construction imports zero framework premises. The current Minimal
+Axioms file, `MINIMAL_AXIOMS_2026-06-29.md`, is a scope marker and supplies zero
+premises to the theorem.
 
-The 384 signed coordinate maps act freely on the 36864 pairs made of one piece and one
-cover, giving 96 orbits of 384, and each orbit read as a zero-one table over covers by
-pieces is one of the 96 tables below. Inside that group sit the 16 pure flips, one per
-subset of the 4 axes. They form a subgroup, they act freely on the 192 pieces, and they
-leave 12 orbits of 16 pieces each.
+## Imports and provenance
 
-Every sign pattern of the 4 axes is a subset s, and its character sends the flip f to plus
-one when s and f overlap evenly and to minus one when they overlap oddly. Fix one piece per
-flip orbit; the vector carrying the character value of s at f on the image of that piece
-under f, and nothing elsewhere, is one basis vector, so the block of s has dimension 12.
-Then 16 times 12 is 192, the whole piece count, and the 16 blocks together stack to rank
-192, so they fill the piece coordinates rather than merely fitting inside them. The block
-of the empty pattern is the flip-invariant space and the block of the all-axes pattern is
-the space where every flip acts by its sign.
+- Scientific file inputs: none. The sixteen binary corners, determinant-one
+  simplex rule, non-edge adjacency cost and its minimum, divisor-80 shifted
+  sample with five values per coordinate, signed coordinate action, table
+  ordering, fields `F_1000003`, `F_1000033`, and comparator field `F_2` are
+  declared finite construction choices.
+- Comparator convention: the first four tables in `OUTI`, in deterministic
+  enumeration order, define the four-table comparator. The four incidence
+  parts retain their deterministic `IORB` order for the intersection census.
+- Measured, fitted, literature, predecessor, sibling-branch, and framework
+  inputs: none. Every count, matrix, character block, rank, and intersection is
+  rebuilt by the runner.
+- Implementation provenance: the exact rational pair-intersection algorithm
+  was adapted from the current-main runner
+  `physical_cell_cutting_sign_labellings_cycle770_2026_08_11.py`, then included
+  and gated self-contained here. Values and certificates are recomputed here.
+- Package-local reads: the canonical cache records a run; the runner input set
+  is empty. Arithmetic gates use Python integers, exact `Fraction`
+  arithmetic, and the three declared finite fields. Wall time and peak memory
+  occur only in the support-budget gate.
 
-The identity this cycle runs on: when the kernel of a matrix over the pieces is held by the
-16 flips, the rank of that matrix is the sum of its 16 per-block ranks. That recomposition
-is the discriminating statistic. Constancy of the per-block rank inside each weight class
-is not, and the runner shows it is not: the rejector builds a 48-row coordinate slice, four
-pieces from each of the 12 flip orbits, whose per-block rank is 12 in every one of the 16
-blocks and so is perfectly constant by weight, yet it recomposes to 192 while its actual
-rank is 48. A second rejector swaps two pieces of the cover incidence: the rank is
-unchanged at 105, but the hold of 15 of the 16 flips is broken and the recomposition
-returns 121 instead.
+## Exact target and obligation graph
 
-## 3. The single-table nullity without linear algebra
+Let `P` be the 192 used determinant-one simplices, `K` the 15800 geometric
+24-simplex dissections, `C` the 192 eight-piece covers, `G` the 384 signed
+coordinate maps, and `T` the 96 orbit tables constructed below. The exact
+finite target is: certify `K` by exact rational interior-disjointness; decompose
+the piece coordinates into sixteen 12-dimensional flip-character blocks; and
+establish the stated ranks, kernel profiles, kernel intersections, and finite
+comparators over their explicitly named fields.
 
-Each of the 96 orbit tables is 2-regular in rows and in columns, so it falls into 48 cycles
-of length 8, each visiting 4 pieces, and the vector alternating plus and minus one over
-those 4 pieces is annihilated by the table. The 16 flips permute the 48 cycles of a table
-with 12 classes of 4.
+The acyclic proof obligations are:
 
-Each cycle is held by exactly 4 flips, and those 4 are precisely the flips supported on one
-axis pair: the identity, the two single-axis flips of that pair, and their product. They
-act simply transitively on the 4 pieces the cycle visits, which is why the holder is a
-group of order 4 and not larger. That axis pair labelling is equivariant: pushing a cycle
-by any of the 384 maps carries its pair to the image pair, with 0 of 18432 checks failing.
-Since the maps reach all 6 axis pairs from any one of them, the 12 classes must be spread
-evenly over the 6 pairs, so each pair carries exactly 12 divided by 6, that is 2 classes.
-That count is forced by the transitivity before any table is looked at; the runner then
-confirms that every measured fibre is 2, on all 96 tables.
+- `P0` [proved here]: enumerate the determinant-one pieces, adjacency-cost
+  minimum, and generic rational sample (`D0`).
+- `P1` [proved here; depends on `P0`]: exhaust the sample exact covers and
+  certify every co-occurring pair by rational facet separation or intersection
+  dimension zero or one. Interior disjointness plus 24 simplex volumes `1/24`
+  yields each geometric dissection (`D0`).
+- `P2` [proved here; depends on `P1`]: enumerate the used pieces and covers,
+  with every cover meeting every dissection once (`D0`, `D1`).
+- `P3` [proved here; depends on `P0`-`P2`]: build `G`, its free pair action,
+  flip subgroup, and sixteen 12-dimensional character blocks (`D2`-`D4`).
+- `P4` [proved here; depends on `P3`]: derive the cycle/axis-pair description
+  and the single-table profile over `F_1000003` (`D7`-`D12`).
+- `P5` [proved here; depends on `P2`-`P4`]: compute the incidence and two-part
+  profiles over `F_1000003`, with the incidence profile corroborated over
+  `F_1000033` (`D14`-`D19`).
+- `P6` [proved here; depends on `P5`]: compute the common four-part kernel and
+  the four incidence-kernel/part-kernel intersections over both declared large
+  fields (`D22`-`D25`).
+- `P7` [proved here; depends on `P4`, `P5`]: record the specified four-table
+  and one-part-swap comparators over `F_1000003`, plus the two kernel-subspace
+  classes and their common block profile (`D20`, `D21`, `D26`, `D27`).
+- `P8` [proved here]: record the separate `F_2` rank comparator and enforce the
+  declared runtime, memory, and output budget (`D13`, `D28`).
 
-A cycle survives into the block of s exactly when its axis pair sits inside s, so a pattern
-of weight w receives 2 times the number of pairs inside it, that is w(w-1) kernel
-dimensions. By weight class that is [0, 0, 2, 6, 12], which weights to 0 + 0 + 12 + 24 + 12
-= 48, the full nullity of the table, and leaves per-block ranks 12 - w(w-1) = [12, 12, 10,
-6, 0] recomposing to 144. Nothing in that derivation reduces a matrix. The rule really is
-"pair inside the pattern" and not "pair meets the pattern": the third rejector uses the
-weaker rule, which would give [0, 6, 10, 12, 12] and a nullity of 144, and misses the
-measured 48 on every table.
+Every obligation in the finite target is proved here. Strongest missing lemma
+within target: none. Physical interpretation, Record content, multi-cell
+extension, and arbitrary coefficient domains lie outside this target.
 
-## 4. Three kernels, three profiles
+## 1. Finite object and exact geometric certificate
 
-The cover incidence, written M, has kernel 87. Its per-block kernel dimensions are
-[3, 3, 6, 6, 12] by pattern weight, constant inside each weight class, and its per-block
-ranks are [9, 9, 6, 6, 0] recomposing to its rank 105; both readings agree at both primes.
+Write the cube corners as `V = {0,1}^4`. A candidate piece is a five-corner
+simplex with determinant magnitude one and volume `1/24`. Of 2672 candidates,
+400 attain the minimum declared adjacency cost 6.
 
-Split M by the two labels the object already carries, the axis kept by a cover and the
-axis pair of a piece. The part where the piece carries the axis of its cover, written U,
-has kernel 78, per-block dimensions [2, 2, 4, 8, 12] and per-block ranks [10, 10, 8, 4, 0]
-recomposing to 114. The remaining part, written V, has kernel 48, per-block dimensions
-[0, 0, 2, 6, 12] and per-block ranks [12, 12, 10, 6, 0] recomposing to 144; V is a single
-orbit table, so its profile is exactly the single-table profile of section 3, and U is the
-entrywise sum of the other 3 of the 4 orbit tables that make up M. Each of the three
-recomposes exactly, so in all three cases the kernel is held by the 16 flips.
+The shifted 625-point rational sample gives 15800 exact covers of size 24. The
+runner then checks every pair of pieces co-occurring in any cover. Among 15168
+pairs, 13632 are separated by a simplex facet; the other intersections have
+affine dimension zero for 864 pairs and one for 672 pairs. All co-occurring
+simplex interiors are disjoint. Each cover contains 24 simplices of volume
+`1/24` inside the unit cube, so its closed union fills the cube and is a
+geometric simplex dissection.
 
-## 5. Where the shortfall sits
+Lower-dimensional boundary contacts are admitted. In particular, the cube
+center is shared by crossing boundary edges of one co-occurring pair. The
+target is a geometric simplex dissection; face-to-face triangulation lies
+outside the target.
 
-Subtracting the incidence profile from the single-table profile gives [3, 3, 4, 0, 0] by
-weight, which weights to 3 + 12 + 24 = 39 = 144 - 105. The shortfall is therefore located,
-not merely counted: it is 0 in both blocks of weight above 2, so every one of the 39 lost
-dimensions sits in a block of weight at most 2.
+Exactly 192 pieces occur, each in 1975 dissections. The runner enumerates 192
+eight-piece covers and checks that every cover meets every dissection once.
 
-Read in two steps it is not monotone block by block. Single table minus U is [2, 2, 2, 2,
-0], weighting to 30. U minus M is [1, 1, 2, -2, 0], weighting to 9. The two weights add to
-30 + 9 = 39, but the weight-3 entry rises by 2 on the second step, so the second step gives
-rank back in one block while taking more of it in others.
+## 2. Signed-coordinate action and character blocks
 
-## 6. Twelve killed by every part, seventy-five by cancellation
+Permuting four coordinates and flipping any subset gives 384 maps. They act
+transitively on the 192 pieces and covers and freely on the 36864 piece-cover
+pairs, producing 96 orbits and hence 96 zero-one orbit tables (`D2`).
 
-M is the entrywise sum of exactly 4 of the 96 orbit tables. The common kernel of those 4
-has dimension 12, with per-block dimensions [0, 0, 0, 0, 12]: it is exactly one block, the
-all-axes block, the space where every flip acts by its sign. M kills all 12 of it with 0
-failures, and so does each of the 4 parts separately. Equivalently the stack of the 4
-parts has rank 180 = 192 - 12 at both primes.
+The sixteen pure flips form a subgroup acting freely on pieces with twelve
+orbits. For every sign pattern, transporting its character from one
+representative of each flip orbit gives a 12-dimensional block. The sixteen
+blocks span all 192 piece coordinates over each declared large field (`D3`,
+`D4`).
 
-The other 75 = 87 - 12 kernel dimensions of M are of the opposite kind. Extending a basis
-of the all-axes block to a basis of the kernel of M produces 75 further directions, and 0
-of those 75 are killed by even one of the 4 parts. Not one of them is a near miss: no
-single part kills any of them, so the kernel of M splits cleanly by mechanism, 12
-dimensions killed part by part and 75 killed purely by the cancellation between the 4
-parts.
+When a matrix kernel is invariant under the flips, its rank is the sum of its
+sixteen block ranks. Gates `D5` and `D6` are positive controls: a coordinate
+slice and a column-swapped incidence matrix display which hypotheses the
+recomposition uses.
 
-## 7. Relation to work in flight
+## 3. Orbit-table profile over `F_1000003`
 
-Two companion stems are in flight on the same object,
-`PHYSICAL_CELL_CUTTING_CELL_ORBIT_CYCLES_CYCLE771_NOTE_2026-08-11` and
-`PHYSICAL_CELL_CUTTING_KERNEL_COLOUR_CLOSED_FORM_CYCLE772_NOTE_2026-08-11`. Nothing here
-reads them, cites a value from them, or depends on them in any way: the runner rebuilds the
-cell, the pieces, the cuttings, the covers, the maps, the orbits and the incidence from
-scratch, and every number in this note is measured in that run and printed by it. No axiom
-and no import is added by this note; it stands on
-[MINIMAL_AXIOMS_2026-06-29.md](MINIMAL_AXIOMS_2026-06-29.md) alone.
+Every orbit table is two-regular and decomposes into 48 eight-cycles on four
+pieces. Each cycle is held by the four flips on one axis pair. The flip action
+has twelve cycle classes, with two classes for each of the six axis pairs
+(`D7`-`D9`).
 
-## 8. Boundary
+A cycle contributes a kernel direction to sign pattern `s` exactly when its
+axis pair lies inside `s`. For pattern weight `w`, this supplies `w(w-1)`
+directions. The kernel profile is therefore `[0,0,2,6,12]`, weighting to 48,
+and the rank profile is `[12,12,10,6,0]`, weighting to 144. All 96 tables share
+this profile over `F_1000003` (`D10`-`D12`, `D27`).
 
-The block route divides by the order of the flip group, so it speaks at characteristic zero
-and at odd characteristic only. At characteristic 2 all 16 block bases coincide and stack
-to rank 12, and the route says nothing there; the value 144 for every orbit table at
-characteristic 2 is a separate direct measurement, reported as such.
+## 4. Incidence decomposition over the declared fields
 
-The per-block profiles of M and of U are reported as measured. No closed form is claimed
-for either. Only the single-table profile has a derivation here, and it comes from the axis
-pair labelling of section 3.
+Over `F_1000003`, the cover incidence matrix `M` has rank 105, kernel dimension
+87, kernel profile `[3,3,6,6,12]`, and rank profile `[9,9,6,6,0]`. Gate `D14`
+corroborates the same incidence values over `F_1000033`.
 
-The block profile does not separate the 2 distinct kernel classes that sit among the 96
-tables, 48 tables each: both classes give per-block [0, 0, 2, 6, 12]. Anything that
-distinguishes them has to come from elsewhere.
+Split `M` using the cover-axis and piece-axis-pair labels. The axis-in-pair part
+`U` has rank 114 and kernel profile `[2,2,4,8,12]`; the complementary part `V`
+has rank 144 and kernel profile `[0,0,2,6,12]`, all over `F_1000003`. The part
+`V` is one orbit table, and `U` is the sum of the other three incidence parts
+(`D15`-`D17`).
 
-This note says nothing about why M is the sum of those particular 4 orbit tables, and two
-gates in the paired runner are aimed squarely at that question. The first sums the 4 orbit
-tables that come next in index order after the 4 that make up M. That sum is not M, and
-none of its 192 rows is a cover, yet it reaches the same rank 105 and the same per-block
-drop [3, 3, 4, 0, 0], weighting to the same 39, and its kernel even has the same dimension
-87. Keeping 3 of the parts of M and swapping only the fourth does move both readings, to
-rank 93 and drop [3, 3, 4, 3, 0], so the comparison is not vacuous. The consequence is
-stated plainly: rank 105 and the shortfall 39 are not by themselves a fingerprint of the
-cover incidence among sums of 4 orbit tables, and no claim in this note should be read as
-saying they are.
+Subtracting profiles locates the rank difference `144-105=39` in weights zero,
+one, and two: `[3,3,4,0,0]`. Factoring through `U` gives the two profile changes
+`[2,2,2,2,0]` and `[1,1,2,-2,0]`, of weighted sizes 30 and 9 (`D18`, `D19`).
 
-What does tell the two sums apart is the kernel as a subspace rather than as a number.
-Both kernels have dimension 87, and they meet in 33 of those dimensions, so the two sums
-annihilate genuinely different spaces. Every reading this note extracts from the block
-split is a dimension count, and dimension counts are exactly what the two sums share.
-Whatever pins the cover incidence inside this family is carried by the kernel it spans and
-not by the size of that kernel.
+## 5. Common kernel and per-part intersections
+
+The incidence is the entrywise sum of four orbit tables. Their common kernel
+has dimension 12 and profile `[0,0,0,0,12]` over `F_1000003`; it is the
+all-axes character block. Stacking the four parts has rank 180 over both large
+fields (`D22`, `D23`, `D25`).
+
+For the four parts in deterministic `IORB` order, the dimensions
+`dim(ker(M) intersect ker(T_i))` are `[12,12,12,20]` over both large fields.
+After quotienting by the 12-dimensional common kernel, the corresponding
+dimensions are `[0,0,0,8]` (`D24`). This is the complete claimed mechanism
+census; it replaces a basis-vector count with subspace intersections.
+
+## 6. Positive finite comparators
+
+- Over `F_2`, the stacked character bases have rank 12 while every enumerated
+  orbit table has rank 144 (`D13`).
+- Over `F_1000003`, the specified first four `OUTI` tables sum to a zero-one
+  table with rank 105 and profile difference `[3,3,4,0,0]`; its kernel meets
+  the incidence kernel in dimension 33 (`D20`, `D21`).
+- Replacing one incidence part gives rank 93 and profile difference
+  `[3,3,4,3,0]` over `F_1000003` (`D21`).
+- The 96 orbit tables form two kernel-subspace classes of 48 tables each. Both
+  classes have kernel dimension 48 over the two large fields and share the
+  profile `[0,0,2,6,12]` over `F_1000003` (`D26`).
+
+These are enumerated comparator facts on the declared family. They carry zero
+universal pruning conclusion.
+
+## 7. Boundary and validation
+
+The rank and profile claims use only the fields named beside them. The exact
+rational geometry claim concerns the declared 400 simplices and the exhaustive
+sample-cover family. Determinant magnitudes beyond one, adjacency costs beyond
+six, face-to-face triangulations, other fields, multi-cell objects, and physical
+interpretations lie outside the target.
+
+Gates `D0`-`D27` carry the finite mathematics and controls. Gate `D28` is an
+environment-dependent support budget, bound to the declared 300-second timeout,
+2500 MB peak-memory ceiling, and 6000-byte output ceiling. The runner exits
+nonzero whenever any gate is false. A successful canonical run ends with:
+
+```text
+TOTAL: PASS=29 FAIL=0
+```
+
+Independent review separately checks exact rational ranks and finite
+mutations. Those review checks are provenance controls rather than theorem
+premises. This package adds zero methodology change, audit verdict, effective
+status, or physical-law interpretation.

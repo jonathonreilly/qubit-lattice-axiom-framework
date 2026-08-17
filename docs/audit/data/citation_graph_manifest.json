@@ -1695,8 +1695,8 @@
    "out_degree": 11
   },
   "canonical_harness_index": {
-   "deps_hash": "4821cc69fc18",
-   "out_degree": 371
+   "deps_hash": "629e495c8a76",
+   "out_degree": 372
   },
   "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": {
    "deps_hash": "808c1ccb6109",
@@ -13927,8 +13927,8 @@
    "out_degree": 0
   },
   "physical_cell_cutting_sign_pattern_blocks_cycle773_note_2026-08-11": {
-   "deps_hash": "c8eee4235fc9",
-   "out_degree": 1
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "physical_cell_cutting_sixteen_attained_cycle742_note_2026-08-05": {
    "deps_hash": "c1ce633d84ad",

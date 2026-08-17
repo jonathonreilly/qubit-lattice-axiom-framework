@@ -1,0 +1,59 @@
+===== runner cache v1 =====
+runner: scripts/two_seed_named_hopcost_meet_2026_08_15.py
+runner_sha256: 70a3c7c7d02ae5d489e3d49241a23747e1add36e3cef5681bc4b2d8af8b94037
+input_fingerprint_sha256: e8cd19acba8cf8e4f99f85beaa850454474f476740af6ac95aa69a5a05e8f479
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: none; two seeds, B_4 about each, and the named hop-cost are theorem hypotheses
+package_local_integrity_reads: runner source, proposed source note, and live axiom memo
+measure_boundary: exact integer path costs and |v-s0|_2/t0 on the two-seed union
+negative_scope: displayed named hop-cost meetings are not written into Admissibility
+n_b4_s0: 129
+n_b4_s1: 129
+n_union: 195
+n_union_edges: 828
+dijkstra_calls: 2
+|E_rho|: 25
+|E_l1|: 25
+|M_rho|: 1
+|M_l1|: 1
+lex_first_rho: (1, 0, 0)
+t_rho: 3
+lex_first_l1: (1, 0, 0)
+t_l1: 1
+var_rho_M: 0
+var_l1_M: 0
+var_rho_E: 0.00033709642620667780750764866344694055786733887360916613725736397163909784612639951
+var_l1_E: 0.0099503815826363262726117411136177962768315603385897195794135465029077680023199712
+PASS: two-balls B_4 about each seed has 129 sites and the union has 195 sites
+PASS: one-pair-dijkstra fronts are one pair of Dijkstras on the union
+PASS: named-rho rho is cost 3 on seed-exit or equal inward weight, else 1
+PASS: thm1-lex lex-first first-meeting site under rho is (1,0,0) at t=3
+PASS: thm1-size the first-meeting set under rho has size 1
+PASS: thm1-l1 lex-first first-meeting site under ell^1 is (1,0,0) at t=1
+PASS: thm1-note the note reports the lex-first meeting site, its t, and |M|
+PASS: thm2-M-vars on M both population variances are zero, so neither is smaller
+PASS: thm2-E-size the simultaneous-arrival midplane has 25 sites under rho and under ell^1
+PASS: thm2-E-vars on the midplane, var(|v-s0|_2/t0) under rho is strictly below ell^1
+PASS: thm2-note-vars the note reports both M variances, both midplane variances, and which is smaller
+PASS: thm2-not-leftover the note states the two-seed meeting score is not leftover of one-seed variance
+PASS: thm3-displayed-not-adopted the note reports the named hop-cost as displayed, not adopted
+PASS: thm3-no-l1-law the note does not attach an ell^1 path-length law
+PASS: uniqueness-not-required the note states uniqueness of a meeting site is not required
+PASS: claim-scope claim_scope reports two-seed meetings under the named hop-cost versus ell^1
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: forbidden-strings note, runner, and axiom avoid the dispatch-forbidden phrases
+PASS: no-axiom-cost the live axiom memo does not host a named hop-cost or two-seed meeting law
+PASS: claim-type-and-gate bounded theorem type and a passing N1-N8 gate are source-visible
+per_element: checked exactly — each directed union edge carries the named hop-cost relative to the seed being grown
+per_site: checked exactly — first-meeting and simultaneous-arrival sets are listed on the 195-site union
+per_mode: checked exactly — one pair of Dijkstras under rho, closed-form ell^1 comparator
+per_block: checked exactly — lex-first meeting, |M|, and population variance versus ell^1
+lattice_wide: checked and not executed — no Admissibility hop-cost and no path-length law are adopted
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

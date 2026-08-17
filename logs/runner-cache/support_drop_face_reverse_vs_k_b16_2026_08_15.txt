@@ -1,0 +1,84 @@
+===== runner cache v1 =====
+runner: scripts/support_drop_face_reverse_vs_k_b16_2026_08_15.py
+runner_sha256: 7930b8981d8be423c978fa2b3d08c53447b4de7a4b51db11f78c1b251ad9c788
+input_fingerprint_sha256: 5d31f265fe1d9f27fe9b9bd8fcd5e5552b99c70c4d6a3d321dced842698be6ad
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/SUPPORT_DROP_FACE_REVERSE_VS_K_B16_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+dijkstra_count_budget: 1
+claim_scope: Face-diagonal reverse versus integer scale k under the named support-drop hop-cost on B_16(0) is reported for k=1..8. Displayed, not adopted.
+PASS: audit-input-paths declared inputs are exactly the source note and the axiom memo
+PASS: audit-input-literals AUDIT_INPUT_PATHS is a static two-string literal in this runner
+PASS: ball-cardinality B_16(0) has 6017 sites and 6016 nonzero sites
+PASS: one-dijkstra exactly one Dijkstra computation is used
+PASS: finite-times every target is reached by a finite path
+arrival_times:
+  t(2, 0, 0)=6  t^2/|v|_2^2=36/4
+  t(1, 1, 0)=4  t^2/|v|_2^2=16/2
+  t(4, 0, 0)=10  t^2/|v|_2^2=100/16
+  t(2, 2, 0)=6  t^2/|v|_2^2=36/8
+  t(6, 0, 0)=12  t^2/|v|_2^2=144/36
+  t(3, 3, 0)=8  t^2/|v|_2^2=64/18
+  t(8, 0, 0)=14  t^2/|v|_2^2=196/64
+  t(4, 4, 0)=10  t^2/|v|_2^2=100/32
+  t(10, 0, 0)=16  t^2/|v|_2^2=256/100
+  t(5, 5, 0)=12  t^2/|v|_2^2=144/50
+  t(12, 0, 0)=18  t^2/|v|_2^2=324/144
+  t(6, 6, 0)=14  t^2/|v|_2^2=196/72
+  t(14, 0, 0)=20  t^2/|v|_2^2=400/196
+  t(7, 7, 0)=16  t^2/|v|_2^2=256/98
+  t(16, 0, 0)=24  t^2/|v|_2^2=576/256
+  t(8, 8, 0)=18  t^2/|v|_2^2=324/128
+PASS: time-200 computed t(2,0,0)=6 is written in the note
+PASS: time-400 computed t(4,0,0)=10 is written in the note
+PASS: time-600 computed t(6,0,0)=12 is written in the note
+PASS: time-800 computed t(8,0,0)=14 is written in the note
+PASS: time-1000 computed t(10,0,0)=16 is written in the note
+PASS: time-1200 computed t(12,0,0)=18 is written in the note
+PASS: time-1400 computed t(14,0,0)=20 is written in the note
+PASS: time-1600 computed t(16,0,0)=24 is written in the note
+PASS: time-110 computed t(1,1,0)=4 is written in the note
+PASS: time-220 computed t(2,2,0)=6 is written in the note
+PASS: time-330 computed t(3,3,0)=8 is written in the note
+PASS: time-440 computed t(4,4,0)=10 is written in the note
+PASS: time-550 computed t(5,5,0)=12 is written in the note
+PASS: time-660 computed t(6,6,0)=14 is written in the note
+PASS: time-770 computed t(7,7,0)=16 is written in the note
+PASS: time-880 computed t(8,8,0)=18 is written in the note
+reverse_bits:
+  k=1 (2, 0, 0) vs (1, 1, 0): reverse=True (16*4=64 vs 36*2=72)
+PASS: reverse-k1 k=1 reverse bit is True and the comparison is written
+  k=2 (4, 0, 0) vs (2, 2, 0): reverse=True (36*16=576 vs 100*8=800)
+PASS: reverse-k2 k=2 reverse bit is True and the comparison is written
+  k=3 (6, 0, 0) vs (3, 3, 0): reverse=True (64*36=2304 vs 144*18=2592)
+PASS: reverse-k3 k=3 reverse bit is True and the comparison is written
+  k=4 (8, 0, 0) vs (4, 4, 0): reverse=False (100*64=6400 vs 196*32=6272)
+PASS: reverse-k4 k=4 reverse bit is False and the comparison is written
+  k=5 (10, 0, 0) vs (5, 5, 0): reverse=False (144*100=14400 vs 256*50=12800)
+PASS: reverse-k5 k=5 reverse bit is False and the comparison is written
+  k=6 (12, 0, 0) vs (6, 6, 0): reverse=False (196*144=28224 vs 324*72=23328)
+PASS: reverse-k6 k=6 reverse bit is False and the comparison is written
+  k=7 (14, 0, 0) vs (7, 7, 0): reverse=False (256*196=50176 vs 400*98=39200)
+PASS: reverse-k7 k=7 reverse bit is False and the comparison is written
+  k=8 (16, 0, 0) vs (8, 8, 0): reverse=False (324*256=82944 vs 576*128=73728)
+PASS: reverse-k8 k=8 reverse bit is False and the comparison is written
+PASS: fail-not-only-at-k45 reverse fails at k=4,5,6,7,8, so the fail does not stay only at k=4,5
+PASS: not-b12-leftover the k=1..8 census is not leftover of the B_12(0) facek table
+PASS: source-lattice Lattice nearest-neighbor wording is pinned in the axiom memo and the note
+PASS: source-admissibility Admissibility distribution wording and non-dynamics clause are pinned
+PASS: nu-not-admissibility the note refuses to write nu into Admissibility
+PASS: not-attach-l1 the displayed rule is not attached to L1
+PASS: displayed-not-adopted claim_scope and displayed-not-adopted wording are present
+PASS: forbidden-phrases forbidden phrases are absent from the note and from runner prose
+PASS: pair-reverse-bits the eight declared scales have the displayed reverse bits
+PASS: axiom-untouched the axiom memo is an input only
+TOTAL: PASS=39 FAIL=0
+
+----- stderr -----
+

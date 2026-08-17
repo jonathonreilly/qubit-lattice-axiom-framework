@@ -1,4 +1,4 @@
-# Physical cell cutting: the cover incidence is forced by the symmetry group, up to the centre (cycle 776)
+# Finite cell cutting: the row-transversal census is the normalizer index
 
 Date: 2026-08-11
 Authority: none
@@ -30,68 +30,197 @@ Constitutional effect: none.
 - `audit_required_before_effective_retained: true`
 - `bare_retained_allowed: false`
 
-**One combinatorial condition collapses the family from 3321960 to 48, and the 48 is a group index.** Cycles 771 to 775 found the cover incidence sitting inside a family of 3321960 four-table sums that no linear instrument separates: the family shares its rank, its kernel, its regularity, its block-rank profile, and after the finest label of `cycle 775` there were still 30720 candidates. This cycle imposes instead a condition that is part of the object's own definition — every row of the member must be a cover of the cell, not merely some 8-element set of pieces — and 48 members survive. That 48 is not a measurement. A family member is a union of orbits of the diagonal action, so if its rows are the covers under a bijection then that bijection commutes with the whole group; the group is transitive on the 192 covers with a point stabiliser of order 2, so the commuting bijections are the right multiplications by the normalizer of that stabiliser, and there are exactly as many as the index 96 over 2.
+## Inputs and scope
 
-**A second condition reaches 2, and 2 is the order of the centre.** A commuting bijection is realized by an actual symmetry of the cell exactly when it is a left multiplication as well as a right one, which is the centre. The centre of this group has order 2: the identity and the all-axes sign flip. The two survivors are the cover incidence and the cover incidence with its covers relabelled by that flip, so they differ by a renaming and by nothing else.
+This packet studies one supplied finite model. Its inputs and their roles are:
 
-**The two counts of 48 are the same 48.** The group-theoretic construction and an independent brute-force census over the family produce sets that are equal element by element, not merely equinumerous.
+| item | classification | role |
+| --- | --- | --- |
+| labelled vertices `{0,1}^4` | supplied finite-model data | Define the unit four-cube. |
+| determinant-one five-vertex simplices | supplied selection rule | Enumerated from the 16 vertices. |
+| adjacency cost and its minimum | supplied selection rule | Count non-edge vertex pairs and retain every minimizer. |
+| shifted `5^4` rational sample | deterministic enumeration device | Enumerate candidate 24-simplex selections; exact geometry is certified separately. |
+| cutting | supplied definition | A 24-simplex tiling of the unit four-cube with pairwise disjoint interiors. |
+| eight-piece transversal | supplied definition | An eight-piece set meeting every enumerated cutting exactly once; it is not a geometric cover of the cell. |
+| 384 signed coordinate maps | supplied finite group | The 24 coordinate permutations composed with the 16 coordinate flips. |
+| four-table family and row condition | supplied finite predicates | A member is a four-subset of orbit tables; the row condition requires every row to be an eight-piece transversal. |
+| weight-one image label | supplied deterministic diagnostic | The sorted multiset of block-image labels over a member's four tables. |
+| `1000003`, `1000033` | named computational fields | The runner certifies that they are distinct primes. |
+| finite group actions, cosets, normalizers, centres, simplex volume and separation | standard mathematics | Used only after their concrete finite hypotheses are gated. |
+| Python integers, `Fraction`, and NumPy integer arrays | implementation imports | Supply no scientific premise; floating point enters no gate. |
 
-## 1. What is measured
+There are no load-bearing empirical, fitted, literature, framework, lattice,
+probability, or record-theoretic inputs. The finite model is not claimed to
+follow from the repository's physical axioms. Any physical, continuum, or
+multicell interpretation remains open.
 
-The object is the unit four-cube cell and the ways of cutting it. Its 16 corners carry 2672 five-corner subsets of unit determinant; 400 of those sit at the adjacency cost floor 6; the 400 pieces admit 15800 cuttings of the cell into 24 pieces; 192 distinct pieces occur, each in exactly 1975 cuttings, filling 379200 slots; and the pieces are grouped by 192 covers of 8.
+## Exact target and obligation graph
 
-The paired runner is [`../scripts/physical_cell_cutting_normalizer_rigidity_cycle776_2026_08_11.py`](../scripts/physical_cell_cutting_normalizer_rigidity_cycle776_2026_08_11.py), it builds everything in-run from the corners upward, reads no cached data and no input file, works exactly over the integers and two fixed primes, uses no floating point in any gate, fits no constant, and prints one line per gate. The object is built from the lattice and admissibility content of the four axioms in [MINIMAL_AXIOMS_2026-06-29.md](MINIMAL_AXIOMS_2026-06-29.md) and imports nothing else.
+For the supplied model, quantify over all four-subsets of the 96 diagonal-orbit
+tables. Let `R` be the set of members whose 192 rows are the 192 declared
+eight-piece transversals under a bijection. The exact target is to prove that
+`R` equals the 48 incidence images generated by `N_G(H)/H`, that these 48
+relabellings form a group acting simply transitively on those images, and that
+the relabellings represented by signed coordinate maps are exactly the two
+central maps. The profile, image-label, and partner statements below are
+additional finite equalities for these named objects and fields.
 
-The group of 384 signed coordinate maps — the 24 permutations of the four coordinates composed with the 16 sign flips — acts freely on the 36864 pairs of a piece and a cover, giving 96 orbits of size 384, each read as a zero-one table over covers by pieces. The 96 tables are pairwise disjoint and sum to the all-ones table, so every 4-subset of them is an 8-regular zero-one member of a family of 3321960; the cover incidence is one member.
+The proof obligations are acyclic and all are closed by the runner:
 
-## 2. Why the row condition forces a commuting bijection
+1. `P0` (supplied leaves): bind the finite vertices, selection rules,
+   transversal definition, group, family, diagnostic conventions, and fields.
+2. `P1` (depends on `P0`): exhaust the candidate cutting search and certify
+   continuous geometry using 15168 co-occurring simplex pairs, 80 signed
+   ternary normals, pairwise interior disjointness, and 24 volumes of `1/24`.
+3. `P2` (depends on `P0`, `P1`): certify distinct faithful actions of all 384
+   maps on the 192 pieces and 192 transversals, action compatibility,
+   transitivity, and the order-two stabilizer `H`. Faithfulness makes the core
+   of `H` trivial for this coset action.
+4. `P3` (depends on `P2`): use left cosets `G/H` with the left `G` action and
+   the commuting right action `gH -> gnH`; prove `|N_G(H)|=96` and obtain the
+   48 maps in `N_G(H)/H` independently of coset representatives.
+5. `P4` (depends on `P1`, `P2`): build the 96 orbit tables and independently
+   census every four-table member satisfying the row-transversal predicate.
+6. `P5` (depends on `P3`, `P4`): prove exact set equality between the 48
+   normalizer images and the 48 row-census members, and directly check all
+   `3538944` equivariance comparisons.
+7. `P6` (depends on `P3`, `P5`): build the complete `48 x 48` composition
+   table; check both Latin directions, identity, inverses, agreement with the
+   quotient product, and its action on all 48 incidence images.
+8. `P7` (depends on `P2`, `P3`, `P5`): intersect the faithful left-action image
+   with the commuting right-action image. The intersection is the faithful
+   image of `Z(G)`, here the identity and all-axes flip.
+9. `P8` (depends on `P5`, `P7`): certify the named profile, weight-one image
+   label, central partner, character, and finite ladder equalities.
 
-Each of the 96 tables is a single orbit of the diagonal action of the group on pairs of a piece and a cover, so each table, and therefore each family member, is carried to itself by every group element acting on both sides at once. Suppose a member has every row a cover, so that row `c` of the member is cover `s(c)` for some map `s` of the cover set. Diagonal invariance says a piece `p` lies in row `c` exactly when the moved piece lies in the moved row, and reading both sides as covers turns that into the statement that `p` lies in cover `s(c)` exactly when the moved piece lies in cover `s` of the moved cover. That is the definition of a bijection commuting with the group action.
+## 1. Exact finite geometry and incidence family
 
-The runner does not take this on trust. It builds the 384 by 384 multiplication table, checks that the cover action is a homomorphism on all pairs, and then, for each of the 48 members it has censused, forms the induced row map directly and tests the commuting identity against every one of the 384 group elements at every one of the 192 covers. That is 3538944 individual comparisons and there are 0 misses.
+The 16 vertices yield 2672 determinant-one five-vertex subsets, of which 400
+attain adjacency-cost floor 6. The sample-mask search returns 15800 selections
+of 24 simplices. Exactly 192 pieces occur, each in 1975 selections, filling
+379200 slots.
 
-## 3. The index: 48 is 96 over 2, and 96 is 6 times 16
+The sample avoids every candidate facet, making the candidate enumeration
+unambiguous. An independent exact certificate upgrades each selected tuple to
+a geometric cutting: every one of the 15168 simplex pairs that co-occurs in a
+selection is weakly separated by one of the 80 nonzero normals in
+`{-1,0,1}^4`. Full dimensionality places the two interiors on strict opposite
+sides, and 24 determinant-one simplex volumes sum to the unit-cell volume.
 
-The group is transitive on the 192 covers. The stabiliser of a cover has order 2, and its non-identity element is a single-axis sign flip. For a transitive action the bijections commuting with the group are exactly the right multiplications by the normalizer of a point stabiliser, one for each coset of the stabiliser inside its normalizer, so their number is the index.
+The 192 eight-piece transversals each meet every cutting once. They are
+transversals of the cutting family, rather than eight-simplex geometric covers:
+their eight simplex volumes sum to `1/3` of the cell volume. The signed
+coordinate group acts freely on the 36864 piece-transversal pairs, giving 96
+orbits of size 384. Their zero-one tables are pairwise disjoint, each is
+2-regular on both sides, and their sum is the all-ones table. Every four-table
+sum is therefore an 8-regular zero-one member of a family of 3321960; the
+transversal incidence is one member.
 
-The normalizer here has order 96 and coincides with the centralizer of the stabiliser's generator. Its order factors for a reason that is visible on the axes. Conjugating the flip of an axis by a signed coordinate map gives the flip of the permuted axis, so a group element commutes with the generator exactly when its coordinate permutation fixes that one axis. The permutations of four coordinates fixing a given one number 6, and all 16 sign flips commute because the sign group is abelian, giving 6 times 16 equal to 96. The index is then 96 over 2, which is 48.
+## 2. Row condition and the normalizer index
 
-The runner builds all 96 normalizer elements, forms the 48 bijections, and confirms each is a bijection of the 192 covers, that each arises from exactly 2 normalizer elements, and that each is independent of which coset representative was used, on all 96 elements. It then decomposes each image back into tables and finds that all 48 give family members, all 48 distinct, with the cover incidence among them.
+Each four-table member is invariant under the diagonal group action. If all of
+its rows are transversals, row `c` names a unique transversal `s(c)`. Diagonal
+invariance makes `s` commute with the group action. The runner independently
+checks that all 48 returned row maps are bijections and verifies their
+equivariance on every member-map-transversal triple.
 
-## 4. The census, and the theorem that the two 48s coincide
+For the transitive action on the 192 transversals, fix a point with stabilizer
+`H={1,h}`. Equivariant automorphisms of the left-coset set `G/H` are the right
+actions indexed by `N_G(H)/H`. Here `h` is a single-axis flip. The normalizer
+equals its centralizer and has order
 
-Independently of any of that, the runner censuses the family directly. Reading off, for each ordered pair of covers, which tables own the eight pieces of the second cover along the row of the first, a family member has row `c` equal to cover `d` exactly when those eight pieces fall into four tables two at a time. Intersecting the resulting sets over all 192 rows leaves exactly the members every one of whose rows is a cover. The census returns 48.
+`6 * 16 = 96`,
 
-The two 48s are the same 48: their symmetric difference is 0. This is the load-bearing gate of the cycle. Without it the agreement of two counts would be a coincidence of arithmetic; with it, the brute-force census has been identified as the coset space of the normalizer.
+because a coordinate permutation must fix that axis while every coordinate
+flip commutes with `h`. Dividing by `|H|=2` gives 48. The runner constructs all
+48 right actions from all 96 normalizer representatives and verifies that each
+order-two fibre gives the same permutation.
 
-Every one of the 48 sends the 192 rows bijectively onto the 192 covers. Composing two of the induced maps gives a third, so the 48 form a group of order 48 acting simply transitively on the 48 members: inside the census nothing is distinguished, and no further group-theoretic condition can single out a member without an extra requirement.
+## 3. Independent census and exact set equality
 
-## 5. The extra requirement, and why it lands on 2
+The independent census reads, for every ordered pair of transversals, which
+four orbit tables own the eight pieces of the second transversal in the row of
+the first. Intersecting these exact row conditions over all 192 rows leaves 48
+four-table members. Their set equals the 48 normalizer images element by
+element; the symmetric difference is empty.
 
-The extra requirement is that the relabelling of covers induced by the member be realized by an actual symmetry of the cell rather than by an abstract bijection. A commuting bijection is a right multiplication; it is also a left multiplication exactly when it lies in the centre. The centre of this group has order 2, consisting of the identity and the all-axes sign flip. The runner tests all 48 induced maps against the 384 group elements and finds exactly 2 in the group, and those 2 are exactly the centre. Their members are the cover incidence and one other. So 46 of the 48 realize their cover bijection by a map outside the 384, and the identification stops at a pair, both counts being group indices rather than measurements.
+The complete composition table of the 48 row maps is Latin in both operand
+directions, contains an identity and two-sided inverses, matches the
+`N_G(H)/H` product for every choice of the two representatives, and acts on all
+48 incidence images. Thus the 48-member image set is a torsor for the verified
+48-element equivariant-automorphism group.
 
-## 6. Two rejectors
+## 4. Intersection with signed coordinate actions
 
-The first shows the pair is not an artefact of how covers were numbered. Relabelling the covers of the incidence by a group element and asking whether the result is still a sum of four tables succeeds for the 2 central elements and fails for all 382 others.
+The right actions commute with every left `G` action. In the faithful coset
+action, a permutation that is both a left action and a commuting right action
+lies in the centre of the faithful left image; conversely, each central element
+defines the same left and right permutation. The intersection is therefore the
+image of `Z(G)`.
 
-The second shows the row condition is doing work no linear instrument could have done. The all-axes flip induces an involution on the 96 tables with no fixed point, and swapping any subset of a member's four parts for their partners gives a four-element swap group of 16 variants of the incidence. Two of the variants this runner tests carry the incidence's entire 16-pattern block-rank profile at both primes and are nevertheless outside the census. So a member can agree with the incidence on every rank this framework measures and still fail to have covers for rows. The rank profile could not have replaced the row test, and the two "fours" appearing in this note — the four profile-carrying variants just tested and the label-and-row survivors of section 7 — are different sets.
+The centre has order 2: the identity and the all-axes flip. Exactly two of the
+48 row maps are signed coordinate actions, and they are these two central
+maps. Their four-table members are the transversal incidence and its row
+relabeling by the all-axes flip. The remaining 46 are the other verified
+equivariant relabellings.
 
-## 7. Rank is blind on the census; the image label is not
+## 5. Finite profile, image-label, and partner equalities
 
-Inside the census the block-rank profile separates nothing: all 48 members carry the incidence's whole profile across all 16 flip patterns, and at both primes, which agree entry for entry. This is a sharp statement of where the linear instruments of cycles 771 to 775 run out — they are blind on precisely the set the row condition isolates, while remaining sharp on the wider family, where they cut 3321960 down to 30720.
+All 48 census members carry the same declared 32-entry block-rank profile over
+the two named prime fields, and the two 16-entry field profiles agree
+entrywise. This is a positive equality for this finite diagnostic.
 
-The image label of `cycle 775` is not blind there. Labelling each table by the column space of its restriction to a weight-1 block and taking the sorted multiset over a member's four parts, exactly 4 of the 48 carry the incidence's label at all four weight-1 patterns. Those 4 are closed under the partner involution and form two partner pairs with no fixed point, and the symmetry pair of section 5 is one of the two. Filtering the census by the 11 low-weight block ranks as well as the label gives the same 4. So the identification ladder is 3321960 members, 30720 after the label, 48 after the row condition, 4 after both, and 2 after the symmetry requirement.
+At the four weight-one patterns, the sorted image-label multiset of the
+incidence selects 4 of the 48 census members. They form two pairs under the
+central partner involution, and one pair is the two central-map members. The
+same 4 remain when the 11 low-weight block ranks are conjoined with that image
+label. Counting the label multiplicities over the full four-table family gives
+the finite ladder
 
-## 8. The partner map is precomposition by the centre
+`3321960 -> 30720 -> 48 -> 4 -> 2`,
 
-The involution used above is not an ad-hoc pairing. Precomposing the piece side of a table by a group element and asking that the result be again one of the 96 tables succeeds for exactly 2 of the 384 elements, and those 2 are the centre; each of the 14 non-central pure sign flips sends 0 of the 96 tables back into the set. So the partner map is precomposition by the all-axes flip, and nothing else.
+where the predicates are, respectively, the weight-one image-label multiset,
+the row-transversal condition, their conjunction, and realization of the row
+map by a signed coordinate map.
 
-Two consequences. First, a character law: comparing a table's restriction to a flip-pattern block with its partner's, the two are equal at even weight and exact negatives at odd weight, on all 96 tables, all 16 patterns and both primes. Second, a relabelling identity: summing the partners of the incidence's four parts returns the incidence with its covers relabelled by the central flip. The residual pair is therefore the same object twice under two namings of the covers, which is why no instrument in this runner that is blind to the naming of covers can separate them.
+Precomposing the piece side of each orbit table by the all-axes flip gives a
+fixed-point-free involution on the 96 tables. At every sign pattern and both
+prime fields, a partner block equals the original block at even pattern weight
+and its additive inverse at odd weight. Summing the four partner tables of the
+incidence equals both its piece image and its row relabeling by the central
+flip. The two central members also have equal explicitly enumerated profile
+and image-label multisets.
 
-## 9. Boundary and honest negatives
+## 6. Scope boundaries
 
-The census is 48 and not 2; only the symmetry requirement of section 5 reaches 2, and the label-and-row filter of section 7 reaches 4 rather than 2. The block-rank profile separates none of the 48 at either prime, so section 7's ladder depends on the image label and the row condition, not on rank. 46 of the 48 realize their cover bijection by a map outside the 384, so the census members are not all symmetries in disguise. The residual pair cannot be separated by any rank or image instrument in this runner, because the two members differ by a relabelling of the covers and every such instrument is blind to that relabelling; reducing the pair to a single member would need an instrument sensitive to the naming of covers, which this note does not supply. The reduction from 3321960 to 48 uses the row condition and the diagonal orbit structure; it says nothing about members that fail the row condition, and in particular the `cycle 773` twin remains a member of the family in good standing that is simply not in the census. The row condition is one of a pair of natural conditions a member could be asked to satisfy; the mirror condition, that every column of the member be the set of covers meeting some piece, is not measured in this runner.
+- The theorem is conditional on the supplied finite-model definitions and
+  selection rules; it is not an axiom or a derived physical primitive.
+- The geometric statement concerns exactly the enumerated determinant-one
+  candidate class in the unit four-cube.
+- An eight-piece transversal is an incidence object, distinct from a
+  24-simplex geometric cutting.
+- The normalizer theorem uses the explicit left-coset/right-action convention
+  and the runner-certified faithful action. Degenerate or nonfaithful actions
+  are outside this finite instantiation.
+- The rank and image statements concern only the named blocks, label rule, and
+  two certified prime fields. They supply no classification of other
+  invariants or fields.
+- The theorem identifies a central pair related by a verified relabeling; it
+  makes no canonical single-member selection.
+- Physical dynamics, probabilities, records, continuum limits, and multicell
+  or lattice-wide constructions remain open bridges.
 
-## 10. What this changes
+## 7. Reproduction and review record
 
-Before this cycle the honest description of the cover incidence was that it is one of millions of look-alikes, distinguished from them by nothing the framework could compute. That description was wrong in an instructive way: the look-alikes are look-alikes only to linear instruments. The defining combinatorial property of the object — that its rows are covers — cuts the family to a coset space of the symmetry group, and the requirement that the induced relabelling be a symmetry cuts that to the centre. Both of the surviving counts are indices read off the group, so nothing in the construction of the cover incidence was a free choice, up to the naming of the covers. That is the property the wider evidence-ceiling programme has been asking for: a structure whose identification is derived rather than observed.
+Run
+[physical_cell_cutting_normalizer_rigidity_cycle776_2026_08_11.py](../scripts/physical_cell_cutting_normalizer_rigidity_cycle776_2026_08_11.py).
+The content-pinned output is
+[physical_cell_cutting_normalizer_rigidity_cycle776_2026_08_11.txt](../logs/runner-cache/physical_cell_cutting_normalizer_rigidity_cycle776_2026_08_11.txt).
+The runner declares `AUDIT_TIMEOUT_SEC = 300` and reads no scientific input
+file.
+
+Review required explicit supplied inputs, continuous exact geometry, the
+transversal/geometric-cover distinction, an acyclic proof graph, faithful
+group-action checks, distinct prime fields, and a mutation-resistant complete
+composition/action certificate. Independent audit remains required before any
+effective retained status or downstream authority.

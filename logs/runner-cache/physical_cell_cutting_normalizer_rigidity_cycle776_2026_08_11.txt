@@ -1,39 +1,41 @@
 ===== runner cache v1 =====
 runner: scripts/physical_cell_cutting_normalizer_rigidity_cycle776_2026_08_11.py
-runner_sha256: 1ba7250a5b67c3d2923859fcadc946d94885e6aecce4c8a7daadbc87803956dd
+runner_sha256: d16517c0175a2fb45fb8633ed349737daed08574e6610950286bd391d603b7fc
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 14.42
+elapsed_sec: 15.43
 status: ok
 ----- stdout -----
-PASS G0 2672 unit-determinant subsets, 400 at cost floor 6, 15800 cuttings of 24, 192 pieces in 1975 each, 379200 slots, 192 covers of 8
+PASS G0F the declared moduli 1000003 and 1000033 are distinct primes
+PASS G0 2672 unit-determinant subsets, 400 at cost floor 6, 15800 cuttings of 24, 192 pieces in 1975 each, 379200 slots, 192 transversals of 8
+PASS G0a all 15168 co-occurring simplex pairs have an exact separator among 80 signed ternary normals; the 24 volumes tile the cell
 PASS G1 96 tables of 384 entries, pairwise disjoint, summing to the all-ones table (36864); 3321960 members, the incidence one of them
-PASS G2 the 384 maps close with a unit and inverses; on 147456 pairs the cover action follows the piece action, 0 miss; all 192 covers reached
-PASS G3 a cover is held by 2 maps, the second a flip of axis 0 alone; every cover likewise; 192 coset pairs, the second the first times that flip
+PASS G2 the 384 maps give faithful piece/transversal actions; 147456 action pairs have 0 misses; the transversal orbit has 192 members
+PASS G3 each transversal has stabilizer 2, generated at the base by axis-0 flip; all 192 coset fibres have size two
 PASS G4 the normalizer of the holder is the centralizer of its flip: 96 maps = 6 axis moves fixing axis 0 times 16 masks; centre 2, its flip all axes
-PASS G5 the normalizer is not commutative and its element orders are 1/2/3/4/6, so it is not the sign group; the centre lies inside it
-PASS G6 right multiplication by the normalizer gives 48 relabellings of the covers, each a bijection from 2 maps; 96 of 96 choice independent
-PASS G7 rejector: outside the normalizer the same recipe depends on the choice of representative, so 0 of the other 288 maps give a relabelling
+PASS G5 the normalizer is noncommutative with element orders 1/2/3/4/6; the centre lies inside it
+PASS G6 right multiplication by the normalizer gives 48 relabellings of the transversals, each a bijection from 2 maps; 96 of 96 choice independent
+PASS G7 the normalizer supplies every choice-independent right action; among the other 288 maps the representative-independent count is 0
 PASS G8 each of the 48 relabellings sends the incidence to a sum of four tables, all 48 of them distinct, the incidence itself among them
-PASS G9 the census over all 192 rows of the 3321960 members leaves 48 whose every row is one of the 192 covers, the incidence among them
+PASS G9 the census over all 192 rows of the 3321960 members leaves 48 whose every row is one of the 192 transversals, the incidence among them
 PASS G10 the 48 relabellings and the 48 census members are the same 48, element by element: the symmetry count is the combinatorial count
-PASS G11 all 48 census members send their 192 rows onto the 192 covers, and all 48 of those row maps are bijections
-PASS G12 direct check: on 3538944 comparisons of member, map and cover the row map of a census member commutes with the map, 0 miss
+PASS G11 all 48 census members send their 192 rows onto the 192 transversals, and all 48 of those row maps are bijections
+PASS G12 direct check: on 3538944 comparisons of member, map and transversal the row map commutes with the signed-coordinate action, 0 miss
 PASS G13 exactly 2 row maps are themselves maps of the cell, the centre 0 and 15: the members 0/1/2/3 and 76/77/91/95
-PASS G14 rejector: relabelling the incidence by each of the 384 maps keeps every row a cover, yet 382 of the 384 leave the family of four-table sums
+PASS G14 among all 384 signed-coordinate row relabellings, exactly 2 remain four-table members and they are the centre
 PASS G15 the central flip moves the pieces and permutes the 96 tables, an involution with 0 fixed; the 16 variants of the four parts are distinct
-PASS G16 rejector: variants 0/6/9/15 all carry the profile yet 2 pass the row test (yes/yes yes/no yes/no yes/yes); not the four the label picks
-PASS G17 honest negative: 48 of the 48 census members carry the profile 9/9/9/6/9/6/6/6/9/6/6/6/6/6/6/0; second prime equal to the first: yes
-PASS G18 the cycle 775 label cuts the 48 to 4, 2 partner pairs with no fixed member, 2 the map pair: 0/1/2/3 14/16/19/55 48/49/90/94 76/77/91/95
-PASS G19 the 11 low-weight block ranks at the first prime keep 48 of the 48, so the label alone does the cutting and the two instruments agree on 4
+PASS G16 the 4 specified partner variants share the profile; 2 lie in the row census; this four-set differs from the image-label set
+PASS G17 all 48 census members carry the declared 32-entry two-field profile 9/9/9/6/9/6/6/6/9/6/6/6/6/6/6/0; the field profiles agree entrywise: yes
+PASS G18 the weight-one image label selects 4 of 48: 2 partner pairs without fixed members, including both 2 central-map members
+PASS G19 the 11 low-weight ranks select 48 of 48; their conjunction with the weight-one image label selects the same 4
 PASS G20 over 3072 table, pattern, prime checks a partner block is its block times the weight parity, 0 outside: 0:96/0 1:0/96 2:96/0 3:0/96 4:96/96
 PASS G21 moving the pieces by a map permutes the 96 tables only for the 2 central maps; 382 of the other 382 return none, 14 of them flips
-PASS G22 the partner image of the incidence is the incidence with its pieces moved by the central flip, and equally with its covers relabelled by it
-PASS G23 the 48 relabellings close under composition, all 2304 composites, and carry the incidence to 48 distinct members: simply transitive
-PASS G24 the ladder: 3321960 members, 30720 carrying the label multiset, 48 with every row a cover, 4 carrying both, 2 whose row map is itself a map
-PASS G25 honest negative: 48 not 2 from rows alone; no rank separates them; 46 need a map outside the group; the pair agrees on all ranks and labels
-elapsed 14 s, peak resident 254 MB
-TOTAL: PASS=26 FAIL=0
+PASS G22 the partner image of the incidence is its piece image under the central flip and equally its transversal relabelling
+PASS G23 the 48x48 relabelling table is Latin with identity/inverses, matches N_G(H)/H, and acts on all 48 images (2304 products)
+PASS G24 the ladder: 3321960 members; label 30720; row-transversal 48; both 4; signed-coordinate row map 2
+PASS G25 row census 48: central-map members 2, other equivariant relabellings 46; the central pair has equal profiles and labels
+elapsed 15 s, peak resident 270 MB
+TOTAL: PASS=28 FAIL=0
 
 ----- stderr -----
 

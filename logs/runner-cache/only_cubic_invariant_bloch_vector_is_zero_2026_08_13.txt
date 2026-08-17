@@ -1,37 +1,38 @@
 ===== runner cache v1 =====
 runner: scripts/only_cubic_invariant_bloch_vector_is_zero_2026_08_13.py
-runner_sha256: 72c79473bb8bc7abe1c2a6def5313efa01fe06c4962f6daea82dbfe4a5ea9842
-input_fingerprint_sha256: 1eeffc08387d2146c5664ccd4c1ff81d789aaf4199980e9968cb34ad422c7aca
+runner_sha256: 4f2af1eaa81209686ba0bf5816602317e43ccce06b67108aa8fd98b3d8995042
+input_fingerprint_sha256: 8c8fef5b9338d94d1dad060641c47c61f90a27dbf6a971d8eb8029060a17af5c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
-external_scientific_inputs: current axiom wording only; no observational or fitted inputs are used
-package_local_integrity_reads: the proposed source note is read for claim-surface consistency
-negative_scope: only G-invariance of a Bloch 3-vector is forced to vanish; a symmetry-breaking 6-tuple remains unconstrained
-PASS: audit-input-note the declared note path exists
-PASS: audit-input-axiom the axiom memo is the only parent path
-PASS: source-lattice Lattice names proper cubic rotations about each site
-PASS: source-admissibility Admissibility is covariant under proper cubic rotations
-PASS: rz-action 90° about z sends (x,y,z) to (-y,x,z)
-PASS: rx-action 90° about x sends (x,y,z) to (x,-z,y)
-PASS: group-order the generated proper cubic group has 24 elements
-PASS: group-det-signed every generated matrix is a determinant-+1 signed permutation
-PASS: irreducible-span every tested nonzero vector has G-orbit spanning Q^3, including the constructive cases
-PASS: irreducible-commutant the Q-commutant of the generating rotations is scalar matrices
-PASS: theorem2-witness Rz r = r forces x = y = 0; Rx then forces y = z = 0
-PASS: pauli-equivariance R · (r · σ) equals (R r) · σ for the generating rotations, and σx σy = i σz
-PASS: theorem3-traceless the only cubic-invariant traceless Hermitian 2x2 in the chart is 0
-PASS: theorem3-density the only cubic-invariant density in the affine chart is I/2
-PASS: mutation-not-invariant the predicate r=(3/5,0,0) is cubic-invariant fails
-PASS: mutation-not-every-zero the predicate every Bloch vector is 0 fails on (3/5,0,0)
-PASS: identity-gate-rotate-z90 the rotate identity gate calls rotate_z90(r)
-PASS: identity-gate-is-cubic-invariant the invariance identity gate calls is_cubic_invariant(r)
-PASS: note-theorems-4-5 Theorems 4 and 5 keep the cubic-symmetric Bloch-chart bound and refuse vacuum/Born/r=1/2 lifts
-PASS: note-n5 N5 audits Theorems 4-5 and refuses every-vector, 6-tuple, vacuum, and Born lifts
-PASS: canonical-nonmutation the axiom memo does not contain this chart's new theorem language
-TOTAL: PASS=21 FAIL=0
+external_scientific_inputs: none; all objects are declared in the source note
+package_local_integrity_reads: the source note is a content-pinned runner input
+proof_scope: exact finite-group, Q-linear Pauli, and rational Bloch-body algebra
+PASS: audit-inputs the source note is the sole declared input
+PASS: group-generators the declared quarter turns have determinant +1 and order four
+PASS: group-enumeration generator closure equals the independent 24-element signed-permutation enumeration
+PASS: group-closure every product stays in the determinant-+1 signed-permutation group
+PASS: irreducible-character the exact character inner product is one
+PASS: irreducible-commutant the exact commutant dimension is one
+PASS: fixed-equations the stacked generator fixed equations have rank three
+PASS: reynolds-projector the exact Reynolds numerator is the zero matrix
+PASS: pauli-q-linearity the Pauli-coordinate map is Q-linear with a nondegenerate basis Gram matrix
+PASS: pauli-quarter-turn-normalization both conjugation numerators have N N-dagger = 2I
+PASS: pauli-quarter-turn-intertwining independent unitary conjugation implements both declared vector rotations
+PASS: pauli-fixed-space zero is the unique coordinate compatible with the rank-three fixed equations
+PASS: density-exact-formula rho(r) is Hermitian, trace one, and has the exact Bloch determinant
+PASS: density-determinant-scale det rho(r) equals (1-|r|^2)/4 on independent rational samples
+PASS: density-body-interior the 3/5 control is inside the Bloch body and has determinant 4/25
+PASS: density-body-exterior the 6/5 mutation is outside the Bloch body and fails positive semidefiniteness
+PASS: density-group-action all group elements preserve the exact Bloch norm
+PASS: density-unique-fixed the rank-three fixed equations select rho(0)=I/2
+PASS: section-bound-conclusions each displayed theorem section contains its exact canonical conclusion
+PASS: canonical-claim-block the executable claim block exactly matches all computed theorem outputs
+PASS: self-contained-authority the note declares no upstream dependency or physical bridge
+PASS: claim-surface-trim the superseded physical and negative-evidence sections are absent
+TOTAL: PASS=22 FAIL=0
 
 ----- stderr -----
 

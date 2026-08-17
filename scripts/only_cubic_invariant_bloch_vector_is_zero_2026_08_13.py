@@ -1,15 +1,11 @@
 #!/usr/bin/env python3
-"""Exact Q checks: the only cubic-invariant Bloch vector is 0.
-
-Finite linear algebra of the proper cubic 3-vector representation and the
-Pauli affine chart. Not a Born kernel, not universal r=1/2, and not a vacuum
-adoption of I/2.
-"""
+"""Exact checks for the proper-cubic fixed-space and Bloch-body theorem."""
 
 from __future__ import annotations
 
-import inspect
+import re
 from fractions import Fraction
+from itertools import permutations, product
 from pathlib import Path
 
 
@@ -21,67 +17,51 @@ NOTE_PATH = (
     / "docs"
     / "ONLY_CUBIC_INVARIANT_BLOCH_VECTOR_IS_ZERO_BOUNDED_THEOREM_NOTE_2026-08-13.md"
 )
-AXIOM_PATH = ROOT / "docs" / "MINIMAL_AXIOMS_2026-06-29.md"
 
 AUDIT_INPUT_PATHS = (
     "docs/ONLY_CUBIC_INVARIANT_BLOCH_VECTOR_IS_ZERO_BOUNDED_THEOREM_NOTE_2026-08-13.md",
-    "docs/MINIMAL_AXIOMS_2026-06-29.md",
 )
 
 Vec = tuple[Fraction, Fraction, Fraction]
-Mat = tuple[tuple[int, int, int], tuple[int, int, int], tuple[int, int, int]]
+Mat3 = tuple[tuple[int, int, int], tuple[int, int, int], tuple[int, int, int]]
 C = tuple[Fraction, Fraction]
 HMat = tuple[tuple[C, C], tuple[C, C]]
 
 ZERO: Vec = (Fraction(0), Fraction(0), Fraction(0))
 THREE_FIFTHS: Vec = (Fraction(3, 5), Fraction(0), Fraction(0))
-THREE_FIFTHS_ROTATED: Vec = (Fraction(0), Fraction(3, 5), Fraction(0))
+SIX_FIFTHS: Vec = (Fraction(6, 5), Fraction(0), Fraction(0))
 
-RZ: Mat = ((0, -1, 0), (1, 0, 0), (0, 0, 1))
-RX: Mat = ((1, 0, 0), (0, 0, -1), (0, 1, 0))
-I3: Mat = ((1, 0, 0), (0, 1, 0), (0, 0, 1))
+RZ: Mat3 = ((0, -1, 0), (1, 0, 0), (0, 0, 1))
+RX: Mat3 = ((1, 0, 0), (0, 0, -1), (0, 1, 0))
+I3: Mat3 = ((1, 0, 0), (0, 1, 0), (0, 0, 1))
 
-
-def normalize(text: str) -> str:
-    return " ".join(text.split())
-
-
-def rotate_z90(r: Vec) -> Vec:
-    x, y, z = r
-    return (-y, x, z)
-
-
-def rotate_x90(r: Vec) -> Vec:
-    x, y, z = r
-    return (x, -z, y)
+CANONICAL_CLAIM_BLOCK = (
+    "group_order: 24",
+    "representation_dimension: 3",
+    "irreducible_over: Q",
+    "fixed_space_dimension: 0",
+    "commutant_dimension: 1",
+    "pauli_map_scalar_field: Q",
+    "density_domain: x^2 + y^2 + z^2 <= 1",
+    "unique_fixed_density: I/2",
+)
 
 
-def is_cubic_invariant(r: Vec) -> bool:
-    return rotate_z90(r) == r and rotate_x90(r) == r
-
-
-def identity_gate_rotate_z90(r: Vec) -> Vec:
-    return rotate_z90(r)
-
-
-def identity_gate_is_cubic_invariant(r: Vec) -> bool:
-    return is_cubic_invariant(r)
-
-
-def mat_mul(left: Mat, right: Mat) -> Mat:
+def mat_mul(left: Mat3, right: Mat3) -> Mat3:
     return tuple(
         tuple(sum(left[i][k] * right[k][j] for k in range(3)) for j in range(3))
         for i in range(3)
     )  # type: ignore[return-value]
 
 
-def mat_vec(matrix: Mat, vector: Vec) -> Vec:
+def mat_vec(matrix: Mat3, vector: Vec) -> Vec:
     return tuple(
-        sum(matrix[i][j] * vector[j] for j in range(3)) for i in range(3)
+        sum(Fraction(matrix[i][j]) * vector[j] for j in range(3))
+        for i in range(3)
     )  # type: ignore[return-value]
 
 
-def det3(matrix: Mat) -> int:
+def det3(matrix: Mat3) -> int:
     a, b, c = matrix
     return (
         a[0] * (b[1] * c[2] - b[2] * c[1])
@@ -90,145 +70,118 @@ def det3(matrix: Mat) -> int:
     )
 
 
-def is_signed_permutation(matrix: Mat) -> bool:
-    rows_ok = all(sorted(abs(entry) for entry in row) == [0, 0, 1] for row in matrix)
-    cols = tuple(tuple(matrix[i][j] for i in range(3)) for j in range(3))
-    cols_ok = all(sorted(abs(entry) for entry in col) == [0, 0, 1] for col in cols)
-    return rows_ok and cols_ok
+def is_signed_permutation(matrix: Mat3) -> bool:
+    rows = all(sorted(abs(entry) for entry in row) == [0, 0, 1] for row in matrix)
+    cols = all(
+        sorted(abs(matrix[i][j]) for i in range(3)) == [0, 0, 1]
+        for j in range(3)
+    )
+    return rows and cols
 
 
-def generate_proper_cubic() -> tuple[Mat, ...]:
-    seen: dict[Mat, None] = {I3: None}
-    queue: list[Mat] = [I3]
-    generators = (RZ, RX)
+def generate_group() -> tuple[Mat3, ...]:
+    seen: dict[Mat3, None] = {I3: None}
+    queue = [I3]
     while queue:
         current = queue.pop()
-        for gen in generators:
-            product = mat_mul(current, gen)
-            if product not in seen:
-                seen[product] = None
-                queue.append(product)
+        for generator in (RZ, RX):
+            candidate = mat_mul(current, generator)
+            if candidate not in seen:
+                seen[candidate] = None
+                queue.append(candidate)
     return tuple(seen)
 
 
-def row_rank(rows: tuple[Vec, ...]) -> int:
-    work = [list(row) for row in rows]
+def enumerate_proper_signed_permutations() -> tuple[Mat3, ...]:
+    result: list[Mat3] = []
+    for permutation in permutations(range(3)):
+        for signs in product((-1, 1), repeat=3):
+            matrix = tuple(
+                tuple(signs[i] if j == permutation[i] else 0 for j in range(3))
+                for i in range(3)
+            )
+            typed = matrix  # help the type checker retain the fixed 3 x 3 shape
+            if det3(typed) == 1:  # type: ignore[arg-type]
+                result.append(typed)  # type: ignore[arg-type]
+    return tuple(result)
+
+
+def matrix_rank(rows: list[list[Fraction]]) -> int:
+    if not rows:
+        return 0
+    work = [row[:] for row in rows]
+    width = len(work[0])
     rank = 0
-    col = 0
-    n_rows = len(work)
-    while rank < n_rows and col < 3:
-        pivot = None
-        for i in range(rank, n_rows):
-            if work[i][col] != 0:
-                pivot = i
-                break
+    for column in range(width):
+        pivot = next(
+            (index for index in range(rank, len(work)) if work[index][column]),
+            None,
+        )
         if pivot is None:
-            col += 1
             continue
         work[rank], work[pivot] = work[pivot], work[rank]
-        scale = work[rank][col]
-        work[rank] = [value / scale for value in work[rank]]
-        for i in range(n_rows):
-            if i == rank or work[i][col] == 0:
+        scale = work[rank][column]
+        work[rank] = [entry / scale for entry in work[rank]]
+        for index, row in enumerate(work):
+            if index == rank or row[column] == 0:
                 continue
-            factor = work[i][col]
-            work[i] = [work[i][j] - factor * work[rank][j] for j in range(3)]
+            factor = row[column]
+            work[index] = [
+                row[j] - factor * work[rank][j] for j in range(width)
+            ]
         rank += 1
-        col += 1
+        if rank == len(work):
+            break
     return rank
 
 
-def orbit_spans_q3(group: tuple[Mat, ...], vector: Vec) -> bool:
-    return row_rank(tuple(mat_vec(g, vector) for g in group)) == 3
+def fixed_equation_rank() -> int:
+    rows = [
+        [Fraction(generator[i][j] - I3[i][j]) for j in range(3)]
+        for generator in (RZ, RX)
+        for i in range(3)
+    ]
+    return matrix_rank(rows)
 
 
-def nonzero_vector_spans(group: tuple[Mat, ...], vector: Vec) -> bool:
-    """Constructive spanning argument of Theorem 1, exact for every r in Q^3."""
-    if vector == ZERO:
-        return False
-    x, y, z = vector
-    if (x != 0) + (y != 0) + (z != 0) == 1:
-        return orbit_spans_q3(group, vector)
-    if z == 0 and x != 0 and y != 0:
-        plane = (vector, rotate_z90(vector))
-        plane_det = vector[0] * rotate_z90(vector)[1] - vector[1] * rotate_z90(vector)[0]
-        lifted = plane + (rotate_x90(vector),)
-        return plane_det == x * x + y * y and plane_det != 0 and row_rank(lifted) == 3
-    if y == 0 and x != 0 and z != 0:
-        return nonzero_vector_spans(group, rotate_x90(vector))
-    if x == 0 and y != 0 and z != 0:
-        return nonzero_vector_spans(group, rotate_z90(vector))
-    delta = (
-        rotate_z90(vector)[0] - vector[0],
-        rotate_z90(vector)[1] - vector[1],
-        rotate_z90(vector)[2] - vector[2],
-    )
-    return delta != ZERO and nonzero_vector_spans(group, delta)
-
-
-def commutant_is_scalars(group: tuple[Mat, ...]) -> bool:
-    """End_G(Q^3) = Q I, by exact linear algebra on 9 unknown entries."""
-    variables = 9
+def commutant_dimension() -> int:
     equations: list[list[Fraction]] = []
-    for g in (RZ, RX):
+    for generator in (RZ, RX):
         for i in range(3):
             for j in range(3):
-                row = [Fraction(0)] * variables
+                row = [Fraction(0)] * 9
                 for k in range(3):
-                    row[i * 3 + k] += Fraction(g[k][j])
-                    row[k * 3 + j] -= Fraction(g[i][k])
+                    row[i * 3 + k] += Fraction(generator[k][j])
+                    row[k * 3 + j] -= Fraction(generator[i][k])
                 equations.append(row)
-    # Row-reduce the 18 x 9 system; free variables must act as λ I.
-    work = [row[:] for row in equations]
-    n_rows = len(work)
-    rank = 0
-    pivot_cols: list[int] = []
-    col = 0
-    while rank < n_rows and col < variables:
-        pivot = None
-        for i in range(rank, n_rows):
-            if work[i][col] != 0:
-                pivot = i
-                break
-        if pivot is None:
-            col += 1
-            continue
-        work[rank], work[pivot] = work[pivot], work[rank]
-        scale = work[rank][col]
-        work[rank] = [value / scale for value in work[rank]]
-        for i in range(n_rows):
-            if i == rank or work[i][col] == 0:
-                continue
-            factor = work[i][col]
-            work[i] = [work[i][j] - factor * work[rank][j] for j in range(variables)]
-        pivot_cols.append(col)
-        rank += 1
-        col += 1
-    free = [index for index in range(variables) if index not in pivot_cols]
-    if rank != 8 or len(free) != 1:
-        return False
-    assigned = [Fraction(0)] * variables
-    assigned[free[0]] = Fraction(1)
-    for i in range(rank - 1, -1, -1):
-        pivot_col = pivot_cols[i]
-        assigned[pivot_col] = -sum(
-            work[i][j] * assigned[j] for j in range(variables) if j != pivot_col
-        )
-    return assigned == [
-        Fraction(1),
-        Fraction(0),
-        Fraction(0),
-        Fraction(0),
-        Fraction(1),
-        Fraction(0),
-        Fraction(0),
-        Fraction(0),
-        Fraction(1),
-    ]
+    return 9 - matrix_rank(equations)
+
+
+def trace3(matrix: Mat3) -> int:
+    return sum(matrix[i][i] for i in range(3))
+
+
+def character_inner_product(group: tuple[Mat3, ...]) -> Fraction:
+    return Fraction(sum(trace3(matrix) ** 2 for matrix in group), len(group))
+
+
+def reynolds_numerator(group: tuple[Mat3, ...]) -> Mat3:
+    return tuple(
+        tuple(sum(matrix[i][j] for matrix in group) for j in range(3))
+        for i in range(3)
+    )  # type: ignore[return-value]
+
+
+def norm_squared(vector: Vec) -> Fraction:
+    return sum((entry * entry for entry in vector), Fraction(0))
 
 
 def c_add(left: C, right: C) -> C:
     return (left[0] + right[0], left[1] + right[1])
+
+
+def c_sub(left: C, right: C) -> C:
+    return (left[0] - right[0], left[1] - right[1])
 
 
 def c_mul(left: C, right: C) -> C:
@@ -238,27 +191,32 @@ def c_mul(left: C, right: C) -> C:
     )
 
 
+def c_conjugate(value: C) -> C:
+    return (value[0], -value[1])
+
+
 def c_scale(scalar: Fraction, value: C) -> C:
     return (scalar * value[0], scalar * value[1])
 
 
-def pauli_dot(r: Vec) -> HMat:
-    x, y, z = r
-    return (
-        ((z, Fraction(0)), (x, -y)),
-        ((x, y), (-z, Fraction(0))),
-    )
-
-
 def h_add(left: HMat, right: HMat) -> HMat:
     return tuple(
-        tuple(c_add(left[i][j], right[i][j]) for j in range(2)) for i in range(2)
+        tuple(c_add(left[i][j], right[i][j]) for j in range(2))
+        for i in range(2)
     )  # type: ignore[return-value]
 
 
 def h_scale(scalar: Fraction, matrix: HMat) -> HMat:
     return tuple(
-        tuple(c_scale(scalar, matrix[i][j]) for j in range(2)) for i in range(2)
+        tuple(c_scale(scalar, matrix[i][j]) for j in range(2))
+        for i in range(2)
+    )  # type: ignore[return-value]
+
+
+def h_complex_scale(scalar: C, matrix: HMat) -> HMat:
+    return tuple(
+        tuple(c_mul(scalar, matrix[i][j]) for j in range(2))
+        for i in range(2)
     )  # type: ignore[return-value]
 
 
@@ -272,27 +230,86 @@ def h_mul(left: HMat, right: HMat) -> HMat:
     )  # type: ignore[return-value]
 
 
+def h_dagger(matrix: HMat) -> HMat:
+    return tuple(
+        tuple(c_conjugate(matrix[j][i]) for j in range(2)) for i in range(2)
+    )  # type: ignore[return-value]
+
+
 def identity2() -> HMat:
-    one = (Fraction(1), Fraction(0))
-    zero = (Fraction(0), Fraction(0))
+    zero: C = (Fraction(0), Fraction(0))
+    one: C = (Fraction(1), Fraction(0))
     return ((one, zero), (zero, one))
 
 
-def density(r: Vec) -> HMat:
-    return h_add(h_scale(Fraction(1, 2), identity2()), h_scale(Fraction(1, 2), pauli_dot(r)))
+def zero2() -> HMat:
+    zero: C = (Fraction(0), Fraction(0))
+    return ((zero, zero), (zero, zero))
 
 
-def rotate_hermitian(r: Vec) -> tuple[HMat, HMat, HMat]:
-    h = pauli_dot(r)
-    return h, pauli_dot(rotate_z90(r)), pauli_dot(rotate_x90(r))
+def pauli_dot(vector: Vec) -> HMat:
+    x, y, z = vector
+    return (
+        ((z, Fraction(0)), (x, -y)),
+        ((x, y), (-z, Fraction(0))),
+    )
 
 
-def predicate_three_fifths_is_cubic_invariant() -> bool:
-    return is_cubic_invariant(THREE_FIFTHS)
+def density(vector: Vec) -> HMat:
+    return h_scale(Fraction(1, 2), h_add(identity2(), pauli_dot(vector)))
 
 
-def predicate_every_bloch_vector_is_zero(sample: tuple[Vec, ...]) -> bool:
-    return all(vector == ZERO for vector in sample)
+def h_trace(matrix: HMat) -> C:
+    return c_add(matrix[0][0], matrix[1][1])
+
+
+def h_determinant(matrix: HMat) -> C:
+    return c_sub(c_mul(matrix[0][0], matrix[1][1]), c_mul(matrix[0][1], matrix[1][0]))
+
+
+def is_hermitian(matrix: HMat) -> bool:
+    return h_dagger(matrix) == matrix
+
+
+def is_bloch_body(vector: Vec) -> bool:
+    return norm_squared(vector) <= 1
+
+
+def is_density_matrix(matrix: HMat) -> bool:
+    determinant = h_determinant(matrix)
+    return (
+        is_hermitian(matrix)
+        and h_trace(matrix) == (Fraction(1), Fraction(0))
+        and determinant[1] == 0
+        and determinant[0] >= 0
+    )
+
+
+def quarter_turn_numerator(axis_pauli: HMat) -> HMat:
+    return h_add(identity2(), h_complex_scale((Fraction(0), Fraction(-1)), axis_pauli))
+
+
+def conjugate_quarter_turn(matrix: HMat, axis_pauli: HMat) -> HMat:
+    numerator = quarter_turn_numerator(axis_pauli)
+    return h_scale(
+        Fraction(1, 2),
+        h_mul(h_mul(numerator, matrix), h_dagger(numerator)),
+    )
+
+
+def section_text(document: str, heading: str) -> str:
+    marker = heading + "\n"
+    start = document.index(marker) + len(marker)
+    next_heading = document.find("\n## ", start)
+    return document[start:] if next_heading < 0 else document[start:next_heading]
+
+
+def executable_claim_block(document: str) -> tuple[str, ...]:
+    section = section_text(document, "## Executable claim block")
+    blocks = re.findall(r"```text\n(.*?)\n```", section, flags=re.DOTALL)
+    if len(blocks) != 1:
+        return ()
+    return tuple(blocks[0].splitlines())
 
 
 class Checks:
@@ -302,10 +319,8 @@ class Checks:
 
     def check(self, label: str, statement: str, condition: bool) -> None:
         result = bool(condition)
-        if result:
-            self.passed += 1
-        else:
-            self.failed += 1
+        self.passed += int(result)
+        self.failed += int(not result)
         print(f"{'PASS' if result else 'FAIL'}: {label} {statement}")
 
     def finish(self) -> int:
@@ -316,217 +331,197 @@ class Checks:
 def main() -> int:
     checks = Checks()
     note = NOTE_PATH.read_text(encoding="utf-8")
-    axiom = AXIOM_PATH.read_text(encoding="utf-8")
-    normalized_note = normalize(note).replace("> ", "")
-    normalized_axiom = normalize(axiom).replace("> ", "")
-    group = generate_proper_cubic()
+    generated = generate_group()
+    enumerated = enumerate_proper_signed_permutations()
+    group_set = set(generated)
 
-    print(
-        "external_scientific_inputs: current axiom wording only; no observational "
-        "or fitted inputs are used"
-    )
-    print(
-        "package_local_integrity_reads: the proposed source note is read for "
-        "claim-surface consistency"
-    )
-    print(
-        "negative_scope: only G-invariance of a Bloch 3-vector is forced to vanish; "
-        "a symmetry-breaking 6-tuple remains unconstrained"
-    )
+    print("external_scientific_inputs: none; all objects are declared in the source note")
+    print("package_local_integrity_reads: the source note is a content-pinned runner input")
+    print("proof_scope: exact finite-group, Q-linear Pauli, and rational Bloch-body algebra")
 
     checks.check(
-        "audit-input-note",
-        "the declared note path exists",
-        NOTE_PATH.is_file() and AUDIT_INPUT_PATHS[0].endswith(NOTE_PATH.name),
-    )
-    checks.check(
-        "audit-input-axiom",
-        "the axiom memo is the only parent path",
-        AXIOM_PATH.is_file() and AUDIT_INPUT_PATHS == (
+        "audit-inputs",
+        "the source note is the sole declared input",
+        NOTE_PATH.is_file()
+        and AUDIT_INPUT_PATHS
+        == (
             "docs/ONLY_CUBIC_INVARIANT_BLOCH_VECTOR_IS_ZERO_BOUNDED_THEOREM_NOTE_2026-08-13.md",
-            "docs/MINIMAL_AXIOMS_2026-06-29.md",
         ),
     )
     checks.check(
-        "source-lattice",
-        "Lattice names proper cubic rotations about each site",
-        "proper cubic rotations about each site" in normalized_axiom,
+        "group-generators",
+        "the declared quarter turns have determinant +1 and order four",
+        det3(RZ) == det3(RX) == 1
+        and mat_mul(mat_mul(mat_mul(RZ, RZ), RZ), RZ) == I3
+        and mat_mul(mat_mul(mat_mul(RX, RX), RX), RX) == I3,
     )
     checks.check(
-        "source-admissibility",
-        "Admissibility is covariant under proper cubic rotations",
-        "covariant under lattice translations and proper cubic rotations"
-        in normalized_axiom,
-    )
-
-    symbol = (Fraction(2), Fraction(-3), Fraction(5))
-    checks.check(
-        "rz-action",
-        "90° about z sends (x,y,z) to (-y,x,z)",
-        rotate_z90(symbol) == (-symbol[1], symbol[0], symbol[2])
-        and mat_vec(RZ, symbol) == rotate_z90(symbol),
+        "group-enumeration",
+        "generator closure equals the independent 24-element signed-permutation enumeration",
+        len(generated) == len(group_set) == len(enumerated) == 24
+        and group_set == set(enumerated),
     )
     checks.check(
-        "rx-action",
-        "90° about x sends (x,y,z) to (x,-z,y)",
-        rotate_x90(symbol) == (symbol[0], -symbol[2], symbol[1])
-        and mat_vec(RX, symbol) == rotate_x90(symbol),
+        "group-closure",
+        "every product stays in the determinant-+1 signed-permutation group",
+        all(is_signed_permutation(matrix) and det3(matrix) == 1 for matrix in generated)
+        and all(mat_mul(left, right) in group_set for left in generated for right in generated),
     )
     checks.check(
-        "group-order",
-        "the generated proper cubic group has 24 elements",
-        len(group) == 24 and len(set(group)) == 24,
-    )
-    checks.check(
-        "group-det-signed",
-        "every generated matrix is a determinant-+1 signed permutation",
-        all(is_signed_permutation(g) and det3(g) == 1 for g in group),
-    )
-    checks.check(
-        "irreducible-span",
-        "every tested nonzero vector has G-orbit spanning Q^3, including the constructive cases",
-        all(
-            nonzero_vector_spans(group, vector)
-            for vector in (
-                (Fraction(1), Fraction(0), Fraction(0)),
-                (Fraction(0), Fraction(2), Fraction(0)),
-                (Fraction(0), Fraction(0), Fraction(-3)),
-                (Fraction(3), Fraction(5), Fraction(0)),
-                (Fraction(3), Fraction(0), Fraction(5)),
-                (Fraction(0), Fraction(3), Fraction(5)),
-                (Fraction(2), Fraction(-3), Fraction(5)),
-                THREE_FIFTHS,
-            )
-        ),
+        "irreducible-character",
+        "the exact character inner product is one",
+        character_inner_product(generated) == 1,
     )
     checks.check(
         "irreducible-commutant",
-        "the Q-commutant of the generating rotations is scalar matrices",
-        commutant_is_scalars(group),
+        "the exact commutant dimension is one",
+        commutant_dimension() == 1,
+    )
+    checks.check(
+        "fixed-equations",
+        "the stacked generator fixed equations have rank three",
+        fixed_equation_rank() == 3,
+    )
+    checks.check(
+        "reynolds-projector",
+        "the exact Reynolds numerator is the zero matrix",
+        reynolds_numerator(generated) == ((0, 0, 0), (0, 0, 0), (0, 0, 0)),
     )
 
-    x, y, z = symbol
-    rz_fixed = rotate_z90(symbol) == symbol
-    witness_xy = (x == -y and y == x)
-    # Reconstruct the note witness on a general vector, then on a z-fixed slice.
-    z_fixed = (Fraction(0), Fraction(0), Fraction(7))
-    rx_on_z = rotate_x90(z_fixed)
-    checks.check(
-        "theorem2-witness",
-        "Rz r = r forces x = y = 0; Rx then forces y = z = 0",
-        (not rz_fixed)
-        and rotate_z90((Fraction(0), Fraction(0), z)) == (Fraction(0), Fraction(0), z)
-        and rx_on_z == (Fraction(0), Fraction(-7), Fraction(0))
-        and not is_cubic_invariant(z_fixed)
-        and is_cubic_invariant(ZERO)
-        and all(mat_vec(g, ZERO) == ZERO for g in group),
+    ex: Vec = (Fraction(1), Fraction(0), Fraction(0))
+    ey: Vec = (Fraction(0), Fraction(1), Fraction(0))
+    ez: Vec = (Fraction(0), Fraction(0), Fraction(1))
+    sx, sy, sz = pauli_dot(ex), pauli_dot(ey), pauli_dot(ez)
+    symbol: Vec = (Fraction(2), Fraction(-3), Fraction(5))
+    other: Vec = (Fraction(-1), Fraction(4), Fraction(2))
+    a, b = Fraction(3, 7), Fraction(-2, 5)
+    combination = tuple(a * symbol[i] + b * other[i] for i in range(3))
+    gram = tuple(
+        tuple(h_trace(h_mul(left, right)) for right in (sx, sy, sz))
+        for left in (sx, sy, sz)
     )
-    del witness_xy
-
-    h, h_z, h_x = rotate_hermitian(symbol)
-    sx, sy, sz = (
-        pauli_dot((Fraction(1), Fraction(0), Fraction(0))),
-        pauli_dot((Fraction(0), Fraction(1), Fraction(0))),
-        pauli_dot((Fraction(0), Fraction(0), Fraction(1))),
-    )
-    i_sz = (
-        ((Fraction(0), Fraction(1)), (Fraction(0), Fraction(0))),
-        ((Fraction(0), Fraction(0)), (Fraction(0), Fraction(-1))),
-    )
-    checks.check(
-        "pauli-equivariance",
-        "R · (r · σ) equals (R r) · σ for the generating rotations, and σx σy = i σz",
-        h_z == pauli_dot(rotate_z90(symbol))
-        and h_x == pauli_dot(rotate_x90(symbol))
-        and h == pauli_dot(symbol)
-        and h_mul(sx, sy) == i_sz,
-    )
-    checks.check(
-        "theorem3-traceless",
-        "the only cubic-invariant traceless Hermitian 2x2 in the chart is 0",
-        pauli_dot(ZERO) == (
-            ((Fraction(0), Fraction(0)), (Fraction(0), Fraction(0))),
-            ((Fraction(0), Fraction(0)), (Fraction(0), Fraction(0))),
+    expected_gram = tuple(
+        tuple(
+            (Fraction(2 if i == j else 0), Fraction(0)) for j in range(3)
         )
-        and is_cubic_invariant(ZERO)
-        and not is_cubic_invariant(symbol),
+        for i in range(3)
     )
     checks.check(
-        "theorem3-density",
-        "the only cubic-invariant density in the affine chart is I/2",
-        density(ZERO) == h_scale(Fraction(1, 2), identity2())
-        and density(ZERO) != density(THREE_FIFTHS),
-    )
-
-    rotated = identity_gate_rotate_z90(THREE_FIFTHS)
-    checks.check(
-        "mutation-not-invariant",
-        "the predicate r=(3/5,0,0) is cubic-invariant fails",
-        not predicate_three_fifths_is_cubic_invariant()
-        and rotated == THREE_FIFTHS_ROTATED
-        and not identity_gate_is_cubic_invariant(THREE_FIFTHS),
+        "pauli-q-linearity",
+        "the Pauli-coordinate map is Q-linear with a nondegenerate basis Gram matrix",
+        pauli_dot(combination)
+        == h_add(h_scale(a, pauli_dot(symbol)), h_scale(b, pauli_dot(other)))
+        and gram == expected_gram,
     )
     checks.check(
-        "mutation-not-every-zero",
-        "the predicate every Bloch vector is 0 fails on (3/5,0,0)",
-        not predicate_every_bloch_vector_is_zero((THREE_FIFTHS,))
-        and THREE_FIFTHS != ZERO,
-    )
-
-    rotate_src = inspect.getsource(identity_gate_rotate_z90)
-    invariant_src = inspect.getsource(identity_gate_is_cubic_invariant)
-    checks.check(
-        "identity-gate-rotate-z90",
-        "the rotate identity gate calls rotate_z90(r)",
-        "rotate_z90(r)" in rotate_src
-        and identity_gate_rotate_z90(symbol) == rotate_z90(symbol),
-    )
-    checks.check(
-        "identity-gate-is-cubic-invariant",
-        "the invariance identity gate calls is_cubic_invariant(r)",
-        "is_cubic_invariant(r)" in invariant_src
-        and identity_gate_is_cubic_invariant(ZERO)
-        and not identity_gate_is_cubic_invariant(THREE_FIFTHS),
-    )
-
-    theorem4_needles = (
-        "A `6`-tuple that breaks cubic symmetry is not so constrained",
-        "r = (3/5, 0, 0)",
-        "covariant under lattice translations and proper cubic rotations",
-        "proper cubic rotations about each site",
-    )
-    theorem5_needles = (
-        "not a universal `r = 1/2` claim",
-        "not a Born-kernel uniqueness",
-        "not a vacuum axiom",
-        "does not adopt `I/2`",
-        "does not force `r = 1/2` through any dictionary",
-    )
-    checks.check(
-        "note-theorems-4-5",
-        "Theorems 4 and 5 keep the cubic-symmetric Bloch-chart bound and refuse vacuum/Born/r=1/2 lifts",
-        all(needle in normalized_note for needle in theorem4_needles + theorem5_needles),
-    )
-    checks.check(
-        "note-n5",
-        "N5 audits Theorems 4-5 and refuses every-vector, 6-tuple, vacuum, and Born lifts",
-        "### N5 — resolution and rhetoric audit (Theorems 4–5)" in note
-        and "every Bloch vector is `0`" in note
-        and "a `6`-tuple that breaks cubic symmetry is forced to `r = 0`" in note
-        and "universal `r = 1/2`" in note,
-    )
-    checks.check(
-        "canonical-nonmutation",
-        "the axiom memo does not contain this chart's new theorem language",
+        "pauli-quarter-turn-normalization",
+        "both conjugation numerators have N N-dagger = 2I",
         all(
-            phrase not in axiom
-            for phrase in (
-                "only cubic-invariant Bloch vector",
-                "rotate_z90",
-                "is_cubic_invariant",
-                "(3/5, 0, 0)",
-            )
+            h_mul(quarter_turn_numerator(axis), h_dagger(quarter_turn_numerator(axis)))
+            == h_scale(Fraction(2), identity2())
+            for axis in (sz, sx)
         ),
+    )
+    checks.check(
+        "pauli-quarter-turn-intertwining",
+        "independent unitary conjugation implements both declared vector rotations",
+        conjugate_quarter_turn(pauli_dot(symbol), sz)
+        == pauli_dot(mat_vec(RZ, symbol))
+        and conjugate_quarter_turn(pauli_dot(symbol), sx)
+        == pauli_dot(mat_vec(RX, symbol)),
+    )
+    checks.check(
+        "pauli-fixed-space",
+        "zero is the unique coordinate compatible with the rank-three fixed equations",
+        pauli_dot(ZERO) == zero2()
+        and all(mat_vec(matrix, ZERO) == ZERO for matrix in generated)
+        and fixed_equation_rank() == 3,
+    )
+
+    density_symbol = density(symbol)
+    checks.check(
+        "density-exact-formula",
+        "rho(r) is Hermitian, trace one, and has the exact Bloch determinant",
+        is_hermitian(density_symbol)
+        and h_trace(density_symbol) == (Fraction(1), Fraction(0))
+        and h_determinant(density_symbol)
+        == ((Fraction(1) - norm_squared(symbol)) / 4, Fraction(0)),
+    )
+    checks.check(
+        "density-determinant-scale",
+        "det rho(r) equals (1-|r|^2)/4 on independent rational samples",
+        all(
+            h_determinant(density(vector))
+            == ((Fraction(1) - norm_squared(vector)) / 4, Fraction(0))
+            for vector in (ZERO, THREE_FIFTHS, SIX_FIFTHS, symbol)
+        ),
+    )
+    checks.check(
+        "density-body-interior",
+        "the 3/5 control is inside the Bloch body and has determinant 4/25",
+        is_bloch_body(THREE_FIFTHS)
+        and is_density_matrix(density(THREE_FIFTHS))
+        and h_determinant(density(THREE_FIFTHS)) == (Fraction(4, 25), Fraction(0)),
+    )
+    checks.check(
+        "density-body-exterior",
+        "the 6/5 mutation is outside the Bloch body and fails positive semidefiniteness",
+        not is_bloch_body(SIX_FIFTHS)
+        and not is_density_matrix(density(SIX_FIFTHS))
+        and h_determinant(density(SIX_FIFTHS)) == (Fraction(-11, 100), Fraction(0)),
+    )
+    checks.check(
+        "density-group-action",
+        "all group elements preserve the exact Bloch norm",
+        all(norm_squared(mat_vec(matrix, symbol)) == norm_squared(symbol) for matrix in generated),
+    )
+    checks.check(
+        "density-unique-fixed",
+        "the rank-three fixed equations select rho(0)=I/2",
+        fixed_equation_rank() == 3
+        and density(ZERO) == h_scale(Fraction(1, 2), identity2())
+        and is_density_matrix(density(ZERO)),
+    )
+
+    theorem1 = section_text(note, "## Theorem 1 — the generated representation is irreducible")
+    theorem2 = section_text(note, "## Theorem 2 — the fixed space is zero")
+    theorem3 = section_text(note, "## Theorem 3 — the Pauli-coordinate fixed space is zero")
+    theorem4 = section_text(note, "## Theorem 4 — the rational Bloch density body")
+    checks.check(
+        "section-bound-conclusions",
+        "each displayed theorem section contains its exact canonical conclusion",
+        "**Conclusion.** `G` has order `24`" in theorem1
+        and "acts irreducibly on `Q^3`." in theorem1
+        and "**Conclusion.** `Fix_G(Q^3) = {0}`." in theorem2
+        and "**Conclusion.** The `G`-fixed subspace of the rational-Pauli traceless\nHermitian space is `{0}`." in theorem3
+        and "**Conclusion.** `rho(r)` is a density matrix exactly when\n`r in B_Q`, and the unique `G`-fixed density in this body is `rho(0)=I/2`." in theorem4,
+    )
+    checks.check(
+        "canonical-claim-block",
+        "the executable claim block exactly matches all computed theorem outputs",
+        executable_claim_block(note) == CANONICAL_CLAIM_BLOCK
+        and len(generated) == 24
+        and character_inner_product(generated) == 1
+        and fixed_equation_rank() == 3
+        and commutant_dimension() == 1,
+    )
+    imports = section_text(note, "## Imports and authority")
+    checks.check(
+        "self-contained-authority",
+        "the note declares no upstream dependency or physical bridge",
+        "upstream_dependencies: []" in note
+        and "Imported scientific authority: none." in imports
+        and "MINIMAL_AXIOMS" not in note
+        and "Admissibility" not in note,
+    )
+    checks.check(
+        "claim-surface-trim",
+        "the superseded physical and negative-evidence sections are absent",
+        "## Theorem 5" not in note
+        and "### N5" not in note
+        and "6-tuple" not in note
+        and "Born" not in note
+        and "vacuum" not in note,
     )
 
     return checks.finish()

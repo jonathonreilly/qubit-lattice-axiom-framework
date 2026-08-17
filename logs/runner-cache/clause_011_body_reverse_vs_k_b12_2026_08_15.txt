@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/clause_011_body_reverse_vs_k_b12_2026_08_15.py
+runner_sha256: 36a1a69d782f9b7c036d0172b8b0d21d0b4c5df5c6dc120e39874b54e67ee7ff
+input_fingerprint_sha256: b931d0beb8f5cb45cc57f42f9b24a14bb8e246b1be5b25320b6d1a3db1970229
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.07
+status: ok
+----- stdout -----
+external_scientific_inputs: none; hop-costs are the named (0,1,1) rule on the finite 12-hop neighborhood B_12(0)
+package_local_integrity_reads: the note and current minimal axiom are read; no cache or governance surface is written
+negative_scope: the named rule is displayed, not adopted; it is not written into Admissibility and is not attached as an L1 hop-cost
+claim_scope: Body-diagonal reverse versus integer scale k under the named (0,1,1) hop-cost on B_12(0) is reported for k=1..4. Displayed, not adopted.
+cache_write: false
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required static literal pair and both files exist
+PASS: ball-b12-only B_12(0) is the 12-hop neighborhood of the origin and contains every named target
+PASS: clause-011-local seed-exit costs 1; axis 1-skeleton and support-drop cost 3; else 1
+dijkstra_count=1
+k 1 t(2,0,0)=4 t(1,1,1)=3 12 t(2k,0,0)^2=192 16 t(k,k,k)^2=144 reverse=True
+PASS: theorem-1-k1 t(2,0,0)=4 and t(1,1,1)=3
+PASS: theorem-2-k1 12 t(2,0,0)^2 > 16 t(1,1,1)^2 is True
+k 2 t(4,0,0)=8 t(2,2,2)=6 12 t(2k,0,0)^2=768 16 t(k,k,k)^2=576 reverse=True
+PASS: theorem-1-k2 t(4,0,0)=8 and t(2,2,2)=6
+PASS: theorem-2-k2 12 t(4,0,0)^2 > 16 t(2,2,2)^2 is True
+k 3 t(6,0,0)=10 t(3,3,3)=9 12 t(2k,0,0)^2=1200 16 t(k,k,k)^2=1296 reverse=False
+PASS: theorem-1-k3 t(6,0,0)=10 and t(3,3,3)=9
+PASS: theorem-2-k3 12 t(6,0,0)^2 > 16 t(3,3,3)^2 is False
+k 4 t(8,0,0)=12 t(4,4,4)=12 12 t(2k,0,0)^2=1728 16 t(k,k,k)^2=2304 reverse=False
+PASS: theorem-1-k4 t(8,0,0)=12 and t(4,4,4)=12
+PASS: theorem-2-k4 12 t(8,0,0)^2 > 16 t(4,4,4)^2 is False
+PASS: one-dijkstra exactly one origin Dijkstra assigned a finite time to every ball site
+PASS: reverse-bits-match computed reverse bits match the four-scale census yes,yes,no,no
+PASS: note-reports-times the note reports the eight computed times and the four displayed comparisons
+PASS: displayed-not-adopted the note displays the (0,1,1) scores and does not adopt them
+PASS: admissibility-unedited the current axiom memo still names Admissibility and does not contain the hop-cost rule
+PASS: claim-scope the note states the required claim_scope
+PASS: forbidden-tokens the note avoids the forbidden tokens
+PASS: uniqueness-not-required the note does not claim uniqueness of the named rule
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

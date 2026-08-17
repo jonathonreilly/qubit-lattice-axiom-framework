@@ -1,4 +1,4 @@
-"""Every orbit of the physical cell cutting pair action has table rank 144.
+"""Order-four stabilizer products and universal orbit-table rank 144.
 
 Standalone exact runner. It rebuilds the unit four-cube cell object from scratch:
 the sixteen corners, the five-corner unit-determinant pieces at the adjacency cost
@@ -18,8 +18,10 @@ generator all have order exactly four. Each cycle contributes the 4 by 4 block
 with ones on the diagonal and on the cyclic superdiagonal, of determinant zero
 and with a unimodular leading 3 by 3 minor. So the rank 144 and the nullity 48
 of every one of the 96 tables follow in every characteristic from a single 4 by 4
-determinant, with no 192 by 192 elimination anywhere, and the kernel is exhibited
-rather than inferred. Two rejectors show the gates discriminate.
+determinant, with no 192 by 192 elimination in the proof, and the integral kernel
+is exhibited rather than inferred. Exact geometry certificates identify the
+finite object with continuous simplex cuttings. In-memory mutations exercise
+every load-bearing check family.
 
 All work is exact over the integers and two fixed primes; no floating point enters
 any gate and no constant is fitted.
@@ -32,6 +34,8 @@ import time
 import resource
 from fractions import Fraction as FR
 import numpy as np
+
+AUDIT_TIMEOUT_SEC = 180
 
 PRIME = 1000003
 PRIME2 = 1000033
@@ -205,6 +209,7 @@ for (v0, Ci, rows) in BARY:
     MASK.append(bits)
 
 UNIV = (1 << NPTS) - 1
+MASK_VISIBLE = (len(MASK) == NKEPT and all(bits != 0 for bits in MASK))
 
 # ------------------------------------------------------------------
 # 1c. the cuttings
@@ -240,6 +245,49 @@ def cover_search(cov, chosen):
 cover_search(0, [])
 NS = len(SOLS)
 SIZES = sorted(set(len(s) for s in SOLS))
+SOLS_UNIQUE = (len(set(SOLS)) == NS)
+SEARCH_OUTPUT_OK = SOLS_UNIQUE
+for s in SOLS:
+    cov = 0
+    for t in s:
+        if cov & MASK[t]:
+            SEARCH_OUTPUT_OK = False
+        cov |= MASK[t]
+    if cov != UNIV:
+        SEARCH_OUTPUT_OK = False
+
+
+def piece_det_num(S):
+    v0 = CORN[S[0]]
+    return abs(det4([[CORN[S[j + 1]][r] - v0[r] for j in range(4)]
+                     for r in range(4)]))
+
+
+KEPT_DET = [piece_det_num(S) for S in KEPT]
+CUT_VOLUME_OK = (all(x == 1 for x in KEPT_DET)
+                 and all(sum(KEPT_DET[t] for t in s) == 24 for s in SOLS))
+
+
+def mask_search_certificate(masks, sols):
+    """Recheck that every emitted cutting is a disjoint full mask cover."""
+    if len(masks) != NKEPT or any(bits == 0 for bits in masks):
+        return False
+    if len(sols) != 15800 or len(set(sols)) != len(sols):
+        return False
+    for sol in sols:
+        if len(sol) != 24 or len(set(sol)) != 24:
+            return False
+        cov = 0
+        for t in sol:
+            if cov & masks[t]:
+                return False
+            cov |= masks[t]
+        if cov != UNIV:
+            return False
+    return True
+
+
+OBJECT_RECHECK_OK = mask_search_certificate(MASK, SOLS)
 
 USED = sorted(set(t for s in SOLS for t in s))
 NPI = len(USED)
@@ -253,6 +301,95 @@ for k, s in enumerate(CUT):
         PC[i] |= (1 << k)
 PCN = [popc(x) for x in PC]
 FULLC = (1 << NS) - 1
+
+# Exact pairwise interior-disjointness for every pair that co-occurs in a
+# cutting. Together with unit simplex volumes summing to the cube's normalized
+# volume 24, this upgrades the mask search to a continuous cutting certificate.
+
+
+def solve4(rows):
+    n = 4
+    M = [[FR(x) for x in r] for r in rows]
+    for c in range(n):
+        p = next((r for r in range(c, n) if M[r][c] != 0), -1)
+        if p < 0:
+            return None
+        M[c], M[p] = M[p], M[c]
+        pv = M[c][c]
+        M[c] = [x / pv for x in M[c]]
+        for r in range(n):
+            if r != c and M[r][c] != 0:
+                f = M[r][c]
+                M[r] = [M[r][k] - f * M[c][k] for k in range(n + 1)]
+    return [M[r][n] for r in range(n)]
+
+
+def afrank(pts):
+    if not pts:
+        return -1
+    base = pts[0]
+    rows = [[FR(p[r]) - FR(base[r]) for r in range(4)] for p in pts[1:]]
+    rk = 0
+    for c in range(4):
+        p = next((i for i in range(rk, len(rows)) if rows[i][c] != 0), -1)
+        if p < 0:
+            continue
+        rows[rk], rows[p] = rows[p], rows[rk]
+        pv = rows[rk][c]
+        for i in range(rk + 1, len(rows)):
+            if rows[i][c] != 0:
+                f = rows[i][c] / pv
+                rows[i] = [rows[i][k] - f * rows[rk][k] for k in range(4)]
+        rk += 1
+    return rk
+
+
+def side(a, b, x):
+    return sum(a[r] * x[r] for r in range(4)) + b
+
+
+def sep_facet(r1, p1, r2, p2):
+    return (any(max(side(a, b, x) for x in p2) <= 0 for (a, b) in r1)
+            or any(max(side(a, b, x) for x in p1) <= 0 for (a, b) in r2))
+
+
+def inter_dim(r1, r2):
+    con = list(r1) + list(r2)
+    pts = []
+    for idx in itertools.combinations(range(10), 4):
+        x = solve4([list(con[i][0]) + [-con[i][1]] for i in idx])
+        if x is None or any(side(a, b, x) < 0 for (a, b) in con):
+            continue
+        tx = tuple(x)
+        if tx not in pts:
+            pts.append(tx)
+    return afrank(pts)
+
+
+CO_PAIRS = [(i, j) for i in range(NPI) for j in range(i + 1, NPI)
+            if PC[i] & PC[j]]
+NFAC = 0
+NDIM = 0
+DISJ_OK = True
+PTS = [tuple(CORN[c] for c in S) for S in KEPT]
+for (i, j) in CO_PAIRS:
+    r1 = BARY[USED[i]][2]
+    r2 = BARY[USED[j]][2]
+    if sep_facet(r1, PTS[USED[i]], r2, PTS[USED[j]]):
+        NFAC += 1
+    elif inter_dim(r1, r2) <= 3:
+        NDIM += 1
+    else:
+        DISJ_OK = False
+
+
+def continuous_cut_certificate(detnums, nfac, ndim, disjoint):
+    return (len(detnums) == NKEPT and all(x == 1 for x in detnums)
+            and all(sum(detnums[t] for t in s) == 24 for s in SOLS)
+            and disjoint and nfac + ndim == len(CO_PAIRS))
+
+
+CONTINUOUS_CUT_OK = continuous_cut_certificate(KEPT_DET, NFAC, NDIM, DISJ_OK)
 PCSET = sorted(set(PCN))
 
 # ------------------------------------------------------------------
@@ -301,7 +438,10 @@ for c in COVERS:
 
 BROW = [[1 if i in cs else 0 for i in range(NPI)] for cs in COVSET]
 BRS = sorted(set(sum(r) for r in BROW))
+BCS = sorted(set(sum(BROW[k][i] for k in range(NCOV)) for i in range(NPI)))
 CS = [tuple(sorted(c)) for c in COVERS]
+COVM = [sum(1 << i for i in c) for c in CS]
+COVERS_UNIQUE = (len(set(COVM)) == NCOV)
 
 
 def rank_modp(Mx, p):
@@ -325,6 +465,17 @@ def rank_modp(Mx, p):
         if r == nr:
             break
     return int(r)
+
+
+def is_prime(n):
+    if n < 2 or n % 2 == 0:
+        return n == 2
+    d = 3
+    while d * d <= n:
+        if n % d == 0:
+            return False
+        d += 2
+    return True
 
 
 # ------------------------------------------------------------------
@@ -362,6 +513,19 @@ for a in MAPS:
         row.append(j)
     COMP.append(row)
 NPROD = NGRP * NGRP
+
+
+def map_family_certificate(maps):
+    if len(maps) != 384 or len(set(maps)) != 384:
+        return False
+    if any(sorted(m) != list(range(16)) for m in maps):
+        return False
+    idx = dict((m, i) for i, m in enumerate(maps))
+    return all(tuple(a[b[c]] for c in range(16)) in idx
+               for a in maps for b in maps)
+
+
+MAP_FAMILY_OK = map_family_certificate(MAPS)
 
 # induced action on the pieces
 KDX = dict((S, t) for t, S in enumerate(KEPT))
@@ -413,6 +577,26 @@ for p in PERM:
 
 CBIJ = all(sorted(q) == list(range(NCOV)) for q in CPERM)
 CDIST = (len(set(CPERM)) == NGRP)
+CIDOK = (CPERM[IDG] == IDC)
+
+
+def action_certificate(pp, qq):
+    if len(pp) != NGRP or len(qq) != NGRP:
+        return False
+    if (any(sorted(p) != list(range(NPI)) for p in pp)
+            or any(sorted(q) != list(range(NCOV)) for q in qq)):
+        return False
+    for a in range(NGRP):
+        for b in range(NGRP):
+            e = COMP[a][b]
+            if tuple(pp[a][pp[b][i]] for i in range(NPI)) != pp[e]:
+                return False
+            if tuple(qq[a][qq[b][j]] for j in range(NCOV)) != qq[e]:
+                return False
+    return True
+
+
+ACTION_OK = action_certificate(PERM, CPERM)
 
 ORBC = set([0])
 fr = [0]
@@ -445,19 +629,26 @@ COVSZ = BRS[0]
 LHS = CUTSZ * NS
 RHS = PCN0 * NPI
 
-gate(len(SIZES) == 1 and len(PCNSET) == 1 and NS > 0 and 0 < NPI <= NKEPT <= NCAND
-     and NPI == len(USED) and NPI == len(POS) and LHS == RHS,
+OBJECT_CERT_OK = (GENERIC and MASK_VISIBLE and SEARCH_OUTPUT_OK
+                  and CUT_VOLUME_OK and CONTINUOUS_CUT_OK and OBJECT_RECHECK_OK)
+
+gate(NCAND == 2672 and NKEPT == 400 and FLOOR == 6 and NS == 15800
+     and SIZES == [24] and NPI == 192 and PCNSET == [1975]
+     and len(USED) == NPI and len(POS) == NPI and LHS == RHS == 379200
+     and OBJECT_CERT_OK,
      "C0",
-     "cell {0} unit-det, {1} at cost floor {2}, {3} cuttings of {4}, {5} pieces, {6} each, {7}={8}".format(
+     "exact cell {0} unit-det, {1} at floor {2}, {3} cuttings of {4}, {5} pieces, {6} each, {7}={8}".format(
          nd(NCAND), nd(NKEPT), nd(FLOOR), nd(NS), nd(CUTSZ), nd(NPI), nd(PCN0), nd(LHS), nd(RHS)))
 
-gate(len(BRS) == 1 and COVEXACT and NCOV > 0 and COVSZ * PCN0 == NS,
+gate(NCOV == 192 and BRS == [8] and BCS == [8] and COVERS_UNIQUE
+     and COVEXACT and COVSZ * PCN0 == NS,
      "C1",
      "covers {0}, each of {1} pieces, each meets every cutting once, {1} x {2} = {3}".format(
          nd(NCOV), nd(COVSZ), nd(PCN0), nd(NS)))
 
-gate(GDISTINCT and CLOSED and KEEPS and COVKEEP and PBIJ and PDIST and PIDOK and CBIJ
-     and CDIST and len(ORBP) == NPI and len(ORBC) == NCOV,
+gate(NGRP == 384 and NPROD == 147456 and GDISTINCT and CLOSED and MAP_FAMILY_OK
+     and KEEPS and COVKEEP and PBIJ and PDIST and PIDOK and CBIJ and CDIST
+     and CIDOK and ACTION_OK and len(ORBP) == NPI == 192 and len(ORBC) == NCOV == 192,
      "C2",
      "group {0} distinct maps shut under composition, {0} bijections each side, one orbit of {1} on each".format(
          nd(NGRP), nd(NPI)))
@@ -513,7 +704,18 @@ for s in range(NPAIR):
 NORB = len(ORBS)
 OSZ = sorted(set(len(o) for o in ORBS))
 
-gate(len(OSZ) == 1 and OSZ[0] == NGRP and NORB * NGRP == NPAIR and min(WHICH) >= 0,
+
+def orbit_partition_certificate(orbs):
+    if len(orbs) != 96 or any(len(o) != 384 or len(set(o)) != 384 for o in orbs):
+        return False
+    flat = [x for o in orbs for x in o]
+    return len(flat) == NPAIR and len(set(flat)) == NPAIR and set(flat) == set(range(NPAIR))
+
+
+ORBIT_PARTITION_OK = orbit_partition_certificate(ORBS)
+
+gate(NORB == 96 and OSZ == [384] and NPAIR == 36864
+     and NORB * NGRP == NPAIR and min(WHICH) >= 0 and ORBIT_PARTITION_OK,
      "C7",
      "the pair action is free: {0} orbits of the full size {1}, {0} x {1} = {2} pairs".format(
          nd(NORB), nd(NGRP), nd(NPAIR)))
@@ -609,8 +811,10 @@ gate(len(PGD) == NFP and len(CGD) == NFC and len(PRODO) == NFP * NFC
 INVS = [e for e in range(NGRP) if e != IDG and COMP[e][e] == IDG]
 PRODO2 = [ORDG[COMP[a][b]] for a in PGD for b in INVS]
 OD2 = sorted(set(PRODO2))
+OHIST = dict((v, PRODO2.count(v)) for v in OD2)
 
-gate(len(PRODO2) == len(PGD) * len(INVS) and any(v != 4 for v in PRODO2) and 4 in OD2,
+gate(len(INVS) == 75 and len(PRODO2) == 900 and OD2 == [1, 2, 4, 8]
+     and OHIST == {1: 12, 2: 216, 4: 480, 8: 192},
      "C11",
      "rejector: {0} gens by all {1} involutions is {2} products of orders {3}, so order 4 is not automatic".format(
          nd(len(PGD)), nd(len(INVS)), nd(len(PRODO2)), " ".join(nd(v) for v in OD2)))
@@ -661,10 +865,31 @@ for kk in range(NORB):
     TOTC += len(lst)
     CYCA.append(lst)
 
+
+def cycle_partition_certificate(orbs, cycles):
+    if len(orbs) != 96 or len(cycles) != 96:
+        return False
+    for orbit, table_cycles in zip(orbs, cycles):
+        if len(table_cycles) != 48:
+            return False
+        edges = []
+        for pcs, cvs in table_cycles:
+            if len(pcs) != 4 or len(cvs) != 4 or len(set(pcs)) != 4 or len(set(cvs)) != 4:
+                return False
+            edges.extend(pcs[t] * NCOV + cvs[t] for t in range(4))
+            edges.extend(pcs[(t + 1) & 3] * NCOV + cvs[t] for t in range(4))
+        if len(edges) != 384 or set(edges) != set(orbit):
+            return False
+    return True
+
+
+CYCLE_PARTITION_OK = cycle_partition_certificate(ORBS, CYCA)
+
 CPT = sorted(CPTS)[0]
 CL = sorted(CLENS)[0]
 
-gate(CYCOK and CLENS == set([8]) and len(CPTS) == 1 and CPT * CL == NGRP
+gate(CYCOK and CYCLE_PARTITION_OK and CLENS == set([8]) and CPTS == set([48])
+     and CPT * CL == NGRP
      and TOTC == NORB * CPT and TOTE == NPAIR,
      "C12",
      "every component is a cycle of length {0}: {1} per table, {2} x {1} = {3} cycles in all".format(
@@ -765,13 +990,14 @@ gate(RANKDER + NULLDER == NPI and RANKDER == 3 * NULLDER and NULLDER == CPT,
 
 gate(KEROK and DISJ,
      "C17",
-     "the alternating vector on each of the {0} cycles is annihilated exactly; the {1} per table have disjoint supports".format(
+     "the integral alternating vector on each of the {0} cycles is annihilated; the {1} per table form a kernel basis".format(
          nd(TOTC), nd(CPT)))
 
-gate(all(v == RANKDER for v in RK1) and all(v == RANKDER for v in RK2)
+gate(is_prime(PRIME) and is_prime(PRIME2) and PRIME != PRIME2
+     and all(v == RANKDER for v in RK1) and all(v == RANKDER for v in RK2)
      and len(RK1) + len(RK2) == 2 * NORB,
      "C18",
-     "real elimination gives rank {0} for all {1} tables at both primes, {2} measurements".format(
+     "direct modular elimination gives rank {0} for all {1} tables at both primes, {2} measurements".format(
          nd(RANKDER), nd(NORB), nd(2 * NORB)))
 
 M0 = np.zeros((NCOV, NPI), dtype=np.int64)
@@ -787,9 +1013,9 @@ BAD = (not (M0.sum(axis=0) == 2).all()) or (not (M0.sum(axis=1) == 2).all())
 RP = rank_modp(M0, PRIME)
 M0 = None
 
-gate(R0 == RANKDER and BAD and RP != RANKDER,
+gate(R0 == RANKDER and BAD and RP == 145,
      "C19",
-     "rejector: moving one entry along a row breaks two-regularity and the rank moves from {0} to {1}".format(
+     "F_1000003 rejector: moving one row entry breaks two-regularity and moves rank from {0} to {1}".format(
          nd(R0), nd(RP)))
 
 # ------------------------------------------------------------------
@@ -820,9 +1046,10 @@ gate(len(IORB) == 4 and np.array_equal(SUM4, INC),
 IR1 = rank_modp(INC, PRIME)
 IR2 = rank_modp(INC, PRIME2)
 
-gate(IR1 == 105 and IR2 == 105 and NPI - IR1 == 87 and RANKDER - IR1 == 39,
+gate(is_prime(PRIME) and is_prime(PRIME2) and IR1 == 105 and IR2 == 105
+     and NPI - IR1 == 87 and RANKDER - IR1 == 39,
      "C22",
-     "incidence rank {0} at both primes, kernel {1} = {2} - {0}, excess {3} = {4} - {0}".format(
+     "incidence rank {0} at F_1000003 and F_1000033, kernel {1}, excess {3} from singleton rank {4}".format(
          nd(IR1), nd(NPI - IR1), nd(NPI), nd(RANKDER - IR1), nd(RANKDER)))
 
 TT = []
@@ -841,10 +1068,137 @@ for a in range(len(TT)):
 PS = sorted(PS)
 TT = None
 
-gate(all(v == RANKDER for v in FR1) and len(FR1) == len(IORB) and len(PS) == 6,
+gate(all(v == RANKDER for v in FR1) and len(FR1) == len(IORB)
+     and PS == [72, 93, 117, 129, 144, 144],
      "C23",
-     "each of the {0} summands alone has rank {1}; the {2} two-element sums measure {3}".format(
+     "at F_1000003 each of {0} summands has rank {1}; the {2} pair sums measure {3}".format(
          nd(len(IORB)), nd(RANKDER), nd(len(PS)), " ".join(nd(v) for v in PS)))
+
+# ------------------------------------------------------------------
+# 9. discriminating in-memory mutations for every load-bearing family
+# ------------------------------------------------------------------
+
+
+def freeness_certificate(fixp, fixc):
+    return (len(fixp) == NGRP and len(fixc) == NGRP
+            and all(e == IDG or not (fixp[e] > 0 and fixc[e] > 0)
+                    for e in range(NGRP)))
+
+
+def order_summary_ok(vals):
+    hist = dict((v, vals.count(v)) for v in sorted(set(vals)))
+    return len(vals) == 900 and hist == {1: 12, 2: 216, 4: 480, 8: 192}
+
+
+def block_packet_certificate(table, cycles):
+    if table.shape != (NCOV, NPI) or len(cycles) != 48:
+        return False
+    for pcs, cvs in cycles:
+        if len(pcs) != 4 or len(cvs) != 4:
+            return False
+        ia = np.array(pcs, dtype=np.int64)
+        ja = np.array(cvs, dtype=np.int64)
+        if not np.array_equal(table[ja][:, ia], A4A):
+            return False
+        if int(table[ja].sum()) != 8 or int(table[:, ia].sum()) != 8:
+            return False
+    return True
+
+
+def integral_kernel_packet(cycles):
+    V = np.zeros((NPI, len(cycles)), dtype=np.int64)
+    for t, (pcs, unused_covers) in enumerate(cycles):
+        for u, piece in enumerate(pcs):
+            V[piece, t] = 1 if (u & 1) == 0 else -1
+    return V
+
+
+def kernel_packet_certificate(table, vectors):
+    return (vectors.shape == (NPI, 48)
+            and bool(np.all(np.count_nonzero(vectors, axis=0) == 4))
+            and bool(np.all(np.count_nonzero(vectors, axis=1) == 1))
+            and set(np.unique(vectors)).issubset({-1, 0, 1})
+            and bool(np.all(table.dot(vectors) == 0)))
+
+
+def incidence_certificate(labels, summed, target):
+    return (len(labels) == 4 and len(set(labels)) == 4
+            and summed.shape == target.shape and np.array_equal(summed, target))
+
+
+def pair_summary_ok(vals):
+    return list(vals) == [72, 93, 117, 129, 144, 144]
+
+
+BAD_MASKS = list(MASK)
+BAD_MASKS[0] = 0
+MUT_OBJECT = not mask_search_certificate(BAD_MASKS, SOLS)
+
+BAD_DETS = list(KEPT_DET)
+BAD_DETS[0] = 2
+MUT_GEOMETRY = not continuous_cut_certificate(BAD_DETS, NFAC, NDIM, DISJ_OK)
+
+BAD_MAPS = list(MAPS)
+BAD_MAPS[-1] = BAD_MAPS[0]
+MUT_GROUP = not map_family_certificate(BAD_MAPS)
+
+BAD_PERM = list(PERM)
+bad_identity = list(BAD_PERM[IDG])
+bad_identity[0], bad_identity[1] = bad_identity[1], bad_identity[0]
+BAD_PERM[IDG] = tuple(bad_identity)
+MUT_ACTION = not action_certificate(BAD_PERM, CPERM)
+
+BAD_FIXP = list(FIXP)
+BAD_FIXP[SETC[0]] = 1
+MUT_FREE = not freeness_certificate(BAD_FIXP, FIXC)
+
+BAD_ORBITS = [list(o) for o in ORBS]
+BAD_ORBITS[0] = BAD_ORBITS[0][:-1]
+MUT_ORBITS = not orbit_partition_certificate(BAD_ORBITS)
+
+BAD_CYCLES = list(CYCA)
+bad_first_cycles = list(BAD_CYCLES[0])
+bad_pieces, bad_covers = bad_first_cycles[0]
+bad_first_cycles[0] = (bad_pieces[:-1], bad_covers)
+BAD_CYCLES[0] = bad_first_cycles
+MUT_CYCLES = not cycle_partition_certificate(ORBS, BAD_CYCLES)
+
+BAD_ORDERS = list(PRODO2)
+BAD_ORDERS[0] = 4 if BAD_ORDERS[0] != 4 else 1
+MUT_ORDERS = not order_summary_ok(BAD_ORDERS)
+
+FIRST_TABLE = np.zeros((NCOV, NPI), dtype=np.int64)
+for x in ORBS[0]:
+    i, j = divmod(x, NCOV)
+    FIRST_TABLE[j, i] = 1
+FIRST_KERNEL = integral_kernel_packet(CYCA[0])
+
+BAD_BLOCK = FIRST_TABLE.copy()
+bad_piece, bad_cover = divmod(ORBS[0][0], NCOV)
+BAD_BLOCK[bad_cover, bad_piece] = 0
+MUT_BLOCK = not block_packet_certificate(BAD_BLOCK, CYCA[0])
+
+BAD_KERNEL = FIRST_KERNEL.copy()
+BAD_KERNEL[int(np.nonzero(BAD_KERNEL[:, 0])[0][0]), 0] = 0
+MUT_KERNEL = not kernel_packet_certificate(FIRST_TABLE, BAD_KERNEL)
+
+MUT_RANK = (rank_modp([[1, 0], [1, 0]], PRIME) != 2)
+
+BAD_SUM4 = SUM4.copy()
+BAD_SUM4[0, 0] += 1
+MUT_INCIDENCE = not incidence_certificate(IORB, BAD_SUM4, INC)
+
+BAD_PAIR = list(PS)
+BAD_PAIR[0] += 1
+MUT_PAIR = not pair_summary_ok(BAD_PAIR)
+
+MUTATIONS = [MUT_OBJECT, MUT_GEOMETRY, MUT_GROUP, MUT_ACTION, MUT_FREE, MUT_ORBITS,
+             MUT_CYCLES, MUT_ORDERS, MUT_BLOCK, MUT_KERNEL, MUT_RANK,
+             MUT_INCIDENCE, MUT_PAIR]
+
+gate(all(MUTATIONS) and len(MUTATIONS) == 13,
+     "C24",
+     "mutations 13/13 reject: object/geometry/group/action/free/orbit/cycle/order/block/kernel/rank/incidence/pair")
 
 emit("group {0}, orbits {1}, cycles {2}, every orbit table rank {3}, incidence rank {4}".format(
     nd(NGRP), nd(NORB), nd(TOTC), nd(RANKDER), nd(IR1)))

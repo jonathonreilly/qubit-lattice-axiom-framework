@@ -1,12 +1,12 @@
 ===== runner cache v1 =====
 runner: scripts/physical_cell_cutting_cell_orbit_cycles_cycle771_2026_08_11.py
-runner_sha256: 3857b9962df8fcc0c6a785d9a310dbb5147b26a76d6ff8ac373fb75b237739e2
+runner_sha256: b2b81e3c00ae2526056c6e5acdd32c2e8623c8d807b942d4c3ca3cbabbb0f0bf
 timeout_sec: 180
 exit_code: 0
-elapsed_sec: 13.49
+elapsed_sec: 28.71
 status: ok
 ----- stdout -----
-PASS C0 cell 2672 unit-det, 400 at cost floor 6, 15800 cuttings of 24, 192 pieces, 1975 each, 379200=379200
+PASS C0 exact cell 2672 unit-det, 400 at floor 6, 15800 cuttings of 24, 192 pieces, 1975 each, 379200=379200
 PASS C1 covers 192, each of 8 pieces, each meets every cutting once, 8 x 1975 = 15800
 PASS C2 group 384 distinct maps shut under composition, 384 bijections each side, one orbit of 192 on each
 PASS C3 both point stabilisers have order 2 and the non-identity element of each squares to the identity
@@ -23,16 +23,17 @@ PASS C13 each of the 4608 cycles has length twice the order of the product of th
 PASS C14 block det 0 so rank at most 3, leading 3 by 3 minor det 1 so rank at least 3: rank 3 nullity 1 over every field
 PASS C15 on each cycle the 4 by 4 submatrix is that block exactly, and its rows and columns carry no ones outside it
 PASS C16 48 blocks of rank 3 give rank 144 and nullity 48 = 192 - 144 for all 96 tables, no large elimination
-PASS C17 the alternating vector on each of the 4608 cycles is annihilated exactly; the 48 per table have disjoint supports
-PASS C18 real elimination gives rank 144 for all 96 tables at both primes, 192 measurements
-PASS C19 rejector: moving one entry along a row breaks two-regularity and the rank moves from 144 to 145
+PASS C17 the integral alternating vector on each of the 4608 cycles is annihilated; the 48 per table form a kernel basis
+PASS C18 direct modular elimination gives rank 144 for all 96 tables at both primes, 192 measurements
+PASS C19 F_1000003 rejector: moving one row entry breaks two-regularity and moves rank from 144 to 145
 PASS C20 the 96 orbit tables sum entrywise to the all ones 192 by 192 matrix
 PASS C21 the cover by piece incidence is exactly the entrywise sum of 4 of the 96 orbit tables
-PASS C22 incidence rank 105 at both primes, kernel 87 = 192 - 105, excess 39 = 144 - 105
-PASS C23 each of the 4 summands alone has rank 144; the 6 two-element sums measure 72 93 117 129 144 144
+PASS C22 incidence rank 105 at F_1000003 and F_1000033, kernel 87, excess 39 from singleton rank 144
+PASS C23 at F_1000003 each of 4 summands has rank 144; the 6 pair sums measure 72 93 117 129 144 144
+PASS C24 mutations 13/13 reject: object/geometry/group/action/free/orbit/cycle/order/block/kernel/rank/incidence/pair
 group 384, orbits 96, cycles 4608, every orbit table rank 144, incidence rank 105
-elapsed 13.3 s, peak resident 56.3 MB
-TOTAL: PASS=24 FAIL=0
+elapsed 28.6 s, peak resident 73.0 MB
+TOTAL: PASS=25 FAIL=0
 
 ----- stderr -----
 

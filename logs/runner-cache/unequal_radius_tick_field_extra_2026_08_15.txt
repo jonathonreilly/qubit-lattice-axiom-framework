@@ -1,0 +1,59 @@
+===== runner cache v1 =====
+runner: scripts/unequal_radius_tick_field_extra_2026_08_15.py
+runner_sha256: 3a5a7051ac4482e4ed32eef1df12ad323cbf9bde55b53678eb975ddf37e6477f
+input_fingerprint_sha256: f5f526685604363a10f7a0702e471289ecad8256c41574a585ca9c9c30dc4e12
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+unequal-radius tick field extra relative to NN occupancy
+AUDIT_INPUT_PATHS:
+  docs/UNEQUAL_RADIUS_TICK_FIELD_EXTRA_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+G_plus=24
+uneq_unread=True
+uneq_sigma=(1, 0, 1, 0, 1, 1)
+uneq_ticks=(1, None, 1, None, 3, 2)
+same_center_eq_unread=False
+same_center_eq_sigma=(1, 0, 1, 0, 0, 1)
+same_center_eq_ticks=(1, None, 1, None, None, 2)
+equal_radius_control=ticklab
+eq_unread=True
+eq_sigma=(1, 0, 1, 1, 0, 1)
+eq_ticks=(2, None, 2, 2, None, 2)
+first_star=(((-2, -2, -2), (-2, -2, -1), (-2, -2, 0)), (2, 1, 2), (-3, -3, -1))
+first_sigma=(1, 0, 1, 0, 1, 1)
+first_ticks=(1, None, 1, None, 2, 2)
+first_breaker=(((-2, -2, -2), (-2, -2, -1), (-2, -2, 1)), (2, 1, 3), (-3, -3, -1))
+first_breaker_detail=((1, 0, 1, 0, 1, 1), (1, None, 1, None, 3, 2), 2, 1)
+sigma_same=True
+ticks_differ=True
+PASS: audit-input-paths | AUDIT_INPUT_PATHS is the required static two-string literal tuple
+PASS: source-lattice
+PASS: source-admissibility
+PASS: source-unread-qubit
+PASS: g-plus-order | proper=24
+PASS: theorem-1-lex-first-breaker | sigma=(1, 0, 1, 0, 1, 1) ticks=(1, None, 1, None, 3, 2)
+PASS: theorem-1-same-center-eq-occupies-v | same_center_eq_unread=False
+PASS: theorem-1-equal-radius-control | eq_sigma=(1, 0, 1, 1, 0, 1) eq_ticks=(2, None, 2, 2, None, 2)
+PASS: theorem-1-sigma-does-not-determine-t | first_ticks=(1, None, 1, None, 2, 2) uneq_ticks=(1, None, 1, None, 3, 2)
+PASS: theorem-2-extra-not-adopted
+PASS: theorem-3-displayed
+PASS: claim-scope
+PASS: l1-not-attached
+PASS: not-leftover-uneqlaw
+PASS: admissibility-unedited
+PASS: forbidden-phrases
+PASS: no-axiom-edit
+per_element: σ and t are exact 6-slot tuples; same-σ different-t is exact
+per_site: lex-first breaker, lex-first same-σ star, and one equal-radius control
+per_mode: no spectral calculation
+per_block: 3-ball stars only
+lattice_wide: checked and not executed
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

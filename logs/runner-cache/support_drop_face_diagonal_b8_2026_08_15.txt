@@ -1,0 +1,57 @@
+===== runner cache v1 =====
+runner: scripts/support_drop_face_diagonal_b8_2026_08_15.py
+runner_sha256: 2b056439e7c34cfb7596c85bab528bea4eb1d0a2d17d91801ba1c0b3ae840b6e
+input_fingerprint_sha256: b71d673adb6e4da35550356ed097c8eaa9ee042fe6255f3c594c52303305ea1d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/SUPPORT_DROP_FACE_DIAGONAL_B8_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+dijkstra_count_budget: 1
+claim_scope: Face-diagonal versus axis arrival order under the named support-drop hop-cost on B_8(0) is reported. Displayed, not adopted.
+PASS: audit-input-paths declared inputs are exactly the source note and the axiom memo
+PASS: audit-input-literals AUDIT_INPUT_PATHS is a static two-string literal in this runner
+PASS: ball-cardinality B_8(0) has 833 sites and 832 nonzero sites
+PASS: one-dijkstra exactly one Dijkstra computation is used
+PASS: finite-times every target is reached by a finite path
+arrival_times:
+  t(4, 0, 0)=10  t^2/|v|_2^2=100/16
+  t(6, 0, 0)=12  t^2/|v|_2^2=144/36
+  t(8, 0, 0)=16  t^2/|v|_2^2=256/64
+  t(3, 3, 0)=8  t^2/|v|_2^2=64/18
+  t(4, 2, 0)=8  t^2/|v|_2^2=64/20
+  t(4, 4, 0)=10  t^2/|v|_2^2=100/32
+  t(2, 2, 2)=8  t^2/|v|_2^2=64/12
+PASS: time-400 computed t(4,0,0)=10 is written in the note
+PASS: time-600 computed t(6,0,0)=12 is written in the note
+PASS: time-800 computed t(8,0,0)=16 is written in the note
+PASS: time-330 computed t(3,3,0)=8 is written in the note
+PASS: time-420 computed t(4,2,0)=8 is written in the note
+PASS: time-440 computed t(4,4,0)=10 is written in the note
+PASS: time-222 computed t(2,2,2)=8 is written in the note
+reverse_bits:
+  (4, 0, 0) vs (3, 3, 0): reverse=True (64*16=1024 < 100*18=1800)
+  (4, 0, 0) vs (4, 2, 0): reverse=True (64*16=1024 < 100*20=2000)
+  (6, 0, 0) vs (3, 3, 0): reverse=True (64*36=2304 < 144*18=2592)
+  (8, 0, 0) vs (4, 4, 0): reverse=True (100*64=6400 < 256*32=8192)
+PASS: reverse-400-330 ((4,0,0),(3,3,0)) is reverse and the note records 16 t(3,3,0)^2=1024<1800=18 t(4,0,0)^2
+PASS: reverse-400-420 ((4,0,0),(4,2,0)) is reverse and the note records 16 t(4,2,0)^2=1024<2000=20 t(4,0,0)^2
+PASS: reverse-600-330 ((6,0,0),(3,3,0)) is reverse and the note records 36 t(3,3,0)^2=2304<2592=18 t(6,0,0)^2
+PASS: reverse-800-440 ((8,0,0),(4,4,0)) is reverse and the note records 64 t(4,4,0)^2=6400<8192=32 t(8,0,0)^2
+PASS: not-b6-face-leftover note states the B_8 face reverse bits are not leftover of the B_6 face times
+PASS: source-lattice Lattice nearest-neighbor wording is pinned in the axiom memo and the note
+PASS: source-admissibility Admissibility distribution wording and non-dynamics clause are pinned
+PASS: nu-not-admissibility the note refuses to write nu into Admissibility
+PASS: not-attach-l1 the displayed rule is not attached to L1
+PASS: displayed-not-adopted claim_scope and displayed-not-adopted wording are present
+PASS: forbidden-phrases forbidden phrases are absent from the note and from runner prose
+PASS: all-pairs-reverse every declared face-versus-axis pair is reverse under nu
+PASS: axiom-untouched the axiom memo is an input only
+TOTAL: PASS=25 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,72 @@
+===== runner cache v1 =====
+runner: scripts/support_drop_clock_not_readiness_12host_2026_08_15.py
+runner_sha256: 50f5cf7fcdd06512ce5e52531b0d5fc4669bdea94e9a558422d4b773d9edf405
+input_fingerprint_sha256: 3b068f349fde861b010985a56afb1284435a027b1e425edd717ad51042645d95
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.50
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/SUPPORT_DROP_CLOCK_NOT_READINESS_12HOST_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+external_scientific_inputs: current Lattice, Qubit, Admissibility, and Record sentences; leftover-frame-positive section rebuilt from the July-3 pair; named support-drop hop-cost nu; bitall lex-first hosts
+construction: 12 lex-first perp-mask hosts; f leftover-frame-positive; nu=3 iff seed-exit or both supports 1 or support drop else 1; labels unused versus cost-1 readiness filter
+negative_scope: 12 lex-first perp-mask hosts only; displayed, not adopted; L1 not attached; f and nu not written into Admissibility
+host (0, 1, 0, 1, 1, 1) axis=z t=(·, 1, ·, 1, 2, 2) b=0 f=(0, −, 0, +, −, +) incoming_nu=(1, 1, 1, 1) sigma_ready=(0, 1, 0, 1, 1, 1) N_new_label=1 N_new_filt=1 fires_label=True fires_filt=True
+host (0, 1, 1, 0, 1, 1) axis=z t=(·, 1, 1, ·, 2, 2) b=0 f=(0, +, −, 0, −, +) incoming_nu=(1, 1, 1, 1) sigma_ready=(0, 1, 1, 0, 1, 1) N_new_label=1 N_new_filt=1 fires_label=True fires_filt=True
+host (0, 1, 1, 1, 0, 1) axis=y t=(·, 1, 2, 1, ·, 2) b=1 f=(0, −, +, −, 0, +) incoming_nu=(1, 1, 1, 1) sigma_ready=(0, 1, 1, 1, 0, 1) N_new_label=1 N_new_filt=1 fires_label=True fires_filt=True
+host (0, 1, 1, 1, 1, 0) axis=y t=(·, 1, 1, 1, 2, ·) b=0 f=(0, −, −, +, +, 0) incoming_nu=(1, 1, 1, 1) sigma_ready=(0, 1, 1, 1, 1, 0) N_new_label=1 N_new_filt=1 fires_label=True fires_filt=True
+host (1, 0, 0, 1, 1, 1) axis=z t=(1, ·, ·, 1, 2, 2) b=0 f=(+, 0, 0, −, −, +) incoming_nu=(1, 1, 1, 1) sigma_ready=(1, 0, 0, 1, 1, 1) N_new_label=1 N_new_filt=1 fires_label=True fires_filt=True
+host (1, 0, 1, 0, 1, 1) axis=z t=(1, ·, 1, ·, 2, 2) b=0 f=(−, 0, +, 0, −, +) incoming_nu=(1, 1, 1, 1) sigma_ready=(1, 0, 1, 0, 1, 1) N_new_label=1 N_new_filt=1 fires_label=True fires_filt=True
+host (1, 0, 1, 1, 0, 1) axis=y t=(1, ·, 2, 1, ·, 2) b=1 f=(+, 0, +, −, 0, −) incoming_nu=(1, 1, 1, 1) sigma_ready=(1, 0, 1, 1, 0, 1) N_new_label=1 N_new_filt=1 fires_label=True fires_filt=True
+host (1, 0, 1, 1, 1, 0) axis=y t=(1, ·, 1, 1, 2, ·) b=0 f=(+, 0, −, +, −, 0) incoming_nu=(1, 1, 1, 1) sigma_ready=(1, 0, 1, 1, 1, 0) N_new_label=1 N_new_filt=1 fires_label=True fires_filt=True
+host (1, 1, 0, 1, 0, 1) axis=x t=(2, 1, ·, 1, ·, 2) b=1 f=(+, −, 0, +, 0, −) incoming_nu=(1, 1, 1, 1) sigma_ready=(1, 1, 0, 1, 0, 1) N_new_label=1 N_new_filt=1 fires_label=True fires_filt=True
+host (1, 1, 0, 1, 1, 0) axis=x t=(1, 1, ·, 1, 2, ·) b=0 f=(−, +, 0, +, −, 0) incoming_nu=(1, 1, 1, 1) sigma_ready=(1, 1, 0, 1, 1, 0) N_new_label=1 N_new_filt=1 fires_label=True fires_filt=True
+host (1, 1, 1, 0, 0, 1) axis=x t=(2, 1, 1, ·, ·, 2) b=1 f=(+, −, −, 0, 0, +) incoming_nu=(1, 1, 1, 1) sigma_ready=(1, 1, 1, 0, 0, 1) N_new_label=1 N_new_filt=1 fires_label=True fires_filt=True
+host (1, 1, 1, 0, 1, 0) axis=x t=(1, 1, 1, ·, 2, ·) b=0 f=(−, +, −, 0, +, 0) incoming_nu=(1, 1, 1, 1) sigma_ready=(1, 1, 1, 0, 1, 0) N_new_label=1 N_new_filt=1 fires_label=True fires_filt=True
+N_label_fire=12
+N_filt_fire=12
+score: 12 lex-first perp-mask hosts only
+PASS: audit-input-paths | AUDIT_INPUT_PATHS is the required static two-string literal tuple
+PASS: source-lattice
+PASS: source-admissibility
+PASS: source-covariance
+PASS: source-formation-boundary
+PASS: source-qubit
+PASS: source-record
+PASS: g-plus-order | N_G+=24 N_pair=48
+PASS: theorem-1-n-label-fire | N_label_fire=12
+PASS: theorem-2-n-filt-fire | N_filt_fire=12
+PASS: host-(0, 1, 0, 1, 1, 1) | b=0 N_new_label=1 N_new_filt=1 sigma_ready=(0, 1, 0, 1, 1, 1)
+PASS: host-(0, 1, 1, 0, 1, 1) | b=0 N_new_label=1 N_new_filt=1 sigma_ready=(0, 1, 1, 0, 1, 1)
+PASS: host-(0, 1, 1, 1, 0, 1) | b=1 N_new_label=1 N_new_filt=1 sigma_ready=(0, 1, 1, 1, 0, 1)
+PASS: host-(0, 1, 1, 1, 1, 0) | b=0 N_new_label=1 N_new_filt=1 sigma_ready=(0, 1, 1, 1, 1, 0)
+PASS: host-(1, 0, 0, 1, 1, 1) | b=0 N_new_label=1 N_new_filt=1 sigma_ready=(1, 0, 0, 1, 1, 1)
+PASS: host-(1, 0, 1, 0, 1, 1) | b=0 N_new_label=1 N_new_filt=1 sigma_ready=(1, 0, 1, 0, 1, 1)
+PASS: host-(1, 0, 1, 1, 0, 1) | b=1 N_new_label=1 N_new_filt=1 sigma_ready=(1, 0, 1, 1, 0, 1)
+PASS: host-(1, 0, 1, 1, 1, 0) | b=0 N_new_label=1 N_new_filt=1 sigma_ready=(1, 0, 1, 1, 1, 0)
+PASS: host-(1, 1, 0, 1, 0, 1) | b=1 N_new_label=1 N_new_filt=1 sigma_ready=(1, 1, 0, 1, 0, 1)
+PASS: host-(1, 1, 0, 1, 1, 0) | b=0 N_new_label=1 N_new_filt=1 sigma_ready=(1, 1, 0, 1, 1, 0)
+PASS: host-(1, 1, 1, 0, 0, 1) | b=1 N_new_label=1 N_new_filt=1 sigma_ready=(1, 1, 1, 0, 0, 1)
+PASS: host-(1, 1, 1, 0, 1, 0) | b=0 N_new_label=1 N_new_filt=1 sigma_ready=(1, 1, 1, 0, 1, 0)
+PASS: claim-scope
+PASS: displayed-not-adopted
+PASS: l1-not-attached
+PASS: uniqueness-not-required
+PASS: not-leftover-clkonly
+PASS: score-lex-first-hosts-only
+PASS: admissibility-unedited
+PASS: forbidden-phrases
+PASS: no-axiom-edit
+per_element: N_label_fire and N_filt_fire are exact integers
+per_site: the 12 lex-first unread realizing hosts only
+per_mode: no spectral calculation
+per_block: 12 perp-mask hosts
+lattice_wide: checked and not executed
+TOTAL: PASS=31 FAIL=0
+
+----- stderr -----
+

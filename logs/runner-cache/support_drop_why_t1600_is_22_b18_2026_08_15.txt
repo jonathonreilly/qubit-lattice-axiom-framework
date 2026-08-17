@@ -1,0 +1,53 @@
+===== runner cache v1 =====
+runner: scripts/support_drop_why_t1600_is_22_b18_2026_08_15.py
+runner_sha256: ee4e762c906f326f034b89c1198e2c9852acd5f7d66e779d174a3dde0b1b70ab
+input_fingerprint_sha256: b56d8d4701e74be12713725ad457834ff1dd9124074b10194b19d10976b5057b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/SUPPORT_DROP_WHY_T1600_IS_22_B18_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+claim_scope: A lex-first shortest path to (16,0,0) under the named support-drop hop-cost on B_18(0) is named. Displayed, not adopted.
+PASS: audit-input-paths declared inputs are the source note and the current axiom memo
+PASS: audit-input-literal AUDIT_INPUT_PATHS is a static string-literal tuple
+PASS: claim-scope note claim_scope matches the named-path statement
+PASS: displayed-not-adopted the rule is displayed, not adopted
+PASS: not-in-admissibility ν is not written into Admissibility
+PASS: not-attach-l1 the displayed rule is not attached to L1
+PASS: uniqueness-not-claimed uniqueness among hop-costs is not claimed
+PASS: no-axiom-edit note records hypothetical axiom status no edit
+PASS: forbidden-absent forbidden phrases are absent from the source note
+n_sites 8473
+t(16,0,0) 22
+lex_first_path (0,0,0) → (0,-1,0) → (1,-1,0) → (2,-1,0) → (3,-1,0) → (4,-1,0) → (5,-1,0) → (6,-1,0) → (7,-1,0) → (8,-1,0) → (9,-1,0) → (10,-1,0) → (11,-1,0) → (12,-1,0) → (13,-1,0) → (14,-1,0) → (15,-1,0) → (16,-1,0) → (16,0,0)
+hop_costs 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3
+running_cost [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 22]
+hop_sum 22
+first_site_l1_gt_16 (17, (16, -1, 0))
+dijkstra_calls 1
+PASS: one-dijkstra exactly one Dijkstra ran
+PASS: ball-b18 B_18(0) has 8473 sites and 8472 nonzero sites
+PASS: t-1600 t(16,0,0) on B_18(0) equals 22
+PASS: valid-walk the exhibited walk is a nearest-neighbor walk in B_18(0) from 0 to (16,0,0)
+PASS: hop-costs-match recorded hop-costs equal ν on successive sites and sum to 22
+PASS: running-cost running costs are the partial sums of the hop-costs
+PASS: shortest the walk cost equals the Dijkstra arrival, so the walk is shortest
+PASS: lex-first-path the Dijkstra reconstruction is the named lex-first site sequence
+PASS: first-site-leaves-b16 the first site with |v|_1 > 16 is (16,-1,0)
+PASS: lex-first-beats-later-shortest a later cost-22 walk exists and is strictly lex-later
+PASS: lex-smaller-is-not-shortest a lex-smaller walk that starts toward -x costs more than 22
+PASS: b16-comparison-walk a displayed B_16-staying walk to (16,0,0) costs 24 and is not a Dijkstra
+PASS: note-records-path note records the lex-first sites, hop-costs, and running costs
+PASS: note-records-exit note records the first site that leaves B_16
+PASS: not-leftover-of-the-two-times the walk is not leftover of the two times
+PASS: not-leftover-of-alpha α cannot price the support-drop hop (16,-1,0)→(16,0,0)
+PASS: seed-and-axis-clauses seed-exit and support-drop cost 3; support increase costs 1
+PASS: axiom-untouched the axiom memo is an input only and still names the four axioms
+TOTAL: PASS=27 FAIL=0
+
+----- stderr -----
+

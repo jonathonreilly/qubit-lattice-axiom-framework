@@ -1,0 +1,44 @@
+===== runner cache v1 =====
+runner: scripts/axis_skeleton_axis_detour_path_2026_08_15.py
+runner_sha256: 92bbb7585f51fc45cf465facac98a50e9ddb5d31806fd873b3582960e6329912
+input_fingerprint_sha256: 7d15a26cee22990fb44aea837931e321a53451f6b04009453f9c06c25300f624
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+external_scientific_inputs: none; exact six-neighbor hop-cost algebra
+package_local_integrity_reads: proposed source note and live axiom memo
+claim_boundary: displayed named hop-cost; no admissibility edit
+lex_first_path: ((0, 0, 0), (0, -1, 0), (1, -1, 0), (2, -1, 0), (3, -1, 0), (4, -1, 0), (4, 0, 0))
+hop_pairs: [(0, 1), (1, 2), (2, 2), (2, 2), (2, 2), (2, 1)]
+hop_clauses: ['seed-exit', 'neither', 'neither', 'neither', 'neither', 'neither']
+hop_costs: (3, 1, 1, 1, 1, 1)
+orbit_cost_sum: 8
+post_seed_weights: [1, 2, 2, 2, 2, 1]
+axis_path: ((0, 0, 0), (1, 0, 0), (2, 0, 0), (3, 0, 0), (4, 0, 0))
+axis_hop_costs: (3, 3, 3, 3)
+axis_cost_sum: 12
+shortest_path_count: 8
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: one-seed-b6-domain the search domain is the 377-site radius-6 ball about one seed
+PASS: inward-weights seed weight is 0 and the axis target weight is 1
+PASS: thm1-lex-path the lex-first shortest path is the displayed six-step site list
+PASS: thm1-six-hops that path has six nearest-neighbor hops
+PASS: thm1-hop-costs the six computed hop costs are 3,1,1,1,1,1
+PASS: thm1-orbit-cost-sum the orbit-cost sum equals the Dijkstra arrival and equals 8
+PASS: thm1-leaves-axis some site after the seed has inward weight not 1
+PASS: thm1-seed-exit-only-expensive the path uses one seed-exit and five ordinary hops
+PASS: thm1-lex-is-shortest the displayed path is among the enumerated shortest paths and is lex-first
+PASS: thm2-on-axis-costs-12 the on-axis-only path costs 12 and is not shortest
+PASS: axiom-unedited the live Admissibility sentences are present and the named rule is absent
+PASS: thm3-not-written-into-admissibility the note refuses to write the named rule into Admissibility
+PASS: no-l1-attachment the note refuses to attach L1
+PASS: claim-scope-contract the declared claim_scope matches the exhibited-path statement
+PASS: forbidden-phrases the note omits the dispatch-forbidden phrases
+PASS: note-contains-path-and-costs the note records the lex path, the six costs, the sum, and the on-axis 12
+PASS: source-lattice the cubic nearest-neighbor graph is the current Lattice premise
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

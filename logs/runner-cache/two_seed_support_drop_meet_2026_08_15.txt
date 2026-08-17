@@ -1,0 +1,49 @@
+===== runner cache v1 =====
+runner: scripts/two_seed_support_drop_meet_2026_08_15.py
+runner_sha256: 07654b4cc162c529031526257f399374d641e0d8816f7631dec2f045ab32e156
+input_fingerprint_sha256: f3966927b6b19aee8b8c554ee32f1bda91fde5e9ac6562bf662f3fb6d7877809
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/TWO_SEED_SUPPORT_DROP_MEET_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+claim_scope: Two-seed meetings under the named support-drop hop-cost are scored vs ℓ¹. Displayed, not adopted.
+PASS: audit-input-paths declared inputs are the source note and the current axiom memo
+PASS: audit-input-literal AUDIT_INPUT_PATHS is a static string-literal tuple
+PASS: claim-scope note claim_scope matches the displayed scoring statement
+PASS: displayed-not-adopted the rule is displayed, not adopted
+PASS: not-in-admissibility ν is not written into Admissibility
+PASS: not-attach-l1 the displayed rule is not attached to L1
+PASS: uniqueness-not-claimed uniqueness among hop-costs is not claimed
+PASS: no-axiom-edit note records hypothetical axiom status no edit
+PASS: forbidden-absent forbidden phrases are absent from the source note
+n_sites 195
+lex_first (1, 0, 0)
+meet_t 3
+|M| 1
+n_mid_nu 33
+n_mid_l1 25
+var_nu 0.00405294265643
+var_l1 0.00995038158264
+dijkstra_calls 2
+PASS: one-pair-dijkstra exactly one pair of Dijkstras ran
+PASS: union-b4 the union B_4(0)∪B_4((2,0,0)) has 195 sites
+PASS: reachable every site of the union is reached from both seeds
+PASS: lex-first-meeting lex-first meeting site is (1,0,0) at t=3
+PASS: meeting-cardinality |M| = 1
+PASS: note-records-meeting note records the lex-first meeting site, time, and |M|
+PASS: var-nu midplane population variance under ν matches the reported value
+PASS: var-l1 midplane population variance under ℓ¹ matches the reported value
+PASS: var-nu-smaller var(|v-s0|_2/t0) is strictly smaller under ν than under ℓ¹
+PASS: note-records-variances note records both midplane variances and the comparison
+PASS: not-leftover-one-seed ν midplane includes eight sites off the ℓ¹ plane x=1
+PASS: seed-relative-clauses seed-exit and support drop cost 3 relative to each seed
+PASS: axiom-untouched the axiom memo is an input only and still names the four axioms
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

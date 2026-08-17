@@ -1,0 +1,59 @@
+===== runner cache v1 =====
+runner: scripts/support_drop_why_face_k5_fails_b12_2026_08_15.py
+runner_sha256: 9190422d28164e242ea26fb3138ccee3fe34a28d780ae2a94fbdb85c895a22ce
+input_fingerprint_sha256: 89816ed0755fc6009acbd8a1c0a4570fad1e172519df2201fb4dfa343ce31601
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/SUPPORT_DROP_WHY_FACE_K5_FAILS_B12_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+claim_scope: Lex-first shortest paths to (10,0,0) and (5,5,0) under the named support-drop hop-cost on B_12(0) are named. Displayed, not adopted.
+PASS: audit-input-paths declared inputs are the source note and the current axiom memo
+PASS: audit-input-literal AUDIT_INPUT_PATHS is a static string-literal tuple
+PASS: claim-scope note claim_scope matches the named-paths statement
+PASS: displayed-not-adopted the rule is displayed, not adopted
+PASS: not-in-admissibility ν is not written into Admissibility
+PASS: not-attach-l1 the displayed rule is not attached to L1
+PASS: uniqueness-not-claimed uniqueness among hop-costs is not claimed
+PASS: no-axiom-edit note records hypothetical axiom status no edit
+PASS: forbidden-absent forbidden phrases are absent from the source note
+n_sites 2625
+t(10,0,0) 16
+t(5,5,0) 12
+lex_first_1000 (0,0,0) → (0,-1,0) → (1,-1,0) → (2,-1,0) → (3,-1,0) → (4,-1,0) → (5,-1,0) → (6,-1,0) → (7,-1,0) → (8,-1,0) → (9,-1,0) → (10,-1,0) → (10,0,0)
+hop_costs_1000 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3
+running_1000 [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 16]
+last_hop_1000 (10, -1, 0) -> (10, 0, 0) cost 3
+penult_hop_1000 (9, -1, 0) -> (10, -1, 0) cost 1
+lex_first_550 (0,0,0) → (0,1,0) → (1,1,0) → (1,2,0) → (1,3,0) → (1,4,0) → (1,5,0) → (2,5,0) → (3,5,0) → (4,5,0) → (5,5,0)
+hop_costs_550 3, 1, 1, 1, 1, 1, 1, 1, 1, 1
+running_550 [3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+last_hop_550 (4, 5, 0) -> (5, 5, 0) cost 1
+k5_reverse 256/100 > 144/50 is False
+dijkstra_calls 1
+PASS: one-dijkstra exactly one Dijkstra ran
+PASS: ball-b12 B_12(0) has 2625 sites
+PASS: t-1000 t(10,0,0) on B_12(0) equals 16
+PASS: t-550 t(5,5,0) on B_12(0) equals 12
+PASS: valid-walk-1000 the axis walk is a nearest-neighbor walk in B_12(0) from 0 to (10,0,0)
+PASS: valid-walk-550 the face walk is a nearest-neighbor walk in B_12(0) from 0 to (5,5,0)
+PASS: lex-first-path-1000 the Dijkstra reconstruction is the named lex-first walk to (10,0,0)
+PASS: lex-first-path-550 the Dijkstra reconstruction is the named lex-first walk to (5,5,0)
+PASS: hop-costs-1000 axis hop-costs equal ν on successive sites and sum to 16
+PASS: hop-costs-550 face hop-costs equal ν on successive sites and sum to 12
+PASS: last-hops-make-t last hops are support-drop cost 3 versus face cost 1
+PASS: axis-incoming-cost every in-ball neighbor of (10,0,0) arrives at cost 3
+PASS: face-boundary-last-step (5,5,0) has four cost-1 face neighbors and two cost-3 support-drop neighbors
+PASS: k5-reverse-fails-displayed t(10,0,0)^2 / 100 > t(5,5,0)^2 / 50 fails as a displayed bit
+PASS: lex-first-beats-later-shortest later cost-matching walks exist and are strictly lex-later
+PASS: note-records-paths note records both lex-first sites, hop-costs, running costs, and last hops
+PASS: not-leftover-of-fail8 the walks are not leftover of fail8
+PASS: axiom-untouched the axiom memo is an input only and still names the four axioms
+TOTAL: PASS=27 FAIL=0
+
+----- stderr -----
+

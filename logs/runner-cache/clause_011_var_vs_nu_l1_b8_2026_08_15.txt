@@ -1,0 +1,48 @@
+===== runner cache v1 =====
+runner: scripts/clause_011_var_vs_nu_l1_b8_2026_08_15.py
+runner_sha256: a80699ecadcbb22d66e1507ed27f2e6f72e8c4c90e8e96743f9ab8ac516ac0a8
+input_fingerprint_sha256: 0ffc78cb3bf6286e76c0dc91a593c7fd2d204e33f4775a4ee9a01dda9d1b72eb
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+claim_scope: Arrival-speed variance under (0,1,1), support-drop, and ℓ¹ on B_8(0) is compared. Displayed, not adopted.
+external_scientific_inputs: current Lattice, Admissibility, and Record wording; no observation or fit
+integrity_reads: this runner, its note, and the axiom memo; no other scientific inputs
+construction: three directed Dijkstras on the induced B_8(0) graph
+negative_scope: displayed scores are not adopted and L1 is not attached
+PASS: audit-inputs the two declared source-bound inputs exist
+PASS: audit-tuple-literal AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: source-lattice current cubic nearest-neighbor wording is pinned
+PASS: source-admissibility current local-distribution wording is pinned
+PASS: source-formation-boundary formation site/probability/rate remains outside Admissibility
+PASS: source-record-boundary current lock/content/unreadable-at-absence wording is pinned
+PASS: ball-cardinality B_8(0) has 833 sites and 832 nonzero sites
+PASS: three-dijkstras each named cost reaches every ball site
+PASS: l1-taxicab unit hop-cost arrivals equal the taxicab norm
+Q_(0,1,1) = 1642863107/3329726400
+Q_nu = 1255910253469/4501790092800
+Q_l1 = 55/104
+var_(0,1,1) = 0.008636807122136649
+var_nu = 0.006349675165465741
+var_l1 = 0.011339404956514005
+PASS: second-moments the three exact second moments match the note
+PASS: reported-variances the note reports the three truncated population variances
+PASS: variance-order ν is strictly rounder than (0,1,1), which is strictly rounder than ℓ¹
+lex_first_minimizer = nu
+PASS: lex-first-minimizer the unique and lex-first minimizer is ν
+PASS: cheaper-worse-round the cheaper rival stays worse-round
+PASS: forbidden-phrases note and runner omit the forbidden phrases
+PASS: claim-scope front matter uses the declared claim_scope
+PASS: theorems-displayed three theorems are present and the scores are displayed, not adopted
+PASS: no-admissibility-write the note refuses to write (0,1,1) or ν into Admissibility
+PASS: no-l1-attach the note does not attach L1
+PASS: mutation-unit-as-nu replacing ν by unit cost destroys the reported minimizer
+per_element: checked exactly — each of the 832 nonzero B_8(0) sites receives three arrival times
+per_site: checked exactly — population variance uses |v|_2/t at every nonzero site
+per_mode: checked exactly — three named hop-costs only; no other clause triple is scored
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

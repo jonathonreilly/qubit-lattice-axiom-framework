@@ -1,0 +1,57 @@
+===== runner cache v1 =====
+runner: scripts/corridor_slide_two_seed_meet_b12_2026_08_15.py
+runner_sha256: 2e4b726553acf61329fea083a2a8749fdaba4c015ad3e293cd889f75f124321b
+input_fingerprint_sha256: 4ff4261929719a4207888b0aaaef6d433433c3ec282deafea6c2f6deb605702a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/CORRIDOR_SLIDE_TWO_SEED_MEET_B12_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+claim_scope: Two-seed meeting-set arrival-speed variance under the named corridor-slide hop-cost on B_12(0)∪B_12((2,0,0)) is compared to ℓ¹. Displayed, not adopted.
+PASS: audit-input-paths declared inputs are the source note and the current axiom memo
+PASS: audit-input-literal AUDIT_INPUT_PATHS is a static string-literal tuple
+PASS: claim-scope note claim_scope matches the displayed scoring statement
+PASS: displayed-not-adopted the rule is displayed, not adopted
+PASS: not-in-admissibility μ is not written into Admissibility
+PASS: not-attach-l1 the displayed rule is not attached to L1
+PASS: uniqueness-not-claimed uniqueness among hop-costs is not claimed
+PASS: no-axiom-edit note records hypothetical axiom status no edit
+PASS: forbidden-absent forbidden phrases are absent from the note and runner
+PASS: union-cardinality the executed domain is the 3203-site union B_12(0)∪B_12((2,0,0))
+n_sites 3203
+|E_mu| 713
+meet_mu ((1, 0, 0),)
+t_mu 3
+|M_mu| 1
+|E_l1| 265
+meet_l1 ((1, 0, 0),)
+t_l1 1
+|M_l1| 1
+Q_mu 1/9
+Q_l1 1/1
+var_mu 0
+var_l1 0
+lex_first_minimizer l1
+dijkstra_calls 2
+PASS: two-dijkstras exactly two Dijkstras ran and every union site is reached
+PASS: l1-taxicab unit hop-cost arrivals equal the taxicab norms from each seed
+PASS: meeting-set lex-first μ meeting site is (1,0,0) at t=3 with |M|=1
+PASS: l1-meeting-set lex-first ℓ¹ meeting site is (1,0,0) at t=1 with |M|=1
+PASS: m-not-larger-than-one |M|>1 is false on the B_12 union under μ and under ℓ¹
+PASS: variances both singleton meeting-set arrival-speed variances are 0
+PASS: lex-first-minimizer the lex-first minimizer among the tied scores is ℓ¹
+PASS: note-records-meeting note records the lex-first site, its t, and |M|
+PASS: seed-relative μ is grown from each seed: exit from (2,0,0) costs 3, not the global 1→2 price
+PASS: seed-and-slide-clauses ν clauses and hugging 2→2 cost 3; 1→2 and non-hugging 2→2 cost 1
+PASS: not-leftover-of-l1 μ meeting time is 3 while ℓ¹ meeting time is 1, so the μ score is not a unit-cost leftover
+PASS: not-leftover-of-b6 the B_12 union is larger than the B_6 union and the equal-arrival set grew, but M stayed a singleton
+PASS: source-axioms current Lattice, Admissibility, and Record wording is pinned
+PASS: axiom-untouched the axiom memo is an input only and still names the four axioms
+TOTAL: PASS=24 FAIL=0
+
+----- stderr -----
+

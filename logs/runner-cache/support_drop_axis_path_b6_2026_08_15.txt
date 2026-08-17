@@ -1,0 +1,50 @@
+===== runner cache v1 =====
+runner: scripts/support_drop_axis_path_b6_2026_08_15.py
+runner_sha256: e3b6cf851bded4e46ac844d1e303aec1a6c9cbd6bece85257bec85dab5d74915
+input_fingerprint_sha256: 11ac840a59cecfb39eb9ee79fec5cd54148b6aaf46b02c792959568f926ba112
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: live Lattice / Admissibility / Record sentences only
+integrity_reads: this runner, its note, and the axiom memo; no cache
+construction: named support-drop hop-cost on the six-neighbor graph of B_6(0)
+negative_scope: displayed path is not an Admissibility rule and is not a coordinate-sum law
+ball_size: 377
+lex_path: (0,0,0) → (0,-1,0) → (1,-1,0) → (2,-1,0) → (3,-1,0) → (4,-1,0) → (4,0,0)
+lex_costs: 3, 1, 1, 1, 1, 3
+lex_sum: 10
+axis_path: (0,0,0) → (1,0,0) → (2,0,0) → (3,0,0) → (4,0,0)
+axis_costs: 3, 3, 3, 3
+axis_sum: 12
+n_shortest: 8
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: ball-is-b6 B_6(0) has 377 sites
+PASS: named-rule-seed-exit seed-exit from the origin costs 3
+PASS: named-rule-axis-axis both-weight-1 axis continuation costs 3
+PASS: named-rule-support-drop a coordinate-support drop costs 3
+PASS: named-rule-face-walk a support-raising or equal-face hop costs 1
+PASS: thm1-lex-path lex-first shortest path is the computed site list
+PASS: thm1-hop-costs-sum-10 lex-first hop costs are 3,1,1,1,1,3 and sum to 10
+PASS: thm1-note-exhibits-path note exhibits the computed sites and hop costs
+PASS: thm2-axis-costs-12 on-axis-only path costs 12 and is strictly longer
+PASS: thm2-axis-displayed-not-adopted note displays the axis path and does not adopt it
+PASS: thm3-not-written-into-admissibility ν is not written into Admissibility
+PASS: thm3-do-not-attach-l1 note refuses to attach L1
+PASS: shortest-family-size exactly eight shortest paths, all of cost 10
+PASS: mutation-axis-as-shortest-fails predicate that the axis path is shortest fails
+PASS: forbidden-tokens forbidden tokens are absent from note and runner
+PASS: claim-scope-and-type front matter and type match the exhibited path claim
+PASS: machine-status-contract note carries bounded-support status and no hypothetical axiom
+PASS: n1-n8-gate N1-N8 headings and a passing no-go disposition are present
+PASS: axiom-quotes Lattice nearest-neighbor and Record lock sentences are quoted
+per_element: checked exactly — each displayed hop cost is the named support-drop rule
+per_site: checked exactly — every site of the exhibited walks lies in B_6(0)
+per_mode: checked exactly — lex-first among the eight cost-10 walks is selected
+per_block: checked exactly — axis-only cost 12 is displayed and not adopted
+lattice_wide: checked and not executed — no Admissibility rewrite or whole-lattice law
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

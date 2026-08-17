@@ -1,0 +1,69 @@
+===== runner cache v1 =====
+runner: scripts/support_drop_isochrone_b6_2026_08_15.py
+runner_sha256: 726b43c9c75d2a37b6cf161c3905eefba09c244bd519e33e73467f3da291248f
+input_fingerprint_sha256: f351ea55545868cd2bbd10f90ff895b676da8b0ff5ef0fe7461267313c860727
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/SUPPORT_DROP_ISOCHRONE_B6_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+claim_scope: On B_6(0), the isochrones of the named support-drop hop-cost are reported. Displayed, not adopted.
+external_scientific_inputs: none; B_6(0), G+, and the named support-drop hop-cost are theorem hypotheses
+package_local_integrity_reads: runner source, proposed source note, and live axiom memo
+measure_boundary: exact integer path costs and |v|_2/t on the radius-6 ball
+negative_scope: displayed support-drop isochrones are not written into Admissibility
+n_sites 377
+n_nonzero 376
+n_types 22
+t(4,0,0) 10
+t(2,2,2) 8
+site_type_times: (1, 0, 0)->3(n=6, |v|_2/t=0.333333333333), (1, 1, 0)->4(n=12, |v|_2/t=0.353553390593), (2, 0, 0)->6(n=6, |v|_2/t=0.333333333333), (1, 1, 1)->5(n=8, |v|_2/t=0.346410161514), (2, 1, 0)->5(n=24, |v|_2/t=0.447213595500), (3, 0, 0)->9(n=6, |v|_2/t=0.333333333333), (2, 1, 1)->6(n=24, |v|_2/t=0.408248290464), (2, 2, 0)->6(n=12, |v|_2/t=0.471404520791), (3, 1, 0)->6(n=24, |v|_2/t=0.527046276695), (4, 0, 0)->10(n=6, |v|_2/t=0.400000000000), (2, 2, 1)->7(n=24, |v|_2/t=0.428571428571), (3, 1, 1)->7(n=24, |v|_2/t=0.473803541479), (3, 2, 0)->7(n=24, |v|_2/t=0.515078753638), (4, 1, 0)->7(n=24, |v|_2/t=0.589015089374), (5, 0, 0)->11(n=6, |v|_2/t=0.454545454545), (2, 2, 2)->8(n=8, |v|_2/t=0.433012701892), (3, 2, 1)->8(n=48, |v|_2/t=0.467707173347), (3, 3, 0)->8(n=12, |v|_2/t=0.530330085890), (4, 1, 1)->8(n=24, |v|_2/t=0.530330085890), (4, 2, 0)->8(n=24, |v|_2/t=0.559016994375), (5, 1, 0)->8(n=24, |v|_2/t=0.637377439199), (6, 0, 0)->14(n=6, |v|_2/t=0.428571428571)
+shells: t=3:types=[(1, 0, 0)]:r2=[1]:single=True, t=4:types=[(1, 1, 0)]:r2=[2]:single=True, t=5:types=[(1, 1, 1), (2, 1, 0)]:r2=[3, 5]:single=False, t=6:types=[(2, 0, 0), (2, 1, 1), (2, 2, 0), (3, 1, 0)]:r2=[4, 6, 8, 10]:single=False, t=7:types=[(2, 2, 1), (3, 1, 1), (3, 2, 0), (4, 1, 0)]:r2=[9, 11, 13, 17]:single=False, t=8:types=[(2, 2, 2), (3, 2, 1), (3, 3, 0), (4, 1, 1), (4, 2, 0), (5, 1, 0)]:r2=[12, 14, 18, 20, 26]:single=False, t=9:types=[(3, 0, 0)]:r2=[9]:single=True, t=10:types=[(4, 0, 0)]:r2=[16]:single=True, t=11:types=[(5, 0, 0)]:r2=[25]:single=True, t=14:types=[(6, 0, 0)]:r2=[36]:single=True
+n_t_values 10
+n_single_radius_shells 6
+n_mixed_radius_shells 4
+var_nu 0.00590563902870
+var_l1 0.01350203761919
+dijkstra_calls 1
+PASS: audit-input-paths declared inputs are the source note and the current axiom memo
+PASS: audit-input-literal AUDIT_INPUT_PATHS is a static string-literal tuple
+PASS: claim-scope note claim_scope matches the displayed isochrone statement
+PASS: gplus-order proper cubic rotations number 24
+PASS: one-dijkstra exactly one Dijkstra ran
+PASS: ball-b6 B_6(0) has 377 sites and 376 nonzero sites
+PASS: reachable every site of B_6(0) is reached
+PASS: thm1-type-count B_6(0)\{0} has 22 G+ site-types
+PASS: thm1-orbit-sizes each G+ site-type has the expected orbit size
+PASS: thm1-type-constant arrival time is constant on each G+ site-type
+PASS: thm1-axis-diag-times t(4,0,0)=10 and t(2,2,2)=8
+PASS: thm1-all-type-times each of the 22 G+ site-types has the reported arrival time
+PASS: thm1-note-times the note records t(4,0,0)=10, t(2,2,2)=8, and every type time
+PASS: thm1-note-ratios the note reports |v|_2/t for each of the 22 site-types
+PASS: thm1-gplus-action G+ acts and preserves both type and arrival time
+PASS: thm1-shells-not-all-single t=const shells are not all single Euclidean radii
+PASS: thm1-note-shells the note reports the mixed t=5,6,7,8 shells and the six single-radius shells
+PASS: thm2-var-nu population variance under ν equals the noshrt figure
+PASS: thm2-var-l1 population variance under ℓ¹ matches the noshrt comparator
+PASS: thm2-var-below var(|v|_2/t) is strictly below ℓ¹
+PASS: thm2-vars-in-note the note records both variances and the comparison
+PASS: thm3-displayed-not-adopted the rule is displayed, not adopted
+PASS: thm3-not-attach-l1 the displayed rule is not attached to L1
+PASS: no-axiom-edit note records hypothetical axiom status no edit
+PASS: not-two-point-leftover the isochrone report is not leftover of the two-point 10 and 8 times
+PASS: forbidden-absent forbidden phrases are absent from the source note and runner
+PASS: axiom-untouched the axiom memo is an input only and still names the four axioms
+PASS: claim-type-and-gate bounded theorem type and a passing N1-N8 gate are source-visible
+PASS: scored-ball-only the note scores the comparison on B_6(0) only
+per_element: checked exactly — each directed B_6(0) edge carries one support-drop hop cost
+per_site: checked exactly — t(v) and |v|_2/t(v) on each of the 376 nonzero sites
+per_mode: checked exactly — 22 G+ site-types and the 10 arrival shells
+per_block: checked exactly — population variance of |v|_2/t on B_6(0)\{0}
+lattice_wide: checked and not executed — no Admissibility cost and no L1 attachment are adopted
+TOTAL: PASS=29 FAIL=0
+
+----- stderr -----
+

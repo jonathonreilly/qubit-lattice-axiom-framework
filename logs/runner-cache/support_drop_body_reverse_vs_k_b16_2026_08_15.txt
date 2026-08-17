@@ -1,0 +1,66 @@
+===== runner cache v1 =====
+runner: scripts/support_drop_body_reverse_vs_k_b16_2026_08_15.py
+runner_sha256: b42281d29ef4189f5a3186c172a8dd79fce1e3c98db835d3da06fab606333e40
+input_fingerprint_sha256: 0980346b82eecf206159276c314a5dcf8005301d637b6d22dad606abe41ce812
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/SUPPORT_DROP_BODY_REVERSE_VS_K_B16_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+dijkstra_count_budget: 1
+claim_scope: Body-diagonal reverse versus integer scale k under the named support-drop hop-cost on B_16(0) is reported for k=1..5. Displayed, not adopted.
+PASS: audit-input-paths declared inputs are exactly the source note and the axiom memo
+PASS: audit-input-literals AUDIT_INPUT_PATHS is a static two-string literal in this runner
+PASS: ball-cardinality B_16(0) has 6017 sites and 6016 nonzero sites
+PASS: one-dijkstra exactly one Dijkstra computation is used
+PASS: finite-times every target is reached by a finite path
+arrival_times:
+  t(2, 0, 0)=6  t^2/|v|_2^2=36/4
+  t(1, 1, 1)=5  t^2/|v|_2^2=25/3
+  t(4, 0, 0)=10  t^2/|v|_2^2=100/16
+  t(2, 2, 2)=8  t^2/|v|_2^2=64/12
+  t(6, 0, 0)=12  t^2/|v|_2^2=144/36
+  t(3, 3, 3)=11  t^2/|v|_2^2=121/27
+  t(8, 0, 0)=14  t^2/|v|_2^2=196/64
+  t(4, 4, 4)=14  t^2/|v|_2^2=196/48
+  t(10, 0, 0)=16  t^2/|v|_2^2=256/100
+  t(5, 5, 5)=17  t^2/|v|_2^2=289/75
+PASS: time-200 computed t(2,0,0)=6 is written in the note
+PASS: time-400 computed t(4,0,0)=10 is written in the note
+PASS: time-600 computed t(6,0,0)=12 is written in the note
+PASS: time-800 computed t(8,0,0)=14 is written in the note
+PASS: time-1000 computed t(10,0,0)=16 is written in the note
+PASS: time-111 computed t(1,1,1)=5 is written in the note
+PASS: time-222 computed t(2,2,2)=8 is written in the note
+PASS: time-333 computed t(3,3,3)=11 is written in the note
+PASS: time-444 computed t(4,4,4)=14 is written in the note
+PASS: time-555 computed t(5,5,5)=17 is written in the note
+reverse_bits:
+  k=1 (2, 0, 0) vs (1, 1, 1): reverse=True (12*36=432 vs 16*25=400)
+PASS: reverse-k1 k=1 reverse bit is True and the comparison is written
+  k=2 (4, 0, 0) vs (2, 2, 2): reverse=True (12*100=1200 vs 16*64=1024)
+PASS: reverse-k2 k=2 reverse bit is True and the comparison is written
+  k=3 (6, 0, 0) vs (3, 3, 3): reverse=False (12*144=1728 vs 16*121=1936)
+PASS: reverse-k3 k=3 reverse bit is False and the comparison is written
+  k=4 (8, 0, 0) vs (4, 4, 4): reverse=False (12*196=2352 vs 16*196=3136)
+PASS: reverse-k4 k=4 reverse bit is False and the comparison is written
+  k=5 (10, 0, 0) vs (5, 5, 5): reverse=False (12*256=3072 vs 16*289=4624)
+PASS: reverse-k5 k=5 reverse bit is False and the comparison is written
+PASS: bits-yes-yes-no-no-no reverse holds at k=1,2 and fails at k=3,4,5
+PASS: not-b12-leftover the k=5 pair is not leftover of the B_12(0) bodyk table
+PASS: source-lattice Lattice nearest-neighbor wording is pinned in the axiom memo and the note
+PASS: source-admissibility Admissibility distribution wording and non-dynamics clause are pinned
+PASS: nu-not-admissibility the note refuses to write nu into Admissibility
+PASS: not-attach-l1 the displayed rule is not attached to L1
+PASS: displayed-not-adopted claim_scope and displayed-not-adopted wording are present
+PASS: forbidden-phrases forbidden phrases are absent from the note and from runner prose
+PASS: pair-reverse-bits the five declared scales have the displayed reverse bits
+PASS: axiom-untouched the axiom memo is an input only
+TOTAL: PASS=30 FAIL=0
+
+----- stderr -----
+

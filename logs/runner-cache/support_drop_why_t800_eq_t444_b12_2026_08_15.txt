@@ -1,0 +1,62 @@
+===== runner cache v1 =====
+runner: scripts/support_drop_why_t800_eq_t444_b12_2026_08_15.py
+runner_sha256: 795f8be8b9bf41d8fd83aebb7a9dbd88840cfcea3ddbb7fba35a6a11740bdd24
+input_fingerprint_sha256: b1239cc2787af7761898e413a5ea2baa251328705af4d5b09396c9830868e131
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/SUPPORT_DROP_WHY_T800_EQ_T444_B12_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+claim_scope: Lex-first shortest paths to (8,0,0) and (4,4,4) under the named support-drop hop-cost on B_12(0) are named. Displayed, not adopted.
+PASS: audit-input-paths declared inputs are the source note and the current axiom memo
+PASS: audit-input-literal AUDIT_INPUT_PATHS is a static string-literal tuple
+PASS: claim-scope note claim_scope matches the named-path statement
+PASS: displayed-not-adopted the rule is displayed, not adopted
+PASS: not-in-admissibility ν is not written into Admissibility
+PASS: not-attach-l1 the displayed rule is not attached to L1
+PASS: uniqueness-not-claimed uniqueness among hop-costs is not claimed
+PASS: no-axiom-edit note records hypothetical axiom status no edit
+PASS: forbidden-absent forbidden phrases are absent from the source note
+n_sites 2625
+t(8,0,0) 14
+t(4,4,4) 14
+lex_first_path_800 (0,0,0) → (0,-1,0) → (1,-1,0) → (2,-1,0) → (3,-1,0) → (4,-1,0) → (5,-1,0) → (6,-1,0) → (7,-1,0) → (8,-1,0) → (8,0,0)
+lex_first_path_444 (0,0,0) → (0,0,1) → (0,1,1) → (0,1,2) → (0,1,3) → (0,1,4) → (0,2,4) → (0,3,4) → (0,4,4) → (1,4,4) → (2,4,4) → (3,4,4) → (4,4,4)
+hop_costs_800 3, 1, 1, 1, 1, 1, 1, 1, 1, 3
+hop_costs_444 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
+running_cost_800 3, 4, 5, 6, 7, 8, 9, 10, 11, 14
+running_cost_444 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14
+both_equal_14 True
+equalizing_hop (8, -1, 0) -> (8, 0, 0)
+dijkstra_calls 1
+PASS: one-dijkstra exactly one Dijkstra ran
+PASS: ball-b12 B_12(0) has 2625 sites
+PASS: t-800 t(8,0,0) on B_12(0) equals 14
+PASS: t-444 t(4,4,4) on B_12(0) equals 14
+PASS: both-equal-14 both running-cost sequences terminate at 14
+PASS: valid-walk-800 the axis walk is a nearest-neighbor walk in B_12(0) from 0 to (8,0,0)
+PASS: valid-walk-444 the body-diagonal walk is a nearest-neighbor walk in B_12(0) from 0 to (4,4,4)
+PASS: hop-costs-800 axis hop-costs equal ν on successive sites and sum to 14
+PASS: hop-costs-444 body-diagonal hop-costs equal ν on successive sites and sum to 14
+PASS: shortest-both each walk cost equals the Dijkstra arrival, so both walks are shortest
+PASS: lex-first-800 the Dijkstra reconstruction is the named lex-first axis site sequence
+PASS: lex-first-444 the Dijkstra reconstruction is the named lex-first body-diagonal site sequence
+PASS: equalizing-hop the hop that equalizes the arrivals is (8,-1,0) -> (8,0,0)
+PASS: lex-first-beats-later-800 a later cost-14 axis walk exists and is strictly lex-later
+PASS: lex-first-beats-later-444 a later cost-14 body-diagonal walk exists and is strictly lex-later
+PASS: lex-smaller-is-not-shortest-800 a lex-smaller axis walk that starts toward -x costs more than 14
+PASS: lex-smaller-is-not-shortest-444 a lex-smaller body-diagonal walk that starts toward -z costs more than 14
+PASS: note-records-paths note records both lex-first sites and hop-costs
+PASS: note-records-running note records both running-cost sequences
+PASS: note-records-equalizing-hop note records the hop that equalizes the arrivals
+PASS: not-leftover-of-shared-shell the walks are not leftover of the shared-shell bit
+PASS: seed-and-drop-clauses seed-exit and support-drop cost 3; support increase costs 1
+PASS: axiom-untouched the axiom memo is an input only and still names the four axioms
+TOTAL: PASS=32 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,56 @@
+===== runner cache v1 =====
+runner: scripts/unequal_radius_tick_order_stab_2026_08_15.py
+runner_sha256: 4eb5d3e3cbe148f28f95f64c85434184a02d5d547568643b3503f14da74f0f99
+input_fingerprint_sha256: f077c28fb500ef1737fb12bd5991c46c47dcc95b959b49672e39ffa9df3bec3d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+unequal-radius pairwise lock-tick order occupancy Stab
+AUDIT_INPUT_PATHS:
+  docs/UNEQUAL_RADIUS_TICK_ORDER_STAB_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+G_plus=24
+uneq_unread=True
+uneq_sigma=(1, 0, 1, 0, 1, 1)
+uneq_ticks=(1, None, 1, None, 3, 2)
+order=[(0, 4), (0, 5), (2, 4), (2, 5), (5, 4)]
+order_named={(+x,+z), (+x,-z), (+y,+z), (+y,-z), (-z,+z)}
+|Stab(sigma)|=2
+|Stab(sigma,t)|=1
+|Stab(sigma,prec)|=1
+first_breaker=(((-2, -2, -2), (-2, -2, -1), (-2, -2, 1)), (2, 1, 3), (-3, -3, -1))
+N_pair=48
+N_pair_support=4
+N_ord_ok=4
+N_tick_ok=4
+support_members=(1, 0, 2, 0, 1, 2),(1, 0, 2, 0, 2, 1),(2, 0, 1, 0, 1, 2),(2, 0, 1, 0, 2, 1)
+PASS: audit-input-paths | AUDIT_INPUT_PATHS is the required static two-string literal tuple
+PASS: source-lattice
+PASS: source-admissibility
+PASS: source-unread-qubit
+PASS: g-plus-order | proper=24
+PASS: theorem-1-lex-first-breaker | sigma=(1, 0, 1, 0, 1, 1) ticks=(1, None, 1, None, 3, 2)
+PASS: theorem-1-list-order | order=[(0, 4), (0, 5), (2, 4), (2, 5), (5, 4)]
+PASS: theorem-1-stab-orders | stab=2 tick=1 ord=1
+PASS: theorem-1-swapper-breaks-order
+PASS: theorem-2-ord-ok | N_ord_ok=4 N_tick_ok=4
+PASS: claim-scope
+PASS: displayed-not-adopted
+PASS: l1-not-attached
+PASS: not-leftover-uneqext
+PASS: admissibility-unedited
+PASS: forbidden-phrases
+PASS: no-axiom-edit
+per_element: |Stab(σ)|, |Stab(σ,t)|, |Stab(σ,≺)|, N_ord_ok are exact integers
+per_site: uneqrad lex-first unequal-radius breaker only
+per_mode: no spectral calculation
+per_block: 3-ball star only
+lattice_wide: checked and not executed
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

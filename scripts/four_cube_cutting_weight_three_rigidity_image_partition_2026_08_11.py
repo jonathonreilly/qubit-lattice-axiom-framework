@@ -1,30 +1,20 @@
-"""Physical cell cutting: the top two weights are rigid, and an image label separates the twin.
+"""Finite four-cube weight-three rigidity and image-subspace partitions.
 
-Standalone exact runner. It rebuilds the unit four-cube cell object from scratch: the sixteen corners, the five-corner
-unit-determinant pieces at the adjacency cost floor, the cuttings by them, the 192 pieces that occur, and the 192
-eight-piece covers. The group of 384 signed coordinate maps, built by permuting the four coordinates and flipping any
-of them, acts freely on the 36864 pairs of a piece and a cover, giving 96 orbits of size 384, each read as a zero and
-one table over covers by pieces. The tables are pairwise disjoint and sum to the all-ones table, so every 4-subset of
-them is a zero-one 8-regular member of a family of 3321960; the cover incidence is one member, the cycle 773 twin another.
+The runner reconstructs one declared finite object from the sixteen vertices of
+the unit four-cube.  Its mathematical gates use exact integer and rational
+arithmetic plus the two named finite fields.  A shifted rational sample first
+enumerates candidate 24-simplex covers; an exact rational pair certificate then
+proves interior disjointness for every co-occurring simplex pair.  Unit volumes
+therefore promote the selected sample covers to geometric cuttings.
 
-The sixteen pure flips act freely on the 192 pieces with 12 orbits, so each of the 16 sign patterns of the four axes
-carries a piece-side block of dimension 12, and the 16 blocks fill all 192 piece coordinates. This cycle 775 run asks
-what those blocks force. At the all-signs pattern every table dies. At each weight-3 pattern every table has rank 6,
-one and the same image, and one of exactly two kernels of dimension 6, which meet in 0 and are named by the cycle 772
-colour. A sum of four tables therefore has rank at most 6 there, and when exactly one of the four carries the minority
-colour the rank is exactly 6: the lone-minority theorem, proved here in prose and checked on a deterministic sweep of
-1056 members. Both the cover incidence and the twin are lone-minority members, so the whole excess of one table over
-the incidence, 39 dimensions, sits at weights 0, 1 and 2.
-
-The cover side supplies the reason the top is rigid. Each cover is held by a single axis flip, so the cover-side block
-of a weight-w pattern has dimension six times four less w; a table carries block into block, dies where that dimension
-is 0, and fills it where it is 6. What the top weights cannot do is separate the incidence from the twin: the image of
-a table at a weight-1 pattern gives a label with six values whose fibres over the weight-0 label hold two values each,
-the twin carries the fibre swap of the incidence multiset, and 30720 of the 3321960 members carry that multiset.
-
-All work is exact over the integers and two fixed primes; no floating point enters any gate and no constant is fitted.
-Of the 35 gates, three are rejectors, six are honest negatives, and one gate is both. Output: one line per gate, three
-extra measurement lines, one summary line, a resource line, then the total line."""
+The 384 signed coordinate maps give 96 zero-one orbit tables.  Sixteen flip
+characters decompose the piece and cover coordinates.  Over F_1000003 the
+weight-three restrictions share one six-dimensional image and have two
+complementary six-dimensional kernel classes of size 48.  The runner checks the
+lone-minority rank lemma, the incidence and deterministic index-order comparator,
+and the equality partitions of image subspaces.  Numeric class labels are assigned
+by first appearance and carry only convention-level meaning.  Rank profiles are
+also corroborated over F_1000033.  Every gate is fail-closed."""
 
 import itertools
 import sys
@@ -35,6 +25,7 @@ import numpy as np
 
 PRIME = 1000003
 PRIME2 = 1000033
+AUDIT_TIMEOUT_SEC = 300
 
 T0 = time.time()
 OUT = [0]
@@ -42,8 +33,6 @@ OUT = [0]
 
 def emit(s):
     txt = "{0}".format(s)
-    if ("9" + "9") in txt:
-        raise ValueError("barred digit pair in output")
     if len(txt) > 149:
         raise ValueError("line over the length limit")
     OUT[0] += len(txt) + 1
@@ -64,11 +53,8 @@ def gate(ok, tag, msg):
 
 
 def nd(x):
-    """a printed number never carries a doubled nine; emit bars that digit run"""
-    s = str(x)
-    if ("9" + "9") in s:
-        return " ".join(s)
-    return s
+    """Stable decimal formatting for measured integer values."""
+    return str(x)
 
 
 def popc(x):
@@ -255,7 +241,98 @@ FULLC = (1 << NS) - 1
 PCSET = sorted(set(PCN))
 
 # ------------------------------------------------------------------
-# 1d. the covers: eight pieces, pairwise never in a common cutting
+# 1d. exact interior disjointness for every co-occurring pair
+# ------------------------------------------------------------------
+
+
+def solve4(rows):
+    """Solve a four-by-four rational system in augmented-row form."""
+    M = [[FR(x) for x in r] for r in rows]
+    for c in range(4):
+        p = next((r for r in range(c, 4) if M[r][c] != 0), -1)
+        if p < 0:
+            return None
+        M[c], M[p] = M[p], M[c]
+        pv = M[c][c]
+        M[c] = [x / pv for x in M[c]]
+        for r in range(4):
+            if r != c and M[r][c] != 0:
+                f = M[r][c]
+                M[r] = [M[r][k] - f * M[c][k] for k in range(5)]
+    return [M[r][4] for r in range(4)]
+
+
+def afrank(pts):
+    """Affine dimension of a finite set of exact rational points."""
+    if not pts:
+        return -1
+    base = pts[0]
+    rows = [[FR(p[r]) - FR(base[r]) for r in range(4)] for p in pts[1:]]
+    rk = 0
+    for c in range(4):
+        p = next((i for i in range(rk, len(rows)) if rows[i][c] != 0), -1)
+        if p < 0:
+            continue
+        rows[rk], rows[p] = rows[p], rows[rk]
+        pv = rows[rk][c]
+        for i in range(rk + 1, len(rows)):
+            if rows[i][c] != 0:
+                f = rows[i][c] / pv
+                rows[i] = [rows[i][k] - f * rows[rk][k] for k in range(4)]
+        rk += 1
+    return rk
+
+
+def side(a, b, x):
+    return sum(a[r] * x[r] for r in range(4)) + b
+
+
+def sep_facet(r1, p1, r2, p2):
+    """Return true when a facet form weakly separates the two simplices."""
+    for a, b in r1:
+        if max(side(a, b, x) for x in p2) <= 0:
+            return True
+    for a, b in r2:
+        if max(side(a, b, x) for x in p1) <= 0:
+            return True
+    return False
+
+
+def inter_dim(r1, r2):
+    """Affine dimension of the intersection polytope from exact vertices."""
+    con = list(r1) + list(r2)
+    pts = []
+    for idx in itertools.combinations(range(10), 4):
+        x = solve4([list(con[i][0]) + [-con[i][1]] for i in idx])
+        if x is None:
+            continue
+        if all(side(a, b, x) >= 0 for a, b in con):
+            tx = tuple(x)
+            if tx not in pts:
+                pts.append(tx)
+    return afrank(pts)
+
+
+GEOM_PAIRS = [(i, j) for i in range(NPI) for j in range(i + 1, NPI)
+              if PC[i] & PC[j]]
+NGEOM_PAIR = len(GEOM_PAIRS)
+NFAC = 0
+NDIM = {}
+DISJ_OK = True
+PTS = [tuple(CORN[c] for c in S) for S in KEPT]
+for i, j in GEOM_PAIRS:
+    r1 = BARY[USED[i]][2]
+    r2 = BARY[USED[j]][2]
+    if sep_facet(r1, PTS[USED[i]], r2, PTS[USED[j]]):
+        NFAC += 1
+        continue
+    dim = inter_dim(r1, r2)
+    NDIM[dim] = NDIM.get(dim, 0) + 1
+    if dim >= 4:
+        DISJ_OK = False
+
+# ------------------------------------------------------------------
+# 1e. the covers: eight pieces, pairwise never in a common cutting
 # ------------------------------------------------------------------
 
 NONCO = [0] * NPI
@@ -710,7 +787,7 @@ def nullbasis(X, p):
 
 
 # ------------------------------------------------------------------
-# 6. the four parts, the twin, and the block arithmetic they share
+# 6. the incidence parts, index-order comparator, and shared block arithmetic
 # ------------------------------------------------------------------
 
 IPARTS = sorted(IORB)
@@ -746,8 +823,11 @@ def meetdim(K1, K2, p):
 
 
 def labels(s, p):
-    """The image label of each of the 96 orbits at sign pattern s, numbered by
-    first appearance along the orbit order."""
+    """Convention-level numbers for the invariant image-subspace partition.
+
+    The numbers are assigned by first appearance in deterministic orbit order;
+    only equality, fibre, and class-size relations are scientific content.
+    """
     d = {}
     out = []
     for k in range(NORB):
@@ -1160,20 +1240,24 @@ UNDER = [w for w in range(5) if SP1[w] < CDW[w]]
 gate(NCAND == 2672 and NKEPT == 400 and FLOOR == 6 and NS == 15800
      and SIZES == [24] and NPI == 192 and PCSET == [1975] and GENERIC
      and NSLOT == 379200 and NSLOT2 == NSLOT and NCOV == 192 and BRS == [8]
-     and COVEXACT, "F0",
-     "{0} unit-determinant subsets, {1} at cost floor {2}, {3} cuttings of {4}, {5} pieces in {6} each, {7} slots, {5} covers of {8}".format(
-         nd(NCAND), nd(NKEPT), nd(FLOOR), nd(NS), nd(SIZES[0]), nd(NPI),
-         nd(PCSET[0]), nd(NSLOT), nd(BRS[0])))
+     and COVEXACT and NGEOM_PAIR == 15168 and NFAC == 13632
+     and NDIM == {0: 864, 1: 672} and DISJ_OK, "F0",
+     "object {0}/{1}/{2}: {3} geometric cuttings, {4} pieces, {5} covers; pair certificate {6}+{7}+{8}".format(
+         nd(NCAND), nd(NKEPT), nd(FLOOR), nd(NS), nd(NPI), nd(NCOV),
+         nd(NFAC), nd(NDIM.get(0, 0)), nd(NDIM.get(1, 0))))
 
 gate(NORB == 96 and TNZ == [384] and OVLP == 0 and np.array_equal(TSUM, ONES)
      and FILL == NCOV * NPI and FILL == 36864 and NFAM == 3321960
      and IRC == [[0, 1], [8], [8]] and TRC == [[0, 1], [8], [8]]
-     and np.array_equal(INC, INCS) and len(IPARTS) == 4, "F1",
-     "{0} tables of {1} entries, pairwise disjoint, summing to the all-ones table ({2}); {3} members, the incidence one of them".format(
-         nd(NORB), nd(TNZ[0]), nd(FILL), nd(NFAM)))
+     and np.array_equal(INC, INCS) and len(IPARTS) == 4
+     and GDISTINCT and CLOSED and KEEPS and PBIJ and PDIST and PIDOK
+     and len(ORBP) == NPI and COVKEEP and CBIJ and CDIST and len(ORBC) == NCOV
+     and OSZ == [384] and FSTAB == {1} and TRS == {2} and TCS == {2}, "F1",
+     "{0} closed maps give {1} free pair orbits and degree-two tables partitioning {2} entries".format(
+         nd(NGRP), nd(NORB), nd(FILL)))
 
 gate(CSIZE == [1, 4, 6, 4, 1] and BSHP == [(12, NPI)] and BDIM == [12]
-     and BSTK == [192, 192], "F2",
+     and BSTK == [192, 192] and AXOK and FLPFREE and SANTI and TINV, "F2",
      "the {0} sign patterns have weight sizes {1}, each piece-side block has {2} rows of rank {2}, and stacked they reach {3}, both primes".format(
          nd(16), nd(CSIZE), nd(12), nd(BSTK[0])))
 
@@ -1198,7 +1282,7 @@ gate(KRN == [2, 2, 2, 2] and KRSZ == [[48, 48]] * 4 and sorted(KRD) == [6]
          nd(3), nd(KRN[0]), nd(sorted(KRD)[0]), nd(KRSZ[0])))
 
 gate(PRC == [2, 2, 2, 2] and min(PRD) > 2 and PRD == [4, 4, 4, 4], "F7",
-     "rejector: kernel class against colour gives {0} pairs at every weight-{1} pattern, against the colour shifted by one orbit {2}".format(
+     "control: kernel class against the full-table kernel class gives {0} pairs; the shifted assignment gives {2}".format(
          nd(PRC[0]), nd(3), nd(PRD[0])))
 
 gate(KMEET == [0, 0, 0, 0] and KSTK == [12, 12, 12, 12]
@@ -1220,30 +1304,28 @@ gate(N31 == 538 and FAIL31 == 0 and N31 + N22 + NSAME == NMEM
 
 gate(N22 == 369 and sorted(H22) != [6] and 6 in H22 and min(H22) < 6
      and sum(H22.values()) == N22 * len(W3P), "F11",
-     "rejector: the {0} even-split members give weight-{1} ranks {2}, so an even split does not force rank {3}".format(
+     "control: the {0} even-split sweep members realize weight-{1} ranks {2}, including rank {3}".format(
          nd(N22), nd(3), hstr(H22), nd(6)))
 
 gate(CN == [48, 48] and FSAME == 389160 and FLONE == 1660416
      and FTWO == 1272384 and FTOT == NFAM and FLONE < NFAM, "F12",
-     "honest negative: colour classes {0} and {0} give {1} same-colour, {2} lone-minority and {3} even-split members, total {4}".format(
+     "kernel classes {0} and {0} give {1} same-class, {2} lone-minority and {3} even-split members, total {4}".format(
          nd(CN[0]), nd(FSAME), nd(FLONE), nd(FTWO), nd(FTOT)))
 
 gate(ICOL == [0, 0, 0, 1] and TCOL == [0, 1, 1, 1] and IMAJ != TMAJ
      and sum(ICOL) in (1, 3) and sum(TCOL) in (1, 3), "F13",
-     "the incidence parts have colours {0} and the twin parts {1}: both are lone-minority members, with different majorities".format(
+     "the incidence parts have kernel classes {0}; the index-order comparator has {1}; both are lone-minority".format(
          nd(ICOL), nd(TCOL)))
 
 gate(W3TRIP == [(6, 6, 0)] and len(W3TRIP) == 1, "F14",
-     "honest negative: at all {0} weight-{1} patterns the two kernels are {2} and {2}"
-     " meeting in {3}; the theorem gives {2} each, not the meet".format(
+     "at all {0} weight-{1} patterns the two named members have kernels of dimension {2} meeting in {3}".format(
          nd(len(W3P)), nd(3), nd(6), nd(0)))
 
 gate(TCON and PF == [(9, 9, 3), (9, 9, 0), (6, 6, 3), (6, 6, 0), (0, 0, 12)]
      and RKI == 105 and RKT == 105 and MTOT == 33 and P2I[1] and P2T[1]
      and P2I[0] == [9, 9, 6, 6, 0] and P2T[0] == [9, 9, 6, 6, 0]
      and P2I[2] == RKI and P2T[2] == RKT, "F15",
-     "per weight the two ranks and their kernel meet are {0}, class-constant,"
-     " recomposing to {1} and {1} with meet {2}".format(
+     "at F_1000003 the rank/meet profile is {0}; both rank profiles recompose to {1}; first-prime meet {2}".format(
          tl(PF), nd(RKI), nd(MTOT)))
 
 gate(SPF == set([(12, 12, 10, 6, 0)]) and SCON and DROP == [3, 3, 4, 0, 0]
@@ -1275,14 +1357,14 @@ gate(FIBOK and FSZ == [2, 2, 2] and len(INV) == 3 and NOFIX
      "the weight-{0} label fixes the weight-{1} label and each of the {2} fibres holds {3} values: {4}".format(
          nd(1), nd(0), nd(len(INV)), nd(FSZ[0]), FIBTXT))
 
-gate(ONELAB and ONEIM and ONETM and IMS[0] == (0, 0, 1, 2)
-     and TMS[0] == (3, 4, 5, 5) and DISJ, "F21",
-     "the {0} weight-{1} patterns give one and the same label; the incidence parts carry {2} and the twin parts {3}, disjoint".format(
-         nd(len(W1P)), nd(1), nd(list(IMS[0])), nd(list(TMS[0]))))
+gate(ONELAB and ONEIM and ONETM and DISJ
+     and sorted(hist(IMS[0]).values()) == [1, 1, 2]
+     and sorted(hist(TMS[0]).values()) == [1, 1, 2], "F21",
+     "all {0} weight-{1} patterns give disjoint incidence/comparator class multisets with multiplicities 2/1/1".format(
+         nd(len(W1P)), nd(1)))
 
 gate(SWIM == TMS[0] and SWIM != IMS[0], "F22",
-     "swapping each incidence label for its partner in the fibre gives {0}, exactly the twin multiset {1}".format(
-         nd(list(SWIM)), nd(list(TMS[0]))))
+     "the two-value fibre involution carries the incidence class multiset to the comparator class multiset")
 
 gate(NARR == NBRU and NARR == 30720 and PPT == 9 and NARR < NFAM
      and NBRU > 0, "F23",
@@ -1291,41 +1373,42 @@ gate(NARR == NBRU and NARR == 30720 and PPT == 9 and NARR < NFAM
 
 gate(NSW == 368 and SWKEEP == SWFORM and SWKEEP == 58 and 0 < SWKEEP < NSW,
      "F24",
-     "rejector: of the {0} one-part replacements only {1} keep the label multiset, by count and by class sizes alike, so the label moves".format(
+     "control: {1} of {0} one-part replacements preserve the incidence class multiset, by two counts".format(
          nd(NSW), nd(SWKEEP)))
 
 gate(DET[0] == 0 and DET[2] == 0 and 0 < DET[1] < GRP[1]
      and GRP == [15, 123, 15] and IGSZ == 13, "F25",
-     "honest negative: the multiset fixes the sum rank in {0} of {1}, {2} of {3},"
-     " {4} of {5} groups by weight; incidence group of {6} gives {7}".format(
+     "within the {8}-member sweep, fixed-rank groups are {0}/{1}, {2}/{3}, {4}/{5}; incidence group {6}: {7}".format(
          nd(DET[0]), nd(GRP[0]), nd(DET[1]), nd(GRP[1]), nd(DET[2]),
-         nd(GRP[2]), nd(IGSZ), hstr(IHIST)))
+         nd(GRP[2]), nd(IGSZ), hstr(IHIST), nd(NMEM)))
 
 gate(PRI == PRT and PCI == PCT and NPAIRS == 18336
      and sum(PCI.values()) == NPAIRS, "F26",
-     "honest negative: of {0} pairs rows overlap {1} and columns {2};"
-     " the twin the same".format(
-         nd(NPAIRS), hstr(PRI), hstr(PCI)))
+     "incidence and comparator share both pair-count histograms across all {0} pairs".format(
+         nd(NPAIRS)))
 
 gate(GSTK == 24 and GSTK > 6 and GDIM == [6] and len(GIM) == 4, "F27",
-     "honest negative: the {0} common weight-{1} images, each of dimension {2}, stack to rank {3}, so the rigidity is one pattern at a time".format(
+     "the {0} weight-{1} common images each have dimension {2} and jointly have rank {3}".format(
          nd(len(GIM)), nd(3), nd(GDIM[0]), nd(GSTK)))
 
 gate(NARR > NSW and set(TMS[0]) & set(IMS[0]) == set() and NARR == 30720
      and NARR < NFAM, "F28",
-     "honest negative: the label puts the twin outside the {0} members sharing the incidence multiset, and {0} is far from {1}".format(
-         nd(NARR), nd(1)))
+     "the incidence class multiset has {0} family members; comparator and incidence class sets are disjoint".format(
+         nd(NARR)))
 
 gate(PFIX == [0] and PORB == 12 and PORBSZ == [16]
      and CORBSZ == [8] and CSTAB == [2] and len(CREP) == 24
-     and sorted(CFIX) == [1] and CPURE, "F29",
+     and sorted(CFIX) == [1] and CPURE and PNAX == {2}
+     and np.array_equal(ISUM, INC), "F29",
      "the {0} flips fix {1} pieces bar the identity, giving {2} piece orbits of {3}; on"
      " covers, {4} orbits of {5}, every stabiliser of order {6}".format(
          nd(NFL), nd(PFIX[0]), nd(PORB), nd(PORBSZ[0]), nd(len(CREP)),
          nd(CORBSZ[0]), nd(CSTAB[0])))
 
 gate(CMKEY == [1, 2, 4, 8] and CMSZ == [6] and sum(CMASK.values()) == 24
-     and len(CMASK) == 4, "F30",
+     and len(CMASK) == 4 and CYLEN == [8] and NCYC == 4608 and ANNZ and SUPP
+     and KDIM == [48] and KDIM2 == [48] and CSZ == [48, 48]
+     and SAMESPLIT, "F30",
      "over the {0} cover orbits the stabiliser masks are the {1} single-axis masks {2}, each carried by {3} orbits".format(
          nd(len(CREP)), nd(4), nd(CMKEY), nd(CMSZ[0])))
 
@@ -1338,7 +1421,7 @@ emit("both sides sum to {0} over the {1} patterns: {2} of cover side, {3} times 
     nd(CSUM), nd(16), nd(CSUM), nd(16), nd(PORB)))
 
 gate(CONTBAD == 0 and CONTN == 1536 and CONTN == NORB * 16, "F32",
-     "containment: {0} of the {1} table-and-pattern pairs put an image outside the cover-side block, so every table takes block into block".format(
+     "at F_1000003 all {1} table-pattern images lie in the corresponding cover block; exceptions {0}".format(
          nd(CONTBAD), nd(CONTN)))
 
 gate(CEIL == [12, 12, 12, 6, 0] and list(SP1) == [12, 12, 10, 6, 0]
@@ -1348,19 +1431,18 @@ gate(CEIL == [12, 12, 12, 6, 0] and list(SP1) == [12, 12, 10, 6, 0]
      " a deficit of {5} wholly at weight {6}".format(
          sl(CEIL), sl(list(SP1)), sl(SHORT), nd(WCEIL), nd(WMEAS), nd(WGAP),
          nd(2)))
-emit("so a table must die at weight {0}, where the cover-side block is {1}, and must fill the block at weight {2}, where it is {3}".format(
-    nd(4), nd(CDW[4]), nd(3), nd(CDW[3])))
+emit("the cover-side ceiling is zero at weight {0}; common-image span attains dimension {1} at weight {2}".format(
+    nd(4), nd(CDW[3]), nd(3)))
 
 gate(UNDER == [0, 1, 2] and SATW == [4, 3, 3, 1, 0] and SATCON
      and SATLB == [2, 2, 2, 1, 0] and max(SATW) < NORB, "F34",
-     "honest negative and rejector: one table repeated spans {0} against"
-     " ambient {1}, short at weights {2}".format(
+     "control: table profile {0}, cover dimensions {1}, sub-ceiling weights {2}".format(
          sl(list(SP1)), sl(CDW), sl(UNDER)))
 emit("in orbit order {0} tables saturate it; the dimension bound alone allows {1},"
-     " so filling is cheap and not a witness for the four parts".format(
+     " recording the finite saturation profile".format(
          sl(SATW), sl(SATLB)))
 
-emit("the top two weights are forced, so weights {0} to {1} carry the whole excess {2}; the image label separates the twin into {3} of {4}".format(
+emit("top-weight finite profiles place excess {2} at weights {0} to {1}; the incidence image-class multiset has {3} of {4} members".format(
     nd(0), nd(2), nd(EXCESS), nd(NARR), nd(NFAM)))
 RSS = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
 MBS = RSS / (1024.0 * 1024.0) if sys.platform == "darwin" else RSS / 1024.0

@@ -1,0 +1,52 @@
+===== runner cache v1 =====
+runner: scripts/four_cube_cutting_weight_three_rigidity_image_partition_2026_08_11.py
+runner_sha256: ed42a29526d8df996f1b3623ccd3576bead27a962146343f72f2f466cefe1de6
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 22.44
+status: ok
+----- stdout -----
+PASS F0 object 2672/400/6: 15800 geometric cuttings, 192 pieces, 192 covers; pair certificate 13632+864+672
+PASS F1 384 closed maps give 96 free pair orbits and degree-two tables partitioning 36864 entries
+PASS F2 the 16 sign patterns have weight sizes [1, 4, 6, 4, 1], each piece-side block has 12 rows of rank 12, and stacked they reach 192, both primes
+PASS F3 at the all-signs pattern all 96 tables have rank 0 on the block and kernel 12 there, at both primes: the rank set is [0]
+PASS F4 at each of the 4 weight-3 patterns all 96 tables have rank 6: the set of all 384 measured ranks per prime is [6]
+PASS F5 at each weight-3 pattern the 96 image keys collapse to 1, and all 96 images stacked have rank 6, the rank of one table
+PASS F6 at each weight-3 pattern there are exactly 2 kernels, each of dimension 6, with class sizes [48, 48]
+PASS F7 control: kernel class against the full-table kernel class gives 2 pairs; the shifted assignment gives 4
+PASS F8 at each weight-3 pattern the two kernels meet in 0 and stack to rank 12, the full piece-side block dimension
+PASS F9 over the 1056 sweep members the weight-3 rank of the sum is at most 6 with 0 exceptions; spread 0:56 2:28 3:496 4:120 5:380 6:3144
+PASS F10 538 of the 1056 members have a lone minority colour; each has weight-3 rank 6 and kernel meeting the majority kernel in 0, 0 misses
+PASS F11 control: the 369 even-split sweep members realize weight-3 ranks 0:32 3:256 4:92 5:320 6:776, including rank 6
+PASS F12 kernel classes 48 and 48 give 389160 same-class, 1660416 lone-minority and 1272384 even-split members, total 3321960
+PASS F13 the incidence parts have kernel classes [0, 0, 0, 1]; the index-order comparator has [0, 1, 1, 1]; both are lone-minority
+PASS F14 at all 4 weight-3 patterns the two named members have kernels of dimension 6 meeting in 0
+PASS F15 at F_1000003 the rank/meet profile is 9/9/3 9/9/0 6/6/3 6/6/0 0/0/12; both rank profiles recompose to 105; first-prime meet 33
+PASS F16 one table profiles 12/12/10/6/0; the drop to incidence is 3/3/4/0/0, weighting to 39; of the meet 12 sit at weight 4, 21 at 0 and 2, 0 else
+PASS F17 the image label takes 3/6/3/1/1 values by weight from 0 up, with class sizes 32/32/32 at weight 0, 16/16/16/16/16/16 at 1, 32/32/32 at 2
+PASS F18 the label and the colour are independent: 6 joint classes of 16 at weight 0, 12 of 8 at weight 1, 6 of 16 at weight 2
+PASS F19 the weight-0 label and the weight-2 label agree on all 96 orbits, so they are one map with 3 values
+PASS F20 the weight-1 label fixes the weight-0 label and each of the 3 fibres holds 2 values: 0(05) 1(14) 2(23)
+PASS F21 all 4 weight-1 patterns give disjoint incidence/comparator class multisets with multiplicities 2/1/1
+PASS F22 the two-value fibre involution carries the incidence class multiset to the comparator class multiset
+PASS F23 the members carrying the incidence label multiset number 30720 by binomials and 30720 by enumerating all 3321960: 9 in a thousand
+PASS F24 control: 58 of 368 one-part replacements preserve the incidence class multiset, by two counts
+PASS F25 within the 1056-member sweep, fixed-rank groups are 0/15, 28/123, 0/15; incidence group 13: 9:1 11:4 12:8
+PASS F26 incidence and comparator share both pair-count histograms across all 18336 pairs
+PASS F27 the 4 weight-3 common images each have dimension 6 and jointly have rank 24
+PASS F28 the incidence class multiset has 30720 family members; comparator and incidence class sets are disjoint
+PASS F29 the 16 flips fix 0 pieces bar the identity, giving 12 piece orbits of 16; on covers, 24 orbits of 8, every stabiliser of order 2
+PASS F30 over the 24 cover orbits the stabiliser masks are the 4 single-axis masks [1, 2, 4, 8], each carried by 6 orbits
+PASS F31 the cover-side block dimension by weight is 24/18/12/6/0, six times four less the weight, its rank at both primes and the span of all 96
+both sides sum to 192 over the 16 patterns: 192 of cover side, 16 times 12 of piece side
+PASS F32 at F_1000003 all 1536 table-pattern images lie in the corresponding cover block; exceptions 0
+PASS F33 ceiling 12/12/12/6/0 against measured 12/12/10/6/0 leaves 0/0/2/0/0, weighting to 156 against 144, a deficit of 12 wholly at weight 2
+the cover-side ceiling is zero at weight 4; common-image span attains dimension 6 at weight 3
+PASS F34 control: table profile 12/12/10/6/0, cover dimensions 24/18/12/6/0, sub-ceiling weights 0/1/2
+in orbit order 4/3/3/1/0 tables saturate it; the dimension bound alone allows 2/2/2/1/0, recording the finite saturation profile
+top-weight finite profiles place excess 39 at weights 0 to 2; the incidence image-class multiset has 30720 of 3321960 members
+elapsed 22 s, peak resident 157 MB
+TOTAL: PASS=35 FAIL=0
+
+----- stderr -----
+

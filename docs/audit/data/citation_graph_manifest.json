@@ -1,6 +1,6 @@
 {
- "edge_count": 15973,
- "node_count": 5551,
+ "edge_count": 15977,
+ "node_count": 5552,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -456,6 +456,10 @@
   },
   "admissibility_dirac_kahler_momentum_factorized_positivity_frontier_bounded_theorem_note_2026-08-15": {
    "deps_hash": "f386bc6245ec",
+   "out_degree": 4
+  },
+  "admissibility_dirac_kahler_momentum_population_definiteness_bounded_theorem_note_2026-08-16": {
+   "deps_hash": "345842bf05e6",
    "out_degree": 4
   },
   "admissibility_dirac_kahler_paired_floor_refutation_mixed_circle_bounded_theorem_note_2026-08-15": {

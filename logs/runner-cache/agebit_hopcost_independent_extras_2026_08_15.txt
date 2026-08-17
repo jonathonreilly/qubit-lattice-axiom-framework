@@ -1,0 +1,52 @@
+===== runner cache v1 =====
+runner: scripts/agebit_hopcost_independent_extras_2026_08_15.py
+runner_sha256: b45c03553e2db9bdd898b9a1c655c71f4b1b09822dffc7baaec736029cd099ce
+input_fingerprint_sha256: c5d763b7147ea5709643a21bb3080301136fa0069567c64b5ec01a859d0dcb43
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.32
+status: ok
+----- stdout -----
+age-bit / hop-cost independent extras
+AUDIT_INPUT_PATHS:
+  docs/AGEBIT_HOPCOST_INDEPENDENT_EXTRAS_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+G_plus=24
+uneq_unread=True first_unread=True
+uneq_sigma=(1, 0, 1, 0, 1, 1) uneq_ticks=(1, None, 1, None, 3, 2) uneq_b=1
+first_sigma=(1, 0, 1, 0, 1, 1) first_ticks=(1, None, 1, None, 2, 2) first_b=0
+unique_full_axis=z
+orbit_weights=((0, 1), (1, 0), (1, 1), (1, 2), (2, 1), (2, 2), (2, 3), (3, 2))
+n_maps=6561
+reverse_count=405
+lex_first_c=(1, 1, 3, 1, 1, 1, 1, 1) lex_first_times=(7, 3)
+minkbest_times=(9, 5)
+PASS: audit-input-paths | AUDIT_INPUT_PATHS is the required static two-string literal tuple
+PASS: source-lattice
+PASS: source-admissibility
+PASS: source-unread-qubit
+PASS: g-plus-order | proper=24
+PASS: theorem-1-same-sigma-both-bits | uneq_b=1 first_b=0 sigma=(1, 0, 1, 0, 1, 1)
+PASS: theorem-1-c-not-function-of-b | n_orbit=8
+PASS: theorem-2-axiom-no-hop-cost
+PASS: theorem-2-more-than-one-8tuple | reverse=405 lex=(1, 1, 3, 1, 1, 1, 1, 1) minkbest_times=(9, 5)
+PASS: theorem-2-occupancy-does-not-select-minkbest
+PASS: claim-scope
+PASS: theorem-3-displayed
+PASS: l1-not-attached
+PASS: not-leftover-bitsec-minkbest
+PASS: uniqueness-not-claimed
+PASS: admissibility-unedited
+PASS: forbidden-phrases
+PASS: no-axiom-edit
+per_element: b, σ, eight pair-orbits, and reversing 8-tuples are exact
+per_site: uneqrad breaker, uneqext same-σ star, and B_3(0) one-seed front
+per_mode: no spectral calculation
+per_block: 3-ball star and radius-3 ball only
+lattice_wide: checked and not executed
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

@@ -1,35 +1,41 @@
 ===== runner cache v1 =====
-runner: scripts/cl3_volume_elements_plus_minus_not_axiom_selected_2026_08_13.py
-runner_sha256: 2e91163f7f3c3ef1111570b07f71b1859e03a2ba1bfa4c1d46bf7fe58ec2840f
-input_fingerprint_sha256: 75bbd5aa6a566227b7375f8bbb8477ba6bd36fcfbf83985439e95a86914d4944
+runner: scripts/cl3_ordered_volume_element_determinant_action_2026_08_13.py
+runner_sha256: 47890fbd7bbc5731478bf7164820183dd1b71722ae797e1aa53e7e092eea5ff0
+input_fingerprint_sha256: 2fafd9de889885b197517ada0934b2d628a9a8fd8df083f15dcc5ff629a5e992
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
-external_scientific_inputs: none; exact Cl(3,0) anticommutators and the declared axiom/parent wording
-audit_input_paths: docs/CL3_VOLUME_ELEMENTS_PLUS_MINUS_NOT_AXIOM_SELECTED_BOUNDED_THEOREM_NOTE_2026-08-13.md, docs/CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md, docs/MINIMAL_AXIOMS_2026-06-29.md
-PASS: audit-inputs-exist declared note, May 10 parent, and axiom memo are readable
-PASS: car {ei, ej} = 2 δ_ij I on the integer generators
-PASS: identity-opp-minus volume_opp() equals -volume()
-PASS: identity-squares volume()^2 equals volume_opp()^2
-PASS: mutation-opp-neq-minus the predicate ω' ≠ −ω fails
-PASS: mutation-squares-unequal the predicate ω² ≠ (−ω)² fails
-PASS: odd-grade both volume elements are grade-odd
-PASS: central n=3 odd: ω and ω' commute with every generator
-PASS: square-minus-one ω² = (−ω)² = −I
-PASS: pauli-volume σ1 σ2 σ3 = i I and the opposite product is −i I
-PASS: pauli-squares (σ1 σ2 σ3)² = (−σ1 σ2 σ3)² = −I
-PASS: proper-rotations-preserve-both all 24 proper cubic rotations preserve ω and −ω
-PASS: improper-flips the sample det=−1 map exchanges the two volume signs
-PASS: source-qubit axiom memo carries the Qubit Cl(3,0) equivalence sentence
-PASS: source-lattice axiom memo names proper cubic rotations
-PASS: source-parent-odd-central May 10 parent states the odd-n centrality rule
-PASS: source-note-missing-input this note displays s in {+1, −1} and does not add a chirality axiom
-PASS: source-note-no-identifications this note refuses hypercharge, gravity-orientation, and fifth-axiom identifications
-PASS: source-note-no-reopen-dt this note does not reopen d_t
-PASS: source-note-hygiene this note avoids we-adopt / new-axiom / Codex language
-TOTAL: PASS=20 FAIL=0
+external_scientific_inputs: none
+package_local_integrity_reads: docs/CL3_ORDERED_VOLUME_ELEMENT_DETERMINANT_ACTION_NARROW_THEOREM_NOTE_2026-08-13.md
+audit_input_paths: docs/CL3_ORDERED_VOLUME_ELEMENT_DETERMINANT_ACTION_NARROW_THEOREM_NOTE_2026-08-13.md
+PASS: package-input the declared theorem note is readable
+PASS: package-metadata the theorem surface carries the required proposal and trace fields
+PASS: clifford-car all nine Euclidean CAR identities hold
+PASS: reverse-order e3 e2 e1 equals minus e1 e2 e3
+PASS: odd-grade both ordered volume words have odd grade
+PASS: centrality both volume words commute with all three generators
+PASS: square-minus-one both volume words square to minus the identity
+PASS: pauli-car the Pauli exhibit obeys all nine CAR identities
+PASS: pauli-volume the forward and reversed Pauli products are plus and minus iI
+PASS: pauli-squares both Pauli volume products square to minus the identity
+PASS: pauli-real-rank the eight real basis images have exact coordinate determinant minus sixteen
+PASS: signed-permutation-census the enumeration has 48 unique matrices
+PASS: determinant-split the determinant classes contain 24 matrices each
+PASS: group-closure all signed-permutation products stay in the 48-element set
+PASS: determinant-action every signed permutation sends omega to determinant times omega
+PASS: proper-action all 24 determinant-plus-one elements fix both ordered signs
+PASS: improper-action all 24 determinant-minus-one elements exchange the ordered signs
+PASS: mutation-clifford-swap the one-fault scientific mutant is rejected
+PASS: mutation-reverse-word the one-fault scientific mutant is rejected
+PASS: mutation-centrality-sign the one-fault scientific mutant is rejected
+PASS: mutation-square-sign the one-fault scientific mutant is rejected
+PASS: mutation-pauli-orientation the one-fault scientific mutant is rejected
+PASS: mutation-group-census the one-fault scientific mutant is rejected
+PASS: mutation-determinant-action the one-fault scientific mutant is rejected
+PASS: mutation-aggregate all seven load-bearing one-fault mutants are rejected
+TOTAL: PASS=25 FAIL=0
 
 ----- stderr -----
 

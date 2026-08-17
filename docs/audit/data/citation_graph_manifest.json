@@ -1,6 +1,6 @@
 {
- "edge_count": 15750,
- "node_count": 5555,
+ "edge_count": 15751,
+ "node_count": 5556,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1695,8 +1695,8 @@
    "out_degree": 11
   },
   "canonical_harness_index": {
-   "deps_hash": "bc5ca525d341",
-   "out_degree": 373
+   "deps_hash": "2397cf2c7944",
+   "out_degree": 374
   },
   "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": {
    "deps_hash": "808c1ccb6109",
@@ -2281,6 +2281,10 @@
   "cl3_oh_cubic_lift_faithful_narrow_theorem_note_2026-05-26": {
    "deps_hash": "785681ca030c",
    "out_degree": 2
+  },
+  "cl3_ordered_volume_element_determinant_action_narrow_theorem_note_2026-08-13": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10": {
    "deps_hash": "e3b0c44298fc",

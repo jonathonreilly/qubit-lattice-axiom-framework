@@ -1,0 +1,49 @@
+===== runner cache v1 =====
+runner: scripts/clause_011_reverse_paths_2026_08_15.py
+runner_sha256: 2be8e76cbbef86b56ca9b54b74ea32eb61de5b86c99b0a0b4a619fa1c8a37c1c
+input_fingerprint_sha256: d631fb9acdd49a4be630da0dde794ff2a9891e8ebec0ba5d76dadedd05773d54
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: current Lattice and Admissibility wording; no observations or fits
+integrity_reads: this runner, its note, and the axiom memo; no other scientific inputs
+construction: named (0,1,1) hop-cost on B_6(0) with lex-first Dijkstra reconstruction
+negative_scope: displayed, not adopted; not written into Admissibility; uniform graph-length not attached
+PASS: audit-inputs declared source-bound inputs exist as the required string-literal tuple
+PASS: source-lattice current cubic nearest-neighbor wording is pinned
+PASS: source-admissibility current one-fixed-rule wording is pinned
+PASS: source-record-boundary current lock/content/unreadable-at-absence wording is pinned
+PASS: source-formation-boundary formation site/probability/rate remains outside Admissibility
+PASS: ball-cardinality B_6(0) has exactly 377 integer sites
+PASS: targets-inside both reverse-diamond sites lie in B_6(0)
+PASS: clause-identity seed-exit is cheap and axis-one and support-drop cost 3
+lex_first_axis_path: (0,0,0) → (0,-1,0) → (1,-1,0) → (2,-1,0) → (3,-1,0) → (4,-1,0) → (4,0,0)
+lex_first_axis_costs: (1,1,1,1,1,3) sum=8
+lex_first_diag_path: (0,0,0) → (0,0,1) → (0,1,1) → (0,1,2) → (0,2,2) → (1,2,2) → (2,2,2)
+lex_first_diag_costs: (1,1,1,1,1,1) sum=6
+PASS: arrival-axis computed t(4,0,0) equals the reconstructed hop-cost sum
+PASS: arrival-diag computed t(2,2,2) equals the reconstructed hop-cost sum
+PASS: reverse-diamond the two-point comparison reverses on these sites
+PASS: axis-path-endpoints the axis reconstruction starts at the origin and ends at (4,0,0)
+PASS: diag-path-endpoints the body-diagonal reconstruction starts at the origin and ends at (2,2,2)
+PASS: note-axis-walk the note exhibits the computed axis walk and hop-cost list
+PASS: note-diag-walk the note exhibits the computed body-diagonal walk and hop-cost list
+PASS: not-leftover the hop-cost lists are longer than a two-point leftover
+PASS: cheap-seed-exit both lex-first walks open with a cost-1 seed-exit
+PASS: axis-only-not-shortest the axis-only competitor is strictly more expensive than t(4,0,0)
+PASS: graph-length-contrast uniform graph-length does not reverse and is not the named toggle
+PASS: mutation-seed-exit charging seed-exit 3 changes the opening hop and the arrivals
+PASS: mutation-graph-length replacing hop_cost by uniform ones would drop t(4,0,0) to graph-length 4
+PASS: note-contract machine fields, exhibition wording, N1-N8, and forbidden-phrase hygiene hold
+PASS: claim-scope front matter keeps the dispatch claim_scope
+per_element: inward-weight clauses and hop-costs are evaluated on named directed nearest-neighbor edges
+per_site: lex-first reconstructions are executed at (4,0,0) and (2,2,2) inside B_6(0)
+per_mode: checked and not executed — no spectral or harmonic mode claim occurs in this finite graph theorem
+per_block: one Dijkstra family, two lex-first walks, and two mutation controls are executed
+lattice_wide: checked and not executed — no Admissibility edit and no attached uniform graph-length time
+TOTAL: PASS=23 FAIL=0
+
+----- stderr -----
+

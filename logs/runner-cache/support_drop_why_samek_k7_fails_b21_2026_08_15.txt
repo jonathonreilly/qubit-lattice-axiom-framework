@@ -1,0 +1,59 @@
+===== runner cache v1 =====
+runner: scripts/support_drop_why_samek_k7_fails_b21_2026_08_15.py
+runner_sha256: 97148818c63bd795303d6563ecad087b4cffcfc5248b47407ede76e4c101f61c
+input_fingerprint_sha256: fa90879ca6c879bce3c555b15ce8fd6a458639dee10386af9024b061427a1c88
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.15
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/SUPPORT_DROP_WHY_SAMEK_K7_FAILS_B21_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+claim_scope: Lex-first shortest paths to (7,0,0) and (7,7,7) under the named support-drop hop-cost on B_21(0) are named. Displayed, not adopted.
+PASS: audit-input-paths declared inputs are the source note and the current axiom memo
+PASS: audit-input-literal AUDIT_INPUT_PATHS is a static string-literal tuple
+PASS: claim-scope note claim_scope matches the named-path statement
+PASS: displayed-not-adopted the rule is displayed, not adopted
+PASS: not-in-admissibility ν is not written into Admissibility
+PASS: not-attach-l1 the displayed rule is not attached to L1
+PASS: uniqueness-not-claimed uniqueness among hop-costs is not claimed
+PASS: no-axiom-edit note records hypothetical axiom status no edit
+PASS: forbidden-absent forbidden phrases are absent from the source note
+n_sites 13287
+t(7,0,0) 13
+t(7,7,7) 23
+lex_first_axis (0,0,0) → (0,-1,0) → (1,-1,0) → (2,-1,0) → (3,-1,0) → (4,-1,0) → (5,-1,0) → (6,-1,0) → (7,-1,0) → (7,0,0)
+lex_first_body (0,0,0) → (0,0,1) → (0,1,1) → (0,1,2) → (0,1,3) → (0,1,4) → (0,1,5) → (0,1,6) → (0,1,7) → (0,2,7) → (0,3,7) → (0,4,7) → (0,5,7) → (0,6,7) → (0,7,7) → (1,7,7) → (2,7,7) → (3,7,7) → (4,7,7) → (5,7,7) → (6,7,7) → (7,7,7)
+hop_costs_axis 3, 1, 1, 1, 1, 1, 1, 1, 3
+hop_costs_body 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
+running_cost_axis [3, 4, 5, 6, 7, 8, 9, 10, 13]
+running_cost_body [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23]
+t(7,0,0)^2/49 169/49
+t(7,7,7)^2/147 529/147
+3t_axis^2 507
+t_body^2 529
+reverse False
+dijkstra_calls 1
+PASS: one-dijkstra exactly one Dijkstra ran
+PASS: ball-b21 B_21(0) has 13287 sites and 13286 nonzero sites
+PASS: t-700-777 t(7,0,0)=13 and t(7,7,7)=23
+PASS: valid-walks the exhibited walks are nearest-neighbor walks in B_21(0) from 0 to the two sites
+PASS: hop-costs-match recorded hop-costs equal ν on successive sites and sum to the arrivals
+PASS: running-cost running costs are the partial sums of the hop-costs
+PASS: shortest each walk cost equals the Dijkstra arrival, so each walk is shortest
+PASS: lex-first-paths the Dijkstra reconstructions are the named lex-first site sequences
+PASS: lex-first-beats-later-shortest later cost-matching walks exist and are strictly lex-later
+PASS: lex-smaller-is-not-shortest a lex-smaller axis walk that starts toward -x costs more than 13
+PASS: reverse-k7 t(7,0,0)^2/49 > t(7,7,7)^2/147 is false
+PASS: note-records-paths note records the lex-first sites, hop-costs, and running costs
+PASS: note-records-times note records the two computed arrivals
+PASS: not-leftover-of-the-no-bit the walks are not leftover of the no bit
+PASS: not-leftover-of-alpha α cannot price the support-drop hop (7,-1,0)→(7,0,0)
+PASS: seed-and-axis-clauses seed-exit and support-drop cost 3; support increase costs 1
+PASS: axiom-untouched the axiom memo is an input only and still names the four axioms
+TOTAL: PASS=26 FAIL=0
+
+----- stderr -----
+

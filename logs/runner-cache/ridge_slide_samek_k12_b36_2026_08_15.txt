@@ -1,0 +1,56 @@
+===== runner cache v1 =====
+runner: scripts/ridge_slide_samek_k12_b36_2026_08_15.py
+runner_sha256: e0f224b5bd06700b191011c68c5c66d4d2256084ccaceb83ac18bf515807adef
+input_fingerprint_sha256: 6f1afba75c8a75df49b43b9574a1250127d851df932bb24990c541e993fc9345
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.49
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/RIDGE_SLIDE_SAMEK_K12_B36_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+claim_scope: Same-k reverse at k=12 under the named ridge-slide hop-cost on B_36(0) is reported. Displayed, not adopted.
+PASS: audit-input-paths declared inputs are the source note and the current axiom memo
+PASS: audit-input-literal AUDIT_INPUT_PATHS is a static string-literal tuple
+PASS: claim-scope note claim_scope matches the displayed scoring statement
+PASS: displayed-not-adopted the rule is displayed, not adopted
+PASS: not-in-admissibility ρ3 is not written into Admissibility
+PASS: not-attach-l1 the displayed rule is not attached to L1
+PASS: uniqueness-not-claimed uniqueness among hop-costs is not claimed
+PASS: no-axiom-edit note records hypothetical axiom status no edit
+PASS: forbidden-absent forbidden phrases are absent from the source note
+n_sites 64897
+t(12,0,0) 24
+t(12,12,12) 40
+t(12,0,0)^2/144 576/144
+t(12,12,12)^2/432 1600/432
+3t_axis^2 1728
+t_body^2 1600
+reverse True
+t(36,0,0) 52
+t(2,2,2) 10
+dijkstra_calls 1
+witness_rho3_costs [3, 1, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3, 3]
+witness_rho3_sum 24
+rho3_ridge 3
+mu_ridge 1
+rho3_interior 1
+mu_interior 1
+PASS: t-12000-121212 t(12,0,0)=24 and t(12,12,12)=40
+PASS: reverse-k12 t(12,0,0)^2/144 > t(12,12,12)^2/432 holds
+PASS: one-dijkstra exactly one Dijkstra ran
+PASS: ball-b36 B_36(0) has 64897 sites and 64896 nonzero sites
+PASS: reachable every site of B_36(0) is reached
+PASS: note-records-times note records the two computed arrivals
+PASS: note-records-reverse-products note records the integer reverse products
+PASS: independent-b36-dijkstra axis endpoint t(36,0,0)=52 and the note scores B_36 independently
+PASS: not-leftover-of-mu ρ3 prices the ridge-slide hop at 3 while μ prices it at 1
+PASS: ridge-not-all-body ρ3 does not tax a 3→3 hop whose dest has fewer than two unit coords
+PASS: seed-and-ridge-slide-clauses seed-exit, both-weights-1, support-drop, corridor-slide, and ridge-slide cost 3; other hops cost 1
+PASS: axiom-untouched the axiom memo is an input only and still names the four axioms
+TOTAL: PASS=21 FAIL=0
+
+----- stderr -----
+

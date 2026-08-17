@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_sourced_quotient_execution_2026_08_17.py
+runner_sha256: ded3c60d6ec15bebe7e2b3c2da3d597a1241b9e145d2fe466d6bdcb550b618b3
+input_fingerprint_sha256: 7d391af8f36628f9902925508feec9ae965f9c478d10093e36fa9e254adc6806
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 58.85
+status: ok
+----- stdout -----
+[PASS] A-authority: Block 123 note/runner/cache and ancestors 122--103 are pinned
+[PASS] B-the-class-quadric: |c1|^2+2|c2|^2=|c3|^2 with c0 free has dims 7/6/5; p2=-2 differs off c2=0 and agrees exactly on the balanced intersection
+[PASS] C-the-gauss-solution: (B4^T Gamma)_j=Gamma_j-Gamma_{j+1}; the closed form and mean-zero witness solve it, while the opposite orientation fails
+[PASS] D-the-physical-quotient: the d=2 sourced graph modulo its constant gauge mode is isomorphic to the matter class and gravity adds zero independent dimensions
+[PASS] E-the-forced-root-identity: k=0,2 and k=1,3 have identical characteristic polynomials; |tau|>2 uniquely forces each |rho|<1 root, with rho_even!=rho_odd
+[PASS] F-the-stable-balanced-sector: diag(rho_k^2) preserves exactly c2=0, |c1|=|c3|; every c2!=0 class state acquires 2|c2|^2(rho_even^4-rho_odd^4)!=0
+[PASS] G-the-localization-verdict: D_x={E_x,P}/2 is admissible, E_xPE_x is not; any admissible sum gives total <P>, so only the profile is conventional
+[PASS] H-scope: required sourced-quotient/convention/root/gauge/localization/N1--N8/W1/N5 firewalls and runtime bound are present
+CLASS QUADRIC: <P>=0 iff |c1|^2+2|c2|^2=|c3|^2 with c0 free; explicit cone/normalized/ray parametrization ranks=7/6/5.
+CONVENTION INTERSECTION: p2=+2 and p2=-2 define different classes for c2!=0; their exact common class is c2=0, |c1|=|c3|, with convention-invariant dimensions.
+GAUSS ORIENTATION: rho=(2/9,-1/9,0,-1/9) has Gamma_mean0=(1/9, -1/9, 0, 0) under Gamma_j-Gamma_(j+1); the opposite sign fails.
+PHYSICAL QUOTIENT: d=2 TT dimension=0 and gravity solution/gauge/physical-fiber dimensions=1/1/0; the graph is the matter class.
+FORCED ROOTS: k0=k2 and k1=k3 in both fixtures, with unique stable roots and tau_even!=tau_odd; polynomial sha=19baabff740f222c/c3711b5df8de88b6.
+STABLE BALANCED SECTOR: c2=0, |c1|=|c3| is exactly transfer-invariant; the unbalanced violation is 2|c2|^2(rho_even^4-rho_odd^4).
+LOCALIZATION: pinned admissible D_x gives witness profile=(2/9, -1/9, 0, -1/9); profile choice is cosmetic, while the total sum rule and quotient structure are structural.
+N5: per_element: exact quadric, convention-intersection, gauss-solution, orientation, root-identity, sector-preservation, violation, and sum-rule certificates are checked
+per_site: one Grassmann mode per fine site on the antiperiodic reflection torus
+per_mode: the paired momenta share one characteristic polynomial with the stable root forced, so the balanced sector is transfer-invariant while unbalanced states violate the class by an exact rate difference
+per_block: the momentum-sourced gauss quotient is executed — the physical sector is the convention-free stable balanced class with gravity contributing only its quotiented gauge mode, independent of the admissible localization
+lattice_wide: checked and not executed — non-local dressings for the observable wall, the naturality classification, curved OS positivity, the actual ADM/history transporter completion, joint gravity, the full gravity constraint quotient beyond the displayed carrier, Records, audit retention, and TOE closure remain open
+RESULT: the lane's first physical gravity quotient exists and carries dynamics — the convention-free transfer-stable balanced sector with exact gauss solutions unique up to the constant gauge mode, its structure independent of the admissible localization
+DECISION_CUT: advance non-local dressings and the naturality classification; reject unbalanced-sector and inadmissible-localization constructions
+TOE: zero obligation retirement, retained-positive end-to-end theory count remains zero, and no TOE percentage moves
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

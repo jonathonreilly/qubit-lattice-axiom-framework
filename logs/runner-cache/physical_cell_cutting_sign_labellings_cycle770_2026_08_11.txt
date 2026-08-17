@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/physical_cell_cutting_sign_labellings_cycle770_2026_08_11.py
-runner_sha256: dc723ffb72f6aed844b971d49cc7189b50b664771a0f8493c235484ffe737be8
+runner_sha256: 31c19fbd02217f65ff62dd9a869634e8d9114d3fa2bce857f1929c4cb3cf3b90
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 12.62
+elapsed_sec: 19.61
 status: ok
 ----- stdout -----
-all numbers below are exact computational identities; no floating point enters any gate
-PASS C0 object: 2672 candidates, 400 at adjacency cost floor 6, 15800 cuttings of 24, 192 pieces used, 192 covers
+mathematical gates use exact integer, rational and finite-field arithmetic; the support budget uses measured resources
+PASS C0 object: 2672 candidates, 400 at cost 6, 15800 cuttings of 24, 192 used pieces, 192 covers; pair certificate 13632+864+672
 PASS C1 each piece lies in 1975 cuttings and 8 times 1975 is 15800; each cover has 8 pieces and meets every cutting once
 PASS C2 group: 384 coordinate maps, all distinct, shut under composition, every one carrying pieces to pieces
 PASS C3 piece action: 384 distinct bijections of the 192 pieces, a single orbit
@@ -28,18 +28,17 @@ PASS C17 each of the 3 satisfies M u = 0 exactly over the integers on all 192 co
 PASS C18 rank exactly 105: a 105 by 105 minor of determinant -1, and all 192 rows lie in its row lattice; blind 87 in every characteristic
 PASS C19 the 2 characters that are -1 on the cover stabiliser element have no cover-side copy: their cover transport conflicts on all 192 covers
 PASS C20 permutation sign: multiplicity 1 on both sides, so its block is one even number, a priori 9 values from -8 to 8, measured 0
-PASS C21 the 4 one-dimensional rows have piece multiplicities 1111 and cover multiplicities 1100: ceiling 1+1+0+0 = 2, excess 0+1+0+0 = 1
-PASS C22 carried-in ceiling 144 less the measured rank 105 is an excess of 39; these 4 rows supply 2 of the ceiling and 1 of the excess
-PASS C23 rejector one: flipping any single one of the 192 labels breaks a cover for each of the 3 labellings; fewest 8, most 8
-PASS C24 rejector two: 72 opposite-label swaps, 24 per labelling, each breaks a cover; fewest 8, most 16
-PASS C25 rejector three: a transposed action breaks the transport exactly when the 2 swapped pieces differ; 16 of 36 break, 8 of 12 transpositions
-PASS C26 all 65536 corner subsets: exactly 2 have cover sum 0 on every cover, both of size 8, the masks 27030 and 38505
-PASS C27 complementing negates the labelling on all 65536 subsets since a piece has 5 corners; subset 27030 gives the flip parity labelling
-PASS C28 the 4 single-axis subsets are not blind: each has cover sums -8:24,0:144,8:24; the orientation sign is no subset labelling of the 65536
-PASS C29 budget: 12 s under 900, 38 MB under 2500, characters printed under 5200 with 1200 to spare
-PASS C30 source hygiene: ASCII yes, no tab yes, no remainder sign yes, no long dash yes, 41 barred strings absent yes
-characters printed before this line: 3898
-TOTAL: PASS=31 FAIL=0
+PASS C21 4 one-dimensional sectors: piece multiplicities 1111, cover 1100, ceiling 1+1+0+0=2, rank deficit 0+1+0+0=1
+PASS C22 rejector one: flipping any single one of the 192 labels breaks a cover for each of the 3 labellings; fewest 8, most 8
+PASS C23 rejector two: 72 opposite-label swaps, 24 per labelling, each breaks a cover; fewest 8, most 16
+PASS C24 rejector three: a transposed action breaks the transport exactly when the 2 swapped pieces differ; 16 of 36 break, 8 of 12 transpositions
+PASS C25 all 65536 corner subsets: exactly 2 have cover sum 0 on every cover, both of size 8, the masks 27030 and 38505
+PASS C26 complementing negates the labelling on all 65536 subsets since a piece has 5 corners; subset 27030 gives the flip parity labelling
+PASS C27 subset census: 4 axis histograms -8:24,0:144,8:24; zero orientation matches among 65536 vectors
+PASS C28 support budget: 19 s under 300, 55 MB under 2500, characters under 5200 with 1350 to spare
+PASS C29 source hygiene: ASCII yes, no tab yes, no remainder sign yes, no long dash yes, 41 barred strings absent yes
+characters printed before this line: 3748
+TOTAL: PASS=30 FAIL=0
 
 ----- stderr -----
 

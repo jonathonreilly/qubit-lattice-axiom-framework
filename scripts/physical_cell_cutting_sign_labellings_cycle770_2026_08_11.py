@@ -1,4 +1,4 @@
-"""Three sign labellings split every cover of the physical cell cutting four and four.
+"""Three sign labellings split every cover of a finite four-cube cutting four and four.
 
 Standalone exact runner. It rebuilds the unit four-cube cell object from scratch:
 the sixteen corners, the five-corner unit-determinant pieces at the adjacency cost
@@ -15,27 +15,29 @@ covers: every cover is split four and four. Two of the three vanish because the
 cover side carries no copy of their character at all; the third is a lone block
 number that could have been any even value up to eight and is measured to be zero.
 The flip parity labelling is identified in closed form as the parity of the total
-number of ones over a piece's five corners, and a complete walk over all 65536
-corner subsets shows that labelling and its negative are the only ones of that kind.
-Three wrong-value rejectors and one perturbed action show the gates discriminate.
+number of ones over a piece's five corners. A complete walk over all 65536 corner
+subsets gives the exact cover-sum census, and the orientation signs are recorded
+as a separate finite census. Exact rational intersection tests certify that the
+sample-defined exact covers are geometric cuttings.
 
-All work is over the integers, the rationals and two fixed primes; no floating
-point enters any gate and no constant is fitted.
+The mathematical gates use integers, rationals and two fixed primes. The resource
+gate alone uses measured wall time and peak memory. No scientific constant is fitted.
 
 Output: one line per gate, then the characters printed before that line, then
 the total line.
 """
 
 import itertools
+import resource
 import sys
 import time
-import resource
 from fractions import Fraction as FR
 import numpy as np
 
 PRIME = 1000003
 PRIME2 = 1000033
 SEED = 3
+AUDIT_TIMEOUT_SEC = 300
 
 T0 = time.time()
 OUT = [0]
@@ -256,7 +258,103 @@ FULLC = (1 << NS) - 1
 PCSET = sorted(set(PCN))
 
 # ------------------------------------------------------------------
-# 1d. the covers: eight pieces, pairwise never in a common cutting
+# 1d. exact interior disjointness for every co-occurring pair
+# ------------------------------------------------------------------
+
+
+def solve4(rows):
+    n = 4
+    M = [[FR(x) for x in r] for r in rows]
+    for c in range(n):
+        p = -1
+        for r in range(c, n):
+            if M[r][c] != 0:
+                p = r
+                break
+        if p < 0:
+            return None
+        M[c], M[p] = M[p], M[c]
+        pv = M[c][c]
+        M[c] = [x / pv for x in M[c]]
+        for r in range(n):
+            if r != c and M[r][c] != 0:
+                f = M[r][c]
+                M[r] = [M[r][k] - f * M[c][k] for k in range(n + 1)]
+    return [M[r][n] for r in range(n)]
+
+
+def afrank(pts):
+    if not pts:
+        return -1
+    base = pts[0]
+    rows = [[FR(p[r]) - FR(base[r]) for r in range(4)] for p in pts[1:]]
+    rk = 0
+    for c in range(4):
+        p = -1
+        for i in range(rk, len(rows)):
+            if rows[i][c] != 0:
+                p = i
+                break
+        if p < 0:
+            continue
+        rows[rk], rows[p] = rows[p], rows[rk]
+        pv = rows[rk][c]
+        for i in range(rk + 1, len(rows)):
+            if rows[i][c] != 0:
+                f = rows[i][c] / pv
+                rows[i] = [rows[i][k] - f * rows[rk][k] for k in range(4)]
+        rk += 1
+    return rk
+
+
+def side(a, b, x):
+    return sum(a[r] * x[r] for r in range(4)) + b
+
+
+def sep_facet(r1, p1, r2, p2):
+    for a, b in r1:
+        if max(side(a, b, x) for x in p2) <= 0:
+            return True
+    for a, b in r2:
+        if max(side(a, b, x) for x in p1) <= 0:
+            return True
+    return False
+
+
+def inter_dim(r1, r2):
+    con = list(r1) + list(r2)
+    pts = []
+    for idx in itertools.combinations(range(10), 4):
+        rows = [list(con[i][0]) + [-con[i][1]] for i in idx]
+        x = solve4(rows)
+        if x is None:
+            continue
+        if all(side(a, b, x) >= 0 for a, b in con):
+            tx = tuple(x)
+            if tx not in pts:
+                pts.append(tx)
+    return afrank(pts)
+
+
+PAIRS = [(i, j) for i in range(NPI) for j in range(i + 1, NPI) if PC[i] & PC[j]]
+NPAIR = len(PAIRS)
+NFAC = 0
+NDIM = {}
+DISJ_OK = True
+PTS = [tuple(CORN[c] for c in S) for S in KEPT]
+for i, j in PAIRS:
+    r1 = BARY[USED[i]][2]
+    r2 = BARY[USED[j]][2]
+    if sep_facet(r1, PTS[USED[i]], r2, PTS[USED[j]]):
+        NFAC += 1
+        continue
+    dim = inter_dim(r1, r2)
+    NDIM[dim] = NDIM.get(dim, 0) + 1
+    if dim >= 4:
+        DISJ_OK = False
+
+# ------------------------------------------------------------------
+# 1e. the covers: eight pieces, pairwise never in a common cutting
 # ------------------------------------------------------------------
 
 NONCO = [0] * NPI
@@ -709,12 +807,6 @@ CEILS = sum(CEILK)
 EXCS = sum(EXCK)
 NBLKV = len(range(-8, 10, 2))
 
-# carried in from an earlier cycle of this lane, which is in flight and not on
-# the main line.  It is context for the two numbers this cycle measures, and it
-# is not asserted here as an established input.
-CEIL_LANE = 144
-EXC_LANE = CEIL_LANE - RANK
-
 # ------------------------------------------------------------------
 # 9. wrong-value rejectors
 # ------------------------------------------------------------------
@@ -842,7 +934,7 @@ AXSBLIND = any(am in SBLIND for am in AXSUB)
 AXSSAME = all(sorted(d.items()) == sorted(AXCNT[0].items()) for d in AXSCNT)
 WSET = set(WORD)
 ORIW = sum(1 << i for i in range(NPI) if ORI[i] == -1)
-ORISUB = (ORIW in WSET) or ((ORIW ^ PFULL) in WSET)
+ORIMATCH = (ORIW in WSET) or ((ORIW ^ PFULL) in WSET)
 
 # ------------------------------------------------------------------
 # 11. source hygiene
@@ -880,20 +972,28 @@ for a, b in BAN:
 
 ELAPSED = int(time.time() - T0)
 RSS = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
-RSSMB = RSS // 1048576 if RSS > 10000000 else RSS // 1024
+if sys.platform == "darwin":
+    RSSMB = RSS // 1048576
+elif sys.platform.startswith(("linux", "freebsd", "openbsd", "netbsd")):
+    RSSMB = RSS // 1024
+else:
+    RSSMB = 2500
 
 # ------------------------------------------------------------------
 # gates
 # ------------------------------------------------------------------
 
-emit("all numbers below are exact computational identities;"
-     " no floating point enters any gate")
+emit("mathematical gates use exact integer, rational and finite-field arithmetic;"
+     " the support budget uses measured resources")
 
 gate(NCAND == 2672 and FLOOR == 6 and NKEPT == 400 and NS == 15800
-     and SIZES == [24] and NPI == 192 and NCOV == 192 and GENERIC, "C0",
-     "object: {0} candidates, {1} at adjacency cost floor {2}, {3} cuttings of {4},"
-     " {5} pieces used, {6} covers"
-     .format(NCAND, NKEPT, FLOOR, NS, SIZES[0], NPI, NCOV))
+     and SIZES == [24] and NPI == 192 and NCOV == 192 and GENERIC
+     and NPAIR == 15168 and NFAC == 13632 and NDIM == {0: 864, 1: 672}
+     and DISJ_OK, "C0",
+     "object: {0} candidates, {1} at cost {2}, {3} cuttings of {4}, {5} used pieces,"
+     " {6} covers; pair certificate {7}+{8}+{9}"
+     .format(NCAND, NKEPT, FLOOR, NS, SIZES[0], NPI, NCOV,
+             NFAC, NDIM.get(0, 0), NDIM.get(1, 0)))
 
 gate(PCSET == [1975] and BRS == [8] and COVEXACT, "C1",
      "each piece lies in {0} cuttings and {1} times {0} is {2}; each cover has {1}"
@@ -988,53 +1088,51 @@ gate(MP[1] == 1 and MC[1] == 1 and BLK[1] == 0, "C20",
      .format(MP[1], NBLKV, BLK[1]))
 
 gate(MP == [1, 1, 1, 1] and CEILS == 2 and EXCS == 1 and MREM, "C21",
-     "the {0} one-dimensional rows have piece multiplicities {1} and cover multiplicities"
-     " {2}: ceiling {3} = {4}, excess {5} = {6}"
+     "{0} one-dimensional sectors: piece multiplicities {1}, cover {2}, ceiling {3}={4},"
+     " rank deficit {5}={6}"
      .format(NCH, "".join(str(x) for x in MP), "".join(str(x) for x in MC),
              "+".join(str(x) for x in CEILK), CEILS,
              "+".join(str(x) for x in EXCK), EXCS))
 
-gate(EXC_LANE == 39 and CEILS == 2 and EXCS == 1, "C22",
-     "carried-in ceiling {0} less the measured rank {1} is an excess of {2}; these {3}"
-     " rows supply {4} of the ceiling and {5} of the excess"
-     .format(CEIL_LANE, RANK, EXC_LANE, NCH, CEILS, EXCS))
-
-gate(min(R1) >= 1 and R1N == 3 * NPI and min(R1) == 8 and max(R1) == 8, "C23",
+gate(min(R1) >= 1 and R1N == 3 * NPI and min(R1) == 8 and max(R1) == 8, "C22",
      "rejector one: flipping any single one of the {0} labels breaks a cover for each of"
      " the {1} labellings; fewest {2}, most {3}"
      .format(NPI, 3, min(R1), max(R1)))
 
-gate(min(R2) >= 1 and R2PER >= 24, "C24",
+gate(min(R2) >= 1 and R2PER >= 24, "C23",
      "rejector two: {0} opposite-label swaps, {1} per labelling, each breaks a cover;"
      " fewest {2}, most {3}".format(R2N, R2PER, min(R2), max(R2)))
 
-gate(R3EQ and R3N >= 1, "C25",
+gate(R3EQ and R3N >= 1, "C24",
      "rejector three: a transposed action breaks the transport exactly when the {0}"
      " swapped pieces differ; {1} of {2} break, {3} of {4} transpositions"
      .format(2, R3N, len(R3), R3T, len(TR)))
 
-gate(SBN == 2 and SBSZ == [8, 8] and SBSET, "C26",
+gate(SBN == 2 and SBSZ == [8, 8] and SBSET, "C25",
      "all {0} corner subsets: exactly {1} have cover sum 0 on every cover, both of size"
      " {2}, the masks {3} and {4}"
      .format(NSUB, SBN, SBSZ[0], min(SBLIND), max(SBLIND)))
 
-gate(NEGOK and ODDMATCH and NCORN == 5, "C27",
+gate(NEGOK and ODDMATCH and NCORN == 5, "C26",
      "complementing negates the labelling on all {0} subsets since a piece has {1}"
      " corners; subset {2} gives the flip parity labelling"
      .format(NSUB, NCORN, SODD))
 
-gate(not AXSBLIND and AXSSAME and not ORISUB, "C28",
-     "the {0} single-axis subsets are not blind: each has cover sums {1}; the orientation"
-     " sign is no subset labelling of the {2}".format(4, spread(AXSCNT[0]), NSUB))
+gate(not AXSBLIND and AXSSAME and not ORIMATCH, "C27",
+     "subset census: {0} axis histograms {1}; zero orientation matches among {2} vectors"
+     .format(4, spread(AXSCNT[0]), NSUB))
 
-gate(ELAPSED < 900 and RSSMB < 2500 and OUT[0] + 320 < 5200, "C29",
-     "budget: {0} s under 900, {1} MB under 2500, characters printed under 5200 with"
-     " {2} to spare".format(nd(ELAPSED), nd(RSSMB), nd(5200 - 320 - OUT[0])))
+gate(ELAPSED < AUDIT_TIMEOUT_SEC and RSSMB < 2500 and OUT[0] + 320 < 5200, "C28",
+     "support budget: {0} s under {1}, {2} MB under 2500, characters under 5200 with"
+     " {3} to spare".format(nd(ELAPSED), AUDIT_TIMEOUT_SEC, nd(RSSMB),
+                            nd(5200 - 320 - OUT[0])))
 
-gate(ASCII_OK and NO_PC and NO_TAB and NO_EM and NO_D9 and BAN_OK, "C30",
+gate(ASCII_OK and NO_PC and NO_TAB and NO_EM and NO_D9 and BAN_OK, "C29",
      "source hygiene: ASCII {0}, no tab {1}, no remainder sign {2}, no long dash {3},"
      " {4} barred strings absent {5}"
      .format(yn(ASCII_OK), yn(NO_TAB), yn(NO_PC), yn(NO_EM), NBAN, yn(BAN_OK)))
 
 emit("characters printed before this line: {0}".format(nd(OUT[0])))
 emit("TOTAL: PASS={0} FAIL={1}".format(STAT[0], STAT[1]))
+if STAT[1] != 0:
+    raise SystemExit(1)

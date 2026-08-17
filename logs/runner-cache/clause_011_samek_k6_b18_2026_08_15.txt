@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/clause_011_samek_k6_b18_2026_08_15.py
+runner_sha256: 5c06468d2728d1f985ae9441142ccbbc74b1a55d3df453c353667ff96bb82f2e
+input_fingerprint_sha256: 6a4de09a16ed225cdddfca303705b640f065d96021df8690c6caaaf103370b32
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+external_scientific_inputs: none; hop-costs are the named (0,1,1) rule on the finite 18-hop neighborhood B_18(0)
+package_local_integrity_reads: the note and current minimal axiom are read; no cache or governance surface is written
+negative_scope: the named rule is displayed, not adopted; it is not written into Admissibility and is not attached as an L1 hop-cost
+cache_write: false
+AUDIT_INPUT_PATHS:
+  docs/CLAUSE_011_SAMEK_K6_B18_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required static literal pair and both files exist
+PASS: ball-b18-only B_18(0) is the 18-hop neighborhood of the origin and contains both named targets
+PASS: clause-011-local seed-exit costs 1; axis 1-skeleton and support-drop cost 3; else 1
+n_sites 8473
+dijkstra_calls 1
+dijkstra_count=1
+k 6 t(6,0,0)=10 t(6,6,6)=18 t_axis^2/36=100/36 t_body^2/108=324/108 3t_axis^2=300 t_body^2=324 reverse=False
+PASS: theorem-1-times the same-k arrival times are the Dijkstra values t(6,0,0)=10 and t(6,6,6)=18
+PASS: theorem-2-k6 t(6,0,0)^2/36 > t(6,6,6)^2/108 fails (300 > 324 is false)
+PASS: one-dijkstra exactly one origin Dijkstra assigned a finite time to every ball site
+PASS: note-reports-times the note reports the two computed times
+PASS: note-reports-reverse-products the note records the displayed k=6 reverse comparison
+PASS: displayed-not-adopted the note displays the (0,1,1) scores and does not adopt them
+PASS: admissibility-unedited the current axiom memo still names Admissibility and does not contain the hop-cost rule
+PASS: no-axiom-edit note records hypothetical axiom status no edit
+PASS: claim-scope the note states the required claim_scope
+PASS: forbidden-tokens the note avoids the forbidden tokens
+PASS: uniqueness-not-required the note does not claim uniqueness of the named rule
+PASS: not-attach-l1 the displayed rule is not attached to L1
+PASS: k6-needs-b18 the k=6 body-diagonal site is absent from B_16(0) and present on B_18(0)
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,49 @@
+===== runner cache v1 =====
+runner: scripts/two_seed_clause_011_meet_2026_08_15.py
+runner_sha256: 5df839a891efb0a0ea747ac1c16c3433c3fbe039d00d037b5e927be04448afd8
+input_fingerprint_sha256: 8b9e06bc4a7645afba4369533a03d7ba32da2182fae4301baf58610f4eba8541
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/TWO_SEED_CLAUSE_011_MEET_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+claim_scope: Two-seed meetings under the named (0,1,1) hop-cost are scored vs ℓ¹. Displayed, not adopted.
+PASS: audit-input-paths declared inputs are the source note and the current axiom memo
+PASS: audit-input-literal AUDIT_INPUT_PATHS is a static string-literal tuple
+PASS: claim-scope note claim_scope matches the displayed scoring statement
+PASS: displayed-not-adopted the rule is displayed, not adopted
+PASS: not-in-admissibility (0,1,1) is not written into Admissibility
+PASS: not-attach-l1 the displayed rule is not attached to L1
+PASS: uniqueness-not-claimed uniqueness among hop-costs is not claimed
+PASS: no-axiom-edit note records hypothetical axiom status no edit
+PASS: forbidden-absent forbidden phrases are absent from the source note
+n_sites 195
+lex_first (1, 0, 0)
+meet_t 1
+|M| 1
+n_mid_011 33
+n_mid_l1 25
+var_011 0.01142337008814
+var_l1 0.00995038158264
+dijkstra_calls 2
+PASS: one-pair-dijkstra exactly one pair of Dijkstras ran
+PASS: union-b4 the union B_4(0)∪B_4((2,0,0)) has 195 sites
+PASS: reachable every site of the union is reached from both seeds
+PASS: lex-first-meeting lex-first meeting site is (1,0,0) at t=1
+PASS: meeting-cardinality |M| = 1
+PASS: matching-member-front first meeting stays the matching-member front (1,0,0)
+PASS: note-records-meeting note records the lex-first meeting site, time, and |M|
+PASS: var-011 midplane population variance under (0,1,1) matches the reported value
+PASS: var-l1 midplane population variance under ℓ¹ matches the reported value
+PASS: var-l1-smaller var(|v-s0|_2/t0) is strictly smaller under ℓ¹ than under (0,1,1)
+PASS: note-records-variances note records both midplane variances and the comparison
+PASS: seed-relative-clauses seed-exit is cheap; both-weights-1 and support drop cost 3
+PASS: axiom-untouched the axiom memo is an input only and still names the four axioms
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

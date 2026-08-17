@@ -1,0 +1,51 @@
+===== runner cache v1 =====
+runner: scripts/four_law_variance_reverse_b6_2026_08_15.py
+runner_sha256: 83ecdd1745f744c6f8904856b9b53192ee7a4dc78efaa4f2c2ab1bf9ccd9a20d
+input_fingerprint_sha256: d2357366b974eeec0d63d92d26a62d664b5d4c33ff1cb82f8511de4f3c5f6c53
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/FOUR_LAW_VARIANCE_REVERSE_B6_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+claim_scope: On B_6(0), ρ, α, ν, and ℓ¹ are scored for diamond reverse and for var(|v|_2/t). Displayed, not adopted.
+PASS: audit-input-paths declared inputs are the source note and the current axiom memo
+PASS: audit-input-literal AUDIT_INPUT_PATHS is a static string-literal tuple
+PASS: claim-scope note claim_scope matches the displayed four-law scoring statement
+PASS: displayed-not-adopted the four laws are displayed, not adopted
+PASS: not-in-admissibility no law is written into Admissibility
+PASS: not-attach-l1 no displayed law is attached to L1
+PASS: not-leftover the scores are joint on the same 376 sites, not leftover of one-law scores
+PASS: no-axiom-edit note records hypothetical axiom status no edit
+PASS: forbidden-absent forbidden phrases are absent from the source note
+n_sites 377
+n_nonzero 376
+rho t(4,0,0) 12 t(2,2,2) 14 12 t_axis^2 1728 16 t_diag^2 3136 reverse False var 0.00067960829822
+alpha t(4,0,0) 8 t(2,2,2) 8 12 t_axis^2 768 16 t_diag^2 1024 reverse False var 0.00548987632086
+nu t(4,0,0) 10 t(2,2,2) 8 12 t_axis^2 1200 16 t_diag^2 1024 reverse True var 0.00590563902870
+l1 t(4,0,0) 4 t(2,2,2) 6 12 t_axis^2 192 16 t_diag^2 576 reverse False var 0.01350203761919
+var_order rho < alpha < nu < l1
+dijkstra_calls 4
+PASS: four-dijkstras exactly four Dijkstras ran, one per named law
+PASS: ball-b6 B_6(0) has 377 sites and 376 nonzero sites
+PASS: same-376-sites every law is scored on the same 376 nonzero sites
+PASS: l1-is-norm ℓ¹ Dijkstra arrivals equal |v|_1
+PASS: rho-times ρ arrivals are t(4,0,0)=12 and t(2,2,2)=14
+PASS: alpha-times α arrivals are t(4,0,0)=8 and t(2,2,2)=8
+PASS: nu-times ν arrivals are t(4,0,0)=10 and t(2,2,2)=8
+PASS: l1-times ℓ¹ arrivals are t(4,0,0)=4 and t(2,2,2)=6
+PASS: reverse-bits only ν reverses 12 t_axis^2 > 16 t_diag^2
+PASS: note-records-times note records all four (4,0,0) and (2,2,2) arrivals and reverse bits
+PASS: note-records-variances note records all four population variances and the order
+PASS: var-order computed variance order is ρ < α < ν < ℓ¹
+PASS: nu-beats-l1 ν reverses and has variance strictly below ℓ¹
+PASS: rho-rounder-no-reverse ρ has the smallest variance and does not reverse
+PASS: named-clauses ρ, α, and ν clauses match the displayed algebra on seed, axis, and drop hops
+PASS: axiom-untouched the axiom memo is an input only and still names the four axioms
+TOTAL: PASS=25 FAIL=0
+
+----- stderr -----
+

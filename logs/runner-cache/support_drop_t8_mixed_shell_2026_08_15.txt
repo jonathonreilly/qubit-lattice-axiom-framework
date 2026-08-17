@@ -1,0 +1,64 @@
+===== runner cache v1 =====
+runner: scripts/support_drop_t8_mixed_shell_2026_08_15.py
+runner_sha256: 6bb1bddd311279936255f7b892148112d4b0ed0dad59b063aeb3d95583644b18
+input_fingerprint_sha256: f56eea009b341a40e77cd528c0e24d744c321e0ea560032492e92e366efd0adc
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+construction: one Dijkstra for named support-drop hop-cost nu on B_6(0)
+negative_scope: nu is displayed, not written into Admissibility; L1 is not attached
+PASS: audit-inputs — AUDIT_INPUT_PATHS is the required string-literal pair and both files exist
+PASS: ball-census — B_6(0) has 377 integer sites and 376 nonzero sites
+PASS: rotation-group — the proper cubic group used for types has 24 elements
+PASS: one-dijkstra-total — every site of B_6(0) receives a finite arrival time
+PASS: reverse-critical-shell — t(2,2,2)=8 and t(4,0,0)=10, so t=8 is the reverse-critical shell
+PASS: l1-not-identified — arrival t is not the taxicab length: t(1,0,0)=3 and t(2,2,2)=8 != 6
+PASS: named-nu-clauses — nu is 3 on seed-exit, both-weight-1, and support drop, else 1
+PASS: orbit-inside-ball — the G+ orbit of (5, 1, 0) lies in B_6(0)
+PASS: orbit-constant-t — arrival is constant on the G+ orbit of (5, 1, 0)
+PASS: orbit-inside-ball — the G+ orbit of (4, 2, 0) lies in B_6(0)
+PASS: orbit-constant-t — arrival is constant on the G+ orbit of (4, 2, 0)
+PASS: orbit-inside-ball — the G+ orbit of (4, 1, 1) lies in B_6(0)
+PASS: orbit-constant-t — arrival is constant on the G+ orbit of (4, 1, 1)
+PASS: orbit-inside-ball — the G+ orbit of (3, 3, 0) lies in B_6(0)
+PASS: orbit-constant-t — arrival is constant on the G+ orbit of (3, 3, 0)
+PASS: orbit-inside-ball — the G+ orbit of (3, 1, 2) lies in B_6(0)
+PASS: orbit-constant-t — arrival is constant on the G+ orbit of (3, 1, 2)
+PASS: orbit-inside-ball — the G+ orbit of (3, 2, 1) lies in B_6(0)
+PASS: orbit-constant-t — arrival is constant on the G+ orbit of (3, 2, 1)
+PASS: orbit-inside-ball — the G+ orbit of (2, 2, 2) lies in B_6(0)
+PASS: orbit-constant-t — arrival is constant on the G+ orbit of (2, 2, 2)
+t8_gplus_types:
+  (2, 2, 2)  |v|_2^2=12  orbit=8
+  (3, 1, 2)  |v|_2^2=14  orbit=24
+  (3, 2, 1)  |v|_2^2=14  orbit=24
+  (3, 3, 0)  |v|_2^2=18  orbit=12
+  (4, 1, 1)  |v|_2^2=18  orbit=24
+  (4, 2, 0)  |v|_2^2=20  orbit=24
+  (5, 1, 0)  |v|_2^2=26  orbit=24
+t8_radius_squares: [12, 14, 18, 20, 26]
+PASS: thm1-lex-list — the lex-sorted G+ representatives at t=8 are the seven computed types
+PASS: thm1-contains-222 — the reverse-critical body-diagonal type (2,2,2) is on the t=8 list
+PASS: thm1-note-table — the note displays each representative with |v|_2^2 and orbit size
+PASS: thm2-mixed-radii — the t=8 list uses more than one Euclidean radius
+PASS: thm2-shared-radius-not-same-type — (3,3,0) and (4,1,1) share |v|_2^2=18 but are distinct G+ types
+PASS: thm2-chiral-pair — (3,1,2) and (3,2,1) are distinct 24-point G+ orbits of the same radius
+PASS: coverage — the seven orbits partition every t=8 site and omit every other site
+PASS: source-lattice — current Lattice wording is pinned in the axiom memo and the note
+PASS: source-admissibility — current Admissibility wording is pinned and nu is not written into it
+PASS: thm3-no-l1 — the note refuses to attach L1 and treats the list as displayed, not adopted
+PASS: claim-scope — front matter carries the declared claim_scope
+PASS: forbidden-phrases — the note avoids the dispatch-forbidden phrases
+PASS: record-unused — Record is quoted only as an unused boundary
+PASS: b6-only — every executed hop and every named type stays inside B_6(0)
+per_element: checked exactly — each t=8 G+ representative, |v|_2^2, and orbit size
+per_site: checked exactly — first-arrival on the 377-site ball
+per_mode: not used
+per_block: checked exactly — the seven-orbit partition of the t=8 shell
+lattice_wide: checked and not executed — no law outside B_6(0) is claimed
+TOTAL: PASS=35 FAIL=0
+
+----- stderr -----
+

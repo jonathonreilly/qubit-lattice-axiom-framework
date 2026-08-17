@@ -1,0 +1,68 @@
+===== runner cache v1 =====
+runner: scripts/clause_011_face_diagonal_b12_2026_08_15.py
+runner_sha256: 7c23651c9b6f273e54667ba2ba6c81c9a3dea0093cb9f223cbc82a21422f775d
+input_fingerprint_sha256: 6d593600b11e40ba70d470bc193ec0e76bfc144c51669a9c12444be05fa4ff2d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/CLAUSE_011_FACE_DIAGONAL_B12_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+dijkstra_count_budget: 1
+claim_scope: Face-diagonal reverse under the named (0,1,1) hop-cost on B_12(0) is reported. Displayed, not adopted.
+external_scientific_inputs: current Lattice and Admissibility wording; no observations or fits
+integrity_reads: this runner, its note, and the axiom memo; no other scientific inputs
+construction: named (0,1,1) hop-cost on B_12(0) with one origin Dijkstra
+negative_scope: displayed, not adopted; not written into Admissibility; L1 not attached
+PASS: audit-inputs declared source-bound inputs exist as the required string-literal tuple
+PASS: audit-input-literals AUDIT_INPUT_PATHS is a static two-string literal in this runner
+PASS: source-lattice current cubic nearest-neighbor wording is pinned
+PASS: source-admissibility current one-fixed-rule wording is pinned
+PASS: source-record-boundary current lock/content/unreadable-at-absence wording is pinned
+PASS: source-formation-boundary formation site/probability/rate remains outside Admissibility
+PASS: ball-cardinality B_12(0) has exactly 2625 integer sites
+PASS: targets-inside the six scored sites lie in B_12(0) and (12,1,0) does not
+PASS: clause-identity seed-exit is cheap and axis-one and support-drop cost 3
+PASS: one-dijkstra exactly one Dijkstra computation is used
+PASS: finite-times every in-ball target is reached by a finite path
+arrival_times:
+  t(4, 0, 0)=8  t^2/|v|_2^2=64/16
+  t(8, 0, 0)=12  t^2/|v|_2^2=144/64
+  t(12, 0, 0)=18  t^2/|v|_2^2=324/144
+  t(2, 2, 0)=4  t^2/|v|_2^2=16/8
+  t(4, 4, 0)=8  t^2/|v|_2^2=64/32
+  t(6, 6, 0)=12  t^2/|v|_2^2=144/72
+PASS: time-400 computed t(4,0,0)=8 is written in the note
+PASS: time-800 computed t(8,0,0)=12 is written in the note
+PASS: time-1200 computed t(12,0,0)=18 is written in the note
+PASS: time-220 computed t(2,2,0)=4 is written in the note
+PASS: time-440 computed t(4,4,0)=8 is written in the note
+PASS: time-660 computed t(6,6,0)=12 is written in the note
+reverse_bits:
+  face (4, 0, 0) vs (2, 2, 0): True 16 t(2, 2, 0)^2=256 8 t(4, 0, 0)^2=512
+  face (8, 0, 0) vs (4, 4, 0): True 64 t(4, 4, 0)^2=4096 32 t(8, 0, 0)^2=4608
+  face (12, 0, 0) vs (6, 6, 0): True 144 t(6, 6, 0)^2=20736 72 t(12, 0, 0)^2=23328
+PASS: face-400-220 ((4,0,0),(2,2,0)) has smaller t^2/|v|_2^2 on the more-diagonal site
+PASS: face-800-440 ((8,0,0),(4,4,0)) has smaller t^2/|v|_2^2 on the more-diagonal site
+PASS: face-1200-660 ((12,0,0),(6,6,0)) has smaller t^2/|v|_2^2 on the more-diagonal site
+PASS: witnessing-paths named in-ball walks realize the four displayed arrivals used in reverse bits
+PASS: not-b8-leftover t(8,0,0)=12 on B_12(0) is not the B_8(0) leftover 14
+PASS: graph-length-contrast uniform graph-length does not reverse the three face pairs and is not attached
+PASS: mutation-seed-exit charging seed-exit 3 changes the opening hop of the axis witness
+PASS: note-contract machine fields, exhibition wording, N1-N8, and forbidden-phrase hygiene hold
+PASS: claim-scope front matter keeps the dispatch claim_scope
+PASS: not-in-admissibility (0,1,1) is not written into Admissibility
+PASS: forbidden-phrases forbidden phrases are absent from the source note
+PASS: axiom-untouched the axiom memo is an input only
+per_element: inward-weight clauses and hop-costs are evaluated on named directed nearest-neighbor edges
+per_site: arrivals are read at the six in-ball face and axis targets
+per_mode: reverse is the exact integer comparison on the three face pairs
+per_block: one Dijkstra on B_12(0) and the named (0,1,1) hop-cost
+lattice_wide: checked and not executed — no Admissibility edit and L1 is not attached
+TOTAL: PASS=29 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/clause_011_face_reverse_vs_k_b16_2026_08_15.py
+runner_sha256: 582f9bb831cbc1b5a6f4f6abf03568ff53f77f0eb8f6b106f4a0385191f78f8c
+input_fingerprint_sha256: 1ba2273084ca63e9c41aae6cd76637ea1cab78b7caa927b04ab1c4872aaa1b03
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+external_scientific_inputs: none; hop-costs are the named (0,1,1) rule on the finite 16-hop neighborhood B_16(0)
+package_local_integrity_reads: the note and current minimal axiom are read; no cache or governance surface is written
+negative_scope: the named rule is displayed, not adopted; it is not written into Admissibility and is not attached as an L1 hop-cost
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required static literal pair and both files exist
+PASS: ball-b16-only B_16(0) is the 16-hop neighborhood of the origin and contains every named target
+PASS: clause-011-local seed-exit costs 1; axis 1-skeleton and support-drop cost 3; else 1
+k=1 t(2,0,0)=4 t(1,1,0)=2 t_axis^2/(4k^2)=4.0 t_face^2/(2k^2)=2.0 16>8 reverse=True
+k=2 t(4,0,0)=8 t(2,2,0)=4 t_axis^2/(4k^2)=4.0 t_face^2/(2k^2)=2.0 64>32 reverse=True
+k=3 t(6,0,0)=10 t(3,3,0)=6 t_axis^2/(4k^2)=2.7777777777777777 t_face^2/(2k^2)=2.0 100>72 reverse=True
+k=4 t(8,0,0)=12 t(4,4,0)=8 t_axis^2/(4k^2)=2.25 t_face^2/(2k^2)=2.0 144>128 reverse=True
+k=5 t(10,0,0)=14 t(5,5,0)=10 t_axis^2/(4k^2)=1.96 t_face^2/(2k^2)=2.0 196>200 reverse=False
+k=6 t(12,0,0)=16 t(6,6,0)=12 t_axis^2/(4k^2)=1.7777777777777777 t_face^2/(2k^2)=2.0 256>288 reverse=False
+k=7 t(14,0,0)=18 t(7,7,0)=14 t_axis^2/(4k^2)=1.653061224489796 t_face^2/(2k^2)=2.0 324>392 reverse=False
+k=8 t(16,0,0)=22 t(8,8,0)=16 t_axis^2/(4k^2)=1.890625 t_face^2/(2k^2)=2.0 484>512 reverse=False
+dijkstra_count=1
+dijkstra_calls 1
+PASS: theorem-1-times the named arrivals are 4,8,10,12,14,16,18,22 on axis and 2,4,6,8,10,12,14,16 on face
+PASS: theorem-2-bits reverse holds at k=1..4 and fails at k=5..8
+PASS: keep-k4-not-only-k5 k=4 still reverses; failure is not isolated at k=5
+PASS: one-dijkstra exactly one origin Dijkstra assigned a finite time to every ball site
+PASS: note-reports-times the note reports every computed axis and face time
+PASS: note-reports-comparisons the note reports the eight displayed reverse comparisons
+PASS: displayed-not-adopted the note displays the (0,1,1) scores and does not adopt them
+PASS: admissibility-unedited the current axiom memo still names Admissibility and does not contain the hop-cost rule
+PASS: no-axiom-edit note records hypothetical axiom status no edit
+PASS: claim-scope the note states the required claim_scope
+PASS: forbidden-tokens the note avoids the forbidden tokens
+PASS: uniqueness-not-required the note does not claim uniqueness of the named rule
+PASS: not-attach-l1 the displayed rule is not attached to L1
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

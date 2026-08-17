@@ -1,6 +1,6 @@
 {
- "edge_count": 15747,
- "node_count": 5549,
+ "edge_count": 15748,
+ "node_count": 5550,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -6629,6 +6629,10 @@
   "heat_kernel_unique_diffusion_kernel_among_candidate_gauge_actions_narrow_theorem_note_2026-06-08": {
    "deps_hash": "7b79e2bc121e",
    "out_degree": 3
+  },
+  "height_ridge_face_reverse_vs_k_b16_bounded_theorem_note_2026-08-15": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "hermitian_lift_theta_h_pk_bounded_narrow_theorem_note_2026-05-17": {
    "deps_hash": "df15e3194fcf",

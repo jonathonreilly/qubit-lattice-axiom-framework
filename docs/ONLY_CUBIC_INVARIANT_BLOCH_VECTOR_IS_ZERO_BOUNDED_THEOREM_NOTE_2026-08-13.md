@@ -15,7 +15,7 @@ runner: scripts/only_cubic_invariant_bloch_vector_is_zero_2026_08_13.py
 
 **Audit:** unset; independent audit remains a separate lane
 
-**Status:** bounded-support
+**Status:** proposed_retained
 
 **Status authority:** independent audit only. This source changes no axiom,
 primitive, framework rule, or audit verdict.
@@ -32,10 +32,17 @@ actual_current_surface_status: bounded-support
 target_claim_type: bounded_theorem
 claim_type_reason: "Exact Q-linear algebra of the proper cubic 3-vector representation and the Bloch affine chart; physical identification of a site law with a Bloch density remains a representation hypothesis, and a non-cubic-symmetric 6-tuple is not constrained."
 trace_class: frontier_discovery
+target_claim_id: null
+target_blocker_text: null
+source_of_blocker_text: frontier_question
+reachability_to_target: unknown_frontier
 artifact_role: theorem
+next_trace_action: "Run independent audit on the bounded algebra; identify any downstream consumer separately."
+conditional_surface_status: "conditional on a site-law Bloch-density representation and a cubic-symmetric neighborhood"
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
-hypothetical_axiom_status: "no edit, adoption, or vacuum identification"
+hypothetical_axiom_status: null
+admitted_observation_status: null
 ```
 
 ## Load-bearing sources and declared domain

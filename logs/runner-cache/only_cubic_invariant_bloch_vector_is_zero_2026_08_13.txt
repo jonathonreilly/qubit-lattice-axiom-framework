@@ -1,7 +1,7 @@
 ===== runner cache v1 =====
 runner: scripts/only_cubic_invariant_bloch_vector_is_zero_2026_08_13.py
 runner_sha256: 72c79473bb8bc7abe1c2a6def5313efa01fe06c4962f6daea82dbfe4a5ea9842
-input_fingerprint_sha256: 95f578870ad0a9d25b1774d1616f6bfdbacf404cebf2e1ce42de4ba37d1d17e7
+input_fingerprint_sha256: 1eeffc08387d2146c5664ccd4c1ff81d789aaf4199980e9968cb34ad422c7aca
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.05

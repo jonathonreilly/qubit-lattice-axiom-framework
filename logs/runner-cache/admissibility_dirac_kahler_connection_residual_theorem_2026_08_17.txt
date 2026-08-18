@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_connection_residual_theorem_2026_08_17.py
+runner_sha256: fcb838d857f2ad44d3770f7a528d0998c55bdc8a923789c4c030c8441bf7fdf3
+input_fingerprint_sha256: 3003e0a92ec8539b081461d171f6c4e326ffccaced6519d90915165e17366245
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 10.47
+status: ok
+----- stdout -----
+[PASS] A-authority: Block 133 blobs, ancestors 132--103, and Block 105 note/runner are content-bound
+[PASS] B-the-chart-differentials: the four displayed 32x32 chart differentials have rank 16 and square zero; frame transitions are extracted exactly
+[PASS] C-the-matching-inconsistency: the 256x1024 and 512x1024 linear systems are inconsistent, with one nonzero class in cokernels of dimensions 64 and 224
+[PASS] D-the-strong-form: matching is linear and already empty before the additional quadratic d^2=0 constraint, so no matching d exists even allowing d^2!=0
+[PASS] E-the-residual-operator: Omega=2*i*s_t*T_t^-1*P_even*P_x is the rank-16 nilpotent residual; P_even*P_x*P_even=0, the triple cocycle is exact, and -89/140 is reproduced
+[PASS] F-the-gauge-powerlessness: direct enumeration gives four distinct adjoint actions with central kernel order 2, and the eight-lift and four-image system orbits coincide
+[PASS] G-the-item-one-discharge: Block 105 section 12 item 1 is cited byte-exactly; Omega is not a coboundary and discharges the second branch, while atlas-invariance stays OPEN
+[PASS] H-scope: connection-residual, strong-form, grading, Cech, gauge, atlas-open, N1--N8/W1/N5, no-go, and TOE firewalls are present
+AUTHORITY: Block133 parent=80d208f0c12e21fd985d01e5f807a9d34c00ef11; note/runner/cache, ancestors 132--103, and Block105 note/runner pins exact
+CHARTS: four 32x32 differentials have ranks=(16,16,16,16) and d^2=0; displayed transition rank/support=32/32; triple cocycle=0
+SYSTEMS: two-chart=256x1024 rank[A|b]=192|193 coker=64; four-chart=512x1024 rank[A|b]=288|289 coker=224; verdict=INCONSISTENT
+STRONG_FORM: Sol(linear matching)=empty => no common matching d even allowing d^2!=0; nilpotency is an additional constraint
+DIAGNOSTIC: midpoint Dbar is not a solution of the matching system; Dbar^2=-(9/100)T_x^2 and rank(Dbar^2)=32
+RESIDUAL: Omega=2*i*s_t*T_t^-1*P_even*P_x; P_x is the spatial shift; values={-8i/5,+8i/5}, rank=16, Omega^2=0 structurally from P_even*P_x*P_even=0; action entry=-89/140
+GAUGE: eight projective lifts, four distinct adjoint actions, central kernel order 2; cover orbit=four-image orbit
+ITEM_ONE: byte-exact Block105 section-12 item-1 disjunction; second branch discharged; Cech [Omega] is not a coboundary; atlas-invariance OPEN
+N5: per_element: exact chart-nilpotency, matching-inconsistency, cokernel, residual-form, grading, triple-cocycle, and adjoint-count certificates are checked
+per_site: one Grassmann mode per fine site on the antiperiodic reflection torus
+per_mode: every displayed chart carries an exactly nilpotent differential but the chart-matching system is inconsistent at both levels with the residual a single nonzero cokernel class
+per_block: the common differential does not exist even without nilpotency and the exact connection residual is the displayed graded-shift operator — block 105's item one is discharged through its second branch
+lattice_wide: checked and not executed — the atlas-invariance of the residual class, the connection-with-residual curved formulation, richer carriers, the actual ADM/history transporter completion, joint gravity, the gravity constraint quotient beyond the displayed carrier, Records, audit retention, and TOE closure remain open
+RESULT: the campaign closes on the connection-residual theorem — no flat common differential exists and the exact obstruction is the displayed nilpotent graded-shift operator, discharging the lane's oldest open item through its second branch and handing the next campaign the atlas-invariance question
+DECISION_CUT: pose the connection-with-residual curved formulation and the invariance question; reject flat-differential searches
+TOE: zero obligation retirement; no TOE percentage moves; retained-positive end-to-end theory count remains zero; gravity constraint quotient remains unexecuted; actual ADM/history transporter remains open
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

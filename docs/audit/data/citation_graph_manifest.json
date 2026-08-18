@@ -1,6 +1,6 @@
 {
- "edge_count": 16020,
- "node_count": 5562,
+ "edge_count": 16026,
+ "node_count": 5563,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -432,6 +432,10 @@
   },
   "admissibility_dirac_kahler_conjugate_pair_observable_space_bounded_theorem_note_2026-08-17": {
    "deps_hash": "be5cdf7f5699",
+   "out_degree": 6
+  },
+  "admissibility_dirac_kahler_connection_residual_theorem_bounded_theorem_note_2026-08-17": {
+   "deps_hash": "3b5beff48617",
    "out_degree": 6
   },
   "admissibility_dirac_kahler_constraint_quotient_coupling_bounded_theorem_note_2026-08-16": {

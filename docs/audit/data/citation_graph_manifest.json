@@ -1,6 +1,6 @@
 {
- "edge_count": 16016,
- "node_count": 5561,
+ "edge_count": 16020,
+ "node_count": 5562,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -533,6 +533,10 @@
   "admissibility_dirac_kahler_two_block_observable_algebra_bounded_theorem_note_2026-08-17": {
    "deps_hash": "1ed6a588bb94",
    "out_degree": 5
+  },
+  "admissibility_dirac_kahler_two_block_states_dynamics_bounded_theorem_note_2026-08-17": {
+   "deps_hash": "b79692048c4c",
+   "out_degree": 4
   },
   "admissibility_dirac_kahler_wick_phase_fine_site_staggered_os_lorentz_boundary_bounded_theorem_note_2026-08-14": {
    "deps_hash": "825cb5c969e8",

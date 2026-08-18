@@ -1,0 +1,46 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_two_block_states_dynamics_2026_08_17.py
+runner_sha256: 3548e51cac2164a3c0fdbe7e7b6b3dd96f267b57f80dc0bfdb4aed2efc8e87cb
+input_fingerprint_sha256: 34947b322d9c2b75868755cad5ee1d51d087f51d86d058aaf831e538656cc216
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 58.19
+status: ok
+----- stdout -----
+[PASS] A-authority: Block 132 blobs, ancestors 131--103, and landed Block 119 runner/cache are pinned
+[PASS] B-the-state-space: displayed linear algebra gives dim 5, two Bloch disks, and the two RP^1 pure families, fixture-independently
+[PASS] C-the-certified-vacuum: both fixtures give pinned positive direction weights, a biased central mixture, and only block (1,3) maximally mixed
+[PASS] D-the-normalization-ledger: exactly two positive real moves give Tr/4 and preserve involutivity and positivity; Block 132 supplies the nonsquare import
+[PASS] E-the-momentum-orbits: e^{itP} rotates the two quadrature planes at rate 2 with differences (-2,+2), while the conserving algebra is diagonal R^4
+[PASS] F-the-balanced-equator: |c_1|=|c_3| gives the full free-relative-phase Bloch equator; phi-invariant admissible observables are exactly span{I,Z}
+[PASS] G-the-summary-table: the six basis rows have exact conserving, balanced-measurable, and certified-frame vacuum columns with no tensor claim
+[PASS] H-scope: frame, orbit, equator, exclusion, N1--N8/W1/N5, no-go, and TOE firewalls are present
+AUTHORITY: Block132 parent=0236823bed5b648ad8357e5d1b79bdfe1be36c39; note/runner/cache and Block119 pins exact
+STATE: D_02=w(I+x_02 X+z_02 Z)/2, D_13=(1-w)(I+x_13 X+z_13 Z)/2; 0<=w<=1, x_j^2+z_j^2<=1; affine dim=5; fixture-independent
+PURE: w=1 or 0 and rho=vv^T/(v^Tv), v~-v; each boundary family is RP^1 and an interior central mixture is not pure
+VACUUM-PIN c=5/13: literal exact q0,q1 pins; q2=g02*q0; q3=q1; positive direction intervals and unequal block-total intervals
+VACUUM-PIN c=3/5: literal exact q0,q1 pins; q2=g02*q0; q3=q1; positive direction intervals and unequal block-total intervals
+CERTIFIED FRAME: D_cert=diag(q0,q1,g02*q0,q1)/N, N=q0(1+g02)+2q1; W02=q0(1+g02)/N != W13=2q1/N; rho02=diag(1,g02)/(1+g02) is biased, rho13=I/2
+NORMALIZED FRAME: two moves: y2->y2/sqrt(g02) (Block132 certifies sqrt(g02) notin Q(rho)), then (y1,y3)->sqrt(q0/q1)(y1,y3); the result is Tr_4/4
+ORBITS: d02=-2: X->cos(2t)X-sin(2t)Y; d13=+2: X->cos(2t)X+sin(2t)Y; the Y rotations have the opposite matching signs; I,Z fixed; diagonal R^4 conserving
+BALANCED: |c1|=|c3| gives rho=(I+r(cos(phi)X+sin(phi)Y))/2 with free relative phase; <aI+bX+cZ>=a+r*b*cos(phi), so span{I,Z} only; Y is not an admissible Sym_2(R) observable
+TABLE: observable | P-conserving | balanced-measurable | certified-frame vacuum value
+  I_02 | yes | null | q_0*(g_02 + 1)/(g_02*q_0 + q_0 + 2*q_1)
+  Z_02 | yes | null | -q_0*(g_02 - 1)/(g_02*q_0 + q_0 + 2*q_1)
+  X_02 | no  | null | 0
+  I_13 | yes | yes  | 2*q_1/(g_02*q_0 + q_0 + 2*q_1)
+  Z_13 | yes | yes  | 0
+  X_13 | no  | no   | 0
+PHYSICS: exact expectations and selection rules are complete on the direct sum; no tensor-product structure is claimed
+N5: per_element: exact state-space, vacuum-weight, normalization, orbit, equator, and summary certificates are checked
+per_site: one Grassmann mode per fine site on the antiperiodic reflection torus
+per_mode: the certified vacuum is a biased central mixture with the conjugate block maximally mixed by force and the per-sector-real block biased, while momentum counter-rotates the two blocks' quadratures at rate two
+per_block: the balanced gravity sector is the full bloch equator whose invariant observables are exactly the identity and z because the y quadrature is not an admissible observable — the certified package's measurement physics is complete with exact expectations and selection rules
+lattice_wide: checked and not executed — the common nilpotent differential, the flip work order, richer carriers, the actual ADM/history transporter completion, joint gravity, the gravity constraint quotient beyond the displayed carrier, Records, audit retention, and TOE closure remain open
+RESULT: the two-block algebra's measurement theory is complete — a biased certified vacuum with a two-step normalization ledger, counter-rotating momentum dynamics with the diagonal conserved, and a balanced gravity sector that measures exactly the identity and z
+DECISION_CUT: the common differential and richer carriers are the frontier; reject frame-ambiguous vacuum claims; advance exact state expectations and selection rules only
+TOE: zero obligation retirement; no TOE percentage moves; retained-positive end-to-end theory count remains zero; gravity constraint quotient remains unexecuted; actual ADM/history transporter remains open
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

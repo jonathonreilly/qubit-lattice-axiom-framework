@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_residual_invariance_theorem_2026_08_17.py
+runner_sha256: 0d45d46ef148461a5df56710da6937a355879d9a627010f6f2d65d533544e2c8
+input_fingerprint_sha256: 744c19ef903947278e186ca9b9959a969ece89f47b6266396114062d546cc303
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 82.53
+status: ok
+----- stdout -----
+[PASS] A-authority: Block 134 parent blobs, ancestors 133--103, and Block 105 note/runner are content-bound
+[PASS] B-the-atlas-class: the mod-2 origins form the regular Z_2^2 one-site-translation torsor; the full four-origin atlas is the unique nonempty closed choice and Block 134 supplies 8 lifts/4 adjoint actions
+[PASS] C-the-exhaustive-verdict: all 64 shifted-overlap and all 256 full-atlas adjoint systems are enumerated, inconsistent, and have the exact 192|193 and 288|289 rank profiles
+[PASS] D-the-coboundary-characterization: the orbit lies on a+b=1 while the directly computed coboundary image is a+b=0, so they never meet; (1-n)+n=1 is bookkeeping
+[PASS] E-the-parameter-sweep: at three exact points varying s_x, mass, and shear/volume, every rank profile persists for fixed nonzero s_t; at s_t=0 every system is consistent and every residual vanishes
+[PASS] F-the-normal-form: samples spanning both strict orbit types obey W K W^dagger=2*i*s_t*T_t^-1*P_even*P_x, rank 16 and square zero
+[PASS] G-the-honest-exception: the explicit diagonal subset {(0,0),(1,1)} is not translation-closed and its identity-frame matching system is consistent
+[PASS] H-scope: class, exhaustive, coboundary, bookkeeping, parameter, exception, no-go, N1--N8/W1/N5, and TOE firewalls are present
+AUTHORITY: Block134 parent=acb7d8109bf751c909364aec92c4d833492cfa6c; note/runner/cache, ancestors 133--103, and Block105 note/runner pins exact
+ATLAS: origins=(t mod 2,x mod 2)=Z_2^2; both one-site generators are lattice-certified; action=regular; unique nonempty translation-closed set=all 4; lifts/adjoints=8/4
+SYSTEMS: shifted overlaps=64/64 inconsistent at rank[A|b]=192|193; full atlases=256/256 inconsistent at 288|289; adjoint sufficiency is imported from Block134
+COBOUNDARY: strict orbit points in (K0,K1) are (-1,2),(1,0) on a+b=1; im(delta)={(-q,q)} lies on a+b=0; the sets never meet; (1-n)+n=1 is bookkeeping
+PARAMETERS: 3-point representative-free sweep varies s_x, mass, and shear/volume at fixed s_t=4/5; the system obstruction is s_t-only and vanishes exactly at s_t=0
+NORMAL_FORM: both orbit types satisfy W K W^dagger=2*i*s_t*T_t^-1*P_even*P_x, rank=16, square=0
+EXCEPTION: charts=((0, 0), (1, 1)), translation_closed=false, rank[A|b]=224|224, verdict=CONSISTENT
+N5: per_element: exact origin-premise, exhaustive-verdict, coboundary-image, parameter-sweep, normal-form, and exception certificates are checked
+per_site: one Grassmann mode per fine site on the antiperiodic reflection torus
+per_mode: every admissible atlas in the translation-closed class yields an inconsistent matching system whose residual orbit lies on the unit-augmentation line while the coboundary image has augmentation zero
+per_block: the residual class is invariant physics for the displayed class — the obstruction is a system property of the time shear alone, vanishing exactly at zero time shear, with an explicit consistent exception displaying the class boundary
+lattice_wide: checked and not executed — the connection-with-residual curved formulation, richer carriers, the joint-lane program, the actual ADM/history transporter completion, joint gravity, the gravity constraint quotient beyond the displayed carrier, Records, audit retention, and TOE closure remain open
+RESULT: the campaign closes on the residual invariance theorem — the obstruction to curved OS is invariant physics for the displayed atlas class, powered entirely by the time shear, with the coboundary separation carrying the proof and the class boundary displayed
+DECISION_CUT: build the connection-with-residual formulation on the invariant class; reject tautological-invariant framings and unqualified no-go readings
+TOE: zero obligation retirement; no TOE percentage moves; retained-positive end-to-end theory count remains zero; gravity constraint quotient remains unexecuted; actual ADM/history transporter remains open
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

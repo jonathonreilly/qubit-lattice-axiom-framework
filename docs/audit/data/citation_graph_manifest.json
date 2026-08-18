@@ -1,6 +1,6 @@
 {
- "edge_count": 16026,
- "node_count": 5563,
+ "edge_count": 16032,
+ "node_count": 5564,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -497,6 +497,10 @@
   "admissibility_dirac_kahler_reflection_intertwiner_completion_bounded_theorem_note_2026-08-16": {
    "deps_hash": "118a19942005",
    "out_degree": 4
+  },
+  "admissibility_dirac_kahler_residual_invariance_theorem_bounded_theorem_note_2026-08-17": {
+   "deps_hash": "85738f123ab9",
+   "out_degree": 6
   },
   "admissibility_dirac_kahler_scalar_quotient_theorem_bounded_theorem_note_2026-08-17": {
    "deps_hash": "2ccc579166f3",

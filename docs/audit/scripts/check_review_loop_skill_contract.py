@@ -5,14 +5,17 @@ from __future__ import annotations
 
 import argparse
 import re
+from dataclasses import dataclass
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
 SKILL_REL = "docs/ai_methodology/skills/review-loop/SKILL.md"
 GENERATOR_REL = "docs/audit/scripts/generate_skill_axiom_baselines.py"
 PIPELINE_REL = "docs/audit/scripts/run_pipeline.sh"
-HTML_COMMENT_RE = re.compile(r"<!--.*?-->", re.DOTALL)
-COMMONMARK_COMMENT_RE = re.compile(r"^[ \t]*\[//\]:[ \t]*#.*(?:\n|$)", re.MULTILINE)
+FENCE_OPEN_RE = re.compile(r"^ {0,3}(?P<fence>`{3,}|~{3,})(?P<info>.*)$")
+REFERENCE_DEF_RE = re.compile(
+    r"^ {0,3}\[[^\]\n]+\]:[ \t]*(?:<[^>\n]*>|\S+)(?P<rest>.*)$"
+)
 PIPELINE_CONTRACT_LINE = (
     "python3 docs/audit/scripts/check_review_loop_skill_contract.py"
 )
@@ -26,6 +29,37 @@ PIPELINE_CONTRACT_CONTEXT = """echo "==> 18b/18 check_review_loop_skill_contract
 python3 docs/audit/scripts/check_review_loop_skill_contract.py
 
 if [[ "${PIPELINE_MODE}" == "full" ]]; then"""
+
+REVIEWER_BODY_RULES: dict[str, str] = {
+    "CodeRunnerReviewer": r"^\s+Review changed Python/scripts/log-producing code\.",
+    "PhysicsClaimReviewer": (
+        r"^\s+Attack theorem notes, claims tables, publication surfaces, and prose\."
+    ),
+    "ProofObligationReviewer": (
+        r"^\s+Trigger when changed content claims a theorem, proof, derivation, "
+        r"reduction,"
+    ),
+    "ImportSupportReviewer": (
+        r"^\s+Inventory every measured, fitted, literature, PDG, cosmological,"
+    ),
+    "NatureRetentionReviewer": r"^\s+Apply the hostile external-review bar\.",
+    "NoGoDisciplineReviewer": (
+        r"^\s+Scrutinize negative claims with the same rigor as positive ones\."
+    ),
+    "LabelingConventionReviewer": (
+        r"^\s+Detect labeling/naming/convention content masquerading as a bounded"
+    ),
+    "RepoGovernanceReviewer": r"^\s+Check placement and authority surfaces\.",
+}
+METHODOLOGY_BODY_RULE = (
+    r"^Run `MethodologySkillReviewer` when files under "
+    r"`docs/ai_methodology/skills/`,\s+`docs/ai_methodology/`, or "
+    r"`\.claude/commands/` changed\."
+)
+REVIEWER_NEGATION_RE = re.compile(
+    r"^\s*(?:do not|don't|never|skip|disable)\b[^\n]*\breviewer\b",
+    re.IGNORECASE | re.MULTILINE,
+)
 
 
 # These are structural tripwires, not a substitute for methodology review.
@@ -147,15 +181,291 @@ PIPELINE_RULES: dict[str, tuple[str, ...]] = {
 }
 
 
-def _active_markdown(text: str) -> str:
-    """Remove non-rendered Markdown material; comments never satisfy a contract."""
-    return COMMONMARK_COMMENT_RE.sub("", HTML_COMMENT_RE.sub("", text))
+@dataclass(frozen=True)
+class MarkdownScan:
+    """Visible Markdown prose plus fenced command blocks and syntax defects."""
+
+    visible: str
+    prose: str
+    fenced_blocks: tuple[tuple[str, str], ...]
+    errors: tuple[str, ...]
+
+
+def _strip_html_from_line(line: str, in_comment: bool) -> tuple[str, bool]:
+    """Remove HTML comments from one non-fenced line, preserving visible text."""
+    visible: list[str] = []
+    rest = line
+    while True:
+        if in_comment:
+            end = rest.find("-->")
+            if end < 0:
+                return "".join(visible), True
+            rest = rest[end + 3 :]
+            in_comment = False
+        start = rest.find("<!--")
+        if start < 0:
+            visible.append(rest)
+            return "".join(visible), False
+        visible.append(rest[:start])
+        rest = rest[start + 4 :]
+        in_comment = True
+
+
+def _markdown_scan(text: str) -> MarkdownScan:
+    """Parse the CommonMark constructs that can make contract prose non-rendered.
+
+    This intentionally is not a Markdown renderer. It recognizes the block forms
+    that can hide requirements in this skill: HTML comments, fenced code blocks,
+    and link-reference definitions (including multiline titles). Unterminated
+    forms are syntax defects and make the contract fail closed.
+    """
+    visible_lines: list[str] = []
+    prose_lines: list[str] = []
+    fenced_blocks: list[tuple[str, str]] = []
+    errors: list[str] = []
+    fence_marker: str | None = None
+    fence_width = 0
+    fence_info = ""
+    fence_body: list[str] = []
+    in_comment = False
+    reference_closer: str | None = None
+
+    for raw in text.splitlines():
+        if fence_marker is not None:
+            indent = len(raw) - len(raw.lstrip(" "))
+            candidate = raw[indent:] if indent <= 3 else ""
+            run = len(candidate) - len(candidate.lstrip(fence_marker))
+            if run >= fence_width and not candidate[run:].strip():
+                fenced_blocks.append((fence_info, "\n".join(fence_body)))
+                fence_marker = None
+                fence_width = 0
+                fence_info = ""
+                fence_body = []
+                visible_lines.append("")
+                prose_lines.append("")
+            else:
+                fence_body.append(raw)
+                visible_lines.append(raw)
+                prose_lines.append("")
+            continue
+
+        line, in_comment = _strip_html_from_line(raw, in_comment)
+        if in_comment:
+            visible_lines.append(line)
+            prose_lines.append(line)
+            continue
+
+        if reference_closer is not None:
+            visible_lines.append("")
+            prose_lines.append("")
+            if line.rstrip().endswith(reference_closer):
+                reference_closer = None
+            continue
+
+        fence = FENCE_OPEN_RE.match(line)
+        if fence:
+            token = fence.group("fence")
+            info = fence.group("info")
+            if token[0] != "`" or "`" not in info:
+                fence_marker = token[0]
+                fence_width = len(token)
+                fence_info = info.strip().lower()
+                visible_lines.append("")
+                prose_lines.append("")
+                continue
+
+        # Four-space/tab indentation is a CommonMark code block. Keep its text
+        # available to command-oriented tripwires, but never treat it as prose.
+        if line.startswith("    ") or line.startswith("\t"):
+            visible_lines.append(line)
+            prose_lines.append("")
+            continue
+
+        reference = REFERENCE_DEF_RE.match(line)
+        if reference:
+            tail = reference.group("rest").strip()
+            if tail and tail[0] in {'"', "'", "("}:
+                closer = ")" if tail[0] == "(" else tail[0]
+                if len(tail) == 1 or not tail[1:].rstrip().endswith(closer):
+                    reference_closer = closer
+            visible_lines.append("")
+            prose_lines.append("")
+            continue
+
+        visible_lines.append(line)
+        prose_lines.append(line)
+
+    if fence_marker is not None:
+        errors.append("unterminated fenced code block")
+    if in_comment:
+        errors.append("unterminated HTML comment")
+    if reference_closer is not None:
+        errors.append("unterminated link-reference title")
+    return MarkdownScan(
+        visible="\n".join(visible_lines),
+        prose="\n".join(prose_lines),
+        fenced_blocks=tuple(fenced_blocks),
+        errors=tuple(errors),
+    )
 
 
 def _active_shell(text: str) -> str:
-    """Remove full-line shell comments; only active commands count."""
-    return "\n".join(
-        line for line in text.splitlines() if not line.lstrip().startswith("#")
+    """Blank shell comments, multiline strings, and here-document payloads."""
+    lines: list[str] = []
+    quote: str | None = None
+    heredoc: str | None = None
+    heredoc_re = re.compile(
+        r"(?<!<)<<-?(?!<)[ \t]*(?P<quote>['\"]?)(?P<word>[A-Za-z_][A-Za-z0-9_]*)"
+        r"(?P=quote)"
+    )
+    for raw in text.splitlines():
+        if heredoc is not None:
+            lines.append("")
+            if raw.strip() == heredoc:
+                heredoc = None
+            continue
+
+        started_in_quote = quote is not None
+        escaped = False
+        comment_at: int | None = None
+        for index, char in enumerate(raw):
+            if quote == "'":
+                if char == "'":
+                    quote = None
+                continue
+            if escaped:
+                escaped = False
+                continue
+            if char == "\\":
+                escaped = True
+                continue
+            if quote == '"':
+                if char == '"':
+                    quote = None
+                continue
+            if char in {"'", '"'}:
+                quote = char
+                continue
+            if char == "#" and (index == 0 or raw[index - 1].isspace()):
+                comment_at = index
+                break
+
+        active = raw[:comment_at].rstrip() if comment_at is not None else raw
+        # A line entered while a multiline quote was open is string payload,
+        # even if it also carries the closing quote.
+        lines.append("" if started_in_quote else active)
+        if not started_in_quote and quote is None:
+            match = heredoc_re.search(active)
+            if match:
+                heredoc = match.group("word")
+    return "\n".join(lines)
+
+
+def _reviewer_structure_ok(prose: str) -> bool:
+    """Bind every reviewer label to its own active, affirmative section body."""
+    lines = prose.splitlines()
+
+    def unique_index(needle: str) -> int | None:
+        found = [i for i, line in enumerate(lines) if line.strip() == needle]
+        return found[0] if len(found) == 1 else None
+
+    fanout = unique_index("## Reviewer Fanout")
+    required = unique_index("### Required Reviewers")
+    optional = unique_index("### Optional Reviewer")
+    prompt = unique_index("## Reviewer Prompt")
+    if None in (fanout, required, optional, prompt):
+        return False
+    assert fanout is not None and required is not None
+    assert optional is not None and prompt is not None
+    if not fanout < required < optional < prompt:
+        return False
+
+    positions: list[tuple[str, int]] = []
+    for reviewer in REVIEWER_BODY_RULES:
+        label = f"- `{reviewer}`"
+        found = [
+            i
+            for i in range(required + 1, optional)
+            if lines[i].strip() == label
+        ]
+        if len(found) != 1:
+            return False
+        positions.append((reviewer, found[0]))
+    if [position for _, position in positions] != sorted(
+        position for _, position in positions
+    ):
+        return False
+
+    flags = re.IGNORECASE | re.DOTALL | re.MULTILINE
+    for index, (reviewer, start) in enumerate(positions):
+        end = positions[index + 1][1] if index + 1 < len(positions) else optional
+        body = "\n".join(lines[start + 1 : end])
+        if REVIEWER_NEGATION_RE.search(body):
+            return False
+        if re.search(REVIEWER_BODY_RULES[reviewer], body, flags) is None:
+            return False
+
+    methodology = "\n".join(lines[optional + 1 : prompt])
+    return (
+        REVIEWER_NEGATION_RE.search(methodology) is None
+        and re.search(METHODOLOGY_BODY_RULE, methodology, flags) is not None
+    )
+
+
+def _shell_depths(text: str) -> tuple[list[int], bool]:
+    """Return shell compound-command depth before each line.
+
+    The checked snippets use ordinary multiline Bash compound commands. Tracking
+    their opening/closing tokens is enough to distinguish executable top-level
+    gates from unchanged text nested under `if false`, a loop, case, function,
+    brace group, or standalone subshell. Any imbalance fails closed.
+    """
+    depths: list[int] = []
+    depth = 0
+    valid = True
+    for raw in text.splitlines():
+        line = raw.strip()
+        close_count = int(bool(re.match(r"^(?:fi|done|esac)\b", line)))
+        close_count += len(re.findall(r"(?<![$\w])\}(?=(?:[;\s]|$))", line))
+        close_count += int(line == ")")
+        depth -= close_count
+        if depth < 0:
+            valid = False
+            depth = 0
+        depths.append(depth)
+
+        open_count = int(
+            bool(re.match(r"^(?:if|for|while|until|case|select)\b", line))
+        )
+        open_count += len(re.findall(r"(?<![$\w])\{(?=(?:[;\s]|$))", line))
+        open_count += int(line == "(")
+        depth += open_count
+    return depths, valid and depth == 0
+
+
+def _context_is_top_level(shell: str, context: str) -> bool:
+    """Require one exact context whose first command is at shell depth zero."""
+    shell = _active_shell(shell)
+    lines = shell.splitlines()
+    wanted = context.splitlines()
+    starts = [
+        i
+        for i in range(0, len(lines) - len(wanted) + 1)
+        if lines[i : i + len(wanted)] == wanted
+    ]
+    depths, balanced = _shell_depths(shell)
+    return balanced and len(starts) == 1 and depths[starts[0]] == 0
+
+
+def _landing_context_is_top_level(scan: MarkdownScan) -> bool:
+    candidates = [
+        body
+        for info, body in scan.fenced_blocks
+        if info.split(maxsplit=1)[0] in {"bash", "sh", "shell", "zsh"}
+        and CONTAINMENT_CONTEXT in body
+    ]
+    return len(candidates) == 1 and _context_is_top_level(
+        candidates[0], CONTAINMENT_CONTEXT
     )
 
 
@@ -177,16 +487,21 @@ def _append_once(items: list[str], name: str) -> None:
 
 def validate_texts(skill: str, generator: str, pipeline: str) -> list[str]:
     """Return invariant-family names that are absent from the supplied texts."""
-    active_skill = _active_markdown(skill)
+    scan = _markdown_scan(skill)
+    active_skill = scan.visible
     active_pipeline = _active_shell(pipeline)
     missing = (
         _missing(active_skill, SKILL_RULES)
         + _missing(generator, GENERATOR_RULES)
         + _missing(active_pipeline, PIPELINE_RULES)
     )
-    if CONTAINMENT_CONTEXT not in active_skill:
+    if scan.errors:
+        _append_once(missing, "markdown_structure")
+    if not _reviewer_structure_ok(scan.prose):
+        _append_once(missing, "reviewer_lenses")
+    if not _landing_context_is_top_level(scan):
         _append_once(missing, "fail_closed_landing")
-    if PIPELINE_CONTRACT_CONTEXT not in active_pipeline:
+    if not _context_is_top_level(active_pipeline, PIPELINE_CONTRACT_CONTEXT):
         _append_once(missing, "pipeline_contract_registration")
     return missing
 

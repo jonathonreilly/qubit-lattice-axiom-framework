@@ -1,5 +1,6 @@
 """Mutation tests for the review-loop quality/safety contract."""
 
+import re
 import sys
 import unittest
 from pathlib import Path
@@ -48,12 +49,32 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
         )
         self.assertIn("freshness", self.missing(skill=mutated))
 
+    def test_unterminated_html_comment_is_fail_closed(self):
+        start = self.skill.index("## Reviewer Fanout")
+        mutated = self.skill[:start] + "<!--\n" + self.skill[start:]
+        missing = self.missing(skill=mutated)
+        self.assertIn("markdown_structure", missing)
+        self.assertIn("reviewer_lenses", missing)
+
     def test_commonmark_commented_freshness_is_fail_closed(self):
         start = self.skill.index("## Skill Freshness")
         end = self.skill.index("## Model And Tool Boundary")
         mutated = (
             self.skill[:start]
             + "[//]: # (## Skill Freshness SKILL_FRESHNESS_CHECK.md origin/main)\n\n"
+            + self.skill[end:]
+        )
+        self.assertIn("freshness", self.missing(skill=mutated))
+
+    def test_multiline_reference_definition_cannot_supply_freshness(self):
+        start = self.skill.index("Before applying this skill")
+        end = self.skill.index("## Model And Tool Boundary", start)
+        positive = self.skill[start:end].rstrip()
+        mutated = (
+            self.skill[:start]
+            + '[hidden-freshness]: <#> "title starts\n'
+            + positive
+            + '\n"\n\n'
             + self.skill[end:]
         )
         self.assertIn("freshness", self.missing(skill=mutated))
@@ -145,6 +166,78 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
         )
         self.assertIn("reviewer_lenses", self.missing(skill=mutated))
 
+    def test_fenced_reviewer_sections_are_fail_closed(self):
+        start = self.skill.index("### Required Reviewers")
+        end = self.skill.index("## Reviewer Prompt", start)
+        mutated = (
+            self.skill[:start]
+            + "```text\n"
+            + self.skill[start:end]
+            + "```\n\n"
+            + self.skill[end:]
+        )
+        self.assertIn("reviewer_lenses", self.missing(skill=mutated))
+
+    def test_unterminated_fenced_reviewer_sections_are_fail_closed(self):
+        start = self.skill.index("### Required Reviewers")
+        mutated = self.skill[:start] + "```text\n" + self.skill[start:]
+        missing = self.missing(skill=mutated)
+        self.assertIn("markdown_structure", missing)
+        self.assertIn("reviewer_lenses", missing)
+
+    def test_indented_code_cannot_supply_reviewer_sections(self):
+        start = self.skill.index("### Required Reviewers")
+        end = self.skill.index("## Reviewer Prompt", start)
+        indented = "\n".join(
+            "    " + line for line in self.skill[start:end].splitlines()
+        )
+        mutated = self.skill[:start] + indented + "\n" + self.skill[end:]
+        self.assertIn("reviewer_lenses", self.missing(skill=mutated))
+
+    def test_optional_reviewer_heading_is_fail_closed(self):
+        mutated = self.skill.replace(
+            "### Optional Reviewer", "### Historical Example", 1
+        )
+        self.assertIn("reviewer_lenses", self.missing(skill=mutated))
+
+    def test_hidden_affirmative_reviewer_bodies_are_fail_closed(self):
+        needles = dict(contract.REVIEWER_BODY_RULES)
+        for index, (reviewer, pattern) in enumerate(needles.items()):
+            match = re.search(
+                pattern,
+                self.skill,
+                re.IGNORECASE | re.DOTALL | re.MULTILINE,
+            )
+            self.assertIsNotNone(match, reviewer)
+            assert match is not None
+            positive = match.group(0)
+            replacement = (
+                "  Do not run this reviewer.\n\n"
+                f'[hidden-reviewer-{index}]: <#> "title starts\n'
+                + positive
+                + '\n"'
+            )
+            mutated = self.skill[: match.start()] + replacement + self.skill[match.end() :]
+            with self.subTest(reviewer=reviewer):
+                self.assertIn("reviewer_lenses", self.missing(skill=mutated))
+
+        match = re.search(
+            contract.METHODOLOGY_BODY_RULE,
+            self.skill,
+            re.IGNORECASE | re.DOTALL | re.MULTILINE,
+        )
+        self.assertIsNotNone(match)
+        assert match is not None
+        positive = match.group(0)
+        replacement = (
+            "Do not run this reviewer.\n\n"
+            '[hidden-methodology]: <#> "title starts\n'
+            + positive
+            + '\n"'
+        )
+        mutated = self.skill[: match.start()] + replacement + self.skill[match.end() :]
+        self.assertIn("reviewer_lenses", self.missing(skill=mutated))
+
     def test_independent_math_is_fail_closed(self):
         self.assert_skill_mutation_fails(
             "independent route", "independent_math_and_mutations"
@@ -207,6 +300,28 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
         self.assertNotEqual(mutated, self.skill)
         self.assertIn("fail_closed_landing", self.missing(skill=mutated))
 
+    def test_whole_containment_context_outer_conditional_is_fail_closed(self):
+        start = self.skill.index(contract.CONTAINMENT_CONTEXT)
+        end = self.skill.index('   echo "LANDED $landed"', start)
+        mutated = (
+            self.skill[:start]
+            + "   if false; then\n"
+            + self.skill[start:end]
+            + "   fi\n"
+            + self.skill[end:]
+        )
+        self.assertIn("fail_closed_landing", self.missing(skill=mutated))
+
+    def test_containment_context_in_heredoc_is_fail_closed(self):
+        mutated = self.skill.replace(
+            contract.CONTAINMENT_CONTEXT,
+            "   cat <<'HIDDEN_CONTAINMENT'\n"
+            + contract.CONTAINMENT_CONTEXT
+            + "\nHIDDEN_CONTAINMENT",
+            1,
+        )
+        self.assertIn("fail_closed_landing", self.missing(skill=mutated))
+
     def test_generated_router_is_fail_closed(self):
         mutated = self.generator.replace("missing_authority_router_coverage", "removed")
         self.assertIn("generated_authority_router", self.missing(generator=mutated))
@@ -232,6 +347,28 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
             1,
         )
         self.assertNotEqual(mutated, self.pipeline)
+        self.assertIn("pipeline_contract_registration", self.missing(pipeline=mutated))
+
+    def test_whole_pipeline_context_outer_conditional_is_fail_closed(self):
+        start = self.pipeline.index(contract.PIPELINE_CONTRACT_CONTEXT)
+        end = self.pipeline.index("\necho\n", start)
+        mutated = (
+            self.pipeline[:start]
+            + "if false; then\n"
+            + self.pipeline[start:end]
+            + "\nfi\n"
+            + self.pipeline[end:]
+        )
+        self.assertIn("pipeline_contract_registration", self.missing(pipeline=mutated))
+
+    def test_pipeline_context_in_heredoc_is_fail_closed(self):
+        mutated = self.pipeline.replace(
+            contract.PIPELINE_CONTRACT_CONTEXT,
+            "cat <<'HIDDEN_CONTRACT'\n"
+            + contract.PIPELINE_CONTRACT_CONTEXT
+            + "\nHIDDEN_CONTRACT",
+            1,
+        )
         self.assertIn("pipeline_contract_registration", self.missing(pipeline=mutated))
 
 

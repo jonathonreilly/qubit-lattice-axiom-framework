@@ -1,6 +1,6 @@
 {
- "edge_count": 16059,
- "node_count": 5572,
+ "edge_count": 16063,
+ "node_count": 5573,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -485,6 +485,10 @@
   "admissibility_dirac_kahler_local_dual_patch_descent_bounded_theorem_note_2026-08-15": {
    "deps_hash": "9f8d49b5e359",
    "out_degree": 3
+  },
+  "admissibility_dirac_kahler_massless_seam_verdict_bounded_theorem_note_2026-08-19": {
+   "deps_hash": "475004e57b3e",
+   "out_degree": 4
   },
   "admissibility_dirac_kahler_momentum_factorized_positivity_frontier_bounded_theorem_note_2026-08-15": {
    "deps_hash": "f386bc6245ec",

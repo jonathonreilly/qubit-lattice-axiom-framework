@@ -1,0 +1,30 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_z8_ledger_completion_2026_08_19.py
+runner_sha256: 53b8ea39b9ba8fd4d73f7fff16afe5daae72eb52e6067b320ad7baa54f0bab98
+input_fingerprint_sha256: fad5f58b61e88baf03bf31629427c3ea6a4049518f42d9c52cbde7624a3e3e20
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 18.98
+status: ok
+----- stdout -----
+[PASS] A-authority: main, Block 138 parent artifacts, and committed Block 136 artifacts are content-bound
+[PASS] B-same-family: only spatial extent, exact root field, and cyclic projectors change in the exact Z8 rebuild
+[PASS] C-ledger-completion: rho_0=rho_4 and every even-momentum determinant is one at both committed shears
+[PASS] D-two-rule-classes: the exact trace and determinant classes obey shift-four equality and momentum conjugation
+[PASS] E-cross-size-law: the pinned k=0 trace is exactly equal at Z6 and Z8 for both committed shears
+[PASS] F-isospectrality: k=0 and k=N/2 blocks have identical characteristic-polynomial coefficients at Z6 and Z8
+[PASS] G-refuted-intertwiner: the exact one-slice-shift conjugacy residual is nonzero at both Z8 shears
+[PASS] H-note-scope: the bounded upgrade, negative mechanism, firewalls, pinned rationals, and exact N5 fence are present
+GATES A-authority=PASS B-same-family=PASS C-ledger-completion=PASS D-two-rule-classes=PASS E-cross-size-law=PASS F-isospectrality=PASS G-refuted-intertwiner=PASS H-note-scope=PASS
+N5: per_element: exact Z8 roots and projectors plus the committed Block 136 action and transfer builders are checked in Q(i,sqrt(2))
+per_site: one spatial Z8 extension in the same family; only the extent, root field, and projector set change
+per_mode: at both shears k->k+4 gives exact trace equality and k->8-k gives exact conjugation; the four trace classes remain distinct
+per_block: rho_0=rho_4 gives Sym_2(R)^4, dimension 12, center 4; the N=4 checker finds all characteristic-polynomial coefficients equal for the two real-character momentum blocks
+lattice_wide: exact evidence is N=4,6,8 at shears 5/13 and 3/5; no general-even-N similarity theorem is claimed
+RESULT: the Z8 ledger completes and all three checked sizes occupy the 3m branch; the exact k=0 trace is size-independent on those fixtures
+DECISION_CUT: exhibit the general-even-N isospectral similarity; classify parity-mixing dressing classes; execute the joint-lane program
+TOE: zero obligation retirement; no TOE percentage movement; retained-positive end-to-end theory count remains zero
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

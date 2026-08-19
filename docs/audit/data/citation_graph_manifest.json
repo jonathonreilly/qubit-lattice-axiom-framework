@@ -1,6 +1,6 @@
 {
- "edge_count": 16044,
- "node_count": 5567,
+ "edge_count": 16047,
+ "node_count": 5568,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -561,6 +561,10 @@
   "admissibility_dirac_kahler_wick_phase_fine_site_staggered_os_lorentz_boundary_bounded_theorem_note_2026-08-14": {
    "deps_hash": "825cb5c969e8",
    "out_degree": 6
+  },
+  "admissibility_dirac_kahler_z8_ledger_completion_bounded_theorem_note_2026-08-19": {
+   "deps_hash": "c1148cdd32f2",
+   "out_degree": 3
   },
   "admissibility_dirac_signature_gravity_replacement_shortest_route_gate_boundary_bounded_theorem_note_2026-08-14": {
    "deps_hash": "0f2a2c502553",

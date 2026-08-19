@@ -40,6 +40,7 @@ MIN_FREE_KIB = 5 * 1024 * 1024
 ESTIMATED_WORKTREE_KIB = 384 * 1024
 AUDIT_BUSY_SEATS = 4
 AUDIT_BUSY_REVIEW_CAP = 3
+CANONICAL_TMP_ROOT = Path("/tmp")
 
 Run = Callable[[list[str], Path], str]
 
@@ -369,6 +370,65 @@ def scan_tmp_root(tmp_root: Path, registered_paths: set[Path]) -> dict:
     }
 
 
+def resolve_recovery_roots(
+    primary_root: Path,
+    canonical_tmp_root: Path,
+) -> list[Path]:
+    """Resolve and deduplicate configured and canonical recovery roots."""
+    roots: list[Path] = []
+    seen: set[Path] = set()
+    for candidate in (primary_root, canonical_tmp_root):
+        resolved = candidate.resolve()
+        if resolved not in seen:
+            roots.append(resolved)
+            seen.add(resolved)
+    return roots
+
+
+def scan_tmp_roots(tmp_roots: Iterable[Path], registered_paths: set[Path]) -> dict:
+    """Aggregate recovery artifacts across every configured root, fail closed."""
+    findings: list[dict] = []
+    unregistered_worktrees: list[dict] = []
+    scratch: list[dict] = []
+    root_scans: list[dict] = []
+    errors: list[str] = []
+    for tmp_root in tmp_roots:
+        try:
+            scan = scan_tmp_root(tmp_root, registered_paths)
+        except (OSError, RuntimeError) as exc:
+            scan = {
+                "scan_error": f"{type(exc).__name__}: {exc}",
+                "findings_files": [],
+                "unregistered_review_paths": [],
+                "scratch_paths": [],
+            }
+        root_scans.append(
+            {
+                "path": str(tmp_root),
+                "scan_error": scan["scan_error"],
+                "findings_file_count": len(scan["findings_files"]),
+                "unregistered_review_path_count": len(
+                    scan["unregistered_review_paths"]
+                ),
+                "scratch_path_count": len(scan["scratch_paths"]),
+            }
+        )
+        if scan["scan_error"]:
+            errors.append(f"{tmp_root}: {scan['scan_error']}")
+        findings.extend(scan["findings_files"])
+        unregistered_worktrees.extend(scan["unregistered_review_paths"])
+        scratch.extend(scan["scratch_paths"])
+    return {
+        "scan_error": "; ".join(errors) or None,
+        "scan_roots": root_scans,
+        "findings_files": sorted(findings, key=lambda item: (item["pr"], item["path"])),
+        "unregistered_review_paths": sorted(
+            unregistered_worktrees, key=lambda item: item["path"]
+        ),
+        "scratch_paths": sorted(scratch, key=lambda item: item["path"]),
+    }
+
+
 def parse_worker_processes(text: str) -> dict:
     all_processes: dict[int, dict] = {}
     for line in text.splitlines():
@@ -576,12 +636,20 @@ def collect_snapshot(
     limit: int,
     max_processes: int,
     runner: Run = run,
+    canonical_tmp_root: Path | None = None,
 ) -> dict:
     raw_prs = fetch_open_prs(repo_root, limit=limit, runner=runner)
     topology = analyze_topology(raw_prs, limit=limit)
     worktrees = collect_worktrees(repo_root, runner=runner)
     match_worktrees_to_prs(topology, worktrees)
-    tmp_scan = scan_tmp_root(tmp_root, {Path(item["path"]) for item in worktrees})
+    recovery_roots = resolve_recovery_roots(
+        tmp_root,
+        canonical_tmp_root or CANONICAL_TMP_ROOT,
+    )
+    tmp_scan = scan_tmp_roots(
+        recovery_roots,
+        {Path(item["path"]) for item in worktrees},
+    )
     processes = collect_processes(repo_root, runner=runner)
     try:
         free_kib = shutil.disk_usage(tmp_root).free // 1024
@@ -655,6 +723,10 @@ def render(snapshot: dict, max_items: int) -> str:
             f"{len(recovery['unregistered_review_paths'])} unregistered rev-* paths; "
             f"{len(recovery['findings_files'])} external findings files; "
             f"{len(recovery['scratch_paths'])} top-level RL_* paths"
+        ),
+        (
+            "Recovery roots: "
+            + ", ".join(item["path"] for item in recovery["scan_roots"])
         ),
         (
             f"Ready new-worktree slots: {schedule['ready_new_worktree_slot_count']} "
@@ -733,7 +805,10 @@ def build_parser() -> argparse.ArgumentParser:
         "--tmp-root",
         type=Path,
         default=Path(os.environ.get("TMPDIR") or "/tmp"),
-        help="filesystem/root used by review worktrees (default: TMPDIR or /tmp)",
+        help=(
+            "primary filesystem/root used by review worktrees; recovery also scans "
+            "canonical /tmp (default primary: TMPDIR or /tmp)"
+        ),
     )
     return parser
 

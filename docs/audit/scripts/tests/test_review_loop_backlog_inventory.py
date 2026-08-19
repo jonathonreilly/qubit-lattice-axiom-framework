@@ -35,6 +35,35 @@ def _pr(
     }
 
 
+def _one_pr_snapshot(
+    repo_root: Path,
+    primary_root: Path,
+    canonical_root: Path,
+) -> dict:
+    def fake_run(cmd, cwd):
+        if cmd[:3] == ["gh", "pr", "list"]:
+            return json.dumps([_pr(6221, "science-head")])
+        if cmd[:3] == ["git", "worktree", "list"]:
+            return (
+                f"worktree {repo_root}\0HEAD oid-main\0"
+                "branch refs/heads/main\0\0"
+            )
+        if cmd[:3] == ["git", "--no-optional-locks", "status"]:
+            return ""
+        if cmd[:2] == ["ps", "-axo"]:
+            return ""
+        raise AssertionError(f"unexpected command: {cmd}")
+
+    return inventory.collect_snapshot(
+        repo_root,
+        primary_root,
+        limit=100,
+        max_processes=8,
+        runner=fake_run,
+        canonical_tmp_root=canonical_root,
+    )
+
+
 class GithubEnumerationTest(unittest.TestCase):
     def test_one_bounded_open_pr_query(self):
         calls = []
@@ -71,9 +100,15 @@ class GithubEnumerationTest(unittest.TestCase):
                 self.fail(f"unexpected command: {cmd}")
 
             snapshot = inventory.collect_snapshot(
-                Path(tmp), Path(tmp), limit=100, max_processes=8, runner=fake_run
+                Path(tmp),
+                Path(tmp),
+                limit=100,
+                max_processes=8,
+                runner=fake_run,
+                canonical_tmp_root=Path(tmp),
             )
         self.assertTrue(snapshot["read_only"])
+        self.assertEqual(len(snapshot["recovery"]["scan_roots"]), 1)
         self.assertEqual(sum(cmd[:3] == ["gh", "pr", "list"] for cmd in calls), 1)
         self.assertEqual(
             sum(cmd[:3] == ["git", "--no-optional-locks", "status"] for cmd in calls),
@@ -165,6 +200,91 @@ class WorktreeRecoveryTest(unittest.TestCase):
             scan = inventory.scan_tmp_root(tmp_root, set())
         self.assertEqual(scan["unregistered_review_paths"][0]["pr"], 5)
         self.assertEqual(scan["findings_files"][0]["pr"], 2)
+
+    def test_secondary_canonical_root_suppresses_cross_clone_duplicate(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            base = Path(tmp)
+            repo_root = base / "other-clone"
+            primary_root = base / "gui-tmp"
+            canonical_root = base / "canonical-tmp"
+            repo_root.mkdir()
+            primary_root.mkdir()
+            canonical_root.mkdir()
+            review_path = canonical_root / "rev-6221.recovery"
+            review_path.mkdir()
+            (review_path / ".git").touch()
+            finding_path = canonical_root / "review-findings-pr6221.recovery"
+            finding_path.touch()
+
+            snapshot = _one_pr_snapshot(repo_root, primary_root, canonical_root)
+
+        recovery = snapshot["recovery"]
+        self.assertEqual(
+            [item["path"] for item in recovery["scan_roots"]],
+            [str(primary_root.resolve()), str(canonical_root.resolve())],
+        )
+        self.assertEqual(snapshot["schedule"]["ready_slots"], [])
+        self.assertEqual(
+            [item["pr"] for item in snapshot["schedule"]["recovery_actions"]],
+            [6221],
+        )
+        self.assertEqual(
+            snapshot["schedule"]["recovery_actions"][0][
+                "unregistered_review_paths"
+            ],
+            [str(review_path.resolve())],
+        )
+        self.assertEqual(
+            snapshot["schedule"]["recovery_actions"][0]["external_findings"],
+            [str(finding_path.resolve())],
+        )
+
+    def test_secondary_recovery_root_error_fails_closed(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            base = Path(tmp)
+            repo_root = base / "repo"
+            primary_root = base / "gui-tmp"
+            missing_canonical_root = base / "missing-canonical-tmp"
+            repo_root.mkdir()
+            primary_root.mkdir()
+
+            snapshot = _one_pr_snapshot(
+                repo_root,
+                primary_root,
+                missing_canonical_root,
+            )
+
+        self.assertIn(
+            str(missing_canonical_root.resolve()),
+            snapshot["recovery"]["scan_error"],
+        )
+        self.assertEqual(snapshot["schedule"]["ready_slots"], [])
+        self.assertIn(
+            "recovery scan failed",
+            snapshot["schedule"]["slot_suppression_reason"],
+        )
+
+    def test_secondary_recovery_symlink_error_fails_closed(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            base = Path(tmp)
+            repo_root = base / "repo"
+            primary_root = base / "gui-tmp"
+            canonical_root = base / "canonical-tmp"
+            repo_root.mkdir()
+            primary_root.mkdir()
+            canonical_root.mkdir()
+            cyclic_path = canonical_root / "rev-6221.cyclic"
+            cyclic_path.symlink_to(cyclic_path.name)
+
+            snapshot = _one_pr_snapshot(repo_root, primary_root, canonical_root)
+
+        canonical_scan = snapshot["recovery"]["scan_roots"][1]
+        self.assertIn("RuntimeError", canonical_scan["scan_error"])
+        self.assertEqual(snapshot["schedule"]["ready_slots"], [])
+        self.assertIn(
+            "recovery scan failed",
+            snapshot["schedule"]["slot_suppression_reason"],
+        )
 
 
 class ProcessAndCapacityTest(unittest.TestCase):

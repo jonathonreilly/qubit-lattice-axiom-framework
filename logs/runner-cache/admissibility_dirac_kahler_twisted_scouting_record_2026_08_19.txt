@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_twisted_scouting_record_2026_08_19.py
+runner_sha256: 12ac54fcb996aaffb8aa9145ec9aaeb45f082b8b4731056aed33d16953285e93
+input_fingerprint_sha256: dc5918c12417cfefcb10491f139f362f30f3f8eeffd90ac11cdaeeec0b9c731d
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 19.08
+status: ok
+----- stdout -----
+[PASS] A-fixture-atlas-integrity: Block 136 plus Blocks 105/134/135 are blob-bound; the exact four-chart atlas and every unitary dressing g_ij are rebuilt
+[PASS] B-cocycle-bookkeeping: Theta_ij=dhat_j*g_ij-g_ij*dhat_i obeys composition and Bianchi; FLAG: composition is telescopic bookkeeping (the vacuity catch) and carries no independent load
+[PASS] C-selector-projection: Block 134 Omega_ij is exactly reinterpreted as Pi_ij(d_j-d_i) on the displayed atlas, with s_t-only residual support
+[PASS] D-edge-healing: for every displayed ordered edge, Omega^2=0, {d_i,Omega_ij}=0, (d_i+Omega_ij)^2=0, and the edge complex is acyclic
+[PASS] E-atlas-curvature: the atlas square D^2=C_ijk has exactly 24/64 nonzero rank-16 triples; C_ijk is distinct from the action correction Delta_Omega
+[PASS] F-action-tail: Q_i+Q_i^dag=2*m*H_q, but the skew Omega correction leaves a nonzero rank-8 tail, excluding an Omega-only atlas-global quadratic form
+[PASS] G-companion-non-healing: for symbolic m!=0 the forward coefficient has rank 3 and ker=span(0,1,0,0), Delta_Omega B=0 identically, and even-parity Omega misses the odd kernel direction
+[PASS] H-scope: the telescopic and dressing-class flags, OS boundary, s_t-only rider, N1--N8/W1/N5 fence, and TOE firewalls are present
+N5: per_element: exact 32x32 transition, selector-projection, edge-anticommutator, triple-curvature, action-tail, and companion-minor certificates are checked
+per_site: the displayed Lx=4, Tphysical=4, Tcover=8 carrier has four Z2^2 chart origins and uses the inherited antiperiodic quotient and nonuniform Hodge
+per_mode: W*Omega*W^dag=2*i*s_t*T_t^-1*P_even*P_x has even parity and its forward companion correction misses the odd kernel direction identically
+per_block: every dressed edge has square zero and the displayed edge has rank 16 and cohomology dimension zero, while the atlas has 24/64 nonzero rank-16 curvatures, the action leaves a rank-8 tail, and the companion stays rank 3
+lattice_wide: checked and not executed — parity-mixing and other dressing classes, the general-Z_N charge-kinematic theorem, the joint-lane program, the actual ADM/history transporter completion, joint gravity, the gravity constraint quotient beyond the displayed carriers, Records, audit retention, and TOE closure remain open
+RESULT: within the displayed transition-dressing class the twisted formulation does not open the curved OS pipeline
+DECISION_CUT: W1 is not an OS no-go, not a curved OS no-go, and not a no-go for parity-mixing or other dressing classes
+TOE: zero axiom retirement; zero obligation retirement; zero TOE movement; no TOE percentage moves; retained-positive end-to-end theory count remains zero
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

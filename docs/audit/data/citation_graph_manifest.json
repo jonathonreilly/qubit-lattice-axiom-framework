@@ -1,6 +1,6 @@
 {
- "edge_count": 16039,
- "node_count": 5565,
+ "edge_count": 16042,
+ "node_count": 5566,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -540,6 +540,10 @@
   },
   "admissibility_dirac_kahler_transfer_spectrum_selection_gap_bounded_theorem_note_2026-08-15": {
    "deps_hash": "0a55a158674e",
+   "out_degree": 3
+  },
+  "admissibility_dirac_kahler_twisted_scouting_record_bounded_theorem_note_2026-08-19": {
+   "deps_hash": "a6c619b8f5fd",
    "out_degree": 3
   },
   "admissibility_dirac_kahler_two_block_observable_algebra_bounded_theorem_note_2026-08-17": {

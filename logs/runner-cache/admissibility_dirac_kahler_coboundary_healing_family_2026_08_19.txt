@@ -1,0 +1,30 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_coboundary_healing_family_2026_08_19.py
+runner_sha256: 1afe38a9ef7924b9bafdddde44ce02b4f0865e2df0a7dfba202ae9d8876f43ee
+input_fingerprint_sha256: ab99b4b65a0b4a4690ce5b6f6d974720d189d0b6d4b5417c6979c45031331044
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 7.17
+status: ok
+----- stdout -----
+[PASS] A-authority: main plus the committed Block 140, 137 and 134 note/runner/cache artifacts are content-bound
+[PASS] B-chart-anchor: the forward companion B_i is rank 4 with the exact determinants on the cover-time-even charts and rank 3 with kernel span(0,1,0,0) on the cover-time-odd charts
+[PASS] C-selector-edge-profile: Block 137's selector dressing corrects the read column on exactly 2 of 16 ordered edges, is itself zero on 12, and genuinely misses the displayed pair
+[PASS] D-mechanism-witnesses: the grading-even Omega* corrects the read column and heals to rank 4 while the parity-mixing control leaves it identically zero, and the selector's cover-time support omits the read window
+[PASS] E-coboundary-healing-family: Omega_ij=(x_j-x_i)Omega* keeps all 16 edges square-zero, has 0/64 Cech curvature, reaches companion rank 4 on 14/16 edges, and gives the displayed edge a determinant with no real mass root
+[PASS] F-cocycle-converse: the zero-curvature system has rank 13, every solution is the base-chart coboundary c_j-c_i, Omega_ii=0 is forced, and 14/16 is therefore a hard maximum
+[PASS] G-out-of-class-and-riders: Omega* is not any coordinate mask of the displayed full difference (32 violating entries) and its read column is exactly (0,1303*s_t/1200,0,0), linear in s_t and zero at s_t=0
+[PASS] H-note-scope: the chart anchor, the anchor correction, the healing family, the converse, the out-of-class rider, the disclosures, the firewalls, and the exact N5 fence are present
+GATES A-authority=PASS B-chart-anchor=PASS C-selector-edge-profile=PASS D-mechanism-witnesses=PASS E-coboundary-healing-family=PASS F-cocycle-converse=PASS G-out-of-class-and-riders=PASS H-note-scope=PASS
+N5: per_element: the uncorrected companion B_i=quotient_action(d_i)[4:8,0:4] is rank 4 on the two cover-time-EVEN charts, det_(0,0)=-1303(718239375 m^2-253923671672)/689509800000000 and det_(0,1)=4728571336637/7182393750000, and rank 3 with kernel span(0,1,0,0) and det 0 on the two cover-time-ODD charts
+per_site: atlas-wide the selector dressing's companion correction is zero on 14/16 ordered edges -- 12 trivially because Omega itself vanishes there, plus the displayed (1,0)<->(1,1) pair as the only genuine miss -- and nonzero exactly on (0,0)->(0,1) and (0,1)->(0,0) with values (0,-+1303/750,0,0); Block 137's landed W1 stands, its gate having been displayed-edge-only and symbolic in m
+per_mode: the mechanism is cover-time support, not parity: the grading-even Omega*=d_(0,0)-d_(1,0) corrects by (0,1303/1500,0,0) and heals to rank 4, the parity-mixing d_(1,1)-d_(1,0) leaves the read column identically zero at rank 3, and the displayed backward-hop selector with time-block support {(1,2),(3,4),(5,6),(7,0)} omits exactly the (1,0) read window
+per_block: Omega_ij=(x_j-x_i)Omega* with x=(0,0,1/2,-1/3) gives (d_i+Omega_ij)^2=0 on all 16 edges, atlas curvature 0/64 (down from 24/64), companion rank 4 on 14/16 ordered edges, and displayed-edge det 1303(9049816125 m^2+2180604558616)/10425388176000000 positive for all real m
+lattice_wide: on the full four-chart nerve C_ijk=0 on all 64 triples is a rank-13 system with three-dimensional solution space Omega_ij=c_j-c_i, the i=j triples force Omega_ii=0, and the two cover-time-odd self-edges then stay rank 3, so 14/16 is the exact maximum and the family is optimal
+RESULT: on the displayed atlas and fixtures a coboundary dressing family heals every genuine edge companion with exact edge nilpotency and zero atlas curvature, lies outside Block 137's transition-derived class, and is s_t-only and linear in s_t
+DECISION_CUT: test reflection positivity of the healed action; decide the two forced self-edges; decide the admissibility class of coboundary dressings; execute the joint-lane program; curved OS is not claimed
+TOE: zero axiom retirement; zero obligation retirement; zero TOE movement; no TOE percentage moves; retained-positive end-to-end theory count remains zero
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

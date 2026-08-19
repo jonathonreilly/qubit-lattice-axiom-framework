@@ -1,6 +1,6 @@
 {
- "edge_count": 16050,
- "node_count": 5569,
+ "edge_count": 16053,
+ "node_count": 5570,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -424,6 +424,10 @@
   },
   "admissibility_dirac_kahler_chart_invariant_contractivity_obstruction_bounded_theorem_note_2026-08-15": {
    "deps_hash": "e49a8cd7d76b",
+   "out_degree": 3
+  },
+  "admissibility_dirac_kahler_coboundary_healing_family_bounded_theorem_note_2026-08-19": {
+   "deps_hash": "309e24774ef5",
    "out_degree": 3
   },
   "admissibility_dirac_kahler_cochain_hodge_quadratic_ward_shell_locality_os_reentry_bounded_theorem_note_2026-08-14": {

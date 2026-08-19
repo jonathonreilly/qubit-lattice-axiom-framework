@@ -275,6 +275,45 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
         )
         self.assertIn("reviewer_lenses", self.missing(skill=mutated))
 
+    def test_active_reviewer_contradictions_are_fail_closed(self):
+        variants = (
+            lambda reviewer: f"  However, do not run `{reviewer}`.\n",
+            lambda reviewer: f"  `{reviewer}` must not run.\n",
+            lambda reviewer: f"  - Skip `{reviewer}`.\n",
+            lambda reviewer: f"  `{reviewer}` is not required.\n",
+        )
+        for reviewer, pattern in contract.REVIEWER_BODY_RULES.items():
+            match = re.search(
+                pattern,
+                self.skill,
+                re.IGNORECASE | re.DOTALL | re.MULTILINE,
+            )
+            self.assertIsNotNone(match, reviewer)
+            assert match is not None
+            for variant in variants:
+                mutated = (
+                    self.skill[: match.end()]
+                    + "\n"
+                    + variant(reviewer)
+                    + self.skill[match.end() :]
+                )
+                with self.subTest(reviewer=reviewer, variant=variant(reviewer)):
+                    self.assertIn("reviewer_lenses", self.missing(skill=mutated))
+
+        match = re.search(
+            contract.METHODOLOGY_BODY_RULE,
+            self.skill,
+            re.IGNORECASE | re.DOTALL | re.MULTILINE,
+        )
+        self.assertIsNotNone(match)
+        assert match is not None
+        mutated = (
+            self.skill[: match.end()]
+            + "\nHowever, do not run `MethodologySkillReviewer`."
+            + self.skill[match.end() :]
+        )
+        self.assertIn("reviewer_lenses", self.missing(skill=mutated))
+
     def test_independent_math_is_fail_closed(self):
         self.assert_skill_mutation_fails(
             "independent route", "independent_math_and_mutations"
@@ -359,6 +398,35 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
         )
         self.assertIn("fail_closed_landing", self.missing(skill=mutated))
 
+    def test_containment_context_in_second_heredoc_is_fail_closed(self):
+        mutated = self.skill.replace(
+            contract.CONTAINMENT_CONTEXT,
+            "   cat <<'FIRST' <<'HIDDEN-CONTAINMENT'\nFIRST\n"
+            + contract.CONTAINMENT_CONTEXT
+            + "\nHIDDEN-CONTAINMENT",
+            1,
+        )
+        self.assertIn("fail_closed_landing", self.missing(skill=mutated))
+
+    def test_containment_context_in_general_substitutions_is_fail_closed(self):
+        for opener, closer in (
+            ("   hidden=$( :\n", "\n   ) || true"),
+            ("   hidden=<( :\n", "\n   )"),
+            ("   hidden=` :\n", "\n   ` || true"),
+        ):
+            mutated = self.skill.replace(
+                contract.CONTAINMENT_CONTEXT,
+                opener + contract.CONTAINMENT_CONTEXT + closer,
+                1,
+            )
+            with self.subTest(opener=opener):
+                self.assertIn("fail_closed_landing", self.missing(skill=mutated))
+
+    def test_unterminated_landing_shell_context_is_fail_closed(self):
+        marker = '   echo "LANDED $landed"'
+        mutated = self.skill.replace(marker, marker + "\n   hidden=$( :", 1)
+        self.assertIn("fail_closed_landing", self.missing(skill=mutated))
+
     def test_generated_router_is_fail_closed(self):
         mutated = self.generator.replace("missing_authority_router_coverage", "removed")
         self.assertIn("generated_authority_router", self.missing(generator=mutated))
@@ -422,8 +490,23 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
                     "pipeline_contract_registration", self.missing(pipeline=mutated)
                 )
 
+    def test_pipeline_context_in_second_heredoc_is_fail_closed(self):
+        mutated = self.pipeline.replace(
+            contract.PIPELINE_CONTRACT_CONTEXT,
+            "cat <<'FIRST' <<'HIDDEN-CONTRACT'\nFIRST\n"
+            + contract.PIPELINE_CONTRACT_CONTEXT
+            + "\nHIDDEN-CONTRACT",
+            1,
+        )
+        self.assertIn("pipeline_contract_registration", self.missing(pipeline=mutated))
+
     def test_pipeline_context_in_command_substitutions_is_fail_closed(self):
-        for opener, closer in (("hidden=`\n", "`\n"), ("hidden=$(\n", ")\n")):
+        for opener, closer in (
+            ("hidden=`\n", "`\n"),
+            ("hidden=$(\n", ")\n"),
+            ("hidden=$( :\n", ") || true\n"),
+            ("hidden=>( :\n", ")\n"),
+        ):
             mutated = self.pipeline.replace(
                 contract.PIPELINE_CONTRACT_CONTEXT,
                 opener + contract.PIPELINE_CONTRACT_CONTEXT + "\n" + closer,
@@ -433,6 +516,12 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
                 self.assertIn(
                     "pipeline_contract_registration", self.missing(pipeline=mutated)
                 )
+
+    def test_unterminated_pipeline_shell_context_is_fail_closed(self):
+        mutated = self.pipeline + "\nhidden=$( :\n"
+        self.assertIn(
+            "pipeline_contract_registration", self.missing(pipeline=mutated)
+        )
 
 
 if __name__ == "__main__":

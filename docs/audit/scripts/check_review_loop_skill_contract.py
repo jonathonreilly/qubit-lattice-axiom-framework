@@ -54,9 +54,16 @@ METHODOLOGY_BODY_RULE = (
     r"`docs/ai_methodology/skills/`,\s+`docs/ai_methodology/`, or "
     r"`\.claude/commands/` changed\."
 )
-REVIEWER_NEGATION_RE = re.compile(
-    r"^\s*(?:do not|don't|never|skip|disable)\b[^\n]*\breviewer\b",
-    re.IGNORECASE | re.MULTILINE,
+REVIEWER_DISABLE_RE = re.compile(
+    r"(?:"
+    r"\b(?:do\s+not|don't|never|must\s+not|should\s+not|shall\s+not|"
+    r"need\s+not|cannot|can't)\b[^\n]*"
+    r"\b(?:run|invoke|use|apply|execute|perform|review|required|enable)\w*\b"
+    r"|\b(?:skip|disable|omit|bypass)\w*\b"
+    r"|\b(?:is|are|be|remain)\s+(?:not\s+required|optional|disabled|omitted|skipped)\b"
+    r"|\bno\s+need\s+to\b"
+    r")",
+    re.IGNORECASE,
 )
 
 
@@ -304,84 +311,190 @@ def _markdown_scan(text: str) -> MarkdownScan:
     )
 
 
-def _active_shell(text: str) -> str:
-    """Blank shell comments, multiline strings, and here-document payloads."""
-    lines: list[str] = []
+@dataclass
+class _ShellFrame:
+    """One multiline shell lexical context."""
+
+    kind: str
+    paren_depth: int = 0
+
+
+@dataclass(frozen=True)
+class ShellScan:
+    """Top-level shell text after inert lexical regions are blanked."""
+
+    active: str
+    errors: tuple[str, ...]
+
+
+def _heredoc_word(line: str, start: int) -> tuple[str, int] | None:
+    """Parse one shell heredoc delimiter with quote removal."""
+    index = start
+    while index < len(line) and line[index] in " \t":
+        index += 1
+    if index == len(line) or line[index] in ";|&()<>":
+        return None
+
+    value: list[str] = []
     quote: str | None = None
-    backtick = False
-    command_substitution = False
-    heredoc: str | None = None
-    heredoc_re = re.compile(
-        r"(?<!<)<<-?(?!<)[ \t]*"
-        r"(?P<word>'[^'\n]*'|\"[^\"\n]*\"|[^\s;|&()<>]+)"
-    )
+    while index < len(line):
+        char = line[index]
+        if quote is not None:
+            if char == quote:
+                quote = None
+            elif char == "\\" and quote == '"' and index + 1 < len(line):
+                index += 1
+                value.append(line[index])
+            else:
+                value.append(char)
+            index += 1
+            continue
+        if char in " \t;|&()<>":
+            break
+        if char in {"'", '"'}:
+            quote = char
+            index += 1
+            continue
+        if char == "\\" and index + 1 < len(line):
+            index += 1
+            value.append(line[index])
+            index += 1
+            continue
+        value.append(char)
+        index += 1
+    if quote is not None:
+        return None
+    return "".join(value), index
+
+
+def _active_shell(text: str) -> ShellScan:
+    """Structurally blank non-top-level shell text.
+
+    The lexer tracks nested quotes, backticks, command/process substitutions,
+    and the ordered payload queue for every heredoc attached to a command. A
+    line that begins or ends in one of those contexts is inert for contract
+    matching. Unterminated contexts fail closed through ``errors``.
+    """
+    lines: list[str] = []
+    frames: list[_ShellFrame] = []
+    heredocs: list[tuple[str, bool]] = []
+
     for raw in text.splitlines():
-        if heredoc is not None:
+        if heredocs:
+            delimiter, strip_tabs = heredocs[0]
+            candidate = raw.lstrip("\t") if strip_tabs else raw
             lines.append("")
-            if raw.strip() == heredoc:
-                heredoc = None
+            if candidate == delimiter:
+                heredocs.pop(0)
             continue
 
-        if command_substitution:
-            lines.append("")
-            close = re.match(r"^\s*\)(?P<quote>['\"]?)\s*$", raw)
-            if close:
-                command_substitution = False
-                if close.group("quote") and close.group("quote") == quote:
-                    quote = None
-            continue
-
-        started_in_inert_text = quote is not None or backtick
-        opens_command_substitution = bool(re.search(r"\$\(\s*$", raw))
-        escaped = False
+        started_in_inert_text = bool(frames)
         comment_at: int | None = None
-        for index, char in enumerate(raw):
-            if quote == "'":
+        index = 0
+        while index < len(raw):
+            char = raw[index]
+            frame = frames[-1] if frames else None
+
+            if frame is not None and frame.kind == "single":
                 if char == "'":
-                    quote = None
+                    frames.pop()
+                index += 1
                 continue
-            if escaped:
-                escaped = False
-                continue
+
             if char == "\\":
-                escaped = True
+                index += 2
                 continue
-            if backtick:
-                if char == "`":
-                    backtick = False
-                continue
-            if quote == '"':
-                if char == "`":
-                    backtick = True
-                    continue
+
+            if frame is not None and frame.kind == "double":
                 if char == '"':
-                    quote = None
+                    frames.pop()
+                    index += 1
+                    continue
+                if char == "`":
+                    frames.append(_ShellFrame("backtick"))
+                    index += 1
+                    continue
+                if raw.startswith("$(", index):
+                    frames.append(_ShellFrame("substitution", 1))
+                    index += 2
+                    continue
+                index += 1
+                continue
+
+            if frame is not None and frame.kind == "backtick" and char == "`":
+                frames.pop()
+                index += 1
+                continue
+
+            if char == "'":
+                frames.append(_ShellFrame("single"))
+                index += 1
+                continue
+            if char == '"':
+                frames.append(_ShellFrame("double"))
+                index += 1
                 continue
             if char == "`":
-                backtick = True
+                frames.append(_ShellFrame("backtick"))
+                index += 1
                 continue
-            if char in {"'", '"'}:
-                quote = char
+
+            if raw.startswith("$(", index) or (
+                char in "<>" and index + 1 < len(raw) and raw[index + 1] == "("
+            ):
+                frames.append(_ShellFrame("substitution", 1))
+                index += 2
                 continue
+
+            if frame is not None and frame.kind == "substitution":
+                if char == "(":
+                    frame.paren_depth += 1
+                    index += 1
+                    continue
+                if char == ")":
+                    frame.paren_depth -= 1
+                    if frame.paren_depth == 0:
+                        frames.pop()
+                    index += 1
+                    continue
+
+            if raw.startswith("<<", index) and not raw.startswith("<<<", index):
+                strip_tabs = raw.startswith("<<-", index)
+                word_start = index + (3 if strip_tabs else 2)
+                parsed = _heredoc_word(raw, word_start)
+                if parsed is not None:
+                    delimiter, index = parsed
+                    heredocs.append((delimiter, strip_tabs))
+                    continue
+
             if char == "#" and (index == 0 or raw[index - 1].isspace()):
                 comment_at = index
                 break
+            index += 1
 
         active = raw[:comment_at].rstrip() if comment_at is not None else raw
-        # A line entered while a multiline quote was open is string payload,
-        # even if it also carries the closing quote.
-        lines.append("" if started_in_inert_text else active)
-        if opens_command_substitution:
-            command_substitution = True
+        lines.append("" if started_in_inert_text or frames else active)
+
+    errors: list[str] = []
+    if frames:
+        errors.append("unterminated shell lexical context")
+    if heredocs:
+        errors.append("unterminated shell heredoc")
+    return ShellScan(active="\n".join(lines), errors=tuple(errors))
+
+
+def _section_disables_reviewer(body: str, reviewer: str) -> bool:
+    """Reject any active instruction that disables its bound reviewer."""
+    escaped_name = re.escape(reviewer)
+    exact_name = re.compile(rf"(?:`{escaped_name}`|\b{escaped_name}\b)", re.I)
+    for line in body.splitlines():
+        if not REVIEWER_DISABLE_RE.search(line):
             continue
-        if not started_in_inert_text and quote is None and not backtick:
-            match = heredoc_re.search(active)
-            if match:
-                word = match.group("word")
-                if len(word) >= 2 and word[0] == word[-1] and word[0] in {'"', "'"}:
-                    word = word[1:-1]
-                heredoc = re.sub(r"\\(.)", r"\1", word)
-    return "\n".join(lines)
+        if exact_name.search(line) or re.search(
+            r"\b(?:this\s+)?reviewer\b", line, re.I
+        ):
+            return True
+    return False
 
 
 def _reviewer_structure_ok(prose: str) -> bool:
@@ -428,26 +541,15 @@ def _reviewer_structure_ok(prose: str) -> bool:
         end = positions[index + 1][1] if index + 1 < len(positions) else optional
         body = "\n".join(lines[start + 1 : end])
         first_instruction = from_first_nonblank(start + 1, end)
-        named_negation = re.compile(
-            r"^\s*(?:do not|don't|never|skip|disable)\b[^\n]*"
-            + rf"(?:`{re.escape(reviewer)}`|\b{re.escape(reviewer)}\b)",
-            re.IGNORECASE | re.MULTILINE,
-        )
-        if REVIEWER_NEGATION_RE.search(body) or named_negation.search(body):
+        if _section_disables_reviewer(body, reviewer):
             return False
         if re.match(REVIEWER_BODY_RULES[reviewer], first_instruction, flags) is None:
             return False
 
     methodology = "\n".join(lines[optional + 1 : prompt])
     methodology_first = from_first_nonblank(optional + 1, prompt)
-    methodology_negation = re.compile(
-        r"^\s*(?:do not|don't|never|skip|disable)\b[^\n]*"
-        r"(?:`MethodologySkillReviewer`|\bMethodologySkillReviewer\b)",
-        re.IGNORECASE | re.MULTILINE,
-    )
     return (
-        REVIEWER_NEGATION_RE.search(methodology) is None
-        and methodology_negation.search(methodology) is None
+        not _section_disables_reviewer(methodology, "MethodologySkillReviewer")
         and re.match(METHODOLOGY_BODY_RULE, methodology_first, flags) is not None
     )
 
@@ -485,16 +587,16 @@ def _shell_depths(text: str) -> tuple[list[int], bool]:
 
 def _context_is_top_level(shell: str, context: str) -> bool:
     """Require one exact context whose first command is at shell depth zero."""
-    shell = _active_shell(shell)
-    lines = shell.splitlines()
+    scan = _active_shell(shell)
+    lines = scan.active.splitlines()
     wanted = context.splitlines()
     starts = [
         i
         for i in range(0, len(lines) - len(wanted) + 1)
         if lines[i : i + len(wanted)] == wanted
     ]
-    depths, balanced = _shell_depths(shell)
-    return balanced and len(starts) == 1 and depths[starts[0]] == 0
+    depths, balanced = _shell_depths(scan.active)
+    return not scan.errors and balanced and len(starts) == 1 and depths[starts[0]] == 0
 
 
 def _landing_context_is_top_level(scan: MarkdownScan) -> bool:
@@ -529,7 +631,8 @@ def validate_texts(skill: str, generator: str, pipeline: str) -> list[str]:
     """Return invariant-family names that are absent from the supplied texts."""
     scan = _markdown_scan(skill)
     active_skill = scan.visible
-    active_pipeline = _active_shell(pipeline)
+    pipeline_scan = _active_shell(pipeline)
+    active_pipeline = pipeline_scan.active
     missing = (
         _missing(active_skill, SKILL_RULES)
         + _missing(generator, GENERATOR_RULES)
@@ -537,6 +640,8 @@ def validate_texts(skill: str, generator: str, pipeline: str) -> list[str]:
     )
     if scan.errors:
         _append_once(missing, "markdown_structure")
+    if pipeline_scan.errors:
+        _append_once(missing, "pipeline_contract_registration")
     if not _reviewer_structure_ok(scan.prose):
         _append_once(missing, "reviewer_lenses")
     if not _landing_context_is_top_level(scan):

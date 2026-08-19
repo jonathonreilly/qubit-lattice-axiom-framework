@@ -1,6 +1,6 @@
 {
- "edge_count": 16032,
- "node_count": 5564,
+ "edge_count": 16039,
+ "node_count": 5565,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -481,6 +481,10 @@
   "admissibility_dirac_kahler_naturality_moduli_bounded_theorem_note_2026-08-17": {
    "deps_hash": "8ede7fc2121a",
    "out_degree": 3
+  },
+  "admissibility_dirac_kahler_observable_scaling_law_bounded_theorem_note_2026-08-18": {
+   "deps_hash": "0cff474550ba",
+   "out_degree": 7
   },
   "admissibility_dirac_kahler_paired_floor_refutation_mixed_circle_bounded_theorem_note_2026-08-15": {
    "deps_hash": "26cdf7e4282e",

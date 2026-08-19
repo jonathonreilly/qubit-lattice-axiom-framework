@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_observable_scaling_law_2026_08_18.py
+runner_sha256: c2fd22b4d61893277c20b5ba6f6dca6fcd8d82db3d4acf00e7fc1e2070dcb244
+input_fingerprint_sha256: 2975c427d0669e4edb970db8e10b6df2a52fe35379a90275807463b1be833f66
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 99.05
+status: ok
+----- stdout -----
+[PASS] A-authority: Block 135 parent note/runner/cache, ancestors 134--103, and Block 118/119 runner/cache machinery are content-bound
+[PASS] B-the-z6-fixture: the d=2, m=9/20, c=5/13, Z8-AP x Z6 fixture has six exact sectors, determinant-one real-trace normalized monodromies, and raw classes (0,3)/(1,4)/(2,5) with the stated conjugates
+[PASS] C-the-conjugation-mirror: action reality and real stable rho give M_-k=conj(M_k), hence y5=conj(y1), y4=conj(y2), and individually real y0/y3 at c=5/13 and 3/5; polynomial pairing is consequential
+[PASS] D-the-normalization: absorbing sigma_k=(-tr M_k)/sqrt(u_k), sigma_k^2=det M_k, is a determinant-phase presentation normalization giving q1=q2=q4=q5 and q0=q3, not new physics
+[PASS] E-the-regimes-and-g: (1,5)/(2,4) are conjugate-coupled and pivot normalization forces g=1; self-real (0,3) has relative g gauge, with every required sqrt retained in the exact field tower
+[PASS] F-the-algebra-count: the classified algebra is Sym_2(R)^3 with (dim,center)=(9,3); Z4/Z6 verify 3n at two points only, and J=[Z,X]/2 is antisymmetric and not admissible
+[PASS] G-the-charge-correction: diag(0,3) is sign-definite/not indefinite over integer charges (3=-3 only residually); its balanced zero-expectation ray is zero, while (1,-1) and (2,-2) each have a nonzero balanced witness
+[PASS] H-scope: scaling, kinematics, normalization, regimes, two-point boundary, charge/Jordan corrections, field caveats, N1--N8/W1/N5, no-go, and TOE firewalls are present
+AUTHORITY: Block135 parent=dac48758c9967761b1b4419b5870357ca8da7cfa; note/runner/cache, ancestors 134--103, and Block118/119 runner/cache pins exact
+FIXTURE: d=2 DK; m=9/20; c=5/13; time=Z8 AP; space=Z6; sectors=6; raw classes=((0, 3), (1, 4), (2, 5))
+MIRROR: action reality + rho real => M_-k=conj(M_k) => y5=conj(y1), y4=conj(y2), y0/y3 real; c=3/5 spot exact
+NORMALIZATION: p_k(sigma_k*z)/sigma_k^2=q_k(z), sigma_k^2=det(M_k); q1=q2=q4=q5, q0=q3; presentation only
+REGIMES/FIELDS: (1,5),(2,4) forced g=1; (0,3) gauge g; Q(i,sqrt(3)) then sqrt(u), sqrt(u-4), sqrt(u(u-4)) as required
+ALGEBRA: Sym_2(R)^3, dim=9, center=R^3; Z4=(2,6,2), Z6=(3,9,3): 3n verified at two points, not a proven general theorem; antisymmetric J excluded
+CHARGE: diag(0,3) is positive-semidefinite/not indefinite; 3=-3 only mod 6; balanced zero-expectation population is nonzero only in (1,-1),(2,-2)
+N5: per_element: exact fixture, conjugation, normalization, regime, classification, and charge-definiteness certificates are checked
+per_site: one Grassmann mode per fine site on the antiperiodic reflection torus
+per_mode: the six-sector carrier pairs by conjugation kinematics into two coupled pairs with forced unit gram and one per-sector-real pair with gauge gram
+per_block: the observable algebra scales to three symmetric blocks of total dimension nine with center three — the 3n law verified at two lattice sizes — while the self-conjugate block's charge is definite and the population break lives entirely in the conjugate pairs
+lattice_wide: checked and not executed — the general-Z_N theorem, the twisted-formulation record, the joint-lane program, the actual ADM/history transporter completion, joint gravity, the gravity constraint quotient beyond the displayed carriers, Records, audit retention, and TOE closure remain open
+RESULT: the observable algebra grows by the charge-kinematic law — conjugation pairing predicts the block structure for every lattice size, the 3n count is verified at two sizes, and the population physics stays in the conjugate pairs
+DECISION_CUT: pose the general-Z_N theorem and continue the campaign queue; reject residue-integer charge conflations and general-law overclaims
+TOE: zero obligation retirement; no TOE percentage moves; retained-positive end-to-end theory count remains zero; gravity constraint quotient remains unexecuted; actual ADM/history transporter remains open
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

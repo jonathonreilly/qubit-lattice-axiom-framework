@@ -24,10 +24,11 @@ surface, in the same idiom as ``write_citation_graph_manifest.py``:
     blocks and the committed manifest, exiting nonzero with a precise diff.
     ``run_pipeline.sh`` runs ``--check``; the pipeline never rewrites skill docs.
 
-Generation is extraction, not assertion
----------------------------------------
-Nothing inside a generated block is authored here. Every sentence is a span
-lifted out of a registered source document, located *structurally*:
+Generation routes authority; it does not paraphrase it
+------------------------------------------------------
+Full-text blocks are extracted from registered sources. The compact router is
+mechanically assembled only from registered ids and paths plus imperative
+framing; it never restates a grant or boundary:
 
 1. *Axiom spans.* The axiom roster is read from the memo's ``Purpose`` list;
    each axiom's own section is then located by heading (``<Name> / ...``) and
@@ -47,11 +48,11 @@ lifted out of a registered source document, located *structurally*:
    Source-file digests remain in the acknowledgment manifest, so any authority
    edit still fails ``--check`` until it is acknowledged by regeneration.
 
-4. *Mechanical connective text only.* The generator supplies the label lines
-   (which are the source headings themselves), the source paths, and one
-   sentence of framing. It supplies no paraphrase: the four skills no longer
-   restate the baseline in their own voice inside the block. Per-file framing
-   and per-file instructions live OUTSIDE the block, where the file owns them.
+4. *Mechanical connective text only.* Full-text blocks add source headings,
+   source paths, and one framing sentence around extracted prose. The compact
+   router adds imperative labels around registered ids and paths. Neither form
+   paraphrases any source grant or boundary. Per-file framing and per-file
+   instructions live OUTSIDE the block, where the file owns them.
 
 5. *Mechanical normalizations, and only these:* whitespace is collapsed and
    re-wrapped to width 79 (a hand-wrapped compound word is rejoined without a
@@ -637,7 +638,7 @@ def render_primitive(prim: Primitive, indent: str) -> list[str]:
 
 
 def render_block(src: AxiomSource, target: Target) -> list[str]:
-    """Render one target's block. Only the framing sentence is authored here."""
+    """Render one target's generated authority representation."""
     indent = target.marker_indent
     if not target.spans:
         raise SourceDrift(f"target '{target.key}' declares no spans to render")
@@ -758,12 +759,12 @@ def coverage_failure(where: str, node_id: str, extract: Extract) -> str:
 
 
 def verify_block_covers_roster(src: AxiomSource, target: Target, block: list[str]) -> None:
-    """The regenerated block itself must state every registered primitive.
+    """Require every registered primitive's configured authority representation.
 
-    This is the generator-configuration check behind the roster promise: if a
-    target's ``spans`` ever stop rendering the primitive roster, or a newly
-    registered primitive is not reached by any span, the generator refuses to
-    emit rather than relying on unmanaged prose elsewhere in the file.
+    Full-text targets state the grant and boundary. The compact review-loop
+    target routes to the current source by id and path. If either representation
+    loses a registered primitive, refuse to emit rather than relying on
+    unmanaged prose elsewhere in the file.
     """
     if target.spans == (SPAN_AUTHORITY_ROUTER,):
         missing_refs = missing_authority_router_coverage(src, "\n".join(block))
@@ -897,7 +898,7 @@ def run(repo_root: Path, check_only: bool) -> int:
         file_path = repo_root / target.path
         expected = blocks[target.key]
         # Generator-configuration check: the block we are about to emit must
-        # itself state every registered primitive's grant and boundary.
+        # carry its configured full-text or mandatory-router representation.
         verify_block_covers_roster(src, target, expected)
 
         if not file_path.exists():

@@ -1,11 +1,12 @@
 """Regression tests for the skill axiom-baseline generator and its guard.
 
 Every case runs against a temp copy of the real sources and skill docs, so the
-committed repo state is never mutated. The named boundary: generation is
-extraction (never assertion), a source revision propagates into every full-text
-target before any digest is refreshed, full-text roster coverage is semantic
-rather than nominal, the review-loop authority router is complete, and the
-generator fails closed when a registered source loses the addressed structure.
+committed repo state is never mutated. The named boundary: full-text generation
+is extraction, the compact router contains no source paraphrase, a source
+revision propagates into every full-text target before any digest is refreshed,
+full-text roster coverage is semantic rather than nominal, the review-loop
+authority router is complete, and the generator fails closed when a registered
+source loses the addressed structure.
 
 The mutation cases below are the ones that defeated the previous
 literal-answer/anchor design (review iteration 1): a revised Admissibility
@@ -146,7 +147,7 @@ class InSyncTest(FixtureTestCase):
 
 
 class ExtractionFidelityTest(FixtureTestCase):
-    """Generation must be extraction: no rendered sentence is authored here."""
+    """Full-text generation must extract source prose without paraphrase."""
 
     def all_extracts(self) -> list[gen.Extract]:
         src = gen.load_source(self.root)
@@ -535,6 +536,29 @@ class PrimitiveSourceEditTest(FixtureTestCase):
 
 
 class RegistryEditTest(FixtureTestCase):
+    def test_coherent_authority_change_leaves_no_unmanaged_review_loop_policy(self):
+        source = read(self.root, self.kinetic_rel)
+        revised = source.replace(
+            "No mass ratio,\n  coupling, mixing angle, phase, or selector is supplied",
+            "One mass ratio is supplied; no coupling, mixing angle, phase, or "
+            "selector is supplied",
+            1,
+        )
+        self.assertNotEqual(revised, source)
+        write(self.root, self.kinetic_rel, revised)
+
+        self.assertEqual(run_generator(self.root, check=True)[0], 1)
+        self.assertEqual(run_generator(self.root, check=False)[0], 0)
+        self.assertEqual(run_generator(self.root, check=True)[0], 0)
+
+        target = self.router_target()
+        text = read(self.root, target.path)
+        begin = text.index(gen.BEGIN_MARKER)
+        end = text.index(gen.END_MARKER, begin) + len(gen.END_MARKER)
+        unmanaged = gen.visible_text(text[:begin] + text[end:]).lower()
+        self.assertNotIn("mass ratio", unmanaged)
+        self.assertNotIn("kinetic-isotropy primitive", unmanaged)
+
     def test_repathed_primitive_note_propagates_into_the_roster(self):
         registry = json.loads(read(self.root, gen.REGISTRY_REL))
         node = registry["nodes"]["realized_state_primitive"]
@@ -760,6 +784,18 @@ class RenderingTest(FixtureTestCase):
         for prim in src.primitives:
             self.assertIn(prim.node_id, body)
             self.assertIn(prim.path, body)
+
+    def test_review_loop_keeps_primitive_specific_prose_inside_router(self):
+        """Primitive policy must not drift in unmanaged review-loop prose."""
+        src = gen.load_source(self.root)
+        target = self.router_target()
+        text = read(self.root, target.path)
+        begin = text.index(gen.BEGIN_MARKER)
+        end = text.index(gen.END_MARKER, begin) + len(gen.END_MARKER)
+        unmanaged = gen.visible_text(text[:begin] + text[end:])
+        for prim in src.primitives:
+            self.assertNotIn(prim.node_id, unmanaged)
+            self.assertNotIn(prim.path, unmanaged)
 
     def test_blocks_wrap_within_the_declared_width(self):
         src = gen.load_source(self.root)

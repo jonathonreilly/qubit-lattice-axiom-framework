@@ -11,10 +11,12 @@ REPO_ROOT = Path(__file__).resolve().parents[3]
 SKILL_REL = "docs/ai_methodology/skills/review-loop/SKILL.md"
 GENERATOR_REL = "docs/audit/scripts/generate_skill_axiom_baselines.py"
 PIPELINE_REL = "docs/audit/scripts/run_pipeline.sh"
+HTML_COMMENT_RE = re.compile(r"<!--.*?-->", re.DOTALL)
 
 
-# Each family is deliberately redundant enough to catch a semantic gate being
-# removed while allowing ordinary prose wrapping and line movement.
+# These are structural tripwires, not a substitute for methodology review.
+# Exact positive clauses protect load-bearing commands from commented-out,
+# negated, or inert-token mutations while allowing ordinary prose wrapping.
 SKILL_RULES: dict[str, tuple[str, ...]] = {
     "freshness": (
         r"## Skill Freshness",
@@ -22,14 +24,17 @@ SKILL_RULES: dict[str, tuple[str, ...]] = {
         r"origin/main",
     ),
     "mandatory_authority_reads": (
-        r"Mandatory authority read",
+        r"\*\*Mandatory authority read:\*\*",
         r"PRIMITIVE_REGISTRY_CHECK\.md",
         r"axiom_premise_nodes\.json",
         r"premise_decision_history\.json",
     ),
     "reviewer_model_and_effort": (
-        r"GPT-5\.6-Sol",
-        r"maximum available reasoning",
+        r"^Review-loop is a text/code/math review path\. Run it with the user's "
+        r"configured\s+highest-tier Codex reviewer model "
+        r"and maximum available reasoning for this\s+repo \(currently "
+        r"GPT-5\.6-Sol; use the maximum available reasoning tier unless\s+the "
+        r"owner directs a specific tier for the episode\)\.",
     ),
     "reviewer_lenses": (
         r"CodeRunnerReviewer",
@@ -38,6 +43,7 @@ SKILL_RULES: dict[str, tuple[str, ...]] = {
         r"ImportSupportReviewer",
         r"NatureRetentionReviewer",
         r"NoGoDisciplineReviewer",
+        r"LabelingConventionReviewer",
         r"RepoGovernanceReviewer",
         r"MethodologySkillReviewer",
     ),
@@ -90,7 +96,7 @@ SKILL_RULES: dict[str, tuple[str, ...]] = {
         r"for attempt in 1 2 3 4",
         r"landed=",
         r"refs/heads/main:refs/remotes/origin/main",
-        r"merge-base --is-ancestor",
+        r'^\s*if ! git merge-base --is-ancestor "\$landed" origin/main; then\s*$',
         r"landing did not complete after 4 attempts",
     ),
 }
@@ -105,9 +111,21 @@ GENERATOR_RULES: dict[str, tuple[str, ...]] = {
 
 PIPELINE_RULES: dict[str, tuple[str, ...]] = {
     "pipeline_contract_registration": (
-        r"check_review_loop_skill_contract\.py",
+        r"^python3 docs/audit/scripts/check_review_loop_skill_contract\.py$",
     ),
 }
+
+
+def _active_markdown(text: str) -> str:
+    """Remove HTML-commented material; comments never satisfy a contract."""
+    return HTML_COMMENT_RE.sub("", text)
+
+
+def _active_shell(text: str) -> str:
+    """Remove full-line shell comments; only active commands count."""
+    return "\n".join(
+        line for line in text.splitlines() if not line.lstrip().startswith("#")
+    )
 
 
 def _missing(text: str, rules: dict[str, tuple[str, ...]]) -> list[str]:
@@ -115,7 +133,7 @@ def _missing(text: str, rules: dict[str, tuple[str, ...]]) -> list[str]:
         name
         for name, patterns in rules.items()
         if any(
-            re.search(pattern, text, re.IGNORECASE | re.DOTALL) is None
+            re.search(pattern, text, re.IGNORECASE | re.DOTALL | re.MULTILINE) is None
             for pattern in patterns
         )
     ]
@@ -124,9 +142,9 @@ def _missing(text: str, rules: dict[str, tuple[str, ...]]) -> list[str]:
 def validate_texts(skill: str, generator: str, pipeline: str) -> list[str]:
     """Return invariant-family names that are absent from the supplied texts."""
     return (
-        _missing(skill, SKILL_RULES)
+        _missing(_active_markdown(skill), SKILL_RULES)
         + _missing(generator, GENERATOR_RULES)
-        + _missing(pipeline, PIPELINE_RULES)
+        + _missing(_active_shell(pipeline), PIPELINE_RULES)
     )
 
 

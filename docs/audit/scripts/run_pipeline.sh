@@ -227,14 +227,17 @@ echo "==> 18a/18 generate_skill_axiom_baselines.py --check (skill axiom-baseline
 # --check and commits the regenerated blocks alongside the source change.
 python3 docs/audit/scripts/generate_skill_axiom_baselines.py --check
 
+echo "==> 18b/18 check_review_loop_skill_contract.py (review quality/safety guard)"
+python3 docs/audit/scripts/check_review_loop_skill_contract.py
+
 if [[ "${PIPELINE_MODE}" == "full" ]]; then
-  echo "==> 18b/18 static_pipeline_checkpoint.py finalize (successful full-build checkpoint)"
+  echo "==> 18c/18 static_pipeline_checkpoint.py finalize (successful full-build checkpoint)"
   python3 docs/audit/scripts/static_pipeline_checkpoint.py finalize
 else
   # Close the proof/use window for direct callers. Any source or cache change
   # while verdict-dependent stages were running makes the fast run fail rather
   # than reporting success from mixed static state.
-  echo "==> 18b/18 static_pipeline_checkpoint.py verify (post-use checkpoint)"
+  echo "==> 18c/18 static_pipeline_checkpoint.py verify (post-use checkpoint)"
   python3 docs/audit/scripts/static_pipeline_checkpoint.py verify
 fi
 

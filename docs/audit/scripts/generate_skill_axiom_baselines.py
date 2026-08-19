@@ -1,15 +1,18 @@
 #!/usr/bin/env python3
-"""Render the axiom-baseline and approved-primitive-roster blocks in skill docs.
+"""Render axiom/primitive authority blocks in skill docs.
 
-Four agent-facing surfaces restate the framework's axiom baseline and the
-approved-primitive roster:
+Four agent-facing surfaces carry generated framework-authority blocks:
 
   * docs/ai_methodology/skills/physics-loop/SKILL.md
   * docs/ai_methodology/skills/review-loop/SKILL.md
   * docs/ai_methodology/skills/audit-loop/SKILL.md
   * docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md
 
-Before this generator those restatements were hand-copied, so an owner-approved
+The physics/audit/registry surfaces carry extracted source text. The review-loop
+surface instead carries a compact, generated authority router: review-loop must
+read the named authority files before classifying a premise, but need not pay the
+full copied-body context cost before every review phase. Before this generator,
+these surfaces were hand-copied, so an owner-approved
 axiom revision (for example the 2026-08-05 Admissibility distribution clause)
 could land in ``docs/MINIMAL_AXIOMS_*.md`` while the skills kept quoting the
 superseded wording. This script makes the restatements a *generated but tracked*
@@ -38,19 +41,25 @@ lifted out of a registered source document, located *structurally*:
    Not Do`` sections of that node's ``current_path`` note are extracted whole.
    Those two sections are the primitive's grant and its boundary statement.
 
-3. *Mechanical connective text only.* The generator supplies the label lines
+3. *Review-loop authority router.* The compact review-loop block lists the
+   current axiom memo, registry, and every registered primitive id/current path.
+   It explicitly requires the source files to be read before a premise judgment.
+   Source-file digests remain in the acknowledgment manifest, so any authority
+   edit still fails ``--check`` until it is acknowledged by regeneration.
+
+4. *Mechanical connective text only.* The generator supplies the label lines
    (which are the source headings themselves), the source paths, and one
    sentence of framing. It supplies no paraphrase: the four skills no longer
    restate the baseline in their own voice inside the block. Per-file framing
    and per-file instructions live OUTSIDE the block, where the file owns them.
 
-4. *Mechanical normalizations, and only these:* whitespace is collapsed and
+5. *Mechanical normalizations, and only these:* whitespace is collapsed and
    re-wrapped to width 79 (a hand-wrapped compound word is rejoined without a
    space); ``[text](target)`` inline links are flattened to ``text`` so an
    extracted relative link cannot become a broken link in the consuming file; a
    fenced code block is inlined as a code span. Text is otherwise byte-preserved.
 
-5. *The acknowledgment manifest.* Whole-file and per-section digests of the
+6. *The acknowledgment manifest.* Whole-file and per-section digests of the
    axiom memo, the registry, and every registered primitive note. An edit to a
    source region that no span extracts still changes the manifest, so
    ``--check`` fails until a human reruns the generator. The manifest is an
@@ -67,15 +76,13 @@ refresh can therefore never be used as a substitute for propagation. Enforced
 in ``run()`` and tested directly by
 ``tests/test_skill_axiom_baselines.py::DigestPropagationInvariantTest``.
 
-Roster discipline: every primitive registered in ``axiom_premise_nodes.json`` is
-rendered inside every target's generated block (``verify_block_covers_roster``
-refuses to emit a block that does not), and ``missing_roster_coverage``
-independently re-checks that each target *file* carries that primitive's
-extracted grant and boundary text as *visible* prose -- HTML comments and other
-commented-out regions are stripped before the check, so a bare node id or a
-commented mention is never accepted as coverage. Registering a new primitive
-therefore fails ``--check`` until every skill carries the new primitive's own
-grant and boundary sentences.
+Roster discipline: every registered primitive is rendered in every target.
+Full-text targets carry its extracted grant and boundary as visible prose;
+``missing_roster_coverage`` rejects nominal/commented coverage. The compact
+review-loop router carries every id and current source path as visible prose;
+``missing_authority_router_coverage`` rejects an incomplete router. Registering
+or repathing a primitive therefore fails ``--check`` until every generated
+surface carries the appropriate current authority representation.
 
 Deterministic: same sources -> byte-identical blocks and manifest.
 """
@@ -120,6 +127,7 @@ PRIMITIVE_BOUNDARY_SECTION = "What This Does Not Do"
 
 SPAN_AXIOMS = "axioms"
 SPAN_PRIMITIVES = "primitives"
+SPAN_AUTHORITY_ROUTER = "authority-router"
 
 
 class SourceDrift(RuntimeError):
@@ -574,9 +582,8 @@ class Target:
     key: str
     path: str
     marker_indent: str
-    # Which extracted spans this file's block renders. Selection is structural;
-    # no target paraphrases a span it omits. Every target renders SPAN_PRIMITIVES
-    # so that each registered primitive states its own boundary on every surface.
+    # Which authority representation this block renders. Full-text targets use
+    # extracted spans; review-loop uses the compact mandatory-read router.
     spans: tuple[str, ...] = field(default_factory=tuple)
 
 
@@ -591,7 +598,7 @@ TARGETS: tuple[Target, ...] = (
         key="review-loop",
         path="docs/ai_methodology/skills/review-loop/SKILL.md",
         marker_indent="",
-        spans=(SPAN_AXIOMS, SPAN_PRIMITIVES),
+        spans=(SPAN_AUTHORITY_ROUTER,),
     ),
     Target(
         key="audit-loop",
@@ -634,6 +641,30 @@ def render_block(src: AxiomSource, target: Target) -> list[str]:
     indent = target.marker_indent
     if not target.spans:
         raise SourceDrift(f"target '{target.key}' declares no spans to render")
+
+    if target.spans == (SPAN_AUTHORITY_ROUTER,):
+        framing = (
+            "Generated by `%s`. **Mandatory authority read:** before any premise, "
+            "import, wall, or dependency judgment, read the current axiom memo, "
+            "primitive registry check, registry data, and every relevant primitive "
+            "source listed below. This roster is a freshness router, not a content "
+            "substitute; the cited source grant and boundary control. Do not "
+            "hand-edit inside the markers." % GENERATOR_REL
+        )
+        lines = label_lines(framing, indent)
+        lines.append("")
+        lines.extend(label_lines(f"- axiom authority: `{src.axioms_path}`", indent))
+        lines.extend(
+            label_lines(
+                "- primitive classification procedure: "
+                "`docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md`",
+                indent,
+            )
+        )
+        lines.extend(label_lines(f"- primitive registry: `{REGISTRY_REL}`", indent))
+        for prim in src.primitives:
+            lines.extend(label_lines(f"- `{prim.node_id}`: `{prim.path}`", indent))
+        return lines
 
     framing = (
         "Generated by `%s`: every paragraph below is extracted verbatim from the "
@@ -699,6 +730,20 @@ def missing_roster_coverage(src: AxiomSource, text: str) -> list[tuple[str, Extr
     return missing
 
 
+def missing_authority_router_coverage(src: AxiomSource, text: str) -> list[str]:
+    """Required visible references absent from a compact authority router."""
+    visible = visible_text(text)
+    required = [
+        "Mandatory authority read",
+        "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+        REGISTRY_REL,
+        src.axioms_path,
+    ]
+    for prim in src.primitives:
+        required.extend((prim.node_id, prim.path))
+    return [item for item in required if item not in visible]
+
+
 def coverage_failure(where: str, node_id: str, extract: Extract) -> str:
     return (
         f"  FAIL {where}: registered primitive '{node_id}' does not carry the "
@@ -720,6 +765,15 @@ def verify_block_covers_roster(src: AxiomSource, target: Target, block: list[str
     registered primitive is not reached by any span, the generator refuses to
     emit rather than relying on unmanaged prose elsewhere in the file.
     """
+    if target.spans == (SPAN_AUTHORITY_ROUTER,):
+        missing_refs = missing_authority_router_coverage(src, "\n".join(block))
+        if missing_refs:
+            raise SourceDrift(
+                f"target '{target.key}' ({target.path}) has an incomplete "
+                f"mandatory authority router; missing {missing_refs[0]!r}."
+            )
+        return
+
     missing = missing_roster_coverage(src, "\n".join(block))
     if missing:
         node_id, extract = missing[0]
@@ -855,8 +909,15 @@ def run(repo_root: Path, check_only: bool) -> int:
         rebuilt = rebuild(original, target, expected)
 
         if check_only:
-            for node_id, extract in missing_roster_coverage(src, original):
-                failures.append(coverage_failure(target.path, node_id, extract))
+            if target.spans == (SPAN_AUTHORITY_ROUTER,):
+                for missing_ref in missing_authority_router_coverage(src, original):
+                    failures.append(
+                        f"  FAIL {target.path}: mandatory authority router is "
+                        f"missing visible reference {missing_ref!r}"
+                    )
+            else:
+                for node_id, extract in missing_roster_coverage(src, original):
+                    failures.append(coverage_failure(target.path, node_id, extract))
             if committed != expected:
                 failures.append(
                     f"  FAIL {target.path}: generated block is stale\n"
@@ -886,8 +947,15 @@ def run(repo_root: Path, check_only: bool) -> int:
                 f"regenerated block after writing"
             )
             continue
-        for node_id, extract in missing_roster_coverage(src, written):
-            failures.append(coverage_failure(target.path, node_id, extract))
+        if target.spans == (SPAN_AUTHORITY_ROUTER,):
+            for missing_ref in missing_authority_router_coverage(src, written):
+                failures.append(
+                    f"  FAIL {target.path}: mandatory authority router is "
+                    f"missing visible reference {missing_ref!r}"
+                )
+        else:
+            for node_id, extract in missing_roster_coverage(src, written):
+                failures.append(coverage_failure(target.path, node_id, extract))
 
     manifest_path = repo_root / MANIFEST_REL
     if check_only:

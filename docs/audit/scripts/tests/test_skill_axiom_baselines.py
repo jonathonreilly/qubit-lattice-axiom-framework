@@ -2,10 +2,10 @@
 
 Every case runs against a temp copy of the real sources and skill docs, so the
 committed repo state is never mutated. The named boundary: generation is
-extraction (never assertion), a source revision propagates into every target
-before any digest is refreshed, roster coverage is semantic rather than nominal,
-and the generator fails closed when a registered source loses the structure the
-extraction addresses.
+extraction (never assertion), a source revision propagates into every full-text
+target before any digest is refreshed, full-text roster coverage is semantic
+rather than nominal, the review-loop authority router is complete, and the
+generator fails closed when a registered source loses the addressed structure.
 
 The mutation cases below are the ones that defeated the previous
 literal-answer/anchor design (review iteration 1): a revised Admissibility
@@ -99,8 +99,14 @@ class FixtureTestCase(unittest.TestCase):
     def skill_targets(self) -> list[gen.Target]:
         return [t for t in gen.TARGETS if gen.SPAN_AXIOMS in t.spans]
 
+    def full_targets(self) -> list[gen.Target]:
+        return [t for t in gen.TARGETS if gen.SPAN_PRIMITIVES in t.spans]
+
+    def router_target(self) -> gen.Target:
+        return next(t for t in gen.TARGETS if gen.SPAN_AUTHORITY_ROUTER in t.spans)
+
     def assertInEveryTarget(self, needle: str, targets=None) -> None:
-        for target in targets if targets is not None else gen.TARGETS:
+        for target in targets if targets is not None else self.full_targets():
             self.assertIn(
                 gen.norm(needle),
                 gen.norm(block_text(self.root, target.path)),
@@ -108,7 +114,7 @@ class FixtureTestCase(unittest.TestCase):
             )
 
     def assertInNoTarget(self, needle: str, targets=None) -> None:
-        for target in targets if targets is not None else gen.TARGETS:
+        for target in targets if targets is not None else self.full_targets():
             self.assertNotIn(
                 gen.norm(needle),
                 gen.norm(block_text(self.root, target.path)),
@@ -288,7 +294,7 @@ class AxiomSourceEditTest(FixtureTestCase):
 
     def test_revised_admissibility_clause_reaches_every_applicable_block(self):
         """Review finding F1, mutation 1: the clause must PROPAGATE, not stop."""
-        before = {t.path: block_text(self.root, t.path) for t in gen.TARGETS}
+        before = {t.path: block_text(self.root, t.path) for t in self.skill_targets()}
         text = read(self.root, self.axioms_rel)
         revised = text.replace(
             "the probability distribution over the possibilities is\n"
@@ -324,7 +330,7 @@ class AxiomSourceEditTest(FixtureTestCase):
         Nothing in the retired ATOMS/ANCHORS tables touched the memo's open-gate
         list or its reading notes, so edits there changed no block.
         """
-        before = {t.path: block_text(self.root, t.path) for t in gen.TARGETS}
+        before = {t.path: block_text(self.root, t.path) for t in self.skill_targets()}
         text = read(self.root, self.axioms_rel)
         revised = text.replace(
             "- `g_bare = 1` convention handling;",
@@ -464,7 +470,7 @@ class PrimitiveSourceEditTest(FixtureTestCase):
         not supply the absolute scale" as anchors, so this revision regenerated
         nothing and left three skill surfaces asserting the superseded boundary.
         """
-        before = {t.path: block_text(self.root, t.path) for t in gen.TARGETS}
+        before = {t.path: block_text(self.root, t.path) for t in self.full_targets()}
         text = read(self.root, self.kinetic_rel)
         revised = text.replace(
             "spacing ratio (derived from the no-diagonal clause); it supplies "
@@ -488,7 +494,7 @@ class PrimitiveSourceEditTest(FixtureTestCase):
         self.assertEqual(run_generator(self.root, check=False)[0], 0)
         self.assertInEveryTarget("kinetic-form isotropy and one supplied mass ratio")
         self.assertInNoTarget("it supplies only the kinetic-form isotropy")
-        for target in gen.TARGETS:
+        for target in self.full_targets():
             self.assertNotEqual(
                 before[target.path],
                 block_text(self.root, target.path),
@@ -579,6 +585,9 @@ class RegistryEditTest(FixtureTestCase):
         self.assertInEveryTarget(
             "The framework takes one hypothetical reference, for this test only"
         )
+        router = block_text(self.root, self.router_target().path)
+        self.assertIn("brand_new_primitive", router)
+        self.assertIn(note_rel, router)
         self.assertEqual(run_generator(self.root, check=True)[0], 0)
 
     def test_newly_registered_primitive_without_the_sections_fails_closed(self):
@@ -606,7 +615,7 @@ class RosterCoverageTest(FixtureTestCase):
         write(self.root, target.path, text[:start] + replacement + text[end:])
 
     def test_boundary_text_inside_an_html_comment_is_not_coverage(self):
-        target = gen.TARGETS[1]
+        target = self.full_targets()[0]
         text = read(self.root, target.path)
         start = text.rindex(f"*{gen.PRIMITIVE_BOUNDARY_SECTION}*")
         end = text.index(gen.END_MARKER, start)
@@ -733,9 +742,24 @@ class IdempotenceTest(FixtureTestCase):
 
 
 class RenderingTest(FixtureTestCase):
-    def test_every_target_renders_the_primitive_roster(self):
+    def test_every_target_renders_the_primitive_roster_or_authority_router(self):
         for target in gen.TARGETS:
-            self.assertIn(gen.SPAN_PRIMITIVES, target.spans, target.path)
+            self.assertTrue(
+                gen.SPAN_PRIMITIVES in target.spans
+                or target.spans == (gen.SPAN_AUTHORITY_ROUTER,),
+                target.path,
+            )
+
+    def test_review_loop_router_requires_every_current_authority(self):
+        src = gen.load_source(self.root)
+        target = self.router_target()
+        body = block_text(self.root, target.path)
+        self.assertIn("Mandatory authority read", body)
+        self.assertIn(src.axioms_path, body)
+        self.assertIn(gen.REGISTRY_REL, body)
+        for prim in src.primitives:
+            self.assertIn(prim.node_id, body)
+            self.assertIn(prim.path, body)
 
     def test_blocks_wrap_within_the_declared_width(self):
         src = gen.load_source(self.root)

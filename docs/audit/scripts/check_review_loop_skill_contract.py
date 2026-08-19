@@ -13,9 +13,7 @@ SKILL_REL = "docs/ai_methodology/skills/review-loop/SKILL.md"
 GENERATOR_REL = "docs/audit/scripts/generate_skill_axiom_baselines.py"
 PIPELINE_REL = "docs/audit/scripts/run_pipeline.sh"
 FENCE_OPEN_RE = re.compile(r"^ {0,3}(?P<fence>`{3,}|~{3,})(?P<info>.*)$")
-REFERENCE_DEF_RE = re.compile(
-    r"^ {0,3}\[[^\]\n]+\]:[ \t]*(?:<[^>\n]*>|\S+)(?P<rest>.*)$"
-)
+REFERENCE_START_RE = re.compile(r"^ {0,3}\[[^\]\n]+\]:")
 PIPELINE_CONTRACT_LINE = (
     "python3 docs/audit/scripts/check_review_loop_skill_contract.py"
 )
@@ -228,7 +226,7 @@ def _markdown_scan(text: str) -> MarkdownScan:
     fence_info = ""
     fence_body: list[str] = []
     in_comment = False
-    reference_closer: str | None = None
+    in_reference_definition = False
 
     for raw in text.splitlines():
         if fence_marker is not None:
@@ -255,11 +253,11 @@ def _markdown_scan(text: str) -> MarkdownScan:
             prose_lines.append(line)
             continue
 
-        if reference_closer is not None:
+        if in_reference_definition:
             visible_lines.append("")
             prose_lines.append("")
-            if line.rstrip().endswith(reference_closer):
-                reference_closer = None
+            if not line.strip():
+                in_reference_definition = False
             continue
 
         fence = FENCE_OPEN_RE.match(line)
@@ -281,13 +279,12 @@ def _markdown_scan(text: str) -> MarkdownScan:
             prose_lines.append("")
             continue
 
-        reference = REFERENCE_DEF_RE.match(line)
-        if reference:
-            tail = reference.group("rest").strip()
-            if tail and tail[0] in {'"', "'", "("}:
-                closer = ")" if tail[0] == "(" else tail[0]
-                if len(tail) == 1 or not tail[1:].rstrip().endswith(closer):
-                    reference_closer = closer
+        if REFERENCE_START_RE.match(line):
+            # A CommonMark definition may put its destination and multiline
+            # title on following lines. Definitions are absent from the live
+            # skill, so conservatively blank the whole block through its first
+            # blank line rather than risk treating hidden title text as policy.
+            in_reference_definition = True
             visible_lines.append("")
             prose_lines.append("")
             continue
@@ -299,8 +296,6 @@ def _markdown_scan(text: str) -> MarkdownScan:
         errors.append("unterminated fenced code block")
     if in_comment:
         errors.append("unterminated HTML comment")
-    if reference_closer is not None:
-        errors.append("unterminated link-reference title")
     return MarkdownScan(
         visible="\n".join(visible_lines),
         prose="\n".join(prose_lines),
@@ -313,10 +308,12 @@ def _active_shell(text: str) -> str:
     """Blank shell comments, multiline strings, and here-document payloads."""
     lines: list[str] = []
     quote: str | None = None
+    backtick = False
+    command_substitution = False
     heredoc: str | None = None
     heredoc_re = re.compile(
-        r"(?<!<)<<-?(?!<)[ \t]*(?P<quote>['\"]?)(?P<word>[A-Za-z_][A-Za-z0-9_]*)"
-        r"(?P=quote)"
+        r"(?<!<)<<-?(?!<)[ \t]*"
+        r"(?P<word>'[^'\n]*'|\"[^\"\n]*\"|[^\s;|&()<>]+)"
     )
     for raw in text.splitlines():
         if heredoc is not None:
@@ -325,7 +322,17 @@ def _active_shell(text: str) -> str:
                 heredoc = None
             continue
 
-        started_in_quote = quote is not None
+        if command_substitution:
+            lines.append("")
+            close = re.match(r"^\s*\)(?P<quote>['\"]?)\s*$", raw)
+            if close:
+                command_substitution = False
+                if close.group("quote") and close.group("quote") == quote:
+                    quote = None
+            continue
+
+        started_in_inert_text = quote is not None or backtick
+        opens_command_substitution = bool(re.search(r"\$\(\s*$", raw))
         escaped = False
         comment_at: int | None = None
         for index, char in enumerate(raw):
@@ -339,9 +346,19 @@ def _active_shell(text: str) -> str:
             if char == "\\":
                 escaped = True
                 continue
+            if backtick:
+                if char == "`":
+                    backtick = False
+                continue
             if quote == '"':
+                if char == "`":
+                    backtick = True
+                    continue
                 if char == '"':
                     quote = None
+                continue
+            if char == "`":
+                backtick = True
                 continue
             if char in {"'", '"'}:
                 quote = char
@@ -353,11 +370,17 @@ def _active_shell(text: str) -> str:
         active = raw[:comment_at].rstrip() if comment_at is not None else raw
         # A line entered while a multiline quote was open is string payload,
         # even if it also carries the closing quote.
-        lines.append("" if started_in_quote else active)
-        if not started_in_quote and quote is None:
+        lines.append("" if started_in_inert_text else active)
+        if opens_command_substitution:
+            command_substitution = True
+            continue
+        if not started_in_inert_text and quote is None and not backtick:
             match = heredoc_re.search(active)
             if match:
-                heredoc = match.group("word")
+                word = match.group("word")
+                if len(word) >= 2 and word[0] == word[-1] and word[0] in {'"', "'"}:
+                    word = word[1:-1]
+                heredoc = re.sub(r"\\(.)", r"\1", word)
     return "\n".join(lines)
 
 
@@ -368,6 +391,10 @@ def _reviewer_structure_ok(prose: str) -> bool:
     def unique_index(needle: str) -> int | None:
         found = [i for i, line in enumerate(lines) if line.strip() == needle]
         return found[0] if len(found) == 1 else None
+
+    def from_first_nonblank(start: int, end: int) -> str:
+        first = next((i for i in range(start, end) if lines[i].strip()), end)
+        return "\n".join(lines[first:end])
 
     fanout = unique_index("## Reviewer Fanout")
     required = unique_index("### Required Reviewers")
@@ -400,15 +427,28 @@ def _reviewer_structure_ok(prose: str) -> bool:
     for index, (reviewer, start) in enumerate(positions):
         end = positions[index + 1][1] if index + 1 < len(positions) else optional
         body = "\n".join(lines[start + 1 : end])
-        if REVIEWER_NEGATION_RE.search(body):
+        first_instruction = from_first_nonblank(start + 1, end)
+        named_negation = re.compile(
+            r"^\s*(?:do not|don't|never|skip|disable)\b[^\n]*"
+            + rf"(?:`{re.escape(reviewer)}`|\b{re.escape(reviewer)}\b)",
+            re.IGNORECASE | re.MULTILINE,
+        )
+        if REVIEWER_NEGATION_RE.search(body) or named_negation.search(body):
             return False
-        if re.search(REVIEWER_BODY_RULES[reviewer], body, flags) is None:
+        if re.match(REVIEWER_BODY_RULES[reviewer], first_instruction, flags) is None:
             return False
 
     methodology = "\n".join(lines[optional + 1 : prompt])
+    methodology_first = from_first_nonblank(optional + 1, prompt)
+    methodology_negation = re.compile(
+        r"^\s*(?:do not|don't|never|skip|disable)\b[^\n]*"
+        r"(?:`MethodologySkillReviewer`|\bMethodologySkillReviewer\b)",
+        re.IGNORECASE | re.MULTILINE,
+    )
     return (
         REVIEWER_NEGATION_RE.search(methodology) is None
-        and re.search(METHODOLOGY_BODY_RULE, methodology, flags) is not None
+        and methodology_negation.search(methodology) is None
+        and re.match(METHODOLOGY_BODY_RULE, methodology_first, flags) is not None
     )
 
 
@@ -501,7 +541,7 @@ def validate_texts(skill: str, generator: str, pipeline: str) -> list[str]:
         _append_once(missing, "reviewer_lenses")
     if not _landing_context_is_top_level(scan):
         _append_once(missing, "fail_closed_landing")
-    if not _context_is_top_level(active_pipeline, PIPELINE_CONTRACT_CONTEXT):
+    if not _context_is_top_level(pipeline, PIPELINE_CONTRACT_CONTEXT):
         _append_once(missing, "pipeline_contract_registration")
     return missing
 

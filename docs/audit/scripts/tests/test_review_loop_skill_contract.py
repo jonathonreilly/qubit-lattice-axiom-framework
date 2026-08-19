@@ -79,6 +79,24 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
         )
         self.assertIn("freshness", self.missing(skill=mutated))
 
+    def test_next_line_reference_layouts_cannot_supply_freshness(self):
+        start = self.skill.index("Before applying this skill")
+        end = self.skill.index("## Model And Tool Boundary", start)
+        positive = self.skill[start:end].rstrip()
+        for prefix in (
+            '[hidden]: <#>\n  "title starts\n',
+            '[hidden]:\n  <#> "title starts\n',
+        ):
+            mutated = (
+                self.skill[:start]
+                + prefix
+                + positive
+                + '\n"\n\n'
+                + self.skill[end:]
+            )
+            with self.subTest(prefix=prefix):
+                self.assertIn("freshness", self.missing(skill=mutated))
+
     def test_negated_freshness_is_fail_closed(self):
         mutated = self.skill.replace(
             "Before applying this skill, perform",
@@ -238,6 +256,25 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
         mutated = self.skill[: match.start()] + replacement + self.skill[match.end() :]
         self.assertIn("reviewer_lenses", self.missing(skill=mutated))
 
+    def test_named_reviewer_negations_are_fail_closed(self):
+        for reviewer in contract.REVIEWER_BODY_RULES:
+            label = f"- `{reviewer}`\n"
+            mutated = self.skill.replace(
+                label,
+                label + f"  Do not run `{reviewer}`.\n",
+                1,
+            )
+            with self.subTest(reviewer=reviewer):
+                self.assertIn("reviewer_lenses", self.missing(skill=mutated))
+
+        anchor = "Run `MethodologySkillReviewer` when files under"
+        mutated = self.skill.replace(
+            anchor,
+            "Do not run `MethodologySkillReviewer`.\n\n" + anchor,
+            1,
+        )
+        self.assertIn("reviewer_lenses", self.missing(skill=mutated))
+
     def test_independent_math_is_fail_closed(self):
         self.assert_skill_mutation_fails(
             "independent route", "independent_math_and_mutations"
@@ -370,6 +407,32 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
             1,
         )
         self.assertIn("pipeline_contract_registration", self.missing(pipeline=mutated))
+
+    def test_pipeline_context_in_general_heredocs_is_fail_closed(self):
+        for delimiter in ("HIDDEN-CONTEXT", "1"):
+            mutated = self.pipeline.replace(
+                contract.PIPELINE_CONTRACT_CONTEXT,
+                f"cat <<'{delimiter}'\n"
+                + contract.PIPELINE_CONTRACT_CONTEXT
+                + f"\n{delimiter}",
+                1,
+            )
+            with self.subTest(delimiter=delimiter):
+                self.assertIn(
+                    "pipeline_contract_registration", self.missing(pipeline=mutated)
+                )
+
+    def test_pipeline_context_in_command_substitutions_is_fail_closed(self):
+        for opener, closer in (("hidden=`\n", "`\n"), ("hidden=$(\n", ")\n")):
+            mutated = self.pipeline.replace(
+                contract.PIPELINE_CONTRACT_CONTEXT,
+                opener + contract.PIPELINE_CONTRACT_CONTEXT + "\n" + closer,
+                1,
+            )
+            with self.subTest(opener=opener):
+                self.assertIn(
+                    "pipeline_contract_registration", self.missing(pipeline=mutated)
+                )
 
 
 if __name__ == "__main__":

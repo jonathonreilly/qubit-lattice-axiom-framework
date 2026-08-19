@@ -1,0 +1,30 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_isospectral_similarity_theorem_2026_08_19.py
+runner_sha256: 69a159fde47ba379f569624c2766fd1fcdb743037ef5cefc250b79e8cb4a7a00
+input_fingerprint_sha256: 6763d71ff0c44fcbbe34111840d44089fe82297ad612694ed5a1a2b4d431126c
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 2.69
+status: ok
+----- stdout -----
+[PASS] A-authority: main plus the committed Block 138 and 139 note/runner/cache artifacts are content-bound
+[PASS] B-symbolic-family-capture: the exact real c-family actions at N=4,6 round-trip to both committed rational shears
+[PASS] C-spatial-only-family-form-premise: the SPATIAL-only cyclic-NN reconstruction has the same local C_r at N=4,6
+[PASS] D-real-character-block-formula: both real-character projections equal C_0+epsilon(C_-1+C_+1) at N=4,6
+[PASS] E-isospectral-similarity: U=T_AP^4 gives the symbolic similarity while the plain one-slice shift is refuted
+[PASS] F-characteristic-polynomial: all nine monic characteristic coefficients agree symbolically in c with no floats
+[PASS] G-well-posedness-boundary: the uncancelled 1/(1-q^2) structure excludes c^2=1 and both fixture values are exact
+[PASS] H-note-scope: the family theorem, downstream chain, contingency, firewalls, and exact N5 fence are present
+GATES A-authority=PASS B-symbolic-family-capture=PASS C-spatial-only-family-form-premise=PASS D-real-character-block-formula=PASS E-isospectral-similarity=PASS F-characteristic-polynomial=PASS G-well-posedness-boundary=PASS H-note-scope=PASS
+N5: per_element: the fixed symbolic C_-1, C_0, and C_+1 obey U C_0 U^T=C_0 and U(C_-1+C_+1)U^T=-(C_-1+C_+1), with U=T_AP^4 and c^2!=1
+per_site: exact spatial reconstruction uses only offsets {-1,0,1}; N=4 and N=6 have the same C_r, Block 139 covers N=8, and family membership at each size is a checked premise
+per_mode: the Nyquist sign maps the k=0 plus-character projector to the k=N/2 minus-character projector for every even spatial N
+per_block: U=[[0,-I_4],[I_4,0]], U^2=-I, and U^-1=U^T=-U give U B_(+1) U^-1=B_(-1) symbolically in c; the plain one-slice shift remains refuted
+lattice_wide: for every even spatial N>=4 in the displayed fixed-C_r, Z8-AP, spatial-NN family at c^2!=1, cyclic super-slice rotation gives rho_0=rho_(N/2)
+RESULT: the displayed family realizes Sym_2(R)^(N/2), dimension 3N/2, center N/2; the 3m-1 branch remains an out-of-family contingency only
+DECISION_CUT: classify parity-mixing dressing classes; execute the joint-lane program; test richer carriers beyond the displayed family
+TOE: zero obligation retirement; no TOE percentage movement; retained-positive end-to-end theory count remains zero
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

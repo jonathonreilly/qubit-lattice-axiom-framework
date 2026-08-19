@@ -1,6 +1,6 @@
 {
- "edge_count": 16080,
- "node_count": 5576,
+ "edge_count": 16084,
+ "node_count": 5577,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -468,6 +468,10 @@
   },
   "admissibility_dirac_kahler_floquet_monodromy_action_pairing_bounded_theorem_note_2026-08-16": {
    "deps_hash": "666669959202",
+   "out_degree": 4
+  },
+  "admissibility_dirac_kahler_general_migration_theorem_bounded_theorem_note_2026-08-20": {
+   "deps_hash": "b16f94f8e38d",
    "out_degree": 4
   },
   "admissibility_dirac_kahler_general_zn_charge_kinematic_theorem_bounded_theorem_note_2026-08-19": {

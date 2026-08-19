@@ -12,6 +12,20 @@ SKILL_REL = "docs/ai_methodology/skills/review-loop/SKILL.md"
 GENERATOR_REL = "docs/audit/scripts/generate_skill_axiom_baselines.py"
 PIPELINE_REL = "docs/audit/scripts/run_pipeline.sh"
 HTML_COMMENT_RE = re.compile(r"<!--.*?-->", re.DOTALL)
+COMMONMARK_COMMENT_RE = re.compile(r"^[ \t]*\[//\]:[ \t]*#.*(?:\n|$)", re.MULTILINE)
+PIPELINE_CONTRACT_LINE = (
+    "python3 docs/audit/scripts/check_review_loop_skill_contract.py"
+)
+CONTAINMENT_CONTEXT = """   if ! git fetch -q origin \\
+          +refs/heads/main:refs/remotes/origin/main; then
+     echo "FAILED: could not refresh origin/main for containment verification" >&2
+     exit 1
+   fi
+   if ! git merge-base --is-ancestor "$landed" origin/main; then"""
+PIPELINE_CONTRACT_CONTEXT = """echo "==> 18b/18 check_review_loop_skill_contract.py (review quality/safety guard)"
+python3 docs/audit/scripts/check_review_loop_skill_contract.py
+
+if [[ "${PIPELINE_MODE}" == "full" ]]; then"""
 
 
 # These are structural tripwires, not a substitute for methodology review.
@@ -19,12 +33,18 @@ HTML_COMMENT_RE = re.compile(r"<!--.*?-->", re.DOTALL)
 # negated, or inert-token mutations while allowing ordinary prose wrapping.
 SKILL_RULES: dict[str, tuple[str, ...]] = {
     "freshness": (
-        r"## Skill Freshness",
-        r"SKILL_FRESHNESS_CHECK\.md",
-        r"origin/main",
+        r"^## Skill Freshness\s*$",
+        r"^Before applying this skill, perform the repo skill freshness check "
+        r"described in\s+`docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK\.md`\. "
+        r"If a newer version of\s+this `SKILL\.md` exists on `origin/main`, "
+        r"follow that version for the current\s+task\.$",
     ),
     "mandatory_authority_reads": (
-        r"\*\*Mandatory authority read:\*\*",
+        r"^## Premise Authority\s*$",
+        r"^\*\*Mandatory authority read:\*\* before any premise, import, wall, "
+        r"or dependency\s+judgment, read the current axiom memo, primitive "
+        r"registry check, registry data,\s+and every relevant primitive source "
+        r"listed below\.",
         r"PRIMITIVE_REGISTRY_CHECK\.md",
         r"axiom_premise_nodes\.json",
         r"premise_decision_history\.json",
@@ -37,15 +57,26 @@ SKILL_RULES: dict[str, tuple[str, ...]] = {
         r"owner directs a specific tier for the episode\)\.",
     ),
     "reviewer_lenses": (
-        r"CodeRunnerReviewer",
-        r"PhysicsClaimReviewer",
-        r"ProofObligationReviewer",
-        r"ImportSupportReviewer",
-        r"NatureRetentionReviewer",
-        r"NoGoDisciplineReviewer",
-        r"LabelingConventionReviewer",
-        r"RepoGovernanceReviewer",
-        r"MethodologySkillReviewer",
+        r"^- `CodeRunnerReviewer`\s*$",
+        r"^\s+Review changed Python/scripts/log-producing code\.",
+        r"^- `PhysicsClaimReviewer`\s*$",
+        r"^\s+Attack theorem notes, claims tables, publication surfaces, and prose\.",
+        r"^- `ProofObligationReviewer`\s*$",
+        r"^\s+Trigger when changed content claims a theorem, proof, derivation, "
+        r"reduction,",
+        r"^- `ImportSupportReviewer`\s*$",
+        r"^\s+Inventory every measured, fitted, literature, PDG, cosmological,",
+        r"^- `NatureRetentionReviewer`\s*$",
+        r"^\s+Apply the hostile external-review bar\.",
+        r"^- `NoGoDisciplineReviewer`\s*$",
+        r"^\s+Scrutinize negative claims with the same rigor as positive ones\.",
+        r"^- `LabelingConventionReviewer`\s*$",
+        r"^\s+Detect labeling/naming/convention content masquerading as a bounded",
+        r"^- `RepoGovernanceReviewer`\s*$",
+        r"^\s+Check placement and authority surfaces\.",
+        r"^Run `MethodologySkillReviewer` when files under "
+        r"`docs/ai_methodology/skills/`,\s+`docs/ai_methodology/`, or "
+        r"`\.claude/commands/` changed\.",
     ),
     "independent_math_and_mutations": (
         r"independent route",
@@ -111,14 +142,14 @@ GENERATOR_RULES: dict[str, tuple[str, ...]] = {
 
 PIPELINE_RULES: dict[str, tuple[str, ...]] = {
     "pipeline_contract_registration": (
-        r"^python3 docs/audit/scripts/check_review_loop_skill_contract\.py$",
+        rf"^{re.escape(PIPELINE_CONTRACT_LINE)}$",
     ),
 }
 
 
 def _active_markdown(text: str) -> str:
-    """Remove HTML-commented material; comments never satisfy a contract."""
-    return HTML_COMMENT_RE.sub("", text)
+    """Remove non-rendered Markdown material; comments never satisfy a contract."""
+    return COMMONMARK_COMMENT_RE.sub("", HTML_COMMENT_RE.sub("", text))
 
 
 def _active_shell(text: str) -> str:
@@ -139,13 +170,25 @@ def _missing(text: str, rules: dict[str, tuple[str, ...]]) -> list[str]:
     ]
 
 
+def _append_once(items: list[str], name: str) -> None:
+    if name not in items:
+        items.append(name)
+
+
 def validate_texts(skill: str, generator: str, pipeline: str) -> list[str]:
     """Return invariant-family names that are absent from the supplied texts."""
-    return (
-        _missing(_active_markdown(skill), SKILL_RULES)
+    active_skill = _active_markdown(skill)
+    active_pipeline = _active_shell(pipeline)
+    missing = (
+        _missing(active_skill, SKILL_RULES)
         + _missing(generator, GENERATOR_RULES)
-        + _missing(_active_shell(pipeline), PIPELINE_RULES)
+        + _missing(active_pipeline, PIPELINE_RULES)
     )
+    if CONTAINMENT_CONTEXT not in active_skill:
+        _append_once(missing, "fail_closed_landing")
+    if PIPELINE_CONTRACT_CONTEXT not in active_pipeline:
+        _append_once(missing, "pipeline_contract_registration")
+    return missing
 
 
 def validate_repo(repo_root: Path) -> list[str]:

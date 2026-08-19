@@ -48,10 +48,38 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
         )
         self.assertIn("freshness", self.missing(skill=mutated))
 
+    def test_commonmark_commented_freshness_is_fail_closed(self):
+        start = self.skill.index("## Skill Freshness")
+        end = self.skill.index("## Model And Tool Boundary")
+        mutated = (
+            self.skill[:start]
+            + "[//]: # (## Skill Freshness SKILL_FRESHNESS_CHECK.md origin/main)\n\n"
+            + self.skill[end:]
+        )
+        self.assertIn("freshness", self.missing(skill=mutated))
+
+    def test_negated_freshness_is_fail_closed(self):
+        mutated = self.skill.replace(
+            "Before applying this skill, perform",
+            "Before applying this skill, do not perform",
+            1,
+        )
+        self.assertNotEqual(mutated, self.skill)
+        self.assertIn("freshness", self.missing(skill=mutated))
+
     def test_authority_reads_are_fail_closed(self):
         self.assert_skill_mutation_fails(
             "**Mandatory authority read:**", "mandatory_authority_reads"
         )
+
+    def test_negated_authority_reads_are_fail_closed(self):
+        mutated = self.skill.replace(
+            "judgment, read the current axiom memo",
+            "judgment, do not read the current axiom memo",
+            1,
+        )
+        self.assertNotEqual(mutated, self.skill)
+        self.assertIn("mandatory_authority_reads", self.missing(skill=mutated))
 
     def test_model_and_effort_are_fail_closed(self):
         self.assert_skill_mutation_fails("GPT-5.6-Sol", "reviewer_model_and_effort")
@@ -79,6 +107,43 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
         ):
             with self.subTest(reviewer=reviewer):
                 self.assert_skill_mutation_fails(reviewer, "reviewer_lenses")
+
+    def test_negated_reviewer_sections_are_fail_closed(self):
+        reviewers = (
+            "CodeRunnerReviewer",
+            "PhysicsClaimReviewer",
+            "ProofObligationReviewer",
+            "ImportSupportReviewer",
+            "NatureRetentionReviewer",
+            "NoGoDisciplineReviewer",
+            "LabelingConventionReviewer",
+            "RepoGovernanceReviewer",
+        )
+        for index, reviewer in enumerate(reviewers):
+            start_marker = f"\n- `{reviewer}`"
+            start = self.skill.index(start_marker)
+            if index + 1 < len(reviewers):
+                end = self.skill.index(f"\n- `{reviewers[index + 1]}`", start + 1)
+            else:
+                end = self.skill.index("\n### Optional Reviewer", start + 1)
+            mutated = (
+                self.skill[:start]
+                + f"\n- Do not run `{reviewer}`.\n"
+                + self.skill[end:]
+            )
+            with self.subTest(reviewer=reviewer):
+                self.assertIn("reviewer_lenses", self.missing(skill=mutated))
+
+        methodology_start = self.skill.index(
+            "Run `MethodologySkillReviewer` when files under"
+        )
+        methodology_end = self.skill.index("\n\n## Reviewer Prompt", methodology_start)
+        mutated = (
+            self.skill[:methodology_start]
+            + "Do not run `MethodologySkillReviewer` when methodology files change."
+            + self.skill[methodology_end:]
+        )
+        self.assertIn("reviewer_lenses", self.missing(skill=mutated))
 
     def test_independent_math_is_fail_closed(self):
         self.assert_skill_mutation_fails(
@@ -127,6 +192,21 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
         self.assertNotEqual(mutated, self.skill)
         self.assertIn("fail_closed_landing", self.missing(skill=mutated))
 
+    def test_outer_conditional_containment_is_fail_closed(self):
+        block = (
+            '   if ! git merge-base --is-ancestor "$landed" origin/main; then\n'
+            '     echo "FAILED: $landed not contained in origin/main" >&2\n'
+            "     exit 1\n"
+            "   fi"
+        )
+        mutated = self.skill.replace(
+            block,
+            "   if false; then\n" + block + "\n   fi",
+            1,
+        )
+        self.assertNotEqual(mutated, self.skill)
+        self.assertIn("fail_closed_landing", self.missing(skill=mutated))
+
     def test_generated_router_is_fail_closed(self):
         mutated = self.generator.replace("missing_authority_router_coverage", "removed")
         self.assertIn("generated_authority_router", self.missing(generator=mutated))
@@ -139,6 +219,16 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
         mutated = self.pipeline.replace(
             "python3 docs/audit/scripts/check_review_loop_skill_contract.py",
             "# python3 docs/audit/scripts/check_review_loop_skill_contract.py",
+            1,
+        )
+        self.assertNotEqual(mutated, self.pipeline)
+        self.assertIn("pipeline_contract_registration", self.missing(pipeline=mutated))
+
+    def test_conditional_pipeline_registration_is_fail_closed(self):
+        command = "python3 docs/audit/scripts/check_review_loop_skill_contract.py"
+        mutated = self.pipeline.replace(
+            command,
+            "if false; then\n" + command + "\nfi",
             1,
         )
         self.assertNotEqual(mutated, self.pipeline)

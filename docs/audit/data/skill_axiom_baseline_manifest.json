@@ -113,8 +113,8 @@
    ]
   },
   "docs/ai_methodology/skills/review-loop/SKILL.md": {
-   "block_lines": 16,
-   "block_sha256": "0d7c7b3669063f6776a33e2a0e074971542e3aac919fac0c606065a5d8c340ee",
+   "block_lines": 28,
+   "block_sha256": "1aaebf2b168c2fa063870338b7e7906e69c6abaeb0dd97c094e3e900ac8aebbb",
    "spans": [
     "authority-router"
    ]

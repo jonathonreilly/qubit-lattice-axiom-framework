@@ -536,28 +536,50 @@ class PrimitiveSourceEditTest(FixtureTestCase):
 
 
 class RegistryEditTest(FixtureTestCase):
-    def test_coherent_authority_change_leaves_no_unmanaged_review_loop_policy(self):
+    def test_unmanaged_authority_prose_blocks_coherent_source_acknowledgment(self):
+        manifest_before = read(self.root, gen.MANIFEST_REL)
         source = read(self.root, self.kinetic_rel)
         revised = source.replace(
-            "No mass ratio,\n  coupling, mixing angle, phase, or selector is supplied",
-            "One mass ratio is supplied; no coupling, mixing angle, phase, or "
-            "selector is supplied",
+            "It carries no dimensionless dynamical content: no mass ratio, coupling, mixing\n"
+            "angle, phase, selector, readout bridge, or empirical fit is supplied by it.",
+            "It supplies one fixed coupling but carries no other dimensionless dynamical\n"
+            "content: no mass ratio, mixing angle, phase, selector, readout bridge, or\n"
+            "empirical fit is supplied by it.",
+            1,
+        ).replace(
+            "- It does not supply any dimensionless dynamical quantity. No mass ratio,\n"
+            "  coupling, mixing angle, phase, or selector is supplied; dimensionless physics\n"
+            "  must derive from retained-grade framework content or remain conditional/open.",
+            "- Apart from the one fixed coupling granted above, it supplies no other\n"
+            "  dimensionless dynamical quantity. No mass ratio, mixing angle, phase, or\n"
+            "  selector is supplied; other dimensionless physics must derive or remain\n"
+            "  conditional/open.",
             1,
         )
-        self.assertNotEqual(revised, source)
+        self.assertNotEqual(revised, source, "coherent source mutation did not apply")
+        self.assertEqual(revised.count("one fixed coupling"), 2)
         write(self.root, self.kinetic_rel, revised)
-
-        self.assertEqual(run_generator(self.root, check=True)[0], 1)
-        self.assertEqual(run_generator(self.root, check=False)[0], 0)
-        self.assertEqual(run_generator(self.root, check=True)[0], 0)
 
         target = self.router_target()
         text = read(self.root, target.path)
-        begin = text.index(gen.BEGIN_MARKER)
-        end = text.index(gen.END_MARKER, begin) + len(gen.END_MARKER)
-        unmanaged = gen.visible_text(text[:begin] + text[end:]).lower()
-        self.assertNotIn("mass ratio", unmanaged)
-        self.assertNotIn("kinetic-isotropy primitive", unmanaged)
+        contradiction = (
+            "For dependency classification, the kinetic graining grant supplies no "
+            "coupling.\n\n"
+        )
+        write(
+            self.root,
+            target.path,
+            text.replace(gen.BEGIN_MARKER, contradiction + gen.BEGIN_MARKER, 1),
+        )
+
+        code, output = run_generator(self.root, check=True)
+        self.assertEqual(code, 1)
+        self.assertIn("must contain only the generated router", output)
+        code, output = run_generator(self.root, check=False)
+        self.assertEqual(code, 1)
+        self.assertIn("must contain only the generated router", output)
+        self.assertEqual(read(self.root, gen.MANIFEST_REL), manifest_before)
+        self.assertEqual(run_generator(self.root, check=True)[0], 1)
 
     def test_repathed_primitive_note_propagates_into_the_roster(self):
         registry = json.loads(read(self.root, gen.REGISTRY_REL))
@@ -785,17 +807,11 @@ class RenderingTest(FixtureTestCase):
             self.assertIn(prim.node_id, body)
             self.assertIn(prim.path, body)
 
-    def test_review_loop_keeps_primitive_specific_prose_inside_router(self):
-        """Primitive policy must not drift in unmanaged review-loop prose."""
-        src = gen.load_source(self.root)
+    def test_review_loop_premise_authority_section_is_generated_only(self):
+        """No hand-authored primitive-policy paraphrase can share the section."""
         target = self.router_target()
         text = read(self.root, target.path)
-        begin = text.index(gen.BEGIN_MARKER)
-        end = text.index(gen.END_MARKER, begin) + len(gen.END_MARKER)
-        unmanaged = gen.visible_text(text[:begin] + text[end:])
-        for prim in src.primitives:
-            self.assertNotIn(prim.node_id, unmanaged)
-            self.assertNotIn(prim.path, unmanaged)
+        self.assertIsNone(gen.review_authority_section_problem(text, target))
 
     def test_blocks_wrap_within_the_declared_width(self):
         src = gen.load_source(self.root)

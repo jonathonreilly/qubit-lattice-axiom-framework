@@ -1,6 +1,6 @@
 {
- "edge_count": 16077,
- "node_count": 5575,
+ "edge_count": 16080,
+ "node_count": 5576,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -421,6 +421,10 @@
   "admissibility_dirac_kahler_adm_seam_two_history_gram_bounded_theorem_note_2026-08-15": {
    "deps_hash": "5d167fe1c690",
    "out_degree": 4
+  },
+  "admissibility_dirac_kahler_annealed_pairing_migration_bounded_theorem_note_2026-08-19": {
+   "deps_hash": "bb0133e16b2e",
+   "out_degree": 3
   },
   "admissibility_dirac_kahler_carrier_reflection_blocker_bounded_theorem_note_2026-08-19": {
    "deps_hash": "e86bfe9a083d",

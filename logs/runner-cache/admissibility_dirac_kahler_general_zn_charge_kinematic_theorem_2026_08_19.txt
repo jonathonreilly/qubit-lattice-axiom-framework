@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_general_zn_charge_kinematic_theorem_2026_08_19.py
+runner_sha256: b3d1366481d32f13a16945d1481bc416279e52989a3f383da441247b725a7200
+input_fingerprint_sha256: d25de977d780259248f12536e2fe2217a3006b4d4157705b4e479c7a9f08bd30
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 6.63
+status: ok
+----- stdout -----
+[PASS] A-authority: main/axiom/registry, Block137 parent blobs, and committed Block136 note/runner/cache are content-bound
+[PASS] B-general-kinematics: named reality/cyclic-shear/shared-pivot premises support the symbolic N=2m character and projector/block mirror identities
+[PASS] C-gram-forcing: reality fixes only the line; the shared pivot uniquely gives g=1, realized entrywise by both exact Z4 fixtures
+[PASS] D-conditional-jordan-count: given the supplied (0,m) mixer, m copies of Sym_2(R) have dimension 3m and center m; the antisymmetric commutator is excluded
+[PASS] E-transfer-ledger: both committed Z6 shears give rho_0=rho_3, equal trace/det with det=1 and classes (0,3)/(1,4)/(2,5); N=8 dynamics UNCHECKED
+[PASS] F-alternative-count: for symbolic rho_0!=rho_m the absent self mixer leaves dimension 3m-1 and center m+1; the exact N=8 instance is (11,5)
+[PASS] G-n8-instantiation: (0,4)/(1,7)/(2,6)/(3,5) give Sym_2(R)^4, dimension 12, center 4 and sign-definite (0,4); CAVEAT: (0,4) is hard-coded
+[PASS] H-note-scope: hypotheses, vacuity catch, riders/counts, ledger, N8 caveats, OS/axiom firewalls, N1--N8/W1, and exact N5 fence are present
+N5: per_element: symbolic projector and cyclic-shear block mirrors plus shared-pivot carrier normalization are checked under the three named hypotheses
+per_site: one charge character per spatial site on the stated even cyclic carrier; no odd-N or other-shear extension
+per_mode: k pairs with N-k; k=0,m are individually real; g=1 only on non-self conjugate pairs under SHARED-PIVOT
+per_block: where rho_0=rho_m, m Jordan blocks give dim=3m and center=m; where it fails, two singleton self blocks give dim=3m-1 and center=m+1
+lattice_wide: general even N=2m is symbolic only under ACTION-REALITY, CYCLIC-SHEAR, SHARED-PIVOT and the separately stated transfer-degeneracy rider
+RESULT: conditional general-Z_N charge kinematics; verified transfer degeneracy at N=4 and N=6; N=8 algebraic third point only
+DECISION_CUT: N=8 dynamical degeneracy, parity-mixing dressing classes, and the joint-lane program remain open
+TOE: zero obligation retirement; no TOE percentage movement; retained-positive end-to-end theory count remains zero
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

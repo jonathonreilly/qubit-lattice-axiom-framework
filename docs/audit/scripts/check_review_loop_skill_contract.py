@@ -367,6 +367,23 @@ def _heredoc_word(line: str, start: int) -> tuple[str, int] | None:
     return "".join(value), index
 
 
+def _continued_shell_unit(
+    physical_lines: list[str], start: int
+) -> tuple[list[str], str, int]:
+    """Fold Bash backslash-newlines into one lexical command unit."""
+    unit = [physical_lines[start]]
+    folded = physical_lines[start]
+    cursor = start + 1
+    while cursor < len(physical_lines):
+        trailing = len(folded) - len(folded.rstrip("\\"))
+        if trailing % 2 == 0:
+            break
+        folded = folded[:-1] + physical_lines[cursor]
+        unit.append(physical_lines[cursor])
+        cursor += 1
+    return unit, folded, cursor
+
+
 def _active_shell(text: str) -> ShellScan:
     """Structurally blank non-top-level shell text.
 
@@ -378,9 +395,13 @@ def _active_shell(text: str) -> ShellScan:
     lines: list[str] = []
     frames: list[_ShellFrame] = []
     heredocs: list[tuple[str, bool]] = []
+    physical_lines = text.splitlines()
+    cursor = 0
 
-    for raw in text.splitlines():
+    while cursor < len(physical_lines):
         if heredocs:
+            raw = physical_lines[cursor]
+            cursor += 1
             delimiter, strip_tabs = heredocs[0]
             candidate = raw.lstrip("\t") if strip_tabs else raw
             lines.append("")
@@ -388,6 +409,7 @@ def _active_shell(text: str) -> ShellScan:
                 heredocs.pop(0)
             continue
 
+        unit, raw, cursor = _continued_shell_unit(physical_lines, cursor)
         started_in_inert_text = bool(frames)
         comment_at: int | None = None
         index = 0
@@ -446,7 +468,7 @@ def _active_shell(text: str) -> ShellScan:
                 index += 2
                 continue
 
-            if frame is not None and frame.kind == "substitution":
+            if frame is not None and frame.kind in {"substitution", "subshell"}:
                 if char == "(":
                     frame.paren_depth += 1
                     index += 1
@@ -457,6 +479,11 @@ def _active_shell(text: str) -> ShellScan:
                         frames.pop()
                     index += 1
                     continue
+
+            if char == "(":
+                frames.append(_ShellFrame("subshell", 1))
+                index += 1
+                continue
 
             if raw.startswith("<<", index) and not raw.startswith("<<<", index):
                 strip_tabs = raw.startswith("<<-", index)
@@ -473,7 +500,14 @@ def _active_shell(text: str) -> ShellScan:
             index += 1
 
         active = raw[:comment_at].rstrip() if comment_at is not None else raw
-        lines.append("" if started_in_inert_text or frames else active)
+        if started_in_inert_text or frames:
+            lines.extend("" for _ in unit)
+        elif len(unit) == 1:
+            lines.append(active)
+        else:
+            # Preserve physical lines for exact multiline contract matching;
+            # ``raw`` was used only for lexical parsing after continuation fold.
+            lines.extend(unit)
 
     errors: list[str] = []
     if frames:

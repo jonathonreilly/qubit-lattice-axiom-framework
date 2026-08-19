@@ -399,20 +399,28 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
         self.assertIn("fail_closed_landing", self.missing(skill=mutated))
 
     def test_containment_context_in_second_heredoc_is_fail_closed(self):
-        mutated = self.skill.replace(
-            contract.CONTAINMENT_CONTEXT,
-            "   cat <<'FIRST' <<'HIDDEN-CONTAINMENT'\nFIRST\n"
-            + contract.CONTAINMENT_CONTEXT
-            + "\nHIDDEN-CONTAINMENT",
-            1,
-        )
-        self.assertIn("fail_closed_landing", self.missing(skill=mutated))
+        for opener in (
+            "   cat <<'FIRST' <<'HIDDEN-CONTAINMENT'\n",
+            "   cat <<'FIRST' \\\n     <<'HIDDEN-CONTAINMENT'\n",
+        ):
+            mutated = self.skill.replace(
+                contract.CONTAINMENT_CONTEXT,
+                opener
+                + "FIRST\n"
+                + contract.CONTAINMENT_CONTEXT
+                + "\nHIDDEN-CONTAINMENT",
+                1,
+            )
+            with self.subTest(opener=opener):
+                self.assertIn("fail_closed_landing", self.missing(skill=mutated))
 
     def test_containment_context_in_general_substitutions_is_fail_closed(self):
         for opener, closer in (
             ("   hidden=$( :\n", "\n   ) || true"),
+            ("   hidden=$\\\n( :\n", "\n) || true"),
             ("   hidden=<( :\n", "\n   )"),
             ("   hidden=` :\n", "\n   ` || true"),
+            ("   ( :\n", "\n   ) || true"),
         ):
             mutated = self.skill.replace(
                 contract.CONTAINMENT_CONTEXT,
@@ -491,21 +499,31 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
                 )
 
     def test_pipeline_context_in_second_heredoc_is_fail_closed(self):
-        mutated = self.pipeline.replace(
-            contract.PIPELINE_CONTRACT_CONTEXT,
-            "cat <<'FIRST' <<'HIDDEN-CONTRACT'\nFIRST\n"
-            + contract.PIPELINE_CONTRACT_CONTEXT
-            + "\nHIDDEN-CONTRACT",
-            1,
-        )
-        self.assertIn("pipeline_contract_registration", self.missing(pipeline=mutated))
+        for opener in (
+            "cat <<'FIRST' <<'HIDDEN-CONTRACT'\n",
+            "cat <<'FIRST' \\\n  <<'HIDDEN-CONTRACT'\n",
+        ):
+            mutated = self.pipeline.replace(
+                contract.PIPELINE_CONTRACT_CONTEXT,
+                opener
+                + "FIRST\n"
+                + contract.PIPELINE_CONTRACT_CONTEXT
+                + "\nHIDDEN-CONTRACT",
+                1,
+            )
+            with self.subTest(opener=opener):
+                self.assertIn(
+                    "pipeline_contract_registration", self.missing(pipeline=mutated)
+                )
 
     def test_pipeline_context_in_command_substitutions_is_fail_closed(self):
         for opener, closer in (
             ("hidden=`\n", "`\n"),
             ("hidden=$(\n", ")\n"),
             ("hidden=$( :\n", ") || true\n"),
+            ("hidden=$\\\n( :\n", ") || true\n"),
             ("hidden=>( :\n", ")\n"),
+            ("( :\n", ") || true\n"),
         ):
             mutated = self.pipeline.replace(
                 contract.PIPELINE_CONTRACT_CONTEXT,

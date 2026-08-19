@@ -370,15 +370,22 @@ def _heredoc_word(line: str, start: int) -> tuple[str, int] | None:
 def _continued_shell_unit(
     physical_lines: list[str], start: int
 ) -> tuple[list[str], str, int]:
-    """Fold Bash backslash-newlines into one lexical command unit."""
+    """Fold Bash physical continuations into one lexical command unit."""
     unit = [physical_lines[start]]
     folded = physical_lines[start]
     cursor = start + 1
     while cursor < len(physical_lines):
         trailing = len(folded) - len(folded.rstrip("\\"))
-        if trailing % 2 == 0:
+        escaped_newline = trailing % 2 == 1
+        grammar_continuation = bool(
+            re.search(r"(?:\|\||&&|\|&|\|)\s*$", folded)
+        )
+        if not escaped_newline and not grammar_continuation:
             break
-        folded = folded[:-1] + physical_lines[cursor]
+        if escaped_newline:
+            folded = folded[:-1] + physical_lines[cursor]
+        else:
+            folded = folded + " " + physical_lines[cursor]
         unit.append(physical_lines[cursor])
         cursor += 1
     return unit, folded, cursor

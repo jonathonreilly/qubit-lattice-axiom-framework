@@ -402,6 +402,9 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
         for opener in (
             "   cat <<'FIRST' <<'HIDDEN-CONTAINMENT'\n",
             "   cat <<'FIRST' \\\n     <<'HIDDEN-CONTAINMENT'\n",
+            "   cat <<'FIRST' |\n     cat <<'HIDDEN-CONTAINMENT'\n",
+            "   cat <<'FIRST' &&\n     cat <<'HIDDEN-CONTAINMENT'\n",
+            "   cat <<'FIRST' ||\n     cat <<'HIDDEN-CONTAINMENT'\n",
         ):
             mutated = self.skill.replace(
                 contract.CONTAINMENT_CONTEXT,
@@ -502,6 +505,9 @@ class ReviewLoopSkillContractTest(unittest.TestCase):
         for opener in (
             "cat <<'FIRST' <<'HIDDEN-CONTRACT'\n",
             "cat <<'FIRST' \\\n  <<'HIDDEN-CONTRACT'\n",
+            "cat <<'FIRST' |\n  cat <<'HIDDEN-CONTRACT'\n",
+            "cat <<'FIRST' &&\n  cat <<'HIDDEN-CONTRACT'\n",
+            "cat <<'FIRST' ||\n  cat <<'HIDDEN-CONTRACT'\n",
         ):
             mutated = self.pipeline.replace(
                 contract.PIPELINE_CONTRACT_CONTEXT,

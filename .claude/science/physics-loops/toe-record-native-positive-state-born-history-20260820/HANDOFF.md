@@ -108,8 +108,12 @@ from the proposal worktree; no audit verdict surface is included.
 [PR #7020](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7020)
 is the bounded-support proposal surface.
 
-Block 2 remains in direct-author delivery preparation. Review-loop remains
-disabled. The post-Block-2 five-person panel had high utility: it exposed
+Block 2 is proposed in
+[PR #7022](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7022),
+stacked on Block 1. Its direct-author delivery gates are complete, including
+seeded committed-delta forensic readiness with the helper runner populated;
+the diagnostic ledger residue was removed. Review-loop remains disabled. The
+post-Block-2 five-person panel had high utility: it exposed
 hard-coded executable fixed-point booleans, non-scalar guard ambiguity,
 label-only outcomes, rate/current type inflation, a stale compiler
 recommendation, and the exact prior-art-saturated next seam. The runners and

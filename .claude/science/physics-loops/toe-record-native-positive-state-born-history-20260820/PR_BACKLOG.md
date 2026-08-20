@@ -20,21 +20,24 @@ The full pipeline passed, strict audit lint reported no errors, and
 `git diff --check origin/main..HEAD` passed. No review-loop label or invocation
 was used.
 
-## Block 2 — Delivery Preparation
+## Block 2 — Delivered Proposal
 
 Branch:
 `physics-loop/toe-delayed-setting-midpoint-symmetry-block2-20260820`, stacked
 on the delivered Block-1 head
 `fe84b5c5307aee2ac8e5c4d09d3c7b5f241f3797`.
 
-Planned PR title:
-`[physics-loop] delayed-axis input stabilizer — bounded_theorem — bounded-support`.
+Opened PR:
+
+- [#7022 — delayed-axis input stabilizer — bounded theorem — bounded
+  support](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7022)
 
 Current validation: primary `PASS=17 FAIL=0`, independent `PASS=10 FAIL=0`,
 full five-person panel complete, current-main no-go discipline passes only for
 the two narrow algebraic boundaries, and TOE score movement remains zero.
 The hostile mutation sweep passed `10/10`; the citation graph decision and
 manifest update are complete, and both post-edit caches are fresh. Pending
-gates are committed-delta evidence readiness, exact commit/push, and stacked
-PR verification. The full fixed-point pipeline and strict lint pass with no
-errors. No review-loop is used.
+gates are complete: the seeded committed-delta check reports
+`forensic_evidence_ready=true`, the exact branch is pushed, and PR #7022 is
+verified against the Block-1 branch. The full fixed-point pipeline and strict
+lint pass with no errors. No review-loop is used.

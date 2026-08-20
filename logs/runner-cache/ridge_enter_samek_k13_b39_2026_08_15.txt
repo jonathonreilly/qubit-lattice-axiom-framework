@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/ridge_enter_samek_k13_b39_2026_08_15.py
+runner_sha256: 60025ad966fc9d6a7605c9b4d87761fe365afd97755597376536980b23efdd91
+input_fingerprint_sha256: 047cd52dc8e148e7f422fd11f20baa615fe66b694003cdb4ec82c73865933dfe
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.13
+status: ok
+----- stdout -----
+external_scientific_inputs: none; named hop-cost on the finite nearest-neighbor graph B_39(0) only
+package_local_integrity_reads: proposed source note and live axiom memo only; no cache or governance surface is written
+measure_boundary: integer hop-costs and one Dijkstra; no fit and no second graph search
+claim_boundary: same-k reverse at k=13 is displayed, not adopted
+t(13,0,0) = 25
+t(13,13,13) = 43
+same-k comparison: 25^2 / 169 = 625/169 versus 43^2 / 507 = 1849/507; reverse=True
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: ball-cardinality B_39(0) is the 82239-site integer set with coordinate-sum at most 39
+PASS: one-dijkstra exactly one Dijkstra from the origin is executed
+PASS: hop-origin the unique origin hop has named cost 3
+PASS: hop-axis-axis a same-support axis hop has named cost 3
+PASS: hop-support-rise the displayed k=1 body last hop keeps cost 1
+PASS: hop-body-last-untaxed the 2-to-3 hop into (1,1,1) is not priced by the extra clause
+PASS: hop-k13-body-enter-untaxed the witness 2-to-3 hop into (13,13,1) is not priced by the extra clause
+PASS: hop-rho3-ridge a 3-to-3 hop whose dest has exactly two unit coordinates has cost 3
+PASS: hop-ridge-enter-clause the named 2-to-3 two-unit dest clause prices (2,1,0) to (2,1,1) at 3
+PASS: ridge-enter-live-on-ball nearest-neighbor hops inside B_39(0) trigger the extra 2-to-3 clause
+PASS: thm1-axis-time t(13,0,0) equals the computed origin-to-axis arrival time
+PASS: thm1-body-time t(13,13,13) equals the computed origin-to-body arrival time
+PASS: thm2-reverse-holds t(13,0,0)^2 / 169 > t(13,13,13)^2 / 507 holds on the computed times
+PASS: thm1-note-reports-times the note reports the computed arrival times
+PASS: thm2-note-reports-comparison the note reports the integer same-k comparison and does not adopt it
+PASS: thm3-not-in-admissibility the live Admissibility wording is unchanged and does not name kappa
+PASS: thm3-no-l1-attachment the note refuses to attach L1 and does not score a unit hop-cost
+PASS: forbidden-tokens forbidden tokens are absent from the note
+PASS: claim-scope-contract the required claim_scope is source-visible
+PASS: uniqueness-not-claimed the note does not claim uniqueness of the named hop-cost
+PASS: scope-boundary the theorem stays on B_39(0) and proposes no axiom edit
+per_element: named hop-cost values are 1 or 3 on nearest-neighbor hops.
+per_site: arrival times are reported only at (13,0,0) and (13,13,13).
+lattice_wide: checked and not executed — the search stays inside B_39(0).
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

@@ -1,6 +1,6 @@
 {
- "edge_count": 15747,
- "node_count": 5549,
+ "edge_count": 15748,
+ "node_count": 5550,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -13493,6 +13493,10 @@
   "one_time_dimension_dt1_reduces_to_emergent_dynamics_gate_open_gate_note_2026-06-17": {
    "deps_hash": "6b456ae72212",
    "out_degree": 3
+  },
+  "one_unit_enter_samek_k7_b21_bounded_theorem_note_2026-08-15": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "onsite_charge_conserving_endpoint_symmetric_common_hamiltonian_strict_qca_dichotomy_bounded_theorem_note_2026-07-12": {
    "deps_hash": "c8eee4235fc9",

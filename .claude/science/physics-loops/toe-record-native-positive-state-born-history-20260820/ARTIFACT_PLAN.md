@@ -59,9 +59,9 @@ Delivered locally:
   deletions; and
 - current-main N1--N8 packet passing only at the narrow algebraic scope.
 
-## Shared-Effect Conditional-Weight Block — Block 3 Complete Locally
+## Shared-Effect Conditional-Weight Block — Block 3 Proposal Delivered
 
-Delivered locally:
+Delivered in PR #7023:
 
 - exact `M_A/M_B` physical programs sharing `E0=(1/2)Pz`, identical selected
   Kraus/Choi map, and distinct complete channels;
@@ -74,6 +74,10 @@ Delivered locally:
 - primary `18/18`, independent `11/11`; and
 - full N1--N8 boundary: formula-class independence only, no total hostile
   models, writer, sampler, Record formation, Born no-go, or axiom necessity.
+
+Delivery evidence: science commit `653f1900b7`, fresh primary and independent
+caches, full committed-tree pipeline pass, strict lint with zero errors, and
+committed-delta `forensic_evidence_ready=true`.
 
 ## Physical Context-Delay Connector — Block 4 Selected
 

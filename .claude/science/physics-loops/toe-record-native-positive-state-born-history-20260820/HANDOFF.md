@@ -2,8 +2,8 @@
 
 ## Current State
 
-The 24-hour campaign is active. Block 1 is proposed in PR #7020 and Block 2 in
-PR #7022. Block 3 now has a scope-correct theorem note, primary `18/18`, and
+The 24-hour campaign is active. Blocks 1--3 are proposed in PRs #7020, #7022,
+and #7023. Block 3 has a scope-correct theorem note, primary `18/18`, and
 independent `11/11` executable. It has no audit verdict, retention, obligation
 retirement, or TOE-score movement.
 
@@ -123,10 +123,12 @@ note were repaired before cache generation. A new full-five panel is due
 after the next major result; if two later panels become redundant, the cadence
 may temporarily narrow to two adversarial seats.
 
-Block 3 is pending proposal delivery on
-`physics-loop/toe-shared-effect-record-congruence-block3-20260820`, stacked on
-the Block-2 delivered head `484cb5ac66`. Its current direct checks are primary
-`18/18` and independent `11/11`; exact physical code evaluation, the finite
+Block 3 is proposed in
+[PR #7023](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7023),
+stacked on the Block-2 delivered head `484cb5ac66`. Science commit
+`653f1900b7` is pushed. Primary `18/18`, independent `11/11`, fresh caches,
+the full committed-tree pipeline, strict lint with zero errors, and committed-
+delta forensic readiness all pass. Exact physical code evaluation, the finite
 formula table, N1--N8 narrow gate, common-front-stage factorization, and the
 three separate binary carrier lifts pass. The broad Born no-go,
 model-theoretic axiom independence, completed Record/history, and axiom

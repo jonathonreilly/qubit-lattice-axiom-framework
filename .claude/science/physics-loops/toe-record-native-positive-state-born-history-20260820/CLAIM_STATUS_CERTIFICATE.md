@@ -1,15 +1,18 @@
 # Claim Status Certificate
 
-Campaign state: Blocks 1 and 2 are proposed in PRs #7020 and #7022. Block 3 is
-narrowed, independently reconstructed, and pending proposal delivery. Its
-post-result five-perspective panel is complete. The campaign has pivoted to a
-four-hour kill-gated physical common-front-stage context-delay connector.
+Campaign state: Blocks 1--3 are proposed in PRs #7020, #7022, and #7023.
+Block 3 is independently reconstructed, committed, pushed, and proposed on
+the Block-2 head. Its post-result five-perspective panel is complete. The
+campaign has pivoted to a four-hour kill-gated physical common-front-stage
+context-delay connector.
 
 Current artifact status: Block 3 has one bounded formula-class independence
 theorem and positive causal-staging reopen, a primary runner passing `18/18`,
-and an independent reconstruction passing `11/11`. Cache, graph, pipeline,
-strict-lint, committed-delta, commit, push, and PR gates remain pending until
-executed; none is pre-credited.
+and an independent reconstruction passing `11/11`. Both caches are fresh; the
+full committed-tree pipeline passed; strict lint has zero errors; the changed-
+audit-evidence gate reports `forensic_evidence_ready=true`; science commit
+`653f1900b7` is pushed; and PR #7023 is open. These delivery gates confer no
+audit verdict or retention.
 
 Proposed Block-3 science claim: on the exact Cycle-317 `M_A/M_B` pair,
 trace-square restriction gives shared-effect values `25/142` and `2/11`,

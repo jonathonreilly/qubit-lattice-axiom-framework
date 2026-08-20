@@ -42,19 +42,26 @@ gates are complete: the seeded committed-delta check reports
 verified against the Block-1 branch. The full fixed-point pipeline and strict
 lint pass with no errors. No review-loop is used.
 
-## Block 3 — Pending Proposal Delivery
+## Block 3 — Proposal Delivered
 
 Branch:
 `physics-loop/toe-shared-effect-record-congruence-block3-20260820`, stacked on
 the delivered Block-2 head
 `484cb5ac66898b053056346b33b674e4496b716b`.
 
+Opened PR:
+
+- [#7023 — shared-effect congruence and causal reopen — bounded theorem —
+  bounded support](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7023)
+
 Current direct validation: primary `PASS=18 FAIL=0`, independent
 `PASS=11 FAIL=0`, full five-perspective panel complete, no-go discipline
 passes only for the bounded formula-class boundary, and TOE score movement
 remains zero. The exact context-delay factorization and separate common/residual
 binary carrier lifts pass; staged physical composition, event registration,
-Record formation, and flat/staged transfer remain open. Cache, citation graph,
-full pipeline, strict lint, committed-delta evidence, commit, push, and PR gates
-must be executed before this section can be upgraded to delivered. No
-review-loop is used.
+Record formation, and flat/staged transfer remain open. Science commit
+`653f1900b7` is pushed. Both caches are fresh, the citation graph and manifest
+are current, the full committed-tree pipeline passes, strict lint reports zero
+errors, and the committed-delta check reports
+`forensic_evidence_ready=true`. PR #7023 is verified against the Block-2
+branch. No review-loop is used.

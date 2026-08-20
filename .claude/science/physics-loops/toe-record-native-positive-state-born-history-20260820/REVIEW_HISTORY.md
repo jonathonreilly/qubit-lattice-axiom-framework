@@ -471,3 +471,19 @@ return, one portfolio recheck near campaign `T+12h`, and final synthesis about
 two hours before deadline. Cap further full panels at three and keep the five
 roles nonduplicative: algebra/uniqueness, locality/routing, Record/operational
 semantics, adversarial prior art, and governance/audit/portfolio.
+
+## Block-3 Delivery Checkpoint
+
+- Science commit `653f1900b7` was created only after primary `18/18`,
+  independent `11/11`, fresh input-bound caches, vocabulary checks, graph/link
+  invariants, and strict audit lint with zero errors passed.
+- The full fixed-point repository pipeline passed from a disposable detached
+  worktree at the committed science head. Generated audit state was discarded;
+  no verdict surface was imported into the proposal branch.
+- The seeded committed-delta gate checked the note, primary runner, registered
+  independent helper, and transitive helper surface and reported
+  `forensic_evidence_ready=true` with zero failures or control failures.
+- The exact branch was pushed and
+  [PR #7023](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7023)
+  opened against the Block-2 branch. Review-loop was not invoked. This is
+  delivery evidence only: obligation retirement and TOE movement remain zero.

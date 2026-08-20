@@ -1,0 +1,66 @@
+===== runner cache v1 =====
+runner: scripts/c2d4_interior_cost2_samek_k7_b21_2026_08_15.py
+runner_sha256: c80e0c61db819537432cb8a6c4ef55b0e9485405da1592ba45e0bb60033795a4
+input_fingerprint_sha256: ba5f8152c504a82822869371b24d99a4e792fe6131c56e28b6d7d7b83e47b447
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.50
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/C2D4_INTERIOR_COST2_SAMEK_K7_B21_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+claim_scope: Same-k reverse at k=7 under the named c2d4-plus-interior hop-cost on B_21(0) is reported. Displayed, not adopted.
+external_scientific_inputs: none; named hop-cost on the finite nearest-neighbor graph B_21(0) only
+measure_boundary: integer hop-costs and one Dijkstra; no fit and no second graph search
+n_sites 13287
+t(7,0,0) = 21
+t(7,7,7) = 31
+same-k comparison: 21^2 / 49 = 441/49 versus 31^2 / 147 = 961/147; reverse=True
+3 t(7,0,0)^2 = 1323
+t(7,7,7)^2 = 961
+t(21,0,0) = 42
+t(18,0,0) = 34
+t(3,2,0) = 9
+t(4,2,0) = 10
+t(5,2,0) = 12
+t(2,2,2) = 11
+t(3,2,2) = 12
+dijkstra_calls 1
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: audit-input-literal AUDIT_INPUT_PATHS is a static string-literal tuple
+PASS: ball-cardinality B_21(0) is the 13287-site integer set with coordinate-sum at most 21
+PASS: one-dijkstra exactly one Dijkstra from the origin is executed
+PASS: reachable every site of B_21(0) is reached
+PASS: hop-origin the unique origin hop has named cost 3
+PASS: hop-max4-out-clause c2d4 would be 2 on (4,2,0) to (5,2,0), so i2 prices that hop at 2
+PASS: hop-interior-clause a 3-to-3 hop whose dest min abs coord is at least 2 is priced at 2
+PASS: hop-max3-out-skipped the max>=4 out-face clause skips (3,2,0) to (4,2,0)
+PASS: i2-clauses seed-exit, axis, drop, corridor, and ridge cost 3; max>=4 out-face and interior 3-to-3 cost 2; other displayed hops cost 1
+PASS: extras-live-on-ball both extra i2 clauses fire on in-ball hops
+PASS: thm1-axis-time t(7,0,0) equals the computed origin-to-axis arrival time
+PASS: thm1-body-time t(7,7,7) equals the computed origin-to-body arrival time
+PASS: thm2-reverse-holds t(7,0,0)^2 / 49 > t(7,7,7)^2 / 147 holds on the computed times
+PASS: thm1-note-reports-times the note reports the computed arrival times
+PASS: thm2-note-reports-comparison the note reports the integer same-k comparison and does not adopt it
+PASS: not-leftover-of-rho3-or-c2d4 i2 disagrees with rho3 and with c2d4 on in-ball hops, and the arrivals are not the rho3 pair
+PASS: not-leftover-of-iota i2 cheapens interior non-ridge 3-to-3 hops relative to iota and taxes height-m ridges that iota skips
+PASS: not-leftover-of-b18 (7,7,7) lies outside B_18(0) and the note says so
+PASS: thm3-not-in-admissibility the live Admissibility wording is unchanged and does not name i2
+PASS: thm3-no-l1-attachment the note refuses to attach L1
+PASS: forbidden-tokens forbidden tokens are absent from the note
+PASS: claim-scope-contract the required claim_scope is source-visible
+PASS: uniqueness-not-claimed the note does not claim uniqueness of the named hop-cost
+PASS: scope-boundary the theorem stays on B_21(0) and proposes no axiom edit
+PASS: displayed-not-adopted the rule is displayed, not adopted
+PASS: no-axiom-edit note records hypothetical axiom status no edit
+PASS: axiom-untouched the axiom memo is an input only and still names the four axioms
+PASS: independent-sites the same Dijkstra records the skipped max>=3 hop and the live interior and max>=4 arrivals
+per_element: named hop-cost values are 1, 2, or 3 on nearest-neighbor hops.
+per_site: arrival times are reported at (7,0,0) and (7,7,7).
+lattice_wide: checked and not executed — the search stays inside B_21(0).
+TOTAL: PASS=29 FAIL=0
+
+----- stderr -----
+

@@ -1,6 +1,6 @@
 {
- "edge_count": 16084,
- "node_count": 5577,
+ "edge_count": 16088,
+ "node_count": 5578,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -553,6 +553,10 @@
   "admissibility_dirac_kahler_self_chart_emptiness_stationarity_bounded_theorem_note_2026-08-16": {
    "deps_hash": "ae8f03ee0b5d",
    "out_degree": 3
+  },
+  "admissibility_dirac_kahler_shear_gauge_classification_bounded_theorem_note_2026-08-20": {
+   "deps_hash": "622f0231ef2f",
+   "out_degree": 4
   },
   "admissibility_dirac_kahler_shifted_origin_frame_gauge_nonuniform_hodge_overlap_bounded_theorem_note_2026-08-14": {
    "deps_hash": "abb470ff102c",

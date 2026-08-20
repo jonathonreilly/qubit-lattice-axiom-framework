@@ -1,0 +1,55 @@
+===== runner cache v1 =====
+runner: scripts/mid_leave_samek_k1_b6_2026_08_15.py
+runner_sha256: d274a00134d8c9f2a9f0b30ce23e15ecc551787a46f2406bd24308b26b1a8f71
+input_fingerprint_sha256: 694b37682615de325c167afc30ff6028e55999e36025aab3e096f63ec97943f5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.11
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/MID_LEAVE_SAMEK_K1_B6_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+claim_scope: Same-k reverse at k=1 under the named mid-leave hop-cost on B_6(0) is reported. Displayed, not adopted.
+external_scientific_inputs: none; named hop-cost on the finite nearest-neighbor graph B_6(0) only
+n_sites 377
+t(1,0,0) = 3
+t(1,1,1) = 5
+t(6,0,0) = 18
+same-k comparison: 3^2 / 1 = 9 versus 5^2 / 3 = 25/3; reverse=True
+3t_axis^2 27
+t_body^2 25
+dijkstra_calls 1
+nn_extra_clause_hops 0
+nn_disagree_with_rho3 0
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: audit-input-literal AUDIT_INPUT_PATHS is a static string-literal tuple
+PASS: ball-cardinality B_6(0) is the 377-site integer set with coordinate-sum at most 6
+PASS: one-dijkstra exactly one Dijkstra from the origin is executed
+PASS: hop-origin the unique origin hop has named cost 3
+PASS: hop-axis-axis a same-support axis hop has named cost 3
+PASS: hop-unit-cube-leave the unit-cube 1-to-2 hop is spared and has named cost 1
+PASS: hop-late-leave-untaxed the dest-max>=2 1-to-2 hop stays at rho3 cost 1 under mid-leave
+PASS: hop-mid-leave-empty-on-nn no nearest-neighbor hop fires the extra dest-max=1 source-max>=2 clause
+PASS: hop-rho3-ridge a 3-to-3 hop whose dest has exactly two unit coordinates has cost 3
+PASS: thm1-axis-time t(1,0,0) equals the computed origin-to-axis arrival time
+PASS: thm1-body-time t(1,1,1) equals the computed origin-to-body arrival time
+PASS: thm2-reverse-holds t(1,0,0)^2 / 1 > t(1,1,1)^2 / 3 holds on the computed times
+PASS: thm1-note-reports-times the note reports the computed arrival times
+PASS: thm2-note-reports-comparison the note reports the integer same-k comparison and does not adopt it
+PASS: thm3-not-in-admissibility the live Admissibility wording is unchanged and does not name mulambda
+PASS: thm3-no-l1-attachment the note refuses to attach L1 and does not score a unit hop-cost
+PASS: forbidden-tokens forbidden tokens are absent from the note
+PASS: claim-scope-contract the required claim_scope is source-visible
+PASS: uniqueness-not-claimed the note does not claim uniqueness of the named hop-cost
+PASS: scope-boundary the theorem stays on B_6(0) and proposes no axiom edit
+PASS: reachable every site of B_6(0) is reached
+PASS: independent-b6-dijkstra axis endpoint t(6,0,0) is computed on this ball and the note is independent
+per_element: named hop-cost values are 1 or 3 on nearest-neighbor hops.
+per_site: arrival times are reported only at (1,0,0) and (1,1,1).
+lattice_wide: checked and not executed — the search stays inside B_6(0).
+TOTAL: PASS=23 FAIL=0
+
+----- stderr -----
+

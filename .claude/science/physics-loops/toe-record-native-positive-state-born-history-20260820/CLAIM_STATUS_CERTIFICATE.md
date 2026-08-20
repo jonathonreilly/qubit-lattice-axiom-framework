@@ -96,3 +96,16 @@ canonical cq instrument and Record ensembles, and a fresh-ancilla
 repeated-interaction trajectory writer deriving formation without renaming an
 ensemble as an actual atom. Preparation affinity is a tool, not sufficient by
 itself.
+
+## Committed-tree delivery evidence
+
+Science commit `2084d32d79bd6aade8785636c458e9ad2afe25bf` was replayed in a
+detached disposable worktree on the exact Block-5 base
+`7f22e452ee734a27e69d6b8438b3902e9d76b1b7`. The full fixed-point audit
+pipeline completed and seeded the Block-6 claim row; strict audit lint checked
+4,902 rows with zero errors; and the committed-delta evidence gate reports
+`forensic_evidence_ready=true`, zero failures, zero control failures, and the
+independent helper discovered. Pipeline-generated ledger and queue surfaces
+were intentionally discarded with the disposable worktree. These are
+proposal-delivery checks only and do not change audit, retention, obligation,
+axiom, or TOE-percentage status.

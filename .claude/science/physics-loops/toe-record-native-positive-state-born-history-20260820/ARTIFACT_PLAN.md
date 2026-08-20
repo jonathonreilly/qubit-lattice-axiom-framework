@@ -174,6 +174,13 @@ independence remain inputs.
 It is not a pointwise actualization theorem or a Born derivation from the
 axioms. Zero obligation retirement and zero TOE movement.
 
+Science commit `2084d32d79bd6aade8785636c458e9ad2afe25bf` passes the full
+fixed-point pipeline in a detached disposable worktree, strict audit lint with
+zero errors, and the seeded committed-delta gate with
+`forensic_evidence_ready=true`, the helper discovered, and no failures or
+control failures. The disposable generated surfaces were discarded. Remote
+delivery remains the only pending Block-6 step at this checkpoint.
+
 ## Ensemble Identity And Formation — Block 7 Co-Equal Routes Selected
 
 Next kill-gated contract:

@@ -850,3 +850,23 @@ is retired, and no axiom update is mature.
 - Gravity remains non-overlap work. Recheck only on a positive link-variable
   or nonzero-curvature connector, a source/rate/lapse dictionary, a retained
   merge, or explicit axiom pressure.
+
+## Block 6 committed-tree gate — 2026-08-20T19:04-04:00
+
+The exact science commit
+`2084d32d79bd6aade8785636c458e9ad2afe25bf` was checked in a detached
+worktree. The full fixed-point audit pipeline completed through ledger
+materialization, graph/manifest rebuild, fixed-point seeding, classification,
+effective-status computation, invalidation, load-bearing/lane/cycle surfaces,
+and queue computation. Strict audit lint checked 4,902 rows with zero errors.
+The seeded committed-delta gate against exact Block-5 base
+`7f22e452ee734a27e69d6b8438b3902e9d76b1b7` found 19 changed paths and one
+claim, with `forensic_evidence_ready=true`, the independent helper discovered,
+and no failures or control failures. Generated audit surfaces were discarded;
+no audit verdict was applied.
+
+A fresh remote check confirms PR #7030 remains clean at that exact base. The
+external gravity stack remains clean through #7029/Block 158, whose result is
+still a sign-preserving quotient obstruction rather than a positive
+source/rate/lapse connector. No portfolio pivot or percentage movement is
+triggered.

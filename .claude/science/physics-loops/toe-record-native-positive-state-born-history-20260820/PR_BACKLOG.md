@@ -124,7 +124,7 @@ seeded committed-delta replay reports `forensic_evidence_ready=true`, zero
 failures/control failures, and the independent helper. PR #7030 is verified
 against the Block-4 branch. No review-loop was used.
 
-## Block 6 — Local Proposal, Delivery Pending
+## Block 6 — Proposal Validated, PR Opening Pending
 
 Branch:
 `physics-loop/toe-instrument-record-state-lift-block6-20260820`, stacked on
@@ -147,6 +147,11 @@ movement is zero.
 
 Fresh caches, citation graph/manifest, vocabulary, repository invariants,
 premise purity, Python compilation, strict audit lint with zero errors, and the
-full five-role corrected-science panel pass. Pending: full committed-tree
-pipeline, committed-delta forensic replay, science/metadata commits, push, and
-stacked PR verification. No review-loop will be used.
+full five-role corrected-science panel pass. Science commit
+`2084d32d79bd6aade8785636c458e9ad2afe25bf` also passes the full fixed-point
+pipeline in a detached disposable worktree. The seeded committed-delta replay
+reports `forensic_evidence_ready=true`, zero failures/control failures, and the
+independent helper. The exact remote Block-5 base remains
+`7f22e452ee734a27e69d6b8438b3902e9d76b1b7`, and PR #7030 is clean. Pending:
+metadata commit, push, stacked PR opening, and remote verification. No
+review-loop will be used.

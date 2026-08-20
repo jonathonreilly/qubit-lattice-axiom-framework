@@ -9,7 +9,7 @@ portfolio_recheck_interval: 2h
 panel_size: 5
 panel_cadence: two_adversarial_seats_at_route_T_plus_2h; full_five_at_T_plus_4h_or_terminal_return; full_five_on_major_connector_obstruction_pivot_or_axiom_pressure; portfolio_panel_near_T_plus_12h; final_synthesis_two_hours_before_deadline
 panel_cadence_policy: block6_full_panel_caught_the_typed_decoder_kernel_mismatch_no_go_packet_defects_and_cq_identity_reframe; panels_have_high_utility_on_integrated_returns_and_route_pivots; repeat_five_distinct_roles_at_each_major_connector_first_return_or_two_hours_of_stall_and_at_least_every_four_hours; use_targeted_two_or_three_seat_kill_checks_between_full_panels
-cycle: 14
+cycle: 15
 science_block: 6
 branch: physics-loop/toe-instrument-record-state-lift-block6-20260820
 base: physics-loop/toe-shared-event-record-support-block5-20260820@7f22e452ee
@@ -21,7 +21,7 @@ goal_ledger: prior_goal_usage_limited; this pack records the active user-authori
 goal: construct the shortest honest Record-native positive-state and Born-history completion, or identify the exact minimal law or axiom datum that prevents it
 active_route: physical_label_retaining_cq_instrument_to_Record_ensemble_identity_on_the_completed_typed_port_with_fresh_ancilla_repeated_interaction_formation_as_coequal_route
 hard_residual: derive rather than supply equality between the canonical label-retaining cq instrument ensemble and the local Admissibility Record ensemble on a rich preparation/menu domain; the sectorwise lemma then uniquely forces the trace ratios; separately derive a microscopic formation transition, smaller-seed apparatus reachability, contingent observed member, and physical time; preserve the solved state/rail projections, exact delayed s1 geometry, exact typed orbit gate, branch support, and residual recovery; do not treat a coherent or dephased cq state as one actual Record, mistake preparation affinity alone for effect identification, import trace probabilities as foundation authority, hide a sampler/live state, or infer axiom necessity from the deterministic affine class boundary
-target_contract_status: block6_local_corrected_return_primary_17_of_17_independent_13_of_13; typed_state_and_apparatus_relative_rail_compiler_solves_code_mismatch; exact_frontier_census_and_24_of_144_per_stage_guard_enumeration_solve_eager_and_near_spoof_formation; total_borel_law_and_trace_specialization_match_both_ternary_Record_histories; sectorwise_cq_ensemble_consistency_uniquely_forces_all_displayed_trace_ratios_conditionally; support_identical_free_weight_law_leaves_physical_ensemble_identity_unselected; affine_deterministic_definite_sector_boundary_scoped_by_fresh_N1_to_N8; five_physicist_corrected_science_PASS; caches_graph_invariants_premise_vocab_strict_lint_PASS; committed_tree_pipeline_and_delivery_pending; zero_retirement
+target_contract_status: block6_science_commit_2084d32d79_primary_17_of_17_independent_13_of_13; typed_state_and_apparatus_relative_rail_compiler_solves_code_mismatch; exact_frontier_census_and_24_of_144_per_stage_guard_enumeration_solve_eager_and_near_spoof_formation; total_borel_law_and_trace_specialization_match_both_ternary_Record_histories; sectorwise_cq_ensemble_consistency_uniquely_forces_all_displayed_trace_ratios_conditionally; support_identical_free_weight_law_leaves_physical_ensemble_identity_unselected; affine_deterministic_definite_sector_boundary_scoped_by_fresh_N1_to_N8; five_physicist_corrected_science_PASS; caches_graph_invariants_premise_vocab_strict_lint_full_fixed_point_pipeline_and_committed_delta_forensic_gate_PASS; PR_opening_pending; zero_retirement
 authority_surface:
   - docs/MINIMAL_AXIOMS_2026-06-29.md
   - docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md
@@ -73,5 +73,13 @@ checkpoint_zero_toe_map:
     autonomous_closure_percent: 34
     evidence_ceiling_percent: 99
 percentage_rule: freeze until independently retained obligation retirement; unlanded constructions and route confidence do not move scores
-next_exact_action: deliver the corrected Block6 proposal after the five-role panel and forensic gates, then launch two co-equal Block7 searches: derive physical equality of the canonical cq instrument and Record ensembles using an effect-complete operational protocol, and construct a fresh-ancilla repeated-interaction trajectory writer with append-only Record memory; require a concrete theorem, countermodel, or exact downstream law datum rather than another fixed pointer, weight table, decoder, or static kernel
+next_exact_action: >-
+  Push and open the corrected Block6 proposal on the exact clean Block5 head,
+  verify the stacked PR remotely, then launch one integrated Block7 fixture
+  with two co-equal proof obligations: derive physical equality of the
+  canonical cq instrument and Record ensembles using an effect-complete
+  operational protocol, and construct a fresh-ancilla repeated-interaction
+  trajectory writer with append-only Record memory; require a concrete
+  theorem, countermodel, or exact downstream law datum rather than another
+  fixed pointer, weight table, decoder, or static kernel.
 stop_condition: campaign deadline; kill the cq route at two hours if ensemble equality is assumed, only preparation affinity is proved, the test uses one preparation/menu, or the randomizer/label history is not operationally screened; kill the formation route if it merely renames a cq mixture, supplies the outcome token/sampler, or starts from the preloaded apparatus without naming that import; re-run a five-role panel on either first return, any major obstruction/axiom pressure, or four hours without TOE-level progress

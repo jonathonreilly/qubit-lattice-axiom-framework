@@ -1,0 +1,53 @@
+===== runner cache v1 =====
+runner: scripts/deep_enter_var_vs_kappa_rho3_b12_2026_08_15.py
+runner_sha256: eb92935bf15a0ca5900a2016c9d5354b12fe7c0daa00e5a8b8168a0625887d86
+input_fingerprint_sha256: b054a99cee0e0935292a4d9f0dcc11806d7022c10573c0d916386dba449bdf12
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.26
+status: ok
+----- stdout -----
+claim_scope: Arrival-speed variance under deep-enter, ridge-enter, and ridge-slide on B_12(0) is compared. Displayed, not adopted.
+cache_write: false
+external_scientific_inputs: current Lattice, Admissibility, and Record wording; no observation or fit
+integrity_reads: this runner, its note, and the axiom memo; no other scientific inputs
+construction: three directed Dijkstras on the induced B_12(0) graph
+negative_scope: displayed scores are not adopted and L1 is not attached
+PASS: audit-inputs the two declared source-bound inputs exist
+PASS: audit-tuple-literal AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: claim-scope front matter uses the declared claim_scope
+PASS: source-lattice current cubic nearest-neighbor wording is pinned
+PASS: source-admissibility current local-distribution wording is pinned
+PASS: source-formation-boundary formation site/probability/rate remains outside Admissibility
+PASS: source-record-boundary current lock/content/unreadable-at-absence wording is pinned
+PASS: ball-cardinality B_12(0) has 2625 sites and 2624 nonzero sites
+PASS: three-dijkstras exactly three Dijkstras run and each named cost reaches every ball site
+PASS: named-clauses ρ3 prices ridge 3→3; κ adds ridge-enter 2→3; δε adds deep-enter 2→3
+PASS: deep-enter-live-cost 864 directed deep-enter hops are priced only by δε
+Q_delta_eps = 8080835149812247289/37031456927424960000
+Q_kappa = 8065845471432407489/37031456927424960000
+Q_rho3 = 8080835149812247289/37031456927424960000
+var_delta_eps = 0.005047718614862020
+var_kappa = 0.005030477616848010
+var_rho3 = 0.005047718614862020
+dijkstra_calls 3
+PASS: second-moments the three exact second moments match the note
+PASS: reported-variances the note reports the three truncated population variances
+PASS: arrival-fields δε and ρ3 agree sitewise while κ differs on a nonempty set
+PASS: variance-order κ is strictly rounder than δε, which equals ρ3
+lex_first_minimizer = kappa
+PASS: lex-first-minimizer the lex-first minimizer among the three names is κ
+PASS: forbidden-phrases note and runner omit the forbidden phrases
+PASS: theorems-displayed three theorems are present and the scores are displayed, not adopted
+PASS: no-admissibility-write the note refuses to write δε, κ, or ρ3 into Admissibility
+PASS: no-l1-attach the note does not attach L1
+PASS: uniqueness-not-claimed uniqueness among hop-costs is not claimed
+PASS: mutation-idle-arrival the deep-enter extra clause is a live hop-cost that does not change any arrival time
+PASS: axiom-untouched the axiom memo is an input only and still names the four axioms
+per_element: checked exactly — each of the 2624 nonzero B_12(0) sites receives three arrival times
+per_site: checked exactly — population variance uses |v|_2/t at every nonzero site
+per_mode: checked exactly — three named hop-costs only; no other clause triple is scored
+TOTAL: PASS=23 FAIL=0
+
+----- stderr -----
+

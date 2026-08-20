@@ -1,6 +1,6 @@
 {
- "edge_count": 15752,
- "node_count": 5558,
+ "edge_count": 15753,
+ "node_count": 5559,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -19065,6 +19065,10 @@
   "unraveled_step_law_bi_invariant_quasi_stationarity_split_bounded_theorem_note_2026-06-10": {
    "deps_hash": "fb8954ed7807",
    "out_degree": 9
+  },
+  "unread_site_deletion_vs_c2d4_reverse_b6_bounded_theorem_note_2026-08-15": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "up_sector_partition_revisit_note_2026-04-19": {
    "deps_hash": "eaecb942382a",

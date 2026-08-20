@@ -1,0 +1,70 @@
+===== runner cache v1 =====
+runner: scripts/cost2_deep_out_face_samek_k14_b42_2026_08_15.py
+runner_sha256: 2fd31e19707212b32445459b5237f4320fe43528b6d8eb9229e31b7a9c4796dd
+input_fingerprint_sha256: 539f7dfa6fae2c3a230b8a57dc8e54c5b8026d75d2471779744742454278f040
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.83
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/COST2_DEEP_OUT_FACE_SAMEK_K14_B42_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+claim_scope: Same-k reverse at k=14 under the named cost-2 deep-out-face hop-cost on B_42(0) is reported. Displayed, not adopted.
+PASS: audit-input-paths declared inputs are the source note and the current axiom memo
+PASS: audit-input-literal AUDIT_INPUT_PATHS is a static string-literal tuple
+PASS: claim-scope note claim_scope matches the displayed scoring statement
+PASS: displayed-not-adopted the rule is displayed, not adopted
+PASS: not-in-admissibility c2df is not written into Admissibility
+PASS: not-attach-l1 the displayed rule is not attached to L1
+PASS: uniqueness-not-claimed uniqueness among hop-costs is not claimed
+PASS: no-axiom-edit note records hypothetical axiom status no edit
+PASS: forbidden-absent forbidden phrases are absent from the source note
+n_sites 102425
+t(14,0,0) 30
+t(14,14,14) 46
+t(14,0,0)^2/196 900/196
+t(14,14,14)^2/588 2116/588
+3t_axis^2 2700
+t_body^2 2116
+reverse True
+t(42,0,0) 63
+t(39,0,0) 55
+t(3,2,0) 10
+dijkstra_calls 1
+witness_axis_sum 30
+witness_body_sum 46
+c2df_out_face 2
+df_out_face 3
+w2_out_face 2
+omega_out_face 3
+rho3_out_face 1
+c2df_unit_out_face 3
+omega_grow_unit True
+df_grow_unit False
+witness_rho3_axis_c2df 38
+witness_rho3_axis_rho3 26
+witness_out_face_c2df 10
+witness_out_face_df 11
+witness_out_face_rho3 9
+PASS: t-1400-141414 t(14,0,0)=30 and t(14,14,14)=46
+PASS: reverse-k14 t(14,0,0)^2/196 > t(14,14,14)^2/588 holds
+PASS: one-dijkstra exactly one Dijkstra ran
+PASS: ball-b42 B_42(0) has 102425 sites and 102424 nonzero sites
+PASS: reachable every site of B_42(0) is reached
+PASS: note-records-times note records the two computed arrivals
+PASS: note-records-reverse-products note records the integer reverse products
+PASS: not-leftover-of-rho3 c2df prices deep out-face at 2 while ρ3 prices it at 1
+PASS: not-leftover-of-df df prices deep out-face at 3 while c2df prices it at 2
+PASS: not-leftover-of-b39 (14,14,14) lies outside B_39(0) and the note says so
+PASS: skips-unit-out-face c2df extra clause skips unit-out-face; w2 extra clause includes it; both hop-costs are 3 by μ
+PASS: not-leftover-of-omega ω prices deep out-face at 3 while c2df prices it at 2
+PASS: not-leftover-of-kappa κ prices ridge-enter at 3 while c2df leaves it at 1
+PASS: not-leftover-of-iota c2df does not tax the interior 3→3 hop that ι taxes
+PASS: seed-and-deep-out-face-clauses seed-exit, both-weights-1, support-drop, corridor-slide, ridge-slide cost 3; deep out-face costs 2; unit-cube and body enter cost 1
+PASS: axiom-untouched the axiom memo is an input only and still names the four axioms
+TOTAL: PASS=25 FAIL=0
+
+----- stderr -----
+

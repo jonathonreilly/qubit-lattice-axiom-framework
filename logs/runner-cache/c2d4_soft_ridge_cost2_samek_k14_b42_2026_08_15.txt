@@ -1,0 +1,71 @@
+===== runner cache v1 =====
+runner: scripts/c2d4_soft_ridge_cost2_samek_k14_b42_2026_08_15.py
+runner_sha256: 6842359a1985f703195bd25456617f4ffdcc0fbf1ed20b26df8e0ab89d4279e0
+input_fingerprint_sha256: e6d6d8a1f9059116e0fffc7e30b08aa1263685456a07f107ace89e1b66a16d7f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.28
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/C2D4_SOFT_RIDGE_COST2_SAMEK_K14_B42_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+claim_scope: Same-k reverse at k=14 under the named c2d4-plus-soft-ridge hop-cost on B_42(0) is reported. Displayed, not adopted.
+PASS: audit-input-paths declared inputs are the source note and the current axiom memo
+PASS: audit-input-literal AUDIT_INPUT_PATHS is a static string-literal tuple
+PASS: claim-scope note claim_scope matches the displayed scoring statement
+PASS: displayed-not-adopted the rule is displayed, not adopted
+PASS: not-in-admissibility s2 is not written into Admissibility
+PASS: not-attach-l1 the displayed rule is not attached to L1
+PASS: uniqueness-not-claimed uniqueness among hop-costs is not claimed
+PASS: no-axiom-edit note records hypothetical axiom status no edit
+PASS: forbidden-absent forbidden phrases are absent from the source note
+n_sites 102425
+t(14,0,0) 28
+t(14,14,14) 45
+t(14,0,0)^2/196 784/196
+t(14,14,14)^2/588 2025/588
+3t_axis^2 2352
+t_body^2 2025
+reverse True
+t(42,0,0) 61
+t(39,0,0) 53
+t(3,2,0) 9
+t(4,2,0) 10
+t(5,2,0) 12
+t(1,1,1) 5
+t(2,1,1) 7
+t(2,2,1) 8
+t(14,14,1) 32
+dijkstra_calls 1
+witness_axis_sum 28
+witness_body_sum 45
+witness_axis_c2d4 30
+witness_body_c2d4 46
+s2_ridge 2
+c2d4_ridge 3
+rho3_ridge 3
+s2_later 2
+c2d4_later 2
+rho3_later 1
+PASS: t-1400-141414 t(14,0,0)=28 and t(14,14,14)=45
+PASS: reverse-k14 t(14,0,0)^2/196 > t(14,14,14)^2/588 holds
+PASS: one-dijkstra exactly one Dijkstra ran
+PASS: ball-b42 B_42(0) has 102425 sites and 102424 nonzero sites
+PASS: reachable every site of B_42(0) is reached
+PASS: note-records-times note records the two computed arrivals
+PASS: note-records-reverse-products note records the integer reverse products
+PASS: not-leftover-of-c2d4 s2 prices ridge-stay at 2 while c2d4 prices it at 3
+PASS: not-leftover-of-rho3 s2 prices ridge-stay at 2 and max≥4 out-face at 2 while ρ3 prices those at 3 and 1
+PASS: not-leftover-of-d4 d4 prices max≥4 out-face at 3 while s2 prices it at 2
+PASS: not-leftover-of-b39 (14,14,14) lies outside B_39(0) and the note says so
+PASS: skips-height-three-out-face c2d4 extra clause skips (3,2,0)→(4,2,0); d3, df, and ω extra clauses include it
+PASS: not-leftover-of-kappa κ prices ridge-enter at 3 while s2 leaves it at 1
+PASS: not-leftover-of-iota s2 does not tax the interior 3→3 hop that ι taxes
+PASS: seed-max4-and-soft-ridge-clauses seed-exit, both-weights-1, support-drop, corridor-slide cost 3; ridge-stay and max≥4 out-face cost 2; skipped grow, unit-cube, ridge-enter, interior, and body enter cost 1
+PASS: axiom-untouched the axiom memo is an input only and still names the four axioms
+TOTAL: PASS=25 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,77 @@
+===== runner cache v1 =====
+runner: scripts/unread_site_deletion_vs_c2d4_reverse_b6_2026_08_15.py
+runner_sha256: 44e3b96075c214a034c0b293c097f421e7f4748eb9d76790da5f13ceda899bf4
+input_fingerprint_sha256: e565370187d8a0828aed53eaa9d65e83cd63c2b115555d2b687cda621ecf7ebd
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/UNREAD_SITE_DELETION_VS_C2D4_REVERSE_B6_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+claim_scope: Same-k reverse and face at k=1 under named c2d4 on B_6(0) versus B_6(0) minus unread (2,0,0) is compared. Displayed, not adopted.
+external_scientific_inputs: none; named c2d4 on B_6(0) versus B_6(0) minus unread (2,0,0) only
+package_local_integrity_reads: proposed source note and live axiom memo only; no cache or governance surface is written
+measure_boundary: integer hop-costs and two Dijkstras; no fit and no leftover larger-ball table
+claim_boundary: same-k reverse and face bits at k=1 are displayed, not adopted
+n_sites_full 377
+n_sites_punct 376
+R [(0, 0, 0), (1, 0, 0), (1, 1, 0), (1, 1, 1)]
+unread_witness (2, 0, 0)
+full t(1,0,0) = 3
+full t(1,1,1) = 5
+full t(2,0,0) = 6
+full t(1,1,0) = 4
+full reverse: 3^2 / 1 = 9 versus 5^2 / 3 = 25/3; reverse=True
+full 3 t(1,0,0)^2 = 27
+full t(1,1,1)^2 = 25
+full face: 6^2 / 4 = 36/4 versus 4^2 / 2 = 16/2; face=True
+full t(2,0,0)^2 = 36
+full 2 t(1,1,0)^2 = 32
+punct t(1,0,0) = 3
+punct t(1,1,1) = 5
+punct t(2,0,0) absent
+punct t(1,1,0) = 4
+punct reverse=True
+punct face undefined
+recorded_times_same True
+defined_bit_moved False
+dijkstra_calls 2
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: audit-input-literal AUDIT_INPUT_PATHS is a static string-literal tuple
+PASS: ball-cardinality B_6(0) is the 377-site integer set with coordinate-sum at most 6
+PASS: punctured-cardinality B_6(0) minus unread (2,0,0) has 376 sites
+PASS: recorded-set R is the four recorded sites and the unread witness is outside R
+PASS: two-dijkstras exactly two Dijkstras from the origin are executed, full ball then ball minus u
+PASS: reachable-full every site of B_6(0) is reached on the full ball
+PASS: reachable-punct-recorded every recorded site remains reached on the punctured ball
+PASS: c2d4-clauses seed-exit and axis cost 3; body and face-support hops cost 1; max>=4 out-face costs 2
+PASS: thm1-arrivals on the full ball the four arrivals are the computed Dijkstra times
+PASS: thm1-reverse-face on the full ball reverse and face bits at k=1 both hold
+PASS: thm2-arrivals-punct on the punctured ball the recorded arrivals match and t(2,0,0) is absent
+PASS: thm2-bits-if-defined on the punctured ball reverse remains true and face is undefined
+PASS: thm3-no-defined-bit-move no defined reverse or face bit moves after deleting unread u
+PASS: thm3-r-unchanged the recorded set R is unchanged by deleting unread u
+PASS: thm1-note-reports-full the note reports the full-ball arrivals and both bits
+PASS: thm2-note-reports-punct the note reports the punctured arrivals and undefined face bit
+PASS: thm3-note-reports-comparison the note reports that no defined reverse or face bit moves and R is unchanged
+PASS: thm3-not-in-admissibility the live Admissibility wording is unchanged and hop-costs are not written into it
+PASS: thm3-no-l1-attachment the note refuses to attach L1
+PASS: forbidden-tokens forbidden tokens are absent from the note
+PASS: claim-scope-contract the required claim_scope is source-visible
+PASS: uniqueness-not-required the note does not require uniqueness
+PASS: scope-boundary the theorem stays on B_6(0), uses two Dijkstras, and proposes no axiom edit
+PASS: displayed-not-adopted the comparison is displayed, not adopted
+PASS: no-axiom-edit note records hypothetical axiom status no edit
+PASS: axiom-untouched the axiom memo is an input only and still names the four axioms
+PASS: no-path-dump the runner stores arrival costs only
+PASS: record-unreadability the note quotes that a site with no record cannot be read
+per_element: named hop-cost values are 1, 2, or 3 on nearest-neighbor hops.
+per_site: arrival times are reported at (1,0,0), (1,1,1), (2,0,0), and (1,1,0).
+lattice_wide: checked and not executed — the search stays inside B_6(0).
+TOTAL: PASS=29 FAIL=0
+
+----- stderr -----
+

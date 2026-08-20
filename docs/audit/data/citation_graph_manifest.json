@@ -1,6 +1,6 @@
 {
- "edge_count": 16105,
- "node_count": 5585,
+ "edge_count": 16109,
+ "node_count": 5586,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -461,6 +461,10 @@
   "admissibility_dirac_kahler_curved_carrier_dependency_bounded_theorem_note_2026-08-17": {
    "deps_hash": "d58da1da5269",
    "out_degree": 3
+  },
+  "admissibility_dirac_kahler_cutting_strata_completion_bounded_theorem_note_2026-08-20": {
+   "deps_hash": "25398fc7a7b3",
+   "out_degree": 4
   },
   "admissibility_dirac_kahler_discriminator_verdict_bounded_theorem_note_2026-08-20": {
    "deps_hash": "54e88af57ea1",

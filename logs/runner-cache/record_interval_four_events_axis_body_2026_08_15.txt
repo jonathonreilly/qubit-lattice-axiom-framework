@@ -1,0 +1,46 @@
+===== runner cache v1 =====
+runner: scripts/record_interval_four_events_axis_body_2026_08_15.py
+runner_sha256: b6fbd6e329b85bb446386256bf7a65eb268d5cdcae4bcc1d804b467464c2b52d
+input_fingerprint_sha256: 9a7f32c2453cea26e4abbcbe15fc8d89e063501774c0d54eec330b29d0c9aff6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/RECORD_INTERVAL_FOUR_EVENTS_AXIS_BODY_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+external_scientific_inputs: none; R and the named lock order are displayed mathematical inputs; Q is the Euclidean square
+score_domain: recorded set R only
+PASS: audit-input-paths declared inputs are exactly the note and current axiom memo
+PASS: audit-timeout the declared audit timeout is 120 seconds
+PASS: current-record-readable only records are readable and readout is content-determined
+PASS: current-record-unreadability a site with no record cannot be read
+PASS: current-admissibility-no-time-metric Admissibility does not define a time metric
+event (0, 0, 0): t_lock=0 Q=0 s^2=0 class=null
+event (1, 0, 0): t_lock=1 Q=1 s^2=0 class=null
+event (1, 1, 0): t_lock=2 Q=2 s^2=2 class=time
+event (1, 1, 1): t_lock=3 Q=3 s^2=6 class=time
+PASS: recorded-set-four the score domain is exactly the four named recorded events
+PASS: theorem1-quadratic Q is the Euclidean square on each recorded event
+PASS: theorem1-interval s^2 equals t_lock^2 minus Q on each recorded event
+PASS: theorem1-sign-classes sign of s^2 assigns null, null, time, time on the named order
+PASS: theorem2-axis-null the axis event (1,0,0) is null
+PASS: theorem2-body-time the body event (1,1,1) is time
+PASS: theorem3-distinct-classes axis and body do not lie in the same class
+PASS: l1-not-attached Q is the Euclidean square even though L1 coincides on this R
+PASS: unread-not-scored unread sites are outside the score and are not a reverse map
+PASS: uniqueness-not-required a mutated lock order can place axis and body in the same class
+PASS: note-claim-scope the note reports the displayed interval and axis-versus-body class
+PASS: note-contract machine fields, display scope, and hygiene hold
+PASS: note-runner-table the note table matches the computed four-event display
+per_element: Q and s^2 are evaluated on each of the four recorded events
+per_site: unread sites are excluded from the score domain
+per_mode: checked and not executed — no spectral object appears
+lattice_wide: checked and not executed — only R is scored
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

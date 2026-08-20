@@ -1,0 +1,59 @@
+===== runner cache v1 =====
+runner: scripts/l1_locksupport_vs_c2d4_face_k1_b6_2026_08_15.py
+runner_sha256: 82b91e7e6fc49f802b30bb0f65c78845aa4476fc135b11a5d04ed4029de47e3b
+input_fingerprint_sha256: 1dca7c32b3502450c76085924e7001cebf628c54dced860b8a6d2ea09caad3b6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/L1_LOCKSUPPORT_VS_C2D4_FACE_K1_B6_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+claim_scope: Face reverse at k=1 under unit ℓ¹ versus named c2d4 on B_6(0) is compared. Displayed, not adopted.
+external_scientific_inputs: none; unit ℓ¹ lock-support versus named c2d4 on the finite nearest-neighbor graph B_6(0) only
+package_local_integrity_reads: proposed source note and live axiom memo only; no cache or governance surface is written
+measure_boundary: integer hop-costs and two Dijkstras; no fit and no leftover larger-ball table
+claim_boundary: face reverse bits at k=1 are displayed, not adopted
+n_sites 377
+l1 t(2,0,0) = 2
+l1 t(1,1,0) = 2
+l1 face reverse: 2^2 = 4 versus 2 t(1,1,0)^2 = 8; reverse=False
+c2d4 t(2,0,0) = 6
+c2d4 t(1,1,0) = 4
+c2d4 face reverse: 6^2 = 36 versus 2 t(1,1,0)^2 = 32; reverse=True
+face_bits_agree False
+dijkstra_calls 2
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: audit-input-literal AUDIT_INPUT_PATHS is a static string-literal tuple
+PASS: ball-cardinality B_6(0) is the 377-site integer set with coordinate-sum at most 6
+PASS: two-dijkstras exactly two Dijkstras from the origin are executed, unit ℓ¹ then c2d4
+PASS: reachable every site of B_6(0) is reached under both costs
+PASS: l1-unit-hops ℓ¹ prices every 6-NN hop at cost 1
+PASS: c2d4-clauses seed-exit, axis, drop, corridor-slide, and ridge-slide cost 3; max>=4 out-face costs 2; 1-to-2 and small 2-to-3 cost 1
+PASS: thm1-l1-times under ℓ¹, t(2,0,0)=2 and t(1,1,0)=2 match the unit-cost arrivals
+PASS: thm1-l1-face-reverse under ℓ¹, t(2,0,0)^2 > 2 t(1,1,0)^2 fails
+PASS: thm2-c2d4-times under c2d4, t(2,0,0)=6 and t(1,1,0)=4 match the named-cost arrivals
+PASS: thm2-c2d4-face-reverse under c2d4, t(2,0,0)^2 > 2 t(1,1,0)^2 holds
+PASS: thm3-bits-disagree the two face bits disagree
+PASS: thm1-note-reports-l1 the note reports the ℓ¹ times and failed face reverse
+PASS: thm2-note-reports-c2d4 the note reports the c2d4 times and holding face reverse
+PASS: thm3-note-reports-disagreement the note reports disagreement of the face bits
+PASS: thm3-not-in-admissibility the live Admissibility wording is unchanged and does not name these hop-costs
+PASS: thm3-no-l1-attachment the note refuses to attach L1
+PASS: forbidden-tokens forbidden tokens are absent from the note
+PASS: claim-scope-contract the required claim_scope is source-visible
+PASS: uniqueness-not-required the note does not require uniqueness
+PASS: scope-boundary the theorem stays on B_6(0), uses two Dijkstras, and proposes no axiom edit
+PASS: displayed-not-adopted the comparison is displayed, not adopted
+PASS: no-axiom-edit note records hypothetical axiom status no edit
+PASS: axiom-untouched the axiom memo is an input only and still names the four axioms
+PASS: no-path-dump the runner stores arrival costs only
+per_element: named hop-costs are integers on nearest-neighbor hops.
+per_site: arrival times are reported only at (2,0,0) and (1,1,0).
+lattice_wide: checked and not executed — the search stays inside B_6(0).
+TOTAL: PASS=25 FAIL=0
+
+----- stderr -----
+

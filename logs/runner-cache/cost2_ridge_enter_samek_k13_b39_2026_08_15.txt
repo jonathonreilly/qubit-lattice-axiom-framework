@@ -1,0 +1,46 @@
+===== runner cache v1 =====
+runner: scripts/cost2_ridge_enter_samek_k13_b39_2026_08_15.py
+runner_sha256: 14cdcf0e8503b1c790a5ef49d98140c427d3e0ada2ec24ed04928c776ec06c24
+input_fingerprint_sha256: cc44def63f2bb49402157c5422c66dc6704d7b00a173d7515d1d29106f46b1d1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.60
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/COST2_RIDGE_ENTER_SAMEK_K13_B39_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+claim_scope: Same-k reverse at k=13 under the named cost-2 ridge-enter hop-cost on B_39(0) is reported. Displayed, not adopted.
+PASS: audit-input-paths declared inputs are the source note and the current axiom memo
+PASS: audit-input-literal AUDIT_INPUT_PATHS is a static string-literal tuple
+PASS: claim-scope note claim_scope matches the displayed scoring statement
+PASS: displayed-not-adopted the rule is displayed, not adopted
+PASS: not-in-admissibility c2 is not written into Admissibility
+PASS: not-attach-l1 the displayed rule is not attached to L1
+PASS: uniqueness-not-claimed uniqueness among hop-costs is not claimed
+PASS: no-axiom-edit note records hypothetical axiom status no edit
+PASS: forbidden-absent forbidden phrases are absent from the source note
+n_sites 82239
+t(13,0,0) 25
+t(13,13,13) 43
+t(13,0,0)^2/169 625/169
+t(13,13,13)^2/507 1849/507
+3t_axis^2 1875
+t_body^2 1849
+reverse True
+dijkstra_calls 1
+PASS: t-axis-body t(13,0,0)=25 and t(13,13,13)=43
+PASS: reverse-k13 t(13,0,0)^2/169 > t(13,13,13)^2/507 holds
+PASS: one-dijkstra exactly one Dijkstra ran
+PASS: ball-b39 B_39(0) has 82239 sites and 82238 nonzero sites
+PASS: reachable every site of B_39(0) is reached
+PASS: note-records-times note records the two computed arrivals
+PASS: note-records-reverse-products note records the integer reverse products
+PASS: ridge-enter-cost-two 2→3 ridge-enter with exactly two |w_i|=1 costs 2, not 3
+PASS: inherited-three-clauses seed-exit, axis, support-drop, corridor-slide, and ridge-slide cost 3
+PASS: axiom-untouched the axiom memo is an input only and still names the four axioms
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

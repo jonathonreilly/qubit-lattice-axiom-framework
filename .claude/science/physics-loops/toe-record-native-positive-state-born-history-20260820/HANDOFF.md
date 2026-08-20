@@ -2,13 +2,14 @@
 
 ## Current State
 
-The 24-hour campaign runs until 2026-08-21 11:27:51 EDT. Blocks 1--4 are
-proposed in PRs #7020, #7022, #7023, and #7027. Block 5 is locally science-
-complete on
+The 24-hour campaign runs until 2026-08-21 11:27:51 EDT. Blocks 1--5 are
+proposed in PRs #7020, #7022, #7023, #7027, and #7030. Block 5 is delivered on
 `physics-loop/toe-shared-event-record-support-block5-20260820`, stacked on
 Block 4 at `22d667ceeb`. Primary `15/15` and independent `11/11` pass after a
-full five-perspective correction panel. Caches, graph, full pipeline,
-committed-delta evidence, push, and PR are still required at this revision.
+full five-perspective correction panel. Fresh caches, graph/manifest, the full
+fixed-point pipeline on `1db25f30bc`, strict lint, and the seeded committed-
+delta replay all pass; the latter reports `forensic_evidence_ready=true` and
+discovers the independent helper.
 
 No block has an audit verdict, retention, obligation retirement, or TOE-score
 movement. The frozen percentages remain 95/92/50 for operational

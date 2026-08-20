@@ -1,16 +1,19 @@
 # Claim Status Certificate
 
-Campaign state: Blocks 1--4 are proposed in PRs #7020, #7022, #7023, and
-#7027. Block 5 is locally science-complete on the branch
+Campaign state: Blocks 1--5 are proposed in PRs #7020, #7022, #7023, #7027,
+and #7030. Block 5 is delivered on the branch
 `physics-loop/toe-shared-event-record-support-block5-20260820`, stacked on the
 delivered Block-4 head `22d667ceeb`. No campaign block is audited or retained.
 
 Current Block-5 artifact status: primary `15/15` and independent `11/11` pass
 after a five-perspective panel required material corrections to the process,
 covariance, seed, and instrument-completion rhetoric. Syntax and vocabulary
-checks pass. Caches, citation graph, full pipeline, committed-delta evidence,
-push, and PR remain delivery work at this certificate revision. Delivery
-checks confer no audit verdict or retention.
+checks pass; both caches are fresh; the citation graph/manifest is current;
+the full fixed-point pipeline passes on science commit `1db25f30bc`; strict
+audit lint has zero errors; and the seeded committed-delta replay reports
+`forensic_evidence_ready=true` with zero failures/control failures and the
+independent helper discovered. PR #7030 is open and verified against the
+Block-4 branch. Delivery checks confer no audit verdict or retention.
 
 Proposed Block-5 theorem: three supplied total nearest-neighbour law-level
 Record extensions form a matched triangle on the exact Block-4 common-front

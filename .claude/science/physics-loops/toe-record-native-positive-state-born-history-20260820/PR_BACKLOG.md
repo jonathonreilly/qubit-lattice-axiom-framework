@@ -93,18 +93,17 @@ strict audit lint has zero errors, and the committed-delta gate reports
 failures. PR #7027 is verified against the Block-3 branch. No review-loop is
 used.
 
-## Block 5 — Science Complete, Delivery Pending
+## Block 5 — Proposal Delivered
 
 Branch:
 `physics-loop/toe-shared-event-record-support-block5-20260820`, stacked on the
 delivered Block-4 head
 `22d667ceebde2bb3f59145da017ba979d6b54315`.
 
-Planned title:
+Opened PR:
 
-```text
-[physics-loop] shared-event support and formation selection triangle — bounded_theorem — bounded-support
-```
+- [#7030 — shared-event support and formation selection triangle — bounded
+  theorem — bounded support](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7030)
 
 Current direct validation: primary `PASS=15 FAIL=0`, independent
 `PASS=11 FAIL=0`, Python compilation and vocabulary checks pass, and the full
@@ -118,7 +117,9 @@ effect-label rail.
 
 The N1--N8 packet passes only for narrow endpoint-support non-entailment and
 extensional-formation nonuniqueness. Universal no-go and axiom necessity are
-`FAIL / DO NOT SHIP`. TOE score movement is zero. Fresh caches, graph/manifest,
-full committed-tree pipeline, strict lint, committed-delta evidence, commit,
-push, PR opening, and remote verification remain pending at this revision. No
-review-loop will be used.
+`FAIL / DO NOT SHIP`. TOE score movement is zero. Science commit
+`1db25f30bc` is pushed; both caches are fresh; the graph/manifest is current;
+the full fixed-point committed-tree pipeline and strict lint pass; and the
+seeded committed-delta replay reports `forensic_evidence_ready=true`, zero
+failures/control failures, and the independent helper. PR #7030 is verified
+against the Block-4 branch. No review-loop was used.

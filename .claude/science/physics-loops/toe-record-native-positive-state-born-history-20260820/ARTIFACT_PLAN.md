@@ -106,7 +106,7 @@ support membership, pointer-to-Record actualization, formation, a normalized
 finite menu kernel, Born values, or histories. It therefore retires no
 obligation and moves no TOE percentage.
 
-## Support And Formation Selection Triangle — Block 5 Science Complete
+## Support And Formation Selection Triangle — Block 5 Proposal Delivered
 
 The original support-faithful connector hit its four-hour kill gate. Three
 materially different routes were reconstructed: direct atomic append supplies
@@ -140,6 +140,11 @@ Block-4 spatial slot action only, and the eager gate plus
 `kappa(I-E0,1)` content. This is a framework-compatible semantic extension,
 not a physical instrument completion. Zero obligation retirement and zero TOE
 movement.
+
+Delivered in PR #7030 after fresh input-bound caches, the full fixed-point
+pipeline on science commit `1db25f30bc`, strict lint with zero errors, and a
+seeded committed-delta replay reporting `forensic_evidence_ready=true` with
+the independent helper discovered. No review-loop was used.
 
 ## Integrated Instrument-To-Record State Lift — Block 6 Selected
 

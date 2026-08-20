@@ -661,3 +661,21 @@ hours, whichever occurs first. Convene the full five roles at a terminal
 connector result, shared obstruction, portfolio midpoint, or final campaign
 synthesis. Do not spend another block on static support pairs, finite formation
 fixtures, or standalone preparation affinity.
+
+## Block-5 Delivery Checkpoint
+
+- Science commit `1db25f30bc` was created only after primary `15/15`,
+  independent `11/11`, fresh input-bound caches with the required N5 lines,
+  vocabulary checks, graph/link invariants, premise cleanliness, and strict
+  audit lint with zero errors passed.
+- The full fixed-point repository pipeline passed from a disposable detached
+  worktree at that exact commit. Generated audit state was discarded; no
+  verdict surface was imported into the proposal branch.
+- A separate seeded committed-delta replay discovered the note, primary,
+  registered independent helper, and transitive helper surface and reported
+  `forensic_evidence_ready=true` with zero failures or control failures.
+- The exact branch was pushed and
+  [PR #7030](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7030)
+  opened against the Block-4 branch with merge state clean. Review-loop was not
+  invoked. This is delivery evidence only: obligation retirement and TOE
+  movement remain zero.

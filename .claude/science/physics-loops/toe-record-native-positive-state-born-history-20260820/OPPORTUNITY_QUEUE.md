@@ -1,22 +1,22 @@
 # Opportunity Queue
 
-Ranking after the post-Block-3 five-perspective panel, exact context-delay
-factorization, individual binary-stage carrier checks, and current PR refresh.
+Ranking after the corrected Block-5 total-kernel triangle and terminal
+five-perspective panel. Gravity remains externally owned.
 
 | Rank | Target | Positive probability | Missing imports | Verification surface | Landability | Blast radius | Independence | Disposition |
 |---:|---|---:|---:|---:|---:|---:|---:|---|
-| 1 | causal shared-event to Record-support connector on the exact common front | 3 | 2 | 3 | 2 | 3 | 3 | **selected Block 5; derive physical event typing and endpoint support, not broad actualization** |
-| 2 | total nearest-neighbour support/formation-law tournament on the exact front | 2 | 3 | 3 | 2 | 3 | 3 | pivot if materially distinct atomic, formation/readout, and pointer-adapter routes hit the same wall |
-| 3 | forcing-basis/staged-tree effect functionality | 3 | 2 | 3 | 2 | 3 | 3 | next only after a pair-specific positive registered-event connector |
-| 4 | effect-complete physical tag screening and operational preparation class | 3 | 2 | 3 | 2 | 3 | 3 | preparation priority after event support; do not equate operational class with literal M2 content |
+| 1 | integrated covariant instrument-to-Record state lift on the exact Block-4 front | 3 | 3 | 3 | 2 | 3 | 3 | **selected Block 6; consume the coherent branch, derive support, preserve staged continuation, keep formation separate** |
+| 2 | effect-complete physical preparation identification and affinity inside the connected law | 3 | 3 | 3 | 2 | 3 | 3 | numerical selector after state-lift support exists; not a standalone substitute |
+| 3 | forcing-basis/staged-tree effect functionality | 3 | 2 | 3 | 2 | 3 | 3 | extend only after a pair-specific physical Record connector |
+| 4 | typed effect-label/branch-operator rail bridge | 3 | 2 | 3 | 3 | 3 | 3 | immediate Block-6 sublemma: never identify `kappa(I-E0,1)` with `kappa(B rho B^dagger,1)` |
 | 5 | flat/staged physical refinement or operational-equivalence theorem | 2 | 2 | 3 | 2 | 3 | 3 | required only to transfer equality back to old simultaneous ternary layouts |
-| 6 | unconditional formation/actuality and normalized history | 2 | 3 | 3 | 2 | 3 | 2 | independent wall; Cycle 508 shows actuality alone does not select Born |
-| 7 | generalize the common-front architecture to another shared effect, permutation, or refinement | 2 | 2 | 3 | 2 | 3 | 3 | extend only after the pair-specific registered-event theorem passes |
-| 8 | dependency-minimized Block-4 proposal and audit preparation | 3 | 1 | 3 | 3 | 2 | 3 | delivered in PR #7027; zero retention assumed |
-| 9 | operational-naturality axiom/law datum | 1 | 3 plus owner decision | 2 | 1 | 3 | 3 | watch only; no total hostile models, necessity, minimality, or retention |
-| 10 | gravity state and source handoff | 2 | current worker result | 2 | 2 | 2 | 1 | externally owned; do not duplicate while source/rate/lapse dictionary remains open |
-| 11 | another decoder partition, pointer, controlled copy, menu, M64 lift, Gaussian fallback, or static countermodel | 0 | 0 | 3 | 3 | 0 | 3 | retired as duplicate unless it proves endpoint support or lawful formation |
+| 6 | unconditional formation selection and normalized physical history | 2 | 3 | 3 | 2 | 3 | 2 | extensional kernel nonunique; pursue only with a real instrument/clock connector, not another supplied Markov law |
+| 7 | total nearest-neighbour support/formation-law tournament | 3 | 1 | 3 | 3 | 2 | 3 | completed Block 5 as law-level triangle; do not repeat |
+| 8 | dependency-minimized Block-5 proposal and independent audit preparation | 3 | 1 | 3 | 3 | 2 | 3 | current delivery work; zero retention assumed |
+| 9 | operational-naturality axiom/law datum | 1 | 3 plus owner decision | 2 | 1 | 3 | 3 | watch only; Block-5 raw Record laws are operationally distinguishable and cannot mature this datum |
+| 10 | gravity state and source handoff | 2 | current worker result | 2 | 2 | 2 | 1 | externally owned; do not duplicate while its live worker owns the seam |
+| 11 | another decoder, uncoupled pointer, finite formation fixture, Gaussian fallback, or static support pair | 0 | 0 | 3 | 3 | 0 | 3 | retired as duplicate after Block 5 unless it enters the integrated instrument transition |
 
-Queue refresh triggers: Block-4 two-hour kill review, its four-hour terminal
-return, a major connector/obstruction/pivot, a new retained result, campaign
-`T+12h`, or two hours before deadline.
+Queue refresh triggers: Block-6 first concrete return or `T+2h`, a major
+connector obstruction/pivot, a new retained result, campaign `T+12h`, or two
+hours before deadline.

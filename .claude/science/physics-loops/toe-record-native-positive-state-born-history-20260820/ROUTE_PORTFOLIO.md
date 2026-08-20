@@ -1,17 +1,18 @@
 # Route Portfolio
 
-Scores are qualitative from zero to three. Risk is subtractive. Five full
+Scores are qualitative from zero to three. Risk is subtractive. Six full
 five-perspective checkpoints have now been synthesized; the first rows carry
-the current post-Block-4 ranking.
+the corrected post-Block-5 ranking.
 
 | Route | Attack frame | Upgrade | Trace | Import retirement | Artifactability | Hard pressure | Risk | Current disposition |
 |---|---|---:|---:|---:|---:|---:|---:|---|
-| Causal shared-event to Record-support connector | derive one common content-only event algebra from the apparatus, bind `R0/RB`, and prove positive cell mass from endpoint support under the exact front law | 3 | 3 | 3 | 2 | 3 | -2 | **selected Block 5; narrow event/support theorem, not broad actualization** |
-| Total NN support/formation-law tournament | implement three materially distinct event-to-support/formation routes on the same apparatus and identify a shared wall only if all fail | 3 | 3 | 3 | 2 | 3 | -3 | pivot after Block-5 kill gate; prerequisite to any semantic axiom-pressure packet |
+| Integrated covariant instrument-to-Record state lift | consume exact coherent `{K0,B}`, derive support-faithful Record content, type unequal effect-label/branch-operator codes, and preserve delayed residual eligibility | 3 | 3 | 3 | 2 | 3 | -2 | **selected Block 6; strongest positive non-gravity route** |
+| Causal shared-event to Record-support connector | derive one common content-only event algebra from the apparatus, bind candidate codes, and prove positive cell mass from endpoint support under the exact front law | 3 | 3 | 3 | 2 | 3 | -2 | direct Block-5 routes narrowed; reopen only inside the integrated state lift |
+| Total NN support/formation-law tournament | total matched law extensions isolate support and extensional formation fields on the exact front | 2 | 3 | 3 | 3 | 2 | -2 | completed Block 5; primary 15/15, independent 11/11, zero retirement; do not repeat |
 | Common-front-stage physical context delay | compile common `{K0,B}` with a literally identical full stage-one neighbourhood and route context only after `B` | 3 | 3 | 2 | 3 | 3 | -1 | proposed in PR #7027; full conditional measure congruence, zero retirement |
 | Staged M64 composition | compose the common and residual binary lifts with exact recovery, bounded support, deletion controls, held size, and covariance | 2 | 3 | 1 | 3 | 2 | -1 | completed inside Block 4; do not repeat without event/support integration |
 | Shared-effect/preparation formula tournament | bind Cycle 317/321 `M_A/M_B` to physical candidate content and separate context/preparation congruences | 2 | 3 | 2 | 3 | 3 | -1 | completed bounded Block 3; formula-class result only, zero retirement |
-| Effect-complete operational preparation class | physically screen the fair tag across an effect-complete tester and identify the prepared state operationally | 3 | 3 | 3 | 2 | 3 | -2 | next after a positive event/support connector; literal direct-content equality remains separate |
+| Effect-complete operational preparation class | physically screen the fair tag across an effect-complete tester and identify the prepared state operationally | 3 | 3 | 3 | 2 | 3 | -2 | downstream of the integrated state lift; cannot supply support or pointer consumption alone |
 | Flat/staged refinement congruence | prove the staged realization and old simultaneous ternary implementation are operationally equivalent at the registered event | 2 | 3 | 2 | 2 | 3 | -2 | needed only for transfer to old layouts; pair-specific staged theorem can precede it |
 | Delayed-setting symmetry-forced midpoint tournament | classify `I/2`/`P_z` fixed-input exchanges and test X/Y/Z against the live cubic | 2 | 3 | 1 | 3 | 3 | -1 | completed bounded Block 2; route corrected, do not repeat |
 | Aligned-certainty microscopic action | derive the `P_z/Z` zero-support row and a true conserved bond current | 1 | 2 | 1 | 2 | 2 | -3 | demoted; cannot touch the oblique cubic or occurrence law |
@@ -21,7 +22,7 @@ the current post-Block-4 ranking.
 | Record-generated positive preparation without screening | extend the Block-94 controller theory so the law generates the state and trial corpus | 2 | 3 | 2 | 3 | 2 | -2 | demoted; Block 94/100 already construct most of it |
 | Global Record-history completion | condition normalized histories on explicit Record boundary and prove local Admissibility projection | 1 | 2 | 1 | 2 | 2 | -3 | held; Cycle 30 and later cylinders make generic work duplicate |
 | Causal-prestate clarification | type an unreadable quasi-local positive state distinct from readable Records | 2 | 3 | 2 | 2 | 2 | -3 | governance fallback after explicit discriminator only |
-| Preparation-affinity selector | exact same-kernel mixture protocol plus an effect-complete physical tag-screening quotient excludes normalized-square/non-affine response twins | 3 | 3 | 3 | 2 | 3 | -2 | Block 3 supplies `3/8` versus `9/20`; physical screening/registration remains open |
+| Preparation-affinity selector | exact same-kernel mixture protocol plus an effect-complete physical tag-screening quotient excludes normalized-square/non-affine response twins | 3 | 3 | 3 | 2 | 3 | -2 | later weight selector inside/after state lift; Block 3 supplies `3/8` versus `9/20` but no law coupling |
 | Existing-stack retention extraction | independently reconstruct the strongest positive candidate and minimize dependencies for audit | 2 | 3 | 1 | 3 | 1 | -1 | support route, not new science alone |
 | Strict-NN compiler continuation | compile controller, preparation, screening, and effect stages under one homogeneous local rule | 3 | 3 | 2 | 2 | 3 | -2 | use only for the selected context-routing object; global overlap remains downstream |
 | Gravity completion | continue Block 154 or its discriminator | 2 | 2 | 1 | 2 | 3 | -3 | occupied by another worker; source/rate/lapse dictionary remains downstream |
@@ -219,3 +220,45 @@ owned and downstream of its source/rate/lapse dictionary. Axiom clarification
 is premature while event/support and total-law routes remain live. Therefore
 the portfolio decision is robust across all five perspectives, not merely an
 incremental continuation of the last block.
+
+## Post-Block-5 Portfolio Recheck
+
+Block 5 met the authorized fallback contract but did not close the positive
+connector. Its corrected total models prove two narrow facts: the current
+premises do not entail candidate-code support, and they do not determine the
+extensional formation kernel. The full panel rejected stronger language and
+identified why `T_plus` cannot be promoted to the physical completion: it
+does not consume the coherent branch, its branch-operator code differs from
+the Block-4 effect-label continuation code, and its eager eligibility rule
+preempts the staged rail.
+
+This changes the investment ranking. Another decoder, pointer, support pair,
+or formation fixture is saturated. Preparation affinity is also premature as
+a standalone block: it can constrain weights only after operational
+preparations are tied to the same Admissibility/Record law, and it cannot
+derive support or actualization.
+
+The selected positive route is:
+
+```text
+coherent {K0,B} opportunity
+  -> local covariant consume/commit transition
+  -> support-faithful content-only Record
+  -> typed effect-label / positive-operator bridge
+  -> genuinely delayed s1 eligibility
+  -> exact J_A/J_B residual recovery.
+```
+
+The two-hour kill gate rejects dephasing-only, copy-only, relabeling, supplied
+branch picks, hidden live state, trace/Born weights, or changes to the
+Block-4 instrument. A successful bounded connector would materially improve
+the physical `M_2` bridge and become the first plausible campaign obligation-
+retirement candidate, subject to independent audit. If it fails on one exact
+type/interface condition, record that condition and test the strongest
+alternative mechanism before any owner-facing axiom decision.
+
+Generic histories remain lower leverage unless they derive this commitment or
+front reachability. Gravity remains globally important but locally unavailable
+because another worker owns it. The panel should recheck this ranking at the
+first Block-6 concrete return or two hours rather than letting the campaign
+drift into low-leverage elaboration.

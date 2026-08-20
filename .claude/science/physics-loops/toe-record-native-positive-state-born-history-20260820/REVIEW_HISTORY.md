@@ -587,3 +587,77 @@ synthesis. Narrow interim checks to the two most relevant adversarial seats.
   [PR #7027](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7027)
   opened against the Block-3 branch. Review-loop was not invoked. This is
   delivery evidence only: obligation retirement and TOE movement remain zero.
+
+## Science Block 5 — Matched Support/Formation Triangle
+
+Three connector routes were reconstructed before the negative boundary was
+written. Direct atomic append succeeds only after supplying the functional and
+atomic support. Cycle-176/179 formation/readout begins with already formed
+branch-valued witnesses. Cycle-339/823 supplies coherent opportunity or
+comparison but no contingent Record commitment. None is counted as a universal
+failure.
+
+The fallback matched triangle is total at the law level. `T_plus/T_bar` hold
+formation and conditional matrix barycenter fixed while support changes.
+`T_plus/T_form` hold the complete conditional content law, support, apparatus,
+and readout fixed while `q(eta_*)` changes. The exact front, 24-member spatial
+orbit, nonzero bump, full-support off-patch Gaussian, thick decoder and
+Voronoi control, combined blank/content kernel, finite cylinders, permanence,
+and analytic path extension are explicit. After correction, primary `15/15`
+and independent `11/11` pass.
+
+## Post-Block-5 Five-Perspective Panel — Complete
+
+### 1. Mathematical measure/process
+
+Accepted Gaussian normalization, Borel shell structure, invariant bump,
+matched barycenter, and exact front masses. It rejected “no formation kernel”
+as too strong: Record entails formation, while the pair proves only extensional
+kernel/value nonselection. It required the configuration space, combined
+no-form/content kernel, fresh conditional site/ordinal independence, countable
+product, and Ionescu--Tulcea extension. Those corrections are now in the note
+and runners.
+
+### 2. Covariance/locality
+
+The executable carries spatial neighbour slots through the 24 Block-4 proper-
+cubic frames; it does not co-transport contents under an internal Pauli/unitary
+action. The claim is now explicitly limited to the tested spatial action.
+Current-shell full-support compatibility for the preloaded apparatus is no
+longer called historical seed legality or one-site reachability.
+
+### 3. Quantum instrument typing
+
+The candidate codes contain unnormalized positive branch operators, not
+normalized branch states or already actual outcomes. `T_plus` places those
+matrices in a supplied law but never consumes the coherent Block-4 branch.
+Moreover, Block 4's continuation expects `kappa(I-E0,1)`, whereas Block 5 uses
+`kappa(B rho B^dagger,1)`, and the matrices are unequal.
+
+### 4. Record/operational semantics
+
+The generic occupied-neighbour gate makes `s1` eligible in the initial
+Block-4 apparatus, so the triangle does not preserve the staged continuation
+rail. It is a framework-compatible semantic law extension and exact
+nonselection witness, not an operational completion or contingent realized
+history.
+
+### 5. Governance/portfolio
+
+The initial governance seat correctly required the total three-model triangle,
+nonzero orbit neighbourhood, matched fields, finite cylinders, and no owner
+axiom datum. The terminal synthesis then reversed one ranking: preparation
+affinity is not the next standalone seam because it cannot place codes in
+support or consume the coherent pointer. The highest non-gravity positive
+route is an integrated covariant instrument-to-Record state lift; affinity is
+a later weight selector inside or after it.
+
+### Panel utility and cadence
+
+This panel had very high utility: it caught four substantive overclaims,
+strengthened the process construction, and redirected the next campaign. Run a
+two-seat mathematical/instrument check at the first Block-6 return or two
+hours, whichever occurs first. Convene the full five roles at a terminal
+connector result, shared obstruction, portfolio midpoint, or final campaign
+synthesis. Do not spend another block on static support pairs, finite formation
+fixtures, or standalone preparation affinity.

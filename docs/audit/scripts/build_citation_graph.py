@@ -151,6 +151,12 @@ HEADING_RE = re.compile(r"^#{1,6}\s+", re.MULTILINE)
 LINK_RE = re.compile(r"\[[^\]]*\]\(([^)\s#]+\.md)(?:#[^)]*)?\)")
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    # Independently rebuilds the common-front endpoint codes, thick decoder,
+    # 24-shell orbit bump, matched support/formation twins, seed legality, and
+    # finite-cylinder marginalization without importing the primary runner.
+    "shared_event_record_support_selection_triangle_bounded_theorem_note_2026-08-20": [
+        "scripts/shared_event_record_support_selection_triangle_independent_check_2026_08_20.py",
+    ],
     # Independently reconstructs the remote-context Record shells, symbolic
     # full-measure identity, formation countercontrol, staged Kraus recovery,
     # realized branch-state content, and held physical-code embeddings.

@@ -1,60 +1,64 @@
 # Claim Status Certificate
 
 Campaign state: Blocks 1--4 are proposed in PRs #7020, #7022, #7023, and
-#7027. Block 4 is stacked on the delivered Block-3 head `4cc40fb31d`. It is
-not audited or retained.
+#7027. Block 5 is locally science-complete on the branch
+`physics-loop/toe-shared-event-record-support-block5-20260820`, stacked on the
+delivered Block-4 head `22d667ceeb`. No campaign block is audited or retained.
 
-Current Block-4 artifact status: the bounded theorem note has a primary runner
-passing `15/15` and an independently implemented runner passing `11/11`.
-Syntax and vocabulary checks pass; both input-bound caches are fresh; the
-citation graph/manifest is current; the full committed-tree pipeline passes;
-strict audit lint has zero errors; and the committed-delta gate reports
-`forensic_evidence_ready=true` with the independent helper discovered. Science
-commit `741e9bf678` is pushed and PR #7027 is open. These delivery gates confer
-no audit verdict or retention.
+Current Block-5 artifact status: primary `15/15` and independent `11/11` pass
+after a five-perspective panel required material corrections to the process,
+covariance, seed, and instrument-completion rhetoric. Syntax and vocabulary
+checks pass. Caches, citation graph, full pipeline, committed-delta evidence,
+push, and PR remain delivery work at this certificate revision. Delivery
+checks confer no audit verdict or retention.
 
-Proposed Block-4 theorem: worlds `A` and `B` differ only at a physical context
-Record `c=(1,1,0)`. Their complete six-neighbour condition at the front target
-`s0=(0,0,0)` is literally identical, while `c` is adjacent to continuation
-target `s1=(1,0,0)`. Because the current Admissibility rule is one
-single-valued nearest-neighbour map to a full `M_2(C)` probability measure,
-conditional on formation at `s0` the two worlds have the same complete local
-measure. Every already-fixed common Borel event therefore has equal
-conditional mass in the two worlds. No numerical probability, Born rule,
-covariance premise, sampler, or coupling is used.
+Proposed Block-5 theorem: three supplied total nearest-neighbour law-level
+Record extensions form a matched triangle on the exact Block-4 common-front
+shell and a nonzero Hilbert--Schmidt neighbourhood of its 24-member spatial
+orbit. `T_plus/T_bar` have the same conditional matrix barycenter and
+extensional formation kernel but candidate-code support versus one barycenter
+atom. `T_plus/T_form` have exactly the same conditional content law, support,
+apparatus, preloaded initial state, and content-only readout but
+`q(eta_*)=1` versus `1/2`.
 
-The supplied content-only rail makes only the complement-coded predecessor
-enable the named context-specific residual row. Permanence of the `E0`-coded
-predecessor blocks that row only; it does not prohibit every possible
-formation at `s1`. Eligibility, dependency order, and formation remain
-supplied. An exact countercontrol permits equal conditional content measures
-and unequal supplied formation probabilities, so no unconditional occurrence
-or frequency inference is licensed.
+The shell kernels are total, Borel, normalized, condition varying, translation
+covariant, and covariant under the tested Block-4 proper-cubic spatial slot
+action. A combined `{blank} disjoint-union M2(C)` coordinate kernel, supplied
+fresh conditional site independence, countable products, and
+Ionescu--Tulcea give a mathematical path measure across supplied ordinals.
+Exact-front `(blank,F0,FB)` masses, finite gate/content cylinders,
+marginalization, permanence, deletion controls, and `2^-n` survival pass.
 
-The matrix connector is separately exact. The coherent `{K0,B}` stage and
-context-specific `J_A/J_B` residuals compose to the original ternary programs
-on every input, and the composed programs retain the accepted bounded M64
-carrier at `L=3,6` with 24/24 carried frames. In a distinct realized mode,
-after a branch is separately supplied as actual, its unnormalized positive
-branch operator fits one `M_2(C)` Record and feeds the residual CP map exactly
-without interpreting trace as probability. The coherent pointer, effect-label
-rail, and realized branch-state Record are not identified with one another.
+The exact conclusions are narrow:
 
-The theorem does not derive a physically selected Borel event algebra,
-endpoint support membership, positive or atomic event mass,
-pointer-to-Record actualization, formation site/rate/order, a normalized
-finite menu kernel, universal effect functionality, preparation congruence,
-flat/staged transfer, histories, frequencies, or Born values.
+- endpoint-support faithfulness is not entailed by the four axioms plus the
+  Block-4 identical-front result; and
+- the extensional formation kernel, including `q(eta_*)`, is not determined by
+  the four axioms or by the complete conditional content measure.
 
-The five-perspective checkpoint agrees that the next highest-leverage block is
-support-faithful finite event registration on this exact front. A fixed thick
-two-cell decoder can be constructed without weights, but the present
-framework does not yet select it physically or prove both apparatus endpoint
-codes lie in the support of the local law. The common Dirac law
-`mu=delta_R0` is the decisive countercontrol: it preserves the Block-4 measure
-equality and an exhaustive two-cell decoder while giving the complement cell
-zero mass. Nonzero Kraus branches, operator positivity, and readiness are not
-support theorems.
+Record still entails that Records form. The second conclusion is
+nonuniqueness of the extensional process, not nonexistence. The landing N1--N8
+packet passes for these two narrow model-theoretic claims and explicitly fails
+universal no-go, failure-of-all-routes, axiom-necessity, minimality, and axiom-
+adoption rhetoric.
+
+Block 5 is not a physical completion of Block 4. `C0,CB` contain unnormalized
+positive branch operators, not normalized branch states or already actual
+outcomes. No map couples the coherent `{K0,B}` branch to the Record draw.
+Block 4's continuation rail reads `kappa(I-E0,1)`, which is unequal to
+`CB=kappa(B rho B^dagger,1)`. The generic occupied-neighbour gate also makes
+the continuation site eligible in the preloaded apparatus, so it does not
+preserve the staged residual process. The initial apparatus is supplied and
+only current-support compatible; its genesis or reachability is not derived.
+No internal `M_2` co-action, physical time, contingent realized history, Born
+value, preparation quotient, universal instrument, or gravity result follows.
+
+The terminal panel changed the next-route ranking. Preparation affinity alone
+cannot place a branch in support or consume a coherent pointer. The strongest
+non-gravity positive seam is now an integrated covariant instrument-to-Record
+state lift that preserves the Block-4 staged continuation and keeps formation
+separately typed. Preparation identification/affinity becomes a downstream
+weight-selection obligation inside or after that connector.
 
 Audit status: none.
 
@@ -72,9 +76,7 @@ TOE percentage movement: zero. The frozen lane map remains:
 | gravity / source / resources | 70% | 45% | 29% | 94% |
 | Born / probability / realized history | 84% | 63% | 34% | 99% |
 
-No axiom wording is justified. Block 4 reduces immediate axiom pressure: the
-current same-condition clause already yields full-measure equality once an
-event is fixed. Event typing, support, actualization, and formation are a
-mature dependency split, not evidence of necessity or minimality. Positive
-routes and total-law tests remain open, so event-registration impossibility
-and axiom necessity remain `FAIL / DO NOT SHIP`.
+No axiom wording is justified. Block 5 is significant axiom-issue isolation,
+not axiom pressure mature enough for an edit: the strongest integrated
+positive law route remains open, the triangle does not select a physical
+member, and independent audit/retention have not occurred.

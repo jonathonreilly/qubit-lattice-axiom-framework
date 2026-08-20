@@ -92,3 +92,33 @@ strict audit lint has zero errors, and the committed-delta gate reports
 `forensic_evidence_ready=true` with the independent helper and zero control
 failures. PR #7027 is verified against the Block-3 branch. No review-loop is
 used.
+
+## Block 5 — Science Complete, Delivery Pending
+
+Branch:
+`physics-loop/toe-shared-event-record-support-block5-20260820`, stacked on the
+delivered Block-4 head
+`22d667ceebde2bb3f59145da017ba979d6b54315`.
+
+Planned title:
+
+```text
+[physics-loop] shared-event support and formation selection triangle — bounded_theorem — bounded-support
+```
+
+Current direct validation: primary `PASS=15 FAIL=0`, independent
+`PASS=11 FAIL=0`, Python compilation and vocabulary checks pass, and the full
+five-perspective terminal panel is complete. The panel caused material science
+corrections: extensional formation nonuniqueness replaces formation-kernel
+nonexistence rhetoric; the standard-Borel transition/path construction is now
+explicit; covariance is limited to the executed spatial slot action; initial
+state compatibility is separated from genesis; and the artifact states that
+its eager gate and branch-operator code do not complete Block 4's staged
+effect-label rail.
+
+The N1--N8 packet passes only for narrow endpoint-support non-entailment and
+extensional-formation nonuniqueness. Universal no-go and axiom necessity are
+`FAIL / DO NOT SHIP`. TOE score movement is zero. Fresh caches, graph/manifest,
+full committed-tree pipeline, strict lint, committed-delta evidence, commit,
+push, PR opening, and remote verification remain pending at this revision. No
+review-loop will be used.

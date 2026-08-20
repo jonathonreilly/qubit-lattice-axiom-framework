@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/shared_event_record_support_selection_triangle_2026_08_20.py
+runner_sha256: b59ab30e8d15ffdc8aadbc7c65bbc416d2e67833bec0c3d1e6154a9f02fe1aac
+input_fingerprint_sha256: 9c8f8fee2f1246ff3d5c49af2d9ddee49bdfd66e95a7bfa7264f2fef5a80943a
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 2.74
+status: ok
+----- stdout -----
+PASS [sources-and-prior-art-boundary] current axioms, Block 4, and all three connector-route boundaries are source bound
+PASS [probability-independent-thick-event-algebra] {'cells': ('t(R)<1/2', 't(R)>=1/2'), 'endpoint_margins': (1/2, 1/2), 'weights_used_to_define_cells': 'none'}
+PASS [event-typing-nonuniqueness-control] two weight-free covariant decoders classify both endpoints correctly but disagree away from them
+PASS [exact-common-front-orbit] the 24-shell proper-cubic orbit is translation free and contains the exact A/B front once
+PASS [borel-nonzero-neighbourhood-patch] a finite-orbit Hilbert-Schmidt bump replaces a contrived singleton equality trigger
+PASS [total-condition-varying-kernels] each model assigns one normalized Borel measure to every shell and varies with the complete NN condition
+PASS [block4-spatial-proper-cubic-and-translation-covariance] the orbit patch, endpoint law, support twin, and local formation rule carry through all 24 Block-4 spatial slot frames; no internal M2 co-action is claimed
+PASS [matched-support-twin] {'same_barycenter': True, 'same_formation': True, 'T_plus_support': ('C0', 'CB'), 'T_bar_support': ('CBAR',)}
+PASS [matched-formation-twin] {'same_conditional_content_law': True, 'same_support_and_readout': True, 'first_ordinal_formation': (1, 1/2)}
+PASS [finite-cylinder-consistency] independent ordinal formation gates normalize and marginalize on every tested finite cylinder
+PASS [combined-transition-and-cross-ordinal-extension] the exact-front no-form/content cylinders normalize, and fresh q=1/2 gates give survival 2^-n; the full standard-Borel path kernel is analytic, not enumerated
+PASS [supplied-initial-state-current-support-compatibility] every preloaded apparatus Record has a present shell on the full-support Gaussian branch; no historical genesis or reachability is claimed
+PASS [load-bearing-deletion-context-and-weight-controls] deleting or leaking a shell input removes the exact patch, while changing the arbitrary atom weight changes the law without breaking its structural type
+PASS [narrow-nonselection-boundary] the matched triangle supports only two precise non-entailment statements; broad no-go and axiom pressure are rejected
+per_element: checked — unnormalized positive-operator codes, exact barycenter, t-coordinate decoder margins, and arbitrary non-Born weights
+per_site: checked — total shell descriptors, exact preloaded common front, off-patch variation, deletion exit, and one-site no-form/content masses
+per_mode: checked — support, barycenter, and extensional-formation twins are isolated pairwise with decoder and weight controls
+per_block: checked — nonzero orbit bump, 24 Block-4 spatial slot rotations, permanence, finite gate/content cylinders, and 2^-n survival
+lattice_wide: checked and not executed — standard-Borel product and Ionescu-Tulcea give the supplied-ordinal path law; physical time, instrument coupling, Born selection, and seed genesis remain open
+PASS [n5-certificate] all five resolution lines are substantive and source bound
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

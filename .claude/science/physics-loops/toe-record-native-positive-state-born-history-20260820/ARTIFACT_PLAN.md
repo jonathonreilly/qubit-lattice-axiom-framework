@@ -106,26 +106,63 @@ support membership, pointer-to-Record actualization, formation, a normalized
 finite menu kernel, Born values, or histories. It therefore retires no
 obligation and moves no TOE percentage.
 
-## Support-Faithful Event Registration — Block 5 Selected
+## Support And Formation Selection Triangle — Block 5 Science Complete
 
-Four-hour kill-gated scope:
+The original support-faithful connector hit its four-hour kill gate. Three
+materially different routes were reconstructed: direct atomic append supplies
+the functional/support law, Cycle-176/179 begins with already formed branch-
+valued witnesses, and Cycle-339/823 ends with a coherent opportunity or a
+comparison against separately supplied realized content.
 
-- derive a fixed, common, probability-independent, content-only Borel event
-  algebra from the exact common-front apparatus and endpoint codes;
-- bind `R_0`, `R_B`, and residual endpoints to disjoint exhaustive cells;
-- prove positive conditional mass from framework-derived support membership,
-  not from a supplied support map, atomic law, Kraus amplitude, trace weight,
-  sampler, or postselection;
-- integrate the registered cells through the residual continuation into a
-  normalized finite conditional menu kernel; and
-- retain content-only dependence, covariance, and context/deletion controls.
+The authorized fallback is now complete as a corrected law-level result:
 
-Kill by two hours if the result is only another declared partition, Voronoi
-decoder, or endpoint comparison without a support theorem. Kill by four hours
-if positivity requires supplying support, atomicity, actualization, formation,
-or numerical weights. A theorem of the form “positive provided both endpoints
-are supported” is a dependency reduction only; record it once and pivot to a
-total nearest-neighbour support/formation-law tournament.
+- one fixed probability-independent thick decoder and an independent Voronoi
+  control;
+- total Borel nearest-neighbour content kernels on every six-site shell;
+- a nonzero Hilbert--Schmidt bump around the 24-member Block-4 spatial orbit;
+- `T_plus/T_bar`, with identical conditional matrix barycenter and formation
+  but candidate-code support versus one barycenter atom;
+- `T_plus/T_form`, with exactly equal conditional content law/support/readout
+  but `q(eta_*)=1` versus `1/2`;
+- a combined `{blank} disjoint-union M2(C)` one-site kernel, countable spatial
+  product, and Ionescu--Tulcea path extension under supplied fresh conditional
+  independence;
+- exact-front `(blank,F0,FB)` masses, finite cylinder marginals, permanence,
+  deletion controls, and `2^-n` survival; and
+- a landing N1--N8 packet that passes only for narrow endpoint-support
+  non-entailment and extensional-formation nonuniqueness.
+
+Primary `15/15` and independent `11/11` pass. The panel required explicit
+scope corrections: the codes contain unnormalized positive branch operators,
+the initial apparatus is preloaded rather than reached, covariance is the
+Block-4 spatial slot action only, and the eager gate plus
+`kappa(SigmaB,1)` do not preserve Block 4's staged continuation rail or its
+`kappa(I-E0,1)` content. This is a framework-compatible semantic extension,
+not a physical instrument completion. Zero obligation retirement and zero TOE
+movement.
+
+## Integrated Instrument-To-Record State Lift — Block 6 Selected
+
+Next kill-gated positive contract:
+
+1. begin with the exact coherent Block-4 `{K0,B}` stage, not a supplied branch;
+2. construct a covariant local transition that consumes the branch opportunity
+   and locks one content-only Record supported by the same Admissibility law;
+3. type and connect the effect-label continuation code `kappa(I-E0,1)` and the
+   preparation-dependent positive-operator code `kappa(B rho B^dagger,1)`
+   without identifying unequal matrices;
+4. keep `s1` ineligible until the correct complement Record exists and preserve
+   exact residual `J_A/J_B` recovery;
+5. make every nonzero compiled branch code support-faithful without inserting
+   trace/Born weights, a sampler, host flag, supplied actual member, or hidden
+   live state; and
+6. keep formation-site/probability/time semantics separately conditional.
+
+Kill or narrow if the construction merely relabels the coherent pointer,
+dephases/copies it, stipulates the branch pick, changes the Block-4 instrument,
+or hides preparation data outside Records. Preparation identification/affinity
+is a later weight-selector inside or after this connector, not the next
+standalone block.
 
 ## Negative Or Axiom-Decision Block
 

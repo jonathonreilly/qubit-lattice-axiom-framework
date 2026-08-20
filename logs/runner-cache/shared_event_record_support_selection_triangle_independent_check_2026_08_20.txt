@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/shared_event_record_support_selection_triangle_independent_check_2026_08_20.py
+runner_sha256: c17ccec1eb351b76565c2b53fed792cdb3842b207046ab5b7ea8a8e6821c0546
+input_fingerprint_sha256: 72270470ccebc1a48697762060921c9218e1109d342f3e875e691664c2f69a80
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 1.31
+status: ok
+----- stdout -----
+PASS [independent-source-packet] the exact local-support and formation boundaries are independently source bound
+PASS [independent-event-algebra] the thick trace cells are exhaustive and endpoint-correct but not uniquely selected by endpoint data
+PASS [independent-common-front-orbit] the exact common shell independently generates one 24-member proper-cubic orbit
+PASS [independent-bump-and-deletion] the patch has nonzero content width and every occupancy deletion exits it
+PASS [independent-total-kernel-descriptors] independently reconstructed exact and off-patch descriptors, condition-varying Gaussian centers, normalization, and the matched barycenter
+PASS [independent-support-twin] same exact matrix barycenter and formation coexist with endpoint support versus one barycenter atom
+PASS [independent-formation-twin-and-cylinders] identical conditional content laws admit distinct normalized formation cylinders; ordinal is not time
+PASS [independent-combined-transition-and-survival] the independently rebuilt blank/F0/FB kernels normalize and fresh ordinal gates give survival 2^-n
+PASS [independent-supplied-initial-state-compatibility] all preloaded apparatus sites have present shells on the full-support branch; historical genesis is not inferred
+PASS [independent-claim-boundary] only narrow support and formation non-entailment survive the no-go boundary
+per_element: checked — independently rebuilt the positive-operator codes, exact barycenter, t-coordinate margins, and decoder disagreement
+per_site: checked — independently reconstructed exact and off-patch total descriptors, Gaussian normalization, orbit bump, and deletion exit
+per_mode: checked — independently matched support, barycenter, and extensional-formation twins without importing the primary runner
+per_block: checked — independently normalized gate and content cylinders, projective marginals, 2^-n survival, and current-support compatibility
+lattice_wide: checked and not executed — standard-Borel path extension is analytic; physical time, instrument-to-Record coupling, Born selection, and seed genesis remain open
+PASS [independent-resolution-certificate] all five independent resolution lines are source bound
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

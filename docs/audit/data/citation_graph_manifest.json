@@ -1,6 +1,6 @@
 {
  "edge_count": 16109,
- "node_count": 5586,
+ "node_count": 5587,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -545,6 +545,10 @@
   "admissibility_dirac_kahler_positive_dressed_reflection_bounded_theorem_note_2026-08-15": {
    "deps_hash": "e380eb905745",
    "out_degree": 5
+  },
+  "admissibility_dirac_kahler_quotient_gate_bounded_theorem_note_2026-08-20": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_dirac_kahler_quotient_observable_obstruction_bounded_theorem_note_2026-08-16": {
    "deps_hash": "36a014d4d7f1",

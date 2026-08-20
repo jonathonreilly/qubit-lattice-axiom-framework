@@ -1,0 +1,70 @@
+===== runner cache v1 =====
+runner: scripts/cost2_max4_out_face_samek_k18_b54_2026_08_15.py
+runner_sha256: 47e0f0a85627c9124923b96f5c2149c48bdf2b6ee89a2ad2acfd3b77ff391b9c
+input_fingerprint_sha256: 7278544856fb10cb0aeae4a3c33cb7c02e7e8f395e9cdb1d8c57e4cef551d6b0
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.80
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/COST2_MAX4_OUT_FACE_SAMEK_K18_B54_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+claim_scope: Same-k reverse at k=18 under the named cost-2 max≥4 out-face hop-cost on B_54(0) is reported. Displayed, not adopted.
+PASS: audit-input-paths declared inputs are the source note and the current axiom memo
+PASS: audit-input-literal AUDIT_INPUT_PATHS is a static string-literal tuple
+PASS: claim-scope note claim_scope matches the displayed scoring statement
+PASS: displayed-not-adopted the rule is displayed, not adopted
+PASS: not-in-admissibility c2d4 is not written into Admissibility
+PASS: not-attach-l1 the displayed rule is not attached to L1
+PASS: uniqueness-not-claimed uniqueness among hop-costs is not claimed
+PASS: no-axiom-edit note records hypothetical axiom status no edit
+PASS: forbidden-absent forbidden phrases are absent from the source note
+PASS: cache-false the note records cache_write false
+n_sites 215929
+t(18,0,0) 34
+t(18,18,18) 58
+t(1,0,0) 3
+t(1,1,1) 5
+t(14,0,0) 30
+t(14,14,14) 46
+t(15,0,0) 31
+t(15,15,15) 49
+t(16,0,0) 32
+t(16,16,16) 52
+t(17,0,0) 33
+t(17,17,17) 55
+t(18,0,0)^2/324 1156/324
+t(18,18,18)^2/972 3364/972
+3 t(18,0,0)^2 3468
+t(18,18,18)^2 3364
+reverse True
+t(54,0,0) 75
+t(51,0,0) 67
+t(3,2,0) 9
+t(4,2,0) 10
+t(5,2,0) 12
+dijkstra_calls 1
+PASS: theorem-1 t(18,0,0)=34 and t(18,18,18)=58 match named witnesses
+PASS: reverse-k18 t(18,0,0)^2 / 324 > t(18,18,18)^2 / 972 holds
+PASS: one-dijkstra exactly one Dijkstra ran
+PASS: ball-b54 B_54(0) has 215929 sites and 215928 nonzero sites
+PASS: reachable every site of B_54(0) is reached
+PASS: note-records-times note records the two computed arrivals
+PASS: note-records-reverse-product note records the integer reverse comparison
+PASS: skips-early-out-face c2d4 skips (3,2,0)->(4,2,0); that hop is cost 1
+PASS: fires-max4-out-face-at-2 c2d4 fires (4,2,0)->(5,2,0) at cost 2
+PASS: unit-out-face-by-mu unit-out-face (1,1,0)->(2,1,0) is already ρ3=3 by corridor-slide
+PASS: not-leftover-of-rho3 max≥4 out-face is c2d4=2 and ρ3=1
+PASS: not-leftover-of-d4 d4 prices max≥4 out-face at 3 while c2d4 prices it at 2
+PASS: not-leftover-of-b51 (18,18,18) lies outside B_51(0) and the note says so
+PASS: k14-restored the same Dijkstra restores t(14,0,0)=30 versus t(14,14,14)=46
+PASS: k17-kept the same Dijkstra keeps t(17,0,0)=33 versus t(17,17,17)=55
+PASS: witness-arrivals named axis and body walks realize the computed arrivals
+PASS: seed-and-axis-clauses seed-exit and both-weights-1 cost 3; support increase costs 1
+PASS: axiom-untouched the axiom memo is an input only and still names the four axioms
+TOTAL: PASS=28 FAIL=0
+
+----- stderr -----
+

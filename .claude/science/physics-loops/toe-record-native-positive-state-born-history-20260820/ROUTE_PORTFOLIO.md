@@ -1,12 +1,12 @@
 # Route Portfolio
 
-Scores are qualitative from zero to three. Risk is subtractive. Six full
+Scores are qualitative from zero to three. Risk is subtractive. Seven full
 five-perspective checkpoints have now been synthesized; the first rows carry
 the corrected post-Block-5 ranking.
 
 | Route | Attack frame | Upgrade | Trace | Import retirement | Artifactability | Hard pressure | Risk | Current disposition |
 |---|---|---:|---:|---:|---:|---:|---:|---|
-| Integrated covariant instrument-to-Record state lift | consume exact coherent `{K0,B}`, derive support-faithful Record content, type unequal effect-label/branch-operator codes, and preserve delayed residual eligibility | 3 | 3 | 3 | 2 | 3 | -2 | **selected Block 6; strongest positive non-gravity route** |
+| Integrated covariant instrument-to-Record state lift | typed state/rail compiler, exact guarded support, trace/free total laws, sectorwise cq uniqueness, affine definite-sector classifier | 3 | 3 | 3 | 3 | 3 | -1 | **Block 6 corrected return: 17/17 + 13/13; exact cq ensemble identity, formation, and actual member remain** |
 | Causal shared-event to Record-support connector | derive one common content-only event algebra from the apparatus, bind candidate codes, and prove positive cell mass from endpoint support under the exact front law | 3 | 3 | 3 | 2 | 3 | -2 | direct Block-5 routes narrowed; reopen only inside the integrated state lift |
 | Total NN support/formation-law tournament | total matched law extensions isolate support and extensional formation fields on the exact front | 2 | 3 | 3 | 3 | 2 | -2 | completed Block 5; primary 15/15, independent 11/11, zero retirement; do not repeat |
 | Common-front-stage physical context delay | compile common `{K0,B}` with a literally identical full stage-one neighbourhood and route context only after `B` | 3 | 3 | 2 | 3 | 3 | -1 | proposed in PR #7027; full conditional measure congruence, zero retirement |
@@ -22,7 +22,8 @@ the corrected post-Block-5 ranking.
 | Record-generated positive preparation without screening | extend the Block-94 controller theory so the law generates the state and trial corpus | 2 | 3 | 2 | 3 | 2 | -2 | demoted; Block 94/100 already construct most of it |
 | Global Record-history completion | condition normalized histories on explicit Record boundary and prove local Admissibility projection | 1 | 2 | 1 | 2 | 2 | -3 | held; Cycle 30 and later cylinders make generic work duplicate |
 | Causal-prestate clarification | type an unreadable quasi-local positive state distinct from readable Records | 2 | 3 | 2 | 2 | 2 | -3 | governance fallback after explicit discriminator only |
-| Preparation-affinity selector | exact same-kernel mixture protocol plus an effect-complete physical tag-screening quotient excludes normalized-square/non-affine response twins | 3 | 3 | 3 | 2 | 3 | -2 | later weight selector inside/after state lift; Block 3 supplies `3/8` versus `9/20` but no law coupling |
+| Canonical cq-to-Record ensemble identity | label-retaining instrument channel plus physical preparation/menu randomization and effect-complete operational quotient | 3 | 3 | 3 | 2 | 3 | -2 | **selected Block 7 co-equal route; derive ensemble equality, with affinity as a tool, then sector traces fix weights** |
+| Fresh-ancilla repeated-interaction formation | local open-system interaction, explicit unraveling, and append-only Record memory | 3 | 3 | 3 | 1 | 3 | -3 | **selected Block 7 co-equal route; distinguish trajectory, per-path record, observed member, seed, and time** |
 | Existing-stack retention extraction | independently reconstruct the strongest positive candidate and minimize dependencies for audit | 2 | 3 | 1 | 3 | 1 | -1 | support route, not new science alone |
 | Strict-NN compiler continuation | compile controller, preparation, screening, and effect stages under one homogeneous local rule | 3 | 3 | 2 | 2 | 3 | -2 | use only for the selected context-routing object; global overlap remains downstream |
 | Gravity completion | continue Block 154 or its discriminator | 2 | 2 | 1 | 2 | 3 | -3 | occupied by another worker; source/rate/lapse dictionary remains downstream |
@@ -262,3 +263,35 @@ front reachability. Gravity remains globally important but locally unavailable
 because another worker owns it. The panel should recheck this ranking at the
 first Block-6 concrete return or two hours rather than letting the campaign
 drift into low-leverage elaboration.
+
+## Post-Block-6 Portfolio Recheck
+
+Block 6 removes the two concrete defects that kept the exact staged instrument
+and the total Record law apart. The state payload and effect rail are now
+distinct projections of one typed code, and an exhaustive frontier census
+prevents the continuation from firing before `CB` exists. Every exact terminal
+branch operator is supported, permanent, and reachable along the declared
+finite law. The trace specialization exactly matches both ternary Kraus
+histories; the free-weight specialization has identical support and geometry
+but does not.
+
+The mathematical and instrument seats independently agree on the remaining
+boundary. Coherent copy, environment export, and dephasing produce correlated
+or classical-quantum ensemble states. A deterministic affine writer that is
+pointwise confined to one of two orthogonal Record sectors must choose a
+constant sector. This is a narrow classifier, not a universal no-go, because
+stochastic and nonlinear formation laws remain live and a fixed reset channel
+is an explicit countercontrol.
+
+Another pointer, decoder, support model, stage compiler, or weight tournament
+is now duplicate work. The highest-leverage non-gravity ensemble route is
+physical equality of the canonical label-retaining cq instrument and Record
+ensembles on a rich preparation/menu domain. Preparation affinity helps but
+does not identify the effect: normalized wrong-effect affine laws survive. A
+bare assertion of linearity, trace probability, or ensemble equality fails the
+route gate.
+
+Fresh-ancilla repeated-interaction formation is co-equal because even an exact
+ensemble theorem does not name the observed member, reach the apparatus from a
+small seed, or calibrate physical time. Split those obligations. No axiom edit
+is mature while both downstream routes remain open.

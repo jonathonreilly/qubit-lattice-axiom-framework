@@ -146,28 +146,58 @@ pipeline on science commit `1db25f30bc`, strict lint with zero errors, and a
 seeded committed-delta replay reporting `forensic_evidence_ready=true` with
 the independent helper discovered. No review-loop was used.
 
-## Integrated Instrument-To-Record State Lift — Block 6 Selected
+## Integrated Instrument-To-Record State Lift — Block 6 Local Return Complete
 
-Next kill-gated positive contract:
+Delivered locally pending repository gates:
 
-1. begin with the exact coherent Block-4 `{K0,B}` stage, not a supplied branch;
-2. construct a covariant local transition that consumes the branch opportunity
-   and locks one content-only Record supported by the same Admissibility law;
-3. type and connect the effect-label continuation code `kappa(I-E0,1)` and the
-   preparation-dependent positive-operator code `kappa(B rho B^dagger,1)`
-   without identifying unequal matrices;
-4. keep `s1` ineligible until the correct complement Record exists and preserve
-   exact residual `J_A/J_B` recovery;
-5. make every nonzero compiled branch code support-faithful without inserting
-   trace/Born weights, a sampler, host flag, supplied actual member, or hidden
-   live state; and
-6. keep formation-site/probability/time semantics separately conditional.
+- exact typed projections separating the branch-state payload from the
+  apparatus-relative effect-rail role without equating unequal codes;
+- hostile anti-Hermitian slack and bare effect-rail rejection;
+- exhaustive finite frontier census proving no eager `s1` formation;
+- exact positive terminal branch operators and residual CP recovery;
+- three disjoint 24-shell exact typed orbit guards, an exhaustive 24-of-144
+  support census per stage, near-spoof rejection, and a total Borel permanent
+  Record law with condition-varying Gaussian fallback off the guards;
+- a trace-matched specialization whose A/B terminal histories equal the
+  supplied ternary instrument traces exactly;
+- a sectorwise cq ensemble-consistency lemma proving that the trace ratios are
+  unique once the canonical cq and Record ensembles are physically equal;
+- a support-identical free-weight specialization proving that support and
+  staged composition alone do not select that physical ensemble equality; and
+- a scoped affine definite-sector theorem, with fixed reset, stochastic,
+  nonlinear, and branch-relative counterroutes preserved by N1--N8.
 
-Kill or narrow if the construction merely relabels the coherent pointer,
-dephases/copies it, stipulates the branch pick, changes the Block-4 instrument,
-or hides preparation data outside Records. Preparation identification/affinity
-is a later weight-selector inside or after this connector, not the next
-standalone block.
+Primary `17/17` and independent `13/13` pass. The block is a conditional
+positive completion because cq-instrument/Record-ensemble equality, the
+formation kernel, preparation, apparatus, discrete step order, and conditional
+independence remain inputs.
+It is not a pointwise actualization theorem or a Born derivation from the
+axioms. Zero obligation retirement and zero TOE movement.
+
+## Ensemble Identity And Formation — Block 7 Co-Equal Routes Selected
+
+Next kill-gated contract:
+
+1. use the functioning Block-6 typed compiler and exact A/B programs;
+2. compare the canonical state-retaining cq channel
+   `Gamma(rho)=direct_sum_j K_j rho K_j^dagger` with the typed Record ensemble;
+3. construct a physical randomized-preparation protocol whose permanent
+   Record quotient screens randomizer and label history;
+4. derive effect-complete operational equivalence and ensemble equality on a
+   sufficiently rich preparation/menu domain; use affinity only as a tool;
+5. invoke the Block-6 sector lemma to fix weights and exclude free and
+   wrong-effect affine laws without assuming trace/Born;
+6. independently construct a fresh-ancilla repeated-interaction trajectory
+   writer with append-only Record memory; and
+7. keep ensemble identity, formation, seed reachability, observed member, and
+   physical time as separately checked obligations.
+
+Kill or narrow if ensemble equality/effect identity is inserted, only one
+preparation/menu is tested, trace/Born weights define the randomization, the
+randomizer remains an unrecorded live state, or the result is detached from
+the local Record law. Kill the formation route if it renames a cq mixture or
+supplies a sampler/outcome token. Another pointer, weight table, decoder, or
+arbitrary static kernel is duplicate work.
 
 ## Negative Or Axiom-Decision Block
 

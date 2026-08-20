@@ -151,6 +151,12 @@ HEADING_RE = re.compile(r"^#{1,6}\s+", re.MULTILINE)
 LINK_RE = re.compile(r"\[[^\]]*\]\(([^)\s#]+\.md)(?:#[^)]*)?\)")
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    # Independently rebuilds the typed state/rail projections, delayed
+    # frontier census, positive branch tree, three cubic shell orbits,
+    # trace/free history laws, and affine definite-sector boundary.
+    "instrument_port_typed_record_compiler_conditional_completion_bounded_theorem_note_2026-08-20": [
+        "scripts/instrument_port_typed_record_compiler_conditional_completion_independent_check_2026_08_20.py",
+    ],
     # Independently rebuilds the common-front endpoint codes, thick decoder,
     # 24-shell orbit bump, matched support/formation twins, seed legality, and
     # finite-cylinder marginalization without importing the primary runner.

@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/instrument_port_typed_record_compiler_conditional_completion_2026_08_20.py
+runner_sha256: 459dcb873a9ca3b993b0168608e4a06adb1eeca74213ef15e6d6afac73015788
+input_fingerprint_sha256: af6612db4f90a7a54692cf8151e8ec108e2f2b1872087a794fe54379cb20e6c8
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 16.59
+status: ok
+----- stdout -----
+PASS [sources-and-type-boundary] current axioms, exact upstream seam, locked-output normal form, and Record typing firewall are bound
+PASS [typed-state-and-rail-projections] {'state_projection_CB': 'SigmaB', 'rail_projection_CB': 'kappa(I-E0,1)', 'literal_code_equality': False}
+PASS [antihermitian-slack-and-effect-code-controls] a traceless anti-Hermitian spoof and the bare effect rail cannot masquerade as the realized complement-state port
+PASS [exact-delayed-staged-record-histories] only s0 is initially active; C0 and the bare RB seal the rail; only CB opens the context-specific s1 port; terminal codes append permanently
+PASS [exact-positive-branch-operator-tree] all six code states are exact nonzero positive operators, with the expected rank profile, and the staged trace masses normalize in both contexts
+PASS [exact-residual-cp-state-sufficiency] the Hermitian projection of CB is sufficient for each exact residual CP update and reproduces every declared terminal code state
+PASS [locked-output-front-writer-normal-form] the supplied effect bounds and Choi matrices prove CP locked selective outputs; their nonselective sum is trace preserving because E0+EB=I
+PASS [locked-output-code-calibration-interface] a supplied fixed-preparation calibration can map the two locked labels to typed codes without treating those non-Hermitian codes as density matrices
+PASS [disjoint-three-stage-orbit-guards] {'minimum_squared_orbit_separation': 3, 'patch_squared_radius': 1/64}
+PASS [total-borel-condition-varying-kernel] the exact typed gate leaves exactly 24 of 144 typed orientations per stage, rejects typed-near and untyped continuation spoofs, and leaves a total Borel content kernel with condition-varying full-support fallback
+PASS [translation-and-proper-cubic-slot-covariance] all three stage laws carry through the 24 proper-cubic relative-slot frames; translation is automatic and no internal M2 co-action is claimed
+PASS [trace-matched-finite-record-history] the supplied trace-matched Record path law exactly equals the supplied flat ternary instrument weights in both delayed contexts
+PASS [support-identical-free-weight-control] {'same_support_and_stage_topology': True, 'trace_matching_selected_by_current_axioms': False}
+PASS [formation-permanence-and-no-preemption] the exact path forms only at the typed active target, never enables s1 early, and never overwrites a prior Record
+PASS [sectorwise-cq-ensemble-consistency-uniqueness] conditional on the exact cq nonselective state, normalized conditional branch states, and ensemble consistency, orthogonal-sector projections uniquely force every displayed trace weight; the free law fails that extra premise
+PASS [narrow-conditional-completion-boundary] the note ships the exact conditional construction and isolates its supplied law equality without turning it into retained closure or a broad no-go
+per_element: checked — exact positive branch operators, typed Hermitian state projection, apparatus-relative rail projection, anti-Hermitian spoof rejection, and non-Hermitian-code firewall
+per_site: checked — unique initial front, delayed complement continuation, effect-rail rejection, permanent append, total shell kernel, and condition-varying Gaussian fallback
+per_mode: checked — coherent Kraus possibility, locked-output label register, typed Record-code calibration, trace-matched law, and support-identical free-weight law remain distinct
+per_block: checked — exact two-stage CP composition, three disjoint 24-shell orbit guards, proper-cubic slot covariance, typed-near/preemption controls, and normalized terminal histories
+lattice_wide: checked and not executed — local Borel kernels admit the supplied discrete-step product/path extension; physical time, seed genesis, state-affinity authority, and contingent actualization remain open
+PASS [n5-certificate] all five substantive resolution lines are present in primary stdout and the theorem note
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/instrument_port_typed_record_compiler_conditional_completion_independent_check_2026_08_20.py
+runner_sha256: e7b034aba31abdb1372eea5e504a94642cf1148c8fbc8501891190c80069f9b8
+input_fingerprint_sha256: bd58a1791060cc8a2cba1ad583fdb106a845a7818bcc12d51cd5fb7bb8ff730f
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 13.54
+status: ok
+----- stdout -----
+PASS [independent-source-packet] independently bound the current axiom boundary and the two exact upstream defects
+PASS [independent-typed-projections] state, scalar label, anti-Hermitian slack, and exact two-code rail map were rebuilt without the primary runner
+PASS [independent-delayed-frontier-census] every frontier was enumerated: front only, complement continuation only, C0/RB sealed, and terminal
+PASS [independent-exact-positive-tree] exact positivity, ranks, and both terminal trace partitions were independently reconstructed
+PASS [independent-residual-recovery] {'maximum_residual': 1.4233496503318576e-16, 'primary_runner_imported': False}
+PASS [independent-disjoint-cubic-orbits] {'minimum_squared_separation': 3}
+PASS [independent-total-kernel-controls] normalization, condition variation, hostile near-shell rejection, and exact 24-of-144 guarded support at each of three stages were independently checked
+PASS [independent-trace-and-free-histories] the trace law exactly matches branch traces while a support-identical normalized weight law remains distinct
+PASS [independent-sectorwise-cq-ensemble-consistency] an independent block-diagonal reconstruction forces the trace weights at all three stages only when exact cq ensemble consistency is required
+PASS [independent-affine-definite-sector-boundary] affinity mixes two calibrated orthogonal outputs, and the exact pointer marginal is neither pointwise sector value; constant reset remains outside the branch-faithful target
+PASS [independent-locked-output-firewall] the auxiliary label writer is trace preserving while the labelled M2 code is not misidentified as a density matrix
+PASS [independent-narrow-claim-boundary] the positive construction and affine class boundary are scoped without universal or axiom-necessity rhetoric
+per_element: checked — independently rebuilt exact branch operators, state/label/slack projections, rail roles, positivity, and code/density separation
+per_site: checked — independently reconstructed the unique front, delayed continuation, terminal append, hostile code rejection, and total off-guard law
+per_mode: checked — independently separated coherent isometry, dephased ensemble, locked-output operations, trace-matched Record law, and free-weight control
+per_block: checked — independently verified exact history weights, CP residual recovery, three disjoint cubic orbits, covariance, and all frontier formation sites
+lattice_wide: checked and not executed — product/path existence is analytic under supplied independence; no physical clock, seed genesis, or pointwise actuality is inferred
+PASS [independent-n5-certificate] the independent five-resolution certificate is source bound
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

@@ -123,3 +123,30 @@ the full fixed-point committed-tree pipeline and strict lint pass; and the
 seeded committed-delta replay reports `forensic_evidence_ready=true`, zero
 failures/control failures, and the independent helper. PR #7030 is verified
 against the Block-4 branch. No review-loop was used.
+
+## Block 6 — Local Proposal, Delivery Pending
+
+Branch:
+`physics-loop/toe-instrument-record-state-lift-block6-20260820`, stacked on
+the delivered Block-5 head
+`7f22e452ee734a27e69d6b8438b3902e9d76b1b7`.
+
+Current local validation: primary `PASS=17 FAIL=0`, independent
+`PASS=13 FAIL=0`, and Python compilation passes. The typed state/rail
+projections, exact delayed frontier, positive branch-state tree, residual CP
+recovery, disjoint exact typed orbit guards, exhaustive 24-of-144 support,
+total Borel law, trace-matched finite histories, conditional sectorwise cq
+weight uniqueness, free-weight control, and scoped affine definite-sector
+boundary all pass.
+
+The N1--N8 gate passes only for the conditional positive completion and the
+narrow deterministic affine class theorem. Universal measurement/Record
+impossibility, stochastic-route failure, Born derivation from current axioms,
+axiom necessity, and obligation retirement are `FAIL / DO NOT SHIP`. TOE
+movement is zero.
+
+Fresh caches, citation graph/manifest, vocabulary, repository invariants,
+premise purity, Python compilation, strict audit lint with zero errors, and the
+full five-role corrected-science panel pass. Pending: full committed-tree
+pipeline, committed-delta forensic replay, science/metadata commits, push, and
+stacked PR verification. No review-loop will be used.

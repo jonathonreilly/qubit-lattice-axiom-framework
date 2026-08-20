@@ -1,67 +1,78 @@
 # Claim Status Certificate
 
 Campaign state: Blocks 1--5 are proposed in PRs #7020, #7022, #7023, #7027,
-and #7030. Block 5 is delivered on the branch
-`physics-loop/toe-shared-event-record-support-block5-20260820`, stacked on the
-delivered Block-4 head `22d667ceeb`. No campaign block is audited or retained.
+and #7030. Block 6 is an active local proposal on
+`physics-loop/toe-instrument-record-state-lift-block6-20260820`, stacked on
+Block 5 at `7f22e452ee`. No campaign block is audited or retained.
 
-Current Block-5 artifact status: primary `15/15` and independent `11/11` pass
-after a five-perspective panel required material corrections to the process,
-covariance, seed, and instrument-completion rhetoric. Syntax and vocabulary
-checks pass; both caches are fresh; the citation graph/manifest is current;
-the full fixed-point pipeline passes on science commit `1db25f30bc`; strict
-audit lint has zero errors; and the seeded committed-delta replay reports
-`forensic_evidence_ready=true` with zero failures/control failures and the
-independent helper discovered. PR #7030 is open and verified against the
-Block-4 branch. Delivery checks confer no audit verdict or retention.
+Current Block-6 local artifact status: primary `17/17` and independent
+`13/13` pass. Fresh input-bound caches, Python compilation, citation graph and
+manifest, enforced-link repository invariants, premise purity, vocabulary,
+cached-runner freshness, whitespace, and strict audit lint with zero errors
+pass. The five-physicist terminal panel passes the corrected bounded science.
+Full committed-tree pipeline, committed-delta, push, and PR gates remain
+pending at this certificate checkpoint; no delivery result is inferred early.
 
-Proposed Block-5 theorem: three supplied total nearest-neighbour law-level
-Record extensions form a matched triangle on the exact Block-4 common-front
-shell and a nonzero Hilbert--Schmidt neighbourhood of its 24-member spatial
-orbit. `T_plus/T_bar` have the same conditional matrix barycenter and
-extensional formation kernel but candidate-code support versus one barycenter
-atom. `T_plus/T_form` have exactly the same conditional content law, support,
-apparatus, preloaded initial state, and content-only readout but
-`q(eta_*)=1` versus `1/2`.
+Proposed Block-6 theorem: on the exact supplied Block-4 preparation and
+staged A/B instrument, a typed one-site Record code has a Hermitian branch-
+state projection and a distinct apparatus-relative effect-rail projection.
+This keeps `CB=kappa(SigmaB,1)` unequal to `RB=kappa(I-E0,1)` while letting
+`CB` carry both the complement role and the exact residual state payload.
 
-The shell kernels are total, Borel, normalized, condition varying, translation
-covariant, and covariant under the tested Block-4 proper-cubic spatial slot
-action. A combined `{blank} disjoint-union M2(C)` coordinate kernel, supplied
-fresh conditional site independence, countable products, and
-Ionescu--Tulcea give a mathematical path measure across supplied ordinals.
-Exact-front `(blank,F0,FB)` masses, finite gate/content cylinders,
-marginalization, permanence, deletion controls, and `2^-n` survival pass.
+The exact stage census is:
 
-The exact conclusions are narrow:
+- initially only the common front `s0` is active;
+- `C0` and bare `RB` leave the continuation closed;
+- only `CB` opens the context-specific `s1`; and
+- a terminal positive-operator code appends permanently and closes the
+  declared finite process.
 
-- endpoint-support faithfulness is not entailed by the four axioms plus the
-  Block-4 identical-front result; and
-- the extensional formation kernel, including `q(eta_*)`, is not determined by
-  the four axioms or by the complete conditional content measure.
+All four terminal branch operators are exact positive rank-one matrices and
+the independent residual CP reconstruction is below `1.5e-16`. Three disjoint
+24-shell exact typed orbit guards extend the rule to a total Borel, normalized,
+translation/proper-cubic-slot-covariant formation/content kernel. Exactly 24
+of 144 typed orientations per stage survive; typed-near and untyped
+continuation spoofs have zero formation probability.
 
-Record still entails that Records form. The second conclusion is
-nonuniqueness of the extensional process, not nonexistence. The landing N1--N8
-packet passes for these two narrow model-theoretic claims and explicitly fails
-universal no-go, failure-of-all-routes, axiom-necessity, minimality, and axiom-
-adoption rhetoric.
+The trace-matched specialization gives exact terminal histories
 
-Block 5 is not a physical completion of Block 4. `C0,CB` contain unnormalized
-positive branch operators, not normalized branch states or already actual
-outcomes. No map couples the coherent `{K0,B}` branch to the Record draw.
-Block 4's continuation rail reads `kappa(I-E0,1)`, which is unequal to
-`CB=kappa(B rho B^dagger,1)`. The generic occupied-neighbour gate also makes
-the continuation site eligible in the preloaded apparatus, so it does not
-preserve the staged residual process. The initial apparatus is supplied and
-only current-support compatible; its genesis or reachability is not derived.
-No internal `M_2` co-action, physical time, contingent realized history, Born
-value, preparation quotient, universal instrument, or gravity result follows.
+| context | terminal Record-history weights |
+|---|---|
+| A | `(3/10, 19/50, 8/25)` |
+| B | `(3/10, 7/20, 7/20)` |
 
-The terminal panel changed the next-route ranking. Preparation affinity alone
-cannot place a branch in support or consume a coherent pointer. The strongest
-non-gravity positive seam is now an integrated covariant instrument-to-Record
-state lift that preserves the Block-4 staged continuation and keeps formation
-separately typed. Preparation identification/affinity becomes a downstream
-weight-selection obligation inside or after that connector.
+These equal the supplied full ternary Kraus-branch traces. A second law has
+the same code support, projections, stage geometry, formation sites,
+permanence, apparatus, and covariance but different positive normalized
+weights. The trace/Record measure equality is therefore a supplied
+identification in the positive completion, not selected by current axioms.
+
+Conditional on exact equality of the label-retaining cq instrument ensemble
+and the Record ensemble made from the same normalized conditional states,
+sector projection uniquely forces `(3/10,7/10)`, `(19/35,16/35)`, and
+`(1/2,1/2)`. This is a genuine conditional uniqueness result, but the physical
+ensemble equality and any observed member remain underived.
+
+The scoped affine theorem says that an affine trace-preserving map whose
+normalized output is wholly in one of two orthogonal Record sectors for every
+input must choose a constant sector. A branch-calibrated coherent writer has
+both sectors for generic inputs, and dephasing gives a classical-quantum
+mixture rather than one pointwise atom. Fixed reset channels, stochastic
+instruments and Admissibility laws, nonlinear/hidden-variable dynamics,
+objective-collapse mechanisms, and branch-relative interpretations are not
+excluded.
+
+The N1--N8 packet passes only for the exact typed conditional completion and
+the deterministic affine definite-sector class result. Universal measurement
+or Record impossibility, failure of stochastic routes, axiom necessity,
+minimality, axiom adoption, and retained TOE closure are `FAIL / DO NOT SHIP`.
+
+Supplied imports remain explicit: preparation, instrument/menu, trace
+instrument semantics in one specialization, typed compiler, terminal labels,
+preloaded apparatus, exact orbit guards, Gaussian fallback, formation kernel,
+discrete synchronous step order, and fresh conditional independence. No physical time,
+seed genesis, pointwise actual outcome, universal instrument, or gravity
+result follows.
 
 Audit status: none.
 
@@ -79,7 +90,9 @@ TOE percentage movement: zero. The frozen lane map remains:
 | gravity / source / resources | 70% | 45% | 29% | 94% |
 | Born / probability / realized history | 84% | 63% | 34% | 99% |
 
-No axiom wording is justified. Block 5 is significant axiom-issue isolation,
-not axiom pressure mature enough for an edit: the strongest integrated
-positive law route remains open, the triangle does not select a physical
-member, and independent audit/retention have not occurred.
+No axiom wording is justified. The strongest next downstream routes are
+co-equal: an effect-complete operational theorem deriving equality of the
+canonical cq instrument and Record ensembles, and a fresh-ancilla
+repeated-interaction trajectory writer deriving formation without renaming an
+ensemble as an actual atom. Preparation affinity is a tool, not sufficient by
+itself.

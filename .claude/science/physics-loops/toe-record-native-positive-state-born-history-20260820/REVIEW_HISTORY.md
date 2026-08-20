@@ -679,3 +679,174 @@ fixtures, or standalone preparation affinity.
   opened against the Block-4 branch with merge state clean. Review-loop was not
   invoked. This is delivery evidence only: obligation retirement and TOE
   movement remain zero.
+
+## Science Block 6 — Initial Typed Instrument-Port Return (Superseded)
+
+The first concrete return closes the two exact Block-5 integration defects.
+One Record code now has a Hermitian branch-state projection and a distinct
+apparatus-relative rail projection, so `CB` can carry `SigmaB` and the
+complement role without being equated to `RB`. A traceless anti-Hermitian
+spoof and the bare effect code are rejected.
+
+An exhaustive frontier census proves that only `s0` is active initially, no
+continuation follows `C0` or bare `RB`, only the proper context-specific `s1`
+follows `CB`, and terminal writes stop the finite process. All residual CP
+updates reproduce the exact positive terminal branch operators.
+
+Three disjoint 24-shell orbit patches give a total Borel, normalized,
+translation/proper-cubic-slot-covariant law. The trace specialization exactly
+matches the A/B ternary instrument histories. A support-identical free-weight
+law remains normalized and differs, isolating the instrument/Record measure
+identification as the numerical seam.
+
+Primary `16/16` and an independently implemented reconstruction `12/12`
+passed at this initial checkpoint. The later terminal panel found a total-law
+typing defect, so this count and smooth-patch formulation are historical and
+superseded by the correction record below.
+
+## Block-6 Three-Seat Initial Check — Complete
+
+### Mathematical physics / uniqueness
+
+Derived the affine definite-sector lemma. If every output of an affine CPTP
+map is wholly in one of two orthogonal Record sectors, convexity forces a
+constant sector assignment. A branch-calibrated isometry preserves both live
+components; exact dephasing gives a cq mixture. The seat supplied fixed reset
+channels as a counterexample to broader wording and kept stochastic,
+nonlinear, hidden-variable, collapse, and branch-relative routes open.
+
+### Instrument and locality
+
+Independently reconstructed the exact state/rail adapter, initial/continuation
+geometry, and all four residual recoveries. It agreed that unequal codes are
+not the obstruction and localized the remaining consume/commit seam to the
+outcome measure and actual-member transition. It required the no-Born ban to
+be interpreted as a claim boundary: the trace specialization may be displayed
+conditionally, but cannot be called foundation-derived.
+
+### Skeptical TOE portfolio director
+
+Ranked the typed locked-output route first and rejected another pointer or
+static support pair. It required a separate auxiliary label-register CP map
+so the non-Hermitian `M2(C)` codes are never called density matrices. Its
+recommended next route is preparation-affine instrument/Record measure
+identification after the typed compiler works.
+
+### Utility and route decision
+
+The panel utility was high. It introduced the decisive state/rail projection,
+prevented a code/density type error, sharpened the deterministic affine class
+boundary, and changed the next-route ranking from generic state lift to the
+specific measure-identification law. The next full five-role panel is due at
+Block-6 terminal delivery; interim Block-7 checking uses mathematical and
+operational/instrument seats at the first concrete return or two hours.
+
+No-go discipline N1--N8 is included in the source note. It passes for the
+scoped affine class result and fails broad impossibility or axiom-necessity
+rhetoric. Review-loop was not used.
+
+## Block-6 Full Five-Physicist Terminal Panel — Corrected PASS
+
+Five distinct roles cold-read the actual Block-6 note and executables:
+mathematical/no-go, quantum instrument/open-system, lattice/locality,
+experimental/operational, and skeptical TOE/governance. The first three
+returned `REVISE`; after the correction pass, the operational and governance
+seats returned `PASS` for the bounded Block-6 science. Review-loop was not
+used.
+
+### Material defect found and repaired
+
+The exact site decoder required both `d_M(C)=RB` and `S(C)=SigmaB`, while the
+initial total formation law used only distance to an open continuation orbit.
+Two exact counterexamples exposed the mismatch:
+
+- `CB+(1/64)I` was typed with the right rail but wrong state payload; and
+- `CB+i(1/64)diag(1,-1)` had forbidden anti-Hermitian slack.
+
+Both were inside the old distance patch with formation mass `31/32` even
+though the exact decoder rejected them. The repaired law multiplies each
+distance guard by the exact Borel shell-level typed-stage predicate. The
+primary and independent runners now test both hostile shells and exhaust all
+144 typed orientations per stage: exactly the 24 proper-cubic orbit members
+survive at each stage, for 72 nonzero guarded shells total. The smooth bump is
+an ambient guard, not a positive-width formation patch.
+
+### Mathematical and typing corrections
+
+- The cq sector lemma is now stated and independently solved. For nonzero
+  branch operators `sigma_j`, exact equality of the canonical normalized cq
+  ensemble and the Record ensemble made from the same normalized conditional
+  states forces `q_j=Tr(sigma_j)/sum_k Tr(sigma_k)`. This gives every displayed
+  front/A/B trace ratio uniquely. The physical ensemble-equality premise is
+  still supplied, so no Born derivation or actuality follows.
+- The independent compiler now maps every typed label-0/1 code to the declared
+  rail; bare `RB` is rejected by its state payload, not by an artificially
+  partial lookup.
+- The fixed-preparation label calibration is no longer described as a generic
+  state-retaining quantum channel. The next comparison object is explicitly
+  `Gamma(rho)=direct_sum_j K_j rho K_j^dagger`.
+- Locked selective operations now have explicit effect-bound and Choi-
+  positivity checks. “Absorbing” output language was removed; permanence
+  belongs to the Record append law.
+- The Stinespring formula uses orthonormal auxiliary kets `|c_j>` followed by
+  calibration `c_j -> C_j`; non-Hermitian `M2(C)` codes are not Hilbert kets.
+- Ionescu--Tulcea is scoped to supplied discrete steps `n in N`, not generic
+  transfinite ordinals.
+
+### Fresh no-go-discipline correction
+
+The current `origin/main` no-go skill was fetched and applied. N1 now uses
+only allowed honesty markers with direct source locators and authority-status
+disclosures. N2 is a full directional pair table and separates cq ensemble
+identity, microscopic formation, apparatus genesis, contingent observed
+member, and physical time. Historical unaudited firewall/locked-output notes
+are labelled prior art and the needed facts are re-proved locally. N5 removes
+an unexecuted deletion claim and lands the exact five resolution lines in the
+primary runner/cache. Broad measurement impossibility and axiom necessity
+remain `FAIL / DO NOT SHIP`.
+
+### Operational discriminator and portfolio result
+
+Label indicators alone distinguish the laws: front `3/10` versus `2/3`,
+conditional A `19/35` versus `3/7`, and conditional B `1/2` versus `4/9`.
+Full cq certification uses `P_j tensor {I,X,Y,Z}` on a retained label plus
+post-branch qubit over a tomographically spanning preparation family, with
+direct/randomized preparations and demonstrable randomizer screening.
+Preparation affinity alone yields `q_j(rho)=Tr(F_j rho)` for some POVM and
+does not prove `F_j=K_j^dagger K_j`; wrong-effect affine laws remain explicit
+controls. Exact closure requires a probability-independent physical
+writer/readout intertwiner plus the conditional-map identity.
+
+The panel kept two Block-7 routes co-equal and required them to inhabit the
+same Block-6 fixture:
+
+1. derive physical equality of the canonical cq instrument and typed Record
+   ensembles across at least two preparations and an effect-complete menu;
+2. construct a fresh-ancilla local repeated-interaction writer with explicit
+   instrument/unravelling and append-only permanent Record memory.
+
+Kill either at `+2h` if it merely assumes its target, hides the randomizer,
+sampler, seed, or clock, uses one preparation/menu, renames a cq mixture, or
+changes the instrument. By `+4h`, require a theorem, exact countermodel, or
+named minimal datum. Run a joint five-seat panel on the first material return
+or no later than four hours without one; use targeted two-seat kill checks at
+two hours and immediate full panels for percentage movement, axiom pressure,
+route incompatibility, or a positive external gravity connector.
+
+Current cold execution is primary `17/17` and independent `13/13`. This is
+proposal evidence only. Formal TOE percentages remain frozen, no obligation
+is retired, and no axiom update is mature.
+
+### Latest PR landscape at terminal panel
+
+- The campaign stack remains clean above its blocked root: #7022, #7023,
+  #7027, and #7030 are clean stacked PRs; #7020 is blocked against current
+  `main`. Block 6 will stack on the exact #7030 head `7f22e452ee`.
+- The externally owned gravity stack is clean through #7015, #7016, #7021,
+  #7028, and #7029 (Blocks 154--158). Block 158 proves that the Gauss quotient
+  preserves two negative directions rather than yielding a positive gravity
+  state and closes the tested zero-total constraint route. This is rigorous
+  route pruning, not a positive source/rate/lapse bridge and not TOE movement.
+- Gravity remains non-overlap work. Recheck only on a positive link-variable
+  or nonzero-curvature connector, a source/rate/lapse dictionary, a retained
+  merge, or explicit axiom pressure.

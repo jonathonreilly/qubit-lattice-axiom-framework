@@ -3,102 +3,150 @@
 ## Current State
 
 The 24-hour campaign runs until 2026-08-21 11:27:51 EDT. Blocks 1--5 are
-proposed in PRs #7020, #7022, #7023, #7027, and #7030. Block 5 is delivered on
-`physics-loop/toe-shared-event-record-support-block5-20260820`, stacked on
-Block 4 at `22d667ceeb`. Primary `15/15` and independent `11/11` pass after a
-full five-perspective correction panel. Fresh caches, graph/manifest, the full
-fixed-point pipeline on `1db25f30bc`, strict lint, and the seeded committed-
-delta replay all pass; the latter reports `forensic_evidence_ready=true` and
-discovers the independent helper.
+proposed in PRs #7020, #7022, #7023, #7027, and #7030. Block 6 is active on
+`physics-loop/toe-instrument-record-state-lift-block6-20260820`, stacked on
+Block 5 at `7f22e452ee`. Its corrected local return passes primary `17/17` and a
+separately implemented independent reconstruction `13/13`. Delivery gates and
+the terminal five-role panel are pending.
 
 No block has an audit verdict, retention, obligation retirement, or TOE-score
 movement. The frozen percentages remain 95/92/50 for operational
 quantum/Records, 76/72/41 for causal/time, 95/96/75 for inertia/matter,
 70/45/29 for gravity/source/resources, and 84/63/34 for Born/probability/
-realized history, followed by their unchanged evidence ceilings.
+realized history, followed by the unchanged evidence ceilings 99/99/99/94/99.
 
-## Block 5 Exact Result
+Gravity is externally owned. The latest clean gravity stack observed at this
+checkpoint reaches PRs #7028--#7029 (Blocks 157--158); do not duplicate or
+modify it here.
 
-Three attempted positive connectors hit the same local interface from
-different sides:
+## Block 6 Exact Return
 
-- a direct atomic append supplies the positive functional and support law;
-- Cycle-176/179 formation/readout starts with already formed branch-valued
-  Records; and
-- Cycle-339/823 exposes a coherent opportunity or compares against separately
-  supplied realized content, but does not commit a Record.
+Block 6 closes the two concrete integration defects left by Block 5 on the
+supplied Block-4 program.
 
-The one authorized fallback block constructs total Borel law-level extensions
-on every nearest-neighbour shell. `T_plus/T_bar` preserve formation and the
-complete conditional matrix barycenter while changing candidate-code support.
-`T_plus/T_form` preserve the complete conditional content law, support, and
-readout while changing `q(eta_*)`. A nonzero orbit bump, full-support Gaussian
-off-patch rule, fixed thick decoder, independent Voronoi control, combined
-blank/content transition kernel, finite cylinders, `2^-n` survival, and an
-analytic standard-Borel path extension are all explicit.
-
-The only negative conclusions that survive N1--N8 are:
-
-1. endpoint-support faithfulness is not entailed by the current axioms plus
-   the Block-4 identical-front result; and
-2. the extensional formation kernel is not determined by those premises or by
-   the complete conditional content law.
-
-This is axiom-issue isolation, not TOE closure. It proves neither formation
-nonexistence nor axiom necessity.
-
-## Material Panel Corrections
-
-The terminal five-physicist panel prevented four overclaims:
-
-- `C0,CB` code unnormalized positive branch operators; they are not normalized
-  branch states or already actual outcomes.
-- The preloaded multi-Record apparatus merely instantiates the exact front and
-  is current-support compatible; no one-site-seed reachability or historical
-  genesis is derived.
-- Covariance is tested under translations and Block-4 spatial slot rotations,
-  not an internal Pauli/unitary co-action.
-- The eager occupancy gate and `CB=kappa(B rho B^dagger,1)` do not preserve
-  Block 4's staged continuation decoder, which expects
-  `kappa(I-E0,1)`. Block 5 is therefore a semantic law extension, not a
-  physical completion of that instrument.
-
-The process language was also repaired: the combined one-site kernel lives on
-`{blank} disjoint-union M2(C)`, conditional countable spatial products give a
-Borel configuration kernel, and Ionescu--Tulcea gives a path law under
-supplied fresh ordinal independence. The ordinal is not physical time.
-
-## Next Highest-Leverage Campaign
-
-Launch Block 6 on an integrated covariant instrument-to-Record state lift:
+First, one `M2(C)` code now has separately typed projections:
 
 ```text
-exact coherent {K0,B} front
-  -> genuine local consume/commit transition
-  -> support-faithful content-only Record
-  -> typed bridge between effect-label rail and branch-operator content
-  -> s1 remains closed until the complement Record exists
-  -> exact context-specific J_A/J_B residual recovery.
+state(C) = (C + C^dagger)/2
+rail_M(C0) = kappa(E0,0)
+rail_M(CB) = kappa(I-E0,1).
 ```
 
-The transition must not relabel a coherent pointer as a Record, merely
-dephase/copy it, stipulate an actual branch, insert trace/Born weights, use a
-host flag, hide a live state, or change the Block-4 instrument. Formation
-site/probability/time remains separately typed. Preparation affinity follows
-only after this connector exists; by itself it cannot supply support or
-actualization.
+Thus `CB=kappa(SigmaB,1)` remains literally unequal to the effect rail while
+carrying both the exact positive residual state `SigmaB` and the correct
+apparatus-relative complement role. A traceless anti-Hermitian spoof and the
+bare effect code are rejected.
 
-Use a two-seat mathematical/instrument kill review at the first concrete
-return or two hours, then a full five-perspective portfolio panel at a
-terminal result or major obstruction. The Block-5 panel was high utility and
-materially changed both scope and ranking.
+Second, the complete frontier census now gives exactly:
 
-## External Ownership And Delivery
+```text
+initial -> s0 only
+after C0 or bare RB -> no continuation
+after CB -> context-specific s1 only
+after terminal code -> none.
+```
 
-Gravity is owned by another worker through PR #7021 and must not be duplicated
-or modified here. Consume only stable interfaces after that worker lands or
-publishes a concrete handoff.
+The eager-`s1` defect is gone. All four exact residual branch operators are
+positive, fit one typed Record, and reproduce `J_Mr SigmaB J_Mr^dagger` with
+the independent numerical residual below `1.5e-16`.
+
+Three disjoint 24-shell exact typed orbit guards define a total Borel,
+translation- and proper-cubic-slot-covariant Record law. Exhaustive enumeration
+keeps exactly 24 of 144 typed orientations per stage, for 72 nonzero guarded
+shells, and rejects both typed-near and untyped continuation spoofs. Its
+trace-matched specialization gives
+terminal histories
+
+```text
+A: (3/10, 19/50, 8/25)
+B: (3/10, 7/20, 7/20),
+```
+
+exactly equal to the supplied flat ternary Kraus-branch traces. This is the
+strongest conditional positive end-to-end Record-history construction in the
+campaign.
+
+A support-identical free-weight specialization remains normalized and gives
+different histories. Therefore typed support, locality, covariance,
+permanence, and exact CP composition do not by themselves select the trace
+match.
+
+The new sectorwise cq ensemble-consistency lemma sharpens that statement. If
+the typed Record ensemble is physically required to equal the canonical
+label-retaining cq instrument ensemble built from the same normalized
+conditional states, orthogonal-sector traces uniquely force every displayed
+trace ratio. The equality premise remains supplied, so this is a conditional
+uniqueness theorem rather than a Born derivation.
+
+## Narrow Affine Boundary
+
+The no-go discipline is applied because Block 6 also ships a negative class
+result. If an affine trace-preserving map sends every normalized input wholly
+into one of two orthogonal Record sectors, convexity forces its sector choice
+to be constant. A branch-calibrated coherent writer instead has both sectors
+for a generic input; dephasing gives a classical-quantum mixture, not one
+pointwise Record.
+
+This does not exclude fixed reset channels, stochastic instruments,
+Admissibility draws, hidden-variable/nonlinear models, objective collapse, or
+branch-relative interpretations. It is not a universal measurement or Record
+no-go. The exact positive `L_trace` law is stochastic and lies outside the
+deterministic definite-output class.
+
+## Exact Remaining Seam
+
+The highest-leverage non-gravity residuals are now:
+
+```text
+canonical label-retaining cq instrument
+  -> effect-complete operational equivalence across preparations/menus
+  -> equality with the typed Admissibility Record ensemble
+  -> sectorwise uniqueness of the trace ratios;
+
+fresh ancilla + local repeated interaction
+  -> explicit stochastic unraveling
+  -> append-only one-hot Record path
+  -> separately named seed, observed-member, and physical-time boundaries.
+```
+
+The code carrier, rail typing, support, stage geometry, and finite history no
+longer need reinvestment. The next science block should attack cq/Record
+ensemble equality on a sufficiently rich preparation/menu family, with
+preparation affinity as one tool and wrong-effect affine laws as hostile
+controls. A microscopic repeated-interaction formation law is co-equal because
+ensemble closure does not select an observed member.
+
+Kill the ensemble route after two hours if equality/effect identity is merely
+postulated, restricted to the one fixed preparation/menu, or detached from a
+physical Record randomization protocol. Kill after four hours if closure imports
+trace probabilities, a sampler/outcome token, a hidden live state, host
+selection, or a changed instrument. If affinity forces trace form while
+formation remains open, ship those as two separate obligations. Kill the
+formation route if a cq mixture is relabelled as a realized atom or a sampler
+is silently supplied.
+
+## Panel And Delivery
+
+The first three terminal seats found a real off-history science defect: the
+smooth formation patch accepted typed-near and untyped predecessors that the
+exact decoder rejected. The correction multiplies the distance guard by the
+exact Borel typed-stage predicate and adds exhaustive 24-of-144 and hostile
+near-shell tests. They also forced a fresh N1--N8 repair, separated law-level
+paths from the observed member, and produced the sectorwise cq lemma. Their
+utility was very high.
+
+The operational and skeptical-governance seats cold-replayed the corrected
+bytes at `17/17 + 13/13` and passed the bounded Block-6 science. They kept cq
+ensemble identity and a fresh-ancilla repeated-interaction writer co-equal,
+required them to share one fixture, and found no mature axiom update or TOE
+percentage movement.
+
+Run targeted adversarial seats at the first Block-7 concrete return or two
+hours. Trigger the full five again on a route pivot, proposed axiom datum,
+four hours without TOE-level progress, campaign midpoint/final synthesis, or
+evidence that panels are changing the ranking. Widen cadence only after two
+full panels repeat the same conclusion without a material correction.
 
 Review-loop is disabled by user instruction. Use direct self-review,
-independent executables, disposable committed-tree gates, and the independent
-audit lane. Proposal delivery is not retention.
+independent executables, disposable committed-tree gates, and independent
+audit. Proposal delivery is not retention.

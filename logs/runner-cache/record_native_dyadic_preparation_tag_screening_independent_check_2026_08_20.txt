@@ -1,0 +1,30 @@
+===== runner cache v1 =====
+runner: scripts/record_native_dyadic_preparation_tag_screening_independent_check_2026_08_20.py
+runner_sha256: 9772f4eb725226aa65a247b6b854182b54e241cae1f3703d48856b05ca606558
+input_fingerprint_sha256: b6ff0310e1e061df443a281d22af7ce3c80a21b99f7af2085c7422572357be86
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+independence: no import of primary runner; separate occupancy and Markov-quotient reconstruction
+scope: finite rails, dyadic endpoint tester, and declared tag-forgetting quotient
+PASS: group independent signed-permutation enumeration returns 24 proper cubic rotations
+PASS: front-census complete frontier scans for one through six accumulators find exactly the next rail target
+PASS: spatial-covariance the independently reconstructed unique-front census survives every proper cubic rotation
+PASS: markov-reconstruction the absorbing two-state recursion and explicit first-failure histories both give 2^-n
+PASS: quotient-lumpability five different complement histories and one match history each have one seven-test future fingerprint
+PASS: nonlinear-residuals independent exact fractions reproduce 1/4 versus 1/10 and 1/28 and all later mismatches
+PASS: mutated-weight changing the sole fair-law datum changes the two-stage preparation from one quarter to one ninth
+PASS: disjoint-locality the two headline active-site dependence stars are disjoint and each fair pair gives product quarters
+PASS: source-contract the note and primary runner expose the bounded scope, supplied fair datum, no scalar readout, and independent checker
+per_element: independently reconstructed binary endpoint probabilities and exact nonlinear residual fractions
+per_site: independently scanned every blank frontier site in finite apparatus bounding neighbourhoods
+per_mode: rebuilt fair, absorbing-failure, preparation-copy, tester-copy, square, and cubic modes
+per_block: enumerated lawful first-failure histories, quotient fibres, rotations, and disjoint apparatus stars
+lattice_wide: checked and not executed — no arbitrary overlap, infinite-density, clock, actuality, or gravity theorem
+PASS: n5-certificate independent evidence includes all five substantive forensic resolution classes
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

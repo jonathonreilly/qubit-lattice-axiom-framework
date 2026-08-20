@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/record_native_dyadic_preparation_tag_screening_2026_08_20.py
+runner_sha256: 0968db5c0cf308aecb80bfb65e64cdf9fafee8aae22e93a4397bea5122006fce
+input_fingerprint_sha256: 70644b2d4dab15a2f10a66eb9d3bc6e70935d22522064b9f9c9dcaf450140995
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.26
+status: ok
+----- stdout -----
+scope: exact finite binary-code apparatus rails and their projective finite prefixes; no global law selection
+law data: one fair accumulator kernel and a supplied commuting binary apparatus scaffold
+bridge data: quantum typing of Record labels and the copy/equality event is separately supplied as B
+negative scope: only named normalized-power maps on the executed dyadic preparation family under B
+PASS: authority the current axiom, primitive registry, three direct comparison surfaces, and landing note are bound
+PASS: cubic-group the generated proper-cubic group has exactly 24 determinant-one signed permutations
+PASS: relational-m2-carrier three exact internal frames preserve rank-one projector/complement and orthogonal binary relations
+PASS: strict-nn-unique-front every lawful history has exactly one active site and the local role sequence is accumulator, preparation, tester
+PASS: locality-permanence each append conditions on six-neighbour Record membership, reads only occupied contents, writes one blank site, and preserves old Records
+PASS: dyadic-preparation n fair accumulator stages generate endpoint preparation mass 2^-n with exact normalized history weights
+PASS: tag-screened-lumpability four distinct failure histories share one preparation Record and one identical three-test future law
+PASS: mutation-unscreened-tag a controller-dependent tester splits the lawful failure fibre and is rejected by the lumpability gate
+PASS: covariance all 24 rotations, two translations, and global binary-complement relabeling preserve roles and dyadic mass
+PASS: disjoint-concurrency two separated transition kernels expose two active sites and commute; conditional on both writes they give four quarter-weight states
+PASS: named-response-discriminator the Record endpoint transcript equals 2^-n while the named normalized-power maps disagree for n=2 through 6 under bridge B
+PASS: hostile-mutations a one-third randomizer changes the mixture to one ninth and a missing guard kills the active-site certificate
+PASS: claim-boundary the landing note exposes supplied law and bridge data, physical-time and action boundaries, audit status, and N1-N8 scope
+per_element: exact P versus I-P Record contents and dyadic weights are checked; quantum typing remains supplied bridge B
+per_site: every append conditions on six-neighbour occupancy, reads occupied contents, and writes one blank lattice site
+per_mode: accumulator, preparation, tester, complement, normalized-square, and cubic modes are executed
+per_block: single-rail histories, record-fibre lumpability, mutations, and disjoint two-rail commutation are checked
+lattice_wide: checked and not executed — arbitrary overlaps, infinite apparatus density, physical time, and actuality remain open
+PASS: n5-certificate all five landing-resolution statements are substantive and at least forty characters
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

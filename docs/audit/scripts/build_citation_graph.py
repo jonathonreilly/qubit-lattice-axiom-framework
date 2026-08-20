@@ -151,6 +151,11 @@ HEADING_RE = re.compile(r"^#{1,6}\s+", re.MULTILINE)
 LINK_RE = re.compile(r"\[[^\]]*\]\(([^)\s#]+\.md)(?:#[^)]*)?\)")
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    # Independently rebuilds the finite frontier census, absorbing recursion,
+    # Record quotient, covariance, and named response residuals for this claim.
+    "record_native_dyadic_preparation_tag_screening_bounded_theorem_note_2026-08-20": [
+        "scripts/record_native_dyadic_preparation_tag_screening_independent_check_2026_08_20.py",
+    ],
     # Cycle 756's sibling checker shares only the declared finite-fixture
     # construction, then replaces carrier enumeration and modular elimination
     # with NetworkX maximal cliques and exact SymPy domain-matrix ranks.

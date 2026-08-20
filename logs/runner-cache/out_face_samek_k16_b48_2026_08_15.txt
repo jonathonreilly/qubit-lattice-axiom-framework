@@ -1,0 +1,53 @@
+===== runner cache v1 =====
+runner: scripts/out_face_samek_k16_b48_2026_08_15.py
+runner_sha256: 2fb9a91ac06d958afce68490f951c098767668945e72b5e8fdec91264569fcea
+input_fingerprint_sha256: ea6476dc8cec84001519c7218f4ced5d3abb339ebc19879dd26622cbfd957110
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.48
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/OUT_FACE_SAMEK_K16_B48_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+claim_scope: Same-k reverse at k=16 under the named out-face hop-cost on B_48(0) is reported. Displayed, not adopted.
+PASS: audit-input-paths declared inputs are the source note and the current axiom memo
+PASS: audit-input-literal AUDIT_INPUT_PATHS is a static string-literal tuple
+PASS: claim-scope note claim_scope matches the displayed scoring statement
+PASS: displayed-not-adopted the rule is displayed, not adopted
+PASS: not-in-admissibility ω is not written into Admissibility
+PASS: not-attach-l1 the displayed rule is not attached to L1
+PASS: uniqueness-not-claimed uniqueness among hop-costs is not claimed
+PASS: no-axiom-edit note records hypothetical axiom status no edit
+PASS: forbidden-absent forbidden phrases are absent from the source note
+PASS: cache-false the note records cache_write false
+n_sites 152193
+t(16,0,0) 32
+t(16,16,16) 52
+t(16,0,0)^2/256 1024/256
+t(16,16,16)^2/768 2704/768
+3 t(16,0,0)^2 3072
+t(16,16,16)^2 2704
+reverse True
+t(48,0,0) 70
+t(45,0,0) 61
+dijkstra_calls 1
+PASS: theorem-1 t(16,0,0)=32 and t(16,16,16)=52
+PASS: reverse-k16 t(16,0,0)^2 / 256 > t(16,16,16)^2 / 768
+PASS: one-dijkstra exactly one Dijkstra ran
+PASS: ball-b48 B_48(0) has 152193 sites and 152192 nonzero sites
+PASS: reachable every site of B_48(0) is reached
+PASS: note-records-times note records the two computed arrivals
+PASS: note-records-reverse-product note records the integer reverse comparison
+PASS: out-face-hop the named out-face hop (1,1,0)->(2,1,0) has ω=3
+PASS: mid-leave-cannot-fire mid-leave dest-max=1 and source-max>=2 never both hold on 6-NN
+PASS: omega-not-leftover-of-rho3 face-growth (2,2,0)->(3,2,0) is ω=3 and ρ3=1
+PASS: not-leftover-of-b45 (16,16,16) lies outside B_45(0) and the note says so
+PASS: witness-arrivals named axis and body walks realize costs 32 and 52
+PASS: seed-and-axis-clauses seed-exit and both-weights-1 cost 3; support increase costs 1
+PASS: axiom-untouched the axiom memo is an input only and still names the four axioms
+TOTAL: PASS=24 FAIL=0
+
+----- stderr -----
+

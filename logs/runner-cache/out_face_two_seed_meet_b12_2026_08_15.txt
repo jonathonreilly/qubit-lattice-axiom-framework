@@ -1,0 +1,62 @@
+===== runner cache v1 =====
+runner: scripts/out_face_two_seed_meet_b12_2026_08_15.py
+runner_sha256: 0caaff09c311adac25f26e874f8599d6706ce02084c363fb5a1ded5d8c241ef1
+input_fingerprint_sha256: 7cd4d6c6f30759e7b73e6de2aec30dc90ac7e35284f29c187a2e88379ee1b844
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.21
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/OUT_FACE_TWO_SEED_MEET_B12_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+claim_scope: Two-seed meeting-set arrival-speed variance under the named out-face hop-cost on B_12(0)∪B_12((2,0,0)) is compared to ℓ¹. Displayed, not adopted.
+PASS: audit-input-paths declared inputs are the source note and the current axiom memo
+PASS: audit-input-literal AUDIT_INPUT_PATHS is a static string-literal tuple
+PASS: claim-scope note claim_scope matches the displayed scoring statement
+PASS: displayed-not-adopted the rule is displayed, not adopted
+PASS: not-in-admissibility ω is not written into Admissibility
+PASS: not-attach-l1 the displayed rule is not attached to L1
+PASS: uniqueness-not-claimed uniqueness among hop-costs is not claimed
+PASS: no-axiom-edit note records hypothetical axiom status no edit
+PASS: forbidden-absent forbidden phrases are absent from the note and runner
+PASS: cache-false the note records cache_write false
+PASS: union-cardinality the executed domain is the 3203-site union B_12(0)∪B_12((2,0,0))
+n_sites 3203
+|E_omega| 345
+meet_omega ((1, 0, 0),)
+t_omega 3
+|M_omega| 1
+|E_l1| 265
+meet_l1 ((1, 0, 0),)
+t_l1 1
+|M_l1| 1
+|E_rho3| 313
+t0(3,2,0)_omega 11
+t0(3,2,0)_rho3 9
+Q_omega 1/9
+Q_l1 1/1
+var_omega 0
+var_l1 0
+lex_first_minimizer l1
+dijkstra_calls 2
+PASS: two-dijkstras exactly two Dijkstras ran and every union site is reached
+PASS: l1-taxicab unit hop-cost arrivals equal the taxicab norms from each seed
+PASS: meeting-set lex-first ω meeting site is (1,0,0) at t=3 with |M|=1
+PASS: l1-meeting-set lex-first ℓ¹ meeting site is (1,0,0) at t=1 with |M|=1
+PASS: singleton-meeting |M|=1 on the B_12 union under ω and under ℓ¹; equal-arrival is 345 versus 265
+PASS: variances both singleton meeting-set arrival-speed variances are 0
+PASS: lex-first-minimizer the lex-first minimizer among the tied scores is ℓ¹
+PASS: note-records-meeting note records the lex-first site, its t, and |M|
+PASS: seed-relative ω is grown from each seed: exit from (2,0,0) costs 3, not the global 1→2 price
+PASS: seed-and-out-face-clauses ν, corridor, ridge, and out-face 2→2 growth cost 3; 1→2, 2→3, and non-ridge 3→3 cost 1
+PASS: not-leftover-of-l1 ω meeting time is 3 while ℓ¹ meeting time is 1, so the ω score is not a unit-cost leftover
+PASS: not-leftover-of-rho3 ω prices face-growth (2,2,0)->(3,2,0) at 3 while ρ3 prices it at 1, t(3,2,0)=11 versus 9, equal-arrival 345 versus 313
+PASS: not-leftover-of-b6 the B_12 union is larger than the B_6 union and the equal-arrival set is 345, but M stayed a singleton
+PASS: source-axioms current Lattice, Admissibility, and Record wording is pinned
+PASS: axiom-untouched the axiom memo is an input only and still names the four axioms
+TOTAL: PASS=26 FAIL=0
+
+----- stderr -----
+

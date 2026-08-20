@@ -3,9 +3,9 @@
 ## Current State
 
 The 24-hour campaign is active. Blocks 1--3 are proposed in PRs #7020, #7022,
-and #7023. Block 3 has a scope-correct theorem note, primary `18/18`, and
-independent `11/11` executable. It has no audit verdict, retention, obligation
-retirement, or TOE-score movement.
+and #7023. Block 4 is complete locally with primary `15/15` and independent
+`11/11`; proposal delivery is pending. No campaign block has an audit verdict,
+retention, obligation retirement, or TOE-score movement.
 
 The prior-art sweep changed the target. Current main already contains a
 complete sampled-law underdetermination pair. The unlanded campaign stack
@@ -15,25 +15,27 @@ fork. Repeating any of those would be low leverage.
 
 ## Exact Live Fork
 
-Block 3 establishes only algebraic independence inside a displayed finite
-formula class. It does not exhibit total nearest-neighbour countermodels and
-does not form or sample Records. Its five-person panel nevertheless found an
-exact positive route. Both ternary programs factor through the common binary
-front stage
+Block 4 has now made the Block-3 algebraic reopen physical at one narrow
+level. Both ternary programs factor through the common binary front stage
 
 ```text
 {K0, B},  B = sqrt(I-E0) Ug,
 ```
 
-followed only on `B` by context-specific `J_j = K_j B^-1`. Completeness and
-program recovery are exact, and the common plus both residual binary stages
-separately fit the existing bounded M64 carrier through held `L=6` and 24/24
-carried frames. The live fork is therefore:
+followed only on `B` by context-specific `J_j = K_j B^-1`. The exact lattice
+geometry puts the context at distance two from the front and adjacent to the
+continuation. The two complete front shells are literally identical, so the
+current Admissibility axiom gives the same full conditional local measure and
+therefore the same mass to every already-fixed common Borel event. Coherent
+composition, realized branch-state content after separately supplied
+actualization, the M64 lift through held `L=6`, and 24/24 frames all pass.
 
-1. physically compose that common front stage with causal late reveal and a
-   sealed, probability-independently registered `E0` event; or
-2. if exact staging fails, reuse Cycle 339 specifically for protected causal
-   routing, or pivot to probability-independent event registration.
+The remaining live fork is no longer context shielding. It is whether the
+apparatus can physically select a fixed content-only event algebra and prove
+both endpoint cells positive from framework-derived support. If support binds,
+compose the cells through the residual stage. If it does not, pivot to a total
+nearest-neighbour support/formation-law tournament rather than constructing
+another decoder or carrier.
 
 No axiom datum is mature while these derived routes remain open.
 
@@ -62,33 +64,28 @@ power is not the known directional cubic survivor.
 
 ## Next Exact Action
 
-Block 3 binds the exact shared-effect `M_A/M_B` pair to the Cycle-317 apparatus.
-Trace-square restriction gives `25/142` versus `2/11`; normalized square gives
-fair/direct `3/8` versus `9/20`; affine evaluation passes both equalities. The
-selected effect, Kraus operator, and Choi map agree exactly while the complete
-channels differ. These are finite formula-class separators, not total
-Admissibility models. The symbolic six-code table is conditional content only:
-it does not select a site, draw an outcome, form a Record, or derive
-no-click/double-click mass.
+Run one four-hour, kill-gated support-faithful event-registration block on the
+exact Block-4 front:
 
-The selected Block 4 is one four-hour, kill-gated physical context-delay
-compiler:
+1. derive a common, fixed, disjoint, exhaustive content-only Borel event
+   algebra from physical apparatus/end-point data;
+2. bind `R_0`, `R_B`, and residual endpoints to its cells without defining the
+   cells from the unknown measure;
+3. prove positive cell mass from endpoint support under the current local law,
+   not from a supplied support map, atomic distribution, nonzero Kraus block,
+   trace weight, sampler, seed, or postselection;
+4. integrate the cells through the residual continuation into a normalized
+   finite conditional menu kernel; and
+5. retain content-only dependence, covariance, and deletion/context controls.
 
-1. hours 0--2: give exact sites, layers, roles, and M2 contents; prove the
-   complete stage-one neighbourhood is literally identical in both contexts;
-2. keep every context carrier outside that neighbourhood and its causal past,
-   then route it only to the `B` continuation;
-3. seal the `E0` port against later context and register it without trace
-   weights, a seed, sampler, postselection, or pointer-to-Record relabeling;
-4. hours 2--4: compose the stages and recheck branch recovery, support,
-   leakage, deletions/ambiguities, held size, and covariance; and
-5. infer equality only from same complete condition implies same distribution.
-
-Pivot at two hours without a concrete identical-star layout, at four hours if
-the return is only another factorization/support count, or immediately on an
-external clock, host context flag, unrecorded live state, unsealed `E0` port,
-or probability-defined equivalence. Extend to eight hours only after every
-connector gate passes, for generalization or lawful event/Record integration.
+A trace-threshold decoder supplies a useful constructive control, while a
+Hilbert--Schmidt Voronoi decoder shows event typing remains underdetermined.
+The common Dirac law at `R_0` is the required positivity countercontrol; a
+full-support atomless law shows thick cells can be positive without atoms.
+Kill at two hours if the return is only a partition/decoder or Cycle-339
+endpoint comparison without a support theorem. Kill at four hours if support,
+actualization, formation, or numerical weights must be supplied. Retain a
+conditional support-to-positive-cell lemma only as dependency reduction.
 
 ## Review And Delivery
 
@@ -133,3 +130,14 @@ formula table, N1--N8 narrow gate, common-front-stage factorization, and the
 three separate binary carrier lifts pass. The broad Born no-go,
 model-theoretic axiom independence, completed Record/history, and axiom
 necessity gates remain `FAIL / DO NOT SHIP`. No review-loop was invoked.
+
+Block 4 is complete locally on
+`physics-loop/toe-common-front-context-delay-block4-20260820`, based at the
+Block-3 delivery head `4cc40fb31d`. Primary `15/15`, independent `11/11`,
+syntax, and vocabulary checks pass. The two-seat kill review corrected the
+coherent-pointer/permanent-Record type splice; the full five-perspective panel
+confirmed the bounded theorem and selected the causal shared-event to
+Record-support connector. Both caches are fresh and the graph/manifest is
+current; full pipeline, committed-delta, push, and PR gates are still pending
+at this snapshot. Obligation retirement and TOE movement remain zero. No
+review-loop was invoked.

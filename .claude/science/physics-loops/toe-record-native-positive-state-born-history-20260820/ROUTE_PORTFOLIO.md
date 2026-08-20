@@ -1,16 +1,17 @@
 # Route Portfolio
 
-Scores are qualitative from zero to three. Risk is subtractive. Four full
+Scores are qualitative from zero to three. Risk is subtractive. Five full
 five-perspective checkpoints have now been synthesized; the first rows carry
-the current post-Block-3 ranking.
+the current post-Block-4 ranking.
 
 | Route | Attack frame | Upgrade | Trace | Import retirement | Artifactability | Hard pressure | Risk | Current disposition |
 |---|---|---:|---:|---:|---:|---:|---:|---|
-| Common-front-stage physical context delay | compile common `{K0,B}` with a literally identical full stage-one neighbourhood; route context only after `B`; seal/register `E0` probability-independently | 3 | 3 | 3 | 3 | 3 | -2 | **selected Block 4; four-hour kill-gated highest Born-selector leverage** |
-| Terminal event/Record connector | use probability-independent registration and protected continuation so later context cannot alter the `E0` event | 3 | 3 | 3 | 2 | 3 | -2 | mandatory inside Block 4; Cycle 339 is a service, not a standalone repeat |
-| Staged M64 composition | compose the already-valid common and residual binary lifts with exact recovery, bounded support, leakage/deletion controls, held size, and covariance | 3 | 3 | 2 | 3 | 3 | -1 | exact factors and individual lifts pass; composition/routing is the new object |
+| Causal shared-event to Record-support connector | derive one common content-only event algebra from the apparatus, bind `R0/RB`, and prove positive cell mass from endpoint support under the exact front law | 3 | 3 | 3 | 2 | 3 | -2 | **selected Block 5; narrow event/support theorem, not broad actualization** |
+| Total NN support/formation-law tournament | implement three materially distinct event-to-support/formation routes on the same apparatus and identify a shared wall only if all fail | 3 | 3 | 3 | 2 | 3 | -3 | pivot after Block-5 kill gate; prerequisite to any semantic axiom-pressure packet |
+| Common-front-stage physical context delay | compile common `{K0,B}` with a literally identical full stage-one neighbourhood and route context only after `B` | 3 | 3 | 2 | 3 | 3 | -1 | completed Block 4 locally; full conditional measure congruence, zero retirement |
+| Staged M64 composition | compose the common and residual binary lifts with exact recovery, bounded support, deletion controls, held size, and covariance | 2 | 3 | 1 | 3 | 2 | -1 | completed inside Block 4; do not repeat without event/support integration |
 | Shared-effect/preparation formula tournament | bind Cycle 317/321 `M_A/M_B` to physical candidate content and separate context/preparation congruences | 2 | 3 | 2 | 3 | 3 | -1 | completed bounded Block 3; formula-class result only, zero retirement |
-| Effect-complete operational preparation class | physically screen the fair tag across an effect-complete tester and identify the prepared state operationally | 3 | 3 | 3 | 2 | 3 | -2 | next after effect connector; literal direct-content equality remains separate |
+| Effect-complete operational preparation class | physically screen the fair tag across an effect-complete tester and identify the prepared state operationally | 3 | 3 | 3 | 2 | 3 | -2 | next after a positive event/support connector; literal direct-content equality remains separate |
 | Flat/staged refinement congruence | prove the staged realization and old simultaneous ternary implementation are operationally equivalent at the registered event | 2 | 3 | 2 | 2 | 3 | -2 | needed only for transfer to old layouts; pair-specific staged theorem can precede it |
 | Delayed-setting symmetry-forced midpoint tournament | classify `I/2`/`P_z` fixed-input exchanges and test X/Y/Z against the live cubic | 2 | 3 | 1 | 3 | 3 | -1 | completed bounded Block 2; route corrected, do not repeat |
 | Aligned-certainty microscopic action | derive the `P_z/Z` zero-support row and a true conserved bond current | 1 | 2 | 1 | 2 | 2 | -3 | demoted; cannot touch the oblique cubic or occurrence law |
@@ -23,7 +24,7 @@ the current post-Block-3 ranking.
 | Preparation-affinity selector | exact same-kernel mixture protocol plus an effect-complete physical tag-screening quotient excludes normalized-square/non-affine response twins | 3 | 3 | 3 | 2 | 3 | -2 | Block 3 supplies `3/8` versus `9/20`; physical screening/registration remains open |
 | Existing-stack retention extraction | independently reconstruct the strongest positive candidate and minimize dependencies for audit | 2 | 3 | 1 | 3 | 1 | -1 | support route, not new science alone |
 | Strict-NN compiler continuation | compile controller, preparation, screening, and effect stages under one homogeneous local rule | 3 | 3 | 2 | 2 | 3 | -2 | use only for the selected context-routing object; global overlap remains downstream |
-| Gravity completion | continue Block 154 or its discriminator | 2 | 2 | 1 | 2 | 3 | -3 | occupied by another worker; do not execute |
+| Gravity completion | continue Block 154 or its discriminator | 2 | 2 | 1 | 2 | 3 | -3 | occupied by another worker; source/rate/lapse dictionary remains downstream |
 | Operational-naturality axiom/law datum | require effect/preparation descent and lawful coarse-graining/randomization | 1 | 3 | 2 | 1 | 3 | -3 | watch only; derived routes open and no total hostile models prove non-entailment |
 | Another sampled-law pair, Gaussian fallback, or static countermodel | vary a formula/kernel while preserving the known interface | 0 | 1 | 0 | 3 | 0 | -2 | retired as duplicate and lower leverage |
 
@@ -177,3 +178,44 @@ minimality, probability-independent quotient registration, and retention are
 all absent. The next panel cadence is two adversarial seats at route `T+2h`,
 full five at `T+4h` or terminal return, one portfolio check near campaign
 `T+12h`, and final synthesis about two hours before deadline.
+
+## Post-Block-4 Portfolio Recheck
+
+Block 4 passed its narrow locality target. Literal equality of the complete
+front shell now forces equality of the entire conditional local measure, not
+merely equality under one candidate formula. Exact coherent staging, separate
+realized branch-state capacity, and the composed bounded carrier also pass.
+This removes remote-context formula ambiguity for every already-fixed common
+front event in the pair-specific staged realization.
+
+It does not register that event physically or prove it is non-vacuous. The
+sharp countercontrol is a common Dirac law at `R0`: both contexts still have
+the same full measure and a common exhaustive two-cell decoder, yet the `RB`
+cell has zero mass. A nonzero coherent Kraus branch is not endpoint support.
+Conversely, a thick open decoder cell containing a supported endpoint has
+positive mass even for an atomless law, so atomicity is unnecessary.
+
+The selected next contract is therefore narrower than “actualization”:
+
+```text
+exact common physical front
+  -> apparatus-selected, probability-independent content event algebra
+  -> endpoint codes in support of the one local law
+  -> positive conditional event cells in both delayed contexts
+  -> exact residual continuation and normalized finite conditional menu.
+```
+
+At two hours, pivot if the only result is another declared partition,
+Voronoi/`kappa` decoder, pointer, controlled copy, or endpoint comparer. At
+four hours, pivot if support or positivity requires an inserted atomic law,
+trace/Born weight, sampler, host selection, supplied actual member, or early
+context tag. A conditional “if supported, then positive” theorem is a useful
+dependency reduction but not obligation retirement.
+
+Preparation screening remains second-order because Block 1 already gives a
+bounded conditional construction. Generic histories remain lower leverage
+because non-Born actual-member overlays exist. Gravity remains externally
+owned and downstream of its source/rate/lapse dictionary. Axiom clarification
+is premature while event/support and total-law routes remain live. Therefore
+the portfolio decision is robust across all five perspectives, not merely an
+incremental continuation of the last block.

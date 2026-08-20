@@ -151,6 +151,12 @@ HEADING_RE = re.compile(r"^#{1,6}\s+", re.MULTILINE)
 LINK_RE = re.compile(r"\[[^\]]*\]\(([^)\s#]+\.md)(?:#[^)]*)?\)")
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    # Independently reconstructs the remote-context Record shells, symbolic
+    # full-measure identity, formation countercontrol, staged Kraus recovery,
+    # realized branch-state content, and held physical-code embeddings.
+    "common_front_stage_remote_context_record_event_congruence_bounded_theorem_note_2026-08-20": [
+        "scripts/common_front_stage_remote_context_record_event_congruence_independent_check_2026_08_20.py",
+    ],
     # Independently rebuilds the exact shared-effect menus, formula
     # discriminators, contact-seam Kraus pair, context-delay factorization,
     # candidate physical content, and finite conditional-table boundary.

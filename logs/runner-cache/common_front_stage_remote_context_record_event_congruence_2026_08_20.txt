@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/common_front_stage_remote_context_record_event_congruence_2026_08_20.py
+runner_sha256: 783c2cd5d058360ce19ebe8051574b726ad83e336312e905520d0979c751a959
+input_fingerprint_sha256: cf5e184ea4217a3048f63151e461d48704824d2d8252da9c36c8a9ebf27799e9
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 2.97
+status: ok
+----- stdout -----
+PASS [sources] current axiom, append rail, factorization, physical carrier, and event-registration boundary are bound
+PASS [literal-common-front-condition] {'world_difference': 'one physical context Record at graph distance two', 'initial_active_sites': 1, 'stage_one_condition': 'exactly identical'}
+PASS [same-condition-measure-congruence] {'inference': 'one condition determines one full M2(C) measure', 'event': 'the same fixed front-E0 effect-label content event in both worlds', 'numerical_mass': 'not assigned'}
+PASS [record-native-stage-gating] E0 permanence seals the front Record; only the complement content enables the context-specific continuation
+PASS [append-permanence-and-readable-inputs] every transition appends one blank target, preserves old Records, and reads content only from occupied neighbours
+PASS [formation-boundary-control] equal conditional content measures do not equalize an independently supplied formation-site probability
+PASS [nearest-neighbour-causal-exclusion] the supplied finite dependency DAG has no context-to-front path and routes context only to the continuation
+PASS [hostile-deletions-and-context-leak] every declared dependency is load bearing, and moving context into the first star destroys the connector premise
+PASS [spatial-covariance] the complete rail, unique active front, late context, and continuation survive 24 rotations at three translations
+PASS [exact-controlled-composition] {'all_composition_residuals': '< 9e-11', 'contexts': ('M_A', 'M_B'), 'external_clock_or_probability': 'none'}
+PASS [coherent-context-sealed-port] the context-controlled isometry acts differently only after the complement port; the complete E0 CP block is identical
+PASS [realized-branch-content-connector] after a separately supplied branch actualizes, its unnormalized positive operator fits one M2 Record and is sufficient for exact residual CP continuation; no trace is used as probability
+PASS [physical-composed-carrier] both composed staged programs stay in the accepted M64 code through held L=6 with bounded support and 24/24 carried frames
+PASS [claim-boundary] pair-specific measure congruence only; event typing, atomicity, generalization, histories, and axiom necessity remain open
+per_element: exact M2 effect-label codewords and all common/residual Kraus blocks are checked without assigning probability values
+per_site: two successive blank targets use only occupied nearest-neighbour Record contents and append without overwriting
+per_mode: remote contexts A and B, E0 seal, complement continuation, context leak, and every dependency deletion are checked
+per_block: the Record rail, supplied dependency DAG, coherent staged isometry, M64 lift, and spatial covariance are checked
+lattice_wide: checked and not executed — arbitrary programs, finite-event registration, autonomous formation, histories, and frequencies remain open
+PASS [n5-certificate] all five resolution statements are substantive and source-bound
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/common_front_stage_remote_context_record_event_congruence_independent_check_2026_08_20.py
+runner_sha256: 0c5ba33eb26431aef020f00b9f77327847208c0e2e6c25ba58a5ebbc02c16a44
+input_fingerprint_sha256: d49970a49b9e65e5a54f0ef0a5ab9b77a50cb02dc2de99bb6f193332476b1d8a
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 1.11
+status: ok
+----- stdout -----
+PASS [source-packet] the axiom implication and all formation, event, actualization, and score boundaries are source-bound
+PASS [independent-shell-identity] the worlds differ at one remote M2 Record and have byte-identical complete front shells
+PASS [symbolic-full-measure-identity] one single-valued law image of the identical condition gives equal mass to every common Borel event; no value is assigned
+PASS [independent-rail-gating] the supplied decoder appends permanently and only the complement code enables its declared continuation
+PASS [malformed-and-deletion-controls] every read dependency is load bearing, and an occupied target cannot be decoded or overwritten
+PASS [independent-formation-countercontrol] equal conditional measures coexist with unequal supplied formation probabilities, so unconditional occurrence is not inferred
+PASS [independent-spatial-covariance] both contexts and the supplied continuation decoder survive all 24 proper-cubic rotations
+PASS [independent-staged-composition] the common isometry, both residual isometries, and all four branch recoveries are independently reconstructed
+PASS [independent-realized-content] conditional on separately supplied actualization, one positive M2 branch-state content exactly feeds each residual CP map
+PASS [independent-held-physical-lift] direct and composed physical blocks agree and remain isometric/constraint-clean at L=3 and held L=6
+per_element: independently rebuilt exact event codes, branch-state contents, and every staged Kraus recovery without probability values
+per_site: independently reconstructed both full six-neighbour shells, blank occupancy, append permanence, and malformed inputs
+per_mode: independently separated conditional measure, supplied formation, coherent isometry, and realized-content modes
+per_block: independently checked remote shielding, finite rail gating, 24 rotations, staged composition, and held M64 embeddings
+lattice_wide: checked and not executed — event actualization, total formation law, arbitrary programs, histories, and frequencies remain open
+PASS [independent-scope-certificate] the independent resolution and no-go boundaries are source-bound
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

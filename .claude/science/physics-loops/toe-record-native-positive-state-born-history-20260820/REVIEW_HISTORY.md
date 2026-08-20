@@ -487,3 +487,87 @@ semantics, adversarial prior art, and governance/audit/portfolio.
   [PR #7023](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7023)
   opened against the Block-2 branch. Review-loop was not invoked. This is
   delivery evidence only: obligation retirement and TOE movement remain zero.
+
+## Science Block 4 — Conditional Full-Measure Congruence
+
+The exact two-target layout places `s0=(0,0,0)`, `s1=(1,0,0)`, and the only
+world-dependent context Record at `c=(1,1,0)`. The context is graph distance
+two from `s0` and a nearest neighbour of `s1`. Every member of the complete
+six-neighbour `s0` condition is literally identical in worlds `A` and `B`.
+The current single-valued Admissibility map therefore returns the same full
+conditional `M_2(C)` measure, so every already-fixed common Borel event has
+equal conditional mass.
+
+Primary `15/15` and independent `11/11` pass. They also check the supplied
+content-only rail, a countercontrol separating conditional content law from
+formation probability, load-bearing context/deletion mutations, 24 rotations
+at three translations, exact `{K0,B}` then `J_A/J_B` composition, separate
+realized positive branch-state content after supplied actualization, and the
+composed bounded M64 lift at `L=3,6`.
+
+## Block-4 Two-Seat Kill Review — Complete
+
+The locality/Record seat confirmed the exact shell theorem but rejected any
+unconditional occurrence, common realized pick, derived ordering, or claim
+that a blank site contributes readable content. It narrowed the `R_0` seal to
+blocking the one declared residual-enabled transition.
+
+The instrument/causal seat caught a material type splice between the coherent
+`B` pointer, the effect-label rail Record, and a permanent realized branch-
+state Record. The note and runners now keep coherent and realized modes
+separate. Exact matrix composition is not pointer-to-Record actualization.
+
+## Post-Block-4 Five-Perspective Panel — Complete
+
+### 1. Locality and Record semantics
+
+Accepted literal front-shell identity and conditional full-measure equality.
+Formation site/rate/order and the supplied rail remain outside the theorem.
+
+### 2. Instrument and causal typing
+
+Accepted exact coherent composition and the separately conditional realized-
+content connector. Rejected their composition into an unconditional
+measurement process without a physical actualization map.
+
+### 3. Mathematical measure and event registration
+
+Constructed a weight-free thick two-cell decoder on `M_2(C)` and proved the
+conditional support-to-positive-cell lemma. It also supplied two decisive
+controls: the common Dirac law at `R_0` leaves the complement cell at zero
+mass, while a full-support atomless law gives thick cells positive mass even
+though singletons and exact fibers can be null. Atomicity is not the wall;
+endpoint support and physical decoder selection are.
+
+### 4. Operational foundations and prior art
+
+Ranked a narrowly named causal shared-event to Record-support connector above
+preparation, history, gravity, or broad actualization. Prior pointer,
+controlled-copy, endpoint-comparison, formation/readout, and algebraic carrier
+work already supplies those scaffolds but does not bind the physical endpoint
+to support under the current law. Repeating them alone is not progress.
+
+### 5. TOE governance and portfolio
+
+Confirmed zero obligation retirement and frozen percentages. No axiom datum is
+mature because decoder/support, pointer-PVM, controlled-copy registration,
+atomic, continuous-support, and total-law routes remain live. Current
+Admissibility already supplies context congruence once an event is fixed, so a
+context-independence axiom would duplicate the new theorem.
+
+### Synthesis and cadence
+
+Select one four-hour Block 5 on physical event typing plus endpoint support.
+Require a fixed common event algebra, positive mass derived from support, exact
+branch-state consistency, conditional Record typing, residual recovery, and
+the existing locality/covariance/deletion controls. Kill at two hours if only
+another partition or endpoint comparer appears. Kill at four hours if support,
+atomicity, formation, actualization, or numerical weights must be supplied.
+After three materially distinct connector implementations hit the same wall,
+pivot to total post-August-13 nearest-neighbour support/formation models; do
+not infer non-entailment or axiom necessity before that test.
+
+This panel materially changed the route name and scope, so its utility remains
+high. Continue full five-perspective checks on a terminal connector result,
+major obstruction/pivot, the campaign midpoint portfolio audit, and final
+synthesis. Narrow interim checks to the two most relevant adversarial seats.

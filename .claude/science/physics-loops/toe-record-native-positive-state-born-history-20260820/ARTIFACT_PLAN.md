@@ -12,7 +12,7 @@ falsifier: any declared future transition that still depends on the spent
 controller after the claimed screen. Quantum typing remains conditional on
 bridge `B`; no affine-domain theorem is claimed.
 
-## Positive Construction Block — Block 1 Complete Locally
+## Positive Construction Block — Block 1 Proposal Delivered
 
 - one source note with an explicit claim boundary;
 - one primary runner with exact or symbolic checks;
@@ -33,10 +33,10 @@ Delivered:
 - independent reconstruction, `10/10`;
 - SHA-pinned primary and independent caches with N5 certificates.
 
-Pending before delivery: final direct self-review, vocabulary/conformance
-checks, cache refresh after panel narrowing, commit, push, and PR verification.
+Delivered in PR #7020 after direct self-review, panel narrowing, fresh caches,
+the full pipeline, committed-delta evidence, push, and PR verification.
 
-## Terminal Quantum-Content Block — Block 2 Complete Locally
+## Terminal Quantum-Content Block — Block 2 Proposal Delivered
 
 - symbolic two-atom law and explicit branch-ratio deformation;
 - input-fixing output-exchange involution or exact minimal extensional datum;
@@ -79,29 +79,53 @@ Delivery evidence: science commit `653f1900b7`, fresh primary and independent
 caches, full committed-tree pipeline pass, strict lint with zero errors, and
 committed-delta `forensic_evidence_ready=true`.
 
-## Physical Context-Delay Connector — Block 4 Selected
+## Physical Context-Delay Connector — Block 4 Complete Locally
 
-Four-hour authorized scope:
+Delivered locally:
 
-- hours 0--2: exact finite sites, layers, roles, and M2 contents;
-- literal equality of the complete stage-one NN condition in both contexts,
-  including preparation, pointer, guards, fuel, references, and stage marker;
-- context carriers physically absent from that condition and its causal past,
-  then routed only to the `B` continuation;
-- terminal/causally sealed `E0` port with probability-independent event
-  registration;
-- hours 2--4: exact staged composition and all-input `K_j` recovery;
-- bounded support, leakage, ambiguity/deletion, held-size, and 24-frame
-  covariance checks; and
-- an inference using only same complete condition implies same distribution.
+- exact two-target geometry with context at distance two from `s0`, adjacent
+  only to the continuation `s1`, and a literally identical complete six-site
+  `s0` shell in the two worlds;
+- the current Admissibility implication from one identical condition to one
+  identical full conditional `M_2(C)` measure, hence equality for every
+  already-fixed common Borel event;
+- an exact formation countercontrol showing that conditional-measure equality
+  does not imply unconditional occurrence;
+- a supplied content-only eligibility rail whose `R_0` predecessor blocks only
+  the named residual-enabled transition and whose `R_B` predecessor exposes
+  the late context;
+- exact coherent `{K0,B}` then `J_A/J_B` composition, separated from a
+  realized mode in which a separately actualized positive branch operator fits
+  one `M_2(C)` Record and feeds the residual CP map;
+- composed M64 feasibility at `L=3,6`, bounded support, load-bearing deletion
+  controls, and 24-frame covariance; and
+- primary `15/15` plus independent `11/11`.
 
-Stop at two hours without an identical-star layout or four hours if the return
-is only factorization, individual lift, or support count. Stop immediately on
-an external clock, host program flag, unrecorded live state, later `E0`
-coarse-graining, trace/Kraus probabilities, seed, sampler, postselection,
-probability-defined equivalence, host forgetting, or pointer-to-Record
-relabeling. Extend to hours four--eight only after every connector gate passes,
-for one generalization or lawful event/Record integration.
+The block does not derive a physical event partition, positive event mass,
+support membership, pointer-to-Record actualization, formation, a normalized
+finite menu kernel, Born values, or histories. It therefore retires no
+obligation and moves no TOE percentage.
+
+## Support-Faithful Event Registration — Block 5 Selected
+
+Four-hour kill-gated scope:
+
+- derive a fixed, common, probability-independent, content-only Borel event
+  algebra from the exact common-front apparatus and endpoint codes;
+- bind `R_0`, `R_B`, and residual endpoints to disjoint exhaustive cells;
+- prove positive conditional mass from framework-derived support membership,
+  not from a supplied support map, atomic law, Kraus amplitude, trace weight,
+  sampler, or postselection;
+- integrate the registered cells through the residual continuation into a
+  normalized finite conditional menu kernel; and
+- retain content-only dependence, covariance, and context/deletion controls.
+
+Kill by two hours if the result is only another declared partition, Voronoi
+decoder, or endpoint comparison without a support theorem. Kill by four hours
+if positivity requires supplying support, atomicity, actualization, formation,
+or numerical weights. A theorem of the form “positive provided both endpoints
+are supported” is a dependency reduction only; record it once and pivot to a
+total nearest-neighbour support/formation-law tournament.
 
 ## Negative Or Axiom-Decision Block
 

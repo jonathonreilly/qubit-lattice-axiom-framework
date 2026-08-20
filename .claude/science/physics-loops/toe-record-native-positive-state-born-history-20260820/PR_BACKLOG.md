@@ -65,3 +65,22 @@ are current, the full committed-tree pipeline passes, strict lint reports zero
 errors, and the committed-delta check reports
 `forensic_evidence_ready=true`. PR #7023 is verified against the Block-2
 branch. No review-loop is used.
+
+## Block 4 — Pending Proposal Delivery
+
+Branch:
+`physics-loop/toe-common-front-context-delay-block4-20260820`, stacked on the
+delivered Block-3 head
+`4cc40fb31d7b6c78f5d113d0bce0804d7a9003da`.
+
+Current direct validation: primary `PASS=15 FAIL=0`, independent
+`PASS=11 FAIL=0`, targeted two-seat kill review and full five-perspective
+portfolio panel complete, and TOE score movement remains zero. Exact complete-
+shell identity, conditional full-measure congruence, formation countercontrol,
+content-only rail gating, coherent common/residual composition, separate
+realized branch-state content, composed held M64 lift, and 24-frame covariance
+pass. Physical event typing, endpoint support, positive event mass,
+pointer-to-Record actualization, formation, histories, and Born values remain
+open. Both caches are fresh and the citation graph/manifest is current. Full
+pipeline, committed-delta, commit, push, and PR gates remain pending at this
+snapshot. No review-loop is used.

@@ -1,0 +1,63 @@
+===== runner cache v1 =====
+runner: scripts/l1_locksupport_vs_c2d4_reverse_k1_b6_2026_08_15.py
+runner_sha256: b0e241f56f99d8b73b4a682ef49f1f24362c5fd0d9295bacbeb76e05b83ef981
+input_fingerprint_sha256: a136bd39063091035b49d56a6a6b9bf033acb18854c08bf7b343aed1643545cf
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/L1_LOCKSUPPORT_VS_C2D4_REVERSE_K1_B6_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+claim_scope: Same-k reverse at k=1 under unit ℓ¹ versus named c2d4 on B_6(0) is compared. Displayed, not adopted.
+external_scientific_inputs: none; unit ℓ¹ lock-support versus named c2d4 on the finite nearest-neighbor graph B_6(0) only
+package_local_integrity_reads: proposed source note and live axiom memo only; no cache or governance surface is written
+measure_boundary: integer hop-costs and two Dijkstras; no fit and no leftover larger-ball table
+claim_boundary: same-k reverse bits at k=1 are displayed, not adopted
+n_sites 377
+l1 t(1,0,0) = 1
+l1 t(1,1,1) = 3
+l1 same-k comparison: 1^2 / 1 = 1 versus 3^2 / 3 = 9/3; reverse=False
+l1 3 t(1,0,0)^2 = 3
+l1 t(1,1,1)^2 = 9
+c2d4 t(1,0,0) = 3
+c2d4 t(1,1,1) = 5
+c2d4 same-k comparison: 3^2 / 1 = 9 versus 5^2 / 3 = 25/3; reverse=True
+c2d4 3 t(1,0,0)^2 = 27
+c2d4 t(1,1,1)^2 = 25
+reverse_bits_agree False
+dijkstra_calls 2
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: audit-input-literal AUDIT_INPUT_PATHS is a static string-literal tuple
+PASS: ball-cardinality B_6(0) is the 377-site integer set with coordinate-sum at most 6
+PASS: two-dijkstras exactly two Dijkstras from the origin are executed, unit ℓ¹ then c2d4
+PASS: reachable every site of B_6(0) is reached under both costs
+PASS: l1-unit-hops ℓ¹ prices every 6-NN hop at cost 1
+PASS: c2d4-clauses seed-exit, axis, drop, corridor-slide, and ridge-slide cost 3; max>=4 out-face costs 2; 1-to-2 and small 2-to-3 cost 1
+PASS: thm1-l1-times under ℓ¹, t(1,0,0)=1 and t(1,1,1)=3 match the unit-cost arrivals
+PASS: thm1-l1-reverse under ℓ¹, t(1,0,0)^2 > t(1,1,1)^2 / 3 fails
+PASS: thm2-c2d4-times under c2d4, t(1,0,0)=3 and t(1,1,1)=5 match the named-cost arrivals
+PASS: thm2-c2d4-reverse under c2d4, t(1,0,0)^2 > t(1,1,1)^2 / 3 holds
+PASS: thm3-bits-disagree the two reverse bits disagree, so occupancy t is not the Record-side cone
+PASS: thm1-note-reports-l1 the note reports the ℓ¹ times and failed reverse
+PASS: thm2-note-reports-c2d4 the note reports the c2d4 times and holding reverse
+PASS: thm3-note-reports-disagreement the note reports disagreement and the occupancy reading
+PASS: thm3-not-in-admissibility the live Admissibility wording is unchanged and does not name these hop-costs
+PASS: thm3-no-l1-attachment the note refuses to attach L1
+PASS: forbidden-tokens forbidden tokens are absent from the note
+PASS: claim-scope-contract the required claim_scope is source-visible
+PASS: uniqueness-not-required the note does not require uniqueness
+PASS: scope-boundary the theorem stays on B_6(0), uses two Dijkstras, and proposes no axiom edit
+PASS: displayed-not-adopted the comparison is displayed, not adopted
+PASS: no-axiom-edit note records hypothetical axiom status no edit
+PASS: axiom-untouched the axiom memo is an input only and still names the four axioms
+PASS: no-path-dump the runner stores arrival costs only
+per_element: named hop-costs are integers on nearest-neighbor hops.
+per_site: arrival times are reported only at (1,0,0) and (1,1,1).
+lattice_wide: checked and not executed — the search stays inside B_6(0).
+TOTAL: PASS=25 FAIL=0
+
+----- stderr -----
+

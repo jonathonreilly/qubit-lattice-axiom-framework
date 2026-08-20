@@ -1,0 +1,49 @@
+===== runner cache v1 =====
+runner: scripts/s2_ray_affine_crossing_2026_08_15.py
+runner_sha256: e756236de9691828c92017de8ca7bac1e664bcb51b26768ee47f85964a062284
+input_fingerprint_sha256: 912033a16e3ee57f84cecbf93c4285a9b5c2064f639b97474af250e81c0447b2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.44
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/S2_RAY_AFFINE_CROSSING_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+external_scientific_inputs: displayed five-row s2 same-k table only; no fitted, observational, or literature values are used
+measure_boundary: exact integer and radical algebra on the displayed table
+negative_scope: locked-slope intercept extras cannot restore all-k reverse
+PASS: audit-input-paths declared inputs are exactly the source note and current minimal axioms
+PASS: audit-input-literal AUDIT_INPUT_PATHS is a static tuple of path literals
+PASS: consecutive-slopes every consecutive displayed pair has slopes (1,3)
+PASS: locked-slopes the displayed table has locked slopes (alpha,gamma)=(1,3)
+PASS: constant-intercepts axis and body intercepts extracted from every row are constant
+PASS: affine-recovery every displayed row equals t_axis=k+14 and t_body=3k+3
+PASS: affine-includes-k7 the gapped row k=7 also equals the same affine forms
+PASS: crossing-closed-form the unique positive reverse crossing equals (sqrt(3)*14-3)/(3-sqrt(3))
+PASS: crossing-simplified that crossing equals (11+13*sqrt(3))/2
+PASS: unique-positive-root the quadratic has exactly one positive root and one negative root
+PASS: crossing-decimal k_* is approximately 16.7583 and is less than c2d4 k_* approximately 18.70
+PASS: reverse-k13-k14 reverse holds at k=13 and k=14 on the displayed table
+PASS: reverse-k18 reverse fails at k=18 by 3*32^2=3072<57^2=3249
+PASS: reverse-k19 reverse fails at k=19 by 3*33^2=3267<60^2=3600
+PASS: intercept-extra-leading every locked-slope intercept extra has reverse leading coefficient -6
+PASS: intercept-extra-all-k no tested intercept extra restores reverse for all integers k>k_*
+PASS: intercept-extra-postponement a large axis intercept can hold reverse at k=19 but still fails later
+PASS: source-lattice current minimal axioms still supply the cubic lattice sentence
+PASS: note-contract the note states the three theorems, displayed-not-adopted scope, and machine fields
+PASS: no-go-packet the landed note contains the complete N1-N8 discipline record
+PASS: n5-certificate-source the note carries the exact five forensic resolution lines
+PASS: forbidden-rhetoric the source avoids the forbidden phrases and does not attach a graph-length identification
+PASS: admissibility-untouched the note quotes Admissibility only to refuse writing the table into it
+PASS: claim-scope frontmatter reports affine forms and crossing of the displayed table only
+per_element: each displayed same-k row is checked against the affine forms and the reverse quadratic comparison
+per_site: checked and not executed — no site-wise path search is performed
+per_mode: checked and not executed — no spectral or harmonic mode is asserted
+per_block: intercept extras with locked slopes (1,3) are checked as a family through the leading -6 k^2 coefficient
+lattice_wide: checked and not executed — no lattice-wide search or path listing is claimed
+TOTAL: PASS=24 FAIL=0
+
+----- stderr -----
+

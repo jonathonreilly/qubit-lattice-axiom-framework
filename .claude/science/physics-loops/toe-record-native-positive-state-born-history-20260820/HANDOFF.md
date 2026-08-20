@@ -154,8 +154,8 @@ audit. Proposal delivery is not retention.
 The exact Block-6 science commit is
 `2084d32d79bd6aade8785636c458e9ad2afe25bf`. Its detached committed-tree
 pipeline, strict lint, and seeded committed-delta forensic replay pass; the
-remote Block-5 base is unchanged and PR #7030 remains clean. The next operator
-should open the stacked Block-6 proposal, verify its remote base/head and
-merge state, then start Block 7 from the delivered Block-6 head. Do not copy
-the disposable pipeline's generated ledger/queue surfaces into the proposal
-and do not treat delivery as audit retention.
+remote Block-5 base is unchanged and PR #7030 remains clean. Stacked PR #7031
+is remotely verified `OPEN`, non-draft, and `CLEAN` at exact head
+`d14cc2b1e0b120bb6497301845bc4f970c38188b`. Start Block 7 from that delivered
+head. Do not copy the disposable pipeline's generated ledger/queue surfaces
+into the proposal and do not treat delivery as audit retention.

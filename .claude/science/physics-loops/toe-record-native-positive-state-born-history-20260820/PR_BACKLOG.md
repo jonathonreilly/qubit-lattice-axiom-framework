@@ -124,7 +124,7 @@ seeded committed-delta replay reports `forensic_evidence_ready=true`, zero
 failures/control failures, and the independent helper. PR #7030 is verified
 against the Block-4 branch. No review-loop was used.
 
-## Block 6 — Proposal Validated, PR Opening Pending
+## Block 6 — Proposal Delivered
 
 Branch:
 `physics-loop/toe-instrument-record-state-lift-block6-20260820`, stacked on
@@ -152,6 +152,13 @@ full five-role corrected-science panel pass. Science commit
 pipeline in a detached disposable worktree. The seeded committed-delta replay
 reports `forensic_evidence_ready=true`, zero failures/control failures, and the
 independent helper. The exact remote Block-5 base remains
-`7f22e452ee734a27e69d6b8438b3902e9d76b1b7`, and PR #7030 is clean. Pending:
-metadata commit, push, stacked PR opening, and remote verification. No
-review-loop will be used.
+`7f22e452ee734a27e69d6b8438b3902e9d76b1b7`, and PR #7030 is clean.
+
+Opened and remotely verified:
+
+- [#7031 — typed instrument-to-Record conditional completion — bounded
+  theorem — bounded support](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7031)
+
+PR #7031 is `OPEN`, non-draft, and `CLEAN`, with exact head
+`d14cc2b1e0b120bb6497301845bc4f970c38188b` on the intended Block-5 branch.
+No review-loop was used.

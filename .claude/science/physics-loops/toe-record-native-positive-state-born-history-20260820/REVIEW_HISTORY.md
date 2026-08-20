@@ -870,3 +870,9 @@ external gravity stack remains clean through #7029/Block 158, whose result is
 still a sign-preserving quotient obstruction rather than a positive
 source/rate/lapse connector. No portfolio pivot or percentage movement is
 triggered.
+
+Block 6 was then pushed and opened as PR #7031. Remote verification reports
+the intended Block-5 base, exact head
+`d14cc2b1e0b120bb6497301845bc4f970c38188b`, `OPEN`, non-draft, and `CLEAN`.
+This records proposal delivery only; audit status, retained status, obligation
+retirement, axiom status, and TOE percentages remain unchanged.

@@ -3,10 +3,10 @@
 ## Current State
 
 The 24-hour campaign is active on
-physics-loop/toe-record-native-positive-state-born-history-20260820, based on
-current origin/main at campaign start. Block 1 is a bounded-support proposal;
-there is no audit verdict, retention, obligation retirement, or TOE-score
-movement.
+`physics-loop/toe-record-native-positive-state-born-history-20260820`, based
+on current `origin/main` at campaign start. Block 1 is a committed,
+bounded-support proposal at `74ddaf00af29`; there is no audit verdict,
+retention, obligation retirement, or TOE-score movement.
 
 The prior-art sweep changed the target. Current main already contains a
 complete sampled-law underdetermination pair. The unlanded campaign stack
@@ -87,3 +87,10 @@ The second full panel had high utility—it caught a scope overclaim, a comparat
 mismatch, and a route-bundling error—so the next full five-perspective panel is
 due immediately after Block 2 or after two hours if its premise surface remains
 ambiguous.
+
+Block 1's delivery gates are complete: primary `14/14`, independent `10/10`,
+hostile mutation sweep `10/10`, full repository pipeline pass, strict audit
+lint with no errors, clean merge-base whitespace check, and seeded committed-
+delta evidence readiness with the helper runner populated. The seeded ledger
+shard and generated ledger metadata were diagnostic residue and were removed
+from the proposal worktree; no audit verdict surface is included.

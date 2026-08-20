@@ -264,13 +264,17 @@ repository's twelve-section generation-time conformance check directly.
 11. **Sourced facts/counts — pass.** The runner totals, 24-element rotation
     count, dyadic fractions, graph topology, and panel dispositions were
     recomputed at the current tree; unlanded work remains prior art only.
-12. **Pre-review gates — pass except the inherently post-commit delta check.**
+12. **Pre-review gates — pass, including the committed-delta check.**
     Vocabulary reports zero findings; both runners and the changed graph
     builder compile; primary `14/14`, independent `10/10`, mutation `10/10`,
     the full pipeline, and strict audit lint with no errors pass. Pipeline
     generated surfaces were restored, leaving only the intended delta. The
-    changed-evidence checker and merge-base whitespace check will be run on
-    the committed base-to-head delta before the PR is opened.
+    merge-base whitespace check passes. After seeding the new proposal row for
+    diagnostic inspection, the committed-delta checker reports
+    `forensic_evidence_ready=true`, names the note and both runners as changed
+    surfaces, and populates the independent checker under
+    `helper_runner_paths`. The generated ledger shard and ledger metadata were
+    then removed/restored; no verdict or audit-owned ledger surface is staged.
 
 ## Remote And Ownership Checkpoint
 

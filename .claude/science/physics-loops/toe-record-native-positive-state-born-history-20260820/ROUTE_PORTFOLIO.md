@@ -1,18 +1,22 @@
 # Route Portfolio
 
-Scores are qualitative from zero to three. Risk is subtractive. The initial
-five-physicist panel has been synthesized; dispositions below are now the
-campaign's first portfolio decision rather than provisional rankings.
+Scores are qualitative from zero to three. Risk is subtractive. Three full
+five-perspective checkpoints have now been synthesized; the first rows carry
+the current post-Block-2 ranking.
 
-| Route | Attack frame | Upgrade | Trace | Import retirement | Artifactability | Hard pressure | Risk | Initial disposition |
+| Route | Attack frame | Upgrade | Trace | Import retirement | Artifactability | Hard pressure | Risk | Current disposition |
 |---|---|---:|---:|---:|---:|---:|---:|---|
-| Delayed-setting symmetry-forced midpoint tournament | one local generator prepares `I/2` or `P_z`, then a later setting Record activates X/Y/Z tests; an input-fixing involution must force equal exits | 3 | 3 | 3 | 3 | 3 | -2 | **selected for exactly one terminal block** |
+| Existing-apparatus shared-effect Record-probability and preparation congruence | reuse Cycle 317/321 with `M_A/M_B`, identical `E_0` outcome content, separate process tags, lawful formation, and randomized-preparation forgetting | 3 | 3 | 3 | 3 | 3 | -2 | **selected Block 3; highest non-gravity leverage** |
+| Strict-NN serialization of the existing apparatus | replace bounded host program dispatch with local permanent stage Records and hostile partial-program states | 2 | 3 | 2 | 2 | 3 | -2 | downstream support only if the selected connector needs it |
+| Delayed-setting symmetry-forced midpoint tournament | classify `I/2`/`P_z` fixed-input exchanges and test X/Y/Z against the live cubic | 2 | 3 | 1 | 3 | 3 | -1 | completed bounded Block 2; route corrected, do not repeat |
+| Aligned-certainty microscopic action | derive the `P_z/Z` zero-support row and a true conserved bond current | 1 | 2 | 1 | 2 | 2 | -3 | demoted; cannot touch the oblique cubic or occurrence law |
+| Internal-covariance axiom clarification | make fixed-condition internal equivariance explicit | 1 | 2 | 1 | 2 | 1 | -2 | governance sidecar only; closes five rows, not Born |
 | Generated preparation Record plus tag screening | one kernel generates a classical controller, writes a binary preparation Record, and proves copy tests strongly lump over the spent tag | 2 | 2 | 1 | 3 | 2 | -1 | completed bounded Block 1; no repeat |
 | Preparation Record genesis from one action | encode intervention information in permanent Records and derive its write, resource debit, and future instrument from one finite action | 3 | 3 | 3 | 2 | 3 | -3 | bundled route demoted; action alone supplies no path measure |
 | Record-generated positive preparation without screening | extend the Block-94 controller theory so the law generates the state and trial corpus | 2 | 3 | 2 | 3 | 2 | -2 | demoted; Block 94/100 already construct most of it |
 | Global Record-history completion | condition normalized histories on explicit Record boundary and prove local Admissibility projection | 1 | 2 | 1 | 2 | 2 | -3 | held; Cycle 30 and later cylinders make generic work duplicate |
 | Causal-prestate clarification | type an unreadable quasi-local positive state distinct from readable Records | 2 | 3 | 2 | 2 | 2 | -3 | governance fallback after explicit discriminator only |
-| Preparation-affinity selector | exact same-kernel mixture protocol plus same-effect quotient excludes nonlinear response twins | 3 | 3 | 2 | 2 | 3 | -2 | Block 1 reaches only discrete label-copy statistics under supplied bridge B; strengthened midpoint route selected |
+| Preparation-affinity selector | exact same-kernel mixture protocol plus same-effect quotient excludes normalized-square/non-affine response twins | 3 | 3 | 3 | 2 | 3 | -2 | fused into selected Block 3; compare affine `3/8` with square `9/20` |
 | Existing-stack retention extraction | independently reconstruct the strongest positive candidate and minimize dependencies for audit | 2 | 3 | 1 | 3 | 1 | -1 | support route, not new science alone |
 | Strict-NN compiler continuation | compile controller, preparation, screening, and effect stages under one homogeneous local rule | 3 | 3 | 2 | 2 | 3 | -2 | required in selected feasibility block; global overlap remains downstream |
 | Gravity completion | continue Block 154 or its discriminator | 2 | 2 | 1 | 2 | 3 | -3 | occupied by another worker; do not execute |
@@ -88,3 +92,33 @@ The terminal contract is:
 Literal halves, `|+>`, equal amplitudes, Gibbs/uniform measures, Kraus/Born
 weights, a stored response table, or an unrecorded live qubit trigger an
 immediate pivot to dependency-minimized retention and audit preparation.
+
+## Post-Block-2 Portfolio Recheck
+
+Block 2 met its bounded return but falsified the intended campaign route: the
+Pauli midpoint cannot test the live directional cubic, and its `3/4` requires
+aligned certainty. The panel's prior-art sweep then removed three duplicated
+families from active investment:
+
+- another physical trine/unpaired/Naimark compiler (Cycle 317 already exists);
+- another finite effect-identity quotient compiler (Cycle 321 and historic
+  Cycle 478 already go farther); and
+- another token, pointer, or generic lumpability carrier.
+
+The selected seam is the physical Admissibility-pushforward congruence:
+
+```text
+existing unpaired instrument + exact shared effect
+  -> lawful one-outcome Record formation
+  -> same marginal probability across program contexts
+  -> separate process/update tags retained
+  -> physical randomized-preparation forgetting
+  -> affine state identification or exact surviving countermodel.
+```
+
+A success retires one bounded finite effect-probability/Record connector and
+becomes composable with the existing conditional Born-forcing theorem. A
+lawful affine/non-affine full-history pair does not retire the connector, but
+it justifies a dependency-minimized owner decision packet. Anything that
+merely writes a trace table, samples a supplied uniformizer, postselects
+failures, or calls a pointer label a Record is blocked-equivalent.

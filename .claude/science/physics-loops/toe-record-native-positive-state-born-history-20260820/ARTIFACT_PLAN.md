@@ -36,11 +36,11 @@ Delivered:
 Pending before delivery: final direct self-review, vocabulary/conformance
 checks, cache refresh after panel narrowing, commit, push, and PR verification.
 
-## Terminal Quantum-Content Block — Selected
+## Terminal Quantum-Content Block — Block 2 Complete Locally
 
-- symbolic two-exit generator and explicit branch-ratio deformation;
+- symbolic two-atom law and explicit branch-ratio deformation;
 - input-fixing output-exchange involution or exact minimal extensional datum;
-- conserved fuel/current identity rather than a label-only debit;
+- exact fuel-debit invariant, explicitly demoted from physical current;
 - preparation followed by independently later X/Y/Z setting Records;
 - tag-screening/strong-lumpability over controller and fuel histories;
 - exact midpoint comparison `3/4`, `9/10`, `9/16` with X/Y controls;
@@ -49,6 +49,38 @@ checks, cache refresh after panel narrowing, commit, push, and PR verification.
 Stop and pivot to retention extraction if any target weight, initial symmetric
 state, path measure, response table, Born/Kraus rule, or unrecorded causal state
 is inserted.
+
+Delivered locally:
+
+- exact `s dot n=0` complete-input stabilizer classification;
+- explicit scalar guards, outcome contents, and completed six-site star;
+- aligned-response residual `1/4+a/2` and the Pauli/cubic type correction;
+- primary `17/17`, independent `10/10`, with hostile setting/guard/fuel
+  deletions; and
+- current-main N1--N8 packet passing only at the narrow algebraic scope.
+
+## Shared-Effect Record Congruence Block — Block 3 Selected
+
+- reuse the existing Cycle-317 unpaired physical program and the exact
+  `M_A/M_B` pair sharing `E_0=(1/2)P_z`;
+- store identical `kappa(E_0,l_0)` outcome content across contexts and keep
+  the setting/process tags separately;
+- require one fixed law to select a formation site and exactly one outcome,
+  normalize with all no-click/collision alternatives included, and append a
+  lawful permanent Record;
+- test marginal same-effect probability descent without promoting equal
+  effects to equal CP processes;
+- test physical preparation-tag forgetting against direct barycenter content,
+  comparing affine `3/8` with normalized-square `9/20`;
+- include translation/proper-cubic, deletion, ambiguity, inverse,
+  partial-program, and serial-history controls; and
+- treat trace/Kraus weights, supplied uniformizers/seeds, host-side equality or
+  forgetting, postselection, and pointer-to-Record relabeling as stop
+  conditions.
+
+Accept a positive block only if the connector is produced by the same local
+law. Otherwise produce the exact full-law countermodel/decision packet and do
+not claim axiom necessity before audit.
 
 ## Negative Or Axiom-Decision Block
 

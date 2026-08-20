@@ -1,6 +1,6 @@
 {
- "edge_count": 15756,
- "node_count": 5559,
+ "edge_count": 15766,
+ "node_count": 5560,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -3069,6 +3069,10 @@
   "decoherence_failure_analysis": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "delayed_axis_input_stabilizer_midpoint_type_boundary_bounded_theorem_note_2026-08-20": {
+   "deps_hash": "f0e19b6ae724",
+   "out_degree": 10
   },
   "delta_magnitude_reduces_to_massless_gravity_scale_narrow_theorem_note_2026-06-06": {
    "deps_hash": "a38ede67de87",

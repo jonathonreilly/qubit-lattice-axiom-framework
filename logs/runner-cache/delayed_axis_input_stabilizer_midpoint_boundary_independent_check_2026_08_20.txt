@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/delayed_axis_input_stabilizer_midpoint_boundary_independent_check_2026_08_20.py
+runner_sha256: 940f18e6d7aa6e8cf67dfe792e0194e711fc81e09d72e88f3c45c7eb3adda68b
+input_fingerprint_sha256: 5335db53872fb738df6375903507462b607d7ce3402e074633b1ce95ca84f0e4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.56
+status: ok
+----- stdout -----
+PASS [sources] independent inputs bind the distribution-value firewall, orbit theorem, and directional cubic
+PASS [matrix-stabilizers] direct conjugation and spatial slot transport independently reproduce exactly five complete-star Pauli sign-swap rows
+PASS [typing-walls] an oriented X projector changes under its swap and I/2 cannot be conjugated to P_z
+PASS [symbolic-residual] symbolic normalization gives (1+epsilon)/2 and a fair controller leaves 1/4+a/2
+PASS [delayed-table] separate Pauli reconstruction gives transverse halves and conditional aligned-certainty three quarters
+PASS [cubic-domain] a pure-Z fixed swap exists exactly on the equator, so it cannot swap the half-overlap direction while affine and cubic agree at Pauli overlaps
+PASS [token-debit-invariant] two independently reconstructed consumer writes transfer available to spent tokens without changing the stoichiometric total
+PASS [quotient] 36 raw histories lump on preparation plus setting, while either live field deletion fails
+PASS [source-contract] the note and primary expose conditional covariance, aligned certainty, the type correction, and narrow no-go boundary
+per_element: independently reconstructed matrix spectra, projector swaps, and supported outcome rows
+per_site: independently checked the preparation-axis-resource complete-input stabilizer classification
+per_mode: rebuilt mixed, pure, Pauli, oblique, affine, cubic, square, and epsilon comparisons
+per_block: rebuilt fair-controller residual, token debit transfer, delayed table, quotient, and deletion failures
+lattice_wide: checked and not executed — arbitrary menus, autonomous setting genesis, action, time, and actuality remain open
+PASS [n5-certificate] independent evidence contains all five substantive forensic resolution classes
+SUMMARY: PASS=10 FAIL=0
+
+----- stderr -----
+

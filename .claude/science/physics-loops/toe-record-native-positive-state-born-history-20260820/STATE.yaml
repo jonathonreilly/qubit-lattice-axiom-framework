@@ -8,20 +8,20 @@ checkpoint_interval: 30m
 portfolio_recheck_interval: 2h
 panel_size: 5
 panel_cadence: full_five_after_each_major_result_or_2h_while_route_ambiguous
-panel_cadence_policy: second_panel_caught_overclaim_and_redirect_so_keep_full_five; widen_only_after_two_redundant_panels
-cycle: 3
-science_block: 1
-branch: physics-loop/toe-record-native-positive-state-born-history-20260820
-base: origin/main@005f047923055e6ecd5dc8bce1ffd71765c2ffd8
-worktree: /private/tmp/toe-record-native-born-20260820.sXpUoN
+panel_cadence_policy: block2_panel_caught_three_executable_scope defects and a duplicated route, then converged on one post-prior-art connector; keep full_five after the next major result, but use a two-seat checkpoint only if two consecutive panels become redundant
+cycle: 5
+science_block: 2
+branch: physics-loop/toe-delayed-setting-midpoint-symmetry-block2-20260820
+base: physics-loop/toe-record-native-positive-state-born-history-20260820@fe84b5c5307aee2ac8e5c4d09d3c7b5f241f3797
+worktree: /private/tmp/toe-delayed-setting-midpoint-20260820.dsxAJR
 lock_mode: cooperative
 lock_owner: codex-root
 review_loop: disabled_by_user
 goal_ledger: prior_goal_usage_limited; this pack records the active user-authorized campaign
 goal: construct the shortest honest Record-native positive-state and Born-history completion, or identify the exact minimal law or axiom datum that prevents it
-active_route: one_terminal_delayed_setting_symmetry_forced_midpoint_tournament
-hard_residual: derive the fair controller and orthogonal-test ratios from an input-fixing output-exchange involution of one local generator, type a conserved resource debit, and prove delayed X/Y/Z Record tests strongly lump over spent controller and fuel histories without a Born/Kraus rule, probability table, hidden live state, or supplied symmetric state
-target_contract_status: block1_narrowed_bounded_support_24_of_24_checks_panel_redirect_to_terminal_block2
+active_route: shared_effect_ternary_record_probability_and_preparation_congruence_tournament
+hard_residual: derive whether the physical Admissibility pushforward commutes with the existing Cycle-317/321 shared-effect operational quotient and with randomized-preparation tag forgetting, while forming one lawful Record and keeping unequal post-outcome processes distinct; do not insert trace weights, a sampler, or host-side forgetting
+target_contract_status: block2_bounded_corrective_return_27_of_27_checks_full_five_panel_redirect_to_existing_apparatus_probability_record_connector
 authority_surface:
   - docs/MINIMAL_AXIOMS_2026-06-29.md
   - docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md
@@ -73,5 +73,5 @@ checkpoint_zero_toe_map:
     autonomous_closure_percent: 34
     evidence_ceiling_percent: 99
 percentage_rule: freeze until independently retained obligation retirement; unlanded constructions and route confidence do not move scores
-next_exact_action: package Block 1 after direct conformance, then build one delayed-setting midpoint apparatus with symbolic branch deformation, an explicit input-fixing exchange involution, conserved fuel current, post-preparation X/Y/Z setting Records, and strong lumpability; stop model construction if any half-weight or quantum response is inserted rather than derived
+next_exact_action: package Block 2 after direct conformance, then reuse the existing Cycle-317 unpaired apparatus and the exact shared-effect M_A/M_B pair in one delayed-choice Record-formation and randomized-preparation congruence tournament; a positive block must derive the connector under one fixed local law, while a surviving full-law pair becomes the dependency-minimized owner-facing law-datum packet
 stop_condition: campaign deadline, exact global blocker exhausting all ranked routes, or a genuine ownership or tooling conflict preventing non-overlapping work

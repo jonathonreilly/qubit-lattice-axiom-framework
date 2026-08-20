@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/delayed_axis_input_stabilizer_midpoint_boundary_2026_08_20.py
+runner_sha256: 1ba8f73db27a1dc1d04439e53352afe2fa130b59aef457694f53a865b274497e
+input_fingerprint_sha256: 4c080d0b8c3c86404c1a79c963af6b51995752281d39f5f6553fb2380c7a20c0
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+PASS [sources] the live axiom distribution clause and the two exact prior comparator surfaces are bound
+PASS [geometry] the proper-cubic group has 24 elements and the half turn used by every setting pair is represented
+PASS [stabilizers] complete-input sign-swapping stabilizers exist exactly for mixed X/Y/Z and pure-Z transverse X/Y rows
+PASS [axis-typing] an oriented setting and an identical but internally noninvariant guard pair both fail the complete-input fixed-point test
+PASS [atom-weight-deformation] symbolic two-atom weights retain epsilon unless an input-fixing exchange equates them
+PASS [pauli-rows] stabilizers force every supported transverse row while the supplied orthogonality-support rule makes pure Z-on-Z deterministic
+PASS [aligned-response-residual] a fair controller leaves the delayed Z transcript equal to one quarter plus one half of the aligned certainty
+PASS [delayed-midpoint] a symmetry-forced fair tag followed by the supplied tag-to-preparation compiler gives late X/Y halves and a late Z three-quarter transcript
+PASS [named-midpoint-controls] the physical mixture transcript is 3/4, normalized square is 9/10, and the explicitly typed radial cubic extension is 9/16
+PASS [directional-cubic-type-boundary] Born and the current directional cubic agree on pure-Z Pauli X/Y/Z rows but differ at the oblique half-overlap direction
+PASS [oblique-stabilizer-wall] the pure-Z stabilizer preserves n_z and cannot exchange an oblique n_z=1/2 outcome with its complement
+PASS [spectral-controller-wall] unitary conjugation cannot exchange I/2 and P_z because their exact spectra differ
+PASS [token-debit-invariant] the same two writes consume distinct tokens with Delta available=-1, Delta spent=+1 and conserved stoichiometric count
+PASS [record-fibre-lumpability] outcome laws factor through current preparation plus later setting Records over controller route and receipt history
+PASS [delayed-setting-order] the setting Record is formed strictly after preparation and strictly before the outcome Record
+PASS [claim-boundary] the note exposes the axiom-interpretation wall, type correction, narrow no-go scope, and zero formal progress
+per_element: exact preparation spectra, supported outcome labels, and input-fixing conjugation rows are checked
+per_site: one complete six-neighbour tester star with preparation, fuel, axis-pair, and guard Records is classified
+per_mode: mixed and pure preparations, X/Y/Z and oblique settings, affine, square, cubic, and epsilon modes run
+per_block: controller and aligned-response residuals, two-token debit invariant, delayed order, quotient, and deletions are checked
+lattice_wide: checked and not executed — arbitrary axes, full menu registration, autonomous settings, time, and actuality remain open
+PASS [n5-certificate] all five landing-resolution statements are substantive and at least forty characters
+SUMMARY: PASS=17 FAIL=0
+
+----- stderr -----
+

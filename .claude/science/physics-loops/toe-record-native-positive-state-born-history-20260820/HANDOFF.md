@@ -2,11 +2,10 @@
 
 ## Current State
 
-The 24-hour campaign is active on
-`physics-loop/toe-record-native-positive-state-born-history-20260820`, based
-on current `origin/main` at campaign start. Block 1 is a committed,
-bounded-support proposal at `74ddaf00af29`; there is no audit verdict,
-retention, obligation retirement, or TOE-score movement.
+The 24-hour campaign is active. Block 1 is proposed in PR #7020. Block 2 is
+stacked on its delivered head and now returns a bounded corrective theorem;
+there is no audit verdict, retention, obligation retirement, or TOE-score
+movement.
 
 The prior-art sweep changed the target. Current main already contains a
 complete sampled-law underdetermination pair. The unlanded campaign stack
@@ -52,32 +51,44 @@ power is not the known directional cubic survivor.
 
 ## Next Exact Action
 
-Block 1 has executed the minimal compiler tournament. The bounded positive
-result is in
-`docs/RECORD_NATIVE_DYADIC_PREPARATION_TAG_SCREENING_BOUNDED_THEOREM_NOTE_2026-08-20.md`,
-with primary `14/14` and independent `10/10` checks. It establishes current-
-ontology binary Record feasibility and, under supplied bridge `B`, rejects two
-named normalized-power responses on the dyadic copy-statistic family. It does
-not establish quantum preparation, a general affine law, or the actual cubic
-directional discriminator.
+Block 2 is the exact return from the delayed-setting tournament. It derives
+the all-axis fixed-input criterion `s dot n=0`, hence five positive Pauli rows,
+but the `3/4` transcript still needs aligned certainty and Pauli-only tests do
+not touch the directional cubic. Its debit is stoichiometric rather than a
+physical current. Primary `17/17` and independent `10/10` checks execute the
+complete star, hostile guard and oriented-setting mutations, symbolic
+aligned residual, all-axis invariant, and Record/fuel-sector quotient.
 
-The completed post-result panel selected exactly one terminal Block 2:
+The full five-person panel unanimously rejected another unpaired-menu,
+pointer, quotient, or token compiler. Cycle 317 already supplies the physical
+forcing apparatus; Cycle 321 supplies the exact effect/process separator;
+Cycle 339 supplies an endpoint/content comparison connector; historic Cycle
+478 terminally compiles one finite quotient; August 10--13 supplies multiple
+mathematical measure-to-grade compilers and a non-affine survivor; historic
+Cycle 508 shows actuality can remain strongly non-Born.
 
-1. keep the two controller/output rates symbolic;
-2. derive equality only from an involution fixing the complete input/resource
-   state and exchanging exhaustive outputs;
-3. make fuel loss physical by proving a conserved charge/current identity;
-4. write the X/Y/Z setting Record after preparation;
-5. prove delayed outcome laws strongly lump over controller and fuel history;
-6. obtain the midpoint Z transcript `3/4`, versus normalized square `9/10`
-   and the actual directional cubic `9/16`, with X/Y symmetry controls.
+The selected Block 3 is one shared-effect ternary Record-probability and
+randomized-preparation congruence tournament:
 
-If a literal `1/2`, symmetric ancilla/state, Gibbs or uniform measure,
-Born/Kraus rule, hard-coded response table, bookkeeping-only debit, or hidden
-live qubit enters, stop model construction and pivot to dependency-minimized
-landing/audit preparation. A hand-built controlled copy, another commuting
-rail, or a positive-dimensional unconstrained action family is likewise a
-pivot result.
+1. reuse the exact `M_A/M_B` menus sharing `E_0=(1/2)P_z` and the existing
+   Cycle-317 program family;
+2. use delayed setting Records and the exact `kappa(E,l)=E+i l I` carrier,
+   with identical outcome content for `E_0` and context stored separately;
+3. compare the marginal `E_0` Record-formation law across contexts while
+   retaining unequal post-outcome process tags;
+4. compare a physical randomized preparation with its direct barycenter
+   presentation, targeting affine `3/8` versus normalized-square `9/20` on
+   the Block-2 mixture;
+5. require one fixed physical law to select the formation site, exactly one
+   outcome, exhaustive normalization including failures, lawful Record append,
+   and future-equivalence; and
+6. stop on inserted trace/Kraus weights, supplied seed/uniformizer, host-side
+   forgetting/effect equality, postselection, or pointer-to-Record relabeling.
+
+A positive connector is a bounded genuine obligation retirement candidate.
+If two full lawful Record-history laws survive with affine and non-affine
+preparation descent, prepare the exact owner-facing independent-datum packet;
+do not edit an axiom or call necessity established before independent audit.
 
 ## Review And Delivery
 
@@ -96,3 +107,12 @@ shard and generated ledger metadata were diagnostic residue and were removed
 from the proposal worktree; no audit verdict surface is included.
 [PR #7020](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7020)
 is the bounded-support proposal surface.
+
+Block 2 remains in direct-author delivery preparation. Review-loop remains
+disabled. The post-Block-2 five-person panel had high utility: it exposed
+hard-coded executable fixed-point booleans, non-scalar guard ambiguity,
+label-only outcomes, rate/current type inflation, a stale compiler
+recommendation, and the exact prior-art-saturated next seam. The runners and
+note were repaired before cache generation. A new full-five panel is due
+after the next major result; if two later panels become redundant, the cadence
+may temporarily narrow to two adversarial seats.

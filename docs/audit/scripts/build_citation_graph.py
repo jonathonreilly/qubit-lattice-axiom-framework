@@ -151,6 +151,11 @@ HEADING_RE = re.compile(r"^#{1,6}\s+", re.MULTILINE)
 LINK_RE = re.compile(r"\[[^\]]*\]\(([^)\s#]+\.md)(?:#[^)]*)?\)")
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    # Independently rebuilds the complete-star matrix stabilizers, symbolic
+    # atom-weight residual, token debit, Record quotient, and type boundary.
+    "delayed_axis_input_stabilizer_midpoint_type_boundary_bounded_theorem_note_2026-08-20": [
+        "scripts/delayed_axis_input_stabilizer_midpoint_boundary_independent_check_2026_08_20.py",
+    ],
     # Independently rebuilds the finite frontier census, absorbing recursion,
     # Record quotient, covariance, and named response residuals for this claim.
     "record_native_dyadic_preparation_tag_screening_bounded_theorem_note_2026-08-20": [

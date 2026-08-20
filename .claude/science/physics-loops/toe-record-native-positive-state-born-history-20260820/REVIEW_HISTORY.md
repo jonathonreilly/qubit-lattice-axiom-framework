@@ -288,3 +288,91 @@ repository's twelve-section generation-time conformance check directly.
   positive-time-sector connection invisibility, two withdrawn solve claims,
   an open flat-limit calibration gap, and zero reported TOE movement. Gravity
   remains externally owned; no gravity branch was edited or duplicated here.
+
+## Science Block 2 — Complete-Input Stabilizer And Midpoint Boundary
+
+Block 2 executes the terminal delayed-setting request but returns a route
+correction rather than Born closure.
+
+- For preparation Bloch vector `s` and binary menu axis `n`, a represented
+  internal orthogonal action fixing `s` and exchanging `n` with `-n` exists
+  exactly when `s dot n=0`.
+- On the six Pauli rows for `I/2` and `P_z`, exactly five have the required
+  fixed-input exchange. The aligned `P_z/Z` row needs a separately supplied
+  orthogonality/support rule.
+- A fair `I/2`/`P_z` controller gives `1/4+a/2`; `3/4` therefore occurs iff
+  aligned certainty `a=1`. The directional cubic is compatible at `a=5/8`,
+  while a `9/10` final transcript would require the impossible `a=13/10`.
+- Born and the live directional cubic agree on the tested Pauli endpoints and
+  differ at the oblique half-overlap direction, where no `P_z`-fixed output
+  exchange exists. The selected protocol cannot retire the cubic.
+- The fuel result is a stoichiometric available-to-spent debit invariant, not
+  a lattice current, energy, stress tensor, action, or clock theorem.
+
+After panel challenge, the runners were upgraded to compute the full spatial
+and internal transformation of all six input contents, require scalar guards,
+encode the outcome contents explicitly, execute an internally noninvariant
+guard mutation, prove the all-axis invariant independently, and test deletion
+of the current fuel sector. Primary passes `17/17`; independent passes `10/10`.
+The no-go packet was rebuilt to current-main N1--N8 requirements. It passes
+only for the two narrow algebraic boundaries and rejects broad Born, Record,
+composite-carrier, and axiom-necessity claims.
+
+## Post-Block-2 Five-Physicist Panel — Complete
+
+The panel ran in two waves and was normalized against Cycle 317/321/334/339,
+historic Cycle 408/478/508, and the August 10--13 distribution-to-grade chain.
+
+### 1. Mathematical uniqueness
+
+Validated the `s dot n=0` theorem and caught the original executable
+hard-coding. It showed that Cycle 317 already provides the unpaired menu that
+rejects the cubic conditionally, Cycle 478 already reaches a terminal finite
+quotient compiler, and the true post-prior-art question is whether the
+physical Admissibility pushforward commutes with operational coarse-graining
+and randomized-preparation forgetting.
+
+### 2. Locality and quantum-gravity typing
+
+Validated the central NN star but required scalar guards, explicit outcome
+contents, and local sequential formation of the distance-two setting packet.
+It demoted `gamma` from rates to atom weights and the token `current` to
+stoichiometry. It found no gravity integration: no source, energy, bond flux,
+stress tensor, reciprocal response, or clock exists in the block.
+
+### 3. Skeptical TOE director
+
+Rated another compiler at `1/10` and the existing-apparatus probability/
+history binding at `8/10`. It required reusing Cycle 317/321/334 and rejected
+aligned-certainty action work as unable to touch the oblique cubic. No
+portfolio percentage or obligation moved.
+
+### 4. Operational foundations
+
+Specified the exact shared-effect experiment: the two ternary menus `M_A/M_B`
+share `E_0=(1/2)P_z`; the outcome Record must carry identical
+`kappa(E_0,l_0)` content while the context and unequal process/update tags are
+kept separately. Context descent distinguishes effect functionality;
+preparation randomization distinguishes barycenter `3/10` from normalized
+square `9/26`. It supplied explicit stop conditions against postselection,
+host equality, sampler insertion, and pointer-to-Record relabeling.
+
+### 5. Axiom minimality and governance
+
+Cold-ran five countermodel/completion suites and concluded that the shortest
+legitimate closure is a downstream retained law, not a clarification or new
+axiom. Internal covariance could close five rows only. A Q8 law pair warns it
+is not explicit; a normalized-square kernel preserves effect functionality
+while violating preparation affinity; an atomic Born completion fits the
+existing carrier. The decisive next comparison is affine `3/8` versus
+normalized-square `9/20` on the Block-2 randomized preparation under the same
+existing unpaired program and lawful Record formation.
+
+### Panel synthesis and cadence
+
+All five perspectives converge on one Block-3 tournament: derive or falsify
+the shared-effect Record-probability and randomized-preparation congruence on
+the existing apparatus. No new axiom wording is justified. Panel utility is
+again high because it corrected three executable/type defects and prevented a
+duplicate route. Keep the next full-five trigger after the next major result;
+use a two-seat checkpoint only after two consecutive redundant panels.

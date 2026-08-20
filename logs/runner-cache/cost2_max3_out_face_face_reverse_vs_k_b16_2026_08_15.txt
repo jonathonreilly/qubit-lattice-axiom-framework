@@ -1,0 +1,60 @@
+===== runner cache v1 =====
+runner: scripts/cost2_max3_out_face_face_reverse_vs_k_b16_2026_08_15.py
+runner_sha256: 03aaa6f3169ff387df11c4fbaec9b42ebfc2a185290b80ba8b5dc13b106886d6
+input_fingerprint_sha256: 9c271dfb214ed0c84aa1c9235f0a7a764d7659e1fe6c582390d23929e8f8a5a3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/COST2_MAX3_OUT_FACE_FACE_REVERSE_VS_K_B16_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+claim_scope: Face reverse under the named cost-2 max≥3 out-face hop-cost on B_16(0) at k=1..8 is reported. Displayed, not adopted.
+PASS: audit-input-paths declared inputs are the source note and the current axiom memo
+PASS: audit-input-literal AUDIT_INPUT_PATHS is a static string-literal tuple
+PASS: claim-scope note claim_scope matches the displayed scoring statement
+PASS: displayed-not-adopted the rule is displayed, not adopted
+PASS: not-in-admissibility c2d3 is not written into Admissibility
+PASS: not-attach-l1 the displayed rule is not attached to L1
+PASS: uniqueness-not-claimed uniqueness among hop-costs is not claimed
+PASS: no-axiom-edit note records hypothetical axiom status no edit
+PASS: forbidden-absent forbidden phrases are absent from the source note
+PASS: cache-false the note records cache_write false
+n_sites 6017
+available_k [1, 2, 3, 4, 5, 6, 7, 8]
+k=1 t(2, 0, 0)=6 t(1, 1, 0)=4 axis_dens 36/4 face_dens 16/2 cmp 36 ? 32 reverse True
+k=2 t(4, 0, 0)=12 t(2, 2, 0)=8 axis_dens 144/16 face_dens 64/8 cmp 144 ? 128 reverse True
+k=3 t(6, 0, 0)=18 t(3, 3, 0)=10 axis_dens 324/36 face_dens 100/18 cmp 324 ? 200 reverse True
+k=4 t(8, 0, 0)=24 t(4, 4, 0)=13 axis_dens 576/64 face_dens 169/32 cmp 576 ? 338 reverse True
+k=5 t(10, 0, 0)=26 t(5, 5, 0)=16 axis_dens 676/100 face_dens 256/50 cmp 676 ? 512 reverse True
+k=6 t(12, 0, 0)=28 t(6, 6, 0)=19 axis_dens 784/144 face_dens 361/72 cmp 784 ? 722 reverse True
+k=7 t(14, 0, 0)=31 t(7, 7, 0)=22 axis_dens 961/196 face_dens 484/98 cmp 961 ? 968 reverse False
+k=8 t(16, 0, 0)=37 t(8, 8, 0)=24 axis_dens 1369/256 face_dens 576/128 cmp 1369 ? 1152 reverse True
+hold_fail_pattern yes,yes,yes,yes,yes,yes,no,yes
+dijkstra_calls 1
+c2d3_max3_out 2
+rho3_max3_out 1
+c2d3_deep_out 1
+c2d3_extra_deep_out False
+c2d3_unit_out 3
+c2d3_extra_unit_out False
+mu_unit_out 3
+PASS: theorem-1 computed arrivals match the displayed B_16(0) table
+PASS: reverse-bits displayed reverse bits match t(2k,0,0)^2 > 2 t(k,k,0)^2
+PASS: hold-fail-pattern the eight bits are yes,yes,yes,yes,yes,yes,no,yes
+PASS: one-dijkstra exactly one Dijkstra ran
+PASS: ball-b16 B_16(0) has 6017 sites and 6016 nonzero sites
+PASS: reachable every site of B_16(0) is reached
+PASS: available-k-1-8 every k=1..8 pair lies in B_16(0); none omitted
+PASS: max3-out-face-hop the named max>=3 out-face hop (3,3,0)->(4,3,0) has c2d3=2 and rho3=1
+PASS: unit-out-face-skipped unit-out-face (1,1,0)->(2,1,0) is skipped by the extra clause
+PASS: deep-out-face-skipped deep-out-face (2,2,0)->(3,2,0) is skipped because source max is 2
+PASS: cost-2-not-3 max>=3 out-face growth is cost 2, not 3
+PASS: seed-and-axis-clauses seed-exit and both-weights-1 cost 3; support increase costs 1
+PASS: axiom-untouched the axiom memo is an input only and still names the four axioms
+TOTAL: PASS=23 FAIL=0
+
+----- stderr -----
+

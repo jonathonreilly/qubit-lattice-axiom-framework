@@ -1,0 +1,51 @@
+===== runner cache v1 =====
+runner: scripts/kappa_late_leave_var_vs_kappa_rho3_b12_2026_08_15.py
+runner_sha256: 03d5eed62c460374c0702c439bc02ef348e6ac0a59c2f28e068bfbab0079697f
+input_fingerprint_sha256: 893f485a82fd3662d625ae35bcc29d9a44d52479f2453da8ba69d08e125ecebe
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+claim_scope: Arrival-speed variance under kappa-plus-late-leave, ridge-enter, and ridge-slide on B_12(0) is compared. Displayed, not adopted.
+cache_write: false
+external_scientific_inputs: current Lattice, Admissibility, and Record wording; no observation or fit
+integrity_reads: this runner, its note, and the axiom memo; no other scientific inputs
+construction: three directed Dijkstras on the induced B_12(0) graph
+negative_scope: displayed scores are not adopted and L1 is not attached
+PASS: audit-inputs the two declared source-bound inputs exist
+PASS: audit-tuple-literal AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: claim-scope front matter uses the declared claim_scope
+PASS: source-lattice current cubic nearest-neighbor wording is pinned
+PASS: source-admissibility current local-distribution wording is pinned
+PASS: source-formation-boundary formation site/probability/rate remains outside Admissibility
+PASS: source-record-boundary current lock/content/unreadable-at-absence wording is pinned
+PASS: ball-cardinality B_12(0) has 2625 sites and 2624 nonzero sites
+PASS: three-dijkstras exactly three Dijkstras run and each named cost reaches every ball site
+PASS: named-clauses ρ3 prices ridge 3→3; κ adds ridge-enter 2→3; κλ adds late 1→2
+Q_kappa_lambda = 8065845471432407489/37031456927424960000
+Q_kappa = 8065845471432407489/37031456927424960000
+Q_rho3 = 8080835149812247289/37031456927424960000
+var_kappa_lambda = 0.005030477616848010
+var_kappa = 0.005030477616848010
+var_rho3 = 0.005047718614862020
+dijkstra_calls 3
+PASS: second-moments the three exact second moments match the note
+PASS: reported-variances the note reports the three truncated population variances
+PASS: variance-order κλ and κ have equal variance and both are strictly rounder than ρ3
+lex_first_minimizer = kappa
+PASS: lex-first-minimizer the lex-first minimizer among the three names is κ
+PASS: forbidden-phrases note and runner omit the forbidden phrases
+PASS: theorems-displayed three theorems are present and the scores are displayed, not adopted
+PASS: no-admissibility-write the note refuses to write κλ, κ, or ρ3 into Admissibility
+PASS: no-l1-attach the note does not attach L1
+PASS: uniqueness-not-claimed uniqueness among hop-costs is not claimed
+PASS: late-leave-live-same-field late 1→2 is live on hops, yet the origin arrival field of κλ equals that of κ
+PASS: axiom-untouched the axiom memo is an input only and still names the four axioms
+per_element: checked exactly — each of the 2624 nonzero B_12(0) sites receives three arrival times
+per_site: checked exactly — population variance uses |v|_2/t at every nonzero site
+per_mode: checked exactly — three named hop-costs only; no other clause triple is scored
+TOTAL: PASS=21 FAIL=0
+
+----- stderr -----
+

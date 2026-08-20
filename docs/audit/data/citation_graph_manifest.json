@@ -1,6 +1,6 @@
 {
- "edge_count": 16088,
- "node_count": 5578,
+ "edge_count": 16091,
+ "node_count": 5579,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -488,6 +488,10 @@
   },
   "admissibility_dirac_kahler_isospectral_similarity_theorem_bounded_theorem_note_2026-08-19": {
    "deps_hash": "c19033c57ef6",
+   "out_degree": 3
+  },
+  "admissibility_dirac_kahler_joint_lane_flip_enumeration_bounded_theorem_note_2026-08-20": {
+   "deps_hash": "baf7a8bac36b",
    "out_degree": 3
   },
   "admissibility_dirac_kahler_local_dual_patch_descent_bounded_theorem_note_2026-08-15": {

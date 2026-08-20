@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/occupancy_vs_seed_content_firstwave_mask_2026_08_15.py
+runner_sha256: 04bb1a290e2dbf1e3e60e949c6a35c255e2ac1c2717d81f4834448453e3e36b1
+input_fingerprint_sha256: 4c9430640f9b06560195c034fb03a1d760d54d63b4cfc678ef2e3aa2b23c1006
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+construction: synchronous formation-tick on 6-NN already-formed sites
+cache_write: false
+AUDIT_INPUT_PATHS:
+  docs/OCCUPANCY_VS_SEED_CONTENT_FIRSTWAVE_MASK_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+seed_letter: +
+seed_axis: (1, 0, 0)
+occupancy_mask: (1, 1, 1, 1, 1, 1)
+content_mask: (1, 0, 0, 0, 0, 0)
+occupancy_ticks: t100=1 t111=3 t200=2 t110=2
+content_ticks: t100=1 t111=None t200=2 t110=None
+occupancy_reverse_face: False False
+content_reverse_face: None None
+PASS: audit-input-paths-static AUDIT_INPUT_PATHS is the declared note-plus-axiom tuple
+PASS: audit-inputs-exist both declared inputs exist
+PASS: mask-host-seven mask host is origin plus six NN
+PASS: b3-l1-radius-three formation-tick host is B_3(0) and contains the four k=1 score sites
+PASS: seed-letter-not-in-n L1 n uses occupied degree only; seed letter is not an occupancy count
+PASS: occupancy-first-wave-all-six occupancy 6-mask is all-form at tick 1
+PASS: content-first-wave-named-axis content 6-mask forms only the named + axis
+PASS: theorem1-masks-disagree the two 6-masks do not agree
+PASS: occupancy-ticks-k1 occupancy t(1,0,0)=1 and t(1,1,1)=3, with t(2,0,0)=2 and t(1,1,0)=2
+PASS: theorem2-occupancy-bits occupancy reverse and face bits are both false
+PASS: content-ticks-k1 content t(1,0,0)=1 and t(2,0,0)=2; t(1,1,1) and t(1,1,0) stay unformed
+PASS: theorem3-bits-disagree content reverse/face bits are undefined and do not agree with occupancy
+PASS: wavefront-synchronous runner uses a synchronous wavefront and no shortest-path library
+PASS: claim-scope-and-display note states the compared scope as displayed, not adopted
+PASS: axiom-boundary current axioms supply occurrence and content typing, not this formation rule
+PASS: forbidden-phrases-absent note contains none of the forbidden phrases
+PASS: note-records-computed-masks note records the computed 6-masks and k=1 bits
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

@@ -1,6 +1,6 @@
 {
- "edge_count": 15752,
- "node_count": 5558,
+ "edge_count": 15753,
+ "node_count": 5559,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1657,6 +1657,10 @@
   "c2_weighting_normal_form_one_parameter_uniqueness_bounded_note_2026-07-02": {
    "deps_hash": "161b289f6620",
    "out_degree": 3
+  },
+  "c2d4_soft_ridge_cost2_samek_k7_b21_bounded_theorem_note_2026-08-15": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "c3_bloch_orbit_is_three_menu_not_unital_m3_bounded_theorem_note_2026-08-13": {
    "deps_hash": "c8eee4235fc9",

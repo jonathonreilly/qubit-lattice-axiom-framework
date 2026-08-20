@@ -1,0 +1,72 @@
+===== runner cache v1 =====
+runner: scripts/c2d4_interior_cost2_samek_k18_b54_2026_08_15.py
+runner_sha256: 3cd6350add40ef705b2827c232354d694a16db0ef6c5562b02f999ab67b3630d
+input_fingerprint_sha256: 1c686de3d80f03b03bd923b0a53d83a3ee6a8c1f7de751711e1203b5175b8122
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 11.80
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/C2D4_INTERIOR_COST2_SAMEK_K18_B54_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+claim_scope: Same-k reverse at k=18 under the named c2d4-plus-interior hop-cost on B_54(0) is reported. Displayed, not adopted.
+external_scientific_inputs: none; named hop-cost on the finite nearest-neighbor graph B_54(0) only
+package_local_integrity_reads: proposed source note and live axiom memo only; no cache or governance surface is written
+measure_boundary: integer hop-costs and one Dijkstra; no fit and no second graph search
+claim_boundary: same-k reverse at k=18 is displayed, not adopted
+n_sites 215929
+t(18,0,0) = 34
+t(18,18,18) = 75
+same-k comparison: 34^2 / 324 = 1156/324 versus 75^2 / 972 = 5625/972; reverse=False
+3 t(18,0,0)^2 = 3468
+t(18,18,18)^2 = 5625
+t(1,0,0) = 3
+t(1,1,1) = 5
+t(3,2,0) = 9
+t(4,2,0) = 10
+t(5,2,0) = 12
+t(2,2,2) = 11
+t(18,18,1) = 41
+t(54,0,0) = 75
+t(51,0,0) = 67
+dijkstra_calls 1
+i2_interior 2 c2d4_interior 1 rho3_interior 1
+i2_max4_out 2 c2d4_max4_out 2
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: audit-input-literal AUDIT_INPUT_PATHS is a static string-literal tuple
+PASS: ball-cardinality B_54(0) is the 215929-site integer set with coordinate-sum at most 54
+PASS: one-dijkstra exactly one Dijkstra from the origin is executed
+PASS: reachable every site of B_54(0) is reached
+PASS: hop-origin the unique origin hop has named cost 3
+PASS: hop-interior-clause the named 3-to-3 dest min-abs>=2 clause prices (2,2,1) to (2,2,2) at 2
+PASS: hop-interior-exit-idle the named interior clause skips (2,2,2) to (1,2,2) because dest min abs is 1
+PASS: hop-max4-out-clause c2d4 still prices (4,2,0) to (5,2,0) at 2, so i2 does as well
+PASS: in-ball-cost2-split in-ball i2=2 hops are interior 3-to-3 dest min-abs>=2 hops plus c2d4 max>=4 out-face hops
+PASS: i2-clauses seed-exit, axis, drop, corridor-slide, and ridge-slide cost 3; interior 3-to-3 and max>=4 out-face cost 2; body last hop costs 1
+PASS: thm1-axis-time t(18,0,0) equals the computed origin-to-axis arrival time
+PASS: thm1-body-time t(18,18,18) equals the computed origin-to-body arrival time
+PASS: thm2-reverse-reported the integer same-k comparison is computed from the two arrivals
+PASS: thm1-note-reports-times the note reports the computed arrival times
+PASS: thm2-note-reports-comparison the note reports the integer same-k comparison and does not adopt it
+PASS: thm3-not-in-admissibility the live Admissibility wording is unchanged and does not name i2
+PASS: thm3-no-l1-attachment the note refuses to attach L1 and does not score a unit hop-cost
+PASS: forbidden-tokens forbidden tokens are absent from the note
+PASS: claim-scope-contract the required claim_scope is source-visible
+PASS: uniqueness-not-claimed the note does not claim uniqueness of the named hop-cost
+PASS: scope-boundary the theorem stays on B_54(0) and proposes no axiom edit
+PASS: displayed-not-adopted the rule is displayed, not adopted
+PASS: no-axiom-edit note records hypothetical axiom status no edit
+PASS: interior-arrival the same Dijkstra records t(2,2,2) matching the interior extra hop of cost 2
+PASS: skipped-max3-arrival the same Dijkstra records t(3,2,0)=9 and t(4,2,0)=10 matching the skipped extra hop of cost 1
+PASS: hug-then-interior the same Dijkstra records t(18,18,1) and the remaining interior hops of cost 2
+PASS: not-leftover-of-b51 (18,18,18) lies outside B_51(0) and the note says so
+PASS: axiom-untouched the axiom memo is an input only and still names the four axioms
+per_element: named hop-cost values are 1, 2, or 3 on nearest-neighbor hops.
+per_site: arrival times are reported only at (18,0,0) and (18,18,18).
+lattice_wide: checked and not executed — the search stays inside B_54(0).
+TOTAL: PASS=29 FAIL=0
+
+----- stderr -----
+

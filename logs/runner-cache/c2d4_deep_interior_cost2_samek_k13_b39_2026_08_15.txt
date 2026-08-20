@@ -1,0 +1,71 @@
+===== runner cache v1 =====
+runner: scripts/c2d4_deep_interior_cost2_samek_k13_b39_2026_08_15.py
+runner_sha256: f5229c1c23ac4d2c45c5a7def5191a976308a7336fcdd59e148ff3c1a2df4be2
+input_fingerprint_sha256: 441e8b4897bf6d267d5b6796fc994ad5d3681c3c21db5f2f534106a683d301fc
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.13
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/C2D4_DEEP_INTERIOR_COST2_SAMEK_K13_B39_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+claim_scope: Same-k reverse at k=13 under the named c2d4-plus-deep-interior hop-cost on B_39(0) is reported. Displayed, not adopted.
+external_scientific_inputs: none; named hop-cost on the finite nearest-neighbor graph B_39(0) only
+package_local_integrity_reads: proposed source note and live axiom memo only; no cache or governance surface is written
+measure_boundary: integer hop-costs and one Dijkstra; no fit and no second graph search
+claim_boundary: same-k reverse at k=13 is displayed, not adopted
+n_sites 82239
+t(13,0,0) = 29
+t(13,13,13) = 54
+same-k comparison: 29^2 / 169 = 841/169 versus 54^2 / 507 = 2916/507; reverse=False
+3 t(13,0,0)^2 = 2523
+t(13,13,13)^2 = 2916
+cross 426387 vs 492804
+t(13,13,0) = 34
+t(13,13,1) = 31
+t(13,13,2) = 32
+t(13,13,3) = 34
+t(3,2,0) = 9
+t(4,2,0) = 10
+t(5,2,0) = 12
+t(3,3,3) = 14
+t(4,3,2) = 13
+t(4,3,3) = 15
+dijkstra_calls 1
+witness_axis_sum 29
+witness_body_sum 54
+j2_max4_out 2 c2d4_max4_out 2 rho3_max4_out 1
+j2_shallow_interior 1 i2_shallow_interior 2 c2d4_shallow_interior 1
+j2_deep_interior 2 i2_deep_interior 2 c2d4_deep_interior 1
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: audit-input-literal AUDIT_INPUT_PATHS is a static string-literal tuple
+PASS: ball-cardinality B_39(0) is the 82239-site integer set with coordinate-sum at most 39
+PASS: one-dijkstra exactly one Dijkstra from the origin is executed
+PASS: reachable every site of B_39(0) is reached
+PASS: j2-samples named c2d4-plus-deep-interior hop-cost matches the displayed samples
+PASS: j2-clauses rho3-cost-3 hops stay 3; max>=4 out-face and dest-min>=3 interior 3-to-3 cost 2
+PASS: thm1-axis-time t(13,0,0) equals the computed origin-to-axis arrival time 29
+PASS: thm1-body-time t(13,13,13) equals the computed origin-to-body arrival time 54
+PASS: thm2-reverse-false t(13,0,0)^2 / 169 > t(13,13,13)^2 / 507 is false on the computed times
+PASS: thm2-exact-cross 29^2 * 507 = 426387 < 492804 = 54^2 * 169
+PASS: live-arrivals the same Dijkstra records skipped max>=3 out at cost 1, max>=4 out at cost 2, dest-min-2 interior at cost 1, and dest-min>=3 interior at cost 2
+PASS: thm1-note-reports-times the note reports the computed arrival times
+PASS: thm2-note-reports-comparison the note reports the integer same-k comparison and does not adopt it
+PASS: thm3-not-in-admissibility the live Admissibility wording is unchanged and does not name j2
+PASS: thm3-no-l1-attachment the note refuses to attach L1 and does not score a unit hop-cost
+PASS: forbidden-tokens forbidden tokens are absent from the note and runner
+PASS: claim-scope-contract the required claim_scope is source-visible
+PASS: uniqueness-not-claimed the note does not claim uniqueness of the named hop-cost
+PASS: scope-boundary the theorem stays on B_39(0) and proposes no axiom edit
+PASS: live-quotes live Lattice, Admissibility, and Record sentences are quoted without rewrite
+PASS: nogo-packet claim_scope, machine status, and N1-N8 gate are source-visible
+PASS: axiom-untouched the axiom memo is an input only and still names the four axioms
+per_element: named hop-cost values are 1, 2, or 3 on nearest-neighbor hops.
+per_site: arrival times are reported only at (13,0,0) and (13,13,13).
+lattice_wide: checked and not executed — the search stays inside B_39(0).
+TOTAL: PASS=23 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,59 @@
+===== runner cache v1 =====
+runner: scripts/same_max_face_slide_samek_k14_b42_2026_08_15.py
+runner_sha256: fa69e278916e500ca7e713209078edc61d5d3ee308a3eef8daed480c2eec58d8
+input_fingerprint_sha256: c0fc8b5593eeb909fb09e15402cf39443e86bf1127babce4bb501932dc54b962
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.97
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/SAME_MAX_FACE_SLIDE_SAMEK_K14_B42_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+claim_scope: Same-k reverse at k=14 under the named same-max face-slide hop-cost on B_42(0) is reported. Displayed, not adopted.
+PASS: audit-input-paths declared inputs are the source note and the current axiom memo
+PASS: audit-input-literal AUDIT_INPUT_PATHS is a static string-literal tuple
+PASS: claim-scope note claim_scope matches the displayed scoring statement
+PASS: displayed-not-adopted the rule is displayed, not adopted
+PASS: not-in-admissibility ψ is not written into Admissibility
+PASS: not-attach-l1 the displayed rule is not attached to L1
+PASS: uniqueness-not-claimed uniqueness among hop-costs is not claimed
+PASS: no-axiom-edit note records hypothetical axiom status no edit
+PASS: forbidden-absent forbidden phrases are absent from the source note
+PASS: cache-false the note records cache_write false
+n_sites 102425
+t(14,0,0) 30
+t(14,14,14) 46
+t(14,0,0)^2/196 900/196
+t(14,14,14)^2/588 2116/588
+3t_axis^2 2700
+t_body^2 2116
+reverse True
+t(1,0,0) 3
+t(1,1,1) 5
+t(2,2,0) 10
+dijkstra_calls 1
+witness_psi_axis [3, 1, 1, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3, 3, 3]
+witness_psi_axis_sum 30
+witness_psi_body_sum 46
+psi_same_max 3
+omega_same_max 1
+psi_box_growth 3
+omega_box_growth 3
+PASS: theorem-1 t(14,0,0)=30 and t(14,14,14)=46
+PASS: reverse-k14 t(14,0,0)^2 / 196 > t(14,14,14)^2 / 588
+PASS: one-dijkstra exactly one Dijkstra ran
+PASS: ball-b42 B_42(0) has 102425 sites and 102424 nonzero sites
+PASS: reachable every site of B_42(0) is reached
+PASS: note-records-times note records the two computed arrivals
+PASS: note-records-reverse-product note records the integer reverse comparison
+PASS: same-max-face-slide-hop the named same-max hop (2,1,0)->(2,2,0) has ψ=3 and ω=1
+PASS: psi-not-leftover-of-omega same-max slide is new over ω; box-growth remains ψ=3
+PASS: k14-geodesic-costs the k=14 axis and body witnesses use no same-max 2→2 hop
+PASS: seed-and-axis-clauses seed-exit and both-weights-1 cost 3; support increase costs 1
+PASS: axiom-untouched the axiom memo is an input only and still names the four axioms
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

@@ -1,6 +1,6 @@
 {
- "edge_count": 15752,
- "node_count": 5558,
+ "edge_count": 15753,
+ "node_count": 5559,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -10397,6 +10397,10 @@
   "k_dependence_review_safe_note": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "kappa_late_leave_samek_k1_b6_bounded_theorem_note_2026-08-15": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "kcpt_ambient_lattice_symmetry_kernel_isolation_averaged_complex_structure_bounded_theorem_note_2026-07-19": {
    "deps_hash": "dafb468bb9c4",

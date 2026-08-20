@@ -1,15 +1,13 @@
 # PR Backlog
 
-Block 1 is coherent, committed, and locally validated at science commit
-`74ddaf00af29`. Its post-result panel, direct conformance review, final cache
-refresh, and committed-delta evidence check are complete. It remains unpushed
-until the delivery metadata in this file is committed.
+Block 1 is coherent, committed, pushed, and locally validated at science
+commit `74ddaf00af29`. Its post-result panel, direct conformance review, final
+cache refresh, and committed-delta evidence check are complete.
 
-Planned PR title:
+Opened PR:
 
-```text
-[physics-loop] record-native-dyadic-preparation — bounded_theorem — bounded-support
-```
+- [#7020 — record-native-dyadic-preparation — bounded theorem — bounded
+  support](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7020)
 
 Validation summary: primary `PASS=14 FAIL=0`, independent
 `PASS=10 FAIL=0`, no-go discipline narrow `PASS`, broad no-go `FAIL / DO NOT
@@ -19,5 +17,5 @@ movement zero. The base is
 delta checker reports `forensic_evidence_ready=true`, with the theorem note,
 primary runner, independent runner, and registered helper surface all present.
 The full pipeline passed, strict audit lint reported no errors, and
-`git diff --check origin/main..HEAD` passed. Record the PR URL here after
-creation. No review-loop label or invocation will be used.
+`git diff --check origin/main..HEAD` passed. No review-loop label or invocation
+was used.

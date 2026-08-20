@@ -94,3 +94,5 @@ lint with no errors, clean merge-base whitespace check, and seeded committed-
 delta evidence readiness with the helper runner populated. The seeded ledger
 shard and generated ledger metadata were diagnostic residue and were removed
 from the proposal worktree; no audit verdict surface is included.
+[PR #7020](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7020)
+is the bounded-support proposal surface.

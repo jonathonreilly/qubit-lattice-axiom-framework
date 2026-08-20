@@ -79,9 +79,9 @@ Delivery evidence: science commit `653f1900b7`, fresh primary and independent
 caches, full committed-tree pipeline pass, strict lint with zero errors, and
 committed-delta `forensic_evidence_ready=true`.
 
-## Physical Context-Delay Connector — Block 4 Complete Locally
+## Physical Context-Delay Connector — Block 4 Proposal Delivered
 
-Delivered locally:
+Delivered in PR #7027:
 
 - exact two-target geometry with context at distance two from `s0`, adjacent
   only to the continuation `s1`, and a literally identical complete six-site

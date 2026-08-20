@@ -2,10 +2,10 @@
 
 ## Current State
 
-The 24-hour campaign is active. Blocks 1--3 are proposed in PRs #7020, #7022,
-and #7023. Block 4 is complete locally with primary `15/15` and independent
-`11/11`; proposal delivery is pending. No campaign block has an audit verdict,
-retention, obligation retirement, or TOE-score movement.
+The 24-hour campaign is active. Blocks 1--4 are proposed in PRs #7020, #7022,
+#7023, and #7027. Block 4 has primary `15/15` and independent `11/11`. No
+campaign block has an audit verdict, retention, obligation retirement, or
+TOE-score movement.
 
 The prior-art sweep changed the target. Current main already contains a
 complete sampled-law underdetermination pair. The unlanded campaign stack
@@ -131,13 +131,15 @@ three separate binary carrier lifts pass. The broad Born no-go,
 model-theoretic axiom independence, completed Record/history, and axiom
 necessity gates remain `FAIL / DO NOT SHIP`. No review-loop was invoked.
 
-Block 4 is complete locally on
-`physics-loop/toe-common-front-context-delay-block4-20260820`, based at the
-Block-3 delivery head `4cc40fb31d`. Primary `15/15`, independent `11/11`,
-syntax, and vocabulary checks pass. The two-seat kill review corrected the
+Block 4 is proposed in
+[PR #7027](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7027),
+stacked on the Block-3 delivery head `4cc40fb31d`. Science commit
+`741e9bf678` is pushed. Primary `15/15`, independent `11/11`, syntax, and
+vocabulary checks pass. The two-seat kill review corrected the
 coherent-pointer/permanent-Record type splice; the full five-perspective panel
 confirmed the bounded theorem and selected the causal shared-event to
-Record-support connector. Both caches are fresh and the graph/manifest is
-current; full pipeline, committed-delta, push, and PR gates are still pending
-at this snapshot. Obligation retirement and TOE movement remain zero. No
-review-loop was invoked.
+Record-support connector. Both caches are fresh, the graph/manifest is current,
+the full committed-tree pipeline passes, strict lint has zero errors, and the
+committed-delta gate reports forensic evidence ready with the independent
+helper. Obligation retirement and TOE movement remain zero. No review-loop was
+invoked.

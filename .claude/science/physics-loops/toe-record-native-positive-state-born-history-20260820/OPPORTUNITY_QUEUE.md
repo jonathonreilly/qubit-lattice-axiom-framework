@@ -12,7 +12,7 @@ factorization, individual binary-stage carrier checks, and current PR refresh.
 | 5 | flat/staged physical refinement or operational-equivalence theorem | 2 | 2 | 3 | 2 | 3 | 3 | required only to transfer equality back to old simultaneous ternary layouts |
 | 6 | unconditional formation/actuality and normalized history | 2 | 3 | 3 | 2 | 3 | 2 | independent wall; Cycle 508 shows actuality alone does not select Born |
 | 7 | generalize the common-front architecture to another shared effect, permutation, or refinement | 2 | 2 | 3 | 2 | 3 | 3 | extend only after the pair-specific registered-event theorem passes |
-| 8 | dependency-minimized Block-4 proposal and audit preparation | 3 | 1 | 3 | 3 | 2 | 3 | active packaging; zero retention assumed |
+| 8 | dependency-minimized Block-4 proposal and audit preparation | 3 | 1 | 3 | 3 | 2 | 3 | delivered in PR #7027; zero retention assumed |
 | 9 | operational-naturality axiom/law datum | 1 | 3 plus owner decision | 2 | 1 | 3 | 3 | watch only; no total hostile models, necessity, minimality, or retention |
 | 10 | gravity state and source handoff | 2 | current worker result | 2 | 2 | 2 | 1 | externally owned; do not duplicate while source/rate/lapse dictionary remains open |
 | 11 | another decoder partition, pointer, controlled copy, menu, M64 lift, Gaussian fallback, or static countermodel | 0 | 0 | 3 | 3 | 0 | 3 | retired as duplicate unless it proves endpoint support or lawful formation |

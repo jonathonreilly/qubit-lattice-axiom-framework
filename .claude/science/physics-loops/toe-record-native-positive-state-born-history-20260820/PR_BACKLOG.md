@@ -66,12 +66,17 @@ errors, and the committed-delta check reports
 `forensic_evidence_ready=true`. PR #7023 is verified against the Block-2
 branch. No review-loop is used.
 
-## Block 4 — Pending Proposal Delivery
+## Block 4 — Proposal Delivered
 
 Branch:
 `physics-loop/toe-common-front-context-delay-block4-20260820`, stacked on the
 delivered Block-3 head
 `4cc40fb31d7b6c78f5d113d0bce0804d7a9003da`.
+
+Opened PR:
+
+- [#7027 — remote-context front-event congruence — bounded theorem — bounded
+  support](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7027)
 
 Current direct validation: primary `PASS=15 FAIL=0`, independent
 `PASS=11 FAIL=0`, targeted two-seat kill review and full five-perspective
@@ -81,6 +86,9 @@ content-only rail gating, coherent common/residual composition, separate
 realized branch-state content, composed held M64 lift, and 24-frame covariance
 pass. Physical event typing, endpoint support, positive event mass,
 pointer-to-Record actualization, formation, histories, and Born values remain
-open. Both caches are fresh and the citation graph/manifest is current. Full
-pipeline, committed-delta, commit, push, and PR gates remain pending at this
-snapshot. No review-loop is used.
+open. Science commit `741e9bf678` is pushed. Both caches are fresh, the
+citation graph/manifest is current, the full committed-tree pipeline passes,
+strict audit lint has zero errors, and the committed-delta gate reports
+`forensic_evidence_ready=true` with the independent helper and zero control
+failures. PR #7027 is verified against the Block-3 branch. No review-loop is
+used.

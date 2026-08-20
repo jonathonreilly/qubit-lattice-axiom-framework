@@ -1,17 +1,17 @@
 # Claim Status Certificate
 
-Campaign state: Blocks 1--3 are proposed in PRs #7020, #7022, and #7023.
-Block 4 is complete locally on
-`physics-loop/toe-common-front-context-delay-block4-20260820`, based on the
-delivered Block-3 head `4cc40fb31d`. It is not yet proposed, audited, or
-retained.
+Campaign state: Blocks 1--4 are proposed in PRs #7020, #7022, #7023, and
+#7027. Block 4 is stacked on the delivered Block-3 head `4cc40fb31d`. It is
+not audited or retained.
 
 Current Block-4 artifact status: the bounded theorem note has a primary runner
 passing `15/15` and an independently implemented runner passing `11/11`.
-Syntax and vocabulary checks pass; both input-bound caches are fresh and the
-citation graph/manifest is regenerated. Full-pipeline, committed-delta, push,
-and PR gates are pending at this certificate snapshot.
-These delivery gates confer no audit verdict or retention.
+Syntax and vocabulary checks pass; both input-bound caches are fresh; the
+citation graph/manifest is current; the full committed-tree pipeline passes;
+strict audit lint has zero errors; and the committed-delta gate reports
+`forensic_evidence_ready=true` with the independent helper discovered. Science
+commit `741e9bf678` is pushed and PR #7027 is open. These delivery gates confer
+no audit verdict or retention.
 
 Proposed Block-4 theorem: worlds `A` and `B` differ only at a physical context
 Record `c=(1,1,0)`. Their complete six-neighbour condition at the front target

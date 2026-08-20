@@ -571,3 +571,19 @@ This panel materially changed the route name and scope, so its utility remains
 high. Continue full five-perspective checks on a terminal connector result,
 major obstruction/pivot, the campaign midpoint portfolio audit, and final
 synthesis. Narrow interim checks to the two most relevant adversarial seats.
+
+## Block-4 Delivery Checkpoint
+
+- Science commit `741e9bf678` was created only after primary `15/15`,
+  independent `11/11`, fresh input-bound caches, vocabulary checks, graph/link
+  invariants, premise cleanliness, and strict audit lint with zero errors.
+- The full fixed-point repository pipeline passed from a disposable detached
+  worktree at that exact commit. Generated audit state was discarded; no
+  verdict surface was imported into the proposal branch.
+- A separate seeded committed-delta replay discovered the note, primary,
+  registered independent helper, and transitive helper surface and reported
+  `forensic_evidence_ready=true` with zero failures or control failures.
+- The exact branch was pushed and
+  [PR #7027](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7027)
+  opened against the Block-3 branch. Review-loop was not invoked. This is
+  delivery evidence only: obligation retirement and TOE movement remain zero.

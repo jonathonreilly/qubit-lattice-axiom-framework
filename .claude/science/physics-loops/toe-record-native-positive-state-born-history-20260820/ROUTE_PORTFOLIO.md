@@ -1,13 +1,17 @@
 # Route Portfolio
 
-Scores are qualitative from zero to three. Risk is subtractive. Three full
+Scores are qualitative from zero to three. Risk is subtractive. Four full
 five-perspective checkpoints have now been synthesized; the first rows carry
-the current post-Block-2 ranking.
+the current post-Block-3 ranking.
 
 | Route | Attack frame | Upgrade | Trace | Import retirement | Artifactability | Hard pressure | Risk | Current disposition |
 |---|---|---:|---:|---:|---:|---:|---:|---|
-| Existing-apparatus shared-effect Record-probability and preparation congruence | reuse Cycle 317/321 with `M_A/M_B`, identical `E_0` outcome content, separate process tags, lawful formation, and randomized-preparation forgetting | 3 | 3 | 3 | 3 | 3 | -2 | **selected Block 3; highest non-gravity leverage** |
-| Strict-NN serialization of the existing apparatus | replace bounded host program dispatch with local permanent stage Records and hostile partial-program states | 2 | 3 | 2 | 2 | 3 | -2 | downstream support only if the selected connector needs it |
+| Common-front-stage physical context delay | compile common `{K0,B}` with a literally identical full stage-one neighbourhood; route context only after `B`; seal/register `E0` probability-independently | 3 | 3 | 3 | 3 | 3 | -2 | **selected Block 4; four-hour kill-gated highest Born-selector leverage** |
+| Terminal event/Record connector | use probability-independent registration and protected continuation so later context cannot alter the `E0` event | 3 | 3 | 3 | 2 | 3 | -2 | mandatory inside Block 4; Cycle 339 is a service, not a standalone repeat |
+| Staged M64 composition | compose the already-valid common and residual binary lifts with exact recovery, bounded support, leakage/deletion controls, held size, and covariance | 3 | 3 | 2 | 3 | 3 | -1 | exact factors and individual lifts pass; composition/routing is the new object |
+| Shared-effect/preparation formula tournament | bind Cycle 317/321 `M_A/M_B` to physical candidate content and separate context/preparation congruences | 2 | 3 | 2 | 3 | 3 | -1 | completed bounded Block 3; formula-class result only, zero retirement |
+| Effect-complete operational preparation class | physically screen the fair tag across an effect-complete tester and identify the prepared state operationally | 3 | 3 | 3 | 2 | 3 | -2 | next after effect connector; literal direct-content equality remains separate |
+| Flat/staged refinement congruence | prove the staged realization and old simultaneous ternary implementation are operationally equivalent at the registered event | 2 | 3 | 2 | 2 | 3 | -2 | needed only for transfer to old layouts; pair-specific staged theorem can precede it |
 | Delayed-setting symmetry-forced midpoint tournament | classify `I/2`/`P_z` fixed-input exchanges and test X/Y/Z against the live cubic | 2 | 3 | 1 | 3 | 3 | -1 | completed bounded Block 2; route corrected, do not repeat |
 | Aligned-certainty microscopic action | derive the `P_z/Z` zero-support row and a true conserved bond current | 1 | 2 | 1 | 2 | 2 | -3 | demoted; cannot touch the oblique cubic or occurrence law |
 | Internal-covariance axiom clarification | make fixed-condition internal equivariance explicit | 1 | 2 | 1 | 2 | 1 | -2 | governance sidecar only; closes five rows, not Born |
@@ -16,11 +20,12 @@ the current post-Block-2 ranking.
 | Record-generated positive preparation without screening | extend the Block-94 controller theory so the law generates the state and trial corpus | 2 | 3 | 2 | 3 | 2 | -2 | demoted; Block 94/100 already construct most of it |
 | Global Record-history completion | condition normalized histories on explicit Record boundary and prove local Admissibility projection | 1 | 2 | 1 | 2 | 2 | -3 | held; Cycle 30 and later cylinders make generic work duplicate |
 | Causal-prestate clarification | type an unreadable quasi-local positive state distinct from readable Records | 2 | 3 | 2 | 2 | 2 | -3 | governance fallback after explicit discriminator only |
-| Preparation-affinity selector | exact same-kernel mixture protocol plus same-effect quotient excludes normalized-square/non-affine response twins | 3 | 3 | 3 | 2 | 3 | -2 | fused into selected Block 3; compare affine `3/8` with square `9/20` |
+| Preparation-affinity selector | exact same-kernel mixture protocol plus an effect-complete physical tag-screening quotient excludes normalized-square/non-affine response twins | 3 | 3 | 3 | 2 | 3 | -2 | Block 3 supplies `3/8` versus `9/20`; physical screening/registration remains open |
 | Existing-stack retention extraction | independently reconstruct the strongest positive candidate and minimize dependencies for audit | 2 | 3 | 1 | 3 | 1 | -1 | support route, not new science alone |
-| Strict-NN compiler continuation | compile controller, preparation, screening, and effect stages under one homogeneous local rule | 3 | 3 | 2 | 2 | 3 | -2 | required in selected feasibility block; global overlap remains downstream |
+| Strict-NN compiler continuation | compile controller, preparation, screening, and effect stages under one homogeneous local rule | 3 | 3 | 2 | 2 | 3 | -2 | use only for the selected context-routing object; global overlap remains downstream |
 | Gravity completion | continue Block 154 or its discriminator | 2 | 2 | 1 | 2 | 3 | -3 | occupied by another worker; do not execute |
-| Another sampled-law pair | vary a kernel while preserving the known interface | 0 | 1 | 0 | 3 | 0 | -2 | retired as duplicate |
+| Operational-naturality axiom/law datum | require effect/preparation descent and lawful coarse-graining/randomization | 1 | 3 | 2 | 1 | 3 | -3 | watch only; derived routes open and no total hostile models prove non-entailment |
+| Another sampled-law pair, Gaussian fallback, or static countermodel | vary a formula/kernel while preserving the known interface | 0 | 1 | 0 | 3 | 0 | -2 | retired as duplicate and lower leverage |
 
 ## Prior-Art Classification
 
@@ -122,3 +127,53 @@ lawful affine/non-affine full-history pair does not retire the connector, but
 it justifies a dependency-minimized owner decision packet. Anything that
 merely writes a trace table, samples a supplied uniformizer, postselects
 failures, or calls a pointer label a Record is blocked-equivalent.
+
+## Post-Block-3 Portfolio Recheck
+
+Block 3 returned two results with different status. The finite formula table
+is a sound algebraic separator but not a total nearest-neighbour model and not
+TOE progress. The attempted writer interpretation failed panel review: the
+table does not select a site, sample, mutate, form a Record, or derive failure
+weights. That scope correction prevents low-value model expansion.
+
+The panel's positive intervention is decisive. For the shared `E0`, both
+ternary programs factor exactly as
+
+```text
+common {K0,B} front stage
+  K0 -> terminal shared event
+  B  -> context-specific complete binary J stage
+```
+
+The factorization and all three individual M64 lifts pass. Therefore another
+menu, dilation, or static law tournament is no longer rational investment.
+The only new object is a causal staged composition whose **complete** first-
+stage nearest-neighbour condition is identical and whose context carrier is
+physically late.
+
+Authorize four hours, not eight, with these kill gates:
+
+1. by hour two, exact site/layer/role geometry, identical star, context
+   exclusion from the star and causal past, and a late route only to `B`;
+2. by hour four, exact physical composition/recovery, sealed `E0`,
+   probability-independent event registration, bounded support/leakage,
+   deletion/ambiguity controls, held size, and covariance;
+3. immediate pivot on an external clock, host flag, unrecorded live state,
+   later `E0` coarse-graining, probability-defined equivalence, or
+   pointer-to-Record relabeling; and
+4. extend to hours four--eight only after every connector gate passes, for a
+   second shared effect/refinement or lawful event/Record integration.
+
+A pair-specific staged success need not prove equivalence to the old flat
+ternary layout. That transfer is a separate refinement/process quotient. If
+staging fails, use Cycle 339 narrowly for protected routing; if registration
+fails, attack probability-independent event registration; if transfer fails,
+formulate the physical flat/staged congruence. Preparation congruence follows
+only after effect-complete physical tag screening and operational state
+registration.
+
+No axiom datum is mature: total hostile models, non-entailment, necessity,
+minimality, probability-independent quotient registration, and retention are
+all absent. The next panel cadence is two adversarial seats at route `T+2h`,
+full five at `T+4h` or terminal return, one portfolio check near campaign
+`T+12h`, and final synthesis about two hours before deadline.

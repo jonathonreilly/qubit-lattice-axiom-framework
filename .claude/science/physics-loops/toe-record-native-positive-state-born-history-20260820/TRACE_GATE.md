@@ -1,12 +1,12 @@
 ---
 trace_class: open_gate
 target_claim_id: toe_record_native_positive_state_born_history_completion
-target_blocker_text: derive a physical same-effect probability/Record congruence across two existing unpaired programs and randomized-preparation tag forgetting, while retaining unequal post-outcome processes and selecting lawful formation without inserted trace weights
+target_blocker_text: compile a physical common-front-stage same-condition connector across the two existing unpaired programs, with causal late reveal, terminal probability-independent E0 registration, and no inserted trace weights, sampler, host context flag, or pointer-to-Record relabeling
 source_of_blocker_text: handoff
 reachability_to_target: advances
 artifact_role: campaign_pack
-campaign_native_target_reachability: block2_corrects_the_discriminator_and_closes_the_five_row_stabilizer_classification_conditionally; directional_cubic_and_probability_record_connector_remain_open
-next_trace_action: reuse Cycle317/321 and the exact shared-effect ternary pair in one delayed-choice outcome-Record tournament; compare context descent and preparation affinity, retaining process tags and treating any supplied sampler or host forgetting as a stop
+campaign_native_target_reachability: block3_proves_finite_formula_class_separation_and_exact_common_front_stage_factorization; all_three_binary_stages_fit_the_existing_carrier_separately; causal_composition_event_registration_Record_formation_and_preparation_congruence_remain_open
+next_trace_action: spend four kill-gated hours on an exact staged nearest-neighbour layout whose complete first-stage condition is identical, whose context reaches only the B continuation, and whose E0 event is causally sealed and registered without probability; pivot at two hours without the layout or four hours without a composed connector
 ---
 
 The campaign is grounded on current main and uses the unlanded Block 63
@@ -25,14 +25,19 @@ interface, bridge `B`, action-to-measure relation, non-copy tester category,
 time, and actuality supplied or open. No direct blocker closure or score
 movement is warranted.
 
-Block 2 returns a bounded corrective theorem. It derives the exact all-axis
-stabilizer condition `s dot n=0`, executes the complete six-neighbour star,
-and shows that five of the six `I/2`/`P_z` Pauli rows have a conditional
-input-fixing output exchange. The aligned `3/4` still requires separately
-supplied certainty, and the one-shot Pauli protocol cannot distinguish the
-live directional cubic. Its token result is only a stoichiometric debit
-invariant. The five-person panel found that Cycle 317 already built the
-unpaired apparatus, Cycle 321 already separated effect and process identity,
-and historic Cycle 478 already terminally compiled one finite quotient. The
-live trace action is therefore the probability/Record congruence and
-preparation-affinity connector on those existing objects. No score moves.
+Block 3 executes the shared-effect/preparation tournament without promoting a
+symbolic content table to a writer. It proves exact finite formula-class
+separation: trace-square restriction violates shared-effect descent,
+normalized square violates fair-tag/direct-content descent, and affine
+evaluation passes both tested equalities. It does not exhibit total hostile
+nearest-neighbour models, sample or form Records, or justify axiom necessity.
+
+The five-person panel found a positive route not present in the static table.
+Both programs factor exactly through common `{K0,B}` followed only on `B` by
+context-specific `J_j=K_j B^-1`; the separate stages are complete, recover the
+original branches, and individually retain the existing bounded M64 carrier
+and covariance. The missing object is staged causal composition: literal
+identity of the full first-stage neighbourhood, physical exclusion/late reveal
+of context, a sealed terminal `E0` event, and probability-independent event or
+Record registration. No score moves, and no axiom datum is mature while this
+derived route remains open.

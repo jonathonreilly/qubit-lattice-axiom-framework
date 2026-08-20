@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/shared_effect_record_randomized_preparation_congruence_independence_2026_08_20.py
+runner_sha256: 9d034b64a1248d4a15189ba31c54aea8a026193a02999b821b6e93e6a2f6b261
+input_fingerprint_sha256: d2461ddd418576314727d39754bcd33af31542b6c7d54ec75593e072f8b92bd2
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 4.32
+status: ok
+----- stdout -----
+PASS [sources] the current axiom, operational, apparatus, hostile-menu, non-affine, carrier, and Block-2 boundaries are bound
+PASS [exact-menus] M_A and M_B are exact ternary scaled-projector resolutions sharing only E0=(1/2)Pz
+PASS [physical-programs] {'all_checked_residuals': '< 8e-11', 'carrier_lengths': (3, 6)}
+PASS [shared-branch] {'selected_effect_K_CP': '< 8e-11', 'complete_channel_difference': 0.544331}
+PASS [physical-support-covariance] the existing M64 compiler independently reports bounded support and 24/24 carried frames for both programs
+PASS [positive-context-delay-factorization] {'all_factorization_residuals': '< 8e-11', 'programs': ('M_A', 'M_B'), 'remaining_gap': 'physical causal staging and Record formation are not constructed'}
+PASS [positive-context-delay-carrier] {'physical_isometries': '< 8e-11', 'carrier': 'bounded through held L=6 with 24/24 carried frames', 'remaining_gap': 'staged causal composition and context routing'}
+PASS [three-fixed-formulas] affine, normalized-square, and trace-square-restriction families are each fixed, positive, and normalized on both menus and all declared states
+PASS [shared-effect-discriminator] {'affine': (Fraction(3, 10), Fraction(3, 10)), 'square': (Fraction(9, 26), Fraction(9, 26)), 'context': (Fraction(25, 142), Fraction(2, 11))}
+PASS [preparation-discriminator] {'fair_tag_affine': Fraction(3, 8), 'direct_affine': Fraction(3, 8), 'fair_tag_square': Fraction(3, 8), 'direct_square': Fraction(9, 20)}
+PASS [wall-independence] one fixed formula violates only shared-effect descent, another violates only preparation descent, and the affine formula satisfies both tested equalities
+PASS [internal-covariance] {'onsite_cliffords': 24, 'formula_and_kappa_residuals': '< 8e-11'}
+PASS [conditional-kernel-normalization] all 30 declared site/formula/menu cases give normalized nonnegative three-content tables, including explicit zero weights; no sampling or Record formation is asserted
+PASS [content-context-separation] the E0 candidate has identical physical Q,L content while the complete input-program contexts remain distinct
+PASS [conditional-domain-deletions] missing, duplicate-role, nonblank, nondeclared-menu, and nondeclared-preparation conditions are rejected; neighbour order is irrelevant
+PASS [physical-content-carrier] {'all_physical_Q_residuals': '< 8e-11', 'scope': 'candidate physical content only; no Record is formed'}
+PASS [claim-boundary] {'missing': (), 'scope': 'bounded two-menu/two-preparation independence only; no Born no-go or axiom necessity'}
+per_element: exact shared effect, codeword, probabilities, and selected CP branch are checked
+per_site: one unordered six-neighbour conditional packet and candidate output content are checked
+per_mode: affine, normalized-square, context-restriction, direct, and randomized preparations are checked
+per_block: two physical ternary programs, conditional normalization, physical content, and domain deletions are checked
+lattice_wide: checked and not executed — formation, sampling, arbitrary programs, autonomous genesis, rates, histories, and frequencies remain open
+PASS [n5-certificate] all five landing-resolution statements are substantive and at least eighty characters
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

@@ -59,28 +59,45 @@ Delivered locally:
   deletions; and
 - current-main N1--N8 packet passing only at the narrow algebraic scope.
 
-## Shared-Effect Record Congruence Block — Block 3 Selected
+## Shared-Effect Conditional-Weight Block — Block 3 Complete Locally
 
-- reuse the existing Cycle-317 unpaired physical program and the exact
-  `M_A/M_B` pair sharing `E_0=(1/2)P_z`;
-- store identical `kappa(E_0,l_0)` outcome content across contexts and keep
-  the setting/process tags separately;
-- require one fixed law to select a formation site and exactly one outcome,
-  normalize with all no-click/collision alternatives included, and append a
-  lawful permanent Record;
-- test marginal same-effect probability descent without promoting equal
-  effects to equal CP processes;
-- test physical preparation-tag forgetting against direct barycenter content,
-  comparing affine `3/8` with normalized-square `9/20`;
-- include translation/proper-cubic, deletion, ambiguity, inverse,
-  partial-program, and serial-history controls; and
-- treat trace/Kraus weights, supplied uniformizers/seeds, host-side equality or
-  forgetting, postselection, and pointer-to-Record relabeling as stop
-  conditions.
+Delivered locally:
 
-Accept a positive block only if the connector is produced by the same local
-law. Otherwise produce the exact full-law countermodel/decision packet and do
-not claim axiom necessity before audit.
+- exact `M_A/M_B` physical programs sharing `E0=(1/2)Pz`, identical selected
+  Kraus/Choi map, and distinct complete channels;
+- three analytic formula families with exact shared-effect and preparation
+  discriminators;
+- physical `kappa(Ug^dagger E Ug,l)` candidate content and a finite declared
+  conditional table with explicit domain rejections and zero weights;
+- exact common-front-stage factorization and separate M64 carrier feasibility
+  for the front and two residual binary stages;
+- primary `18/18`, independent `11/11`; and
+- full N1--N8 boundary: formula-class independence only, no total hostile
+  models, writer, sampler, Record formation, Born no-go, or axiom necessity.
+
+## Physical Context-Delay Connector — Block 4 Selected
+
+Four-hour authorized scope:
+
+- hours 0--2: exact finite sites, layers, roles, and M2 contents;
+- literal equality of the complete stage-one NN condition in both contexts,
+  including preparation, pointer, guards, fuel, references, and stage marker;
+- context carriers physically absent from that condition and its causal past,
+  then routed only to the `B` continuation;
+- terminal/causally sealed `E0` port with probability-independent event
+  registration;
+- hours 2--4: exact staged composition and all-input `K_j` recovery;
+- bounded support, leakage, ambiguity/deletion, held-size, and 24-frame
+  covariance checks; and
+- an inference using only same complete condition implies same distribution.
+
+Stop at two hours without an identical-star layout or four hours if the return
+is only factorization, individual lift, or support count. Stop immediately on
+an external clock, host program flag, unrecorded live state, later `E0`
+coarse-graining, trace/Kraus probabilities, seed, sampler, postselection,
+probability-defined equivalence, host forgetting, or pointer-to-Record
+relabeling. Extend to hours four--eight only after every connector gate passes,
+for one generalization or lawful event/Record integration.
 
 ## Negative Or Axiom-Decision Block
 

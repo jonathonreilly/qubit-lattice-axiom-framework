@@ -7,21 +7,21 @@ stop_at: 2026-08-21T11:27:51-04:00
 checkpoint_interval: 30m
 portfolio_recheck_interval: 2h
 panel_size: 5
-panel_cadence: full_five_after_each_major_result_or_2h_while_route_ambiguous
-panel_cadence_policy: block2_panel_caught_three_executable_scope defects and a duplicated route, then converged on one post-prior-art connector; keep full_five after the next major result, but use a two-seat checkpoint only if two consecutive panels become redundant
-cycle: 5
-science_block: 2
-branch: physics-loop/toe-delayed-setting-midpoint-symmetry-block2-20260820
-base: physics-loop/toe-record-native-positive-state-born-history-20260820@fe84b5c5307aee2ac8e5c4d09d3c7b5f241f3797
-worktree: /private/tmp/toe-delayed-setting-midpoint-20260820.dsxAJR
+panel_cadence: two_adversarial_seats_at_route_T_plus_2h; full_five_at_T_plus_4h_or_terminal_return; full_five_on_major_connector_obstruction_pivot_or_axiom_pressure; portfolio_panel_near_T_plus_12h; final_synthesis_two_hours_before_deadline
+panel_cadence_policy: block3_panel_had_very_high_utility_by_removing_a_false_writer_claim_and_discovering_the_exact_common_front_stage; cap_remaining_full_panels_at_three_and_use_nonduplicative_algebra_locality_operational_prior_art_governance_roles
+cycle: 7
+science_block: 3
+branch: physics-loop/toe-shared-effect-record-congruence-block3-20260820
+base: physics-loop/toe-delayed-setting-midpoint-symmetry-block2-20260820@484cb5ac66898b053056346b33b674e4496b716b
+worktree: /private/tmp/toe-shared-effect-record-congruence-20260820.plgJue
 lock_mode: cooperative
 lock_owner: codex-root
 review_loop: disabled_by_user
 goal_ledger: prior_goal_usage_limited; this pack records the active user-authorized campaign
 goal: construct the shortest honest Record-native positive-state and Born-history completion, or identify the exact minimal law or axiom datum that prevents it
-active_route: shared_effect_ternary_record_probability_and_preparation_congruence_tournament
-hard_residual: derive whether the physical Admissibility pushforward commutes with the existing Cycle-317/321 shared-effect operational quotient and with randomized-preparation tag forgetting, while forming one lawful Record and keeping unequal post-outcome processes distinct; do not insert trace weights, a sampler, or host-side forgetting
-target_contract_status: block2_delivered_pr7022_bounded_corrective_return_27_of_27_checks_zero_retirement_full_five_panel_redirect_to_existing_apparatus_probability_record_connector
+active_route: common_front_stage_physical_context_delay_connector
+hard_residual: compile the exact common binary front stage {K0,B} as one finite physical nearest-neighbour condition identical across M_A and M_B, keep every context-specific carrier outside its causal past until the B continuation, seal/register the E0 event probability-independently, and compose the stages without an external scheduler, trace weights, sampler, host flag, or pointer-to-Record relabeling
+target_contract_status: block3_validated_bounded_formula_class_independence_and_exact_context_delay_reopen_29_of_29_checks_zero_retirement_pending_proposal
 authority_surface:
   - docs/MINIMAL_AXIOMS_2026-06-29.md
   - docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md
@@ -73,5 +73,5 @@ checkpoint_zero_toe_map:
     autonomous_closure_percent: 34
     evidence_ceiling_percent: 99
 percentage_rule: freeze until independently retained obligation retirement; unlanded constructions and route confidence do not move scores
-next_exact_action: reuse the existing Cycle-317 unpaired apparatus and the exact shared-effect M_A/M_B pair in one delayed-choice Record-formation and randomized-preparation congruence tournament; a positive block must derive the connector under one fixed local law, while a surviving full-law pair becomes the dependency-minimized owner-facing law-datum packet
-stop_condition: campaign deadline, exact global blocker exhausting all ranked routes, or a genuine ownership or tooling conflict preventing non-overlapping work
+next_exact_action: run one four-hour kill-gated Block-4 campaign: hours 0-2 must produce an exact site/layer/role layout with a literally identical complete stage-one star and physical late reveal; hours 2-4 must execute composed recovery, terminal E0 sealing, probability-independent event registration, bounded support/leakage/deletions/held-size/covariance, and use only same-complete-condition implies same-distribution; extend to eight hours only after every connector gate passes
+stop_condition: campaign deadline; pivot at two hours without an identical-star late-reveal layout, at four hours if only factorization or individual carrier feasibility remains, or immediately on external clock, host context flag, probability-defined equivalence, unsealed E0 branch, or pointer-to-Record relabeling

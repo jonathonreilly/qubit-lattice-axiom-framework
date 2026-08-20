@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/shared_effect_record_randomized_preparation_congruence_independent_check_2026_08_20.py
+runner_sha256: cff5e3887edff6e900c314a0d2f36544339d25d23b625fe07be824cc662fadd9
+input_fingerprint_sha256: 7fde01ccb715a5332def86b8c79e225f26b95c881498083c13c5ed668411de88
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.85
+status: ok
+----- stdout -----
+PASS [sources-packet] current sources, N1-N8, the complete 15-pair wall matrix, broad stop, and zero-retirement status are bound
+PASS [exact-menus] an independent SymPy reconstruction gives two exact resolutions sharing one of five effects
+PASS [exact-discriminators] {'affine_a': 3/10, 'affine_b': 3/10, 'square_a': 9/26, 'square_b': 9/26, 'context_a': 25/142, 'context_b': 2/11, 'fair_affine': 3/8, 'direct_affine': 3/8, 'fair_square': 3/8, 'direct_square': 9/20}
+PASS [independent-walls] the context and preparation failures separate while the affine control passes both
+PASS [physical-shared-branch] {'selected_effect_K_Choi': '< 9e-11', 'complete_choi_difference': 0.544331, 'compressed_effects_and_isometries': '< 9e-11'}
+PASS [independent-context-delay-factorization] {'all_factorization_residuals': '< 9e-11', 'scope': 'matrix factorization only; physical delayed-context compiler remains open'}
+PASS [contact-deletion] {'shared_E0_change': '< 9e-11', 'maximum_nonshared_change': 0.147157}
+PASS [independent-covariance] {'cliffords': 24, 'formula_and_carrier_residuals': '< 9e-11'}
+PASS [conditional-content-table] independent conditional tables normalize and carry identical physical E0 content across distinct program contexts; no draw or Record formation is modeled
+PASS [conditional-domain-roles] an independently ordered role multiset is recognized while missing, occupied, and duplicate-role conditions are rejected symbolically
+per_element: exact shared effect, codeword, probabilities, and selected CP branch are checked
+per_site: one unordered six-neighbour conditional packet and candidate output content are checked
+per_mode: affine, normalized-square, context-restriction, direct, and randomized preparations are checked
+per_block: two physical ternary programs, conditional normalization, physical content, and domain deletions are checked
+lattice_wide: checked and not executed — formation, sampling, arbitrary programs, autonomous genesis, rates, histories, and frequencies remain open
+PASS [n5-certificate] the note and independent executable share the five exact substantive resolution lines
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

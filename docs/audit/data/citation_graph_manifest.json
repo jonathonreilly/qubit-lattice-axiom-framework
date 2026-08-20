@@ -1,6 +1,6 @@
 {
- "edge_count": 15766,
- "node_count": 5560,
+ "edge_count": 15775,
+ "node_count": 5561,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -16821,6 +16821,10 @@
   "sharded_content_survival_law_cycle877_bounded_theorem_note_2026-07-28": {
    "deps_hash": "ba80223b81ab",
    "out_degree": 1
+  },
+  "shared_effect_record_randomized_preparation_congruence_independence_bounded_theorem_note_2026-08-20": {
+   "deps_hash": "56e6fd58e7c2",
+   "out_degree": 9
   },
   "sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06": {
    "deps_hash": "e3b0c44298fc",

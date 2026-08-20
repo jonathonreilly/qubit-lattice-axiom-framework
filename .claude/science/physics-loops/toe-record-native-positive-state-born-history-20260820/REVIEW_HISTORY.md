@@ -376,3 +376,98 @@ the existing apparatus. No new axiom wording is justified. Panel utility is
 again high because it corrected three executable/type defects and prevented a
 duplicate route. Keep the next full-five trigger after the next major result;
 use a two-seat checkpoint only after two consecutive redundant panels.
+
+## Science Block 3 — Formula-Class Separation And Positive Causal Reopen
+
+Block 3 reuses the exact Cycle-317 `M_A/M_B` ternary programs sharing
+`E0=(1/2)Pz`. It independently establishes:
+
+- selected effect, Kraus operator, and Choi map equality, with unequal complete
+  channels;
+- trace-square shared-effect values `25/142` and `2/11`;
+- normalized-square fair/direct preparation values `3/8` and `9/20`;
+- affine equality in both tests;
+- exact physical `Ug^dagger E Ug` candidate content for every declared output;
+  and
+- a finite, nonnegative, normalized conditional-content table on both menus
+  and five declared diagonal preparations.
+
+The primary runner passes `18/18`; the independent SymPy/NumPy reconstruction
+passes `11/11`. Both print source-discipline-compliant `TOTAL` lines and remain
+under the runner-output cap.
+
+The initial implementation overclaimed a lawful one-site writer. Panel review
+showed that it did not choose a formation site, sample, mutate the lattice,
+form a Record, consume fuel, prove permanence, or represent no-click and
+double-click alternatives. It also stored pre-contact symbols without first
+checking every physical compressed coordinate and sketched an unimplemented
+Gaussian fallback as if it supplied total axiom models. The note and runners
+were rebuilt: candidate content is evaluated physically, the executable domain
+is finite and rejection-tested, zero weights are explicit, no fallback or
+total model is claimed, and the result is formula-class algebraic independence
+only. Broad axiom non-entailment, Born no-go, Record/history completion, and
+axiom necessity remain `FAIL / DO NOT SHIP`.
+
+## Post-Block-3 Five-Perspective Panel — Complete
+
+### 1. Algebra, positivity, and model scope
+
+Reconstructed the exact menus and all rational values. It confirmed PSD,
+normalization, covariance of the formula families, and explicit zero-weight
+support on the finite domain. It rejected model-theoretic wording because no
+total nearest-neighbour hostile model is implemented.
+
+### 2. Nearest-neighbour locality and Record semantics
+
+Caught the false writer/sampler/no-click/permanence claims and the absence of a
+physical six-site star. It required candidate-content language, exact physical
+compressed `Q` coordinates, and explicit open status for formation, event
+registration, collision handling, and integrated transition covariance.
+
+### 3. Quantum instrument and causal factorization
+
+Found and independently proved the positive route
+
+```text
+B = sqrt(I-E0) Ug,
+J_j = K_j B^-1.
+```
+
+The common `{K0,B}` stage and both residual `J` stages are complete and recover
+the original branches exactly. Each stage separately lifts through the
+existing M64 carrier with bounded support through held `L=6` and 24/24 carried
+frames. The missing object is staged causal composition and context routing,
+not another dense-Kraus compiler.
+
+### 4. Operational TOE selection and prior art
+
+Rated common-front-stage context delay above another static countermodel,
+Gaussian extension, menu compiler, or standalone Cycle-339 replay. If the
+complete first-stage condition is physically identical, current Admissibility
+forces one stage-one distribution without Born weights. Equality applies first
+to the new staged realization; transfer to old flat programs needs a separate
+physical refinement/process quotient.
+
+### 5. Axiom governance and campaign efficiency
+
+Authorized four hours, not eight, with a two-hour identical-star kill gate and
+a four-hour composed-connector gate. No axiom datum is mature: positive routes,
+total-model construction, probability-independent operational registration,
+necessity, minimality, and retention are all open.
+
+### Synthesis and cadence
+
+The panel had exceptional utility: it both removed a scientifically material
+overclaim and discovered the highest-value positive seam. Block 4 must provide
+an exact site/layer/role layout, keep context outside the complete first-stage
+neighbourhood and causal past, route it only to `B`, seal/register `E0`
+probability-independently, and execute the composed physical circuit. External
+clock, host context flag, unrecorded live state, later `E0` coarse-graining,
+probability-defined equivalence, or pointer-to-Record relabeling trigger an
+immediate pivot.
+
+Use two adversarial seats at Block-4 `T+2h`, a full five at `T+4h` or terminal
+return, one portfolio recheck near campaign `T+12h`, and final synthesis about
+two hours before deadline. Cap further full panels at three and keep the five
+roles nonduplicative: algebra/uniqueness, locality/routing, Record/operational
+semantics, adversarial prior art, and governance/audit/portfolio.

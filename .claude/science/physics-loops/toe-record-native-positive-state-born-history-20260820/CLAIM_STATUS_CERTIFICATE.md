@@ -1,19 +1,36 @@
 # Claim Status Certificate
 
-Campaign state: Blocks 1 and 2 are narrowed; the post-Block-2 five-perspective
-panel is complete; the campaign has pivoted to the existing-apparatus
-probability/Record congruence seam.
+Campaign state: Blocks 1 and 2 are proposed in PRs #7020 and #7022. Block 3 is
+narrowed, independently reconstructed, and pending proposal delivery. Its
+post-result five-perspective panel is complete. The campaign has pivoted to a
+four-hour kill-gated physical common-front-stage context-delay connector.
 
-Current artifact status: Block 1 is proposed in PR #7020. Block 2 has one
-bounded corrective theorem, upgraded primary runner, independent
-reconstruction, and fresh SHA/input-pinned runner caches.
+Current artifact status: Block 3 has one bounded formula-class independence
+theorem and positive causal-staging reopen, a primary runner passing `18/18`,
+and an independent reconstruction passing `11/11`. Cache, graph, pipeline,
+strict-lint, committed-delta, commit, push, and PR gates remain pending until
+executed; none is pre-credited.
 
-Proposed Block-2 science claim: conditional complete-input internal
-equivariance forces equal binary atom weights exactly when the preparation
-Bloch vector is orthogonal to the menu axis. This gives five positive Pauli
-rows for `I/2` and `P_z`, but aligned certainty is separately supplied and the
-selected one-shot Pauli protocol leaves the live directional cubic untouched.
-The token ledger is stoichiometric, not a physical current.
+Proposed Block-3 science claim: on the exact Cycle-317 `M_A/M_B` pair,
+trace-square restriction gives shared-effect values `25/142` and `2/11`,
+normalized square gives fair/direct preparation values `3/8` and `9/20`, and
+affine evaluation passes both tested equalities. This proves algebraic
+independence inside the displayed positive normalized covariant formula class,
+not model-theoretic independence from the full axioms. The selected effect,
+Kraus operator, and Choi map are identical; complete channels differ.
+
+The symbolic six-code table carries exact physical compressed candidate
+content but is not a physical writer: it does not select a site, sample, form
+a Record, derive no-click/double-click mass, or extend to every local
+condition. No total hostile nearest-neighbour model is claimed.
+
+Positive reopen: with `B=sqrt(I-E0)Ug` and `J_j=K_j B^-1`, both ternary
+programs factor through one common binary front stage. Stage completeness and
+program recovery are exact; the common and both residual stages individually
+fit the existing bounded M64 carrier through held `L=6` and 24/24 carried
+frames. Staged causal composition, literal identity of the complete stage-one
+neighbourhood, context late reveal, terminal event registration, Record
+formation, and flat/staged operational transfer remain open.
 
 Audit status: none.
 
@@ -23,29 +40,24 @@ Obligation retirement: zero.
 
 TOE percentage movement: zero.
 
-Block 1 checks after the panel narrowing: primary 14/14; independent 10/10;
-both SHA/input-pinned caches are fresh. The fair weight, scaffold,
-commuting pointer interface, bridge `B`, action-to-measure relation, non-copy
-effect category, actuality, physical time, and arbitrary overlaps remain
-explicit inputs or residuals. The result does not establish an affine map on a
-convex preparation domain and does not test the known directional cubic
-grading. The prior unlanded stack is not promoted, retained, or imported as
-authority.
+Block 3 current direct checks: primary `18/18`; independent `11/11`. Exact
+menus, formula values, physical effects, selected Kraus/Choi equality,
+complete-channel separation, five declared preparations, physical candidate
+content, domain rejections, separate formula/apparatus covariance, exact
+factorization, individual staged-carrier feasibility, and the N1--N8 boundary
+are executed. The narrow formula-class gate passes. Broad Born no-go, full
+axiom non-entailment, completed Record/history, frequency, gravity, or
+axiom-necessity claims are `FAIL / DO NOT SHIP`.
 
-Block 2 current checks: primary `17/17`; independent `10/10`. The complete
-six-site content map, scalar-guard mutation, explicit output contents,
-all-axis stabilizer invariant, aligned-response residual, and fuel-sector
-deletion are executed, and both caches are fresh after the final note edit.
-The no-go gate passes only for the narrow onsite
-spectral obstruction and selected-protocol boundary; broad Born, Record,
-composite-carrier, or axiom-necessity negatives are `FAIL / DO NOT SHIP`.
-The full audit pipeline, authority/link invariant, skill-baseline guards, and
-strict audit lint pass; repository-global legacy warnings/notices introduce no
-new error.
+Panel decision: zero obligation retirement and zero TOE movement. Spend one
+four-hour block on a finite identical-stage-one physical layout, causal
+context routing to the `B` continuation, a sealed `E0` port, and
+probability-independent event registration. Pivot after two hours without an
+identical-star route, after four hours if only factorization/support remains,
+or immediately on an external scheduler, host flag, probability-defined
+equivalence, or pointer-to-Record relabeling.
 
-Panel decision: zero obligation retirement and zero TOE movement. Reuse the
-existing Cycle-317/321 apparatus and test whether the Admissibility pushforward
-commutes with the shared-effect operational quotient and preparation-tag
-forgetting. Axiom wording is not justified; the proper target is a retained
-downstream law, with an owner-facing independent-datum packet only if lawful
-countermodels survive the full connector contract.
+No axiom wording is justified. The operational-naturality sentence remains a
+diagnostic downstream-law interface only: positive derived routes remain
+open, no total hostile models establish non-entailment, operational
+registration is not yet probability-independent, and nothing is retained.

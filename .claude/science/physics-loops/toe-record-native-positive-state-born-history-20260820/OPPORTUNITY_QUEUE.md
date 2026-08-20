@@ -1,20 +1,22 @@
 # Opportunity Queue
 
-Ranking after the post-Block-2 five-perspective panel and prior-art normalization
-through Cycle 508 and the August 10--13 chain.
+Ranking after the post-Block-3 five-perspective panel, exact context-delay
+factorization, individual binary-stage carrier checks, and current PR refresh.
 
 | Rank | Target | Positive probability | Missing imports | Verification surface | Landability | Blast radius | Independence | Disposition |
 |---:|---|---:|---:|---:|---:|---:|---:|---|
-| 1 | shared-effect `M_A/M_B` Record-formation probability congruence on the existing Cycle-317/321 apparatus | 3 | 2 | 3 | 2 | 3 | 3 | **selected Block 3; highest non-gravity leverage** |
-| 2 | randomized-preparation future congruence on the same apparatus: affine `3/8` versus normalized-square `9/20` | 3 | 2 | 3 | 2 | 3 | 3 | mandatory second discriminator in rank 1 |
-| 3 | exact lawful-law pair or uniqueness theorem under the full connector contract | 3 | 1 | 3 | 3 | 3 | 3 | owner-datum decision only if both affine/non-affine full histories survive |
-| 4 | dependency-minimized Block-2 delivery and audit preparation | 3 | 1 | 3 | 3 | 3 | 3 | active packaging; zero retention assumed |
-| 5 | strict-NN/local-stage serialization of the existing unpaired apparatus | 2 | 2 | 3 | 2 | 2 | 3 | execute only if rank 1 is blocked by host program dispatch |
-| 6 | Cycle-334/339 endpoint-to-lawful-Record append and protected continuation | 2 | 2 | 3 | 2 | 3 | 2 | integrate inside rank 1, not as another standalone interface |
-| 7 | internal-covariance clarification | 1 | 1 owner decision | 2 | 1 | 2 | 2 | sidecar only; closes five weights and cannot choose Born |
-| 8 | genuine action-derived aligned certainty/bond current | 1 | 3 | 3 | 2 | 2 | 2 | demoted; endpoint certainty does not retire cubic or occurrence |
-| 9 | gravity state and source handoff | 2 | current worker result | 2 | 2 | 2 | 1 | wait; do not duplicate |
-| 10 | another menu, effect codec/quotient compiler, token ledger, or pointer carrier | 0 | 0 | 3 | 3 | 0 | 3 | retired as prior-art duplication |
+| 1 | common `{K0,B}` physical front stage with context absent from the complete stage-one neighbourhood and routed only after `B` | 3 | 2 | 3 | 3 | 3 | 3 | **selected Block 4; four-hour kill-gated highest Born-selector leverage** |
+| 2 | probability-independent terminal `E0` event registration and causal sealing | 3 | 2 | 3 | 2 | 3 | 3 | mandatory connector inside rank 1; use Cycle 339 only as a service |
+| 3 | composed staged M64 circuit: exact branch recovery, support/leakage/deletion/held-size/covariance | 3 | 1 | 3 | 3 | 3 | 3 | matrix factors and separate lifts already pass; composition is the new object |
+| 4 | effect-complete physical tag screening and operational preparation class | 3 | 2 | 3 | 2 | 3 | 3 | next after an effect connector; do not equate to literal direct M2 content by host decree |
+| 5 | flat/staged physical refinement or operational-equivalence theorem | 2 | 2 | 3 | 2 | 3 | 3 | required only to transfer equality back to old simultaneous ternary layouts |
+| 6 | generalize the common-front architecture to another shared effect, permutation, or refinement | 2 | 2 | 3 | 2 | 3 | 3 | extend only after the pair-specific connector passes every gate |
+| 7 | dependency-minimized Block-3 proposal and audit preparation | 3 | 1 | 3 | 3 | 2 | 3 | active packaging; zero retention assumed |
+| 8 | operational endpoint-registration/protected-recurrence chain | 2 | 2 | 3 | 2 | 3 | 2 | constructive cross-lane fallback, but historic implementations make standalone repetition lower value |
+| 9 | operational-naturality axiom/law datum | 1 | 3 plus owner decision | 2 | 1 | 3 | 3 | watch only; no total hostile models, necessity, minimality, or retention |
+| 10 | gravity state and source handoff | 2 | current worker result | 2 | 2 | 2 | 1 | PR #7021 stack externally owned; do not duplicate |
+| 11 | another menu, Gaussian fallback, sampled-law pair, token ledger, static countermodel, or pointer carrier | 0 | 0 | 3 | 3 | 0 | 3 | retired as duplicate or low-leverage scaffold |
 
-Queue refresh triggers: a panel redirect, a major theorem or countermodel, two
-consecutive non-terminal blocks, a new retained result, or three elapsed hours.
+Queue refresh triggers: Block-4 two-hour kill review, its four-hour terminal
+return, a major connector/obstruction/pivot, a new retained result, campaign
+`T+12h`, or two hours before deadline.

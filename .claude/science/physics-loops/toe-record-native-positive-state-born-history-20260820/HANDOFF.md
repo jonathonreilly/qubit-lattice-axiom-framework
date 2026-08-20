@@ -2,10 +2,10 @@
 
 ## Current State
 
-The 24-hour campaign is active. Block 1 is proposed in PR #7020. Block 2 is
-stacked on its delivered head and now returns a bounded corrective theorem;
-there is no audit verdict, retention, obligation retirement, or TOE-score
-movement.
+The 24-hour campaign is active. Block 1 is proposed in PR #7020 and Block 2 in
+PR #7022. Block 3 now has a scope-correct theorem note, primary `18/18`, and
+independent `11/11` executable. It has no audit verdict, retention, obligation
+retirement, or TOE-score movement.
 
 The prior-art sweep changed the target. Current main already contains a
 complete sampled-law underdetermination pair. The unlanded campaign stack
@@ -15,24 +15,35 @@ fork. Repeating any of those would be low leverage.
 
 ## Exact Live Fork
 
-1. generate the positive preparation as a Record outcome;
-2. add a preparation Record with provenance;
-3. condition the complete law on Record history or law-side boundary data; or
-4. seek an owner decision for a narrow unreadable causal-prestate type.
+Block 3 establishes only algebraic independence inside a displayed finite
+formula class. It does not exhibit total nearest-neighbour countermodels and
+does not form or sample Records. Its five-person panel nevertheless found an
+exact positive route. Both ternary programs factor through the common binary
+front stage
 
-The first three preserve the present core state sentence. The fourth is a
-governance fallback.
+```text
+{K0, B},  B = sqrt(I-E0) Ug,
+```
+
+followed only on `B` by context-specific `J_j = K_j B^-1`. Completeness and
+program recovery are exact, and the common plus both residual binary stages
+separately fit the existing bounded M64 carrier through held `L=6` and 24/24
+carried frames. The live fork is therefore:
+
+1. physically compose that common front stage with causal late reveal and a
+   sealed, probability-independently registered `E0` event; or
+2. if exact staging fails, reuse Cycle 339 specifically for protected causal
+   routing, or pivot to probability-independent event registration.
+
+No axiom datum is mature while these derived routes remain open.
 
 ## External Ownership
 
-Another worker owns the gravity stack. Open PRs #7011, #7015, and #7016 stack
-its Blocks 153--155. The newest discriminator reports Branch II: no frame
-change, no connection-sensitive witness on the completed positive-time sector,
-one minimal-support theorem and one banked sector-annihilation result, with the
-flat-limit calibration gap still open. It explicitly reports no axiom
-retirement or TOE movement and names a later pivot. None of those files or
-claims overlaps this branch's Record preparation experiment. This campaign
-will expose only the positive-state and history handoff needed by that lane.
+Another worker owns the gravity stack. Open PRs #7011, #7015, #7016, and #7021
+stack its Blocks 153--156. The newest residue/transversality/Krein gate reports
+zero TOE movement and names its own next gravity contracts. None of those files
+or claims overlaps this branch's probability/context-delay experiment. Do not
+duplicate or modify the gravity stack.
 
 ## Initial Panel Decision
 
@@ -51,53 +62,44 @@ power is not the known directional cubic survivor.
 
 ## Next Exact Action
 
-Block 2 is the exact return from the delayed-setting tournament. It derives
-the all-axis fixed-input criterion `s dot n=0`, hence five positive Pauli rows,
-but the `3/4` transcript still needs aligned certainty and Pauli-only tests do
-not touch the directional cubic. Its debit is stoichiometric rather than a
-physical current. Primary `17/17` and independent `10/10` checks execute the
-complete star, hostile guard and oriented-setting mutations, symbolic
-aligned residual, all-axis invariant, and Record/fuel-sector quotient.
+Block 3 binds the exact shared-effect `M_A/M_B` pair to the Cycle-317 apparatus.
+Trace-square restriction gives `25/142` versus `2/11`; normalized square gives
+fair/direct `3/8` versus `9/20`; affine evaluation passes both equalities. The
+selected effect, Kraus operator, and Choi map agree exactly while the complete
+channels differ. These are finite formula-class separators, not total
+Admissibility models. The symbolic six-code table is conditional content only:
+it does not select a site, draw an outcome, form a Record, or derive
+no-click/double-click mass.
 
-The full five-person panel unanimously rejected another unpaired-menu,
-pointer, quotient, or token compiler. Cycle 317 already supplies the physical
-forcing apparatus; Cycle 321 supplies the exact effect/process separator;
-Cycle 339 supplies an endpoint/content comparison connector; historic Cycle
-478 terminally compiles one finite quotient; August 10--13 supplies multiple
-mathematical measure-to-grade compilers and a non-affine survivor; historic
-Cycle 508 shows actuality can remain strongly non-Born.
+The selected Block 4 is one four-hour, kill-gated physical context-delay
+compiler:
 
-The selected Block 3 is one shared-effect ternary Record-probability and
-randomized-preparation congruence tournament:
+1. hours 0--2: give exact sites, layers, roles, and M2 contents; prove the
+   complete stage-one neighbourhood is literally identical in both contexts;
+2. keep every context carrier outside that neighbourhood and its causal past,
+   then route it only to the `B` continuation;
+3. seal the `E0` port against later context and register it without trace
+   weights, a seed, sampler, postselection, or pointer-to-Record relabeling;
+4. hours 2--4: compose the stages and recheck branch recovery, support,
+   leakage, deletions/ambiguities, held size, and covariance; and
+5. infer equality only from same complete condition implies same distribution.
 
-1. reuse the exact `M_A/M_B` menus sharing `E_0=(1/2)P_z` and the existing
-   Cycle-317 program family;
-2. use delayed setting Records and the exact `kappa(E,l)=E+i l I` carrier,
-   with identical outcome content for `E_0` and context stored separately;
-3. compare the marginal `E_0` Record-formation law across contexts while
-   retaining unequal post-outcome process tags;
-4. compare a physical randomized preparation with its direct barycenter
-   presentation, targeting affine `3/8` versus normalized-square `9/20` on
-   the Block-2 mixture;
-5. require one fixed physical law to select the formation site, exactly one
-   outcome, exhaustive normalization including failures, lawful Record append,
-   and future-equivalence; and
-6. stop on inserted trace/Kraus weights, supplied seed/uniformizer, host-side
-   forgetting/effect equality, postselection, or pointer-to-Record relabeling.
-
-A positive connector is a bounded genuine obligation retirement candidate.
-If two full lawful Record-history laws survive with affine and non-affine
-preparation descent, prepare the exact owner-facing independent-datum packet;
-do not edit an axiom or call necessity established before independent audit.
+Pivot at two hours without a concrete identical-star layout, at four hours if
+the return is only another factorization/support count, or immediately on an
+external clock, host context flag, unrecorded live state, unsealed `E0` port,
+or probability-defined equivalence. Extend to eight hours only after every
+connector gate passes, for generalization or lawful event/Record integration.
 
 ## Review And Delivery
 
 Review-loop is disabled. Direct line-by-line review and independent
 reconstruction remain required. Audit authority stays with the audit lane.
-The second full panel had high utility—it caught a scope overclaim, a comparator
-mismatch, and a route-bundling error—so the next full five-perspective panel is
-due immediately after Block 2 or after two hours if its premise surface remains
-ambiguous.
+The post-Block-3 panel had exceptionally high utility: it removed the false
+writer/sampler/no-click/total-model interpretation and discovered the exact
+common-front-stage route. Use two adversarial seats at Block-4 `T+2h`, a full
+five at `T+4h` or the first terminal return, one portfolio panel near campaign
+`T+12h`, and one final synthesis about two hours before deadline. Cap the
+remaining full panels at three and keep their roles nonduplicative.
 
 Block 1's delivery gates are complete: primary `14/14`, independent `10/10`,
 hostile mutation sweep `10/10`, full repository pipeline pass, strict audit
@@ -120,3 +122,12 @@ recommendation, and the exact prior-art-saturated next seam. The runners and
 note were repaired before cache generation. A new full-five panel is due
 after the next major result; if two later panels become redundant, the cadence
 may temporarily narrow to two adversarial seats.
+
+Block 3 is pending proposal delivery on
+`physics-loop/toe-shared-effect-record-congruence-block3-20260820`, stacked on
+the Block-2 delivered head `484cb5ac66`. Its current direct checks are primary
+`18/18` and independent `11/11`; exact physical code evaluation, the finite
+formula table, N1--N8 narrow gate, common-front-stage factorization, and the
+three separate binary carrier lifts pass. The broad Born no-go,
+model-theoretic axiom independence, completed Record/history, and axiom
+necessity gates remain `FAIL / DO NOT SHIP`. No review-loop was invoked.

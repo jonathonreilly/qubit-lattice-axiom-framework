@@ -1,0 +1,68 @@
+===== runner cache v1 =====
+runner: scripts/ridge_enter_isochrone_types_b12_2026_08_15.py
+runner_sha256: 91e5ab71425bbc572b722900d3ddca72c7a2f9ba9bfe6beef6240639c03013b2
+input_fingerprint_sha256: 6f41828e6aaf471442e176b5484895651f9a9972e7f19616771a28d48bd77c4a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/RIDGE_ENTER_ISOCHRONE_TYPES_B12_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+claim_scope: Isochrone type counts of the t(2,2,2) and t(4,4,4) shells under the named ridge-enter hop-cost on B_12(0) are reported. Displayed, not adopted.
+PASS: audit-input-paths declared inputs are the source note and the current axiom memo
+PASS: audit-input-literal AUDIT_INPUT_PATHS is a static string-literal tuple
+PASS: claim-scope note claim_scope matches the isochrone type-count statement
+PASS: displayed-not-adopted the census is displayed, not adopted
+PASS: not-in-admissibility κ is not written into Admissibility
+PASS: not-attach-l1 the displayed rule is not attached to L1
+PASS: uniqueness-not-claimed uniqueness among hop-costs is not claimed
+PASS: no-axiom-edit note records hypothetical axiom status no edit
+PASS: forbidden-absent forbidden phrases are absent from the source note
+n_sites 2625
+t2 10 t4 16
+t10_sites 116 t10_types 6 t10_n_r2 5
+t16_sites 572 t16_types 25 t16_n_r2 13
+t10_radii [10, 12, 14, 18, 20]
+t16_radii [38, 48, 50, 54, 56, 62, 66, 72, 74, 80, 86, 90, 104]
+t(2,2,2) 10
+t(4,4,4) 16
+t(1,1,1) 5
+t(3,3,3) 13
+has_222_in_t10 True
+has_444_in_t16 True
+body_t10 8 body_types_t10 [(2, 2, 2)]
+t10_mixed True
+t16_mixed True
+dijkstra_calls 1
+kappa_enter 3
+rho3_enter 1
+kappa_body_last 1
+rho3_body_last 1
+kappa_ridge 3
+rho3_ridge 3
+kappa_interior 1
+rho3_interior 1
+PASS: one-dijkstra exactly one Dijkstra ran
+PASS: ball-b12 B_12(0) has 2625 sites and 2624 nonzero sites
+PASS: reachable every site of B_12(0) is reached
+PASS: rotation-group the proper cubic group used for types has 24 elements
+PASS: t10-counts t=10 has 116 sites, 6 G+ types, and 5 distinct |v|_2^2
+PASS: t16-counts t=16 has 572 sites, 25 G+ types, and 13 distinct |v|_2^2
+PASS: t-222-in-t10 (2,2,2) sits in the t=10 shell
+PASS: t-444-in-t16 (4,4,4) sits in the t=16 shell
+PASS: unique-body-diagonal (2,2,2) is the unique body-diagonal type in its shell
+PASS: shells-mixed the t(2,2,2) and t(4,4,4) shells remain mixed
+PASS: not-leftover-of-rho3 κ prices the ridge-enter 2→3 hop at 3 while ρ3 prices it at 1
+PASS: note-records-counts note records site, type, and radius counts for both shells
+PASS: note-records-memberships note records (2,2,2) in t=10 and (4,4,4) in t=16
+PASS: chiral-pairs-split abs-sorted first-octant form still splits G+ chiral pairs
+PASS: seed-and-ridge-enter-clauses ν clauses, corridor-slide, ridge 3→3, and ridge-enter 2→3 cost 3; body last and non-ridge 3→3 cost 1
+PASS: axiom-untouched the axiom memo is an input only and still names the four axioms
+PASS: b12-only every named type stays inside B_12(0)
+TOTAL: PASS=26 FAIL=0
+
+----- stderr -----
+

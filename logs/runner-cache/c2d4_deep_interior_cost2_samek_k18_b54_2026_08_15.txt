@@ -1,0 +1,78 @@
+===== runner cache v1 =====
+runner: scripts/c2d4_deep_interior_cost2_samek_k18_b54_2026_08_15.py
+runner_sha256: ba4c99cbe4d40675bb731fa85b4468b66f545ad726728118f77ba3245b5361eb
+input_fingerprint_sha256: 651a56411298689651f6d88467eed49dacd18942abdf91fe989824ab3ef583e1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 12.04
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/C2D4_DEEP_INTERIOR_COST2_SAMEK_K18_B54_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+claim_scope: Same-k reverse at k=18 under the named c2d4-plus-deep-interior hop-cost on B_54(0) is reported. Displayed, not adopted.
+external_scientific_inputs: none; named hop-cost on the finite nearest-neighbor graph B_54(0) only
+package_local_integrity_reads: proposed source note and live axiom memo only; no cache or governance surface is written
+measure_boundary: integer hop-costs and one Dijkstra; no fit and no second graph search
+claim_boundary: same-k reverse at k=18 is displayed, not adopted
+n_sites 215929
+t(18,0,0) = 34
+t(18,18,18) = 74
+same-k comparison: 34^2 / 324 = 1156/324 versus 74^2 / 972 = 5476/972; reverse=False
+3 t(18,0,0)^2 = 3468
+t(18,18,18)^2 = 5476
+t(1,0,0) = 3
+t(1,1,1) = 5
+t(3,2,0) = 9
+t(4,2,0) = 10
+t(5,2,0) = 12
+t(2,2,2) = 10
+t(3,3,2) = 12
+t(3,3,3) = 14
+t(18,18,1) = 41
+t(18,18,2) = 42
+t(54,0,0) = 75
+t(51,0,0) = 67
+dijkstra_calls 1
+j2_deep 2 c2d4_deep 1 rho3_deep 1
+j2_shallow 1 c2d4_shallow 1
+j2_max4_out 2 c2d4_max4_out 2
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: audit-input-literal AUDIT_INPUT_PATHS is a static string-literal tuple
+PASS: ball-cardinality B_54(0) is the 215929-site integer set with coordinate-sum at most 54
+PASS: one-dijkstra exactly one Dijkstra from the origin is executed
+PASS: reachable every site of B_54(0) is reached
+PASS: hop-origin the unique origin hop has named cost 3
+PASS: hop-deep-interior-clause the named 3-to-3 dest min-abs>=3 clause prices (3,3,2) to (3,3,3) at 2
+PASS: hop-deep-interior-exit-idle the named deep-interior clause skips (3,3,3) to (2,3,3) because dest min abs is 2
+PASS: hop-shallow-interior-idle the named deep-interior clause skips (2,2,1) to (2,2,2) because dest min abs is 2
+PASS: hop-max4-out-clause c2d4 still prices (4,2,0) to (5,2,0) at 2, so j2 does as well
+PASS: in-ball-cost2-split in-ball j2=2 hops are dest-min-abs>=3 3-to-3 hops plus c2d4 max>=4 out-face hops
+PASS: j2-clauses seed-exit, axis, drop, corridor-slide, and ridge-slide cost 3; dest-min-abs>=3 3-to-3 and max>=4 out-face cost 2; dest-min-abs=2 body hops cost 1
+PASS: thm1-axis-time t(18,0,0) equals the computed origin-to-axis arrival time
+PASS: thm1-body-time t(18,18,18) equals the computed origin-to-body arrival time
+PASS: thm2-reverse-reported the integer same-k comparison is computed from the two arrivals
+PASS: thm1-note-reports-times the note reports the computed arrival times
+PASS: thm2-note-reports-comparison the note reports the integer same-k comparison and does not adopt it
+PASS: thm3-not-in-admissibility the live Admissibility wording is unchanged and does not name j2
+PASS: thm3-no-l1-attachment the note refuses to attach L1 and does not score a unit hop-cost
+PASS: forbidden-tokens forbidden tokens are absent from the note
+PASS: claim-scope-contract the required claim_scope is source-visible
+PASS: uniqueness-not-claimed the note does not claim uniqueness of the named hop-cost
+PASS: scope-boundary the theorem stays on B_54(0) and proposes no axiom edit
+PASS: displayed-not-adopted the rule is displayed, not adopted
+PASS: no-axiom-edit note records hypothetical axiom status no edit
+PASS: deep-interior-arrival the same Dijkstra records t(3,3,3) matching the dest-min-abs>=3 extra hop of cost 2
+PASS: shallow-interior-arrival the same Dijkstra records t(2,2,2) matching the skipped dest-min-abs=2 hop of cost 1
+PASS: skipped-max3-arrival the same Dijkstra records t(3,2,0)=9 and t(4,2,0)=10 matching the skipped extra hop of cost 1
+PASS: hug-then-deep-interior the same Dijkstra records t(18,18,2) and the remaining deep-interior hops of cost 2
+PASS: not-leftover-of-b51 (18,18,18) lies outside B_51(0) and the note says so
+PASS: axiom-untouched the axiom memo is an input only and still names the four axioms
+per_element: named hop-cost values are 1, 2, or 3 on nearest-neighbor hops.
+per_site: arrival times are reported only at (18,0,0) and (18,18,18).
+lattice_wide: checked and not executed — the search stays inside B_54(0).
+TOTAL: PASS=31 FAIL=0
+
+----- stderr -----
+

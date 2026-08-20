@@ -1,6 +1,6 @@
 {
  "edge_count": 16105,
- "node_count": 5584,
+ "node_count": 5585,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -553,6 +553,10 @@
   "admissibility_dirac_kahler_residual_invariance_theorem_bounded_theorem_note_2026-08-17": {
    "deps_hash": "85738f123ab9",
    "out_degree": 6
+  },
+  "admissibility_dirac_kahler_residue_transversality_gate_bounded_theorem_note_2026-08-20": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_dirac_kahler_scalar_quotient_theorem_bounded_theorem_note_2026-08-17": {
    "deps_hash": "2ccc579166f3",

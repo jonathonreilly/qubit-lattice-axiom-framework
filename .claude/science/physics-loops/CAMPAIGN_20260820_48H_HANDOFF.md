@@ -1,4 +1,4 @@
-# Campaign 2026-08-20 → Pool-2 Handoff (draft; finalized at window close)
+# Campaign 2026-08-20 → Pool-2 Handoff (FINAL)
 
 Pool 2 (codex `gpt-5.6-sol`) unlocks 2026-08-22 12:35 PM. Every item
 below is specified to be executable cold — named files, exact
@@ -14,7 +14,7 @@ completion and its price) <- #7016 (155, the discriminator verdict,
 Branch II) <- #7021 (156, the residue tiers / transversality /
 Krein gate) <- #7028 (157, the cutting strata completion, contract
 D closed) <- #7029 (158, the quotient gate, C-1 delivered / C-2
-closed) <- #PENDING-set-at-push (159, the link and curvature scout, with the
+closed) <- #7032 (159, the link and curvature scout, with the
 checker's three corrections).
 
 ## Item 1 — Contract E: the b141/b142 stale-pin chain re-pin

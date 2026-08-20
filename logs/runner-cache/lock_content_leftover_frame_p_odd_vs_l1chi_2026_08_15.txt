@@ -1,0 +1,63 @@
+===== runner cache v1 =====
+runner: scripts/lock_content_leftover_frame_p_odd_vs_l1chi_2026_08_15.py
+runner_sha256: ef71307b701c70831c49333f5c45a90da68d0aef14e26743a801ddfd6f156200
+input_fingerprint_sha256: 41bd22147badd43cc7a1c6b9e412202170da320e29e993af0f0b0b9d72383a0b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: none; occupancy alphabet, n=d/3, leftover-frame-positive f displayed
+package_local_integrity_reads: runner source, proposed source note, live axiom memo
+measure_boundary: exact Fraction and exact pair section on the 64 occupancy tuples; no spatial patch
+negative_scope: occupancy n≠0 is automatically achiral; lock-content f is not
+PASS: alphabet-two-letter occupancy alphabet is {0,1}
+PASS: star-cardinality six-neighbor occupancy star has 64 tuples
+PASS: cubic-group-size full signed-permutation group has 48 elements
+PASS: proper-group-size proper cubic rotations number 24
+PASS: thm1-n-empty-zero n(empty) = 0
+PASS: thm1-n-full-zero n(full) = 0
+PASS: thm1-n-axis-one-third n(+x occupied) = (1/3, 0, 0)
+PASS: thm1-forms-is-n-nonzero forms iff n ≠ 0 on the three witnesses
+PASS: thm1-n-form N_form = 56
+PASS: thm1-n-p-form N_P_form = 56
+PASS: thm1-n-both N_both = 56
+PASS: thm1-p-sends-n-to-minus-n n(P(c)) = -n(c) on all 64 tuples
+PASS: thm1-formation-set-p-invariant {c : n(c) ≠ 0} is P-invariant
+PASS: thm1-july3-t2-local every 2-letter coloring is proper-equivalent to its P-image
+PASS: thm2-n-f N_f = 12
+PASS: thm2-n-p-f N_P_f = 12
+PASS: thm2-n-both N_both = 12
+PASS: thm2-occupancy-f-set-not-p-odd {c : f(c)=1} is P-invariant, not P-odd
+PASS: thm2-f-is-not-n-nonzero lock-content f is not occupancy n≠0
+PASS: thm2-f-set-has-unique-full-axis every occupancy with f=1 has a unique full axis
+PASS: thm2-july3-pair-size July-3 chiral pair has 48 colorings
+PASS: thm2-content-positive-count leftover-frame-positive colorings number 24
+PASS: thm2-content-negative-count leftover-frame-negative colorings number 24
+PASS: thm2-content-p-odd lock-content leftover-frame-positive set is disjoint from its P-image
+PASS: thm2-content-sign-flips leftover-frame sign is P-odd on the pair
+PASS: thm2-uniqueness-not-required each f=1 occupancy has two leftover-frame-positive completions
+PASS: thm2-content-supports-are-f-set occupancy supports of leftover-frame-positive colorings are exactly {c : f(c)=1}
+PASS: thm3-occupancy-automatically-achiral occupancy n≠0 is two-letter P-invariant, so July-3 theorem 2 applies
+PASS: thm3-lock-content-not-automatically-achiral lock-content f lives on the July-3 k=3 chiral pair and is P-odd
+PASS: thm3-displayed-not-adopted note reports the split as displayed, not adopted
+PASS: claim-scope note reports the displayed claim_scope verbatim
+PASS: axiom-boundary Admissibility is proper-covariant and does not supply formation
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: forbidden-phrases-absent forbidden phrases are absent from note and runner
+PASS: no-new-spatial-patch runner never steps occupancy on a new spatial patch
+PASS: no-orbit-dump runner does not dump the proper-orbit census
+PASS: claim-type-and-gate bounded theorem type and a passing N1-N8 gate are source-visible
+PASS: machine-status-contract note carries the bounded-support status and no hypothetical axiom adoption
+PASS: qubit-unchanged Qubit remains M_2(C); no axiom edit
+PASS: mutation-occupancy-f-equals-forms-fails predicate f-set == n≠0 fails
+PASS: mutation-occupancy-f-is-p-odd-fails predicate occupancy {c : f(c)=1} is P-odd fails
+per_element: checked exactly — each of the 64 occupancy tuples has n=d/3, forms iff n≠0, and a leftover-frame lock-content bit
+per_site: checked exactly — one six-neighbor star; no host rebuild and no occupancy step
+per_mode: checked exactly — two-letter occupancy n≠0 versus three-letter leftover-frame-positive f
+per_block: checked exactly — N_form=56/56/56 P-even; occupancy N_f=12/12/12; content f is P-odd
+lattice_wide: checked and not executed — no occupancy step on a new spatial patch
+TOTAL: PASS=41 FAIL=0
+
+----- stderr -----
+

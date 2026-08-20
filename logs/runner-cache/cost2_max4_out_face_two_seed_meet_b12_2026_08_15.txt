@@ -1,0 +1,83 @@
+===== runner cache v1 =====
+runner: scripts/cost2_max4_out_face_two_seed_meet_b12_2026_08_15.py
+runner_sha256: 5899f2c359166075b2a327c1f52e80a34efe3c4329bf8dcccb437ce6d70faa50
+input_fingerprint_sha256: b8993bb55ee7262ebf1b94e684d6dad223f23489b150dc3809a188ad88faa356
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.21
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/COST2_MAX4_OUT_FACE_TWO_SEED_MEET_B12_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+claim_scope: Two-seed meeting-set arrival-speed variance under the named cost-2 max≥4 out-face hop-cost on B_12(0)∪B_12((2,0,0)) is reported. Displayed, not adopted.
+external_scientific_inputs: none; named hop-cost on the finite nearest-neighbor union B_12(0)∪B_12((2,0,0)) only
+package_local_integrity_reads: proposed source note and live axiom memo only; no cache or governance surface is written
+measure_boundary: integer hop-costs and two Dijkstras; no fit and no third graph search
+claim_boundary: two-seed meeting-set variance is displayed, not adopted
+PASS: audit-input-paths declared inputs are the source note and the current axiom memo
+PASS: audit-input-literal AUDIT_INPUT_PATHS is a static string-literal tuple
+PASS: claim-scope note claim_scope matches the displayed scoring statement
+PASS: displayed-not-adopted the rule is displayed, not adopted
+PASS: not-in-admissibility c2d4 is not written into Admissibility
+PASS: not-attach-l1 the displayed rule is not attached to L1
+PASS: uniqueness-not-claimed uniqueness among hop-costs is not claimed
+PASS: no-axiom-edit note records hypothetical axiom status no edit
+PASS: forbidden-absent forbidden phrases are absent from the note and runner
+PASS: cache-false the note records cache_write false
+PASS: union-cardinality the executed domain is the 3203-site union B_12(0)∪B_12((2,0,0))
+n_sites 3203
+|E_c2d4| 385
+meet_c2d4 ((1, 0, 0),)
+t_c2d4 3
+|M_c2d4| 1
+|E_l1| 265
+meet_l1 ((1, 0, 0),)
+t_l1 1
+|M_l1| 1
+t0(3,2,0) 9
+t0(4,2,0) 10
+t0(5,2,0) 12
+Q_c2d4 1/9
+Q_l1 1/1
+var_c2d4 0
+var_l1 0
+dijkstra_calls 2
+c2d4_unit_out 3 rho3_unit_out 3 d4_extra_unit_out 0 d3_extra_unit_out 0
+c2d4_df_out 1 omega_df_out 3 d4_extra_df_out 0 df_extra_df_out 1
+c2d4_max3_out 1 c2d3_max3_out 2 rho3_max3_out 1 d4_extra_max3_out 0 d3_extra_max3_out 1
+c2d4_max4_out 2 d4_max4_out 3 rho3_max4_out 1 d4_extra_max4_out 1
+PASS: two-dijkstras exactly two Dijkstras ran and every union site is reached
+PASS: l1-taxicab ℓ¹ arrivals equal the taxicab norms from each seed
+PASS: meeting-set lex-first c2d4 meeting site is (1,0,0) at t=3 with |M|=1
+PASS: l1-meeting-set lex-first ℓ¹ meeting site is (1,0,0) at t=1 with |M|=1
+PASS: singleton-meeting |M|=1 on the B_12 union under c2d4 and under ℓ¹; equal-arrival is 385 versus 265
+PASS: variances both singleton meeting-set arrival-speed variances are 0
+PASS: note-records-meeting note records the lex-first site, its t, and |M|
+PASS: seed-relative c2d4 is grown from each seed: exit from (2,0,0) costs 3, not the global 1→2 price
+PASS: c2d4-clauses seed-exit, axis, drop, corridor-slide, and ridge-slide cost 3; max>=4 out-face costs 2; max>=3 out extra is idle; 1-to-2 and small 2-to-3 cost 1
+PASS: hop-unit-out-skipped the extra clause skips (1,1,0) to (2,1,0); rho3 already prices that hop
+PASS: hop-df-out-skipped the named 2-to-2 growing-max clause with source max at least 4 skips (2,2,0) to (3,2,0)
+PASS: hop-max3-out-skipped the named 2-to-2 growing-max clause with source max at least 4 skips (3,2,0) to (4,2,0)
+PASS: hop-max4-out-clause the named 2-to-2 growing-max clause with source max at least 4 prices (4,2,0) to (5,2,0) at 2
+PASS: max4-out-live-on-union nearest-neighbor hops inside the union trigger the extra cost-2 clause
+PASS: skipped-max3-arrival the same Dijkstra records t(3,2,0)=9 and t(4,2,0)=10 matching the skipped extra hop of cost 1
+PASS: live-arrival-uses-cost-2 the same Dijkstra records t(4,2,0)=10 and t(5,2,0)=12 matching the extra hop of cost 2
+PASS: corridor-already-taxed the in-union hop (4,1,0) to (5,1,0) fires the extra clause but corridor-slide already prices it at 3
+PASS: not-leftover-of-l1 c2d4 meeting time is 3 while ℓ¹ meeting time is 1, so the c2d4 score is not a leftover of ℓ¹
+PASS: not-leftover-of-rho3 rho3 prices the max≥4 out-face hop at 1 while c2d4 prices it at 2
+PASS: not-leftover-of-d4-or-omega d4 and omega price the max≥4 out-face hop at 3, while c2d4 prices it at 2 and skips (3,2,0)->(4,2,0)
+PASS: not-leftover-of-c2d3 c2d3 prices the max≥3 out-face hop at 2 while c2d4 prices it at 1
+PASS: not-leftover-of-b6 the B_12 union is larger than the B_6 union and the equal-arrival set is 385, but M stayed a singleton
+PASS: source-axioms current Lattice, Admissibility, and Record wording is pinned
+PASS: axiom-untouched the axiom memo is an input only and still names the four axioms
+PASS: thm3-exact Theorem 3 uses the required non-adoption sentences
+PASS: scope-boundary the theorem stays on the B_12 union and proposes no axiom edit
+per_element: named hop-cost values are 1, 2, or 3 on nearest-neighbor hops.
+per_site: meeting-set arrivals are reported only on the computed M.
+lattice_wide: checked and not executed — the search stays inside the union.
+TOTAL: PASS=37 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,53 @@
+===== runner cache v1 =====
+runner: scripts/perpnn_two_site_seed_reverse_face_2026_08_15.py
+runner_sha256: b49088c2587020b11850996665ce7b1c4d39d8a33a43666debdc198161fd3794
+input_fingerprint_sha256: 3f62c3b0f3a8e445a8bab9301dd7fe53d86433f34ca3da52cc88137bdd72d7d7
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+perp-step two-site seed reverse/face on B_3(0)
+AUDIT_INPUT_PATHS:
+  docs/PERPNN_TWO_SITE_SEED_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Perp-step incoming-lock formation-tick reverse and face at k=1 on B_3(0) with two-site seed {0,(0,1,0)} and locks +e_1/+e_2 are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/PERPNN_TWO_SITE_SEED_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: k1-probes-in-host
+PASS: two-site-seed-in-host
+tick-1 6-mask: (0, 0, 0, 1, 1, 1)
+t(1,0,0)=2 t(1,1,1)=2 t(2,0,0)=3 t(1,1,0)=1
+locks(1,0,0)=[(0, -1, 0)]
+locks(1,1,1)=[(0, 0, 1), (1, 0, 0)]
+seed ticks: t(0,0,0)=0 t(0,1,0)=0
+PASS: theorem1-tick1-mask  ((0, 0, 0, 1, 1, 1))
+PASS: theorem1-seed-and-tick1-locks
+PASS: theorem1-plus-e2-neighbor-is-seed-not-tick1
+PASS: theorem1-defined-ticks  (2,2,3,1)
+PASS: theorem1-uniqueness-not-required  ([(0, 0, 1), (1, 0, 0)])
+PASS: theorem1-not-six-neighbor-distance
+PASS: cardinality-not-one-site-clone  (two=(0, 0, 0, 1, 1, 1) one=(0, 0, 1, 1, 1, 1))
+PASS: theorem2-reverse-defined-and-holds  (3*2^2=12 vs 4)
+PASS: theorem3-face-defined-and-holds  (3^2=9 vs 2*1^2=2)
+PASS: mutation-drop-perp-changes-origin-mask  ((1, 1, 0, 1, 1, 1))
+PASS: formation-stays-in-host
+PASS: perp-consistent-seed-locks
+PASS: note-claim-scope
+PASS: note-reports-mask-and-ticks
+PASS: note-reverse-and-face-hold
+PASS: note-displayed-not-adopted
+PASS: note-cardinality-not-clone
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-machine-status-no-axiom-edit
+PASS: source-audit-paths-are-static-literals
+TOTAL: PASS=28 FAIL=0
+
+----- stderr -----
+

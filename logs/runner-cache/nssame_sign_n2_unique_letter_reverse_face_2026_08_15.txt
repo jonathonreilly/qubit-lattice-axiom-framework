@@ -1,0 +1,68 @@
+===== runner cache v1 =====
+runner: scripts/nssame_sign_n2_unique_letter_reverse_face_2026_08_15.py
+runner_sha256: 4f2cfacf146777cc6dd3419e8a0eaa7762f6ad4cc914e613a533688d3744040c
+input_fingerprint_sha256: 60d63096afab945fa79a01f0c487fc9ca9c3c7927ef9730742f5ee5e6c947f87
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: none; exact occupancy kernels and unique letters only
+package_local_integrity_reads: proposed source note and live axiom memo only
+host: Euclidean B_3(0) with n·n<=9
+host_site_count: 123
+seed: {0,(0,1,0)} both locking +e_1 at tick 0
+process: nssame perp-step incoming-lock
+kernel: formdraw n_μ=(o_{+μ}−o_{−μ})/3 from already-recorded 6-NN
+unique letter: sign(n_2); UNDEFINED if n_2=0
+n(A)=(−1/3, −1/3, 0) k=2 n2=-1/3 L=− t=3 occ=+−e1(0, 1) +−e2(0, 1) +−e3(1, 1) incoming=[(0, 0, -1), (0, 0, 1), (0, 1, 0)]
+n(B)=(−1/3, 0, 0) k=1 n2=0 L=UNDEFINED t=2 occ=+−e1(0, 1) +−e2(0, 0) +−e3(0, 0) incoming=[(1, 0, 0)]
+n(C)=(−1/3, 0, 0) k=1 n2=0 L=UNDEFINED t=4 occ=+−e1(0, 1) +−e2(0, 0) +−e3(0, 0) incoming=[(1, 0, 0)]
+n(D)=(−1/3, 1/3, 0) k=2 n2=1/3 L=+ t=3 occ=+−e1(0, 1) +−e2(1, 0) +−e3(1, 1) incoming=[(0, -1, 0), (0, 0, -1), (0, 0, 1)]
+n(C)=n(D): False
+reverse=UNDEFINED face=UNDEFINED
+claim_boundary: displayed, not adopted; not written into Admissibility
+cache_write: false
+AUDIT_TIMEOUT_SEC: 120
+claim_scope: Reverse and face from unique letter sign(n_2) on the four nssame probes are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal AUDIT_INPUT_PATHS is the declared two-path static tuple
+PASS: audit-input-files declared review inputs exist
+PASS: host-euclidean-ball host is exactly {n in Z^3 : n·n <= 9}
+PASS: seed-two-site-same-lock tick-0 records are origin and (0,1,0), both locking +e_1
+PASS: identity-gates-present occupancy, n_vector, unique_letter_sign_n2, reverse, face, and grow are computed
+PASS: unique-letter-sign-n2-identity sign(n_2) is UNDEFINED at n_2=0 and ± according to n_2
+PASS: reverse-face-undefined-when-letter-undefined needed UNDEFINED letter makes reverse/face UNDEFINED; else all or none
+PASS: thm1-n-A computed n(A) and unique letter are recorded in the note
+PASS: thm1-n-B computed n(B) and unique letter are recorded in the note
+PASS: thm1-n-C computed n(C) and unique letter are recorded in the note
+PASS: thm1-n-D computed n(D) and unique letter are recorded in the note
+PASS: thm1-nC-not-equal-nD n(C)=n(D) fails and the split is n_2
+PASS: thm1-n-nonzero-n2-zero-undefined all four n≠0, but n_2=0 at B and C is UNDEFINED
+PASS: theorem2-reverse-undefined reverse is UNDEFINED because L(B) is UNDEFINED
+PASS: theorem3-face-undefined face is UNDEFINED because L(C) is UNDEFINED
+PASS: not-pplus-along-n unique P_+ along n is identically + and scores reverse/face none
+PASS: not-sign-n1 unique letter sign(n_1) is identically − because n_1 is constant
+PASS: not-ndot scoring is not ndot along e_1 or e_3
+PASS: already-recorded-six-nn occupancy reads strictly earlier 6-NN, not the unread probe
+PASS: uniqueness-not-required first-arrival incoming locks at A and D need not be unique
+PASS: not-mixed-cubic-orbit same-lock seed is outside the proper cubic orbit of mixed +e_1/+e_2
+PASS: perp-step-incoming-lock origin lock +e_1 blocks parallel steps and allows the four perpendicular steps
+PASS: incoming-locks-are-nn-steps-not-letters incoming locks are unit NN steps, not {+,−} unique letters
+PASS: letters-do-not-feed-occupancy occupancy is independent of a later unique letter
+PASS: mutation-minus-as-vacant-changes-n dropping an already-recorded neighbor changes n
+PASS: mutation-one-site-seed-changes-n one-site seed disagrees with the nssame kernels
+PASS: note-claim-scope note claim_scope matches the unique-letter reverse/face report
+PASS: note-displayed-not-adopted display is not written into Admissibility and names no extra axiom
+PASS: note-does-not-identify-incoming unique letters are not identified with incoming steps
+PASS: note-does-not-feed-n-or-attach-formation-member letters do not feed n and the occupancy-kernel formation member is not attached
+PASS: note-forbids-enlargement-and-cache formation stays inside B_3(0) and no runner cache is written
+PASS: note-ticks formation ticks of the four probes are recorded
+PASS: note-n-gates-present no-go discipline gates N1 through N8 are present
+PASS: note-forbidden-tokens-absent note omits excluded claim language and does not attach a first-lemma tag
+PASS: note-no-author-retained-verdict note authors no retained or promoted verdict
+PASS: axiom-quotes-unedited Lattice, Qubit, and Record sentences are quoted from the live axiom memo
+PASS: source-audit-paths-are-static-literals AUDIT_INPUT_PATHS is a static two-path literal in the runner source
+TOTAL: PASS=37 FAIL=0
+
+----- stderr -----
+

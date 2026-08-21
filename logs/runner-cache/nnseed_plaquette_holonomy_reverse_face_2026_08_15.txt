@@ -1,0 +1,72 @@
+===== runner cache v1 =====
+runner: scripts/nnseed_plaquette_holonomy_reverse_face_2026_08_15.py
+runner_sha256: c6039e4d8154aa24c15ee0686edb4b8aa8a9033b3fdb3c170680a3a9b7684a25
+input_fingerprint_sha256: 87eac764bf46bb216784fafcccaea7eb41f879bc8fbd9a4535e30dc8f60a24a0
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+plaquette opposite-vertex holonomy reverse/face on nnseed Q and R
+AUDIT_INPUT_PATHS:
+  docs/NNSEED_PLAQUETTE_HOLONOMY_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Reverse and face from plaquette opposite-vertex holonomy on the nnseed seed-square Q and on the 4-cycle R containing A and B are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/NNSEED_PLAQUETTE_HOLONOMY_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: q-and-r-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: own-incoming-letter-identity
+PASS: holonomy-identity
+PASS: reverse-face-identity
+T_Q=2 T_R=2 t(A)=2 t(B)=2
+Q 0 (0, 0, 0) t=0 incoming=[+e_1] L=+e_1
+Q e_1 (1, 0, 0) t=2 incoming=[−e_2] L=−e_2
+Q e_1+e_2 (1, 1, 0) t=1 incoming=[+e_1] L=+e_1
+Q e_2 (0, 1, 0) t=0 incoming=[+e_2] L=+e_2
+H=(2, 0, 0)
+R A (1, 0, 0) t=2 incoming=[−e_2] L=−e_2
+R (1,1,0) (1, 1, 0) t=1 incoming=[+e_1] L=+e_1
+R B (1, 1, 1) t=2 incoming=[+e_3, +e_1] L=NONUNIQUE
+R (1,0,1) (1, 0, 1) t=2 incoming=[+e_1] L=+e_1
+reverse=fail face=fail
+PASS: theorem1-TQ-four-locks-on-Q-and-H  ((2, ((1, 0, 0), (0, -1, 0), (1, 0, 0), (0, 1, 0)), (2, 0, 0)))
+PASS: theorem1-TR-four-locks-on-R  ((2, ((0, -1, 0), (1, 0, 0), 'NONUNIQUE', (1, 0, 0)), ((0, 0, 1), (1, 0, 0))))
+PASS: theorem2-reverse-fail  (fail)
+PASS: theorem3-face-fail  (fail)
+PASS: uniqueness-not-required  ([(0, 0, 1), (1, 0, 0)])
+PASS: two-site-seed-locks
+PASS: letter-is-own-incoming-not-star-sum
+PASS: incoming-locks-are-nn-steps
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: mutation-unrecorded-undefined
+PASS: mutation-nonunique-recorded-fails
+PASS: first-tick-all-Q-recorded
+PASS: source-formation-is-perp-step-queue
+PASS: source-letter-from-own-incoming-only
+PASS: note-claim-scope
+PASS: note-reports-TQ-locks-H
+PASS: note-reports-TR-R-locks
+PASS: note-reports-fail-fail
+PASS: note-displayed-not-adopted
+PASS: note-not-star-aggregation
+PASS: note-does-not-attach-formation
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+TOTAL: PASS=41 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,82 @@
+===== runner cache v1 =====
+runner: scripts/opposite_lock_yprobe_minimal_t_existential_opposite_holding_2026_08_15.py
+runner_sha256: 866d59b1fa9b0d06a6be58d760eedbda90353a7831c9c513b2617f75b1fedde1
+input_fingerprint_sha256: e41edf3ad95861e23185970555d22620e72f673542aaf9db0326abd9802b13d0
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+minimal T later-tick exist-opposite HOLD on opposite-lock y-probes
+AUDIT_INPUT_PATHS:
+  docs/OPPOSITE_LOCK_YPROBE_MINIMAL_T_EXISTENTIAL_OPPOSITE_HOLDING_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: The later-tick exist-opposite reverse/face bits on nsopp y-probes at each T, and the smallest T at which both HOLD, are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/OPPOSITE_LOCK_YPROBE_MINIMAL_T_EXISTENTIAL_OPPOSITE_HOLDING_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-y-probes-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: existential-opposite-identity
+PASS: theorem1-all-four-probes-recorded
+T=0 S_T(A)={+e_1} S_T(B)={} S_T(C)={−e_1} S_T(D)={−e_1} reverse=UNDEFINED face=fail
+T=1 S_T(A)={+e_1, +e_2, +e_3, −e_3} S_T(B)={+e_3} S_T(C)={−e_1} S_T(D)={−e_1} reverse=hold face=fail
+T=2 S_T(A)={+e_1, +e_2, +e_3, −e_3} S_T(B)={+e_1, +e_3} S_T(C)={+e_1, −e_1, +e_2, +e_3, −e_3} S_T(D)={+e_1, −e_1} reverse=hold face=hold
+T=3 S_T(A)={+e_1, +e_2, −e_2, +e_3, −e_3} S_T(B)={+e_1, +e_2, −e_2, +e_3, −e_3} S_T(C)={+e_1, −e_1, +e_2, +e_3, −e_3} S_T(D)={+e_1, −e_1, +e_2, +e_3, −e_3} reverse=hold face=hold
+T_max=3 t(A)=0 t(B)=2 t(C)=1 t(D)=3 smallest_holding_T=2
+PASS: theorem1-max-probe-tick  (3)
+PASS: theorem1-T0-sets-and-bits  (reverse=UNDEFINED face=fail)
+PASS: theorem1-T1-sets-and-bits  (reverse=hold face=fail)
+PASS: theorem1-T2-sets-and-bits  (reverse=hold face=hold)
+PASS: theorem1-T3-sets-and-bits  (reverse=hold face=hold)
+PASS: theorem2-smallest-T-both-hold  (2)
+PASS: not-leftover-of-global-T3-lists
+PASS: not-leftover-of-formation-time
+PASS: not-leftover-of-nslate-nnseed-x-probes
+PASS: not-leftover-of-unique-own-incoming
+PASS: sign-lettering-loses-axis-and-would-hide-hold
+PASS: not-probe-own-incoming-lock
+PASS: not-sum-leftover
+PASS: not-unique-vector-leftover
+PASS: incoming-locks-are-nn-steps
+PASS: uniqueness-not-required  ([(0, -1, 0), (0, 0, -1), (0, 0, 1)])
+PASS: two-site-opposite-lock-seed
+PASS: later-tick-not-self-and-formed-by-T
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: perp-step-incoming-lock
+PASS: mutation-empty-neighbor-locks-undefined
+PASS: mutation-no-opposite-pair-fails
+PASS: note-claim-scope
+PASS: note-reports-each-T-bits
+PASS: note-reports-smallest-T
+PASS: note-displayed-not-adopted
+PASS: note-does-not-use-occupancy-or-incoming
+PASS: note-not-sign-lettering
+PASS: note-not-ndot-or-occupancy-inner-product
+PASS: note-does-not-identify-incoming
+PASS: note-does-not-attach-formation-member
+PASS: note-not-unique-or-sum-leftover
+PASS: note-not-leftover-of-T3-lists
+PASS: note-not-leftover-of-formation-tick
+PASS: note-later-tick-T-defined
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+PASS: source-letter-from-existential-opposite-only
+PASS: theorem3-displayed-not-adopted
+TOTAL: PASS=57 FAIL=0
+
+----- stderr -----
+

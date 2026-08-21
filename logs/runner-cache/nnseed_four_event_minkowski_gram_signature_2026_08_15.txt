@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/nnseed_four_event_minkowski_gram_signature_2026_08_15.py
+runner_sha256: fcaefed201e7c907a0b61037a56418ee47509d35a6961e100d3fa74136aa1d5d
+input_fingerprint_sha256: 8b4a3dc3de0e5d006283c5cdd1c17924ac139ce058f01c9412991cf82b19e6aa
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/NNSEED_FOUR_EVENT_MINKOWSKI_GRAM_SIGNATURE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+cache_write: false
+external_scientific_inputs: displayed nnseed ticks and the gram4 signature comparison triple; no fitted, observational, or literature values
+measure_boundary: exact integer and rational 3x3 linear algebra only
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the required static string-literal tuple
+PASS: audit-input-paths-source the tuple is a static literal in this file
+PASS: four-events-only the Gram vectors are exactly axis, face, and body from the origin
+PASS: displayed-nnseed-ticks ticks are the displayed nnseed list (2,1,2), not a path dump
+PASS: gram-entries the nine Minkowski Gram entries are exactly Theorem 1
+PASS: ldl-reconstruction exact rational LDL reconstructs G
+PASS: signature-from-pivots LDL pivot signs give signature (1, 2, 0)
+PASS: principal-minor-inertia leading minors (3, -4, 5) independently give two sign changes and no zero
+PASS: versus-gram4 the nnseed signature equals the displayed gram4 triple (1, 2, 0)
+PASS: not-one-seed-clone 1-seed ticks (3,2,3) produce a different Gram, so this is not a clone
+PASS: euclidean-mutation the Euclidean product on the same 4-vectors has signature (3, 0, 0)
+PASS: no-float-signature Gram entries, pivots, and minors are exact Fraction values
+PASS: axiom-unedited Admissibility remains the quoted nearest-neighbor rule and carries no Gram metric
+PASS: note-contract the note states Theorems 1-3, displayed-not-adopted scope, and no L1
+PASS: no-go-packet the landed note contains the complete N1-N8 discipline record
+PASS: n5-certificate-source the note carries the exact five forensic resolution lines
+PASS: forbidden-phrases note and runner avoid the dispatch-forbidden phrases
+PASS: claim-type the source uses the bounded-theorem claim type without authoring an audit verdict
+per_element: all nine Gram entries and all three LDL pivots are evaluated as exact rationals
+per_site: only the four named events O, A, D, B enter; the extra seed (0,1,0) is excluded from the Gram
+per_mode: Minkowski versus Euclidean products are both computed; only the Minkowski product is the claim
+per_block: the 3x3 Gram block of (u(A),u(D),u(B)) is the sole signature carrier
+lattice_wide: checked and not executed — no lattice-wide metric, formation growth, or Admissibility rewrite is claimed
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

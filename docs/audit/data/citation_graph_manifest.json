@@ -1,6 +1,6 @@
 {
  "edge_count": 16109,
- "node_count": 5589,
+ "node_count": 5590,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -641,6 +641,10 @@
   "admissibility_dirac_kahler_unique_completion_price_bounded_theorem_note_2026-08-20": {
    "deps_hash": "164ecadfef5a",
    "out_degree": 3
+  },
+  "admissibility_dirac_kahler_validation_battery_bounded_theorem_note_2026-08-20": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_dirac_kahler_wick_phase_fine_site_staggered_os_lorentz_boundary_bounded_theorem_note_2026-08-14": {
    "deps_hash": "825cb5c969e8",

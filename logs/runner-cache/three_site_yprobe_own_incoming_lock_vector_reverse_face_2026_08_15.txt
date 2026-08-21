@@ -4,7 +4,7 @@ runner_sha256: 37032a5c07468670cb8aef0f52f24c1c117f8ae660a29775f809fb5789a6ce50
 input_fingerprint_sha256: 2c05dcecdd9a636f954288ded3cc7377ecdd521b6e55955fd98d9a41581ef583
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 own unique incoming lock vector reverse/face on three-site y-probes

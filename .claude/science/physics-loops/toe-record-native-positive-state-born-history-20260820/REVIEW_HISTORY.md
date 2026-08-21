@@ -937,3 +937,20 @@ pointer, and sink explicit; give a unitary extension or NN gate decomposition;
 then prove nondemolition stability/permanence under later updates. Only on that
 registered label algebra test central-restriction compatibility. Keep actual-
 member correlation separate. Gravity remains externally owned.
+
+## Block 7 committed-tree gate — 2026-08-20T20:13-04:00
+
+Science commit `f53d816172` was replayed from exact Block-6 delivery base
+`ec07e88db2` in a detached disposable worktree. The full fixed-point pipeline
+completed through checkpoint `088bde42d4bd`. Strict audit lint checked 4,903
+rows with nine warnings/notices and zero errors. The seeded committed-delta
+gate examined 19 changed paths and one claim, reported
+`forensic_evidence_ready=true`, discovered the independent helper, and found
+zero failures and zero control failures. The PR-diff cache gate found both
+runners fresh. Generated ledger, queue, and derived surfaces were discarded;
+no audit verdict was applied.
+
+This certifies the bounded proposal for delivery only. It does not register
+the label algebra as a framework Record, prove nondemolition permanence,
+select an actual history, retire an obligation, justify an axiom amendment, or
+move a TOE percentage. Remote push and stacked-PR verification remain.

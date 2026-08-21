@@ -212,6 +212,14 @@ algebraic-not-operational tomography wording, and separation of law, Record,
 and actual-member claims. This is a conditional positive proposal with zero
 obligation retirement and zero TOE movement.
 
+Science commit `f53d816172` also passes the full fixed-point pipeline in a
+detached disposable worktree through checkpoint `088bde42d4bd`. Strict audit
+lint checks 4,903 rows with zero errors, and the seeded committed-delta replay
+against exact Block-6 base `ec07e88db2` finds 19 changed paths and one claim
+with `forensic_evidence_ready=true`, zero failures/control failures, and the
+independent helper discovered. Pipeline-generated surfaces were discarded;
+remote delivery remains pending.
+
 ## Fixed-Carrier Nondemolition Record Update — Block 8 Next Contract
 
 Construct the next physicalization on adjacent `M1,F,M2,S` sites:

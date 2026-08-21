@@ -5,10 +5,13 @@
 The 24-hour campaign runs until 2026-08-21 11:27:51 EDT. Blocks 1--6 are
 proposed in PRs #7020, #7022, #7023, #7027, #7030, and #7031. Block 7 is
 active on `physics-loop/toe-cq-record-writer-block7-20260820`, stacked on the
-exact Block-6 delivery head `ec07e88db2`. Its corrected local return passes
-primary `18/18` and a separately implemented independent reconstruction
-`14/14`. Fresh caches, helper registration, graph manifest, and the full
-five-role panel pass; repository and committed-tree delivery gates remain.
+exact Block-6 delivery head `ec07e88db2`. Its corrected science commit
+`f53d816172` passes primary `18/18` and a separately implemented independent
+reconstruction `14/14`. Fresh caches, helper registration, graph manifest,
+repository invariants, premise purity, vocabulary, the full five-role panel,
+the committed-tree fixed-point pipeline, strict lint over 4,903 rows with zero
+errors, and the 19-path/one-claim forensic replay all pass. Push and remote PR
+verification remain.
 
 No block has an audit verdict, retention, obligation retirement, or TOE-score
 movement. The frozen percentages remain 95/92/50 for operational
@@ -166,6 +169,11 @@ for any canonical edit. Formal percentages remain frozen.
 
 Review-loop is disabled by user instruction. Use direct self-review,
 independent executables, disposable committed-tree gates, and independent
-audit. Proposal delivery is not retention. Block 7 currently has fresh input-
-bound caches and graph/helper registration; record the science commit and
-committed-tree evidence here after those gates actually run.
+audit. Proposal delivery is not retention. Block 7 has fresh input-bound
+caches and graph/helper registration. Science commit `f53d816172` passes a
+detached full fixed-point pipeline through checkpoint `088bde42d4bd`; strict
+lint checks 4,903 rows with zero errors; and the committed-delta replay against
+exact Block-6 base `ec07e88db2` finds 19 changed paths and one claim with
+`forensic_evidence_ready=true`, the independent helper discovered, and no
+failures or control failures. Disposable generated surfaces were discarded.
+Remote delivery remains pending.

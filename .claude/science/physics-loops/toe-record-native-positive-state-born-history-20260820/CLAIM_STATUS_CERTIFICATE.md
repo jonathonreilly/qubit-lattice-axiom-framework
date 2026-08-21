@@ -5,13 +5,16 @@ Campaign state: Blocks 1--6 are proposed in PRs #7020, #7022, #7023, #7027,
 `physics-loop/toe-cq-record-writer-block7-20260820`, stacked on the exact
 Block-6 delivery head `ec07e88db2`. No campaign block is audited or retained.
 
-Current Block-7 local artifact status: primary `18/18` and independent
-`14/14` pass. Fresh input-bound caches, Python compilation, citation helper
-registration, and the graph manifest pass. The five-role panel passes the
-corrected bounded science after material revisions. Repository invariants,
-premise purity, vocabulary, strict lint, committed-tree pipeline,
-committed-delta, push, and PR gates remain pending at this certificate
-checkpoint; no delivery result is inferred early.
+Current Block-7 artifact status: science commit `f53d816172` passes primary
+`18/18` and independent `14/14`. Fresh input-bound caches, Python compilation,
+citation-helper registration, graph manifest, repository invariants, premise
+purity, vocabulary, and the five-role corrected-science panel pass. A detached
+committed-tree replay completed the full fixed-point pipeline; strict lint
+checked 4,903 rows with zero errors; and the seeded committed-delta gate found
+19 changed paths and one claim with `forensic_evidence_ready=true`, no failures
+or control failures, and the independent helper discovered. Push and remote PR
+verification remain pending at this certificate checkpoint; no delivery,
+retention, or audit result is inferred early.
 
 Proposed Block-6 theorem: on the exact supplied Block-4 preparation and
 staged A/B instrument, a typed one-site Record code has a Hermitian branch-
@@ -128,6 +131,17 @@ compatibility is tested only after that physical label algebra is registered,
 and actual-member correlation remains outside the theorem.
 
 ## Committed-tree delivery evidence
+
+Science commit `f53d816172` was replayed in a detached disposable worktree on
+the exact Block-6 delivery base `ec07e88db2`. The full fixed-point pipeline
+completed through checkpoint `088bde42d4bd`; strict audit lint checked 4,903
+rows with zero errors; and the committed-delta evidence gate found 19 changed
+paths and one claim with `forensic_evidence_ready=true`, zero failures, zero
+control failures, and the independent helper discovered. The generated ledger
+and queue surfaces were intentionally discarded. This is proposal-delivery
+evidence only and moves no audit, retention, obligation, axiom, or TOE status.
+
+For comparison, the prior Block-6 delivery evidence follows.
 
 Science commit `2084d32d79bd6aade8785636c458e9ad2afe25bf` was replayed in a
 detached disposable worktree on the exact Block-5 base

@@ -163,7 +163,7 @@ PR #7031 is `OPEN`, non-draft, and `CLEAN`, with exact head
 `d14cc2b1e0b120bb6497301845bc4f970c38188b` on the intended Block-5 branch.
 No review-loop was used.
 
-## Block 7 — Local Proposal, Delivery Gates Pending
+## Block 7 — Science Certified, Remote Delivery Pending
 
 Branch:
 `physics-loop/toe-cq-record-writer-block7-20260820`, stacked on the exact
@@ -186,7 +186,11 @@ axiom necessity, actual-member selection, autonomous lattice dynamics, and
 TOE closure are `FAIL / DO NOT SHIP`. Audit status, retained status,
 obligation retirement, and TOE movement are zero.
 
-Repository invariants, premise purity, vocabulary, strict lint, committed-
-tree fixed-point pipeline, committed-delta forensic replay, science commit,
-push, PR opening, and remote stack verification remain pending. No review-
-loop is used.
+Science commit `f53d816172` passes repository invariants, premise purity,
+vocabulary, the detached committed-tree fixed-point pipeline, and strict lint
+over 4,903 rows with zero errors. The seeded committed-delta replay against
+exact Block-6 base `ec07e88db2` finds 19 changed paths and one claim with
+`forensic_evidence_ready=true`, no failures or control failures, and the
+independent helper discovered. Generated audit surfaces were discarded. Push,
+PR opening, and remote stack verification remain pending. No review-loop is
+used.

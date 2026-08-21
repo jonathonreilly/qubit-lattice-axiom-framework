@@ -1,0 +1,89 @@
+===== runner cache v1 =====
+runner: scripts/three_site_zprobe_sametick_formdraw_kernel_split_reverse_face_2026_08_15.py
+runner_sha256: a5fa866eb4dc50c2ff2a87e7e062b616fd0a0f565abb358d9752c0b09bdeb3f2
+input_fingerprint_sha256: 085594bcfd9ee24673a50a79f0d1e059215dd35e30ef42cb0aae1682e1a5cefc
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+same-tick formdraw n on three-site z-probes; split letter
+AUDIT_INPUT_PATHS:
+  docs/THREE_SITE_ZPROBE_SAMETICK_FORMDRAW_KERNEL_SPLIT_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Same-tick-inclusive formdraw occupancy kernel n on the four three-site z-probes, equality of n(C) and n(D), and reverse/face from the unique splitting-component letter when they disagree (else UNDEFINED), are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/THREE_SITE_ZPROBE_SAMETICK_FORMDRAW_KERNEL_SPLIT_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-z-probes-in-host
+PASS: z-probes-are-not-x-or-y-probes
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+A t=1 n=(1/3, 1/3, −1/3) occ=+−e1(1, 0) +−e2(1, 0) +−e3(0, 1) incoming=[(0, 0, 1)]
+B t=2 n=(−1/3, −1/3, 0) occ=+−e1(0, 1) +−e2(0, 1) +−e3(0, 0) incoming=[(0, 1, 0), (1, 0, 0)]
+C t=4 n=(0, 0, −1/3) occ=+−e1(1, 1) +−e2(1, 1) +−e3(0, 1) incoming=[(0, 1, 0), (1, 0, 0)]
+D t=1 n=(−1/3, 0, −1/3) occ=+−e1(0, 1) +−e2(0, 0) +−e3(0, 1) incoming=[(0, 0, 1)]
+n(C)=n(D): False
+mu_star=0 letters={'A': '+', 'B': '-', 'C': 'UNDEFINED', 'D': '-'}
+reverse=hold face=UNDEFINED
+per_element: each occupancy component of n and the splitting-component letter
+per_site: scored only at z-probes A,B,C,D on Euclidean B_3(0); no other sites
+per_mode: no spectral or mode calculation is executed on this finite host
+per_block: four kernels, equality of n(C) and n(D), and reverse/face
+lattice_wide: checked and not executed — no lattice-wide lettering rule is claimed
+PASS: theorem1-n-A  ((1/3, 1/3, −1/3))
+PASS: theorem1-n-B  ((−1/3, −1/3, 0))
+PASS: theorem1-n-C  ((0, 0, −1/3))
+PASS: theorem1-n-D  ((−1/3, 0, −1/3))
+PASS: theorem1-nC-disagrees-nD
+PASS: splitting-axis-is-e1
+PASS: theorem1-letters
+PASS: theorem1-A-is-not-seed
+PASS: theorem2-reverse-hold  (hold)
+PASS: theorem3-face-undefined  (UNDEFINED)
+PASS: not-unique-pplus
+PASS: not-nscodot
+PASS: not-leftover-of-nstrizn-thm1
+PASS: not-leftover-of-nstriz-lists
+PASS: not-nstrin-x-probe-formdraw
+PASS: not-two-site-nsopzncfx-leftover
+PASS: not-strictly-earlier
+PASS: uniqueness-not-required  ([(0, 1, 0), (1, 0, 0)])
+PASS: three-site-seed
+PASS: incoming-locks-are-nn-steps
+PASS: same-tick-excludes-probe
+PASS: same-tick-counts-partners-at-A
+PASS: same-tick-counts-partners-at-C
+PASS: same-tick-counts-partners-at-D
+PASS: letters-do-not-feed-occupancy
+PASS: formation-ticks-of-probes
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: perp-step-incoming-lock
+PASS: identity-letter-when-equal-is-undefined
+PASS: reverse-face-identity
+PASS: note-claim-scope
+PASS: note-displayed-not-adopted
+PASS: note-does-not-attach-occupancy-kernel-formation
+PASS: note-forbids-enlargement-and-cache
+PASS: note-not-x-or-y-probe-reprint
+PASS: note-a-is-not-seed
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step
+PASS: source-letter-from-splitting-component
+PASS: not-y-probe-formdraw
+PASS: note-not-scored-from-ticks
+TOTAL: PASS=57 FAIL=0
+
+----- stderr -----
+

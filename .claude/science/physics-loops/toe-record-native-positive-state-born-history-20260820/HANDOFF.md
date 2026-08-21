@@ -222,3 +222,49 @@ Remote delivery is PR
 opened and verified `OPEN`, non-draft, `MERGEABLE`, and `CLEAN` on exact
 Block-7 base `3a0372a927e2528b1186fc63fe48e368d5b4abf1`. No review-loop or audit
 verdict was used.
+
+## Block 9 Local Return And Block 10 Handoff
+
+Worktree:
+`/private/tmp/toe-site-record-instrument-block9-20260820.ZKLBp8/worktree`
+
+Branch:
+`physics-loop/toe-site-record-instrument-block9-20260820`
+
+Exact base:
+Block-8 delivery head `476833c22c2cc9e8280ef37badebbe5ca70951e5`.
+
+Block 9's exact finite result is primary `19/19` and independent `14/14`, with
+fresh content/input-pinned caches. The A/B instruments admit total idempotent
+`C4` absorbing channels and one supplied definite-program/freshness-flag
+integrated channel. The inactive Hilbert subspace has dimension `28` and its
+full `784`-dimensional operator algebra is fixed. Terminal atoms are
+subharmonic. Total Choi rank is `4`; the active formation restriction is rank
+`3`. Seven ordinary qubit tensor factors are counted, but no spatial embedding
+or NN compiler is inferred.
+
+One ordinary `C2` cannot contain blank plus three nonzero orthogonal readable
+sectors. That is not a site-Record no-go: three distinct `M2` candidate
+contents remain possible with external absence. A stipulated diagonal table
+has matching support; an equal-marginal hostile has mismatch, and a uniform
+positive-support menu has non-trace weights. Formation, actual Admissibility
+compatibility, realized membership, autonomous overlaps/resources/time, and
+retention remain open. The five-role panel passes the corrected bounded
+science and freezes every TOE score.
+
+Do not continue finite pointer/dilation/rank work. Block 10 is the physical
+effect-frame registration / Admissibility-descent fork. Build one lawful typed
+site event with a physically exhaustive candidate menu; derive same-effect
+descent after lawful tag/randomizer screening, preparation descent, and
+normalized refinement/coarse-graining. Reuse the existing forcing theorem and
+Block-7 tomography to prove Eq. (5), or build total site laws identical on
+everything the physical law actually derives but with different marginals,
+thereby naming the missing extension. Do not demand hostile twins under an
+already forcing-complete quotient. No review-loop, audit verdict, axiom edit,
+obligation retirement, or score movement is authorized.
+
+External gravity check: PRs #7042 and #7046 are clean. Their strongest latest
+result is a parity-decoupling kill of the proposed positive door plus three
+bounded survivors, explicitly with zero retirement/TOE movement. Do not
+duplicate that worker's branch; re-rank only if it later supplies a positive
+source/rate/lapse connector or retained obligation retirement.

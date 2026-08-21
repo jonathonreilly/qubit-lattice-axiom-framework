@@ -279,3 +279,34 @@ repaired regional carrier
 Compare against the increasing-archive route at the first concrete failure or
 two-hour gate. Re-run the full five-role panel at that return and at least every
 four hours; use targeted seats between full panels.
+
+## Block 9 Artifacts And Block 10 Contract
+
+Block 9 lands together:
+
+- one bounded-theorem note containing the complete current-main N1--N8 packet;
+- one primary exact executable and one independently rebuilt executable;
+- two canonical content/input-pinned caches ending `19/19` and `14/14`;
+- citation-graph/helper discovery and regenerated manifest surfaces;
+- synchronized campaign pack, including the five-role panel and zero-score
+  decision; and
+- committed-tree pipeline, strict lint, committed-delta, and exact stacked-PR
+  delivery evidence.
+
+The Block 10 first return must be one executable positive-or-discriminator
+packet, not another overview:
+
+1. specify an actually typed site event and physically derived exhaustive
+   candidate menu;
+2. encode the physical tag/randomizer and preparation quotient explicitly;
+3. test same-effect descent, refinement/coarse-graining, and normalization;
+4. invoke the existing conditional forcing result only after those premises
+   pass; and
+5. otherwise construct matched total laws agreeing on every property actually
+   derived and name the exact missing extension.
+
+Immediate kill conditions are an inserted trace/Born value, stipulated effect
+functionality, an A/B-only host table, repeated conditional Gleason/Busch,
+pointer-to-Record relabeling, or a generic sampled-law twin. If one or more
+scoped negatives ship, run the fresh N1--N8 gate and cache all five N5
+resolution lines. No review-loop is used.

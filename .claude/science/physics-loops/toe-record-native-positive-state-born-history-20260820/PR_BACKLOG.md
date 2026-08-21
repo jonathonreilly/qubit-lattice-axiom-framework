@@ -230,3 +230,27 @@ Opened and remotely verified:
 PR #7037 is `OPEN`, non-draft, `MERGEABLE`, and `CLEAN` on exact Block-7 base
 `3a0372a927e2528b1186fc63fe48e368d5b4abf1`. Opening head was
 `85aefe7570c5cd73a361b23245d149eec8a64f8d`. No review-loop was used.
+
+## Block 9 — Proposal In Delivery
+
+Branch:
+`physics-loop/toe-site-record-instrument-block9-20260820`, stacked on exact
+Block-8 delivery head `476833c22c2cc9e8280ef37badebbe5ca70951e5`.
+
+Current corrected local validation: primary `PASS=19 FAIL=0`, independent
+`PASS=14 FAIL=0`, both compile, and both final content/input-pinned caches are
+fresh. The primary fingerprint covers all 29 recursively loaded local helper
+modules. The citation graph discovers the independent helper and the manifest
+is regenerated.
+
+The full five-role panel passes the bounded science after correcting
+program/flag/environment typing, active/total ranks, integrated atom duals,
+spatial and export overclaims, candidate-content/formation/actuality scope,
+tag-factorization scope, coupling/support hostiles, and the current-main
+N1--N8 packet. This is a finite absorbing Hilbert-channel and type/resource
+discriminator, not a homogeneous strict-NN site-Record law. Audit, retention,
+obligation retirement, axiom status, and TOE movement remain zero.
+
+Pending delivery gates: explicit science commit, fresh committed-tree
+fixed-point pipeline, strict lint, committed-delta evidence, push, stacked PR,
+and remote base/head/state verification. No review-loop is used.

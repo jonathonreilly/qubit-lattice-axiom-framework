@@ -210,3 +210,35 @@ verified `OPEN`, non-draft, `MERGEABLE`, and `CLEAN` on exact Block-7 base
 `3a0372a927e2528b1186fc63fe48e368d5b4abf1`. Opening head was
 `85aefe7570c5cd73a361b23245d149eec8a64f8d`; the science payload remains commit
 `4195f59a95f9fc4dbca0baa042431b54817699a3`.
+
+## Block 9 Local Conditional Return
+
+Claim:
+`terminal_center_site_record_diagonal_commit_minimal_carrier_boundary_bounded_theorem_note_2026-08-20`.
+
+Current surface status: `bounded-support`. Target claim type:
+`bounded_theorem`. Audit and retained status are unset.
+
+The exact supplied A/B instruments admit total idempotent four-sector
+absorbing channels and one fixed definite-program/freshness-flag integrated
+channel. The complete 28-dimensional inactive Hilbert subspace operator
+algebra and terminal algebra are fixed; terminal atoms are subharmonic. Total
+Choi rank is four and active formation rank is three for the simple and
+integrated forms. `C4` is minimal only for the fixed endomorphic blank-plus-
+three-orthogonal-sector target. The specified tag-forgetting transition does
+not factor through its bare-`M2` fibre.
+
+The three `M2` matrices are candidate contents only. The uniform menu proves
+support compatibility only for that supplied menu. The diagonal joint table
+is stipulated and conditional on formation, actual Admissibility legality,
+and law-admissible realized membership. Equal marginals permit mismatch, and
+positive support permits non-trace weights. No site-formation kernel, central
+Admissibility equality, actual member, spatial NN law, overlap arbitration,
+resource renewal/time, or axiom amendment is supplied.
+
+The five-role panel's corrected final verdict is bounded-science `PASS`.
+Primary `19/19`, independent `14/14`, and both final input-pinned caches are
+fresh. The no-go packet passes after all eight ATTEMPTED routes cite retained
+type/target premises separately from current proposal witnesses. This is
+proposal evidence only: audit status none, retention none, obligation
+retirement zero, and TOE percentage movement zero.

@@ -58,3 +58,18 @@ claim.
 
 If this campaign reaches a new no-go, the no-go-discipline skill and all N1
 through N8 checks must be applied before the claim ships.
+
+## Block 9 Scoped Boundaries
+
+| Candidate negative | Exact witness | Scope | Status | Live escape / next route |
+|---|---|---|---|---|
+| one ordinary `C2` hosts blank plus three nonzero orthogonal readable sectors | four nonzero orthogonal supports have rank sum at least four | fixed endomorphic Hilbert carrier only | **bounded negative; N1--N8 packet** | supplied `C4`, typed external output, nonorthogonal POVM, arbitrary `M2` candidate contents |
+| the specified absent/present transition factors through a tag-forgetting bare-`M2` map | equation (6a) identifies both inputs under forgetting but assigns distinct tagged successors | that one fibre and transition only | **bounded factorization negative** | tagged kernels and support-restricted sentinel encodings remain live |
+| equal carrier/content marginals force matching realized labels | epsilon-cycle table keeps both marginals and has mismatch mass `2 epsilon` | finite three-label coupling | **refuted** | derive or supply diagonal support plus formation and law-admissible membership |
+| positive Admissibility support fixes the trace weights | uniform menu supports all three candidates but differs from both A/B central vectors | supplied finite candidate menu | **refuted** | derive operational effect/preparation/refinement descent on a forcing-complete physical menu |
+| Block 9 forms a framework Record or an autonomous strict-NN law | program, flag, environment, target, formation, overlaps, renewal, and time remain supplied/unconstructed | global physical claim | **FAIL / DO NOT SHIP** | Block 10 physical event registration; separate autonomy/resource campaign remains |
+| the finite carrier boundary forces an axiom edit | positive `C4`, tagged, site-kernel, nonunitary, and archive routes survive | constitutional claim | **FAIL / DO NOT SHIP** | derive the exact downstream law datum, audit necessity/minimality, then seek owner authorization |
+
+Block 9's landed source note contains the current-main N1--N8 packet and the
+primary cache contains substantive per-element/per-site/per-mode/per-block/
+lattice-wide certificates. Audit and retention remain unset.

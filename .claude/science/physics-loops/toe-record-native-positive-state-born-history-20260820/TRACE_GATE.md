@@ -1,12 +1,12 @@
 ---
 trace_class: advances
 target_claim_id: toe_record_native_positive_state_born_history_completion
-target_blocker_text: register the repaired blank/pending/terminal carrier as lawful site or multisite Records and derive one homogeneous strict-nearest-neighbour irreversible formation/update law with explicit environment sink program fuel total malformed/overlap behavior and terminal absorption under every physically allowed future update; only then type central compatibility and actual-member correlation separately
-source_of_blocker_text: block8_presence_collision_repair_exact_carrier_qnd_and_finite_same_update_reversible_absorption_boundary
+target_blocker_text: derive one physically typed site event and exhaustive candidate effect frame from the Record_Admissibility law, including same_effect_across_program and preparation descent plus normalized refinement_coarse_graining, so the existing forcing theorem can prove the central Eq5; otherwise isolate the exact missing extension with matched total site laws; autonomous formation_overlap_resources_time and actual_member correlation remain separate downstream blockers
+source_of_blocker_text: block9_exact_finite_absorbing_channel_candidate_content_and_coupling_marginal_discriminator
 reachability_to_target: advances
 artifact_role: campaign_pack
-campaign_native_target_reachability: block8 repairs the exact blank/outcome0 collision, realizes the A/B carrier and rank-three terminal-path export, proves atomwise QND criteria and maximal second-use leakage, and localizes the positive route to irreversible or increasing-archive dynamics; site Record registration complete future-law absorption regional Admissibility typing actual member resource genesis overlaps and time remain open
-next_trace_action: deliver Block8, then build and kill-test one finite irreversible homogeneous strict-NN site-Record instrument on the repaired carrier before central compatibility
+campaign_native_target_reachability: block9 executes the finite nonunitary escape with exact total and active costs, but candidate contents and a stipulated coupling do not supply actual Admissibility equality or site formation; further carrier_rank work is saturated, while the physical effect_frame descent can either prove the central weight law or name its minimal downstream clause; global autonomy actual_member resources overlaps and time remain open
+next_trace_action: deliver Block9, then execute the physical effect_frame_registration_Admissibility_descent positive_or_hostile fork before any axiom decision
 ---
 
 The campaign remains grounded on current main. Unlanded prior blocks and the
@@ -97,4 +97,34 @@ regional repaired carrier
 ```
 
 Zero audit, retention, obligation retirement, axiom movement, or TOE score
+movement is claimed.
+
+## Block 9 Trace Update
+
+The trace advances by executing Block 8's finite nonunitary escape and pricing
+it exactly: `C4` for blank plus three orthogonal terminal atoms, total/active
+Choi ranks `4/3`, two environment qubits, exact atomwise subharmonicity, and a
+fixed definite-program/freshness-flag channel. It also gives explicit hostile
+separators for four conflations: ordinary Hilbert status versus framework
+Record type, presence tag versus bare `M2`, equal marginals versus diagonal
+support, and positive support versus trace weights.
+
+The trace does not reach a framework Record or the selected global strict-NN
+law. Program, flag, environment, target, formation, actual Admissibility
+support/equality, realized membership, overlaps, renewal, and time remain
+supplied or open. The panel therefore saturates the isolated carrier/dilation
+route and redirects the next action to the physical central-law interface:
+
+```text
+lawful typed site event + physically exhaustive effect menu
+  -> effect/preparation descent + refinement/normalization
+  -> existing conditional forcing + Block-7 tomography
+  -> central Eq. (5), or exact missing-extension discriminator
+  -> later autonomous formation/resources and actual-member connectors.
+```
+
+A hostile pair may agree only on properties actually derived by the physical
+site law; demanding a wrong-effect member after an already forcing-complete
+quotient would contradict the existing theorem rather than test the physics.
+No audit, retention, obligation retirement, axiom movement, or TOE score
 movement is claimed.

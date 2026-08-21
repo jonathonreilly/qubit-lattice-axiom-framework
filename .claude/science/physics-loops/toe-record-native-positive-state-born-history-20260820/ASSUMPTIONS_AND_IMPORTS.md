@@ -123,3 +123,34 @@ terminal sectors. Relaxing any one has an explicit escape.
 Carrier registration wording is a conditional interface checklist only. It
 does not create a joint-regional Admissibility law or choose a realized branch,
 and it is neither a necessary/minimal axiom theorem nor an authorized edit.
+
+## Block 9 Imports And Nonimports
+
+Supplied: the exact Block-7 A/B Kraus programs; a definite program qubit; a
+four-sector blank/terminal Hilbert register; a live system qubit; a one-shot
+freshness flag; a pure four-code Stinespring environment; one invocation and
+target; three `M2` candidate contents; a uniform candidate site menu; and a
+stipulated diagonal coupling table. Program, flag, register, and environment
+are ordinary Hilbert factors, not framework Records or newly licensed state
+variables. The flag is not thermodynamic fuel.
+
+Derived exactly: total CPTP and idempotence; the exact blank-corner cq output;
+identity on the 28-dimensional inactive subspace operator algebra and terminal
+algebra; simple and integrated atomwise subharmonicity; total/active Choi ranks
+`4/3`; `C4` minimality for one blank plus three nonzero orthogonal sectors; the
+specified tag-forgetting nonfactorization; partial content-only decoding;
+diagonal-support and same-marginal hostile tables; and support/weight
+independence on the supplied menu.
+
+Not imported or derived: a site formation kernel, actual Admissibility support
+or marginal equality, quantum-to-Record calibration, law-admissible realized
+membership, spatial placement, strict-NN compilation, overlap arbitration,
+apparatus/program/environment genesis or renewal, export/no-return transport,
+physical time, Born derivation, actual-member selection, audit retention,
+obligation retirement, or an axiom amendment.
+
+For Block 10, the existing conditional effect-frame forcing theorem and
+Block-7 tomography may be reused only downstream of physically derived site
+event typing, same-effect/preparation descent, menu exhaustivity/normalization,
+and refinement/coarse-graining. Trace or effect functionality may not be
+inserted as a premise disguised as a construction.

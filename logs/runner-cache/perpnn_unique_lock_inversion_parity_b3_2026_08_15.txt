@@ -1,0 +1,51 @@
+===== runner cache v1 =====
+runner: scripts/perpnn_unique_lock_inversion_parity_b3_2026_08_15.py
+runner_sha256: 72acd2526cf734ec9e55b13af392231cda82e2eaa310c88a8c691d036ab46c75
+input_fingerprint_sha256: 3aa39c97c7bc423c1944e7e61947671f265a78f250a39ccd9c8022c4aa85e5cd
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+perpnn unique-lock inversion parity on B_3(0)
+AUDIT_INPUT_PATHS:
+  docs/PERPNN_UNIQUE_LOCK_INVERSION_PARITY_B3_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Inversion parity of unique earliest incoming locks on formed pairs {x,−x} in B_3(0) under perpnn is reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/PERPNN_UNIQUE_LOCK_INVERSION_PARITY_B3_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+host=123 formed=121 unformed=[(-3, 0, 0), (3, 0, 0)]
+N_pairs=60 N_unique=25
+N_odd=25 N_even=0 N_other=0
+unique_sample=all-odd
+witness L(0,1,0)=(0, 1, 0) L(0,-1,0)=(0, -1, 0)
+locks(1,0,0)=[(0, -1, 0), (0, 0, -1), (0, 0, 1), (0, 1, 0)]
+PASS: host-is-b3-closed-ball
+PASS: theorem1-n-pairs-both-formed  (60)
+PASS: theorem1-n-unique-both-ends  (25)
+PASS: theorem1-uniqueness-not-required  (unique=25 pairs=60 locks(1,0,0)=4)
+PASS: theorem2-odd-even-other  (25,0,0)
+PASS: theorem2-partition-of-unique
+PASS: theorem3-unique-sample-all-odd  (all-odd)
+PASS: hemisphere-counts-each-pair-once
+PASS: unformed-axial-triple  ([(-3, 0, 0), (3, 0, 0)])
+PASS: witness-unique-odd-pair  ((0, 1, 0) vs (0, -1, 0))
+PASS: seed-origin-tick-zero-lock-plus-e1
+PASS: formation-stays-in-host
+PASS: note-claim-scope
+PASS: note-reports-counts
+PASS: note-displayed-not-adopted
+PASS: note-forbids-enlargement-cache-and-occupancy-census
+PASS: note-does-not-write-P-or-VA-into-admissibility
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-machine-status-no-axiom-edit
+PASS: source-audit-paths-are-static-literals
+PASS: formation-uses-earliest-tick-queue
+TOTAL: PASS=25 FAIL=0
+
+----- stderr -----
+

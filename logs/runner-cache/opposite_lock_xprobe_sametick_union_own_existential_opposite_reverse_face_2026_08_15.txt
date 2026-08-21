@@ -1,0 +1,101 @@
+===== runner cache v1 =====
+runner: scripts/opposite_lock_xprobe_sametick_union_own_existential_opposite_reverse_face_2026_08_15.py
+runner_sha256: 2b2876cec514f551b81724890d784f1d779bcac333328214304bd8a3ea14bf8b
+input_fingerprint_sha256: 23c5145633951fd7b8696eb70bc8b275ad32e394ddc3156d560edb0e26c3df88
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+same-tick-inclusive 6-NN union own incoming lock reverse/face on opposite-lock x-probes
+AUDIT_INPUT_PATHS:
+  docs/OPPOSITE_LOCK_XPROBE_SAMETICK_UNION_OWN_EXISTENTIAL_OPPOSITE_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Reverse and face from same-tick-inclusive 6-NN locks union own incoming lock on the four nsopp x-probes, no global T, are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/OPPOSITE_LOCK_XPROBE_SAMETICK_UNION_OWN_EXISTENTIAL_OPPOSITE_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-x-probes-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: existential-opposite-identity
+PASS: unique-own-incoming-letter-identity
+PASS: union-own-set-identity
+PASS: theorem1-all-four-probes-recorded
+A t=3 L=UNDEFINED S={+e_1, −e_2, +e_3, −e_3} S^+={+e_1, −e_2, +e_3, −e_3} incoming=−e_3,+e_3,+e_2
+B t=2 L=+e_1 S={+e_1, +e_3} S^+={+e_1, +e_3} incoming=+e_1
+C t=4 L=+e_1 S={+e_1, +e_2, +e_3, −e_3} S^+={+e_1, +e_2, +e_3, −e_3} incoming=+e_1
+D t=3 L=UNDEFINED S={+e_1, −e_1, +e_2, +e_3, −e_3} S^+={+e_1, −e_1, +e_2, +e_3, −e_3} incoming=−e_2,−e_3,+e_3
+t(A)=3 t(B)=2 t(C)=4 t(D)=3 leftover_T=4
+reverse=hold face=hold
+reverse_hold_uses_L(A)=False
+per_element: each lock vector in same-tick-inclusive six-neighbor locks union L(q) when L(q) is defined
+per_site: scored only at x-probes A,B,C,D on Euclidean B_3(0); no other sites
+per_mode: no spectral or mode calculation is executed on this finite host
+per_block: four S^+ lock sets plus reverse/face as hold, fail, or UNDEFINED
+lattice_wide: checked and not executed — no lattice-wide lettering rule is claimed
+PASS: theorem1-formation-ticks  ({'A': 3, 'B': 2, 'C': 4, 'D': 3})
+PASS: theorem1-A-letter-star-and-plus  (('UNDEFINED', frozenset({(1, 0, 0), (0, 0, 1), (0, -1, 0), (0, 0, -1)})))
+PASS: theorem1-B-letter-star-and-plus  (((1, 0, 0), frozenset({(1, 0, 0), (0, 0, 1)})))
+PASS: theorem1-C-letter-star-and-plus  (((1, 0, 0), frozenset({(1, 0, 0), (0, 1, 0), (0, 0, -1), (0, 0, 1)})))
+PASS: theorem1-D-letter-star-and-plus  (('UNDEFINED', frozenset({(0, 1, 0), (1, 0, 0), (-1, 0, 0), (0, 0, -1), (0, 0, 1)})))
+PASS: theorem1-union-is-noop-on-x-probes
+PASS: theorem1-reverse-hold-does-not-use-L-A
+PASS: theorem1-A-is-not-seed
+PASS: theorem2-reverse-hold  (hold)
+PASS: theorem3-face-hold  (hold)
+PASS: not-leftover-of-same-tick-exclude-q
+PASS: not-leftover-of-nsopinx-formation-own-lock-in
+PASS: not-leftover-of-nsuox-later-tick-union-own
+PASS: not-leftover-of-unique-own-incoming
+PASS: not-leftover-of-nsuoyinc-y-probe-union
+PASS: not-leftover-of-nslate-nnseed-x-probes  (('fail', 'fail', 'hold', frozenset({(1, 0, 0), (0, -1, 0)})))
+PASS: same-tick-includes-same-tick-neighbors
+PASS: no-global-later-T-in-letter
+PASS: sign-lettering-loses-axis-and-would-hide-hold
+PASS: not-sum-leftover
+PASS: not-unique-vector-leftover
+PASS: incoming-locks-are-nn-steps
+PASS: uniqueness-not-required  (([(0, 0, -1), (0, 0, 1), (0, 1, 0)], [(0, -1, 0), (0, 0, -1), (0, 0, 1)]))
+PASS: two-site-opposite-lock-seed
+PASS: same-tick-not-self-and-formed-by-own-t
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: perp-step-incoming-lock
+PASS: mutation-empty-plus-set-undefined
+PASS: mutation-no-opposite-pair-fails
+PASS: mutation-own-incoming-both-undefined
+PASS: mutation-formation-own-lock-in-reverse-fails
+PASS: note-claim-scope
+PASS: note-reports-t-L-and-plus
+PASS: note-reports-hold-hold
+PASS: note-reverse-hold-does-not-use-L-A
+PASS: note-displayed-not-adopted
+PASS: note-does-not-use-occupancy
+PASS: note-not-sign-lettering
+PASS: note-not-ndot-or-occupancy-inner-product
+PASS: note-does-not-attach-formation-member
+PASS: note-not-unique-or-sum-leftover
+PASS: note-not-leftover-of-own-incoming
+PASS: note-not-leftover-of-later-tick-union
+PASS: note-not-leftover-of-nsopinx
+PASS: note-not-leftover-of-nsuoyinc
+PASS: note-same-tick-no-global-T
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+PASS: source-letter-from-existential-opposite-only
+TOTAL: PASS=69 FAIL=0
+
+----- stderr -----
+

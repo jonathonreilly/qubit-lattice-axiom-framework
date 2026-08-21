@@ -4,7 +4,7 @@ runner_sha256: 149181cc3b0f21f3ea9fd12d3c7eb9c298405747ae87949e2b805439a214bc4e
 input_fingerprint_sha256: e1279ccd2cc574536d0cc51b4e9f83d9c0f08f5edc0508040b8d433e309f52f7
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 strictly-earlier formdraw n on parallel-opposite y-probes; split letter

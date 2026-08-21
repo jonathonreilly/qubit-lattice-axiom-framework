@@ -1,0 +1,75 @@
+===== runner cache v1 =====
+runner: scripts/opposite_lock_plaquette_holonomy_reverse_face_2026_08_15.py
+runner_sha256: ae95f9c575d3cde6b195bb2868cc3032891add1904e26f954010abbdeb5bc1f6
+input_fingerprint_sha256: b631b7fa1026ed6cc82d6c341d8ea61128004417fa1a061f308e1ee34baf1ea6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+plaquette holonomy reverse/face on nsopp Q and R
+AUDIT_INPUT_PATHS:
+  docs/OPPOSITE_LOCK_PLAQUETTE_HOLONOMY_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Reverse and face from plaquette holonomy (own-incoming locks on face square Q and reverse 4-cycle R) on the nsopp process are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/OPPOSITE_LOCK_PLAQUETTE_HOLONOMY_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: q-and-r-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: own-incoming-letter-identity
+PASS: holonomy-identity
+PASS: reverse-face-identity
+T_Q=3 T_R=2 t(A)=3 t(B)=2
+Q 0 (0, 0, 0) t=0 incoming=[+e_1] L=+e_1
+Q e_1 (1, 0, 0) t=3 incoming=[−e_3, +e_3, +e_2] L=NONUNIQUE
+Q e_1+e_2 (1, 1, 0) t=3 incoming=[−e_2, −e_3, +e_3] L=NONUNIQUE
+Q e_2 (0, 1, 0) t=0 incoming=[−e_1] L=−e_1
+H=UNDEFINED
+R A (1, 0, 0) t=3 incoming=[MISSING] L=MISSING
+R (1,1,0) (1, 1, 0) t=3 incoming=[MISSING] L=MISSING
+R B (1, 1, 1) t=2 incoming=[+e_1] L=+e_1
+R (1,0,1) (1, 0, 1) t=2 incoming=[+e_1] L=+e_1
+reverse=UNDEFINED face=fail
+PASS: theorem1-TQ-four-locks-on-Q-and-H  ((3, ((1, 0, 0), 'NONUNIQUE', 'NONUNIQUE', (-1, 0, 0)), 'UNDEFINED'))
+PASS: theorem1-TR-four-locks-on-R  ((2, ('MISSING', 'MISSING', (1, 0, 0), (1, 0, 0))))
+PASS: theorem2-reverse-undefined  (UNDEFINED)
+PASS: theorem3-face-fail  (fail)
+PASS: uniqueness-not-required  (([(0, 0, -1), (0, 0, 1), (0, 1, 0)], [(0, -1, 0), (0, 0, -1), (0, 0, 1)]))
+PASS: two-site-opposite-lock-seed
+PASS: letter-is-own-incoming-not-star-sum
+PASS: incoming-locks-are-nn-steps
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: mutation-unrecorded-undefined
+PASS: mutation-nonunique-recorded-fails
+PASS: first-tick-all-Q-recorded
+PASS: source-formation-is-perp-step-queue
+PASS: perp-step-incoming-lock
+PASS: not-nnseed-plaquette-reprint
+PASS: source-letter-from-own-incoming-only
+PASS: note-claim-scope
+PASS: note-reports-TQ-locks-H
+PASS: note-reports-TR-R-locks
+PASS: note-reports-undefined-fail
+PASS: note-displayed-not-adopted
+PASS: note-not-star-aggregation
+PASS: note-not-nnseed-reprint
+PASS: note-does-not-attach-formation
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+TOTAL: PASS=44 FAIL=0
+
+----- stderr -----
+

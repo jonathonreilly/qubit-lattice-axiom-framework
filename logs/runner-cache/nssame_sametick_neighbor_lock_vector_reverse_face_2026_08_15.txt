@@ -1,0 +1,87 @@
+===== runner cache v1 =====
+runner: scripts/nssame_sametick_neighbor_lock_vector_reverse_face_2026_08_15.py
+runner_sha256: a36253e9f94c09a80fabb95eab4175fa1c9d9f31f821a1230a12c39d91614ed0
+input_fingerprint_sha256: 80bba2395be46ec2366636e47989dec01a6c3a67e1b2fa47d90eac610837c68e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+unique lock vector from same-tick-inclusive 6-NN locks reverse/face
+AUDIT_INPUT_PATHS:
+  docs/NSSAME_SAMETICK_NEIGHBOR_LOCK_VECTOR_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Reverse and face from the unique same-tick-inclusive 6-NN lock vector on the four nssame probes are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/NSSAME_SAMETICK_NEIGHBOR_LOCK_VECTOR_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-euclidean-ball
+PASS: four-x-probes-in-host
+PASS: x-probes-are-not-y-or-z-probes
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: unique-vector-identity-from-neighbor-locks
+PASS: named-sign-same-plus-is-not-unique-vector
+PASS: reverse-face-hold-fail-undefined
+A t=3 recorded-neighbor-locks=[+e_1 at (0, 0, 0), −e_2 at (1, 1, 0), −e_3 at (1, 1, 0), +e_3 at (1, 1, 0), +e_1 at (1, -1, 0), +e_1 at (1, 0, 1), +e_1 at (1, 0, -1)] L=UNDEFINED incoming=−e_3,+e_3,+e_2
+B t=2 recorded-neighbor-locks=[+e_3 at (0, 1, 1), +e_1 at (1, 0, 1)] L=UNDEFINED incoming=+e_1
+C t=4 recorded-neighbor-locks=[−e_3 at (1, 0, 0), +e_3 at (1, 0, 0), +e_2 at (1, 0, 0), +e_1 at (2, 1, 0)] L=UNDEFINED incoming=+e_1
+D t=3 recorded-neighbor-locks=[+e_1 at (0, 1, 0), +e_1 at (1, 2, 0), −e_3 at (1, 0, 0), +e_3 at (1, 0, 0), +e_2 at (1, 0, 0), +e_1 at (1, 1, 1), +e_1 at (1, 1, -1)] L=UNDEFINED incoming=−e_2,−e_3,+e_3
+reverse=UNDEFINED face=UNDEFINED
+per_element: unique letter is the singleton same-tick-inclusive six-neighbor lock vector in {±e_i}, else UNDEFINED
+per_site: scored only at probes A,B,C,D on Euclidean B_3(0); no other sites
+per_mode: no spectral or mode calculation is executed on this finite host
+per_block: four unique lock vectors plus reverse/face as hold, fail, or UNDEFINED
+lattice_wide: checked and not executed — no lattice-wide lettering rule is claimed
+PASS: theorem1-A-neighbor-lock-list-and-vector  (((((0, 0, 0), (1, 0, 0)), ((1, 1, 0), (0, -1, 0)), ((1, 1, 0), (0, 0, -1)), ((1, 1, 0), (0, 0, 1)), ((1, -1, 0), (1, 0, 0)), ((1, 0, 1), (1, 0, 0)), ((1, 0, -1), (1, 0, 0))), 'UNDEFINED'))
+PASS: theorem1-B-neighbor-lock-list-and-vector  (((((0, 1, 1), (0, 0, 1)), ((1, 0, 1), (1, 0, 0))), 'UNDEFINED'))
+PASS: theorem1-C-neighbor-lock-list-and-vector  (((((1, 0, 0), (0, 0, -1)), ((1, 0, 0), (0, 0, 1)), ((1, 0, 0), (0, 1, 0)), ((2, 1, 0), (1, 0, 0))), 'UNDEFINED'))
+PASS: theorem1-D-neighbor-lock-list-and-vector  (((((0, 1, 0), (1, 0, 0)), ((1, 2, 0), (1, 0, 0)), ((1, 0, 0), (0, 0, -1)), ((1, 0, 0), (0, 0, 1)), ((1, 0, 0), (0, 1, 0)), ((1, 1, 1), (1, 0, 0)), ((1, 1, -1), (1, 0, 0))), 'UNDEFINED'))
+PASS: theorem1-vectors-all-undefined
+PASS: theorem1-formation-ticks
+PASS: theorem1-A-same-tick-partner-is-D
+PASS: theorem1-B-mixed-vectors-include-same-tick
+PASS: theorem2-reverse-undefined  (UNDEFINED)
+PASS: theorem3-face-undefined  (UNDEFINED)
+PASS: not-probe-own-incoming-lock
+PASS: incoming-locks-are-nn-steps-not-letters
+PASS: uniqueness-not-required  ([(0, 0, -1), (0, 0, 1), (0, 1, 0)])
+PASS: two-site-same-lock-seed
+PASS: recorded-not-self-or-later-same-tick-included
+PASS: not-strictly-earlier-leftover
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: perp-step-incoming-lock
+PASS: not-mixed-cubic-orbit
+PASS: no-sixteen-combo-census
+PASS: mutation-empty-neighbor-locks-undefined
+PASS: mutation-mixed-neighbor-vectors-undefined
+PASS: note-claim-scope
+PASS: note-reports-neighbor-lock-lists-and-vectors
+PASS: note-reports-undefined-undefined
+PASS: note-displayed-not-adopted
+PASS: note-does-not-use-occupancy-or-incoming
+PASS: note-does-not-identify-incoming
+PASS: note-not-unique-fn-or-ndot
+PASS: note-not-strictly-earlier-leftover
+PASS: note-does-not-attach-formation-member
+PASS: note-forbids-enlargement-and-cache
+PASS: note-not-sixteen-free-letters
+PASS: note-not-tick-or-occupancy-reprint
+PASS: note-not-x-or-z-confusion
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-vector-from-neighbor-locks-only
+PASS: source-formation-is-perp-step-tick
+TOTAL: PASS=57 FAIL=0
+
+----- stderr -----
+

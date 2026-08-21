@@ -1,0 +1,78 @@
+===== runner cache v1 =====
+runner: scripts/nnseed_neighbor_lock_existential_opposite_reverse_face_2026_08_15.py
+runner_sha256: ce7ab190a752b21a8c4ee3a9f0934a3ef6932900ddcd14c585cf58a5475af88b
+input_fingerprint_sha256: d0dfce699d2391181632c173761ac133f8430b11a2f076f82f5dcbe6ba50111f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+existential opposite neighbor-lock reverse/face on nnseed x-probes
+AUDIT_INPUT_PATHS:
+  docs/NNSEED_NEIGHBOR_LOCK_EXISTENTIAL_OPPOSITE_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Reverse and face from existential opposite already-recorded 6-NN locks on the four nnseed x-probes are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/NNSEED_NEIGHBOR_LOCK_EXISTENTIAL_OPPOSITE_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-probes-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: existential-opposite-identity
+PASS: duplicates-collapse-in-set
+PASS: mixed-remains-a-set
+PASS: not-named-sign-reduction
+PASS: not-unique-vector-leftover
+PASS: not-sum-leftover
+PASS: reverse-face-identity
+A t=2 recorded-neighbor-locks=[+e_1 at (0, 0, 0), +e_1 at (1, 1, 0)] S={+e_1} incoming=−e_2
+B t=2 recorded-neighbor-locks=[+e_3 at (0, 1, 1), +e_1 at (1, 1, 0)] S={+e_1, +e_3} incoming=+e_3,+e_1
+C t=3 recorded-neighbor-locks=[−e_2 at (1, 0, 0)] S={−e_2} incoming=+e_1
+D t=1 recorded-neighbor-locks=[+e_2 at (0, 1, 0)] S={+e_2} incoming=+e_1
+reverse=fail face=hold
+PASS: theorem1-A-neighbor-lock-set  (((((0, 0, 0), (1, 0, 0)), ((1, 1, 0), (1, 0, 0))), frozenset({(1, 0, 0)})))
+PASS: theorem1-B-neighbor-lock-set  (((((0, 1, 1), (0, 0, 1)), ((1, 1, 0), (1, 0, 0))), frozenset({(1, 0, 0), (0, 0, 1)})))
+PASS: theorem1-C-neighbor-lock-set  (((((1, 0, 0), (0, -1, 0)),), frozenset({(0, -1, 0)})))
+PASS: theorem1-D-neighbor-lock-set  (((((0, 1, 0), (0, 1, 0)),), frozenset({(0, 1, 0)})))
+PASS: theorem1-B-mixed-vectors-remain-a-set
+PASS: theorem2-reverse-fail  (fail)
+PASS: theorem3-face-hold  (hold)
+PASS: sign-lettering-loses-axis-and-fails-face
+PASS: not-self-incoming-nnlock
+PASS: not-probe-own-incoming-lock
+PASS: incoming-locks-are-nn-steps
+PASS: uniqueness-not-required  ([(0, 0, 1), (1, 0, 0)])
+PASS: two-site-seed-locks
+PASS: already-recorded-not-self-or-later
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: mutation-empty-neighbor-locks-undefined
+PASS: mutation-mixed-neighbor-vectors-fail-without-opposite
+PASS: note-claim-scope
+PASS: note-reports-neighbor-lock-sets
+PASS: note-reports-fail-hold
+PASS: note-displayed-not-adopted
+PASS: note-does-not-use-occupancy-or-incoming
+PASS: note-not-sign-lettering
+PASS: note-not-ndot-or-occupancy-inner-product
+PASS: note-does-not-identify-incoming
+PASS: note-does-not-attach-formation-member
+PASS: note-not-unique-or-sum-leftover
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+PASS: source-letter-from-existential-opposite-only
+TOTAL: PASS=53 FAIL=0
+
+----- stderr -----
+

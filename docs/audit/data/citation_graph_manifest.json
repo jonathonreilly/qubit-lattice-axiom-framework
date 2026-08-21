@@ -1,6 +1,6 @@
 {
  "edge_count": 16109,
- "node_count": 5594,
+ "node_count": 5595,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -501,6 +501,10 @@
   "admissibility_dirac_kahler_global_dressing_involution_positivity_bounded_theorem_note_2026-08-15": {
    "deps_hash": "767fbba8a59e",
    "out_degree": 5
+  },
+  "admissibility_dirac_kahler_interpretation_discriminators_bounded_theorem_note_2026-08-21": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_dirac_kahler_involution_seam_dressing_locality_bounded_theorem_note_2026-08-15": {
    "deps_hash": "81f646aa8f71",

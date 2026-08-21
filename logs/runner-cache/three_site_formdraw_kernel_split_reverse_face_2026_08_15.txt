@@ -4,7 +4,7 @@ runner_sha256: b6441caf8d83a0e0ae3cea3d118f0794d472d200c47250a673bb7aeb5b90cd6a
 input_fingerprint_sha256: 36871749656a0ffac9fe838c9682df49ef152bbcd1a1b310272720b533850651
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 strictly-earlier formdraw n on three-site-seed x-probes; split letter

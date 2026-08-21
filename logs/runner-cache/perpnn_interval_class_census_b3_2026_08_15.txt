@@ -1,0 +1,54 @@
+===== runner cache v1 =====
+runner: scripts/perpnn_interval_class_census_b3_2026_08_15.py
+runner_sha256: c33c5acdfd4fe2ac7b227a7160368e073c6c2cc2e643be3633640aa27079484c
+input_fingerprint_sha256: 1ec9b7f39bcde61a44e027f84e1f25d17f74671b0cbccddcb5e3652e4d60134a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+perpnn interval class census on formed B_3(0)
+AUDIT_INPUT_PATHS:
+  docs/PERPNN_INTERVAL_CLASS_CENSUS_B3_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Interval s^2 space/null/time counts on formed nonzero sites of B_3(0) under perpnn formation-ticks are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/PERPNN_INTERVAL_CLASS_CENSUS_B3_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: source-audit-paths-are-static-literals
+PASS: host-is-b3-closed-ball
+N_formed_nonzero=120
+N_space=0 N_null=4 N_time=116
+(1,0,0) t=3 Q=1 s^2=8 class=time
+locks(1,0,0)=[(0, -1, 0), (0, 0, -1), (0, 0, 1), (0, 1, 0)]
+PASS: seed-origin-tick-zero-lock-plus-e1
+PASS: formation-stays-in-host
+PASS: uniqueness-not-required  ([(0, -1, 0), (0, 0, -1), (0, 0, 1), (0, 1, 0)])
+PASS: theorem1-n-formed-nonzero  (120)
+PASS: theorem1-origin-excluded
+PASS: theorem1-census-set-is-formed-nonzero
+PASS: theorem2-n-space  (0)
+PASS: theorem2-n-null  (4)
+PASS: theorem2-n-time  (116)
+PASS: theorem2-counts-partition-formed-nonzero
+PASS: theorem2-null-sites-are-tick1-perp-neighbors  ([(0, -1, 0), (0, 0, -1), (0, 0, 1), (0, 1, 0)])
+PASS: theorem3-axis-formed
+PASS: theorem3-axis-class-time  ((3, 1, 8, 'time'))
+PASS: theorem3-not-hop-count-class  (hop s^2=0)
+PASS: mutation-drop-perp-changes-formed-count  (free N_formed_nonzero=122)
+PASS: q-is-euclidean-square-not-abs-sum  (5)
+PASS: note-claim-scope
+PASS: note-reports-census-counts
+PASS: note-reports-axis-class
+PASS: note-displayed-not-adopted
+PASS: note-not-four-event-reprint
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-machine-status-no-axiom-edit
+TOTAL: PASS=30 FAIL=0
+
+----- stderr -----
+

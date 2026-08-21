@@ -1,0 +1,107 @@
+===== runner cache v1 =====
+runner: scripts/x_axis_same_lock_sametick_union_own_existential_opposite_reverse_face_2026_08_15.py
+runner_sha256: 7c5892cea1a3be0ec6a2c5c9f6505670cb73fbd22a29dea16571d2958d15918c
+input_fingerprint_sha256: 7257e6bce77060ea666a3a5e9dd694d1abd3c22e781cbfdafd67d95266c5bbdc
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+same-tick ∪ own incoming reverse/face on x-axis same-lock y-probes
+AUDIT_INPUT_PATHS:
+  docs/X_AXIS_SAME_LOCK_SAMETICK_UNION_OWN_EXISTENTIAL_OPPOSITE_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Reverse and face from same-tick ∪ own incoming lock on the four x-axis same-lock y-probes are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/X_AXIS_SAME_LOCK_SAMETICK_UNION_OWN_EXISTENTIAL_OPPOSITE_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-y-probes-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: existential-opposite-identity
+PASS: unique-own-incoming-letter-identity
+PASS: own-lock-in-set-identity
+PASS: theorem1-all-four-probes-recorded
+A t=3 L=UNDEFINED S+={−e_1, +e_2, +e_3, −e_3} incoming=−e_3,+e_3,+e_1
+B t=2 L=+e_2 S+={+e_2, +e_3} incoming=+e_2
+C t=4 L=+e_2 S+={+e_1, +e_2, +e_3, −e_3} incoming=+e_2
+D t=3 L=UNDEFINED S+={+e_1, +e_2, +e_3, −e_3} incoming=−e_1,−e_3,+e_3
+t(A)=3 t(B)=2 t(C)=4 t(D)=3 leftover_T=4
+reverse=hold face=hold reverse_uses_L(A)=False
+reverse_hold_channel=hold_without_defined_L_A
+per_element: each lock vector in same-tick-inclusive six-neighbor locks union L(q) when L(q) is defined
+per_site: scored only at y-probes A,B,C,D on Euclidean B_3(0); no other sites
+per_mode: no spectral or mode calculation is executed on this finite host
+per_block: four S^+ lock sets plus reverse/face as hold, fail, or UNDEFINED
+lattice_wide: checked and not executed — no lattice-wide lettering rule is claimed
+PASS: theorem1-formation-ticks  ({'A': 3, 'B': 2, 'C': 4, 'D': 3})
+PASS: theorem1-A-own-letter-and-plus-set  (('UNDEFINED', frozenset({(0, 0, -1), (-1, 0, 0), (0, 0, 1), (0, 1, 0)})))
+PASS: theorem1-B-own-letter-and-plus-set  (((0, 1, 0), frozenset({(0, 0, 1), (0, 1, 0)})))
+PASS: theorem1-C-own-letter-and-plus-set  (((0, 1, 0), frozenset({(1, 0, 0), (0, 1, 0), (0, 0, -1), (0, 0, 1)})))
+PASS: theorem1-D-own-letter-and-plus-set  (('UNDEFINED', frozenset({(0, 0, -1), (1, 0, 0), (0, 0, 1), (0, 1, 0)})))
+PASS: theorem1-union-is-noop-on-y-probes
+PASS: theorem1-A-is-not-seed
+PASS: theorem1-reverse-hold-does-not-use-L-A  (hold_without_defined_L_A)
+PASS: theorem2-reverse-hold  (hold)
+PASS: theorem3-face-hold  (hold)
+PASS: not-leftover-of-sametick-exclude-q
+PASS: not-leftover-of-strictly-earlier-own-lock-in
+PASS: not-leftover-of-unique-own-incoming
+PASS: not-leftover-of-later-tick-union-own
+PASS: no-global-later-T-in-letter
+PASS: not-leftover-of-x-axis-same-lock-xprobe  (('fail', 'fail', frozenset({(0, 1, 0)})))
+PASS: not-leftover-of-nssame-yprobe-sametick-union-own  (('fail', 'fail', frozenset({(1, 0, 0)})))
+PASS: not-leftover-of-x-axis-opposite-yprobe-sametick-union-own  (('hold', 'hold', frozenset({(0, 1, 0), (0, -1, 0), (1, 0, 0), (0, 0, -1), (0, 0, 1)})))
+PASS: not-leftover-of-nnseed-yprobe-sametick-union-own  (('fail', 'hold', frozenset({(-1, 0, 0), (0, 1, 0)})))
+PASS: sign-lettering-loses-axis
+PASS: not-sum-leftover
+PASS: not-unique-vector-leftover
+PASS: incoming-locks-are-nn-steps
+PASS: uniqueness-not-required  (([(0, 0, -1), (0, 0, 1), (1, 0, 0)], [(-1, 0, 0), (0, 0, -1), (0, 0, 1)]))
+PASS: two-site-x-axis-same-lock
+PASS: same-tick-neighbors-at-or-before-own-t
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: perp-step-incoming-lock
+PASS: mutation-empty-plus-set-undefined
+PASS: mutation-no-opposite-pair-fails
+PASS: mutation-own-incoming-both-undefined
+PASS: mutation-strictly-earlier-would-fail
+PASS: mutation-later-tick-enlarges-B
+PASS: mutation-nssame-y-would-fail
+PASS: mutation-xprobe-would-fail
+PASS: note-claim-scope
+PASS: note-reports-plus-sets
+PASS: note-reports-hold-hold-and-does-not-use-L-A
+PASS: note-displayed-not-adopted
+PASS: note-does-not-use-occupancy
+PASS: note-not-sign-lettering
+PASS: note-not-ndot-or-occupancy-inner-product
+PASS: note-does-not-attach-formation-member
+PASS: note-not-unique-or-sum-leftover
+PASS: note-not-leftover-of-own-incoming
+PASS: note-not-leftover-of-sametick-exclude-q
+PASS: note-not-leftover-of-strictly-earlier-own-lock-in
+PASS: note-not-leftover-of-later-tick-union-own
+PASS: note-not-leftover-of-nssame-yprobe
+PASS: note-not-leftover-of-x-axis-xprobe
+PASS: note-not-leftover-of-x-axis-opposite-yprobe
+PASS: note-sametick-union-own
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+PASS: source-letter-from-sametick-union-own-existential-opposite
+TOTAL: PASS=75 FAIL=0
+
+----- stderr -----
+

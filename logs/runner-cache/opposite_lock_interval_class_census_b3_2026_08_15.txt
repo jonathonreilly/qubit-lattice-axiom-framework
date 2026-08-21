@@ -1,0 +1,71 @@
+===== runner cache v1 =====
+runner: scripts/opposite_lock_interval_class_census_b3_2026_08_15.py
+runner_sha256: 7d9039e9bb6fcc16dabc564782fa0f77827d656523242255249cb613b3096198
+input_fingerprint_sha256: 2ac4caac0135bd81532825df0fc8560cf0bfd1e04d1d9fc2208b0db6f2e0c784
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+opposite-lock interval class census on formed B_3(0)
+AUDIT_INPUT_PATHS:
+  docs/OPPOSITE_LOCK_INTERVAL_CLASS_CENSUS_B3_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Interval s^2 space/null/time counts on formed nonzero sites of B_3(0) under the nsopp two-site opposite-lock process are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/OPPOSITE_LOCK_INTERVAL_CLASS_CENSUS_B3_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: source-audit-paths-are-static-literals
+PASS: host-is-b3-closed-ball
+PASS: two-site-seed-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+N_formed_nonzero=119
+N_space=8 N_null=3 N_time=108
+(1,0,0) t=3 Q=1 s^2=8 class=time
+locks(1,0,0)=[(0, 0, -1), (0, 0, 1), (0, 1, 0)]
+seed ticks: t(0,0,0)=0 t(0,1,0)=0
+unformed=[(-3, 0, 0), (0, 3, 0), (3, 0, 0)]
+PASS: seed-ticks-zero-locks-plus-e1-minus-e1
+PASS: formation-stays-in-host
+PASS: unformed-axis-and-plus-y-end  ([(-3, 0, 0), (0, 3, 0), (3, 0, 0)])
+PASS: uniqueness-not-required  ([(0, 0, -1), (0, 0, 1), (0, 1, 0)])
+PASS: perp-consistent-seed-locks
+PASS: perp-step-incoming-lock
+PASS: plus-y-end-unformed-from-perp-lock-at-02
+PASS: theorem1-n-formed-nonzero  (119)
+PASS: theorem1-origin-excluded
+PASS: theorem1-second-seed-included
+PASS: theorem1-census-set-is-formed-nonzero
+PASS: theorem1-formed-plus-unformed-is-host
+PASS: theorem2-n-space  (8)
+PASS: theorem2-n-null  (3)
+PASS: theorem2-n-time  (108)
+PASS: theorem2-counts-partition-formed-nonzero
+PASS: theorem2-space-sites  ([(-1, 2, 0), (0, 1, -1), (0, 1, 0), (0, 1, 1), (0, 2, -1), (0, 2, 0), (0, 2, 1), (1, 2, 0)])
+PASS: theorem2-null-sites-are-tick1-origin-perp-neighbors-minus-seed  ([(0, -1, 0), (0, 0, -1), (0, 0, 1)])
+PASS: theorem3-axis-formed
+PASS: theorem3-axis-class-time  ((3, 1, 8, 'time'))
+PASS: theorem3-not-hop-count-class  (hop s^2=0)
+PASS: cardinality-not-one-site-clone  (two=(8,3,108) one={'space': 0, 'null': 4, 'time': 116})
+PASS: not-perp-seed-interval-reprint  (opp=(119,8,3,108) perp={'space': 9, 'null': 3, 'time': 108})
+PASS: mutation-drop-perp-changes-formed-count  (free N_formed_nonzero=122)
+PASS: q-is-euclidean-square-not-abs-sum  (5)
+PASS: no-larger-ball
+PASS: note-claim-scope
+PASS: note-reports-census-counts
+PASS: note-reports-axis-class
+PASS: note-displayed-not-adopted
+PASS: note-cardinality-not-clone
+PASS: note-not-perp-seed-reprint
+PASS: note-not-four-event-reprint
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-machine-status-no-axiom-edit
+TOTAL: PASS=45 FAIL=0
+
+----- stderr -----
+

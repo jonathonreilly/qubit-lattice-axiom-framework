@@ -1,0 +1,81 @@
+===== runner cache v1 =====
+runner: scripts/nnseed_yprobe_formdraw_kernel_pvm_reverse_face_2026_08_15.py
+runner_sha256: f75c87a5e4225aed9467a1eca53f1c4bdee7fc8d054b50640e8c7a4987b374ad
+input_fingerprint_sha256: 242897a9cfa3e63720c9332f9939d72d7ed2b04eaf5880017a5d20a0e76b2e30
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+formdraw occupancy-kernel PVM-letter reverse/face on four nnseed y-probes
+AUDIT_INPUT_PATHS:
+  docs/NNSEED_YPROBE_FORMDRAW_KERNEL_PVM_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Reverse and face from formdraw occupancy-kernel PVM letters on the four nnseed y-probes, or UNDEFINED, are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/NNSEED_YPROBE_FORMDRAW_KERNEL_PVM_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-euclidean-b3
+PASS: y-probes-in-host
+PASS: perp-step-blocks-parallel
+PASS: named-pvm-rank1-projectors
+PASS: named-pvm-traces-k1
+PASS: named-pvm-letters-are-plus-minus
+A n=(0,0,0) k=0 abc=(0,0,0) L=UNDEFINED t=0 incoming=[(0, 1, 0)]
+B n=(-1/3,0,-1/3) k=2 abc=(-1,0,-1) L={+,−} t=2 incoming=[(0, 0, 1), (1, 0, 0)]
+C n=(0,-1/3,0) k=1 abc=(0,-1,0) L={+,−} t=3 incoming=[(-1, 0, 0), (0, 0, -1), (0, 0, 1), (1, 0, 0)]
+D n=(-1/3,0,0) k=1 abc=(-1,0,0) L={+,−} t=1 incoming=[(1, 0, 0)]
+PASS: theorem1-n-A-zero-undefined  ((Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)))
+PASS: theorem1-n-B  ((Fraction(-1, 3), Fraction(0, 1), Fraction(-1, 3)))
+PASS: theorem1-n-C  ((Fraction(0, 1), Fraction(-1, 3), Fraction(0, 1)))
+PASS: theorem1-n-D  ((Fraction(-1, 3), Fraction(0, 1), Fraction(0, 1)))
+PASS: theorem1-n-C-neq-n-D  (yC=(Fraction(0, 1), Fraction(-1, 3), Fraction(0, 1)) yD=(Fraction(-1, 3), Fraction(0, 1), Fraction(0, 1)) xC=(Fraction(-1, 3), Fraction(0, 1), Fraction(0, 1)))
+PASS: theorem1-letters-A-undefined-others-pm
+PASS: theorem1-y-ticks-match-nsiso  ({'A': 0, 'B': 2, 'C': 3, 'D': 1})
+PASS: n-nonzero-assigns-both-letters
+PASS: hamiltonian-square-matches-k
+PASS: incoming-locks-are-nn-steps-not-letters
+PASS: uniqueness-not-required  (B=[(0, 0, 1), (1, 0, 0)] C=[(-1, 0, 0), (0, 0, -1), (0, 0, 1), (1, 0, 0)])
+PASS: two-site-seed-locks
+PASS: seed-occupancy-excludes-same-tick-partner
+reverse_combos=0 reverse_hits=0 face_combos=4 face_hits=1
+reverse=UNDEFINED face=some
+PASS: theorem2-reverse-undefined  (UNDEFINED)
+PASS: theorem3-face-some  (some)
+PASS: not-unique-fn
+PASS: not-ndot
+PASS: no-unique-p-plus
+PASS: letters-do-not-feed-occupancy
+PASS: n-independent-of-letter-branch
+PASS: mutation-identify-incoming-sign-is-refused
+PASS: mutation-same-tick-partner-changes-n
+PASS: mutation-one-site-seed-changes-n  ({'A': (Fraction(0, 1), Fraction(-1, 3), Fraction(0, 1)), 'B': (Fraction(-1, 3), Fraction(-1, 3), Fraction(-1, 3)), 'C': (Fraction(0, 1), Fraction(-1, 3), Fraction(0, 1)), 'D': (Fraction(-1, 3), Fraction(0, 1), Fraction(0, 1))})
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: not-t-as-comparator
+PASS: a-is-seed-not-grown-incoming
+PASS: note-claim-scope
+PASS: note-reports-n-and-letters
+PASS: note-reports-undefined-some
+PASS: note-nC-neq-nD-not-x-fact
+PASS: note-not-unique-fn-or-ndot
+PASS: note-y-ticks-nsiso
+PASS: note-displayed-not-adopted
+PASS: note-does-not-identify-incoming
+PASS: note-does-not-feed-n-or-attach-formation-member
+PASS: note-same-tick-partner-rule
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+TOTAL: PASS=55 FAIL=0
+
+----- stderr -----
+

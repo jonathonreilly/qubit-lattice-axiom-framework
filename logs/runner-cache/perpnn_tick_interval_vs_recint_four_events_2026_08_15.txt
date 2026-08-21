@@ -1,0 +1,51 @@
+===== runner cache v1 =====
+runner: scripts/perpnn_tick_interval_vs_recint_four_events_2026_08_15.py
+runner_sha256: a32f47311d6d3904ce73d3c0c3de287a58ebd596256c9369fecaf6e21bf525f6
+input_fingerprint_sha256: 53b789672d0ac3fe389f29e0a277122582b250cc924394593be1968af7751d75
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/PERPNN_TICK_INTERVAL_VS_RECINT_FOUR_EVENTS_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+external_scientific_inputs: none; R and the named perpnn ticks are displayed mathematical inputs; recint axis/body classes are named displayed labels; Q is the Euclidean square
+score_domain: recorded set R only
+claim_scope: Interval s^2 under perpnn formation-ticks on four named recorded events, versus recint axis/body classes, is reported. Displayed, not adopted.
+PASS: audit-input-paths declared inputs are exactly the note and current axiom memo
+PASS: audit-timeout the declared audit timeout is 120 seconds
+PASS: current-record-readable only records are readable and readout is content-determined
+PASS: current-record-unreadability a site with no record cannot be read
+PASS: current-admissibility-no-time-metric Admissibility does not define a time metric
+event (0, 0, 0): t=0 Q=0 s^2=0 class=null
+event (1, 0, 0): t=3 Q=1 s^2=8 class=time
+event (1, 1, 0): t=2 Q=2 s^2=2 class=time
+event (1, 1, 1): t=3 Q=3 s^2=6 class=time
+PASS: recorded-set-four the score domain is exactly the four named recorded events
+PASS: displayed-perpnn-ticks perpnn ticks on R are the displayed values 0, 3, 2, 3
+PASS: theorem1-quadratic Q is the Euclidean square on each recorded event
+PASS: theorem1-interval s^2 equals t^2 minus Q on each recorded event
+PASS: theorem1-sign-classes sign of s^2 assigns null, time, time, time under perpnn ticks
+PASS: theorem2-axis-time the axis event (1,0,0) is time
+PASS: theorem2-body-time the body event (1,1,1) is time
+PASS: theorem3-recint-labels recint comparison labels are axis null and body time
+PASS: theorem3-axis-disagrees axis class under perpnn ticks disagrees with recint
+PASS: theorem3-body-agrees body class under perpnn ticks agrees with recint
+PASS: theorem3-pair-disagrees the axis/body class pair does not agree with recint
+PASS: l1-not-attached Q is the Euclidean square even though L1 coincides on this R
+PASS: not-occupancy-lock-order-table the note is not a second occupancy lock-order table
+PASS: uniqueness-not-required a mutated tick assignment can make the axis class match recint
+PASS: note-claim-scope the note reports the displayed interval versus recint classes
+PASS: note-contract machine fields, display scope, and hygiene hold
+PASS: note-runner-table the note table matches the computed four-event display
+per_element: Q and s^2 are evaluated on each of the four recorded events
+per_site: only the four named recorded events are scored
+per_mode: checked and not executed — no spectral object appears
+lattice_wide: checked and not executed — only R is scored
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

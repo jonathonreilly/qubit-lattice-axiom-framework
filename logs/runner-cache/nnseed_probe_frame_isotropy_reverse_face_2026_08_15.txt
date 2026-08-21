@@ -1,0 +1,55 @@
+===== runner cache v1 =====
+runner: scripts/nnseed_probe_frame_isotropy_reverse_face_2026_08_15.py
+runner_sha256: 20cc89dde2fc70db550afe4385d47b417d508fa561d2346c6fbf0a2496a8c393
+input_fingerprint_sha256: e73dab962134ec35852e929f61450148d3a01cdc725d5a789e88570e6f7a3095
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+nnseed z/y probe-frame reverse/face on Euclidean B_3(0)
+AUDIT_INPUT_PATHS:
+  docs/NNSEED_PROBE_FRAME_ISOTROPY_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: nnseed formation-tick reverse and face in z and y probe frames on Euclidean B_3(0) are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/NNSEED_PROBE_FRAME_ISOTROPY_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-euclidean-b3
+PASS: z-probes-in-host
+PASS: y-probes-in-host
+z-probes t(A_z)=1 t(B)=2 t(C_z)=4 t(D_z)=1 locks(B)=[(0, 0, 1), (1, 0, 0)] locks(C_z)=[(-1, 0, 0), (0, 1, 0), (1, 0, 0)]
+y-probes t(A_y)=0 t(B)=2 t(C_y)=3 t(D_y)=1 locks(C_y)=[(-1, 0, 0), (0, 0, -1), (0, 0, 1), (1, 0, 0)]
+PASS: theorem1-z-ticks  (1,2,4,1)
+PASS: theorem1-y-ticks  (0,2,3,1)
+PASS: theorem1-ay-is-seed-tick-zero
+PASS: theorem1-uniqueness-not-required  (B=[(0, 0, 1), (1, 0, 0)] Cz=[(-1, 0, 0), (0, 1, 0), (1, 0, 0)] Cy=[(-1, 0, 0), (0, 0, -1), (0, 0, 1), (1, 0, 0)])
+PASS: theorem1-not-reprint-of-x-bits  (z=(1,2,4,1) x=(2,2,3,1))
+z-reverse: fail (3 t(A_z)^2=3 vs t(B)^2=4)
+z-face: hold (t(C_z)^2=16 vs 2 t(D_z)^2=2)
+PASS: theorem2-z-reverse-defined-and-fails  (3*1^2 vs 2^2)
+PASS: theorem2-z-face-defined-and-holds  (4^2 vs 2*1^2)
+y-reverse: fail (3 t(A_y)^2=0 vs t(B)^2=4)
+y-face: hold (t(C_y)^2=9 vs 2 t(D_y)^2=2)
+PASS: theorem3-y-reverse-defined-and-fails  (3*0^2 vs 2^2)
+PASS: theorem3-y-face-defined-and-holds  (3^2 vs 2*1^2)
+PASS: mutation-one-site-seed-changes-z-ticks  ((1, 3, 4, 2))
+PASS: formation-stays-in-host
+PASS: seed-does-not-reform-ay
+PASS: note-claim-scope
+PASS: note-reports-z-and-y-ticks
+PASS: note-z-reverse-fail-face-hold
+PASS: note-y-reverse-fail-face-hold
+PASS: note-displayed-not-adopted
+PASS: note-forbids-enlargement-and-cache
+PASS: note-not-x-reprint
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-machine-status-no-axiom-edit
+PASS: source-audit-paths-are-static-literals
+TOTAL: PASS=29 FAIL=0
+
+----- stderr -----
+

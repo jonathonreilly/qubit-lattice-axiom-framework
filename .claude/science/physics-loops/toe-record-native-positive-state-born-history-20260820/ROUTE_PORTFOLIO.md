@@ -338,3 +338,37 @@ pointer-to-Record relabeling, or inability to retain pending `100` versus
 terminal `110/111`. No axiom edit is mature; the central compatibility wording
 is sufficient only, stable-pointer derivation remains live, and actual-member
 correlation cannot be bundled. Gravity remains externally owned.
+
+## Post-Block-8 Portfolio Recheck
+
+Block 8 makes the former “stable pointer” route sharply typed. It repairs the
+blank/value-zero collision, builds the exact carrier writer, prices dephased
+export, and proves what later-update permanence means. It also kills one
+tempting low-leverage direction: no repeated finite closed unitary can both
+form from a disjoint blank sector and make the terminal sector absorbing. That
+theorem already existed abstractly; the new value is the exact A/B fixture
+instantiation and the carrier/resource corrections.
+
+The route has not formed a framework Record. Its algebra is regional, its
+context/order/switch are supplied, and the complete physically allowed future
+law is unknown. Central compatibility is not yet well typed for a regional
+atom under the current per-site Admissibility law. These are obligation walls,
+not percentage movement.
+
+The five-role portfolio decision is:
+
+```text
+1. finite irreversible strict-NN site-Record instrument
+2. increasing archive / indexed-QCA with full capacity and no-return ledger
+3. central compatibility after event-algebra registration
+4. actual-member correlation as a separate connector.
+```
+
+The first route has the best information gain because it can either produce a
+complete physical carrier bridge or expose a small explicit resource/law
+datum. It outranks the archive route because the latter imports unbounded
+capacity and asymptotic time; it outranks central compatibility because
+regional probability typing is absent. Kill it on hidden reset/sink, host
+scheduling, partial overlap behavior, unlawful multi-site Records, or
+permanence proved only for a chosen subset of future updates. No axiom edit is
+mature.

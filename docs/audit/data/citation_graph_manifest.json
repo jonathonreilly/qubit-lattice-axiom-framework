@@ -1,6 +1,6 @@
 {
- "edge_count": 15790,
- "node_count": 5565,
+ "edge_count": 15793,
+ "node_count": 5566,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -4793,6 +4793,10 @@
   "first_order_coframe_unconditionality_no_go_theorem_note_2026-04-30": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "fixed_carrier_presence_separated_nondemolition_record_update_boundary_bounded_theorem_note_2026-08-20": {
+   "deps_hash": "95298b0ddc7a",
+   "out_degree": 3
   },
   "fixed_field_complex_grown_basin_v2_note": {
    "deps_hash": "9b334c2c3616",

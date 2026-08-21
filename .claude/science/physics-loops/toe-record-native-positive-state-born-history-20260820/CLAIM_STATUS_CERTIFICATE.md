@@ -153,3 +153,37 @@ independent helper discovered. Pipeline-generated ledger and queue surfaces
 were intentionally discarded with the disposable worktree. These are
 proposal-delivery checks only and do not change audit, retention, obligation,
 axiom, or TOE-percentage status.
+
+## Block 8 Local Conditional Return
+
+Block 8 finds that Block 7's outcome-0 terminal word `000` is exactly the
+all-blank memory word. The cq identity remains correct, but that code cannot
+distinguish no Record from recorded value zero. Reusing the existing flag bit
+repairs the carrier with blank `000`, pending `100`, and terminal
+`010/110/111` without changing any A/B Kraus block or central mass.
+
+Exact connected four-site unitaries realize both repaired writers. The
+terminal-path cq channel has Choi rank three, so one pure environment qubit is
+insufficient and two environment qubits suffice; a four-code construction
+also realizes the full-carrier `Q_perp/Q0/Q1/Q2` pinching of rank four. A
+nontrivial future family fixes every terminal atom, while a label swap proves
+that occupancy/setwise stability is weaker than content permanence.
+
+The finite same-update reversible absorption obstruction is a fixture-specific
+instantiation of a prior repository theorem, not a new universal no-go. Both
+exact writers send their complete written images into the terminal complement
+on immediate second use. Scheduled, irreversible, infinite, mixed-environment,
+restricted-operation, and stochastic routes remain live. The N1--N8 packet
+now inventories all four bounded negative targets and preserves those escapes.
+
+The five-physicist panel returned `REVISE`, not obligation retirement. Its
+corrections—at-most-one Record typing, full-carrier versus path-channel rank,
+Y tomography, four-wall audit, prior-theorem provenance, complete future-law
+commutation, regional Admissibility typing, and actual-member separation—are
+integrated. The targeted mathematical, governance, and foundations rechecks
+then pass. Primary `16/16` and independent `14/14` have fresh source-pinned
+caches; graph/manifest, vocabulary, premise purity, repository invariants, and
+the staged cache gate pass locally.
+
+Audit status: none. Retained status: none. Obligation retirement: zero. TOE
+percentage movement: zero. The frozen lane percentages remain unchanged.

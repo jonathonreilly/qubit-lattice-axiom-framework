@@ -973,3 +973,41 @@ modified here.
 
 This records proposal delivery, not audit, retention, obligation retirement,
 axiom pressure, or TOE movement. No review-loop was used.
+
+## Cycle 17 — Block 8 Five-Physicist Panel
+
+Five independent roles examined the first return: circuit/locality,
+operator/QND algebra, foundations/portfolio, mathematical no-go discipline,
+and governance/terminal typing. The panel unanimously ranked the repaired
+carrier as the highest-leverage available Record seam, but returned `REVISE`
+and zero score movement.
+
+Significant panel findings:
+
+- it independently rediscovered the `000` blank/outcome-0 collision;
+- it confirmed both exact 16-by-16 writers and the finite absorption proof;
+- it forced the environment claim to distinguish rank-three `Gamma_c` from
+  rank-four full-carrier pinching and added independent Y tomography;
+- it corrected “one Record” to **at most one**, with lawful no-Record sites;
+- it added disjointness as the fourth load-bearing wall and audited all six
+  wall pairs;
+- it identified the July Record-observable theorem as exact prior provenance,
+  preventing novelty inflation;
+- it required every allowed future operation—not merely exclusion of the
+  inverse—to commute with each terminal atom;
+- it exposed that regional Admissibility is ill typed absent a single-site
+  event map or retained joint-regional law; and
+- it kept selective branch targets distinct from realized-branch selection.
+
+The panel's portfolio verdict is conditional GO for a finite irreversible
+strict-NN site-Record instrument, ahead of central compatibility or an
+increasing archive. This route is killed by a hidden reset/sink, host schedule,
+partial malformed/overlap domain, handpicked QND subset, or mere regional
+relabeling. Gravity remains externally owned. No review-loop was used.
+
+After correction, targeted mathematical, governance, and foundations/
+portfolio rechecks pass. The final no-go compliance pass confirms canonical
+N1 markers, all required hidden-wall terms, explicit gate `PASS`, fresh caches,
+and no remaining mathematical defect. The governance recheck confirms exactly
+three load-bearing graph dependencies and the foundations recheck confirms the
+post-Block-8 ranking. This remains proposal review, not independent audit.

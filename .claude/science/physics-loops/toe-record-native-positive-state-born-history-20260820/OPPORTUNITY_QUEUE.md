@@ -19,3 +19,21 @@ five-physicist terminal panel. Gravity remains externally owned.
 Queue refresh triggers: Block-8 first concrete return or `T+2h`, a major
 connector obstruction/pivot, a new retained result, campaign `T+12h`, four
 hours since the last full panel, or two hours before deadline.
+
+## Post-Block-8 Queue
+
+Ranking after the full five-physicist Block-8 panel. Scores remain ordinal
+`0..3`; gravity remains externally owned.
+
+| Rank | Target | Positive probability | Import pressure | Verification | Landability | TOE leverage | Disposition |
+|---:|---|---:|---:|---:|---:|---:|---|
+| 1 | finite irreversible homogeneous strict-NN site-Record instrument | 3 | 3 | 3 | 2 | 3 | **selected**; explicit two-qubit environment/sink/program, total malformed/overlap law, branchwise site legality, and complete-future absorption |
+| 2 | increasing-archive/indexed-QCA Record dynamics | 2 | 3 | 2 | 1 | 3 | strongest alternative; must price infinite capacity, no-return sector, inverse precursors, collisions, renewal, and time |
+| 3 | central-restriction compatibility | 3 | 3 | 3 | 2 | 3 | blocked until single-site event map or retained joint-regional Admissibility law; never import trace/Born |
+| 4 | actual-member correlation | 2 | 3 | 2 | 1 | 3 | independent final connector; keep outside selective instrument typing and central equality |
+| 5 | apparatus/program/fuel genesis and physical time | 2 | 3 | 2 | 1 | 3 | integrate with rank-1 route only when its resource ledger is explicit |
+| 6 | further finite reversible compilation | 0 | 1 | 3 | 3 | 0 | **stop**; Block 8 and prior theorem settle the same-update absorber target |
+| 7 | axiom amendment | 1 | 3 plus owner | 2 | 1 | 3 | watch only; positive law routes remain live, necessity/minimality absent |
+
+Recheck at the first Block-9 executable, two hours of no TOE-level progress,
+any axiom-pressure pivot, and at least every four hours with five roles.

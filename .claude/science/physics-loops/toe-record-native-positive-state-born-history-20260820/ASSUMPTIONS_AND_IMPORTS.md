@@ -99,3 +99,27 @@ The one-site capacity result is also narrow: only faithful complex-linear or
 full *-algebraic representation of the binary/ternary cq algebra inside one
 `M2` is excluded. Real-affine, restricted-family, nonlinear, and set-
 theoretic code routes remain live.
+
+## Block 8 Imports And Nonimports
+
+Supplied: exact Block-7 A/B programs; four named qubit sites; blank `000`;
+context A/B; two-step circuit order; a host-selected post-write QND family;
+logical terminal projectors; and, for dephasing, two blank environment qubits
+plus export/sink. The coherent four-site writer itself uses no traced pointer.
+
+Open rather than supplied by the construction: a physical formation site and
+rate, physical time, apparatus/program genesis, homogeneous NN rule, overlap
+arbitration, site or lawful multisite Record typing, complete physically
+allowed future law, regional Admissibility distribution, actual member, and
+resource renewal.
+
+The rank-three lower bound concerns the exact terminal-path channel with a
+pure Stinespring environment. The full-carrier four-atom pinching has rank
+four. Mixed environments, classical randomness, approximation, and restricted
+input families are not excluded. The finite absorption theorem requires four
+walls: finiteness, reversibility, one same update, and nonzero disjoint blank/
+terminal sectors. Relaxing any one has an explicit escape.
+
+Carrier registration wording is a conditional interface checklist only. It
+does not create a joint-regional Admissibility law or choose a realized branch,
+and it is neither a necessary/minimal axiom theorem nor an authorized edit.

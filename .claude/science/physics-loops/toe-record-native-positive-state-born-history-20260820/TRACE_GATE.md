@@ -1,12 +1,12 @@
 ---
 trace_class: advances
 target_claim_id: toe_record_native_positive_state_born_history_completion
-target_blocker_text: implement the exact finite cq writer on a fixed adjacent carrier and prove its label algebra nondemolition and permanently Record-typed; then derive central-restriction equality with Admissibility on that registered algebra while keeping actual-history correlation, resource genesis, overlap scheduling, and time separate
-source_of_blocker_text: block7_fresh_ancilla_cq_intertwiner_and_five_role_resource_locality_boundary
+target_blocker_text: register the repaired blank/pending/terminal carrier as lawful site or multisite Records and derive one homogeneous strict-nearest-neighbour irreversible formation/update law with explicit environment sink program fuel total malformed/overlap behavior and terminal absorption under every physically allowed future update; only then type central compatibility and actual-member correlation separately
+source_of_blocker_text: block8_presence_collision_repair_exact_carrier_qnd_and_finite_same_update_reversible_absorption_boundary
 reachability_to_target: advances
 artifact_role: campaign_pack
-campaign_native_target_reachability: block7 composes the exact staged instrument into a probability-independent label-retaining cq channel, calibrates every fixed typed path, forces all branch effects on a spanning family, and supplies exact affine/coherent hostiles; it leaves physical central-law equality, stable Record formation, and actual-history correlation separate and exposes every finite blank, pointer, occupancy flag, and export sink as supplied
-next_trace_action: construct an exact unitary extension or nearest-neighbour gate decomposition on adjacent M1,F,M2,S with pending 100 and terminal 000/110/111, then prove nondemolition permanence before testing central-restriction compatibility
+campaign_native_target_reachability: block8 repairs the exact blank/outcome0 collision, realizes the A/B carrier and rank-three terminal-path export, proves atomwise QND criteria and maximal second-use leakage, and localizes the positive route to irreversible or increasing-archive dynamics; site Record registration complete future-law absorption regional Admissibility typing actual member resource genesis overlaps and time remain open
+next_trace_action: deliver Block8, then build and kill-test one finite irreversible homogeneous strict-NN site-Record instrument on the repaired carrier before central compatibility
 ---
 
 The campaign remains grounded on current main. Unlanded prior blocks and the
@@ -75,3 +75,26 @@ No axiom datum is mature. The exact one-site no-go is limited to faithful
 injective complex-linear or faithful full-cq *-algebraic representation and is steelmanned by an explicit
 real-affine binary code. Stable-pointer derivation and other code routes remain
 live; no independent audit has retired an obligation.
+
+## Block 8 Trace Update
+
+The trace advances because it replaces an ambiguous flag with a genuinely
+presence-separated carrier and turns “permanence” into an exact complete-law
+criterion. It does not reach the target because the construction is a supplied
+regional circuit, not an autonomous site-Record law. The repeated-unitary
+route is now blocked for a named four-premise reason; irreversible and
+increasing-archive routes remain reachable.
+
+Next trace:
+
+```text
+regional repaired carrier
+  -> site/multisite Record typing
+  -> total strict-NN irreversible local law with explicit resources
+  -> absorption under complete future law
+  -> typed central compatibility
+  -> separate actual-member correlation.
+```
+
+Zero audit, retention, obligation retirement, axiom movement, or TOE score
+movement is claimed.

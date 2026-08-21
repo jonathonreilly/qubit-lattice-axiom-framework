@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/fixed_carrier_presence_separated_nondemolition_record_update_boundary_independent_check_2026_08_20.py
+runner_sha256: 8150f47201a37dcb17e17a5bac0d6b6a27820d4c08085b8b4a2fddea4b64fc15
+input_fingerprint_sha256: fc4252e2b82511c0984593fea7598dec04e3a9524ea434e20ded66b42a3efdca
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 2.53
+status: ok
+----- stdout -----
+PASS [independent-exact-A-B-programs] the effects, Kraus programs, common front, residual completeness, and residual composition are rebuilt without importing either Block-8 implementation
+PASS [independent-closed-form-unitaries] explicit radical-valued front and A/B residual completions independently reproduce the repaired four-site path writer
+PASS [independent-old-presence-collision] the old terminal-0 word is exactly the full blank word sector and carries a nonzero outcome range
+PASS [independent-repaired-presence-code] blank, pending, and all three terminal atoms are pairwise disjoint after moving only outcome 0 to 010
+PASS [independent-pending-stage] the separately enumerated front has only the old-zero and pending-100 supports before completion
+PASS [independent-central-masses] the repaired word decoder independently reproduces all exact A/B central masses
+PASS [independent-cq-export-rank] a separately enumerated four-code two-qubit environment realizes full-carrier Q_perp/terminal pinching, is tomographically exact on the terminal path-output channel, and confirms its pure-environment rank three
+PASS [independent-qnd-live-evolution] a second block-controlled future update fixes each logical atom but remains nontrivial inside terminal live-system blocks
+PASS [independent-setwise-not-pointwise-hostile] a terminal-label swap preserves the terminal set and occupancy while violating content permanence
+PASS [independent-inverse-erasure] both exact writer inverses return the coherent terminal image to blank and neither writer leaves the full terminal sector invariant
+PASS [independent-double-use-hostile] both writers send their complete two-dimensional written images into the terminal complement with unit leak Gram on immediate second use
+PASS [independent-finite-absorption-premises] the exact finite dimensions and orthogonality instantiate the subspace proof that one unitary cannot both enter and absorb into T
+PASS [independent-irreversible-escape] an independently written finite two-Kraus reset enters and fixes a terminal atom, so the obstruction cannot be widened beyond reversibility
+PASS [independent-honesty-boundary] the note preserves every positive escape and separates the bounded carrier theorem from Record registration, law equality, actuality, and axiom status
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

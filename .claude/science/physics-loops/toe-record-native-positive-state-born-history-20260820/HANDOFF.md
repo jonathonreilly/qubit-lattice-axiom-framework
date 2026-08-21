@@ -180,3 +180,31 @@ exact Block-6 base `ec07e88db2` finds 19 changed paths and one claim with
 failures or control failures. Disposable generated surfaces were discarded.
 Remote delivery is PR #7036, verified open, non-draft, and clean on exact
 Block-6 head `ec07e88db2`.
+
+## Block 8 Handoff — Presence Repair And Dynamics Boundary
+
+Worktree:
+`/private/tmp/toe-fixed-carrier-record-block8-20260820.jJseFt/worktree`.
+Branch: `physics-loop/toe-fixed-carrier-nondemolition-block8-20260820`, based
+exactly on Block-7 delivery head `3a0372a927e2528b1186fc63fe48e368d5b4abf1`.
+
+The key correction is physical, not cosmetic: old terminal outcome 0 and the
+blank carrier were both `000`. Block 8 repairs that collision with terminal 0
+at `010`, retains pending `100` and residual terminals `110/111`, and constructs
+exact A/B four-site unitaries. It also distinguishes the rank-three terminal-
+path channel from rank-four full-carrier pinching and makes the two-qubit
+environment/export ledger explicit.
+
+The exact permanence criterion is atomwise commutation under the complete
+physically allowed future law. The supplied QND future family passes; a label
+swap fails. Repeating either writer fails maximally on its written image. This
+instantiates the prior finite same-unitary reversible formation/permanence
+boundary; it does not close irreversible, scheduled, infinite, or restricted-
+operation routes.
+
+The next highest-leverage campaign is one finite irreversible homogeneous
+strict-NN site-Record instrument with explicit environment, sink, program/fuel,
+malformed-input behavior, overlap arbitration, and terminal absorption under
+every allowed future update. Central compatibility waits until a single-site
+event map or retained joint-regional Admissibility law exists. Actual-member
+correlation stays separate. No review-loop is used.

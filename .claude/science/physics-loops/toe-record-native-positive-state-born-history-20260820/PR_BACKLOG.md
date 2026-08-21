@@ -200,3 +200,23 @@ Opened and remotely verified:
 
 PR #7036 is `OPEN`, non-draft, and `CLEAN` on the intended exact Block-6
 branch. No review-loop is used.
+
+## Block 8 — Local, Delivery Pending
+
+Branch: `physics-loop/toe-fixed-carrier-nondemolition-block8-20260820`, stacked
+on exact Block-7 delivery head `3a0372a927e2528b1186fc63fe48e368d5b4abf1`.
+
+Local science target: primary `PASS=16 FAIL=0`, independent
+`PASS=14 FAIL=0`. The proposal repairs the `000` blank/outcome-0 collision,
+realizes exact A/B four-site writers, separates rank-three terminal-path export
+from rank-four full-carrier pinching, proves atomwise QND criteria and exact
+double-use leakage, and instantiates the prior finite reversible absorption
+theorem with all scheduled/irreversible/infinite alternatives preserved.
+
+The corrected targeted panel recheck, both input-bound caches, citation graph/
+manifest, premise/vocabulary/repository gates, and staged cache check now pass.
+Before opening the PR: commit science, replay the full fixed-point pipeline and
+strict lint in a disposable committed tree, add delivery metadata separately,
+push, open the exact Block-7-stacked PR, and verify remote head/base/state. This
+entry claims no audit, retention, obligation retirement, axiom update, or TOE
+movement.

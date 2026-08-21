@@ -255,3 +255,27 @@ Each coherent science block gets a dedicated branch, commit, push, and PR.
 No review-loop is used. Direct self-review, independent checkers, and the
 periodic physicist panel provide the campaign review surface; audit authority
 remains independent.
+
+## Block 8 And Block 9 Pivot
+
+Block 8 artifacts comprise one theorem note, primary executable, independent
+reconstruction, two input-bound caches, graph-helper registration, manifest,
+and this campaign-pack update. The note must retain the complete negative-
+claim inventory and N1--N8 packet in the shipped source.
+
+After Block 8 delivery, Block 9 should be a killable positive construction,
+not another reversible circuit:
+
+```text
+repaired regional carrier
+  -> lawful site or multisite Record typing
+  -> one homogeneous strict-NN irreversible local instrument
+  -> explicit two-qubit environment, export sink, program/fuel
+  -> total malformed-input and overlap behavior
+  -> terminal absorption under the complete future law
+  -> only then central compatibility and actual-member tests.
+```
+
+Compare against the increasing-archive route at the first concrete failure or
+two-hour gate. Re-run the full five-role panel at that return and at least every
+four hours; use targeted seats between full panels.

@@ -151,6 +151,12 @@ HEADING_RE = re.compile(r"^#{1,6}\s+", re.MULTILINE)
 LINK_RE = re.compile(r"\[[^\]]*\]\(([^)\s#]+\.md)(?:#[^)]*)?\)")
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    # Independently rebuilds the A/B programs and radical-valued unitary
+    # completions, the presence-separated carrier, terminal cq export/rank,
+    # logical QND hostiles, and the finite reversible absorption boundary.
+    "fixed_carrier_presence_separated_nondemolition_record_update_boundary_bounded_theorem_note_2026-08-20": [
+        "scripts/fixed_carrier_presence_separated_nondemolition_record_update_boundary_independent_check_2026_08_20.py",
+    ],
     # Independently rebuilds the exact A/B instruments, staged fresh-label
     # copy, flat/path channel identity, central masses, effect-complete
     # tomography, affine hostile control, and narrow cq-capacity boundary.

@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/fixed_carrier_presence_separated_nondemolition_record_update_boundary_2026_08_20.py
+runner_sha256: 0e7fcb3607b06b0ee58cd3eabc7fb9090004899ef8689c96037062e00e1558e4
+input_fingerprint_sha256: bb52217e75b961896e62d4e35a19af38f54138a6f66eea3384122f88105a5a72
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 5.13
+status: ok
+----- stdout -----
+PASS [sources-and-current-authority] the current Record axiom supplies abstract formation/permanence but not this carrier registration or a future update law; all cited reversible-reuse, finite-boundary, and infinite-QCA echoes are source-matched
+PASS [old-000-blank-presence-collision] the old outcome-0 range is nonzero and lies inside the entire all-blank word sector, so no projector can vanish on every blank-system state yet certify that outcome as present
+PASS [presence-separated-fixed-codebook] one existing flag bit separates blank 000, pending 100, and all three terminal sectors 010/110/111 without adding a fifth qubit factor
+PASS [exact-four-site-unitary-extension] for each context an explicit 16x16 unitary maps blank M1,F,M2 plus every live-system input to the exact repaired path isometry
+PASS [pending-prefix-and-terminal-paths] the front leaves the B branch at pending 100; the completion step moves the old 0 branch to 010 and the two residual branches to 110/111 with exact flat Kraus operators
+PASS [fixed-connected-z3-carrier-ledger] F--M1--S--M2 is one connected nearest-neighbour Z3 path; context, blank preparation, two-step order, and the later-update switch remain supplied, and no pair-gate compilation is claimed
+PASS [reencoded-center-preserves-block7-channel] presence separation changes only the path words; the terminal center still returns the exact A/B Block-7 trace masses, without identifying them with Admissibility
+PASS [exact-cq-export-and-pure-environment-rank] copying Q_perp and the three terminal labels into four explicit two-qubit environment codes realizes full-carrier four-atom pinching; on the terminal path-output channel Kraus rank three excludes one pure environment qubit but fits two
+PASS [supplied-qnd-future-algebra] a nontrivial branch-controlled future unitary changes live-system states while fixing every terminal label projector and every central mass
+PASS [label-mixing-future-hostile] an equally unitary fixed-carrier update swaps two terminal contents and is rejected by the QND commutant condition
+PASS [inverse-erases-the-coherent-write] the exact writer sends the disjoint blank subspace into the terminal sector, but its allowed inverse sends that written image back to blank and the writer does not preserve the whole terminal sector
+PASS [same-writer-double-use-hostile] applying either A/B writer again sends its entire two-dimensional written image into the terminal complement with unit leak Gram, so repeated host-blind use is not permanent
+PASS [finite-reversible-absorbing-sector-boundary] for nonzero B orthogonal to finite T, unitarity plus U(B) subset T and U(T) subset T is impossible: finite invariance gives U(T)=T while preservation of orthogonality gives U(B) perpendicular to T
+PASS [finite-irreversible-absorbing-counterroute] a two-Kraus finite reset maps blank into an absorbing terminal state, explicitly proving that relaxing reversibility evades the narrow unitary boundary
+PASS [honest-record-central-and-actuality-boundary] the note separates exact carrier/QND algebra from site-Record registration, the Admissibility law, one actual atom, autonomous dynamics, and axiom adoption
+per_element: checked — blank 000, pending 100, corrected outcome-0 word 010, residual words 110/111, Kraus blocks, and terminal projectors remain separately typed
+per_site: checked — the fixed F--M1--S--M2 path is a connected four-site Z3 carrier, while its regional logical code is not silently registered as one framework site Record
+per_mode: checked — coherent unitary write, terminal-center restriction, optional dephasing, QND future update, Admissibility distribution, and actual terminal atom remain distinct
+per_block: checked — exact A/B front and residual unitaries compose from blank through pending to the presence-separated terminal code and reproduce every flat Kraus block
+lattice_wide: checked and not executed — the finite scheduled carrier exposes the reversible absorption wall; increasing archives, nonunitary sinks, overlap arbitration, and physical time remain open
+n1_route: direct_repeated_finite_writer — executed for A and B; first use maps the full blank input into T, while second use maps the entire written image into T_perp with unit leak Gram
+n1_route: terminal_commutant_qnd_first — executed; the nontrivial future unitary fixes every Q_j and therefore has zero disjoint blank-to-terminal formation block
+n1_route: fresh_environment_reachable_corner — executed; four environment codes realize Q_perp/Q0/Q1/Q2 pinching from a blank corner, with export and reblanking explicit
+n1_route: scheduled_write_future_pair — executed for A and B; U_c forms the terminal path and a distinct terminal-commutant unitary preserves every terminal atom
+n1_route: finite_irreversible_instrument — executed; the two-Kraus reset maps a disjoint blank atom into an absorbing terminal atom while violating reversibility
+PASS [n5-resolution-certificate] all five resolution lines and five normalized N1 route lines occur in primary stdout and the theorem note
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

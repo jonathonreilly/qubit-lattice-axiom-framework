@@ -9,19 +9,19 @@ portfolio_recheck_interval: 2h
 panel_size: 5
 panel_cadence: two_adversarial_seats_at_route_T_plus_2h; full_five_at_T_plus_4h_or_terminal_return; full_five_on_major_connector_obstruction_pivot_or_axiom_pressure; portfolio_panel_near_T_plus_12h; final_synthesis_two_hours_before_deadline
 panel_cadence_policy: block6_full_panel_caught_the_typed_decoder_kernel_mismatch_no_go_packet_defects_and_cq_identity_reframe; panels_have_high_utility_on_integrated_returns_and_route_pivots; repeat_five_distinct_roles_at_each_major_connector_first_return_or_two_hours_of_stall_and_at_least_every_four_hours; use_targeted_two_or_three_seat_kill_checks_between_full_panels
-cycle: 16
-science_block: 7
-branch: physics-loop/toe-cq-record-writer-block7-20260820
-base: physics-loop/toe-instrument-record-state-lift-block6-20260820@ec07e88db2
-worktree: /private/tmp/toe-cq-record-writer-block7-20260820.sWJPJY/worktree
+cycle: 17
+science_block: 8
+branch: physics-loop/toe-fixed-carrier-nondemolition-block8-20260820
+base: physics-loop/toe-cq-record-writer-block7-20260820@3a0372a927e2528b1186fc63fe48e368d5b4abf1
+worktree: /private/tmp/toe-fixed-carrier-record-block8-20260820.jJseFt/worktree
 lock_mode: cooperative
 lock_owner: codex-root
 review_loop: disabled_by_user
 goal_ledger: prior_goal_usage_limited; this pack records the active user-authorized campaign
 goal: construct the shortest honest Record-native positive-state and Born-history completion, or identify the exact minimal law or axiom datum that prevents it
-active_route: fixed_carrier_local_update_and_nondemolition_Record_typing_on_adjacent_M1_F_M2_S_then_central_restriction_compatibility
-hard_residual: derive rather than supply central-restriction equality between the canonical cq channel and Admissibility on an already registered label-event algebra; separately derive stable-pointer Record formation, actual-history correlation, apparatus and fresh-fragment genesis, overlap scheduling, and physical time; do not promote the finite Stinespring writer to autonomous lattice dynamics, mistake algebraic tomography for a derived measurement interface, treat a coherent or dephased cq state as one actual Record, import trace probabilities as foundation authority, or widen the narrow complex-linear full-cq one-site capacity theorem despite the explicit real-affine counterroute
-target_contract_status: block7_science_commit_f53d816172; corrected_return_primary_18_of_18_independent_14_of_14; exact_A_B_common_front_residual_factorization_and_fresh_pointer_copy; symbolic_staged_to_flat_cq_channel_intertwiner_for_every_Hermitian_input; explicit_four_qubit_factor_append_writer_with_pending_100_and_terminal_000_110_111; fixed_rho_star_Block6_typed_history_calibration_and_exact_central_masses; every_A_B_effect_forced_by_four_spanning_preparations; affine_CP_TP_wrong_effect_measure_prepare_and_coherent_label_hostiles_rejected; faithful_complex_linear_full_cq_one_M2_capacity_boundary_with_explicit_real_affine_binary_counterroute; central_law_Record_formation_and_actual_history_separated; five_physicist_corrected_science_PASS; fresh_input_bound_caches_and_graph_helper_manifest_PASS; full_fixed_point_pipeline_PASS; strict_lint_4903_rows_zero_errors; committed_delta_19_paths_one_claim_forensic_ready_zero_failures_independent_helper; PR_7036_OPEN_non_draft_CLEAN_exact_Block6_stack; zero_retirement
+active_route: deliver_Block8_presence_separated_fixed_carrier_and_narrow_reversible_boundary_then_test_one_autonomous_finite_irreversible_strict_NN_site_Record_instrument_with_explicit_sink_and_complete_future_law
+hard_residual: register the repaired regional blank_pending_terminal algebra as lawful site or multisite Records; supply one homogeneous nearest_neighbour physical update total on malformed_inputs_and_overlaps; account for program_fuel_sink_and_stage_without_host_switching; prove terminal absorption under every physically_allowed_future_update; then type and derive central_restriction_compatibility from a single_site event map or retained_joint_regional_Admissibility law and separately derive actual_member correlation; do not call the regional code a framework Record, promote a scheduled unitary pair to autonomous dynamics, hide an environment reset or infinite blank archive, treat selective branch targets as realized selection, or widen the exact finite_same_unitary_reversible_disjoint_sector obstruction
+target_contract_status: block8_corrected_local_return_primary_16_of_16_independent_14_of_14; old_Block7_outcome0_word_000_exactly_collides_with_blank_000; repaired_blank_000_pending_100_terminal_010_110_111; exact_A_B_connected_four_site_16x16_unitary_writers; unchanged_flat_cq_blocks_and_central_masses; exact_terminal_path_cq_Kraus_rank_three_and_full_carrier_pinching_rank_four_two_environment_qubits_sufficient; terminal_atom_QND_commutant_criterion_and_label_swap_hostile; inverse_erasure_and_full_image_double_writer_use_hostiles; prior_July_finite_invariant_subspace_boundary_instantiated_on_exact_fixture_not_claimed_new; scheduled_irreversible_infinite_superselection_and_stochastic_escapes_preserved; full_five_physicist_panel_REVISE_corrections_integrated_and_targeted_math_governance_foundations_rechecks_PASS; fresh_source_pinned_caches_graph_manifest_vocab_premise_invariants_and_staged_cache_gate_PASS; committed_tree_pipeline_pending; zero_retirement
 authority_surface:
   - docs/MINIMAL_AXIOMS_2026-06-29.md
   - docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md
@@ -74,11 +74,13 @@ checkpoint_zero_toe_map:
     evidence_ceiling_percent: 99
 percentage_rule: freeze until independently retained obligation retirement; unlanded constructions and route confidence do not move scores
 next_exact_action: >-
-  Package and deliver the corrected Block7 proposal, then construct a fixed-
-  carrier update on adjacent M1,F,M2,S sites with every blank and export sink
-  explicit, an exact unitary extension or nearest-neighbour gate
-  decomposition, pending word 100, terminal words 000/110/111, and a
-  nondemolition/permanence test under later updates. Only on that registered
-  stable pointer algebra test whether Admissibility must equal the channel
-  center; keep actual-member correlation outside the theorem.
-stop_condition: campaign deadline; kill the fixed-carrier route if it supplies a host schedule, silently resets pointers, leaves the export sink or blank resources implicit, merely labels an occupancy bit a Record, or cannot prove nondemolition persistence; kill the central-law route if equality is stipulated, trace weights are imported as foundation authority, or actual-member selection is bundled into the law; re-run a five-role panel on the first material return, any obstruction/axiom pressure, two hours without TOE-level progress, and at least every four hours
+  Finish the Block8 five-seat corrections, regenerate input-bound caches and
+  citation graph, pass committed-tree delivery gates, and open the exact
+  Block7-stacked proposal. Then compare and attempt one finite irreversible
+  strict-nearest-neighbour site-Record instrument on the repaired carrier,
+  with a law-covariant site map, total malformed/overlap behavior, explicit
+  two-qubit export environment and sink, no host schedule, and absorption
+  under the complete allowed future law. Only after site registration test a
+  well-typed single-site or joint-regional central compatibility equality;
+  keep actual-member correlation separate.
+stop_condition: campaign deadline; kill the next finite instrument if it hides reset_export_sink_program_fuel_or_schedule, lacks a lawful site_or_multisite_Record map, is partial on malformed inputs or overlaps, or proves permanence only for a handpicked QND subset rather than the complete allowed future law; pivot to the increasing_archive route only with explicit capacity_no_return_inverse_collision_and_time ledgers; kill central compatibility if regional Admissibility is untyped, equality is stipulated, trace weights are imported as foundation authority, or actual-member selection is bundled; re-run a five-role panel on each material return, obstruction/axiom-pressure pivot, two hours without TOE-level progress, and at least every four hours

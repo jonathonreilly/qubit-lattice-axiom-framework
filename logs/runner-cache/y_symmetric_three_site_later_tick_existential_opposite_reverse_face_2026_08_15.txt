@@ -1,0 +1,87 @@
+===== runner cache v1 =====
+runner: scripts/y_symmetric_three_site_later_tick_existential_opposite_reverse_face_2026_08_15.py
+runner_sha256: 2b13de3ceffceb4f1132b3bd9999a105c32e692525e94e41f7c93018cc6f7cdd
+input_fingerprint_sha256: 144e901fc6c7c80e2e6ce46cd123a58204eed3f085bdfa3a4067bb38da5352a0
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+later-tick existential opposite 6-NN reverse/face on y-symmetric y-probes
+AUDIT_INPUT_PATHS:
+  docs/Y_SYMMETRIC_THREE_SITE_LATER_TICK_EXISTENTIAL_OPPOSITE_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Reverse and face from existential opposite 6-NN locks at the first later tick when all four y-symmetric three-site y-probes are recorded are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/Y_SYMMETRIC_THREE_SITE_LATER_TICK_EXISTENTIAL_OPPOSITE_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-y-probes-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: existential-opposite-identity
+PASS: theorem1-all-four-probes-recorded
+A t=0 S_*={+e_1, +e_2, −e_2, +e_3, −e_3} incoming=−e_1
+B t=2 S_*={+e_1, +e_2, −e_2, +e_3, −e_3} incoming=+e_1
+C t=1 S_*={+e_1, −e_1, +e_2, +e_3, −e_3} incoming=+e_2
+D t=3 S_*={+e_1, −e_1, +e_3, −e_3} incoming=−e_2,−e_3,+e_3
+T=3 t(A)=0 t(B)=2 t(C)=1 t(D)=3
+reverse=hold face=hold
+PASS: theorem1-later-tick-T  (3)
+PASS: theorem1-A-neighbor-lock-set  (((((1, 1, 0), (0, -1, 0)), ((1, 1, 0), (0, 0, -1)), ((1, 1, 0), (0, 0, 1)), ((-1, 1, 0), (0, -1, 0)), ((-1, 1, 0), (0, 0, -1)), ((-1, 1, 0), (0, 0, 1)), ((0, 2, 0), (0, 1, 0)), ((0, 0, 0), (1, 0, 0)), ((0, 1, 1), (0, 0, 1)), ((0, 1, -1), (0, 0, -1))), frozenset({(0, 1, 0), (0, -1, 0), (1, 0, 0), (0, 0, -1), (0, 0, 1)})))
+PASS: theorem1-B-neighbor-lock-set  (((((0, 1, 1), (0, 0, 1)), ((1, 2, 1), (0, 0, 1)), ((1, 2, 1), (0, 1, 0)), ((1, 2, 1), (1, 0, 0)), ((1, 0, 1), (1, 0, 0)), ((1, 1, 2), (0, 0, 1)), ((1, 1, 0), (0, -1, 0)), ((1, 1, 0), (0, 0, -1)), ((1, 1, 0), (0, 0, 1))), frozenset({(0, 1, 0), (0, -1, 0), (1, 0, 0), (0, 0, -1), (0, 0, 1)})))
+PASS: theorem1-C-neighbor-lock-set  (((((1, 2, 0), (1, 0, 0)), ((-1, 2, 0), (-1, 0, 0)), ((0, 1, 0), (-1, 0, 0)), ((0, 2, 1), (0, 0, 1)), ((0, 2, 1), (0, 1, 0)), ((0, 2, -1), (0, 0, -1)), ((0, 2, -1), (0, 1, 0))), frozenset({(0, 1, 0), (1, 0, 0), (-1, 0, 0), (0, 0, -1), (0, 0, 1)})))
+PASS: theorem1-D-neighbor-lock-set  (((((0, 1, 0), (-1, 0, 0)), ((1, 2, 0), (1, 0, 0)), ((1, 0, 0), (0, 0, -1)), ((1, 0, 0), (0, 0, 1)), ((1, 1, 1), (1, 0, 0)), ((1, 1, -1), (1, 0, 0))), frozenset({(1, 0, 0), (-1, 0, 0), (0, 0, 1), (0, 0, -1)})))
+PASS: theorem1-A-B-mixed-vectors-remain-a-set
+PASS: theorem1-D-mixed-vectors-remain-a-set
+PASS: theorem2-reverse-hold  (hold)
+PASS: theorem3-face-hold  (hold)
+PASS: not-leftover-of-formation-time-unique-vector
+PASS: not-leftover-of-two-site-lists
+PASS: not-leftover-of-nstri-lists
+PASS: not-leftover-of-nslate-x-probes
+PASS: not-leftover-of-nnseed-y-probes
+PASS: later-tick-includes-post-formation-neighbors
+PASS: sign-lettering-loses-axis-and-would-hide-hold
+PASS: not-probe-own-incoming-lock
+PASS: not-sum-leftover
+PASS: not-unique-vector-leftover
+PASS: incoming-locks-are-nn-steps
+PASS: uniqueness-not-required  ([(0, -1, 0), (0, 0, -1), (0, 0, 1)])
+PASS: y-symmetric-three-site-seed-locks
+PASS: later-tick-not-self-and-formed-by-T
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: perp-step-incoming-lock
+PASS: mutation-empty-neighbor-locks-undefined
+PASS: mutation-no-opposite-pair-fails
+PASS: note-claim-scope
+PASS: note-reports-neighbor-lock-sets
+PASS: note-reports-hold-hold
+PASS: note-displayed-not-adopted
+PASS: note-does-not-use-occupancy-or-incoming
+PASS: note-not-sign-lettering
+PASS: note-not-ndot-or-occupancy-inner-product
+PASS: note-does-not-identify-incoming
+PASS: note-does-not-attach-formation-member
+PASS: note-not-unique-or-sum-leftover
+PASS: note-not-leftover-of-unique-vector-nsyopp
+PASS: note-not-leftover-of-two-site-lists
+PASS: note-later-tick-T-defined
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+PASS: source-letter-from-existential-opposite
+TOTAL: PASS=61 FAIL=0
+
+----- stderr -----
+

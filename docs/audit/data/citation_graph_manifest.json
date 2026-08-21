@@ -1,6 +1,6 @@
 {
  "edge_count": 16109,
- "node_count": 5597,
+ "node_count": 5598,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -437,6 +437,10 @@
   "admissibility_dirac_kahler_chart_invariant_contractivity_obstruction_bounded_theorem_note_2026-08-15": {
    "deps_hash": "e49a8cd7d76b",
    "out_degree": 3
+  },
+  "admissibility_dirac_kahler_closure_audit_one_bounded_theorem_note_2026-08-21": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_dirac_kahler_coboundary_healing_family_bounded_theorem_note_2026-08-19": {
    "deps_hash": "309e24774ef5",

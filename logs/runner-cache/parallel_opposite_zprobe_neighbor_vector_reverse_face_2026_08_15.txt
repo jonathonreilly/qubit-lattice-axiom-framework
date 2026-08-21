@@ -4,7 +4,7 @@ runner_sha256: 87e74e6d13e0479393b7d0994b00d516f05a647ff9b51dcc8a51d5d47c3ea3ec
 input_fingerprint_sha256: 446b49273ff4e3663e036bc8ba36c23afaf76bdaca4b8195b22f1877e8019693
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 unique neighbor-lock vector reverse/face on parallel-opposite z-probes

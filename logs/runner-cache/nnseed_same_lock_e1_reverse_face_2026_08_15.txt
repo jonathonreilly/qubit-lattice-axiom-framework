@@ -1,0 +1,41 @@
+===== runner cache v1 =====
+runner: scripts/nnseed_same_lock_e1_reverse_face_2026_08_15.py
+runner_sha256: 720c6c6c9b63c5acd27d26371270539bdae0b125aa03baadd4e224a0e2a14a91
+input_fingerprint_sha256: 3b0983a376fdeb3f5d3703d82bbbc1598a108ebe8532db1387f39e7843c23271
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: none; exact integer formation ticks only
+package_local_integrity_reads: proposed source note and live axiom memo only
+host: Euclidean B_3(0) with n·n<=9
+host_site_count: 123
+seed: {0,(0,1,0)} both locking +e_1 at tick 0
+origin_tick1_6mask_occupancy: (0, 0, 1, 1, 1, 1)
+origin_tick1_6mask_formed_at_t_eq_1: (0, 0, 0, 1, 1, 1)
+t(A)=3 t(B)=2 t(C)=4 t(D)=3
+reverse 3 t(A)^2 > t(B)^2: hold
+face t(C)^2 > 2 t(D)^2: fail
+claim_boundary: displayed, not adopted; not written into Admissibility
+AUDIT_TIMEOUT_SEC: 120
+PASS: audit-input-paths-literal AUDIT_INPUT_PATHS is the declared two-path static tuple
+PASS: audit-input-files declared review inputs exist
+PASS: host-euclidean-ball host is exactly {n in Z^3 : n·n <= 9}
+PASS: seed-two-site-same-lock tick-0 records are origin and (0,1,0), both locking +e_1
+PASS: thm1-origin-tick1-6mask origin occupancy 6-mask at tick 1 is (0,0,1,1,1,1)
+PASS: thm1-probe-ticks-defined t(A), t(B), t(C), t(D) are defined integers
+PASS: thm1-probe-ticks-reported note records the computed probe ticks
+PASS: thm2-reverse-hold 3 t(A)^2 > t(B)^2 holds
+PASS: thm3-face-fail t(C)^2 > 2 t(D)^2 fails and is displayed, not adopted
+PASS: not-one-site-letter-clone one-site +e_1 seed differs in tick-1 +e_2 occupancy and probe ticks
+PASS: not-mixed-cubic-orbit same-lock seed is outside the proper cubic orbit of mixed +e_1/+e_2
+PASS: perp-step-incoming-lock origin lock +e_1 blocks parallel steps and allows the four perpendicular steps
+PASS: note-claim-scope note claim_scope matches the displayed k=1 reverse/face report
+PASS: no-admissibility-write display is not written into Admissibility and names no extra axiom
+PASS: forbidden-phrases-absent note omits excluded claim language and does not attach a first-lemma tag
+PASS: axiom-quotes-unedited Lattice and Record sentences are quoted from the live axiom memo
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

@@ -4,7 +4,7 @@ runner_sha256: 9e156a6b4eca9ad4ca0f096510239ad447307c7a03caaa45890bb7407bc91e82
 input_fingerprint_sha256: f1a205ff66aae288d76996be912be6389a3e4e75dbdfdaabad218bdebb033ea6
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 host: Euclidean B_3(0)={n:n·n<=9}

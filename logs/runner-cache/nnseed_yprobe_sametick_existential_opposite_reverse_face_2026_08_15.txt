@@ -1,0 +1,87 @@
+===== runner cache v1 =====
+runner: scripts/nnseed_yprobe_sametick_existential_opposite_reverse_face_2026_08_15.py
+runner_sha256: 47118912747d267c1b32bd0627beb1d93d0477425558f19ac1410dbc24aa8be8
+input_fingerprint_sha256: c91e5e6ef6cbe737f835c9cdcd4348697b4733a6ec751341a5a5a63932736d34
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+existential opposite same-tick-inclusive 6-NN reverse/face on nnseed y-probes
+AUDIT_INPUT_PATHS:
+  docs/NNSEED_YPROBE_SAMETICK_EXISTENTIAL_OPPOSITE_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Reverse and face from existential opposite same-tick-inclusive 6-NN locks on the four nnseed y-probes are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/NNSEED_YPROBE_SAMETICK_EXISTENTIAL_OPPOSITE_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-y-probes-in-host
+PASS: y-probes-are-not-x-or-z-probes
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: existential-opposite-identity
+PASS: duplicates-collapse-in-set
+PASS: mixed-remains-a-set
+PASS: not-named-sign-reduction
+PASS: not-unique-vector-leftover
+PASS: not-sum-leftover
+PASS: reverse-face-identity
+A t=0 recorded-neighbor-locks=[+e_1 at (0, 0, 0)] S={+e_1} incoming=+e_2
+B t=2 recorded-neighbor-locks=[+e_3 at (0, 1, 1), +e_1 at (1, 0, 1), +e_1 at (1, 1, 0)] S={+e_1, +e_3} incoming=+e_3,+e_1
+C t=3 recorded-neighbor-locks=[+e_2 at (1, 2, 0), +e_2 at (-1, 2, 0), +e_2 at (0, 1, 0), +e_2 at (0, 2, 1), +e_2 at (0, 2, -1)] S={+e_2} incoming=−e_1,−e_3,+e_3,+e_1
+D t=1 recorded-neighbor-locks=[+e_2 at (0, 1, 0)] S={+e_2} incoming=+e_1
+reverse=fail face=fail
+PASS: theorem1-A-neighbor-lock-set  (((((0, 0, 0), (1, 0, 0)),), frozenset({(1, 0, 0)})))
+PASS: theorem1-B-neighbor-lock-set  (((((0, 1, 1), (0, 0, 1)), ((1, 0, 1), (1, 0, 0)), ((1, 1, 0), (1, 0, 0))), frozenset({(1, 0, 0), (0, 0, 1)})))
+PASS: theorem1-C-neighbor-lock-set  (((((1, 2, 0), (0, 1, 0)), ((-1, 2, 0), (0, 1, 0)), ((0, 1, 0), (0, 1, 0)), ((0, 2, 1), (0, 1, 0)), ((0, 2, -1), (0, 1, 0))), frozenset({(0, 1, 0)})))
+PASS: theorem1-D-neighbor-lock-set  (((((0, 1, 0), (0, 1, 0)),), frozenset({(0, 1, 0)})))
+PASS: theorem1-B-mixed-vectors-remain-a-set
+PASS: theorem1-A-is-seed-same-tick-origin-counts
+PASS: theorem1-formation-ticks
+PASS: theorem2-reverse-fail  (fail)
+PASS: theorem3-face-fail  (fail)
+PASS: sign-lettering-loses-axis-and-also-fails-face
+PASS: not-self-incoming-nnlock
+PASS: not-probe-own-incoming-lock
+PASS: incoming-locks-are-nn-steps
+PASS: uniqueness-not-required  (([(0, 0, 1), (1, 0, 0)], [(-1, 0, 0), (0, 0, -1), (0, 0, 1), (1, 0, 0)]))
+PASS: two-site-seed-locks
+PASS: recorded-not-self-or-later-same-tick-included
+PASS: not-strictly-earlier-leftover
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: mutation-empty-neighbor-locks-undefined
+PASS: mutation-mixed-neighbor-vectors-fail-without-opposite
+PASS: x-probe-strictly-earlier-face-hold-is-not-this-display
+PASS: note-claim-scope
+PASS: note-reports-neighbor-lock-sets
+PASS: note-reports-fail-fail
+PASS: note-displayed-not-adopted
+PASS: note-does-not-use-occupancy-or-incoming
+PASS: note-not-sign-lettering
+PASS: note-not-ndot-or-occupancy-inner-product
+PASS: note-does-not-identify-incoming
+PASS: note-does-not-attach-formation-member
+PASS: note-not-unique-or-sum-leftover
+PASS: note-not-strictly-earlier-leftover
+PASS: note-forbids-enlargement-and-cache
+PASS: note-not-sixteen-free-letters
+PASS: note-not-x-or-z-probe-reprint
+PASS: note-a-is-seed
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+PASS: source-letter-from-existential-opposite-only
+TOTAL: PASS=62 FAIL=0
+
+----- stderr -----
+

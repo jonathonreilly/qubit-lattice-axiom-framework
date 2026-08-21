@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/three_site_opposite_lock_neighbor_vector_reverse_face_2026_08_15.py
+runner_sha256: 4d06ead6e8e511f67127d9dfa7d75c48c4eb71c2f151c68db1444f92baf76a61
+input_fingerprint_sha256: d21649fa866f7804905d02e15a77a188c1ca4163ddff4bd57a09bbbb0038a169
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+host: Euclidean B_3(0)={n:n·n<=9}
+seed t=0: 0 lock +e_1, (0,1,0) lock -e_1, (1,0,0) lock +e_2
+T1 A (1, 0, 0) t 0 neighbors ((0, 0, 0),) locks ('+e_1',) letter +e_1
+T1 B (1, 1, 1) t 2 neighbors ((0, 1, 1), (1, 0, 1)) locks ('+e_3', '+e_3') letter +e_3
+T1 C (2, 0, 0) t 1 neighbors ((1, 0, 0),) locks ('+e_2',) letter +e_2
+T1 D (1, 1, 0) t 3 neighbors ((2, 1, 0), (0, 1, 0), (1, 2, 0), (1, 0, 0), (1, 1, 1), (1, 1, -1)) locks ('+e_2', '-e_1', '+e_1', '+e_2', '+e_2', '+e_1', '+e_2', '+e_1') letter UNDEFINED
+T2 reverse fail
+T3 face UNDEFINED
+PASS: audit-input-paths declared inputs are exactly the note and current axiom
+PASS: euclidean-ball host is the integer Euclidean ball of squared radius 9 with 123 sites
+PASS: three-site-seed tick-0 records are origin +e_1, (0,1,0) -e_1, and (1,0,0) +e_2
+PASS: probe-A-seed-neighbors A is a seed site whose already-recorded 6-NN are other tick-0 sites
+PASS: probe-B-unique-e3 B forms at tick 2 with already-recorded neighbor locks both +e_3
+PASS: probe-C-unique-e2 C forms at tick 1 with unique already-recorded neighbor lock +e_2
+PASS: probe-D-undefined D forms at tick 3 with a non-singleton already-recorded neighbor lock set
+PASS: incoming-uniqueness-not-required B is occupied with two distinct incoming steps, yet the neighbor letter is unique
+PASS: reverse-fail reverse is defined and fails: +e_1 + +e_3 is not zero
+PASS: face-undefined face is UNDEFINED because D has no unique neighbor lock vector
+PASS: note-reports-letters the note reports the four computed letters and reverse/face statuses
+PASS: displayed-not-adopted reverse and face are displayed and not adopted into Admissibility
+PASS: claim-scope the note claim_scope matches the reported unique-vector reverse/face display
+PASS: axiom-boundary Lattice nearest-neighbor wording is read and the axiom file is not rewritten
+PASS: hygiene-forbidden-phrases note omits forbidden gravity, coinage, search, and projector phrases
+PASS: no-l1-attachment the note does not attach an L1 rule and names no larger ball
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

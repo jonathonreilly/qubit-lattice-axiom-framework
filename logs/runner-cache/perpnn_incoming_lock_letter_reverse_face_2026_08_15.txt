@@ -1,0 +1,59 @@
+===== runner cache v1 =====
+runner: scripts/perpnn_incoming_lock_letter_reverse_face_2026_08_15.py
+runner_sha256: 4a6be3f0bad27cf8dbadb57d8dae3efea58aca95adf2307ef9cb1f19d7fba60d
+input_fingerprint_sha256: b60bdb2304832ad105c734727a36999ae1ea13f024446f4f312a7551020654ab
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+incoming-lock named-sign reverse/face on B_3(0)
+AUDIT_INPUT_PATHS:
+  docs/PERPNN_INCOMING_LOCK_LETTER_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Reverse and face content-bits from perpnn earliest incoming locks on four probes are reported as all/some/none. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/PERPNN_INCOMING_LOCK_LETTER_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-probes-in-host
+locks(A)=[(0, -1, 0), (0, 0, -1), (0, 0, 1), (0, 1, 0)]
+locks(B)=[(0, 0, 1), (0, 1, 0), (1, 0, 0)]
+locks(C)=[(1, 0, 0)]
+locks(D)=[(1, 0, 0)]
+PASS: theorem1-locks-A  ([(0, -1, 0), (0, 0, -1), (0, 0, 1), (0, 1, 0)])
+PASS: theorem1-locks-B  ([(0, 0, 1), (0, 1, 0), (1, 0, 0)])
+PASS: theorem1-locks-C  ([(1, 0, 0)])
+PASS: theorem1-locks-D  ([(1, 0, 0)])
+PASS: theorem1-uniqueness-not-required  (A=4 B=3)
+PASS: named-sign-definition
+PASS: named-sign-sets
+n_combos=12 reverse_hits=0 face_hits=0
+reverse=none face=none
+PASS: combinations-are-earliest-product  (12)
+PASS: theorem2-reverse-none  (none)
+PASS: theorem3-face-none  (none)
+PASS: mutation-drop-b-minus-is-some  (6)
+PASS: mutation-drop-d-minus-is-hold-on-all  (12)
+PASS: seed-origin-lock-plus-e1
+PASS: formation-stays-in-host
+PASS: note-claim-scope
+PASS: note-reports-lock-sets
+PASS: note-reports-none-none
+PASS: note-displayed-not-adopted
+PASS: note-no-clock-scoring
+PASS: note-not-free-lettering-space
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+TOTAL: PASS=33 FAIL=0
+
+----- stderr -----
+

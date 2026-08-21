@@ -1,0 +1,49 @@
+===== runner cache v1 =====
+runner: scripts/perpnn_four_event_minkowski_gram_signature_2026_08_15.py
+runner_sha256: 06c923ea5cfc3a57e4a16565add48f9dff333a262ceb9fec72c2d08c515452b0
+input_fingerprint_sha256: 60986a9803666c4d22f60e1b4d3c6928ab57646961ddabf59719f16a6b76189c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/PERPNN_FOUR_EVENT_MINKOWSKI_GRAM_SIGNATURE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+external_scientific_inputs: none; R and the displayed perpnn ticks are named mathematical inputs; the product is the declared Minkowski form
+score_domain: recorded set R only
+PASS: audit-input-paths declared inputs are exactly the note and current axiom memo
+PASS: audit-timeout the declared audit timeout is 120 seconds
+PASS: current-record-readable only records are readable and readout is content-determined
+PASS: current-record-unreadability a site with no record cannot be read
+PASS: current-admissibility-no-time-metric Admissibility does not define a time metric
+4-vectors in order (A, D, B): ((3, 1, 0, 0), (2, 1, 1, 0), (3, 1, 1, 1))
+G = [[8, 5, 8], [5, 2, 4], [8, 4, 6]]
+PASS: recorded-set-four the score domain is exactly the four named recorded events
+PASS: displayed-perpnn-ticks ticks are the displayed perpnn values 0,3,2,3 and are not path-dumped
+PASS: theorem1-nine-entries the nine exact Gram entries are the Minkowski products in order (A,D,B)
+PASS: theorem1-diagonal-squares Gram diagonal equals t^2 minus Euclidean square on axis, face, and body
+LDL L = [['1', '0', '0'], ['5/8', '1', '0'], ['1', '8/9', '1']]
+LDL D = ['8', '-9/8', '-10/9']
+signature (n+, n-, n0) = (1, 2, 0)
+leading principal minors = (8, -9, 10)
+PASS: theorem2-ldl-reconstruction exact rational LDL reconstructs G and uses no floats
+PASS: theorem2-signature signature of G is (1, 2, 0) from exact LDL inertia
+PASS: theorem3-not-opposite-or-other the signature is (1,2,0), not (2,1,0) or other
+PASS: member-vs-3plus1 the three displacements are a Lorentzian 3-member of displayed 3+1
+PASS: uniqueness-not-required a mutated tick assignment can change the Gram signature
+PASS: l1-not-attached spatial quadratic is Euclidean even though L1 coincides on this R
+PASS: unread-and-four-only unread sites stay outside the four-event score domain
+PASS: note-claim-scope the note reports the displayed Minkowski Gram signature
+PASS: note-contract machine fields, display scope, and hygiene hold
+PASS: note-runner-table the note table matches the computed Gram and signature
+per_element: each of the nine Gram entries is a Minkowski product
+per_site: unread sites are excluded; only R is scored
+per_mode: signature is exact rational LDL inertia, not a float spectrum
+lattice_wide: checked and not executed — only four events are used
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

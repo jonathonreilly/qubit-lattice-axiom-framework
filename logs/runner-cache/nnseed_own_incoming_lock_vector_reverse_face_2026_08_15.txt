@@ -1,0 +1,69 @@
+===== runner cache v1 =====
+runner: scripts/nnseed_own_incoming_lock_vector_reverse_face_2026_08_15.py
+runner_sha256: cc827e164a4df937545771eadb1891a4be10a503c3bbd688e5dda3ec6ae5821b
+input_fingerprint_sha256: bf95c9711d16b48ac510eaf87d36388eaab3e0cde3ed3d1cad950894c2e0b934
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+own unique incoming lock vector reverse/face on nnseed x-probes
+AUDIT_INPUT_PATHS:
+  docs/NNSEED_OWN_INCOMING_LOCK_VECTOR_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Reverse and face from the probe's own unique incoming lock vector on the four nnseed x-probes are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/NNSEED_OWN_INCOMING_LOCK_VECTOR_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-probes-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: unique-own-incoming-letter-identity
+PASS: reverse-face-identity
+A t=2 incoming=[−e_2] L=−e_2
+B t=2 incoming=[+e_3,+e_1] L=UNDEFINED
+C t=3 incoming=[+e_1] L=+e_1
+D t=1 incoming=[+e_1] L=+e_1
+reverse=UNDEFINED face=fail
+PASS: theorem1-A-own-incoming-letter  (([(0, -1, 0)], (0, -1, 0)))
+PASS: theorem1-B-own-incoming-letter  (([(0, 0, 1), (1, 0, 0)], 'UNDEFINED'))
+PASS: theorem1-C-own-incoming-letter  (([(1, 0, 0)], (1, 0, 0)))
+PASS: theorem1-D-own-incoming-letter  (([(1, 0, 0)], (1, 0, 0)))
+PASS: theorem1-B-mixed-incoming-not-singleton
+PASS: theorem2-reverse-undefined  (UNDEFINED)
+PASS: theorem3-face-fail  (fail)
+PASS: not-nfvec-neighbor-lock-vector
+PASS: not-nnlock-named-sign
+PASS: incoming-locks-are-nn-steps
+PASS: uniqueness-not-required  ([(0, 0, 1), (1, 0, 0)])
+PASS: two-site-seed-locks
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: mutation-empty-incoming-undefined
+PASS: mutation-mixed-incoming-undefined
+PASS: mutation-nfvec-face-would-hold
+PASS: note-claim-scope
+PASS: note-reports-own-incoming-letters
+PASS: note-reports-undefined-fail
+PASS: note-displayed-not-adopted
+PASS: note-does-not-use-occupancy-or-neighbor-locks
+PASS: note-not-sign-lettering
+PASS: note-not-nfvec-leftover
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+PASS: source-letter-from-own-incoming-only
+TOTAL: PASS=44 FAIL=0
+
+----- stderr -----
+

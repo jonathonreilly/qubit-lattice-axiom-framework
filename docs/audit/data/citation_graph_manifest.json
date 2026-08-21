@@ -1,6 +1,6 @@
 {
  "edge_count": 16109,
- "node_count": 5590,
+ "node_count": 5591,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -525,6 +525,10 @@
   "admissibility_dirac_kahler_m_block_measurement_theory_bounded_theorem_note_2026-08-19": {
    "deps_hash": "3b8ffd210ae0",
    "out_degree": 9
+  },
+  "admissibility_dirac_kahler_mass_survival_stratum_bounded_theorem_note_2026-08-20": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_dirac_kahler_massless_seam_verdict_bounded_theorem_note_2026-08-19": {
    "deps_hash": "475004e57b3e",

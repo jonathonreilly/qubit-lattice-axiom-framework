@@ -1,0 +1,65 @@
+===== runner cache v1 =====
+runner: scripts/perpnn_pvm_letter_reverse_face_2026_08_15.py
+runner_sha256: 83042c0bf55ab2e03f7a548f8d9c753e7f6af9ca6f50aaaac6633c6008553e66
+input_fingerprint_sha256: 6ffa471252b7223ff356e50aac72186cd0384817a8ddb192b0ef8aa6df27bad3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+named rank-1 PVM-letter reverse/face on four perpnn probes
+AUDIT_INPUT_PATHS:
+  docs/PERPNN_PVM_LETTER_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Reverse and face from named rank-1 PVM letters on the four perpnn probes, or UNDEFINED if the process determines no such letter, are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/PERPNN_PVM_LETTER_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-probes-in-host
+PASS: id-add-dot-perp
+PASS: named-pvm-rank1-projectors
+PASS: named-pvm-traces-k1
+PASS: named-pvm-letters-are-plus-minus
+incoming(A)=[(0, -1, 0), (0, 0, -1), (0, 0, 1), (0, 1, 0)]
+incoming(B)=[(0, 0, 1), (0, 1, 0), (1, 0, 0)]
+incoming(C)=[(1, 0, 0)]
+incoming(D)=[(1, 0, 0)]
+L(A,B,C,D)=UNDEFINED,UNDEFINED,UNDEFINED,UNDEFINED
+PASS: incoming-locks-are-nn-steps
+PASS: incoming-locks-are-not-pvm-letters
+PASS: theorem1-A-undefined
+PASS: theorem1-B-undefined
+PASS: theorem1-C-undefined
+PASS: theorem1-D-undefined
+PASS: uniqueness-not-required  (incoming-A=4)
+reverse=UNDEFINED face=UNDEFINED
+PASS: theorem2-reverse-undefined  (UNDEFINED)
+PASS: theorem3-face-undefined  (UNDEFINED)
+PASS: not-free-occupancy-lettering-census
+PASS: letters-do-not-feed-occupancy
+PASS: mutation-identify-incoming-sign-is-refused
+PASS: seed-origin-lock-plus-e1
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: note-claim-scope
+PASS: note-reports-undefined-letters
+PASS: note-reports-undefined-undefined
+PASS: note-displayed-not-adopted
+PASS: note-does-not-identify-incoming
+PASS: note-does-not-feed-n-or-attach-occupancy-member
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+TOTAL: PASS=39 FAIL=0
+
+----- stderr -----
+

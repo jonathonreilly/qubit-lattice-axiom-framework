@@ -1,0 +1,73 @@
+===== runner cache v1 =====
+runner: scripts/nnseed_yprobe_neighbor_lock_letter_reverse_face_2026_08_15.py
+runner_sha256: 97baa33af62afccb0a46aec75b646d9eb4bf650d12a0c0da179550a7ffdb395d
+input_fingerprint_sha256: 60fe0f445e1f5e30f208c1d1d1f269c36dd6b188532c4a297c5710c48e15ab87
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+unique letter from already-recorded 6-NN locks on y-probes reverse/face
+AUDIT_INPUT_PATHS:
+  docs/NNSEED_YPROBE_NEIGHBOR_LOCK_LETTER_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Reverse and face from the unique letter of already-recorded 6-NN locks on the four nnseed y-probes are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/NNSEED_YPROBE_NEIGHBOR_LOCK_LETTER_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-y-probes-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: named-sign-identity
+PASS: unique-letter-identity-from-neighbor-lock-signs
+PASS: reverse-face-undefined-when-letter-undefined
+A t=0 recorded-neighbor-locks=[] L=UNDEFINED incoming=+e_2
+B t=2 recorded-neighbor-locks=[+e_3 at (0, 1, 1), +e_1 at (1, 1, 0)] L=+ incoming=+e_3,+e_1
+C t=3 recorded-neighbor-locks=[+e_2 at (1, 2, 0), +e_2 at (-1, 2, 0), +e_2 at (0, 1, 0), +e_2 at (0, 2, 1), +e_2 at (0, 2, -1)] L=+ incoming=−e_1,−e_3,+e_3,+e_1
+D t=1 recorded-neighbor-locks=[+e_2 at (0, 1, 0)] L=+ incoming=+e_1
+reverse=UNDEFINED face=none
+PASS: theorem1-A-neighbor-lock-list-and-letter  (((), 'UNDEFINED'))
+PASS: theorem1-B-neighbor-lock-list-and-letter  (((((0, 1, 1), (0, 0, 1)), ((1, 1, 0), (1, 0, 0))), '+'))
+PASS: theorem1-C-neighbor-lock-list-and-letter  (((((1, 2, 0), (0, 1, 0)), ((-1, 2, 0), (0, 1, 0)), ((0, 1, 0), (0, 1, 0)), ((0, 2, 1), (0, 1, 0)), ((0, 2, -1), (0, 1, 0))), '+'))
+PASS: theorem1-D-neighbor-lock-list-and-letter  (((((0, 1, 0), (0, 1, 0)),), '+'))
+PASS: theorem1-A-is-seed-empty-already-recorded
+PASS: theorem2-reverse-undefined  (UNDEFINED)
+PASS: theorem3-face-none  (none)
+PASS: not-self-incoming-nnlock
+PASS: not-probe-own-incoming-lock
+PASS: incoming-locks-are-nn-steps-not-letters
+PASS: uniqueness-not-required  (([(0, 0, 1), (1, 0, 0)], [(-1, 0, 0), (0, 0, -1), (0, 0, 1), (1, 0, 0)]))
+PASS: two-site-seed-locks
+PASS: already-recorded-not-self-or-later-or-same-tick
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: no-sixteen-combo-census
+PASS: mutation-empty-neighbor-locks-undefined
+PASS: mutation-mixed-neighbor-signs-undefined
+PASS: note-claim-scope
+PASS: note-reports-neighbor-lock-lists-and-letters
+PASS: note-reports-undefined-none
+PASS: note-displayed-not-adopted
+PASS: note-does-not-use-occupancy-or-incoming
+PASS: note-does-not-identify-incoming
+PASS: note-does-not-attach-formation-member
+PASS: note-forbids-enlargement-and-cache
+PASS: note-not-sixteen-free-letters
+PASS: note-not-occupancy-letter-or-self-incoming
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+PASS: source-letter-from-neighbor-locks-only
+TOTAL: PASS=48 FAIL=0
+
+----- stderr -----
+

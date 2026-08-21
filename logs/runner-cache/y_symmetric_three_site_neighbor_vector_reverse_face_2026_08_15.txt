@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/y_symmetric_three_site_neighbor_vector_reverse_face_2026_08_15.py
+runner_sha256: 6c8e18ab08b7ac8d5abd4607a7a8ae443e100ad7e18e9d5f809292471fdae39f
+input_fingerprint_sha256: 8c61739f126892898b5ba8201fb8ba12a1458b50a3c36e074b29d3a65103434a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+host: Euclidean B_3(0)={n:n·n<=9}
+seed t=0: 0 lock +e_1, (0,1,0) lock -e_1, (0,-1,0) lock -e_1
+T1 A (0, 1, 0) t 0 neighbors ((0, 0, 0),) locks ('+e_1',) letter +e_1
+T1 B (1, 1, 1) t 2 neighbors ((0, 1, 1),) locks ('+e_3',) letter +e_3
+T1 C (0, 2, 0) t 1 neighbors ((0, 1, 0),) locks ('-e_1',) letter -e_1
+T1 D (1, 1, 0) t 3 neighbors ((0, 1, 0), (1, 2, 0), (1, 1, 1), (1, 1, -1)) locks ('-e_1', '+e_1', '+e_1', '+e_1') letter UNDEFINED
+T2 reverse fail
+T3 face UNDEFINED
+PASS: audit-input-paths declared inputs are exactly the note and current axiom
+PASS: euclidean-ball host is the integer Euclidean ball of squared radius 9 with 123 sites
+PASS: y-symmetric-three-site-seed tick-0 records are origin +e_1, (0,1,0) -e_1, and y-mirror (0,-1,0) -e_1
+PASS: y-probes-not-x-lists the four y-probes are A=(0,1,0), B=(1,1,1), C=(0,2,0), D=(1,1,0)
+PASS: probe-A-seed-neighbors A is a seed site whose already-recorded 6-NN are other tick-0 sites
+PASS: probe-B-unique-e3 B forms at tick 2 with a single already-recorded neighbor lock +e_3
+PASS: probe-C-unique-minus-e1 C forms at tick 1 with unique already-recorded neighbor lock -e_1
+PASS: probe-D-undefined D forms at tick 3 with a non-singleton already-recorded neighbor lock set
+PASS: incoming-uniqueness-not-required D is occupied with three incoming steps, and the neighbor letter is still UNDEFINED
+PASS: reverse-fail reverse is defined and fails: +e_1 + +e_3 is not zero
+PASS: face-undefined face is UNDEFINED because D has no unique neighbor lock vector
+PASS: not-leftover-of-nstri-third-site B has one already-recorded neighbor here; the (1,0,0) three-site seed has two
+PASS: note-reports-letters the note reports the four computed letters and reverse/face statuses
+PASS: displayed-not-adopted reverse and face are displayed and not adopted into Admissibility
+PASS: claim-scope the note claim_scope matches the reported unique-vector reverse/face display
+PASS: axiom-boundary Lattice nearest-neighbor wording is read and the axiom file is not rewritten
+PASS: hygiene-forbidden-phrases note omits forbidden gravity, coinage, search, and projector phrases
+PASS: no-l1-attachment the note does not attach an L1 rule and names no larger ball
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

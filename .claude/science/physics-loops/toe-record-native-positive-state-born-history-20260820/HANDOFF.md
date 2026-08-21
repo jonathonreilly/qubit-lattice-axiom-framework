@@ -208,3 +208,11 @@ malformed-input behavior, overlap arbitration, and terminal absorption under
 every allowed future update. Central compatibility waits until a single-site
 event map or retained joint-regional Admissibility law exists. Actual-member
 correlation stays separate. No review-loop is used.
+
+Committed-tree delivery gates pass for science commit
+`4195f59a95f9fc4dbca0baa042431b54817699a3`: full pipeline checkpoint
+`02003f58b2a9`, strict lint 4,904 rows with zero errors, both PR-diff caches
+fresh, and 19-path/one-claim committed-delta evidence with
+`forensic_evidence_ready=true`, independent helper discovery, and zero
+failures/control failures. Disposable generated audit surfaces were discarded.
+Remote push and stacked-PR verification remain.

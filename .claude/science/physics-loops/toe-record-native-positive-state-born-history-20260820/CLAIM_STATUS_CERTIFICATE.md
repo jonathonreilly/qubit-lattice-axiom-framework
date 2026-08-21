@@ -187,3 +187,19 @@ the staged cache gate pass locally.
 
 Audit status: none. Retained status: none. Obligation retirement: zero. TOE
 percentage movement: zero. The frozen lane percentages remain unchanged.
+
+## Block 8 Committed-Tree Delivery Evidence
+
+Science commit `4195f59a95f9fc4dbca0baa042431b54817699a3` was replayed in a
+detached disposable worktree on exact Block-7 delivery base
+`3a0372a927e2528b1186fc63fe48e368d5b4abf1`. The full fixed-point pipeline
+completed through checkpoint `02003f58b2a9`. Strict audit lint checked 4,904
+rows with nine warnings/notices and zero errors. The committed-delta gate
+examined 19 changed paths and one claim, reported
+`forensic_evidence_ready=true`, discovered the independent helper, and found
+zero failures and zero control failures. The PR-diff cache gate found both
+runners fresh. Generated ledger, queue, and derived surfaces were discarded
+with the disposable worktree.
+
+This is proposal-delivery evidence only. It applies no audit verdict and moves
+no retention, obligation, axiom, or TOE status.

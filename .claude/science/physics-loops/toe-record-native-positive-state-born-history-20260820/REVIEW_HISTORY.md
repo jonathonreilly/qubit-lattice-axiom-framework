@@ -1011,3 +1011,19 @@ N1 markers, all required hidden-wall terms, explicit gate `PASS`, fresh caches,
 and no remaining mathematical defect. The governance recheck confirms exactly
 three load-bearing graph dependencies and the foundations recheck confirms the
 post-Block-8 ranking. This remains proposal review, not independent audit.
+
+## Block 8 Committed-Tree Gate — 2026-08-20T21:57-04:00
+
+Science commit `4195f59a95f9fc4dbca0baa042431b54817699a3` was replayed from
+exact Block-7 delivery base `3a0372a927e2528b1186fc63fe48e368d5b4abf1`
+in a detached disposable worktree. The full fixed-point pipeline completed
+through checkpoint `02003f58b2a9`. Strict audit lint checked 4,904 rows with
+nine warnings/notices and zero errors. The seeded committed-delta gate checked
+19 changed paths and one claim, reported `forensic_evidence_ready=true`,
+discovered the independent helper, and found zero failures/control failures.
+The PR-diff cache gate found both runners fresh.
+
+Generated ledger, queue, and derived surfaces were discarded with the
+disposable worktree. This certifies proposal delivery only; it applies no
+audit verdict and changes no retention, obligation, axiom, or TOE percentage.
+Remote push and PR verification remain. No review-loop was used.

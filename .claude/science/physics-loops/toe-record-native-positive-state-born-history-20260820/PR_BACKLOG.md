@@ -214,9 +214,11 @@ double-use leakage, and instantiates the prior finite reversible absorption
 theorem with all scheduled/irreversible/infinite alternatives preserved.
 
 The corrected targeted panel recheck, both input-bound caches, citation graph/
-manifest, premise/vocabulary/repository gates, and staged cache check now pass.
-Before opening the PR: commit science, replay the full fixed-point pipeline and
-strict lint in a disposable committed tree, add delivery metadata separately,
-push, open the exact Block-7-stacked PR, and verify remote head/base/state. This
-entry claims no audit, retention, obligation retirement, axiom update, or TOE
-movement.
+manifest, premise/vocabulary/repository gates, and staged cache check pass.
+Science commit `4195f59a95` passes full fixed-point checkpoint `02003f58b2a9`,
+strict lint over 4,904 rows with zero errors, and the seeded committed-delta
+gate over 19 changed paths/one claim with `forensic_evidence_ready=true`, the
+independent helper, and zero failures/control failures. Generated audit
+surfaces were discarded. Remaining delivery work is push, exact stacked-PR
+opening, and remote head/base/state verification. This entry claims no audit,
+retention, obligation retirement, axiom update, or TOE movement.

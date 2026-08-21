@@ -1,0 +1,49 @@
+===== runner cache v1 =====
+runner: scripts/perpnn_seed_e2_x_probe_reverse_face_2026_08_15.py
+runner_sha256: aa18d3cc57833dcdb6dffd8096dd0b7658299f44ffecfd4735a15778b12c1f53
+input_fingerprint_sha256: 771326aa7f501a5de124dd93ca901eb95188956e1d90436cbaa393be08131fab
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/PERPNN_SEED_E2_X_PROBE_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Perp-step incoming-lock formation-tick reverse and face at k=1 on B_3(0) with seed lock +e_2 and x-probes are reported. Displayed, not adopted.
+seed_lock: +e_2=(0, 1, 0)
+tick1_6_mask_order_+e1_-e1_+e2_-e2_+e3_-e3: (1, 1, 0, 0, 1, 1)
+t(A)=1 t(B)=3 t(C)=4 t(D)=2
+reverse: 3 t(A)^2 > t(B)^2 is fails
+face: t(C)^2 > 2 t(D)^2 is holds
+displayed_not_adopted: true
+PASS: audit-input-paths declared inputs are exactly the source note and current axiom memo
+PASS: audit-timeout-declared timeout is the standard 120 second bound
+PASS: host-is-taxicab-ball-radius-3 B_3(0) is the closed taxicab ball of radius 3
+PASS: seed-origin-tick-0-plus-e2 origin is recorded at tick 0 with lock letter +e_2
+PASS: perp-step-rule a six-neighbor step is allowed only when it is orthogonal to the lock letter
+PASS: tick1-6-mask tick-1 six-mask of the origin is (1,1,0,0,1,1) in ±e_1, ±e_2, ±e_3 order
+PASS: probe-times x-probes form at t(A)=1, t(B)=3, t(C)=4, t(D)=2
+PASS: uniqueness-not-required first-arrival times are reported; incoming lock sets need not be unique
+PASS: reverse-at-k1 reverse 3 t(A)^2 > t(B)^2 fails at k=1
+PASS: face-at-k1 face t(C)^2 > 2 t(D)^2 holds at k=1
+PASS: seed-orthogonal-to-x-probes seed lock +e_2 is orthogonal to the x-axis of the probes
+PASS: not-cubic-relabel-of-axis-seed holding x-probes fixed while seeding +e_2 is not a cubic relabel of an +e_1 seed
+PASS: formed-sites-stay-in-host every formed site lies in B_3(0) and formation never leaves the host
+PASS: note-claim-scope front matter reports the displayed k=1 reverse and face scope
+PASS: note-theorems-and-boundary the note records Theorems 1-3, the derived ticks, and the adoption boundary
+PASS: source-lattice-and-record-sentences the current axiom memo still supplies cubic nearest-neighbor sites and record locking
+PASS: no-admissibility-edit the note does not write the displayed inequalities into Admissibility
+PASS: forbidden-phrase-hygiene note and runner omit the excluded rhetoric and excluded algorithms
+PASS: first-arrival-unit-tick every non-origin formed site arrives at t(p)+1 from an allowed parent
+per_element: checked — each host site and each six-neighbor step is enumerated exactly
+per_site: checked — origin seed lock and the four x-probes are evaluated as named sites
+per_mode: checked and not executed — no spectral mode is used
+per_block: checked — tick-1 mask, reverse comparison, and face comparison are evaluated on B_3(0)
+lattice_wide: checked and not executed — no Admissibility rewrite, no L1 attachment, and no host beyond B_3(0)
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

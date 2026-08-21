@@ -4,7 +4,7 @@ runner_sha256: a7ece2af7c4a4dea0aa486b3bc800624a3c5b907a6bc3e3f8f6c4eaa0fc58d98
 input_fingerprint_sha256: eb1bd65e7e22cd60380ef9f2221e93150b76bce752523d57a0458ae858eedc84
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 same-tick formdraw n on opposite-lock z-probes; split letter

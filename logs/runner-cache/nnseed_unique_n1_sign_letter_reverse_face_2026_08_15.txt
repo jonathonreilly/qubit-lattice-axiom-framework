@@ -1,0 +1,69 @@
+===== runner cache v1 =====
+runner: scripts/nnseed_unique_n1_sign_letter_reverse_face_2026_08_15.py
+runner_sha256: 24f336326ab653760452233e811e386f4afe08274f61accc54fd729845e3130d
+input_fingerprint_sha256: c8452dbaed8744e03d8be6c3f1ce30572671186a480c782944d1ad18a5c9f9e4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+unique letter sign(n_1) reverse/face on four nnseed probes
+AUDIT_INPUT_PATHS:
+  docs/NNSEED_UNIQUE_N1_SIGN_LETTER_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Reverse and face from the unique letter sign(n_1) on the four nnseed probes are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/NNSEED_UNIQUE_N1_SIGN_LETTER_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-probes-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: unique-letter-identity-from-n1-sign
+PASS: reverse-face-undefined-when-letter-undefined
+A n=(-1/3,1/3,0) n1=-1/3 L=− incoming=[(0, -1, 0)]
+B n=(-1/3,0,-1/3) n1=-1/3 L=− incoming=[(0, 0, 1), (1, 0, 0)]
+C n=(-1/3,0,0) n1=-1/3 L=− incoming=[(1, 0, 0)]
+D n=(-1/3,0,0) n1=-1/3 L=− incoming=[(1, 0, 0)]
+reverse=none face=none
+PASS: theorem1-n1-A  ((Fraction(-1, 3), '-'))
+PASS: theorem1-n1-B  ((Fraction(-1, 3), '-'))
+PASS: theorem1-n1-C  ((Fraction(-1, 3), '-'))
+PASS: theorem1-n1-D  ((Fraction(-1, 3), '-'))
+PASS: theorem1-letters-all-minus
+PASS: theorem2-reverse-none  (none)
+PASS: theorem3-face-none  (none)
+PASS: incoming-locks-are-nn-steps-not-letters
+PASS: uniqueness-not-required  ([(0, 0, 1), (1, 0, 0)])
+PASS: two-site-seed-locks
+PASS: letters-do-not-feed-occupancy
+PASS: n-independent-of-letter-branch
+PASS: n-from-already-recorded-six-nn
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: no-sixteen-combo-census
+PASS: mutation-zero-n1-is-undefined
+PASS: mutation-positive-n1-is-plus
+PASS: note-claim-scope
+PASS: note-reports-n1-and-letters
+PASS: note-reports-none-none
+PASS: note-displayed-not-adopted
+PASS: note-does-not-identify-incoming
+PASS: note-does-not-feed-n-or-attach-formation-member
+PASS: note-forbids-enlargement-and-cache
+PASS: note-not-sixteen-free-letters
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+TOTAL: PASS=44 FAIL=0
+
+----- stderr -----
+

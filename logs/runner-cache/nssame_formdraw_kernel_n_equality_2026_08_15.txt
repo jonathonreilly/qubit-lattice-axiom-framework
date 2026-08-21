@@ -1,0 +1,51 @@
+===== runner cache v1 =====
+runner: scripts/nssame_formdraw_kernel_n_equality_2026_08_15.py
+runner_sha256: 02a0b598e62a9ea48052e0c17745130fc6c4210892cf0099b2487f0646e6a4ef
+input_fingerprint_sha256: 300a02b41eacf4b255c87c3e64e9a33e114651de022e432349c67d91afd34875
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: none; exact occupancy kernels only
+package_local_integrity_reads: proposed source note and live axiom memo only
+host: Euclidean B_3(0) with n·n<=9
+host_site_count: 123
+seed: {0,(0,1,0)} both locking +e_1 at tick 0
+process: nssame perp-step incoming-lock
+kernel: formdraw n_μ=(o_{+μ}−o_{−μ})/3 from already-recorded 6-NN
+n(A)=(−1/3, −1/3, 0) occ=+−e1(0, 1) +−e2(0, 1) +−e3(1, 1) incoming=[(0, 0, -1), (0, 0, 1), (0, 1, 0)]
+n(B)=(−1/3, 0, 0) occ=+−e1(0, 1) +−e2(0, 0) +−e3(0, 0) incoming=[(1, 0, 0)]
+n(C)=(−1/3, 0, 0) occ=+−e1(0, 1) +−e2(0, 0) +−e3(0, 0) incoming=[(1, 0, 0)]
+n(D)=(−1/3, 1/3, 0) occ=+−e1(0, 1) +−e2(1, 0) +−e3(1, 1) incoming=[(0, -1, 0), (0, 0, -1), (0, 0, 1)]
+n(C)=n(D): False
+four-n equals mixed-lock formdraw n: False
+unique f(n) leftover transfers: no
+claim_boundary: displayed, not adopted; not written into Admissibility
+cache_write: false
+AUDIT_TIMEOUT_SEC: 120
+PASS: audit-input-paths-literal AUDIT_INPUT_PATHS is the declared two-path static tuple
+PASS: audit-input-files declared review inputs exist
+PASS: host-euclidean-ball host is exactly {n in Z^3 : n·n <= 9}
+PASS: seed-two-site-same-lock tick-0 records are origin and (0,1,0), both locking +e_1
+PASS: identity-gates-present occupancy, n_vector, and grow are computed, not hardcoded
+PASS: thm1-n-A computed n(A) is recorded in the note
+PASS: thm1-n-B computed n(B) is recorded in the note
+PASS: thm1-n-C computed n(C) is recorded in the note
+PASS: thm1-n-D computed n(D) is recorded in the note
+PASS: thm2-nC-not-equal-nD n(C)=n(D) fails on the nssame seed
+PASS: thm3-tuple-disagrees-mixed-formdraw four-n tuple is not the mixed-lock formdraw tuple
+PASS: already-recorded-six-nn occupancy reads strictly earlier 6-NN, not the unread probe
+PASS: uniqueness-not-required first-arrival incoming locks at A and D need not be unique
+PASS: not-mixed-cubic-orbit same-lock seed is outside the proper cubic orbit of mixed +e_1/+e_2
+PASS: perp-step-incoming-lock origin lock +e_1 blocks parallel steps and allows the four perpendicular steps
+PASS: note-claim-scope note claim_scope matches the occupancy-kernel report
+PASS: no-letter-assignment no unique {+,−} letter is assigned and reverse/face are not scored from n
+PASS: no-admissibility-write display is not written into Admissibility and names no extra axiom
+PASS: forbidden-phrases-absent note omits excluded claim language and does not attach a first-lemma tag
+PASS: axiom-quotes-unedited Lattice and Record sentences are quoted from the live axiom memo
+PASS: no-larger-ball formation stays inside B_3(0)
+TOTAL: PASS=21 FAIL=0
+
+----- stderr -----
+

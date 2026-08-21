@@ -1,0 +1,54 @@
+===== runner cache v1 =====
+runner: scripts/nnseed_formation_tick_var_b3_2026_08_15.py
+runner_sha256: 507c1d0cada4f922ee637faa415027efdf736ae74bf7b1e089ec1f99226e39d3
+input_fingerprint_sha256: a821c66254e49cd857499848f7cef763fc402a0b40fc54a2822cd8ca03400d24
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+nnseed formation-tick arrival-speed variance on B_3(0)
+AUDIT_INPUT_PATHS:
+  docs/NNSEED_FORMATION_TICK_VAR_B3_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Arrival-speed variance of nnseed formation-tick on formed nonzero sites of B_3(0) is reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/NNSEED_FORMATION_TICK_VAR_B3_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: two-site-seed-in-host
+formed_nonzero=120 unformed=[(-3, 0, 0), (3, 0, 0)]
+variance_n=119
+tick_histogram_nonzero={0: 1, 1: 7, 2: 18, 3: 33, 4: 46, 5: 15}
+tick_histogram_var={1: 7, 2: 18, 3: 33, 4: 46, 5: 15}
+PASS: theorem1-formed-nonzero-set  (n=120 unformed=[(-3, 0, 0), (3, 0, 0)])
+PASS: theorem1-tick-histogram  ({0: 1, 1: 7, 2: 18, 3: 33, 4: 46, 5: 15})
+PASS: theorem1-note-reports-set
+PASS: theorem1-uniqueness-not-required  ([(0, 0, 1), (1, 0, 0)])
+PASS: theorem1-not-hop-count
+PASS: theorem1-seed-ticks-and-locks
+Q=49223/85680
+var=0.034735087770962977
+PASS: theorem2-second-moment  (49223/85680)
+PASS: theorem2-exact-var-coeff
+PASS: theorem2-truncated-variance  (0.034735087770962977)
+PASS: theorem2-occupancy
+PASS: mutation-drop-perp-forms-seed-axis-radius-3  (free_n=123 t300=3)
+PASS: cardinality-not-one-site-clone  (one_t100=3 two_t100=2)
+PASS: formation-stays-in-host
+PASS: note-claim-scope
+PASS: note-displayed-not-adopted
+PASS: no-admissibility-write
+PASS: no-l1-attach
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-pins-axiom-wording
+PASS: note-machine-status-no-axiom-edit
+PASS: source-audit-paths-are-static-literals
+TOTAL: PASS=28 FAIL=0
+
+----- stderr -----
+

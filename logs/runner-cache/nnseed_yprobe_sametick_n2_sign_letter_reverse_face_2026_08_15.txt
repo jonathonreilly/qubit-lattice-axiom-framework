@@ -1,0 +1,78 @@
+===== runner cache v1 =====
+runner: scripts/nnseed_yprobe_sametick_n2_sign_letter_reverse_face_2026_08_15.py
+runner_sha256: 331b930a51cfda15727a2c04259d51f6f0459ebd9b615e687eadc819aef1eccf
+input_fingerprint_sha256: a73bce93a3f2e889657a8617439be588ab6d6bab03f2cd68af0f7d2d1f51add7
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+unique letter sign(n_2) of same-tick occupancy kernel on four nnseed y-probes
+AUDIT_INPUT_PATHS:
+  docs/NNSEED_YPROBE_SAMETICK_N2_SIGN_LETTER_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Reverse and face from the unique letter sign(n_2) of the same-tick occupancy kernel on the four nnseed y-probes are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/NNSEED_YPROBE_SAMETICK_N2_SIGN_LETTER_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-euclidean-b3
+PASS: y-probes-in-host
+PASS: perp-step-blocks-parallel
+PASS: unique-letter-sign-n2-identity
+PASS: reverse-face-undefined-when-letter-undefined
+A n=(0, −1/3, 0) k=1 n2=-1/3 L=− t=0 occ=+−e1(0, 0) +−e2(0, 1) +−e3(0, 0) incoming=[(0, 1, 0)]
+B n=(−1/3, −1/3, −1/3) k=3 n2=-1/3 L=− t=2 occ=+−e1(0, 1) +−e2(0, 1) +−e3(0, 1) incoming=[(0, 0, 1), (1, 0, 0)]
+C n=(0, −1/3, 0) k=1 n2=-1/3 L=− t=3 occ=+−e1(1, 1) +−e2(0, 1) +−e3(1, 1) incoming=[(-1, 0, 0), (0, 0, -1), (0, 0, 1), (1, 0, 0)]
+D n=(−1/3, 0, 0) k=1 n2=0 L=UNDEFINED t=1 occ=+−e1(0, 1) +−e2(0, 0) +−e3(0, 0) incoming=[(1, 0, 0)]
+reverse=none face=UNDEFINED
+PASS: theorem1-n-A  ((Fraction(0, 1), Fraction(-1, 3), Fraction(0, 1)))
+PASS: theorem1-n-B  ((Fraction(-1, 3), Fraction(-1, 3), Fraction(-1, 3)))
+PASS: theorem1-n-C  ((Fraction(0, 1), Fraction(-1, 3), Fraction(0, 1)))
+PASS: theorem1-n-D  ((Fraction(-1, 3), Fraction(0, 1), Fraction(0, 1)))
+PASS: theorem1-n-C-neq-n-D  (C=(Fraction(0, 1), Fraction(-1, 3), Fraction(0, 1)) D=(Fraction(-1, 3), Fraction(0, 1), Fraction(0, 1)))
+PASS: theorem1-unique-letters  ({'A': '-', 'B': '-', 'C': '-', 'D': 'UNDEFINED'})
+PASS: theorem1-y-ticks-match-nsiso  ({'A': 0, 'B': 2, 'C': 3, 'D': 1})
+PASS: n-nonzero-n2-zero-at-D-undefined
+PASS: theorem2-reverse-none  (none)
+PASS: theorem3-face-undefined  (UNDEFINED)
+PASS: not-pplus-along-n
+PASS: not-ndot
+PASS: not-sign-n1
+PASS: incoming-locks-are-nn-steps-not-letters
+PASS: uniqueness-not-required  (B=[(0, 0, 1), (1, 0, 0)] C=[(-1, 0, 0), (0, 0, -1), (0, 0, 1), (1, 0, 0)])
+PASS: two-site-seed-locks
+PASS: seed-occupancy-includes-same-tick-partner
+PASS: not-strictly-earlier-leftover
+PASS: x-probe-unique-letter-leftover-closed
+PASS: letters-do-not-feed-occupancy
+PASS: mutation-drop-same-tick-partner-changes-n
+PASS: mutation-one-site-seed-changes-ticks  ({'A': 1, 'B': 3, 'C': 4, 'D': 2})
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: no-sixteen-combo-census
+PASS: not-t-as-comparator
+PASS: note-claim-scope
+PASS: note-reports-n-and-letters
+PASS: note-reports-none-undefined
+PASS: note-nC-neq-nD-split-is-n2
+PASS: note-not-pplus-or-ndot
+PASS: note-y-ticks
+PASS: note-displayed-not-adopted
+PASS: note-does-not-identify-incoming
+PASS: note-does-not-feed-n-or-attach-formation-member
+PASS: note-forbids-enlargement-and-cache
+PASS: note-not-sixteen-free-letters
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+TOTAL: PASS=53 FAIL=0
+
+----- stderr -----
+

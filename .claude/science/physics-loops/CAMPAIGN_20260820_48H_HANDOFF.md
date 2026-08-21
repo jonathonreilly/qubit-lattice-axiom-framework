@@ -96,3 +96,59 @@ conventions (anchored sed; N5-prefix fence selection with
 single-line literals; worktree-only audit paths; scoped cleans;
 twice-verified heavies behind --deep; genuinely-stale
 STALE_PARENT_COMMIT verified per artifact).
+
+## POST-ARC ADDENDUM (2026-08-21, final — the 153-166 chain complete)
+
+The chain extended to FOURTEEN blocks: ..#7056 <- #7071 (165, the
+scaling probe) <- #7083 (166, the interpretation discriminators).
+The items below are ADDED to the handoff; items 2/3a remain CUT
+(superseded); item 3b, item 1, item 4 stand as written.
+
+Item 6 — THE INERTIA-CONVENTION AUDIT (WITH TEETH, highest
+priority): the corpus carries two landed inertia helpers with
+OPPOSITE tuple orders — b163/b164 congruence_inertia returns
+(n+, n0, n-); b165/b166 real_symmetric_inertia returns
+(n+, n-, n0). The literal string (4,4,0) means PSD in b164's
+landed fence and indefinite in b166's. AUDIT: every landed fence
+and note that prints an inertia triple (b134..b166), classify by
+helper, flag any cross-block quotation that mixes conventions;
+deliver a convention-map table. NO note edits — the map is the
+deliverable; any real misreads become narrowing items.
+
+Item 7 — THE T = 4 WRAP-ARTIFACT RE-READ: the 2 = -2 (mod 4)
+self-congruence contaminated three separate 8x4 results (the
+b164 E-mechanism; the b166 T4a linear term; the retracted b166
+T5b3). Re-read ALL landed T_phys = 4 distance-2 statements
+(b163's E2/E3 neighborhood especially) for wrap exposure;
+deliver an exposure table.
+
+Item 8 — THE NSIMPLIFY GREP: sympy.nsimplify corrupted exact
+Rationals in two separate worker routines (the b164 checker's
+first run; the b165 solve's PSD-deciding inertia). Grep the
+committed scripts/ chain for nsimplify; deliver the list + a
+hygiene note.
+
+Item 9 — THE CAUSAL-TIME R1-R3 JOINT TEST (spec from panel 4's
+causal-time lens, recorded in the campaign file): the c679
+Record/Born harness deformed through the gravity lane's positive
+region; prediction R1 pass / R2 pass / R3 Gram-fails-no-verdict-
+flip; falsifier = any verdict flip. Heavier; needs the c679
+contract pins; codex-suitable with the bounded-read discipline.
+
+Item 10 — THE LOCI ATLAS (the b162 G3 item, never
+checker-verified): the dimension bookkeeping of the named loci
+(L145/L147/L154 + the region projections) on one map.
+
+THE SCIENCE STATE AT HANDOFF (one paragraph for pool-2 context):
+the 153-166 chain closed every pairing class at four lattice
+sizes: the positive sector is an extensive, record-blind,
+slice-disconnected wall — matter-positivity exists at
+disconnected instants; the recorded geometry that would connect
+instants is exactly what positivity excludes (now a theorem for
+the whole holomorphic scalar-coupling class); the margin law
+m kappa_2 = 57/160; the two-cone intersection theorem exact.
+Every interpretation (constraint/problem-of-time, doubled-step
+Hamiltonian, Page-Wootters) deflated at tested scope; the
+CYCLE913 caution binds all forward language. The next moves are
+fixture-independent design questions (a different GENERATOR
+class; axiom-level rewiring) — the owner's bar.

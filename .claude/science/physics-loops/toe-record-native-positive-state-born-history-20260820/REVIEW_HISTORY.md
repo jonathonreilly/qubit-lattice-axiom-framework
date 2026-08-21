@@ -1150,3 +1150,18 @@ to the disposable worktree and will be discarded. This is proposal-delivery
 evidence only: no audit verdict was applied, and retention, obligation
 retirement, axiom status, and every TOE percentage remain unchanged. No
 review-loop was used.
+
+## Block 9 Remote Delivery — 2026-08-20T23:51-04:00
+
+The two-commit Block-9 branch was pushed and opened as PR
+[#7047](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7047).
+Remote verification reports `OPEN`, non-draft, `MERGEABLE`, and `CLEAN`, with
+the intended Block-8 base
+`physics-loop/toe-fixed-carrier-nondemolition-block8-20260820` and exact
+opening head `5f60d927b29d67c5f8b1fc3994e40f5fcbe1133e`. The science payload remains
+commit `b583a8c4012a3179624c0ef839b006106a7069fa`.
+
+This records proposal delivery only. Audit and retention remain unset;
+obligation retirement, axiom movement, and every TOE percentage remain zero.
+Block 10 starts from the final Block-9 delivery head on the physical
+effect-frame/Admissibility-descent fork. No review-loop was used.

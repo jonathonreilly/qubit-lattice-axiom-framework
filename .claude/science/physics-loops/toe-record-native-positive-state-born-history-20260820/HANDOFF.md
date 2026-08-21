@@ -277,5 +277,12 @@ evidence with `forensic_evidence_ready=true`, independent-helper discovery,
 and zero failures/control failures. The five-role panel also passes the
 ninth-PR cluster cap only because this block adds a genuinely new nonunitary
 construction and exact discriminator suite; it declares carrier-only work
-saturated. Generated audit surfaces are disposable. Push, stacked-PR creation,
-and remote verification remain before Block 10 starts.
+saturated. Generated audit surfaces are disposable, and no audit verdict was
+applied.
+
+Remote delivery is complete as PR
+[#7047](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7047),
+verified `OPEN`, non-draft, `MERGEABLE`, and `CLEAN` on the intended exact
+Block-8 branch at opening head
+`5f60d927b29d67c5f8b1fc3994e40f5fcbe1133e`. Begin Block 10 from the final
+Block-9 delivery head; do not reopen the saturated carrier-only seam.

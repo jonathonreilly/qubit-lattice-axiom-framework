@@ -262,3 +262,10 @@ further carrier-only work and requires Block 10 to move to the physical
 effect-frame/Admissibility seam. Audit status none, retained status none,
 obligation retirement zero, axiom movement zero, and TOE percentage movement
 zero remain binding.
+
+Remote proposal delivery is PR
+[#7047](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7047),
+verified `OPEN`, non-draft, `MERGEABLE`, and `CLEAN` on the exact Block-8
+branch. Its opening head is
+`5f60d927b29d67c5f8b1fc3994e40f5fcbe1133e`. Delivery does not alter the
+unset audit/retention status or the zero retirement, axiom, and TOE movement.

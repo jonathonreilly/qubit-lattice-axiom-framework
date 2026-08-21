@@ -231,7 +231,7 @@ PR #7037 is `OPEN`, non-draft, `MERGEABLE`, and `CLEAN` on exact Block-7 base
 `3a0372a927e2528b1186fc63fe48e368d5b4abf1`. Opening head was
 `85aefe7570c5cd73a361b23245d149eec8a64f8d`. No review-loop was used.
 
-## Block 9 — Proposal In Delivery
+## Block 9 — Proposal Delivered
 
 Branch:
 `physics-loop/toe-site-record-instrument-block9-20260820`, stacked on exact
@@ -260,5 +260,12 @@ failures/control failures. Both PR-diff caches are fresh. The five-role panel
 also serves as the ninth-PR cluster-cap evaluator and passes this genuinely new
 nonunitary/rank/type-discriminator block while closing the carrier-only seam.
 
-Pending delivery gates: push, stacked PR creation, and remote exact
-base/head/state verification. No review-loop is used.
+Opened and remotely verified:
+
+- [#7047 — terminal-center site-record boundary — bounded theorem — bounded
+  support](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7047)
+
+PR #7047 is `OPEN`, non-draft, `MERGEABLE`, and `CLEAN` on the intended exact
+Block-8 branch. Opening head was
+`5f60d927b29d67c5f8b1fc3994e40f5fcbe1133e`; the science payload remains
+`b583a8c4012a3179624c0ef839b006106a7069fa`. No review-loop is used.

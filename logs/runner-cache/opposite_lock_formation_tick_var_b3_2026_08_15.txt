@@ -1,0 +1,81 @@
+===== runner cache v1 =====
+runner: scripts/opposite_lock_formation_tick_var_b3_2026_08_15.py
+runner_sha256: 580ac34703ba7a6208a72bf88764f99d8e1e155211ee57d009a40f95f95f49d8
+input_fingerprint_sha256: af7b67a7b0e11c098e21c9c7f30d14b5b083678b703111a07ba221656465f58e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+opposite-lock formation-tick arrival-speed variance on formed B_3(0)
+AUDIT_INPUT_PATHS:
+  docs/OPPOSITE_LOCK_FORMATION_TICK_VAR_B3_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Arrival-speed variance of nsopp formation-tick on formed nonzero sites of B_3(0) is reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/OPPOSITE_LOCK_FORMATION_TICK_VAR_B3_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: source-audit-paths-are-static-literals
+PASS: host-is-b3-closed-ball
+PASS: two-site-seed-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: split-square-identity
+N_formed_nonzero=119
+N_speed=118
+Q=3817/7080
+var_truncated_18=0.047614192437711682
+unformed=[(-3, 0, 0), (0, 3, 0), (3, 0, 0)]
+tick_counts={0: 1, 1: 6, 2: 16, 3: 28, 4: 41, 5: 27}
+locks(1,0,0)=[(0, 0, -1), (0, 0, 1), (0, 1, 0)]
+PASS: seed-ticks-zero-locks-plus-e1-minus-e1
+PASS: formation-stays-in-host
+PASS: unformed-axis-and-plus-y-end  ([(-3, 0, 0), (0, 3, 0), (3, 0, 0)])
+PASS: uniqueness-not-required  ([(0, 0, -1), (0, 0, 1), (0, 1, 0)])
+PASS: perp-step-incoming-lock
+PASS: theorem1-n-formed-nonzero  (119)
+PASS: theorem1-origin-excluded
+PASS: theorem1-second-seed-included-at-t0
+PASS: theorem1-census-set-is-formed-nonzero
+PASS: theorem1-tick-counts  ({0: 1, 1: 6, 2: 16, 3: 28, 4: 41, 5: 27})
+PASS: theorem1-t0-only-second-seed
+PASS: theorem1-axis-tick
+PASS: theorem1-formed-plus-unformed-is-host
+PASS: theorem2-n-speed  (118)
+PASS: theorem2-second-seed-excluded-from-speed
+PASS: theorem2-second-moment  (3817/7080)
+PASS: theorem2-mean-linear  ({1: Fraction(157, 708), 2: Fraction(32, 295), 5: Fraction(113, 1770), 3: Fraction(5, 177), 6: Fraction(97, 1770)})
+PASS: theorem2-var-coeff  ({1: Fraction(1777919, 4177200), 2: Fraction(-999, 17405), 5: Fraction(-17741, 626580), 3: Fraction(-56873, 1566450), 6: Fraction(-19069, 626580), 10: Fraction(-3616, 261075), 15: Fraction(-113, 31329), 30: Fraction(-10961, 1566450)})
+PASS: theorem2-var-not-rational
+PASS: theorem2-truncated-18  (0.047614192437711682)
+PASS: identity-var-equals-q-minus-mean-square
+PASS: cardinality-not-one-site-clone  (one N=120 Q=22481/54000)
+PASS: not-perp-seed-variance-reprint  (perp N_formed=120 Q=49223/85680)
+PASS: mutation-drop-perp-changes-formed-count  (free N_formed_nonzero=122)
+PASS: q-is-euclidean-square-not-abs-sum
+PASS: no-larger-ball
+PASS: identity-two-equal-tick-speeds  ({1: Fraction(1, 2), 2: Fraction(1, 2)})
+PASS: note-claim-scope
+PASS: note-reports-formed-count-and-ticks
+PASS: note-reports-variance
+PASS: note-displayed-not-adopted
+PASS: note-cardinality-not-clone
+PASS: note-not-perp-seed-reprint
+PASS: note-forbids-enlargement-and-cache
+PASS: note-does-not-attach-formation-member
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: source-formation-is-perp-step-queue
+per_element: |x|_2/t at each formed nonzero site with t>0
+per_site: scored on Euclidean B_3(0) formed nonzero sites only
+per_mode: no spectral or mode calculation is executed on this finite host
+per_block: one population variance of arrival speed
+lattice_wide: checked and not executed — no lattice-wide speed law is claimed
+TOTAL: PASS=49 FAIL=0
+
+----- stderr -----
+

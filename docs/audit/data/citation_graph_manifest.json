@@ -1,6 +1,6 @@
 {
- "edge_count": 15752,
- "node_count": 5558,
+ "edge_count": 15753,
+ "node_count": 5559,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -13257,6 +13257,10 @@
   "nspt_high_order_lattice_alpha_n_coefficient_external_narrow_theorem_note_2026-05-16": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "nssame_sametick_neighbor_lock_vector_reverse_face_bounded_theorem_note_2026-08-15": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "observable_generator_additivity_from_cluster_decomposition_theorem_note_2026-05-10": {
    "deps_hash": "d522a9c08709",

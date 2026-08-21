@@ -1,0 +1,70 @@
+===== runner cache v1 =====
+runner: scripts/nnseed_formdraw_kernel_pvm_letter_reverse_face_2026_08_15.py
+runner_sha256: 05a85bced798a940c9f4f90e967f98128866e9d9a55886dccfcf003568509859
+input_fingerprint_sha256: 473c3d910d08c66722e36567b8e4b0f9d85943fe5a4c2d702856bdab3453b847
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+formdraw occupancy-kernel PVM-letter reverse/face on four nnseed probes
+AUDIT_INPUT_PATHS:
+  docs/NNSEED_FORMDRAW_KERNEL_PVM_LETTER_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Reverse and face from formdraw occupancy-kernel PVM letters on the four nnseed probes, or UNDEFINED, are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/NNSEED_FORMDRAW_KERNEL_PVM_LETTER_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-probes-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: named-pvm-rank1-projectors
+PASS: named-pvm-traces-k1
+PASS: named-pvm-letters-are-plus-minus
+A n=(-1/3,1/3,0) k=2 abc=(-1,1,0) L={+,−} incoming=[(0, -1, 0)]
+B n=(-1/3,0,-1/3) k=2 abc=(-1,0,-1) L={+,−} incoming=[(0, 0, 1), (1, 0, 0)]
+C n=(-1/3,0,0) k=1 abc=(-1,0,0) L={+,−} incoming=[(1, 0, 0)]
+D n=(-1/3,0,0) k=1 abc=(-1,0,0) L={+,−} incoming=[(1, 0, 0)]
+PASS: theorem1-n-A  ((Fraction(-1, 3), Fraction(1, 3), Fraction(0, 1)))
+PASS: theorem1-n-B  ((Fraction(-1, 3), Fraction(0, 1), Fraction(-1, 3)))
+PASS: theorem1-n-C  ((Fraction(-1, 3), Fraction(0, 1), Fraction(0, 1)))
+PASS: theorem1-n-D  ((Fraction(-1, 3), Fraction(0, 1), Fraction(0, 1)))
+PASS: theorem1-letters-all-plus-minus
+PASS: n-nonzero-assigns-both-letters
+PASS: hamiltonian-square-matches-k
+PASS: incoming-locks-are-nn-steps-not-letters
+PASS: uniqueness-not-required  ([(0, 0, 1), (1, 0, 0)])
+PASS: two-site-seed-locks
+combos=16 reverse_hits=4 face_hits=4
+reverse=some face=some
+PASS: theorem2-reverse-some  (some)
+PASS: theorem3-face-some  (some)
+PASS: letters-do-not-feed-occupancy
+PASS: n-independent-of-letter-branch
+PASS: mutation-identify-incoming-sign-is-refused
+PASS: mutation-minus-as-vacant-changes-n
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: not-t-as-comparator
+PASS: note-claim-scope
+PASS: note-reports-n-and-letters
+PASS: note-reports-some-some
+PASS: note-displayed-not-adopted
+PASS: note-does-not-identify-incoming
+PASS: note-does-not-feed-n-or-attach-formation-member
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+TOTAL: PASS=44 FAIL=0
+
+----- stderr -----
+

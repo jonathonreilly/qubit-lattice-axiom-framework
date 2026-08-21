@@ -1,0 +1,90 @@
+===== runner cache v1 =====
+runner: scripts/three_site_zprobe_own_incoming_lock_vector_reverse_face_2026_08_15.py
+runner_sha256: 51fe6bb3b04335940f0fe54f2fdaa61d4f1c029bfc9ad1ae2edd33748a5e5d5a
+input_fingerprint_sha256: 6c148e1816e1c96a981e214110c69d7b36c597df475dff4e5429fb4103431c8f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+own unique incoming lock vector reverse/face on three-site z-probes
+AUDIT_INPUT_PATHS:
+  docs/THREE_SITE_ZPROBE_OWN_INCOMING_LOCK_VECTOR_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Reverse and face from the probe's own unique incoming lock vector on the four three-site z-probes are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/THREE_SITE_ZPROBE_OWN_INCOMING_LOCK_VECTOR_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-z-probes-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: unique-own-incoming-letter-identity
+PASS: reverse-face-identity
+A t=1 incoming=[+e_3] L=+e_3
+B t=2 incoming=[+e_2,+e_1] L=UNDEFINED
+C t=4 incoming=[+e_2,+e_1] L=UNDEFINED
+D t=1 incoming=[+e_3] L=+e_3
+reverse=UNDEFINED face=UNDEFINED
+per_element: unique letter is the probe's own singleton earliest incoming lock vector in {±e_i}, else UNDEFINED
+per_site: scored only at z-probes A,B,C,D on Euclidean B_3(0); no other sites
+per_mode: no spectral or mode calculation is executed on this finite host
+per_block: four unique lock vectors plus reverse/face as hold, fail, or UNDEFINED
+lattice_wide: checked and not executed — no lattice-wide lettering rule is claimed
+PASS: theorem1-A-own-incoming-letter  (([(0, 0, 1)], (0, 0, 1)))
+PASS: theorem1-B-own-incoming-letter  (([(0, 1, 0), (1, 0, 0)], 'UNDEFINED'))
+PASS: theorem1-C-own-incoming-letter  (([(0, 1, 0), (1, 0, 0)], 'UNDEFINED'))
+PASS: theorem1-D-own-incoming-letter  (([(0, 0, 1)], (0, 0, 1)))
+PASS: theorem1-A-is-not-seed
+PASS: theorem1-B-mixed-incoming-not-singleton
+PASS: theorem1-C-mixed-incoming-not-singleton
+PASS: theorem2-reverse-undefined  (UNDEFINED)
+PASS: theorem3-face-undefined  (UNDEFINED)
+PASS: not-nstriz-neighbor-lock-leftover
+PASS: not-nstriyown-y-probes
+PASS: not-nstriown-x-probes
+PASS: not-nsopzown-two-site-z-probes
+PASS: not-ownvec-nnseed
+PASS: not-nnlock-named-sign
+PASS: incoming-locks-are-nn-steps
+PASS: uniqueness-not-required  (([(0, 0, 1)], [(0, 1, 0), (1, 0, 0)], [(0, 1, 0), (1, 0, 0)], [(0, 0, 1)]))
+PASS: three-site-seed
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: perp-step-incoming-lock
+PASS: mutation-empty-incoming-undefined
+PASS: mutation-mixed-incoming-undefined
+PASS: mutation-nstriz-leftover-reverse-would-fail
+PASS: mutation-nstriz-leftover-face-would-fail
+PASS: mutation-nsopzown-reverse-would-fail
+PASS: mutation-nstriyown-letter-a-would-be-minus-e1
+PASS: note-claim-scope
+PASS: note-reports-own-incoming-letters
+PASS: note-reports-undefined-undefined
+PASS: note-displayed-not-adopted
+PASS: note-does-not-use-occupancy-or-neighbor-locks
+PASS: note-not-sign-lettering
+PASS: note-not-nstriz-leftover
+PASS: note-not-nstriyown-y-probes
+PASS: note-not-nstriown-x-probes
+PASS: note-not-nsopzown-two-site
+PASS: note-not-ownvec-different-seed
+PASS: note-does-not-attach-formation-member
+PASS: note-forbids-enlargement-and-cache
+PASS: note-no-star-dijkstra-gram-occupancy
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+PASS: source-letter-from-own-incoming-only
+TOTAL: PASS=60 FAIL=0
+
+----- stderr -----
+

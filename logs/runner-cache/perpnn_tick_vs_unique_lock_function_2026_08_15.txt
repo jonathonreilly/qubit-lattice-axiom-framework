@@ -1,0 +1,50 @@
+===== runner cache v1 =====
+runner: scripts/perpnn_tick_vs_unique_lock_function_2026_08_15.py
+runner_sha256: 2e9190e96d29cc289090ea1dbb477e81a1011cfc117597b911031a082bd30c30
+input_fingerprint_sha256: 12a28aaf9f04356df48eb0ed1f4c4c08ba0e1357aafe88c4c63cdd17d5d8beec
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+perpnn tick vs unique-lock function on B_3(0)
+AUDIT_INPUT_PATHS:
+  docs/PERPNN_TICK_VS_UNIQUE_LOCK_FUNCTION_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Whether formation-tick is a function of unique earliest incoming lock on the perpnn unique-lock sites of B_3(0) is reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/PERPNN_TICK_VS_UNIQUE_LOCK_FUNCTION_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+host=123 formed=121 unique_lock_sites=51
+letter_counts: +e_1=14, -e_1=13, +e_2=6, -e_2=6, +e_3=6, -e_3=6
+t_is_function_of_L=no
+witness (-2,-2,0) -e_1 t=4; (-1,-1,0) -e_1 t=2
+displayed_witness (0,1,0) +e_2 t=1; (0,3,0) +e_2 t=5
+locks(1,0,0)=[(0, -1, 0), (0, 0, -1), (0, 0, 1), (0, 1, 0)]
+PASS: host-is-b3-closed-ball
+PASS: theorem1-unique-lock-set-includes-seed  (N=51 seed=((1, 0, 0), 0))
+PASS: theorem1-map-letters-are-unit-steps
+PASS: theorem1-uniqueness-not-required  ([(0, -1, 0), (0, 0, -1), (0, 0, 1), (0, 1, 0)])
+PASS: theorem2-t-is-not-a-function-of-L  (not-function)
+PASS: theorem2-witness-pair-same-letter-different-tick  (((-2, -2, 0), (-1, -1, 0), (-1, 0, 0), 4, 2))
+PASS: theorem2-displayed-witness-010-030  (((0, 1, 0), 1) vs ((0, 1, 0), 5))
+PASS: theorem2-not-an-artifact-of-including-seed
+PASS: seed-origin-tick-zero-lock-plus-e1
+PASS: formation-stays-in-host
+PASS: formation-uses-earliest-tick-queue
+PASS: note-claim-scope
+PASS: note-reports-unique-map
+PASS: note-reports-witness
+PASS: note-displayed-not-adopted
+PASS: note-content-alone-consequence
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-machine-status-no-axiom-edit
+PASS: source-audit-paths-are-static-literals
+TOTAL: PASS=24 FAIL=0
+
+----- stderr -----
+

@@ -1036,3 +1036,132 @@ Block-7 base `3a0372a927e2528b1186fc63fe48e368d5b4abf1` and opening head
 `85aefe7570c5cd73a361b23245d149eec8a64f8d`. The proposal remains unaudited;
 delivery does not retire an obligation or move an axiom or TOE percentage. No
 review-loop was used.
+
+## Cycle 18 — Block 9 Five-Physicist Panel — 2026-08-20T22:40--23:29-04:00
+
+The panel ran in two waves with five distinct roles: quantum-information and
+operator algebra; foundations/Record/Born typing; locality/resources/global
+law; cold mathematical no-go compliance; and governance/portfolio leverage.
+All early snapshots returned `REVISE`, never `KILL`. The corrected final
+bounded science passes.
+
+Material corrections caused by the panel:
+
+1. Program, freshness flag, and environment are supplied Hilbert factors, not
+   framework Records; the flag is a one-shot guard, not physical fuel.
+2. Exact output claims are limited to definite A/B program atoms. A coherent
+   program retains a supplied coherent Kraus alignment and is not classical
+   program selection.
+3. The inactive statement is exactly one 28-dimensional Hilbert subspace and
+   its 784-dimensional operator algebra, not global malformed/overlap
+   totality.
+4. The integrated terminal dual identity is explicit. Permanence is under the
+   isolated reduced channel, not an interleaved lattice law or reversible
+   dilation.
+5. Total Choi rank four and active formation rank three are independently
+   checked for both the simple and integrated channels. Seven qubit tensor
+   factors are a capacity count, not a spatial star or NN compiler.
+6. The environment is a Stinespring branch output/sink candidate. Export,
+   no-return transport, reuse, and renewal are unproved.
+7. `kappa(j)` are candidate contents. Absence is outside the partial decoder;
+   a uniform menu supplies support only. The diagonal table is stipulated and
+   requires target formation, actual Admissibility legality, and separately
+   supplied law-admissible realized membership.
+8. The tag boundary is the self-contained two-point fibre witness in equation
+   (6a); tagged kernels and support-restricted sentinels remain live.
+9. Equal marginals do not force diagonal support, and positive support does
+   not force weights. Neither is widened into a universal no-go.
+10. The current-main no-go packet now has eight mechanism-distinct ATTEMPTED
+    routes, exact retained minimal-axiom type/target citations per row,
+    current proposal witnesses kept nonretained, a conjunctive `W_L`, exact
+    residual matching, an actionable steelman, and four cross-cycle echoes.
+11. The primary input fingerprint covers the complete 29-file recursive local
+    import chain. The independent checker rebuilds the effects/programs and
+    does not import Block 9.
+
+Final evidence: primary `19/19` with 5,399-byte stdout; independent `14/14`;
+both canonical caches fresh after final note stabilization. The panel's
+formal/scientific verdict is `PASS` for delivery as a bounded proposal once
+campaign surfaces and repository delivery gates pass. Audit, retention,
+obligation retirement, axiom status, and TOE scores remain unchanged.
+
+### Portfolio decision
+
+The Record/Born campaign remains the best available non-gravity campaign, but
+the isolated carrier/dilation/rank subroute is saturated. Block 9 executes the
+finite nonunitary escape and prices it; it does not execute the stronger
+homogeneous strict-NN site-Record law. Block 10 is the physical effect-frame
+registration / Admissibility-descent fork: derive a lawful typed site event,
+physical menu exhaustivity, effect/preparation descent, and normalized
+refinement/coarse-graining, then reuse existing forcing plus Block-7
+tomography to prove Eq. (5), or isolate the exact missing extension with total
+laws agreeing on every property the physical site law actually derives.
+
+Do not repeat Gleason/Busch, stipulate trace/effect functionality, use only a
+host A/B table, rename a pointer a Record, demand a wrong-effect twin under an
+already forcing-complete quotient, or repeat a generic sampled-law pair.
+Re-run five roles on the first material Block-10 return, two hours without
+TOE-level progress, any axiom-pressure pivot, and at least every four hours.
+No review-loop was used.
+
+### Latest external PR landscape
+
+The externally owned gravity/Dirac--Kahler stack has advanced through clean
+stacked PRs [#7042](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7042)
+and [#7046](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7046).
+Block 160 splits the flat calibration gap into a mass-channel diagonality
+theorem and a connection-channel weight/centring coincidence. Block 161's
+validation battery kills the proposed positive door by exact parity
+decoupling, narrows the theta-prime blindness claim, and preserves three
+bounded structures: a scoped blindness theorem, staggered/taste structure,
+and a mass-survival sublocus. The PR itself reports no axiom retirement or TOE
+movement. This is significant gravity route correction but not a positively
+retained gravity/source/rate/lapse completion, so it does not displace the
+Block-10 Record/Born central-law fork. No files from that stack are modified
+here.
+
+## Block 9 Cluster-Cap And Committed-Tree Gate — 2026-08-20T23:47-04:00
+
+Because Block 9 is the ninth PR in one stacked Record/Born family, the
+five-role panel also served as the required judgment-based cluster-cap
+evaluator. It passes this block for delivery because the delta is not another
+corollary or pointer variant: it supplies the first exact total nonunitary
+absorbing construction in the stack, proves the integrated dual and the
+separate total/active rank costs, and resolves carrier, tag, coupling, and
+support discriminators. The same evaluator declares the finite carrier/
+dilation/rank seam saturated and redirects Block 10 to physical effect-frame
+registration and Admissibility descent. A tenth carrier-only PR would fail
+this cap.
+
+Science commit `b583a8c4012a3179624c0ef839b006106a7069fa` was replayed from
+exact Block-8 delivery base
+`476833c22c2cc9e8280ef37badebbe5ca70951e5` in a detached disposable
+worktree. The full fixed-point pipeline completed through checkpoint
+`78ad809971aa62d4a9b5a23572f1bbdb`. Strict audit lint checked 4,905 rows with
+ten warnings and zero errors. The committed-delta gate examined 19 changed
+paths and one claim, reported `forensic_evidence_ready=true`, discovered the
+independent checker in addition to the complete 29-helper primary dependency
+set, and found zero failures and zero control failures. The PR-diff cache gate
+found both changed runners fresh, and the committed diff has no whitespace
+errors.
+
+Generated ledger, queue, graph cache, and derived audit surfaces are confined
+to the disposable worktree and will be discarded. This is proposal-delivery
+evidence only: no audit verdict was applied, and retention, obligation
+retirement, axiom status, and every TOE percentage remain unchanged. No
+review-loop was used.
+
+## Block 9 Remote Delivery — 2026-08-20T23:51-04:00
+
+The two-commit Block-9 branch was pushed and opened as PR
+[#7047](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7047).
+Remote verification reports `OPEN`, non-draft, `MERGEABLE`, and `CLEAN`, with
+the intended Block-8 base
+`physics-loop/toe-fixed-carrier-nondemolition-block8-20260820` and exact
+opening head `5f60d927b29d67c5f8b1fc3994e40f5fcbe1133e`. The science payload remains
+commit `b583a8c4012a3179624c0ef839b006106a7069fa`.
+
+This records proposal delivery only. Audit and retention remain unset;
+obligation retirement, axiom movement, and every TOE percentage remain zero.
+Block 10 starts from the final Block-9 delivery head on the physical
+effect-frame/Admissibility-descent fork. No review-loop was used.

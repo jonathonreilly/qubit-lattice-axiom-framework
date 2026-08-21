@@ -372,3 +372,40 @@ regional probability typing is absent. Kill it on hidden reset/sink, host
 scheduling, partial overlap behavior, unlawful multi-site Records, or
 permanence proved only for a chosen subset of future updates. No axiom edit is
 mature.
+
+## Post-Block-9 Portfolio Recheck
+
+Block 9 executes the finite nonunitary escape but does not execute the selected
+homogeneous strict-NN site-Record law. It gives an exact total idempotent
+absorbing Hilbert channel, the integrated definite-program/freshness-flag
+form, atomwise subharmonicity, total/active ranks `4/3`, and the exact `C4`
+blank-plus-ternary carrier cost. It also separates candidate-code support,
+stipulated diagonal support, Admissibility marginal equality, formation, and
+realized membership. These are useful route facts, but no framework Record is
+formed and no obligation is retired.
+
+The five-role panel concludes that further isolated pointer, register,
+dilation, or rank work is saturated. The best non-gravity TOE seam remains the
+Record/Born lane, but its next object is a physical effect-frame registration /
+Admissibility-descent fork:
+
+```text
+lawful typed site event and exhaustive physical candidate menu
+  -> same-effect descent across programs after lawful tag/randomizer screening
+  -> preparation descent plus normalized refinement/coarse-graining
+  -> existing conditional forcing theorem + Block-7 tomography
+  -> Eq. (5), or an exact missing-extension discriminator.
+```
+
+The negative fork compares total site laws only on the equivalences,
+refinements, formation, support, and permanence actually derived by the
+physical law. If a trace and wrong-effect pair survives, it must identify the
+missing extension toward the known forcing surface: effect functionality,
+menu exhaustivity/normalization, or preparation identification. It must not
+demand such twins after an already forcing-complete quotient.
+
+This outranks another global sampled law, which duplicates Blocks 64/84/87,
+and the increasing-archive route, which imports capacity/time without
+selecting weights. Kill Block 10 if it restates Gleason/Busch, stipulates trace
+or effect functionality, uses only a host-side A/B table, renames a pointer a
+Record, or repeats a generic law pair. No axiom amendment is mature.

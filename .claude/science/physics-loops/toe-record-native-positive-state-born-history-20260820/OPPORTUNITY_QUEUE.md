@@ -37,3 +37,22 @@ Ranking after the full five-physicist Block-8 panel. Scores remain ordinal
 
 Recheck at the first Block-9 executable, two hours of no TOE-level progress,
 any axiom-pressure pivot, and at least every four hours with five roles.
+
+## Post-Block-9 Queue
+
+Ranking after the full five-role Block-9 panel. Scores remain ordinal `0..3`;
+gravity remains externally owned.
+
+| Rank | Target | Positive probability | Import pressure | Verification | Landability | TOE leverage | Disposition |
+|---:|---|---:|---:|---:|---:|---:|---|
+| 1 | physical effect-frame registration / Admissibility descent | 3 | 3 | 3 | 2 | 3 | **selected Block 10 fork**; derive same-effect, preparation, refinement, and normalization properties from one lawful typed site event/menu, then reuse existing forcing |
+| 2 | exact missing-extension hostile pair | 3 | 2 | 3 | 3 | 3 | paired branch of rank 1; agree on every property actually derived by the physical site law and isolate effect functionality, exhaustivity/normalization, or preparation identification |
+| 3 | autonomous site-Record formation/overlap/resource law | 2 | 3 | 2 | 1 | 3 | still required end to end, but another supplied global kernel is duplicate-prone and does not select weights |
+| 4 | actual-member correlation | 2 | 3 | 2 | 1 | 3 | separate connector after formation, legality, coupling membership, and central equality |
+| 5 | increasing archive/indexed QCA | 2 | 3 | 2 | 1 | 2 | live resource escape, demoted because it imports unbounded capacity/time without advancing central selection |
+| 6 | further isolated carrier/dilation/rank work | 0 | 1 | 3 | 3 | 0 | **stop**; Block 9 saturates the finite nonunitary carrier seam |
+| 7 | axiom amendment | 1 | 3 plus owner | 2 | 1 | 3 | watch only; first identify whether one or two downstream law clauses are missing, then require audit/necessity/minimality |
+
+Recheck at Block-10's first physical-law return, two hours without TOE-level
+progress, any axiom-pressure pivot, and at least every four hours with five
+roles.

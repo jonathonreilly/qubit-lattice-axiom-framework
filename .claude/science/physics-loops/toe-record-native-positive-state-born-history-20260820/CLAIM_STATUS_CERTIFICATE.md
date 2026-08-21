@@ -210,3 +210,62 @@ verified `OPEN`, non-draft, `MERGEABLE`, and `CLEAN` on exact Block-7 base
 `3a0372a927e2528b1186fc63fe48e368d5b4abf1`. Opening head was
 `85aefe7570c5cd73a361b23245d149eec8a64f8d`; the science payload remains commit
 `4195f59a95f9fc4dbca0baa042431b54817699a3`.
+
+## Block 9 Local Conditional Return
+
+Claim:
+`terminal_center_site_record_diagonal_commit_minimal_carrier_boundary_bounded_theorem_note_2026-08-20`.
+
+Current surface status: `bounded-support`. Target claim type:
+`bounded_theorem`. Audit and retained status are unset.
+
+The exact supplied A/B instruments admit total idempotent four-sector
+absorbing channels and one fixed definite-program/freshness-flag integrated
+channel. The complete 28-dimensional inactive Hilbert subspace operator
+algebra and terminal algebra are fixed; terminal atoms are subharmonic. Total
+Choi rank is four and active formation rank is three for the simple and
+integrated forms. `C4` is minimal only for the fixed endomorphic blank-plus-
+three-orthogonal-sector target. The specified tag-forgetting transition does
+not factor through its bare-`M2` fibre.
+
+The three `M2` matrices are candidate contents only. The uniform menu proves
+support compatibility only for that supplied menu. The diagonal joint table
+is stipulated and conditional on formation, actual Admissibility legality,
+and law-admissible realized membership. Equal marginals permit mismatch, and
+positive support permits non-trace weights. No site-formation kernel, central
+Admissibility equality, actual member, spatial NN law, overlap arbitration,
+resource renewal/time, or axiom amendment is supplied.
+
+The five-role panel's corrected final verdict is bounded-science `PASS`.
+Primary `19/19`, independent `14/14`, and both final input-pinned caches are
+fresh. The no-go packet passes after all eight ATTEMPTED routes cite retained
+type/target premises separately from current proposal witnesses. This is
+proposal evidence only: audit status none, retention none, obligation
+retirement zero, and TOE percentage movement zero.
+
+## Block 9 Committed-Tree Delivery Evidence
+
+Science commit `b583a8c4012a3179624c0ef839b006106a7069fa` was replayed on
+exact Block-8 delivery base `476833c22c2cc9e8280ef37badebbe5ca70951e5`.
+The full fixed-point pipeline completed through checkpoint
+`78ad809971aa62d4a9b5a23572f1bbdb`; strict lint checked 4,905 rows with ten
+warnings and zero errors. The committed-delta gate examined 19 changed paths
+and one claim, reported `forensic_evidence_ready=true`, discovered the
+independent helper, and found zero failures/control failures. Both changed
+runner caches are fresh. Generated audit surfaces are disposable and no audit
+verdict was applied.
+
+The ninth-PR cluster-cap judgment passes Block 9 because its exact nonunitary
+channel, integrated dual, rank/resource accounting, and carrier/tag/coupling/
+support discriminators are new load-bearing content. It simultaneously closes
+further carrier-only work and requires Block 10 to move to the physical
+effect-frame/Admissibility seam. Audit status none, retained status none,
+obligation retirement zero, axiom movement zero, and TOE percentage movement
+zero remain binding.
+
+Remote proposal delivery is PR
+[#7047](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7047),
+verified `OPEN`, non-draft, `MERGEABLE`, and `CLEAN` on the exact Block-8
+branch. Its opening head is
+`5f60d927b29d67c5f8b1fc3994e40f5fcbe1133e`. Delivery does not alter the
+unset audit/retention status or the zero retirement, axiom, and TOE movement.

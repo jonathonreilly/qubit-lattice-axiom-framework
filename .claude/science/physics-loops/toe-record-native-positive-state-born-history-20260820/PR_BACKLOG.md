@@ -230,3 +230,42 @@ Opened and remotely verified:
 PR #7037 is `OPEN`, non-draft, `MERGEABLE`, and `CLEAN` on exact Block-7 base
 `3a0372a927e2528b1186fc63fe48e368d5b4abf1`. Opening head was
 `85aefe7570c5cd73a361b23245d149eec8a64f8d`. No review-loop was used.
+
+## Block 9 — Proposal Delivered
+
+Branch:
+`physics-loop/toe-site-record-instrument-block9-20260820`, stacked on exact
+Block-8 delivery head `476833c22c2cc9e8280ef37badebbe5ca70951e5`.
+
+Current corrected local validation: primary `PASS=19 FAIL=0`, independent
+`PASS=14 FAIL=0`, both compile, and both final content/input-pinned caches are
+fresh. The primary fingerprint covers all 29 recursively loaded local helper
+modules. The citation graph discovers the independent helper and the manifest
+is regenerated.
+
+The full five-role panel passes the bounded science after correcting
+program/flag/environment typing, active/total ranks, integrated atom duals,
+spatial and export overclaims, candidate-content/formation/actuality scope,
+tag-factorization scope, coupling/support hostiles, and the current-main
+N1--N8 packet. This is a finite absorbing Hilbert-channel and type/resource
+discriminator, not a homogeneous strict-NN site-Record law. Audit, retention,
+obligation retirement, axiom status, and TOE movement remain zero.
+
+Science commit `b583a8c4012a3179624c0ef839b006106a7069fa` now passes the
+detached committed-tree fixed-point pipeline through checkpoint
+`78ad809971aa62d4a9b5a23572f1bbdb`, strict lint over 4,905 rows with zero
+errors, and the 19-path/one-claim committed-delta gate with
+`forensic_evidence_ready=true`, independent-helper discovery, and zero
+failures/control failures. Both PR-diff caches are fresh. The five-role panel
+also serves as the ninth-PR cluster-cap evaluator and passes this genuinely new
+nonunitary/rank/type-discriminator block while closing the carrier-only seam.
+
+Opened and remotely verified:
+
+- [#7047 — terminal-center site-record boundary — bounded theorem — bounded
+  support](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7047)
+
+PR #7047 is `OPEN`, non-draft, `MERGEABLE`, and `CLEAN` on the intended exact
+Block-8 branch. Opening head was
+`5f60d927b29d67c5f8b1fc3994e40f5fcbe1133e`; the science payload remains
+`b583a8c4012a3179624c0ef839b006106a7069fa`. No review-loop is used.

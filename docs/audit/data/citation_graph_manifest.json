@@ -1,6 +1,6 @@
 {
  "edge_count": 16109,
- "node_count": 5591,
+ "node_count": 5592,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -605,6 +605,10 @@
   "admissibility_dirac_kahler_sign_layer_comparison_bounded_theorem_note_2026-08-20": {
    "deps_hash": "7ab1d0a47e2a",
    "out_degree": 4
+  },
+  "admissibility_dirac_kahler_site_reflection_channel_bounded_theorem_note_2026-08-21": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_dirac_kahler_sourced_quotient_execution_bounded_theorem_note_2026-08-17": {
    "deps_hash": "7d2c967c528b",

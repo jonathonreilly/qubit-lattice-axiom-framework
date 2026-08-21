@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/three_site_zprobe_neighbor_vector_reverse_face_2026_08_15.py
+runner_sha256: 9e156a6b4eca9ad4ca0f096510239ad447307c7a03caaa45890bb7407bc91e82
+input_fingerprint_sha256: f1a205ff66aae288d76996be912be6389a3e4e75dbdfdaabad218bdebb033ea6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+host: Euclidean B_3(0)={n:n·n<=9}
+seed t=0: 0 lock +e_1, (0,1,0) lock -e_1, (1,0,0) lock +e_2
+T1 A (0, 0, 1) t 1 neighbors ((0, 0, 0),) locks ('+e_1',) letter +e_1
+T1 B (1, 1, 1) t 2 neighbors ((0, 1, 1), (1, 0, 1)) locks ('+e_3', '+e_3') letter +e_3
+T1 C (0, 0, 2) t 4 neighbors ((-1, 0, 2), (0, -1, 2), (0, 0, 1)) locks ('+e_3', '+e_3', '+e_3') letter +e_3
+T1 D (1, 0, 1) t 1 neighbors ((1, 0, 0),) locks ('+e_2',) letter +e_2
+T2 reverse fail
+T3 face fail
+PASS: audit-input-paths declared inputs are exactly the note and current axiom
+PASS: euclidean-ball host is the integer Euclidean ball of squared radius 9 with 123 sites
+PASS: three-site-seed tick-0 records are origin +e_1, (0,1,0) -e_1, and (1,0,0) +e_2
+PASS: z-probes-not-x-or-y-lists the four z-probes are A=(0,0,1), B=(1,1,1), C=(0,0,2), D=(1,0,1)
+PASS: probe-A-not-seed A is not a seed; its already-recorded 6-NN is the origin at tick 0
+PASS: probe-B-unique-e3 B forms at tick 2 with already-recorded neighbor locks both +e_3
+PASS: probe-C-unique-e3 C forms at tick 4 with unique already-recorded neighbor lock +e_3
+PASS: probe-D-unique-e2 D forms at tick 1 with unique already-recorded neighbor lock +e_2
+PASS: incoming-uniqueness-not-required B and C are occupied with two distinct incoming steps, yet neighbor letters are unique
+PASS: reverse-fail reverse is defined and fails: +e_1 + +e_3 is not zero
+PASS: face-fail face is defined and fails: +e_3 + +e_2 is not zero
+PASS: note-reports-letters the note reports the four computed letters and reverse/face statuses
+PASS: displayed-not-adopted reverse and face are displayed and not adopted into Admissibility
+PASS: claim-scope the note claim_scope matches the reported unique-vector reverse/face display
+PASS: not-x-y-leftover-not-two-site C is +e_3 and D is +e_2 on three-site z-probes, not x/y leftovers or two-site nsopz
+PASS: axiom-boundary Lattice nearest-neighbor wording is read and the axiom file is not rewritten
+PASS: hygiene-forbidden-phrases note omits forbidden gravity, coinage, search, and projector phrases
+PASS: no-l1-attachment the note does not attach an L1 rule and names no larger ball
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

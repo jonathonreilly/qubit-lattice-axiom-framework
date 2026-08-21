@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/fresh_ancilla_staged_cq_record_intertwiner_conditional_completion_independent_check_2026_08_20.py
+runner_sha256: a97dafada060d3e1a00781b6dcc74e4c607040f37d6fe202ae0fb77c6ecb06bf
+input_fingerprint_sha256: 4dcb0e1ca5066d95e56b0a93cbba7139310418f39d9642f490b829d9ec827f0b
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 1.66
+status: ok
+----- stdout -----
+PASS [independent-source-and-scope] positive channel result and negative one-site boundary are scoped separately
+PASS [independent-exact-menu-normalization] manual Q(sqrt(2)) effects are positive rank-one resolutions
+PASS [independent-Kraus-normalization] manual Lüders operators give normalized A/B instruments with a shared K0
+PASS [independent-fixed-branch-recovery] all fixed branch operators and rational traces are rebuilt independently
+PASS [independent-staged-fresh-copy] both binary stages factor and copy to fresh orthogonal labels; an explicit append-aware isometry independently realizes memory words 000,110,111
+PASS [independent-symbolic-path-intertwiner] the staged path and flat ternary channels agree for a symbolic Hermitian input
+PASS [independent-central-masses] {'A': (3/10, 19/50, 8/25), 'B': (3/10, 7/20, 7/20)}
+PASS [independent-effect-complete-tomography] the four preparations independently force every A/B branch effect exactly
+PASS [independent-wrong-effect-control] {'single_preparation_full_cq_match': True, 'fixed_state_control_is_affine_cp_tp': True, 'spanning_family_rejects': True}
+PASS [independent-coherent-label-control] diagonal label tomography is blind to coherent pointer offdiagonals, while label X/Y controls reject them
+PASS [independent-tag-screened-affinity] the explicit channel is affine after the supplied tag is forgotten
+PASS [independent-one-site-capacity] binary/ternary full cq algebras exceed one-M2 capacity for faithful complex-linear/*-algebraic representations while two-/three-qubit multisite representations suffice
+PASS [independent-real-affine-counterroute] an explicit normalized-binary real-affine coordinate injection into non-Hermitian M2 defeats a broader affine no-go; the normalized ternary affine hull has dimension eleven
+PASS [independent-boundary-ledger] the exact missing compatibility is named without an axiom-necessity claim
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

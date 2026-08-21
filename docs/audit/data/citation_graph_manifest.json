@@ -1,6 +1,6 @@
 {
- "edge_count": 15785,
- "node_count": 5564,
+ "edge_count": 15790,
+ "node_count": 5565,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -5249,6 +5249,10 @@
   "free_staggered_two_step_dispersion_d_dimensional_narrow_theorem_note_2026-06-12": {
    "deps_hash": "d1da2f9855ac",
    "out_degree": 2
+  },
+  "fresh_ancilla_staged_cq_record_intertwiner_conditional_completion_bounded_theorem_note_2026-08-20": {
+   "deps_hash": "e6fb37d20d49",
+   "out_degree": 5
   },
   "frontier_extension_lane_b_protects_lane_a_joint_composition_narrow_note_2026-05-17": {
    "deps_hash": "1229febd4144",

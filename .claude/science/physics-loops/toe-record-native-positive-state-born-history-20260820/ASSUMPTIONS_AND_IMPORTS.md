@@ -44,7 +44,7 @@ stack is unlanded and unaudited; it is prior art and route evidence only.
 | Block-6 free-weight law | hostile control | same support, stage geometry, permanence, and covariance with different normalized weights; violates cq ensemble equality | Block-6 total law | yes for nonselection | no as physical target | exclude by derived ensemble identity, not affinity alone | explicit live countermodel to support-only selection |
 | deterministic affine definite-sector condition | narrow Block-6 class theorem | every normalized output is wholly in one of two orthogonal Record sectors | Block-6 N1--N8 packet | yes only for the class result | no | stochastic/nonlinear microscopic formation or a supplied outcome semantics | does not exclude fixed reset or stochastic routes |
 | physical preparation affinity and randomizer screening | selected Block-7 ensemble tool | unsupported until one local Record protocol derives convex descent and erases randomizer/label history operationally | Block 1/3 fixtures plus Block-6 compiler | yes | no by itself | effect identification plus exact cq/Record ensemble equality on a rich domain | affine wrong-effect laws survive; necessary-looking tool, not sufficient conclusion |
-| fresh-ancilla repeated-interaction unraveling | selected Block-7 formation route | no candidate yet; must distinguish nonselective cq state, stochastic trajectory, per-path append, and observed member | Block-6 typed codes and affine boundary | yes | yes | construct local interaction/instrument and append-only memory with imports named | co-equal formation/actuality route |
+| fresh-ancilla repeated-interaction writer | Block-7 finite formation route | exact cq and append-aware isometries exist with supplied blanks, pointers, occupancy flag, order, and export sink; no framework Record or observed member follows | Block-7 runners and typed codes | yes | yes | fixed-carrier unitary/NN decomposition plus nondemolition/permanence theorem | strongest next physicalization route |
 | preparation-randomization congruence | post-Block-4 target | unsupported downstream law until derived | Block 1/2 physical tags; Block-3 normalized-square separator | yes | yes | effect-complete physical tag screening and operational preparation registration | blocker after effect connector |
 | flat/staged operational equivalence | transfer from new staged program to old simultaneous ternary layout | unsupported quotient | Cycle 321 warns equal effects need not mean equal processes | no for pair-specific staged theorem | yes for old-layout claim | probability-independent physical refinement/process theorem | separate wall |
 | Cycle-317/321/339 and historic Cycle-478/508 objects | apparatus, quotient, endpoint, and hostile-history prior art | zero-weight/prior-art unless independently reconstructed and retained | current review history and historic intake | yes for route design | no as premises | rebuild exact needed slice in each block | do not silently import |
@@ -71,3 +71,31 @@ The three highest-scoring live counterfactuals are complete-history
 conditioning, Record-generated preparation, and a preparation Record. They
 enter the route portfolio. The causal-prestate route remains a governance
 fallback, not a science-derived axiom change.
+
+## Block 7 Supplied-Resource And Authority Delta
+
+The fresh-writer result adds no foundation authority. Its load-bearing
+supplied inputs are explicit:
+
+| item | exact role | derived here? | surviving retirement path |
+|---|---|---:|---|
+| exact A/B Lüders programs and delayed placement | defines the tested instrument fixture | no | derive apparatus/program selection from one local law |
+| blank front label `M1`, residual label `M2`, and residual-occupancy flag `F` | finite append-aware memory capacity | no | autonomous fresh-fragment genesis and reset-free allocation |
+| one blank Stinespring pointer at each binary stage | realizes each supplied Kraus isometry | no | fixed-carrier unitary/NN implementation |
+| pointer-forgetting/export channel and sink | produces the cq rather than coherent-pointer output | no | physical environment/export treatment with no hidden erasure |
+| discrete front-before-residual order | defines the staged composition | no | local schedule/overlap theorem and physical time |
+| four density preparations and label-system Pauli functionals | algebraically identify all branch effects and coherent-label spoofs | no | physical preparation and measurement interface |
+| fair tag plus tag-forgetting channel | tests algebraic preparation affinity | no | autonomous screened randomizer and operational quotient |
+| fixed `rho*` and `kappa` lookup | calibrates subnormalized cq blocks to Block-6 typed paths | no | rich-domain physical Record compiler; not a branch-local CPTP map |
+
+The trace weights arise inside the supplied ordinary Kraus/density-operator
+semantics. They are not thereby the framework Admissibility law. The exact
+candidate update is central-restriction compatibility on an already
+registered label-event algebra; stable Record formation and actual-history
+correlation remain separate. This is sufficient candidate wording, not a
+necessary/minimal axiom theorem and not an authorized amendment.
+
+The one-site capacity result is also narrow: only faithful complex-linear or
+full *-algebraic representation of the binary/ternary cq algebra inside one
+`M2` is excluded. Real-affine, restricted-family, nonlinear, and set-
+theoretic code routes remain live.

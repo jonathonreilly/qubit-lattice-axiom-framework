@@ -22,8 +22,8 @@ the corrected post-Block-5 ranking.
 | Record-generated positive preparation without screening | extend the Block-94 controller theory so the law generates the state and trial corpus | 2 | 3 | 2 | 3 | 2 | -2 | demoted; Block 94/100 already construct most of it |
 | Global Record-history completion | condition normalized histories on explicit Record boundary and prove local Admissibility projection | 1 | 2 | 1 | 2 | 2 | -3 | held; Cycle 30 and later cylinders make generic work duplicate |
 | Causal-prestate clarification | type an unreadable quasi-local positive state distinct from readable Records | 2 | 3 | 2 | 2 | 2 | -3 | governance fallback after explicit discriminator only |
-| Canonical cq-to-Record ensemble identity | label-retaining instrument channel plus physical preparation/menu randomization and effect-complete operational quotient | 3 | 3 | 3 | 2 | 3 | -2 | **selected Block 7 co-equal route; derive ensemble equality, with affinity as a tool, then sector traces fix weights** |
-| Fresh-ancilla repeated-interaction formation | local open-system interaction, explicit unraveling, and append-only Record memory | 3 | 3 | 3 | 1 | 3 | -3 | **selected Block 7 co-equal route; distinguish trajectory, per-path record, observed member, seed, and time** |
+| Canonical cq-to-Record ensemble identity | label-retaining instrument channel plus physical preparation/menu randomization and effect-complete operational quotient | 3 | 3 | 3 | 2 | 3 | -2 | **Block 7 finite cq writer/effect discriminator passes; central equality awaits a physically registered stable label algebra** |
+| Fresh-ancilla repeated-interaction formation | local open-system interaction, explicit unraveling, and append-only Record memory | 3 | 3 | 3 | 1 | 3 | -3 | **Block 7 finite append writer passes; fixed-carrier nondemolition Record theorem selected next, with actual member/seed/time separate** |
 | Existing-stack retention extraction | independently reconstruct the strongest positive candidate and minimize dependencies for audit | 2 | 3 | 1 | 3 | 1 | -1 | support route, not new science alone |
 | Strict-NN compiler continuation | compile controller, preparation, screening, and effect stages under one homogeneous local rule | 3 | 3 | 2 | 2 | 3 | -2 | use only for the selected context-routing object; global overlap remains downstream |
 | Gravity completion | continue Block 154 or its discriminator | 2 | 2 | 1 | 2 | 3 | -3 | occupied by another worker; source/rate/lapse dictionary remains downstream |
@@ -295,3 +295,46 @@ Fresh-ancilla repeated-interaction formation is co-equal because even an exact
 ensemble theorem does not name the observed member, reach the apparatus from a
 small seed, or calibrate physical time. Split those obligations. No axiom edit
 is mature while both downstream routes remain open.
+
+## Post-Block-7 Portfolio Recheck
+
+Block 7 closes the finite ensemble/channel implementation seam, not the
+physical Born/Record seam. The exact A/B staged Kraus programs now have a
+probability-independent fresh-label cq writer, a symbolic flat/path
+intertwiner, complete fixed-fixture typed calibration, all-branch effect
+tomography, affine and coherent hostiles, and a supplied tag-forgetting
+affinity test. There is no value in another pointer, dilation, decoder,
+one-preparation fit, or weight tournament.
+
+The full panel materially changed the capacity conclusion. One `M2` cannot
+faithfully represent the full binary or ternary cq algebra through a complex-
+linear/*-algebraic encoding, but normalized binary cq states do admit an
+explicit injective real-affine non-Hermitian `M2` code. Therefore a broad
+one-site information no-go is false and cannot support axiom pressure.
+
+The shortest positive chain is now:
+
+```text
+exact finite append-aware writer
+  -> fixed adjacent carrier with explicit M1,F,M2,S blanks and export sink
+  -> exact unitary extension or nearest-neighbour gate decomposition
+  -> nondemolition stable pointer algebra under later updates
+  -> physical Record typing/permanence
+  -> central-restriction compatibility with Admissibility
+  -> separately typed actual-history correlation.
+```
+
+This outranks attacking central-law equality immediately because the current
+label event algebra is still supplied rather than physically Record-formed.
+It also outranks apparatus/resource genesis for one block: a fixed-carrier
+nondemolition theorem can first determine whether stable Record formation is
+actually available at all. If that theorem passes, autonomous blank supply,
+apparatus selection, overlap arbitration, and time become the next resource
+stack. If it fails for an exact structural reason, that reason is the correct
+candidate law/axiom diagnostic.
+
+Kill the route at two hours on hidden resets, host scheduling, implicit sinks,
+pointer-to-Record relabeling, or inability to retain pending `100` versus
+terminal `110/111`. No axiom edit is mature; the central compatibility wording
+is sufficient only, stable-pointer derivation remains live, and actual-member
+correlation cannot be bundled. Gravity remains externally owned.

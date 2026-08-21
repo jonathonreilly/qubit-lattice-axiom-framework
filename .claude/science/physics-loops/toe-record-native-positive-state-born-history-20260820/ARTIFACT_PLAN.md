@@ -181,30 +181,56 @@ zero errors, and the seeded committed-delta gate with
 control failures. The disposable generated surfaces were discarded. Remote
 delivery remains the only pending Block-6 step at this checkpoint.
 
-## Ensemble Identity And Formation — Block 7 Co-Equal Routes Selected
+## Fresh-Ancilla cq Writer And Capacity Boundary — Block 7 Local Return
 
-Next kill-gated contract:
+The corrected integrated return contains:
 
-1. use the functioning Block-6 typed compiler and exact A/B programs;
-2. compare the canonical state-retaining cq channel
-   `Gamma(rho)=direct_sum_j K_j rho K_j^dagger` with the typed Record ensemble;
-3. construct a physical randomized-preparation protocol whose permanent
-   Record quotient screens randomizer and label history;
-4. derive effect-complete operational equivalence and ensemble equality on a
-   sufficiently rich preparation/menu domain; use affinity only as a tool;
-5. invoke the Block-6 sector lemma to fix weights and exclude free and
-   wrong-effect affine laws without assuming trace/Born;
-6. independently construct a fresh-ancilla repeated-interaction trajectory
-   writer with append-only Record memory; and
-7. keep ensemble identity, formation, seed reachability, observed member, and
-   physical time as separately checked obligations.
+1. exact common-front/residual factorization for both supplied A/B ternary
+   instruments;
+2. controlled copy to supplied fresh orthogonal labels followed by an
+   explicit pointer-forgetting/export channel, giving the exact cq map;
+3. a symbolic staged-to-flat channel intertwiner for every Hermitian input,
+   with no scalar probability vector supplied to the writer;
+4. a four-qubit-factor append-aware isometry with explicit pending word `100`
+   and terminal words `000`, `110`, `111`, while three sites including the
+   live system are only the faithful terminal-algebra minimum;
+5. exact fixed-`rho*` ensemble-level calibration to all Block-6 typed paths and
+   exact central masses;
+6. four-preparation identification of every A/B branch effect, an affine CP
+   trace-preserving wrong-effect measure-prepare control, state and coherent-
+   label hostiles, and supplied tag-forgetting affinity;
+7. an N1--N8-scoped theorem excluding only faithful complex-linear/full-cq
+   representations inside one `M2`, with an explicit injective real-affine
+   binary counterroute that kills broader one-site rhetoric; and
+8. a strict separation among central-restriction compatibility, stable
+   pointer/Record formation, and actual-history correlation.
 
-Kill or narrow if ensemble equality/effect identity is inserted, only one
-preparation/menu is tested, trace/Born weights define the randomization, the
-randomizer remains an unrecorded live state, or the result is detached from
-the local Record law. Kill the formation route if it renames a cq mixture or
-supplies a sampler/outcome token. Another pointer, weight table, decoder, or
-arbitrary static kernel is duplicate work.
+Primary `18/18` and independent `14/14` pass with fresh input-bound caches.
+The five-role panel forced the affine-control repair, the real-affine
+counterroute, exact carrier/resource accounting, pointer/export sink,
+algebraic-not-operational tomography wording, and separation of law, Record,
+and actual-member claims. This is a conditional positive proposal with zero
+obligation retirement and zero TOE movement.
+
+## Fixed-Carrier Nondemolition Record Update — Block 8 Next Contract
+
+Construct the next physicalization on adjacent `M1,F,M2,S` sites:
+
+1. expose every initially blank memory/pointer and the export sink;
+2. give an exact unitary extension or nearest-neighbour gate decomposition;
+3. preserve the pending `100` prefix and generate only `000/110/111` terminal
+   words on the exact A/B fixture;
+4. prove the label algebra is nondemolition and permanent under all declared
+   later updates, rather than calling an occupancy bit a framework Record;
+5. keep apparatus selection, fresh-capacity genesis, overlap scheduling, and
+   physical time explicit; and
+6. only after registration test central-restriction compatibility on that
+   physical event algebra, with actual-member correlation still separate.
+
+Kill the route on a host schedule, hidden resets or blanks, an implicit sink,
+pointer-to-Record relabeling, or an inserted trace/Born law. A finite circuit
+without the nondemolition theorem is useful implementation progress but not
+TOE obligation retirement.
 
 ## Negative Or Axiom-Decision Block
 

@@ -2,12 +2,13 @@
 
 ## Current State
 
-The 24-hour campaign runs until 2026-08-21 11:27:51 EDT. Blocks 1--5 are
-proposed in PRs #7020, #7022, #7023, #7027, and #7030. Block 6 is active on
-`physics-loop/toe-instrument-record-state-lift-block6-20260820`, stacked on
-Block 5 at `7f22e452ee`. Its corrected local return passes primary `17/17` and a
-separately implemented independent reconstruction `13/13`. Delivery gates and
-the terminal five-role panel are pending.
+The 24-hour campaign runs until 2026-08-21 11:27:51 EDT. Blocks 1--6 are
+proposed in PRs #7020, #7022, #7023, #7027, #7030, and #7031. Block 7 is
+active on `physics-loop/toe-cq-record-writer-block7-20260820`, stacked on the
+exact Block-6 delivery head `ec07e88db2`. Its corrected local return passes
+primary `18/18` and a separately implemented independent reconstruction
+`14/14`. Fresh caches, helper registration, graph manifest, and the full
+five-role panel pass; repository and committed-tree delivery gates remain.
 
 No block has an audit verdict, retention, obligation retirement, or TOE-score
 movement. The frozen percentages remain 95/92/50 for operational
@@ -93,69 +94,78 @@ branch-relative interpretations. It is not a universal measurement or Record
 no-go. The exact positive `L_trace` law is stochastic and lies outside the
 deterministic definite-output class.
 
+## Block 7 Exact Return
+
+The two prior routes now inhabit one exact finite fixture at the ensemble/
+channel level. For both supplied A/B instruments:
+
+- the common `{K0,B}` front and residual programs are exact normalized
+  isometries and compose into the flat ternary channel for every Hermitian
+  input;
+- controlled pointer-to-fresh-label copy plus explicit pointer export gives
+  the exact cq channel with no input probability table;
+- an append-aware four-qubit-factor isometry retains pending `100` and maps to
+  terminal `000/110/111`; the extra occupancy flag and all pointer/label/sink
+  resources are supplied, not generated;
+- fixed-`rho*` subnormalized blocks calibrate to every Block-6 typed path and
+  give exact A/B central masses;
+- four spanning preparations force every branch effect and reject an affine
+  CP trace-preserving wrong-effect measure-prepare channel that agrees with
+  the full front cq state at `rho*`; label-system Pauli controls also reject
+  rotated-state and coherent-pointer spoofs; and
+- tag forgetting proves algebraic affinity under a supplied screening
+  channel, not a physical Admissibility/Record equivalence.
+
+The one-site capacity theorem is intentionally narrow. Full binary/ternary cq
+algebras cannot be faithfully represented inside one `M2` by a complex-linear
+or *-algebraic encoding. An explicit injective real-affine code for normalized
+binary cq states proves that arbitrary one-site codes are not excluded. Three
+qubit sites including the live system suffice algebraically for the terminal
+ternary cq representation; the explicit occurrence-aware writer uses four.
+
+Central-restriction compatibility, stable pointer/Record formation, and
+actual-history correlation are three separate claims. None is derived by
+partial trace, block diagonality, the fixed calibration, or tag screening.
+
 ## Exact Remaining Seam
 
-The highest-leverage non-gravity residuals are now:
+The next highest-leverage non-gravity chain is:
 
 ```text
-canonical label-retaining cq instrument
-  -> effect-complete operational equivalence across preparations/menus
-  -> equality with the typed Admissibility Record ensemble
-  -> sectorwise uniqueness of the trace ratios;
-
-fresh ancilla + local repeated interaction
-  -> explicit stochastic unraveling
-  -> append-only one-hot Record path
-  -> separately named seed, observed-member, and physical-time boundaries.
+supplied finite append-aware isometry
+  -> fixed adjacent M1,F,M2,S carrier with explicit blanks and export sink
+  -> exact unitary extension or nearest-neighbour gate decomposition
+  -> nondemolition pointer algebra under every declared later update
+  -> framework Record typing and permanence
+  -> test central-restriction compatibility on that registered event algebra
+  -> separately test actual-history correlation.
 ```
 
-The code carrier, rail typing, support, stage geometry, and finite history no
-longer need reinvestment. The next science block should attack cq/Record
-ensemble equality on a sufficiently rich preparation/menu family, with
-preparation affinity as one tool and wrong-effect affine laws as hostile
-controls. A microscopic repeated-interaction formation law is co-equal because
-ensemble closure does not select an observed member.
-
-Kill the ensemble route after two hours if equality/effect identity is merely
-postulated, restricted to the one fixed preparation/menu, or detached from a
-physical Record randomization protocol. Kill after four hours if closure imports
-trace probabilities, a sampler/outcome token, a hidden live state, host
-selection, or a changed instrument. If affinity forces trace form while
-formation remains open, ship those as two separate obligations. Kill the
-formation route if a cq mixture is relabelled as a realized atom or a sampler
-is silently supplied.
+Kill the route if it supplies a host schedule, silently resets a pointer,
+hides the sink or blank resources, calls an occupancy bit a Record, or imports
+trace/Born weights. A finite circuit without nondemolition permanence is
+implementation progress, not TOE closure. Apparatus/program selection,
+fresh-fragment genesis, overlaps, actual member, and physical time stay
+separate.
 
 ## Panel And Delivery
 
-The first three terminal seats found a real off-history science defect: the
-smooth formation patch accepted typed-near and untyped predecessors that the
-exact decoder rejected. The correction multiplies the distance guard by the
-exact Borel typed-stage predicate and adds exhaustive 24-of-144 and hostile
-near-shell tests. They also forced a fresh N1--N8 repair, separated law-level
-paths from the observed member, and produced the sectorwise cq lemma. Their
-utility was very high.
+The Block-7 five-role panel materially changed the result. It caught the
+nonlinear wrong-effect full-cq control, a false broad affine capacity claim,
+mixed direct-sum/projector typing, the three-site/four-site resource mismatch,
+implicit pointer/export resources, incomplete branch-effect coverage, an
+undeclared physical measurement interface, and bundling of central law,
+Record formation, and actual-member correlation. Every defect is corrected;
+the final mathematical, quantum-information, operational, locality, and
+governance seats pass the bounded science at `18/18 + 14/14`.
 
-The operational and skeptical-governance seats cold-replayed the corrected
-bytes at `17/17 + 13/13` and passed the bounded Block-6 science. They kept cq
-ensemble identity and a fresh-ancilla repeated-interaction writer co-equal,
-required them to share one fixture, and found no mature axiom update or TOE
-percentage movement.
-
-Run targeted adversarial seats at the first Block-7 concrete return or two
-hours. Trigger the full five again on a route pivot, proposed axiom datum,
-four hours without TOE-level progress, campaign midpoint/final synthesis, or
-evidence that panels are changing the ranking. Widen cadence only after two
-full panels repeat the same conclusion without a material correction.
+No axiom update is mature. The displayed central-compatibility wording is a
+sufficient candidate interface only; a local stable-pointer derivation remains
+live, necessity/minimality are absent, and owner authorization would be needed
+for any canonical edit. Formal percentages remain frozen.
 
 Review-loop is disabled by user instruction. Use direct self-review,
 independent executables, disposable committed-tree gates, and independent
-audit. Proposal delivery is not retention.
-
-The exact Block-6 science commit is
-`2084d32d79bd6aade8785636c458e9ad2afe25bf`. Its detached committed-tree
-pipeline, strict lint, and seeded committed-delta forensic replay pass; the
-remote Block-5 base is unchanged and PR #7030 remains clean. Stacked PR #7031
-is remotely verified `OPEN`, non-draft, and `CLEAN` at exact head
-`d14cc2b1e0b120bb6497301845bc4f970c38188b`. Start Block 7 from that delivered
-head. Do not copy the disposable pipeline's generated ledger/queue surfaces
-into the proposal and do not treat delivery as audit retention.
+audit. Proposal delivery is not retention. Block 7 currently has fresh input-
+bound caches and graph/helper registration; record the science commit and
+committed-tree evidence here after those gates actually run.

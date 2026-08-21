@@ -1,12 +1,12 @@
 ---
 trace_class: advances
 target_claim_id: toe_record_native_positive_state_born_history_completion
-target_blocker_text: derive physical equality between the canonical label-retaining cq instrument ensemble and the local Admissibility Record ensemble, then separately derive microscopic formation, seed reachability, contingent observed member, and physical time, without treating a coherent or dephased ensemble as one actual Record or importing trace probabilities as foundation authority
-source_of_blocker_text: block6_typed_conditional_completion_and_independent_affine_boundary
+target_blocker_text: implement the exact finite cq writer on a fixed adjacent carrier and prove its label algebra nondemolition and permanently Record-typed; then derive central-restriction equality with Admissibility on that registered algebra while keeping actual-history correlation, resource genesis, overlap scheduling, and time separate
+source_of_blocker_text: block7_fresh_ancilla_cq_intertwiner_and_five_role_resource_locality_boundary
 reachability_to_target: advances
 artifact_role: campaign_pack
-campaign_native_target_reachability: block6 conditionally closes the state/rail code mismatch, eager and typed-near continuation defects, exact branch support, residual recovery, and finite trace-matched Record history; its sectorwise cq lemma makes all displayed weights unique conditional on ensemble identity, while its free law and affine theorem isolate physical ensemble identity, formation, and contingent actuality as separate surviving fields
-next_trace_action: finish corrected Block6 delivery and the terminal five-role panel, then run kill-gated co-equal campaigns for cq-instrument/Record-ensemble operational identity and a fresh-ancilla repeated-interaction trajectory writer
+campaign_native_target_reachability: block7 composes the exact staged instrument into a probability-independent label-retaining cq channel, calibrates every fixed typed path, forces all branch effects on a spanning family, and supplies exact affine/coherent hostiles; it leaves physical central-law equality, stable Record formation, and actual-history correlation separate and exposes every finite blank, pointer, occupancy flag, and export sink as supplied
+next_trace_action: construct an exact unitary extension or nearest-neighbour gate decomposition on adjacent M1,F,M2,S with pending 100 and terminal 000/110/111, then prove nondemolition permanence before testing central-restriction compatibility
 ---
 
 The campaign remains grounded on current main. Unlanded prior blocks and the
@@ -48,19 +48,30 @@ Admissibility draws, nonlinear/hidden-variable dynamics, and branch-relative
 routes remain open. Universal impossibility and axiom necessity are
 `FAIL / DO NOT SHIP`.
 
-The next trace action must operate on the solved typed compiler. It should
-derive equality of the canonical cq instrument and Record ensembles from a
-physical mixture/label-retention protocol on a sufficiently rich menu—or
-produce an exact countermodel identifying the missing premise. Preparation
-affinity alone is insufficient because normalized wrong-effect affine laws
-survive. A simple assertion of trace/Born weights, another pointer, another
-decoder, or another arbitrary kernel does not advance the target.
+Block 7 now operates on that solved compiler. The staged path and flat ternary
+cq channels agree symbolically for every Hermitian input, and controlled copy
+to fresh labels plus explicit pointer export gives the exact cq output without
+a scalar probability table. Fixed-`rho*` calibration reproduces all typed
+paths and central masses. Four spanning preparations force every branch
+effect; an affine CP trace-preserving wrong-effect channel, free weights,
+rotated branch state, and coherent-label state provide exact hostile controls.
 
-Formation, seed reachability, actual-member semantics, and time stay
-separately typed. A fresh-ancilla repeated-interaction trajectory writer is a
-co-equal route, not a deferred fallback; no ensemble theorem is full actuality
-closure.
+This is still not a physical Admissibility/Record equality theorem. The
+preparations, formal Pauli separating functionals, tag forgetting, A/B
+program, blank memories/pointers, occupancy flag, discrete order, and export
+sink are supplied. The explicit writer has three memory qubits plus the live
+system; three sites including the system are only the terminal algebraic
+minimum. Neither pointer tracing nor block diagonality selects an actual
+member or forms a framework Record.
 
-No axiom datum is mature. Current positive downstream routes are still live,
-the displayed trace equality is supplied rather than foundation-derived, and
-no independent audit has retired an obligation.
+The next trace action is therefore fixed-carrier physicalization, not another
+ensemble identity assertion. Build an adjacent `M1,F,M2,S` update with every
+blank and sink shown, give an exact unitary or NN gate decomposition, preserve
+pending `100` and terminal `000/110/111`, and prove nondemolition permanence
+under later updates. Only then test central-restriction compatibility on the
+registered label-event algebra. Actual-history correlation remains separate.
+
+No axiom datum is mature. The exact one-site no-go is limited to faithful
+injective complex-linear or faithful full-cq *-algebraic representation and is steelmanned by an explicit
+real-affine binary code. Stable-pointer derivation and other code routes remain
+live; no independent audit has retired an obligation.

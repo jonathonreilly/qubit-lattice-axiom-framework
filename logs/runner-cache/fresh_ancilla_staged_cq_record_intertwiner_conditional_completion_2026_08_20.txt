@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/fresh_ancilla_staged_cq_record_intertwiner_conditional_completion_2026_08_20.py
+runner_sha256: b31a2200c0b174f9ce0ebd4ec22e8237f93af80adbbd0d3a0ae1fce695cb527f
+input_fingerprint_sha256: a23f3e2b143190ee067b1a7debb0fcb23bb38660622b9bf65828c48ec009d7de
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 2.39
+status: ok
+----- stdout -----
+PASS [sources-and-authority-boundary] the current axiom, realized-state, Block-6, fresh-copy, and abstract-instrument boundaries are bound
+PASS [exact-two-menu-instruments] both exact ternary instruments normalize and share the same binary front {K0,B}
+PASS [exact-Block6-branch-state-recovery] the post-contact exact programs reproduce all six fixed Block-6 positive branch operators
+PASS [exact-repeated-interaction-factorization] the common binary front and each delayed residual are normalized isometries and Jr B=Kr exactly
+PASS [fresh-orthogonal-label-copy-channel] a supplied fresh binary fragment plus controlled label copy yields the exact cq channel after the pointer ancilla is forgotten, for both stages and a spanning preparation family
+PASS [probability-independent-staged-to-flat-cq-intertwiner] the path decoder maps the two fresh binary writes to the flat ternary cq instrument as a symbolic channel identity, with no scalar branch weights supplied
+PASS [append-only-prefix-memory] terminal continuation paths retain the earlier B label and the 0 path never acquires a later label
+PASS [explicit-flagged-staged-memory-isometry] an exact second interaction preserves the first B bit, flips a supplied fresh residual-occupancy flag, writes the residual bit, and realizes terminal memory words 000,110,111 with Kraus blocks K0,K1,K2
+PASS [fixed-preparation-typed-Record-calibration] at rho* the path-label/postbranch-state object calibrates exactly to every Block-6 typed permanent history
+PASS [central-sector-masses-without-input-q-table] restricting the normalized cq channel state to its label center yields the exact Block-6 trace masses; the writer takes operators and rho, not a probability vector
+PASS [effect-complete-four-preparation-identification] four physical density preparations span Hermitian M2; equality of retained label-I statistics forces every A/B branch effect, including the shared F0=E0, rather than an arbitrary affine POVM
+PASS [free-wrong-effect-and-state-spoof-discriminators] {'wrong_effect_matches_rho_star': True, 'wrong_effect_full_cq_control_is_affine_cp_tp': True, 'wrong_effect_rejected_by_spanning_preparations': True, 'state_spoof_rejected_by_label_times_Pauli': True, 'free_Block6_pointwise_weights_rejected': True}
+PASS [coherent-label-offdiagonal-discriminator] label projectors times system Paulis certify the cq blocks only after cq structure is established; label X/Y times system Paulis independently reject a coherent-pointer spoof
+PASS [physical-tag-screening-and-preparation-affinity] after the supplied tag-forgetting channel, direct and fair tagged preparations give identical retained label-times-Pauli data by channel linearity; the tag state and forgetting operation remain explicit inputs
+PASS [multisite-cq-capacity-boundary] one M2 site cannot faithfully carry the full state-retaining binary or ternary cq algebra by a complex-linear/*-algebraic encoding; multisite carriers repair that exact interface, while nonlinear, real-affine, set-theoretic, and restricted-family code maps are not excluded
+PASS [explicit-real-affine-one-site-counterroute] the normalized binary cq state space has an explicit injective real-affine code into non-Hermitian M2; it preserves neither *, products, positivity/order, nor the cq observable algebra, so it defeats any broader affine-capacity no-go
+PASS [honest-closure-and-axiom-boundary] the note closes the exact staged cq writer/intertwiner while keeping central-law identification, Record typing, occurrence, apparatus genesis, and time separate
+per_element: checked — exact Kraus operators, branch operators, label projectors, postbranch Pauli observables, and typed fixed-preparation code calibration remain separately typed
+per_site: checked — fresh blank label fragments, controlled orthogonal label copy, faithful complex-linear full-cq-algebra one-M2 capacity failure, and supplied Record-typing boundary are explicit
+per_mode: checked — coherent isometry, pointer-forgotten cq channel, central restriction, wrong-effect affine measure-prepare law, pointwise free-weight comparison, and realized atom remain distinct
+per_block: checked — common binary front, delayed A/B residual isometries, append-only path prefixes, flat ternary channel intertwiner, and four-preparation tomography compose exactly
+lattice_wide: checked and not executed — finite fresh-fragment blocks fit qubit-lattice capacity, while autonomous fragment genesis, local formation/typing, overlap scheduling, and physical time remain open
+PASS [n5-certificate] all five substantive resolution lines are present in primary stdout and the theorem note
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

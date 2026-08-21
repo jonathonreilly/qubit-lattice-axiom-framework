@@ -162,3 +162,31 @@ Opened and remotely verified:
 PR #7031 is `OPEN`, non-draft, and `CLEAN`, with exact head
 `d14cc2b1e0b120bb6497301845bc4f970c38188b` on the intended Block-5 branch.
 No review-loop was used.
+
+## Block 7 — Local Proposal, Delivery Gates Pending
+
+Branch:
+`physics-loop/toe-cq-record-writer-block7-20260820`, stacked on the exact
+delivered Block-6 head
+`ec07e88db2850dac2c0497c1f29504aa94b2b3d5`.
+
+Current direct validation: primary `PASS=18 FAIL=0`, independent
+`PASS=14 FAIL=0`, both compile, both input-bound caches are fresh, and the
+citation graph explicitly discovers the independent helper. The full
+five-role panel passes after correcting the affine hostile channel, narrowing
+the one-site theorem around an explicit real-affine counterroute, fixing path
+Hilbert-space typing and pointer order, counting three memory qubits plus the
+live system, declaring both Stinespring pointers and the export sink, checking
+every A/B effect, downgrading formal tomography to algebraic separation, and
+splitting central-law equality from Record formation and actual history.
+
+The N1--N8 packet passes only for the faithful complex-linear/full-cq one-
+`M2` capacity boundary. Arbitrary code incapacity, measurement impossibility,
+axiom necessity, actual-member selection, autonomous lattice dynamics, and
+TOE closure are `FAIL / DO NOT SHIP`. Audit status, retained status,
+obligation retirement, and TOE movement are zero.
+
+Repository invariants, premise purity, vocabulary, strict lint, committed-
+tree fixed-point pipeline, committed-delta forensic replay, science commit,
+push, PR opening, and remote stack verification remain pending. No review-
+loop is used.

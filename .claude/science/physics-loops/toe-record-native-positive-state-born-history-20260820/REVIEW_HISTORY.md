@@ -876,3 +876,64 @@ the intended Block-5 base, exact head
 `d14cc2b1e0b120bb6497301845bc4f970c38188b`, `OPEN`, non-draft, and `CLEAN`.
 This records proposal delivery only; audit status, retained status, obligation
 retirement, axiom status, and TOE percentages remain unchanged.
+
+## Block 7 five-role terminal panel — 2026-08-20T19:20--20:10-04:00
+
+The panel ran five distinct lenses: operator-algebra uniqueness, quantum
+information/open systems, operational foundations/portfolio, locality and
+resource accounting, and framework governance/axiom maturity. Early snapshots
+were `REVISE`; the final governance seat passes the corrected packet.
+
+Material corrections caused by the panel:
+
+1. The original wrong-effect full-cq control normalized branch states anew at
+   every input and was nonlinear. It is replaced by the fixed-state
+   measure-prepare instrument
+   `Phi'_j(rho)=Tr(F'_j rho) tau*_j`. Exact affinity, CP Choi positivity,
+   trace preservation, full-cq equality at `rho*`, and spanning-family
+   rejection now pass.
+2. Four preparations now solve every A/B branch effect, not only the common
+   front effect. Label-projector/Pauli data are explicitly insufficient to
+   certify cq structure; label-X/Y controls reject the coherent-pointer
+   hostile.
+3. The broad one-site capacity rhetoric was false. Normalized binary cq
+   states admit an explicit seven-coordinate injective real-affine code into
+   non-Hermitian `M2`. The shipped negative theorem is narrowed to faithful
+   injective complex-linear or faithful full-cq *-algebraic representation of the full binary or ternary cq
+   algebra. Restricted, nonlinear, set-theoretic, real-affine, and multisite
+   routes remain live.
+4. The path channel is now typed on one fixed basis `000/110/111`, and the
+   controlled-copy equation uses explicit pointer-memory-system order.
+5. The algebraic terminal minimum—three qubit sites including the live
+   system—is separated from the explicit append-aware writer, which uses
+   three memory qubits plus the live system. The supplied-resource ledger now
+   names `M1,F,M2`, two Stinespring pointers, their blank states, and the
+   pointer-forgetting/export sink. Pending word `100` and terminal words
+   `000/110/111` are explicit. The occupancy flag is not a framework Record.
+6. The fixed `kappa` use is scoped as an ensemble-level lookup on
+   subnormalized blocks at `rho*`, not a branch-local CPTP calibration.
+7. Formal label-system observables are algebraic separating functionals, not
+   a derived physical measurement interface. Tag screening proves affinity
+   only after a supplied forgetting channel.
+8. Central-restriction compatibility is separated from stable-pointer/Record
+   formation and actual-history correlation. The former is sufficient
+   candidate law wording, not a necessary/minimal axiom and not an authorized
+   update.
+9. N1 enumerates seven actually tested routes. N2 audits the exact
+   complex-linearity/full-domain/one-site capacity walls rather than bundling
+   the broader TOE residual stack. N5 now has a fresh landed-style primary
+   cache certificate.
+
+Final cold status: primary `18/18`, independent `14/14`, source/input-pinned
+caches fresh, helper registered, graph manifest current, and no control bytes
+or whitespace errors. This is proposal evidence only. Audit and retention are
+unset; obligation retirement and TOE movement are zero.
+
+### Portfolio decision
+
+`CONTINUE`, but pivot from algebraic cq construction to its shortest physical
+seam. Build an adjacent fixed-carrier update on `M1,F,M2,S`, with every blank,
+pointer, and sink explicit; give a unitary extension or NN gate decomposition;
+then prove nondemolition stability/permanence under later updates. Only on that
+registered label algebra test central-restriction compatibility. Keep actual-
+member correlation separate. Gravity remains externally owned.

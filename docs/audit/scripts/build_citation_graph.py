@@ -151,6 +151,12 @@ HEADING_RE = re.compile(r"^#{1,6}\s+", re.MULTILINE)
 LINK_RE = re.compile(r"\[[^\]]*\]\(([^)\s#]+\.md)(?:#[^)]*)?\)")
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    # Independently rebuilds the exact A/B instruments, staged fresh-label
+    # copy, flat/path channel identity, central masses, effect-complete
+    # tomography, affine hostile control, and narrow cq-capacity boundary.
+    "fresh_ancilla_staged_cq_record_intertwiner_conditional_completion_bounded_theorem_note_2026-08-20": [
+        "scripts/fresh_ancilla_staged_cq_record_intertwiner_conditional_completion_independent_check_2026_08_20.py",
+    ],
     # Independently rebuilds the typed state/rail projections, delayed
     # frontier census, positive branch tree, three cubic shell orbits,
     # trace/free history laws, and affine definite-sector boundary.

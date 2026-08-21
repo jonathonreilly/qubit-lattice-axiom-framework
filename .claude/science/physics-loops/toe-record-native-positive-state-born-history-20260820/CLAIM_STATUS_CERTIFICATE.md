@@ -1,17 +1,17 @@
 # Claim Status Certificate
 
-Campaign state: Blocks 1--5 are proposed in PRs #7020, #7022, #7023, #7027,
-and #7030. Block 6 is an active local proposal on
-`physics-loop/toe-instrument-record-state-lift-block6-20260820`, stacked on
-Block 5 at `7f22e452ee`. No campaign block is audited or retained.
+Campaign state: Blocks 1--6 are proposed in PRs #7020, #7022, #7023, #7027,
+#7030, and #7031. Block 7 is a local proposal on
+`physics-loop/toe-cq-record-writer-block7-20260820`, stacked on the exact
+Block-6 delivery head `ec07e88db2`. No campaign block is audited or retained.
 
-Current Block-6 local artifact status: primary `17/17` and independent
-`13/13` pass. Fresh input-bound caches, Python compilation, citation graph and
-manifest, enforced-link repository invariants, premise purity, vocabulary,
-cached-runner freshness, whitespace, and strict audit lint with zero errors
-pass. The five-physicist terminal panel passes the corrected bounded science.
-Full committed-tree pipeline, committed-delta, push, and PR gates remain
-pending at this certificate checkpoint; no delivery result is inferred early.
+Current Block-7 local artifact status: primary `18/18` and independent
+`14/14` pass. Fresh input-bound caches, Python compilation, citation helper
+registration, and the graph manifest pass. The five-role panel passes the
+corrected bounded science after material revisions. Repository invariants,
+premise purity, vocabulary, strict lint, committed-tree pipeline,
+committed-delta, push, and PR gates remain pending at this certificate
+checkpoint; no delivery result is inferred early.
 
 Proposed Block-6 theorem: on the exact supplied Block-4 preparation and
 staged A/B instrument, a typed one-site Record code has a Hermitian branch-
@@ -90,12 +90,42 @@ TOE percentage movement: zero. The frozen lane map remains:
 | gravity / source / resources | 70% | 45% | 29% | 94% |
 | Born / probability / realized history | 84% | 63% | 34% | 99% |
 
-No axiom wording is justified. The strongest next downstream routes are
-co-equal: an effect-complete operational theorem deriving equality of the
-canonical cq instrument and Record ensembles, and a fresh-ancilla
-repeated-interaction trajectory writer deriving formation without renaming an
-ensemble as an actual atom. Preparation affinity is a tool, not sufficient by
-itself.
+No axiom wording is justified. Block 7 gives an exact probability-independent
+staged cq writer/intertwiner and effect-complete algebraic discrimination, but
+does not identify the channel center with Admissibility or type the supplied
+pointer memory as a framework Record. Central-law equality, stable Record
+formation, and actual-history correlation remain separate.
+
+## Block 7 Conditional Positive Return
+
+For both exact A/B instruments, the common `{K0,B}` front and residual binary
+instruments compose exactly into the flat ternary cq channel for every
+Hermitian input. Fresh controlled label copies and explicit pointer export
+produce the cq blocks without a scalar probability table. A separate
+append-aware four-factor isometry exposes pending word `100` and terminal
+words `000/110/111`; its extra occupancy flag is supplied and is not called a
+Record.
+
+At fixed `rho*`, the subnormalized cq blocks calibrate exactly to all Block-6
+typed histories and central masses. Four spanning preparations force every
+A/B branch effect. An affine CP trace-preserving wrong-effect measure-prepare
+channel matches the full front cq state at `rho*` but is rejected by the
+spanning family; state and coherent-label spoofs are also rejected. The tag
+test proves algebraic affinity only after a supplied forgetting channel.
+
+The capacity theorem excludes only an injective complex-linear or faithful
+full-cq *-algebraic representation of the binary or ternary cq algebra inside one `M2`. An
+explicit injective real-affine code for normalized binary cq states disproves
+any broader one-site information-capacity claim. The full N1--N8 packet and
+five-role panel preserve nonlinear, set-theoretic, restricted-family, and
+multisite routes.
+
+Audit status: none. Retained status: none. Obligation retirement: zero. TOE
+percentage movement: zero. The next highest-leverage construction is a
+fixed-carrier adjacent-site unitary/NN implementation with explicit blanks
+and sink plus a nondemolition/permanence theorem; central-restriction
+compatibility is tested only after that physical label algebra is registered,
+and actual-member correlation remains outside the theorem.
 
 ## Committed-tree delivery evidence
 

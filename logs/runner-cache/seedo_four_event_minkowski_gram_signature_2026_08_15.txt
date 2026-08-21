@@ -1,0 +1,51 @@
+===== runner cache v1 =====
+runner: scripts/seedo_four_event_minkowski_gram_signature_2026_08_15.py
+runner_sha256: baaa8e4566df3b8da373d6be0d09337a2a6695a483f588836d86b9dcab589453
+input_fingerprint_sha256: af5bafd17b3fe16a932ca36d68f8bab876678a07c68505a7410ac90cd74871c0
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/SEEDO_FOUR_EVENT_MINKOWSKI_GRAM_SIGNATURE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+external_scientific_inputs: displayed four events and displayed seedo ticks only
+framework_role: Lattice supplies Z^3 sites; no metric is written into Admissibility
+claim_scope: Minkowski Gram signature of the three seedo displacements from origin of axis, face, and body events is reported versus gram4 (1,2,0). Displayed, not adopted.
+PASS: audit-input-paths declared inputs are exactly the source note and the axiom memo
+PASS: audit-timeout audit timeout is the standard 120s bound
+PASS: source-lattice current axioms supply the cubic lattice Z^3
+PASS: axiom-admissibility-has-no-metric the live Admissibility wording contains no Minkowski Gram or metric
+PASS: four-vectors u(A)=(1,1,0,0), u(D)=(2,1,1,0), u(B)=(3,1,1,1) from displayed ticks
+PASS: nine-entries the nine exact Minkowski Gram entries are the displayed rationals
+PASS: symmetry G is symmetric
+PASS: axis-null the axis displacement is Minkowski-null: G_AA=0
+PASS: determinant det G = 2, so the 3-plane is nondegenerate
+PASS: leading-minors unpivoted leading minors are 0, -1, 2, so unpivoted Sylvester is blocked
+PASS: char-poly det(lambda I - G) = lambda^3 - 8 lambda^2 - 9 lambda - 2
+PASS: ldl-signature exact pivoted LDL inertia is (1,2,0)
+PASS: char-signature exact characteristic-polynomial inertia is (1,2,0)
+PASS: versus-gram4 the displayed seedo signature equals gram4 (1,2,0)
+PASS: euclidean-mutation the Euclidean spatial Gram of the same three vectors is not (1,2,0)
+PASS: zero-tick-mutation erasing the displayed ticks changes the Minkowski signature
+PASS: note-contract the note states the four events, displayed ticks, Gram, signature, and bounds
+PASS: four-events-only the note names only the four cube events O, A, D, B
+PASS: no-dijkstra ticks are displayed; Dijkstra is excluded
+PASS: no-l1 the note refuses to attach L1
+PASS: no-admissibility-metric the note refuses to write a metric into Admissibility
+PASS: uniqueness-not-required equality versus gram4 is reported without a uniqueness claim
+PASS: forbidden-absent forbidden gravity/TOE phrases are absent from the note
+PASS: no-runner-cache the note does not attach a runner-cache path
+PASS: no-float-signature signature objects are exact integers, not floats
+per_element: checked — all nine Gram entries and both exact inertia algorithms
+per_site: checked — only the four displayed events O, A, D, B
+per_mode: checked and not executed — no dynamical mode or continuum limit
+per_block: checked — the 3x3 Minkowski block versus the Euclidean mutation
+lattice_wide: checked and not executed — no lattice-wide metric or L1 attachment
+TOTAL: PASS=25 FAIL=0
+
+----- stderr -----
+

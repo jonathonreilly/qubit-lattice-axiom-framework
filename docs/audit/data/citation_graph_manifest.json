@@ -1,6 +1,6 @@
 {
- "edge_count": 15752,
- "node_count": 5558,
+ "edge_count": 15753,
+ "node_count": 5559,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -16712,6 +16712,10 @@
   },
   "sector_summed_companion_channel_cycle733_bounded_theorem_note_2026-07-28": {
    "deps_hash": "7299ef75081c",
+   "out_degree": 1
+  },
+  "seedo_four_event_minkowski_gram_signature_bounded_theorem_note_2026-08-15": {
+   "deps_hash": "c8eee4235fc9",
    "out_degree": 1
   },
   "self_consistency_forces_poisson_note": {

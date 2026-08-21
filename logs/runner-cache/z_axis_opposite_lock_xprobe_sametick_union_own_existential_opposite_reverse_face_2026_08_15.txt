@@ -4,7 +4,7 @@ runner_sha256: 578730869a935fa76f5c33decbe20f1dce779a82dd4fe066e205a824aa249a6f
 input_fingerprint_sha256: ed02a7cb003fbe330f8aafae962410919a23ca41f5d3f3c4a1b98caf3ac56053
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 same-tick ∪ own incoming reverse/face on z-axis opposite-lock x-probes

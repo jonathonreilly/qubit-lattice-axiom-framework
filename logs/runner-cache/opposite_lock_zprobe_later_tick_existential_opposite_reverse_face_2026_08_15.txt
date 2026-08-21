@@ -4,7 +4,7 @@ runner_sha256: e7e99d8a13d6229b1920dbb59e6ff50268348f37e2f5bf8e59cbc96f0a614d94
 input_fingerprint_sha256: 34fa9cf2522f4bc360c92e8aef045182791ca4d222c0e38efb7e972b59fd189f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 later-tick existential opposite 6-NN reverse/face on opposite-lock z-probes

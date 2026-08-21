@@ -1,0 +1,53 @@
+===== runner cache v1 =====
+runner: scripts/parallel_step_incoming_lock_formation_b3_2026_08_15.py
+runner_sha256: baeb7d7401ffa2e0caffd4fc3b33a011f1ffbfbf8a8d518a9432219ad0fcbf5b
+input_fingerprint_sha256: 56078a1dc961f9086f4682d1cec39d3296cd6f300b927230584686b7373ba83d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+external_scientific_inputs: current Lattice, Admissibility, and Record boundaries are source-bound; the parallel-step incoming-lock rule is a displayed construction
+integrity_reads: this runner, its note, and the current axiom memo; no other scientific inputs
+construction: B_3(0) host, seed origin lock +e_1, allowed 6-NN steps parallel to the current lock axis
+negative_scope: reverse and face are displayed, not adopted; uniqueness is not required; Admissibility is not edited
+theorem1_tick1_6mask: (1, 1, 0, 0, 0, 0) on NN order +e1,-e1,+e2,-e2,+e3,-e3
+theorem1_ticks: t(A)=1 t(B)=undefined t(C)=2 t(D)=undefined
+theorem2_reverse: undefined
+theorem3_face: undefined
+PASS: audit-inputs static literal AUDIT_INPUT_PATHS names the two declared files and both exist
+PASS: source-lattice current cubic nearest-neighbor wording is pinned
+PASS: source-admissibility-boundary Admissibility does not supply formation site, probability, or rate
+PASS: source-admissibility-wording current local-distribution wording is pinned
+PASS: source-record-boundary current lock, content-only readout, and unreadable absence are pinned
+PASS: host-ball B_3(0) is the NN graph ball of radius 3 and contains the four probes
+PASS: seed origin is recorded at tick 0 with lock +e_1
+PASS: lock-alphabet lock letters are exactly the six unit NN steps
+PASS: allowed-step-rule from lock ±e_i a unit NN step is allowed iff it is parallel to e_i
+PASS: tick1-6mask tick-1 6-mask of the origin is (1,1,0,0,0,0)
+PASS: tick-A t(A) is defined and equals 1
+PASS: tick-B t(B) is undefined
+PASS: tick-C t(C) is defined and equals 2
+PASS: tick-D t(D) is undefined
+PASS: incoming-lock-A A locks the incoming step +e_1
+PASS: incoming-lock-C C locks the incoming step +e_1
+PASS: reverse-undefined reverse 3 t(A)^2 > t(B)^2 is undefined
+PASS: face-undefined face t(C)^2 > 2 t(D)^2 is undefined
+PASS: axis-support every formed site lies on the seed-lock axis inside B_3(0)
+PASS: axis-ticks on-axis formation ticks equal |n| and off-axis ball sites remain unformed
+PASS: perp-load-bearing perpendicular NN steps from the origin stay unformed, so reverse/face have no off-axis ticks
+PASS: no-collision this seed writes each formed site once; uniqueness is not required of the rule
+PASS: ball-cutoff the would-be axial step to (4,0,0) is excluded by the B_3(0) host
+PASS: predicate-gating hold/fail require both ticks; a missing tick yields undefined rather than a boolean
+PASS: note-contract claim scope, display boundary, theorems, and forbidden-phrase hygiene hold
+PASS: claim-scope-field YAML claim_scope matches the declared display sentence
+PASS: no-admissibility-write the displayed step rule is not entered as an Admissibility edit
+per_element: tick-1 6-mask and the four named probes are enumerated
+per_site: incoming lock is the forming NN step on B_3(0)
+per_mode: checked and not executed — no spectral claim
+per_block: reverse and face predicates are evaluated as hold/fail/undefined
+lattice_wide: checked and not executed — no unbounded-host theorem
+TOTAL: PASS=27 FAIL=0
+
+----- stderr -----
+

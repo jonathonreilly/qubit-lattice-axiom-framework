@@ -1,0 +1,71 @@
+===== runner cache v1 =====
+runner: scripts/nnseed_yprobe_sametick_neighbor_lock_sum_reverse_face_2026_08_15.py
+runner_sha256: a5508f0695441d560edeeae9abb0f88d8fd0772f5ebcec82e80bdb9443b1b535
+input_fingerprint_sha256: c040293bf33a37679c8a0c030b92154738354a635e87ff56e55f1fa5acea2da4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+same-tick-inclusive 6-NN lock-sum reverse/face on four nnseed y-probes
+AUDIT_INPUT_PATHS:
+  docs/NNSEED_YPROBE_SAMETICK_NEIGHBOR_LOCK_SUM_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Reverse and face from the same-tick-inclusive sum of 6-NN locks on the four nnseed y-probes are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/NNSEED_YPROBE_SAMETICK_NEIGHBOR_LOCK_SUM_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-euclidean-b3
+PASS: y-probes-in-host
+PASS: perp-step-blocks-parallel
+A S=[(1, 0, 0)] L=(1, 0, 0) t=0 incoming=[(0, 1, 0)] leftover=None
+B S=[(0, 0, 1), (1, 0, 0), (1, 0, 0)] L=(2, 0, 1) t=2 incoming=[(0, 0, 1), (1, 0, 0)] leftover=None
+C S=[(0, 1, 0), (0, 1, 0), (0, 1, 0), (0, 1, 0), (0, 1, 0)] L=(0, 5, 0) t=3 incoming=[(-1, 0, 0), (0, 0, -1), (0, 0, 1), (1, 0, 0)] leftover=(0, 1, 0)
+D S=[(0, 1, 0)] L=(0, 1, 0) t=1 incoming=[(1, 0, 0)] leftover=None
+PASS: theorem1-A-sum  ((1, 0, 0))
+PASS: theorem1-B-sum  ((2, 0, 1))
+PASS: theorem1-C-sum  ((0, 5, 0))
+PASS: theorem1-D-sum  ((0, 1, 0))
+PASS: theorem1-y-ticks-match-nsiso  ({'A': 0, 'B': 2, 'C': 3, 'D': 1})
+PASS: uniqueness-not-required  (B=[(0, 0, 1), (1, 0, 0)] C=[(-1, 0, 0), (0, 0, -1), (0, 0, 1), (1, 0, 0)])
+PASS: two-site-seed-locks
+PASS: seed-includes-same-tick-partner
+reverse=fail reverse_sum=(3, 0, 1) face=fail face_sum=(0, 6, 0)
+PASS: theorem2-reverse-fail  (fail)
+PASS: theorem3-face-fail  (fail)
+PASS: not-leftover-unique-vector  ((0, 1, 0))
+PASS: letter-is-not-probe-incoming
+PASS: empty-S-is-undefined
+PASS: not-strictly-earlier-leftover  (strict_reverse=UNDEFINED strict_B=(1, 0, 1))
+PASS: mutation-including-q-changes-A  ((1, 1, 0))
+PASS: mutation-leftover-changes-letter  (leftover_sum=(0, 2, 0) face_sum=(0, 6, 0))
+PASS: mutation-one-site-seed-changes-S  ([(0, 0, 1), (0, 1, 0), (1, 0, 0), (1, 0, 0)])
+PASS: x-probe-sum-is-fail-hold-not-this-display  (x_reverse=fail x_face=hold)
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: not-t-as-comparator
+PASS: a-is-seed-not-grown-incoming
+PASS: note-claim-scope
+PASS: note-reports-S-and-letters
+PASS: note-reports-fail-fail
+PASS: note-reverse-sum-not-zero
+PASS: note-face-sum-not-zero
+PASS: note-not-leftover-or-occupancy-or-pvm
+PASS: note-y-ticks-nsiso
+PASS: note-displayed-not-adopted
+PASS: note-same-tick-inclusive-rule
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+TOTAL: PASS=46 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,89 @@
+===== runner cache v1 =====
+runner: scripts/parallel_opposite_xprobe_later_tick_existential_opposite_reverse_face_2026_08_15.py
+runner_sha256: 0615cf6319e60d9ae2eed6115b331184d42cbf0f289439e83e2007ac79eae639
+input_fingerprint_sha256: 93bfea50925a97f8c30daec45477d3d8abe4663a39f057e017cad9c3b2bb0b4c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+later-tick existential opposite 6-NN reverse/face on parallel-opposite x-probes
+AUDIT_INPUT_PATHS:
+  docs/PARALLEL_OPPOSITE_XPROBE_LATER_TICK_EXISTENTIAL_OPPOSITE_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Reverse and face from existential opposite 6-NN locks at the first later tick when all four nspar x-probes are recorded are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/PARALLEL_OPPOSITE_XPROBE_LATER_TICK_EXISTENTIAL_OPPOSITE_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-x-probes-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: existential-opposite-identity
+PASS: theorem1-all-four-probes-recorded
+A t=0 S_*={+e_1, +e_2, −e_2, +e_3, −e_3} incoming=−e_1
+B t=2 S_*={+e_1, +e_2, +e_3} incoming=+e_3,+e_2
+C t=3 S_*={+e_1, −e_1} incoming=−e_2,−e_3,+e_3,+e_2
+D t=1 S_*={+e_1, −e_1, +e_2, +e_3, −e_3} incoming=+e_2
+T=3 t(A)=0 t(B)=2 t(C)=3 t(D)=1
+reverse=hold face=hold
+PASS: theorem1-later-tick-T  (3)
+PASS: theorem1-A-neighbor-lock-set  (((((2, 0, 0), (0, -1, 0)), ((2, 0, 0), (0, 0, -1)), ((2, 0, 0), (0, 0, 1)), ((2, 0, 0), (0, 1, 0)), ((0, 0, 0), (1, 0, 0)), ((1, 1, 0), (0, 1, 0)), ((1, -1, 0), (0, -1, 0)), ((1, 0, 1), (0, 0, 1)), ((1, 0, -1), (0, 0, -1))), frozenset({(0, 1, 0), (0, -1, 0), (1, 0, 0), (0, 0, -1), (0, 0, 1)})))
+PASS: theorem1-B-neighbor-lock-set  (((((2, 1, 1), (0, 0, 1)), ((2, 1, 1), (0, 1, 0)), ((2, 1, 1), (1, 0, 0)), ((0, 1, 1), (0, 0, 1)), ((0, 1, 1), (0, 1, 0)), ((1, 2, 1), (0, 1, 0)), ((1, 0, 1), (0, 0, 1)), ((1, 1, 2), (0, 0, 1)), ((1, 1, 0), (0, 1, 0))), frozenset({(1, 0, 0), (0, 0, 1), (0, 1, 0)})))
+PASS: theorem1-C-neighbor-lock-set  (((((1, 0, 0), (-1, 0, 0)), ((2, 1, 0), (1, 0, 0)), ((2, -1, 0), (1, 0, 0)), ((2, 0, 1), (1, 0, 0)), ((2, 0, -1), (1, 0, 0))), frozenset({(1, 0, 0), (-1, 0, 0)})))
+PASS: theorem1-D-neighbor-lock-set  (((((2, 1, 0), (1, 0, 0)), ((0, 1, 0), (0, 1, 0)), ((1, 0, 0), (-1, 0, 0)), ((1, 1, 1), (0, 0, 1)), ((1, 1, 1), (0, 1, 0)), ((1, 1, -1), (0, 0, -1)), ((1, 1, -1), (0, 1, 0))), frozenset({(0, 1, 0), (1, 0, 0), (-1, 0, 0), (0, 0, -1), (0, 0, 1)})))
+PASS: theorem1-A-B-mixed-vectors-remain-a-set
+PASS: theorem1-C-D-mixed-vectors-remain-a-set
+PASS: theorem2-reverse-hold  (hold)
+PASS: theorem3-face-hold  (hold)
+PASS: not-leftover-of-formation-time
+PASS: not-leftover-of-nslate-nnseed-x-probes
+PASS: not-leftover-of-nsopex-nsopp-x-probe-lists
+PASS: nsopp-cubic-isotropic-later-tick-hold-hold
+PASS: not-leftover-of-unique-own-incoming
+PASS: later-tick-includes-post-formation-neighbors
+PASS: sign-lettering-loses-axis-and-would-hide-hold
+PASS: not-probe-own-incoming-lock
+PASS: not-sum-leftover
+PASS: not-unique-vector-leftover
+PASS: incoming-locks-are-nn-steps
+PASS: uniqueness-not-required  (([(0, 0, 1), (0, 1, 0)], [(0, -1, 0), (0, 0, -1), (0, 0, 1), (0, 1, 0)]))
+PASS: two-site-parallel-opposite-lock-seed
+PASS: later-tick-not-self-and-formed-by-T
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: perp-step-incoming-lock
+PASS: mutation-empty-neighbor-locks-undefined
+PASS: mutation-no-opposite-pair-fails
+PASS: note-claim-scope
+PASS: note-reports-neighbor-lock-sets
+PASS: note-reports-hold-hold
+PASS: note-displayed-not-adopted
+PASS: note-does-not-use-occupancy-or-incoming
+PASS: note-not-sign-lettering
+PASS: note-not-ndot-or-occupancy-inner-product
+PASS: note-does-not-identify-incoming
+PASS: note-does-not-attach-formation-member
+PASS: note-not-unique-or-sum-leftover
+PASS: note-not-leftover-of-own-incoming
+PASS: note-not-leftover-of-nsopp
+PASS: note-not-leftover-of-nslate
+PASS: note-not-cubic-image-of-nsopp
+PASS: note-later-tick-T-defined
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+PASS: source-letter-from-existential-opposite-only
+TOTAL: PASS=63 FAIL=0
+
+----- stderr -----
+

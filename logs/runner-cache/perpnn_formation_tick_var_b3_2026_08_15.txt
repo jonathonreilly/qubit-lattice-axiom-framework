@@ -1,0 +1,50 @@
+===== runner cache v1 =====
+runner: scripts/perpnn_formation_tick_var_b3_2026_08_15.py
+runner_sha256: 0e932c3d02e67fa5497ae3252f4865dc16fffee24e6ab1de81cbcb89483c852a
+input_fingerprint_sha256: f14193805bf874791ade7d2167ea3858bdf7f0327a961e37fa5b8ba81917399e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.07
+status: ok
+----- stdout -----
+perpnn formation-tick arrival-speed variance on B_3(0)
+AUDIT_INPUT_PATHS:
+  docs/PERPNN_FORMATION_TICK_VAR_B3_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Arrival-speed variance of perpnn formation-tick on formed nonzero sites of B_3(0) is reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/PERPNN_FORMATION_TICK_VAR_B3_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+formed_nonzero=120 unformed=[(-3, 0, 0), (3, 0, 0)]
+tick_histogram={1: 4, 2: 12, 3: 26, 4: 42, 5: 36}
+PASS: theorem1-formed-nonzero-set  (n=120 unformed=[(-3, 0, 0), (3, 0, 0)])
+PASS: theorem1-tick-histogram  ({1: 4, 2: 12, 3: 26, 4: 42, 5: 36})
+PASS: theorem1-note-reports-set
+PASS: theorem1-uniqueness-not-required  ([(0, -1, 0), (0, 0, -1), (0, 0, 1), (0, 1, 0)])
+PASS: theorem1-not-hop-count
+Q=22481/54000
+var=0.012492962195816963
+PASS: theorem2-second-moment  (22481/54000)
+PASS: theorem2-exact-var-coeff
+PASS: theorem2-truncated-variance  (0.012492962195816963)
+PASS: theorem2-occupancy
+PASS: mutation-drop-perp-forms-seed-axis-radius-3  (free_n=123 t300=3)
+PASS: seed-origin-tick-zero-lock-plus-e1
+PASS: formation-stays-in-host
+PASS: note-claim-scope
+PASS: note-displayed-not-adopted
+PASS: no-admissibility-write
+PASS: no-l1-attach
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-pins-axiom-wording
+PASS: note-machine-status-no-axiom-edit
+PASS: source-audit-paths-are-static-literals
+TOTAL: PASS=26 FAIL=0
+
+----- stderr -----
+

@@ -203,3 +203,10 @@ with the disposable worktree.
 
 This is proposal-delivery evidence only. It applies no audit verdict and moves
 no retention, obligation, axiom, or TOE status.
+
+Remote delivery opened as PR
+[#7037](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7037),
+verified `OPEN`, non-draft, `MERGEABLE`, and `CLEAN` on exact Block-7 base
+`3a0372a927e2528b1186fc63fe48e368d5b4abf1`. Opening head was
+`85aefe7570c5cd73a361b23245d149eec8a64f8d`; the science payload remains commit
+`4195f59a95f9fc4dbca0baa042431b54817699a3`.

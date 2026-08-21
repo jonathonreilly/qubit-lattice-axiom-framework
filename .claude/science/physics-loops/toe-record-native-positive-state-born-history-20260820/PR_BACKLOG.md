@@ -201,7 +201,7 @@ Opened and remotely verified:
 PR #7036 is `OPEN`, non-draft, and `CLEAN` on the intended exact Block-6
 branch. No review-loop is used.
 
-## Block 8 — Local, Delivery Pending
+## Block 8 — Proposal Delivered
 
 Branch: `physics-loop/toe-fixed-carrier-nondemolition-block8-20260820`, stacked
 on exact Block-7 delivery head `3a0372a927e2528b1186fc63fe48e368d5b4abf1`.
@@ -219,6 +219,14 @@ Science commit `4195f59a95` passes full fixed-point checkpoint `02003f58b2a9`,
 strict lint over 4,904 rows with zero errors, and the seeded committed-delta
 gate over 19 changed paths/one claim with `forensic_evidence_ready=true`, the
 independent helper, and zero failures/control failures. Generated audit
-surfaces were discarded. Remaining delivery work is push, exact stacked-PR
-opening, and remote head/base/state verification. This entry claims no audit,
-retention, obligation retirement, axiom update, or TOE movement.
+surfaces were discarded. The remote delivery record follows. This entry claims
+no audit, retention, obligation retirement, axiom update, or TOE movement.
+
+Opened and remotely verified:
+
+- [#7037 — fixed-carrier presence-separated Record boundary — bounded theorem
+  — bounded support](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7037)
+
+PR #7037 is `OPEN`, non-draft, `MERGEABLE`, and `CLEAN` on exact Block-7 base
+`3a0372a927e2528b1186fc63fe48e368d5b4abf1`. Opening head was
+`85aefe7570c5cd73a361b23245d149eec8a64f8d`. No review-loop was used.

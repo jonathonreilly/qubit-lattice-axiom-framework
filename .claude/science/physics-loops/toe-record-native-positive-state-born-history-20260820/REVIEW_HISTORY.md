@@ -1027,3 +1027,12 @@ Generated ledger, queue, and derived surfaces were discarded with the
 disposable worktree. This certifies proposal delivery only; it applies no
 audit verdict and changes no retention, obligation, axiom, or TOE percentage.
 Remote push and PR verification remain. No review-loop was used.
+
+## Block 8 Remote Delivery — 2026-08-20T22:00-04:00
+
+The two-commit Block-8 branch was pushed and opened as PR #7037. Remote
+verification reports `OPEN`, non-draft, `MERGEABLE`, and `CLEAN`, with exact
+Block-7 base `3a0372a927e2528b1186fc63fe48e368d5b4abf1` and opening head
+`85aefe7570c5cd73a361b23245d149eec8a64f8d`. The proposal remains unaudited;
+delivery does not retire an obligation or move an axiom or TOE percentage. No
+review-loop was used.

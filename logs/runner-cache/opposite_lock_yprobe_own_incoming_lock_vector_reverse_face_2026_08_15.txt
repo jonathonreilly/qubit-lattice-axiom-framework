@@ -1,0 +1,84 @@
+===== runner cache v1 =====
+runner: scripts/opposite_lock_yprobe_own_incoming_lock_vector_reverse_face_2026_08_15.py
+runner_sha256: 8494b82c1003985763b71a4f7a19982ad68c0a8c407ddb95ee35a4eff3405266
+input_fingerprint_sha256: f4ae60a16fcf00818ab6cd4d3685ce7955974a1ea0465db8fa3d2d5bc5b5c145
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+own unique incoming lock vector reverse/face on opposite-lock y-probes
+AUDIT_INPUT_PATHS:
+  docs/OPPOSITE_LOCK_YPROBE_OWN_INCOMING_LOCK_VECTOR_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Reverse and face from the probe's own unique incoming lock vector on the four opposite-lock y-probes are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/OPPOSITE_LOCK_YPROBE_OWN_INCOMING_LOCK_VECTOR_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-y-probes-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: unique-own-incoming-letter-identity
+PASS: reverse-face-identity
+A t=0 incoming=[−e_1] L=−e_1
+B t=2 incoming=[+e_1] L=+e_1
+C t=1 incoming=[+e_2] L=+e_2
+D t=3 incoming=[−e_2,−e_3,+e_3] L=UNDEFINED
+reverse=hold face=UNDEFINED
+per_element: unique letter is the probe's own singleton earliest incoming lock vector in {±e_i}, else UNDEFINED
+per_site: scored only at y-probes A,B,C,D on Euclidean B_3(0); no other sites
+per_mode: no spectral or mode calculation is executed on this finite host
+per_block: four unique lock vectors plus reverse/face as hold, fail, or UNDEFINED
+lattice_wide: checked and not executed — no lattice-wide lettering rule is claimed
+PASS: theorem1-A-own-incoming-letter  (([(-1, 0, 0)], (-1, 0, 0)))
+PASS: theorem1-B-own-incoming-letter  (([(1, 0, 0)], (1, 0, 0)))
+PASS: theorem1-C-own-incoming-letter  (([(0, 1, 0)], (0, 1, 0)))
+PASS: theorem1-D-own-incoming-letter  (([(0, -1, 0), (0, 0, -1), (0, 0, 1)], 'UNDEFINED'))
+PASS: theorem1-A-is-seed-letter
+PASS: theorem1-D-mixed-incoming-not-singleton
+PASS: theorem2-reverse-hold  (hold)
+PASS: theorem3-face-undefined  (UNDEFINED)
+PASS: not-nsopy-neighbor-lock-leftover
+PASS: not-nsopown-x-probes
+PASS: not-ownvec-nnseed
+PASS: not-nnlock-named-sign
+PASS: incoming-locks-are-nn-steps
+PASS: uniqueness-not-required  (([(-1, 0, 0)], [(0, -1, 0), (0, 0, -1), (0, 0, 1)]))
+PASS: two-site-opposite-lock-seed
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: perp-step-incoming-lock
+PASS: mutation-empty-incoming-undefined
+PASS: mutation-mixed-incoming-undefined
+PASS: mutation-nsopy-leftover-reverse-would-be-undefined
+PASS: mutation-nsopown-reverse-would-be-undefined
+PASS: mutation-ownvec-face-would-fail
+PASS: note-claim-scope
+PASS: note-reports-own-incoming-letters
+PASS: note-reports-hold-undefined
+PASS: note-displayed-not-adopted
+PASS: note-does-not-use-occupancy-or-neighbor-locks
+PASS: note-not-sign-lettering
+PASS: note-not-nsopy-leftover
+PASS: note-not-nsopown-x-probes
+PASS: note-not-ownvec-different-seed
+PASS: note-does-not-attach-formation-member
+PASS: note-forbids-enlargement-and-cache
+PASS: note-no-star-dijkstra-gram-occupancy
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+PASS: source-letter-from-own-incoming-only
+TOTAL: PASS=54 FAIL=0
+
+----- stderr -----
+

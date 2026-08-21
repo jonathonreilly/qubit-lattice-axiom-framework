@@ -4,7 +4,7 @@ runner_sha256: 000ea305a92d65aa3cdbbc1a2176dba7153fce44dbb2badfb1d9dafe104ec5f4
 input_fingerprint_sha256: 5e53897b2f9ce669f362e7a18b69368e5e31ea9d112f4f63de34b992b3dddb1a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 named rank-1 PVM-letter reverse/face on four opposite-lock x-probes

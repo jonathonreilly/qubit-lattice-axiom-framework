@@ -1,0 +1,112 @@
+===== runner cache v1 =====
+runner: scripts/x_axis_opposite_e2_xprobe_sametick_union_own_existential_opposite_reverse_face_2026_08_15.py
+runner_sha256: 2115e611781f3bb0081921f931f273515af732b6ae9f7ad87bc5b067ebaa2058
+input_fingerprint_sha256: b41284be53b14de87a0849dab5bdf47c432a459c67c9b4ab2a82df8fab7695e4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+same-tick ∪ own incoming reverse/face on x-axis opposite ±e_2 x-probes
+AUDIT_INPUT_PATHS:
+  docs/X_AXIS_OPPOSITE_E2_XPROBE_SAMETICK_UNION_OWN_EXISTENTIAL_OPPOSITE_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Reverse and face from same-tick ∪ own incoming lock on the four x-axis opposite ±e_2 x-probes are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/X_AXIS_OPPOSITE_E2_XPROBE_SAMETICK_UNION_OWN_EXISTENTIAL_OPPOSITE_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-x-probes-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: existential-opposite-identity
+PASS: unique-own-incoming-letter-identity
+PASS: own-lock-in-set-identity
+PASS: theorem1-all-four-probes-recorded
+A t=0 L=−e_2 S+={+e_2, −e_2} incoming=−e_2
+B t=2 L=+e_2 S+={+e_2, +e_3} incoming=+e_2
+C t=1 L=+e_1 S+={+e_1, −e_2} incoming=+e_1
+D t=3 L=UNDEFINED S+={+e_1, +e_2, −e_2, +e_3, −e_3} incoming=−e_1,−e_3,+e_3
+t(A)=0 t(B)=2 t(C)=1 t(D)=3 leftover_T=3
+reverse=hold face=hold reverse_uses_L(A)=True
+reverse_hold_channel=uses_L_A
+per_element: each lock vector in same-tick-inclusive six-neighbor locks union L(q) when L(q) is defined
+per_site: scored only at x-probes A,B,C,D on Euclidean B_3(0); no other sites
+per_mode: no spectral or mode calculation is executed on this finite host
+per_block: four S^+ lock sets plus reverse/face as hold, fail, or UNDEFINED
+lattice_wide: checked and not executed — no lattice-wide lettering rule is claimed
+PASS: theorem1-formation-ticks  ({'A': 0, 'B': 2, 'C': 1, 'D': 3})
+PASS: theorem1-A-own-letter-and-plus-set  (((0, -1, 0), frozenset({(0, -1, 0), (0, 1, 0)})))
+PASS: theorem1-B-own-letter-and-plus-set  (((0, 1, 0), frozenset({(0, 0, 1), (0, 1, 0)})))
+PASS: theorem1-C-own-letter-and-plus-set  (((1, 0, 0), frozenset({(1, 0, 0), (0, -1, 0)})))
+PASS: theorem1-D-own-letter-and-plus-set  (('UNDEFINED', frozenset({(0, 1, 0), (0, -1, 0), (1, 0, 0), (0, 0, -1), (0, 0, 1)})))
+PASS: theorem1-A-is-seed-letter
+PASS: theorem1-D-mixed-incoming-not-singleton
+PASS: theorem1-reverse-hold-uses-L-A  (uses_L_A)
+PASS: theorem2-reverse-hold  (hold)
+PASS: theorem3-face-hold  (hold)
+PASS: not-leftover-of-sametick-exclude-q
+PASS: not-leftover-of-strictly-earlier-own-lock-in
+PASS: not-leftover-of-unique-own-incoming
+PASS: not-leftover-of-later-tick-union-own
+PASS: holding-reverse-does-not-need-later-T-when-own-lock-included
+PASS: no-global-later-T-in-letter
+PASS: not-leftover-of-x-axis-opposite-e2-yprobe  (('hold', 'hold', frozenset({(0, 0, -1), (-1, 0, 0), (0, 0, 1), (0, 1, 0)}), 'hold_without_defined_L_A'))
+PASS: not-leftover-of-x-axis-opposite-e2-zprobe  (('fail', 'hold', frozenset({(0, 0, 1), (0, 1, 0)})))
+PASS: not-leftover-of-x-axis-opposite-e3-xprobe  (('hold', 'fail', frozenset({(0, 0, -1), (0, 0, 1)})))
+PASS: not-leftover-of-same-lock-e2-xprobe  (('fail', 'fail', frozenset({(0, 1, 0)})))
+PASS: not-leftover-of-nspar-xprobe-sametick-union-own  (('fail', 'hold', frozenset({(1, 0, 0), (-1, 0, 0)})))
+PASS: sign-lettering-loses-axis
+PASS: not-sum-leftover
+PASS: not-unique-vector-leftover
+PASS: incoming-locks-are-nn-steps
+PASS: uniqueness-not-required  ([(-1, 0, 0), (0, 0, -1), (0, 0, 1)])
+PASS: two-site-opposite-lock-seed
+PASS: same-tick-neighbors-at-or-before-own-t
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: perp-step-incoming-lock
+PASS: mutation-empty-plus-set-undefined
+PASS: mutation-no-opposite-pair-fails
+PASS: mutation-exclude-q-reverse-would-fail
+PASS: mutation-own-incoming-face-would-be-undefined
+PASS: mutation-sum-would-fail
+PASS: mutation-yprobe-does-not-use-L-A
+PASS: mutation-zprobe-would-fail-reverse
+PASS: mutation-opposite-e3-xprobe-would-fail-face
+PASS: mutation-same-lock-e2-would-fail
+PASS: note-claim-scope
+PASS: note-reports-plus-sets
+PASS: note-reports-hold-hold-and-uses-L-A
+PASS: note-displayed-not-adopted
+PASS: note-does-not-use-occupancy
+PASS: note-not-sign-lettering
+PASS: note-not-ndot-or-occupancy-inner-product
+PASS: note-does-not-attach-formation-member
+PASS: note-not-unique-or-sum-leftover
+PASS: note-not-leftover-of-own-incoming
+PASS: note-not-leftover-of-sametick-exclude-q
+PASS: note-not-leftover-of-strictly-earlier-own-lock-in
+PASS: note-not-leftover-of-later-tick-union-own
+PASS: note-not-leftover-of-yprobe
+PASS: note-not-leftover-of-zprobe
+PASS: note-not-leftover-of-opposite-e3-xprobe
+PASS: note-not-leftover-of-same-lock-e2-xprobe
+PASS: note-sametick-union-own
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+PASS: source-letter-from-sametick-union-own-existential-opposite
+TOTAL: PASS=80 FAIL=0
+
+----- stderr -----
+

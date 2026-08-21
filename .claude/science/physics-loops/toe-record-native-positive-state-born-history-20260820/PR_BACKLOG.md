@@ -163,7 +163,7 @@ PR #7031 is `OPEN`, non-draft, and `CLEAN`, with exact head
 `d14cc2b1e0b120bb6497301845bc4f970c38188b` on the intended Block-5 branch.
 No review-loop was used.
 
-## Block 7 — Science Certified, Remote Delivery Pending
+## Block 7 — Proposal Delivered
 
 Branch:
 `physics-loop/toe-cq-record-writer-block7-20260820`, stacked on the exact
@@ -191,6 +191,12 @@ vocabulary, the detached committed-tree fixed-point pipeline, and strict lint
 over 4,903 rows with zero errors. The seeded committed-delta replay against
 exact Block-6 base `ec07e88db2` finds 19 changed paths and one claim with
 `forensic_evidence_ready=true`, no failures or control failures, and the
-independent helper discovered. Generated audit surfaces were discarded. Push,
-PR opening, and remote stack verification remain pending. No review-loop is
-used.
+independent helper discovered. Generated audit surfaces were discarded.
+
+Opened and remotely verified:
+
+- [#7036 — fresh-ancilla staged cq/Record intertwiner — bounded theorem —
+  bounded support](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7036)
+
+PR #7036 is `OPEN`, non-draft, and `CLEAN` on the intended exact Block-6
+branch. No review-loop is used.

@@ -2,16 +2,16 @@
 
 ## Current State
 
-The 24-hour campaign runs until 2026-08-21 11:27:51 EDT. Blocks 1--6 are
-proposed in PRs #7020, #7022, #7023, #7027, #7030, and #7031. Block 7 is
-active on `physics-loop/toe-cq-record-writer-block7-20260820`, stacked on the
+The 24-hour campaign runs until 2026-08-21 11:27:51 EDT. Blocks 1--7 are
+proposed in PRs #7020, #7022, #7023, #7027, #7030, #7031, and #7036. Block 7
+is on `physics-loop/toe-cq-record-writer-block7-20260820`, stacked on the
 exact Block-6 delivery head `ec07e88db2`. Its corrected science commit
 `f53d816172` passes primary `18/18` and a separately implemented independent
 reconstruction `14/14`. Fresh caches, helper registration, graph manifest,
 repository invariants, premise purity, vocabulary, the full five-role panel,
 the committed-tree fixed-point pipeline, strict lint over 4,903 rows with zero
-errors, and the 19-path/one-claim forensic replay all pass. Push and remote PR
-verification remain.
+errors, and the 19-path/one-claim forensic replay all pass. PR #7036 is open,
+non-draft, and clean on the exact Block-6 branch.
 
 No block has an audit verdict, retention, obligation retirement, or TOE-score
 movement. The frozen percentages remain 95/92/50 for operational
@@ -20,7 +20,9 @@ quantum/Records, 76/72/41 for causal/time, 95/96/75 for inertia/matter,
 realized history, followed by the unchanged evidence ceilings 99/99/99/94/99.
 
 Gravity is externally owned. The latest clean gravity stack observed at this
-checkpoint reaches PRs #7028--#7029 (Blocks 157--158); do not duplicate or
+checkpoint reaches PR #7032 (Block 159). It finds a one-edge support-pattern
+wall, preserves the sign obstruction, and reopens a signed-flux curvature
+question without a positive source/rate/lapse bridge. Do not duplicate or
 modify it here.
 
 ## Block 6 Exact Return
@@ -176,4 +178,5 @@ lint checks 4,903 rows with zero errors; and the committed-delta replay against
 exact Block-6 base `ec07e88db2` finds 19 changed paths and one claim with
 `forensic_evidence_ready=true`, the independent helper discovered, and no
 failures or control failures. Disposable generated surfaces were discarded.
-Remote delivery remains pending.
+Remote delivery is PR #7036, verified open, non-draft, and clean on exact
+Block-6 head `ec07e88db2`.

@@ -954,3 +954,22 @@ This certifies the bounded proposal for delivery only. It does not register
 the label algebra as a framework Record, prove nondemolition permanence,
 select an actual history, retire an obligation, justify an axiom amendment, or
 move a TOE percentage. Remote push and stacked-PR verification remain.
+
+## Block 7 remote delivery — 2026-08-20T20:31-04:00
+
+The two-commit Block-7 branch was pushed and opened as PR #7036. Remote
+verification reports `OPEN`, non-draft, and `CLEAN`, with the intended Block-6
+base `physics-loop/toe-instrument-record-state-lift-block6-20260820` and exact
+pre-delivery-record head `a58456bfe41acfe3411d559702c1a0413990db8d`.
+PR #7031 was independently rechecked `OPEN`, non-draft, and `CLEAN` at exact
+Block-6 head `ec07e88db2850dac2c0497c1f29504aa94b2b3d5`.
+
+The latest externally owned gravity PR #7032/Block 159 is also clean. Its
+one-edge multiplicative/reweighted connection cannot reach the live sector
+without a support change; it reopens a signed-flux curvature census but does
+not supply a positive gravity state or source/rate/lapse bridge. This does not
+displace the Block-8 fixed-carrier Record route, and no gravity files are
+modified here.
+
+This records proposal delivery, not audit, retention, obligation retirement,
+axiom pressure, or TOE movement. No review-loop was used.

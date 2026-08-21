@@ -1,9 +1,9 @@
 # Claim Status Certificate
 
-Campaign state: Blocks 1--6 are proposed in PRs #7020, #7022, #7023, #7027,
-#7030, and #7031. Block 7 is a local proposal on
-`physics-loop/toe-cq-record-writer-block7-20260820`, stacked on the exact
-Block-6 delivery head `ec07e88db2`. No campaign block is audited or retained.
+Campaign state: Blocks 1--7 are proposed in PRs #7020, #7022, #7023, #7027,
+#7030, #7031, and #7036. Block 7 is stacked on exact Block-6 delivery head
+`ec07e88db2`; PR #7036 is open, non-draft, and clean on that intended branch.
+No campaign block is audited or retained.
 
 Current Block-7 artifact status: science commit `f53d816172` passes primary
 `18/18` and independent `14/14`. Fresh input-bound caches, Python compilation,
@@ -12,9 +12,9 @@ purity, vocabulary, and the five-role corrected-science panel pass. A detached
 committed-tree replay completed the full fixed-point pipeline; strict lint
 checked 4,903 rows with zero errors; and the seeded committed-delta gate found
 19 changed paths and one claim with `forensic_evidence_ready=true`, no failures
-or control failures, and the independent helper discovered. Push and remote PR
-verification remain pending at this certificate checkpoint; no delivery,
-retention, or audit result is inferred early.
+or control failures, and the independent helper discovered. PR #7036 is
+remotely verified open, non-draft, and clean on the exact Block-6 stack. This
+is proposal delivery only; no retention or audit result is inferred.
 
 Proposed Block-6 theorem: on the exact supplied Block-4 preparation and
 staged A/B instrument, a typed one-site Record code has a Hermitian branch-

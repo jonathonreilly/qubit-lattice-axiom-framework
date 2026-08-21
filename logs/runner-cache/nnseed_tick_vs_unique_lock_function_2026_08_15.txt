@@ -1,0 +1,54 @@
+===== runner cache v1 =====
+runner: scripts/nnseed_tick_vs_unique_lock_function_2026_08_15.py
+runner_sha256: 8e11dc6fb2741585450b0bad70a450a3f52ac8906c5870b80f7dd55c7099e5a6
+input_fingerprint_sha256: 98c134149eb9499471435e7b634c381a92144365c8e0c183149df6aa556719b1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+nnseed tick vs unique-lock function on Euclidean B_3(0)
+AUDIT_INPUT_PATHS:
+  docs/NNSEED_TICK_VS_UNIQUE_LOCK_FUNCTION_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Whether formation-tick is a function of unique earliest incoming lock on the nnseed unique-lock sites of B_3(0) is reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/NNSEED_TICK_VS_UNIQUE_LOCK_FUNCTION_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+host=123 formed=121 unique_lock_sites=61
+letter_counts: +e_1=14, -e_1=13, +e_2=6, -e_2=10, +e_3=9, -e_3=9
+t_is_function_of_L=no
+witness (-2,-2,0) -e_1 t=4; (-2,0,0) -e_1 t=3
+displayed_witness (0,1,0) +e_2 t=0; (0,3,0) +e_2 t=4
+locks(1,1,1)=[(0, 0, 1), (1, 0, 0)]
+PASS: host-is-b3-closed-ball
+PASS: host-is-euclidean-includes-nn8-site
+PASS: theorem1-unique-lock-set-includes-both-seeds  (N=61 origin=((1, 0, 0), 0) e2=((0, 1, 0), 0))
+PASS: theorem1-map-letters-are-unit-steps
+PASS: theorem1-uniqueness-not-required  ([(0, 0, 1), (1, 0, 0)])
+PASS: theorem1-euclidean-corner-is-unique-lock  (((1, 0, 0), 3))
+PASS: theorem2-t-is-not-a-function-of-L  (not-function)
+PASS: theorem2-witness-pair-same-letter-different-tick  (((-2, -2, 0), (-2, 0, 0), (-1, 0, 0), 4, 3))
+PASS: theorem2-displayed-witness-010-030  (((0, 1, 0), 0) vs ((0, 1, 0), 4))
+PASS: theorem2-not-an-artifact-of-including-seeds
+PASS: cardinality-not-one-site-clone  (two=61 one=51)
+PASS: seed-ticks-and-locks
+PASS: formation-stays-in-host
+PASS: formation-uses-earliest-tick-queue
+PASS: source-host-is-euclidean-dot
+PASS: note-claim-scope
+PASS: note-reports-unique-map
+PASS: note-reports-witness
+PASS: note-displayed-not-adopted
+PASS: note-content-alone-consequence
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-machine-status-no-axiom-edit
+PASS: source-audit-paths-are-static-literals
+TOTAL: PASS=28 FAIL=0
+
+----- stderr -----
+

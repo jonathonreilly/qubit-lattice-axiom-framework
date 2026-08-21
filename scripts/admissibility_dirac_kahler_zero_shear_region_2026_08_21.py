@@ -183,7 +183,7 @@ AUDIT_INPUT_PATHS = (
 
 AUDIT_TIMEOUT_SEC = 600
 # Authority pins, single-line hex literals refreshed by anchored sed at landing.
-CURRENT_MAIN = "005f047923055e6ecd5dc8bce1ffd71765c2ffd8"
+CURRENT_MAIN = "38109c451a2ba1affde68aeaf58e6507187ff7af"
 CURRENT_AXIOM_BLOB = "bc23300becfe4e4db57153c0e94cfcdf2338da71"
 CURRENT_REGISTRY_BLOB = "b93959cca4f7e26c673cdccbe601e50c3cb93daa"
 WORKTREE_AXIOM_BLOB = "bc23300becfe4e4db57153c0e94cfcdf2338da71"

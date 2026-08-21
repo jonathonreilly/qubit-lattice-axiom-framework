@@ -242,3 +242,23 @@ fresh. The no-go packet passes after all eight ATTEMPTED routes cite retained
 type/target premises separately from current proposal witnesses. This is
 proposal evidence only: audit status none, retention none, obligation
 retirement zero, and TOE percentage movement zero.
+
+## Block 9 Committed-Tree Delivery Evidence
+
+Science commit `b583a8c4012a3179624c0ef839b006106a7069fa` was replayed on
+exact Block-8 delivery base `476833c22c2cc9e8280ef37badebbe5ca70951e5`.
+The full fixed-point pipeline completed through checkpoint
+`78ad809971aa62d4a9b5a23572f1bbdb`; strict lint checked 4,905 rows with ten
+warnings and zero errors. The committed-delta gate examined 19 changed paths
+and one claim, reported `forensic_evidence_ready=true`, discovered the
+independent helper, and found zero failures/control failures. Both changed
+runner caches are fresh. Generated audit surfaces are disposable and no audit
+verdict was applied.
+
+The ninth-PR cluster-cap judgment passes Block 9 because its exact nonunitary
+channel, integrated dual, rank/resource accounting, and carrier/tag/coupling/
+support discriminators are new load-bearing content. It simultaneously closes
+further carrier-only work and requires Block 10 to move to the physical
+effect-frame/Admissibility seam. Audit status none, retained status none,
+obligation retirement zero, axiom movement zero, and TOE percentage movement
+zero remain binding.

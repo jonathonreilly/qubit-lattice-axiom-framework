@@ -251,6 +251,14 @@ N1--N8 packet. This is a finite absorbing Hilbert-channel and type/resource
 discriminator, not a homogeneous strict-NN site-Record law. Audit, retention,
 obligation retirement, axiom status, and TOE movement remain zero.
 
-Pending delivery gates: explicit science commit, fresh committed-tree
-fixed-point pipeline, strict lint, committed-delta evidence, push, stacked PR,
-and remote base/head/state verification. No review-loop is used.
+Science commit `b583a8c4012a3179624c0ef839b006106a7069fa` now passes the
+detached committed-tree fixed-point pipeline through checkpoint
+`78ad809971aa62d4a9b5a23572f1bbdb`, strict lint over 4,905 rows with zero
+errors, and the 19-path/one-claim committed-delta gate with
+`forensic_evidence_ready=true`, independent-helper discovery, and zero
+failures/control failures. Both PR-diff caches are fresh. The five-role panel
+also serves as the ninth-PR cluster-cap evaluator and passes this genuinely new
+nonunitary/rank/type-discriminator block while closing the carrier-only seam.
+
+Pending delivery gates: push, stacked PR creation, and remote exact
+base/head/state verification. No review-loop is used.

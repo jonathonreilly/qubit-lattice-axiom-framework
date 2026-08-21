@@ -268,3 +268,14 @@ result is a parity-decoupling kill of the proposed positive door plus three
 bounded survivors, explicitly with zero retirement/TOE movement. Do not
 duplicate that worker's branch; re-rank only if it later supplies a positive
 source/rate/lapse connector or retained obligation retirement.
+
+Committed-tree delivery gates now pass for science commit
+`b583a8c4012a3179624c0ef839b006106a7069fa`: full pipeline checkpoint
+`78ad809971aa62d4a9b5a23572f1bbdb`, strict lint over 4,905 rows with zero
+errors, both PR-diff caches fresh, and 19-path/one-claim committed-delta
+evidence with `forensic_evidence_ready=true`, independent-helper discovery,
+and zero failures/control failures. The five-role panel also passes the
+ninth-PR cluster cap only because this block adds a genuinely new nonunitary
+construction and exact discriminator suite; it declares carrier-only work
+saturated. Generated audit surfaces are disposable. Push, stacked-PR creation,
+and remote verification remain before Block 10 starts.

@@ -1119,3 +1119,34 @@ movement. This is significant gravity route correction but not a positively
 retained gravity/source/rate/lapse completion, so it does not displace the
 Block-10 Record/Born central-law fork. No files from that stack are modified
 here.
+
+## Block 9 Cluster-Cap And Committed-Tree Gate — 2026-08-20T23:47-04:00
+
+Because Block 9 is the ninth PR in one stacked Record/Born family, the
+five-role panel also served as the required judgment-based cluster-cap
+evaluator. It passes this block for delivery because the delta is not another
+corollary or pointer variant: it supplies the first exact total nonunitary
+absorbing construction in the stack, proves the integrated dual and the
+separate total/active rank costs, and resolves carrier, tag, coupling, and
+support discriminators. The same evaluator declares the finite carrier/
+dilation/rank seam saturated and redirects Block 10 to physical effect-frame
+registration and Admissibility descent. A tenth carrier-only PR would fail
+this cap.
+
+Science commit `b583a8c4012a3179624c0ef839b006106a7069fa` was replayed from
+exact Block-8 delivery base
+`476833c22c2cc9e8280ef37badebbe5ca70951e5` in a detached disposable
+worktree. The full fixed-point pipeline completed through checkpoint
+`78ad809971aa62d4a9b5a23572f1bbdb`. Strict audit lint checked 4,905 rows with
+ten warnings and zero errors. The committed-delta gate examined 19 changed
+paths and one claim, reported `forensic_evidence_ready=true`, discovered the
+independent checker in addition to the complete 29-helper primary dependency
+set, and found zero failures and zero control failures. The PR-diff cache gate
+found both changed runners fresh, and the committed diff has no whitespace
+errors.
+
+Generated ledger, queue, graph cache, and derived audit surfaces are confined
+to the disposable worktree and will be discarded. This is proposal-delivery
+evidence only: no audit verdict was applied, and retention, obligation
+retirement, axiom status, and every TOE percentage remain unchanged. No
+review-loop was used.

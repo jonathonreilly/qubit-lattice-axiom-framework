@@ -1,0 +1,78 @@
+===== runner cache v1 =====
+runner: scripts/nnseed_zprobe_formdraw_kernel_pvm_reverse_face_2026_08_15.py
+runner_sha256: 7ba2bc18a53d7ee6556a437ebd93489ccdb00f28f69886eb3a16da32ed93bb70
+input_fingerprint_sha256: 391af1662d4362fd5eede014dfd4644eafb025140d437ac3277f4956ed383f1b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+formdraw occupancy-kernel PVM-letter reverse/face on four nnseed z-probes
+AUDIT_INPUT_PATHS:
+  docs/NNSEED_ZPROBE_FORMDRAW_KERNEL_PVM_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Reverse and face from formdraw occupancy-kernel PVM letters on the four nnseed z-probes, or UNDEFINED, are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/NNSEED_ZPROBE_FORMDRAW_KERNEL_PVM_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-euclidean-b3
+PASS: z-probes-in-host
+PASS: perp-step-blocks-parallel
+PASS: named-pvm-rank1-projectors
+PASS: named-pvm-traces-k1
+PASS: named-pvm-letters-are-plus-minus
+A n=(0,0,-1/3) k=1 abc=(0,0,-1) L={+,−} t=1 incoming=[(0, 0, 1)]
+B n=(-1/3,0,-1/3) k=2 abc=(-1,0,-1) L={+,−} t=2 incoming=[(0, 0, 1), (1, 0, 0)]
+C n=(0,-1/3,-1/3) k=2 abc=(0,-1,-1) L={+,−} t=4 incoming=[(-1, 0, 0), (0, 1, 0), (1, 0, 0)]
+D n=(0,0,-1/3) k=1 abc=(0,0,-1) L={+,−} t=1 incoming=[(0, 0, 1)]
+PASS: theorem1-n-A  ((Fraction(0, 1), Fraction(0, 1), Fraction(-1, 3)))
+PASS: theorem1-n-B  ((Fraction(-1, 3), Fraction(0, 1), Fraction(-1, 3)))
+PASS: theorem1-n-C  ((Fraction(0, 1), Fraction(-1, 3), Fraction(-1, 3)))
+PASS: theorem1-n-D  ((Fraction(0, 1), Fraction(0, 1), Fraction(-1, 3)))
+PASS: theorem1-n-C-neq-n-D  (zC=(Fraction(0, 1), Fraction(-1, 3), Fraction(-1, 3)) zD=(Fraction(0, 1), Fraction(0, 1), Fraction(-1, 3)) xC=(Fraction(-1, 3), Fraction(0, 1), Fraction(0, 1)))
+PASS: theorem1-letters-all-plus-minus
+PASS: theorem1-z-ticks-match-nsiso  ({'A': 1, 'B': 2, 'C': 4, 'D': 1})
+PASS: n-nonzero-assigns-both-letters
+PASS: hamiltonian-square-matches-k
+PASS: incoming-locks-are-nn-steps-not-letters
+PASS: uniqueness-not-required  (B=[(0, 0, 1), (1, 0, 0)] C=[(-1, 0, 0), (0, 1, 0), (1, 0, 0)])
+PASS: two-site-seed-locks
+combos=16 reverse_hits=4 face_hits=4
+reverse=some face=some
+PASS: theorem2-reverse-some  (some)
+PASS: theorem3-face-some  (some)
+PASS: not-unique-fn-on-x-probes
+PASS: not-ndot
+PASS: letters-do-not-feed-occupancy
+PASS: n-independent-of-letter-branch
+PASS: mutation-identify-incoming-sign-is-refused
+PASS: mutation-minus-as-vacant-changes-n
+PASS: mutation-one-site-seed-changes-n  ({'A': (Fraction(0, 1), Fraction(0, 1), Fraction(-1, 3)), 'B': (Fraction(-1, 3), Fraction(-1, 3), Fraction(-1, 3)), 'C': (Fraction(0, 1), Fraction(0, 1), Fraction(-1, 3)), 'D': (Fraction(0, 1), Fraction(-1, 3), Fraction(-1, 3))})
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: not-t-as-comparator
+PASS: no-sixteen-letter-census-beyond-pm
+PASS: note-claim-scope
+PASS: note-reports-n-and-letters
+PASS: note-reports-some-some
+PASS: note-nC-neq-nD-not-x-fact
+PASS: note-not-unique-fn-or-ndot
+PASS: note-z-ticks-nsiso
+PASS: note-displayed-not-adopted
+PASS: note-does-not-identify-incoming
+PASS: note-does-not-feed-n-or-attach-formation-member
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+TOTAL: PASS=52 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,79 @@
+===== runner cache v1 =====
+runner: scripts/opposite_lock_plaquette_own_tick_holonomy_reverse_face_2026_08_15.py
+runner_sha256: 359950e79c325a8b78233a669bcc0524840b540769278a254249874d925da796
+input_fingerprint_sha256: 7fa4c4e3c7224613ea35811bd404353372d16814eba88a152529f4147f81e7af
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+own-tick holonomy reverse/face on nsopp Q and R
+AUDIT_INPUT_PATHS:
+  docs/OPPOSITE_LOCK_PLAQUETTE_OWN_TICK_HOLONOMY_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Reverse and face from own-incoming locks on Q and R at each vertex’s own formation tick, with per-vertex UNDEFINED and no later-tick wait, are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/OPPOSITE_LOCK_PLAQUETTE_OWN_TICK_HOLONOMY_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: q-and-r-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: own-incoming-letter-identity
+PASS: holonomy-identity
+PASS: reverse-face-identity
+own-tick t(A)=3 t(B)=2 leftover_TQ=3 leftover_TR=2
+Q 0 (0, 0, 0) t=0 incoming=[+e_1] L=+e_1
+Q e_1 (1, 0, 0) t=3 incoming=[−e_3, +e_3, +e_2] L=NONUNIQUE
+Q e_1+e_2 (1, 1, 0) t=3 incoming=[−e_2, −e_3, +e_3] L=NONUNIQUE
+Q e_2 (0, 1, 0) t=0 incoming=[−e_1] L=−e_1
+H=UNDEFINED
+R A (1, 0, 0) t=3 incoming=[−e_3, +e_3, +e_2] L=NONUNIQUE
+R (1,1,0) (1, 1, 0) t=3 incoming=[−e_2, −e_3, +e_3] L=NONUNIQUE
+R B (1, 1, 1) t=2 incoming=[+e_1] L=+e_1
+R (1,0,1) (1, 0, 1) t=2 incoming=[+e_1] L=+e_1
+reverse=fail face=fail
+PASS: theorem1-four-locks-on-Q  ((((1, 0, 0), 'NONUNIQUE', 'NONUNIQUE', (-1, 0, 0)), 'UNDEFINED'))
+PASS: theorem1-four-locks-on-R  (('NONUNIQUE', 'NONUNIQUE', (1, 0, 0), (1, 0, 0)))
+PASS: theorem2-reverse-fail  (fail)
+PASS: theorem3-face-fail  (fail)
+PASS: no-TQ-wait-own-tick-letters  ((('UNDEFINED', 'UNDEFINED', (1, 0, 0), (1, 0, 0)), ('NONUNIQUE', 'NONUNIQUE', (1, 0, 0), (1, 0, 0))))
+PASS: not-leftover-of-nsopplaq-TQ-lists
+PASS: uniqueness-not-required  (([(0, 0, -1), (0, 0, 1), (0, 1, 0)], [(0, -1, 0), (0, 0, -1), (0, 0, 1)]))
+PASS: two-site-opposite-lock-seed
+PASS: letter-is-own-incoming-not-star-sum
+PASS: incoming-locks-are-nn-steps
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: mutation-unrecorded-undefined
+PASS: mutation-nonunique-recorded-fails
+PASS: own-tick-not-common-deadline
+PASS: source-formation-is-perp-step-queue
+PASS: perp-step-incoming-lock
+PASS: same-Q-R-as-nsopplaq-nfplaq
+PASS: not-nnseed-plaquette-reprint
+PASS: source-letter-from-own-incoming-only
+PASS: note-claim-scope
+PASS: note-reports-own-tick-Q-locks
+PASS: note-reports-own-tick-R-locks
+PASS: note-reports-fail-fail
+PASS: note-displayed-not-adopted
+PASS: note-no-TQ-wait
+PASS: note-not-nsopplaq-TQ-lists
+PASS: note-not-nnseed-reprint
+PASS: note-does-not-attach-formation
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+TOTAL: PASS=48 FAIL=0
+
+----- stderr -----
+

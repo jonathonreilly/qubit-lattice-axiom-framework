@@ -1,0 +1,82 @@
+===== runner cache v1 =====
+runner: scripts/opposite_lock_two_site_neighbor_vector_reverse_face_2026_08_15.py
+runner_sha256: 229262810d5f4aeaea415972725e20b50733313e4c39756de22ac169ae6a7c1b
+input_fingerprint_sha256: 5a94816d9caf376c95b5283b96e6074f599e48ea872929bdf59b652de66af93e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+unique neighbor-lock vector reverse/face on opposite-lock two-site seed
+AUDIT_INPUT_PATHS:
+  docs/OPPOSITE_LOCK_TWO_SITE_NEIGHBOR_VECTOR_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Reverse and face from unique already-recorded 6-NN lock vectors on the four x-probes of the opposite-lock two-site seed are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/OPPOSITE_LOCK_TWO_SITE_NEIGHBOR_VECTOR_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-probes-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: unique-vector-letter-identity
+PASS: not-named-sign-reduction
+PASS: reverse-face-identity
+A t=3 recorded-neighbor-locks=[+e_1 at (0, 0, 0), +e_1 at (1, -1, 0), +e_1 at (1, 0, 1), +e_1 at (1, 0, -1)] L=+e_1 incoming=−e_3,+e_3,+e_2
+B t=2 recorded-neighbor-locks=[+e_3 at (0, 1, 1)] L=+e_3 incoming=+e_1
+C t=4 recorded-neighbor-locks=[−e_3 at (1, 0, 0), +e_3 at (1, 0, 0), +e_2 at (1, 0, 0)] L=UNDEFINED incoming=+e_1
+D t=3 recorded-neighbor-locks=[−e_1 at (0, 1, 0), +e_1 at (1, 2, 0), +e_1 at (1, 1, 1), +e_1 at (1, 1, -1)] L=UNDEFINED incoming=−e_2,−e_3,+e_3
+reverse=fail face=UNDEFINED
+per_element: unique letter is the singleton already-recorded six-neighbor lock vector in {±e_i}, else UNDEFINED
+per_site: scored only at probes A,B,C,D on Euclidean B_3(0); no other sites
+per_mode: no spectral or mode calculation is executed on this finite host
+per_block: four unique lock vectors plus reverse/face as hold, fail, or UNDEFINED
+lattice_wide: checked and not executed — no lattice-wide lettering rule is claimed
+PASS: theorem1-A-neighbor-lock-list-and-letter  (((((0, 0, 0), (1, 0, 0)), ((1, -1, 0), (1, 0, 0)), ((1, 0, 1), (1, 0, 0)), ((1, 0, -1), (1, 0, 0))), (1, 0, 0)))
+PASS: theorem1-B-neighbor-lock-list-and-letter  (((((0, 1, 1), (0, 0, 1)),), (0, 0, 1)))
+PASS: theorem1-C-neighbor-lock-list-and-letter  (((((1, 0, 0), (0, 0, -1)), ((1, 0, 0), (0, 0, 1)), ((1, 0, 0), (0, 1, 0))), 'UNDEFINED'))
+PASS: theorem1-D-neighbor-lock-list-and-letter  (((((0, 1, 0), (-1, 0, 0)), ((1, 2, 0), (1, 0, 0)), ((1, 1, 1), (1, 0, 0)), ((1, 1, -1), (1, 0, 0))), 'UNDEFINED'))
+PASS: theorem1-C-undefined-from-mixed-A-locks
+PASS: theorem1-D-undefined-from-opposite-seed-mix
+PASS: theorem2-reverse-fail  (fail)
+PASS: theorem3-face-undefined  (UNDEFINED)
+PASS: sign-lettering-loses-axis
+PASS: not-probe-own-incoming-lock
+PASS: incoming-locks-are-nn-steps
+PASS: uniqueness-not-required  ([(0, 0, -1), (0, 0, 1), (0, 1, 0)])
+PASS: two-site-opposite-lock-seed
+PASS: already-recorded-not-self-or-later
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: perp-step-incoming-lock
+PASS: not-cubic-orbit-of-perp-seed
+PASS: ticks-agree-with-same-lock-seed-and-are-not-scored
+PASS: mutation-empty-neighbor-locks-undefined
+PASS: mutation-mixed-neighbor-vectors-undefined
+PASS: note-claim-scope
+PASS: note-reports-neighbor-lock-lists-and-letters
+PASS: note-reports-fail-and-undefined
+PASS: note-displayed-not-adopted
+PASS: note-does-not-use-occupancy-or-incoming
+PASS: note-not-sign-lettering
+PASS: note-not-ndot-or-occupancy-inner-product
+PASS: note-does-not-identify-incoming
+PASS: note-does-not-attach-formation-member
+PASS: note-forbids-enlargement-and-cache
+PASS: note-not-tick-reverse-face
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+PASS: source-letter-from-neighbor-lock-vectors-only
+TOTAL: PASS=52 FAIL=0
+
+----- stderr -----
+

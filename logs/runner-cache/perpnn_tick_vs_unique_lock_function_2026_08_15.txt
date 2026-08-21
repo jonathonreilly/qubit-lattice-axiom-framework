@@ -4,7 +4,7 @@ runner_sha256: 2e9190e96d29cc289090ea1dbb477e81a1011cfc117597b911031a082bd30c30
 input_fingerprint_sha256: 12a28aaf9f04356df48eb0ed1f4c4c08ba0e1357aafe88c4c63cdd17d5d8beec
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 perpnn tick vs unique-lock function on B_3(0)

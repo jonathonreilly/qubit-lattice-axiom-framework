@@ -1,0 +1,71 @@
+===== runner cache v1 =====
+runner: scripts/nnseed_unique_pplus_along_n_reverse_face_2026_08_15.py
+runner_sha256: fa93a1ae35d6b28979704633db5260bb9c71c0607529d09f659664a46b7cdda4
+input_fingerprint_sha256: de00f754b9d27490f86e59d4000085a036b4c82d640de095c0bb830f1c9fa6c3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.07
+status: ok
+----- stdout -----
+unique formdraw letter P_+ along n reverse/face on four nnseed probes
+AUDIT_INPUT_PATHS:
+  docs/NNSEED_UNIQUE_PPLUS_ALONG_N_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Reverse and face from the unique formdraw letter P_+ along n on the four nnseed probes are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/NNSEED_UNIQUE_PPLUS_ALONG_N_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-probes-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: named-pplus-rank1-along-n-k1
+PASS: named-pvm-traces-k1
+PASS: named-pvm-plus-is-not-incoming-step
+A n=(-1/3,1/3,0) k=2 abc=(-1,1,0) L=+ incoming=[(0, -1, 0)]
+B n=(-1/3,0,-1/3) k=2 abc=(-1,0,-1) L=+ incoming=[(0, 0, 1), (1, 0, 0)]
+C n=(-1/3,0,0) k=1 abc=(-1,0,0) L=+ incoming=[(1, 0, 0)]
+D n=(-1/3,0,0) k=1 abc=(-1,0,0) L=+ incoming=[(1, 0, 0)]
+PASS: theorem1-n-A  ((Fraction(-1, 3), Fraction(1, 3), Fraction(0, 1)))
+PASS: theorem1-n-B  ((Fraction(-1, 3), Fraction(0, 1), Fraction(-1, 3)))
+PASS: theorem1-n-C  ((Fraction(-1, 3), Fraction(0, 1), Fraction(0, 1)))
+PASS: theorem1-n-D  ((Fraction(-1, 3), Fraction(0, 1), Fraction(0, 1)))
+PASS: theorem1-unique-letter-plus-all-probes
+PASS: n-nonzero-assigns-plus-not-minus
+PASS: hamiltonian-square-matches-k
+PASS: incoming-locks-are-nn-steps-not-letters
+PASS: uniqueness-not-required  ([(0, 0, 1), (1, 0, 0)])
+PASS: two-site-seed-locks
+combos=1 reverse_hits=0 face_hits=0
+reverse=none face=none
+PASS: theorem2-reverse-none  (none)
+PASS: theorem3-face-none  (none)
+PASS: not-sixteen-letter-census
+PASS: letters-do-not-feed-occupancy
+PASS: n-independent-of-letter-branch
+PASS: mutation-identify-incoming-sign-is-refused
+PASS: mutation-minus-as-vacant-changes-n
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: not-t-as-comparator
+PASS: note-claim-scope
+PASS: note-reports-n-and-unique-plus
+PASS: note-reports-none-none
+PASS: note-displayed-not-adopted
+PASS: note-does-not-identify-incoming
+PASS: note-does-not-feed-n-or-attach-formation-member
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+TOTAL: PASS=45 FAIL=0
+
+----- stderr -----
+

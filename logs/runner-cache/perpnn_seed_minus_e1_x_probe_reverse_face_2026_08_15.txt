@@ -1,0 +1,52 @@
+===== runner cache v1 =====
+runner: scripts/perpnn_seed_minus_e1_x_probe_reverse_face_2026_08_15.py
+runner_sha256: 0ced70a5753ec71e9c10d71838ee431357fc615a74e89196a41637a6236eb901
+input_fingerprint_sha256: dc552e2518af3e11d7f7a41251323942be7c755620bece14eb471af02c661c60
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+perp-step incoming-lock formation on B_3(0), seed lock -e_1
+AUDIT_INPUT_PATHS:
+  docs/PERPNN_SEED_MINUS_E1_X_PROBE_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: displayed k=1 reverse/face on B_3(0); not adopted
+PASS: audit-input-paths-literal  (('docs/PERPNN_SEED_MINUS_E1_X_PROBE_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: k1-probes-in-host
+tick-1 6-mask: (0, 0, 1, 1, 1, 1)
+t(A)=t(1,0,0)=3 t(B)=t(1,1,1)=3 t(C)=t(2,0,0)=4 t(D)=t(1,1,0)=2
+locks(origin)=[(-1, 0, 0)]
+locks(A)=[(0, -1, 0), (0, 0, -1), (0, 0, 1), (0, 1, 0)]
+PASS: theorem1-tick1-mask  ((0, 0, 1, 1, 1, 1))
+PASS: theorem1-incoming-locks
+PASS: theorem1-defined-ticks  (3,3,4,2)
+PASS: theorem1-uniqueness-not-required  ([(0, -1, 0), (0, 0, -1), (0, 0, 1), (0, 1, 0)])
+PASS: theorem1-not-hop-count
+theorem2 reverse 3 t(A)^2 > t(B)^2: hold
+theorem3 face t(C)^2 > 2 t(D)^2: hold
+PASS: theorem2-reverse-hold  (3*3^2=27 vs 9)
+PASS: theorem3-face-hold  (4^2=16 vs 2*2^2=8)
+PASS: mutation-parallel-only-is-axial-mask  ((1, 1, 0, 0, 0, 0))
+PASS: mutation-drop-perp-forms-all-six  ((1, 1, 1, 1, 1, 1))
+PASS: seed-origin-tick-zero-lock-minus-e1
+PASS: seed-opposite-reverse-axis
+PASS: formation-stays-in-host
+PASS: note-claim-scope
+PASS: note-reports-mask-and-ticks
+PASS: note-reverse-and-face-hold
+PASS: note-displayed-not-adopted
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-machine-status-no-axiom-edit
+PASS: source-audit-paths-are-static-literals
+TOTAL: PASS=26 FAIL=0
+
+----- stderr -----
+

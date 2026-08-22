@@ -1,0 +1,90 @@
+===== runner cache v1 =====
+runner: scripts/y_symmetric_three_site_simultaneous_incoming_outgoing_tplus1_reverse_face_2026_08_15.py
+runner_sha256: 557a77ddb738b8b94d951519f141dc35d9efdc5742b20b942bb15c4f0c659de7
+input_fingerprint_sha256: b94bc0ea67c7b651a0d0b33c49d7509a13b4e54e86232a9f627b111589fdc06e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.20
+status: ok
+----- stdout -----
+simultaneous M and O at t+1 reverse/face on #7211 y-probes
+AUDIT_INPUT_PATHS:
+  docs/Y_SYMMETRIC_THREE_SITE_SIMULTANEOUS_INCOMING_OUTGOING_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Simultaneous M and O at t+1 on the four #7211 y-probes, intersection, and reverse/face of each are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/Y_SYMMETRIC_THREE_SITE_SIMULTANEOUS_INCOMING_OUTGOING_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-y-probes-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: existential-opposite-identity
+PASS: timed-set-identity
+PASS: theorem1-all-four-probes-recorded
+A t=0 tau=1 M={−e_1} O={+e_2, +e_3, −e_3} M∩O={}
+B t=2 tau=3 M={+e_1} O={+e_2, +e_3, −e_3} M∩O={}
+C t=1 tau=2 M={+e_2} O={+e_1, −e_1, +e_3, −e_3} M∩O={}
+D t=3 tau=4 M={−e_2, +e_3, −e_3} O={+e_1, −e_1} M∩O={}
+M_reverse=hold M_face=hold
+O_reverse=hold O_face=hold
+unique_L_M_reverse=hold unique_L_M_face=UNDEFINED unique_L_O_reverse=UNDEFINED unique_L_O_face=UNDEFINED
+per_element: each lock vector in timed M(q,tau) or timed O(q,tau)
+per_site: scored only at y-probes A,B,C,D on Euclidean B_3(0); no other sites
+per_mode: no spectral or mode calculation is executed on this finite host
+per_block: four incoming sets, four outgoing sets, four intersections, and reverse/face of M and of O as hold, fail, or UNDEFINED
+lattice_wide: checked and not executed — no lattice-wide lettering rule is claimed
+PASS: theorem1-formation-ticks  ({'A': 0, 'B': 2, 'C': 1, 'D': 3})
+PASS: theorem1-timed-incoming  ({'A': '{−e_1}', 'B': '{+e_1}', 'C': '{+e_2}', 'D': '{−e_2, +e_3, −e_3}'})
+PASS: theorem1-timed-outgoing  ({'A': '{+e_2, +e_3, −e_3}', 'B': '{+e_2, +e_3, −e_3}', 'C': '{+e_1, −e_1, +e_3, −e_3}', 'D': '{+e_1, −e_1}'})
+PASS: theorem1-intersection-empty  ({'A': '{}', 'B': '{}', 'C': '{}', 'D': '{}'})
+PASS: theorem1-A-is-seed-and-M-frozen
+PASS: theorem1-O-nonempty-at-tplus1-empty-at-t-for-ABC
+PASS: theorem1-mixed-stays-a-set
+PASS: theorem1-compare-7211-M  (('{−e_1}', '{+e_2, +e_3, −e_3}'))
+PASS: theorem2-reverse-face-from-M  (('hold', 'hold'))
+PASS: theorem3-reverse-face-from-O  (('hold', 'hold'))
+PASS: not-unique-L-leftover
+PASS: not-leftover-of-7211-M-alone
+PASS: not-leftover-of-untimed-O-alone
+PASS: not-x-probes-or-z-symmetric-or-perp
+PASS: not-two-site-or-nstri-third-site
+PASS: not-nnlock-named-sign
+PASS: incoming-and-outgoing-are-nn-steps
+PASS: uniqueness-not-required
+PASS: y-symmetric-three-site-seed
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: perp-step-incoming-lock
+PASS: unformed-at-tau-is-undefined
+PASS: mutation-empty-or-undefined-is-undefined
+PASS: mutation-no-opposite-pair-fails
+PASS: mutation-unique-L-O-would-be-undefined
+PASS: mutation-sum-cancels-mixed-D
+PASS: note-claim-scope
+PASS: note-reports-ticks-M-O-intersection
+PASS: note-reports-hold-hold-of-M-and-O
+PASS: note-displayed-not-adopted
+PASS: note-does-not-use-occupancy
+PASS: note-not-sign-lettering
+PASS: note-not-ndot-or-occupancy-inner-product
+PASS: note-does-not-attach-formation-member
+PASS: note-not-unique-or-sum-or-star-leftover
+PASS: note-no-six-neighbor-star-as-letter
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+PASS: source-letter-from-timed-incoming-outgoing-existential-opposite
+TOTAL: PASS=58 FAIL=0
+
+----- stderr -----
+

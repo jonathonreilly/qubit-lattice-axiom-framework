@@ -1,7 +1,7 @@
 ---
 claim_id: record_projective_history_local_append_downstream_law_candidate_bounded_theorem_note_2026-08-21
 claim_type: bounded_theorem
-claim_scope: "For the owner-selected provisional downstream sector Law on finite one- and two-qubit rank-one projective Record events, typed projective branches have exact endpoint no-fabrication; trace-weighted finite cylinders are positive, normalized, prefix-consistent, identity-sensitive, product-reducing, and have consistent two-wing one-site projections; and the supplied nonfactorizing singlet history measure is no-signalling with CHSH absolute value 2 sqrt(2). One explicit benchmark realization additionally shows finite Record-packet reconstruction, commuting one-site appends under a supplied causal layer, normalized supplied competing hazards, and distinct contingent one-member ledgers without changing the Law weights. Only the finite projective domain, calibrated Record-event map, trace/Luders history functional, and composite-cylinder rule are provisionally selected as the sector-Law kernel. Packet registration and genesis, preparation data, formation site/rate/cadence, causal layer, append resources, physical clock meaning, and contingent realized member remain benchmark, boundary, or history data and are not adopted as universal Law. The selection is not an axiom derivation, approved-primitive registration, audit verdict, formal-obligation retirement, universal quantum theory, or TOE-percentage movement."
+claim_scope: "For the owner-selected provisional downstream sector Law on supported finite histories of binary one-qubit rank-one projective Record events and commuting local tensor-product two-wing cylinders, typed projective branches have exact endpoint no-fabrication; trace-weighted finite cylinders are positive, normalized, prefix-consistent, identity-sensitive, product-reducing, and have consistent two-wing one-site projections; and the supplied nonfactorizing singlet history measure is no-signalling with CHSH absolute value 2 sqrt(2). One explicit benchmark realization additionally shows finite Record-packet reconstruction, commuting one-site appends under a supplied causal layer, normalized supplied competing hazards, and distinct contingent one-member ledgers without changing the Law weights. Only the supported finite projective domain, owner-selected candidate Record-event map conditional on independent physical calibration, trace/Luders history functional, and composite-cylinder rule are provisionally selected as the sector-Law kernel. Packet registration and genesis, preparation data, physical event calibration, the nearest-neighbor carrier that would make each local marginal a function of the complete local Record condition, formation site/rate/cadence, causal layer, append resources, physical clock meaning, and contingent realized member remain benchmark, boundary, or history data and are not adopted as universal Law. The selection is not an axiom derivation, approved-primitive registration, audit verdict, formal-obligation retirement, universal quantum theory, or TOE-percentage movement."
 depends_on:
   - minimal_axioms
   - realized_state_primitive
@@ -11,8 +11,6 @@ runner_cache: logs/runner-cache/record_projective_history_local_append_downstrea
 independent_runner_cache: logs/runner-cache/record_projective_history_local_append_downstream_law_candidate_independent_check_2026_08_21.txt
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
-negative_assertion_classes:
-  - bounded_with_named_walls
 ---
 
 # Record Projective-History Local-Append Downstream-Law Candidate
@@ -56,7 +54,8 @@ realization kept separate.
 On its declared finite projective domain, the selected kernel plus the
 explicit benchmark realization have all of the following at once:
 
-1. a calibrated quantum writer whose absent endpoint branch is exactly zero;
+1. a typed candidate quantum writer whose absent endpoint branch is exactly
+   zero, with physical event calibration left open;
 2. fixed projective Record-event contents and positive normalized finite
    history cylinders;
 3. permanent one-site appends declared concurrent by a supplied causal layer,
@@ -79,11 +78,12 @@ event registration, or composite-cylinder rule from Lattice, Qubit,
 Admissibility, and Record. It also does not turn the benchmark packet,
 formation cadence, causal layer, or contingent member into universal Law.
 
-That distinction is the decision now applied. More controlled-copy, pointer,
-absorber, Gleason, or trace-representation work cannot by itself select the
-extensional weights. A downstream sector Law can fill that field transparently
-while remaining open to replacement by a deeper derivation. A core-axiom edit
-is neither needed nor justified.
+That distinction is the decision now applied. This packet does not use
+controlled-copy, pointer, absorber, Gleason, or trace-representation work as a
+derivation selecting the extensional weights. Whether a deeper route can
+select them remains open. A downstream sector Law can fill that field
+transparently while remaining open to replacement by a deeper derivation. A
+core-axiom edit is neither needed nor justified.
 
 ## 1. Selected Sector-Law Kernel And Benchmark Boundary
 
@@ -94,10 +94,10 @@ declared finite projective domain.
 
 | Field | Selected value | Authority boundary |
 |---|---|---|
-| Law domain | finite one- and two-qubit rank-one projective programs with physically calibrated permanent Record events | selected finite sector only; no POVM, continuum, field-theory, or universal-intervention claim |
-| event registration | outcome `a` for program `e` is the target Record whose content is the matching rank-one projector `P_e^a` | selected calibration on this domain; pointer or branch identity alone is insufficient |
-| history functional | child block `sigma_{ha}=P_e^a sigma_h P_e^a`; conditional mass `Tr(sigma_{ha})/Tr(sigma_h)` | selected numerical probability/history Law, not derived from the four axioms |
-| composite-cylinder rule | commuting projectors on a supplied composite preparation are evaluated in one joint trace cylinder; local event probabilities are its marginals | selected composition rule on the finite tensor-product sector; not a nearest-neighbour derivation or universal global dynamics |
+| Law domain | supported finite histories of binary one-qubit rank-one projective programs and commuting local tensor-product two-wing cylinders; conditioning is invoked only when `Tr(sigma_h)>0` | selected finite sector only; zero-mass cylinders stay zero but are not conditioning domains; no arbitrary entangled two-qubit event, POVM, continuum, field-theory, or universal-intervention claim |
+| event registration | the owner-selected candidate map represents outcome `a` for program `e` by a target Record whose content is the matching rank-one projector `P_e^a` | candidate registration on this typed domain, conditional on independent physical calibration; pointer or branch identity alone is insufficient |
+| history functional | at every supported prefix, child block `sigma_{ha}=P_e^a sigma_h P_e^a`; conditional mass `Tr(sigma_{ha})/Tr(sigma_h)` | selected numerical probability/history Law, not derived from the four axioms |
+| composite-cylinder rule | commuting projectors on a supplied composite preparation are evaluated in one joint trace cylinder; local event probabilities are its marginals | selected composition rule on the finite tensor-product sector; not a nearest-neighbour derivation or universal global dynamics, and still requires a local-carrier theorem before claiming Admissibility compatibility |
 
 The identity continuation and the performed-but-forgotten channel in section 3
 are consequences of this selected kernel, not additional selected fields. The
@@ -109,9 +109,10 @@ Record forms and does not choose the actual history member.
 | Field | Benchmark value | Status after the owner decision |
 |---|---|---|
 | preparation data and carrier | a supplied positive normalized one- or two-qubit operator, serialized when needed as one anchor plus four site-`M2(C)` block Records | boundary/encoding fixture; registration, packet genesis, and renewal remain open |
+| local Admissibility carrier | no target-local carrier for the relevant reduced preparation data is constructed | compatibility bridge remains open: the complete nearest-neighbour Record condition must determine the selected local marginal |
 | formation cadence | competing hazard `lambda_{ha}=gamma Tr(sigma_{ha})/Tr(sigma_h)`, with supplied `gamma>0` | process fixture; formation site/rate, clock calibration, and the memoryless form remain open |
 | causal readiness/order | due Bell-wing targets occupy one supplied common causal layer and are incomparable in that declared partial order | causal fixture; no derived physical time or spacelike metric |
-| local append realization | the realized member commits through separate calibrated one-site appends to supplied fresh targets | finite implementation witness; target supply, collision handling, and scalable resources remain open |
+| local append realization | the realized member commits through separate typed one-site appends to supplied fresh targets | finite implementation witness; physical event calibration, target supply, collision handling, and scalable resources remain open |
 | actuality fixture | a supplied contingent coordinate names one supported member without changing the weights | test representation of history data only; it is neither a sampler nor part of the selected Law |
 
 The sector Law does not say that a matrix sector becomes a Record merely
@@ -142,15 +143,15 @@ At preparation `rho=P_0`,
 \]
 
 Equations (1)--(2) are exact writer algebra and contain no probability. They
-say that a calibrated branch cannot fabricate input outside its typed sector.
+say that a typed branch cannot fabricate input outside its declared sector.
 The provisionally selected sector Law separately registers the two target
 Record cells and assigns the zero branch zero history mass through its trace
 functional. That second sentence is Law content.
 
 ## 3. Finite Histories And Identity Containment
 
-For unnormalized prefix block `sigma_h` and the next complete projective menu
-`{P_e^a}_a`, define
+For an unnormalized supported prefix block `sigma_h` with
+`Tr(sigma_h)>0` and the next complete projective menu `{P_e^a}_a`, define
 
 \[
  \sigma_{ha}=P_e^a\sigma_hP_e^a,
@@ -167,8 +168,10 @@ Projector completeness gives
 \]
 
 Iterating equation (3) produces positive normalized finite cylinders whose
-children marginalize to their parent weights. This is a mathematical theorem
-of the proposed functional, not a derivation selecting the functional.
+children marginalize to their parent weights. A zero-mass child remains a
+zero-weight cylinder and is not used as the denominator of a later
+conditional. This is a mathematical theorem of the proposed functional, not a
+derivation selecting the functional.
 
 An omitted event applies the identity continuation. A performed event whose
 outcome is forgotten applies
@@ -282,11 +285,15 @@ completeness gives the local marginal. In the singlet fixture,
 \]
 
 independent of `y`. This supplies a consistent one-site **event marginal** of
-the provisionally selected global sector Law. Under that selection, the
-marginal is the selected value on the matching local Admissibility menu. It is
-not a derived nearest-neighbour conditional
-Admissibility kernel, and no general theorem says every global process
-compatible with the axioms has such a projection.
+the provisionally selected global sector Law. It is the value that a matching
+local Admissibility kernel would have to reproduce. The selection does not
+prove that the target's complete nearest-neighbour Record condition determines
+that value: in the fixture, the preparation packet is supplied outside the
+target pair. A local carrier/context theorem must show either that the
+relevant reduced preparation data arrive in the complete nearest-neighbour
+condition or that two globally different preparations cannot realize the same
+local condition with different marginals. Until then, Admissibility
+compatibility is conditional; no general nearest-neighbour kernel is derived.
 
 The distinction between marginal and coupling is load-bearing. In the Bell
 fixture, each target's local program/blank condition receives the `1/2,1/2`
@@ -337,9 +344,9 @@ probability axiom:
 
 This draft makes two layers explicit. It does not identify a particular branch
 with an event, assign a weight, or equate randomized and direct preparations.
-Those are physical statements and the calibrated event map remains in the
-selected sector-Law kernel. The canonical axiom memo is not edited by this
-packet.
+Those are physical statements. The candidate event map remains in the selected
+sector-Law kernel only conditionally; its physical calibration remains an open
+boundary. The canonical axiom memo is not edited by this packet.
 
 No axiom amendment is required. The current Qualification already requires
 non-foundational structure to be derived, bridged, or explicitly registered
@@ -356,6 +363,8 @@ displayed fixtures. It must provide one normalized nonnegative kernel
 `K(event | complete Record/nearest-neighbour condition)` on a declared
 arbitrary-horizon family; construct prefix-consistent cylinders from that
 kernel; expose typed local event cells, support, and one-site marginals;
+show that each one-site marginal is a function of the complete
+nearest-neighbour Record condition on the physical realization;
 separate formation and the actual member from probability; and retain the
 product, Bell, and no-signalling controls. A collection of per-instance linear
 solves, or a kernel that is unchanged under physically distinct carrier and
@@ -379,12 +388,11 @@ The owner decision is:
    would certify only the finite conditional consequences and the honesty of
    the boundary, not that Nature uniquely selects the kernel.
 
-The local writer/Born compilation seam is therefore closed as an
-implementation search: more equivalent finite writer algebra is low leverage.
-The live science seam is independent selection and unification--especially
-whether a gravity/action/measure construction recovers this kernel while
-supplying the currently open cadence, causal, resource, matter, and continuum
-fields.
+The runner supplies one finite implementation witness. It does not close the
+implementation-search space. The highest-value live science seam is independent
+selection and unification--especially whether a gravity/action/measure
+construction recovers this kernel while supplying the currently open local
+carrier, calibration, cadence, causal, resource, matter, and continuum fields.
 
 No current JSON derivation obligation is a quantum/Record terminal
 obligation. Accordingly this packet cannot honestly retire one merely by
@@ -413,85 +421,169 @@ TOE score movement.
 
 ## 11. No-Go Discipline Gate
 
-The bounded negative is only that this packet does not derive its four selected
-sector-Law fields or the benchmark realization fields from the two cited
-foundation nodes. It is not a Born no-go, Record no-go, locality no-go,
-stochastic-law no-go, or axiom-necessity result.
+The only surviving negative sentence is documentary and packet-local:
+
+> This committed packet does not contain a derivation, from its two direct
+> foundation dependencies alone, of either (W_K) the four provisionally
+> selected sector-Law fields in section 1A or (W_B) the benchmark, boundary,
+> and history fields in section 1B.
+
+This is not a claim that no such derivation exists, that no retained route can
+supply one, or that a new axiom is required. The broader no-go is not shipped.
+Its search status is `partial-attempt-with-named-untested-routes`.
 
 ### N1 — alternative routes
 
-| Route | Status | Result |
+| Family | Object/formulation | Mechanism or invariant | Terminal obligation | Marker | Attempt and result |
+|---|---|---|---|---|---|
+| direct axiom entailment | the four clauses of the Minimal Axioms memo | semantic entailment from Lattice, Qubit, Admissibility, and Record | derive the four section-1A fields without an extra premise | `ATTEMPTED` | The route attempts to read the selected finite domain, candidate event map, numerical trace rule, and composite-cylinder rule directly from the four axioms. It does not close: the Qualification and Open Gates in [Minimal Axioms](MINIMAL_AXIOMS_2026-06-29.md) require downstream structure to be derived, bridged, or approved and explicitly leave probability-rule values, formation rules, dynamics, and physical time outside the axioms. |
+| realized-state selector | the approved realized-state reference | pointwise evaluation at the member supplied by history | derive a member-selection or probability rule | `ATTEMPTED` | The route attempts to use the realized-state primitive as the selector or weighting rule. It does not close: [Realized-State Primitive](REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md) expressly supplies no state, selector, measure, weighting, probability rule, normalization, or contingent value. |
+| controlled-writer algebra | the typed candidate writer `W`, output blocks `Q_j`, and projectors `P_j` | isometry and typed-sector intertwining | derive registered event masses from endpoint algebra | `ATTEMPTED` | The route attempts to promote `W†W=I`, `Q_jW=WP_j`, and the zero opposite branch into a probability-selection theorem. It does not close: section 2 proves only probability-free endpoint algebra, while the Minimal Axioms memo leaves numerical probability rules downstream. |
+| local-append composition | site-keyed ledgers and two commuting one-site append maps | locality, permanence, and order confluence | derive the nonfactorizing global trace cylinder from local Admissibility | `ATTEMPTED` | The route attempts to infer the global Bell coupling from the two local physical appends. It does not close: section 5 supplies the joint cylinder separately, and the Minimal Axioms memo says Admissibility is not a dynamics axiom and does not supply transition-weight values. |
+| finite executable promotion | the twelve exact finite checks in the primary runner | exhaustive evaluation of the declared fixtures and mutation sensitivity | turn finite consistency checks into a premise derivation | `ATTEMPTED` | The route attempts to promote the runner's finite certificates into a derivation of their inputs. It does not close: the runner declares that it checks consistency and does not derive its inputs, and [Proof Search Governance](ai_methodology/skills/physics-loop/references/proof-search-governance.md) forbids promoting computation beyond the theorem or exhaustive domain that makes it decisive. |
+
+The operational-corpus, W9 refinement, action/current/equilibrium,
+collapse/SUV, and hidden-seed possibilities remain untested counterroutes.
+They are not counted as N1 closures and are why the broader no-go fails.
+
+**N1 status:** `FAIL` for any broader no-go; the five attempts support only
+the packet-local documentary statement.
+
+### N2 — wall independence and collapse
+
+The packet-local statement uses two conjunctive documentation gaps, not an
+inflated list of independent physics walls:
+
+- `W_K`: this packet contains no foundation-only derivation of the four
+  section-1A kernel fields: finite projective domain, candidate event map,
+  trace/Lüders history functional, and composite-cylinder rule.
+- `W_B`: this packet contains no foundation-only derivation of the section-1B
+  benchmark/boundary/history groups: preparation packet and carrier, physical
+  event calibration and local Admissibility carrier, formation cadence,
+  supplied causal layer, local-append resources, and contingent member.
+
+| Pair | Does closing the first automatically close the second? | Does closing the second automatically close the first? | Independent? |
+|---|---|---|---|
+| `(W_K, W_B)` | no | no | yes |
+
+Closing the kernel derivation would not supply packet genesis, calibration,
+the local carrier, cadence, causal data, resources, or an actual member.
+Closing those realization fields would not derive the selected candidate event
+map, numerical trace functional, or composition rule. The collapsed set is
+therefore `{W_K, W_B}`. No constituent inside either conjunctive group is
+advertised as a separately independent wall.
+
+**N2 status:** `PASS` for the packet-local classification.
+
+### N3 — hidden-phrase scan
+
+| Hit locations and vocabulary | Disposition | N2 consequence |
 |---|---|---|
-| probability-free controlled writer | attempted | derives typed endpoint zero, not event mass |
-| absorbing cq carrier | attempted in the campaign prior-art gate | supplies stable sectors, not one actual member or their weights |
-| projective trace-history Law | executed here | closes the finite conditional package when openly supplied |
-| local append plus global measure | executed here | gives local physical deltas with a nonfactorizing cylinder |
-| operational Record-only calibration | live | needs an independent held-out Record corpus not present in the repo |
-| W9 refinement/history selector | live and externally owned | may derive a different extensional Law; not duplicated here |
-| collapse/SUV or hidden-seed Law | live | requires its own physical fields, endpoint/Record calibration, and resources |
-| core-axiom or primitive amendment | considered and not used | current axioms already expose the open Law fields; no necessity theorem supports an amendment |
+| Front matter, Result Up Front, section 1A, the section-1 narrative, and section 2: event `registration`, `event-registration`, `registered event`, or `registers` | Explicit load-bearing selected condition already included in `W_K`; it is not represented as retained-derived authority. | No new wall; pairwise table unchanged. |
+| Front matter, section 1B, and section 4: packet `registration` | Explicit benchmark condition already included in `W_B`. | No new wall; pairwise table unchanged. |
+| Section 8: `registered Record-event` | Explicit candidate map and open physical calibration already included in `W_K` and `W_B`, respectively. | No new wall; pairwise table unchanged. |
+| Front matter and sections 8--9: approved-primitive `registration`, `explicitly registered`, `registry`, and `canonical axiom memo` | Cited foundation/governance context: [Minimal Axioms](MINIMAL_AXIOMS_2026-06-29.md), [Realized-State Primitive](REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md), and [Primitive Registry Check](ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md). These phrases do not supply any additional scientific premise. | Non-load-bearing context; no new wall. |
+| Occurrences inside this N3 inventory | Self-referential scan vocabulary only. | Non-load-bearing context. |
 
-### N2 — wall independence
+No hits were found for `we assume`, `by construction`, `as is standard`,
+`the framework provides`, `bridge context`, `background`, `naturally`,
+`obviously`, or `standard QFT`.
 
-Event registration, numerical history weights, formation site/rate, global
-concurrent coupling, actual member, packet genesis/resources, time, matter, and
-gravity are distinct. Equation (9) closes weights on its domain but does not
-form a target. Local append closes the physical delta but does not select the
-measure. A realized member does not derive its probability.
-
-### N3 — hidden-wall scan
-
-The preparation packet, selected projective domain, trace functional,
-`gamma`, composite-cylinder rule, event cells, packet-site decoder, actual
-member, and fixed finite geometry are explicit and classified between sections
-1A and 1B. No pointer is called a Record before the event-registration row. No
-random coordinate is generated by the realized-state reference. No metric
-time, reset, resource, or global locality theorem is implicit.
+**N3 status:** `PASS` after the explicit dispositions above; the N2 collapsed
+set remains `{W_K, W_B}`.
 
 ### N4 — residual matching
 
-The source-side controlled-copy note ends at a calibrated isometry. The
-minimal axiom memo explicitly withholds probability values, formation
-site/rate, physical time, and process dynamics. The present residual is the
-same: this packet supplies those objects as a proposed Law instead of claiming
-that the cited sources derived them.
+| Cited witness | Witness residual | Packet-local residual | Match? | Disposition |
+|---|---|---|---|---|
+| `docs/MINIMAL_AXIOMS_2026-06-29.md`, lines 85--90, 114--130, 173--190, and 205--213 | The axioms do not supply extensional probability values, transition rules, formation site/rate, dynamics, or physical time. | The trace-weight component of `W_K` and the formation/time components of `W_B`. | yes | Keep only for these named subresiduals. |
+| `docs/MINIMAL_AXIOMS_2026-06-29.md`, same locations | The same axiom boundary. | Event calibration, the finite projective domain, composite-cylinder selection, packet geometry/resources, causal-layer selection, matter, or gravity as a single combined residual. | no | Drop for those residuals; make no inference from this witness. |
+| `docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md`, lines 34--45 and 55--63 | The primitive supplies pointwise reference but no member selector, measure, weighting, probability rule, or contingent value. | The actual-member component of `W_B` and any attempt to source the weights in `W_K` from this primitive. | yes | Keep only for those named subresiduals. |
+| Unlinked controlled-copy, campaign-prior-art, W9, or larger-campaign references | No file-and-line witness is supplied in this packet. | `W_K` or `W_B`. | no | Drop from witness support. Treat only as untested route names. |
+
+After dropping nonmatches, two scoped foundation-boundary witnesses remain and
+zero prior no-go/campaign witnesses remain. The documentary statement needs no
+prior no-go witness: it is a statement about what this packet contains. No
+universal conclusion is inferred from the witness count.
+
+**N4 status:** `PASS` for the packet-local residual after the broader prior-work
+language is removed.
 
 ### N5 — resolution and rhetoric
 
-The runner checks one qubit sequentially and a two-qubit Bell fixture. The
-Record packet has four block sites; the append fixture has two program sites
-and two targets. Nothing is claimed lattice-wide, continuum-wide, for general
-POVMs, or for arbitrary field theories. “Positive candidate” always means
-conditional on the provisionally selected sector Law and never means audited,
-retained, universal, or uniquely selected by Nature.
+The sole negative proposition tested here is the packet-local sentence at the
+start of this section. It is not widened into a claim about what is impossible.
 
-### N6 — partial-closure paths
+| Resolution | Runner execution | Scope of the documentary negative |
+|---|---|---|
+| `per_element` | Exact endpoint-zero and typed-writer identities are executed. | The packet contains no step deriving event weights from those identities; no stronger per-element no-go is claimed. |
+| `per_site` | Two program/target pairs, permanence, candidate-map consistency, rewrite rejection, and confluence are executed. | The packet contains no derivation of an arbitrary nearest-neighbour probability kernel; no stronger per-site no-go is claimed. |
+| `per_mode` | The declared one-qubit `Z/X` histories and four local tensor-product Bell setting pairs are executed. | The packet contains no foundation-only selection theorem for those weights; entangled events, general POVMs, and field modes remain untested. |
+| `per_block` | One four-`M2(C)` singlet packet and one carried cubic transform are executed. | Reconstruction is tested; packet genesis and scalable renewal remain untested and no broader block no-go is claimed. |
+| `lattice_wide` | checked and not executed — the runner exercises no lattice-wide, continuum, arbitrary-history, matter, gravity, or TOE system. | The negative result at this resolution is unknown and is not claimed. |
 
-The writer module, finite cylinders, packet reconstruction, product reduction,
-Bell/no-signalling table, local append confluence, and one-site marginal are
-separable positive results. They remain useful if a later theory changes the
-benchmark cadence or expands the program category. An empirical corpus or an
-action-derived selector could replace the provisionally selected trace row.
+**N5 status:** `PASS` only when the primary runner and regenerated cached stdout
+use the exact `lattice_wide` wording above.
+
+### N6 — primitive and partial-closure paths
+
+| Candidate path | Status | What it closes and does not close |
+|---|---|---|
+| `docs/MINIMAL_AXIOMS_2026-06-29.md` | Current foundation axiom memo cited by this packet. | Supplies the Lattice/Qubit/Admissibility/Record baseline and the existence of a nearest-neighbour-determined distribution; it does not supply its extensional values or the other `W_K`/`W_B` data. |
+| `docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md` | Approved realized-state primitive according to its source note and the provided generated primitive-registry check. | Allows pointwise evaluation at a supplied realized member; it does not select the member or supply weights, so it is not itself a wall and does not close `W_K` or `W_B`. |
+| This note, section 1A | Owner-selected provisional downstream sector Law; not an axiom, approved primitive, retained derivation, or audit result. | Closes the working benchmark-choice ambiguity on the declared finite sector; it does not retire the derivation gap `W_K`. |
+| This note, section 8 | Qualification clarification only. | Clarifies microscopic versus operational event language; it does not supply event calibration, probability values, or a new physics premise. |
+
+No proposed primitive is silently granted premise weight, and no absence of a
+new primitive is used to foreclose a route. No claim about uninspected
+in-flight PRs is used as evidence.
+
+**N6 status:** `PASS` for the packet-local statement; no "new axiom required"
+claim is made.
 
 ### N7 — strongest steelman
 
-A stronger theory derives its extensional history functional and cadence from
-a physical action, conserved current, equilibrium measure, collapse field, or
-W9 refinement theorem; proves packet formation and renewal; and then reduces
-to the same finite Record interfaces without an adoption step. Such a theory
-would supersede this candidate. This packet leaves that route open.
+> A hostile reviewer should reject any universal no-go here: Admissibility
+> already says that a fixed nearest-neighbour rule determines a probability
+> distribution, so the live attack is to construct that rule on physically
+> calibrated finite projective menus and prove, using only the two declared
+> dependencies plus an explicit calibration bridge, that its values must equal
+> `Tr(P_e^a sigma_h P_e^a)/Tr(sigma_h)` and that commuting two-site menus must
+> use the joint trace cylinder. The exact terminal obligation is a uniqueness
+> or representation lemma yielding all four fields of `W_K` without importing
+> the numerical functional or composition rule. [Minimal Axioms](MINIMAL_AXIOMS_2026-06-29.md)
+> supports the starting Admissibility-distribution interface but does not
+> provide that lemma. This packet neither proves nor refutes the route.
+
+That concrete route remains unclosed. It is a next search target, so the
+broader no-go is premature and is demoted to
+`partial-attempt-with-named-untested-routes`. The packet-local documentary
+sentence remains true.
+
+**N7 status:** `FAIL` for the broader no-go and therefore forces demotion.
 
 ### N8 — cross-cycle echo
 
-The campaign already contains larger conditional writers, trajectories, and
-Bell-history fixtures. This packet claims no algebraic novelty over them. Its
-new job is dependency minimization onto current `origin/main`, exact separation
-of the selected kernel from benchmark scaffolding, and a fixed recovery
-interface for deeper physics. Any attempt to grow it into another large
-conditional stack without an independent selector is stopped.
+The restricted evidence packet contains no file-and-line inventory of similar
+prior walls, their retirement status, retirement mechanisms, or whether those
+mechanisms apply to `W_K` or `W_B`. No such history is invented here, and no
+prior-wall absence is used as evidence.
 
-The broad negative gate therefore fails. Only the scoped dependency and
-owner-decision statement ships.
+**N8 status:** `FAIL` for the broader no-go. A future negative claim would need
+a landed table of prior wall, path/line, retired status, retirement mechanism,
+and applicability before reconsideration.
+
+### Gate result
+
+The No-Go Discipline gate is `FAIL` for every universal, structural, or
+route-exhaustive negative. No such negative ships. The source retains only:
+
+1. the conditional finite positive theorem proved by the runner; and
+2. the documentary fact that this packet itself does not contain the two
+   foundation-only derivations `W_K` and `W_B`.
+
+The negative-search classification is
+`partial-attempt-with-named-untested-routes`.
 
 ## Verification
 

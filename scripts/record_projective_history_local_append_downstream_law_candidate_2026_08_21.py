@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """Exact finite checks for a provisional projective-history sector Law.
 
-The finite projective domain, calibrated event registration, trace/history
-rule, and composite-cylinder coupling are the provisionally selected
-sector-Law kernel.  Formation cadence, packet realization, supplied causal
-layer, and contingent member remain benchmark or history data.  The script
-checks their mathematical consistency and their interface with permanent site
-Records; it does not derive any of them from the framework axioms.
+The binary one-qubit projective domain, candidate event registration
+conditional on independent physical calibration, trace/history rule, and
+local tensor-product composite-cylinder coupling are the provisionally
+selected sector-Law kernel.  Formation cadence, packet realization, supplied
+causal layer, and contingent member remain benchmark or history data.  The
+script checks their mathematical consistency and their interface with typed
+site Records; it does not derive any of them from the framework axioms.
 """
 
 from __future__ import annotations
@@ -498,9 +499,9 @@ try:
 except ValueError:
     mismatched_content_rejected = True
 check(
-    "declared concurrent site appends preserve calibration and confluence",
+    "declared concurrent site appends preserve typed registration and confluence",
     confluence_ok and occupied_rejected and mismatched_content_rejected,
-    "each prefix adds one calibrated Record; both orders share one final ledger",
+    "each prefix adds one candidate-map Record; both orders share one final ledger",
 )
 
 
@@ -623,6 +624,8 @@ selected_sector_law_fields = {
 }
 benchmark_or_history_fields = set(declared_inputs) - selected_sector_law_fields
 open_handoffs = {
+    "physical_event_calibration",
+    "local_admissibility_carrier",
     "packet_genesis",
     "packet_renewal",
     "target_allocation",
@@ -655,7 +658,7 @@ ledger_ok = (
         "causal_layer",
         "contingent_member",
     }
-    and len(open_handoffs) == 8
+    and len(open_handoffs) == 10
     and resource_counts
     == {
         "packet_anchor_records": 1,
@@ -666,7 +669,7 @@ ledger_ok = (
     and final_record_count == expected_final_record_count
 )
 check(
-    "finite resource ledger closes and names eight declared open handoffs",
+    "finite resource ledger closes and names ten declared open handoffs",
     ledger_ok,
     f"4 selected kernel fields, 4 benchmark/history fields, "
     f"{final_record_count} Records, and {len(open_handoffs)} open handoffs",
@@ -680,12 +683,14 @@ print(
 )
 print(
     "N5_RESOLUTION per_site: two distinct nearest-neighbour program/target pairs are "
-    "tested for one-site append, permanence, calibration, rewrite rejection, and "
-    "two-order confluence; no arbitrary site environment is claimed."
+    "tested for one-site append, permanence, candidate-map consistency, rewrite "
+    "rejection, and two-order confluence; no arbitrary site environment or physical "
+    "calibration is claimed."
 )
 print(
-    "N5_RESOLUTION per_mode: one-qubit Z/X histories and all four declared two-qubit "
-    "Bell setting pairs are tested exactly; no general POVM or field-mode category is claimed."
+    "N5_RESOLUTION per_mode: one-qubit Z/X histories and all four declared local "
+    "tensor-product Bell setting pairs are tested exactly; no entangled event, general "
+    "POVM, or field-mode category is claimed."
 )
 print(
     "N5_RESOLUTION per_block: one four-M2 singlet packet is reconstructed before and "
@@ -693,8 +698,8 @@ print(
     "are not tested."
 )
 print(
-    "N5_RESOLUTION lattice_wide: not tested; the runner proves no lattice-wide, "
-    "continuum, arbitrary-history, matter, gravity, or TOE closure statement."
+    "N5_RESOLUTION lattice_wide: checked and not executed — the runner exercises no "
+    "lattice-wide, continuum, arbitrary-history, matter, gravity, or TOE system."
 )
 
 

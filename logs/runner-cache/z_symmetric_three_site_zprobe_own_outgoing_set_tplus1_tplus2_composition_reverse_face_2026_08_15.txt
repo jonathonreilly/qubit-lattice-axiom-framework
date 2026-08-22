@@ -1,0 +1,100 @@
+===== runner cache v1 =====
+runner: scripts/z_symmetric_three_site_zprobe_own_outgoing_set_tplus1_tplus2_composition_reverse_face_2026_08_15.py
+runner_sha256: c83f9a19b9e64e89321e3fe5bdb44d8cc307cef28d8088cbffefd2bcbe5335fe
+input_fingerprint_sha256: 550a6241e668892c0e3863293621a7420c6f740aca9d50dad336dc5ddbf4bd64
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+t+1 versus t+2 own-outgoing-set reverse/face composition on #7186 z-probes
+AUDIT_INPUT_PATHS:
+  docs/Z_SYMMETRIC_THREE_SITE_ZPROBE_OWN_OUTGOING_SET_TPLUS1_TPLUS2_COMPOSITION_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Reverse/face from O at t+1 versus t+2 on the four #7186 z-probes, and composition, are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/Z_SYMMETRIC_THREE_SITE_ZPROBE_OWN_OUTGOING_SET_TPLUS1_TPLUS2_COMPOSITION_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-z-probes-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: existential-opposite-identity
+PASS: composition-identity
+A t=0 M(tau1)={−e_1} O(tau1)={+e_2, −e_2, +e_3} O(tau2)={+e_2, −e_2, +e_3} new+1=(0, 1, 1),(0, -1, 1),(0, 0, 2) new+2={}
+B t=2 M(tau1)={+e_1} O(tau1)={+e_2, −e_2, +e_3} O(tau2)={+e_2, −e_2, +e_3} new+1=(1, 2, 1),(1, 0, 1),(1, 1, 2) new+2={}
+C t=1 M(tau1)={+e_3} O(tau1)={+e_1, −e_1, +e_2, −e_2} O(tau2)={+e_1, −e_1, +e_2, −e_2} new+1=(1, 0, 2),(-1, 0, 2),(0, 1, 2),(0, -1, 2) new+2={}
+D t=3 M(tau1)={+e_2, −e_2, −e_3} O(tau1)={+e_1, −e_1} O(tau2)={+e_1, −e_1} new+1=(2, 0, 1) new+2={}
+reverse leftover_t=UNDEFINED tau1=hold tau2=hold
+face leftover_t=UNDEFINED tau1=hold tau2=hold
+composition=HOLD
+leftover_nmot2zp_composition=fail
+per_element: each earliest outgoing nearest-neighbor step at a probe, read from the record prefix at that probe's t+1 and at t+2
+per_site: scored only at z-probes A,B,C,D on Euclidean B_3(0); no other sites
+per_mode: no spectral or mode calculation is executed on this finite host
+per_block: four outgoing sets at two cuts plus reverse/face/composition bits
+lattice_wide: checked and not executed — no lattice-wide lettering rule is claimed
+PASS: perp-step-incoming-lock
+PASS: outgoing-set-undefined-if-unformed
+PASS: outgoing-empty-not-undefined
+PASS: incoming-set-seed-singleton
+PASS: z-symmetric-three-site-seed
+PASS: theorem1-formation-ticks  ({'A': 0, 'B': 2, 'C': 1, 'D': 3})
+PASS: theorem1-O-at-tau1  ({'A': '{+e_2, −e_2, +e_3}', 'B': '{+e_2, −e_2, +e_3}', 'C': '{+e_1, −e_1, +e_2, −e_2}', 'D': '{+e_1, −e_1}'})
+PASS: theorem1-O-at-tau2  ({'A': '{+e_2, −e_2, +e_3}', 'B': '{+e_2, −e_2, +e_3}', 'C': '{+e_1, −e_1, +e_2, −e_2}', 'D': '{+e_1, −e_1}'})
+PASS: theorem1-O-tau2-equals-tau1
+PASS: theorem1-M-frozen-across-cuts
+PASS: theorem1-O-disjoint-from-M
+PASS: theorem1-new-records-meet-6nn-at-tplus1  ({'A': ((0, 1, 1), (0, -1, 1), (0, 0, 2)), 'B': ((1, 2, 1), (1, 0, 1), (1, 1, 2)), 'C': ((1, 0, 2), (-1, 0, 2), (0, 1, 2), (0, -1, 2)), 'D': ((2, 0, 1),)})
+PASS: theorem1-no-new-6nn-at-tplus2  ({'A': (), 'B': (), 'C': (), 'D': ()})
+PASS: theorem1-mixed-stays-a-set
+PASS: theorem1-A-is-seed
+PASS: do-not-score-tau-equals-t
+PASS: theorem2-reverse-tau1-hold-tau2-hold
+PASS: theorem2-face-tau1-hold-tau2-hold
+PASS: theorem3-composition-hold
+PASS: mutation-nmot2zp-delay-undefined-hold-fail
+PASS: mutation-nmt2zp-M-two-tick-hold-hold
+PASS: mutation-nmoutzp-eventual-O-equals-tau1
+PASS: mutation-two-site-same-freeze-different-seed
+PASS: mutation-unique-letter-undefined
+PASS: mutation-neighbor-lock-leftover-differs
+PASS: mutation-empty-plus-undefined
+PASS: mutation-sum-cancels-mixed-A
+PASS: O-is-not-M
+PASS: reverse-hold-7186-not-also-outgoing
+PASS: not-x-probes-or-y-probes-or-nstri-or-perp
+PASS: not-y-symmetric-or-x-symmetric
+PASS: uniqueness-not-required
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: empty-O-is-empty-not-undefined
+PASS: note-claim-scope
+PASS: note-reports-O-ticks
+PASS: note-reports-new-neighbors
+PASS: note-reports-hold-hold-composition-hold
+PASS: note-displayed-not-adopted
+PASS: note-not-m-two-tick-or-eventual-o
+PASS: note-not-nmot2zp-delay
+PASS: note-not-nmot3-other-members
+PASS: note-not-two-tick-lock-count-clock
+PASS: note-not-mixed-7188-fail-fail
+PASS: note-not-nmot2sy-or-nmot2zx-delayed
+PASS: note-does-not-use-occupancy
+PASS: note-no-global-T
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+TOTAL: PASS=67 FAIL=0
+
+----- stderr -----
+

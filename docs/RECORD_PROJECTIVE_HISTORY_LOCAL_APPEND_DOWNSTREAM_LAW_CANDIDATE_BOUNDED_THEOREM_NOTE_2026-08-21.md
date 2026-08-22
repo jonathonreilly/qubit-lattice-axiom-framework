@@ -457,5 +457,7 @@ python3 scripts/record_projective_history_local_append_downstream_law_candidate_
 ```
 
 Each runner must end with `FAIL=0` before this proposal is considered
-internally consistent. Independent audit and explicit owner adoption remain
-separate gates.
+internally consistent. The primary receipt must also print the five explicit
+N5 resolution lines that confine the bounded dependency statement to its
+tested element, site, mode, and block surfaces and leave lattice-wide closure
+untested. Independent audit and explicit owner adoption remain separate gates.

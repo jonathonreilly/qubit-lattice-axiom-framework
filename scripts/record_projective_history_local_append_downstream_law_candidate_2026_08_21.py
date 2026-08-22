@@ -645,6 +645,31 @@ check(
 )
 
 
+print(
+    "N5_RESOLUTION per_element: exact 2x2 endpoint branch P_1 P_0 P_1=0 "
+    "and both 4x2 typed-writer block identities are tested; no general event-weight "
+    "selection is claimed."
+)
+print(
+    "N5_RESOLUTION per_site: two distinct nearest-neighbour program/target pairs are "
+    "tested for one-site append, permanence, calibration, rewrite rejection, and "
+    "two-order confluence; no arbitrary site environment is claimed."
+)
+print(
+    "N5_RESOLUTION per_mode: one-qubit Z/X histories and all four declared two-qubit "
+    "Bell setting pairs are tested exactly; no general POVM or field-mode category is claimed."
+)
+print(
+    "N5_RESOLUTION per_block: one four-M2 singlet packet is reconstructed before and "
+    "after one carried proper-cubic transform; packet genesis and scalable block renewal "
+    "are not tested."
+)
+print(
+    "N5_RESOLUTION lattice_wide: not tested; the runner proves no lattice-wide, "
+    "continuum, arbitrary-history, matter, gravity, or TOE closure statement."
+)
+
+
 for item in checks:
     label = "PASS" if item.passed else "FAIL"
     print(f"[{label}] {item.name}: {item.detail}")

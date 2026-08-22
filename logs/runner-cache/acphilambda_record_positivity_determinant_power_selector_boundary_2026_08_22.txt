@@ -1,0 +1,30 @@
+===== runner cache v1 =====
+runner: scripts/acphilambda_record_positivity_determinant_power_selector_boundary_2026_08_22.py
+runner_sha256: 6f1ad13fd87aa2bb2e8fffa9efdee6b5ab2e8e6aba95123412001c2766a9b2b9
+input_fingerprint_sha256: aa3f09fbd03caf78b81e9e11717a54b0c53aa2ffdf6399c1939ec8f8fc05c940
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.55
+status: ok
+----- stdout -----
+[PASS] phase-complete determinant witness: det([z]) values=(1, -1, I, -I)
+[PASS] real-linear phase-complete positive map is zero: polarization rank=4 det=-4
+[PASS] holomorphic Hermitian branch-block map is constant: Cauchy-Riemann rank=4 det=1
+[PASS] raw holomorphic determinant is not a positive branch block: z=I hermitian=False trace=I
+[PASS] Kraus amplitude gives a squared-modulus branch-trace factor: trace ratio=25 branch_probability=5/9 completion_probability=4/9
+[PASS] scalar amplitude phase leaves its positive branch block invariant: phase=I invariant=True
+[PASS] conditional determinant-branch menu uses squared-modulus ratios: branch_probabilities=[1/45, 4/45] conditional=[1/5, 4/5] completion=8/9
+[PASS] first-power direct weight needs a supplied positive domain: domain=(0, 2, 5, -1) traces=(0, 2, 5, -1)
+[PASS] modulus-power-one square-root writer is a separate nonlinear bridge: trace ratio=5 complex_linear=False
+[PASS] coarse addition preserves supplied fine-block calibration: equal_fine=(3/7,3/7) equal_coarse=6/7 calibrated_split=3/7
+[PASS] squared-modulus amplitude factors compose multiplicatively: composite=25 factors=25
+[PASS] source preserves action, event-map, escape, and axiom boundaries: needles=7 present=7
+per_element: checked — phase-complete scalar determinant fixtures and their positive-weight typings are exercised exactly
+per_site: checked and not executed — no site-local matter action, site calibration, or site-to-event lift is claimed
+per_mode: checked and not executed — no fermion-mode carrier or K/CPT mode independence is selected by this theorem
+per_block: checked — Hermitian positivity, Kraus branch blocks, and a two-fine-event coarse sum are exercised exactly
+lattice_wide: checked and not executed — no lattice dynamics, continuum lift, or full charged-lepton action is claimed
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,94 @@
+===== runner cache v1 =====
+runner: scripts/y_symmetric_three_site_own_outgoing_set_two_tick_composition_reverse_face_2026_08_15.py
+runner_sha256: ff9f007ebf3e70c793673f1e2367f72556f51ef4cbaeec1f7eaa48012af01d92
+input_fingerprint_sha256: 92618dc365a978b3d3c5e2a499542fbc87c5f55c99d7dcbe503583056884ad81
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+two-tick own-outgoing-set reverse/face composition on #7211 y-probes
+AUDIT_INPUT_PATHS:
+  docs/Y_SYMMETRIC_THREE_SITE_OWN_OUTGOING_SET_TWO_TICK_COMPOSITION_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Reverse/face from O at t versus t+1 on the four #7211 y-probes, and composition, are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/Y_SYMMETRIC_THREE_SITE_OWN_OUTGOING_SET_TWO_TICK_COMPOSITION_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-y-probes-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: existential-opposite-identity
+PASS: composition-identity
+A t=0 M(tau0)={−e_1} O(tau0)={} O(tau1)={+e_2, +e_3, −e_3} new=(0, 2, 0),(0, 1, 1),(0, 1, -1)
+B t=2 M(tau0)={+e_1} O(tau0)={} O(tau1)={+e_2, +e_3, −e_3} new=(1, 2, 1),(1, 1, 2),(1, 1, 0)
+C t=1 M(tau0)={+e_2} O(tau0)={} O(tau1)={+e_1, −e_1, +e_3, −e_3} new=(1, 2, 0),(-1, 2, 0),(0, 2, 1),(0, 2, -1)
+D t=3 M(tau0)={−e_2, +e_3, −e_3} O(tau0)={−e_1} O(tau1)={+e_1, −e_1} new=(2, 1, 0)
+reverse tau0=UNDEFINED tau1=hold
+face tau0=UNDEFINED tau1=hold
+composition=fail
+per_element: each earliest outgoing nearest-neighbor step at a probe, read from the record prefix at that probe's t and at t+1
+per_site: scored only at y-probes A,B,C,D on Euclidean B_3(0); no other sites
+per_mode: no spectral or mode calculation is executed on this finite host
+per_block: four outgoing sets at two cuts plus reverse/face/composition bits
+lattice_wide: checked and not executed — no lattice-wide lettering rule is claimed
+PASS: perp-step-incoming-lock
+PASS: outgoing-set-undefined-if-unformed
+PASS: outgoing-empty-not-undefined
+PASS: incoming-set-seed-singleton
+PASS: y-symmetric-three-site-seed
+PASS: theorem1-formation-ticks  ({'A': 0, 'B': 2, 'C': 1, 'D': 3})
+PASS: theorem1-O-at-tau0  ({'A': '{}', 'B': '{}', 'C': '{}', 'D': '{−e_1}'})
+PASS: theorem1-O-at-tau1  ({'A': '{+e_2, +e_3, −e_3}', 'B': '{+e_2, +e_3, −e_3}', 'C': '{+e_1, −e_1, +e_3, −e_3}', 'D': '{+e_1, −e_1}'})
+PASS: theorem1-O-tau1-strictly-larger
+PASS: theorem1-M-two-tick-frozen
+PASS: theorem1-O-disjoint-from-M
+PASS: theorem1-new-records-meet-6nn  ({'A': ((0, 2, 0), (0, 1, 1), (0, 1, -1)), 'B': ((1, 2, 1), (1, 1, 2), (1, 1, 0)), 'C': ((1, 2, 0), (-1, 2, 0), (0, 2, 1), (0, 2, -1)), 'D': ((2, 1, 0),)})
+PASS: theorem1-new-neighbors-enter-O
+PASS: theorem1-mixed-stays-a-set
+PASS: theorem1-A-is-seed
+PASS: theorem1-D-tau0-seed-dual
+PASS: theorem2-reverse-tau0-undefined-tau1-hold
+PASS: theorem2-face-tau0-undefined-tau1-hold
+PASS: theorem3-composition-fail
+PASS: mutation-nmt2sy-M-two-tick-hold-hold
+PASS: mutation-nmoutsy-eventual-O-hold-hold
+PASS: mutation-nmot2opp-same-delay-different-seed
+PASS: mutation-unique-letter-tau1-undefined
+PASS: mutation-neighbor-lock-leftover-differs
+PASS: mutation-empty-plus-undefined
+PASS: mutation-sum-cancels-mixed-A
+PASS: O-is-not-M
+PASS: reverse-hold-7211-not-also-outgoing
+PASS: not-x-probes-or-z-symmetric-or-perp
+PASS: not-two-site-opposite-lock-seed
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: note-claim-scope
+PASS: note-reports-O-ticks
+PASS: note-reports-new-neighbors
+PASS: note-reports-undefined-hold-composition-fail
+PASS: note-displayed-not-adopted
+PASS: note-not-m-two-tick-or-eventual-o
+PASS: note-not-nmot2opp-two-site
+PASS: note-not-two-tick-lock-count-clock
+PASS: note-not-mixed-7188-fail-fail
+PASS: note-does-not-use-occupancy
+PASS: note-no-global-T
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+TOTAL: PASS=62 FAIL=0
+
+----- stderr -----
+

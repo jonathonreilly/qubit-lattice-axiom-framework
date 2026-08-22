@@ -1,6 +1,6 @@
 {
- "edge_count": 15749,
- "node_count": 5567,
+ "edge_count": 15753,
+ "node_count": 5569,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -264,6 +264,10 @@
   },
   "acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04": {
    "deps_hash": "7b707271a9a8",
+   "out_degree": 2
+  },
+  "acphilambda_record_positivity_determinant_power_selector_boundary_bounded_theorem_note_2026-08-22": {
+   "deps_hash": "7795e949cc13",
    "out_degree": 2
   },
   "acphilambda_registrable_cycle_holonomy_normal_form_2026-07-01": {
@@ -16181,6 +16185,10 @@
   "record_production_residual_checklist_2026-06-05": {
    "deps_hash": "3190ce633dc5",
    "out_degree": 6
+  },
+  "record_projective_history_local_append_downstream_law_candidate_bounded_theorem_note_2026-08-21": {
+   "deps_hash": "7b707271a9a8",
+   "out_degree": 2
   },
   "record_reset_sink_entropy_ledger_2026-06-05": {
    "deps_hash": "630eac816cd1",

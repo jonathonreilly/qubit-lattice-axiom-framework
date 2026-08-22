@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_record_positivity_determinant_power_selector_boundary_2026_08_22.py
 runner_sha256: 6f1ad13fd87aa2bb2e8fffa9efdee6b5ab2e8e6aba95123412001c2766a9b2b9
-input_fingerprint_sha256: aa3f09fbd03caf78b81e9e11717a54b0c53aa2ffdf6399c1939ec8f8fc05c940
+input_fingerprint_sha256: 13f4268386196efdee004cc27131207e0bb9c82e8df247b2c3d12eeb7db39f14
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.55
+elapsed_sec: 0.45
 status: ok
 ----- stdout -----
 [PASS] phase-complete determinant witness: det([z]) values=(1, -1, I, -I)

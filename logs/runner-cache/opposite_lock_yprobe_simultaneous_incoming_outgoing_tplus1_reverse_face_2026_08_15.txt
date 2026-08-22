@@ -4,7 +4,7 @@ runner_sha256: 51dc01767f2cdfceadbaf5fb910234981c9955cd04017bc025e34aaec154bd5e
 input_fingerprint_sha256: 84138efe3944da0214a91d4564c67748663dbde4ec7a96c725f7fe19ae9ea39c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.15
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 simultaneous own-incoming and own-outgoing reverse/face at t+1

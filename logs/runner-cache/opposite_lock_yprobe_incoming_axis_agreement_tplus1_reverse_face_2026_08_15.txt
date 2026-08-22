@@ -4,7 +4,7 @@ runner_sha256: 85e1874a20b8d3f728474300ae46ea9864a855287daf66cab367c315baa17357
 input_fingerprint_sha256: a462f20d0383c74f92e8fdb9188f1ece3a036763bb270e8617859872a3e304c4
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 incoming-axis agreement of M reverse/face at t+1

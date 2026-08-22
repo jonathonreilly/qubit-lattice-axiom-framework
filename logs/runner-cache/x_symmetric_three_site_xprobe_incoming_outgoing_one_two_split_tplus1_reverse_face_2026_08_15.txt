@@ -1,0 +1,92 @@
+===== runner cache v1 =====
+runner: scripts/x_symmetric_three_site_xprobe_incoming_outgoing_one_two_split_tplus1_reverse_face_2026_08_15.py
+runner_sha256: 57ee0960d5b9a9644a39a0d52349dc80e802d7ddd620d134f0fd11f76ea01257
+input_fingerprint_sha256: c158bf8e824c5acf245b5fa41b8a84eb3b8eaed514478a5f02aa77a5a929d606
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+1-in 2-out axis split of M and O reverse/face at t+1 on #7213 x-probes
+AUDIT_INPUT_PATHS:
+  docs/X_SYMMETRIC_THREE_SITE_XPROBE_INCOMING_OUTGOING_ONE_TWO_SPLIT_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: 1-in 2-out axis split of M and O at t+1 on the four #7213 x-probes, and reverse/face from that, are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/X_SYMMETRIC_THREE_SITE_XPROBE_INCOMING_OUTGOING_ONE_TWO_SPLIT_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-x-probes-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: axis-identity
+PASS: cover-identity
+PASS: split-identity
+PASS: both-hold-identity
+A t=0 M={−e_2} O={+e_1, +e_3, −e_3} Axis(M)={e_2} Axis(O)={e_1, e_3} |Axis(M)|=1 cover=hold split=hold
+B t=2 M={+e_2} O={+e_1, +e_3, −e_3} Axis(M)={e_2} Axis(O)={e_1, e_3} |Axis(M)|=1 cover=hold split=hold
+C t=1 M={+e_1} O={+e_2, −e_2, +e_3, −e_3} Axis(M)={e_1} Axis(O)={e_2, e_3} |Axis(M)|=1 cover=hold split=hold
+D t=3 M={−e_1, +e_3, −e_3} O={+e_2, −e_2} Axis(M)={e_1, e_3} Axis(O)={e_2} |Axis(M)|=2 cover=hold split=fail
+1-in 2-out split reverse=hold face=fail
+per_element: each unsigned lattice axis among {e_1,e_2,e_3} occupied by M or by O at a probe's t+1
+per_site: scored only at x-probes A,B,C,D on Euclidean B_3(0); no other sites
+per_mode: no spectral or mode calculation is executed on this finite host
+per_block: four 1-in 2-out split bits, reverse/face from split at t+1
+lattice_wide: checked and not executed — no lattice-wide lettering rule is claimed
+PASS: perp-step-incoming-lock
+PASS: undefined-if-unformed
+PASS: incoming-set-seed-singleton
+PASS: theorem1-formation-ticks  ({'A': 0, 'B': 2, 'C': 1, 'D': 3})
+PASS: theorem1-M-at-tau  ({'A': '{−e_2}', 'B': '{+e_2}', 'C': '{+e_1}', 'D': '{−e_1, +e_3, −e_3}'})
+PASS: theorem1-O-at-tau  ({'A': '{+e_1, +e_3, −e_3}', 'B': '{+e_1, +e_3, −e_3}', 'C': '{+e_2, −e_2, +e_3, −e_3}', 'D': '{+e_2, −e_2}'})
+PASS: theorem1-Axis-M-and-O  ({'A': ('{e_2}', '{e_1, e_3}'), 'B': ('{e_2}', '{e_1, e_3}'), 'C': ('{e_1}', '{e_2, e_3}'), 'D': ('{e_1, e_3}', '{e_2}')})
+PASS: theorem1-cover-and-axis-card  ({'A': ('hold', 1), 'B': ('hold', 1), 'C': ('hold', 1), 'D': ('hold', 2)})
+PASS: theorem1-split-one-in-two-out  ({'A': 'hold', 'B': 'hold', 'C': 'hold', 'D': 'fail'})
+PASS: theorem1-M-frozen-from-t
+PASS: theorem1-new-records-meet-6nn  ({'A': ((2, 0, 0), (1, 0, 1), (1, 0, -1)), 'B': ((2, 1, 1), (1, 1, 2), (1, 1, 0)), 'C': ((2, 1, 0), (2, -1, 0), (2, 0, 1), (2, 0, -1)), 'D': ((1, 2, 0),)})
+PASS: theorem1-mixed-stays-a-set
+PASS: theorem1-A-is-seed
+PASS: theorem2-reverse-split-hold
+PASS: theorem3-face-split-fail
+PASS: two-in-one-out-is-fail
+PASS: mutation-cover-reverse-face-differs
+PASS: mutation-leftover-empty-fail-differs
+PASS: mutation-leftover-of-M-alone-differs
+PASS: mutation-leftover-of-O-alone-differs
+PASS: mutation-exist-opposite-is-signed
+PASS: mutation-unique-letter-undefined-at-mixed
+PASS: mutation-split-at-t-fails-reverse
+PASS: mutation-sum-cancels-mixed
+PASS: O-is-not-M
+PASS: not-y-probes-or-two-site-or-z-or-perp
+PASS: not-y-symmetric-three-site-seed
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: x-symmetric-three-site-seed
+PASS: note-claim-scope
+PASS: note-reports-M-O-Axis-cover-split
+PASS: note-reports-new-neighbors
+PASS: note-reports-split-reverse-face
+PASS: note-displayed-not-adopted
+PASS: note-not-leftover-of-cover
+PASS: note-not-leftover-empty-fail
+PASS: note-not-one-sided-or-exist-opposite-leftover
+PASS: note-not-mixed-7188-fail-fail
+PASS: note-no-global-T
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+PASS: uniqueness-not-required
+TOTAL: PASS=62 FAIL=0
+
+----- stderr -----
+

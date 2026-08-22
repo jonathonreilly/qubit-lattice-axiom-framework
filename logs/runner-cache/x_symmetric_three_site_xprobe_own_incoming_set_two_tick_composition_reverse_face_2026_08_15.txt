@@ -1,0 +1,81 @@
+===== runner cache v1 =====
+runner: scripts/x_symmetric_three_site_xprobe_own_incoming_set_two_tick_composition_reverse_face_2026_08_15.py
+runner_sha256: 10c52acc259152146ac6ad7b7aec8310fea25cc3b7363274b607208ed4de4268
+input_fingerprint_sha256: 2cb760d1d65d051d7d7f673352148e1951ea28c1b91bfe3926271a6ae49abc44
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+two-tick own-incoming-set reverse/face composition on #7213 x-probes
+AUDIT_INPUT_PATHS:
+  docs/X_SYMMETRIC_THREE_SITE_XPROBE_OWN_INCOMING_SET_TWO_TICK_COMPOSITION_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Reverse/face from M at t versus t+1 on the four #7213 x-probes, and composition, are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/X_SYMMETRIC_THREE_SITE_XPROBE_OWN_INCOMING_SET_TWO_TICK_COMPOSITION_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-x-probes-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: existential-opposite-identity
+PASS: composition-identity
+A t=0 M(tau0)={−e_2} M(tau1)={−e_2} new=(2, 0, 0),(1, 0, 1),(1, 0, -1)
+B t=2 M(tau0)={+e_2} M(tau1)={+e_2} new=(2, 1, 1),(1, 1, 2),(1, 1, 0)
+C t=1 M(tau0)={+e_1} M(tau1)={+e_1} new=(2, 1, 0),(2, -1, 0),(2, 0, 1),(2, 0, -1)
+D t=3 M(tau0)={−e_1, +e_3, −e_3} M(tau1)={−e_1, +e_3, −e_3} new=(1, 2, 0)
+reverse tau0=hold tau1=hold
+face tau0=hold tau1=hold
+composition=HOLD
+per_element: each earliest incoming nearest-neighbor step at a probe, read from the record prefix at that probe's t and at t+1
+per_site: scored only at x-probes A,B,C,D on Euclidean B_3(0); no other sites
+per_mode: no spectral or mode calculation is executed on this finite host
+per_block: four incoming sets at two cuts plus reverse/face/composition bits
+lattice_wide: checked and not executed — no lattice-wide lettering rule is claimed
+PASS: perp-step-incoming-lock
+PASS: incoming-set-undefined-if-unformed
+PASS: incoming-set-seed-singleton
+PASS: theorem1-formation-ticks  ({'A': 0, 'B': 2, 'C': 1, 'D': 3})
+PASS: theorem1-A-is-seed
+PASS: theorem1-M-at-tau0  ({'A': '{−e_2}', 'B': '{+e_2}', 'C': '{+e_1}', 'D': '{−e_1, +e_3, −e_3}'})
+PASS: theorem1-M-at-tau1-equals-tau0
+PASS: theorem1-mixed-stays-a-set
+PASS: theorem1-new-records-meet-6nn  ({'A': ((2, 0, 0), (1, 0, 1), (1, 0, -1)), 'B': ((2, 1, 1), (1, 1, 2), (1, 1, 0)), 'C': ((2, 1, 0), (2, -1, 0), (2, 0, 1), (2, 0, -1)), 'D': ((1, 2, 0),)})
+PASS: theorem1-new-neighbors-are-later-arrivals
+PASS: theorem2-reverse-tau0-and-tau1-hold
+PASS: theorem2-face-tau0-and-tau1-hold
+PASS: theorem3-composition-hold
+PASS: mutation-unique-letter-face-undefined
+PASS: mutation-neighbor-lock-leftover-reverse-fails
+PASS: mutation-empty-plus-undefined
+PASS: mutation-sum-is-not-the-letter
+PASS: M-is-not-neighbor-lock-set
+PASS: uniqueness-not-required
+PASS: x-symmetric-three-site-seed
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: note-claim-scope
+PASS: note-reports-M-ticks-and-new-neighbors
+PASS: note-reports-hold-hold-composition-hold
+PASS: note-displayed-not-adopted
+PASS: note-not-star-or-unique-letter-leftover
+PASS: note-not-two-tick-lock-count-clock
+PASS: note-no-global-T
+PASS: note-forbids-enlargement-and-cache
+PASS: note-does-not-use-occupancy
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+TOTAL: PASS=49 FAIL=0
+
+----- stderr -----
+

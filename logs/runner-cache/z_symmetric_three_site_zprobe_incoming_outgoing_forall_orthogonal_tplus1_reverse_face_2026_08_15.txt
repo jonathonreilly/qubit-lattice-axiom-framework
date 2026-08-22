@@ -1,0 +1,89 @@
+===== runner cache v1 =====
+runner: scripts/z_symmetric_three_site_zprobe_incoming_outgoing_forall_orthogonal_tplus1_reverse_face_2026_08_15.py
+runner_sha256: fa1b60311e487ff140eff5ea4040b0a0b46cea301a1e0c0ea7f78bb917cb480c
+input_fingerprint_sha256: b9ba6f9f81da80c5b6feb887118ed839b2f57ba1ac702c3b0f9dfbd447c8e0e2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+forall-orthogonal M vs O reverse/face at t+1 on #7186 z-probes
+AUDIT_INPUT_PATHS:
+  docs/Z_SYMMETRIC_THREE_SITE_ZPROBE_INCOMING_OUTGOING_FORALL_ORTHOGONAL_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Forall-orthogonal M vs O at t+1 on the four #7186 z-probes, and reverse/face from that, are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/Z_SYMMETRIC_THREE_SITE_ZPROBE_INCOMING_OUTGOING_FORALL_ORTHOGONAL_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-z-probes-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: forall-perp-identity
+PASS: exist-perp-is-leftover-identity
+PASS: existential-opposite-is-leftover-identity
+PASS: combine-status-identity
+A t=0 tau=1 M={−e_1} O={+e_2, −e_2, +e_3} forall-perp=hold
+A dots=(('−e_1', '+e_2', 0), ('−e_1', '−e_2', 0), ('−e_1', '+e_3', 0))
+B t=2 tau=3 M={+e_1} O={+e_2, −e_2, +e_3} forall-perp=hold
+B dots=(('+e_1', '+e_2', 0), ('+e_1', '−e_2', 0), ('+e_1', '+e_3', 0))
+C t=1 tau=2 M={+e_3} O={+e_1, −e_1, +e_2, −e_2} forall-perp=hold
+C dots=(('+e_3', '+e_1', 0), ('+e_3', '−e_1', 0), ('+e_3', '+e_2', 0), ('+e_3', '−e_2', 0))
+D t=3 tau=4 M={+e_2, −e_2, −e_3} O={+e_1, −e_1} forall-perp=hold
+D dots=(('+e_2', '+e_1', 0), ('+e_2', '−e_1', 0), ('−e_2', '+e_1', 0), ('−e_2', '−e_1', 0), ('−e_3', '+e_1', 0), ('−e_3', '−e_1', 0))
+reverse=hold face=hold
+per_element: each integer dot of an earliest incoming step against an outgoing dual step at a probe, read from the record prefix at that probe's t+1
+per_site: scored only at z-probes A,B,C,D on Euclidean B_3(0); no other sites
+per_mode: no spectral or mode calculation is executed on this finite host
+per_block: four incoming sets, four outgoing sets, integer dots, four forall-perp reports, and reverse/face from those reports
+lattice_wide: checked and not executed — no lattice-wide lettering rule is claimed
+PASS: perp-step-incoming-lock
+PASS: unformed-at-tau-is-undefined
+PASS: incoming-set-seed-singleton
+PASS: theorem1-formation-ticks  ({'A': 0, 'B': 2, 'C': 1, 'D': 3})
+PASS: theorem1-M-and-O-at-tau  ({'A': ('{−e_1}', '{+e_2, −e_2, +e_3}'), 'B': ('{+e_1}', '{+e_2, −e_2, +e_3}'), 'C': ('{+e_3}', '{+e_1, −e_1, +e_2, −e_2}'), 'D': ('{+e_2, −e_2, −e_3}', '{+e_1, −e_1}')})
+PASS: theorem1-dots-all-zero
+PASS: theorem1-forall-perp-hold-at-each-probe  ({'A': 'hold', 'B': 'hold', 'C': 'hold', 'D': 'hold'})
+PASS: theorem1-A-is-seed
+PASS: theorem1-mixed-stays-a-set
+PASS: theorem2-reverse-hold  (hold)
+PASS: theorem3-face-hold  (hold)
+PASS: empty-or-undefined-is-undefined
+PASS: disjoint-is-not-forall-perp
+PASS: O-is-not-M
+PASS: not-leftover-of-exist-perp
+PASS: not-leftover-of-exist-opposite-M-or-O
+PASS: not-leftover-of-unique-letter
+PASS: not-leftover-of-neighbor-lock-union
+PASS: not-leftover-of-M-or-O-at-t
+PASS: uniqueness-not-required
+PASS: not-leftover-of-nstri-exist-perp-hold-forall-fail  (('fail', 'fail', 'hold'))
+PASS: not-x-probes-or-y-probes-or-two-site-or-perp
+PASS: not-y-symmetric-or-x-symmetric
+PASS: z-symmetric-three-site-seed
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: note-claim-scope
+PASS: note-reports-M-O-dots-and-forall
+PASS: note-reports-reverse-face
+PASS: note-displayed-not-adopted
+PASS: note-not-exist-perp-or-exist-opposite-or-simultaneous
+PASS: note-not-nstri-forall-fail
+PASS: note-does-not-use-occupancy
+PASS: note-no-global-T
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+TOTAL: PASS=55 FAIL=0
+
+----- stderr -----
+

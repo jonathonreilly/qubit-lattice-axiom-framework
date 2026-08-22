@@ -1,6 +1,6 @@
 {
- "edge_count": 15752,
- "node_count": 5558,
+ "edge_count": 15753,
+ "node_count": 5559,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -22225,6 +22225,10 @@
   "z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "z_axis_opposite_lock_xprobe_incoming_outgoing_axis_cover_tplus1_reverse_face_bounded_theorem_note_2026-08-15": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "z_n_asymmetry_residual_1_finite_vs_continuum_note_2026-05-31": {
    "deps_hash": "816f2d7e9dc1",

@@ -1,6 +1,6 @@
 {
- "edge_count": 15752,
- "node_count": 5558,
+ "edge_count": 15753,
+ "node_count": 5559,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -22233,6 +22233,10 @@
   "z_n_spectral_asymmetry_physical_identification_note_2026-05-31": {
    "deps_hash": "84609f8d3c8c",
    "out_degree": 6
+  },
+  "z_symmetric_three_site_zprobe_own_incoming_set_neighbor_read_reverse_face_bounded_theorem_note_2026-08-15": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   }
  },
  "schema_version": 1

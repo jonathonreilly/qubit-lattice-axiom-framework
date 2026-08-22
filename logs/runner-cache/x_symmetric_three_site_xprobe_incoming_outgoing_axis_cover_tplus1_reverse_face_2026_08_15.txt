@@ -1,0 +1,87 @@
+===== runner cache v1 =====
+runner: scripts/x_symmetric_three_site_xprobe_incoming_outgoing_axis_cover_tplus1_reverse_face_2026_08_15.py
+runner_sha256: 84b087d76be857262ba916b753a41c9b924369e12c6c20c59c66fa11d331e55a
+input_fingerprint_sha256: ec398ca444c0fbe0d469d8c0ef1d5ac6cadd4518eca08a10f78ffd2856160326
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+axis-cover of M and O reverse/face at t+1 on #7213 x-probes
+AUDIT_INPUT_PATHS:
+  docs/X_SYMMETRIC_THREE_SITE_XPROBE_INCOMING_OUTGOING_AXIS_COVER_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Axis-cover of M and O at t+1 on the four #7213 x-probes, and reverse/face from that, are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/X_SYMMETRIC_THREE_SITE_XPROBE_INCOMING_OUTGOING_AXIS_COVER_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-x-probes-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: axis-identity
+PASS: cover-identity
+PASS: both-cover-identity
+A t=0 M={−e_2} O={+e_1, +e_3, −e_3} Axis(M)={e_2} Axis(O)={e_1, e_3} cover=hold
+B t=2 M={+e_2} O={+e_1, +e_3, −e_3} Axis(M)={e_2} Axis(O)={e_1, e_3} cover=hold
+C t=1 M={+e_1} O={+e_2, −e_2, +e_3, −e_3} Axis(M)={e_1} Axis(O)={e_2, e_3} cover=hold
+D t=3 M={−e_1, +e_3, −e_3} O={+e_2, −e_2} Axis(M)={e_1, e_3} Axis(O)={e_2} cover=hold
+axis-cover reverse=hold face=hold
+per_element: each unsigned lattice axis among {e_1,e_2,e_3} occupied by M or by O at a probe's t+1
+per_site: scored only at x-probes A,B,C,D on Euclidean B_3(0); no other sites
+per_mode: no spectral or mode calculation is executed on this finite host
+per_block: four axis-cover bits, reverse/face from cover at t+1
+lattice_wide: checked and not executed — no lattice-wide lettering rule is claimed
+PASS: perp-step-incoming-lock
+PASS: undefined-if-unformed
+PASS: incoming-set-seed-singleton
+PASS: theorem1-formation-ticks  ({'A': 0, 'B': 2, 'C': 1, 'D': 3})
+PASS: theorem1-M-at-tau  ({'A': '{−e_2}', 'B': '{+e_2}', 'C': '{+e_1}', 'D': '{−e_1, +e_3, −e_3}'})
+PASS: theorem1-O-at-tau  ({'A': '{+e_1, +e_3, −e_3}', 'B': '{+e_1, +e_3, −e_3}', 'C': '{+e_2, −e_2, +e_3, −e_3}', 'D': '{+e_2, −e_2}'})
+PASS: theorem1-Axis-M-and-O  ({'A': ('{e_2}', '{e_1, e_3}'), 'B': ('{e_2}', '{e_1, e_3}'), 'C': ('{e_1}', '{e_2, e_3}'), 'D': ('{e_1, e_3}', '{e_2}')})
+PASS: theorem1-cover-hold  ({'A': 'hold', 'B': 'hold', 'C': 'hold', 'D': 'hold'})
+PASS: theorem1-M-frozen-from-t
+PASS: theorem1-new-records-meet-6nn  ({'A': ((2, 0, 0), (1, 0, 1), (1, 0, -1)), 'B': ((2, 1, 1), (1, 1, 2), (1, 1, 0)), 'C': ((2, 1, 0), (2, -1, 0), (2, 0, 1), (2, 0, -1)), 'D': ((1, 2, 0),)})
+PASS: theorem1-mixed-stays-a-set
+PASS: theorem1-A-is-seed
+PASS: theorem2-reverse-cover-hold
+PASS: theorem3-face-cover-hold
+PASS: mutation-leftover-empty-fail-differs
+PASS: mutation-leftover-of-M-alone-differs
+PASS: mutation-leftover-of-O-alone-differs
+PASS: mutation-exist-opposite-is-signed
+PASS: mutation-unique-letter-undefined-at-mixed
+PASS: mutation-cover-at-t-fails-reverse
+PASS: mutation-sum-cancels-mixed
+PASS: O-is-not-M
+PASS: not-y-probes-or-two-site-or-z-or-perp
+PASS: not-y-symmetric-three-site-seed
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: x-symmetric-three-site-seed
+PASS: note-claim-scope
+PASS: note-reports-M-O-Axis-cover
+PASS: note-reports-new-neighbors
+PASS: note-reports-cover-reverse-face
+PASS: note-displayed-not-adopted
+PASS: note-not-leftover-empty-fail
+PASS: note-not-one-sided-or-exist-opposite-leftover
+PASS: note-not-mixed-7188-fail-fail
+PASS: note-no-global-T
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+PASS: uniqueness-not-required
+TOTAL: PASS=57 FAIL=0
+
+----- stderr -----
+

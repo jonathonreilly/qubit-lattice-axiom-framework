@@ -1,6 +1,6 @@
 {
- "edge_count": 15752,
- "node_count": 5558,
+ "edge_count": 15754,
+ "node_count": 5559,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -264,6 +264,10 @@
   },
   "acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04": {
    "deps_hash": "7b707271a9a8",
+   "out_degree": 2
+  },
+  "acphilambda_record_positivity_determinant_power_selector_boundary_bounded_theorem_note_2026-08-22": {
+   "deps_hash": "7795e949cc13",
    "out_degree": 2
   },
   "acphilambda_registrable_cycle_holonomy_normal_form_2026-07-01": {

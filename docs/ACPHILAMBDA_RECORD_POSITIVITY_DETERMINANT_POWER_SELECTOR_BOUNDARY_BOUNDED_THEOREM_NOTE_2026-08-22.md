@@ -17,9 +17,7 @@ bare_retained_allowed: false
 **Role:** bounded action/measure typing probe after the provisional finite
 Record-law candidate
 
-**Claim type:** bounded theorem; source proposal requiring independent audit
-
-**Type:** bounded_theorem
+**Claim type:** bounded_theorem
 
 **Primary runner:**
 [`scripts/acphilambda_record_positivity_determinant_power_selector_boundary_2026_08_22.py`](../scripts/acphilambda_record_positivity_determinant_power_selector_boundary_2026_08_22.py)

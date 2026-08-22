@@ -1,0 +1,74 @@
+===== runner cache v1 =====
+runner: scripts/z_symmetric_three_site_two_tick_record_stack_composition_reverse_face_2026_08_15.py
+runner_sha256: 3ab23512e48cadb48117273709ac912b42fe68655e12061c9621f2b6883c5408
+input_fingerprint_sha256: bcc2f6edbc851560b10df836cd5b1cea43fbb4beb08cdc08fba18bab4999befa
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+two-tick own-incoming-set reverse/face composition on z-symmetric x-probes
+AUDIT_INPUT_PATHS:
+  docs/Z_SYMMETRIC_THREE_SITE_TWO_TICK_RECORD_STACK_COMPOSITION_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Reverse/face from own incoming sets at t versus t+1 on the four #7188 x-probes, and whether t+1 bits equal t bits, are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/Z_SYMMETRIC_THREE_SITE_TWO_TICK_RECORD_STACK_COMPOSITION_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-x-probes-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: existential-opposite-identity
+PASS: composition-identity
+A t=3 M(tau0)={+e_2, −e_2} M(tau1)={+e_2, −e_2} new=(2, 0, 0)
+B t=2 M(tau0)={+e_1} M(tau1)={+e_1} new=(1, 2, 1),(1, 0, 1),(1, 1, 2)
+C t=4 M(tau0)={+e_1} M(tau1)={+e_1} new=(2, 1, 0),(2, -1, 0)
+D t=2 M(tau0)={+e_1} M(tau1)={+e_1} new=(1, 2, 0),(1, 0, 0)
+reverse tau0=fail tau1=fail
+face tau0=fail tau1=fail
+composition=HOLD
+per_element: each earliest incoming nearest-neighbor step at a probe, read from the record prefix at that probe's t and at t+1
+per_site: scored only at x-probes A,B,C,D on Euclidean B_3(0); no other sites
+per_mode: no spectral or mode calculation is executed on this finite host
+per_block: four incoming sets at two cuts plus reverse/face/composition bits
+lattice_wide: checked and not executed — no lattice-wide lettering rule is claimed
+PASS: perp-step-incoming-lock
+PASS: incoming-set-undefined-if-unformed
+PASS: incoming-set-seed-singleton
+PASS: theorem1-formation-ticks
+PASS: theorem1-M-at-tau0  ({'A': '{+e_2, −e_2}', 'B': '{+e_1}', 'C': '{+e_1}', 'D': '{+e_1}'})
+PASS: theorem1-M-at-tau1-equals-tau0
+PASS: theorem1-new-records-meet-6nn  ({'A': ((2, 0, 0),), 'B': ((1, 2, 1), (1, 0, 1), (1, 1, 2)), 'C': ((2, 1, 0), (2, -1, 0)), 'D': ((1, 2, 0), (1, 0, 0))})
+PASS: theorem1-new-neighbors-are-later-arrivals
+PASS: theorem2-reverse-tau0-and-tau1-fail
+PASS: theorem3-face-tau0-and-tau1-fail
+PASS: theorem3-composition-hold
+PASS: mutation-unique-letter-reverse-undefined
+PASS: mutation-neighbor-lock-leftover-holds
+PASS: mutation-empty-plus-undefined
+PASS: mutation-sum-would-fail
+PASS: M-is-not-neighbor-lock-set
+PASS: note-claim-scope
+PASS: note-reports-M-ticks-and-new-neighbors
+PASS: note-reports-fail-fail-composition-hold
+PASS: note-displayed-not-adopted
+PASS: note-not-star-or-unique-letter-leftover
+PASS: note-not-two-tick-lock-count-clock
+PASS: note-no-global-T
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+TOTAL: PASS=42 FAIL=0
+
+----- stderr -----
+

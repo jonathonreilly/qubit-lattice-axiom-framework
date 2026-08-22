@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
-"""Exact finite checks for a proposed projective-history downstream Law.
+"""Exact finite checks for a provisional projective-history sector Law.
 
-The trace/history rule, formation cadence, event registration, and global
-coupling are candidate Law data here.  The script checks their mathematical
-consistency and their interface with permanent site Records; it does not
-derive or adopt those data from the framework axioms.
+The finite projective domain, calibrated event registration, trace/history
+rule, and composite-cylinder coupling are the provisionally selected
+sector-Law kernel.  Formation cadence, packet realization, supplied causal
+layer, and contingent member remain benchmark or history data.  The script
+checks their mathematical consistency and their interface with permanent site
+Records; it does not derive any of them from the framework axioms.
 """
 
 from __future__ import annotations
@@ -606,16 +608,20 @@ check(
 
 
 # L. The finite resource ledger and uncosted handoffs are explicit.
-candidate_imports = {
-    "preparation_packet_registration": "supplied",
-    "projective_program_category": "supplied",
-    "event_registration": "supplied",
-    "trace_history_functional": "supplied",
-    "formation_cadence": "supplied",
-    "causal_layer": "supplied",
-    "global_coupling": "supplied",
-    "contingent_member": "supplied",
+declared_inputs = {
+    "preparation_packet_registration": "benchmark_boundary",
+    "projective_program_category": "selected_sector_law",
+    "event_registration": "selected_sector_law",
+    "trace_history_functional": "selected_sector_law",
+    "formation_cadence": "benchmark_process",
+    "causal_layer": "benchmark_boundary",
+    "global_coupling": "selected_sector_law",
+    "contingent_member": "contingent_history_data",
 }
+selected_sector_law_fields = {
+    name for name, status in declared_inputs.items() if status == "selected_sector_law"
+}
+benchmark_or_history_fields = set(declared_inputs) - selected_sector_law_fields
 open_handoffs = {
     "packet_genesis",
     "packet_renewal",
@@ -635,8 +641,20 @@ resource_counts = {
 final_record_count = sum(resource_counts.values())
 expected_final_record_count = 8 if mutation == "ledger" else 9
 ledger_ok = (
-    set(candidate_imports.values()) == {"supplied"}
-    and len(candidate_imports) == 8
+    selected_sector_law_fields
+    == {
+        "projective_program_category",
+        "event_registration",
+        "trace_history_functional",
+        "global_coupling",
+    }
+    and benchmark_or_history_fields
+    == {
+        "preparation_packet_registration",
+        "formation_cadence",
+        "causal_layer",
+        "contingent_member",
+    }
     and len(open_handoffs) == 8
     and resource_counts
     == {
@@ -650,7 +668,8 @@ ledger_ok = (
 check(
     "finite resource ledger closes and names eight declared open handoffs",
     ledger_ok,
-    f"fixture ends with {final_record_count} Records; {len(open_handoffs)} handoffs remain open",
+    f"4 selected kernel fields, 4 benchmark/history fields, "
+    f"{final_record_count} Records, and {len(open_handoffs)} open handoffs",
 )
 
 

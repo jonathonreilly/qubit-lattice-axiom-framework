@@ -11,9 +11,18 @@ from __future__ import annotations
 
 import argparse
 from dataclasses import dataclass
-from typing import Iterable
+from typing import TYPE_CHECKING, Iterable
 
 import sympy as sp
+
+
+# Static audit-packet binding only.  The independent reconstruction must not be
+# imported or executed by this primary runner, but its source must accompany
+# the primary in a restricted audit packet.
+if TYPE_CHECKING:
+    from record_projective_history_local_append_downstream_law_candidate_independent_check_2026_08_21 import (
+        MUTATIONS as _independent_mutations,
+    )
 
 
 I2 = sp.eye(2)

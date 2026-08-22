@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/record_projective_history_local_append_downstream_law_candidate_2026_08_21.py
+runner_sha256: f309cdbab3bdfc3e19e7b242149c01d0d71bbd398a009b6945025b853838e285
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 3.21
+status: ok
+----- stdout -----
 N5_RESOLUTION per_element: exact 2x2 endpoint branch P_1 P_0 P_1=0 and both 4x2 typed-writer block identities are tested; no general event-weight selection is claimed.
 N5_RESOLUTION per_site: two distinct nearest-neighbour program/target pairs are tested for one-site append, permanence, calibration, rewrite rejection, and two-order confluence; no arbitrary site environment is claimed.
 N5_RESOLUTION per_mode: one-qubit Z/X histories and all four declared two-qubit Bell setting pairs are tested exactly; no general POVM or field-mode category is claimed.
@@ -16,3 +24,6 @@ N5_RESOLUTION lattice_wide: not tested; the runner proves no lattice-wide, conti
 [PASS] supplied formation hazards are nonnegative and normalize at one cadence: lambda_o>=0, sum_o lambda_o=gamma, S(0)=1, and S(infinity)=0
 [PASS] finite resource ledger closes and names eight declared open handoffs: fixture ends with 9 Records; 8 handoffs remain open
 TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

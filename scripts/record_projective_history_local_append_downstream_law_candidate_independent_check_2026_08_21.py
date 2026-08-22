@@ -7,15 +7,16 @@ two outcomes), not the primary runner's distinct nine-Record anchored
 relational packet.  It therefore cross-checks the finite packet algebra but
 does not certify the primary's relational decoder or resource count.
 
-The finite projective domain, calibrated event registration, trace/history
-weights, and composite-cylinder coupling are the provisionally selected
-sector-Law kernel.  Preparation-packet registration, formation cadence,
-fixture geometry, and the realized-member coordinate remain benchmark or
-history data.  The checker does not infer Record admissibility, spacelike
-causal order, an autonomous covariant Law, physical clock calibration,
-resource renewal, or the documentary owner decision.  Each optional mutation
-changes one physical/input datum and must isolate exactly one of the twelve
-gates.
+The binary one-qubit projective domain, candidate event registration
+conditional on independent physical calibration, trace/history weights, and
+local tensor-product composite-cylinder coupling are the provisionally
+selected sector-Law kernel.  Preparation-packet registration, formation
+cadence, fixture geometry, and the realized-member coordinate remain benchmark
+or history data.  The checker does not infer physical Record calibration,
+nearest-neighbour Admissibility, spacelike causal order, an autonomous
+covariant Law, physical clock calibration, resource renewal, or the
+documentary owner decision.  Each optional mutation changes one physical/input
+datum and must isolate exactly one of the twelve gates.
 """
 
 from __future__ import annotations
@@ -419,7 +420,7 @@ check(
 )
 
 
-# 8. Test calibrated nearest-neighbour appends and a wrong-program hostile.
+# 8. Test typed candidate-map appends and a wrong-program hostile.
 program_a, target_a = (-2, 0, 0), (-1, 0, 0)
 target_b, program_b = (1, 0, 0), (2, 0, 0)
 initial_ledger = {
@@ -453,7 +454,7 @@ append_ok = (
     and occupied_rejected
 )
 check(
-    "nonadjacent calibrated appends commute in the supplied causal layer",
+    "nonadjacent typed appends commute in the supplied causal layer",
     append_ok,
     "registered outcomes append once; wrong-setting content and rewrites are rejected",
 )
@@ -592,6 +593,8 @@ selected_sector_law_fields = {
 }
 open_boundaries = {
     "Admissibility derivation",
+    "physical event calibration",
+    "nearest-neighbour marginal carrier",
     "autonomous covariant genesis",
     "physical clock calibration",
     "resource renewal",
@@ -624,7 +627,7 @@ boundary_ok = (
         "fresh_targets": 2,
         "complete_fixture_sites": 8,
     }
-    and len(open_boundaries) == 6
+    and len(open_boundaries) == 8
 )
 check(
     "executable import and finite-resource ledger",

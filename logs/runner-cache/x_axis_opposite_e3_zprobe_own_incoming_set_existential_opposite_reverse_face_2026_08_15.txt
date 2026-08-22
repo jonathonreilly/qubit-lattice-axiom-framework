@@ -1,0 +1,90 @@
+===== runner cache v1 =====
+runner: scripts/x_axis_opposite_e3_zprobe_own_incoming_set_existential_opposite_reverse_face_2026_08_15.py
+runner_sha256: bdf3364d9cdbec6e5102eb8292c593d8a1363cc247dad03a678e6a3a5f02c92c
+input_fingerprint_sha256: bf104f153732767eadbebfc72bcf0f44455929bee0eaae418c5a43a22c72fc9f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+own incoming set exist-opposite reverse/face on #7191 z-probes
+AUDIT_INPUT_PATHS:
+  docs/X_AXIS_OPPOSITE_E3_ZPROBE_OWN_INCOMING_SET_EXISTENTIAL_OPPOSITE_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Reverse and face from the own incoming set on the four #7191 z-probes are reported. No S⁺. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/X_AXIS_OPPOSITE_E3_ZPROBE_OWN_INCOMING_SET_EXISTENTIAL_OPPOSITE_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-z-probes-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: existential-opposite-identity
+PASS: own-incoming-set-identity
+PASS: theorem1-all-four-probes-recorded
+A t=3 M={+e_1, +e_2, −e_2} L=UNDEFINED S+={−e_1, +e_2, −e_2, +e_3}
+B t=2 M={+e_3} L=+e_3 S+={+e_2, +e_3}
+C t=4 M={+e_3} L=+e_3 S+={+e_1, +e_2, −e_2, +e_3}
+D t=3 M={−e_1, +e_2, −e_2} L=UNDEFINED S+={+e_1, +e_2, −e_2, +e_3, −e_3}
+reverse=fail face=fail
+S+_reverse=hold S+_face=hold reverse_uses_L(A)=False reverse_uses_singleton_M(A)=False
+unique_L_reverse=UNDEFINED unique_L_face=UNDEFINED
+per_element: each lock vector in the probe's own incoming set M(q)
+per_site: scored only at z-probes A,B,C,D on Euclidean B_3(0); no other sites
+per_mode: no spectral or mode calculation is executed on this finite host
+per_block: four incoming sets plus reverse/face as hold, fail, or UNDEFINED
+lattice_wide: checked and not executed — no lattice-wide lettering rule is claimed
+PASS: theorem1-formation-ticks  ({'A': 3, 'B': 2, 'C': 4, 'D': 3})
+PASS: theorem1-incoming-sets  ({'A': '{+e_1, +e_2, −e_2}', 'B': '{+e_3}', 'C': '{+e_3}', 'D': '{−e_1, +e_2, −e_2}'})
+PASS: theorem1-compare-7191-S-plus  (('{+e_1, +e_2, −e_2}', '{−e_1, +e_2, −e_2, +e_3}'))
+PASS: theorem1-A-is-not-seed
+PASS: theorem1-mixed-stays-a-set
+PASS: theorem1-reverse-does-not-use-singleton-M-A  (('fail', '{+e_1, +e_2, −e_2}'))
+PASS: theorem2-reverse-fail  (fail)
+PASS: theorem3-face-fail  (fail)
+PASS: discriminator-fail-from-own-incoming-not-S-plus
+PASS: not-unique-L-leftover
+PASS: not-leftover-of-S-plus-7191
+PASS: not-x-or-y-probes-or-nsopp
+PASS: not-same-lock-or-nspar-or-nssame-or-y-axis-or-opp-e2  (('fail', 'fail', '{+e_1, −e_1, +e_2}'))
+PASS: not-nnlock-named-sign
+PASS: incoming-locks-are-nn-steps
+PASS: uniqueness-not-required
+PASS: two-site-x-axis-opposite-e3
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: perp-step-incoming-lock
+PASS: mutation-empty-or-undefined-is-undefined
+PASS: mutation-no-opposite-pair-fails
+PASS: mutation-unique-L-would-be-undefined
+PASS: mutation-S-plus-would-hold
+PASS: mutation-sum-collapses-mixed-pairs
+PASS: mutation-internal-opposite-at-A-is-not-reverse
+PASS: note-claim-scope
+PASS: note-reports-ticks-and-incoming-sets
+PASS: note-reports-7191-S-plus
+PASS: note-reports-fail-fail
+PASS: note-displayed-not-adopted
+PASS: note-does-not-use-occupancy
+PASS: note-not-sign-lettering
+PASS: note-not-ndot-or-occupancy-inner-product
+PASS: note-does-not-attach-formation-member
+PASS: note-not-unique-or-sum-or-star-leftover
+PASS: note-no-six-neighbor-star-as-letter
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+PASS: source-letter-from-own-incoming-set-existential-opposite
+TOTAL: PASS=58 FAIL=0
+
+----- stderr -----
+

@@ -4,7 +4,7 @@ runner_sha256: 352587191ed176ff462d0596b1a405c589e2412dfc386eff69f93f0203556d2b
 input_fingerprint_sha256: c42e1206f58ed47c2bd29c112461fe4b3c75e740e154c1707883a53842172cb7
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 axis-cover of M and O reverse/face at t+1 on #7188 x-probes

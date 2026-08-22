@@ -1,6 +1,6 @@
 {
- "edge_count": 15752,
- "node_count": 5558,
+ "edge_count": 15759,
+ "node_count": 5559,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -5893,6 +5893,10 @@
   "gauge_vacuum_plaquette_full_slice_rim_lift_integral_boundary_science_only_note_2026-04-17": {
    "deps_hash": "c21cb86da8c4",
    "out_degree": 5
+  },
+  "gauge_vacuum_plaquette_full_two_slice_static_rho_identification_narrow_no_go_note_2026-08-22": {
+   "deps_hash": "5d4af82a9540",
+   "out_degree": 7
   },
   "gauge_vacuum_plaquette_hf_identification_diagnostic_bounded_note_2026-06-12": {
    "deps_hash": "416b5040092f",

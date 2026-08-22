@@ -1,0 +1,50 @@
+===== runner cache v1 =====
+runner: scripts/frontier_gauge_vacuum_plaquette_full_two_slice_compression_actual_l3_2026_08_22.py
+runner_sha256: d8a94f8ef51cdf13c15bdec7ea508cb564ea35cdbe2aaa04e8d02d0c88069547
+input_fingerprint_sha256: 9a9231cd04091e77de3ac839eb1a36d1017290fd2734044270b1f6c9226ef00f
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 215.14
+status: ok
+----- stdout -----
+FULL TWO-SLICE WILSON COMPRESSION, ACTUAL L_s=3
+mode=PRODUCTION; beta=6; B_full=B_2 (9 states); shared=B_1; static auxiliary=B_4
+four chains/ensemble; therm=900; full/static measure=2400/2400; every=4; blocks/chain=12
+Forward model has no fitted parameter beyond C_(0,0) normalization.
+Implementation and synthetic controls
+  [PASS] 81+81+81 action census and local Metropolis delta; delta error=2.22e-16
+  [PASS] wrong full-strength spatial half-action is rejected; mutated error=3.76e-01
+  [PASS] outgoing-conjugate cross-moment orientation; correct/mutated Hermiticity=5.9e-18/9.2e-01
+  [PASS] exact synthetic forward factorization and normalized strip; forward/strip errors=0.0e+00/5.7e-09
+  [PASS] off-diagonal residual defeats diagonal projection helper; detected gap=1.08e-01
+  [PASS] independent ensembles have four disjoint deterministic seeds
+  [PASS] audit certificate uses the frozen production configuration; overridden non-pilot configurations are non-certifying
+Sampling health
+  full:   acceptance=0.544..0.546; <P_space>=0.21408; <P_mix>=0.43809; block/tau=50/2.40; elapsed=132.1s
+  static: acceptance=0.509..0.511; <P>=0.46305; block/tau=50/2.21; elapsed=69.8s
+  [PASS] four-chain blocked samples are finite with nondegenerate acceptance; blocks=48/48; block/tau=50/2.40,50/2.21
+  [PASS] independent hot/cold chain observables agree within five grand-mean SE; full/static max=3.90/1.13 SE
+Auxiliary-box projection diagnostics
+  ||P1 Cmodel_2 P1-Cmodel_1||F=1.885e-01; ||P1 Cmodel_3 P1-Cmodel_2||F=4.449e-03; ||P1 Cmodel_4 P1-Cmodel_3||F=4.236e-05
+  B_3->B_4 max shift/primary-residual SE=0.01
+  ||P1 M_2 P1-M_1||F=1.311e+00
+  [PASS] shared forward model stabilizes from auxiliary B_3 to B_4; max shift=0.01 primary-residual SE
+Primary shared B_1 forward residual using auxiliary B_4 model
+  cov rank=15/15; min_eig=4.01e-07; chi2/rank=503.75/15; asymptotic p(diag only)=9.09e-98; max|coordinate|/SE=17.73; null=0.0e+00
+  largest discrepancy: Re C[(0, 1),(0, 1)]: measured/model=+0.451465/+0.373961; SE=4.37e-03; z=17.73
+  [PASS] shared forward covariance resolves its symmetry-supported sector; rank=15, PSD=True
+  null-centered stratified block bootstrap: exceedances=0/4096; rank_failures=0; p=0.000244081; one-sided 95% upper=0.000731113
+  [PASS] predeclared static-rho forward identification is rejected; predeclared p floor=0.001
+B_2 forward residual (rank-limited diagnostic, not a gate)
+  cov rank=50/80; chi2/rank=9979805.58/50; p_support=0; max|coordinate|/SE=17.73
+Direct inverse diagnostic only (never a gate)
+  B_2 cond(D)cond(M)^2=1.092e+10; paired B_2->B_1 vs B_1 max|difference|/JK-SE=21.34; cov rank=15
+per_element: checked and executed — the normalized shared 4x4 character matrix is tested coordinatewise and in its covariance-supported subspace
+per_site: checked and not executed — all 81 translated/oriented plaquettes are symmetry-averaged, so no individual-face equality is tested or claimed
+per_mode: checked and partially executed — B_1 is the physics surface, B_2 is sampled, and auxiliary models run through B_4; no B_5 or infinite-character claim is tested
+per_block: checked and executed — 48 leave-one-block transforms per independent ensemble supply the combined covariance
+lattice_wide: checked and partially executed — the result is only for the finite periodic L_s=3 Wilson lattice at beta=6; no volume sequence is tested
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

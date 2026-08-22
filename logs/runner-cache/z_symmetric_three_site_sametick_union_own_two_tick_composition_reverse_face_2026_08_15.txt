@@ -1,0 +1,75 @@
+===== runner cache v1 =====
+runner: scripts/z_symmetric_three_site_sametick_union_own_two_tick_composition_reverse_face_2026_08_15.py
+runner_sha256: 4c9478e887de12ad3d7db2318ab99636a1d262d381eb55a212b1efbc05f3c059
+input_fingerprint_sha256: 5961dc980e7c2b540778a73c96be487d4c20a429a9c77d07dd180822072bebb7
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+two-tick S^+ reverse/face composition on z-symmetric x-probes
+AUDIT_INPUT_PATHS:
+  docs/Z_SYMMETRIC_THREE_SITE_SAMETICK_UNION_OWN_TWO_TICK_COMPOSITION_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Reverse/face from S⁺ at t versus t+1 on the four #7188 x-probes, and whether those bits compose, are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/Z_SYMMETRIC_THREE_SITE_SAMETICK_UNION_OWN_TWO_TICK_COMPOSITION_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-x-probes-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: existential-opposite-identity
+PASS: composition-identity
+A t=3 L=UNDEFINED S+(tau0)={+e_1, +e_2, −e_2, +e_3, −e_3} S+(tau1)={+e_1, +e_2, −e_2, +e_3, −e_3} new=(2, 0, 0)
+B t=2 L=+e_1 S+(tau0)={+e_1, +e_2} S+(tau1)={+e_1, +e_2, −e_2, +e_3, −e_3} new=(1, 2, 1),(1, 0, 1),(1, 1, 2)
+C t=4 L=+e_1 S+(tau0)={+e_1, +e_2, −e_2} S+(tau1)={+e_1, +e_2, −e_2} new=(2, 1, 0),(2, -1, 0)
+D t=2 L=+e_1 S+(tau0)={+e_1, +e_2} S+(tau1)={+e_1, +e_2, −e_2} new=(1, 2, 0),(1, 0, 0)
+reverse tau0=hold tau1=hold
+face tau0=hold tau1=hold
+composition=HOLD reverse_uses_L(A)=False
+per_element: each lock vector in same-tick-inclusive six-neighbor locks union L(q) when L(q) is defined, at t and at t+1
+per_site: scored only at x-probes A,B,C,D on Euclidean B_3(0); no other sites
+per_mode: no spectral or mode calculation is executed on this finite host
+per_block: four S^+ lock sets at two cuts plus reverse/face/composition bits
+lattice_wide: checked and not executed — no lattice-wide lettering rule is claimed
+PASS: perp-step-incoming-lock
+PASS: theorem1-formation-ticks
+PASS: theorem1-own-letters
+PASS: theorem1-S-plus-at-tau0  ({'A': '{+e_1, +e_2, −e_2, +e_3, −e_3}', 'B': '{+e_1, +e_2}', 'C': '{+e_1, +e_2, −e_2}', 'D': '{+e_1, +e_2}'})
+PASS: theorem1-S-plus-at-tau1  ({'A': '{+e_1, +e_2, −e_2, +e_3, −e_3}', 'B': '{+e_1, +e_2, −e_2, +e_3, −e_3}', 'C': '{+e_1, +e_2, −e_2}', 'D': '{+e_1, +e_2, −e_2}'})
+PASS: theorem1-S-plus-B-and-D-grow
+PASS: theorem1-new-records-meet-6nn  ({'A': ((2, 0, 0),), 'B': ((1, 2, 1), (1, 0, 1), (1, 1, 2)), 'C': ((2, 1, 0), (2, -1, 0)), 'D': ((1, 2, 0), (1, 0, 0))})
+PASS: theorem1-new-neighbors-are-later-arrivals
+PASS: theorem2-reverse-tau0-and-tau1-hold
+PASS: theorem2-face-tau0-and-tau1-hold
+PASS: theorem3-composition-hold
+PASS: mutation-unique-letter-reverse-undefined
+PASS: mutation-M-leftover-fail-fail-hold
+PASS: mutation-empty-plus-undefined
+PASS: mutation-sum-is-not-the-predicate
+PASS: S-plus-is-not-M
+PASS: unformed-excludes-own-letter
+PASS: note-claim-scope
+PASS: note-reports-S-plus-ticks-and-new-neighbors
+PASS: note-reports-hold-hold-composition-hold
+PASS: note-displayed-not-adopted
+PASS: note-not-M-or-unique-letter-leftover
+PASS: note-not-two-tick-lock-count-clock
+PASS: note-no-global-T
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+TOTAL: PASS=43 FAIL=0
+
+----- stderr -----
+

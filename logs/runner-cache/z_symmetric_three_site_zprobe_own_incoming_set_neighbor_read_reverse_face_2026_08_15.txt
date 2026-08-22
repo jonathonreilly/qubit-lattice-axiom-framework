@@ -1,0 +1,95 @@
+===== runner cache v1 =====
+runner: scripts/z_symmetric_three_site_zprobe_own_incoming_set_neighbor_read_reverse_face_2026_08_15.py
+runner_sha256: 8c1a46143d1a6ba22794a411b7be1396d4eb7d320a2b3a180deaf02f3531c207
+input_fingerprint_sha256: 5c5af2167d907023a9474cf7715ca09fbd1c35b90cba86d49c7ce95156156889
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+neighbor-read of own incoming reverse/face on #7186 z-probes
+AUDIT_INPUT_PATHS:
+  docs/Z_SYMMETRIC_THREE_SITE_ZPROBE_OWN_INCOMING_SET_NEIGHBOR_READ_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Neighbor-read R of own incoming on the four #7186 z-probes, equality to M, and reverse/face from R are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/Z_SYMMETRIC_THREE_SITE_ZPROBE_OWN_INCOMING_SET_NEIGHBOR_READ_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-z-probes-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: existential-opposite-identity
+PASS: neighbor-read-identity
+PASS: theorem1-all-four-probes-recorded
+A t=0 M={−e_1} R={} O={+e_2, −e_2, +e_3} read=fail L=−e_1 S+={+e_1, −e_1}
+B t=2 M={+e_1} R={−e_2} O={+e_2, −e_2, +e_3} read=fail L=+e_1 S+={+e_1, +e_2}
+C t=1 M={+e_3} R={} O={+e_1, −e_1, +e_2, −e_2} read=fail L=+e_3 S+={−e_1, +e_3}
+D t=3 M={+e_2, −e_2, −e_3} R={} O={+e_1, −e_1} read=fail L=UNDEFINED S+={+e_1, −e_1, +e_2, −e_2}
+reverse=UNDEFINED face=UNDEFINED
+M_reverse=hold M_face=hold O_reverse=hold O_face=hold S+_reverse=hold S+_face=hold
+unique_L_reverse=hold unique_L_face=UNDEFINED
+unique_R_reverse=UNDEFINED unique_R_face=UNDEFINED
+per_element: each lock vector in the neighbor-read R(q) of own incoming
+per_site: scored only at z-probes A,B,C,D on Euclidean B_3(0); no other sites
+per_mode: no spectral or mode calculation is executed on this finite host
+per_block: four neighbor-reads plus equality to M and reverse/face as hold, fail, or UNDEFINED
+lattice_wide: checked and not executed — no lattice-wide lettering rule is claimed
+PASS: theorem1-formation-ticks  ({'A': 0, 'B': 2, 'C': 1, 'D': 3})
+PASS: theorem1-incoming-sets-of-7186  ({'A': '{−e_1}', 'B': '{+e_1}', 'C': '{+e_3}', 'D': '{+e_2, −e_2, −e_3}'})
+PASS: theorem1-neighbor-reads  ({'A': '{}', 'B': '{−e_2}', 'C': '{}', 'D': '{}'})
+PASS: theorem1-equality-R-to-M-is-read-fail  ({'A': 'fail', 'B': 'fail', 'C': 'fail', 'D': 'fail'})
+PASS: theorem1-R-is-not-M-and-not-O  (('{}', '{−e_1}', '{+e_2, −e_2, +e_3}'))
+PASS: theorem1-star-excluding-A-does-not-recover-M-A
+PASS: theorem1-A-is-seed
+PASS: theorem1-mixed-stays-a-set
+PASS: theorem1-empty-R-is-empty
+PASS: theorem2-reverse-undefined  (UNDEFINED)
+PASS: theorem3-face-undefined  (UNDEFINED)
+PASS: discriminator-undefined-from-R-not-M-or-O-or-S-plus
+PASS: not-unique-L-leftover
+PASS: not-leftover-of-M-or-O-or-S-plus-7186
+PASS: not-leftover-of-two-site-neighbor-read
+PASS: not-x-or-y-probes-or-y-symmetric-or-perp
+PASS: not-two-site-or-nstri-third-site
+PASS: not-nnlock-named-sign
+PASS: neighbor-read-locks-are-nn-steps
+PASS: uniqueness-not-required
+PASS: z-symmetric-three-site-seed
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: perp-step-incoming-lock
+PASS: mutation-empty-or-undefined-is-undefined
+PASS: mutation-no-opposite-pair-fails
+PASS: mutation-unique-L-of-R-would-be-undefined
+PASS: mutation-M-and-O-hold-while-R-is-undefined
+PASS: mutation-sum-of-R-is-not-the-letter
+PASS: note-claim-scope
+PASS: note-reports-ticks-and-neighbor-reads
+PASS: note-reports-equality-read-fail
+PASS: note-reports-undefined-undefined
+PASS: note-displayed-not-adopted
+PASS: note-does-not-use-occupancy
+PASS: note-not-sign-lettering
+PASS: note-not-ndot-or-occupancy-inner-product
+PASS: note-does-not-attach-formation-member
+PASS: note-not-unique-or-sum-or-star-leftover
+PASS: note-no-six-neighbor-star-as-letter
+PASS: note-not-sister-kernel-or-outgoing-or-two-site-or-7211
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+PASS: source-letter-from-neighbor-read-existential-opposite
+TOTAL: PASS=62 FAIL=0
+
+----- stderr -----
+

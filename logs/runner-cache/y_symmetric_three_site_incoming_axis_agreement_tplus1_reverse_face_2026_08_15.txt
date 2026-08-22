@@ -1,0 +1,86 @@
+===== runner cache v1 =====
+runner: scripts/y_symmetric_three_site_incoming_axis_agreement_tplus1_reverse_face_2026_08_15.py
+runner_sha256: 77ebcf3bebd01e6d9bbdd45f84c538e1700cf095e92d4fc250384661c3b61f31
+input_fingerprint_sha256: 506beed7363693fb836b315749557be5e42f5dd325d562b3a39c735023f72160
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+incoming-axis agreement of M reverse/face at t+1
+AUDIT_INPUT_PATHS:
+  docs/Y_SYMMETRIC_THREE_SITE_INCOMING_AXIS_AGREEMENT_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Incoming-axis agreement of M at t+1 on the four #7211 y-probes, and reverse/face from that, are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/Y_SYMMETRIC_THREE_SITE_INCOMING_AXIS_AGREEMENT_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-y-probes-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: axis-identity
+PASS: axis-agreement-identity
+A t=0 M={−e_1} Axis(M)={e_1}
+B t=2 M={+e_1} Axis(M)={e_1}
+C t=1 M={+e_2} Axis(M)={e_2}
+D t=3 M={−e_2, +e_3, −e_3} Axis(M)={e_2, e_3}
+incoming-axis reverse=hold face=fail
+per_element: each unsigned occupied lattice axis among {e_1,e_2,e_3} of M at a probe's t+1
+per_site: scored only at y-probes A,B,C,D on Euclidean B_3(0); no other sites
+per_mode: no spectral or mode calculation is executed on this finite host
+per_block: four Axis(M) sets, reverse/face from incoming-axis agreement
+lattice_wide: checked and not executed — no lattice-wide lettering rule is claimed
+PASS: perp-step-incoming-lock
+PASS: undefined-if-unformed
+PASS: incoming-set-seed-singleton
+PASS: theorem1-formation-ticks  ({'A': 0, 'B': 2, 'C': 1, 'D': 3})
+PASS: theorem1-M-at-tau  ({'A': '{−e_1}', 'B': '{+e_1}', 'C': '{+e_2}', 'D': '{−e_2, +e_3, −e_3}'})
+PASS: theorem1-Axis-M  ({'A': '{e_1}', 'B': '{e_1}', 'C': '{e_2}', 'D': '{e_2, e_3}'})
+PASS: theorem1-M-frozen-from-t
+PASS: theorem1-new-records-meet-6nn  ({'A': ((0, 2, 0), (0, 1, 1), (0, 1, -1)), 'B': ((1, 2, 1), (1, 1, 2), (1, 1, 0)), 'C': ((1, 2, 0), (-1, 2, 0), (0, 2, 1), (0, 2, -1)), 'D': ((2, 1, 0),)})
+PASS: theorem1-mixed-stays-a-set
+PASS: theorem1-A-is-seed
+PASS: theorem2-reverse-hold  (hold)
+PASS: theorem3-face-fail  (fail)
+PASS: mutation-leftover-of-M-alone-differs
+PASS: mutation-leftover-of-union-differs
+PASS: mutation-exist-opposite-HOLD-differs
+PASS: mutation-unique-letter-undefined-at-mixed-D
+PASS: mutation-empty-plus-undefined
+PASS: mutation-sum-cancels-mixed
+PASS: not-nnlock-named-sign
+PASS: not-x-probes-or-z-symmetric-or-perp
+PASS: y-symmetric-three-site-seed
+PASS: not-two-site-axis-as-this-member
+PASS: uniqueness-not-required
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: note-claim-scope
+PASS: note-reports-ticks-M-Axis
+PASS: note-reports-new-neighbors
+PASS: note-reports-hold-fail
+PASS: note-displayed-not-adopted
+PASS: note-does-not-use-occupancy
+PASS: note-not-sign-lettering
+PASS: note-does-not-attach-formation-member
+PASS: note-not-exist-opposite-or-leftover-M
+PASS: note-not-two-site-member
+PASS: note-no-six-neighbor-star-as-letter
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+PASS: source-letter-from-incoming-axis-agreement
+TOTAL: PASS=56 FAIL=0
+
+----- stderr -----
+

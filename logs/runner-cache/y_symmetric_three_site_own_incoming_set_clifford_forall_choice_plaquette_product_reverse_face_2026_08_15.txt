@@ -1,0 +1,96 @@
+===== runner cache v1 =====
+runner: scripts/y_symmetric_three_site_own_incoming_set_clifford_forall_choice_plaquette_product_reverse_face_2026_08_15.py
+runner_sha256: 5c7e5b4ad219cb0d7a87e17efc7fc73ea14b3932887a6409ae8f7a594f0b6515
+input_fingerprint_sha256: a29a06723260be2fb16955accf2558580f48ced7887029822d97ed85e253aeb5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+own incoming set forall-choice Cl(3,0) reverse/face on #7175 Q and R
+AUDIT_INPUT_PATHS:
+  docs/Y_SYMMETRIC_THREE_SITE_OWN_INCOMING_SET_CLIFFORD_FORALL_CHOICE_PLAQUETTE_PRODUCT_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Reverse and face from forall-choice Cl(3,0) 4-cycle products of own incoming sets on #7175 Q and R are reported. No S⁺. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/Y_SYMMETRIC_THREE_SITE_OWN_INCOMING_SET_CLIFFORD_FORALL_CHOICE_PLAQUETTE_PRODUCT_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: q-and-r-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: clifford-cl30-identities
+PASS: forall-choice-identity
+Q vertices:
+  (0, 0, 0) t=0 M={+e_1} L=+e_1
+  (1, 0, 0) t=3 M={+e_3, −e_3} L=UNDEFINED
+  (1, 1, 0) t=3 M={−e_2, +e_3, −e_3} L=UNDEFINED
+  (0, 1, 0) t=0 M={−e_1} L=−e_1
+Q N_picks=6 N_hold=4 unique_L=UNDEFINED face_forall=fail face_exist=hold
+R vertices:
+  (0, 1, 0) t=0 M={−e_1} L=−e_1
+  (1, 1, 0) t=3 M={−e_2, +e_3, −e_3} L=UNDEFINED
+  (1, 1, 1) t=2 M={+e_1} L=+e_1
+  (0, 1, 1) t=1 M={+e_3} L=+e_3
+R N_picks=3 N_hold=2 unique_L=UNDEFINED reverse_forall=fail reverse_exist=hold
+per_element: each lock vector in a vertex own incoming set and each 4-cycle pick
+per_site: scored only at Q and R vertices on Euclidean B_3(0); no other sites
+per_mode: no spectral or mode calculation is executed on this finite host
+per_block: eight incoming sets, N_picks/N_hold, and reverse/face as hold, fail, or UNDEFINED
+lattice_wide: checked and not executed — no lattice-wide lettering rule is claimed
+PASS: theorem1-all-q-and-r-recorded
+PASS: theorem1-incoming-sets  ((('{+e_1}', '{+e_3, −e_3}', '{−e_2, +e_3, −e_3}', '{−e_1}'), ('{−e_1}', '{−e_2, +e_3, −e_3}', '{+e_1}', '{+e_3}')))
+PASS: theorem1-n-picks-n-hold  ((6, 4, 3, 2))
+PASS: theorem1-unique-L-letters
+PASS: theorem1-mixed-stays-a-set
+PASS: theorem2-reverse-forall-fail  (fail)
+PASS: theorem2-exist-choice-reverse-comparison  (hold)
+PASS: theorem3-face-forall-fail  (fail)
+PASS: theorem3-exist-choice-face-comparison  (hold)
+PASS: holding-picks-are-scalar-pm1
+PASS: not-unique-L-leftover
+PASS: not-exist-choice-leftover
+PASS: independent-of-nmclall-7167
+PASS: not-x-probes-or-z-symmetric-or-perp-or-nstri
+PASS: not-nnlock-named-sign
+PASS: incoming-locks-are-nn-steps
+PASS: uniqueness-not-required
+PASS: y-symmetric-three-site-seed
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: perp-step-incoming-lock
+PASS: mutation-empty-or-undefined-is-undefined
+PASS: mutation-no-scalar-pick-fails
+PASS: mutation-unique-L-product-would-be-undefined
+PASS: mutation-minus-e2-picks-are-not-scalar
+PASS: mutation-sum-cancels-mixed-D
+PASS: forall-requires-every-pick
+PASS: note-claim-scope
+PASS: note-reports-incoming-sets
+PASS: note-reports-n-picks-n-hold
+PASS: note-reports-fail-fail-and-exist-comparison
+PASS: note-displayed-not-adopted
+PASS: note-does-not-use-occupancy
+PASS: note-not-sign-lettering
+PASS: note-not-ndot-or-occupancy-inner-product
+PASS: note-does-not-attach-formation-member
+PASS: note-not-unique-or-star-or-nmclall-leftover
+PASS: note-no-six-neighbor-star-as-letter
+PASS: note-displayed-cl30-not-cube-pauli-lattice-action
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+PASS: source-letter-from-own-incoming-set-forall-choice
+TOTAL: PASS=59 FAIL=0
+
+----- stderr -----
+

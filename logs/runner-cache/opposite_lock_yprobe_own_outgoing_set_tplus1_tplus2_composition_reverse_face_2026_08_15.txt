@@ -4,7 +4,7 @@ runner_sha256: 83ced64bd82794670313c692eb5276e3416a48a09089f523dafaa455e4f08950
 input_fingerprint_sha256: 75ff404f8bfb1dfe3de02147b2d6b4e48e8870bd92bff092c18a2e531b670852
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 t+1 versus t+2 own-outgoing-set reverse/face composition on #7208 y-probes

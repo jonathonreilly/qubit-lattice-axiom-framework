@@ -4,7 +4,7 @@ runner_sha256: 33c65e4536228f11fc691843c262bd79e6a116a7164a849b29bed51ef29fe1de
 input_fingerprint_sha256: d01967b0b0b980572f87040b6ce28c6f21b8d25d3be4e3def30cfc67236d1f63
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 forall-orthogonal M vs O at t+1 reverse/face on two-axis opposite y-probes

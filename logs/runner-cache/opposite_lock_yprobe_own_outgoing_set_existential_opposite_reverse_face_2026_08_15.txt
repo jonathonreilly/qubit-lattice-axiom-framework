@@ -4,7 +4,7 @@ runner_sha256: 03df323166c80b67c789d5e2f86e4ec625d1b436931867fae3260bb742bd4104
 input_fingerprint_sha256: 6ada6c4a7456e552d1cb36796d6563d9b3f3c171c750ba6947c9e2372d61b0b6
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 own outgoing set exist-opposite reverse/face on #7208 y-probes

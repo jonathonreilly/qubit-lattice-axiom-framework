@@ -1,0 +1,91 @@
+===== runner cache v1 =====
+runner: scripts/x_axis_opposite_e2_xprobe_own_outgoing_set_tplus1_tplus2_composition_reverse_face_2026_08_15.py
+runner_sha256: d2d2e656f725486e49ceb1c94e400c55839b1982a1b0287547c4c22db48543be
+input_fingerprint_sha256: c249d832c51208b81108a54b0c2a8fcf3fe1daca6a1ad0e58614284936210c1c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+t+1 versus t+2 own-outgoing-set reverse/face composition on #7214 x-probes
+AUDIT_INPUT_PATHS:
+  docs/X_AXIS_OPPOSITE_E2_XPROBE_OWN_OUTGOING_SET_TPLUS1_TPLUS2_COMPOSITION_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Reverse/face from O at t+1 versus t+2 on the four #7214 x-probes, and composition, are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/X_AXIS_OPPOSITE_E2_XPROBE_OWN_OUTGOING_SET_TPLUS1_TPLUS2_COMPOSITION_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-x-probes-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: existential-opposite-identity
+PASS: composition-identity
+A t=0 M(tau1)={−e_2} O(tau1)={+e_1, +e_3, −e_3} O(tau2)={+e_1, +e_3, −e_3} new+2={}
+B t=2 M(tau1)={+e_2} O(tau1)={+e_1, +e_3, −e_3} O(tau2)={+e_1, +e_3, −e_3} new+2={}
+C t=1 M(tau1)={+e_1} O(tau1)={+e_2, −e_2, +e_3, −e_3} O(tau2)={+e_2, −e_2, +e_3, −e_3} new+2={}
+D t=3 M(tau1)={−e_1, +e_3, −e_3} O(tau1)={+e_2, −e_2} O(tau2)={+e_2, −e_2} new+2={}
+reverse tau1=hold tau2=hold
+face tau1=hold tau2=hold
+composition=HOLD
+per_element: each earliest outgoing nearest-neighbor step at a probe, read from the record prefix at that probe's t+1 and at t+2
+per_site: scored only at x-probes A,B,C,D on Euclidean B_3(0); no other sites
+per_mode: no spectral or mode calculation is executed on this finite host
+per_block: four outgoing sets at two cuts plus reverse/face/composition bits
+lattice_wide: checked and not executed — no lattice-wide lettering rule is claimed
+PASS: perp-step-incoming-lock
+PASS: outgoing-set-undefined-if-unformed
+PASS: do-not-score-tau-t
+PASS: incoming-set-seed-singleton
+PASS: theorem1-formation-ticks  ({'A': 0, 'B': 2, 'C': 1, 'D': 3})
+PASS: theorem1-O-at-tau1  ({'A': '{+e_1, +e_3, −e_3}', 'B': '{+e_1, +e_3, −e_3}', 'C': '{+e_2, −e_2, +e_3, −e_3}', 'D': '{+e_2, −e_2}'})
+PASS: theorem1-O-at-tau2  ({'A': '{+e_1, +e_3, −e_3}', 'B': '{+e_1, +e_3, −e_3}', 'C': '{+e_2, −e_2, +e_3, −e_3}', 'D': '{+e_2, −e_2}'})
+PASS: theorem1-O-tau2-equals-tau1
+PASS: theorem1-M-frozen-across-cuts
+PASS: theorem1-O-disjoint-from-M
+PASS: theorem1-new-records-at-tplus2-empty  ({'A': (), 'B': (), 'C': (), 'D': ()})
+PASS: theorem1-tplus1-new-neighbors-already-in-O
+PASS: theorem1-mixed-stays-a-set
+PASS: theorem1-A-is-seed
+PASS: theorem2-reverse-tau1-hold-tau2-hold
+PASS: theorem2-face-tau1-hold-tau2-hold
+PASS: theorem3-composition-HOLD
+PASS: mutation-nmot2x2-t-versus-tplus1-fail
+PASS: mutation-nmt2x2-M-two-tick-hold-hold
+PASS: mutation-nmoutx2-eventual-O-no-two-cut
+PASS: mutation-unique-letter-undefined
+PASS: mutation-neighbor-lock-leftover-differs
+PASS: mutation-sum-cancels-mixed-A
+PASS: O-is-not-M
+PASS: reverse-hold-7214-not-also-outgoing
+PASS: not-y-or-z-probes-or-same-lock-or-nspar-or-opp-e3
+PASS: two-site-opposite-lock-seed
+PASS: uniqueness-not-required
+PASS: empty-O-is-empty-not-undefined
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: note-claim-scope
+PASS: note-reports-O-ticks
+PASS: note-reports-new-neighbors-tplus2-empty
+PASS: note-reports-hold-hold-composition-HOLD
+PASS: note-displayed-not-adopted
+PASS: note-not-m-two-tick-or-eventual-o-or-nmot2x2
+PASS: note-not-two-tick-lock-count-clock
+PASS: note-not-mixed-7188-fail-fail
+PASS: note-no-global-T-and-no-score-t
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+TOTAL: PASS=59 FAIL=0
+
+----- stderr -----
+

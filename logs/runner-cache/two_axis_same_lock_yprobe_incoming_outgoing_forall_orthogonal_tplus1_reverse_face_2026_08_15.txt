@@ -1,0 +1,77 @@
+===== runner cache v1 =====
+runner: scripts/two_axis_same_lock_yprobe_incoming_outgoing_forall_orthogonal_tplus1_reverse_face_2026_08_15.py
+runner_sha256: 2a2e78e2bf278ebbae38980357cf962e8f86a576ce2aef27142e560e58509f1e
+input_fingerprint_sha256: 213d3345029eee9346b19c258e2ae2b35a63a9a0b0d50601cb1fb80e61454691
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+forall-orthogonal M vs O at t+1 reverse/face on two-axis same-lock y-probes
+AUDIT_INPUT_PATHS:
+  docs/TWO_AXIS_SAME_LOCK_YPROBE_INCOMING_OUTGOING_FORALL_ORTHOGONAL_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Forall-orthogonal M vs O at t+1 on the four y-probes of the two-axis same-lock seed, and reverse/face from that, are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/TWO_AXIS_SAME_LOCK_YPROBE_INCOMING_OUTGOING_FORALL_ORTHOGONAL_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-y-probes-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: forall-orthogonal-identity
+PASS: exist-perp-comparison-identity
+A t=0 M={+e_1} O={+e_2, −e_3} dots=(+e_1)·(+e_2)=0, (+e_1)·(−e_3)=0 forall-perp=hold
+B t=1 M={+e_1} O={+e_2, +e_3, −e_3} dots=(+e_1)·(+e_2)=0, (+e_1)·(+e_3)=0, (+e_1)·(−e_3)=0 forall-perp=hold
+C t=1 M={+e_2} O={+e_1, −e_1, +e_3, −e_3} dots=(+e_2)·(+e_1)=0, (+e_2)·(−e_1)=0, (+e_2)·(+e_3)=0, (+e_2)·(−e_3)=0 forall-perp=hold
+D t=2 M={−e_3} O={+e_1} dots=(−e_3)·(+e_1)=0 forall-perp=hold
+reverse=hold face=hold
+leftover exist-opposite M reverse=fail O reverse=hold
+per_element: each integer dot m·o of earliest incoming M and outgoing O
+per_site: scored only at y-probes A,B,C,D on Euclidean B_3(0); no other sites
+per_mode: no spectral or mode calculation is executed on this finite host
+per_block: four M/O pairs, integer dots, forall-perp, reverse/face
+lattice_wide: checked and not executed — no lattice-wide lettering rule is claimed
+PASS: perp-step-incoming-lock
+PASS: undefined-if-unformed
+PASS: theorem1-formation-ticks  ({'A': 0, 'B': 1, 'C': 1, 'D': 2})
+PASS: theorem1-M-at-tau  ({'A': '{+e_1}', 'B': '{+e_1}', 'C': '{+e_2}', 'D': '{−e_3}'})
+PASS: theorem1-O-at-tau  ({'A': '{+e_2, −e_3}', 'B': '{+e_2, +e_3, −e_3}', 'C': '{+e_1, −e_1, +e_3, −e_3}', 'D': '{+e_1}'})
+PASS: theorem1-dots-and-forall-perp  ({'A': ('(+e_1)·(+e_2)=0, (+e_1)·(−e_3)=0', 'hold'), 'B': ('(+e_1)·(+e_2)=0, (+e_1)·(+e_3)=0, (+e_1)·(−e_3)=0', 'hold'), 'C': ('(+e_2)·(+e_1)=0, (+e_2)·(−e_1)=0, (+e_2)·(+e_3)=0, (+e_2)·(−e_3)=0', 'hold'), 'D': ('(−e_3)·(+e_1)=0', 'hold')})
+PASS: theorem1-A-is-seed
+PASS: theorem1-mixed-stays-a-set
+PASS: theorem2-reverse-hold  (hold)
+PASS: theorem3-face-hold  (hold)
+PASS: not-one-axis-same-lock-leftover
+PASS: not-exist-opposite-leftover
+PASS: exist-perp-is-comparison-only
+PASS: mutation-empty-or-undefined-is-undefined
+PASS: uniqueness-not-required
+PASS: two-axis-same-lock-seed
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: not-x-probes
+PASS: note-claim-scope
+PASS: note-reports-ticks-M-O
+PASS: note-reports-dots-and-forall-perp
+PASS: note-reports-reverse-face
+PASS: note-displayed-not-adopted
+PASS: note-not-exist-opposite-leftover
+PASS: note-uniqueness-not-required
+PASS: note-does-not-use-occupancy
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+TOTAL: PASS=46 FAIL=0
+
+----- stderr -----
+

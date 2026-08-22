@@ -1,0 +1,74 @@
+===== runner cache v1 =====
+runner: scripts/frontier_gauge_vacuum_plaquette_general_middle_operator_common_integral_actual_l3_2026_08_22.py
+runner_sha256: 412356c2a8c327eebeb50eedf2b436468898c6a9449f0e19a43533a02366e033
+input_fingerprint_sha256: 16493f99ec2950646d7c1fa207eefd9d99f66283695617c1c1dfb96e8b861058
+timeout_sec: 1200
+exit_code: 0
+elapsed_sec: 17.57
+status: ok
+----- stdout -----
+GENERAL TWO-SLICE MIDDLE OPERATOR FROM A COMMON WILSON INTEGRAL
+mode=BURNED-SEED DIAGNOSTIC / NON-CERTIFYING; beta=6; B_5->B_1; four train + four validation chains; therm=40; measure=128; every=4; blocks/chain=4
+Implementation controls
+  [PASS] 81+81+81 action and local Metropolis delta; delta/mutation=2.22e-16/3.76e-01
+  [PASS] two marked spatial half-weights are deleted with beta/6; identity/mutation=2.2e-16/3.43e+00
+  [PASS] outgoing character carries the conjugate orientation; correct/mutated=5.9e-18/9.2e-01
+  [PASS] general forward map preserves an off-diagonal synthetic middle operator; repeat/diagonal gap=0.0e+00/4.89e-01
+  [PASS] degree-one common-integral forward identities hold pointwise; controls=a=-0.9:err=1.4e-14,mutation=4.22e+00,a=+1.8:err=4.3e-14,mutation=2.60e+00
+  [PASS] exact B_1 physical/complement dimensions are 6/9; dimensions=6/9
+  [PASS] finite central convolution is exactly character-diagonal; Schur contraction error=0.0e+00
+  [PASS] positivity, slice symmetry, and irrep swap do not force diagonality; min eigenvalue/symmetry error/offdiag=1.0/0.0e+00/1.414
+  [PASS] joint quadratic/cubic Casimir defect vanishes exactly only on B_5 diagonals; labels=36; diagonal/mutation=0.0e+00/3.828e+01
+  [PASS] training and validation seeds are disjoint
+  [PASS] underpowered fresh-production certificate is disabled; diagnostic mode uses burned seeds and cannot certify
+  [PASS] degree-one sources stay positive, close B_1 into B_2, and are conditioned; conditions=a=-0.9:3.127,gmin=0.10,a=+1.8:5.421,gmin=0.10
+  [PASS] forward Jacobians have the declared B_1 image ranks; ranks={'exp_general': 6, 'exp_diagonal': 6, 'poly_general': 6, 'poly_diagonal': 4}
+  [PASS] each exact polynomial diagonal image has a fixed two-dimensional null; controls=a=-0.9:rank=5,null=2,err=1.8e-16,a=+1.8:rank=5,null=2,err=1.1e-16
+Parameter scope: normalized B_5 Q general/diagonal=350/20; held-out B_1 image=6.
+Sampling health
+  train/validation elapsed=8.1/8.4s; acceptance=0.617..0.642; block/tau_full/tau_Q/tau_forward/tau_diag/tau_poly=8/3.94/2.04/4.09/0.84/1.57
+  <P_space>=0.22112; <P_mix>=0.44643; <inverse marked pair>=0.52369; min ESS Q/poly=0.966/0.935
+  [PASS] eight burned diagnostic chains are finite with nondegenerate acceptance; blocks=16/16; block/max_tau=8/4.09; min ESS=0.966/0.935
+  [PASS] all ratio normalizations are positive and statistically stable
+  [PASS] raw exact-symmetry complements have fixed rank and no five-SE excursion
+  [PASS] hot/cold chain-deviation diagnostic is finite and non-gating; general/diagonal/validation=3.35/2.50/3.79; poly=6.65 SE; five-SE health=WARN
+Auxiliary B_4->B_5 shift/primary SE A/B=0.02/0.00; raw drift=6.92e-04/2.89e-04
+Primary fold A: train Q -> held-out validation C: rank=6/6; chi2=13.56; p=0.0349; maxz=1.57
+  largest: Re C[(0, 1),(0, 1)]: measured/model=+0.508241/+0.460396; SE=3.05e-02; z=1.57
+Role-swapped fold B: validation Q -> held-out train C: rank=6/6; chi2=13.56; p=0.035; maxz=1.57
+Paired train-chain implementation/truncation control: rank=6/6; chi2=5.77; p=0.45; maxz=0.77
+Paired validation-chain implementation/truncation control: rank=6/6; chi2=32.60; p=1.25e-05; maxz=1.74
+Diagonal-Q diagnostic on primary fold A: rank=6/6; chi2=17.95; p=0.00635; maxz=3.56
+  largest: Re C[(0, 1),(1, 0)]: measured/model=+0.500292/+0.390923; SE=3.07e-02; z=3.56
+Exact polynomial holdout a=-0.9: general Q_B2: rank=6/6; chi2=7.98; p=0.24; maxz=1.91
+Exact polynomial holdout a=-0.9: diagonal Q_B2 diagnostic: rank=6/6; chi2=29.71; p=4.46e-05; maxz=1.96
+Exact polynomial holdout a=+1.8: general Q_B2: rank=6/6; chi2=13.77; p=0.0323; maxz=2.12
+Exact polynomial holdout a=+1.8: diagonal Q_B2 diagnostic: rank=6/6; chi2=18.39; p=0.00532; maxz=3.83
+Joint exponential plus two exact polynomial holdouts
+  general Q: rank=18/18; chi2=60.53; p_asym=1.68e-06; maxz=2.12
+  diagonal Q: rank=18/18; chi2=5422.50; p_asym=0; maxz=3.83
+  orthonormal loss improvement ||r_diag||^2-||r_general||^2=0.106147
+Exact polynomial diagonal-null discriminator
+  rank=4/4; T2=15.47; maxz=2.34; contrasts=[ 0.01133  0.02266  0.00677 -0.0059 ]; SE=[0.008  0.0097 0.0035 0.0053]
+  [DIAG] no power extrapolation from this short burned-seed run; the former fresh protocol is disabled
+Independent B_1 middle-operator structure tournament
+  general:p=0.194,maxz=2.31; diagonal:p=0.000309,maxz=2.31; perron_plus:p=3.9e-09,maxz=3.67; perron_plus_minus:p=5.45e-09,maxz=3.29
+Measured shared-B_1 middle operator from train chains
+  Q=[1,b,b,c;b,a,e,f;b,e,a,f;c,f,f,d] with b=0.022789, c=-0.027475, a=0.012707, e=0.026649, f=0.009797, d=-0.006978
+  ||offdiag(Q)||F/||Q||F=0.073216; min eigenvalue=-0.0139421
+  train-selected minimum direction: lambda_train=-0.0139421; heldout quadratic=0.0318851 +/- 0.0226 (1.41 SE from zero)
+  [PASS] independent B_1 quadratic-form check does not contradict analytic positivity; heldout z=1.41
+Finite-cutoff error budget: paired residual/primary SE A/B=0.001/0.001; general-vs-diagonal separation=2.40 SE
+  [PASS] B_5 exponential cutoff is subdominant to prediction noise and model separation
+  [PASS] both cross-fitted physical covariance surfaces are full rank; rank A/B=6/6; polynomial=[6, 6]; dimension=6
+  [PASS] stratified joint-bootstrap and paired-improvement paths execute; smoke replicates=8
+  [DIAG] pilot assigns no positive-law or diagonal-no-go PASS/FAIL
+per_element: checked and executed - pointwise marked-weight cancellation and degree-one forward identities
+per_site: checked and not executed - the burned diagnostic averages 81 faces and makes no site-resolved claim
+per_mode: checked and executed - exact B_1 class-sector classification plus a non-certifying B_5 diagnostic
+per_block: checked and executed - blocked burned-seed calculations test implementation paths only
+lattice_wide: checked and not executed - no beta transport, volume law, or thermodynamic-limit claim is made
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

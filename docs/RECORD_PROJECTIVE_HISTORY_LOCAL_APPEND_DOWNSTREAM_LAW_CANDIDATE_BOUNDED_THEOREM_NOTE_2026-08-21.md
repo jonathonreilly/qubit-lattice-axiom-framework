@@ -22,8 +22,14 @@ negative_assertion_classes:
 **Role:** dependency-minimized conditional positive quantum/Record/history
 slice and owner decision packet
 
+**Claim type:** bounded_theorem
+
 **Authority:** proposal only. The candidate Law is not adopted. Independent
 audit owns every verdict, and no audit or landing workflow is run here.
+
+**Direct authority dependencies:**
+[Minimal Axioms](MINIMAL_AXIOMS_2026-06-29.md) and the
+[Realized State primitive](REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md).
 
 Primary runner:
 [`scripts/record_projective_history_local_append_downstream_law_candidate_2026_08_21.py`](../scripts/record_projective_history_local_append_downstream_law_candidate_2026_08_21.py)

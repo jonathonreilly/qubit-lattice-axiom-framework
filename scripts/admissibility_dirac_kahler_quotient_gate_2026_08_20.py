@@ -630,7 +630,7 @@ def principal_cosines(left: sp.Matrix, right: sp.Matrix) -> tuple:
     product = sp.expand(gl.inv() * cross * gr.inv() * cross.T)
     out: list = []
     for eigenvalue, multiplicity in product.eigenvals().items():
-        out.extend([sp.nsimplify(sp.simplify(eigenvalue))] * multiplicity)
+        out.extend([sp.Rational(sp.simplify(eigenvalue))] * multiplicity)
     return tuple(sorted(out, key=lambda v: -sp.Rational(v)))
 
 
@@ -1618,9 +1618,10 @@ def measure(deep: bool) -> Facts:
         ("cone", a_point, a_tau),
         ("typeB", b_point, b_tau),
     ):
+        tau = sp.Rational(tau)
         substitution = {
-            SHEAR_X: sp.numer(sp.nsimplify(tau)),
-            SHEAR_T: sp.denom(sp.nsimplify(tau)),
+            SHEAR_X: sp.numer(tau),
+            SHEAR_T: sp.denom(tau),
         }
         K = {
             key: sp.expand(residue[key].xreplace(substitution).xreplace(point))

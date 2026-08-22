@@ -858,7 +858,7 @@ def stage_h_local_dressing_rank(gram: sp.Matrix, mutation: str) -> dict[str, obj
     certificate_invertible = sp.expand(pinned_dressing.det()) != 0
     if certificate_equation:
         certificate_minors = [
-            sp.nsimplify(sp.det(dressed[:size, :size])) for size in range(1, 9)
+            sp.det(dressed[:size, :size]) for size in range(1, 9)
         ]
         certificate_positive = all(minor > 0 for minor in certificate_minors)
     else:

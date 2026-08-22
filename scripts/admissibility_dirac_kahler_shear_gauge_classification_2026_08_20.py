@@ -508,7 +508,7 @@ def cover_action(differential: sp.Matrix, hodge: sp.Matrix, mass) -> sp.Matrix:
 def charpoly(matrix: sp.MatrixBase) -> tuple:
     """Exact characteristic polynomial coefficients, root-free (H5)."""
     return tuple(
-        sp.nsimplify(value)
+        value
         for value in sp.Poly(
             sp.expand(sp.Matrix(matrix).charpoly(LAMBDA).as_expr()), LAMBDA
         ).all_coeffs()

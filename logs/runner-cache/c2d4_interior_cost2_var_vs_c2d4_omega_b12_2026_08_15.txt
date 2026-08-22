@@ -1,0 +1,55 @@
+===== runner cache v1 =====
+runner: scripts/c2d4_interior_cost2_var_vs_c2d4_omega_b12_2026_08_15.py
+runner_sha256: 9976f453fff21055b15e733704820747a8f9bb6302a0f9c5d2b29263e855a5bc
+input_fingerprint_sha256: 295aad0a76b1b65135772a6652432c8de4dc957871a59955e53f9633ef24b393
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.21
+status: ok
+----- stdout -----
+claim_scope: Arrival-speed variance under c2d4-plus-interior, cost-2 max≥4 out-face, and out-face on B_12(0) is reported. Displayed, not adopted.
+cache_write: false
+external_scientific_inputs: current Lattice, Admissibility, and Record wording; no observation or fit
+integrity_reads: this runner, its note, and the axiom memo; no other scientific inputs
+construction: three directed Dijkstras on the induced B_12(0) graph
+negative_scope: displayed scores are not adopted and L1 is not attached
+PASS: audit-inputs the two declared source-bound inputs exist
+PASS: audit-tuple-literal AUDIT_INPUT_PATHS is the required string-literal tuple
+PASS: claim-scope front matter uses the declared claim_scope
+PASS: source-lattice current cubic nearest-neighbor wording is pinned
+PASS: source-admissibility current local-distribution wording is pinned
+PASS: source-formation-boundary formation site/probability/rate remains outside Admissibility
+PASS: source-record-boundary current lock/content/unreadable-at-absence wording is pinned
+PASS: ball-cardinality B_12(0) has 2625 sites and 2624 nonzero sites
+PASS: three-dijkstras exactly three Dijkstras run and each named cost reaches every ball site
+PASS: named-clauses i2 prices interior 3-to-3 at 2; c2d4 prices max≥4 out-face at 2; ω prices all out-face at 3
+Q_i2 = 42368907372587118299/222188741564549760000
+Q_c2d4 = 12586016761121881939/63482497589871360000
+Q_omega = 2697928722329275408991/14234892042902154624000
+var_i2 = 0.003779452719552829
+var_c2d4 = 0.003574941366936777
+var_omega = 0.004242786759120176
+t_i2(2,2,2) = 11
+t_c2d4(2,2,2) = 10
+t_omega(2,2,2) = 10
+dijkstra_calls 3
+PASS: second-moments the three exact second moments match the note
+PASS: reported-variances the note reports the three truncated population variances
+PASS: variance-order c2d4 is strictly rounder than i2, which is strictly rounder than ω
+PASS: interior-live the interior extra is live: t(2,2,2) is 11 under i2 and 10 under c2d4 and ω
+lex_first_minimizer = c2d4
+PASS: lex-first-minimizer the lex-first minimizer among the three names is c2d4
+PASS: forbidden-phrases note and runner omit the forbidden phrases
+PASS: theorems-displayed three theorems are present and the scores are displayed, not adopted
+PASS: no-admissibility-write the note refuses to write i2, c2d4, or ω into Admissibility
+PASS: no-l1-attach the note does not attach L1
+PASS: uniqueness-not-claimed uniqueness among hop-costs is not claimed
+PASS: mutation-i2-as-c2d4-or-omega dropping the interior extra or pricing all out-face at 3 would erase the displayed order
+PASS: axiom-untouched the axiom memo is an input only and still names the four axioms
+per_element: checked exactly — each of the 2624 nonzero B_12(0) sites receives three arrival times
+per_site: checked exactly — population variance uses |v|_2/t at every nonzero site
+per_mode: checked exactly — three named hop-costs only; no other clause triple is scored
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

@@ -1,6 +1,6 @@
 {
  "edge_count": 16109,
- "node_count": 5601,
+ "node_count": 5602,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -653,6 +653,10 @@
   "admissibility_dirac_kahler_staggered_hermitian_pairing_bounded_theorem_note_2026-08-19": {
    "deps_hash": "2ea7b3c53db9",
    "out_degree": 3
+  },
+  "admissibility_dirac_kahler_stationary_kernel_characterization_bounded_theorem_note_2026-08-21": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_dirac_kahler_time_dressing_adjointness_wall_bounded_theorem_note_2026-08-17": {
    "deps_hash": "4741c3dcff39",

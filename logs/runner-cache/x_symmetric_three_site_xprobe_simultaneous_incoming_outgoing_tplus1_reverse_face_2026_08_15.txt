@@ -4,7 +4,7 @@ runner_sha256: 8e63ac61b91f36beb9ce4387f39db7286347982dbf71b20d696f4e1f16bd4999
 input_fingerprint_sha256: 6b40f2e4e1a051d9624b5afcaf4741349137845c3898fe5b9c589b0f609ca65c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.19
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 simultaneous M and O at t+1 reverse/face on #7213 x-probes

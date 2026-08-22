@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Independent exact checks for the finite projective-history candidate.
+"""Independent exact checks for the finite projective-history sector Law.
 
 This reconstruction does not import the primary runner.  It deliberately uses
 an eight-Record host-codebook fixture (four packet blocks, two programs, and
@@ -7,12 +7,15 @@ two outcomes), not the primary runner's distinct nine-Record anchored
 relational packet.  It therefore cross-checks the finite packet algebra but
 does not certify the primary's relational decoder or resource count.
 
-Preparation-packet registration, history weights, formation cadence, fixture
-geometry, and the realized-member coordinate remain supplied data.  The
-checker does not infer Record admissibility, spacelike causal order, an
-autonomous covariant Law, physical clock calibration, resource renewal, or
-owner adoption.  Each optional mutation changes one physical/input datum and
-must isolate exactly one of the twelve gates.
+The finite projective domain, calibrated event registration, trace/history
+weights, and composite-cylinder coupling are the provisionally selected
+sector-Law kernel.  Preparation-packet registration, formation cadence,
+fixture geometry, and the realized-member coordinate remain benchmark or
+history data.  The checker does not infer Record admissibility, spacelike
+causal order, an autonomous covariant Law, physical clock calibration,
+resource renewal, or the documentary owner decision.  Each optional mutation
+changes one physical/input datum and must isolate exactly one of the twelve
+gates.
 """
 
 from __future__ import annotations
@@ -561,23 +564,31 @@ check(
 # 12. Cross-check used features against supplied/open inputs and finite resources.
 feature_requirements = {
     "packet": {"packet_codebook", "packet_genesis", "fixture_geometry"},
-    "history": {"trace_history_functional", "global_joint_coupling"},
+    "history": {
+        "projective_program_domain",
+        "trace_history_functional",
+        "global_joint_coupling",
+    },
     "append": {"event_registration", "formation_schedule"},
     "actual_member": {"external_history_coordinate"},
     "hazards": {"formation_cadence", "process_time_semantics"},
 }
 required_imports = set().union(*feature_requirements.values())
 declared_status = {
-    "packet_codebook": "supplied_candidate_law",
-    "packet_genesis": "supplied_fixture",
-    "fixture_geometry": "supplied_fixture",
-    "trace_history_functional": "supplied_candidate_law",
-    "global_joint_coupling": "supplied_candidate_law",
-    "event_registration": "supplied_candidate_law",
-    "formation_schedule": "supplied_fixture",
+    "packet_codebook": "benchmark_boundary",
+    "packet_genesis": "benchmark_boundary",
+    "fixture_geometry": "benchmark_boundary",
+    "projective_program_domain": "selected_sector_law",
+    "trace_history_functional": "selected_sector_law",
+    "global_joint_coupling": "selected_sector_law",
+    "event_registration": "selected_sector_law",
+    "formation_schedule": "benchmark_process",
     "external_history_coordinate": "contingent_world_data",
-    "formation_cadence": "supplied_candidate_law",
-    "process_time_semantics": "supplied_candidate_law",
+    "formation_cadence": "benchmark_process",
+    "process_time_semantics": "benchmark_process",
+}
+selected_sector_law_fields = {
+    name for name, status in declared_status.items() if status == "selected_sector_law"
 }
 open_boundaries = {
     "Admissibility derivation",
@@ -599,6 +610,13 @@ if mutation == "ledger":
 boundary_ok = (
     required_imports == set(declared_status)
     and all(status != "derived" for status in declared_status.values())
+    and selected_sector_law_fields
+    == {
+        "projective_program_domain",
+        "trace_history_functional",
+        "global_joint_coupling",
+        "event_registration",
+    }
     and resource_counts_gate
     == {
         "program_sites": 2,
@@ -611,7 +629,8 @@ boundary_ok = (
 check(
     "executable import and finite-resource ledger",
     boundary_ok,
-    "8-site host-codebook alternative (primary anchored fixture has 9); no adoption claim",
+    "4 selected kernel fields; benchmark/history inputs remain explicit; "
+    "8-site host-codebook alternative (primary anchored fixture has 9)",
 )
 
 

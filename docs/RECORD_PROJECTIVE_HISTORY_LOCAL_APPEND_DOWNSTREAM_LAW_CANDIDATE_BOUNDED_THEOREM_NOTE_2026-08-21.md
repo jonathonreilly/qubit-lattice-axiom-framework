@@ -1,7 +1,7 @@
 ---
 claim_id: record_projective_history_local_append_downstream_law_candidate_bounded_theorem_note_2026-08-21
 claim_type: bounded_theorem
-claim_scope: "For one explicit proposed downstream Law on finite one- and two-qubit rank-one projective programs, typed projective branches have exact endpoint no-fabrication; trace-weighted finite cylinders are positive, normalized, prefix-consistent, identity-sensitive, product-reducing, and have consistent two-wing one-site projections; one supplied anchor plus a four-M2 block packet and permanent program/outcome Records reconstruct eight declared finite continuations; Bell-wing appends declared concurrent by a supplied causal layer each change one site, preserve one-event prefixes, enforce program/content calibration, and commute, while the supplied nonfactorizing singlet history measure is no-signalling and has CHSH absolute value 2 sqrt(2); nonnegative supplied competing hazards sum to one constant cadence with normalized survival; and supplied contingent coordinates pick distinct one-member Record ledgers without changing the Law weights. Packet registration, the projective program category, event registration, the trace/history functional, formation cadence, causal layer, global coupling, and contingent-member interpretation are proposed downstream-Law data, not derived from or adopted into the four axioms. The note proposes only a narrow non-governing Qualification clarification and makes no axiom edit, owner adoption, audit verdict, formal-obligation retirement, or TOE-percentage movement."
+claim_scope: "For the owner-selected provisional downstream sector Law on finite one- and two-qubit rank-one projective Record events, typed projective branches have exact endpoint no-fabrication; trace-weighted finite cylinders are positive, normalized, prefix-consistent, identity-sensitive, product-reducing, and have consistent two-wing one-site projections; and the supplied nonfactorizing singlet history measure is no-signalling with CHSH absolute value 2 sqrt(2). One explicit benchmark realization additionally shows finite Record-packet reconstruction, commuting one-site appends under a supplied causal layer, normalized supplied competing hazards, and distinct contingent one-member ledgers without changing the Law weights. Only the finite projective domain, calibrated Record-event map, trace/Luders history functional, and composite-cylinder rule are provisionally selected as the sector-Law kernel. Packet registration and genesis, preparation data, formation site/rate/cadence, causal layer, append resources, physical clock meaning, and contingent realized member remain benchmark, boundary, or history data and are not adopted as universal Law. The selection is not an axiom derivation, approved-primitive registration, audit verdict, formal-obligation retirement, universal quantum theory, or TOE-percentage movement."
 depends_on:
   - minimal_axioms
   - realized_state_primitive
@@ -20,12 +20,16 @@ negative_assertion_classes:
 **Date:** 2026-08-21
 
 **Role:** dependency-minimized conditional positive quantum/Record/history
-slice and owner decision packet
+slice, owner-selected provisional sector-Law kernel, and audit packet
 
 **Claim type:** bounded_theorem
 
-**Authority:** proposal only. The candidate Law is not adopted. Independent
-audit owns every verdict, and no audit or landing workflow is run here.
+**Authority:** owner decision applied 2026-08-22. The kernel in section 1A is
+provisionally selected for the finite projective quantum/Record sector. This
+selection authorizes its use as a falsifiable campaign benchmark; it is not an
+axiom, approved primitive, retained derivation, universal Law, or audit
+verdict. The realization fields in section 1B are not adopted. Independent
+audit owns every scientific verdict.
 
 **Direct authority dependencies:**
 [Minimal Axioms](MINIMAL_AXIOMS_2026-06-29.md) and the
@@ -44,11 +48,13 @@ Cached primary and independent receipts:
 ## Result Up Front
 
 The shortest honest positive quantum/Record package is now small enough to
-state in one place. It is not an axiom derivation. It is a candidate
-downstream Law with every non-foundational field exposed.
+state in one place. It is not an axiom derivation. The owner has provisionally
+selected its finite projective probability/history kernel as a downstream
+sector Law, with every non-foundational field exposed and the benchmark
+realization kept separate.
 
-On its declared finite projective domain, the candidate has all of the
-following at once:
+On its declared finite projective domain, the selected kernel plus the
+explicit benchmark realization have all of the following at once:
 
 1. a calibrated quantum writer whose absent endpoint branch is exactly zero;
 2. fixed projective Record-event contents and positive normalized finite
@@ -67,37 +73,53 @@ following at once:
    contingent realized history member.
 
 The primary executable currently returns `12/12`. This is a consistency and
-integration theorem conditional on the candidate Law. It does not derive the
-trace/history weights, formation cadence, event registration, preparation
-packet, or nonfactorizing coupling from Lattice, Qubit, Admissibility, and
-Record. Those are the exact tuple the owner would have to adopt if this route
-is chosen.
+integration theorem conditional on the provisionally selected sector Law and
+the named benchmark fields. It does not derive the trace/history weights,
+event registration, or composite-cylinder rule from Lattice, Qubit,
+Admissibility, and Record. It also does not turn the benchmark packet,
+formation cadence, causal layer, or contingent member into universal Law.
 
-That distinction is the decision. More controlled-copy, pointer, absorber,
-Gleason, or trace-representation work cannot fill the tuple. A downstream Law
-can fill it transparently. A core-axiom edit is neither needed nor justified.
+That distinction is the decision now applied. More controlled-copy, pointer,
+absorber, Gleason, or trace-representation work cannot by itself select the
+extensional weights. A downstream sector Law can fill that field transparently
+while remaining open to replacement by a deeper derivation. A core-axiom edit
+is neither needed nor justified.
 
-## 1. Exact Candidate-Law Tuple
+## 1. Selected Sector-Law Kernel And Benchmark Boundary
 
-The proposed downstream Law consists of eight visible fields.
+### 1A. Provisionally selected finite projective sector Law
 
-| Field | Candidate value | Status |
+The owner selects exactly the following kernel, provisionally and only on the
+declared finite projective domain.
+
+| Field | Selected value | Authority boundary |
 |---|---|---|
-| finite preparation carrier | a positive normalized one- or two-qubit operator, serialized when needed as one supplied anchor plus four site-`M2(C)` block Records | supplied Law/boundary data; registration and packet genesis remain open |
-| program category | finite rank-one projective events encoded in permanent program Records with fresh adjacent targets | supplied finite domain |
-| event registration | outcome `a` for program `e` is the target Record whose content is the matching rank-one projector `P_e^a` | supplied calibration |
-| history functional | child block `sigma_{ha}=P_e^a sigma_h P_e^a`; conditional mass `Tr(sigma_{ha})/Tr(sigma_h)` | supplied numerical Law |
-| formation cadence | competing hazard `lambda_{ha}=gamma Tr(sigma_{ha})/Tr(sigma_h)`, with supplied `gamma>0` | supplied process Law; no metric-time calibration |
-| causal readiness/order | due Bell-wing targets occupy one supplied common causal layer and are incomparable in that declared partial order | supplied causal convention; no derived time metric |
-| concurrent coupling | commuting due projectors are evaluated in one joint cylinder; the realized member commits through separate local appends | supplied global history measure with local one-site projections |
-| actuality | one supported member is contingent world-history data; the measure supplies odds but is not itself the member | interpretation compatible with the realized-state reference; no sampler is hidden in that reference |
+| Law domain | finite one- and two-qubit rank-one projective programs with physically calibrated permanent Record events | selected finite sector only; no POVM, continuum, field-theory, or universal-intervention claim |
+| event registration | outcome `a` for program `e` is the target Record whose content is the matching rank-one projector `P_e^a` | selected calibration on this domain; pointer or branch identity alone is insufficient |
+| history functional | child block `sigma_{ha}=P_e^a sigma_h P_e^a`; conditional mass `Tr(sigma_{ha})/Tr(sigma_h)` | selected numerical probability/history Law, not derived from the four axioms |
+| composite-cylinder rule | commuting projectors on a supplied composite preparation are evaluated in one joint trace cylinder; local event probabilities are its marginals | selected composition rule on the finite tensor-product sector; not a nearest-neighbour derivation or universal global dynamics |
 
-The law does not say that a matrix sector becomes a Record merely because it
-exists. The event-registration row says which physical target contents count
-as the registered event. The history-functional row then says what mass that
-event receives. Keeping those rows separate prevents a pointer from silently
-becoming an outcome and prevents the trace rule from being called a theorem of
-the axioms.
+The identity continuation and the performed-but-forgotten channel in section 3
+are consequences of this selected kernel, not additional selected fields. The
+kernel assigns conditional event weights; it does not say where or when a
+Record forms and does not choose the actual history member.
+
+### 1B. Explicit benchmark and boundary data, not adopted as universal Law
+
+| Field | Benchmark value | Status after the owner decision |
+|---|---|---|
+| preparation data and carrier | a supplied positive normalized one- or two-qubit operator, serialized when needed as one anchor plus four site-`M2(C)` block Records | boundary/encoding fixture; registration, packet genesis, and renewal remain open |
+| formation cadence | competing hazard `lambda_{ha}=gamma Tr(sigma_{ha})/Tr(sigma_h)`, with supplied `gamma>0` | process fixture; formation site/rate, clock calibration, and the memoryless form remain open |
+| causal readiness/order | due Bell-wing targets occupy one supplied common causal layer and are incomparable in that declared partial order | causal fixture; no derived physical time or spacelike metric |
+| local append realization | the realized member commits through separate calibrated one-site appends to supplied fresh targets | finite implementation witness; target supply, collision handling, and scalable resources remain open |
+| actuality fixture | a supplied contingent coordinate names one supported member without changing the weights | test representation of history data only; it is neither a sampler nor part of the selected Law |
+
+The sector Law does not say that a matrix sector becomes a Record merely
+because it exists. The event-registration row says which physical target
+contents count as the registered event. The history-functional row then says
+what mass that event receives. Keeping those rows separate prevents a pointer
+from silently becoming an outcome and prevents the trace rule from being
+called a theorem of the axioms.
 
 ## 2. Probability-Free Writer Module
 
@@ -121,9 +143,9 @@ At preparation `rho=P_0`,
 
 Equations (1)--(2) are exact writer algebra and contain no probability. They
 say that a calibrated branch cannot fabricate input outside its typed sector.
-The candidate Law separately registers the two target Record cells and assigns
-the zero branch zero history mass through its trace functional. That second
-sentence is Law content.
+The provisionally selected sector Law separately registers the two target
+Record cells and assigns the zero branch zero history mass through its trace
+functional. That second sentence is Law content.
 
 ## 3. Finite Histories And Identity Containment
 
@@ -260,9 +282,9 @@ completeness gives the local marginal. In the singlet fixture,
 \]
 
 independent of `y`. This supplies a consistent one-site **event marginal** of
-the candidate global Law. If the owner adopts the event registration and Law
-tuple, that marginal is the proposed value on the matching local
-Admissibility menu. It is not a derived nearest-neighbour conditional
+the provisionally selected global sector Law. Under that selection, the
+marginal is the selected value on the matching local Admissibility menu. It is
+not a derived nearest-neighbour conditional
 Admissibility kernel, and no general theorem says every global process
 compatible with the axioms has such a projection.
 
@@ -287,7 +309,8 @@ With supplied `gamma>0`, put
 Then the competing hazards sum to `gamma`, and the no-event survival law is
 `exp(-gamma t)`. The runner verifies both symbolically. `gamma`, the
 memoryless cadence, its physical clock meaning, and the resource that renews
-the process are candidate inputs.
+the process remain benchmark inputs, not provisionally selected sector-Law
+content.
 
 A normalized measure is not one actual member. The executable holds one Bell
 weight table fixed and uses two different contingent coordinates to identify
@@ -314,14 +337,22 @@ probability axiom:
 
 This draft makes two layers explicit. It does not identify a particular branch
 with an event, assign a weight, or equate randomized and direct preparations.
-Those are physical statements and remain in the candidate Law tuple. The
-canonical axiom memo is not edited by this packet.
+Those are physical statements and the calibrated event map remains in the
+selected sector-Law kernel. The canonical axiom memo is not edited by this
+packet.
 
-## 9. Owner Decision And Acceptance Gate
+No axiom amendment is required. The current Qualification already requires
+non-foundational structure to be derived, bridged, or explicitly registered
+before it can be used as a premise, and the axiom memo already lists Born
+weight values, probability rules beyond the distribution clause, formation
+rules, and dynamics as open gates. Moving this finite trace rule into an axiom
+would assert a necessity and scope that the present work has not established.
 
-Before adoption, any derivational replacement for the supplied trace/history
-row must cross the same interface rather than merely fit the displayed
-fixtures. It must provide one normalized nonnegative kernel
+## 9. Owner Decision Applied And Retention Gate
+
+Any deeper derivation, replacement, or universal promotion of the selected
+trace/history row must cross the same interface rather than merely fit the
+displayed fixtures. It must provide one normalized nonnegative kernel
 `K(event | complete Record/nearest-neighbour condition)` on a declared
 arbitrary-horizon family; construct prefix-consistent cylinders from that
 kernel; expose typed local event cells, support, and one-site marginals;
@@ -330,27 +361,30 @@ product, Bell, and no-signalling controls. A collection of per-instance linear
 solves, or a kernel that is unchanged under physically distinct carrier and
 transport controls, does not replace the supplied Law field.
 
-There are two honest next decisions.
+The owner decision is:
 
-### Adopt the downstream Law candidate
+1. **Select provisionally:** the four-field kernel in section 1A is the working
+   finite projective quantum/Record probability-history Law and a required
+   finite-sector benchmark for deeper candidates.
+2. **Do not elevate:** the fields in section 1B remain fixtures, boundary data,
+   or open process physics. They are not universal Law and are not inserted
+   into the axioms or approved-primitive registry.
+3. **Keep it falsifiable and replaceable:** a retained derivation from a
+   physical action, gravity-compatible measure, conserved current, collapse
+   dynamics, or other independently selected structure supersedes the
+   provisional selection if it reaches the same interface. A conflicting,
+   empirically superior sector Law defeats this candidate.
+4. **Audit before retention language:** the dependency-minimized theorem
+   package now goes to fresh-context independent audit. Even a clean audit
+   would certify only the finite conditional consequences and the honesty of
+   the boundary, not that Nature uniquely selects the kernel.
 
-Adopt the eight-row tuple in section 1 as the finite projective
-quantum/Record/history Law, keep the Qualification clarification
-interpretive, and send the dependency-minimized package to independent audit.
-The adoption must say openly that the trace/history functional is selected Law
-content. A clean audit could make this a positive owner-scoped quantum theory
-slice; it still would not derive physical clock calibration, autonomous packet
-genesis and renewal, scalable fields, matter, gravity, or a universal
-intervention category.
-
-### Do not adopt it
-
-Then stop local writer/Born compilation. The exact missing object is a
-physical selector for the history functional, not another matrix theorem.
-The highest derivational seam remains the externally owned W9 refinement and
-forward-history program; the highest current formal-obligation seam is the AC
-occupancy action/measure binary if a retained physical action and measure can
-be named quickly.
+The local writer/Born compilation seam is therefore closed as an
+implementation search: more equivalent finite writer algebra is low leverage.
+The live science seam is independent selection and unification--especially
+whether a gravity/action/measure construction recovers this kernel while
+supplying the currently open cadence, causal, resource, matter, and continuum
+fields.
 
 No current JSON derivation obligation is a quantum/Record terminal
 obligation. Accordingly this packet cannot honestly retire one merely by
@@ -371,16 +405,18 @@ It does not cost packet formation, fresh targets, collision arbitration,
 apparatus replication, long-run corpus generation, clock calibration, energy,
 matter, gravity, or source coupling.
 
-There is no audit verdict, adopted Law, or obligation retirement. Therefore
-all campaign TOE percentages remain frozen. The scientific advance is a
-dependency-minimized positive candidate plus an exact owner decision, not a
-score movement.
+There is now a provisional owner-selected finite-sector Law kernel, but still
+no audit verdict or formal-obligation retirement. Therefore campaign TOE
+percentages remain frozen. The scientific advance is removal of an owner
+decision ambiguity and creation of a precise selector benchmark, not retained
+TOE score movement.
 
 ## 11. No-Go Discipline Gate
 
-The bounded negative is only that this packet does not derive its eight supplied
-physical fields from the two cited foundation nodes. It is not a Born no-go,
-Record no-go, locality no-go, stochastic-law no-go, or axiom-necessity result.
+The bounded negative is only that this packet does not derive its four selected
+sector-Law fields or the benchmark realization fields from the two cited
+foundation nodes. It is not a Born no-go, Record no-go, locality no-go,
+stochastic-law no-go, or axiom-necessity result.
 
 ### N1 — alternative routes
 
@@ -393,7 +429,7 @@ Record no-go, locality no-go, stochastic-law no-go, or axiom-necessity result.
 | operational Record-only calibration | live | needs an independent held-out Record corpus not present in the repo |
 | W9 refinement/history selector | live and externally owned | may derive a different extensional Law; not duplicated here |
 | collapse/SUV or hidden-seed Law | live | requires its own physical fields, endpoint/Record calibration, and resources |
-| core-axiom or primitive amendment | live governance route | requires separate necessity/minimality review and owner authorization |
+| core-axiom or primitive amendment | considered and not used | current axioms already expose the open Law fields; no necessity theorem supports an amendment |
 
 ### N2 — wall independence
 
@@ -405,12 +441,12 @@ measure. A realized member does not derive its probability.
 
 ### N3 — hidden-wall scan
 
-The preparation packet, projective program category, trace functional,
-`gamma`, Bell coupling, event cells, packet-site decoder, actual member, and
-fixed finite geometry are explicit. No pointer is called a Record before the
-event-registration row. No random coordinate is generated by the realized-
-state reference. No metric time, reset, resource, or global locality theorem
-is implicit.
+The preparation packet, selected projective domain, trace functional,
+`gamma`, composite-cylinder rule, event cells, packet-site decoder, actual
+member, and fixed finite geometry are explicit and classified between sections
+1A and 1B. No pointer is called a Record before the event-registration row. No
+random coordinate is generated by the realized-state reference. No metric
+time, reset, resource, or global locality theorem is implicit.
 
 ### N4 — residual matching
 
@@ -426,15 +462,16 @@ The runner checks one qubit sequentially and a two-qubit Bell fixture. The
 Record packet has four block sites; the append fixture has two program sites
 and two targets. Nothing is claimed lattice-wide, continuum-wide, for general
 POVMs, or for arbitrary field theories. “Positive candidate” always means
-conditional on the proposed Law and never means adopted or retained.
+conditional on the provisionally selected sector Law and never means audited,
+retained, universal, or uniquely selected by Nature.
 
 ### N6 — partial-closure paths
 
 The writer module, finite cylinders, packet reconstruction, product reduction,
 Bell/no-signalling table, local append confluence, and one-site marginal are
-separable positive results. They remain useful if the owner later changes the
-cadence or expands the program category. An empirical corpus or an action-
-derived selector could replace the supplied trace row.
+separable positive results. They remain useful if a later theory changes the
+benchmark cadence or expands the program category. An empirical corpus or an
+action-derived selector could replace the provisionally selected trace row.
 
 ### N7 — strongest steelman
 
@@ -448,9 +485,10 @@ would supersede this candidate. This packet leaves that route open.
 
 The campaign already contains larger conditional writers, trajectories, and
 Bell-history fixtures. This packet claims no algebraic novelty over them. Its
-new job is dependency minimization onto current `origin/main` and an exact
-separation of what would be adopted from what is derived. Any attempt to grow
-it into another large conditional stack is stopped.
+new job is dependency minimization onto current `origin/main`, exact separation
+of the selected kernel from benchmark scaffolding, and a fixed recovery
+interface for deeper physics. Any attempt to grow it into another large
+conditional stack without an independent selector is stopped.
 
 The broad negative gate therefore fails. Only the scoped dependency and
 owner-decision statement ships.
@@ -466,4 +504,5 @@ Each runner must end with `FAIL=0` before this proposal is considered
 internally consistent. The primary receipt must also print the five explicit
 N5 resolution lines that confine the bounded dependency statement to its
 tested element, site, mode, and block surfaces and leave lattice-wide closure
-untested. Independent audit and explicit owner adoption remain separate gates.
+untested. Owner selection has been applied; independent audit remains a
+separate gate.

@@ -4,7 +4,7 @@ runner_sha256: 75c33fd4c49a0334b233ed8fb03baff74489284986e23f2925f0bffa16eae6ec
 input_fingerprint_sha256: 07ea7a671328dc386b5b91ad808474e24b38ae0d545be15b75b3a7eaf1bccd78
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 axis-cover of M and O at t+1 on #7168 x-probes

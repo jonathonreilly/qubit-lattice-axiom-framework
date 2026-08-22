@@ -1,0 +1,78 @@
+===== runner cache v1 =====
+runner: scripts/same_lock_xprobe_own_letter_clifford_plaquette_product_reverse_face_2026_08_15.py
+runner_sha256: adaf53841655fd7bcf88ea5ee9675f3bea83c739a2f972c1fe7fb1352f639a21
+input_fingerprint_sha256: 7c8f0f8fed1359fb160277f716441f255bb5b7970cee492f029e799ace0e2adb
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.07
+status: ok
+----- stdout -----
+own-letter Cl(3,0) plaquette product reverse/face on same-lock x-probe
+AUDIT_INPUT_PATHS:
+  docs/SAME_LOCK_XPROBE_OWN_LETTER_CLIFFORD_PLAQUETTE_PRODUCT_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Reverse and face from Cl(3,0) own-letter products on the #7181 x-probe process are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/SAME_LOCK_XPROBE_OWN_LETTER_CLIFFORD_PLAQUETTE_PRODUCT_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: host-is-euclidean-not-taxicab
+PASS: cycles-in-host
+PASS: id-add-dot-perp
+PASS: clifford-squares-plus-one
+PASS: clifford-anticommutators
+PASS: letter-map-is-displayed-cl30
+PASS: scalar-hold-identity
+PASS: unique-own-incoming-letter-identity
+Q: (0, 0, 0) t=0 L=+e_1 incoming=+e_1 | (1, 0, 0) t=3 L=UNDEFINED incoming=−e_3,+e_3,+e_2 | (1, 1, 0) t=3 L=UNDEFINED incoming=−e_2,−e_3,+e_3 | (0, 1, 0) t=0 L=+e_1 incoming=+e_1
+R: (1, 0, 0) t=3 L=UNDEFINED incoming=−e_3,+e_3,+e_2 | (1, 1, 0) t=3 L=UNDEFINED incoming=−e_2,−e_3,+e_3 | (1, 1, 1) t=2 L=+e_1 incoming=+e_1 | (1, 0, 1) t=2 L=+e_1 incoming=+e_1
+U_Q=UNDEFINED U_R=UNDEFINED
+reverse=UNDEFINED face=UNDEFINED T_Q=3 leftover_T_R_min=2
+per_element: each own incoming lock as a Cl(3,0) unit ±γ_i
+per_site: scored only on face 4-cycle Q and reverse 4-cycle R in Euclidean B_3(0)
+per_mode: no spectral or mode calculation is executed on this finite host
+per_block: four letters and one Cl(3,0) product per cycle, hold iff scalar ±1
+lattice_wide: checked and not executed — no lattice-wide lettering rule is claimed
+PASS: theorem1-all-cycle-vertices-recorded
+PASS: theorem1-face-letters  ((((1, 0, 0), 'UNDEFINED', 'UNDEFINED', (1, 0, 0)), {(0, 0, 0): 0, (1, 0, 0): 3, (1, 1, 0): 3, (0, 1, 0): 0}))
+PASS: theorem1-reverse-letters  ((('UNDEFINED', 'UNDEFINED', (1, 0, 0), (1, 0, 0)), {(1, 0, 0): 3, (1, 1, 0): 3, (1, 1, 1): 2, (1, 0, 1): 2}))
+PASS: theorem1-products-undefined  (('UNDEFINED', 'UNDEFINED'))
+PASS: theorem2-reverse-undefined  (UNDEFINED)
+PASS: theorem3-face-undefined  (UNDEFINED)
+PASS: no-T_Q-in-letter
+PASS: not-leftover-of-opposite-vertex-holonomy
+PASS: not-leftover-of-vector-sum
+PASS: not-leftover-of-exist-opposite-S-plus
+PASS: not-nnseed-or-nsopp-or-zsym-reprint  ((((1, 0, 0), (0, -1, 0), (1, 0, 0), (0, 1, 0)), ((1, 0, 0), 'UNDEFINED', 'UNDEFINED', (-1, 0, 0)), ((1, 0, 0), 'UNDEFINED', (1, 0, 0), (0, 1, 0)), ((1, 0, 0), 'UNDEFINED', 'UNDEFINED', (1, 0, 0))))
+PASS: mutation-picking-mixed-face-letters-disagrees
+PASS: mutation-picking-mixed-reverse-letters-disagrees
+PASS: mixed-earliest-steps-at-A
+PASS: uniqueness-not-required
+PASS: two-site-nssame-locks
+PASS: perp-step-incoming-lock
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: note-claim-scope
+PASS: note-reports-letters
+PASS: note-reports-products-and-status
+PASS: note-displayed-not-adopted
+PASS: note-does-not-use-occupancy
+PASS: note-not-vector-sum-or-exist-opposite
+PASS: note-not-cube-pauli-lattice-action
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+PASS: source-letter-from-own-cl30-product
+TOTAL: PASS=49 FAIL=0
+
+----- stderr -----
+

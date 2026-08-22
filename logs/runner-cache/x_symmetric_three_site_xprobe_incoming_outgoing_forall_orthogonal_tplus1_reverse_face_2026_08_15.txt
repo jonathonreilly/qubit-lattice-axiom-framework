@@ -1,0 +1,91 @@
+===== runner cache v1 =====
+runner: scripts/x_symmetric_three_site_xprobe_incoming_outgoing_forall_orthogonal_tplus1_reverse_face_2026_08_15.py
+runner_sha256: d02ca197c4d511d0fd65fa68a5980af6ec68d97d53f9103e11baeec13d59d833
+input_fingerprint_sha256: 4b99cf0b7a128dbc8546ae9cba7ee11a395fe3330edda02a15513ded183ee7ee
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+forall-orthogonal M vs O at t+1 reverse/face on #7213 x-probes
+AUDIT_INPUT_PATHS:
+  docs/X_SYMMETRIC_THREE_SITE_XPROBE_INCOMING_OUTGOING_FORALL_ORTHOGONAL_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Forall-orthogonal M vs O at t+1 on the four #7213 x-probes, and reverse/face from that, are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/X_SYMMETRIC_THREE_SITE_XPROBE_INCOMING_OUTGOING_FORALL_ORTHOGONAL_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-x-probes-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: forall-orthogonal-identity
+PASS: exist-orthogonal-is-weaker
+PASS: empty-intersection-is-not-forall
+A t=0 tau=1 M={−e_2} O={+e_1, +e_3, −e_3} dots={−e_2·+e_1=0, −e_2·+e_3=0, −e_2·−e_3=0} forall=hold
+B t=2 tau=3 M={+e_2} O={+e_1, +e_3, −e_3} dots={+e_2·+e_1=0, +e_2·+e_3=0, +e_2·−e_3=0} forall=hold
+C t=1 tau=2 M={+e_1} O={+e_2, −e_2, +e_3, −e_3} dots={+e_1·+e_2=0, +e_1·−e_2=0, +e_1·+e_3=0, +e_1·−e_3=0} forall=hold
+D t=3 tau=4 M={−e_1, +e_3, −e_3} O={+e_2, −e_2} dots={−e_1·+e_2=0, −e_1·−e_2=0, +e_3·+e_2=0, +e_3·−e_2=0, −e_3·+e_2=0, −e_3·−e_2=0} forall=hold
+reverse=hold face=hold
+per_element: each pair (m,o) from M(q,t+1) against O(q,t+1) at a probe
+per_site: scored only at x-probes A,B,C,D on Euclidean B_3(0); no other sites
+per_mode: no spectral or mode calculation is executed on this finite host
+per_block: four M sets, four O sets, integer dots, forall-perp, reverse/face
+lattice_wide: checked and not executed — no lattice-wide lettering rule is claimed
+PASS: perp-step-incoming-lock
+PASS: outgoing-set-undefined-if-unformed
+PASS: outgoing-empty-not-undefined
+PASS: incoming-set-seed-singleton
+PASS: theorem1-formation-ticks  ({'A': 0, 'B': 2, 'C': 1, 'D': 3})
+PASS: theorem1-M-O-at-tau  ({'A': '{−e_2}', 'B': '{+e_2}', 'C': '{+e_1}', 'D': '{−e_1, +e_3, −e_3}'})
+PASS: theorem1-dots-all-zero  ({'A': '{−e_2·+e_1=0, −e_2·+e_3=0, −e_2·−e_3=0}', 'B': '{+e_2·+e_1=0, +e_2·+e_3=0, +e_2·−e_3=0}', 'C': '{+e_1·+e_2=0, +e_1·−e_2=0, +e_1·+e_3=0, +e_1·−e_3=0}', 'D': '{−e_1·+e_2=0, −e_1·−e_2=0, +e_3·+e_2=0, +e_3·−e_2=0, −e_3·+e_2=0, −e_3·−e_2=0}'})
+PASS: theorem1-forall-perp-hold-at-each-probe  ({'A': 'hold', 'B': 'hold', 'C': 'hold', 'D': 'hold'})
+PASS: theorem1-M-frozen-O-not-frozen
+PASS: theorem1-A-is-seed
+PASS: theorem1-mixed-stays-a-set
+PASS: theorem1-new-records-meet-6nn-at-tplus1
+PASS: theorem2-reverse-hold  (hold)
+PASS: theorem3-face-hold  (hold)
+PASS: not-exist-opposite-leftover
+PASS: not-exist-perp-leftover
+PASS: not-leftover-of-O-at-t
+PASS: not-unique-letter-leftover
+PASS: not-empty-intersection-leftover
+PASS: not-neighbor-lock-leftover
+PASS: not-nstri-or-perp-or-zmenu-or-y-probes
+PASS: not-nnlock-named-sign
+PASS: incoming-outgoing-locks-are-nn-steps
+PASS: uniqueness-not-required
+PASS: x-symmetric-three-site-seed
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: mutation-empty-or-undefined-is-undefined
+PASS: mutation-parallel-pair-fails
+PASS: mutation-sum-is-not-forall
+PASS: two-site-same-x-probes-is-not-the-seed
+PASS: note-claim-scope
+PASS: note-reports-ticks-M-O-dots-forall
+PASS: note-reports-reverse-face-hold
+PASS: note-displayed-not-adopted
+PASS: note-does-not-use-occupancy
+PASS: note-not-sign-lettering
+PASS: note-not-ndot-or-occupancy-inner-product
+PASS: note-does-not-attach-formation-member
+PASS: note-not-unique-or-sum-or-exist-opp-leftover
+PASS: note-no-six-neighbor-star-as-letter
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+TOTAL: PASS=61 FAIL=0
+
+----- stderr -----
+

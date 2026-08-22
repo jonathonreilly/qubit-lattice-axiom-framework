@@ -1,5 +1,5 @@
 {
- "edge_count": 15754,
+ "edge_count": 15756,
  "node_count": 5559,
  "nodes": {
   "3d_correction_master_note": {
@@ -16147,8 +16147,8 @@
    "out_degree": 6
   },
   "record_projective_history_local_append_downstream_law_candidate_bounded_theorem_note_2026-08-21": {
-   "deps_hash": "7b707271a9a8",
-   "out_degree": 2
+   "deps_hash": "58c1895a8437",
+   "out_degree": 4
   },
   "record_reset_sink_entropy_ledger_2026-06-05": {
    "deps_hash": "630eac816cd1",

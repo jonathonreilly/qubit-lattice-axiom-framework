@@ -1,6 +1,6 @@
 {
- "edge_count": 15752,
- "node_count": 5558,
+ "edge_count": 15753,
+ "node_count": 5559,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -21656,6 +21656,10 @@
   },
   "writing_voice_guide_2026-04-25": {
    "deps_hash": "8990b3713089",
+   "out_degree": 1
+  },
+  "x_axis_opposite_e2_xprobe_simultaneous_incoming_outgoing_tplus1_reverse_face_bounded_theorem_note_2026-08-15": {
+   "deps_hash": "c8eee4235fc9",
    "out_degree": 1
   },
   "yang_mills_coupling_marginality_forces_d_four_narrow_theorem_note_2026-05-26": {

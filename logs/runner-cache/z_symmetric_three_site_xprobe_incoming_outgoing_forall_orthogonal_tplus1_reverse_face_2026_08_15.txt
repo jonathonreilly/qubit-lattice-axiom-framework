@@ -1,0 +1,93 @@
+===== runner cache v1 =====
+runner: scripts/z_symmetric_three_site_xprobe_incoming_outgoing_forall_orthogonal_tplus1_reverse_face_2026_08_15.py
+runner_sha256: e1b9ab8511603628a67b1ba996d784d4a65c87606c32e74cbabd1f4e2ab9cb91
+input_fingerprint_sha256: 6341dbf092c9c4d683e0d549d8e4cd041c59fb2281cab1aa028d849fb9e8259c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+forall-orthogonal M vs O reverse/face at t+1 on #7188 x-probes
+AUDIT_INPUT_PATHS:
+  docs/Z_SYMMETRIC_THREE_SITE_XPROBE_INCOMING_OUTGOING_FORALL_ORTHOGONAL_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Forall-orthogonal M vs O at t+1 on the four #7188 x-probes, and reverse/face from that, are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal ('docs/Z_SYMMETRIC_THREE_SITE_XPROBE_INCOMING_OUTGOING_FORALL_ORTHOGONAL_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md')
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-x-probes-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: forall-perp-identity
+PASS: exist-perp-is-leftover-identity
+PASS: cover-is-leftover-identity
+PASS: combine-status-identity
+A t=3 tau=4 M={+e_2, −e_2} O={+e_1} forall-perp=hold cover=fail
+A dots=(('+e_2', '+e_1', 0), ('−e_2', '+e_1', 0))
+B t=2 tau=3 M={+e_1} O={+e_2, −e_2, +e_3} forall-perp=hold cover=hold
+B dots=(('+e_1', '+e_2', 0), ('+e_1', '−e_2', 0), ('+e_1', '+e_3', 0))
+C t=4 tau=5 M={+e_1} O={+e_2, −e_2} forall-perp=hold cover=fail
+C dots=(('+e_1', '+e_2', 0), ('+e_1', '−e_2', 0))
+D t=2 tau=3 M={+e_1} O={+e_2, −e_2} forall-perp=hold cover=fail
+D dots=(('+e_1', '+e_2', 0), ('+e_1', '−e_2', 0))
+forall-perp reverse=hold face=hold
+nmcfail cover reverse=fail face=fail
+per_element: each integer dot of an earliest incoming step against an outgoing dual step at a probe, read from the record prefix at that probe's t+1
+per_site: scored only at x-probes A,B,C,D on Euclidean B_3(0); no other sites
+per_mode: no spectral or mode calculation is executed on this finite host
+per_block: four incoming sets, four outgoing sets, integer dots, four forall-perp reports, and reverse/face from those reports
+lattice_wide: checked and not executed — no lattice-wide lettering rule is claimed
+PASS: perp-step-incoming-lock
+PASS: unformed-at-tau-is-undefined
+PASS: incoming-set-seed-singleton
+PASS: theorem1-formation-ticks {'A': 3, 'B': 2, 'C': 4, 'D': 2}
+PASS: theorem1-M-and-O-at-tau {'A': ('{+e_2, −e_2}', '{+e_1}'), 'B': ('{+e_1}', '{+e_2, −e_2, +e_3}'), 'C': ('{+e_1}', '{+e_2, −e_2}'), 'D': ('{+e_1}', '{+e_2, −e_2}')}
+PASS: theorem1-dots-all-zero
+PASS: theorem1-forall-perp-hold-at-each-probe {'A': 'hold', 'B': 'hold', 'C': 'hold', 'D': 'hold'}
+PASS: theorem1-A-is-not-seed
+PASS: theorem1-mixed-stays-a-set
+PASS: theorem1-compare-nmcfail-cover {'A': ('hold', 'fail', '{e_3}'), 'B': ('hold', 'hold', '{}'), 'C': ('hold', 'fail', '{e_3}'), 'D': ('hold', 'fail', '{e_3}')}
+PASS: theorem1-new-records-meet-6nn
+PASS: theorem2-reverse-hold hold
+PASS: theorem3-face-hold hold
+PASS: empty-or-undefined-is-undefined
+PASS: disjoint-is-not-forall-perp
+PASS: O-is-not-M
+PASS: not-leftover-of-exist-perp
+PASS: not-leftover-of-nmcfail-cover
+PASS: not-leftover-of-exist-opposite-M-or-O
+PASS: not-leftover-of-unique-letter
+PASS: not-leftover-of-neighbor-lock-union
+PASS: uniqueness-not-required
+PASS: not-leftover-of-nstri-exist-perp-hold-forall-fail ('fail', 'fail', 'hold')
+PASS: not-z-probes-or-y-probes-or-two-site-or-perp
+PASS: not-y-symmetric-or-x-symmetric
+PASS: z-symmetric-three-site-seed
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: note-claim-scope
+PASS: note-reports-M-O-dots-and-forall
+PASS: note-reports-reverse-face
+PASS: note-compare-nmcfail-cover-fail
+PASS: note-displayed-not-adopted
+PASS: note-not-exist-perp-or-cover-or-empty-intersection
+PASS: note-does-not-use-occupancy
+PASS: note-no-global-T
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+PASS: perp-hold-where-cover-fails
+TOTAL: PASS=58 FAIL=0
+
+----- stderr -----
+

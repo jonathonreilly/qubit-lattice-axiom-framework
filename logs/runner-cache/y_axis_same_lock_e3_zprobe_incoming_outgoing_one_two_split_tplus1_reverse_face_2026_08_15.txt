@@ -1,0 +1,94 @@
+===== runner cache v1 =====
+runner: scripts/y_axis_same_lock_e3_zprobe_incoming_outgoing_one_two_split_tplus1_reverse_face_2026_08_15.py
+runner_sha256: a91016b9dff92af9d14165dd86bc99aeb19fec57373d407ed5e609c66fef9f11
+input_fingerprint_sha256: e5767e6c0f2b0217fb6d462a889203892732d3c4cec938d63246c73d32f001a8
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+1-in 2-out axis split of M and O reverse/face at t+1 on #7198 z-probes
+AUDIT_INPUT_PATHS:
+  docs/Y_AXIS_SAME_LOCK_E3_ZPROBE_INCOMING_OUTGOING_ONE_TWO_SPLIT_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: 1-in 2-out axis split of M and O at t+1 on the four #7198 z-probes, and reverse/face from that, are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/Y_AXIS_SAME_LOCK_E3_ZPROBE_INCOMING_OUTGOING_ONE_TWO_SPLIT_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-z-probes-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: axis-identity
+PASS: cover-identity
+PASS: both-hold-identity
+PASS: split-identity
+A t=3 M={+e_1, −e_1, +e_2} O={+e_3} Axis(M)={e_1, e_2} Axis(O)={e_3} |Axis(M)|=2 cover=hold split=fail
+B t=2 M={+e_3} O={+e_1, −e_1, +e_2} Axis(M)={e_3} Axis(O)={e_1, e_2} |Axis(M)|=1 cover=hold split=hold
+C t=4 M={+e_3} O={+e_1, −e_1, −e_2} Axis(M)={e_3} Axis(O)={e_1, e_2} |Axis(M)|=1 cover=hold split=hold
+D t=2 M={+e_3} O={+e_1, −e_1, −e_2} Axis(M)={e_3} Axis(O)={e_1, e_2} |Axis(M)|=1 cover=hold split=hold
+split reverse=fail face=hold cover reverse=hold face=hold
+per_element: each unsigned lattice axis among {e_1,e_2,e_3} occupied by M or by O at a probe's t+1
+per_site: scored only at z-probes A,B,C,D on Euclidean B_3(0); no other sites
+per_mode: no spectral or mode calculation is executed on this finite host
+per_block: four split bits, reverse/face from 1-in 2-out at A,B and at C,D
+lattice_wide: checked and not executed — no lattice-wide lettering rule is claimed
+PASS: perp-step-incoming-lock
+PASS: undefined-if-unformed
+PASS: incoming-set-seed-singleton
+PASS: theorem1-formation-ticks  ({'A': 3, 'B': 2, 'C': 4, 'D': 2})
+PASS: theorem1-M-at-tau  ({'A': '{+e_1, −e_1, +e_2}', 'B': '{+e_3}', 'C': '{+e_3}', 'D': '{+e_3}'})
+PASS: theorem1-O-at-tau  ({'A': '{+e_3}', 'B': '{+e_1, −e_1, +e_2}', 'C': '{+e_1, −e_1, −e_2}', 'D': '{+e_1, −e_1, −e_2}'})
+PASS: theorem1-Axis-M-and-O  ({'A': ('{e_1, e_2}', '{e_3}'), 'B': ('{e_3}', '{e_1, e_2}'), 'C': ('{e_3}', '{e_1, e_2}'), 'D': ('{e_3}', '{e_1, e_2}')})
+PASS: theorem1-cover-hold  ({'A': 'hold', 'B': 'hold', 'C': 'hold', 'D': 'hold'})
+PASS: theorem1-Axis-M-card  ({'A': 2, 'B': 1, 'C': 1, 'D': 1})
+PASS: theorem1-split-2in1out-fail-at-A  ({'A': 'fail', 'B': 'hold', 'C': 'hold', 'D': 'hold'})
+PASS: theorem1-M-frozen-from-t
+PASS: theorem1-O-empty-at-t-fills-at-tplus1
+PASS: theorem1-new-records-meet-6nn  ({'A': ((0, 0, 2),), 'B': ((2, 1, 1), (0, 1, 1), (1, 2, 1)), 'C': ((1, 0, 2), (-1, 0, 2), (0, -1, 2)), 'D': ((2, 0, 1), (0, 0, 1), (1, -1, 1))})
+PASS: theorem1-mixed-stays-a-set
+PASS: theorem1-A-is-not-seed
+PASS: theorem2-reverse-split-fail  (fail)
+PASS: theorem3-face-split-hold  (hold)
+PASS: mutation-leftover-empty-fails-leftover-reverse
+PASS: mutation-leftover-of-M-alone-differs
+PASS: mutation-leftover-of-O-alone-differs
+PASS: mutation-exist-opposite-of-M-fails
+PASS: mutation-exist-opposite-of-O-is-not-split
+PASS: mutation-unique-letter-undefined-at-mixed-M
+PASS: mutation-cover-hold-is-not-split
+PASS: mutation-shared-axis-fails-even-if-leftover-empty
+PASS: mutation-sum-cancels-mixed
+PASS: O-is-not-M
+PASS: not-x-probes-or-y-probes  (({'A': 'hold', 'B': 'hold', 'C': 'fail', 'D': 'hold'}, {'A': 'hold', 'B': 'hold', 'C': 'hold', 'D': 'hold'}, 'hold', 'hold'))
+PASS: not-nnseed-or-y-axis-e2
+PASS: not-opposite-e3-or-nsopp-or-same-e1  (('hold', 'fail'))
+PASS: y-axis-same-lock-e3-seed
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: uniqueness-not-required
+PASS: note-claim-scope
+PASS: note-reports-M-O-Axis-cover
+PASS: note-reports-new-neighbors
+PASS: note-reports-split-reverse-face
+PASS: note-displayed-not-adopted
+PASS: note-not-leftover-or-exist-opposite
+PASS: note-not-star-or-occupancy
+PASS: note-no-global-T
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+PASS: source-letter-from-axis-split
+TOTAL: PASS=64 FAIL=0
+
+----- stderr -----
+

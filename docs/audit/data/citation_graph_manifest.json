@@ -1,6 +1,6 @@
 {
  "edge_count": 16109,
- "node_count": 5599,
+ "node_count": 5600,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -505,6 +505,10 @@
   "admissibility_dirac_kahler_general_zn_charge_kinematic_theorem_bounded_theorem_note_2026-08-19": {
    "deps_hash": "f99ed0d023fb",
    "out_degree": 2
+  },
+  "admissibility_dirac_kahler_generator_trilemma_kernel_bounded_theorem_note_2026-08-21": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_dirac_kahler_global_dressing_involution_positivity_bounded_theorem_note_2026-08-15": {
    "deps_hash": "767fbba8a59e",

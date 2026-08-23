@@ -1,6 +1,6 @@
 {
  "edge_count": 16109,
- "node_count": 5605,
+ "node_count": 5606,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -455,6 +455,10 @@
    "out_degree": 6
   },
   "admissibility_dirac_kahler_complex_structure_synthesis_bounded_theorem_note_2026-08-23": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "admissibility_dirac_kahler_conditional_symmetric_power_theorem_note_2026-08-23": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

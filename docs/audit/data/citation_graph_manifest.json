@@ -1,6 +1,6 @@
 {
- "edge_count": 16109,
- "node_count": 5604,
+ "edge_count": 16114,
+ "node_count": 5605,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -613,6 +613,10 @@
   "admissibility_dirac_kahler_scaling_probe_bounded_theorem_note_2026-08-21": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "admissibility_dirac_kahler_schur_record_response_bridge_bounded_theorem_note_2026-08-23": {
+   "deps_hash": "98070118f38c",
+   "out_degree": 5
   },
   "admissibility_dirac_kahler_seam_dichotomy_bounded_theorem_note_2026-08-19": {
    "deps_hash": "d793236fddf7",

@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_schur_record_response_bridge_independent_check_2026_08_23.py
+runner_sha256: 726e3ae83d8a3d93c43b28254addbbc94ed21901eb13959c7ceb16cac417a754
+input_fingerprint_sha256: c4ab0ec76a135a51849ec0a6084413c6e4b087707e95e1a193b35837855be497
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 12.61
+status: ok
+----- stdout -----
+PASS independent-positive-completion: a direct inverse of Herm(q^-1) equals the independently factored q^dagger Herm(q)^-1 q precision
+PASS independent-generic-schur-theorem: a non-diagonal rational block example independently certifies the inverse-block Schur identity
+PASS independent-free-level-response: four independently rebuilt free-level blocks are diagonal, Schur exact, response exact, and pairwise distinct
+PASS independent-action-dial-sample: five independently chosen action families give twenty exact positive diagonal Schur blocks
+PASS independent-zero-mass-boundary: the positive precision route stops rather than inverting the exactly zero Hermitian action at m=0
+PASS independent-positive-partition-split: the four hard pins give distinct positive partition laws for q^dagger q and the W9 precision
+PASS independent-total-mixture-residual: the determinant-weighted mixture fails with four exact signed residuals while the default pin reproduces the background
+PASS independent-background-typing: the unpinned field is a fixed default value and not a hidden sum over alternative record values
+PASS independent-neighbor-counterfamily: the exact full-rank power counterfamily independently separates 3/10 from 9/26 while retaining the mixed-point value
+PASS independent-congruence-ray: one nonunitary exact transport confirms the contravariant projective inverse-precision law
+PASS independent-input-closure: the independent checker reads only the final note and its Block 174 fixture parent
+per_element: independent projectors, hard-pin weights, local densities, and exact residual signs are reconstructed
+per_site: all four free levels plus the selected hard-pin cell and fixed-background rule are independently checked
+per_mode: the full 24-mode W precision, two positive partition laws, and a separate rational block-Schur example are checked
+per_block: five action-family dials produce twenty independent local Schur blocks with the zero-mass edge separated
+lattice_wide: checked and not executed — the checker establishes no autonomous history or infinite-volume law
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

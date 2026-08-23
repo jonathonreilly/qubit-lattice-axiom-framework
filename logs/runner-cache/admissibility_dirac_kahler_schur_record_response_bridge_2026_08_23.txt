@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_schur_record_response_bridge_2026_08_23.py
+runner_sha256: ee05c5490547526b5d26948de667bdf8f9723be8b5490851c070c8f38d4d77ac
+input_fingerprint_sha256: 55f50a00545d708969067c5255ac237afb5b72878a2a093702deee6735326b49
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 23.07
+status: ok
+----- stdout -----
+PASS positive-action-completion: W=Herm(q^-1)=q^-1 Herm(q) q^-dagger has exact positive precision K_W=q^dagger Herm(q)^-1 q
+PASS exact-local-schur-inverse: integrating the twenty exterior modes gives the exact inverse of the four-mode W9 block
+PASS action-derived-pincer-marginal: the local Gaussian source response reproduces the parent pincer marginal entry for entry
+PASS four-free-level-ladder: all four free levels are S-DIAG, positive, Schur-derived, response-consistent, and pairwise distinct
+PASS nonzero-mass-action-ladder: fourteen exact nonzero-mass action dials give 56 positive S-DIAG blocks with zero Schur residual
+PASS zero-mass-boundary: at m=0 the Hermitian action vanishes, so the positive W precision construction honestly has no inverse
+PASS two-positive-completions: K_mod=q^dagger q and K_W=q^dagger Herm(q)^-1 q are distinct exact positive completions of one complex q
+PASS completion-partition-split: the squared-amplitude formation law is the K_mod partition, while the W9-positive completion carries a distinct determinant factor
+PASS formation-law-total-mixture-fails: averaging pinned W9 densities with the determinant formation law does not reconstruct the unpinned marginal
+PASS only-nonnegative-reconstruction-is-default: the affine solution is one-dimensional but positivity forces delta at the default sigma=3/5, not the four-positive formation law
+PASS fixed-background-not-value-union: an unrecorded cell uses the fixed default sigma=3/5; the present q is not a sum or integral over Record alternatives
+PASS candidate-joint-ensembles-are-new: both explicit sum-over-pin ensembles differ from the fixed-background object and from each other
+PASS strict-neighbor-equivariant-counterfamily: C and C^2 response states agree at I/2 but differ by 3/65 on the existing non-scalar nearest-neighbor effect
+PASS projective-congruence-selector: contravariant GL congruence selects the inverse ray and rejects an exact positive unitary-covariant counterfamily
+PASS scalar-action-gauge: Q->gQ rescales raw DZ by g^-5 but leaves the identity-normalized grade and calibrated hazard unchanged
+PASS pure-boundary-separation: a finite positive precision has a full-rank response state, so an exact pure preparation needs a singular or limiting prescription
+PASS source-contract-and-input-closure: the final theorem note and every declared action, axiom, and parent input exist with the no-score boundary explicit
+per_element: every local projector source, pinned alternative, response grade, and mixture coefficient is checked exactly
+per_site: four free slices and the hard-pin versus fixed-background semantics at the selected Record cell are checked
+per_mode: all 24 complex action modes, two positive completions, exterior integrations, and source-response quotients are checked
+per_block: fourteen nonzero-mass action dials produce 56 exact Schur-response blocks plus the m=0 boundary
+lattice_wide: checked and not executed — no autonomous global Record history or infinite-volume selector is claimed
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

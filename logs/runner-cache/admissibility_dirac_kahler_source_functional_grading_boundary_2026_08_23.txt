@@ -1,0 +1,50 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_source_functional_grading_boundary_2026_08_23.py
+runner_sha256: 8baa586afeca210066c942a60bc9b242c5c9014a3efdc5869bf3a55daf08fd68
+input_fingerprint_sha256: 77f5538e04d89409a2d18bb0c70c2062680b89e6c41acfa836d3b1fb9b5c45f1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 6.69
+status: ok
+----- stdout -----
+PASS SOURCE_TWO_POINT: d_barJ d_J exp(barJ G J)|0 = G exactly
+PASS SOURCE_WICK_PERMANENT: degree two is the permanent and same-polarity contractions vanish
+PASS NORMALIZED_VACUUM: the degree-zero coefficient of the normalized Wick tower is 1
+PASS VACUUM_CATEGORY_SPLIT: unnormalized vacuum=Z_Q, doubled readout=Z_Q Z_Qbar, and reweighting scales every sector
+PASS REFLECTION_ORIENTATION_MISMATCH: Block-107 code gives the transpose of its K_ab=conj(G(b,theta a)) prose equation on generic G
+PASS PARENT_RANK_TWO_ISOMETRY: X=[(4e0+3e4)/5,(4e2+3e6)/5] has X^dag X=I_2
+PASS PERIOD_TWO_DOES_NOT_SELECT_WEIGHTS: every time-weight pair (u,v), not only (4/5,3/5), intertwines x-translation by two
+PASS 8x4_0_FULL_SOURCE_BOUNDARY: real fixture; prose/code kernels are adjoints; raw anti-Hermitian rank=8; Herm-part inertia=(6, 2, 0)
+PASS 8x4_0_REFLECTION_COVARIANCE_DEFECT: (r Q^dag r-Q)[0,0]=-997/27456 != 0
+PASS 8x4_0_POSITIVE_RESTRICTION: X^dag K X is convention-independent here and positive definite by Sylvester
+PASS 8x4_0_X_NOT_SELECTED_BY_INVARIANCE: period-two symmetry explains the 2x2 shape, but X is not invariant under r, Q or the action form
+PASS 8x4_1/4_FULL_SOURCE_BOUNDARY: real fixture; prose/code kernels are adjoints; raw anti-Hermitian rank=8; Herm-part inertia=(6, 2, 0)
+PASS 8x4_1/4_REFLECTION_COVARIANCE_DEFECT: (r Q^dag r-Q)[0,0]=-997/27456 != 0
+PASS 8x4_1/4_POSITIVE_RESTRICTION: X^dag K X is convention-independent here and positive definite by Sylvester
+PASS 8x4_1/4_X_NOT_SELECTED_BY_INVARIANCE: period-two symmetry explains the 2x2 shape, but X is not invariant under r, Q or the action form
+PASS 8x4_RESTRICTION_TRANSPORT_RESPONSE: half-trace gap from s_t=0 to 1/4 is exact and positive: 73977924244224/1492124486100431
+PASS 8x4_ONE_COPY_VACUUM_RESPONSE: det(Q) is positive at both dials and changes exactly, so Z_Q is positive and dial-sensitive
+PASS 12x4_0_FULL_SOURCE_BOUNDARY: real fixture; prose/code kernels are adjoints; raw anti-Hermitian rank=8; Herm-part inertia=(4, 4, 0)
+PASS 12x4_0_REFLECTION_COVARIANCE_DEFECT: (r Q^dag r-Q)[0,0]=3167/10560 != 0
+PASS 12x4_0_POSITIVE_RESTRICTION: X^dag K X is convention-independent here and positive definite by Sylvester
+PASS 12x4_0_X_NOT_SELECTED_BY_INVARIANCE: period-two symmetry explains the 2x2 shape, but X is not invariant under r, Q or the action form
+PASS 12x4_1/4_FULL_SOURCE_BOUNDARY: real fixture; prose/code kernels are adjoints; raw anti-Hermitian rank=8; Herm-part inertia=(4, 4, 0)
+PASS 12x4_1/4_REFLECTION_COVARIANCE_DEFECT: (r Q^dag r-Q)[0,0]=3167/10560 != 0
+PASS 12x4_1/4_POSITIVE_RESTRICTION: X^dag K X is convention-independent here and positive definite by Sylvester
+PASS 12x4_1/4_X_NOT_SELECTED_BY_INVARIANCE: period-two symmetry explains the 2x2 shape, but X is not invariant under r, Q or the action form
+PASS 12x4_RESTRICTION_TRANSPORT_RESPONSE: half-trace gap from s_t=0 to 1/4 is exact and positive: 150346029799280479942166602650413136160/2455275247171512614379752553769527826469
+PASS 12x4_ONE_COPY_VACUUM_RESPONSE: det(Q) is positive at both dials and changes exactly, so Z_Q is positive and dial-sensitive
+PASS AUTHORITY_BOUNDARY: axioms leave Born/source-observable bridges open; linear Theta and partition-to-field sewing are not supplied
+PASS PRIMITIVE_REGISTRY_BOUNDARY: the complete approved primitive registry supplies no event/source selector, readout bridge or probability weighting
+PASS SECOND_GLUE_PREMISE_ABSENT: Block 177 names a Sym^n premise but no |Z|^2-to-Sym^0 source-sewing premise
+PASS EXACT_AST_SURFACE: float_literals=0 on the primary runner AST
+PASS NO_GO_PACKET_LANDING_SURFACE: N1-N8 tables and narrowed PASS disposition land in the note; this check is structural, not an audit verdict
+per_element: source differentiation fixes G and Wick permanents; normalized, unnormalized and doubled vacuum scalars are distinct
+per_site: the full eight-source reflected kernel is non-Hermitian at four exact cells, while one parent-supplied rank-two restriction is positive
+per_mode: the positive restriction changes exactly with s_t, but no physical source/reflection selector is supplied
+per_block: Block 179 derives the algebraic Wick part of B2b and repairs the one-copy versus doubled vacuum accounting
+lattice_wide: no universal OS no-go, continuum result, Born derivation, axiom retirement, obligation retirement or TOE percentage move is claimed
+TOTAL: PASS=32 FAIL=0
+
+----- stderr -----
+

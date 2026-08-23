@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_local_innovation_record_dilation_2026_08_23.py
+runner_sha256: fc61c8e89cd1df8b12540b1bcbaa3563baf2a19f1dc2ff28392e4885907d6cbf
+input_fingerprint_sha256: 085210e89a83a20b23948a3257197979c20acfc81dbb96fc12e2192bf04d558b
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 87.94
+status: ok
+----- stdout -----
+PASS strict-local-innovation-gram: S_a=mH_a splits exactly into onsite variance m/2 plus a Gram factor whose columns live on sites or fixed S-graph coordinate-radius-one edges
+PASS full-rank-positive-local-residual-action: the enlarged precision is T^dag diag((m/2)^-1 I,I) T with invertible triangular T, hence a full-rank positive Gaussian action
+PASS congruence-determinant-formation-law: det M_a=(m/2)^-N |det q_a|^2, so the enlarged positive action has exactly the parent arm weights without an S spectator determinant
+PASS exact-W-covariance-from-local-innovations: the phi covariance is q_a^-1(B_a B_a^dag+mI/2)q_a^-dagger=Herm(q_a^-1) exactly
+PASS positive-marked-insertion-on-all-free-slices: the positive insertion phi_R^dag E_j phi_R with imposed identity calibration 1/Tr(W_RR) induces the exact normalized marked-intensity/projector table on all four free slices
+PASS block42-joint-table-recovered-without-dense-effective-precision: the local innovation action reproduces Block 42 P(a,j) entry for entry while keeping K_W only as a marginalized precision
+PASS alternative-base-measure-still-load-bearing: additive base-measure refinement pushes the marked intensity forward exactly, while duplicate-label counting still changes the arm law
+PASS five-cover-factor-locality-ladder: q rows and innovation columns stay temporal radius one on five covers; the expanded phi precision is uniformly measured at temporal radius two
+PASS heldout-larger-cover-local-factor: the same fixed m/2 rule passes all four pins at the unfitted cover extent 28 (physical time 14) with temporal-radius-one q rows and innovation columns
+PASS physical-spatial-range-boundary: innovation columns are physical-x radius one, but q rows reach radius two and q^dagger q reaches radius four once width removes the four-site alias
+PASS alternative-coefficient-mutation-has-exact-bounded-box: changed q_a/B_a rows lie on the cubic-graph Record star, while affected residual factors inspect a coordinatewise (dt,dx)<= (2,2) box reaching graph distance four
+PASS microscopic-dilation-is-not-unique: m/3 and m/2 innovation splits give distinct positive local hidden actions with the same W covariance and normalized arm law
+PASS positive-mass-domain-and-zero-mass-stop: the local m/2 Gram split is exact with invertible q at m=1/3,1,3; at m=0 its positive residual metric diverges and the normalized W response remains undefined
+PASS visible-blanket-marginal-remains-nonlocal: the microscopic factor graph is local, but after its auxiliary fields are integrated the old determinant arm marginal still differs at the matched visible blanket
+PASS selection-and-input-boundary: the auxiliary carrier, innovation split, source/event identification, base measure, and clock remain selected downstream content with no score claim
+per_element: every local residual, edge/on-site innovation column, projector insertion, and refinement share is checked exactly
+per_site: four hard pins, their record-star action mutations, all four free response slices, and the matched visible twin are checked
+per_mode: full q/B Gram and covariance matrices, determinant factors, and two distinct hidden dilations are checked
+per_block: four baseline arms, three positive masses, six temporal covers, and three spatial probes certify bounded range on the executed ladders
+lattice_wide: checked and not executed — no M2(C) embedding of the auxiliary innovations or autonomous physical Record history is selected
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

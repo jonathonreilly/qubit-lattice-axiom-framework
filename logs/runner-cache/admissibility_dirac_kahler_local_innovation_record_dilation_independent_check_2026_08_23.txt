@@ -1,0 +1,30 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_local_innovation_record_dilation_independent_check_2026_08_23.py
+runner_sha256: 89c1d8415ae5a01bb91c422e14ddda4d34c44a7f5181ba290889da9bdf912b09
+input_fingerprint_sha256: f4bef8826e508f1448e635ae05d66c7b4b3d134dd0be6598902ea54f5e57792b
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 37.76
+status: ok
+----- stdout -----
+PASS independent-local-gram: a reversed-column c=m/3 reconstruction gives exact site/edge Gram factors for all four arms
+PASS independent-partition-law: the common c^N congruence factor cancels and independently recovers the determinant arm law
+PASS independent-W-covariance: the visible covariance independently reduces to Herm(q^-1) on every arm
+PASS independent-positive-joint-table: one disjoint free slice gives a normalized positive arm/projector marked-intensity table
+PASS independent-coefficient-mutation-bounded-box: changed coefficient rows are on the cubic-graph Record star; affected residual factors inspect a coordinatewise (dt,dx)<= (2,2) box reaching graph distance four
+PASS independent-cover-locality: three disjoint covers including held-out 28 retain temporal-radius-one residual factors and temporal-radius-two expanded visible precision
+PASS independent-physical-spatial-boundary: at held-out physical width eight the innovation columns are x-radius one, q reaches two, and the expanded visible precision reaches four
+PASS independent-hidden-split-nonuniqueness: the independently compared m/3 and m/2 hidden actions differ but have the same visible covariance
+PASS independent-additive-refinement: a different exact alternative split pushes the local-action intensity forward additively
+PASS independent-zero-mass-boundary: at m=0 the positive residual variance vanishes although q remains invertible
+PASS independent-visible-twin-boundary: the visible determinant marginal independently retains the matched-blanket gap
+PASS independent-input-closure: the checker reads only the final note, its direct Block 42/174 sources, and Minimal Axioms
+per_element: reversed local Gram columns, positive remainders, projector atoms, and refinement shares are rebuilt
+per_site: four hard pins, one disjoint free slice, the Record star, and the matched visible twin are checked
+per_mode: full visible covariances, two innovation splits, and complex determinant factors are reconstructed
+per_block: four baseline arms, three independently sampled time covers, and one wider physical-x fixture are checked
+lattice_wide: checked and not executed — no physical auxiliary-to-M2(C) compiler or autonomous Record process is selected
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

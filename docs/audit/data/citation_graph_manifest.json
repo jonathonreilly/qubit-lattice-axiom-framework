@@ -1,6 +1,6 @@
 {
- "edge_count": 16127,
- "node_count": 5607,
+ "edge_count": 16129,
+ "node_count": 5608,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -677,6 +677,10 @@
   "admissibility_dirac_kahler_stationary_kernel_characterization_bounded_theorem_note_2026-08-21": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "admissibility_dirac_kahler_strict_neighbor_m2_gaussian_compiler_bounded_theorem_note_2026-08-23": {
+   "deps_hash": "fb00f5e35048",
+   "out_degree": 2
   },
   "admissibility_dirac_kahler_time_dressing_adjointness_wall_bounded_theorem_note_2026-08-17": {
    "deps_hash": "4741c3dcff39",

@@ -1799,3 +1799,70 @@ complete conditional nonlinear compact solution:
   a decisive extensional cut. After that single attempt, freeze gravity
   micro-extensions and fund the higher-fanout readout/register and chirality
   roots
+
+## Block 180 Pre-Registered Terminal Gravity Observable Contract
+
+- portfolio decision: after Block 179, a read-only five-physicist challenge
+  and two independent hostile checks reject another arbitrary-state Gaussian
+  construction as redundant with Blocks 63--68 and reject an equal-branch
+  Born proof as circular unless the missing coherent-branch/irreversible-
+  Record bridge is first derived. The highest-value executable seam is the
+  still-unrun terminal fixed-Regge pseudo-constraint observable/refinement
+  discriminator promised by Blocks 59--62. Block 74's canonical/connection
+  escape remains live if this emergent route fails
+- exact target: on the actual fifteen-edge Kuhn/Coxeter
+  Regge-plus-deficit-square action at `alpha=1/1024`, solve the current
+  fixed-metric-amplitude sourced branches, form the complete orthonormal
+  nongauge/displacement Hessian blocks, Schur-eliminate the nongauge sector,
+  and measure the inverse-amplified contribution of the dressed lifted
+  displacement sector to two conserved TT readouts and one conserved source/
+  Record readout at the fundamental and generated second harmonic
+- declared branch/source families: the literal Block-59 static-density branch
+  and the literal transverse null-Record branch, each at fixed metric response
+  amplitude `eta=10^-4`, on odd periods `L=(5,7,9,11)`. If and only if a
+  predeclared exponent guard band is inconclusive, extend once to
+  `L=(13,17)`; do not add couplings, coefficients, source directions, or
+  precision scans
+- physical readouts: for spatial momentum along the varying axis, use the
+  normalized transverse-traceless plus and cross metric covectors and the
+  branch's conserved source covector (`T_tt` for the static control and
+  `(dx+dt)^2` for the null Record branch). Construct each edge covector by the
+  metric-map dual, require exact flat displacement annihilation, and evaluate
+  it separately at harmonics one and two
+- inverse-amplification statistic: with orthonormal nongauge and displacement
+  bases `P,G`, define `H_pp=P^T H P`, `H_pg=P^T H G`,
+  `H_gg=G^T H G`, `S=H_gg-H_pg^T H_pp^-1 H_pg`, and the dressed
+  pseudo-direction map `V=G-P H_pp^-1 H_pg`. For each normalized readout `o`,
+  compare its relaxed response through the complete `(P,G)` Hessian with its
+  fixed-physical response through `H_pp`; the dimensionless absolute relative
+  difference is the primary contamination ratio. Also print `o^T V`, the
+  Schur gaps/inertia, solve residuals, and the exact block-inverse identity
+- explicit refinement: use the Parseval-normalized band-limited Fourier
+  injection that carries harmonic-one and harmonic-two edge coefficients
+  from `L` to `L'` unchanged. Gate isometry and exact intertwining of the TT
+  and conserved-source coefficient readouts. Compare only dimensionless
+  contamination ratios, so no hidden volume normalization or fitted clock
+  enters
+- acceptance: every declared readout must remain numerically resolved, its
+  flat gauge overlap and refinement-intertwining residual must be below
+  `1e-10`, and its contamination ratio must decrease with a fitted power at
+  least `k^0.75`, maximum log-fit relative residual below five percent, with
+  no tail reversal. This is a bounded positive observable-decoupling result
+  only on the two declared one-dimensional refinement families; it is not
+  angular, noncollinear, Lorentzian, selected-law, or retained TOE closure
+- kill: if any declared TT or conserved-Record readout has fitted power at
+  most `k^0.25`, or a stable nondecreasing tail after the optional extension,
+  the fixed-action controlled-emergent route fails its promised terminal
+  acceptance test. `0.25<p<0.75`, a fit residual above five percent, a
+  singular unresolved block, or amplitude nonhomogeneity is `INCONCLUSIVE`,
+  not a negative. A negative retires only this source/action/refinement/
+  observable contract and promotes Block 74's canonical constraint reduction,
+  connection/holonomy, improved/perfect, and Pachner/tent routes under the
+  no-go-discipline N1--N8 gate; it is never called gravity failure
+- amplitude control: at `L=7,11`, repeat the primary ratios at `eta/2` and
+  `2 eta`; require stable sign/classification and report the fitted amplitude
+  power. Failure is machinery/inconclusive rather than route-negative
+- artifacts: one new theorem-or-boundary note, one new runner, one input-
+  pinned cache, and this pre-registration. Do not edit canonical axioms,
+  audit surfaces, the citation manifest, Block 179 files, or the other
+  worker's Block-44 pincer files; no `review-loop` is used

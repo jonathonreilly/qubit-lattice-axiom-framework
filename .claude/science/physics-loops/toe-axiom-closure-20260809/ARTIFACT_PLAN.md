@@ -1799,3 +1799,158 @@ complete conditional nonlinear compact solution:
   a decisive extensional cut. After that single attempt, freeze gravity
   micro-extensions and fund the higher-fanout readout/register and chirality
   roots
+
+## Block 180 Pre-Registered Terminal Gravity Observable Contract
+
+- portfolio decision: after Block 179, a read-only five-physicist challenge
+  and two independent hostile checks reject another arbitrary-state Gaussian
+  construction as redundant with Blocks 63--68 and reject an equal-branch
+  Born proof as circular unless the missing coherent-branch/irreversible-
+  Record bridge is first derived. The highest-value executable seam is the
+  still-unrun terminal fixed-Regge pseudo-constraint observable/refinement
+  discriminator promised by Blocks 59--62. Block 74's canonical/connection
+  escape remains live if this emergent route fails
+- exact target: on the actual fifteen-edge Kuhn/Coxeter
+  Regge-plus-deficit-square action at `alpha=1/1024`, solve the current
+  fixed-metric-amplitude sourced branches, form the complete orthonormal
+  nongauge/displacement Hessian blocks, Schur-eliminate the nongauge sector,
+  and measure the inverse-amplified contribution of the dressed lifted
+  displacement sector to two conserved TT readouts and one conserved source/
+  Record readout at the fundamental and generated second harmonic
+- declared branch/source families: the literal Block-59 static-density branch
+  and the literal transverse null-Record branch, each at fixed metric response
+  amplitude `eta=10^-4`, on odd periods `L=(5,7,9,11)`. If and only if a
+  predeclared exponent guard band is inconclusive, extend once to
+  `L=(13,17)`; do not add couplings, coefficients, source directions, or
+  precision scans
+- physical readouts: for spatial momentum along the varying axis, use the
+  normalized transverse-traceless plus and cross metric covectors and the
+  branch's conserved source covector (`T_tt` for the static control and
+  `(dx+dt)^2` for the null Record branch). Construct each edge covector by the
+  metric-map dual, require exact flat displacement annihilation, and evaluate
+  it separately at harmonics one and two
+- inverse-amplification statistic: with orthonormal nongauge and displacement
+  bases `P,G`, define `H_pp=P^T H P`, `H_pg=P^T H G`,
+  `H_gg=G^T H G`, `S=H_gg-H_pg^T H_pp^-1 H_pg`, and the dressed
+  pseudo-direction map `V=G-P H_pp^-1 H_pg`. For each normalized readout `o`,
+  compare its relaxed response through the complete `(P,G)` Hessian with its
+  fixed-physical response through `H_pp`; the dimensionless absolute relative
+  difference is the primary contamination ratio. Also print `o^T V`, the
+  Schur gaps/inertia, solve residuals, and the exact block-inverse identity
+- explicit refinement: use the Parseval-normalized band-limited Fourier
+  injection that carries harmonic-one and harmonic-two edge coefficients
+  from `L` to `L'` unchanged. Gate isometry and exact intertwining of the TT
+  and conserved-source coefficient readouts. Compare only dimensionless
+  contamination ratios, so no hidden volume normalization or fitted clock
+  enters
+- acceptance: every declared readout must remain numerically resolved, its
+  flat gauge overlap and refinement-intertwining residual must be below
+  `1e-10`, and its contamination ratio must decrease with a fitted power at
+  least `k^0.75`, maximum log-fit relative residual below five percent, with
+  no tail reversal. This is a bounded positive observable-decoupling result
+  only on the two declared one-dimensional refinement families; it is not
+  angular, noncollinear, Lorentzian, selected-law, or retained TOE closure
+- kill: if any declared TT or conserved-Record readout has fitted power at
+  most `k^0.25`, or a stable nondecreasing tail after the optional extension,
+  the fixed-action controlled-emergent route fails its promised terminal
+  acceptance test. `0.25<p<0.75`, a fit residual above five percent, a
+  singular unresolved block, or amplitude nonhomogeneity is `INCONCLUSIVE`,
+  not a negative. A negative retires only this source/action/refinement/
+  observable contract and promotes Block 74's canonical constraint reduction,
+  connection/holonomy, improved/perfect, and Pachner/tent routes under the
+  no-go-discipline N1--N8 gate; it is never called gravity failure
+- amplitude control: at `L=7,11`, repeat the primary ratios at `eta/2` and
+  `2 eta`; require stable sign/classification and report the fitted amplitude
+  power. Failure is machinery/inconclusive rather than route-negative
+- artifacts: one new theorem-or-boundary note, one new runner, one input-
+  pinned cache, and this pre-registration. Do not edit canonical axioms,
+  audit surfaces, the citation manifest, Block 179 files, or the other
+  worker's Block-44 pincer files; no `review-loop` is used
+
+## Block 180 Independent-Audit Correction And Selector Boundary Addendum
+
+- trigger: before publication, two independent read-only audits found that
+  the first implementation's `E_(L') pinv(E_L)` certificate makes coefficient
+  transport and dual pullback tautological rather than testing the promised
+  isometry. They also exhibited the five-dimensional ambiguity
+  `o -> o+n`, `n in ker(M^dagger)`, in every edge lift of one metric TT/source
+  covector. The same metric tensor and exact flat-gauge annihilation can give
+  sharply different inverse-amplification ratios. Under the original contract
+  this is a machinery/physical-typing failure, so the provisional `KILL` is
+  void and the terminal verdict is `INCONCLUSIVE`
+- efficiency pivot: stop exponent and amplitude extension as a route decision.
+  Preserve those values only as convention-scoped diagnostics for the
+  Euclidean Moore--Penrose lift. Do not call their growth a fixed-Regge route
+  retirement and do not tune the lift to recover a preferred result
+- corrected exact target: characterize whether the current source/action data
+  select (i) an edge representative of a physical metric/Record observable and
+  (ii) one refinement norm/map. If not, expose explicit positive and negative
+  terminal readings inside the unselected equivalence class and state the
+  smallest missing downstream-law field
+- lift test: at the committed `L=5` static and null-Record fixtures and both
+  harmonics, compute `dim ker(M^dagger)`, verify every deterministic SVD-kernel
+  shift preserves `M^dagger o=t` and flat displacement annihilation, and
+  compare the Schur inverse-amplification ratio at shift coefficients
+  `0,1,10`. Separately solve the linear dressed-overlap cancellation problem;
+  report a zero-contamination lift only as a nonselection witness, never as a
+  physical repair
+- refinement test: for consecutive `L=(5,7,9,11)` pairs and harmonics one and
+  two, compare the Gram forms of the same twenty real metric Fourier
+  coefficients. Exact identity-coefficient transport is an isometry in the
+  standard edge norm iff the generalized Gram spectrum is identically one.
+  Also verify the independent raw-edge Parseval injection is isometric and
+  measure its failure to intertwine the momentum-dependent metric encoder.
+  A selected weighted norm may remain live, but inserting one is new law data
+- raw/numerical guards: retain the unsymmetrized Hessian asymmetry, phasewise
+  generalized response ratios (not only a ratio of operator norms), solve
+  residuals, fixed-average qualifier, and the exact Schur block identity on
+  numerically resolved fixtures
+- decision rule: if observable lifts or refinement norms give inequivalent
+  terminal readings while all stated metric/source/gauge identities remain
+  unchanged, classify the promised terminal acceptance test as `BLOCKED BY
+  UNSELECTED PHYSICAL QUOTIENT/REFINEMENT DATA`. This is a positive
+  nonselection theorem and an axiom/law issue identification, not gravity
+  failure, not a fixed-Regge kill, and not TOE percentage movement
+- minimal owner object: a candidate gravity law must supply a physical
+  reduction/section, or an inner product inducing one, that makes the response
+  descend or selects an edge representative, plus a directed
+  refinement/coarse-graining map satisfying source/Record and observable
+  pullback plus state/update convergence. Only after those fields are selected
+  may the inverse-amplification exponent be used as a terminal pass/kill gate.
+  Whether those fields are derived downstream or adopted in Admissibility is
+  an owner decision; no canonical axiom edit is licensed by this block
+- cold-check correction before caching: phase-fixing one SciPy SVD null-space
+  column does not remove the residual `U(5)` basis freedom, so void its
+  provisional shift figures. Replace it by the normalized orthogonal
+  projection of the fixed lexicographically first `DIRS15` edge coordinate
+  into `ker(M^dagger)`. This direction depends only on the basis-invariant
+  kernel projector and the repository's pre-existing edge order, not on the
+  inverse-response result. Re-run all selector checks and mutations before
+  recording execution evidence
+- corrected route consequence: the invariant rerun passes and Block 180
+  retires no gravity route. It blocks
+  the terminal discriminator until a physical quotient/refinement law is
+  derived, keeps the Moore--Penrose growth only as a warning diagnostic, and
+  ranks canonical constraint reduction of the Block-74 source-bearing action
+  above further period fitting. TOE accounting remains zero obligation
+  retirement, zero percentage movement, and zero axiom amendments
+- final invariant execution evidence: primary `PASS=7 FAIL=0` in about nine
+  seconds with `5,574` characters of stdout. The basis-invariant projected-edge
+  witness gives subdominant/dominant flips on all `8/8` TT fibers; the four
+  source-tensor readout candidates also flip but are not used to carry the
+  primary blocker. TT spread is at least `10.470`; the complete twelve-fiber
+  spread is `9.614--4.77e6`. The raw-band injection passes the conservative
+  numerical-isometry gate, while metric Gram deviations remain
+  `0.0136--0.3246` and encoder defects `0.0512--0.2744`
+- final typing correction: Block 59 already inserts the Moore--Penrose full
+  edge source as a reproducible computational convention. Block 180 does not
+  vary that branch source and does not claim the full source is unselected; it
+  proves that the convention lacks a physical derivation and that the TT /
+  Record-readout extension is not selected. The missing object is a physical
+  reduction/section, or an inner product inducing one, that either makes the
+  response descend or selects a lift, together with the directed refinement
+  law
+- adversarial controls: seven named evidence perturbations each exit nonzero
+  with exactly one intended failed aggregate; these mutate raw-Hessian
+  metadata, lift rank, lift ratios, cancellation response, refinement data,
+  Schur-identity residual, and note content rather than bypassing the checks

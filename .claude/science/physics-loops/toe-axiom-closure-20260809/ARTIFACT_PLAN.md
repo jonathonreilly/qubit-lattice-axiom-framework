@@ -1912,7 +1912,8 @@ complete conditional nonlinear compact solution:
   nonselection theorem and an axiom/law issue identification, not gravity
   failure, not a fixed-Regge kill, and not TOE percentage movement
 - minimal owner object: a candidate gravity law must supply a physical
-  quotient/inner product selecting the edge representative and a directed
+  reduction/section, or an inner product inducing one, that makes the response
+  descend or selects an edge representative, plus a directed
   refinement/coarse-graining map satisfying source/Record and observable
   pullback plus state/update convergence. Only after those fields are selected
   may the inverse-amplification exponent be used as a terminal pass/kill gate.
@@ -1926,10 +1927,30 @@ complete conditional nonlinear compact solution:
   kernel projector and the repository's pre-existing edge order, not on the
   inverse-response result. Re-run all selector checks and mutations before
   recording execution evidence
-- corrected route consequence if the invariant rerun passes: Block 180
+- corrected route consequence: the invariant rerun passes and Block 180
   retires no gravity route. It blocks
   the terminal discriminator until a physical quotient/refinement law is
   derived, keeps the Moore--Penrose growth only as a warning diagnostic, and
   ranks canonical constraint reduction of the Block-74 source-bearing action
   above further period fitting. TOE accounting remains zero obligation
   retirement, zero percentage movement, and zero axiom amendments
+- final invariant execution evidence: primary `PASS=7 FAIL=0` in about nine
+  seconds with `5,574` characters of stdout. The basis-invariant projected-edge
+  witness gives subdominant/dominant flips on all `8/8` TT fibers; the four
+  source-tensor readout candidates also flip but are not used to carry the
+  primary blocker. TT spread is at least `10.470`; the complete twelve-fiber
+  spread is `9.614--4.77e6`. The raw-band injection passes the conservative
+  numerical-isometry gate, while metric Gram deviations remain
+  `0.0136--0.3246` and encoder defects `0.0512--0.2744`
+- final typing correction: Block 59 already inserts the Moore--Penrose full
+  edge source as a reproducible computational convention. Block 180 does not
+  vary that branch source and does not claim the full source is unselected; it
+  proves that the convention lacks a physical derivation and that the TT /
+  Record-readout extension is not selected. The missing object is a physical
+  reduction/section, or an inner product inducing one, that either makes the
+  response descend or selects a lift, together with the directed refinement
+  law
+- adversarial controls: seven named evidence perturbations each exit nonzero
+  with exactly one intended failed aggregate; these mutate raw-Hessian
+  metadata, lift rank, lift ratios, cancellation response, refinement data,
+  Schur-identity residual, and note content rather than bypassing the checks

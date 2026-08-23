@@ -1918,3 +1918,18 @@ complete conditional nonlinear compact solution:
   may the inverse-amplification exponent be used as a terminal pass/kill gate.
   Whether those fields are derived downstream or adopted in Admissibility is
   an owner decision; no canonical axiom edit is licensed by this block
+- cold-check correction before caching: phase-fixing one SciPy SVD null-space
+  column does not remove the residual `U(5)` basis freedom, so void its
+  provisional shift figures. Replace it by the normalized orthogonal
+  projection of the fixed lexicographically first `DIRS15` edge coordinate
+  into `ker(M^dagger)`. This direction depends only on the basis-invariant
+  kernel projector and the repository's pre-existing edge order, not on the
+  inverse-response result. Re-run all selector checks and mutations before
+  recording execution evidence
+- corrected route consequence if the invariant rerun passes: Block 180
+  retires no gravity route. It blocks
+  the terminal discriminator until a physical quotient/refinement law is
+  derived, keeps the Moore--Penrose growth only as a warning diagnostic, and
+  ranks canonical constraint reduction of the Block-74 source-bearing action
+  above further period fitting. TOE accounting remains zero obligation
+  retirement, zero percentage movement, and zero axiom amendments

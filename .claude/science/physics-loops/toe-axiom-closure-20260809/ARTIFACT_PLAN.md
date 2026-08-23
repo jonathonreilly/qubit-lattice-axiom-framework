@@ -1866,3 +1866,55 @@ complete conditional nonlinear compact solution:
   pinned cache, and this pre-registration. Do not edit canonical axioms,
   audit surfaces, the citation manifest, Block 179 files, or the other
   worker's Block-44 pincer files; no `review-loop` is used
+
+## Block 180 Independent-Audit Correction And Selector Boundary Addendum
+
+- trigger: before publication, two independent read-only audits found that
+  the first implementation's `E_(L') pinv(E_L)` certificate makes coefficient
+  transport and dual pullback tautological rather than testing the promised
+  isometry. They also exhibited the five-dimensional ambiguity
+  `o -> o+n`, `n in ker(M^dagger)`, in every edge lift of one metric TT/source
+  covector. The same metric tensor and exact flat-gauge annihilation can give
+  sharply different inverse-amplification ratios. Under the original contract
+  this is a machinery/physical-typing failure, so the provisional `KILL` is
+  void and the terminal verdict is `INCONCLUSIVE`
+- efficiency pivot: stop exponent and amplitude extension as a route decision.
+  Preserve those values only as convention-scoped diagnostics for the
+  Euclidean Moore--Penrose lift. Do not call their growth a fixed-Regge route
+  retirement and do not tune the lift to recover a preferred result
+- corrected exact target: characterize whether the current source/action data
+  select (i) an edge representative of a physical metric/Record observable and
+  (ii) one refinement norm/map. If not, expose explicit positive and negative
+  terminal readings inside the unselected equivalence class and state the
+  smallest missing downstream-law field
+- lift test: at the committed `L=5` static and null-Record fixtures and both
+  harmonics, compute `dim ker(M^dagger)`, verify every deterministic SVD-kernel
+  shift preserves `M^dagger o=t` and flat displacement annihilation, and
+  compare the Schur inverse-amplification ratio at shift coefficients
+  `0,1,10`. Separately solve the linear dressed-overlap cancellation problem;
+  report a zero-contamination lift only as a nonselection witness, never as a
+  physical repair
+- refinement test: for consecutive `L=(5,7,9,11)` pairs and harmonics one and
+  two, compare the Gram forms of the same twenty real metric Fourier
+  coefficients. Exact identity-coefficient transport is an isometry in the
+  standard edge norm iff the generalized Gram spectrum is identically one.
+  Also verify the independent raw-edge Parseval injection is isometric and
+  measure its failure to intertwine the momentum-dependent metric encoder.
+  A selected weighted norm may remain live, but inserting one is new law data
+- raw/numerical guards: retain the unsymmetrized Hessian asymmetry, phasewise
+  generalized response ratios (not only a ratio of operator norms), solve
+  residuals, fixed-average qualifier, and the exact Schur block identity on
+  numerically resolved fixtures
+- decision rule: if observable lifts or refinement norms give inequivalent
+  terminal readings while all stated metric/source/gauge identities remain
+  unchanged, classify the promised terminal acceptance test as `BLOCKED BY
+  UNSELECTED PHYSICAL QUOTIENT/REFINEMENT DATA`. This is a positive
+  nonselection theorem and an axiom/law issue identification, not gravity
+  failure, not a fixed-Regge kill, and not TOE percentage movement
+- minimal owner object: a candidate gravity law must supply a physical
+  quotient/inner product selecting the edge representative and a directed
+  refinement/coarse-graining map satisfying source/Record and observable
+  pullback plus state/update convergence. Only after those fields are selected
+  may the inverse-amplification exponent be used as a terminal pass/kill gate.
+  Whether those fields are derived downstream or adopted in Admissibility is
+  an owner decision; no canonical axiom edit is licensed by this block

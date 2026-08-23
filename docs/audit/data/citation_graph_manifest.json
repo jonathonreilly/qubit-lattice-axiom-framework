@@ -1,6 +1,6 @@
 {
  "edge_count": 16109,
- "node_count": 5606,
+ "node_count": 5607,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -597,6 +597,10 @@
   "admissibility_dirac_kahler_quotient_observable_obstruction_bounded_theorem_note_2026-08-16": {
    "deps_hash": "36a014d4d7f1",
    "out_degree": 3
+  },
+  "admissibility_dirac_kahler_rank_two_scalar_transport_counterexample_bounded_theorem_note_2026-08-23": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_dirac_kahler_refinement_census_stationary_kernel_bounded_theorem_note_2026-08-21": {
    "deps_hash": "e3b0c44298fc",

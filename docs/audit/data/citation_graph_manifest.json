@@ -1,6 +1,6 @@
 {
- "edge_count": 16114,
- "node_count": 5605,
+ "edge_count": 16120,
+ "node_count": 5606,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -573,6 +573,10 @@
   "admissibility_dirac_kahler_paired_floor_refutation_mixed_circle_bounded_theorem_note_2026-08-15": {
    "deps_hash": "26cdf7e4282e",
    "out_degree": 4
+  },
+  "admissibility_dirac_kahler_pin_faithful_joint_sector_action_bounded_theorem_note_2026-08-23": {
+   "deps_hash": "7ef2a768d071",
+   "out_degree": 6
   },
   "admissibility_dirac_kahler_pincer_identity_cross_lane_bounded_theorem_note_2026-08-22": {
    "deps_hash": "e3b0c44298fc",

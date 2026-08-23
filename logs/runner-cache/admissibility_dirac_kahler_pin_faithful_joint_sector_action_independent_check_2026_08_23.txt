@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_pin_faithful_joint_sector_action_independent_check_2026_08_23.py
+runner_sha256: eb71ff15d625d46857044843d7b6997e0b5bb3a9139aa90d300afb6e5958ca38
+input_fingerprint_sha256: 729d6309fa9622dffc19b10d276e544558544ca60fa50518f1c863cd70f6ae3c
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 12.34
+status: ok
+----- stdout -----
+PASS independent-positive-product-sectors: four independently inverted W kernels give the same positive q^dagger S^-1 q precision beside positive S
+PASS independent-determinant-cancellation: the product-sector determinant independently reduces to |det q_a|^2 at every hard pin
+PASS independent-joint-law: the independently rebuilt P(a,j) is positive, normalized, and has the determinant arm marginal
+PASS independent-source-normalization-price: the unnormalized source shifts the arm law, while the inverse-trace scalar restores identity certainty sector by sector
+PASS independent-base-measure-refinement: a second split ratio independently confirms that only additive base-measure refinement preserves the law
+PASS independent-fixed-default-separation: the true total-probability marginal independently differs from the default-pin density in all four entries
+PASS independent-endpoint-exposure: the independently reconstructed proper effect exposes only the default W state among eight positive endpoint states
+PASS independent-spectator-nonuniqueness: a second unit-determinant congruence gives a distinct positive compensator with the same partition factor
+PASS independent-cover-range-tradeoff: three independently rebuilt default-carrier covers keep native actions bounded-range while K_W reaches half-cover
+PASS independent-zero-mass-edge: the W/S product stops at zero mass while the local modulus completion remains exact and positive
+PASS independent-input-closure: the checker reads only the final note, Minimal Axioms, and its direct Block 174 action fixture
+per_element: independent alternative-effect atoms, source scales, endpoint witnesses, and refinement shares are reconstructed
+per_site: four hard pins, one response slice, the fixed-default profile, and one different exact split ratio are checked
+per_mode: full 24-mode positive product sectors, modulus controls, determinant factors, and source covariances are checked
+per_block: four baseline sectors and three independently rebuilt default-carrier cover extents certify the range tradeoff
+lattice_wide: checked and not executed — no physical alternative base measure, nearest-neighbor law, or Record process is selected
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

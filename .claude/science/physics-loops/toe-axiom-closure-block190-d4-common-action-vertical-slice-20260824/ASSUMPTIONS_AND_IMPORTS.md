@@ -17,3 +17,13 @@
   and certified inertia/rank carry every claim.
 - A hand-chosen eigenvector, fitted source, or Record map selected after seeing
   the response cannot count as a physical survivor.
+- The 24 proper-cubic transforms and time reflection are checked only on the
+  declared body-momentum fixture and its orbit; no all-momentum covariance
+  theorem is imported or claimed.
+- The displayed candidate marks preserve form degree.  Their exact blindness
+  to the degree-changing derivative/recoil vertex is a result, not a Record
+  postulate.
+- PR #7351 supplies an exact windowed positive two-history Gram on Block 107's
+  seam-glued carrier.  That carrier is explicitly different from the Block-128
+  chart family and from this new 4D exterior carrier; compatibility must be
+  proved rather than assumed.

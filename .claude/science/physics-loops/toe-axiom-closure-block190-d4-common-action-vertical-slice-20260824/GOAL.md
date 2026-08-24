@@ -19,3 +19,21 @@ must localize the first empty interface after N1--N8 and may justify an axiom
 issue only if all materially different physical routes remain blocked.  No
 TOE percentage movement, obligation retirement, or axiom amendment is
 preregistered.
+
+## Result
+
+The capped Schur gate unlocked: the complete five-band action has exact
+positive reflection-even left and right stationary ports on both declared
+frames.  Its inherited frozen spatial-shift test fails exactly, so the seam
+route stopped at the intended cap.
+
+The 4D action then survived finite locality, exact total first-order Ward /
+recoil cancellation, cubic and time-reflection covariance on the declared
+fixture orbit, positive gravity
+TT rank two, and DK vertex-image rank two.  It did **not** complete the
+Record-facing conjunction.  The candidate seven-context trace probes see only
+the mass--Hodge component and are exactly blind to the derivative/recoil
+component; no matter state, connected source, selected context, or permanent
+write was built.  The new action also remains unported to the earlier curved
+history carriers.  Result: substantial upstream route confidence, zero
+obligation retirement, zero TOE movement, and no axiom amendment.

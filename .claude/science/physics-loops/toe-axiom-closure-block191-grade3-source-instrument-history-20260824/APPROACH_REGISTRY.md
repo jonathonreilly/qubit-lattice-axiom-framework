@@ -28,9 +28,11 @@ by tensoring with the two spectator vacua.  This canonical map must intertwine
 
 For the Block-128 comparison, use its landed `cover_embedding()` and
 `chart_differential_cover()` literally.  Its displayed column order maps the
-ordered form basis `(1,e_x,e_t,e_t wedge e_x)` to the `(time,space)` fine-cell
+ordered form basis `(1,e_x,e_t,e_x wedge e_t)` to the `(time,space)` fine-cell
 offsets `(0,0),(0,1),(1,0),(1,1)`, with the wedge-orientation sign forced by
-`c_t c_x=-c_x c_t`.  No permutation, diagonal phase, or similarity may be
+`c_t c_x=-c_x c_t`.  This sign is pinned independently by the landed local
+matrices: `EX` creates `e_x` and sends `e_t` to `e_x wedge e_t`, while `ET`
+creates `e_t` and sends `e_x` to `-e_x wedge e_t`.  No permutation, diagonal phase, or similarity may be
 solved from the target action.  Require one map to intertwine the
 action, reflected history support, Hodge vertex, and Ward/recoil object.  The
 first invariant mismatch stops this route.

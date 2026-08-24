@@ -12,6 +12,9 @@
   not this campaign's result.
 - Before executing the carrier response, the landed Block-128
   `cover_embedding()` column convention corrected the preregistered prose to
-  `(scalar,space,time,time wedge space)` at offsets
+  `(scalar,space,time,space wedge time)` at offsets
   `((0,0),(0,1),(1,0),(1,1))`; no target residual had yet been computed.
+- The wedge sign was then fixed by matching Block 128's landed `EX/ET`
+  creation matrices to the restricted exterior creation operators, still
+  before any action, reflection, Hodge, or Ward target residual was evaluated.
 - No review-loop or audit verdict has been run.

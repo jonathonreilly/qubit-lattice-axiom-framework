@@ -1,6 +1,6 @@
 {
- "edge_count": 16137,
- "node_count": 5617,
+ "edge_count": 16139,
+ "node_count": 5618,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -681,6 +681,10 @@
   "admissibility_dirac_kahler_spatial_dressing_invisibility_bounded_theorem_note_2026-08-17": {
    "deps_hash": "4f42ef355ca6",
    "out_degree": 4
+  },
+  "admissibility_dirac_kahler_stage_exchange_positive_dressing_source_port_boundary_bounded_theorem_note_2026-08-24": {
+   "deps_hash": "991b3729cc56",
+   "out_degree": 2
   },
   "admissibility_dirac_kahler_staggered_hermitian_pairing_bounded_theorem_note_2026-08-19": {
    "deps_hash": "2ea7b3c53db9",

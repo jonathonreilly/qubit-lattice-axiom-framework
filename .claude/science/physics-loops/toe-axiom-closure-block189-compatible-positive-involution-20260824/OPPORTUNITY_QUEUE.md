@@ -1,18 +1,19 @@
 # Opportunity Queue
 
-1. Derive the exact equivalence between dressed stage exchange and commutation
-   of the dressing with the Block-188 frame grading.
-2. Derive the grading character of `B S Qcal^-1` and its restriction to the
-   doubled negative-history space.
-3. Prove the Hermitian chiral-spectrum lemma and certify the fixture is nonzero
-   or nonsingular.
-4. Enumerate minimal, preregistered source-port compressions that break the
-   chiral pairing without post-selecting eigenvectors.
-5. Only if the direct theorem leaves ambiguity, solve the full doubled dressing
-   equations numerically then exactify a survivor.
-6. Reproduce the Block-114 33/32-dimensional proxy only as a control and state
-   its distinct carrier and propagator every time.
-7. If a positive source port exists, intersect total Ward/recoil and
-   gravity-source rank before any Record claim.
-8. Reconvene the independent portfolio panel at a decisive survivor-count
-   change or the two-hour backstop.
+1. Hard-cap the common-frame regression at one to two hours.  Rebuild #7350's
+   temporal transporter on the Block-188 full-orbit frame, preserving its
+   opposite band-label convention explicitly.
+2. Account for the live distance-two bands by constructing a preregistered
+   two-slice/supercell Schur port before inspecting its Gram.
+3. Test exact reflection pairing, inherited spatial equivariance,
+   Hermiticity, and positivity on both spatial eigenlines.
+4. Whether that gate passes or localizes a `d=2` wall, move to Block 187's
+   genuine four-dimensional finite-Laurent common-action solve; do not ask the
+   zero-TT `d=2` fixture for propagating gravity-source rank.
+5. On the four-dimensional survivor, gate the nonlinear DK vertex, total
+   Ward/recoil, nonzero TT-source rank, and Record-readable rank on one map.
+6. Only then extend the positive-time span and test adjacent permanent writes.
+7. Keep `A_Z`, matrix graph ports, and Block-114 dressings as solver controls;
+   do not promote any of them to a physical law without independent selection.
+8. Reconvene the independent portfolio panel at the common-frame Gram result
+   or the two-hour backstop.

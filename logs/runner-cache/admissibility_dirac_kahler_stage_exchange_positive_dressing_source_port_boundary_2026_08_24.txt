@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_stage_exchange_positive_dressing_source_port_boundary_2026_08_24.py
+runner_sha256: 409b185128c8f3ba628a5252d3faa56b3a7dd982d08090fabe0e46a1cb1364ee
+input_fingerprint_sha256: af6fa3b99606a2944bdad2c9fcf5554e5975d7a6fbd94e34c43547033062b593
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 51.60
+status: ok
+----- stdout -----
+[PASS] A: fresh authority, exact repaired-parent pins, and all declared inputs
+[PASS] B: the doubled action has an honest stage-exchanging reflection and invariant history support
+[PASS] C: two distinct closed frames have nonzero Hermitian grading-odd history kernels
+[PASS] D: exact positive pure-preserving and mixed-stage involutions exist, with the pure witness failing tested doubled-shift commutators
+[PASS] E: every scalar graph with z nonzero has a nonzero traceless form, so none is positive semidefinite
+[PASS] F: two matrix graph ports are exactly positive but grading-mixing and fail inherited diagonal spatial equivariance
+[PASS] G: the note carries N1-N8, N5, named fixtures, and falsifiable TOE scope
+per_element: checked the exact doubled reflection, action, grading, dressings, and Gram entries.
+per_site: checked the declared two-slice AP history support in both frames and both graph ports.
+per_mode: checked the full stage-grading pair and the eight-dimensional graph-port fibers exactly.
+per_block: checked the raw off-diagonal block, the positive factorization, and both shift commutators exactly.
+lattice_wide: checked and not executed — no width ladder, long-history OS reconstruction, gravity quotient, or Record write is claimed.
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

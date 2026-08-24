@@ -1,6 +1,6 @@
 {
  "edge_count": 16109,
- "node_count": 5614,
+ "node_count": 5615,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -653,6 +653,10 @@
   "admissibility_dirac_kahler_seam_dressing_sector_signature_bounded_theorem_note_2026-08-15": {
    "deps_hash": "8e68e06c11b5",
    "out_degree": 4
+  },
+  "admissibility_dirac_kahler_section_frame_inertia_wall_bounded_theorem_note_2026-08-24": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_dirac_kahler_self_chart_emptiness_stationarity_bounded_theorem_note_2026-08-16": {
    "deps_hash": "ae8f03ee0b5d",

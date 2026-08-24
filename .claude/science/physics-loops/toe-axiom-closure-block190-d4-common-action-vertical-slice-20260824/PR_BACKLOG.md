@@ -14,3 +14,6 @@ Refresh the live PRs before every packaging decision.
 
 Packaging refresh on 2026-08-24: #7349, #7350, #7351, and #7352 are OPEN and
 CLEAN.
+
+- PR #7354 is the proposed Block-190 result, stacked exactly on Block 189.
+  Landing and audit remain outside this campaign.

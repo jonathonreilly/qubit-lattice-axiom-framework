@@ -28,3 +28,5 @@
   returned `PASS=6 FAIL=1` with exactly their mapped family failing.  The
   canonical cache and citation graph were regenerated after the final scope
   corrections.
+- PR #7354 opened as the proposed bounded theorem, stacked on Block 189.  No
+  landing or review-loop action was taken.

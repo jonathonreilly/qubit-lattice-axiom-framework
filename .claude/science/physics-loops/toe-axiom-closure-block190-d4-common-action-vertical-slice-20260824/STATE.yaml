@@ -1,5 +1,6 @@
 campaign: toe-axiom-closure-block190-d4-common-action-vertical-slice-20260824
-status: validated_bounded_theorem_packaging
+status: proposed_pr_open
+pull_request: 7354
 parent_commit: 98d544ae8e94a78d986c96c65cfe3f588801ba3e
 origin_main: c79384cb8ffa27fcb53cb89c53a84a708442eaad
 active_gate: complete_d4_first_order_common_action_slice

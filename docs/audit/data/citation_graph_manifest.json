@@ -1,6 +1,6 @@
 {
- "edge_count": 16127,
- "node_count": 5615,
+ "edge_count": 16133,
+ "node_count": 5616,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -372,6 +372,10 @@
   },
   "admissibility_code_swap_cut_area_local_source_improvement_metric_response_axiom_boundary_bounded_theorem_note_2026-08-10": {
    "deps_hash": "f766b94ee65c",
+   "out_degree": 6
+  },
+  "admissibility_common_action_stationarity_gravity_stage_orientation_boundary_bounded_theorem_note_2026-08-24": {
+   "deps_hash": "878511b91ae5",
    "out_degree": 6
   },
   "admissibility_common_metric_tt_os_one_two_step_hankel_obstruction_axiom_boundary_bounded_theorem_note_2026-08-11": {

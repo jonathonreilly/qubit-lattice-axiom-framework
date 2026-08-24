@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_common_action_stationarity_gravity_stage_orientation_boundary_2026_08_24.py
+runner_sha256: 15912628c543fdfbcc96bec39f1752c73409e30b419ada5ad573f317dbca0daa
+input_fingerprint_sha256: 3d3f9b0ad8afb3186e409f99c13c20719f336bf063a67e761ec7442e689d3bd2
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 11.15
+status: ok
+----- stdout -----
+[PASS] A: current authority, exact Block-186 parent, and ten frozen science inputs
+[PASS] B: positive-mass AP stationarity kills only the vacuum cross Hessian; vertex and sourced/singular escapes live
+[PASS] C: nineteen exact coefficient equations force the canonical incidence gravity class up to c1
+[PASS] D: all eight Nyquist strata are rank-classified; every nonzero-spatial class has two positive TT directions
+[PASS] E: constraint cadence is (2,0); fixed stage reflection fails and epsilon_R exchange-covariantly repairs it
+[PASS] F: the landing note carries the full N1-N8 gate and every N5 execution resolution
+[PASS] G: outcome remains unresolved with no axiom amendment, obligation retirement, or TOE movement
+per_element: checked the exact field-charge typing, positive-mass coercivity identity, and zero-background mixed derivative.
+per_site: checked bounded local Hodge blocks and a nonzero local action vertex; a permanent Record write was not executed.
+per_mode: checked the full 16-dimensional antiperiodic action and the exact generic polynomial gravity identities.
+per_block: checked all eight Nyquist rank strata and the two-stage cadence/reflection coefficient system exactly.
+lattice_wide: checked and not executed — no width ladder, arbitrary-history law, global OS reconstruction, or refinement theorem was run.
+GATES A=PASS B=PASS C=PASS D=PASS E=PASS F=PASS G=PASS
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

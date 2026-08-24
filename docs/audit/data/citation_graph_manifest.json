@@ -1,6 +1,6 @@
 {
- "edge_count": 16115,
- "node_count": 5612,
+ "edge_count": 16116,
+ "node_count": 5613,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -905,6 +905,10 @@
   "admissibility_record_worldline_conserved_stress_two_tt_lorentzian_cfl_locality_lstar_boundary_bounded_theorem_note_2026-08-11": {
    "deps_hash": "e7e50d2b447e",
    "out_degree": 6
+  },
+  "admissibility_reflected_curvature_action_glued_matrix_gns_unitary_boundary_bounded_theorem_note_2026-08-24": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "admissibility_reflected_curvature_action_record_source_two_step_transfer_boundary_bounded_theorem_note_2026-08-14": {
    "deps_hash": "955b4d89980a",

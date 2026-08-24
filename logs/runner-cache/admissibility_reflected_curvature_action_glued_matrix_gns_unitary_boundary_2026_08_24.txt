@@ -1,0 +1,44 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_reflected_curvature_action_glued_matrix_gns_unitary_boundary_2026_08_24.py
+runner_sha256: 86d1738e7aa4f8272f92d4ebc83e970414906fea705ff39c3a28e6b92265caf8
+input_fingerprint_sha256: a9f479267320d27a1e0bcb74639cb0162693de8d6784c139dc2f84b425032e67
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 4.26
+status: ok
+----- stdout -----
+[PASS] supplied-action-ward-border-binding: the supplied action, odd six-edge sector, one-Ward border, and TT source are recomputed ...
+       leak=8.15e-17; pair=8.66e-17; Ward=3.24e-16; ranks=(18, 18, 18, 18)
+[PASS] global-edge-action-rank-five-positivity: a degree-four Bernstein certificate and exact Ward convolution prove the edge action is ...
+       e5 Bernstein=[297.276054 200.902897 125.379471  70.672562  36.748943]; Ward=2.48e-15/3.48e-15; base=(0, 5, 1)
+[PASS] global-bordered-invertibility-and-constraint-coupling: a degree-seven Bernstein certificate proves the Ward-bordered symbol has no unit-circle ...
+       -det Bernstein=[756.22856 314.82223 118.29669  53.8952   50.18447  66.42588  81.98043
+  85.74753]; sigma_min=0.165558; |det|min=68.876941
+[PASS] full-matrix-edge-covariance-and-ward-radical: the inverse bordered edge block is PSD rank five for every frequency and its radical is ...
+       positive eig=[0.10622856,5.84606732]; C*l=2.15e-16; formula/conserved=6.8e-14/3.2e-13; slice=0.524; constant conserved=3
+[PASS] all-support-matrix-toeplitz-gns-and-local-gauge-quotient: pointwise matrix positivity gives every finite-support Gram, with exactly the shifted lo...
+       nullities=(0, 0, 2, 6, 14); min=-3.08e-15; positive gap=0.071555; radical=5.28e-16
+[PASS] tt-scalar-herglotz-cyclic-unitary-and-finite-resource-boundary: the unchanged TT response has a strictly positive unique scalar spectral measure and an ...
+       q Bernstein=[0.540843  0.5405895 0.5403361]; rho=0.337174265271/1.003937597428; direct=3.96e-10; Hankel=-4.43e-09/-3.30e-07
+[PASS] reflected-weyl-gluing-selects-full-line-covariance: the reflected right/left Weyl pair minus the shared central action equals the inverse tw...
+       glue=7.22e-15; reflection=0.00e+00; open depths=3.96e-03,3.31e-05,2.12e-09,5.48e-16
+[PASS] locality-spectrum-no-go-discipline-and-axiom-boundary: the rational covariance is exponentially local, while Hamiltonian, Record, quantum, IR, ...
+       pole gap=0.449477; inside radius=0.550523; M34=3.61e-09; reciprocal=5.37e-07
+MATRIX_POSITIVITY_CERTIFICATE: edge action is PSD rank five and the bordered inverse edge covariance is PSD rank five for the full unit circle
+WARD_QUOTIENT_CERTIFICATE: the covariance radical is the explicit three-tap local left-Ward Laurent line; finite history sections have exactly horizon-minus-two gauge null shifts
+GNS_CERTIFICATE: C6-valued Laurent source histories modulo the Ward line complete to a Hilbert space, and multiplication by z is a canonical unitary reproducing every bilateral matrix moment
+ACTION_PROVENANCE_CERTIFICATE: reflected left/right Weyl halves, with the shared central action subtracted once, reconstruct the two-layer full-line covariance without a fitted metric or bath
+PHYSICAL_BOUNDARY: the exact shift is kinematic history translation; full-circle spectrum does not select a local Hamiltonian branch, quantum commutator/state, or operational Record instrument
+N5_CERTIFICATE: the execution resolutions below state exactly what this runner did and did not resolve
+per_element: checked the supplied twenty-two-edge action through all six odd edge source coordinates and its one-Ward border
+per_site: checked arbitrary finite temporal source histories at one translation-invariant spatial momentum; no inhomogeneous spatial site family
+per_mode: checked the entire unit temporal circle and all five physical odd-edge quotient directions, with the TT scalar sequence as a sourced subchannel
+per_block: checked global polynomial positivity, bordered invertibility, matrix Toeplitz sections, GNS shift, and reflected-Weyl gluing
+lattice_wide: checked and not executed — no Brillouin-zone, even-sector, nonlinear-background, Newtonian-IR, refinement, quantum Record, or all-lattice theorem is claimed
+MATRIX_GNS_VERDICT: POSITIVE_KINEMATIC_RECONSTRUCTION; FINITE_DIMENSION_ALL_POWERS_VERDICT: BOUNDED_INFEASIBLE; HAMILTONIAN_RECORD_VERDICT: OPEN; GRAVITY_VERDICT: OPEN
+TOE_MOVEMENT: obligations=0 percentages=0 axioms_amended=0
+elapsed_sec=0.37
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

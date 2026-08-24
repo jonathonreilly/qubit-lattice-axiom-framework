@@ -1,6 +1,6 @@
 {
  "edge_count": 16109,
- "node_count": 5608,
+ "node_count": 5609,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -581,6 +581,10 @@
   "admissibility_dirac_kahler_observable_scaling_law_bounded_theorem_note_2026-08-18": {
    "deps_hash": "0cff474550ba",
    "out_degree": 7
+  },
+  "admissibility_dirac_kahler_orientation_bit_terminal_bounded_theorem_note_2026-08-24": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_dirac_kahler_paired_floor_refutation_mixed_circle_bounded_theorem_note_2026-08-15": {
    "deps_hash": "26cdf7e4282e",

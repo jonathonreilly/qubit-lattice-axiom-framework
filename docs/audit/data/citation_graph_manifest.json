@@ -1,6 +1,6 @@
 {
  "edge_count": 16109,
- "node_count": 5612,
+ "node_count": 5613,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -695,6 +695,10 @@
    "out_degree": 3
   },
   "admissibility_dirac_kahler_stationary_kernel_characterization_bounded_theorem_note_2026-08-21": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "admissibility_dirac_kahler_temporal_link_extraction_bounded_theorem_note_2026-08-24": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

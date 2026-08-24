@@ -9,5 +9,7 @@
 | explicit stage sign `D` | basis intertwiner | viable import | `D(-Xs)D^-1=Xs` exactly | derive/import-retire `D` |
 | dual-adjoint frame doubling | honest reflection and frame grading | constructive candidate | exact reflection reality and weight exchange | solve physical port |
 | raw doubled OS form | chiral Hermitian Gram | bounded nonpositive | rank 16 and exact `(8,8,0)` | positive dressing/source algebra |
-| compatible dressing intersection | reflection/Hermiticity/involution variety | next active | independent linear precursor is nonempty | reproduce exactly, then solve bilinear locus |
+| stage-exchanging full-history dressing | fixed doubled grading | next analytic gate | exact chiral sign-pairing theorem is available | prove on Block-188 matrices, then stop full-history positivity if excluded |
+| non-grading-invariant source port | action-derived graph/compression | next constructive gate | raw doubled Gram has full-rank off-diagonal block | preregister covariance and source/Record conditions before positivity |
+| Block-114 dressing proxy | different carrier/reflection/propagator | control only | ranks do not type-check onto Block 188 | never use as evidence without a full common-action transport theorem |
 | changed massless carrier | projective-square/zero-mode alternative | live fallback | not executed here | use if compatible positive locus is empty |

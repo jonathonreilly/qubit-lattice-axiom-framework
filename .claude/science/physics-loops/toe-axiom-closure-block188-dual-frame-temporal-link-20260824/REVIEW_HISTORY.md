@@ -7,9 +7,15 @@ No review-loop or audit verdict was run.
 - Prior-art sweep at `origin/main=c79384cb...`: Blocks 107 and 114 make a
   bare link or positivity-existence result non-novel.
 - Independent temporal-band reconstruction reproduced every cover/AP band,
-  the stripped odd character, and the same-frame falsifiers.
-- Independent algebra check proved the unique direct dressing has the wrong
-  reality character and found nonempty broader linear precursor spaces.
+  the stripped odd character, the same-frame falsifiers, and exact descent of
+  all 20 live bands plus all six unbanded operators.
+- The repaired runner independently constructs the cell-dual/reflected-field
+  Hodge target.  It labels differential co-transport and completed-action
+  covariance as definitions/formal consequences rather than independent
+  evidence.
+- Independent algebra proved the unique direct dressing has the wrong reality
+  character.  A separate Block-114 precursor was rejected as non-transferable
+  because its carrier, reflection, propagator, and support differ.
 - Independent portfolio panel required the action-selection/source/Record
   intersection and supplied the early-stop ladder.
 - No-go-discipline freshness was checked against current `origin/main`; the
@@ -32,7 +38,7 @@ No review-loop or audit verdict was run.
 5. Proof obligations: the source note states one exact target, an obligation
    graph, fixture boundaries, degenerate changes, and the strongest missing
    lemma before the derivation.
-6. Runner validity: baseline is `7/7`; seven independent mutations each give
+6. Runner validity: baseline is `7/7`; nine independent mutations each give
    `6/7` with only the mapped gate down.
 7. Packet completeness: the source note, runner, cache, declared Block-128
    helper, parent note/runner, axioms, and registry are reachable. Static
@@ -45,8 +51,9 @@ No review-loop or audit verdict was run.
    the dropped overclaims and hard landing conditions.
 10. Propose/ratify boundary: no audit status, effective status, verdict,
     ledger, queue, prompt, or publication output is authored.
-11. Counts and generators: all displayed ranks and residual counts are
-    recomputed from the frozen matrices; none is sourced from prose or cache.
+11. Counts and generators: all Block-188 ranks and residual counts are
+    recomputed from the frozen matrices; no Block-114 proxy rank is presented
+    as evidence for this object.
 12. Pre-review gates: targeted lint, typing, invariant, cache, baseline, and
     mutation gates pass. The full audit pipeline reaches its restoration stage
     and then stops on an inherited policy defect: the tracked dependency-policy
@@ -62,8 +69,9 @@ No review-loop or audit verdict was run.
 - V1 — exact target: Block 187 asks to rebuild the projective reflection,
   extract its `dt=+-1` link, and test its action on Block-78 stages before
   identifying it with `epsilon_R`.
-- V2 — novel derivation: Block 188 gives exact bandwise dual covariance, AP
-  descent, a null direct stage-intertwiner, and the minimal doubled repair.
+- V2 — novel derivation: Block 188 gives an independently targeted Hodge dual,
+  exact bandwise AP descent, a null direct stage-intertwiner, and the displayed
+  doubled repair.
 - V3 — audit-only completion: no. The missing compatibility/positivity/source
   intersection is new mathematical work, not a verdict recoverable from the
   existing packet.
@@ -87,8 +95,8 @@ Block-78 stage law.
 
 The marginal value is the classification, not the repeated carrier. It proves
 that direct one-carrier identification is empty for a representation-theoretic
-reason, derives the exact AP `8+8` orientation split, and constructs the
-smallest honest primal/dual-adjoint repair. That converts an underived scalar
+reason, derives the exact AP `8+8` orientation split, and constructs a
+displayed honest primal/dual-adjoint repair. That converts an underived scalar
 sign into a concrete action-visible object while locating the remaining choice
 in a 32-dimensional port family with balanced inertia. This materially changes
 which experiment should run next: stop link extraction and solve the compatible

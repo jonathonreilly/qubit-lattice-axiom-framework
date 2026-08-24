@@ -4,8 +4,8 @@
 Rebuild the Block-128 8x4 curved carrier, derive the projective reflection,
 extract every temporal band before antiperiodic descent, and test the exact
 map to the ordered Block-78 stage representation.  The direct single-carrier
-intertwiner is empty, while a dual-adjoint frame doubling gives an honest
-reflection and the desired exchanged (2,0)/(0,2) weights.  Its smallest
+intertwiner is empty, while a displayed dual-adjoint frame doubling gives an
+honest reflection and the desired exchanged (2,0)/(0,2) weights.  Its displayed
 reflected form is nevertheless exactly balanced rather than positive.  This
 is a bounded carrier theorem, not a DK/gravity/Record or TOE no-go.
 """
@@ -13,10 +13,11 @@ is a bounded carrier theorem, not a DK/gravity/Record or TOE no-go.
 from __future__ import annotations
 
 import argparse
-from dataclasses import dataclass
-from pathlib import Path
+import re
 import subprocess
 import sys
+from dataclasses import dataclass
+from pathlib import Path
 
 import sympy as sp
 
@@ -102,6 +103,8 @@ MUTATIONS = (
     "break_doubled_stage_exchange",
     "claim_direct_reflected_form_hermitian",
     "drop_n5_certificate",
+    "claim_toe_progress",
+    "claim_physical_source_rank",
 )
 MUTATION_GATE = {
     "stale_main_authority": "A",
@@ -111,6 +114,8 @@ MUTATION_GATE = {
     "break_doubled_stage_exchange": "E",
     "claim_direct_reflected_form_hermitian": "F",
     "drop_n5_certificate": "G",
+    "claim_toe_progress": "G",
+    "claim_physical_source_rank": "G",
 }
 
 
@@ -151,6 +156,16 @@ T = b128.COVER_TIME_EXTENT
 X = b128.SPACE_EXTENT
 N = b128.COVER_SIZE
 I = sp.I
+DIFFERENTIAL_ORIGIN = (0, 0)
+NEGATIVE_AP_INDICES = tuple(range(2 * X))
+CELL_DUAL_MAP = sp.Matrix(
+    (
+        (0, 0, -1, 0),
+        (0, 0, 0, -1),
+        (1, 0, 0, 0),
+        (0, 1, 0, 0),
+    )
+)
 
 
 def cover_shift(dt: int, dx: int) -> sp.Matrix:
@@ -216,6 +231,55 @@ def orbit_average(matrix: sp.Matrix) -> sp.Matrix:
     )
 
 
+def shear_block(shear: object, volume: object) -> sp.Matrix:
+    """The landed Block-105 cell Hodge, reached through Block 128."""
+    return b128.block105.shear_hodge(shear, volume)
+
+
+def dual_block(shear: object, volume: object) -> sp.Matrix:
+    """The independently constructed dual cell block M H(q,v) M^T."""
+    return sp.expand(
+        CELL_DUAL_MAP * shear_block(shear, volume) * CELL_DUAL_MAP.T
+    )
+
+
+def hodge_cover(field: dict, block=shear_block) -> sp.Matrix:
+    """Build the cover Hodge from a supplied cell field and cell block."""
+    result = sp.zeros(N)
+    for time in range(T):
+        for space in range(X):
+            shear, volume = field[(time % b128.PHYSICAL_TIME_EXTENT, space)]
+            embedding = b128.cover_embedding(time, space)
+            result += embedding * block(shear, volume) * embedding.T / 4
+    return sp.expand(result)
+
+
+def reflected_field(field: dict) -> dict:
+    """Cell-field reflection induced by the site map t -> 7-t."""
+    return {
+        (time, space): field[
+            ((2 - time) % b128.PHYSICAL_TIME_EXTENT, space)
+        ]
+        for time in range(b128.PHYSICAL_TIME_EXTENT)
+        for space in range(X)
+    }
+
+
+def completion(hodge: sp.Matrix, differential: sp.Matrix) -> sp.Matrix:
+    """Apply the landed Block-128 massive Dirac--Kahler completion."""
+    return sp.expand(
+        b128.MASS * hodge
+        + I * (hodge * differential + differential.H * hodge)
+    )
+
+
+def descends(
+    matrix: sp.Matrix, injection: sp.Matrix, selection: sp.Matrix
+) -> bool:
+    quotient = sp.expand(selection * matrix * injection)
+    return matrix_equal(matrix * injection, injection * quotient)
+
+
 def intertwiner_rank(source: sp.Matrix) -> tuple[int, int, int]:
     stage_exchange = sp.Matrix(((0, 1), (1, 0)))
     variables = sp.symbols(f"f0:{2 * source.rows}")
@@ -236,8 +300,13 @@ class Facts:
     ap_descent: bool
     ap_projective: bool
     ap_orientation_split: tuple[int, int]
+    landed_hodge_control: bool
+    independent_dual_hodge: bool
+    independent_dual_discriminator: bool
     h_signature: tuple[tuple[int, int, int], ...]
+    d_signature: tuple[tuple[int, int, int], ...]
     q_signature: tuple[tuple[int, int, int], ...]
+    band_descent: tuple[int, int, int, int]
     band_covariance: bool
     stripped_odd_residual: int
     stripped_wrong_residual: int
@@ -256,6 +325,8 @@ class Facts:
     action_orientation_ranks: tuple[int, int, int, int]
     note_ready: bool
     n5_ready: bool
+    fixture_ready: bool
+    scope_ready: bool
 
 
 def authority_ok() -> bool:
@@ -286,11 +357,33 @@ N5_LINES = (
     "per_site: checked all 32 cover sites and the 16 antiperiodic quotient sites.",
     "per_mode: checked both eight-dimensional projective orientation eigenspaces exactly.",
     "per_block: checked every live temporal band and both primal/dual frame blocks exactly.",
-    "lattice_wide: checked and not executed — no width ladder, four-dimensional lift, or Record history is claimed.",
+    "lattice_wide: checked and not executed — no width ladder, "
+    "four-dimensional lift, or Record history is claimed.",
+)
+
+FIXTURE_TOKENS = (
+    "d_00=d[(0,0)]",
+    "N_-={0,1,...,7}",
+    "first two AP time slices and all four spatial sites",
+)
+
+SCOPE_TOKENS = (
+    "obligation_retirement: 0",
+    "toe_percentage_movement: 0",
+    "axiom_status: unchanged",
+    "no physical source or Record-readable rank is claimed",
+    "not a gravity failure",
+    "does not edit the minimal axioms or primitive registry",
+)
+
+SCOPE_FORBIDDEN = (
+    r"obligation_retirement:\s*[1-9]",
+    r"toe_percentage_movement:\s*[1-9]",
+    r"physical source rank(?: is|:|=)\s*[1-9]",
 )
 
 
-def measure() -> Facts:
+def measure(mutation: str = "") -> Facts:
     reflection = edge_reflection()
     parity = time_parity()
     r_matrix = sp.expand(reflection * parity)
@@ -302,21 +395,48 @@ def measure() -> Facts:
     r_ap = sp.expand(selection * r_matrix * injection)
     j_ap = I * r_ap
 
-    hodge = orbit_average(b128.curved_hodge_cover())
-    differential = b128.chart_differential_cover((0, 0))
-    action = sp.expand(
-        b128.MASS * hodge
-        + I * (hodge * differential + differential.H * hodge)
+    field = b128.block105.overlap_field()
+    landed_hodge = hodge_cover(field)
+    hodge = orbit_average(landed_hodge)
+    differential = b128.chart_differential_cover(DIFFERENTIAL_ORIGIN)
+    action = completion(hodge, differential)
+
+    # The dual Hodge is built independently from the closed-form cell dual and
+    # reflected field.  Only the differential is defined by co-transport; the
+    # completed action covariance below is consequently a formal consistency
+    # check once Hodge covariance and differential transport are established.
+    dual_hodge = orbit_average(
+        hodge_cover(reflected_field(field), dual_block)
     )
-    dual_hodge = sp.expand(r_matrix * hodge * r_matrix.T)
     dual_differential = sp.expand(r_matrix * differential * r_matrix.T)
-    dual_action = sp.expand(
-        b128.MASS * dual_hodge
-        + I
-        * (
-            dual_hodge * dual_differential
-            + dual_differential.H * dual_hodge
+    dual_action = completion(dual_hodge, dual_differential)
+
+    live_bands = tuple(
+        temporal_band(matrix, displacement)
+        for matrix in (
+            hodge,
+            differential,
+            action,
+            dual_hodge,
+            dual_differential,
+            dual_action,
         )
+        for displacement in (-2, -1, 0, 1, 2)
+        if nonzero_entries(temporal_band(matrix, displacement))
+    )
+    band_descent_failures = sum(
+        not descends(band, injection, selection) for band in live_bands
+    )
+    whole_objects = (
+        hodge,
+        differential,
+        action,
+        dual_hodge,
+        dual_differential,
+        dual_action,
+    )
+    whole_descent_failures = sum(
+        not descends(matrix, injection, selection) for matrix in whole_objects
     )
 
     covariance = all(
@@ -391,7 +511,7 @@ def measure() -> Facts:
     weight_0 = sp.eye(2 * identity_ap.rows) + frame_orientation
     weight_1 = sp.eye(2 * identity_ap.rows) - frame_orientation
 
-    negative = tuple(range(2 * X))
+    negative = NEGATIVE_AP_INDICES
     direct_gram = (r_ap * action_ap.inv()).extract(negative, negative)
     doubled_negative = negative + tuple(
         identity_ap.rows + index for index in negative
@@ -404,7 +524,14 @@ def measure() -> Facts:
     p_plus = (identity_ap + j_ap) / 2
     p_minus = (identity_ap - j_ap) / 2
 
-    note_text = NOTE_PATH.read_text(encoding="utf-8") if NOTE_PATH.is_file() else ""
+    note_text = (
+        NOTE_PATH.read_text(encoding="utf-8") if NOTE_PATH.is_file() else ""
+    )
+    if mutation == "claim_toe_progress":
+        note_text += "\ntoe_percentage_movement: 1\n"
+    if mutation == "claim_physical_source_rank":
+        note_text += "\nphysical source rank: 8\n"
+    normalized_note = " ".join(note_text.split())
     required_sections = tuple(f"### N{index}" for index in range(1, 9))
 
     return Facts(
@@ -425,8 +552,25 @@ def measure() -> Facts:
             identity_ap.rows - (j_ap - identity_ap).rank(),
             identity_ap.rows - (j_ap + identity_ap).rank(),
         ),
+        landed_hodge_control=matrix_equal(
+            landed_hodge, b128.curved_hodge_cover()
+        ),
+        independent_dual_hodge=matrix_equal(
+            r_matrix * hodge * r_matrix.T, dual_hodge
+        ),
+        independent_dual_discriminator=not matrix_equal(
+            r_matrix * hodge * r_matrix.T,
+            orbit_average(hodge_cover(reflected_field(field))),
+        ),
         h_signature=band_signature(hodge),
+        d_signature=band_signature(differential),
         q_signature=band_signature(action),
+        band_descent=(
+            len(live_bands),
+            band_descent_failures,
+            len(whole_objects),
+            whole_descent_failures,
+        ),
         band_covariance=covariance,
         stripped_odd_residual=nonzero_entries(stripped + c_dual_minus),
         stripped_wrong_residual=nonzero_entries(stripped - c_dual_minus),
@@ -486,6 +630,13 @@ def measure() -> Facts:
             note_text and all(section in note_text for section in required_sections)
         ),
         n5_ready=all(line in note_text for line in N5_LINES),
+        fixture_ready=all(token in normalized_note for token in FIXTURE_TOKENS),
+        scope_ready=bool(
+            all(token in normalized_note for token in SCOPE_TOKENS)
+            and not any(
+                re.search(pattern, normalized_note) for pattern in SCOPE_FORBIDDEN
+            )
+        ),
     )
 
 
@@ -528,19 +679,30 @@ def build_checks(facts: Facts, mutation: str) -> Checks:
     )
     checks.check(
         "B",
-        "derived R is projective and descends to an 8+8 AP orientation split",
+        "R, every live band, and all six operators descend to an 8+8 AP split",
         facts.r_projective
         and facts.r_wrong_square_entries == 32
         and facts.ap_descent == expected_ap_descent
         and facts.ap_projective
-        and facts.ap_orientation_split == (8, 8),
+        and facts.ap_orientation_split == (8, 8)
+        and facts.band_descent == (20, 0, 6, 0),
     )
     checks.check(
         "C",
-        "all temporal bands covary to the dual frame and stripped odd links flip",
-        facts.h_signature == ((-1, 32, 32), (0, 32, 32), (1, 32, 32))
+        "an independent dual Hodge closes every band; stripped odd links flip",
+        facts.landed_hodge_control
+        and facts.independent_dual_hodge
+        and facts.independent_dual_discriminator
+        and facts.h_signature == ((-1, 32, 32), (0, 32, 32), (1, 32, 32))
+        and facts.d_signature == ((-1, 16, 16), (0, 16, 16))
         and facts.q_signature
-        == ((-2, 16, 16), (-1, 72, 32), (0, 80, 32), (1, 72, 32), (2, 16, 16))
+        == (
+            (-2, 16, 16),
+            (-1, 72, 32),
+            (0, 80, 32),
+            (1, 72, 32),
+            (2, 16, 16),
+        )
         and facts.band_covariance
         and facts.stripped_odd_residual == expected_odd_residual
         and facts.stripped_wrong_residual == 72
@@ -572,8 +734,11 @@ def build_checks(facts: Facts, mutation: str) -> Checks:
     )
     checks.check(
         "G",
-        "the landed note carries N1-N8, N5 resolutions, and bounded TOE scope",
-        facts.note_ready and facts.n5_ready == expected_n5,
+        "the note carries N1-N8, N5, named fixtures, and falsifiable TOE scope",
+        facts.note_ready
+        and facts.n5_ready == expected_n5
+        and facts.fixture_ready
+        and facts.scope_ready,
     )
     return checks
 
@@ -587,7 +752,7 @@ def main() -> int:
         for mutation in MUTATIONS:
             print(f"{mutation}: {MUTATION_GATE[mutation]}")
         return 0
-    facts = measure()
+    facts = measure(args.mutation)
     return build_checks(facts, args.mutation).report()
 
 

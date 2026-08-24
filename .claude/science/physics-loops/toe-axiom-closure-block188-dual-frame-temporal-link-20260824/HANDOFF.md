@@ -8,11 +8,20 @@ primal/dual-adjoint doubling fixes the square and exactly exchanges `(2,0)` and
 `(0,2)`, but leaves 32 covariant port directions and a balanced `(8,8,0)` raw
 reflected form.
 
-The next campaign must start from the broader compatible dressing spaces, not
-from another band extraction.  Reproduce the linear 33/32-dimensional
-precursor ranks, impose involution exactly, and test positivity.  Stop there if
-empty.  Only a positive survivor unlocks total Ward/recoil, gravity-source
-rank, and a Record-readable port.
+The next campaign must start directly from the fixed Block-188 doubled action,
+not from another band extraction.  First use its exact frame grading to decide
+whether a stage-exchanging dressing can ever make the full declared history
+form positive.  Then preregister and solve an action-derived gravity/Record
+source port, or explicitly test the alternative in which the dressed
+reflection preserves rather than exchanges the frame grading.  Only a
+positive, covariant, source-visible survivor unlocks total Ward/recoil,
+gravity-source rank, and a Record-readable port.
+
+Block 114's 512-real-coordinate, 32x32 eight-slice dressing solve is a
+different carrier, reflection, propagator, and support.  Its precursor spaces
+may be used as solver controls or ansatz inspiration only; their ranks are not
+evidence about the Block-188 object and must not be transported as if they
+were.
 
 Do not identify action visibility with physical source visibility, choose a
 positive spectral compression after seeing the Gram, promote a residual

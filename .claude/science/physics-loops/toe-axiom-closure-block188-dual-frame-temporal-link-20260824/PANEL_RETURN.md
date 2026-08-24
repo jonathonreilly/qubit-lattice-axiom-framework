@@ -7,17 +7,17 @@ another isolated positive Gram as low leverage because Blocks 107 and 114
 already supply those separately.
 
 The campaign followed the panel's stop ladder.  It reached a genuine stage
-representation only after the minimal dual-adjoint doubling; the resulting
+representation with the displayed dual-adjoint doubling; the resulting
 raw form is balanced and the physical port remains unselected, so downstream
 4D/Record work stayed locked.
 
-An independent exact-math follow-up found that the broader linear precursor is
-not empty: in the inherited 512-real-coordinate dressing ansatz,
-reflection-reality plus Gram Hermiticity plus the two simplest parity
-compatibility conditions leave candidate spaces of dimensions 33 and 32.
-The inherited indefinite involution lies in one space.  Involution and
-positivity inside those spaces remain unproved; the successor must reproduce
-these ranks in its own runner before using them.
+An independent cold read rejected the inherited Block-114
+512-real-coordinate precursor as evidence for this carrier: it uses a
+different 32x32 eight-slice torus, reflection, propagator, and restriction.
+That solve remains a non-transferable control only.  The direct Block-188
+grading and source-port problem is both cheaper and correctly typed.
 
-Panel rerank: attack that bilinear positive-involution intersection next.  Do
-not amend axioms, repeat temporal bands, or pay for long histories yet.
+Panel rerank: prove the fixed-action grading obstruction first, then attack a
+preregistered gravity/Record port or the grading-preserving dressed-reflection
+alternative.  Do not amend axioms, repeat temporal bands, or pay for long
+histories yet.

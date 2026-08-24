@@ -2,7 +2,7 @@
 title: "Dual-frame temporal link and stage-intertwiner boundary"
 claim_id: admissibility_dirac_kahler_dual_frame_temporal_link_stage_intertwiner_boundary_bounded_theorem_note_2026-08-24
 claim_type: bounded_theorem
-claim_scope: "On the independently reconstructed Block-128 8x4 carrier, the projective reflection has exact dual-frame temporal-band covariance and descends to an 8+8 antiperiodic orientation split. Its direct ordinary-stage intertwiner is empty, while primal/dual-adjoint doubling supplies an honest stage exchange with a balanced (8,8,0) reflected form and an unselected 32-dimensional port family. This is finite-carrier upstream support, not a selected positive gravity source, Record law, axiom amendment, obligation retirement, or TOE percentage movement."
+claim_scope: "On the independently reconstructed Block-128 8x4 carrier, the projective reflection maps the landed Hodge to an independently built cell-dual/reflected-field Hodge and reverses every temporal band; the differential is explicitly co-transported and the completed-action identity is then formal. All live bands descend to an 8+8 antiperiodic orientation split. The direct ordinary-stage intertwiner is empty, while a displayed primal/dual-adjoint doubling supplies an honest stage exchange with a balanced (8,8,0) reflected form and an unselected 32-dimensional port family. This is finite-carrier upstream support, not a selected positive gravity source, Record law, axiom amendment, obligation retirement, or TOE percentage movement."
 parents:
   - admissibility_common_action_stationarity_gravity_stage_orientation_boundary_bounded_theorem_note_2026-08-24
   - admissibility_dirac_kahler_curved_carrier_dependency_bounded_theorem_note_2026-08-17
@@ -46,8 +46,8 @@ Canonical cache:
 **Target.**  On the reconstructed Block-128 carrier, determine whether its
 projective cover reflection descends to the antiperiodic quotient and supplies,
 without an added selector, both the ordinary Block-78 stage exchange and a
-positive physical reflected form; if it does not, construct the smallest exact
-repair and localize the next missing lemma.
+positive physical reflected form; if it does not, exhibit one exact repair and
+localize the next missing lemma.
 
 | obligation | disposition | exact evidence |
 |---|---|---|
@@ -55,7 +55,7 @@ repair and localize the next missing lemma.
 | classify every live temporal band and its dual-frame character | closed | equations (2)--(3), with all residuals exactly zero |
 | prove descent to the declared AP quotient | closed | equations (9)--(11) |
 | test direct action on ordinary two-stage labels | closed negatively in the declared linear class | 32 variables, rank 32, nullity zero |
-| construct the minimal honest stage-exchange repair | closed constructively | primal/dual-adjoint doubling, equations (6)--(8) |
+| exhibit an honest stage-exchange repair | closed constructively | displayed primal/dual-adjoint doubling, equations (6)--(8); no minimality claim |
 | select an involutive positive physical source port from that repair | open | the doubled intertwiner space has dimension 32 and the raw Gram has inertia `(8,8,0)` |
 | close total Ward/recoil and Record-readable rank from the same action | open | no source or Record map is imported or inferred |
 
@@ -67,6 +67,12 @@ are not silently identified with this fixture.  In particular, the live
 `+/-2` bands forbid a nearest-neighbour truncation, and neither a positive
 spectral half nor the extra stage sign `D` may be selected after seeing the
 spectrum.
+
+Two load-bearing fixtures are frozen explicitly.  The chart differential is
+`d_00=d[(0,0)]`.  In the AP ordering by time and then space, the reflected
+history restriction is `N_-={0,1,...,7}`: the first two AP time slices and all
+four spatial sites.  These are fixture choices, not derived laws; changing
+either requires a new run and may change finite-matrix defect counts.
 
 The strongest missing lemma is an action-derived element of the compatible
 reflection-real and Gram-Hermitian family that is involutive, positive on a
@@ -89,9 +95,21 @@ On the independently rebuilt Block-128 `8x4` cover,
  \qquad R^T=-R.                                      \tag{1}
 \]
 
-The full temporal-band theorem is exact.  If \(\Pi_\Delta\) selects entries
-with column-time minus row-time \(\Delta\), then for the Hodge, differential,
-and completed action,
+The Hodge target is not defined by the claimed equality.  With
+
+\[
+ M=\begin{pmatrix}0&0&-1&0\\0&0&0&-1\\1&0&0&0\\0&1&0&0\end{pmatrix},
+ \quad H^\vee(q,v)=M H(q,v)M^T,
+ \quad (\theta g)(t,x)=g((2-t)\bmod4,x),
+\]
+
+the runner rebuilds \(H^\vee[\theta g]\) cell by cell and verifies
+\(R H[g]R^{-1}=H^\vee[\theta g]\) independently.  It defines
+\(d^\vee=Rd_{00}R^{-1}\); the completed-action covariance is therefore a
+formal consistency consequence of the independent Hodge theorem and the
+declared co-transport, not a second independent constraint.  If
+\(\Pi_\Delta\) selects entries with column-time minus row-time \(\Delta\), then
+for the Hodge, co-transported differential, and completed action,
 
 \[
  R\Pi_\Delta(A)R^{-1}=\Pi_{-\Delta}(A^\vee).        \tag{2}
@@ -135,7 +153,8 @@ and its reflection-even reality equation fails on exactly 32 diagonal
 entries.  A scalar phase cannot change the anti-linear square because the
 phase cancels against its conjugate.
 
-The minimal constructive repair is a primal/dual-adjoint frame doublet.  With
+One constructive repair is a primal/dual-adjoint frame doublet.  No smaller
+extension or non-scalar cocycle is classified here.  With
 
 \[
  \mathcal Q=\operatorname{diag}(Q,Q^{\vee\dagger}),
@@ -167,7 +186,7 @@ stage repair.  It does not derive the gravity/DK source map identifying frame
 with canonical stage.  The doubled stage-intertwiner solve has nullity 32, so
 covariance alone still does not select that physical port.
 
-Finally, the doubling repairs Hermiticity but not positivity.  Its smallest
+Finally, the doubling repairs Hermiticity but not positivity.  Its declared
 reflected form is nonsingular Hermitian and anticommutes with the restricted
 frame grading.  Its two off-diagonal blocks both have rank eight, forcing exact
 inertia `(8,8,0)`.  The direct single-carrier reflected form is rank eight and
@@ -200,9 +219,10 @@ consumer is the [Block-187 stage-orientation boundary](ADMISSIBILITY_COMMON_ACTI
 - Branch-local PR #7347 supplied the fresh dual-frame clue, but it is not
   treated as retained authority and its claimed identities are remeasured.
 
-The new content is the exact intersection: bandwise dual covariance, AP
-descent, direct stage-intertwiner classification, the unique direct-dressing
-failure, and the minimal doubled-frame repair with its exact balanced Gram.
+The new content is the exact intersection: independently targeted Hodge dual
+covariance, formal differential/action co-transport, bandwise AP descent,
+direct stage-intertwiner classification, the unique direct-dressing failure,
+and the displayed doubled-frame repair with its exact balanced Gram.
 
 ## Exact temporal-band census
 
@@ -215,8 +235,10 @@ mistake one open section point for a reflection selector.  At mass `2/7`:
 | \(d\) | `-1: 16/16`, `0: 16/16` |
 | \(Q_S\) | `-2: 16/16`, `-1: 72/32`, `0: 80/32`, `+1: 72/32`, `+2: 16/16` |
 
-Every per-band residual in (2) is zero.  For the stripped `+1` action
-coefficient, the residual against the negative dual coefficient is zero; the
+Every per-band residual in (2) is zero.  The Hodge target is the independent
+cell-dual/reflected-field construction above; the differential target is the
+declared co-transport and the action target is its formal completion.  For the
+stripped `+1` action coefficient, the residual against the negative dual coefficient is zero; the
 wrong positive sign has 72 nonzero entries.
 
 The same-frame shortcuts fail before any Gram is built:
@@ -253,6 +275,18 @@ The residual in \(R\iota_{\rm AP}=\iota_{\rm AP}R_{\rm AP}\) is zero, and
  \qquad R_{\rm AP}^2=-I.                             \tag{10}
 \]
 
+For every one of the 20 nonzero temporal bands across
+\(H,d,Q,H^\vee,d^\vee,Q^\vee\), and for all six unbanded operators, the runner
+also verifies independently
+
+\[
+ B\iota_{\rm AP}=\iota_{\rm AP}
+ (\sigma_{\rm AP}B\iota_{\rm AP}).                 \tag{10a}
+\]
+
+All 26 descent residuals are exactly zero; descent is not inferred merely from
+the reflection equation.
+
 Hence
 
 \[
@@ -278,7 +312,7 @@ the mixing is nonzero.  This is action visibility only.  A DK-to-gravity
 stress map, conserved source, Record mark, clock, probability, and permanent
 write are absent and cannot be inferred from these ranks.
 
-## Stage representation and minimal repair
+## Stage representation and displayed repair
 
 For Block 78,
 
@@ -338,7 +372,7 @@ The broad statement “the dual-frame route cannot yield the stage carrier or a
 positive theory” fails this gate and is not shipped.  The narrow literal
 statements measured above pass: direct single-carrier identification has zero
 intertwiner, same-frame band closure fails on the declared carrier, and the
-minimal doubled reflected form is balanced.  Every broader route remains
+displayed doubled reflected form is balanced.  Every broader route remains
 explicit.
 
 ### N1 — Alternative route enumeration
@@ -375,8 +409,9 @@ Record visibility are not inflated into supporting walls.
 “Background,” “canonical,” “by construction,” “registered,” and related
 phrases were checked.  The only load-bearing inputs are the explicit
 Block-128 carrier, full reflection-closed section average, AP quotient,
-completion convention, and declared reflected-form restriction.  Each is
-named and pinned.  “Canonical” for `J_R` and the doubled frame grading means
+completion convention, chart origin `d_00=d[(0,0)]`, and the reflected-history
+restriction `N_-={0,1,...,7}` (the first two AP time slices and all four
+spatial sites).  Each is named and pinned.  “Canonical” for `J_R` and the doubled frame grading means
 only that they are algebraic functions of the frozen matrices; it does not
 mean Nature selects their gravity/source interpretation.  No standard-QFT or
 unnamed framework premise supplies a proof step.
@@ -385,10 +420,10 @@ unnamed framework premise supplies a proof step.
 
 | prior item | its residual | present residual | match / use |
 |---|---|---|---|
-| Block 107 | curved seam two-history Gram and dressing locality | projective stage intertwiner | no; prior art only |
-| Block 114 | existence of positive reflection-even dressings | equality with reflection-odd `A=-T_t` | no; live escape, not negative support |
-| Block 187 | underived orientation scalar and stage typing | action of derived cover reflection on stages | yes as the open interface, not as a negative witness |
-| PR #7347 | dual-frame kinematic covariance | temporal bands, AP descent, stage and Gram tests | partial context only; every claimed result here is rebuilt |
+| Block 107 (`docs/ADMISSIBILITY_DIRAC_KAHLER_ADM_SEAM_TWO_HISTORY_GRAM_BOUNDED_THEOREM_NOTE_2026-08-15.md:478-489`) | curved seam two-history Gram and dressing locality | projective stage intertwiner | no; prior art only |
+| Block 114 (`docs/ADMISSIBILITY_DIRAC_KAHLER_POSITIVE_DRESSED_REFLECTION_BOUNDED_THEOREM_NOTE_2026-08-15.md:492-500`) | existence of positive reflection-even dressings | equality with reflection-odd `A=-T_t` | no; live escape, not negative support |
+| Block 187 (`docs/ADMISSIBILITY_COMMON_ACTION_STATIONARITY_GRAVITY_STAGE_ORIENTATION_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-24.md:70-90`) | underived orientation scalar and stage typing | action of derived cover reflection on stages | yes as the open interface, not as a negative witness |
+| PR #7347 (`scripts/admissibility_dirac_kahler_derived_reflection_seam_dual_2026_08_24.py:1096-1110` on its branch) | independently targeted Hodge dual covariance | temporal bands, AP descent, stage and Gram tests | context and regression target only; the cell-dual/reflected-field target is rebuilt locally |
 
 No mismatched prior no-go is used to support the direct exclusion.
 
@@ -459,7 +494,7 @@ which is not claimed.
 | action-derived section/dressing selection | open |
 | total Ward/recoil and 4D gravity quotient | open |
 | physical source and Record-readable rank | open |
-| OS reconstruction beyond the smallest Gram | open |
+| OS reconstruction beyond the displayed Gram | open |
 | probability, clock, permanent write, refinement, nonlinear law | open |
 
 ## Reproduction
@@ -485,7 +520,7 @@ finite-carrier dual covariance, AP descent, direct-intertwiner exclusion, and
 the constructive doubled-stage boundary.
 
 Hard landing conditions are: a fresh authority pin, literal audit inputs,
-canonical cache envelope, seven independent mutation falsifiers, the full
+canonical cache envelope, nine independent mutation falsifiers, the full
 N1--N8 record for every negative sentence, citation-manifest generation, and
 repository conformance checks.  No review-loop or audit verdict is part of
 this package.

@@ -1,5 +1,7 @@
 # PR Backlog
 
+- PR #7352 packages this Block-189 result and is stacked on the repaired
+  Block-188 parent.
 - PR #7349 is the exact repaired Block-188 parent at `a4c36311dc...` and is
   cleanly mergeable.
 - PR #7348 is its Block-187 parent.
@@ -11,4 +13,4 @@
 - No review or landing action is part of this campaign.
 - No review-loop invocation is permitted by the user instruction.
 
-Refresh #7349 and #7350 before packaging Block 189.
+Refresh #7349, #7350, and #7352 before consuming this handoff.

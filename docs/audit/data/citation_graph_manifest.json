@@ -1,6 +1,6 @@
 {
- "edge_count": 16120,
- "node_count": 5614,
+ "edge_count": 16127,
+ "node_count": 5615,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -917,6 +917,10 @@
   "admissibility_reflected_curvature_canonical_reduction_schur_pole_tt_spectral_weight_boundary_bounded_theorem_note_2026-08-23": {
    "deps_hash": "0979b64b6aaa",
    "out_degree": 4
+  },
+  "admissibility_reflected_curvature_common_metric_pullback_torus_constraint_boundary_bounded_theorem_note_2026-08-24": {
+   "deps_hash": "0eb06061849a",
+   "out_degree": 7
   },
   "admissibility_reflected_curvature_descriptor_halfspace_source_faithful_metric_boundary_bounded_theorem_note_2026-08-24": {
    "deps_hash": "c8eee4235fc9",

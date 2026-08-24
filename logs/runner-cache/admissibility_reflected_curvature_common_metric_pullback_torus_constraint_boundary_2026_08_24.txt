@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_reflected_curvature_common_metric_pullback_torus_constraint_boundary_2026_08_24.py
+runner_sha256: 630d5849993e73c8d23ad21e9a6f8e42dd8a261d31bfede44f54f37f5a417375
+input_fingerprint_sha256: 20162bdcba727cc28c6a904aa856f77e93bc50e9b79435366434eeacd971ee3e
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 4.08
+status: ok
+----- stdout -----
+[PASS] exact-common-metric-ward-curvature-source-pullback: the hard line-metric restriction exactly factors gauge, curvature, and conserved source ...
+       ranks=(10, 4); MΓ-G=3.36e-16; OG=2.61e-14; DM-FR=6.09e-16; source=8.19e-16
+[PASS] einstein-infrared-limit: successive halvings converge quadratically to the supplied linearized Einstein comparator
+       relative errors=('3.792e-06', '9.480e-07', '2.371e-07')
+[PASS] generic-off-axis-full-rank-transverse-trace-poles: two simple full-rank quotient poles reverse an analytic conserved-source response
+       roots=2.878856491103/3.098119878637; shifts=(0.0003148571420816815, 0.0001490498009748542); slopes=(1.1461201538958883, -0.12617484739999688); gaps=(0.1096838073449407, 0.034662...
+[PASS] axial-even-conformal-source-boundary: the symmetry-defined scalar block is indefinite while temporal and transverse-trace resp...
+       block error=4.755e-04; det=-0.124840495; k2C(temporal/trace)=2.001315/-6.003764
+[PASS] brillouin-torus-rank-and-periodicity-boundary: equivalent momentum labels leave Q and G fixed but change the line-metric image rank and...
+       rank M/K=(8, 10)/(4, 6); inertia=((0, 4, 2), (1, 5, 0)); Q/G=3.14e-15/8.48e-16; corner census={10: 73, 8: 2, 9: 6}
+[PASS] interior-two-tt-positive-atlas-and-nyquist-alias: both spatial TT directions are positive on the L=7 interior atlas but alias into edge ga...
+       modes=2394; negatives=0; min=0.072366123; corner=(5.740775367528699e-16, 6.725975738108321e-16); gauge distance=1.34e-16
+[PASS] no-go-discipline-axiom-retention-and-toe-firewall: the supplied-map failures remain narrow while periodic carriers, constraints, gravity, a...
+       the note lands N1-N8, preserves the positive incidence escape, and makes no audit, axiom, retirement, or TOE-score claim
+COMMON_METRIC_CERTIFICATE: M Gamma=G, D M=F R, tau=M^dagger j, and the hard pullback approaches linearized Einstein gravity as O(epsilon^2)
+PHYSICAL_BOUNDARY: the full metric inverse has two full-rank off-axis transverse-trace-visible poles and the axial transverse-trace source has negative response
+TORUS_BOUNDARY: Q and G are periodic, but the supplied sinc line map changes rank 8 to 10 across equivalent cubic-corner representatives
+POSITIVE_CONTROL: both spatial TT forms are positive on all 2394 L=7 interior samples; their static cubic-corner images alias into edge gauge
+N5_CERTIFICATE: the following five resolution statements delimit the executed negative claims
+per_element: checked all 22 edge coordinates, 10 metric coordinates, four Ward columns, and explicit conserved metric and edge sources
+per_site: checked and not executed — the sinc line map is a momentum-space continuum line average, not a supplied finite-range site stencil
+per_mode: checked generic off-axis roots, the full 2394-mode L=7 TT atlas, 81 closed-cube corners, and equivalent torus labels
+per_block: checked the literal Block185 action, line-metric restriction, curvature map, source pairing, and incidence-carrier escape
+lattice_wide: checked and not executed — no nonlinear background, global constraint algebra, Record compiler, refinement law, or selected gravity theory is supplied
+LINE_METRIC_GLOBAL_LATTICE_CARRIER_VERDICT: BOUNDED_INFEASIBLE; FULL_METRIC_POSITIVE_COVARIANCE_VERDICT: BOUNDED_INFEASIBLE; GRAVITY_VERDICT: OPEN
+TOE_MOVEMENT: obligations=0 percentages=0 axioms_amended=0
+elapsed_sec=0.60
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

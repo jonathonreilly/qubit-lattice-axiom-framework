@@ -1,0 +1,10 @@
+campaign: toe-axiom-closure-block190-d4-common-action-vertical-slice-20260824
+status: preregistered
+parent_commit: 98d544ae8e94a78d986c96c65cfe3f588801ba3e
+origin_main: c79384cb8ffa27fcb53cb89c53a84a708442eaad
+active_gate: full_band_two_slice_schur_kill_or_unlock
+successor_gate: d4_dk_total_ward_tt_record_common_action
+obligation_retirement: 0
+toe_percentage_movement: 0
+axiom_status: unchanged
+review_loop: forbidden_by_user_instruction

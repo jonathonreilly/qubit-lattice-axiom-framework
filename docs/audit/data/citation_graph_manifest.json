@@ -1,6 +1,6 @@
 {
- "edge_count": 16109,
- "node_count": 5607,
+ "edge_count": 16113,
+ "node_count": 5610,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -662,6 +662,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "admissibility_dirac_kahler_source_functional_grading_boundary_bounded_theorem_note_2026-08-23": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "admissibility_dirac_kahler_sourced_quotient_execution_bounded_theorem_note_2026-08-17": {
    "deps_hash": "7d2c967c528b",
    "out_degree": 4
@@ -906,6 +910,10 @@
    "deps_hash": "955b4d89980a",
    "out_degree": 5
   },
+  "admissibility_reflected_curvature_canonical_reduction_schur_pole_tt_spectral_weight_boundary_bounded_theorem_note_2026-08-23": {
+   "deps_hash": "0979b64b6aaa",
+   "out_degree": 4
+  },
   "admissibility_reflected_curvature_gravity_physical_reconstruction_cut_gate_boundary_bounded_theorem_note_2026-08-14": {
    "deps_hash": "cb785bbdf571",
    "out_degree": 6
@@ -937,6 +945,10 @@
   "admissibility_regge_reflected_orientation_common_metric_transfer_gate_boundary_bounded_theorem_note_2026-08-11": {
    "deps_hash": "7864ab930145",
    "out_degree": 10
+  },
+  "admissibility_regge_tt_record_observable_inverse_amplification_refinement_gate_bounded_theorem_note_2026-08-23": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_repaired_regge_full_edge_finite_frequency_pole_survival_boundary_bounded_theorem_note_2026-08-11": {
    "deps_hash": "2a48363d5c4a",

@@ -1,6 +1,6 @@
 {
- "edge_count": 16133,
- "node_count": 5616,
+ "edge_count": 16137,
+ "node_count": 5617,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -489,6 +489,10 @@
   "admissibility_dirac_kahler_discriminator_verdict_bounded_theorem_note_2026-08-20": {
    "deps_hash": "54e88af57ea1",
    "out_degree": 1
+  },
+  "admissibility_dirac_kahler_dual_frame_temporal_link_stage_intertwiner_boundary_bounded_theorem_note_2026-08-24": {
+   "deps_hash": "5c34c1f27c0f",
+   "out_degree": 4
   },
   "admissibility_dirac_kahler_even_parity_paired_branch_bounded_theorem_note_2026-08-15": {
    "deps_hash": "7fd8a533f9c6",

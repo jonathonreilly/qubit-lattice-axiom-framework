@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_dual_frame_temporal_link_stage_intertwiner_boundary_2026_08_24.py
+runner_sha256: 1aba0b722e2708abb33d5458d8c141dc96a1e61dad776c85c7dc80ee8c99c0f7
+input_fingerprint_sha256: 8ab4f88aa568f5157d0ccd0b005928fbceef68d9cd6bc3010a2ec54eea8f7c85
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 5.08
+status: ok
+----- stdout -----
+[PASS] A: fresh authority, exact parent/carrier pins, and all declared inputs
+[PASS] B: derived R is projective and descends to an 8+8 AP orientation split
+[PASS] C: all temporal bands covary to the dual frame and stripped odd links flip
+[PASS] D: the unique direct dressing is reflection-odd and the single-stage intertwiner is zero
+[PASS] E: dual-adjoint doubling gives honest reversal and exchanged (2,0)/(0,2) weights
+[PASS] F: the direct Gram is non-Hermitian while the doubled Gram is exact balanced 8+8
+[PASS] G: the landed note carries N1-N8, N5 resolutions, and bounded TOE scope
+per_element: checked the exact reflection, band, and stage-intertwiner matrix entries.
+per_site: checked all 32 cover sites and the 16 antiperiodic quotient sites.
+per_mode: checked both eight-dimensional projective orientation eigenspaces exactly.
+per_block: checked every live temporal band and both primal/dual frame blocks exactly.
+lattice_wide: checked and not executed — no width ladder, four-dimensional lift, or Record history is claimed.
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

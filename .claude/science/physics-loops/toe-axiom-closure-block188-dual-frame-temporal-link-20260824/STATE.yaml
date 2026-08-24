@@ -1,0 +1,31 @@
+loop: toe-axiom-closure-block188-dual-frame-temporal-link-20260824
+mode: campaign
+target: best-honest-status
+started_at: 2026-08-24T19:00:00-04:00
+checkpoint_interval: 20m
+base_branch: physics-loop/toe-axiom-closure-block187-common-action-tournament-20260824
+science_branch: physics-loop/toe-axiom-closure-block188-dual-frame-temporal-link-20260824
+actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
+trace_class: upstream_support
+target_claim_id: admissibility_common_action_stationarity_gravity_stage_orientation_boundary_bounded_theorem_note_2026-08-24
+target_blocker_text: "Fresh PR #7347 adds a projective cover reflection and dual-frame map; rebuild it as a regression, extract its dt=+-1 temporal link, and test its actual action on the Block-78 stage labels before identifying it with epsilon_R."
+source_of_blocker_text: handoff
+reachability_to_target: partially_closes
+artifact_role: theorem
+next_trace_action: "Solve the compatible reflection-real Gram-Hermitian involution spaces, then require positivity on a preregistered total-Ward gravity-source and Record-readable port."
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: "Exact finite-carrier algebra partially closes the inherited orientation-carrier blocker but leaves selection, positivity, source, and Record interfaces open."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+cycle_count: 6
+block_count: 1
+active_route: compatible_positive_involution_source_intersection
+strongest_unresolved_proof_obligation: "Select one positive, involutive, total-Ward, gravity-source and Record-readable frame/stage port from the same action."
+hard_residual: "The doubled frame derives reversal and directed weights, but its raw Gram is balanced and its covariant stage-port space has dimension 32."
+review_disposition: local_science_complete_redirect_to_positive_intersection
+review_loop_disposition: not_run_by_user_instruction
+next_exact_action: "Solve reflection reality plus Gram Hermiticity plus the dual-frame intertwiner linearly, then impose involution and positivity before total Ward/source rank."
+stop_condition: "Block 188 reached an exact seven-gate boundary and localized the next cheapest selector/positivity test."

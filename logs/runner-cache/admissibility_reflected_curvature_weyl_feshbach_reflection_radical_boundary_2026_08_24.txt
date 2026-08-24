@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_reflected_curvature_weyl_feshbach_reflection_radical_boundary_2026_08_24.py
+runner_sha256: 1d360326cc35cd2d3195e4f20f42657596cefbbf7a9fb5fc8005227cdf706978
+input_fingerprint_sha256: e9a31e39e2f2d6040284d811cf86c15e31662bb4b4275a5bb52f45e59293281a
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 4.09
+status: ok
+----- stdout -----
+[PASS] action-geometric-reflection-and-source-binding: the supplied action, Ward border, geometric reflection, and local TT source are mutually...
+       reflection=3.82e-15; Ward=3.24e-16; ranks=(18, 18, 18, 18)
+[PASS] stable-deflating-subspace-and-hermitian-weyl-form: the full endpoint-plus-finite stable descriptor is a conditioned graph defining a Hermit...
+       selected/end=14/7; cond=1.66; angle=5.69e-11; graph=1.74e-15; qz=4.33e-11; rho=0.303076
+[PASS] finite-depth-feshbach-and-positive-edge-covariance: independent open-depth elimination converges to the Weyl form and its constrained edge c...
+       depth rel=7.9e-03,6.2e-05,4.9e-09,2.3e-16; edge=(0, 11, 1); TT=0.463199342344
+[PASS] link-reflection-positive-completion-radical-wall: the canonical sign makes the link crossing positive but its fixed radical is not shift i...
+       K/H=(4, 4, 6)/(0, 8, 6); radical leak=0.895; adjoint=0.954; source=0.572; preimage=1.6e-16/0.0e+00
+[PASS] site-reflection-positive-completion-radical-wall: the site crossing has the same structural failure: sign positivity leaves a non-invarian...
+       K/H=(1, 1, 5)/(0, 2, 5); radical leak=0.733; adjoint=5.241; source=1.414; preimage=1.6e-16/0.0e+00
+[PASS] fixed-local-action-covariant-intertwiner-exhaustion: the constant and nearest-layer coefficient commutants contain only scalar monomials, so ...
+       constant=1; one-layer=2; separation=0.728; angle=2.30e-15
+[PASS] minimal-tt-canonical-krein-escape-and-source-boundary: the minimal TT modes admit a canonical covariant positive Krein metric, but it changes t...
+       H/G=(1, 2, 0)/(0, 3, 0); source=4.35e-04; restrict=2.17e-04; filter=2.38e+04; covariance=2.31e-16; det=-9.59e-18/-3.22e-27
+[PASS] scope-no-go-discipline-and-axiom-boundary: the note lands N1-N8 for the declared reflection family while preserving the Weyl and sc...
+WEYL_CERTIFICATE: stable dimension=14, endpoint=7, finite-inside=7; W Hermitian residual=4.58e-15; Feshbach depth32=2.28e-16
+BOUNDARY_COVARIANCE: physical edge inertia=0/11/1 and the same unrefitted local TT covector gives boundary response=0.463199342344; this is equal-boundary positivity, not an OS transfer theorem
+RADICAL_CERTIFICATE: link/site positive sign completions exist, but their fixed radicals leak under the stable shift by 0.895/0.733
+LOCALITY_CERTIFICATE: constant and one-forward-layer coefficient commutants contain only scalar monomials; fixed or nearest-layer action-covariant completions reduce to site/link translations
+KREIN_ESCAPE: the three-mode TT quotient has a unique similarity-covariant spectral fundamental symmetry and positive metric, but it changes the original source-adjoint response and does not derive a local Record reflection
+N5_CERTIFICATE: the execution resolutions below state exactly what this runner did and did not resolve
+per_element: checked the twenty-two-edge action through its odd six-edge plus one-Ward bordered coefficients and geometric reflection
+per_site: checked one link- and one site-centered reflection cut on the translation-invariant temporal recurrence; no inhomogeneous site family
+per_mode: checked all seven endpoint and seven finite stable descriptor modes at spatial momentum pi over two, plus the three-mode TT minimal quotient
+per_block: checked the 14-dimensional stable graph, infinite Weyl form, four finite-depth Feshbach eliminations, two crossing Grams, and coefficient commutant
+lattice_wide: checked and not executed — no Brillouin-zone, Newtonian-IR, nonlinear-background, refinement, or all-lattice theorem is claimed
+WEYL_FESHBACH_VERDICT: POSITIVE_BOUNDARY_OBJECT; DECLARED_REFLECTION_COMPLETION_VERDICT: BOUNDED_INFEASIBLE; MINIMAL_TT_KREIN_ESCAPE: NONTERMINAL; GRAVITY_VERDICT: OPEN
+TOE_MOVEMENT: obligations=0 percentages=0 axioms_amended=0
+elapsed_sec=0.13
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

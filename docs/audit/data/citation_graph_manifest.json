@@ -1,6 +1,6 @@
 {
- "edge_count": 16114,
- "node_count": 5611,
+ "edge_count": 16115,
+ "node_count": 5612,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -921,6 +921,10 @@
   "admissibility_reflected_curvature_gravity_physical_reconstruction_cut_gate_boundary_bounded_theorem_note_2026-08-14": {
    "deps_hash": "cb785bbdf571",
    "out_degree": 6
+  },
+  "admissibility_reflected_curvature_weyl_feshbach_reflection_radical_boundary_bounded_theorem_note_2026-08-24": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "admissibility_reflected_plaquette_curvature_record_ricci_source_intertwiner_boundary_bounded_theorem_note_2026-08-11": {
    "deps_hash": "a8af90b7b0d5",

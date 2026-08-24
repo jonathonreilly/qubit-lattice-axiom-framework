@@ -1,6 +1,6 @@
 {
  "edge_count": 16109,
- "node_count": 5610,
+ "node_count": 5611,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -489,6 +489,10 @@
   "admissibility_dirac_kahler_discriminator_verdict_bounded_theorem_note_2026-08-20": {
    "deps_hash": "54e88af57ea1",
    "out_degree": 1
+  },
+  "admissibility_dirac_kahler_dual_patch_pullback_section_frame_bounded_theorem_note_2026-08-24": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_dirac_kahler_embedding_residues_campaign_close_bounded_theorem_note_2026-08-23": {
    "deps_hash": "e3b0c44298fc",

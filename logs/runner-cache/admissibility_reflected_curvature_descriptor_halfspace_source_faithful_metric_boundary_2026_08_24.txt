@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_reflected_curvature_descriptor_halfspace_source_faithful_metric_boundary_2026_08_24.py
+runner_sha256: 51e44d7604d3eba5b06f410477296acb1f8ca66ca371f0c74d6aef4a2808c201
+input_fingerprint_sha256: d6eb20e254f1c34117480295a1d5766a785c1042f47dfe1e326626709f6540fe
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 4.37
+status: ok
+----- stdout -----
+[PASS] supplied-action-ward-and-odd-border-binding: the supplied action retains four Ward directions and a clean reflected odd border
+       leak=8.15e-17; retained-gap=1.31e-04; Ward=3.24e-16; ranks=(18, 18, 18, 18)
+[PASS] descriptor-endpoint-chain-separation: the strong companion separates seven zero and seven infinite endpoint roots from fourtee...
+       end=(2, 2); det=(7, 21); numerator=(-6, 6); qz=(7, 14, 7); stairs=(5, 6, 7)/(5, 6, 7)
+[PASS] finite-spectrum-and-residue-recovery: companion finite roots match the Laurent determinant and exactly three stable real poles...
+       roots=14/7; coupled=3; chordal match=3.17e-11
+[PASS] source-visible-minimal-stable-response: all three TT poles are controllable and observable, so the hostile pole cannot be remove...
+       ranks=3/3; min|weight|=1.52e-04; radius=0.266172
+[PASS] source-faithful-os-self-adjoint-metric-infeasibility: the unique self-adjoint metrics are indefinite, while a positive non-self-adjoint contra...
+       H=(1, 2, 0); HA=(2, 1, 0); H2=(1, 2, 0); H2A2=(1, 2, 0)
+[PASS] direct-moment-and-even-step-gram-crosscheck: direct inverse-border moments agree with residues and independently violate positive one...
+       rel=6.81e-10; H0=-4.60e-06; H1=-4.43e-09; H2=-3.30e-07
+[PASS] scope-no-go-discipline-and-axiom-boundary: the landing note keeps the infeasibility exact-response scoped, lands N1-N8, and makes n...
+descriptor: endpoint ranks=2/2; zero/finite/infinite=7/14/7; partial multiplicities at both endpoints=3+1+1+1+1
+response_endpoint_support: determinant=-7..7 numerator=-6..6, so the scalar TT response has no zero or infinite endpoint pole
+tt_mode: z=-2.454390700e-05 weight=+1.517610426e-04
+tt_mode: z=+2.911690247e-04 weight=-2.174507276e-04
+tt_mode: z=+2.661717269e-01 weight=+5.818848116e-01
+METRIC_CERTIFICATE: H A=A^T H and H b=c have a unique indefinite solution for A and A squared; a separate positive Stein-contracting H exists but is non-self-adjoint
+CONTRACTIVE_ESCAPE: min_eig_H=1.094414e-01 min_eig_Stein=1.021778e-01 self_adjoint_residual=1.085594e-01
+N5_CERTIFICATE: the execution resolutions below state exactly what this runner did and did not resolve
+per_element: checked the twenty-two-edge action, four Ward columns, odd six-edge basis, and one bordered gauge coordinate
+per_site: checked and not executed — the calculation uses one translation-invariant reflected unit cell, not an inhomogeneous site family
+per_mode: checked all endpoint and finite modes of the declared odd border at spatial momentum pi over two only
+per_block: checked the 28-dimensional strong companion, three-mode minimal response, metric equations, and moment Gram matrices
+lattice_wide: checked and not executed — no Brillouin-zone, nonlinear-background, continuum, or all-lattice result is claimed
+EXACT_OS_SELF_ADJOINT_RESPONSE_VERDICT: BOUNDED_INFEASIBLE; PHYSICAL_BOUNDARY_RESPONSE: OPEN; GRAVITY_VERDICT: OPEN
+MINIMUM_CHANGE: a derived boundary response, source/readout map, action, or the self-adjoint/OS transfer requirement must change; deleting a source-visible pole is not source-faithful
+TOE_MOVEMENT: obligations=0 percentages=0 axioms_amended=0
+elapsed_sec=0.29
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

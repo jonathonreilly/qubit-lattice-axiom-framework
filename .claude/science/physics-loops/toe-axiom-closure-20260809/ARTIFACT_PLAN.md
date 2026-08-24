@@ -1954,3 +1954,90 @@ complete conditional nonlinear compact solution:
   with exactly one intended failed aggregate; these mutate raw-Hessian
   metadata, lift rank, lift ratios, cancellation response, refinement data,
   Schur-identity residual, and note content rather than bypassing the checks
+
+## Block 181 Pre-Registered Reflected-Action Canonical-Reduction Contract
+
+- portfolio decision: an independent three-route challenge rejects a bare
+  action-weighted Riesz lift or one-frequency stationary Schur lift as the
+  next decisive object. The Block-74 reflected source-bearing action has a
+  temporal Laurent stencil through shifts `-2,...,+2`, so a reduction must
+  first distinguish gauge constraints, auxiliary directions, higher-step
+  branches, and physical TT modes. This block therefore combines the two
+  cheapest independent falsifiers of an action-derived physical reduction:
+  global regularity of the stationary metric/nonmetric section and the full
+  gauge-bordered odd-TT spectral weights at one hostile momentum
+- exact target: for the literal Block-74 action
+  `Q_mu(q)=Q_union(q)+mu D(-q)^T D(q)` at `mu=1/1024`, decide whether the
+  supplied action, common-metric map, and exact Ward columns alone provide
+  both (i) a globally regular stationary section of the metric quotient and
+  (ii) a positive one- or two-step transfer on the complete odd transverse-
+  traceless gauge quotient. A positive result requires both parts; failure of
+  either is only a bounded retirement of this automatic canonical-reduction
+  route, never a gravity no-go
+- stationary-section family A: at real `q_t=0`, let
+  `M(q)` be the 22-by-10 common-metric map,
+  `N(q)=ker(M(q)^dagger)`, `C(q)=N(q)^dagger Q_mu(q)N(q)`, and
+  `B(q)=N(q)^dagger Q_mu(q)M(q)`. Along the fixed segment from
+  `(0.4,0,0,0)` to `(2pi/9)(-2,0,1,0)`, bracket any change in the Hermitian
+  inertia of `C`, refine one zero, and require at the refined point that
+  `rank M=10`, the full action still has exactly four Ward nulls, and the
+  null row `v^dagger B` is nonzero. Such a point makes the stationary solve
+  nonexistent for generic metric data and nonunique on its compatibility
+  hyperplane, so this declared section is not global
+- stationary-section family B: repeat independently with the fixed
+  zero-momentum complement `N_0=ker(M(0)^dagger)` along the fixed segment
+  from `(0.4,0,0,0)` to `(2pi/9)(-4,-4,1,0)`. The purpose is not to exhaust
+  all possible complements; it tests whether the two pre-existing natural
+  charts cure one another without new patch/atlas data
+- bordered-Laurent family: at spatial momentum `(pi/2,0,0)`, split the full
+  22-edge action and all four gauge columns under exact `y<->z` reflection.
+  In the odd `6-edge/1-gauge` sector construct every Laurent coefficient of
+  the analytic border directly, form its determinant by polynomial
+  arithmetic rather than root fitting, retain rank-deficient endpoint
+  coefficients, and resolve every finite nonzero root. For the local
+  same-time TT-plus observable, compute the bilinear pole weight of the
+  physical covariance built from `-Q_mu`; roots count only when the border
+  multiplier and complete-edge residual vanish and both left/right observable
+  couplings are nonzero. A positive one/two-step result requires every such
+  inside-unit-disk root to be positive real with nonnegative weight. A
+  negative weight, a negative root, or a genuinely coupled complex root is a
+  finite spectral obstruction to that full-quotient transfer
+- invariants and numerical guards: verify the `-2,...,+2` coefficient
+  support, transpose/reciprocal Laurent pairing, two-sided Ward identities,
+  reflection-sector dimensions, determinant reconstruction away from roots,
+  reciprocal root pairing, root residuals, border-multiplier rejection,
+  moment reconstruction from the resolved residues, section-basis invariance,
+  endpoint inertia, bracket sign, full-action rank, and nonzero mixed
+  obstruction row. Report zero/infinite or canceled roots without silently
+  classifying them as physical
+- forbidden weakenings: do not discard a finite branch by naming it
+  nonmetric, choose `|z|<1` as a physical contour, insert a positive
+  completion such as `|Q|` or `Q^2`, tune `mu`, replace the full edge action
+  by its metric congruence, assume a Moore--Penrose or action-power readout,
+  import a Record clock/boundary state, or call an indefinite stationary
+  saddle a minimum. No canonical axiom, audit surface, citation manifest,
+  Block-180 artifact, or other-worker file is edited; no `review-loop` is used
+- approach-family registry: `R1` complete bordered Laurent/Kronecker census
+  and TT residues (primary); `R2` momentum-orthogonal stationary Schur
+  section; `R3` fixed-complement stationary Schur section; `R4` positive-
+  completion/action-weighted Riesz sections; `R5` half-space Weyl/Feshbach
+  or exact projective/perfect-action blocking; `R6` connection/holonomy,
+  improved/Pachner/tent, or stable nonflat action; `R7` Record-native
+  extensional joint law selecting the contour, source, norm, and cadence.
+  `R4` is not promoted because several positive action functions give
+  inequivalent lifts; `R5--R7` remain live regardless of this block
+- decision and claim-strength rule: if either declared stationary chart has a
+  sourced vertical pole, the action does not supply that global section. If
+  the complete odd TT covariance has a coupled non-positive spectral branch,
+  the unreduced Block-74 action does not itself define a positive one- or
+  two-step TT transfer. Passing both would be only a bounded constructive
+  reduction candidate pending source/Record, half-space, refinement, and
+  nonlinear checks. Failing either localizes the needed new datum to an
+  explicit constraint/patch-and-contour/positive-boundary law or a changed
+  action; it does not prove that no such law exists and licenses no axiom edit
+- completion witness: one theorem-or-boundary note, one independently
+  executable runner, one content-pinned cache, exact primary `PASS/FAIL`, at
+  least six real evidence mutations each failing exactly one aggregate, and a
+  landed N1--N8 packet with the five required N5 resolution lines. TOE scores
+  move only if a physical positive transfer obligation is actually retired;
+  a blocker localization alone records zero percentage movement

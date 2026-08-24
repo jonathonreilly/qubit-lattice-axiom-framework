@@ -1,0 +1,46 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_reflected_curvature_momentum_source_quotient_sign_boundary_2026_08_24.py
+runner_sha256: 6c81ec601cbcb7d8a340a915cac7513b34e2e9aa5f85cd2f6aea9d4e8587b0ca
+input_fingerprint_sha256: 86865e19007f91ba69c61f1637c99eb35dac822d5697883ae82f817b164e263f
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 8.22
+status: ok
+----- stdout -----
+[PASS] supplied-action-sector-source-binding: the literal mu=1/1024 action, both y/z sectors, and supplied Record carriers are bound w...
+       edges=22; odd=(22, 6)/(4, 1); even=(22, 16)/(4, 3)
+[PASS] global-axial-odd-rank-five-phase-boundary: a degree-(5,4) bivariate Bernstein certificate localizes the full-circle PSD boundary
+       k0=0.088418457942407; k*=0.089087587924519; Bernstein min=-9.66e-11; rank1=8.0e-14; heldout=2.75e-13
+[PASS] periodic-ir-negative-band-and-transition-pole: L=72 lies in the all-frequency negative band while L=71 carries an exact temporal unit-c...
+       L72 min=-7.926e-05; L71 static=5.297e-06; theta_pole=0.691266304426; sigma=3.54e-15
+[PASS] same-metric-record-source-quotient-obstruction: two Ward-conserved odd sources with identical metric stress have opposite-sign covarianc...
+       M^T(r-o)=1.45e-16; oCo=262.795160; rCr=-19528.101592; dCd=-19790.597894
+[PASS] tt-newtonian-subchannel-hides-but-does-not-remove-pole: the sampled local TT density stays positive with k^2 C near two, yet its tiny nonzero po...
+       rho=[0.503010,262.795160]; k2C=2.001299586; overlap=9.669e-06; sides=-198.27/708.23
+[PASS] metric-first-reduction-constructive-escape: restricting the action before inversion gives a positive source-faithful odd metric quot...
+       grid min=2.500e-07; M-gauge=2.09e-14; reduced o/r=262.795144/262.795144; P C P=-4685.004
+[PASS] equal-magnitude-negative-sign-odd-repair-counterfactual: mu=-1/1024 repairs the odd IR sign while preserving Ward, source solves, and the static ...
+       zero inertia=(10, 2, 10); 6528 residual=1.07e-10; odd min=2.284e-03; o/r=262.795/522.154
+[PASS] even-sector-sign-flip-and-curvature-null-wall: the equal sign flip creates a cross-TT-visible even pole and cannot alter three curvatur...
+       theta=1.058285602655056; sigma=5.17e-15; overlap=4.566e-04; C sides=518.41/-517.18; kerD=((3, 8, 0), (3, 8, 0), (3, 8, 0))
+[PASS] no-go-discipline-axiom-and-toe-boundary: the two route failures are bounded while physical reduction, changed action, gravity, an...
+       raw full-source GNS and the tested sign flip stop; selected TT/constraint sections, other actions, nonlinear gravity, and Record dynamics remain live
+AXIAL_PHASE_CERTIFICATE: in the odd sector k>=0.0890875879243 is rank-five PSD on the full temporal circle; a transition shell and an infrared negative band lie below
+SOURCE_QUOTIENT_CERTIFICATE: at L=72, M^T r=M^T o and both sources are Ward-conserved, but r^dag C r<0<o^dag C o, so the raw covariance does not descend to metric-source classes
+METRIC_REDUCTION_CERTIFICATE: reducing the action to the common-metric image before inversion restores representative independence and a positive tested odd quotient; projecting sources after raw inversion does not
+SIGN_COUNTERFACTUAL_CERTIFICATE: mu=-1/1024 repairs the tested odd infrared fiber and retains the inherited source/Newtonian gates, but creates a cross-TT-visible even-sector unit-circle pole
+CURVATURE_NULL_CERTIFICATE: on the tested even fibers, ker D within the conserved quotient has inertia (3-,8+), so changing only the coefficient of D^dag D cannot make the raw full-source form positive
+PHYSICAL_DECISION: derive a source/constraint section or a different action from independent physics before returning to quantum GNS and Record construction
+N5_CERTIFICATE: the execution resolutions below state exactly what this runner did and did not resolve
+per_element: checked all six odd edge coordinates, all sixteen even edge coordinates, their one/three Ward columns, and two equal-metric source representatives
+per_site: checked closed neutral Record-line pairs on the exact L=71 and L=72 periodic witnesses; no arbitrary inhomogeneous lattice is claimed
+per_mode: certified the full axial odd temporal circle above the global threshold and localized odd/even unit-circle poles below it
+per_block: checked the supplied action, source quotient, equal-magnitude sign counterfactual, inherited 6528-source battery, and static residue
+lattice_wide: checked and not executed — no off-axis full Brillouin zone, nonlinear background, canonical reduction, refinement, quantum Record, or gravity theorem is claimed
+RAW_FULL_SOURCE_MATRIX_GNS_VERDICT: BOUNDED_INFEASIBLE; EQUAL_MAGNITUDE_SIGN_FLIP_VERDICT: BOUNDED_INFEASIBLE; PHYSICAL_REDUCTION_VERDICT: OPEN; GRAVITY_VERDICT: OPEN
+TOE_MOVEMENT: obligations=0 percentages=0 axioms_amended=0
+elapsed_sec=4.67
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

@@ -21,16 +21,17 @@ bearing.
 
 ## Frozen Carrier Gate
 
-First set directions two and three to zero and inject the two-direction
-exterior algebra by tensoring with the spectator vacuum.  This canonical map
-must intertwine `Q`, the in-plane metric vertices, recoil, and reflection.
+Retain Block-190 direction zero as space and direction three as time, set
+directions one and two to zero, and inject the `(space,time)` exterior algebra
+by tensoring with the two spectator vacua.  This canonical map must intertwine
+`Q`, the in-plane metric vertices, recoil, and reflection.
 
 For the Block-128 comparison, use its landed `cover_embedding()` and
-`chart_differential_cover()` literally.  Map the ordered two-direction form
-basis `(1,e_0,e_1,e_0 wedge e_1)` to the four binary fine-cell offsets
-`(0,0),(1,0),(0,1),(1,1)` in that order, with only the wedge-orientation sign
-forced by `c_0 c_1=-c_1 c_0`.  No permutation, diagonal phase, or similarity
-may be solved from the target action.  Require one map to intertwine the
+`chart_differential_cover()` literally.  Its displayed column order maps the
+ordered form basis `(1,e_x,e_t,e_t wedge e_x)` to the `(time,space)` fine-cell
+offsets `(0,0),(0,1),(1,0),(1,1)`, with the wedge-orientation sign forced by
+`c_t c_x=-c_x c_t`.  No permutation, diagonal phase, or similarity may be
+solved from the target action.  Require one map to intertwine the
 action, reflected history support, Hodge vertex, and Ward/recoil object.  The
 first invariant mismatch stops this route.
 

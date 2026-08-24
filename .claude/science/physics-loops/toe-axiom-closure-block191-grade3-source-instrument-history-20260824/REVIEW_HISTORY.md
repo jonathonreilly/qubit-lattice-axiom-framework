@@ -10,4 +10,8 @@
   followed by the grade-three source/instrument/history/write conjunction.
 - The panel's grade scan and explicit commuting pair are scout disclosures,
   not this campaign's result.
+- Before executing the carrier response, the landed Block-128
+  `cover_embedding()` column convention corrected the preregistered prose to
+  `(scalar,space,time,time wedge space)` at offsets
+  `((0,0),(0,1),(1,0),(1,1))`; no target residual had yet been computed.
 - No review-loop or audit verdict has been run.

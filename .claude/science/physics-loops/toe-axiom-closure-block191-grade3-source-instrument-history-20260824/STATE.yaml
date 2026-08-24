@@ -1,0 +1,14 @@
+campaign: toe-axiom-closure-block191-grade3-source-instrument-history-20260824
+status: preregistered
+parent_commit: c6737fe46df64315f895921c2362f50f00f0b036
+origin_main: c79384cb8ffa27fcb53cb89c53a84a708442eaad
+active_gate: capped_curved_carrier_port
+successor_gate: grade3_source_instrument_history_write_conjunction
+carrier_attempt_cap: 2
+state_attempt_cap: 2
+discovery_strata: [axis, face, body]
+held_out_points: [asymmetric_face, asymmetric_body]
+obligation_retirement: 0
+toe_percentage_movement: 0
+axiom_status: unchanged
+review_loop: forbidden_by_user_instruction

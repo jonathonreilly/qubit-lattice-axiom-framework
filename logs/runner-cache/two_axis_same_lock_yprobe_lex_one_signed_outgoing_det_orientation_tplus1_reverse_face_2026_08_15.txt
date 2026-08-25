@@ -1,0 +1,90 @@
+===== runner cache v1 =====
+runner: scripts/two_axis_same_lock_yprobe_lex_one_signed_outgoing_det_orientation_tplus1_reverse_face_2026_08_15.py
+runner_sha256: 64fe4a671ca94579bfb51232681b8d2a67f5b1ff7ca95d6ec77bbe0bd94c67e4
+input_fingerprint_sha256: 3e0a1164b5d68e0ce9084ba47b834bcd00196ec24f01c7b83f2e57070552af7e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+lex-one signed outgoing det orientation reverse/face at t+1 on two-axis same-lock y-probes
+AUDIT_INPUT_PATHS:
+  docs/TWO_AXIS_SAME_LOCK_YPROBE_LEX_ONE_SIGNED_OUTGOING_DET_ORIENTATION_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Lex-one signed-outgoing det orientation at t+1 on the four y-probes of the two-axis same-lock seed, and reverse/face from that, are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/TWO_AXIS_SAME_LOCK_YPROBE_LEX_ONE_SIGNED_OUTGOING_DET_ORIENTATION_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-y-probes-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: det-identity
+PASS: orient-identity
+PASS: pair-orient-identity
+A t=0 M={+e_1} O={+e_2, −e_3} split=hold m=+e_1 oj,ok=+e_2, −e_3 det=-1 Orient=−1
+B t=1 M={+e_1} O={+e_2, +e_3, −e_3} split=hold m=+e_1 oj,ok=+e_2, +e_3 det=1 Orient=+1
+C t=1 M={+e_2} O={+e_1, −e_1, +e_3, −e_3} split=hold m=+e_2 oj,ok=+e_1, +e_3 det=-1 Orient=−1
+D t=2 M={−e_3} O={+e_1} split=fail m=−e_3 oj,ok=fail det=fail Orient=fail
+Orient reverse=fail face=fail
+split reverse=hold face=fail
+cover reverse=hold face=fail
+per_element: unique signed incoming letter and lex-one signed outgoing letters per Axis(O) in axis order at a probe's t+1
+per_site: scored only at y-probes A,B,C,D on Euclidean B_3(0); no other sites
+per_mode: no spectral or mode calculation is executed on this finite host
+per_block: four Orient reports, reverse/face from equal +/-1 signs
+lattice_wide: checked and not executed — no lattice-wide lettering rule is claimed
+PASS: perp-step-incoming-lock
+PASS: undefined-if-unformed
+PASS: theorem1-formation-ticks  ({'A': 0, 'B': 1, 'C': 1, 'D': 2})
+PASS: theorem1-M-O-split  ({'A': ('{+e_1}', 'hold'), 'B': ('{+e_1}', 'hold'), 'C': ('{+e_2}', 'hold'), 'D': ('{−e_3}', 'fail')})
+PASS: theorem1-Orient  ({'A': '−1', 'B': '+1', 'C': '−1', 'D': 'fail'})
+PASS: theorem1-mixed-O-lex-one-not-unique
+PASS: theorem1-M-frozen-from-t
+PASS: theorem1-new-records-meet-6nn  ({'A': ((0, 2, 0), (0, 1, -1)), 'B': ((1, 2, 1), (1, 1, 2), (1, 1, 0)), 'C': ((1, 2, 0), (-1, 2, 0), (0, 2, 1), (0, 2, -1)), 'D': ((2, 1, 0),)})
+PASS: theorem1-A-is-seed
+PASS: theorem2-reverse-orient-fail
+PASS: theorem3-face-orient-fail
+PASS: cover-and-split-do-not-score-handedness
+PASS: split-fail-is-orient-fail-not-undefined
+PASS: empty-Oi-is-orient-fail-not-undefined
+PASS: not-leftover-of-1-axis-cover-face-hold
+PASS: not-leftover-empty-fail
+PASS: mutation-leftover-of-M-or-O-alone-differs
+PASS: mutation-exist-opposite-differs
+PASS: mutation-unsigned-incoming-agrees-on-this-member
+PASS: mutation-unique-letter-undefined-at-mixed-O
+PASS: mutation-sum-cancels-mixed
+PASS: O-is-not-M
+PASS: second-pair-is-seed-not-formed-child
+PASS: not-x-probes-or-z-probes-or-z-symmetric-or-perp
+PASS: not-two-axis-opposite-or-one-axis-or-y-symmetric-seed
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: note-claim-scope
+PASS: note-reports-M-O-split-Orient
+PASS: note-reports-new-neighbors
+PASS: note-reports-orient-reverse-face
+PASS: note-displayed-not-adopted
+PASS: note-not-cover-or-split
+PASS: note-not-one-sided-or-leftover-empty
+PASS: note-not-two-tick-lock-count-clock
+PASS: note-not-mixed-7188-fail-fail
+PASS: note-no-global-T
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+PASS: orient-lex-one-not-unsigned-or-unique
+TOTAL: PASS=58 FAIL=0
+
+----- stderr -----
+

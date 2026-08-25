@@ -1,0 +1,100 @@
+===== runner cache v1 =====
+runner: scripts/two_axis_same_lock_distance_two_neighbor_read_lpath_minus_e3_minus_e1_cyclic_frame_transport_tplus1_reverse_face_2026_08_15.py
+runner_sha256: 824b9aca5726540c7d4dba7ec0ed68c7a07f86debf498ea24f0f9d27618c8d80
+input_fingerprint_sha256: 3cf54bf334467673c98318888e40d23980e188a902c4c19b6313a40831e20f02
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+Distance-2 neighbor-read of L-path cyclic-frame transport -e3 then -e1 at t+1
+AUDIT_INPUT_PATHS:
+  docs/TWO_AXIS_SAME_LOCK_DISTANCE_TWO_NEIGHBOR_READ_LPATH_MINUS_E3_MINUS_E1_CYCLIC_FRAME_TRANSPORT_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+displayed_not_adopted: true
+PASS: audit-input-paths-literal
+PASS: audit-inputs-exist
+PASS: source-lattice
+PASS: source-admissibility-unedited
+PASS: source-record-boundary
+PASS: euclidean-ball-cardinality
+PASS: seed-tick-zero
+PASS: seed-incoming-locks
+PASS: perp-step-blocks-parallel
+PASS: tick1-record-count  (14)
+PASS: signed-permutation-identity
+probe (0,0,0) t=0 tau=1 lpath=hold distance_two=fail path=(0,0,0)->(0,0,-1)->(-1,0,-1)
+  (0,0,0) t=0 m=(1,0,0) o_next=(0,-1,0) o_prev=(0,0,-1) Orient=1
+  (0,0,-1) t=1 m=(0,0,-1) o_next=(-1,0,0) o_prev=(0,-1,0) Orient=-1
+  (-1,0,-1) t=2 m=(-1,0,0) o_next=(0,-1,0) o_prev=(0,0,-1) Orient=-1
+  hop1 (0,0,0)->(0,0,-1) P=[0 1 0; 0 0 1; -1 0 0] edge=hold
+  hop2 (0,0,-1)->(-1,0,-1) P=[0 0 1; 1 0 0; 0 1 0] edge=hold
+  formed_d2=18
+  witnesses=none
+PASS: named-first-edge-(0,0,0)-(0,0,-1)
+PASS: named-second-edge-(0,0,-1)-(-1,0,-1)
+probe (0,1,0) t=0 tau=1 lpath=hold distance_two=hold path=(0,1,0)->(0,1,-1)->(-1,1,-1)
+  (0,1,0) t=0 m=(1,0,0) o_next=(0,1,0) o_prev=(0,0,-1) Orient=-1
+  (0,1,-1) t=1 m=(0,0,-1) o_next=(-1,0,0) o_prev=(0,1,0) Orient=1
+  (-1,1,-1) t=2 m=(-1,0,0) o_next=(0,1,0) o_prev=(0,0,-1) Orient=1
+  hop1 (0,1,0)->(0,1,-1) P=[0 -1 0; 0 0 -1; -1 0 0] edge=hold
+  hop2 (0,1,-1)->(-1,1,-1) P=[0 0 1; -1 0 0; 0 -1 0] edge=hold
+  formed_d2=17
+  d2 (0,1,2) t=1 lpath=hold
+  witnesses=(0,1,2)
+PASS: named-first-edge-(0,1,0)-(0,1,-1)
+PASS: named-second-edge-(0,1,-1)-(-1,1,-1)
+probe (0,0,1) t=0 tau=1 lpath=fail distance_two=fail path=(0,0,1)->(0,0,0)->(-1,0,0)
+  (0,0,1) t=0 F=fail Orient=fail
+  (0,0,0) t=0 m=(1,0,0) o_next=(0,-1,0) o_prev=(0,0,-1) Orient=1
+  (-1,0,0) t=2 F=fail Orient=fail
+  hop1 (0,0,1)->(0,0,0) P=fail edge=fail
+  hop2 (0,0,0)->(-1,0,0) P=fail edge=fail
+  formed_d2=17
+  d2 (0,1,0) t=0 lpath=hold
+  d2 (0,1,2) t=1 lpath=hold
+  d2 (1,-1,1) t=2 lpath=hold
+  witnesses=(0,1,0),(0,1,2),(1,-1,1)
+PASS: named-first-edge-(0,0,1)-(0,0,0)
+PASS: named-second-edge-(0,0,0)-(-1,0,0)
+probe (0,1,1) t=0 tau=1 lpath=fail distance_two=fail path=(0,1,1)->(0,1,0)->(-1,1,0)
+  (0,1,1) t=0 m=(0,1,0) o_next=(0,0,1) o_prev=(-1,0,0) Orient=-1
+  (0,1,0) t=0 m=(1,0,0) o_next=(0,1,0) o_prev=(0,0,-1) Orient=-1
+  (-1,1,0) t=2 F=fail Orient=fail
+  hop1 (0,1,1)->(0,1,0) P=[0 1 0; 0 0 1; 1 0 0] edge=hold
+  hop2 (0,1,0)->(-1,1,0) P=fail edge=fail
+  formed_d2=16
+  d2 (0,0,0) t=0 lpath=hold
+  witnesses=(0,0,0)
+PASS: named-first-edge-(0,1,1)-(0,1,0)
+PASS: named-second-edge-(0,1,0)-(-1,1,0)
+reverse=fail bits=('fail', 'hold')
+face=fail bits=('fail', 'fail')
+PASS: theorem1-seed-frames
+PASS: theorem1-path-frames
+PASS: theorem1-lpath-bits
+PASS: theorem1-distance-two-bits
+PASS: theorem1-existential-witnesses
+PASS: theorem2-reverse-fail
+PASS: theorem3-face-fail
+PASS: lpath-fail-distance-two-fail-not-undefined
+PASS: origin-hold-empty-witness-distance-two-fail
+PASS: not-leftover-of-bare-lpath
+PASS: distance-two-not-six-neighbor
+PASS: not-leftover-of-one-step-minus-e3
+PASS: not-leftover-of-two-step-minus-e3
+PASS: not-leftover-of-six-neighbor-read
+PASS: mutation-lex-largest-uses-minus
+PASS: outside-ball-is-fail
+PASS: face-second-hop-split-fail
+PASS: note-claim-scope
+PASS: note-computed-bits
+PASS: note-forbidden-phrases
+PASS: note-no-status-overclaim
+PASS: axiom-file-unedited-by-this-packet
+TOTAL: PASS=41 FAIL=0
+
+----- stderr -----
+

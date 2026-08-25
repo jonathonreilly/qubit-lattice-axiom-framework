@@ -16,3 +16,9 @@ No continuum OS theorem, Wick rotation, Hamiltonian logarithm, transfer-matrix
 positivity theorem, Lüders repetition law, Born rule, Markov assumption,
 decoherence rate, physical clock, or Record cadence is silently imported.  If
 one is necessary, the dependency gate fails and names it.
+
+Executed disposition: the Block-194 PVM itself is an exact normalized one-shot
+Lüders instrument.  None of the three tested constructions selects the CPTP
+channel, time orientation, or PVM ordering between crossings from the current
+parents.  Full OS/GNS/CAR and parity-doubled reconstructions remain unimported
+and untested.

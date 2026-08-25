@@ -1,13 +1,21 @@
 # No-Go Ledger
 
-No Block-195 negative exists at preregistration.
+No-Go Discipline status: `FAIL`; negative disposition:
+`partial-attempt-with-named-untested-routes`.
 
-Failure to derive a unique normalized prefix instrument can close only the
-route that attempts to obtain that instrument from the current finite
-Euclidean L24 action, reflected construction, and fixed Block-194 apparatus
-without an added time/measurement bridge.  It is not a no-go for:
+The direct graph restriction has exact residual rank two and a negative
+contraction witness.  The Gram-projected translations fail OS self-adjointness
+and composition at order three.  The adjacent predictor is strict, but the
+positive kernel does not type its exact Clifford lift as a CP subinstrument.
+Conditional tagging admits two cubic/fiber-label-covariant CPTP completions
+that give different cylinders while preserving the same state and prefix.
+These results close only those three tested
+extractions from the current finite action/cut and apparatus.  They are not a
+no-go for:
 
-- a separately derived physical transfer operator or OS reconstruction;
+- a full OS/GNS/CAR positive-time reconstruction;
+- a parity-doubled/two-step state or global Euclidean process tensor;
+- a separately derived physical transfer operator or clock;
 - a different action with a proved positive transfer matrix;
 - the Regge-D4-L24 intertwiner and Riesz observable route;
 - independently physical extended or network detectors;
@@ -15,8 +23,9 @@ without an added time/measurement bridge.  It is not a no-go for:
 - Record formation/permanence after another complete history law;
 - gravity, Born forcing, the minimal axioms, or the TOE program.
 
-Failure of full-period rank two, if the prefix gate passes, closes only the
-fixed Block-194 detector under that one derived L24 instrument and full-period
-cadence.  Any negative packaging must run the current No-Go Discipline N1--N8
-stress test.  A live untested route forces `FAIL` and demotion to the canonical
-partial-attempt disposition; it must not be rhetorically upgraded.
+The exact positive result is that the Block-194 PVM already defines a complete
+one-shot Lüders instrument.  TT response and held-outs were never executed.
+N1 and N7 fail because credible materially different reconstruction routes
+remain live.  The full N1--N8 packet and directional-wall audit are in the
+source note.  No broad time/history negative, axiom update, obligation
+retirement, retained theory, or TOE movement is claimed.

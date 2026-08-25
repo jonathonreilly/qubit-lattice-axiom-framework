@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_d4_l24_prefix_instrument_selection_boundary_2026_08_25.py
+runner_sha256: 7ae799d30e1c0a97af0ab3645d7dc1849cee9dc4fba28b67305d47ea4da02154
+input_fingerprint_sha256: 6acc31d5927372eb68fe0adea752a4f769f52cd2c7e2bbc4ae6cd5c48c1a7c43
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 7.82
+status: ok
+----- stdout -----
+[PASS] A: authority, parent, preregistration, axioms, registry, and literal inputs are pinned
+[PASS] B: Block 194 supplies an exact normalized one-shot Lueders instrument and faithful M2 dilation
+[PASS] C: the direct positive-time coordinate shift leaves the Schur graph and fails OS contraction
+[PASS] D: the Gram-projected shifts are not OS self-adjoint and stop composing at order three
+[PASS] E: the raw predictor is strict while the reflected kernel exposes even-lag correlations
+[PASS] F: one conditional CP subchannel has two cubic/fiber-label-covariant inequivalent completions
+[PASS] G: the failed dependency gate seals response and demotes the negative with zero TOE movement
+per_element: checked the eight exact Block-194 Lueders Kraus projectors, one reduced action fiber, one conditional lifted CP subchannel, and two exact CPTP completions.
+per_site: checked one adjacent L24 covariance predictor and one fixed first-to-second event prefix; no physical time step was assumed.
+per_mode: checked the frozen radius-zero and radius-one reflected lag-one/lag-two kernels; no TT source response or held-out point was evaluated.
+per_block: checked one-shot instrument, coordinate shift, metric projection, covariance predictor, and channel completion as separate dependency blocks.
+lattice_wide: checked and not executed -- no full OS/CAR reconstruction, global process tensor, autonomous Record persistence, Regge bridge, nonlinear gravity, or retained TOE theory is claimed.
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

@@ -22,3 +22,12 @@ prefix instrument before sequential Record language or response computation is
 allowed.  Failure promotes the intertwiner immediately.  If it passes, the
 one frozen L24 history must have rank two at D1 and H1 with all outcome labels
 retained and no cadence, horizon, history, detector, phase, or weight refit.
+
+Executed return: the mathematical-physics dissent correctly identified the
+dependency.  The one-shot instrument is exact, but the three cheapest channel
+extractions fail or remain nonunique before response.  This does not negate
+the other panelists' orbit argument; it makes that argument conditional on a
+full OS/CAR, enlarged-state, process-tensor, or separately derived transfer
+construction.  The portfolio resolution now promotes the Regge-D4-L24
+intertwiner, while preserving those materially different history routes as
+live rather than treating the bounded stop as universal.

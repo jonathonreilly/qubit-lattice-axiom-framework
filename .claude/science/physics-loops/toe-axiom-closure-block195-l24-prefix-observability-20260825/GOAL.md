@@ -63,3 +63,15 @@ If discovery and held-outs all pass, quantify exactly which local Record
 formation and persistence clauses are now instantiated and which still need
 physical input.  No axiom amendment, obligation retirement, retained status,
 or TOE percentage movement is preregistered.
+
+## Executed Disposition
+
+The dependency gate fails before the full-period gate.  The exact PVM is a
+normalized one-shot Lüders instrument, but the literal shift is not an OS
+contraction on the Schur graph, the Gram-projected translations fail their
+composition law at order three, and the adjacent predictor is not physically
+typed as a CP subinstrument by the positive kernel.  Conditional tagging has
+multiple cubic/fiber-label-covariant completions with inequivalent two-event
+cylinders.  TT response and held-outs remain sealed.  The result is a bounded derivation boundary,
+not a no-go for fuller OS/CAR or enlarged-state reconstruction.  The frozen
+Regge-D4-L24 fallback is now the active successor.

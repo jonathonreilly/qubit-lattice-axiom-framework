@@ -9,7 +9,16 @@ Preregistration refresh at 2026-08-25T17:12:18Z:
 - PR #7669 is OPEN/CLEAN on its own gravity stack.  It proves exact
   Hodge-volume spectral sensitivity but explicitly supplies no OS
   reconstruction, physical lapse, gravity structure, or Regge-D4-L24 map.
-- New PRs through #7714 are lphys frame/neighbor-transport probes.  Their
-  HOLD/FAIL results do not derive the L24 prefix law or cross-carrier
-  intertwiner.
-- Recheck before publication and at the route pivot.  Do not use review-loop.
+- Grok PRs #7715--#7722 are one-commit children of exact main `b118117` and
+  touch individual lphys transport note/runner/cache triples.  They do not
+  supply the Regge-D4-L24 carrier, placement map, channel, or Riesz section.
+- Pincer PRs #7318 and #7327--#7333 contain useful post-map Riesz formulas;
+  #7327 is the strongest candidate.  They remain downstream because physical
+  carrier selection, source/event identification, clock/write, and strict-NN
+  typing are open.
+- Route-pivot preflight found the 15 positive Regge edge carrier is not closed
+  under time reflection or all 24 proper spatial frames.  The next campaign
+  must use 15 only for Ward/S3, 22 for reflection, and 40 or an equivalent
+  orientation bundle for full-frame covariance.
+- Current locally observed PR state was rechecked before publication; no PR
+  changes the Block-195 boundary.  Do not use review-loop.

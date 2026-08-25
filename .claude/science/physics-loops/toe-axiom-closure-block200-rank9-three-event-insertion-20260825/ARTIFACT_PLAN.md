@@ -1,7 +1,10 @@
 # Artifact Plan
 
 1. COMPLETE: independent hostile preflight and frozen packet.
-2. IN PROGRESS: commit and push preregistration before target execution.
+2. COMPLETE WITH DISCLOSED ERRATUM: preregistration was pushed before target
+   execution; two T0--T2 dry runs are discarded after an independently found
+   tensor-order convention correction, which is frozen before evidentiary
+   reexecution and before the no-import checker's first execution.
 3. PENDING: implement one exact primary runner for T0--T6 with the frozen
    `MUTATION_PLAN.md` families and five resolution lines.
 4. PENDING: implement a no-import checker for Q024/Q02, registered operation

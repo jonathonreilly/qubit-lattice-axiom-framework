@@ -40,16 +40,21 @@ On `Fock=Lambda(C^32)`, define the vacuum-reduced exterior lift
 
 and on the doubled space
 
-`P_hat_alpha=Gamma_+(F_alpha) tensor conjugate(Gamma_+(F_alpha))`.
+`P_hat_alpha=conjugate(Gamma_+(F_alpha)) tensor Gamma_+(F_alpha)`.
 
 The preregistered linear candidate is
 
 `iota(a I + sum_alpha b_alpha L_alpha)
  = a 1 + sum_alpha b_alpha P_hat_alpha`.
 
+The tensor order is load-bearing: it follows the frozen column-vectorization
+law `vec(K X K*)=(conjugate(K) tensor K)vec(X)`.  Reversing the two doubled
+legs is a swap-conjugate representation with unchanged ranks, but is not
+literally the frozen Liouville convention.
+
 It must independently establish `iota(I)=1`, pairwise orthogonal idempotence
 of the eight `P_hat_alpha`, and `iota(Delta)!=1`.  On bidegree `(1,1)` it
-must reduce exactly to `F_alpha tensor conjugate(F_alpha)`, with branch rank
+must reduce exactly to `conjugate(F_alpha) tensor F_alpha`, with branch rank
 `16`, dephasing rank `128`, and identity rank `1024`.  On the full doubled
 exterior space each selective branch has rank `(2^4-1)^2=225`.
 
@@ -62,9 +67,10 @@ derived action law.  The claimed normal symbol is
 
 `r_F(bar_eta,eta)=exp(bar_eta(F-I)eta)-exp(-bar_eta eta)`,
 
-with doubled branch symbol
+with doubled branch symbol, in the same frozen leg order,
 
-`r_(F_alpha)(bar_eta+,eta+) r_(conjugate(F_alpha))(bar_eta-,eta-)`.
+`r_(conjugate(F_alpha))(bar_eta-,eta-)
+ r_(F_alpha)(bar_eta+,eta+)`.
 
 This is an `O_9` operation candidate, not a unital `E_8` effect insertion:
 `sum_alpha P_hat_alpha` omits the vacuum and mixed-label exterior sectors.

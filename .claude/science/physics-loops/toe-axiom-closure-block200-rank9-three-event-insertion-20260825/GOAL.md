@@ -155,6 +155,10 @@ every invariant sector while extending the one-particle `F_alpha`.  An
 arbitrary assignment, one-particle restriction, or removal of the vacuum is
 not a unital action-derived effect insertion.
 
+Use the actual fixed-context reflection label map inherited from Block 194;
+proper-cubic rotations co-transform the event/detector context and must not be
+misrepresented as a transitive permutation of the frozen eight labels.
+
 ### T3 -- one-/two-crossing descent
 
 Only for maps surviving T2, reproduce the one-shot `1/8` table and derive,

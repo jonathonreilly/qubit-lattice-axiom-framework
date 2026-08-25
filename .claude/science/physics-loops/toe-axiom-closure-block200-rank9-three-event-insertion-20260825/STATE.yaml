@@ -1,7 +1,7 @@
 loop_id: toe-axiom-closure-block200-rank9-three-event-insertion-20260825
 block: 200
-status: preregistered
-phase: pre_target_execution
+status: preregistered_with_disclosed_erratum
+phase: pre_target_reexecution
 branch: physics-loop/toe-axiom-closure-block200-e8-three-event-cylinder-20260825
 parent_commit: f626613b76
 origin_main: b11811704efa98a12272d572f666e530a807f6c1
@@ -15,5 +15,9 @@ axiom_edit_allowed: false
 review_loop_allowed: false
 obligation_retirement: 0
 toe_percentage_movement: 0
-preregistration_commit: pending
+preregistration_commit: 25af72ea95378ac3f83bd53be637b81b014f8723
+registration_erratum_commit: pending
+discarded_primary_dry_runs: 2
+discarded_dry_run_scope: T0_T1_T2_only
+t3_t5_output_observed_before_erratum: false
 result_commit: pending

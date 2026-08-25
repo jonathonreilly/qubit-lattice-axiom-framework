@@ -18,3 +18,10 @@
 - 2026-08-25: independent archaeology found exact reusable Schur, Q, PVM,
   Wick, and recursion tools but no existing Q024 or 32D event-to-Grassmann
   intertwiner.  The new intertwiner is the true computational/science target.
+- 2026-08-25: final hostile convention audit returned after two primary dry
+  runs had already exposed the frozen T0--T2 outcome.  It corrected the
+  doubled tensor order to `conjugate(K) tensor K` under column vectorization
+  and forbade treating proper-cubic context covariance as a transitive
+  fixed-label action.  No T3--T5 value was executed or observed.  The two dry
+  runs are discarded as evidence; this disclosed erratum is frozen before a
+  fresh primary run and before the independent checker's first execution.

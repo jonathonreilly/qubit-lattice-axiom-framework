@@ -1,6 +1,6 @@
 {
  "edge_count": 16109,
- "node_count": 5619,
+ "node_count": 5620,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -429,6 +429,10 @@
   "admissibility_dirac_kahler_bare_character_bounded_theorem_note_2026-08-20": {
    "deps_hash": "bfd27662ad59",
    "out_degree": 3
+  },
+  "admissibility_dirac_kahler_boundary_mode_volume_sensitivity_bounded_theorem_note_2026-08-25": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_dirac_kahler_carrier_reflection_blocker_bounded_theorem_note_2026-08-19": {
    "deps_hash": "e86bfe9a083d",

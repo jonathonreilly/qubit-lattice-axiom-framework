@@ -1,0 +1,74 @@
+===== runner cache v1 =====
+runner: scripts/two_axis_same_lock_lpath_minus_e3_plus_e2_cyclic_frame_transport_tplus1_reverse_face_2026_08_15.py
+runner_sha256: bedc4b170eb2a520e7b2593a75f78ea8f38c3b474de70722d018f453663a19c5
+input_fingerprint_sha256: dc5d07aff0d55d7336a9c49e022b515eb2b5b550b89fd0edaa2104a2c1458a86
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+L-path cyclic-frame transport -e3 then +e2 at t+1
+AUDIT_INPUT_PATHS:
+  docs/TWO_AXIS_SAME_LOCK_LPATH_MINUS_E3_PLUS_E2_CYCLIC_FRAME_TRANSPORT_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+displayed_not_adopted: true
+PASS: audit-input-paths-literal
+PASS: audit-inputs-exist
+PASS: source-lattice
+PASS: source-admissibility-unedited
+PASS: source-record-boundary
+PASS: euclidean-ball-cardinality
+PASS: seed-tick-zero
+PASS: seed-incoming-locks
+PASS: same-lock-pairs
+PASS: perp-step-blocks-parallel
+PASS: tick1-record-count  (14)
+PASS: signed-permutation-identity
+probe (0,0,0) t=0 tau=1 lpath=hold
+  m=(1,0,0) o_next=(0,-1,0) o_prev=(0,0,-1) Orient=1 F=[1 0 0; 0 -1 0; 0 0 -1]
+probe (0,1,0) t=0 tau=1 lpath=fail
+  m=(1,0,0) o_next=(0,1,0) o_prev=(0,0,-1) Orient=-1 F=[1 0 0; 0 1 0; 0 0 -1]
+probe (0,0,1) t=0 tau=1 lpath=fail
+  F=fail Orient=fail
+probe (0,1,1) t=0 tau=1 lpath=hold
+  m=(0,1,0) o_next=(0,0,1) o_prev=(-1,0,0) Orient=-1 F=[0 0 -1; 1 0 0; 0 1 0]
+  edge (0,0,0)->(0,0,-1) formed=(1,1) split=(1,1) P=[0 1 0; 0 0 1; -1 0 0] edge=hold
+PASS: named-edge-(0,0,0)-(0,0,-1)
+  edge (0,0,-1)->(0,1,-1) formed=(1,1) split=(1,1) P=[1 0 0; 0 -1 0; 0 0 1] edge=hold
+PASS: named-edge-(0,0,-1)-(0,1,-1)
+  edge (0,1,0)->(0,1,-1) formed=(1,1) split=(1,1) P=[0 -1 0; 0 0 -1; -1 0 0] edge=hold
+PASS: named-edge-(0,1,0)-(0,1,-1)
+  edge (0,1,-1)->(0,2,-1) formed=(1,1) split=(1,0) P=fail edge=fail
+PASS: named-edge-(0,1,-1)-(0,2,-1)
+  edge (0,0,1)->(0,0,0) formed=(1,1) split=(0,1) P=fail edge=fail
+PASS: named-edge-(0,0,1)-(0,0,0)
+  edge (0,0,0)->(0,1,0) formed=(1,1) split=(1,1) P=[1 0 0; 0 -1 0; 0 0 1] edge=hold
+PASS: named-edge-(0,0,0)-(0,1,0)
+  edge (0,1,1)->(0,1,0) formed=(1,1) split=(1,1) P=[0 1 0; 0 0 1; 1 0 0] edge=hold
+PASS: named-edge-(0,1,1)-(0,1,0)
+  edge (0,1,0)->(0,2,0) formed=(1,1) split=(1,1) P=[0 0 1; 1 0 0; 0 -1 0] edge=hold
+PASS: named-edge-(0,1,0)-(0,2,0)
+reverse=fail bits=('hold', 'fail')
+face=fail bits=('fail', 'hold')
+PASS: theorem1-seed-frames
+PASS: theorem1-zseed-split-fail-not-undefined
+PASS: theorem1-mid-end-frames
+PASS: theorem1-lpath-bits
+PASS: theorem2-reverse-fail
+PASS: theorem3-face-fail
+PASS: not-a-two-step-along-one-axis
+PASS: not-leftover-of-same-lock-one-step-minus-e3
+PASS: not-leftover-of-opposite-lpath
+PASS: mutation-lex-largest-uses-minus
+PASS: outside-ball-is-fail
+PASS: note-claim-scope
+PASS: note-computed-bits
+PASS: note-forbidden-phrases
+PASS: note-no-status-overclaim
+PASS: axiom-file-unedited-by-this-packet
+TOTAL: PASS=36 FAIL=0
+
+----- stderr -----
+

@@ -1,8 +1,13 @@
 # No-Go Ledger
 
-No broad negative is preregistered.  Any failure must remain narrower than
-all event-history, process-tensor, OS/CAR, gravity, Record, axiom, or TOE
-routes.
+The fresh N1--N8 gate fails every broad negative.  Block 199 supports only:
+
+> the registered package and tested pointer-sign projection do not select the
+> declared event-history insertion/boundary functional.
+
+It does not support “the action has no history,” “process tensors fail,” or
+“an axiom is required.”  The two current independent walls are the physical
+action-to-event insertion `W_I` and cyclic-to-causal boundary/gluing `W_B`.
 
 Live alternatives include:
 
@@ -14,4 +19,7 @@ Live alternatives include:
 6. a rebuilt spin structure/source carrier; and
 7. centered-symbol gravity.
 
-If T3 fails, run fresh no-go-discipline N1--N8 and name every untested route.
+The strongest hostile steelman is now the successor campaign: evaluate a
+genuine three-projector word (including the port-equality cylinder) in the
+cyclic quasifree functional, then derive rather than import an open-cut
+positive fixed point.  Every untested route remains live.

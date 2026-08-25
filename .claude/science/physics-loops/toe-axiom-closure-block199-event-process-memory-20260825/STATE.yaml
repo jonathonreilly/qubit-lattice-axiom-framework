@@ -1,12 +1,24 @@
 loop_id: toe-axiom-closure-block199-event-process-memory-20260825
 block: 199
-status: preregistered
-phase: pre_target_execution
+status: result_ready_for_publication
+phase: result_commit
 branch: physics-loop/toe-axiom-closure-block199-event-process-memory-20260825
 parent_commit: fdf8a1b8c7
 origin_main: b11811704efa98a12272d572f666e530a807f6c1
 target: action_derived_fixed_PVM_event_history_functional_then_rank_minimal_process
-known_exploratory_result: scalar_action_Hankel_order_two_but_event_process_interface_untyped
+result: registered_inputs_and_conditional_complete_two_crossing_tables_do_not_select_three_crossing_event_functional
+primary_runner: 7_of_7_pass
+primary_mutations: 15_of_15_rejected_after_stronger_pair_table_upgrade
+independent_checker: 20_of_20_pass
+independent_mutations: 20_of_20_rejected
+interface_deficit: 55
+triple_port_endpoint_probabilities: [1/4, 0]
+process_gate: sealed_at_T3
+audit_lint: zero_errors
+premise_purity: pass
+citation_graph_delta: one_node_five_edges_acknowledged
+repo_invariants: pass_zero_link_and_class_F_violations
+parent_caches: five_of_five_fresh
 response_sealed: true
 heldouts_sealed: true
 toe_scores_frozen: true
@@ -14,5 +26,5 @@ axiom_edit_allowed: false
 review_loop_allowed: false
 obligation_retirement: 0
 toe_percentage_movement: 0
-preregistration_commit: pending
+preregistration_commit: be4c2b2462ed1566aa0f0dd65257e6a87887b674
 result_commit: pending

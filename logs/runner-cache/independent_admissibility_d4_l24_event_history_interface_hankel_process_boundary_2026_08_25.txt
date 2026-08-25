@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/independent_admissibility_d4_l24_event_history_interface_hankel_process_boundary_2026_08_25.py
+runner_sha256: 05ac33098e57c36e0290670978c9ef6e1a52f744360165b8bdb088a94616d162
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 21.16
+status: ok
+----- stdout -----
+[PASS] A1: the exterior-form Clifford algebra and commuting event context are rebuilt
+[PASS] A2: the eight effects are orthogonal rank-four projectors summing to I32
+[PASS] A3: the nonidentity M2 unitary gives the exact one-shot joint pointer pullback
+[PASS] B1: the effect system has dimension eight and is not tomography of M32
+[PASS] B2: eight Lueders Choi directions become only nine after identity insertion
+[PASS] B3: identity and PVM dephasing differ on an exact off-block witness
+[PASS] B4: the minimal coherent CP frame has rank 64; its no-phase part has rank 36
+[PASS] B5: the coherent frame remains a mathematical control, not registered apparatus
+[PASS] C1: the generic exact Q inverse specializes without poles at all nine deltas
+[PASS] C2: a_(n+1)=x a_n-a_(n-1) holds off seam and the source seam is x-2=4 delta
+[PASS] C3: the ordinary nonwrapped Hankel rank is two and circular rank is twelve
+[PASS] D1: every C0,C2,C4 truncated block Hankel is positive definite of rank four
+[PASS] D2: every C4-C2 C0^-1 C2 defect is a strictly positive scalar I2
+[PASS] E1: every M0,M1,M2 block Hankel is rank four with inertia (2,0,2)
+[PASS] E2: the indefinite M defect is nonzero and reproduces the radius-one coefficient
+[PASS] E3: the literal eight-copy M lifts have rank 32 and inertia (16,0,16)
+[PASS] F1: positive C and indefinite M remain field moments, never process marginals
+[PASS] F2: two PSD endpoint laws share every one/two PVM table but differ at the three-port event
+[PASS] F3: no boundary or action-to-event map is imported; T4--T6 remain sealed
+[PASS] F4: the source note is deferred if absent and enforces the type/stop needles once present
+OPERATION: effect_span=8; Lueders=8; plus_identity=9; coherent=64; no_phase=36
+GREEN: nonwrapped_rank=2; circular_rank=12; seam=green_recurrence_x - 2
+MOMENT: radius=1; C_defect=2234183456333136028/490236373215579117313690785; M_defect=-86305920689253797/1623025119874668623872875; M_inertia=(2,0,2); lift=(16,0,16)
+NONUNIQUENESS: endpoint_triple_equal=(1/4, 0); ranks=(224, 480); inertias=((224, 288, 0), (480, 32, 0))
+NOTE: present-checked
+per_element: checked exterior Clifford generators, eight exact event projectors, compressed Choi directions, and every 2x2 field-moment defect.
+per_site: checked the periodic twelve-site Green problem and two three-crossing fixed-PVM endpoint laws with identical one/two tables.
+per_mode: checked the rank-two scalar recurrence, rank-twelve circular Hankel, two-component C/M fibers, and eight-copy M lift.
+per_block: checked PVM/M2, operation spans, Green inverse, C-Hankel, M-Hankel, and interface types as separate blocks.
+lattice_wide: checked and not executed -- no event insertion map, boundary state, history PSD, process comb, response, held-out, axiom, or TOE closure is supplied.
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

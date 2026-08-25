@@ -1,16 +1,24 @@
 # Panel Return
 
-The post-Block-198 five-role panel voted `3-1-1` for an event-generated,
-rank-minimal finite-memory process route.  Three independent preflight roles
-then agreed on a correction:
+After the exact Block-199 result, the constructive theorist, hostile auditor,
+computational physicist, foundations/axiom specialist, and portfolio chair
+reranked the live routes.  First-choice vote:
 
-- the frozen PVM effect system is only eight-dimensional and commutative;
-- the action field moments are not yet event-process moments;
-- scalar Hankel order two is not yet a process-memory dimension;
-- the periodic Euclidean functional, open-cut kernel, and causal comb are
-  distinct objects; and
-- no current premise supplies the action-to-operation or causal-boundary map.
+- rank-nine action-derived insertion/triple selector: `4`;
+- cyclic-to-causal scalar boundary: `1`;
+- all others: `0`.
 
-The campaign therefore begins with a fixed-PVM history/interface theorem.
-This preserves the panel's route while preventing a circular memory choice or
-an imported boundary state.
+The majority selected insertion first because the exact `b` family converts
+underdetermination into a sharp construction target: compute one
+action-selected value of the triple-port-equality cylinder while reproducing
+all-nine-radius positive sign moments, preserving reflection/cubic covariance,
+keeping identity distinct from PVM dephasing, and excluding the indefinite
+Berezin moments from probability use.  This would be a Euclidean event-law
+bridge, not yet a causal process.
+
+The minority preferred the scalar boundary first because its algebra is
+cheaper.  The panel nevertheless agreed unanimously that boundary is an
+independent second dependency: it must derive a cut and positive fixed point
+from periodic gluing and explain how circular rank twelve becomes a directed
+interval law.  Neither isolated campaign permits an axiom edit, TOE score
+movement, full-process language, or Record/Born claim (`5-0`).

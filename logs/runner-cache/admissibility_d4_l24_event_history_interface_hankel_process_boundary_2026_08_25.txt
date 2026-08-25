@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_d4_l24_event_history_interface_hankel_process_boundary_2026_08_25.py
+runner_sha256: 7507326354d323920843d4dc247e6c0ca9572805ac3e4806e715223b5939ab3a
+input_fingerprint_sha256: 9636d9eafa35aca553351e12acda2cf7fd4720a94e36276495c98a83940b6664
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 20.65
+status: ok
+----- stdout -----
+[PASS] A: authority, preregistration ancestry, premise blobs, and literal inputs bind
+[PASS] T0: the registered 8/9-dimensional operation domain, identity/dephasing split, and 64-probe mathematical control are exact
+[PASS] T1: the cyclic Green, open-cut covariance, positive moment, and reflected Berezin objects remain distinctly typed
+[PASS] T2: all nine radii have recurrence order two, circular rank twelve, positive C Hankels, and indefinite M Hankels without a process-memory promotion
+[PASS] T3: the registered inputs do not select an event insertion/boundary: two conditional strongly-positive histories share every one- and two-crossing PVM table but differ at three crossings
+[PASS] N: the landed source note contains the fresh N1--N8 bounded-negative packet
+[PASS] S: full process, response, heldouts, axiom amendment, and TOE movement remain sealed
+WITNESS: declared_operation_rank=9; full_frame_rank=64; no_phase_rank=36; interface_deficit=55
+MOMENTS: radius_one_positive_defect=2234183456333136028/490236373215579117313690785; reflected_defect_scalar=-86305920689253797/1623025119874668623872875; reflected_defect_det=-6886545006697520066210123722017797/2634210539744182456458723577081918878364160765625
+NONUNIQUENESS: same_complete_two_crossing_tables=true; endpoint_zero_port_triple_equal=1/4; endpoint_max_port_triple_equal=0
+per_element: checked all eight rank-four event effects, eight Lueders branches, identity/dephasing distinction, 64 coherent-frame controls, and two signed field-moment families.
+per_site: checked one-shot M2 realization and two inequivalent three-crossing fixed-PVM cylinder laws with identical complete one- and two-crossing tables; no pointer reset, repeated writer, or causal boundary was supplied.
+per_mode: checked all nine exact spatial radii, nonwrapped Hankel sizes two through six, circular rank twelve, and the eight-copy reflected lift.
+per_block: checked event-operation typing, cyclic/open action objects, Green recurrence, positive and indefinite Hankels, and interface nonuniqueness as separate dependency blocks.
+lattice_wide: checked and not executed — no informationally complete physical operation family, causal process tensor, full-L24 event law, response, held-out, Record persistence, gravity, axiom, or TOE closure is claimed.
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

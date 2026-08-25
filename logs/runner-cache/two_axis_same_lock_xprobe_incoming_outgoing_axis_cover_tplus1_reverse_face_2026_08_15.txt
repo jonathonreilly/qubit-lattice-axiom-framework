@@ -1,0 +1,91 @@
+===== runner cache v1 =====
+runner: scripts/two_axis_same_lock_xprobe_incoming_outgoing_axis_cover_tplus1_reverse_face_2026_08_15.py
+runner_sha256: 318803f4265a5239d4d08cf91d0640075e7b09f44fb85207dfd632adcd4aaf83
+input_fingerprint_sha256: 7529e5a22f99cb2937f211ed736825b4200a6ff352ba11e29f25d1d51653d61e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+axis-cover of M and O at t+1 on two-axis same-lock x-probes
+AUDIT_INPUT_PATHS:
+  docs/TWO_AXIS_SAME_LOCK_XPROBE_INCOMING_OUTGOING_AXIS_COVER_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Axis-cover of M and O at t+1 on the four x-probes of the two-axis same-lock seed, and reverse/face from that, are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/TWO_AXIS_SAME_LOCK_XPROBE_INCOMING_OUTGOING_AXIS_COVER_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-x-probes-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: axis-cover-identity
+PASS: axis-set-identity
+PASS: pair-status-identity
+A t=2 M={−e_3} O={+e_1} Axis(M)={e_3} Axis(O)={e_1} cover=fail
+B t=1 M={+e_1} O={+e_2, +e_3, −e_3} Axis(M)={e_1} Axis(O)={e_2, e_3} cover=hold
+C t=3 M={+e_1} O={−e_2, +e_3, −e_3} Axis(M)={e_1} Axis(O)={e_2, e_3} cover=hold
+D t=2 M={−e_3} O={+e_1} Axis(M)={e_3} Axis(O)={e_1} cover=fail
+reverse=fail face=fail
+per_element: each earliest incoming or outgoing nearest-neighbor step at a probe, read from the record prefix at that probe's t+1
+per_site: scored only at x-probes A,B,C,D on Euclidean B_3(0); no other sites
+per_mode: no spectral or mode calculation is executed on this finite host
+per_block: four incoming sets, four outgoing sets, Axis of each, cover at each probe, reverse/face from those bits
+lattice_wide: checked and not executed — no lattice-wide lettering rule is claimed
+PASS: perp-step-incoming-lock
+PASS: undefined-if-unformed
+PASS: neither-pair-is-opposite
+PASS: theorem1-formation-ticks  ({'A': 2, 'B': 1, 'C': 3, 'D': 2})
+PASS: theorem1-M-at-tau  ({'A': '{−e_3}', 'B': '{+e_1}', 'C': '{+e_1}', 'D': '{−e_3}'})
+PASS: theorem1-O-at-tau  ({'A': '{+e_1}', 'B': '{+e_2, +e_3, −e_3}', 'C': '{−e_2, +e_3, −e_3}', 'D': '{+e_1}'})
+PASS: theorem1-Axis-M-and-O  ({'A': ('{e_3}', '{e_1}'), 'B': ('{e_1}', '{e_2, e_3}'), 'C': ('{e_1}', '{e_2, e_3}'), 'D': ('{e_3}', '{e_1}')})
+PASS: theorem1-cover-bits  ({'A': 'fail', 'B': 'hold', 'C': 'hold', 'D': 'fail'})
+PASS: theorem1-M-frozen-from-t
+PASS: theorem1-O-empty-at-t-then-filled
+PASS: theorem1-new-records-meet-6nn  ({'A': ((2, 0, 0),), 'B': ((1, 2, 1), (1, 1, 2), (1, 1, 0)), 'C': ((2, -1, 0), (2, 0, 1), (2, 0, -1)), 'D': ((2, 1, 0),)})
+PASS: theorem1-mixed-stays-a-set
+PASS: theorem1-A-is-not-seed
+PASS: theorem2-reverse-fail  (fail)
+PASS: theorem3-face-fail  (fail)
+PASS: O-is-not-M
+PASS: mutation-unique-letter-undefined
+PASS: mutation-leftover-empty-fails
+PASS: mutation-forall-perp-hold-not-this-predicate
+PASS: mutation-exist-opposite-of-M-or-O-not-this-predicate
+PASS: not-leftover-of-M-or-O-alone
+PASS: mutation-empty-or-undefined
+PASS: mutation-sum-cancels-mixed
+PASS: not-nnlock-named-sign
+PASS: not-y-or-z-probes-or-opposite-or-1-axis-or-nsopp-or-nspar
+PASS: uniqueness-not-required
+PASS: four-site-two-axis-same-lock-seed
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: note-claim-scope
+PASS: note-reports-ticks-M-O-Axis-cover
+PASS: note-reports-new-neighbors
+PASS: note-reports-fail-fail
+PASS: note-displayed-not-adopted
+PASS: note-does-not-use-occupancy
+PASS: note-not-sign-lettering
+PASS: note-not-ndot-or-occupancy-inner-product
+PASS: note-does-not-attach-formation-member
+PASS: note-not-leftover-empty-or-opposite-or-yprobe
+PASS: note-no-six-neighbor-star-as-letter
+PASS: note-no-global-T
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+TOTAL: PASS=61 FAIL=0
+
+----- stderr -----
+

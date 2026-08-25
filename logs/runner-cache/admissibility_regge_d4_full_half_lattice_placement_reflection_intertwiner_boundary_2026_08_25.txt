@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_regge_d4_full_half_lattice_placement_reflection_intertwiner_boundary_2026_08_25.py
+runner_sha256: e7a47fc3724993032a248a29e2795bbffea41b1f028abf942c58118d49b677dd
+input_fingerprint_sha256: 3827c8783f012d73d391cc6755de269d227c9107e0925fdbb135eee2aba0b382
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 18.54
+status: ok
+----- stdout -----
+[PASS] A: authority, preregistration, and literal source inputs are pinned
+[PASS] K0: the exact Regge carriers have sizes 15/22/40 with anchor phases and all frame laws
+[PASS] K1: the known raw-identity 800-variable Ward/S3 prefilter and exact common minor reproduce
+[PASS] K2: single-cover time-reflection equivariance has rank at most three at temporal Nyquist
+[PASS] K3: a temporal-only cover has rank at most two at the frozen spatial half-turn point
+[PASS] T1: the frozen full four-axis placement grading and C=diag(u_mu) close exactly
+[PASS] T2: the frozen placement-aware Ward target is exactly inconsistent before any induction
+[PASS] T3: 22-edge target gluing is sealed, not fitted or executed, after the T2 obstruction
+[PASS] T4: 40-edge target induction is sealed after T2; only carrier group laws were executed
+[PASS] T5: the 4096-point target rank census is sealed after T2, including all Nyquist strata
+[PASS] S: action, Riesz, source, response, held-outs, and broad no-go claims remain sealed
+WITNESS: d=1100 grade=0 rank=40 augmented_rank=41; elapsed=18.26s
+CORNER: regular-Laurent M_01 has M_01(1,z1)=1/2 and M_01(z0,1)=0; shared-corner limits 1/2 != 0
+per_element: checked the frozen d=1100, grade-g=0 necessary Ward coefficient block; exact rank is 40 and augmented rank is 41.
+per_site: checked and not executed -- no centered-symbol, changed-placement, quotient, or independently derived alternative site stencil is constructed.
+per_mode: checked and not executed -- the obstruction is coefficientwise; no rational/nonlocal class or complete 4096-point torus census is executed.
+per_block: checked only the frozen raw-symbol regular-Laurent chain equation; 22/40 gluing, action quotient, Riesz selection, and response stop downstream.
+lattice_wide: checked and not executed -- no universal Regge-D4 bridge, OS/GNS/CAR reconstruction, process tensor, gravity law, or TOE closure is tested.
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

@@ -20,6 +20,12 @@ non-singleton grades are forbidden.  All 22/40 rows are induced rather than
 fitted.  PR #7669 supplies no load-bearing map; pincer PR #7327 is reserved for
 the conditional post-map Riesz gate.
 
+Execution found the frozen raw regular-Laurent chain inconsistent before any
+22/40 target row, action, Riesz object, or response was read.  None of those
+sealed imports may be cited as evidence for the negative.  The exact corner
+proof depends on the shared raw off-diagonal slot and diagonal `C`; it supplies
+no premise about centered symbols, a split carrier, or OS/GNS/CAR.
+
 For the 40-edge induction, embed each spatial rotation as `diag(R_3,1)`.
 Canonicalize an image modulo reversal by requiring its first nonzero component
 positive; if reversal is required, use the unreversed image as the anchor

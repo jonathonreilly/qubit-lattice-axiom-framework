@@ -1,19 +1,35 @@
 ---
 target_claim_id: admissibility_regge_d4_full_half_lattice_placement_reflection_intertwiner_boundary_2026-08-25
-target_status: preregistered_unexecuted
-target_blocker_text: "The only positive Ward map seen so far uses an unphysical raw-column identity; a placement-aware reflection/full-frame Regge-D4 chain map has not been derived."
-reachability_to_target: pending_execution
-next_trace_action: "Test the frozen full 16-grade placement leg, physical-torus descent, and 22/40-edge Ward gluing before action, Riesz, or response."
-claim_type: open_gate
+target_status: proposed_bounded_theorem_audit_unset
+actual_current_surface_status: demotion
+conditional_surface_status: partial-attempt-with-named-untested-routes
+hypothetical_axiom_status: null
+admitted_observation_status: null
+target_blocker_text: "No entrywise regular Laurent M of any finite support solves the frozen raw-symbol Ward equation M Gamma_D=G_R diag(u_mu); the first exact witness is d=1100,g=0 with rank 40 versus augmented rank 41."
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+next_trace_action: "Construct the preregistered reflection-positive OS/GNS/CAR history law; retain centered-symbol and alternative-placement carriers as separate live gravity routes."
+claim_type: bounded_theorem
 target_claim_type: bounded_theorem
+claim_type_reason: "The rank census and Laurent-corner contradiction are exact only for the frozen raw regular-Laurent contract; live alternative carriers and history constructions force broad-negative demotion."
+dependency_classes: [framework_axioms, bounded_parent_chain]
+open_imports: [physical_history_channel, centered_or_alternative_gravity_carrier]
+review_loop_disposition: forbidden_by_user_instruction
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
 audit_status: unset
 ---
 
 # Claim Status Certificate
 
-This packet registers a target, not a result.  It records the known
-single-cover Nyquist obstruction, temporal-only spatial-half-turn obstruction,
-and raw-identity Ward prefilter as exploratory inputs that must be independently
-reproduced.  It asserts no full-graded-carrier
-solution, no physical Regge-D4 intertwiner, no Riesz observable, no response,
-no gravity closure, no axiom decision, and no TOE score movement.
+The frozen full grading passes, but the placement-aware Ward equation fails
+before reflection induction, action, Riesz selection, or response.  Each of
+the four singleton-grade systems has rank `798` and augmented rank `799`;
+`28/60` direction-grade blocks are inconsistent.  The mixed-edge corner proof
+upgrades the registered support failure to all entrywise regular Laurent maps
+with the same raw symbols and diagonal placement leg.
+
+This is not a no-go for centered symbols, rational/nonlocal maps, another
+derived placement complex, OS/GNS/CAR reconstruction, a process tensor,
+gravity, the axioms, or the TOE.  The current No-Go Discipline gate therefore
+fails for any broad negative, and no obligation or percentage moves.

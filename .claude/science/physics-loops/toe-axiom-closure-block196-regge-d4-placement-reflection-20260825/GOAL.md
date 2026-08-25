@@ -136,3 +136,14 @@ another coefficient scan.
 
 No axiom amendment, obligation retirement, retained status, or TOE percentage
 movement is preregistered.
+
+## Outcome
+
+T1 passed and T2 failed exactly.  Each singleton-grade system has rank
+`798` versus augmented rank `799`; `28/60` direction-grade blocks are
+inconsistent, with first witness `d=1100,g=0` at `40/41`.  The mixed-edge
+corner argument proves that no entrywise regular Laurent `M` of any finite
+support solves the same frozen raw-symbol equation.  The registered stop fired
+before 22/40 target induction, torus rank census, action, Riesz, response, or
+held-outs.  No axiom, obligation, or TOE percentage moves.  The automatic
+OS/GNS/CAR pivot is now rank one.

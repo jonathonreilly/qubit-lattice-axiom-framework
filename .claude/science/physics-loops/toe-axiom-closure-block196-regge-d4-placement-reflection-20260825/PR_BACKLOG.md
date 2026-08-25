@@ -9,4 +9,6 @@ Local route-pivot observation:
   placement, source/event, clock, or write selection.
 - Grok PRs #7715--#7722 touch isolated transport note/runner/cache triples and
   supply no Regge/D4/L24/Ward/Riesz bridge.
-- Recheck at publication and the next route fork.  Do not use review-loop.
+- A live recheck after target execution found no PR newer than #7724 and no
+  conflict with this route.  Recheck again at publication and before the next
+  campaign target execution.  Do not use review-loop.

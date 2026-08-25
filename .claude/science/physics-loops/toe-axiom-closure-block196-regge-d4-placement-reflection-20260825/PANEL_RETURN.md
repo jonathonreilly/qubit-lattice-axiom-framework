@@ -55,3 +55,18 @@ The exact solve is capped at 20 wall-clock minutes and 3 GiB resident memory,
 with one target solver process at a time on this 8 GiB host.  Exceeding the cap
 is `unexecuted`, not a scientific negative, and triggers an operational OS/CAR
 pivot.
+
+## Post-result return
+
+After the `798/799` grade result and universal regular-Laurent corner proof,
+the panel votes `5--0` to stop this raw carrier and `4--1` to rank explicit
+OS/GNS/CAR reconstruction first.  The dissent ranks the complete centered-
+symbol gravity diagram first; the majority keeps it as a parallel pincer
+because OS/GNS/CAR attacks the already isolated Block-195 history-selection
+wall and can yield a positive end-to-end history law without waiting on the
+gravity bridge.  All five reject a larger finite-support scan because the
+corner theorem is support-independent.
+
+The next checkpoint is the earliest of: a failed OS positivity/null-quotient
+gate, a failed descended-translation/event-fiber gate, a nonunique CPTP comb,
+or two elapsed campaign hours.

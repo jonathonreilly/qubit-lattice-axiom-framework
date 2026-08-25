@@ -1,0 +1,24 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_regge_d4_full_half_lattice_placement_reflection_intertwiner_boundary_independent_check_2026_08_25.py
+runner_sha256: 992c7b4eaf02cc8052d55bc91e3d49e0c0470ba91dedce555d35b46ae0dd66bd
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 5.81
+status: ok
+----- stdout -----
+PASS PREREG_BIND: commit=3241d452c580; ancestor=True
+DATA RANK_ORBIT weight=1 active=False count=12 observed=[(20, 36, 20, 20)]
+DATA RANK_ORBIT weight=1 active=True count=4 observed=[(20, 36, 20, 20)]
+DATA RANK_ORBIT weight=2 active=False count=12 observed=[(40, 64, 40, 40)]
+DATA RANK_ORBIT weight=2 active=True count=12 observed=[(40, 64, 40, 41)]
+DATA RANK_ORBIT weight=3 active=False count=4 observed=[(80, 112, 80, 80)]
+DATA RANK_ORBIT weight=3 active=True count=12 observed=[(80, 112, 80, 81)]
+DATA RANK_ORBIT weight=4 active=True count=4 observed=[(160, 192, 158, 159)]
+PASS EXACT_60_CASE_CENSUS: directions=15; cases=60
+PASS FOUR_GRADE_GLOBAL_RANKS: rank_by_grade=[798, 798, 798, 798]; inconsistent_by_grade=[7, 7, 7, 7]; total_inconsistent=28
+PASS LEFT_NULL_WITNESS: d=1100,g=0: rank=40 augmented=41; y^T A=0, y^T b=-1 after exact target rescaling
+PASS REGULAR_LAURENT_CORNER_CONTRADICTION: M_01(1,z1)=1/2 while M_01(z0,1)=0; common-corner limits=1/2/0
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

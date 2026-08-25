@@ -31,3 +31,13 @@ Post-campaign refresh at 2026-08-25T11:13:45Z:
   is only an optional action/measure-level discriminator target.
 - Later lphys fixture probes do not supply a physical event/source law or a
   complete Record chain; they do not change the successor ranking.
+
+Publication refresh at 2026-08-25T14:35Z:
+
+- Block 192 is published as proposed bounded evidence in PR #7632, stacked
+  directly on the clean Block-191 parent PR #7356.
+- Commit `435d021baf` carries the exact runner/cache, source note, landed
+  N1--N8/N5 packet, and acknowledged citation-graph manifest.
+- The newest PRs #7607--#7631 are lphys fixture probes.  Their displayed
+  frame/holonomy HOLD/FAIL results neither supply a physical event/source law
+  nor execute a permanent Record chain, so they do not displace Block 193.

@@ -1,7 +1,10 @@
 campaign: toe-axiom-closure-block192-full-temporal-carrier-20260825
-status: science_complete_independent_clean_ready_for_publication
+status: proposed_evidence_pr_open
 parent_commit: 480f633a5fbe34f444ec57e079abdd81b42e7728
 parent_pull_request: 7356
+result_commit: 435d021baf
+result_pull_request: 7632
+result_pull_request_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7632
 origin_main: b11811704efa98a12272d572f666e530a807f6c1
 active_gate: full_16form_temporal_carrier_reflected_source_history_composition
 route_order: [periodic_l24, finite_two_frequency_complex, continuous_frequency_kernel]

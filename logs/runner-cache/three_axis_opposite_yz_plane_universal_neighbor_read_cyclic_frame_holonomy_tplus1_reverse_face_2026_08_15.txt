@@ -4,7 +4,7 @@ runner_sha256: cf564c2bea823e55346f88b74814da1e89ddc68be732e500d942ead83e16133a
 input_fingerprint_sha256: 9815b203a644c8f1038d993377ade3c4167bf4836e10346f2ec58bc14ca5c93f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.15
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 universal neighbor-read of yz-plane cyclic-frame holonomy reverse/face at t+1 on three-axis opposite (near-face) seed

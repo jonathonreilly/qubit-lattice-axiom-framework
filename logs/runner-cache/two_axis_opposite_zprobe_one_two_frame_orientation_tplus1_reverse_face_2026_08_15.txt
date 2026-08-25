@@ -4,7 +4,7 @@ runner_sha256: ecb1eaaf1a49f638907e5b0c72294f7eb88391c5168e194ad2a3253182998d22
 input_fingerprint_sha256: d97ba0cfc774ed90e69fa702d48a2c9121ddd0c7102c2968e6b7a60d6c417cc8
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 oriented 1-in 2-out frame sign reverse/face at t+1 on two-axis opposite z-probes

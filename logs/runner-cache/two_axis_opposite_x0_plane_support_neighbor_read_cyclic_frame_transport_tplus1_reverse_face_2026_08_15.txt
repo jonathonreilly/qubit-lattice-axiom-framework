@@ -4,7 +4,7 @@ runner_sha256: 38ae4cba47954134e2282dfc8ab3501229e6f145eb3718aa72e66f5efb75dff0
 input_fingerprint_sha256: 394406ec213f3d4cdb17ac1ccc750cc926cfdab773b7cca388c8711c1d9beadd
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.18
 status: ok
 ----- stdout -----
 x=0 plane support of neighbor-read of cyclic-frame transport reverse/face at t+1

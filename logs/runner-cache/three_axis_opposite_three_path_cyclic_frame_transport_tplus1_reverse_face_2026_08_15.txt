@@ -1,0 +1,91 @@
+===== runner cache v1 =====
+runner: scripts/three_axis_opposite_three_path_cyclic_frame_transport_tplus1_reverse_face_2026_08_15.py
+runner_sha256: 4e59f4f93e4c368498949daa692bf5706b5e9ec221f8fe705d2220f9e20ab897
+input_fingerprint_sha256: 778ebb233bf283ad102dedd9109aca93126bfff79049ee7dccddcef7d27aeb66
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+three-path cyclic-frame transport reverse/face at t+1 on three-axis opposite near-face seed
+AUDIT_INPUT_PATHS:
+  docs/THREE_AXIS_OPPOSITE_THREE_PATH_CYCLIC_FRAME_TRANSPORT_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Equality of the three length-3 path-ordered products of cyclic-frame transport along the permutations of {e1,e2,e3} at t+1 on the three-axis opposite (near-face) seed, and reverse/face from that, are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/THREE_AXIS_OPPOSITE_THREE_PATH_CYCLIC_FRAME_TRANSPORT_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-seed-probes-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: det-identity
+PASS: orient-identity
+PASS: pair-orient-identity
+PASS: sending-identity
+A (0, 0, 0) t=0 M={+e_1} O={−e_2, −e_3} split=hold F=(+e_1, −e_2, −e_3) Orient=+1 pathind=fail
+  product(e1e2e3)=fail
+  product(e2e3e1)=[1 0 0; 0 -1 0; 0 0 -1]
+  product(e3e1e2)=[1 0 0; 0 -1 0; 0 0 -1]
+B (0, 1, 0) t=0 M={−e_1} O={+e_2, −e_3} split=hold F=(−e_1, +e_2, −e_3) Orient=+1 pathind=fail
+  product(e1e2e3)=fail
+  product(e2e3e1)=fail
+  product(e3e1e2)=fail
+C (0, 0, 1) t=0 M={+e_2} O={+e_1, −e_1, +e_3} split=hold F=(+e_2, +e_3, −e_1) Orient=−1 pathind=fail
+  product(e1e2e3)=fail
+  product(e2e3e1)=fail
+  product(e3e1e2)=fail
+D (0, 1, 1) t=0 M={−e_2} O={+e_1, −e_1, +e_3} split=hold F=(−e_2, +e_3, −e_1) Orient=+1 pathind=fail
+  product(e1e2e3)=fail
+  product(e2e3e1)=fail
+  product(e3e1e2)=fail
+pathind reverse=fail face=fail
+transport reverse=hold face=hold
+holonomy reverse=hold face=fail
+Orient reverse=hold face=fail
+per_element: three length-3 path-ordered products of cyclic-frame transport along cyclic permutations of +e1,+e2,+e3 at t+1
+per_site: scored only at reverse origin,(0,1,0) and face (0,0,1),(0,1,1) on Euclidean B_3(0); no other sites
+per_mode: no spectral or mode calculation is executed on this finite host
+per_block: three path products, reverse/face from path-independence
+lattice_wide: checked and not executed — no lattice-wide lettering rule is claimed
+PASS: perp-step-incoming-lock
+PASS: undefined-if-unformed
+PASS: theorem1-formation-ticks  ({'A': 0, 'B': 0, 'C': 0, 'D': 0})
+PASS: theorem1-M-O-split-F-Orient  ({'A': ('hold', '+1'), 'B': ('hold', '+1'), 'C': ('hold', '−1'), 'D': ('hold', '+1')})
+PASS: theorem1-three-products  ({'A': ('fail', '[1 0 0; 0 -1 0; 0 0 -1]', '[1 0 0; 0 -1 0; 0 0 -1]'), 'B': ('fail', 'fail', 'fail'), 'C': ('fail', 'fail', 'fail'), 'D': ('fail', 'fail', 'fail')})
+PASS: theorem2-reverse-pathind-fail
+PASS: theorem3-face-pathind-fail
+PASS: M-frozen-from-t
+PASS: new-records-meet-6nn  ({'A': ((1, 0, 0), (0, -1, 0), (0, 0, -1)), 'B': ((1, 1, 0), (0, 2, 0), (0, 1, -1)), 'C': ((1, 0, 1), (-1, 0, 1), (0, 0, 2)), 'D': ((1, 1, 1), (-1, 1, 1), (0, 1, 2))})
+PASS: third-pair-is-seed-not-formed-child
+PASS: not-leftover-of-holonomy-or-transport-or-two-axis
+PASS: mutations-differ
+PASS: not-x-or-y-probes-or-perp-or-zsym
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: note-claim-scope
+PASS: note-reports-M-O-F-products
+PASS: note-reports-reverse-face
+PASS: note-displayed-not-adopted
+PASS: note-not-cover-or-split-or-holonomy
+PASS: note-not-one-sided-or-leftover-empty
+PASS: note-not-two-tick-lock-count-clock
+PASS: note-not-mixed-7188-fail-fail
+PASS: note-no-global-T
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+PASS: pathind-not-transport-or-holonomy-or-scalar
+TOTAL: PASS=46 FAIL=0
+
+----- stderr -----
+

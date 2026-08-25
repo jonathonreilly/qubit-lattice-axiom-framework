@@ -1,0 +1,56 @@
+===== runner cache v1 =====
+runner: scripts/two_axis_same_lock_directed_two_step_minus_e3_cyclic_frame_transport_tplus1_reverse_face_2026_08_15.py
+runner_sha256: 8654c86ef0ed8252e8852298bf2b943d567233b93ce61ed99287c99fff445f94
+input_fingerprint_sha256: 248cba92f152664761fdbc5ebce95ca75b888401a4858841db726e9f2bf195fd
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+Directed 2-step cyclic-frame transport along -e3 at t+1
+AUDIT_INPUT_PATHS:
+  docs/TWO_AXIS_SAME_LOCK_DIRECTED_TWO_STEP_MINUS_E3_CYCLIC_FRAME_TRANSPORT_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+displayed_not_adopted: true
+PASS: audit-input-paths-literal
+PASS: audit-inputs-exist
+PASS: source-lattice
+PASS: source-admissibility-unedited
+PASS: source-record-boundary
+PASS: euclidean-ball-cardinality
+PASS: seed-tick-zero
+PASS: same-lock-pairs
+PASS: perp-step-blocks-parallel
+PASS: sending-identity
+A (0,0,0) t=0 M={(1,0,0)} O={(0,-1,0),(0,0,-1)} split=hold F=((1, 0, 0), (0, -1, 0), (0, 0, -1)) Orient=1 edge1=hold P1=[0 -1 0; 0 0 1; 1 0 0] edge2=fail P2=fail two-step=fail
+  chain (0,0,0) -> (0,0,-1) -> (0,0,-2)
+B (0,1,0) t=0 M={(1,0,0)} O={(0,0,-1),(0,1,0)} split=hold F=((1, 0, 0), (0, 1, 0), (0, 0, -1)) Orient=-1 edge1=hold P1=[0 -1 0; 0 0 1; 1 0 0] edge2=fail P2=fail two-step=fail
+  chain (0,1,0) -> (0,1,-1) -> (0,1,-2)
+C (0,0,1) t=0 M={(0,1,0)} O={(-1,0,0),(0,0,1),(0,1,0),(1,0,0)} split=fail F=fail Orient=fail edge1=fail P1=fail edge2=hold P2=[0 -1 0; 0 0 1; 1 0 0] two-step=fail
+  chain (0,0,1) -> (0,0,0) -> (0,0,-1)
+D (0,1,1) t=0 M={(0,1,0)} O={(-1,0,0),(0,0,1),(1,0,0)} split=hold F=((0, 1, 0), (0, 0, 1), (-1, 0, 0)) Orient=-1 edge1=hold P1=[0 1 0; 0 0 -1; -1 0 0] edge2=hold P2=[0 -1 0; 0 0 1; 1 0 0] two-step=hold
+  chain (0,1,1) -> (0,1,0) -> (0,1,-1)
+reverse=fail bits=(fail,fail)
+face=fail bits=(fail,hold)
+PASS: theorem1-seed-frames
+PASS: theorem1-zseed-split-fail-not-undefined
+PASS: theorem1-dest-and-second-hop
+PASS: theorem1-named-edges-and-two-step
+PASS: theorem1-chains-in-ball
+PASS: theorem2-reverse-fail
+PASS: theorem3-face-fail
+PASS: not-leftover-of-one-step
+PASS: not-leftover-of-opposite-two-step
+PASS: not-leftover-of-plus-e3
+PASS: outside-ball-is-fail
+PASS: note-claim-scope
+PASS: note-computed-bits
+PASS: note-forbidden-phrases
+PASS: note-no-status-overclaim
+PASS: axiom-file-unedited-by-this-packet
+TOTAL: PASS=26 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/independent_admissibility_d4_l24_even_odd_two_step_os_parity_history_boundary_2026_08_25.py
+runner_sha256: 066127138d206dec5dcb278c70b9d59b6bf1dadef7227bd24a9e39774e904a9b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 5.10
+status: ok
+----- stdout -----
+[PASS] A1: the periodic L24 shift and exact even/odd D_eo,D_oe blocks are rebuilt
+[PASS] A2: the target executes exactly the nine frozen squared spatial radii
+[PASS] A3: every phase-real action has the literal m=2/7 skew-Clifford form
+[PASS] B1: both parity Schur complements equal Q tensor B at every radius
+[PASS] B2: the exact full covariance and both Schur marginal identities hold
+[PASS] B3: the inherited even/odd coarse reflections are involutive and action covariant
+[PASS] B4: both adjacent V-translated planes use matched positive and opposite cuts
+[PASS] C1: all 72 coarse Berezin forms are exact Hermitian H tensor G blocks
+[PASS] C2: every parity/plane/orientation/radius has a strict negative 2x2 principal minor
+[PASS] C3: each reduced form has exact rank four and inertia (2,8,2), hence is not PSD
+[PASS] C4: the eight-copy full-fiber lifts have rank 32 and inertia (16,64,16)
+[PASS] D1: radius one reproduces Q, its positive inertia, G, and det(G)=-49/53
+[PASS] D2: the disclosed radius-one local matrix and negative determinant are reproduced
+[PASS] D3: the positive right-Schur graph factor is exact and remains distinct from Berezin OS
+[PASS] E1: the independently derived local lag ratio is the disclosed exact q
+[PASS] E2: M2-M1 M0^-1 M1 is the disclosed nonzero finite-circle defect times G
+[PASS] F1: the action-derived cross blocks form an exact Hermitian iL_hat control
+[PASS] F2: its norm is 7/sqrt(53)<1 and squared modes are (49/53)sin^2(pi n/12)
+[PASS] S1: quotient, CPTP history, response, held-outs, axioms, and TOE movement remain sealed
+WITNESS: radius=1; Qdiag=155/106; Qneighbor=-49/212; minor_det=-7738696389450163542406225/612125283049386867796523328; inertia=(2,8,2); lift=(16,64,16)
+MOMENT: q=203932982449/1257104793275; defect_coefficient=-86305920689253797/1623025119874668623872875
+CONTROL: iL_hat Hermitian; ||L||=7*sqrt(53)/53<1; squared-mode count=12
+per_element: checked every exact local 2x2 Berezin principal block at all nine frozen radii and reproduced the disclosed radius-one negative determinant.
+per_site: checked both even/odd sectors, both adjacent coarse link planes, and both matched six-site half-circle orientations on periodic L24.
+per_mode: checked each frozen two-component Clifford reduction, its eight-copy lift, and the radius-one cross-parity iL_hat singular spectrum.
+per_block: checked action, covariance, Schur marginal, reflection, Hermiticity, inertia, right-Schur graph, and finite-circle moment blocks separately.
+lattice_wide: checked and not executed — no alternative two-slice algebra, global process tensor, open-time limit, CPTP history, response, held-out, gravity, axiom, or TOE closure is tested.
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

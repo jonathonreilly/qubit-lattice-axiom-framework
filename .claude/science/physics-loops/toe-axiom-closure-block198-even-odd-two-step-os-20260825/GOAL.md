@@ -157,3 +157,18 @@ tensor, another internal reflection completion, centered-symbol gravity,
 axiom changes, or the TOE.  No obligation retirement, retained status, axiom
 amendment, or TOE percentage movement is preregistered.
 
+## Outcome
+
+T1 succeeds exactly: eliminating either temporal parity gives the faithful
+Schur covariance marginal `A^(2)=Q tensor B` at all nine frozen radii.  T2
+then fails on every declared sector, plane, parity, and orientation.  The
+degree-one form factorizes as `H tensor G`, with `det(G)=-1/(m^2+s)<0` and a
+nonzero matching entry of `H`; each reduced form has rank four and inertia
+`(2 positive,8 null,2 negative)`, and each full eight-copy lift has
+`(16,64,16)`.  A PSD joint parity completion retaining either form as a
+diagonal marginal is therefore impossible.  The action cross-block remains
+an exact Hermitian contraction control, not a physical transfer, and the
+local finite-circle moments have the preregistered nonzero semigroup defect.
+T3--T5, response, and held-outs remain sealed.  No axiom, obligation, retained
+status, or TOE percentage moves.  The post-result panel promotes an event-
+generated, moment-rank-minimal process tensor for Block 199.

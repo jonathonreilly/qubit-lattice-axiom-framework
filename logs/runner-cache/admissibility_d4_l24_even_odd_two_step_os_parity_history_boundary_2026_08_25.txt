@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_d4_l24_even_odd_two_step_os_parity_history_boundary_2026_08_25.py
+runner_sha256: 992b4def89a749854065b30c682fecc9341a103770b07f034adafa75f484ce5d
+input_fingerprint_sha256: a34803064f265da0e0cfff8ee87ff4fc18715976d1cf21ae6f8bcbfd56f3c0fa
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 77.57
+status: ok
+----- stdout -----
+[PASS] A: authority, preregistration ancestry, axiom/registry blobs, and literal inputs bind
+[PASS] P: the disclosed radius-one Schur, minor, moment, and control pilot is independently reproduced
+[PASS] T1: both parity Schur reductions, marginal identities, reflections, cuts, and all nine radii bind exactly
+[PASS] T2: every frozen Schur-sector Berezin form is rank four and exactly indefinite, precluding a PSD joint completion that retains it as a diagonal marginal
+[PASS] D: the action cross-block is a bounded Hermitian-root control, while the local finite-circle moments are nonsemigroup
+[PASS] N: the landed source note contains the fresh N1--N8 no-go-discipline packet
+[PASS] S: quotient, channel, response, heldouts, axioms, broad no-go, and TOE movement remain sealed
+WITNESS: radius_one_minor_det=-7738696389450163542406225/612125283049386867796523328; reduced_inertia=(2, 8, 2); full_inertia=(16, 64, 16)
+DIAGNOSTIC: local_moment_ratio=203932982449/1257104793275; scalar_defect=-86305920689253797/1623025119874668623872875; cross_norm=7*sqrt(53)/53
+per_element: checked exact two-generator exterior norms from every frozen-radius local internal principal block; each determinant is strictly negative.
+per_site: checked both temporal parities, both adjacent coarse reflection planes, and both matched six-site half-circle orientations on periodic L24.
+per_mode: checked all nine exact Block-192 spatial radii, the disclosed radius-one sector, and each sector's eight-copy full Clifford lift.
+per_block: checked exact Schur/marginal reduction, fermionic reflected forms, local higher-lag defect, and the cross-block root only as a nonphysical control.
+lattice_wide: checked and not executed — alternative two-slice algebras, spin-structure rebuilds, global process tensors, open-time limits, gravity, Record persistence, Born forcing, and TOE closure remain live.
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

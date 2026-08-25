@@ -1,6 +1,6 @@
 {
- "edge_count": 16170,
- "node_count": 5626,
+ "edge_count": 16175,
+ "node_count": 5627,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -444,6 +444,10 @@
   },
   "admissibility_d4_l24_berezin_os_spin_structure_boundary_bounded_theorem_note_2026-08-25": {
    "deps_hash": "f8bcdbe6904c",
+   "out_degree": 5
+  },
+  "admissibility_d4_l24_even_odd_two_step_os_parity_history_boundary_bounded_theorem_note_2026-08-25": {
+   "deps_hash": "acd32efbe937",
    "out_degree": 5
   },
   "admissibility_d4_l24_prefix_instrument_selection_boundary_bounded_theorem_note_2026-08-25": {

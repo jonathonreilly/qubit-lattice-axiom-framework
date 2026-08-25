@@ -1,9 +1,13 @@
 # Handoff
 
-Execute T1/T2 from definitions.  The disclosed radius-one pilot is not a
-blind discovery.  If its negative minor is reproduced at any actual frozen
-sector, stop the OS quotient and typed-channel construction, run only the
-preregistered structural/memory controls, package the narrow result under
-N1--N8, and promote the global process-tensor campaign.  If RP passes, proceed
-without assuming finite-circle semigroup composition.
+T1 is exact and T2 is grounded: all nine frozen sectors have indefinite
+Schur-marginal Berezin forms.  Quotient, parity channel, response, and heldouts
+stayed sealed; N1--N8 narrows the result honestly.
 
+Block 199 should compute the full frozen event moment-Hankel rank first, then
+derive the periodic boundary/history functional and a tomographically complete
+three-crossing process on the fixed Block-194 PVM/M2/source operator system.
+Require PSD, causal trace recursion, identity insertion, the exact nonsemigroup
+defect, correct one-shot marginal, and uniqueness before extending to L24.
+Never import a boundary density, choose memory after positivity, or admit the
+indefinite Block-198 `K` as a positive principal marginal.

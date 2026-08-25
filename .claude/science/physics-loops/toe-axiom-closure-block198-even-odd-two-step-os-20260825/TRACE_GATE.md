@@ -10,7 +10,9 @@ next_trace_action: "On RP and memory success derive the unique typed channel; on
 
 # Trace Gate
 
-Block 198 attacks the first exact kill in the even/odd route.  T1/T2 precede
-all quotient, channel, response, and held-out work.  Only a complete typed
-history can move `W2`; an obstruction merely reroutes the portfolio.
-
+T1 succeeds and T2 fails exactly at every frozen radius: the literal Schur
+forms have reduced inertia `(2,8,2)` and full inertia `(16,64,16)`.  The
+quotient, channel, response, and held-out gates remain sealed.  No obligation,
+axiom, or TOE percentage moves.  The next trace action is the event-generated,
+moment-rank-minimal global process tensor, with the fixed PVM/M2/source system
+rather than the indefinite Schur field algebra as its positive event domain.

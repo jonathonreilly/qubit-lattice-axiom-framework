@@ -4,7 +4,7 @@ runner_sha256: 913592ceb02b68ad1acbced90bae242e74b7e577119ed9d0d56808d136531570
 input_fingerprint_sha256: 428549361f519a1dedf479732eb3131202bb46035f65d3f3491b8f3c30d83d50
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.20
 status: ok
 ----- stdout -----
 forall yz unit-square cyclic-frame holonomy on the x=0 versus x=1 planes at t+1

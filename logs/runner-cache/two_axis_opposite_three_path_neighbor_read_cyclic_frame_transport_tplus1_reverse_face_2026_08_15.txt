@@ -1,0 +1,99 @@
+===== runner cache v1 =====
+runner: scripts/two_axis_opposite_three_path_neighbor_read_cyclic_frame_transport_tplus1_reverse_face_2026_08_15.py
+runner_sha256: 95247159928488f898688a8e41564dd83d17526210b82f6f849bcdc7dc220c7d
+input_fingerprint_sha256: 95dcacbf9cc71ef12b6db3ae672fbd340b88a04a93e590eac24693a41fb0c7eb
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.15
+status: ok
+----- stdout -----
+three-path neighbor-read cyclic-frame transport independence reverse/face at t+1 on two-axis opposite seed
+AUDIT_INPUT_PATHS:
+  docs/TWO_AXIS_OPPOSITE_THREE_PATH_NEIGHBOR_READ_CYCLIC_FRAME_TRANSPORT_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Equality of the three length-3 path-ordered products of neighbor-read cyclic-frame transport along the permutations of {e1,e2,e3} at t+1 on the two-axis opposite seed, and reverse/face from that, are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/TWO_AXIS_OPPOSITE_THREE_PATH_NEIGHBOR_READ_CYCLIC_FRAME_TRANSPORT_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-z-probes-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: det-identity
+PASS: orient-identity
+PASS: pair-orient-identity
+PASS: sending-identity
+origin (0, 0, 0) t=0 w=(1, 1, 1) F=(+e_1, −e_2, −e_3) Orient=+1 read=hold exists=('fail', 'hold', 'hold') indep=fail prod=('fail', '[1 0 0; 0 -1 0; 0 0 1]', '[1 0 0; 0 -1 0; 0 0 1]')
+Y (0, 1, 0) t=0 w=(1, 2, 1) F=(−e_1, +e_2, −e_3) Orient=+1 read=hold exists=('fail', 'fail', 'hold') indep=fail prod=('fail', 'fail', '[0 0 -1; 1 0 0; 0 -1 0]')
+A (0, 0, 1) t=0 w=(1, 1, 2) F=(+e_2, +e_3, −e_1) Orient=−1 read=hold exists=('fail', 'fail', 'fail') indep=fail prod=('fail', 'fail', 'fail')
+E (0, 1, 1) t=0 w=(1, 2, 2) F=(−e_2, +e_3, −e_1) Orient=+1 read=hold exists=('fail', 'fail', 'fail') indep=fail prod=('fail', 'fail', 'fail')
+origin path 123 verts=((0, 0, 0), (1, 0, 0), (1, 1, 0), (1, 1, 1)) reads=('hold', 'fail', 'fail', 'hold')
+origin path 231 verts=((0, 0, 0), (0, 1, 0), (0, 1, 1), (1, 1, 1)) reads=('hold', 'hold', 'hold', 'hold')
+origin path 312 verts=((0, 0, 0), (0, 0, 1), (1, 0, 1), (1, 1, 1)) reads=('hold', 'hold', 'hold', 'hold')
+path-independence reverse=fail face=fail
+holonomy reverse=hold face=fail
+transport reverse=hold face=hold
+neighbor-read reverse=hold face=hold
+per_element: cyclic frame F=(m,o_next,o_prev), neighbor-read, and three length-3 path-ordered products of edge P along the permutations of {e1,e2,e3}
+per_site: scored only at reverse starts origin and (0,1,0) and face starts (0,0,1) and (0,1,1) on Euclidean B_3(0); no other sites
+per_mode: no spectral or mode calculation is executed on this finite host
+per_block: three path products at each start, reverse/face from path-independence
+lattice_wide: checked and not executed — no lattice-wide lettering rule is claimed
+PASS: perp-step-incoming-lock
+PASS: undefined-if-unformed
+PASS: theorem1-formation-ticks  ({'A': 0, 'B': 1, 'C': 1, 'D': 1})
+PASS: theorem1-M-O-split  ({'A': ('{+e_2}', 'hold'), 'B': ('{+e_1}', 'hold'), 'C': ('{+e_3}', 'hold'), 'D': ('{+e_1}', 'hold')})
+PASS: theorem1-Orient  ({'A': '−1', 'B': '−1', 'C': '+1', 'D': '+1'})
+PASS: theorem1-transport  ({'A': ('hold', 'hold'), 'B': ('hold', 'fail'), 'C': ('hold', 'fail'), 'D': ('hold', 'fail')})
+PASS: theorem1-mixed-O-cyclic-not-unique
+PASS: theorem1-M-frozen-from-t
+PASS: theorem1-new-records-meet-6nn  ({'A': ((1, 0, 1), (-1, 0, 1), (0, 0, 2)), 'B': ((1, 2, 1), (1, 1, 2), (1, 1, 0)), 'C': ((1, 0, 2), (-1, 0, 2), (0, -1, 2)), 'D': ((1, -1, 1), (1, 0, 2), (1, 0, 0))})
+PASS: theorem1-A-is-seed
+PASS: theorem1-square-ticks-F-Orient
+PASS: theorem1-three-path-P-and-products  (origP=('fail', '[1 0 0; 0 -1 0; 0 0 1]', '[1 0 0; 0 -1 0; 0 0 1]'))
+PASS: theorem1-neighbor-read-holds-at-starts-and-z-probes  ({'origin': 'hold', 'Y': 'hold', 'A': 'hold', 'E': 'hold'})
+PASS: theorem2-reverse-path-independence-fail
+PASS: theorem3-face-path-independence-fail
+PASS: cover-and-split-do-not-score-handedness
+PASS: split-fail-is-orient-fail-not-undefined
+PASS: empty-Oi-is-orient-fail-not-undefined
+PASS: not-leftover-of-1-axis-cover-face-hold
+PASS: not-leftover-empty-fail
+PASS: mutation-leftover-of-M-or-O-alone-differs
+PASS: mutation-exist-opposite-differs
+PASS: mutation-unsigned-incoming-axis-agrees-here
+PASS: mutation-unique-letter-undefined-at-mixed-O
+PASS: mutation-sum-cancels-mixed
+PASS: O-is-not-M
+PASS: second-pair-is-seed-not-formed-child
+PASS: not-x-probes-or-y-probes-or-z-symmetric-or-perp
+PASS: not-same-lock-or-one-axis-or-live-three-axis-seed
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: note-claim-scope
+PASS: note-reports-M-O-split-Orient
+PASS: note-reports-new-neighbors
+PASS: note-reports-path-independence-reverse-face
+PASS: note-displayed-not-adopted
+PASS: note-not-cover-or-split
+PASS: note-not-one-sided-or-leftover-empty
+PASS: note-not-two-tick-lock-count-clock
+PASS: note-not-mixed-7188-fail-fail
+PASS: note-no-global-T
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+PASS: path-independence-not-holonomy-or-transport-or-scalar
+TOTAL: PASS=63 FAIL=0
+
+----- stderr -----
+

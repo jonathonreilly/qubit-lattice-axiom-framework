@@ -1,0 +1,895 @@
+---
+claim_id: two_axis_opposite_three_path_neighbor_read_cyclic_frame_transport_tplus1_reverse_face_bounded_theorem_note_2026-08-15
+claim_type: bounded_theorem
+claim_scope: "Equality of the three length-3 path-ordered products of neighbor-read cyclic-frame transport along the permutations of {e1,e2,e3} at t+1 on the two-axis opposite seed, and reverse/face from that, are reported. Displayed, not adopted."
+upstream_dependencies:
+  - minimal_axioms
+runner: scripts/two_axis_opposite_three_path_neighbor_read_cyclic_frame_transport_tplus1_reverse_face_2026_08_15.py
+---
+
+# Three-Path Neighbor-Read Cyclic-Frame Transport Independence At t+1 Reverse And Face On The Two-Axis Opposite Seed
+
+> **Key terms used in this doc** are indexed A-Z at `docs/KEY_TERMINOLOGY.md`;
+> each row points to the canonical source-of-truth doc.
+
+**Date:** 2026-08-15
+**Type:** bounded_theorem
+**Scope:** equality of the three length-3 path-ordered products of edge `P`
+of neighbor-read cyclic-frame transport along the cyclic permutations of
+`{e1,e2,e3}` from a start `s` in `B_3(0)={n:n·n<=9}` to the opposite cube
+vertex `w=s+e_1+e_2+e_3` at each vertex's `τ=t+1`, and reverse/face from
+that letter, on the two-axis opposite seed. `F`, Orient, and `P` as
+nm2cycfrmz. Neighbor-read as nm2frmrdz. Reverse probes: origin and
+`Y=(0,1,0)`. Face probes: `A=(0,0,1)` and `E=(0,1,1)`. If `w·w>9`, the
+letter at `s` is fail, not `UNDEFINED`. Not a 4-cycle. Face is displayed,
+not adopted. Cover and split do not score handedness. This is not leftover
+of #7549 three-path cyclic-frame transport reverse fail face fail: #7549
+scores path existence from formed vertices and edge `P` alone, while this
+letter requires neighbor-read HOLD of cyclic-frame transport at every
+vertex of each path. Path 123 of origin fails here with neighbor-read fail
+at `(1, 0, 0)` and at `(1, 1, 0)`, not only from missing `P`. This is not
+leftover of nm2frmrdz neighbor-read reverse HOLD face HOLD: z-probe
+neighbor-read reverse HOLDs and neighbor-read face HOLDs (#7511/#7528)
+while this reverse fails and this face fails. This is not leftover of
+nm2cycfrmhol unit-square holonomy reverse HOLD face fail: holonomy is the
+four-edge product around an xy-plane 4-cycle, while this letter is equality
+of three length-3 path-ordered products to the opposite cube vertex.
+nm2cycfrmhol unit-square holonomy reverse HOLDs on this member while this
+reverse fails because path 123 of origin has no `P`. This is not leftover
+of nm2cycfrmz cyclic-frame transport reverse HOLD face HOLD: transport is
+existential at a vertex. This is not leftover of nm2oricyclz cyclic Orient
+reverse HOLD whose bits are equal `±1` signs, not three path products.
+This is not leftover of scalar neighbor-read of Orient. This is not leftover
+of a unique nonnegative permutation sending. This is not leftover of
+nm2orichz leftover-axis reverse HOLD. This is not leftover of nm2orionez
+lex-one reverse fail. This is not leftover of nm2chiralz lexicographic
+unsigned `o1,o2` orientation. This is not leftover of nm2oridetz unique
+signed outgoing letters. This is not leftover of nm2axz axis-cover. This
+is not leftover of nm2ax12z 1-in 2-out split. This is not leftover of
+leftover-of-`M` alone. This is not leftover of leftover-of-`O` alone.
+This is not leftover-empty fail of leftover axis. This is not leftover of
+nmunopp union. This is not leftover of nmt2opp `M` frozen at `t`. This is
+not leftover of nmot2opp two-tick composition. This is not leftover of
+nmoutopp untimed eventual-`O`. This is not leftover of mixed #7188
+fail/fail. This is not leftover of the 1-axis opposite two-site seed. This
+is not leftover of the same-lock two-site seed. The second pair is a new
+seed, not a formed child. Uniqueness is not required. Mixed remains a set.
+Displayed, not adopted. Do not write into Admissibility. Do not attach L1.
+**Audit-status authority:** independent audit lane only. This note authors no
+audit verdict and predicts none.
+**Primary runner:**
+[`scripts/two_axis_opposite_three_path_neighbor_read_cyclic_frame_transport_tplus1_reverse_face_2026_08_15.py`](../scripts/two_axis_opposite_three_path_neighbor_read_cyclic_frame_transport_tplus1_reverse_face_2026_08_15.py)
+
+Framework input:
+
+- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) supplies
+  cubic-lattice sites `Z^3` with nearest-neighbor adjacency, the one-site
+  algebra `M_2(C)`, and the Record sentences that records form and that a
+  present record locks exactly one admissible local possibility.
+
+Everything after that quoted input is a finite displayed process on `B_3(0)`
+and the four named starts. Incoming lock letters are unit nearest-neighbor
+steps. `O` is the outgoing dual of those incoming sets at the per-vertex cut
+`τ=t+1`. Axis is the unsigned lattice direction of a signed lock. Cover is
+the complementary occupation of `{e_1,e_2,e_3}` by `Axis(M)` and `Axis(O)`.
+Split is cover together with `|Axis(M)|=1`. The cyclic next/prev
+lex-largest oriented frame is the integer sign of
+`det(m,o_next,o_prev)` with unique signed incoming letter `m` and the
+lex-largest signed outgoing letter on the cyclic next and prev axes of
+`Axis(M)` under `+e < −e`. When split HOLDs, `F=(m,o_next,o_prev)` is
+that LIVE three-axis frame. For a formed six-neighbor edge, `P` is the
+unique signed permutation sending columns of `F(q)` to columns of `F(r)`
+with determinant `Orient(q)Orient(r)`. Path-independence is the equality
+of the three length-3 path-ordered products along the cyclic permutations
+of `(+e_1,+e_2,+e_3)` on paths whose vertices neighbor-read HOLD. Reverse
+and face are scored on path-independence HOLD of the reverse starts and of
+the face starts. Unit-square holonomy of nm2cycfrmhol is a different
+readout: it is a 4-cycle product, not three paths to the opposite cube
+vertex. Transport of nm2cycfrmz is a different readout: it is existential
+at a vertex, not equality of three products. Neighbor-read of nm2frmrdz
+on the four z-probes is a different readout: reverse HOLDs and face HOLDs
+from two z-probes each, not three path products. #7549 three-path
+cyclic-frame transport is a different readout: path existence there does
+not require neighbor-read HOLD. Neighbor-read of the scalar Orient sign is
+a different readout and is not used as the object. A unique nonnegative
+permutation sending is a different readout and is not used as the object.
+Named signs `{+,−}` of locks are a coarser readout and are not used as the
+object. Occupancy of sites is not used. A six-neighbor star is not the
+letter.
+
+## Machine status and trace
+
+```yaml
+actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
+claim_type_reason: "Exact report of equality of the three length-3 path-ordered products of neighbor-read cyclic-frame transport along the permutations of {e1,e2,e3} at t+1 on the two-axis opposite seed, F, Orient, P, and neighbor-read at the four starts, the three products, reverse fail and face fail from path-independence of the four starts; uniqueness of a sending is not claimed and the bits are not adopted."
+trace_class: frontier_discovery
+target_claim_id: two_axis_opposite_three_path_neighbor_read_cyclic_frame_transport_tplus1_reverse_face
+target_blocker_text: "display three-path neighbor-read cyclic-frame transport reverse/face on the two-axis opposite seed, not leftover of #7549, not nm2frmrdz z-probe neighbor-read reverse HOLD face HOLD, not nm2cycfrmhol unit-square holonomy, not nm2cycfrmz transport, not scalar neighbor-read of Orient, not unique nonnegative sending, not leftover-axis, not lex-one e1<e2<e3, not unique |O_i|=1, not unsigned axis units, not cover, not split"
+source_of_blocker_text: handoff
+reachability_to_target: advances
+artifact_role: theorem
+next_trace_action: "Keep three-path neighbor-read cyclic-frame transport of F at t+1 displayed; do not write path-independence into Admissibility, do not reduce to leftover of #7549, do not reduce to nm2frmrdz z-probe neighbor-read, do not reduce to nm2cycfrmhol unit-square holonomy, do not reduce to nm2cycfrmz transport, do not reduce to scalar neighbor-read of Orient, do not reduce to unique nonnegative permutation sending, do not reduce to unique signed |O_i|=1, do not reduce to lexicographic unsigned o1,o2, do not reduce to leftover-axis, do not reduce to lex-one signed e1<e2<e3, do not reduce to cyclic lex-smallest, do not reduce to cover, do not reduce to split, do not reduce to leftover-empty fail, do not reduce to leftover of M alone or leftover of O alone, do not replace path-independence by unique outgoing letters, do not replace path-independence by existential opposite of signed locks, do not replace path-independence by six-neighbor lock union, and do not attach L1."
+conditional_surface_status: "exact on B_3(0) for equality of the three length-3 path-ordered products of neighbor-read cyclic-frame transport of M and O at t+1 on the two-axis opposite seed and reverse/face from that; displayed, not adopted"
+hypothetical_axiom_status: "no edit"
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```
+
+## Displayed process
+
+Write `e_1=(1,0,0)`, `e_2=(0,1,0)`, and `e_3=(0,0,1)`. The six nearest-neighbor
+steps are
+
+```text
+NN = {+e_1,-e_1,+e_2,-e_2,+e_3,-e_3}.
+```
+
+The finite host is the closed Euclidean ball of radius 3 centered at the
+origin,
+
+```text
+B_3(0) = { n in Z^3 : n·n <= 9 }.
+```
+
+No larger host is used. The reverse starts and the face starts are the only
+sites whose three-path neighbor-read cyclic-frame transport of
+`F=(m,o_next,o_prev)` of `M` and `O` is scored:
+
+```text
+origin = (0,0,0),  Y = (0,1,0).
+A = (0,0,1),  E = (0,1,1).
+```
+
+If `w=s+e_1+e_2+e_3` lies outside `B_3(0)`, the letter at `s` is fail, not
+`UNDEFINED`. These are not the y-probes `A=(0,1,0)`, `B=(1,1,1)`,
+`C=(0,2,0)`, `D=(1,1,0)` as a four-z-probe letter. These are not the
+x-probes `A=(1,0,0)`, `B=(1,1,1)`, `C=(2,0,0)`, `D=(1,1,0)`. `A` and `E`
+are seeds of the second opposite pair. Same process as nm2axz. `F` and
+Orient as nm2cycfrmz. `P` as nm2cycfrmz. Neighbor-read as nm2frmrdz.
+
+Lock alphabet of the displayed process: `{±e_i}` with `i` in `{1,2,3}`.
+
+Seed: two disjoint opposite pairs recorded at formation tick 0. Origin
+locks `+e_1`. Site `(0,1,0)` locks `−e_1`. Site `(0,0,1)` locks `+e_2`.
+Site `(0,1,1)` locks `−e_2`. The second pair is a new seed, not a formed
+child of the first pair. This seed is not the 1-axis opposite two-site seed
+`{0,(0,1,0)}` with only `+e_1/−e_1`. This seed is not the perp two-site
+seed `+e_1/+e_2`. This seed is not the same-lock two-site seed
+`+e_1/+e_1`. This seed is not the z-symmetric three-site seed
+`{0,(0,0,1),(0,0,-1)}`. This seed is not the y-symmetric three-site seed
+that also records `(0,-1,0)` at tick 0.
+
+From a recorded site `p` with lock `L_in(p)=±e_i`, a six-neighbor step
+`s in NN` to `q=p+s` is allowed if and only if `s` is perpendicular to
+`e_i`, that is
+
+```text
+s · e_i = 0.
+```
+
+If `q` lies in `B_3(0)`, is still unformed, and the step is allowed, then `q`
+forms next and locks the incoming step `s`. If several allowed parents reach
+`q` at the same earliest formation, each such incoming step is kept. A later
+parent does not re-form `q`. Uniqueness is not required. Mixed remains a set.
+
+## Named three-path neighbor-read cyclic-frame transport of `(m,o_next,o_prev)` at `τ=t+1`
+
+Let `t(q)` be the formation tick of a vertex `q` when that tick is
+defined in `B_3(0)`. Let `τ(q)=t(q)+1`. There is no global T.
+
+`M(q,τ)` is the set of earliest incoming nearest-neighbor steps at `q`
+using only records with tick `<= τ`. If `q` is unformed at `τ`, then
+`M(q,τ)` is `UNDEFINED`. If `q` is a seed and `τ >= 0`, then `M(q,τ)` is
+the singleton seed letter.
+
+`O(q,τ)` is the outgoing dual of `M`:
+
+```text
+O(q,τ) = { e in {±e_1,±e_2,±e_3} | q+e formed and e in M(q+e,τ) }.
+```
+
+If `q` is unformed at `τ`, then `O(q,τ)` is `UNDEFINED`. Empty `O` is empty,
+not `UNDEFINED`. Duplicate steps collapse in the set. The construction does
+not require `O` to be a singleton. It does not sum either set. It does not
+replace `O` by `M`. It does not wait for a global later T. Occupancy of
+sites is not used. O is not M.
+
+Unsigned axis of a defined lock set:
+
+```text
+Axis(S) = { e_i | some ±e_i in S }.
+```
+
+Cover at a probe at the same cut:
+
+```text
+cover(q) HOLDs iff Axis(M) intersect Axis(O) is empty
+and Axis(M) union Axis(O) equals {e_1,e_2,e_3}.
+```
+
+Split at a probe at the same cut:
+
+```text
+split(q) HOLDs iff cover HOLDs and |Axis(M)|=1
+(hence |Axis(O)|=2).
+```
+
+2-in 1-out is fail of split, not UNDEFINED. If `q` is unformed at `τ`, then
+split is `UNDEFINED`.
+
+Oriented frame at the same cut:
+
+```text
+When split HOLDs, m is the unique signed letter in M.
+i in {1,2,3} is the axis index of m.
+e_next = e_{i+1} with 3+1→1. e_prev = e_{i-1} with 1−1→3.
+O_next = O ∩ {±e_next}. O_prev = O ∩ {±e_prev}.
+If either is empty, Orient fails, not UNDEFINED.
+Order +e < −e. o_next is lex-largest in O_next (hence −e if both signs).
+o_prev likewise.
+Orient(q) = sign of the integer determinant of columns (m, o_next, o_prev).
+Else fail, not UNDEFINED, if split fails.
+UNDEFINED if M or O is UNDEFINED.
+```
+
+When split HOLDs, `F(q)=(m, o_next, o_prev)`. For an edge `q→r` of a formed
+six-neighbor pair, `P(q,r)` is the unique 3×3 signed permutation with
+`det = Orient(q)Orient(r)` sending columns of `F(q)` to columns of `F(r)`
+(`F(r)=F(q)P`). If none, that edge fails.
+
+Three-path letter at a start `s` in `B_3(0)`:
+
+```text
+w = s + e_1 + e_2 + e_3.
+If w·w > 9, the letter at s is fail, not UNDEFINED.
+The three paths of length 3 from s to w are the six-neighbor walks along
+the three cyclic permutations of (+e_1,+e_2,+e_3):
+  123: +e_1 then +e_2 then +e_3
+  231: +e_2 then +e_3 then +e_1
+  312: +e_3 then +e_1 then +e_2
+A path exists iff every vertex is in B_3(0), formed at τ, neighbor-read
+HOLDs, and every edge has a P as in nm2cycfrmz.
+The path product is the 3×3 product of those three P.
+Path-independence HOLDs at s iff all three paths exist and the three
+products are equal. Else fail, not UNDEFINED.
+Uniqueness of a sending neighbor is not required.
+Not a 4-cycle.
+Not leftover of #7549.
+```
+
+Neighbor-read of cyclic-frame transport HOLDs at `q` if and only if
+transport HOLDs at `q` and some formed six-neighbor `r` has transport
+HOLD. If transport fails at `q`, neighbor-read fails, not `UNDEFINED`.
+That is the vertex gate of this letter, as in nm2frmrdz. Neighbor-read of
+the scalar Orient sign HOLDs at `q` if and only if `Orient(q)` is `±1`
+and some formed six-neighbor has the same sign. That is a different
+object. Transport of nm2cycfrmz HOLDs at `q` if and only if
+some formed six-neighbor hosts a signed-permutation sending. That is a
+different object. Unit-square holonomy of nm2cycfrmhol HOLDs if and only
+if the four-edge product around a unit square is the identity. That is a
+different object: holonomy reverse HOLDs on this member while this reverse
+fails.
+
+Reverse three-path neighbor-read cyclic-frame transport holds if and only
+if path-independence HOLDs at origin and at `Y=(0,1,0)`. Face three-path
+neighbor-read cyclic-frame transport holds if and only if
+path-independence HOLDs at `A=(0,0,1)` and at `E=(0,1,1)`. Either start
+fail is reverse or face fail. A start with `w` outside `B_3(0)` is fail,
+not `UNDEFINED`.
+
+Cover and split do not score handedness.
+
+## Theorem 1 — ticks, `F`, Orient, `P`, neighbor-read, the three products at each probe
+
+On this process the four starts form in `B_3(0)` at tick 0. Compare to
+#7549 three-path cyclic-frame transport: that reverse fails and face fails
+from missing `P` on path 123 of origin, without a neighbor-read vertex
+gate. Compare to nm2frmrdz neighbor-read: that reverse HOLDs and face
+HOLDs on the four z-probes. Compare to nm2cycfrmhol unit-square holonomy:
+that holonomy reverse HOLDs and holonomy face fails. Compare to nm2cycfrmz
+cyclic-frame transport: reverse HOLDs and face HOLDs from existential
+sendings. Compare to nm2oricyclz cyclic Orient: reverse HOLDs and face
+HOLDs from equal `±1` signs without three path products. This display
+reads the three length-3 path-ordered products of neighbor-read
+`(m,o_next,o_prev)` from each start to its opposite cube vertex:
+
+```text
+t(origin)=0
+t(Y)=0
+t(A)=0
+t(E)=0
+w(origin) = (1, 1, 1)
+w(Y) = (1, 2, 1)
+w(A) = (1, 1, 2)
+w(E) = (1, 2, 2)
+M(origin, τ) = {+e_1}
+M(Y, τ) = {−e_1}
+M(A, τ) = {+e_2}
+M(E, τ) = {−e_2}
+O(origin, τ) = {−e_2, −e_3}
+O(Y, τ) = {+e_2, −e_3}
+O(A, τ) = {+e_1, −e_1, +e_3}
+O(E, τ) = {+e_1, −e_1, +e_3}
+split(origin) = hold
+split(Y) = hold
+split(A) = hold
+split(E) = hold
+F(origin) = (+e_1, −e_2, −e_3)
+F(Y) = (−e_1, +e_2, −e_3)
+F(A) = (+e_2, +e_3, −e_1)
+F(E) = (−e_2, +e_3, −e_1)
+Orient(origin) = +1
+Orient(Y) = +1
+Orient(A) = −1
+Orient(E) = +1
+neighbor-read(origin) = hold
+neighbor-read(Y) = hold
+neighbor-read(A) = hold
+neighbor-read(E) = hold
+path 123 of origin: (0,0,0)→(1,0,0)→(1,1,0)→(1,1,1)
+path 123 of origin fails because neighbor-read fail at (1, 0, 0) and at (1, 1, 0) and because split fails at (1,0,0) and at (1,1,0)
+P(origin, 123) = fail, fail, fail
+product(origin, 123) = fail
+path 231 of origin: (0,0,0)→(0,1,0)→(0,1,1)→(1,1,1)
+P(origin, 231) = [-1 0 0; 0 -1 0; 0 0 1], [0 0 1; -1 0 0; 0 -1 0], [0 -1 0; 0 0 -1; -1 0 0]
+product(origin, 231) = [1 0 0; 0 -1 0; 0 0 1]
+path 312 of origin: (0,0,0)→(0,0,1)→(1,0,1)→(1,1,1)
+P(origin, 312) = [0 0 -1; -1 0 0; 0 -1 0], [0 -1 0; 0 0 -1; -1 0 0], [1 0 0; 0 -1 0; 0 0 1]
+product(origin, 312) = [1 0 0; 0 -1 0; 0 0 1]
+path-independence(origin) = fail
+path-independence(Y) = fail
+path-independence(A) = fail
+path-independence(E) = fail
+```
+
+Two of the three products at origin exist and are equal. Path-independence
+still fails because path 123 does not exist. Equality of existing products
+is not HOLD: all three paths must exist. Vertices of path 231 and of path
+312 of origin neighbor-read HOLD. Vertices `(1, 0, 0)` and `(1, 1, 0)` of
+path 123 neighbor-read fail. Uniqueness is not required. Mixed remains a
+set. O is not M. This is not leftover of #7549.
+
+`A` is a seed at tick 0 with seed letter `+e_2`. Unique outgoing letters
+would assign `UNDEFINED` at mixed `O`. Unique signed `|O_i|=1` fails at
+`A` and at `E` because `O` has both `±e_1`. Lex-largest picks `−e` on each
+mixed cyclic slot, so `(o_next,o_prev)` is defined.
+
+New records in `B_3(0)` between `t` and `t+1` that meet a start's
+six-neighbors enter `O` and do not enter earliest `M`:
+
+```text
+new 6-NN of origin at t(origin)+1: (0, -1, 0), (0, 0, -1)
+new 6-NN of Y at t(Y)+1: (0, 2, 0), (0, 1, -1)
+new 6-NN of A at t(A)+1: (1, 0, 1), (-1, 0, 1), (0, 0, 2)
+new 6-NN of E at t(E)+1: (1, 1, 1), (-1, 1, 1), (0, 1, 2)
+```
+
+On the 1-axis opposite two-site seed, `A=(0,0,1)` is a formed child at
+tick 1 locking `+e_3`. That is leftover of the first pair. Here both
+`(0,0,1)` and `(0,1,1)` are seeds of a second opposite pair on a second
+axis.
+
+A start with `w` outside `B_3(0)`, for example `(3,0,0)` with
+`w=(4,1,1)` and `w·w=18>9`, is path-independence fail, not `UNDEFINED`.
+
+## Theorem 2 — reverse from three-path neighbor-read cyclic-frame transport at `τ`
+
+Reverse three-path neighbor-read cyclic-frame transport holds if and only
+if path-independence HOLDs at origin and at `Y=(0,1,0)`. Path 123 of origin
+fails, so path-independence at origin fails, so reverse fails. This is HOLD
+iff both reverse starts have all three paths existing with equal products
+and neighbor-read HOLD at every vertex, not leftover of #7549, not leftover
+of nm2frmrdz neighbor-read, not leftover of nm2cycfrmhol unit-square
+holonomy, not leftover of nm2cycfrmz cyclic-frame transport, not leftover
+of nm2oricyclz cyclic Orient equal signs, not leftover of scalar
+neighbor-read, not leftover of a unique nonnegative permutation sending,
+not leftover of nm2chiralz lexicographic unsigned `o1,o2`, not leftover of
+nm2oridetz unique signed outgoing letters, not leftover of nm2orichz
+leftover-axis, not leftover of nm2orionez lex-one, not leftover of nm2axz
+axis-cover, not leftover of nm2ax12z 1-in 2-out split, not leftover-empty
+fail, and not exist-opposite.
+
+Reverse three-path neighbor-read cyclic-frame transport at τ: fail
+
+Both reverse starts are defined, so this is not `UNDEFINED`. Cover reverse
+HOLDs because cover HOLDs at `A` and at `B` of the z-probes. Split reverse
+HOLDs because split HOLDs at those z-probes. Cover and split do not score
+handedness. nm2frmrdz neighbor-read reverse HOLDs because neighbor-read HOLDs at `A`
+and at `B` of the z-probes; that pair is not three path products.
+nm2cycfrmz transport reverse HOLDs because transport HOLDs at
+`A` and at `B`; that is existential at two vertices, not three path
+products. nm2cycfrmhol unit-square holonomy reverse HOLDs because the
+four-edge product around `A-D-B-E` is the identity; that 4-cycle is not
+this letter. Leftover-axis reverse HOLDs with `−1,−1` bits, but leftover-axis
+is two signs, not three path products. Lexicographic unsigned reverse fails
+because unsigned `Orient(A)=−1` and `Orient(B)=+1`. Unique signed reverse
+fails because both unique signed signs fail. Lex-one signed reverse fails
+because lex-one `Orient(B)=+1` from `e1<e2<e3` order independent of `m`.
+Cyclic lex-smallest reverse HOLDs with opposite signs `+1,+1`. Leftover-empty
+reverse fails because leftover of the union is empty at `A` and at `B`.
+Leftover of `M` reverse fails because leftover of `M` at `A` is `{e_1, e_3}`
+and at `B` is `{e_2, e_3}`: nonempty and unequal. Leftover of `O` reverse
+fails because leftover of `O` at `A` is `{e_2}` and at `B` is `{e_1}`:
+nonempty and unequal. Exist-opposite reverse of signed `M` fails.
+Exist-opposite reverse of signed `O` holds. Those leftovers are not this
+display.
+
+Reverse fails.
+
+## Theorem 3 — face from three-path neighbor-read cyclic-frame transport at `τ`
+
+Face three-path neighbor-read cyclic-frame transport holds if and only if
+path-independence HOLDs at `A=(0,0,1)` and at `E=(0,1,1)`. No path of
+length 3 from `A` to `(1,1,2)` has neighbor-read HOLD at every vertex and
+all three edge `P`, and no path from `E` to `(1,2,2)` has those, so both
+face starts fail. Face fails. Displayed, not adopted.
+
+Face three-path neighbor-read cyclic-frame transport at τ: fail
+
+Displayed, not adopted. The bits are not written into Admissibility.
+Do not write into Admissibility. Do not attach L1.
+
+Cover face HOLDs because cover HOLDs at `C` and at `D`. Split face HOLDs
+because split HOLDs at `C` and at `D`. Those two vertices are not the face
+starts of this letter: this face reads `A` and `E` as cube starts, and
+every path from those starts has a missing `P`. Cyclic lex-largest oriented
+face HOLDs because both signs at `C` and `D` are `+1`; that pair is not
+three path products. nm2frmrdz neighbor-read face HOLDs because neighbor-read HOLDs
+at `C` and at `D`; that z-probe pair is not this letter. nm2cycfrmz
+transport face HOLDs because transport HOLDs
+at `C` and at `D`; that existential pair is not this letter. nm2cycfrmhol
+unit-square holonomy face fail is a 4-cycle at height 2, not this cube
+letter. Leftover-axis face fails because those signs are `+1` and `−1`.
+Lex-one signed oriented face HOLDs because both lex-one signs are `−1`.
+Lexicographic unsigned face HOLDs because both unsigned signs are `+1`.
+Unique signed face fails because neither unique signed sign is `±1`. Cover
+and split do not score handedness. Presence of an opposite pair in `O`
+HOLDs at `C` and at `D`, so pair-presence face HOLDs while this face fails.
+On the 1-axis opposite two-site seed, reverse holonomy of `A-D-B-E` HOLDs
+with `t(A)=1`; here `t(A)=0` and this reverse fails from missing path 123
+at origin. The four y-probes of this same seed give cyclic Orient `+1` at
+`A` and Orient fail at `D` from split fail, so oriented y-face fails. The
+four x-probes give oriented reverse fail and oriented face fail. Those
+probe-direction readouts are not this three-path letter. Leftover-empty
+face fails because leftover of the union is empty at `C` and at `D`.
+Leftover of `M` at `C` is `{e_1, e_2}` and leftover of `M` at `D` is
+`{e_2, e_3}`: nonempty and unequal. Leftover of `O` at `C` is `{e_3}` and
+leftover of `O` at `D` is `{e_1}`: nonempty and unequal. Exist-opposite
+face of signed `M` fails. Exist-opposite face of signed `O` fails.
+
+Empty leftover does not make reverse `UNDEFINED`. Leftover-empty fail is
+not this reverse. A start whose opposite cube vertex lies outside
+`B_3(0)` is path-independence fail, not `UNDEFINED`.
+
+Face fails.
+
+## What this note does not claim
+
+- It does not replace three-path neighbor-read independence by leftover of #7549.
+- It does not replace three-path independence by nm2frmrdz z-probe neighbor-read reverse HOLD face HOLD.
+- It does not replace three-path independence by nm2cycfrmhol unit-square holonomy.
+- It does not replace three-path independence by nm2cycfrmz cyclic-frame transport.
+- It does not replace three-path independence by neighbor-read of the scalar Orient sign.
+- It does not replace three-path independence by a unique nonnegative permutation sending.
+- It does not require a unique formed six-neighbor witness.
+- It does not reprint nm2oricyclz cyclic Orient reverse hold face hold as this letter.
+- It does not select a unique outgoing or leftover lock.
+- It does not reduce lock vectors to named signs `{+,−}`.
+- It does not require outgoing sides to be singletons.
+- It does not sum either set.
+- It does not replace Orient by leftover-empty fail.
+- It does not replace Orient by leftover of `M` alone.
+- It does not replace Orient by leftover of `O` alone.
+- It does not replace Orient by existential opposite of signed locks.
+- It does not replace Orient by presence of an opposite pair in `O`.
+- It does not replace Orient by lexicographic unsigned `o1,o2` orientation.
+- It does not replace Orient by unique signed `|O_i|=1` letters.
+- It does not replace Orient by leftover-axis orientation.
+- It does not replace Orient by nm2orionez lex-one signed `e1<e2<e3`.
+- It does not replace Orient by cyclic lex-smallest (`+e` if both signs).
+- It does not replace Orient by unsigned axis units of `Axis(O)`.
+- It does not replace Orient by axis-cover without the frame sign.
+- It does not replace Orient by 1-in 2-out split without the frame sign.
+- It does not treat split fail as `UNDEFINED`.
+- It does not treat empty `O_i` as `UNDEFINED`.
+- It does not replace `O` by `M`.
+- It does not replace Orient by locks of six-neighbors.
+- It does not use a six-neighbor star as the letter.
+- It does not wait for a global later T.
+- It does not attach a formation member from already-recorded six-neighbor
+  locks.
+- It does not reprint nmsimopp exist-opposite of `M` and of `O` at `t+1`.
+- It does not reprint nmcover axis-cover reverse hold face hold as this
+  oriented display.
+- It does not reprint nm2axz axis-cover reverse hold face hold as this
+  oriented display.
+- It does not reprint nm2ax12z 1-in 2-out split reverse hold face hold as
+  this oriented display.
+- It does not reprint nm2chiralz lexicographic unsigned `o1,o2` reverse fail
+  face hold with `+1,+1` as this oriented display.
+- It does not reprint nm2oridetz unique signed reverse fail face fail as
+  this oriented display.
+- It does not reprint nm2orichz leftover-axis reverse hold face fail as
+  this oriented display.
+- It does not reprint nm2orionez lex-one reverse fail face hold as this
+  oriented display.
+- It does not reprint the 1-axis opposite two-site seed as this member.
+- It does not score the y-probes or the x-probes as this letter.
+- It does not reprint nmunopp untimed union.
+- It does not reprint nmt2opp `M` frozen at `t` as this oriented display.
+- It does not reprint nmot2opp two-tick composition of empty-then-HOLD `O`.
+- It does not reprint nmoutopp untimed eventual-`O`.
+- It does not reprint the two-tick lock-count clock composition.
+- It does not reprint mixed #7188 fail/fail as this member.
+- It does not use occupancy of sites as the letter.
+- It does not enlarge the host beyond `B_3(0)`.
+- It does not edit Lattice, Qubit, Admissibility, or Record.
+- It does not supply a physical rate or a continuum kernel.
+
+## Current premise boundary
+
+The Lattice, Qubit, Admissibility, and Record premises are quoted from
+[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md):
+
+Physical sites are the points of the cubic lattice `Z^3`, with nearest-neighbor
+adjacency, standard translations, and proper cubic rotations about each site.
+
+The full one-site possibility domain has algebraic presentation `M_2(C)`.
+
+For each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions.
+
+Records form.
+
+When present, a record locks exactly one admissible local possibility.
+
+A readout value is determined by record content alone.
+
+A site with no record cannot be read.
+
+The Admissibility reading note says the distribution concerns which possibility
+a forming record locks, conditional on formation at that site; it does not
+supply the formation site, probability, or rate.
+
+This display uses Lattice to name `B_3(0)` and the four starts. It uses
+Qubit only as the algebra of the local possibility domain. It uses Record
+only as a boundary: a present lock is content. It does not rewrite
+Admissibility. The two-axis opposite seed process, three-path cyclic-frame
+transport of `(m,o_next,o_prev)` of `M` and `O` at `t+1`, and the
+reverse/face bits from neighbor-read path-independence are displayed
+theorem-domain data.
+
+## Exact target and obligation graph
+
+| Obligation | Status |
+|---|---|
+| current Lattice / Admissibility / Record premises | quoted; no edit |
+| perp-step incoming-lock process on `B_3(0)` | displayed; two-axis opposite seed `+e_1/−e_1` and `+e_2/−e_2` |
+| ticks `t(origin)`, `t(Y)`, `t(A)`, `t(E)` | Theorem 1; `0`, `0`, `0`, `0` |
+| opposite vertices `w` | Theorem 1; all four in `B_3(0)` |
+| `F` and Orient at the four starts | Theorem 1; HOLDING frames |
+| three path products at origin | Theorem 1; 123 fail, 231 and 312 equal and nonzero |
+| neighbor-read at the four starts | Theorem 1; hold, hold, hold, hold |
+| path-independence at the four starts | Theorem 1; fail, fail, fail, fail |
+| leftover of #7549 three-path cyclic-frame transport | Theorem 2; #7549 reverse fail face fail from missing `P` without neighbor-read vertex gate; not this letter |
+| leftover of nm2frmrdz neighbor-read | Theorem 2; neighbor-read reverse HOLD and neighbor-read face HOLD on z-probes; not this letter |
+| leftover of nm2cycfrmhol unit-square holonomy | Theorem 2; holonomy reverse hold and holonomy face fail; not this letter |
+| leftover of nm2cycfrmz cyclic-frame transport | Theorem 1; transport reverse hold and transport face hold; not this letter |
+| reverse from three-path neighbor-read cyclic-frame transport at `τ` | Theorem 2; `fail` |
+| face from three-path neighbor-read cyclic-frame transport at `τ` | Theorem 3; `fail` |
+| unique outgoing lock | not required |
+| occupancy of sites as the letter | not used |
+| named-sign `{+,−}` letter | not used; lost the axis |
+| singleton unique lock-vector letter | not used as the object; mixed remains a set |
+| six-neighbor star as the letter | not used |
+| leftover-empty fail of leftover axis | not this oriented display |
+| leftover of exist-opposite HOLD | not this oriented display |
+| leftover of nmcover axis-cover HOLD | not this oriented display |
+| leftover of nm2axz axis-cover HOLD | not this oriented display |
+| leftover of nm2ax12z 1-in 2-out split HOLD | not this oriented display |
+| leftover of nm2chiralz lexicographic unsigned `o1,o2` | not this oriented display |
+| leftover of nm2oridetz unique signed `|O_i|=1` | not this oriented display |
+| leftover of nm2orichz leftover-axis | not this oriented display |
+| leftover of nm2orionez lex-one signed `e1<e2<e3` | not this oriented display |
+| leftover of cyclic lex-smallest | not this oriented display |
+| leftover of nm2oricyclz cyclic Orient equal signs | not this letter |
+| leftover of nm2cycfrmz cyclic-frame transport | not this letter |
+| leftover of #7549 three-path cyclic-frame transport | not this letter |
+| leftover of nm2frmrdz neighbor-read reverse HOLD face HOLD | not this letter |
+| leftover of scalar neighbor-read of Orient | not this letter |
+| leftover of unique nonnegative permutation sending | not this letter |
+| leftover of leftover-of-`M` alone | not this display |
+| leftover of leftover-of-`O` alone | not this display |
+| leftover of nmunopp untimed union | not this display |
+| leftover of nmt2opp `M` frozen at `t` | not this display |
+| leftover of nmot2opp two-tick composition | not this display |
+| leftover of nmoutopp untimed eventual-`O` | not this display |
+| two-tick lock-count clock composition | not this display |
+| leftover of mixed #7188 fail/fail | not this display |
+| leftover of the 1-axis opposite two-site seed | not this display |
+| leftover of the same-lock two-site seed | not this display; #7477 same-lock face transport fails |
+| leftover of the LIVE three-axis three-site seed | not this display; face transport fails |
+| split fail scored as `UNDEFINED` | refused; Orient fail |
+| empty `O_i` scored as `UNDEFINED` | refused; Orient fail |
+| global later T | not used |
+| oriented frame as Admissibility content | not adopted |
+| formation site / probability / rate | open |
+| physical Record readout of the bits | open |
+
+## Value gate (V1–V5)
+
+| # | Answer |
+|---|---|
+| V1 | It answers the first-display question: equality of the three length-3 path-ordered products of neighbor-read cyclic-frame transport along the permutations of `{e1,e2,e3}` at `t+1` on the two-axis opposite seed, and reverse/face from that. |
+| V2 | Current main has no landed three-path neighbor-read cyclic-frame-transport reverse/face of timed `M` and `O` on these four starts of the two-axis opposite seed. |
+| V3 | Three path products at each start, neighbor-read at the vertices, and the two reverse/face bits are independently finite and exact. |
+| V4 | The theorem is more than a restatement of Record because it reads the three length-3 signed-permutation products on neighbor-read HOLD vertices at the same `t+1` cut, reverse fails and face fails while nm2frmrdz neighbor-read reverse HOLDs and neighbor-read face HOLDs, while leftover of #7549 does not require neighbor-read, while nm2cycfrmhol unit-square holonomy reverse HOLDs and holonomy face fails, nm2cycfrmz transport reverse HOLDs and transport face HOLDs, scalar neighbor-read reverse fails, unique nonnegative sending fails at each of `A,B,C,D`, and nm2oricyclz Orient equality does not supply the products. |
+| V5 | It is not an adopted content rule: the bits remain displayed. |
+
+## No-go discipline gate
+
+The negative content is narrow: the display does not write those bits into
+Admissibility, does not reduce them to named signs, does not require a
+unique outgoing lock, does not replace Orient by leftover-empty fail, does
+not replace Orient by leftover of `M` alone or leftover of `O` alone, does
+not replace Orient by existential opposite of signed locks, does not
+replace Orient by presence of an opposite pair in `O`, does not replace
+Orient by nm2chiralz lexicographic unsigned `o1,o2`, does not replace
+Orient by nm2oridetz unique signed `|O_i|=1`, does not replace Orient by
+nm2orichz leftover-axis, does not replace Orient by nm2orionez lex-one,
+does not replace Orient by cyclic lex-smallest, does not replace Orient by
+nmcover axis-cover, does not replace Orient by nm2axz axis-cover, does not
+replace Orient by nm2ax12z 1-in 2-out split, does not identify this
+display with the 1-axis opposite two-site seed, and does not identify it
+with nmunopp union. No global impossibility is claimed.
+
+### N1 — materially distinct routes
+
+| Route | Attempt | Why it fails here | Marker |
+|---|---|---|---|
+| leftover of #7549 | reuse three-path products without neighbor-read HOLD at vertices | #7549 reverse fails and face fails from missing `P` on path 123; this letter requires neighbor-read HOLD at every vertex; neighbor-read fail at (1, 0, 0) on path 123 | ATTEMPTED |
+| nm2frmrdz neighbor-read | reuse z-probe neighbor-read reverse HOLD face HOLD | neighbor-read reverse HOLDs and neighbor-read face HOLDs (#7511/#7528) while this reverse fails and this face fails | ATTEMPTED |
+| nm2cycfrmhol unit-square holonomy | reuse four-edge identity around `A-D-B-E` | holonomy reverse HOLDs and holonomy face fails; this reverse fails because path 123 of origin has no `P`; Not a 4-cycle | ATTEMPTED |
+| scalar neighbor-read of Orient | reuse equal Orient sign at some formed 6-NN | scalar HOLDs at `A` and fails at `B,C,D`; scalar reverse fails and scalar face fails as this reverse fails, from a different object | ATTEMPTED |
+| unique nonnegative permutation sending | require a unique sending with no minus signs | unique nonnegative sending fails at each of `A,B,C,D`; uniqueness is not required | ATTEMPTED |
+| nm2cycfrmz cyclic-frame transport | reuse transport reverse hold and face hold from existential 6-NN sendings | transport reverse HOLDs and transport face HOLDs while this reverse fails and this face fails; transport is existential at a vertex | ATTEMPTED |
+| nm2oricyclz cyclic Orient | reuse Orient reverse hold and face hold from equal `±1` signs | Orient reverse HOLDs and face HOLDs without three path products; HOLDING cyclic #7451/#7452 is the frame sign, not path-independence | ATTEMPTED |
+| nm2chiralz lexicographic unsigned `o1,o2` | reuse unsigned reverse fail and face hold | unsigned reverse fails as this reverse fails; unsigned face HOLDs while this face fails | ATTEMPTED |
+| nm2oridetz unique signed `|O_i|=1` | reuse unique signed reverse fail and face fail | unique signed reverse fails as this reverse fails, from `|O_i|≠1`, not from missing path 123 | ATTEMPTED |
+| nm2orichz leftover-axis | reuse leftover-axis reverse hold and face fail | leftover-axis reverse HOLDs (`−1,−1`) while this reverse fails; leftover-axis face fails because C and D swap `(m,pair)` columns | ATTEMPTED |
+| nm2orionez lex-one | reuse lex-one reverse fail and face hold | lex-one reverse fails from `e1<e2<e3` order independent of `m`; this reverse fails from missing path 123; lex-one face HOLDs while this face fails | ATTEMPTED |
+| cyclic lex-smallest | reuse same cyclic axes with `+e` if both signs | lex-smallest reverse HOLDs with `+1,+1` and face HOLDs with `−1,−1`; this reverse fails and this face fails | ATTEMPTED |
+| nm2axz axis-cover | reuse cover reverse hold and cover face hold on these z-probes | cover HOLDs reverse and face without cyclic signed columns; cover reverse HOLDs while this reverse fails | ATTEMPTED |
+| nm2ax12z 1-in 2-out split | reuse split reverse hold and split face hold | split HOLDs reverse and face on `A,B,C,D` without the three path products; Cover and split do not score handedness | ATTEMPTED |
+| leftover-empty fail | score reverse/face as leftover nonempty-equal | leftover reverse fails as this reverse fails, from empty leftover, not from missing path 123 | ATTEMPTED |
+| leftover of `M` alone | score `{e_1,e_2,e_3}` minus `Axis(M)` | leftover of `M` at `A` is `{e_1,e_3}` and at `B` is `{e_2,e_3}`, nonempty unequal | ATTEMPTED |
+| leftover of `O` alone | score `{e_1,e_2,e_3}` minus `Axis(O)` | leftover of `O` at `A` is `{e_2}` and at `B` is `{e_1}`, nonempty unequal | ATTEMPTED |
+| exist-opposite across probes | reuse signed reverse hold and face hold of `M` and of `O` | exist-opposite reverse of signed `O` holds while this reverse fails; exist-opposite face of signed `O` fails as this face fails, from a different object | ATTEMPTED |
+| opposite-pair presence in `O` | score reverse/face as both sides containing some `e` and `−e` | pair-presence HOLDs at each of `A,B,C,D` without cyclic columns; pair-presence reverse HOLDs while this reverse fails | ATTEMPTED |
+| nmunopp untimed union | score reverse/face from `M ∪ O` | union is signed letters; Orient is integer sign of unique signed incoming and cyclic lex-largest outgoing letters | ATTEMPTED |
+| unique outgoing letter | replace mixed `O` by a singleton or `UNDEFINED` | mixed `O(A,τ)` remains a set; unique-letter Orient is `UNDEFINED` while this Orient is `−1` | ATTEMPTED |
+| unsigned incoming axis | replace signed `m` by the positive `Axis(M)` unit | on this member both agree at the z-probes; flipping `m` on unique signed `O={+e_1,+e_3}` from `+e_2` to `−e_2` flips Orient from `+1` to `−1` | ATTEMPTED |
+| 2-in 1-out as `UNDEFINED` | treat `|Axis(M)|=2` cover as unformed | split fail is Orient fail, not UNDEFINED; none of these four starts is 2-in 1-out | ATTEMPTED |
+| empty `O_i` as `UNDEFINED` | treat empty signed outgoing on an axis as unformed | empty `O_i` is Orient fail, not UNDEFINED | ATTEMPTED |
+| 1-axis opposite two-site seed | reuse `t(A)=1`, `t(C)=4`, mixed `M(C)`, Orient fail at `C` | different seed; second pair is a new seed, not a formed child; here `t(A)=0` and split HOLDs at `A` | ATTEMPTED |
+| y-probe Orient | score the four y-probes on this seed | y-probe reverse fails (`+1,−1`) and y-face fails; this letter is the four cube starts | ATTEMPTED |
+| x-probe Orient | score the four x-probes on this seed | x-probe reverse fails at `A`; this letter is the four cube starts | ATTEMPTED |
+| two-tick lock-count clock | score a lock-count clock across two ticks | different member; this display scores three path products of own incoming and outgoing at `t+1` | ATTEMPTED |
+| mixed #7188 fail/fail | reuse z-symmetric mixed `M` reverse-fail face-fail | different process; this member reports reverse fail and face fail from missing path `P`, not mixed `M` | ATTEMPTED |
+| same-lock two-site seed | reuse `+e_1/+e_1` | different seed; this member is two disjoint opposite pairs | ATTEMPTED |
+| sum of a set | replace Orient by a `Z^3` sum | the construction does not sum; mixed `O(A)` sums to `+e_3` while cyclic is `(+e_3,−e_1)` | ATTEMPTED |
+| named-sign lettering | collapse `{±e_i}` to `{+,−}` | named-sign lettering lost the axis | ATTEMPTED |
+| global later T | wait until `max t(A,B,C,D)` before reading | `τ(q)=t(q)+1` is per-probe; no global T | ATTEMPTED |
+| attach a formation member from already-recorded six-neighbor locks | form the probes by a neighbor-lock letter instead of perp-step | refused; not attached | ATTEMPTED |
+| adopt bits into Admissibility | rewrite the local rule by the oriented frame | refused; displayed, not adopted | ATTEMPTED |
+
+### N2 — wall independence
+
+Missing physical adoption, missing identification of this letter with
+nm2cycfrmhol unit-square holonomy, missing identification of Orient with
+leftover of `M` alone, missing identification of Orient with leftover-empty
+fail, missing identification of Orient with existential opposite of signed
+locks, missing identification of Orient with presence of an opposite pair
+in `O`, missing identification of Orient with nm2chiralz lexicographic
+unsigned `o1,o2`, missing identification of Orient with nm2oridetz unique
+signed `|O_i|=1`, missing identification of Orient with nm2orichz
+leftover-axis, missing identification of Orient with nm2orionez lex-one,
+missing identification of Orient with cyclic lex-smallest, missing
+identification of Orient with nmcover axis-cover, missing identification of
+Orient with nm2axz axis-cover, missing identification of Orient with
+nm2ax12z 1-in 2-out split, missing identification of this seed with the
+1-axis opposite two-site seed, and missing Record identification of reverse
+are distinct open premises. This note claims no complete wall collection.
+
+### N3 — hidden-condition scan
+
+The host `B_3(0)`, two disjoint opposite seed pairs `+e_1/−e_1` and
+`+e_2/−e_2`, perpendicular step rule, incoming-step lock, own incoming set
+and own outgoing dual from records with tick `<= τ`, per-probe `τ=t+1`,
+unsigned axis, cover as complementary occupation of `{e_1,e_2,e_3}`, split
+as cover and `|Axis(M)|=1`, unique signed `m` when split HOLDs, cyclic
+next/prev axes of `Axis(M)`, lex-largest signed outgoing letter under
+`+e < −e` (hence `−e` if both signs), integer determinant sign, empty
+`O_next` or empty `O_prev` as Orient fail not `UNDEFINED`, split fail as
+Orient fail not `UNDEFINED`, four cube starts with seed origin and seed
+`A`, second pair as a new seed not a formed child, three cyclic
+permutations of `(+e_1,+e_2,+e_3)`, neighbor-read HOLD at every vertex of
+a path, and mixed remains a set are declared.
+No uniqueness of outgoing locks, no six-neighbor lock union as the scored
+object, no lock-count clock, no global later T, no formation attachment
+from already-recorded six-neighbor locks, and no Admissibility rewrite are
+silently assumed.
+
+### N4 — source residual matching
+
+The current axiom memo supplies cubic sites, `M_2(C)`,
+content-conditional-on-formation, and unreadable absence. The residual that
+formation site, probability, and rate remain unsupplied is unchanged. The
+path-independence `fail`/`hold` reports do not close that residual.
+
+### N5 — resolution and rhetoric audit
+
+| Resolution | Executed | Not claimed |
+|---|---|---|
+| per element | cyclic frame `F=(m,o_next,o_prev)`, neighbor-read, and three length-3 path-ordered products of edge `P` | no continuum alphabet |
+| per site | origin, `Y`, `A`, `E` starts on `B_3(0)` only | no other cubic sites |
+| per mode | no mode calculation | no spectral exhaustion |
+| per block | three path products at each start, reverse/face from path-independence | no adopted content law |
+| lattice wide | checked and not executed | no lattice-wide lettering rule |
+
+### N6 — live partial-closure paths
+
+Live routes include a later Record content map for three-path neighbor-read
+cyclic-frame transport reverse/face, a formation-rate rule, and a physical
+selector among 1-in 2-out frames. None is taken here.
+
+### N7 — hostile steelman
+
+**Steelman:** Reverse fail and face fail are only leftover of #7549
+three-path cyclic-frame transport, or leftover of nm2frmrdz neighbor-read
+reverse HOLD face HOLD, or leftover of nm2cycfrmhol unit-square holonomy
+face fail, or of nm2cycfrmz cyclic-frame transport, or of nm2oricyclz
+cyclic Orient equal signs, or of neighbor-read of the scalar Orient sign,
+or of cover and split; leftover-axis already answers reverse HOLD and face
+fail; lex-one already answers face HOLD; unique signed `|O_i|=1` already
+answers mixed `O`; leftover of `M` alone already answers reverse; leftover
+of `O` alone already answers reverse; exist-opposite of signed `O` already
+answers reverse; mixed #7188 already reported fail/fail; the second pair
+is only the formed child `(0,0,1)` of the 1-axis seed; unique outgoing
+letters should be required; cyclic lex-smallest already gives HOLD bits
+with opposite signs; and unsigned incoming axis already gives the same
+signs because each `M` letter is the positive unit.
+
+**Answer:** Leftover of #7549 scores path existence from formed vertices
+and edge `P` alone. This letter requires neighbor-read HOLD at every
+vertex. Path 123 of origin fails here with neighbor-read fail at
+`(1, 0, 0)` and at `(1, 1, 0)`. nm2frmrdz neighbor-read reverse HOLDs and
+neighbor-read face HOLDs on the four z-probes while this reverse fails and
+this face fails. Unit-square holonomy reverse HOLDs because the product of
+the four edge sendings around `A-D-B-E` is the identity. This reverse fails
+because path 123 of origin has no `P`. That is leftover of nm2cycfrmhol
+unit-square holonomy, not this letter. Holonomy is a 4-cycle; this letter
+is three length-3 walks to the opposite cube vertex. Transport reverse
+HOLDs and transport face HOLDs: leftover of nm2cycfrmz cyclic-frame
+transport, not this letter. Scalar neighbor-read of Orient HOLDs only at
+`A` and fails at `B`, `C`, and `D`, so scalar reverse fails and scalar
+face fails. HOLDING cyclic #7451/#7452 Orient reverse HOLDs from equal
+signs without three path products; this reverse fails from missing path
+123. Unique nonnegative permutation sending fails at each of `A,B,C,D`.
+Cover and split HOLD reverse and face on `A,B,C,D` and do not score the
+three path products. Leftover-axis reverse HOLDs with `−1,−1` while this
+reverse fails. Lex-one reverse fails from `e1<e2<e3` order independent of
+`m`; this reverse fails from missing `P` on path 123. Lexicographic
+unsigned `o1,o2` reverse fails with `−1,+1` and face HOLDs with `+1,+1`.
+Unique signed `|O_i|=1` reverse fails and face fails because each of
+`A,B,C,D` has an opposite pair in `O`. Cyclic lex-smallest reverse HOLDs
+with `+1,+1` and face HOLDs with `−1,−1`; those signs are not these
+path-independence bits. Presence of an opposite pair in `O` HOLDs at each
+of the four z-probes without cyclic columns. Leftover of `M` alone at `A`
+is `{e_1,e_3}` and at `B` is `{e_2,e_3}`: nonempty unequal. Leftover of
+`O` alone at `A` is `{e_2}` and at `B` is `{e_1}`. Unique outgoing letters
+would assign `UNDEFINED` at mixed `O(A)`; this Orient is `−1`, not
+`UNDEFINED`. Mixed #7188 is a different z-symmetric process with mixed `M`.
+The second pair is a new seed, not a formed child: `(0,0,1)` is recorded
+at tick 0 with lock `+e_2`, whereas the 1-axis child forms at tick 1 with
+lock `+e_3`. Reverse three-path neighbor-read cyclic-frame transport is
+HOLD iff both reverse starts have all three paths existing with equal
+products and neighbor-read HOLD at every vertex, not leftover of #7549,
+not leftover of leftover-axis and not leftover of nm2orionez lex-one.
+
+### N8 — cross-cycle echo
+
+nm2axz cover on this two-axis seed reported cover HOLD at each of the four
+z-probes, reverse hold, and face hold. nm2ax12z 1-in 2-out split on the
+same seed reported split HOLD at each of the four z-probes, reverse hold,
+and face hold. nm2chiralz lexicographic unsigned `o1,o2` on the same seed
+reported Orient `−1,+1,+1,+1`, reverse fail, and face hold. nm2oridetz
+unique signed outgoing letters on the same seed reported Orient fail at
+each probe, reverse fail, and face fail. nm2orichz leftover-axis on the
+same seed reported Orient `−1,−1,+1,−1`, reverse hold, and face fail
+because C and D swap `(m,pair)` columns. nm2orionez lex-one on the same
+seed reported Orient `−1,+1,−1,−1`, reverse fail, and face hold from
+`e1<e2<e3` order independent of `m`. Leftover axis reported empty leftover
+at each of four z-probes, leftover reverse fail, and leftover face fail.
+The four y-probes of this same seed reported cyclic Orient `+1` at `A`
+from `m=−e_1` and Orient fail at `D` from split fail, so y-reverse fails
+and y-face fails. nm2oricyclz cyclic next/prev lex-largest Orient on the
+same seed reported HOLDING cyclic #7451/#7452 with Orient `−1,−1,+1,+1`,
+reverse hold, and face hold from equal signs, without a sending matrix.
+nm2cycfrmz cyclic-frame transport on the same seed reported transport
+reverse hold and transport face hold. nm2cycfrmhol unit-square holonomy
+on the same seed reported holonomy reverse hold and holonomy face fail of
+the xy-plane 4-cycle. nm2frmrdz neighbor-read on the same seed reported
+neighbor-read reverse HOLD and neighbor-read face HOLD. #7549 three-path
+cyclic-frame transport on the same seed reported reverse fail and face
+fail without a neighbor-read vertex gate. This note is not those displays:
+it reports equality of the three length-3 path-ordered products of
+neighbor-read cyclic-frame transport of `(m,o_next,o_prev)` of `M` and `O`
+at `τ=t+1` on the two-axis opposite seed, with `t(origin)=0`, `t(Y)=0`,
+`t(A)=0`, and `t(E)=0`, reverse path-independence fail, and face
+path-independence fail, while nm2frmrdz neighbor-read reverse HOLDs and
+neighbor-read face HOLDs, while leftover of #7549 does not require
+neighbor-read HOLD, while nm2cycfrmhol unit-square holonomy reverse HOLDs,
+while nm2cycfrmz transport reverse HOLDs and transport face HOLDs, and
+while scalar neighbor-read fails at `B,C,D`. Cover and split do not score
+handedness.
+
+**Gate disposition:** PASS for the three-path neighbor-read
+cyclic-frame-transport `t+1` reverse/face reports above. FAIL / DO NOT SHIP
+for “the predicate equals leftover of #7549,” “the predicate equals
+nm2frmrdz neighbor-read HOLD,” “the predicate equals the named sign,”
+“the predicate equals the unique singleton lock vector,” “the predicate
+equals six-neighbor lock union,” “the predicate equals leftover-empty
+fail,” “the predicate equals leftover of `M` alone,” “the predicate
+equals leftover of `O` alone,” “the predicate equals exist-opposite
+HOLD,” “the predicate equals opposite-pair presence in `O`,” “the
+predicate equals nm2chiralz lexicographic unsigned `o1,o2` HOLD,” “the
+predicate equals nm2oridetz unique signed HOLD,” “the predicate equals
+nm2orichz leftover-axis HOLD,” “the predicate equals nm2orionez lex-one
+HOLD,” “the predicate equals cyclic lex-smallest HOLD,” “the predicate
+equals nm2oricyclz cyclic Orient HOLD,” “the predicate equals nm2cycfrmz
+cyclic-frame transport HOLD,” “the predicate equals nm2cycfrmhol
+unit-square holonomy HOLD,” “the predicate equals scalar neighbor-read of
+Orient HOLD,” “the predicate equals unique nonnegative permutation sending
+HOLD,” “the predicate equals nmcover axis-cover HOLD,” “the predicate
+equals nm2axz axis-cover HOLD,” “the predicate equals nm2ax12z 1-in 2-out
+split HOLD,” “the predicate equals the 1-axis opposite two-site seed,”
+“the predicate equals nmunopp union,” “bits are Admissibility,” “split
+fail is UNDEFINED,” or “empty `O_i` is UNDEFINED.”
+
+## Primary runner
+
+The paired runner builds Euclidean `B_3(0)`, runs the two-axis opposite
+perp-step incoming-lock process, reads each start's own earliest incoming
+set and own outgoing dual from the record prefix at that start's `t+1`,
+reports split of the pair, reports the cyclic frame `F=(m,o_next,o_prev)`
+as nm2cycfrmz, reports Orient as nm2oricyclz lex-largest cyclic, reports
+neighbor-read as nm2frmrdz, reports `P` on each formed six-neighbor edge of
+the three cyclic paths from origin, `Y`, `A`, and `E` to the opposite cube
+vertex, reports the three path products on neighbor-read HOLD vertices,
+lists new records in `B_3(0)` between `t` and `t+1` that meet a start's
+six-neighbors, and checks Theorems 1--3. It also checks that reverse
+path-independence fails and face path-independence fails, that a start whose
+opposite cube vertex lies outside `B_3(0)` is fail not `UNDEFINED`, that
+leftover of #7549 is a different letter, that nm2frmrdz neighbor-read
+reverse HOLDs and neighbor-read face HOLDs while this reverse fails and
+this face fails, that nm2cycfrmhol unit-square holonomy reverse HOLDs while
+this reverse fails, that nm2cycfrmz transport reverse HOLDs and transport
+face HOLDs while this face fails, that scalar neighbor-read fails at
+`B,C,D`, that unique
+nonnegative permutation sending fails at each of `A,B,C,D`, that HOLDING
+cyclic #7451/#7452 Orient reverse HOLDs without being these products, that
+leftover-axis reverse HOLDs while this reverse fails and lex-one reverse
+fails from `e1<e2<e3` order independent of `m`, that split fail is Orient
+fail not `UNDEFINED`, that empty `O_next` or empty `O_prev` is Orient fail
+not `UNDEFINED`, that the 1-axis opposite two-site seed is a different
+member with `t(A)=1`, that #7477 same-lock is a different member with
+`t(A)=1`, that LIVE three-axis as a three-site seed is a different member,
+that leftover-empty fail is a different predicate, that leftover of `M`
+alone and leftover of `O` alone are different objects, that mixed sets
+remain sets, that the construction does not sum, that a formation member
+from already-recorded six-neighbor locks is not attached, that the second
+pair is a new seed not a formed child, that the y-probes and x-probes of
+this seed are not this letter, and that the display is not the two-tick
+lock-count clock composition. No runner cache is written.

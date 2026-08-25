@@ -2,7 +2,8 @@
 
 1. IN PROGRESS: commit and push this packet before primary target execution.
 2. PENDING: implement one exact primary runner for T0--T3, all-nine-radius
-   moment taxonomy, stop logic, mutations, and five resolution lines.
+   moment taxonomy, 64-probe operation-frame control, stop logic, mutations,
+   and five resolution lines.
 3. PENDING: implement a no-import checker for the event-operation dimensions,
    Green recurrence/Hankel ranks, moment inertias, and interface stop.
 4. PENDING: if T3 passes, execute T4--T6 in order; otherwise keep positivity,

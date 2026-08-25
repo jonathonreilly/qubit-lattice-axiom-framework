@@ -11,3 +11,6 @@
   moments, and the cyclic-versus-causal boundary distinction.
 - 2026-08-25: no newer conflicting science PR found; review-loop remains
   forbidden for this campaign.
+- 2026-08-25: independent operation-frame design derived the eight-branch
+  rank, identity/dephasing distinction, and minimal 64-probe event-support
+  frame; the preregistration was amended before target execution.

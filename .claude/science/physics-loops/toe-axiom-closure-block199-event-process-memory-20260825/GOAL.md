@@ -73,6 +73,12 @@ claims.
   their sum is the PVM dephasing channel, not the identity channel.  Identity
   insertion is a separate operation.  The M2 construction realizes one
   pointer write but supplies no reset or repeated-use law.
+- On the event-block support, the exact minimal Hermitian operation frame has
+  64 single-Kraus probes: the eight `F_alpha`, plus
+  `F_alpha+F_beta` and `F_alpha+i F_beta` for every unordered pair.  Its
+  design matrix reportedly has exact rank 64; dropping the phase probes gives
+  rank 36.  These coherent filters are mathematical controls, not registered
+  Block-194 apparatus operations.
 - With `delta=m^2+s` and
   `Q_s=I+(2I-V-V^T)/(4 delta)`, the scalar Green sequence
   `a_n=(Q_s^-1)_(n,0)` obeys, away from the circular seam,
@@ -104,6 +110,12 @@ M2 writer and both TT source tangents separately.  If no declared operation
 system can accept the source or distinguish omission from measurement, a
 full process-tensor claim is sealed, but a fixed-PVM closed-history test may
 continue.
+
+As a control, reconstruct the 64-probe event-support frame and require exact
+rank 64, with the no-phase frame at rank 36.  Unless those coherent probes are
+derived from the fixed action/apparatus, do not use them as physical inputs.
+If later supplied, a three-crossing supported history Gram has dimension
+`512 x 512`; product-probe nonnegativity alone is not matrix positivity.
 
 ### T1 -- action functional and boundary objects
 

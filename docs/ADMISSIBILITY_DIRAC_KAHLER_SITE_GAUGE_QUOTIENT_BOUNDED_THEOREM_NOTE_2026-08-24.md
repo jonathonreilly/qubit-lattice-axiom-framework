@@ -1,0 +1,970 @@
+---
+claim_id: admissibility_dirac_kahler_site_gauge_quotient_bounded_theorem_note_2026-08-24
+final_path: docs/ADMISSIBILITY_DIRAC_KAHLER_SITE_GAUGE_QUOTIENT_BOUNDED_THEOREM_NOTE_2026-08-24.md
+claim_type: bounded_theorem
+claim_scope: "On BLOCK 188's OWN site-glued action Q_s, rebuilt here from their landed note and runner at the fixture (m, c) = (9/20, 5/13) and unit volume and re-measured whole at (1, 5/13) -- Block 107's d=2 one-fine-mode staggered carrier on Z8_t x Z4_x of dimension 32 with eta_t = 1 and eta_x = (-1)^t, the antiperiodic kernel, the grade-raising part d_K, the SITE reflection theta_s(t) = -t with fixed slices {0,4}, the site-adapted glued Hodge H_s, the site raising set A_s, the derived glue D_s = A_s - Ps A_s Ps and the completion Q_s = m*H_s + H_s*D_s - D_s^T*H_s: A FINITE TRANSFORMATION FAMILY IS CLASSIFIED, ITS EXACT STABILIZER IS COMPUTED BY EXHAUSTIVE SWEEP, AND AN EXPLICIT FOUR-DIMENSIONAL INVARIANT SECTOR IS EXHIBITED -- ALL EXACT, AND NONE OF IT GRAVITY. FIRST, THE CONTROL, WHICH IS BLOCK 188'S OWN NUMBER: the rebuild reproduces their landed core Gram digit-for-digit at first leading minor 250811603701251182926764176363850176714557920003089965221914456500/666495028860293624372300921944800123265476111209829299156533225479 and second 9699265179160355495171233606378759680576921193642386633764164130236400111062250000/65542091681979044701359795584266761562795513633598145522262137753727157320281821073, with rank(Q_s) = 32, Ps Q_s Ps = Q_s^T at zero, the PLAIN symmetry defect at exactly 144 and the core Gram symmetric at zero and of inertia (8,0,0). SECOND, THE GRADING SELECTS THE EVEN SHIFTS AND THAT IS A MEASUREMENT: the ODD per-slice spatial shift U_x fails to commute with d_K at EXACTLY 64 nonzero entries, EXACT RANK 16, on the eight DIAGONAL time-pairs -- entirely INTRA-SLICE -- and the mechanism is measured one level down, the grade projectors themselves failing to commute with U_x at 16, 32 and 16 entries because eta_x = (-1)^t makes a site's degree depend on x parity; the odd shift is therefore no symmetry of the action either, at 64 entries and EXACT RANK 8; and the obstruction is located in the GLUE, since U_x commutes with H_s at zero and fails on D_s at 48. THIRD, THE GLOBAL EVEN SHIFT IS AN EXACT SYMMETRY: [V_glob, Q_s] = 0 and V_glob Q_s V_glob^T = Q_s, with V_glob commuting at zero with d_K, H_s, D_s and Ps. FOURTH, THE SINGLE-SLICE EVEN TWISTS LOCALIZE AND THE RANGE IS TWO: none of the eight V_t is an exact symmetry, every defect has EXACT RANK 4, the exact nonzero census is (96,64,80,64,64,64,80,64), EVERY supported ordered time-pair CONTAINS the twisted slice -- and at t = 0, 2 and 6 the support contains SEPARATION-TWO pairs (0,2) and (0,6), so the exact circular range vector is (2,1,2,1,1,1,2,1) and the word bond is too narrow and is not used. FIFTH, THE OS-COMPATIBLE SUBGROUP IS EXACTLY THE REFLECTION-EVEN ONE, AS AN EXACT IFF OVER ALL 256 PATTERNS: exactly the 32 patterns with xi_t = xi_(-t) commute with Ps and all 224 others fail to; all 32 transport the covariance Ps (V Q_s V^T) Ps = (V Q_s V^T)^T at zero; and the instance V_1 V_7 transports at zero while its twist differs from Q_s at EXACTLY 128 entries, so OS compatibility is STRICTLY WEAKER than exact invariance. SIXTH, THE ONE INVARIANCE THEOREM: on the {1,2}-core in the t-major order the core shifts W_1 and W_2 are commuting involutions, NEITHER is individually an invariance (32 nonzero entries at exact rank 4 each), and the DIAGONAL element satisfies (W_1 W_2)^T K (W_1 W_2) - K = 0_8 EXACTLY. SEVENTH, THE INVARIANT SECTOR IS EXPLICIT: Pi = (I + W_1)(I + W_2)/4 is exactly symmetric, exactly idempotent and of EXACT RANK 4, with an exact column-space basis at B^T B = I_4/2 and det(B^T B) = 1/16, and the restricted Gram B^T K B is exact with four exact positive leading minors, congruence inertia (4,0,0), determinant 2198952681327212186709224903107443847656250000000000/2836414688995746959145683979271775764957689091340617249 and basis-independent density 35183242901235394987347598449719101562500000000000000/2836414688995746959145683979271775764957689091340617249 -- AND THE POSITIVITY OF THAT RESTRICTION IS AUTOMATIC, since K is positive definite and B has full column rank, so it is NOT a new dynamical or gravitational theorem and is not claimed as one; what is not automatic is the EXPLICIT sector, whose rank, basis and Gram are computed. EIGHTH, THE BASIS SIGN IS A CONVENTION AND IS MEASURED TO BE ONE: all sixteen sign patterns give the same four minors, and the adversarial check's displayed representative is the diag(1,-1,-1,1) conjugate, reached from this block's own core Gram by the staggered site sign (-1)^(t+x), so the two independent rebuilds are ONE OBJECT IN TWO PHASE CONVENTIONS. NINTH, THE EXACT STABILIZER, BY EXHAUSTIVE SWEEP: all 2^8 = 256 even-shift patterns are swept, the family acts FAITHFULLY at 256 distinct site permutations, and Stab(Q_s) = {00000000, 11111111} of ORDER EXACTLY 2, generated by the uniform global even shift; all 32 reflection-even patterns are in the sweep and only the two uniform ones stabilize; NONE of the 8 adjacent two-slice patterns does. TENTH, IT SURVIVES A SECOND FIXTURE (1, 5/13) rebuilt whole, with the same order-2 stabilizer, the same exact W_1 W_2 core invariance, the same rank-4 projector and the same four positive quotient minors -- WHICH IS TWO POINTS AND NOT A WINDOW. NOTHING HERE IS REGISTERED, nothing is adopted, no premise-class change is registered, and no axiom amendment is justified. BLOCK 188 IS NEITHER CORRECTED NOR CONTRADICTED. This is NOT A GAUGE RESULT (the shift family is a CHOSEN FINITE TRANSFORMATION FAMILY and that its elements are redundancies of physical states is derived NOWHERE), NOT A GRAVITY CONSTRAINT QUOTIENT (no lapse function, no shift vector, no Hamiltonian constraint, no momentum or diffeomorphism constraint, no first-class algebra, no Dirac closure and no ADM phase space is supplied), NOT A LAPSE RESULT (no volume dial is turned in this block at all), NOT A GENERALITY CLAIM (TWO fixtures on ONE carrier, with no bracket, no ray and no edge), NOT A TRANSFER-OPERATOR RESULT and NOT A STATEMENT ABOUT BLOCK 188'S NAMED OPEN LEG; not a continuum statement, not a Records result and not a derivation of the Born rule; no priority or originality claim is made or licensed at any scope, and the comparative phrase FIRST EXECUTABLE INSTANCE is not verifiable under a bounded read fence and is NOT MADE; zero axiom retirement, ZERO OBLIGATION RETIREMENT, and no TOE percentage movement is established."
+depends_on:
+  - admissibility_dirac_kahler_site_os_positivity_bounded_theorem_note_2026-08-24
+  - admissibility_dirac_kahler_positivity_window_characterization_bounded_theorem_note_2026-08-24
+  - admissibility_dirac_kahler_adm_seam_two_history_gram_bounded_theorem_note_2026-08-15
+  - admissibility_dirac_kahler_curved_carrier_dependency_bounded_theorem_note_2026-08-17
+runner: scripts/admissibility_dirac_kahler_site_gauge_quotient_2026_08_24.py
+actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
+trace_class: upstream_support
+target_claim_id: admissibility_dirac_kahler_site_os_positivity_bounded_theorem_note_2026-08-24
+target_blocker_text: "THE GRAVITY CONSTRAINT QUOTIENT ON THE RANK-8 PHYSICAL SPACE. Block 107's step 3 has had a missing prerequisite since it was written: there was no full-span positive object to quotient. There is one now, on the site route, at three fixtures -- so step 3 is for the first time a well-posed construction rather than a wish."
+source_of_blocker_text: next_trace_action
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: "ONE THEOREM LANDED, ONE SECTOR EXHIBITED, AND FOUR THINGS OPEN -- AND THE FIRST OF THEM IS THE ONE THAT MATTERS. (i) THE IDENTIFICATION ITSELF IS THE OPEN ITEM, NOT THE ALGEBRA. Every number in this note is exact and every one of them is finite symmetry algebra on a finite quadratic form. What is NOT here is any derivation that the shift family is a redundancy of physical states, that its invariant sector is a physical Hilbert space, or that any direction in the construction is a lapse. Supplying ONE of the eight named missing structures -- a constraint, its algebra, or a closure -- would turn one interpretation into a measurement; nothing short of that will, and no amount of further exact algebra on the same objects will either. (ii) THE STABILIZER IS SMALL AND THAT IS THE FINDING TO PUSH ON. Thirty-two twists are OS-compatible and exactly TWO are exact symmetries, and the two are the trivial one and the global one -- so on this action there is NO LOCAL exact symmetry at all. Whether that is a property of this glue, of the staggered carrier, or of the site reflection is untouched: the natural next measurement is the same sweep on the LINK action and on a second carrier. (iii) THE SECTOR IS FOUR-DIMENSIONAL AT THE CORE AND NOTHING IS MEASURED ON THE LARGER SPANS. Block 188's positivity runs to {1,2,3} and {0,1,2,3} with true inertias (8,0,4) and (8,0,8); the invariant sector is built here ONLY on the positive-definite {1,2} core, and how the shift family interacts with the eight-dimensional null space of the larger spans is completely open. (iv) TWO POINTS ARE NOT A WINDOW. Everything here is measured at (9/20, 5/13) and (1, 5/13) and NOWHERE ELSE; the shear direction is sampled once and the volume direction is not sampled at all."
+conditional_surface_status: "audited_conditional expected (dependency_not_retained; Blocks 103-188 content-bound unaudited)"
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: "the block's load-bearing content is a set of EXACT SYMPY IDENTITIES, EXACT RATIONAL MATRIX CALCULATIONS, EXACT RANKS, EXACT CONGRUENCE INERTIAS and ONE EXHAUSTIVE FINITE SWEEP on one construction over one carrier at two fixtures, with every matrix built from sympy Rational and Integer entries and no float, no tolerance and no nsimplify anywhere. The control leg is somebody else's number reproduced by independent code: Block 188's landed core Gram at its first two leading minors digit-for-digit, with rank 32, reflected-transpose covariance at zero residual, plain symmetry defect at exactly 144 and core inertia (8,0,0) by exact congruence. The classification leg is four exact counts and two exact ranks: the odd shift's 64-entry rank-16 commutator with d_K on an exactly intra-slice support, the grade projectors' 16/32/16 defects that explain it, the odd shift's 64-entry rank-8 failure on the action, and its exact split between a zero Hodge commutator and a 48-entry glue commutator -- against the global even shift's SIX exact zeros. The localization leg is eight exact defects, eight exact ranks all 4, an exact nonzero census (96,64,80,64,64,64,80,64), eight exact ordered supports, an exact locality predicate at all eight labels and an exact circular range vector (2,1,2,1,1,1,2,1). The subgroup leg is an EXACT IFF over the whole 256-element family -- 32 commuting and 224 failing, both directions counted -- with 32 exact zero transport residuals and one nontrivial instance measured at 128 entries. The invariance leg is one exact zero: (W_1 W_2)^T K (W_1 W_2) - K = 0_8, against two individual failures at exactly 32 entries and exact rank 4. The sector leg is an exactly symmetric exactly idempotent projector of exact rank 4, an exact column-space basis with an exact B^T B and determinant 1/16, an exact restricted Gram with four exact leading minors, an exact congruence inertia (4,0,0) and an exact basis-independent density; the sixteen sign patterns are all measured to leave the minors fixed, and the adversarial check's displayed representative is reproduced exactly as a diagonal congruence. The stabilizer leg is an EXHAUSTIVE 2^8 sweep by exact rational equality with no residual threshold, returning a faithful 256-element family and a stabilizer of order exactly 2 with its two patterns named. The robustness leg is one further fixture rebuilt whole. BUT THE STANDING IS BOUNDED AND THE BOUNDS ARE STRUCTURAL AND THEY ARE ABOUT MEANING RATHER THAN ABOUT ARITHMETIC. First, THE POSITIVITY OF THE RESTRICTED GRAM IS AUTOMATIC: K positive definite and B of full column rank give it with no dynamics involved, so the derived content is the classification, the stabilizer, the transport criterion, the W_1 W_2 invariance theorem and the EXPLICITNESS of the sector -- and not the positivity. Second, GAUGE, QUOTIENT AND LAPSE ARE INTERPRETATIONS AND ARE FENCED AS SUCH IN THEIR OWN REQUIRED SECTION: eight named gravity structures are enumerated as NOT SUPPLIED, and no part of Block 107's step 3 is executed or licensed. Third, THE FORCED EVENNESS IS RELATIVE: it holds relative to the stipulated parity grading and this constructed action and is not shown to be a general law. Fourth, IT IS TWO FIXTURES AND NO WINDOW. Fifth, THE SECTOR IS BUILT ONLY ON THE POSITIVE-DEFINITE TWO-SLICE CORE and nothing is measured about the shift family on the degenerate larger spans. Sixth, NO CORRECTION IS LANDED AGAINST ANYTHING: Block 188's numbers stand as landed and the adversarial check's two corrections are carried as CONTENT -- the exact order-2 stabilizer as its own claim family, and the range-two support as a measured range vector."
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+---
+
+# The Shift Family, Its Exact Stabilizer, And The Invariant Sector — a finite symmetry classification on Block 188's site-glued action, with the gauge, quotient and lapse readings fenced
+
+**Date:** 2026-08-24
+**Runner:** `scripts/admissibility_dirac_kahler_site_gauge_quotient_2026_08_24.py`
+**Stack parent and construction authority:** Block 188, the thick-seam wall and the
+site-adapted OS positivity
+(`docs/ADMISSIBILITY_DIRAC_KAHLER_SITE_OS_POSITIVITY_BOUNDED_THEOREM_NOTE_2026-08-24.md`),
+on whose branch this block lands, whose action `Q_s` is this block's **entire
+object**, rebuilt rather than imported, and whose core Gram is this block's
+control.
+**Ladder authority:** Block 107, the seam kernel and the two-history Gram
+(`docs/ADMISSIBILITY_DIRAC_KAHLER_ADM_SEAM_TWO_HISTORY_GRAM_BOUNDED_THEOREM_NOTE_2026-08-15.md`),
+whose **section-10 step 3** — *"only then form and test the physical gravity
+constraint quotient"* — this block **does not execute**, and whose scope firewall
+it carries verbatim.
+**Stack:** the gravity mainline, G4. Landing as block 189 on the b188 branch
+after review.
+**Standing:** bounded theorem, **PROPOSED**, branch-local. Scout measurement
+only. Nothing here is registered and nothing is adopted; **no landed note is
+edited and no landed number is touched.**
+
+---
+
+## N0 — THE BANNER, and it comes before any numeral
+
+**EVERYTHING THIS BLOCK BUILDS IS AN IMPOSED MEASURED OBJECT, AND NOTHING HERE
+IS REGISTERED.** The imposed objects are:
+
+1. **Block 188's site-glued action `Q_s`**, rebuilt here from their landed note
+   and runner and imported from nothing — Block 107's `d=2` one-fine-mode
+   staggered carrier on `Z8_t x Z4_x` of dimension 32 with `eta_t = 1` and
+   `eta_x = (-1)^t`, the antiperiodic kernel, the grade-raising part `d_K`, the
+   **site** reflection `theta_s(t) = -t` with fixed slices `{0,4}` and the anchor
+   pairing `thA_s(t) = -1-t`, the site-adapted glued Hodge with the physical
+   anchors `{0..3}` at the **uniform** step `c = 5/13` and the image anchors
+   `{4..7}` the **unflipped** `P_4`-images of their `thA_s` partners, the site
+   raising set `A_s`, the derived glue `D_s = A_s - Ps A_s Ps` and the completion
+   `Q_s = m*H_s + H_s*D_s - D_s^T*H_s`;
+2. **the per-slice spatial shift family `U(xi): e_(t,x) -> e_(t, x + xi_t)`,
+   which is this block's own CHOSEN FINITE TRANSFORMATION FAMILY and not a
+   derived redundancy** — its odd member `U_x`, its **even** subfamily at
+   `xi_t in {0,2}` which is a faithful `(Z_2)^8` of order 256, the single-slice
+   twists `V_t`, the global even shift `V_glob` and the composites `V_a V_b`;
+3. **the core shifts `W_1` and `W_2`** on the `{1,2}`-core Gram `K` in the
+   t-major order, **the invariant projector `Pi = (I + W_1)(I + W_2)/4`**, its
+   exact column-space basis `B` and **the restricted Gram `B^T K B`**;
+4. **the two fixtures `(9/20, 5/13)` and `(1, 5/13)`** at unit volume — the first
+   is Block 188's and Block 107's, the second is Block 188's own robustness
+   point — **and they are two points, not a window**;
+5. **Block 128's landed `cover_embedding()`** and the **landed Block 105
+   `shear_hodge()`** it re-exports: **the only two objects this runner
+   imports.**
+
+**ZERO are registered and ZERO are adopted.** They are MEASURED here and they
+are **never registered**. No premise class is touched, no landed note is edited,
+and **PROPOSALS STAY PROPOSALS**.
+
+**AND THE SECOND THING THIS BANNER SAYS IS WHICH WORDS ARE FENCED — because this
+block ends on a positive result carrying gravity-shaped vocabulary, and that is
+the easiest thing in this corpus to overread.** The full fence is `N4g`, which
+is a required section of this note; the headline is:
+
+- **GAUGE IS AN INTERPRETATION.** What is measured is a **chosen finite
+  transformation family** and its exact stabilizer. That its elements are
+  **redundancies of physical states** is derived **nowhere** in this block.
+- **QUOTIENT IS AN INTERPRETATION.** What is computed is an **invariant subspace
+  of a positive bilinear form**. **NO GRAVITY CONSTRAINT QUOTIENT IS FORMED**,
+  and eight named structures are enumerated as **not supplied** in `N4g`.
+- **LAPSE IS AN INTERPRETATION**, and in this block it is the name of something
+  **not computed at all** — no volume dial is turned here.
+- **AND THE POSITIVITY OF THE INVARIANT SECTOR IS AUTOMATIC.** `K` is positive
+  definite and `B` has full column rank, so the restriction is positive by
+  congruence and **nothing dynamical is being shown**. This is stated in the
+  same breath as the result everywhere it appears, and the runner **gates it**.
+- **NO GENERALITY IS CLAIMED.** **TWO** fixtures on **ONE** carrier. No bracket,
+  no ray, no edge, no interior.
+
+**AND THE THIRD THING IS THE STANDING OF EVERY PARENT.** **EVERY BLOCK 104, 105,
+106, 107, 128 AND 181-188 NUMBER STANDS EXACTLY AS LANDED.** In particular
+**Block 188 is neither corrected nor contradicted**: their core Gram is
+reproduced here digit-for-digit as the control, their full-span positivity stands
+exactly as landed, and **their named open leg — the proper OS transfer — is
+untouched here and is not supplied by this block.**
+
+**AND THE FOURTH THING IS THAT THIS BLOCK LANDS NO CORRECTION AGAINST ANYTHING,
+AND CARRIES TWO OF THE CHECK'S AS CONTENT.** The adversarial check supplied the
+exact stabilizer by exhaustive sweep — it is family `G` here, with four mutations
+of its own — and corrected the twist-support wording from *nearest bond* to
+**temporal range two**, which is now a measured range vector in family `D`. See
+`N7`.
+
+---
+
+## W1 — the wall, and the charter
+
+### What was open
+
+Block 107 wrote the ladder this line is on, and its third step has been the
+standing open item for eighty blocks:
+
+> *"only then form and test the physical gravity constraint quotient"*
+
+Block 188 executed steps 1 and 2 and said, precisely, what step 3's status then
+became:
+
+> *"NOT EXECUTED, AND NOW WELL-POSED FOR THE FIRST TIME."*
+
+and, in the same note:
+
+> *"NO GRAVITY CONSTRAINT QUOTIENT IS FORMED."*
+
+Block 187's sentence had already put the same item downstream of everything:
+
+> *"AND THE CONSTRAINT QUOTIENT STAYS DOWNSTREAM OF ALL FIVE, in flight on its
+> own thread and untouched by anything in this note."*
+
+So the situation at the start of this block was: **a full-span positive object
+existed, and nobody had asked what its symmetries actually were.** Not what they
+ought to be called — what they *are*, as a finite exact question about a
+32-dimensional rational matrix.
+
+### The charter
+
+**ASK THE FINITE QUESTION AND ANSWER IT EXACTLY, THEN REFUSE TO NAME THE
+ANSWER.** Classify the shift family. Compute the stabilizer by exhaustive sweep
+rather than by argument. Exhibit the invariant sector explicitly. And then
+**fence every word that would turn the algebra into physics it has not earned** —
+because the vocabulary was available before the measurement was, and that is
+exactly the order in which overreach happens.
+
+**THE AXIOMS ARE NOT TOUCHED**, no obligation is retired, and **no axiom
+amendment is justified** by anything below.
+
+---
+
+## N1 — THE CONTROL, AND IT IS BLOCK 188'S OWN NUMBER
+
+**THE CONTROL COMES FIRST BECAUSE OTHERWISE THE SYMMETRIES BELOW ARE THE
+SYMMETRIES OF SOMETHING ELSE.** The runner rebuilds `Q_s` from Block 188's
+displayed equations rather than importing their code, and then reproduces their
+landed core Gram.
+
+| measured | value |
+| --- | --- |
+| `rank(Q_s)` | **32** |
+| `Ps Q_s Ps - Q_s^T` | **0**, exactly |
+| **plain** symmetry defect `Q_s - Q_s^T` | **144** — Block 188's own precision, carried |
+| core Gram `K` symmetric | **yes**, zero residual |
+| core Gram inertia by exact congruence | **`(8, 0, 0)`** |
+| core leading-minor signs | **`(+,+,+,+,+,+,+,+)`** |
+
+and the two numbers that pin the object:
+
+**`K_1 = 250811603701251182926764176363850176714557920003089965221914456500 /
+666495028860293624372300921944800123265476111209829299156533225479`**
+
+**`K_2 = 9699265179160355495171233606378759680576921193642386633764164130236400111062250000 /
+65542091681979044701359795584266761562795513633598145522262137753727157320281821073`**
+
+— **Block 188's landed first two leading minors, digit-for-digit.**
+
+**AND THE OTHER SIX ARE PRINTED TOO, BECAUSE THE ADVERSARIAL CHECK COMPUTED ALL
+EIGHT ON ITS OWN REBUILD AND THEY AGREE EXACTLY.** They are not claims of this
+block — they are Block 188's object, and the reconciliation is the point:
+
+3. `353644672418414022914464425566377270915654077424463797672617912778254783017125000000/6838224898819813663841872005958498789718331922438739849489349705638866747082736665283`
+4. `731532015717321164785349369079666981568307603751142634551353335912643729687500000000/37550252514571959241798349787105440722488384065321501278774850137981847225208711863747`
+5. `106686008017084203077801056058148690365327519581372351912870977930134460301989218750000000000000/36656348246255818726406955224816021523556522632232798498998085956974608046400338916272318652442131`
+6. `841735761720241585216954497623165448466402887037992491960332330772351840056394749953125000000000000000000/1883353887222747383088069687328317898320467000822076903017257403075849372483368962731187619993061966804280177`
+7. `33947577405628588759402644155672737009285916836360219602324377757327093398437500000000000000000000000/1253063131884728797796453551116645308263783766348687227556392151081736109436705896694070272783141694480559`
+8. `838707309443042031875048052416041488487432656958511417047078368969433593750000000000000000000000000000/392208760279920113710289961499509981486564318867139102225150743288583402253688945665243995381123350372414967`
+
+Every numerator and denominator is positive, so **Sylvester's criterion gives
+positive definiteness with no eigenvalue and no floating point** — and the exact
+congruence inertia `(8, 0, 0)` says it again by a route that a minor sequence
+alone could not (Block 188's landed correction #16).
+
+**AND THE PRECISION IS CARRIED AND NOT SOFTENED.** `Q_s` is **not** an ordinarily
+symmetric matrix. Its plain symmetry defect is **144** nonzero entries; the
+property it has is **reflected-transpose covariance**, `Ps Q_s Ps = Q_s^T`, and
+nothing weaker should be read from it. Every twist statement below is about
+**that** relation.
+
+---
+
+## N2 — THE GRADING SELECTS THE EVEN SHIFTS, and it is a measurement
+
+The transformation family is the per-slice spatial shift
+
+```
+U(xi) : e_(t,x) -> e_(t, x + xi_t),     xi in (Z_4)^8.
+```
+
+The question is which members survive contact with the construction. **The
+answer is forced by the staggering, and it is measured three times over.**
+
+### The odd shift breaks the grading
+
+With `U_x` the uniform shift by one, `xi = (1,1,1,1,1,1,1,1)`:
+
+| measured | value |
+| --- | --- |
+| `[U_x, d_K]` nonzero entries | **64** |
+| `[U_x, d_K]` exact rank | **16** |
+| `[U_x, d_K]` ordered time-pair support | **`(0,0), (1,1), (2,2), (3,3), (4,4), (5,5), (6,6), (7,7)`** |
+
+**THE SUPPORT IS THE EIGHT DIAGONAL PAIRS, SO THE OBSTRUCTION IS ENTIRELY
+INTRA-SLICE.** It does not propagate along the time direction at all: the odd
+shift fails *inside* each slice, one slice at a time.
+
+### And the mechanism is one level down, and it is measured too
+
+The reason is not the glue and not the Hodge — it is the **grading itself**. The
+site degree is `deg(t,x) = (t mod 2) + (x mod 2)`, so a shift in `x` by an **odd**
+amount changes the degree of every site. The grade projectors therefore do not
+commute with `U_x`:
+
+| grade | `[P_g, U_x]` nonzero entries |
+| --- | --- |
+| `P_0` | **16** |
+| `P_1` | **32** |
+| `P_2` | **16** |
+
+That is `eta_x = (-1)^t` showing through as a **selection rule on the shift
+group**, and it is why the even shifts are the compatible ones. **THE WORD
+FORCED IS USED, AND IT IS RELATIVE:** forced *relative to this stipulated parity
+grading and this constructed action*. It is **not** shown to be a general law,
+and the adversarial check said so in exactly those terms.
+
+### So the odd shift is no symmetry of the action either — and the failure is in the glue
+
+| measured | value |
+| --- | --- |
+| `[U_x, Q_s]` nonzero entries | **64** |
+| `[U_x, Q_s]` exact rank | **8** |
+| `U_x Q_s U_x^T - Q_s` | **64** nonzero entries |
+| `[U_x, H_s]` | **0** — the Hodge is indifferent |
+| `[U_x, D_s]` | **48** — **the glue is where it fails** |
+
+**THE SPLIT IS THE USEFUL PART.** The site Hodge commutes with the odd shift
+exactly; the derived glue does not. The obstruction is a property of `d_K`
+restricted and oddized, not of the metric data.
+
+### The global even shift is an exact symmetry, against everything
+
+With `V_glob` the uniform shift by two, `xi = (2,2,2,2,2,2,2,2)`:
+
+| object | residual |
+| --- | --- |
+| `[V_glob, d_K]` | **0** |
+| `[V_glob, H_s]` | **0** |
+| `[V_glob, D_s]` | **0** |
+| `[V_glob, Q_s]` | **0** |
+| `[V_glob, Ps]` | **0** |
+| `V_glob Q_s V_glob^T - Q_s` | **0** |
+
+**SIX EXACT ZEROS.** This is the generator of everything in family `G` below, and
+it is exact against every object in the construction rather than against the
+action alone.
+
+---
+
+## N3 — THE SINGLE-SLICE TWISTS LOCALIZE, and the range is TWO
+
+Let `V_t` be the `+2` shift applied on slice `t` **alone**. None of the eight is
+an exact symmetry, and each fails in a measured, localized way.
+
+| `t` | `V_t Q_s V_t^T - Q_s` nnz | exact rank | exact ordered time-pair support | range |
+| ---: | ---: | ---: | --- | ---: |
+| 0 | **96** | 4 | `(0,1),(0,2),(0,6),(0,7),(1,0),(2,0),(6,0),(7,0)` | **2** |
+| 1 | **64** | 4 | `(0,1),(1,0),(1,2),(2,1)` | 1 |
+| 2 | **80** | 4 | `(0,2),(1,2),(2,0),(2,1),(2,3),(3,2)` | **2** |
+| 3 | **64** | 4 | `(2,3),(3,2),(3,4),(4,3)` | 1 |
+| 4 | **64** | 4 | `(3,4),(4,3),(4,5),(5,4)` | 1 |
+| 5 | **64** | 4 | `(4,5),(5,4),(5,6),(6,5)` | 1 |
+| 6 | **80** | 4 | `(0,6),(5,6),(6,0),(6,5),(6,7),(7,6)` | **2** |
+| 7 | **64** | 4 | `(0,7),(6,7),(7,0),(7,6)` | 1 |
+
+### What is exactly true
+
+**EVERY SUPPORTED ORDERED TIME-PAIR CONTAINS THE TWISTED SLICE `t`.** That
+predicate is measured at all eight labels and it is the localization statement.
+The census is **inhomogeneous** — 96 at `t = 0`, 80 at `t = 2` and `t = 6`, 64
+everywhere else — and the three heavy slices are exactly the ones the site
+reflection's fixed slices and the seam touch.
+
+### And here is the check's correction, carried as content
+
+**THE SUPPORT IS NOT A NEAREST-SLICE BOND, AND THE SOLVE'S WORD "BOND" WAS TOO
+NARROW.** At `t = 0, 2, 6` the support contains **separation-two** pairs —
+`(0,2)` and `(0,6)` — because the Hodge multiplication in the completion
+`Q_s = m H_s + H_s D_s - D_s^T H_s` extends the support one slice further than
+the glue's own bonds. The exact circular range vector is
+
+**`(2, 1, 2, 1, 1, 1, 2, 1)`**
+
+and it is a **gated measured number**, not a hedge in prose. The word *bond* does
+not appear as a claim anywhere in this block. **The correct statement is: the
+defect of a single-slice twist is supported on ordered time-pairs that all
+contain the twisted slice, at temporal range at most two.**
+
+---
+
+## N4 — THE OS-COMPATIBLE SUBGROUP IS EXACTLY THE REFLECTION-EVEN ONE
+
+### The criterion, as an exact iff over the whole family
+
+The even subfamily is `xi in {0,2}^8`, of order `2^8 = 256`. Sweeping **all** of
+it:
+
+| measured | value |
+| --- | --- |
+| distinct site permutations | **256** — the family acts **faithfully**, so it is a `(Z_2)^8` and not a quotient of one |
+| reflection-even patterns (`xi_t = xi_(-t)`) commuting with `Ps` | **32 of 32** |
+| all other patterns **failing** to commute with `Ps` | **224 of 224** |
+
+**BOTH DIRECTIONS ARE COUNTED, SO THIS IS AN EXACT IFF AND NOT A SAMPLE.**
+Reflection-evenness *is* the OS-compatibility criterion on this family.
+
+### Covariance transports, and the algebra is two lines
+
+For real orthogonal `V` with `V Ps = Ps V`,
+
+```
+Ps (V Q_s V^T) Ps  =  V (Ps Q_s Ps) V^T  =  V Q_s^T V^T  =  (V Q_s V^T)^T.
+```
+
+That is the whole argument, and it is **executed** rather than asserted: for all
+**32** reflection-even patterns the residual
+`Ps (V Q_s V^T) Ps - (V Q_s V^T)^T` is **exactly zero**.
+
+### And the instance is nontrivial, which is the entire point
+
+| measured for `V = V_1 V_7` | value |
+| --- | --- |
+| `[V, Ps]` | **0** |
+| `V Q_s V^T - Q_s` | **128** nonzero entries — so `V` is **NOT** in the stabilizer |
+| `Ps (V Q_s V^T) Ps - (V Q_s V^T)^T` | **0** |
+
+**OS COMPATIBILITY OF A TWIST IS STRICTLY WEAKER THAN EXACT INVARIANCE.** The
+twisted action is a genuinely different matrix — 128 entries different — and it
+is still reflection-covariant. That gap is measured again, and counted, in `N4e`.
+
+---
+
+## N4a — THE CORE ACTION, AND THE ONE INVARIANCE THEOREM
+
+On the `{1,2}` core in the **t-major order**
+
+```
+((1,0), (1,1), (1,2), (1,3), (2,0), (2,1), (2,2), (2,3))
+```
+
+let `W_1` and `W_2` be the `+2` spatial shift restricted to slice 1 and slice 2
+respectively.
+
+| measured | value |
+| --- | --- |
+| `W_1^2 - I_8`, `W_2^2 - I_8` | **0**, **0** |
+| `[W_1, W_2]` | **0** — they commute, so they generate a `Z_2 x Z_2` |
+| `W_1^T K W_1 - K` | **32** nonzero entries, exact rank **4** |
+| `W_2^T K W_2 - K` | **32** nonzero entries, exact rank **4** |
+| `(W_1 W_2)^T K (W_1 W_2) - K` | **`0_8`**, identically |
+
+**NEITHER GENERATOR IS AN INVARIANCE AND THEIR PRODUCT IS.** That is this
+block's one genuine invariance theorem on the OS pairing: **the simultaneous even
+shift of both core slices preserves the reflected Gram exactly, while either one
+alone twists it at rank 4.**
+
+It is worth saying what makes it non-obvious. `W_1 W_2` is the restriction of the
+**global** even shift to the core — and the global even shift was already
+measured exact on `Q_s` in `N2`. But `K` is built from `Q_s^(-1)` through the
+reflection pairing, and an exact symmetry of the action is not automatically an
+exact symmetry of a reflected two-slice restriction of its inverse. **Here it
+is, and the two individual failures at rank 4 are what show the statement has
+content.**
+
+---
+
+## N4b — THE INVARIANT SECTOR, EXPLICIT AND EXACT
+
+### The projector
+
+```
+Pi = (I + W_1)(I + W_2) / 4
+```
+
+| measured | value |
+| --- | --- |
+| `Pi^T - Pi` | **0** — exactly symmetric |
+| `Pi^2 - Pi` | **0** — exactly idempotent |
+| `rank Pi` | **4** |
+
+### The basis, exactly
+
+SymPy's `columnspace()` gives, in the t-major core order,
+
+```
+b_1 = (1/2, 0, 1/2, 0, 0, 0, 0, 0)^T
+b_2 = (0, 1/2, 0, 1/2, 0, 0, 0, 0)^T
+b_3 = (0, 0, 0, 0, 1/2, 0, 1/2, 0)^T
+b_4 = (0, 0, 0, 0, 0, 1/2, 0, 1/2)^T
+```
+
+— each the **half-sum of an x-orbit** of the core shift on one slice, with
+
+```
+B^T B = I_4 / 2,        det(B^T B) = 1/16.
+```
+
+### The restricted Gram
+
+**IT HAS EXACTLY FIVE DISTINCT ENTRIES AND ONE STRUCTURAL ZERO**, so it is
+stated as a pattern and a value list rather than as sixteen numerals:
+
+```
+              [ a  b  c  d ]
+B^T K B  =    [ b  a  d  c ]
+              [ c  d  e  0 ]
+              [ d  c  0  e ]
+```
+
+| symbol | exact value |
+| --- | --- |
+| `a` | `21963305608532250/98338455418123687` |
+| `b` | `1668901104000/24167720672923` |
+| `c` | `6968252744640000/98338455418123687` |
+| `d` | `943847791250/24167720672923` |
+| `e` | `15357851117106250/98338455418123687` |
+
+The `(2,3)` and `(3,2)` entries are **exactly zero**: the two slice-2 orbit
+vectors `b_3, b_4` are `K`-orthogonal to each other, while every other pair
+couples.
+
+Its exact leading minors are
+
+1. `21963305608532250/98338455418123687`
+2. `436272390996572018995584314062500/9670451814022299931794587630473969`
+3. `988031356039629755460576499986328125000000/165618270654292302550203905627153987721012841`
+4. `2198952681327212186709224903107443847656250000000000/2836414688995746959145683979271775764957689091340617249`
+
+all **strictly positive**, exact congruence inertia **`(4, 0, 0)`**, and
+basis-independent determinant density
+
+```
+det(B^T K B) / det(B^T B)
+  = 35183242901235394987347598449719101562500000000000000
+  / 2836414688995746959145683979271775764957689091340617249.
+```
+
+### AND THE POSITIVITY IS AUTOMATIC — said here, not in a footnote
+
+**THE ADVERSARIAL CHECK'S C6.1, AND THIS BLOCK AGREES WITH IT COMPLETELY.** `K`
+is positive definite and `B` has full column rank, so for every nonzero `y`
+
+```
+y^T B^T K B y = (B y)^T K (B y) > 0.
+```
+
+**THE POSITIVITY OF THE FOUR-DIMENSIONAL RESTRICTION IS THEREFORE NOT A NEW
+DYNAMICAL THEOREM AND NOT A GRAVITY THEOREM, AND IT IS NOT CLAIMED AS EITHER.**
+The runner gates this as a declared constant with a measured witness, and
+`break_automatic_disclosure` is the mutation that denies it — because "the
+physical sector is positive" is precisely the sentence this block could be
+misread as having proved.
+
+**WHAT IS NOT AUTOMATIC** is the sector being **explicit**: the projector's rank,
+the exact basis and the exact restricted Gram are **computed**, not assumed, and
+they are what a downstream construction would actually need.
+
+---
+
+## N4c — THE BASIS SIGN IS A CONVENTION, AND IT IS MEASURED TO BE ONE
+
+The adversarial check displayed the restricted Gram as the **same pattern with
+`b` and `c` negated** — that is, with `-b` and `-c` where `N4b` has `+b` and
+`+c`. **THAT IS NOT A DISAGREEMENT, AND THE RECONCILIATION IS GATED RATHER THAN
+ASSERTED.**
+
+| measured | value |
+| --- | --- |
+| sign patterns `diag(±1)` of `B` leaving all four minors fixed | **16 of 16** |
+| the check's displayed matrix equals the `diag(1,-1,-1,1)` conjugate | **yes**, exactly |
+| that conjugate equals `B^T (E K E) B` for `E = (-1)^(t+x)`, the **staggered site sign** | **yes**, exactly |
+| `E K E` has the same eight core leading minors as `K` | **yes**, exactly |
+
+A `diag(±1)` congruence multiplies each leading minor by a square, so **no minor,
+no inertia and no determinant can see it.** The two independent rebuilds differ
+by the **staggered site sign** — a Kogut-Susskind phase convention — and are
+therefore **one object in two phase conventions**. **Neither corrects the other**,
+and the note records this rather than quietly displaying one of them.
+
+---
+
+## N4d — THE EXACT STABILIZER, BY EXHAUSTIVE SWEEP
+
+**THIS IS THE ADVERSARIAL CHECK'S OWN LEG AND IT IS THIS BLOCK'S FAMILY `G`.**
+All `2^8 = 256` even-shift patterns are swept exactly — by index lookup and exact
+rational equality, with **no residual threshold anywhere.**
+
+Writing a pattern as `xi_0 xi_1 ... xi_7` with `1` meaning the `+2` shift is
+applied on that slice:
+
+```
+Stab(Q_s) = { 00000000, 11111111 },        order exactly 2.
+```
+
+| measured | value |
+| --- | --- |
+| distinct site permutations in the family | **256** — faithful |
+| exact stabilizer | **`{00000000, 11111111}`** |
+| stabilizer order | **2**, generated by the uniform global even shift |
+| reflection-even patterns that stabilize | **2 of 32** |
+| adjacent two-slice patterns that stabilize | **0 of 8** |
+
+**THE MORAL IS THE CHECK'S AND IT IS A NUMBER: 32 AGAINST 2.** OS compatibility
+of a twist is *much* weaker than membership in the exact stabilizer. And there is
+**no local exact symmetry at all** on this action — not a single-slice twist, not
+an adjacent pair. The only exact symmetries are the trivial one and the global
+one.
+
+---
+
+## N4e — IT SURVIVES A SECOND FIXTURE, AND TWO POINTS ARE NOT A WINDOW
+
+The construction is **rebuilt whole** at `(m, c) = (1, 5/13)` — Block 188's own
+robustness point — and every structural statement is re-measured rather than
+re-used.
+
+| measured at `(1, 5/13)` | value |
+| --- | --- |
+| exact stabilizer order | **2** |
+| `(W_1 W_2)^T K (W_1 W_2) - K` | **0** |
+| `rank Pi` | **4** |
+| core first leading minor | `55795661638694573774002196454830133285353706/478085441610996097228041845484841835649475045` |
+| quotient leading minor 1 | `1073507296788/17191165688833` |
+| quotient leading minor 2 | `840424992635542804441344/295536177740908995380901889` |
+| quotient leading minor 3 | `495303857775473953823625609216/13398201477813522937389110887955137` |
+| quotient leading minor 4 | `284977712258371116586448359495041024/607410585777620392917379753768283029441921` |
+| quotient signs | **`(+,+,+,+)`** |
+
+**TWO POINTS ESTABLISH THAT THE SYMMETRY STRUCTURE IS NOT FIXTURE-TUNED, AND
+NOTHING MORE.** No bracket, no ray, no edge, no interior. The shear direction is
+sampled once and the volume direction is not sampled at all. Block 187 had to do
+real work to turn the *link* route's positivity into a region; **no comparable
+work is done here for anything.**
+
+---
+
+## N4g — THE INTERPRETATIONS FENCE (required section)
+
+**THIS SECTION IS NOT OPTIONAL AND IT IS NOT AN APPENDIX. It exists because the
+adversarial check's C6 found that the algebra of this block survives an
+independent rebuild completely while its *identification* with gravity structure
+survives nothing, and because the vocabulary was chosen before the measurement
+was made.**
+
+### The three words, and what each of them actually names here
+
+| word | what is MEASURED in this block | what it would additionally require |
+| --- | --- | --- |
+| **gauge** | a **chosen finite transformation family** `U(xi)` on 32 sites, its grading compatibility, its OS-compatibility criterion and its exact stabilizer of order 2 | a derivation that its elements are **redundancies of physical states** — a constraint that generates them, or an equivalence on states they implement. **Not present.** |
+| **quotient** | an **invariant subspace** of a positive bilinear form: `rank Pi = 4`, an exact basis, an exact restricted Gram | a **constraint surface**, a **first-class algebra**, and a quotient of *states* rather than of a coordinate space. **Not present.** |
+| **lapse** | **nothing.** No volume dial is turned anywhere in this block | a **lapse function** in a Hamiltonian decomposition and a bridge theorem connecting it to a parameter of this construction. **Not present, and not attempted.** |
+
+### The eight structures this block does not supply, enumerated so the absence is a count
+
+1. a lapse function
+2. a shift vector
+3. a Hamiltonian constraint
+4. a momentum / diffeomorphism constraint
+5. a first-class constraint algebra
+6. Dirac closure
+7. an ADM phase space or history transporter
+8. a proof that the selected transformations are redundancies of physical states
+
+**The runner carries this list as `UNSUPPLIED_GRAVITY_STRUCTURES` and family `B`
+gates its length.** Asserting any of the identifications flips exactly one family
+and exits nonzero.
+
+### And two further fences, both of which the check named
+
+- **THE FORCED EVENNESS IS RELATIVE.** "The grading forces the even shifts" is
+  true **relative to the stipulated parity grading and this constructed action**.
+  It is not a general law about staggered carriers, and this block does not test
+  it as one.
+- **THE COMPARATIVE PHRASE IS NOT MADE.** "The corpus's first executable
+  instance" is not verifiable under a bounded read fence, the check declined to
+  confirm it, and **it appears nowhere in this note as a claim.** What this block
+  is, exactly, is: an executable finite algebraic candidate for such a reading.
+
+### What IS derived, stated positively so the fence is not mistaken for a retreat
+
+1. **The grading classification** — with the grade projectors measured as its
+   mechanism.
+2. **The exact OS-compatibility criterion** — an iff over all 256 patterns, both
+   directions counted.
+3. **The `W_1 W_2` invariance theorem** — one exact zero against two rank-4
+   failures.
+4. **The explicit four-dimensional sector** — rank, basis and Gram all computed.
+5. **The exact stabilizer of order 2** — by exhaustive sweep, and with the
+   32-against-2 gap that follows from it.
+
+**Those five are theorems of this block. The names are not.**
+
+---
+
+## READINGS — three of them, and each is a reading
+
+**THE TWO-REGISTER RULE APPLIES: what follows is not measured and nothing below
+is licensed by anything above.**
+
+- **(R1) THE EVEN SHIFT FAMILY IS THE DISCRETE SPATIAL DIFFEOMORPHISM GROUP OF
+  THIS CARRIER.** That the per-slice shifts *are* the lattice remnant of spatial
+  diffeomorphisms, and that the grading's rejection of the odd ones is the
+  carrier telling us which diffeomorphisms survive discretization, **IS A
+  READING.** What is measured is a finite permutation family, its commutators
+  and its stabilizer.
+- **(R2) THE FOUR-DIMENSIONAL INVARIANT SECTOR IS A PHYSICAL STATE SPACE.** That
+  `B^T K B` is the gauge-singlet physical Hilbert space of the construction **IS
+  A READING**, and a reading with two specific weaknesses recorded against it in
+  this very note: its positivity is **automatic** (`N4b`), and the OS transfer
+  that would make "Hilbert space" mean anything operational **was refuted in
+  Block 188 and remains a named open leg**.
+- **(R3) THE ORDER-2 STABILIZER MEANS THE ACTION HAS NO LOCAL GAUGE FREEDOM.**
+  That 2-against-256 is a statement about *physical* redundancy **IS A READING.**
+  What is measured is that this particular finite family has a two-element
+  stabilizer on this particular matrix. A different family, a different glue or a
+  different reflection could give a different number, and none of those is
+  tested.
+
+**AND ONE THING IS A MEASUREMENT IN THE OTHER DIRECTION, WHICH IS WORTH SAYING.**
+"The invariant sector's positivity is evidence for the physical reading" is
+**not** available: the positivity is automatic, so it is evidence for nothing. A
+reading that would have been supported by it is supported by it **less** after
+this block than before, not more.
+
+---
+
+## CLAIM REGISTER — formulas, and the family that gates each
+
+**MEASURED register.** Every row is an exact identity or an exact integer
+measured by the runner; none is a summary.
+
+| # | claim, as a formula | value | family |
+| ---: | --- | --- | :---: |
+| 1 | `rank(Q_s)` | `32` | `C` |
+| 2 | `Ps Q_s Ps - Q_s^T` | `0` | `C` |
+| 3 | `Q_s - Q_s^T` nonzero entries | `144` | `C` |
+| 4 | `det(K[:1,:1])` | `250811603701251182926764176363850176714557920003089965221914456500/666495028860293624372300921944800123265476111209829299156533225479` | `C` |
+| 5 | `det(K[:2,:2])` | `9699265179160355495171233606378759680576921193642386633764164130236400111062250000/65542091681979044701359795584266761562795513633598145522262137753727157320281821073` | `C` |
+| 6 | `inertia(K)` by exact congruence | `(8, 0, 0)` | `C` |
+| 7 | `nnz([U_x, d_K])`, `rank([U_x, d_K])` | `64`, `16` | `C` |
+| 8 | time-pair support of `[U_x, d_K]` | `{(t,t) : t in Z_8}` — intra-slice | `C` |
+| 9 | `nnz([P_g, U_x])` for `g = 0,1,2` | `(16, 32, 16)` | `C` |
+| 10 | `nnz([U_x, Q_s])`, `rank([U_x, Q_s])` | `64`, `8` | `C` |
+| 11 | `nnz(U_x Q_s U_x^T - Q_s)` | `64` | `C` |
+| 12 | `nnz([U_x, H_s])`, `nnz([U_x, D_s])` | `0`, `48` | `C` |
+| 13 | `[V_glob, X]` for `X in {d_K, H_s, D_s, Q_s, Ps}` and `V_glob Q_s V_glob^T - Q_s` | `0` (six times) | `C` |
+| 14 | `nnz(V_t Q_s V_t^T - Q_s)`, `t = 0..7` | `(96, 64, 80, 64, 64, 64, 80, 64)` | `D` |
+| 15 | `rank(V_t Q_s V_t^T - Q_s)`, `t = 0..7` | `(4,4,4,4,4,4,4,4)` | `D` |
+| 16 | every supported ordered pair of `V_t Q_s V_t^T - Q_s` contains `t` | `True`, all eight `t` | `D` |
+| 17 | `max{ d_circ(a,b) : (a,b) in supp(V_t Q_s V_t^T - Q_s) }` | `(2, 1, 2, 1, 1, 1, 2, 1)` — **range two, not nearest-bond** | `D` |
+| 18 | `#{ xi in {0,2}^8 : [U(xi), Ps] = 0 }` | `32`, and all 32 are the reflection-even ones | `E` |
+| 19 | `#{ xi not reflection-even : [U(xi), Ps] != 0 }` | `224` of `224` — the iff's second direction | `E` |
+| 20 | `Ps (V Q_s V^T) Ps - (V Q_s V^T)^T` for all 32 reflection-even `V` | `0` (32 times) | `E` |
+| 21 | `[V_1 V_7, Ps]`, `nnz(V_1V_7 Q_s (V_1V_7)^T - Q_s)`, transport residual | `0`, `128`, `0` | `E` |
+| 22 | `W_1^2 - I_8`, `W_2^2 - I_8`, `[W_1, W_2]` | `0`, `0`, `0` | `F` |
+| 23 | `nnz(W_i^T K W_i - K)`, `rank(W_i^T K W_i - K)`, `i = 1,2` | `(32, 32)`, `(4, 4)` | `F` |
+| 24 | `(W_1 W_2)^T K (W_1 W_2) - K` | `0_8` — **the invariance theorem** | `F` |
+| 25 | `Pi = (I + W_1)(I + W_2)/4`: `Pi^T - Pi`, `Pi^2 - Pi`, `rank Pi` | `0`, `0`, `4` | `F` |
+| 26 | `B` columns | `(1/2,0,1/2,0,0,0,0,0)`, `(0,1/2,0,1/2,0,0,0,0)`, `(0,0,0,0,1/2,0,1/2,0)`, `(0,0,0,0,0,1/2,0,1/2)` | `F` |
+| 27 | `B^T B`, `det(B^T B)` | `I_4/2`, `1/16` | `F` |
+| 28 | `det((B^T K B)[:1,:1])` | `21963305608532250/98338455418123687` | `F` |
+| 29 | `det((B^T K B)[:2,:2])` | `436272390996572018995584314062500/9670451814022299931794587630473969` | `F` |
+| 30 | `det((B^T K B)[:3,:3])` | `988031356039629755460576499986328125000000/165618270654292302550203905627153987721012841` | `F` |
+| 31 | `det(B^T K B)` | `2198952681327212186709224903107443847656250000000000/2836414688995746959145683979271775764957689091340617249` | `F` |
+| 32 | `inertia(B^T K B)` by exact congruence | `(4, 0, 0)` | `F` |
+| 33 | `det(B^T K B)/det(B^T B)` | `35183242901235394987347598449719101562500000000000000/2836414688995746959145683979271775764957689091340617249` | `F` |
+| 34 | `#{ S in diag(±1)^4 : minors(S (B^T K B) S) = minors(B^T K B) }` | `16` of `16` — the sign is a convention | `F` |
+| 35 | `diag(1,-1,-1,1) (B^T K B) diag(1,-1,-1,1)` equals the check's displayed matrix; and equals `B^T (E K E) B` for `E = (-1)^(t+x)` | `True`, `True` | `F` |
+| 36 | `y^T B^T K B y = (By)^T K (By) > 0` follows from `K > 0` and `rank B = 4` | **automatic** — declared, gated, and NOT claimed as a theorem | `F` |
+| 37 | `#{ U(xi) : xi in {0,2}^8 }` | `256` — the family acts faithfully | `G` |
+| 38 | `Stab(Q_s) = { xi : U(xi) Q_s U(xi)^T = Q_s }` | `{00000000, 11111111}` | `G` |
+| 39 | `\|Stab(Q_s)\|` | `2`, generated by `V_glob` | `G` |
+| 40 | `#{ reflection-even xi in Stab(Q_s) }` | `2` of `32` | `G` |
+| 41 | `#{ adjacent two-slice xi in Stab(Q_s) }` | `0` of `8` | `G` |
+| 42 | at `(1, 5/13)`: stabilizer order, `(W_1W_2)^T K (W_1W_2) - K`, `rank Pi`, quotient signs | `2`, `0`, `4`, `(+,+,+,+)` | `G` |
+| 43 | `sp.nsimplify` occurrences in the runner's own source | `0` | `H` |
+
+**READING register.** Nothing below is measured, and nothing above licenses any
+of it.
+
+| # | reading | status |
+| ---: | --- | --- |
+| R1 | the even shift family is the discrete spatial diffeomorphism group | **READING** — a finite permutation family is what is measured |
+| R2 | the four-dimensional invariant sector is a physical state space | **READING** — and its positivity is automatic, so it is not evidence |
+| R3 | the order-2 stabilizer means the action has no local gauge freedom | **READING** — one family, one action, one reflection |
+| R4 | "gauge quotient" for the construction as a whole | **READING** — `N4g`, with eight named structures not supplied |
+| R5 | any lapse direction | **READING**, and in this block the name of something **not computed** |
+
+---
+
+## N4h — THE DERIVATION PATH, WITH ITS DEAD ENDS
+
+**EVERY FORK WAS MEASURED AT ITS FORK, SO NOTHING WRONG LEFT THE SOLVE. The dead
+ends are recorded because each of them was the obvious first guess.**
+
+1. **THE ODD SHIFT WAS TRIED FIRST, AND IT IS THE NATURAL GENERATOR — DEAD AT 64
+   ENTRIES AND RANK 16.** The discrete spatial diffeomorphism one *wants* is the
+   shift by one, because it generates the whole `Z_4` and the even shifts are
+   only its square. It does not commute with `d_K`. The failure was measured
+   before any even-shift statement was written, which is why the even restriction
+   is a **derived selection** in this note and not a convenience.
+2. **AND THE OBVIOUS EXPLANATION OF THAT FAILURE WAS WRONG — DEAD AT `[U_x, H_s]
+   = 0`.** The first guess was that the odd shift fails because the glued Hodge
+   carries slice-dependent anchor blocks. It does not: the Hodge commutes with
+   the odd shift **exactly**. The failure is entirely in `d_K` and hence in the
+   glue, at 48 entries, and the grade projectors' `(16, 32, 16)` is the actual
+   mechanism.
+3. **THE NAIVE TWIST GUESS: THAT A SINGLE-SLICE EVEN TWIST WOULD BE A SYMMETRY —
+   DEAD AT RANK 4, EIGHT TIMES.** If evenness were the whole story, each `V_t`
+   would be an exact symmetry and the stabilizer would be all 256. Not one of
+   them is.
+4. **THE SECOND NAIVE TWIST GUESS: THAT THE DEFECTS SIT ON NEAREST-SLICE BONDS —
+   DEAD AT RANGE TWO.** The solve wrote *"localized Wilson twists on their
+   touching temporal bonds"*, which is the natural picture and is **too narrow**:
+   the adversarial check measured separation-two pairs at `t = 0, 2, 6`. The
+   correct statement is the range vector `(2,1,2,1,1,1,2,1)`, and this note uses
+   it instead of the word *bond*.
+5. **THE THIRD GUESS: THAT OS-COMPATIBILITY WOULD BE THE STABILIZER — DEAD AT 32
+   AGAINST 2.** Reflection-even twists all commute with `Ps` and all transport
+   covariance, which makes them look like the symmetry group. They are not: only
+   two of the thirty-two fix the action. The instance `V_1 V_7` is the exhibit —
+   covariant, and 128 entries away from `Q_s`.
+6. **THE FOURTH GUESS: THAT `W_1` ALONE WOULD PRESERVE THE CORE GRAM — DEAD AT 32
+   ENTRIES AND RANK 4.** Only the diagonal element works, which is what makes
+   `N4a` a theorem rather than a restatement.
+7. **AND THE MOST DANGEROUS DEAD END WAS A READING, NOT A CALCULATION: THAT THE
+   SECTOR'S POSITIVITY WAS A RESULT — DEAD AS AUTOMATIC.** It follows from `K > 0`
+   and full column rank by congruence, with no dynamics anywhere. The check named
+   it, this note states it in the same breath as the sector everywhere, and the
+   runner gates it.
+
+---
+
+## N5 — the fence
+
+```text
+N5: per_element: THE IMPOSED-OBJECT BANNER, FIRST AND WITH TEETH. NOTHING HERE IS REGISTERED OR ADOPTED -- BLOCK 188's SITE-GLUED ACTION Q_s, REBUILT HERE from their landed note and runner and imported from nothing (Block 107's d=2 one-fine-mode staggered carrier on Z8_t x Z4_x at dimension 32 with eta_t = 1 and eta_x = (-1)^t, the antiperiodic kernel carrying omega_-(3) = -1 on the FAR seam, the grade-raising d_K, the SITE reflection theta_s(t) = -t with fixed slices {0,4}, the anchor pairing thA_s(t) = -1-t, the site-adapted glued Hodge with the physical anchors {0..3} at the uniform step c = 5/13 and the image anchors {4..7} the UNFLIPPED P_4-images of their thA_s partners, the site raising set A_s of the d_K entries in the CLOSED half {0..4} EXCLUDING the fixed-slice spatial edges, the derived glue D_s = A_s - Ps A_s Ps and the completion Q_s = m*H_s + H_s*D_s - D_s^T*H_s at (m, c) = (9/20, 5/13)), THE PER-SLICE SPATIAL SHIFT FAMILY U(xi): e_(t,x) -> e_(t, x + xi_t) with its ODD member U_x, its EVEN subfamily which is a FAITHFUL (Z_2)^8 OF ORDER 256, its single-slice twists V_t, its global even shift V_glob and its composites, THE CORE SHIFTS W_1 AND W_2 on the {1,2}-core Gram K, THE INVARIANT PROJECTOR Pi = (I + W_1)(I + W_2)/4 with its exact column-space basis B and the restricted Gram B^T K B, THE TWO FIXTURES (9/20, 5/13) and (1, 5/13), and the LANDED Block 128 cover_embedding() and Block 105 shear_hodge() -- THE ONLY TWO OBJECTS IMPORTED -- are IMPOSED MEASURED OBJECTS OF THIS BLOCK, built from the landed primary bodies and from NOTHING in any scratchpad. AND THE WORDS ARE FENCED BEFORE THE NUMBERS ARE READ. GAUGE IS AN INTERPRETATION: what is measured is a CHOSEN FINITE TRANSFORMATION FAMILY and its exact stabilizer, and that its elements are REDUNDANCIES OF PHYSICAL STATES IS NOT DERIVED ANYWHERE. QUOTIENT IS AN INTERPRETATION: an invariant subspace of a positive form is computed, and NO GRAVITY CONSTRAINT QUOTIENT IS FORMED -- no lapse function, no shift vector, no Hamiltonian constraint, no momentum or diffeomorphism constraint, no first-class algebra, no Dirac closure and no ADM phase space is supplied by this block. LAPSE IS AN INTERPRETATION AND NO VOLUME DIAL IS TURNED HERE AT ALL. NO GENERALITY IS CLAIMED: TWO points on ONE carrier, with no bracket, no ray and no edge. NOTHING IS REGISTERED, NOTHING IS ADOPTED, AND NO AXIOM AMENDMENT IS JUSTIFIED.
+per_site: THE CONTROL COMES FIRST AND IT IS BLOCK 188'S OWN NUMBER. The site route rebuilt here reproduces THEIR LANDED CORE GRAM DIGIT-FOR-DIGIT -- first leading minor 250811603701251182926764176363850176714557920003089965221914456500/666495028860293624372300921944800123265476111209829299156533225479 and second leading minor 9699265179160355495171233606378759680576921193642386633764164130236400111062250000/65542091681979044701359795584266761562795513633598145522262137753727157320281821073 -- with rank(Q_s) = 32, the core Gram symmetric at ZERO residual and positive definite at inertia (8,0,0), the reflected-transpose covariance Ps Q_s Ps = Q_s^T at ZERO and the plain symmetry defect at EXACTLY 144, which is Block 188's own precision and is not weakened here. IF THAT MINOR MOVED BY A DIGIT the symmetry family classified below would be the symmetry family of some other object. AND THE HAZARD INHERITED FROM BLOCK 186 IS HONOURED BY ABSENCE AND MEASURED RATHER THAN PROMISED: the nsimplify call carries a rational TOLERANCE and maps a small nonzero rational to EXACTLY ZERO, so any of this block's many zeros, ranks and signs could be manufactured by it; this runner calls it ZERO TIMES, counted in its own source by gate H.
+per_mode: THE GRADING SELECTS THE EVEN SHIFTS, AND IT IS A MEASUREMENT AND NOT A PREFERENCE. The ODD per-slice shift U_x fails to commute with the grade-raising part: [U_x, d_K] has EXACTLY 64 nonzero entries, EXACT RANK 16, and its ordered time-pair support is the EIGHT DIAGONAL PAIRS (0,0) through (7,7) -- ENTIRELY INTRA-SLICE, so the obstruction does not propagate along time at all. THE MECHANISM IS MEASURED ONE LEVEL DOWN: the grade projectors themselves fail to commute with U_x at 16, 32 and 16 entries for grades 0, 1 and 2, because the staggered eta_x = (-1)^t makes the DEGREE of a site depend on x parity. The odd shift is therefore not a symmetry of the action either: [U_x, Q_s] has 64 nonzero entries at EXACT RANK 8, and U_x Q_s U_x^T - Q_s has 64. AND THE SPLIT IS LOCATED: U_x commutes with the site Hodge H_s at ZERO and fails on the glue D_s at 48, so the obstruction lives in the GLUE. THE GLOBAL EVEN SHIFT IS AN EXACT SYMMETRY: [V_glob, Q_s] = 0 and V_glob Q_s V_glob^T = Q_s, with V_glob commuting at ZERO with d_K, with H_s, with D_s and with Ps as well. THAT EVENNESS IS FORCED IS TRUE RELATIVE TO THE STIPULATED PARITY GRADING AND THIS CONSTRUCTED ACTION, AND IS NOT A GENERAL LAW.
+per_block: THE SINGLE-SLICE TWISTS LOCALIZE, AND THE RANGE IS TWO AND NOT ONE. None of the eight single-slice even twists V_t is an exact symmetry: every defect V_t Q_s V_t^T - Q_s has EXACT RANK 4, with the exact nonzero census {0: 96, 1: 64, 2: 80, 3: 64, 4: 64, 5: 64, 6: 80, 7: 64}. EVERY supported ordered time-pair CONTAINS the twisted slice t, and that is the localization, measured exactly at all eight slices. BUT THE SUPPORT IS NOT A NEAREST-SLICE BOND, AND THIS IS THE ADVERSARIAL CHECK'S CORRECTION CARRIED AS CONTENT RATHER THAN AS AN ERRATUM: at t = 0, 2 and 6 the support contains SEPARATION-TWO pairs -- (0,2) and (0,6) -- because the Hodge multiplication in the completion extends the support to temporal RANGE TWO. The exact circular range vector is (2,1,2,1,1,1,2,1) and the word bond is not used.
+lattice_wide: THE OS-COMPATIBLE SUBGROUP IS EXACTLY THE REFLECTION-EVEN ONE, AND COVARIANCE TRANSPORTS. Of the 256 even-shift patterns EXACTLY the 32 REFLECTION-EVEN ones, xi_t = xi_(-t), commute with Ps, and ALL 224 others FAIL to -- an EXACT IFF measured on the whole finite family and not a sample. For every one of those 32 the twisted action transports the covariance: Ps (V Q_s V^T) Ps = (V Q_s V^T)^T at ZERO residual, which is the two-line algebra Ps(V Q_s V^T)Ps = V (Ps Q_s Ps) V^T = V Q_s^T V^T = (V Q_s V^T)^T made executable for real orthogonal V commuting with Ps. AND THE INSTANCE IS NONTRIVIAL, WHICH IS THE POINT: V = V_1 V_7 commutes with Ps, its twist differs from Q_s at EXACTLY 128 entries -- so it is NOT in the stabilizer -- and the transport identity still holds at ZERO. OS COMPATIBILITY OF A TWIST IS STRICTLY WEAKER THAN EXACT INVARIANCE, 32 against 2.
+per_scope: THE CORE INVARIANCE THEOREM, THE EXPLICIT INVARIANT SECTOR, AND THE EXACT STABILIZER. On the {1,2}-core in the t-major order the two core shifts satisfy W_1^2 = W_2^2 = I_8 and W_1 W_2 = W_2 W_1 exactly; NEITHER IS INDIVIDUALLY AN INVARIANCE, each defect carrying EXACTLY 32 nonzero entries at EXACT RANK 4; and THE DIAGONAL ELEMENT IS AN EXACT INVARIANCE, (W_1 W_2)^T K (W_1 W_2) - K = 0_8, which is this block's one genuine theorem on the OS pairing. The invariant projector Pi = (I + W_1)(I + W_2)/4 is exactly symmetric, exactly idempotent and of EXACT RANK 4; its column-space basis B is exact with B^T B = I_4/2 and det(B^T B) = 1/16; and the restricted Gram B^T K B is exact with four exact leading minors, all POSITIVE, inertia (4,0,0), determinant 2198952681327212186709224903107443847656250000000000/2836414688995746959145683979271775764957689091340617249 and basis-independent density 35183242901235394987347598449719101562500000000000000/2836414688995746959145683979271775764957689091340617249. AND THE SCOPE IS STATED IN THE SAME BREATH AS THE RESULT, WHICH IS THE ADVERSARIAL CHECK'S C6: THE POSITIVITY OF THE RESTRICTION IS AUTOMATIC -- K is positive definite and B has full column rank, so y^T B^T K B y = (By)^T K (By) > 0 for every nonzero y -- SO IT IS NOT A NEW DYNAMICAL OR GRAVITATIONAL THEOREM AND IS NOT CLAIMED AS ONE. What is NOT automatic is the EXPLICIT sector: the projector's rank, the exact basis and the exact restricted Gram are COMPUTED. THE BASIS SIGN IS A CONVENTION AND IS MEASURED TO BE ONE: all sixteen sign patterns of B give the SAME four minors, and the check's displayed representative is the diag(1,-1,-1,1) conjugate, reached from this block's own core Gram by the STAGGERED SITE SIGN (-1)^(t+x), itself a diagonal congruence -- so the two independent rebuilds are ONE OBJECT IN TWO PHASE CONVENTIONS. AND THE STABILIZER IS EXACT AND EXHAUSTIVE, WHICH IS THE CHECK'S OWN LEG: all 2^8 = 256 patterns are swept, the family acts FAITHFULLY at 256 distinct site permutations, and Stab(Q_s) = {00000000, 11111111} of ORDER EXACTLY 2, generated by the uniform global even shift; all 32 reflection-even patterns are in the sweep and only the two uniform ones stabilize; NONE of the 8 adjacent two-slice patterns does. IT SURVIVES A SECOND FIXTURE (1, 5/13) -- same order-2 stabilizer, same exact W_1 W_2 core invariance, same rank-4 projector, same four positive quotient minors -- WHICH IS TWO POINTS AND NOT A WINDOW.
+RESULT: A FINITE TRANSFORMATION FAMILY IS CLASSIFIED, ITS EXACT STABILIZER IS COMPUTED BY EXHAUSTIVE SWEEP, AND AN EXPLICIT FOUR-DIMENSIONAL INVARIANT SECTOR IS BUILT ON BLOCK 188'S POSITIVE CORE -- AND NOT ONE LINE OF IT IS GRAVITY. Block 188's core minors are reproduced digit-for-digit as the control; the odd shift breaks the grading at 64 entries, rank 16, entirely intra-slice, with the grade projectors measured to be the mechanism; the global even shift is exact against every object in the construction; the eight single-slice twists localize on supports that all contain their own slice, with the exact census (96,64,80,64,64,64,80,64) and the exact range vector (2,1,2,1,1,1,2,1) -- RANGE TWO AND NOT NEAREST-BOND; reflection-evenness is an EXACT IFF for commuting with Ps over all 256 patterns and all 32 transport the OS covariance, with V_1 V_7 transporting at zero while differing from Q_s at 128; W_1 and W_2 are commuting involutions that individually fail at 32 entries and rank 4 and whose PRODUCT preserves the core Gram EXACTLY; the invariant projector has rank 4 with an exact basis and an exact restricted Gram of four positive minors at inertia (4,0,0), WHOSE POSITIVITY IS AUTOMATIC AND IS DISCLOSED AS SUCH; the exact stabilizer is {identity, global} OF ORDER 2 BY EXHAUSTIVE 256-SWEEP; and every one of those facts survives a second fixture, WHICH IS TWO POINTS AND NOT A WINDOW. EVERY NEGATIVE HERE IS NON-SUPPLY WITHIN THIS FORMALISM AND NEVER METAPHYSICAL NECESSITY -- the CYCLE913 CAUTION, CARRIED VERBATIM -- and EVERY POSITIVE HERE IS CANDIDACY WITHIN THIS FORMALISM AND NEVER A CLAIM ABOUT NATURE.
+DECISION_CUT: NOTHING IS REGISTERED AND NOTHING IS ADOPTED. No premise-class change is registered; no landed note is EDITED; no landed number is touched; Blocks 104, 105, 106, 107, 128 and 181-188 STAND EXACTLY AS LANDED; the bar items stay PROPOSALS, and PROPOSALS STAY PROPOSALS. BLOCK 188 IS NEITHER CORRECTED NOR CONTRADICTED: their core Gram is reproduced here digit-for-digit, their full-span positivity stands exactly as landed, and their named open leg -- THE PROPER OS TRANSFER -- is untouched by anything here and is NOT supplied by this block. BLOCK 107's SECTION-10 STEP 3 IS NOT EXECUTED: this block forms NO gravity constraint quotient and licenses NO part of one. THIS BLOCK'S OWN DEFECTS ARE DISCLOSED: TWO FIXTURES AND NO WINDOW; THE RESTRICTION POSITIVITY IS AUTOMATIC and the derived content is the symmetry classification, the stabilizer and the explicit sector rather than the positivity; THE FORCED EVENNESS IS RELATIVE to the stipulated parity grading and this constructed action and is not a general law; and THE COMPARATIVE PHRASE FIRST EXECUTABLE INSTANCE IS NOT VERIFIABLE UNDER A BOUNDED READ FENCE AND IS NOT MADE. THREE ITEMS ARE FOLDED FROM THE ADVERSARIAL CHECK AS CONTENT AND NOT AS ERRATA: the EXACT STABILIZER OF ORDER 2 from the exhaustive 256-sweep, which is now a claim family of its own; the RANGE-TWO support correction, which is now a measured range vector; and the INTERPRETATION FENCE on the words gauge, quotient and lapse, which is now a required note section and four declared constants. PROVENANCE: CAMPAIGN_20260824_GRAVITY_MAINLINE.md, at its THE CONSTRAINT QUOTIENT -- FIRST EXECUTABLE INSTANCE and B188 + B189 CHECK VERDICTS anchors, as corrected and extended by the b189 adversarial check.
+TOE: zero axiom retirement; zero obligation retirement; zero TOE movement; no TOE percentage moves; retained-positive end-to-end theory count remains zero.
+```
+
+The fence above appears BYTE-IDENTICALLY in the runner as a single-line literal
+with `\n` separators, and gate `H` byte-checks it against this occurrence.
+
+---
+
+## N6 — STOP AND REOPEN
+
+### STOPPED, and why each is stopped
+
+- **THE ODD SHIFT AS A CANDIDATE SYMMETRY — DEAD AT 64 ENTRIES AND RANK 16**, and
+  dead one level down at the grade projectors.
+- **THE HOPE THAT THE ODD FAILURE IS A HODGE ARTEFACT — DEAD AT
+  `[U_x, H_s] = 0`.** It is the glue, at 48.
+- **THE HOPE THAT SINGLE-SLICE EVEN TWISTS ARE SYMMETRIES — DEAD AT RANK 4,
+  EIGHT TIMES OUT OF EIGHT.**
+- **THE WORDING "NEAREST TEMPORAL BOND" — DEAD AT RANGE TWO**, at `t = 0, 2, 6`.
+- **THE CONFLATION OF OS-COMPATIBILITY WITH INVARIANCE — DEAD AT 32 AGAINST 2**,
+  and dead again at the 128-entry `V_1 V_7` instance.
+- **THE HOPE THAT EITHER CORE SHIFT ALONE IS AN INVARIANCE — DEAD AT 32 ENTRIES
+  AND RANK 4, TWICE.**
+- **THE READING THAT THE SECTOR'S POSITIVITY IS A GRAVITY RESULT — DEAD AS
+  AUTOMATIC**, by congruence and full column rank.
+- **THE READING THAT THIS BLOCK FORMS A GRAVITY CONSTRAINT QUOTIENT — DEAD AT
+  EIGHT NAMED MISSING STRUCTURES**, enumerated in `N4g` and counted by the
+  runner.
+- **THE COMPARATIVE CLAIM "THE CORPUS'S FIRST" — DEAD UNDER THE READ FENCE**, and
+  not made anywhere in this note.
+- **THE FEAR THAT THE TWO REBUILDS DISAGREE ON THE QUOTIENT GRAM — DEAD AS A
+  PHASE CONVENTION**, the staggered site sign, measured exactly in `N4c`.
+
+### REOPEN IF
+
+1. **ONE OF THE EIGHT MISSING STRUCTURES IS SUPPLIED.** A constraint, an algebra
+   or a closure would turn one interpretation into a measurement. Nothing short
+   of that will, and no further exact algebra on these same objects will either.
+2. **THE SAME SWEEP ON THE LINK ACTION OR A SECOND CARRIER GIVES A DIFFERENT
+   STABILIZER.** Whether order 2 is a property of this glue, of the staggered
+   carrier or of the site reflection is completely untested.
+3. **THE SHIFT FAMILY IS EXTENDED TO THE DEGENERATE SPANS.** The sector is built
+   here **only** on the positive-definite `{1,2}` core; Block 188's positivity
+   runs to `{1,2,3}` and `{0,1,2,3}` at true inertias `(8,0,4)` and `(8,0,8)`, and
+   how the twists interact with that eight-dimensional null space is open.
+4. **THE `(m, c)` WINDOW TURNS OUT TO BE A THIN SET.** Two points are measured
+   and nothing else is; the volume direction is not sampled at all.
+5. **A LARGER TRANSFORMATION FAMILY IS ADMISSIBLE.** Only per-slice spatial
+   shifts are considered. Temporal shifts, spatial reflections and mixed
+   operations are untouched, and one of them could have a larger stabilizer.
+6. **BLOCK 188'S PROPER OS TRANSFER IS BUILT.** Until it exists, "physical
+   Hilbert space" has no operational content here, and this block does not give
+   it any.
+
+---
+
+## N7 — THE RECORD
+
+### Corrections carried
+
+**NO CORRECTION IS LANDED BY THIS BLOCK AGAINST ANYTHING. Two of the adversarial
+check's findings are carried as CONTENT rather than as errata, and one further
+item is a reconciliation rather than a correction.**
+
+21. **THE EXACT STABILIZER IS THE CHECK'S OWN RESULT AND IT IS THIS BLOCK'S
+    FAMILY `G`.** The solve classified the shift family and identified the global
+    even shift as an exact symmetry; it did **not** compute the stabilizer. The
+    check swept all `2^8 = 256` patterns exactly and returned
+    `{00000000, 11111111}` of order exactly 2. That is now a **claim family with
+    four mutations of its own** — `break_stabilizer_order`,
+    `break_stabilizer_reflection_even`, `break_stabilizer_adjacent` and
+    `break_robustness` — rather than a paragraph. **The 32-against-2 gap is the
+    most useful single number in the block and it did not come from the solve.**
+22. **"NEAREST TEMPORAL BOND" BECOMES "TEMPORAL RANGE TWO" — A WORDING
+    CORRECTION CAUGHT BEFORE IT BECAME A STRUCTURAL ONE.** The solve described
+    the single-slice twists as localizing on their *touching temporal bonds*. If
+    *bond* means an elementary nearest-slice bond that is too narrow: at
+    `t = 0, 2, 6` the exact supports contain separation-two pairs `(0,2)` and
+    `(0,6)`, because the Hodge multiplication in the completion extends the
+    support a slice further. **Every count and every support the solve claimed is
+    confirmed exactly**; only the word moved. It is now the gated range vector
+    `(2,1,2,1,1,1,2,1)` in family `D`, and the word *bond* is not used as a claim
+    anywhere.
+23. **THE INTERPRETATION FENCE IS A REQUIRED SECTION BECAUSE THE CHECK MADE IT
+    THE SUBSTANTIVE BOUNDARY.** C6 confirmed that the finite invariant-sector
+    construction is executable and that its identification as a gravity gauge
+    quotient is **not derived** — and confirmed separately that the restriction's
+    positivity is **automatic**. Both are now structural: `N4g` is a required
+    section of this note, the four identifications are **declared constants** in
+    family `B`, the eight missing structures are an **enumerated list whose
+    length is gated**, and `break_automatic_disclosure` exists precisely so that
+    the automatic-positivity disclosure cannot be quietly dropped.
+24. **THE QUOTIENT GRAM'S SIGNS ARE A RECONCILIATION AND NOT A DISPUTE.** The
+    check displayed the restricted Gram with minus signs where this note has plus
+    signs. The two are related by `diag(1,-1,-1,1)` on the basis, equivalently by
+    the **staggered site sign** `(-1)^(t+x)` on the core — a diagonal congruence,
+    invisible to every minor, inertia and determinant. **All four minors, the
+    determinant and the density agree exactly**, all sixteen sign patterns are
+    measured to leave them fixed, and the check's representative is reproduced
+    exactly by the runner. `N4c` records it; neither rebuild corrects the other.
+25. **AND WHAT ELSE IS NOT CORRECTED.** Every Block 104, 105, 106, 107, 128 and
+    181-188 number **stands as landed**. Block 188's core Gram is this block's
+    control and is reproduced digit-for-digit; their full-span positivity is
+    untouched; and their named open leg, the proper OS transfer, is neither
+    supplied nor weakened here.
+
+### The adversarial check
+
+**ADVERSARIAL CHECK: RUN AND FOLDED. OVERALL VERDICT:
+CONFIRMED-WITH-CORRECTION.** codex 5.6-sol xhigh, cross-model, independent exact
+reconstruction of the `Z8 x Z4` matrices and of the site-glued action from the
+specification, using only the permitted dependency APIs.
+
+**CONFIRMED EXACTLY.** `rank(Q_s) = 32`; the symmetric core Gram with eight
+positive exact leading minors; the odd shift's 64-entry rank-16 intra-slice
+commutator with `d_K` and its 64-entry rank-8 failure on `Q_s`; the global even
+shift's exact commutation; **every one of the eight twist counts and every one of
+the eight ordered supports**; the reflection-even commutation with `Ps` and the
+transport identity; `W_1^2 = W_2^2 = I`, `[W_1, W_2] = 0`, the two individual
+rank-4 failures and the exact `W_1 W_2` invariance; the rank-4 projector, the
+exact basis and the first quotient minor.
+
+**THE CORRECTIONS, BOTH NOW GATES RATHER THAN PROSE.** Correction 22 above
+(range two, not nearest bond), and correction 23 (the interpretations fence, now
+a required section and four declared constants).
+
+**THE EXTENSION, WHICH IS THE CHECK'S OWN CONTENT AND IS NOW THE BLOCK'S.** The
+exhaustive 256-sweep and the exact order-2 stabilizer. **A leg the solve did not
+run came back as the block's sharpest result**, and it is in the body (`N4d`) as
+family `G` rather than in an appendix.
+
+**THE BOUNDARY THE CHECK DREW, AND THIS BLOCK ACCEPTS IT WHOLE.** From C6:
+restriction positivity is automatic and therefore not a new theorem; the selected
+transformation family is a chosen finite family and calling it *gauge* is a
+physical interpretation; the forced evenness is valid **relative to** the
+stipulated grading and constructed action, not as a general law; **no
+gravity-specific content is derived**; and the comparative phrase "the corpus's
+first" receives no audit confirmation and is not made. Every one of those is
+carried into the note as text and into the runner as a gate.
+
+**THE CHECKER'S FINDINGS OVERRIDE THE SOLVE EVERYWHERE THEY COLLIDE.** In this
+block they supplied one whole claim family, corrected one piece of wording,
+drew the scope boundary that `N4g` now enforces, and displayed a representative
+that the runner now reconciles exactly.
+
+### Worker profile, and the cross-model disclosure
+
+**THE WORKER PROFILE IS DISCLOSED IN FULL.** All solve-side science and the
+synthesis were done by the supervising frontier model **INLINE**, per the owner's
+standing directive. **THE ADVERSARIAL CHECK IS RUN BY A cross-model WORKER**,
+machinery-disjoint, and **its findings override the solve** — which in this block
+is not a formality, since it contributed the stabilizer leg outright, corrected
+the solve's wording, and drew the scope boundary that this note's required fence
+section enforces. **OPUS DID MECHANICAL DRAFTING ONLY** — this note and the
+runner to a fixed contract — and the supervisor reviews and lands. **THE CHECK
+RAN BEFORE DRAFTING AND ITS VERDICTS WERE FOLDED BEFORE DELIVERY**, so nothing in
+this note is an appended narrowing. **COMMON-MODE RISK IS REDUCED AND NOT
+ELIMINATED:** both workers read Block 188's note as the construction authority
+and share the landed Block 128 `cover_embedding()` and Block 105 `shear_hodge()`,
+which are the points through which an error in the conventions or the fixture
+would propagate to every gate at once — and the phase-convention difference found
+in `N4c` is direct evidence that the two rebuilds are genuinely independent above
+those two shared objects.
+
+### Provenance
+
+`.claude/science/physics-loops/CAMPAIGN_20260824_GRAVITY_MAINLINE.md`, at its
+**THE CONSTRAINT QUOTIENT — FIRST EXECUTABLE INSTANCE (block 189 candidate)** and
+**B188 + B189 CHECK VERDICTS** anchors, as corrected and extended by the b189
+adversarial check.
+
+### Reproduction
+
+```
+python3 scripts/admissibility_dirac_kahler_site_gauge_quotient_2026_08_24.py
+python3 scripts/admissibility_dirac_kahler_site_gauge_quotient_2026_08_24.py --list-mutations
+python3 scripts/admissibility_dirac_kahler_site_gauge_quotient_2026_08_24.py --mutation break_stabilizer_order
+```
+
+**Baseline: eight families, `A` through `H`, all PASS once this note sits at its
+final path.** Twenty-nine declared mutations, each rewriting exactly one claim,
+each required to flip exactly one family to FAIL and to exit nonzero. Four of
+them guard the adversarial check's own findings: `break_twist_range_two`,
+`break_stabilizer_order`, `break_automatic_disclosure` and
+`claim_gauge_identification`.

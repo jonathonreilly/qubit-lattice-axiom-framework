@@ -1,0 +1,90 @@
+===== runner cache v1 =====
+runner: scripts/two_axis_opposite_distance_four_neighbor_read_lpath_minus_e3_minus_e1_cyclic_frame_transport_tplus1_reverse_face_2026_08_15.py
+runner_sha256: c29a8c7c9e73c534dc1e9d1be023f5c2b33669030cd4feff01a210599298626a
+input_fingerprint_sha256: 243c89007ae3d20601306f5bc7a0a53ea8b4e6ced67a6e47d998ff6f47c13860
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+Distance-4 neighbor-read of L-path cyclic-frame transport -e3 then -e1 at t+1
+AUDIT_INPUT_PATHS:
+  docs/TWO_AXIS_OPPOSITE_DISTANCE_FOUR_NEIGHBOR_READ_LPATH_MINUS_E3_MINUS_E1_CYCLIC_FRAME_TRANSPORT_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+displayed_not_adopted: true
+PASS: audit-input-paths-literal
+PASS: audit-inputs-exist
+PASS: source-lattice
+PASS: source-admissibility-unedited
+PASS: source-record-boundary
+PASS: euclidean-ball-cardinality
+PASS: seed-tick-zero
+PASS: seed-incoming-locks
+PASS: perp-step-blocks-parallel
+PASS: tick1-record-count  (14)
+PASS: signed-permutation-identity
+probe (0,0,0) t=0 tau=1 lpath=hold distance_four=fail path=(0,0,0)->(0,0,-1)->(-1,0,-1)
+  (0,0,0) t=0 m=(1,0,0) o_next=(0,-1,0) o_prev=(0,0,-1) Orient=1 F=[1 0 0; 0 -1 0; 0 0 -1]
+  (0,0,-1) t=1 m=(0,0,-1) o_next=(-1,0,0) o_prev=(0,-1,0) Orient=-1 F=[0 -1 0; 0 0 -1; -1 0 0]
+  (-1,0,-1) t=2 m=(-1,0,0) o_next=(0,-1,0) o_prev=(0,0,-1) Orient=-1 F=[-1 0 0; 0 -1 0; 0 0 -1]
+  hop1 (0,0,0)->(0,0,-1) P=[0 1 0; 0 0 1; -1 0 0] edge=hold
+  hop2 (0,0,-1)->(-1,0,-1) P=[0 0 1; 1 0 0; 0 1 0] edge=hold
+  d4_count=35 witnesses=none
+PASS: named-first-edge-(0,0,0)-(0,0,-1)
+PASS: named-second-edge-(0,0,-1)-(-1,0,-1)
+probe (0,1,0) t=0 tau=1 lpath=hold distance_four=hold path=(0,1,0)->(0,1,-1)->(-1,1,-1)
+  (0,1,0) t=0 m=(-1,0,0) o_next=(0,1,0) o_prev=(0,0,-1) Orient=1 F=[-1 0 0; 0 1 0; 0 0 -1]
+  (0,1,-1) t=1 m=(0,0,-1) o_next=(-1,0,0) o_prev=(0,1,0) Orient=1 F=[0 -1 0; 0 0 1; -1 0 0]
+  (-1,1,-1) t=2 m=(-1,0,0) o_next=(0,1,0) o_prev=(0,0,-1) Orient=1 F=[-1 0 0; 0 1 0; 0 0 -1]
+  hop1 (0,1,0)->(0,1,-1) P=[0 -1 0; 0 0 -1; 1 0 0] edge=hold
+  hop2 (0,1,-1)->(-1,1,-1) P=[0 0 1; -1 0 0; 0 -1 0] edge=hold
+  d4_count=30 witnesses=(1,-1,1)
+PASS: named-first-edge-(0,1,0)-(0,1,-1)
+PASS: named-second-edge-(0,1,-1)-(-1,1,-1)
+probe (0,0,1) t=0 tau=1 lpath=fail distance_four=fail path=(0,0,1)->(0,0,0)->(-1,0,0)
+  (0,0,1) t=0 m=(0,1,0) o_next=(0,0,1) o_prev=(-1,0,0) Orient=-1 F=[0 0 -1; 1 0 0; 0 1 0]
+  (0,0,0) t=0 m=(1,0,0) o_next=(0,-1,0) o_prev=(0,0,-1) Orient=1 F=[1 0 0; 0 -1 0; 0 0 -1]
+  (-1,0,0) t=2 F=fail Orient=fail
+  hop1 (0,0,1)->(0,0,0) P=[0 1 0; 0 0 -1; 1 0 0] edge=hold
+  hop2 (0,0,0)->(-1,0,0) P=fail edge=fail
+  d4_count=30 witnesses=none
+PASS: named-first-edge-(0,0,1)-(0,0,0)
+PASS: named-second-edge-(0,0,0)-(-1,0,0)
+probe (0,1,1) t=0 tau=1 lpath=fail distance_four=fail path=(0,1,1)->(0,1,0)->(-1,1,0)
+  (0,1,1) t=0 m=(0,-1,0) o_next=(0,0,1) o_prev=(-1,0,0) Orient=1 F=[0 0 -1; -1 0 0; 0 1 0]
+  (0,1,0) t=0 m=(-1,0,0) o_next=(0,1,0) o_prev=(0,0,-1) Orient=1 F=[-1 0 0; 0 1 0; 0 0 -1]
+  (-1,1,0) t=2 F=fail Orient=fail
+  hop1 (0,1,1)->(0,1,0) P=[0 1 0; 0 0 1; 1 0 0] edge=hold
+  hop2 (0,1,0)->(-1,1,0) P=fail edge=fail
+  d4_count=27 witnesses=none
+PASS: named-first-edge-(0,1,1)-(0,1,0)
+PASS: named-second-edge-(0,1,0)-(-1,1,0)
+reverse=fail bits=('fail', 'hold')
+face=fail bits=('fail', 'fail')
+PASS: theorem1-seed-frames
+PASS: theorem1-path-frames
+PASS: theorem1-lpath-bits
+PASS: theorem1-distance-four-bits
+PASS: theorem1-existential-witnesses
+PASS: theorem2-reverse-fail
+PASS: theorem3-face-fail
+PASS: lpath-fail-distance-four-fail-not-undefined
+PASS: not-leftover-of-distance-two
+PASS: not-leftover-of-distance-three
+PASS: distance-four-not-six-neighbor
+PASS: not-leftover-of-one-step-minus-e3
+PASS: not-leftover-of-two-step-minus-e3
+PASS: mutation-lex-largest-uses-minus
+PASS: outside-ball-is-fail
+PASS: face-second-hop-split-fail
+PASS: note-claim-scope
+PASS: note-computed-bits
+PASS: note-forbidden-phrases
+PASS: note-no-status-overclaim
+PASS: axiom-file-unedited-by-this-packet
+TOTAL: PASS=40 FAIL=0
+
+----- stderr -----
+

@@ -10,3 +10,7 @@
   transfer, success criteria, and no-go discipline were frozen before reading
   those returns or computing a Block-192 target residual.
 - No review-loop or audit verdict is part of this campaign.
+- The independent panel returned 4--1 for the capped same-object join.  It
+  moved periodic `L=24` ahead of the disconnected finite spectral diagnostic
+  before target execution and bound a two-complete-Record-law fallback if no
+  carrier survives the four-hour cap.

@@ -11,10 +11,13 @@ The target chain is
 
 The carrier tournament is frozen before target evaluation:
 
-1. one four-dimensional real antisymmetric temporal complex with exact
+1. the minimal uniform periodic circle containing both momenta (`L=24`);
+2. one four-dimensional real antisymmetric temporal complex with exact
    frequencies `sin(pi/6)=1/2` and `sin(pi/4)=sqrt(2)/2`;
-2. the minimal uniform periodic circle containing both momenta (`L=24`);
 3. a continuous-frequency reflected kernel if both finite routes fail.
+
+This order was bound by the independent panel after the route set was frozen
+and before any Block-192 target residual was evaluated.
 
 The frozen source is Block 191's grade-three PVM and connected response.  It
 may not be replaced, rephased, or reselected to rescue a carrier.  The carrier

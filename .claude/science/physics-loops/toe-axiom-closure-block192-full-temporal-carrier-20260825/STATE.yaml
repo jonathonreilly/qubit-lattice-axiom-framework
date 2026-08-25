@@ -4,7 +4,7 @@ parent_commit: 480f633a5fbe34f444ec57e079abdd81b42e7728
 parent_pull_request: 7356
 origin_main: c79384cb8ffa27fcb53cb89c53a84a708442eaad
 active_gate: full_16form_temporal_carrier_reflected_source_history_composition
-route_order: [finite_two_frequency_complex, periodic_l24, continuous_frequency_kernel]
+route_order: [periodic_l24, finite_two_frequency_complex, continuous_frequency_kernel]
 route_attempt_cap: 3
 discovery_points: [D1, H1]
 held_out_points: [D2, D3, H2, X1]
@@ -26,3 +26,6 @@ axiom_status: unchanged
 retained_positive_end_to_end_theory_count: 0
 review_loop: forbidden_by_user_instruction
 no_go_discipline: required_before_any_negative_claim
+panel_vote: 4_yes_1_record_dissent
+four_hour_hard_cap: true
+fallback_if_no_survivor: two_complete_record_law_discriminator

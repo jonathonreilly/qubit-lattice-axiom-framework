@@ -1,5 +1,5 @@
 campaign: toe-axiom-closure-block193-fixed-l24-record-law-discriminator-20260825
-status: preregistered_pending_target_execution
+status: executed_bounded_detector_orientation_boundary
 parent_commit: 872ce2ff1d0cbed0afb19f1abd12b0b9559d54a7
 parent_pull_request: 7632
 origin_main: b11811704efa98a12272d572f666e530a807f6c1
@@ -14,6 +14,15 @@ source_pair_control: hermitian_forward_adjoint_typing_only
 source_slots: all_10_symmetric_pairs4_components
 diagonal_arm: first_nonzero_normalized_response_then_record
 coherent_arm: propagated_tangent_oriented_complete_instrument_then_record
+literal_source_execution: exact
+discarded_development_source: mode_equivalent_local_lift
+d1_diagonal_result: exactly_uniform_all_orders_on_every_tt_ray
+identity_coherent_result: complex_tt_rank_1_on_d1_h1
+clock_parity_coherent_result: exact_tt_rank_0_on_d1_h1
+discovery_gate: failed_rank_two
+held_out_status: sealed_unread
+record_tail_status: not_opened
+next_campaign: bounded_physical_detector_interaction_and_m2_pointer
 event_refit_allowed: false
 orientation_refit_allowed: false
 phase_refit_allowed: false

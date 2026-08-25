@@ -17,3 +17,7 @@
 6. Update only campaign planning surfaces, source note, runner, cache, and the
    mechanically required citation manifest.  Do not edit audit verdict,
    ledger-grade, queue, or effective-status data.
+
+Executed artifact set follows this scope.  The source note carries N1--N8 and
+the runner emits the five N5 resolution lines.  Held-out and Record artifacts
+are intentionally absent because the discovery response gate fails.

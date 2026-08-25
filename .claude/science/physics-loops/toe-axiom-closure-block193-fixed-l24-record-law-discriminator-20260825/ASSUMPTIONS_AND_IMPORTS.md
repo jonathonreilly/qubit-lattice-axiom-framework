@@ -18,3 +18,9 @@
 Every imported component must expose the exact condition it consumes and the
 exact output it supplies.  Composition is a theorem obligation, not a citation
 shortcut.  No current evidence licenses a minimal-axiom amendment.
+
+Executed clarification: the primary deformation is the literal one-term
+full-carrier operator in the table.  A local temporal lift with the same
+selected-mode symbol is a different operator and its preliminary response
+values were discarded.  D2/D3/H2/X1 and every Record-stack component remain
+unconsumed because no discovery instrument passed real TT rank two.

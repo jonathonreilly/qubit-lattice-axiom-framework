@@ -14,3 +14,15 @@
   decision rule, panel cadence, and fallback are frozen before target
   computation.
 - No review-loop or audit verdict is authorized.
+- A convention check rejected preliminary local-temporal-lift values because
+  the preregistration freezes literal `M_q tensor V` on the full carrier; all
+  target results were recomputed with the corrected operator.
+- Independent algebra reconstructed the ordinary-transpose tangent, exact
+  D1 all-order diagonal factorization, identity/position rank-one response,
+  scalar-phase rank invariance, and zero clock-parity response.
+- No-go discipline rejects a broad coherent negative and preserves detector,
+  transport, relabelled-context, source-phase, and Riesz/intertwiner routes.
+- A post-result five-role panel voted 4--1 for one bounded detector-interaction
+  campaign, with a no-rescue hard stop, over immediate gravity re-entry.
+- Latest PRs through #7657 were checked.  They are lphys frame/holonomy probes
+  and do not execute this source/detector/Record interface.

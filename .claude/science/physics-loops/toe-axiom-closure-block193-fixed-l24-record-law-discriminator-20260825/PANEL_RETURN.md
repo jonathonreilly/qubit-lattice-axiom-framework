@@ -1,24 +1,25 @@
 # Panel Return
 
-The post-Block-192 five-role panel voted 4--1 to execute one fixed-object
-discriminator rather than continue carrier or positivity work.
+At the executed Block-193 fork, the five-role panel voted 4--1 for a bounded
+physical detector interaction plus M2 pointer as Block 194.
 
-The majority requires the same chain for both arms:
+- Gravity/QFT: the gravity/action stack already delivered the current D4 TT
+  source; the missing object is a detector vertex.
+- Quantum foundations: a system-detector interaction and apparatus condition,
+  not the symmetric vacuum alone, select the internal U(4) orientation.
+- Mathematical physics, dissent: prefer a reflection-positive Riesz section,
+  but only after a genuine Regge-D4-L24 intertwiner exists.
+- Lattice/constructive: keep the finite carrier and require exact local,
+  covariant, reflection, pointer, and rank constraints.
+- Adversarial falsifier: one declared interaction family, one composite hard
+  gate, and no rescue scan.
 
-`measure -> event -> physical response -> realization -> write -> permanent readable Record`.
+Hard gate:
 
-It freezes `L=24`, mass, action, source family, cut, reflection, writer, and
-discovery/held-out split.  The diagonal arm must reach its exact first nonzero
-normalized order.  The coherent arm must be a complete positive instrument,
-use the propagated physical tangent, and derive its internal orientation and
-phase covariantly from the clock/writer/action rather than fit them.
+`dim(A_det / gauge,pointer-label)=1`, `W^dagger W=I`, `Q_+ Q_-=0`, and
+real TT response ranks `2` at both D1 and H1.
 
-The gravity/QFT seat dissented in favor of immediately deriving a physical
-source/observable section.  That route remains second and becomes first if
-both event arms fail or if either arm can proceed only by selecting the desired
-observable after seeing the result.
-
-Panel utility rule: convene all five roles at a genuine branch decision,
-contradictory survivor result, or two-hour portfolio checkpoint.  Use focused
-independent algebra reconstruction between those points so panels do not
-replace computation.
+Any failed clause stops the family before held-outs.  No alternate `K`, polar
+response, phase, position, detector-axis, or normalization fit is allowed.
+Record formation follows only a positive detector pass.  An axiom memo is
+premature while the detector and Riesz/intertwiner routes remain live.

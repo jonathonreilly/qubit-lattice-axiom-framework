@@ -14,8 +14,14 @@ Refresh immediately before preregistration:
   it is not a Record result.
 - Gravity/source PRs #7335, #7344, and #7346 remain the bound fallback if both
   fixed-object event arms fail.
-- New PRs #7607--#7631 are lphys frame/holonomy fixture probes.  They do not
+- New PRs #7607--#7657 are lphys frame/holonomy fixture probes.  They do not
   execute the Block-192 source/event/Record interface and do not change the
   ranking.
 - Recheck the full open-PR set after each complete arm and before publication.
   Do not use review-loop.
+
+Executed recheck: #7632 remains open/mergeable.  No later PR supplies a
+detector interaction, internal event orientation, faithful eight-label M2
+pointer, or permanent Record chain.  The gravity stack #7335--#7354 already
+feeds the D4 source used here; returning to it without a new Regge-D4-L24
+intertwiner would repeat an upstream selector loop.

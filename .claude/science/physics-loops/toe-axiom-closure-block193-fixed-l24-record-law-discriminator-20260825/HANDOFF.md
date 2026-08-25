@@ -1,24 +1,26 @@
 # Handoff
 
-Block 193 is preregistered and target execution has not begun.
+Block 193 uses the literal preregistered full-carrier source, ordinary
+transpose, and actual reverse.  Its exact positive support is reusable:
 
-Parent: Block 192 PR #7632 at `872ce2ff1d`.  It supplies the exact `L=24`
-carrier/history fixture, static conditioning, physical two-sector typing,
-diagonal linear-response zero, and an adjacent write-congruence principle.  It
-does not supply a propagated coherent response, first nonzero diagonal rate,
-selected event law, permanent Record, Born derivation, axiom amendment,
-obligation retirement, or TOE score movement.
+- source-to-Schur propagation on the fixed L24 carrier;
+- D1 diagonal all-order uniformity for arbitrary TT mixtures;
+- complete positive eight-effect identity and clock-parity instruments;
+- exact D1/H1 response ranks and writer-position covariance.
 
-First compute the propagated two-sector Gram tangent and Hessian using the
-frozen action-native forward/actual-reverse Block-190 pair on all ten source
-slots.  The Hermitian forward/adjoint pair is a diagnostic control only.  Do
-not call the raw vertex overlap a response.  Do not consume Record-stack machinery
-until one event arm is a complete positive instrument with a normalized
-unrefitted response.  Then re-instantiate, rather than merely cite, the minimum
-writer/formation components needed for a nonidentity permanent readable
-Record.
+No executed event arm passes real TT rank two.  The D1 diagonal law is blind
+to all orders, the identity/position coherent family has an exact zero second
+column, and `J=i Gamma_t Pi_form` has zero response.  Held-outs and Record
+composition were therefore not opened.  Other detector interactions remain
+live; do not quote this as a coherent, source, gravity, or Record no-go.
 
-Discovery points are D1/H1; D2/D3/H2/X1 are held out.  Event, orientation,
-phase, source, and normalization refits are forbidden.  No review-loop is
-authorized.  Re-rank after each arm or two hours and use the gravity/source
-section as the bound fallback.
+The 4--1 panel-selected next campaign is a bounded local detector-system
+interaction with an M2 pointer.  Freeze its apparatus condition and interaction
+family before response.  Require a unique non-scalar orientation ray modulo
+gauge/pointer relabel, an exact pointer dilation, and real TT rank two at both
+D1 and H1.  Kill after that one family; do not scan `K`, phase, writer position,
+or detector axes.  A reflection-positive Riesz/gravity section is the fallback
+only after this stop or after an independent Regge-D4-L24 intertwiner appears.
+
+No axiom, obligation, TOE percentage, audit verdict, or retained theory moved.
+No review-loop was run.

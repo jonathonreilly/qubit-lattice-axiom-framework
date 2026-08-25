@@ -66,3 +66,15 @@ Decision rule:
 
 No audit verdict, obligation retirement, TOE score movement, retained theory,
 or axiom edit is available from preregistration alone.
+
+## Executed Disposition
+
+The literal preregistered `M_q tensor V` / actual-reverse pair was propagated;
+preliminary values from a mode-equivalent local lift were discarded.  The D1
+diagonal probabilities are exactly `1/4` to all orders on every physical TT
+ray.  The complete identity/position coherent instrument has complex TT rank
+one at D1 and H1, and scalar writer phase preserves its exact zero second
+column.  The independently specified algebraic `J=i Gamma_t Pi_form` candidate
+is complete but has zero response at both points.  No arm passes the rank-two
+discovery gate, so held-outs and the Record tail stay sealed.  The result is a
+narrow detector-orientation boundary, not a broad coherent/source no-go.

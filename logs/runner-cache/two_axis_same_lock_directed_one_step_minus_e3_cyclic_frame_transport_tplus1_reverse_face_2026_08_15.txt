@@ -1,0 +1,65 @@
+===== runner cache v1 =====
+runner: scripts/two_axis_same_lock_directed_one_step_minus_e3_cyclic_frame_transport_tplus1_reverse_face_2026_08_15.py
+runner_sha256: 8f7df489a7b911a0a4a7ec99dbfe3607d50ecd0ee2f4ce2bb31e392b02a60f51
+input_fingerprint_sha256: 1d4350bcbf24a2ba0531d466850a3d3b9d2fcc4b7c57b0470d4c92407e1548be
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+Directed 1-step cyclic-frame transport along -e3 at t+1
+AUDIT_INPUT_PATHS:
+  docs/TWO_AXIS_SAME_LOCK_DIRECTED_ONE_STEP_MINUS_E3_CYCLIC_FRAME_TRANSPORT_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+displayed_not_adopted: true
+PASS: audit-input-paths-literal
+PASS: audit-inputs-exist
+PASS: source-lattice
+PASS: source-admissibility-unedited
+PASS: source-record-boundary
+PASS: euclidean-ball-cardinality
+PASS: seed-tick-zero
+PASS: seed-incoming-locks
+PASS: same-lock-pairs
+PASS: perp-step-blocks-parallel
+PASS: tick1-record-count  (14)
+PASS: signed-permutation-identity
+probe (0,0,0) t=0 tau=1 one_step=hold
+  m=(1,0,0) o_next=(0,-1,0) o_prev=(0,0,-1) Orient=1 F=[1 0 0; 0 -1 0; 0 0 -1]
+probe (0,1,0) t=0 tau=1 one_step=hold
+  m=(1,0,0) o_next=(0,1,0) o_prev=(0,0,-1) Orient=-1 F=[1 0 0; 0 1 0; 0 0 -1]
+probe (0,0,1) t=0 tau=1 one_step=fail
+  F=fail Orient=fail
+probe (0,1,1) t=0 tau=1 one_step=hold
+  m=(0,1,0) o_next=(0,0,1) o_prev=(-1,0,0) Orient=-1 F=[0 0 -1; 1 0 0; 0 1 0]
+  edge (0,0,0)->(0,0,-1) formed=(1,1) split=(1,1) P=[0 1 0; 0 0 1; -1 0 0] edge=hold
+PASS: named-edge-(0,0,0)-(0,0,-1)
+  edge (0,1,0)->(0,1,-1) formed=(1,1) split=(1,1) P=[0 -1 0; 0 0 -1; -1 0 0] edge=hold
+PASS: named-edge-(0,1,0)-(0,1,-1)
+  edge (0,0,1)->(0,0,0) formed=(1,1) split=(0,1) P=fail edge=fail
+PASS: named-edge-(0,0,1)-(0,0,0)
+  edge (0,1,1)->(0,1,0) formed=(1,1) split=(1,1) P=[0 1 0; 0 0 1; 1 0 0] edge=hold
+PASS: named-edge-(0,1,1)-(0,1,0)
+reverse=hold bits=('hold', 'hold')
+face=fail bits=('fail', 'hold')
+PASS: theorem1-seed-frames
+PASS: theorem1-zseed-split-fail-not-undefined
+PASS: theorem1-dest-frames
+PASS: theorem1-one-step-bits
+PASS: theorem2-reverse-hold
+PASS: theorem3-face-fail
+PASS: not-leftover-of-two-step-product
+PASS: not-leftover-of-opposite-one-step
+PASS: mutation-lex-largest-uses-minus
+PASS: outside-ball-is-fail
+PASS: note-claim-scope
+PASS: note-computed-bits
+PASS: note-forbidden-phrases
+PASS: note-no-status-overclaim
+PASS: axiom-file-unedited-by-this-packet
+TOTAL: PASS=31 FAIL=0
+
+----- stderr -----
+

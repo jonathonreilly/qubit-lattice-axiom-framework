@@ -25,3 +25,13 @@ detector interaction, internal event orientation, faithful eight-label M2
 pointer, or permanent Record chain.  The gravity stack #7335--#7354 already
 feeds the D4 source used here; returning to it without a new Regge-D4-L24
 intertwiner would repeat an upstream selector loop.
+
+Publication refresh at 2026-08-25T16:31:01Z:
+
+- Block 193 is published as proposed bounded evidence in PR #7698, stacked
+  directly on Block-192 PR #7632.
+- Commit `8921f1d670` carries the exact runner/cache, source note, N1--N8/N5
+  packet, all-28 coherent orthogonality gate, independent nonzero tangent
+  witnesses, and acknowledged citation-graph manifest.
+- The next live seam is the preregistered physical detector interaction and
+  M2 pointer, not an axiom edit or unconstrained gravity inverse.

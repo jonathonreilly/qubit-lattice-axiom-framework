@@ -1,7 +1,10 @@
 campaign: toe-axiom-closure-block193-fixed-l24-record-law-discriminator-20260825
-status: executed_bounded_detector_orientation_boundary
+status: proposed_evidence_pr_open
 parent_commit: 872ce2ff1d0cbed0afb19f1abd12b0b9559d54a7
 parent_pull_request: 7632
+result_commit: 8921f1d670
+result_pull_request: 7698
+result_pull_request_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7698
 origin_main: b11811704efa98a12272d572f666e530a807f6c1
 target: fixed_l24_two_complete_record_law_discriminator
 discovery_points: [D1, H1]

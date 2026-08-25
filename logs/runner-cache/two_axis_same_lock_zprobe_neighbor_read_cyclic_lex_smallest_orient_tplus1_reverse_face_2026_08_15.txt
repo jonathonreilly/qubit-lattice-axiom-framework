@@ -1,0 +1,79 @@
+===== runner cache v1 =====
+runner: scripts/two_axis_same_lock_zprobe_neighbor_read_cyclic_lex_smallest_orient_tplus1_reverse_face_2026_08_15.py
+runner_sha256: f6287033a3cfa99f3d8873d554beb615a9fe9a12efcd51771f7ddb52e8975800
+input_fingerprint_sha256: 07a24210b9c02f1d22bd61d4bae7bff7996ba18cc96b84c176047aade57abfd3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+neighbor-read of cyclic lex-smallest Orient reverse/face at t+1 on two-axis same-lock z-probes
+AUDIT_INPUT_PATHS:
+  docs/TWO_AXIS_SAME_LOCK_ZPROBE_NEIGHBOR_READ_CYCLIC_LEX_SMALLEST_ORIENT_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Neighbor-read of the cyclic lex-smallest orientation at t+1 on the four z-probes of the two-axis same-lock seed, and reverse/face from that, are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/TWO_AXIS_SAME_LOCK_ZPROBE_NEIGHBOR_READ_CYCLIC_LEX_SMALLEST_ORIENT_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-z-probes-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: pair-read-identity
+PASS: neighbor-read-identity
+A t=0 M={+e_2} O={+e_1, −e_1, +e_2, +e_3} Orient=fail neighbor-read=fail
+B t=1 M={+e_1} O={+e_2, +e_3, −e_3} Orient=+1 neighbor-read=hold
+C t=1 M={+e_3} O={+e_1, −e_1, −e_2} Orient=−1 neighbor-read=fail
+D t=1 M={+e_1} O={−e_2, +e_3, −e_3} Orient=−1 neighbor-read=fail
+neighbor-read reverse=fail face=fail
+per_element: cyclic lex-smallest Orient sign at a probe and at formed 6-NN, compared as +/-1 at the probe's t+1
+per_site: scored only at z-probes A,B,C,D on Euclidean B_3(0); no other sites
+per_mode: no spectral or mode calculation is executed on this finite host
+per_block: four neighbor-read reports, reverse/face from those bits
+lattice_wide: checked and not executed — no lattice-wide lettering rule is claimed
+PASS: perp-step-incoming-lock
+PASS: undefined-if-unformed
+PASS: theorem1-formation-ticks  ({'A': 0, 'B': 1, 'C': 1, 'D': 1})
+PASS: theorem1-M-O-Orient  ({'A': 'fail', 'B': '+1', 'C': '−1', 'D': '−1'})
+PASS: theorem1-formed-6nn-Orient-at-A
+PASS: theorem1-formed-6nn-Orient-at-B
+PASS: theorem1-formed-6nn-Orient-at-C
+PASS: theorem1-formed-6nn-Orient-at-D
+PASS: theorem1-neighbor-read-bits  ({'A': ('fail', ()), 'B': ('hold', ((0, 1, 1),)), 'C': ('fail', ()), 'D': ('fail', ())})
+PASS: theorem1-partner-Orient-match-is-not-O-match
+PASS: theorem1-mixed-stays-a-set
+PASS: theorem1-A-is-seed
+PASS: theorem1-O-at-t-is-orient-fail
+PASS: theorem2-reverse-fail
+PASS: theorem3-face-fail
+PASS: mutation-neighbor-read-of-O-differs
+PASS: mutation-neighbor-read-of-M-differs
+PASS: mutation-lex-largest-neighbor-read-differs
+PASS: not-x-probes-or-y-probes-or-perp
+PASS: not-one-axis-or-opposite-or-zsym-second-pair-is-seed
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: note-claim-scope
+PASS: note-reports-M-O-Orient-and-neighbor-read
+PASS: note-reports-formed-neighbors
+PASS: note-reports-reverse-face
+PASS: note-displayed-not-adopted
+PASS: note-not-cover-or-split-or-leftovers
+PASS: note-no-global-T
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+PASS: neighbor-read-not-orient-reverse-or-O-match
+TOTAL: PASS=49 FAIL=0
+
+----- stderr -----
+

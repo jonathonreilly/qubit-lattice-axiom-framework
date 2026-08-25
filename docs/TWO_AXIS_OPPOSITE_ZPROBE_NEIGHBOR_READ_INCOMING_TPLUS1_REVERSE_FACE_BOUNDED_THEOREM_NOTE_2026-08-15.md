@@ -1,0 +1,301 @@
+---
+claim_id: two_axis_opposite_zprobe_neighbor_read_incoming_tplus1_reverse_face_bounded_theorem_note_2026-08-15
+claim_type: bounded_theorem
+claim_scope: "Neighbor-read of M at t+1 on the four z-probes of the two-axis opposite seed, and reverse/face from that, are reported. Displayed, not adopted."
+upstream_dependencies:
+  - minimal_axioms
+runner: scripts/two_axis_opposite_zprobe_neighbor_read_incoming_tplus1_reverse_face_2026_08_15.py
+---
+
+# Two-Axis Opposite Z-Probe Neighbor-Read Of M At t+1, Reverse And Face
+
+**Date:** 2026-08-15
+**Type:** bounded_theorem
+**Scope:** Neighbor-read of M at t+1 on the four z-probes of the two-axis
+opposite seed, and reverse/face from that, are reported. Displayed, not
+adopted.
+**Audit-status authority:** independent audit lane only. This note authors no
+audit verdict and predicts none.
+**Primary runner:**
+[`scripts/two_axis_opposite_zprobe_neighbor_read_incoming_tplus1_reverse_face_2026_08_15.py`](../scripts/two_axis_opposite_zprobe_neighbor_read_incoming_tplus1_reverse_face_2026_08_15.py)
+
+No runner cache is written.
+
+## Result Up Front
+
+On the finite Euclidean host `B_3(0)={n:n·n<=9}`, form records by the
+two-axis opposite seed, perp-step, incoming-lock process. For each formed
+site `q` write `t(q)` for the formation tick and `τ(q)=t(q)+1`. There is no
+global T. `M(q,τ)` is the set of earliest incoming nearest-neighbor steps at
+`q` that can be assembled from records with tick at most `τ`. Mixed lock
+sets remain sets; uniqueness is not required. Unformed sites are
+`UNDEFINED`.
+
+Neighbor-read at a formed `q` HOLDs iff some formed six-neighbor `r=q+e`
+has `M(r,τ)` defined and equal to `M(q,τ)` as sets. Reverse HOLDs iff
+neighbor-read HOLDs at probes `A` and `B`. Face HOLDs iff neighbor-read
+HOLDs at probes `C` and `D`.
+
+On this seed and these z-probes the finite listing is:
+
+- t(A)=0, M(A, τ) = {+e_2}, neighbor-read(A) = fail
+- t(B)=1, M(B, τ) = {+e_1}, neighbor-read(B) = hold
+- t(C)=1, M(C, τ) = {+e_3}, neighbor-read(C) = hold
+- t(D)=1, M(D, τ) = {+e_1}, neighbor-read(D) = hold
+- Reverse neighbor-read at τ: fail
+- Face neighbor-read at τ: hold
+
+The face bit is displayed, not adopted. Do not write into Admissibility.
+Do not attach L1. This is not leftover of nm2axz axis-cover, not leftover
+of nm2ax12z 1-in 2-out, and not leftover of R-style recovery of the
+incoming step from neighbors. No larger host is used.
+
+## Current Premise Boundary
+
+Quoted from
+[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md):
+
+Physical sites are the points of the cubic lattice `Z^3`, with nearest-neighbor
+adjacency, standard translations, and proper cubic rotations about each site.
+
+The full one-site possibility domain has algebraic presentation `M_2(C)`.
+
+When present, a record locks exactly one admissible local possibility.
+
+Admissibility determines a local distribution from nearest-neighbor
+conditions and does not supply the formation site, probability, or rate.
+
+The process below is an explicit finite display on `B_3(0)`. It is not a
+rewrite of Admissibility and is not a lattice-wide lettering rule.
+
+## Exact Objects
+
+Write `e_1=(1,0,0)`, `e_2=(0,1,0)`, `e_3=(0,0,1)`. The six nearest-neighbor
+steps are `±e_1,±e_2,±e_3`. The host is the Euclidean ball
+`B_3(0)={n:n·n<=9}`. No larger host is used.
+
+The two-axis opposite seed at tick 0 is two disjoint opposite pairs:
+
+- origin locks `+e_1`
+- `(0,1,0)` locks `−e_1`
+- `(0,0,1)` locks `+e_2`
+- `(0,1,1)` locks `−e_2`
+
+A parent with lock axis `e_i` may take a nearest-neighbor step `s` only
+when `s·e_i=0`. A newly formed child locks the incoming step. Seeds keep
+their seed letters as a singleton. If several parents first reach a child
+at the same tick, `M` is the set of those incoming steps.
+
+The four z-probes are `A=(0,0,1)`, `B=(1,1,1)`, `C=(0,0,2)`, `D=(1,0,1)`.
+Probe `A` is a seed. Formation and `M` are computed only from records on
+this host.
+
+For a site `q` and a tick bound `τ`, if `q` is unformed at `τ` then
+`M(q,τ)` and neighbor-read at `q` are `UNDEFINED`. Otherwise `M(q,τ)` is
+the earliest nonempty incoming set assembled from parents with formation
+tick at most `τ`. Neighbor-read HOLDs at formed `q` iff there exists a
+formed six-neighbor `r` with `M(r,τ)` defined and `M(r,τ)=M(q,τ)` as
+sets. Pair-read of two probe bits is `UNDEFINED` if either bit is
+`UNDEFINED`, HOLD if both HOLD, and fail otherwise. Reverse is pair-read
+of `A` and `B`. Face is pair-read of `C` and `D`.
+
+## Theorem 1 — Formation Ticks, M, And Neighbor-Read Bits
+
+**Claim.** On this host and seed, the four z-probes and their eventually
+formed six-neighbors have the ticks, lock sets, and neighbor-read bits
+listed below.
+
+**Proof.** Direct breadth-first formation with the perp-step rule yields
+four tick-0 seeds. Parallel steps from the origin along `±e_1` are blocked
+because those steps fail `s·e_i=0`. Probe ticks are t(A)=0, t(B)=1,
+t(C)=1, and t(D)=1.
+
+At each probe, `M` at `τ=t+1` equals `M` at formation: no earlier parent
+appears when the tick bound is raised by one, so the earliest incoming set
+is frozen.
+
+- A is the seed `(0,0,1)`, so M(A, τ) = {+e_2}.
+- B is first reached from `(0,1,1)` by `+e_1`, so M(B, τ) = {+e_1}.
+- C is first reached from `A` by `+e_3`, so M(C, τ) = {+e_3}.
+- D is first reached from `A` by `+e_1`, so M(D, τ) = {+e_1}.
+
+formed 6-NN of A at τ: (1, 0, 1)={+e_1}, (-1, 0, 1)={−e_1}, (0, 1, 1)={−e_2}, (0, -1, 1)=UNDEFINED, (0, 0, 2)={+e_3}, (0, 0, 0)={+e_1}
+
+formed 6-NN of B at τ: (2, 1, 1)=UNDEFINED, (0, 1, 1)={−e_2}, (1, 2, 1)={+e_2}, (1, 0, 1)={+e_1}, (1, 1, 2)={+e_1, +e_3}, (1, 1, 0)={−e_3}
+
+formed 6-NN of C at τ: (1, 0, 2)={+e_1, +e_3}, (-1, 0, 2)={−e_1, +e_3}, (0, 1, 2)={+e_3}, (0, -1, 2)={−e_2}, (0, 0, 1)={+e_2}
+
+formed 6-NN of D at τ: (2, 0, 1)=UNDEFINED, (0, 0, 1)={+e_2}, (1, 1, 1)={+e_1}, (1, -1, 1)={−e_2}, (1, 0, 2)={+e_1, +e_3}, (1, 0, 0)={−e_3}
+
+matching 6-NN of A: none
+
+matching 6-NN of B: (1, 0, 1)
+
+matching 6-NN of C: (0, 1, 2)
+
+matching 6-NN of D: (1, 1, 1)
+
+None of the six-neighbors of `A` at `τ=1` carries `{+e_2}`, so
+neighbor-read(A) = fail. Site `(0,-1,1)` does form later, at tick 2, and
+is `UNDEFINED` at `A`'s `τ`. Site `(1,1,2)` is mixed `{+e_1, +e_3}` at
+`B`'s `τ`; mixed remains a set and is not equal to `{+e_1}`. The matching
+neighbor of `B` is `D`, whose lock set is the singleton `{+e_1}`, so
+neighbor-read(B) = hold without any uniqueness cut. Likewise
+neighbor-read(C) = hold by `(0,1,2)` and neighbor-read(D) = hold by `B`.
+`QED`
+
+## Theorem 2 — Reverse Neighbor-Read
+
+**Claim.** Reverse neighbor-read at `τ` is fail, not HOLD and not
+`UNDEFINED`.
+
+**Proof.** Reverse HOLDs iff neighbor-read HOLDs at `A` and at `B`. Both
+probes are formed, so the pair is not `UNDEFINED`. Theorem 1 gives
+neighbor-read(A) = fail and neighbor-read(B) = hold, hence
+Reverse neighbor-read at τ: fail.
+`QED`
+
+## Theorem 3 — Face Neighbor-Read, Displayed Not Adopted
+
+**Claim.** Face neighbor-read at `τ` is hold. The bit is displayed, not
+adopted.
+
+**Proof.** Face HOLDs iff neighbor-read HOLDs at `C` and at `D`. Theorem 1
+gives both HOLD, hence Face neighbor-read at τ: hold. The report is a
+finite listing on this seed and these four z-probes. It is displayed, not
+adopted as an Admissibility clause, as a lettering law, or as a uniqueness
+rule. Do not write into Admissibility. Do not attach L1.
+`QED`
+
+## Discriminators
+
+R-style leftover would recover an incoming step `e` at `q` from the
+presence of `−e` in `M(q+e,τ)`. On this seed that leftover returns
+`{+e_2}` at `A` and the empty set at `B`, `C`, and `D`. Neighbor-read
+instead compares whole lock sets. It fails at `A` and HOLDs at `B`, so it
+is not leftover of R-style.
+
+The same z-probes on a two-site `±e_1` seed, on a perpendicular two-site
+seed, or on a z-symmetric three-site seed, and the same two-axis opposite
+seed scored on x-probes or y-probes, return different reverse/face pairs.
+The report is therefore not leftover of nm2axz axis-cover and not leftover
+of nm2ax12z 1-in 2-out.
+
+## Exact Target And Proof Obligations
+
+**Exact target:** report neighbor-read of `M` at `t+1` on the four z-probes
+of the two-axis opposite seed, and the reverse/face pair-read of those
+bits, on Euclidean `B_3(0)`.
+
+| Obligation | Disposition |
+|---|---|
+| name the seed, perp-step rule, host, and z-probes | displayed process, closed on `B_3(0)` |
+| list `t`, `M`, formed six-neighbor `M`, and neighbor-read bits | Theorem 1, finite listing |
+| reverse pair-read of `A` and `B` | Theorem 2, fail |
+| face pair-read of `C` and `D` | Theorem 3, hold, displayed not adopted |
+| adopt reverse or face as Admissibility | not claimed |
+| attach a uniqueness cut | not claimed |
+| lattice-wide lettering | not claimed; no global T |
+
+The proof-obligation graph is acyclic. The leaves are finite listings on
+a 123-site ball. No observational value is used.
+
+## No-Go Discipline Gate
+
+This note is a displayed finite report, not a negative law. Broad negative
+inference from the reverse fail, from the face hold, or from the `A` miss
+is **FAIL / DO NOT SHIP**.
+
+### N1 — materially distinct route scan
+
+Neighbor-read of whole lock sets, R-style leftover of the incoming step,
+axis-cover counting, 1-in 2-out split, unique-letter cuts, and a rewritten
+Admissibility rule are distinct objects. Only the first is executed here,
+and only on four z-probes. The others are named leftovers or out of scope.
+No universal negative is claimed, so a no-go is not shipped.
+
+### N2 — wall independence
+
+There is no shipped wall. Reverse fail and face hold are pair-reads of
+the four neighbor-read bits. Removing either pair changes the report
+without creating a law-level obstruction.
+
+### N3 — hidden-condition scan
+
+Load-bearing and explicit: two-axis opposite seed, perp-step
+`s·e_i=0`, incoming lock, Euclidean `B_3(0)`, `τ(q)=t(q)+1`, set equality
+of `M`, and the four named z-probes. No phrase such as "by construction"
+or "naturally" adds a further premise. Occupancy of sites is not used.
+
+### N4 — residual matching
+
+No prior negative is cited as evidence. The only linked premise document
+is the current axiom memo, used to quote Lattice, Qubit, Record, and the
+Admissibility non-supply of formation site. The listing is proved here.
+
+### N5 — resolution audit
+
+| Resolution | Executed? | Exact scope |
+|---|---:|---|
+| per element | yes | each earliest incoming lock set `M` at a probe and at formed six-neighbors, compared as sets at that probe's `t+1` |
+| per site | yes | z-probes `A,B,C,D` on Euclidean `B_3(0)` only |
+| per mode | no | no spectral or mode calculation is executed on this finite host |
+| per block | yes | four neighbor-read reports, reverse/face from those bits |
+| lattice-wide | checked and not executed | no lattice-wide lettering rule is claimed; no global T |
+
+### N6 — partial-closure paths
+
+Live extensions already named: other seeds, other probe axes, a uniqueness
+cut, R-style leftover, a larger host, or an Admissibility rewrite. None is
+closed by this listing, and none is dismissed as requiring a new axiom.
+
+### N7 — steelman
+
+The strongest objection to reading face HOLD as a law is decisive: face is
+pair-read of two probe bits on one displayed seed. The same process on the
+two-site seed reverses the reverse/face pair, and R-style leftover
+disagrees at `A` and `B`. That is why Theorem 3 is displayed, not adopted.
+
+### N8 — cross-cycle echo
+
+Investment names `nm2axz` and `nm2ax12z` mark nearby displayed processes.
+This note reuses the same two-axis opposite seed and z-probes only to
+report neighbor-read of `M` at `t+1`. It does not inherit an axis-cover
+claim, a 1-in 2-out split, or an incoming-step leftover as a theorem.
+
+**No-Go Discipline status:** FAIL / DO NOT SHIP for any negative
+Admissibility, lettering, or uniqueness claim. The positive finite listing
+in Theorems 1–3 remains a displayed bounded report.
+
+## Machine Status And Trace
+
+```yaml
+actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
+claim_type_reason: "Finite neighbor-read of M at t+1 on four z-probes, with reverse/face pair-read, on Euclidean B_3(0); displayed, not adopted."
+trace_class: upstream_support
+target_claim_id: two_axis_opposite_zprobe_neighbor_read_incoming_tplus1_reverse_face
+target_blocker_text: "report neighbor-read of M at t+1 on the two-axis opposite z-probes and the reverse/face pair of those bits"
+source_of_blocker_text: handoff
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: "Keep reverse/face displayed. Do not write into Admissibility. Do not attach L1."
+conditional_surface_status: "exact finite listing on B_3(0) for the declared seed and z-probes; law-level adoption remains open and is not claimed"
+hypothetical_axiom_status: "no edit"
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```
+
+## Imports And Claim Boundary
+
+| Item | Role | Status |
+|---|---|---|
+| current Lattice / Qubit / Record sentences | framework premise | linked current axiom memo |
+| Admissibility non-supply of formation site | framework boundary | quoted; process is displayed |
+| two-axis opposite seed, perp-step, incoming lock | declared process | explicit condition |
+| Euclidean `B_3(0)` | declared host | `{n:n·n<=9}`; no larger host |
+| neighbor-read, reverse, face | reported bits | Theorems 1–3 |
+| Admissibility rewrite, L1, uniqueness cut | residual | open and not claimed |
+
+Independent audit remains required before any effective status may change.

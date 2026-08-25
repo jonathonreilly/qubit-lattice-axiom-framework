@@ -1,0 +1,18 @@
+loop_id: toe-axiom-closure-block198-even-odd-two-step-os-20260825
+block: 198
+status: preregistered_pending_execution
+phase: target_frozen
+branch: physics-loop/toe-axiom-closure-block198-even-odd-two-step-os-20260825
+parent_commit: d01728eb5e
+origin_main: b11811704efa98a12272d572f666e530a807f6c1
+target: literal_Block192_even_odd_Schur_two_step_Berezin_OS_then_parity_memory_history
+known_exploratory_result: radius_one_two_step_form_appears_rank4_indefinite_and_local_moments_nonsemigroup
+response_sealed: true
+heldouts_sealed: true
+toe_scores_frozen: true
+axiom_edit_allowed: false
+review_loop_allowed: false
+obligation_retirement: 0
+toe_percentage_movement: 0
+next_on_gate1_failure: action_derived_global_process_tensor
+

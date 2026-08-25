@@ -12,7 +12,8 @@
    result was demoted to the exact registered-package boundary.
 6. COMPLETE: land a source note, fresh evidence caches, and only permitted
    citation-graph changes; do not edit audit verdict/ledger/queue/status data.
-7. IN PROGRESS: primary `15/15` and independent `20/20` mutations reject;
+7. COMPLETE: primary `15/15` and independent `20/20` mutations reject;
    strict lint, premise purity, graph/repo invariants, and five parent-cache
    checks pass.  Refresh the final input-bound cache, verify direct forensic
-   readiness, then publish stacked without review-loop.
+   readiness pass; result commit `b72a1e8364` is published in clean stacked
+   PR #7728 without review-loop.

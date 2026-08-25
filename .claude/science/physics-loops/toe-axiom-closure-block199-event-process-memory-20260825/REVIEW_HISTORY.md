@@ -36,3 +36,6 @@
   five relevant parent caches are fresh; enforced repository invariants pass
   with zero link/class-F violations and exactly one new node/five dependency
   edges acknowledged.
+- 2026-08-25: direct forensic N5 readiness passes; result commit `b72a1e8364`
+  pushed and stacked PR #7728 opened on Block 198.  PR is open, clean, and
+  mergeable; review-loop was not used.

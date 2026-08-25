@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_d4_l24_event_history_interface_hankel_process_boundary_2026_08_25.py
 runner_sha256: 7507326354d323920843d4dc247e6c0ca9572805ac3e4806e715223b5939ab3a
-input_fingerprint_sha256: 9636d9eafa35aca553351e12acda2cf7fd4720a94e36276495c98a83940b6664
+input_fingerprint_sha256: 3716a4d6bc3726ecb462807de082a7502bbfac661c1fe5b9e37189a78c5e47be
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 20.65
+elapsed_sec: 20.46
 status: ok
 ----- stdout -----
 [PASS] A: authority, preregistration ancestry, premise blobs, and literal inputs bind

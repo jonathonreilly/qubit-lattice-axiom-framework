@@ -1,0 +1,100 @@
+===== runner cache v1 =====
+runner: scripts/two_axis_opposite_xprobe_one_two_split_tplus1_tplus2_composition_reverse_face_2026_08_15.py
+runner_sha256: c8facda449665de6ae487299abbfab24fd1e9f2d4c9f7b214f318eec4ffecc3c
+input_fingerprint_sha256: 2bcc834a3f619c981f1879c864425420f1627e538f5b6ec205e57ad3f8de9406
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+1-in 2-out split freeze t+1 vs t+2 reverse/face on two-axis x-probes
+AUDIT_INPUT_PATHS:
+  docs/TWO_AXIS_OPPOSITE_XPROBE_ONE_TWO_SPLIT_TPLUS1_TPLUS2_COMPOSITION_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: 1-in 2-out split at t+1 versus t+2 on the four x-probes of the two-axis opposite seed, reverse/face at each cut, and composition, are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/TWO_AXIS_OPPOSITE_XPROBE_ONE_TWO_SPLIT_TPLUS1_TPLUS2_COMPOSITION_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-x-probes-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: axis-identity
+PASS: cover-identity
+PASS: both-hold-identity
+PASS: split-identity
+PASS: composition-identity
+A t=2 M(t+1)={−e_3} O(t+1)={+e_1} split(t+1)=fail M(t+2)={−e_3} O(t+2)={+e_1} split(t+2)=fail
+B t=1 M(t+1)={+e_1} O(t+1)={+e_2, +e_3, −e_3} split(t+1)=hold M(t+2)={+e_1} O(t+2)={+e_2, +e_3, −e_3} split(t+2)=hold
+C t=3 M(t+1)={+e_1} O(t+1)={−e_2, +e_3, −e_3} split(t+1)=hold M(t+2)={+e_1} O(t+2)={−e_2, +e_3, −e_3} split(t+2)=hold
+D t=2 M(t+1)={−e_3} O(t+1)={+e_1, −e_1} split(t+1)=fail M(t+2)={−e_3} O(t+2)={+e_1, −e_1} split(t+2)=fail
+split reverse t+1=fail t+2=fail
+split face t+1=fail t+2=fail
+composition=HOLD
+leftover-t-vs-tplus1-composition=fail
+M-composition leftover=HOLD
+O-composition leftover=HOLD
+cover-composition leftover=HOLD
+bit-composition leftover=HOLD
+per_element: each unsigned lattice axis among {e_1,e_2,e_3} occupied by M or by O at a probe's t+1 and t+2
+per_site: scored only at x-probes A,B,C,D on Euclidean B_3(0); no other sites
+per_mode: no spectral or mode calculation is executed on this finite host
+per_block: four split bits at two cuts, reverse/face at each cut, composition
+lattice_wide: checked and not executed — no lattice-wide lettering rule is claimed
+PASS: perp-step-incoming-lock
+PASS: undefined-if-unformed
+PASS: incoming-set-seed-singleton
+PASS: theorem1-formation-ticks  ({'A': 2, 'B': 1, 'C': 3, 'D': 2})
+PASS: theorem1-M-at-tau1-and-tau2  ({'A': '{−e_3}', 'B': '{+e_1}', 'C': '{+e_1}', 'D': '{−e_3}'})
+PASS: theorem1-O-at-tau1  ({'A': '{+e_1}', 'B': '{+e_2, +e_3, −e_3}', 'C': '{−e_2, +e_3, −e_3}', 'D': '{+e_1, −e_1}'})
+PASS: theorem1-O-at-tau2  ({'A': '{+e_1}', 'B': '{+e_2, +e_3, −e_3}', 'C': '{−e_2, +e_3, −e_3}', 'D': '{+e_1, −e_1}'})
+PASS: theorem1-split-at-tau1  ({'A': 'fail', 'B': 'hold', 'C': 'hold', 'D': 'fail'})
+PASS: theorem1-split-at-tau2  ({'A': 'fail', 'B': 'hold', 'C': 'hold', 'D': 'fail'})
+PASS: theorem1-new-records-meet-6nn  (({'A': ((2, 0, 0),), 'B': ((1, 2, 1), (1, 1, 2), (1, 1, 0)), 'C': ((2, -1, 0), (2, 0, 1), (2, 0, -1)), 'D': ((2, 1, 0),)}, {'A': (), 'B': (), 'C': (), 'D': ()}))
+PASS: theorem1-A-is-not-seed
+PASS: theorem1-no-new-6nn-at-tplus2
+PASS: theorem1-mixed-O-stays-a-set
+PASS: theorem2-reverse-at-tau1-and-tau2  (('fail', 'fail'))
+PASS: theorem2-face-at-tau1-and-tau2  (('fail', 'fail'))
+PASS: theorem3-composition-hold  (HOLD)
+PASS: composition-is-split-equality-not-t-or-bits-object
+PASS: split-equals-cover-on-this-member
+PASS: O-is-not-M
+PASS: not-y-probes-or-z-probes  (({'A': 'hold', 'B': 'hold', 'C': 'hold', 'D': 'fail'}, {'A': 'hold', 'B': 'hold', 'C': 'hold', 'D': 'fail'}, 'hold', 'hold', 'fail', 'HOLD'))
+PASS: not-nsopp-one-axis-x-probes  ({'A': 'fail', 'B': 'hold', 'C': 'hold', 'D': 'fail'})
+PASS: not-same-lock-two-axis
+PASS: not-nnseed-or-y-axis-e2
+PASS: two-axis-opposite-seed
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: uniqueness-not-required
+PASS: mutation-leftover-empty-at-B
+PASS: mutation-exist-opposite-of-M-fails
+PASS: mutation-sum-is-not-axis
+PASS: note-claim-scope
+PASS: note-reports-ticks-M-O-split
+PASS: note-reports-new-neighbors
+PASS: note-reports-split-reverse-face
+PASS: note-reports-composition-hold
+PASS: note-displayed-not-adopted
+PASS: note-not-leftover-or-exist-opposite
+PASS: note-not-star-or-occupancy
+PASS: note-no-global-T
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+PASS: source-letter-from-split-composition
+PASS: split-fail-fail-at-both-cuts-composition-hold
+TOTAL: PASS=63 FAIL=0
+
+----- stderr -----
+

@@ -1,19 +1,18 @@
 # No-Go Ledger
 
-No negative result is preregistered.  The following materially different routes
-are live and must remain separate:
+The landing theorem note contains the full N1--N8 packet.  Its status is
+`FAIL` for any broad no-go and the campaign is demoted to
+`partial-attempt-with-honest-residual`.
 
-1. canonical Block-128 restriction;
-2. native 4D AP reflection/history construction;
-3. action-derived boundary state;
-4. connected-Gaussian polar state;
-5. fixed grade-three instrument with paired reverse momentum;
-6. periodic massless common-carrier DK fallback; and
-7. a different local write dynamics if the projector isometry is physically
-   inconsistent rather than merely unselected.
+The closed statement is narrow: for the frozen standard four-slice AP carrier,
+H1 and H2 have a `1/4` polar-scalar mismatch at both endpoints, so their only
+action intertwiner is zero.  This does not exclude twisted time,
+continuous-time histories, per-stratum carriers, or a new finite temporal
+complex.
 
-Before any negative claim, execute N1--N8: enumerate these routes, audit wall
-independence, scan hidden state/phase/carrier choices, match prior residuals,
-police Record and probability rhetoric, retain partial closures, steelman the
-survivor, and compare cross-cycle echoes.  Search exhaustion, a dark state, or
-one nonpositive history is not an axiom no-go.
+Other exact boundaries remain typed separately.  The Block-128 plain port has
+a live flat degree-phase repair.  The reduced AP raw cut is indefinite but its
+displayed reflection-even doubled Schur port is positive.  Ordinary source reality
+fails, while both graded-outcome transport and a Hermitianized response are
+exact downstream convention routes.  The grade-three trace response is not a
+realized source, and the write is not a Record.  No axiom issue is identified.

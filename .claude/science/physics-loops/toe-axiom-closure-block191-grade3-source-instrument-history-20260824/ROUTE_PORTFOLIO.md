@@ -1,12 +1,17 @@
 # Route Portfolio
 
-| rank | route | leverage | cap | disposition |
+| rank | route | TOE leverage | cost | disposition |
 |---:|---|---:|---:|---|
-| 1 | Block-128 action/history restriction | maximal kill value | one canonical map | active first |
-| 2 | native 4D reflected AP action and Schur state | maximal | one construction | fallback if route 1 fails |
-| 3 | fixed grade-three context plus action-native state/source | maximal | two states | active after carrier gate |
-| 4 | same-object positive history plus adjacent write | maximal | one local isometry | conjunction target |
-| 5 | first nonlinear Ward contact | high later | one coefficient | only after a source/write survivor |
-| 6 | PR #7351 window characterization | medium only if ported | none now | defer |
-| 7 | full-BZ widening or more even marks | low now | none | stop |
-| 8 | axiom edit | premature | none | forbidden absent selector conflict or route-complete no-go |
+| 1 | full-16-form temporal carrier + incoming/outgoing action intertwiner | highest | medium/high | first empty arrow; tournament twisted, continuous, per-stratum, and finite-complex families |
+| 2 | conditioned TT response insertion into reflected Gram | highest | medium | immediate on a route-1 survivor; turns separate response/history into one object |
+| 3 | graded-outcome versus Hermitianized-source adjoint tournament | highest after 1 | low/medium | both exact separately; physical convention unresolved and cannot repair carrier |
+| 4 | source-conditioned write plus nonidentity continuation | high after 1--3 | medium/high | current write is unconditioned and not a Record |
+| 5 | curved Block-128 port with `(-i)^degree` phase | high parallel control | medium | flat rescue exact, curved transport open |
+| 6 | first nonlinear Ward/connection coefficient | high later | high | only on a composed source/history survivor |
+| 7 | more momenta, marks, or generic positivity windows | low | high | stop |
+| 8 | immediate axiom edit | premature | high | forbidden by current evidence |
+
+Block 191 changes the route ranking but not the TOE score.  A common-action
+source/history/write skeleton does not yet exist.  The exact `1/4` held-out
+temporal residual makes carrier construction the first and highest-leverage
+obligation; downstream adjoint and Record work must wait for that survivor.

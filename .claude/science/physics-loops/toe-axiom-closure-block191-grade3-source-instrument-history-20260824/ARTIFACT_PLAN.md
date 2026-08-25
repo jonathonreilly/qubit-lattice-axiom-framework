@@ -16,3 +16,11 @@ Every load-bearing claim needs an exact hostile mutation.  Package only a full
 conjunction survivor, a first-empty-interface boundary with named live routes,
 or a correction that changes the portfolio.  Generate the canonical cache and
 citation graph.  Do not run review-loop or apply an audit verdict.
+
+Executed as a corrected first-empty-interface boundary: the baseline passes
+7/7, and all 17 declared claim-layer sensitivity mutations fail exactly their
+mapped family.  They test comparison/scope wiring, not independent scientific
+models.  The load-bearing algebra was separately rederived by independent
+carrier, history, source, and composition checks.  The exact held-out temporal
+residual, two downstream adjoint routes, and N1--N8 demotion are preserved in
+the landing note and runner.

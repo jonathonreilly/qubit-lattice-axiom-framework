@@ -23,3 +23,14 @@ retained TOE theory.
 
 No TOE percentage movement, obligation retirement, or axiom amendment is
 preregistered.
+
+## Executed Disposition
+
+The reduced native history, grade-three PVM, candidate weights, conditioned
+Ward/recoil, discovery and held-out TT response ranks, frame covariance, and
+unconditioned write each survive separately.  The required conjunction fails
+earlier: the `L=4` AP temporal contribution is `1/2`, while both held-outs
+contribute `1/4`, so no nonzero held-out action intertwiner exists.  Equality
+of the normalized `I/16` states does not join their parent actions.  Ordinary,
+graded-outcome, and Hermitianized reverse tests are downstream classifications.
+No physical source, permanent Record, TOE movement, or axiom amendment results.

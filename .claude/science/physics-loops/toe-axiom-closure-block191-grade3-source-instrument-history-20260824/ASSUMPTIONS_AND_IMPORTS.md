@@ -10,10 +10,16 @@
   It is neither merged nor treated as authority.
 - The grade-three pair and its discovery-set rank are disclosed scouting
   inputs.  All scientific credit in this block must come from the frozen
-  physical contraction, held-out tests, history, or write.
-- `Tr(rho E)` is tested as the weight rule of this candidate attached law; its
+  candidate contraction, held-out tests, history, or write.
+- `Tr(rho E)` is tested as a candidate weight rule; its
   success would not derive the Born rule from the minimal axioms.
 - A fitted similarity, inverse-momentum projector, response-selected phase,
   pooled incompatible contexts, or third state is forbidden.
 - Exact symbolic/rational/algebraic identities carry the claim.  Floating
   numerics may scout only and cannot certify positivity, rank, or a wall.
+
+Executed correction: the reduced AP boundary state and Block-190 polar state
+both normalize to `I/16`, but their H1/H2 parent-action polar scalars differ by
+`1/4`.  State equality is not imported as an action/history intertwiner.  The
+trace response is not typed as a realized source, and the unconditioned write
+is not typed as a Record.

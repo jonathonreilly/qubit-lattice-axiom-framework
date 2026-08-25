@@ -18,3 +18,18 @@ The panel's hard stop is binding: at most one Block-128 restriction, one native
 bounded campaign failure, not an axiom issue.  Axiom/owner-selection becomes
 eligible only if two complete admissible chains make Record-distinguishable
 predictions without a retained selector, or N1--N8 closes every named route.
+
+## Post-Execution Return
+
+The panel's initial source and history calculations were individually useful,
+but the adversarial composition panel rejected their conjunction.  The
+four-slice AP history and H1/H2 source fibers differ by an exact `1/4` polar
+scalar at both endpoints; equal normalized states had hidden the mismatch.
+The reduced history also lacks an executed full-16-form intertwiner, and the
+write is not source-conditioned.
+
+The corrected consensus ranks a common temporal carrier and explicit
+source-to-Gram insertion first.  Form-parity/outcome transport and the
+Hermitianized derivative response should be a later two-route tournament.
+Nonidentity Record evolution, nonlinear gravity, generic widening, and axiom
+edits are downstream until the object graph has that first arrow.

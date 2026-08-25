@@ -1,6 +1,6 @@
 {
- "edge_count": 16145,
- "node_count": 5619,
+ "edge_count": 16148,
+ "node_count": 5620,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -425,6 +425,10 @@
   "admissibility_d4_dirac_kahler_common_action_ward_tt_record_mark_boundary_bounded_theorem_note_2026-08-24": {
    "deps_hash": "25d2b6b6325f",
    "out_degree": 6
+  },
+  "admissibility_d4_grade3_source_instrument_history_write_boundary_bounded_theorem_note_2026-08-24": {
+   "deps_hash": "58496be7c03c",
+   "out_degree": 3
   },
   "admissibility_dirac_kahler_adm_seam_two_history_gram_bounded_theorem_note_2026-08-15": {
    "deps_hash": "5d167fe1c690",

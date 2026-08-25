@@ -84,3 +84,31 @@ Require `W^dagger W=I`, orthogonal pointer correlations, positivity of the
 written history by congruence from the same action-derived Gram, and pointer
 invariance under the next-event identity dynamics.  This is a candidate local
 attached law, not a derivation of why nature selects it.
+
+## Executed Boundary
+
+The plain Block-128 action port fails at the literal Wick/degree phase.  The
+reduced AP even doubled Schur port is positive for all `m>0,r>=0`, but its full
+16-form lift/intertwiner is unexecuted and the positive parity is unselected.
+The AP temporal spectrum matches the discovery points and differs from H1/H2
+at both endpoints by exactly `1/4`; equality of the normalized `I/16` states
+does not make them one action.
+
+Separately, the frozen grade-three PVM passes positivity, candidate weights,
+Ward/recoil, rank-two discovery and held-out response, and frame covariance.
+Ordinary same-label reverse reality fails.  Form-parity/outcome transport and
+the Hermitianized derivative response are distinct exact unadmitted routes.
+The write passes unconditioned identity-step algebra but is not a
+source-conditioned history or permanent Record.
+
+## Corrected Approach-Family Registry
+
+| family | object/formulation | mechanism/invariant | terminal obligation | strength | status | reopen condition |
+|---|---|---|---|---|---|---|
+| Block-128 port | literal curved chart | Wick/degree action intertwiner | common action/history/vertex port | weaker | blocked-local | curved `(-i)^degree` transport |
+| standard `L=4` AP | four-slice temporal history | polar scalar | H1/H2 action intertwiner | target-equivalent for this carrier | retired for frozen held-outs | different temporal carrier |
+| reduced AP positivity | two-component Clifford Schur block | reflection parity and scalar Gram | selected full-16 history | weaker | provisional | explicit full-fiber intertwiner and parity selection |
+| grade-three response | fixed PVM trace functional | TT determinant and Ward/recoil | realized reverse-real source | weaker | provisional | common carrier plus adjoint selection |
+| graded adjoint | form parity and outcome relabel | exact reverse conjugation | physical event identification | unknown/comparable | provisional | common-carrier survivor |
+| Hermitianized adjoint | `X=-i(V-mH)` and phased recoil | ordinary reverse conjugation | physical source convention | unknown/comparable | provisional | common-carrier survivor |
+| write | joint-projector isometry | positive congruence | source-conditioned permanent Record | weaker | blocked-local | actual reflected Gram as input |

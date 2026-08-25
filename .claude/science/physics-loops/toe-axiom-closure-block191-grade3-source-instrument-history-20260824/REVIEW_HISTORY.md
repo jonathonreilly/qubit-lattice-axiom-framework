@@ -17,4 +17,33 @@
 - The wedge sign was then fixed by matching Block 128's landed `EX/ET`
   creation matrices to the restricted exterior creation operators, still
   before any action, reflection, Hodge, or Ward target residual was evaluated.
-- No review-loop or audit verdict has been run.
+- Fresh packaging fetch retained `origin/main` at
+  `c79384cb8ffa27fcb53cb89c53a84a708442eaad`.
+- PR #7354 remained OPEN and MERGEABLE at the exact Block-190 parent.  PRs
+  #7349--#7353 also remained open and mergeable; none was imported or edited.
+- Independent carrier reduction established the exact Block-128 phase
+  mismatch and the flat `(-i)^degree` rescue without changing the frozen gate.
+- Independent history reduction proved a positive reflection-even doubled Schur
+  scalar for every `m>0,r>=0`, while preserving raw-cut indefiniteness.
+- Independent source calculation confirmed the four rank-four projectors,
+  uniform weights, five exact TT determinants, conditioned Ward/recoil,
+  transported-frame covariance, ordinary sign failure, and exact graded
+  outcome-transport escape.
+- A first packaging baseline returned `PASS=7 FAIL=0`, but an independent
+  composition audit rejected its framing before commit.  It found that the
+  reduced AP history fixes `sin^2(k_t)=1/2` while H1/H2 use `1/4`; incoming and
+  outgoing polar scalars differ by exactly `1/4`, so no nonzero held-out
+  action intertwiner exists.
+- The same audit found no executed full-16-form history intertwiner, no
+  conditioned response insertion into the reflected Gram, and no
+  source-conditioned written history.  Equal normalized `I/16` densities had
+  hidden these missing arrows.  All common-action/physical-source framing was
+  removed.
+- A source-convention recheck exhibited a second exact downstream route:
+  `X=-i(V-mH)` has ordinary same-label reverse reality with coherently rephased
+  recoil.  It remains distinct from form-parity/outcome transport and neither
+  repairs the carrier.
+- The corrected baseline returns `PASS=7 FAIL=0`.  The 17 declared mutations
+  are explicitly claim-layer sensitivity checks; they each return
+  `PASS=6 FAIL=1` at their mapped family and are not presented as independent
+  model mutations.  No review-loop or audit verdict was run.

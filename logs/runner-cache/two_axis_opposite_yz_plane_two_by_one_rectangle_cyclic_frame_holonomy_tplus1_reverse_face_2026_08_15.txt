@@ -4,7 +4,7 @@ runner_sha256: b172afb02f5e2daac47295f3a43e986b8d3a9bf8b928efda2d438efd6acaa5a7
 input_fingerprint_sha256: e87a40b9bdb8c0ab1e70e1335a3c25a0dbf56ac6de4a972bdaf93b0d02295716
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 cyclic-frame holonomy around the 2-by-1 yz rectangle reverse/face at t+1 on two-axis opposite seed

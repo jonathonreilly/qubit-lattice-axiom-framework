@@ -1,0 +1,85 @@
+===== runner cache v1 =====
+runner: scripts/two_axis_opposite_xprobe_yz_plane_neighbor_read_cyclic_frame_holonomy_tplus1_reverse_face_2026_08_15.py
+runner_sha256: 9254bf073fa5b5ecefd71cafcd5a2ff6e99c26e9bf7a1f2b29d71964194ce381
+input_fingerprint_sha256: ee36ede7d4cff9f093d611394917f33f1fbfd5d7b0b3ed6c69ce78f19c7633f3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.15
+status: ok
+----- stdout -----
+neighbor-read of yz-plane cyclic-frame holonomy reverse/face at t+1 on two-axis opposite x-probes
+AUDIT_INPUT_PATHS:
+  docs/TWO_AXIS_OPPOSITE_XPROBE_YZ_PLANE_NEIGHBOR_READ_CYCLIC_FRAME_HOLONOMY_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Neighbor-read of yz-plane cyclic-frame holonomy at t+1 on the four x-probes of the two-axis opposite seed, and reverse/face from that, are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/TWO_AXIS_OPPOSITE_XPROBE_YZ_PLANE_NEIGHBOR_READ_CYCLIC_FRAME_HOLONOMY_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: x-probes-as-nm2axx-not-y-or-z
+PASS: yz-square-at-probe-is-sw-corner-in-host-or-fail
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: orient-identity
+PASS: sending-identity
+A (1, 0, 0) t=2 M={−e_3} O={+e_1} split=fail F=fail Orient=fail S=((1, 0, 0), (1, 1, 0), (1, 1, 1), (1, 0, 1)) holonomy=fail nread=fail
+B (1, 1, 1) t=1 M={+e_1} O={+e_2, +e_3, −e_3} split=hold F=(+e_1, +e_2, −e_3) Orient=−1 S=((1, 1, 1), (1, 2, 1), (1, 2, 2), (1, 1, 2)) holonomy=fail nread=fail
+C (2, 0, 0) t=3 M={+e_1} O={−e_2, +e_3, −e_3} split=hold F=(+e_1, −e_2, −e_3) Orient=+1 S=((2, 0, 0), (2, 1, 0), (2, 1, 1), (2, 0, 1)) holonomy=fail nread=fail
+D (1, 1, 0) t=2 M={−e_3} O={+e_1, −e_1} split=fail F=fail Orient=fail S=((1, 1, 0), (1, 2, 0), (1, 2, 1), (1, 1, 1)) holonomy=fail nread=fail
+holonomy reverse=fail face=fail
+neighbor-read reverse=fail face=fail
+transport reverse=fail face=fail
+orig yz-square neighbor-read reverse=hold face=fail
+per_element: cyclic frame F and neighbor-read of four-edge holonomy of S(q) at t+1
+per_site: scored only at x-probes A,B,C,D on Euclidean B_3(0); no other sites
+per_mode: no spectral or mode calculation is executed on this finite host
+per_block: S(q), edge sendings, holonomy, neighbor-read, reverse/face
+lattice_wide: checked and not executed — no lattice-wide lettering rule is claimed
+PASS: perp-step-incoming-lock
+PASS: undefined-if-unformed
+PASS: theorem1-formation-ticks  ({'A': 2, 'B': 1, 'C': 3, 'D': 2})
+PASS: theorem1-M-O-split
+PASS: theorem1-Orient-and-F
+PASS: theorem1-squares-holonomy-neighbor-read  (nread={'A': 'fail', 'B': 'fail', 'C': 'fail', 'D': 'fail'})
+PASS: theorem2-reverse-neighbor-read-fail
+PASS: theorem3-face-neighbor-read-fail
+PASS: not-leftover-of-nm2holyzrd-yz-square
+PASS: not-leftover-of-y-probe-or-z-probe-or-transport
+PASS: cover-and-split-do-not-score-handedness
+PASS: split-fail-is-orient-fail-not-undefined
+PASS: empty-Oi-is-orient-fail-not-undefined
+PASS: theorem1-M-frozen-from-t
+PASS: theorem1-new-records-meet-6nn  ({'A': ((2, 0, 0),), 'B': ((1, 2, 1), (1, 1, 2), (1, 1, 0)), 'C': ((2, -1, 0), (2, 0, 1), (2, 0, -1)), 'D': ((2, 1, 0),)})
+PASS: theorem1-mixed-O-cyclic-not-unique
+PASS: not-leftover-of-1-axis-or-same-lock-or-live-three-axis
+PASS: not-leftover-empty-or-one-sided
+PASS: O-is-not-M
+PASS: second-pair-is-seed-not-formed-child
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: note-claim-scope
+PASS: note-reports-ticks-squares-holonomy-nread
+PASS: note-reports-P-and-split-on-squares
+PASS: note-displayed-not-adopted
+PASS: note-not-cover-or-split-or-leftovers
+PASS: note-not-one-sided-or-leftover-empty
+PASS: note-not-two-tick-lock-count-clock
+PASS: note-not-mixed-7188-fail-fail
+PASS: note-no-global-T
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+PASS: holonomy-not-transport-or-orig-square-or-y-probe
+TOTAL: PASS=52 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,109 @@
+===== runner cache v1 =====
+runner: scripts/two_axis_opposite_zprobe_simultaneous_incoming_outgoing_tplus2_tplus3_composition_reverse_face_2026_08_15.py
+runner_sha256: 879f82a8e552a50b06b819a5710be6fc3d9de7630cd8eb05c96d8df231928465
+input_fingerprint_sha256: b205d224171e3798321bf6f0314351f6e02c7bc267224af9077b34a527a519a3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+two-axis opposite z-probe simultaneous M and O freeze t+2 versus t+3
+AUDIT_INPUT_PATHS:
+  docs/TWO_AXIS_OPPOSITE_ZPROBE_SIMULTANEOUS_INCOMING_OUTGOING_TPLUS2_TPLUS3_COMPOSITION_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Simultaneous M and O at t+2 versus t+3 on the four z-probes of the two-axis opposite seed, reverse/face at each cut, and composition, are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/TWO_AXIS_OPPOSITE_ZPROBE_SIMULTANEOUS_INCOMING_OUTGOING_TPLUS2_TPLUS3_COMPOSITION_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-z-probes-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: intersection-identity
+PASS: simultaneous-identity
+PASS: pair-sim-identity
+PASS: composition-identity
+PASS: leftover-o-only-is-not-joint-when-M-moves
+A t=0 M(tau1)={+e_2} O(tau1)={+e_1, −e_1, +e_3} sim(tau1)=hold M(tau2)={+e_2} O(tau2)={+e_1, −e_1, +e_3} sim(tau2)=hold
+B t=1 M(tau1)={+e_1} O(tau1)={+e_2, +e_3, −e_3} sim(tau1)=hold M(tau2)={+e_1} O(tau2)={+e_2, +e_3, −e_3} sim(tau2)=hold
+C t=1 M(tau1)={+e_3} O(tau1)={+e_1, −e_1, −e_2} sim(tau1)=hold M(tau2)={+e_3} O(tau2)={+e_1, −e_1, −e_2} sim(tau2)=hold
+D t=1 M(tau1)={+e_1} O(tau1)={−e_2, +e_3, −e_3} sim(tau1)=hold M(tau2)={+e_1} O(tau2)={−e_2, +e_3, −e_3} sim(tau2)=hold
+reverse tau1=hold tau2=hold
+face tau1=hold tau2=hold
+composition=hold
+per_element: each signed lock among {±e_1,±e_2,±e_3} in M or in O at a probe's t+2 and t+3
+per_site: scored only at z-probes A,B,C,D on Euclidean B_3(0); no other sites
+per_mode: no spectral or mode calculation is executed on this finite host
+per_block: four sim reports at t+2 and t+3, reverse/face at each cut, composition of M and O
+lattice_wide: checked and not executed — no lattice-wide lettering rule is claimed
+PASS: perp-step-incoming-lock
+PASS: undefined-if-unformed
+PASS: incoming-set-seed-singleton
+PASS: theorem1-formation-ticks  ({'A': 0, 'B': 1, 'C': 1, 'D': 1})
+PASS: theorem1-M-at-tau1  ({'A': '{+e_2}', 'B': '{+e_1}', 'C': '{+e_3}', 'D': '{+e_1}'})
+PASS: theorem1-O-at-tau1  ({'A': '{+e_1, −e_1, +e_3}', 'B': '{+e_2, +e_3, −e_3}', 'C': '{+e_1, −e_1, −e_2}', 'D': '{−e_2, +e_3, −e_3}'})
+PASS: theorem1-M-at-tau2  ({'A': '{+e_2}', 'B': '{+e_1}', 'C': '{+e_3}', 'D': '{+e_1}'})
+PASS: theorem1-O-at-tau2  ({'A': '{+e_1, −e_1, +e_3}', 'B': '{+e_2, +e_3, −e_3}', 'C': '{+e_1, −e_1, −e_2}', 'D': '{−e_2, +e_3, −e_3}'})
+PASS: theorem1-sim-at-tau1-and-tau2  ({'A': ('hold', 'hold'), 'B': ('hold', 'hold'), 'C': ('hold', 'hold'), 'D': ('hold', 'hold')})
+PASS: theorem1-intersection-empty  ({'A': '{}', 'B': '{}', 'C': '{}', 'D': '{}'})
+PASS: do-not-score-tau-t
+PASS: theorem1-M-and-O-freeze
+PASS: theorem1-new-records-meet-6nn  ({'A': (((0, -1, 1),), ()), 'B': ((), ((2, 1, 1),)), 'C': ((), ()), 'D': ((), ((2, 0, 1),))})
+PASS: theorem1-new-tplus2-neighbor-does-not-enter-O
+PASS: theorem1-new-tplus3-neighbor-does-not-enter-O
+PASS: theorem1-mixed-stays-a-set
+PASS: theorem1-A-is-seed
+PASS: theorem2-reverse-tau1-and-tau2-hold  (hold/hold)
+PASS: theorem2-face-tau1-and-tau2-hold  (hold/hold)
+PASS: theorem3-composition-hold  (hold)
+PASS: not-leftover-empty-fail
+PASS: mutation-leftover-of-M-alone-differs
+PASS: mutation-leftover-of-O-alone-differs
+PASS: mutation-exist-opposite-differs
+PASS: discriminator-sim-hold-vs-leftover-empty-and-exist-opposite
+PASS: mutation-unique-letter-undefined-at-mixed-O
+PASS: mutation-sum-cancels-mixed
+PASS: O-is-not-M
+PASS: not-x-probes-or-y-probes-or-perp
+PASS: not-nsopp-leftover-second-pair-is-seed
+PASS: not-nnlock-named-sign
+PASS: outgoing-locks-are-nn-steps
+PASS: uniqueness-not-required
+PASS: two-axis-opposite-lock-seed
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: empty-O-is-empty-not-undefined
+PASS: mutation-nmot2opp-tau-t-composition-fail
+PASS: not-leftover-nm2simt2z-tplus1-versus-tplus2
+PASS: mutation-bit-composition-leftover-is-not-M-and-O-sets
+PASS: mutation-neighbor-lock-leftover-differs
+PASS: note-claim-scope
+PASS: note-reports-ticks-M-O-sim
+PASS: note-reports-new-neighbors
+PASS: note-reports-reverse-face-composition
+PASS: note-displayed-not-adopted
+PASS: note-not-leftover-empty-fail
+PASS: note-not-o-freeze-alone-or-sim-tplus1-alone
+PASS: note-not-nmot2opp-t-versus-tplus1
+PASS: note-not-m-two-tick-or-exist-opposite
+PASS: note-does-not-use-occupancy
+PASS: note-no-global-T
+PASS: note-not-two-tick-lock-count-clock
+PASS: note-not-nsopp-leftover-child
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+PASS: sim-hold-not-leftover-empty-fail
+TOTAL: PASS=77 FAIL=0
+
+----- stderr -----
+

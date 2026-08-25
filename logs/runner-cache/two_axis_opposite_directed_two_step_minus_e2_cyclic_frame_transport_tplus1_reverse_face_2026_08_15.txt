@@ -1,0 +1,64 @@
+===== runner cache v1 =====
+runner: scripts/two_axis_opposite_directed_two_step_minus_e2_cyclic_frame_transport_tplus1_reverse_face_2026_08_15.py
+runner_sha256: c7b5c6690ed8c8880dea36a3a9db9f54a78e0c94bcf47aa50a6ab365c68c2045
+input_fingerprint_sha256: b0fc47685f5573ea9c55ecbb21687e9b95b78d91e8d132f2dff731e90b9b6663
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+directed 2-step cyclic-frame transport along -e2 reverse/face at t+1 on two-axis opposite seed
+AUDIT_INPUT_PATHS:
+  docs/TWO_AXIS_OPPOSITE_DIRECTED_TWO_STEP_MINUS_E2_CYCLIC_FRAME_TRANSPORT_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Directed 2-step cyclic-frame transport along −e2 at t+1 on the two-axis opposite seed, and reverse/face from that, are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/TWO_AXIS_OPPOSITE_DIRECTED_TWO_STEP_MINUS_E2_CYCLIC_FRAME_TRANSPORT_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-seeds-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: sending-identity
+A q=(0, 0, 0) t=0 F=(+e_1, −e_2, −e_3) Orient=+1 mid=(0, -1, 0) end=(0, -2, 0) edge1=hold P1=[0 0 -1; 1 0 0; 0 1 0] edge2=fail P2=fail two_step=fail
+B q=(0, 1, 0) t=0 F=(−e_1, +e_2, −e_3) Orient=+1 mid=(0, 0, 0) end=(0, -1, 0) edge1=hold P1=[-1 0 0; 0 -1 0; 0 0 1] edge2=hold P2=[0 0 -1; 1 0 0; 0 1 0] two_step=hold
+C q=(0, 0, 1) t=0 F=(+e_2, +e_3, −e_1) Orient=−1 mid=(0, -1, 1) end=(0, -2, 1) edge1=fail P1=fail edge2=fail P2=fail two_step=fail
+D q=(0, 1, 1) t=0 F=(−e_2, +e_3, −e_1) Orient=+1 mid=(0, 0, 1) end=(0, -1, 1) edge1=hold P1=[-1 0 0; 0 1 0; 0 0 1] edge2=fail P2=fail two_step=fail
+two_step reverse=fail face=fail
+plus_e1 reverse=fail face=fail
+per_element: directed 2-step of F=(m,o_next,o_prev) along -e_2 with signed-permutation P on each named edge at t+1
+per_site: scored at the four seeds of the two-axis opposite seed on Euclidean B_3(0)
+per_mode: no spectral or mode calculation is executed on this finite host
+per_block: four 2-step reports, reverse/face from 2-step at paired seeds
+lattice_wide: checked and not executed — no lattice-wide lettering rule is claimed
+PASS: perp-step-incoming-lock
+PASS: outside-host-is-fail-not-undefined
+PASS: theorem1-formation-ticks  ({'A': 0, 'B': 0, 'C': 0, 'D': 0})
+PASS: theorem1-F-Orient  ({'A': ('(+e_1, −e_2, −e_3)', '+1'), 'B': ('(−e_1, +e_2, −e_3)', '+1'), 'C': ('(+e_2, +e_3, −e_1)', '−1'), 'D': ('(−e_2, +e_3, −e_1)', '+1')})
+PASS: theorem1-named-edges-and-P  ({'A': ('hold', 'fail'), 'B': ('hold', 'hold'), 'C': ('fail', 'fail'), 'D': ('hold', 'fail')})
+PASS: theorem1-two-step-bits  ({'A': 'fail', 'B': 'hold', 'C': 'fail', 'D': 'fail'})
+PASS: theorem2-reverse-fail
+PASS: theorem3-face-fail
+PASS: not-a-4-cycle
+PASS: not-leftover-of-plus-e1
+PASS: second-pair-is-seed-not-formed-child
+PASS: note-reports-ticks-frames-edges
+PASS: note-reports-reverse-face
+PASS: note-displayed-not-adopted
+PASS: note-no-global-T
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+TOTAL: PASS=33 FAIL=0
+
+----- stderr -----
+

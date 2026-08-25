@@ -47,6 +47,17 @@ only after the discovery conjunction passes, and they must pass without refit.
 
 A positive result closes detector selection plus one-step binary realization;
 it still does not close formation, permanence, physical time, Born forcing,
-or an end-to-end TOE lane.  A negative result is bounded to this degree-two
-timelike/spatial detector family and must preserve the Riesz/intertwiner and
-other physical detector families under N1--N8.
+or an end-to-end TOE lane.  Any failed gate is only an observed result for this
+degree-two timelike/spatial detector family.  A broader negative requires the
+No-Go Discipline gate; here that gate fails because full-history,
+Riesz/intertwiner, and other physical detector routes remain live.
+
+## Executed Disposition
+
+The classifier has exact rank two and nullity one, selecting
+`J=i Gamma_t Gamma_3^+` modulo pointer-label sign.  The complete eight-effect
+PVM and nonidentity M2 controlled write pass exactly.  The fixed phase-zero
+response is nevertheless rank zero at D1 and rank one at H1, so the discovery
+conjunction fails, held-outs stay sealed, and no Record tail is opened.  The
+result is a positive bounded classification/dilation theorem plus one measured
+rank failure, not a no-go.

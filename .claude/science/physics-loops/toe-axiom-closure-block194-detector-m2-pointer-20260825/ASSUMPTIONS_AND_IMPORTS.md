@@ -17,3 +17,10 @@ family and does not create a cross-stack dependency.
 Every response uses the literal Block-193 forward/actual-reverse source at the
 fixed phase-zero contact.  D2/D3/H2/X1 remain unread until both discovery ranks
 and every dilation identity pass.
+
+Execution confirmed that the detector axis is selected solely by the frozen
+commutator constraints, before any response contraction.  Both the literal D4
+coordinate reflection and the distinct Block-192 OS fiber reflection were
+checked with their correct label actions.  No Hodge-volume profile, lapse,
+unitary time step, cadence, formation rate, source phase, or alternate detector
+was imported after the discovery failure.

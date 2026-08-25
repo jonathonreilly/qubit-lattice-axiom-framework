@@ -1,17 +1,16 @@
 # Opportunity Queue
 
-1. Solve the exact real commutator map from `n in R3` to
-   `([J(n),O1],[J(n),O2])`; require one ray before response.
-2. Verify the normalized ray's Hermiticity, involution, temporal-reflection
-   label flip, and proper-cubic covariance with the transformed event context.
-3. Construct all eight refined effects and test all 28 pairwise products,
-   ranks, completeness, coarsenings, and baseline weights.
-4. Construct `Q_+/-` and `W`, then prove unitarity, orthogonal codes,
-   nonidentity flip, faithful joint probabilities, and static readability.
-5. Contract the frozen Block-193 tangents at D1/H1 and require real normalized
-   TT rank two at both points.  Stop on either failure.
-6. Only after a discovery pass, open D2/D3/H2/X1 without refit.
-7. Only after a full response pass, attach the smallest honest formation and
-   permanence law; otherwise rerank against the Riesz/intertwiner route.
-8. Recheck current PRs and convene the five-role panel at the next genuine
-   route fork or two-hour checkpoint.
+1. Preregister one complete-L24 observability campaign using the frozen axis-3
+   detector, M2 dilation, source, event ports, and discovery/held-out split.
+2. Before any history response, derive from the existing Euclidean L24 action
+   a normalized CP sequential/prefix law.  Stop if this requires a supplied
+   unitary time step, cadence, or outcome weighting.
+3. If the prefix law exists, prove prefix normalization and that later writes
+   leave every earlier pointer cell orthogonal and unchanged.
+4. Evaluate the full fixed L24 period, retaining every event/pointer label;
+   require real two-column observability rank two at D1 and H1.
+5. Do not scan horizon, cadence, histories, connector, phase, or weights.
+6. Open held-outs only after the full discovery conjunction passes.
+7. If the prefix-law or rank gate fails, pivot immediately to the finite
+   Regge-D4-L24 intertwiner feasibility gate; do not run another detector scan.
+8. Keep formation/permanence and any axiom memo downstream of these tests.

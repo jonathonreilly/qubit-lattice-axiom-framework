@@ -1,6 +1,8 @@
 # Handoff
 
-Block 194 is preregistered and target execution has not begun.
+Block 194 is executed.  It derives the unique detector ray
+`J=i Gamma_t Gamma_3^+`, a complete eight-projector event refinement, and an
+exact faithful nonidentity M2 pointer dilation.
 
 Parent: Block 193 PR #7698 at `cef8b0407a`.  It supplies the literal L24
 source propagation, exact D1 all-order diagonal uniformity, complete coherent
@@ -9,17 +11,17 @@ internal detector orientation.  It does not supply a selected rank-two event
 law, physical detector coupling, autonomous formation, permanent Record,
 Born derivation, axiom amendment, obligation retirement, or TOE movement.
 
-Execute only the real degree-two family in `GOAL.md`.  Classification must run
-before response.  If the compatible ray is absent or nonunique, stop.  If its
-M2 dilation fails, stop.  If either D1 or H1 real TT rank is below two at the
-frozen phase-zero contact, stop before held-outs.  Do not inspect an alternate
-`K`, phase, writer position, detector axis, event basis, source, or
-normalization inside this campaign.
+Its instantaneous response hard-stops: D1 is exactly rank zero and H1 rank
+one.  The physical second TT tangent remains nonzero, so this is connector
+blindness.  D2/D3/H2/X1 and the permanent Record tail were not opened.  Do not
+quote the result as a detector, source, gravity, Record, Born, or TOE no-go.
 
-If all discovery and held-out gates pass, the reusable output is a physically
-specified eight-event instrument and faithful one-step binary writer.  Record
-formation and permanence remain separate obligations.  If the family stops,
-package only the narrow boundary under N1--N8 and rerank the independently
-mapped Riesz/gravity section against a newly preregistered detector family.
+The 4--1 panel-selected next campaign keeps this exact detector and asks
+whether its action-generated orbit over one complete L24 period is rank-two
+observable.  Before any cylinder response, it must derive a normalized CP
+prefix law from the existing Euclidean action; no physical-time step or
+cadence may be supplied.  Stop on failure and pivot to the Regge-D4-L24
+intertwiner/Riesz feasibility gate.  Record formation/permanence remains
+separate unless the history law and rank both pass.
 
 No review-loop is authorized.

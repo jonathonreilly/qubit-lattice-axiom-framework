@@ -1,6 +1,6 @@
 {
- "edge_count": 16153,
- "node_count": 5622,
+ "edge_count": 16154,
+ "node_count": 5623,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -421,6 +421,10 @@
   "admissibility_cycle713_signed_record_source_causal_tt_vertical_slice_bounded_theorem_note_2026-08-13": {
    "deps_hash": "24bf525103b8",
    "out_degree": 7
+  },
+  "admissibility_d4_detector_conditioned_m2_pointer_discriminator_boundary_bounded_theorem_note_2026-08-25": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "admissibility_d4_dirac_kahler_common_action_ward_tt_record_mark_boundary_bounded_theorem_note_2026-08-24": {
    "deps_hash": "25d2b6b6325f",

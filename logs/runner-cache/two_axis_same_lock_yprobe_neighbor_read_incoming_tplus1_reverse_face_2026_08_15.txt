@@ -1,0 +1,91 @@
+===== runner cache v1 =====
+runner: scripts/two_axis_same_lock_yprobe_neighbor_read_incoming_tplus1_reverse_face_2026_08_15.py
+runner_sha256: 3772a05a19f056d13af0a4dc4efdacfe26a0927a2022cb21df490ef52ba5d721
+input_fingerprint_sha256: 1b6bcace7e733dbe045dd854287cfc6750d2c1f6cdcc612237447fad658800ad
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+neighbor-read of M reverse/face at t+1 on two-axis same-lock y-probes
+AUDIT_INPUT_PATHS:
+  docs/TWO_AXIS_SAME_LOCK_YPROBE_NEIGHBOR_READ_INCOMING_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Neighbor-read of M at t+1 on the four y-probes of the two-axis same-lock seed, and reverse/face from that, are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/TWO_AXIS_SAME_LOCK_YPROBE_NEIGHBOR_READ_INCOMING_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-y-probes-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: pair-read-identity
+PASS: neighbor-read-identity
+A t=0 M={+e_1} neighbor-read=hold
+B t=1 M={+e_1} neighbor-read=hold
+C t=1 M={+e_2} neighbor-read=fail
+D t=2 M={−e_3} neighbor-read=hold
+neighbor-read reverse=hold face=fail
+nm2ready opposite y-probe neighbor-read reverse=fail face=fail A=fail
+nm2readslx same-lock x-probe neighbor-read reverse=hold face=hold A=hold
+nm2readslz same-lock z-probe neighbor-read reverse=hold face=hold A=hold
+1-axis same-lock y-probe neighbor-read reverse=hold face=fail A=hold
+per_element: each earliest incoming lock set M at a probe and at formed 6-NN, compared as sets at the probe's t+1
+per_site: scored only at y-probes A,B,C,D on Euclidean B_3(0); no other sites
+per_mode: no spectral or mode calculation is executed on this finite host
+per_block: four neighbor-read reports, reverse/face from those bits
+lattice_wide: checked and not executed — no lattice-wide lettering rule is claimed
+PASS: perp-step-incoming-lock
+PASS: undefined-if-unformed
+PASS: incoming-set-seed-singleton
+PASS: neither-pair-is-opposite
+PASS: theorem1-formation-ticks  ({'A': 0, 'B': 1, 'C': 1, 'D': 2})
+PASS: theorem1-M-at-tau  ({'A': '{+e_1}', 'B': '{+e_1}', 'C': '{+e_2}', 'D': '{−e_3}'})
+PASS: theorem1-M-frozen-from-t
+PASS: theorem1-formed-6nn-M-at-A
+PASS: theorem1-formed-6nn-M-at-B
+PASS: theorem1-formed-6nn-M-at-C
+PASS: theorem1-formed-6nn-M-at-D
+PASS: theorem1-neighbor-read-bits  ({'A': ('hold', ((0, 0, 0),)), 'B': ('hold', ((1, 0, 1),)), 'C': ('fail', ()), 'D': ('hold', ((1, 0, 0),))})
+PASS: theorem1-mixed-stays-a-set
+PASS: theorem1-A-is-seed
+PASS: compare-opposite-y-neighbor-read
+PASS: compare-nm2readslx-same-lock-x-neighbor-read
+PASS: compare-nm2readslz-same-lock-z-neighbor-read
+PASS: compare-opposite-z-neighbor-read
+PASS: compare-1-axis-same-lock-y-neighbor-read
+PASS: theorem2-reverse-hold
+PASS: theorem3-face-fail
+PASS: mutation-r-style-differs
+PASS: mutation-unique-letter-mixed-neighbor
+PASS: not-x-probes-or-z-probes-or-perp
+PASS: not-cover-or-simultaneous-or-timed-o
+PASS: not-nsopp-leftover-second-pair-is-seed
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: note-claim-scope
+PASS: note-reports-M-and-neighbor-read
+PASS: note-reports-formed-neighbors
+PASS: note-reports-reverse-face
+PASS: note-displayed-not-adopted
+PASS: note-not-cover-or-opposite-or-r-style-leftover
+PASS: note-no-global-T
+PASS: note-forbids-enlargement-and-cache
+PASS: note-does-not-use-occupancy
+PASS: note-uniqueness-not-required
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+PASS: neighbor-read-not-cover-or-opposite-y
+TOTAL: PASS=57 FAIL=0
+
+----- stderr -----
+

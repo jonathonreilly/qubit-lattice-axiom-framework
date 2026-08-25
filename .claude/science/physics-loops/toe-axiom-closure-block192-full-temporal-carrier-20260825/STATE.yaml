@@ -1,0 +1,28 @@
+campaign: toe-axiom-closure-block192-full-temporal-carrier-20260825
+status: preregistered_pending_execution
+parent_commit: 480f633a5fbe34f444ec57e079abdd81b42e7728
+parent_pull_request: 7356
+origin_main: c79384cb8ffa27fcb53cb89c53a84a708442eaad
+active_gate: full_16form_temporal_carrier_reflected_source_history_composition
+route_order: [finite_two_frequency_complex, periodic_l24, continuous_frequency_kernel]
+route_attempt_cap: 3
+discovery_points: [D1, H1]
+held_out_points: [D2, D3, H2, X1]
+temporal_sectors: [pi/6, pi/4]
+cross_temporal_transfer: pi/12
+source_context: block191_fixed_grade3_pvm
+source_context_refit_allowed: false
+carrier_postfit_allowed: false
+common_carrier_required: true
+full_16form_mode_intertwiner_required: true
+reflection_compatibility_required: true
+conditioned_positive_history_required: true
+actual_gram_write_required: true
+permanent_record_required_for_block_success: false
+born_derivation_required_for_block_success: false
+obligation_retirement: 0
+toe_percentage_movement: 0
+axiom_status: unchanged
+retained_positive_end_to_end_theory_count: 0
+review_loop: forbidden_by_user_instruction
+no_go_discipline: required_before_any_negative_claim

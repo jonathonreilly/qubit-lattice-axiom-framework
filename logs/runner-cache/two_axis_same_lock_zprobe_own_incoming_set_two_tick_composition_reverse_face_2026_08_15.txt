@@ -1,0 +1,106 @@
+===== runner cache v1 =====
+runner: scripts/two_axis_same_lock_zprobe_own_incoming_set_two_tick_composition_reverse_face_2026_08_15.py
+runner_sha256: e4e80f1b328889c150bd3e27372f190f6279b5ecdf5e7e0e1590919dd927d0bc
+input_fingerprint_sha256: 0a89f5cddb5b50267ec88bba1ebe9e02c3a339439fc64d2de65d2372bae0af3b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+two-axis same-lock seed own incoming set two-tick composition reverse/face on z-probes
+AUDIT_INPUT_PATHS:
+  docs/TWO_AXIS_SAME_LOCK_ZPROBE_OWN_INCOMING_SET_TWO_TICK_COMPOSITION_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: M two-tick composition on the four z-probes of the two-axis same-lock seed, reverse/face at each cut, and composition, are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/TWO_AXIS_SAME_LOCK_ZPROBE_OWN_INCOMING_SET_TWO_TICK_COMPOSITION_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-z-probes-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: existential-opposite-identity
+PASS: composition-identity
+PASS: own-incoming-set-identity
+A t=0 M(t)={+e_2} M(t+1)={+e_2}
+B t=1 M(t)={+e_1} M(t+1)={+e_1}
+C t=1 M(t)={+e_3} M(t+1)={+e_3}
+D t=1 M(t)={+e_1} M(t+1)={+e_1}
+exist-opposite reverse t=fail t+1=fail
+exist-opposite face t=fail t+1=fail
+composition=HOLD
+1-axis HOLDING M reverse=fail face=hold t={1, 2, 4, 2}
+cover reverse=fail face=hold
+split reverse=fail face=hold
+timed-O reverse=hold face=fail
+bit-composition leftover=HOLD
+per_element: each lock vector in the probe's own incoming set M(q, t) and M(q, t+1)
+per_site: scored only at z-probes A,B,C,D on Euclidean B_3(0); no other sites
+per_mode: no spectral or mode calculation is executed on this finite host
+per_block: four incoming sets at two cuts plus reverse/face at each cut and composition
+lattice_wide: checked and not executed — no lattice-wide lettering rule is claimed
+PASS: perp-step-incoming-lock
+PASS: undefined-if-unformed
+PASS: incoming-set-seed-singleton
+PASS: theorem1-formation-ticks  ({'A': 0, 'B': 1, 'C': 1, 'D': 1})
+PASS: theorem1-M-at-t  ({'A': '{+e_2}', 'B': '{+e_1}', 'C': '{+e_3}', 'D': '{+e_1}'})
+PASS: theorem1-M-at-t-plus-1  ({'A': '{+e_2}', 'B': '{+e_1}', 'C': '{+e_3}', 'D': '{+e_1}'})
+PASS: theorem1-M-frozen-from-t
+PASS: theorem1-new-records-meet-6nn  ({'A': ((1, 0, 1), (-1, 0, 1), (0, 0, 2)), 'B': ((1, 2, 1), (1, 1, 2), (1, 1, 0)), 'C': ((1, 0, 2), (-1, 0, 2), (0, -1, 2)), 'D': ((1, -1, 1), (1, 0, 2), (1, 0, 0))})
+PASS: theorem1-new-neighbors-do-not-enter-M
+PASS: theorem1-mixed-remains-a-set
+PASS: theorem1-A-is-seed
+PASS: theorem1-reverse-fail-uses-singleton-M-A
+PASS: theorem1-compare-1-axis-HOLDING-M
+PASS: theorem2-reverse-at-t-and-t-plus-1-fail
+PASS: theorem2-face-at-t-and-t-plus-1-fail
+PASS: theorem3-composition-hold
+PASS: composition-is-M-set-equality-not-bits
+PASS: discriminator-vs-1-axis-HOLDING-M
+PASS: not-unique-L-leftover
+PASS: not-axis-cover-leftover
+PASS: not-one-two-split-leftover
+PASS: not-timed-O-exist-opposite
+PASS: not-six-neighbor-lock-union
+PASS: not-x-probes-or-y-probes-or-perp
+PASS: not-y-symmetric-three-site-seed
+PASS: not-nsopp-leftover-child
+PASS: not-nnlock-named-sign
+PASS: incoming-locks-are-nn-steps
+PASS: uniqueness-not-required
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: mutation-empty-or-undefined-is-undefined
+PASS: mutation-no-opposite-pair-fails
+PASS: mutation-sum-is-not-the-letter
+PASS: note-claim-scope
+PASS: note-reports-ticks-and-incoming-sets
+PASS: note-reports-new-neighbors
+PASS: note-reports-exist-opposite-reverse-face
+PASS: note-reports-composition-hold
+PASS: note-compares-1-axis-HOLDING-M
+PASS: note-displayed-not-adopted
+PASS: note-not-sign-lettering
+PASS: note-does-not-attach-formation-member
+PASS: note-not-unique-or-sum-or-cover-leftover
+PASS: note-no-six-neighbor-star-as-letter
+PASS: note-not-nsopp-leftover-child
+PASS: note-no-global-T
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+PASS: exist-opposite-fail-fail-composition-hold
+PASS: not-nm2t2z-opposite-two-tick-leftover
+TOTAL: PASS=69 FAIL=0
+
+----- stderr -----
+

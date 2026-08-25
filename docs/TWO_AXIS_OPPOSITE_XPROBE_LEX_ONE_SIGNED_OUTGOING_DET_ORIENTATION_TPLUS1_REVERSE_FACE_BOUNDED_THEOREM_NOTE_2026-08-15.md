@@ -1,0 +1,735 @@
+---
+claim_id: two_axis_opposite_xprobe_lex_one_signed_outgoing_det_orientation_tplus1_reverse_face_bounded_theorem_note_2026-08-15
+claim_type: bounded_theorem
+claim_scope: "Lex-one signed outgoing determinant orientation of the 1-in 2-out frame at t+1 on the four x-probes of the two-axis opposite seed, and reverse/face from that, are reported. Displayed, not adopted."
+upstream_dependencies:
+  - minimal_axioms
+runner: scripts/two_axis_opposite_xprobe_lex_one_signed_outgoing_det_orientation_tplus1_reverse_face_2026_08_15.py
+---
+
+# Lex-One Signed Outgoing Determinant Orientation Of The 1-In 2-Out Frame At t+1 Reverse And Face On Four X-Probes Of The Two-Axis Opposite Seed
+
+> **Key terms used in this doc** are indexed A-Z at `docs/KEY_TERMINOLOGY.md`;
+> each row points to the canonical source-of-truth doc.
+
+**Date:** 2026-08-15
+**Type:** bounded_theorem
+**Scope:** lex-one signed outgoing determinant orientation of the 1-in 2-out
+frame of simultaneous earliest incoming set `M` and outgoing dual `O` at each
+probe's `τ=t+1`, and reverse/face from that sign, on the four x-probes of
+the two-axis opposite seed in `B_3(0)={n:n·n<=9}`. Same process and
+x-probes as nm2axx. `M`, `O`, split as nm2ax12x. Let `t(q)` be the formation
+tick of probe `q`. Let `τ(q)=t(q)+1`. `M(q,τ)` is the set of earliest
+incoming nearest-neighbor steps at `q` using only records with tick
+`<= τ`. Seeds are a singleton seed letter. `O(q,τ)` is the outgoing dual
+of `M`: the set of `e` in `{±e_1,±e_2,±e_3}` such that `q+e` is formed
+and `e` is in `M(q+e,τ)`. Unformed at `τ` is `UNDEFINED`. Empty `O` is
+empty, not `UNDEFINED`. Axis of a defined lock set `S` is
+`Axis(S)={e_i | some ±e_i in S}`. Cover HOLDs at `q` if and only if
+`Axis(M)` intersect `Axis(O)` is empty and `Axis(M)` union `Axis(O)` equals
+`{e_1,e_2,e_3}`. Split HOLDs at `q` if and only if cover HOLDs and
+`|Axis(M)|=1` (hence `|Axis(O)|=2`). Split HOLD required. When split
+HOLDs, `m` is the unique vector in `M`. For each axis in `Axis(O)` pick
+the lex-smallest vector in `O ∩ {±e_i}` under `+e_i < −e_i`. Let `o_j`,
+`o_k` be those two ordered by axis index. `Orient(q)` is the sign of the
+integer determinant of the 3×3 matrix with columns `m`, `o_j`, `o_k`. If
+`O_i` is empty, Orient fails, not `UNDEFINED`. If split fails, Orient
+fails, not `UNDEFINED`. Reverse HOLDs if and only if `Orient(A)=Orient(B)`
+both `±1`. Face HOLDs if and only if `Orient(C)=Orient(D)` both `±1`. Cover
+and split do not score handedness. This is not leftover of nm2axx axis-cover.
+This is not leftover of nm2ax12x 1-in 2-out split. This is not leftover of
+lexicographic `o1,o2`. This is not leftover of opposite-pair leftover-axis.
+This is not leftover of nm2oridetz unique signed outgoing
+letters with `|O_i|=1`. This is not leftover of leftover-of-`M` alone. This
+is not leftover of leftover-of-`O` alone. This is not leftover-empty fail of
+leftover axis. This is not leftover of nmunopp union. This is not leftover
+of nmt2opp `M` frozen at `t`. This is not leftover of nmot2opp two-tick
+composition. This is not leftover of nmoutopp untimed eventual-`O`. This
+is not leftover of mixed #7188 fail/fail. This is not leftover of the
+1-axis opposite two-site seed. This is not leftover of the same-lock
+two-site seed. This is not the two-tick lock-count clock composition. The
+second pair is a new seed, not a formed child. Uniqueness is not required.
+Mixed remains a set. Displayed, not adopted. Do not write into
+Admissibility. Do not attach L1.
+**Audit-status authority:** independent audit lane only. This note authors no
+audit verdict and predicts none.
+**Primary runner:**
+[`scripts/two_axis_opposite_xprobe_lex_one_signed_outgoing_det_orientation_tplus1_reverse_face_2026_08_15.py`](../scripts/two_axis_opposite_xprobe_lex_one_signed_outgoing_det_orientation_tplus1_reverse_face_2026_08_15.py)
+
+Framework input:
+
+- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) supplies
+  cubic-lattice sites `Z^3` with nearest-neighbor adjacency, the one-site
+  algebra `M_2(C)`, and the Record sentences that records form and that a
+  present record locks exactly one admissible local possibility.
+
+Everything after that quoted input is a finite displayed process on `B_3(0)`
+and the four named x-probes. Incoming lock letters are unit nearest-neighbor
+steps. `O` is the outgoing dual of those incoming sets at the per-probe cut
+`τ=t+1`. Axis is the unsigned lattice direction of a signed lock. Cover is
+the complementary occupation of `{e_1,e_2,e_3}` by `Axis(M)` and `Axis(O)`.
+Split is cover together with `|Axis(M)|=1`. The lex-one oriented frame is
+the integer sign of `det(m,o_j,o_k)` with unique signed incoming letter `m`
+and the lex-smallest signed outgoing letter on each axis of `Axis(O)` under
+`+e_i < −e_i`, in axis order. Reverse and face are scored on equal `±1`
+signs at the paired probes. Named signs `{+,−}` of locks are a coarser
+readout and are not used as the object. A singleton unique outgoing lock
+letter is a different readout and is not used as the object. Unsigned axis
+units of `Axis(O)` are a different readout and are not used. Unique signed
+outgoing letters with `|O_i|=1` are a different readout and are not used.
+Opposite-pair leftover-axis orientation is a different readout and is not
+used. Existential opposite of signed locks is a different readout and is
+not used. Axis-cover without the frame sign is a different readout and is
+not used. 1-in 2-out split without the frame sign is a different readout
+and is not used. Leftover-empty fail of unsigned leftover axis sets is a
+different readout and is not used. A `Z^3` sum of those locks is a
+different readout and is not used. Occupancy of sites is not used. A
+six-neighbor star is not the letter.
+
+## Machine status and trace
+
+```yaml
+actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
+claim_type_reason: "Exact report of lex-one signed outgoing determinant orientation of the 1-in 2-out frame of M and O at t+1 on the four x-probes of the two-axis opposite seed, Orient fail,+1,-1,fail, reverse fail and face fail from equal +/-1 signs; uniqueness of outgoing locks is not claimed and the bits are not adopted."
+trace_class: frontier_discovery
+target_claim_id: two_axis_opposite_xprobe_lex_one_signed_outgoing_det_orientation_tplus1_reverse_face
+target_blocker_text: "display lex-one signed outgoing determinant orientation of the 1-in 2-out frame reverse/face on the four x-probes of the two-axis opposite seed, not unique |O_i|=1, not leftover axis, not cover, not split"
+source_of_blocker_text: handoff
+reachability_to_target: advances
+artifact_role: theorem
+next_trace_action: "Keep lex-one signed outgoing determinant orientation of the 1-in 2-out frame of M and O at t+1 displayed; do not write Orient into Admissibility, do not reduce to lexicographic o1,o2, do not reduce to opposite-pair leftover-axis, do not reduce to unique signed |O_i|=1, do not reduce to cover, do not reduce to split, do not reduce to leftover-empty fail, do not reduce to leftover of M alone or leftover of O alone, do not replace Orient by unique outgoing letters, do not replace Orient by existential opposite of signed locks, do not replace Orient by six-neighbor lock union, and do not attach L1."
+conditional_surface_status: "exact on B_3(0) for lex-one signed outgoing determinant orientation of the 1-in 2-out frame of M and O at t+1 on the four x-probes of the two-axis opposite seed and reverse/face from that sign; displayed, not adopted"
+hypothetical_axiom_status: "no edit"
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```
+
+## Displayed process
+
+Write `e_1=(1,0,0)`, `e_2=(0,1,0)`, and `e_3=(0,0,1)`. The six nearest-neighbor
+steps are
+
+```text
+NN = {+e_1,-e_1,+e_2,-e_2,+e_3,-e_3}.
+```
+
+The finite host is the closed Euclidean ball of radius 3 centered at the
+origin,
+
+```text
+B_3(0) = { n in Z^3 : n·n <= 9 }.
+```
+
+No larger host is used. The four x-probes are the only sites whose
+lex-one signed outgoing determinant orientation of `M` and `O` is scored:
+
+```text
+A = (1,0,0),  B = (1,1,1),  C = (2,0,0),  D = (1,1,0).
+```
+
+These are not the z-probes `A=(0,0,1)`, `B=(1,1,1)`, `C=(0,0,2)`,
+`D=(1,0,1)`. These are not the y-probes `A=(0,1,0)`, `B=(1,1,1)`, `C=(0,2,0)`,
+`D=(1,1,0)`. `A` is not a seed. Same process and x-probes as nm2axx.
+
+Lock alphabet of the displayed process: `{±e_i}` with `i` in `{1,2,3}`.
+
+Seed: two disjoint opposite pairs recorded at formation tick 0. Origin
+locks `+e_1`. Site `(0,1,0)` locks `−e_1`. Site `(0,0,1)` locks `+e_2`.
+Site `(0,1,1)` locks `−e_2`. The second pair is a new seed, not a formed
+child of the first pair. This seed is not the 1-axis opposite two-site seed
+`{0,(0,1,0)}` with only `+e_1/−e_1`. This seed is not the perp two-site
+seed `+e_1/+e_2`. This seed is not the same-lock two-site seed
+`+e_1/+e_1`. This seed is not the z-symmetric three-site seed
+`{0,(0,0,1),(0,0,-1)}`. This seed is not the y-symmetric three-site seed
+that also records `(0,-1,0)` at tick 0.
+
+From a recorded site `p` with lock `L_in(p)=±e_i`, a six-neighbor step
+`s in NN` to `q=p+s` is allowed if and only if `s` is perpendicular to
+`e_i`, that is
+
+```text
+s · e_i = 0.
+```
+
+If `q` lies in `B_3(0)`, is still unformed, and the step is allowed, then `q`
+forms next and locks the incoming step `s`. If several allowed parents reach
+`q` at the same earliest formation, each such incoming step is kept. A later
+parent does not re-form `q`. Uniqueness is not required. Mixed remains a set.
+
+## Named lex-one signed outgoing determinant of `M` and `O` at `τ=t+1`
+
+Let `t(q)` be the formation tick of x-probe `q` when that tick is defined in
+`B_3(0)`. Let `τ(q)=t(q)+1`. There is no global T.
+
+`M(q,τ)` is the set of earliest incoming nearest-neighbor steps at `q`
+using only records with tick `<= τ`. If `q` is unformed at `τ`, then
+`M(q,τ)` is `UNDEFINED`. If `q` is a seed and `τ >= 0`, then `M(q,τ)` is
+the singleton seed letter.
+
+`O(q,τ)` is the outgoing dual of `M`:
+
+```text
+O(q,τ) = { e in {±e_1,±e_2,±e_3} | q+e formed and e in M(q+e,τ) }.
+```
+
+If `q` is unformed at `τ`, then `O(q,τ)` is `UNDEFINED`. Empty `O` is empty,
+not `UNDEFINED`. Duplicate steps collapse in the set. The construction does
+not require `O` to be a singleton. It does not sum either set. It does not
+replace `O` by `M`. It does not wait for a global later T. Occupancy of
+sites is not used. O is not M.
+
+Unsigned axis of a defined lock set:
+
+```text
+Axis(S) = { e_i | some ±e_i in S }.
+```
+
+Cover at a probe at the same cut:
+
+```text
+cover(q) HOLDs iff Axis(M) intersect Axis(O) is empty
+and Axis(M) union Axis(O) equals {e_1,e_2,e_3}.
+```
+
+Split at a probe at the same cut:
+
+```text
+split(q) HOLDs iff cover HOLDs and |Axis(M)|=1
+(hence |Axis(O)|=2).
+```
+
+2-in 1-out is fail of split, not UNDEFINED. If `q` is unformed at `τ`, then
+split is `UNDEFINED`.
+
+Oriented frame at the same cut:
+
+```text
+When split HOLDs, m is the unique signed letter in M.
+For each axis e_i in Axis(O), O_i = O ∩ {±e_i}.
+If O_i is empty, Orient fails, not UNDEFINED.
+Else pick the lex-smallest vector in O_i under +e_i < −e_i.
+o_j, o_k are those two signed vectors in axis order e1<e2<e3.
+Orient(q) = sign of the integer determinant of columns (m, o_j, o_k).
+Else fail, not UNDEFINED, if split fails.
+UNDEFINED if M or O is UNDEFINED.
+```
+
+The outgoing pair is signed. Mixed opposite signs on one outgoing axis do
+not make Orient fail: lex-one picks `+e_i` over `−e_i`. Unique outgoing
+letters of the whole set `O` are not required: mixed `O` remains a set, and
+unique-letter readout of mixed `O` is `UNDEFINED` while this Orient can be
+`±1`. Unique signed letters per axis with `|O_i|=1` fail when an opposite
+pair occupies that axis; lex-one does not. A vanishing determinant is fail.
+Sign of a nonzero integer determinant is `+1` or `−1`. Split HOLD required:
+2-in 1-out is Orient fail, not UNDEFINED.
+
+Reverse oriented frame holds if and only if `Orient(A)=Orient(B)` and both
+signs are `±1`. Face oriented frame holds if and only if
+`Orient(C)=Orient(D)` and both signs are `±1`. Either side `UNDEFINED` is
+`UNDEFINED`. Else if both sides are equal `±1`, reverse or face HOLDs.
+Else fail.
+
+Cover and split do not score handedness. Identifying cover reverse with
+this reverse is refused: cover reverse fails because leftover `{e_2}` is
+missing at `A`, while lex-one Orient at `B` is `+1` and unique signed
+Orient at `B` is fail. Identifying split reverse with this reverse is
+refused on the same grounds: split equals cover on this member because
+`|Axis(M)|=1` at each x-probe, and neither scores the signed columns.
+Identifying leftover-empty fail with this reverse is refused: leftover at
+`B` is empty while Orient at `B` is `+1`. Identifying unique signed
+`|O_i|=1` with this reverse is refused: unique signed Orient at `B` fails
+because `|O ∩ {±e_3}|=2`, while lex-one picks `+e_3` and Orient at `B` is
+`+1`. Identifying lexicographic unsigned `o1,o2` with this reverse is
+refused: lexicographic Orient at `C` is `+1` while lex-one Orient at `C`
+is `−1` from signed `−e_2`. Identifying opposite-pair leftover-axis
+orientation with this reverse is refused: leftover-axis Orient at `B` is
+`−1` from pair `+e_3` leftover `+e_2`, while lex-one Orient at `B` is
+`+1`. Identifying a named sign of those locks with reverse or face is
+refused: named-sign lettering lost the axis.
+
+## Theorem 1 — ticks, `M`, `O`, split, lex pair, and Orient at `τ=t+1`
+
+On this process the four x-probes form. Compare to leftover axis: leftover
+of the union is `{e_2}` at `A` and at `D`, empty at `B` and at `C`,
+leftover reverse fail and leftover face fail. Compare to nm2axx axis-cover
+and nm2ax12x 1-in 2-out split: both fail reverse and fail face on this
+member because leftover `{e_2}` is missing at `A` and at `D`. Compare to
+lexicographic `o1,o2`: that readout scores Orient fail at `A`, `+1` at `B`,
+`+1` at `C`, fail at `D` from the unsigned outgoing 2-plane. Compare to
+opposite-pair leftover-axis: that readout scores Orient fail at `A` from no
+opposite pair and `−1` at `B` from pair `+e_3` leftover `+e_2`. Compare to
+nm2oridetz unique signed `|O_i|=1`: unique signed Orient at `B` is fail
+because `|O ∩ {±e_3}|=2`. This display reads the lex-one signed outgoing
+determinant of those same timed sets:
+
+```text
+t(A)=2
+t(B)=1
+t(C)=3
+t(D)=2
+M(A, τ) = {−e_3}
+M(B, τ) = {+e_1}
+M(C, τ) = {+e_1}
+M(D, τ) = {−e_3}
+O(A, τ) = {+e_1}
+O(B, τ) = {+e_2, +e_3, −e_3}
+O(C, τ) = {−e_2, +e_3, −e_3}
+O(D, τ) = {+e_1, −e_1}
+split(A) = fail
+split(B) = hold
+split(C) = hold
+split(D) = fail
+m(A) = −e_3
+oj,ok(A) = fail
+det(A) = fail
+Orient(A) = fail
+m(B) = +e_1
+oj,ok(B) = +e_2, +e_3
+det(B) = 1
+Orient(B) = +1
+m(C) = +e_1
+oj,ok(C) = −e_2, +e_3
+det(C) = -1
+Orient(C) = −1
+m(D) = −e_3
+oj,ok(D) = fail
+det(D) = fail
+Orient(D) = fail
+```
+
+`A` is not a seed. `A` forms at tick 2 by the incoming step `−e_3`. Mixed
+remains a set: `O(B,τ)` has three outgoing steps and `O(C,τ)` has three
+outgoing steps. Unique outgoing letters would assign `UNDEFINED` at mixed
+`O`. Here uniqueness is not required. At `A`, split fails from cover fail
+with leftover `{e_2}` (1-in 1-out), so Orient at `A` is fail, not
+`UNDEFINED`, and `det(A)` is fail. At `B`, split HOLDs and `O` has both
+`±e_3`, so unique signed fails, not `UNDEFINED`, while lex-one picks
+`+e_3` over `−e_3` and `det(+e_1,+e_2,+e_3)=1`. At `C`, split HOLDs and
+`O` has both `±e_3`, lex-one picks `−e_2` and `+e_3`, and
+`det(+e_1,−e_2,+e_3)=−1`. Unsigned lexicographic `o1,o2` at `C` is
+`(e_2,e_3)` and that Orient is `+1`. At `D`, pair HOLDs on `{+e_1,−e_1}`
+but split fails from cover fail with leftover `{e_2}` (1-in 1-out). Split
+HOLD is required, so Orient at `D` is fail, not `UNDEFINED`, and `det(D)`
+is fail. Cover and split fail reverse on this member and do not score that
+`Orient(B)=+1` while unique signed Orient at `B` is fail. O is not M.
+
+On the 1-axis opposite two-site seed, x-probe cover reverse HOLDs, `A`
+forms later, and mixed `M(A)` is not `{−e_3}`. That is leftover of the
+first pair. Here both `(0,0,1)` and `(0,1,1)` are seeds of a second
+opposite pair on a second axis, `t(A)=2`, and cover reverse fails.
+
+New records in `B_3(0)` between `t` and `t+1` that meet a probe's
+six-neighbors enter `O` and do not enter earliest `M`. Site `(0,1,1)` is a
+seed, so it is not a new 6-NN of `A`:
+
+```text
+new 6-NN of A at t(A)+1: (2, 0, 0)
+new 6-NN of B at t(B)+1: (1, 2, 1), (1, 1, 2), (1, 1, 0)
+new 6-NN of C at t(C)+1: (2, -1, 0), (2, 0, 1), (2, 0, -1)
+new 6-NN of D at t(D)+1: (2, 1, 0)
+```
+
+`M` is frozen from `t` to `t+1`. At `t`, `O` is empty at `A`, `B`, and
+`C`. At `D`, `O` at `t` is `{−e_1}` and grows to `{+e_1, −e_1}` at `t+1`.
+Orient at `t` is fail, not UNDEFINED.
+
+## Theorem 2 — reverse from oriented frame at `τ`
+
+Reverse oriented frame holds if and only if `Orient(A)=Orient(B)` both
+`±1`. `Orient(A)` is fail and `Orient(B)=+1`. Reverse fails. This is HOLD
+iff equal `±1` signs, not leftover of nm2axx axis-cover, not leftover of
+nm2ax12x 1-in 2-out split, not leftover of lexicographic `o1,o2`, not leftover
+of opposite-pair leftover-axis, not leftover of nm2oridetz unique
+signed, not leftover-empty fail, and not exist-opposite.
+
+Reverse oriented frame at τ: fail
+
+Both sides are defined, so this is not `UNDEFINED`. Cover reverse fails
+because cover fails at `A`. Split reverse fails because split fails at
+`A`. Cover and split do not score handedness: unique signed reverse also
+fails, but unique signed Orient at `B` is fail while lex-one Orient at
+`B` is `+1`. Lexicographic reverse fails because lexicographic `Orient(A)`
+is fail and `Orient(B)=+1`. Opposite-pair leftover-axis reverse fails
+because leftover-axis Orient at `A` is fail from no opposite pair in `O`
+and leftover-axis Orient at `B` is `−1`. Unique signed reverse fails
+because unique signed Orient at `B` is fail from `|O ∩ {±e_3}|=2`. Signed
+lex-one reverse fails because Orient at `A` is fail from split fail.
+Leftover-empty reverse fails because leftover of the union is `{e_2}` at
+`A` and empty at `B`. Leftover of `M` reverse fails because leftover of
+`M` at `A` is `{e_1, e_2}` and leftover of `M` at `B` is `{e_2, e_3}`:
+nonempty and unequal. Leftover of `O` reverse fails because leftover of
+`O` at `A` is `{e_2, e_3}` and leftover of `O` at `B` is `{e_1}`: nonempty
+and unequal. Exist-opposite reverse of signed `M` fails. Exist-opposite
+reverse of signed `O` fails. Presence of an opposite pair in `O` fails at
+`A` and HOLDs at `B`, so pair-presence reverse fails. Those leftovers are
+not this display.
+
+Reverse fails.
+
+## Theorem 3 — face from oriented frame at `τ`
+
+Face oriented frame holds if and only if `Orient(C)=Orient(D)` both `±1`.
+`Orient(C)=−1` and `Orient(D)` is fail. Face fails.
+
+Face oriented frame at τ: fail
+
+Displayed, not adopted. The bits are not written into Admissibility.
+Do not write into Admissibility. Do not attach L1.
+
+Cover face fails because cover fails at `D`. Split face fails because
+split fails at `D`. Lex-one oriented face fails because Orient fails at `D`
+from split fail, while Orient at `C` is `−1`. Pair face HOLDs while Orient
+face fails: split HOLD is required. Lexicographic face also fails, but
+lexicographic Orient at `C` is `+1` while lex-one Orient at `C` is `−1`.
+On the 1-axis opposite two-site seed, x-probe cover reverse HOLDs. This
+two-axis member is not leftover of that 1-axis cover reverse HOLD: here
+`t(A)=2` and cover reverse fails. The four z-probes of this same seed give
+lex-one reverse fail and lex-one face hold. The four y-probes give lex-one
+reverse hold and lex-one face fail. Those probe-direction readouts are not
+this x-probe display. Leftover-empty face fails because leftover of the
+union is empty at `C`. Leftover of `M` at `C` is `{e_2, e_3}` and leftover
+of `M` at `D` is `{e_1, e_2}`: nonempty and unequal. Leftover of `O` at
+`C` is `{e_1}` and leftover of `O` at `D` is `{e_2, e_3}`: nonempty and
+unequal. Exist-opposite face of signed `M` fails. Exist-opposite face of
+signed `O` fails. Unique signed face fails. Opposite-pair leftover-axis
+face fails. Lexicographic face fails. Lex-one oriented face fails.
+
+Empty leftover does not make reverse `UNDEFINED`. Leftover-empty fail is
+not this reverse. Cover fails at `A` and at `D`. Split fails at `A` and at
+`D`. Pair HOLDs at `D`. Orient at `D` is fail.
+
+Face fails.
+
+## What this note does not claim
+
+- It does not select a unique outgoing or leftover lock.
+- It does not reduce lock vectors to named signs `{+,−}`.
+- It does not require outgoing sides to be singletons.
+- It does not sum either set.
+- It does not replace Orient by leftover-empty fail.
+- It does not replace Orient by leftover of `M` alone.
+- It does not replace Orient by leftover of `O` alone.
+- It does not replace Orient by existential opposite of signed locks.
+- It does not replace Orient by presence of an opposite pair in `O`.
+- It does not replace Orient by lexicographic `o1,o2` orientation.
+- It does not replace Orient by opposite-pair leftover-axis orientation.
+- It does not replace Orient by unique signed `|O_i|=1` letters.
+- It does not replace Orient by unsigned axis units of `Axis(O)`.
+- It does not replace Orient by axis-cover without the frame sign.
+- It does not replace Orient by 1-in 2-out split without the frame sign.
+- It does not treat split fail as `UNDEFINED`.
+- It does not treat empty `O_i` as `UNDEFINED`.
+- It does not replace `O` by `M`.
+- It does not replace Orient by locks of six-neighbors.
+- It does not use a six-neighbor star as the letter.
+- It does not wait for a global later T.
+- It does not attach a formation member from already-recorded six-neighbor
+  locks.
+- It does not reprint nmsimopp exist-opposite of `M` and of `O` at `t+1`.
+- It does not reprint nmcover axis-cover reverse fail face fail as this
+  oriented display.
+- It does not reprint nm2axx axis-cover reverse fail face fail as this
+  oriented display.
+- It does not reprint nm2ax12x 1-in 2-out split reverse fail face fail as
+  this oriented display.
+- It does not reprint lexicographic `o1,o2` reverse fail face fail as this
+  oriented display.
+- It does not reprint opposite-pair leftover-axis reverse fail
+  face fail as this oriented display.
+- It does not reprint nm2oridetz unique signed reverse fail face fail as
+  this oriented display.
+- It does not reprint the 1-axis opposite two-site seed as this member.
+- It does not score the z-probes or the y-probes as this letter.
+- It does not reprint nmunopp untimed union.
+- It does not reprint nmt2opp `M` frozen at `t` as this oriented display.
+- It does not reprint nmot2opp two-tick composition of empty-then-HOLD `O`.
+- It does not reprint nmoutopp untimed eventual-`O`.
+- It does not reprint the two-tick lock-count clock composition.
+- It does not reprint mixed #7188 fail/fail as this member.
+- It does not use occupancy of sites as the letter.
+- It does not enlarge the host beyond `B_3(0)`.
+- It does not edit Lattice, Qubit, Admissibility, or Record.
+- It does not supply a physical rate or a continuum kernel.
+
+## Current premise boundary
+
+The Lattice, Qubit, Admissibility, and Record premises are quoted from
+[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md):
+
+Physical sites are the points of the cubic lattice `Z^3`, with nearest-neighbor
+adjacency, standard translations, and proper cubic rotations about each site.
+
+The full one-site possibility domain has algebraic presentation `M_2(C)`.
+
+For each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions.
+
+Records form.
+
+When present, a record locks exactly one admissible local possibility.
+
+A readout value is determined by record content alone.
+
+A site with no record cannot be read.
+
+The Admissibility reading note says the distribution concerns which possibility
+a forming record locks, conditional on formation at that site; it does not
+supply the formation site, probability, or rate.
+
+This display uses Lattice to name `B_3(0)` and the four x-probes. It uses Qubit
+only as the algebra of the local possibility domain. It uses Record only as a
+boundary: a present lock is content. It does not rewrite Admissibility. The
+two-axis opposite seed process, lex-one signed outgoing determinant
+orientation of the 1-in 2-out frame of `M` and `O` at `t+1`, and the
+reverse/face bits from that sign are displayed theorem-domain data.
+
+## Exact target and obligation graph
+
+| Obligation | Status |
+|---|---|
+| current Lattice / Admissibility / Record premises | quoted; no edit |
+| perp-step incoming-lock process on `B_3(0)` | displayed; two-axis opposite seed `+e_1/−e_1` and `+e_2/−e_2` |
+| ticks `t(A)`, `t(B)`, `t(C)`, `t(D)` | Theorem 1; `2`, `1`, `3`, `2` |
+| `M` at `τ=t+1` | Theorem 1; frozen equal to `M` at `t` |
+| `O` at `τ=t+1` | Theorem 1; HOLDING outgoing dual |
+| split at `τ` | Theorem 1; fail at `A`, HOLD at `B,C`, fail at `D` |
+| unique signed `m` and lex-one `(o_j,o_k)` | Theorem 1; singleton `M`; lex pair fail at `A`, HOLD at `B,C`, fail at `D` |
+| integer `det(m,o_j,o_k)` | Theorem 1; fail, `1`, `-1`, fail |
+| Orient at `τ` | Theorem 1; fail, `+1`, `−1`, fail |
+| reverse from oriented frame at `τ` | Theorem 2; `fail` |
+| face from oriented frame at `τ` | Theorem 3; `fail` |
+| unique outgoing lock | not required |
+| occupancy of sites as the letter | not used |
+| named-sign `{+,−}` letter | not used; lost the axis |
+| singleton unique lock-vector letter | not used as the object; mixed remains a set |
+| `Z^3` sum of the lock set | not used; no aggregation |
+| six-neighbor star as the letter | not used |
+| leftover-empty fail of leftover axis | not this oriented display |
+| leftover of exist-opposite HOLD | not this oriented display |
+| leftover of nmcover axis-cover HOLD | not this oriented display |
+| leftover of nm2axx axis-cover HOLD | not this oriented display |
+| leftover of nm2ax12x 1-in 2-out split HOLD | not this oriented display |
+| leftover of lexicographic `o1,o2` | not this oriented display |
+| leftover of opposite-pair leftover-axis | not this oriented display |
+| leftover of nm2oridetz unique signed `|O_i|=1` | not this oriented display |
+| leftover of opposite-pair presence in `O` | not this oriented display |
+| z-probe or y-probe Orient on this seed | not this letter |
+| leftover of leftover-of-`M` alone | not this display |
+| leftover of leftover-of-`O` alone | not this display |
+| leftover of nmunopp untimed union | not this display |
+| leftover of nmt2opp `M` frozen at `t` | not this display |
+| leftover of nmot2opp two-tick composition | not this display |
+| leftover of nmoutopp untimed eventual-`O` | not this display |
+| two-tick lock-count clock composition | not this display |
+| leftover of mixed #7188 fail/fail | not this display |
+| leftover of the 1-axis opposite two-site seed | not this display |
+| leftover of the same-lock two-site seed | not this display |
+| split fail scored as `UNDEFINED` | refused; Orient fail |
+| empty `O_i` scored as `UNDEFINED` | refused; Orient fail |
+| global later T | not used |
+| oriented frame as Admissibility content | not adopted |
+| formation site / probability / rate | open |
+| physical Record readout of the bits | open |
+
+## Value gate (V1–V5)
+
+| # | Answer |
+|---|---|
+| V1 | It answers the first-display question: lex-one signed outgoing determinant orientation of the 1-in 2-out frame of `M` and `O` at `t+1` on the four x-probes of the two-axis opposite seed, and reverse/face from that sign. |
+| V2 | Current main has no landed lex-one-signed-outgoing-determinant reverse/face of timed `M` and `O` on these four x-probes of the two-axis opposite seed. |
+| V3 | Orient reports at one cut and the two reverse/face bits are independently finite and exact. |
+| V4 | The theorem is more than a restatement of Record because it reads lex-one signed outgoing letters per `Axis(O)` at the same `t+1` cut, reverse fails while unique signed Orient at `B` fails and lex-one Orient at `B` is `+1`, and lexicographic Orient at `C` is `+1` while lex-one Orient at `C` is `−1`. |
+| V5 | It is not an adopted content rule: the bits remain displayed. |
+
+## No-go discipline gate
+
+The negative content is narrow: the display does not write those bits into
+Admissibility, does not reduce them to named signs, does not require a
+unique outgoing lock, does not replace Orient by leftover-empty fail, does
+not replace Orient by leftover of `M` alone or leftover of `O` alone, does
+not replace Orient by existential opposite of signed locks, does not
+replace Orient by presence of an opposite pair in `O`, does not replace
+Orient by lexicographic `o1,o2`, does not replace Orient by opposite-pair leftover-axis, does not replace Orient by nm2oridetz unique
+signed `|O_i|=1`, does not replace Orient by nmcover axis-cover, does not
+replace Orient by nm2axx axis-cover, does not replace Orient by nm2ax12x 1-in
+2-out split, does not identify this display with the 1-axis opposite
+two-site seed, and does not identify it with nmunopp union. No global
+impossibility is claimed.
+
+### N1 — materially distinct routes
+
+| Route | Attempt | Why it fails here | Marker |
+|---|---|---|---|
+| lexicographic `o1,o2` | reuse unsigned reverse fail | lexicographic Orient at `C` is `+1` while lex-one Orient at `C` is `−1` from signed `−e_2` | ATTEMPTED |
+| opposite-pair leftover-axis | reuse leftover-axis reverse fail and face fail | leftover-axis Orient at `B` is `−1` from pair `+e_3` leftover `+e_2` while lex-one Orient at `B` is `+1` | ATTEMPTED |
+| nm2oridetz unique signed `|O_i|=1` | reuse unique-signed reverse fail | unique signed Orient at `B` fails because `|O ∩ {±e_3}|=2` while lex-one picks `+e_3` and Orient at `B` is `+1` | ATTEMPTED |
+| nm2axx axis-cover | reuse cover reverse fail and cover face fail on these x-probes | cover reverse fails from leftover `{e_2}` at `A` and does not report Orient at `B` is `+1` | ATTEMPTED |
+| nm2ax12x 1-in 2-out split | reuse split reverse fail and split face fail | split equals cover on this member; unique signed reverse fails on the same split HOLD at `B` | ATTEMPTED |
+| leftover-empty fail | score reverse/face as leftover nonempty-equal | leftover at `B` is empty while Orient at `B` is `+1`; leftover reverse fails as a different object | ATTEMPTED |
+| leftover of `M` alone | score `{e_1,e_2,e_3}` minus `Axis(M)` | leftover of `M` at `A` is `{e_1,e_2}` and at `B` is `{e_2,e_3}`, unsigned leftover, not `det(m,o_j,o_k)` | ATTEMPTED |
+| leftover of `O` alone | score `{e_1,e_2,e_3}` minus `Axis(O)` | leftover of `O` at `A` is `{e_2,e_3}` and at `B` is `{e_1}`, unsigned leftover | ATTEMPTED |
+| exist-opposite across probes | reuse signed reverse hold of `M` and of `O` | exist-opposite reverse of signed `M` and of signed `O` both fail; they do not report Orient at `B` is `+1` | ATTEMPTED |
+| opposite-pair presence in `O` | score reverse/face as both sides containing some `e` and `−e` | pair-presence reverse fails at `A`; pair-presence face HOLDs while this face fails | ATTEMPTED |
+| nmunopp untimed union | score reverse/face from `M ∪ O` | union is signed letters; Orient is integer sign of unique signed incoming and lex-one signed outgoing letters | ATTEMPTED |
+| unique outgoing letter | replace mixed `O` by a singleton or `UNDEFINED` | mixed `O(B,τ)` remains a set; unique-letter Orient is `UNDEFINED` while this Orient is `+1` | ATTEMPTED |
+| unsigned incoming axis | replace signed `m` by the positive `Axis(M)` unit | on this member `m` at `B` and at `C` is already `+e_1`; flipping `m` from `−e_1` to `+e_1` on `O={+e_2,−e_3}` flips Orient from `+1` to `−1` | ATTEMPTED |
+| 2-in 1-out as `UNDEFINED` | treat `|Axis(M)|=2` cover as unformed | split fail is Orient fail, not UNDEFINED; `A` and `D` are 1-in 1-out cover fail | ATTEMPTED |
+| empty `O_i` as `UNDEFINED` | treat missing signed outgoing on an axis as unformed | empty `O_i` is Orient fail, not UNDEFINED | ATTEMPTED |
+| 1-axis opposite two-site seed | reuse 1-axis x-probe cover reverse HOLD | different seed; second pair is a new seed, not a formed child; here `t(A)=2` and cover reverse fails | ATTEMPTED |
+| z-probe Orient | score the four z-probes on this seed | z-probe lex-one reverse fails and face HOLDs; this letter is the four x-probes | ATTEMPTED |
+| y-probe Orient | score the four y-probes on this seed | y-probe reverse HOLDs and face fails; this letter is the four x-probes | ATTEMPTED |
+| two-tick lock-count clock | score a lock-count clock across two ticks | different member; this display scores lex-one signed outgoing determinant orientation of own incoming and outgoing at `t+1` | ATTEMPTED |
+| mixed #7188 fail/fail | reuse z-symmetric mixed `M` reverse-fail face-fail | different process; this member reports reverse fail and face fail on the two-axis opposite seed | ATTEMPTED |
+| same-lock two-site seed | reuse `+e_1/+e_1` | different seed; this member is two disjoint opposite pairs | ATTEMPTED |
+| sum of a set | replace Orient by a `Z^3` sum | the construction does not sum; mixed `O(B)` sums to `+e_2` while lex-one Orient is `+1` | ATTEMPTED |
+| named-sign lettering | collapse `{±e_i}` to `{+,−}` | named-sign lettering lost the axis | ATTEMPTED |
+| global later T | wait until `max t(A,B,C,D)` before reading | `τ(q)=t(q)+1` is per-probe; no global T | ATTEMPTED |
+| attach a formation member from already-recorded six-neighbor locks | form the probes by a neighbor-lock letter instead of perp-step | refused; not attached | ATTEMPTED |
+| adopt bits into Admissibility | rewrite the local rule by the oriented frame | refused; displayed, not adopted | ATTEMPTED |
+
+### N2 — wall independence
+
+Missing physical adoption, missing identification of Orient with leftover of
+`M` alone, missing identification of Orient with leftover-empty fail, missing
+identification of Orient with existential opposite of signed locks, missing
+identification of Orient with presence of an opposite pair in `O`, missing
+identification of Orient with lexicographic `o1,o2`, missing identification
+of Orient with opposite-pair leftover-axis, missing identification
+of Orient with nm2oridetz unique signed `|O_i|=1`, missing identification of
+Orient with nmcover axis-cover, missing identification of Orient with nm2axx
+axis-cover, missing identification of Orient with nm2ax12x 1-in 2-out split,
+missing identification of this seed with the 1-axis opposite two-site seed,
+and missing Record identification of Orient reverse are distinct open
+premises. This note claims no complete wall collection.
+
+### N3 — hidden-condition scan
+
+The host `B_3(0)`, two disjoint opposite seed pairs `+e_1/−e_1` and
+`+e_2/−e_2`, perpendicular step rule, incoming-step lock, own incoming set
+and own outgoing dual from records with tick `<= τ`, per-probe `τ=t+1`,
+unsigned axis, cover as complementary occupation of `{e_1,e_2,e_3}`, split
+as cover and `|Axis(M)|=1`, unique signed `m` when split HOLDs, lex-smallest
+signed outgoing letter per axis of `Axis(O)` under `+e_i < −e_i`, integer
+determinant sign, empty `O_i` as Orient fail not `UNDEFINED`, split fail as
+Orient fail not `UNDEFINED`, four x-probes with non-seed `A`, second pair as a
+new seed not a formed child, and mixed remains a set are declared. No
+uniqueness of outgoing locks, no six-neighbor lock union as the scored
+object, no lock-count clock, no global later T, no formation attachment
+from already-recorded six-neighbor locks, and no Admissibility rewrite are
+silently assumed.
+
+### N4 — source residual matching
+
+The current axiom memo supplies cubic sites, `M_2(C)`,
+content-conditional-on-formation, and unreadable absence. The residual that
+formation site, probability, and rate remain unsupplied is unchanged. The
+Orient `fail`/`fail` reports do not close that residual.
+
+### N5 — resolution and rhetoric audit
+
+| Resolution | Executed | Not claimed |
+|---|---|---|
+| per element | unique signed incoming letter and lex-one signed outgoing letters per `Axis(O)` in axis order | no continuum alphabet |
+| per site | `A,B,C,D` x-probes on `B_3(0)` only | no other cubic sites |
+| per mode | no mode calculation | no spectral exhaustion |
+| per block | four Orient reports, reverse/face from equal `±1` signs | no adopted content law |
+| lattice wide | checked and not executed | no lattice-wide lettering rule |
+
+### N6 — live partial-closure paths
+
+Live routes include a later Record content map for Orient reverse/face, a
+formation-rate rule, and a physical selector among 1-in 2-out frames. None
+is taken here.
+
+### N7 — hostile steelman
+
+**Steelman:** Orient reverse fail and face fail are only nm2axx cover reverse
+fail and face fail, or nm2ax12x split reverse fail and face fail; leftover of
+`M` alone already answers reverse; leftover of `O` alone already answers
+reverse; exist-opposite of signed `O` already answers reverse; lexicographic
+`o1,o2` already answers handedness; opposite-pair leftover-axis already
+answers handedness; unique signed `|O_i|=1` already answers the signed
+outgoing plane; mixed #7188 already reported fail/fail; the second pair is
+only the formed child of the 1-axis seed; unique outgoing letters should be
+required; and unsigned incoming axis already gives the same signs.
+
+**Answer:** Cover and split fail reverse on this member from leftover `{e_2}`
+at `A`. They do not report `Orient(B)=+1`. Unique signed reverse fails
+because `|O ∩ {±e_3}|=2` at `B`, while lex-one picks `+e_3` and Orient at
+`B` is `+1`. Opposite-pair leftover-axis Orient at `B` is `−1` from pair
+`+e_3` leftover `+e_2`. Lexicographic Orient at `C` is `+1` while lex-one
+Orient at `C` is `−1` from signed `−e_2`. Leftover-empty reverse fails
+because leftover at `B` is empty while Orient at `B` is `+1`. Leftover of
+`M` alone at `A` is `{e_1,e_2}` and at `B` is `{e_2,e_3}`: unsigned
+leftover, not `det(m,o_j,o_k)`. Leftover of `O` alone at `A` is
+`{e_2,e_3}` and at `B` is `{e_1}`. Exist-opposite reverse of signed `M`
+and of signed `O` both fail. Unique outgoing letters would assign
+`UNDEFINED` at mixed `O(B)`; this Orient is `+1`, not `UNDEFINED`. Pair
+presence face HOLDs while Orient face fails. Mixed #7188 is a different
+z-symmetric process with mixed `M`. The second pair is a new seed, not a
+formed child: `(0,0,1)` is recorded at tick 0 with lock `+e_2`. Reverse
+oriented frame is HOLD iff equal `±1` signs at `A` and at `B`, not leftover
+of lexicographic `o1,o2`, not leftover of opposite-pair leftover-axis, and
+not leftover of nm2oridetz unique signed.
+
+### N8 — cross-cycle echo
+
+nm2axx cover on this two-axis seed reported cover fail at `A`, HOLD at
+`B,C`, fail at `D`, reverse fail, and face fail. nm2ax12x 1-in 2-out split
+on the same seed reported split fail at `A`, HOLD at `B,C`, fail at `D`,
+reverse fail, and face fail. Lexicographic `o1,o2` on the same x-probes
+reported Orient fail, `+1`, `+1`, fail, reverse fail, and face fail.
+Opposite-pair leftover-axis on the same x-probes reported Orient fail at
+`A` and `−1` at `B`. Unique signed `|O_i|=1` on the same x-probes reported
+Orient fail at `B` from `|O ∩ {±e_3}|=2`. Leftover axis reported leftover
+`{e_2}` at `A` and at `D`, empty leftover at `B` and at `C`, leftover
+reverse fail, and leftover face fail. The four z-probes of this same seed
+reported lex-one reverse fail and lex-one face hold. The four y-probes
+reported lex-one reverse hold and lex-one face fail. This note is not
+those displays: it reports lex-one signed outgoing determinant
+orientation of the 1-in 2-out frame of `M` and `O` at `τ=t+1` on the
+two-axis opposite seed, with `t(A)=2`, `t(B)=1`, `t(C)=3`, and `t(D)=2`,
+`Orient(A)=fail`, `Orient(B)=+1`, `Orient(C)=−1`, `Orient(D)=fail`, reverse
+fail, and face fail. Cover and split do not score handedness.
+
+**Gate disposition:** PASS for the lex-one-signed-outgoing-determinant `t+1`
+reverse/face reports above. FAIL / DO NOT SHIP for “the predicate equals
+the named sign,” “the predicate equals the unique singleton lock vector,”
+“the predicate equals six-neighbor lock union,” “the predicate equals
+leftover-empty fail,” “the predicate equals leftover of `M` alone,” “the
+predicate equals leftover of `O` alone,” “the predicate equals
+exist-opposite HOLD,” “the predicate equals opposite-pair presence in
+`O`,” “the predicate equals lexicographic `o1,o2` HOLD,” “the predicate
+equals opposite-pair leftover-axis HOLD,” “the predicate equals
+nm2oridetz unique signed HOLD,” “the predicate equals nmcover axis-cover
+HOLD,” “the predicate equals nm2axx axis-cover HOLD,” “the predicate equals
+nm2ax12x 1-in 2-out split HOLD,” “the predicate equals the 1-axis opposite
+two-site seed,” “the predicate equals nmunopp union,” “bits are
+Admissibility,” “split fail is UNDEFINED,” “empty `O_i` is UNDEFINED,”
+“reverse oriented frame holds,” or “face oriented frame holds.”
+
+## Primary runner
+
+The paired runner builds Euclidean `B_3(0)`, runs the two-axis opposite
+perp-step incoming-lock process, reads each probe's own earliest incoming
+set and own outgoing dual from the record prefix at that probe's `t+1`,
+reports split of the pair, reports the unique signed incoming letter and
+the lex-one signed outgoing letters per `Axis(O)` in axis order, reports the
+integer determinant and its sign, lists new records in `B_3(0)` between
+`t` and `t+1` that meet a probe's six-neighbors, and checks Theorems 1--3.
+It also checks that Orient is fail at `A`, `+1` at `B`, `−1` at `C`, and fail
+at `D`, that reverse fails and face fails, that unique signed Orient at `B`
+fails while this Orient at `B` is `+1`, that lexicographic Orient at `C` is
+`+1` while this Orient at `C` is `−1`, that split fail is Orient fail not
+`UNDEFINED`, that empty `O_i` is Orient fail not `UNDEFINED`, that the
+1-axis opposite two-site seed is a different member with cover reverse HOLD,
+that leftover-empty fail is a different predicate, that leftover of `M`
+alone and leftover of `O` alone are different objects, that mixed sets
+remain sets, that unique-letter Orient is `UNDEFINED` at mixed `O`, that
+opposite-pair leftover-axis Orient at `B` is `−1` while this Orient at `B`
+is `+1`, that the construction does not sum, that a formation member from
+already-recorded six-neighbor locks is not attached, that the second pair is
+a new seed not a formed child, that the z-probes and y-probes of this seed
+are not this letter, and that the display is not the two-tick lock-count
+clock composition. No runner cache is written.

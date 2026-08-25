@@ -12,7 +12,7 @@
    status.
 6. DONE: run isolated mutations, strict lint, premise purity, forensic evidence
    readiness, graph/repo invariants, and relevant exact science checks.
-7. IN PROGRESS: publish a stacked PR without review-loop.  The post-result
+7. DONE: publish stacked PR #7727 without review-loop.  The post-result
    panel has already selected the event-generated minimal-memory process
    tensor as Block 199.
 

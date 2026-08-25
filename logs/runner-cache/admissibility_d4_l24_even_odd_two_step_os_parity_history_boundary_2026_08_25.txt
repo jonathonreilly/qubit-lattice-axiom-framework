@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_d4_l24_even_odd_two_step_os_parity_history_boundary_2026_08_25.py
 runner_sha256: 992b4def89a749854065b30c682fecc9341a103770b07f034adafa75f484ce5d
-input_fingerprint_sha256: a34803064f265da0e0cfff8ee87ff4fc18715976d1cf21ae6f8bcbfd56f3c0fa
+input_fingerprint_sha256: f9b46e5a45e53f97f1daf0086b997b2e2c9a3966099a3df92b871ea098ba847a
 timeout_sec: 240
 exit_code: 0
-elapsed_sec: 77.57
+elapsed_sec: 80.11
 status: ok
 ----- stdout -----
 [PASS] A: authority, preregistration ancestry, axiom/registry blobs, and literal inputs bind

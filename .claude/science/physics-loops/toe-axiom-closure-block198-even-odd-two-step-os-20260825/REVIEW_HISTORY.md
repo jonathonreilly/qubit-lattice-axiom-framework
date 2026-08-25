@@ -30,3 +30,6 @@
   pass with zero link/class-F violations and acknowledge exactly one new graph
   node with five dependency edges.  All three immediate parent caches remain
   fresh.
+- 2026-08-25: result commit `3095da19cd` pushed and stacked PR #7727 opened on
+  Block 197 without review-loop; publication metadata then entered the final
+  cache-refresh/package gate.

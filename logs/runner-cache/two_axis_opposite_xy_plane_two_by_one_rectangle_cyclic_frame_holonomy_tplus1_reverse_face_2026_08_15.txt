@@ -1,0 +1,63 @@
+===== runner cache v1 =====
+runner: scripts/two_axis_opposite_xy_plane_two_by_one_rectangle_cyclic_frame_holonomy_tplus1_reverse_face_2026_08_15.py
+runner_sha256: 6fbc948657bd84197f70c6d2a76fc89d35c7369a6223b2dde9c81a2c9da7dfcd
+input_fingerprint_sha256: dc88848cc29164a9813f63f70707af88b6e9ef9e1d18c8aaa6bf86cb9e5e87d6
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+2-by-1 xy-plane cyclic-frame holonomy at t+1
+AUDIT_INPUT_PATHS:
+  docs/TWO_AXIS_OPPOSITE_XY_PLANE_TWO_BY_ONE_RECTANGLE_CYCLIC_FRAME_HOLONOMY_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+displayed_not_adopted: true
+PASS: audit-input-paths-literal
+PASS: audit-inputs-exist
+PASS: source-lattice
+PASS: source-admissibility-unedited
+PASS: source-record-boundary
+PASS: euclidean-ball-cardinality
+PASS: seed-tick-zero
+PASS: seed-incoming-locks
+PASS: perp-step-blocks-parallel
+PASS: tick1-record-count  (14)
+PASS: signed-permutation-identity
+PASS: theorem1-seed-frames
+PASS: theorem1-later-ticks
+PASS: theorem1-mid-split-fail
+reverse cycle
+  (0,0,1)->(1,0,1) t=(0,1) formed=(1,1) split=(1,0) P=fail edge=fail
+  (1,0,1)->(2,0,1) t=(1,4) formed=(1,0) split=(0,0) P=fail edge=fail
+  (2,0,1)->(2,1,1) t=(4,4) formed=(0,0) split=(0,0) P=fail edge=fail
+  (2,1,1)->(1,1,1) t=(4,1) formed=(0,1) split=(0,0) P=fail edge=fail
+  (1,1,1)->(0,1,1) t=(1,0) formed=(1,1) split=(0,1) P=fail edge=fail
+  (0,1,1)->(0,0,1) t=(0,0) formed=(1,1) split=(1,1) P=[(1,0,0); (0,-1,0); (0,0,1)] edge=hold
+face cycle
+  (0,0,0)->(1,0,0) t=(0,2) formed=(1,0) split=(1,0) P=fail edge=fail
+  (1,0,0)->(2,0,0) t=(2,3) formed=(0,0) split=(0,0) P=fail edge=fail
+  (2,0,0)->(2,1,0) t=(3,3) formed=(0,0) split=(0,0) P=fail edge=fail
+  (2,1,0)->(1,1,0) t=(3,2) formed=(0,0) split=(0,0) P=fail edge=fail
+  (1,1,0)->(0,1,0) t=(2,0) formed=(0,1) split=(0,1) P=fail edge=fail
+  (0,1,0)->(0,0,0) t=(0,0) formed=(1,1) split=(1,1) P=[(-1,0,0); (0,-1,0); (0,0,1)] edge=hold
+PASS: theorem1-twelve-edges
+reverse=fail product=fail
+face=fail product=fail
+PASS: theorem1-reverse-product-fail
+PASS: theorem1-face-product-fail
+PASS: theorem2-reverse-fail
+PASS: theorem3-face-fail
+PASS: mutation-lex-largest-uses-minus
+PASS: outside-ball-is-fail
+PASS: not-unit-square
+PASS: note-claim-scope
+PASS: note-computed-bits
+PASS: note-forbidden-phrases
+PASS: note-no-status-overclaim
+PASS: axiom-file-unedited-by-this-packet
+TOTAL: PASS=27 FAIL=0
+
+----- stderr -----
+

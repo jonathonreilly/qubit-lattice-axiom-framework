@@ -1,0 +1,106 @@
+===== runner cache v1 =====
+runner: scripts/two_axis_opposite_yprobe_own_outgoing_set_tplus1_tplus2_composition_reverse_face_2026_08_15.py
+runner_sha256: b838f46ad745def92b76dfbeb913793680dd05228b89c2ddc289f718674894f5
+input_fingerprint_sha256: cf50c157f9583992e93bf91efe200ad9f287fb7cd4160def3892134541e8fd4c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+two-axis opposite y-probe O freeze t+1 versus t+2 reverse/face composition
+AUDIT_INPUT_PATHS:
+  docs/TWO_AXIS_OPPOSITE_YPROBE_OWN_OUTGOING_SET_TPLUS1_TPLUS2_COMPOSITION_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: O at t+1 versus t+2 on the four y-probes of the two-axis opposite seed, reverse/face at each cut, and composition, are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/TWO_AXIS_OPPOSITE_YPROBE_OWN_OUTGOING_SET_TPLUS1_TPLUS2_COMPOSITION_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-y-probes-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: existential-opposite-identity
+PASS: composition-identity
+A t=0 O(tau1)={+e_2, −e_3} O(tau2)={+e_2, −e_3}
+B t=1 O(tau1)={+e_2, +e_3, −e_3} O(tau2)={+e_2, +e_3, −e_3}
+C t=1 O(tau1)={+e_1, −e_1, +e_3, −e_3} O(tau2)={+e_1, −e_1, +e_3, −e_3}
+D t=2 O(tau1)={+e_1, −e_1} O(tau2)={+e_1, −e_1}
+reverse tau1=hold tau2=hold
+face tau1=hold tau2=hold
+composition=hold
+per_element: each lock vector in the probe's own outgoing set O(q, tau)
+per_site: scored only at y-probes A,B,C,D on Euclidean B_3(0); no other sites
+per_mode: no spectral or mode calculation is executed on this finite host
+per_block: four outgoing sets at t+1 and t+2 plus reverse/face/composition
+lattice_wide: checked and not executed — no lattice-wide lettering rule is claimed
+PASS: perp-step-incoming-lock
+PASS: undefined-if-unformed
+PASS: incoming-set-seed-singleton
+PASS: theorem1-formation-ticks  ({'A': 0, 'B': 1, 'C': 1, 'D': 2})
+PASS: theorem1-O-at-tau1  ({'A': '{+e_2, −e_3}', 'B': '{+e_2, +e_3, −e_3}', 'C': '{+e_1, −e_1, +e_3, −e_3}', 'D': '{+e_1, −e_1}'})
+PASS: theorem1-O-at-tau2  ({'A': '{+e_2, −e_3}', 'B': '{+e_2, +e_3, −e_3}', 'C': '{+e_1, −e_1, +e_3, −e_3}', 'D': '{+e_1, −e_1}'})
+PASS: theorem1-O-tau2-equals-tau1-freeze
+PASS: do-not-score-tau-t
+PASS: theorem1-M-frozen-across-tau1-tau2
+PASS: theorem1-new-records-meet-6nn  ({'A': (((0, 2, 0), (0, 1, -1)), ((1, 1, 0), (-1, 1, 0))), 'B': (((1, 2, 1), (1, 1, 2), (1, 1, 0)), ()), 'C': (((1, 2, 0), (-1, 2, 0), (0, 2, 1), (0, 2, -1)), ()), 'D': (((2, 1, 0),), ())})
+PASS: theorem1-new-tplus2-neighbor-does-not-enter-O
+PASS: theorem1-mixed-stays-a-set
+PASS: theorem1-A-is-seed
+PASS: theorem1-compare-7167-1-axis
+PASS: theorem2-reverse-tau1-and-tau2-hold  (hold/hold)
+PASS: theorem2-face-tau1-and-tau2-hold  (hold/hold)
+PASS: theorem3-composition-hold  (hold)
+PASS: discriminator-O-face-hold-vs-cover-fail
+PASS: not-M-exist-opposite-face
+PASS: not-unique-L-leftover
+PASS: O-is-not-M
+PASS: not-z-probes-or-x-probes-or-z-symmetric-or-perp
+PASS: not-y-symmetric-three-site-seed
+PASS: not-nsopp-leftover-child
+PASS: not-nnlock-named-sign
+PASS: outgoing-locks-are-nn-steps
+PASS: uniqueness-not-required
+PASS: two-axis-opposite-lock-seed
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: empty-O-is-empty-not-undefined
+PASS: mutation-nmot2opp-tau-t-undefined-composition-fail
+PASS: mutation-nmt2opp-M-two-tick-hold-fail
+PASS: mutation-nmoutopp-eventual-O
+PASS: mutation-bit-composition-leftover-is-not-O-sets
+PASS: mutation-unique-L-outgoing-would-be-undefined
+PASS: mutation-sum-cancels-mixed
+PASS: mutation-neighbor-lock-leftover-differs
+PASS: mutation-empty-or-undefined-is-undefined
+PASS: note-claim-scope
+PASS: note-reports-ticks-and-outgoing-sets
+PASS: note-reports-new-neighbors
+PASS: note-reports-hold-hold-composition-hold
+PASS: note-displayed-not-adopted
+PASS: note-not-axis-cover-or-M-leftover
+PASS: note-not-nmot2opp-t-versus-tplus1
+PASS: note-not-m-two-tick-or-eventual-o
+PASS: note-not-sign-lettering
+PASS: note-does-not-attach-formation-member
+PASS: note-not-unique-or-sum-or-star-leftover
+PASS: note-no-six-neighbor-star-as-letter
+PASS: note-not-nsopp-leftover-child
+PASS: note-no-global-T
+PASS: note-not-two-tick-lock-count-clock
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+PASS: source-letter-from-own-outgoing-set-freeze
+TOTAL: PASS=74 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,90 @@
+===== runner cache v1 =====
+runner: scripts/two_axis_same_lock_yprobe_own_incoming_set_existential_opposite_reverse_face_2026_08_15.py
+runner_sha256: 67700bb6338f8996c97803d06fd718a8ba8045b7ea8c197e29f5d9b9d9d174d0
+input_fingerprint_sha256: 36ce2fb64742227cd6985d18a26b39d96126163af195cc53a3a52c1b545b6a2c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+own incoming set exist-opposite reverse/face at t+1
+AUDIT_INPUT_PATHS:
+  docs/TWO_AXIS_SAME_LOCK_YPROBE_OWN_INCOMING_SET_EXISTENTIAL_OPPOSITE_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Reverse and face from the own incoming *set* at t+1 on the four y-probes of the two-axis same-lock seed are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/TWO_AXIS_SAME_LOCK_YPROBE_OWN_INCOMING_SET_EXISTENTIAL_OPPOSITE_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-y-probes-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: existential-opposite-identity
+A t=0 M={+e_1} exist-M-side={+e_1}
+B t=1 M={+e_1} exist-M-side={+e_1}
+C t=1 M={+e_2} exist-M-side={+e_2}
+D t=2 M={−e_3} exist-M-side={−e_3}
+exist-M reverse=fail face=fail
+two-axis-opposite reverse=hold face=fail
+1-axis same-lock reverse=fail face=hold
+cover reverse=hold face=fail
+per_element: each lock vector in the probe's own incoming set M(q, tau)
+per_site: scored only at y-probes A,B,C,D on Euclidean B_3(0); no other sites
+per_mode: no spectral or mode calculation is executed on this finite host
+per_block: four incoming sets plus reverse/face as hold, fail, or UNDEFINED
+lattice_wide: checked and not executed — no lattice-wide lettering rule is claimed
+PASS: perp-step-incoming-lock
+PASS: undefined-if-unformed
+PASS: incoming-set-seed-singleton
+PASS: neither-pair-is-opposite
+PASS: theorem1-formation-ticks  ({'A': 0, 'B': 1, 'C': 1, 'D': 2})
+PASS: theorem1-M-at-tau  ({'A': '{+e_1}', 'B': '{+e_1}', 'C': '{+e_2}', 'D': '{−e_3}'})
+PASS: theorem1-M-frozen-from-t
+PASS: theorem1-A-is-seed
+PASS: theorem1-mixed-remains-a-set
+PASS: theorem2-reverse-exist-opposite-fail  (fail)
+PASS: theorem3-face-exist-opposite-fail  (fail)
+PASS: compare-two-axis-opposite-signed-M
+PASS: compare-1-axis-same-lock-signed-M
+PASS: not-axis-cover-of-M-and-O
+PASS: not-exist-opposite-of-O
+PASS: not-unique-L-as-object
+PASS: not-nsopp-exist-opposite-hold
+PASS: not-x-probes-or-x-axis-same-or-ysym
+PASS: not-nnlock-named-sign
+PASS: incoming-locks-are-nn-steps
+PASS: uniqueness-not-required
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: mutation-empty-or-undefined-is-undefined
+PASS: mutation-no-opposite-pair-fails
+PASS: mutation-sum-is-not-the-set
+PASS: note-claim-scope
+PASS: note-reports-ticks-and-incoming-sets
+PASS: note-reports-exist-opposite-reverse-face
+PASS: note-displayed-not-adopted
+PASS: note-not-two-axis-opposite-or-1-axis
+PASS: note-not-cover-or-O-or-unique-L
+PASS: note-not-two-tick-lock-count-clock
+PASS: note-no-global-T
+PASS: note-not-sign-lettering
+PASS: note-does-not-use-occupancy
+PASS: note-not-ndot-or-occupancy-inner-product
+PASS: note-does-not-attach-formation-member
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+PASS: source-letter-from-own-incoming-set-existential-opposite
+TOTAL: PASS=57 FAIL=0
+
+----- stderr -----
+

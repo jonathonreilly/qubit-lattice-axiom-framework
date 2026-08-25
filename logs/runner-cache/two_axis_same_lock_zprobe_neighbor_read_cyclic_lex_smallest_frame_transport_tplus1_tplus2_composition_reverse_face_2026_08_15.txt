@@ -1,0 +1,108 @@
+===== runner cache v1 =====
+runner: scripts/two_axis_same_lock_zprobe_neighbor_read_cyclic_lex_smallest_frame_transport_tplus1_tplus2_composition_reverse_face_2026_08_15.py
+runner_sha256: a9a46292ecc31b65023b6942b558365f078a091a88780bbe5aa420d10c07f373
+input_fingerprint_sha256: 08f1ce06a1c82d93f3262a3402fcbaab5dd5559a99c704be1ff82cb5627c328d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+neighbor-read of cyclic lex-smallest frame transport freeze t+1 versus t+2 reverse/face composition on two-axis same-lock z-probes
+AUDIT_INPUT_PATHS:
+  docs/TWO_AXIS_SAME_LOCK_ZPROBE_NEIGHBOR_READ_CYCLIC_LEX_SMALLEST_FRAME_TRANSPORT_TPLUS1_TPLUS2_COMPOSITION_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Neighbor-read of cyclic lex-smallest frame transport at t+1 versus t+2 on the four z-probes of the two-axis same-lock seed, reverse/face at each cut, and composition, are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-z-probes-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: det-identity
+PASS: cyclic-wrap-and-lex-smallest
+PASS: signed-permutation-sending-identity
+PASS: orient-identity
+PASS: pair-orient-identity
+PASS: composition-identity
+A t=0 M(tau1)={+e_2} O(tau1)={+e_1, −e_1, +e_2, +e_3} split(tau1)=fail i=2 o_next=+e_3 o_prev=+e_1 det=fail Orient(tau1)=fail transport(tau1)=fail neighbor-read(tau1)=fail M(tau2)={+e_2} O(tau2)={+e_1, −e_1, +e_2, +e_3} Orient(tau2)=fail transport(tau2)=fail neighbor-read(tau2)=fail scalar(tau1)=fail witness(tau1)=fail
+B t=1 M(tau1)={+e_1} O(tau1)={+e_2, +e_3, −e_3} split(tau1)=hold i=1 o_next=+e_2 o_prev=+e_3 det=1 Orient(tau1)=+1 transport(tau1)=hold neighbor-read(tau1)=hold M(tau2)={+e_1} O(tau2)={+e_2, +e_3, −e_3} Orient(tau2)=+1 transport(tau2)=hold neighbor-read(tau2)=hold scalar(tau1)=hold witness(tau1)=(0, 1, 1)
+C t=1 M(tau1)={+e_3} O(tau1)={+e_1, −e_1, −e_2} split(tau1)=hold i=3 o_next=+e_1 o_prev=−e_2 det=-1 Orient(tau1)=−1 transport(tau1)=hold neighbor-read(tau1)=hold M(tau2)={+e_3} O(tau2)={+e_1, −e_1, −e_2} Orient(tau2)=−1 transport(tau2)=hold neighbor-read(tau2)=hold scalar(tau1)=fail witness(tau1)=(0, 1, 2)
+D t=1 M(tau1)={+e_1} O(tau1)={−e_2, +e_3, −e_3} split(tau1)=hold i=1 o_next=−e_2 o_prev=+e_3 det=-1 Orient(tau1)=−1 transport(tau1)=hold neighbor-read(tau1)=hold M(tau2)={+e_1} O(tau2)={−e_2, +e_3, −e_3} Orient(tau2)=−1 transport(tau2)=hold neighbor-read(tau2)=hold scalar(tau1)=hold witness(tau1)=(1, 1, 1)
+neighbor-read reverse tau1=fail tau2=fail
+neighbor-read face tau1=hold tau2=hold
+neighbor-read composition=hold
+transport reverse tau1=fail tau2=fail
+transport face tau1=hold tau2=hold
+Orient reverse tau1=fail tau2=fail
+scalar reverse tau1=fail tau2=fail
+split reverse tau1=fail tau2=fail
+cover reverse tau1=fail tau2=fail
+nm2oricyccz opposite z-probe Orient reverse=hold face=hold A=+1
+per_element: neighbor-read of the cyclic lex-smallest frame transport HOLD bit at a formed 6-NN at a probe's t+1 and t+2
+per_site: scored only at z-probes A,B,C,D on Euclidean B_3(0); no other sites
+per_mode: no spectral or mode calculation is executed on this finite host
+per_block: four neighbor-read reports at t+1 and t+2, reverse/face at each cut, composition
+lattice_wide: checked and not executed — no lattice-wide lettering rule is claimed
+PASS: perp-step-incoming-lock
+PASS: incoming-set-seed-singleton
+PASS: neither-pair-is-opposite
+PASS: undefined-if-unformed
+PASS: theorem1-formation-ticks  ({'A': 0, 'B': 1, 'C': 1, 'D': 1})
+PASS: theorem1-M-O-split  ({'A': ('{+e_2}', 'fail'), 'B': ('{+e_1}', 'hold'), 'C': ('{+e_3}', 'hold'), 'D': ('{+e_1}', 'hold')})
+PASS: theorem1-Orient  ({'A': 'fail', 'B': '+1', 'C': '−1', 'D': '−1'})
+PASS: theorem1-mixed-O-lex-smallest-not-unique
+PASS: theorem1-transport  ({'A': ('fail', 'fail', 'fail'), 'B': ('hold', 'hold', 'hold'), 'C': ('hold', 'hold', 'fail'), 'D': ('hold', 'hold', 'hold')})
+PASS: theorem1-M-frozen-from-t
+PASS: theorem1-new-records-meet-6nn  ({'A': (((1, 0, 1), (-1, 0, 1), (0, 0, 2)), ((0, -1, 1),)), 'B': (((1, 2, 1), (1, 1, 2), (1, 1, 0)), ()), 'C': (((1, 0, 2), (-1, 0, 2), (0, -1, 2)), ()), 'D': (((1, -1, 1), (1, 0, 2), (1, 0, 0)), ())})
+PASS: theorem1-M-O-Orient-transport-neighbor-read-at-tau2  ({'A': ('fail', 'fail'), 'B': ('hold', 'hold'), 'C': ('hold', 'hold'), 'D': ('hold', 'hold')})
+PASS: do-not-score-tau-t
+PASS: theorem1-new-tplus2-neighbor-does-not-enter-O
+PASS: theorem1-A-is-seed
+PASS: theorem2-reverse-neighbor-read-fail
+PASS: theorem2-face-neighbor-read-hold-at-both-cuts
+PASS: theorem3-composition-hold  (hold)
+PASS: cover-and-split-do-not-score-handedness
+PASS: split-fail-is-orient-fail-not-undefined
+PASS: empty-cyclic-side-is-orient-fail-not-undefined
+PASS: not-leftover-of-1-axis-cover-face-hold
+PASS: not-leftover-empty-fail
+PASS: mutation-leftover-of-M-or-O-alone-differs
+PASS: mutation-exist-opposite-differs
+PASS: mutation-unsigned-incoming-axis-agrees-here
+PASS: mutation-unique-letter-undefined-at-mixed-O
+PASS: mutation-sum-cancels-mixed
+PASS: O-is-not-M
+PASS: second-pair-is-seed-not-formed-child
+PASS: compare-nm2oricyccz-opposite-orient
+PASS: not-x-probes-or-y-probes-or-z-symmetric-or-perp
+PASS: not-one-axis-or-x-axis-same-or-y-symmetric-seed
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: note-claim-scope
+PASS: note-reports-M-O-split-Orient
+PASS: note-reports-new-neighbors
+PASS: note-reports-neighbor-read-reverse-face-composition
+PASS: note-displayed-not-adopted
+PASS: note-not-cover-or-split
+PASS: note-not-one-sided-or-leftover-empty
+PASS: note-not-two-tick-lock-count-clock
+PASS: note-not-mixed-7188-fail-fail
+PASS: note-no-global-T
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+PASS: transport-not-unsigned-or-unique-or-lex-largest
+TOTAL: PASS=69 FAIL=0
+
+----- stderr -----
+

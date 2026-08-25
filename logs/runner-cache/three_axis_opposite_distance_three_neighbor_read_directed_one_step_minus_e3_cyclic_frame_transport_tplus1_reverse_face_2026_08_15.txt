@@ -1,0 +1,72 @@
+===== runner cache v1 =====
+runner: scripts/three_axis_opposite_distance_three_neighbor_read_directed_one_step_minus_e3_cyclic_frame_transport_tplus1_reverse_face_2026_08_15.py
+runner_sha256: e130b67352d897fcc18b5ec6184c8026542c356e0e0804ff0e946823bd3c2e06
+input_fingerprint_sha256: f8d9da61d5436ad7abb9ee30d73205e5547136ccb7486e4ee18a55ba03b6e0c7
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+Distance-3 neighbor-read of directed 1-step cyclic-frame transport along -e3 at t+1
+AUDIT_INPUT_PATHS:
+  docs/THREE_AXIS_OPPOSITE_DISTANCE_THREE_NEIGHBOR_READ_DIRECTED_ONE_STEP_MINUS_E3_CYCLIC_FRAME_TRANSPORT_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+displayed_not_adopted: true
+PASS: audit-input-paths-literal
+PASS: audit-inputs-exist
+PASS: source-lattice
+PASS: source-admissibility-unedited
+PASS: source-record-boundary
+PASS: euclidean-ball-cardinality
+PASS: seed-tick-zero
+PASS: seed-incoming-locks
+PASS: third-pair-is-new-seed
+PASS: perp-step-blocks-parallel
+PASS: tick1-record-count  (21)
+PASS: signed-permutation-identity
+probe (0,0,0) t=0 tau=1 one_step=hold distance_three=hold
+  m=(1,0,0) o_next=(0,-1,0) o_prev=(0,0,-1) Orient=1 F=[1 0 0; 0 -1 0; 0 0 -1]
+  d3_count=33 witnesses=(-1,-1,1),(-1,1,-1),(0,1,2),(1,-1,-1),(2,-1,0)
+probe (0,1,0) t=0 tau=1 one_step=hold distance_three=hold
+  m=(-1,0,0) o_next=(0,1,0) o_prev=(0,0,-1) Orient=1 F=[-1 0 0; 0 1 0; 0 0 -1]
+  d3_count=29 witnesses=(-1,0,-1),(0,0,2),(1,0,1),(2,2,0)
+probe (0,0,1) t=0 tau=1 one_step=hold distance_three=hold
+  m=(0,1,0) o_next=(0,0,1) o_prev=(-1,0,0) Orient=-1 F=[0 0 -1; 1 0 0; 0 1 0]
+  d3_count=29 witnesses=(-1,0,-1)
+probe (0,1,1) t=0 tau=1 one_step=hold distance_three=hold
+  m=(0,-1,0) o_next=(0,0,1) o_prev=(-1,0,0) Orient=1 F=[0 0 -1; -1 0 0; 0 1 0]
+  d3_count=25 witnesses=(-1,-1,1),(-1,1,-1),(0,0,-1)
+  edge (0,0,0)->(0,0,-1) formed=(1,1) split=(1,1) P=[0 1 0; 0 0 1; -1 0 0] edge=hold
+PASS: named-edge-(0,0,0)-(0,0,-1)
+  edge (0,1,0)->(0,1,-1) formed=(1,1) split=(1,1) P=[0 -1 0; 0 0 -1; 1 0 0] edge=hold
+PASS: named-edge-(0,1,0)-(0,1,-1)
+  edge (0,0,1)->(0,0,0) formed=(1,1) split=(1,1) P=[0 1 0; 0 0 -1; 1 0 0] edge=hold
+PASS: named-edge-(0,0,1)-(0,0,0)
+  edge (0,1,1)->(0,1,0) formed=(1,1) split=(1,1) P=[0 1 0; 0 0 1; 1 0 0] edge=hold
+PASS: named-edge-(0,1,1)-(0,1,0)
+reverse=hold bits=('hold', 'hold')
+face=hold bits=('hold', 'hold')
+PASS: theorem1-seed-frames
+PASS: theorem1-dest-frames
+PASS: theorem1-one-step-bits-hold
+PASS: theorem1-distance-three-bits-hold
+PASS: theorem1-existential-witnesses
+PASS: theorem2-reverse-hold
+PASS: theorem3-face-hold
+PASS: one-step-fail-distance-three-fail-not-undefined
+PASS: not-leftover-of-distance-two
+PASS: not-leftover-of-six-neighbor
+PASS: distance-three-not-six-neighbor
+PASS: mutation-lex-largest-uses-minus
+PASS: outside-ball-is-fail
+PASS: note-claim-scope
+PASS: note-computed-bits
+PASS: note-forbidden-phrases
+PASS: note-no-status-overclaim
+PASS: axiom-file-unedited-by-this-packet
+TOTAL: PASS=34 FAIL=0
+
+----- stderr -----
+

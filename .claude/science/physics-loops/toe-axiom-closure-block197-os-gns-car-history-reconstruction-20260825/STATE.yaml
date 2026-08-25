@@ -1,0 +1,15 @@
+loop_id: toe-axiom-closure-block197-os-gns-car-history-reconstruction-20260825
+block: 197
+status: preregistered
+phase: target_frozen_before_execution
+branch: physics-loop/toe-axiom-closure-block197-os-gns-car-history-reconstruction-20260825
+parent_commit: f847227012
+origin_main: b11811704efa98a12272d572f666e530a807f6c1
+target: literal_Block192_finite_circle_Berezin_OS_seed_then_GNS_CAR_event_history
+known_exploratory_result: radius_one_uniform_plane_degree_one_form_appears_indefinite
+response_sealed: true
+heldouts_sealed: true
+toe_scores_frozen: true
+axiom_edit_allowed: false
+review_loop_allowed: false
+

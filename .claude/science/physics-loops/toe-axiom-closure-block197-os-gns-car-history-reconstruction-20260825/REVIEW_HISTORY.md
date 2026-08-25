@@ -16,3 +16,11 @@
   `(16,160,16)` in positive/null/negative order.
 - 2026-08-25: scalar AP/seam repair passes the declared local/degree-one
   controls, while exact common-twist arithmetic excludes both frozen modes.
+- 2026-08-25: result committed at `cb1f514791`; strict audit lint has zero
+  errors, axiom premise purity passes, direct forensic N5 readiness returns no
+  issue, and repo invariants report zero link/class-F violations with the
+  one-node/five-edge graph delta acknowledged.
+- 2026-08-25: the full pipeline passed through effective-status computation
+  and then repeated the inherited dependency-policy epoch mismatch from the
+  parent stack (`build_citation_graph.py` actual `c58180...`, manifest expected
+  `206982...`).  All generated audit surfaces were dropped.

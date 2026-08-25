@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_d4_l24_berezin_os_spin_structure_boundary_2026_08_25.py
 runner_sha256: b276198636bdef419dfc26a60b796476c75a21496ff08dde6ddf670ede895b10
-input_fingerprint_sha256: f4596508e213ba2e63aba3c34f06305a85ae30f560fde9136dd97eed41b9961c
+input_fingerprint_sha256: 7a3bea5857c6e3fc5eb3ec9cd07901528cf1ec618b6d3f30f392c0b587ba7a47
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.29
+elapsed_sec: 2.33
 status: ok
 ----- stdout -----
 [PASS] A: authority, preregistration ancestry, axiom/registry blobs, and literal inputs bind

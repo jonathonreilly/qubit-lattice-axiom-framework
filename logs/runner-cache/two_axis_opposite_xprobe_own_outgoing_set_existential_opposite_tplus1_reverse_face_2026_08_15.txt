@@ -1,0 +1,96 @@
+===== runner cache v1 =====
+runner: scripts/two_axis_opposite_xprobe_own_outgoing_set_existential_opposite_tplus1_reverse_face_2026_08_15.py
+runner_sha256: fefeaaf3d6fd0613461110d2417b12a74ba2915f00cb84e9bb1de0bd75df78f6
+input_fingerprint_sha256: ce73590b11d166d32dfe7caddae05b7b97017d3ca3c9aa4fb247db943429ba1b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+two-axis opposite seed own outgoing set exist-opposite reverse/face at t+1
+AUDIT_INPUT_PATHS:
+  docs/TWO_AXIS_OPPOSITE_XPROBE_OWN_OUTGOING_SET_EXISTENTIAL_OPPOSITE_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Reverse and face from the own outgoing *set* at t+1 on the four x-probes of the two-axis opposite seed are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/TWO_AXIS_OPPOSITE_XPROBE_OWN_OUTGOING_SET_EXISTENTIAL_OPPOSITE_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-x-probes-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: existential-opposite-identity
+A t=2 M={−e_3} O={+e_1}
+B t=1 M={+e_1} O={+e_2, +e_3, −e_3}
+C t=3 M={+e_1} O={−e_2, +e_3, −e_3}
+D t=2 M={−e_3} O={+e_1, −e_1}
+O reverse=fail face=fail
+M reverse=fail face=fail
+cover reverse=fail face=fail
+per_element: each lock vector in the probe's own outgoing set O(q, tau)
+per_site: scored only at x-probes A,B,C,D on Euclidean B_3(0); no other sites
+per_mode: no spectral or mode calculation is executed on this finite host
+per_block: four outgoing sets at t+1 plus reverse/face as hold, fail, or UNDEFINED
+lattice_wide: checked and not executed — no lattice-wide lettering rule is claimed
+PASS: perp-step-incoming-lock
+PASS: undefined-if-unformed
+PASS: incoming-set-seed-singleton
+PASS: theorem1-formation-ticks  ({'A': 2, 'B': 1, 'C': 3, 'D': 2})
+PASS: theorem1-M-at-tau  ({'A': '{−e_3}', 'B': '{+e_1}', 'C': '{+e_1}', 'D': '{−e_3}'})
+PASS: theorem1-O-at-tau  ({'A': '{+e_1}', 'B': '{+e_2, +e_3, −e_3}', 'C': '{−e_2, +e_3, −e_3}', 'D': '{+e_1, −e_1}'})
+PASS: theorem1-M-frozen-from-t
+PASS: theorem1-new-records-meet-6nn  ({'A': ((2, 0, 0),), 'B': ((1, 2, 1), (1, 1, 2), (1, 1, 0)), 'C': ((2, -1, 0), (2, 0, 1), (2, 0, -1)), 'D': ((2, 1, 0),)})
+PASS: theorem1-mixed-stays-a-set
+PASS: theorem1-A-is-not-seed
+PASS: theorem1-compare-7167-1-axis
+PASS: theorem2-reverse-fail  (fail)
+PASS: theorem3-face-fail  (fail)
+PASS: discriminator-O-fail-where-cover-fail
+PASS: not-M-exist-opposite-letter
+PASS: not-unique-L-leftover
+PASS: O-is-not-M
+PASS: not-y-probes-or-z-symmetric-or-perp
+PASS: not-z-probes
+PASS: not-y-symmetric-three-site-seed
+PASS: not-nsopp-leftover-child
+PASS: not-nnlock-named-sign
+PASS: outgoing-locks-are-nn-steps
+PASS: uniqueness-not-required
+PASS: two-axis-opposite-lock-seed
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: empty-O-is-empty-not-undefined
+PASS: mutation-empty-or-undefined-is-undefined
+PASS: mutation-no-opposite-pair-fails
+PASS: mutation-unique-L-outgoing-would-be-undefined
+PASS: mutation-sum-cancels-mixed
+PASS: O-at-t-is-not-this-tplus1-letter
+PASS: note-claim-scope
+PASS: note-reports-ticks-and-outgoing-sets
+PASS: note-reports-new-neighbors
+PASS: note-reports-fail-fail
+PASS: note-displayed-not-adopted
+PASS: note-not-axis-cover-or-M-leftover
+PASS: note-not-sign-lettering
+PASS: note-does-not-attach-formation-member
+PASS: note-not-unique-or-sum-or-star-leftover
+PASS: note-no-six-neighbor-star-as-letter
+PASS: note-not-nsopp-leftover-child
+PASS: note-no-global-T
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+PASS: source-letter-from-own-outgoing-set-existential-opposite
+TOTAL: PASS=64 FAIL=0
+
+----- stderr -----
+

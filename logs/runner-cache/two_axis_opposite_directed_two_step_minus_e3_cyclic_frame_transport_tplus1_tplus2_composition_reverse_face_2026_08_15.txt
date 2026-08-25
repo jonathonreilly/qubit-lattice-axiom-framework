@@ -1,0 +1,101 @@
+===== runner cache v1 =====
+runner: scripts/two_axis_opposite_directed_two_step_minus_e3_cyclic_frame_transport_tplus1_tplus2_composition_reverse_face_2026_08_15.py
+runner_sha256: 7c6ace720d2daf35d4915cf5bbb17d7496877d18003353fb50a708d33f39fc06
+input_fingerprint_sha256: 425474900a7034b53a34b80544b6e7dbbd6454e7ed9cbaf76eeec7cabd917200
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+Directed 2-step cyclic-frame transport along -e3 freeze t+1 vs t+2
+AUDIT_INPUT_PATHS:
+  docs/TWO_AXIS_OPPOSITE_DIRECTED_TWO_STEP_MINUS_E3_CYCLIC_FRAME_TRANSPORT_TPLUS1_TPLUS2_COMPOSITION_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+displayed_not_adopted: true
+PASS: audit-input-paths-literal
+PASS: audit-inputs-exist
+PASS: source-lattice
+PASS: source-admissibility-unedited
+PASS: source-record-boundary
+PASS: euclidean-ball-cardinality
+PASS: seed-tick-zero
+PASS: seed-incoming-locks
+PASS: perp-step-blocks-parallel
+PASS: mixed-emit-end-site
+PASS: signed-permutation-identity
+cut tau=t+1
+probe (0,0,0) t=0 tau=1 two_step=fail
+  m=(1,0,0) o_next=(0,-1,0) o_prev=(0,0,-1) Orient=1
+  edge (0,0,0)->(0,0,-1) P=[0 -1 0; 0 0 1; 1 0 0] edge=hold
+PASS: named-first-edge-tplus1-(0,0,0)-(0,0,-1)
+  edge (0,0,-1)->(0,0,-2) P=fail edge=fail
+PASS: named-second-edge-tplus1-(0,0,-1)-(0,0,-2)
+probe (0,1,0) t=0 tau=1 two_step=fail
+  m=(-1,0,0) o_next=(0,1,0) o_prev=(0,0,-1) Orient=1
+  edge (0,1,0)->(0,1,-1) P=[0 1 0; 0 0 1; 1 0 0] edge=hold
+PASS: named-first-edge-tplus1-(0,1,0)-(0,1,-1)
+  edge (0,1,-1)->(0,1,-2) P=fail edge=fail
+PASS: named-second-edge-tplus1-(0,1,-1)-(0,1,-2)
+probe (0,0,1) t=0 tau=1 two_step=hold
+  m=(0,1,0) o_next=(0,0,1) o_prev=(-1,0,0) Orient=-1
+  edge (0,0,1)->(0,0,0) P=[0 -1 0; 0 0 -1; -1 0 0] edge=hold
+PASS: named-first-edge-tplus1-(0,0,1)-(0,0,0)
+  edge (0,0,0)->(0,0,-1) P=[0 -1 0; 0 0 1; 1 0 0] edge=hold
+PASS: named-first-edge-tplus1-(0,0,0)-(0,0,-1)
+probe (0,1,1) t=0 tau=1 two_step=hold
+  m=(0,-1,0) o_next=(0,0,1) o_prev=(-1,0,0) Orient=1
+  edge (0,1,1)->(0,1,0) P=[0 -1 0; 0 0 -1; 1 0 0] edge=hold
+PASS: named-first-edge-tplus1-(0,1,1)-(0,1,0)
+  edge (0,1,0)->(0,1,-1) P=[0 1 0; 0 0 1; 1 0 0] edge=hold
+PASS: named-first-edge-tplus1-(0,1,0)-(0,1,-1)
+reverse at t+1=fail bits=('fail', 'fail')
+face at t+1=hold bits=('hold', 'hold')
+cut tau=t+2
+probe (0,0,0) t=0 tau=2 two_step=fail
+  m=(1,0,0) o_next=(0,-1,0) o_prev=(0,0,-1) Orient=1
+  edge (0,0,0)->(0,0,-1) P=[0 -1 0; 0 0 1; 1 0 0] edge=hold
+PASS: named-first-edge-tplus2-(0,0,0)-(0,0,-1)
+  edge (0,0,-1)->(0,0,-2) P=fail edge=fail
+PASS: named-second-edge-tplus2-(0,0,-1)-(0,0,-2)
+probe (0,1,0) t=0 tau=2 two_step=fail
+  m=(-1,0,0) o_next=(0,1,0) o_prev=(0,0,-1) Orient=1
+  edge (0,1,0)->(0,1,-1) P=[0 1 0; 0 0 1; 1 0 0] edge=hold
+PASS: named-first-edge-tplus2-(0,1,0)-(0,1,-1)
+  edge (0,1,-1)->(0,1,-2) P=fail edge=fail
+PASS: named-second-edge-tplus2-(0,1,-1)-(0,1,-2)
+probe (0,0,1) t=0 tau=2 two_step=hold
+  m=(0,1,0) o_next=(0,0,1) o_prev=(-1,0,0) Orient=-1
+  edge (0,0,1)->(0,0,0) P=[0 -1 0; 0 0 -1; -1 0 0] edge=hold
+PASS: named-first-edge-tplus2-(0,0,1)-(0,0,0)
+  edge (0,0,0)->(0,0,-1) P=[0 -1 0; 0 0 1; 1 0 0] edge=hold
+PASS: named-first-edge-tplus2-(0,0,0)-(0,0,-1)
+probe (0,1,1) t=0 tau=2 two_step=hold
+  m=(0,-1,0) o_next=(0,0,1) o_prev=(-1,0,0) Orient=1
+  edge (0,1,1)->(0,1,0) P=[0 -1 0; 0 0 -1; 1 0 0] edge=hold
+PASS: named-first-edge-tplus2-(0,1,1)-(0,1,0)
+  edge (0,1,0)->(0,1,-1) P=[0 1 0; 0 0 1; 1 0 0] edge=hold
+PASS: named-first-edge-tplus2-(0,1,0)-(0,1,-1)
+reverse at t+2=fail bits=('fail', 'fail')
+face at t+2=hold bits=('hold', 'hold')
+composition=hold reverse=(fail,fail) face=(hold,hold)
+PASS: theorem1-seed-frames-both-cuts
+PASS: theorem1-mid-frames-both-cuts
+PASS: theorem1-two-step-bits-both-cuts
+PASS: theorem2-reverse-fail-both-cuts
+PASS: theorem3-face-hold-both-cuts
+PASS: theorem3-composition-hold
+PASS: not-leftover-of-one-step-freeze
+PASS: not-leftover-of-prior-freeze
+PASS: outside-ball-is-fail
+PASS: first-p-det-matches-orient-product
+PASS: note-claim-scope
+PASS: note-computed-bits
+PASS: note-forbidden-phrases
+PASS: note-no-status-overclaim
+PASS: axiom-file-unedited-by-this-packet
+TOTAL: PASS=42 FAIL=0
+
+----- stderr -----
+

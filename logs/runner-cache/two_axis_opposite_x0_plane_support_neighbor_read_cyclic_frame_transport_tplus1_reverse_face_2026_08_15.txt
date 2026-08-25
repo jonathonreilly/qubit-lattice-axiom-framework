@@ -1,0 +1,126 @@
+===== runner cache v1 =====
+runner: scripts/two_axis_opposite_x0_plane_support_neighbor_read_cyclic_frame_transport_tplus1_reverse_face_2026_08_15.py
+runner_sha256: 38ae4cba47954134e2282dfc8ab3501229e6f145eb3718aa72e66f5efb75dff0
+input_fingerprint_sha256: 394406ec213f3d4cdb17ac1ccc750cc926cfdab773b7cca388c8711c1d9beadd
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+x=0 plane support of neighbor-read of cyclic-frame transport reverse/face at t+1
+AUDIT_INPUT_PATHS:
+  docs/TWO_AXIS_OPPOSITE_X0_PLANE_SUPPORT_NEIGHBOR_READ_CYCLIC_FRAME_TRANSPORT_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Plane support of neighbor-read of cyclic-frame transport on the x=0 versus x=1 formed sites in B_3 at t+1 on the two-axis opposite seed, and reverse/face from that, are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/TWO_AXIS_OPPOSITE_X0_PLANE_SUPPORT_NEIGHBOR_READ_CYCLIC_FRAME_TRANSPORT_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-z-probes-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: det-identity
+PASS: sending-identity
+PASS: empty-plane-is-fail-not-undefined
+PASS: orient-identity
+|Q0|=27 hold=10 fail=17
+|Q1|=25 hold=10 fail=15
+Q0 (0, -3, 0) t=5 neighbor-read=fail
+Q0 (0, -2, -2) t=4 neighbor-read=fail
+Q0 (0, -2, -1) t=3 neighbor-read=fail
+Q0 (0, -2, 0) t=4 neighbor-read=fail
+Q0 (0, -2, 1) t=3 neighbor-read=fail
+Q0 (0, -2, 2) t=4 neighbor-read=fail
+Q0 (0, -1, -2) t=3 neighbor-read=fail
+Q0 (0, -1, -1) t=2 neighbor-read=fail
+Q0 (0, -1, 0) t=1 neighbor-read=hold
+Q0 (0, -1, 1) t=2 neighbor-read=fail
+Q0 (0, -1, 2) t=2 neighbor-read=fail
+Q0 (0, 0, -3) t=5 neighbor-read=fail
+Q0 (0, 0, -2) t=4 neighbor-read=fail
+Q0 (0, 0, -1) t=1 neighbor-read=hold
+Q0 (0, 0, 0) t=0 neighbor-read=hold
+Q0 (0, 0, 1) t=0 neighbor-read=hold
+Q0 (0, 0, 2) t=1 neighbor-read=hold
+Q0 (0, 1, -2) t=4 neighbor-read=fail
+Q0 (0, 1, -1) t=1 neighbor-read=hold
+Q0 (0, 1, 0) t=0 neighbor-read=hold
+Q0 (0, 1, 1) t=0 neighbor-read=hold
+Q0 (0, 1, 2) t=1 neighbor-read=hold
+Q0 (0, 2, -2) t=3 neighbor-read=fail
+Q0 (0, 2, -1) t=2 neighbor-read=fail
+Q0 (0, 2, 0) t=1 neighbor-read=hold
+Q0 (0, 2, 1) t=2 neighbor-read=fail
+Q0 (0, 2, 2) t=2 neighbor-read=fail
+Q1 (1, -2, -2) t=5 neighbor-read=fail
+Q1 (1, -2, -1) t=4 neighbor-read=fail
+Q1 (1, -2, 0) t=3 neighbor-read=hold
+Q1 (1, -2, 1) t=4 neighbor-read=fail
+Q1 (1, -2, 2) t=4 neighbor-read=fail
+Q1 (1, -1, -2) t=4 neighbor-read=fail
+Q1 (1, -1, -1) t=3 neighbor-read=fail
+Q1 (1, -1, 0) t=2 neighbor-read=hold
+Q1 (1, -1, 1) t=2 neighbor-read=hold
+Q1 (1, -1, 2) t=3 neighbor-read=fail
+Q1 (1, 0, -2) t=3 neighbor-read=hold
+Q1 (1, 0, -1) t=2 neighbor-read=hold
+Q1 (1, 0, 0) t=2 neighbor-read=fail
+Q1 (1, 0, 1) t=1 neighbor-read=hold
+Q1 (1, 0, 2) t=2 neighbor-read=fail
+Q1 (1, 1, -2) t=3 neighbor-read=hold
+Q1 (1, 1, -1) t=2 neighbor-read=hold
+Q1 (1, 1, 0) t=2 neighbor-read=fail
+Q1 (1, 1, 1) t=1 neighbor-read=hold
+Q1 (1, 1, 2) t=2 neighbor-read=fail
+Q1 (1, 2, -2) t=4 neighbor-read=fail
+Q1 (1, 2, -1) t=3 neighbor-read=fail
+Q1 (1, 2, 0) t=2 neighbor-read=fail
+Q1 (1, 2, 1) t=2 neighbor-read=hold
+Q1 (1, 2, 2) t=3 neighbor-read=fail
+plane-support reverse=fail face=fail
+site-local transport plane reverse=fail face=fail
+fail-witness Q0=(0, -3, 0) Q1=(1, -2, -2)
+z-probe transport reverse=hold face=hold
+universal 6-NN reverse=fail face=fail
+existential 6-NN reverse=hold face=hold
+early-tick plane reverse=hold face=hold
+per_element: neighbor-read of cyclic-frame transport at every formed-at-tau site on the x=0 and x=1 planes
+per_site: scored on formed sites with q_1=0 and q_1=1 in Euclidean B_3(0)
+per_mode: no spectral or mode calculation is executed on this finite host
+per_block: Q0/Q1 neighbor-read reports, reverse/face from those plane foralls
+lattice_wide: checked and not executed — no lattice-wide lettering rule is claimed
+PASS: perp-step-incoming-lock
+PASS: undefined-if-unformed
+PASS: theorem1-Q0-Q1-sites  (|Q0|=27 |Q1|=25)
+PASS: theorem1-ticks-and-neighbor-read-bits
+PASS: theorem2-reverse-x0-plane-support-fail
+PASS: theorem3-face-x1-plane-support-fail
+PASS: not-6nn-forall-and-not-zprobe-or-site-local-transport
+PASS: cover-and-split-do-not-score-plane-support
+PASS: not-leftover-of-1-axis-or-same-lock-or-live
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: note-claim-scope
+PASS: note-reports-Q0-Q1-neighbor-read
+PASS: note-reports-reverse-face
+PASS: note-displayed-not-adopted
+PASS: note-not-6nn-or-zprobe-or-site-local-leftovers
+PASS: note-not-two-tick-lock-count-clock
+PASS: note-not-mixed-7188-fail-fail
+PASS: note-no-global-T
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+TOTAL: PASS=40 FAIL=0
+
+----- stderr -----
+

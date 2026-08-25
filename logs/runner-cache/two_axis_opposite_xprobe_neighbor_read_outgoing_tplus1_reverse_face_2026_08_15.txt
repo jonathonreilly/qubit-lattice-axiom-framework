@@ -1,0 +1,85 @@
+===== runner cache v1 =====
+runner: scripts/two_axis_opposite_xprobe_neighbor_read_outgoing_tplus1_reverse_face_2026_08_15.py
+runner_sha256: 0ffd07b9933f69079b33854877ac6f95188b4838cd49c20aa8c7360e3801a209
+input_fingerprint_sha256: 897016f4c7024ce8967473d94f2fb4cf82611ed4c67ef2d868e804a57534a428
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+neighbor-read of O reverse/face at t+1 on two-axis opposite x-probes
+AUDIT_INPUT_PATHS:
+  docs/TWO_AXIS_OPPOSITE_XPROBE_NEIGHBOR_READ_OUTGOING_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Neighbor-read of O at t+1 on the four x-probes of the two-axis opposite seed, and reverse/face from that, are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/TWO_AXIS_OPPOSITE_XPROBE_NEIGHBOR_READ_OUTGOING_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-x-probes-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: pair-read-identity
+PASS: neighbor-read-identity
+A t=2 O={+e_1} neighbor-read=fail
+B t=1 O={+e_2, +e_3, −e_3} neighbor-read=fail
+C t=3 O={−e_2, +e_3, −e_3} neighbor-read=fail
+D t=2 O={+e_1, −e_1} neighbor-read=fail
+neighbor-read reverse=fail face=fail
+per_element: each earliest outgoing lock set O at a probe and at formed 6-NN, compared as sets at the probe's t+1
+per_site: scored only at x-probes A,B,C,D on Euclidean B_3(0); no other sites
+per_mode: no spectral or mode calculation is executed on this finite host
+per_block: four neighbor-read reports, reverse/face from those bits
+lattice_wide: checked and not executed — no lattice-wide lettering rule is claimed
+PASS: perp-step-incoming-lock
+PASS: undefined-if-unformed
+PASS: theorem1-formation-ticks  ({'A': 2, 'B': 1, 'C': 3, 'D': 2})
+PASS: theorem1-O-at-tau  ({'A': '{+e_1}', 'B': '{+e_2, +e_3, −e_3}', 'C': '{−e_2, +e_3, −e_3}', 'D': '{+e_1, −e_1}'})
+PASS: theorem1-O-not-frozen-from-t
+PASS: theorem1-O-is-not-M
+PASS: theorem1-formed-6nn-O-at-A  ((2, 0, 0)={}, (0, 0, 0)={−e_2, −e_3}, (1, 1, 0)={+e_1, −e_1}, (1, -1, 0)={−e_2, −e_3}, (1, 0, 1)={−e_2, +e_3, −e_3}, (1, 0, -1)={−e_2, −e_3})
+PASS: theorem1-formed-6nn-O-at-B  ((2, 1, 1)=UNDEFINED, (0, 1, 1)={+e_1, −e_1, +e_3}, (1, 2, 1)={}, (1, 0, 1)={−e_2, +e_3, −e_3}, (1, 1, 2)={}, (1, 1, 0)={−e_1})
+PASS: theorem1-formed-6nn-O-at-C  ((1, 0, 0)={+e_1}, (2, 1, 0)={+e_2, +e_3, −e_3}, (2, -1, 0)={}, (2, 0, 1)={}, (2, 0, -1)={})
+PASS: theorem1-formed-6nn-O-at-D  ((2, 1, 0)={}, (0, 1, 0)={+e_2, −e_3}, (1, 2, 0)={−e_3}, (1, 0, 0)={+e_1}, (1, 1, 1)={+e_2, +e_3, −e_3}, (1, 1, -1)={+e_2, −e_3})
+PASS: theorem1-neighbor-read-bits  ({'A': ('fail', ()), 'B': ('fail', ()), 'C': ('fail', ()), 'D': ('fail', ())})
+PASS: theorem1-mixed-stays-a-set
+PASS: theorem1-A-is-not-seed
+PASS: theorem2-reverse-fail  (fail)
+PASS: theorem3-face-fail  (fail)
+PASS: empty-at-t-is-leftover
+PASS: mutation-r-style-differs
+PASS: mutation-neighbor-read-of-M-differs
+PASS: mutation-forall-perp-and-simultaneous-differ
+PASS: mutation-nm2axx-cover-differs
+PASS: mutation-unique-letter-mixed-O
+PASS: not-y-probes-or-z-probes-or-perp
+PASS: compare-same-lock-x-neighbor-read-of-O
+PASS: not-nsopp-leftover-second-pair-is-seed
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: note-claim-scope
+PASS: note-reports-O-and-neighbor-read
+PASS: note-reports-formed-neighbors
+PASS: note-reports-reverse-face
+PASS: note-displayed-not-adopted
+PASS: note-not-cover-or-perp-or-M-leftover
+PASS: note-no-global-T
+PASS: note-forbids-enlargement-and-cache
+PASS: note-does-not-use-occupancy
+PASS: note-uniqueness-not-required
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+PASS: neighbor-read-fails-on-x-probes
+TOTAL: PASS=55 FAIL=0
+
+----- stderr -----
+

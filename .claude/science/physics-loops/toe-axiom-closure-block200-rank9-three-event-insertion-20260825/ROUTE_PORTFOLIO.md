@@ -1,18 +1,25 @@
 # Route Portfolio
 
-The post-Block-199 five-role panel voted `4-1-0` for insertion before the
-independent scalar boundary.  Priors are for positively retained bounded
-bridges, not TOE percentages.
+The post-Block-200 five-role recheck preserves insertion before the independent
+scalar boundary, but changes the insertion object.  The tested full-exterior
+projective lift is pruned; the direct action functional is now first.  Priors
+are for a positive closure of the named dependency, not TOE percentages and
+not the probability of obtaining another scoped negative.
 
-| rank | campaign | dependency | `P+` | compute | `P+/compute` |
+| rank | campaign | dependency closed by a positive | `P+` | compute | `P+/compute` |
 |---:|---|---|---:|---:|---:|
-| 1 | E8 effect insertion plus triple selector; O9 lift conditional | `W_I` | 0.34 | 1.0 | 0.34 |
-| 2 | L12 cyclic-to-causal scalar boundary | `W_B` | 0.27 | 1.25 | 0.22 |
-| 3 | source-differentiated rank-nine cylinders | `W_I` first | 0.16 | 1.5 | 0.11 |
-| 4 | restricted rank-nine causal process | `W_I and W_B` | 0.05 now | 2.5 | 0.02 |
-| 5 | full 64-control Record/Born expansion | both plus 55 controls | below 0.01 | above 5 | below 0.002 |
+| 1 | direct 512-word Schur/Wick functional | physical insertion `W_I` | 0.29 | 1.10 | 0.26 |
+| 2 | L12 cyclic-to-causal scalar boundary | boundary `W_B` | 0.25 | 1.25 | 0.20 |
+| 3 | covariant POVM/null semantics | changed-algebra `W_I` | 0.12 | 0.80 | 0.15 |
+| 4 | action-derived support/filling | support route through `W_I` | 0.11 | 1.50 | 0.07 |
+| 5 | centered-symbol common-action gravity pincer | gravity/source descent | 0.08 | 2.75 | 0.03 |
+| 6 | materially changed Nambu/OS-GNS | alternate history representation | 0.06 | 2.75 | 0.02 |
+| 7 | restricted causal process | downstream of `W_I` and `W_B` | 0.04 | 3.25 | 0.01 |
+| 8 | justified minimal-axiom update | event/state selection evidence | 0.015 | at least 4 | below 0.01 |
 
-Block 200 funds only rank 1 after splitting its types.  The Euclidean E8
-cylinder may close positively without the O9 operational lift or causal
-boundary.  It must decide a genuine three-crossing value; pair fitting is not
-closure.  Re-rank at T2, T4, T5, or any earlier hard stop.
+The shortest visible chain is `direct W_I -> derived W_B -> restricted causal
+process -> response/Record`.  Block 201 should use a typed-intertwiner gate and
+one exact D1 gluing witness before enumerating 512 words.  If either fails,
+close that family narrowly and rerank; do not silently pivot to POVM/null in
+the same result.  With independent capacity, the L12 boundary is complementary
+and may run in parallel.

@@ -1,6 +1,6 @@
 {
- "edge_count": 16180,
- "node_count": 5628,
+ "edge_count": 16186,
+ "node_count": 5629,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -453,6 +453,10 @@
   "admissibility_d4_l24_event_history_interface_hankel_process_boundary_bounded_theorem_note_2026-08-25": {
    "deps_hash": "1018ebf3ca55",
    "out_degree": 5
+  },
+  "admissibility_d4_l24_exterior_natural_e8_insertion_obstruction_bounded_theorem_note_2026-08-25": {
+   "deps_hash": "a4f5c2317b59",
+   "out_degree": 6
   },
   "admissibility_d4_l24_prefix_instrument_selection_boundary_bounded_theorem_note_2026-08-25": {
    "deps_hash": "c8eee4235fc9",

@@ -25,3 +25,21 @@
   fixed-label action.  No T3--T5 value was executed or observed.  The two dry
   runs are discarded as evidence; this disclosed erratum is frozen before a
   fresh primary run and before the independent checker's first execution.
+- 2026-08-25: corrected primary reexecution passed `5/5` and rejected `28/28`
+  mutations.  It validated exact all-nine-radius Q024/Q02 Schur structure and
+  stopped at T2 before all 512 cylinders.
+- 2026-08-25: the no-import checker independently passed `19/19` and rejected
+  `17/17` mutations, including stale preregistration, boundary remapping,
+  tensor-order, reflection, cubic-context, vacuum, and early-gate mutations.
+- 2026-08-25: N1--N8 rejected a broad action/history no-go and supported only
+  the number-preserving exterior-natural projective obstruction.  Direct
+  Schur/Wick probabilities, POVM/null outcomes, derived support, degree mixing,
+  OS/GNS, and the scalar causal boundary remain live.  No axiom edit,
+  obligation retirement, audit verdict, or TOE score movement is claimed.
+- 2026-08-25: post-result five-role recheck ranked the direct Schur/Wick
+  functional first (`P+/compute=0.26`) and the independent scalar boundary
+  second (`0.20`).  It inserted a typed-intertwiner gate and a single exact D1
+  gluing witness before any full 512-word enumeration.
+- 2026-08-25: latest open PRs rechecked directly.  Consecutive stack
+  #7723--#7728 remains open and clean, no newer conflicting science PR is
+  present, and `origin/main` remains `b11811704e`.

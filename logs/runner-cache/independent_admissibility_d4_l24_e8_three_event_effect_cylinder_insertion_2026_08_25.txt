@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/independent_admissibility_d4_l24_e8_three_event_effect_cylinder_insertion_2026_08_25.py
+runner_sha256: 5b414c4dbb78749ea6c449c2a0ae3a9c255894a42173c80ecb704806e34283bf
+input_fingerprint_sha256: 773dd9fc4b69546ff24ec55390e1d7ff8b1ba784b705c5f0477e85942d26e04e
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 20.69
+status: ok
+----- stdout -----
+[PASS] P0: the exact preregistration commit is ancestral and this checker has no project imports
+[PASS] T0.1: the L24 even Schur geometry and the two frozen index spaces are distinct
+[PASS] T0.2: Q024 and Q02 agree by direct Schur, covariance-block inversion, determinant, and nesting routes at all nine radii
+[PASS] T0.3: all boundary kernels have the exact positive inertia and reflection/proper-cubic structural typing
+[PASS] T0.4: the D1 two-sector lifts reproduce ranks 96/64/32 and non-Hermitian defects 48/32
+[PASS] T0.5: the shared C32 dimension does not itself derive the action-to-event intertwiner
+[PASS] T1.1: the exact E8 PVM/M2 pullback obeys four reflection 2-cycles and 24 co-transformed cubic contexts
+[PASS] T1.2: E8 effects and O9 operations are typed separately; identity and dephasing have ranks 1024 and 128
+[PASS] T1.3: Lueders and replacement instruments share the PVM but give repeat probabilities 1 and 1/8
+[PASS] T1.4: the positive H control reproduces all three nonzero D1 composition residuals and normalized rank 32
+[PASS] T1.5: Gaussian bilinears have degree two rather than unit degree zero, and a contraction DPP still has empty/two-label events
+[PASS] T1.6: vacuum-reduced branches give O9 with conjugate(Gamma_plus) tensor Gamma_plus and doubled rank 225
+[PASS] T1.7: the (1,1) restriction has branch/dephasing/identity ranks 16/128/1024
+[PASS] T1.8: the naive vacuum-containing branches overlap at rank one and sum to vacuum eigenvalue eight
+[PASS] T1.9: the reduced branches omit the vacuum and exact mixed-label/full-doubled complements
+[PASS] T2.1: the invariant vacuum gives a unit Groebner certificate against a grade-preserving projective partition covariant under the four reflection 2-cycles
+[PASS] T2.2: the two obvious completions expose the obstruction: label assignment breaks covariance and equal splitting breaks projectivity
+[PASS] T2.3: no executed candidate supplies an action-native E8 image; the result is a partial narrowing, not a universal no-go
+[PASS] STOP: T3--T6, all 512 cylinders, causal boundary, response, axioms, and TOE movement remain unexecuted
+PREREG: 88f7eb548589; no_project_imports=True
+SCHUR: B024=(0, 2, 4); B02=(0, 2); ranks=96/64/32; defects=48/32
+H_RESIDUALS: raw=1860588125181794168951/3216875861507134647600; normalized=-2234183456333136028/714473894240060471595; predictor=-67663841820374976848/41707488576114153187201; full_rank=32
+EXTERIOR: Gamma/Gamma_plus/doubled=16/15/225; mixed=4294967175
+NO_GO_DISCIPLINE: broad no-go rejected; partial-narrowing only; a non-grade-preserving or coherent action-derived insertion remains live
+VERDICT: T0_PASS; T1_CONTROLS_PASS; T2_NO_ACTION_NATIVE_E8_IMAGE_DERIVED; T3_T6_NOT_EXECUTED
+per_element: checked exact Clifford generators, all eight rank-four effects, E8 multiplication, O9 composition, and exterior branch ranks.
+per_site: checked literal coarse-circle Q boundaries (0,2,4)/(0,2) and separately the physical L24 H blocks at times 0,2,4.
+per_mode: checked all nine frozen squared radii structurally; the full H residual values were executed only on the two D1 sectors r2=0,1.
+per_block: checked Schur, covariance, PVM/M2, H, operation typing, vacuum-reduced exterior, and categorical covariance as separate blocks.
+lattice_wide: checked and not executed -- no full action-native E8 intertwiner, 512 cylinder, causal boundary, response, axiom, or TOE claim.
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

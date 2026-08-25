@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_d4_l24_e8_three_event_effect_cylinder_insertion_2026_08_25.py
+runner_sha256: f4fbc04fc1d7d1144a58bfc349335885983a931da1646ec7a0f4a2112bbdcb2d
+input_fingerprint_sha256: bbd235bbf3f2f9dec282292cd30a1cc6ce07df5054b96be76bfe05316bce8ad7
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 19.88
+status: ok
+----- stdout -----
+[PASS] A: preregistration ancestry, parent, origin/main, and frozen amended packet blobs bind
+[PASS] T0: all nine radii satisfy direct/inverse and nested Schur gates; D1 has exact 96/64/32 ranks and 48/32 non-Hermitian defects
+[PASS] T1: six candidate types are separated; all three H residuals and the exact O9 exterior-control ranks/omissions reproduce
+[PASS] T2: the actual Block-194 reflection has four two-cycles and no covariant one-hot vacuum completion, rejecting the two exterior-natural E8 promotions
+SCHUR: radii=9; Q024=96; Q02=64; pivot=32; defect_ranks=(48, 32); hermitian_factorization=true; C32_fiber=paired_not_single_action
+H_CONTROL: raw=1860588125181794168951/3216875861507134647600; normalized=-2234183456333136028/714473894240060471595; predictor=-67663841820374976848/41707488576114153187201; normalized_rank=32
+O9_CONTROL: naive_cross_vacuum_rank=1; reduced_branch_rank=15; doubled_branch_rank=225; bidegree_ranks=16/128/1024; full_omission=4294967176; liouville_order=conjugate_Gamma_plus_tensor_Gamma_plus
+E8_OBSTRUCTION: invariant_vacuum=true; projective_completions=8; completion_dimension=0; reflection_map=(7, 6, 5, 4, 3, 2, 1, 0); reflection_fixed_labels=0; reflection_covariant_completions=0; reflection_orbits=4; mixed_omission=4294967175
+[SEALED] T3: no one-/two-crossing descent without a T2 E8 insertion
+[SEALED] T4: no 512-word or triple-port evaluation
+[SEALED] T5: O9 remains a mathematical control, not a physical lift
+[PASS] S: T3-T5, causal boundary, response, heldouts, axioms, and TOE movement remain sealed
+per_element: checked all eight rank-four PVM effects, their E8 unit, the naive exterior images, and the vacuum-reduced O9 images.
+per_site: checked the invariant vacuum, all eight projective vacuum completions, the actual four-two-cycle Block-194 reflection, zero reflection-covariant completions, and omitted mixed-label sectors.
+per_mode: checked all nine frozen squared radii and independently reproduced the three disclosed D1 H-composition residuals with normalized residual rank 32.
+per_block: checked Q024/Q02 Schur typing, six candidate families, O9 algebra control, and number-preserving exterior E8 unitality in dependency order; the physical target stopped before cylinder descent.
+lattice_wide: checked and not executed — no 512-word cylinder, triple-port selector, O9 physical promotion, causal process, response, heldout, Record/Born, gravity, axiom, or TOE claim was opened.
+BOUNDED_SCOPE: rejects only the executed number-preserving, exterior-natural projector E8 promotions; vacuum-mixing star-product representations, other insertion functors, and the cyclic-to-causal boundary remain untested.
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

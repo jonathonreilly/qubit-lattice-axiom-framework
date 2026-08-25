@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/independent_admissibility_d4_l24_e8_three_event_effect_cylinder_insertion_2026_08_25.py
 runner_sha256: 5b414c4dbb78749ea6c449c2a0ae3a9c255894a42173c80ecb704806e34283bf
-input_fingerprint_sha256: 773dd9fc4b69546ff24ec55390e1d7ff8b1ba784b705c5f0477e85942d26e04e
+input_fingerprint_sha256: 04aeeddd34fe616abc0706835d05801f172bcbfbad167fb97074e169000e2452
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 20.69
+elapsed_sec: 20.74
 status: ok
 ----- stdout -----
 [PASS] P0: the exact preregistration commit is ancestral and this checker has no project imports

@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_d4_l24_e8_three_event_effect_cylinder_insertion_2026_08_25.py
 runner_sha256: f4fbc04fc1d7d1144a58bfc349335885983a931da1646ec7a0f4a2112bbdcb2d
-input_fingerprint_sha256: bbd235bbf3f2f9dec282292cd30a1cc6ce07df5054b96be76bfe05316bce8ad7
+input_fingerprint_sha256: 2af5bf2770f9943e349af17550f97f2c07c2d0632c8ae67e844365a465b0692e
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 19.88
+elapsed_sec: 19.85
 status: ok
 ----- stdout -----
 [PASS] A: preregistration ancestry, parent, origin/main, and frozen amended packet blobs bind

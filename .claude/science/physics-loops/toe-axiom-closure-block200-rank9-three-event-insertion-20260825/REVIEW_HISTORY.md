@@ -43,3 +43,10 @@
 - 2026-08-25: latest open PRs rechecked directly.  Consecutive stack
   #7723--#7728 remains open and clean, no newer conflicting science PR is
   present, and `origin/main` remains `b11811704e`.
+- 2026-08-25: source note, fresh SHA/input-bound caches, direct N5 forensic
+  readiness, strict lint, premise purity, and enforced invariants passed;
+  graph delta is one node/six edges.  The generic pre-commit seeder exposed
+  995 unrelated rows before their full-pipeline status stage; its generated
+  ledger files were discarded and no audit-owned authority surface was edited.
+- 2026-08-25: result commit `de0baa7b76` pushed and stacked PR #7729 opened on
+  Block 199.  PR is open, clean, and mergeable; review-loop was not used.

@@ -15,6 +15,9 @@
    sealed.  No 512-word cylinder or triple selector was executed.
 6. COMPLETE: fresh N1--N8 discipline passes only the narrow number-preserving
    exterior-natural projective obstruction and rejects every broad no-go.
-7. IN PROGRESS: package source note, caches, graph-only permitted audit change,
-   mutation/lint/premise/forensic/invariant checks, and a stacked PR without
-   review-loop; rerank immediately afterward.
+7. COMPLETE: source note, fresh caches, one-node/six-edge graph acknowledgment,
+   mutations, strict lint, premise purity, direct forensic readiness, and
+   enforced invariants pass.  Result commit `de0baa7b76` is published in clean
+   stacked PR #7729 without review-loop.  The generic pre-commit seeder's 995
+   unrelated pre-status rows were discarded rather than changing audit-owned
+   ledger surfaces.

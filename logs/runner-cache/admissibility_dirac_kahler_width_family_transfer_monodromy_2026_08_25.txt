@@ -1,0 +1,159 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_width_family_transfer_monodromy_2026_08_25.py
+runner_sha256: 0a879618042143a7b4b24d643b0c45a5c2afc21a0fe517392d3b3c8527cca67f
+input_fingerprint_sha256: f0cafda2b27c986af0a4682b075c0fd3a848130c6c35eee988629355353d77e7
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 15.83
+status: ok
+----- stdout -----
+MEASURED -- BLOCK 190, THE WIDTH FAMILY TRANSFER AND MONODROMY
+  measurement pass: 15.6 s
+  THE ONE IMPORT, DISPLAYED AND GATED: shear_hodge(5/13, 1) = [[1, 0, 0, 0], [0, 169/144, -65/144, 0], [0, -65/144, 169/144, 0], [0, 0, 0, 1]]
+  displayed-vs-imported residual: 0
+  SIGN-LAYER FORK at T = 8: nnz(Q - Q^T) = 144 at the LANDED w(3), 160 at the WRAP w(T-1); Ps-covariance {'landed_w3': 0, 'wrap_wTm1': 0}
+  LANDED CONTROL minor 1: 250811603701251182926764176363850176714557920003089965221914456500/666495028860293624372300921944800123265476111209829299156533225479
+  VARIANT minor 1 (different, and that is the disclosure): 6874991398831399275340647912337474750/18307834037130787420472860378633197921
+  T = 12 structure: d_K^2 = 0, Ps H Ps - H = 0, Ps Q Ps - Q^T = 0, cross block = 0, span rank = 8, Schur (12, 12) = 0
+  Hodge fork: robust under the forensic variant = True; sensitive to the volume = True
+    check's v = 12/13 rebuild reproduced: ((1975, 1953, -2365), (2365, 1953, -1975), (4746925, 6783420, 13155959, -6783420, 4746925))
+    check's unit-shear fallback reproduced: ((475, 468, -565), (565, 468, -475), (272425, 393120, 755774, -393120, 272425))
+  REFUTATION: nnz(L_1 - L_1^T) = {1: 48, 2: 48, 3: 48}, nnz(L_2 - L_2^T) = {1: 40, 2: 40, 3: 48}
+    witness core 1 k = 1 at (0,1) = 839039300251161817029323017210249139894300640625/10790888393902301609279309496845869518844858077209
+    witness core 1 k = 2 at (0,1) = -476073000000/512915117048537
+    witness core 2 k = 1 at (0,1) = -906698597244659770526025093421484375/120809412487309579386522672090695208353
+    witness core 2 k = 2 at (0,4) = -128538968276917302214042968750000000/7914929056239059806431509242611057315467
+    witness core 3 k = 1 at (0,1) = -906698597244659770526025093421484375/120809412487309579386522672090695208353
+    witness core 3 k = 2 at (0,1) = 476073000000/512915117048537
+  MECHANISM: nnz([tau^2, Q]) = {'landed_w3': 224, 'wrap_wTm1': 208}, slice pairs = {'landed_w3': 28, 'wrap_wTm1': 26}, common witness = -65/576, nnz([tau^2, G]) = {'landed_w3': 944, 'wrap_wTm1': 864}
+  LOCALITY: {'V2@T16 - V4@T16': 0, 'V2@T12 - V2@T16': 0, 'V1@T12 - V1@T16': 0}; K_c(2) - K_c(4) at T = 16 = 56 entries
+    V charfactors (12, 1): (((1794654055, 1598495382, -2164653217), 1), ((2164653217, 1598495382, -1794654055), 1), ((38849406107919890625, 96204052429420176000, 476869355306538239554, -108546564308758876800, 43833595903292990625), 1))
+    V charfactors (12, 2): (((5675, 5634, -6845), 1), ((6845, 5634, -5675), 1), ((39529825, 55889280, 109432706, -55889280, 39529825), 1))
+    V charfactors (12, 3): (((1794654055, 1598495382, -2164653217), 1), ((2164653217, 1598495382, -1794654055), 1), ((43833595903292990625, 108546564308758876800, 476869355306538239554, -96204052429420176000, 38849406107919890625), 1))
+    V charfactors (12, 4): (((5675, 5634, -6845), 1), ((6845, 5634, -5675), 1), ((47667825, 63213480, 101294706, -55889280, 39529825), 1))
+    V charfactors (16, 1): (((1794654055, 1598495382, -2164653217), 1), ((2164653217, 1598495382, -1794654055), 1), ((38849406107919890625, 96204052429420176000, 476869355306538239554, -108546564308758876800, 43833595903292990625), 1))
+    V charfactors (16, 2): (((5675, 5634, -6845), 1), ((6845, 5634, -5675), 1), ((39529825, 55889280, 109432706, -55889280, 39529825), 1))
+    V charfactors (16, 3): (((1794654055, 1598495382, -2164653217), 1), ((2164653217, 1598495382, -1794654055), 1), ((20375067515625, 50455444752000, 257292658829458, -50455444752000, 20375067515625), 1))
+    V charfactors (16, 4): (((5675, 5634, -6845), 1), ((6845, 5634, -5675), 1), ((39529825, 55889280, 109432706, -55889280, 39529825), 1))
+    V charfactors (16, 5): (((1794654055, 1598495382, -2164653217), 1), ((2164653217, 1598495382, -1794654055), 1), ((43833595903292990625, 108546564308758876800, 476869355306538239554, -96204052429420176000, 38849406107919890625), 1))
+    V charfactors (16, 6): (((5675, 5634, -6845), 1), ((6845, 5634, -5675), 1), ((47667825, 63213480, 101294706, -55889280, 39529825), 1))
+    V charfactors (20, 1): (((1794654055, 1598495382, -2164653217), 1), ((2164653217, 1598495382, -1794654055), 1), ((38849406107919890625, 96204052429420176000, 476869355306538239554, -108546564308758876800, 43833595903292990625), 1))
+    V charfactors (20, 2): (((5675, 5634, -6845), 1), ((6845, 5634, -5675), 1), ((39529825, 55889280, 109432706, -55889280, 39529825), 1))
+    V charfactors (20, 3): (((1794654055, 1598495382, -2164653217), 1), ((2164653217, 1598495382, -1794654055), 1), ((20375067515625, 50455444752000, 257292658829458, -50455444752000, 20375067515625), 1))
+    V charfactors (20, 4): (((5675, 5634, -6845), 1), ((6845, 5634, -5675), 1), ((39529825, 55889280, 109432706, -55889280, 39529825), 1))
+    V charfactors (20, 5): (((1794654055, 1598495382, -2164653217), 1), ((2164653217, 1598495382, -1794654055), 1), ((20375067515625, 50455444752000, 257292658829458, -50455444752000, 20375067515625), 1))
+    V charfactors (20, 6): (((5675, 5634, -6845), 1), ((6845, 5634, -5675), 1), ((39529825, 55889280, 109432706, -55889280, 39529825), 1))
+    V charfactors (20, 7): (((1794654055, 1598495382, -2164653217), 1), ((2164653217, 1598495382, -1794654055), 1), ((43833595903292990625, 108546564308758876800, 476869355306538239554, -96204052429420176000, 38849406107919890625), 1))
+    V charfactors (20, 8): (((5675, 5634, -6845), 1), ((6845, 5634, -5675), 1), ((47667825, 63213480, 101294706, -55889280, 39529825), 1))
+  MIRROR residuals: {(12, 1, 3): 0, (16, 1, 5): 0}
+  MONODROMY: nnz(W - V^2) = {3: 32, 4: 32, 5: 32}
+    charpoly(W) at t0 = 3: (((22569375, -233631106, 22569375), 2), ((39529825, -109432706, 39529825), 2))
+    charpoly(W) at t0 = 4: (((22569375, -233631106, 22569375), 2), ((39529825, -109432706, 39529825), 2))
+    charpoly(W) at t0 = 5: (((22569375, -233631106, 22569375), 2), ((39529825, -109432706, 39529825), 2))
+  POSITIVITY: discriminants {(22569375, -233631106, 22569375): 52545986939220736, (39529825, -109432706, 39529825): 5725088884359936}
+    factorizations {(22569375, -233631106, 22569375): {2: 8, 13: 1, 31: 1, 37: 1, 71: 1, 313: 2, 1979: 1}, (39529825, -109432706, 39529825): {2: 8, 3: 7, 7: 1, 13: 1, 31: 1, 37: 1, 313: 2}}
+    traces exceed 2a: True; reciprocal: True; trace-ratio gap: 6765568955757700
+    2 cosh: {(22569375, -233631106, 22569375): 233631106/22569375, (39529825, -109432706, 39529825): 109432706/39529825}; coefficient identity: True
+  COMMUTANT: U isometry 0, [W,U] 0, off-sector 0, S relations (0, 0, 0), S Gram defect 64
+    census 2048: commutants ('I', 'S', 'S^3', 'U'), isometries ('I', 'U')
+    reflection [W,R] = 16 entries, witness 16334218/7905965
+    P1: K_c symmetry 0, K-only 0, consistent 48, charpoly preserved True, similarity residual 0
+  nsimplify occurrences: 0
+  SCOPE: NOTHING IS REGISTERED AND NOTHING IS ADOPTED. THE OBJECT IS A DISCLOSED VARIANT of Block 188's landed construction and their own T = 8 numbers are reproduced here under THEIR sign placement. DISPERSION, MASS SCALES, THE PHYSICAL TIME STEP and TRANSFER POSITIVITY are READINGS: what is proven is the positivity of an 8 x 8 rational spectrum, and the OS reconstruction that would license the words IS NOT PERFORMED. ONE FIXTURE AND FOUR WIDTHS IS NOT A WINDOW AND NOTHING IS PROVEN ABOUT THE INFINITE-WIDTH LIMIT.
+
+[PASS] A-1: the five-pin authority block resolves against origin/main
+[PASS] A-2: PARENT_COMMIT is a real 40-hex commit and not a placeholder
+[PASS] A-3: PARENT_REF origin/physics-loop/toe-axiom-closure-block189-site-gauge-quotient-20260824 resolves to PARENT_COMMIT and it is an ancestor of HEAD
+[PASS] A-4: BOTH Block 189 artifacts are content-bound at the pinned commit, in the worktree and against their recorded blobs
+[PASS] A-5: the stale pin is a REAL ancestor of HEAD that carries NEITHER Block 189 artifact
+[PASS] A-6: the ONE landed import is available and 7 audit inputs are readable
+[PASS] B-1: 5 imposed objects, 0 registered, 0 adopted
+[PASS] B-2: DISPERSION is declared NOT CLAIMED
+[PASS] B-3: MASS SCALES are declared NOT CLAIMED
+[PASS] B-4: A PHYSICAL TIME STEP is declared NOT CLAIMED
+[PASS] B-5: TRANSFER POSITIVITY is declared NOT CLAIMED: the spectral positivity is proven and the OS reconstruction is NOT performed
+[PASS] B-6: THE WIDTH FAMILY IS DECLARED A VARIANT and is NOT claimed to be Block 188's landed object
+[PASS] B-7: NO GENERALITY is claimed: one fixture, one carrier family
+[PASS] B-8: 9 gravity structures are enumerated as NOT SUPPLIED, so the absence is a count
+[PASS] B-9: every imposed object is a nonempty declared string
+[PASS] C-1: the landed primary bodies and the campaign anchor are readable and Block 188's 144 is pinned in their own note
+[PASS] C-2: THE DISPLAYED HODGE EQUALS THE IMPORT ENTRYWISE: I + (25/144)(E11+E22) - (65/144)(E12+E21) against b128.block105.shear_hodge(5/13, 1)
+[PASS] C-3: every entry of the imported Hodge is an EXACT rational
+[PASS] C-4: THE SIGN-LAYER FORK AS A PAIR: nnz(Q - Q^T) = 144 at the LANDED w(3) placement and 160 at the WRAP w(T-1) placement
+[PASS] C-5: BOTH placements are Ps-covariant: Ps Q Ps - Q^T = 0 on each
+[PASS] C-6: THE LANDED CONTROL: at w(3) the {1,2}-core minors reproduce Block 188's landed pair DIGIT-FOR-DIGIT
+[PASS] C-7: AND THE VARIANT IS MEASURABLY DIFFERENT: at w(T-1) the same core's first minor is a DIFFERENT exact rational
+[PASS] C-8: d_K^2 = 0 at T = 12: the grade-raising part is a differential
+[PASS] C-9: Ps H Ps = H and Ps Q Ps = Q^T at T = 12, both at ZERO
+[PASS] C-10: the cross block between the physical span and its image is EMPTY at T = 12
+[PASS] C-11: every adjacent core t0 = 1..4 at T = 12 is symmetric at ZERO, of rank 8, with all eight leading minors POSITIVE
+[PASS] C-12: the full {1..5} span Gram has EXACT RANK 8: the OS space does NOT grow with the span
+[PASS] C-13: the 12 x 12 Schur complement of the {1,2} core inside that span is EXACTLY ZERO, so the core is a FRAME for the whole span
+[PASS] C-14: HODGE ROBUSTNESS ONE WAY: the check's FORENSIC variant block gives the IDENTICAL V and W factorizations at all three T = 12 bulk cores -- which is WHY the check reproduced these coefficients
+[PASS] C-15: AND SENSITIVITY THE OTHER WAY, WHICH IS WHY THE DISPLAY PINS v = 1: the SAME landed function at volume 12/13 gives a DIFFERENT polynomial at every bulk core
+[PASS] C-16: AND THE CHECK'S TWO FAILING REBUILDS ARE REPRODUCED HERE DIGIT-FOR-DIGIT, so the C3 discrepancy is located as a VOLUME convention and not a disputed measurement
+[PASS] D-1: nnz(L_1 - L_1^T) at T = 12 cores 1,2,3 = (48, 48, 48): the one-step transfer pairing is REFUTED at every bulk core
+[PASS] D-2: nnz(L_2 - L_2^T) at the same cores = (40, 40, 48): the two-step pairing is REFUTED as well
+[PASS] D-3: SIX EXACT CORE WITNESSES, each a position and an exact rational value, and they are the PROOF of the refutation
+[PASS] D-4: every witness is an EXACT rational and none is zero
+[PASS] D-5: THE MECHANISM IN BOTH SIGN LAYERS: nnz([tau^2, Q]) = 224 at w(3) and 208 at w(T-1)
+[PASS] D-6: and the ordered slice-pair supports are 28 and 26 respectively -- the sign layer is visible in the mechanism too
+[PASS] D-7: the COMMON exact witness [tau^2, Q]_(0,1) = -65/576 in BOTH layers, and [tau^2, G] is nonzero in both
+[PASS] D-8: THE CHECK'S C2 CORRECTION, DECLARED: the global commutator is the MECHANISM and is NOT by itself a proof of the restricted core asymmetry -- the six core witnesses are
+[PASS] E-1: V2@T16 == V4@T16 ENTRYWISE at zero residual: the step dynamics is POSITION-homogeneous
+[PASS] E-2: V2@T12 == V2@T16 and V1@T12 == V1@T16 ENTRYWISE: the step dynamics is WIDTH-invariant
+[PASS] E-3: BUT THE GRAM IS NOT: K_c(2) - K_c(4) at T = 16 has EXACTLY 56 nonzero entries, with an exact witness
+[PASS] E-4: every one of the 18 probed cores factors (2,2,4) over Q
+[PASS] E-5: the EVEN quadratic pair is identical at every even core and width probed
+[PASS] E-6: the ODD quadratic pair is identical at every odd core and width probed
+[PASS] E-7: the DEEP even quartic is identical at the 6 interior even cores across all three widths
+[PASS] E-8: AND THE EVEN SECTOR IS NOT RIGID AT THE FAR SEAM, WHICH IS THIS BLOCK'S OWN WORDING CORRECTION: at t0 = T/2 - 2 the quartic is a DIFFERENT value, itself locked across T = 12, 16 and 20
+[PASS] E-9: the ODD near-seam quartic is locked at t0 = 1 across all three widths, and its exact coefficient MIRROR at t0 = T/2 - 3
+[PASS] E-10: the ODD DEEP quartic is locked at T = 16 t0 = 3 and T = 20 t0 = 3, 5 -- the odd bulk value
+[PASS] E-11: THE MIRROR COVARIANCE q_j = (-1)^j p_(8-j) holds at all NINE coefficients at T = 12 (V1/V3) and T = 16 (V1/V5)
+[PASS] E-12: every polynomial coefficient measured is an integer in the primitive normalization
+[PASS] F-1: W != V^2 at EXACTLY 32 entries at every T = 20 deep core t0 = 3, 4, 5: the monodromy is PRIMITIVE
+[PASS] F-2: the three exact (W - V^2)_(0,4) witnesses
+[PASS] F-3: charpoly(W) is IDENTICAL at all three deep cores: the monodromy is PARITY-INDEPENDENT
+[PASS] F-4: charpoly(W) = (22569375 z^2 - 233631106 z + 22569375)^2 (39529825 z^2 - 109432706 z + 39529825)^2
+[PASS] F-5: both discriminants are the claimed exact POSITIVE integers
+[PASS] F-6: and both prime factorizations are exactly as displayed
+[PASS] F-7: both traces EXCEED twice the leading coefficient, which forces both roots POSITIVE and not merely real
+[PASS] F-8: both constant/leading ratios are EXACTLY 1, so each pair is RECIPROCAL
+[PASS] F-9: the two trace ratios are DISTINCT: 233631106*39529825 - 109432706*22569375 = 6765568955757700 != 0, so four DISTINCT real positive roots in two reciprocal pairs
+[PASS] F-10: 2 cosh(theta_1) = 233631106/22569375 and 2 cosh(theta_2) = 109432706/39529825, both EXACT rationals
+[PASS] F-11: THE COEFFICIENT IDENTITY: the second monodromy quadratic is a z^2 - c z + a from the even V-quartic (a, b, c) and b DROPS OUT
+[PASS] G-1: U^T K_c U = K_c and [W, U] = 0 at the T = 20 deep core, both at ZERO residual
+[PASS] G-2: the U off-sector block of W is EXACTLY zero, so the grading is a genuine block decomposition
+[PASS] G-3: U = +1 carries BOTH copies of the 39529825 quadratic and U = -1 BOTH copies of the 22569375 quadratic
+[PASS] G-4: [W, S] = 0, S^2 = U and S^4 = I, all at ZERO: S is a genuine SECOND commuting symmetry of the monodromy
+[PASS] G-5: BUT S IS NOT A GRAM ISOMETRY: S^T K_c S - K_c has EXACTLY 64 nonzero entries, with an exact witness
+[PASS] G-6: the S-momentum blocks: p = 0 and p = 2 both carry the 39529825 quadratic and p = 1, 3 the 22569375 one
+[PASS] G-7: AND THE p = 0 / p = 2 EQUALITY IS DECLARED NOT GROUP-FORCED: it is an ADDITIONAL exact isospectrality of this construction
+[PASS] G-8: THE CENSUS IS EXHAUSTIVE AND MEASURED HERE: 2048 signed monomial candidates swept
+[PASS] G-9: the W-commutants among them are EXACTLY {I, S, S^3, U}
+[PASS] G-10: and EXACTLY {I, U} of those are Gram isometries -- 2 of 4
+[PASS] G-11: the unsigned spatial reflection is REFUTED: [W, R] has 16 nonzero entries with the exact witness [W, R]_(0,5) = 16334218/7905965
+[PASS] G-12: K_c is EXACTLY SYMMETRIC at the deep core, which is the hypothesis the whole P1 resolution turns on
+[PASS] G-13: THEREFORE THE K-ONLY TRANSPOSITION IS A MEASURED NO-OP -- this block's CORRECTION to the check's P1, whose 64-entry spectrum change does NOT occur on this construction
+[PASS] G-14: the CONSISTENT transposition moves W at EXACTLY 48 entries
+[PASS] G-15: and yet preserves charpoly(W) exactly
+[PASS] G-16: because the transposed operator IS K_c^-1 W^T K_c, a SIMILARITY -- measured at ZERO residual, not argued
+[PASS] G-17: every commutant witness measured is an EXACT rational
+[PASS] H-1: the note is at its final path docs/ADMISSIBILITY_DIRAC_KAHLER_WIDTH_FAMILY_TRANSFER_MONODROMY_BOUNDED_THEOREM_NOTE_2026-08-25.md
+[PASS] H-2: the N5 fence appears BYTE-IDENTICALLY in the note, AND the fence is REQUIRED rather than optional -- the declared key set must still be the full one, so the requirement cannot be dropped
+[PASS] H-3: sp.nsimplify occurs 0 times in this runner's own source
+GATES A=PASS B=PASS C=PASS D=PASS E=PASS F=PASS G=PASS H=PASS
+N5: per_element: THE IMPOSED-OBJECT BANNER, FIRST AND WITH TEETH. NOTHING HERE IS REGISTERED OR ADOPTED -- THE WIDTH FAMILY (the staggered Dirac-Kahler carrier on Z_T x Z_4 for even T with eta_t = 1 and eta_x = (-1)^t, the temporal edge sign w = -1 carried ON THE WRAP EDGE t = T-1, the grade-raising d_K = P1 K P0 + P2 K P1, the site reflection theta_s(t) = -t with fixed slices {0, T/2}, the site Hodge with block B(c) on t < T/2 and P_4 B P_4^T on the far half, the site raising set A_s of the d_K entries in the CLOSED half {0..T/2} EXCLUDING fixed-slice spatial edges, the glue D_s = A_s - Ps A_s Ps and the completion Q = m H + H D_s - D_s^T H at (m, c) = (9/20, 5/13), at widths T = 8, 12, 16, 20), THE PAIR CORES with K_c[a,b] = G[idx(t_b,x_b), idx(theta_s t_a, x_a)] and L_k[a,b] = G[idx(t_b+k,x_b), idx(theta_s t_a, x_a)] on G = Q^-1, THE STEP OPERATOR V = K_c^-1 L_1 AND THE UNIT-CELL MONODROMY W = K_c^-1 L_2, THE CORE SYMMETRY CANDIDATES U, S, R and the full 2048-element signed-monomial set, THE SINGLE FIXTURE (9/20, 5/13), and the LANDED Block 105 shear_hodge() read through the Block 128 module -- THE ONLY OBJECT IMPORTED -- are IMPOSED MEASURED OBJECTS OF THIS BLOCK, built from the landed primary bodies and from NOTHING in any scratchpad. AND THE OBJECT IS A DISCLOSED VARIANT AND SAYS SO BEFORE IT SAYS ANYTHING ELSE: BLOCK 188's LANDED T = 8 OBJECT CARRIES THE ANTIPERIODIC SIGN AT t = 3 AND THIS FAMILY CARRIES IT AT t = T-1, AND THE FORK IS MEASURED AS A PAIR -- nnz(Q - Q^T) = 144 at the landed placement, which is BLOCK 188's OWN LANDED NUMBER, and 160 at the wrap edge, with Ps Q Ps = Q^T at ZERO on BOTH SIDES. AND THE WORDS ARE FENCED BEFORE THE NUMBERS ARE READ. DISPERSION IS A READING: what is measured is the characteristic polynomial of a finite matrix in two momentum sectors, and that E(0) and E(pi) are energies of a propagating mode is NOT DERIVED. MASS SCALES ARE A READING: theta_1 and theta_2 are logarithms of exact rational-trace eigenvalues, with no mass, no continuum limit and no unit supplied. THE PHYSICAL TIME STEP IS A READING: that the two-slice unit cell is THE time step of a theory is a statement about a staggered carrier and not a theorem. TRANSFER POSITIVITY IS A READING: the positivity of this 8 x 8 spectrum is PROVEN, and the Osterwalder-Schrader reconstruction that would make it mean transfer positivity IS NOT PERFORMED. NO GRAVITY STRUCTURE IS SUPPLIED -- no lapse function, no shift vector, no Hamiltonian constraint, no momentum or diffeomorphism constraint, no first-class algebra, no Dirac closure and no ADM phase space. NO GENERALITY IS CLAIMED: ONE fixture, ONE carrier family, FOUR widths. NOTHING IS REGISTERED, NOTHING IS ADOPTED, AND NO AXIOM AMENDMENT IS JUSTIFIED.
+per_site: THE CONSTRUCTION CONTROL IS TWO-SIDED AND IT COMES FIRST. THE HODGE: the ONLY imported object is Block 105's shear_hodge() through the Block 128 module, its value at (c, v) = (5/13, 1) is DISPLAYED INLINE ENTRYWISE as I + (25/144)(E11 + E22) - (65/144)(E12 + E21) -- that is diag(1, 169/144, 169/144, 1) with the (1,2) and (2,1) entries -65/144 in zero-based corner order (1, dx, dt, dx^dt) -- and the displayed matrix is gated against the import at ZERO entrywise residual. THE SIGN LAYER: at T = 8 the LANDED placement reproduces BLOCK 188's core minors DIGIT-FOR-DIGIT, first minor 250811603701251182926764176363850176714557920003089965221914456500/666495028860293624372300921944800123265476111209829299156533225479 and second minor 9699265179160355495171233606378759680576921193642386633764164130236400111062250000/65542091681979044701359795584266761562795513633598145522262137753727157320281821073, while the WRAP placement gives 6874991398831399275340647912337474750/18307834037130787420472860378633197921 at the same core -- A DIFFERENT NUMBER, MEASURED, WHICH IS EXACTLY WHY THE VARIANT IS DISCLOSED AND NOT ASSERTED TO BE THEIR OBJECT. AND THE HODGE FORK IS RESOLVED ON BOTH SIDES, WHICH SETTLES THE ADVERSARIAL CHECK'S C3/C6/C8 RATHER THAN ARGUING WITH IT: the check's FORENSIC variant block I - 2c^2 E11 - c(E12+E21) gives the IDENTICAL V and W factorizations at all three T = 12 bulk cores -- which is exactly why the check reproduced every headline coefficient digit-for-digit under it -- while the BLOCK 105 NOTE'S OWN DISPLAYED BLOCK is measured here to be THE SAME LANDED FUNCTION AT VOLUME 12/13, diag(12/13, 13/12, 13/12, 13/12) with the (1,2) and (2,1) entries -5/12, and at that volume every bulk core MOVES: the even core gives (1975, 1953, -2365), (2365, 1953, -1975) and 4746925 z^4 + 6783420 z^3 + 13155959 z^2 - 6783420 z + 4746925, which is THE CHECK'S OWN DISPLAYED REBUILD REPRODUCED DIGIT-FOR-DIGIT, as is their unit-shear fallback's (475, 468, -565), (565, 468, -475) and 272425 z^4 + 393120 z^3 + 755774 z^2 - 393120 z + 272425. THE DISCREPANCY WAS A VOLUME CONVENTION AND NEVER A DISPUTED MEASUREMENT, and that is why this note DISPLAYS the block entrywise at a PINNED volume instead of describing it. THE HAZARD INHERITED FROM BLOCK 186 IS HONOURED BY ABSENCE AND MEASURED RATHER THAN PROMISED: the nsimplify call carries a rational TOLERANCE and maps a small nonzero rational to EXACTLY ZERO, so any of this block's zeros, counts, signs or coefficient vectors could be manufactured by it; this runner calls it ZERO TIMES, counted in its own source by gate H.
+per_mode: THE NAIVE TRANSFER PAIRING IS REFUTED ON THE CORES THEMSELVES, AND THE CHECK'S C2 CORRECTION IS CARRIED AS CONTENT AND NOT AS AN ERRATUM. At T = 12 the one-step and two-step core pairings are ASYMMETRIC at every bulk core: nnz(L_1 - L_1^T) = 48 at t0 = 1, 2, 3 and nnz(L_2 - L_2^T) = 40, 40, 48, with SIX EXACT WITNESSES recorded by position and value. THE GLOBAL MECHANISM IS [tau^k, G] != 0, measured at T = 8 IN BOTH SIGN LAYERS: [tau^2, Q] has 224 nonzeros on 28 ordered slice pairs at the landed placement and 208 on 26 at the wrap edge, with the COMMON exact witness [tau^2, Q]_(0,1) = -65/576, and [tau^2, G] is nonzero in both at 944 and 864 entries. BUT THE CORRECTION IS TAKEN AND IT IS DECLARED AS A CONSTANT: global commutator nonvanishing is NOT BY ITSELF a proof that a RESTRICTED core pairing is asymmetric, because symmetry after restriction to one 8-vector core requires only the PROJECTED commutator block to vanish. THE SIX CORE WITNESSES ARE THE PROOF AND THE COMMUTATOR IS THE MECHANISM.
+per_block: THE STEP OPERATOR IS A LOCAL OBJECT, AND LOCALITY IS A MATRIX STATEMENT AND NOT A SPECTRAL ONE. V2@T12, V2@T16 and V4@T16 are EQUAL ENTRYWISE at ZERO residual, and so are V1@T12 and V1@T16: the step dynamics is width-invariant AND position-homogeneous. THE GRAM IS NOT: K_c(2) and K_c(4) at T = 16 differ at EXACTLY 56 ENTRIES, so the boundary layer lives in the metric data. Every probed core factors (2,2,4) over Q with the even quadratics (5675, 5634, -6845), (6845, 5634, -5675) and the odd quadratics (1794654055, 1598495382, -2164653217), (2164653217, 1598495382, -1794654055) invariant throughout. THE ODD QUARTIC CARRIES A NEAR-SEAM LAYER: value 38849406107919890625 z^4 + 96204052429420176000 z^3 + 476869355306538239554 z^2 - 108546564308758876800 z + 43833595903292990625 at t0 = 1 locked at ALL THREE widths, its exact coefficient MIRROR at t0 = T/2 - 3, and the DEEP value 20375067515625 z^4 + 50455444752000 z^3 + 257292658829458 z^2 - 50455444752000 z + 20375067515625 at T = 16 t0 = 3 and T = 20 t0 = 3, 5. AND THE EVEN QUARTIC IS NOT RIGID EVERYWHERE, WHICH CORRECTS THIS BLOCK'S OWN EARLIER WORDING: at the FAR-seam core t0 = T/2 - 2 it is 47667825 z^4 + 63213480 z^3 + 101294706 z^2 - 55889280 z + 39529825 rather than the deep 39529825-family value, and THAT far-seam value is itself LOCKED across T = 12, 16 and 20. The even sector is rigid in the INTERIOR and carries its own one-core far-seam layer. AND THE MIRROR COVARIANCE IS EXACT: q_j = (-1)^j p_(8-j) for all nine coefficients at T = 12 (V1 against V3) and T = 16 (V1 against V5), which is q(z) proportional to z^8 p(-1/z) and therefore spec(V_mirror) = {-1/lambda} with multiplicity.
+lattice_wide: THE UNIT-CELL MONODROMY IS PRIMITIVE, PARITY-INDEPENDENT AND POSITIVE, AND THE POSITIVITY IS PROVEN AND NOT ESTIMATED. W != V^2 at EXACTLY 32 entries at every T = 20 deep core t0 = 3, 4, 5, with exact witnesses (W - V^2)_(0,4) = 53601896033238042551256/229758595220483765728625, -46628656073521939366872/229758595220483765728625 and 53601896033238042551256/229758595220483765728625; the monodromy cannot be built by squaring the step and W is the primitive object. charpoly(W) is IDENTICAL at all three deep cores and equals (22569375 z^2 - 233631106 z + 22569375)^2 (39529825 z^2 - 109432706 z + 39529825)^2. THE FOUR POSITIVITY FACTS ARE EXACT INTEGERS: the discriminants are 52545986939220736 = 2^8 * 13 * 31 * 37 * 71 * 313^2 * 1979 and 5725088884359936 = 2^8 * 3^7 * 7 * 13 * 31 * 37 * 313^2, both POSITIVE with their factorizations gated; both traces exceed twice the leading coefficient; both constant/leading ratios are EXACTLY 1 so each pair is reciprocal; and the two trace ratios are DISTINCT because 233631106 * 39529825 - 109432706 * 22569375 = 6765568955757700 != 0. Four distinct real positive roots in two reciprocal pairs, with 2 cosh(theta_1) = 233631106/22569375 and 2 cosh(theta_2) = 109432706/39529825 EXACTLY. AND THE COEFFICIENT IDENTITY IS EXACT: the second monodromy quadratic is a z^2 - c z + a built from the even V-quartic's (a, b, c) = (39529825, 55889280, 109432706), with the odd coefficient b DROPPING OUT.
+per_scope: THE COMMUTANT IS COMPUTED EXHAUSTIVELY AND NOT GUESSED, AND THE CHECK'S P1 FORK IS RESOLVED THE OTHER WAY. U (the two-site spatial shift) satisfies U^T K_c U = K_c and [W, U] = 0 at ZERO, with the off-sector block EXACTLY zero, and it GRADES the spectrum: U = +1 carries both copies of 39529825 z^2 - 109432706 z + 39529825 and U = -1 both copies of 22569375 z^2 - 233631106 z + 22569375. S (the ONE-site spatial shift) also commutes with W at ZERO, with S^2 = U and S^4 = I at ZERO, but is NOT a Gram isometry -- S^T K_c S - K_c has EXACTLY 64 nonzero entries with an exact witness -- which is the check's P2 finding rebuilt here on this construction. Its momentum blocks give p = 0 and p = 2 the SAME polynomial and p = 1, 3 the other one, AND THE p = 0 / p = 2 EQUALITY IS DECLARED NOT GROUP-FORCED: it is an ADDITIONAL exact isospectrality. THE CENSUS IS EXHAUSTIVE AND MEASURED IN THIS RUNNER RATHER THAN CITED: all 2048 signed monomial candidates are swept, the W-commutants are EXACTLY {I, S, U, S^3} and EXACTLY {I, U} of them are Gram isometries; the unsigned spatial reflection is refuted with a 16-entry commutator and the exact witness [W, R]_(0,5) = 16334218/7905965. AND THE P1 CORRECTION RUNS THE OTHER WAY ON THIS CONSTRUCTION, WHICH IS THIS BLOCK'S SECOND CORRECTION TO THE CHECK: K_c is EXACTLY SYMMETRIC at the deep core, so the K-ONLY transposition is a MEASURED NO-OP at 0 entries and CANNOT change any spectrum, while the CONSISTENT transposition moves W at EXACTLY 48 entries and still preserves charpoly(W) -- because W' = K_c^-1 W^T K_c is a SIMILARITY, which is a two-line proof and not a coincidence of these numbers.
+RESULT: A NAIVE TRANSFER IS REFUTED WITH SIX EXACT WITNESSES, A LOCAL STEP OPERATOR WITH TWO FINITE-RANGE BOUNDARY LAYERS IS EXHIBITED, AND A PRIMITIVE UNIT-CELL MONODROMY WITH A PROVEN POSITIVE RECIPROCAL SPECTRUM AND AN EXHAUSTIVELY COMPUTED COMMUTANT IS COMPUTED IN CLOSED FORM -- AND NOT ONE LINE OF IT IS GRAVITY. The construction control is two-sided and both sides are measured; the displayed Hodge equals the import entrywise; the sign-layer fork is 144 against 160 with Ps-covariance on both sides and the landed minors reproduced digit-for-digit at the landed placement; L_1 and L_2 are asymmetric at every bulk core with six exact witnesses and the global commutator is the MECHANISM and not the proof; the step matrices are width- and position-invariant while the Grams are not, at 56 entries; the odd quartic has a near-seam value, its exact mirror and a deep value, and the even quartic has its own far-seam value locked across three widths; the mirror covariance is exact at nine coefficients; the monodromy is primitive at 32 entries, parity-independent across three deep cores, and positive with factored discriminants and distinct trace ratios; and the commutant is EXACTLY {I, S, U, S^3} with EXACTLY {I, U} isometries out of 2048 candidates. EVERY NEGATIVE HERE IS NON-SUPPLY WITHIN THIS FORMALISM AND NEVER METAPHYSICAL NECESSITY -- the CYCLE913 CAUTION, CARRIED VERBATIM -- and EVERY POSITIVE HERE IS CANDIDACY WITHIN THIS FORMALISM AND NEVER A CLAIM ABOUT NATURE.
+DECISION_CUT: NOTHING IS REGISTERED AND NOTHING IS ADOPTED. No premise-class change is registered; no landed note is EDITED; no landed number is touched; Blocks 104, 105, 106, 107, 128 and 181-189 STAND EXACTLY AS LANDED. BLOCK 188 IS NEITHER CORRECTED NOR CONTRADICTED: their T = 8 object is reproduced here DIGIT-FOR-DIGIT under THEIR OWN sign placement, and this block's family is a DISCLOSED VARIANT at a different placement, measured to be a different matrix. BLOCK 189 IS NOT CORRECTED: its stabilizer element U reappears here as the exact mass-scale grading of the monodromy, which extends their result and changes none of it. THIS BLOCK'S OWN DEFECTS ARE DISCLOSED: ONE FIXTURE AND NO WINDOW; the four headline words are READINGS and the OS reconstruction that would license them IS NOT PERFORMED; the even quartic's rigidity is NOT global and its far-seam exception is measured here rather than papered over; and the deep-core probes reach T = 20 and no further, so nothing is proven about the infinite-width limit. TWO ITEMS ARE FOLDED FROM THE ADVERSARIAL CHECK AS CONTENT AND NOT AS ERRATA: the C2 CORRECTION, that the global commutator is a mechanism and the six core witnesses are the proof, which is now a declared constant and a gate; and the P2 S-COMMUTANT, which is now rebuilt, gated and extended by an exhaustive 2048-candidate census. AND TWO CORRECTIONS RUN THE OTHER WAY AND ARE STATED AS SUCH: the check's P1 K-only spectrum change does NOT occur on this construction, because K_c is exactly symmetric and the K-only transposition is a no-op; and the check's C3/C6/C8 coefficient refutations do NOT apply to this construction, because they were computed at a DIFFERENT VOLUME -- the landed shear_hodge() at v = 1 reproduces every stated coefficient, their own two rebuilds are reproduced here digit-for-digit at v = 12/13 and at unit shear, and their forensic variant is measured to be spectrally IDENTICAL to the landed block, which is why the display is now gated entrywise against the import at a PINNED volume. PROVENANCE: CAMPAIGN_20260824_GRAVITY_MAINLINE.md, at its THE PROPER OS TRANSFER -- THE WIDTH RESOLUTION, THE LOCALITY THEOREM SHAPE, THE ODD-SECTOR LOCK, THE UNIT-CELL MONODROMY, THE DEGENERACY MECHANISM and THE B190 CHECK VERDICT AND THE TWO-FORK RESOLUTION anchors.
+TOE: zero axiom retirement; zero obligation retirement; zero TOE movement; no TOE percentage moves; retained-positive end-to-end theory count remains zero.
+TOTAL: PASS=82 FAIL=0
+
+----- stderr -----
+

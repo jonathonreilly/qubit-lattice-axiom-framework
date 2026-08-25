@@ -10,7 +10,8 @@ next_trace_action: "If the literal seed passes, construct the quotient and uniqu
 
 # Trace Gate
 
-Only a T1--T4 pass can reach Block 195's history-channel obligation.  A T1
-failure narrows the carrier choice but does not retire an obligation, change
-an axiom, or move a TOE percentage.
-
+T1 failed exactly: the literal periodic/uniform Berezin form has a negative
+two-generator norm.  T2 makes the result convention robust and T3 shows the
+known scalar AP/seam repair changes the frozen carrier.  The route is pruned
+before T4/T5.  No obligation, axiom, or TOE percentage moves.  The next trace
+action is the even/odd parity-doubled two-step OS construction.

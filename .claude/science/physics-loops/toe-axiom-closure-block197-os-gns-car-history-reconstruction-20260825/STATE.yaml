@@ -1,7 +1,7 @@
 loop_id: toe-axiom-closure-block197-os-gns-car-history-reconstruction-20260825
 block: 197
-status: preregistered
-phase: target_frozen_before_execution
+status: result_packaged_pending_validation
+phase: exact_literal_carrier_boundary
 branch: physics-loop/toe-axiom-closure-block197-os-gns-car-history-reconstruction-20260825
 parent_commit: f847227012
 origin_main: b11811704efa98a12272d572f666e530a807f6c1
@@ -12,4 +12,12 @@ heldouts_sealed: true
 toe_scores_frozen: true
 axiom_edit_allowed: false
 review_loop_allowed: false
-
+primary_result: 7_of_7_pass
+independent_result: 14_of_14_pass
+mutation_families: 12_of_12_rejected
+literal_reduced_inertia_positive_null_negative: 2_20_2
+literal_full_inertia_positive_null_negative: 16_160_16
+scalar_ap_repair: positive_but_changes_frozen_carrier
+obligation_retirement: 0
+toe_percentage_movement: 0
+next_rank_one_route: action_derived_even_odd_parity_doubled_two_step_os

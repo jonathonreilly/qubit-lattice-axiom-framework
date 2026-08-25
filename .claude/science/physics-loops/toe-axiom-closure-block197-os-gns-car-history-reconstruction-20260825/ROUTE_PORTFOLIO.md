@@ -5,13 +5,12 @@ action-derived process tensor and centered-symbol gravity.
 
 | rank | normalized family | primary object / mechanism / terminal obligation | status |
 |---:|---|---|---|
-| 1 | finite-L24 OS/GNS/CAR | Berezin positive-time functional / null quotient and positive translation / unique typed CPTP history | active |
-| 2 | action-derived global process tensor | multi-time Choi functional / causal trace recursion / unique action-derived comb | reserve |
+| 1 | parity-doubled two-step OS | even/odd Schur kernel / positive `T2` and unique parity square root / typed enlarged history | active-next |
+| 2 | action-derived global process tensor | multi-time Choi functional / causal trace recursion / unique action-derived comb | reserve if square root is nonunique |
 | 3 | centered-symbol gravity bridge | centered chain map / covariance plus quotient Riesz dual / source-sensitive gravity response | reserve pincer |
-| 4 | parity-doubled history state | enlarged even/odd carrier / positive two-step descent / unique first-order law on typed enlargement | reserve after literal-carrier result |
-| 5 | open or infinite temporal limit | vacuum OS residue / thermal-image removal / projective finite-history return to Records | reserve |
+| 4 | open or infinite temporal limit | vacuum OS residue / thermal-image removal / projective finite-history return to Records | reserve |
+| 5 | literal periodic OS/GNS/CAR | Berezin positive-time functional / null quotient / typed history | grounded negative at first gate |
 
-The rank-one route remains highest leverage because it attacks Block 195's
-named `W2` wall directly.  T1 is an exact cheap kill gate that prevents a
-large Fock construction on a non-positive seed.
-
+The reranked route remains on Block 195's `W2` wall but changes the state type
+only where the action's exact parity/even-lag structure demands it.  It is the
+strongest hostile steelman against overgeneralizing Block 197.

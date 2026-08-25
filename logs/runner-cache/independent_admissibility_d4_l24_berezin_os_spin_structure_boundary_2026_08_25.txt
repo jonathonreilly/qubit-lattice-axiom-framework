@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/independent_admissibility_d4_l24_berezin_os_spin_structure_boundary_2026_08_25.py
+runner_sha256: 5e46790ee1773a9cd3ad8c41aa31077e2db11a35f0b7f8009444ce05bed03080
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.44
+status: ok
+----- stdout -----
+[PASS] A1: the periodic L24 shift and centered differential are rebuilt exactly
+[PASS] A2: the phase-real action is the exact radius-one frozen block
+[PASS] A3: the uniform reflected action obeys ordinary-transpose self-duality
+[PASS] B1: the literal degree-one reflected covariance is exact real symmetric
+[PASS] B2: the disclosed t=0/t=6 principal matrix is reproduced entrywise
+[PASS] B3: the two-generator Wick determinant is the disclosed strict negative rational
+[PASS] B4: the reduced kernel has exact rank four and inertia (2,2,20)
+[PASS] B5: the eight-copy full-16 lift has rank 32 and inertia (16,16,160)
+[PASS] C1: a global reflection sign cannot repair the even-degree determinant
+[PASS] C2: left/right covariance convention transposition leaves the witness fixed
+[PASS] C3: the complex phase presentation is an exact unitary congruence
+[PASS] C4: common fourth-root twists are Hermitian exactly for q=+/-1
+[PASS] C5: every Hermitian common twist has q^2=1 and preserves the negative Wick norm
+[PASS] D1: the five N5 resolution lines are present exactly once
+per_element: checked the exact radius-one 2x2 Clifford action, reflected covariance entries, and the disclosed two-generator Berezin principal minor.
+per_site: checked the periodic L24 carrier on the positive half t=0,...,11 and used the exact witness sites t=0 and t=6.
+per_mode: checked one frozen radius-one Clifford block and its eight-copy full-16 lift; no other radius, source response, or held-out point was evaluated.
+per_block: checked action/reflection covariance, degree-one rank and inertia, degree-two Wick determinant, and global-sign, transpose, phase, and common-twist robustness as separate exact blocks.
+lattice_wide: checked and not executed -- no antiperiodic or seam-transported spin structure, two-step reconstruction, full event-fiber GNS/CAR identification, CPTP history law, process tensor, gravity law, or TOE closure is tested.
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

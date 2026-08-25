@@ -143,3 +143,17 @@ structure with a rebuilt source carrier, an action-derived global process
 tensor, centered-symbol gravity, axioms, or the TOE.  No axiom amendment,
 obligation retirement, retained status, or TOE percentage movement is
 preregistered.
+
+## Outcome
+
+T1 fired exactly.  The literal radius-one degree-one Berezin form has rank
+four and inertia `(2 positive,20 null,2 negative)`, with the preregistered
+two-generator determinant
+`-678223072849/77463616656739800`.  The actual full fiber is eight copies and
+has inertia `(16,160,16)`.  Both adjacent planes, both half orientations, all
+Hermitian global degree signs, covariance transposition, and phase undo retain
+the failure.  The scalar twisted-antiperiodic control is positive on both
+planes, but both frozen modes share only periodic twist `+1` at every common
+length `L=24n`.  T4/T5, response, and heldouts remained sealed.  No axiom,
+obligation, or TOE score moves; the next live target is the action-derived
+even/odd parity-doubled two-step construction.

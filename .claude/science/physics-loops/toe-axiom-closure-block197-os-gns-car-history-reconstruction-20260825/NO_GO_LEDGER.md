@@ -1,7 +1,8 @@
 # No-Go Ledger
 
-No broad no-go is preregistered.  If T1 fails, the maximum allowed result is a
-partial narrowing for the literal periodic/uniform Block-192 carrier.
+T1 failed.  The shipped maximum is a partial narrowing for the literal
+periodic/uniform Block-192 carrier.  The broad negative remains forbidden by
+N1 and N7.
 
 Live escape families that prevent a broad negative:
 
@@ -13,7 +14,6 @@ Live escape families that prevent a broad negative:
    source/event action;
 6. centered-symbol gravity-first route.
 
-The landed source note must contain the current N1--N8 packet and the cached
-runner must contain the five N5 resolution lines required by the fresh
-no-go-discipline skill.
-
+The source note contains the current N1--N8 packet and both cached runners
+contain the five N5 resolution lines required by the fresh no-go-discipline
+skill.

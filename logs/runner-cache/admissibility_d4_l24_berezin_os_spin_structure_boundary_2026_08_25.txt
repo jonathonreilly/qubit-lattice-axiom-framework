@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_d4_l24_berezin_os_spin_structure_boundary_2026_08_25.py
+runner_sha256: b276198636bdef419dfc26a60b796476c75a21496ff08dde6ddf670ede895b10
+input_fingerprint_sha256: f4596508e213ba2e63aba3c34f06305a85ae30f560fde9136dd97eed41b9961c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.29
+status: ok
+----- stdout -----
+[PASS] A: authority, preregistration ancestry, axiom/registry blobs, and literal inputs bind
+[PASS] P: the disclosed pilot is independently reproduced from the frozen phase-real action
+[PASS] T1: the actual radius-one Berezin seed is exactly indefinite before quotient construction
+[PASS] T2: sign, plane, orientation, transpose, and Schur-versus-Berezin controls preserve the boundary
+[PASS] T3: twisted antiperiodic scalar RP repairs positivity but cannot retain both frozen modes on one scalar-twist circle
+[PASS] N: the landed source note contains the fresh N1--N8 no-go-discipline packet
+[PASS] S: quotient, channel, response, heldouts, axioms, broad no-go, and TOE movement remain sealed
+WITNESS: K[(0,12),(0,12)] determinant=-678223072849/77463616656739800; inertia=(2, 20, 2); full_inertia=(16, 160, 16)
+REPAIR: twisted-AP degree-one inertias={0: (4, 20, 0), 1: (4, 20, 0)}; common frozen-mode twist=1=1
+per_element: checked the exact two-generator exterior norm on positive-half coordinates (t=0,c=0) and (t=6,c=0), whose determinant is strictly negative.
+per_site: checked both adjacent reflection-plane classes and both half-circle orientations on the literal periodic L24 radius-zero and radius-one reduced actions.
+per_mode: checked the actual radius-one Clifford sector, its eight-copy full-fiber lift, and exact scalar-twist compatibility of k=pi/6 with k=pi/4.
+per_block: checked the finite-circle Berezin seed, convention battery, and scalar twisted-antiperiodic repair; GNS, event-factor, channel, and response blocks stop downstream.
+lattice_wide: checked and not executed — parity-doubled carriers, global process tensors, open-time limits, gravity closure, Record persistence, Born forcing, and TOE closure remain live.
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,85 @@
+===== runner cache v1 =====
+runner: scripts/two_axis_same_lock_zprobe_neighbor_read_outgoing_tplus1_reverse_face_2026_08_15.py
+runner_sha256: d7676c7f26b381381d7a8c42539e1168fecc4ea9fc06d798e593b033c6fc1632
+input_fingerprint_sha256: 009a60cdd265dd97ea8f267ecacf0a1bcf99c76845c750fa5d493fff389bee64
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+neighbor-read of O reverse/face at t+1 on two-axis same-lock z-probes
+AUDIT_INPUT_PATHS:
+  docs/TWO_AXIS_SAME_LOCK_ZPROBE_NEIGHBOR_READ_OUTGOING_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Neighbor-read of O at t+1 on the four z-probes of the two-axis same-lock seed, and reverse/face from that, are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/TWO_AXIS_SAME_LOCK_ZPROBE_NEIGHBOR_READ_OUTGOING_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-z-probes-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: pair-read-identity
+PASS: neighbor-read-identity
+A t=0 O={+e_1, −e_1, +e_2, +e_3} neighbor-read=fail
+B t=1 O={+e_2, +e_3, −e_3} neighbor-read=fail
+C t=1 O={+e_1, −e_1, −e_2} neighbor-read=fail
+D t=1 O={−e_2, +e_3, −e_3} neighbor-read=fail
+neighbor-read reverse=fail face=fail
+nm2oreadz opposite z-probe neighbor-read reverse=fail face=fail A=hold
+1-axis same-lock z-probe neighbor-read reverse=fail face=fail A=fail
+per_element: each earliest outgoing lock set O at a probe and at formed 6-NN, compared as sets at the probe's t+1
+per_site: scored only at z-probes A,B,C,D on Euclidean B_3(0); no other sites
+per_mode: no spectral or mode calculation is executed on this finite host
+per_block: four neighbor-read reports, reverse/face from those bits
+lattice_wide: checked and not executed — no lattice-wide lettering rule is claimed
+PASS: perp-step-incoming-lock
+PASS: undefined-if-unformed
+PASS: incoming-set-seed-singleton
+PASS: neither-pair-is-opposite
+PASS: theorem1-formation-ticks  ({'A': 0, 'B': 1, 'C': 1, 'D': 1})
+PASS: theorem1-O-at-tau  ({'A': '{+e_1, −e_1, +e_2, +e_3}', 'B': '{+e_2, +e_3, −e_3}', 'C': '{+e_1, −e_1, −e_2}', 'D': '{−e_2, +e_3, −e_3}'})
+PASS: theorem1-O-not-frozen-from-t
+PASS: theorem1-O-is-not-M
+PASS: theorem1-formed-6nn-O-at-A
+PASS: theorem1-formed-6nn-O-at-B
+PASS: theorem1-formed-6nn-O-at-C
+PASS: theorem1-formed-6nn-O-at-D
+PASS: theorem1-neighbor-read-bits  ({'A': ('fail', ()), 'B': ('fail', ()), 'C': ('fail', ()), 'D': ('fail', ())})
+PASS: theorem1-mixed-stays-a-set
+PASS: theorem1-A-is-seed
+PASS: compare-nm2oreadz-opposite-neighbor-read
+PASS: compare-1-axis-same-lock-z-neighbor-read
+PASS: theorem2-reverse-fail
+PASS: theorem3-face-fail
+PASS: mutation-r-style-differs
+PASS: mutation-neighbor-read-of-M-differs
+PASS: mutation-unique-letter-mixed-O
+PASS: not-x-probes-or-y-probes-or-perp
+PASS: not-nsopp-leftover-second-pair-is-seed
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: note-claim-scope
+PASS: note-reports-O-and-neighbor-read
+PASS: note-reports-formed-neighbors
+PASS: note-reports-reverse-face
+PASS: note-displayed-not-adopted
+PASS: note-not-cover-or-M-or-opposite-or-r-style-leftover
+PASS: note-no-global-T
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+PASS: neighbor-read-not-cover-or-M-or-opposite
+TOTAL: PASS=53 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,507 @@
+---
+claim_id: two_axis_same_lock_zprobe_neighbor_read_outgoing_tplus1_reverse_face_bounded_theorem_note_2026-08-15
+claim_type: bounded_theorem
+claim_scope: "Neighbor-read of O at t+1 on the four z-probes of the two-axis same-lock seed, and reverse/face from that, are reported. Displayed, not adopted."
+upstream_dependencies:
+  - minimal_axioms
+runner: scripts/two_axis_same_lock_zprobe_neighbor_read_outgoing_tplus1_reverse_face_2026_08_15.py
+---
+
+# Neighbor-Read Of Own-Outgoing At t+1 Reverse And Face On Four Two-Axis Same-Lock Z-Probes
+
+> **Key terms used in this doc** are indexed A-Z at `docs/KEY_TERMINOLOGY.md`;
+> each row points to the canonical source-of-truth doc.
+
+**Date:** 2026-08-15
+**Type:** bounded_theorem
+**Scope:** neighbor-read of the outgoing dual `O` at each probe's `τ=t+1`,
+and reverse/face from that neighbor-read, on the four z-probes of the
+two-axis same-lock seed in `B_3(0)={n:n·n<=9}`. Same process and z-probes
+as nm2slz. Let `t(q)` be the formation tick of probe `q`. Let `τ(q)=t(q)+1`.
+`M(q,τ)` is the set of earliest incoming nearest-neighbor steps at `q`
+using only records with tick `<= τ`. Seeds are a singleton seed letter.
+`O(q,τ)` is the outgoing dual of `M`: the set of `e` in `{±e_1,±e_2,±e_3}`
+such that `q+e` is formed and `e` is in `M(q+e,τ)`. Unformed at `τ` is
+`UNDEFINED`. Empty `O` is empty, not `UNDEFINED`. Neighbor-read HOLDs at
+formed `q` if and only if some formed 6-NN `r` has `O(r,τ)` defined and
+equal to `O(q,τ)` as sets. Unformed `q` is `UNDEFINED`. Uniqueness is not
+required. Mixed remains a set. Reverse HOLDs if and only if neighbor-read
+HOLDs at `A` and at `B`. Face HOLDs if and only if neighbor-read HOLDs at
+`C` and at `D`. This is not leftover of nm2slz axis-cover. This is not
+leftover of nm2readslz neighbor-read of M. This is not leftover of
+nm2oreadz neighbor-read of O on two-axis opposite z-probes. This is not
+leftover of R-style recovery of the outgoing step from neighbors. Neither
+pair is opposite. Occupancy of sites is not used. Named-sign lettering is
+not used. Displayed, not adopted. Do not write into Admissibility. Do not
+attach L1.
+**Audit-status authority:** independent audit lane only. This note authors no
+audit verdict and predicts none.
+**Primary runner:**
+[`scripts/two_axis_same_lock_zprobe_neighbor_read_outgoing_tplus1_reverse_face_2026_08_15.py`](../scripts/two_axis_same_lock_zprobe_neighbor_read_outgoing_tplus1_reverse_face_2026_08_15.py)
+
+Framework input:
+
+- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) supplies
+  cubic-lattice sites `Z^3` with nearest-neighbor adjacency, the one-site
+  algebra `M_2(C)`, and the Record sentences that records form and that a
+  present record locks exactly one admissible local possibility.
+
+Everything after that quoted input is a finite displayed process on `B_3(0)`
+and the four named z-probes. Incoming lock letters are unit nearest-neighbor
+steps. `O` is the outgoing dual of those incoming sets at the per-probe cut
+`τ=t+1`. Neighbor-read asks whether a formed six-neighbor recovers that
+outgoing set as a set, without being `O` itself. Reverse and face are
+scored on neighbor-read HOLD at the paired probes. Named signs `{+,−}` are
+a coarser readout and are not used. A singleton unique lock letter is a
+different readout and is not used as the object. Axis-cover of `M` and `O`
+is a different readout and is not used. Neighbor-read of `M` is a different
+readout and is not used. Two-axis opposite neighbor-read of `O` is a
+different readout and is not used. R-style recovery of signed steps from a
+neighbor's `O` is a different readout and is not used. A `Z^3` sum of those
+locks is a different readout and is not used. Occupancy of sites is not
+used. A six-neighbor star is not the letter.
+
+## Machine status and trace
+
+```yaml
+actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
+claim_type_reason: "Exact report of neighbor-read of O at t+1 on the four z-probes of the two-axis same-lock seed, fail at A,B,C,D, reverse fail and face fail from those bits; uniqueness of outgoing locks is not claimed and the bits are not adopted."
+trace_class: frontier_discovery
+target_claim_id: two_axis_same_lock_zprobe_neighbor_read_outgoing_tplus1_reverse_face
+target_blocker_text: "display neighbor-read of O at t+1 on the four z-probes of the two-axis same-lock seed, compare to nm2oreadz opposite O-read and to nm2readslz neighbor-read of M, HOLD iff some formed 6-NN recovers O as a set"
+source_of_blocker_text: handoff
+reachability_to_target: advances
+artifact_role: theorem
+next_trace_action: "Keep neighbor-read of O at t+1 displayed; do not write neighbor-read into Admissibility, do not reduce to neighbor-read of M, do not reduce to R-style recovery, do not reduce to nm2slz axis-cover, do not replace the display by nm2oreadz opposite O-read, and do not attach L1."
+conditional_surface_status: "exact on B_3(0) for neighbor-read of O at t+1 on the four z-probes of the two-axis same-lock seed and reverse/face from that; displayed, not adopted"
+hypothetical_axiom_status: "no edit"
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```
+
+## Displayed process
+
+Write `e_1=(1,0,0)`, `e_2=(0,1,0)`, and `e_3=(0,0,1)`. The six nearest-neighbor
+steps are
+
+```text
+NN = {+e_1,-e_1,+e_2,-e_2,+e_3,-e_3}.
+```
+
+The finite host is the closed Euclidean ball of radius 3 centered at the
+origin,
+
+```text
+B_3(0) = { n in Z^3 : n·n <= 9 }.
+```
+
+No larger host is used. The four z-probes are the only sites whose
+neighbor-read of `O` is scored:
+
+```text
+A = (0,0,1),  B = (1,1,1),  C = (0,0,2),  D = (1,0,1).
+```
+
+These are not the y-probes `A=(0,1,0)`, `B=(1,1,1)`, `C=(0,2,0)`,
+`D=(1,1,0)`. These are not the x-probes `A=(1,0,0)`, `B=(1,1,1)`, `C=(2,0,0)`,
+`D=(1,1,0)`. `A` is a seed of the second same-lock pair.
+
+Lock alphabet of the displayed process: `{±e_i}` with `i` in `{1,2,3}`.
+
+Seed: two disjoint same-lock pairs recorded at formation tick 0. Origin
+locks `+e_1` and `(0,1,0)` locks `+e_1`. `(0,0,1)` locks `+e_2` and
+`(0,1,1)` locks `+e_2`. The second pair is a new seed, not a formed child
+of the first pair, and neither pair is opposite. This seed is not the 1-axis
+same-lock two-site seed `{0,(0,1,0)}` with `+e_1/+e_1` alone. This seed is
+not the two-axis opposite seed `+e_1/−e_1` and `+e_2/−e_2`. This seed is
+not the y-symmetric three-site seed that also records `(0,-1,0)` at tick 0.
+This seed is not the x-axis same-lock seed `{0,(1,0,0)}` with `+e_2/+e_2`.
+This seed is not the z-symmetric three-site seed `{0,(0,0,1),(0,0,-1)}`.
+
+From a recorded site `p` with lock `L_in(p)=±e_i`, a six-neighbor step
+`s in NN` to `q=p+s` is allowed if and only if `s` is perpendicular to
+`e_i`, that is
+
+```text
+s · e_i = 0.
+```
+
+If `q` lies in `B_3(0)`, is still unformed, and the step is allowed, then `q`
+forms next and locks the incoming step `s`. If several allowed parents reach
+`q` at the same earliest formation, each such incoming step is kept. A later
+parent does not re-form `q`. Uniqueness is not required. Mixed remains a set.
+
+## Named neighbor-read of `O` at `τ=t+1`
+
+Let `t(q)` be the formation tick of z-probe `q` when that tick is defined in
+`B_3(0)`. Let `τ(q)=t(q)+1`. There is no global T.
+
+`M(q,τ)` is the set of earliest incoming nearest-neighbor steps at `q`
+using only records with tick `<= τ`. If `q` is unformed at `τ`, then
+`M(q,τ)` is `UNDEFINED`. If `q` is a seed and `τ >= 0`, then `M(q,τ)` is
+the singleton seed letter.
+
+`O(q,τ)` is the outgoing dual of `M`:
+
+```text
+O(q,τ) = { e in {±e_1,±e_2,±e_3} | q+e formed and e in M(q+e,τ) }.
+```
+
+If `q` is unformed at `τ`, then `O(q,τ)` is `UNDEFINED`. Empty `O` is empty,
+not `UNDEFINED`. Duplicate steps collapse in the set. The construction does
+not require `O` to be a singleton. It does not sum the set. It does not
+replace `O` by `M`. It does not wait for a global later T. Occupancy of
+sites is not used. O is not M.
+
+Neighbor-read at a formed probe at the same cut:
+
+```text
+neighbor-read(q) HOLDs iff some formed 6-NN r has O(r,τ)
+defined and equal to O(q,τ) as sets.
+```
+
+If `q` is unformed at `τ`, then neighbor-read is `UNDEFINED`. Else if no
+formed six-neighbor recovers `O(q,τ)` as a set, neighbor-read fails. The
+probe is not counted as its own neighbor. Empty matching is fail, not
+`UNDEFINED`. Mixed remains a set: a mixed `O(q,τ)` may still match a mixed
+`O(r,τ)`.
+
+Reverse neighbor-read holds if and only if neighbor-read HOLDs at `A` and
+at `B`. Face neighbor-read holds if and only if neighbor-read HOLDs at `C`
+and at `D`. Either side `UNDEFINED` is `UNDEFINED`. Else if both sides HOLD,
+reverse or face HOLDs. Else fail.
+
+Identifying neighbor-read of `O` with neighbor-read of `M` is refused:
+nm2readslz neighbor-read of `M` HOLDs at each of these four z-probes;
+neighbor-read of `O` fails at each. Identifying neighbor-read with R-style
+recovery of signed steps from a neighbor's `O` is refused: R-style recovers
+a different set. Identifying neighbor-read with nm2slz axis-cover is
+refused: cover is a different object. Identifying this display with
+nm2oreadz opposite neighbor-read of `O` is refused: opposite HOLDs at `A`
+from a shared partner outgoing set; here the same-lock partner does not
+share `O(A,τ)`.
+
+## Theorem 1 — ticks, `O` at probes and formed 6-NN, neighbor-read bit
+
+On this process the four z-probes form. Compare to neighbor-read of `M`:
+that leftover reports hold at `A`, `B`, `C`, and `D`, reverse hold, and
+face hold. Compare to nm2oreadz opposite neighbor-read of `O`: that leftover
+HOLDs at `A` because the opposite partner seed `(0,1,1)` shares
+`O={+e_1, −e_1, +e_3}`. This two-axis same-lock member keeps the same
+z-probes and the same perp-step process, but neither pair is opposite.
+Neighbor-read of `O` fails at `A`, at `B`, at `C`, and at `D`. Reverse
+fails. Face fails.
+
+```text
+t(A)=0
+t(B)=1
+t(C)=1
+t(D)=1
+O(A, τ) = {+e_1, −e_1, +e_2, +e_3}
+O(B, τ) = {+e_2, +e_3, −e_3}
+O(C, τ) = {+e_1, −e_1, −e_2}
+O(D, τ) = {−e_2, +e_3, −e_3}
+neighbor-read(A) = fail
+neighbor-read(B) = fail
+neighbor-read(C) = fail
+neighbor-read(D) = fail
+formed 6-NN of A at τ: (1, 0, 1)={}, (-1, 0, 1)={}, (0, 1, 1)={+e_1, −e_1, +e_3}, (0, -1, 1)=UNDEFINED, (0, 0, 2)={}, (0, 0, 0)={−e_2, −e_3}
+formed 6-NN of B at τ: (2, 1, 1)=UNDEFINED, (0, 1, 1)={+e_1, −e_1, +e_3}, (1, 2, 1)={}, (1, 0, 1)={−e_2, +e_3, −e_3}, (1, 1, 2)={}, (1, 1, 0)={}
+formed 6-NN of C at τ: (1, 0, 2)={}, (-1, 0, 2)={}, (0, 1, 2)={+e_1, −e_1, +e_2}, (0, -1, 2)={}, (0, 0, 1)={+e_1, −e_1, +e_2, +e_3}
+formed 6-NN of D at τ: (2, 0, 1)=UNDEFINED, (0, 0, 1)={+e_1, −e_1, +e_2, +e_3}, (1, 1, 1)={+e_2, +e_3, −e_3}, (1, -1, 1)={}, (1, 0, 2)={}, (1, 0, 0)={}
+matching 6-NN of A: none
+matching 6-NN of B: none
+matching 6-NN of C: none
+matching 6-NN of D: none
+```
+
+`A` is a seed at tick 0 with seed letter `+e_2`. The partner of that pair,
+`(0,1,1)`, is also a seed at tick 0 with seed letter `+e_2`. At `t`,
+`O(A,t)={+e_2}` already, because the step from `A` to the partner is
+`+e_2` and that step is the partner's seed letter. At `τ=1`, `O(A,τ)`
+grows to `{+e_1, −e_1, +e_2, +e_3}`. The partner's outgoing set at that
+cut is `{+e_1, −e_1, +e_3}`, missing `+e_2`. Those sets are unequal, so
+neighbor-read fails at `A`. Mixed remains a set: `O(A,τ)` has four outgoing
+steps. Unique letters would assign `UNDEFINED` at mixed `O`. Here uniqueness
+is not required. At `t`, `O` is empty at `B`, `C`, and `D`. At `τ=t+1`,
+those three `O` sets are nonempty. `M` is frozen from `t` to `t+1`; `O` is
+not. O is not M.
+
+On the two-axis opposite seed, `O(A,τ)={+e_1, −e_1, +e_3}` equals the
+partner seed's outgoing set, so neighbor-read HOLDs at `A`. That leftover
+is not this member: same-lock keeps `+e_2` inside `O(A,τ)` and fails at
+`A`.
+
+On the 1-axis same-lock two-site seed, `A=(0,0,1)` is a formed child at
+tick 1 locking `+e_3`. That is leftover of the first pair. Here `A` is a
+seed of a second same-lock pair on a second axis.
+
+Empty `O` at a neighbor is defined empty, not `UNDEFINED`. Empty is not
+equal to the nonempty probe `O` at `τ`, so those neighbors do not match.
+
+## Theorem 2 — reverse from neighbor-read of `O` at `τ`
+
+Reverse neighbor-read holds if and only if neighbor-read HOLDs at `A` and
+at `B`. Neighbor-read fails at `A` and fails at `B`. Reverse fails. This is
+HOLD iff neighbor-read at both reverse probes, not leftover of neighbor-read
+of `M`.
+
+Reverse neighbor-read at τ: fail
+
+Both sides are defined, so this is not `UNDEFINED`. Neighbor-read of `M`
+has reverse hold. nm2oreadz opposite neighbor-read of `O` also has reverse
+fail, but from hold at `A` and fail at `B`. nm2slz axis-cover reverse
+fails from overlapping `e_2`. R-style recovery of `O` is unequal to `O`
+at `A` and at `B`. Those leftovers are not this display.
+
+Reverse fails.
+
+## Theorem 3 — face from neighbor-read of `O` at `τ`
+
+Face neighbor-read holds if and only if neighbor-read HOLDs at `C` and at
+`D`. Neighbor-read fails at `C` and at `D`. Face fails.
+
+Face neighbor-read at τ: fail
+
+Displayed, not adopted. The bits are not written into Admissibility.
+Do not write into Admissibility. Do not attach L1.
+
+Neighbor-read of `M` has face hold. This display scores neighbor-read of
+`O`, which fails at `C` and at `D`, so face fails.
+
+On the same seed the four y-probes give reverse fail and face fail, but
+neighbor-read HOLDs at y-probe `D`. The four x-probes give reverse fail
+and face fail, but neighbor-read HOLDs at x-probes `A` and `D` with
+`t(A)=2`. Those probe-direction readouts are not this z-probe display.
+
+1-axis same-lock neighbor-read of `O` also fails reverse and face, with
+`t(A)=1`. That leftover is not this seed-`A` member.
+
+Face fails.
+
+## What this note does not claim
+
+- It does not select a unique incoming or outgoing lock.
+- It does not reduce lock vectors to named signs `{+,−}`.
+- It does not require neighbor-read sides to be singletons.
+- It does not sum either set.
+- It does not replace neighbor-read of `O` by neighbor-read of `M`.
+- It does not replace neighbor-read by R-style recovery of signed steps.
+- It does not replace neighbor-read by nm2slz axis-cover of `M` and `O`.
+- It does not replace neighbor-read by nm2oreadz opposite neighbor-read of `O`.
+- It does not replace `O` by `M`.
+- It does not replace neighbor-read by locks of six-neighbors.
+- It does not use a six-neighbor star as the letter.
+- It does not wait for a global later T.
+- It does not attach a formation member from already-recorded six-neighbor
+  locks.
+- It does not reprint nm2readslz neighbor-read of `M` reverse hold and face
+  hold.
+- It does not reprint nm2oreadz neighbor-read of `O` hold at `A`.
+- It does not treat the second same-lock pair as a formed child of the first.
+- It does not score the y-probes or the x-probes as this letter.
+- It does not use occupancy of sites as the letter.
+- It does not enlarge the host beyond `B_3(0)`.
+- It does not edit Lattice, Qubit, Admissibility, or Record.
+- It does not supply a physical rate or a continuum kernel.
+
+## Current premise boundary
+
+The Lattice, Qubit, Admissibility, and Record premises are quoted from
+[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md):
+
+Physical sites are the points of the cubic lattice `Z^3`, with nearest-neighbor
+adjacency, standard translations, and proper cubic rotations about each site.
+
+The full one-site possibility domain has algebraic presentation `M_2(C)`.
+
+For each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions.
+
+Records form.
+
+When present, a record locks exactly one admissible local possibility.
+
+A readout value is determined by record content alone.
+
+A site with no record cannot be read.
+
+The Admissibility reading note says the distribution concerns which possibility
+a forming record locks, conditional on formation at that site; it does not
+supply the formation site, probability, or rate.
+
+This display uses Lattice to name `B_3(0)` and the four z-probes. It uses Qubit
+only as the algebra of the local possibility domain. It uses Record only as a
+boundary: a present lock is content. It does not rewrite Admissibility. The
+two-axis same-lock four-site process, neighbor-read of `O` at `t+1`, and the
+reverse/face bits from that neighbor-read are displayed theorem-domain data.
+
+## Exact target and obligation graph
+
+| Obligation | Status |
+|---|---|
+| current Lattice / Admissibility / Record premises | quoted; no edit |
+| perp-step incoming-lock process on `B_3(0)` | displayed; two disjoint same-lock pairs `+e_1/+e_1` and `+e_2/+e_2` |
+| ticks `t(A)`, `t(B)`, `t(C)`, `t(D)` | Theorem 1; `0`, `1`, `1`, `1` |
+| `O` at `τ=t+1` | Theorem 1; HOLDING outgoing dual |
+| `O` at formed 6-NN | Theorem 1; reported at each eventually-formed neighbor |
+| neighbor-read bit at `τ` | Theorem 1; fail, fail, fail, fail |
+| reverse from neighbor-read at `τ` | Theorem 2; `fail` |
+| face from neighbor-read at `τ` | Theorem 3; `fail` |
+| compare to nm2oreadz opposite neighbor-read of `O` | Theorem 1; opposite HOLDs at `A` and fails reverse from hold/fail; this member fails at `A` and fails reverse from fail/fail |
+| compare to nm2readslz neighbor-read of `M` | Theorem 1; neighbor-read of `M` HOLDs at each probe, reverse hold, face hold |
+| unique outgoing lock | not required |
+| occupancy of sites as the letter | not used |
+| named-sign `{+,−}` letter | not used |
+| singleton unique lock-vector letter | not used as the object; mixed remains a set |
+| `Z^3` sum of the lock set | not used; no aggregation |
+| six-neighbor star as the letter | not used |
+| leftover of nm2slz axis-cover | not this neighbor-read display |
+| leftover of nm2readslz neighbor-read of `M` | not this display |
+| leftover of nm2oreadz opposite neighbor-read of `O` | not this display |
+| leftover of R-style recovery | not this display |
+| leftover of 1-axis same-lock neighbor-read | not this display |
+| leftover of x-axis same-lock z-probe neighbor-read | not this display |
+| leftover of y-probe neighbor-read | not this display |
+| global later T | not used |
+| neighbor-read as Admissibility content | not adopted |
+| formation site / probability / rate | open |
+| physical Record readout of the bits | open |
+
+## Value gate (V1–V5)
+
+| # | Answer |
+|---|---|
+| V1 | It answers the first-display question: neighbor-read of `O` at `t+1` on the four z-probes of the two-axis same-lock seed, compared to nm2oreadz opposite O-read and to nm2readslz neighbor-read of `M`, and reverse/face from those bits. |
+| V2 | Current main has no landed neighbor-read reverse/face of timed `O` on these four two-axis same-lock z-probes. |
+| V3 | Neighbor-read reports at one cut and the two reverse/face bits are independently finite and exact. |
+| V4 | The theorem is more than a restatement of Record because it reads whether a formed six-neighbor recovers own outgoing as a set at the same `t+1` cut. |
+| V5 | It is not an adopted content rule: the bits remain displayed. |
+
+## No-go discipline gate
+
+The negative content is narrow: the display does not write those bits into
+Admissibility, does not reduce them to named signs, does not require a
+unique lock, does not replace neighbor-read of `O` by neighbor-read of `M`,
+does not replace neighbor-read by R-style recovery, does not identify this
+display with nm2slz axis-cover, and does not identify this display with
+nm2oreadz opposite neighbor-read of `O`. No global impossibility is claimed.
+
+### N1 — materially distinct routes
+
+| Route | Attempt | Why it fails here | Marker |
+|---|---|---|---|
+| neighbor-read of `M` | score reverse/face from equal incoming sets | neighbor-read of `M` is hold/hold/hold/hold, reverse hold, face hold; neighbor-read of `O` is fail/fail/fail/fail, reverse fail, face fail | ATTEMPTED |
+| nm2oreadz opposite O-read | reuse seed `+e_1/−e_1` and `+e_2/−e_2` | opposite HOLDs at `A` from shared partner `O={+e_1, −e_1, +e_3}`; this member fails at `A` because same-lock keeps `+e_2` in `O(A,τ)` | ATTEMPTED |
+| nm2slz axis-cover | reuse cover of `M` and `O` | cover is complementary unsigned axes, not set-equality of `O` at a neighbor | ATTEMPTED |
+| R-style recovery | recover `e` by `(-e)` in `O(q+e)` | R-style of `O` is empty at `A` and `{−e_1}` at `B`; neither equals `O` | ATTEMPTED |
+| 1-axis same-lock O-read | reuse seed `{0,(0,1,0)}` with `+e_1/+e_1` | 1-axis has `t(A)=1`; here `t(A)=0` as a second-pair seed | ATTEMPTED |
+| two-site opposite leftover | reuse opposite `+e_1/−e_1` without the second pair | that leftover has two tick-0 sites; this member has four same-lock seeds | ATTEMPTED |
+| unique letter | replace mixed sets by a singleton or `UNDEFINED` | mixed `O(A,τ)` remains a set; unique-letter is `UNDEFINED` while neighbor-read still reports fail from nonempty matching | ATTEMPTED |
+| y-probe neighbor-read | score the four y-probes on this seed | y-probe neighbor-read HOLDs at `D`; this letter fails at each z-probe | ATTEMPTED |
+| x-probe neighbor-read | score the four x-probes on this seed | x-probe neighbor-read HOLDs at `A` and at `D` with `t(A)=2`; this letter has seed `A` at tick 0 and fails at each z-probe | ATTEMPTED |
+| x-axis same-lock z-probe | reuse seed `{0,(1,0,0)}` with `+e_2/+e_2` | different seed; this letter is two-axis same-lock on `+e_1/+e_1` and `+e_2/+e_2` | ATTEMPTED |
+| z-symmetric leftover | reuse seed `{0,(0,0,1),(0,0,-1)}` | different three-site seed; this member is four same-lock seeds | ATTEMPTED |
+| perp two-site leftover | reuse seed `{0,(0,1,0)}` with `+e_1/+e_2` | perp is a different seed; this member is two-axis same-lock | ATTEMPTED |
+| named-sign lettering | collapse `{±e_i}` to `{+,−}` | named-sign lettering lost the outgoing set | ATTEMPTED |
+| global later T | wait until `max t(A,B,C,D)` before reading | `τ(q)=t(q)+1` is per-probe; no global T | ATTEMPTED |
+| attach a formation member from already-recorded six-neighbor locks | form the probes by a neighbor-lock letter instead of perp-step | refused; not attached | ATTEMPTED |
+| adopt bits into Admissibility | rewrite the local rule by neighbor-read of `O` | refused; displayed, not adopted | ATTEMPTED |
+
+### N2 — wall independence
+
+Missing physical adoption, missing identification of neighbor-read of `O`
+with neighbor-read of `M`, missing identification with R-style recovery,
+missing identification with nm2slz axis-cover, missing identification with
+nm2oreadz opposite O-read, and missing Record identification of
+neighbor-read reverse are distinct open premises. This note claims no
+complete wall collection.
+
+### N3 — hidden-condition scan
+
+The host `B_3(0)`, four-site two-axis same-lock seed, perpendicular step
+rule, incoming-step lock, own outgoing dual from records with tick `<= τ`,
+per-probe `τ=t+1`, neighbor-read as set equality of `O` at some formed
+six-neighbor, four z-probes with seed `A`, and mixed remains a set are
+declared. No uniqueness of outgoing locks, no six-neighbor lock union as
+the scored object, no global later T, no formation attachment from
+already-recorded six-neighbor locks, and no Admissibility rewrite are
+silently assumed.
+
+### N4 — source residual matching
+
+The current axiom memo supplies cubic sites, `M_2(C)`,
+content-conditional-on-formation, and unreadable absence. The residual that
+formation site, probability, and rate remain unsupplied is unchanged. The
+neighbor-read `hold`/`fail` reports do not close that residual.
+
+### N5 — resolution and rhetoric audit
+
+| Resolution | Executed | Not claimed |
+|---|---|---|
+| per element | each earliest outgoing lock set `O` at a probe and at formed 6-NN, compared as sets at the probe's `t+1` | no continuum alphabet |
+| per site | `A,B,C,D` z-probes on `B_3(0)` only | no other cubic sites |
+| per mode | no mode calculation | no spectral exhaustion |
+| per block | four neighbor-read reports, reverse/face from those bits | no adopted content law |
+| lattice wide | checked and not executed | no lattice-wide lettering rule |
+
+### N6 — live partial-closure paths
+
+Live routes include a later Record content map for neighbor-read reverse/face,
+a formation-rate rule, and a physical selector among matching neighbors.
+None is taken here.
+
+### N7 — hostile steelman
+
+**Steelman:** Neighbor-read fail of `O` on same-lock z-probes is leftover of
+nm2oreadz reverse fail and face fail; nm2readslz already asked whether a
+neighbor recovers a lock set and HOLDs reverse; R-style already recovers
+outgoing steps from neighbors; and same-lock only changes a sign of the
+second pair.
+
+**Answer:** Opposite HOLDs at `A` because the partner seed `(0,1,1)` shares
+`O={+e_1, −e_1, +e_3}`. This member fails at `A` because same-lock keeps
+`+e_2` inside `O(A,τ)`, unequal to the partner's `{+e_1, −e_1, +e_3}`.
+Neighbor-read of `M` HOLDs at each of the four z-probes, reverse hold, and
+face hold. Neighbor-read of `O` fails at each, reverse fail, and face fail.
+R-style recovers `{ }` at `A` and `{−e_1}` at `B`, neither equal to `O`.
+Same-lock is not a sign flip of opposite: both pairs lock the same letter,
+and that shared letter is already an outgoing step from `A` to the partner.
+Reverse fail here is fail at `A` with fail at `B`, not leftover of opposite
+hold at `A` with fail at `B`.
+
+### N8 — cross-cycle echo
+
+nm2readslz reported neighbor-read of `M` HOLD at each of four same-lock
+z-probes, reverse hold, and face hold. nm2oreadz reported neighbor-read of
+`O` hold at `A` and fail at `B`, `C`, and `D` on two-axis opposite
+z-probes, reverse fail, and face fail. nm2slz axis-cover reports cover fail
+at `A` and fails reverse. This note is not those displays: it reports
+neighbor-read of `O` at `τ=t+1` on the four z-probes of the two-axis
+same-lock seed, fail at `A`,`B`,`C`,`D`, reverse fail, and face fail.
+
+**Gate disposition:** PASS for the neighbor-read of `O` `t+1` reverse/face
+reports above. FAIL / DO NOT SHIP for “the predicate equals the named sign,”
+“the predicate equals the unique singleton lock vector,” “the predicate
+equals six-neighbor lock union,” “the predicate equals neighbor-read of
+`M`,” “the predicate equals R-style recovery,” “the predicate equals
+nm2slz axis-cover,” “the predicate equals nm2oreadz opposite neighbor-read
+of `O`,” “bits are Admissibility,” “neighbor-read of `O` HOLDs at `A`,”
+“reverse neighbor-read HOLDs,” or “face neighbor-read HOLDs.”
+
+## Primary runner
+
+The paired runner builds Euclidean `B_3(0)`, runs the two-axis same-lock
+perp-step incoming-lock process, reads each z-probe's own outgoing dual
+from the record prefix at that probe's `t+1`, reads `O` at each eventually-
+formed six-neighbor at the same cut, reports neighbor-read as set equality
+at some formed six-neighbor, compares to two-axis opposite neighbor-read of
+`O` and to neighbor-read of `M`, and checks Theorems 1--3. It also checks
+that neighbor-read fails at each z-probe, that neighbor-read of `M` is a
+different pattern, that R-style recovery is a different set, that mixed
+sets remain sets, that unique-letter neighbor-read is not required at mixed
+`O`, that the construction does not sum, that a formation member from
+already-recorded six-neighbor locks is not attached, that the second pair
+is a seed and not a formed child, and that the display is not the y-probe
+or x-probe neighbor-read. No runner cache is written.

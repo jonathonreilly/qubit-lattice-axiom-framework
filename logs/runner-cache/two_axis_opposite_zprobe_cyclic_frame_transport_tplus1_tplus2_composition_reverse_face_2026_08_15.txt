@@ -4,7 +4,7 @@ runner_sha256: 43a872291a3ba70087e74d895b80752de4ba2bb72b4fe3182b64f9fc578a320d
 input_fingerprint_sha256: 14150c877839600e7cda44f10d8922e852ffc4603d08de715e9812a745b39e32
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.19
+elapsed_sec: 0.38
 status: ok
 ----- stdout -----
 cyclic-frame transport freeze t+1 versus t+2 reverse/face composition on two-axis opposite z-probes

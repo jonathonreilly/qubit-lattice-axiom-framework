@@ -1,5 +1,13 @@
 # PR Backlog
 
+Publication update:
+
+- Block 194 is PR #7723, OPEN/MERGEABLE/CLEAN, stacked on Block-193 PR
+  #7698.  Result commit `21e1e67c01` carries the exact detector/PVM/dilation
+  theorem, failed D1/H1 rank gate, fresh cache, and explicit failed no-go gate.
+- Independent audit remains unset.  The PR does not edit audit verdict,
+  ledger-grade, queue, or effective-status data.
+
 Preregistration refresh at 2026-08-25T16:32:30Z:
 
 - Block 193 is PR #7698, OPEN/MERGEABLE/CLEAN and stacked on Block-192

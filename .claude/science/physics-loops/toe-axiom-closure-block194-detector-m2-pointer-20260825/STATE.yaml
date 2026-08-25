@@ -1,7 +1,10 @@
 campaign: toe-axiom-closure-block194-detector-m2-pointer-20260825
-status: executed_bounded_instantaneous_detector_response_boundary
+status: proposed_evidence_pr_open
 parent_commit: cef8b0407aea496c9c1dadd65cfde0c9afc6f73a
 parent_pull_request: 7698
+result_commit: 21e1e67c01fa5424c9a9f96b9dfd32be609fe784
+result_pull_request: 7723
+result_pull_request_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7723
 origin_main: b11811704efa98a12272d572f666e530a807f6c1
 target: detector_conditioned_u4_orientation_and_m2_pointer_discriminator
 target_claim_id: admissibility_d4_detector_conditioned_m2_pointer_discriminator_boundary_bounded_theorem_note_2026-08-25
@@ -39,6 +42,7 @@ independent_reconstruction: exact_core_clean
 no_go_discipline_gate: FAIL
 negative_disposition: partial-attempt-with-named-untested-routes
 broad_negative: prohibited
+pull_request_state: OPEN_MERGEABLE_CLEAN
 classification_before_response: required
 held_out_before_discovery_pass: forbidden
 record_tail_before_discovery_pass: forbidden

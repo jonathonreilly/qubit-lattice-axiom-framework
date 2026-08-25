@@ -5,7 +5,7 @@
 | four minimal axioms plus three approved primitives | foundation | current `origin/main` authority | no supplied probability values, event basis, source bridge, formation rate, or physical clock |
 | Block 192 PR #7632 / commit `872ce2ff1d` | fixed carrier/history/source-typing parent | proposed bounded evidence | not retained authority and not a complete source or Record law |
 | `L=24`, `m=2/7`, first-half cut, reflection, D1-D3/H1-H2/X1 | frozen test object | exact parent fixture | no point, cut, mass, or boundary refit |
-| Block-190 forward and actual reverse vertices with `M_q,M_q^dagger` | primary physical source pair for all 16 internal slots | frozen action-native convention | no `V,V^dagger` Hermitian typing pair promoted to the physical reverse law |
+| Block-190 forward and actual reverse vertices with `M_q,M_q^dagger` | primary physical source pair for all ten symmetric `PAIRS4` components | frozen action-native convention | no `V,V^dagger` Hermitian typing pair promoted to the physical reverse law |
 | Block-191 grade-three effects | fixed event blocks | proposed parent fixture | no response-selected PVM or event relabel |
 | ordinary-transpose reflected Schur Gram | physical response observable under test | fixed convention | no polar-control substitution |
 | PR #7319 homogeneous self-hosting writer | candidate nonidentity write/permanence component | open proposed evidence; conditional fresh-site order | no autonomous formation or physical time imported |

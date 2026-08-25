@@ -11,7 +11,7 @@ temporal_length: 24
 source_sector: physical_p_direct_sum_p_plus_q
 source_pair_primary: block190_forward_actual_reverse_with_mq_mq_dagger
 source_pair_control: hermitian_forward_adjoint_typing_only
-source_slots: all_0_through_15
+source_slots: all_10_symmetric_pairs4_components
 diagonal_arm: first_nonzero_normalized_response_then_record
 coherent_arm: propagated_tangent_oriented_complete_instrument_then_record
 event_refit_allowed: false

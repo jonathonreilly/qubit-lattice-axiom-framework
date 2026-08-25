@@ -10,8 +10,8 @@ The common physical object is the incoming/outgoing sector action
 
 `A_0 = A(p) direct-sum A(p+q)`
 
-with the primary action-native source pair frozen, for every internal source
-slot `A=0,...,15`, as
+with the primary action-native source pair frozen, for every one of the ten
+symmetric `PAIRS4` source components `A=0,...,9`, as
 
 `T_actual = [[0, M_q tensor V(p,q)], [M_q^dagger tensor V(p+q,-q), 0]]`
 

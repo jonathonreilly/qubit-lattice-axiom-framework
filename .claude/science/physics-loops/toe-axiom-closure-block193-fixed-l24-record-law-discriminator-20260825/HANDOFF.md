@@ -10,7 +10,7 @@ selected event law, permanent Record, Born derivation, axiom amendment,
 obligation retirement, or TOE score movement.
 
 First compute the propagated two-sector Gram tangent and Hessian using the
-frozen action-native forward/actual-reverse Block-190 pair on all 16 source
+frozen action-native forward/actual-reverse Block-190 pair on all ten source
 slots.  The Hermitian forward/adjoint pair is a diagnostic control only.  Do
 not call the raw vertex overlap a response.  Do not consume Record-stack machinery
 until one event arm is a complete positive instrument with a normalized

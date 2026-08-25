@@ -1,0 +1,115 @@
+===== runner cache v1 =====
+runner: scripts/two_axis_opposite_unit_square_cyclic_frame_holonomy_tplus1_reverse_face_2026_08_15.py
+runner_sha256: d36035744297172f4727d8202717ecf9c7bff870ebb6e58cb27656e0e755d371
+input_fingerprint_sha256: 38421e976d1b7a4e838f5ae943d6a503c4459efef14e42aee464a76638eeaddc
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+cyclic-frame holonomy around the unit square reverse/face at t+1 on two-axis opposite seed
+AUDIT_INPUT_PATHS:
+  docs/TWO_AXIS_OPPOSITE_UNIT_SQUARE_CYCLIC_FRAME_HOLONOMY_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Cyclic-frame holonomy around the unit square at t+1 on the two-axis opposite seed, and reverse/face from that, are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/TWO_AXIS_OPPOSITE_UNIT_SQUARE_CYCLIC_FRAME_HOLONOMY_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-z-probes-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: det-identity
+PASS: orient-identity
+PASS: pair-orient-identity
+PASS: sending-identity
+A t=0 M={+e_2} O={+e_1, −e_1, +e_3} split=hold F=(+e_2, +e_3, −e_1) Orient=−1 transport=hold scalar=hold witness=(1, 0, 1) P=[0 -1 0; 0 0 -1; -1 0 0]
+B t=1 M={+e_1} O={+e_2, +e_3, −e_3} split=hold F=(+e_1, +e_2, −e_3) Orient=−1 transport=hold scalar=fail witness=(0, 1, 1) P=[0 0 -1; -1 0 0; 0 -1 0]
+C t=1 M={+e_3} O={+e_1, −e_1, −e_2} split=hold F=(+e_3, −e_1, −e_2) Orient=+1 transport=hold scalar=fail witness=(0, 1, 2) P=[1 0 0; 0 1 0; 0 0 -1]
+D t=1 M={+e_1} O={−e_2, +e_3, −e_3} split=hold F=(+e_1, −e_2, −e_3) Orient=+1 transport=hold scalar=fail witness=(0, 0, 1) P=[0 0 -1; -1 0 0; 0 -1 0]
+A (0, 0, 1) t=0 M={+e_2} O={+e_1, −e_1, +e_3} split=hold F=(+e_2, +e_3, −e_1) Orient=−1
+D (1, 0, 1) t=1 M={+e_1} O={−e_2, +e_3, −e_3} split=hold F=(+e_1, −e_2, −e_3) Orient=+1
+B (1, 1, 1) t=1 M={+e_1} O={+e_2, +e_3, −e_3} split=hold F=(+e_1, +e_2, −e_3) Orient=−1
+E (0, 1, 1) t=0 M={−e_2} O={+e_1, −e_1, +e_3} split=hold F=(−e_2, +e_3, −e_1) Orient=+1
+C (0, 0, 2) t=1 M={+e_3} O={+e_1, −e_1, −e_2} split=hold F=(+e_3, −e_1, −e_2) Orient=+1
+C1 (1, 0, 2) t=2 M={+e_1, +e_3} O={+e_1, −e_2} split=fail F=fail Orient=fail
+C2 (1, 1, 2) t=2 M={+e_1, +e_3} O={+e_1, +e_2} split=fail F=fail Orient=fail
+C3 (0, 1, 2) t=1 M={+e_3} O={+e_1, −e_1, +e_2} split=hold F=(+e_3, −e_1, +e_2) Orient=−1
+P(A->D)=[0 -1 0; 0 0 -1; -1 0 0]
+P(D->B)=[1 0 0; 0 -1 0; 0 0 1]
+P(B->E)=[0 0 -1; -1 0 0; 0 -1 0]
+P(E->A)=[-1 0 0; 0 1 0; 0 0 1]
+P(C->C1)=fail
+P(C1->C2)=fail
+P(C2->C3)=fail
+P(C3->C)=[1 0 0; 0 1 0; 0 0 -1]
+holonomy reverse product=[1 0 0; 0 1 0; 0 0 1]
+holonomy face product=fail
+holonomy reverse=hold face=fail
+transport reverse=hold face=hold
+Orient reverse=hold face=hold
+scalar reverse=fail face=fail
+split reverse=hold face=hold
+cover reverse=hold face=hold
+per_element: cyclic frame F=(m,o_next,o_prev) and four-edge signed-permutation holonomy around a unit square at t+1
+per_site: scored only at reverse square A-D-B-E and face square C-C1-C2-C3 on Euclidean B_3(0); no other sites
+per_mode: no spectral or mode calculation is executed on this finite host
+per_block: edge sendings, two holonomy matrices, reverse/face from holonomy
+lattice_wide: checked and not executed — no lattice-wide lettering rule is claimed
+PASS: perp-step-incoming-lock
+PASS: undefined-if-unformed
+PASS: theorem1-formation-ticks  ({'A': 0, 'B': 1, 'C': 1, 'D': 1})
+PASS: theorem1-M-O-split  ({'A': ('{+e_2}', 'hold'), 'B': ('{+e_1}', 'hold'), 'C': ('{+e_3}', 'hold'), 'D': ('{+e_1}', 'hold')})
+PASS: theorem1-Orient  ({'A': '−1', 'B': '−1', 'C': '+1', 'D': '+1'})
+PASS: theorem1-transport  ({'A': ('hold', 'hold'), 'B': ('hold', 'fail'), 'C': ('hold', 'fail'), 'D': ('hold', 'fail')})
+PASS: theorem1-mixed-O-cyclic-not-unique
+PASS: theorem1-M-frozen-from-t
+PASS: theorem1-new-records-meet-6nn  ({'A': ((1, 0, 1), (-1, 0, 1), (0, 0, 2)), 'B': ((1, 2, 1), (1, 1, 2), (1, 1, 0)), 'C': ((1, 0, 2), (-1, 0, 2), (0, -1, 2)), 'D': ((1, -1, 1), (1, 0, 2), (1, 0, 0))})
+PASS: theorem1-A-is-seed
+PASS: theorem1-square-ticks-F-Orient
+PASS: theorem1-edge-P-and-holonomy-matrices  (rev=[1 0 0; 0 1 0; 0 0 1] faceP=('fail', 'fail', 'fail', '[1 0 0; 0 1 0; 0 0 -1]'))
+PASS: theorem2-reverse-holonomy-hold
+PASS: theorem3-face-holonomy-fail
+PASS: cover-and-split-do-not-score-handedness
+PASS: split-fail-is-orient-fail-not-undefined
+PASS: empty-Oi-is-orient-fail-not-undefined
+PASS: not-leftover-of-1-axis-cover-face-hold
+PASS: not-leftover-empty-fail
+PASS: mutation-leftover-of-M-or-O-alone-differs
+PASS: mutation-exist-opposite-differs
+PASS: mutation-unsigned-incoming-axis-agrees-here
+PASS: mutation-unique-letter-undefined-at-mixed-O
+PASS: mutation-sum-cancels-mixed
+PASS: O-is-not-M
+PASS: second-pair-is-seed-not-formed-child
+PASS: not-x-probes-or-y-probes-or-z-symmetric-or-perp
+PASS: not-same-lock-or-one-axis-or-live-three-axis-seed
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: note-claim-scope
+PASS: note-reports-M-O-split-Orient
+PASS: note-reports-new-neighbors
+PASS: note-reports-holonomy-reverse-face
+PASS: note-displayed-not-adopted
+PASS: note-not-cover-or-split
+PASS: note-not-one-sided-or-leftover-empty
+PASS: note-not-two-tick-lock-count-clock
+PASS: note-not-mixed-7188-fail-fail
+PASS: note-no-global-T
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+PASS: holonomy-not-transport-or-scalar-or-orient-equality
+TOTAL: PASS=62 FAIL=0
+
+----- stderr -----
+

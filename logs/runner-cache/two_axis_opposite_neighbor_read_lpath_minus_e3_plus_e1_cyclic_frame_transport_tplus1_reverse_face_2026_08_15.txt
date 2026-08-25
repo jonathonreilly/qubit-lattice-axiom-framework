@@ -1,0 +1,96 @@
+===== runner cache v1 =====
+runner: scripts/two_axis_opposite_neighbor_read_lpath_minus_e3_plus_e1_cyclic_frame_transport_tplus1_reverse_face_2026_08_15.py
+runner_sha256: f2fe7aadcced3ce80ad5c44d358ba1c964d19cd0cc1d982a1ab04416fda03a79
+input_fingerprint_sha256: 8dbb65296e896db43ab37dcd503ad9ff7186c6ef73c5b47af7eab3ac7d6c8d1f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.19
+status: ok
+----- stdout -----
+Neighbor-read of L-path cyclic-frame transport -e3 then +e1 at t+1
+AUDIT_INPUT_PATHS:
+  docs/TWO_AXIS_OPPOSITE_NEIGHBOR_READ_LPATH_MINUS_E3_PLUS_E1_CYCLIC_FRAME_TRANSPORT_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+displayed_not_adopted: true
+PASS: audit-input-paths-literal
+PASS: audit-inputs-exist
+PASS: source-lattice
+PASS: source-admissibility-unedited
+PASS: source-record-boundary
+PASS: euclidean-ball-cardinality
+PASS: seed-tick-zero
+PASS: seed-incoming-locks
+PASS: perp-step-blocks-parallel
+PASS: tick1-record-count  (14)
+PASS: signed-permutation-identity
+probe (0,0,0) t=0 tau=1 lpath=hold neighbor_read=hold
+  m=(1,0,0) o_next=(0,-1,0) o_prev=(0,0,-1) Orient=1 F=[1 0 0; 0 -1 0; 0 0 -1]
+  nn (0,1,0) t=0 lpath=hold
+  nn (0,-1,0) t=1 lpath=fail
+  nn (0,0,1) t=0 lpath=fail
+  nn (0,0,-1) t=1 lpath=fail
+  witnesses=(0,1,0)
+probe (0,1,0) t=0 tau=1 lpath=hold neighbor_read=hold
+  m=(-1,0,0) o_next=(0,1,0) o_prev=(0,0,-1) Orient=1 F=[-1 0 0; 0 1 0; 0 0 -1]
+  nn (0,2,0) t=1 lpath=fail
+  nn (0,0,0) t=0 lpath=hold
+  nn (0,1,1) t=0 lpath=fail
+  nn (0,1,-1) t=1 lpath=fail
+  witnesses=(0,0,0)
+probe (0,0,1) t=0 tau=1 lpath=fail neighbor_read=fail
+  m=(0,1,0) o_next=(0,0,1) o_prev=(-1,0,0) Orient=-1 F=[0 0 -1; 1 0 0; 0 1 0]
+  nn (1,0,1) t=1 lpath=fail
+  nn (-1,0,1) t=1 lpath=fail
+  nn (0,1,1) t=0 lpath=fail
+  nn (0,0,2) t=1 lpath=hold
+  nn (0,0,0) t=0 lpath=hold
+  witnesses=(0,0,2),(0,0,0)
+probe (0,1,1) t=0 tau=1 lpath=fail neighbor_read=fail
+  m=(0,-1,0) o_next=(0,0,1) o_prev=(-1,0,0) Orient=1 F=[0 0 -1; -1 0 0; 0 1 0]
+  nn (1,1,1) t=1 lpath=fail
+  nn (-1,1,1) t=1 lpath=fail
+  nn (0,0,1) t=0 lpath=fail
+  nn (0,1,2) t=1 lpath=hold
+  nn (0,1,0) t=0 lpath=hold
+  witnesses=(0,1,2),(0,1,0)
+  edge (0,0,0)->(0,0,-1) formed=(1,1) split=(1,1) P=[0 1 0; 0 0 1; -1 0 0] edge=hold
+PASS: named-edge-(0,0,0)-(0,0,-1)
+  edge (0,0,-1)->(1,0,-1) formed=(1,1) split=(1,1) P=[0 0 -1; 1 0 0; 0 1 0] edge=hold
+PASS: named-edge-(0,0,-1)-(1,0,-1)
+  edge (0,1,0)->(0,1,-1) formed=(1,1) split=(1,1) P=[0 -1 0; 0 0 -1; 1 0 0] edge=hold
+PASS: named-edge-(0,1,0)-(0,1,-1)
+  edge (0,1,-1)->(1,1,-1) formed=(1,1) split=(1,1) P=[0 0 -1; -1 0 0; 0 -1 0] edge=hold
+PASS: named-edge-(0,1,-1)-(1,1,-1)
+  edge (0,0,1)->(0,0,0) formed=(1,1) split=(1,1) P=[0 1 0; 0 0 -1; 1 0 0] edge=hold
+PASS: named-edge-(0,0,1)-(0,0,0)
+  edge (0,0,0)->(1,0,0) formed=(1,1) split=(1,0) P=fail edge=fail
+PASS: named-edge-(0,0,0)-(1,0,0)
+  edge (0,1,1)->(0,1,0) formed=(1,1) split=(1,1) P=[0 1 0; 0 0 1; 1 0 0] edge=hold
+PASS: named-edge-(0,1,1)-(0,1,0)
+  edge (0,1,0)->(1,1,0) formed=(1,1) split=(1,0) P=fail edge=fail
+PASS: named-edge-(0,1,0)-(1,1,0)
+reverse=hold bits=('hold', 'hold')
+face=fail bits=('fail', 'fail')
+PASS: theorem1-seed-frames
+PASS: theorem1-mid-end-frames
+PASS: theorem1-lpath-bits
+PASS: theorem1-neighbor-read-bits
+PASS: theorem1-existential-witnesses
+PASS: theorem2-reverse-hold
+PASS: theorem3-face-fail
+PASS: not-leftover-of-one-step-minus-e3
+PASS: lpath-fail-neighbor-read-fail-not-undefined
+PASS: mutation-lex-largest-uses-minus
+PASS: outside-ball-is-fail
+PASS: all-lpath-vertices-in-ball
+PASS: note-claim-scope
+PASS: note-computed-bits
+PASS: note-forbidden-phrases
+PASS: note-no-status-overclaim
+PASS: axiom-file-unedited-by-this-packet
+TOTAL: PASS=36 FAIL=0
+
+----- stderr -----
+

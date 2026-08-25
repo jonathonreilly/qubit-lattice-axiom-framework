@@ -1,0 +1,79 @@
+===== runner cache v1 =====
+runner: scripts/two_axis_opposite_yprobe_neighbor_read_one_two_split_tplus1_reverse_face_2026_08_15.py
+runner_sha256: bf2dc1eb914c23cd2dfbe4034beba50a8ac0f3e456e0e90a856fcb4fd37bb3b5
+input_fingerprint_sha256: b361aae843f28a4925fc02e80c60284a5607a5b489078f7d2333b1886f1c553e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+neighbor-read of 1-in 2-out split reverse/face at t+1 on y-probes
+AUDIT_INPUT_PATHS:
+  docs/TWO_AXIS_OPPOSITE_YPROBE_NEIGHBOR_READ_ONE_TWO_SPLIT_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Neighbor-read of the 1-in 2-out split at t+1 on the four y-probes of the two-axis opposite seed, and reverse/face from that, are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/TWO_AXIS_OPPOSITE_YPROBE_NEIGHBOR_READ_ONE_TWO_SPLIT_TPLUS1_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-y-probes-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: pair-read-identity
+PASS: neighbor-read-identity
+A t=0 M={−e_1} O={+e_2, −e_3} Axis(M)={e_1} Axis(O)={e_2, e_3} split=hold neighbor-read=hold
+B t=1 M={+e_1} O={+e_2, +e_3, −e_3} Axis(M)={e_1} Axis(O)={e_2, e_3} split=hold neighbor-read=hold
+C t=1 M={+e_2} O={+e_1, −e_1, +e_3, −e_3} Axis(M)={e_2} Axis(O)={e_1, e_3} split=hold neighbor-read=fail
+D t=2 M={−e_3} O={+e_1, −e_1} Axis(M)={e_3} Axis(O)={e_1} split=fail neighbor-read=fail
+neighbor-read reverse=hold face=fail
+per_element: each 1-in 2-out axis assignment of M and O at a probe and at formed 6-NN, compared as unsigned axes at the probe's t+1
+per_site: scored only at y-probes A,B,C,D on Euclidean B_3(0); no other sites
+per_mode: no spectral or mode calculation is executed on this finite host
+per_block: four neighbor-read reports, reverse/face from those bits
+lattice_wide: checked and not executed — no lattice-wide lettering rule is claimed
+PASS: perp-step-incoming-lock
+PASS: undefined-if-unformed
+PASS: theorem1-formation-ticks  ({'A': 0, 'B': 1, 'C': 1, 'D': 2})
+PASS: theorem1-M-O-at-tau  ({'A': ('{−e_1}', '{+e_2, −e_3}'), 'B': ('{+e_1}', '{+e_2, +e_3, −e_3}'), 'C': ('{+e_2}', '{+e_1, −e_1, +e_3, −e_3}'), 'D': ('{−e_3}', '{+e_1, −e_1}')})
+PASS: theorem1-axis-split
+PASS: theorem1-formed-6nn-A
+PASS: theorem1-formed-6nn-B
+PASS: theorem1-formed-6nn-C
+PASS: theorem1-formed-6nn-D
+PASS: theorem1-neighbor-read-bits  ({'A': ('hold', ((0, 0, 0),)), 'B': ('hold', ((1, 0, 1),)), 'C': ('fail', ()), 'D': ('fail', ())})
+PASS: theorem1-split-fail-is-fail-not-undefined
+PASS: theorem1-axis-match-not-signed-sets
+PASS: theorem1-A-is-seed
+PASS: theorem2-reverse-hold
+PASS: theorem3-face-fail
+PASS: mutation-signed-pair-fails
+PASS: mutation-M-read-differs
+PASS: mutation-O-read-differs
+PASS: not-x-probes-or-z-probes-or-perp
+PASS: not-nsopp-leftover-second-pair-is-seed
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: note-claim-scope
+PASS: note-reports-M-O-split-nread
+PASS: note-reports-formed-neighbors
+PASS: note-reports-reverse-face
+PASS: note-displayed-not-adopted
+PASS: note-not-m-or-o-or-signed-leftover
+PASS: note-no-global-T
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+PASS: neighbor-read-not-m-or-o-read
+TOTAL: PASS=49 FAIL=0
+
+----- stderr -----
+

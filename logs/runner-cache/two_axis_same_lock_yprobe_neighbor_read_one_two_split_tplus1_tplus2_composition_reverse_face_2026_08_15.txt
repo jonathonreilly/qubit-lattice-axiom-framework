@@ -1,0 +1,92 @@
+===== runner cache v1 =====
+runner: scripts/two_axis_same_lock_yprobe_neighbor_read_one_two_split_tplus1_tplus2_composition_reverse_face_2026_08_15.py
+runner_sha256: ba87d142faa052007bcb167403b49ec01182ce2104f235e00f3d0cd6f42882cd
+input_fingerprint_sha256: 9aadc8f3cf4b745ce8fa36a81e5e6a035a3b876973968e668800d51ec0626bd9
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+neighbor-read of 1-in 2-out split reverse/face composition t+1 versus t+2
+AUDIT_INPUT_PATHS:
+  docs/TWO_AXIS_SAME_LOCK_YPROBE_NEIGHBOR_READ_ONE_TWO_SPLIT_TPLUS1_TPLUS2_COMPOSITION_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Neighbor-read of the 1-in 2-out split at t+1 versus t+2 on the four y-probes of the two-axis same-lock seed, reverse/face at each cut, and composition, are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/TWO_AXIS_SAME_LOCK_YPROBE_NEIGHBOR_READ_ONE_TWO_SPLIT_TPLUS1_TPLUS2_COMPOSITION_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-y-probes-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: split-identity
+PASS: pair-bit-identity
+PASS: neighbor-read-identity
+PASS: composition-identity
+A t=0 M1={+e_1} O1={+e_2, −e_3} Axis(M)1={e_1} Axis(O)1={e_2, e_3} split1=hold neighbor-read1=hold M2={+e_1} O2={+e_2, −e_3} split2=hold neighbor-read2=hold
+B t=1 M1={+e_1} O1={+e_2, +e_3, −e_3} Axis(M)1={e_1} Axis(O)1={e_2, e_3} split1=hold neighbor-read1=hold M2={+e_1} O2={+e_2, +e_3, −e_3} split2=hold neighbor-read2=hold
+C t=1 M1={+e_2} O1={+e_1, −e_1, +e_3, −e_3} Axis(M)1={e_2} Axis(O)1={e_1, e_3} split1=hold neighbor-read1=fail M2={+e_2} O2={+e_1, −e_1, +e_3, −e_3} split2=hold neighbor-read2=fail
+D t=2 M1={−e_3} O1={+e_1} Axis(M)1={e_3} Axis(O)1={e_1} split1=fail neighbor-read1=fail M2={−e_3} O2={+e_1} split2=fail neighbor-read2=fail
+neighbor-read reverse1=hold reverse2=hold face1=fail face2=fail composition=hold
+M neighbor-read reverse=hold face=fail A=hold B=hold
+O neighbor-read reverse=fail face=fail A=fail B=fail
+per_element: each unsigned lattice axis of M and of O at a probe and at formed 6-NN, compared at the probe's t+1 and t+2
+per_site: scored only at y-probes A,B,C,D on Euclidean B_3(0); no other sites
+per_mode: no spectral or mode calculation is executed on this finite host
+per_block: four neighbor-read reports at two cuts, reverse/face at each cut, composition of the bits
+lattice_wide: checked and not executed — no lattice-wide lettering rule is claimed
+PASS: perp-step-incoming-lock
+PASS: undefined-if-unformed
+PASS: incoming-set-seed-singleton
+PASS: theorem1-formation-ticks  ({'A': 0, 'B': 1, 'C': 1, 'D': 2})
+PASS: theorem1-M-O-split-both-cuts  ({'A': ('{+e_1}', '{+e_2, −e_3}', 'hold'), 'B': ('{+e_1}', '{+e_2, +e_3, −e_3}', 'hold'), 'C': ('{+e_2}', '{+e_1, −e_1, +e_3, −e_3}', 'hold'), 'D': ('{−e_3}', '{+e_1}', 'fail')})
+PASS: theorem1-neighbor-read-bits-both-cuts  ({'A': ('hold', 'hold', ((0, 0, 0),)), 'B': ('hold', 'hold', ((1, 0, 1),)), 'C': ('fail', 'fail', ()), 'D': ('fail', 'fail', ())})
+PASS: theorem1-formed-6nn-A-both-cuts
+PASS: theorem1-formed-6nn-BCD-both-cuts
+PASS: theorem1-new-6nn
+PASS: theorem1-mixed-stays-a-set
+PASS: theorem1-A-is-seed
+PASS: theorem1-split-fail-is-fail-not-undefined
+PASS: theorem1-axis-match-not-signed-sets
+PASS: theorem2-reverse-hold-both-cuts
+PASS: theorem2-face-fail-both-cuts
+PASS: theorem3-composition-hold
+PASS: mutation-M-neighbor-read-differs
+PASS: mutation-O-neighbor-read-differs
+PASS: mutation-signed-pair-fails
+PASS: mutation-unique-letter-undefined-at-mixed-O
+PASS: compare-opposite-y-split-neighbor-read
+PASS: compare-1-axis-y-split-neighbor-read
+PASS: not-x-probes-or-z-probes-or-perp
+PASS: not-one-axis-or-y-symmetric-or-z-symmetric
+PASS: O-is-not-M
+PASS: second-pair-is-seed-not-formed-child
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: note-claim-scope
+PASS: note-reports-M-O-split-neighbor-read-both-cuts
+PASS: note-reports-formed-neighbors-both-cuts
+PASS: note-reports-new-neighbors
+PASS: note-reports-reverse-face-composition
+PASS: note-displayed-not-adopted
+PASS: note-not-cover-or-one-cut-or-M-read-leftover
+PASS: note-no-global-T
+PASS: note-forbids-enlargement-and-cache
+PASS: note-does-not-use-occupancy
+PASS: note-uniqueness-not-required
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+PASS: split-neighbor-read-not-leftover-of-M-or-O
+TOTAL: PASS=60 FAIL=0
+
+----- stderr -----
+

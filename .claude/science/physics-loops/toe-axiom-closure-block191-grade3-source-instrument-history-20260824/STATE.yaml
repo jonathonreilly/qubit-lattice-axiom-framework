@@ -1,8 +1,10 @@
 campaign: toe-axiom-closure-block191-grade3-source-instrument-history-20260824
-status: science_complete_pending_packaging
+status: proposed_pr_open
+pull_request: 7356
+pull_request_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7356
 parent_commit: c6737fe46df64315f895921c2362f50f00f0b036
 origin_main: c79384cb8ffa27fcb53cb89c53a84a708442eaad
-active_gate: complete_block191_bounded_boundary
+active_gate: proposed_block191_bounded_boundary
 successor_gate: full_16form_temporal_carrier_source_history_intertwiner_then_adjoint_tournament
 carrier_attempt_cap: 2
 state_attempt_cap: 2

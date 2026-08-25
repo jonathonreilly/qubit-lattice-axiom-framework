@@ -20,3 +20,12 @@ Packaging refresh at 2026-08-25T00:14Z:
   exact held-out mismatch by citation.
 - Block 191 should stack on #7354.  Landing, review-loop, and audit verdicts
   remain outside this campaign.
+
+Publication refresh at 2026-08-25T01:02Z:
+
+- PR #7356 is OPEN, stacked on the exact Block-190 branch in PR #7354.
+- Its proposed surface is `bounded_theorem` / `bounded-support`; independent
+  audit remains unset.
+- The PR records zero obligation retirement, zero TOE percentage movement,
+  and no physical source, Record, axiom amendment, broad no-go, or retained
+  end-to-end theory.

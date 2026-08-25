@@ -47,3 +47,7 @@
   are explicitly claim-layer sensitivity checks; they each return
   `PASS=6 FAIL=1` at their mapped family and are not presented as independent
   model mutations.  No review-loop or audit verdict was run.
+- The corrected theorem, runner, cache, campaign packet, and citation-graph
+  manifest were committed at `73b8bf54c7` and published as stacked PR #7356.
+  Strict lint, axiom-premise, repository-invariant, staged-typing, forensic,
+  Python-compile, and diff checks passed before publication.

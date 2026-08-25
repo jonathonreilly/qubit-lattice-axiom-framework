@@ -1,0 +1,102 @@
+===== runner cache v1 =====
+runner: scripts/two_axis_opposite_xprobe_simultaneous_incoming_outgoing_tplus2_tplus3_composition_reverse_face_2026_08_15.py
+runner_sha256: 51b016cccccf3ee92c63548e4431216469636a43b59a5da548b1dce08079ef5f
+input_fingerprint_sha256: d5a3b771b6805a871eff1a250d960c2a98dd333da540a925160760d0573da379
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+simultaneous M and O freeze t+2 versus t+3 reverse/face composition on two-axis opposite x-probes
+AUDIT_INPUT_PATHS:
+  docs/TWO_AXIS_OPPOSITE_XPROBE_SIMULTANEOUS_INCOMING_OUTGOING_TPLUS2_TPLUS3_COMPOSITION_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+AUDIT_TIMEOUT_SEC: 120
+cache_write: false
+claim_scope: Simultaneous M and O at t+2 versus t+3 on the four x-probes of the two-axis opposite seed, reverse/face at each cut, and composition, are reported. Displayed, not adopted.
+PASS: audit-input-paths-literal  (('docs/TWO_AXIS_OPPOSITE_XPROBE_SIMULTANEOUS_INCOMING_OUTGOING_TPLUS2_TPLUS3_COMPOSITION_REVERSE_FACE_BOUNDED_THEOREM_NOTE_2026-08-15.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md'))
+PASS: audit-input-paths-exist
+PASS: audit-timeout-declared
+PASS: host-is-b3-closed-ball
+PASS: four-x-probes-in-host
+PASS: host-is-euclidean-not-taxicab
+PASS: id-add-dot-perp
+PASS: intersection-identity
+PASS: simultaneous-identity
+PASS: pair-sim-identity
+PASS: composition-identity
+PASS: leftover-empty-fail-contrast
+PASS: forall-perp-is-not-simultaneous
+A t=2 M(tau1)={−e_3} O(tau1)={+e_1} sim(tau1)=hold M(tau2)={−e_3} O(tau2)={+e_1} sim(tau2)=hold
+B t=1 M(tau1)={+e_1} O(tau1)={+e_2, +e_3, −e_3} sim(tau1)=hold M(tau2)={+e_1} O(tau2)={+e_2, +e_3, −e_3} sim(tau2)=hold
+C t=3 M(tau1)={+e_1} O(tau1)={−e_2, +e_3, −e_3} sim(tau1)=hold M(tau2)={+e_1} O(tau2)={−e_2, +e_3, −e_3} sim(tau2)=hold
+D t=2 M(tau1)={−e_3} O(tau1)={+e_1, −e_1} sim(tau1)=hold M(tau2)={−e_3} O(tau2)={+e_1, −e_1} sim(tau2)=hold
+reverse tau1=hold tau2=hold
+face tau1=hold tau2=hold
+composition=hold
+per_element: each signed lock among {±e_1,±e_2,±e_3} in M or in O at a probe's t+2 and t+3
+per_site: scored only at x-probes A,B,C,D on Euclidean B_3(0); no other sites
+per_mode: no spectral or mode calculation is executed on this finite host
+per_block: four sim reports at t+2 and t+3 plus reverse/face/composition
+lattice_wide: checked and not executed — no lattice-wide lettering rule is claimed
+PASS: perp-step-incoming-lock
+PASS: undefined-if-unformed
+PASS: incoming-set-seed-singleton
+PASS: theorem1-formation-ticks  ({'A': 2, 'B': 1, 'C': 3, 'D': 2})
+PASS: theorem1-M-at-tau1  ({'A': '{−e_3}', 'B': '{+e_1}', 'C': '{+e_1}', 'D': '{−e_3}'})
+PASS: theorem1-O-at-tau1  ({'A': '{+e_1}', 'B': '{+e_2, +e_3, −e_3}', 'C': '{−e_2, +e_3, −e_3}', 'D': '{+e_1, −e_1}'})
+PASS: theorem1-M-O-sim-at-tau2-freeze  ({'A': 'hold', 'B': 'hold', 'C': 'hold', 'D': 'hold'})
+PASS: theorem1-new-records-meet-6nn  ({'A': ((), ()), 'B': ((), ((2, 1, 1),)), 'C': ((), ()), 'D': ((), ())})
+PASS: theorem1-B-tplus3-neighbor-does-not-grow-O  ({−e_2, +e_3, −e_3})
+PASS: theorem1-mixed-stays-a-set
+PASS: theorem1-A-is-not-seed
+PASS: do-not-score-tau-t
+PASS: theorem2-reverse-and-face-hold-at-both-cuts  (hold/hold/hold/hold)
+PASS: theorem3-composition-hold  (hold)
+PASS: not-leftover-empty-fail
+PASS: mutation-exist-opposite-differs
+PASS: mutation-unique-letter-undefined-at-mixed-O
+PASS: mutation-axis-cover-is-not-this-letter
+PASS: mutation-forall-perp-is-not-this-letter
+PASS: mutation-nm2ot3x-exist-opposite-fail-is-not-this-reverse
+PASS: O-is-not-M
+PASS: not-y-probes-or-z-probes-or-perp
+PASS: not-nsopp-leftover-second-pair-is-seed
+PASS: mutation-nmoutopp-eventual-O
+PASS: mutation-sum-cancels-mixed
+PASS: formation-stays-in-host
+PASS: no-larger-ball
+PASS: empty-intersection-is-empty-not-undefined
+PASS: uniqueness-not-required
+PASS: note-claim-scope
+PASS: note-reports-M-O-sim-at-both-cuts
+PASS: note-reports-new-neighbors
+PASS: note-reports-reverse-face-composition
+PASS: note-displayed-not-adopted
+PASS: note-not-leftover-empty-fail
+PASS: note-not-axis-cover-or-exist-opposite-leftover
+PASS: note-not-nm2ot3x-or-nm2simx-one-cut
+PASS: note-not-two-tick-lock-count-clock
+PASS: note-not-mixed-7188-fail-fail
+PASS: note-does-not-use-occupancy
+PASS: note-no-global-T
+PASS: note-not-nmot2opp-or-nmt2opp-or-nmoutopp
+PASS: note-not-sign-lettering
+PASS: note-does-not-attach-formation-member
+PASS: note-not-unique-or-sum-or-star-leftover
+PASS: note-not-nsopp-leftover-child
+PASS: note-forbids-enlargement-and-cache
+PASS: note-forbidden-tokens-absent
+PASS: axiom-record-sentences-current
+PASS: note-quotes-current-premises
+PASS: note-machine-status-no-axiom-edit
+PASS: note-n-gates-present
+PASS: note-no-author-retained-verdict
+PASS: source-audit-paths-are-static-literals
+PASS: identity-gates-present
+PASS: source-formation-is-perp-step-queue
+PASS: sim-freeze-not-exist-opposite-fail
+TOTAL: PASS=70 FAIL=0
+
+----- stderr -----
+

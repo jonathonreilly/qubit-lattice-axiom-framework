@@ -11,3 +11,17 @@
 
 The independent panel reordered routes 1--3 before any target residual was
 evaluated.  The frozen points and success conditions are unchanged.
+
+## Post-Campaign Ranking
+
+| rank | route | obligation-retirement leverage | binding kill |
+|---:|---|---|---|
+| 1 | fixed-`L=24` diagonal-versus-coherent complete Record-law discriminator | maximal: can select the interface or establish axiom-choice eligibility | incomplete POVM, unpropagated tangent, fitted orientation/phase/source/normalization, no formation/permanence, or no readable held-out difference |
+| 2 | action-derived physical source/observable section from the gravity stack | high source/gravity information; cannot close Record alone | no unrefitted physical section/intertwiner into the Block-192 history |
+| 3 | diagonal second-order law alone | high probability of a bounded theorem, lower lane-closure probability | no positive normalized refinement-consistent Hessian instrument |
+| 4 | proper nonidentity transfer and permanent writer | necessary shared infrastructure | imported rather than derived continuation/formation/permanence |
+| 5 | further carrier, generic positivity, symmetry, or momentum scans | near-zero immediate retirement leverage | no new mechanism reopening a closed family |
+
+The next campaign may optionally test whether the coherent reference supplies
+PR #7340's sigma-real occupancy grain, but only through an action-, measure-,
+adjoint-, and observable-preserving bridge.

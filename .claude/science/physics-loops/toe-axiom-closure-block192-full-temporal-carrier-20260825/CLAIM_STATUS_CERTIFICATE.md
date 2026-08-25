@@ -1,17 +1,21 @@
 ---
-target_claim_id: admissibility_d4_grade3_source_instrument_history_write_boundary_bounded_theorem_note_2026-08-24
+target_claim_id: admissibility_d4_full_temporal_carrier_source_history_write_boundary_bounded_theorem_note_2026-08-25
 target_status: proposed_bounded_support
-target_blocker_text: "The first cross-piece arrow is empty: the frozen L=4 AP temporal carrier has no nonzero action intertwiner to the held-out source modes."
-reachability_to_target: unresolved
-next_trace_action: "Execute the preregistered three-route temporal-carrier tournament and require conditioned source-to-Gram-to-write composition."
-claim_type: frontier_probe
+target_blocker_text: "The static conditioned state reproduces the external response, but the same-fiber vertex proxy does not reproduce it as an OS log susceptibility and the physically typed two-sector source has zero diagonal first-order response."
+reachability_to_target: advances
+next_trace_action: "Execute two complete unrefitted event/Record laws on the fixed L24 action and compare Record-distinguishable held-out predictions."
+claim_type: bounded_theorem
 audit_status: unset
 ---
 
 # Claim Status Certificate
 
-At preregistration Block 192 has no scientific result.  Its only permissible
-positive endpoint is a proposed bounded theorem/support claim for the frozen
-full-16 carrier/source/history/write conjunction.  Its only permissible
-negative endpoint before N1--N8 is a route-local failed attempt with the first
-exact residual named.  No result is retained by this campaign itself.
+Block 192 proposes a bounded theorem.  The common `L=24` carrier, frozen-set
+ordinary-transpose OS positivity, static conditioned state, and adjacent write
+are exact positive pieces.  A same-fiber proxy fails by an exact D1
+two-normalization contradiction and H1 zero/nonzero witness; the actual
+two-sector vertex instead gives exact diagonal first-order zero.  The broad
+no-go gate fails because propagated coherent-event,
+alternative-observable, nonlinear-response, and full-detector routes remain
+open; the landed source note preserves N1--N8 and live N5 output.  No result is
+retained by this campaign itself.

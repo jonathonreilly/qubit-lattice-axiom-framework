@@ -67,3 +67,38 @@ couplings; failed X1 cross-frequency insertion; or a write that still consumes
 Current-ledger caution: there are zero effective retained science rows.  This
 campaign can produce auditable proposed evidence; it cannot declare itself
 positively retained.
+
+## Post-Campaign Portfolio Gate
+
+After the exact D1/H1 response verdict, a fresh five-role panel voted **4--1**
+to promote the two-complete-law Record discriminator to the next campaign.
+This is not a tournament of arbitrarily chosen laws.  It must keep Block 192's
+`L=24` carrier, mass, action, cut, reflection, source family, clock, and writer
+fixed and execute the full chain
+
+`measure -> event -> same-action response -> write -> permanent Record`.
+
+The two arms are:
+
+1. a parity-diagonal event law through its exact first nonzero second-order
+   normalized response; and
+2. a complete positive coherent instrument evaluated on the propagated
+   two-sector Gram tangent, whose internal orientation and relative phase are
+   supplied covariantly by the physical clock/writer, never fitted or absolute.
+
+Both must use D1/H1 only for construction and D2/D3/H2/X1 for validation,
+supply nonidentity continuation and permanence, and make readable unrefitted
+predictions.  One survivor gives a proposed selection theorem.  Two complete
+survivors with different Record distributions make a minimal-axiom decision
+eligible but do not authorize an edit.  If both fail, the binding fallback is
+the action-derived physical source/observable section from the gravity stack,
+not another carrier or positivity scan.
+
+The gravity/QFT seat dissented in favor of that source-section route
+immediately.  The majority kept it second because it cannot close a Record
+lane alone, while the fixed-object discriminator can either select a law or
+expose an honest premise choice.
+
+An optional high-payoff bridge to PR #7340 may be tested only at the physical
+action-and-measure level: a post-measure projection cannot change
+`|det_C|^2` into `det_C` and does not retire the occupancy-grain obligation.

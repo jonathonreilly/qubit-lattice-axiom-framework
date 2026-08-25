@@ -42,3 +42,25 @@ Block success would establish a candidate source/history/write vertical
 slice.  It would not derive Born probabilities, select the realized outcome,
 prove permanent Record dynamics, retire a TOE obligation, or amend an axiom.
 Those remain separately gated.
+
+## Executed Outcome
+
+The periodic `L=24` route is the minimal local Weyl carrier and passes every
+frozen endpoint, reflection, and X1 modulation gate.  The honest reflected OS
+Gram is exactly positive at all nine frozen spatial radii, has marginal
+`I_16/16`, conditions to `E_st/4`, and passes through the adjacent write.
+
+The full target conjunction nevertheless stops at the source/history arrow.
+The static conditioned-state expectation reproduces Block 191, but embedding
+its momentum-changing vertex as an endomorphism of one spatial fiber does not
+reproduce it as an OS log susceptibility.  D1 requires two incompatible exact
+normalizations and H1 has `C=0` with a nonzero proxy susceptibility.  This
+same-fiber proxy is not the physical translation-covariant source.
+
+The actual vertex is off-diagonal in the physical `p direct-sum (p+q)` sector,
+where every diagonal event has exactly zero first-order response.  The runner
+constructs a positive scalar-phase coherent effect but does not demonstrate a
+response for it; a response-sensitive coherent instrument and a physically
+derived internal orientation/phase law remain open.  This is a narrow
+source/event/observable boundary, not a broad no-go.
+No obligation, TOE percentage, retained claim, or axiom changes.

@@ -14,3 +14,21 @@
   moved periodic `L=24` ahead of the disconnected finite spectral diagnostic
   before target execution and bound a two-complete-Record-law fallback if no
   carrier survives the four-hour cap.
+- The final primary runner passes 7/7.  All 14 claim-layer mutations fail
+  exactly one mapped gate, including the D1 normalization and H1 support
+  falsifiers.
+- Independent reconstructions reproduced the honest ordinary-transpose H1
+  tangent, the D1 incompatible normalizations, all-nine-radius exact
+  positivity and the static conditioned marginal.  Final review narrowed the
+  D1/H1 result to the same-fiber proxy and bound the actual two-sector event
+  theorem to the nonzero Block-190 vertex.
+- The broad no-go discipline gate fails and the source note demotes the result
+  to the narrow executed source/event/observable boundary.  N1--N8 and the
+  five live N5 resolution lines land with the evidence.
+- Two final independent integrity passes returned clean after correcting three
+  scope defects: the scalar-phase projector proves positivity but not a
+  propagated response, the Hermitian `V,V^dagger` pair is not mislabeled as
+  the literal reverse Block-190 vertex pair, and the `L=24` statement proves a
+  canonical minimal uniform realization rather than uniqueness.  Both passes
+  reproduced 7/7 baseline checks, the 14/14 one-family mutation map, fresh
+  runner-cache binding, and the narrow no-go packet.

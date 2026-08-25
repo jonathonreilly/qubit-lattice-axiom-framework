@@ -20,3 +20,8 @@ Expected primary surfaces:
 - `scripts/admissibility_d4_full_temporal_carrier_source_history_write_2026_08_25.py`
 - `docs/ADMISSIBILITY_D4_FULL_TEMPORAL_CARRIER_SOURCE_HISTORY_WRITE_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-25.md`
 - matching `logs/runner-cache/` evidence.
+
+Executed surfaces now exist.  The primary runner/cache passes 7/7, the theorem
+note carries the complete N1--N8 packet, and the campaign packet records zero
+TOE movement.  Independent review and citation-graph/forensic validation remain
+before publication.

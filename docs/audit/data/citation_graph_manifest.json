@@ -1,6 +1,6 @@
 {
  "edge_count": 16109,
- "node_count": 5624,
+ "node_count": 5625,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -779,6 +779,10 @@
    "out_degree": 6
   },
   "admissibility_dirac_kahler_width_family_transfer_monodromy_bounded_theorem_note_2026-08-25": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "admissibility_dirac_kahler_window_schur_transport_defect_bounded_theorem_note_2026-08-26": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

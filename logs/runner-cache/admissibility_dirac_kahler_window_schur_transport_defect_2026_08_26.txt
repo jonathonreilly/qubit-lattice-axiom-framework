@@ -1,0 +1,338 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_window_schur_transport_defect_2026_08_26.py
+runner_sha256: b4b33a02f8b33e309d1ec2833f4596e813a7e9585d781ff203fde3153a720d2e
+input_fingerprint_sha256: 8f56a81a77bb6c442ef3abcb0c4bbdeb00d6d8ed1e24f22e65cc2a3b01668008
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 76.51
+status: ok
+----- stdout -----
+MEASURED
+  elapsed: 76.3s
+  origin/main 76df4becc8233080bc5a10a4baf55f83e80f8f2d
+  authority AuthorityCertificate(fixed_authority=True, parent_pin_is_commit=True, parent_ref_and_ancestry=True, parent_artifact_blobs=True, stale_parent_artifact_blobs=False, stale_is_real_ancestor=True, stale_carries_neither_artifact=True, machinery_import_landed=True, inputs_readable=9, inputs_missing=())
+  imposed 6, registered 0, adopted 0, gravity structures NOT SUPPLIED 9, readings 5
+  check verdict carried: WINDOW-SCHUR-NOT-REFUTED-ALL-CORES-BOTH-WIDTHS-MINIMALITY-QUALIFIED
+  exact carrier inverses built and shared: 4
+  carrier ranks {16: 64, 20: 80}, inverse residuals {(16, ('9/20', '5/13')): (0, 0), (20, ('9/20', '5/13')): (0, 0), (16, ('1/2', '1/3')): (0, 0), (20, ('1/2', '1/3')): (0, 0)}
+  nnz(Q(9/20,5/13) - Q(1/2,1/3)) at T = 16: 512
+  imported unit-volume block at c = 1/3: ((1, 0, 0, 0), (0, 9/8, -3/8, 0), (0, -3/8, 9/8, 0), (0, 0, 0, 1))
+  THE LANDED FINGERPRINTS, REBUILT
+    b190 (W - V^2)[0,4] at T = 20, t0 = 3 = 53601896033238042551256/229758595220483765728625, residual 0
+    b193 R[0,4] at T = 16, (t0,s,x) = (2,5,0) = 303717414128393981002946552450301011272963193469691599136505997554493148222247708710000000/77707725095998816829080256798567544217876202163787270905242891606801827087957579200283634261, residual 0, nnz(R) = 32
+  (m, c) = (9/20, 5/13), T = 16
+    t0 = 1 (odd), W(t0) = (1, 2, 3), J rows (4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15)
+      rank(A) 12, pivots (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11), one route for both RHS True
+      existence residuals (0, 0), padded vs G^T d (0, 0), Q^T u - d (0, 0), zero one-step columns 4, heaviest defect columns (9, 9)
+      one-step union (1, 2, 3) (12 rows), two-step union (1, 2, 3) (12 rows), joint 12 rows
+      per-column slices one ((), (), (), (), (1, 2, 3), (1, 2, 3), (1, 2, 3), (1, 2, 3))
+      per-column slices two ((1, 2, 3), (1, 2, 3), (1, 2, 3), (1, 2, 3), (1, 2, 3), (1, 2, 3), (1, 2, 3), (1, 2, 3))
+      per-column counts one (0, 0, 0, 0, 10, 10, 10, 10), two (10, 10, 10, 10, 12, 12, 12, 12)
+      minimal rows (one, two, joint) (12, 12, 12), droppable ((), (), ())
+      two-slice subsets one (False, False, False), two (False, False, False)
+      supp(u) 12 rows, supp(D_s u) 10 rows missing (8, 10), containments (True, True, True)
+    t0 = 2 (even), W(t0) = (3, 4, 5), J rows (12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23)
+      rank(A) 12, pivots (8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19), one route for both RHS True
+      existence residuals (0, 0), padded vs G^T d (0, 0), Q^T u - d (0, 0), zero one-step columns 4, heaviest defect columns (9, 9)
+      one-step union (3,) (4 rows), two-step union (3, 4, 5) (12 rows), joint 12 rows
+      per-column slices one ((), (), (), (), (3,), (3,), (3,), (3,))
+      per-column slices two ((3,), (3,), (3,), (3,), (3, 4, 5), (3, 4, 5), (3, 4, 5), (3, 4, 5))
+      per-column counts one (0, 0, 0, 0, 4, 4, 4, 4), two (4, 4, 4, 4, 10, 10, 10, 10)
+      minimal rows (one, two, joint) (4, 12, 12), droppable ((4, 5, 6, 7, 8, 9, 10, 11), (), ())
+      two-slice subsets one (True, True, False), two (False, False, False)
+      supp(u) 12 rows, supp(D_s u) 10 rows missing (16, 18), containments (True, True, True)
+    t0 = 3 (odd), W(t0) = (3, 4, 5), J rows (12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23)
+      rank(A) 12, pivots (8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19), one route for both RHS True
+      existence residuals (0, 0), padded vs G^T d (0, 0), Q^T u - d (0, 0), zero one-step columns 4, heaviest defect columns (9, 9)
+      one-step union (3, 4, 5) (12 rows), two-step union (3, 4, 5) (12 rows), joint 12 rows
+      per-column slices one ((), (), (), (), (3, 4, 5), (3, 4, 5), (3, 4, 5), (3, 4, 5))
+      per-column slices two ((3, 4, 5), (3, 4, 5), (3, 4, 5), (3, 4, 5), (3, 4, 5), (3, 4, 5), (3, 4, 5), (3, 4, 5))
+      per-column counts one (0, 0, 0, 0, 10, 10, 10, 10), two (10, 10, 10, 10, 12, 12, 12, 12)
+      minimal rows (one, two, joint) (12, 12, 12), droppable ((), (), ())
+      two-slice subsets one (False, False, False), two (False, False, False)
+      supp(u) 12 rows, supp(D_s u) 10 rows missing (16, 18), containments (True, True, True)
+    t0 = 4 (even), W(t0) = (5, 6, 7), J rows (20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31)
+      rank(A) 12, pivots (16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27), one route for both RHS True
+      existence residuals (0, 0), padded vs G^T d (0, 0), Q^T u - d (0, 0), zero one-step columns 4, heaviest defect columns (9, 9)
+      one-step union (5,) (4 rows), two-step union (5, 6, 7) (12 rows), joint 12 rows
+      per-column slices one ((), (), (), (), (5,), (5,), (5,), (5,))
+      per-column slices two ((5,), (5,), (5,), (5,), (5, 6, 7), (5, 6, 7), (5, 6, 7), (5, 6, 7))
+      per-column counts one (0, 0, 0, 0, 4, 4, 4, 4), two (4, 4, 4, 4, 10, 12, 10, 12)
+      minimal rows (one, two, joint) (4, 12, 12), droppable ((4, 5, 6, 7, 8, 9, 10, 11), (), ())
+      two-slice subsets one (True, True, False), two (False, False, False)
+      supp(u) 12 rows, supp(D_s u) 10 rows missing (24, 26), containments (True, True, True)
+    t0 = 5 (odd), W(t0) = (5, 6, 7), J rows (20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31)
+      rank(A) 12, pivots (16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27), one route for both RHS True
+      existence residuals (0, 0), padded vs G^T d (0, 0), Q^T u - d (0, 0), zero one-step columns 4, heaviest defect columns (9, 9)
+      one-step union (5, 6, 7) (12 rows), two-step union (5, 6, 7) (12 rows), joint 12 rows
+      per-column slices one ((), (), (), (), (5, 6, 7), (5, 6, 7), (5, 6, 7), (5, 6, 7))
+      per-column slices two ((5, 6, 7), (5, 6, 7), (5, 6, 7), (5, 6, 7), (5, 6, 7), (5, 6, 7), (5, 6, 7), (5, 6, 7))
+      per-column counts one (0, 0, 0, 0, 10, 12, 10, 12), two (10, 12, 10, 12, 12, 12, 12, 12)
+      minimal rows (one, two, joint) (12, 12, 12), droppable ((), (), ())
+      two-slice subsets one (False, False, False), two (False, False, False)
+      supp(u) 12 rows, supp(D_s u) 10 rows missing (24, 26), containments (True, True, True)
+  (m, c) = (9/20, 5/13), T = 20
+    t0 = 1 (odd), W(t0) = (1, 2, 3), J rows (4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15)
+      rank(A) 12, pivots (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11), one route for both RHS True
+      existence residuals (0, 0), padded vs G^T d (0, 0), Q^T u - d (0, 0), zero one-step columns 4, heaviest defect columns (9, 9)
+      one-step union (1, 2, 3) (12 rows), two-step union (1, 2, 3) (12 rows), joint 12 rows
+      per-column slices one ((), (), (), (), (1, 2, 3), (1, 2, 3), (1, 2, 3), (1, 2, 3))
+      per-column slices two ((1, 2, 3), (1, 2, 3), (1, 2, 3), (1, 2, 3), (1, 2, 3), (1, 2, 3), (1, 2, 3), (1, 2, 3))
+      per-column counts one (0, 0, 0, 0, 10, 10, 10, 10), two (10, 10, 10, 10, 12, 12, 12, 12)
+      minimal rows (one, two, joint) (12, 12, 12), droppable ((), (), ())
+      two-slice subsets one (False, False, False), two (False, False, False)
+      supp(u) 12 rows, supp(D_s u) 10 rows missing (8, 10), containments (True, True, True)
+    t0 = 2 (even), W(t0) = (3, 4, 5), J rows (12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23)
+      rank(A) 12, pivots (8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19), one route for both RHS True
+      existence residuals (0, 0), padded vs G^T d (0, 0), Q^T u - d (0, 0), zero one-step columns 4, heaviest defect columns (9, 9)
+      one-step union (3,) (4 rows), two-step union (3, 4, 5) (12 rows), joint 12 rows
+      per-column slices one ((), (), (), (), (3,), (3,), (3,), (3,))
+      per-column slices two ((3,), (3,), (3,), (3,), (3, 4, 5), (3, 4, 5), (3, 4, 5), (3, 4, 5))
+      per-column counts one (0, 0, 0, 0, 4, 4, 4, 4), two (4, 4, 4, 4, 10, 10, 10, 10)
+      minimal rows (one, two, joint) (4, 12, 12), droppable ((4, 5, 6, 7, 8, 9, 10, 11), (), ())
+      two-slice subsets one (True, True, False), two (False, False, False)
+      supp(u) 12 rows, supp(D_s u) 10 rows missing (16, 18), containments (True, True, True)
+    t0 = 3 (odd), W(t0) = (3, 4, 5), J rows (12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23)
+      rank(A) 12, pivots (8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19), one route for both RHS True
+      existence residuals (0, 0), padded vs G^T d (0, 0), Q^T u - d (0, 0), zero one-step columns 4, heaviest defect columns (9, 9)
+      one-step union (3, 4, 5) (12 rows), two-step union (3, 4, 5) (12 rows), joint 12 rows
+      per-column slices one ((), (), (), (), (3, 4, 5), (3, 4, 5), (3, 4, 5), (3, 4, 5))
+      per-column slices two ((3, 4, 5), (3, 4, 5), (3, 4, 5), (3, 4, 5), (3, 4, 5), (3, 4, 5), (3, 4, 5), (3, 4, 5))
+      per-column counts one (0, 0, 0, 0, 10, 10, 10, 10), two (10, 10, 10, 10, 12, 12, 12, 12)
+      minimal rows (one, two, joint) (12, 12, 12), droppable ((), (), ())
+      two-slice subsets one (False, False, False), two (False, False, False)
+      supp(u) 12 rows, supp(D_s u) 10 rows missing (16, 18), containments (True, True, True)
+    t0 = 4 (even), W(t0) = (5, 6, 7), J rows (20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31)
+      rank(A) 12, pivots (16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27), one route for both RHS True
+      existence residuals (0, 0), padded vs G^T d (0, 0), Q^T u - d (0, 0), zero one-step columns 4, heaviest defect columns (9, 9)
+      one-step union (5,) (4 rows), two-step union (5, 6, 7) (12 rows), joint 12 rows
+      per-column slices one ((), (), (), (), (5,), (5,), (5,), (5,))
+      per-column slices two ((5,), (5,), (5,), (5,), (5, 6, 7), (5, 6, 7), (5, 6, 7), (5, 6, 7))
+      per-column counts one (0, 0, 0, 0, 4, 4, 4, 4), two (4, 4, 4, 4, 10, 10, 10, 10)
+      minimal rows (one, two, joint) (4, 12, 12), droppable ((4, 5, 6, 7, 8, 9, 10, 11), (), ())
+      two-slice subsets one (True, True, False), two (False, False, False)
+      supp(u) 12 rows, supp(D_s u) 10 rows missing (24, 26), containments (True, True, True)
+    t0 = 5 (odd), W(t0) = (5, 6, 7), J rows (20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31)
+      rank(A) 12, pivots (16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27), one route for both RHS True
+      existence residuals (0, 0), padded vs G^T d (0, 0), Q^T u - d (0, 0), zero one-step columns 4, heaviest defect columns (9, 9)
+      one-step union (5, 6, 7) (12 rows), two-step union (5, 6, 7) (12 rows), joint 12 rows
+      per-column slices one ((), (), (), (), (5, 6, 7), (5, 6, 7), (5, 6, 7), (5, 6, 7))
+      per-column slices two ((5, 6, 7), (5, 6, 7), (5, 6, 7), (5, 6, 7), (5, 6, 7), (5, 6, 7), (5, 6, 7), (5, 6, 7))
+      per-column counts one (0, 0, 0, 0, 10, 10, 10, 10), two (10, 10, 10, 10, 12, 12, 12, 12)
+      minimal rows (one, two, joint) (12, 12, 12), droppable ((), (), ())
+      two-slice subsets one (False, False, False), two (False, False, False)
+      supp(u) 12 rows, supp(D_s u) 10 rows missing (24, 26), containments (True, True, True)
+    t0 = 6 (even), W(t0) = (7, 8, 9), J rows (28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39)
+      rank(A) 12, pivots (24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35), one route for both RHS True
+      existence residuals (0, 0), padded vs G^T d (0, 0), Q^T u - d (0, 0), zero one-step columns 4, heaviest defect columns (9, 9)
+      one-step union (7,) (4 rows), two-step union (7, 8, 9) (12 rows), joint 12 rows
+      per-column slices one ((), (), (), (), (7,), (7,), (7,), (7,))
+      per-column slices two ((7,), (7,), (7,), (7,), (7, 8, 9), (7, 8, 9), (7, 8, 9), (7, 8, 9))
+      per-column counts one (0, 0, 0, 0, 4, 4, 4, 4), two (4, 4, 4, 4, 10, 12, 10, 12)
+      minimal rows (one, two, joint) (4, 12, 12), droppable ((4, 5, 6, 7, 8, 9, 10, 11), (), ())
+      two-slice subsets one (True, True, False), two (False, False, False)
+      supp(u) 12 rows, supp(D_s u) 10 rows missing (32, 34), containments (True, True, True)
+    t0 = 7 (odd), W(t0) = (7, 8, 9), J rows (28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39)
+      rank(A) 12, pivots (24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35), one route for both RHS True
+      existence residuals (0, 0), padded vs G^T d (0, 0), Q^T u - d (0, 0), zero one-step columns 4, heaviest defect columns (9, 9)
+      one-step union (7, 8, 9) (12 rows), two-step union (7, 8, 9) (12 rows), joint 12 rows
+      per-column slices one ((), (), (), (), (7, 8, 9), (7, 8, 9), (7, 8, 9), (7, 8, 9))
+      per-column slices two ((7, 8, 9), (7, 8, 9), (7, 8, 9), (7, 8, 9), (7, 8, 9), (7, 8, 9), (7, 8, 9), (7, 8, 9))
+      per-column counts one (0, 0, 0, 0, 10, 12, 10, 12), two (10, 12, 10, 12, 12, 12, 12, 12)
+      minimal rows (one, two, joint) (12, 12, 12), droppable ((), (), ())
+      two-slice subsets one (False, False, False), two (False, False, False)
+      supp(u) 12 rows, supp(D_s u) 10 rows missing (32, 34), containments (True, True, True)
+  (m, c) = (1/2, 1/3), T = 16
+    t0 = 1 (odd), W(t0) = (1, 2, 3), J rows (4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15)
+      rank(A) 12, pivots (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11), one route for both RHS True
+      existence residuals (0, 0), padded vs G^T d (0, 0), Q^T u - d (0, 0), zero one-step columns 4, heaviest defect columns (9, 9)
+      one-step union (1, 2, 3) (12 rows), two-step union (1, 2, 3) (12 rows), joint 12 rows
+      per-column slices one ((), (), (), (), (1, 2, 3), (1, 2, 3), (1, 2, 3), (1, 2, 3))
+      per-column slices two ((1, 2, 3), (1, 2, 3), (1, 2, 3), (1, 2, 3), (1, 2, 3), (1, 2, 3), (1, 2, 3), (1, 2, 3))
+      per-column counts one (0, 0, 0, 0, 10, 10, 10, 10), two (10, 10, 10, 10, 12, 12, 12, 12)
+      minimal rows (one, two, joint) (12, 12, 12), droppable ((), (), ())
+      two-slice subsets one (False, False, False), two (False, False, False)
+      supp(u) 12 rows, supp(D_s u) 10 rows missing (8, 10), containments (True, True, True)
+    t0 = 2 (even), W(t0) = (3, 4, 5), J rows (12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23)
+      rank(A) 12, pivots (8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19), one route for both RHS True
+      existence residuals (0, 0), padded vs G^T d (0, 0), Q^T u - d (0, 0), zero one-step columns 4, heaviest defect columns (9, 9)
+      one-step union (3,) (4 rows), two-step union (3, 4, 5) (12 rows), joint 12 rows
+      per-column slices one ((), (), (), (), (3,), (3,), (3,), (3,))
+      per-column slices two ((3,), (3,), (3,), (3,), (3, 4, 5), (3, 4, 5), (3, 4, 5), (3, 4, 5))
+      per-column counts one (0, 0, 0, 0, 4, 4, 4, 4), two (4, 4, 4, 4, 10, 10, 10, 10)
+      minimal rows (one, two, joint) (4, 12, 12), droppable ((4, 5, 6, 7, 8, 9, 10, 11), (), ())
+      two-slice subsets one (True, True, False), two (False, False, False)
+      supp(u) 12 rows, supp(D_s u) 10 rows missing (16, 18), containments (True, True, True)
+    t0 = 3 (odd), W(t0) = (3, 4, 5), J rows (12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23)
+      rank(A) 12, pivots (8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19), one route for both RHS True
+      existence residuals (0, 0), padded vs G^T d (0, 0), Q^T u - d (0, 0), zero one-step columns 4, heaviest defect columns (9, 9)
+      one-step union (3, 4, 5) (12 rows), two-step union (3, 4, 5) (12 rows), joint 12 rows
+      per-column slices one ((), (), (), (), (3, 4, 5), (3, 4, 5), (3, 4, 5), (3, 4, 5))
+      per-column slices two ((3, 4, 5), (3, 4, 5), (3, 4, 5), (3, 4, 5), (3, 4, 5), (3, 4, 5), (3, 4, 5), (3, 4, 5))
+      per-column counts one (0, 0, 0, 0, 10, 10, 10, 10), two (10, 10, 10, 10, 12, 12, 12, 12)
+      minimal rows (one, two, joint) (12, 12, 12), droppable ((), (), ())
+      two-slice subsets one (False, False, False), two (False, False, False)
+      supp(u) 12 rows, supp(D_s u) 10 rows missing (16, 18), containments (True, True, True)
+    t0 = 4 (even), W(t0) = (5, 6, 7), J rows (20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31)
+      rank(A) 12, pivots (16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27), one route for both RHS True
+      existence residuals (0, 0), padded vs G^T d (0, 0), Q^T u - d (0, 0), zero one-step columns 4, heaviest defect columns (9, 9)
+      one-step union (5,) (4 rows), two-step union (5, 6, 7) (12 rows), joint 12 rows
+      per-column slices one ((), (), (), (), (5,), (5,), (5,), (5,))
+      per-column slices two ((5,), (5,), (5,), (5,), (5, 6, 7), (5, 6, 7), (5, 6, 7), (5, 6, 7))
+      per-column counts one (0, 0, 0, 0, 4, 4, 4, 4), two (4, 4, 4, 4, 10, 12, 10, 12)
+      minimal rows (one, two, joint) (4, 12, 12), droppable ((4, 5, 6, 7, 8, 9, 10, 11), (), ())
+      two-slice subsets one (True, True, False), two (False, False, False)
+      supp(u) 12 rows, supp(D_s u) 10 rows missing (24, 26), containments (True, True, True)
+    t0 = 5 (odd), W(t0) = (5, 6, 7), J rows (20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31)
+      rank(A) 12, pivots (16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27), one route for both RHS True
+      existence residuals (0, 0), padded vs G^T d (0, 0), Q^T u - d (0, 0), zero one-step columns 4, heaviest defect columns (9, 9)
+      one-step union (5, 6, 7) (12 rows), two-step union (5, 6, 7) (12 rows), joint 12 rows
+      per-column slices one ((), (), (), (), (5, 6, 7), (5, 6, 7), (5, 6, 7), (5, 6, 7))
+      per-column slices two ((5, 6, 7), (5, 6, 7), (5, 6, 7), (5, 6, 7), (5, 6, 7), (5, 6, 7), (5, 6, 7), (5, 6, 7))
+      per-column counts one (0, 0, 0, 0, 10, 12, 10, 12), two (10, 12, 10, 12, 12, 12, 12, 12)
+      minimal rows (one, two, joint) (12, 12, 12), droppable ((), (), ())
+      two-slice subsets one (False, False, False), two (False, False, False)
+      supp(u) 12 rows, supp(D_s u) 10 rows missing (24, 26), containments (True, True, True)
+  (m, c) = (1/2, 1/3), T = 20
+    t0 = 1 (odd), W(t0) = (1, 2, 3), J rows (4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15)
+      rank(A) 12, pivots (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11), one route for both RHS True
+      existence residuals (0, 0), padded vs G^T d (0, 0), Q^T u - d (0, 0), zero one-step columns 4, heaviest defect columns (9, 9)
+      one-step union (1, 2, 3) (12 rows), two-step union (1, 2, 3) (12 rows), joint 12 rows
+      per-column slices one ((), (), (), (), (1, 2, 3), (1, 2, 3), (1, 2, 3), (1, 2, 3))
+      per-column slices two ((1, 2, 3), (1, 2, 3), (1, 2, 3), (1, 2, 3), (1, 2, 3), (1, 2, 3), (1, 2, 3), (1, 2, 3))
+      per-column counts one (0, 0, 0, 0, 10, 10, 10, 10), two (10, 10, 10, 10, 12, 12, 12, 12)
+      minimal rows (one, two, joint) (12, 12, 12), droppable ((), (), ())
+      two-slice subsets one (False, False, False), two (False, False, False)
+      supp(u) 12 rows, supp(D_s u) 10 rows missing (8, 10), containments (True, True, True)
+    t0 = 2 (even), W(t0) = (3, 4, 5), J rows (12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23)
+      rank(A) 12, pivots (8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19), one route for both RHS True
+      existence residuals (0, 0), padded vs G^T d (0, 0), Q^T u - d (0, 0), zero one-step columns 4, heaviest defect columns (9, 9)
+      one-step union (3,) (4 rows), two-step union (3, 4, 5) (12 rows), joint 12 rows
+      per-column slices one ((), (), (), (), (3,), (3,), (3,), (3,))
+      per-column slices two ((3,), (3,), (3,), (3,), (3, 4, 5), (3, 4, 5), (3, 4, 5), (3, 4, 5))
+      per-column counts one (0, 0, 0, 0, 4, 4, 4, 4), two (4, 4, 4, 4, 10, 10, 10, 10)
+      minimal rows (one, two, joint) (4, 12, 12), droppable ((4, 5, 6, 7, 8, 9, 10, 11), (), ())
+      two-slice subsets one (True, True, False), two (False, False, False)
+      supp(u) 12 rows, supp(D_s u) 10 rows missing (16, 18), containments (True, True, True)
+    t0 = 3 (odd), W(t0) = (3, 4, 5), J rows (12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23)
+      rank(A) 12, pivots (8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19), one route for both RHS True
+      existence residuals (0, 0), padded vs G^T d (0, 0), Q^T u - d (0, 0), zero one-step columns 4, heaviest defect columns (9, 9)
+      one-step union (3, 4, 5) (12 rows), two-step union (3, 4, 5) (12 rows), joint 12 rows
+      per-column slices one ((), (), (), (), (3, 4, 5), (3, 4, 5), (3, 4, 5), (3, 4, 5))
+      per-column slices two ((3, 4, 5), (3, 4, 5), (3, 4, 5), (3, 4, 5), (3, 4, 5), (3, 4, 5), (3, 4, 5), (3, 4, 5))
+      per-column counts one (0, 0, 0, 0, 10, 10, 10, 10), two (10, 10, 10, 10, 12, 12, 12, 12)
+      minimal rows (one, two, joint) (12, 12, 12), droppable ((), (), ())
+      two-slice subsets one (False, False, False), two (False, False, False)
+      supp(u) 12 rows, supp(D_s u) 10 rows missing (16, 18), containments (True, True, True)
+    t0 = 4 (even), W(t0) = (5, 6, 7), J rows (20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31)
+      rank(A) 12, pivots (16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27), one route for both RHS True
+      existence residuals (0, 0), padded vs G^T d (0, 0), Q^T u - d (0, 0), zero one-step columns 4, heaviest defect columns (9, 9)
+      one-step union (5,) (4 rows), two-step union (5, 6, 7) (12 rows), joint 12 rows
+      per-column slices one ((), (), (), (), (5,), (5,), (5,), (5,))
+      per-column slices two ((5,), (5,), (5,), (5,), (5, 6, 7), (5, 6, 7), (5, 6, 7), (5, 6, 7))
+      per-column counts one (0, 0, 0, 0, 4, 4, 4, 4), two (4, 4, 4, 4, 10, 10, 10, 10)
+      minimal rows (one, two, joint) (4, 12, 12), droppable ((4, 5, 6, 7, 8, 9, 10, 11), (), ())
+      two-slice subsets one (True, True, False), two (False, False, False)
+      supp(u) 12 rows, supp(D_s u) 10 rows missing (24, 26), containments (True, True, True)
+    t0 = 5 (odd), W(t0) = (5, 6, 7), J rows (20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31)
+      rank(A) 12, pivots (16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27), one route for both RHS True
+      existence residuals (0, 0), padded vs G^T d (0, 0), Q^T u - d (0, 0), zero one-step columns 4, heaviest defect columns (9, 9)
+      one-step union (5, 6, 7) (12 rows), two-step union (5, 6, 7) (12 rows), joint 12 rows
+      per-column slices one ((), (), (), (), (5, 6, 7), (5, 6, 7), (5, 6, 7), (5, 6, 7))
+      per-column slices two ((5, 6, 7), (5, 6, 7), (5, 6, 7), (5, 6, 7), (5, 6, 7), (5, 6, 7), (5, 6, 7), (5, 6, 7))
+      per-column counts one (0, 0, 0, 0, 10, 10, 10, 10), two (10, 10, 10, 10, 12, 12, 12, 12)
+      minimal rows (one, two, joint) (12, 12, 12), droppable ((), (), ())
+      two-slice subsets one (False, False, False), two (False, False, False)
+      supp(u) 12 rows, supp(D_s u) 10 rows missing (24, 26), containments (True, True, True)
+    t0 = 6 (even), W(t0) = (7, 8, 9), J rows (28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39)
+      rank(A) 12, pivots (24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35), one route for both RHS True
+      existence residuals (0, 0), padded vs G^T d (0, 0), Q^T u - d (0, 0), zero one-step columns 4, heaviest defect columns (9, 9)
+      one-step union (7,) (4 rows), two-step union (7, 8, 9) (12 rows), joint 12 rows
+      per-column slices one ((), (), (), (), (7,), (7,), (7,), (7,))
+      per-column slices two ((7,), (7,), (7,), (7,), (7, 8, 9), (7, 8, 9), (7, 8, 9), (7, 8, 9))
+      per-column counts one (0, 0, 0, 0, 4, 4, 4, 4), two (4, 4, 4, 4, 10, 12, 10, 12)
+      minimal rows (one, two, joint) (4, 12, 12), droppable ((4, 5, 6, 7, 8, 9, 10, 11), (), ())
+      two-slice subsets one (True, True, False), two (False, False, False)
+      supp(u) 12 rows, supp(D_s u) 10 rows missing (32, 34), containments (True, True, True)
+    t0 = 7 (odd), W(t0) = (7, 8, 9), J rows (28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39)
+      rank(A) 12, pivots (24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35), one route for both RHS True
+      existence residuals (0, 0), padded vs G^T d (0, 0), Q^T u - d (0, 0), zero one-step columns 4, heaviest defect columns (9, 9)
+      one-step union (7, 8, 9) (12 rows), two-step union (7, 8, 9) (12 rows), joint 12 rows
+      per-column slices one ((), (), (), (), (7, 8, 9), (7, 8, 9), (7, 8, 9), (7, 8, 9))
+      per-column slices two ((7, 8, 9), (7, 8, 9), (7, 8, 9), (7, 8, 9), (7, 8, 9), (7, 8, 9), (7, 8, 9), (7, 8, 9))
+      per-column counts one (0, 0, 0, 0, 10, 12, 10, 12), two (10, 12, 10, 12, 12, 12, 12, 12)
+      minimal rows (one, two, joint) (12, 12, 12), droppable ((), (), ())
+      two-slice subsets one (False, False, False), two (False, False, False)
+      supp(u) 12 rows, supp(D_s u) 10 rows missing (32, 34), containments (True, True, True)
+  THE DISJOINT-SOURCE CENSUS, EXHAUSTIVE
+    T = 16, t0 = 1, W = (1, 2, 3): 16 disjoint source cells, failures (), bilinear identity residual 0, first instance (4, 0, (4, 5, 11, 12), 0)
+    T = 16, t0 = 2, W = (3, 4, 5): 16 disjoint source cells, failures (), bilinear identity residual 0, first instance (0, 0, (0, 1, 15), 0)
+    T = 16, t0 = 3, W = (3, 4, 5): 16 disjoint source cells, failures (), bilinear identity residual 0, first instance (0, 0, (0, 1, 15), 0)
+    T = 16, t0 = 4, W = (5, 6, 7): 16 disjoint source cells, failures (), bilinear identity residual 0, first instance (0, 0, (0, 1, 15), 0)
+    T = 16, t0 = 5, W = (5, 6, 7): 16 disjoint source cells, failures (), bilinear identity residual 0, first instance (0, 0, (0, 1, 15), 0)
+    T = 20, t0 = 1, W = (1, 2, 3): 24 disjoint source cells, failures (), bilinear identity residual 0, first instance (4, 0, (4, 5, 15, 16), 0)
+    T = 20, t0 = 2, W = (3, 4, 5): 24 disjoint source cells, failures (), bilinear identity residual 0, first instance (0, 0, (0, 1, 19), 0)
+    T = 20, t0 = 3, W = (3, 4, 5): 24 disjoint source cells, failures (), bilinear identity residual 0, first instance (0, 0, (0, 1, 19), 0)
+    T = 20, t0 = 4, W = (5, 6, 7): 24 disjoint source cells, failures (), bilinear identity residual 0, first instance (0, 0, (0, 1, 19), 0)
+    T = 20, t0 = 5, W = (5, 6, 7): 24 disjoint source cells, failures (), bilinear identity residual 0, first instance (0, 0, (0, 1, 19), 0)
+    T = 20, t0 = 6, W = (7, 8, 9): 24 disjoint source cells, failures (), bilinear identity residual 0, first instance (0, 0, (0, 1, 19), 0)
+    T = 20, t0 = 7, W = (7, 8, 9): 24 disjoint source cells, failures (), bilinear identity residual 0, first instance (0, 0, (0, 1, 19), 0)
+    total 248 source/core cells, 0 failures
+  THE TWO PARITY INSTANCES
+    t0 = 1, source (4, 0), dH slices (4, 5, 11, 12), u^T dQ shape (8, 64), nnz 0
+    t0 = 2, source (0, 0), dH slices (0, 1, 15), u^T dQ shape (8, 64), nnz 0
+  NON-VACUITY WITNESSES (sources that DO meet the window)
+    t0 = 1, source (2, 0), dH slices (2, 3, 13, 14), meets window True, nnz(u^T dQ) 60
+    t0 = 2, source (2, 0), dH slices (2, 3, 13, 14), meets window True, nnz(u^T dQ) 64
+    t0 = 2, source (4, 0), dH slices (4, 5, 11, 12), meets window True, nnz(u^T dQ) 28
+  READINGS, AND EACH IS A READING
+    R1: that Block 193's window law is now PROVEN.  Measured: the COMPATIBILITY direction is proven constructively at twelve cores of two widths and two rational points; the BREAKING direction is Block 193's censuses, cited and not reproved.  Reading.
+    R2: that this is a RECURRENCE proof.  Measured: a Schur-complement solve at each fixed core of each fixed width, with no step from T to T + 2 and no use of the staggered recurrence.  Reading, and the block's own banner says so.
+    R3: that the even-core single-slice collapse EXPLAINS the parity switch.  Measured: at even cores the one-step family lives on the window's first slice and four rows are minimal there.  Why the staggering forces that is NOT derived.  Reading.
+    R4: that u_b is canonical.  Measured: given the twelve window rows it is the UNIQUE supported solution, because rank(A) = 12.  Whether some OTHER twelve-row set also carries the family is NOT decided here.  Reading.
+    R5: that the structure is a property of the width family rather than of the fixture.  Measured: two rational points on twelve cores.  Two points are not a parameter space.  Reading.
+  nsimplify calls in this source: 0
+  NOT CLAIMED: NO GRAVITY. NO WIDTH INDUCTION -- TWO WIDTHS ARE NOT AN INDUCTION. NO DERIVATION FROM THE STAGGERED RECURRENCE. NO PROOF OF THE BREAKING DIRECTION -- THAT HALF OF THE LAW REMAINS BLOCK 193's CENSUSES. NO GENERIC (m, c) THEOREM. NO CONTINUUM. THE READINGS ARE READINGS.
+
+[PASS] A-1: origin/main is 76df4becc8233080bc5a10a4baf55f83e80f8f2d, the axiom and registry blobs match on origin/main AND in the worktree, and the audit timeout is 600s
+[PASS] A-2: PARENT_COMMIT 7877b4afac13 is a real ancestor of HEAD resolving PARENT_REF, both Block 195 artifacts are content-identical at it and in the worktree, the stale pin 4cbd56203b02 is a real ancestor carrying NEITHER, the machinery import is landed, and 9 of 9 audit inputs are readable
+[PASS] B-1: 6 imposed objects, 0 registered, 0 adopted
+[PASS] B-2: NO GRAVITY IS SUPPLIED: gravity_supplied = False and 9 gravity structures are enumerated as NOT SUPPLIED
+[PASS] B-3: NO WIDTH INDUCTION: the construction is solved SEPARATELY at each of the twelve cores of T = 16 and T = 20, nothing propagates from one width to the other, and no statement is made about any other even width
+[PASS] B-4: NO DERIVATION FROM THE STAGGERED RECURRENCE: 'recurrence proof' names the CONSTRUCTIVE SCHUR FORM at a fixed core -- an exact linear solve against Q^T's window rows -- and nothing here reasons from the recurrence itself
+[PASS] B-5: THE BREAKING DIRECTION IS NOT PROVEN HERE: only the COMPATIBILITY direction of Block 193's law is constructive; the converse remains Block 193's exhaustive censuses of 40 cells at T = 16 and 70 at T = 20, cited and not reproved
+[PASS] B-6: NO GENERIC (m, c) THEOREM AND NO CONTINUUM: two rational points and two widths are measured, and neither a parameter space nor a limit is claimed
+[PASS] B-7: THE READINGS ARE READINGS: 5 of them are enumerated as readings and readings_licensed = False
+[PASS] B-8: EVERY NEGATIVE HERE IS NON-SUPPLY WITHIN THIS FORMALISM AND NEVER METAPHYSICAL NECESSITY, and every positive is candidacy within this formalism and never a claim about nature -- the cycle-913 caution, carried verbatim, with nothing registered and nothing adopted
+[PASS] C-1: THE VALID CORE DOMAIN IS (1, 2, 3, 4, 5) at T = 16 and (1, 2, 3, 4, 5, 6, 7) at T = 20 -- Block 193's t0 + 3 <= T/2 rule, with the T = 20 row the adversarial check's all-core extension of the solve's spot check (3, 4); 12 control cores measured
+[PASS] C-2: rank(Q^T[:, J(t0)]) = 12 at every core of both widths and both points, so a window-supported solution is UNIQUE; and independently rank(Q) = {16: 64, 20: 80} with two-sided inverse residuals zero, from which every twelve-column subset of the invertible Q^T is independent
+[PASS] C-3: EXISTENCE 8/8 per (core, step) at BOTH steps by an INDEPENDENT restricted solve -- rref pivot selection, a 12 x 12 minor inverse and a residual checked against all 4T equations -- with residuals (0, 0) everywhere; 384 exact vector solves in total, on defect columns of at most 9 nonzeros each
+[PASS] C-4: THE PIVOT ROUTE IS STABLE: the same twelve independent rows serve both right-hand sides at every core (True), so the two step families are solved through one and the same minor
+[PASS] C-5: THE REBUILT CARRIER REPRODUCES TWO LANDED NUMBERS EXACTLY: Block 190's (W - V^2)[0,4] at T = 20, t0 = 3 and Block 193's R[0,4] at T = 16, (t0, s, x) = (2, 5, 0), at residuals (0, 0)
+[PASS] D-1: PADDING THE RESTRICTED SOLUTION BY ZEROS OUTSIDE J(t0) GIVES G^T d_b EXACTLY: residuals (0, 0) for all eight columns at both steps and every core of both widths and both points
+[PASS] D-2: AND THE FUNCTIONAL SOLVES THE ORIGINAL SYSTEM: nnz(Q^T u_b^(s) - d_b^(s)) = (0, 0) in the same places, so the padded solution is the preimage and not merely a window-supported vector
+[PASS] D-3: BLOCK 193's MECHANISM OBJECT IS THE CONSTRUCTIVE SOLUTION (True): u_b = G^T d_b is not merely SUPPORTED in the window, it IS the unique window-supported solution of A v = d_b, by C-2 uniqueness plus D-1 agreement
+[PASS] D-4: THE ONE-STEP CONTENT IS EXACTLY HALF THE COLUMNS: 4 of the eight one-step defects are IDENTICALLY ZERO at every core -- W_1's column b for b = 0..3 is e_(b+4) exactly, so d_b^(1) cancels entrywise -- and the content lives in b = 4..7
+[PASS] E-1: THE TWO-STEP SUPPORT UNION IS THE FULL TWELVE-ROW WINDOW (True) at every core of both widths and both points -- all three slices, all four spatial sites, no negative-half support -- with the per-column rule (3, 3, 3, 3, 3, 3, 3, 3) at odd cores and (1, 1, 1, 1, 3, 3, 3, 3) at even cores, counted in window slices met
+[PASS] E-2: THE ONE-STEP UNION IS PARITY-SPLIT: 3 slices at ODD cores and 1 -- the window's FIRST slice alone -- at EVEN cores, at every core of both widths and both points; per column the rule is (0, 0, 0, 0, 3, 3, 3, 3) and (0, 0, 0, 0, 1, 1, 1, 1), and each nonzero even-core column carries exactly 4 coordinates
+[PASS] E-3: TWELVE ROWS ARE MINIMAL FOR THE TWO-STEP FAMILY (12) AND FOR THE JOINT ONE-AND-TWO-STEP FAMILY (12), decided EXHAUSTIVELY: every single-row deletion fails, and every proper subset of J(t0) is contained in one of those twelve, so no proper subset carries either family; 864 deletion tests in total
+[PASS] E-4: AND THE ONE-STEP FAMILY ALONE IS THE EXCEPTION, WHICH IS THE CHECK'S QUALIFICATION CARRIED AS CONTENT: minimal rows 12 at ODD cores and 4 -- the first slice -- at EVEN cores, so the twelve-row window is NOT minimal for one-step transport at even cores
+[PASS] E-5: THE THREE TWO-SLICE SUBSETS BEHAVE EXACTLY AS TABULATED {('one', 'odd'): (False, False, False), ('one', 'even'): (True, True, False), ('two', 'odd'): (False, False, False), ('two', 'even'): (False, False, False)} in the order first+middle, first+last, middle+last: for the one-step family at EVEN cores the first two solve and middle+last fails; every other row is all-False
+[PASS] F-1: supp(u_b) subset J(t0) (True) at every core of both widths and both points, on all 12 window rows
+[PASS] F-2: AND supp(D_s u_b) subset J(t0) (True) in the same places -- THE SECOND CONDITION, WITHOUT WHICH THE CONSEQUENCE DOES NOT FOLLOW: the bilinear identity carries a (D_s u_b)^T dH term that the first containment says nothing about
+[PASS] F-3: AND D_s u IS LOCALIZED MORE SHARPLY THAN u: exactly 10 of the twelve window rows, the two it never reaches being the spatial sites (0, 2) of the window's MIDDLE slice, at every core of both widths and both points
+[PASS] F-4: THE BILINEAR IDENTITY u_b^T dQ = u_b^T dH (m I + D_s) - (D_s u_b)^T dH holds at residual 0 on every census cell, so the two containments act on the two terms they are containments for
+[PASS] F-5: THE DISJOINT-SOURCE CENSUS IS EXHAUSTIVE AND CLEAN: 16 cells per T = 16 core and 24 per T = 20 core, 248 source/core cells in total, 0 failures, all eight u_b at once
+[PASS] F-6: ONE GATED INSTANCE PER PARITY AT T = 16: ((1, (4, 0), (4, 5, 11, 12)), (2, (0, 0), (0, 1, 15))) -- core, source cell and dH slice support -- each giving u^T dQ = 0 as a full (8, 64) zero block
+[PASS] F-7: AND THE HYPOTHESIS IS NOT VACUOUS: three sources whose dH slice supports ((2, 3, 13, 14), (2, 3, 13, 14), (4, 5, 11, 12)) DO meet the window give nnz(u^T dQ) = (60, 64, 28), all nonzero, so the compatibility theorem separates two nonempty cases and the breaking direction it does NOT prove is a real question
+[PASS] G-1: THE STRUCTURE PERSISTS AT (m, c) = (1/2, 1/3) (True): the whole per-core signature -- window, rank, existence, identification, dual residuals, both support unions, both per-column slice patterns and the zero-column count -- is IDENTICAL on all 12 cores, on a carrier that differs from the fixture's in 512 entries and is built from the imported unit-volume block ((1, 0, 0, 0), (0, 9/8, -3/8, 0), (0, -3/8, 9/8, 0), (0, 0, 0, 1))
+[PASS] G-2: THE MINIMALITY COUNTS PERSIST TOO (True): twelve rows minimal for the two-step and joint families and the same parity-split one-step counts, with the same droppable sets, at all 12 second-point cores
+[PASS] G-3: AND BOTH CONTAINMENTS HOLD AT THE SECOND POINT (True) -- an extension beyond the adversarial check, which ran its C5 at the control fixture only: supp(u_b) subset J, supp(D_s u_b) subset J and the same ten-row middle-slice localization on all 12 cores
+[PASS] H-1: the note is present at docs/ADMISSIBILITY_DIRAC_KAHLER_WINDOW_SCHUR_TRANSPORT_DEFECT_BOUNDED_THEOREM_NOTE_2026-08-26.md and the single-line N5 fence appears in it BYTE-IDENTICALLY to this runner's own constant
+[PASS] H-2: sp.nsimplify occurs 0 times in this runner's own source, MEASURED and not promised
+GATES A=PASS B=PASS C=PASS D=PASS E=PASS F=PASS G=PASS H=PASS
+N5: per_element: THE IMPOSED-OBJECT BANNER, FIRST AND WITH TEETH, AND THE PROOF LANGUAGE IS FENCED BEFORE THE FIRST NUMERAL. NOTHING HERE IS REGISTERED OR ADOPTED -- BLOCK 190's WRAP-EDGE WIDTH FAMILY AT T = 16 AND T = 20 (the staggered Dirac-Kahler carrier on Z_T x Z_4 with eta_t = 1, eta_x = (-1)^t and the temporal sign w = -1 ON THE WRAP EDGE t = T-1, the grade-raising d_K = P1 K P0 + P2 K P1, the site reflection theta_s(t) = -t with fixed slices {0, T/2}, the raising set A_s in the CLOSED half {0..T/2} EXCLUDING fixed-slice spatial edges, the glue D_s = A_s - Ps A_s Ps and the completion Q = m H + H D_s - D_s^T H), BLOCK 193's CORE FRAME AND ITS TRANSPORT-DEFECT FUNCTIONALS READ AT BOTH STEPS (the eight cells b <-> (t_b, x_b) with t_b in {t0, t0+1}, the reflected pairings L_s[a,b] = G[idx(t_b + s, x_b), idx(theta_s t_a, x_a)] on G = Q^-1 with K_c = L_0, the step operators W_s = K_c^-1 L_s for s = 1 and s = 2, and the defect columns d_b^(s) = e_(t_b+s, x_b) - sum_b' W_s[b', b] e_(t_b', x_b') -- THE ONE-STEP FAMILY IS THIS BLOCK'S ADDITION), THE TWELVE WINDOW ROWS READ AS A COLUMN SET OF Q^T (J(t0) = [2 floor(t0/2)+1, 2 floor(t0/2)+3] x Z_4 and A = Q^T[:, J(t0)], IMPOSED FROM BLOCK 193's MEASURED WINDOW AND DERIVED FROM NOTHING), THE VALID CORE DOMAIN t0 + 3 <= T/2 (t0 = 1..5 at T = 16 and t0 = 1..7 at T = 20, the second being THE ADVERSARIAL CHECK's EXTENSION of the solve's two spot-check cores), BLOCK 193's REFLECTED ONE-CELL HODGE TANGENT dH(s,x) = E(s,x) dB E(s,x)^T / 4 + E(thA_s s, x) P_4 dB P_4^T E(thA_s s, x)^T / 4 with thA_s(t) = -1-t together with dQ = m dH + dH D_s - D_s^T dH, and the LANDED Block 105 shear_hodge(c, v) read through the Block 128 module at UNIT VOLUME -- THE ONLY OBJECT IMPORTED -- are IMPOSED MEASURED OBJECTS OF THIS BLOCK, built from the landed primary bodies and from NOTHING in any scratchpad. NO GRAVITY IS SUPPLIED: this block supplies NO lapse variable in an ADM phase space, NO shift vector, NO Hamiltonian constraint, NO momentum constraint, NO first-class constraint algebra, NO Dirac closure, NO Dirac observable, NO gauge orbit and NO diffeomorphism quotient. WHAT IS ESTABLISHED IS NARROWER THAN THE WORDS RECURRENCE PROOF AND IS SAID IN THOSE WORDS: 'RECURRENCE PROOF' NAMES THE CONSTRUCTIVE SCHUR FORM AT EACH FIXED CORE OF EACH FIXED WIDTH -- an exact linear solve of A v = d against Q^T's twelve window rows -- AND NAMES NOTHING ELSE. NO STEP HERE DERIVES ANYTHING FROM THE STAGGERED RECURRENCE AND NO STEP PROPAGATES ANYTHING FROM T TO T + 2: TWO WIDTHS ARE NOT AN INDUCTION. ONLY THE COMPATIBILITY DIRECTION OF BLOCK 193's WINDOW LAW IS PROVEN HERE; THE BREAKING DIRECTION REMAINS BLOCK 193's EXHAUSTIVE CENSUSES OF 40 CELLS AT T = 16 AND 70 AT T = 20, CITED AND NOT REPROVED, AND THIS BLOCK SAYS SO FIRST. 'WINDOW' NAMES A SET OF TWELVE ROW INDICES OF AN EXACT RATIONAL MATRIX, 'TRANSPORT DEFECT' NAMES AN EXPLICIT RATIONAL VECTOR WITH AT MOST NINE NONZERO ENTRIES, 'SOURCE' NAMES A ONE-CELL VOLUME TANGENT OF THE IMPORTED HODGE, 'UNIQUE' NAMES rank(A) = 12 AND NOTHING STRONGER, AND 'PROOF' NAMES A FINITE EXACT ARGUMENT OVER QQ ON ONE CONSTRUCTED MATRIX FAMILY. NO GENERIC (m, c) THEOREM IS SUPPLIED AND NO CONTINUUM LIMIT IS SUPPLIED: TWO WIDTHS AND TWO RATIONAL POINTS ARE NOT A LIMIT. NINE GRAVITY STRUCTURES ARE ENUMERATED AS NOT SUPPLIED -- lapse function, shift vector, ADM phase space, Hamiltonian constraint, momentum/diffeomorphism constraint, first-class constraint algebra, Dirac closure, Dirac observable, gauge orbit and its quotient. NOTHING IS REGISTERED, NOTHING IS ADOPTED, AND NO AXIOM AMENDMENT IS JUSTIFIED.\nper_site: THE SYSTEM EXISTS AND ITS SOLUTION IS UNIQUE, AND BOTH ARE EXACT. At every one of the twelve valid cores -- t0 = 1..5 at T = 16 and t0 = 1..7 at T = 20 -- and at BOTH rational points (m, c) = (9/20, 5/13) and (1/2, 1/3), the twelve-column restriction A = Q^T[:, J(t0)] has EXACT RANK 12, so a solution of A v = d supported on the window is UNIQUE whenever it exists. That uniqueness has a one-line independent proof as well: rank(Q) = 64 at T = 16 and 80 at T = 20 with two-sided inverse residuals nnz(QG - I) = nnz(GQ - I) = 0, so Q^T is invertible and EVERY twelve-column subset of it is linearly independent. AND THE SOLUTION EXISTS FOR ALL EIGHT COLUMNS AT BOTH STEPS: 8/8 per (core, step), reached by an INDEPENDENT restricted route that never touches G -- an exact rref of A^T selects twelve independent rows, the 12 x 12 minor on those rows is inverted over QQ, and the resulting x is checked against ALL 4T equations before it is padded -- at residual ZERO in every case, 384 exact vector solves in total. THE SAME TWELVE PIVOT ROWS SERVE BOTH RIGHT-HAND SIDES at every core, so the one-step and two-step families are solved through one and the same minor. THE REBUILT CARRIER IS THE LANDED ONE: it reproduces Block 190's (W - V^2)[0,4] = 53601896033238042551256/229758595220483765728625 at T = 20, t0 = 3 and Block 193's R[0,4] = 303717414128393981002946552450301011272963193469691599136505997554493148222247708710000000/77707725095998816829080256798567544217876202163787270905242891606801827087957579200283634261 at T = 16, (t0, s, x) = (2, 5, 0) with nnz(R) = 32, each at residual ZERO, and neither landed runner is imported.\nper_mode: THE IDENTIFICATION, AND IT IS WHAT TURNS A MEASUREMENT INTO A CONSTRUCTION. Padding the restricted solution by zeros outside J(t0) gives G^T d_b ENTRYWISE: nnz(pad(v_b) - G^T d_b) = 0 for all eight columns, at both steps, at every core of both widths and both points. Together with rank(A) = 12 that says something stronger than Block 193's support fact: u_b = G^T d_b is not merely SUPPORTED in the window, it IS the unique window-supported solution of A v = d_b, so BLOCK 193's MECHANISM OBJECT IS THE CONSTRUCTIVE SOLUTION AND NOT A SEPARATE OBJECT THAT HAPPENS TO AGREE WITH ONE. The dual identity is measured in the same places: nnz(Q^T u_b^(s) - d_b^(s)) = 0, so the padded vector is a genuine preimage. AND THE ONE-STEP CONTENT IS EXACTLY HALF THE COLUMNS: FOUR of the eight one-step defects are IDENTICALLY ZERO at every core, because W_1's column b for b = 0..3 is exactly e_(b+4) -- the cell (t0+1, x_b) is already in the core, so d_b^(1) cancels entrywise -- and the whole one-step content lives in b = 4..7.\nper_block: EXACTNESS, THE PARITY FINE STRUCTURE, AND MINIMALITY DECIDED EXHAUSTIVELY. THE TWO-STEP SUPPORT UNION IS THE FULL TWELVE-ROW WINDOW at every core of both widths and both points -- all three slices, all four spatial sites, and no negative-half support anywhere. THE ONE-STEP UNION IS PARITY-SPLIT: all three window slices at ODD cores, and at EVEN cores EXACTLY THE FOUR ROWS OF THE WINDOW'S FIRST SLICE -- slice 3 at t0 = 2, slice 5 at t0 = 4 and, in the T = 20 extension, slice 7 at t0 = 6. That single-slice collapse is the microscopic shape of the parity switch and of the shared window of the cores 2j and 2j+1. TWELVE ROWS ARE MINIMAL, AND MINIMALITY IS DECIDED AND NOT INFERRED: for the two-step family and for the JOINT one-and-two-step family, EVERY single-row deletion from J(t0) fails as an image-membership question at every core of both widths and both points, and since every proper subset of J(t0) is contained in one of those twelve deleted sets, NO PROPER SUBSET CARRIES EITHER FAMILY -- 864 deletion tests, zero droppable rows. THE ONE-STEP FAMILY ALONE IS THE EXCEPTION AND THE ADVERSARIAL CHECK FOUND IT: at even cores exactly the eight non-first-slice rows are droppable, so FOUR rows are minimal and THE TWELVE-ROW WINDOW IS NOT MINIMAL FOR ONE-STEP TRANSPORT AT EVEN CORES. The three two-slice subsets agree entry for entry: in the order first+middle, first+last, middle+last the one-step family at even cores gives (True, True, False) and every other row is (False, False, False). THAT QUALIFICATION IS CARRIED HERE AS CONTENT AND NOT AS AN ERRATUM.\nlattice_wide: THE CONSEQUENCE, AND IT NEEDS TWO CONTAINMENTS RATHER THAN ONE -- WHICH IS THE CHECK's C5 REFINEMENT, FOLDED AS CONTENT. Block 193's bilinear reduction is R[a,b] = -u_b^T dQ G[:, theta_a], and expanding dQ = m dH + dH D_s - D_s^T dH once gives the identity u_b^T dQ = u_b^T dH (m I + D_s) - (D_s u_b)^T dH, measured here at residual ZERO on every census cell. THAT SECOND TERM IS WHY supp(u_b) subset J(t0) ALONE PROVES NOTHING: it reads D_s u_b, about which the first containment says nothing at all. BOTH CONTAINMENTS ARE EXACT: supp(u_b) subset J(t0) on all twelve window rows, and supp(D_s u_b) subset J(t0) on exactly TEN of them, the two rows it never reaches being the spatial sites 0 and 2 of the window's MIDDLE slice -- at every core of both widths and BOTH points. Since a reflected one-cell source has IDENTICAL row and column support S, a source with S disjoint from J(t0) kills both terms identically, so u_b^T dQ = 0 and R = 0 FOR THE WHOLE SOURCE-CELL FAMILY. That is a proof and not a sampled cancellation, and the sampling is done anyway as a guard: 16 disjoint source cells per T = 16 core and 24 per T = 20 core, 248 source/core cells, ZERO failures for the eight u_b simultaneously. Two instances are gated, one per parity, both at T = 16: odd t0 = 1 with window {1,2,3} and source (s,x) = (4,0) whose dH meets slices {4,5,11,12}, and even t0 = 2 with window {3,4,5} and source (s,x) = (0,0) whose dH meets slices {0,1,15}, each giving u^T dQ = 0 as a full 8 x 64 zero block. AND THE HYPOTHESIS IS NOT VACUOUS: three sources that DO meet the window give nnz(u^T dQ) = 60, 64 and 28, so the theorem separates two nonempty cases and the direction it does NOT prove is a real question.\nper_scope: THE STRUCTURE IS OF THE CLASS AND NOT OF THE FIXTURE, AND WHAT REMAINS OPEN IS NAMED. At the second rational point (m, c) = (1/2, 1/3) the ENTIRE per-core signature is identical on all twelve cores -- window, rank, existence residuals, identification residuals, dual residuals, both support unions, both per-column slice patterns, the four zero one-step columns, all three minimality counts, the droppable sets and the two-slice table -- on a carrier that is measurably different, nnz(Q(9/20,5/13) - Q(1/2,1/3)) = 512 of 512 nonzero entries at T = 16. BOTH CONTAINMENTS HOLD AT THE SECOND POINT TOO, WHICH EXTENDS THE ADVERSARIAL CHECK: its C5 was run at the control fixture only, and the ten-row middle-slice localization of D_s u is reproduced here at (1/2, 1/3) as well. WHAT REMAINS OPEN IS NAMED AND NOT PAPERED OVER: the BREAKING direction of the law is not proven and stays Block 193's censuses; nothing here is a width induction and no argument propagates from T to T + 2, so the law for arbitrary even T is untouched; the window J(t0) is IMPOSED from Block 193's measurement and no derivation of the formula 2 floor(t0/2) + 1 from the staggering is offered; whether some OTHER twelve-row set also carries the families is NOT decided, because minimality was tested inside J(t0) and not against every row set of Q^T; the even-core single-slice collapse is MEASURED and its mechanism is NOT explained; and two rational points are not a parameter space.\nRESULT: ON THE SITE-GLUED WIDTH FAMILY AT T = 16 AND T = 20 AND AT BOTH RATIONAL POINTS, THE TRANSPORT-DEFECT FUNCTIONALS OF EVERY VALID CORE ARE THE UNIQUE SOLUTIONS OF THE TWELVE-ROW WINDOW-RESTRICTED SYSTEM A v = d WITH A = Q^T[:, J(t0)] AND rank(A) = 12, THE PADDED SOLUTION EQUALS G^T d ENTRYWISE SO BLOCK 193's MECHANISM OBJECT IS THAT SOLUTION, THE TWELVE ROWS ARE EXHAUSTIVELY MINIMAL FOR THE TWO-STEP AND JOINT FAMILIES WHILE THE ONE-STEP FAMILY COLLAPSES TO FOUR AT EVEN CORES, AND THE TWO EXACT CONTAINMENTS supp(u_b) subset J AND supp(D_s u_b) subset J TURN THE COMPATIBILITY DIRECTION OF BLOCK 193's WINDOW LAW INTO A THEOREM FOR THE WHOLE REFLECTED ONE-CELL SOURCE FAMILY. Block 193's LAW_PROVED_FROM_RECURRENCE_CLAIMED = False is thereby narrowed and not removed: ONE DIRECTION IS NOW CONSTRUCTIVE AT TWELVE CORES OF TWO WIDTHS AND TWO POINTS, THE OTHER IS STILL A CENSUS, AND NEITHER IS A WIDTH INDUCTION. EVERY NEGATIVE HERE IS NON-SUPPLY WITHIN THIS FORMALISM AND NEVER METAPHYSICAL NECESSITY -- the CYCLE913 CAUTION, CARRIED VERBATIM -- and EVERY POSITIVE HERE IS CANDIDACY WITHIN THIS FORMALISM AND NEVER A CLAIM ABOUT NATURE.\nDECISION_CUT: NOTHING IS REGISTERED AND NOTHING IS ADOPTED. No premise-class change is registered; no landed note is EDITED; no landed number is touched; Blocks 104, 105, 106, 107, 128 and 181-195 STAND EXACTLY AS LANDED. BLOCK 193 IS NOT CORRECTED: its window law, its censuses, its bilinear reduction and its two measured support facts are reproduced here, and its own named open leg is what this block half-closes. BLOCK 190 IS NOT CORRECTED: its unit-cell monodromy is used as the two-step operator and its fingerprint is reproduced digit for digit. THIS BLOCK'S OWN DEFECTS ARE DISCLOSED: TWO widths, TWO rational points, ONE profile at unit volume, ONE window formula and ONE source family -- not a scan, not a limit and not an induction; the window is IMPOSED from Block 193's measurement rather than derived; minimality is decided INSIDE J(t0) and says nothing about other row sets; the breaking direction is NOT proven; and the even-core collapse is measured without a mechanism. FOUR ITEMS ARE FOLDED FROM THE ADVERSARIAL CHECK AS CONTENT AND NOT AS ERRATA: the T = 20 ALL-CORE EXTENSION from the solve's two spot-check cores to all seven valid ones; the EXHAUSTIVE MINIMALITY result for the two-step and joint families; its EVEN-CORE FOUR-ROW QUALIFICATION, which weakens the attribution if C2 is narrated step-by-step and is stated here rather than buried; and the C5 TWO-CONDITION REFINEMENT, which is the reason the consequence is proven with supp(D_s u_b) subset J and not with supp(u_b) subset J alone. PROVENANCE: CAMPAIGN_20260824_GRAVITY_MAINLINE.md, at its THE RECURRENCE PROOF SOLVE (block 196 candidate), REC PHASE 1+2 MEASURED and B196 CHECK VERDICT anchors.\nTOE: zero axiom retirement; zero obligation retirement; zero TOE movement; no TOE percentage moves; retained-positive end-to-end theory count remains zero.
+TOTAL: PASS=36 FAIL=0
+
+----- stderr -----
+

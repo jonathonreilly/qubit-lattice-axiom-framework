@@ -2068,3 +2068,113 @@ OS reconstruction, two check rounds folded; parent = 4cbd5620). NEXT after b195 
 the recurrence-theoretic proof of the window law (solve inline), then the p=0/p=2
 isospectrality mechanism, second-carrier generality, bump systematics, 2D boundary,
 volume interval, G3.
+
+**BLOCK 195 LANDED.** PR #7736, tip 7877b4af (the sectored interior OS reconstruction —
+the campaign's deepest theorem: the light sector's evolution operator reconstructed,
+self-adjoint, positive; the heavy defect rank-2 characterized). Stack: #7359 → #7384 →
+#7580 → #7669 → #7731 → #7734 → #7735 → #7736 (blocks 188-195).
+
+## THE RECURRENCE PROOF SOLVE (block 196 candidate) — DESIGN
+
+Target: turn b193's LAW_PROVED_FROM_RECURRENCE_CLAIMED = False into a theorem. PROOF
+SHAPE (from the b193 reduction): R[a,b] = −u_bᵀ dQ G[:,θa]; supp(u_b) = W(t0) ⟺ the
+transport-defect functional d_b = e_{b+2} − Σ_{b'} W[b',b] e_{b'} lies in the row space
+of Q's WINDOW rows: ∃! v_b supported on slices W(t0) with Qᵀ v_b = d_b (then u_b = v_b
+identically — the window-Schur construction). The parity switch comes from which Q-rows
+carry the right support (range-2 band + staggering). CONSTRUCTIVE VERIFICATION: per
+(T, t0, b) solve the window-row-restricted system; verify existence + support +
+uniqueness; then the LAW follows: sources meeting supp(u_b) = W(t0) break R, others
+cannot. Measuring at T=16 (t0 = 1..5, all 8 b per core) and T=20 spot-checks.
+
+**REC PHASE 1+2 MEASURED — THE WINDOW-SCHUR THEOREM (block 196 SOLVE COMPLETE).**
+(i) EXISTENCE: the transport-defect functional (one-step d = e_{b+1} − Σ W1[b',b]e_{b'}
+AND two-step with the monodromy W) lies in the span of Qᵀ's WINDOW-row columns at every
+valid core — 8/8 at t0 = 1..5 (T=16) and t0 = 3,4 (T=20), both steps. (ii) UNIQUENESS:
+rank(A) = 12/12 at every core (full column rank of Qᵀ restricted to the 12 window rows).
+(iii) IDENTIFICATION: u_b = Gᵀd_b equals the padded window-Schur solution v_b EXACTLY,
+8/8 at every core — b193's mechanism object IS the constructive solution. (iv) EXACTNESS:
+the two-step support unions = the FULL window [2⌊t0/2⌋+1, 2⌊t0/2⌋+3] at every core.
+(v) THE PARITY FINE-STRUCTURE (discovery): at EVEN cores the one-step defect support
+collapses to a SINGLE slice — the window's first ({3} at t0=2, {5} at t0=4) — while odd
+cores use all three: the microscopic origin of the parity switch and of the shared window
+for cores 2j, 2j+1. (vi) CONSEQUENCE: the COMPATIBILITY direction of the window law is
+PROVEN constructively (u_b supported in W(t0) ⟹ sources missing the window cannot break
+R); the BREAKING direction is b193's exhaustive censuses (40 + 70 cells). Scope honest:
+per-width constructive (T = 16, 20), not a width-induction. Checker next.
+
+**B196 CHECK VERDICT — NOT REFUTED (sol xhigh; b196_check_findings.md +
+b196_exact_check.py).** C1-C5 EXACT at all T=16 cores 1..5 AND all valid T=20 cores 1..7
+(width coverage extended by the checker). P1 MINIMALITY: the 12 window rows are MINIMAL
+for the two-step and joint families; qualification — at even cores the one-step family
+alone needs only the FIRST FOUR window rows (the single-slice discovery made precise).
+P2: persists at (1/2, 1/3) across the same 12 cores. C5 REFINEMENT (fold as content):
+the disjoint-source consequence requires BOTH supp(u_b) ⊆ J AND supp(D_s u_b) ⊆ J — both
+verified. Provenance caveat noted (stacked-branch parents; handled by PARENT_REF gates).
+Block 196 = THE WINDOW-SCHUR THEOREM: drafter next (parent = b195 tip 7877b4af, stale =
+b194 tip 4cbd5620, corrections #70+).
+
+## THE p=0/p=2 ISOSPECTRALITY MECHANISM (block 197 candidate) — DESIGN
+
+The b190 census proved the W-commutants are exactly {I, S, U, S³} (signed monomials) —
+so the p=0 = p=2 isospectrality is NOT group-forced by any monomial symmetry. PHASE 1:
+solve the intertwining Sylvester system X·W_0 = W_2·X exactly on the S-momentum sectors
+at a deep core (T=16 t0=3); characterize the solution space (dimension; a canonical X);
+test whether X factors through recognizable structure (θ_s-conjugation, the Hodge, the
+Gram, complex conjugation of the S-eigenbasis — p=2 = −p=2 mod 4 self-dual vs p=0
+self-dual: both REAL sectors; the isospectrality of the two real sectors). If X has
+exact rational structure, the mechanism is identified; if the solution space is
+1-dim with an unstructured X, record honestly as existence-without-mechanism.
+
+**ISO PHASE 1 MEASURED.** At T=16 t0=3: the S-momentum refinement splits the light
+(U=+1) sector into p=0 and p=2, each 2-dim, charpolys EQUAL (the isospectrality). The
+Sylvester intertwiner space {X: X·W_0 = W_2·X} is 2-DIMENSIONAL (exact solve); the first
+canonical element X1 (displayed in the task output, det −358930811/388416787) is NOT a
+Gram isometry even up to scale (X1ᵀK2X1·K0⁻¹ ≠ scalar·I — both computed exactly). PHASE
+2: solve the isometry condition XᵀK2X = λK0 over X = αX1 + βX2 (quadratic system) — an
+isometric intertwiner found ⟹ the isospectrality is a HIDDEN NON-MONOMIAL ISOMETRY (why
+the 2048-census missed it); none ⟹ genuinely non-geometric, mechanism elsewhere.
+
+**ISO PHASE 2 MEASURED — THE HIDDEN ISOMETRY EXISTS (the mechanism identified).** The
+quadratic isometry solve over the 2-dim intertwiner space has TWO nontrivial solution
+families; family 2 normalizes to an exact λ=1 ISOMETRY: α = 104β/227 (β=1 ⟹ X* =
+(104/227)·X1 + X2-basis combination — display entrywise in phase 3). THE MECHANISM: the
+p=0/p=2 isospectrality is GEOMETRIC — an exact rational NON-MONOMIAL isometric
+intertwiner between the two real momentum sectors, invisible to the 2048 signed-monomial
+census by construction. Family 1 (α = −1581193β/283519, λ = 2323487131056β²/80383023361)
+is the second pairing. PHASE 3 (block 197 completion): (a) display X* entrywise exact;
+(b) scope: does X* intertwine W only, or also the step V/L1 data; (c) does X* extend to
+an 8×8 core operator commuting with W (completing the commutant story beyond monomials);
+(d) generality at (1/2, 1/3); then sol-xhigh check (pinned, tracked watcher), Opus
+draft (parent = the b196 tip once landed), land stacked. IN FLIGHT: b196 drafter.
+
+**ISO PHASE 3 MEASURED — THE TRIANGULAR ISOMETRY (block 197 SOLVE COMPLETE).** The λ=1
+isometric intertwiner is TRIANGULAR with generic shape X* = [[r, 0], [s, 1]]: control
+(9/20, 5/13): [[1369/1135, 0], [104/227, 1]]; fresh (1/2, 1/3): [[37/31, 0], [12/31, 1]]
+— the SAME structural form at both points (the mechanism is generic). SCOPE (measured):
+X* does NOT intertwine the step sectors (X·V0 ≠ V2·X at both points, both families) —
+the hidden isometry is a MONODROMY-LEVEL symmetry invisible at the step/carrier level,
+which is WHY it is non-monomial and the 2048-census could not see it. EXTENSION: the
+natural two-block extension Y satisfies [W, Y] = 0 EXACTLY at both points — a NEW
+non-monomial element of W's commutant (the b190 census statement stands as the MONOMIAL
+classification) — but Y is not a full-Gram isometry under the naive normalization (the
+per-sector λ mismatch; the full-core isometric completion is a NAMED OPEN refinement).
+Family 1 (λ = 2323487131056/80383023361 control, 53816/3721 fresh) is the second,
+non-unit pairing, displayed. Block 197 = THE HIDDEN ISOMETRY MECHANISM. Checker next
+(verify the Sylvester space dim, both isometry families, the triangular λ=1 form, the
+V-scope refutation, the [W,Y]=0 extension + its isometry defect, generality; probe: is
+the full-core isometric completion achievable with per-sector normalizations — a found
+completion upgrades the theorem, none characterizes the obstruction).
+
+**B197 CHECK VERDICT — THE COMPLETION FOUND; THE THEOREM UPGRADED (sol xhigh;
+b197_check_findings.md + b197_exact_check.py).** C1-C3 confirmed. P1 SUCCEEDED where my
+naive extension failed: the FULL COMPLETION EXISTS — Y' (light sectors exchanged via X*,
+heavy sector kept by the U-odd projector (I−S²)/2-structure) satisfies [W, Y'] = 0,
+Y'ᵀK_cY' = K_c AND Y'² = I₈, ALL EXACT — an INVOLUTIVE ISOMETRIC W-COMMUTANT: a new
+non-monomial Z₂ symmetry of the monodromy+Gram structure (the isometric commutant grows
+to at least {I, U, Y', UY'}). My C4 defect explained: purely the zeroed heavy sector;
+the light exchange was already exactly isometric. P2 INVARIANT CONTENT: the triangular
+form is basis-DEPENDENT; invariantly X* simultaneously intertwines (W₀, W₂) and
+identifies (K₀, K₂); in the displayed gauge r² = det K₀ / det K₂. P3: the full mechanism
+and completion persist at T=20. Block 197 = THE HIDDEN INVOLUTIVE ISOMETRY. Drafter
+after b196 lands (parent = b196 tip; corrections continue; the basis-dependence of the
+triangular display fenced with the invariant statement primary).

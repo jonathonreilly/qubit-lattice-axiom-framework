@@ -34,4 +34,6 @@
   localizes its stage-7 dependency-policy epoch mismatch and Block 205 changes
   none of the governed policy sources.  No generated ledger or governance
   repair is included in this science result.
+- Draft PR #7741 opened against the Block-204 branch at result head
+  `ff1c77c8a2`; GitHub reports the stack mergeable.
 - No review-loop or audit verdict was used.

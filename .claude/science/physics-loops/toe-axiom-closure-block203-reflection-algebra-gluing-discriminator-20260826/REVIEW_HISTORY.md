@@ -8,3 +8,5 @@
 - 2026-08-26: primary and independent exact calculations each passed `8/8`;
   mutation harnesses rejected `27/27` and `14/14`.  The result stops at zero
   compatible periodic cells and preserves every broader route.
+- 2026-08-26: strict audit lint, premise purity, forensic readiness, changed
+  evidence, fresh-cache, and enforced graph/invariant gates passed.

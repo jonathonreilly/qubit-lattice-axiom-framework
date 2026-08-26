@@ -10,7 +10,7 @@
    package only the bounded result.
 5. SEALED — open Stage B only after a unique positive same-action cell is certified by
    a separately committed Stage-A hash.
-6. IN PROGRESS — run exact mutation families, fresh caches, premise/forensic/graph/invariant
+6. COMPLETE — run exact mutation families, fresh caches, premise/forensic/graph/invariant
    checks, and open a stacked PR without review-loop.
 7. COMPLETE — update the TOE map only if a named obligation is actually retired; otherwise
    preserve every percentage and rerank the portfolio.

@@ -1,7 +1,7 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_d4_l24_reflection_algebra_gluing_discriminator_2026_08_26.py
 runner_sha256: 4c73174821f53895b65683017fe502cc9217c7137ec0274d9d9c56987ea4e241
-input_fingerprint_sha256: 8d13fabe4bc9c726b1dc964ee61fe1a2f720642e7d93a6dcfaf2a69d248afe38
+input_fingerprint_sha256: 87538acb24577dd0129219f520b03a31c02c015addd24e1325827c7eab32751d
 timeout_sec: 300
 exit_code: 0
 elapsed_sec: 1.09

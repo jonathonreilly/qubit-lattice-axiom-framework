@@ -1,0 +1,63 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_transfer_robustness_boundary_package_2026_08_26.py
+runner_sha256: 563bf52062da7071140141defeb3b27d72c0c4821572c0eec7e1f5d36fa08fa3
+input_fingerprint_sha256: 4219d71861cfa14f766f58546fa351ea9f03de48ce12eee3f9aa09185abbc37e
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 51.17
+status: ok
+----- stdout -----
+MEASURED BLOCK 200
+elapsed=50.8s main=76df4becc8233080bc5a10a4baf55f83e80f8f2d
+verdict=FINITE-PROBES-CONFIRMED-INTERPOLATION-MODEL-FENCED registered=0 adopted=0 floats=0
+widths=(12, 16, 20, 24) deep_agreement=(16, 20, 24) boundary_agreement=(12, 16, 20, 24) big_inverses=1
+endpoints=(1213333/1703936, 151669/212992) pass_signs=((1, -1, 1), (1, -1, 1)) fail_signs=((1, 1, 1), (1, -1, 1))
+fit=[4/4] N=(1362, 800, -5529, -1600, 5448) D=(400, 800, -1681, -1600, 1600) withheld_residuals=(0, 0)
+fit_only: D_roots=1 N_roots=0 band_roots=(0, 0); carrier_between_probes=OPEN
+response_slices=(0, -3924317879963744/17744088856432749, -285033126329023712/147867407136939575, -73354817263464195597509202636832/5276875808912607540299962640625, 38264746670503590368/3696685178423489375, 0)
+parity_pattern=True interior_distinct=True endpoint_zeros=True sign_flip_per_anchor=True
+positive_volume_samples=(1/100, 1/10, 1/5, 2/5, 3/5, 4/5, 6/5) all_positive=True; no interval claimed
+scope=finite exact probes; no all-T, generic-parameter, continuum, dynamics, gravity, located edge, or maximal interval claim
+[PASS] A-1
+[PASS] A-2
+[PASS] B-1
+[PASS] B-2
+[PASS] B-3
+[PASS] B-4
+[PASS] B-5
+[PASS] B-6
+[PASS] B-7
+[PASS] B-8
+[PASS] B-9
+[PASS] C-1
+[PASS] C-2
+[PASS] C-3
+[PASS] C-4
+[PASS] C-5
+[PASS] D-1
+[PASS] D-2
+[PASS] D-3
+[PASS] D-4
+[PASS] D-5
+[PASS] D-6
+[PASS] E-1
+[PASS] E-2
+[PASS] E-3
+[PASS] E-4
+[PASS] F-1
+[PASS] F-2
+[PASS] F-3
+[PASS] F-4
+[PASS] G-1
+[PASS] G-2
+[PASS] G-3
+GATES A=PASS B=PASS C=PASS D=PASS E=PASS F=PASS G=PASS
+N5: per_element: checked — fourteen exact values of the heavy-sector coefficient do not determine an unrestricted rational continuation; the explicit beta_alt construction preserves every probe and inserts one additional rational zero.
+N5: per_site: checked and not executed — the interpolation boundary concerns one compressed scalar coefficient as shear varies, not a sitewise response; no between-probe site claim is made.
+N5: per_mode: checked — only the U=-1 heavy compression is fitted; the U=+1 light compression is classified at the two endpoints and receives no interpolation or between-probe conclusion.
+N5: per_block: checked — all interpolation statements are restricted to T=16, t0=3, m=9/20 and unit volume; other cores, widths, masses, and carrier families are not classified.
+N5: lattice_wide: checked and not executed — no all-T, generic-parameter, continuum, dynamics, gravity, energy, or Nature conclusion is drawn from the finite exact probes.
+TOTAL: PASS=33 FAIL=0
+
+----- stderr -----
+

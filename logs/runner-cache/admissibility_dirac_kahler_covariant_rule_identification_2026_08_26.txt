@@ -1,0 +1,63 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_covariant_rule_identification_2026_08_26.py
+runner_sha256: 0a97bedd5e26d6e6d4faca6cc863d3598bfbbbbccc9f1912870553639d02db57
+input_fingerprint_sha256: 98cd531a583b4980b5cceb7601949ae6eba8b7edd42a9e5d16b7b551dcc7cef4
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 9.09
+status: ok
+----- stdout -----
+MEASURED
+elapsed_ns=6766742708 main=76df4becc8233080bc5a10a4baf55f83e80f8f2d
+authority=AuthorityCertificate(fixed_authority=True, parent_pin_is_commit=True, parent_ref_and_ancestry=True, parent_artifact_blobs=True, stale_parent_artifact_blobs=False, stale_is_real_ancestor=True, stale_carries_neither_artifact=True, machinery_import_landed=True, inputs_readable=7, inputs_missing=())
+objects=imposed:6,registered:0,adopted:0
+kernel=nonscalar:{(1, 1): 0, (1, -1): 0, (-1, 1): 0, (-1, -1): 0},nnz:96,dictionary:{(1, 1): (True, False, False), (1, -1): (False, False, False), (-1, 1): (False, True, True), (-1, -1): (False, False, False)},pairs:(('sx', 'sz'), ('sx', 'isy'), ('sz', 'sx'), ('sz', 'isy'), ('isy', 'sx'), ('isy', 'sz')),finite_parity:{(8, 3): 16, (7, 4): 8}/{(6, 4): 0, (8, 4): 0}
+cell=rank:16/16,dim:0,anchors:{(0, 0): (16, 16, 0), (0, 1): (16, 16, 0), (1, 0): (16, 16, 0), (1, 1): (16, 16, 0)},replacements:((16, 16, 0, 0), (16, 16, 0, 0), (16, 16, 0, 0), (16, 16, 0, 0), (16, 16, 0, 0), (16, 16, 0, 0), (16, 16, 0, 0), (16, 16, 0, 0)),sign:((1, 2),),general:64
+lift=odd_sign:-1,squares:(0, 0, 0),anti:(0, 0, 0),rotations:24,residual:0
+block171=schur:(0, 0, 0),local:((0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0)),profile:(0, 0, 0, 0),far:(1, 4, 5, 1)
+selection=generator:false,target:false,same_rule_bridge:false; counterexample=lane:True,clifford:False
+hygiene=nsimplify:0,float_literals:0,imported_float_atoms:0
+[PASS] A-1
+[PASS] A-2
+[PASS] B-1
+[PASS] B-2
+[PASS] B-3
+[PASS] B-4
+[PASS] B-5
+[PASS] B-6
+[PASS] B-7
+[PASS] C-1
+[PASS] C-2
+[PASS] C-3
+[PASS] C-4
+[PASS] C-5
+[PASS] C-6
+[PASS] D-1
+[PASS] D-2
+[PASS] D-3
+[PASS] E-1
+[PASS] E-2
+[PASS] E-3
+[PASS] F-1
+[PASS] F-2
+[PASS] F-3
+[PASS] F-4
+[PASS] F-5
+[PASS] F-6
+[PASS] G-1
+[PASS] G-2
+[PASS] G-3
+[PASS] G-4
+[PASS] H-1
+[PASS] H-2
+[PASS] H-3
+GATES A=PASS B=PASS C=PASS D=PASS E=PASS F=PASS G=PASS H=PASS
+N5: per_element: The declared matrix pair is an exact finite exhibit, not a selected dynamical or physical rule; zero objects are registered or adopted.
+N5: per_site: The twist dictionary is gated only on Z_6 x Z_4, and the even/odd contrast is reported only for the four measured extents.
+N5: per_mode: Rank-16 cell inversion is target-conditional encodability; two unrelated replacement targets receive the same exact certificate, so no Hodge target is selected.
+N5: per_block: The real Cl(3,0) exhibit and the imported Block 171 Schur identities remain separate exact results because no same-rule bridge is supplied.
+N5: lattice_wide: The six-pair census and rational counterexample defeat uniqueness from lane signs alone; no generic-parameter, continuum, gravity, or Nature claim is made.
+TOTAL: PASS=34 FAIL=0
+
+----- stderr -----
+

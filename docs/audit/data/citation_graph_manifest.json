@@ -1,6 +1,6 @@
 {
- "edge_count": 16121,
- "node_count": 5629,
+ "edge_count": 16125,
+ "node_count": 5630,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -480,6 +480,10 @@
   },
   "admissibility_dirac_kahler_constraint_quotient_coupling_bounded_theorem_note_2026-08-16": {
    "deps_hash": "2f625303199c",
+   "out_degree": 4
+  },
+  "admissibility_dirac_kahler_covariant_rule_identification_bounded_theorem_note_2026-08-26": {
+   "deps_hash": "ece57cae4ca3",
    "out_degree": 4
   },
   "admissibility_dirac_kahler_curved_carrier_dependency_bounded_theorem_note_2026-08-17": {

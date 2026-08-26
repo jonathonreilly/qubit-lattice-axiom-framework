@@ -1,6 +1,6 @@
 {
- "edge_count": 16203,
- "node_count": 5633,
+ "edge_count": 16208,
+ "node_count": 5634,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -441,6 +441,10 @@
   "admissibility_d4_grade3_source_instrument_history_write_boundary_bounded_theorem_note_2026-08-24": {
    "deps_hash": "58496be7c03c",
    "out_degree": 3
+  },
+  "admissibility_d4_h1_schur_record_probability_germ_bounded_theorem_note_2026-08-26": {
+   "deps_hash": "ca2d0aba1bea",
+   "out_degree": 5
   },
   "admissibility_d4_l12_open_time_stable_os_event_boundary_bounded_theorem_note_2026-08-26": {
    "deps_hash": "1c9c588b7cd0",

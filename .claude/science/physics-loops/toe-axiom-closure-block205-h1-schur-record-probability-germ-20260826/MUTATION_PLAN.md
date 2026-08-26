@@ -17,3 +17,5 @@ The primary runner must reject at least one mutation in each family:
 The independent checker must rebuild the central state/effect calculation and
 use a nonidentical mutation set.
 
+Result: the primary sweep rejects `30/30` mutations and the independent sweep
+rejects `24/24`; neither has a survivor.

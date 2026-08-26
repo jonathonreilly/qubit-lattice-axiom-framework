@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/independent_admissibility_d4_h1_schur_record_probability_germ_2026_08_26.py
+runner_sha256: bae54165c251983653c96d3226672bd5f67a60ee866034083c99563839c52bb0
+input_fingerprint_sha256: 996016856bb805e86ef78d9a73ae37b510f942678f869fefa6cb65b0ff8fe2bc
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 26.38
+status: ok
+----- stdout -----
+[I1] PASS: registration authority and immutable targets are independently pinned
+[I2] PASS: the literal H1 second-TT source family uses the actual reverse block
+[I3] PASS: the action-derived zero-source marginal is block-scalar and strictly positive without an imported maximally mixed state
+[I4] PASS: an independent reconstruction gives the same complete eight-projector C32 context
+[I5] PASS: strict positivity plus analytic inversion and a nonzero exact derivative force a finite positive nonconstant law germ
+[I6] PASS: coarse ports add normally and the rebuilt nonidentity M2 writer reproduces a varying conditional binary law
+[I7] PASS: the supplied detector orbit is cubic-covariant while port context and H1 remain distinct from a proved nearest-neighbor eta law
+[I8] PASS: scope fences exclude formation/history, periodic CAR, two-TT, axiom, retained, obligation, TOE, and broad no-go claims
+INDEPENDENT_H1: exact ell>0; effect derivative signs=(+,-,+,-,-,+,-,+); coarse derivatives=0; ell=-9091679599806191497029877413353318714827442776228259391876320236611592529853787*(-7 + 3*sqrt(3))/29294716671255543678574385056367635537142669186818226512976035477340009933739972300.
+INDEPENDENT_RESULT: positive finite H1 Schur law germ=yes; M2 pointer pullback=yes; nearest-neighbor eta/open history=open; obligation_retirement=0; TOE movement=0.
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

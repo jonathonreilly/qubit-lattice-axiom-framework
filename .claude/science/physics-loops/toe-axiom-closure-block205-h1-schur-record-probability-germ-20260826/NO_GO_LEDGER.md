@@ -1,14 +1,16 @@
 # No-Go Ledger
 
-No broad negative is registered.
+No broad negative is registered.  The H1 finite-state wall closes positively;
+the source note's N1--N8 gate keeps the remaining walls independent.
 
 | possible wall | current status | surviving alternatives |
 |---|---|---|
-| finite-source Schur positivity | untested exactly | smaller interval, other physical source, OS/GNS reconstruction |
-| H1 nonconstant eight-vector | floating scout only | H2, other detector/source, periodic/AP/open state |
-| local `M2` context | untested | supplied apparatus context, extensional law, owner decision |
-| autonomous formation/history | outside first gate | branch-first continuation, fresh-cell process, complete joint law |
-| periodic `C32` descent | not targeted first | type-correct one-body or event-space Hom |
+| finite-source Schur positivity | exact local germ positive | explicit interval endpoint, H2, other physical source, OS/GNS reconstruction |
+| H1 nonconstant eight-vector | exact local germ positive | H2, other detector/source, periodic/AP/open state |
+| local `M2` context | conditional pointer law positive; physical `eta` open | local apparatus derivation, extensional law, owner decision |
+| autonomous formation/history | untested | branch-first continuation, fresh-cell process, complete joint law |
+| periodic `C32` descent | not targeted here | type-correct one-body or event-space Hom |
+| two-TT gravity completion | not supplied by rank-one H1 response | H2/other source, independent gravity route |
 
-Any shipped boundary must complete N1--N8 and preserve these distinct routes.
-
+The result supports no probability, Record, history, axiom, gravity, or TOE
+no-go.  H2 remains open because its exploratory run had no landed checker.

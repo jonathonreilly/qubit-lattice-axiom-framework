@@ -1,11 +1,23 @@
 # Handoff
 
-Block 205 is preregistered to turn the surviving positive right-Schur route
-into a same-carrier one-shot Record probability law, or to identify the exact
-remaining context/probability primitive.  Preserve the literal H1 source,
-ordinary transpose, fixed detector, and pointer.  Do not substitute the
-periodic CAR functional or call a tangent a state.
+Block 205 positively closes the campaign-local one-shot state/effect wall on
+the fixed H1 route.  The action-derived right-Schur state is strictly positive
+at zero source and analytic nearby.  Its exact nonzero H1 derivative therefore
+forces a finite interval of positive, normalized, nonuniform eight-effect
+laws; this is not a tangent promoted to a state.
 
-Parent delivery is draft PR #7739 at `4692fc1998`.  The parallel gravity
-stack #7734--#7738 is clean and separately staffed.
+The four coarse-port derivatives and both unconditioned pointer-sign
+derivatives vanish.  The port-conditioned binary `M2` law varies, and the
+fixed nonidentity writer pulls the same eight effects back exactly.  Preserve
+the literal forward/actual-reverse source, ordinary transpose, fixed detector,
+and typed distinction from periodic CAR or `Lambda(C32)` objects.
 
+The highest-leverage successor is now physical context attachment: derive a
+nearest-neighbor `eta` that produces this same state/context, then attach the
+pointer branch to a current formation and permanence mechanism.  H2 remains
+open and non-load-bearing because its exploratory scout had no landed checker.
+An explicit maximal positivity radius is also open.
+
+No axiom edit, obligation retirement, retained status, or TOE percentage move
+follows.  Parent delivery is draft PR #7739 at `4692fc1998`; the separately
+staffed gravity stack #7734--#7738 was not modified.

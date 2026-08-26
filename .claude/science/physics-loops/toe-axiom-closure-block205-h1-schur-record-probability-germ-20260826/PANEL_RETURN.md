@@ -21,3 +21,8 @@ The periodic route is demoted to a later type gate.  It must distinguish a
 one-body quasifree symbol, an event-space operator, a positive state, and the
 Block-203 `C4` functional before solving any Hom equation.
 
+Result disposition: conditions 1--4, 6, and 7 pass exactly.  Proper-cubic and
+reflection covariance pass.  H2 received only an exploratory calculation
+without a saved checker and therefore remains open rather than being promoted
+to evidence.  The panel's primary H1 gate nevertheless passes as an exact
+local analytic theorem.

@@ -1717,3 +1717,175 @@ sector under the bump", not "the edge is the antenna"). P2: near-edge coupling g
 but sign/magnitude/reach are bump-position-dependent. REQUIRED FENCE: the package
 establishes HODGE-VOLUME SPECTRAL SENSITIVITY — "lapse physicality" stays a READING.
 Drafter to fold ALL of the above as content; corrections #21+ continue the ledger.
+
+## THE HYBRIDIZATION MECHANISM SOLVE (block 192 candidate) — DESIGN
+
+Jon's order: "run the hybridization mechanism solve - fable on it." Target: the b191
+hybridization (near-edge W response = comparable boundary+heavy shifts) in CLOSED FORM.
+METHOD (exact, no symbolic inversion): the bump enters Q only through the bumped slices'
+Hodge blocks (H is a cell sum), so with dB = d/dδ[shear_hodge(c, 1−δ)] at δ=0 (exact),
+dQ = m·dH + dH·D − Dᵀ·dH (D is δ-independent), dG = −G·dQ·G with the KNOWN v=1 G;
+core restriction gives dK_c and dL2; dW = K_c⁻¹(dL2 − dK_c·W). The mechanism object: the
+projection of dW onto the 4-dim heavy⊕boundary invariant subspace at the near-edge core
+(t0=1, T=16) — its 2×2-block invariants (traces/dets, rational) are the hybridization
+couplings. Phase 2: dW per bump position p (same G, different dQ support) → the coupling
+AS A FUNCTION OF POSITION, deriving b191's exact {2,3} zero. Phase 3 (checker probe):
+first-order prediction vs the b191 finite-bump measurements (δ = 1/5) — quantify the
+linear regime. Runs at T=16; validity rule respected (probe cores t0 = 1, 3, 5 only).
+
+**HYB PHASE 1 MEASURED.** dB/dδ at δ=0 (v = 1−δ): −E00 − (169/144)(E11+E22) +
+(65/144)(E12+E21) + E33 — the volume derivative acts with OPPOSITE signs on the two scalar
+corners. First-order Newton traces tr(dW·W^k): ALL NONZERO rationals at every probe —
+bump{3,4} and bump{2,3}, cores t0 = 1 and 3 (T=16; exact values in the session task
+output and hyb_traces_*.json in the scratchpad). CONSEQUENCE: b191's {2,3} exact zero is
+a CANCELLATION IN ONE PROJECTED COMPONENT, not a vanishing of the perturbation. Phase 1b
+RUNNING: traces to k=7 (full power-sum ladder) → per-factor first-order root motion via
+spectral-projector algebra → the hybridization couplings in closed form. Next: Newton
+splitting per factor at t0=1 (boundary vs heavy vs light response ratios exact); the
+{2,3}-zero component identified; then the b192 checker (sol xhigh, tracked watcher).
+
+**HYB PHASE 2 — THE MECHANISM NUMBERS (exact, sum rules verified dp1 = Σ d tr(f)).**
+Per-factor first-order trace responses (T=16; CRT spectral projectors, congruence-gated):
+- bump{3,4} @ t0=1: d tr(heavy) = 840153195543/196300900625 (≈4.279925), d tr(boundary) =
+  59790687128721117/13862573301236875 (≈4.313102), d tr(light) = 21615004253318/
+  12284407006475 (≈1.759548).
+- bump{2,3} @ t0=1: d tr(heavy) = −421462341183472199/177215545561734375 (≈−2.378247),
+  d tr(boundary) = −29381217534120895221181/12514784612024119828125 (≈−2.347721),
+  d tr(light) = 22866757183474123654/19424018367789224675 (≈+1.177241).
+- bump{3,4} @ t0=3 (on-site): heavy ≈ −14.225806, light ≈ −1.603004 (9:1 heavy-dominated).
+- bump{2,3} @ t0=3 (distance 1): heavy ≈ −1.047516, light ≈ −1.101273 (scale-balanced).
+THE HYBRIDIZATION LAW (measured): at the near-edge core the heavy and boundary factors
+respond AS ONE LOCKED SECTOR — equal within <1% at BOTH bump positions and flipping sign
+TOGETHER under a one-slice bump shift — while the light factor responds independently
+(weaker, sign-stable). Near-equality is NOT exact (4.279925 ≠ 4.313102) — a locking, not
+an identity. b191's {2,3} exact zero is NOT FIRST-ORDER (all ten components nonzero): it
+is higher-order or lives in a non-trace component — a named refinement for the note.
+Method theorem: dW = K_c⁻¹(dL2 − dK_c·W) with dG = −G·dQ·G, dQ = m·dH + dH·D − Dᵀ·dH,
+dB = −E00 − (169/144)(E11+E22) + (65/144)(E12+E21) + E33 — no symbolic inversion.
+NEXT: b192 checker (sol xhigh, tracked watcher) on this package, then the drafter.
+
+**STANDING ORDER (Jon): land block 192 when the check clears.** b192 checker RUNNING
+(sol xhigh pinned, pid 60662, tracked watcher live; spec b192_check_spec.md, findings
+expected at b192_check_findings.md in the scratchpad). On CONFIRMED: fold verdict here,
+write b192_draft_spec.md (mechanism package: the derivative-identity method theorem, the
+ten rationals + sum rules, the locking law, the not-first-order zero refinement, checker
+corrections as content), launch the Opus drafter (template = b191 runner/note at
+scripts/admissibility_dirac_kahler_boundary_mode_volume_sensitivity_2026_08_25.py; parent
+= b191 tip 36f54ab2ad6e51cbe2bf6b8b604b63236f2c936e; stale parent = b190 tip e75ad9f499;
+main pin verify live, last b11811704e), then land: branch
+physics-loop/toe-axiom-closure-block192-hybridization-mechanism-20260825 cut from the
+b191 tip, full chain (baseline, sweep tracked, scripts/cached_runner_output.py ×2,
+run_pipeline exit-1-expected, scoped restore, manifest, lint strict, main recheck,
+AUDIT_INPUT_PATHS literal-tuple rule, commit the campaign anchor with the block if any
+gate reads it, PR stacked on #7669's branch).
+
+**B192 CHECK VERDICT (sol xhigh; findings b192_check_findings.md + b192_exact_check.py).**
+Headline "REFUTE as stated" resolving to: C1 (derivative-identity chain, independent-route
+verified), ALL TEN C2 rationals, C4, P1 EXACTLY CONFIRMED. C3 REFUTED AS WORDED: the
+{2,3} heavy/boundary relative difference exceeds 1% under reference-relative and symmetric
+definitions — the "<1% locking" quantifier is DROPPED; land the exact differences with
+sign-locking as the measured statement. THE DISCOVERIES (fold as the block's central new
+content, credited to the check): (i) b191's zero IDENTIFIED — bump{2,3} leaves the ENTIRE
+t0=5 monodromy invariant at finite δ: W(1/5) − W(0) = 0₈ MATRIX-LEVEL; (ii) P2: bump{4,5}
+is valid and gives the EXACT triple (0,0,0) at t0=1 — A SUPPORT CUTOFF, not locking. THE
+SUPPORT-CUTOFF LAW: the bump response is NOT global-decaying (b191's reading corrected as
+content) — it has an exact, directional, matrix-level cutoff; mechanism conjecture for the
+note narrative: the empty-cross block structure of Q routes G·dQ·G away from far cores
+(derivation = named open leg unless the drafter/checker settles it). Landing per standing
+order: fold ALL of the above; corrections continue #33+.
+
+## THE CUTOFF MECHANISM DERIVATION (block 193 candidate) — DESIGN
+
+Jon's order: "run the cutoff mechanism derivation - fable on it." Hypothesis: the
+block-banded (range ≤ 2) slice structure of Q with the empty P-N cross gives the Green
+function the two-sided product form on each open segment (P = 1..half−1, N = half+1..T−1,
+channels through the fixed slices); a slab-localized dQ transports the far-end fundamental
+solution and the block Wronskian by THE SAME transfer factor, which CANCELS in G[i,j] when
+both indices lie beyond the slab → exact all-δ directional zeros. PUZZLE the derivation
+must resolve: naive dQ support (rows = dH slices {B, B+1(+1)}, cols extended by D's range
+to ~B+3) OVERLAPS the measured-zero core t0=5 under bump{2,3} — the true cutoff edge is
+SHARPER than banded counting; candidate: the Ps-odd glue kills the D-tail contributions.
+PHASE A measurements: (A1) all-δ exactness — the {2,3}→t0=5 zero at δ = 1/3 and symbolic
+δ; (A2) the full matrix-level zero TABLE, bumps {1,2},{2,3},{3,4},{4,5} × cores {1,3,5}
+at δ = 1/5, alongside each bump's exact dQ support interval; (A3) the G-invariance region
+itself — which slice pairs (i,j) of G(δ) − G(0) vanish identically (the raw invariance
+region, sharper than W's) — the region's shape IS the mechanism's fingerprint.
+
+**CUT PHASE A MEASURED.** (A1) The bump{2,3} → t0=5 zero holds at δ = 1/5 AND 1/3:
+ALL-δ exact, not coincidence. (A2) Zero table at δ=1/5 (T=16): bump{1,2}: t0=5 ZERO,
+others nonzero; bump{2,3}: t0=5 ZERO; bump{3,4}: none zero; bump{4,5}: t0=1 ZERO. (A3)
+THE TEXTBOOK MECHANISM IS REFUTED: dG = G(δ) − G(0) is FULLY DENSE (all 256 slice pairs
+change, every bump) — G has NO invariance region; the classic one-sided Green-function
+invariance is NOT the mechanism. THE MECHANISM IS THE QUOTIENT: W(δ) = W(0) matrix-exact
+⟺ the INTERTWINING IDENTITY L2(δ) = K_c(δ)·W(0) (first order: dL2 = dK_c·W) — the
+perturbation adds only homogeneous-solution content in the core window, and W is exactly
+its two-step transport. EDGE PUZZLE: bump{4,5} → t0=1 ZERO despite naive dH-slab overlap
+at slice 4 — the validity edge is ONE SLICE TIGHTER than support counting; a b188-style
+exact no-op piece (fixed-slice/grading cancellation in the pairing) to be identified.
+PHASE B: (B1) verify the intertwining identity per table cell (zero cells ⟺ identity
+holds); (B2) per-cell decomposition of bump{4,5}'s dH (slice-4 vs slice-5 cells) against
+the t0=1 core → name the no-op piece exactly.
+
+**CUT PHASE B MEASURED — THE MECHANISM IDENTIFIED.** (B1) THE INTERTWINING IDENTITY
+dL2 = dK_c·W matches the zero table SIX FOR SIX: holds exactly at every zero cell
+(bump{1,2}/t0=5, bump{2,3}/t0=5, bump{4,5}/t0=1), fails at every nonzero cell
+(bump{3,4}/t0=5, bump{2,3}/t0=1, bump{2,3}/t0=3). W-invariance ⟺ the identity. (B2) BOTH
+single-slice pieces of bump{4,5} separately satisfy the identity at t0=1 — INCLUDING the
+slice-4 cell that touches the core's column window: the edge-tightening is not a vanishing
+piece; boundary-slice dH content is itself intertwining-compatible. DERIVATION CORE (two
+lines, for the note): with v_a = dQ·G[·, θa], the response field u_a = G·v_a satisfies
+Q·u_a = v_a, hence is Q-HARMONIC wherever v_a vanishes; W is exactly the two-step
+transport of Q-harmonic data on the core window (the pair core is a frame of the harmonic
+space); therefore dL2 − dK_c·W = 0 ⟺ u_a is harmonic on the transport window ⟸ the
+source v_a clears the window. The window's exact boundary behavior (why boundary-slice
+sources are compatible) = the remaining named leg; the per-cell table characterizes it
+exactly. PENDING: cells (3,) vs (4,) of bump{3,4} at t0=5 → the window's upper edge.
+
+**CUT PHASE B3 MEASURED — THE EDGE ASYMMETRY.** Per-cell at t0=5: cell-3 (support {3,4})
+COMPATIBLE, cell-4 (support {4,5}) BREAKS — with B2's cell-4@t0=1 (touching t0+3, the top
+predicted slice) COMPATIBLE. Emerging rule: sources touching the core's READ slices
+{t0, t0+1} break the intertwining identity; sources touching only the PREDICTED slices
+{t0+2, t0+3} or beyond stay compatible — a causal/triangular transport asymmetry. PENDING
+(final characterization): the full per-cell (1..6) × per-core (1,3,5) incidence matrix →
+the exact breaker set; then the boundary lemma (why read-edge breaks, predict-edge
+doesn't) as the derivation's last step. Block 193 = the mechanism theorem: intertwining ⟺
+W-invariance (6/6), harmonic-response derivation, the incidence table, the edge lemma.
+
+**CUT PHASE C MEASURED — THE WINDOW LAW (the mechanism derivation COMPLETE as a solve).**
+Full per-cell incidence (T=16, single-cell sources, cells 1..6 × cores t0 = 1,3,5),
+18/18 fit ONE rule with zero exceptions:
+  t0=1: BRK{1,2,3} ok{4,5,6}; t0=3: ok{1} BRK{2,3,4,5} ok{6}; t0=5: ok{1,2,3} BRK{4,5,6}.
+THE WINDOW LAW: a source cell (support {s, s+1}) BREAKS the intertwining identity ⟺ its
+support intersects the THREE-slice window [t0, t0+2] — the read pair {t0, t0+1} plus the
+FIRST predicted slice t0+2; the LAST predicted slice t0+3 is EXEMPT (triangularity of the
+two-step transport: the top slice is determined, not constrained). Equivalently breakers
+are exactly s ∈ [t0−1, t0+2]. THE BLOCK-193 PACKAGE: (1) W-invariance ⟺ dL2 = dK_c·W
+(6/6 table + all-δ at 1/5, 1/3); (2) the harmonic-response derivation (u_a = G·dQ·G[·,θa]
+is Q-harmonic off the source; W = two-step harmonic transport on the core frame); (3) the
+window law (18/18); (4) the directional exact cutoff as corollary. NEXT: b193 checker
+(sol xhigh, pinned, stdin-closed, TRACKED watcher) — spec: rebuild the incidence matrix
+independently, verify the identity ⟺ zero equivalence, probe the window law at T=20 and
+at a second core parity, attempt to refute the t0+3 exemption; then drafter + landing
+stacked on b192 per the standard chain. b192 drafter still in flight (landing per Jon's
+standing order when its check... note b192's check ALREADY cleared — land on delivery).
+
+**STANDING ORDER (Jon): land block 193 when the check clears.** b193 checker LAUNCHED
+(sol xhigh pinned; spec b193_check_spec.md; findings b193_check_findings.md). On verdict:
+fold here, write b193_draft_spec.md (the window-law package: identity ⟺ invariance 6/6 +
+all-δ; harmonic-response derivation; the 18/18 incidence table + window law
+[t0, t0+2]; the t0+3 exemption; checker corrections as content, ledger continues), launch
+the Opus drafter (template = b192 runner/note once landed, else b191; parent = the b192
+tip once landed), land per the standard chain, PR stacked on b192's PR. b192: drafter
+final-bytes sweep in progress — land IMMEDIATELY on its completion report (check already
+cleared), branch physics-loop/toe-axiom-closure-block192-hybridization-mechanism-20260825
+from the b191 tip 36f54ab2, PR stacked on #7669.
+
+**B193 CHECK VERDICT (sol xhigh; b193_check_findings.md + b193_exact_check.py).** C1-C4,
+P1, P3 EXACT PASS; C2 18/18; C3 (the exemption) SURVIVES exhaustive asymmetric-source
+attacks on odd cores. P2 DISCOVERY (refutes universality of the odd-core window): EVEN
+cores carry the SHIFTED window [t0+1, t0+3] — the exempt end SWITCHES WITH PARITY (odd:
+last predicted slice exempt; even: first read slice exempt). THE PARITY-RESOLVED WINDOW
+LAW: a source breaks W-invariance at core t0 ⟺ its support intersects [t0, t0+2] (odd t0)
+/ [t0+1, t0+3] (even t0) — always three slices, one exempt end, parity-switched. Fold as
+the block's central law; the b193 drafter launches AFTER b192 lands (parent = b192 tip;
+template = the landed b192 runner/note); corrections ledger continues #42+.

@@ -1,22 +1,27 @@
 # Route Portfolio
 
-The post-Block-201 five-role panel votes `4-1` for this action-only boundary
-gate.  The value is information gain toward a positive dependency, not the
-chance of publishing another bounded negative.
+The post-Block-201 five-role panel voted 4-1 for this action-only boundary
+gate.  That kill gate paid off: an adversarial check found that the apparent
+positive scalar result lost the frozen physical reflection sign.  The
+correct full form rejects the imported-sign family at the first target.
 
-| rank | route | approximate `P+ / compute` | stop |
+| rank | route | marginal value / compute | earliest stop |
 |---:|---|---:|---|
-| 1 | same-action open-time OS boundary, then typed event composition | `0.23 / 1.15` | no unique gapped action boundary or no event-functional type |
-| 2 | normalized cyclic quasifree functional | `0.14 / 1.00` | supplied normalization/state |
-| 3 | covariant POVM/null semantics | `0.10 / 0.80` | supplied complement semantics |
-| 4 | action-derived support/filling | `0.10 / 1.40` | nonunique filling |
-| 5 | different pre-marginal algebra | `0.07 / 1.80` | no exact unital map to the PVM |
-| 6 | broader Nambu/open-time reconstruction | `0.07 / 2.50` | returns to failed type without new mechanism |
-| 7 | restricted causal process | `0.04 / 2.75` | no positive insertion/boundary supplier |
-| 8 | axiom update | `0.025 / >=3.5` | constructive families remain live |
+| 1 | fresh full-physical epsilon sign, odd/even algebra, and exact gluing discriminator | very high / low | neither sign is independently selected, or no declared algebra/gluing pair is positive |
+| 2 | even-observable normalized boundary followed by typed event composition | high / medium | no normalized state or no map to the Record effects |
+| 3 | normalized cyclic quasifree functional | medium-high / medium | supplied normalization or sector weight |
+| 4 | covariant POVM/null semantics | medium / low-medium | supplied complement semantics |
+| 5 | action-derived support/filling | medium / medium-high | nonunique filling |
+| 6 | different pre-marginal algebra | medium-low / high | no exact unital map to the PVM |
+| 7 | broader CAR/Nambu reconstruction | medium-low / high | returns to an unselected statistics or gluing type |
+| 8 | axiom update | low now / high | constructive physics suppliers remain live |
 
 The separately staffed gravity route remains the independent pincer.  PR
-`#7731` proves a matrix-response/support-cutoff result but explicitly supplies
+#7731 proves a matrix-response/support-cutoff result but explicitly supplies
 no gravity structure; its parity-resolved window-law follow-on is preserved
 without duplicating compute here.
 
+Portfolio verdict: the frozen-sign theorem is no longer productive to extend.
+The fresh sign/algebra/gluing discriminator is the highest marginal-value
+work on this thread because gravity is already staffed and this one cheap
+binary gate controls both the Born/history and causal-process routes.

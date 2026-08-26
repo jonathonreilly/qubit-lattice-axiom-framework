@@ -1,15 +1,19 @@
 # No-Go Ledger
 
-No negative is registered at freeze time.
+The narrow negative is registered: with the imported Block-192 global
+reflection sign, the literal open D1 s=0 full-field degree-one Berezin form
+has exact inertia (0,22,2) and a strictly negative diagonal.  The
+preregistered first gate stops Stage A.
 
-Live materially distinct routes remain: a different normalized cyclic
-functional, covariant null semantics, action-selected support/filling, a
-different event algebra, an all-field CAR/Nambu extension, and a restricted
-causal dilation.  The gravity pincer is independent.
+The source note lands N1--N8 and the primary stdout lands the five exact N5
+resolution lines.  The discipline verdict is:
 
-Therefore an empty/nonunique boundary or failed event composition can reject
-only the frozen family.  It cannot establish that action-derived probability,
-history, axioms, gravity, or the TOE are impossible.  Any shipped negative
-must land the current N1--N8 analysis and the five N5 resolution lines in the
-primary cache.
+- PASS for rejection of the frozen-sign full-field Block-202 family;
+- FAIL for any broad open-time, probability, history, axiom, gravity, or
+  TOE no-go.
 
+Live materially distinct routes include the opposite global sign with an
+independent gluing selector, a fermion-even observable algebra, a normalized
+cyclic functional, changed spin structure, covariant null semantics,
+action-selected support/filling, an all-field CAR/Nambu extension, and an
+action-derived process.  The gravity pincer remains independent.

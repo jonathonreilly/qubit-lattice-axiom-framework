@@ -1,9 +1,12 @@
 # Handoff
 
-Branch from Block 201 head `624207b338`.  Primary object is the literal
-contiguous `L12` physical-time half of the Block-192 action.  The parity-Schur
-`L12` cycle is a spectral control only.  Execute D1 complete fixed-set/type
-first, then exact finite-half plus winding-image L24 reassembly, then all six
-carriers.  Events remain sealed until a separately hashed Stage-A pass.
-Preserve zero TOE movement unless a named obligation is actually retired.  Do
-not use review-loop.
+Branch from Block 201 head 624207b338.  The literal open full-field D1 s=0
+form with the imported Block-192 reflection sign fails exactly with inertia
+(0,22,2).  Stage A stopped before Riccati promotion, circle return,
+all-carrier expansion, or events.  The opposite global sign is a disclosed
+positive first-target control, while even exterior degree is sign-blind.
+
+Package only this narrow stopped result.  The successor must be a fresh
+preregistered full-physical sign/algebra/gluing discriminator; it may not
+silently flip the sign on this packet.  Preserve zero TOE movement unless a
+named obligation is actually retired.  Do not use review-loop.

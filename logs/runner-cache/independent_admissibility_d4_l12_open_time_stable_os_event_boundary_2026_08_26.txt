@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/independent_admissibility_d4_l12_open_time_stable_os_event_boundary_2026_08_26.py
+runner_sha256: b3ef8968b940a447c0932a3c408188939228ab2a5de11843fe70b31c02673363
+input_fingerprint_sha256: 600bcd1b383e06859d7e7c4f4e1c3a6e85e84a0f1d818720050efcc01933cfa4
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.27
+status: ok
+----- stdout -----
+[PASS] P0: independent authority and preregistration ancestry bind
+[PASS] I0: two independent scalar components use the literal open half and positive-time embedding
+[PASS] I1: disjoint scalar-component calculation reproduces the exact frozen-sign D1 failure
+[PASS] I2: the opposite sign is positive at the first target and even exterior degree is sign-blind
+[PASS] I3: the result is family-scoped; opposite-sign, even-algebra, cyclic, Nambu, process, and gravity routes remain live
+[PASS] I4: all later Stage-A and Stage-B targets remain stopped and the protocol disclosure is present
+[PASS] S: no axiom edit, retained verdict, obligation retirement, or TOE movement is claimed
+INDEPENDENT_D1: scalar_component_inertias=((0, 11, 1), (0, 11, 1)); combined_inertia=(0, 22, 2); K00=-76765262637431915164800/106086560536529675051041
+INDEPENDENT_SCOPE: first-target frozen-sign rejection only; later targets sealed; obligation_retirement=0; toe_percentage_movement=0.
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

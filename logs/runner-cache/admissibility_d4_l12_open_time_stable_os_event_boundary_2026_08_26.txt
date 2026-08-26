@@ -1,0 +1,30 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_d4_l12_open_time_stable_os_event_boundary_2026_08_26.py
+runner_sha256: 7242286a8a451b9e39c80ee62960a683a2fbdf5be71b2aa0342548beb136e190
+input_fingerprint_sha256: 7aa46455928d49b4cc20ff12a74e09f650a26654bfa3db34aa454ac20579e00b
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.73
+status: ok
+----- stdout -----
+[PASS] P0: origin/main, parent, preregistration, and frozen target disclosures bind
+[PASS] T0: the literal open Block-192 action, contiguous cut, link orientation, and imported reflection are exact
+[PASS] T1: the earliest D1 s=0 full Berezin gate fails by an exact negative degree-one norm
+[PASS] T2: action covariance admits both global signs; the sign is load-bearing on odd fields and invisible on even exterior degree
+[PASS] T3: the stopped result rejects only the frozen-sign family and preserves materially distinct live routes
+[PASS] T4: post-stop exploratory calculations are disclosed and no later Stage-A target is promoted as evidence
+[PASS] S: Stage B, process, Records, Born, gravity, axioms, retention, obligation retirement, and TOE movement remain sealed
+D1_STOP: s=0; cut=t[-12..11]; positive_half=t[0..11]; reduced_half_inertia=(0, 22, 2); rank=2; K00=-76765262637431915164800/106086560536529675051041
+SIGN_DISCRIMINATOR: frozen_epsilon=-1 gives (0+,22null,2-); opposite_epsilon=+1 gives (2+,22null,0-); both obey action covariance; even exterior degree is unchanged.
+STAGE_A_CERTIFICATE: stopped at the first Berezin gate; Riccati, finite-circle re-gluing, winding, all-carrier expansion, and Stage B are not promoted.
+[SEALED] no Block-201 J, Block-194 effects, event values, prefix gluing, process map, Record/Born law, or gravity target loaded
+per_element: checked the frozen-sign D1 s=0 vacuum and degree-one finite-open reflected Berezin form; one exact negative generator norm stops the declared full field algebra.
+per_site: checked the literal t=-12..11 open chain, cut -1|0, Block-192 link orientation, and all twelve positive-half sites.
+per_mode: checked only the preregistered first D1 zero-radius target; the s=1 endpoint, remaining carriers, and all-radius alternative-sign route remain sealed.
+per_block: checked the full physical two-component Berezin form, not a scalar Schur proxy; Riccati, re-gluing, events, process, Records, and gravity stop downstream.
+lattice_wide: not executed — the result rejects only the frozen-sign Block-202 family and leaves opposite-sign, even-algebra, cyclic, Nambu, process, gravity, axiom, and TOE routes live.
+BOUNDED_SCOPE: exact rejection of the imported frozen-sign full-field Block-202 family only; minimal axioms unchanged; obligation_retirement=0; toe_percentage_movement=0.
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

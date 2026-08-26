@@ -1,6 +1,6 @@
 {
  "edge_count": 16109,
- "node_count": 5622,
+ "node_count": 5623,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -741,6 +741,10 @@
   "admissibility_dirac_kahler_torus_wrap_defect_bounded_theorem_note_2026-08-16": {
    "deps_hash": "baa2b2baa792",
    "out_degree": 4
+  },
+  "admissibility_dirac_kahler_transfer_package_mc_generality_bounded_theorem_note_2026-08-25": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_dirac_kahler_transfer_spectrum_selection_gap_bounded_theorem_note_2026-08-15": {
    "deps_hash": "0a55a158674e",

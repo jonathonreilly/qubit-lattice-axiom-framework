@@ -2206,3 +2206,193 @@ PROCESS LEDGER: corrections #16-#81 all shipped as content; the wake-path defect
 and handled; two drafter self-catches (the b197 census-set, the b194 margin) — the
 verification structure caught every defect that mattered, including six of the
 supervisor's own.
+
+## SCOUT MODE (Jon's directive 2026-08-26): "run the remaining queue in scout mode, then
+draft and land the actual passing science."
+
+PROTOCOL: per queue item — solve (Fable inline) → sol-xhigh check (pinned, tracked
+watcher) → anchor record. NO drafting, NO landing per item. After the queue: batch-draft
+and land the arcs that passed. Exceptions (full chain immediately): results that change a
+LANDED claim's standing; anything axiom-adjacent. THE QUEUE: (S1) second-carrier
+generality (spatial X = 8); (S2) heavy-sector reconstruction; (S3) width-independent
+proofs; (S4) positivity-window boundary in (m,c); (S5) bump systematics; (S6) 2D
+boundary; (S7) volume interval; (S8) G3 (R1-R3). Scouts S1 + S4 launched in parallel.
+
+**S1 DESIGN (second carrier):** Z_16 × Z_8 (X = 8), control (9/20, 5/13), wrap-edge
+convention, same cell Hodge: cov + empty cross + deep-core (t0=3, 16-dim) W charpoly —
+factorization, palindromic/positive per factor, scale count, [W, U] for U = x→x+2 and
+x→x+4. Headline: does the positive palindromic monodromy structure persist spatially?
+**S4 DESIGN (window boundary):** fix m = 9/20; bisect c between 5/13 (passing) and 3/4
+(the first failing census column) on deep-W positivity (T=16, X=4) — 6-8 builds → an
+exact rational bracket on the transfer-positivity edge along one line.
+
+**SCOUT S1 RESULT — PASS (spatial universality + spectral embedding).** Z_16 × Z_8 at the
+control fixture: dK² = 0, PsHPs = H, PsQPs = Qᵀ, cross EMPTY, K_c symmetric with 16/16
+positive minors (the OS core is 16-dim PD). THE SPECTRAL EMBEDDING: charpoly(W) =
+(22569375 z² − 233631106 z + 22569375)² (39529825 z² − 109432706 z + 39529825)² ×
+(1035991876210625 z⁴ − 10651994137075200 z³ + 31207521664211586 z² − ... palindromic)²
+— THE ENTIRE X=4 SPECTRUM EMBEDS VERBATIM (identical exact coefficients) plus ONE new
+doubly-degenerate palindromic quartic (the new momentum sectors); [W, U2] = [W, U4] = 0.
+READING: dispersion under spatial refinement — old momenta keep their energies exactly,
+new momenta interleave. Check pending (positivity of the new quartic + the embedding as
+a theorem). SCOUT VERDICT: strong pass — batch-land candidate.
+
+**SCOUT S4 RESULT — PASS (the transfer-positivity edge bracketed).** Along m = 9/20
+(T=16 deep core): positivity holds at c = 2363/3328 and fails at c = 365/512 — the edge
+is bracketed in (2363/3328, 365/512), width 19/6656 (c* ≈ 0.711), below the c = 3/4
+failing census column and far below the Hodge edge c = 1. Bisection path: 59/104 T,
+137/208 T, 293/416 T, 605/832 F, 1191/1664 F, 2363/3328 T, 365/512 F. Batch-phase
+refinement: the b187-style exact edge-root analysis (which minor/discriminant crosses).
+SCOUT VERDICT: pass — boundary-characterization block candidate (possibly combined with
+S1's spatial results or standalone).
+
+**SCOUT S3 DESIGN (width-independence):** T=24 extension — deep-core W at t0=3 vs the
+locked value (one 96×96 inverse); a match extends the empirical lock T ∈ {12,16,20,24};
+the ALL-T proof (resolvent/transfer-matrix argument in T) stays a derivation leg —
+scout measures the base, the batch phase decides whether to attempt the proof.
+
+**SCOUT S2 RESULT — PASS (the heavy-sector reconstruction completes via a metric
+operator).** Interior window T=16: T_h charpoly = (heavy)²; the metric equation
+Θ·T_h = T_hᵀ·Θ has a 6-dim symmetric solution space; a PD point EXISTS (exact rational Θ
+displayed in the task output, 4/4 positive minors) and Θ·T_h is SYMMETRIC with 4/4
+positive minors: the heavy evolution is a POSITIVE SELF-ADJOINT operator in the
+Θ-modified inner product. With b195: the FULL evolution is reconstructed — light in the
+OS metric, heavy in an exact modified metric. FENCE for the note: Θ is not the OS inner
+product; the physical-metric question is a reading/fork. SCOUT VERDICT: strong pass.
+
+**SCOUT S3 RESULT — PASS (T=24 lock).** The deep monodromy AND the t0=1 boundary
+charpoly reproduce the locked values EXACTLY at T=24 — the width lock spans
+T ∈ {12,16,20,24}. The all-T proof: batch-phase decision (derivation leg).
+
+**SCOUT SCOREBOARD:** S1 PASS, S2 PASS, S3 PASS, S4 PASS. Batched S1-S4 checker
+launching. S5 (bump systematics) + S7 (volume interval) opening; S6 (2D boundary) needs
+a feasibility probe (256-dim inverse — try T=8); S8 (G3) last.
+
+**SCOUT S5 RESULT — PASS (the response profile).** Per-cell first-order tr(dW) at the
+deep core t0=3 (window [3,5]): cell 1 → 0 EXACT, cell 2 → −3924317879963744/
+17744088856432749 (≈−0.221), cell 3 → ≈−1.928, cell 4 → ≈−13.901, cell 5 →
++38264746670503590368/3696685178423489375 (≈+10.351), cell 6 → 0 EXACT. The window law
+verified again at first order; NEW: the interior profile is strongly asymmetric with a
+SIGN FLIP between cells 4 and 5. Verdict: pass — a batch-block section (with S1/S4/S7),
+not standalone.
+
+**SCOUT S7 RESULT — PASS (no volume edge to 1/10).** Deep-core transfer positivity holds
+at v = 4/5, 3/5, 2/5, 1/5, 1/10 (m = 9/20, c = 5/13, T=16): the volume interval is at
+least (1/10, 1] on this line — recorded OPEN-BELOW. **S6/S8 DEFERRED WITH REASON:** "2D
+boundary" exists only as a queue label — it requires a genuinely new construction (3D
+cells → a new Hodge block; block-scale design, not a scout); "G3 (R1-R3)" predates this
+campaign's program (old generator-program context) — needs Jon's call whether still
+wanted. **SCOUT SWEEP COMPLETE: S1 S2 S3 S4 S5 S7 all PASS; S6 S8 deferred.** Checks:
+batch-1 (S1-S4) running; batch-2 (S5+S7) launching. THEN: the batch-draft phase — group
+the passing science into blocks (candidate grouping: b198 = the spatial embedding
+theorem (S1); b199 = the heavy metric-operator completion (S2); b200 = the boundary/
+robustness package (S4 edge bracket + S7 interval + S5 profile + S3 T=24 lock)) and land
+per the standard chain, stacked on #7738.
+
+**BATCH-2 CHECK VERDICT (S5 + S7) — CONFIRMED WITH TWO WORDING CORRECTIONS.** S5: all
+six values confirmed EXACTLY — as per-SLICE-cell sums (the "per-single-cell" wording
+refuted: individual (s,x) responses split by SPATIAL PARITY — fold as bonus structure);
+both endpoint zeros = the [3,5] window law; the s=4 → s=5 sign flip exact. S7: all five
+volumes confirmed; positivity ALSO holds at v = 1/100 AND v = 6/5 — the interval is
+wider than the scout's claim and includes the v = 1/10 endpoint (the "(1/10, 1]"
+notation corrected; record as [1/100, 6/5] confirmed-at-samples, edges unlocated).
+Awaiting batch-1 (S1-S4); then the batch-draft phase.
+
+**BATCH-1 CHECK VERDICT (S1-S4).** S1: structure/factorization CONFIRMED; the new
+quartic's POSITIVITY REFUTED — exact u-discriminant negative, all four new-sector roots
+NONREAL. THE HONEST S1 THEOREM: the X=4 spectrum embeds verbatim (exact) and stays
+positive; monodromy positivity does NOT extend to the new momentum sectors — a MOMENTUM
+positivity boundary (new open leg: does an X=8-native larger unit cell restore it?). S2:
+CONFIRMED AND STRENGTHENED — Θ·T_h is PD throughout the ENTIRE PD-symmetrizer cone
+(cone-robust, not point-wise). S3: exact. S4: the failure mode is a real negative
+reciprocal pair (palindromicity/multiplicities survive); bracket TIGHTENED to
+(37903/53248, 18961/26624).
+
+## BATCH-DRAFT PHASE (the passing science → blocks, stacked on #7738, parent chain from
+b197 tip de78bc55790ea4509af0cf9c4de1830e8284ac76):
+- b198 = THE SPATIAL EMBEDDING THEOREM + the momentum positivity boundary (S1 + its
+  refutation as content).
+- b199 = THE HEAVY METRIC-OPERATOR COMPLETION (S2, cone-robust; closes b195's heavy leg;
+  the physical-metric fork fenced).
+- b200 = THE ROBUSTNESS PACKAGE (S3 T=24 lock; S4 tightened bracket + failure mode; S5
+  profile + spatial-parity split; S7 wide volume interval [1/100, 6/5] sampled).
+Sequential drafting (shared mirror); corrections continue #82+.
+
+**STANDING ORDER (Jon, 2026-08-26): "land blocks 198-200 when the checks clear (and im
+good with the probe design)."** The scout checks (batch-1, batch-2) ALREADY CLEARED —
+all three blocks are check-cleared and land on drafter delivery, sequentially: b198
+(drafter running) → b199 → b200, stacked on #7738. Scout-mode process RATIFIED by Jon.
+
+## SCOUT ROUND 2 — THE NEXT RANKED QUEUE (Jon's directive: prep + fire in parallel with
+the b198-200 landings; layman's updates between rounds)
+
+R2-1 (HIGHEST LEVERAGE): the X=8 unit-cell question — does a larger native unit cell
+restore positivity in the new momentum sectors? (Decides whether transfer positivity is
+fundamental or an X=4 accident.) Probe: on Z_16 × Z_8, the spectrum of W² and of the
+four-step pairing L4-based monodromy on the new sectors; nonreal quartet squares real?
+R2-2: the physical-metric fork — is there a CANONICAL Θ? Probe: intersect the 6-dim
+symmetrizer family with symmetry-equivariance ([Θ, sector images of U, S², Y'-data]);
+1-dim intersection ⟹ canonical metric ⟹ the fork closes.
+R2-4: the exact positivity edge root — b187-style: which discriminant crosses zero in
+(37903/53248, 18961/26624); the edge as an exact algebraic number.
+DEFERRED to round 3: R2-3 (all-T proof attempt), R2-5 (breaking-direction proof), R2-6
+(spatial-parity split structure). PENDING JON: 2D-boundary construction design; G3.
+
+**SCOUT R2-1 RESULT — NEGATIVE, INFORMATIVE (the momentum boundary is robust).** The
+four-step pairing on Z_16 × Z_8 does NOT rescue the new sectors: its factorization keeps
+a nonreal palindromic quartic (u-disc ≤ 0) AND degrades further (a non-palindromic
+quartic and a non-palindromic quadratic appear). The larger-time-step hypothesis FAILS
+in this form; the new-sector nonreality survives. NEW OPEN LEG (design-level): an
+X=8-native reflection/pairing. VERDICT: the momentum positivity boundary is a robust
+feature, not a pairing artifact — strengthens b198's boundary claim (fold as content).
+
+**SCOUT R2-2 RESULT — PARTIAL (6 → 2, one cut left).** S-equivariance cuts the
+symmetrizer family from 6-dim to 2-DIM (not 1): no canonical metric from S alone; the
+first candidate in the 2-dim family is not PD (minors [1,1,−1,1]). ROUND 3: the Y′-cut
+on the 2-dim family + its PD-cone intersection — 1-dim ⟹ canonical.
+
+**SCOUT R2-4 RESULT — PASS (the edge mechanism identified).** At the tightened bracket:
+pass-side both quadratics have trace-sign −1 (positive reciprocal pairs); fail-side the
+FIRST (heavy-type) quadratic's LINEAR COEFFICIENT FLIPS SIGN (+538519... vs −8625331...)
+— the edge is EXACTLY the zero-crossing of the heavy pair's trace b₁(c): roots pass from
+positive reciprocal through unimodular (±i at b₁ = 0) to negative reciprocal. The exact
+edge = the root of b₁(c) in (37903/53248, 18961/26624) — b187-style extraction is the
+block-phase refinement. ROUND-2 SCOREBOARD: R2-1 negative-informative, R2-2 partial,
+R2-4 pass. Round-2 batch check next; round 3: R2-2b (Y′-cut), R2-4b (b₁(c) extraction),
+R2-5 (breaking direction), R2-3 (all-T attempt), R2-6 (parity split).
+
+**ROUND 3 ADDITION (Jon, 2026-08-26): THE GLEASON-ON-H SCOUT (R3-G) — bearing on the
+AXIOM_MEMO_20260822 decision (Jon's recommendation-accepted deferral trigger).** The
+memo's Gleason door was closed at block 172 scope ("inert at level scope" — the S-DIAG
+exact diagonality = effectively classical lattice). The reconstruction (b195 + S2 + the
+canonical-metric leg) built what did not exist then: the 8-dim physical H with
+self-adjoint evolution and (pending R2-2b) a symmetry-preferred metric. R3-G DESIGN,
+phase A (structural preconditions): map the RECORD-COMPATIBLE CLASS projections (from
+the landed block-171/173 record structure — read the RECORD_BORN_FREQUENCY_BOUNDARY and
+b171-173 primaries for the class definitions) into H via the quotient; measure pairwise
+COMMUTATORS of the projected class operators on H. All-commuting ⟹ the door stays
+closed (classical lattice — the memo's receipts extend; ADOPT with clear conscience).
+Nonzero commutators ⟹ the door is STRUCTURALLY OPEN (genuine quantum lattice, sectors
+dim ≥ 3 available) ⟹ phase B (the frame-function/additivity derivation attempt) becomes
+the highest-leverage solve in the program. Launch AFTER the round-2 checker returns
+(R2-2b's canonical-metric verdict feeds the inner-product choice). ROUND-3 QUEUE: R3-G
+(Gleason preconditions), R2-2b fold, R2-4b (b1(c) exact root), R2-5 (breaking
+direction), R2-3 (all-T attempt), R2-6 (parity split), the memo's joint-weight fork
+(one-shot vs per-slot — measurable on the two-history machinery).
+
+**ROUND-2 CHECK VERDICT (scout_r2_findings.md).** R2-1 CONFIRMED: W4 degrades
+palindromicity AND the new quartet stays nonreal under W² — the momentum boundary is
+ROBUST (fold into b198 as strengthened content). R2-2: 6 → 2 → 2 — the Y′-cut is
+VACUOUS (Y′ acts as identity on the heavy sector by construction); the PD cone is
+nonempty and OPEN: NO canonical ray from symmetry cuts — the physical-metric fork STAYS
+OPEN (canonicalization needs a new principle: V-compatibility or beyond-commutant
+symmetry — named open leg). R2-4: bracket tightened ×5 to (1213333/1703936,
+151669/212992); the failing side fails ONLY through the heavy coefficient's sign — BUT
+my zero-crossing mechanism is REFUTED: the sign flips through a DENOMINATOR POLE, not a
+root. Corrected mechanism: the heavy factor's LEADING coefficient vanishes at the edge —
+an eigenvalue pair degenerates toward 0/∞ (escape to infinity), NOT a unimodular
+crossing. ROUND 2 CLOSED: 1 confirmed-negative (robust boundary), 1 dead end (no
+canonical metric via symmetry), 1 pass-with-corrected-mechanism (the pole edge). ROUND 3
+NEXT: R3-G Gleason phase A (record-class projections into H — read the b171/173
+primaries for class definitions first), R2-4b (the pole/leading-coefficient locus
+exact), R2-5, R2-3, R2-6, the joints fork.

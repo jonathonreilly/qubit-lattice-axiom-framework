@@ -1,6 +1,6 @@
 {
  "edge_count": 16109,
- "node_count": 5626,
+ "node_count": 5627,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -729,6 +729,10 @@
   "admissibility_dirac_kahler_spatial_dressing_invisibility_bounded_theorem_note_2026-08-17": {
    "deps_hash": "4f42ef355ca6",
    "out_degree": 4
+  },
+  "admissibility_dirac_kahler_spatial_embedding_momentum_boundary_bounded_theorem_note_2026-08-26": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_dirac_kahler_staggered_hermitian_pairing_bounded_theorem_note_2026-08-19": {
    "deps_hash": "2ea7b3c53db9",

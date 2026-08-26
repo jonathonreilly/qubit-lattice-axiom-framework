@@ -20,5 +20,9 @@ stage 7 and then encounters the parent branch's pre-existing
 `dependency_policy_epoch.json` / `build_citation_graph.py` hash mismatch;
 Block 207 changes neither controlled surface.
 
+Delivered as draft PR #7746 on the Block-206 parent branch.  GitHub reported
+mergeability as `unknown` immediately after opening while background
+computation was pending; no conflict verdict was reported.
+
 Audit ledgers, verdicts, governance sources, gravity files, and minimal axioms
 are outside the result surface.  `review-loop` is forbidden for this campaign.

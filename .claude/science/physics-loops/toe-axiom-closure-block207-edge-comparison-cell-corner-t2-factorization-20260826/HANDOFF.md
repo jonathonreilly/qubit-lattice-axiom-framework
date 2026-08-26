@@ -1,7 +1,10 @@
 # Handoff
 
-Block 207 is stacked atop clean draft PR #7743 and classifies as
-**operator-factorization support**.
+Block 207 is delivered as draft PR
+[#7746](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7746),
+stacked atop clean draft PR #7743, and classifies as
+**operator-factorization support**.  The coherent result commit is
+`04b1c5d132f7ad46d6818854f8b733391ebdb6d2`.
 
 The fixed H1 source factors exactly through the parent action's oriented
 incoming/outgoing differences and endpoint averages.  Forward and actual

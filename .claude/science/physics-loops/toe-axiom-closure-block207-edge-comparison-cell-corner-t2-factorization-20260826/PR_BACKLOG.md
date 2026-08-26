@@ -1,7 +1,8 @@
 # PR Backlog
 
 - Parent: draft PR #7743, Block 206, open and mergeable at registration.
-- Block 207 will stack directly on the Block-206 branch.
+- Block 207 is draft PR #7746, stacked directly on the Block-206 branch at
+  result commit `04b1c5d132f7ad46d6818854f8b733391ebdb6d2`.
 - Latest PR #7744 is the separate gravity Block-200 transfer robustness
   package.  It is clean and reports transfer/evolution progress but no gravity
   closure; it does not supply the clock/`M2` map required here.

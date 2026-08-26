@@ -45,4 +45,9 @@
   two-time Clifford/Schur blocks into positive `M2` states/effects and a CP
   instrument, excluding the global environment inverse; the dissent prefers
   the strict-neighbor relay first.
+- 2026-08-26: coherent result commit
+  `04b1c5d132f7ad46d6818854f8b733391ebdb6d2` pushed and draft PR #7746 opened
+  on the exact Block-206 branch.  GitHub's mergeability computation was still
+  pending (`unknown`) immediately after opening; the PR was open, draft, and
+  had the intended head/base and title.
 - No review-loop or audit verdict was used.

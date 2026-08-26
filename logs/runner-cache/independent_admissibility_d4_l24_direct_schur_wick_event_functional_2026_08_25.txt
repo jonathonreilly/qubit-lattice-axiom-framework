@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/independent_admissibility_d4_l24_direct_schur_wick_event_functional_2026_08_25.py
+runner_sha256: 61b85b49a5c47a171ed0f4b87d5fc191490525c5f327eff26e45cc7b361be315
+input_fingerprint_sha256: fbf83c814d219ce8dab6fee50a16a7f8796f9af5bd49750e7e9c6589afc01d21
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 9.74
+status: ok
+----- stdout -----
+[PASS] P0: f80e9673ad/c7e0a0b578, frozen packet, contamination firewall, and no-import source bind
+[PASS] T0.1: six ordered incoming/outgoing carriers cover exactly the nine frozen radii
+[PASS] T0.2: all nonempty subsets of (0,2,4) pass direct/covariance Schur, nesting, determinant, and internal-factor gates
+[PASS] T1.1: two independent form-coordinate builds agree and derive the unique detector ray
+[PASS] T1.2: the independently rebuilt eight effects form the exact rank-four C32 PVM
+[PASS] T1.3: the full intertwiner family is U(1)xU(1), with one determinant-weight orbit and one map per cylinder
+[PASS] T1.4: fiber/coordinate reflections and all 24 co-transformed cubic contexts retain their distinct typing
+[PASS] T2.1: rank-four factors reduce every registered word-dependent determinant to order at most 12
+[PASS] T2.2: compressed and direct D1 determinants agree with frozen Berezin order and doubled branchwise conjugation
+[PASS] T3.1: all eight raw D1 one-shot amplitudes and weights are exact, real/nonnegative, and evaluated without repair
+[PASS] STOP: gluing and T4--T6 open only if the raw one-shot table is exactly 1/8 and normalized
+INTERTWINER: solution_dim=2; gauge=U(1)xU(1); weight_orbits=1; representative_not_selected
+D1_ONE_SHOT_CERTIFICATE: m=2/7; q_in=741677674140/204224113601; q_out=526761374589720/379709769775249; k=33932804839722331038716666051823005646223163/79731296048701227921248838460600348634347343
+D1_ONE_SHOT_FORMULA: Rdet=((1+m*q_in)/(m*q_in))^16*(((1+m*q_out)^2+q_out^2)/(q_out^2*(m^2+1)))^8; A=Rdet*((1-k)^4-1)
+D1_ONE_SHOT_OUTCOME: amplitudes=(A,)*8; weights=(A^2,)*8; raw_sum=8*A^2; A^2_eq_1/8=False; raw_sum_eq_1=False; unique_amplitudes=1
+[SEALED] GLUING/T4-T6: raw one-shot gate failed; no prefactor or post-normalization attempted
+VERDICT: exact determinant family fails its raw D1 one-shot normalization gate; no broader direct-functional no-go
+per_element: checked two CAR builds, eight Majoranas, the detector classifier, all eight PVM effects, and rank-four factors.
+per_site: checked every nonempty subset of coarse sites (0,2,4) and the raw D1 one-crossing determinant.
+per_mode: checked six ordered carriers covering all nine radii; no standalone C16 radius was silently doubled.
+per_block: checked authority, Schur carriers, PVM, intertwiner/gauge, compressed determinants, and raw one-shot typing separately.
+lattice_wide: checked and not executed — gluing, 729-word D1, other five cylinders, causal process, response, axioms, and TOE remain sealed.
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

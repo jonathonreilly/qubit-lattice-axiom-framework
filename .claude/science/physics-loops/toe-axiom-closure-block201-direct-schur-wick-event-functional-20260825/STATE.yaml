@@ -1,7 +1,7 @@
 loop_id: toe-axiom-closure-block201-direct-schur-wick-event-functional-20260825
 block: 201
-status: preregistration_ready
-phase: pre_target_execution
+status: evidence_complete
+phase: result_packaging
 branch: physics-loop/toe-axiom-closure-block201-direct-schur-wick-event-functional-20260825
 parent_commit: c7e0a0b57810e97bf563a65ded273ce9a6da0b2f
 origin_main: b11811704efa98a12272d572f666e530a807f6c1
@@ -18,8 +18,14 @@ review_loop_allowed: false
 obligation_retirement: 0
 toe_percentage_movement: 0
 prepacket_bare_identity_float_pilot: disclosed_and_discarded
-target_values_observed: none_exact
-preregistration_commit: pending
+target_values_observed: exact_D1_one_shot_failed_raw_normalization
+intertwiner_result: derived_U1_squared_one_weight_orbit
+d1_gluing_status: sealed_by_one_shot_failure
+primary_checks: 6_of_6
+primary_mutations: 31_of_31
+independent_checks: 11_of_11
+independent_mutations: 17_of_17
+preregistration_commit: f80e9673ad836e14e1478318198d063190f24294
 result_commit: pending
 lock_owner: physics-loop-block201-direct-schur-wick-event-functional
 lock_holder_id: 019fcac5-093c-70a1-ae3e-7f2ef1b002ef

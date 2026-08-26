@@ -16,3 +16,13 @@ roughly one to three minutes for a full D1 census after a pass, and ten to
 thirty minutes for six exact carriers.  These are planning estimates, not
 runner results.  No panel seat executed a target value or recommended an
 axiom/TOE update.
+
+## Post-result return
+
+After exact raw normalization fails, a fresh five-role panel votes `4-1` for
+the L12 open-cut positive fixed-point/event-boundary bridge as Block 202.  The
+next gate must derive a nonempty unique positive fixed ray from the L24 action,
+prove exact two-half re-gluing, and only then compose it with the successful
+Block-201 intertwiner and Block-194 effects.  The failed determinant amplitude
+is a forbidden input.  A new normalized quasifree functional and POVM/null
+semantics rank second and third.  No axiom update is eligible.

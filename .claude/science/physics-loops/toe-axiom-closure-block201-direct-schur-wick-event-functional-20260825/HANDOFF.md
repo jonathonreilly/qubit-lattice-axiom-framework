@@ -1,10 +1,11 @@
 # Handoff
 
-Finish hostile review of the typed `J_(P,t)` equations, then commit and push this
-packet before exact target execution.  Implement P0--T3 only.  If T1 cannot
-derive a physical, gauge-independent action/event map, stop.  If exact D1
-`Delta_00^02`, raw one-shot `1/8`, or raw normalization fails, stop without
-renormalizing or trying POVM/null in the same result.
+The packet froze at `f80e9673ad`.  Primary and no-import runners derive one
+physical `U(1)^2` intertwiner gauge orbit, then independently find that every
+raw D1 one-shot weight differs from `1/8` and the sum differs from one.
+The preregistered stop was honored without evaluating `Delta_00^02`,
+renormalizing, or trying POVM/null in the same result.
 
-Only after both gates pass may the campaign open the 729-value D1 census.  The
-causal boundary is a separate dependency and the next portfolio pivot.
+Do not open the 729-value D1 census, other probability cylinders, or selector.
+Finish audit-compatible packaging, then pivot to the separately typed L12
+causal boundary selected by the fresh portfolio recheck.

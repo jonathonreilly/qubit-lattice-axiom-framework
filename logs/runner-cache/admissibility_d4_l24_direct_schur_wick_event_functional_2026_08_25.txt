@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_d4_l24_direct_schur_wick_event_functional_2026_08_25.py
+runner_sha256: 9ca95ac6141456a402dfc6957260cd72cbd75f4782f60faa15fb14c3fa399aff
+input_fingerprint_sha256: 86140b11fe87be8b6301cdd09e042c7e990135f181ba1bb44589690b4a8ac121
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 9.07
+status: ok
+----- stdout -----
+[PASS] P0: parent/main authority and frozen preregistration/disclosure blobs bind
+[PASS] T0: all seven Schur restrictions on six typed carriers reconstruct exactly
+[PASS] T1: the labeled intertwiner is derived as one U(1)^2 gauge orbit with exact weight invariance
+[PASS] T2: rank-four determinant lemma, unit typing, and identity/dephasing separation pass
+[PASS] T3: the exact raw D1 one-shot kill gate executes and its preregistered stop is honored
+[PASS] S: T4-T7, alternate routes, axioms, obligation retirement, and TOE movement remain sealed
+CARRIERS: fixtures=6; boundaries=7; radii=9; sites=(0,2,4); pairs={'D1': (0, 1), 'D2': (0, 2), 'D3': (0, 3), 'H1': (1, 5/4), 'H2': (3/2, sqrt(3)/4 + 7/4), 'X1': (3/4, sqrt(3)/4 + 5/2)}
+INTERTWINER: basis=sector-major/form-bitmask; common_CAR_commutant_dim=1; full_linear_dim=2; isometric_gauge=U(1)^2; weight_orbits=1; crossing_dependent_phases=rejected
+D1_ONE_SHOT: labels=(0, 1, 2, 3, 4, 5, 6, 7); amplitude=-397057821388476763185195891442395249257078436444087984809836687566566563840050849647266598466270625713533761064056647307548182501068985607888603636627975935117954129061303984342653446982215785550975402431313254676023846982044788663353698475001064197807156278993628303195366426831296563917183339265105791737073513557189790838581024525882906036383349509472046279698077946413023227143006066426916169897634076977444937443505939856255166534452720109532059/63270219555459197323100187647803987052156730384784430421550103162941535898462076233901120801713999612809163369718150479244703352556860717802483333296864995503964745778194203949963194925430371421092311245610180742914064821237891482901404250218173737346539993240033700404612795247430773060191883986857211550274144992431328567741044021986140002025474078956226407892181849484824938629278092596014227154343045785190400000000000000000000000000000000; weight=39383002918494.2757 [exact expression chars=1787]
+D1_RAW_SUM: 315064023347954.206 [exact expression chars=1786]; one_shot_target=fail; gluing=sealed_by_one_shot_failure
+[SEALED] D1_DELTA_00_024_TO_02: one-shot normalization failed first
+[SEALED] T4-T6: no 729-word census, remaining carriers, or selector
+per_element: checked all eight rank-four effects and all eight exact raw D1 one-crossing amplitudes and weights.
+per_site: checked direct and covariance Schur restrictions at each registered coarse site 0, 2, and 4.
+per_mode: checked all nine squared radii through the six physical incoming/outgoing carrier pairs.
+per_block: checked the typed C32 carrier, full intertwiner gauge orbit, determinant engine, and first normalization stop.
+lattice_wide: checked and not executed — D1 raw normalization failed before gluing, the 729-word census, or other carriers.
+BOUNDED_SCOPE: a failure rejects only the frozen typed determinant functional; POVM/null, support, Nambu, OS/GNS, causal-boundary, response, gravity, axiom, and TOE routes remain open.
+TOTAL: PASS=6 FAIL=0
+
+----- stderr -----
+

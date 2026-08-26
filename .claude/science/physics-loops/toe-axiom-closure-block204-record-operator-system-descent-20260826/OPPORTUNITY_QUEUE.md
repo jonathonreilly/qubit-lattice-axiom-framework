@@ -1,15 +1,17 @@
 # Opportunity Queue
 
-1. ACTIVE — classify the carrier categories and canonical PVM lifts before
-   computing event weights.
-2. NEXT — if a unique periodic descent survives, test all eight atoms and
-   coarse events exactly.
-3. INDEPENDENT CONTROL — reconstruct the OS two-sector marginal for arbitrary
-   relative sector weight and identify the remaining possibility-space bridge.
-4. If periodic descent stops but the OS control succeeds, test whether the
-   fixed grade-three PVM is selected by physical apparatus/context or merely
-   stipulated.
-5. If both routes stop, compare AP rebuild versus open/infinite-time process;
-   do not extend the failed full/even-CAR route.
-6. Periodically inspect the independently staffed gravity PRs and do not
-   modify their branches.
+1. COMPLETE — typed carriers, strict lifts, three positive full-Fock maps, and
+   the exact logical-`C4` PVM fiber.
+2. NEXT/HIGHEST — construct or prove absent the physical `C32` action or
+   monodromy `Q_R`; compute `Hom(Q_203,Q_R)` before imposing isometry.
+3. NEXT — solve the reflection/cubic-covariant Kraus tuple and evaluate all
+   eight periodic atoms only if a same-action intertwiner survives.
+4. CHEAP PARALLEL BOUNDARY — decide whether multiplicity splitting is a
+   physically equivalent refinement; this condition selects number-share
+   inside the tested ratio ansatz.
+5. CONTROL — derive the source/neighbor-selected coherent two-sector state;
+   the block-diagonal family is uniform, while coherence biases the signs.
+6. DOWNSTREAM — connect the fixed PVM to local `M2` possibilities and
+   `eta -> rho_eta`; only after that pursue formation/history.
+7. Keep AP/open/process routes live and periodically inspect the independently
+   staffed gravity PRs without modifying them.

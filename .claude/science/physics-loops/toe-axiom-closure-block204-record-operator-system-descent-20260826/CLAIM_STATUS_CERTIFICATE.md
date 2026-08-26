@@ -1,8 +1,9 @@
 # Claim Status Certificate
 
-Current status: preregistered; no evidentiary target executed.
+Current status: proposed bounded theorem; exact execution complete.
 
-- Claim class: unset pending exact execution.
+- Claim class: `bounded_theorem` with positive survivors and sharply named
+  missing objects.
 - Audit status: unset; only the independent audit lane may change it.
 - Retained status: not claimed.
 - Axiom implication: none.
@@ -10,6 +11,8 @@ Current status: preregistered; no evidentiary target executed.
 - TOE percentage movement: zero.
 - History, formation/permanence, gravity, and end-to-end claims: sealed.
 
-Any negative or named-wall result requires the complete N1--N8 disposition.
-Any positive result must distinguish a periodic-functional descent from the
-separate positive OS boundary-state control.
+Primary and independent runners pass `8/8`; mutation sweeps reject `31/31`
+and `25/25`.  The source note contains the complete N1--N8 disposition.  It
+distinguishes strict-projective failure, three positive full-Fock POVMs, the
+exact logical-`C4` PVM fiber, the absent same-action `C32` state/intertwiner,
+and the block-diagonal versus coherent right-Schur controls.

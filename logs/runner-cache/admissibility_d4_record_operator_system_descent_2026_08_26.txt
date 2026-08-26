@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_d4_record_operator_system_descent_2026_08_26.py
+runner_sha256: c4c5db7e32f3b9e30e654fab32323947b260749534cf1f0e6a5066723909d177
+input_fingerprint_sha256: b8363948e537c32878918311866437099f19c2315a841c4866dc12047f9b12a3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 26.75
+status: ok
+----- stdout -----
+[A] PASS: current authority and immutable pre-target registration are pinned
+[B] PASS: the distinct C32 PVM has an exact C8-syndrome x C4-logical Clifford factorization, but no supplied action-selected identification with Block 203's C4
+[C] PASS: functorial exterior lifts share the vacuum and miss mixed-port occupations, so they are not the original eight-outcome PVM
+[D] PASS: the PVM is restored exactly only on N=1; on the full Fock carrier other natural occupancy lifts overlap or are incomplete
+[E] PASS: three inequivalent full-Lambda(C32) positive unital port-covariant extensions exist; only number-share passes multiplicity-splitting in the ratio ansatz, and that physical refinement rule is not supplied
+[F] PASS: the per-copy periodic functional cannot be postselected to N=1; a scalar full-C32 quasifree control proves operator nonuniqueness alone need not produce probability nonuniqueness
+[G] PASS: the positive right-Schur block-diagonal control gives 1/8 for every classical sector weight, while an exact coherent extension gives (1+/-epsilon)/8 and leaves the context bridge open
+[H] PASS: strict projective lifts stop, but logical-fiber/Naimark and positive full-carrier routes survive; no supplied C32 action state or intertwiner means underdetermination, not a descent no-go
+CARRIERS: per_copy_CAR=C4; full_one_sector_CAR=C65536; event=C32; Fock(event)=C4294967296.
+LOGICAL_FIBER: C32=C8_syndrome x C4_logical; four exact commuting logical Majoranas generate M4 on every rank-4 fiber; Pauli-centralizer size=128; Block203-C4 action intertwiner=not supplied.
+EXTERIOR_LIFT: Gamma(F_i)_rank=16; cross_rank=1 (shared vacuum); single-port span=121 of 4294967296; N=1 restores ranks (4x8) and sector unit only.
+OPERATOR_SYSTEM: three full-Fock POVMs pass positivity, unit, faithfulness, N=1 extension, and port covariance; at occupation (2, 1, 0, 0, 0, 0, 0, 0) their values are ((Fraction(1, 8), Fraction(1, 8), Fraction(1, 8), Fraction(1, 8), Fraction(1, 8), Fraction(1, 8), Fraction(1, 8), Fraction(1, 8)), (Fraction(2, 3), Fraction(1, 3), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)), (Fraction(1, 2), Fraction(1, 2), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1))).
+REFINEMENT_CONTROL: complement/number/support split consistency=(False, True, False); number-share is unique inside the additive ratio ansatz, but physical multiplicity-splitting is not supplied.
+PERIODIC_STOP: no full-C32 periodic Q_R/state or action-selected Kraus intertwiner is supplied; vacuum and pair weights are nonzero; omega(P_N1)=-191581231380566414401*(-2 + sqrt(53))**24/(1566638013008814595200*(-1483355348280 + 204224113601*sqrt(53))**2)<0; eight periodic Record values are therefore sealed.
+SCALAR_Q_CONTROL: if Q_R=-r I32 were licensed, exchangeability would force every covariant unital map to expectation 1/8; operator nonuniqueness alone does not imply probability nonuniqueness.
+OS_BLOCK_DIAGONAL_CONTROL: rho_w=diag(w I16/16,(1-w) I16/16), weights=(1/8, 1/8, 1/8, 1/8, 1/8, 1/8, 1/8, 1/8), sum=1; valid for 0<=w<=1 without choosing w.
+OS_COHERENCE_CONTROL: rho_e=(I32+e S_J)/32 has unchanged diagonal blocks and weights=((coherence + 1)/8, -(coherence - 1)/8, (coherence + 1)/8, -(coherence - 1)/8, (coherence + 1)/8, -(coherence - 1)/8, (coherence + 1)/8, -(coherence - 1)/8) for -1<=e<=1.
+RESULT: strict_projective_lifts=0 in tested families; positive_full_carrier_extensions>=3 and nonunique; logical_C4_fiber=exact but action identification=open; zero-source block-diagonal OS candidate=positive; physical local-possibility partition bridge=open; obligation_retirement=0; TOE movement=0.
+per_element: checked all eight fixed C32 projector ranks, pair products, three full-Fock POVM extensions, symbolic OS weights, and finite coarse events.
+per_site: checked and not executed — no Z3 site embedding, nearest-neighbor apparatus, or physical local-possibility partition is supplied.
+per_mode: checked the D1 zero-radius two-mode periodic CAR vacuum, one-particle, and pair sectors; other momentum/radius sectors remain sealed.
+per_block: checked the full eight-port C32 PVM and exact 32-mode occupation generating functions without constructing the dense 2^32 carrier.
+lattice_wide: checked and not executed — no all-site process, formation schedule, permanent history, gravity completion, axiom edit, or TOE closure is claimed.
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

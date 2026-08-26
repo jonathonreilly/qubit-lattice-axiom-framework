@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/independent_admissibility_d4_record_operator_system_descent_2026_08_26.py
+runner_sha256: 4eae234011f3fbabbeaa2d797ff92bb129c4e9617ef52836656ab6ef7e44a825
+input_fingerprint_sha256: f1702a18a747d2d281cbdfeb56399ca926e5671fd45da704a7af27b6e75c5910
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 15.43
+status: ok
+----- stdout -----
+[I1] PASS: registration authority is independently pinned
+[I2] PASS: the rebuilt PVM is a C8 syndrome measurement with an exact C4 logical Clifford fiber, but no action-selected identification
+[I3] PASS: generating functions expose the shared vacuum and 448 mixed-port two-particle states
+[I4] PASS: N=1 restores the PVM only as a sector unit; at-least-one-port events overlap
+[I5] PASS: three exhaustive positive extensions differ on multi-port occupation; only number-share passes additive multiplicity splitting, whose physical use is not supplied
+[I6] PASS: the periodic per-copy functional has signed sectors; a scalar C32 control proves distinct covariant maps can still all give 1/8
+[I7] PASS: the block-diagonal Schur control gives 1/8 for all classical sector weights, while coherent extensions bias the signs and remain unselected
+[I8] PASS: projective lifts stop but logical-fiber/Naimark and positive operator-system routes survive without a supplied action intertwiner, retiring no obligation
+INDEPENDENT_FOCK: dim=2^32; Gamma rank=16; cross=vacuum; mixed_N2=448; single_port_span=121.
+INDEPENDENT_FIBER: C32=C8_syndrome x C4_logical; logical_span=16; action_intertwiner=absent.
+INDEPENDENT_EXTENSIONS: three positive unital full-Fock maps; at (2, 1, 0, 0, 0, 0, 0, 0) values=((Fraction(1, 8), Fraction(1, 8), Fraction(1, 8), Fraction(1, 8), Fraction(1, 8), Fraction(1, 8), Fraction(1, 8), Fraction(1, 8)), (Fraction(2, 3), Fraction(1, 3), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)), (Fraction(1, 2), Fraction(1, 2), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1))).
+INDEPENDENT_REFINEMENT: complement/number/support split=(False, True, False); ratio-additive nullity=1; physical rule=open.
+INDEPENDENT_SCALAR_CONTROL: Q_R=-rI32 would force every covariant unital map to value 1/8; actual lift=absent.
+INDEPENDENT_OS: block-diagonal values=(1/8, 1/8, 1/8, 1/8, 1/8, 1/8, 1/8, 1/8); coherent values=((coherence + 1)/8, -(coherence - 1)/8, (coherence + 1)/8, -(coherence - 1)/8, (coherence + 1)/8, -(coherence - 1)/8, (coherence + 1)/8, -(coherence - 1)/8).
+INDEPENDENT_STOP: strict projective lifts fail in tested families; logical-fiber and positive operator-system routes survive; no C32 action state/intertwiner or physical context is supplied.
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

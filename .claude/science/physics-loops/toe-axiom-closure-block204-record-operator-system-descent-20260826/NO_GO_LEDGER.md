@@ -1,14 +1,16 @@
 # No-Go Ledger
 
-No Block-204 negative result is registered yet.
+Block 204 registers only the narrow failure of the tested strict projective
+full-Fock lifts.  It does not register a canonical-descent no-go.
 
-If the canonical periodic descent stops, the claim must remain bounded to the
-executed carrier/functor routes.  The full N1--N8 discipline record is
-mandatory before packaging, including exact alternative-route enumeration,
-wall-independence, hidden-condition scan, residual matching, rhetoric audit,
-partial-closure scan, strongest steelman, and cross-cycle echo.
+The source note executes N1--N8.  Its decisive correction is the cross-cycle
+echo: Block 200 had already constructed a positive full-complement POVM.  The
+initial zero-descent draft omitted it and was retracted before commit.  The
+corrected runners construct three positive maps and an exact
+`C8_syndrome tensor C4_logical` factorization.
 
-AP, open/infinite-time, an action-derived constraint, a different physical
-Record instrument, a normalized process tensor, and the independent gravity
-route remain live unless separately tested.  No result in this packet can
-establish a broad probability, Born, Record, axiom, gravity, or TOE no-go.
+The named live objects are a full same-action `C32` covariance/state, an
+action-selected Kraus intertwiner, physical multiplicity-refinement semantics,
+sector coherence, and the local `M2` possibility/PVM context bridge.  AP,
+open/infinite-time, a process tensor, and the independent gravity route remain
+live.  No broad probability, Born, Record, axiom, gravity, or TOE no-go passes.

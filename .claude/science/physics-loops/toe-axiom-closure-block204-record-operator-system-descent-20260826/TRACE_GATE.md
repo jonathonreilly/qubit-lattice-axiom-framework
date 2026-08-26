@@ -18,3 +18,13 @@ end in `TOTAL: PASS=<n> FAIL=0`, and report exactly:
 
 Floating approximations, dense-Fock brute force, maximally mixed imports,
 postselection, or an arbitrary positive map do not pass.
+
+Execution result:
+
+- primary stdout: 4466 bytes, `TOTAL: PASS=8 FAIL=0`;
+- independent stdout: 2382 bytes, `TOTAL: PASS=8 FAIL=0`;
+- required `per_element:`, `per_site:`, `per_mode:`, `per_block:`, and
+  `lattice_wide:` lines are present in the primary cache;
+- periodic values are explicitly sealed by the absent full-`C32` state and
+  action intertwiner; and
+- primary/independent mutation sweeps reject `31/31` and `25/25` corruptions.

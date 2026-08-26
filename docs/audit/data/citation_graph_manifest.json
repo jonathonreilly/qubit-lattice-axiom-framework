@@ -1,6 +1,6 @@
 {
- "edge_count": 16198,
- "node_count": 5632,
+ "edge_count": 16203,
+ "node_count": 5633,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -473,6 +473,10 @@
   "admissibility_d4_l24_reflection_algebra_exact_gluing_trace_discriminator_boundary_bounded_theorem_note_2026-08-26": {
    "deps_hash": "5ed145824a40",
    "out_degree": 4
+  },
+  "admissibility_d4_record_operator_system_descent_os_probability_control_boundary_bounded_theorem_note_2026-08-26": {
+   "deps_hash": "0ccf66388937",
+   "out_degree": 5
   },
   "admissibility_dirac_kahler_adm_seam_two_history_gram_bounded_theorem_note_2026-08-15": {
    "deps_hash": "5d167fe1c690",

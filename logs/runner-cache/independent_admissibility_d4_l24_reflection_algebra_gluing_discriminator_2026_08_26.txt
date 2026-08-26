@@ -1,0 +1,24 @@
+===== runner cache v1 =====
+runner: scripts/independent_admissibility_d4_l24_reflection_algebra_gluing_discriminator_2026_08_26.py
+runner_sha256: 618d0b631b9a6d8ffdb06c78fa4f40d7a5268969fa3e0eb2a01a29f184e123f7
+input_fingerprint_sha256: 52ba78812f39c0c0b348b521e2c981a212e43a4453c680a598653eee00851c5d
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.69
+status: ok
+----- stdout -----
+[PASS] I0: parent and frozen preregistration independently bind
+[PASS] I1: direct determinants match the independent recurrence trace identities
+[PASS] I2: full two-component determinants and both seam blocks re-glue exactly
+[PASS] I3: periodic minus and AP plus select graded and ordinary CAR traces
+[PASS] I4: the even odd-sector projector has an exact negative graded value
+[PASS] I5: neither reflection sign can repair the periodic trace/state mismatch
+[PASS] I6: the AP ordinary-trace control remains positive and outside the bounded stop
+[PASS] I7: events, histories, Records/Born, gravity, axioms, retention, and TOE movement remain sealed
+INDEPENDENT_TRACE: periodic=-2^-24 det(I-T24)->graded; AP=2^-24 det(I+T24)->ordinary.
+INDEPENDENT_PROJECTOR: r=((sqrt(53)-2)/7)^24; omega_graded(Podd)=-191581231380566414401*(-2 + sqrt(53))**24/(1566638013008814595200*(-1483355348280 + 204224113601*sqrt(53))**2)<0; omega_graded(Peven)=-83223395920847739960001*(-83223395920847739960001 + 11431582307840967545520*sqrt(53))/(1566638013008814595200*(-1483355348280 + 204224113601*sqrt(53))**2)>0.
+INDEPENDENT_STOP: compatible_periodic_cells=0; AP positive control changes the temporal carrier; obligation_retirement=0; toe_percentage_movement=0.
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

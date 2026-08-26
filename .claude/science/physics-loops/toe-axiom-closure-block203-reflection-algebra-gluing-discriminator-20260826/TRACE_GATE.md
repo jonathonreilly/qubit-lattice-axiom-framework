@@ -15,3 +15,7 @@ must state, in exact form:
 
 Floating sign checks, fitted normalizations, or determinant-only evidence do
 not pass.
+
+Result: primary `8/8`, independent `8/8`, primary mutations `27/27`, and
+independent mutations `14/14`.  Compatible periodic cells: zero.  Stage B
+remains sealed.

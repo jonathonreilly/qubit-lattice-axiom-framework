@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_d4_l24_reflection_algebra_gluing_discriminator_2026_08_26.py
+runner_sha256: 4c73174821f53895b65683017fe502cc9217c7137ec0274d9d9c56987ea4e241
+input_fingerprint_sha256: 8d13fabe4bc9c726b1dc964ee61fe1a2f720642e7d93a6dcfaf2a69d248afe38
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 1.09
+status: ok
+----- stdout -----
+[PASS] P0: origin/main, Block-202 parent, and frozen Block-203 preregistration bind
+[PASS] T0: literal periodic/AP 48-dimensional actions and both oriented two-half seams re-glue exactly
+[PASS] T1: reflection signs differ on full CAR and collapse on even exterior degree
+[PASS] T2: exact gluing selects graded trace for periodic time and ordinary trace for the AP control
+[PASS] T3: complete parity-projector table exposes a negative odd-sector projection in the normalized graded functional
+[PASS] T4: zero declared periodic cells are simultaneously reflection-positive, exact-gluing, and state-positive
+[PASS] N: N1-N8 bound the stop to the registered periodic D1 tournament and preserve distinct live routes
+[PASS] S: Stage B, histories, Records/Born, gravity, axioms, retention, obligation retirement, and TOE movement remain sealed
+EXACT_GLUE: periodic_scalar_det=648686052261462293325/12555467579756800534183936; periodic=-2^-24 det(I-T24); AP_scalar_det=41707488576114153187201/803549925104435234187771904; AP=2^-24 det(I+T24).
+TRACE_SELECTOR: r=((sqrt(53)-2)/7)^24; periodic=Zvac_periodic*(1-r)^2=graded two-mode trace; AP=Zvac_AP*(1+r)^2=ordinary two-mode trace.
+GRADED_PROJECTORS: omega(P00)=1/(1-r)^2; omega(P10)=omega(P01)=-r/(1-r)^2; omega(P11)=r^2/(1-r)^2; omega(Podd)=-2r/(1-r)^2<0.
+ORDINARY_CONTROL: omega(P00)=1/(1+r)^2; omega(P10)=omega(P01)=r/(1+r)^2; omega(P11)=r^2/(1+r)^2; all four are positive.
+ALGEBRA_SELECTOR: signs are inequivalent on full CAR; signs agree on even exterior degree; Podd is an even positive operator and has graded value -191581231380566414401*(-2 + sqrt(53))**24/(1566638013008814595200*(-1483355348280 + 204224113601*sqrt(53))**2) < 0.
+TOURNAMENT_STOP: cells=8; compatible=0; the same-action periodic trace is graded and nonpositive, while the positive ordinary trace is the changed AP carrier.
+[SEALED] no fixed-even postselection, Block-194 event descent, history process, Record/Born law, gravity target, or axiom edit loaded
+per_element: checked every vacuum, two one-particle, pair, and total parity projector value in the exact D1 two-mode ordinary and graded functionals.
+per_site: checked both oriented seams of the literal periodic and antiperiodic L24 actions under the fixed 0..11 | 12..23 two-half cut.
+per_mode: checked the D1 squared-radius-zero stable transfer mode exactly; not executed — the second D1 radius and all other carrier/radius targets remain sealed.
+per_block: checked the full two-component 48-dimensional action, exact two-half Schur re-gluing, four-sector CAR functional, and all eight tournament cells.
+lattice_wide: checked and not executed — no all-carrier spin rebuild, Record descent, history process, gravity response, axiom amendment, retention, or TOE closure is claimed.
+BOUNDED_SCOPE: partial narrowing of the literal periodic D1 s=0 declared tournament only; minimal axioms unchanged; obligation_retirement=0; toe_percentage_movement=0.
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

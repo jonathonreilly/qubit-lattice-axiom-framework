@@ -1,12 +1,17 @@
 # No-Go Ledger
 
-No negative result is registered at preregistration.
+The exact bounded result is registered: for the literal periodic D1
+squared-radius-zero action, the full/even-CAR and reflection-sign tournament
+contains zero cells that are simultaneously reflection-positive, exact-
+gluing, normalized, and state-positive.  Periodic gluing selects the graded
+functional and its positive even operator `Podd` has value
+`-2r/(1-r)^2<0`; the positive ordinary functional exactly belongs to the AP
+control.
 
-If Stage A has no unique positive same-action cell, the strongest permitted
-claim is limited to the literal Block-192 periodic `L24`, D1 squared-radius-
-zero carrier, declared CAR/even-CAR algebras, two global reflection signs, and
-ordinary/graded trace tournament.  Any such claim must pass the repository's
-N1--N8 no-go discipline before packaging.
+The source note lands N1--N8 and the primary stdout lands all five N5
+resolution lines.  The discipline verdict is PASS for this exact registered
+tournament and FAIL for a broader probability, spin, sector, Record, history,
+gravity, axiom, or TOE no-go.
 
 Antiperiodic, open/infinite-time, exact sector-selected, alternative
 two-slice, CAR/Nambu, action-derived process, and gravity routes remain live

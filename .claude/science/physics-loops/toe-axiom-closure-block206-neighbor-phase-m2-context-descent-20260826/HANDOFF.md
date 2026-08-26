@@ -12,5 +12,6 @@ The successor must factor the native action into radius-one pieces, feed it
 actual six-record contents, and see whether it selects the odd or even class
 without collisions.  H2 opens only after that H1 gate passes.
 
-Parent delivery is mergeable draft PR #7741.  Gravity PR #7740 is a separate
-carrier/embedding result and was inspected but not modified.
+Block 206 is delivered as draft PR #7743 on mergeable draft PR #7741.
+Gravity PRs #7740 and #7742 are separate carrier/embedding results and were
+inspected but not modified.

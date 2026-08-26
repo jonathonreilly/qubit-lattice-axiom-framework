@@ -1,6 +1,6 @@
 {
- "edge_count": 16213,
- "node_count": 5635,
+ "edge_count": 16221,
+ "node_count": 5636,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -441,6 +441,10 @@
   "admissibility_d4_grade3_source_instrument_history_write_boundary_bounded_theorem_note_2026-08-24": {
    "deps_hash": "58496be7c03c",
    "out_degree": 3
+  },
+  "admissibility_d4_h1_edge_comparison_cell_corner_t2_factorization_boundary_bounded_theorem_note_2026-08-26": {
+   "deps_hash": "1f0a5e1eefbc",
+   "out_degree": 8
   },
   "admissibility_d4_h1_port_free_neighbor_phase_m2_context_descent_boundary_bounded_theorem_note_2026-08-26": {
    "deps_hash": "f38fd9cdb739",

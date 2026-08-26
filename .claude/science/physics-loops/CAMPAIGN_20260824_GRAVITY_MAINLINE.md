@@ -2057,3 +2057,14 @@ evolution of the gravitational sector — the light-mass reading licensed AS OPE
 CONTENT on its sector), the heavy sector's PD symmetric part + rank-2 U-equivariant skew
 defect, the prefix-obstruction narrowing (invariant ranks 2/1/1; basis-dependence
 correction featured). Landing order: b193 (sweep finishing) → b194 → b195.
+
+**BLOCKS 193 + 194 LANDED (campaign night 2).** b193: PR #7734, tip 37a5f926 (the
+parity-window intertwining law; PR body backtick-mangle repaired post-create). b194: PR
+#7735, tip 4cbd5620 (the split generality theorem; the drafter's local-main pin
+c048322f corrected to origin/main b11811704e — THE MIRROR-ORIGIN PIN TRAP, second
+occurrence, now a named hazard carried in every draft spec). Stack: #7359 → #7384 →
+#7580 → #7669 → #7731 → #7734 → #7735. IN FLIGHT: b195 drafter (the sectored interior
+OS reconstruction, two check rounds folded; parent = 4cbd5620). NEXT after b195 lands:
+the recurrence-theoretic proof of the window law (solve inline), then the p=0/p=2
+isospectrality mechanism, second-carrier generality, bump systematics, 2D boundary,
+volume interval, G3.

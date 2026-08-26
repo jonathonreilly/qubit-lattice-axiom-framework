@@ -19,3 +19,11 @@ The primary runner must reject mutations that:
 
 The independent checker must rebuild the series contractions and group orbit
 without consuming primary booleans and use a nonidentical mutation set.
+
+## Result
+
+- Primary: `29/29` mutations rejected.
+- Independent: `24/24` mutations rejected.
+- The independent runner uses explicit sector paths, cubic character inner
+  products, and a fresh Laurent reconstruction rather than primary result
+  functions.

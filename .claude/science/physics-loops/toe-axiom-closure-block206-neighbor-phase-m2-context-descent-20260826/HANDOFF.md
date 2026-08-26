@@ -1,13 +1,16 @@
 # Handoff
 
-Block 206 asks whether Block 205 reaches the axiom's actual one-site `M2`
-possibility distribution.  First classify the port-free pointer marginal at
-higher odd orders.  Only then attach the exact six-neighbor phase orbit.
+Block 206 proves that the Block-205 state reaches a port-free binary `M2`
+phase law: the linear term is zero, the first nonzero coefficient is cubic,
+and the six source-neighbor directions give five distinct positive laws on a
+finite germ.  Primary and independent exact runners agree.
 
-Do not call `q_(sigma|st)` a local law unless `st` is physically selected by
-the neighboring condition.  Do not call a rotated H1 Fourier tuple a derived
-neighbor source.  Preserve positive Block-205 state/effect evidence and stop
-at the smallest exact missing selector or source map.
+The remaining wall is physical ownership.  Literal forward/reverse support
+has radius three and depends on `p` as well as `q`.  Scalar neighbors have no
+`T2` Hom; conditional Bloch-`M2` neighbors have two explicit Hom classes.
+The successor must factor the native action into radius-one pieces, feed it
+actual six-record contents, and see whether it selects the odd or even class
+without collisions.  H2 opens only after that H1 gate passes.
 
 Parent delivery is mergeable draft PR #7741.  Gravity PR #7740 is a separate
 carrier/embedding result and was inspected but not modified.

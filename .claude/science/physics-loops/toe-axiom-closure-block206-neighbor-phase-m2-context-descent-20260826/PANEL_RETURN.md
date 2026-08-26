@@ -23,3 +23,12 @@ a supplied port/coframe, or only cubic relabeling remains.
 Expected formal obligation retirement is zero for all four routes.  Even A
 success closes only the campaign-local context wall until formation/history
 and independent retention exist.
+
+## Post-execution disposition
+
+The panel's route A paid off: the port-free law is positive at cubic order and
+the 24-frame phase family is nonconstant.  Its hostile locality condition also
+prevented a false closure.  Exact support, collision, and Hom checks localize
+the remaining work to action-derived decoder factorization.  The portfolio
+therefore keeps A's successor first, periodic typing second, and does not open
+H2 prematurely.

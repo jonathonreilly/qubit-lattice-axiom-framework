@@ -18,6 +18,8 @@
 - exact roots of unity on the six-neighbor shell;
 - simultaneous unitary trace covariance and finite-group stabilizer checks;
 - ordinary marginalization of an already-typed probability measure.
+- exact proper-cubic character inner products and equivariant Hom solving;
+- exact integer Laurent support under `(p,q) -> (p+q,-q)`.
 
 ## Forbidden imports
 
@@ -28,3 +30,13 @@
 - autonomous formation, permanence dynamics, or physical time inferred from
   the pointer unitary;
 - another worker's gravity carrier presented as this context bridge.
+
+## Result-specific fences
+
+- The neighbor phase produces a positive port-free cubic law, but remains a
+  supplied source-relative label until actual six-record contents reproduce
+  it and the full source.
+- Radius-three effective Laurent support does not exclude composition from
+  radius-one factors.
+- Hom dimension two proves conditional decoder existence, not physical
+  selection of an internal/external `M2` action.

@@ -2,12 +2,15 @@
 
 | route | registration status | terminal test |
 |---|---|---|
-| port-free `M2` pointer series | primary | first exact nonzero normalized odd coefficient, or exact all-order exchange symmetry |
-| inverse-Fourier H1 source | primary downstream | literal forward/actual-reverse radius-one support on `Z12^3` |
-| scalar and adjoint-`M2` neighbor Hom | primary downstream | action-derived `T2` source/port map without orbit lookup |
-| six-neighbor phase and cubic/collision gates | primary downstream | distinct laws, simultaneous covariance, and identical-eta consistency |
+| port-free `M2` pointer series | **positive** | exact linear zero and pure-imaginary cubic `iC`, `C>0` |
+| inverse-Fourier H1 source | **bounded boundary** | forward/reverse `110` terms, radius-three support, same-`q`/different-`p` collision |
+| scalar and adjoint-`M2` neighbor Hom | **classified** | dimensions `0/2`; explicit odd/even conditional adjoint classes, no selected decoder |
+| six-neighbor phase and cubic/collision gates | **partial positive** | five distinct cubic laws, four nonzero; full 24-frame simultaneous covariance passes |
 | coarse-port-conditioned law | inherited control | may diagnose but cannot substitute for port-free descent |
-| neighboring Record port selector | conditional repair | action-derived decoder rather than stipulated labels |
+| action-factorized neighboring Record decoder | highest successor | select odd/even Hom and reproduce forward/reverse source from actual six `M2` contents |
 | autonomous formation/permanence | successor | physical occurrence and stable readable Record |
 | periodic `C32` state/Hom | ranked second / capped | typed action-derived state and positive values |
 | gravity pincer PRs #7734--#7740 | separately staffed | inspect only; do not modify or duplicate |
+
+The coarse-port selector is no longer needed for the binary phase law.  It
+remains relevant only to the richer eight-label joint law.

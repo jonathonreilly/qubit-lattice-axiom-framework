@@ -2,15 +2,19 @@
 
 No broad negative is registered.
 
-| possible wall | status before execution | live alternatives |
+| possible wall | result status | live alternatives |
 |---|---|---|
-| port-free H1 pointer variation | linear term zero; higher order untested | higher odd order, different detector/source, AP/open/periodic state |
-| nearest-neighbor phase law | untested | local source superposition, other contact, full joint law |
-| cubic/stabilizer descent | untested | neighbor content carrying a frame, relational decoder |
+| port-free H1 pointer variation | **positive at cubic order** | general source/H2 and other detectors remain |
+| nearest-neighbor phase law | **five distinct positive H1 germs** | actual Record-content source map remains |
+| cubic/stabilizer descent | **24-frame covariance passes** | covariance is not decoder ownership |
+| scalar neighbor to `T2` | exact Hom dimension `0` in the linear scalar class | nonlinear/noncentral `M2`, composed local route |
+| conditional adjoint `M2` to `T2` | exact Hom dimension `2`; no selection | action-derived odd/even decoder |
+| literal source locality | forward/reverse effective support radius `3`; `p` collision | radius-one factorization, wider realization, reject H1 candidate |
 | coarse-port selection | unsupplied | action-derived apparatus, Record-content decoder, owner law |
 | autonomous formation/history | outside first gate | append/fresh-cell process, environment, complete extensional law |
 | gravity completion | separately staffed | PR #7740 and later pincer blocks |
 
-Any bounded negative must execute N1--N8.  Five zero series coefficients do
-not prove a no-go, and failure of this pushforward does not defeat the positive
-joint law.
+N1--N8 is executed in the result note.  No broad negative ships.  Scalar Hom
+zero does not absorb full `M2`; radius-three effective support does not absorb
+factorized radius-one dynamics; two conditional decoders do not yet prove
+physical underdetermination.

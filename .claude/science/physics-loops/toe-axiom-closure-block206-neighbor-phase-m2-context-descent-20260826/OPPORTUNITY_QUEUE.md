@@ -1,14 +1,18 @@
 # Opportunity Queue
 
-1. CURRENT — exact port-free `M2` pointer series through first nonzero odd
-   order or the order-five cap.
-2. CONDITIONAL — six-neighbor phase laws and full cubic/stabilizer orbit.
-3. CONDITIONAL — derive the minimum coarse-port selector from neighboring
-   Record content if port-free variation vanishes.
-4. NEXT — attach a genuinely local binary law to formation/readability and
-   immutable continuation.
-5. CONTROL — H2 and an explicit positivity-radius certificate.
-6. CAPPED — periodic `C32` state/Hom discriminator.
-7. DECISION — complete extensional law or axiom choice only after constructive
+1. COMPLETED — exact port-free cubic `M2` phase germ and six-neighbor/24-frame
+   covariance.
+2. CURRENT — factor the 110-term source into native radius-one action pieces;
+   push actual six-neighbor `M2` contents through them and select the odd/even
+   `T2` Hom without collisions.
+3. CONDITIONAL — open H2 only after the H1 physical-decoder gate passes.
+4. NEXT — attach the resulting genuinely local binary law to
+   formation/readability and immutable continuation.
+5. CONTROL — explicit positivity-radius certificate.
+6. CAPPED — periodic `C32` state/Hom discriminator remains second only if the
+   context-factorization route stalls on a named wall.
+7. DECISION — reject H1, enlarge the supplied local realization, or amend an
+   axiom only after factorized/nonlinear/noncentral `M2` routes are exhausted.
+8. LATER — complete extensional law or axiom choice only after constructive
    context routes are exhausted.
-8. Inspect gravity PRs periodically without duplicating them.
+9. Inspect gravity PRs periodically without duplicating them.

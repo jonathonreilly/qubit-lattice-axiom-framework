@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/independent_admissibility_d4_h1_port_free_neighbor_m2_context_descent_2026_08_26.py
+runner_sha256: ec69d56810ffd193d030500afc9426568368daf138a0480213fabbb7be15f85b
+input_fingerprint_sha256: 986660e5a29bf1ed8e4bf9ddde7cad40acbc4b17e12976baae6a327c244b2dec
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 550.99
+status: ok
+----- stdout -----
+[A] PASS: authority and immutable registration independently pin
+[B] PASS: explicit sector paths reproduce a1=0 and the disclosed positive cubic quadrature
+[C] PASS: six binary phase PVMs have baseline halves on the strict Schur state
+[D] PASS: independent cubic characters give scalar/adjoint T2 Hom dimensions 0/2
+[E] PASS: fresh Laurent reconstruction gives 110/110 terms, radius three, and the p collision
+[F] PASS: the exact neighbor coefficient pattern has five distinct values and four nonzero values
+[G] PASS: N1--N8 and all context/formation/axiom/TOE fences remain explicit
+[H] PASS: positive phase response is separated from physical eta decoder ownership
+INDEPENDENT_CUBIC: a1=0; a3=-343*I*(-39614194410521886011258608271189426608989637314061903595310837311299128766179775614039384849224874802424309955547840537519444031415731 + 20088236778144933307422375844774848466973250848745230478668770773683346878595585928475405853707189945489158937323659388473013648683423*sqrt(3))/14630373132760996204705386039773889549383195117366765668241345031835670611592246823650335399786716111445599465516368081316673691027954400; a3/i=C>0 exact.
+INDEPENDENT_PHASE_PATTERN: kappa*(sqrt(3),-sqrt(3),2,-2,0,0); distinct=5; nonzero=4.
+INDEPENDENT_SOURCE: terms=(110, 110); support=(78, 78); maxL1=(3, 3, 3, 3); p_collision=true.
+INDEPENDENT_HOM_CHARACTERS: scalar=0; adjoint=2.
+INDEPENDENT_RESULT: positive port-free cubic phase germ reproduced; complete eta decoder remains open; obligation_retirement=0; TOE movement=0.
+per_element: independently contracted the ten cubic sector paths, six binary phase PVMs, cubic characters, and raw Laurent supports.
+per_site: independently checked the six phase pattern and kept supplied phase distinct from actual M2 neighboring Record contents.
+per_mode: independently checked H1 and the same-q/different-p collision; H2 remains sealed.
+per_block: independently separated Schur state, port-free effect, source polynomial, and conditional M2 representation.
+lattice_wide: independently checked the proper-cubic character sum and finite Z12 support; no complete eta, formation/history, axiom, retained, or TOE claim is made.
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

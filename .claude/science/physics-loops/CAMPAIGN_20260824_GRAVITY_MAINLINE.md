@@ -1889,3 +1889,171 @@ LAW: a source breaks W-invariance at core t0 ⟺ its support intersects [t0, t0+
 / [t0+1, t0+3] (even t0) — always three slices, one exempt end, parity-switched. Fold as
 the block's central law; the b193 drafter launches AFTER b192 lands (parent = b192 tip;
 template = the landed b192 runner/note); corrections ledger continues #42+.
+
+## THE (m,c) GENERALITY SOLVE (block 194 candidate) — DESIGN
+
+Jon's order: "run the (m,c) generality solve - fable on it." THE question: is the transfer
+package (positive palindromic-squared monodromy, two scales, parity independence,
+U-grading, window law) GENERIC over the parameter space or a coincidence of the fixture
+(9/20, 5/13)? GRID (T=16): control (9/20, 5/13); b188's known-positive fixtures (1, 5/13)
+and (9/20, 3/5); fresh points (1/2, 1/3) and (2/3, 1/5). PER POINT: (a) PsQPs = Q^T +
+empty cross; (b) charpoly(W) at deep cores t0 = 3 (odd) and 4 (even): parity-independence,
+palindromic-squared form, positivity per quadratic (trace > 2·leading, disc > 0, const =
+leading), TWO DISTINCT scales; (c) [W, U] = 0 + the sector split; (d) one window-law cell:
+bump{2,3} (v-dial at the point's own Hodge) → t0=5 exact zero (odd window rule). Every
+leg exact rational. VERDICT SHAPE: structure generic (each leg per point) vs
+fixture-specific; any failing point gets its failing leg identified exactly.
+
+**GEN PHASE 1 MEASURED — THE BULK PACKAGE IS GENERIC (5/5).** At ALL five grid points —
+control (9/20,5/13), (1,5/13), (9/20,3/5), (1/2,1/3), (2/3,1/5) — the deep odd core
+(T=16, t0=3) gives: Ps-covariance exact, empty cross, charpoly(W) = (heavy)²(light)² with
+BOTH quadratics palindromic (const = leading), positive (|trace| > 2·leading, disc > 0),
+TWO DISTINCT scales, and [W,U] = 0 exactly. Exact charpolys per point recorded in the
+task output (control 22569375/39529825; (1,5/13): 26527/51097; (9/20,3/5): 12475/53125;
+(1/2,1/3): 233/739; (2/3,1/5): 17099/21709). THE POSITIVE TWO-SCALE MONODROMY IS A
+PROPERTY OF THE CLASS, NOT THE FIXTURE. BONUS + PROBE CORRECTION: my t0=4 leg was
+mis-aimed — at T=16, t0=4 = T/2−4 is a far BOUNDARY-LAYER W-core (not even-deep; the even
+deep representative is t0=2) — and its structure (one heavy copy + light² + one
+non-reciprocal boundary quadratic) REPLICATES AT ALL FIVE POINTS: b191's boundary-mode
+structure is (m,c)-GENERIC as well. The parityW=False lines compare deep-vs-boundary and
+are MEANINGLESS as parity tests. PENDING (phase 2): the true parity test (t0=2 vs t0=3
+per point) + the window-law cell (bump{2,3} → t0=5 zero per point).
+
+**GEN PHASE 2 MEASURED — COMPLETE GENERALITY (block 194 SOLVE COMPLETE).** 5/5 on both
+remaining legs: parity independence (charpoly(W) at t0=2 == t0=3, exact) and the
+window-law cutoff cell (bump{2,3} → t0=5 matrix-level zero) at ALL five grid points.
+FULL VERDICT: every leg of the transfer package — Ps-covariance, empty cross,
+palindromic-squared POSITIVE monodromy, two distinct scales, parity independence,
+U-grading, the boundary-mode structure, and the locality window — is GENERIC over the
+(m,c) grid, exact at every point. The package is structure of the class, not the fixture.
+Block 194 = THE GENERALITY THEOREM. Checker mandate (sol xhigh): rebuild two grid points
+independently (one fresh), probe NEW points of the checker's own choosing, and hunt the
+GENERALITY BOUNDARY — points near/beyond the site route's (uncharted) positivity edge
+where a leg should fail, characterizing where the package ends. Then drafter + landing
+stacked on b193's PR per the standard chain.
+
+**STANDING ORDER (Jon): land block 194 when the check clears.** Sequence: (1) b193 sweep
+RUNNING → on clean return finish its chain (ledger #42-#51 noted, cache ×2, pipeline
+exit-1-expected, restore, manifest, lint, main recheck, commit WITH this anchor, push, PR
+stacked on #7731; branch physics-loop/toe-axiom-closure-block193-parity-window-
+intertwining-law-20260825 already cut from afb66fc4, baseline 37/37 done). (2) b194
+checker RUNNING (generality; boundary hunt) → on verdict: fold here, write
+b194_draft_spec.md (the generality theorem: five-point grid all legs exact, the checker's
+own points + boundary findings as content, corrections continue after b193's #51), launch
+the Opus drafter (template = the LANDED b193 runner/note; parent = the b193 tip once
+landed; stale = b192 tip afb66fc4; main re-verify), land per the standard chain, PR
+stacked on b193's PR. Naming suggestion: toe-axiom-closure-block194-transfer-package-
+mc-generality-20260825; note ADMISSIBILITY_DIRAC_KAHLER_TRANSFER_PACKAGE_MC_GENERALITY_
+BOUNDED_THEOREM_NOTE_2026-08-25.md.
+
+## THE OS RECONSTRUCTION SOLVE (block 195 candidate) — DESIGN
+
+Jon's order: "run the OS reconstruction solve - fable on it." THE question: do the fenced
+readings (mass scales, transfer positivity, physical time step) become THEOREMS — i.e.,
+does the two-step evolution DESCEND to the 8-dim OS Hilbert space H = full-positive-span /
+null as a well-defined, OS-self-adjoint, positive operator T₂? KEY REFRAME: b190's
+refutation was on PAIR CORES (PD frames — no quotient); the reconstruction lives on the
+QUOTIENT, and core asymmetry can be pure null-direction contamination. THE THREE DECISIVE
+MEASUREMENTS (T=16 control, exact): (R1) NULL PRESERVATION — for the full-span Gram
+K_full (slices {1..7}, 28 vectors, rank 8) with null N, and the domain D2 = slices {1..5}
+(τ²-safe): is τ²(N ∩ D2) ⊂ N? (⟨θa, τ²n⟩ = 0 ∀a). This is the ONLY obstruction to T₂
+existing on H. (R2) QUOTIENT SYMMETRY — M2[a,b] = ⟨θa, τ²b⟩ on D2: symmetric as a form on
+the quotient (compressed to a complement basis of N ∩ D2)? = OS-self-adjointness of T₂.
+(R3) QUOTIENT POSITIVITY — the compressed M2 form PSD? = shifted reflection positivity.
+Then (R4) the descended spectrum vs W's {e^{±θ}} (which half survives). Any leg failing →
+the obstruction characterized exactly (compact-time vs background). All-exact rationals.
+
+**CAMPAIGN DIRECTIVE (Jon, 2026-08-25 evening): "then just keep running the next logical
+block for the next 12 hours."** Standing 12-hour window. IN FLIGHT: b193 sweep (landing on
+return, stacked on #7731); b194 checker (generality — land when check clears, per prior
+order); OS reconstruction phase 1 (block 195 candidate). THE LOGICAL SEQUENCE: b193 land →
+b194 fold/draft/land → b195 (OS reconstruction: solve per phase-1 results → check →
+draft → land) → then next-ranked: (1) the recurrence-theoretic window-law proof (b193's
+honest False flag — turn the exhaustive law into a proof); (2) the p=0/p=2 isospectrality
+mechanism; (3) second-carrier generality; (4) bump-position systematics; (5) 2D boundary;
+(6) volume interval; (7) G3 (R1-R3). EVERY block: solve (Fable inline) → sol-xhigh codex
+check (pinned, stdin-closed, TRACKED watcher) → Opus drafter (bounded spec, mirror-
+verified) → land (full chain, stacked PR). Wake discipline: all async tracked; heartbeat
+fallback 1500s. Never idle; queue refreshed at each landing.
+
+**OSR PHASE 1 MEASURED — THE NAIVE DESCENT IS REFUTED AT THE QUOTIENT LEVEL.** T=16
+control: rank K_full = 8 (H is 8-dim ✓); dim(N ∩ D2) = 12; R1 τ²-NULL-PRESERVATION FAILS
+(M2·k ≠ 0 for null k) — the one obstruction that blocks BOTH the pushforward and the
+Riesz-form definitions of the descended T₂ (the θ-side is automatic; the g-side needs R1).
+R2 asymmetric in consequence. R4 note: the pivot-compressed T₂ charpoly equals the b191
+near-boundary monodromy value (the complement basis effectively picked the near core).
+b190's core-level observation is now the exact QUOTIENT statement. PHASE 2: localize the
+obstruction — (a) per-null-vector residuals M2·k: which slices carry the failure; (b) the
+deeper sub-domain D2' = slices {1..4}: does null-preservation hold away from the far
+boundary; (c) T=20 width scaling of the obstruction norm. Decaying → the reconstruction
+is an ASYMPTOTIC theorem; not → a sharp exact no-go with the obstruction characterized.
+
+**OSR PHASE 2 MEASURED — THE DESCENT NO-GO IS SHARP (block 195 SOLVE COMPLETE).** The
+obstruction NEITHER localizes NOR decays: violations at EVERY domain depth (T=16: 8/12,
+6/8, 2/4 kernel vectors at depths 5/4/3; T=20: 14/20, 12/16, 8/12 at depths 7/6/5) with
+residual row-slices = ALL positive slices in every case — bulk-distributed,
+width-persistent. VERDICT: on the site-glued width family, the OS Hilbert space H exists
+(rank 8, every width) and the monodromy spectrum is positive and (m,c)-generic — but NO
+descended two-step evolution operator exists on H: τ²-null-preservation fails bulk-wide,
+blocking both the pushforward and the Riesz-form constructions (two-lemma argument: the
+θ-side is automatic, the g-side is exactly R1). THE FENCED READINGS STAY READINGS for an
+exactly characterized reason: the monodromy spectrum is FRAME content, not OPERATOR
+content. Scope discipline: per-construction, per-class — NOT a curved-OS no-go of any
+kind (cycle913 caution verbatim); the dilation/directed-system and shifted-reflection-
+plane constructions are NAMED OPEN LEGS. Block 195 = THE RECONSTRUCTION DESCENT NO-GO.
+
+**B194 CHECK VERDICT (sol xhigh; b194_check_findings.md + b194_exact_probe.py).** C1
+fresh-point spectral content PASSES (correction: the literal polynomial equalities need
+monic-normalization denominators — fold as wording-with-formula); C2-C4 EXACT at both
+fresh points. THE BOUNDARY HUNT SUCCEEDED — THE PACKAGE SPLITS: (i) UNIVERSAL LEGS —
+palindromicity, [W,U] = 0, parity independence, window-cell invariance passed at ALL 192
+admissible searched points: unconditionally generic; (ii) POSITIVITY IS WINDOWED — 98 of
+192 admissible points FAIL positivity, exact negative reciprocal pairs at the witness
+(1/100, 3/4): the transfer level has its own positivity window (echoing b187's Gram
+window). BONUS: theta_heavy/theta_light rigorously INCREASING in c on the five-point
+grid. Block 194 = THE SPLIT GENERALITY THEOREM (universal structure + windowed
+positivity, the 192-point census and the exact negative witness as content; corrections
+continue after b193's #51). Drafter launches after b193 lands (parent = b193 tip).
+
+**B195 CHECK VERDICT — THE BROAD NO-GO REFUTED; THE INTERIOR LOOPHOLE FOUND (sol xhigh;
+b195_check_findings.md).** C1 (rank 8) exact. C2 CORRECTED: my violation counts were
+BASIS-DEPENDENT (sympy default nullspace presentation); the INVARIANT obstruction ranks
+are 2/1/1 — small, not bulk. C3 valid only for seam-anchored PREFIX domains {1..k}. THE
+LOOPHOLE: raw descents EXIST on INTERIOR windows — D = {2,3,4} at T=16, D = {2..6} at
+T=20, BOTH fixtures — the obstruction is a NEAR-SEAM artifact; my "bulk-distributed,
+width-persistent" reading was the artifact of basis-counting + testing only prefixes.
+The sectioned compression V♯τ²V = W exists exactly (not OS-self-adjoint, not an unscaled
+contraction). N1-N8: partial-narrowing to the listed prefix presentations. THE
+RECONSTRUCTION QUESTION REOPENS POSITIVELY: block 195 becomes THE INTERIOR DESCENT
+package (existence landed by the check; my R2/R3 on the interior window — OS-self-
+adjointness + positivity of the descended operator on the interior quotient — MEASURING
+NOW; corrections ledger continues, the basis-dependence correction featured).
+
+**OSR PHASE 3+4 MEASURED — THE SECTORED RECONSTRUCTION SHAPE.** Interior windows
+(D = {2,3,4} at T=16; D = {2..6} at T=20): obstruction RANK 0 (the checker's loophole
+confirmed with the invariant); the descent EXISTS onto the full 8-dim H; the descended
+operator's charpoly = THE BULK MONODROMY exactly — (22569375...)²(39529825...)² — at BOTH
+widths; all eight leading minors of the descended form POSITIVE. Kc symmetric (genuine
+inner product). THE DEFECT: M2c's antisymmetric part has RANK 2 ONLY, and the U = +1
+(LIGHT/momentum-even) sector's form is EXACTLY SYMMETRIC — the entire self-adjointness
+defect lives in the U = −1 (heavy) sector; [T2, defect] ≠ 0. SHAPE OF BLOCK 195: THE
+SECTORED INTERIOR RECONSTRUCTION — the light mode's descended evolution is self-adjoint
+and positive on its sector (the light "mass" reading gets its operator license); the
+heavy sector carries an exact rank-2 defect (characterized, fenced). Phase 4b RUNNING:
+per-U-sector charpolys, defect's spectral-sector rank, U=−1 symmetric-part minors.
+Corrections for the note: the basis-dependent violation counts (the check's C2), the
+prefix-vs-interior scope narrowing (N-discipline partial-narrowing per the check).
+
+**B195 ROUND-2 VERDICT — THE SECTORED RECONSTRUCTION FULLY CHECKED (sol xhigh;
+b195r2_check_findings.md + b195r2_exact_probe.py; gated runs 47/0, 52/0, 27/0).** C1-C5
+CONFIRMED at T=16 AND T=20; P1 basis-independence CONFIRMED (congruence-exact under
+alternative representatives); P3 the sectored structure PERSISTS at (1/2, 1/3). P2 fence:
+the rank-2 defect is heavy-only and U-EQUIVARIANT, but does NOT purely pair the canonical
+momentum-degenerate copies — the stronger pairing reading is REFUTED (fence in the note).
+BLOCK 195 PACKAGE COMPLETE, twice-checked: the interior descent (existence via round 1's
+loophole + invariant-rank correction), the exact monodromy spectrum on H, THE LIGHT-
+SECTOR POSITIVE SELF-ADJOINT EVOLUTION OPERATOR (the first complete OS-reconstructed
+evolution of the gravitational sector — the light-mass reading licensed AS OPERATOR
+CONTENT on its sector), the heavy sector's PD symmetric part + rank-2 U-equivariant skew
+defect, the prefix-obstruction narrowing (invariant ranks 2/1/1; basis-dependence
+correction featured). Landing order: b193 (sweep finishing) → b194 → b195.

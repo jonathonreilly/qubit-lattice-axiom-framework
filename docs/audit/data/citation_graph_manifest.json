@@ -1,6 +1,6 @@
 {
  "edge_count": 16109,
- "node_count": 5621,
+ "node_count": 5622,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -613,6 +613,10 @@
   "admissibility_dirac_kahler_paired_floor_refutation_mixed_circle_bounded_theorem_note_2026-08-15": {
    "deps_hash": "26cdf7e4282e",
    "out_degree": 4
+  },
+  "admissibility_dirac_kahler_parity_window_intertwining_law_bounded_theorem_note_2026-08-25": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_dirac_kahler_pincer_identity_cross_lane_bounded_theorem_note_2026-08-22": {
    "deps_hash": "e3b0c44298fc",

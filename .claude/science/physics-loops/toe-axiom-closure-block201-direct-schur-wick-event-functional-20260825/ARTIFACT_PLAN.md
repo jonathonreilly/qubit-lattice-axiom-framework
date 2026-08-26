@@ -10,6 +10,6 @@
    normalization, so gluing and the 729-value census remain sealed.
 6. SEALED: do not open the other five probability cylinders or selector after
    the D1 kill gate fails.
-7. IN PROGRESS: package only the actual bounded result, with fresh caches,
+7. COMPLETE: package only the actual bounded result, with fresh caches,
    mutations, premise/forensic/graph/invariant gates, and a stacked PR without
-   review-loop; rerank at the first decisive stop.
+   review-loop; PR #7730 is open/clean and the portfolio is reranked.

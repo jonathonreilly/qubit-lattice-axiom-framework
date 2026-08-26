@@ -27,4 +27,7 @@
 - 2026-08-25: fresh five-role portfolio return votes `4-1` for the L12
   open-cut positive fixed-point/event-boundary bridge as Block 202; a new
   quasifree functional and POVM/null semantics rank second and third.
+- 2026-08-25: result commit `8d4cda5531` passes fresh cache, premise, direct
+  forensic, strict-lint, graph, and enforced-invariant gates; stacked PR #7730
+  opens clean on PR #7729.
 - 2026-08-25: review-loop remains forbidden.

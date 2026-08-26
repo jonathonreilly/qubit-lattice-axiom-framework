@@ -2178,3 +2178,31 @@ identifies (K₀, K₂); in the displayed gauge r² = det K₀ / det K₂. P3: t
 and completion persist at T=20. Block 197 = THE HIDDEN INVOLUTIVE ISOMETRY. Drafter
 after b196 lands (parent = b196 tip; corrections continue; the basis-dependence of the
 triangular display fenced with the invariant statement primary).
+
+## CAMPAIGN WRAP — THE 12-HOUR DIRECTIVE (2026-08-25 evening → 2026-08-26 morning)
+
+TEN BLOCKS LANDED under the standing directive, each solve-check-draft-land with sol-xhigh
+cross-model adversarial checks and every correction folded as content:
+- b188 #7359 site OS positivity + the thick-seam wall; b189 #7384 symmetry classification
+  (prior window); b190 #7580 the transfer/monodromy theorem; b191 #7669 boundary modes +
+  volume sensitivity; b192 #7731 the response mechanism + support cutoff (prior window);
+- THIS WINDOW: b193 #7734 the parity-window intertwining law; b194 #7735 the split
+  generality theorem (structure universal 192/192; positivity windowed 94/98 with two
+  failure modes); b195 #7736 THE SECTORED INTERIOR OS RECONSTRUCTION (the light-sector
+  evolution operator: self-adjoint, positive — the first reconstructed evolution of the
+  gravitational sector); b196 #7737 the window-Schur transport-defect theorem (the
+  locality law's compatibility direction PROVEN constructively); b197 (landing) the
+  hidden involutive isometry (the isospectrality mechanism; the Klein four-group
+  isometric commutant).
+THE ARC IN ONE LINE: the gravitational sector of the width family now has measured-and-
+checked positivity, an exact positive two-scale monodromy with generic structure, exact
+locality laws with a constructive mechanism, a genuinely reconstructed (light-sector)
+evolution operator, and a completed symmetry story — all on exact rationals, all
+adversarially checked, all honestly fenced. OPEN QUEUE (ranked): second-carrier
+generality; the heavy-sector reconstruction; width-independent (all-T) proofs; the
+positivity-window boundary in (m,c); bump systematics; 2D boundary; volume interval; G3.
+PROCESS LEDGER: corrections #16-#81 all shipped as content; the wake-path defect fixed
+(all async harness-tracked); the mirror-origin pin trap and the nightly pin race named
+and handled; two drafter self-catches (the b197 census-set, the b194 margin) — the
+verification structure caught every defect that mattered, including six of the
+supervisor's own.

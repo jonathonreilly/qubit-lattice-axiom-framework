@@ -1,6 +1,6 @@
 {
  "edge_count": 16109,
- "node_count": 5625,
+ "node_count": 5626,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -545,6 +545,10 @@
   "admissibility_dirac_kahler_global_dressing_involution_positivity_bounded_theorem_note_2026-08-15": {
    "deps_hash": "767fbba8a59e",
    "out_degree": 5
+  },
+  "admissibility_dirac_kahler_hidden_involutive_isometry_bounded_theorem_note_2026-08-26": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_dirac_kahler_hybridization_mechanism_support_cutoff_bounded_theorem_note_2026-08-25": {
    "deps_hash": "e3b0c44298fc",

@@ -24,6 +24,10 @@ review_loop_allowed: false
 obligation_retirement: 0
 toe_percentage_movement: 0
 independent_audit_status: unset
+delivery_pr: 7739
+delivery_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7739
+delivery_pr_state: draft
+delivery_head: 2ec84a1807
 target_values_observed: bounded_controls_only_no_periodic_record_values
 strict_projective_lifts_surviving: 0_in_tested_families
 positive_full_fock_povms_constructed: 3

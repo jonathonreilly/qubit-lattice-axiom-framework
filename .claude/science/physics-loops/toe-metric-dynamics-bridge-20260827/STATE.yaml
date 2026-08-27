@@ -2,9 +2,9 @@ loop_slug: toe-metric-dynamics-bridge-20260827
 target: variable-cell exterior transport through curvature localization
 status: active
 max_cycles: 3
-completed_cycles: 1
-active_cycle: 1
-active_science_target: variable-cell weighted-skew edge coupling
+completed_cycles: 2
+active_cycle: 2
+active_science_target: metric-compatible exterior transport and connection freedom
 actual_current_surface_status: conditional-support
 target_claim_type: bounded_theorem
 trace_class: direct_blocker_closure
@@ -14,4 +14,6 @@ axiom_changes: forbidden
 primitive_changes: forbidden
 merge_authority: none
 cycle_1_review_disposition: pass
-next_checkpoint: commit, stacked-tree validation, and open review PR
+cycle_1_pr: 7757
+cycle_2_review_disposition: pass
+next_checkpoint: open cycle-2 stacked review PR, then begin plaquette holonomy

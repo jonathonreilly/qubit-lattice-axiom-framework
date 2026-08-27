@@ -12,3 +12,21 @@ strictly stronger connection-selection/tangent-compatibility obligation.
 
 Next trace action: construct the compatible transport factorization and test
 whether its endpoint-metric part is pure gauge around plaquettes.
+
+## Cycle 2
+
+Classification: `direct_blocker_closure`.
+
+Target claim: the cycle-1 variable-cell weighted-skew edge theorem.
+
+Exact blocker text: “compatibility of `U_sr` with changing tangent/Clifford
+frames”.
+
+Reachability: cycle 2 closes that exact single-edge compatibility blocker by
+constructing the normalized exterior lift and proving the full carrier and
+Clifford identities. It exposes the strictly stronger loop-level question:
+which plaquette holonomy is endpoint-coframe cancellation and which part is
+independent connection data?
+
+Next trace action: prove the plaquette decomposition and run exact flat and
+nontrivial controls.

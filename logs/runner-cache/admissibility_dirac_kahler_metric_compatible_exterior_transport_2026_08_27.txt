@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_metric_compatible_exterior_transport_2026_08_27.py
+runner_sha256: 33aadec1b35ce596ed129e462dd50ac6cb241c448ab0f2a35ba717c20864789c
+input_fingerprint_sha256: 10b5a9e399cb6a81021eb2a7264b2372d46efd33eaf85975eb4a3a05ba80a55b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.65
+status: ok
+----- stdout -----
+[PASS] metric-volume locus: every coframe cell obeys V^2=det(g) exactly
+[PASS] local Clifford carriers: every D3 is symmetric and every Gamma is D3-self-adjoint
+[PASS] tangent compatibility: every A satisfies A^T g_s^-1 A=g_r^-1
+[PASS] coframe classification: recovered R=E_s A E_r^-1 is exactly orthogonal
+[PASS] determinant-volume law: |det(A)|=V_s/V_r on every compatible edge
+[PASS] exterior functor: lifted products agree with products of lifted maps
+[PASS] wedge naturality: Lambda(A) epsilon(q)=epsilon(Aq) Lambda(A)
+[PASS] full carrier isometry: U^T D_s U=D_r requires the positive volume normalization
+[PASS] Clifford intertwining: Gamma_s(Aq) U=U Gamma_r(q) in all basis directions
+[PASS] reverse-link law: the compatible reverse transport is exactly U^-1
+[PASS] endpoint collapse: compatible transport makes the two cross-form contributions identical
+[PASS] covariant centered hop: K_sr=Gamma_s(Aq)U/2=U Gamma_r(q)/2
+[PASS] connection freedom: equal endpoint metrics admit a nonidentity compatible orthogonal link
+[PASS] coframe gauge covariance: E->QE and R->Q_s R Q_r^T leave every A unchanged
+[PASS] constant-cell normalization: E_s=E_r and R=I give U=I and the parent half-hop
+SUMMARY: PASS=15 FAIL=0
+RESULT:
+  tangent theorem: A=E_s^-1 R E_r with R orthogonal
+  exterior link: U=sqrt(V_r/V_s) Lambda(A) is a D3 isometry and Clifford intertwiner
+  bridge: the Block 215 cross-form collapses to the covariant centered half-hop
+  boundary: R is independent connection data; its physical selection, curvature dynamics, time, and continuum remain open
+
+----- stderr -----
+

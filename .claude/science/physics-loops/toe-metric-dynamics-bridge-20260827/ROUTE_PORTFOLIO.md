@@ -20,8 +20,8 @@ Relevant families:
 | Route | Type | New load-bearing element | Claim movement | Hard-residual pressure | Risk | Decision |
 |---|---|---|---|---|---|---|
 | cross-form parameterization | constructive theorem | exact edgewise iff classification | closes weighted-adjoint edge blocker | 3 | low | cycle 1 |
-| endpoint square-root transport | constructive theorem | metric-compatible link factorization | exposes connection freedom | 3 | medium: covariance convention | cycle 2 |
-| tangent-Clifford intertwiner | theorem/reduction | coupled fibre/tangent compatibility | tests whether local symbols glue | 3 | high | cycle 2 |
+| endpoint square-root transport | constructive theorem | metric-compatible link factorization | exposes connection freedom | 3 | resolved: coframe gauge stated explicitly | cycle 2 complete pending review |
+| tangent-Clifford intertwiner | theorem/reduction | coupled fibre/tangent compatibility | proves local symbols glue under normalized lift | 3 | bounded: arbitrary-module uniqueness not claimed | cycle 2 complete pending review |
 | plaquette product | constructive theorem | holonomy decomposition | locates curvature carrier | 3 | medium | cycle 3 |
 | OS/Wick continuation now | stretch attempt | physical time map | could reach causal bridge | 3 | too early: variable connection unresolved | defer |
 

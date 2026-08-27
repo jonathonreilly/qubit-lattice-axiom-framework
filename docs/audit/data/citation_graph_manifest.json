@@ -1,6 +1,6 @@
 {
- "edge_count": 16231,
- "node_count": 5639,
+ "edge_count": 16236,
+ "node_count": 5640,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -449,6 +449,10 @@
   "admissibility_d4_h1_edge_comparison_cell_corner_t2_factorization_boundary_bounded_theorem_note_2026-08-26": {
    "deps_hash": "1f0a5e1eefbc",
    "out_degree": 8
+  },
+  "admissibility_d4_h1_full_shell_sft_mergeability_and_autonomous_front_boundary_bounded_theorem_note_2026-08-27": {
+   "deps_hash": "162cfc90a9c5",
+   "out_degree": 5
   },
   "admissibility_d4_h1_port_free_neighbor_phase_m2_context_descent_boundary_bounded_theorem_note_2026-08-26": {
    "deps_hash": "f38fd9cdb739",

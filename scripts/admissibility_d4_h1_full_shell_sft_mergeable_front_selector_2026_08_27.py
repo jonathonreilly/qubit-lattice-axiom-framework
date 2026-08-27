@@ -6,7 +6,8 @@ shift whose six-neighbor word is one of the 26 readable words.  It proves the
 cube-edge normal form, checkerboard factorization, finite scalar-moat and
 finite-nucleus constructions, and the preregistered planar-interface census.
 It separately tests a native five-of-six permanent-bit propagation rule so a
-static completion is not mislabeled as autonomous formation.
+static completion is not mislabeled as autonomous formation, then constructs
+and scopes a supplied-seed append-only permanent-status cap front.
 """
 from __future__ import annotations
 
@@ -64,13 +65,13 @@ PARENT_RUNNER_BLOB = "a7a9123021425f486534d84da21aba7130e476b1"
 PARENT_CACHE_BLOB = "67ea07b30a9ad94131370dc31f862fab8a7eb38f"
 
 AUDIT_INPUT_PATHS = (
-    GOAL_PATH,
-    PREFLIGHT_PATH,
-    AXIOM_PATH,
-    REGISTRY_PATH,
-    PARENT_NOTE_PATH,
-    PARENT_RUNNER_PATH,
-    PARENT_CACHE_PATH,
+    ".claude/science/physics-loops/toe-axiom-closure-block213-mergeable-full-shell-sft-20260827/GOAL.md",
+    ".claude/science/physics-loops/toe-axiom-closure-block213-mergeable-full-shell-sft-20260827/PREFLIGHT.md",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/audit/data/axiom_premise_nodes.json",
+    "docs/ADMISSIBILITY_D4_H1_SHARED_SHELL_OVERLAP_CROSS_MOMENT_AND_UNIQUE_WRITER_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-27.md",
+    "scripts/admissibility_d4_h1_autonomous_overlap_history_selector_2026_08_27.py",
+    "logs/runner-cache/admissibility_d4_h1_autonomous_overlap_history_selector_2026_08_27.txt",
 )
 
 AXES: tuple[Vector, ...] = b212.AXES
@@ -108,6 +109,13 @@ MUTATIONS = (
     "break_five_bit_completion",
     "claim_native_seed_propagates",
     "claim_native_front_complete",
+    "break_packet_formula",
+    "break_permanent_status_confluence",
+    "change_status_alphabet",
+    "claim_status_seed_not_supplied",
+    "claim_status_m2_cp_compiled",
+    "claim_status_dense_collision_safe",
+    "break_mixed_symmetry_witness",
     "claim_static_is_formation",
     "claim_event_site_selected",
     "claim_occurrence_rate_selected",
@@ -848,6 +856,561 @@ def front_facts() -> dict[str, object]:
     }
 
 
+def packet_backgrounds(mask: int) -> tuple[int, ...]:
+    weight = mask.bit_count()
+    if weight in (0, 1):
+        return (0,)
+    if weight in (5, 6):
+        return (1,)
+    if weight == 3:
+        return (0, 1)
+    return ()
+
+
+def packet_geometry(mask: int, background: int) -> dict[str, object]:
+    defects = {
+        axis for index, axis in enumerate(AXES)
+        if ((mask >> index) & 1) != background
+    }
+    antipodal_axis = None
+    singleton = None
+    endpoints: set[Vector] = set()
+    if len(defects) == 3:
+        for left, right in PAIR_INDICES:
+            if AXES[left] in defects and AXES[right] in defects:
+                antipodal_axis = AXES[left]
+                singleton = next(site for site in defects if site not in (AXES[left], AXES[right]))
+                break
+        if antipodal_axis is None or singleton is None:
+            raise ValueError("allowed triple lacks the unique antipodal-pair form")
+        twice_singleton = tuple(2 * value for value in singleton)
+        endpoints = {
+            add(antipodal_axis, twice_singleton),
+            add(tuple(-value for value in antipodal_axis), twice_singleton),
+        }
+    support = defects | endpoints
+    return {
+        "defects": frozenset(defects),
+        "antipodal_axis": antipodal_axis,
+        "singleton": singleton,
+        "endpoints": frozenset(endpoints),
+        "support": frozenset(support),
+    }
+
+
+def support_bit(support: frozenset[Vector] | set[Vector], background: int):
+    return lambda site: (1 - background) if site in support else background
+
+
+def validate_support(support: frozenset[Vector] | set[Vector], background: int) -> bool:
+    bit = support_bit(support, background)
+    return all(
+        shell_mask_from_function(center, bit) in allowed_words()
+        for center in affected_centers(support)
+    )
+
+
+def status_bit(status: tuple[object, ...]) -> int:
+    kind = status[0]
+    if kind in ("LOCK", "BG"):
+        return int(status[1])
+    background = int(status[2])
+    return background if kind == "STEP" else 1 - background
+
+
+def status_seed(mask: int, background: int) -> dict[Vector, tuple[object, ...]]:
+    geometry = packet_geometry(mask, background)
+    state: dict[Vector, tuple[object, ...]] = {(0, 0, 0): ("LOCK", background)}
+    if mask.bit_count() != 3:
+        for index, axis in enumerate(AXES):
+            bit = (mask >> index) & 1
+            state[axis] = ("BG", background) if bit == background else ("LOCK", bit)
+        return state
+
+    antipodal_axis = geometry["antipodal_axis"]
+    singleton = geometry["singleton"]
+    assert isinstance(antipodal_axis, tuple) and isinstance(singleton, tuple)
+    pair = {antipodal_axis, tuple(-value for value in antipodal_axis)}
+    for axis in AXES:
+        if axis in pair:
+            state[axis] = ("PORT", singleton, background)
+        elif axis == singleton:
+            state[axis] = ("GPORT", singleton, background)
+        else:
+            state[axis] = ("LOCK", background)
+    return state
+
+
+def role_footprint(mask: int, background: int) -> frozenset[Vector]:
+    footprint = set(status_seed(mask, background))
+    if mask.bit_count() == 3:
+        geometry = packet_geometry(mask, background)
+        antipodal_axis = geometry["antipodal_axis"]
+        singleton = geometry["singleton"]
+        assert isinstance(antipodal_axis, tuple) and isinstance(singleton, tuple)
+        opposite = tuple(-value for value in antipodal_axis)
+        for port in (antipodal_axis, opposite):
+            footprint.add(add(port, singleton))
+            footprint.add(add(port, tuple(2 * value for value in singleton)))
+        footprint.add(tuple(2 * value for value in singleton))
+    return frozenset(footprint)
+
+
+def launched_role_state(
+    mask: int, background: int, center: Vector = (0, 0, 0)
+) -> dict[Vector, tuple[object, ...]]:
+    """Return the supplied seed after every reserved arm and gate has fired."""
+    state = status_seed(mask, background)
+    if mask.bit_count() == 3:
+        geometry = packet_geometry(mask, background)
+        antipodal_axis = geometry["antipodal_axis"]
+        singleton = geometry["singleton"]
+        assert isinstance(antipodal_axis, tuple) and isinstance(singleton, tuple)
+        for port in (antipodal_axis, tuple(-value for value in antipodal_axis)):
+            state[add(port, singleton)] = ("STEP", singleton, background)
+            state[add(port, tuple(2 * value for value in singleton))] = (
+                "END", singleton, background
+            )
+        state[tuple(2 * value for value in singleton)] = ("BG", background)
+    return {add(center, site): status for site, status in state.items()}
+
+
+def transform_status(
+    status: tuple[object, ...], rotation: sp.Matrix
+) -> tuple[object, ...]:
+    """Apply a proper lattice rotation and bit complement to one status."""
+    kind = status[0]
+    if kind in ("LOCK", "BG"):
+        return (kind, 1 - int(status[1]))
+    direction = status[1]
+    assert isinstance(direction, tuple)
+    transformed_direction = tuple(map(int, rotation * sp.Matrix(direction)))
+    return (kind, transformed_direction, 1 - int(status[2]))
+
+
+def protected_targets(
+    state: dict[Vector, tuple[object, ...]],
+) -> frozenset[Vector]:
+    protected = set()
+    for site, status in state.items():
+        kind = status[0]
+        if kind not in ("PORT", "GPORT"):
+            continue
+        direction = status[1]
+        assert isinstance(direction, tuple)
+        protected.add(add(site, direction))
+        if kind == "PORT":
+            protected.add(add(site, tuple(2 * value for value in direction)))
+    return frozenset(protected)
+
+
+def flood_to_bench(
+    state: dict[Vector, tuple[object, ...]],
+    background: int,
+    bench: frozenset[Vector],
+    scheduler: str,
+) -> tuple[bool, int]:
+    protected = set(protected_targets(state))
+    frontier = {
+        target
+        for site, status in state.items()
+        if status == ("BG", background)
+        for axis in AXES
+        for target in (add(site, axis),)
+        if target in bench and target not in state and target not in protected
+    }
+    additions = 0
+    while frontier:
+        if scheduler == "lex_min":
+            target = min(frontier)
+        elif scheduler == "lex_max":
+            target = max(frontier)
+        elif scheduler == "near_first":
+            target = min(frontier, key=lambda item: (sum(map(abs, item)), item))
+        elif scheduler == "far_first":
+            target = max(frontier, key=lambda item: (sum(map(abs, item)), item))
+        else:
+            raise ValueError(scheduler)
+        frontier.remove(target)
+        if target in state:
+            continue
+        state[target] = ("BG", background)
+        additions += 1
+        for axis in AXES:
+            candidate = add(target, axis)
+            if (
+                candidate in bench and candidate not in state
+                and candidate not in protected
+            ):
+                frontier.add(candidate)
+    return set(state) == set(bench), additions
+
+
+def advance_triple_seed(
+    mask: int,
+    background: int,
+    order: tuple[str, ...],
+    scheduler: str,
+    bench: frozenset[Vector],
+) -> tuple[dict[Vector, tuple[object, ...]], bool, bool]:
+    state = status_seed(mask, background)
+    geometry = packet_geometry(mask, background)
+    antipodal_axis = geometry["antipodal_axis"]
+    singleton = geometry["singleton"]
+    assert isinstance(antipodal_axis, tuple) and isinstance(singleton, tuple)
+    ports = {
+        "L": antipodal_axis,
+        "R": tuple(-value for value in antipodal_axis),
+    }
+    progress = {"L": 0, "R": 0}
+    local = True
+    append_only = True
+    for token in order:
+        arm = token[0]
+        port = ports[arm]
+        if token[1] == "s":
+            source = port
+            target = add(port, singleton)
+            expected = ("PORT", singleton, background)
+            formed = ("STEP", singleton, background)
+            required_progress = 0
+        else:
+            source = add(port, singleton)
+            target = add(port, tuple(2 * value for value in singleton))
+            expected = ("STEP", singleton, background)
+            formed = ("END", singleton, background)
+            required_progress = 1
+        local &= sum(map(abs, sub(target, source))) == 1 and state.get(source) == expected
+        append_only &= target not in state and progress[arm] == required_progress
+        if target in state:
+            return state, False, False
+        state[target] = formed
+        progress[arm] += 1
+
+    launcher = tuple(2 * value for value in singleton)
+    end_sites = tuple(
+        add(port, tuple(2 * value for value in singleton))
+        for port in ports.values()
+    )
+    gate_neighbors = (
+        add(singleton, (0, 0, 0)),
+        *end_sites,
+    )
+    local &= all(sum(map(abs, sub(site, launcher))) == 1 for site in gate_neighbors)
+    gate_ok = (
+        state.get(singleton) == ("GPORT", singleton, background)
+        and all(state.get(site) == ("END", singleton, background) for site in end_sites)
+        and launcher not in state
+    )
+    append_only &= gate_ok
+    if gate_ok:
+        state[launcher] = ("BG", background)
+    full, _additions = flood_to_bench(state, background, bench, scheduler)
+    return state, local and full, append_only
+
+
+@cache
+def permanent_status_front_facts() -> dict[str, object]:
+    cases = tuple(
+        (mask, background)
+        for mask in sorted(allowed_words())
+        for background in packet_backgrounds(mask)
+    )
+    packet_validations = []
+    central_masks = []
+    for mask, background in cases:
+        support = packet_geometry(mask, background)["support"]
+        assert isinstance(support, frozenset)
+        bit = support_bit(support, background)
+        packet_validations.append(validate_support(support, background))
+        central_masks.append(shell_mask_from_function((0, 0, 0), bit) == mask)
+
+    visible_states = {
+        *(('LOCK', bit) for bit in (0, 1)),
+        *(('BG', bit) for bit in (0, 1)),
+        *((kind, direction, background)
+          for kind in ("PORT", "GPORT", "STEP", "END")
+          for direction in AXES for background in (0, 1)),
+    }
+    status_decode_valid = all(status_bit(status) in (0, 1) for status in visible_states)
+    bench = frozenset(itertools.product(range(-3, 4), repeat=3))
+    schedulers = ("lex_min", "lex_max", "near_first", "far_first")
+    interleavings = tuple(
+        order for order in itertools.permutations(("Ls", "Le", "Rs", "Re"))
+        if order.index("Ls") < order.index("Le")
+        and order.index("Rs") < order.index("Re")
+    )
+    causal_prefixes = {
+        order[:length]
+        for order in interleavings
+        for length in range(len(order) + 1)
+    }
+    reachable_arm_states = {
+        (
+            sum(token.startswith("L") for token in prefix),
+            sum(token.startswith("R") for token in prefix),
+        )
+        for prefix in causal_prefixes
+    }
+    guard_completeness = []
+    background_reachability = []
+    background_write_compatibility = []
+    for mask, background in cases:
+        seed = status_seed(mask, background)
+        formed_background_statuses = {
+            status for status in seed.values() if status[0] == "BG"
+        } | {("BG", background)}
+        background_write_compatibility.append(
+            formed_background_statuses == {("BG", background)}
+        )
+        footprint = set(role_footprint(mask, background))
+        if mask.bit_count() == 3:
+            geometry = packet_geometry(mask, background)
+            antipodal_axis = geometry["antipodal_axis"]
+            singleton = geometry["singleton"]
+            assert isinstance(antipodal_axis, tuple) and isinstance(singleton, tuple)
+            opposite = tuple(-value for value in antipodal_axis)
+            expected_protection = {
+                add(port, singleton)
+                for port in (antipodal_axis, opposite)
+            } | {
+                add(port, tuple(2 * value for value in singleton))
+                for port in (antipodal_axis, opposite)
+            } | {tuple(2 * value for value in singleton)}
+            launchers = {tuple(2 * value for value in singleton)}
+        else:
+            expected_protection = set()
+            launchers = {
+                site for site, status in seed.items()
+                if status == ("BG", background)
+            }
+        guard_completeness.append(
+            set(protected_targets(seed)) == expected_protection
+        )
+        blocked = footprint - launchers
+        reachable = set(launchers)
+        frontier = set(launchers)
+        while frontier:
+            site = frontier.pop()
+            for axis in AXES:
+                target = add(site, axis)
+                if target in bench and target not in blocked and target not in reachable:
+                    reachable.add(target)
+                    frontier.add(target)
+        background_reachability.append((set(bench) - blocked) <= reachable)
+    schedule_results = []
+    terminal_signatures: dict[tuple[int, int], set[tuple[tuple[Vector, tuple[object, ...]], ...]]] = {}
+    strict_local = []
+    append_only = []
+    for mask, background in cases:
+        target_support = packet_geometry(mask, background)["support"]
+        assert isinstance(target_support, frozenset)
+        orders = interleavings if mask.bit_count() == 3 else ((),)
+        for order in orders:
+            for scheduler in schedulers:
+                if mask.bit_count() == 3:
+                    state, local_ok, append_ok = advance_triple_seed(
+                        mask, background, order, scheduler, bench
+                    )
+                else:
+                    state = status_seed(mask, background)
+                    full, _additions = flood_to_bench(
+                        state, background, bench, scheduler
+                    )
+                    local_ok = full
+                    append_ok = True
+                decoded = {site: status_bit(status) for site, status in state.items()}
+                target = support_bit(target_support, background)
+                schedule_results.append(
+                    set(state) == set(bench)
+                    and all(decoded[site] == target(site) for site in bench)
+                )
+                strict_local.append(local_ok)
+                append_only.append(append_ok)
+                terminal_signatures.setdefault((mask, background), set()).add(
+                    tuple(sorted(state.items()))
+                )
+
+    # Explicit unguarded race: A's background wave occupies B's two STEP
+    # targets before B advances.  The delayed cap then lacks both terminal
+    # defects and produces masks 10 and 9.
+    race_mask = 7
+    race_background = 0
+    center_a = (0, 0, 0)
+    center_b = (0, -6, 0)
+    cap = packet_geometry(race_mask, race_background)
+    cap_support = cap["support"]
+    defects = cap["defects"]
+    assert isinstance(cap_support, frozenset) and isinstance(defects, frozenset)
+    complete_union = {
+        add(center, site) for center in (center_a, center_b) for site in cap_support
+    }
+    raced_support = {
+        add(center_a, site) for site in cap_support
+    } | {
+        add(center_b, site) for site in defects
+    }
+    raced_bit = support_bit(raced_support, race_background)
+    race_bad_masks = tuple(sorted(
+        shell_mask_from_function(center, raced_bit)
+        for center in ((-1, -7, 0), (1, -7, 0))
+    ))
+
+    # Same-background compact caps and their permanent builder footprints are
+    # compatible on the registered close pair and right-triangle benches.
+    branch_cases = {
+        background: tuple(
+            mask for mask in sorted(allowed_words())
+            if background in packet_backgrounds(mask)
+        )
+        for background in (0, 1)
+    }
+    pair_pass = 0
+    pair_total = 0
+    triple_pass = 0
+    triple_total = 0
+    for background in (0, 1):
+        masks = branch_cases[background]
+        for left_mask in masks:
+            for right_mask in masks:
+                pair_total += 1
+                centers = ((0, 0, 0), (5, 0, 0))
+                footprints = tuple({add(center, site) for site in role_footprint(mask, background)}
+                                   for center, mask in zip(centers, (left_mask, right_mask)))
+                support = {
+                    add(center, site)
+                    for center, mask in zip(centers, (left_mask, right_mask))
+                    for site in packet_geometry(mask, background)["support"]
+                }
+                pair_pass += int(not (footprints[0] & footprints[1]) and validate_support(support, background))
+        centers3 = ((0, 0, 0), (5, 0, 0), (0, 5, 0))
+        for masks3 in itertools.product(masks, repeat=3):
+            triple_total += 1
+            footprints = tuple(
+                {add(center, site) for site in role_footprint(mask, background)}
+                for center, mask in zip(centers3, masks3)
+            )
+            disjoint = all(
+                not (footprints[left] & footprints[right])
+                for left, right in itertools.combinations(range(3), 2)
+            )
+            support = {
+                add(center, site)
+                for center, mask in zip(centers3, masks3)
+                for site in packet_geometry(mask, background)["support"]
+            }
+            triple_pass += int(disjoint and validate_support(support, background))
+
+    # A reachable launched-front witness makes the mixed-background obstruction
+    # stronger than a two-bit cartoon.  The proper half-turn maps the complete
+    # m=7,s=0 role state at +3e_y to the complemented m=52,s=1 state at -3e_y.
+    # Their launchers at +/-e_y make opposite BG proposals to the empty fixed
+    # midpoint.  No status in the 52-symbol alphabet is fixed by this combined
+    # rotation-plus-complement action.
+    rotation = sp.diag(1, -1, -1)
+    left_center = (0, 3, 0)
+    right_center = (0, -3, 0)
+    left_status = launched_role_state(7, 0, left_center)
+    right_status = launched_role_state(52, 1, right_center)
+    pn_arrangement = left_status | right_status
+    transformed_arrangement = {
+        tuple(map(int, rotation * sp.Matrix(site))): transform_status(status, rotation)
+        for site, status in pn_arrangement.items()
+    }
+    midpoint = (0, 0, 0)
+    midpoint_fixed = tuple(map(int, rotation * sp.Matrix(midpoint))) == midpoint
+    fixed_statuses = tuple(
+        status for status in visible_states
+        if transform_status(status, rotation) == status
+    )
+    midpoint_proposals = (
+        pn_arrangement.get((0, 1, 0)),
+        pn_arrangement.get((0, -1, 0)),
+    )
+
+    return {
+        "packet_cases": len(cases),
+        "nontriple_cases": sum(mask.bit_count() != 3 for mask, _background in cases),
+        "triple_background_branches": sum(mask.bit_count() == 3 for mask, _background in cases),
+        "packet_formulas_valid": all(packet_validations) and all(central_masks),
+        "visible_status_alphabet": len(visible_states),
+        "status_decode_valid": status_decode_valid,
+        "ungated_reachable_arm_states": len(reachable_arm_states),
+        "gated_launched_states": int(bool(interleavings)),
+        "causal_prefix_histories": len(causal_prefixes),
+        "arm_interleavings": len(interleavings),
+        "selected_flood_policy_count": len(schedulers),
+        "single_seed_schedule_cases": len(schedule_results),
+        "single_seed_all_pass": all(schedule_results),
+        "single_seed_terminal_confluent": all(len(items) == 1 for items in terminal_signatures.values()),
+        "all_role_targets_protected": all(guard_completeness),
+        "background_domain_connected_on_bench": all(background_reachability),
+        "all_six_complete_arm_linear_extensions_exhausted": len(interleavings) == 6,
+        "background_writes_identical_and_persistently_enabled": (
+            all(background_write_compatibility)
+            and all(guard_completeness)
+            and all(background_reachability)
+        ),
+        "finite_bench_all_fair_schedule_confluence": (
+            all(background_write_compatibility)
+            and all(guard_completeness)
+            and all(background_reachability)
+            and len(interleavings) == 6
+            and all(schedule_results)
+        ),
+        "role_formation_strict_nearest_neighbor": all(strict_local),
+        "guarded_rule_maximum_radius": 2,
+        "append_only_permanent": all(append_only),
+        "future_target_consulted": False,
+        "supplied_role_bearing_seed": True,
+        "fresh_target_is_domain_restriction": True,
+        "absence_assigned_readable_content": False,
+        "naive_race_complete_cap_union_valid": validate_support(complete_union, race_background),
+        "naive_race_bad_masks": race_bad_masks,
+        "naive_unguarded_multi_seed_confluent": not race_bad_masks,
+        "same_background_pair_pass_total": (pair_pass, pair_total),
+        "same_background_triple_pass_total": (triple_pass, triple_total),
+        "guarded_same_background_disjoint_fronts_confluent": (
+            pair_pass == pair_total == 722
+            and triple_pass == triple_total == 13718
+        ),
+        "mixed_background_stabilizer_rotation_proper": int(rotation.det()) == 1,
+        "mixed_background_stabilizer_swaps_seeds": (
+            tuple(map(int, rotation * sp.Matrix(left_center))) == right_center
+            and tuple(map(int, rotation * sp.Matrix(right_center))) == left_center
+        ),
+        "mixed_background_arrangement_invariant_after_complement": (
+            transformed_arrangement == pn_arrangement
+        ),
+        "mixed_background_full_launched_status_witness": (
+            len(left_status) == len(right_status) == 12
+            and set(left_status).isdisjoint(right_status)
+        ),
+        "mixed_background_midpoint_fixed": midpoint_fixed,
+        "mixed_background_midpoint_empty": midpoint not in pn_arrangement,
+        "mixed_background_opposed_midpoint_proposals": (
+            midpoint_proposals == (("BG", 0), ("BG", 1))
+        ),
+        "mixed_background_fixed_status_options": fixed_statuses,
+        "mixed_background_midpoint_symmetry_obstruction": (
+            int(rotation.det()) == 1
+            and transformed_arrangement == pn_arrangement
+            and midpoint_fixed
+            and midpoint not in pn_arrangement
+            and midpoint_proposals == (("BG", 0), ("BG", 1))
+            and not fixed_statuses
+        ),
+        "mixed_background_obstruction_scope": "deterministic_single_site_progress_under_proper_rotation_plus_complement",
+        "mixed_background_random_record_escape_open": True,
+        "overlapping_role_footprints_resolved": False,
+        "one_site_m2_status_compilation": False,
+        "normalized_local_cp_instrument": False,
+        "state_action_seed_selection": False,
+        "occurrence_rate_selected": False,
+        "complete_history": False,
+    }
+
+
 @cache
 def h1_bridge_facts() -> dict[str, object]:
     # Every coarse Block-211 effect is positive and normalized.  Refining a
@@ -901,6 +1464,7 @@ def claims() -> dict[str, object]:
     nuclei = finite_nucleus_facts()
     planar = planar_facts()
     front = front_facts()
+    status_front = permanent_status_front_facts()
     h1 = h1_bridge_facts()
     return {
         "authority": (
@@ -995,6 +1559,47 @@ def claims() -> dict[str, object]:
             and not front["ambiguous_branch_rule_selected"]
             and not front["tentative_status_dynamics_constructed"]
         ),
+        "permanent_status_front": (
+            status_front["packet_cases"] == 38
+            and status_front["nontriple_cases"] == 14
+            and status_front["triple_background_branches"] == 24
+            and status_front["packet_formulas_valid"]
+            and status_front["visible_status_alphabet"] == 52
+            and status_front["status_decode_valid"]
+            and status_front["ungated_reachable_arm_states"] == 9
+            and status_front["gated_launched_states"] == 1
+            and status_front["causal_prefix_histories"] == 19
+            and status_front["arm_interleavings"] == 6
+            and status_front["selected_flood_policy_count"] == 4
+            and status_front["single_seed_schedule_cases"] == 632
+            and status_front["single_seed_all_pass"]
+            and status_front["single_seed_terminal_confluent"]
+            and status_front["all_role_targets_protected"]
+            and status_front["background_domain_connected_on_bench"]
+            and status_front["all_six_complete_arm_linear_extensions_exhausted"]
+            and status_front["background_writes_identical_and_persistently_enabled"]
+            and status_front["finite_bench_all_fair_schedule_confluence"]
+            and status_front["role_formation_strict_nearest_neighbor"]
+            and status_front["guarded_rule_maximum_radius"] == 2
+            and status_front["append_only_permanent"]
+            and not status_front["future_target_consulted"]
+            and status_front["naive_race_complete_cap_union_valid"]
+            and status_front["naive_race_bad_masks"] == (9, 10)
+            and not status_front["naive_unguarded_multi_seed_confluent"]
+            and status_front["same_background_pair_pass_total"] == (722, 722)
+            and status_front["same_background_triple_pass_total"] == (13718, 13718)
+            and status_front["guarded_same_background_disjoint_fronts_confluent"]
+            and status_front["mixed_background_stabilizer_rotation_proper"]
+            and status_front["mixed_background_stabilizer_swaps_seeds"]
+            and status_front["mixed_background_arrangement_invariant_after_complement"]
+            and status_front["mixed_background_full_launched_status_witness"]
+            and status_front["mixed_background_midpoint_fixed"]
+            and status_front["mixed_background_midpoint_empty"]
+            and status_front["mixed_background_opposed_midpoint_proposals"]
+            and status_front["mixed_background_fixed_status_options"] == ()
+            and status_front["mixed_background_midpoint_symmetry_obstruction"]
+            and status_front["mixed_background_random_record_escape_open"]
+        ),
         "conditional_h1_packet": (
             h1["coarse_effects_positive"] and h1["coarse_povm_normalized"]
             and h1["word_refinement_effect_identity"]
@@ -1011,6 +1616,15 @@ def claims() -> dict[str, object]:
             and not front["complete_history"]
             and not front["static_completion_is_formation"]
             and not h1["autonomous_event_process"]
+            and status_front["supplied_role_bearing_seed"]
+            and status_front["fresh_target_is_domain_restriction"]
+            and not status_front["absence_assigned_readable_content"]
+            and not status_front["overlapping_role_footprints_resolved"]
+            and not status_front["one_site_m2_status_compilation"]
+            and not status_front["normalized_local_cp_instrument"]
+            and not status_front["state_action_seed_selection"]
+            and not status_front["occurrence_rate_selected"]
+            and not status_front["complete_history"]
         ),
         "h2_sealed": True,
         "axiom_update": False,
@@ -1045,6 +1659,13 @@ def mutate(values: dict[str, object], mutation: str) -> None:
         "break_five_bit_completion": ("native_front_boundary", False),
         "claim_native_seed_propagates": ("native_front_boundary", False),
         "claim_native_front_complete": ("native_front_boundary", False),
+        "break_packet_formula": ("permanent_status_front", False),
+        "break_permanent_status_confluence": ("permanent_status_front", False),
+        "change_status_alphabet": ("permanent_status_front", False),
+        "claim_status_seed_not_supplied": ("honest_boundary", False),
+        "claim_status_m2_cp_compiled": ("honest_boundary", False),
+        "claim_status_dense_collision_safe": ("honest_boundary", False),
+        "break_mixed_symmetry_witness": ("permanent_status_front", False),
         "claim_static_is_formation": ("honest_boundary", False),
         "claim_event_site_selected": ("honest_boundary", False),
         "claim_occurrence_rate_selected": ("honest_boundary", False),
@@ -1076,7 +1697,7 @@ def run(mutation: str = "") -> tuple[int, int, dict[str, object]]:
         "H": (values["planar_interfaces"] is True, "the width-zero-to-eight planar census has exact positives and a separately analytic transverse rigidity boundary"),
         "I": (values["native_front_boundary"] is True, "five-of-six unique propagation is conflict-free on catalog controls but stalls and leaves 12 branch contexts"),
         "J": (values["conditional_h1_packet"] is True, "the coarse POVM refines into finite-completion words only for a supplied fresh event region"),
-        "K": (values["honest_boundary"] is True, "site, rate, dense collision resolution, tentative dynamics and repeated history remain absent"),
+        "K": (values["honest_boundary"] is True, "the status front remains supplied and uncompiled into M2/CP, while mixed or overlapping fronts, site, rate and history remain absent"),
         "L": (values["h2_sealed"] is True, "H2 is sealed"),
         "M": (
             values["axiom_update"] is False
@@ -1086,6 +1707,7 @@ def run(mutation: str = "") -> tuple[int, int, dict[str, object]]:
             and values["universal_no_go"] is False,
             "no axiom, audit, obligation, TOE, retained or universal-no-go promotion is made",
         ),
+        "N": (values["permanent_status_front"] is True, "a 52-state append-only radius-two guard grows all supplied seeds and conflues for the tested disjoint same-background multi-front benches"),
     }
     passed = sum(ok for ok, _description in checks.values())
     failed = len(checks) - passed
@@ -1097,6 +1719,7 @@ def run(mutation: str = "") -> tuple[int, int, dict[str, object]]:
         "nuclei": finite_nucleus_facts(),
         "planar": planar_facts(),
         "front": front_facts(),
+        "status_front": permanent_status_front_facts(),
         "h1": h1_bridge_facts(),
     }
     return passed, failed, facts
@@ -1130,6 +1753,7 @@ def main() -> int:
     nuclei = facts["nuclei"]
     planar = facts["planar"]
     front = facts["front"]
+    status_front = facts["status_front"]
     h1 = facts["h1"]
     print(
         "CUBE_EDGE_NORMAL_FORM: words="
@@ -1176,32 +1800,42 @@ def main() -> int:
         "unique propagation is conflict-free but stalls."
     )
     print(
+        "PERMANENT_STATUS_FRONT: packet cases="
+        f"{status_front['packet_cases']}; alphabet={status_front['visible_status_alphabet']}; "
+        f"single-seed selected-policy cases={status_front['single_seed_schedule_cases']}/"
+        f"{status_front['single_seed_schedule_cases']}; naive race masks="
+        f"{status_front['naive_race_bad_masks']}; guarded same-background pair/triple="
+        f"{status_front['same_background_pair_pass_total']}/"
+        f"{status_front['same_background_triple_pass_total']}; full launched mixed witness="
+        f"{status_front['mixed_background_full_launched_status_witness']}."
+    )
+    print(
         "CONDITIONAL_H1_PACKET: coarse POVM positive/normalized="
         f"{h1['coarse_effects_positive']}/{h1['coarse_povm_normalized']}; "
         f"word refinement identity={h1['word_refinement_effect_identity']}; "
         f"finite completion={h1['conditional_finite_region_dilation_exists']}; supplied fresh region only."
     )
     print(
-        "per_element: checked all 26 readable words, their directed-cube-edge decoder, 52 scalar-exterior completions, every parent coarse effect, and all 194 catalog seed types."
+        "per_element: checked all 26 readable words, their directed-cube-edge decoder, 52 scalar-exterior completions, 38 closed-form packets, 52 permanent status symbols, every parent coarse effect, and all 194 catalog seed types."
     )
     print(
-        "per_site: checked all 192 five-known shell contexts, every affected shell of every finite witness, 194 radius-two and cube seeds, and safe-separated finite unions; dense autonomous selection was checked and not executed — no selector."
+        "per_site: checked all 192 five-known shell contexts, every affected shell of every finite witness, 194 radius-two and cube seeds, 632 selected hostile-policy single-seed cases, the explicit masks-9/10 race, and a full launched-status mixed midpoint witness; state/action event-site selection was checked and not executed — no selector."
     )
     print(
         "per_mode: checked both scalar exteriors, both checkerboard parities, all signed axes, planar widths zero through eight, finite pads zero through four, unique and ambiguous completion modes; H2 was checked and not executed — sealed."
     )
     print(
-        "per_block: checked 37,636 checkerboard pairs, 37,636 planar boundary pairs, three 194-case close-seed controls, all 194 compact catalog nuclei, and the conditional finite-region POVM refinement."
+        "per_block: checked 37,636 checkerboard pairs, 37,636 planar boundary pairs, three 194-case close-seed controls, 722 guarded same-background pair branches, 13,718 guarded same-background triple branches, all 194 compact catalog nuclei, and the conditional finite-region POVM refinement."
     )
     print(
-        "lattice_wide: checked exact heterogeneous global fields, arbitrary sufficiently separated finite multi-seed unions, and directional planar rigidity; event site/rate, dense collision handshake, tentative CP front, repeated history, retention and TOE movement were checked and not executed."
+        "lattice_wide: checked exact heterogeneous fields, arbitrary finite unions of sufficiently separated prescribed catalog patches, directional planar rigidity, and a supplied append-only permanent-status front for disjoint same-background seeds; mixed/overlapping arbitration, M2/CP compilation, event site/rate, repeated history, retention and TOE movement were checked and not executed."
     )
     for label, (ok, description) in facts["checks"].items():
         print(f"CHECK {label}: {'PASS' if ok else 'FAIL'} - {description}.")
     print(
-        "RESULT: the full 26-word binary rule removes the rigid-content obstruction: it factorizes by parity, admits scalar/domain-wall heterogeneity, and gives compact completions for every word and every periodic seed, so arbitrary sufficiently separated events coexist. The native five-of-six rule still stalls, and no state/action-derived site, ambiguous branch, rate, dense collision process or repeated history is selected."
+        "RESULT: the full 26-word binary rule removes the static heterogeneity and sufficiently-separated prescribed-patch obstruction. Although native permanent-bit propagation stalls, a supplied role-bearing seed has a non-oracular append-only permanent-status front; a radius-two guard makes the tested disjoint same-background pairs and triples confluent. Mixed-background/overlapping arbitration, M2/CP compilation, autonomous site/rate and repeated history remain open."
     )
-    print("CLASSIFICATION: partial_native_binary_static_and_conditional_finite_event_bridge; H2/axioms/TOE unchanged.")
+    print("CLASSIFICATION: partial_static_mergeability_plus_conditional_permanent_status_front; H2/axioms/TOE unchanged.")
     print(f"TOTAL: PASS={passed} FAIL={failed}")
     return 0 if failed == 0 else 1
 

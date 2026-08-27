@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_d4_h1_full_shell_sft_mergeable_front_selector_2026_08_27.py
+runner_sha256: aac65047814513004252bfe763a8f1ccb1d54ff80eff32246f05708407047f8f
+input_fingerprint_sha256: d02d7ddd16e84273e430a46cf6a7149afcccdbe536026302d4996de5b14c8431
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 55.42
+status: ok
+----- stdout -----
+CUBE_EDGE_NORMAL_FORM: words=26 = directed_edges 24 + scalar_loops 2; weights={0: 1, 1: 6, 3: 12, 5: 6, 6: 1}; decoder/cubic/complement exact.
+CHECKERBOARD_FACTOR: restriction classes even/odd=98/98; all ordered catalog pairs=37636 valid, distinct splices=9604.
+HETEROGENEITY: layered no-isolated-bit equivalence=True over 8188 controls; P/N step masks=(0, 2, 62, 63); vector/scalar one-flip degree histogram={0: 192, 64: 2}.
+SCALAR_MOATS: exterior/mask tests=52; max minimum radius=5; P/N histograms={1: 7, 3: 13, 5: 6}/{3: 13, 5: 6, 1: 7}; all models independently re-evaluated against every affected shell.
+FINITE_NUCLEI: catalog cap histogram={0: 1, 1: 120, 2: 72, 4: 1}; support halfwidth vector/N=4/6; safe axial separations={'vector_vector': 11, 'vector_N': 13, 'N_N': 15}; base-vs-all close complete=True.
+PLANAR_WIDTH_0_TO_8: minima={0: 196, 2: 256, 3: 128, 5: 384, 6: 320, 7: 1088, 8: 448}; pass/unresolved=2820/34816; perpendicular halfspace rigid=True; parallel antipodal wall=True.
+NATIVE_FRONT: five-known completions={2: 12, 1: 132, 0: 48}; L1-B2 growth=0/194; cube vector/scalar growth=192/192 and 0/2; unique propagation is conflict-free but stalls.
+PERMANENT_STATUS_FRONT: packet cases=38; alphabet=52; single-seed selected-policy cases=632/632; naive race masks=(9, 10); guarded same-background pair/triple=(722, 722)/(13718, 13718); full launched mixed witness=True.
+CONDITIONAL_H1_PACKET: coarse POVM positive/normalized=True/True; word refinement identity=True; finite completion=True; supplied fresh region only.
+per_element: checked all 26 readable words, their directed-cube-edge decoder, 52 scalar-exterior completions, 38 closed-form packets, 52 permanent status symbols, every parent coarse effect, and all 194 catalog seed types.
+per_site: checked all 192 five-known shell contexts, every affected shell of every finite witness, 194 radius-two and cube seeds, 632 selected hostile-policy single-seed cases, the explicit masks-9/10 race, and a full launched-status mixed midpoint witness; state/action event-site selection was checked and not executed — no selector.
+per_mode: checked both scalar exteriors, both checkerboard parities, all signed axes, planar widths zero through eight, finite pads zero through four, unique and ambiguous completion modes; H2 was checked and not executed — sealed.
+per_block: checked 37,636 checkerboard pairs, 37,636 planar boundary pairs, three 194-case close-seed controls, 722 guarded same-background pair branches, 13,718 guarded same-background triple branches, all 194 compact catalog nuclei, and the conditional finite-region POVM refinement.
+lattice_wide: checked exact heterogeneous fields, arbitrary finite unions of sufficiently separated prescribed catalog patches, directional planar rigidity, and a supplied append-only permanent-status front for disjoint same-background seeds; mixed/overlapping arbitration, M2/CP compilation, event site/rate, repeated history, retention and TOE movement were checked and not executed.
+CHECK A: PASS - authority, parent and immutable preregistration pins are exact.
+CHECK B: PASS - the 26 words are exactly directed 3-cube edges plus two scalar loops with the parent decoder.
+CHECK C: PASS - checkerboard factorization gives 9604 valid catalog splices from all 194 squared ordered pairs.
+CHECK D: PASS - layered domain walls coexist with one-bit rigidity of the periodic vector catalog.
+CHECK E: PASS - all 26 central words extend into either scalar exterior by minimum radius at most five.
+CHECK F: PASS - all 194 radius-two catalog seeds have compact P-capped extensions and safe-spacing composition.
+CHECK G: PASS - one D+z seed coextends with all 194 second types at separation five on each axis without claiming the full pair square.
+CHECK H: PASS - the width-zero-to-eight planar census has exact positives and a separately analytic transverse rigidity boundary.
+CHECK I: PASS - five-of-six unique propagation is conflict-free on catalog controls but stalls and leaves 12 branch contexts.
+CHECK J: PASS - the coarse POVM refines into finite-completion words only for a supplied fresh event region.
+CHECK K: PASS - the status front remains supplied and uncompiled into M2/CP, while mixed or overlapping fronts, site, rate and history remain absent.
+CHECK L: PASS - H2 is sealed.
+CHECK M: PASS - no axiom, audit, obligation, TOE, retained or universal-no-go promotion is made.
+CHECK N: PASS - a 52-state append-only radius-two guard grows all supplied seeds and conflues for the tested disjoint same-background multi-front benches.
+RESULT: the full 26-word binary rule removes the static heterogeneity and sufficiently-separated prescribed-patch obstruction. Although native permanent-bit propagation stalls, a supplied role-bearing seed has a non-oracular append-only permanent-status front; a radius-two guard makes the tested disjoint same-background pairs and triples confluent. Mixed-background/overlapping arbitration, M2/CP compilation, autonomous site/rate and repeated history remain open.
+CLASSIFICATION: partial_static_mergeability_plus_conditional_permanent_status_front; H2/axioms/TOE unchanged.
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

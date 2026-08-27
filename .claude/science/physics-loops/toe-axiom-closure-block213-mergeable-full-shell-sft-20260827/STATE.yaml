@@ -1,10 +1,10 @@
 loop_id: toe-axiom-closure-block213-mergeable-full-shell-sft-20260827
 campaign_number: 213
-status: preregistration
-phase: full_shell_sft_pre_execution
-actual_current_surface_status: open
-target_claim_type: null
-conditional_surface_status: null
+status: ready_to_commit_with_inherited_pipeline_exception
+phase: guarded_same_background_front_positive_mixed_cp_boundary
+actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
+conditional_surface_status: bounded-support
 hypothetical_axiom_status: null
 admitted_observation_status: null
 trace_class: direct_blocker_closure
@@ -15,15 +15,73 @@ source_of_blocker_text: block212_handoff
 parent_commit: ee72530dd92ad5701224f36d4ed0040c1057d704
 parent_pr: 7754
 origin_main: 76df4becc8233080bc5a10a4baf55f83e80f8f2d
-prereg_commit: pending
+prereg_commit: 249ffece4bac4e8e527884becfa97f871ba33596
 h1_fixture_frozen: true
 h2_sealed: true
 review_loop_allowed: false
-active_route: full_26_word_sft_mergeability
-strongest_unresolved_obligation: "replace rigid periodic phase agreement by an exact local mergeable configuration law, then supply formation/history"
-next_exact_action: "derive structural controls and solve all preregistered scalar/vector planar bridge classes"
-stop_condition: "complete-law witness, exhaustive frozen-family falsification, or strongest exact bounded bridge with named residual"
+active_route: mixed_background_m2_cp_front_compilation
+strongest_unresolved_obligation: "compile the guarded 52-state front into lawful M2/CP content, resolve mixed-background and overlapping fronts, then derive seed/site/rate and repeated histories"
+next_exact_action: "package the independent reconstruction, then preregister the smallest normalized carrier and mixed-collision grammar"
+stop_condition: "package after fresh independent front execution and conformance"
+decision_class: partial
+readable_words: 26
+cube_directed_edges: 24
+cube_scalar_loops: 2
+checkerboard_catalog_pairs_valid: 37636
+distinct_checkerboard_catalog_splices: 9604
+layered_no_isolated_bit_family: true
+scalar_exterior_word_tests: 52
+maximum_minimum_scalar_moat_radius: 5
+catalog_seed_types_p_capped: 194
+catalog_minimum_pad_histogram: {0: 1, 1: 120, 2: 72, 4: 1}
+safe_axial_center_separations: {vector_vector: 11, vector_N: 13, N_N: 15}
+safe_separated_prescribed_patch_union: true
+dense_collision_confluence: false
+planar_boundary_pairs: 37636
+planar_widths_tested: [0, 1, 2, 3, 4, 5, 6, 7, 8]
+planar_pairs_joining_by_width_eight: 2820
+planar_pairs_solver_unresolved_through_width_eight: 34816
+planar_unsat_proof_certificates_emitted: false
+perpendicular_vector_halfspace_rigidity: true
+parallel_antipodal_wall_exists: true
+native_l1_radius_two_seed_types_with_growth: 0
+native_cube_vector_types_with_growth: 192
+native_cube_scalar_types_with_growth: 0
+native_five_of_six_front_complete: false
+closed_form_packet_branches: 38
+permanent_status_alphabet: 52
+permanent_status_records_append_only: true
+permanent_status_future_oracle: false
+permanent_status_single_seed_selected_policy_cases: 632
+permanent_status_single_seed_pass: 632
+permanent_status_all_fair_finite_bench_lemma: true
+naive_unguarded_race_forbidden_masks: [9, 10]
+guarded_rule_maximum_radius: 2
+guarded_same_background_pair_pass: 722_of_722
+guarded_same_background_triple_pass: 13718_of_13718
+mixed_background_full_launched_status_witness: true
+mixed_background_deterministic_single_site_progress_obstruction: true
+mixed_background_random_record_escape_open: true
+overlapping_role_footprints_resolved: false
+one_site_m2_status_compilation: false
+normalized_local_cp_instrument: false
+supplied_role_bearing_seed: true
+conditional_finite_region_h1_packet: true
+supplied_fresh_region: true
+local_many_input_cp_front: false
+event_site_selected: false
+occurrence_rate_selected: false
+complete_history: false
+panel_bounded_progress_votes: 5_of_5
+panel_complete_law_votes: 0_of_5
+axiom_semantics_clarification_candidate: "may a law's domain inspect unused Record capacity without assigning readable content to absence"
 axiom_update: none
 obligation_retirement: 0
 toe_percentage_movement: 0
-
+primary_checks: 14_of_14
+primary_mutations_rejected: 40_of_40
+independent_checks: 15_of_15
+independent_mutations_rejected: 68_of_68
+pipeline_status: inherited_dependency_policy_epoch_mismatch_at_stage_7
+pipeline_block213_local_gates_pass: true
+pipeline_review_loop_owned_epoch_edited: false

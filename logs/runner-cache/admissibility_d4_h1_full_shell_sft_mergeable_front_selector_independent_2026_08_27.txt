@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_d4_h1_full_shell_sft_mergeable_front_selector_independent_2026_08_27.py
+runner_sha256: b94c41f4be30baddd4237a044f65d31a600d32551ba251e5d386099144426eff
+input_fingerprint_sha256: d02d7ddd16e84273e430a46cf6a7149afcccdbe536026302d4996de5b14c8431
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 48.54
+status: ok
+----- stdout -----
+CUBE_EDGE: words=26=24+2; weights={0: 1, 1: 6, 3: 12, 5: 6, 6: 1}; decoder, complement and 24-frame covariance exact.
+PARITY_FACTOR: classes=98/98; pairs=37636; distinct valid splices=9604; layered controls=8188.
+SCALAR_MOATS: cases=52; max radius=5; histograms={1: 7, 3: 13, 5: 6}/{1: 7, 3: 13, 5: 6}; witnesses=52/52.
+COMPACT_NUCLEI: types=194; pad histogram={0: 1, 1: 120, 2: 72, 4: 1}; witnesses=194/194; support halfwidth vector/N=4/6.
+PLANAR_0_8: minima={0: 196, 2: 256, 3: 128, 5: 384, 6: 320, 7: 1088, 8: 448}; joined/unresolved=2820/34816; positive witnesses all revalidated; wider/nonplanar routes open.
+NATIVE_FRONT: five-known={0: 48, 1: 132, 2: 12}; L1 growth=0/194; cube vector/scalar growth=192/192 and 0/2; conflict-free stall.
+PERMANENT_STATUS_FRONT: packets/statuses=38/52; launch states=9 ungated + 1 gated; prefix histories/arm extensions=19/6; selected policies=(632, 632); analytic all-fair finite-bench confluence exact.
+PERMANENT_STATUS_MULTI: race centers/masks=((0, 0, 0), (0, -6, 0))/(9, 10); guarded pair/triangle=(722, 722)/(13718, 13718); full launched-status mixed-s symmetry witness exact and conditional.
+CONDITIONAL_EFFECTS: cases=4; coarse/refined effects=32/104; normalization and fiber sums exact; supplied fresh region only.
+per_element: checked all 26 cube-edge words, 38 low-defect packet formulas, 52 permanent status symbols, exact decoder fibers, 32 coarse effects, and 104 refined word effects.
+per_site: checked every affected packet shell, 632 selected-policy single-seed executions, the exact masks-9/10 race and a full reachable launched-status symmetry witness; event-site selection was checked and not executed — no selector is supplied.
+per_mode: checked two exteriors, both checkerboard parities, all signed axes, nine ungated plus one gated launch states, 19 causal-prefix histories, six arm extensions and four selected flood policies; H2 was checked and not executed — sealed.
+per_block: checked 37636 checkerboard pairs, 37636 planar pairs, all 194 compact nuclei, 722 guarded same-label axial pair branches, 13718 guarded same-label right-triangle triple branches, and four conditional effect-refinement cases.
+lattice_wide: checked parity-factorized heterogeneous fields and analytic fair-order confluence only for supplied disjoint same-label permanent-status fronts; mixed/overlapping arbitration, M2/CP compilation, event site/rate and repeated history were checked and not executed.
+A: PASS — parent, preregistration and immutable authority pins are exact.
+B: PASS — the 26 words are exactly 24 directed cube edges plus two scalar loops with the frozen decoder.
+C: PASS — all 194 squared catalog splices factor by checkerboard parity into 9604 valid fields.
+D: PASS — layered domain walls coexist with one-bit rigidity of the periodic vector catalog.
+E: PASS — all 52 word/exterior cases have revalidated scalar-moat witnesses by L1 radius at most five.
+F: PASS — all 194 radius-two catalog patches have revalidated compact P-capped nuclei with the exact pad histogram.
+G: PASS — all 37636 period-four-transverse planar pairs reproduce the width-zero-to-eight solver census and every positive witness.
+H: PASS — the planar negative stays width-bounded while perpendicular rigidity and a parallel antipodal wall are exact.
+I: PASS — all 192 five-known contexts split into 48 impossible, 132 unique and 12 ambiguous cases.
+J: PASS — the native permanent-binary unique-completion rule is conflict-free on catalog controls but stalls.
+K: PASS — the positive coarse POVM refines exactly into 26 finite-completion word effects for a supplied fresh region.
+L: PASS — the scoped negatives pass N1-N8 while branch selection, site, rate, dense handshake and history remain open.
+M: PASS — H2, axiom, obligation, TOE, retained status and universal no-go remain unchanged.
+N: PASS — all 38 packets and 52 statuses pass the exact launch graph, 632 selected policies and analytic all-fair finite-bench confluence checks.
+O: PASS — the masks-9/10 race, all stated guarded same-label branches and the full launched-status conditional midpoint obstruction are exact.
+CLASSIFICATION: partial_static_mergeability_plus_conditional_permanent_status_front; mixed/overlapping arbitration, M2/CP, site/rate/history open; H2/axiom/TOE/retention unchanged.
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

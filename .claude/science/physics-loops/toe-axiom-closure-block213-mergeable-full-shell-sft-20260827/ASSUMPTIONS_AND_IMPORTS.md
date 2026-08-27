@@ -4,13 +4,14 @@
 |---|---|---|---|---|
 | Block-212 26-word language and periodic fields | exact frozen input | proposed bounded parent | yes | independently reconstruct word set and field values where practical |
 | minimal axioms | foundation semantics | pinned current authority | yes | no edit |
-| SAT solver | finite existence/falsification engine | standard proof machinery with emitted certificates/checks | yes for finite census | independently verify witnesses and unsat scopes |
+| SAT solver | finite existence/falsification engine | standard proof machinery; positive models revalidated, UNSAT certificates not emitted | yes for finite census | independently reproduce results; keep negative counts computationally bounded |
 | transverse period four and width at most eight | preregistered planar test family | explicit finite scope | yes for bounded result only | widen only in a later preregistered block |
 | supplied asymptotic boundary fields | interface diagnostic | conditional control | yes for bridge test, no for closure | compile or remove through local front |
 | global phase, site, clock, activity, priority or scheduler | possible shortcut | unsupported import | forbidden for closure | derive or keep out |
+| mutable tentative Record | apparent front shortcut | conflicts with Record permanence | forbidden | append permanent status about an uncommitted payload, or use an explicitly unrecorded precursor |
+| absence as a readable value | apparent eligibility input | excluded by current Record wording | forbidden | distinguish a law-domain restriction to unused capacity from assigning content to absence; clarify if load-bearing |
 | H2 | held-out discriminator | sealed | no | later campaign only |
 
 Counterfactuals are explicit: a static bridge does not imply a local algorithm;
 a local sampler does not imply append-only formation; a finite torus does not
 imply an infinite history; and approximate H1 matching does not select a law.
-

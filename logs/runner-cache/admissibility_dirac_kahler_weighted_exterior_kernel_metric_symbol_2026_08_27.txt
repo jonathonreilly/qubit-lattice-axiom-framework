@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_weighted_exterior_kernel_metric_symbol_2026_08_27.py
+runner_sha256: d04d76b37b7e7c647fea9af046b5e3207fe50b1d9235fc0aeeb17b828433bd02
+input_fingerprint_sha256: 613dec6079a96a1fcb612e1508bbebc00f5466410561402943f62e65b92252f2
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 4.75
+status: ok
+----- stdout -----
+[PASS] A1 exterior creation operators are nilpotent and anticommute
+[PASS] A2 D3 has blocks (V, V g^-1, E g E/V, 1/V) in the declared basis
+[PASS] B1 D3-adjoint equals metric contraction except for det(g)/V^2 on degree 2->1
+[PASS] B2 every weighted Gamma_d is exactly self-adjoint in the D3 inner product
+[PASS] C1 all six generalized-Clifford residuals vanish on V^2=det(g)
+[PASS] C2 the exact closure defect trace is 4(det(g)/V^2-1)(g^-1)_dd
+[PASS] C3 positive-metric full-carrier closure selects V^2=det(g), not an arbitrary V
+[PASS] C4 Gamma(q)^2 = q^T g^-1 q on the selected metric-volume locus
+[PASS] D1 at g=I,V=1 the carrier is I8 and the exact intertwiner is orthogonal up to 8
+[PASS] D2 the flat exterior generators intertwine with two copies of Block 209's generators
+[PASS] D3 the transported flat staggering scalarizes every corner link to eta_d I8/2
+[PASS] E1 flat exact momentum histograms reproduce sum sin^2(k_d)
+[PASS] E2 c=3/5,V=4/5 is an exact metric-volume point and D3 restricts to the landed 2D Hodge form
+[PASS] E3 the landed 2D window squares to (q_t^2-2c q_t q_x+q_x^2)/(1-c^2)
+[PASS] F1 the all-shear rational witness has det(g)=V^2 and positive D3
+[PASS] F2 the rational witness has exact off-diagonal co-metric mixing and closes the generalized Clifford algebra
+[PASS] F3 all 64 exact 4^3 momenta give the six predicted mixed-metric values
+[PASS] G1 scalar axis-weighted eta links have zero mixed coefficient, while the sheared metric requires one
+MEASURED
+  stack parent: 4e9931a970ded94f769553da9e6d77770d612f64
+  scientific parent: Block 209 three-direction rule geometry
+  main at campaign start: 66e478505e055faf4a5b9e6f4883211e44304718
+  det(g): -c_tx**2 + 2*c_tx*c_ty*c_xy - c_ty**2 - c_xy**2 + 1
+  selected normalization: V^2 = det(g)
+  weighted symbol: Gamma(q)^2 = q^T g^-1 q I8
+  rational 3D witness: c=11/50, V=117/125, histogram={0: 8, 1525/1404: 24, 625/351: 12, 100/39: 12, 25/12: 2, 5125/1404: 6}
+  scope: finite exact conditional D3/exterior construction; no physical time, Lorentzian cone, dynamics, gravity, or continuum limit
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

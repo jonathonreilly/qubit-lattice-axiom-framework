@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_d4_h1_action_native_score_quotient_record_dilation_independent_2026_08_27.py
+runner_sha256: 45b508529e0f6bb9ca36147bf2861feaada8c55aeed0145f79059359fd087441
+input_fingerprint_sha256: d56424085ae23f7d6e52d8f1a12dfc273fa44e4228db70e0ded17d4dd6d64e89
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 15.67
+status: ok
+----- stdout -----
+CUBIC_QUOTIENT: rotations=24; fine orbits=(6, 6, 24); 36 -> 8; classes=(4, 4, 4, 4, 4, 4, 6, 6).
+COARSE_POVM: d=1 ranks=(4, 4, 4, 4, 4, 4, 4, 4), sum=32, min_eigenvalue=10416/97969; d=2 ranks=(4, 4, 4, 4, 4, 4, 4, 4), sum=32, min_eigenvalue=1064452704/9597924961.
+SPECTRAL_DILATION: dimensions={1: 32, 2: 32}; exact positive roots, isometry, sector recovery, and rank-sum minimality pass.
+SHELL_CODE: quotient code=8/8; one-shell mask orbits=(1, 1, 3, 3, 6, 6, 8, 12, 12, 12); raw orbit 24 has no one-shell image; two-shell raw escape=36/36.
+H1_DECODE: calibrated and self-normalizing dot/cross, forward, and actual reverse in 8 depth/radius/orientation cases; conditional vectors=4.
+ATTACHMENT: semantic blank differs from locked zero and is not a Hilbert state/CPTP channel; eight codes write once and remain permanent.
+per_element: checked all 36 fine effects, all eight coarse effects at depths one and two, every exact eigenvalue, and every spectral square-root sector.
+per_site: checked all six signed-neighbor sites from the semantic blank marker through one locked bit and every attempted overwrite; a Hilbert blank and CPTP formation channel were checked and not executed — reason: this finite map supplies neither construction.
+per_mode: checked every fixed H1 incoming/outgoing unit factor with calibrated and self-normalizing score decoders at both depths, both radii, and both orientations, including literal actual reverse; H2 was checked and not executed — reason: H2 is sealed outside the frozen fixture.
+per_block: checked all 24 cubic frames, the full 36-to-eight quotient, both 32-dimensional minimal dilations, all 64 one-shell binary patterns, and the two-shell escape.
+lattice_wide: checked and not executed — reason: the checker constructs one event-conditioned local block and no autonomous competing-event, formation-clock, or general lattice-history process.
+CHECK A: PASS - 24 proper-cubic frames act covariantly on the exact 36-to-eight dot/cross quotient
+CHECK B: PASS - the depth-one coarse POVM is exact, positive, normalized, and has rank pattern 4x8 with Naimark minimum 32
+CHECK C: PASS - the depth-two coarse POVM is exact, positive, normalized, and has rank pattern 4x8 with Naimark minimum 32
+CHECK D: PASS - cell-frame transport plus quotient covariance proves coarse-POVM covariance in all 24 frames and both readings
+CHECK E: PASS - exact spectral projectors give minimal 32-by-4 Naimark isometries and recover every sector effect
+CHECK F: PASS - the eight quotient labels have orthogonal, proper-cubic-covariant one-shell binary codewords
+CHECK G: PASS - exhaustive six-bit orbit mismatch excludes only the raw one-shell injection; quotient and two-shell escapes remain explicit
+CHECK H: PASS - coarse probabilities decode the exact H1 dot and cross moments at both depths, radii, and orientations
+CHECK I: PASS - decoded ratios reproduce the raw H1 forward source and the literal actual-reverse polynomial in all eight control cases
+CHECK J: PASS - depth and radius controls give four distinct exact conditional probability vectors
+CHECK K: PASS - all eight codewords attach by monotone blank-to-locked writes with exact no-overwrite permanence
+CHECK L: PASS - the semantic blank marker is neither a Hilbert blank state nor a CPTP formation channel; attachment remains event-conditioned only
+CHECK M: PASS - the moment norm self-normalizes every H1 ratio and both source directions without supplied radius or transfer magnitude
+RESULT: exact independent score quotient, full-rank minimal spectral dilations, one-shell quotient code, narrowly scoped raw one-shell obstruction, self-normalizing H1 decode, and semantic blank-to-locked attachment boundary.
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

@@ -1,16 +1,16 @@
 loop_id: toe-axiom-closure-block211-action-native-minimal-record-dilation-20260827
 campaign_number: 211
-status: preregistering
-phase: joint_action_cell_record_bridge
-actual_current_surface_status: uncomputed
-target_claim_type: open
+status: result_packaging
+phase: exact_partial_joint_bridge_complete
+actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
 trace_class: direct_blocker_closure
 target_claim_id: admissibility_d4_h1_action_native_minimal_record_dilation_joint_bridge
 target_blocker_text: "derive the action/cell-to-M2 solder and attach the normalized H1 branches to readable permanent Records"
 source_of_blocker_text: block208_handoff
 reachability_to_target: direct
 artifact_role: theorem_or_bounded_theorem_after_execution
-next_trace_action: "execute the frozen one-many-none joint bridge tests"
+next_trace_action: "construct one autonomous overlap-safe repeated local history rule around the exact eight-label bridge"
 parent_commit: 92dd84b62f4d9fe4d0867a83926b6c25adbc77f9
 origin_main: 76df4becc8233080bc5a10a4baf55f83e80f8f2d
 parent_pr: 7748
@@ -21,6 +21,23 @@ h2_sealed: true
 target_results_executed_before_registration: false
 review_loop_allowed: false
 axiom_edit_allowed_only_at_complete_same_input_threshold: true
+primary_exact_checks: 11_of_11
+primary_mutations_rejected: 33_of_33
+independent_exact_checks: 13_of_13
+independent_mutations_rejected: 19_of_19
+five_physicist_panel: 5_of_5_significant_bounded_0_of_5_complete
+walsh_hom_dimensions: [0, 1, 1, 1]
+score_quotient: 36_to_8
+minimal_coarse_naimark_dimension: 32
+one_shell_record_codewords: 8
+self_normalizing_score_decoder: true
+semantic_single_event_attachment: true
+autonomous_formation_channel: false
+conditional_probability_vectors_witnessed: 4
+complete_one_many_none: unresolved
+h1_complete_physical_ownership: false
+h2_sealed_after_execution: true
+axiom_update: none
 obligation_retirement: 0
 toe_percentage_movement: 0
 toe_records: 95_92_50

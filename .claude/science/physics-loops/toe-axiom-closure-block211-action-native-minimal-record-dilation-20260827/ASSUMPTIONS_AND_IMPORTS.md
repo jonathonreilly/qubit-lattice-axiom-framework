@@ -18,13 +18,26 @@
 
 ## Zero-weight open conditions
 
-- identification of native action/link data with actual neighboring `M2(C)`
-  possibilities;
-- selection of first corner harmonic over readable higher harmonics;
-- selection of one versus repeated cell depth;
-- physical placement/serialization of the orthogonal register;
-- formation site/rate, clock, and general multi-event collision semantics;
+- selection of the unique active first corner harmonic over the two readable
+  radial-null higher harmonics;
+- selection of the endpoint-state radius and one versus repeated cell depth;
+- physical typing of the cell legs and identification of the candidate
+  trace/POVM probabilities with the one Admissibility distribution;
+- a Hilbert blank/write coupling, formation trigger/site/rate, and clock;
+- compatibility, ordering, and no-overwrite behavior for overlapping events;
 - extension from the fixed H1 mode/fixture to the total law domain.
 
 These conditions may be closed by calculation, left open, or used to falsify
 the direct family.  None may be silently imported.
+
+## Imports removed by Block 211
+
+- H1 no longer needs 36 mathematical outcome labels: the exact deterministic
+  dot/cross sufficient quotient has eight labels.
+- The quotient has an explicit orthogonal proper-cubic code on one actual
+  six-neighbor shell.
+- The positive gain `r^2(65/313)^(2d)` is inferred from the Record score norm;
+  neither radius nor transfer magnitude is passed to the decoder.
+- One supplied fresh event has an exact axiom-semantic no-overwrite attachment.
+  This does not promote the semantic blank marker into a Hilbert state or
+  formation channel.

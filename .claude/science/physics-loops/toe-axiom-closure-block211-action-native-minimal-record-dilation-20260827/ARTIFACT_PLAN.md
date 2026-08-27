@@ -16,3 +16,15 @@ Planned surfaces:
 No audit verdict, audit ledger, premise registry, current minimal axiom,
 governance file, or citation manifest belongs in this campaign.  Review-loop
 is not used.
+
+## Execution receipt
+
+- Primary exact runner: `11/11`; all `33/33` claim mutations rejected.
+- Structurally independent spectral checker: `13/13`; all `19/19`
+  nonidentical mutations rejected; no primary import.
+- The source note carries the full N1--N8 record.  Both cached stdout streams
+  carry substantive five-resolution N5 certificates.
+- The five-physicist result panel returned `5/5` significant bounded progress
+  and `0/5` complete physical closure.
+- No axiom, premise registry, audit verdict/ledger, governance surface, or
+  citation manifest is authored.

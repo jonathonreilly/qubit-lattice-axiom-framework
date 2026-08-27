@@ -15,3 +15,21 @@ and terminal obligation:
 
 At least five materially distinct families are therefore live before any
 negative conclusion.  Failure of one family does not close the others.
+
+## Result synthesis
+
+| family | result | remaining terminal obligation |
+|---|---|---|
+| first-harmonic solder | unique active degree-one map `A_rad^T`; positive H1 corner states | exclude/read physically the degree-two/three null harmonics and select the radius |
+| direct cell-dual instrument | positive normalized covariant menus at depths one/two | select depth/parity and physical leg/trace-law typing |
+| minimal Hilbert register | exact minimal `32 x 4` dilation for each fixed coarse POVM | do not confuse fixed-map dilation with law selection or a Record |
+| geometric shell register | eight quotient labels fit one shell; raw 36 fit two shells but not one | derive the physical code coupling inside an autonomous rule |
+| append-only Record process | exact semantic attachment for one supplied fresh event | build Hilbert/CPTP formation, trigger, rate, overlap and history composition |
+| coarse sufficient quotient | unique coarsest deterministic dot/cross quotient; self-normalizing H1 decoder | minimize on the complete probability family and test full histories |
+| positive-action metric selector | favorable averaged D3 scout returns `A_rad^T` conditionally | derive carrier typing, metric provenance and the minimization law |
+
+The next portfolio leader is an autonomous overlapping-shell repeated
+CP/QCA rule using the already-exact quotient/code.  It has higher closure value
+than another single-event H1 compiler because it directly tests the collapsed
+`W_law` and `W_history` walls and returns a complete-law `one/many/none`
+classification.

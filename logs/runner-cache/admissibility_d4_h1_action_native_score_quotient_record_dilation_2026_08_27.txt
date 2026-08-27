@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_d4_h1_action_native_score_quotient_record_dilation_2026_08_27.py
+runner_sha256: 2d01d61448434a54d05ffc06985171fdc65a70a772c1610e68c17ce58236ee4a
+input_fingerprint_sha256: 94a0303e2ac3e5928c2f71a03e888e727a98da1f767aa68aeedab40b9a821909
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 44.37
+status: ok
+----- stdout -----
+ACTION_SOLDER: Walsh Hom dimensions=(0, 1, 1, 1); degree-one right inverse exact; degree-two/three radial-null; full affine section dimension=2.
+CELL_EFFECTS: T determinant=105625/30664297; depths 1/2 positive, normalized, full-rank and 24-frame covariant; depth is not selected.
+SCORE_QUOTIENT: 36 -> 8 classes with sizes=(4, 4, 4, 4, 4, 4, 6, 6); Hilbert minimum=3 qubits; one-shell cubic code=8/8.
+REGISTER: raw pair orbit sizes=(6, 6, 24); one-shell binary orbits have no regular 24 orbit=True; two-shell raw code and one-shell coarse code pass.
+H1_RECORD_DECODE: grouped=18/18; atoms=136/136; temporal rows=128; witness=1/8; depths 1/2 and radii 1,1/2 all give zero forward/actual-reverse residual; the score norm self-calibrates radius and transfer magnitude.
+PROBABILITY_IMAGE: conditional frozen controls=4 distinct laws; complete-law one/many/none remains unresolved because state radius, cell depth and autonomous formation are not selected.
+ATTACHMENT: orthogonal six-site axiom-semantic blank-to-locked patterns=8; no overwrite/permanence pass; one supplied event only, with no blank-state or formation channel.
+per_element: checked every degree-zero through degree-three corner intertwiner, all depth-one/depth-two pulled effects, eight coarse effects, Cholesky Kraus block, and local binary Record projector.
+per_site: checked one central two-endpoint event and all six signed-neighbor Record sites; each site changes from blank to one orthogonal bit exactly once; autonomous site/rate selection was checked and not executed — no such rule was derived.
+per_mode: checked every fixed H1 incoming and outgoing unit link factor, the same-transfer different-incoming control, both realifications, and literal actual reverse; H2 was checked and not executed — H2 is sealed outside this fixture.
+per_block: checked the full 36-to-eight score quotient, one-shell and two-shell cubic code orbits, the 32-by-4 Naimark isometry, and inherited H1 grouped 18/18 and atom 136/136 source identity.
+lattice_wide: checked all 24 proper-cubic transports of the cell effects and shell codes; autonomous competing events, general full-Z3 histories, formation clocks, retained closure, and TOE movement were checked and not executed — no such process was derived.
+CHECK A: PASS - authority and immutable preregistration are pinned
+CHECK B: PASS - the H1-active corner solder is unique at Walsh degree one while two readable higher-harmonic null directions survive
+CHECK C: PASS - the unit-link first-harmonic M2 orbit is exact but its Bloch radius is not selected
+CHECK D: PASS - one and two direct cell uses induce positive normalized covariant endpoint effect menus with an invertible decoder
+CHECK E: PASS - the 36 outcomes have a unique coarsest deterministic eight-class dot/cross score quotient
+CHECK F: PASS - the raw 36 labels need two geometric shells, while the eight-class quotient has one exact cubic and endpoint-reversing shell code
+CHECK G: PASS - each depth-one/depth-two coarse POVM has an exact square-root Naimark isometry
+CHECK H: PASS - the shell code admits an axiom-semantic no-overwrite attachment for one supplied event, not a formation channel
+CHECK I: PASS - self-normalized Record probabilities reproduce both H1 directions, the collision, 128 temporal rows and the one-eighth witness
+CHECK J: PASS - two cell depths and two state radii give four distinct conditional readable laws with the same calibrated H1 source
+CHECK K: PASS - physical selection, autonomous formation/history, H2, axiom update, retention, obligation retirement and TOE movement remain open
+RESULT: exact action-active degree-one solder, cell-induced effect menus, eight-class score quotient, orthogonal cubic shell code and event-conditioned semantic attachment; multiple conditional readable laws and no selected autonomous physical law.
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

@@ -1,7 +1,7 @@
 # PR Backlog
 
-- Open one stacked draft PR on Block 211 after fresh caches, citation manifest,
-  conformance, and lock release.
+- Stacked draft PR `#7754` is open on Block 211 with fresh caches, citation
+  manifest, conformance receipt, and the cooperative lock released.
 - Treat PR `#7752` (gravity positivity) and `#7753` (joint-pin order) as
   orthogonal science stacks.  Expected shared integration surfaces are the
   citation manifest and campaign-control prose only.

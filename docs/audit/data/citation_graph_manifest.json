@@ -1,6 +1,6 @@
 {
- "edge_count": 16137,
- "node_count": 5633,
+ "edge_count": 16139,
+ "node_count": 5637,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -578,6 +578,10 @@
    "deps_hash": "baf7a8bac36b",
    "out_degree": 3
   },
+  "admissibility_dirac_kahler_joint_pin_order_extended_alphabet_bounded_theorem_note_2026-08-27": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "admissibility_dirac_kahler_link_curvature_scout_bounded_theorem_note_2026-08-20": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -738,6 +742,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "admissibility_dirac_kahler_six_face_positivity_classification_bounded_theorem_note_2026-08-27": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "admissibility_dirac_kahler_sourced_quotient_execution_bounded_theorem_note_2026-08-17": {
    "deps_hash": "7d2c967c528b",
    "out_degree": 4
@@ -803,6 +811,14 @@
    "out_degree": 3
   },
   "admissibility_dirac_kahler_validation_battery_bounded_theorem_note_2026-08-20": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "admissibility_dirac_kahler_variable_cell_weighted_skew_edge_coupling_bounded_theorem_note_2026-08-27": {
+   "deps_hash": "00f199c10f1e",
+   "out_degree": 2
+  },
+  "admissibility_dirac_kahler_weighted_exterior_kernel_metric_symbol_bounded_theorem_note_2026-08-27": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

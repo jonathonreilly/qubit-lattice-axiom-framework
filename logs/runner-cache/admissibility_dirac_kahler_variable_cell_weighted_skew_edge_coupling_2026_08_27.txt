@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_variable_cell_weighted_skew_edge_coupling_2026_08_27.py
+runner_sha256: e5d31447ffb650222e96bbe7e95f38c0e0a5048bdf65ef8327eb4ffe8b70b6a6
+input_fingerprint_sha256: 63ba269a7f3d9d6bf7f55b140e969664de939fbc3808768d3d8c0bbc28dc20e4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.42
+status: ok
+----- stdout -----
+[PASS] metric-volume locus: all four rational cells lie exactly on V^2=det(g)
+[PASS] carrier positivity: every displayed D3 is exact symmetric positive definite
+[PASS] local Clifford algebra: every Gamma is D3-self-adjoint with the local co-metric
+[PASS] variable-cell weighted skew: the ring kernel is exact in the block D3 inner product
+[PASS] nearest-neighbour locality: every nonzero block lies on a declared edge
+[PASS] quadratic norm: the exact derivative vanishes for a nonzero rational probe
+[PASS] cross-form sufficiency: arbitrary edge forms produce an exact weighted-skew kernel
+[PASS] cross-form necessity: every form is recovered uniquely as C_sr=D_s K_sr
+[PASS] solution-space dimension: four eight-component edges carry 4*8^2 coordinates
+[PASS] cross-form covariance: four independent local frame changes obey the bilinear law
+[PASS] kernel covariance: the full operator transforms by block conjugation
+[PASS] frame-independent adjoint: weighted skew survives all local frame changes
+[PASS] constant-cell reduction: identity comparisons give Gamma_d(T_d-T_d^-1)/2
+[PASS] constant-cell skew symmetry: the specialized operator is ordinary skew-symmetric
+SUMMARY:
+  exact checks: PASS=14 FAIL=0
+  variable cells: 4; oriented representative edges: 4; carrier dimension: 8
+  theorem: weighted-skew edge kernels are uniquely parameterized by cross-forms
+  constructed family: endpoint-symmetric, local-frame covariant, constant-link normalized
+  boundary: comparison-map selection, tangent compatibility, curvature, physical time, and dynamics remain separate
+
+----- stderr -----
+

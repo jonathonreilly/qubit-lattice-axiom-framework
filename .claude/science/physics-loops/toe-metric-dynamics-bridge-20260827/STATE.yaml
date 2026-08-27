@@ -1,0 +1,17 @@
+loop_slug: toe-metric-dynamics-bridge-20260827
+target: variable-cell exterior transport through curvature localization
+status: active
+max_cycles: 3
+completed_cycles: 1
+active_cycle: 1
+active_science_target: variable-cell weighted-skew edge coupling
+actual_current_surface_status: conditional-support
+target_claim_type: bounded_theorem
+trace_class: direct_blocker_closure
+base_commit: b2ebf69b0de86538c6e9cc0d3d4a96a4e0dc9a81
+origin_main_at_launch: 66e478505e055faf4a5b9e6f4883211e44304718
+axiom_changes: forbidden
+primitive_changes: forbidden
+merge_authority: none
+cycle_1_review_disposition: pass
+next_checkpoint: commit, stacked-tree validation, and open review PR

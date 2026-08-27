@@ -30,3 +30,15 @@ PASS, and an open unmerged review PR for each coherent block.
 Outcomes that do not count: wording-only reshuffles, a repeated parent-runner
 calculation, or a connection/curvature statement that silently assumes its
 selection rule.
+
+## Three-cycle completion disposition
+
+All three finite kinematic obligations are closed with exact runners and
+independent review: variable-cell weighted skew-adjointness, metric/Clifford-
+compatible transport, and faithful plaquette holonomy with a positive D3
+defect. The campaign therefore completes its stated three-block contract.
+
+This does not complete the broader TOE objective. The exact remaining
+physical gate is now localized: derive or discriminate a framework-native
+selection/dynamics law for the orthogonal edge factors, then test that same-
+action system at the OS/Lorentzian interface.

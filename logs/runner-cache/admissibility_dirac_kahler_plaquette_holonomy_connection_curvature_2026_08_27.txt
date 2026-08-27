@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_plaquette_holonomy_connection_curvature_2026_08_27.py
+runner_sha256: 3919097fdcbe89fa3e2a30f2fd6e34d40655349124891e49c551281bc6d0204b
+input_fingerprint_sha256: 7d755eafebc4343af550c6ac0b955780856f16dc865cabb597b4dbd44b5112e1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.83
+status: ok
+----- stdout -----
+[PASS] positive variable cells: every D3 is exact positive symmetric on V^2=det(g)
+[PASS] edge compatibility: all tangent maps and exterior links preserve endpoint metrics
+[PASS] closed-loop density cocycle: product sqrt(V_next/V_current)=1
+[PASS] tangent telescoping: H_A=E_0^-1(product R)E_0
+[PASS] exterior functoriality: H_U=Lambda(H_A) after density cancellation
+[PASS] loop carrier isometry: the full holonomy preserves the base D3 carrier
+[PASS] endpoint-only flat section: varying coframes with every R=I give identity holonomy
+[PASS] connection curvature carrier: nonidentity product R gives nonidentity compatible holonomy
+[PASS] exterior faithfulness: the degree-one block recovers the tangent holonomy exactly
+[PASS] positive plaquette defect: ||H_U-I||_D^2 is positive and equals the isometry trace form
+[PASS] flat plaquette defect: endpoint-only identity holonomy has exactly zero defect
+[PASS] single-angle control: trace Lambda(R)=32/5 and the positive defect is 16/5
+[PASS] coframe gauge law: edge maps stay fixed and product R conjugates at the base
+[PASS] base-point covariance: cyclic holonomy is conjugate by the first edge map
+[PASS] base-point invariant defect: the D3 plaquette scalar is unchanged
+[PASS] orientation reversal: the reverse plaquette holonomies are exact inverses
+[PASS] compatible edge collapse: both endpoint forms agree around the plaquette
+[PASS] operator coexistence: nontrivial holonomy preserves global weighted skew-adjointness
+SUMMARY: PASS=18 FAIL=0
+RESULT:
+  plaquette theorem: endpoint coframes and density factors telescope exactly
+  curvature carrier: full exterior holonomy is faithful to the ordered orthogonal edge product
+  scalar diagnostic: the D3 plaquette defect is positive, base-point invariant, and zero exactly at identity holonomy
+  follow-on obligations: R selection, plaquette action, time interpretation, gravity dynamics, and continuum limit
+
+----- stderr -----
+

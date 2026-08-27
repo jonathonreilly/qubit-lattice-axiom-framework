@@ -41,3 +41,28 @@ Independent review-loop disposition: `pass` after correcting one scope/import
 sentence to disclose that existing adjacency input consistently. The reviewer
 independently checked the four-degree carrier isometry, Clifford transport,
 mutation isolation, graph/cache evidence, and non-uniqueness boundary.
+
+## Cycle 3
+
+Proposed class: `bounded_theorem`.
+
+Actual surface status: `conditional-support` because Blocks 214-216 are
+stacked and unmerged and the orthogonal edge factors remain supplied rather
+than dynamically selected.
+
+Proof boundary: closed-loop coframe and density telescoping, exterior
+functoriality/faithfulness, endpoint-section flatness, nontrivial compatible
+holonomy, the positive D3 plaquette defect, gauge/base-point covariance, and
+coexistence with global weighted skew-adjointness are exact finite algebra.
+Selecting or evolving `R_sr`, choosing a physical curvature action, physical
+time, Lorentzian continuation, gravity dynamics, and the continuum limit are
+outside this certificate.
+
+Existing Lattice adjacency is the only axiom-level input. No new axiom,
+primitive, observed value, or fitted parameter is proposed. Independent
+review-loop disposition: `pass`. The reviewer independently checked product
+orientation, all holonomy/covariance identities, the defect trace and zero
+locus, an additional reflection witness, mutation isolation, no-go trigger,
+cache, manifest, and scope. Cluster-cap disposition: `pass`; the closed-loop
+holonomy and positive defect are new load-bearing objects with independent
+review value, rather than a restatement of the single-edge theorem.

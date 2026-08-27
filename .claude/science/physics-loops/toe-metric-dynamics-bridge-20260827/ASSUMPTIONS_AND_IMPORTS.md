@@ -8,6 +8,8 @@
 | link comparison U_sr | compare neighboring exterior fibres | derived from A once a tangent map is supplied | cycle 2 exterior-lift theorem | yes | yes for a chosen variable-cell operator | exact normalization and Clifford compatibility proved here | partially retired |
 | coframe E_s | square root of inverse metric | mathematical choice with local O(3) redundancy | cycle 2 factorization | yes for coordinates; no as physical observable | yes | quotient by E_s -> Q_s E_s | explicit gauge choice |
 | orthogonal edge factor R_sr | independent compatible connection data | support-only supplied input | cycle 2 factorization | yes for a nontrivial chosen connection | yes | derive a selection/action or retain as open | exposed, not selected |
+| closed plaquette composition | loop-level kinematic domain | zero-input structural use of local adjacency | cycle 3 | yes | yes for curvature carrier | exact ordered product | allowed |
+| D3 plaquette defect Q_p | positive conjugacy diagnostic | derived support, not selected action | cycle 3 | no for holonomy; yes only if later adopted dynamically | no | discriminate against other local class functions | diagnostic only |
 | physical time/Lorentzian map | physical interpretation | unsupported import if used | none | no in current block | yes for TOE completion | OS/Wick theorem | forbidden in current block |
 | gravity action/backreaction | dynamics | unsupported import if used | none | no in current block | yes for TOE completion | later variational/action route | forbidden in current block |
 
@@ -27,3 +29,8 @@ Cycle 2 retirement result: an arbitrary invertible fibre comparison is no
 longer needed once tangent/Clifford compatibility is imposed. It is replaced
 by the normalized exterior lift of `A=E_s^-1 R_sr E_r`. The orthogonal factor
 `R_sr` remains an honest supplied input rather than being hidden in `U_sr`.
+
+Cycle 3 retirement result: endpoint metric/coframe variation is not imported
+as plaquette curvature in the `R=I` section; those factors telescope exactly.
+Nontrivial holonomy is localized to the ordered orthogonal edge product. The
+positive `Q_p` is derived from the carrier but is not promoted to an action.

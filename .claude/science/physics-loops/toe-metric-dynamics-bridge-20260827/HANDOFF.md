@@ -12,12 +12,25 @@ cycle-1 cross-form collapses to the covariant centered half-hop. Independent
 review returned PASS after one axiom-disclosure wording fix; no mathematics
 was weakened.
 
-Exact next obligation: compose the compatible links around a plaquette and
-separate endpoint-coframe cancellation from nontrivial orthogonal holonomy.
+Cycle 2 open stacked review PR: #7758.
 
-Strength relation: cycle 2 is strictly stronger than weighted-skew-adjoint
-existence. Cycle 3 is strictly stronger than a single-edge intertwiner because
-it introduces loop composition and curvature content.
+Completed cycle 3: on a closed plaquette, endpoint coframes and
+volume densities telescope exactly, leaving
+`H_U=Lambda(E_0^-1(product R)E_0)`. The endpoint-only `R=I` section is flat;
+the natural exterior holonomy is faithful to nonidentity orthogonal product.
+A positive base-point-invariant D3 defect vanishes exactly at identity
+holonomy and is retained only as a diagnostic. Independent science review and
+the third-PR cluster-cap evaluation both returned PASS.
 
-Stop authority: none yet. Continue through three cycles unless the content or
-review gates expose a real blocker.
+Exact next obligation after cycle 3: derive or discriminate a framework-native
+local selection/dynamics law for `R_sr`, then test that same-action system at
+the OS/Lorentzian interface.
+
+Strength relation: cycle 3 is strictly stronger than a single-edge
+intertwiner because it introduces loop composition, faithful holonomy, and a
+positive curvature diagnostic. It does not silently rename those kinematics
+as a gravity action.
+
+Campaign stop: the requested three cycles are complete after cycle-3 PR
+delivery. Resume on the connection-selection/dynamics gate, not on additional
+kinematic polish.

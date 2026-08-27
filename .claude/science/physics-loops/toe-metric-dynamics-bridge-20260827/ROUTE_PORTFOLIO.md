@@ -22,8 +22,14 @@ Relevant families:
 | cross-form parameterization | constructive theorem | exact edgewise iff classification | closes weighted-adjoint edge blocker | 3 | low | cycle 1 |
 | endpoint square-root transport | constructive theorem | metric-compatible link factorization | exposes connection freedom | 3 | resolved: coframe gauge stated explicitly | cycle 2 complete pending review |
 | tangent-Clifford intertwiner | theorem/reduction | coupled fibre/tangent compatibility | proves local symbols glue under normalized lift | 3 | bounded: arbitrary-module uniqueness not claimed | cycle 2 complete pending review |
-| plaquette product | constructive theorem | holonomy decomposition | locates curvature carrier | 3 | medium | cycle 3 |
+| plaquette product | constructive theorem | holonomy decomposition and positive D3 defect | locates curvature carrier and next dynamics gate | 3 | bounded: diagnostic not action | cycle 3 complete; independent and cluster-cap PASS |
 | OS/Wick continuation now | stretch attempt | physical time map | could reach causal bridge | 3 | too early: variable connection unresolved | defer |
 
 The first three cycles are not corollary churn: each introduces a distinct
 object and terminal obligation—cross-form, compatible connection, holonomy.
+
+Cycle 3 content-integrity evidence: neither the ordered orthogonal product nor
+the closed-loop density cancellation, exterior faithfulness, base-point law,
+or positive plaquette defect occurs in cycles 1–2. These are loop-level
+objects that cannot be inferred from a single edge without the new closure and
+composition proof.

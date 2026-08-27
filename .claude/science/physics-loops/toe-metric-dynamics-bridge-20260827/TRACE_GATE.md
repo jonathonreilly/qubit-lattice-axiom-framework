@@ -30,3 +30,21 @@ independent connection data?
 
 Next trace action: prove the plaquette decomposition and run exact flat and
 nontrivial controls.
+
+## Cycle 3
+
+Classification: `direct_blocker_closure`.
+
+Target claim: the cycle-2 metric-compatible exterior-transport theorem.
+
+Exact blocker text: “plaquette holonomy/curvature decomposition”.
+
+Reachability: cycle 3 closes the exact loop-composition blocker. Coframes and
+densities telescope; normalized natural exterior holonomy is faithful to the
+ordered orthogonal edge product; the positive D3 defect detects identity
+versus nonidentity holonomy. The result exposes a strictly stronger physical
+gate rather than claiming it: select or evolve `R_sr` with a framework-native
+local law and test that same-action system at the OS/Lorentzian interface.
+
+Next trace action: connection-selection/dynamics campaign, then physical-time
+reconstruction on the selected variable-cell operator.

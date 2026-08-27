@@ -15,3 +15,8 @@ negative-claim gate is run.
 Cycle 2 proposes no negative theorem. In particular, failure of endpoint
 metrics to select `R_sr` is an underdetermination statement at this theorem
 boundary, not a global impossibility claim about framework dynamics.
+
+Cycle 3 also proposes no negative theorem. The exact identity holonomy of the
+endpoint-only `R=I` section does not exclude metric-dependent curvature in a
+future dynamical connection. The absence of a current selection law is an
+open derivation obligation, not a no-go result.

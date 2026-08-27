@@ -20,3 +20,7 @@ Cycle 3:
 - exact plaquette runner with flat and nontrivial controls;
 - independent review;
 - one stacked open PR if content-integrity and cluster-cap gates pass.
+
+Delivery status: cycles 1 and 2 are open as unmerged stacked PRs #7757 and
+#7758. Cycle 3 author artifacts, exact checks, independent science review, and
+third-PR cluster-cap evaluation all pass; stacked PR delivery remains.

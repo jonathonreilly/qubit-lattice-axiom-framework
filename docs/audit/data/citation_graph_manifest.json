@@ -1,6 +1,6 @@
 {
- "edge_count": 16133,
- "node_count": 5632,
+ "edge_count": 16137,
+ "node_count": 5633,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -653,6 +653,10 @@
   "admissibility_dirac_kahler_record_pinning_mixture_diagnostics_bounded_theorem_note_2026-08-26": {
    "deps_hash": "99a93e87d825",
    "out_degree": 3
+  },
+  "admissibility_dirac_kahler_refined_alphabet_macrorealist_landscape_bounded_theorem_note_2026-08-26": {
+   "deps_hash": "097a0f168d7c",
+   "out_degree": 4
   },
   "admissibility_dirac_kahler_refinement_census_stationary_kernel_bounded_theorem_note_2026-08-21": {
    "deps_hash": "e3b0c44298fc",

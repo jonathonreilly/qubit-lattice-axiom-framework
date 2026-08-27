@@ -1,0 +1,53 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_dirac_kahler_refined_alphabet_macrorealist_landscape_2026_08_26.py
+runner_sha256: 0320c2fa6605a5a8ad73c61142682b43a149ddfce9b3860029aa239ea85b4fb5
+input_fingerprint_sha256: e588c94f39110635f8cb32cde2aaebab97ddeadc972a9cead78a2babc5adf780
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 65.81
+status: ok
+----- stdout -----
+MEASURED elapsed=63s main=76df4becc8233080bc5a10a4baf55f83e80f8f2d
+C refined=(25, 12) ranks=(8, 9) single=(4, 4) baseline=(4, 5) row_ceiling=19
+D facets=48 truth_table=True profile_checks=52/208 defects=0/0 violations=0 argmax=((3, 4, 5), '01|23', 'a')
+E q_points=7 component_checks=392 defects=0/0 violations=0 argmax=-2 argmin=1/2
+SCOPE finite proposed-reading diagnostics only; richer alphabets, continuum q, physical joint identification, and other instruments remain open
+[PASS] A-1
+[PASS] A-2
+[PASS] B-1
+[PASS] B-2
+[PASS] B-3
+[PASS] B-4
+[PASS] B-5
+[PASS] B-6
+[PASS] B-7
+[PASS] C-1
+[PASS] C-2
+[PASS] C-3
+[PASS] C-4
+[PASS] D-1
+[PASS] D-2
+[PASS] D-3
+[PASS] D-4
+[PASS] E-1
+[PASS] E-2
+[PASS] E-3
+[PASS] F-1
+[PASS] F-2
+[PASS] F-3
+[PASS] F-4
+[PASS] F-5
+[PASS] F-6
+[PASS] G-1
+[PASS] G-2
+[PASS] G-3
+GATES A=PASS B=PASS C=PASS D=PASS E=PASS F=PASS G=PASS
+N5: per_element: The twelve declared substitution outcomes, six marginal contexts, four deterministic facet signs, and seven q values are finite imposed algebraic objects. They do not constitute a measurement alphabet, identified joint law, continuum dial, hidden-variable model, or physical selector; nothing is registered or adopted.
+per_site: The single declared W9-L5 context is solvable at ranks (4,4), while the six-context unit-sum real system has ranks (8,9) with an augmented pivot. Six normalization relations cap the 25-row coefficient rank at 19; they do not create an outcome-count threshold, and every richer structured alphabet remains open.
+per_mode: The complete four deterministic upper facets are evaluated on four chains and three splits, giving 48 exact values. The 52-profile calibration set contains every landscape profile used; all profiles sum to one and all 208 components are nonnegative. Every facet is strictly below one, conditional on the proposed W9 formation-weight reading.
+per_block: At the seven declared q values, all 392 used profile components are nonnegative and the profiles are normalized; the sampled K values move nonmonotonically and stay below one. No continuum-q conclusion, no claim that tuning cannot cross, and no structurally different instrument is excluded.
+lattice_wide: The results are a finite null sample and a twelve-column incompatibility certificate on one bench. They neither establish macrorealism nor exclude classical models, richer alphabets, joint-pin instruments, other carriers, or other parameter values; all content remains proposed_retained and TOE movement is zero.
+TOTAL: PASS=29 FAIL=0
+
+----- stderr -----
+

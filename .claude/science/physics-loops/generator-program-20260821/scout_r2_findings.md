@@ -181,6 +181,11 @@ diag(902775, 902775, 1581193, 1581193).
 
 All four diagonal entries are strictly positive, and the two strict inequalities above show that this point lies in an open cone rather than on an isolated ray. Therefore the PD cone is **nonempty**, but Block 197's completion does **not** select a canonical metric: the proposed one-dimensional canonical ray is **refuted** at this cut.
 
+**2026-08-27 review clarification.** The phrase "at this cut" is load-bearing:
+the calculation covers the one-site-shift condition and the declared Block-197
+completion only. It does not classify other commuting symmetries or physical
+selection principles, and it does not prove that canonicalization is impossible.
+
 ## R2-4 — endpoint signs confirmed; five more bisections; zero-crossing mechanism refuted
 
 At `m=9/20`, `T=16`, `X=4`, deep core `t0=3`, the exact endpoint factors are as follows. Each displayed quadratic occurs with multiplicity two.
@@ -302,5 +307,5 @@ Evidence boundary: all endpoint factorizations, discriminants, multiplicities, d
 | item | adversarial result |
 | --- | --- |
 | R2-1 | **Confirmed.** The genuine `W4` has the full `(2,2,2,4,4)` factorization above, including one nonreal palindromic quartic, one non-palindromic quadratic, and one non-palindromic quartic. The new-sector factor of `W^2` has zero real roots, so squaring does not realify the quartet. |
-| R2-2 | `6 -> 2` is **confirmed**. The `Y'` heavy compression is exactly `I_4`, so the next cut is `2 -> 2`; the PD cone is nonempty and open. A unique canonical PD ray is **refuted**. |
+| R2-2 | `6 -> 2` is **confirmed**. The `Y'` heavy compression is exactly `I_4`, so the next cut is `2 -> 2`; the PD cone is nonempty and open. A unique PD ray is **refuted under these two declared cuts only**; other selectors are unclassified. |
 | R2-4 | Endpoint signs and the final failing-side “trace sign only” checklist are **confirmed**, with five further bisections. The zero-crossing explanation is **refuted by the exact rational probe**: the sign change is consistent with one denominator pole, not a finite trace zero. |

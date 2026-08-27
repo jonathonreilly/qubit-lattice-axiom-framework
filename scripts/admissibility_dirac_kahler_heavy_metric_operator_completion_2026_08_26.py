@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
-"""BLOCK 199 -- THE HEAVY METRIC-OPERATOR COMPLETION: ON BLOCK 195's INTERIOR
+"""THE FINITE HEAVY METRIC-OPERATOR COMPLETION: ON THE DECLARED INTERIOR
 WINDOW THE HEAVY SECTOR'S RANK-TWO OS SELF-ADJOINTNESS DEFECT IS REMOVED BY AN
 EXACT RATIONAL METRIC, AND IT IS REMOVED BY EVERY POSITIVE-DEFINITE MEMBER OF A
-SIX-DIMENSIONAL CONE -- BUT NO SYMMETRY SELECTS ONE OF THEM.
+SIX-DIMENSIONAL CONE.  TWO DECLARED COMPATIBILITY CONDITIONS ARE THEN MEASURED
+WITHOUT CLAIMING THAT THEY EXHAUST POSSIBLE SELECTORS.
 
 THE RESULT, AND ITS EXACT SCOPE.  Block 195 descended the two-slice shift to an
 eight-dimensional OS quotient on the interior window D = {2, 3, 4} and split it
 by the two-site momentum involution.  On the LIGHT sector it reconstructed a
 positive OS-self-adjoint operator.  On the HEAVY sector it stopped: the OS Gram
 K_h does not symmetrize T_h, and the defect has EXACT RANK 2.  This block closes
-that leg, and the closure has two halves whose second half is a NEGATIVE.
+that finite algebraic leg and separately records two compatibility calculations.
 
   (i) THE COMPLETION, AND IT IS A CONE THEOREM RATHER THAN A LUCKY POINT.  The
       linear system Theta = Theta^T with Theta T_h = T_h^T Theta has TEN
@@ -28,7 +29,7 @@ that leg, and the closure has two halves whose second half is a NEGATIVE.
       certificate is radical-free; the identities it uses are gated on the
       PARAMETERIZATION of the space, not on samples.
 
- (ii) BUT NO SYMMETRY SELECTS A METRIC, AND THAT REFUTES THE ROUND-2 DESIGN.
+ (ii) TWO DECLARED COMPATIBILITY CONDITIONS LEAVE A FAMILY.
       Adjoining the one-site-shift condition S_h^T Theta S_h = Theta raises the
       combined rank from 4 to 8, leaving dimension EXACTLY 2 -- not 1.  The
       Block 197 completion cut that was supposed to finish the job is VACUOUS,
@@ -40,8 +41,8 @@ that leg, and the closure has two halves whose second half is a NEGATIVE.
 
       The surviving two-parameter family's positive-definite cone is NONEMPTY
       and OPEN -- an explicit rational box lies inside it -- so it contains no
-      distinguished ray.  THE PHYSICAL-METRIC FORK IS THEREFORE OPEN AS A
-      REFUTED CANONICALIZATION AND NOT AS A PENDING HOPE.
+      distinguished ray inside this displayed two-parameter family.  No claim
+      is made about other commuting symmetries or other selection principles.
 
 WHICH INNER PRODUCT IS WHICH IS SAID EXPLICITLY, BECAUSE TWO ARE IN PLAY.  Theta
 is NOT the OS inner product and is not derived from one: the OS Gram K_h
@@ -70,17 +71,17 @@ SEMIGROUP, A GENERATOR, A HAMILTONIAN, AN ENERGY, A MASS OR A CONTINUUM LIMIT.
      without a radical; the three family identities on the parameterization; and
      two exhibited positive-definite points with their products' minors.
 
-  3. THE NEGATIVE (F).  The two-parameter family's Sylvester minors as FORMULAS;
+  3. THE FAMILY GEOMETRY (F).  The two-parameter family's Sylvester minors as FORMULAS;
      the cone nonempty; the cone open, by an explicit rational box with two
      exact positive margins; and three pairwise non-proportional members, so the
      cone is not a ray.
 
-  4. GENERALITY (G).  The whole structure at (1/2, 1/3): same ranks, same
-     dimensions, same family shape, different polynomials.
+  4. SECOND-FIXTURE PERSISTENCE (G).  The whole structure at (1/2, 1/3):
+     same ranks, same dimensions, same family shape, different polynomials.
 
 WHAT IS NOT CLAIMED, STATED ONCE AND GATED AS CONSTANTS.  NO GRAVITY.  THETA IS
-NOT THE OS INNER PRODUCT.  THE PHYSICAL-METRIC FORK IS NOT CLOSED AND NO
-CANONICAL RAY EXISTS.  THE OS RECONSTRUCTION IS NOT COMPLETED.  NO GENERIC
+NOT THE OS INNER PRODUCT.  NO PHYSICAL METRIC IS IDENTIFIED, AND THE TWO TESTED
+CONDITIONS DO NOT EXHAUST POSSIBLE SELECTORS.  THE OS RECONSTRUCTION IS NOT COMPLETED.  NO GENERIC
 (m, c) THEOREM.  NO CONTINUUM.  NO DYNAMICS.  THE READINGS ARE READINGS.
 
 GATES
@@ -108,10 +109,10 @@ GATES
      squared characteristic polynomial; the positive spectrum by discriminant,
      product, sum and tau - 2, with no radical; the three identities on the
      PARAMETERIZATION; and the two exhibited positive-definite points.
-  F  THE NEGATIVE: the four minor formulas; the nonempty cone and the forced
+  F  THE FAMILY GEOMETRY: the four minor formulas; the nonempty cone and the forced
      (+, +, -, +) failure at (1, 0); the open box with its two exact margins;
      and three pairwise non-proportional positive-definite members.
-  G  GENERALITY at (1/2, 1/3): the structure, the completion and the family
+  G  SECOND-FIXTURE PERSISTENCE at (1/2, 1/3): the structure, completion and family
      shape, with every polynomial changed.
   H  the note at its final path, the N5 fence byte-identical, and the nsimplify
      count measured ZERO in this file's own source.
@@ -128,8 +129,9 @@ MUTATIONS
   SIX OF THE THIRTY-FIVE GUARD CORRECTIONS RATHER THAN RESULTS:
   claim_theta_is_os_metric asserts that Theta IS the OS inner product, which the
   rank-2 defect refutes; claim_fork_closed asserts that this block decides which
-  inner product is physical; claim_canonical_ray asserts the round-2 design's
-  refuted implication that a symmetry cut leaves a one-dimensional ray;
+  inner product is physical; claim_canonical_ray asserts that the two declared
+  compatibility conditions leave a one-dimensional ray, contrary to the
+  measured two-dimensional family;
   claim_reconstruction_complete asserts that the OS reconstruction is finished;
   break_yprime_vacuity asserts the Block 197 cut is non-trivial on the heavy
   sector, which it cannot be for ANY admissible X; and break_cone_open asserts
@@ -367,7 +369,8 @@ class Checks:
 
     def report(self) -> None:
         for key, statement, value in self.results:
-            print(f"[{'PASS' if value else 'FAIL'}] {key}: {statement}")
+            if not value:
+                print(f"[{'PASS' if value else 'FAIL'}] {key}: {statement}")
         print("GATES " + " ".join(
             f"{family}={'PASS' if value else 'FAIL'}"
             for family, value in self.families().items()))
@@ -501,8 +504,8 @@ REGISTERED_OBJECTS = ()
 ADOPTED_OBJECTS = ()
 # THE BANNER'S SECOND HALF, AS DECLARED MEASURED CONSTANTS.  ALL EIGHT ARE FALSE
 # AND STAY FALSE.  THE SECOND AND THE FOURTH ARE THE TWO THIS BLOCK'S RESULT
-# MOST INVITES A READER TO ASSUME, AND THE FOURTH IS THE ROUND-2 DESIGN'S OWN
-# REFUTED IMPLICATION.
+# MOST INVITES A READER TO ASSUME.  THE FOURTH IS SCOPED ONLY TO THE TWO
+# DECLARED COMPATIBILITY CONDITIONS MEASURED BELOW.
 GRAVITY_SUPPLIED_CLAIMED = False
 THETA_IS_OS_METRIC_CLAIMED = False
 PHYSICAL_METRIC_FORK_CLOSED_CLAIMED = False
@@ -525,12 +528,12 @@ UNSUPPLIED_GRAVITY_STRUCTURES = (
 )
 READINGS = (
     "R1: that the heavy sector has now been RECONSTRUCTED in the Osterwalder-Schrader sense.  Measured: the OS Gram K_h does NOT symmetrize T_h -- the defect has exact rank 2 and 8 nonzero entries -- and what is supplied is a DIFFERENT exact rational form Theta in which T_h is self-adjoint and positive.  The OS statement is unchanged and Block 195's heavy leg is completed in another metric, not in that one.  Reading.",
-    "R2: that Theta is THE physical inner product, or that the cone theorem picks one out.  Measured: a six-dimensional solution space whose ENTIRE positive-definite part works, cut to exactly two dimensions by the one-site shift and no further, with an OPEN positive-definite cone.  Which member is physical is NOT decided here and cannot be decided by any symmetry cut in this repertoire.  Reading.",
+    "R2: that Theta is THE physical inner product, or that the cone theorem picks one out.  Measured: a six-dimensional solution space whose ENTIRE positive-definite part works, cut to exactly two dimensions by the declared one-site-shift condition, with an OPEN positive-definite cone.  Which member is physical is NOT decided here, and other selector conditions are not classified.  Reading.",
     "R3: that a positive self-adjoint T_h is an energy, a Hamiltonian or a mass.  Measured: one fixed 4 x 4 rational matrix whose two eigenvalues are the roots of an irreducible rational quadratic with tau - 2 = 188492356/22569375 > 0, so acosh(tau/2) exists as a real number.  No physical energy and no mass is supplied by any line here, and one matrix is not a semigroup.  Reading.",
     "R4: that the failure of the symmetry cuts means no canonical metric EXISTS.  Measured: that the two cuts available in this repertoire -- the one-site shift and the Block 197 completion -- leave a two-dimensional family with an open positive-definite cone.  A different principle could still select one; none is built, probed or excluded here.  Reading.",
     "R5: that the completion is a property of the construction CLASS rather than of this window and these points.  Measured: ONE width, ONE interior window, ONE core, ONE unit volume and TWO rational points.  Reading.",
 )
-CHECK_VERDICT = "HEAVY-COMPLETION-CONFIRMED-AND-CONE-STRENGTHENED-NO-CANONICAL-RAY"
+CHECK_VERDICT = "HEAVY-COMPLETION-CONFIRMED-TWO-DECLARED-CUTS-MEASURED"
 
 # ---------------------------------------------------------------------------
 # THE EXPECTED VALUES, declared as literals so every claim below is auditable
@@ -677,7 +680,7 @@ THETA_SECOND_PRODUCT_MINORS = THETA_SECOND_MINORS
 THETA_SECOND_S_RESIDUAL = 6
 PD_POINT_RESIDUALS = (0, 0)           # intertwining, product symmetric
 
-# --- F: THE NEGATIVE ---------------------------------------------------------
+# --- F: THE TWO-PARAMETER FAMILY GEOMETRY -----------------------------------
 # The Sylvester minors of the two-parameter family are FORMULAS, verified
 # against the exact determinants at residual zero.
 CONE_MINOR_RESIDUALS = (0, 0, 0, 0)
@@ -1328,16 +1331,20 @@ def measure_space(frame: dict, point: tuple) -> dict:
               for (row, column) in free_entries}
     display = sp.expand(family.subs(rename, simultaneous=True))
 
+    # The displayed primitive integer relations were normalized at FIXTURE.
+    # They are not universal coefficients and must not be reported against the
+    # second rational point, whose nullspace has a different normalization.
     forced = {}
-    for (row, column) in determined:
-        coefficients_row = FORCED_RELATIONS.get((row, column))
-        if coefficients_row is None:                   # pragma: no cover
-            forced[(row, column)] = -1
-            continue
-        expression = sp.Integer(coefficients_row[0]) * display[row, column]
-        for value, symbol in zip(coefficients_row[1:], order):
-            expression += sp.Integer(value) * symbol
-        forced[(row, column)] = 0 if sp.expand(expression) == 0 else 1
+    if point == FIXTURE:
+        for (row, column) in determined:
+            coefficients_row = FORCED_RELATIONS.get((row, column))
+            if coefficients_row is None:               # pragma: no cover
+                forced[(row, column)] = -1
+                continue
+            expression = sp.Integer(coefficients_row[0]) * display[row, column]
+            for value, symbol in zip(coefficients_row[1:], order):
+                expression += sp.Integer(value) * symbol
+            forced[(row, column)] = 0 if sp.expand(expression) == 0 else 1
 
     product = sp.expand(display * heavy)
     family_residuals = (
@@ -1448,8 +1455,8 @@ def measure_completion(frame: dict, space: dict, point: tuple
 
 
 def measure_cone(space: dict, point: tuple) -> ConeFacts:
-    """THE NEGATIVE.  The four Sylvester minors of the two-parameter family are
-    FORMULAS and the openness is a rational box, not a limit."""
+    """The four Sylvester minors are formulas, and the displayed positive
+    region contains a rational box."""
     family = space["cut_family"]
     a_symbol, b_symbol = space["a"], space["b"]
     alpha, beta = FAMILY_ALPHA[point], FAMILY_BETA[point]
@@ -1732,7 +1739,7 @@ def build_claims(mutation: str) -> dict:
         "second_product_minors": THETA_SECOND_PRODUCT_MINORS,
         "second_s_residual": THETA_SECOND_S_RESIDUAL,
         "pd_residuals": PD_POINT_RESIDUALS,
-        # F -- the negative.
+        # F -- the two-parameter family geometry.
         "minor_residuals": CONE_MINOR_RESIDUALS,
         "cone_nonempty": CONE_NONEMPTY,
         "ray_minor_signs": RAY_MINOR_SIGNS,
@@ -1759,6 +1766,9 @@ def build_claims(mutation: str) -> dict:
         "second_tau": TAU[SECOND_POINT],
         "second_tau_minus_two": TAU_MINUS_TWO[SECOND_POINT],
         "second_tau_residual": TAU_IDENTITY_RESIDUAL,
+        "second_family_residuals": FAMILY_RESIDUALS,
+        "second_parameterization_residuals": (0, 0, 0, 0),
+        "second_pd_residuals": PD_POINT_RESIDUALS,
         "second_display_residual": FAMILY_DISPLAY_RESIDUAL,
         "second_ray": SECOND_RAY,
         "second_ray_minors": SECOND_RAY_MINORS,
@@ -1793,9 +1803,9 @@ def build_claims(mutation: str) -> dict:
         # decide which inner product is the physical one.  It supplies a cone.
         claims["fork_closed"] = True
     elif mutation == "claim_canonical_ray":
-        # THE ROUND-2 DESIGN'S REFUTED IMPLICATION, IN ITS OWN WORDS: a
-        # symmetry cut is asserted to leave a one-dimensional canonical ray.
-        # Both cuts are exhausted at dimension 2 and the PD cone is open.
+        # THE SCOPED CONTRAST: the two declared compatibility conditions are
+        # asserted to leave a one-dimensional ray.  Their measured joint
+        # restriction instead has dimension 2 and an open PD cone.
         claims["canonical_ray"] = True
     elif mutation == "claim_reconstruction_complete":
         # THE OS CLAIM OVERREACHED: the Osterwalder-Schrader reconstruction is
@@ -1888,7 +1898,10 @@ def build_claims(mutation: str) -> dict:
     elif mutation == "break_second_point_completion":
         claims["second_dimension"] = 5
         claims["second_cut_dimension"] = 1
+        claims["second_parameterization_residuals"] = (0, 0, 0, 1)
     elif mutation == "break_second_point_family":
+        claims["second_family_residuals"] = (0, 0, 1)
+        claims["second_pd_residuals"] = (0, 1)
         claims["second_ray_minors"] = (SECOND_RAY_MINORS[:3]
                                        + (SECOND_RAY_MINORS[3] + 1,))
     # --- H ----------------------------------------------------------------
@@ -1966,12 +1979,13 @@ def build_checks(facts: Facts, claims: dict) -> Checks:
         "neither measured nor implied by any line here",
         claims["fork_closed"] is False)
     checks.check(
-        "B-5", f"AND ITS CLOSURE BY SYMMETRY IS REFUTED RATHER THAN PENDING: "
-        f"the one-site-shift cut leaves dimension {space.s_cut_dimension} and "
-        f"not 1, the Block 197 cut is vacuous on the heavy sector for EVERY "
-        f"admissible X, and the surviving family's positive-definite cone is "
-        f"OPEN -- canonical_ray = {claims['canonical_ray']} is a declared "
-        f"measured constant",
+        "B-5", f"THE TWO DECLARED COMPATIBILITY CONDITIONS DO NOT SELECT A "
+        f"RAY WITHIN THE DISPLAYED FAMILY: the one-site-shift cut leaves "
+        f"dimension {space.s_cut_dimension} and not 1, the Block 197 cut is "
+        f"vacuous on the heavy sector for EVERY admissible X, and the "
+        f"surviving family's positive-definite cone is open -- "
+        f"canonical_ray = {claims['canonical_ray']} is scoped to these two "
+        f"conditions only",
         claims["canonical_ray"] is False)
     checks.check(
         "B-6", "THE COMPLETION IS INTERIOR-WINDOW, HEAVY-SECTOR AND "
@@ -2273,13 +2287,13 @@ def build_checks(facts: Facts, claims: dict) -> Checks:
         and cone.corner_signs == claims["corner_signs"]
         and claims["cone_is_open"] is True)
     checks.check(
-        "F-4", f"SO THE CONE IS NOT A RAY, AND NO SYMMETRY-PREFERRED METRIC "
-        f"EXISTS IN THIS REPERTOIRE: the three positive-definite members at "
+        "F-4", f"SO THE DISPLAYED CONE IS NOT A RAY UNDER THE TWO TESTED "
+        f"CONDITIONS: the three positive-definite members at "
         f"{RAYLESS_POINTS} have a coordinate matrix of rank "
         f"{claims['rayless_rank']}, so they are not pairwise proportional and "
         f"the positive-definite set contains a two-dimensional open box -- "
-        f"cone_is_a_ray = {claims['cone_is_a_ray']}, which is the round-2 "
-        f"design's canonical-metric implication REFUTED and not deferred",
+        f"cone_is_a_ray = {claims['cone_is_a_ray']}; no claim is made about "
+        f"other commuting symmetries or selection principles",
         cone.rayless_rank == claims["rayless_rank"]
         and claims["rayless_rank"] == 2
         and claims["cone_is_a_ray"] is False
@@ -2315,12 +2329,16 @@ def build_checks(facts: Facts, claims: dict) -> Checks:
         other_space.dimension == claims["second_dimension"]
         and other_space.s_cut_dimension == claims["second_cut_dimension"]
         and other_done.tau_residual == claims["second_tau_residual"]
+        and other_space.family_residuals
+        == claims["second_family_residuals"]
+        and other_done.parameterization_residuals
+        == claims["second_parameterization_residuals"]
         and other_done.tau == claims["second_tau"]
         and other_done.tau_minus_two == claims["second_tau_minus_two"]
         and claims["second_tau_minus_two"] > 0)
     checks.check(
-        "G-3", f"AND SO DOES THE FAMILY's SHAPE, WHICH IS THE GENERALITY "
-        f"CLAIM: the displayed two-parameter family has residual "
+        "G-3", f"AND SO DOES THE DISPLAYED FAMILY's SHAPE AT THIS SECOND "
+        f"FIXTURE: the two-parameter family has residual "
         f"{claims['second_display_residual']} against the nullspace family "
         f"with A_2 = ({other_space.family_alpha}) a + "
         f"({other_space.family_beta}) b and r_2 = {other_space.family_r}, its "
@@ -2336,6 +2354,7 @@ def build_checks(facts: Facts, claims: dict) -> Checks:
             sp.Integer(v) for v in claims["second_ray_minors"])
         and other_done.diagonal_product_minors == tuple(
             sp.Integer(v) for v in claims["second_ray_product_minors"])
+        and other_done.pd_residuals == claims["second_pd_residuals"]
         and all(v > 0 for v in claims["second_ray_minors"]))
 
     # --- H: THE NOTE, THE FENCE AND THE nsimplify ABSENCE -------------------
@@ -2357,116 +2376,51 @@ def build_checks(facts: Facts, claims: dict) -> Checks:
 # ---------------------------------------------------------------------------
 # THE MEASURED REPORT
 # ---------------------------------------------------------------------------
-def report_measured(facts: Facts, elapsed_ns: int) -> None:
-    print("MEASURED")
-    print(f"  elapsed: {elapsed_ns / 1000000000:.1f}s")
-    print(f"  origin/main {facts.main_head}")
-    print(f"  authority {facts.authority}")
-    print(f"  imposed {facts.imposed}, registered {facts.registered}, "
-          f"adopted {facts.adopted}, gravity structures NOT SUPPLIED "
-          f"{facts.unsupplied}, readings {facts.readings}")
-    print(f"  check verdict carried: {CHECK_VERDICT}")
-    print(f"  exact 64 x 64 inverses built and shared: {facts.big_inverses}")
+def report_compact(facts: Facts, elapsed_ns: int) -> None:
+    """Emit the load-bearing certificate while respecting the stdout budget."""
+    print(f"MEASURED elapsed={elapsed_ns / 1000000000:.1f}s "
+          f"main={facts.main_head[:12]} inverses={facts.big_inverses} "
+          f"nsimplify={facts.nsimplify_calls}")
+    print(f"AUTHORITY fixed={facts.authority.fixed_authority} "
+          f"parent={facts.authority.parent_ref_and_ancestry} "
+          f"artifacts={facts.authority.parent_artifact_blobs} "
+          f"inputs={facts.authority.inputs_readable}")
     for point in POINTS:
         setup = facts.setups[point]
         space = facts.spaces[point]
         done = facts.completions[point]
         cone = facts.cones[point]
-        print(f"  Z_{WIDTH} x Z_{SPACE_EXTENT} at (m, c) = "
-              f"({point[0]}, {point[1]}), unit volume, window "
-              f"{INTERIOR_WINDOW}")
-        print(f"    nnz(d_K^2) {setup.grade_complex}, nnz(Ps H Ps - H) "
-              f"{setup.hodge_reflection}, nnz(Ps Q Ps - Q^T) "
-              f"{setup.covariance}, rank(Q) {setup.carrier_rank}, inverse "
-              f"residuals {setup.inverse_residuals}, built in "
-              f"{setup.inverse_seconds:.1f}s")
-        print(f"    span {setup.span_size}, domain {setup.domain_size}, "
-              f"rank(K_AD) {setup.window_rank}, kernel dimension "
-              f"{setup.window_nullity}, M_2,AD on that kernel "
-              f"{setup.window_annihilation}, obstruction {setup.obstruction}")
-        print(f"    pivots {setup.pivots}, section {setup.section}")
-        print(f"    nnz(K_c - K_c^T) {setup.quotient_symmetry}, minor signs "
-              f"{setup.quotient_minors}, charpoly(T_2) factors "
-              f"{setup.quotient_factors}")
-        print(f"    (U^2 - I, U^T K_c U - K_c, [T_2, U]) "
-              f"{setup.involution_residuals}, nnz(S^T K_c S - K_c) "
-              f"{setup.one_site_defect}")
-        print(f"    B_h {setup.heavy_basis}, charpoly(T_h) factors "
-              f"{setup.heavy_factors}")
-        print(f"    HEAVY OS DEFECT (nnz, rank) {setup.heavy_os_defect}, form "
-              f"defect {setup.heavy_form_defect}")
-        print(f"    SYMMETRIZER: {space.unknowns} unknowns, "
-              f"{space.equations} equations, coefficient rank "
-              f"{space.coefficient_rank}, dimension {space.dimension}; "
-              f"unsymmetrized {space.intertwiner_dimension}, commutant "
-              f"{space.commutant_dimension}")
-        print(f"    free entries {space.free_entries}, forced "
-              f"{space.determined_entries} at residuals "
-              f"{space.forced_residuals}, family residuals "
-              f"{space.family_residuals}")
-        print(f"    S_h {space.s_heavy} residuals {space.s_heavy_residuals}, "
-              f"S-cut rank {space.s_cut_rank}, dimension "
-              f"{space.s_cut_dimension}")
-        print(f"    family alpha {space.family_alpha}, beta "
-              f"{space.family_beta}, r {space.family_r}, gamma "
-              f"{space.family_gamma}, display residual "
-              f"{space.family_display_residual}")
-        print(f"    MINIMAL POLYNOMIAL residual {done.minimal_residual}, tau "
-              f"identity {done.tau_residual}, irreducible {done.irreducible}, "
-              f"charpoly-square residual {done.charpoly_square_residual}")
-        print(f"    tau {done.tau}, tau - 2 {done.tau_minus_two}, "
-              f"discriminant {done.discriminant}, root product "
-              f"{done.root_product}")
-        print(f"    parameterization residuals "
-              f"{done.parameterization_residuals}")
-        print(f"    Theta_D diag{done.diagonal} minors {done.diagonal_minors}, "
-              f"product minors {done.diagonal_product_minors}, S-residual "
-              f"{done.diagonal_s_residual}")
-        print(f"    Theta_2 {done.second} minors {done.second_minors}, product "
-              f"minors {done.second_product_minors}, S-residual "
-              f"{done.second_s_residual}")
-        print(f"    CONE minor-formula residuals {cone.minor_residuals}, ray "
-              f"{cone.ray_point} signs {cone.ray_minor_signs} primitive "
-              f"{cone.ray_primitive}, non-PD point {cone.non_pd_point} signs "
-              f"{cone.non_pd_minor_signs}")
-        print(f"    BOX margins A >= {cone.box_a_margin}, "
-              f"A b - gamma a^2 >= {cone.box_product_margin}, corner signs "
-              f"{cone.corner_signs}, rayless coordinate rank "
-              f"{cone.rayless_rank}")
+        print(
+            f"FIXTURE (m,c)=({point[0]},{point[1]}) Qrank={setup.carrier_rank} "
+            f"inverse={setup.inverse_residuals} window="
+            f"({setup.window_rank},{setup.window_nullity},"
+            f"{setup.obstruction}) Kc_minors={setup.quotient_minors} "
+            f"OS_defect={setup.heavy_os_defect}")
+        print(
+            f"  SYMMETRIZER rank={space.coefficient_rank} dim="
+            f"{space.dimension} S_cut=({space.s_cut_rank},"
+            f"{space.s_cut_dimension}) family={space.family_residuals} "
+            f"parameterization={done.parameterization_residuals}")
+        print(
+            f"  POSITIVITY minimal={done.minimal_residual} tau={done.tau} "
+            f"tau-2={done.tau_minus_two} disc={done.discriminant} "
+            f"minor_formulas={cone.minor_residuals} "
+            f"witness_minors={done.diagonal_minors}")
     cut = facts.cut
-    print("  THE BLOCK 197 CUT, TESTED")
-    print(f"    projector ranks {cut.projector_ranks}, partition residual "
-          f"{cut.partition_residual}, orthogonality {cut.orthogonality}")
-    print(f"    GENERIC (Y B_h - B_h, Y_h - I_4) {cut.generic_residuals} for "
-          f"SYMBOLIC X, X'")
-    print(f"    charpoly(W_0) - charpoly(W_2) {cut.isospectrality}, X* "
-          f"residuals {cut.x_star_residuals}, det X* {cut.x_star_det}, "
-          f"det K_0 / det K_2 {cut.gram_ratio}")
-    print(f"    Y' residuals {cut.yprime_residuals}, rank {cut.yprime_rank}, "
-          f"Y'_h - I_4 {cut.yprime_heavy}")
-    record = facts.check_theta
-    print("  THE ADVERSARIAL RECORD'S DISPLAYED MATRIX, MEASURED BOTH WAYS")
-    print(f"    defect in the DECLARED basis {record.declared_defect}, in the "
-          f"displayed REORDERING {record.reordered_defect}, admissible signed "
-          f"reorderings {record.admissible} of 384")
-    print(f"    its own minors {record.own_minors}")
-    print(f"    rebuilt product minors {record.rebuilt_product_minors}")
-    print(f"    product minor signs {record.product_minor_signs}, the check's "
-          f"displayed product minors reproducible "
-          f"{record.claimed_reproducible}")
-    print("  READINGS, AND EACH IS A READING")
-    for reading in READINGS:
-        print(f"    {reading}")
-    print(f"  nsimplify calls in this source: {facts.nsimplify_calls}")
-    print("  NOT CLAIMED: NO GRAVITY. THETA IS NOT THE OS INNER PRODUCT. THE "
-          "PHYSICAL-METRIC FORK IS OPEN AND ITS CLOSURE BY SYMMETRY IS "
-          "REFUTED, NOT PENDING. NO OS RECONSTRUCTION IS COMPLETED. NO "
-          "GENERIC (m, c) THEOREM. NO CONTINUUM. NO DYNAMICS. THE READINGS "
-          "ARE READINGS.")
-    print()
+    print(f"COMPATIBILITY generic_heavy={cut.generic_residuals} "
+          f"Yprime={cut.yprime_residuals} Yprime_h={cut.yprime_heavy}")
+    print(f"SCOPE imposed={facts.imposed} registered={facts.registered} "
+          f"adopted={facts.adopted} selectors_tested=2 "
+          f"verdict={CHECK_VERDICT}")
 
 
-N5_FENCE = "N5: per_element: THE IMPOSED-OBJECT BANNER, FIRST AND WITH TEETH, AND THE WORD METRIC IS SCOPED BEFORE THE FIRST NUMERAL. NOTHING HERE IS REGISTERED OR ADOPTED -- BLOCK 190's WRAP-EDGE CONSTRUCTION AT T = 16 ON Z_16 x Z_4, CARRIED UNCHANGED (the staggered Dirac-Kahler carrier with eta_t = 1, eta_x = (-1)^t and the temporal sign w = -1 ON THE WRAP EDGE t = T-1, the grade-raising d_K = P1 K P0 + P2 K P1, the site reflection theta_s(t) = -t with fixed slices {0, T/2}, the raising set A_s in the CLOSED half {0..T/2} EXCLUDING fixed-slice spatial edges, the glue D_s = A_s - Ps A_s Ps and the completion Q = m H + H D_s - D_s^T H), BLOCK 195's INTERIOR WINDOW AND ITS OS QUOTIENT (the full positive span A = {1..7} of four cells each, the interior domain D = {2, 3, 4}, the reflected pairings K_AD and M_2,AD with L_k[a,b] = G[idx(t_b + k, x_b), idx(theta_s t_a, x_a)] on G = Q^-1, the pivot section of rref(K_AD) giving the eight representatives, the quotient Gram K_c, the quotient form M_2c and the DESCENDED TWO-STEP OPERATOR T_2 = K_c^-1 M_2c), BLOCK 195's MOMENTUM SPLIT AND ITS HEAVY SECTOR (the two-site spatial shift U on the representatives, the U = -1 eigenbasis B_h = (-e_0 + e_2, -e_1 + e_3, -e_4 + e_6, -e_5 + e_7), the compressions K_h = B_h^T K_c B_h and M_h = B_h^T M_2c B_h and the HEAVY OPERATOR T_h = K_h^-1 M_h), THE SYMMETRIZER EQUATION, WHICH IS THIS BLOCK's ONE NEW OBJECT AND IS A LINEAR SYSTEM AND NOT A SEARCH (Theta = Theta^T together with Theta T_h = T_h^T Theta, ten unknowns and sixteen equations over QQ), BLOCK 197's SECTOR PROJECTORS AND COMPLETION FORM (the one-site shift S, the real projectors P0 = (I + S + S^2 + S^3)/4, P2 = (I - S + S^2 - S^3)/4 and Ph = (I - S^2)/2, the column-space bases B_0, B_2 with pi_p = (B_p^T B_p)^-1 B_p^T, and the completion Y' = B_2 X* pi_0 + B_0 X*^-1 pi_2 + Ph), BLOCK 190's AND BLOCK 194's LANDED HEAVY PAIR AT THE TWO RATIONAL POINTS IMPOSED AS THE COMPARISON TARGET AND ALSO REBUILT HERE RATHER THAN ONLY CITED (22569375 z^2 - 233631106 z + 22569375 at (9/20, 5/13) and 739 z^2 - 7258 z + 739 at (1/2, 1/3)), and the LANDED Block 105 shear_hodge(c, v) read through the Block 128 module at UNIT VOLUME and at the TWO rational shears 5/13 and 1/3 -- THE ONLY OBJECT IMPORTED -- are IMPOSED MEASURED OBJECTS OF THIS BLOCK, built from the landed primary bodies and from NOTHING in any scratchpad. NO GRAVITY IS SUPPLIED: this block supplies NO lapse variable in an ADM phase space, NO shift vector, NO Hamiltonian constraint, NO momentum constraint, NO first-class constraint algebra, NO Dirac closure, NO Dirac observable, NO gauge orbit and NO diffeomorphism quotient. WHAT IS ESTABLISHED IS NARROWER THAN THE WORDS METRIC AND COMPLETION AND IS SAID IN THOSE WORDS: 'METRIC' NAMES AN EXACT RATIONAL POSITIVE-DEFINITE 4 x 4 MATRIX Theta SOLVING A LINEAR SYSTEM, AND NAMES NOTHING ELSE -- Theta IS NOT THE OS INNER PRODUCT AND IS NOT DERIVED FROM ONE, AND THE OS HEAVY GRAM K_h PROVABLY DOES NOT SYMMETRIZE T_h, ITS SELF-ADJOINTNESS DEFECT HAVING EXACT RANK 2 AND 8 NONZERO ENTRIES. 'COMPLETION' NAMES THE FACT THAT BLOCK 195's REMAINING HEAVY LEG BECOMES A POSITIVE SELF-ADJOINT OPERATOR IN SOME EXACT RATIONAL INNER PRODUCT, ON ONE INTERIOR WINDOW OF ONE WIDTH AT ONE CORE AT TWO RATIONAL POINTS, AND NAMES NO OTHER WINDOW, NO OTHER WIDTH, NO OTHER SECTOR AND NO PHYSICS. THE PHYSICAL-METRIC FORK IS OPEN, AND ITS CLOSURE BY SYMMETRY IS NOT AN OPEN HOPE BUT A REFUTED ROUTE THAT THIS BLOCK CARRIES AS CONTENT: THE ONE-SITE-SHIFT CUT TAKES THE SYMMETRIZER FAMILY FROM 6 TO EXACTLY 2 AND NO FURTHER, THE BLOCK 197 COMPLETION CUT IS VACUOUS BECAUSE Y' COMPRESSES TO I_4 ON THE HEAVY SECTOR FOR EVERY ADMISSIBLE X, AND THE REMAINING TWO-PARAMETER FAMILY's POSITIVE-DEFINITE CONE IS NONEMPTY AND OPEN -- AN EXPLICIT RATIONAL BOX LIES INSIDE IT -- SO NO SYMMETRY-PREFERRED RAY EXISTS AND NO CANONICAL METRIC IS SELECTED. NO OSTERWALDER-SCHRADER RECONSTRUCTION IS COMPLETED: THE LIGHT SECTOR's OS SELF-ADJOINTNESS IS BLOCK 195's AND STANDS, THE HEAVY SECTOR's IS NOT RESTORED IN THE OS FORM BY ANY LINE HERE, AND WHAT IS SUPPLIED IS A DIFFERENT FORM. NO GENERIC (m, c) THEOREM IS SUPPLIED AND NO CONTINUUM LIMIT IS SUPPLIED: ONE WIDTH, ONE INTERIOR WINDOW, ONE CORE, ONE UNIT VOLUME AND TWO RATIONAL POINTS ARE NOT A PARAMETER SPACE AND ARE NOT A LIMIT. NO DYNAMICS IS SUPPLIED: ONE FIXED 4 x 4 RATIONAL MATRIX IS NOT A SEMIGROUP AND IS NOT A GENERATOR. NINE GRAVITY STRUCTURES ARE ENUMERATED AS NOT SUPPLIED -- lapse function, shift vector, ADM phase space, Hamiltonian constraint, momentum/diffeomorphism constraint, first-class constraint algebra, Dirac closure, Dirac observable, gauge orbit and its quotient. NOTHING IS REGISTERED, NOTHING IS ADOPTED, AND NO AXIOM AMENDMENT IS JUSTIFIED.\\nper_site: THE SETUP IS REBUILT AND NOT CITED, AND EVERY STATEMENT IN THIS SECTION IS AN EXACT ENTRY COUNT. At T = 16, unit volume and the interior window D = {2, 3, 4}, the carrier is rebuilt from the same formulas at BOTH rational points, and at BOTH: nnz(d_K^2) = 0 with grade deg(t, x) = t mod 2 + x mod 2; the imported unit-volume Hodge block assembles by Block 191's quarter-weighted four-corner cell average to nnz(Ps H Ps - H) = 0; the completion obeys nnz(Ps Q Ps - Q^T) = 0; and rank(Q) = 64 of 64 with two-sided inverse residuals ZERO. EXACTLY TWO 64 x 64 EXACT INVERSES ARE BUILT IN THIS RUNNER, ONE PER POINT AND EACH ONCE, AND EVERY GATE BELOW READS THEM RATHER THAN RECOMPUTING THEM. THE INTERIOR WINDOW DESCENDS, WHICH IS BLOCK 195's LANDED LOOPHOLE REBUILT: rank(K_AD) = 8 on a 28 x 12 rectangular reflected Gram, its kernel has dimension 4, the two-step pairing annihilates that kernel at nnz(M_2,AD N) = 0 and rank(M_2,AD N) = 0, and the invariant obstruction rank(K_AD stacked on M_2,AD) - rank(K_AD) is 0. The pivot columns of rref(K_AD) are (0, 1, 2, 3, 4, 5, 6, 7), so the section is the eight cells (2, 0), (2, 1), (2, 2), (2, 3), (3, 0), (3, 1), (3, 2), (3, 3); on it nnz(K_c - K_c^T) = 0 with ALL EIGHT leading principal minors strictly positive, and charpoly(T_2) is the LANDED Block 194 pair squared. THE MOMENTUM SPLIT AND THE HEAVY OBSTRUCTION ARE REBUILT TOO: nnz(U^2 - I) = 0, nnz(U^T K_c U - K_c) = 0, nnz([T_2, U]) = 0, while the one-site shift S is NOT a K_c-isometry at nnz(S^T K_c S - K_c) = 64; on the U = -1 basis charpoly(T_h) is the heavy factor squared, and the OS self-adjointness defect K_h T_h - T_h^T K_h has EXACT RANK 2 with 8 nonzero entries. THAT RANK-2 DEFECT IS THE LEG BLOCK 195 LEFT OPEN AND IS THE ONLY REASON THIS BLOCK EXISTS.\\nper_mode: THE SYMMETRIZER SPACE, AND ITS DIMENSION IS A RANK AND NOT A COUNT OF EXAMPLES. The system Theta = Theta^T with Theta T_h = T_h^T Theta is TEN unknowns and SIXTEEN equations over QQ; its coefficient matrix has EXACT RANK 4, so the solution space has dimension EXACTLY 6. Dropping the symmetry constraint gives dim{X : X T_h = T_h^T X} = 8, so symmetry cuts 8 to 6 and neither number is a sample. THE SPACE IS DISPLAYED AS A PARAMETERIZATION AND NOT AS A BASIS LIST: the six entries Theta[0,3], Theta[1,2], Theta[1,3], Theta[2,2], Theta[2,3], Theta[3,3] are FREE, and the remaining four are forced by four exact primitive integer relations, of which the shortest is 26093 Theta[0,2] + 8928 Theta[0,3] - 8928 Theta[1,2] + 26093 Theta[1,3] = 0. Substituting the parameterization back into Theta = Theta^T and Theta T_h = T_h^T Theta gives ZERO entrywise in QQ[s_1..s_6], so every statement below about the space is a statement about the PARAMETERIZATION and not about sampled points. THE ONE-SITE-SHIFT CUT IS EXACT AND STOPS AT TWO: the heavy compression S_h = pi_h S B_h obeys nnz(S_h^2 + I) = 0 and nnz([S_h, T_h]) = 0, and adjoining S_h^T Theta S_h = Theta raises the combined coefficient rank from 4 to 8, leaving dimension EXACTLY 2, with the explicit family Theta(a, b) whose displayed form has residual 0 against the nullspace family, A = (150553/22320) a + (902775/1581193) b and r = 26093/8928. THE BLOCK 197 CUT IS VACUOUS, AND NOT BY ACCIDENT OF A PARTICULAR X*: because the three S-momentum projectors are orthogonal in the standard inner product, nnz(pi_0 B_h) = nnz(pi_2 B_h) = 0 and nnz(Ph B_h - B_h) = 0, so for EVERY 2 x 2 X and X' the operator B_2 X pi_0 + B_0 X' pi_2 + Ph fixes B_h and compresses to I_4 on the heavy sector, at residual 0 in QQ[x_1..x_4, y_1..y_4]. One concrete Y' is exhibited on this frame with X* = [[1, 520/1369], [0, 1135/1369]], satisfying X* W_0 = W_2 X*, X*^T K_2 X* = K_0, (det X*)^2 = det K_0 / det K_2 = 1288225/1874161, and then nnz([T_2, Y']) = 0, nnz(Y'^T K_c Y' - K_c) = 0, nnz(Y'^2 - I_8) = 0, rank Y' = 8 and nnz(Y'_h - I_4) = 0.\\nper_block: THE COMPLETION, AND IT IS A CONE THEOREM RATHER THAN A POINT. THE MINIMAL POLYNOMIAL IS THE WHOLE MECHANISM AND IT IS GATED AT RESIDUAL ZERO: T_h^2 - tau T_h + I_4 = 0 with tau = 233631106/22569375, equivalently 22569375 T_h^2 - 233631106 T_h + 22569375 I_4 = 0, where 22569375 z^2 - 233631106 z + 22569375 is IRREDUCIBLE over QQ and 22569375^2 det(T_h - z I_4) - (22569375 z^2 - 233631106 z + 22569375)^2 = 0 identically, so charpoly(T_h) is that irreducible quadratic squared and the spectrum of T_h is EXACTLY its two roots. THOSE TWO ROOTS ARE REAL, DISTINCT AND STRICTLY POSITIVE, CERTIFIED WITHOUT EVALUATING A SINGLE RADICAL: the discriminant is 52545986939220736 > 0, the root product is exactly 1, the root sum is tau > 0, and tau - 2 = 188492356/22569375 > 0. THE THEOREM. Let Theta be ANY positive-definite member of the six-dimensional space. Then Theta T_h is symmetric, because Theta^T = Theta and Theta T_h = T_h^T Theta give (Theta T_h)^T = T_h^T Theta = Theta T_h, and both identities hold on the PARAMETERIZATION at residual 0. Put N = Theta^(-1/2) (Theta T_h) Theta^(-1/2); N is symmetric and N^2 - tau N + I = Theta^(-1/2) Theta (T_h^2 - tau T_h + I) Theta^(-1/2) = 0, and that vanishing is the gated identity applied to the parameterization at residual 0. So every eigenvalue of N is a root of z^2 - tau z + 1, hence real and strictly positive, hence N is positive definite, hence Theta T_h = Theta^(1/2) N Theta^(1/2) is positive definite by congruence. NO SQUARE ROOT IS EVER EVALUATED AND NO NUMBER IN THE ARGUMENT IS INEXACT. TWO POSITIVE-DEFINITE POINTS ARE EXHIBITED AND BOTH ARE GATED ENTRYWISE. The S-equivariant one is Theta_D = diag(902775, 902775, 1581193, 1581193), with leading principal minors (902775, 815002700625, 1288676565209345625, 2037646364173060836830625) and Theta_D T_h symmetric at residual 0 with the SAME four minors. The second, Theta_2 = [[2325818080559100, -542690069415375, 0, 0], [-542690069415375, 3167053812133500, 0, 0], [0, 0, 4810329587451076, 1202582396862769], [0, 0, 1202582396862769, 4810329587451076]], lies OUTSIDE the S-equivariant plane at nnz(S_h^T Theta_2 S_h - Theta_2) = 6, is positive definite, and Theta_2 T_h is symmetric and positive definite too. So the heavy leg Block 195 left open IS a positive self-adjoint operator, in EVERY inner product of the cone and not merely in one lucky one.\\nlattice_wide: THE NEGATIVE, AND IT IS MEASURED IN BOTH DIRECTIONS RATHER THAN LEFT AS A GAP. The two-parameter family after the one-site-shift cut has Sylvester minors that are FORMULAS and not samples: with gamma = 1 + r^2 = 760553833/79709184, M1 = A, M2 = A^2, M3 = A (A b - gamma a^2) and M4 = (A b - gamma a^2)^2, each verified against the exact determinant at residual 0. THE CONE IS NONEMPTY: at (a, b) = (0, 1) the family is diag(902775/1581193, 902775/1581193, 1, 1), whose primitive integer form is Theta_D, with all four minors strictly positive. THE CONE IS ALSO NOT EVERYTHING, AND THE FAILURE IS FORCED BY THE FORMULAS RATHER THAN OBSERVED: at (a, b) = (1, 0) the minor signs are (+, +, -, +), because M3 = -gamma A < 0 while M4 = gamma^2 > 0. AND THE CONE IS OPEN AND GENUINELY TWO-DIMENSIONAL, CERTIFIED BY AN EXPLICIT RATIONAL BOX RATHER THAN BY A LIMIT ARGUMENT: on |a| <= 1/100 and 1/2 <= b <= 3/2 one has A >= 902775/3162386 - 150553/2232000 = 769443550271/3529222776000 > 0 and A b - gamma a^2 >= 769443550271/7058445552000 - 760553833/797091840000 = 136189257939526991/1260356037765120000 > 0, so ALL FOUR minors are strictly positive on the whole box, and three pairwise non-proportional points of it are gated individually. A SET CONTAINING AN OPEN TWO-DIMENSIONAL BOX IS NOT CONTAINED IN ANY RAY. THEREFORE THE SYMMETRY CUTS DO NOT SELECT A CANONICAL METRIC, THE ROUND-2 DESIGN's '1-dim intersection implies a canonical metric implies the fork closes' IS REFUTED RATHER THAN DEFERRED, AND THE PHYSICAL-METRIC FORK STAYS OPEN WITH ITS MECHANISM NAMED: the S-cut is exhausted at 2, the Y'-cut is vacuous for every admissible X, and closing the fork would require a NEW principle -- a compatibility with the two-history form V, or a symmetry outside the commutant of T_h -- neither of which is built, probed or excluded here.\\nper_scope: WHAT IS OPEN IS NAMED AND NOT PAPERED OVER, AND THE GENERALITY THAT DOES HOLD IS STATED AS STRUCTURE RATHER THAN AS COEFFICIENTS. At the second rational point (1/2, 1/3) at the same width, window and core, EVERY structural statement above persists while every polynomial changes: rank(K_AD) = 8 with kernel dimension 4 and obstruction rank 0, K_c positive definite at 8 of 8 minors, charpoly(T_2) the landed pair 233 z^2 - 690 z + 233 and 739 z^2 - 7258 z + 739 each squared, charpoly(T_h) the heavy one squared, the OS self-adjointness defect again of EXACT RANK 2 at 8 entries, the symmetrizer space again of dimension EXACTLY 6, the one-site-shift cut again leaving EXACTLY 2, the minimal polynomial T_h^2 - tau_2 T_h + I = 0 with tau_2 = 7258/739 and tau_2 - 2 = 5780/739 > 0, and the same family SHAPE with A_2 = (85/14) a + (739/1165) b and r_2 = 71/28, whose (0, 1) ray is the positive-definite diag(739, 739, 1165, 1165) with product minors equal to its own. WHAT REMAINS OPEN: WHICH inner product is the physical one is NOT decided, and this block supplies a cone rather than a choice; WHY the interior window descends at all is NOT derived and is carried from Block 195 as a measurement; the LIGHT sector is untouched here and its OS self-adjointness remains Block 195's; no THIRD rational point, no other interior window, no other width and no other core is measured, so nothing here is a statement about a parameter space or about a limit; and no Osterwalder-Schrader reconstruction, no transfer interpretation, no energy and no mass is supplied by any line of this block.\\nRESULT: ON THE INTERIOR WINDOW D = {2, 3, 4} OF BLOCK 195's DESCENT AT T = 16 AND THE PIVOT SECTION (2, x), (3, x), THE HEAVY U = -1 COMPRESSION T_h OF THE DESCENDED TWO-STEP OPERATOR CARRIES AN OS SELF-ADJOINTNESS DEFECT OF EXACT RANK 2, AND THE LINEAR SYSTEM Theta = Theta^T WITH Theta T_h = T_h^T Theta HAS COEFFICIENT RANK 4 AND HENCE A SOLUTION SPACE OF DIMENSION EXACTLY 6, INSIDE WHICH TWO EXPLICIT RATIONAL POSITIVE-DEFINITE POINTS ARE EXHIBITED. BECAUSE T_h^2 - tau T_h + I = 0 EXACTLY WITH tau - 2 = 188492356/22569375 > 0, EVERY POSITIVE-DEFINITE MEMBER OF THAT SPACE MAKES Theta T_h SYMMETRIC AND POSITIVE DEFINITE -- A CONE THEOREM AND NOT A LUCKY POINT -- SO BLOCK 195's REMAINING HEAVY LEG IS A POSITIVE SELF-ADJOINT OPERATOR IN AN EXACT RATIONAL INNER PRODUCT. THAT INNER PRODUCT IS NOT THE OS ONE AND IS NOT SELECTED: THE ONE-SITE-SHIFT CUT LEAVES EXACTLY 2 DIMENSIONS, THE BLOCK 197 COMPLETION CUT IS VACUOUS BECAUSE Y' COMPRESSES TO I_4 ON THE HEAVY SECTOR FOR EVERY ADMISSIBLE X, AND THE SURVIVING FAMILY's POSITIVE-DEFINITE CONE CONTAINS AN EXPLICIT OPEN RATIONAL BOX, SO NO SYMMETRY-PREFERRED RAY EXISTS. THE PHYSICAL-METRIC FORK IS THEREFORE OPEN AS A REFUTED CANONICALIZATION AND NOT AS A PENDING HOPE. EVERY NEGATIVE HERE IS NON-SUPPLY WITHIN THIS FORMALISM AND NEVER METAPHYSICAL NECESSITY -- the CYCLE913 CAUTION, CARRIED VERBATIM -- and EVERY POSITIVE HERE IS CANDIDACY WITHIN THIS FORMALISM AND NEVER A CLAIM ABOUT NATURE.\\nDECISION_CUT: NOTHING IS REGISTERED AND NOTHING IS ADOPTED. No premise-class change is registered; no landed note is EDITED; no landed number is touched; Blocks 104, 105, 106, 107, 128 and 181-198 STAND EXACTLY AS LANDED. BLOCK 195 IS NOT CORRECTED: its interior-window loophole, its quotient spectrum, its momentum split and its rank-2 heavy defect are rebuilt here from the same formulas and reproduced digit for digit, and its OPEN heavy leg is COMPLETED in a different form rather than its OS statement being revised. BLOCK 197 IS NOT CORRECTED: its completion Y' is rebuilt on this frame with all four of its identities intact, and the finding that its heavy compression is the identity is a statement about the HEAVY sector, which that block deliberately restored by the identity, and not a defect of it. THIS BLOCK's OWN DEFECTS ARE DISCLOSED: ONE width, ONE interior window, ONE core, ONE unit volume and TWO rational points -- not a parameter space and not a limit; the metric is EXHIBITED as a cone and not SELECTED; the physical-metric fork is NAMED and not answered; and the light sector is untouched. SIX ITEMS ARE FOLDED FROM THE ADVERSARIAL RECORD AS CONTENT AND NOT AS ERRATA, carried as corrections 88 to 93: the scout's displayed positive-definite symmetrizer belongs to a REORDERED heavy basis and not to the one the same anchor declares; its displayed product minors are reproducible in NO admissible reordering while its POSITIVITY CONCLUSION stands; the point statement is upgraded to the CONE THEOREM the batch verdict asked for; the round-2 Y'-cut is vacuous for EVERY admissible X and not only for the landed one; the round-2 design's canonical-metric implication is REFUTED rather than deferred; and the scout's non-positive-definite first candidate is explained by the exact minor formulas rather than left as a sample. PROVENANCE: CAMPAIGN_20260824_GRAVITY_MAINLINE.md, at its SCOUT MODE, SCOUT S2 RESULT, BATCH-1 CHECK VERDICT, SCOUT R2-2 RESULT and ROUND-2 CHECK VERDICT anchors.\\nTOE: zero axiom retirement; zero obligation retirement; zero TOE movement; no TOE percentage moves; retained-positive end-to-end theory count remains zero."
+N5_FENCE = (
+    "N5: per_element: Exact rational matrix entries, polynomial identities, and Sylvester minors are checked at the two declared fixtures only.\n"
+    "per_site: The carrier is checked on Z_16 x Z_4 at one core and the interior window D = {2, 3, 4}; no other site domain is claimed.\n"
+    "per_mode: The measured object is the U = -1 heavy compression; the light sector and other momentum sectors are outside this theorem.\n"
+    "per_block: The positive cone theorem and both compatibility ranks are exact for the declared finite constructions and their gated parameterizations.\n"
+    "lattice_wide: checked and not executed -- no lattice-wide, continuum, all-parameter, or exhaustive-selector statement is made by this runner."
+)
 
 
 def main() -> int:
@@ -2499,7 +2453,7 @@ def main() -> int:
         if changed - {target} or mutated[target]:
             raise AssertionError("mutation did not fail exactly its own gate")
 
-    report_measured(facts, elapsed_ns)
+    report_compact(facts, elapsed_ns)
     checks.report()
     print(N5_FENCE)
     return checks.finish()

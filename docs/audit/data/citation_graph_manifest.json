@@ -1,5 +1,5 @@
 {
- "edge_count": 16109,
+ "edge_count": 16116,
  "node_count": 5628,
  "nodes": {
   "3d_correction_master_note": {
@@ -547,8 +547,8 @@
    "out_degree": 5
   },
   "admissibility_dirac_kahler_heavy_metric_operator_completion_bounded_theorem_note_2026-08-26": {
-   "deps_hash": "e3b0c44298fc",
-   "out_degree": 0
+   "deps_hash": "10d0a9f2b13b",
+   "out_degree": 7
   },
   "admissibility_dirac_kahler_hidden_involutive_isometry_bounded_theorem_note_2026-08-26": {
    "deps_hash": "e3b0c44298fc",

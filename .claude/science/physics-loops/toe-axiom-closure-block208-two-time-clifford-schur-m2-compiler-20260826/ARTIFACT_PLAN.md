@@ -16,3 +16,9 @@ Planned result surfaces:
 No audit verdict, ledger, active queue, minimal axiom, gravity-stack file, or
 review-loop output belongs in this campaign.  `review-loop` is disabled by
 explicit user instruction.
+
+Execution note: items 1--5 and 7 are instantiated at bounded typed-compiler
+standing.  Item 6 is validation-only because the campaign may not edit
+audit/governance-owned citation metadata; any generated graph delta is
+reported rather than authored here.  The independent checker/cache remain the
+last packaging gate.

@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_d4_h1_two_time_clifford_cell_m2_record_compiler_2026_08_26.py
+runner_sha256: 5f363347df0fe5356ae544f8cbf5f902e71072761642dfc4407d71a9b3425024
+input_fingerprint_sha256: 3f09f47b17162745d32072adb592c2049bd4dda10a0731bed24ef08e032cbe7a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 26.96
+status: ok
+----- stdout -----
+[A] PASS: current authority and immutable Block-208 registration are pinned
+[B] PASS: both exact Cl(3,0)-to-M2 readings preserve multiplication, adjoint, trace normalization, and positivity
+[C] PASS: the reproduced rational cell is simultaneously a strict CPTP Choi operator and one effect of a strict binary POVM
+[D] PASS: the cell effect measures the ordered relative-phase sine with coefficient -65/313 and conjugate-reading invariance
+[E] PASS: one normalized 36-outcome endpoint CP instrument has distinct positive one-site M2 outputs, but those full-rank outputs are not 36 readable Records
+[F] PASS: labeled outcome statistics reconstruct the complete relative central phase with no momentum-label input in all 24 frames
+[G] PASS: decoded local phase ratios reproduce the full H1 forward and actual-reverse sources in both conjugate readings
+[H] PASS: the same-q different-p source collision is separated by actual endpoint M2 inputs rather than a supplied p label
+[I] PASS: a normalized orientation-neutral displaced CP relay with componentwise scores closes all four missing temporal groups and their action solder
+[J] PASS: the surviving state preparation, cell-leg typing, law-selection, and Record-attachment walls are explicit and scoped
+CELL: c=5/13; Choi/effect spectrum={144/313(x2),234/313,104/313}; complement strict; Pauli transfer a/b=65/313/-25/313.
+CELL_COMPARATOR: binary contrast=-(65/313) sin(delta); endpoint swap flips it; conjugate Clifford readings agree.
+ENDPOINT_INSTRUMENT: outcomes=36; effect sum=I4; distinct positive full-rank one-site outputs=36; pairwise overlaps>0 so Record readout is open; relative phase dot+i*cross exact; 24-frame covariance.
+H1_COMPILER: grouped rank=18/18; atom rank=136/136; forward/reverse residual=0/0 in both orientations; temporal rows=128; same-q different-p rank/nnz=12/56.
+SELECTION_GATE: sharp and u=1/2 unsharp laws give distinct same-input distributions but the same calibrated H1 statistic; cell tensor legs, action-to-M2 state solder, output coding, and formation remain open.
+RESULT: positive local two-time typed compiler support; complete H1 physical ownership=false; obligation_retirement=0; TOE movement=0.
+per_element: checked both exact Clifford realifications, all 36 cubic endpoint effects and full-rank outputs, their positive pairwise overlaps, both cell effects, and every declared CP normalization factor.
+per_site: checked a two-endpoint M2 input mapped to 36 distinct positive one-site candidate contents; no 36-way readable Record register, action-to-M2 state solder, or formation event is supplied.
+per_mode: checked every incoming and outgoing H1 phase ratio, the same-q different-p control, both central orientations, and the literal actual reverse; H2 remained sealed.
+per_block: checked the full fixed H1 source at grouped rank 18/18 and atom rank 136/136 with zero decoded forward and actual-reverse residual in both conjugate readings.
+lattice_wide: checked all 24 proper-cubic transports, componentwise displaced relay scores, and exact local phase-gauge cancellation; no global inverse, retained theory, axiom edit, formation/history, or TOE closure was used.
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

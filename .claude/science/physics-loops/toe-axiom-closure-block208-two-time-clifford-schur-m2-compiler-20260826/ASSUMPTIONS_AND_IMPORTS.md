@@ -9,6 +9,7 @@
 | `A,B,G1,G2,G3` candidate | possible two-time compiler seed | admitted candidate with zero authority weight | self-contained formulas; compared with in-flight PR #7745 | yes | no for a general route; yes for this candidate test | derive from landed action or demote to candidate boundary | explicit |
 | finite Clifford/CP/Kraus mathematics | positivity and instrument checks | standard mathematical machinery | direct exact derivation | yes | yes | proved/recomputed in runner | allowed |
 | trace/effect probability reading | connects CP effects to physical probabilities | open physical bridge | landed conditional instrument notes | yes | yes for end-to-end closure | compose the Block-206 positive law or derive from Admissibility/Record | forbidden as an assumption |
+| perfectly distinguishable outcome register or readable quotient | turns mathematical CP labels into Record-testable alternatives | open physical bridge | none; Block-208 overlap calculation exposes its absence | yes | yes for end-to-end closure | derive a local orthogonal register, spatial write, or physical coarse quotient | forbidden as an assumption |
 | menu/order/complex orientation | may select radial or handed parity | open choice | none | yes | yes | derive from local cell/action/covariance or expose exact ambiguity | may not be fitted |
 | global Schur environment inverse | produces the other PR's observed marginal | excluded | in-flight comparison only | no | no | not used | forbidden |
 | H1 `p,q`, mass, cut and TT column | finite discriminator | declared mathematical fixture | parent H1 packet | yes | bounded test only | held-out fixtures and eventual arbitrary-mode theorem | explicit fixture |
@@ -39,6 +40,8 @@ second.  They are represented in the preregistered family list.
 - reading `Q_rr^-1`, far Records, or a precomputed normalized profile;
 - identifying a real action matrix with a density operator without
   Hermiticity, trace, positivity, and type checks;
+- treating pairwise distinct overlapping `M2` output states as perfectly
+  distinguishable Records or importing an unmodeled classical outcome label;
 - choosing `omega -> +i` or `omega -> -i` after inspecting H1;
 - assuming `E_P=P`, Lüders update, POVM additivity, repeat certainty, or Born
   trace semantics from Record permanence;

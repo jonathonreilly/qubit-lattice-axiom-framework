@@ -1,15 +1,15 @@
 # Route Portfolio
 
-| rank | route | family tuple | value / cost | hard falsifier |
+| rank | route | family tuple | value / cost | result / hard falsifier |
 |---:|---|---|---:|---|
-| 1 | ordered two-time CP compiler | local projective operations; composition order; full H1 temporal residual | extreme / medium | no fixed normalized order yields the temporal groups or order introduces an unselected choice |
-| 2 | cell-native Choi/Kraus compiler | four-corner Clifford form; Choi positivity; H1 factor map | extreme / medium | local cell form is indefinite or normalization destroys the source map |
-| 3 | endpoint product Record instrument | two local qubit carriers; joint outcome statistics; oriented difference and corner average | high / low | signed temporal features cannot be obtained without an external menu/phase label |
-| 4 | strict Record relay | nearest-neighbor pointer microstep; explicit intermediate Record; temporal factor | extreme / medium-high | hidden state, nonlocal read, or failure of forward/reverse reconstruction |
-| 5 | alternative action/process | new derived local rule; source/action ownership | extreme / high | no action-derived construction in present budget |
+| 1 | complete physical dilation | action-native carrier solder; selected instrument/preparation; readable local permanent Record | extreme / high | solution-set probability image is empty |
+| 2 | endpoint product CP instrument | two local qubit carriers; complete cubic joint statistics; relative phase | high / low | `POSITIVE SUPPORT`: exact full H1, but readable register, sharpness/output/state solder remain open |
+| 3 | strict CP relay | time-layer/generator POVM; displaced componentwise branch; temporal factor | extreme / medium-high | `POSITIVE SUPPORT`: exact temporal closure, but preparation and Record attachment remain open |
+| 4 | cell-native Choi/effect compiler | four-corner Clifford form; Choi positivity; ordered effect contrast | high / medium | `TYPED FORK`: positive channel is reciprocal; positive effect needs physical leg typing |
+| 5 | ordered projective compiler | two noncommuting projective operations | medium / low | `BOUNDED NEGATIVE`: both orders are uniform and do not expose handedness |
 
-The first three are independently testable and precede the relay.  H2 is not a
-route until H1 local ownership is complete.
+All preregistered families were executed.  H2 is not a route until H1 local
+ownership is complete.
 
 ## Prior-art sweep
 
@@ -48,3 +48,27 @@ but explicitly not the required probability/Record compiler.  Classification:
 
 The campaign may open a PR only if the result passes all five gates at its
 actual claim class and the family cluster cap.
+
+## Post-result V1--V5 receipt
+
+| gate | actual answer |
+|---|---|
+| V1 | Partial but load-bearing: positivity, dimension, temporal support, reverse and collision candidates are retired; readable Record output and physical selector/attachment remain. |
+| V2 | New exact content includes the cell channel/effect typing fork, a labeled 36-outcome CP compiler, complete H1 F/R decoding in both readings, a normalized 12-outcome temporal relay, and the output-overlap obstruction. |
+| V3 | Not a textbook restatement: generic CP/POVM facts do not supply these framework-specific H1 residual, collision, temporal and selection/readout results. |
+| V4 | Yes: exact spectra, normalizations, pairwise overlaps, equivariance ranks, `18/18`, `136/136`, `128 x 4`, and same-input probability forks materially test the route. |
+| V5 | Blocks 206--207 stop at a positive probability germ and operator factorization; Block 208 crosses to explicit positive two-time compilers while locating the sharper readable-physical-law boundary. |
+
+The independent evaluator returned **OPEN, narrowly**, only for the bounded
+labeled-CP-compiler/readout-obstruction claim.  It grants no Record formation,
+complete H1 ownership, retained status, axiom movement or H2 opening.
+
+## Fresh PR pincer check
+
+After the result, PR #7747 opened cleanly on the comparison stack.  Its exact
+finite diagnostics reject one proposed native mixture identification and one
+common four-weight across six tested contexts, while explicitly leaving richer
+outcome spaces and physical Record formation open.  It neither duplicates nor
+closes Block 208.  Its useful constraint on the next route is to solve the
+physical register/dilation jointly and test context dependence; a hard-coded
+four-component classical label is not an admissible shortcut.

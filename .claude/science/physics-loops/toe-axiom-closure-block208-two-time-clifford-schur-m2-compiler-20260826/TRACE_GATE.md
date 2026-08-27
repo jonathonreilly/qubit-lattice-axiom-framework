@@ -14,3 +14,12 @@ The target is direct because a complete result would supply the only named
 Block-207 H1 ownership leaf.  Abstract realification, local-block support, or
 an admitted instrument is upstream support and must be classified that way if
 the complete witness does not pass.
+
+## Post-result trace disposition
+
+The complete witness did not pass, so the actual result is `upstream_support`:
+positive labeled CP compilers close the mathematical clock/H1 residual but do
+not derive readable Record outputs, action-state solder, cell-leg typing,
+physical selection, or formation/permanence.  The next direct trace action is
+the complete action-native Record-forming dilation and its one/many/none
+readable-probability image.

@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/independent_admissibility_d4_h1_two_time_clifford_cell_m2_record_compiler_2026_08_26.py
+runner_sha256: 49287afed9fcd2ff47661f75a5235e3ef468877452b15c7487d8217e0bbb04d4
+input_fingerprint_sha256: 996497e2f013c552919ce35882dce163b7c1154289466e292a8f7d9e5261f643
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 17.38
+status: ok
+----- stdout -----
+[A] PASS: authority, immutable preregistration, and all audit inputs are pinned
+[B] PASS: both cell orientations have the strict Choi/effect spectra, unit marginals, reciprocal transfer, and commuting orders
+[C] PASS: the cell effect has contrast -(65/313) sin(delta), with endpoint swap and conjugate-reading checks
+[D] PASS: the 36 endpoint effects normalize and write distinct full-rank overlapping outputs without deriving readable Records
+[E] PASS: finite outcome sums recover dot and cross exactly in all 24 cubic frames while sharpness remains unselected
+[F] PASS: grouped/atom ranks and forward/actual-reverse H1 residuals agree exactly in both orientations
+[G] PASS: actual endpoint phases separate the same-q different-p control at rank/nnz 12/56 in both directions
+[H] PASS: the 12-outcome relay supplies componentwise displaced 128-by-4 full-minus-spatial targets in both time directions
+[I] PASS: equivariant section ranks are 69/70 and a distinct strictly positive alternate right inverse survives
+[J] PASS: physical ownership, H2, retention, obligation retirement, and TOE movement remain outside the proved scope
+CELL: spectrum={144/313(x2),104/313,234/313}; partial traces=I2; transfer=(-65/313 swap_xy,-25/313 z); channel order reciprocal.
+ENDPOINT: outcomes=36; sum=I4; output norms={1/64,3/32,9/64}; full-rank overlaps>0; Record readout=open; dot/cross decoder exact.
+H1: grouped=18/18; atoms=136/136; forward/reverse residual=0/0 for eta=+/-; same-q collision rank/nnz=12/56.
+RELAY: outcomes=12; 24+24 component scores; full-minus-spatial forward/reverse designs=128x4 rank=4; section ranks=69/70; positive alternate=true.
+SCOPE: typed compiler support only; complete ownership=false; H2=false; obligation retirement=0; TOE movement=0.
+per_element: checked both conjugate cell matrices, all 36 endpoint effects and full-rank outputs, every positive pairwise overlap, all 12 relay effects, and exact normalization.
+per_site: checked the two-endpoint compiler and displaced one-site writes; checked and not executed — overlapping outputs do not supply a readable Record or action-to-M2 state solder.
+per_mode: checked all fixed H1 incoming/outgoing phase ratios, both orientations, actual reversal, and the same-q different-p collision; H2 was not opened.
+per_block: checked grouped and atom ranks 18/18 and 136/136, exact forward/reverse source equality, and full-minus-spatial 128-by-4 temporal targets in both directions.
+lattice_wide: checked all 24 proper-cubic transports and componentwise relay scores locally; checked and not executed — no global inverse, formation/history law, retained status, or TOE movement was claimed.
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

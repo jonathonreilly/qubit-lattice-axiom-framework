@@ -1,6 +1,6 @@
 loop_id: toe-axiom-closure-block213-mergeable-full-shell-sft-20260827
 campaign_number: 213
-status: ready_to_commit_with_inherited_pipeline_exception
+status: delivered_draft_pr
 phase: guarded_same_background_front_positive_mixed_cp_boundary
 actual_current_surface_status: bounded-support
 target_claim_type: bounded_theorem
@@ -85,3 +85,4 @@ independent_mutations_rejected: 68_of_68
 pipeline_status: inherited_dependency_policy_epoch_mismatch_at_stage_7
 pipeline_block213_local_gates_pass: true
 pipeline_review_loop_owned_epoch_edited: false
+draft_pr: 7755

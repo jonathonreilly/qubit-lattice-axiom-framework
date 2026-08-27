@@ -1,5 +1,5 @@
 # PR Backlog
 
-- Open one stacked draft PR on Block 212 after exact result packaging and
-  conformance; use `.claude/.../PR_BODY.md` as the body.
+- Stacked draft PR opened on Block 212:
+  `https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7755`.
 - Do not use `review-loop`; the user reserved it for landing.

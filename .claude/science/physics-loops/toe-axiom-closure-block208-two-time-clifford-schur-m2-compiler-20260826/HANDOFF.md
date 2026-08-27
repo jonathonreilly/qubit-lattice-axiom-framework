@@ -1,9 +1,12 @@
 # Handoff
 
-Block 208 has reached **typed compiler support** and is ready for draft
-delivery.  The immutable preregistration is commit
+Block 208 is delivered as clean draft PR
+[#7748](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/7748),
+stacked directly on clean draft PR #7746, at **typed compiler support**.  The
+immutable preregistration is commit
 `3dbd70623b218c60b72be93584028edaef406e91`; the coherent result commit is
-`0be49cf0458beb616d1d7002e488e3005e763960`.
+`0be49cf0458beb616d1d7002e488e3005e763960`, followed by conformance commit
+`a1925ebfa45033bde5400f0b6548ca601887a6f5`.
 
 The reproduced cell is a strict CPTP/unital qubit Choi operator in both
 conjugate readings and a strict binary effect at the fixed shear.  A normalized

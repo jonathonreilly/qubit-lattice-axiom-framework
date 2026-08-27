@@ -11,8 +11,8 @@
   Block-208 solder, readable register, local dilation or H1 Record formation.
   It reinforces that the next dilation may not assume a context-independent
   four-component classical label.
-- Block 208 has no PR yet.  Opening remains conditional on the structurally
-  independent checker, fresh content/input-pinned caches, narrow cluster-cap
-  `OPEN`, final validation, and a clean intended delta.
+- Block 208 is clean draft PR #7748, stacked directly on #7746 at conformance
+  commit `a1925ebfa45033bde5400f0b6548ca601887a6f5`.  The narrow cluster-cap
+  `OPEN` permits only its bounded labeled-CP/readout-obstruction claim.
 - Gravity work stays on the separate stack.  This campaign does not use
   `review-loop` and authors no audit verdict.

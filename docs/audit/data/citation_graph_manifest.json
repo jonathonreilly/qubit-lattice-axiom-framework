@@ -1,6 +1,6 @@
 {
- "edge_count": 16128,
- "node_count": 5631,
+ "edge_count": 16133,
+ "node_count": 5632,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -757,6 +757,10 @@
   "admissibility_dirac_kahler_temporal_link_extraction_bounded_theorem_note_2026-08-24": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "admissibility_dirac_kahler_three_direction_rule_geometry_bounded_theorem_note_2026-08-26": {
+   "deps_hash": "ac17502a469c",
+   "out_degree": 5
   },
   "admissibility_dirac_kahler_time_dressing_adjointness_wall_bounded_theorem_note_2026-08-17": {
    "deps_hash": "4741c3dcff39",

@@ -26,19 +26,22 @@ Matched results:
 - the current minimal-axiom no-go already states that formation
   rule/process/state/site/weight/rate is not forced by the baseline alone.
 
-Classification: **open after matched-hit review** only for the exact
-Block-211-code compatibility/coupling/globalization selector and for a new
-action/Record-derived autonomous composition mechanism. Generic schedule
-nonselection, supplied stochastic nucleation and syntactic append monotonicity
-are already prior art and will not be repackaged.
+Classification after execution: the deterministic-code overlap problem,
+decoded-label globalization, parent-POVM positivity, and finite-radius static
+specification are now exact.  The remaining **open after matched-hit review**
+surface is a new action/Record-derived autonomous multi-seed composition and
+history mechanism.  Generic schedule nonselection, supplied IID-mark
+nucleation, and syntactic append monotonicity remain prior art and are not
+repackaged.
 
 ## Ranked routes
 
 | rank | mathematical family | decisive test | dramatic-step score | disposition |
 |---:|---|---|---:|---|
-| 1 | shared-shell marginal compatibility | exact couplings for every overlap displacement and every frozen candidate probability vector | 3 | active |
-| 2 | finite-motif/global-section consistency | joint distribution over the smallest cyclic overlap complexes with fixed marginals | 3 | queued |
-| 3 | action/Record-derived event exclusion | nearest-neighbor homogeneous append rule with no supplied marks/clock/coloring | 3 | queued stretch |
-| 4 | state-seeded causal-front continuation | exact confluence from arbitrary existing Record frontiers | 2 | bounded fallback |
-| 5 | covariant recoding/variable fragments | retain eight readable labels while avoiding shared-site contradictions | 2 | escape if fixed code fails |
-| 6 | supplied stochastic hard-core marks | known positive conditional construction | 0 | prior art / control only |
+| 1 | visible higher-block multi-seed handshake | tentative fronts align/exclude before immutable writes; exact local Kraus normalization and confluence | 3 | active next |
+| 2 | state/action-derived nucleation | local eligibility/site and compatible sector/phase without one global seed | 3 | active joint seam |
+| 3 | local CP/QCA front plus cylinders | physical many-input updates, occurrence/rate and repeated projective histories | 3 | queued after handshake |
+| 4 | binary-only compilation of the 194-type front | remove the visible 195-state alphabet cost while preserving phase readability | 2 | optimization, not first blocker |
+| 5 | perfect-Lee spaced seeds | prevent nearby collisions, then derive common sector and repeated growth | 2 | bounded fallback |
+| 6 | another static global field | repeat already closed decoded-globalization work | 0 | deprioritized |
+| 7 | supplied IID hard-core marks | known conditional nucleation with imported activity/priority | 0 | prior art / control only |

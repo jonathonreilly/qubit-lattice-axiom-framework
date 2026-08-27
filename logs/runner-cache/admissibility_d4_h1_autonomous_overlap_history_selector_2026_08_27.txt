@@ -1,0 +1,49 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_d4_h1_autonomous_overlap_history_selector_2026_08_27.py
+runner_sha256: a32e6d60f31cf6e81dd1b19da5a1908a755ab9fc24d8e89055f4fb12db159ac0
+input_fingerprint_sha256: ce4ed96743ff6dffce2edc1b58fda6842664d542c40b75a112a7f240ca8cec01
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 30.16
+status: ok
+----- stdout -----
+OVERLAP: intersecting displacements=19 (same/axial/diagonal=1/6/12); compatible edges={'same': 8, 'axial': 40, 'diagonal': 28, 'disjoint': 64}; dimensions={'same': 0, 'axial': 26, 'diagonal': 16, 'disjoint': 49}.
+H1_CENSUS: 40 parameter cases x 19 overlaps; pass/fail=440/320; nonzero phases pass/fail=9/10; minimum forced conflict on every failed orbit is |delta_z|.
+THREE_CENTER: pairwise compatible uniform permutation couplings have global support=0, while the bare compatible geometry has 112 triples.
+RECODING: binary-shell fixed/six-orbits=2/2; equivariant injections=8/8; every deterministic injective code forces zero cross imbalance.
+STOCHASTIC_ESCAPE: readable words=26/26; symbolic overlaps=19/19; H1 placements PASS/FAIL=760/0; symmetry fixes four-word weights uniquely.
+MICROCODE_TRIANGLES: AFF pure-cross triples/projection=4/(4,4,4); FFF=2/(2, 2, 2); pairwise transport does not globalize the pure-cross uniform kernel.
+GLOBAL_FIELD: period-four translations=64; rotated sectors=6; decoded H1 cases globalized=40/40; uniform microcode preserved=False.
+SECTOR_POVM: strictly positive=True; normalized=True; operator postprocessing recovers E=True; global channel is nearest-neighbor=False.
+LOCAL_TEMPLATE: global configurations=194; radius-two patches decode sector/phase=True; radius-three unique neighbor transitions=True; local constraint is formation dynamics=False.
+SEED_FRONT: visible types plus blank=195; supplied-site phase-refined POVM normalized=True; one-seed terminal confluence=True; independent seed compatibility=1/194; autonomous nucleation=False.
+POSITIVE_CONTROLS: zero-phase correlated all-lattice globalization=True; perfect-Lee shell coverage=6/7; one batch is collision-free, while each later coset sees five locked shell sites.
+OWNERSHIP: code/marker candidates=64; rooted role cases=384; stochastic roles=48; all collide with a noncenter observation at radius one.
+per_element: checked all eight dot/cross effects and labels, 26 readable stochastic words, every shared-bit transport, all eight deterministic injections, eight sector effects, 194 visible front types plus blank, and all eight equivariant scalar marker maps.
+per_site: checked every shared shell site, all 194 period-four fields, all radius-one/two/three patches, 384 deterministic plus 48 stochastic ownership roles; radius two decodes completed sector/phase, while a radius-one ownership decoder was checked and not obtained.
+per_mode: checked five frozen H1 phases, depths 1/2, radii 1 and 1/2, both realifications, endpoint reversal, deterministic and stochastic recodings, sector POVMs, strict-fresh and verify-or-write semantics; H2 was checked and not executed — it remains sealed.
+per_block: checked all 19 overlap displacements, exact transport blocks, both AFF/FFF three-center tests, all 760 stochastic H1 placements, 1164 radius-three patch transitions, the operator postprocessing identity, zero-phase field, and perfect-Lee constraint.
+lattice_wide: checked an exact translation-orbit field, projectively consistent finite-region POVMs, a radius-three 194-field SFT, and conditional fair-order single-seed nearest-neighbor growth; autonomous nucleation, incompatible multi-seed CP confluence, occurrence/rate, repeated history, retained closure, and TOE movement were checked and not executed.
+CHECK A: PASS - authority and immutable preregistration are pinned
+CHECK B: PASS - the 19 shell-intersection displacements reduce to exact same/axial/diagonal compatibility blocks
+CHECK C: PASS - compatible couplings exist exactly when the two shared-bit signature pushforwards agree
+CHECK D: PASS - coupling dimensions and independent-conflict controls are exact, without promotion to a quantum joint instrument
+CHECK E: PASS - pairwise compatible uniform couplings can fail on a three-center cycle even though the geometry admits compatible triples
+CHECK F: PASS - all 40 H1 cases obey the exact cross-moment formula; every nonzero case fails 10 of 19 overlaps with minimum conflict |delta|
+CHECK G: PASS - all eight deterministic injective equivariant one-shell encodings inherit the stationary cross-moment obstruction
+CHECK H: PASS - the readable 26-word stochastic encoder passes all symbolic two-center transports and all 760 H1 placements only at the uniquely forced uniform four-word weights
+CHECK I: PASS - the uniform microcode globalizes on AFF but has a minimal pure-cross FFF counterexample, so pair transport is not an infinite-volume proof
+CHECK J: PASS - a period-four translation-orbit field and its rotations globalize the decoded labels for all 40 H1 cases with exact action-derived weights
+CHECK K: PASS - a positive normalized sector POVM postprocesses operator-wise to the original coarse POVM and defines a projective global but nonlocal Record channel
+CHECK L: PASS - the 194 global Record fields are exactly the solutions of a radius-three covariant local patch rule; radius two already decodes sector and phase but is not one-step rigid
+CHECK M: PASS - a normalized visible 195-state nearest-neighbor compiler grows one supplied seed confluent and append-only, while autonomous site choice and incompatible multi-seed synchronization remain absent
+CHECK N: PASS - every zero-phase H1 marginal also has the earlier explicit all-lattice correlated globalization, not a local history
+CHECK O: PASS - the perfect-Lee constraint gives one conditional disjoint-shell batch but neither selects nor strictly cycles its writers
+CHECK P: PASS - all eight equivariant scalar markers collide in 384 deterministic and 48 stochastic radius-one ownership roles
+CHECK Q: PASS - strict fresh writes cannot overlap; compatible idempotent writes commute but are not two fresh formations
+CHECK R: PASS - autonomous multi-seed nucleation, timing/history, one/many/none, H2, axiom update, retention, obligation retirement and TOE movement remain open
+RESULT: deterministic injective one-shell obstruction escaped by a readable stochastic language; an exact positive sector POVM and projectively consistent all-lattice Record channel recover the original coarse effects, and a radius-three covariant patch rule has exactly the 194 global fields. A visible higher-block nearest-neighbor compiler then grows one supplied seed append-only and fair-order confluent. Autonomous site selection, incompatible multi-seed synchronization, occurrence/rate and repeated history remain open.
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

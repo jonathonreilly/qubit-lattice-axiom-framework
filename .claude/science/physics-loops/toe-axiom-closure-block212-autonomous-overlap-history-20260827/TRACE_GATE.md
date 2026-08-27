@@ -5,10 +5,13 @@ target_blocker_text: "construct one autonomous overlap-safe repeated local histo
 source_of_blocker_text: block211_handoff
 reachability_to_target: partially_closes
 artifact_role: theorem
-next_trace_action: "decide exact overlap coupling/globalization, then attempt the metadata-free local history mechanism"
+next_trace_action: "derive autonomous compatible multi-seed nucleation and lift the visible local front to a repeated CP history"
 ```
 
-An exact coupling selector would partially close the Block-211 history wall.
-Only a complete local process with every physical interface fixed may claim it
-closes that wall. A supplied scheduler or stochastic activity is bounded
-support and moves no TOE percentage.
+Block 212 now partially closes the wall with an exact positive parent POVM,
+decoded global Record channel, finite-radius local SFT, and a conditional
+one-seed nearest-neighbor compiler.  Only a complete local process with
+autonomous site/occurrence, compatible multi-seed composition, physical Kraus
+updates, rate and repeated histories may claim full closure.  A supplied site,
+global seed, scheduler or stochastic activity remains bounded support and moves
+no TOE percentage.

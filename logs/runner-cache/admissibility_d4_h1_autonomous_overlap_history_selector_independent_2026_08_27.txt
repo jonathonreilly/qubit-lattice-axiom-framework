@@ -1,0 +1,48 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_d4_h1_autonomous_overlap_history_selector_independent_2026_08_27.py
+runner_sha256: 406d1719b18137d117074986781b71eb3d9e08e1c6a275a978eddccf5348cdbe
+input_fingerprint_sha256: e3f9e9b9473f6e4de771b8ad837b84eeee182cb9c2866a66f3d6d8f9cfdd2237
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 36.43
+status: ok
+----- stdout -----
+OVERLAP_CENSUS: intersecting=19 (same=1x6, axial=6x1, face=12x2); compatibility_edges=8/40/28/64; endpoint reversal and 192=8x24 code transports exact.
+TRANSPORT_IFF: signature pushforwards match iff a coupling exists; incidence_ranks={'same': (8,), 'axial': (14,), 'face': (12,), 'disjoint': (15,)}; uniform positive entries same=1/8, axial=1/48|1/16, face=1/40|1/8, disjoint=1/64.
+H1_CENSUS: phases=(0,pi/6,pi/3,pi/2,5pi/6), depths=2, radii=2, realifications=2 => cases=40; all-overlap PASS=8 FAIL=32; displacement PASS=440 FAIL=320; nonzero_cross_mismatch=32; every one of 320 deterministic failures has minimum incompatible mass |delta_z|; redundant stochastic placements PASS=760 FAIL=0.
+PRODUCT_AND_WRITES: uniform product conflict same/axial/face/disjoint={'same': 7/8, 'axial': 3/8, 'face': 9/16, 'disjoint': 0}; strict overlap rejects both orders; idempotent reuse and atomic union succeed iff signatures agree.
+HOMOGENEOUS_OBSTRUCTION: constraint_rank=5 nullity=3; binary fixed/six-orbits=2/2, equivariant injections=8; every stationary recoding forces zero cross moment.
+STOCHASTIC_ENCODER: readable support=26/26; arbitrary symbolic overlaps=19/19; cubic and endpoint covariant; stabilizer weights uniquely a=b=1/4,c=1/2.
+STOCHASTIC_TRIANGLES: triangle_orbits=2; FFF extreme cross label has only 2 triples and is exactly nonglobal; numerical scout=20/20 (not a certificate), exact algebraic H1 certificates=20/20 for 40/40 placements.
+PERIOD4_DECODED_GLOBALIZATION: 64 translations give D_+z=(X+z:1/2, each perpendicular cross:1/8); six rotated sectors and w_e=1/9+p_e-p_-e reproduce 40/40 decoded H1 laws, while all 40 differ from uniform K microcode on 24 masks.
+OPERATOR_RECORD_BRIDGE: sector POVMs=4, positive effects=32, operator decodes=32/32; global configurations=194, Kraus-normalized/projective with distant covariance -1/16; not autonomous NN.
+STATIC_RADIUS3_SFT: vector patches B1/B2/B3=(42, 192, 192); B2 successor histogram={1:116,2:28,3:48}; B3 unique successors=1164/1164, commuting translations give exactly 194 fields; static constraint, not formation dynamics.
+SEED_FRONT: visible alphabet=195; four supplied-site phase POVMs normalize; write/lock Kraus domains sum to I; 776 fair-order tests converge; compatible fixed-displacement pairs=194/37636; no invariant exact-single-seed law, rate, handshake, or autonomous history.
+OWNERSHIP_COLLISIONS: 8 recodings x 8 equivariant marker maps x 6 roles=384 (range 2..8); stochastic encoder roles=8x6=48 (range 13..26); no radius-one decoder.
+N5 per_element: checked eight labels, 26 words, 32 sector effects, 194 phase-refined seed effects, exact Kraus blocks, 195 visible front states, all frames, endpoint reversal, and a=b=c/2=1/4.
+N5 per_site: checked every shared site, the two-domain write/lock channel, and 384 deterministic plus 48 stochastic marker roles; a binary radius-one ownership decoder was checked and not obtained.
+N5 per_mode: checked five H1 phases across both depths, radii and realifications; deterministic coding fails 320 placements by |delta_z| while redundant coding passes all 760; H2 was checked and not executed — it remains sealed.
+N5 per_block: checked all transports, both triangle orbits, 20 exact H1 certificates, 64 translations, 1164 patch transitions, and 194/194^2 fixed-displacement seed compatibility.
+N5 lattice_wide: checked the exact 194-field static SFT and fair-order one-seed limit; autonomous site/rate, handshake, repeated history, and uniform-microcode consistency remain open.
+A: PASS — the Block-212 preregistration and every inherited authority blob are exact.
+B: PASS — the complete 19-displacement shell census has 8/40/28/64 compatibility edges and an exact cubic code.
+C: PASS — signature pushforward equality is necessary and sufficient, including zero-support and uniform full-support limits.
+D: PASS — all 40 H1 parameter cases, endpoint reversals, and exact cross moments give the 440/320 displacement census.
+E: PASS — full-support products conflict while strict and idempotent serial/atomic semantics remain distinct.
+F: PASS — all eight independently enumerated equivariant recodings inherit the stationary zero-cross obstruction.
+G: PASS — the readable 26-word stochastic encoder passes every symbolic two-center overlap only at a=b=c/2=1/4.
+H: PASS — chosen pair couplings can form an inconsistent cycle although compatible triples exist.
+I: PASS — both triangle orbits are exact: FFF has a minimal extreme-label counterexample but all 40 H1 placements have exact certificates.
+J: PASS — an explicit uniform full-support global correlated field is translation/proper-cubic covariant but nonlocal.
+K: PASS — the supplied mod-7 Lee coloring gives a conditional unique-writer batch but cannot cycle under strict freshness.
+L: PASS — all deterministic and stochastic radius-one roles collide for all eight equivariant marker maps.
+M: PASS — the period-4 sector mixture globalizes decoded H1 labels but not the uniform conditional microcode.
+N: PASS — the exact sector POVM and decoded postprocessing define a normalized projectively consistent global Record channel.
+O: PASS — the 194 period-4 fields are exactly a cubic/endpoint-covariant radius-3 static SFT, with the tested radius-1/2 boundary explicit.
+P: PASS — the visible 195-state two-Kraus compiler grows one supplied seed confluent, while the exact invariant-single-seed and incompatible-pair boundaries stay narrowly scoped.
+Q: PASS — uniform-microcode infinite consistency, autonomous site/rate, multi-seed handshake, history, H2, axiom change, retention, TOE movement, and universal no-go remain unclaimed.
+CLASSIFICATION: partial_radius3_static_sft_conditional_supplied_seed_front_autonomous_history_open; honest partial only; H2 sealed; axiom/registry/TOE unchanged.
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

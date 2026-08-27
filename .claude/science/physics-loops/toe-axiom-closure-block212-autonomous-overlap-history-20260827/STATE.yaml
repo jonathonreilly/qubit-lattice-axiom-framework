@@ -1,10 +1,10 @@
 loop_id: toe-axiom-closure-block212-autonomous-overlap-history-20260827
 campaign_number: 212
-status: preregistration
-phase: overlap_selector_pre_execution
-actual_current_surface_status: open
-target_claim_type: null
-conditional_surface_status: null
+status: complete
+phase: packaged_bounded_result_successor_multi_seed_campaign
+actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
+conditional_surface_status: bounded-support
 hypothetical_axiom_status: null
 admitted_observation_status: null
 trace_class: direct_blocker_closure
@@ -15,14 +15,45 @@ source_of_blocker_text: block211_handoff
 parent_commit: 59290f671a7482dd3350e118e8f35606f48be1a5
 parent_pr: 7751
 origin_main: 76df4becc8233080bc5a10a4baf55f83e80f8f2d
-prereg_commit: pending
+prereg_commit: 07d799c0a68434a73f96f6d5c147963fed86fdf5
 h1_fixture_frozen: true
 h2_sealed: true
 review_loop_allowed: false
-active_route: exact_overlap_coupling_selector
-strongest_unresolved_obligation: "derive a metadata-free local event/composition law or exactly classify the direct family"
-next_exact_action: "enumerate shell intersections and solve exact coupling/globalization constraints"
-stop_condition: "honest one/many/none classification or strongest bounded result with named live routes"
+active_route: visible_multi_seed_cp_front
+strongest_unresolved_obligation: "derive autonomous event eligibility and a Record-visible pre-write handshake that aligns or excludes incompatible permanent seeds, then supply rate and repeated histories"
+next_exact_action: "couple state/action-derived nucleation to the 194-type visible front and test local Kraus multi-seed confluence"
+stop_condition: "strongest bounded result reached; package exact positive bridge and named autonomous wall after independent checks"
+decision_class: partial
+homogeneous_all_center_nonzero_h1_deterministic_injective_one_shell: none
+h1_parameter_cases: 40
+h1_deterministic_overlap_pass_fail: [440, 320]
+deterministic_equivariant_one_shell_codes_exhausted: 8
+stochastic_readable_words: 26
+stochastic_h1_overlap_pass_fail: [760, 0]
+uniform_microcode_pure_cross_fff_global: false
+actual_h1_fff_exact_certificates: true
+period_four_distinct_phases_per_vector_sector: 32
+parent_sector_povm_positive_normalized: true
+operator_postprocess_recovers_block211_effects: true
+decoded_global_record_channel: true
+global_record_fields: 194
+radius_two_completed_type_decoder: true
+radius_three_exact_local_sft: true
+conditional_visible_seed_front_states_with_blank: 195
+conditional_one_seed_terminal_confluence: true
+translation_invariant_exactly_one_seed: false
+uniform_independent_seed_compatibility: 1/194
+multi_seed_handshake_constructed: false
+autonomous_nucleation_constructed: false
+zero_phase_globalization: true
+perfect_lee_one_batch: true
+perfect_lee_strict_cycle: false
+deterministic_marker_role_cases: 384
+stochastic_marker_role_cases: 48
 axiom_update: none
 obligation_retirement: 0
 toe_percentage_movement: 0
+primary_checks: 18_of_18
+primary_mutations_rejected: 49_of_49
+independent_checks: 17_of_17
+independent_mutations_rejected: 79_of_79

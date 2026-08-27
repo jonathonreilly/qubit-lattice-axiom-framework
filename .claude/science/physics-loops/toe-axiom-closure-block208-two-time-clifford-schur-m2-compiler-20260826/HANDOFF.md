@@ -1,9 +1,9 @@
 # Handoff
 
-Block 208 has reached **typed compiler support** and is in final
-validation/packaging.  The immutable preregistration is commit
-`3dbd70623b218c60b72be93584028edaef406e91`; no PR is claimed here until the
-remaining conformance and clean-delta gates finish.
+Block 208 has reached **typed compiler support** and is ready for draft
+delivery.  The immutable preregistration is commit
+`3dbd70623b218c60b72be93584028edaef406e91`; the coherent result commit is
+`0be49cf0458beb616d1d7002e488e3005e763960`.
 
 The reproduced cell is a strict CPTP/unital qubit Choi operator in both
 conjugate readings and a strict binary effect at the fixed shear.  A normalized
@@ -30,6 +30,12 @@ checker builds the temporal target as full source minus all 14 spatial columns
 in both time directions.  Both content/input-pinned caches are fresh.  A
 frozen-byte adversarial relay/type pass and its final note-delta check pass with
 the explicit qualifications above.
+
+Ordinary conformance passes.  The full disposable-worktree pipeline reaches
+stage 7 and stops on the inherited dependency-policy epoch mismatch; Block 208
+touches none of its governed files and retains none of the generated audit
+delta.  Citation topology is `+1` node / `+0` edges and remains audit-lane
+metadata.
 
 The highest-leverage successor is one action-native, proper-cubic-covariant
 local Record-forming dilation/intertwiner.  Compute the image of its complete

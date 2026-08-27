@@ -70,6 +70,10 @@ claim.
 - Citation topology is `+1` node / `+0` edges relative to the checked-in
   manifest.  The campaign does not author audit/governance metadata; that
   manifest refresh remains audit-lane work.
+- The full pipeline passes through effective-status computation and stops at
+  stage 7 on the parent stack's inherited dependency-policy epoch mismatch.
+  Block 208 changes none of the governed epoch/fingerprint/build/restore files;
+  the run was isolated and no generated audit delta is retained.
 - Fresh PR check: parent #7746, comparison #7745, and new diagnostic #7747 are
   clean.  #7747 reinforces that a context-independent four-label shortcut is
   unsafe but does not supply the missing physical dilation or Record readout.

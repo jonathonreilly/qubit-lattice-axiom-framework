@@ -48,6 +48,10 @@
   rerun unchanged.
 - 2026-08-26: the adversarial checker verified the final source-note delivery
   delta at SHA `1f64b32a...` as no scientific widening or contradiction.
-- Final conformance receipts remain pending in this packaging state.
+- 2026-08-26: generation-time conformance sections 1--11 pass.  The full
+  disposable-worktree pipeline reaches stage 7, then stops on the inherited
+  dependency-policy epoch mismatch.  Block 208 changes none of its governed
+  files and retained none of the generated audit/ledger delta.  Citation
+  topology is `+1` node / `+0` edges and is disclosed as audit-lane work.
 - `review-loop`: skipped by explicit user instruction; no audit verdict is
   authored.

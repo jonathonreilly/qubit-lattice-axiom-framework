@@ -1,6 +1,6 @@
 loop_id: toe-axiom-closure-block208-two-time-clifford-schur-m2-compiler-20260826
 campaign_number: 208
-status: result_packaging
+status: result_ready_for_draft
 phase: two_time_clifford_cell_m2_compiler_boundary
 actual_current_surface_status: bounded-support
 target_claim_type: bounded_theorem
@@ -81,3 +81,10 @@ final_note_sha256: 1f64b32a6d0b9c1fd4e176c4bee1b990e9b7135c1033223a9cdae6f473de8
 runner_caches: fresh_content_and_input_pinned
 primary_cache_timeout_sec: 120
 independent_cache_timeout_sec: 180
+result_commit: 0be49cf0458beb616d1d7002e488e3005e763960
+changed_file_vocabulary: pass
+strict_audit_lint: pass_with_inherited_warnings_notices
+repo_invariants_links: pass
+citation_graph: 5637_nodes_16221_edges_delta_plus1_plus0
+pipeline_validation: inherited_dependency_policy_epoch_mismatch_at_stage_7
+pipeline_generated_surfaces_retained: false

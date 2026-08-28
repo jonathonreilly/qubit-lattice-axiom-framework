@@ -1,7 +1,7 @@
 loop_id: toe-axiom-closure-block222-parent-dart-forest-ancestry-20260828
 campaign_number: 222
-status: primary_complete_independent_pending
-phase: scoped_result_freeze
+status: independently_reproduced
+phase: complete_scoped_boundary
 parent_commit: 459c374865
 parent_branch: physics-loop/toe-axiom-closure-block221-time-multiplexed-ancestry-finality-20260828
 branch: physics-loop/toe-axiom-closure-block222-parent-dart-forest-ancestry-20260828
@@ -43,7 +43,12 @@ decision_class: scoped-simultaneous-anchor-failure
 no_go_discipline_status: broad_gate_fail_scoped_partial_narrowing_only
 latest_pr_checked: 7767
 latest_pr_effect: bounded_spectral_discriminator_no_toe_retirement
-independent_reconstruction: pending
+independent_reconstruction: clean
+independent_runner: scripts/admissibility_d4_h1_parent_dart_forest_ancestry_gate_independent_2026_08_28.py
+independent_runner_sha256: cd3cfe1c57449f0e408333aba94b529aa9ad606ae4ccb9acba725992ef3600e7
+independent_full_checks: 27
+independent_mutation_meta_checks: 28
+independent_mutations_rejected: 12
 axiom_update: none
 obligation_retirement: 0
 toe_percentage_movement: 0

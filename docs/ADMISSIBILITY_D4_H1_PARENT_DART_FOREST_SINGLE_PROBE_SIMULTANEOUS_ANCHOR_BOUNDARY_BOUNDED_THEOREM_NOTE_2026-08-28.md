@@ -11,6 +11,7 @@ source_of_blocker_text: block220_handoff
 reachability_to_target: narrows_and_repairs_carrier
 artifact_role: theorem
 runner: scripts/admissibility_d4_h1_parent_dart_forest_ancestry_gate_2026_08_28.py
+independent_checker: scripts/admissibility_d4_h1_parent_dart_forest_ancestry_gate_independent_2026_08_28.py
 next_trace_action: "construct and exhaust an explicit overlap-visible two-arm parent forest whose joined paths coalesce or return two collision-linked root acknowledgements"
 conditional_surface_status: bounded-support
 bare_retained_allowed: false
@@ -31,6 +32,9 @@ narrowing.
 
 Primary executable gate:
 [admissibility_d4_h1_parent_dart_forest_ancestry_gate_2026_08_28.py](../scripts/admissibility_d4_h1_parent_dart_forest_ancestry_gate_2026_08_28.py).
+
+Structurally independent reconstruction:
+[admissibility_d4_h1_parent_dart_forest_ancestry_gate_independent_2026_08_28.py](../scripts/admissibility_d4_h1_parent_dart_forest_ancestry_gate_independent_2026_08_28.py).
 
 No-go-discipline packet:
 [ADMISSIBILITY_D4_H1_PARENT_DART_FOREST_SINGLE_PROBE_SIMULTANEOUS_ANCHOR_NO_GO_DISCIPLINE_CHECKLIST_2026-08-28.md](ADMISSIBILITY_D4_H1_PARENT_DART_FOREST_SINGLE_PROBE_SIMULTANEOUS_ANCHOR_NO_GO_DISCIPLINE_CHECKLIST_2026-08-28.md).
@@ -132,9 +136,17 @@ retires no obligation, and moves no TOE percentage.
 - 5,040 disjoint reciprocal foreign-probe crosswire states enumerated, with
   the first witness frozen above;
 - all 15 preregistered nonidentical mutations must exit nonzero;
+- independent full source/scope gate: `27/27`; independent mutation-meta:
+  `28/28`, rejecting `12/12` behaviorally disjoint mutations with no primary
+  mutation-name overlap;
+- independent runner SHA-256:
+  `cd3cfe1c57449f0e408333aba94b529aa9ad606ae4ccb9acba725992ef3600e7`;
+- the independent implementation supplies its own generic frozen-JSON
+  interpreter, cubic representation reconstruction, polar intertwiners,
+  labelled probe enumeration and reciprocal-pair quotient and imports no
+  primary or Block-220/221 helper;
 - N1--N8 returns FAIL for every broad negative and authorizes only the exact
   one-probe partial narrowing.
 
-Independent reconstruction is required before this packet is treated as a
-finished author-side science block.  Audit alone may assign an effective
-status.
+The author-side block is independently reproduced.  Audit alone may assign an
+effective status.

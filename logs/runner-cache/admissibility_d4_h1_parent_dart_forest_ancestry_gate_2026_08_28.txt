@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_d4_h1_parent_dart_forest_ancestry_gate_2026_08_28.py
 runner_sha256: 7349de32a0e5aa95e6f8c10e90b02adbf3f6e3ed4a59356bfbf608e1582cae50
-input_fingerprint_sha256: f937b9285546ebc05fbf9b9fd3469e8270d9faba041d68910352e09e31bdd0ef
+input_fingerprint_sha256: 402ae522388f82b700dc4f91bf9d673e54f6c3d672e257df219582b57bf82b86
 timeout_sec: 180
 exit_code: 0
-elapsed_sec: 0.68
+elapsed_sec: 0.74
 status: ok
 ----- stdout -----
 PASS canonical Block220 sidecar remains byte bound

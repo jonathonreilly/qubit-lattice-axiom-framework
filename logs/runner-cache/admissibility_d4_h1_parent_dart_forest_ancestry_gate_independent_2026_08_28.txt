@@ -1,0 +1,46 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_d4_h1_parent_dart_forest_ancestry_gate_independent_2026_08_28.py
+runner_sha256: cd3cfe1c57449f0e408333aba94b529aa9ad606ae4ccb9acba725992ef3600e7
+input_fingerprint_sha256: a2413041d0baa3ba47d00c54e21984483e2780a690eed26e76d69e82d6459cec
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.68
+status: ok
+----- stdout -----
+PASS independent consumer binds the canonical frozen Block220 sidecar digest
+PASS generic transition interpreter preserves all load-bearing frozen semantics
+PASS independently enumerated inventory is exactly the 24 proper cubic rotations with geometric port maps
+PASS rank-52 Record code and rank-2 U pair leave a rank-74 controller split 37+37
+PASS both fixed-normal physical parity characters are exactly [37,-3,5,-3]
+PASS logical character [34,-2,2,-2] leaves residual multiplicities [1,0,2,0]
+PASS independent group averages give two full-rank polar intertwiners at the frozen Gram floors
+PASS each supplied normal has one and only one ordered proper-cubic frame transport
+PASS every context independently gives 74 orthonormal named rays beside a rank-54 default projector
+PASS named intertwiners and default projectors are covariant under all rotations and complement exchange
+PASS independent frozen L4 census exhausts 576 same-bit and 768 opposite-bit starts
+PASS generic sidecar execution reproduces exactly 96 same-bit and zero opposite-bit false Records
+PASS L4 reachability maximum is 51 states and every first Record needs at most five actions
+PASS parent-dart discrimination intercepts all 96 inherited false routes directly before commit
+PASS all width-two labelled probes partition exactly as 256=160 own+96 foreign
+PASS every width-two probe classifies, restores, and preserves its parallel dart
+PASS all width-three labelled probes partition exactly as 13428=4392 own+9036 foreign
+PASS every width-three probe classifies and restores all parent child launch and collision darts
+PASS reciprocal orientation plus disjoint arms gives exactly 5,040 simultaneous-anchor crosswires
+PASS first crosswire is the exact frozen 0-2-5-3-4 versus 1-7-6 witness
+PASS twelve independent hostile mutations have unique behaviors and no primary-suite name overlap
+PASS independent Stage-A source packet is complete
+PASS independent runner imports no primary or Block220/221 helper
+PASS preregistration freezes the 74+54 carrier, labelled probes, and simultaneous-anchor stop
+PASS N1-N4 enumerate normalized alternatives and isolate only W_X without hidden or mismatched walls
+PASS N5-N8 retain five resolution levels, live closure paths, a defeating steelman, and bypass echoes
+PASS landed note and source ledger authorize only one-probe partial narrowing with no governance movement
+DATA {"block220_l4":{"direct":96,"intercepted":96,"maximum_reached":51,"maximum_shortest_trace":5,"opposite_records":0,"opposite_starts":768,"same_records":96,"same_starts":576,"zipper":0},"carrier":{"carrier_sha256":"c17489aa637aed90ee1139859e6d9a9a3f79999abab5095e97b2e45d43377bec","context_covariant":true,"controller_rank":74,"frame_counts":[1,1,1,1,1,1],"gram_floors":[38.50748354757309,22.203469812516605],"intertwiners_exist":true,"logical_character":[34,-2,2,-2],"logical_multiplicities":[8,8,10,8],"map_binding":true,"named_rank":74,"odd_character":[37,-3,5,-3],"parity_ranks":[37,37],"partition_ok":true,"physical_character":[37,-3,5,-3],"physical_multiplicities":[9,8,12,8],"proper_group":true,"record_rank":52,"removed_ok":true,"residual_multiplicities":[1,0,2,0],"rotation_count":24,"stabilizer_size":4,"u_rank":2,"x_ranks":[54,54,54,54,54,54]},"classification":"scoped-one-probe-scalar-anchor-simultaneous-crosswire","probes":{"crosswire_aliases":5040,"first_crosswire":{"left_actor_path":[0,2,5,3,4],"left_anchor":4,"left_ports":[3,0,1,1],"left_target":1,"mechanism":"reciprocal foreign roots can bind the other probe's locally identical scalar anchor","right_actor_path":[1,7,6],"right_anchor":6,"right_ports":[2,3],"right_target":0},"widths":{"2":{"classification_failures":0,"dart_failures":0,"foreign":96,"own":160,"probes":256,"restoration_failures":0},"3":{"classification_failures":0,"dart_failures":0,"foreign":9036,"own":4392,"probes":13428,"restoration_failures":0}}},"runner_sha256":"cd3cfe1c57449f0e408333aba94b529aa9ad606ae4ccb9acba725992ef3600e7","scope":{"active_next":"explicit two-arm higher-block forest","axiom_amendment":"none","broad_no_go_gate":"FAIL","disposition":"partial narrowing","negative":"frozen one-probe scalar-anchor protocol only","obligation_retirement":0,"toe_percentage_movement":0},"sidecar_sha256":"159dd7dfb9787d146eb55440749577db6818c8f88be743191a633e758ac8e223","verdict":"CLEAN"}
+per_element: reconstructed the rank-52 Record code, rank-2 U pair, 74-ray carrier, rank-54 default, and both complement parities.
+per_site: checked exact parent, child, launch, collision, inverse, and width-two parallel darts with no hidden root identity.
+per_mode: checked C4 characters, two full-rank intertwiners, six normal frames, all 24 rotations, complement, and hostile mutations.
+per_block: exhausted the L4 sidecar, every width-two/three labelled probe, and every disjoint reciprocal width-three crosswire pair.
+lattice_wide: checked and not executed — the finite crosswire stops only the frozen one-probe scalar-anchor protocol; two-arm higher blocks live.
+TOTAL: PASS=27 FAIL=0
+
+----- stderr -----
+

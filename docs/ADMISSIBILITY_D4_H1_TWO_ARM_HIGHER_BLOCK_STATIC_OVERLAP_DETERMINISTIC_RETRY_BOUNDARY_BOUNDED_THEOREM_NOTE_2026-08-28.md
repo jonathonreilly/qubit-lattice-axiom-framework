@@ -11,6 +11,7 @@ source_of_blocker_text: block220_handoff
 reachability_to_target: constructive_static_narrowing
 artifact_role: theorem
 runner: scripts/admissibility_d4_h1_two_arm_higher_block_ancestry_gate_2026_08_28.py
+independent_checker: scripts/admissibility_d4_h1_two_arm_higher_block_ancestry_gate_independent_2026_08_28.py
 next_trace_action: "compile the seam/contact schema into explicit local rollback and acknowledgement rows, exhaust hostile schedules, then construct the literal CP backoff instrument or pivot to deterministic coalescence"
 conditional_surface_status: bounded-support
 bare_retained_allowed: false
@@ -136,6 +137,16 @@ to the selected dynamics remain supplied obligations.
 
 - primary baseline: `22/22`;
 - mutation-meta: `23/23`, rejecting all `19/19` nonidentical mutations;
+- structurally independent baseline: `19/19` science and `26/26` full
+  source/scope checks; independent mutation-meta `27/27`, rejecting all
+  `15/15` behaviorally disjoint mutations with no primary mutation-name
+  overlap;
+- independent runner SHA-256:
+  `da8c832ab0103a2ec834dca248cc38865cd31827c3fbaa90f37acac9d176fd12`;
+- the independent implementation reconstructs the cubic carrier,
+  complement-parity intertwiners, labelled forest/seam census, reciprocal
+  witness quotient and retry comparator without importing a Block-220/221/222
+  or Block-223 primary helper;
 - all six normals, 24 rotations, both complement parities, exact 74+54
   partition, 576 seam transports and eight contact families checked;
 - every width-two/three parent forest, seam and unordered seam pair in the

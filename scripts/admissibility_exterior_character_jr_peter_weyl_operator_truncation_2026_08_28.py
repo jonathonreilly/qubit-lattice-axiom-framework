@@ -8,6 +8,7 @@ from fractions import Fraction
 from math import factorial
 from pathlib import Path
 
+import numpy as np
 import sympy as sp
 
 from admissibility_exterior_character_jr_peter_weyl_operator_truncation_independent_2026_08_28 import (
@@ -72,6 +73,30 @@ def packet_coefficients(member: int, cutoff: int, s_value: sp.Rational) -> tuple
     )
 
 
+def sympy_matrix(values: tuple[tuple[Fraction, ...], ...]) -> sp.Matrix:
+    return sp.Matrix(
+        [
+            [sp.Rational(value.numerator, value.denominator) for value in row]
+            for row in values
+        ]
+    )
+
+
+def operator_norm(matrix: sp.Matrix) -> float:
+    """Numerical SVD diagnostic on an exact rational finite matrix."""
+
+    assert matrix == matrix.T
+    values = np.array(
+        [[float(sp.N(matrix[row, column], 40)) for column in range(matrix.cols)] for row in range(matrix.rows)],
+        dtype=float,
+    )
+    return float(np.linalg.svd(values, compute_uv=False)[0])
+
+
+def hilbert_schmidt_norm(matrix: sp.Matrix) -> sp.Expr:
+    return sp.sqrt(sum(value * value for value in matrix))
+
+
 def main(mutation: str | None, mode: str) -> int:
     global PASS, FAIL
     PASS = FAIL = 0
@@ -87,6 +112,19 @@ def main(mutation: str | None, mode: str) -> int:
             ("independent shared-frame direct/staged contraction", facts["direct_staged_shared"]),
             ("independent duplicated-frame falsifier", facts["duplicated_shared_differs"]),
             ("independent physical-kernel sandwich", facts["sandwich"]),
+            ("independent 8x8 Haar-matrix sandwich", facts["pointwise_matrix_sandwich"]),
+            ("independent residual-projector range", facts["residual_exact"] and facts["residual_truncated"]),
+            (
+                "independent relative Hilbert--Schmidt bound",
+                facts["hs_difference_squared"]
+                <= (1 - facts["gamma_12"]) ** 2 * facts["hs_exact_squared"],
+            ),
+            (
+                "independent Z_kappa normalization power",
+                facts["normalization_exact"]
+                and facts["normalization_truncated"]
+                and facts["normalization_difference"],
+            ),
             ("independent finite-character positivity", facts["z2_character_positive"]),
             ("independent intermediate-retruncation falsifier", facts["retruncation_differs"]),
             ("independent factorial tail K=10", 61 * facts["cutoff_tail"][10] < Fraction(1, 100_000)),
@@ -169,13 +207,10 @@ def main(mutation: str | None, mode: str) -> int:
         and "2 r q" in note,
     )
 
-    shared_ok = (
-        facts["direct_staged_hidden"]
-        and facts["direct_staged_shared"]
-        and facts["duplicated_shared_differs"]
-    )
+    shared_q2 = facts["direct_staged_shared"]
     if mutation == "duplicate_shared_frame":
-        shared_ok = False
+        shared_q2 = not facts["duplicated_shared_differs"]
+    shared_ok = facts["direct_staged_hidden"] and shared_q2
     check(
         "J_r compatibility: direct and staged Haar contractions use each shared retained frame once",
         shared_ok and "shared retained projector frame is integrated once" in note,
@@ -227,9 +262,21 @@ def main(mutation: str | None, mode: str) -> int:
         and "3 n K" in note,
     )
 
-    sandwich = facts["sandwich"]
+    exact_matrix = sympy_matrix(facts["exact_matrix"])
+    truncated_matrix = sympy_matrix(facts["truncated_matrix"])
+    difference_matrix = exact_matrix - truncated_matrix
+    physical_exact = sympy_matrix(facts["physical_exact_matrix"])
+    physical_truncated = sympy_matrix(facts["physical_truncated_matrix"])
+    physical_difference = physical_exact - physical_truncated
     if mutation == "reverse_sandwich":
-        sandwich = False
+        sandwich = all(
+            truncated_matrix[row, column] <= gamma * exact_matrix[row, column]
+            and exact_matrix[row, column] <= truncated_matrix[row, column]
+            for row in range(8)
+            for column in range(8)
+        )
+    else:
+        sandwich = facts["pointwise_matrix_sandwich"]
     check(
         "physical kernel sandwich: gamma K_exact <= K_K <= K_exact after the complete shared-frame marginal",
         sandwich
@@ -237,15 +284,25 @@ def main(mutation: str | None, mode: str) -> int:
         and "gamma_(K,r,q) K_(r,q)" in note,
     )
 
-    relative_operator = mutation != "absolute_only_operator_bound"
+    exact_op = operator_norm(physical_exact)
+    truncated_op = operator_norm(physical_truncated)
+    difference_op = operator_norm(physical_difference)
+    relative_coefficient = epsilon / 2 if mutation == "absolute_only_operator_bound" else epsilon
+    relative_operator = difference_op <= sp.N(relative_coefficient, 60) * exact_op
     check(
         "operator comparison: lattice-order domination gives ||T-T_K|| <= epsilon ||T||",
         relative_operator
+        and abs(operator_norm(difference_matrix) - difference_op) < 1e-13
         and "|(T_(r,q)-T_(r,q)^K)F|" in note
         and "epsilon_(K,r,q) ||T_(r,q)||_op" in note,
     )
 
-    top_normalization = mutation != "misuse_auxiliary_perron"
+    top_denominator = exact_op if mutation == "misuse_auxiliary_perron" else truncated_op
+    normalized_difference = physical_exact / exact_op - physical_truncated / top_denominator
+    top_normalization = (
+        top_denominator == truncated_op
+        and operator_norm(normalized_difference) <= sp.N(2 * epsilon, 60)
+    )
     check(
         "top-norm comparison: separately normalizing the two complete positive transfers costs at most 2 epsilon",
         top_normalization
@@ -253,24 +310,49 @@ def main(mutation: str | None, mode: str) -> int:
         and "not the auxiliary-message Perron vector" in note,
     )
 
-    normalization_power = 7
-    if mutation == "corrupt_normalization_power":
-        normalization_power = 6
+    normalization_power = 6 if mutation == "corrupt_normalization_power" else 7
+    normalization_scalar = facts["temporal_normalization"]
+    normalized_exact = sympy_matrix(facts["normalized_exact_matrix"])
+    normalized_truncated = sympy_matrix(facts["normalized_truncated_matrix"])
+    normalized_actual_difference = normalized_exact - normalized_truncated
+    normalization_factor = sp.Rational(
+        normalization_scalar.numerator, normalization_scalar.denominator
+    ) ** (-normalization_power)
+    normalization_power_ok = (
+        normalized_exact == normalization_factor * exact_matrix
+        and normalized_truncated == normalization_factor * truncated_matrix
+        and normalized_actual_difference == normalization_factor * difference_matrix
+    )
     check(
         "normalization scalar: the original normalized-w kernel differs by exactly Z_kappa^(3rq+1)",
-        normalization_power == 7 and "Z_kappa^(3 r q + 1)" in note,
+        normalization_power_ok and "Z_kappa^(3 r q + 1)" in note,
     )
 
-    absolute_operator = mutation != "misstate_absolute_operator_bound"
+    absolute_rhs = 7 * delta_temporal + 4 * delta_spatial
+    if mutation == "misstate_absolute_operator_bound":
+        absolute_rhs /= 8
+    absolute_operator = operator_norm(normalized_actual_difference) <= sp.N(absolute_rhs, 60)
+    normalized_hs = hilbert_schmidt_norm(normalized_actual_difference)
+    hs_rhs = normalization_factor * epsilon
     check(
         "absolute original-transfer bound: telescoping avoids false hatted-kernel normalization while HS retains Z_kappa power",
         absolute_operator
+        and normalized_hs <= hs_rhs
         and "(3 r q + 1) delta_kappa + 2 r q delta_beta" in note
         and "Z_kappa^(-(3 r q + 1)) epsilon_(K,r,q)" in note
         and "rather than renormalizing it by a new truncated partition function" in note,
     )
 
-    projector_ok = mutation != "drop_projector_restriction"
+    if mutation == "drop_projector_restriction":
+        wrong_restriction = exact_matrix[:4, :4]
+        projector_ok = operator_norm(wrong_restriction) == exact_op
+    else:
+        projector_ok = (
+            facts["residual_exact"]
+            and facts["residual_truncated"]
+            and abs(operator_norm(exact_matrix) - exact_op) < 1e-13
+            and abs(operator_norm(truncated_matrix) - truncated_op) < 1e-13
+        )
     check(
         "projector typing: the full Haar-space bound descends to the residual GxG physical subspace by contraction",
         projector_ok and "restriction to P_lr" in note,

@@ -309,6 +309,77 @@ def z2_fourier_positive(plus: Fraction, minus: Fraction) -> bool:
     return (plus + minus) / 2 >= 0 and (plus - minus) / 2 >= 0
 
 
+def operator_matrix(
+    kernel: dict[tuple[int, ...], Fraction], q: int
+) -> tuple[tuple[Fraction, ...], ...]:
+    """Matrix in the orthonormal delta basis for normalized input Haar."""
+
+    states = tuple(product(G, repeat=q + 1))
+    haar = Fraction(1, 2 ** (q + 1))
+    return tuple(
+        tuple(haar * kernel[output + value] for value in states)
+        for output in states
+    )
+
+
+def residual_matrix(
+    matrix: tuple[tuple[Fraction, ...], ...]
+) -> tuple[tuple[Fraction, ...], ...]:
+    """Compression to the global-Z2-even residual physical subspace."""
+
+    dimension = len(matrix)
+    representatives = tuple(range(dimension // 2))
+    return tuple(
+        tuple(
+            (
+                matrix[left][right]
+                + matrix[left][dimension - 1 - right]
+                + matrix[dimension - 1 - left][right]
+                + matrix[dimension - 1 - left][dimension - 1 - right]
+            )
+            / 2
+            for right in representatives
+        )
+        for left in representatives
+    )
+
+
+def matrix_subtract(
+    left: tuple[tuple[Fraction, ...], ...],
+    right: tuple[tuple[Fraction, ...], ...],
+) -> tuple[tuple[Fraction, ...], ...]:
+    return tuple(
+        tuple(a - b for a, b in zip(left_row, right_row))
+        for left_row, right_row in zip(left, right)
+    )
+
+
+def matrix_scale(
+    scalar: Fraction, matrix: tuple[tuple[Fraction, ...], ...]
+) -> tuple[tuple[Fraction, ...], ...]:
+    return tuple(tuple(scalar * value for value in row) for row in matrix)
+
+
+def hilbert_schmidt_squared(
+    matrix: tuple[tuple[Fraction, ...], ...]
+) -> Fraction:
+    return sum((value * value for row in matrix for value in row), Fraction(0))
+
+
+def residual_range_preserved(
+    matrix: tuple[tuple[Fraction, ...], ...]
+) -> bool:
+    """Exact test that P A P=A for P f(x)=(f(x)+f(-x))/2."""
+
+    dimension = len(matrix)
+    return all(
+        matrix[left][right] == matrix[dimension - 1 - left][right]
+        and matrix[left][right] == matrix[left][dimension - 1 - right]
+        for left in range(dimension)
+        for right in range(dimension)
+    )
+
+
 @lru_cache(maxsize=1)
 def independent_facts() -> dict[str, object]:
     exterior = exterior_facts()
@@ -343,6 +414,46 @@ def independent_facts() -> dict[str, object]:
     }
     direct_poly, retruncated_poly = truncation_algorithm_defect()
 
+    exact_matrix = operator_matrix(direct_12, 2)
+    truncated_matrix = operator_matrix(truncated_12, 2)
+    difference_matrix = matrix_subtract(exact_matrix, truncated_matrix)
+    physical_exact_matrix = residual_matrix(exact_matrix)
+    physical_truncated_matrix = residual_matrix(truncated_matrix)
+    physical_difference_matrix = matrix_subtract(
+        physical_exact_matrix, physical_truncated_matrix
+    )
+    pointwise_matrix_sandwich = all(
+        gamma_12 * exact_matrix[row][column]
+        <= truncated_matrix[row][column]
+        <= exact_matrix[row][column]
+        for row in range(8)
+        for column in range(8)
+    )
+
+    temporal_normalization = Fraction(3, 4)
+    normalized_exact_kernel = fine_physical_kernel(
+        1,
+        2,
+        Fraction(2, 3),
+        spatial_minus,
+        Fraction(4, 3),
+        Fraction(1),
+    )
+    normalized_truncated_kernel = fine_physical_kernel(
+        1,
+        2,
+        Fraction(2, 3),
+        spatial_minus,
+        Fraction(7, 6),
+        spatial_plus,
+    )
+    normalized_exact_matrix = operator_matrix(normalized_exact_kernel, 2)
+    normalized_truncated_matrix = operator_matrix(normalized_truncated_kernel, 2)
+    normalized_difference_matrix = matrix_subtract(
+        normalized_exact_matrix, normalized_truncated_matrix
+    )
+    inverse_normalization_power = temporal_normalization ** -7
+
     return {
         **exterior,
         "censuses": tuple((r, q, *factor_census(r, q)) for r, q in ((1, 1), (2, 1), (1, 2), (2, 2))),
@@ -350,8 +461,31 @@ def independent_facts() -> dict[str, object]:
         "direct_staged_shared": direct_12 == staged_12,
         "duplicated_shared_differs": shared_difference,
         "sandwich": sandwich,
+        "pointwise_matrix_sandwich": pointwise_matrix_sandwich,
         "gamma_12": gamma_12,
         "max_error_12": max(direct_12[key] - truncated_12[key] for key in direct_12),
+        "exact_matrix": exact_matrix,
+        "truncated_matrix": truncated_matrix,
+        "difference_matrix": difference_matrix,
+        "physical_exact_matrix": physical_exact_matrix,
+        "physical_truncated_matrix": physical_truncated_matrix,
+        "physical_difference_matrix": physical_difference_matrix,
+        "residual_exact": residual_range_preserved(exact_matrix),
+        "residual_truncated": residual_range_preserved(truncated_matrix),
+        "hs_exact_squared": hilbert_schmidt_squared(exact_matrix),
+        "hs_difference_squared": hilbert_schmidt_squared(difference_matrix),
+        "physical_hs_exact_squared": hilbert_schmidt_squared(physical_exact_matrix),
+        "physical_hs_difference_squared": hilbert_schmidt_squared(physical_difference_matrix),
+        "temporal_normalization": temporal_normalization,
+        "normalized_exact_matrix": normalized_exact_matrix,
+        "normalized_truncated_matrix": normalized_truncated_matrix,
+        "normalized_difference_matrix": normalized_difference_matrix,
+        "normalization_exact": normalized_exact_matrix
+        == matrix_scale(inverse_normalization_power, exact_matrix),
+        "normalization_truncated": normalized_truncated_matrix
+        == matrix_scale(inverse_normalization_power, truncated_matrix),
+        "normalization_difference": normalized_difference_matrix
+        == matrix_scale(inverse_normalization_power, difference_matrix),
         "cutoff_tail": cutoff_tail,
         "direct_polynomial": direct_poly,
         "retruncated_polynomial": retruncated_poly,
@@ -381,6 +515,13 @@ if __name__ == "__main__":
         facts["direct_staged_shared"],
         facts["duplicated_shared_differs"],
         facts["sandwich"],
+        facts["pointwise_matrix_sandwich"],
+        facts["residual_exact"] and facts["residual_truncated"],
+        facts["hs_difference_squared"]
+        <= (1 - facts["gamma_12"]) ** 2 * facts["hs_exact_squared"],
+        facts["normalization_exact"]
+        and facts["normalization_truncated"]
+        and facts["normalization_difference"],
         facts["z2_character_positive"],
         facts["retruncation_differs"],
         61 * facts["cutoff_tail"][10] < Fraction(1, 100_000),

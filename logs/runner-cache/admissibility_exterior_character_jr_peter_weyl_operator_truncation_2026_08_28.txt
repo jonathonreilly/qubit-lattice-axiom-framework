@@ -1,3 +1,12 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_exterior_character_jr_peter_weyl_operator_truncation_2026_08_28.py
+runner_sha256: df4adb139034f773fd6485ee9a36dfccef523934d571fa3a530039353a37b6cd
+input_fingerprint_sha256: 20e517a5e8c098c764c46b3e9597d0650d9596b405be6da1f079bed0fbe308af
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.38
+status: ok
+----- stdout -----
 [PASS] full O(3) member: Q=16-2 chi_Lambda and f_n=(16/n)(1-(chi_Lambda/8)^n)
 [PASS] improper component: chi_Lambda=0 and every finite member has f_n=16/n
 [PASS] finite packet: occupation k is the positive character of Lambda^(tensor nk) divided by 8^(nk)
@@ -27,3 +36,6 @@ per_block: exact shared-frame J_r contraction and rq accumulation were executed 
 lattice_wide: complete physical operator/top-norm error is proved with K depending on rq; no continuum scale is supplied
 STATUS: bounded physical-transfer Peter--Weyl truncation conditional on the supplied parent action and measure
 TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

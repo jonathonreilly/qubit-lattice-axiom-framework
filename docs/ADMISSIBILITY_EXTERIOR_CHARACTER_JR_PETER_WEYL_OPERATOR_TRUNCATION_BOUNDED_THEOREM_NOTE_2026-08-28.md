@@ -446,15 +446,19 @@ runner, SymPy, NumPy, or a scratch derivation.  It reconstructs:
    both across hidden columns and across a shared retained column;
 5. failure of the deliberately duplicated shared-frame kernel;
 6. the pointwise complete-kernel sandwich;
-7. nonnegative finite Fourier coefficients; and
-8. failure of a deliberately fresh intermediate polynomial cutoff.
+7. the resulting exact `8 x 8` normalized-Haar operator matrix and its
+   `4 x 4` global-`Z_2`-even residual-projector compression;
+8. the relative Hilbert--Schmidt bound and the exact `Z_kappa^(-7)` raw-to-
+   normalized matrix relation for the `(r,q)=(1,2)` fixture;
+9. nonnegative finite Fourier coefficients; and
+10. failure of a deliberately fresh intermediate polynomial cutoff.
 
 The primary runner binds the note, its scientific parent, minimal-axiom fence, and
 independent checker.  Its mutation set separately falsifies the exterior
 identity, component coverage, finite packet, Poisson remainder, both factor
 counts, shared-frame ownership, no-retruncation rule, accumulated `gamma`,
 cutoff, local tensor order, sandwich direction, relative operator theorem,
-top normalization, normalization scalar, projector typing, independent
+top normalization, absolute operator/HS normalization, projector typing, independent
 reconstruction, prior-art disclosure, volume boundary, actual-kernel reach,
 scope, and import integrity.
 
@@ -480,7 +484,7 @@ projector frames, followed by the pointwise physical-kernel sandwich and the
 relative complete-transfer operator and top-norm estimates.  No conclusion
 depends on the historical note.
 
-## Honest boundary and sharp no-go ledger
+## Honest boundary and non-implication fences
 
 1. **Supplied action:** the action member and coefficients are inputs.  The
    theorem does not select the action or show uniqueness.

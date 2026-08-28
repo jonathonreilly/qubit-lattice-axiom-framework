@@ -1,6 +1,6 @@
 {
- "edge_count": 16150,
- "node_count": 5642,
+ "edge_count": 16153,
+ "node_count": 5643,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -865,6 +865,10 @@
   "admissibility_endogenous_geometry_joint_record_rn_local_covariant_contact_selection_boundary_bounded_theorem_note_2026-08-10": {
    "deps_hash": "908bca83f8ca",
    "out_degree": 7
+  },
+  "admissibility_exterior_character_gauge_vector_matter_source_transfer_bounded_theorem_note_2026-08-28": {
+   "deps_hash": "a054be4c8233",
+   "out_degree": 3
   },
   "admissibility_exterior_character_metric_source_polarized_seam_bounded_theorem_note_2026-08-28": {
    "deps_hash": "6da1461c9129",

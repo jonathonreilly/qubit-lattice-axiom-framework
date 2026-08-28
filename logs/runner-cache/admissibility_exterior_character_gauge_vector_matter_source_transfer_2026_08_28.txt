@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_exterior_character_gauge_vector_matter_source_transfer_2026_08_28.py
+runner_sha256: d625d6d0337bb559c7ac5029bf7631f49a7674336a19ef567c83a5ded99f8588
+input_fingerprint_sha256: c6bf9cbe3dec689c8fe57b3368643ecc8105b7b421da130193192fa7c0f3819e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.48
+status: ok
+----- stdout -----
+[PASS] import boundary: parents supply the dynamic metric/source seam and orthogonal character carrier but no vector-matter action or physical matter source
+[PASS] diagonal coframe coefficients: logarithmic variations of volume, plaquette weight, and hopping weight are exact
+[PASS] exact local action witness: gauge, hopping, and source-potential terms share one rational action
+[PASS] slice-action coframe response: all four diagonal logarithmic derivatives are exact and nonzero
+[PASS] slice-action source response and coframe-source reciprocity are exact
+[PASS] slice-action matter-link mixed derivative is reciprocal
+[PASS] slice-link variation: direct proper and improper derivatives equal the ordered plaquette force plus the skew matter current
+[PASS] matter equation: the interior Euler-Lagrange gradient and an exact compact-ball normal-cone boundary witness are correctly typed
+[PASS] orientation and proper-cubic covariance: edge reversal and simultaneous internal frame change preserve hopping
+[PASS] improper-sector current: character force vanishes within the component while the matter current can be nonzero
+[PASS] determinant-sector boundary: the complete local action has an exact proper/improper collision
+[PASS] shared-link positive control: dynamic seam, matter, and reflection-matched source factors give a positive exact Gram
+[PASS] gauge sign boundary: nonnegative crossing character coefficients are required and the negative sign has an exact Gram falsifier
+[PASS] matter sign boundary: nonnegative temporal hopping is required and the negative sign has an antipodal Gram falsifier
+[PASS] source reflection boundary: unmatched half-source multipliers give a non-Hermitian kernel and complex quadratic form
+[PASS] zero matter coupling: the matter core is rank one and cannot be injective on a nontrivial compact ball
+[PASS] strict-support bridge: positive temporal hopping supplies every tensor degree and the parent supplies every group irrep
+[PASS] physical boundary: finite source susceptibility is positive but the matter, source, metric stress, time, and Hamiltonian readings remain supplied
+per_element: exact Q, coframe weights, hopping current, source derivative, and Gram entries were recomputed
+per_site: one compact matter site, one oriented link, and one scalar-source potential were checked exactly
+per_mode: proper, improper, positive-sign, negative-sign, zero-coupling, and unmatched-source modes were executed
+per_block: checked and not executed — finite reflected slabs follow by products, gauge projection, and bounded positive multipliers
+lattice_wide: checked and not executed — no continuum matter law, Einstein equation, Lorentz covariance, or physical Hamiltonian is claimed
+STATUS: supplied compact gauge-vector matter action has exact slice response, full endpoint equations, and a positive finite transfer for strict disclosed signs
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,41 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_d4_h1_two_arm_higher_block_ancestry_gate_2026_08_28.py
+runner_sha256: 41660d2bb312597edfc9a6f871fcb3eb9a0bc564b4b24ac3d59e6f7e69b5a9ee
+input_fingerprint_sha256: 51b8fb8e0c42e6f00ee6b9ee826995d0f9b1ac8c043cd44ff3623048bf9dc8c8
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 14.21
+status: ok
+----- stdout -----
+PASS Block222 physical carrier is independently reconstructed
+PASS parent-dart character leaves the exact three-dimensional residual
+PASS both complement intertwiners and every transported default block remain physical
+PASS the radius-two seam is reciprocal covariant and adds no onsite ray
+PASS width-2 path-forest and collision-seam census is exact
+PASS width-3 path-forest and collision-seam census is exact
+PASS every single query classifies by two-arm topology without a scalar anchor
+PASS parent child collision launch and return darts restore exactly
+PASS abort-on-contact is nonvacuous because quiet foreign seams complete
+PASS the complete unexpected-contact registry deterministically conflicts
+PASS every width-two overlap has one closed conflict and rollback schema
+PASS all width-three two-query contacts collapse to 47 visible overlap signatures
+PASS the visible-state contact quotient has one safety action per class
+PASS all 5040 Block222 reciprocal crosswires now meet and abort
+PASS the first Block222 witness is byte-for-byte intercepted
+PASS root guards and marked conflict components erase before reuse
+PASS Record remains disabled beside every seam arm acknowledgement or conflict
+PASS both acknowledgements remain attached to one adjacent seam
+PASS the frozen deterministic retry grammar exposes a fair symmetric cycle
+PASS a supplied geometric backoff has positive finite-component escape probability
+PASS scope stays a two-arm safety result with coalescing stochastic and coherent routes live
+PASS preregistered source packet remains complete
+DATA {"block222_reciprocal":{"first_witness":{"left_actor_path":[0,2,5,3,4],"left_anchor":4,"left_ports":[3,0,1,1],"left_target":1,"right_actor_path":[1,7,6],"right_anchor":6,"right_ports":[2,3],"right_target":0},"original_pairs":5040,"two_arm_conflicts":5040},"carrier":{"digest":"09d24d6a23b5987a9a4e0a6b21052caa1d58ec16b4462019e01da9302dc79a76","gram_floors":[38.507483548,22.203469813],"logical_character":[34,-2,2,-2],"named_plus_default":[74,54],"physical_character":[37,-3,5,-3],"residual_multiplicities":[1,0,2,0]},"classification":"positive-two-arm-static-overlap-certificate","contact_registry":{"actions":{"ack_trail":["CONFLICT"],"opposite_front":["CONFLICT"],"reciprocal_crosswire":["CONFLICT"],"seam_endpoint_reuse":["CONFLICT"],"shared_prefix":["CONFLICT"],"shared_root":["CONFLICT"],"trail_front":["CONFLICT"],"transverse_vertex":["CONFLICT"]},"all_unexpected_contacts_conflict":true,"contact_types":8,"visible_quotient_consistent":true},"forest_widths":{"2":{"contact_pairs":2772,"contact_signatures":18,"contacts_aborted":2772,"disjoint_pairs":72,"exact_restoration":true,"foreign":424,"foreign_disjoint_pairs":40,"foreign_successes":424,"pairs":2844,"queries":1240,"rollback_schema_closed":true,"same":816,"same_rollbacks":816,"valid_forests":225},"3":{"contact_pairs":34801947,"contact_signatures":47,"contacts_aborted":34801947,"disjoint_pairs":3173445,"exact_restoration":true,"foreign":4292820,"foreign_disjoint_pairs":2940813,"foreign_successes":4292820,"pairs":37975392,"queries":7112448,"rollback_schema_closed":true,"same":2819628,"same_rollbacks":2819628,"valid_forests":614656}},"liveness":{"deterministic_fair_retry_cycle":["launch-both","contact","rollback-both","launch-both"],"deterministic_size_independent_liveness":false,"finite_escape_positive":true,"infinite_or_uniform_rate_claimed":false,"supplied_geometric_p":"1/2","unique_minimum_probabilities":{"2":"2/3","3":"3/7","4":"4/15","5":"5/31","6":"2/21","7":"7/127","8":"8/255"}},"next":"hostile-dynamic-rollback-and-physical-local-backoff-kraus-compiler","seam":{"context_patterns":24,"fronts_attached":true,"new_onsite_rays":0,"pair_projective_phase":1,"reciprocal_darts_exact":true,"residual_phase_capacity":[1,0,2,0],"transported_instances":576,"two_anchors_adjacent":true},"toe":"zero obligation retirement; zero percentage movement"}
+per_element: reconstructed the exact 74 plus 54 carrier and reciprocal collision-seam darts.
+per_site: checked every parent child launch return seam acknowledgement and conflict guard.
+per_mode: checked both complement parities six normals 24 rotations 19 mutations and eight contact types.
+per_block: exhausted 7,113,688 labelled seam queries and 37,978,236 two-query static overlap pairs on widths two and three.
+lattice_wide: the static overlap certificate is positive; hostile-schedule rollback dynamics, size-independent liveness, and the physical stochastic instrument remain open.
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

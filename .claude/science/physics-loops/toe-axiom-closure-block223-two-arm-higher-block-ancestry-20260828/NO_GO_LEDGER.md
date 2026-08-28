@@ -18,3 +18,13 @@ If the route produces a negative, the full N1--N8 no-go discipline must be
 rerun and committed before a source note ships.  Forbidden broad phrases
 include “two-arm ancestry is impossible”, “finite-state finality is
 impossible”, “permanent Records are impossible”, and “the axioms must change”.
+
+## Primary result
+
+The static two-arm seam/contact certificate is positive on every frozen
+width-two/three query and pair.  It is not yet a local transition table or a
+hostile-schedule rollback proof.  The singular deterministic grammar “both
+conflict, both erase, both retry immediately” has an exact fair symmetric
+cycle.  The N1--N8 broad gate fails: only that lockstep retry is narrowed.
+Deterministic coalescence/root locking, physical stochastic backoff, coherent
+arbitration, and continuous-time laws remain live.

@@ -6,7 +6,7 @@ collision seam with two rootward arms.
 
 | item | frozen value |
 |---|---|
-| parent | Block 222 primary freeze at `071c04af02` |
+| parent | independently reproduced Block 222 at `4f2a306538` |
 | positive import | exact parent-dart 74+54 carrier; every 256 width-two and 13,428 width-three single probe classifies/restores correctly |
 | exact residual | 5,040 reciprocal disjoint foreign-probe pairs can crosswire two locally identical scalar anchors |
 | question | can one overlap-visible collision edge launch two exact parent-dart arms, abort on every unexpected arm contact, and accept only two disjoint acknowledgements returning to that same edge? |

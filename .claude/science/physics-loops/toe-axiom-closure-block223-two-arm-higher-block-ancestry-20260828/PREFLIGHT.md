@@ -1,8 +1,9 @@
 # Preflight
 
-- Parent Block 222 is frozen at `071c04af02`: primary `22/22`, all `15/15`
-  mutations rejected, cache fresh, exact carrier positive, one-probe
-  simultaneous-anchor scope narrow, independent reconstruction pending.
+- Parent Block 222 is independently reproduced at `4f2a306538`: primary
+  `22/22` with `15/15` mutations rejected; independent full `27/27` and
+  mutation-meta `28/28` with `12/12` disjoint mutations rejected; both caches
+  fresh; exact carrier positive and one-probe simultaneous-anchor scope narrow.
 - Latest open PRs were rechecked.  New PR #7767 is merge-clean and adds an
   exact supplied finite-gap/strict-coupling-collapse discriminator; its own
   boundary leaves physical carrier, action, measure, excitation, time,
@@ -17,6 +18,4 @@
   safety, nonvacuous success, liveness, and CP compilation are the gates.
 - No `review-loop` is used.  No audit verdict/status or axiom authority surface
   is edited.
-- Cooperative transition lock owner at preregistration:
-  `physics-loop-block222-codex`; it will be renamed to Block 223 after the
-  bounded independent Block 222 write completes.
+- Cooperative lock owner: `physics-loop-block223-codex`.

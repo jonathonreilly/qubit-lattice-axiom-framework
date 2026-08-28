@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_conditional_law_response_polar_transport_2026_08_28.py
+runner_sha256: 65b256b5a7cc9ae4fabb927ff78f220f797fcc5724d878197850fab775d67683
+input_fingerprint_sha256: 2dfe902f19d7f97fea2b8e4ca099a6cbe2c745647e4fda3916dd8f1da34895f5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.49
+status: ok
+----- stdout -----
+[PASS] axiom boundary: nearest-neighbor conditional variation is present but dynamics are absent
+[PASS] feature geometry: the 24 proper cubic rotations preserve the Bloch metric and bounded feature
+[PASS] reciprocal cross-object: reversal is adjoint and endpoint-frame covariance is exact
+[PASS] linear ansatz: reversal forces equal directed-response weights but leaves a common sign convention
+[PASS] compatible positive response: C=I/7 is full rank and has proper polar I
+[PASS] orientation boundary: C=-I/7 is full rank and has improper polar -I
+[PASS] rank-loss countermodel: a varying positive cubic law has zero reciprocal Jacobian at the symmetric context
+[PASS] joint compatibility witness: edge-product weights recover the one-site conditional exactly
+[PASS] stabilizer obstruction: an invariant endpoint law forbids an equivariant invertible cross-object
+[PASS] symmetric exact laws: central adjoint content vanishes and the axis law has isotropic second moment with no fixed vector
+[PASS] variation boundary: distinct central output laws have identical zero Bloch means and supply no orientation response
+[PASS] same-marginal completions: cross moments are 0, I/3, and -I/3 with distinct polar sectors
+[PASS] physical boundary: the construction does not select a feature, sign, context, rank sector, action, or physical connection
+per_element: exact atoms, matrices, determinants, stabilizers, and cross moments were checked
+per_site: normalized one-site laws and their zero-context response Jacobians were checked exactly
+per_mode: proper, improper, and singular reciprocal-response modes were each executed exactly
+per_block: checked and not executed — no exhaustive finite-graph census; edge-product factorization is proved in the note
+lattice_wide: checked and not executed — no infinite-volume phase, global flatness, or physical dynamics claim
+STATUS: conditional construction; universal law-only full-rank extraction obstructed on symmetric loci
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

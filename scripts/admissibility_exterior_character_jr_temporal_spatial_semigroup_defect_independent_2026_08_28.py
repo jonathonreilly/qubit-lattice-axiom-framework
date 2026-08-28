@@ -689,6 +689,67 @@ def u1_carre_du_champ_fixture() -> dict[str, object]:
     }
 
 
+def packet_quadratic_response_fixture() -> dict[str, object]:
+    """Exact scalar Gram perturbation and local dual-number packet control."""
+
+    epsilon = F(2, 5)
+    b_value = F(3, 7)
+    coarse_exact, residual_exact = F(3, 4), F(1, 2)
+    coarse_packet, residual_packet = F(2, 3), F(5, 12)
+    theta = max(
+        abs(coarse_exact - coarse_packet),
+        abs(residual_exact - residual_packet),
+    )
+    gamma = b_value * b_value
+    leakage = -epsilon * b_value * (coarse_exact + residual_exact) / 2
+    leakage_packet = -epsilon * b_value * (
+        coarse_packet + residual_packet
+    ) / 2
+    response_error = abs(leakage * leakage - leakage_packet * leakage_packet)
+    response_bound = 2 * epsilon * epsilon * gamma * theta
+
+    def dual_multiply(left: tuple[F, F],
+                      right: tuple[F, F]) -> tuple[F, F]:
+        return (
+            left[0] * right[0],
+            left[1] * right[0] + left[0] * right[1],
+        )
+
+    u_value = F(3, 8)
+    local_derivatives: list[tuple[int, F]] = []
+    for cutoff in range(4):
+        s_dual = (F(0), F(1))
+        su_dual = (F(0), u_value)
+        power = (F(1), F(0))
+        polynomial = (F(0), F(0))
+        for order in range(cutoff + 1):
+            if order:
+                power = dual_multiply(power, su_dual)
+            term = (power[0] / factorial(order), power[1] / factorial(order))
+            polynomial = (
+                polynomial[0] + term[0],
+                polynomial[1] + term[1],
+            )
+        exp_minus_s = (F(1), -s_dual[1])
+        local_derivatives.append(
+            (cutoff, dual_multiply(exp_minus_s, polynomial)[1])
+        )
+
+    return {
+        "theta": theta,
+        "gamma": gamma,
+        "response_error": response_error,
+        "response_bound": response_bound,
+        "bound_holds": response_error <= response_bound,
+        "local_derivatives": tuple(local_derivatives),
+        "exact_linear_cutoffs": all(
+            derivative == u_value - 1
+            for cutoff, derivative in local_derivatives if cutoff >= 1
+        ),
+        "zero_cutoff_fails": local_derivatives[0][1] != u_value - 1,
+    }
+
+
 def main() -> int:
     matrix = matrix_fixture()
     z2 = z2_conditional_fixture()
@@ -696,6 +757,7 @@ def main() -> int:
     complete = complete_step_response_fixture()
     mixed = s3_mixed_response_fixture()
     carre = u1_carre_du_champ_fixture()
+    response_packet = packet_quadratic_response_fixture()
 
     expected_defect: Matrix = ((F(1, 16), F(0)), (F(0), F(0)))
     expected_packet_defect: Matrix = ((F(1, 64), F(0)), (F(0), F(0)))
@@ -841,6 +903,15 @@ def main() -> int:
         (
             "U1 scalar remainder accumulates the disclosed coefficient squares",
             carre["scalar_accumulation"],
+        ),
+        (
+            "packet half-response obeys the exact Gram perturbation bound",
+            response_packet["bound_holds"],
+        ),
+        (
+            "spatial packet derivative is exact iff the tested cutoff is at least one",
+            response_packet["exact_linear_cutoffs"]
+            and response_packet["zero_cutoff_fails"],
         ),
     )
 

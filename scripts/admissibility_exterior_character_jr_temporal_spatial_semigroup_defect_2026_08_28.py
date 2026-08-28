@@ -17,6 +17,7 @@ from admissibility_exterior_character_jr_temporal_spatial_semigroup_defect_indep
     general_r_response_fixture as independent_general_response_fixture,
     matmul as independent_matmul,
     matrix_fixture as independent_matrix_fixture,
+    packet_quadratic_response_fixture as independent_packet_response_fixture,
     s3_mixed_response_fixture as independent_mixed_response_fixture,
     u1_carre_du_champ_fixture as independent_carre_du_champ_fixture,
     transpose as independent_transpose,
@@ -75,6 +76,9 @@ MUTATIONS = (
     "restore_first_order_remainder",
     "make_zero_order_nonconstant",
     "corrupt_carre_du_champ_census",
+    "corrupt_response_packet_bound",
+    "drop_spatial_linear_cutoff",
+    "renormalize_response_packet",
 )
 
 PASS = 0
@@ -390,6 +394,48 @@ def primary_u1_carre_du_champ_data() -> dict[str, object]:
     }
 
 
+def primary_packet_response_data() -> dict[str, object]:
+    """Independent SymPy Gram perturbation and local packet derivative."""
+
+    epsilon = sp.Rational(2, 5)
+    b_value = sp.Rational(3, 7)
+    isometry = sp.Matrix(((1,), (0,)))
+    b_map = sp.Matrix(((0,), (b_value,)))
+    exact = sp.diag(sp.Rational(3, 4), sp.Rational(1, 2))
+    packet = sp.diag(sp.Rational(2, 3), sp.Rational(5, 12))
+    coarse_exact = isometry.T * exact * isometry
+    coarse_packet = isometry.T * packet * isometry
+    leakage = -epsilon * (b_map * coarse_exact + exact * b_map) / 2
+    leakage_packet = -epsilon * (
+        b_map * coarse_packet + packet * b_map
+    ) / 2
+    response = leakage.T * leakage
+    response_packet = leakage_packet.T * leakage_packet
+    theta = max(abs(value) for value in (exact - packet).diagonal())
+    gamma = (b_map.T * b_map)[0]
+    bound = 2 * epsilon**2 * gamma * theta
+
+    s_symbol, u_symbol = sp.symbols("s u")
+    derivatives = tuple(
+        sp.diff(
+            sp.exp(-s_symbol) * sum(
+                (s_symbol * u_symbol) ** order / factorial(order)
+                for order in range(cutoff + 1)
+            ),
+            s_symbol,
+        ).subs(s_symbol, 0)
+        for cutoff in range(4)
+    )
+    return {
+        "response_error": abs((response - response_packet)[0]),
+        "bound": bound,
+        "derivatives": derivatives,
+        "u": u_symbol,
+        "range_exact": exact * isometry == isometry * coarse_exact,
+        "range_packet": packet * isometry == isometry * coarse_packet,
+    }
+
+
 def independent_mode() -> int:
     global PASS, FAIL
     PASS = FAIL = 0
@@ -399,6 +445,7 @@ def independent_mode() -> int:
     complete = independent_complete_response_fixture()
     mixed = independent_mixed_response_fixture()
     carre = independent_carre_du_champ_fixture()
+    response_packet = independent_packet_response_fixture()
     expected = ((F(1, 16), F(0)), (F(0), F(0)))
     checks = (
         (
@@ -486,6 +533,15 @@ def independent_mode() -> int:
         (
             "independent scalar closure accumulates coefficient squares",
             carre["scalar_accumulation"],
+        ),
+        (
+            "independent packet half-response Gram bound",
+            response_packet["bound_holds"],
+        ),
+        (
+            "independent packet spatial derivative requires cutoff at least one",
+            response_packet["exact_linear_cutoffs"]
+            and response_packet["zero_cutoff_fails"],
         ),
     )
     for label, condition in checks:
@@ -817,6 +873,47 @@ def main(mutation: str | None, mode: str) -> int:
     check(
         "scalar carre-du-champ has the four-link and rq coefficient census",
         carre_census_ok,
+    )
+
+    response_packet = primary_packet_response_data()
+    spatial_derivative_ok = (
+        response_packet["derivatives"][0] == -1
+        and all(derivative == response_packet["u"] - 1
+                for derivative in response_packet["derivatives"][1:])
+    )
+    if mutation == "drop_spatial_linear_cutoff":
+        spatial_derivative_ok = False
+    check(
+        "K_beta at least one preserves every spatial half-action first derivative",
+        spatial_derivative_ok
+        and "`K_beta>=1` on every spatial half-action" in note
+        and "partial_s ell_s^K|_0=u-1" in note,
+    )
+
+    response_topology_ok = (
+        response_packet["range_exact"] and response_packet["range_packet"]
+    )
+    if mutation == "renormalize_response_packet":
+        response_topology_ok = False
+    check(
+        "packet response keeps the common normalization and cylindrical range",
+        response_topology_ok
+        and "same exact Block231 temporal normalization" in note
+        and "with no separate truncated renormalization" in note
+        and "preserves\n`Ran J_r`" in note,
+    )
+
+    response_bound_ok = (
+        response_packet["response_error"] <= response_packet["bound"]
+    )
+    if mutation == "corrupt_response_packet_bound":
+        response_bound_ok = False
+    check(
+        "complete quadratic half-response has explicit temporal rq packet bound",
+        response_bound_ok
+        and "<=2epsilon^2||Gamma|| theta_K" in note
+        and "<=2epsilon^2||Gamma||(3rq+1)delta_kappa" in note
+        and "bound for the full `partial_lambda^2D|_0` is twice" in note,
     )
 
     scalar_shift = 2 * sp.Rational(7, 5) * mixed["gamma"]

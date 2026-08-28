@@ -1,7 +1,7 @@
 ---
 claim_id: admissibility_exterior_character_jr_temporal_spatial_semigroup_defect_generated_interaction_bounded_theorem_note_2026-08-28
 claim_type: bounded_theorem
-claim_scope: "For the supplied Block227 co-scaled exterior-character step on a finite O(3) ladder and the supplied Block229 retain-every-r physical Haar isometry J_r, prove the exact positive direct-versus-staged temporal-spatial compression defect J_r* S^2 J_r-(J_r*S J_r)^2=J_r*S(I-J_rJ_r*)S J_r. On the Block227 Peter--Weyl core derive its leading generated interaction Gamma=J_r*G(I-J_rJ_r*)GJ_r. For retain-every-two on the actual two-cell ladder, prove that the kinetic generator preserves the cylindrical range while the equal-coefficient exterior spatial potential generates a nonconstant conditional-variance interaction, and evaluate an exact Z2 finite control. For arbitrary fixed finite r and q, disclose an action-amplitude lambda in the complete Block227 step and prove that the rth lambda response of the actual J_r defect, after epsilon^-r scaling and projection off the scalar coarse channel, converges strongly on the core to (-1)^r(2^r-2) times the r-fold centered exterior convolution, summed once per retained cell. Prove the (r-1)-wise Haar mechanism, the scalar leading variance for r>=3, and the finite leading Peter--Weyl response carrier. At quadratic action-response order derive the exact finite-epsilon Gram insertion and the next core coefficient K=B*A_fB+{Gamma,A_c}/2; for r>=3 prove the exact decomposition K=2 gamma A_c+u I, with u the explicit rq-accumulated exterior Dirichlet energy, so the epsilon^3 lambda^2 response has a non-scalar coarse-kinetic term but no first-order or coarse-word-dependent multiplication remainder. Bound finite Peter--Weyl approximation of the complete defect by four times the Block231 physical-transfer error with explicit rq accumulation. This is a conditional finite mathematical generated-interaction and supplied-action-response theorem, not a physical time, continuum, action-selection, Lorentz, gravity, metric/source, or matter-current theorem."
+claim_scope: "For the supplied Block227 co-scaled exterior-character step on a finite O(3) ladder and the supplied Block229 retain-every-r physical Haar isometry J_r, prove the exact positive direct-versus-staged temporal-spatial compression defect J_r* S^2 J_r-(J_r*S J_r)^2=J_r*S(I-J_rJ_r*)S J_r. On the Block227 Peter--Weyl core derive its leading generated interaction Gamma=J_r*G(I-J_rJ_r*)GJ_r. For retain-every-two on the actual two-cell ladder, prove that the kinetic generator preserves the cylindrical range while the equal-coefficient exterior spatial potential generates a nonconstant conditional-variance interaction, and evaluate an exact Z2 finite control. For arbitrary fixed finite r and q, disclose an action-amplitude lambda in the complete Block227 step and prove that the rth lambda response of the actual J_r defect, after epsilon^-r scaling and projection off the scalar coarse channel, converges strongly on the core to (-1)^r(2^r-2) times the r-fold centered exterior convolution, summed once per retained cell. Prove the (r-1)-wise Haar mechanism, the scalar leading variance for r>=3, and the finite leading Peter--Weyl response carrier. At quadratic action-response order derive the exact finite-epsilon Gram insertion and the next core coefficient K=B*A_fB+{Gamma,A_c}/2; for r>=3 prove the exact decomposition K=2 gamma A_c+u I, with u the explicit rq-accumulated exterior Dirichlet energy, so the epsilon^3 lambda^2 response has a non-scalar coarse-kinetic term but no first-order or coarse-word-dependent multiplication remainder. Bound finite Peter--Weyl approximation of both the complete defect value and its exact quadratic Gram response, with explicit rq accumulation and common normalization. This is a conditional finite mathematical generated-interaction and supplied-action-response theorem, not a physical time, continuum, action-selection, Lorentz, gravity, metric/source, or matter-current theorem."
 depends_on:
   - admissibility_exterior_character_co_scaled_temporal_trotter_and_cylindrical_refinement_boundary_bounded_theorem_note_2026-08-28
   - admissibility_exterior_character_bounded_degree_ladder_history_message_flow_bounded_theorem_note_2026-08-28
@@ -163,6 +163,18 @@ Thus the response at bidegree `epsilon^3 lambda^2` has a non-scalar induced
 coarse-kinetic term but no first-order or coarse-word-dependent multiplication
 remainder.  It is not a new multiplication potential or a metric/source
 current.
+
+The same exact Gram consumer has a response-specific finite packet bound. If
+every spatial half packet has cutoff at least one, its first action-amplitude
+derivative at zero is exact.  Only the `3rq+1` temporal tails accumulate, and
+
+```text
+||R_epsilon-R_epsilon^K||_op
+ <=2epsilon^2||Gamma||[1-(1-delta_kappa)^(3rq+1)]. (5c)
+```
+
+Here `R=(1/2)partial_lambda^2D|_0`; the full second derivative has twice the
+right side.  Exact and packet families use the same Block231 normalization.
 
 ## Authority and imports
 
@@ -788,9 +800,72 @@ cost, not a continuum theorem.
 
 For the pure-potential specialization, resolving the nonconstant order-`r`
 value contribution underlying (32) at fixed nonzero `lambda` requires the stronger
-`eta_(K,r,q)=o(epsilon^r)`.  Equation (38) is a value bound; differentiating
-separately normalized exact and truncated transfers would require a distinct
-response estimate and is not inferred from it.
+`eta_(K,r,q)=o(epsilon^r)`.
+
+There is also a distinct exact quadratic-response estimate.  Set
+
+```text
+R_epsilon=(1/2)partial_lambda^2D_epsilon|_0=L_epsilon*L_epsilon. (40)
+```
+
+Use the same exact Block231 temporal normalization for the exact and packet
+families, with no separate truncated renormalization, and take
+`K_beta>=1` on every spatial half-action.  For the local half packet
+`ell_s^K=e^-s sum_(j=0)^K(su)^j/j!`,
+
+```text
+ell_0^K=1,       partial_s ell_s^K|_0=u-1,          (41)
+```
+
+exactly.  Thus the packet has the same first `lambda` derivative as the exact
+spatial multiplier at `lambda=0`; the leakage map remains the same
+`B=(I-Q)V_fJ_r`.  The packet temporal operator `C_epsilon^K` has the same
+factorized central-convolution/product-map topology, so it preserves
+`Ran J_r` and induces `C_c,epsilon^K=J_r*C_epsilon^KJ_r`.  Put
+
+```text
+N_t=3rq+1,
+theta_K=1-(1-delta_kappa)^N_t<=N_t delta_kappa.    (42)
+```
+
+Block231's complete temporal-kernel sandwich at `lambda=0`, including its
+common exact `Z_kappa` normalization, gives
+
+```text
+||C_epsilon-C_epsilon^K||_op<=theta_K,
+||C_c,epsilon-C_c,epsilon^K||_op<=theta_K.         (43)
+```
+
+Define
+
+```text
+D_epsilon^K(lambda)=Def_(J_r)(S_epsilon^K(lambda)),
+L_epsilon^K
+ =-(epsilon/2)(B C_c,epsilon^K+C_epsilon^K B),
+R_epsilon^K
+ =(1/2)partial_lambda^2D_epsilon^K|_0
+ =(L_epsilon^K)*L_epsilon^K.                       (44)
+```
+
+All four temporal operators in (43)--(44) are contractions and
+`||B||^2=||Gamma||`.  Therefore
+
+```text
+||L_epsilon-L_epsilon^K||_op
+ <=epsilon sqrt(||Gamma||) theta_K,
+
+||R_epsilon-R_epsilon^K||_op
+ <=2epsilon^2||Gamma|| theta_K
+ <=2epsilon^2||Gamma||(3rq+1)delta_kappa.          (45)
+```
+
+For `r>=3`, `||Gamma||=gamma` from (34d).  Equation (45) is the requested
+finite-Peter--Weyl bound for the complete physical quadratic *half-response*;
+the bound for the full `partial_lambda^2D|_0` is twice its right side.  No
+`delta_beta` term appears because (41) is exact, but the condition
+`K_beta>=1` is load-bearing.  Separately top-normalizing the exact and packet
+responses, or renormalizing the packet local density by its own partition
+function, defines a different response and is not inferred here.
 
 ## Prior-art and exact increment
 
@@ -818,7 +893,7 @@ interaction (14), the kinetic-range reduction (15)--(16), and the explicit
 nonconstant exterior variance (4)--(5), together with the arbitrary-`r`
 conditioned-Haar hierarchy (25)--(28), the complete-step response (29)--(34),
 the quadratic kinetic response (34a)--(34j), and the full packet consumer
-(38).
+(38), (40)--(45).
 
 ## Obligation graph and boundaries
 
@@ -837,6 +912,7 @@ the quadratic kinetic response (34a)--(34j), and the full packet consumer
 | finite leading exterior response carrier | proved | (33)--(34) |
 | quadratic complete-step action response and induced kinetic descendant | proved strong/core at fixed finite `r,q,n` | (34a)--(34j) |
 | finite packet error with explicit `rq` | proved | (35)--(39) |
+| finite packet quadratic half-response with explicit `rq` | proved | (40)--(45) |
 | physical scale/time/state/observable family | open | not supplied |
 | metric/source/matter response | open | pure-gauge carrier omits these variables |
 | continuum, Lorentz, gravity, action selection | open and not inferred | scope fence |

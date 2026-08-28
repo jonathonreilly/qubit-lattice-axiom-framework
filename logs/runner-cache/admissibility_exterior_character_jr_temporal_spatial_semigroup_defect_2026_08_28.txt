@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_exterior_character_jr_temporal_spatial_semigroup_defect_2026_08_28.py
-runner_sha256: dde142a01f3f6e701baf3b1b797948c0e6b9850213bbb7fe1ddd5f5ad3d3b2da
-input_fingerprint_sha256: 19a7b2befd31ba80588152718e303664a595a4f3a69d61d4130166e1247e45df
+runner_sha256: a21170d91718ae26e84f6f2513f26fb48382c0499ced9fecc8c8d358f1f8fc52
+input_fingerprint_sha256: d8f99a8512f54d0996b13a64fd43bfceef0abb2ceaaef8f67827adedfd1e5013
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.77
+elapsed_sec: 3.47
 status: ok
 ----- stdout -----
 [PASS] typed imports: Block227 step, Block229 physical J_r, Block231 packet, and minimal axioms
@@ -37,6 +37,9 @@ status: ok
 [PASS] differential-Casimir control closes as kinetic plus scalar multiplication
 [PASS] the exact r>=3 remainder contains no first-order differential term
 [PASS] scalar carre-du-champ has the four-link and rq coefficient census
+[PASS] K_beta at least one preserves every spatial half-action first derivative
+[PASS] packet response keeps the common normalization and cylindrical range
+[PASS] complete quadratic half-response has explicit temporal rq packet bound
 [PASS] common scalar normalization cannot remove the kinetic principal symbol
 [PASS] one common normalization scalar rescales the defect quadratically
 [PASS] normalization convention is fixed before comparing direct and staged paths
@@ -53,7 +56,7 @@ per_mode: the Peter--Weyl core commutator square and nontrivial convolution chan
 per_block: the complete physical J_r direct/staged defect and rq packet census were checked
 per_scale: conditioned fibers r=2,...,7 and complete-step response bidegrees r=3,4 were checked
 lattice_wide: checked and not executed — only finite supplied ladders are claimed; no continuum limit is supplied
-TOTAL: PASS=40 FAIL=0
+TOTAL: PASS=43 FAIL=0
 
 ----- stderr -----
 
